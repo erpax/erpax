@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rosetta",
-    "uuid": "669b9d56-b77c-8ab7-8ba5-52a7f655bafe",
+    "uuid": "cdae7d5c-f042-866b-b84e-d3c33472a097",
     "words": [
       "rosetta"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the gated commit/push must be achieved BY THE ROSETTA — every folder is an agent (a form·code·proof trinity that declares its @standard banners and either proves them or not), and the security/standards lanes for publish are DERIVED from that incidence, never hand-typed. The moving rosetta: poles come from what the folders declare, so a new atom joins a lane with no edit.",
-    "uuid": "ef2a106b-0887-8d21-9b0a-b0658917ff35",
+    "uuid": "a6a50392-9837-8826-8bd3-5ba0fe1fe766",
     "words": [
       "use",
       "when",

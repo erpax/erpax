@@ -2,11 +2,11 @@
 name: statistical
 description: "Use when reasoning about statistical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: statistical
-coordinate: "statistical · 8/crest · f367a7a6"
-contentUuid: "814bd575-9a9a-59c7-990e-e2baae9af7c0"
-diamondUuid: "b6e84725-2e66-839b-b737-99451126e650"
-uuid: "f367a7a6-5989-8df6-85b5-b3151daa72c8"
-horo: 8
+coordinate: "statistical · 4/weave · 9e3fc842"
+contentUuid: "c6a7f428-0a71-5187-9dc2-19dd7ab6de16"
+diamondUuid: "37be4667-7085-83d9-aa55-12e56cdec357"
+uuid: "9e3fc842-e52c-870d-a173-b29dde7932ee"
+horo: 4
 typography:
   partition: statistical
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c582588b-79f6-89ad-8d45-389cb938a8e0"
+  computationUuid: "3f0e35c7-7c2f-84e6-80f8-6d6691c3f8cd"
   stages:
     - stage: path
       stageUuid: "78469094-2385-8a87-bf57-c10549a30bcb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "378bb544-bd48-893a-898b-815204865fc9"
     - stage: horo
-      stageUuid: "92d6c92b-6329-879a-8439-e04a9933cdc4"
+      stageUuid: "46d8bc0c-b3ec-8161-a293-f824e9e48e02"
     - stage: seal
       stageUuid: "4f1a8dc6-2cce-89eb-9c4e-0ef6dfa23857"
     - stage: uuid
-      stageUuid: "45e9059a-1343-828d-b2b0-348ce1c32c36"
+      stageUuid: "9b2be6d4-3ba1-8eb8-8519-30e51df6dd24"
 version: 2
 ---
 # statistical

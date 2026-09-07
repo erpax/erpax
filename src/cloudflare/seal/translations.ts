@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seal",
-    "uuid": "967f47b6-f6f2-8c0b-9af5-051cbe5565c1",
+    "uuid": "88b383d0-636c-8469-8fd9-7bb3afed0693",
     "words": [
       "seal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about seal — Cloudflare config sealing — content-uuid identity, decrypt only on proof.",
-    "uuid": "e37ba7d2-8045-82f0-9aaa-f78188dec871",
+    "uuid": "6b5a39ce-d3bf-8665-9974-57dcd92eecb0",
     "words": [
       "use",
       "when",

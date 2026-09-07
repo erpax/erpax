@@ -2,10 +2,10 @@
 name: community
 description: "Use when reasoning about community as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/community"
-coordinate: "vocabulary/community · 1/base · 9c74b0af"
-contentUuid: "a3eeef4e-cbb7-5d3d-a987-d3711cadfe55"
-diamondUuid: "91ebd278-20b0-8f3a-a157-a43b49b04ec2"
-uuid: "9c74b0af-450f-8eee-a4fb-86ab2e2c8948"
+coordinate: "vocabulary/community · 1/base · cf09babd"
+contentUuid: "44818766-56bb-590a-991c-aef82b0641ee"
+diamondUuid: "583b48f0-5110-84c4-9b3a-b4f6b871a93b"
+uuid: "cf09babd-41e5-8810-a368-ceefd84187a3"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9e512a7b-8e69-86b5-a938-6ee32217289b"
+  computationUuid: "6934b578-5136-8aa4-88b5-d38798e481c7"
   stages:
     - stage: path
       stageUuid: "b4401fa6-fd6c-8a94-824e-945e0140f50d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "30e0870f-184a-885e-bae9-54d779820133"
     - stage: horo
-      stageUuid: "11faefa2-6b79-8f32-92f3-8ac061f5e054"
+      stageUuid: "5e10adf2-25ab-80d1-b12a-08c1fc0bc5b1"
     - stage: seal
       stageUuid: "1ca1fae9-83d4-8094-98f8-c0549b7a739a"
     - stage: uuid
-      stageUuid: "9cd33ff7-0092-84c6-97a5-32440381ff9b"
+      stageUuid: "5dfd5a01-4e36-8585-b6ba-3e12ac567eb1"
 version: 2
 ---
 # community

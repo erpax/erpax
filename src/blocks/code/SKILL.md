@@ -2,11 +2,11 @@
 name: code
 description: "Use when reasoning about code — exports (the Payload block) and exports (the React component). One barrel cannot offer both under one name, so the client is here."
 atomPath: "blocks/code"
-coordinate: "blocks/code · 2/share · bf19ad50"
-contentUuid: "1366a040-b6f9-52f8-ab04-976713fc236f"
-diamondUuid: "7b5f94f4-e55d-8c83-93f5-86ce065375ae"
-uuid: "bf19ad50-590e-8bd9-9575-191f8fb72f58"
-horo: 2
+coordinate: "blocks/code · 8/crest · 3e57992e"
+contentUuid: "3e5fe538-d60e-5963-80ac-672d577b840e"
+diamondUuid: "937cd0b3-c294-8315-870a-6bbbe4ef439e"
+uuid: "3e57992e-9b80-87f5-9e96-e9edcf7ec950"
+horo: 8
 typography:
   partition: blocks
   bondDegree: 103
@@ -15,7 +15,7 @@ standards:
   - "W3C-HTML5"
 bindings: []
 signatures:
-  computationUuid: "ea89ea4b-142f-8587-9836-d3c2774e2dfc"
+  computationUuid: "a3618eaa-2a60-8292-ba95-3f2c89656ee8"
   stages:
     - stage: path
       stageUuid: "a471817a-987e-8588-a86e-82284c285857"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "e4562b40-493e-8d91-ba3a-71df04e389b1"
     - stage: horo
-      stageUuid: "e8ab8cff-8410-851d-a3ce-bd4bff85cc1f"
+      stageUuid: "46473ecc-f2b0-8903-875a-ac588dbb1467"
     - stage: seal
       stageUuid: "e58a844b-76d6-8d14-9be4-3c249941846a"
     - stage: uuid
-      stageUuid: "650341cd-2aa8-8ad2-8314-3e6270de8589"
+      stageUuid: "2894fa2f-f780-889a-ae13-03e3083e825d"
 version: 2
 ---
 # blocks/code — the config and the client component both wanted the name `Code`

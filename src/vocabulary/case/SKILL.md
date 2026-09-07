@@ -2,10 +2,10 @@
 name: case
 description: "Use when modelling one case — the singular model of the cases collection (the plural store); one matter under adjudication or handling, with its parties and lifecycle."
 atomPath: "vocabulary/case"
-coordinate: "vocabulary/case · 8/crest · e4e627b8"
-contentUuid: "6c426ac7-64fc-592a-b2de-f29fa7e44821"
-diamondUuid: "4c59377b-1197-8879-8f17-49576a36c68f"
-uuid: "e4e627b8-9dbd-8281-ba6d-c75f251fb25a"
+coordinate: "vocabulary/case · 8/crest · 3634a226"
+contentUuid: "f3ac6a74-7388-5af8-ab4c-6cc8577736a6"
+diamondUuid: "433ed98e-fe83-8ef3-bd5b-e055b2f0934e"
+uuid: "3634a226-bfba-8088-a6eb-2ecd776776bc"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "eaa4b5ab-253a-8738-a30e-c8cc3c841e7a"
+  computationUuid: "f1645dc0-cf12-8314-8c5c-705b85456119"
   stages:
     - stage: path
       stageUuid: "8ca485ab-6121-8f92-9f73-902b821f8710"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "63e40bb2-3239-8637-ad01-291af693bb13"
     - stage: horo
-      stageUuid: "ad2accd7-6439-8ce9-9d66-2a90e63bfc0b"
+      stageUuid: "3e6a1fac-a73f-8436-9265-858eaa274a50"
     - stage: seal
       stageUuid: "7166f493-7876-84ca-8325-7b6f49981973"
     - stage: uuid
-      stageUuid: "af7cc1a5-3c3e-82cc-96ee-47f068fd0837"
+      stageUuid: "20c6224a-7631-80d1-971f-f5863e57561d"
 version: 2
 ---
 # case — the model of one [[cases]] row

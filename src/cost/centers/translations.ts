@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "centers",
-    "uuid": "fbf21330-56b3-8863-91f0-e3f91091692f",
+    "uuid": "a5e56823-d86e-8cd7-b8ae-b300460cd309",
     "words": [
       "centers"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.",
-    "uuid": "c1cdc6cc-d1fc-8347-8ef2-09d8150e41ae",
+    "uuid": "e8dfd98b-2c0d-8488-8ce4-16159af38b26",
     "words": [
       "use",
       "when",

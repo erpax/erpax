@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "except",
-    "uuid": "62b09e74-9ceb-86eb-b1e9-439f6371f4f8",
+    "uuid": "bf15fc2e-4f13-803a-a6ff-be092354361d",
     "words": [
       "except"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about except as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "fc7efaf1-7f90-833e-9517-e245676e273c",
+    "uuid": "11f39c1f-7d77-85ae-aa50-767d381a1e45",
     "words": [
       "use",
       "when",

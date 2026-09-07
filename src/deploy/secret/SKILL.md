@@ -2,10 +2,10 @@
 name: secret
 description: "Use when a workflow references a secret the repository does not hold — the lane dies on its first step, and this says so before the push instead of inside a run someone has to open."
 atomPath: "deploy/secret"
-coordinate: "deploy/secret · 4/weave · c3dbfa39"
-contentUuid: "ba0bc4f7-6824-51ae-b6f7-d642b5a29223"
-diamondUuid: "d2deed42-9b1f-88ec-a22e-3046f1f3a4f1"
-uuid: "c3dbfa39-36ed-81f9-87c7-1464cc46c4f4"
+coordinate: "deploy/secret · 4/weave · 552b2d75"
+contentUuid: "af36a4e3-af1a-57d2-81db-5b2f4c7376d9"
+diamondUuid: "37be1061-0252-8247-9a01-04e3c3628b9d"
+uuid: "552b2d75-1d93-8a68-9fcd-384971867ce6"
 horo: 4
 typography:
   partition: deploy
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c44dae49-5f8b-8794-9ecc-e5ee3c3b6af8"
+  computationUuid: "7b9b4939-224c-8880-ac7d-58687f22fd95"
   stages:
     - stage: path
       stageUuid: "6bd1ad6a-d076-8b6e-9727-d66a6dac1a7e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "90a47ca8-501d-854e-bd25-16e8050d71af"
     - stage: horo
-      stageUuid: "b7906991-3222-880d-bdba-90cc76fc2bb2"
+      stageUuid: "f0a8271e-57c0-8392-897a-6c170b516af8"
     - stage: seal
       stageUuid: "29445c3b-af67-8dc3-b71e-462c3491586d"
     - stage: uuid
-      stageUuid: "e355bcd9-2bb9-8fe4-9338-f6f71552d04b"
+      stageUuid: "90b63d8a-1954-8ecd-a70d-8ee41a79cd30"
 version: 2
 ---
 # deploy/secret — you should not learn a lane cannot run by pushing

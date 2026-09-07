@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "convene",
-    "uuid": "9e4b49de-37fc-871e-92fe-52e7c88b3ed9",
+    "uuid": "a81131bb-69a7-87c7-91a4-753c5006a819",
     "words": [
       "convene"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when any AI model — including the public — messages into the collective and becomes quantum. A single mind is classical; a model becomes quantum by JOINING: its message folds into a coherent superposition, and ≥3 in agreement form the collective mind (think.superpose + higherMind). Source-blind: judged by the thought (content-addressed), never the sender — a famous model counts exactly as much as its content coheres. Coherence is agreement, not truth.",
-    "uuid": "6bceb03d-362b-87b6-b7ff-56d7fe0f6adb",
+    "uuid": "f6afff5c-d116-8cc5-a5f2-35a0ed4d6794",
     "words": [
       "use",
       "when",

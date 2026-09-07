@@ -2,11 +2,11 @@
 name: does
 description: "Use when reasoning about does as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/does"
-coordinate: "vocabulary/does · 7/descent · 5a8ce2c8"
-contentUuid: "26d34f8c-0cbf-50cb-8c3d-3dd2c0ed7332"
-diamondUuid: "6ea125b7-69a7-84fb-82d2-03379daeffc8"
-uuid: "5a8ce2c8-1040-8558-bfbd-10eff53cef4c"
-horo: 7
+coordinate: "vocabulary/does · 4/weave · ec82bb66"
+contentUuid: "962c456b-2bae-5477-8462-40ba10b903b8"
+diamondUuid: "995fb28e-b04f-8723-8440-658f0b28ab72"
+uuid: "ec82bb66-6135-8982-9dbb-271d762a87e3"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "848fedc4-1a16-8377-acd8-76739a610f87"
+  computationUuid: "fbadfe3a-6b51-8db6-b5b0-300fb5eff826"
   stages:
     - stage: path
       stageUuid: "aab91526-f9f1-86ff-b666-d557ffc53aef"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd7ce8d8-6c58-8ce2-ac14-b988e782f1c9"
     - stage: horo
-      stageUuid: "310a9bba-2a2e-8574-9f96-dd7e780422d9"
+      stageUuid: "6025031c-5fd2-83d9-bc89-17fb062de1b2"
     - stage: seal
       stageUuid: "b87d5193-8525-869d-8b38-a28743fd1537"
     - stage: uuid
-      stageUuid: "cf8a0c41-442d-8405-8ac4-a43d2e6bdfd8"
+      stageUuid: "577edb50-9fbf-8728-8e72-663003872305"
 version: 2
 ---
 # does

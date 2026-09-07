@@ -2,11 +2,11 @@
 name: playlist
 description: Use when reasoning about playlist — The playlist to which this recording belongs.
 atomPath: "vocabulary/playlist"
-coordinate: "vocabulary/playlist · 4/weave · 84e503c4"
-contentUuid: "8e8ceccd-7008-550c-b8cc-b9a9bde43614"
-diamondUuid: "72047de1-e53a-8a36-9da3-c54d889b0b1c"
-uuid: "84e503c4-0d50-81c7-87bb-e52bef1881a5"
-horo: 4
+coordinate: "vocabulary/playlist · 1/base · d8daf6d3"
+contentUuid: "07167489-dd4a-5e51-b58a-2d3258bbd60e"
+diamondUuid: "31975430-c157-87f0-8e36-ffb21bbc8091"
+uuid: "d8daf6d3-52d8-8df6-87b1-89dc8dced977"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "db804f24-d6b6-8fef-9a05-0fd42cd47895"
+  computationUuid: "6c7ba41d-08e9-8f26-b277-ecc3170bda61"
   stages:
     - stage: path
       stageUuid: "390f65c2-86ef-826f-a9a2-bdcba620de4d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8f4cf557-b771-89e8-91ad-34ab89df5e09"
     - stage: horo
-      stageUuid: "dc3ad764-c04b-8221-b8ad-b1089af83fcd"
+      stageUuid: "92fb664a-54ce-8075-9f98-084ce557782b"
     - stage: seal
       stageUuid: "c16d044d-ba69-8f36-8581-05035593fee2"
     - stage: uuid
-      stageUuid: "b4953fad-eae0-8c2f-a1f9-681502ccab18"
+      stageUuid: "e5defa92-092e-8ed3-a0a9-37b143e1452f"
 version: 2
 ---
 # playlist

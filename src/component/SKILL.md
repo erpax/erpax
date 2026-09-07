@@ -2,11 +2,11 @@
 name: component
 description: "Use when defining a reusable UI building block — button, card, modal, form field, input. The atomic UI element with consistent design, behavior, and accessibility."
 atomPath: component
-coordinate: "component · 1/base · 2e0a9bea"
-contentUuid: "6a6e74dd-aa5c-5f7e-8fbd-18d1bca4ff0a"
-diamondUuid: "f398a941-eb3b-88c4-9043-92d9e8f8ba0e"
-uuid: "2e0a9bea-c63d-8ece-9a7b-18525ede4bfa"
-horo: 1
+coordinate: "component · 4/weave · 0dee153c"
+contentUuid: "6eb5dfa7-41ff-5e5b-8df6-4371bd12b240"
+diamondUuid: "b7508df6-28a8-818d-a99a-cb4f182d7a3c"
+uuid: "0dee153c-4614-8f43-91ee-4b471d66011d"
+horo: 4
 typography:
   partition: component
   bondDegree: 70
@@ -14,7 +14,7 @@ standards:
   - "WAI-ARIA semantics on a render whose identity is the content-uuid"
 bindings: []
 signatures:
-  computationUuid: "25fe8517-3bc4-8a2c-9e88-e7374ef37c9a"
+  computationUuid: "84aa65ef-d8f2-8aea-8436-b59b23a726b0"
   stages:
     - stage: path
       stageUuid: "e1ef97d9-1bf4-8d59-8c82-0fce0f7ed3bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f8b1c5fe-f546-8e2b-bced-1dca1e60f051"
     - stage: horo
-      stageUuid: "0c81ccc7-7a7e-824e-bfb2-314de458bc10"
+      stageUuid: "b26b4036-082a-827e-98e7-19834af1b5e1"
     - stage: seal
       stageUuid: "b3c3e737-d41d-8e21-a31c-0d5ed14fec00"
     - stage: uuid
-      stageUuid: "e04a55f4-c2e2-85b6-a38c-a62236450d7e"
+      stageUuid: "246f002e-fe55-874b-9d12-99306e6d57dd"
 version: 2
 ---
 # component

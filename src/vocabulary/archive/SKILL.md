@@ -2,11 +2,11 @@
 name: archive
 description: "Use when reasoning about archive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/archive"
-coordinate: "vocabulary/archive · 8/crest · 8bc07c59"
-contentUuid: "7a107200-c237-570f-9d7f-d2ee685b6b7e"
-diamondUuid: "72cf0f2f-c19d-8b63-a03d-fb0e93da6379"
-uuid: "8bc07c59-47dd-8e17-97d1-1a55448f7854"
-horo: 8
+coordinate: "vocabulary/archive · 2/share · 6f8f1dfe"
+contentUuid: "2d908d94-4c16-5f5f-96c2-bee6da387cfd"
+diamondUuid: "7bfeddea-0edc-84b8-b186-fec2ce193f93"
+uuid: "6f8f1dfe-6339-8ced-9df4-bd9a5cddd501"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d40682b3-6ce5-8cd4-bd1a-db1516e7edf8"
+  computationUuid: "4d974b27-cdfc-88aa-88b9-d49640a2bb03"
   stages:
     - stage: path
       stageUuid: "74fecab5-11b3-8f75-8987-12a760418579"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d3779a48-8496-8dea-88e4-444a21a3ae68"
     - stage: horo
-      stageUuid: "74d61752-30cc-8bd5-87ce-e86e83ad10f4"
+      stageUuid: "fbfa9a1a-f4a1-8534-899c-86bcff05a306"
     - stage: seal
       stageUuid: "3610c23d-5f37-8fd0-8663-237215756b97"
     - stage: uuid
-      stageUuid: "a308ee5e-0bc5-8e84-9415-ce52645a004d"
+      stageUuid: "c184fe9d-3076-8018-a403-1fbab5bf2428"
 version: 2
 ---
 # archive

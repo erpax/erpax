@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "finding",
-    "uuid": "94e9a578-ff03-8246-b2fc-d271fe5085d7",
+    "uuid": "4bf7dab3-21dc-8724-a28d-af0987c60be7",
     "words": [
       "finding"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one finding — the singular model of the findings collection (the plural store); an observation of fact produced by an audit or review.",
-    "uuid": "62961f69-137e-8b6d-8545-db19b4140392",
+    "uuid": "b24ae17b-24e2-82d8-bec1-f8c4bb61500d",
     "words": [
       "use",
       "when",

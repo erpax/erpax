@@ -2,11 +2,11 @@
 name: engine
 description: "Use when a document must change state under a declared state machine, or when auditing that machine for dead-ends and unreachable states — attemptTransition gates the move and returns the next state plus the content-uuid event it emits; deadEnds and noInbound name where the machine is incomplete."
 atomPath: "workflow/engine"
-coordinate: "workflow/engine · 4/weave · 689b4e25"
-contentUuid: "ab112fc0-f803-5d4e-9a0c-d5fd63ad925f"
-diamondUuid: "289a2736-356d-8994-a905-bf052df0d24d"
-uuid: "689b4e25-1dd9-86fe-b033-7a095198ef60"
-horo: 4
+coordinate: "workflow/engine · 8/crest · 2e35505d"
+contentUuid: "e869c449-c670-5966-b846-0f72d616850b"
+diamondUuid: "3fa9b708-d6cd-846e-8b1b-4edc47d5cdff"
+uuid: "2e35505d-56e4-80fb-9879-f797ee6272ad"
+horo: 8
 typography:
   partition: workflow
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "OMG BPMN 2.0 process-execution-semantics"
 bindings: []
 signatures:
-  computationUuid: "65bf43c6-8639-8598-8f9e-89af117e0e60"
+  computationUuid: "310779b2-af78-8b03-8154-69e893d814e8"
   stages:
     - stage: path
       stageUuid: "d26ebc48-f8cf-8785-be51-1f16d8273a43"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c2c5cc39-a1d3-8621-9d5e-8542729627d5"
     - stage: horo
-      stageUuid: "df73006b-139e-80d3-ab75-3ce73e190a6b"
+      stageUuid: "330ab983-cc56-8bf0-b5bd-2438758891a9"
     - stage: seal
       stageUuid: "f4b6ade0-45f4-8b8c-8183-aca35a4d16dc"
     - stage: uuid
-      stageUuid: "d8ef4df2-80b8-86d6-a414-29c55bb68015"
+      stageUuid: "9caabda1-00b0-8490-80bc-6ec900257436"
 version: 2
 ---
 # workflow/engine — the state machine, read

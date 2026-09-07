@@ -2,10 +2,10 @@
 name: dermatologic
 description: "Use when reasoning about dermatologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dermatologic"
-coordinate: "vocabulary/dermatologic · 5/round · c6dba24d"
-contentUuid: "d1407973-9d18-5dc6-9242-b20921ae8ec7"
-diamondUuid: "00d923e4-256e-8b71-bbd9-bebc7ce0090e"
-uuid: "c6dba24d-8402-85ea-b21b-3beebb82836a"
+coordinate: "vocabulary/dermatologic · 5/round · 30753ff1"
+contentUuid: "c0b4e0bf-83ba-5b15-8687-feb94d4e904f"
+diamondUuid: "0b8d1cc8-5112-82d7-8cf7-2aac7693fb53"
+uuid: "30753ff1-2a68-83a4-9132-d11feb8eaffa"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8742b7bf-c067-8faa-b28e-1443d5a6e784"
+  computationUuid: "2353bdfa-fd51-820b-9898-7622204ed40a"
   stages:
     - stage: path
       stageUuid: "18bd2a74-ce2b-85d9-b4eb-2f1a23d77714"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "844995fb-4835-8e2f-aa5c-4a0853186f30"
     - stage: horo
-      stageUuid: "09174d17-a67f-8cbc-9f50-91d3ca2ff9cc"
+      stageUuid: "e1f1ca12-e6ec-8744-b4ff-0f6c79eb4a3a"
     - stage: seal
       stageUuid: "5bcebf09-29c2-808f-884e-02547e8faec9"
     - stage: uuid
-      stageUuid: "877c1b5c-ce15-8993-8e0d-580170197196"
+      stageUuid: "101bc84a-fcb3-8bd1-8175-f8a366cd8c75"
 version: 2
 ---
 # dermatologic

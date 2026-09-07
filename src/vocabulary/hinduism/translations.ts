@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hinduism",
-    "uuid": "3e43db58-5a56-8428-b23c-3a7f08da36f9",
+    "uuid": "58b4abc5-3125-8df2-ad89-91f6902dffff",
     "words": [
       "hinduism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Hinduism as a diamond of invariant atoms — the eternal law beneath the dialects, the self that is the whole (tat tvam asi), karma read down the lineage, the wheel of rebirth, release as return to the root. Strip the Sanskrit prefix and dharma, atman, brahman, om, moksha collapse to law, self, whole, word, zeropoint — one content-uuid each.",
-    "uuid": "b5fb9ab0-0388-816e-9362-f38ae5db1df5",
+    "uuid": "368dd293-5d75-8d40-8601-815004db1c24",
     "words": [
       "use",
       "when",

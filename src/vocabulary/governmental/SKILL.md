@@ -2,10 +2,10 @@
 name: governmental
 description: "Use when reasoning about governmental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/governmental"
-coordinate: "vocabulary/governmental · 7/descent · cb8cb2e3"
-contentUuid: "47210c5a-845f-557e-bdbf-7bfb52400c3a"
-diamondUuid: "5f9b9070-25bb-824a-aae6-ba543951bf74"
-uuid: "cb8cb2e3-dc42-819d-bcf9-53b3cc10dccb"
+coordinate: "vocabulary/governmental · 7/descent · 18582b02"
+contentUuid: "a2a7ebab-f8f8-56cf-942e-6400d868e3ea"
+diamondUuid: "e537e38c-e5f6-8ebe-8eaa-54af8b26e712"
+uuid: "18582b02-1448-8a38-96e8-e573e50c1f39"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e89bd6b4-0ef5-8ccb-8f0d-96db0c552b5e"
+  computationUuid: "0b975fb9-6644-86da-8372-02a3e47ffa60"
   stages:
     - stage: path
       stageUuid: "4862401c-5a83-8e75-8d14-51de1812c954"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bf5c6fea-be5c-8f15-8e52-62a5125ed604"
     - stage: horo
-      stageUuid: "f0c7dce2-30a2-8cfa-b820-161d6440b626"
+      stageUuid: "84aca615-7c5f-814b-a08a-621a0a5dd415"
     - stage: seal
       stageUuid: "8cf5c397-8420-8ae8-ab8f-6fb201ef29f8"
     - stage: uuid
-      stageUuid: "66c067dd-cc25-807a-94c1-b1277b9a9a88"
+      stageUuid: "99dcb8ff-7a3e-8049-9922-857627458953"
 version: 2
 ---
 # governmental

@@ -2,11 +2,11 @@
 name: theater
 description: "Use when reasoning about theater as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: theater
-coordinate: "theater · 7/descent · e9225890"
-contentUuid: "5d205af9-4943-5a94-a156-9188f026a95e"
-diamondUuid: "41cf899e-691d-87ad-b461-1a9163a2830f"
-uuid: "e9225890-a848-8881-b922-02a469836869"
-horo: 7
+coordinate: "theater · 1/base · 47ec0be8"
+contentUuid: "089db73b-0925-5d57-8bce-c36845647474"
+diamondUuid: "0cee29ed-5791-81b2-87b0-a7a75c1df680"
+uuid: "47ec0be8-797a-89d1-8d93-84901b51d039"
+horo: 1
 typography:
   partition: theater
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e90c3b3d-eedc-89c3-a1a8-1335ea69b9b6"
+  computationUuid: "23779a23-5e85-8bfe-aac3-a050d9fcb26f"
   stages:
     - stage: path
       stageUuid: "4edeb65a-30f8-8950-b8e8-ee32fa2ecc7b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "67da079b-fa90-8bd1-ba5d-45de993f0f96"
     - stage: horo
-      stageUuid: "abfa5faf-2285-8e16-909b-e2c1e93c9e1b"
+      stageUuid: "9eb01be7-1898-8541-96b4-43a1e0140d21"
     - stage: seal
       stageUuid: "d5cf8574-50a7-8443-9caf-45d60d25824e"
     - stage: uuid
-      stageUuid: "fe5eb08b-2bdc-8b3d-a446-e2b6a2031fbd"
+      stageUuid: "ec8f0582-04f6-8e6e-8be3-be33e217f040"
 version: 2
 ---
 # theater

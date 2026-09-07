@@ -2,11 +2,11 @@
 name: remix
 description: "Use when reasoning about remix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/remix"
-coordinate: "vocabulary/remix · 2/share · d8e8a349"
-contentUuid: "af318d8d-a7b1-5dcc-8799-c40c7a93ace0"
-diamondUuid: "ddb25fd1-3b65-8c80-b3e3-93921104a188"
-uuid: "d8e8a349-382f-81b9-9656-470b53239630"
-horo: 2
+coordinate: "vocabulary/remix · 1/base · eae0048b"
+contentUuid: "da34bb59-9061-5d48-aaa8-277971e983d7"
+diamondUuid: "d8666c12-7c5e-8845-939d-cf155f461d31"
+uuid: "eae0048b-e8a2-8dd7-a1b1-ed22dcc578ef"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ad57bea9-513d-83a4-8a94-195c577f914a"
+  computationUuid: "08717159-dba2-8cd7-96b2-96a7bcf2f3ab"
   stages:
     - stage: path
       stageUuid: "e2049750-804c-8913-ade3-2ce8d9a1b5de"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "572c9b5d-3d3e-8cb1-804a-d5c548377a14"
     - stage: horo
-      stageUuid: "6757ceb3-08ba-8324-963f-631711d6b35f"
+      stageUuid: "1850e333-82b7-81c4-b685-4f0c966c1a9d"
     - stage: seal
       stageUuid: "2ada7418-ba3b-8a78-8c6b-b3937f4f3679"
     - stage: uuid
-      stageUuid: "da63be24-4142-8c21-963a-5043d164ebe5"
+      stageUuid: "0f841217-d1b9-8698-8471-ee48bdbbb264"
 version: 2
 ---
 # remix

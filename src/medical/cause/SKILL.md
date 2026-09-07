@@ -2,11 +2,11 @@
 name: cause
 description: "Use when reasoning about cause as a medical facet of medical — vocabulary pivot to @/cause; nested not duplicated."
 atomPath: "medical/cause"
-coordinate: "medical/cause · 1/base · 0cd74b51"
-contentUuid: "3ef18d40-8fec-55d7-8783-e8e5a2cb6b1f"
-diamondUuid: "acab43f6-9cd1-8242-943d-5f11d6522789"
-uuid: "0cd74b51-e84b-8650-aa29-7b3ee41f6e7d"
-horo: 1
+coordinate: "medical/cause · 4/weave · 2330c75f"
+contentUuid: "11040083-f353-5ccc-8cd5-24dbe05b4757"
+diamondUuid: "b3909523-66e5-8aee-917f-4d43b128e920"
+uuid: "2330c75f-be68-82e2-bd23-9aa379c59585"
+horo: 4
 typography:
   partition: medical
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "43e4c4b8-dd8e-89be-9511-b5bb7148efd9"
+  computationUuid: "4d2c91fd-c218-82d5-b9d7-0c7294708040"
   stages:
     - stage: path
       stageUuid: "197ba49d-a3d2-8ebb-b3f9-7cb302c1e842"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a1b88936-cdcf-8560-8741-81732d1c0703"
     - stage: horo
-      stageUuid: "54a4761f-bd7d-8006-9859-3927f9c98804"
+      stageUuid: "db832863-7997-8c95-aeeb-a7e296795622"
     - stage: seal
       stageUuid: "ca75f41f-b8f7-8170-9442-0b1cfb7b3a2d"
     - stage: uuid
-      stageUuid: "233a5487-d5ae-880b-9961-94354ee200e9"
+      stageUuid: "47a0411f-76b3-8397-8724-184d6f0ec390"
 version: 2
 ---
 # medical/cause — medical facet

@@ -2,11 +2,11 @@
 name: star
 description: "Use when reasoning about star as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: star
-coordinate: "star · 1/base · 83d0bd88"
-contentUuid: "284923a8-5159-5bc8-8fc4-7a393d3b2b10"
-diamondUuid: "23d9bacd-c2a2-806a-98fa-3f3ae9fe1e17"
-uuid: "83d0bd88-ef19-83f5-9a03-26f8cfa546a9"
-horo: 1
+coordinate: "star · 4/weave · 8de77d72"
+contentUuid: "6a970736-453e-54ef-9f74-ae69867a368c"
+diamondUuid: "345b4e28-485f-852a-91dc-cd382f5320c4"
+uuid: "8de77d72-6836-820b-b132-1d9529285947"
+horo: 4
 typography:
   partition: star
   bondDegree: 50
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "454b0abd-36d9-80ae-98a4-e26291ac7dab"
+  computationUuid: "c36ade98-8c3b-868a-98f3-f08e7ff72c6d"
   stages:
     - stage: path
       stageUuid: "ef7b9a11-bc04-8d75-a738-bbf4c855bbc9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "272d0ae7-2a46-887c-8ecc-56d398e5495e"
     - stage: horo
-      stageUuid: "04c52f98-ad8c-82f6-88fd-826b4014c4df"
+      stageUuid: "c5e627de-c3c8-8830-b70a-4116e7138f57"
     - stage: seal
       stageUuid: "6b25fe5a-0e25-87b7-9671-7a5f91b9c3ad"
     - stage: uuid
-      stageUuid: "037df4f4-7e67-8ca6-9d91-0fc1eb51b400"
+      stageUuid: "b4152609-d88f-8779-845c-e6a5b8cf3c70"
 version: 2
 ---
 # star

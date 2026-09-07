@@ -2,11 +2,11 @@
 name: xray
 description: "Use when reasoning about xray as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: xray
-coordinate: "xray · 2/share · dc3dfac0"
-contentUuid: "3ed2f28b-37a9-5c5f-83c4-7e56025ef65f"
-diamondUuid: "0b5beb25-1460-8835-8888-e34e4150f0e5"
-uuid: "dc3dfac0-4f1b-8621-b1a7-8d7b7aef6943"
-horo: 2
+coordinate: "xray · 7/descent · bb737b92"
+contentUuid: "ca4c0ae8-b8e7-59d9-8606-69ac7cbca58f"
+diamondUuid: "4080c936-dd2f-8f80-9cae-30e4e8288a9e"
+uuid: "bb737b92-874b-8a1e-b8a4-883463f7c435"
+horo: 7
 typography:
   partition: xray
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "73cab975-146e-83f2-a839-4f9f92d37044"
+  computationUuid: "df424398-eecf-8576-b437-682127dc6737"
   stages:
     - stage: path
       stageUuid: "b3313d78-797f-894d-98ce-9875ae0f5670"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2272886c-a45c-8a26-a873-c967798afa97"
     - stage: horo
-      stageUuid: "ded529b0-06fd-8384-a724-891fb7e20b9e"
+      stageUuid: "b2e8ccfa-4308-8889-9145-d0653223b268"
     - stage: seal
       stageUuid: "b08d743d-7971-82c9-a60d-d15d81299987"
     - stage: uuid
-      stageUuid: "18c92e6f-3cca-856b-93e9-2bb451f6765d"
+      stageUuid: "3dc01681-4ffa-8fa5-b093-4a6f7e16a549"
 version: 2
 ---
 # xray

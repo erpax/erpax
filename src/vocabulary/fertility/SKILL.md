@@ -2,10 +2,10 @@
 name: fertility
 description: "Use when budgeting the soil's nutrient capacity against crop demand — the N-P-K balance where a crop's nitrogen and potassium need (lbs/acre, as N and K₂O oxide forms) scales with its yield; heavy vs light feeders; legumes fixing their own nitrogen (N ≈ 0); the 4R stewardship and soil-test basis. Fertility is a double-entry budget: crop removal debits the soil, application credits it; it must balance like any ledger."
 atomPath: "vocabulary/fertility"
-coordinate: "vocabulary/fertility · 4/weave · 16ba1d9f"
-contentUuid: "3029a132-8982-5ae5-8fa0-b9a9194f889a"
-diamondUuid: "38959c2d-b9bc-8a34-83b5-4a32e6b61ac6"
-uuid: "16ba1d9f-ace1-89d6-9cdf-850c2c6f0ba6"
+coordinate: "vocabulary/fertility · 4/weave · 50f3899b"
+contentUuid: "1e04ec8d-67b4-5e1a-8c4b-70f1447c98ea"
+diamondUuid: "eda76d9c-b11d-819c-89a2-1e715046b715"
+uuid: "50f3899b-526c-8f81-b18a-d7daf6b4cfe2"
 horo: 4
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "19def9c8-2960-88b0-b171-f2296a31920b"
+  computationUuid: "547f4110-0bb1-8737-b658-5da3b7088d4c"
   stages:
     - stage: path
       stageUuid: "1e1d332f-0c31-87a3-85ce-c60054d0bc4a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b8827f5d-8861-897d-aa93-a75b109cb8cb"
     - stage: horo
-      stageUuid: "2cb5d3d2-8e4f-8996-b540-b1c4af6a4de9"
+      stageUuid: "7206ca8a-bc02-88b6-8986-9f5b73ea7ff8"
     - stage: seal
       stageUuid: "574d352f-7179-8f90-86af-d75ec2e5124e"
     - stage: uuid
-      stageUuid: "1977c90b-a121-8492-99d4-7a11b96b1a13"
+      stageUuid: "248e1c33-2d5b-8c1e-a550-6bb61f3a9778"
 version: 2
 ---
 # fertility — the soil's nutrient budget, balanced against crop demand

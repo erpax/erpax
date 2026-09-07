@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "strength",
-    "uuid": "9ef6aa6e-21e6-8fac-8d88-719f49d1548d",
+    "uuid": "343e05a0-977f-8374-995e-1d7597450517",
     "words": [
       "strength"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the corpus's strength — its DRY-ness amplified by its dimensional slices; strength = coverageCostLog2(dryness, slices), infinite at perfect DRY (zero duplication residue), one slice (the digit's 88.4%) only one term.",
-    "uuid": "87c84174-49ff-84bd-8a89-05a6cf16b621",
+    "uuid": "48b48117-c1e0-8de1-9609-774fe48db2fa",
     "words": [
       "use",
       "when",

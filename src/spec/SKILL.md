@@ -2,11 +2,11 @@
 name: spec
 description: "Use when one workflow definition must generate many materializations — e2e test, help tip/subtitle, seed, evidence, marketing page, i18n keys — from a single source. The spec-generator over BUSINESS_CHAINS; e2e tests and help tips share one source."
 atomPath: spec
-coordinate: "spec · 5/round · e79fb8e0"
-contentUuid: "dcabbf28-0947-50c8-804b-05bd2de9a80a"
-diamondUuid: "db80cb88-0c24-88cf-abfd-d0e59bfe08e7"
-uuid: "e79fb8e0-7129-8640-b35c-a7c82b03f9ee"
-horo: 5
+coordinate: "spec · 8/crest · c6f6c276"
+contentUuid: "0e872db9-95b8-5fa1-9a1b-9e6e2ef33004"
+diamondUuid: "4b4b111e-8bdf-8c68-ac4a-247208c7005d"
+uuid: "c6f6c276-6448-84d4-89bc-0813489cd217"
+horo: 8
 typography:
   partition: spec
   bondDegree: 49
@@ -15,7 +15,7 @@ standards:
   - "RFC-8259"
 bindings: []
 signatures:
-  computationUuid: "ff834f28-8a59-845d-8a99-8fcfa52703cf"
+  computationUuid: "b6d0bdc2-1ad8-8e83-af3f-75387df034d7"
   stages:
     - stage: path
       stageUuid: "4eb8ef9c-3c64-8427-add6-7d971014f25c"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "9ff24001-7257-8ffa-981c-1ea4f998eadd"
     - stage: horo
-      stageUuid: "ff1c5181-b8ec-8e70-be6f-fcd5effd9beb"
+      stageUuid: "22899f71-228b-8abf-b042-edb8e8c0788b"
     - stage: seal
       stageUuid: "4adf610e-54ae-8f0e-998a-9aa17a70dc3c"
     - stage: uuid
-      stageUuid: "8b3adae1-3f0c-82a0-8de4-bca39f6b8f64"
+      stageUuid: "191165bb-c59f-8909-a877-fa4a5fdcef92"
 version: 2
 ---
 # spec — one source, many materializations (e2e test ↔ help tip)

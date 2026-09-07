@@ -2,11 +2,11 @@
 name: school
 description: Use when reasoning about school — A school.
 atomPath: school
-coordinate: "school · 8/crest · 32d60e70"
-contentUuid: "de346a42-fa04-53a4-bde7-16367a387d99"
-diamondUuid: "717150a4-08c4-89c5-94e8-e046d5b25eb3"
-uuid: "32d60e70-3d1c-8d14-823a-c465134895a2"
-horo: 8
+coordinate: "school · 7/descent · 5d047728"
+contentUuid: "67669015-6379-5874-8c88-2894f7544a88"
+diamondUuid: "516a5a85-f20d-8840-abf1-2186df965db8"
+uuid: "5d047728-ccbb-88b0-ad28-bea0f712faeb"
+horo: 7
 typography:
   partition: school
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7521eb02-6e4e-8e77-b574-494dbec5d148"
+  computationUuid: "ca3b8947-4e3b-8fc2-94d3-05bbe827e1dd"
   stages:
     - stage: path
       stageUuid: "23cab706-a8be-8aa6-8cb6-01caecdb7b1e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "169e3044-fae3-8872-8c16-105ded27db84"
     - stage: horo
-      stageUuid: "ea2cac4d-4b01-8f95-b25d-82fc2e5e0c8c"
+      stageUuid: "f60af3aa-d73a-8db2-a27e-5705b1a5544b"
     - stage: seal
       stageUuid: "3f2d7b2b-6e08-83d2-961f-20dd44c6ecc5"
     - stage: uuid
-      stageUuid: "a6632018-11c2-8a54-9726-28814edfa24c"
+      stageUuid: "f2cf6607-aaa6-83de-8e97-4e952fd49a74"
 version: 2
 ---
 # school

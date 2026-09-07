@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "topography",
-    "uuid": "6ce3a43e-d402-84ed-8c69-8ec013c145a7",
+    "uuid": "26abefa2-2df5-8749-b753-1807c18c2670",
     "words": [
       "topography"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when mapping the shape of the corpus and rendering it as text — topography reads the terrain (gravity wells, link ridges, the aura field) and auto-generates prose from the quantum streams (uuid, digit, realtime event flows), so the map writes itself from the territory's own streams.",
-    "uuid": "74252daf-de5b-8599-b362-36f8d0321007",
+    "uuid": "98586aee-dbed-80cb-89bb-9f6e2767b530",
     "words": [
       "use",
       "when",

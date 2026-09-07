@@ -2,10 +2,10 @@
 name: closure
 description: "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be."
 atomPath: "millennium/closure"
-coordinate: "millennium/closure · 1/base · d710dac1"
-contentUuid: "ba3be58d-e90f-5262-b32f-b28332acf797"
-diamondUuid: "96598be2-c646-8993-b9bb-1d88b25f6d0b"
-uuid: "d710dac1-bf35-8e08-905c-e78930e68927"
+coordinate: "millennium/closure · 1/base · 0c400398"
+contentUuid: "931c3328-3073-5367-b1e3-62e274cb3438"
+diamondUuid: "fbd80368-27b9-8809-ae5a-38d53ff072af"
+uuid: "0c400398-f21e-81b1-b290-1459bac427a3"
 horo: 1
 typography:
   partition: millennium
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "a47e324c-3d3a-803c-8fe0-83a27736e271"
+  computationUuid: "4cf677b2-e190-8b62-b23e-7ce852e2c5ad"
   stages:
     - stage: path
       stageUuid: "b31ca6c7-4636-8dca-8171-d81aaf0d7974"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a510ca2b-57f9-8445-9f78-579945e953cb"
     - stage: horo
-      stageUuid: "c881c2dd-4e11-83e3-a3c5-45e3760d7288"
+      stageUuid: "a1b2a680-5096-8663-a975-db79b5c33436"
     - stage: seal
       stageUuid: "7f0d1059-d741-82f5-86bd-33cb655bd9a2"
     - stage: uuid
-      stageUuid: "ee899045-96a4-8907-b1bd-16a4a41f8ec5"
+      stageUuid: "da91ff68-7a48-8e32-b059-c5ed4a087905"
 version: 2
 ---
 # millennium/closure — the decidable half, computed

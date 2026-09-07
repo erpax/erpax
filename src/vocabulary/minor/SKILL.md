@@ -2,11 +2,11 @@
 name: minor
 description: "Use when reasoning about minor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/minor"
-coordinate: "vocabulary/minor · 5/round · a989f699"
-contentUuid: "802678df-5539-5fcf-88f8-f01b74e352bd"
-diamondUuid: "a78b7768-521b-8134-91d4-3f1826fb963e"
-uuid: "a989f699-98fb-8f8c-8296-c2d8c061ed98"
-horo: 5
+coordinate: "vocabulary/minor · 4/weave · a6f1bb12"
+contentUuid: "e3b58d52-8fc2-547d-9d5b-e723c53211d6"
+diamondUuid: "96b4ffd6-1693-84ea-9410-77752a6ea6e7"
+uuid: "a6f1bb12-3b93-83e7-b849-4bba4a2cc6ca"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "422e3206-eda4-84b7-ad89-27a132f055ac"
+  computationUuid: "484a6618-dad7-88f6-b93d-04c553eb5021"
   stages:
     - stage: path
       stageUuid: "7266e7f9-ddf7-898e-ad2c-e0f52deb6692"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5672b816-3740-83ab-ad89-11162019b760"
     - stage: horo
-      stageUuid: "5248bde5-6bff-8d7b-bd55-8811740948e2"
+      stageUuid: "d959265b-50c3-86bc-8e1f-f9d713be1bb8"
     - stage: seal
       stageUuid: "83cad59f-5a95-8249-bf93-eeb85bfc7943"
     - stage: uuid
-      stageUuid: "e73e1f16-6f47-843d-ac56-5d5fbe437589"
+      stageUuid: "4f75673e-f2b1-8fbe-bfa1-d42f4c9d1e5f"
 version: 2
 ---
 # minor

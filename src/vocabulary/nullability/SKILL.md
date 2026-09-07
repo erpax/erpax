@@ -2,18 +2,18 @@
 name: nullability
 description: "Use when deciding NULL semantics — nullable vs NOT NULL fields, NULL handling in queries (IS NULL, COALESCE, NVL), NULL in aggregates (SUM ignores NULL), NULL propagation in calculations, three-valued logic."
 atomPath: "vocabulary/nullability"
-coordinate: "vocabulary/nullability · 2/share · ae012915"
-contentUuid: "8c958869-26d0-5d44-9635-750ab8f44073"
-diamondUuid: "c296b383-35f6-88ec-8033-d393016bb74f"
-uuid: "ae012915-71f3-839d-9a5e-77913e59bfc6"
-horo: 2
+coordinate: "vocabulary/nullability · 1/base · 04485257"
+contentUuid: "e86f673e-b389-51e9-82b2-f1de458514d6"
+diamondUuid: "2bd37d31-8d0e-8bc0-b4dd-bdba4600bc14"
+uuid: "04485257-5c30-8efd-9579-544383426e3a"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "248cea76-7bd8-8be5-8b45-59c850e0ce34"
+  computationUuid: "f75966c1-ef60-8b99-879a-cb9a4aa40cd6"
   stages:
     - stage: path
       stageUuid: "c35dd35f-167c-8ede-a75d-8865356e7a80"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1052ea88-6148-8386-9815-65b7a7f82455"
     - stage: horo
-      stageUuid: "8e75a1c9-7d45-877d-8d71-371ef3b00c23"
+      stageUuid: "fb83c0f4-c25d-886d-a4aa-3629385d8c44"
     - stage: seal
       stageUuid: "9115e620-90d2-87be-bf14-2b2ea6fb8bbd"
     - stage: uuid
-      stageUuid: "f33286bf-5103-8913-a529-dab64e421791"
+      stageUuid: "e38084a7-e552-87d0-8658-94ef4845a90e"
 version: 2
 ---
 # nullability

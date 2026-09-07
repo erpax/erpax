@@ -2,11 +2,11 @@
 name: timezone
 description: "Use when reasoning about timezone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: timezone
-coordinate: "timezone · 7/descent · dc6ff9c4"
-contentUuid: "db547167-c258-589a-bba1-ac4c9722e94f"
-diamondUuid: "04eb6765-60ad-8f62-afe8-94d518f281b3"
-uuid: "dc6ff9c4-1b9e-8c1c-8601-a213b703700d"
-horo: 7
+coordinate: "timezone · 2/share · 9aa0d3aa"
+contentUuid: "920249c0-28de-56c9-ab4a-701a855257e0"
+diamondUuid: "0c0af93d-a17b-855c-9b10-a2cb7808dc60"
+uuid: "9aa0d3aa-18cc-8403-904c-f71f7da1a849"
+horo: 2
 typography:
   partition: timezone
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6ce3c30a-0b14-8579-858c-cdcdc1a50268"
+  computationUuid: "31189b3d-60bd-8851-ba19-a2ddf9b933fe"
   stages:
     - stage: path
       stageUuid: "637aebb8-cf39-8afb-b833-22a32132b813"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "57c7f6cf-683c-8c80-a970-a4a8981efc4c"
     - stage: horo
-      stageUuid: "b32f97c9-dfab-8c61-bd1b-11cf124120e4"
+      stageUuid: "4b9bcf47-d48c-80e3-9a86-dee6ad4900a3"
     - stage: seal
       stageUuid: "77353127-69fa-821e-a7a9-63a054362254"
     - stage: uuid
-      stageUuid: "3831c565-32cf-8022-8fe4-8fb6ad2a2d3e"
+      stageUuid: "685f6b21-2f92-843c-8581-20d7f893316b"
 version: 2
 ---
 # timezone

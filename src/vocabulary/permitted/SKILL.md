@@ -2,10 +2,10 @@
 name: permitted
 description: "Use when reasoning about permitted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/permitted"
-coordinate: "vocabulary/permitted · 8/crest · 1fd5b3c4"
-contentUuid: "5427e214-ace7-54e5-a9dd-a4b56c45679a"
-diamondUuid: "99fe153e-3514-8f25-8b62-9115b8a02945"
-uuid: "1fd5b3c4-c867-8c3c-993f-cefd2b74cc39"
+coordinate: "vocabulary/permitted · 8/crest · ac213ae5"
+contentUuid: "031e4d53-90e0-5b4a-b048-4c6fdff2105f"
+diamondUuid: "8e18a74d-7459-8fce-a298-19362416db12"
+uuid: "ac213ae5-eb09-8e33-91c0-926266b845f4"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3d4c0ab4-51b9-8afd-bff6-3dcf4bf0a265"
+  computationUuid: "79163af6-fcbe-8f2d-9789-f47bca49ded5"
   stages:
     - stage: path
       stageUuid: "17697788-2134-8cf4-be1e-10be916f14bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "959c8585-506b-807c-a923-d2d9133669ef"
     - stage: horo
-      stageUuid: "6eba6e71-2b0e-84b1-840f-536c7d1999a1"
+      stageUuid: "07cd3d50-bce1-856a-ab84-a36084b625d3"
     - stage: seal
       stageUuid: "40bad2ca-54dd-846d-8e30-1a28876cd62f"
     - stage: uuid
-      stageUuid: "3da434f5-c23d-8180-aa63-80ce524162bf"
+      stageUuid: "5fbf2f9f-932e-87b3-87c5-2a34d3e7fc7e"
 version: 2
 ---
 # permitted

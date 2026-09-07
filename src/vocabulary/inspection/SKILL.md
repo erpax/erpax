@@ -2,18 +2,18 @@
 name: inspection
 description: Use when modelling one inspection — the singular model of the inspections collection (the plural store); a recorded examination against a standard.
 atomPath: "vocabulary/inspection"
-coordinate: "vocabulary/inspection · 1/base · 8413f8d2"
-contentUuid: "5aa8efe6-9596-5962-b769-50afad43f49e"
-diamondUuid: "c8d74e78-16a3-8e60-99a8-b9c6a5b77ac0"
-uuid: "8413f8d2-cbe1-8ec0-84cd-9dc41a27db79"
-horo: 1
+coordinate: "vocabulary/inspection · 7/descent · 81bc86e0"
+contentUuid: "d0c590da-6eeb-5d94-9634-7d252bb26b89"
+diamondUuid: "498e627d-e575-8dec-a213-d93b7c4b0f7b"
+uuid: "81bc86e0-8b23-8b82-92ac-11789e4d176f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "520d4aa0-f662-8a6d-99c9-b1aa89c352ba"
+  computationUuid: "9122a61c-9463-80dc-9847-4e662327ebc3"
   stages:
     - stage: path
       stageUuid: "7643421f-368d-83e2-b94b-a4183dee323f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b0e66a09-0d3d-891d-bb2a-2cffbade2e90"
     - stage: horo
-      stageUuid: "fefd8893-395a-8508-937a-64d528ed3bde"
+      stageUuid: "4a8cb289-f012-8a2f-bf10-f33ae6252253"
     - stage: seal
       stageUuid: "9d582626-982e-8744-8720-83becbc00ac8"
     - stage: uuid
-      stageUuid: "8a79518a-65c0-8183-beff-d4ec5d87c2dd"
+      stageUuid: "3912a93e-6c8a-832a-90ff-751e2de54f1a"
 version: 2
 ---
 # inspection — the model of one [[inspections]] row

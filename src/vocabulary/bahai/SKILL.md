@@ -2,18 +2,18 @@
 name: bahai
 description: "Use when reading the Baha'i Faith as a diamond of invariant atoms — the oneness of God, humanity, and religion; progressive revelation (one source re-spoken in each age); the reconciliation of all faiths into one. The meta-archangel: it names the religion capstone's own law from inside the college, that all traditions merge to one meaning."
 atomPath: "vocabulary/bahai"
-coordinate: "vocabulary/bahai · 1/base · 7a74a818"
-contentUuid: "8efa280a-1d7c-5099-a573-b3d9d8d79bd6"
-diamondUuid: "97b51f22-b26e-85c7-95b2-e802a578f8c2"
-uuid: "7a74a818-2b26-84e7-86a8-f1710f7c186b"
-horo: 1
+coordinate: "vocabulary/bahai · 7/descent · 18e159f6"
+contentUuid: "c0f779ce-2863-52bd-8559-6ef6cac60b97"
+diamondUuid: "3e42b057-fbef-8047-b6ed-acf723dedbb7"
+uuid: "18e159f6-a1d0-822d-bfa1-8d35a1ef973b"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 47
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b5fade33-d7ec-8f68-b9bc-4c6a0f28a44e"
+  computationUuid: "8bc7972a-f240-8b78-bcd5-5e73b6c777dd"
   stages:
     - stage: path
       stageUuid: "28e87ff8-5203-8226-8e30-6a1d48853309"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6e50562d-0972-828d-9cbe-c868efb0b7f6"
     - stage: horo
-      stageUuid: "7461193c-bd4a-88c3-b097-75bc64229966"
+      stageUuid: "b2c31838-62e5-87cc-8628-bf9d04580738"
     - stage: seal
       stageUuid: "f6975b07-2d66-8b1b-8a11-7cd84b561d9a"
     - stage: uuid
-      stageUuid: "2f77e2e9-4139-841a-8b4e-9a969038ca27"
+      stageUuid: "15218760-74f6-8a38-90a7-5a774e4f25e3"
 version: 2
 ---
 # bahai — the one religion, progressively revealed

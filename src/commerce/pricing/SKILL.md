@@ -2,18 +2,18 @@
 name: pricing
 description: "Use when reaching the pricing side of commerce — tiers, subscriptions, metered usage — through its own namespace; the face re-exports the commerce barrel while the matter is still being lifted out of the hub."
 atomPath: "commerce/pricing"
-coordinate: "commerce/pricing · 5/round · 56544456"
-contentUuid: "b4540b6a-ea52-5caa-9e21-14b4867e04ee"
-diamondUuid: "ddbdafbf-857d-83a0-9805-974dcfc67699"
-uuid: "56544456-3835-8a29-b78b-f2361f506008"
-horo: 5
+coordinate: "commerce/pricing · 2/share · db81f2d9"
+contentUuid: "70fec393-2be8-5206-8234-b2bb1f23a9fd"
+diamondUuid: "a653705a-0e5c-84a1-87cb-2206467535f1"
+uuid: "db81f2d9-5bf3-82fd-bbd8-dea407fa58a3"
+horo: 2
 typography:
   partition: commerce
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "961f89a4-d4a1-817a-b26f-5fac2bf72028"
+  computationUuid: "574b62b0-a42a-8a54-8dad-df72ad7b8a6e"
   stages:
     - stage: path
       stageUuid: "2e1bdb9d-c5fa-8b17-9176-0c056bcc68f5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f7d5a487-0494-8c6f-a9bb-f6d43bd24710"
     - stage: horo
-      stageUuid: "c2128cba-e84a-8d11-9cba-15fae73100a5"
+      stageUuid: "ae9581ad-eb66-8c2a-a8fb-d23d9073ddc4"
     - stage: seal
       stageUuid: "887b0e7f-336c-88dc-af23-187714c19217"
     - stage: uuid
-      stageUuid: "cdcba965-a43c-871f-b2dd-2469cb8e2ebb"
+      stageUuid: "ac4e8d64-4f2e-8814-9f64-af3dec2e61d4"
 version: 2
 ---
 # commerce/pricing — the pricing face of [[commerce]]

@@ -2,11 +2,11 @@
 name: upper
 description: "Use when reasoning about upper as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: upper
-coordinate: "upper · 2/share · f3fc3aab"
-contentUuid: "60be25ad-df5e-551c-99da-33024a165947"
-diamondUuid: "cfeb89ce-2413-8361-a3b1-d8480476483c"
-uuid: "f3fc3aab-905b-835b-abb1-27b8ba3fafbd"
-horo: 2
+coordinate: "upper · 5/round · 1385bf70"
+contentUuid: "fe771424-63f1-5783-926d-e1a8ff1a09a4"
+diamondUuid: "7066a72f-1db2-84cd-9d96-c1deccfef0cc"
+uuid: "1385bf70-6dd5-8ee8-a762-65d5445ee1a2"
+horo: 5
 typography:
   partition: upper
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cbde6a49-d694-8e6f-954f-c3d577bbee4c"
+  computationUuid: "c6778957-5e62-85ed-b052-97e1fef2eaf0"
   stages:
     - stage: path
       stageUuid: "9d633952-3a49-8217-8378-ae7af021f2af"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "40c1efae-3f7a-8b97-be5d-385f2adaccd9"
     - stage: horo
-      stageUuid: "5b6402db-d2e2-8fe2-9cc7-f9166bcd390b"
+      stageUuid: "53f6f06f-89ff-88bb-ac0f-ba12c2936619"
     - stage: seal
       stageUuid: "aa24d591-9226-8c7c-adc5-6695e4c9235f"
     - stage: uuid
-      stageUuid: "8835b9a6-e251-8b57-bd48-73377b7274ef"
+      stageUuid: "80bbe9d5-b451-8792-ac81-ddb078e4502e"
 version: 2
 ---
 # upper

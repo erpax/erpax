@@ -2,18 +2,18 @@
 name: queries
 description: "Use when building or debugging Payload queries — where filters/operators, sort, pagination, depth, select, populating relationships, joins, or query presets across Local/REST/GraphQL."
 atomPath: "vocabulary/queries"
-coordinate: "vocabulary/queries · 4/weave · 47680679"
-contentUuid: "2205ffea-1925-5bfb-b55e-3096938369f8"
-diamondUuid: "5d5aa454-e61f-8c2b-8166-ccb5f53f15fd"
-uuid: "47680679-c783-8f08-bbd7-7f3c93f1d94d"
-horo: 4
+coordinate: "vocabulary/queries · 8/crest · 26152da5"
+contentUuid: "0523bf38-e24b-52ed-9cb3-73a0cdc0789d"
+diamondUuid: "82dfa668-177d-82bb-89e1-5a42176ce6d4"
+uuid: "26152da5-4fd6-8207-b4f7-5f0fb3adfa85"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c6ecaeb9-4f16-8927-80e6-6277cbd690ea"
+  computationUuid: "641114b4-0764-8317-8fe2-d05a19c3dd24"
   stages:
     - stage: path
       stageUuid: "5e3ee5fa-b2af-8e4c-bc87-826d1374b1fd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5be9681d-3328-89e2-93cb-f0d412b36002"
     - stage: horo
-      stageUuid: "4efd2f44-3b19-8038-b60d-8bd675a46dbc"
+      stageUuid: "30f40014-d3cd-831e-ace6-cddc140b7bce"
     - stage: seal
       stageUuid: "6c8df813-bc61-8f50-97b1-76e0212ce70f"
     - stage: uuid
-      stageUuid: "00374ced-b606-813e-a39a-9d14e144fb25"
+      stageUuid: "2260c3b8-af6e-8f2e-824a-e634a4988238"
 version: 2
 ---
 # queries — Payload query syntax (position 8 of the material cycle)

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "archival",
-    "uuid": "a5c36acb-d6c0-8153-8596-3adf0db7d678",
+    "uuid": "c47645b6-c30c-8465-9ca9-be805d8b1b1e",
     "words": [
       "archival"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when pinning tenant content to long-term decentralized storage (IPFS, Arweave, Filecoin, R2-glacier) for regulatory long-retention rules — banks 10y, gov 30y, healthcare 50y, archives unlimited — pinning to every listed backend for defense-in-depth and verifying or recovering by receipt.",
-    "uuid": "1e228c8a-53f5-8492-8976-f82147455928",
+    "uuid": "3263c870-ec2e-86d1-999b-96b2688a0864",
     "words": [
       "use",
       "when",

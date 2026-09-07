@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "department",
-    "uuid": "1a51d534-1975-84d0-aa04-2528af77d70b",
+    "uuid": "4201d484-8382-8a13-b4dc-ce40afa663de",
     "words": [
       "department"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about department — A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a stor",
-    "uuid": "d2bd8ae1-28c0-8237-b29b-48fd2c99b249",
+    "uuid": "8c5f3fff-bac9-80de-ab75-1b7ed3632256",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: anchoring
 description: "Use when periodically pinning a Merkle root of audit leaves to entropy no single party controls (Bitcoin OP_RETURN, an L2, Cardano metadata, AT-proto, or a real TSA) so a regulator can verify ERPax integrity without trusting ERPax — and when you must refuse a non-external stub as tamper-evidence."
 atomPath: anchoring
-coordinate: "anchoring · 1/base · 98e283a4"
-contentUuid: "ffdd8f85-6b4f-50a8-8864-67b36fcf29ab"
-diamondUuid: "a74e0214-18eb-802a-a598-47848d5da27c"
-uuid: "98e283a4-3e6b-8077-8b1a-2c6ce3502928"
-horo: 1
+coordinate: "anchoring · 4/weave · 09d827c6"
+contentUuid: "40fdf76b-b1c1-5c65-82ae-10dcaca8d8ea"
+diamondUuid: "e73f19d4-acda-8b17-a764-b2a150ce1c3f"
+uuid: "09d827c6-53a6-83e8-add7-34aa1c45afa4"
+horo: 4
 typography:
   partition: anchoring
   bondDegree: 21
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4132c443-4e02-8986-88b7-7ac3f7478d74"
+  computationUuid: "0fe93645-dd3c-89fa-909f-9dfd27a65c9e"
   stages:
     - stage: path
       stageUuid: "63f36273-5705-8ddc-b213-153a26f34905"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "7a2f2f78-3de7-8e56-adeb-aefa52f127f4"
     - stage: horo
-      stageUuid: "48dcedd7-e8c1-8e5f-ae20-92da849a02d5"
+      stageUuid: "8fe6880e-4ea8-8ee9-ab1a-5c1464076870"
     - stage: seal
       stageUuid: "49ef4046-6840-83bc-8a17-047c570945d8"
     - stage: uuid
-      stageUuid: "241cdadb-a33d-8022-a2b0-645c5f761004"
+      stageUuid: "9f4e8bff-fadc-80cd-94f5-1734a14481ac"
 version: 2
 ---
 # anchoring — blockchain/TSA anchoring (the one borrowed external entropy)

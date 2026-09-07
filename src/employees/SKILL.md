@@ -2,11 +2,11 @@
 name: employees
 description: "Use when managing workforce records — onboarding an employee, recording compensation (IAS 19 base salary, FTE ratio, bonus, pension, PTO), storing GDPR-classified identity and payroll bank account, linking to the actor-party user, and driving the payroll cycle via time-entries and payroll runs. The GDPR-protected workforce master (admin/payroll-officer access only)."
 atomPath: employees
-coordinate: "employees · 2/share · 08dc31b9"
-contentUuid: "93ad025a-19cf-53ae-9ea0-086385cbc032"
-diamondUuid: "bcfa931c-0fae-8b78-9f03-25f8f57a2b7b"
-uuid: "08dc31b9-3ea1-896b-bb2f-cc35baa78014"
-horo: 2
+coordinate: "employees · 7/descent · 6402c467"
+contentUuid: "48b9397f-074a-5d4b-b039-0acfda36a463"
+diamondUuid: "f6cd4457-be96-8d1b-82e2-6550b5d4a129"
+uuid: "6402c467-3bb7-87fe-b8e5-23bffcbd6fa3"
+horo: 7
 typography:
   partition: employees
   bondDegree: 68
@@ -42,7 +42,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "daf9a909-002e-8b8c-8877-47c87c1019dc"
+  computationUuid: "28f51f84-7b8d-8fe0-a0a3-8590e5a8adb7"
   stages:
     - stage: path
       stageUuid: "e797237f-685b-8805-af56-4d8208d09bd4"
@@ -53,11 +53,11 @@ signatures:
     - stage: links
       stageUuid: "b5ca5584-c436-8f8d-a253-29ad788d6712"
     - stage: horo
-      stageUuid: "23e861b6-067b-87cb-9cab-9746b015c4e0"
+      stageUuid: "317a7213-5e1a-899b-b727-1f54f40e3025"
     - stage: seal
       stageUuid: "ee8c2064-781d-8161-9878-b8e2a3a94c4e"
     - stage: uuid
-      stageUuid: "d96a5444-22d7-89bd-975c-265a19d9935c"
+      stageUuid: "e7267d61-1395-88dd-bb91-94dfa0a361ab"
 version: 2
 ---
 # employees

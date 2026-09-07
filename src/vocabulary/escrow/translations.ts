@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "escrow",
-    "uuid": "4f9d6295-3d91-83f0-83a6-1777294521b4",
+    "uuid": "20be55d1-66fe-8bcd-9670-3898e1c70f3e",
     "words": [
       "escrow"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when funds are held by a third party (escrow agent) pending satisfaction of contract conditions — separate legal/financial status from held-to-maturity or restricted cash per IAS-7",
-    "uuid": "0852a096-d559-88b4-8560-2eb878ff8e7c",
+    "uuid": "caf44906-561f-8ca0-bb24-610725c611c0",
     "words": [
       "use",
       "when",

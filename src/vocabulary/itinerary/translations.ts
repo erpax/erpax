@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "itinerary",
-    "uuid": "dec885ed-29d7-8de0-b638-e403b8fac075",
+    "uuid": "fec21474-8553-8fe7-af15-846306956441",
     "words": [
       "itinerary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about itinerary — Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples).",
-    "uuid": "590bfd54-cfd2-83a6-8b9d-9157ef21a2fe",
+    "uuid": "62949016-023c-8e47-94a6-cbcf8b4aadda",
     "words": [
       "use",
       "when",

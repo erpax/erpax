@@ -2,18 +2,18 @@
 name: quantum
 description: "Use when reaching the quantum machine from the computer atom — the double-wire reciprocal of quantum/computer."
 atomPath: "computer/quantum"
-coordinate: "computer/quantum · 2/share · e2a39e9f"
-contentUuid: "561351d5-1360-57bd-964e-60d6926fc153"
-diamondUuid: "26512467-3903-8c9b-87e8-42616cdae0df"
-uuid: "e2a39e9f-7ea2-874d-8370-d5bc69785fbd"
-horo: 2
+coordinate: "computer/quantum · 1/base · 9e58981d"
+contentUuid: "7f821266-1501-54fa-a223-fe831c0b6da1"
+diamondUuid: "c91883e3-cb0c-897a-bc40-3c1cbd5902eb"
+uuid: "9e58981d-acb3-8a9f-b12e-ab11945a74ec"
+horo: 1
 typography:
   partition: computer
   bondDegree: 553
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e34976b5-5557-8acb-a295-c62c10e5f8c2"
+  computationUuid: "0160257b-c3fa-8bcc-867a-ee3311d3794b"
   stages:
     - stage: path
       stageUuid: "414abb45-fca8-857d-b9b2-4ae108306164"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2e21d258-ff5f-81af-a1b6-bfd7b255de10"
     - stage: horo
-      stageUuid: "d5e1af2b-2058-82c5-8557-345911c76b53"
+      stageUuid: "e7cd766b-6c83-820f-8ed8-3110945ef280"
     - stage: seal
       stageUuid: "8e90dd95-7a77-8bda-af4a-0a75ad2fbbd2"
     - stage: uuid
-      stageUuid: "e88aaebe-71ca-88fe-bac9-063f95b7958b"
+      stageUuid: "d05235e2-d709-8a37-9cc7-6d5c70a2d64e"
 version: 2
 ---
 # computer/quantum — the reciprocal

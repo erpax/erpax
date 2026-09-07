@@ -2,11 +2,11 @@
 name: period
 description: Use when implementing or referencing Fiscal Period Standard.
 atomPath: "fiscal/period"
-coordinate: "fiscal/period · 2/share · d9a82b64"
-contentUuid: "b3d752c2-54d5-50fa-abdf-13a16bf8e72c"
-diamondUuid: "7932e72a-152a-877c-8eaa-1fb0d32f2a74"
-uuid: "d9a82b64-7ac4-8236-9954-42d2e496ecca"
-horo: 2
+coordinate: "fiscal/period · 4/weave · 08df3622"
+contentUuid: "c22effe7-0c48-5cdc-b86f-6f3584f96e36"
+diamondUuid: "7fd918a9-ac74-8ac0-924a-5a9942813cde"
+uuid: "08df3622-7d33-8959-ac54-3994838eedf2"
+horo: 4
 typography:
   partition: fiscal
   bondDegree: 57
@@ -37,7 +37,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "dfe34006-14a8-8bb6-b081-dd0d19f0500e"
+  computationUuid: "db325c8d-429d-8020-8658-f829e717c6ac"
   stages:
     - stage: path
       stageUuid: "43d2a82b-4cc1-8c35-98fd-4b088ad6b0dc"
@@ -48,11 +48,11 @@ signatures:
     - stage: links
       stageUuid: "a8a7cc41-0c8a-8001-8fb6-98a7475b822c"
     - stage: horo
-      stageUuid: "9a8bb75b-f7c5-8694-b73e-15d63f1cfe8f"
+      stageUuid: "a0b13fee-988d-858a-8a39-89d3b1701430"
     - stage: seal
       stageUuid: "e088a7d9-7200-8e03-9a8b-3dd6e3ab2989"
     - stage: uuid
-      stageUuid: "11967d66-0e7e-86b6-bf6b-a8754e72ed71"
+      stageUuid: "a3ab96a3-acb1-86ba-948d-647372e4dbf2"
 version: 2
 ---
 # Fiscal Period Standard

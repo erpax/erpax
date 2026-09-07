@@ -2,11 +2,11 @@
 name: complexity
 description: "Use when classifying algorithmic cost — big-O from loop-depth bindings under computer; executable not glossary."
 atomPath: "computer/complexity"
-coordinate: "computer/complexity · 8/crest · 3634dabe"
-contentUuid: "f60e2534-98b3-55f7-8b83-a12021a378cf"
-diamondUuid: "59124815-5743-809f-8602-31be48609580"
-uuid: "3634dabe-1a39-8369-916a-1d2842fc733d"
-horo: 8
+coordinate: "computer/complexity · 5/round · fa904cde"
+contentUuid: "7973b94e-dd5e-5f99-87f2-98543b8d570c"
+diamondUuid: "a2b7aa9f-da2f-8e47-bb6a-ed61727da369"
+uuid: "fa904cde-ca6e-867e-b2a4-cd51acd31ccc"
+horo: 5
 typography:
   partition: computer
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "Knuth-style asymptotic notation"
 bindings: []
 signatures:
-  computationUuid: "a6cb7d67-b36f-88df-8cb4-5a7a89385553"
+  computationUuid: "949fd8b0-8eff-87fa-bd72-72395788b89e"
   stages:
     - stage: path
       stageUuid: "5b41281c-84bc-8ea7-8b65-f270d40a44ce"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4c74cca0-7812-84d7-9e16-e75b85b2f58f"
     - stage: horo
-      stageUuid: "25e610e3-89a0-8f4b-8e04-a9c7814da94a"
+      stageUuid: "5ee4397e-ab93-8f97-8dbf-8c9eac8a110b"
     - stage: seal
       stageUuid: "0d99f41f-44b5-879e-8927-b253b1eee507"
     - stage: uuid
-      stageUuid: "ba424aaf-f3c0-8c1b-a8b0-698c28cc4e9b"
+      stageUuid: "4f7e5634-ee53-8186-aa1f-362a374a9c45"
 version: 2
 ---
 # computer/complexity — big-O classifier

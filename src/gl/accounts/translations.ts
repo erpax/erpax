@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accounts",
-    "uuid": "c1827d88-1b79-89c1-b60d-6cbfa4feca20",
+    "uuid": "2c69653a-f389-8747-81f5-ff22c68a8edc",
     "words": [
       "accounts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node.",
-    "uuid": "0417433e-0855-88c8-90b0-2d8331f23fc1",
+    "uuid": "6de95047-a00e-85a1-ae34-abb2daab1aa8",
     "words": [
       "use",
       "when",

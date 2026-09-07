@@ -2,11 +2,11 @@
 name: lyricist
 description: Use when reasoning about lyricist — The person who wrote the words.
 atomPath: "vocabulary/lyricist"
-coordinate: "vocabulary/lyricist · 8/crest · 37b7e458"
-contentUuid: "26ef78b8-f32e-5bac-94e9-c1391b2cac7e"
-diamondUuid: "348bd515-86c0-8ccf-bf14-fa8e238ae049"
-uuid: "37b7e458-47c9-8c15-8a3c-639d82139cb7"
-horo: 8
+coordinate: "vocabulary/lyricist · 5/round · b5e12ba5"
+contentUuid: "eaeb9365-5ac4-5d0d-aad4-a8c1489ad209"
+diamondUuid: "da7ceecb-69b2-85f2-ab98-02b81e7fef7f"
+uuid: "b5e12ba5-a548-80c6-b195-c28ba64d3800"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ad9b5d14-95ca-82cf-921c-9bc5371f88d8"
+  computationUuid: "53cbb674-094a-88f8-85f7-18bde6f9b76a"
   stages:
     - stage: path
       stageUuid: "86e26bcc-233e-8d7d-91e1-06305d9b384e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "754e94a2-537a-8882-b993-a1e4198016a8"
     - stage: horo
-      stageUuid: "3c9ec1dc-7ac9-8483-aa8d-572d3cf1b458"
+      stageUuid: "d5c63b0d-a44a-8888-9694-f2212b64f243"
     - stage: seal
       stageUuid: "cad1e896-4b05-8f77-9182-687a3e5c00f3"
     - stage: uuid
-      stageUuid: "ce6e1673-2e29-8a6a-9e1a-4a170dc3dff2"
+      stageUuid: "3e0afacf-3c12-8857-bf8b-2fa10b844805"
 version: 2
 ---
 # lyricist

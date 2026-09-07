@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "islam",
-    "uuid": "60959f0e-5493-8aae-a917-2b382751518c",
+    "uuid": "9ddd4c6c-b267-8870-aa24-3912f1f9b2f2",
     "words": [
       "islam"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Islam as a diamond of invariant atoms — submission to the absolute One, mercy opening every recitation, the ninety-nine names as facets of one, the five daily alignments, the fast and the alms. Strip the Arabic prefix and tawhid, rahma, iman, salam collapse to one, mercy, faith, peace — one content-uuid each.",
-    "uuid": "fa798680-6dfa-8d8c-b9d4-174bcc85e1d7",
+    "uuid": "f2aec3d4-05e2-8d7b-aebb-0514498550c2",
     "words": [
       "use",
       "when",

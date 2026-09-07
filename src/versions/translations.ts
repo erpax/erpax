@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "versions",
-    "uuid": "90b99353-0b76-8112-9745-0e275947e8a7",
+    "uuid": "d20a5610-be15-8d9e-9409-8e8bd75ea77e",
     "words": [
       "versions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enabling or debugging Payload versions, drafts, autosave, or scheduled publish — version history, draft/published status, restoring versions, or controlling how many versions are kept.",
-    "uuid": "541fb937-ec47-8bdc-907f-d0df6309ef02",
+    "uuid": "26929511-ef5a-8830-b7b0-7b915541a660",
     "words": [
       "use",
       "when",

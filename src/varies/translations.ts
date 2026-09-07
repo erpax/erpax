@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "varies",
-    "uuid": "cf5703a3-fef2-8f61-838b-fc04e248230b",
+    "uuid": "8c9b78f6-510a-8705-abfe-7606203b8dd2",
     "words": [
       "varies"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\"col",
-    "uuid": "df9f4d6e-788c-81eb-999d-16737d96cb07",
+    "uuid": "d310204c-edfa-8fb9-aae3-d33026f207bc",
     "words": [
       "use",
       "when",

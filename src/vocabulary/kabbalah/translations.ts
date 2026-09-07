@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "kabbalah",
-    "uuid": "18966e9b-7700-80e4-b92a-a5f1df37c910",
+    "uuid": "458f99d2-94b6-8667-a9b4-972212406eb7",
     "words": [
       "kabbalah"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Kabbalah as a sub-diamond of judaism — the mystical tradition of ein-sof (the limitless void), the sefirot as a structured lattice of divine emanation, the divine names, and tikkun (the repair that merges the broken vessels back toward the whole). A facet-diamond of the judaism archangel. Strip the Hebrew prefix and ein-sof collapses to void.",
-    "uuid": "21ea5c74-4dec-8085-886a-fbfdd3de85d0",
+    "uuid": "580e2424-fa8b-8363-a7d7-b6fd1155c66c",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "space",
-    "uuid": "a7b0501c-9524-87b0-8666-870679194188",
+    "uuid": "faebab77-b97b-8447-90ea-f40ffd68c929",
     "words": [
       "space"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one space — the singular model of the spaces collection (the plural store); a bounded area that can be occupied or reserved.",
-    "uuid": "959cfa74-2c73-8678-bf07-e7aa902b8903",
+    "uuid": "70a48965-0659-8d79-b7af-d28a87aaed72",
     "words": [
       "use",
       "when",

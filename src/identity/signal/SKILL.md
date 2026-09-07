@@ -2,10 +2,10 @@
 name: signal
 description: "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity."
 atomPath: "identity/signal"
-coordinate: "identity/signal · 9/unity · 120a8d63"
-contentUuid: "82c2da82-3b3d-51e3-89c9-dfb3f6cda611"
-diamondUuid: "061ee657-a086-88a1-a6e6-704b1043271a"
-uuid: "120a8d63-4af6-839b-b1ae-a6582de02a20"
+coordinate: "identity/signal · 9/unity · 4bffb949"
+contentUuid: "97fcca2d-e43f-503f-8b17-662a3897f556"
+diamondUuid: "dc9582df-26ca-827c-b1e3-c9c2ca60c43e"
+uuid: "4bffb949-6e15-8b52-af11-c03bfc12a0bb"
 horo: 9
 typography:
   partition: identity
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4f9a9a68-b0a3-8566-8cc1-fed04b9fc98e"
+  computationUuid: "fa151604-7b98-8160-9bca-a874232f8f27"
   stages:
     - stage: path
       stageUuid: "0215c3d3-bd72-8bee-86d8-f230bff5b25e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "43a38d0a-05db-80ee-a0a2-8f33d65d26ac"
     - stage: horo
-      stageUuid: "93d38e6e-fdc7-85d4-bebf-841c1d215eec"
+      stageUuid: "c45cac3b-bd19-84c4-a9fc-1752840b7402"
     - stage: seal
       stageUuid: "01c281a6-d458-8659-a814-1bd7f76ab208"
     - stage: uuid
-      stageUuid: "4b997a6c-fa97-8c85-907b-5c52e01729fe"
+      stageUuid: "54a0cbeb-ff5a-8fb6-8a6c-1ebfd05db3a5"
 version: 2
 ---
 # signal — a uuid renders as color + sound (a stream is multimedia)

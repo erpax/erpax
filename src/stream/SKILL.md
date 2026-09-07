@@ -2,10 +2,10 @@
 name: stream
 description: "Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain."
 atomPath: stream
-coordinate: "stream · 4/weave · cfbb28cd"
-contentUuid: "f8fcbf3c-ef24-5bac-8a22-bc555d69a520"
-diamondUuid: "46eb654f-06b4-80c1-8cd5-cb28527cf160"
-uuid: "cfbb28cd-820d-8154-9df3-2517d9f42a6c"
+coordinate: "stream · 4/weave · 6dd0278c"
+contentUuid: "6d19df97-7ec7-5c38-839b-220e8becd805"
+diamondUuid: "9b871830-e8af-891a-8af3-9bc6671915e5"
+uuid: "6dd0278c-df53-8950-bc70-0e694ec678be"
 horo: 4
 typography:
   partition: stream
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5966a95c-a4c8-87fe-a703-706ce4aa5337"
+  computationUuid: "416dbc44-56b1-8e31-801a-b6be6f69d5a5"
   stages:
     - stage: path
       stageUuid: "51d134f1-3abd-8c47-9170-1321d632d4a4"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "e45da1f9-a212-8c6a-8ccf-126a3081828c"
     - stage: horo
-      stageUuid: "451b9040-4938-8c67-b148-2a27662b7664"
+      stageUuid: "58dd60b4-ad2d-8b02-96d6-c333afabf1af"
     - stage: seal
       stageUuid: "d488909d-306a-8ff0-8467-13acf6de2810"
     - stage: uuid
-      stageUuid: "225f562e-a7ec-8200-a01c-c21b0dde3a10"
+      stageUuid: "fde130d6-ed2e-893f-9dba-f7611242c844"
 version: 2
 ---
 # streams — the quantum, continuous dual of discrete events

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scorecard",
-    "uuid": "9b32064b-8f6b-88d3-973f-46f644a927b0",
+    "uuid": "e0fc2f9e-6ad4-86e8-8add-250b0f9a5726",
     "words": [
       "scorecard"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one scorecard — the singular model of the scorecards collection (the plural store); a structured summary of metrics against targets.",
-    "uuid": "a5b45892-5e9a-8bd2-abee-0ccf5cfc7556",
+    "uuid": "ca7ec013-22dd-8e20-8c69-e71a934f1fe7",
     "words": [
       "use",
       "when",

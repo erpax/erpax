@@ -2,11 +2,11 @@
 name: scope
 description: "Use when reasoning about scope — Наредба Н-18 чл."
 atomPath: "naredba/n/18/scope"
-coordinate: "naredba/n/18/scope · 4/weave · 8defc3fa"
-contentUuid: "69309359-7683-5339-8a02-53a02b991d13"
-diamondUuid: "46fc354d-4a40-80a9-9cf9-a48ec38d04a6"
-uuid: "8defc3fa-5931-8991-a279-7d728a0b6af2"
-horo: 4
+coordinate: "naredba/n/18/scope · 2/share · b2918a20"
+contentUuid: "0c4fb041-f7a4-5175-a889-6772cffd875e"
+diamondUuid: "565755b4-b2db-8ce1-ad22-538df28ef189"
+uuid: "b2918a20-be9a-8b63-bef0-7955c61ff2db"
+horo: 2
 typography:
   partition: naredba
   bondDegree: 24
@@ -18,7 +18,7 @@ standards:
   - ZDDS
 bindings: []
 signatures:
-  computationUuid: "f5eade2a-e7eb-83b4-81f7-d80e568a4667"
+  computationUuid: "6c75f5f4-a63d-8da3-8efc-d17e8cc34062"
   stages:
     - stage: path
       stageUuid: "9556fbea-f8ef-86c5-89d8-8cba67167fa4"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "ffbe55fa-193a-8383-b6f7-c6fbb454f389"
     - stage: horo
-      stageUuid: "5bccf053-9719-8200-8f3b-a8969fd31870"
+      stageUuid: "39e75ad0-7333-8f5d-8ecc-c7b518c1f6d5"
     - stage: seal
       stageUuid: "c65231d3-8411-884a-925b-57cdf255889a"
     - stage: uuid
-      stageUuid: "1df5d8b2-4c53-8ec2-9a0a-dab2f4ce0043"
+      stageUuid: "bb907814-3dd9-8881-9b77-d6ee0d7212e0"
 version: 2
 ---
 # naredba/n/18/scope

@@ -2,10 +2,10 @@
 name: podiatric
 description: "Use when reasoning about podiatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/podiatric"
-coordinate: "vocabulary/podiatric · 5/round · 3134c0b8"
-contentUuid: "09531e25-26de-5ce6-99a8-5906ed1ac504"
-diamondUuid: "20db280f-f702-8b51-80d8-ed5b0fd1d5bb"
-uuid: "3134c0b8-c8a3-8301-8334-e9021e3744f4"
+coordinate: "vocabulary/podiatric · 5/round · 95823ced"
+contentUuid: "b7955d40-72a5-534f-9607-ccab50f38ae2"
+diamondUuid: "a53ee759-5c64-80eb-80d0-bcef9e22c494"
+uuid: "95823ced-4a92-88ef-ba53-c001acda5bb1"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3b2c3b8d-0d04-8a42-8183-8a2e31430d98"
+  computationUuid: "f21dc360-de3c-80b4-8cb9-901b46376934"
   stages:
     - stage: path
       stageUuid: "d7ce2376-9eac-8296-8548-cf351766ce8f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e76b5db1-4c50-8f11-85cf-25943aee7b05"
     - stage: horo
-      stageUuid: "5acbfb50-6311-8d92-b0c2-1d3658fc5fc0"
+      stageUuid: "167cb040-7bed-825f-ae97-f9b65acbb4ee"
     - stage: seal
       stageUuid: "cbb0bd2f-d37f-8dbc-acea-f98875f65fb5"
     - stage: uuid
-      stageUuid: "8f2f0926-6162-8177-bb42-a1cc4879c42f"
+      stageUuid: "bd2e34ee-1232-82f9-96e7-8b747668c017"
 version: 2
 ---
 # podiatric

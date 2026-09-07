@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "superdense",
-    "uuid": "07acd967-5862-83f2-a278-40fffa913201",
+    "uuid": "9814a1c3-7b2d-853c-972f-cd394da89a2a",
     "words": [
       "superdense"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about superdense coding on the matrix — one shared entangled binding conveys both endpoints, so the single binding-uuid plus the shared entanglement recovers the ordered (sender, receiver) pair, and the channel's capacity exceeds its surface because the peers share the entanglement.",
-    "uuid": "d1ecd837-7af6-85bc-a33a-4868e97bf275",
+    "uuid": "3bdc57fe-e54a-89f6-90f5-21bce4bd0be1",
     "words": [
       "use",
       "when",

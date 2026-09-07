@@ -2,18 +2,18 @@
 name: trellis
 description: "Use when a crop is supported vertically — trellising/staking holds vining or heavy crops (tomatoes, cucumbers, pole beans, peas) off the ground for airflow, quality, and harvest access; methods scale from stake-and-weave (basket weave) for determinates to lower-and-lean string for indeterminates. Vertical support trades labor/materials for yield, quality, and disease reduction."
 atomPath: trellis
-coordinate: "trellis · 4/weave · 58be4773"
-contentUuid: "a3f0e3f9-a519-540d-87bf-fa185d3113f2"
-diamondUuid: "c1774e88-77d3-8df2-ab9d-a6df4e945c9a"
-uuid: "58be4773-6cd3-860e-bdc2-d2098718ea20"
-horo: 4
+coordinate: "trellis · 1/base · c45aac7d"
+contentUuid: "8ecce578-2acc-56b3-be00-92f745db95de"
+diamondUuid: "99c7049d-bbd8-85d3-8184-b90e76304756"
+uuid: "c45aac7d-9add-8424-bddd-ec9acec74fa4"
+horo: 1
 typography:
   partition: trellis
   bondDegree: 28
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e0037dfa-b831-8c0f-9ca1-da5ec4498cb6"
+  computationUuid: "d9d38739-ac38-8f91-8430-900cb71b835d"
   stages:
     - stage: path
       stageUuid: "f5e366e8-ac05-86b2-9759-3f829da5f930"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "efa3633d-63d1-8b8b-ae9d-84513160be99"
     - stage: horo
-      stageUuid: "0851902c-f1f9-861a-b6a3-3337a368a261"
+      stageUuid: "7435f672-d48b-86c5-a37e-b8220e7b6847"
     - stage: seal
       stageUuid: "6ae68238-a46e-8018-aa66-a9ef4d1b48de"
     - stage: uuid
-      stageUuid: "fe2de612-5b4a-8f5c-9539-cd23809007b0"
+      stageUuid: "bf108bc4-dc4e-8d62-87bc-e2f4ce72bf86"
 version: 2
 ---
 # trellis — supporting the crop vertically

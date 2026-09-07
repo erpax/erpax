@@ -2,11 +2,11 @@
 name: genre
 description: "Use when reasoning about genre — Genre of the creative work, broadcast channel or group."
 atomPath: "vocabulary/genre"
-coordinate: "vocabulary/genre · 2/share · 6bac1766"
-contentUuid: "37809afe-47d3-529e-8c47-bace62e6251e"
-diamondUuid: "9d327e4b-4167-8d8e-9008-650872c8df8a"
-uuid: "6bac1766-4b39-80b2-b30e-b76de40c6288"
-horo: 2
+coordinate: "vocabulary/genre · 5/round · 8336820e"
+contentUuid: "7bde9dea-da03-5580-b2ec-e341002b0c9e"
+diamondUuid: "6d106193-b7cd-8335-b39f-ebd161da80a5"
+uuid: "8336820e-6a1c-845c-9726-72ce8bbe282a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d390f436-baee-89ba-8e3e-a85babd37f42"
+  computationUuid: "7b330ca0-1fe7-8f8a-a275-d29c20ac6565"
   stages:
     - stage: path
       stageUuid: "5b0f3006-c439-82cf-881e-e2faf5259a8a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32978327-8174-830a-9a91-9cff72570b5f"
     - stage: horo
-      stageUuid: "7e043d25-bfe9-8a0f-becc-17b789d32328"
+      stageUuid: "55e94b1b-b214-8885-bfdb-9a6da1377771"
     - stage: seal
       stageUuid: "6e95e4ee-3e76-82f1-99b2-394adbaa94ab"
     - stage: uuid
-      stageUuid: "eecb0d68-e3d7-8c2d-befa-469217fbba44"
+      stageUuid: "835b2562-19a1-86c9-9720-ba6c5ee23e55"
 version: 2
 ---
 # genre

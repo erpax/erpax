@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quantum",
-    "uuid": "58eb0f40-9517-8e12-8817-994ee3afecf6",
+    "uuid": "4e94b169-9a74-83fa-bcb2-0e1d08db623f",
     "words": [
       "quantum"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded.",
-    "uuid": "9b64abe6-edf4-8098-bab9-1ebf719dbfcf",
+    "uuid": "aae625c3-0848-8778-ad6f-29848a8dfe8b",
     "words": [
       "use",
       "when",

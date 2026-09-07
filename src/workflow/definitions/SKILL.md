@@ -2,11 +2,11 @@
 name: definitions
 description: "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection."
 atomPath: "workflow/definitions"
-coordinate: "workflow/definitions · 7/descent · 356cb9d9"
-contentUuid: "d791d05f-8dec-5c12-a7ba-cf6b6c914703"
-diamondUuid: "f9df4f17-56c6-8599-afaf-3c375da0a8c3"
-uuid: "356cb9d9-74b9-8782-ac2a-6a578c47b253"
-horo: 7
+coordinate: "workflow/definitions · 2/share · e71fd94d"
+contentUuid: "fa009377-dab8-5a90-b220-29ca01ad5b89"
+diamondUuid: "e86652aa-721f-859e-a03b-ecf4c6a130ec"
+uuid: "e71fd94d-8e1b-8038-97b2-c66cf871db01"
+horo: 2
 typography:
   partition: workflow
   bondDegree: 46
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0fc026a0-d69a-8794-91d0-a2263850e73c"
+  computationUuid: "dfc4a272-78ab-87ec-a1f5-21c427383890"
   stages:
     - stage: path
       stageUuid: "90418e82-4eb7-80e4-b3be-d098a1b0c205"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "0aec2b49-98ff-8849-8407-60e57bfb963d"
     - stage: horo
-      stageUuid: "169f2056-0a7e-8cc2-884d-e87fba966913"
+      stageUuid: "d0571c29-472a-8d78-9c36-f8968d9a45de"
     - stage: seal
       stageUuid: "aea55077-48eb-8973-b0c1-bfe6ce6e7f59"
     - stage: uuid
-      stageUuid: "3e9d3e8e-74f0-89ee-9c86-d2fc5ea89a34"
+      stageUuid: "adb4b032-e314-8f5e-84f2-0e2062fd3531"
 version: 2
 ---
 # workflow-definitions

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "share",
-    "uuid": "22802582-7fd9-8952-be35-9adf1d68551a",
+    "uuid": "baf1a87f-1a76-8243-99d7-5b373eab999e",
     "words": [
       "share"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about uuid sharing — exposing a uuid across boundaries.",
-    "uuid": "b1e3cc99-3548-819f-9fd9-b5532c96b456",
+    "uuid": "a557083f-184a-8c44-bca2-4907028e0114",
     "words": [
       "use",
       "when",

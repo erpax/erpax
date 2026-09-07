@@ -2,11 +2,11 @@
 name: analysis
 description: "Use when reasoning about accounting/analysis — financial analysis engine — balance sheet, income statement, aging reports."
 atomPath: "accounting/analysis"
-coordinate: "accounting/analysis · 5/round · 23746d2d"
-contentUuid: "949897aa-1ebf-56ea-976b-1c1811490849"
-diamondUuid: "5b513f22-73fa-8578-974d-326131c1104c"
-uuid: "23746d2d-f467-836f-99c9-51c92f2c564a"
-horo: 5
+coordinate: "accounting/analysis · 7/descent · 0ad1c5d3"
+contentUuid: "e4aec226-019b-5485-bc57-7032b5961171"
+diamondUuid: "c0dea8f6-5ae0-8c28-80b4-c23e543a4f15"
+uuid: "0ad1c5d3-8c13-8db4-95bb-22be3bb0c7f3"
+horo: 7
 typography:
   partition: accounting
   bondDegree: 27
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "35a4add0-8aac-8544-b986-72943a8ece34"
+  computationUuid: "bf71e5e6-1fe0-8b5a-bb08-be10e388a407"
   stages:
     - stage: path
       stageUuid: "a0217656-49f0-8e3e-9222-f035fc6d5adb"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "2b59176f-e3df-886c-a79a-f658683cd92f"
     - stage: horo
-      stageUuid: "1e002abf-bbe9-8339-8df1-c22f7c5874c6"
+      stageUuid: "3a6f2b9d-fc6e-84f1-bacc-34734f8facd2"
     - stage: seal
       stageUuid: "4f5de8ab-e722-8db8-911c-5b5372e710d0"
     - stage: uuid
-      stageUuid: "2bbd043c-1145-890c-bb25-1a394a161f93"
+      stageUuid: "6210797c-14d1-85e7-ba6c-2be97f7cc493"
 version: 2
 ---
 # accounting/analysis

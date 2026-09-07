@@ -2,11 +2,11 @@
 name: profile
 description: "Use when reasoning about profile — ISO 14289 PDF/UA — PDF Universal Accessibility."
 atomPath: "iso/14289/profile"
-coordinate: "iso/14289/profile · 7/descent · 219d8b2e"
-contentUuid: "87d24ccb-ec9c-5f5b-ab3b-126d61dda8cf"
-diamondUuid: "b0c77561-b1aa-8e41-a0db-27fbd0652bea"
-uuid: "219d8b2e-6254-8e6d-ba9a-cb3b51429766"
-horo: 7
+coordinate: "iso/14289/profile · 4/weave · 99ade9cc"
+contentUuid: "509d6f3b-4c4e-5aec-97fe-4270619e1f11"
+diamondUuid: "c38f97cf-e0fb-8d4e-aed8-32828e5f64cf"
+uuid: "99ade9cc-316e-89e3-a99d-dffb19677fcd"
+horo: 4
 typography:
   partition: iso
   bondDegree: 20
@@ -23,7 +23,7 @@ standards:
   - "WCAG-2.1"
 bindings: []
 signatures:
-  computationUuid: "70879a26-b2be-8921-9af0-9a899eeca63d"
+  computationUuid: "5e11568a-b235-8fce-8a26-bf1f841b97d1"
   stages:
     - stage: path
       stageUuid: "5712e091-ed35-86b9-9d2c-5fcd4d306902"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "63fc5db9-0178-8625-bd3e-0e0b57197389"
     - stage: horo
-      stageUuid: "fb1e12dd-3aa6-882b-b189-5ef2e6e7574b"
+      stageUuid: "ef450e23-124e-8221-bf05-75855f29dc6e"
     - stage: seal
       stageUuid: "27c80f7c-c963-833a-9ec8-0ea39429a762"
     - stage: uuid
-      stageUuid: "e6f989d9-586f-8571-948d-a194574339fd"
+      stageUuid: "2bfc11e5-6534-860b-86b6-9ff76a66d4fc"
 version: 2
 ---
 # iso/14289/profile

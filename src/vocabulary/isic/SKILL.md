@@ -2,11 +2,11 @@
 name: isic
 description: "Use when reasoning about isic — The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place."
 atomPath: "vocabulary/isic"
-coordinate: "vocabulary/isic · 1/base · dec562fb"
-contentUuid: "0d63784b-5340-50a8-8bb4-4218a57404fe"
-diamondUuid: "5bed84cc-7fa6-87c8-8b3d-8233a68fe1f4"
-uuid: "dec562fb-01e1-8191-abb2-cbd9c20d0e52"
-horo: 1
+coordinate: "vocabulary/isic · 8/crest · bd490c42"
+contentUuid: "a5240a0a-9c1a-56c2-b3b0-c3c77019f748"
+diamondUuid: "9c6f4e10-306c-8130-95e7-b1f50f02c73c"
+uuid: "bd490c42-9d68-8a17-93aa-81365c94ef7a"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8f529496-c96f-8315-b51e-72c3e69ceacf"
+  computationUuid: "9f64184b-c693-8955-8112-dd907561473f"
   stages:
     - stage: path
       stageUuid: "5d634438-0b74-859f-9e62-fb954d4328e0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1c5dab8b-fd99-8555-b399-52838d6025b0"
     - stage: horo
-      stageUuid: "b9789bbc-155d-8c60-ab3d-52a4ad57de50"
+      stageUuid: "c822b58e-cad6-8380-b4aa-88683a3a72ce"
     - stage: seal
       stageUuid: "18717e81-1072-814d-9d79-4f63bc500fb2"
     - stage: uuid
-      stageUuid: "82ccca1c-c7b0-85bf-9f70-df7dec38b3ea"
+      stageUuid: "2a6995e1-46be-89b6-8e73-d84e9f8b35b2"
 version: 2
 ---
 # isic

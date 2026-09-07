@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gluten",
-    "uuid": "995b0309-601d-83df-ae1d-d4f1b146c69f",
+    "uuid": "0fb3653b-05db-8056-b4f8-36596096ffd2",
     "words": [
       "gluten"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about gluten as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "82964dd5-b5d1-8144-8414-a2c790333444",
+    "uuid": "a1f46d28-5728-88d8-8cd3-c143ca51ef89",
     "words": [
       "use",
       "when",

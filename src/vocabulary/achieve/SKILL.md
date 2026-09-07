@@ -2,10 +2,10 @@
 name: achieve
 description: "Use when reasoning about achieve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/achieve"
-coordinate: "vocabulary/achieve · 1/base · c1439a97"
-contentUuid: "f7764b24-e956-5ffe-b3f8-4c118962cbcd"
-diamondUuid: "720a3dac-7679-80df-b410-fcc813ee3274"
-uuid: "c1439a97-f1c6-8e13-82f5-6ff8d774ef7b"
+coordinate: "vocabulary/achieve · 1/base · 110a373e"
+contentUuid: "b706c7d5-4613-5eae-ab32-4bf13fa191c6"
+diamondUuid: "148b770a-9b68-8d83-bd8e-50376d9a26c1"
+uuid: "110a373e-37fa-82eb-94d2-6f53fc449945"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5f2fab1e-64b1-8add-be56-eada4c3bc0cb"
+  computationUuid: "dbb36876-4372-87cd-829f-3d2b9ea8d8e5"
   stages:
     - stage: path
       stageUuid: "c7346302-4185-8a2f-a67e-ef731490057d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "296d5282-eb05-8a77-a600-874f0f20e608"
     - stage: horo
-      stageUuid: "4718c24e-74de-8f4f-93bd-1f3343ab6dbd"
+      stageUuid: "d30e1747-b10d-8c15-823b-4c6f84af7b1a"
     - stage: seal
       stageUuid: "ae8dea01-6c84-80b4-b788-338874661260"
     - stage: uuid
-      stageUuid: "4fe4cb8f-ed5c-8ed3-9a09-e4f8d14f26b1"
+      stageUuid: "af2611b1-a3f8-8cb9-b624-d7a7b7e70c12"
 version: 2
 ---
 # achieve

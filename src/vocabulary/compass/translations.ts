@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "compass",
-    "uuid": "14c792ea-1787-888f-868f-304cc5fa4829",
+    "uuid": "31e89aa1-51d3-8c1f-b0f7-8efe6703a3a2",
     "words": [
       "compass"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about how you navigate erpax — navigation is SELF-GENERATING (sidebar · prev/next · ancestors · siblings · children · related · search all computed from the parent+prev/next trinity + the fractal path + the body links, never hand-listed) and it points like an alethiometer: ask any question and it points to the answer-path. The golden compass — the path IS the answer; the needle settles on the lowest-entropy form.",
-    "uuid": "3dceb0a6-461f-87b9-ac00-b8e1ee992ce5",
+    "uuid": "bdf8a500-c5c8-8872-bc88-0cab77521b9e",
     "words": [
       "use",
       "when",

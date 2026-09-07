@@ -2,11 +2,11 @@
 name: lei
 description: "Use when reasoning about lei as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lei"
-coordinate: "vocabulary/lei · 8/crest · f1a3aeae"
-contentUuid: "f60ddb3a-b18f-5076-adff-f859191271ec"
-diamondUuid: "1a723f69-e79a-8276-8e6f-905880083edb"
-uuid: "f1a3aeae-04c4-89f0-8bda-2e282884f174"
-horo: 8
+coordinate: "vocabulary/lei · 2/share · 0af1106b"
+contentUuid: "b5102eb2-d0a0-5d43-b1fe-98c9555b4144"
+diamondUuid: "a91e6cb3-d5b6-8a3e-9bf9-5e78731169e2"
+uuid: "0af1106b-823f-87d0-8632-50db1a1e045a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7c0843c5-ca79-8bb0-ac30-7a7674778d39"
+  computationUuid: "466b1803-0c87-8344-b430-8ff86fe351c4"
   stages:
     - stage: path
       stageUuid: "f607db26-2b17-88f2-a113-27e0a4b8e4ce"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "70992312-3912-8bd9-9ea4-7a8fe3dbdb24"
     - stage: horo
-      stageUuid: "094cdb9d-583d-8481-ae0d-bbd7ce783e97"
+      stageUuid: "5656d01f-60c6-8bba-a61b-fa36599b7503"
     - stage: seal
       stageUuid: "0ca37939-8eb3-8cfc-ab60-2d8a987eb49e"
     - stage: uuid
-      stageUuid: "3b97bebe-c6a9-8e3b-8ead-11d63a13f464"
+      stageUuid: "56592e49-98a2-8015-bd2b-6a1f3cc095a0"
 version: 2
 ---
 # lei

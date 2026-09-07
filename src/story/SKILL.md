@@ -2,11 +2,11 @@
 name: story
 description: "Use when reasoning about story as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: story
-coordinate: "story · 8/crest · ca3add04"
-contentUuid: "13a7a8fe-84a1-5645-877f-7bdcd221a46c"
-diamondUuid: "7572fe2c-536a-80f7-9830-dc7c07bb1a4a"
-uuid: "ca3add04-8625-8a26-8c72-5bf0148ae547"
-horo: 8
+coordinate: "story · 2/share · 5fe5b2cc"
+contentUuid: "d5da6bf8-fd47-5383-8615-806882601ffa"
+diamondUuid: "da179270-9d70-893a-ae58-5c145e0f963b"
+uuid: "5fe5b2cc-8ff9-8dfb-9b19-5a7fb7681d1e"
+horo: 2
 typography:
   partition: story
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e57c6443-d289-8071-b022-6c07423652cc"
+  computationUuid: "7929cbe6-3cb7-83ff-abd2-c2c64c567f4c"
   stages:
     - stage: path
       stageUuid: "bc50e99b-f972-8851-b48f-30557ae80bcd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "28185925-21a6-8740-af3e-5b5766831dd5"
     - stage: horo
-      stageUuid: "dcc54e71-4efa-8645-a433-10faf3f3c8c4"
+      stageUuid: "a301d59e-2787-8e38-bd3d-df1edcea3549"
     - stage: seal
       stageUuid: "09ec91d9-1e3f-8f1f-b285-001d4c4772b9"
     - stage: uuid
-      stageUuid: "8f373291-cfd0-8c75-b74e-fb0069797385"
+      stageUuid: "fcc79cfa-3fec-8d78-a887-de118976a7cb"
 version: 2
 ---
 # story

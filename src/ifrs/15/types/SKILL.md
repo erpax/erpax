@@ -2,11 +2,11 @@
 name: types
 description: "Use when reasoning about types — Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces."
 atomPath: "ifrs/15/types"
-coordinate: "ifrs/15/types · 1/base · 1cd7aafb"
-contentUuid: "eca95ad8-d06e-590c-bf7a-6a5fd6b30ee7"
-diamondUuid: "638b6691-af8e-8492-be83-b2e96653fb3c"
-uuid: "1cd7aafb-7325-836e-812a-e8524058f1c9"
-horo: 1
+coordinate: "ifrs/15/types · 5/round · 11903b48"
+contentUuid: "4cd36d62-ba8c-5879-a1c4-d44b307ce19a"
+diamondUuid: "d1d0d58c-e9d4-8783-bfe6-ffe680327d02"
+uuid: "11903b48-f288-83b2-a4c9-814bf5184b69"
+horo: 5
 typography:
   partition: ifrs
   bondDegree: 85
@@ -42,7 +42,7 @@ standards:
   - "US-GAAP ASC-606-10-45-3 contract-asset"
 bindings: []
 signatures:
-  computationUuid: "9d5426be-c2fb-862c-ae38-e8b0d87b2a75"
+  computationUuid: "af2c8e0a-42da-862b-b859-30d09ee14dfa"
   stages:
     - stage: path
       stageUuid: "56ea96e6-b4a0-8052-b40d-bca77be8c79b"
@@ -53,11 +53,11 @@ signatures:
     - stage: links
       stageUuid: "57d5d319-f1d8-812d-b535-ce79138f34b7"
     - stage: horo
-      stageUuid: "ac9db62f-7c19-8fb3-9bbc-eeb789d39544"
+      stageUuid: "3f54fc5f-085f-8ff5-9ef9-77c67533aa7d"
     - stage: seal
       stageUuid: "86ab7212-e5ac-8eac-917f-2f97e0fe6ec4"
     - stage: uuid
-      stageUuid: "1af6b912-4205-894f-9da8-76df1b2c7466"
+      stageUuid: "54ecb81c-16d8-83e5-b660-09e413f8f045"
 version: 2
 ---
 # ifrs/15/types

@@ -2,11 +2,11 @@
 name: reports
 description: "Use when submitting or tracking statutory filings — 10-K/20-F, 10-Q, SOX attestations, annual compliance reports — per legal entity per jurisdiction — filing status, due dates, regulator feedback, and linked audit findings. The regulatory-filing register."
 atomPath: "legal/entities/regulatory/reports"
-coordinate: "legal/entities/regulatory/reports · 2/share · 8cc6f9b9"
-contentUuid: "71d06883-6a0d-577e-8908-5ec888224e60"
-diamondUuid: "018c026d-b05d-87c1-8a5f-88f0d0a1c30a"
-uuid: "8cc6f9b9-837b-8d43-8b8d-dcbb1f7bbd71"
-horo: 2
+coordinate: "legal/entities/regulatory/reports · 5/round · 42386fb2"
+contentUuid: "14bec5ef-66b6-5b77-aff0-2107897e930a"
+diamondUuid: "04fe5464-0c0c-8f13-8839-b3c87a017fbc"
+uuid: "42386fb2-1e2b-8949-8e80-e403b18e8b20"
+horo: 5
 typography:
   partition: legal
   bondDegree: 28
@@ -18,7 +18,7 @@ standards:
   - "local-regulatory-filing"
 bindings: []
 signatures:
-  computationUuid: "a622811c-ee59-867e-b689-83910a58f652"
+  computationUuid: "5f823348-464f-81fa-b05b-7000e237a48f"
   stages:
     - stage: path
       stageUuid: "763d0e92-636c-8473-bf9f-47178fee4ad5"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "6eccfbb3-f25c-825e-a1c4-b2d315daaaf6"
     - stage: horo
-      stageUuid: "d88f8a87-c7ab-8c22-bb93-ca37eeda1284"
+      stageUuid: "0df0fe71-7673-8979-9557-9930e35fece0"
     - stage: seal
       stageUuid: "485f02ef-b0d4-8724-a33a-89669e61e556"
     - stage: uuid
-      stageUuid: "f2848b43-721e-8e03-b8b4-8227e8f22408"
+      stageUuid: "2676bf29-ac8f-8f4f-a1be-227a6137e831"
 version: 2
 ---
 # regulatory-reports

@@ -2,11 +2,11 @@
 name: spaces
 description: "Use when managing IWMS sub-property zones — floors, rooms, open-plan areas, desks, parking bays — with area, capacity, occupancy, amenities, fire-zone, bookability flag, and GL-account or cost-centre allocation under a parent property. The ISO 41011 §3.3.5 space-management collection."
 atomPath: "properties/spaces"
-coordinate: "properties/spaces · 2/share · 4453d42e"
-contentUuid: "9774523f-fc8e-5178-b9fa-f48d04bcb264"
-diamondUuid: "f3e806bd-a02f-83d8-a23b-2bb1c5660b7c"
-uuid: "4453d42e-1828-876e-814c-4469307b9486"
-horo: 2
+coordinate: "properties/spaces · 5/round · b54ffc2b"
+contentUuid: "e53d6a9a-47f1-5e1e-9446-492afd75923d"
+diamondUuid: "f2a0ea77-f330-84ee-815e-2c04c48b32b9"
+uuid: "b54ffc2b-980b-8093-ab43-57fec92de411"
+horo: 5
 typography:
   partition: properties
   bondDegree: 16
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2e9238c4-d8b7-89db-a44f-117b065d1672"
+  computationUuid: "82163e8d-9022-8729-825b-59bc28edd799"
   stages:
     - stage: path
       stageUuid: "b7ae036a-f5af-89a2-920e-2dbedf47e9ef"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "14321fef-2867-837d-988b-4edab6c29c9b"
     - stage: horo
-      stageUuid: "64c16780-4f71-8b2c-8755-84756d6dc71e"
+      stageUuid: "d573d4bd-7287-8ff6-84d1-08593c0b2233"
     - stage: seal
       stageUuid: "85bf9bd1-ef6b-8d41-8733-a3b1db6bdc60"
     - stage: uuid
-      stageUuid: "d0e01cb6-ebf7-8617-a204-f850a6435996"
+      stageUuid: "2501e31a-52fb-8c1b-9c45-ccc79463810e"
 version: 2
 ---
 # spaces

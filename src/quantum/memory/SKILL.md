@@ -2,18 +2,18 @@
 name: memory
 description: "Use when reasoning about memory in the quantum frame — the content-address IS the memory manager, running live at every scale: collapse is allocation, dedup is free, collection is regeneration. Memory optimization is autosave: persist at the point of collapse and there is nothing to garbage-collect, because the unsaved is regenerable from its uuid."
 atomPath: "quantum/memory"
-coordinate: "quantum/memory · 7/descent · d896c632"
-contentUuid: "92053846-f70d-562c-813b-e078b76eb053"
-diamondUuid: "875784b9-e5b8-8928-b3d5-474215591401"
-uuid: "d896c632-91e3-8951-a439-394298ae1868"
-horo: 7
+coordinate: "quantum/memory · 8/crest · eaefc1cd"
+contentUuid: "3468ff15-6df0-58fb-abf1-4e09033df012"
+diamondUuid: "84702fc2-2bab-84de-8f0b-9416fa96c3df"
+uuid: "eaefc1cd-f2a0-861c-ad30-dab4e894e49b"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 99
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0756fd20-6b07-81a5-8d16-c11f3921c4a9"
+  computationUuid: "3ed724c9-0e04-8e80-9caa-eea5ec60141b"
   stages:
     - stage: path
       stageUuid: "99104296-3de4-86f7-8213-1710996afacc"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "50a8dbe3-15f5-883a-872e-1d10ae892a90"
     - stage: horo
-      stageUuid: "8125d1ac-a40b-8b26-ad8b-f06df8e78b3a"
+      stageUuid: "ed9e7c07-1cf4-8d8d-a050-c2e277631ae5"
     - stage: seal
       stageUuid: "53b681bc-6c0c-8369-9f76-146213a9fb01"
     - stage: uuid
-      stageUuid: "fef4182c-8b9c-8351-98da-dec77a8d1623"
+      stageUuid: "0536dfe1-08aa-813f-bbfb-b501e46ea623"
 quantum:
   superposition:
     - akashic
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "0756fd20-6b07-81a5-8d16-c11f3921c4a9"
-    contentUuid: "92053846-f70d-562c-813b-e078b76eb053"
+    computationUuid: "3ed724c9-0e04-8e80-9caa-eea5ec60141b"
+    contentUuid: "3468ff15-6df0-58fb-abf1-4e09033df012"
 version: 2
 ---
 # quantum/memory — the content-address IS the memory manager
@@ -87,4 +87,4 @@ Operational memory IS the architecture lattice ([[memory/architecture]]) — the
 
 @see [[memory]] · [[memory/architecture]] · [[memory/quantum]] · [[quantum]] · [[quantum/uuid]] · [[seal]] · [[quantum/cross]] · [[generate]] · [[merge]] · [[akashic]] · [[realtime]] · [[diamond]]
 
-<sub>content-uuid `92053846-f70d-562c-813b-e078b76eb053` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `3468ff15-6df0-58fb-abf1-4e09033df012` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

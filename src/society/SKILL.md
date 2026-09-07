@@ -2,18 +2,18 @@
 name: society
 description: "Use when reasoning about erpax building itself — the autonomous loop where the agent society (convened at chat) reads its own akashic record and advances one gate-verified step at a time, driving the aura to whole and the collections to their dense core with minimal human footprint. The self-building loop; matter-twin society/build.mjs."
 atomPath: society
-coordinate: "society · 5/round · 2eacf369"
-contentUuid: "f516b47b-1082-5046-bda2-5f676c70357b"
-diamondUuid: "dd1d11b9-8f5d-8db6-b864-56c81575ed1e"
-uuid: "2eacf369-cbab-8024-925a-30b41629bbef"
-horo: 5
+coordinate: "society · 4/weave · a45dc3c9"
+contentUuid: "10c03d71-ece2-5bdb-bc55-9ebee45c2bb3"
+diamondUuid: "e7b53e69-68ab-8d0b-a4f3-74a539cf1c47"
+uuid: "a45dc3c9-8e20-8933-9049-9f3c17449b0f"
+horo: 4
 typography:
   partition: society
   bondDegree: 448
 standards: []
 bindings: []
 signatures:
-  computationUuid: "88a77fce-b224-8520-87b2-1898bbd2e4c7"
+  computationUuid: "b3519dd8-b219-8ffa-aade-c3006fc4f89b"
   stages:
     - stage: path
       stageUuid: "472587c2-f741-88ee-ae45-4b6a1647e22d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f7df786d-75dd-8559-8f83-c17d65f8931a"
     - stage: horo
-      stageUuid: "9ae4f9a1-8d42-802f-8c15-f2b9d826e79a"
+      stageUuid: "3e5f22af-2c1a-8b8a-8daf-9f59047baebd"
     - stage: seal
       stageUuid: "181d0cb2-56b3-8014-8419-9866f4ec1e35"
     - stage: uuid
-      stageUuid: "564acf6e-3ba8-8d07-a5f0-b55526bbcaad"
+      stageUuid: "3dc8d19d-5709-8b73-9e35-14438bf16b32"
 version: 2
 ---
 # society — erpax builds itself

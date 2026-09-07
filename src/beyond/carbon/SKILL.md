@@ -2,10 +2,10 @@
 name: carbon
 description: "Use when accounting the gCO2e of a chain step for ESRS E1 / CSRD reporting — estimateCarbon converts CPU-ms and egress-bytes into grams via grid intensity, recordCarbon accumulates per tenant, getTenantCarbon reads the running total; the carbon dual of cost."
 atomPath: "beyond/carbon"
-coordinate: "beyond/carbon · 4/weave · 7fdf5c68"
-contentUuid: "10769f22-e2ec-5b93-9d55-7f5ec64d5620"
-diamondUuid: "ddfee173-e07f-8504-a114-7e272af11f3b"
-uuid: "7fdf5c68-e0f4-84da-88f2-12538bfd7da8"
+coordinate: "beyond/carbon · 4/weave · 5fe1d30c"
+contentUuid: "0dadac3e-73e5-50ea-b714-fac8e19b048d"
+diamondUuid: "7d2c8aa5-9f69-89b7-a80c-67198ccf5cc5"
+uuid: "5fe1d30c-f58c-8d16-b665-282db05a56c3"
 horo: 4
 typography:
   partition: beyond
@@ -19,7 +19,7 @@ standards:
   - "GHG-Protocol"
 bindings: []
 signatures:
-  computationUuid: "adc17bd7-25a3-8154-8acc-4794f4b203df"
+  computationUuid: "14afa7b4-b634-8601-ac1c-286a9b54190e"
   stages:
     - stage: path
       stageUuid: "022811c8-2825-8805-8327-1f3ecdaa1b5e"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "3475e702-cae7-8cd9-9935-0a24f869502b"
     - stage: horo
-      stageUuid: "c35e5392-f671-852a-ab09-7c739c343615"
+      stageUuid: "ef07e9c1-629f-84d8-91de-d6a5ae59b634"
     - stage: seal
       stageUuid: "e508f226-d1f4-82a5-9358-70265789b89d"
     - stage: uuid
-      stageUuid: "6dc9bb49-ba36-8f47-81d2-980644f0569e"
+      stageUuid: "671b8981-106b-8218-85bb-d8531798a06c"
 version: 2
 ---
 # beyond/carbon — carbon-aware execution (gCO2e per chain step)

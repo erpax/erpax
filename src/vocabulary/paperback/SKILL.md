@@ -2,11 +2,11 @@
 name: paperback
 description: "Use when reasoning about paperback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/paperback"
-coordinate: "vocabulary/paperback · 2/share · d1912c99"
-contentUuid: "93f0ccbe-fe5d-58dd-8c57-a23544489c56"
-diamondUuid: "7d5e2e19-ac43-8894-b4b7-7407c6b6de24"
-uuid: "d1912c99-7c31-8dbc-8435-e7d585167ab8"
-horo: 2
+coordinate: "vocabulary/paperback · 8/crest · c39e4f80"
+contentUuid: "af7c297a-ec63-5232-8cbf-803ffe5061db"
+diamondUuid: "1dd6df7d-3f93-8ef5-aeb3-7423ae4d8307"
+uuid: "c39e4f80-d8f8-8569-9dd6-59768039e919"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ec455669-5191-882a-9e39-6ccec12589cf"
+  computationUuid: "274a6074-f26b-8ddd-bd3b-a15317d02068"
   stages:
     - stage: path
       stageUuid: "b47272e5-ae21-8d85-bacf-3c2acc5547ee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6f828285-9c05-812a-9aed-3ed2630170f8"
     - stage: horo
-      stageUuid: "58746225-31b5-81bd-85f2-202e5ad84f6b"
+      stageUuid: "42c7d378-c0b2-8604-983e-d9690a83a8cc"
     - stage: seal
       stageUuid: "71026e27-bd66-821f-a20f-e14559a8cf2c"
     - stage: uuid
-      stageUuid: "84449baf-b720-8b61-b539-e4b8874a7bd1"
+      stageUuid: "eeaba80f-a684-81ab-a931-30f2a32b10fd"
 version: 2
 ---
 # paperback

@@ -2,18 +2,18 @@
 name: scouting
 description: "Use when monitoring fields for pest, disease, and crop status — scouting is the systematic field-walk that drives integrated pest management (IPM): observe, identify, count against an economic threshold, then act (cultural/biological/mechanical/chemical) only when damage cost exceeds control cost. The monitoring backbone; turns pest control from calendar-spray into measured decision."
 atomPath: scouting
-coordinate: "scouting · 7/descent · 2e2e3296"
-contentUuid: "c0c0e84a-d73a-50f9-baa0-ffd0f1f572eb"
-diamondUuid: "f0699600-4fde-83f5-a121-c59fba5e2b08"
-uuid: "2e2e3296-5688-8203-9a27-d7e0f4441314"
-horo: 7
+coordinate: "scouting · 2/share · 68bdcd12"
+contentUuid: "258fa496-4806-5167-a5a2-6846b701df18"
+diamondUuid: "8d756c36-6163-8652-8cd7-a460a90d46ab"
+uuid: "68bdcd12-0890-863c-a77f-263d9d9baf47"
+horo: 2
 typography:
   partition: scouting
   bondDegree: 43
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0532a709-d0f7-8778-9301-09efdbc9892f"
+  computationUuid: "c65656b2-3ae3-81c0-8910-80d112149fd5"
   stages:
     - stage: path
       stageUuid: "dd7c8be9-890c-86fa-b0b2-820afafc6e68"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "27723213-79c3-82b7-98e2-94f32a4a8dd4"
     - stage: horo
-      stageUuid: "5a6bf01c-4d15-848d-afa6-57f251a14edc"
+      stageUuid: "150326e5-c2c2-8e08-b827-2d21ad1039b4"
     - stage: seal
       stageUuid: "1bef4d79-bce6-8993-8b24-77f532b2f705"
     - stage: uuid
-      stageUuid: "6de953c1-a96d-8739-8b40-87f53af16a0a"
+      stageUuid: "3883a5d3-0016-8ad1-a805-e72414f4b833"
 version: 2
 ---
 # scouting — monitoring fields to drive the pest decision

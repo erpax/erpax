@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "club",
-    "uuid": "c1988094-2e16-84b7-9a2c-67e60fb009f0",
+    "uuid": "ec5ae785-95b3-81d7-bbe9-76dff4789c2f",
     "words": [
       "club"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about club — A schema.org component word, collided out of schema.org compounds — fused from ComedyClub · HealthClub · NightClub · SportsClub (sti · collapse · merge).",
-    "uuid": "764130d5-8785-8b6e-9e85-5242c3d391f9",
+    "uuid": "84337840-d068-8bab-a119-aa300e35163c",
     "words": [
       "use",
       "when",

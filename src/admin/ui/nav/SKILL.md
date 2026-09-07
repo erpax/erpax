@@ -2,18 +2,18 @@
 name: nav
 description: "Use when reasoning about nav — builds the corpus links from the atom prefix tree. A hand-maintained menu is a second source of truth about where things live, and it goes stale the first time a folder moves…"
 atomPath: "admin/ui/nav"
-coordinate: "admin/ui/nav · 7/descent · eb984f10"
-contentUuid: "fb04aba9-b43c-515c-a3f6-00d6a8563a1e"
-diamondUuid: "b1a87611-e3b4-8658-8d41-1623dae11629"
-uuid: "eb984f10-e2ac-8733-a4f9-efc2f8170392"
-horo: 7
+coordinate: "admin/ui/nav · 4/weave · ac29980f"
+contentUuid: "1792a9df-ff7c-5554-aa65-5186212c5adf"
+diamondUuid: "2160b7eb-7117-8140-80c7-5801c153334b"
+uuid: "ac29980f-48db-8a1f-b601-365679a95d1c"
+horo: 4
 typography:
   partition: admin
   bondDegree: 7
 standards: []
 bindings: []
 signatures:
-  computationUuid: "72823518-96da-8e79-88d9-1636f8543f23"
+  computationUuid: "1ed791d1-dc42-8986-a9d7-1d04cd50bb87"
   stages:
     - stage: path
       stageUuid: "690ce8c9-12b4-8581-89e1-1b9f692f80a1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "364b9fba-b486-8be1-b65a-5c9fd8ade381"
     - stage: horo
-      stageUuid: "d1f4d0d4-b66a-801c-a3ff-5a27786c17ef"
+      stageUuid: "582d6eac-6f2a-8d55-b577-4a11282d706d"
     - stage: seal
       stageUuid: "0dc92d7e-830e-8a31-b977-2e1f1a3f725b"
     - stage: uuid
-      stageUuid: "99600c3a-247e-87f4-b3c5-0b13f15dcc8d"
+      stageUuid: "23a950f6-3c3f-8f05-9cd4-18fb981dcdb9"
 version: 2
 ---
 # admin/ui/nav — the sidebar is derived from the path tree, never from a typed menu

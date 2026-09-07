@@ -2,18 +2,18 @@
 name: capacity
 description: "Use when planning, tracking, or optimizing resource capacity — workforce availability, machine utilization, warehouse/facility space, or bottleneck detection per work-center/shift/period. The binding constraint in operations."
 atomPath: "vocabulary/capacity"
-coordinate: "vocabulary/capacity · 2/share · a2ea5a6a"
-contentUuid: "85370bf5-994a-5a75-972f-73d77ee90d80"
-diamondUuid: "ea3a290d-64cd-80ff-8215-7d0c4ad33fef"
-uuid: "a2ea5a6a-a666-8504-ad78-50119a2d6c5f"
-horo: 2
+coordinate: "vocabulary/capacity · 5/round · 14d4649b"
+contentUuid: "047bff96-f674-5124-ae7b-159b1d370ac2"
+diamondUuid: "e4fa2404-a2da-85ac-8fb1-979966d6bb0b"
+uuid: "14d4649b-06e5-8ca8-8b08-f97972687a86"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 100
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d737a2df-1e8b-81cf-855e-e9f150a9c400"
+  computationUuid: "23157cd9-20f2-86c8-983b-ec179fae3087"
   stages:
     - stage: path
       stageUuid: "b7c5c918-f2ff-8d81-aee9-4cf342da9e68"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2e32e34a-699f-8977-a0ef-17ea86b4eacf"
     - stage: horo
-      stageUuid: "80842c25-7a87-8456-ab02-ad58e6a93a5e"
+      stageUuid: "8662218c-8c07-8d75-a9a3-0c3398569523"
     - stage: seal
       stageUuid: "3a7feeec-d5cb-83bb-a9e6-8240084cf923"
     - stage: uuid
-      stageUuid: "72c635eb-6478-8160-a6c5-646e30d2b52c"
+      stageUuid: "4be34bfe-b168-822a-88cd-9831827116e9"
 version: 2
 ---
 # capacity

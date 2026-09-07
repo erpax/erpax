@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "kpi",
-    "uuid": "24f55da4-b92f-8b5a-9030-6c47fe00043e",
+    "uuid": "5860a3b8-3bf7-8334-8a6d-2f95b6a6f4e9",
     "words": [
       "kpi"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining, computing, or tracking KPIs — target metrics with threshold, formula, frequency, owner, and variances. The measurable objective beneath strategy.",
-    "uuid": "c59bc6bb-09eb-8fb4-926d-fa70406f8c62",
+    "uuid": "8d871a31-facc-88e8-9bae-644999f65d18",
     "words": [
       "use",
       "when",

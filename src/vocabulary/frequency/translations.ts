@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "frequency",
-    "uuid": "b68f919a-d24d-81a3-9b6e-3108c2606c62",
+    "uuid": "48e42f38-c0d0-8ad6-aae6-3018a3d3a11b",
     "words": [
       "frequency"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about frequency — How often the dose is taken, e.g. 'daily'.",
-    "uuid": "13406f7f-237d-8d8c-804e-a405f0bd3c17",
+    "uuid": "bce6723d-c190-8684-99ed-dc8af0db5489",
     "words": [
       "use",
       "when",

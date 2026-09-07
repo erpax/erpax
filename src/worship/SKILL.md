@@ -2,11 +2,11 @@
 name: worship
 description: "Use when reasoning about worship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: worship
-coordinate: "worship · 7/descent · 1a4ad6bd"
-contentUuid: "729714b3-46c1-57d2-9756-a3ce5b76baba"
-diamondUuid: "5900e657-4d57-8615-9e39-1c51077c5f52"
-uuid: "1a4ad6bd-ded5-89cf-bd23-56eee21c3f8f"
-horo: 7
+coordinate: "worship · 2/share · e74e6d79"
+contentUuid: "d6b57f24-2b38-5f37-a213-304b4db0fda9"
+diamondUuid: "f43ed811-5578-8aa1-9c88-f58f3c304f53"
+uuid: "e74e6d79-9f76-89b8-9ec9-56f642b694a5"
+horo: 2
 typography:
   partition: worship
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7a344d7f-9744-80e9-86e4-0c658e30cf70"
+  computationUuid: "2aef4c09-8caf-85b8-8773-5ef1f1ad54cb"
   stages:
     - stage: path
       stageUuid: "268f8fad-a082-8925-bbbf-9fc3c9a4a52f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b2f07c03-b5d5-8496-856c-755bc37c09da"
     - stage: horo
-      stageUuid: "845b50da-ef52-8755-9ff9-dadd7ef9a6bb"
+      stageUuid: "c495e68e-5d40-871d-8b14-0edc2b17019c"
     - stage: seal
       stageUuid: "3895d40c-9b90-8ffe-9396-25de4bc542fa"
     - stage: uuid
-      stageUuid: "dac0ed5e-b36d-8c06-9e74-ae189fbb81f1"
+      stageUuid: "52c4a36b-72da-8588-b149-3bcd159585d5"
 version: 2
 ---
 # worship

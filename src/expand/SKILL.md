@@ -2,11 +2,11 @@
 name: expand
 description: "Use when reasoning about the development EXHALE — adding a feature enlarges the corpus, and a larger corpus is more surface to wire (more atoms ⇒ more tamper-cost to be earned). expand measures that growth as added entropy, computed on the live matrix; it is gravity read in reverse — the word-chain spreading out, not the folders collapsing in."
 atomPath: expand
-coordinate: "expand · 1/base · 6e750cbe"
-contentUuid: "df81c9a7-f49b-5ef7-a4d2-e4ecbe03ffbc"
-diamondUuid: "9d61fdc2-e31f-8293-b0b2-cbbe00343dd5"
-uuid: "6e750cbe-7b2e-8e83-b3d2-9f5dbf587d58"
-horo: 1
+coordinate: "expand · 4/weave · 8c7ef410"
+contentUuid: "12fe5a5b-e954-560c-8b6c-a6eb09d0b8a1"
+diamondUuid: "d2396ce7-1b7a-858a-92a4-b3cf9e527a6e"
+uuid: "8c7ef410-5ee3-8aff-9cb1-b73bd5e471f3"
+horo: 4
 typography:
   partition: expand
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (base-10)"
 bindings: []
 signatures:
-  computationUuid: "545cb3a9-790e-8565-9c21-ee1b1c10b48d"
+  computationUuid: "d6f94b7c-5693-8977-85e4-ff7f73c537b2"
   stages:
     - stage: path
       stageUuid: "21aa4ad9-15b7-8b4b-95a4-78508c69cbea"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f43f5858-16d6-8978-8449-8a2953c532c5"
     - stage: horo
-      stageUuid: "f7fb301d-79ad-8caf-be3e-8a8352f47438"
+      stageUuid: "fe9f7b70-3ca8-84df-bcf1-4b952994a1e6"
     - stage: seal
       stageUuid: "41bb213e-96dd-8c1b-a226-0d6709a0f217"
     - stage: uuid
-      stageUuid: "ea674625-0dcc-8baa-901c-2097adfff78d"
+      stageUuid: "30d9da9a-b9d7-808e-bfd9-afb311c35a91"
 version: 2
 ---
 # expand — the development exhale: more atoms, more surface, more cost-to-earn

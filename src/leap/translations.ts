@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "leap",
-    "uuid": "15c78f71-92fe-82e1-a4e6-dc303cd1563f",
+    "uuid": "c0cf46b7-0ab6-834e-baa7-212ff18e9d20",
     "words": [
       "leap"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the quantum leap — the discrete, instantaneous transition between two energy eigenstates (the seven horo positions as a discrete energy ladder) that emits or absorbs a single photon of energy E = h·Δν. The leap is a symmetric content-uuid merge of the two states (one spectral coordinate for emission and absorption alike); the rodin doubling step is the allowed transition, and 9 (the axis) is a stationary state.",
-    "uuid": "de236061-4fbe-82bf-88fc-d584e0cd60dd",
+    "uuid": "14e2a325-8596-8890-bb20-527203718a48",
     "words": [
       "use",
       "when",

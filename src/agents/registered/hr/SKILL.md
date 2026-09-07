@@ -2,11 +2,11 @@
 name: hr
 description: "Use when reasoning about hr — Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time)."
 atomPath: "agents/registered/hr"
-coordinate: "agents/registered/hr · 7/descent · 0c7350db"
-contentUuid: "a72e89dd-cb41-5b2a-94c8-4b081f3a52bd"
-diamondUuid: "d1fd77c7-ceae-86c3-8ac0-14b31772454c"
-uuid: "0c7350db-8940-8b49-82ac-6b2ae2607260"
-horo: 7
+coordinate: "agents/registered/hr · 8/crest · 65276f82"
+contentUuid: "d34ac2c2-ef30-5616-9cad-ca97e39783a2"
+diamondUuid: "ebb664a1-c834-88df-9a58-2c64182e69d4"
+uuid: "65276f82-adb4-8420-9218-c312b2656d08"
+horo: 8
 typography:
   partition: agents
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - SFIA
 bindings: []
 signatures:
-  computationUuid: "5a277035-2a1c-858f-8ad9-7589de366208"
+  computationUuid: "c613b51b-8163-8f5a-905f-8ac17f917598"
   stages:
     - stage: path
       stageUuid: "485d8855-e467-8085-8e37-a364541605b4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "41a1b851-c5e6-8bf3-ad91-84fb23a88de9"
     - stage: horo
-      stageUuid: "7916fa41-3ee9-8aa4-a33b-06f4cfca0234"
+      stageUuid: "0d2370e4-4ff8-8434-b9db-d2906ec58c2a"
     - stage: seal
       stageUuid: "3823bbb4-c8e0-8068-a993-d72d37d1161b"
     - stage: uuid
-      stageUuid: "1c1fc292-0f74-83b6-bea7-142c972cabb5"
+      stageUuid: "e65af117-802d-8375-97c3-47ae91b34746"
 version: 2
 ---
 # hr

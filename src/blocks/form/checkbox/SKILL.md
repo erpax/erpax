@@ -2,18 +2,18 @@
 name: checkbox
 description: "Use when reasoning about checkbox — 's returns an and expects a **native** input to fire it. The shadcn checkbox is a Radix button with — it fires , and the native event never happens."
 atomPath: "blocks/form/checkbox"
-coordinate: "blocks/form/checkbox · 4/weave · a3292f15"
-contentUuid: "443fb70a-fa97-530f-8992-2690a7655c62"
-diamondUuid: "64757fbb-0683-8eb6-9562-697c5a073679"
-uuid: "a3292f15-138c-870a-8b64-866b17e8b2cd"
-horo: 4
+coordinate: "blocks/form/checkbox · 7/descent · 011503a7"
+contentUuid: "15a8e600-fea4-5cdd-a47a-a3ce2754524c"
+diamondUuid: "c886c596-70b8-8631-9935-9e9058a5c0e5"
+uuid: "011503a7-3bbd-84ab-bab8-f0653ac6c8f8"
+horo: 7
 typography:
   partition: blocks
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4a6d8123-1b8b-8000-8bb6-85cc1264bcd3"
+  computationUuid: "8ecd85e5-452c-851f-96b8-a3911dcaaef1"
   stages:
     - stage: path
       stageUuid: "83e27cf2-abde-8c3e-9bec-6b650b6565bf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "25562ceb-6425-8677-90ae-493904b44a66"
     - stage: horo
-      stageUuid: "6c4c610e-3078-8d21-975a-ddca9566e751"
+      stageUuid: "3e4e9306-0f30-8c14-9ba6-ad5dd4a23764"
     - stage: seal
       stageUuid: "c55af822-7101-8c63-93d2-774aaf73671c"
     - stage: uuid
-      stageUuid: "0735b4e2-2bee-86d8-b3e2-ad02007be158"
+      stageUuid: "96e65b86-c0f0-82f6-ba33-7de0070db0f9"
 version: 2
 ---
 # blocks/form/checkbox — the styled control is not an input, so the value must be written by hand

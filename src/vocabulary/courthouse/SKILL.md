@@ -2,10 +2,10 @@
 name: courthouse
 description: Use when reasoning about courthouse — A courthouse.
 atomPath: "vocabulary/courthouse"
-coordinate: "vocabulary/courthouse · 7/descent · 41d1a054"
-contentUuid: "508a62ba-27d6-598a-b9ad-860573ffb033"
-diamondUuid: "4ee4b565-224c-8824-b9a2-50ea99cb31f4"
-uuid: "41d1a054-9c8a-82bd-aa7c-c80d66331d4a"
+coordinate: "vocabulary/courthouse · 7/descent · 2ebd9388"
+contentUuid: "8b5c3eae-d4ba-5074-9538-c235da7a25a4"
+diamondUuid: "e451b75a-e6a2-8de4-b4bb-b44d3673d88b"
+uuid: "2ebd9388-d489-86d1-a376-8ab1f9a127bf"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cd6a1ee8-c873-8561-93a5-00ce1885639b"
+  computationUuid: "9358c61d-20ba-8bd1-8b2a-adc413dba301"
   stages:
     - stage: path
       stageUuid: "89d88237-06c0-86c6-921b-0a53600214b9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a90f75f5-6fca-8166-918c-5110517f787f"
     - stage: horo
-      stageUuid: "b8e1d08e-e7c4-8663-909c-dd8f168bb2ce"
+      stageUuid: "317f3130-587a-8e77-a2a4-beabd8c1c052"
     - stage: seal
       stageUuid: "23b76338-478e-85dc-b448-2dfcfd6bed52"
     - stage: uuid
-      stageUuid: "8bcb8126-04f7-8d17-8279-e74b66b44ea7"
+      stageUuid: "241075d4-4ac6-8740-9f97-d0e57eca1c04"
 version: 2
 ---
 # courthouse

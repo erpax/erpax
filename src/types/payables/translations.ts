@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "payables",
-    "uuid": "146f6307-27b2-80f3-aa4b-445c337b6256",
+    "uuid": "d37dc399-77a8-8664-9732-0f7946b9c9f6",
     "words": [
       "payables"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about payables — , , and carry the fields EN-16931 requires of a supplier invoice; buckets what is outstanding, and is what falls due.",
-    "uuid": "6bf19288-1417-8be8-8ee1-c513a480b4ae",
+    "uuid": "53434cf5-4a49-88b4-a0d4-156b9f79127f",
     "words": [
       "use",
       "when",

@@ -14838,7 +14838,7 @@ export interface McpToolMetadatum {
 /**
  * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
  *
- * — diamond-uuid: a7e55ae4-f138-8f5c-9bb2-eb431af83d44
+ * — diamond-uuid: c3f00f23-3ce3-8898-bcd9-0ed032a19b2e
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "memories".

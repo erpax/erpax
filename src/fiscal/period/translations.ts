@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "period",
-    "uuid": "14598080-8b72-8095-b8e3-4f6a3756add9",
+    "uuid": "24d3734d-0450-8373-b26c-8bd39c2e393a",
     "words": [
       "period"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing Fiscal Period Standard.",
-    "uuid": "380f0e2f-1651-8a14-8a61-b4f468f85c18",
+    "uuid": "86cc723b-3c76-8860-a292-7ec6e793f89c",
     "words": [
       "use",
       "when",

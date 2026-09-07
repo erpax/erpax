@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "indemnity",
-    "uuid": "e80176d2-6d75-8c51-995e-fe9009568305",
+    "uuid": "a804c2ad-a752-8d6e-a654-1c77e76077b1",
     "words": [
       "indemnity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when one party agrees to compensate another for loss/liability arising from specified events — indemnifier, indemnitee, indemnified party, trigger (third-party claims, breach, negligence), scope, caps, procedure.",
-    "uuid": "9f704a48-7336-8801-bf89-c93980b38870",
+    "uuid": "89f254bd-b663-85be-811e-12c9ee30c228",
     "words": [
       "use",
       "when",

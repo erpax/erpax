@@ -2,11 +2,11 @@
 name: winner
 description: Use when reasoning about winner — A sub property of participant. The winner of the action.
 atomPath: winner
-coordinate: "winner · 2/share · 46826885"
-contentUuid: "d1488674-9c2c-5c2d-8b06-a81b602fc445"
-diamondUuid: "0b8cea7c-d709-89ac-bda0-30237e018936"
-uuid: "46826885-d1da-842d-bd08-86e4009a24d1"
-horo: 2
+coordinate: "winner · 4/weave · 0c0e06c9"
+contentUuid: "4457f9ce-1fd0-53b8-acbf-5c7c08c76b37"
+diamondUuid: "04a3f0a4-e862-8fec-966d-d7eba1de8ea9"
+uuid: "0c0e06c9-bfb6-80c1-9480-4bfe6ec45e8c"
+horo: 4
 typography:
   partition: winner
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4abd738d-fb3f-8f9f-9666-86a9f9b2f7ed"
+  computationUuid: "883a9a40-c72c-8cc6-993a-2ab17d7cd5dd"
   stages:
     - stage: path
       stageUuid: "51459133-0175-85ac-8794-3336ce8206cc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f0292a52-808e-87ff-ad5d-014e3e6da22e"
     - stage: horo
-      stageUuid: "de9dcb02-57ab-8b8a-b64a-7c1d66ab30d2"
+      stageUuid: "dd5da285-198a-8517-af75-b81e4ed7feff"
     - stage: seal
       stageUuid: "9fc02698-4832-8307-b225-6c0f251ae4ff"
     - stage: uuid
-      stageUuid: "95c21c47-2508-81e7-9e07-91e7ca85a26c"
+      stageUuid: "9dfe3c87-f2bb-8bbe-86e1-bacf9c7a955e"
 version: 2
 ---
 # winner

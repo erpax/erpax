@@ -2,11 +2,11 @@
 name: confine
 description: "Use when reasoning about confine — Use to keep the boot from collapsing again — 231 collections are handled by the FIELD (req.payload), never by a static `import * as … from '@/collections'` outside the config. That materialisation is what caused the TDZ. Parsed, not matched. Run: tsx src/rules/confine/index.ts"
 atomPath: "rules/confine"
-coordinate: "rules/confine · 2/share · db85e256"
-contentUuid: "986382b7-70e0-5b97-8a8f-f9454c44cf35"
-diamondUuid: "34348421-942e-83fd-a36e-9a1536f977a7"
-uuid: "db85e256-7c12-86ba-ab85-dd955e6367a1"
-horo: 2
+coordinate: "rules/confine · 4/weave · 035190cc"
+contentUuid: "d460cca3-fcfc-535a-a14d-2dd5735ebd89"
+diamondUuid: "dbd7f8e9-1da9-807d-95f2-a4b3a790a2be"
+uuid: "035190cc-9f3d-8615-9a56-e6afdbc3f713"
+horo: 4
 typography:
   partition: rules
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.6.2 — modularity: the whole is confined, not held"
 bindings: []
 signatures:
-  computationUuid: "36b44872-b8ae-8714-ad57-f4c146dc1d06"
+  computationUuid: "b069a4d7-bb83-8ec6-832a-e060c1529f92"
   stages:
     - stage: path
       stageUuid: "e214230a-1369-8a0c-a483-cf372328fbf6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8c835a55-f092-893a-9c80-7f2e901ec44e"
     - stage: horo
-      stageUuid: "d216a86e-b2ab-8474-b11b-f0514656db03"
+      stageUuid: "22a29ed1-aaae-8d3a-8da0-d1e3e13a353f"
     - stage: seal
       stageUuid: "c03d4d9e-d2d2-8d0f-8821-afbe046fbbfc"
     - stage: uuid
-      stageUuid: "4b1c1dcd-310b-8f2e-b906-be68fb32c5dd"
+      stageUuid: "1ab1b9c2-cc9e-8c9b-85fc-5d21201e92e4"
 version: 2
 ---
 # confine — 231 collections are handled like plasma: by the field, never by holding every particle

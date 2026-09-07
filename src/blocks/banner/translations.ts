@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "banner",
-    "uuid": "515c8759-9ff3-820a-ba07-b06804b2629b",
+    "uuid": "9dc474f2-9c3c-892e-942c-e19965870ab7",
     "words": [
       "banner"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about banner — is the Payload definition and renders it. They are separate exports because typegen and the server config need the shape without dragging React into a context that cannot run it…",
-    "uuid": "7f3f774b-9460-8430-ac4c-d71dc11c41fe",
+    "uuid": "a18b2f7f-a196-8f6f-9bf6-8b8ac3fd4cf4",
     "words": [
       "use",
       "when",

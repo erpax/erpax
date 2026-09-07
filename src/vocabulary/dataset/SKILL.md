@@ -2,11 +2,11 @@
 name: dataset
 description: Use when reasoning about dataset — A body of structured information describing some topic(s) of interest.
 atomPath: "vocabulary/dataset"
-coordinate: "vocabulary/dataset · 4/weave · d6fed9f4"
-contentUuid: "405b0f71-e069-5bca-a5d9-720737d0a08a"
-diamondUuid: "de3f176a-3d41-8666-b5bf-befd63756d55"
-uuid: "d6fed9f4-00b6-831b-b497-031757a68350"
-horo: 4
+coordinate: "vocabulary/dataset · 1/base · 59dedccb"
+contentUuid: "b7533dec-9fa3-565a-a8a1-ce59aeef0191"
+diamondUuid: "663522ff-cd39-84cd-b91d-723a4eb8ff02"
+uuid: "59dedccb-2b8c-8e56-bf9b-1b00f0c7b201"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e462f161-ed8c-831c-ac5f-def23ef25a81"
+  computationUuid: "50767c4a-05d0-8d88-8039-713172fc3cea"
   stages:
     - stage: path
       stageUuid: "c9458dec-6423-828c-8868-6d2a801560af"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "602bfbe8-3f6a-8892-b53e-ed4fbc0c0da6"
     - stage: horo
-      stageUuid: "a78af7e6-eb39-8fec-bb93-2d1f286a778f"
+      stageUuid: "b1398e3b-1d1e-8830-bbb7-0aeaee397b5a"
     - stage: seal
       stageUuid: "54328a34-7da6-8a8a-85f9-ce1f6daaf13d"
     - stage: uuid
-      stageUuid: "a3dc582e-cef7-82b8-899b-7ecf4dd4b815"
+      stageUuid: "f63c2b47-6834-8414-af8a-166455c91f73"
 version: 2
 ---
 # dataset

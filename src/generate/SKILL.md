@@ -2,11 +2,11 @@
 name: generate
 description: "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills."
 atomPath: generate
-coordinate: "generate · 8/crest · 6f880f03"
-contentUuid: "d8f075c6-1ab6-50f0-97d2-ea7e7bfd2bb5"
-diamondUuid: "6911b498-d440-8715-ac04-abfb0c7ed337"
-uuid: "6f880f03-d7b8-8a62-9a01-7b83d948ad6e"
-horo: 8
+coordinate: "generate · 2/share · ce124c6e"
+contentUuid: "4e89623a-797e-524d-a6ee-e6a3ffb5b011"
+diamondUuid: "cb31e134-2a96-8d02-ace1-a9fb35ebe200"
+uuid: "ce124c6e-dd65-8d42-b2f2-33eb8d4542c0"
+horo: 2
 typography:
   partition: generate
   bondDegree: 227
@@ -17,7 +17,7 @@ standards:
   - "W3C-HTML5"
 bindings: []
 signatures:
-  computationUuid: "d6f0ff65-c194-8658-ade1-24bd149fc88e"
+  computationUuid: "e423f272-72ed-853b-9a53-231919111d5c"
   stages:
     - stage: path
       stageUuid: "010bff6c-c911-8ec4-a13a-c2ae6c90abc0"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "b07e2af1-fb80-8e57-b8f5-f0adc4a4165c"
     - stage: horo
-      stageUuid: "341430ba-eeb8-854d-9ea6-85a11748a9c3"
+      stageUuid: "60ab1001-e822-8aaa-9b46-77f6ef2ec7b7"
     - stage: seal
       stageUuid: "28fb3c38-2699-82c6-8bcb-a5942f7320d3"
     - stage: uuid
-      stageUuid: "6ce731bc-9aae-8176-88b7-047b1c8fb984"
+      stageUuid: "1a4c8663-fc74-8ad9-857d-aaaae3d25b88"
 version: 2
 ---
 # generate — the self-generating loop (scan → mint → link → re-scan)

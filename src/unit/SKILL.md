@@ -2,11 +2,11 @@
 name: unit
 description: "Use when reasoning about unit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: unit
-coordinate: "unit · 2/share · fe20442d"
-contentUuid: "bb9dc546-b15c-5744-a400-3956ce7c614b"
-diamondUuid: "9e8998cd-24e7-83f7-a30f-1531523c6047"
-uuid: "fe20442d-09aa-87e6-85ee-ed185cddca23"
-horo: 2
+coordinate: "unit · 5/round · 0e335c7d"
+contentUuid: "ef841659-8e10-5654-8411-b438afe4e426"
+diamondUuid: "3ac4da68-4e2d-8827-80c6-df0c2bd893ca"
+uuid: "0e335c7d-a549-86a4-b982-530bb3bc9a57"
+horo: 5
 typography:
   partition: unit
   bondDegree: 63
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "77ea81b2-4071-8cfa-8f86-fa6d86f96b6b"
+  computationUuid: "a0057025-3f4d-881d-af39-1122b831d513"
   stages:
     - stage: path
       stageUuid: "53405f80-ddfd-803a-af3e-49dd2d9e2c92"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0174630d-1dfe-8cc5-99b3-9ca2cc721f3b"
     - stage: horo
-      stageUuid: "1e42b721-5a1c-820f-9845-f0b08a3f8131"
+      stageUuid: "6f054ec6-ac84-8304-a6aa-26391d146a75"
     - stage: seal
       stageUuid: "1c637549-aed3-8f20-b6f4-b9f3019b763c"
     - stage: uuid
-      stageUuid: "05060aea-0be9-85a1-a061-02fb98a10e3c"
+      stageUuid: "78390de9-80e3-8c05-8d3e-ccfc6651fc38"
 version: 2
 ---
 # unit

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "registry",
-    "uuid": "8d047d7f-a80d-83cc-9d6e-afb5164a65fd",
+    "uuid": "a2fb9756-deda-876f-89c0-0a9788182cd7",
     "words": [
       "registry"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand.",
-    "uuid": "7afaea64-53b6-8c72-8802-2f2df59f26c4",
+    "uuid": "806ed30f-dc4c-826d-b5fd-1c0e79ddf06b",
     "words": [
       "use",
       "when",

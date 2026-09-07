@@ -2,11 +2,11 @@
 name: types
 description: "Use when typing a tenant's agnostic seed configuration — the `TenantConfig` shape (branding, businessModel, subscriptionPlans with feature limits, marketing content, feature flags, localization, stripe) plus the `TranslatedField` / `FeatureLimit` helpers."
 atomPath: "config/types"
-coordinate: "config/types · 3/3 · 1a8e8fcc"
-contentUuid: "811e4a70-ec60-587e-9ec1-030506076632"
-diamondUuid: "07ff867a-2062-8430-b12a-45a9285280b4"
-uuid: "1a8e8fcc-728d-8746-8873-51f590cb66fc"
-horo: 3
+coordinate: "config/types · 6/6 · d80e7d47"
+contentUuid: "702f9f7c-47c7-5107-8364-86dca00fcb0d"
+diamondUuid: "d530b0c2-69ff-861f-87c6-1781609ccfb3"
+uuid: "d80e7d47-85ff-8576-8c26-62082d73bc17"
+horo: 6
 typography:
   partition: config
   bondDegree: 85
@@ -23,7 +23,7 @@ standards:
   - "ISO-4217:2015 currency-codes"
 bindings: []
 signatures:
-  computationUuid: "a23e84bf-4c8b-8492-8476-07320c31d551"
+  computationUuid: "e8f1b4b3-5b00-8e5e-943f-94cd88654b28"
   stages:
     - stage: path
       stageUuid: "0c15b24d-92f2-8307-b5d1-8a7a70e28e96"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "0ddfdbf1-d37d-8240-9942-a08bbe524264"
     - stage: horo
-      stageUuid: "04d901c5-a85a-8055-a127-e1472b9e3de1"
+      stageUuid: "305624ee-fba9-8136-ac9d-334c4f0c7c1c"
     - stage: seal
       stageUuid: "d563d3f1-8608-8676-83f3-f6db5420a591"
     - stage: uuid
-      stageUuid: "1d604243-ad7d-8ac9-8607-af200ad6c24e"
+      stageUuid: "32944fbb-9e20-8f6d-b068-d213b76c5f31"
 version: 2
 ---
 # config/types — the agnostic TenantConfig shape

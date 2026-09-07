@@ -2,11 +2,11 @@
 name: possible
 description: "Use when reasoning about possible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/possible"
-coordinate: "vocabulary/possible · 1/base · 8b42c338"
-contentUuid: "cb3434c0-b4c3-53bc-8302-002e00f77be4"
-diamondUuid: "f53fd1b7-9e2f-839e-93b8-d036a54c77bd"
-uuid: "8b42c338-1dce-8d83-8d69-51c3c3df9a3d"
-horo: 1
+coordinate: "vocabulary/possible · 2/share · 4a56f7c8"
+contentUuid: "aca5cf74-252e-552f-84ad-95a9390297dc"
+diamondUuid: "8e747fe2-fa90-8810-8286-0c8af8e396fc"
+uuid: "4a56f7c8-c626-8dde-a37b-b14d30e4b5f0"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cd3550a1-5296-83d2-a908-06615fab1a4f"
+  computationUuid: "c3a32176-eeed-8b56-84e3-d54fc0723008"
   stages:
     - stage: path
       stageUuid: "271985f1-9da3-847d-9a78-06246f117c36"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2b9ae000-2e77-8922-8496-53847ca7ae8f"
     - stage: horo
-      stageUuid: "9ace9e20-7ae9-88ae-a25a-cca1ebbfef65"
+      stageUuid: "c596f970-fe8a-8b0a-a2d1-6c67e6bcee9b"
     - stage: seal
       stageUuid: "7a7e49b4-dcc5-8563-8a3a-9d76b7b9f34c"
     - stage: uuid
-      stageUuid: "3aaabf7b-d8c7-8caa-92c8-a83e2e81217b"
+      stageUuid: "9dbc060c-f32f-8d30-b3bf-7303704da229"
 version: 2
 ---
 # possible

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "barcode",
-    "uuid": "6ebe69a5-531d-815d-8116-ae4f89687a82",
+    "uuid": "6e0b35cf-45a0-8e38-b571-9626b5ecad3f",
     "words": [
       "barcode"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about barcode — An image of a visual machine-readable code such as a barcode or QR code.",
-    "uuid": "95ae30d2-0cb7-8779-9ba6-3e0c70e344c4",
+    "uuid": "60c46840-e603-87a8-9e4b-82d0f6d2651f",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "forge",
-    "uuid": "1233e4e1-ad2c-8422-bd90-0cc8c616880b",
+    "uuid": "2d3b4a2c-d518-8729-8d3a-e78ef92b09a7",
     "words": [
       "forge"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist.",
-    "uuid": "fc968489-6529-83cd-9e58-d032f3c9a3f6",
+    "uuid": "480cc59f-deed-80aa-bfb5-a1f06a4b2d9d",
     "words": [
       "use",
       "when",

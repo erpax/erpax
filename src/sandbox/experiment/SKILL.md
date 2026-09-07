@@ -2,18 +2,18 @@
 name: experiment
 description: "Use when an agent needs to try an idea without risking the corpus — an isolated scratch workspace where the folder-law standard runs at the seam, so a standard-violating experiment is caught in the sandbox and never promoted."
 atomPath: "sandbox/experiment"
-coordinate: "sandbox/experiment · 1/base · 0f2aca7e"
-contentUuid: "3f97a25e-2e1c-5a56-bb9e-ea2f4e407a7f"
-diamondUuid: "9750862c-a37a-834d-afe6-69725dba43b0"
-uuid: "0f2aca7e-4d34-8491-94fc-f0d8ee2acf62"
-horo: 1
+coordinate: "sandbox/experiment · 4/weave · e93d39c0"
+contentUuid: "53b586e4-5b30-5e4a-a276-b0bfbbf0597d"
+diamondUuid: "4ffd01f9-b512-811d-9f57-e1d5433d1ee1"
+uuid: "e93d39c0-2421-8ecb-83e4-d6b47648990d"
+horo: 4
 typography:
   partition: sandbox
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2465dc23-5870-863f-b66a-d3ef8a4c045a"
+  computationUuid: "81cd73b9-417b-8e8f-996b-5b526434df3b"
   stages:
     - stage: path
       stageUuid: "cb5e83d9-1e48-808b-8e61-4d9b76226790"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5bf82338-ddad-8d8c-94da-689b1a58a096"
     - stage: horo
-      stageUuid: "66f87681-287d-83a3-87c6-78bc899cf720"
+      stageUuid: "ba94c973-8f9b-8b7d-8dbc-abae3a5e6ad8"
     - stage: seal
       stageUuid: "e8bea1a7-bbd1-8def-9038-40811022d60b"
     - stage: uuid
-      stageUuid: "9b0556e2-b7b7-870b-a095-aa5f7b9849a5"
+      stageUuid: "540508a0-9081-8052-bda6-d410dd88d090"
 version: 2
 ---
 # sandbox/experiment — experiment freely; your own standards hold at the seam

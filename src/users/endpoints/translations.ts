@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "endpoints",
-    "uuid": "0968281b-f97b-8eac-b055-3685b5fc6b18",
+    "uuid": "34eb6107-9ae7-8498-9bc9-e3fa76c25809",
     "words": [
       "endpoints"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the users collection's custom REST endpoints.",
-    "uuid": "59a1e548-30f3-8c9c-8673-bc7845acbf31",
+    "uuid": "b6f6fbcb-23c6-8bd5-8892-74b5aec4ef50",
     "words": [
       "use",
       "when",

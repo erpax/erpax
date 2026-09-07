@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "collide",
-    "uuid": "ef0faad2-70b8-8961-8163-faadd251e50f",
+    "uuid": "eb950982-71c3-87bb-a388-274d33840828",
     "words": [
       "collide"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when folding two atoms into one — collide is the deferred INHALE of development, the DRY collapse that merges the expansion back toward one and so lowers entropy; it DEFINES the fold collide(a,b) = merge two into one but is applied LATER, never during the exhale.",
-    "uuid": "c5be89d5-9e8f-87a9-b0a0-39320f64f50a",
+    "uuid": "05d73fa3-891f-8734-9526-2c6e42cb1cfb",
     "words": [
       "use",
       "when",

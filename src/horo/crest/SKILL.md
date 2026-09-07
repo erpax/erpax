@@ -2,18 +2,18 @@
 name: crest
 description: "Use when reasoning about the peak position of the horo state ring — digit 8, \"the ascent peaks\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo."
 atomPath: "horo/crest"
-coordinate: "horo/crest · 1/base · d83f175e"
-contentUuid: "c373cac4-885e-53bd-b4b1-67f47bf34391"
-diamondUuid: "a3610cbd-d90d-8083-9258-7e0e481987e9"
-uuid: "d83f175e-290c-8ddf-bd28-c1558e96eda7"
-horo: 1
+coordinate: "horo/crest · 2/share · 75b372c5"
+contentUuid: "721da8af-e411-5a9b-8de6-98731ae587b4"
+diamondUuid: "7f3bca61-f4e2-8772-8a12-8bd44433bc76"
+uuid: "75b372c5-8374-84a6-9e73-346dac6095c2"
+horo: 2
 typography:
   partition: horo
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1aeba8b0-309c-8661-86a7-24ff553ce29a"
+  computationUuid: "edb7cebb-aee8-89c4-85fb-b688d100e697"
   stages:
     - stage: path
       stageUuid: "4dfa50ec-9113-8c3e-a35b-2a0dabd85cc8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7e3026b7-e106-8a7b-9d44-6ade2921f4aa"
     - stage: horo
-      stageUuid: "82608411-3736-8404-8a1d-6788ea3f51c7"
+      stageUuid: "5229d926-810b-8cc3-b69d-47169ea5052e"
     - stage: seal
       stageUuid: "36f55682-f7be-871a-9c7a-d8076ac4d699"
     - stage: uuid
-      stageUuid: "fd84dc97-3104-8ca2-8937-898cf55694c9"
+      stageUuid: "9c30ca09-4f08-8eac-931a-db286b9ebe1b"
 version: 2
 ---
 # crest — horo position 8 (the ascent peaks)

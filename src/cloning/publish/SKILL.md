@@ -2,11 +2,11 @@
 name: publish
 description: Use when reasoning about publish — publishSelf — wrap a GenomeBundle in a verifiable federation envelope.
 atomPath: "cloning/publish"
-coordinate: "cloning/publish · 8/crest · 4fc78b3e"
-contentUuid: "1d39a7e4-abda-5558-9d73-a2c65bef10f1"
-diamondUuid: "b952a87b-3773-806f-900b-cfa7a033bb1e"
-uuid: "4fc78b3e-9ebd-8ec5-88a9-3b97210c4692"
-horo: 8
+coordinate: "cloning/publish · 2/share · f89eeff3"
+contentUuid: "c1fbf7bf-5144-53ad-80e3-6b4b1f478353"
+diamondUuid: "331d1e46-c32e-8d65-a708-0e8433728dbd"
+uuid: "f89eeff3-a3a0-83c6-8c97-0b6a2e33a175"
+horo: 2
 typography:
   partition: cloning
   bondDegree: 50
@@ -16,7 +16,7 @@ standards:
   - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "8af73ea9-c573-85e4-8966-90666cb62b0a"
+  computationUuid: "638013ee-ff80-8c8e-9d3d-bf951aa40ac7"
   stages:
     - stage: path
       stageUuid: "d416055f-230b-8f80-9a65-828236eb29b7"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "03a03c36-2f13-8e4c-b0a6-8a1869942588"
     - stage: horo
-      stageUuid: "20903164-422a-8978-a5a5-c42e3f15d537"
+      stageUuid: "c0e7b7a8-02cd-8d2d-b912-495826e1ba3c"
     - stage: seal
       stageUuid: "860fce17-a5d2-8f79-8244-17128438b5b9"
     - stage: uuid
-      stageUuid: "a787048a-7c55-81f9-a702-b6e4bf3ea5d5"
+      stageUuid: "1fe3fa6c-4396-8b2b-9751-c0c63db0ca84"
 version: 2
 ---
 # cloning/publish

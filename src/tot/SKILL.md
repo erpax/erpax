@@ -2,11 +2,11 @@
 name: tot
 description: "Use when reasoning about tot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tot
-coordinate: "tot · 5/round · e1b6f633"
-contentUuid: "1825896a-d6d2-51b5-a2a7-77cf4642bd5c"
-diamondUuid: "255f38fd-2172-8a1a-a0e1-b0c9dfc11aa4"
-uuid: "e1b6f633-f9e7-8ba3-ab30-0af31014f34e"
-horo: 5
+coordinate: "tot · 8/crest · 7a9c8eeb"
+contentUuid: "30589d25-21ec-5093-bbd0-b115b5a6edc9"
+diamondUuid: "139e08c4-2767-82ee-8137-4451cb5d1201"
+uuid: "7a9c8eeb-6f34-87b4-9179-c9beba9b984e"
+horo: 8
 typography:
   partition: tot
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b3a1a58e-5781-89a1-9ad3-e3574d3768d7"
+  computationUuid: "239bea16-6a3f-84d6-bb72-445e6d1cd688"
   stages:
     - stage: path
       stageUuid: "bfe62323-d1e0-8b09-b1bc-094f497cbc30"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "289098c3-7479-8d4d-a267-a3037bcc0160"
     - stage: horo
-      stageUuid: "831a5050-1dd6-8560-b95c-cfef0c154c15"
+      stageUuid: "99fdc1c3-7f67-8dc0-9aa2-0f5f7e9111bf"
     - stage: seal
       stageUuid: "5b03cc27-4d26-8d1e-beb4-399d04a9dd29"
     - stage: uuid
-      stageUuid: "9f46a939-4618-8c5c-98cf-c482c15c7c2a"
+      stageUuid: "f7bffeaa-9d1b-8b5d-ad2b-349866a50de3"
 version: 2
 ---
 # tot

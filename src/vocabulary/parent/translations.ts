@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "parent",
-    "uuid": "e39c7e74-6a30-8492-8b92-792b955949ea",
+    "uuid": "5141ebeb-5036-8b64-b26a-603e153176b9",
     "words": [
       "parent"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about parent — A parent of this person.",
-    "uuid": "21565e21-27f6-8449-9fc6-76c11cde6413",
+    "uuid": "adafd16a-b87f-8397-b1f1-1ef242f9fba8",
     "words": [
       "use",
       "when",

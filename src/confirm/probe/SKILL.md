@@ -2,18 +2,18 @@
 name: probe
 description: "Use when gateTypecheck needs a compile-load target — the minimal uuid-substrate probe, deliberately importing nothing that imports it back."
 atomPath: "confirm/probe"
-coordinate: "confirm/probe · 5/round · 3d2c4726"
-contentUuid: "c3a88cb5-6ed1-5681-9e90-dce75e57dd03"
-diamondUuid: "78eb40b5-4801-8e41-b51e-36a28f9dbef3"
-uuid: "3d2c4726-d62d-87b0-a553-3600a22e1c4b"
-horo: 5
+coordinate: "confirm/probe · 1/base · 0ec55eb6"
+contentUuid: "962b51fa-42f2-5b56-9560-59bc78966480"
+diamondUuid: "8e563fa2-8ed8-8e7c-b2c3-928b1d5926c1"
+uuid: "0ec55eb6-2352-8b52-b34f-cbfa966c396f"
+horo: 1
 typography:
   partition: confirm
   bondDegree: 17
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3d5c63d6-7263-8e1b-a437-6b40ca1a6273"
+  computationUuid: "8927ef8b-fdec-8ea7-87af-87dc504f4c67"
   stages:
     - stage: path
       stageUuid: "f0efc312-fb74-86d6-a032-231d76a6079e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ecb3608d-648e-8547-83fc-18e54c8fcd18"
     - stage: horo
-      stageUuid: "176b8c71-eade-8a8f-a5b7-cb4e3ea28eac"
+      stageUuid: "dcf37cbe-850a-8c5d-8350-e316781e941c"
     - stage: seal
       stageUuid: "cacf9ed4-f522-8196-85e0-55330aa4e484"
     - stage: uuid
-      stageUuid: "e3f47604-2e98-813a-be72-5dacf5d0b4d7"
+      stageUuid: "32bb5454-ebac-8bff-a4da-fcd633e44487"
 version: 2
 ---
 # confirm/probe — the smallest thing that proves the substrate compiles

@@ -2,11 +2,11 @@
 name: versions
 description: "Use when reasoning about versions — turns on Payload's native for every collection except those named in , with bounding the history."
 atomPath: "plugins/versions"
-coordinate: "plugins/versions · 1/base · 7df42076"
-contentUuid: "107bc59f-adb1-5e61-ab25-b565d4915f72"
-diamondUuid: "760dcc78-195e-8743-b8e8-738ca32d01f9"
-uuid: "7df42076-9097-8f42-b86c-7aad3e20fa02"
-horo: 1
+coordinate: "plugins/versions · 2/share · dbcd6ad0"
+contentUuid: "7c19374d-e9c9-54f7-8eca-9a3212cf7e96"
+diamondUuid: "3a971c8d-08e1-8a7c-a0c7-22fd186e010b"
+uuid: "dbcd6ad0-7e7d-807f-9138-b8641f9eb5a4"
+horo: 2
 typography:
   partition: plugins
   bondDegree: 116
@@ -15,7 +15,7 @@ standards:
   - "SOX §404 internal-controls record-retention"
 bindings: []
 signatures:
-  computationUuid: "6f2f2941-e803-8bd2-ae66-74d83b899315"
+  computationUuid: "6f02f39e-e73a-88e4-8cab-7e5b9ecc1ede"
   stages:
     - stage: path
       stageUuid: "0e9a1a4e-637e-89d6-a24a-dd30bdd8d56c"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "e38c7e0b-b12b-88be-b79a-facf6999f583"
     - stage: horo
-      stageUuid: "2f8ec75a-0af3-8cba-b49e-9d885fd80f5b"
+      stageUuid: "56649fd1-5e45-8911-ae5d-1b686db14eeb"
     - stage: seal
       stageUuid: "7893a839-759d-8460-8053-38c27f967e95"
     - stage: uuid
-      stageUuid: "71a605fd-1905-88cf-829e-bf83055a68c0"
+      stageUuid: "bbb2b381-9ee7-8b72-a1da-1ac48439fc10"
 version: 2
 ---
 # plugins/versions — versioning is enabled at the chokepoint, never per collection

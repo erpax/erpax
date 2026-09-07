@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "select",
-    "uuid": "e81c6e04-85a6-8203-98eb-e863910bee64",
+    "uuid": "0aaeeb6a-eea3-8f93-baba-4d4a09a8d09a",
     "words": [
       "select"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about select — A native announces itself. This one does not: the shadcn control renders a , whose accessible name comes from **nothing but** the bound to the trigger's .",
-    "uuid": "9839496f-2453-8c50-b80c-70b9d663c2aa",
+    "uuid": "4e444040-c804-8080-8205-36df603a9e09",
     "words": [
       "use",
       "when",

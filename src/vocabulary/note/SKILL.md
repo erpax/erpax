@@ -2,11 +2,11 @@
 name: note
 description: "Use when reasoning about note — A schema.org component word, collided out of schema.org compounds — fused from NoteDigitalDocument (sti · collapse · merge)."
 atomPath: "vocabulary/note"
-coordinate: "vocabulary/note · 4/weave · 5fc46244"
-contentUuid: "57c7f848-8e62-5cc0-8aeb-b6160aa2a547"
-diamondUuid: "aaadc25e-f348-8949-9d89-1f4c873c07c9"
-uuid: "5fc46244-685e-8420-b16b-b78c7d55d35d"
-horo: 4
+coordinate: "vocabulary/note · 8/crest · ec4b1f48"
+contentUuid: "35816c88-ff48-5de0-adbb-777d77064445"
+diamondUuid: "de440b63-5ff9-80a0-9330-af6d28052ed6"
+uuid: "ec4b1f48-96b4-8ba3-b97c-5c2f2707603b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "869af989-6cf9-895f-b9e0-54ac40f84486"
+  computationUuid: "cc889121-1104-828e-9f4c-269951fabd7f"
   stages:
     - stage: path
       stageUuid: "3d15f8d4-fc71-8b61-b30b-660b2b011a11"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "99a22f25-9dba-85c3-8d20-dd80fb6c2a24"
     - stage: horo
-      stageUuid: "a1b09298-1fcf-8763-8859-0efb4383902a"
+      stageUuid: "aab682e7-6b36-86ca-9052-436d7b593dea"
     - stage: seal
       stageUuid: "d083c9d0-6589-8209-a35e-4ff6bac39906"
     - stage: uuid
-      stageUuid: "a6937d96-5c2c-8918-ac8b-bca86c1bd04e"
+      stageUuid: "358ebc47-8815-8406-b3d3-5682dfbb2654"
 version: 2
 ---
 # note

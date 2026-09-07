@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shred",
-    "uuid": "4183e41e-9d1f-8e37-a2c7-6ca99eb56d39",
+    "uuid": "adad9048-fc3c-83af-89d8-3bbd74bd736f",
     "words": [
       "shred"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reconciling GDPR erasure with content-addressing — a content-uuid is f(content) and the chain needs the row, so you cannot delete. Crypto-shred = encrypt erasable fields per subject, and erasure = destroy the key (not the row). The row+uuid persist (chain/tamper-evidence intact), the plaintext is unrecoverable. Matter-twin shred/index.ts.",
-    "uuid": "3a28630b-e72a-8c9a-8e2f-ddb0205c5178",
+    "uuid": "7dd86db4-5722-81cc-8904-4c8f7ded9456",
     "words": [
       "use",
       "when",

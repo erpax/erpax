@@ -2,18 +2,18 @@
 name: campaign
 description: "Use when coordinating multi-channel marketing initiatives — campaign definition, channels, targeting, messaging, schedule, budget, ROI tracking."
 atomPath: "vocabulary/campaign"
-coordinate: "vocabulary/campaign · 1/base · 32758e36"
-contentUuid: "4d16bbb1-5c44-5193-bcdf-503f55853317"
-diamondUuid: "dd958d39-e773-81da-826f-558c150ea56c"
-uuid: "32758e36-4f44-838f-af2d-6955c37dbd49"
-horo: 1
+coordinate: "vocabulary/campaign · 4/weave · fb1a1bc8"
+contentUuid: "fc5d4fc2-e7fc-55d8-9a4f-bcf5a1791d92"
+diamondUuid: "f833d453-3b3c-80ce-8e55-0c24cc2de911"
+uuid: "fb1a1bc8-ea71-8714-aa1e-174ae9385ebc"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "63c08320-de90-8818-bf12-24691f51427c"
+  computationUuid: "7517617c-4c41-8d46-9bd5-bf17ef2de25e"
   stages:
     - stage: path
       stageUuid: "ceb2de2d-32ef-8ff5-a31a-2068745e8cde"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3baefb38-52fe-8026-93c5-864911e53d06"
     - stage: horo
-      stageUuid: "72dd1480-5414-86f8-a81d-d875d1d6d12c"
+      stageUuid: "0513ed65-fe1a-8da1-b5a5-9bda863e43d7"
     - stage: seal
       stageUuid: "d8d19b77-188f-886d-bd16-0a0a18e0a1a3"
     - stage: uuid
-      stageUuid: "4a926e4c-685e-80e4-ac33-be29b0fecef6"
+      stageUuid: "9e4cf106-deef-8a0b-a5b1-f3501e4e1cb4"
 version: 2
 ---
 # campaign

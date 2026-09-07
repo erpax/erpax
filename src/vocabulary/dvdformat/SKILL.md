@@ -2,11 +2,11 @@
 name: dvdformat
 description: "Use when reasoning about dvdformat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dvdformat"
-coordinate: "vocabulary/dvdformat · 7/descent · 34c367df"
-contentUuid: "b16c1472-dcda-5dae-989f-dfc8f93973d4"
-diamondUuid: "ccf4a340-7b51-8d4a-ade9-8007a848faa8"
-uuid: "34c367df-9773-8319-9a57-db81b9b07716"
-horo: 7
+coordinate: "vocabulary/dvdformat · 4/weave · 4781dccd"
+contentUuid: "64ab9528-5632-577b-ae04-58f54db1bd35"
+diamondUuid: "4e3023cc-ca64-8cf0-88a7-718d657714b8"
+uuid: "4781dccd-52b5-8b25-8aa3-9e3022204ddc"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b9e61728-365f-8cbc-a4e3-7c0f03ba01a9"
+  computationUuid: "b513d6c4-5e5a-8a68-a2da-49b3c3b62cb0"
   stages:
     - stage: path
       stageUuid: "d9e94444-4029-8bd2-9022-543872f7766d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dc8c7652-ab1f-85d3-afe2-d588e1a1f460"
     - stage: horo
-      stageUuid: "d3a834e7-4bc5-8a51-b72b-751aa430ca26"
+      stageUuid: "77433e2a-1f39-81d9-a8dd-ce35b7ca8b01"
     - stage: seal
       stageUuid: "4117e4f6-032e-8694-9969-eac06510adbb"
     - stage: uuid
-      stageUuid: "668d6eab-8b06-8fdc-bc3a-54471467514f"
+      stageUuid: "c4204336-c585-80fd-a2f4-3015315f2ebd"
 version: 2
 ---
 # dvdformat

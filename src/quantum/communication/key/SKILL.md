@@ -2,11 +2,11 @@
 name: key
 description: "Use when reasoning about quantum key distribution (BB84 / E91) on the matrix — two peers derive a shared secret from their symmetric entangled binding so both compute the same key order-independently, and eavesdropping is detectable because no-cloning makes an intercept-resend yield a different content-uuid."
 atomPath: "quantum/communication/key"
-coordinate: "quantum/communication/key · 1/base · 14ec8c78"
-contentUuid: "bb81b3a7-4a3d-5e45-8104-a8a44fa192d4"
-diamondUuid: "e24fef22-0d9c-8a96-b537-891c5f21e09c"
-uuid: "14ec8c78-53fc-8b55-b036-3be2b6304492"
-horo: 1
+coordinate: "quantum/communication/key · 8/crest · a0f67d7f"
+contentUuid: "df87778d-b727-57b0-9a27-30a2eeae5a57"
+diamondUuid: "4405f8a6-075b-89bf-ab62-faf8c594e00e"
+uuid: "a0f67d7f-1c34-8206-8956-7d17128447df"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "BB84 (Bennett–Brassard 1984) / E91 (Ekert 1991); no-cloning (Wootters–Zurek 1982)"
 bindings: []
 signatures:
-  computationUuid: "b87ac841-a858-8f26-8c8b-a6bd485f218f"
+  computationUuid: "5f48c3d2-cae0-8fc6-812a-b5a0f7391561"
   stages:
     - stage: path
       stageUuid: "37104ae8-5b2a-8798-951f-906ce4837c21"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1b5fe80f-75bd-8ba4-8dec-e211ea1b3ae6"
     - stage: horo
-      stageUuid: "9dc01ee6-1f7b-82f4-b7ee-7e154afa90a5"
+      stageUuid: "05598900-5b4f-8aeb-a7de-fcf5b1779499"
     - stage: seal
       stageUuid: "1b7dddee-b2f0-8ead-b2a0-f8f70d953b5d"
     - stage: uuid
-      stageUuid: "17b33ef8-13d5-8c02-952b-19d304e10722"
+      stageUuid: "449645ed-f115-86b3-8751-5646a813b868"
 quantum:
   superposition:
     - ch
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "b87ac841-a858-8f26-8c8b-a6bd485f218f"
-    contentUuid: "bb81b3a7-4a3d-5e45-8104-a8a44fa192d4"
+    computationUuid: "5f48c3d2-cae0-8fc6-812a-b5a0f7391561"
+    contentUuid: "df87778d-b727-57b0-9a27-30a2eeae5a57"
 version: 2
 ---
 # quantum/communication/key — the shared secret IS the symmetric entangled binding
@@ -66,4 +66,4 @@ Matter-twin: `src/quantum/communication/key/index.ts` (`sharedKey` · `eavesdrop
 
 @standard BB84 (Bennett–Brassard 1984) / E91 (Ekert 1991); no-cloning (Wootters–Zurek 1982)
 
-<sub>content-uuid `bb81b3a7-4a3d-5e45-8104-a8a44fa192d4` · account `quantum/communication/key` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `df87778d-b727-57b0-9a27-30a2eeae5a57` · account `quantum/communication/key` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

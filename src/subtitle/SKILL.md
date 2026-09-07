@@ -2,10 +2,10 @@
 name: subtitle
 description: "Use when reasoning about subtitle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: subtitle
-coordinate: "subtitle · 8/crest · ad675220"
-contentUuid: "cc6f9a6b-ac5b-51da-9b44-2bbe0f18ba48"
-diamondUuid: "14db36f5-abc5-85c8-b185-173109fac780"
-uuid: "ad675220-60e7-8057-b723-a928093d83cf"
+coordinate: "subtitle · 8/crest · fb1f0f18"
+contentUuid: "94edf32e-8db4-5668-8052-64ef7bf9b2d4"
+diamondUuid: "b085f061-cd48-882f-97b1-9e15bafa71b5"
+uuid: "fb1f0f18-ec45-8967-8296-c08c5ba164b7"
 horo: 8
 typography:
   partition: subtitle
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "55a858e8-b41d-88be-bc45-8e20abfb7d85"
+  computationUuid: "d86d66e7-ea98-8b9d-be10-0a3d896eb245"
   stages:
     - stage: path
       stageUuid: "2a37d150-8235-8214-8ad7-661c3c37d532"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "01f39b64-47c0-87f3-9ee4-90d689f333fb"
     - stage: horo
-      stageUuid: "27588ce3-fd8a-8d2a-8ec4-89038adad87e"
+      stageUuid: "284ec652-d650-85a6-bfec-ce238f1ea2ed"
     - stage: seal
       stageUuid: "93b6cb56-2343-8f94-a4ba-7415ff2cb89e"
     - stage: uuid
-      stageUuid: "62e0a1a5-c76a-8b59-abf4-02ff215967a8"
+      stageUuid: "5d570a0d-fed8-8a21-83b9-0f5df3b5e3a7"
 version: 2
 ---
 # subtitle

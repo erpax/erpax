@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ui",
-    "uuid": "8865113f-f6ca-8fc2-9fbc-5eb422dff23d",
+    "uuid": "585519d0-a1bf-8ff8-94a2-ab068bf4d41f",
     "words": [
       "ui"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ui — The barrel re-exports what the panel needs: and for how a collection presents itself, the corpus-rollup readers that compute the dashboard's entropy figures, and the cells…",
-    "uuid": "ae1dd498-76e2-8597-9325-8f9a07f356f2",
+    "uuid": "db9af5ca-546d-89cf-b155-fb283c7b7ac1",
     "words": [
       "use",
       "when",

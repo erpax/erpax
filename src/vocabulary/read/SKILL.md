@@ -2,11 +2,11 @@
 name: read
 description: Use when reasoning about read — A person who reads (performs) the audiobook.
 atomPath: "vocabulary/read"
-coordinate: "vocabulary/read · 5/round · 52fc28ce"
-contentUuid: "0c0e4b6d-0661-571c-9a4f-50cbd09baf67"
-diamondUuid: "29e8753e-4837-8ea8-a431-db389406edb2"
-uuid: "52fc28ce-6456-8282-9fef-bee9741ef77b"
-horo: 5
+coordinate: "vocabulary/read · 1/base · 99f77dab"
+contentUuid: "458b5bdc-006a-5236-a5bd-4a072df5bb0b"
+diamondUuid: "7446d19c-25c9-82f0-9874-e7ce84d93392"
+uuid: "99f77dab-b79c-8831-ae23-96a0cb887048"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1fd5124b-9f54-876e-bd9b-f13d11f26529"
+  computationUuid: "0cde7e51-35a1-8e88-a618-25b71b706f5b"
   stages:
     - stage: path
       stageUuid: "8101055c-30c7-8b98-998f-3148d111f809"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5664d7d2-efc3-8be1-b065-978b0e6b8635"
     - stage: horo
-      stageUuid: "333cedb7-bde3-8473-a8b4-ca191e74af1b"
+      stageUuid: "b9437d81-122a-8905-b961-1caabec83939"
     - stage: seal
       stageUuid: "9b988a1a-db6e-81b7-9614-567ab09bb32a"
     - stage: uuid
-      stageUuid: "c8fd2d67-8ecd-8868-af88-0cdd7d266063"
+      stageUuid: "054360dd-c261-8452-bab4-de71f7779ee6"
 version: 2
 ---
 # read

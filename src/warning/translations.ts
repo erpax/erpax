@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "warning",
-    "uuid": "b0c30c25-c2ac-8aab-89a1-6e78a9da529d",
+    "uuid": "6b5037b5-c127-8448-a3d2-5b4149cf1ba3",
     "words": [
       "warning"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about warning — Any FDA or other warnings about the drug (text or URL).",
-    "uuid": "9d159c22-75e0-8a01-a1aa-6581414e11c0",
+    "uuid": "e28863d8-863c-8b3d-9f98-d4b4271ba383",
     "words": [
       "use",
       "when",

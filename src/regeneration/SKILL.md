@@ -2,11 +2,11 @@
 name: regeneration
 description: "Use when reasoning about erpax as a living, self-repairing system — the computed proof that it regrows from seed and heals its own wounds. The content-uuid is the genome: every observable (uuid, aura, coordinate, the README proof) is derived from content and never stored, so any derived artefact regenerates byte-identically from the surviving seed. A gap (dead link, untested atom) is a wound; the gate is the immune system; healing is monotone, so the loop converges to gap 0 — wholeness, zero entropy, max tamper-cost."
 atomPath: regeneration
-coordinate: "regeneration · 5/round · 59429a9e"
-contentUuid: "fe77679a-cf92-51c8-888e-5dc3bba15504"
-diamondUuid: "1b02502a-79d4-861f-ad48-7e3300c6f23a"
-uuid: "59429a9e-1f08-8367-8295-06cfc5fc025c"
-horo: 5
+coordinate: "regeneration · 1/base · edc87ccd"
+contentUuid: "86358442-c37f-5e55-8d12-d45f8e361c5d"
+diamondUuid: "b5d52e2d-40a5-8e25-9508-9209f42c1e67"
+uuid: "edc87ccd-6c6e-8ca0-9fe2-ab2312857517"
+horo: 1
 typography:
   partition: regeneration
   bondDegree: 49
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "57b1a1e9-a887-83d1-b422-d1b7944d50e4"
+  computationUuid: "81590e6f-fee9-8eaa-b48c-c08298dff30c"
   stages:
     - stage: path
       stageUuid: "9663116d-30b9-855f-9152-e9e7a1576c7d"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "6e3ba53a-837c-81b6-952e-47c5fae10438"
     - stage: horo
-      stageUuid: "b18ab365-6e08-862f-936a-f03f5666937c"
+      stageUuid: "60e64624-58bc-8f95-acb3-b77b6787dc1f"
     - stage: seal
       stageUuid: "d02d9452-f116-8f2f-9333-5f8977fb0156"
     - stage: uuid
-      stageUuid: "af8bc2d9-73a7-80b8-ba50-16ad4d681035"
+      stageUuid: "f9d5872f-e477-8baa-a377-d8b7eb3bc437"
 version: 2
 ---
 # regeneration — erpax regrows from seed and heals its own wounds

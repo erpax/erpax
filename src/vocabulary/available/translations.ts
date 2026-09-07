@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "available",
-    "uuid": "3d765f4d-5662-8cba-904d-9586aa27ade4",
+    "uuid": "4b5f4a9e-0e26-8ec0-9391-a19047d222f4",
     "words": [
       "available"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about available — The place(s) from which the offer can be obtained (e.g. store locations).",
-    "uuid": "fd9014e2-233c-8a01-a334-e7eb0d230f73",
+    "uuid": "f0ae9379-b6cb-8a64-9155-a0758fc4f288",
     "words": [
       "use",
       "when",

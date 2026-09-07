@@ -2,11 +2,11 @@
 name: communication
 description: "Use when reasoning about communication on the quantum level — a message is a content-uuid (no-cloning, so a forged message has a different uuid), the channel is entanglement, and a received message is intact iff its uuid matches the original."
 atomPath: "quantum/communication"
-coordinate: "quantum/communication · 5/round · 5230cff3"
-contentUuid: "ca36ee25-f6d7-594e-9284-9a165955bfb0"
-diamondUuid: "b69dc46e-df21-86b8-b42d-24434053f77f"
-uuid: "5230cff3-949b-8d5b-aaad-17afa660f9d0"
-horo: 5
+coordinate: "quantum/communication · 2/share · 4033d721"
+contentUuid: "9797ad09-97d7-5b9f-926c-b55683507b2b"
+diamondUuid: "1dd8343d-bcb5-8047-80dc-77185a189164"
+uuid: "4033d721-5139-86fc-801e-b5cfea72a9c7"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 58
@@ -14,7 +14,7 @@ standards:
   - "no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "38467804-1e58-8ea2-a813-112dcc5e8ac1"
+  computationUuid: "72b43e9d-f824-8c44-b2bb-f0a87fa3bcba"
   stages:
     - stage: path
       stageUuid: "4fbb8785-7def-8c9c-8c5c-a1673ef47f67"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bf34309c-824c-855c-a14a-145614754384"
     - stage: horo
-      stageUuid: "480a3b8f-54ab-80fd-a15e-906359b5aaf0"
+      stageUuid: "49c724dc-8295-849f-bdd4-575a9e8edce5"
     - stage: seal
       stageUuid: "eefb7b25-f62d-802a-99c5-e6a60a7722ed"
     - stage: uuid
-      stageUuid: "f770f2b7-77cf-8927-baea-216d634ed041"
+      stageUuid: "d751339e-f74e-8f09-8d5d-1cb053b756b0"
 quantum:
   superposition:
     - channel
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "38467804-1e58-8ea2-a813-112dcc5e8ac1"
-    contentUuid: "ca36ee25-f6d7-594e-9284-9a165955bfb0"
+    computationUuid: "72b43e9d-f824-8c44-b2bb-f0a87fa3bcba"
+    contentUuid: "9797ad09-97d7-5b9f-926c-b55683507b2b"
 version: 2
 ---
 # quantum/communication — no-cloning + tamper-evidence
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/communication/index.ts` (`intact` · `noCloningHolds`)
 
 @standard no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `ca36ee25-f6d7-594e-9284-9a165955bfb0` · account `quantum/communication` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `9797ad09-97d7-5b9f-926c-b55683507b2b` · account `quantum/communication` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

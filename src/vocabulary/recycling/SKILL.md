@@ -2,11 +2,11 @@
 name: recycling
 description: "Use when reasoning about recycling — A schema.org component word, collided out of schema.org compounds — fused from RecyclingCenter (sti · collapse · merge)."
 atomPath: "vocabulary/recycling"
-coordinate: "vocabulary/recycling · 1/base · e93bb26e"
-contentUuid: "f1c28979-23eb-59ba-a577-2dc391435702"
-diamondUuid: "084ae6a2-5e30-8ba8-bfe0-43bf20d54fb6"
-uuid: "e93bb26e-1ee1-85a4-ab35-bf81c25e9aa8"
-horo: 1
+coordinate: "vocabulary/recycling · 4/weave · dbe1c432"
+contentUuid: "33db7c35-4333-5de4-8486-110bfaad23c9"
+diamondUuid: "b0acfdc1-b97c-8969-8050-0d8f34b98f29"
+uuid: "dbe1c432-3e6a-87eb-984a-0294b0804ece"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d64c7706-1507-8e4d-83b1-5d1c0589942b"
+  computationUuid: "684197b9-003e-8856-a6a6-a7f87be4ff1a"
   stages:
     - stage: path
       stageUuid: "cb07beaf-633a-8c3f-9f32-b8ee89ed4cd4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7e750a52-e145-88fe-a929-b9bcd7befe34"
     - stage: horo
-      stageUuid: "405ee99c-3c7b-89ca-b93e-3a601a2f35ae"
+      stageUuid: "7c1f2fb3-f15b-8220-ba28-d85b13cc0fbd"
     - stage: seal
       stageUuid: "fd8e0973-8acf-8105-a498-246062818628"
     - stage: uuid
-      stageUuid: "6f4caa4f-49da-8aaa-a978-5c7708a44af2"
+      stageUuid: "093bbbb6-4153-8417-9e49-eaa5627a2739"
 version: 2
 ---
 # recycling

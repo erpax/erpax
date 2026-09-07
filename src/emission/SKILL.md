@@ -2,11 +2,11 @@
 name: emission
 description: "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of sustainability."
 atomPath: emission
-coordinate: "emission · 8/crest · f4e13f7f"
-contentUuid: "3bb41cfa-b5ec-5d48-911b-5801e74465c4"
-diamondUuid: "03e1ef90-65e2-8669-a01d-a71d0b671b86"
-uuid: "f4e13f7f-10ff-8878-837f-f196e6f50483"
-horo: 8
+coordinate: "emission · 5/round · cf10a6ca"
+contentUuid: "a0e48ec3-39dd-537f-901a-0c992a248126"
+diamondUuid: "64f4ad0b-55d3-8c46-82a4-6b49184bdf9e"
+uuid: "cf10a6ca-e723-8514-8a5c-f7e322a91a72"
+horo: 5
 typography:
   partition: emission
   bondDegree: 28
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e88f914a-c2f0-8d33-a72b-abe29a83142d"
+  computationUuid: "28549022-d99c-85d9-8122-a23a11652242"
   stages:
     - stage: path
       stageUuid: "6b83bd2a-a9d8-8e5b-bc63-da90403e5090"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "684be210-db2c-8083-bc80-e10aebd8b59e"
     - stage: horo
-      stageUuid: "36aac707-78a5-82d9-b881-ae42b62f5b36"
+      stageUuid: "2b5d2e39-97ba-8fb0-9522-003ec3294381"
     - stage: seal
       stageUuid: "d564da16-4ca8-8846-8076-c7070c3271a0"
     - stage: uuid
-      stageUuid: "c2ee554b-4174-8e82-b944-3e840b6f6175"
+      stageUuid: "70fc59df-8f3a-808e-a524-f4960f758dd3"
 version: 2
 ---
 # emission — the greenhouse-gas DEBIT a cycle releases (CO₂-equivalent)

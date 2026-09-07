@@ -2,18 +2,18 @@
 name: collection
 description: "Use when a collection is built, its events derived, its fields generated or its shape judged — the factory as a barrel over base, lifecycle, field and shape."
 atomPath: "factory/collection"
-coordinate: "factory/collection · 4/weave · b498fff2"
-contentUuid: "914067b9-4c54-5f04-9226-ec3ea5b02c9e"
-diamondUuid: "f9aa4f40-7a1a-886a-995b-b6ad98ab513e"
-uuid: "b498fff2-630b-8109-b15d-9d4713778b40"
-horo: 4
+coordinate: "factory/collection · 2/share · 579d9199"
+contentUuid: "e5316852-0a48-5ed5-a918-df60e2c64389"
+diamondUuid: "8c0007a7-4772-82a8-a9a0-25fc87175d0f"
+uuid: "579d9199-4814-88e8-a3f6-67fe9c05d48c"
+horo: 2
 typography:
   partition: factory
   bondDegree: 43
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4163f288-7e92-8faf-abdc-3aa7e441a4d3"
+  computationUuid: "2fb18977-a3eb-8088-9f03-3c98d9f109f5"
   stages:
     - stage: path
       stageUuid: "c44a1277-f9bf-86f6-8540-03203842937a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d26142e9-0bdb-8149-a274-ecc83f9667e2"
     - stage: horo
-      stageUuid: "7d01ac31-6ca7-8740-8870-bc45cfe1eff7"
+      stageUuid: "34354ca5-0155-8220-8753-e3c8bc06b980"
     - stage: seal
       stageUuid: "5f9212f5-7811-83dc-a303-5e2b6618fb3d"
     - stage: uuid
-      stageUuid: "cac1e418-9c85-84fb-854e-57ade6151782"
+      stageUuid: "9df65275-8907-84a2-8de2-37d624e6ac17"
 version: 2
 ---
 # factory/collection — one factory, four concerns, no hub matter

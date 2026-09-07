@@ -2,11 +2,11 @@
 name: pattern
 description: "Use when reasoning about pattern — A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also suppo"
 atomPath: "vocabulary/pattern"
-coordinate: "vocabulary/pattern · 2/share · a57d8220"
-contentUuid: "a43decb3-8873-50bd-bd6c-cf8b6226c143"
-diamondUuid: "60e3d148-a0ed-8793-8311-54f84a091030"
-uuid: "a57d8220-b242-81b2-ba71-6303dba58e69"
-horo: 2
+coordinate: "vocabulary/pattern · 5/round · 0cfefa36"
+contentUuid: "3d19b781-a800-5e5c-b9ab-13e8b5f08a3c"
+diamondUuid: "78a3a1a5-983b-882a-9844-30d12c20b835"
+uuid: "0cfefa36-dab3-88e0-998b-e13d5f650571"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6b95328a-4e6a-89c3-afb3-9e22061c36e8"
+  computationUuid: "570189d1-b813-8969-832e-0ad4003f77d8"
   stages:
     - stage: path
       stageUuid: "9cf6c51d-3be1-8a2f-a66f-dbbddfc8bc83"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "caf2816a-c013-837d-a888-bec9871d4902"
     - stage: horo
-      stageUuid: "c3edcf05-1f8d-84c1-bef7-54ec3e3caa9e"
+      stageUuid: "2493d8a4-11fd-8671-a690-c86ba06d400b"
     - stage: seal
       stageUuid: "71773124-549c-8426-8fdc-6e0dfcd8e8b0"
     - stage: uuid
-      stageUuid: "a710eef0-fd44-811f-a96b-9dde617a4dec"
+      stageUuid: "2fbde79c-8fa8-877f-888b-75f57b9c2deb"
 version: 2
 ---
 # pattern

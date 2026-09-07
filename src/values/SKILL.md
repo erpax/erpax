@@ -2,10 +2,10 @@
 name: values
 description: "Use when reasoning about values as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: values
-coordinate: "values · 7/descent · 32079bc9"
-contentUuid: "cca69c33-79bc-5cfa-b0b5-ab24f16e658e"
-diamondUuid: "3886e96f-ca64-8774-8386-300a00c72e13"
-uuid: "32079bc9-4a53-88f1-9fde-3e34860a8375"
+coordinate: "values · 7/descent · 0ddd5cc2"
+contentUuid: "7081884f-e035-5a83-9fd0-9d139616d477"
+diamondUuid: "bdaec4d8-2a5d-8a61-abc1-b24b9a132962"
+uuid: "0ddd5cc2-1468-8114-ba81-b1e1d38e7fba"
 horo: 7
 typography:
   partition: values
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "838e8357-b0f4-8022-99e1-b4e791566583"
+  computationUuid: "0db59296-14f6-8516-b0c6-2c28e899fd39"
   stages:
     - stage: path
       stageUuid: "e06d8d12-9abd-8c8c-b201-60c683175e6e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "00074a0a-2a59-89c8-892c-6a3314a969e9"
     - stage: horo
-      stageUuid: "3c5ebc47-d78c-814a-84bd-4e920776d57b"
+      stageUuid: "97612618-9229-8f4c-aff8-e571bed70a5d"
     - stage: seal
       stageUuid: "c02a08d5-1c4b-8d93-8a8e-836b6e7e51f3"
     - stage: uuid
-      stageUuid: "3a381b63-edca-8627-9810-6cb66265bd05"
+      stageUuid: "91169724-4666-81d2-99fe-fef69847ee6f"
 version: 2
 ---
 # values

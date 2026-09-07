@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hs",
-    "uuid": "f2679a12-e50e-86cc-9844-41fee327b781",
+    "uuid": "476f7c85-68a9-8505-81b8-a8708b0e69b2",
     "words": [
       "hs"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing WCO Harmonised System.",
-    "uuid": "50cb7375-3681-8e9f-8803-312b160dbfb4",
+    "uuid": "307d10a8-fe6a-89a3-8fe7-d9f2faa0bbe3",
     "words": [
       "use",
       "when",

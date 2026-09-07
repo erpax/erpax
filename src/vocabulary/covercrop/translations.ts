@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "covercrop",
-    "uuid": "02626ed4-ab31-8783-971f-112c038c67ab",
+    "uuid": "d24ff1c8-e513-8fdc-b2e3-21498425a83c",
     "words": [
       "covercrop"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a crop is grown to protect and build the soil rather than to harvest — cover crops / green manures: catch crops scavenging residual N, nurse crops sheltering a main crop, legumes fixing nitrogen vs grasses building biomass, then termination (mow/crimp/winterkill/incorporate) before the cash crop. The off-season twin of crop; soil capital, not sales.",
-    "uuid": "c786e263-0d5e-8ccf-9385-5342bfba0e53",
+    "uuid": "dee94724-18c5-8be0-a9db-74eeaacde860",
     "words": [
       "use",
       "when",

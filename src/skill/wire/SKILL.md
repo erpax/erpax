@@ -2,18 +2,18 @@
 name: wire
 description: "Use when a reader receives the erpax GitHub URL — wireFromRepoUrl validates github.com/erpax/erpax and returns the canonical skill entry paths (content-uuid sealed). All orientation surfaces point to .claude/skills/SKILL.md; paste or clone."
 atomPath: "skill/wire"
-coordinate: "skill/wire · 1/base · cfdeff5a"
-contentUuid: "834f3079-2c89-5c71-9a80-a6459178e2ad"
-diamondUuid: "f5628f6b-3d61-8a37-8f03-1cd80a54007d"
-uuid: "cfdeff5a-6dd1-8745-bfb1-5ba17286919d"
-horo: 1
+coordinate: "skill/wire · 5/round · 6149358b"
+contentUuid: "f98baf71-7ecd-5845-879f-a30745155462"
+diamondUuid: "5b803158-21d0-8bfc-8135-6d1dad02cf8a"
+uuid: "6149358b-fc38-8238-815e-0d41bc3f09fa"
+horo: 5
 typography:
   partition: skill
   bondDegree: 14
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4973dcf2-9532-8d0a-86e4-b6f353d830c6"
+  computationUuid: "5fd785fa-b2f5-83b7-a1f8-55f429948f42"
   stages:
     - stage: path
       stageUuid: "f95086c5-f893-8da9-b17f-f757188fae02"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0272bd8e-6c2e-8e17-9a4f-dfbe890b5355"
     - stage: horo
-      stageUuid: "144e611b-49bf-8cdc-a58d-971d867270b9"
+      stageUuid: "c95ebd7b-7a4c-8f7a-90f3-8fcbc8dd6ff4"
     - stage: seal
       stageUuid: "eed5c946-7678-8720-a57f-f5cd00c6e351"
     - stage: uuid
-      stageUuid: "f99c61da-6101-8dd0-9d93-e9a5fa667cf7"
+      stageUuid: "e242b10a-9c56-845b-8397-4415d6a975c6"
 version: 2
 ---
 # wire — repo URL → skill entry

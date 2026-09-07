@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "museum",
-    "uuid": "3cc5a0f2-f7c3-83e9-8bbc-331fe0ec8839",
+    "uuid": "b87788d0-441d-897e-ba39-9f03c419c0b3",
     "words": [
       "museum"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about museum — A museum.",
-    "uuid": "81ecae62-51d1-8f08-807f-1c08e8d7693f",
+    "uuid": "28dfae9e-93a4-8be3-a966-2f9a874968e9",
     "words": [
       "use",
       "when",

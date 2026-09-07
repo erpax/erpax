@@ -2,10 +2,10 @@
 name: reset
 description: "Use when reasoning about reset as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: reset
-coordinate: "reset · 2/share · b3caaf80"
-contentUuid: "4b39647f-041d-5157-9b88-f64c96dd58d8"
-diamondUuid: "cfb0b653-c362-8823-8b50-ee266a2815f3"
-uuid: "b3caaf80-e5b1-85e5-a564-12e737b67224"
+coordinate: "reset · 2/share · 8aacf0b9"
+contentUuid: "81cb9789-4285-5403-875e-fa9ae13c66b0"
+diamondUuid: "fcc7988b-be13-83ea-af7d-b259d8cb56be"
+uuid: "8aacf0b9-2a72-8de4-81b9-f54974ae88ad"
 horo: 2
 typography:
   partition: reset
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4c8a83c2-9bad-8f0b-9d03-402a197607c6"
+  computationUuid: "137471d7-7f03-869e-9105-0d0f3505db4e"
   stages:
     - stage: path
       stageUuid: "15bd348c-6fc9-8a91-a991-458266a84747"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5bdfc19e-ce8d-8e9d-9882-cd2c9c3e805a"
     - stage: horo
-      stageUuid: "857a5c9f-9a9c-8dcb-8cee-780a54f7fdfb"
+      stageUuid: "33f38175-1fe9-8c3f-b75c-240a582b38b5"
     - stage: seal
       stageUuid: "21330a0e-c8c3-8b5b-81fa-b4caf0959515"
     - stage: uuid
-      stageUuid: "a1b98dbe-cd12-8fb2-a0d9-0fd73348e1e8"
+      stageUuid: "c0750bc1-9a93-8a29-a22f-61261a069740"
 version: 2
 ---
 # reset

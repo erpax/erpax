@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "range",
-    "uuid": "002a5daf-d316-847c-9df0-fc03dc366a55",
+    "uuid": "04539613-0885-8262-92f2-e6e05e7a12fa",
     "words": [
       "range"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about range — renders which slice of a result set is being shown. The component is because it is JSX; this barrel re-exports it so importers name the atom rather than the spelling of its file.",
-    "uuid": "b17e0bc9-1fac-8cac-bf38-d55f08c60d43",
+    "uuid": "e7e6ba9f-41ba-85a8-ac89-3e43b19a3119",
     "words": [
       "use",
       "when",

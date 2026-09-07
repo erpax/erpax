@@ -2,10 +2,10 @@
 name: bust
 description: "Use when reasoning about bust as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bust"
-coordinate: "vocabulary/bust · 8/crest · 6790b96d"
-contentUuid: "2136528d-7af7-53c9-a7f3-65316495907f"
-diamondUuid: "2ce76ee0-c211-8830-a31c-c8ce04fa7dee"
-uuid: "6790b96d-9caf-80e0-ad70-c9be8ea976d4"
+coordinate: "vocabulary/bust · 8/crest · e36ccf4b"
+contentUuid: "b5a8a6cb-44c9-523c-872e-9e718603444c"
+diamondUuid: "364deadf-e833-8f2b-b36d-dffd8800886a"
+uuid: "e36ccf4b-16b1-8a1b-9b63-00dff871161c"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "442439a8-ae6a-801d-9568-f0a6d73feeb5"
+  computationUuid: "9df6d377-2771-8c32-a6e4-cdc4465c978d"
   stages:
     - stage: path
       stageUuid: "3b7836eb-ef69-8086-b1c7-6b375527b98c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9794fb3b-4115-8523-81a5-43599260050c"
     - stage: horo
-      stageUuid: "0c4854fe-5e7b-8c57-9762-6d5174c8cf57"
+      stageUuid: "a7eb9a50-7620-8fc1-aa73-cefa50ae28d5"
     - stage: seal
       stageUuid: "bc55a8a2-6e5d-8acc-986d-770f53d28fa0"
     - stage: uuid
-      stageUuid: "a4d35020-58f4-876f-bae5-ed06547ff1c5"
+      stageUuid: "7216c3bc-ec09-806a-a874-72306164a7c3"
 version: 2
 ---
 # bust

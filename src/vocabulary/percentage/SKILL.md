@@ -2,11 +2,11 @@
 name: percentage
 description: "Use when reasoning about percentage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/percentage"
-coordinate: "vocabulary/percentage · 7/descent · cd9d6c1e"
-contentUuid: "f33d5bcd-9499-573b-bc39-c6b87e7e6cdc"
-diamondUuid: "958840a6-930a-833e-b718-2dfa01c2799e"
-uuid: "cd9d6c1e-8208-8b83-8af6-af5c06c05831"
-horo: 7
+coordinate: "vocabulary/percentage · 1/base · 19d28386"
+contentUuid: "d4b4df3b-ab0b-5fe3-9bd1-5e140db41b50"
+diamondUuid: "6fb862aa-86f4-85da-9769-b8459a285586"
+uuid: "19d28386-6ffa-8d93-9256-b4a728bf89ac"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aa00c133-bdce-815b-b10a-a8efb4354901"
+  computationUuid: "d314c5be-6f9b-8dfb-bd7f-882b0514a3ae"
   stages:
     - stage: path
       stageUuid: "fa6d0147-c8cc-8a6f-a5f7-89434fabca29"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b8dfc05-43cb-8107-b086-815ade34f804"
     - stage: horo
-      stageUuid: "8cb79649-9fc4-8dee-ab9a-c11d50ab0112"
+      stageUuid: "2ceae985-b144-8278-b743-514d99b1a1e0"
     - stage: seal
       stageUuid: "6fd51a97-2579-8752-b6aa-061e2db1a4f3"
     - stage: uuid
-      stageUuid: "8c7b55fb-c837-8db6-bf40-ab88c0f38b4e"
+      stageUuid: "4fdb8ae5-cde6-85e6-818b-1755cf14956c"
 version: 2
 ---
 # percentage

@@ -2,11 +2,11 @@
 name: longitude
 description: Use when reasoning about longitude — The longitude of a location. For example (WGS 84).
 atomPath: "vocabulary/longitude"
-coordinate: "vocabulary/longitude · 7/descent · bde1c8cf"
-contentUuid: "ddee2369-52ab-503f-a05c-5cd2d716da79"
-diamondUuid: "deedcc32-3664-8543-a4c1-1aa00c777389"
-uuid: "bde1c8cf-59a6-8a70-a25c-a9cb201eb6be"
-horo: 7
+coordinate: "vocabulary/longitude · 4/weave · d2d765db"
+contentUuid: "0324a88f-a9e1-5123-9251-2b59b8387e90"
+diamondUuid: "21e108e9-17f7-8b6b-9f6a-bb897bee8307"
+uuid: "d2d765db-eac9-82db-a037-dd6b02d6a068"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bce847f2-da34-8598-9e95-9ac5c9dbd5ac"
+  computationUuid: "a6fa8f22-0de6-8c25-97ca-fe4bd923f258"
   stages:
     - stage: path
       stageUuid: "260740e6-9877-82d3-8a23-e927c13f775b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8da077e0-597e-8fbd-8690-03c1256013ed"
     - stage: horo
-      stageUuid: "721b7d85-2e73-8d65-8a45-9b311512e156"
+      stageUuid: "334542a7-7b86-821e-a2f3-319260ba5309"
     - stage: seal
       stageUuid: "530ff1f1-24b3-8094-856c-0034fbd6c4ad"
     - stage: uuid
-      stageUuid: "b012912c-db6a-8ef5-90c5-cf98b0513c67"
+      stageUuid: "c2aa0c18-2df1-83d8-b72c-76e6b03771d6"
 version: 2
 ---
 # longitude

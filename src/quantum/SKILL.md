@@ -2,10 +2,10 @@
 name: quantum
 description: "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
 atomPath: quantum
-coordinate: "quantum · 7/descent · 0f262ece"
-contentUuid: "e10901c9-4f3a-5d3c-b4cc-737e6f030034"
-diamondUuid: "b5732c14-c51a-8c0b-bdfa-0207aa5cbb85"
-uuid: "0f262ece-ec5f-8085-855a-4c9cdede8e28"
+coordinate: "quantum · 7/descent · 58eb0f40"
+contentUuid: "d6d95092-789e-5242-94d5-f4e22a8978d4"
+diamondUuid: "a295c57b-efe0-8ad9-aaba-fb8d313636fa"
+uuid: "58eb0f40-9517-8e12-8817-994ee3afecf6"
 horo: 7
 typography:
   partition: quantum
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "6a6b673e-ca4c-8a96-9626-4a9ad13cba9e"
+  computationUuid: "487f70f5-ebb6-8af6-bb61-abc2c623043a"
   stages:
     - stage: path
       stageUuid: "15c162b9-f68a-81b5-be34-6a93fda387d5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fba31f88-0da7-88b3-8266-0624e8b34118"
     - stage: horo
-      stageUuid: "58d8db3f-47a0-8d34-80c3-7235900ff606"
+      stageUuid: "5f3dd803-0f58-87b9-ac69-7896a5797ebc"
     - stage: seal
       stageUuid: "c80781cf-f5a6-814a-a2d6-0b57d9d1e77e"
     - stage: uuid
-      stageUuid: "58b28175-b725-861d-a14d-b22d4193d328"
+      stageUuid: "457af99e-706e-8d83-9c2a-3c851625cc6a"
 quantum:
   superposition:
     - accounting
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "6a6b673e-ca4c-8a96-9626-4a9ad13cba9e"
-    contentUuid: "e10901c9-4f3a-5d3c-b4cc-737e6f030034"
+    computationUuid: "487f70f5-ebb6-8af6-bb61-abc2c623043a"
+    contentUuid: "d6d95092-789e-5242-94d5-f4e22a8978d4"
 version: 2
 ---
 # quantum
@@ -134,4 +134,4 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 
-<sub>content-uuid `e10901c9-4f3a-5d3c-b4cc-737e6f030034` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6d95092-789e-5242-94d5-f4e22a8978d4` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

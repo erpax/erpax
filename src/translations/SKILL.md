@@ -2,11 +2,11 @@
 name: translations
 description: "Use when overriding platform localizations per tenant — MCP tool descriptions, UI labels, event labels, notification templates, standard citations, chain-step names — with per-locale values (BCP-47), activation windows, and provenance back to the overridden row. The tenant translation override layer above the platform default."
 atomPath: translations
-coordinate: "translations · 4/weave · 35f553c2"
-contentUuid: "ef9feaf1-2732-58a4-b537-1ded85ab9185"
-diamondUuid: "e16eabf2-0947-8ee0-a839-e3076cb54340"
-uuid: "35f553c2-f4e3-857c-ae5f-d64d9166c133"
-horo: 4
+coordinate: "translations · 8/crest · 2e0a7278"
+contentUuid: "132185e4-e366-55c9-8c4d-97d3a2063402"
+diamondUuid: "6ed9872f-a346-8cbc-bb66-892d51b736e4"
+uuid: "2e0a7278-fe2a-8cd3-a124-005913f8dd26"
+horo: 8
 typography:
   partition: translations
   bondDegree: 42
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ccc2e0bc-72ba-8fb5-a9d6-0cf6894faaac"
+  computationUuid: "d32d43fa-16ba-8c43-9474-b6b4a8cdc9b3"
   stages:
     - stage: path
       stageUuid: "e98325fe-356f-858b-b9df-92b1b1e40133"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "fc6f0b5e-daaa-87b9-bdf4-f63e0692529e"
     - stage: horo
-      stageUuid: "1e46c853-452e-8908-85f5-16f9749c1506"
+      stageUuid: "ba89e0b9-de82-8758-bc04-bd6207dd0d7b"
     - stage: seal
       stageUuid: "8539dd42-fd82-89fa-b764-bbad5df75508"
     - stage: uuid
-      stageUuid: "4fd9da8c-954d-8116-9422-b604b62bdd2b"
+      stageUuid: "907bf21d-143d-830e-adf7-36706c85a346"
 version: 2
 ---
 # translations

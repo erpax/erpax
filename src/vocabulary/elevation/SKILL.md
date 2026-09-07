@@ -2,11 +2,11 @@
 name: elevation
 description: "Use when reasoning about elevation — The elevation of a location (WGS 84). Values may be of the form 'NUMBER UNIT\\\\\\\\_OF\\\\\\\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in"
 atomPath: "vocabulary/elevation"
-coordinate: "vocabulary/elevation · 7/descent · 72a05ba5"
-contentUuid: "8e75c2ea-3ab3-51ac-93ae-572e8467373c"
-diamondUuid: "6badbc93-5849-833f-a30c-f63b3adaf35b"
-uuid: "72a05ba5-123d-8d86-b470-c8a919d23ccc"
-horo: 7
+coordinate: "vocabulary/elevation · 8/crest · e904c81e"
+contentUuid: "02ba3054-573f-58d4-9c80-3bb53a75aaca"
+diamondUuid: "e10be2cb-589f-822d-8f06-27db3a3ac041"
+uuid: "e904c81e-945e-8f00-9b64-e49740313a14"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "62f5138e-6ee1-82fc-8b2e-9a367584b702"
+  computationUuid: "a6326ed9-e017-8245-ab22-6a4488e5f2b2"
   stages:
     - stage: path
       stageUuid: "8f126322-3e59-8d12-90c8-a0a0fb3b2c70"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c3cabaf3-4eca-8453-b6cd-9108a2d0eb0e"
     - stage: horo
-      stageUuid: "8a170166-2153-86d8-b086-aabbe5056a10"
+      stageUuid: "a14ee453-77ea-8919-b12e-d413f6390951"
     - stage: seal
       stageUuid: "5922e610-4859-866d-a295-ab37eab1d3f5"
     - stage: uuid
-      stageUuid: "4d0435b5-42fe-83f9-9e5d-8da37ac90a77"
+      stageUuid: "5f216ccf-e2f3-8051-9410-124c289c2d9f"
 version: 2
 ---
 # elevation

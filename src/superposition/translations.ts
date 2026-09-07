@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "superposition",
-    "uuid": "c644b34e-d93c-80cf-8703-5f17218c6fe2",
+    "uuid": "0e740e99-23bc-85ac-aa50-a19577bc91b7",
     "words": [
       "superposition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about superposition — the state before measurement is a weighted combination of all seven horo eigenstates at once (|ψ⟩ = Σ cₙ|n⟩), with Σ|cₙ|² = 1 (the Born rule), which is double-entry balance closing at unity. It is accept-always then normalise-into-harmony; measurement is the collapse that picks one eigenstate with probability |cₙ|² — the leap to a definite level. A basis state collapses to itself.",
-    "uuid": "e7237824-a733-80b7-b3df-c9f538d35a39",
+    "uuid": "f92858df-dbf8-86d7-b276-55bb3fe0bbf5",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "note",
-    "uuid": "ec4b1f48-96b4-8ba3-b97c-5c2f2707603b",
+    "uuid": "6a6037eb-6154-8a4a-9358-d35023d8ba8c",
     "words": [
       "note"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about note — A schema.org component word, collided out of schema.org compounds — fused from NoteDigitalDocument (sti · collapse · merge).",
-    "uuid": "edf42ba2-4e9e-83aa-bd83-da252e187070",
+    "uuid": "15c8d44b-a61c-8681-ac2c-dca05755d504",
     "words": [
       "use",
       "when",

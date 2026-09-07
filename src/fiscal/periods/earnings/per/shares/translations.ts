@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shares",
-    "uuid": "5c1dc9ac-c4cd-81f9-85e3-d78a144e3e83",
+    "uuid": "ae6d29be-0bc2-88cf-8cd2-80f1cee38a54",
     "words": [
       "shares"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing or disclosing IAS 33 basic and diluted EPS — weighting shares, applying dilutive options/convertibles/IFRS 2 grants, splitting continuing vs discontinued operations, or restating a prior period's EPS. The per-period EPS computation node.",
-    "uuid": "1a5950f8-6900-8733-b692-d2d12ac9c621",
+    "uuid": "f2924c41-7dcc-886f-882f-0fd837f4d930",
     "words": [
       "use",
       "when",

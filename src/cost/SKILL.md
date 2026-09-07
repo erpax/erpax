@@ -2,11 +2,11 @@
 name: cost
 description: "Use when optimising ANY cost in the society against output — one efficiency law for every cost (ai tokens, money, energy, time, labor, entropy), measured against productivity AND creativity. efficiency = output / cost, where output = productivity (verified, committed, repeatable work) + creativity (novel atoms/solutions, which compound because they're reused). The society and the agent maximise output-per-cost for every kind; competition selects the most efficient, decompression pays for it; waste (spend that produced nothing) drives to 0."
 atomPath: cost
-coordinate: "cost · 1/base · b6472b02"
-contentUuid: "27bb864c-08f0-5057-8e75-048512733f9e"
-diamondUuid: "217532f2-073d-8655-9f2c-f3a94aa1122b"
-uuid: "b6472b02-cc76-84bd-b5f7-a5bfae8a3516"
-horo: 1
+coordinate: "cost · 4/weave · 5d942ac6"
+contentUuid: "cf22f24c-bfdc-5f7d-9247-f12df5ef3521"
+diamondUuid: "70ba44e5-ea2f-8732-b46f-219d97d50053"
+uuid: "5d942ac6-b5f3-8325-b604-800773c18bab"
+horo: 4
 typography:
   partition: cost
   bondDegree: 460
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a8f904a2-f6d6-872f-ae6b-bc46356f70a0"
+  computationUuid: "b079ba98-ba77-84e3-aed8-7f86fcd8e32e"
   stages:
     - stage: path
       stageUuid: "9fa475f3-9812-8558-842d-9484e1e18cbf"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "ce03cc4b-bc01-873c-8c86-880ff3c7755e"
     - stage: horo
-      stageUuid: "52cc9178-9671-86e7-ba04-994912b984bb"
+      stageUuid: "8910f101-88de-8cd4-8555-7ad182d51ea4"
     - stage: seal
       stageUuid: "341ef0da-5cc1-887c-94d7-1dfb1c5b415d"
     - stage: uuid
-      stageUuid: "01305039-879a-8a61-b768-2bd4a72a8994"
+      stageUuid: "a1e37242-4446-8b2d-9d6a-e768b525af60"
 version: 2
 ---
 # cost — one efficiency law for every society cost (vs productivity + creativity)

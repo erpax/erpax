@@ -2,11 +2,11 @@
 name: scheme
 description: "Use when reasoning about scheme — A schema.org component word, collided out of schema.org compounds — fused from FundingScheme (sti · collapse · merge)."
 atomPath: scheme
-coordinate: "scheme · 4/weave · 1b6ec0ab"
-contentUuid: "fc76310a-ddd6-5937-a436-4dce74594c66"
-diamondUuid: "1264ddf2-1071-8286-9071-92dbdc8aaabe"
-uuid: "1b6ec0ab-62b6-81b2-98f9-fc947cfb67f6"
-horo: 4
+coordinate: "scheme · 1/base · 60eee1bb"
+contentUuid: "66e4c05a-2fee-5920-9558-36c0a1752903"
+diamondUuid: "3487988b-27b0-8142-909e-b86faa885a0e"
+uuid: "60eee1bb-fbc4-857c-84af-cae89bd1fe9b"
+horo: 1
 typography:
   partition: scheme
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d91cacef-72c9-8042-b381-873b622e48c5"
+  computationUuid: "2be260fa-5968-8b34-8846-e0fd10b238f5"
   stages:
     - stage: path
       stageUuid: "df1381f1-6ff2-8422-a8fb-6f71b0b14b3a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "48578d63-3df2-8ff6-b59d-50729b0b34ab"
     - stage: horo
-      stageUuid: "80b0d4dc-d1a3-8dde-9f66-c8acca494532"
+      stageUuid: "a395e863-97ab-8115-ba74-a304ac0aa474"
     - stage: seal
       stageUuid: "781f316d-9b18-8b17-9fd0-9af0590f0b5d"
     - stage: uuid
-      stageUuid: "4760785f-2b8e-8e5d-adca-6ff5e115749f"
+      stageUuid: "fd81d93e-5c07-8bd8-be3f-5214e5c50898"
 version: 2
 ---
 # scheme

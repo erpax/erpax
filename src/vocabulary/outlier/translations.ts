@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "outlier",
-    "uuid": "a9d58ee5-6d3b-8a37-8ec1-58bc30ffcc1f",
+    "uuid": "61b0e5c4-16a5-87cc-a543-e503ad21d178",
     "words": [
       "outlier"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when detecting or handling statistical anomalies — outlier detection methods (z-score, IQR, isolation-forest), treatment (trim, robust stats, flag, investigate), impact on metrics and reporting.",
-    "uuid": "bc7996eb-5ba3-88d8-8251-17db5f10329c",
+    "uuid": "4a3babfe-6653-8b2e-b3c2-4ae850bbbeeb",
     "words": [
       "use",
       "when",

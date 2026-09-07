@@ -2,11 +2,11 @@
 name: feed
 description: "Use when reasoning about feed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/feed"
-coordinate: "vocabulary/feed · 5/round · da105e8a"
-contentUuid: "79b88e73-2d81-5c7c-8a0d-7db61422425e"
-diamondUuid: "1500ed2f-3829-8311-ab06-b1bd1e02efe4"
-uuid: "da105e8a-f1b3-8801-9583-59b18899fd5a"
-horo: 5
+coordinate: "vocabulary/feed · 1/base · d350402e"
+contentUuid: "d85ca1c6-86ea-5a8e-8156-d22a485fa3a1"
+diamondUuid: "c72e6318-4828-8ffd-9341-c24959897c40"
+uuid: "d350402e-53be-8433-bbd1-e83669e7812a"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 41
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6dab346c-ed83-8340-b139-3efeb875f1f5"
+  computationUuid: "236beec5-10a8-8a0b-876c-f9b2eceb9c19"
   stages:
     - stage: path
       stageUuid: "3164b135-0b80-8518-bbee-cf937f25baec"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1f4305f5-d9a0-85f3-9f7b-1031a0c91801"
     - stage: horo
-      stageUuid: "53e6f9a5-1dc7-8684-a964-a38344b7fdf1"
+      stageUuid: "3f536f76-820d-823f-b89b-02c82a7b525c"
     - stage: seal
       stageUuid: "819e9381-f7eb-8571-80ed-850f829e82ec"
     - stage: uuid
-      stageUuid: "1a8238f5-4432-81de-890a-8f2d9bc20f3e"
+      stageUuid: "560f4d27-2e37-88f2-8b02-887fced10374"
 version: 2
 ---
 # feed

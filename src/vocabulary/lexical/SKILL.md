@@ -2,18 +2,18 @@
 name: lexical
 description: "Use when reasoning about lexical — is erpax's **rich-text** substrate: the Payload Lexical editor (config ), a structured JSON **node-tree** — not an opaque string. Two consequences make it central:"
 atomPath: "vocabulary/lexical"
-coordinate: "vocabulary/lexical · 8/crest · 30d3b243"
-contentUuid: "3a1f9bf8-c0b3-573a-8df3-95dc1bce15b2"
-diamondUuid: "d95dd73a-c18f-86d7-9b10-7c7e6fcb5550"
-uuid: "30d3b243-f0aa-87db-aec6-05302806f595"
-horo: 8
+coordinate: "vocabulary/lexical · 4/weave · 86a91403"
+contentUuid: "2ddd5db6-b687-5766-bbc0-87d8870c12e7"
+diamondUuid: "1077a8fe-771e-8f00-991c-0a7e23013381"
+uuid: "86a91403-a367-8894-a999-c38942224d7d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "aa866cce-92e1-870c-9444-d22acb7a1bf7"
+  computationUuid: "48c189c5-428b-883a-88ba-2a5036cd878c"
   stages:
     - stage: path
       stageUuid: "22b1078e-1c05-8601-bfc9-09c5fcc830d8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "923670ea-c116-80cc-ad48-bf6fef04f3f8"
     - stage: horo
-      stageUuid: "40b47674-bf30-8828-befe-d9b3652ff9cc"
+      stageUuid: "d1effca8-6f82-8249-9043-b53d072036fc"
     - stage: seal
       stageUuid: "59c250bb-ab85-8d31-8bf2-7a735102cd1c"
     - stage: uuid
-      stageUuid: "6b47fb3e-7708-8355-81c7-44240b73a547"
+      stageUuid: "703921ff-0adf-83b6-9c31-320c1d79ecd7"
 version: 2
 ---
 # lexical — rich text as the densest content surface

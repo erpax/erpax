@@ -2,11 +2,11 @@
 name: clothing
 description: "Use when reasoning about clothing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/clothing"
-coordinate: "vocabulary/clothing · 1/base · 4acd410a"
-contentUuid: "4e46bbf7-5f6b-542f-b8de-354f3cdd0a92"
-diamondUuid: "2eca31f7-60dd-8bde-8541-594d507b749d"
-uuid: "4acd410a-75c9-82a5-ad7e-7600577cec6b"
-horo: 1
+coordinate: "vocabulary/clothing · 8/crest · 3fef208c"
+contentUuid: "430c94df-dc78-5f5b-ab5c-f6fc45382c41"
+diamondUuid: "806cc86f-2f8b-864e-ab4b-55d320770f71"
+uuid: "3fef208c-b3ab-82da-9fa3-03e2c2f4728c"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9d735bdb-1ba1-8cf2-a0b5-26276b3d3717"
+  computationUuid: "d3c76b91-9f38-818a-b926-94e8df997f85"
   stages:
     - stage: path
       stageUuid: "1a98bccc-455f-82fe-a9fc-5ae1e7f46cf1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "699aeff3-0728-8d2c-97b9-cb53722883d2"
     - stage: horo
-      stageUuid: "1a9a27c7-d4b7-8c97-9bb7-ecbb08894faf"
+      stageUuid: "bfe7f771-dfd3-8037-afb8-0a823693d8c1"
     - stage: seal
       stageUuid: "3d54a50d-e2f3-84e7-bf4e-f99b9a50406d"
     - stage: uuid
-      stageUuid: "2b8545b9-e7de-86be-b65c-2174e25b3f58"
+      stageUuid: "b25ad3ac-31b4-89e3-8af4-4cd25efe1028"
 version: 2
 ---
 # clothing

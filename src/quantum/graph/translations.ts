@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "graph",
-    "uuid": "c72d31a6-717e-887e-ba92-ea05fa811790",
+    "uuid": "245e3396-7b0f-8fe7-94d9-988d7b3cf035",
     "words": [
       "graph"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading a graph as entanglement — an edge is an entangled pair, entanglement is symmetric, so a coherent corpus reciprocates every edge; entangled is the connected component.",
-    "uuid": "22b1cc6f-a24e-8710-9b80-d0b93eaae007",
+    "uuid": "1172a411-0a1a-8236-accf-87f754b9859e",
     "words": [
       "use",
       "when",

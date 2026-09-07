@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "catholic",
-    "uuid": "3f6d475e-f36f-8e51-ab3d-1c26b452b5c5",
+    "uuid": "ead6a158-beb4-837a-bb37-9b45d5243fb8",
     "words": [
       "catholic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about catholic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "cc1cd0e9-0dcc-8624-9cac-6ff6e93b2eda",
+    "uuid": "0fae14ab-09aa-803a-9d28-3fd9345e1e08",
     "words": [
       "use",
       "when",

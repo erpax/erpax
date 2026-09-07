@@ -2,10 +2,10 @@
 name: runbook
 description: "Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook."
 atomPath: runbook
-coordinate: "runbook · 4/weave · 6a893c70"
-contentUuid: "ff5e7d5d-000e-5502-9df3-0c9c6b9f3039"
-diamondUuid: "dde9cd08-5713-8222-a951-f538d903f3af"
-uuid: "6a893c70-ce41-8345-a8eb-46df9a8828a6"
+coordinate: "runbook · 4/weave · e137aa65"
+contentUuid: "53b11313-cebf-5dcb-a3f6-f5d12c137ac7"
+diamondUuid: "19f2bebb-5909-8251-bb7d-fe477d098c3b"
+uuid: "e137aa65-98b4-8acc-8f06-a8829ac8458b"
 horo: 4
 typography:
   partition: runbook
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "221f3549-161c-87d6-9b77-c6840b4aff77"
+  computationUuid: "11607330-0e92-84be-b355-9c88e3584749"
   stages:
     - stage: path
       stageUuid: "d55c90b4-fb45-83c2-a2fe-d79b2b9ac8a0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b1414759-7bc6-8db7-90fa-82317b78ed54"
     - stage: horo
-      stageUuid: "1b47dd08-48b7-8e92-b16f-5be7e8b3e24f"
+      stageUuid: "ac529af5-391d-81a2-a863-766f9dbfcf5d"
     - stage: seal
       stageUuid: "353ce0d1-08cb-8938-ad37-d00fd6112c7e"
     - stage: uuid
-      stageUuid: "3f8a027e-450f-84cd-9535-edfa489c5a23"
+      stageUuid: "6453b587-4a5b-8393-8dd6-9ef16ad62293"
 version: 2
 ---
 # runbook

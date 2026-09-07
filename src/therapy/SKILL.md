@@ -2,11 +2,11 @@
 name: therapy
 description: "Use when reasoning about therapy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: therapy
-coordinate: "therapy · 4/weave · a440d918"
-contentUuid: "7f44c0ab-bb62-5a55-b398-9d9e2c51e7e9"
-diamondUuid: "c1d3a27e-70bf-85f9-b542-637053e3dcd1"
-uuid: "a440d918-9df8-8e25-9308-ec5664d98eef"
-horo: 4
+coordinate: "therapy · 1/base · 197befa1"
+contentUuid: "223c6eb9-51e6-5ac3-84fc-ac98d06c2661"
+diamondUuid: "b160c545-0471-88af-b0d2-0061f02b2a78"
+uuid: "197befa1-a16f-8fb4-a144-cdac8107087b"
+horo: 1
 typography:
   partition: therapy
   bondDegree: 43
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "88da8a14-dfdd-8e94-bcec-edb84a248ddb"
+  computationUuid: "937b8133-1f24-8c9a-aed6-db70d73bd889"
   stages:
     - stage: path
       stageUuid: "50ca536f-6117-87e3-a359-8f6b318dfe7b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "40cb20bd-a801-87a5-be21-f7d60bbb2d58"
     - stage: horo
-      stageUuid: "3169c9c0-fb2d-818f-a0c2-99444d122721"
+      stageUuid: "7e6cac15-7788-89e5-917a-cbd5294b5aa3"
     - stage: seal
       stageUuid: "35958f5d-c11f-882b-8180-375ba924cc83"
     - stage: uuid
-      stageUuid: "1f56e47f-08ac-82f8-97ea-a44bb7f67a60"
+      stageUuid: "5d5b3cd9-70b2-8cc3-9e83-b19a457f4ed3"
 version: 2
 ---
 # therapy

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "patient",
-    "uuid": "aee7155c-6cf1-8972-9c47-a4a4626658df",
+    "uuid": "8bbd9410-d25f-81b2-a97c-99efe5125fc7",
     "words": [
       "patient"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about patient — A patient is any person recipient of health care services.",
-    "uuid": "b3d93787-b7dc-8109-9d0f-b3c90a20f728",
+    "uuid": "3b94b71d-9480-8233-b238-a5c39c2b450e",
     "words": [
       "use",
       "when",

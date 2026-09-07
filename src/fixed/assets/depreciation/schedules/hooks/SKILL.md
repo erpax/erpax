@@ -2,18 +2,18 @@
 name: hooks
 description: "Use when reasoning about hooks — books the period's charge when the schedule row is posted. The schedule is the record of what SHOULD be charged and when; letting the hook post it is what keeps the two from…"
 atomPath: "fixed/assets/depreciation/schedules/hooks"
-coordinate: "fixed/assets/depreciation/schedules/hooks · 9/unity · f6bae6f4"
-contentUuid: "f92d4ec9-62ef-52f7-a014-c0cda41203d4"
-diamondUuid: "ce47b707-b6bc-8e3c-8ae6-7b17376bdce3"
-uuid: "f6bae6f4-2bf0-89a4-b0e1-42648e01af24"
-horo: 9
+coordinate: "fixed/assets/depreciation/schedules/hooks · 3/3 · 36ce9d7f"
+contentUuid: "2e9648cc-b8ff-5e05-8672-4cb2e717365a"
+diamondUuid: "20b81075-c80f-8ac2-9b73-7ef78bc1a02a"
+uuid: "36ce9d7f-9836-8a80-972c-39f7c8b8cf30"
+horo: 3
 typography:
   partition: fixed
   bondDegree: 348
 standards: []
 bindings: []
 signatures:
-  computationUuid: "352473e8-cc33-8b6a-952d-c9887cd95785"
+  computationUuid: "216124a2-f9bc-8152-b315-dcaa8800a2f9"
   stages:
     - stage: path
       stageUuid: "89d745fd-83fa-8c38-9719-68c1ebee82c5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d0bc6372-cb28-89e1-8db5-14d6ead3c73e"
     - stage: horo
-      stageUuid: "08766785-ff86-89d0-8316-91ef18ef8f6f"
+      stageUuid: "5ef5a5fa-5baa-8a3a-a623-9e3eeaf12f90"
     - stage: seal
       stageUuid: "cb1b9664-dea1-8c01-9c2c-85935f4f657c"
     - stage: uuid
-      stageUuid: "97209a86-2e60-83c0-adb3-091d5c2161d3"
+      stageUuid: "26e72e45-2178-8186-8cc2-93e6c1a48acf"
 version: 2
 ---
 # fixed/assets/depreciation/schedules/hooks — depreciation is posted by the schedule, not by a monthly reminder

@@ -2,11 +2,11 @@
 name: bed
 description: "Use when reasoning about bed — The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity"
 atomPath: bed
-coordinate: "bed · 8/crest · 653a3346"
-contentUuid: "ed6f448d-8e2f-5984-b30e-f3adf44822d1"
-diamondUuid: "713d03d9-61ff-84db-8918-a2fd1284ecdb"
-uuid: "653a3346-6ed6-8b5e-ae5d-2fc5e55a94d2"
-horo: 8
+coordinate: "bed · 5/round · 2ed337f7"
+contentUuid: "2bf8e51a-e952-5b6e-ad23-259cd3562cce"
+diamondUuid: "d6dbeff3-2eb6-88cf-bdea-9f9b1ed25213"
+uuid: "2ed337f7-e74d-853b-baed-29693f4a7309"
+horo: 5
 typography:
   partition: bed
   bondDegree: 17
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "767a82ee-db80-8231-87bd-726ae9e0c8f6"
+  computationUuid: "a4b1c676-593d-85db-b3cc-de5f64728da9"
   stages:
     - stage: path
       stageUuid: "92b83751-a821-8378-a4e3-080844030fba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3bdb1990-53b8-8e03-bf22-d3814dcd6c1d"
     - stage: horo
-      stageUuid: "2c49db7c-9362-875e-a006-db44279b8df6"
+      stageUuid: "3a5668c2-c7cc-89e3-910c-d237719c8908"
     - stage: seal
       stageUuid: "f394e6b4-8276-8a8a-be5c-7092c3447ffe"
     - stage: uuid
-      stageUuid: "6e36d321-1fce-8ca4-afba-9318a0d7b821"
+      stageUuid: "3583f36c-3065-844d-b42e-4c0a175f654f"
 version: 2
 ---
 # bed

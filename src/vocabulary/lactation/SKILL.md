@@ -2,18 +2,18 @@
 name: lactation
 description: "Use when modelling the dairy production phase — lactation, the milk-producing interval of a dairy female between parturition and dry-off, with its yield curve, parity (lactation number), and the dry period before the next cycle. The per-animal dairy season; milk is the agricultural produce realized at each milking (harvest)."
 atomPath: "vocabulary/lactation"
-coordinate: "vocabulary/lactation · 5/round · a14e958f"
-contentUuid: "5ae7119e-f9cd-5dc1-8d28-8e27c6f2ece4"
-diamondUuid: "0fb9e9b4-1228-84e4-b88a-c6006b2d309d"
-uuid: "a14e958f-79ef-8de1-a998-887bfc403dd1"
-horo: 5
+coordinate: "vocabulary/lactation · 8/crest · f1cae301"
+contentUuid: "995820cf-4f24-59c8-a573-e59978764a15"
+diamondUuid: "6d06f720-160d-8ab6-b7e9-2b02719a15c8"
+uuid: "f1cae301-e71d-8dbd-808c-f142a3724640"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 39
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2786e7df-9b81-87b0-b741-b0e38ad6fbcf"
+  computationUuid: "576a88e8-f449-8ebe-a2e4-8f92494230ae"
   stages:
     - stage: path
       stageUuid: "39ab0254-59ef-8958-983e-f3c06fee473f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "11de8293-5482-8adc-ad86-3814a280207b"
     - stage: horo
-      stageUuid: "8246717c-b13b-8fc8-bc44-5aa9ddbf9218"
+      stageUuid: "ee9d4491-b798-89fd-9dcb-a0a308b45f28"
     - stage: seal
       stageUuid: "3ab763f1-bb1a-8d10-a56b-d02540fcd752"
     - stage: uuid
-      stageUuid: "5e74c710-853b-86e6-9011-5668b2dedb5a"
+      stageUuid: "6e9702db-6089-848c-be61-38a2273477bf"
 version: 2
 ---
 # lactation — the dairy production phase

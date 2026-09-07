@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "baked",
-    "uuid": "6984091d-0cb9-8e83-be64-af5e88a46386",
+    "uuid": "f03d7104-ed4b-81ea-9992-cd7b23a3becc",
     "words": [
       "baked"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost.",
-    "uuid": "8b8b36ba-449e-8dd1-b02e-d584dc5cdb80",
+    "uuid": "fbebb2c2-78d7-800d-a97f-760494301a07",
     "words": [
       "use",
       "when",

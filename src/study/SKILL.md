@@ -2,10 +2,10 @@
 name: study
 description: Use when reasoning about study — A medical study or trial related to this entity.
 atomPath: study
-coordinate: "study · 7/descent · a44ae0a5"
-contentUuid: "71e02545-2ee3-585b-9f37-5f6a6af1a982"
-diamondUuid: "58bd0f7f-3d1f-8c29-b38e-11c34b2635cf"
-uuid: "a44ae0a5-7a6e-81eb-9d43-820d7a8b7e07"
+coordinate: "study · 7/descent · fc11648d"
+contentUuid: "a0d0706f-e334-56a9-9a42-67d45bd70cbf"
+diamondUuid: "0a61980f-5ce5-8d08-8f30-73d72d20ac10"
+uuid: "fc11648d-e2c2-8426-a204-f0245ff6ea53"
 horo: 7
 typography:
   partition: study
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ee3788d8-3930-85da-8e86-b6829c3b4c9c"
+  computationUuid: "74922da0-ba60-83d6-814a-396b46144def"
   stages:
     - stage: path
       stageUuid: "efbfa5d6-192f-856f-ab0c-541382ce18b4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fb908fbe-7c79-8688-be9a-b4bfb6f75bfd"
     - stage: horo
-      stageUuid: "926db2cb-fe8b-80f0-bbe8-b94e351fdc9c"
+      stageUuid: "01c463ce-c8c6-86ee-8f50-c5b710611c52"
     - stage: seal
       stageUuid: "60a051e4-c6fe-8e84-9683-84522b14868f"
     - stage: uuid
-      stageUuid: "e20778be-389d-88c3-8de5-1247c7c293e7"
+      stageUuid: "d19c3a5a-6345-8a21-bf3e-3457eb64199d"
 version: 2
 ---
 # study

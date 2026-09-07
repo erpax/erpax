@@ -2,11 +2,11 @@
 name: witness
 description: "Use when a test derives over the whole corpus and hangs — the bounded-witness helper: sample a large domain (bounded-witness) or take the whole when it is small (finite-complete), replacing every ad-hoc slice."
 atomPath: "testing/witness"
-coordinate: "testing/witness · 8/crest · 6aead0a8"
-contentUuid: "f8105e7b-169e-5214-b289-edbee40975e5"
-diamondUuid: "7f733ac7-e7ef-8d10-9203-2d3fb9c792d4"
-uuid: "6aead0a8-e3f9-8c44-bdf2-83de1f3f8d74"
-horo: 8
+coordinate: "testing/witness · 1/base · c3b494c7"
+contentUuid: "be5b5591-bbff-5e4f-8ebb-cc1256135896"
+diamondUuid: "93c8f519-7b7f-8c5d-9899-741b8ede424a"
+uuid: "c3b494c7-f7bd-8cbb-b29f-a9be0f7e8a36"
+horo: 1
 typography:
   partition: testing
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.5 testability — a bounded witness is exhaustively checkable"
 bindings: []
 signatures:
-  computationUuid: "9556f03a-3593-8ec2-b69d-372a7f0e0e2b"
+  computationUuid: "c4ac4544-ba8f-8f13-81d2-bb85b2ecad48"
   stages:
     - stage: path
       stageUuid: "77f7cfb0-fd54-86a0-993c-b5e6aaea19cb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3980bfb8-e08c-85f4-b99c-51ad61fe17e9"
     - stage: horo
-      stageUuid: "738593f6-e43e-8c3b-b6f5-f9b442c72e02"
+      stageUuid: "db8d57b5-7ecb-8095-9558-595100236b3d"
     - stage: seal
       stageUuid: "f23abff2-61cb-8963-91a2-1b3091ff3eb8"
     - stage: uuid
-      stageUuid: "ddb78a35-8b83-8773-b2ea-984d25b8d8d0"
+      stageUuid: "96570d00-875e-80f2-b9d1-cb92d619a5f0"
 version: 2
 ---
 # testing/witness — the bounded witness

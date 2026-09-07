@@ -2,18 +2,18 @@
 name: signature
 description: Use when modelling one signature — the singular model of the signatures collection (the plural store); a cryptographic or written mark binding a signer to content.
 atomPath: signature
-coordinate: "signature · 2/share · db63d7cb"
-contentUuid: "7f9e7d89-aada-506b-a880-6c476a909fe0"
-diamondUuid: "c50627f3-9c8f-8984-ba2f-0ff4891ed44f"
-uuid: "db63d7cb-14c5-8e8a-af5a-c5265326b4b5"
-horo: 2
+coordinate: "signature · 5/round · 9849e6ad"
+contentUuid: "06ae5ada-3db5-5201-bffd-1d2bf2640110"
+diamondUuid: "85414c9e-f191-885a-abfb-f5ae1d2ff9e5"
+uuid: "9849e6ad-4928-8788-a5fd-54745ffd390a"
+horo: 5
 typography:
   partition: signature
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d0682a64-36a7-8897-bab0-5cd791eac6a2"
+  computationUuid: "5ef8d5ce-371f-8197-b3ea-7eae93459ac3"
   stages:
     - stage: path
       stageUuid: "3dfd453e-adae-8ba6-9f67-04894e3c4882"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3e461761-3d0e-84f2-b2e9-aaa368236d05"
     - stage: horo
-      stageUuid: "d922651b-6fae-8965-8087-1f10e4d92c9e"
+      stageUuid: "e4636922-0d70-827e-a87f-5d4b05b4c885"
     - stage: seal
       stageUuid: "e6b3eb66-892f-85e8-8d21-53c2b2041871"
     - stage: uuid
-      stageUuid: "be5bd6cf-f1ec-8897-9b31-c1b617afb44d"
+      stageUuid: "8207c384-79ef-88e3-8564-c52dbd8541fc"
 version: 2
 ---
 # signature — the model of one [[signatures]] row

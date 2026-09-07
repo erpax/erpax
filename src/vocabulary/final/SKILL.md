@@ -2,11 +2,11 @@
 name: final
 description: "Use when reasoning about final as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/final"
-coordinate: "vocabulary/final · 7/descent · 9342a6fe"
-contentUuid: "5334bf36-6f8d-58cc-82d0-7ff5dac017f1"
-diamondUuid: "9373cdc9-1677-8d9c-9f90-7f357b504708"
-uuid: "9342a6fe-3147-814e-b3fa-177384dd4db7"
-horo: 7
+coordinate: "vocabulary/final · 1/base · 421eb893"
+contentUuid: "556e14e4-1629-5769-b65b-65004d02df6b"
+diamondUuid: "3ef82a51-8d93-823a-941f-47bd0612fa9f"
+uuid: "421eb893-7756-8b81-a4c7-d320a3a01f30"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6547b2bf-f495-8585-8b0c-737cd053be96"
+  computationUuid: "e45814c1-aee5-87eb-87af-b16286ea2899"
   stages:
     - stage: path
       stageUuid: "fb236ac2-3939-81ae-94c6-b02391ba4990"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "70a55580-49eb-8f2e-8622-455b89b792ea"
     - stage: horo
-      stageUuid: "a9ee06ee-3647-8f48-8931-36c5c08223e7"
+      stageUuid: "1a87a549-caf5-81ca-9f03-c771857e5170"
     - stage: seal
       stageUuid: "f7963840-1a75-8665-bf7f-56a552e397f0"
     - stage: uuid
-      stageUuid: "365591ac-e5fd-8eef-999b-1cdf736975d0"
+      stageUuid: "d19ae926-926a-8a82-8642-55d22d091f2b"
 version: 2
 ---
 # final

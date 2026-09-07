@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "integrity",
-    "uuid": "a9cce569-1482-80f8-97b8-d50ff69c31ab",
+    "uuid": "068fb970-a1a3-88f0-8e73-79d550bdbadf",
     "words": [
       "integrity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution.",
-    "uuid": "c8ef7796-7f64-82ba-831b-1dc781b7cb5f",
+    "uuid": "100c8242-cc0f-853a-8def-87a1fb3fad31",
     "words": [
       "use",
       "when",

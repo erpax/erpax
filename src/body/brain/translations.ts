@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "brain",
-    "uuid": "77e838cc-53c8-8b71-9566-674a60888418",
+    "uuid": "834ae367-a9b1-8ee6-a720-20840c7b6182",
     "words": [
       "brain"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the brain as an organ of body — pivot to canonical @/brain; zero duplication.",
-    "uuid": "1a04d7d4-7c2d-82d6-bb29-c7b8cec5e54d",
+    "uuid": "5f0c8c28-518c-82c3-8e88-c140ffa2579d",
     "words": [
       "use",
       "when",

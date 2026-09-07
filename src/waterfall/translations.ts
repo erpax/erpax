@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "waterfall",
-    "uuid": "ea585f76-be1b-8c46-9620-a1bd6736accb",
+    "uuid": "a6d65e17-b966-88a1-89da-983a7e3f2555",
     "words": [
       "waterfall"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about waterfall — A waterfall, like Niagara.",
-    "uuid": "25914a31-429c-889f-997f-6ce0a0cfa792",
+    "uuid": "223d2057-b64f-801c-873c-1f8830a8f9a1",
     "words": [
       "use",
       "when",

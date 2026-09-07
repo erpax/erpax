@@ -2,11 +2,11 @@
 name: improve
 description: "Use when standards must chat and improve via architectural reuse — addressIndex O(1), crack non-reuse, free-chat@tokens=0, emit waves. Uses quantum/ftl; path is standards/improve — not a domain ftl path."
 atomPath: "standards/improve"
-coordinate: "standards/improve · 7/descent · 5f96492e"
-contentUuid: "068ed04b-3ca4-5e2f-a5c0-d1b037694881"
-diamondUuid: "29f0d933-3de2-8cc4-a5f9-82cd1d4a640a"
-uuid: "5f96492e-0209-83f0-9d49-001f6b7074ae"
-horo: 7
+coordinate: "standards/improve · 1/base · 573a3dc7"
+contentUuid: "81106cf7-8621-5a5f-99a1-7408025c9b12"
+diamondUuid: "56516cf6-2d18-8eb2-b64a-b0e8f38f7c3d"
+uuid: "573a3dc7-9956-8c8e-a07b-bc39d88c9062"
+horo: 1
 typography:
   partition: standards
   bondDegree: 40
@@ -24,7 +24,7 @@ standards:
   - line). Chat confirms; scalpel cuts.
 bindings: []
 signatures:
-  computationUuid: "c14a2128-a4fe-8afb-8148-bc28e11eaa02"
+  computationUuid: "fde40a17-ba87-8299-a019-72440967a944"
   stages:
     - stage: path
       stageUuid: "1ea85ff7-78a5-8675-931f-a6ff843f1c32"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "33df9481-66ff-87c9-bdfb-1106a7d03f08"
     - stage: horo
-      stageUuid: "e0b1f048-2f45-86df-877f-5b31028d0248"
+      stageUuid: "6f6d0cb2-c1b2-872c-9c33-02760877e0ba"
     - stage: seal
       stageUuid: "9a5ed30b-0e8d-80b0-aa9d-b8e34e841807"
     - stage: uuid
-      stageUuid: "7e01ac09-b302-85a5-a7bf-e3d5e3699659"
+      stageUuid: "f50c9bfc-0efc-881d-98de-47cf930908f1"
 version: 2
 ---
 # standards/improve

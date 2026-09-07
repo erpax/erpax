@@ -2,11 +2,11 @@
 name: endorsers
 description: Use when reasoning about endorsers — People or organizations that endorse the plan.
 atomPath: "vocabulary/endorsers"
-coordinate: "vocabulary/endorsers · 8/crest · d35e89ff"
-contentUuid: "f175c068-870e-5cfc-b674-d5a6a70a436a"
-diamondUuid: "eaef98ba-fdb8-8109-9f9f-d2815f52c755"
-uuid: "d35e89ff-e109-883c-8182-e92a794d8b1b"
-horo: 8
+coordinate: "vocabulary/endorsers · 1/base · 62ec1364"
+contentUuid: "79743fbf-ca62-52d9-80f9-1fb53f64169c"
+diamondUuid: "dc3f003f-3508-842e-aa73-c75919d89909"
+uuid: "62ec1364-e17b-8a86-a1da-266e6eb80e78"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "79feb41e-83bf-86b9-9a24-12285b450723"
+  computationUuid: "b737531e-0629-8130-99c7-055cc11e7d16"
   stages:
     - stage: path
       stageUuid: "911fade2-8f0d-81a1-af3c-0720ca078a60"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "34edeeec-7521-8fce-9c59-61baa1a70067"
     - stage: horo
-      stageUuid: "5d0f16d7-dbe8-8b63-ab3b-f7b4ca5199b4"
+      stageUuid: "1c36bdeb-ebf0-8f19-9f85-35b7f6ce8314"
     - stage: seal
       stageUuid: "da5f7436-d4e7-8e0b-8418-a5395573784a"
     - stage: uuid
-      stageUuid: "3d959472-5d87-8f50-aa89-814462db01aa"
+      stageUuid: "2f6e12b6-0bda-8704-aabb-853bba0ec7a7"
 version: 2
 ---
 # endorsers

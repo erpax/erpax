@@ -2,11 +2,11 @@
 name: override
 description: "Use when reasoning about override as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/override"
-coordinate: "vocabulary/override · 5/round · a780b322"
-contentUuid: "f9a2182c-90c8-5b26-aa10-1f16e3d68452"
-diamondUuid: "dc2b2ea9-160f-8475-b8bf-6a2e64e76770"
-uuid: "a780b322-48be-8145-b163-9e07ea3b4eaf"
-horo: 5
+coordinate: "vocabulary/override · 2/share · a9352195"
+contentUuid: "6344149b-e78b-5e37-9ed8-8a810335e5cd"
+diamondUuid: "3b5bd99c-2dee-89ae-9fac-9a0f065d34ac"
+uuid: "a9352195-f782-8186-89bc-d20c57c09f42"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f279ebdc-b0f3-89ee-b169-dcecb360b8dd"
+  computationUuid: "a3e0af0b-40ef-892e-98f5-4761f97fd02f"
   stages:
     - stage: path
       stageUuid: "fe669a2f-4280-8877-bc5e-fa53ee871e75"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9c6d0865-8010-833c-a767-f7dec0b34721"
     - stage: horo
-      stageUuid: "3812f11f-e3c7-85ed-b042-e5c3e0acb1e7"
+      stageUuid: "b3698342-4356-8bef-b20c-4e6cde15f0ff"
     - stage: seal
       stageUuid: "6f607e99-52d4-8ed9-916e-e731a3dcd8f6"
     - stage: uuid
-      stageUuid: "5f6b1a09-cefa-878a-99b4-4ea2cc93dee1"
+      stageUuid: "59353b64-d867-8c2a-bfed-98d3c3e23362"
 version: 2
 ---
 # override

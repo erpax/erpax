@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "invariant",
-    "uuid": "e2670d73-c439-8f0d-a989-30eced02d188",
+    "uuid": "62c2f611-f349-820e-9937-63c2fe3c5746",
     "words": [
       "invariant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate.",
-    "uuid": "6fea4211-0023-83ec-bd36-04d023b37982",
+    "uuid": "6817f41e-9187-8032-a84c-940ffcd375ed",
     "words": [
       "use",
       "when",

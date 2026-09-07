@@ -2,11 +2,11 @@
 name: subdivision
 description: "Use when reasoning about subdivision as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: subdivision
-coordinate: "subdivision · 4/weave · d0976491"
-contentUuid: "c6a6430a-7772-5284-8f81-5caed2ea7055"
-diamondUuid: "d199a856-f2da-89ff-9bca-790f37e9272f"
-uuid: "d0976491-e08c-89ee-a449-648951d673f1"
-horo: 4
+coordinate: "subdivision · 5/round · 619aae48"
+contentUuid: "a8b17501-6560-5d32-a1b9-5e5a57b2744a"
+diamondUuid: "9aeaedc8-b4bb-8ac3-9b8a-1b2dc426e05c"
+uuid: "619aae48-3a30-8900-a175-0082fa3749f9"
+horo: 5
 typography:
   partition: subdivision
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aea93ca5-9c48-8ae9-a265-b988f48727bd"
+  computationUuid: "14410730-5043-8edb-a7f4-8d3f58f41068"
   stages:
     - stage: path
       stageUuid: "9cce3db7-8471-8c51-9615-1a2004742826"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d1e88c23-8f20-87ef-9932-9f7a7b09e1ca"
     - stage: horo
-      stageUuid: "5cd7d6db-01bb-8276-a9d1-966caddd1c9d"
+      stageUuid: "97d1657a-4407-8c61-b8e8-47c2af35d806"
     - stage: seal
       stageUuid: "d2cf9f4b-47f2-8213-99e7-a93c4177a6da"
     - stage: uuid
-      stageUuid: "3a3b197b-907d-8c89-9102-f58649402a50"
+      stageUuid: "cb8d290c-8399-8759-b907-73ebc5240a5a"
 version: 2
 ---
 # subdivision

@@ -2,11 +2,11 @@
 name: membership
 description: "Use when reasoning about membership as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: membership
-coordinate: "membership · 1/base · c75008ef"
-contentUuid: "fbed2502-472d-593f-ba6e-aef4ed39e095"
-diamondUuid: "c5e32266-625a-8260-94a2-5ce915fcc8a8"
-uuid: "c75008ef-0d08-80a1-a8db-ab8633ec3552"
-horo: 1
+coordinate: "membership · 2/share · 9b6dbfee"
+contentUuid: "5e891208-e997-54a4-b734-4eedefd36385"
+diamondUuid: "74479721-979e-8f0e-8dc0-df8a5ba9118c"
+uuid: "9b6dbfee-b4ee-8a48-9b99-bafa6725b5db"
+horo: 2
 typography:
   partition: membership
   bondDegree: 34
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ebc8991d-82fa-83f7-a135-53c97e0674c8"
+  computationUuid: "5a3579be-e087-82f6-89b4-b484c4fcf753"
   stages:
     - stage: path
       stageUuid: "1d399da2-7a2d-8f69-b231-3a082e180a29"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "0a3ba88f-d96a-8fc2-ac3f-789b04751292"
     - stage: horo
-      stageUuid: "2c51bb64-a86a-8d92-9998-f8305e43ccc5"
+      stageUuid: "44af4e11-6c5f-871a-89d2-4d8aba84d382"
     - stage: seal
       stageUuid: "c231cac6-7eae-85da-ad12-de7a470700bd"
     - stage: uuid
-      stageUuid: "6e1bcd2e-f72f-8ee8-94fd-6e67326a3905"
+      stageUuid: "790a82bd-eafb-80c3-8cc9-e8800f6e5e4e"
 version: 2
 ---
 # membership

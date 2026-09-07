@@ -2,18 +2,18 @@
 name: reconcile
 description: "Use when matching two records of the same flow — bank-statement line ↔ payment, GL ↔ subledger, intercompany pairs. The BankStatementLineReconciliation concern; reconciled state is DERIVED from the match link, not stored."
 atomPath: "vocabulary/reconcile"
-coordinate: "vocabulary/reconcile · 5/round · 258f7f91"
-contentUuid: "869cd6e7-07d0-536a-a43e-93f2992f4ea9"
-diamondUuid: "82e5a856-d0f4-8006-b60d-546f347319a2"
-uuid: "258f7f91-86a9-8844-8a61-d191554b2449"
-horo: 5
+coordinate: "vocabulary/reconcile · 2/share · 9d3a7a6e"
+contentUuid: "1d06be8e-4204-57a2-9e92-9918bd9772bc"
+diamondUuid: "a93e07c9-047c-83ad-9985-29454b8596b8"
+uuid: "9d3a7a6e-54c6-8882-bb3f-bfeb48e214b8"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 54
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f7ba5d42-a158-86f9-973a-3964b694a088"
+  computationUuid: "e4c86959-fc47-8042-817c-46e5fc41c0a2"
   stages:
     - stage: path
       stageUuid: "1856a94d-af25-8a08-9197-e6eb4ee7d752"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2252ed7c-8de5-8a02-b49e-d204b4738d18"
     - stage: horo
-      stageUuid: "b6c01ba7-6830-860d-87c6-ea4d61884c42"
+      stageUuid: "2945de93-f9f6-8bc9-b027-3b1289a4c4aa"
     - stage: seal
       stageUuid: "b82882ac-ec8d-84eb-8e9f-39ca08f65c07"
     - stage: uuid
-      stageUuid: "6a0010e6-5724-886d-bd5f-042c3f729550"
+      stageUuid: "6dd69820-96fa-825a-addd-7365df596ce4"
 version: 2
 ---
 # reconcile — match two sides of one flow

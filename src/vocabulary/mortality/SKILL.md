@@ -2,18 +2,18 @@
 name: mortality
 description: "Use when living stock dies and the asset is written down — mortality, the death-loss rate/event across a herd, fish stock, forest stand, or bee colony. The negative biological transformation (IAS-41 P&L decrement, distinct from price change); the loss twin of yield, shared across every living-production domain."
 atomPath: "vocabulary/mortality"
-coordinate: "vocabulary/mortality · 7/descent · daaf9db0"
-contentUuid: "5ab642d9-7611-5501-87fd-78d725e336e3"
-diamondUuid: "0e98aa1b-20df-86ee-8236-6be105d55d56"
-uuid: "daaf9db0-d4f7-8ee7-b0b9-878aaee28c3e"
-horo: 7
+coordinate: "vocabulary/mortality · 1/base · 63eaa0bf"
+contentUuid: "2f82478b-1419-532b-b0ef-f669af14672f"
+diamondUuid: "83bfa6d0-253e-8d9d-b4c2-faef678b2c75"
+uuid: "63eaa0bf-b9b5-82b4-b4b3-6bda3ff6b546"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fb8b3f77-1aaa-88db-b2d3-2051a123b3bb"
+  computationUuid: "d85e00ed-23b6-80a7-ba6c-b8810ce78270"
   stages:
     - stage: path
       stageUuid: "b98cec32-7788-8ab5-aaae-c2b5e81c5284"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "277989c8-00c5-8a53-9773-be0544ab456b"
     - stage: horo
-      stageUuid: "ecabc49c-06f9-8b32-90e5-0a443524b440"
+      stageUuid: "d0f29946-957a-8afc-af67-784fe854618a"
     - stage: seal
       stageUuid: "b5fb1b56-817b-81a5-b372-417c22f47e14"
     - stage: uuid
-      stageUuid: "0b46ccd1-ff66-858a-8b2b-45993406275e"
+      stageUuid: "85514c45-1faa-8c14-9a46-bd2829bffa11"
 version: 2
 ---
 # mortality — death-loss of living stock; the negative biological transformation

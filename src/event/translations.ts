@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "event",
-    "uuid": "88215317-7484-8e5c-a2f6-0a40083d872c",
+    "uuid": "df96b0fb-7b01-80b3-9953-16ac8d94220e",
     "words": [
       "event"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about event — A domain **event** is the matter that crosses the hooks seam: a collection's hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, noti",
-    "uuid": "b9a19ec6-3f92-87c7-a004-bc5ad3fe977a",
+    "uuid": "eea23031-591e-8b16-a33f-01cf4e8c0999",
     "words": [
       "use",
       "when",

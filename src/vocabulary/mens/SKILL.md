@@ -2,10 +2,10 @@
 name: mens
 description: "Use when reasoning about mens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mens"
-coordinate: "vocabulary/mens · 1/base · 603e77d0"
-contentUuid: "dd87d984-402a-5c05-b670-419fccb640cb"
-diamondUuid: "5de5f9e2-f7af-843a-86a5-d44f2a83908f"
-uuid: "603e77d0-ab8d-8aac-8685-5d94eb62e1ef"
+coordinate: "vocabulary/mens · 1/base · ec1e3382"
+contentUuid: "98c6c3db-5560-5c0d-be75-28373ce23aa0"
+diamondUuid: "146c0521-4935-814d-a5df-bba846e207ad"
+uuid: "ec1e3382-c872-8582-9a7a-2cc0c2628fc9"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5aa02213-0605-82ca-818b-a3913a4821c8"
+  computationUuid: "486badae-1f18-8a55-8dd0-3cbb3319f453"
   stages:
     - stage: path
       stageUuid: "c6530d7b-c41c-8862-ac9e-cad3fbd6d879"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e12788ff-4448-8a3b-898e-62887fc7a678"
     - stage: horo
-      stageUuid: "9cf5239b-783c-86da-8771-f7fb1bbfadd7"
+      stageUuid: "47efc9e2-563f-8b66-9c84-9728cf819412"
     - stage: seal
       stageUuid: "377f10f2-519b-82ca-af60-9612ec87bf9c"
     - stage: uuid
-      stageUuid: "3d573f29-f9ab-83ae-b11d-31f16ebb1cec"
+      stageUuid: "54865b35-7414-8914-a05c-43b39aef2f72"
 version: 2
 ---
 # mens

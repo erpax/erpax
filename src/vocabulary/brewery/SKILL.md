@@ -2,11 +2,11 @@
 name: brewery
 description: Use when reasoning about brewery — Brewery.
 atomPath: "vocabulary/brewery"
-coordinate: "vocabulary/brewery · 1/base · fa2c5074"
-contentUuid: "f6192c83-6312-5b77-bb8e-37eca285d40f"
-diamondUuid: "952193f6-f401-8d97-8bd4-afe5769fbd59"
-uuid: "fa2c5074-dc99-82a9-b8ec-585cae90d91f"
-horo: 1
+coordinate: "vocabulary/brewery · 5/round · 19927712"
+contentUuid: "0e27d9d5-de3f-5d9c-96d1-e47298240669"
+diamondUuid: "cc7834c3-1bde-84bc-b1ce-be0a702e46e0"
+uuid: "19927712-9465-8e88-b303-adae922d4f09"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5dac6d97-3ba3-872e-a757-b27597fac9a6"
+  computationUuid: "d7cefee3-8973-8460-a1d8-6040baa1a351"
   stages:
     - stage: path
       stageUuid: "a6d8bc48-f39d-829e-97f2-1e087729e6db"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "51529da6-520b-82d6-b71a-028c28eefeb3"
     - stage: horo
-      stageUuid: "ec81409d-0d0c-8db2-8173-af753e572c59"
+      stageUuid: "b67f2098-147d-8cbf-946b-ebe58191f860"
     - stage: seal
       stageUuid: "16e745db-99a8-8352-a606-270c45c56131"
     - stage: uuid
-      stageUuid: "4457f24d-5963-884a-95f4-23433f7639f9"
+      stageUuid: "e4ba4544-d28f-839d-9a5e-947ad72ffbf7"
 version: 2
 ---
 # brewery

@@ -2,18 +2,18 @@
 name: qubit
 description: "Use when measuring the vortex helix as a qubit fold — ⟨2⟩ ≅ e^{2πik/6}, slash interference nodes, collapse phase→digit→bit. Holds is computed; no hand-asserted physics claims."
 atomPath: qubit
-coordinate: "qubit · 4/weave · 503606d8"
-contentUuid: "14e9c5b6-74ab-5c2b-8f16-1338e4d7bf22"
-diamondUuid: "762faccf-b8a9-8bd4-9671-e87ecd37e5b0"
-uuid: "503606d8-c026-8f1c-8ac9-b583ac0927de"
-horo: 4
+coordinate: "qubit · 2/share · ea7fc98f"
+contentUuid: "5594be95-0273-5136-be0a-85b9d28e74b6"
+diamondUuid: "bf3ba7c5-ec4d-87c5-a161-b579245dd0be"
+uuid: "ea7fc98f-7bfe-823e-b268-8fd652d7dceb"
+horo: 2
 typography:
   partition: qubit
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "da97093f-a568-81f9-b08e-6ebbbe01d9f0"
+  computationUuid: "31a5ab7a-0a3e-80aa-91e0-ff60523a9bbd"
   stages:
     - stage: path
       stageUuid: "a6107c91-7b36-8cb0-8693-8bc264738bcf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "25c1b395-2672-8f7c-aaf0-326fa4bda5da"
     - stage: horo
-      stageUuid: "96d400f3-b7b7-8151-b38f-97111fe28ce4"
+      stageUuid: "618b7512-dbe5-8e10-bb64-f3f4b02f5e35"
     - stage: seal
       stageUuid: "9a362159-6603-8bc8-9f18-9f386e09a317"
     - stage: uuid
-      stageUuid: "a1b7fe13-666b-8b1f-aeb4-a94ffb98710a"
+      stageUuid: "2c44e6d8-a541-8969-99ed-b906472f323d"
 version: 2
 ---
 # qubit

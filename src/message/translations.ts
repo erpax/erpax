@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "message",
-    "uuid": "ee421272-da35-8fb3-a2d7-b1b9c9d1af61",
+    "uuid": "4aa6ce21-b529-86c7-b0bc-8a573d549983",
     "words": [
       "message"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the uuid AS the message — decode identity · OID · colour · sound out of the 128 bits alone, no payload. Completes localize.decodeIdentity (colour) with the missing sound channel (the note the uuid sounds, A432). To send is to send the uuid; to receive is to decode it. Matter-twin message/index.ts.",
-    "uuid": "ddec1a06-6a9d-86c7-ba3c-2303559cec5f",
+    "uuid": "35ed5b25-13ab-8eee-8611-7c51fb71d7e2",
     "words": [
       "use",
       "when",

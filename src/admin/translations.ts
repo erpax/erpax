@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "admin",
-    "uuid": "d1a34463-5bb8-83c6-91fe-bd926195c411",
+    "uuid": "4b6b67b4-782d-8d2a-8f47-3cce75c7f204",
     "words": [
       "admin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when configuring the Payload Admin Panel or building custom admin React components — list/edit views, custom field/cell components, importMap, useField/useForm hooks, nav grouping, dashboards, or admin appearance.",
-    "uuid": "6d1980fb-7042-8f83-94a3-80a5af34cfe7",
+    "uuid": "b744eeb7-e8b4-81bb-89c8-0d0ce224f511",
     "words": [
       "use",
       "when",

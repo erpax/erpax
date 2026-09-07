@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "readme",
-    "uuid": "d484cdad-50e0-811f-b41f-3acadd22ef94",
+    "uuid": "8dd64773-3110-836f-a5e2-97fb6a6e3e44",
     "words": [
       "readme"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the repository README is generated, verified, or reasoned about — the README is a diamond (a content-addressed projection of the live tree, regenerable with zero entropy, drift fails closed) and its typography IS the diamond projected (facets = the closed horo ring laid out in measure-walk order, so reading the README is reading the crystal). Derived from the tree (matrix · fs walk · package.json), never hand-typed.",
-    "uuid": "1bb8b1ea-2884-8e0a-9ebb-5d0cca408763",
+    "uuid": "69db5f6f-bf18-823d-9239-9efef7ab6303",
     "words": [
       "use",
       "when",

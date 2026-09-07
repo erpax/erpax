@@ -2,11 +2,11 @@
 name: receive
 description: "Use when reasoning about receive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/receive"
-coordinate: "vocabulary/receive · 8/crest · 412653a3"
-contentUuid: "257c87b6-bb02-5be0-b9f6-5fc59723601d"
-diamondUuid: "308b1215-a24e-8e10-adaa-10eb022d2e3a"
-uuid: "412653a3-1f0c-87dc-91a8-8e8022f3dea0"
-horo: 8
+coordinate: "vocabulary/receive · 5/round · 0fd3fd5c"
+contentUuid: "d5c1d0ee-097a-5688-ba39-9d4c5e4f0c9b"
+diamondUuid: "6575dda9-bd3d-8139-b814-ac2f329f837c"
+uuid: "0fd3fd5c-93ba-8aaa-9813-fa7548d08229"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "826bed9e-1716-8c3e-a87c-4f1c1c4145af"
+  computationUuid: "55553251-7dea-8bcf-934a-9906b8f3a63c"
   stages:
     - stage: path
       stageUuid: "f040a4b1-c746-8f82-9ca3-ac28450d6048"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2a0bffa8-332e-8d9b-ba9d-ac11b4339679"
     - stage: horo
-      stageUuid: "fc4b1c11-d998-88a8-9466-03716af8d6d3"
+      stageUuid: "cd3b873b-4420-8cfa-9b69-eb0db4070daa"
     - stage: seal
       stageUuid: "f6e42b8b-d91b-8829-aba1-3f81e2cb5584"
     - stage: uuid
-      stageUuid: "bc2e3c0c-4ced-8b8d-b55f-1d14ebddc02a"
+      stageUuid: "0b000f37-6dbc-84a9-bcb4-cc62f0bd5f5a"
 version: 2
 ---
 # receive

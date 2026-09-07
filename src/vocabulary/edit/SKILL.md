@@ -2,11 +2,11 @@
 name: edit
 description: "Use when reasoning about edit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/edit"
-coordinate: "vocabulary/edit · 5/round · e280934e"
-contentUuid: "cf6208be-7ce5-519a-b532-33aabca8af47"
-diamondUuid: "8827d84c-03c1-88ab-a36e-a56ed0e1e8ca"
-uuid: "e280934e-e4b7-8ab2-8fed-736c41dacb34"
-horo: 5
+coordinate: "vocabulary/edit · 7/descent · 3cca3eff"
+contentUuid: "181a633b-26d4-532d-8da7-32070c9dd88b"
+diamondUuid: "12c42ac3-da11-8042-bad3-ba71c818ddc4"
+uuid: "3cca3eff-cdf4-817b-a702-e708a91e6fa0"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a27332d9-cfb0-8ec8-bc1a-6445d1f58893"
+  computationUuid: "eab3cb38-aeb1-86d6-8d25-5ba8a0e80afe"
   stages:
     - stage: path
       stageUuid: "64569ba8-db47-8e83-ad69-fb50c934da02"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "65310b86-eea6-805b-8cca-32ddc2d556de"
     - stage: horo
-      stageUuid: "89a58d1e-4591-84cb-91b1-017f08705c74"
+      stageUuid: "2715118c-484f-8584-820e-8c332ed905b0"
     - stage: seal
       stageUuid: "af51b75b-d493-88c9-9a7f-c9b61bdb0ed7"
     - stage: uuid
-      stageUuid: "a73ad755-c016-8370-b594-62cb895cb98c"
+      stageUuid: "71dc8e35-e6a9-862c-8e1f-68acd2818235"
 version: 2
 ---
 # edit

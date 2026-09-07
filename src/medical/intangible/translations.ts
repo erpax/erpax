@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "intangible",
-    "uuid": "fa914797-cc6d-8f5c-b81b-be53c028533b",
+    "uuid": "2be6bc26-abfe-8f60-801c-3dc0cad2275a",
     "words": [
       "intangible"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about intangible as a medical facet of medical — vocabulary pivot to @/intangible; nested not duplicated.",
-    "uuid": "36feb212-d492-8ba2-a020-5c87d89e15a1",
+    "uuid": "2a2de5f2-7391-8e3b-9bae-dacbd13845d5",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: plugin
 description: "Use when a plugin needs a narrowed Cloudflare access surface — the typed PluginAccess<K> face plus its helper, so a plugin receives only the bindings it declares."
 atomPath: "cloudflare/plugin"
-coordinate: "cloudflare/plugin · 4/weave · 3b23d8b7"
-contentUuid: "dd51af79-acee-5e00-8054-ff8c924c0c16"
-diamondUuid: "3dbf47ef-8e0b-8990-979c-84f2b68c0d3c"
-uuid: "3b23d8b7-58a4-83ea-b22f-d755b5559057"
-horo: 4
+coordinate: "cloudflare/plugin · 5/round · be98ae48"
+contentUuid: "dfba3c70-0892-5393-9972-c6f128933530"
+diamondUuid: "7c20d0ea-6540-8370-83c6-6f45e917eccf"
+uuid: "be98ae48-119e-8a9a-8f52-9de81bd8801d"
+horo: 5
 typography:
   partition: cloudflare
   bondDegree: 47
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC-27001:2022"
 bindings: []
 signatures:
-  computationUuid: "25408e00-59a8-83ce-ac68-b6cf43abb2d2"
+  computationUuid: "409e7c63-8d9e-8cec-bdce-0e819a6b8dc1"
   stages:
     - stage: path
       stageUuid: "4e348906-8276-8c5c-bf0c-1d683508e818"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "fba0e86e-693e-8068-9835-048ef84fd2d5"
     - stage: horo
-      stageUuid: "b64d6bf3-2548-8ab0-9498-c3cc045a2b9f"
+      stageUuid: "f6f041e0-e908-855e-adc9-303149f98a02"
     - stage: seal
       stageUuid: "19e0a7d6-14e4-8a8f-9d67-1300f4aa07a8"
     - stage: uuid
-      stageUuid: "a881f2ef-f0ec-873e-8eb0-b744b4a60ae6"
+      stageUuid: "d8a2d9cd-2b32-8273-8a3e-a03d022a8668"
 version: 2
 ---
 # plugin

@@ -2,11 +2,11 @@
 name: big
 description: "Use when reasoning about big as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/big"
-coordinate: "vocabulary/big · 4/weave · ea0ed3ec"
-contentUuid: "746d8c08-bc29-5c0e-ad50-9fec1511556c"
-diamondUuid: "90805152-d5b2-87a4-b315-a5c3a4ce731d"
-uuid: "ea0ed3ec-3fdd-857e-8d45-573efb0282aa"
-horo: 4
+coordinate: "vocabulary/big · 1/base · 3742b9c5"
+contentUuid: "40d8a837-b717-55f2-b25d-dd9cd81ade30"
+diamondUuid: "bfd4f74b-1d6c-8df1-b150-d82d214b373d"
+uuid: "3742b9c5-e365-887a-8b96-49bafe00e576"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5855f306-e7ba-8cdc-9d8e-39fada306ed9"
+  computationUuid: "203c5d3b-f1d1-848a-947f-35f6b337a2f7"
   stages:
     - stage: path
       stageUuid: "36eb4284-0942-85fe-83d0-6f69542fc3dd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e1988109-dbf9-836f-bc31-857adc188339"
     - stage: horo
-      stageUuid: "b1f95d21-f65e-8d8f-bbf1-66b1827b005a"
+      stageUuid: "58ac698f-25ff-8319-942a-b4df7d065a55"
     - stage: seal
       stageUuid: "03b9ca8d-ba6c-8c42-81e3-cb6fe6c1898c"
     - stage: uuid
-      stageUuid: "b0b66c8e-8517-8a12-abeb-54049075dcad"
+      stageUuid: "e80812da-3165-8f20-a297-30df47e3c0b1"
 version: 2
 ---
 # big

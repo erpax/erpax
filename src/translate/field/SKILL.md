@@ -2,11 +2,11 @@
 name: field
 description: "Use when Payload should self-translate a field on read — an afterRead field hook that projects the stored source value into req.locale through the shared messaging-uuid (the rosetta pivot), so a locale renders without per-locale storage. Falls back to the source where a rendering is the unregistered seed; never fabricates. This is how the CMS becomes self-translating: write once, any language/dialect is a computed projection."
 atomPath: "translate/field"
-coordinate: "translate/field · 4/weave · a08690b3"
-contentUuid: "9f6a42c9-0772-531d-b9c7-7d750cdd400e"
-diamondUuid: "b691d722-3a39-807f-926c-5cd52035d654"
-uuid: "a08690b3-4f4d-89ac-bcda-4244f5400d2c"
-horo: 4
+coordinate: "translate/field · 2/share · a17260a9"
+contentUuid: "0009cc4a-a2e1-5f0a-8c93-0c1029351fcd"
+diamondUuid: "b0115718-3a57-8a3a-a4cf-63c27b318964"
+uuid: "a17260a9-8e9d-84fd-8559-830c75d4df0e"
+horo: 2
 typography:
   partition: translate
   bondDegree: 358
@@ -14,7 +14,7 @@ standards:
   - "Payload field hooks (afterRead) · BCP-47 locale tags"
 bindings: []
 signatures:
-  computationUuid: "82bf4bc1-8397-8f18-be8f-0c3cd932c579"
+  computationUuid: "0f661595-8601-84e7-8a71-1727e5dd8f21"
   stages:
     - stage: path
       stageUuid: "f166fc87-1d28-88f7-9953-5dacfcbb2451"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b1067e74-2fd4-811e-b16e-ff6fb3e1adc8"
     - stage: horo
-      stageUuid: "c8407118-c4b5-84c1-a904-da0925112e3c"
+      stageUuid: "80db614b-878a-8472-b560-262ee8264895"
     - stage: seal
       stageUuid: "d8221ecb-17bb-81d1-9bc3-1ff729e25049"
     - stage: uuid
-      stageUuid: "d89ff795-0f0e-8efb-94ab-9195bc745f54"
+      stageUuid: "2f485117-1a13-82aa-99c7-e343f25ba24a"
 version: 2
 ---
 # field — the Payload translate hook

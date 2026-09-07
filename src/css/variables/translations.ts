@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "variables",
-    "uuid": "ce742dac-97ce-8e82-95e8-deb69d43bf89",
+    "uuid": "5086a897-3846-8429-bf92-07459a2973e7",
     "words": [
       "variables"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about variables — Six numbers, and they lived in — a file at the ROOT of , which belongs to no atom.",
-    "uuid": "7a5e3a6c-bfd4-8a7c-8668-76f8c183aa0b",
+    "uuid": "be004206-fad2-8678-8edd-c995e259d52d",
     "words": [
       "use",
       "when",

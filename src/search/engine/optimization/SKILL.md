@@ -2,10 +2,10 @@
 name: optimization
 description: "Use when making erpax discoverable — search engine optimization (SEO); the canonical keyword and GitHub-topic strategy plus an on-page relevance scorer that the README and npm package draw from."
 atomPath: "search/engine/optimization"
-coordinate: "search/engine/optimization · 5/round · aa04af06"
-contentUuid: "6375350c-009b-5c78-81b8-ca0de7559586"
-diamondUuid: "2fcbb462-510a-8528-a1e4-c75d4a1fb014"
-uuid: "aa04af06-3772-8c2a-8b36-9ae823bfd81e"
+coordinate: "search/engine/optimization · 5/round · 7596d6fb"
+contentUuid: "3c77ef6a-baee-578d-9ffa-584e522b3746"
+diamondUuid: "70443ba8-b55d-8ee8-b062-740f7c787bbd"
+uuid: "7596d6fb-14d9-8d10-a297-17a87b8714ad"
 horo: 5
 typography:
   partition: search
@@ -14,7 +14,7 @@ standards:
   - "schema.org + Open Graph discoverability; on-page keyword coverage"
 bindings: []
 signatures:
-  computationUuid: "f6eb2a22-eb2c-8c29-8e00-490e3f150156"
+  computationUuid: "175ad8f5-4987-8e0d-86e6-009a0f33cb7a"
   stages:
     - stage: path
       stageUuid: "8a5a6a4c-8367-87c4-86ec-99be94514db8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fa63c35c-125c-88b0-ac77-3c523c444a60"
     - stage: horo
-      stageUuid: "7fc57c66-70a7-825e-883e-0b31a3b4a3ea"
+      stageUuid: "1931f974-b829-8e37-9a10-a3779b35589f"
     - stage: seal
       stageUuid: "dc173685-2dfc-8cff-9d2b-5bdf2f881784"
     - stage: uuid
-      stageUuid: "67a15399-d333-8baa-9a93-132eb6a49995"
+      stageUuid: "bca15f87-3078-8725-9495-eeff55ed1055"
 version: 2
 ---
 # search/engine/optimization — SEO

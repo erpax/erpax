@@ -2,11 +2,11 @@
 name: sales
 description: "Use when recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer — revenue recognition, COGS derecognition, commission calculation, inventory decrement, and GL journal booking. The consignment sale-event collection."
 atomPath: "warehouse/locations/consignment/arrangements/consignment/sales"
-coordinate: "warehouse/locations/consignment/arrangements/consignment/sales · 4/weave · b239cb09"
-contentUuid: "02cc9a0e-dff7-581b-9ddb-f1ee0d90d48e"
-diamondUuid: "0ce70d13-5b03-8de2-834b-12732eb6180b"
-uuid: "b239cb09-fbba-8cdf-84d4-adafb39ffeb1"
-horo: 4
+coordinate: "warehouse/locations/consignment/arrangements/consignment/sales · 1/base · 6d45057c"
+contentUuid: "d13d3455-401e-5abf-a812-8386b3457dcb"
+diamondUuid: "e7557322-d451-805d-953e-12fc976c8d60"
+uuid: "6d45057c-3796-8d5d-8223-7bb6e65e489e"
+horo: 1
 typography:
   partition: warehouse
   bondDegree: 37
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "6d540f40-933f-8af9-854b-94dd386bdd36"
+  computationUuid: "4534c810-d22a-8395-8ca0-d9962ccea71f"
   stages:
     - stage: path
       stageUuid: "51d29834-c311-8ea0-96b4-5d7412d932d9"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "8d62d6f4-7be9-82df-bdb7-279f12ab4288"
     - stage: horo
-      stageUuid: "35dfae93-8fae-8d73-bfcb-64f080c4753b"
+      stageUuid: "eba0022e-c4a4-85cb-86e2-bec13ea65c68"
     - stage: seal
       stageUuid: "07de05d5-e98a-80e0-b971-8d39d97683f4"
     - stage: uuid
-      stageUuid: "03dc8f20-05ce-8ad3-aa6b-4a603b493a2a"
+      stageUuid: "c63b1d86-c6ee-8d1d-95e9-a4c444479bd3"
 version: 2
 ---
 # consignment-sales

@@ -2,11 +2,11 @@
 name: migrate
 description: "Use when collapsing structural violations into the canonical four-file atom — the computable migrating skills that run with zero manual work."
 atomPath: migrate
-coordinate: "migrate · 4/weave · f42b2bc7"
-contentUuid: "0c688eca-c2ca-59f1-9c8e-82d2cec4cbb7"
-diamondUuid: "d5a710d2-9c6b-83b5-80b5-8a3cbe50c6ee"
-uuid: "f42b2bc7-3154-8e32-af79-a4e041ecb8f1"
-horo: 4
+coordinate: "migrate · 8/crest · 754152ed"
+contentUuid: "c7828ac4-c08d-5d3b-9148-941c7d6275b1"
+diamondUuid: "f4b5ad25-01f0-8a15-932d-1e1a100e7be6"
+uuid: "754152ed-ee30-83dc-99db-fe6cbb2a1b53"
+horo: 8
 typography:
   partition: migrate
   bondDegree: 34
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.6 — maintainability: a change is reviewable when it is reproducible"
 bindings: []
 signatures:
-  computationUuid: "e7475bc6-6b5d-8ed7-b1c3-382c41ff1804"
+  computationUuid: "c85f8fea-408f-8706-be91-2eac940b639b"
   stages:
     - stage: path
       stageUuid: "066ccdc2-8be7-854f-8389-26c35834859c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b8ce6ec0-f800-8430-a763-1e80f7b303b3"
     - stage: horo
-      stageUuid: "f50ace84-df8b-8e14-bf11-9e0a9757a3c8"
+      stageUuid: "2e3a8688-da60-8aa1-a409-ed6fa51f5759"
     - stage: seal
       stageUuid: "e4489aa5-0458-8df0-b1ca-2b98fc2b4705"
     - stage: uuid
-      stageUuid: "2fc6ac84-6b01-83fb-a1b7-ca15e9e57006"
+      stageUuid: "81f7085c-a605-88a9-b068-ae763285619e"
 version: 2
 ---
 # migrate

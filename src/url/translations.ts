@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "url",
-    "uuid": "4cf8f157-98ae-8ea0-951e-22b186c26937",
+    "uuid": "9f311530-6901-8e1e-867b-725b05206988",
     "words": [
       "url"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about url — Data type: URL.",
-    "uuid": "61c871cb-dc3e-862a-b2a1-cd42ac1c7e9c",
+    "uuid": "886cf35a-9da6-865e-af35-840ca7aa4339",
     "words": [
       "use",
       "when",

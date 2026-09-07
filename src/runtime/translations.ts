@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "runtime",
-    "uuid": "5611b3dc-148a-8944-9cb4-dfced0c63aaa",
+    "uuid": "7761bfaa-4e50-8fc8-9a2a-0df99d736819",
     "words": [
       "runtime"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about runtime — Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
-    "uuid": "54fb2fdd-7694-8d5f-919e-89466ef72d39",
+    "uuid": "8cd7f4e5-5a71-804e-a056-904ae38fb83e",
     "words": [
       "use",
       "when",

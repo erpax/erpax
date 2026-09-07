@@ -2,11 +2,11 @@
 name: correspondence
 description: "Use when asked whether string theory or quantum computation bears on the Millennium Problems, or whether any of it strengthens cryptography. A physical duality can PREDICT a statement that mathematics then proves — mirror symmetry is the genuine instance — but a correspondence never proves the problem it corresponds to, so every row carries the precise gap that remains beside what is really established. bearsOnSecurity is false in every row, declared per row rather than waved away: hardness rests on module-LWE, factoring, discrete logs and hash preimage resistance, and no result here constrains any of them."
 atomPath: "millennium/correspondence"
-coordinate: "millennium/correspondence · 7/descent · 4c5ee137"
-contentUuid: "911b4c50-bf57-5730-9dc8-01d9e09aef29"
-diamondUuid: "a087773b-3232-8899-8bc7-5e0ffd12a431"
-uuid: "4c5ee137-7652-821b-93ad-e7c38618c9c6"
-horo: 7
+coordinate: "millennium/correspondence · 2/share · de08186a"
+contentUuid: "cdba7c20-f9b2-5b44-ab5c-cf54df6db96f"
+diamondUuid: "76295d78-e01d-8823-95b0-15a587da2b06"
+uuid: "de08186a-ee1f-8588-99f4-c2ef7da29800"
+horo: 2
 typography:
   partition: millennium
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "723e67fc-f729-8a59-9000-b83e9ef0fd95"
+  computationUuid: "2c3b2f42-b503-8988-95b6-fbcba9fce626"
   stages:
     - stage: path
       stageUuid: "6b842b5c-c0d8-8f7a-8349-13a15db100ff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "942c7bc3-56bc-8790-953c-2ae30a7c2f6b"
     - stage: horo
-      stageUuid: "ab8ca7e3-4d41-84f4-8211-88825a3261df"
+      stageUuid: "24ae3596-e049-8c04-b930-ee5296e9e488"
     - stage: seal
       stageUuid: "9f13dd7b-9fcc-8525-88fc-568d02bd66c5"
     - stage: uuid
-      stageUuid: "340172b1-9424-8b43-bc53-cb01b7be1271"
+      stageUuid: "13d490fb-a043-86b5-a72b-d3f247fba37a"
 version: 2
 ---
 # millennium/correspondence — physics predicts; mathematics proves

@@ -2,11 +2,11 @@
 name: program
 description: Use when reasoning about program — The MemberProgram associated with a ProgramMembership.
 atomPath: "vocabulary/program"
-coordinate: "vocabulary/program · 4/weave · 258f54c9"
-contentUuid: "013656fc-8406-5339-a511-c9fcea4b7b2a"
-diamondUuid: "17151da5-4a37-88a9-9d9b-facf26aa7853"
-uuid: "258f54c9-7bf1-89e7-8b58-d041836aef8b"
-horo: 4
+coordinate: "vocabulary/program · 1/base · 33172143"
+contentUuid: "906adb04-184c-5a19-bb42-6ad508254317"
+diamondUuid: "92ea7d73-4b76-8ac0-a6e2-7f2026f19ecc"
+uuid: "33172143-ec6c-8586-8316-4dc905f27576"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 55
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d9d50f7c-803c-85bf-9eb9-a191ea793e67"
+  computationUuid: "df0c1505-bce0-82ce-a248-3990fbb40784"
   stages:
     - stage: path
       stageUuid: "3a94a916-2cbe-8dae-9b25-9a4c31c6d87d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42eed7b4-9edb-8200-afc0-a5f3c97e006e"
     - stage: horo
-      stageUuid: "cc50c7a6-eab0-8269-ad24-c24df65c4998"
+      stageUuid: "e4ae9c95-d4c7-8d8d-a8db-ae1932b65e75"
     - stage: seal
       stageUuid: "228dc201-00f6-86d3-9750-d198ce16a9a2"
     - stage: uuid
-      stageUuid: "f32dcc58-84bc-8bdc-b023-8a74adcf5b71"
+      stageUuid: "304bbc2a-a7ec-87b1-8c1c-32ee6b343c36"
 version: 2
 ---
 # program

@@ -2,11 +2,11 @@
 name: billing
 description: "Use when reasoning about billing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: billing
-coordinate: "billing · 1/base · bed3b67d"
-contentUuid: "1d4a6b66-718d-5374-b5ac-cce7e05cbb03"
-diamondUuid: "bd97f2b1-4fe8-8403-b91e-b76f12ade224"
-uuid: "bed3b67d-39b3-85d9-a1d5-2a92e5d818a5"
-horo: 1
+coordinate: "billing · 4/weave · 8053468e"
+contentUuid: "6ebb8f8f-0769-570a-ad74-ba320ab95449"
+diamondUuid: "5ef43aaf-36ed-8cbe-a8c4-e249d7b09076"
+uuid: "8053468e-80d2-80fe-9588-36f9d815901a"
+horo: 4
 typography:
   partition: billing
   bondDegree: 30
@@ -18,7 +18,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cdcece4c-cb6a-8dc7-bfc5-e0eab955fdab"
+  computationUuid: "7a889d1c-ab01-8d2b-8093-ea512746b44b"
   stages:
     - stage: path
       stageUuid: "8052b17b-559b-88a1-bf7f-0acf523781ef"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "0f3a34c3-2e00-8d4b-a6b0-ae27f4848591"
     - stage: horo
-      stageUuid: "32727b3b-b2df-8b22-b0dc-d880c0b3b475"
+      stageUuid: "60cf011c-cae7-8ae1-9f0c-76a907b49088"
     - stage: seal
       stageUuid: "0b571f3e-80f6-8ee6-aa17-91fb516af0f5"
     - stage: uuid
-      stageUuid: "cc92d9b2-818a-8b93-ad9a-300f7527d430"
+      stageUuid: "99f3afe0-b76e-862d-925e-8603cfda4b66"
 version: 2
 ---
 # billing

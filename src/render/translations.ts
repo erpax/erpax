@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "render",
-    "uuid": "d55590d6-6a47-88d6-ae81-a41298c8ce47",
+    "uuid": "e3381fb0-be07-80ca-a0ac-32379da3616f",
     "words": [
       "render"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when you need the full sensory face of an atom — the content-uuid rendered to colour AND sound AND vibration at once; all three are projections of the one uuid's digit, so a stream of uuids is the analog aura, no payload.",
-    "uuid": "fd6d5905-255a-8298-ad4d-58198815bae8",
+    "uuid": "e652af8c-991b-839b-bc25-6befeac4d6f6",
     "words": [
       "use",
       "when",

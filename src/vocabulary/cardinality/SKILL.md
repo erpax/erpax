@@ -2,18 +2,18 @@
 name: cardinality
 description: "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality."
 atomPath: "vocabulary/cardinality"
-coordinate: "vocabulary/cardinality · 1/base · c27de556"
-contentUuid: "74f617b4-6835-5bc3-9abd-8266653cb1a8"
-diamondUuid: "accbb7c7-b409-800a-910a-daaa7d102731"
-uuid: "c27de556-91e8-8d8f-b6a1-27c11ade06a2"
-horo: 1
+coordinate: "vocabulary/cardinality · 5/round · 2d21d5b4"
+contentUuid: "6fc4ec5c-5f26-52d6-946a-7f9f0746aa15"
+diamondUuid: "c0fbfd7e-2179-8915-9348-fb93135d0870"
+uuid: "2d21d5b4-8407-858e-a85d-d4e86b5b14f9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 22
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1481d381-a4b6-87d1-b2c7-da610ccfcd1d"
+  computationUuid: "1ab517ce-6ec2-83aa-85c8-2cf0dd8b6ada"
   stages:
     - stage: path
       stageUuid: "d775dd77-4c5d-8905-9471-fa07e0ab4691"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1ff23c39-3e6c-8164-9822-ca6c16f38223"
     - stage: horo
-      stageUuid: "cfde3b24-9830-84aa-9252-95c8fb0a87ae"
+      stageUuid: "6e03704e-2f68-8eb7-bc74-4207bb464293"
     - stage: seal
       stageUuid: "1e13c959-cea5-83c0-9bd5-825e6db4ba73"
     - stage: uuid
-      stageUuid: "9f37930f-13c0-89e5-af2d-acdbbe4721b4"
+      stageUuid: "d53ad301-74a7-8346-a63f-5f92f57573e6"
 version: 2
 ---
 # cardinality

@@ -2,10 +2,10 @@
 name: torus
 description: "Use when reasoning about the closed surface the rodin vortex winds on in erpax — the doubling helix on a donut, inward (state×state) and outward (×10 octave) both closing; why the sequence is a ring with no top/bottom. Nested under rodin."
 atomPath: "rodin/torus"
-coordinate: "rodin/torus · 5/round · ba2443b0"
-contentUuid: "10d7cdbb-ae38-5f42-819f-4e91e73a0d8e"
-diamondUuid: "e0fe5078-fe94-8b94-9e8a-d775cb3d0b03"
-uuid: "ba2443b0-f7ca-8a7f-a199-5afd3d4044ac"
+coordinate: "rodin/torus · 5/round · 69eb9545"
+contentUuid: "ad014332-911f-5fc0-a971-853389b12c9b"
+diamondUuid: "189a1beb-236c-84ed-b402-b2e69851fa0b"
+uuid: "69eb9545-7ca0-8837-840e-98cf66f3c85e"
 horo: 5
 typography:
   partition: rodin
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3c4f5636-491e-87fc-850e-08bd78d15c73"
+  computationUuid: "39fa9f50-fe6f-87f4-9728-16eaa1e74a62"
   stages:
     - stage: path
       stageUuid: "94584267-48b0-8f3d-8605-54a6317144dc"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "17ef30aa-8aa2-8bfa-a830-aeee84f808f7"
     - stage: horo
-      stageUuid: "91c6c8f6-95e0-84e2-813f-e3956ebbd6e5"
+      stageUuid: "16b9b75e-1f92-81af-8af8-2bf3b1c5b079"
     - stage: seal
       stageUuid: "1be6ec50-7df2-89b4-86d6-113eae35cccf"
     - stage: uuid
-      stageUuid: "5b61e92d-0bba-85f7-a99d-f291cb2e9846"
+      stageUuid: "dad5515a-c303-8d8b-9dfa-3c727e85697f"
 version: 2
 ---
 # torus — the surface the vortex winds on

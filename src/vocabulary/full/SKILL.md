@@ -2,10 +2,10 @@
 name: full
 description: "Use when reasoning about full as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/full"
-coordinate: "vocabulary/full · 2/share · e26c8719"
-contentUuid: "1f9a1e64-701d-5e6c-be03-49218f31b7d0"
-diamondUuid: "9b8dd50f-6ea8-8208-87e7-c0171490c222"
-uuid: "e26c8719-6f2b-8d05-8219-1020c21612a2"
+coordinate: "vocabulary/full · 2/share · 5c29f8b5"
+contentUuid: "22eadbaa-4ef8-573f-9a9c-c821ab2a7f03"
+diamondUuid: "2e3622cc-849a-8f2a-a1af-171371173a56"
+uuid: "5c29f8b5-0fe7-8bb4-a137-5b5ed2fbbc98"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "643124cd-a08f-8c6c-b551-af31bab0d77b"
+  computationUuid: "437d9f32-de18-864c-8cc1-ac1e654f1126"
   stages:
     - stage: path
       stageUuid: "771fa99a-1411-844b-96c8-12eccd7a98f1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c5ef7cca-10e2-8f8c-94b0-1156d229eaeb"
     - stage: horo
-      stageUuid: "b9506d6e-eeac-84ec-ba72-c4dffebd8a76"
+      stageUuid: "03edc3ba-5246-8942-89ea-614419134ec2"
     - stage: seal
       stageUuid: "ff747e37-d5ee-8da0-b112-bce6f4dab64a"
     - stage: uuid
-      stageUuid: "5e00eacc-922b-8ee4-bca0-edb094052802"
+      stageUuid: "0f89ac2a-2e00-8f54-b254-7278bde73668"
 version: 2
 ---
 # full

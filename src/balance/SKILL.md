@@ -2,10 +2,10 @@
 name: balance
 description: "Use when reasoning about equilibrium in erpax — Σdebit=Σcredit, trial balance, conservation laws, two sides of a flow at rest. The universal root of equilibrium."
 atomPath: balance
-coordinate: "balance · 4/weave · 2a9343fd"
-contentUuid: "f141ba0b-3f65-5986-8051-607cb5cbacdf"
-diamondUuid: "c7cd33fe-d4ed-8653-bdf5-bbf23ed75ea1"
-uuid: "2a9343fd-a355-80f0-85fd-ad2a2ed84d2b"
+coordinate: "balance · 4/weave · 055284fd"
+contentUuid: "f0f2febe-b55d-5039-8a89-61955bd4e777"
+diamondUuid: "a095e398-fce1-8e13-bde7-2b089202f023"
+uuid: "055284fd-e6ac-8633-888f-dd995ea56a2b"
 horo: 4
 typography:
   partition: balance
@@ -15,7 +15,7 @@ standards:
   - "double-entry bookkeeping (Pacioli, 1494) — every credit a debit; imbalance is the bug"
 bindings: []
 signatures:
-  computationUuid: "26ac9dee-79ac-8c34-ace4-f455e81e9aaf"
+  computationUuid: "540621fa-f821-8332-b0e7-1a2555338f38"
   stages:
     - stage: path
       stageUuid: "87f9fcfc-48e8-8e07-90df-18e3ac4b227c"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "40bdd9d5-ba31-8a90-bd84-c758c71ebc57"
     - stage: horo
-      stageUuid: "dc748f5a-eec9-8312-a4b2-39cb2531ef05"
+      stageUuid: "bef558c4-0a9e-87bc-bcd7-5e994310c5c9"
     - stage: seal
       stageUuid: "269de699-9292-8123-b199-ce7ec3f88192"
     - stage: uuid
-      stageUuid: "771ebf70-5e3e-8628-8ee0-e69993dc53ea"
+      stageUuid: "377e6a60-3ecb-851c-ab86-85a2b63d412b"
 version: 2
 ---
 # balance

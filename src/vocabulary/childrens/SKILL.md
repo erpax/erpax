@@ -2,10 +2,10 @@
 name: childrens
 description: "Use when reasoning about childrens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/childrens"
-coordinate: "vocabulary/childrens · 8/crest · bca0d87f"
-contentUuid: "48ce9048-209b-5c89-af0c-1d587f278435"
-diamondUuid: "62dca3c5-5ee5-8884-a6f3-bbf205da62dc"
-uuid: "bca0d87f-e135-8eab-b89a-775d27b9ac7f"
+coordinate: "vocabulary/childrens · 8/crest · f3ebaf01"
+contentUuid: "d4dd528d-f5e9-5595-b188-60b914cfcd1f"
+diamondUuid: "9685bc45-cde0-8f92-87e1-fe17185ad5c4"
+uuid: "f3ebaf01-4af0-8bde-80c3-2829c4bab5a7"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "27f28b25-cc86-892c-aa96-188d3288884a"
+  computationUuid: "3ef5df18-cb01-8673-a241-e4a1f4b63e35"
   stages:
     - stage: path
       stageUuid: "37dd3f86-31e7-89fb-bc8f-0fb86d4ca55d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4b3204a2-e345-8d80-8875-b9ab74f01e78"
     - stage: horo
-      stageUuid: "b3471e24-2238-8aa6-9a48-620d8f0d3495"
+      stageUuid: "29706b84-ccae-83fd-8e96-9ad822fa2685"
     - stage: seal
       stageUuid: "fce76480-6f71-8090-becb-7f9c0df35ebd"
     - stage: uuid
-      stageUuid: "31862c7e-d68a-82f6-819d-06e1f8936b62"
+      stageUuid: "a3d134b9-dbc6-8580-bd2a-bccf56d0fdc5"
 version: 2
 ---
 # childrens

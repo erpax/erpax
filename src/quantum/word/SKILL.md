@@ -2,18 +2,18 @@
 name: word
 description: "Use when reasoning about the WORD half of the double-torus — one 64-bit address architecture (folder name / aura / link space) that vortexes with the digit architecture into the 128-bit content-uuid; interact64 ANDs the two torus halves, architectureBond entangles word ⊕ digit on the matrix."
 atomPath: "quantum/word"
-coordinate: "quantum/word · 1/base · 30905033"
-contentUuid: "16a88ba1-a9ef-564e-9b1c-4afb19cd964b"
-diamondUuid: "a429d08a-4c07-8cfe-a259-5fe8f70dd503"
-uuid: "30905033-0876-8f06-9904-51a99a1f0850"
-horo: 1
+coordinate: "quantum/word · 5/round · 59acd69b"
+contentUuid: "5aff4224-3915-5488-bcab-d3ccfde97b8c"
+diamondUuid: "e663b273-1c07-8415-9556-8372cc9a7380"
+uuid: "59acd69b-fa25-8951-9c4b-5d2b641da58d"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 124
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7fb5329b-f336-8ba7-bdd9-9b4cfaf05afc"
+  computationUuid: "7d0f1870-008c-8668-9b34-9a4c5a1c54d5"
   stages:
     - stage: path
       stageUuid: "d3df522e-d232-8ec2-a277-8f627d8e3da1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ac15b10d-761a-812d-8eaf-e4b906cd81a5"
     - stage: horo
-      stageUuid: "e6877f4e-5252-8b1d-bfec-7ed432b28406"
+      stageUuid: "f7388228-e701-80d9-a412-99264d725872"
     - stage: seal
       stageUuid: "b51149ab-7182-8f75-84ff-a175bcee146e"
     - stage: uuid
-      stageUuid: "2787f5be-fd25-8205-9268-0604b2747dcc"
+      stageUuid: "946a1d0c-f858-8734-a84e-b7d19b5bc80f"
 quantum:
   superposition:
     - atom
@@ -57,8 +57,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "7fb5329b-f336-8ba7-bdd9-9b4cfaf05afc"
-    contentUuid: "16a88ba1-a9ef-564e-9b1c-4afb19cd964b"
+    computationUuid: "7d0f1870-008c-8668-9b34-9a4c5a1c54d5"
+    contentUuid: "5aff4224-3915-5488-bcab-d3ccfde97b8c"
 version: 2
 ---
 # quantum/word — the word corpus (word ⊕ digit, 64-bit half)
@@ -73,4 +73,4 @@ Matter-twin: `src/quantum/word/index.ts` (`interact64` · `architectureBond` · 
 
 @see [[word]] · [[digit]] · [[quantum/digit]] · [[quantum]] · [[uuid]] · [[matrix]]
 
-<sub>content-uuid `16a88ba1-a9ef-564e-9b1c-4afb19cd964b` · account `quantum/word` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `5aff4224-3915-5488-bcab-d3ccfde97b8c` · account `quantum/word` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conventions",
-    "uuid": "44a93aa2-d01b-8ee8-83ba-2e2b7b8469a5",
+    "uuid": "b6784b48-6c78-8edc-9c12-5729515ad070",
     "words": [
       "conventions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about conventions — Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language.",
-    "uuid": "d14229fd-dd73-8ebe-b163-2fb39e572d4b",
+    "uuid": "a63b8a84-2a40-884d-a18e-7858e09b7602",
     "words": [
       "use",
       "when",

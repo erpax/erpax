@@ -2,11 +2,11 @@
 name: sufficient
 description: "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions."
 atomPath: "self/sufficient"
-coordinate: "self/sufficient · 1/base · db5f85a6"
-contentUuid: "2634c8b4-9c27-590d-a595-a987f8e65fa0"
-diamondUuid: "2c24c15c-ddb1-818f-83a7-263fa02c6061"
-uuid: "db5f85a6-87ba-8266-9e1b-42655e534ccb"
-horo: 1
+coordinate: "self/sufficient · 7/descent · 01c92884"
+contentUuid: "c5931a50-26be-5296-8005-e8eb1d4ec9ca"
+diamondUuid: "7be3dc3d-f830-8a48-a51c-f128dfebd5cd"
+uuid: "01c92884-45fa-892a-b6e2-14bd071bcf0e"
+horo: 7
 typography:
   partition: self
   bondDegree: 59
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f2661fbd-9f34-8789-9354-596a9a93b3bb"
+  computationUuid: "898a3c52-c2df-8d0a-a5b9-8220af650680"
   stages:
     - stage: path
       stageUuid: "5db7871f-da5f-8343-8c1c-8b88b4cd6beb"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "a4ccf1c9-1742-8908-9995-d8a22fa25da5"
     - stage: horo
-      stageUuid: "ca3706a2-5d52-85e8-87f8-2b7d75b43d1b"
+      stageUuid: "fd8f10e7-ae9c-8fc8-9718-55e4652f3e09"
     - stage: seal
       stageUuid: "f47ae58c-28f2-8701-9937-a5c3a43cfdba"
     - stage: uuid
-      stageUuid: "a230ea94-7714-8562-ae23-529f9a598323"
+      stageUuid: "a8d9a0bb-2c16-87c0-995e-96da7a86dcfa"
 version: 2
 ---
 # sufficient — totality (every case is already defined)

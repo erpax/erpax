@@ -2,11 +2,11 @@
 name: agreement
 description: "Use when reasoning about agreement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/agreement"
-coordinate: "vocabulary/agreement · 1/base · ab2134c5"
-contentUuid: "872a3d45-91d0-5d41-946c-a898db251074"
-diamondUuid: "97530a35-d796-8aca-84fc-7a870d24e4db"
-uuid: "ab2134c5-9e27-8a22-a7ad-db8da1cd6842"
-horo: 1
+coordinate: "vocabulary/agreement · 4/weave · bf129cb3"
+contentUuid: "50fcd5e6-39ed-504d-be1c-b7b675c518e7"
+diamondUuid: "64ea583b-afe1-8fd0-a3d4-80b11324cb29"
+uuid: "bf129cb3-d94f-8282-9a5f-e4c992ab4609"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dbb7d023-cee3-86ba-9af0-df1128a23f98"
+  computationUuid: "825b09f3-2dd2-8bfa-ad8c-3eec8664a213"
   stages:
     - stage: path
       stageUuid: "f6c8877b-af14-8f62-80d6-fb0c48fab0f2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9f2b6626-90e2-89e9-8d54-e55510f5e022"
     - stage: horo
-      stageUuid: "81a38f23-1ebf-8ab9-a908-834dd3b56321"
+      stageUuid: "74c01dfb-ade7-8371-a9ac-2215e287eaa0"
     - stage: seal
       stageUuid: "3fa08c9b-2534-8036-91f1-f2f1d24c3fe3"
     - stage: uuid
-      stageUuid: "90e6e160-aa8c-8745-a1bd-c5f78c97266e"
+      stageUuid: "078ea932-af93-80f2-a0a0-847764d85c31"
 version: 2
 ---
 # agreement

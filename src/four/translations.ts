@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "four",
-    "uuid": "0d9bd3a1-07ab-8a0a-8a53-c4324b532dac",
+    "uuid": "fa32b42f-be9f-83ce-9a02-aab2b0517025",
     "words": [
       "four"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about four — Four Color Theorem via basis decomposition - geometry + graph theory",
-    "uuid": "b1b9a630-951a-8fa8-95d8-b67d7b52d978",
+    "uuid": "b6064c60-e07a-873d-abf7-74e61c159be6",
     "words": [
       "use",
       "when",

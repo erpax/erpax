@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "provider",
-    "uuid": "40379453-8b3b-86ed-aa8a-524e5d9c6f8a",
+    "uuid": "f4ab0e51-9d7c-898e-b5ad-792c7f4f01f9",
     "words": [
       "provider"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…",
-    "uuid": "dbd073b1-0381-8276-b2e3-29c0703c8200",
+    "uuid": "20335e40-816e-8da1-bc23-b4d0822d2533",
     "words": [
       "use",
       "when",

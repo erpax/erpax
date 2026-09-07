@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "uuid",
-    "uuid": "4e147e55-e3c5-8676-a721-af1af6438107",
+    "uuid": "1421c819-e13b-84d2-8545-65c550cb8b3d",
     "words": [
       "uuid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the seal must pass without Payload — the substrate-independent gate stack (aura, folders, imports, typecheck, readme, boundary, diamond, typography, cloudflare-ai) crossed into one fail-closed verdict.",
-    "uuid": "598b1ddc-0440-8762-af3a-b75a0421bd58",
+    "uuid": "add00951-5263-89b5-bd64-2b681c9d7a8c",
     "words": [
       "use",
       "when",

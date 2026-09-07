@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chat",
-    "uuid": "6c7aa66d-41a5-8cdb-a215-60818823961a",
+    "uuid": "686e2e97-4656-8cae-bf96-9a7d4b57de0d",
     "words": [
       "chat"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history).",
-    "uuid": "3c7cefe4-66f3-8e28-b3b4-d622f5f15c8c",
+    "uuid": "8b1ba7a8-966e-8fa7-a03e-5c54342f3bec",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: frame
 description: "Use when reasoning about frame as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/frame"
-coordinate: "vocabulary/frame · 8/crest · 0586103a"
-contentUuid: "90cb4d3f-7a3f-5921-b054-06e546d8c0db"
-diamondUuid: "d9e50bc0-ac38-8e78-993a-e011706d68d7"
-uuid: "0586103a-c011-871a-a08a-7066986f6f16"
-horo: 8
+coordinate: "vocabulary/frame · 7/descent · 3a05dc3e"
+contentUuid: "2df0d11d-41fc-5383-a479-a297affd5112"
+diamondUuid: "e8eebeb5-0d4a-86f7-ac89-a2d583c3e91f"
+uuid: "3a05dc3e-5822-8d1e-989e-e2d095508716"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8b886ad-984d-8d0a-b237-8eedc0999f9e"
+  computationUuid: "9c34fdb2-58bd-867f-8ced-af5384e2f97d"
   stages:
     - stage: path
       stageUuid: "0953e618-ea8a-84a1-8ec1-881ebf7fd168"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "68c5668c-e898-89f9-b137-3ffc491b660d"
     - stage: horo
-      stageUuid: "d061e0af-617f-82cd-b81e-33f7d2086918"
+      stageUuid: "dc6758c8-f5f9-8f7a-99c1-92766427437b"
     - stage: seal
       stageUuid: "fb878b8e-4ec4-8c1a-8e0c-b356d09d9393"
     - stage: uuid
-      stageUuid: "aa57c224-6155-8487-a8ba-16b9fd392948"
+      stageUuid: "3ff562c7-a11d-877a-aac0-9f61031b7f5c"
 version: 2
 ---
 # frame

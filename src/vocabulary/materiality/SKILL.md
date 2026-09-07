@@ -2,18 +2,18 @@
 name: materiality
 description: "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items"
 atomPath: "vocabulary/materiality"
-coordinate: "vocabulary/materiality · 7/descent · 1379d653"
-contentUuid: "158b3913-565b-5f9c-a027-ce2a6d945c75"
-diamondUuid: "05c2a259-7e01-8564-9b2e-353af0086f66"
-uuid: "1379d653-00a7-8f4a-844a-7f63e86d6e04"
-horo: 7
+coordinate: "vocabulary/materiality · 5/round · 38e0bd12"
+contentUuid: "84bcd7d8-c1ec-5b82-9d8a-ea1297643b40"
+diamondUuid: "e95c0031-529e-84cd-924a-07036e03dccd"
+uuid: "38e0bd12-43e3-8425-9553-6d70b3bc4ae1"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "43c5d965-80cb-8c56-bbb8-f7846d0279b4"
+  computationUuid: "b5c934f6-17b1-8732-b256-cdefd6e6229f"
   stages:
     - stage: path
       stageUuid: "20c07bba-2a5b-816e-a94b-4dcb74a5648d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6a7dc6b6-5cf3-897d-adde-73e42c61af36"
     - stage: horo
-      stageUuid: "07a79aa5-d9dd-8ccf-878e-a898dd60517d"
+      stageUuid: "21f9b6ad-0b45-8420-8eab-655139b34b34"
     - stage: seal
       stageUuid: "592f7603-ef78-8227-af4e-b747558296fe"
     - stage: uuid
-      stageUuid: "039d7dd6-fa53-89fc-bfcd-3ddf7f0dc34f"
+      stageUuid: "a8b30e92-cad6-8921-b1fb-3b4b17b30706"
 version: 2
 ---
 # materiality

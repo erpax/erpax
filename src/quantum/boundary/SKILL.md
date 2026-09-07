@@ -2,11 +2,11 @@
 name: boundary
 description: "Use when computing per-file quantum import/export boundaries — barrel entanglements and export facets derived from source bytes, content-addressed as boundaryUuid; drift is impurity; collapse rewrites deep escapes to raise tamper-cost."
 atomPath: "quantum/boundary"
-coordinate: "quantum/boundary · 7/descent · 4f619869"
-contentUuid: "ff825290-73cd-58f2-8fbd-781dd4a132d7"
-diamondUuid: "f4e13e97-6b71-856d-87dc-c2ed50f77638"
-uuid: "4f619869-f53a-824b-857f-e19c8c78fa18"
-horo: 7
+coordinate: "quantum/boundary · 4/weave · beddde3a"
+contentUuid: "84815395-d543-5257-8a94-5bfecc2cbc78"
+diamondUuid: "cbba5c2e-93e7-8e5a-9c7d-4fdfb8643eda"
+uuid: "beddde3a-4c5b-862a-a907-e4561a4844e2"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 49
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid — the boundary IS a number computed from content"
 bindings: []
 signatures:
-  computationUuid: "07cc5126-eea7-856d-8d41-84bdb160de16"
+  computationUuid: "87113c80-6c20-87c6-8f5d-720bb10640b3"
   stages:
     - stage: path
       stageUuid: "94f07d21-c4ca-8ade-822f-d6f8c52dc439"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5d3dc670-5c5d-84d9-9cfe-e37c944e3795"
     - stage: horo
-      stageUuid: "1cccc1ca-17fe-8dbb-9195-a66e8ede1e31"
+      stageUuid: "bb5a057d-c4df-8808-8c43-94897af0f055"
     - stage: seal
       stageUuid: "09c46605-1d0e-8fa0-9524-b1ce6d748b31"
     - stage: uuid
-      stageUuid: "ed434977-a0bc-8b14-8cde-ee11e717f5fb"
+      stageUuid: "a7623d95-6854-86be-bbd1-a8078dee7beb"
 quantum:
   superposition:
     - aura
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "07cc5126-eea7-856d-8d41-84bdb160de16"
-    contentUuid: "ff825290-73cd-58f2-8fbd-781dd4a132d7"
+    computationUuid: "87113c80-6c20-87c6-8f5d-720bb10640b3"
+    contentUuid: "84815395-d543-5257-8a94-5bfecc2cbc78"
 version: 2
 ---
 # quantum/boundary — quantum **computed** import/export
@@ -78,4 +78,4 @@ Matter-twin: `src/quantum/boundary/index.ts` (`computeBoundary` · `scanBoundari
 @audit boundaries computed from live source via parse/walk — never hand-asserted
 @standard RFC 9562 §5.8 content-uuid — the boundary IS a number computed from content
 
-<sub>content-uuid `ff825290-73cd-58f2-8fbd-781dd4a132d7` · account `quantum/boundary` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `84815395-d543-5257-8a94-5bfecc2cbc78` · account `quantum/boundary` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

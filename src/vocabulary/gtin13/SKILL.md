@@ -2,11 +2,11 @@
 name: gtin13
 description: "Use when reasoning about gtin13 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gtin13"
-coordinate: "vocabulary/gtin13 · 8/crest · d5a0b7db"
-contentUuid: "a776c05b-e739-5a8d-90f2-a24e6b2fdb17"
-diamondUuid: "71d3be3a-958e-8d36-bd27-8fb54b4e9651"
-uuid: "d5a0b7db-e95c-89ea-999f-4901664f0578"
-horo: 8
+coordinate: "vocabulary/gtin13 · 7/descent · ce5c8ad7"
+contentUuid: "46774d5e-5ca2-5246-9c64-eeff0e50366c"
+diamondUuid: "cd08f316-ef32-814c-8072-9411cee21164"
+uuid: "ce5c8ad7-cb12-80b8-a646-c3183beb6ea9"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ad654112-2b88-86b4-9d72-f682fe25bd15"
+  computationUuid: "d059588e-9e89-8a83-99b9-1ae31e1daa50"
   stages:
     - stage: path
       stageUuid: "c87c9b8c-be80-88a1-8c14-0f6b5a8eb0bb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9e31eef8-bd77-84bb-8a72-0a4ee2338f65"
     - stage: horo
-      stageUuid: "d4a19d5b-122f-853c-a0b2-d9dc93eac02e"
+      stageUuid: "dc1a03c1-53c0-828d-a9d2-75068a0e83b0"
     - stage: seal
       stageUuid: "ae186414-07d1-8bc8-a14a-91b8a3df1ebd"
     - stage: uuid
-      stageUuid: "b1a43683-27d2-87b2-9e5b-224360cbda49"
+      stageUuid: "ef1fbd4a-3a79-8608-b774-8cb962945080"
 version: 2
 ---
 # gtin13

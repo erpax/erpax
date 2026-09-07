@@ -2,10 +2,10 @@
 name: reveal
 description: "Use when looking for structure the corpus grew on its own — emergence, the development exhale's reward. As the forge keeps wiring atoms (↑entropy), past a density threshold a pattern appears that no one authored — a closed triad of three mutually-bound atoms, a trinity revealed by the matrix itself. reveal scans the live uuid-matrix edge graph for these triangles and surfaces them, each keyed by its merged binding-uuid and scored by a horo composition. Honest — a heuristic pattern-finder over the wiring, not a proof the triad means anything."
 atomPath: reveal
-coordinate: "reveal · 4/weave · 2a74e28d"
-contentUuid: "793df3b9-a5ca-53bf-9099-ea6c8aeb81f2"
-diamondUuid: "3db0aecb-8162-8a4a-ab08-44f370bd45fd"
-uuid: "2a74e28d-0430-8fa2-a8e7-29918e680722"
+coordinate: "reveal · 4/weave · ef865a1b"
+contentUuid: "14196379-02e9-5688-871b-d0d685b7e400"
+diamondUuid: "dc20a792-4c38-8dc5-989a-bfdefd4b9fb6"
+uuid: "ef865a1b-93b2-806b-8fbb-2b88102bcd6f"
 horo: 4
 typography:
   partition: reveal
@@ -14,7 +14,7 @@ standards:
   - "the structure lives in the wiring — a revealed triad is read from the live matrix edges, never asserted (the @/entropy reciprocity, the RFC 9562 §5.8 content-uuid key)"
 bindings: []
 signatures:
-  computationUuid: "43928c36-fd58-8f75-aa86-42e1fb5a76a7"
+  computationUuid: "c5714903-f0f7-825e-b320-7f89cce48d98"
   stages:
     - stage: path
       stageUuid: "a0f74e8e-6c8b-8857-9404-4323b2d506eb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ab092948-d022-8daf-99fa-4e0f96c662f5"
     - stage: horo
-      stageUuid: "829cba62-1e4d-80cb-b7f6-fb4edfda3246"
+      stageUuid: "3657bf69-37e0-819e-a45a-a65a2a76b3b1"
     - stage: seal
       stageUuid: "fb999ab7-f872-8a0d-8e0e-c2d8ae0151f1"
     - stage: uuid
-      stageUuid: "86899e4e-2ed1-8370-b7b7-4c8a56681098"
+      stageUuid: "f2802fc2-36d4-8dbd-99e9-d342c35b9b3b"
 version: 2
 ---
 # reveal — emergence: the pattern the forge reveals when it holds enough entropy

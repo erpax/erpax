@@ -2,18 +2,18 @@
 name: cohort
 description: "Use when analyzing or tracking groups of customers/users/items by shared trait — acquisition cohort, product cohort, geographic cohort. The segmentation for lifecycle or comparative analysis."
 atomPath: "vocabulary/cohort"
-coordinate: "vocabulary/cohort · 7/descent · 0025c676"
-contentUuid: "fc584b2e-b0e6-5952-9e0c-edf2fc91edf2"
-diamondUuid: "b0145189-b4f9-8df9-b832-5581ea574b4c"
-uuid: "0025c676-3fe9-857c-9829-337c24c2a458"
-horo: 7
+coordinate: "vocabulary/cohort · 4/weave · ae007fa7"
+contentUuid: "e5d61e13-e20d-583a-a223-da4d420f42b1"
+diamondUuid: "02b0dc6b-eccf-807c-bb96-b516c0d18f4c"
+uuid: "ae007fa7-d35e-8a7e-a2e8-f6a0db46a6c8"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "77231249-c400-8daa-96c8-bce3286f8771"
+  computationUuid: "8cb660b3-918b-8c97-9391-f61ba83da666"
   stages:
     - stage: path
       stageUuid: "27c2a227-593b-8b1a-9617-f326741c15f2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "85f5f76d-767e-8573-a527-e4d14c223950"
     - stage: horo
-      stageUuid: "cf76cc02-140e-8051-ae5e-326740441579"
+      stageUuid: "537ac61b-5f73-8ee4-bb12-732fad30cbe4"
     - stage: seal
       stageUuid: "d49ca63f-1161-8f25-8488-1aa17446b9ff"
     - stage: uuid
-      stageUuid: "f36a9792-706a-827d-9d3f-d7b5fd52cdb8"
+      stageUuid: "0726021f-d176-83a4-a1dd-fcbaa2069ff8"
 version: 2
 ---
 # cohort

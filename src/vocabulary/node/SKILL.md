@@ -2,10 +2,10 @@
 name: node
 description: "Use when reasoning about node as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/node"
-coordinate: "vocabulary/node · 7/descent · 7c669d05"
-contentUuid: "00b27336-f325-550f-8676-1dae1cdebbf4"
-diamondUuid: "cb50b6c4-6cdc-844f-83ff-d1325340f28d"
-uuid: "7c669d05-3b48-80fc-b21b-4303667a56b0"
+coordinate: "vocabulary/node · 7/descent · 2b963842"
+contentUuid: "8caa4a20-b915-57fb-b468-66a763b68116"
+diamondUuid: "2810fffb-a4e7-8e9d-a428-fa4f6ea83680"
+uuid: "2b963842-c344-83ea-8ac7-530d084d8623"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3d9d5df1-3329-8e72-8593-26cd92a42f88"
+  computationUuid: "7c3ae2fb-f5ae-8996-b1d1-d002da70db7e"
   stages:
     - stage: path
       stageUuid: "bd8158e6-5819-84cd-8643-97fbe22c1f99"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "34233ee7-0262-8672-941f-b5714270642d"
     - stage: horo
-      stageUuid: "5a854b0f-54fc-88bd-8678-5d64d27c5716"
+      stageUuid: "7b44eed8-e6b6-81da-8ead-ddda0f177339"
     - stage: seal
       stageUuid: "f1e8c815-3238-838e-8922-5848382fc2aa"
     - stage: uuid
-      stageUuid: "34cffce5-486c-8874-b4f0-93e5fb3986e9"
+      stageUuid: "3830b325-d719-87aa-af35-e203edcca4b3"
 version: 2
 ---
 # node

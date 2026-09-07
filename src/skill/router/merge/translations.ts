@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "merge",
-    "uuid": "03577c85-5a0a-834b-882b-dd885c63cd5e",
+    "uuid": "30824594-6d72-8ad2-bcf6-d3a6e1b038d2",
     "words": [
       "merge"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about merge — merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the merge law as code).",
-    "uuid": "9764cd90-6fbc-892b-95da-64028ddae16d",
+    "uuid": "aa039b1e-b59b-8946-aaf0-59574066a3a4",
     "words": [
       "use",
       "when",

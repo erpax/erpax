@@ -2,11 +2,11 @@
 name: back
 description: "Use when reasoning about back as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/back"
-coordinate: "vocabulary/back · 2/share · 0881683b"
-contentUuid: "bd2ab13f-1673-5030-823c-adc32671127e"
-diamondUuid: "4d0e5177-0784-8ff0-9806-b0ef46efabe3"
-uuid: "0881683b-142b-8df0-a2b7-994e002f59e1"
-horo: 2
+coordinate: "vocabulary/back · 4/weave · c870d053"
+contentUuid: "f65759eb-25db-5039-986e-b5b6bf0332cd"
+diamondUuid: "bc79c81c-095a-840f-ae8a-e7c7a655dd8a"
+uuid: "c870d053-9efc-8c09-a818-3baafcfcf09f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "af2c31d3-b191-8ee6-8376-1e8d2ba6061f"
+  computationUuid: "ba8750a7-54ea-863c-add4-29291677c0e9"
   stages:
     - stage: path
       stageUuid: "e16892af-f3c6-8e84-b37e-2d651fb27a28"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5909fa2c-c10f-8298-9f39-16d961881bfc"
     - stage: horo
-      stageUuid: "63702ffa-6192-8a69-9a48-fab1a087303f"
+      stageUuid: "6faa3872-92b0-86b1-ad03-2d4478c54ad3"
     - stage: seal
       stageUuid: "6372ed75-2692-8fb9-b426-9e6b3d9279b1"
     - stage: uuid
-      stageUuid: "eeecacb5-3b3f-8643-8b04-fe6d5f5b3eb3"
+      stageUuid: "44bc4c5d-e88f-81f4-bffa-151d87c6c11d"
 version: 2
 ---
 # back

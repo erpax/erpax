@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plans",
-    "uuid": "275eb824-cf5f-899b-936d-88cade3500f1",
+    "uuid": "6ecf5f93-0958-8e4c-bb89-a0aee5d134f4",
     "words": [
       "plans"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin.",
-    "uuid": "818d1cbb-298d-852c-bf95-d21ef0ec03c0",
+    "uuid": "11e435aa-13b6-8959-a1fd-a77d4ac4c2c8",
     "words": [
       "use",
       "when",

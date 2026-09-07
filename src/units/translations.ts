@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "units",
-    "uuid": "34f3bb04-a3d7-849b-8c74-b5c9e1fe30ed",
+    "uuid": "ea1cb682-e91c-8143-8a44-fd5acef9bd21",
     "words": [
       "units"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about units as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "08df3138-5d60-850a-9d06-fa2a5527a6f4",
+    "uuid": "91263227-2d9f-83c7-8afb-1f84fa715874",
     "words": [
       "use",
       "when",

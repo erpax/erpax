@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "flight",
-    "uuid": "f3c2d0d4-0ae6-81e1-9e4b-fdf3fccb63ad",
+    "uuid": "72f02060-f58c-8e01-aaa9-c8de16657e7c",
     "words": [
       "flight"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about flight — An airline flight.",
-    "uuid": "e4462213-f3f8-818e-863b-eb650afe71b3",
+    "uuid": "ddf6800e-8a83-8616-a7b4-e0c2ceb84e38",
     "words": [
       "use",
       "when",

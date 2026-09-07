@@ -2,10 +2,10 @@
 name: network
 description: "Use when reasoning about network as a part of computer — vocabulary pivot to @/network; nested not duplicated."
 atomPath: "computer/network"
-coordinate: "computer/network · 8/crest · 2474a6f3"
-contentUuid: "fe3f9055-2739-5d7c-b4e9-b294c11b77ca"
-diamondUuid: "2550b3d7-0ac8-891e-af34-b9e6b98a0c60"
-uuid: "2474a6f3-3164-83af-b33e-5ebf8c268156"
+coordinate: "computer/network · 8/crest · 67ffd610"
+contentUuid: "55a71312-c1be-5318-a5d7-554d02d732ca"
+diamondUuid: "fb088916-874c-8f40-ad7f-a68242687d9c"
+uuid: "67ffd610-b0bd-880d-829a-2e4a85a97e07"
 horo: 8
 typography:
   partition: computer
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b998170c-e034-8536-a628-c2a165869795"
+  computationUuid: "06056fc4-fd0a-87cf-b5c7-d9bc22cf84f1"
   stages:
     - stage: path
       stageUuid: "fcdf2894-16ae-81e6-a88a-a81e434e5745"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c26d20a5-808a-8d81-ade1-739ef120c302"
     - stage: horo
-      stageUuid: "67f5e3e7-c163-8083-af9b-825cae3cdf61"
+      stageUuid: "94b5097d-0717-82c0-829f-80702f58efb5"
     - stage: seal
       stageUuid: "fcb962e8-cbae-87c3-86f4-f064ac194101"
     - stage: uuid
-      stageUuid: "c240f183-812f-83cf-9099-0749508ad8fd"
+      stageUuid: "79d8f257-f1ff-8771-befa-e3d646af74d0"
 version: 2
 ---
 # computer/network — connects externally

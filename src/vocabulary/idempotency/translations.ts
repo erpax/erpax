@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "idempotency",
-    "uuid": "601294f1-af22-8811-8727-af5f886ac35a",
+    "uuid": "1c6a8aa0-c733-89ea-9daf-02a0e51d6a23",
     "words": [
       "idempotency"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when operations must be safely replayed — idempotent keys, deduplication within a replay window, exactly-once semantics, retry-safe operations, side-effect tracking, idempotency contracts in APIs.",
-    "uuid": "e938cedc-d296-8f1c-9b66-f71a8a2e5d6a",
+    "uuid": "3c494267-c344-8d4b-ba6a-7d6f8ea10185",
     "words": [
       "use",
       "when",

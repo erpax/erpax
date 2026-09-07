@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pivot",
-    "uuid": "7e41384f-0204-849a-9f9e-870227642d8c",
+    "uuid": "04b93105-2a26-881e-aae9-1e280234c91a",
     "words": [
       "pivot"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for readme.",
-    "uuid": "fbf6a5e6-2ac8-8803-9727-097519c2d151",
+    "uuid": "7e9413a7-c59a-8662-bc53-83ca449366b5",
     "words": [
       "use",
       "when",

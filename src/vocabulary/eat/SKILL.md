@@ -2,11 +2,11 @@
 name: eat
 description: "Use when reasoning about eat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/eat"
-coordinate: "vocabulary/eat · 1/base · f23a5565"
-contentUuid: "6214c5c5-3b39-5c30-a660-cf6c8563cd16"
-diamondUuid: "d1fe1b5b-f174-8e8a-ac66-0222d020bb69"
-uuid: "f23a5565-4873-88bd-8b4a-50d27aaa4f72"
-horo: 1
+coordinate: "vocabulary/eat · 8/crest · aee6bc3d"
+contentUuid: "f6da510e-ab1c-5361-a24c-96ac3ab461a3"
+diamondUuid: "b0ebfc06-2d97-86d0-aa70-ed8f199d81ab"
+uuid: "aee6bc3d-a38f-8a26-94c2-c77f4f1394a8"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0b696bac-3f24-8e6a-abd0-be4044295551"
+  computationUuid: "aec1cc14-6947-877c-8864-df2dbc687ede"
   stages:
     - stage: path
       stageUuid: "36d87641-23e6-8370-9f12-93a313334734"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a0c7ccb9-2b84-8283-adb1-17946b711fb6"
     - stage: horo
-      stageUuid: "3b930d49-8fb5-8c18-8790-a448d1fe422d"
+      stageUuid: "c80eb3db-210b-870e-8d89-7f3c84850624"
     - stage: seal
       stageUuid: "3d41bba7-830c-8998-9350-ba095fecafa3"
     - stage: uuid
-      stageUuid: "6c61a6fe-e9ea-8a80-be6c-73623a7e8603"
+      stageUuid: "189d1700-56cf-8509-af77-2188337350c8"
 version: 2
 ---
 # eat

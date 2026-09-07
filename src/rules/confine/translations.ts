@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "confine",
-    "uuid": "035190cc-9f3d-8615-9a56-e6afdbc3f713",
+    "uuid": "656174a7-0794-850f-aa00-d1dad84b391d",
     "words": [
       "confine"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about confine — Use to keep the boot from collapsing again — 231 collections are handled by the FIELD (req.payload), never by a static `import * as … from '@/collections'` outside the config. That materialisation is what caused the TDZ. Parsed, not matched. Run: tsx src/rules/confine/index.ts",
-    "uuid": "6ff60c2d-56db-83f1-accf-1881ba2a8831",
+    "uuid": "a95f0045-74dc-894e-b214-6744ca1846a1",
     "words": [
       "use",
       "when",

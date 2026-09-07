@@ -2,11 +2,11 @@
 name: registry
 description: "Use when reasoning about registry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: registry
-coordinate: "registry · 8/crest · 3c9b4dd3"
-contentUuid: "05f24fd5-b4ed-5bbd-aaf3-e02109267b2d"
-diamondUuid: "2188feb6-7964-83d6-8723-ec3c7c127586"
-uuid: "3c9b4dd3-ec0b-828e-b909-c5d76f78304c"
-horo: 8
+coordinate: "registry · 1/base · 8d047d7f"
+contentUuid: "765bab26-53f2-55ba-82ce-ae75a6cc26d0"
+diamondUuid: "7b2a2b33-167f-8a7c-8fe3-b0984dd4bd47"
+uuid: "8d047d7f-a80d-83cc-9d6e-afb5164a65fd"
+horo: 1
 typography:
   partition: registry
   bondDegree: 31
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "58f51898-7287-8909-af90-6930074d15ce"
+  computationUuid: "3331d2e2-59ea-89b7-8f74-a29c3ae6685f"
   stages:
     - stage: path
       stageUuid: "245d7e01-1843-87d8-99d0-9930b5bbee1c"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "933aadae-755d-860d-bf1b-d119fc134940"
     - stage: horo
-      stageUuid: "a077c62d-0fce-82ce-8cd4-01230cfb0777"
+      stageUuid: "db5292c3-df77-88ff-a7e9-5069902175ee"
     - stage: seal
       stageUuid: "379592dd-1032-8b8f-b285-b1e75bd234a4"
     - stage: uuid
-      stageUuid: "3c8e867b-3fe0-8242-8610-44b7e085dac4"
+      stageUuid: "8cfebbc2-3a8e-8e85-ad20-b68e9b2e4057"
 version: 2
 ---
 # registry

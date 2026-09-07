@@ -2,11 +2,11 @@
 name: coffee
 description: "Use when reasoning about coffee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/coffee"
-coordinate: "vocabulary/coffee · 5/round · bf674c1b"
-contentUuid: "ba0451d7-673b-57d6-99c1-06e95105e85a"
-diamondUuid: "f88e2926-05bb-80de-9390-c9668691e351"
-uuid: "bf674c1b-9ba5-87fa-a3a2-e57a5772e49c"
-horo: 5
+coordinate: "vocabulary/coffee · 2/share · 507da5a3"
+contentUuid: "e42dd98d-cf95-5ef4-b59f-26bd20926a1e"
+diamondUuid: "76f8e3b5-ecf6-8364-85b7-d66471ba1a49"
+uuid: "507da5a3-06df-8601-8b09-94cc96ead4f6"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bf4bbee7-7da8-8583-987b-5f333dc1eb48"
+  computationUuid: "23fabf10-93df-85da-8fd5-330004d45880"
   stages:
     - stage: path
       stageUuid: "c298277f-d3ac-8200-b465-8feadc88255f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a3003370-3752-8644-a5d0-3b949dff1d74"
     - stage: horo
-      stageUuid: "2c5c363e-0455-842e-bbdb-0699e08191d2"
+      stageUuid: "8649afab-6356-8d81-a65c-a86a3fce0e9e"
     - stage: seal
       stageUuid: "a4c28a09-1a03-8512-9263-f1136cadb453"
     - stage: uuid
-      stageUuid: "00cbe055-6137-8575-b71e-29d9a672c735"
+      stageUuid: "634193fa-111b-8467-b17c-886071931076"
 version: 2
 ---
 # coffee

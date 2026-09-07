@@ -2,11 +2,11 @@
 name: florist
 description: Use when reasoning about florist — A florist.
 atomPath: "vocabulary/florist"
-coordinate: "vocabulary/florist · 2/share · 8f4e4a45"
-contentUuid: "266aa406-4ebb-5553-9543-87bf6c3eeaab"
-diamondUuid: "adb3f7a4-5193-863a-855f-7234c376ae52"
-uuid: "8f4e4a45-b90c-8235-9746-31bf20ec68e0"
-horo: 2
+coordinate: "vocabulary/florist · 1/base · 909b6dc4"
+contentUuid: "1d25208f-a561-5ca8-b955-ef77a50d82a7"
+diamondUuid: "d3518dac-7cc4-8627-98f6-c5ca87b9fc80"
+uuid: "909b6dc4-c2d0-89f6-9e81-3487bbed845f"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d7478a62-ce0f-8c46-ba91-aa3902136f38"
+  computationUuid: "62aca65f-51a5-88e5-81b2-589f9e4b5aac"
   stages:
     - stage: path
       stageUuid: "62592897-456e-8c6e-8d22-614fe56465ad"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7e342044-e445-8504-bcdd-f9774fdf1257"
     - stage: horo
-      stageUuid: "5d7408d6-4cf6-8f93-8022-faa9892ee44b"
+      stageUuid: "b6ed7f00-ce2e-8439-8a9d-342f415f98f8"
     - stage: seal
       stageUuid: "1db3054a-7818-8f34-b82e-4d2bc6571284"
     - stage: uuid
-      stageUuid: "1d5af22d-0ffd-8339-9dc7-7f5217e82b45"
+      stageUuid: "5a6d5d0b-4e95-8c53-abc3-0ac0ae3df809"
 version: 2
 ---
 # florist

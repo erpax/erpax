@@ -2,11 +2,11 @@
 name: motorized
 description: "Use when reasoning about motorized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/motorized"
-coordinate: "vocabulary/motorized · 1/base · 35812f55"
-contentUuid: "f3873880-5d03-5b39-a03c-df67f5a0f480"
-diamondUuid: "a3bc0fc6-e955-8d27-948c-0305fded63f4"
-uuid: "35812f55-286f-8e61-aeb6-88dd5ae954ba"
-horo: 1
+coordinate: "vocabulary/motorized · 4/weave · a440f38e"
+contentUuid: "79c89ed4-8acd-55f0-90fb-d519509f076b"
+diamondUuid: "867ac918-8670-8946-8269-3497f84b55c0"
+uuid: "a440f38e-9c78-8a61-a1f9-529d2cc4a1a8"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ccdf9b82-9ad9-8e3a-bbf8-5f540bfd9555"
+  computationUuid: "da405521-4831-867e-824f-c7937a385100"
   stages:
     - stage: path
       stageUuid: "b8c55155-be9e-8cfe-91c3-96770b8907c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9b4aea2e-31ce-8a71-9940-d4ff52bb757a"
     - stage: horo
-      stageUuid: "34c4899c-d8a7-8c88-9017-0eab0259df3e"
+      stageUuid: "998c6307-5d93-8818-bbcd-d9e86c4af6e8"
     - stage: seal
       stageUuid: "157a3cc2-1d46-8f3a-ac09-21f8f894e054"
     - stage: uuid
-      stageUuid: "0b29c5bd-05d9-8b97-9038-e267a8876539"
+      stageUuid: "da2611ee-205d-8bf2-9f85-88b1105810a1"
 version: 2
 ---
 # motorized

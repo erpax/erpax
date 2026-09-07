@@ -2,10 +2,10 @@
 name: pool
 description: "Use when reasoning about pool as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pool"
-coordinate: "vocabulary/pool · 2/share · c019b71c"
-contentUuid: "77c7ff15-db32-5e33-8d6b-c106b3b9ab34"
-diamondUuid: "10cf9127-19e4-8708-9b0b-216d3e9bfb30"
-uuid: "c019b71c-2f9a-8a7b-8611-f18e17afd994"
+coordinate: "vocabulary/pool · 2/share · a7c85079"
+contentUuid: "da36b75f-e12d-5346-a504-4f9c610aede9"
+diamondUuid: "33097b86-102a-8737-bfaa-558761affb5c"
+uuid: "a7c85079-508b-84be-9fa4-af0496f5af2e"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "26db7f00-9168-80c8-855d-a24f1c1d8368"
+  computationUuid: "aa352cb6-e5a2-8201-9415-316f2fb8cba9"
   stages:
     - stage: path
       stageUuid: "46db701b-9a63-8ef7-8d34-7feebe90b4af"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3dd68385-1a38-8991-9801-433f4b90051c"
     - stage: horo
-      stageUuid: "85f402da-6399-868a-8a85-af25fcaed1a9"
+      stageUuid: "2a89816c-297b-8c0a-94ef-f666d5961810"
     - stage: seal
       stageUuid: "b258e0d7-13a2-8bdc-88ba-a7522f024f3d"
     - stage: uuid
-      stageUuid: "3e0339f9-0db1-82f4-a500-fdc5bd9229e6"
+      stageUuid: "c2c4b045-525f-8260-867a-9503d0abb09e"
 version: 2
 ---
 # pool

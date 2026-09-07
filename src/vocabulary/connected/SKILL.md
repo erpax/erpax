@@ -2,11 +2,11 @@
 name: connected
 description: Use when reasoning about connected — Other anatomical structures to which this structure is connected.
 atomPath: "vocabulary/connected"
-coordinate: "vocabulary/connected · 1/base · a27d2bf6"
-contentUuid: "d061bbb0-9ce0-5a1f-80a8-4ddde0213810"
-diamondUuid: "75b2c590-8187-84ca-a132-d4485185feff"
-uuid: "a27d2bf6-ba84-8051-a0d8-b86f40d09c48"
-horo: 1
+coordinate: "vocabulary/connected · 2/share · 724964fd"
+contentUuid: "b9d87719-b938-546a-8bd3-8ac6af94248a"
+diamondUuid: "245f4436-a24f-80da-a0dc-45ac685483d9"
+uuid: "724964fd-348f-8939-ba79-4814a1c70938"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "40a83dbd-e58c-8f86-ad7d-aa802349d2d0"
+  computationUuid: "37186cc4-e47b-8d7c-9fdd-f91c3109f875"
   stages:
     - stage: path
       stageUuid: "13b3a64d-ada9-869c-b4b1-238aa9c24a73"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4ba836cb-7f58-82bf-8014-eb4d4f3b0d81"
     - stage: horo
-      stageUuid: "77740c39-5e38-8683-acc3-d699235920e8"
+      stageUuid: "31836d05-fa4a-8689-a9c9-2012e92a1fef"
     - stage: seal
       stageUuid: "4bf5be0d-eeae-8684-a8e1-34c83c74dc24"
     - stage: uuid
-      stageUuid: "f288fd0b-a0e2-8edd-946f-da28e0aa16ef"
+      stageUuid: "362c7bb1-08d0-86b9-bce1-1045f01b1314"
 version: 2
 ---
 # connected

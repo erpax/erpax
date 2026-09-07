@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "camt054",
-    "uuid": "599e03ed-db9b-8552-b2ac-575cb0d5d6d6",
+    "uuid": "f859aabe-37a0-8c72-a020-62095e0fa63f",
     "words": [
       "camt054"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing ISO 20022 camt.054 BankToCustomerDebitCreditNotification — credit/debit advice notifications.",
-    "uuid": "f9902e35-45f2-813b-a4e7-73a9ea359ed7",
+    "uuid": "6b4a2d6d-665f-85ad-b05c-680864b8d576",
     "words": [
       "use",
       "when",

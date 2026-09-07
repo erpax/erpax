@@ -2,11 +2,11 @@
 name: honest
 description: "Use when a SKILL.md reaches for a metaphysical figure of speech — the convention is that such a phrase is named as convention or folklore, never stated as a bare fact; this atom measures the corpus's live honesty as coverage = honest / total over the real tree."
 atomPath: "convention/honest"
-coordinate: "convention/honest · 4/weave · 7bfe4d32"
-contentUuid: "e66abd6e-1893-5543-a73c-f08b44d90fdf"
-diamondUuid: "31f4fa23-7483-8096-82f8-85f03b022e17"
-uuid: "7bfe4d32-efca-8936-8fcf-c2f901bc82ca"
-horo: 4
+coordinate: "convention/honest · 7/descent · f7ca6402"
+contentUuid: "dce63594-d033-5170-8b93-2c7d3fa94fc9"
+diamondUuid: "b49ecf78-0289-8ab4-a4c3-6564fb8c9eaf"
+uuid: "f7ca6402-e939-86a4-a993-bdd114a98eca"
+horo: 7
 typography:
   partition: convention
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2bf4ec07-68e7-8c37-b092-e5b580a68456"
+  computationUuid: "22554d06-d165-8139-8a45-4dc25d6870b6"
   stages:
     - stage: path
       stageUuid: "b3666abf-9a41-821b-8f99-b181b12095b8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e0375d1e-be2c-8cab-8066-3a084f7332a5"
     - stage: horo
-      stageUuid: "335980a4-0f41-86a9-899e-c7e46c8b486b"
+      stageUuid: "6d488d67-1955-8b63-8705-693ca403d543"
     - stage: seal
       stageUuid: "66e3ac44-c821-8d57-bb39-429b66f8a3aa"
     - stage: uuid
-      stageUuid: "1c3a9281-e963-8379-937d-432a4931e815"
+      stageUuid: "db133510-9799-87d1-abd5-dfd461e8d56b"
 version: 2
 ---
 # convention/honest — metaphysics is named as convention, never asserted as fact

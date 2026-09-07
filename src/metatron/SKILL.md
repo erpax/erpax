@@ -2,11 +2,11 @@
 name: metatron
 description: "Use when reasoning about why erpax's uuid-matrix is Metatron's Cube — the complete pairwise binding (merge is total ⇒ K_n) of 12-around-1 folding to one center (the root). The drawn 13-circle figure is the n=13 unit cell (the cuboctahedron / 3-D kissing-number 12); the matrix is its fractal extension to n nodes. Graph + packing structure, not the Platonic-solid folklore."
 atomPath: metatron
-coordinate: "metatron · 7/descent · 9792da99"
-contentUuid: "2f3e86ba-b9d4-5942-aae8-d44c35be60c1"
-diamondUuid: "b42caa4f-c50d-81c9-9a01-c1561c55c82a"
-uuid: "9792da99-02e5-80d7-9bf0-21c580f37381"
-horo: 7
+coordinate: "metatron · 8/crest · 66e257cb"
+contentUuid: "407c828c-11af-53a9-bff1-307d3c532fc3"
+diamondUuid: "a4cad2e8-0d5e-8e54-9843-16b9b50c064b"
+uuid: "66e257cb-10fc-81f4-8a67-df0a5b559d73"
+horo: 8
 typography:
   partition: metatron
   bondDegree: 60
@@ -15,7 +15,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid (total merge) + K13 / cuboctahedron"
 bindings: []
 signatures:
-  computationUuid: "bc120ac4-f23d-8de9-8820-21d10f69b8bd"
+  computationUuid: "10ac8325-d463-8790-979a-75bc953e83ca"
   stages:
     - stage: path
       stageUuid: "74cb6d3b-cd73-86d0-a91f-2f12886f8c44"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "3180e019-8568-8423-99ae-e6f9d0291a05"
     - stage: horo
-      stageUuid: "fcb3414e-5670-872d-b5fb-f3f94cdb04e2"
+      stageUuid: "e1d0fc79-a755-8b5a-abc0-0bd96a4c8c9f"
     - stage: seal
       stageUuid: "b1521e55-be22-87dd-88df-1eb16373088a"
     - stage: uuid
-      stageUuid: "94d95208-b12d-8a8b-b142-e66ec7eba2f9"
+      stageUuid: "abfa169f-90a5-8cd3-9949-4139bf66b9a3"
 version: 2
 ---
 # metatron — the matrix IS Metatron's Cube (complete binding → one center)

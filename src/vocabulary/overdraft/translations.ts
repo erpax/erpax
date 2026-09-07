@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "overdraft",
-    "uuid": "b9640a39-411e-83e9-b59b-17749e53f92c",
+    "uuid": "a1b9f0d9-2255-8c23-b453-f1fb311826f9",
     "words": [
       "overdraft"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about overdraft as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "7ff1ddb0-5b9e-89b6-a878-6bf7d3ef4fe7",
+    "uuid": "30c5fdd9-f536-862e-ab6b-b047c6bcdc00",
     "words": [
       "use",
       "when",

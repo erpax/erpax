@@ -2,11 +2,11 @@
 name: incorporated
 description: "Use when reasoning about incorporated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/incorporated"
-coordinate: "vocabulary/incorporated · 2/share · b1e7278c"
-contentUuid: "bd6b47dc-0ddb-50a4-9a44-f6b2b18b60f5"
-diamondUuid: "ea163fdd-cc61-8989-a445-07d89aa16c3d"
-uuid: "b1e7278c-a522-8171-b7b0-f4de4fe7a993"
-horo: 2
+coordinate: "vocabulary/incorporated · 1/base · 39f64465"
+contentUuid: "b4c4cd9e-654a-5e39-b6f7-9c5a19fb491a"
+diamondUuid: "01b36d58-e08c-8c8e-9c9f-2d903b6a2b99"
+uuid: "39f64465-a0c0-87a1-835c-6690d7ef6378"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "15f4e490-ba6a-8091-8523-068b1089f906"
+  computationUuid: "df1b2445-6765-8cf7-8083-7ff8cfca3c83"
   stages:
     - stage: path
       stageUuid: "865cd32d-9d8b-802e-bd86-6b0bf1e385aa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "00c5ca80-6d67-8d9b-b9c2-c44f695df159"
     - stage: horo
-      stageUuid: "f298f371-307a-8f23-afd2-5c2754b2e75c"
+      stageUuid: "dc63d904-a934-8d60-8d6b-18fb190b9412"
     - stage: seal
       stageUuid: "0732c42a-2e13-84ca-bb59-ce3f493e8e2a"
     - stage: uuid
-      stageUuid: "5d1ebae4-a1b1-8e87-b098-b6615c076a09"
+      stageUuid: "616d9fb7-4819-8a70-877a-752ca4aab49f"
 version: 2
 ---
 # incorporated

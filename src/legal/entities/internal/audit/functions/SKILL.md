@@ -2,11 +2,11 @@
 name: functions
 description: "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection."
 atomPath: "legal/entities/internal/audit/functions"
-coordinate: "legal/entities/internal/audit/functions · 4/weave · 4a189a58"
-contentUuid: "f7968b2c-464d-5ef9-a55e-d56648dd711e"
-diamondUuid: "8514e630-50ca-8f59-9e69-5817a156b557"
-uuid: "4a189a58-e437-8d1f-b4fd-fa19a5fe4731"
-horo: 4
+coordinate: "legal/entities/internal/audit/functions · 1/base · 134ca7f7"
+contentUuid: "a3029df5-0717-541e-846d-686152137294"
+diamondUuid: "a51f3e73-98b4-86be-b59a-67fdc309aa93"
+uuid: "134ca7f7-555e-8631-9617-2b10e73df633"
+horo: 1
 typography:
   partition: legal
   bondDegree: 9
@@ -15,7 +15,7 @@ standards:
   - "SOX §404 internal-controls"
 bindings: []
 signatures:
-  computationUuid: "7c9562ff-9390-88c1-9777-8254dbfcf0a1"
+  computationUuid: "5aaf2bc5-eee5-8f0a-9619-8bbc7884ceac"
   stages:
     - stage: path
       stageUuid: "c0578220-f575-8cb2-a5e6-27166c67a53a"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "b74519fa-53f1-83fe-89be-8d5656564b8c"
     - stage: horo
-      stageUuid: "11e80ccb-346d-8b15-aa3c-84dd33731296"
+      stageUuid: "cfa67a01-0702-8caa-bbea-497ffd0b1956"
     - stage: seal
       stageUuid: "05a0c87c-3dde-8b9f-af9f-8006de7e40f8"
     - stage: uuid
-      stageUuid: "78e56e99-227c-8d3c-a032-683657b45fca"
+      stageUuid: "60eb9d19-5a5d-85c2-bdb5-afc1d2b354e8"
 version: 2
 ---
 # internal-audit-function

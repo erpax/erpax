@@ -2,11 +2,11 @@
 name: icubeds
 description: "Use when reasoning about icubeds as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/icubeds"
-coordinate: "vocabulary/icubeds · 1/base · ed0a1689"
-contentUuid: "013e17d1-0107-533e-9052-89f2fae53d6e"
-diamondUuid: "87789d68-dd91-874a-8df6-c885d82f0638"
-uuid: "ed0a1689-92c0-8ed7-a7cb-308c3f989244"
-horo: 1
+coordinate: "vocabulary/icubeds · 7/descent · fb42dd8c"
+contentUuid: "f57152fe-20b7-501c-b31e-9f06eea34eb8"
+diamondUuid: "6abcf0c8-7dd4-8eec-9f6a-5381128bd66f"
+uuid: "fb42dd8c-c578-8b28-a6cb-5c43d4611afd"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ee3f431b-769f-87d0-9cfc-dc2800b84473"
+  computationUuid: "13b20eb8-a271-8f87-ac99-6d0360b6ed73"
   stages:
     - stage: path
       stageUuid: "4ca4131f-91de-8ff2-82a8-f34c17fb2c7b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c5183524-fff3-8078-bfe5-b893319e717f"
     - stage: horo
-      stageUuid: "ec0d210a-a0d5-8bb6-817a-ebf4e873a1ab"
+      stageUuid: "ef47dc4b-4f1d-8c6b-82df-98cd4e0a1513"
     - stage: seal
       stageUuid: "f286435b-bbb1-88b2-b926-253e427c70e3"
     - stage: uuid
-      stageUuid: "a110a156-2d58-8126-8419-9d2e5a847454"
+      stageUuid: "b9800684-9759-878b-9e8a-c5245448a088"
 version: 2
 ---
 # icubeds

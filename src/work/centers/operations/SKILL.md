@@ -2,11 +2,11 @@
 name: operations
 description: "Use when defining reusable process-step types (Cut, Sew, Mix, Assemble, Inspect, Pack) that routings compose — with ISA-95 operation-type hierarchy, default work-center, and KPI anchors independent of any specific product. The operation-type catalog collection."
 atomPath: "work/centers/operations"
-coordinate: "work/centers/operations · 2/share · 58311e05"
-contentUuid: "3273fb9a-be15-55b0-81b6-9a2e140b5ebb"
-diamondUuid: "c9096fe1-271f-8de5-9672-82d18342f147"
-uuid: "58311e05-c283-8971-82e1-9fa1d6efcfd3"
-horo: 2
+coordinate: "work/centers/operations · 7/descent · a7c395ab"
+contentUuid: "694e528f-6305-512b-a7a1-b24e2530f61e"
+diamondUuid: "e6cfc199-c453-8143-95dd-8d2154f09632"
+uuid: "a7c395ab-bb6c-8428-85b3-edcaaf3609ce"
+horo: 7
 typography:
   partition: work
   bondDegree: 14
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "20a14d31-7ac4-89f4-a70a-c97243ce9053"
+  computationUuid: "6ae9c6e7-8179-8f2d-84f9-20018dae6261"
   stages:
     - stage: path
       stageUuid: "a6fad287-1878-84c9-bcd1-b1ed926ab691"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "fcfa6e57-d048-807e-98b6-a9920ddde146"
     - stage: horo
-      stageUuid: "90f5786a-f896-8934-9cb7-137deb4d1d67"
+      stageUuid: "27d7fb63-8a10-8f26-b311-7dad4c20d402"
     - stage: seal
       stageUuid: "d89c98b4-f14c-8ff7-bee8-2f5664589c31"
     - stage: uuid
-      stageUuid: "395386ec-13ff-8378-bc90-d808934bed41"
+      stageUuid: "d9fc109f-a51e-8416-9f3d-634ff972125d"
 version: 2
 ---
 # operations

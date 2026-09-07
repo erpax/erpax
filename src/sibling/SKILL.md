@@ -2,11 +2,11 @@
 name: sibling
 description: Use when reasoning about sibling — A sibling of the person.
 atomPath: sibling
-coordinate: "sibling · 5/round · 4da3d212"
-contentUuid: "2f5a2d99-324c-5bbf-81a2-ab13e59af302"
-diamondUuid: "b7c27ed4-1b9b-8c96-a480-06accb162281"
-uuid: "4da3d212-e225-83ef-8e9d-9032c73b7f84"
-horo: 5
+coordinate: "sibling · 7/descent · 59eebf37"
+contentUuid: "c0f5a8b2-9688-5dff-ab1a-852ef59c1a48"
+diamondUuid: "1a069a86-74b3-84bb-8682-94ab87c991e9"
+uuid: "59eebf37-61b5-8695-8a3d-2037e40bcb62"
+horo: 7
 typography:
   partition: sibling
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3d1a8553-447b-8c33-afcc-b36ddec63186"
+  computationUuid: "67f00f5d-58d7-8b66-b407-55ff332d4fdc"
   stages:
     - stage: path
       stageUuid: "9ea020ce-87d9-8bc8-9e88-23c604f3dcab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9f38adf5-aa31-8692-89be-6d8e7b2de14e"
     - stage: horo
-      stageUuid: "7e3f514e-4dca-8a0e-9e54-4bc43c4d117e"
+      stageUuid: "9994cd4f-d90c-8080-b301-5b590df2d8a4"
     - stage: seal
       stageUuid: "f6d1a786-e38e-8daf-8328-be968a62a53e"
     - stage: uuid
-      stageUuid: "7992fc4a-b8b1-85bb-bc68-f652cba094a4"
+      stageUuid: "04e3846f-3c4c-8d44-93a0-7be6a53fb6f4"
 version: 2
 ---
 # sibling

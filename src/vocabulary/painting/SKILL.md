@@ -2,11 +2,11 @@
 name: painting
 description: Use when reasoning about painting — A painting.
 atomPath: "vocabulary/painting"
-coordinate: "vocabulary/painting · 1/base · 11fc8e22"
-contentUuid: "c6d38ea7-7eb3-5ac7-8f9e-a1d3c7ad0d70"
-diamondUuid: "ae4a427e-330a-8b38-bf2b-d0db4244cabf"
-uuid: "11fc8e22-20a1-8f1e-8e99-e30eec29a5cb"
-horo: 1
+coordinate: "vocabulary/painting · 7/descent · bb9a479c"
+contentUuid: "757f818e-40f0-5b47-a7e8-3984ca669444"
+diamondUuid: "482dbfe5-da25-8b2d-a0ff-aebbd00e79b2"
+uuid: "bb9a479c-87f5-8c83-9ed4-8b46c503dcc6"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "82c8ce87-8dc5-8b85-b1d9-38fc37ba29f7"
+  computationUuid: "a4d2d12b-708c-85e5-8d48-0d7427c6ff74"
   stages:
     - stage: path
       stageUuid: "7885381a-93cf-8920-93e6-2c600e816981"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "38837706-710e-8836-b253-cd016f92084e"
     - stage: horo
-      stageUuid: "c1827ee6-88a6-81ef-a690-7cb7734055f7"
+      stageUuid: "1f879b23-3ed2-8c05-9a8f-39db43950006"
     - stage: seal
       stageUuid: "5a986b80-de83-8f2c-99ff-7a438137c29b"
     - stage: uuid
-      stageUuid: "13a0a31c-cbaa-8ca5-9afd-a360844cd448"
+      stageUuid: "c51bb557-ee06-8f0c-b14a-02de00b67591"
 version: 2
 ---
 # painting

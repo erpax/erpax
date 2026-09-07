@@ -2,11 +2,11 @@
 name: longitudinal
 description: "Use when reasoning about longitudinal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/longitudinal"
-coordinate: "vocabulary/longitudinal · 8/crest · 1e0483f7"
-contentUuid: "b2254969-96fe-539a-92e5-14102c8a2e98"
-diamondUuid: "aad88d15-936d-87d4-bab2-b6bf12c68a4a"
-uuid: "1e0483f7-2be2-8cec-97f4-57eef34623ce"
-horo: 8
+coordinate: "vocabulary/longitudinal · 5/round · 091c7541"
+contentUuid: "2e90e7c3-d7c5-5ff8-9fe9-b1f7b577159d"
+diamondUuid: "b261f78a-a2ab-85e9-bc50-f983df5ce6f1"
+uuid: "091c7541-7c52-817f-b29c-508bb1d9f7e0"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c097a3d2-07db-8380-850f-029033f45618"
+  computationUuid: "38935a83-25e8-8f10-a766-baf1bb0f8a5d"
   stages:
     - stage: path
       stageUuid: "e79c2123-243b-86ab-93cd-f757786619ec"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "80556195-57ff-87cb-a6c2-45ce277a8580"
     - stage: horo
-      stageUuid: "6e4db71d-cba6-8c5e-b97e-e8bd2b8daf10"
+      stageUuid: "6f2c0082-555a-8a46-8e9e-764b8da8c347"
     - stage: seal
       stageUuid: "0e18fc10-2cd9-8439-9c77-d8d7366c1966"
     - stage: uuid
-      stageUuid: "245ac114-6d08-88bc-b1b5-48bd19d671e7"
+      stageUuid: "1f9b2f42-7c17-872a-86b4-d1908f28d757"
 version: 2
 ---
 # longitudinal

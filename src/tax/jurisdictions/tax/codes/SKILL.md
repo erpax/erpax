@@ -2,11 +2,11 @@
 name: codes
 description: "Use when defining or resolving tax rates — VAT, GST, sales, withholding, income, excise or customs codes with rate percent, UN/CEFACT-5305 category, jurisdiction link, reverse-charge eligibility, recoverability, effective date range and default GL accounts. The per-tenant tax-rate master collection."
 atomPath: "tax/jurisdictions/tax/codes"
-coordinate: "tax/jurisdictions/tax/codes · 4/weave · c64cb618"
-contentUuid: "d63f2bbd-2198-5694-b74d-96e91ab74d7f"
-diamondUuid: "19b0b416-2207-8a5d-92d9-d62287bb0731"
-uuid: "c64cb618-d6ab-8a2f-aba1-7622969df441"
-horo: 4
+coordinate: "tax/jurisdictions/tax/codes · 2/share · 627079bd"
+contentUuid: "a500e8b3-92a8-5d54-b2fa-a61d5befe452"
+diamondUuid: "ff5b83f5-2a94-8c06-add3-f8d291c9cf9c"
+uuid: "627079bd-d9f0-8c86-96a3-ce0f10e3c46f"
+horo: 2
 typography:
   partition: tax
   bondDegree: 16
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a162ac62-f3cc-8836-a982-b0f0193e5dfd"
+  computationUuid: "1860a6b1-548a-86df-ad4e-4407f1a5e0dd"
   stages:
     - stage: path
       stageUuid: "77df4261-bf80-8a0c-a6ea-96a9be623ee0"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "cba12dff-1d6c-8935-9fe1-01a5bcf75a75"
     - stage: horo
-      stageUuid: "67923aa3-5cc2-80d0-971d-95ada6a00acb"
+      stageUuid: "9f16b1c0-355c-8aa1-bdda-22314ec68b13"
     - stage: seal
       stageUuid: "f727f0b0-05b4-8b28-bb6f-d770cb074592"
     - stage: uuid
-      stageUuid: "81bfc238-1c0e-8338-bb62-268fa9d58d31"
+      stageUuid: "45a0e748-6028-8d5c-ad5a-f9bcf1d35217"
 version: 2
 ---
 # tax-codes

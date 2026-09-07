@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "biophoton",
-    "uuid": "f96396fd-5e0b-89b1-8254-cc08a450ff83",
+    "uuid": "aaac0126-c0b7-8e16-b4a1-3aba091e3ef3",
     "words": [
       "biophoton"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this.",
-    "uuid": "ca1f8f5d-63ee-84c4-8a36-ce01738fc645",
+    "uuid": "2cb874b0-6a1c-80df-8bf8-24e48304ee9a",
     "words": [
       "use",
       "when",

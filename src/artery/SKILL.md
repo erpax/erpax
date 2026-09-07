@@ -2,11 +2,11 @@
 name: artery
 description: "Use when reasoning about erpax's outbound vessel — the Windkessel organ. The artery carries value away from the heart, its elastic wall storing systolic volume and recoiling in diastole to smooth pulsatile output into steady peripheral flow: the cache/buffer in flesh. Three properties (Windkessel smoothing · elastic recoil · conserved mass balance) are computed and mapped — a structural isomorphism — onto erpax."
 atomPath: artery
-coordinate: "artery · 1/base · 85ad2f23"
-contentUuid: "3e334f20-d5be-5df3-ba9a-279bf1aafcf0"
-diamondUuid: "62fe73f9-1dce-83a8-a17e-d7a5940ad1d9"
-uuid: "85ad2f23-685f-80ca-9e01-626a0bd0f532"
-horo: 1
+coordinate: "artery · 2/share · 2408c5de"
+contentUuid: "093125f3-be7e-510b-9a99-28eed01a1ec7"
+diamondUuid: "359b2a49-609c-846a-9cf2-03f3eb7fc5ce"
+uuid: "2408c5de-7d23-8d95-bfed-a8ce92867810"
+horo: 2
 typography:
   partition: artery
   bondDegree: 26
@@ -15,7 +15,7 @@ standards:
   - "Frank's Windkessel model; aortic elastic storage smooths cardiac output"
 bindings: []
 signatures:
-  computationUuid: "6e512585-20cd-853a-868c-7c39d6dcfb50"
+  computationUuid: "2664d2d6-19b7-8557-8ada-62c986a2c5fc"
   stages:
     - stage: path
       stageUuid: "bb25bd6b-a438-873d-8574-72e2b8171b2e"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "a6225074-0316-8293-bb5f-7dff3a4d819e"
     - stage: horo
-      stageUuid: "f6c75170-3f78-81be-be5d-c2100d338698"
+      stageUuid: "ad7224c0-f8d4-8386-a0cc-ff111fe72933"
     - stage: seal
       stageUuid: "7218e814-3113-8169-b0c2-4308cb893515"
     - stage: uuid
-      stageUuid: "9aa999a5-dd85-82e4-8f7a-6b2363763023"
+      stageUuid: "b11d495d-0d96-8d69-953e-214ed1826287"
 version: 2
 ---
 # artery — the Windkessel (the elastic buffer)

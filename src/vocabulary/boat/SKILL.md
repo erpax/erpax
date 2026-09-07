@@ -2,11 +2,11 @@
 name: boat
 description: "Use when reasoning about boat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/boat"
-coordinate: "vocabulary/boat · 2/share · 876b369a"
-contentUuid: "872aab6e-6987-557c-8be8-589037eaba8b"
-diamondUuid: "a0898131-e0e8-8805-a19c-7a7a2f50b726"
-uuid: "876b369a-fd5d-8cfe-92be-ad08ec02f0b4"
-horo: 2
+coordinate: "vocabulary/boat · 1/base · d92c4769"
+contentUuid: "51e081b5-5818-5fe7-bf6d-ba0c6aef7941"
+diamondUuid: "d6a01587-8207-85a7-8f06-2ad8e00a1a53"
+uuid: "d92c4769-8504-8669-bc42-018928504390"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 32
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fed856bf-c577-8718-82b3-cecee4d78f6b"
+  computationUuid: "65407b85-ec2a-8fec-b5e4-ef4426819ab1"
   stages:
     - stage: path
       stageUuid: "1f93f544-9761-86dd-8293-38ef5dcc857f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d09f2b38-3d4b-8a6c-a57d-75798ee5dbbd"
     - stage: horo
-      stageUuid: "6a0658db-94f6-8176-becf-8f5849a7cb31"
+      stageUuid: "7e25cfe1-4ad0-8577-a93c-f2b9b2caf8bc"
     - stage: seal
       stageUuid: "1c129d89-67bf-8bb6-8740-c7a1fb326c67"
     - stage: uuid
-      stageUuid: "d313f527-2be8-833f-9b67-56fa1d13d0de"
+      stageUuid: "064569d8-8340-8722-baee-08b6cde06808"
 version: 2
 ---
 # boat

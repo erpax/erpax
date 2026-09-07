@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cloning",
-    "uuid": "35280d2a-a55c-8049-ae99-a313011d273f",
+    "uuid": "29df1795-6d8f-86e6-9c67-2bdc1a2194fc",
     "words": [
       "cloning"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the platform reproduces itself — collecting its own structural genome, publishing it as a verifiable federation envelope, and booting a bit-identical instance from that bundle alone; mitosis as federation, gated by content-uuid recompute.",
-    "uuid": "d3fcf60f-37ad-8f0c-8b0e-87a646b90342",
+    "uuid": "930be2e2-dc43-8de7-8972-e938907498aa",
     "words": [
       "use",
       "when",

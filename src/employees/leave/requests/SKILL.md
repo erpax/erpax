@@ -2,11 +2,11 @@
 name: requests
 description: "Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register."
 atomPath: "employees/leave/requests"
-coordinate: "employees/leave/requests · 1/base · c4ca4912"
-contentUuid: "6d309dfe-8acb-5b56-a843-e353994177be"
-diamondUuid: "75413487-2471-811d-a31e-c78267a19d0b"
-uuid: "c4ca4912-a3ae-8c68-bf7d-ea258f9b1f1e"
-horo: 1
+coordinate: "employees/leave/requests · 7/descent · cdd05425"
+contentUuid: "11f8ad35-0291-55d0-a9c0-b674189ed908"
+diamondUuid: "cbaf2301-88d1-8f15-8a26-b556b7ed7d88"
+uuid: "cdd05425-2ab7-85db-b2a5-4747ef24f80f"
+horo: 7
 typography:
   partition: employees
   bondDegree: 37
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0509f92c-058f-8bd7-a78b-37efa2e17e85"
+  computationUuid: "b02fa3a6-1262-8770-88cf-4bab2fd009c1"
   stages:
     - stage: path
       stageUuid: "3dc04419-a2dc-821f-904c-c83e478dff54"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "e412a273-b316-8424-9e1d-0cda24512e74"
     - stage: horo
-      stageUuid: "22588306-74a9-894f-89c2-7ac9328b7c96"
+      stageUuid: "00b04b4c-43d0-824c-9de2-85b3da94857e"
     - stage: seal
       stageUuid: "277cfb7e-153e-86d2-bfcd-e76ff9fb1d58"
     - stage: uuid
-      stageUuid: "92c27a25-b04b-8db5-987f-f14e3702691c"
+      stageUuid: "0d4ea555-39f8-8e53-b5de-e94ffde2d0e9"
 version: 2
 ---
 # leave-requests

@@ -2,11 +2,11 @@
 name: cancelled
 description: "Use when reasoning about cancelled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cancelled"
-coordinate: "vocabulary/cancelled · 7/descent · 724d49e3"
-contentUuid: "4e57157a-decf-5346-9ed6-24b0b28cd0a3"
-diamondUuid: "7e612214-a444-8e54-b148-7d6a1dc03ddd"
-uuid: "724d49e3-0499-8e9d-9b96-826b72497109"
-horo: 7
+coordinate: "vocabulary/cancelled · 2/share · f48d5b51"
+contentUuid: "5a3585cf-67e6-5dc8-9f65-a54e7155d8e8"
+diamondUuid: "b7ddeb59-a020-8ec2-ac3a-07ee04fd6ec8"
+uuid: "f48d5b51-efe0-87e1-ab07-b5a70582b87a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8b4662be-3ac3-843c-8e56-7d06b44b5b6e"
+  computationUuid: "70e8918f-4f54-8a7a-94b6-a1c06f14739a"
   stages:
     - stage: path
       stageUuid: "550061fc-8328-8d08-8f73-6bd3904a4450"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "024cb20d-8a2c-8605-8674-66516fcde09b"
     - stage: horo
-      stageUuid: "3f27993f-7b1b-877f-8318-ecdff4390b92"
+      stageUuid: "90bb01d7-1e72-8d90-a6f6-7eb3079db8d6"
     - stage: seal
       stageUuid: "71e5e092-ad98-8f4a-b733-795dcf0a3e19"
     - stage: uuid
-      stageUuid: "45eb049e-690f-80a0-adff-2450e12cb09e"
+      stageUuid: "f8e30db1-01d9-861d-abc7-adf947a8f995"
 version: 2
 ---
 # cancelled

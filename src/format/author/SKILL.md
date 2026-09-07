@@ -2,18 +2,18 @@
 name: author
 description: "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \"A and B\", and three or more become \"A, B and C\" — no serial comma, decided once here rather…"
 atomPath: "format/author"
-coordinate: "format/author · 7/descent · b828ecc1"
-contentUuid: "b2e11beb-3533-5404-811f-3a8fbb9d35d8"
-diamondUuid: "5c0c1aa9-8712-8e5f-84a9-3aacb13075c5"
-uuid: "b828ecc1-fc2a-8ecc-86cc-3f1838e54d1e"
-horo: 7
+coordinate: "format/author · 4/weave · 7978fb0c"
+contentUuid: "7036d8b5-fa35-52ca-8e4a-a1c4938d45e2"
+diamondUuid: "e302eaf2-b798-882a-adab-f5cb01716fad"
+uuid: "7978fb0c-d2a1-84fe-b186-71ee8ff6388e"
+horo: 4
 typography:
   partition: format
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f5fc4e80-ddae-8fe6-b34e-6b273c78faf2"
+  computationUuid: "746074f5-f3ec-8360-bd36-3bb128709502"
   stages:
     - stage: path
       stageUuid: "f017d6df-9cd7-8bd7-9ffc-04ff9c6e755c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "39401a5c-7b0c-8dda-8569-d04be9929b54"
     - stage: horo
-      stageUuid: "b9cbf51d-7282-8b38-b4e9-df85b2dedc87"
+      stageUuid: "f20eaa28-379a-8b62-a889-884abf7eaaf9"
     - stage: seal
       stageUuid: "0f89df7d-15e5-82e9-83c9-2006424ecf34"
     - stage: uuid
-      stageUuid: "679e5dd8-4466-8207-87b7-2611a586eadf"
+      stageUuid: "208ace45-703c-8916-bb59-ff2c0ad6ab25"
 version: 2
 ---
 # format/author — a list of people is rendered by a grammar, not by a join

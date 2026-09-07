@@ -2,11 +2,11 @@
 name: administrative
 description: "Use when reasoning about administrative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/administrative"
-coordinate: "vocabulary/administrative · 5/round · 25917879"
-contentUuid: "2d072214-5e07-58c5-8d18-1202ff640535"
-diamondUuid: "1f3def4f-ad7a-8f34-8b07-d83faa9c5187"
-uuid: "25917879-ad87-8b39-b115-1631d6732b93"
-horo: 5
+coordinate: "vocabulary/administrative · 7/descent · 2c53a8bc"
+contentUuid: "e6422844-cf3d-5eec-8641-f12fcb05ef35"
+diamondUuid: "57f65b05-8650-878c-953a-ebf4fb442059"
+uuid: "2c53a8bc-b1e6-8c65-89be-3f01fcb0a426"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2c00ffff-e0d1-8972-a092-b9aae0e92dd2"
+  computationUuid: "eba833e5-cb37-8752-a79d-6b39ea6431f0"
   stages:
     - stage: path
       stageUuid: "a28c3171-ec5a-8d4a-88fc-cbfe9edc3635"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "14102553-8546-849e-955a-170b80e67881"
     - stage: horo
-      stageUuid: "89677df9-ba72-8e48-a003-4574bcbe2040"
+      stageUuid: "824fa757-5f9f-8649-8c95-9cf7333e06db"
     - stage: seal
       stageUuid: "f23018e5-3e45-848a-8efe-1f66ed9b97eb"
     - stage: uuid
-      stageUuid: "8ac20717-5a6d-84b6-bea7-8121e37eb65f"
+      stageUuid: "a045a7db-a07a-8e78-a909-5ab537cc86f0"
 version: 2
 ---
 # administrative

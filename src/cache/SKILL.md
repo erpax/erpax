@@ -2,18 +2,18 @@
 name: cache
 description: "Use when optimizing repeated access — cache invalidation strategies, cache-aside vs write-through, TTL/expiry, cache coherency, memoization, query result caching, distributed cache semantics (Cloudflare KV, Redis)."
 atomPath: cache
-coordinate: "cache · 7/descent · be2be1bb"
-contentUuid: "c6e94a26-c298-563e-9b53-d9744847ec5e"
-diamondUuid: "be554071-c286-87b7-8eb8-bcb1a12da083"
-uuid: "be2be1bb-705e-8d69-8a3a-c579a5dab054"
-horo: 7
+coordinate: "cache · 1/base · ea363c47"
+contentUuid: "af3dbf28-741c-5b92-8511-da274d056c61"
+diamondUuid: "efc9903d-e916-8601-b635-a602a069faac"
+uuid: "ea363c47-6c84-82fb-91bf-2863ee5b3676"
+horo: 1
 typography:
   partition: cache
   bondDegree: 51
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f9108806-b58c-85f1-8516-df8283d6cf77"
+  computationUuid: "57ff78e8-a381-8849-9716-a12ff9e35710"
   stages:
     - stage: path
       stageUuid: "b4f861a8-7bbb-82a6-8f64-b4fc9af00e26"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3b1b8ee0-ac33-8921-924e-314476a0ff9c"
     - stage: horo
-      stageUuid: "18d3b6e5-b244-8603-889b-1470d0927663"
+      stageUuid: "67185642-cb48-8ce3-b05a-750d3271c5f4"
     - stage: seal
       stageUuid: "efa332ed-0488-85f2-8e0e-72f0cb96efd8"
     - stage: uuid
-      stageUuid: "93f4b7dd-a978-8d3b-9e31-67acf975d8ae"
+      stageUuid: "03968adb-33b4-88d2-94bd-24c6da26ddbb"
 version: 2
 ---
 # cache

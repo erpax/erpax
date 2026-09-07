@@ -2,10 +2,10 @@
 name: broader
 description: "Use when reasoning about broader as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/broader"
-coordinate: "vocabulary/broader · 4/weave · b60f3ba5"
-contentUuid: "e1b09b72-c278-5b48-9e0f-21ecfe9fe171"
-diamondUuid: "d8ccbc9e-2761-8f40-968f-0ed2f8c24c45"
-uuid: "b60f3ba5-91ed-8554-9590-8c27fd175e72"
+coordinate: "vocabulary/broader · 4/weave · 97723490"
+contentUuid: "71e66641-ae2a-56cc-bf1c-2fe2566fdf4f"
+diamondUuid: "eb72d1e7-5c16-8717-83de-65d92d8783e7"
+uuid: "97723490-00c9-8cb5-951f-20cfc6bffa97"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e8d725b-5d89-8eba-b111-5ac26375fd52"
+  computationUuid: "20433e09-1908-85ee-87ee-9f1111325a38"
   stages:
     - stage: path
       stageUuid: "45f6dc3d-041e-863d-bd0d-b2ea34fac16e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e4d28214-d957-8995-a1c4-a42e6097cfc3"
     - stage: horo
-      stageUuid: "9e6edf51-35ad-85da-a503-43a2da3a1eb4"
+      stageUuid: "c4790f03-f97a-87a7-ad3b-547f131bf9f1"
     - stage: seal
       stageUuid: "95ef7d99-4c82-84f3-b1e7-5db30986e028"
     - stage: uuid
-      stageUuid: "4a20effe-3fe1-8716-b71f-e24b29ef9d5f"
+      stageUuid: "0453192a-9b02-89e0-92a6-95523bb37e8d"
 version: 2
 ---
 # broader

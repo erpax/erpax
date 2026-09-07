@@ -2,11 +2,11 @@
 name: recipient
 description: Use when reasoning about recipient — A sub property of participant. The participant who is at the receiving end of the action.
 atomPath: "vocabulary/recipient"
-coordinate: "vocabulary/recipient · 4/weave · c3da8339"
-contentUuid: "e4f1bb17-aace-5927-85b9-310143725152"
-diamondUuid: "8839464f-b5bb-869f-b246-c36dbb4b5cb9"
-uuid: "c3da8339-52a6-87cf-8d27-c422451bae75"
-horo: 4
+coordinate: "vocabulary/recipient · 2/share · 6f07ee3e"
+contentUuid: "b0dc7199-bbd9-52ec-8aa2-96cf6f57f16c"
+diamondUuid: "203f2395-fcaf-817d-82f2-b45fc32ea5ba"
+uuid: "6f07ee3e-5c6f-8077-9929-6ff1a164d410"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "955810ec-5d01-84fc-9868-3fbb65787064"
+  computationUuid: "3a93b280-638a-83b7-b054-8e0268c7c776"
   stages:
     - stage: path
       stageUuid: "426c7d0b-0740-8122-a086-31ddbd845945"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2beb4a9d-761f-821e-a50f-fd98774db858"
     - stage: horo
-      stageUuid: "0cd4b8d3-f9e3-87dc-a246-808ad331614f"
+      stageUuid: "26a81bbd-3fb8-88f4-afda-92b23fbe419d"
     - stage: seal
       stageUuid: "6d613466-c738-8bc1-8b84-e87a20afe2b5"
     - stage: uuid
-      stageUuid: "3c142c8e-7697-8cc4-9972-9d89735b14e4"
+      stageUuid: "bc71f6b3-0889-87d8-974c-ca883b8088b0"
 version: 2
 ---
 # recipient

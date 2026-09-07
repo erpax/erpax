@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "insertion",
-    "uuid": "0bc199c7-c9b9-8e91-b4eb-977c44eca4da",
+    "uuid": "a5a77df3-52a1-83e9-b6e4-b3bab1eb10c0",
     "words": [
       "insertion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about insertion — The place of attachment of a muscle, or what the muscle moves.",
-    "uuid": "ae910cb8-f1e6-84dc-8f74-cabb74a71a53",
+    "uuid": "02c3aa27-6b64-8cf6-ace0-92be001aeae4",
     "words": [
       "use",
       "when",

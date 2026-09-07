@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "activities",
-    "uuid": "d777c55f-fbe3-85b9-b59d-811506f6b335",
+    "uuid": "b270afab-0748-8335-8068-6da4c28c1bb1",
     "words": [
       "activities"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register.",
-    "uuid": "a2558631-f214-80f7-a80d-4ca8b011f0fc",
+    "uuid": "b9e8dd85-f66a-8c49-9501-46dc4b180600",
     "words": [
       "use",
       "when",

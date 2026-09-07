@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dunning",
-    "uuid": "c9a36e4f-2e8f-8d2d-81bb-7709ce1b6c94",
+    "uuid": "70de609e-ad2d-8a1e-914b-df255f77ec9f",
     "words": [
       "dunning"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when automating payment retry and collections — dunning-cycles exist but dunning as the parent concept (policy, rule, retry schedule, messaging) does not.",
-    "uuid": "16d5e86d-9661-83fb-8c4b-b591c87560ce",
+    "uuid": "15706c6d-7a3a-8dc1-8c05-5cbafa7d3fe2",
     "words": [
       "use",
       "when",

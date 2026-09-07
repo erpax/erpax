@@ -2,11 +2,11 @@
 name: pulmonary
 description: "Use when reasoning about pulmonary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pulmonary"
-coordinate: "vocabulary/pulmonary · 1/base · 3ddf286a"
-contentUuid: "11c437ec-cc49-5263-94d0-9a54cd0d4af6"
-diamondUuid: "376528c0-d0d7-8823-ae54-d596b9ac1e1d"
-uuid: "3ddf286a-6272-84dc-83df-d81e984d85d8"
-horo: 1
+coordinate: "vocabulary/pulmonary · 8/crest · 4e5d713f"
+contentUuid: "b4de3f2f-7c8d-535d-9efa-6b98ab3ac834"
+diamondUuid: "e8b9cdc6-ad75-8f4e-86cd-593a2c56f9d4"
+uuid: "4e5d713f-039b-89ec-8ea3-25f6eea0d469"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "61909f0b-2e2f-8842-abac-c60bf5ff0cd4"
+  computationUuid: "7ac3cb69-e069-80ac-89d2-217423f16e8e"
   stages:
     - stage: path
       stageUuid: "f2f5a554-00c6-8328-820d-1567b6c41912"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f888d4bb-6dbf-84e0-9fbf-d4a6dd3be82e"
     - stage: horo
-      stageUuid: "9ed3944a-3727-8717-97a3-282c97864b7b"
+      stageUuid: "82b4ff4c-57de-871d-9f75-0baea0b9e729"
     - stage: seal
       stageUuid: "2e5b956d-f13f-8734-93cc-edf86ccf2297"
     - stage: uuid
-      stageUuid: "42367aee-ee4a-84eb-a5fd-09222eca6f22"
+      stageUuid: "022c1907-608a-860a-a78a-63344c4ad602"
 version: 2
 ---
 # pulmonary

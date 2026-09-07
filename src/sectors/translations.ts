@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sectors",
-    "uuid": "d2526e4f-a2f6-817e-b586-319e208c7efa",
+    "uuid": "20ea7581-4dbc-8bac-ad1a-c84f28329a5b",
     "words": [
       "sectors"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when taxonomising any part of society — SNA institutional sectors, ISIC economic activities, COFOG government functions, ICNPO civil society, SDG outcomes. The one societal coordinate system every party, connection, transaction and tenant references.",
-    "uuid": "efeecbc8-3f7a-8ad7-8db8-0de47b81daac",
+    "uuid": "4982b062-c611-8628-873c-bf49ab1da84e",
     "words": [
       "use",
       "when",

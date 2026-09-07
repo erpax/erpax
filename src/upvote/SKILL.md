@@ -2,11 +2,11 @@
 name: upvote
 description: "Use when reasoning about upvote as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: upvote
-coordinate: "upvote · 1/base · a5fa3667"
-contentUuid: "f6dbca02-0dd6-5a87-bc34-89f0bca12df2"
-diamondUuid: "eef64133-6596-82be-9536-73330dc54741"
-uuid: "a5fa3667-e573-845c-82c9-cb66a8ded719"
-horo: 1
+coordinate: "upvote · 5/round · de60b65a"
+contentUuid: "9d975470-ecf3-593b-8535-bf5c03501709"
+diamondUuid: "edd3f797-9031-86d2-bdb5-216941d34eb0"
+uuid: "de60b65a-aaf6-8099-860e-c734182ff216"
+horo: 5
 typography:
   partition: upvote
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "34cdd85f-ca46-8cd4-97dd-eeff6d21717e"
+  computationUuid: "75c42334-b49c-85b7-af94-b42e158a4451"
   stages:
     - stage: path
       stageUuid: "7ed6b4d8-a615-8c53-a77d-804b9b9dff0f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "84842ea9-448a-8f03-b5ce-5e132dc69e3a"
     - stage: horo
-      stageUuid: "6049f3d4-5966-84ec-9fc8-c26c081f9bdf"
+      stageUuid: "9de4faad-4147-85e2-a810-ca632eafad6b"
     - stage: seal
       stageUuid: "6805fc06-f908-894a-b81e-4306dc826120"
     - stage: uuid
-      stageUuid: "1ab4ca80-3fbe-883a-881d-5ec2fcd6ca4e"
+      stageUuid: "5484661f-a0e7-81f2-9281-7eea36a4e71c"
 version: 2
 ---
 # upvote

@@ -2,11 +2,11 @@
 name: files
 description: "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register."
 atomPath: "legal/entities/transfer/pricing/files"
-coordinate: "legal/entities/transfer/pricing/files · 8/crest · c6fa8a55"
-contentUuid: "1215d6ec-2214-5b9c-beee-4e74a2fde91b"
-diamondUuid: "7b2d3dc0-a7cc-81d6-9e64-39f467819163"
-uuid: "c6fa8a55-c16d-8e41-988e-007108646438"
-horo: 8
+coordinate: "legal/entities/transfer/pricing/files · 2/share · 191d04df"
+contentUuid: "4a197211-2daf-53d6-bf87-725792931312"
+diamondUuid: "b3b83a9c-b79a-89c3-a934-ff548fd046d6"
+uuid: "191d04df-9d7e-8c10-9c07-5a88a90ecad9"
+horo: 2
 typography:
   partition: legal
   bondDegree: 18
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f3ebc4bc-d002-89fa-a38a-fcc9303ec083"
+  computationUuid: "b77669ad-59ca-8ade-9a2e-9935f5154581"
   stages:
     - stage: path
       stageUuid: "56b105eb-b9db-83ca-86e1-6d6b4038f9bc"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "6d42e2cb-64c3-8ce0-92f9-7a63cfba443b"
     - stage: horo
-      stageUuid: "81fb03ba-36bc-8790-8e5d-a671c4cf3480"
+      stageUuid: "4d7169ae-ef01-89ea-be24-541a3a1e627c"
     - stage: seal
       stageUuid: "7334f663-3215-8e0e-8982-e3a326d600e4"
     - stage: uuid
-      stageUuid: "f5081af8-12c2-892b-9ea9-d310faeb6e40"
+      stageUuid: "7feb4bdd-67c2-88d2-b25c-34df82df3f59"
 version: 2
 ---
 # transfer-pricing-files

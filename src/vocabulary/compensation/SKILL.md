@@ -2,18 +2,18 @@
 name: compensation
 description: "Use when defining or analyzing an employee's total pay structure — base salary, bonus, incentives, benefits value, equity, deductions. The compensation-concern collecting all economic value flows from employer to worker."
 atomPath: "vocabulary/compensation"
-coordinate: "vocabulary/compensation · 2/share · 6e77e45f"
-contentUuid: "f95d0dab-d81f-59d5-a443-b393b0a3bdc8"
-diamondUuid: "e6280647-9b5f-88fd-b7ce-02cf99f10cf7"
-uuid: "6e77e45f-7b5c-8774-8016-60ac0831229a"
-horo: 2
+coordinate: "vocabulary/compensation · 8/crest · 2b79713b"
+contentUuid: "d3f7aebe-405e-5dbc-a6a7-85e84446fc83"
+diamondUuid: "eac7d8f0-8742-8c6c-a09f-8970db3b5b56"
+uuid: "2b79713b-881a-8587-b3dd-9f28ba43e1aa"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a3bd360e-bcdf-84a4-b72a-4eb71136767f"
+  computationUuid: "74fadd47-7cbe-8012-a99b-13e2a6c496c4"
   stages:
     - stage: path
       stageUuid: "44eb6a1d-1f3b-8ae9-8f66-bb7c4c6166c8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "292cd282-3723-839b-a3af-2935c3e6e730"
     - stage: horo
-      stageUuid: "52ad8658-e66f-8b82-8ec9-25c74738cd26"
+      stageUuid: "57bc4ea3-f548-8bfc-85a8-56814c75ab73"
     - stage: seal
       stageUuid: "2e7bb8c8-9efb-88f8-bfea-a963201f6313"
     - stage: uuid
-      stageUuid: "1456c774-cc9b-8697-9b16-144a388ff641"
+      stageUuid: "b73af766-f354-8b24-bbe4-e2f6f7053a71"
 version: 2
 ---
 # compensation

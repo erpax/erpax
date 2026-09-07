@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "graph",
-    "uuid": "c72d31a6-717e-887e-ba92-ea05fa811790",
+    "uuid": "245e3396-7b0f-8fe7-94d9-988d7b3cf035",
     "words": [
       "graph"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the diamond as a GRAPH — atoms and the bonds between them — through its own namespace; the face re-exports the diamond barrel while the matter is still being lifted out of the hub.",
-    "uuid": "ef7e6a1e-8611-824e-b480-ce64dfd92fed",
+    "uuid": "b16be42f-f831-8437-ba84-7260d7467c5f",
     "words": [
       "use",
       "when",

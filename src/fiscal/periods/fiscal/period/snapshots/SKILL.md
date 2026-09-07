@@ -2,11 +2,11 @@
 name: snapshots
 description: "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node."
 atomPath: "fiscal/periods/fiscal/period/snapshots"
-coordinate: "fiscal/periods/fiscal/period/snapshots · 4/weave · e69dfb64"
-contentUuid: "5c0bbd6b-b27b-51c4-9331-96992c7fe561"
-diamondUuid: "dbac4751-7ea0-825c-aa0b-539e049a9886"
-uuid: "e69dfb64-86d9-87d7-89f6-eb233d8bdf9d"
-horo: 4
+coordinate: "fiscal/periods/fiscal/period/snapshots · 2/share · ec08d167"
+contentUuid: "8d4f68f2-c4ff-5d3c-8380-270373fbf218"
+diamondUuid: "ee6d6e16-f415-80ef-ba02-15a1c348d6fb"
+uuid: "ec08d167-cb9f-8959-a04d-fe85b2f62b76"
+horo: 2
 typography:
   partition: fiscal
   bondDegree: 28
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d6b41a3b-305a-8f90-a286-8a2adf6cccea"
+  computationUuid: "034340f3-9d43-8eb0-b56e-de456f47d2c1"
   stages:
     - stage: path
       stageUuid: "42d7c04b-469d-8354-bfd8-d34c0d6851eb"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "e7134c4d-a15d-8f82-86bb-6974c073e606"
     - stage: horo
-      stageUuid: "ebed4a2b-791c-85e6-a79a-eb23883d2487"
+      stageUuid: "f8169ede-af72-8871-92c2-cb27c9f6f77c"
     - stage: seal
       stageUuid: "d8757962-66a2-8481-8f62-0a54912185e0"
     - stage: uuid
-      stageUuid: "fbe096d3-2f68-80c5-a8ab-1de792c56193"
+      stageUuid: "adebec28-627c-8c54-ac0a-7cd7996babda"
 version: 2
 ---
 # fiscal-period-snapshots

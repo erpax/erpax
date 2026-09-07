@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "classroom",
-    "uuid": "4f0a4feb-dd64-81e3-aa81-22ce110161f9",
+    "uuid": "413d680a-c328-8d3e-a5a0-dce41436aa2a",
     "words": [
       "classroom"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling a multi-agent learning session — a team of agents in pedagogical roles (teacher delivers, peer debates, examiner gates, debater brings viewpoints) teaches a competency to a learner (human or agent — the actor-merge). The examiner IS the gate, the debate IS competition (viewpoints → harmonic-first → decide), the learner acquires the competency's skillRoute. Generative friction, not passive delivery; the learner owns their record (sovereign, content-addressed).",
-    "uuid": "fce14003-8de0-8e2e-8bd8-2ad5a8b1d038",
+    "uuid": "eb6ccc9e-d8f3-857e-844d-6e8380ff2af5",
     "words": [
       "use",
       "when",

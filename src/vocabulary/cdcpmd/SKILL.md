@@ -2,11 +2,11 @@
 name: cdcpmd
 description: "Use when reasoning about cdcpmd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cdcpmd"
-coordinate: "vocabulary/cdcpmd · 4/weave · 75ecb0a7"
-contentUuid: "4791d4a3-a76d-5306-8062-1c7fb69efd4a"
-diamondUuid: "c73b4ed9-951c-8595-a4d3-3014531f4ee5"
-uuid: "75ecb0a7-7e29-8018-aaf8-7ed03875fd65"
-horo: 4
+coordinate: "vocabulary/cdcpmd · 1/base · 83b74a77"
+contentUuid: "60ced97b-a157-515b-bdf7-02917964b0cc"
+diamondUuid: "ce13343e-a952-8b2b-9a9c-2f0996b92fde"
+uuid: "83b74a77-d656-8f60-95f5-b64492d2b7f3"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6d7d05b8-8c3a-8a77-841b-d1c3d74a6e86"
+  computationUuid: "f16842db-0217-8cfd-b4c9-aba92c92b056"
   stages:
     - stage: path
       stageUuid: "86c1fc9f-636b-8d39-9ebd-3762d2efcbdd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cfc7225e-3ce6-89bc-a60b-7997ff82f8a9"
     - stage: horo
-      stageUuid: "767357e3-7d4a-8df4-ad73-f500ea31c476"
+      stageUuid: "632c0777-1101-84a7-83e2-aafca3a92cbd"
     - stage: seal
       stageUuid: "24f9543c-d800-8746-b1e3-c181e398c5ee"
     - stage: uuid
-      stageUuid: "45ce5280-89e8-8711-a30d-5bf3de07770f"
+      stageUuid: "f8bbc09c-978a-85d7-9ffa-a7a2cbf7fb24"
 version: 2
 ---
 # cdcpmd

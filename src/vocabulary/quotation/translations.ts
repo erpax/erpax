@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quotation",
-    "uuid": "995a8e6c-946f-8d47-b626-36c68bdc55c8",
+    "uuid": "f5f5264a-a5bc-8d1d-962b-f461cc570fba",
     "words": [
       "quotation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quotation — A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use isB",
-    "uuid": "35011a24-3c34-8f44-b41a-a2f3874521e1",
+    "uuid": "b3b5d040-bfe3-8875-a636-baa55369d563",
     "words": [
       "use",
       "when",

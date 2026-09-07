@@ -2,11 +2,11 @@
 name: foot
 description: "Use when reasoning about foot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/foot"
-coordinate: "vocabulary/foot · 7/descent · f2701fc4"
-contentUuid: "314ffcce-5730-5602-8b3c-392b339bc621"
-diamondUuid: "80561fe5-4cde-84b0-b251-7f4eb1fdb516"
-uuid: "f2701fc4-f6a5-8d8f-87bf-54b6660bc09f"
-horo: 7
+coordinate: "vocabulary/foot · 1/base · 3b5ecae2"
+contentUuid: "6f152d2d-acc9-519b-a801-a3b9efe9cf08"
+diamondUuid: "2b3ba751-151e-86db-9b0e-f77f8b66d972"
+uuid: "3b5ecae2-6932-8339-8457-8d4ffbec219d"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "57a2dfec-db7e-826e-9952-9e984d02291e"
+  computationUuid: "553da5ac-419a-87db-a52b-1e8c44fb3a65"
   stages:
     - stage: path
       stageUuid: "652094b9-a667-8e6a-92f7-3658e33f39c0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f365dc4c-447d-87db-a6cb-aad7a56e897c"
     - stage: horo
-      stageUuid: "407e50f6-70e8-8269-8183-a5e522065e33"
+      stageUuid: "3c1c049d-26a8-8e31-892d-853028a958f3"
     - stage: seal
       stageUuid: "c8dbac33-6279-85c8-8b6c-9fecf851691b"
     - stage: uuid
-      stageUuid: "85714342-1c65-8a00-bbfd-524910ec4425"
+      stageUuid: "d8097a5c-e30f-8f30-b5c2-42c0b215b154"
 version: 2
 ---
 # foot

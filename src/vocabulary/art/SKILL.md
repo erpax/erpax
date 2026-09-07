@@ -2,11 +2,11 @@
 name: art
 description: "Use when reasoning about art as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/art"
-coordinate: "vocabulary/art · 7/descent · 2689b19a"
-contentUuid: "2de05e6e-3beb-5c92-aae4-c399096018f6"
-diamondUuid: "80874f43-9741-8299-b08f-a71025a1e48c"
-uuid: "2689b19a-c737-8dbb-b3a6-8f19c5f334fb"
-horo: 7
+coordinate: "vocabulary/art · 1/base · d64240bd"
+contentUuid: "8253c994-9af7-5ea8-8aa1-ec351aad7a8c"
+diamondUuid: "ed0266d0-09f8-8aef-a524-b3c47c758e41"
+uuid: "d64240bd-a6cd-8b01-b79a-4640fd57797c"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 36
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "844110e3-ae80-86e3-982c-0bc28b085108"
+  computationUuid: "a67c2be6-6674-863a-94ef-351027e29d65"
   stages:
     - stage: path
       stageUuid: "a4379fdc-b114-879e-9574-6cd4c13973b1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d28c26ac-edff-833f-9c3a-e86e60bd65cf"
     - stage: horo
-      stageUuid: "e5545529-ceaa-83e7-a9aa-b453ea197c66"
+      stageUuid: "6f6a9896-50fe-8eb1-a1e9-38fc3b75edde"
     - stage: seal
       stageUuid: "56ffdb39-7f3c-8db0-832c-4bebf843aa74"
     - stage: uuid
-      stageUuid: "f1e85e31-33ff-835b-935a-a66dd74fe75e"
+      stageUuid: "33c2d278-7503-81b0-a565-fadfb14e12ca"
 version: 2
 ---
 # art

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "routing",
-    "uuid": "ef61dcba-560c-86cc-b75e-015a4c04c648",
+    "uuid": "77b25144-766a-80ff-b0d4-b5568ed719f9",
     "words": [
       "routing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service.",
-    "uuid": "575b8f83-32eb-8509-81bc-876b1dcaadbb",
+    "uuid": "d3c8cdcc-3cce-8081-910b-03e27b594388",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: degreeday
 description: "Use when crop development is predicted from accumulated heat rather than the calendar — growing degree days (GDD = (Tmax+Tmin)/2 − Tbase, capped) measure the heat a crop banks toward maturity, so a warm spring advances harvest and a cool one delays it. The heat-unit clock that makes a fixed-week calendar drift; pairs with frost and evapotranspiration."
 atomPath: "vocabulary/degreeday"
-coordinate: "vocabulary/degreeday · 7/descent · 21896c5c"
-contentUuid: "30fe2a46-cbf5-5277-a024-7b7288116331"
-diamondUuid: "4f94a121-b953-8ed1-9031-3b472014d382"
-uuid: "21896c5c-b6ca-8b1b-964b-242f89387aff"
-horo: 7
+coordinate: "vocabulary/degreeday · 2/share · c8c964ed"
+contentUuid: "60e51ee3-30e7-599a-ba85-7fd11693c7c7"
+diamondUuid: "5aff115e-714d-8b17-a65a-de0f57b145ff"
+uuid: "c8c964ed-f306-8f0b-919c-5d8aeefd8ac3"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9faaa1e2-2692-86be-8ea6-8828a8af90f5"
+  computationUuid: "8f9dc369-4b5d-8eb4-9c3e-68f156c97293"
   stages:
     - stage: path
       stageUuid: "dc7940ba-2ab3-89b9-a710-5fadef681ed8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a070e8f0-b980-80b9-9de2-e2a54d607954"
     - stage: horo
-      stageUuid: "8d5c8503-32ee-8541-8821-251f8283a3f2"
+      stageUuid: "48217008-1f68-8a5a-8d17-1f548429e55a"
     - stage: seal
       stageUuid: "a070a948-c81e-8ac6-adf8-09e880632e16"
     - stage: uuid
-      stageUuid: "7db3dda3-ed3f-8fb5-914a-99a59a8923ed"
+      stageUuid: "826d391b-76c4-86d5-9759-dc3fdd0a25b8"
 version: 2
 ---
 # degreeday — the heat-unit clock that paces crop development

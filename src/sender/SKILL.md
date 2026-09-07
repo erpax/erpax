@@ -2,10 +2,10 @@
 name: sender
 description: Use when reasoning about sender — A sub property of participant. The participant who is at the sending end of the action.
 atomPath: sender
-coordinate: "sender · 4/weave · 902f8dc1"
-contentUuid: "e0a8bb66-a7a3-5a7a-bae7-3447ed8b0805"
-diamondUuid: "cd97b22f-e222-873c-9906-15a2d4fe66c6"
-uuid: "902f8dc1-8618-8e27-9005-428c7ee4882d"
+coordinate: "sender · 4/weave · 96459c19"
+contentUuid: "79c70729-23e3-54f2-a81b-be6fec33d5bc"
+diamondUuid: "2073d6fb-a04e-82d1-a7b9-b802b21c02f7"
+uuid: "96459c19-c27f-854c-b358-d013b85c13b9"
 horo: 4
 typography:
   partition: sender
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d0666d8d-e627-88f1-8a45-c782dbdeed5d"
+  computationUuid: "b260eb7a-0518-8ded-82a8-20e1dc745b56"
   stages:
     - stage: path
       stageUuid: "eacf5e71-2259-8d9d-872b-db651c35599c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8f6d3d66-23fe-827d-99af-10bceaa41b24"
     - stage: horo
-      stageUuid: "b41e1096-e9da-877a-b410-9ba79f9fcf53"
+      stageUuid: "f6fa6441-d79a-8f6f-829c-99910dc2d147"
     - stage: seal
       stageUuid: "c60aceb5-5621-8f1f-a320-da3da0399d61"
     - stage: uuid
-      stageUuid: "31e55a34-9ade-89e5-9f66-30cc96071484"
+      stageUuid: "74e85d12-9ce4-81e8-9b19-20bdc9740e98"
 version: 2
 ---
 # sender

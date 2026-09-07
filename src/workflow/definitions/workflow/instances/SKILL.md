@@ -2,11 +2,11 @@
 name: instances
 description: "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection."
 atomPath: "workflow/definitions/workflow/instances"
-coordinate: "workflow/definitions/workflow/instances · 7/descent · 4d2087c6"
-contentUuid: "dfc17325-b606-553f-bd3a-9ae640ea56fd"
-diamondUuid: "af0de50b-8869-83fd-a060-3e7caa288c1e"
-uuid: "4d2087c6-d6f5-8ab0-ac3d-a5f0a9ae1468"
-horo: 7
+coordinate: "workflow/definitions/workflow/instances · 2/share · b302c4d0"
+contentUuid: "9a70f998-698a-5fa9-b362-2f341fd094e2"
+diamondUuid: "56230d21-7f30-8acd-98d4-2433a49fb105"
+uuid: "b302c4d0-6a28-8202-bf37-e0b545e9bf04"
+horo: 2
 typography:
   partition: workflow
   bondDegree: 36
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4563f6ab-2fda-897a-8c15-c5c36b1ec380"
+  computationUuid: "edf72e74-9ab6-848a-8843-aa258a88c1ff"
   stages:
     - stage: path
       stageUuid: "ef31534c-b77a-8d21-add2-ccd21f5f21ad"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "2dc1a7b8-3beb-84ad-987e-4045e2a9e422"
     - stage: horo
-      stageUuid: "1b8de248-4a1c-8bf8-92e8-e496ee1925fc"
+      stageUuid: "ca8f316a-f1df-8257-bfad-ce2c415fc883"
     - stage: seal
       stageUuid: "890a1125-1c21-8d98-8220-87225d147a2d"
     - stage: uuid
-      stageUuid: "4d3e4278-ddcb-8ae4-bcc6-bf88b85303ff"
+      stageUuid: "0ea89372-afc2-806a-8b3c-3e34fadbea1e"
 version: 2
 ---
 # workflow-instances

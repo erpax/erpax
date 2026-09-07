@@ -2,11 +2,11 @@
 name: researcher
 description: Use when reasoning about researcher — Researchers.
 atomPath: "vocabulary/researcher"
-coordinate: "vocabulary/researcher · 1/base · 01a4d4a6"
-contentUuid: "923ab5a6-4785-597f-901d-4f1c17ea71af"
-diamondUuid: "055a91b4-38cd-80b2-9d05-27e3d2f4b12c"
-uuid: "01a4d4a6-85d0-8608-9d52-51c5cc156f77"
-horo: 1
+coordinate: "vocabulary/researcher · 8/crest · dcad450b"
+contentUuid: "dfb7eb27-1159-5715-ae1f-66453350a5ae"
+diamondUuid: "ea55e6af-01f8-8249-83c0-2ad34c20ea5a"
+uuid: "dcad450b-1674-82c5-846e-d5b76876ce2d"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ad8f3cee-54f8-8f14-b708-a02f7f11979c"
+  computationUuid: "44c8816b-3f85-8d41-9fcd-99cbaf8e621e"
   stages:
     - stage: path
       stageUuid: "19ea5319-c051-8024-969a-7002eabb18cf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c1e160e0-ab84-85d3-bd4b-ae85ba3407d7"
     - stage: horo
-      stageUuid: "3d104616-9a74-875b-b0e8-f3d7d459116f"
+      stageUuid: "fdbbf943-431d-8dc6-8199-baf70f183ccb"
     - stage: seal
       stageUuid: "044024cc-1987-8732-80b9-a4b1b58f1211"
     - stage: uuid
-      stageUuid: "cb23338e-4d71-829a-b0d0-074fcdfbcab8"
+      stageUuid: "65bd2c64-854a-80e1-ad29-05342f631fef"
 version: 2
 ---
 # researcher

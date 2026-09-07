@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "constants",
-    "uuid": "b2dd0397-254b-8b66-b847-72496dc971ec",
+    "uuid": "c3f215b2-b363-858b-80c3-dd703a96003d",
     "words": [
       "constants"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about constants — Cloudflare constants — KIDs, environment keys, binding names",
-    "uuid": "380ca7bf-9930-8c7d-aa89-6d4f330b4dff",
+    "uuid": "d8cadb06-7a19-850a-91ce-9d35a44ba9f3",
     "words": [
       "use",
       "when",

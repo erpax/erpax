@@ -2,11 +2,11 @@
 name: mirror
 description: "Use when reasoning about a path read both ways — left→right and right→left are different paths (different words, different folders) yet carry the same value, because the path's digital root (the sum of its word-digits) is direction-invariant; the horo as path, max value the same on both sides for words and digits."
 atomPath: mirror
-coordinate: "mirror · 7/descent · cf624f27"
-contentUuid: "b74e6879-fef4-5933-b9c2-c220a4d7eb21"
-diamondUuid: "fa24ccfc-3a46-8941-b2d8-041865525af5"
-uuid: "cf624f27-1d26-8c35-9964-fd96c9faf67a"
-horo: 7
+coordinate: "mirror · 1/base · 170ed117"
+contentUuid: "06c2f1d0-1c0e-5a5c-b1bb-bd9a757bfaf8"
+diamondUuid: "93a49bca-160c-8e8d-9633-a803dfdd8710"
+uuid: "170ed117-131c-8f5a-9211-8256c07f78f7"
+horo: 1
 typography:
   partition: mirror
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "the base-10 digital root (direction-invariant) · the horo ring read both ways · duality (L→R ⊕ R→L)"
 bindings: []
 signatures:
-  computationUuid: "c9e52224-516d-8350-9754-3b759b07e282"
+  computationUuid: "b8d90a30-5106-87d7-a558-8fa7ce3e8aba"
   stages:
     - stage: path
       stageUuid: "118a50eb-1181-8e39-9b4b-700432693b80"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d097c10e-40e0-8c8c-a2aa-ea7676117d59"
     - stage: horo
-      stageUuid: "4a296c64-2bca-8ec2-ac5a-12a253128f67"
+      stageUuid: "316abbc4-cb61-8538-bcbd-15d8bb052b91"
     - stage: seal
       stageUuid: "aa318b33-852c-86c6-9d24-257728952137"
     - stage: uuid
-      stageUuid: "3dd5b321-2834-8128-931a-14880ee32a6d"
+      stageUuid: "879f08dd-7197-8cbb-8c87-52f7bb4f27a4"
 version: 2
 ---
 # mirror — the horo as path read both ways

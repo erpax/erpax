@@ -2,18 +2,18 @@
 name: cost
 description: "Use when computing or fine-tuning Cloudflare spend — every wrangler.jsonc binding (Workers, D1, R2, KV, Vectorize, Workers AI, Queues, Durable Objects, Analytics Engine) as a billable dimension priced into the one efficiency law (output/cost, kind money). cloudflareCost(profile) computes $ from a usage profile; LEVERS ranks the fine-tunes. The prices are a verifiable input and the magnitudes need real telemetry — the bill is the truth, not this model."
 atomPath: "cloudflare/cost"
-coordinate: "cloudflare/cost · 5/round · a57f301e"
-contentUuid: "eca77ce4-3335-549c-8856-67a444749a1c"
-diamondUuid: "73e07f37-f1c7-8b2b-a1d0-c683808d6224"
-uuid: "a57f301e-fa65-8345-b57d-76441d164aab"
-horo: 5
+coordinate: "cloudflare/cost · 2/share · d8cd6d4b"
+contentUuid: "b43f8f15-9a43-59b0-b925-6dde15706f41"
+diamondUuid: "b0d4aaf4-eeee-8949-9c6c-bcd2a5519dfd"
+uuid: "d8cd6d4b-5631-8ce0-9dee-052b57b89556"
+horo: 2
 typography:
   partition: cloudflare
   bondDegree: 460
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5db6bc3a-3c5e-8c57-9986-892ff7edaac8"
+  computationUuid: "17b7f19f-9d99-8b51-b745-cc887c8e349b"
   stages:
     - stage: path
       stageUuid: "63d7f30d-c4ff-80c3-9d7b-410e6460c71e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dc342481-380e-8ac3-804e-1196009e3e9e"
     - stage: horo
-      stageUuid: "799a971a-e2bb-8a6b-95bf-07d255dceaaf"
+      stageUuid: "a7b96a63-e778-8de8-824b-f1436079afa2"
     - stage: seal
       stageUuid: "4b3410d5-9b26-885e-815d-3e2fa34b3ce3"
     - stage: uuid
-      stageUuid: "c6177df8-d273-88e2-8d26-ffd972763b66"
+      stageUuid: "88fe44a6-216c-82a5-a95e-103c3d01778b"
 version: 2
 ---
 # cost — erpax's Cloudflare bill, computed and fine-tuned against the one law

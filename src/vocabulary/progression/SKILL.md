@@ -2,11 +2,11 @@
 name: progression
 description: "Use when reasoning about progression as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/progression"
-coordinate: "vocabulary/progression · 7/descent · 088f048d"
-contentUuid: "f1b40267-154a-57b5-92d7-fd50a934b8c5"
-diamondUuid: "9b456750-73d6-886c-a161-0e688fb389fc"
-uuid: "088f048d-fa70-8c1f-9e7a-434e393571b7"
-horo: 7
+coordinate: "vocabulary/progression · 8/crest · 922f4801"
+contentUuid: "cc1b5aa5-f9e3-5bfa-85c5-2572c4d91448"
+diamondUuid: "87ba7bfc-3f11-8d0d-89b6-d05124fa505f"
+uuid: "922f4801-c605-8442-98c3-e3f77d05ef7e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "db5daa1b-afe3-8532-8d11-3c50513630a6"
+  computationUuid: "0a96016c-4883-82c4-b85d-14853c66cf89"
   stages:
     - stage: path
       stageUuid: "261b91f2-26c1-8c62-8f2d-6bb3b8d138e0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2f31644e-eb20-86ee-8ec8-b76d7275cf31"
     - stage: horo
-      stageUuid: "f9e16e75-d775-81fd-810c-a01d8fb6bb0f"
+      stageUuid: "56aebe29-fb87-8b31-ab91-ffec0a1dee5a"
     - stage: seal
       stageUuid: "258b541c-b444-8db5-b95d-8304e75520b6"
     - stage: uuid
-      stageUuid: "a9c23c28-db51-8080-a1e4-ecf6c446de5b"
+      stageUuid: "2e366589-e638-8851-a5a5-83b9445219a3"
 version: 2
 ---
 # progression

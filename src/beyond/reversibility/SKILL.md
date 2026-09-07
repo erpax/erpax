@@ -2,11 +2,11 @@
 name: reversibility
 description: "Use when a state transition needs a typed undo — reversibility computes the inverse of an AgentEffect (undo-create, undo-update, undo-emit, undo-audit) or reports cannot-invert with a reason, powering GDPR right-to-erasure, regulatory reversal and undo workflows without per-collection unwind code."
 atomPath: "beyond/reversibility"
-coordinate: "beyond/reversibility · 7/descent · 9b066c30"
-contentUuid: "a7481322-fc97-5744-b757-d25dbd97ca55"
-diamondUuid: "88530053-fd4d-8299-8756-39f17a490aa5"
-uuid: "9b066c30-7da9-8e9f-af2f-1aae07a8a70e"
-horo: 7
+coordinate: "beyond/reversibility · 8/crest · 19afa6f7"
+contentUuid: "4a70987f-463c-5a9c-8c51-6aad67102554"
+diamondUuid: "0aa57686-bc0b-8794-8777-ec3cf13bba39"
+uuid: "19afa6f7-a786-82d2-8897-9be4f6b643c2"
+horo: 8
 typography:
   partition: beyond
   bondDegree: 13
@@ -17,7 +17,7 @@ standards:
   - "ISO 19011:2018 §6.4.6 audit-evidence (reversal trail)"
 bindings: []
 signatures:
-  computationUuid: "39ba0068-cee2-8ba4-9a36-661ef4cf91b6"
+  computationUuid: "db5cd4d8-b67a-8d6d-8584-62d3a8c98684"
   stages:
     - stage: path
       stageUuid: "63efb5c9-e8e2-8d0f-abe1-5d147f5ec281"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "f78a7716-c860-8354-9915-6d73443a94c1"
     - stage: horo
-      stageUuid: "68733885-301f-8b3c-bbc9-23c2e96f4a30"
+      stageUuid: "8773396f-91ca-8d60-b25e-2e0677e42321"
     - stage: seal
       stageUuid: "8bc00171-9623-80a8-a69b-f8c786cdbcc8"
     - stage: uuid
-      stageUuid: "ec65e203-20b5-8820-a0bc-73eaa4660cca"
+      stageUuid: "e1f9769a-bf91-8d53-83c0-56e0a2cb0e64"
 version: 2
 ---
 # beyond/reversibility — typed inverse of every state transition

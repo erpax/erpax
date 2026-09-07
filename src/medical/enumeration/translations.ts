@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "enumeration",
-    "uuid": "f2278dae-00f7-8eaf-a12c-0884f9b8b3eb",
+    "uuid": "a9f70814-7255-85f7-9f61-522a92cd43d7",
     "words": [
       "enumeration"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about enumeration as a medical facet of medical — vocabulary pivot to @/enumeration; nested not duplicated.",
-    "uuid": "58f3b521-1ab5-8721-94d1-265ec3f3d668",
+    "uuid": "26467d7d-71b3-816d-8529-01c5c47b75e8",
     "words": [
       "use",
       "when",

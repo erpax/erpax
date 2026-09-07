@@ -2,11 +2,11 @@
 name: "2"
 description: "Use when implementing or referencing ISO 3166-2 — Country subdivisions."
 atomPath: "iso/3166/2"
-coordinate: "iso/3166/2 · 8/crest · 5fca7c4f"
-contentUuid: "846fca5a-46b1-544a-8e99-f27fc73608a7"
-diamondUuid: "996c0949-8112-8204-ae6f-eddc18ba7eb4"
-uuid: "5fca7c4f-03f4-80e1-9d44-fabf49cad5f5"
-horo: 8
+coordinate: "iso/3166/2 · 4/weave · f40c99b4"
+contentUuid: "f5f43a43-4358-52a7-9443-8ee7cdc23117"
+diamondUuid: "b2668314-9abd-8e68-944b-32b4c3cef54e"
+uuid: "f40c99b4-dbaf-823e-b718-60bfbfd97936"
+horo: 4
 typography:
   partition: iso
   bondDegree: 9
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "986584ad-80a7-82ca-9b00-a3d1678b2f4a"
+  computationUuid: "b8b3acff-d031-82f7-b320-8af98f5d75cf"
   stages:
     - stage: path
       stageUuid: "3b69ed7e-64f9-82ac-aa63-7f2229c25fad"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "2ef02dc7-411b-8978-9dbd-c2de964350fd"
     - stage: horo
-      stageUuid: "d37b146a-b601-8086-9053-18a1e68647cd"
+      stageUuid: "9cbe668a-0feb-8a9e-bd5c-610ac633ca28"
     - stage: seal
       stageUuid: "f44b0c8e-b08a-814f-9462-9c6c2a571318"
     - stage: uuid
-      stageUuid: "7555003d-087e-8173-9386-d48a15d2691a"
+      stageUuid: "984ada3e-f4fd-873d-b160-1d77381031bb"
 version: 2
 ---
 # ISO 3166-2 — Country subdivisions

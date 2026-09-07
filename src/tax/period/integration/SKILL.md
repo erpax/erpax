@@ -2,18 +2,18 @@
 name: integration
 description: "Use when implementing or referencing Phase B5: Tax Period Integration — Standards & Implementation."
 atomPath: "tax/period/integration"
-coordinate: "tax/period/integration · 5/round · 339d11cb"
-contentUuid: "6cd016be-5ee8-512b-bf03-0ff0472b7191"
-diamondUuid: "1e097808-646a-88a1-ba1f-4f98b95ec6e7"
-uuid: "339d11cb-8c0e-84a8-9f6e-24c644377536"
-horo: 5
+coordinate: "tax/period/integration · 7/descent · 719febba"
+contentUuid: "9e482f3c-3e9e-50a2-8bed-f51ade7f07d5"
+diamondUuid: "edaafa43-1800-8542-a61a-0acb41ac4bf2"
+uuid: "719febba-d3bd-8dfb-aa9a-1b9c7f358f29"
+horo: 7
 typography:
   partition: tax
   bondDegree: 23
 standards: []
 bindings: []
 signatures:
-  computationUuid: "330c9810-d337-8547-a9cc-3ee9374e9908"
+  computationUuid: "8ff1d903-9648-8ab4-b46b-4b6a83e4d2e6"
   stages:
     - stage: path
       stageUuid: "9a13aea7-a73a-8a5d-a540-30f210ff9132"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "547af982-db1e-8345-a307-db62691775bd"
     - stage: horo
-      stageUuid: "84f7860a-d023-8167-8124-1ca88c53688d"
+      stageUuid: "745652a4-5db5-81b7-8db5-3848de0d3a30"
     - stage: seal
       stageUuid: "3866221c-f350-8e1d-8420-40f42f7b22ed"
     - stage: uuid
-      stageUuid: "913f5876-8053-87b9-9330-da3b1a57f58d"
+      stageUuid: "3cc2ebb6-50b8-89f4-9ee7-937a09e5e1f4"
 version: 2
 ---
 # Phase B5: Tax Period Integration — Standards & Implementation
