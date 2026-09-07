@@ -5,25 +5,32 @@ import { GITHUB_DIR_LIMIT, countSrcTopLevel, planVocabularyFold, vocabularyFoldC
 import { vocabularyFoldAlias, isVocabularyFolded } from './github-folded.generated'
 import { toAtomPath } from '@/path'
 
+/*
+ * EXPLICIT TIMEOUTS. `vocabularyFoldCandidates` is two full corpus walks
+ * (`wordWithoutLogicViolations` + `buildImportIndex`) — ~19s cold across 3,582 atoms. It is now
+ * memoised on the corpus fingerprint, so the 2nd call onward is ~0.2s and the suite pays it ONCE
+ * instead of three times (49s -> ~20s), but the FIRST call still exceeds vitest's 30s default on a
+ * CI runner. The number is stated here so the cost is arguable rather than hidden.
+ */
 describe('navigation/github-browse', () => {
-  it('countSrcTopLevel reports dirs + files', () => {
+  it('countSrcTopLevel reports dirs + files', { timeout: 120_000 }, () => {
     const c = countSrcTopLevel()
     expect(c.total).toBe(c.dirs + c.files)
   })
 
-  it('plan targets below GitHub limit when over', () => {
+  it('plan targets below GitHub limit when over', { timeout: 120_000 }, () => {
     const plan = planVocabularyFold()
     expect(plan.targetBelow).toBe(GITHUB_DIR_LIMIT)
     if (plan.before.dirs > GITHUB_DIR_LIMIT) expect(plan.selected.length).toBeGreaterThan(0)
   })
 
-  it('skips protected pivots', () => {
+  it('skips protected pivots', { timeout: 120_000 }, () => {
     const words = new Set(vocabularyFoldCandidates().map((c) => c.word))
     expect(words.has('law')).toBe(false)
     expect(words.has('path')).toBe(false)
   })
 
-  it('path fold for sharded about', () => {
+  it('path fold for sharded about', { timeout: 120_000 }, () => {
     if (!existsSync(join(process.cwd(), 'src/vocabulary/about'))) return
     expect(vocabularyFoldAlias('about')).toBe('vocabulary/about')
     expect(toAtomPath('about', 'fs')).toBe('vocabulary/about')

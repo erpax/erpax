@@ -25,6 +25,7 @@ import {
   wordWithoutLogicViolations,
   type WordWithoutLogicViolation,
 } from '@/rules/word-without-logic'
+import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 
 const SRC = 'src'
 export const GITHUB_DIR_LIMIT = 1000
@@ -107,7 +108,20 @@ export function countSrcTopLevel(cwd: string = process.cwd()): SrcTopLevelCount 
   return { dirs, files, total: dirs + files }
 }
 
+/**
+ * MEMOISED on the corpus fingerprint. `wordWithoutLogicViolations` and `buildImportIndex` are each
+ * a full corpus walk, and this recomputed BOTH on every call — measured 2026-09-07 at 17.6s a
+ * call, with three tests calling it, which is the whole 49s of this suite and why CI's 30s
+ * per-test default was blowing. The memo invalidates on any tree change, so it cannot serve a
+ * stale answer ([[cache]]/fingerprint, the same helper buildReadmeTypographyGraph uses).
+ */
 export function vocabularyFoldCandidates(cwd: string = process.cwd()): FoldCandidate[] {
+  return memoByFingerprintOnDisk('navigation-vocabulary-fold-candidates', cwd, () =>
+    computeVocabularyFoldCandidates(cwd),
+  )
+}
+
+function computeVocabularyFoldCandidates(cwd: string): FoldCandidate[] {
   const audit = wordWithoutLogicViolations(cwd)
   const importIndex = buildImportIndex(cwd)
   const out: FoldCandidate[] = []
