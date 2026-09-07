@@ -2,11 +2,11 @@
 name: shipments
 description: "Use when dispatching goods against a sales order — recording carrier, tracking number and URL, line items shipped, ship-from/to addresses, and progressing through picked → packed → shipped → delivered states. The fulfillment and carrier-tracking collection per EN-16931 §BG-13."
 atomPath: "customers/sales/orders/shipments"
-coordinate: "customers/sales/orders/shipments · 7/descent · ba7449ca"
-contentUuid: "82a4268a-4b75-5249-b74a-743c88316015"
-diamondUuid: "3423943a-8c6c-8bf3-9b87-8e589f4308e1"
-uuid: "ba7449ca-bd71-8a44-8bad-868050163fee"
-horo: 7
+coordinate: "customers/sales/orders/shipments · 5/round · a2f2684a"
+contentUuid: "662bd368-a484-5a33-b993-efe0a6d93eea"
+diamondUuid: "a29720d9-7a01-8755-a126-0d634b8b9b10"
+uuid: "a2f2684a-b073-8486-9f40-0abd950a327d"
+horo: 5
 typography:
   partition: customers
   bondDegree: 26
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5c612e34-cd61-88d1-a20b-b307a5e41c7b"
+  computationUuid: "c6f5bb7d-04d5-8150-8b14-9607df6f07dd"
   stages:
     - stage: path
       stageUuid: "ca8e7be6-59bd-8dde-93a8-ace0ba50a476"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "09a5c83b-2dd3-81d1-8d4e-ed9edf0d3115"
     - stage: horo
-      stageUuid: "4665c253-ee19-82f1-9c67-46222de7be34"
+      stageUuid: "39ef6508-726a-8cb5-8ceb-1f6bdfc3a656"
     - stage: seal
       stageUuid: "5511df6e-d635-835e-a514-e8f79c8558c0"
     - stage: uuid
-      stageUuid: "ada773d6-f55b-8d4d-9683-b2d95902c095"
+      stageUuid: "d83de6eb-ac68-88d2-b865-84330427ea40"
 version: 2
 ---
 # shipments

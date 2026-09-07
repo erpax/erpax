@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "brand",
-    "uuid": "db211a88-2063-8585-a246-bc6f7a11ce3b",
+    "uuid": "5184d196-763c-82d4-acff-293fa19342d1",
     "words": [
       "brand"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about brand — A brand is a name used by an organization or business person for labeling a product, product group, or similar.",
-    "uuid": "8b2a40ef-7b3c-83ea-a9cb-de27350c1523",
+    "uuid": "fd8a3686-2423-8939-b787-c228b832f25b",
     "words": [
       "use",
       "when",

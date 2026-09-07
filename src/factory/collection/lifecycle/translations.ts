@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lifecycle",
-    "uuid": "c5ec1da4-be1e-8542-abf1-09d883a98cb8",
+    "uuid": "f306beaa-3f7a-8c5d-97b5-5e2b3a1275f2",
     "words": [
       "lifecycle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a collection's events should exist without per-collection code — the spine fold derives created + per-transition events from a status select, applied once at registration.",
-    "uuid": "69d6dedf-9c57-884e-8c8d-91d4cd227269",
+    "uuid": "61dc7c81-db37-85a8-8ff5-3d2112add635",
     "words": [
       "use",
       "when",

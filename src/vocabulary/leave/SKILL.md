@@ -2,11 +2,11 @@
 name: leave
 description: "Use when reasoning about leave as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/leave"
-coordinate: "vocabulary/leave · 5/round · 7454e3ff"
-contentUuid: "64630afc-234f-5c8e-ae6a-48cc1cc7bece"
-diamondUuid: "86dd28e9-3b11-8f20-9b81-0472546471ea"
-uuid: "7454e3ff-f76b-8381-aa0c-e0c648119a94"
-horo: 5
+coordinate: "vocabulary/leave · 2/share · f204c50f"
+contentUuid: "8ed517f2-54ea-5d2f-812b-7cd216de6cca"
+diamondUuid: "227fbbce-ad97-83b2-a5f8-3fea3c378062"
+uuid: "f204c50f-8601-86eb-9a3e-66eb3d9e2908"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f7ff43a0-a241-89c5-8acb-6a9cfcdf5870"
+  computationUuid: "15b7c6a6-4d3f-8624-b23d-ac99bedfa42f"
   stages:
     - stage: path
       stageUuid: "aac45d2e-e2f1-899d-ae45-369cea9b2794"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ab8af46c-e786-88fa-99e0-4bc5001a43fb"
     - stage: horo
-      stageUuid: "4a841eba-5ae4-839f-b117-6e30389ec95b"
+      stageUuid: "29980ff8-3ed0-8c9f-87ad-804d796cbceb"
     - stage: seal
       stageUuid: "d11f80fb-2b30-83d6-b337-3b58cb22f7d5"
     - stage: uuid
-      stageUuid: "e328daa5-a5f4-8d14-a31c-696fa740b9be"
+      stageUuid: "a3919fa5-2173-8e09-90d2-3f1b6b35c104"
 version: 2
 ---
 # leave

@@ -2,11 +2,11 @@
 name: biomechnical
 description: "Use when reasoning about biomechnical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/biomechnical"
-coordinate: "vocabulary/biomechnical · 4/weave · 553808a8"
-contentUuid: "b546eb34-6db3-51c9-9a7e-b0ced5bbcd8c"
-diamondUuid: "f2b227b6-1c7b-8de8-beb5-efbaa0cfec0a"
-uuid: "553808a8-081a-8a72-ad89-eab410eb052d"
-horo: 4
+coordinate: "vocabulary/biomechnical · 8/crest · 63529d99"
+contentUuid: "3e4c391f-72a2-5e0b-95e5-0bb3196c7f05"
+diamondUuid: "58be4a32-06e2-8238-9a0a-00146d02facf"
+uuid: "63529d99-42d1-8a08-9d2c-03691acd31f8"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d81c6051-9471-804c-9e0f-97b763e56997"
+  computationUuid: "a16a573f-ab5b-8420-90b7-3559fc40ec3b"
   stages:
     - stage: path
       stageUuid: "8072397a-9fa7-8e1a-84e1-972f6763761c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f95f5a7f-9bee-8758-aa2a-a4d14cc79b9a"
     - stage: horo
-      stageUuid: "39ddb353-7ac1-84fa-aca7-5716a846d88f"
+      stageUuid: "09d56841-e03f-8cfc-8264-e85b479a284a"
     - stage: seal
       stageUuid: "eb1d34aa-a2f6-88bd-ac25-320362392d9a"
     - stage: uuid
-      stageUuid: "567dd352-f9ea-844e-af23-3c60651c8137"
+      stageUuid: "73a0a3f7-3898-8835-8081-2815f013d189"
 version: 2
 ---
 # biomechnical

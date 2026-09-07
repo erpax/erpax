@@ -2,18 +2,18 @@
 name: certification
 description: "Use when a third party attests an operation conforms to a standard — the generic certify→audit→label mechanism behind organic (NOP/EU), biodynamic (Demeter), Regenerative Organic, GLOBALG.A.P., GAP/GHP food safety, and participatory guarantee systems. An accredited agent verifies against a standard and issues a transferable claim; the claim is only as strong as the record proving it."
 atomPath: "vocabulary/certification"
-coordinate: "vocabulary/certification · 7/descent · fe1be125"
-contentUuid: "b4bc225d-8e56-5f16-813a-ae4dff6d0d4c"
-diamondUuid: "9fce9477-9962-822f-badd-78060cde1d6b"
-uuid: "fe1be125-b299-80a2-b5de-240efc25bbc5"
-horo: 7
+coordinate: "vocabulary/certification · 5/round · 8facf1bb"
+contentUuid: "61804474-7b46-5c2e-b32d-3c8b2865b4b1"
+diamondUuid: "8c35b734-94e4-86af-bf4d-18e5cfe08c69"
+uuid: "8facf1bb-9037-8611-9a93-bfb7929f07f7"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 72
 standards: []
 bindings: []
 signatures:
-  computationUuid: "98c755e7-1336-8151-9d10-cb72fb19726a"
+  computationUuid: "ef334f3c-04da-812d-b2d8-98216c2b442d"
   stages:
     - stage: path
       stageUuid: "0653d760-25d8-837c-a135-6168d0e20140"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "63092604-2143-8bb7-b35a-d9dc3dbccf8e"
     - stage: horo
-      stageUuid: "6344dc96-86e6-89c5-9ebb-7e27f48966ab"
+      stageUuid: "5a472e5e-9b67-8bad-afe8-8b1c7e385c3b"
     - stage: seal
       stageUuid: "6d2b516b-5e48-8769-ac5e-13f7d3ca1378"
     - stage: uuid
-      stageUuid: "d717c0b4-aa1c-8384-b25f-04918f2aefa5"
+      stageUuid: "014823ec-25b1-8b62-a3e7-274f52d04343"
 version: 2
 ---
 # certification — third-party attestation of conformance to a standard

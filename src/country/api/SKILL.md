@@ -2,11 +2,11 @@
 name: api
 description: "Use when reasoning about the official per-country authority API catalogue — tax authorities, business registries, e-invoicing portals, VAT/VIES, payroll, sanctions, and central-bank FX; public metadata only, credentials in tenant sandbox."
 atomPath: "country/api"
-coordinate: "country/api · 2/share · 15774ea6"
-contentUuid: "d8889a32-bb83-5eab-8e74-fa118232d6fa"
-diamondUuid: "4a291eb9-a491-88ec-a2f7-a82694cb9522"
-uuid: "15774ea6-d2f9-87af-8f0b-e7c3c4b8843c"
-horo: 2
+coordinate: "country/api · 8/crest · f206834e"
+contentUuid: "fbac726f-36a8-53eb-84a1-3cbc67f98480"
+diamondUuid: "b326c0ac-c890-8174-bfcd-3cb4a7dc0fc2"
+uuid: "f206834e-3698-8249-a124-86c971ca6f9f"
+horo: 8
 typography:
   partition: country
   bondDegree: 102
@@ -28,7 +28,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4189771b-e839-8fe3-910e-df877d8d1bf0"
+  computationUuid: "f1d55875-7941-8a55-a5c5-2c26161d47a1"
   stages:
     - stage: path
       stageUuid: "5bfb2135-1d9c-822f-bc66-b6156d6dee52"
@@ -39,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "5766e3e9-cb79-865e-a452-7711d00d2d8d"
     - stage: horo
-      stageUuid: "19c28d97-3d2e-87c0-9c57-c9b33a7fb865"
+      stageUuid: "cad68482-3283-8e0a-9144-2b343a192bfd"
     - stage: seal
       stageUuid: "7eddb1b0-38db-8234-bb93-a0e2322ada02"
     - stage: uuid
-      stageUuid: "7ccab956-9ee8-8009-86fa-7ebd02c5af5f"
+      stageUuid: "4a9a683b-cb2d-877c-ae31-3b727f906324"
 version: 2
 ---
 # api — official per-country authority API catalogue

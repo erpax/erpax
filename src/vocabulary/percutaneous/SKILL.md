@@ -2,11 +2,11 @@
 name: percutaneous
 description: "Use when reasoning about percutaneous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/percutaneous"
-coordinate: "vocabulary/percutaneous · 4/weave · 38b891c0"
-contentUuid: "85e675d0-9534-582a-91ab-dd2e9f666d71"
-diamondUuid: "40afd6a3-bbee-8f02-b65c-c210248b1287"
-uuid: "38b891c0-2aa4-88a3-b15e-4c8351b04fe0"
-horo: 4
+coordinate: "vocabulary/percutaneous · 2/share · 90deb463"
+contentUuid: "fd7d43f1-8844-5140-9635-81e7c7d0d524"
+diamondUuid: "562968ab-dc88-8599-855a-d23634fa5e54"
+uuid: "90deb463-4daa-8834-8af2-eed18d23c52b"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b16a356e-3822-8e55-8e0f-eda27eb21612"
+  computationUuid: "ff67022f-aed1-828f-b282-ff52b9a9ae10"
   stages:
     - stage: path
       stageUuid: "1a51a681-8f00-8ec7-9402-836b08b90c7b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6d9cbaec-d39e-8bf3-b9b6-aa58bb017e5b"
     - stage: horo
-      stageUuid: "dfd83720-3ec3-8ce6-9c63-abe2b2f5e77a"
+      stageUuid: "c9ae0238-a626-8c0a-9797-fdbc8373194b"
     - stage: seal
       stageUuid: "233fc596-78ae-80a7-8df0-e28f2c07688f"
     - stage: uuid
-      stageUuid: "508eaf3b-b2f4-8649-8478-a84ffa03040f"
+      stageUuid: "d920bb8b-2cf6-8c6f-9420-6405f45e3fa3"
 version: 2
 ---
 # percutaneous

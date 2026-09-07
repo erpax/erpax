@@ -2,11 +2,11 @@
 name: phases
 description: "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state."
 atomPath: "lot/work/phases"
-coordinate: "lot/work/phases · 2/share · e906697b"
-contentUuid: "45f4ccdf-7990-5bf3-acc6-3dc65d092a9a"
-diamondUuid: "635dd4ca-bed5-8c85-af13-12114fa17e6f"
-uuid: "e906697b-bf49-8619-b7ea-df624c151408"
-horo: 2
+coordinate: "lot/work/phases · 4/weave · 0e511772"
+contentUuid: "15c5e742-a298-5115-9b4f-00186b93ac85"
+diamondUuid: "4e40d531-189a-8b5c-947d-fb461f1854a9"
+uuid: "0e511772-71ec-8f94-adcb-d6ec4126c097"
+horo: 4
 typography:
   partition: lot
   bondDegree: 43
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "93b3b585-2ffa-8a09-add6-76a6a3a05858"
+  computationUuid: "5cd799ea-67ce-8513-94cc-e91fe9f21bdb"
   stages:
     - stage: path
       stageUuid: "f0779abd-e603-888b-a27c-9443eb0e36cf"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "c7c9e7d4-e85f-83e8-b023-ece27bbf9eda"
     - stage: horo
-      stageUuid: "d18c9b6d-f1e7-8d71-bb86-46ed52631b7c"
+      stageUuid: "33d1935b-d3f6-8ffc-80a6-ac26c3752b10"
     - stage: seal
       stageUuid: "7664e4d8-0478-8685-b4d9-a5e2e1471643"
     - stage: uuid
-      stageUuid: "ef8561bb-8359-865d-9df5-3ca63d7e7d9d"
+      stageUuid: "941e5727-6632-8643-80e1-749cf7e0265b"
 version: 2
 ---
 # lot/work/phases — the routing step (the sort-ordered cross to the catalog)

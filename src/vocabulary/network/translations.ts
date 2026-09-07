@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "network",
-    "uuid": "20b38894-7674-8b60-b85a-877d576849a0",
+    "uuid": "026e4835-ab58-8061-968e-a52f761219fb",
     "words": [
       "network"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a market's desire RISES with its own adoption — network effects, the strongest small-to-big engine. Below critical mass value is negative (anti-network: new users churn, the market collapses to zero — the cold-start problem); above the tipping point growth self-sustains. Seed a dense atomic network, not the whole market; the trendsetter cohort is that first cell.",
-    "uuid": "86004104-069c-8437-9a43-6e8cc8d16509",
+    "uuid": "ff042dc8-0196-8fc8-bad6-6ecf6db58fb1",
     "words": [
       "use",
       "when",

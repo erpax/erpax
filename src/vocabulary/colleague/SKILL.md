@@ -2,11 +2,11 @@
 name: colleague
 description: Use when reasoning about colleague — A colleague of the person.
 atomPath: "vocabulary/colleague"
-coordinate: "vocabulary/colleague · 2/share · 7a83b7b3"
-contentUuid: "c706ce92-c7f9-5a7c-a80a-32cdf4296a1f"
-diamondUuid: "ac7158ea-abaf-897c-b9fc-ea0abb49e583"
-uuid: "7a83b7b3-38c9-8afd-a9a3-6aa54c65cd69"
-horo: 2
+coordinate: "vocabulary/colleague · 4/weave · d7507fa7"
+contentUuid: "41c5b2d0-1013-5899-bfd5-c75321279b1d"
+diamondUuid: "b5346ac0-75a6-8b96-b134-26bb2620ff3b"
+uuid: "d7507fa7-f040-828d-9cd0-6f339521b75f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5d8db468-94c0-865a-984b-da72a91e0613"
+  computationUuid: "8bf8a4ad-8346-8f57-96fe-327a4d109ac8"
   stages:
     - stage: path
       stageUuid: "9f5e89cd-e519-85aa-9902-7541a0cb160c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "13ed68d3-033a-8ccc-ac27-baafd0a990f1"
     - stage: horo
-      stageUuid: "5e12dc94-344d-8b40-b043-41fe905f620c"
+      stageUuid: "c2207bb7-2c30-8d64-966d-1a4c70ba7a06"
     - stage: seal
       stageUuid: "d1a9c5b2-c6a2-8b92-afb0-8c1cdfb12578"
     - stage: uuid
-      stageUuid: "5ddbae34-b0ba-8e73-83ce-75c54cc8f2da"
+      stageUuid: "f9a9fa0a-63d7-8232-988a-6ec8aa96997f"
 version: 2
 ---
 # colleague

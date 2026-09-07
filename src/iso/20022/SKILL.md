@@ -2,10 +2,10 @@
 name: "20022"
 description: Use when implementing or referencing ISO 20022 — Universal financial industry message scheme.
 atomPath: "iso/20022"
-coordinate: "iso/20022 · 4/weave · 5b3fb456"
-contentUuid: "d2ea2ffa-aefe-5cb6-89fa-55f9f30f76c1"
-diamondUuid: "55171f1e-36e8-844e-ab82-4ed0207052ab"
-uuid: "5b3fb456-d1d0-8030-8a81-0f0fc87ae43e"
+coordinate: "iso/20022 · 4/weave · ccbcff29"
+contentUuid: "5cd680c4-1858-596f-8cae-2fe201bd5ff2"
+diamondUuid: "0837377c-026c-8496-9519-64701a8c498d"
+uuid: "ccbcff29-bd7a-85d8-9ff7-97a3833af679"
 horo: 4
 typography:
   partition: iso
@@ -19,7 +19,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "ca0e6429-b0cd-8da6-9f81-0a8d762a7f56"
+  computationUuid: "be1716ed-2c93-8c27-b527-8c966f2ab299"
   stages:
     - stage: path
       stageUuid: "27e61418-1c77-8dd0-847c-cca5bd6854d4"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "6e65f0d4-5576-8875-9eaf-08465a2b88b7"
     - stage: horo
-      stageUuid: "f95afaf4-b9b4-8440-9c97-746abe86052e"
+      stageUuid: "a001f835-0a09-8a65-b98e-5f86b3df908d"
     - stage: seal
       stageUuid: "24d51d5c-81ec-8104-9d23-6c04c77799e9"
     - stage: uuid
-      stageUuid: "255edab5-a8ca-8c8c-a090-69e5a4b06b89"
+      stageUuid: "53974536-6b6e-8da5-ae9c-46122f6d524d"
 version: 2
 ---
 # ISO 20022 — Universal financial industry message scheme

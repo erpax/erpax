@@ -2,10 +2,10 @@
 name: equity
 description: "Use when reasoning about equity in double-entry accounting — the owners' residual claim after liabilities; the credit side that pairs with asset debits in the accounting equation."
 atomPath: "vocabulary/equity"
-coordinate: "vocabulary/equity · 2/share · 75dde219"
-contentUuid: "0499b4f3-1d51-55a7-b4ee-b228e8ad6866"
-diamondUuid: "0abb7a7d-ad06-8107-a024-bfbbf288f564"
-uuid: "75dde219-8696-8b16-992d-7653030b0dc5"
+coordinate: "vocabulary/equity · 2/share · 57a9b945"
+contentUuid: "6fb6e67b-6e82-5215-a4de-8b08f549472c"
+diamondUuid: "9c8eb3a8-fd40-81b7-bbcc-425928149e81"
+uuid: "57a9b945-c431-8868-9f3a-efb1aee77436"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "98ad422c-659f-8e09-a4cb-eb1472e57fe4"
+  computationUuid: "036711f7-0c82-8338-9b6c-d7348495b7b7"
   stages:
     - stage: path
       stageUuid: "36a892c9-fa6a-802d-80e6-e7f4e256143d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a9cc1ac3-ae90-8a22-9cee-af5db60e5749"
     - stage: horo
-      stageUuid: "5f6f2f0b-e9a3-82ba-aec6-ea81933dfb94"
+      stageUuid: "254cc710-9d8f-8343-b106-4402682b3866"
     - stage: seal
       stageUuid: "b2d89ca2-5882-8898-9a0b-ec2231d13cb9"
     - stage: uuid
-      stageUuid: "77051153-751b-871d-95b4-9020176bddaa"
+      stageUuid: "104991fc-ab21-8238-8337-4ae5b6694a50"
 version: 2
 ---
 # equity

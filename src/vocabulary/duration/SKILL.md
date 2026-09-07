@@ -2,11 +2,11 @@
 name: duration
 description: "Use when reasoning about duration — Quantity: Duration (use ISO 8601 duration format)."
 atomPath: "vocabulary/duration"
-coordinate: "vocabulary/duration · 4/weave · a319f2df"
-contentUuid: "a9750a7d-500e-50f4-86df-e8e8a07aabbf"
-diamondUuid: "986fd83e-733f-83a7-a1f6-8f9039d20bfb"
-uuid: "a319f2df-0076-879c-a0f2-d2a0d69ae369"
-horo: 4
+coordinate: "vocabulary/duration · 2/share · 001b248c"
+contentUuid: "8ebf04c4-c242-523b-a2d4-6eb19e38e74d"
+diamondUuid: "35716906-4378-8680-ace9-9665c8c2a6b4"
+uuid: "001b248c-665e-8d24-be7f-3cf76b481094"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 34
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "de61f6cb-eeb6-802e-9a9b-cf834819cf2d"
+  computationUuid: "61d9dbae-5917-8c34-8e17-373c7867009f"
   stages:
     - stage: path
       stageUuid: "06d97574-f538-8280-8ac2-f5264c4a9a70"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e02f7e6e-753d-8533-b12c-55985c7e961e"
     - stage: horo
-      stageUuid: "73a4b973-6842-8aed-895d-ed58a98f8d0f"
+      stageUuid: "4bd4e946-544c-878b-a6a7-61233ec3ed81"
     - stage: seal
       stageUuid: "20390c74-7782-8447-af12-183b9326e16c"
     - stage: uuid
-      stageUuid: "48a69224-ddba-8548-be9b-af6610cbac96"
+      stageUuid: "be130dd4-9d5e-8d4d-8a35-0803d9bdbcc4"
 version: 2
 ---
 # duration

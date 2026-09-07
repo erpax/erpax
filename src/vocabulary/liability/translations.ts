@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "liability",
-    "uuid": "49934e2f-2dbf-84d4-b126-8c281ecf510c",
+    "uuid": "b74fa031-eb1e-8352-a9d1-2bee7555b371",
     "words": [
       "liability"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract limits, excludes, or caps damages/liability — type (contractual, tort, consequential, indirect, punitive), exclusion, cap amount/percentage/formula, surviving clauses, statutory override.",
-    "uuid": "517f538f-b79c-80d6-81a5-68a5e2291765",
+    "uuid": "3187497e-83e0-86cc-8b36-e6cab348f9a6",
     "words": [
       "use",
       "when",

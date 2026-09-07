@@ -2,11 +2,11 @@
 name: algorithmic
 description: "Use when reasoning about algorithmic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/algorithmic"
-coordinate: "vocabulary/algorithmic · 4/weave · af3dadf8"
-contentUuid: "195fcdf2-405e-5ad7-8923-c1711d780e44"
-diamondUuid: "a0f79d46-c987-81a3-b88b-5925e51f060a"
-uuid: "af3dadf8-ee06-8581-97bc-9dd06bd647ad"
-horo: 4
+coordinate: "vocabulary/algorithmic · 1/base · 745eaefc"
+contentUuid: "ff78adb9-31ad-515a-bd7c-f58e7c41dc69"
+diamondUuid: "43374b4f-4b5a-8ad1-8b2c-bb48e4cc748c"
+uuid: "745eaefc-69e7-81a1-bd99-22014461b2a6"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "042d6100-62fd-8b0a-a96f-f348c81296f4"
+  computationUuid: "4cde5aba-8365-8b3f-b9f4-9a9652607b96"
   stages:
     - stage: path
       stageUuid: "8a268c34-3a3d-8a4f-a97c-e4a4e6985f8d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5b9ba81b-b8d2-8c66-8a98-fd66bca031c8"
     - stage: horo
-      stageUuid: "1443230c-b1ca-8bb9-aa10-6eb4914641b6"
+      stageUuid: "3a97ffe8-02ba-85dd-816a-3f07168a2d3a"
     - stage: seal
       stageUuid: "34762dc4-0aa5-8ec1-b7d5-e99cd483f8a7"
     - stage: uuid
-      stageUuid: "5c4bd48d-5256-8bf9-84fa-87957c3358f7"
+      stageUuid: "c8a32d58-7105-8a7c-8972-a0658ad02ae1"
 version: 2
 ---
 # algorithmic

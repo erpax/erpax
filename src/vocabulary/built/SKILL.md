@@ -2,11 +2,11 @@
 name: built
 description: "Use when reasoning about built as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/built"
-coordinate: "vocabulary/built · 7/descent · 7fe10ecf"
-contentUuid: "c59801c1-af38-5948-af59-9ffaa1ab4780"
-diamondUuid: "420c5c65-1b4f-8ed3-b7ce-c3c41c83954e"
-uuid: "7fe10ecf-1dc0-8545-bffc-530df801314f"
-horo: 7
+coordinate: "vocabulary/built · 4/weave · b3866806"
+contentUuid: "7a691dc7-09c7-5693-92b6-ec56ac2aa73d"
+diamondUuid: "8bd1842c-f354-8eab-905f-a2e97f0c4216"
+uuid: "b3866806-538e-889f-affe-6561b7e61baa"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f247206a-5f1a-87f5-aea4-ba334f7d94da"
+  computationUuid: "24d220da-51ce-8141-ae6e-93429198f87b"
   stages:
     - stage: path
       stageUuid: "131484d1-a7ea-8c5a-83b4-94de46ab3f60"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b8161653-0be7-85cf-9486-1835bd307d42"
     - stage: horo
-      stageUuid: "04733ed9-1211-8e5e-ad5e-1ad5a9fc342c"
+      stageUuid: "2487e2ee-14d7-835f-bfb7-caf7ee6a7039"
     - stage: seal
       stageUuid: "3f83094d-421f-88c5-881a-ff8f36e07d25"
     - stage: uuid
-      stageUuid: "d894ee3f-226b-8aff-ad65-f6ba9cbdf6f0"
+      stageUuid: "354d8d8b-8506-8e78-957e-cb5efb4dfff6"
 version: 2
 ---
 # built

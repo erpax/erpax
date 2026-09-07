@@ -2,11 +2,11 @@
 name: manipulation
 description: "Use when reasoning about manipulation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/manipulation"
-coordinate: "vocabulary/manipulation · 4/weave · 9bdb6167"
-contentUuid: "4972a3eb-048e-536f-a254-7acd1fc1eeee"
-diamondUuid: "5364b2f0-ef56-87eb-ba1d-6162196569b3"
-uuid: "9bdb6167-edaa-895f-b29f-2d89a234e583"
-horo: 4
+coordinate: "vocabulary/manipulation · 2/share · 9ca6382c"
+contentUuid: "9d289632-8628-5388-9ed8-f6a24d62fde0"
+diamondUuid: "635c26ea-e1dc-81e3-96c1-c5ac0516e60b"
+uuid: "9ca6382c-6947-8517-9bc2-b6287ad19328"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "539d7814-0551-8258-bf0b-090a593d41de"
+  computationUuid: "db93c911-5ff8-8715-8a4e-431b90ce7ee7"
   stages:
     - stage: path
       stageUuid: "2a0eb6d7-612f-8af8-81fc-ef11ca0fab64"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e0a156e1-0a58-8f3f-b211-73d97c957ca7"
     - stage: horo
-      stageUuid: "6b0f3e38-62f1-8229-8a21-73c40c2874e7"
+      stageUuid: "ff6b21f0-8685-8cd4-b43b-86cd5ca9c49d"
     - stage: seal
       stageUuid: "4ea3e967-373b-83df-8dc7-4224ac41a95c"
     - stage: uuid
-      stageUuid: "8af600a4-67a6-8827-b14d-254d0275ef6a"
+      stageUuid: "7e4376ee-0a55-808b-b3bf-b80b27dce035"
 version: 2
 ---
 # manipulation

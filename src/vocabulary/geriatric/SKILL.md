@@ -2,11 +2,11 @@
 name: geriatric
 description: "Use when reasoning about geriatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/geriatric"
-coordinate: "vocabulary/geriatric · 8/crest · 74169ec9"
-contentUuid: "1d3acb7e-4e8d-5a9c-8af1-2e16819fe15c"
-diamondUuid: "d0a264af-66b9-8f54-83c9-433071ceb503"
-uuid: "74169ec9-8466-8628-8973-adfe4523d2c1"
-horo: 8
+coordinate: "vocabulary/geriatric · 4/weave · 367f9ef3"
+contentUuid: "3d150511-64a3-5db8-afe4-63c338a63157"
+diamondUuid: "c12d35b8-81c2-81ee-9565-54adcc99a5fa"
+uuid: "367f9ef3-1442-8030-86e4-4be386ce257f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1ae77e97-941e-846f-84ad-34571ee5672d"
+  computationUuid: "449000f2-6de5-85c1-8ed6-d7d5758417a1"
   stages:
     - stage: path
       stageUuid: "349eba44-6988-8684-946c-b67812292e9b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "def31726-83d6-87ec-b12a-927d3cee16d6"
     - stage: horo
-      stageUuid: "1700fecd-ede0-8317-835e-d6cda9550840"
+      stageUuid: "530b0a8f-4b4b-8840-b759-26d6965c18ba"
     - stage: seal
       stageUuid: "071155c5-169f-8851-9ee5-f5f27be4da0b"
     - stage: uuid
-      stageUuid: "48b1103f-af3b-83a4-83cb-5146c660d80b"
+      stageUuid: "67c67bdc-61eb-891a-9654-a61b9556c69a"
 version: 2
 ---
 # geriatric

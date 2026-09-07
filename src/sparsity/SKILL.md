@@ -2,11 +2,11 @@
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
 atomPath: sparsity
-coordinate: "sparsity · 7/descent · 87c8f760"
-contentUuid: "cf8d1e64-6c2b-59fc-9c9c-a9063149bf3a"
-diamondUuid: "54f1d03e-099c-8a5c-bfd8-d1f0b4fa029a"
-uuid: "87c8f760-797c-88e2-bcec-c1d4dff63a81"
-horo: 7
+coordinate: "sparsity · 1/base · ff8d7ec7"
+contentUuid: "7253ee17-f886-5360-b171-2e35ad3b9865"
+diamondUuid: "8c536383-5cd2-8b0e-b49e-15f30b7ea09c"
+uuid: "ff8d7ec7-64e6-82fd-989f-a8553f886380"
+horo: 1
 typography:
   partition: sparsity
   bondDegree: 81
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation"
 bindings: []
 signatures:
-  computationUuid: "a289bb64-4c7d-83a7-90d5-0f34f17f2cb4"
+  computationUuid: "abea4afe-e723-83ed-97cd-46e06cd09671"
   stages:
     - stage: path
       stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3598cef6-cb85-8eae-83ac-0a1bcfd60fcf"
     - stage: horo
-      stageUuid: "10aba1c2-a13e-855f-9bd2-0e74f8b01f98"
+      stageUuid: "2c7ca615-21e7-8318-b32d-b61a6e110fb6"
     - stage: seal
       stageUuid: "05ff4ba5-f389-8961-93c4-317fa21cc0d4"
     - stage: uuid
-      stageUuid: "5efb989e-ec22-8a58-a209-381391fea8fc"
+      stageUuid: "efeb152b-238c-83da-aadf-a110d7cebe8b"
 version: 2
 ---
 # sparsity — the active fraction (few of many, alive at once)

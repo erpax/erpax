@@ -2,11 +2,11 @@
 name: transactions
 description: "Use when matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines — each line is a first-class row with externalId, bookingDate, valueDate, amount, creditDebitIndicator, currency, booking status, bank transaction code, counterparty IBAN/BIC, remittance info, and matchStatus against journal entries. The per-line reconciliation-evidence collection."
 atomPath: "bank/accounts/bank/transactions"
-coordinate: "bank/accounts/bank/transactions · 4/weave · 9a3521dd"
-contentUuid: "23979336-7560-5141-a511-dd476585287b"
-diamondUuid: "f5ea08aa-f14d-8d17-806d-dc41f702e991"
-uuid: "9a3521dd-6180-8c75-ad80-4a48f0201fd9"
-horo: 4
+coordinate: "bank/accounts/bank/transactions · 2/share · 980d7fe7"
+contentUuid: "9634cc00-3361-56c3-ae0a-64de8bdc1f97"
+diamondUuid: "f4233278-2f50-8b82-86de-dd253a3f82bf"
+uuid: "980d7fe7-87f3-8f7c-a7c3-9aa6a22b745c"
+horo: 2
 typography:
   partition: bank
   bondDegree: 54
@@ -48,7 +48,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "87313cdb-458b-8b69-8028-9bad35233cfb"
+  computationUuid: "f10e144f-8902-89e8-a81c-d1f3ae1ad2b5"
   stages:
     - stage: path
       stageUuid: "9bc72c7d-c011-87de-9ab1-8199c303678f"
@@ -59,11 +59,11 @@ signatures:
     - stage: links
       stageUuid: "3aec9d04-56f1-8b47-95dd-dd1dcc4349b6"
     - stage: horo
-      stageUuid: "ca59d609-2f7e-8208-9680-388866168962"
+      stageUuid: "9c954f9b-4feb-8b2b-9a2c-691eea518c42"
     - stage: seal
       stageUuid: "b723adb2-6ded-8e95-aef0-6ca2dfe75fed"
     - stage: uuid
-      stageUuid: "250d3441-7a8e-8b48-a668-d9e1bda177f0"
+      stageUuid: "21e9ed71-0140-8732-acf1-fd8ca575db4e"
 version: 2
 ---
 # bank-transactions

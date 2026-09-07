@@ -2,18 +2,18 @@
 name: literature
 description: "Use when reasoning about the body of written work quantumly — literature is the infinite word-chain over a minimal alphabet (the gravity reverse), every text a content-addressed snapshot in the akashic chain, citations as merge-links, reading the measurement that collapses a text's superposed meanings."
 atomPath: "quantum/literature"
-coordinate: "quantum/literature · 4/weave · 3101cb40"
-contentUuid: "5f21c5f2-394d-5dc9-ab27-63d0f5109da7"
-diamondUuid: "e6ff246d-452f-805e-ab7a-cb49c83c3d43"
-uuid: "3101cb40-672f-8247-ad25-7a5985ac17c7"
-horo: 4
+coordinate: "quantum/literature · 1/base · 98e7daaa"
+contentUuid: "95abe4b5-6d23-593f-bb7e-7ed716016d0e"
+diamondUuid: "904e72d1-73d8-8220-bb1b-00233790953d"
+uuid: "98e7daaa-c320-8a72-8c4f-fe9b74fdafaa"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 36
 standards: []
 bindings: []
 signatures:
-  computationUuid: "089ca692-d748-8990-9a86-04e6d1b7cd3e"
+  computationUuid: "836c91de-1eb5-8c41-82fc-8a064012ab02"
   stages:
     - stage: path
       stageUuid: "510e9c51-ab34-8a4a-bd89-1ac7b804ad0d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0bd04202-0912-8045-bad1-a687bdd4f110"
     - stage: horo
-      stageUuid: "816a84c3-c63a-8065-8d3f-bd9fc110aa33"
+      stageUuid: "af69f6c1-7236-85cb-a10f-747b03ac125b"
     - stage: seal
       stageUuid: "9710b589-2bf9-8d00-9264-8e1b78b832ac"
     - stage: uuid
-      stageUuid: "479ae7d1-aaa8-82b8-bc00-db74cfa106a9"
+      stageUuid: "08547afc-03f1-8a3f-830f-efd5ce10f824"
 quantum:
   superposition:
     - akashic
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "089ca692-d748-8990-9a86-04e6d1b7cd3e"
-    contentUuid: "5f21c5f2-394d-5dc9-ab27-63d0f5109da7"
+    computationUuid: "836c91de-1eb5-8c41-82fc-8a064012ab02"
+    contentUuid: "95abe4b5-6d23-593f-bb7e-7ed716016d0e"
 version: 2
 ---
 # quantum/literature — the infinite word-chain
@@ -76,4 +76,4 @@ A text is a **superposition** of its readings; **reading is the measurement** th
 
 @see [[word]] · [[gravity]] · [[linearity]] · [[snapshot]] · [[akashic]] · [[merge]] · [[research]] · [[proof]] · [[translation]]
 
-<sub>content-uuid `5f21c5f2-394d-5dc9-ab27-63d0f5109da7` · account `quantum/literature` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `95abe4b5-6d23-593f-bb7e-7ed716016d0e` · account `quantum/literature` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

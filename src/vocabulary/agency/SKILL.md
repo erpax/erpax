@@ -2,10 +2,10 @@
 name: agency
 description: "Use when reasoning about agency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/agency"
-coordinate: "vocabulary/agency · 8/crest · c05fe4a9"
-contentUuid: "2b06cc17-8453-5d57-9385-f67ef1495f74"
-diamondUuid: "b0634c93-11dd-83b8-b2ba-1694b362423b"
-uuid: "c05fe4a9-4d4b-8dc1-8539-39d583e46426"
+coordinate: "vocabulary/agency · 8/crest · 463dd642"
+contentUuid: "571c0171-ebc7-58a8-9419-93c5622fb70a"
+diamondUuid: "c4516345-4470-88bd-b070-6467dcfddfe0"
+uuid: "463dd642-6e24-83cd-ae86-ca7f9ef54cc4"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8b10e91a-f062-877f-9a4f-62a1fcb8773a"
+  computationUuid: "767d3da8-eec9-88eb-9c2e-7cf8eab5108c"
   stages:
     - stage: path
       stageUuid: "4627f85e-79f2-83ff-91bd-ce32b0d841bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e26db738-b545-8616-9321-e610c416e8bc"
     - stage: horo
-      stageUuid: "5f932972-3b80-8933-ac4a-c8d275a38209"
+      stageUuid: "baec6716-e32f-830d-9775-9cf02f594245"
     - stage: seal
       stageUuid: "a713d61f-17c5-85da-a431-e1242c77d793"
     - stage: uuid
-      stageUuid: "9b49a84d-13c8-84b3-a160-592cb2cb808b"
+      stageUuid: "57839d17-f5a2-82cf-bf3b-5fcd99e2777d"
 version: 2
 ---
 # agency

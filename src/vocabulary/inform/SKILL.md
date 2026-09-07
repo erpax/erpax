@@ -2,10 +2,10 @@
 name: inform
 description: "Use when reasoning about inform — A schema.org component word, collided out of schema.org compounds — fused from InformAction (sti · collapse · merge)."
 atomPath: "vocabulary/inform"
-coordinate: "vocabulary/inform · 1/base · 1751a8f6"
-contentUuid: "0eda7add-3fff-5393-af28-033372476690"
-diamondUuid: "61b8ae63-c120-8910-b41b-4938082c58ba"
-uuid: "1751a8f6-51fd-8ed3-9ade-edebf0b6abb4"
+coordinate: "vocabulary/inform · 1/base · 85bb911e"
+contentUuid: "d0ab59e0-3df6-5bed-a4e0-d27075426af2"
+diamondUuid: "f067ad30-1390-89d2-8ecc-954f1dc1af1b"
+uuid: "85bb911e-4a68-8dcb-a3da-1f6c8e9ecec3"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5d1801d3-8fa0-8123-a067-da4640d6a5a5"
+  computationUuid: "6a5bfc71-a447-8dc0-b5f0-b6ec80a59517"
   stages:
     - stage: path
       stageUuid: "16b2e8a9-0a0b-8641-977d-2be4611a9069"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cd5299e9-c995-8a40-a81a-0d05a2bb0f59"
     - stage: horo
-      stageUuid: "55cdb467-79ad-8179-aa0a-d0d73d4d5d92"
+      stageUuid: "15a1859d-aeb0-8ed2-badf-8afe950d94a9"
     - stage: seal
       stageUuid: "c6713c57-1fcb-860c-927f-ff3b26a5bf0c"
     - stage: uuid
-      stageUuid: "a8adf0f9-ee94-8e44-96d7-8b6d9d137ea6"
+      stageUuid: "70742fa9-ab56-81d1-a02d-66ede3384d35"
 version: 2
 ---
 # inform

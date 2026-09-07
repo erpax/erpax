@@ -2,11 +2,11 @@
 name: plannings
 description: "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register."
 atomPath: "budget/plannings"
-coordinate: "budget/plannings · 7/descent · 3b49e782"
-contentUuid: "80bdd4d9-ae89-51d3-b805-3d58f115804c"
-diamondUuid: "7d07dd60-c7fc-873d-b580-64b3e9d491f3"
-uuid: "3b49e782-7e81-850f-946d-47ddc5ce3e1a"
-horo: 7
+coordinate: "budget/plannings · 5/round · 2e7d9575"
+contentUuid: "ed1db0f2-040e-53a3-bd81-e97e1234d77c"
+diamondUuid: "dc3467ca-8774-8cb3-8493-dd295bc2cbd3"
+uuid: "2e7d9575-8fa1-85d0-9c09-135b0d762081"
+horo: 5
 typography:
   partition: budget
   bondDegree: 25
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e4f19655-536c-8d89-886d-e5d3f6dbdc1b"
+  computationUuid: "b4f38c7f-8d9b-8518-ac9d-75fd9dcd1900"
   stages:
     - stage: path
       stageUuid: "71d3b8b3-6d52-862e-9672-5e1e69bc72a0"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "07cfe24c-f671-8aed-bc32-0a1f5c14b0c6"
     - stage: horo
-      stageUuid: "aed0c5bc-8b1b-8f38-8dd1-bb80fbe9d8d3"
+      stageUuid: "1a29dc62-09bd-89b7-9f68-f84099ad8ef9"
     - stage: seal
       stageUuid: "27094773-9500-8f10-b216-8585885f7436"
     - stage: uuid
-      stageUuid: "2410eca9-3432-8dbf-b306-05a6db9d8a62"
+      stageUuid: "0b0a265a-7eb8-88c5-b46b-17ee9c418b09"
 version: 2
 ---
 # budget-planning

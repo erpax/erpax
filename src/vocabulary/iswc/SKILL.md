@@ -2,11 +2,11 @@
 name: iswc
 description: "Use when reasoning about iswc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/iswc"
-coordinate: "vocabulary/iswc · 7/descent · d0d98ffa"
-contentUuid: "348fdf7a-cef6-53c5-8ee4-efd63bc21363"
-diamondUuid: "26fdda20-4ec8-8941-95cc-d1783993ce41"
-uuid: "d0d98ffa-b250-80c6-a564-2d674d2c1e36"
-horo: 7
+coordinate: "vocabulary/iswc · 1/base · a1a2456b"
+contentUuid: "f11e9aed-37ac-5b7f-b9b2-ca8ee6f46e61"
+diamondUuid: "9cb7540d-95f1-8e13-b138-71d857f2dd74"
+uuid: "a1a2456b-c192-87b4-b648-96010c4609e5"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d31dcd79-fad9-8a20-be8c-b8f737af55fc"
+  computationUuid: "63b9cdc4-4a05-8365-af89-ae105df34ee2"
   stages:
     - stage: path
       stageUuid: "8757510d-0148-8854-9a99-ee91ac8205f3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f9d0ae40-e88a-8786-92f6-8d1aed96cc38"
     - stage: horo
-      stageUuid: "c18219dc-13f2-8887-a3a0-d0ed2c01fc0a"
+      stageUuid: "add6d87e-3caa-83e3-ab8f-df3ab7e5474d"
     - stage: seal
       stageUuid: "d58a4118-d8c9-817d-8f10-db489cf45815"
     - stage: uuid
-      stageUuid: "2b7bcf17-4b3f-8635-8bac-ff0a04f5d3e0"
+      stageUuid: "c36c9bf6-f78f-88f0-9ca4-704a19b56103"
 version: 2
 ---
 # iswc

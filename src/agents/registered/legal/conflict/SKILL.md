@@ -2,11 +2,11 @@
 name: conflict
 description: "Use when reasoning about conflict — legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform."
 atomPath: "agents/registered/legal/conflict"
-coordinate: "agents/registered/legal/conflict · 7/descent · 1b55d10c"
-contentUuid: "4ddb3d54-d0b8-59c2-8f5e-7cbec81d16c5"
-diamondUuid: "41c12485-6e69-81ac-ad21-e5d292541837"
-uuid: "1b55d10c-6686-8958-b2d4-b65c4b207eb9"
-horo: 7
+coordinate: "agents/registered/legal/conflict · 8/crest · 0c922005"
+contentUuid: "6b252b35-6ebe-57f5-aa77-b01a5f0668e3"
+diamondUuid: "1a4c08a9-7f8f-8c84-bd83-ade847fb66d6"
+uuid: "0c922005-1632-852a-9ad2-ac094a787bc7"
+horo: 8
 typography:
   partition: agents
   bondDegree: 30
@@ -15,7 +15,7 @@ standards:
   - "ISO-19011"
 bindings: []
 signatures:
-  computationUuid: "e41edcfa-0996-8dec-a03e-e5297d2ef587"
+  computationUuid: "b73e0f2b-b7e6-8379-ad0d-27e7242923f8"
   stages:
     - stage: path
       stageUuid: "b6ecc5c2-88da-858a-8a4d-5f8fd51cefd4"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "4275b08e-9d38-8236-8588-c5412927e339"
     - stage: horo
-      stageUuid: "08e43d2c-b76a-8830-8201-1ac337c30ae7"
+      stageUuid: "b3c4e009-a9e5-82cd-bdc4-03ce8da33c50"
     - stage: seal
       stageUuid: "72ae21e1-d760-896e-8d58-4bbf2c16e67a"
     - stage: uuid
-      stageUuid: "2e87abe6-d790-84aa-aed3-c669bfa26a71"
+      stageUuid: "bddd5c33-a141-80f0-81de-3d1498f9f1e4"
 version: 2
 ---
 # agents/registered/legal/conflict

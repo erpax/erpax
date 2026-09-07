@@ -2,18 +2,18 @@
 name: cost
 description: "Use when accounting the micro-USD price of a chain step against a tenant budget — estimateMicroUsd prices CPU-ms, egress and AI tokens; recordCost accrues spend and refuses once the cap is crossed; setBudget and getBudget manage the per-tenant cap."
 atomPath: "beyond/cost"
-coordinate: "beyond/cost · 7/descent · 2e42ce39"
-contentUuid: "f58eb72a-876d-5796-82e5-b43bffa4dfef"
-diamondUuid: "ee8cbcf4-35a6-80e9-9551-6213e4227831"
-uuid: "2e42ce39-10f9-8fa1-85e9-aa266c40868e"
-horo: 7
+coordinate: "beyond/cost · 2/share · 053f0789"
+contentUuid: "5cd6b76d-619c-596f-8535-0270358cf80d"
+diamondUuid: "2ec702bd-ee91-84b6-984e-ec9e2014514e"
+uuid: "053f0789-e560-8fc4-a7b2-a27a128a1604"
+horo: 2
 typography:
   partition: beyond
   bondDegree: 460
 standards: []
 bindings: []
 signatures:
-  computationUuid: "57b9cada-0e6f-8115-9529-48ba3afe06ea"
+  computationUuid: "87c8659c-c257-8ec5-ad06-b628b346ea91"
   stages:
     - stage: path
       stageUuid: "96e6a80d-76ad-8584-98cb-d60bd041fb81"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3f980a88-fb7a-84ab-ab69-805a1e2be0dc"
     - stage: horo
-      stageUuid: "3f6fad71-3f79-8155-8945-d13c1aaa429b"
+      stageUuid: "200502a5-c741-866a-8644-4a30e8b21960"
     - stage: seal
       stageUuid: "001680cd-b101-88f3-8d02-f64ff77af255"
     - stage: uuid
-      stageUuid: "ec60a3e8-a697-8d58-94aa-c3e8b84a06c2"
+      stageUuid: "13e5a092-edac-8e5f-a6ec-08cdaf530f3c"
 version: 2
 ---
 # beyond/cost — cost accountability per chain step

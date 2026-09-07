@@ -2,11 +2,11 @@
 name: jurisdictions
 description: "Use when setting up or querying tax authority master data — jurisdiction code, country/region/level (national to supranational), VAT registration number and dates, filing frequency and due day, filing currency. The per-tenant tax-authority master collection referenced by tax codes, calculations and returns."
 atomPath: "tax/jurisdictions"
-coordinate: "tax/jurisdictions · 4/weave · 194f3e0c"
-contentUuid: "dbe1c3bb-b1fc-575f-9832-854deca62b7a"
-diamondUuid: "33d68edc-5237-8ba2-a322-b4777697f03e"
-uuid: "194f3e0c-a8b1-80c1-bb5f-fcd43eebe4a7"
-horo: 4
+coordinate: "tax/jurisdictions · 5/round · d5cc3205"
+contentUuid: "391a32ec-1561-5ae3-9591-4769d47f1571"
+diamondUuid: "f5ffb944-8098-88dd-9fbc-bfe82f62250d"
+uuid: "d5cc3205-4851-8c69-a560-b398065afa8d"
+horo: 5
 typography:
   partition: tax
   bondDegree: 14
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "29eb5f89-e212-8e8c-bbff-3c26a3ad5e52"
+  computationUuid: "35cc311d-4ef6-8d88-b716-670fc7a63b55"
   stages:
     - stage: path
       stageUuid: "615009fd-1ff2-8e0a-9667-4ad384c694d1"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "c218d658-a066-8666-94d4-c1211cf9f4bb"
     - stage: horo
-      stageUuid: "2c2f105a-16e4-851a-b766-a569017bc5f6"
+      stageUuid: "98ca0d52-929d-838c-8ddd-a22340e983f8"
     - stage: seal
       stageUuid: "041ed780-4185-84da-b56d-9fe91a87f98b"
     - stage: uuid
-      stageUuid: "dc72994c-4382-8dd6-a486-33ca009cf147"
+      stageUuid: "aa418dc4-435d-8298-9e50-0c946cf4453e"
 version: 2
 ---
 # tax-jurisdictions

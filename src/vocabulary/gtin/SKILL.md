@@ -2,11 +2,11 @@
 name: gtin
 description: "Use when reasoning about gtin — A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, whi"
 atomPath: "vocabulary/gtin"
-coordinate: "vocabulary/gtin · 5/round · 5bac710a"
-contentUuid: "fbe9de18-e652-5da0-aa98-0fbab9dcecf7"
-diamondUuid: "ef1c8208-72d7-83ae-bdb2-884f40be5eb9"
-uuid: "5bac710a-e935-81f9-9aea-6ae5c5afcc56"
-horo: 5
+coordinate: "vocabulary/gtin · 8/crest · 5677c954"
+contentUuid: "972dcd78-3fd1-5b10-afa4-16cedb321390"
+diamondUuid: "b03da690-d2a1-8b06-9677-8b1ac7bd6a82"
+uuid: "5677c954-5c0f-8cb1-8aae-6d093e079606"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b404b762-b071-8c23-bf29-5b4802d2b170"
+  computationUuid: "89a5beee-eccd-8b36-ba57-a2d7bec916e5"
   stages:
     - stage: path
       stageUuid: "a7908915-0ff1-88e6-8a21-f02f42e9e25f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "118b17c2-0efa-8ff8-a291-77c675414c96"
     - stage: horo
-      stageUuid: "65ecafee-e422-8239-8c0d-6491c296ff0a"
+      stageUuid: "c2068226-1c7c-8b76-a032-c1f3149d77b2"
     - stage: seal
       stageUuid: "abf32211-4910-8bbc-a29c-0ef0c39e5c9b"
     - stage: uuid
-      stageUuid: "f60e897e-b8f9-8c48-af44-72e21acbf6cd"
+      stageUuid: "a0400d99-fac9-8a9f-9bac-0ba5216402b3"
 version: 2
 ---
 # gtin

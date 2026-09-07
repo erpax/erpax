@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ch",
-    "uuid": "b9f3d48e-c60e-8606-92ec-63d343edc88d",
+    "uuid": "0089ae82-b865-8862-89a9-6cac2f222e77",
     "words": [
       "ch"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ch — Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations.",
-    "uuid": "310bad9c-4ec0-83b7-8a3f-7833f173903d",
+    "uuid": "e85c7b2f-8b84-89d2-85ff-eced701a9f34",
     "words": [
       "use",
       "when",

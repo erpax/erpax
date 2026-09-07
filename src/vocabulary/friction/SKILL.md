@@ -2,18 +2,18 @@
 name: friction
 description: "Use when reasoning about the cost-to-act atom of a market — the total effort plus price between wanting and having. 'Convenient' means low friction; it is the lever convenience and engineering play. Coupled to status with opposite sign (the effort is often the signal), so lowering it decays exclusivity — sequence the two, do not try to maximise both."
 atomPath: "vocabulary/friction"
-coordinate: "vocabulary/friction · 5/round · 78379224"
-contentUuid: "cde1e449-e7e1-56aa-8855-25dc0fca7157"
-diamondUuid: "5e6734bc-3833-87c6-9d97-3bd65d477e57"
-uuid: "78379224-e971-85cc-b116-ef9873f4ad21"
-horo: 5
+coordinate: "vocabulary/friction · 1/base · b2569872"
+contentUuid: "a3b49fa1-6223-5de9-aad5-862700bdfb86"
+diamondUuid: "93836636-ac82-8855-a557-a334c5bd70a6"
+uuid: "b2569872-ae0a-8159-ad8c-709a3248202d"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "eeaa9a65-deaa-891d-9374-73f3161dfecd"
+  computationUuid: "a4db76e4-c9eb-89dc-a2b9-21b274228f2e"
   stages:
     - stage: path
       stageUuid: "52725cea-87f5-8fa1-8c66-981db1ea6452"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6dba0141-d1bd-8a5e-86b6-40906f6c577f"
     - stage: horo
-      stageUuid: "e6037fc6-f63d-8d87-9b5f-f65fdf36bf12"
+      stageUuid: "7f8f8bdd-5561-81b6-9066-fbce558edfea"
     - stage: seal
       stageUuid: "6da19895-5229-8d07-9840-8ddc6a9761b6"
     - stage: uuid
-      stageUuid: "dadcfea3-0f59-8521-86a8-82a8a7a05361"
+      stageUuid: "bfedfce2-a38a-88c4-bdb2-b08dd7022f94"
 version: 2
 ---
 # friction — the cost to cross from want to have

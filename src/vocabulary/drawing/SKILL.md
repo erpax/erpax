@@ -2,11 +2,11 @@
 name: drawing
 description: "Use when reasoning about drawing — A picture or diagram made with a pencil, pen, or crayon rather than paint."
 atomPath: "vocabulary/drawing"
-coordinate: "vocabulary/drawing · 2/share · df6c9523"
-contentUuid: "076650a4-2e08-52b2-bda1-d742d8ac0eae"
-diamondUuid: "e521bbc8-0ade-82a4-a6af-7e79fa83b2c7"
-uuid: "df6c9523-8278-89aa-bb5d-3aa5e196926b"
-horo: 2
+coordinate: "vocabulary/drawing · 8/crest · 567d5577"
+contentUuid: "aeb133f6-1f90-5dd0-82b6-afc2497168fe"
+diamondUuid: "cdd58a4b-49af-8dff-b388-480e7e89b8fc"
+uuid: "567d5577-7711-8228-87f4-ed345973e3d9"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "829703b9-557a-8a85-8b62-5a60714794ce"
+  computationUuid: "f04d6551-6356-8af3-a3c4-5ec66f8151b0"
   stages:
     - stage: path
       stageUuid: "99c7fa9a-a61f-8764-9f7b-2f6b97bef603"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dfbbd170-749a-8383-a14e-76f4222f186a"
     - stage: horo
-      stageUuid: "96081384-f1d9-8956-a242-dccd043610da"
+      stageUuid: "d2a4e1fb-8339-860f-97fa-b25d020c4b00"
     - stage: seal
       stageUuid: "c88d2d70-ed67-80e7-99f3-34e285760421"
     - stage: uuid
-      stageUuid: "a49038a1-03b8-8810-862f-520d43f814f9"
+      stageUuid: "c3821605-fc27-8737-9ee0-28d4821dda40"
 version: 2
 ---
 # drawing

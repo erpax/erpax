@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "twinned",
-    "uuid": "7d177ca2-fea4-8ef9-a599-6e9d169fc3d3",
+    "uuid": "d979dfe4-704e-881c-abcd-d803d903eaef",
     "words": [
       "twinned"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether every antimatter names its matter — the computed convention that each SKILL.md's `Matter-twin:` line points to a real index.ts, measured live as coverage = pointing / total over the real tree.",
-    "uuid": "30424472-55eb-80e0-85c8-bf75eb980fb4",
+    "uuid": "f889a217-84be-8d2c-bf7a-1b8c0b0983dc",
     "words": [
       "use",
       "when",

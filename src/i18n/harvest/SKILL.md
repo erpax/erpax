@@ -2,11 +2,11 @@
 name: harvest
 description: Use when reasoning about i18n harvesting — collecting message keys for i18n.
 atomPath: "i18n/harvest"
-coordinate: "i18n/harvest · 7/descent · f47ca745"
-contentUuid: "e606d2b0-d2d4-58d5-8e9c-3b3cd1ea4f57"
-diamondUuid: "15b9df7f-190b-8e14-a3cd-b117dda95b67"
-uuid: "f47ca745-3a7e-8bcb-9277-a3989abed25c"
-horo: 7
+coordinate: "i18n/harvest · 5/round · fae98aaa"
+contentUuid: "a45b3e68-1fd5-5c1d-b4f7-38ffff689757"
+diamondUuid: "b4943994-fc62-8d6b-8bcf-7faa44619562"
+uuid: "fae98aaa-b76f-8ce2-90ce-ca3cfd53c4e6"
+horo: 5
 typography:
   partition: i18n
   bondDegree: 103
@@ -16,7 +16,7 @@ standards:
   - "W3C HTTP Content-Language (RFC 7231 §3.1.3.2)"
 bindings: []
 signatures:
-  computationUuid: "38db10a9-fe14-8b27-96ff-c2aa0e60a2e5"
+  computationUuid: "afb6c610-a0a8-81e9-afd3-70491f1cd466"
   stages:
     - stage: path
       stageUuid: "72f973c1-8a80-8807-9c19-6e43f645fcb7"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "cb082942-a764-87a3-9465-61ea012ef666"
     - stage: horo
-      stageUuid: "d7886308-1261-8648-a685-f4b672fb56ad"
+      stageUuid: "ec74c0bc-9c50-8b5b-8e8d-a21ad030e09c"
     - stage: seal
       stageUuid: "b37dcb5d-de8b-885a-86ac-7cc8ba4ddc5d"
     - stage: uuid
-      stageUuid: "0452f8de-4576-8864-a143-02d69a268c39"
+      stageUuid: "a38d8ff3-d817-81be-b2eb-d54fd049b224"
 version: 2
 ---
 # i18n/harvest

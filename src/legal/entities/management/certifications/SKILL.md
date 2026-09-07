@@ -2,11 +2,11 @@
 name: certifications
 description: "Use when recording or auditing officer certifications — SOX 302 / 906 corporate-responsibility and criminal certifications, internal-control and financial-statement sign-offs, with certifying officer, assertions, and certification level per SOX §302 / SOX §906. The management-certification sign-off collection."
 atomPath: "legal/entities/management/certifications"
-coordinate: "legal/entities/management/certifications · 7/descent · 2853646e"
-contentUuid: "863145d3-37a8-5461-a0a7-94f887030ecf"
-diamondUuid: "7036e967-b180-8373-b015-40ac6092da10"
-uuid: "2853646e-e8cc-801f-811e-8fede1eb094e"
-horo: 7
+coordinate: "legal/entities/management/certifications · 5/round · 1fd73d4b"
+contentUuid: "76a509f0-2faf-5705-801f-3985eb191765"
+diamondUuid: "c270af8f-3a78-833f-9783-a7854b99c53c"
+uuid: "1fd73d4b-fbe6-89c8-abdc-63166457320c"
+horo: 5
 typography:
   partition: legal
   bondDegree: 3
@@ -15,7 +15,7 @@ standards:
   - "SOX §906 criminal-certification"
 bindings: []
 signatures:
-  computationUuid: "96b6d470-1b13-8c0b-9b5d-8c3f125d0039"
+  computationUuid: "d6874b9a-bdc9-8292-8ffb-7129660a1a12"
   stages:
     - stage: path
       stageUuid: "317d5bcc-b5a3-835f-929a-0fc64fbee4e8"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "e8c0c553-2876-8af8-817d-8b42d1c683d7"
     - stage: horo
-      stageUuid: "2e376776-0310-8777-b892-b017414ea20f"
+      stageUuid: "a6dcf89c-f410-8906-a6c7-7fdabed96b69"
     - stage: seal
       stageUuid: "2c864055-8186-81dc-b40b-ab28ec5b536d"
     - stage: uuid
-      stageUuid: "2bd19416-5fcb-8c69-923e-bc0cf748b174"
+      stageUuid: "e7b3c642-86f7-86f3-8d01-4aab4f29f276"
 version: 2
 ---
 # management-certifications

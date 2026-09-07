@@ -2,11 +2,11 @@
 name: inactive
 description: "Use when reasoning about inactive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/inactive"
-coordinate: "vocabulary/inactive · 1/base · 0c885faa"
-contentUuid: "480499a4-a375-589c-8a07-c7903cf4ed6b"
-diamondUuid: "bc7c950e-7c4f-8724-93b8-14cc0d27838f"
-uuid: "0c885faa-6849-8ccf-88d9-9f37e577849e"
-horo: 1
+coordinate: "vocabulary/inactive · 8/crest · 419ed5fa"
+contentUuid: "e6d6891a-2531-5ff3-ba92-db7d78ff3f9d"
+diamondUuid: "038044d9-fce9-8538-ac07-ad0bbbe88769"
+uuid: "419ed5fa-aa7b-85af-bd30-dcbc33d6f161"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1d189529-37ed-8543-99fc-e69d20910350"
+  computationUuid: "90482b48-b865-8788-a75d-39350c86b0f9"
   stages:
     - stage: path
       stageUuid: "5e1c97bf-4760-8f84-8286-36e4543b8a21"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ca98bb29-1e4c-8c4f-ab49-3d8e8a716b26"
     - stage: horo
-      stageUuid: "b490aca9-6285-8a22-abb3-6a098cfb1a8f"
+      stageUuid: "026726fd-fce1-8dca-a2d1-c5f87dd51ee4"
     - stage: seal
       stageUuid: "aba80683-18cd-8add-bd1a-004049e51e77"
     - stage: uuid
-      stageUuid: "ed4f7560-c608-8c9f-a496-88db90745528"
+      stageUuid: "82844be0-7004-8674-a9a4-72c180ee0dc2"
 version: 2
 ---
 # inactive

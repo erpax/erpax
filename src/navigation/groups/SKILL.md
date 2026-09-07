@@ -2,18 +2,18 @@
 name: groups
 description: "Use when reasoning about groups — names the one-word parents that root vocabulary nests under, and derives each atom's admin group from its path prefix. decides membership."
 atomPath: "navigation/groups"
-coordinate: "navigation/groups · 2/share · 76d3779f"
-contentUuid: "308b9070-6a9b-532e-a5c5-0e4ebfc7a459"
-diamondUuid: "7434046c-be12-8166-8bb6-cd2bcc25e595"
-uuid: "76d3779f-8a7f-8586-a295-2a4a01443082"
-horo: 2
+coordinate: "navigation/groups · 5/round · 438d6a68"
+contentUuid: "5f7df216-ec50-5a0f-ade6-75a1ba8d214e"
+diamondUuid: "b4d3c169-0126-8caf-8739-61379b161076"
+uuid: "438d6a68-5b3c-8610-acf8-78d931812047"
+horo: 5
 typography:
   partition: navigation
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a9db6a38-ff9e-8503-b647-b3c8e2dbd2bb"
+  computationUuid: "74116d5d-fc35-8a8b-abb7-cb79b545dc04"
   stages:
     - stage: path
       stageUuid: "8e1eb878-eb68-8033-9760-9e675fc91d23"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d5f201fb-c0d4-890e-bddf-335b0330c3ff"
     - stage: horo
-      stageUuid: "8882b57a-9da9-8213-a5ae-39dee08d63d0"
+      stageUuid: "72836ae5-5305-898a-9d27-c3255c77c0e2"
     - stage: seal
       stageUuid: "0e2937a8-77c0-8866-8775-4ebc9bb189a3"
     - stage: uuid
-      stageUuid: "1cc5ff48-18bd-8452-a602-d2c00da75a91"
+      stageUuid: "7f952412-0a74-88ee-992f-7f59650daf6a"
 version: 2
 ---
 # navigation/groups — a flat vocabulary of thousands is not browsable, so the trie gets hubs

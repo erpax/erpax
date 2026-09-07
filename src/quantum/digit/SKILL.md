@@ -2,10 +2,10 @@
 name: digit
 description: "Use when storing numeric or realtime data the way words are stored — one folder per digit (0-9), crosslinked exactly like the word atoms; the numeric corpus is the twin of the word corpus, the word and digit duality, and a stream of digits is realtime data addressed by position."
 atomPath: "quantum/digit"
-coordinate: "quantum/digit · 2/share · 3163507f"
-contentUuid: "017a3047-a091-55e7-86b6-08b20859a40b"
-diamondUuid: "d31cad68-2cd5-855a-97a5-f72d79889e0a"
-uuid: "3163507f-4e1a-826f-a28f-ea51c57eeab0"
+coordinate: "quantum/digit · 2/share · 3f0c1a8a"
+contentUuid: "cf18b4e5-e948-567f-bd70-0607f9aaf6a5"
+diamondUuid: "f7989db2-e797-89f0-b856-fe792c5afa1d"
+uuid: "3f0c1a8a-79a6-8749-b4b6-0fbda6dc2af7"
 horo: 2
 typography:
   partition: quantum
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ca4c65ba-985f-8a3f-98f5-cfede577b98d"
+  computationUuid: "8358a154-7f70-8032-bf25-1a8045b2fb99"
   stages:
     - stage: path
       stageUuid: "f06c9941-f2ab-8c8a-9812-f185dbe1b169"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3833dce9-e851-8d6d-a09c-2a728b8137da"
     - stage: horo
-      stageUuid: "ef3384b1-86ce-89c8-b19b-b092b3c97c3c"
+      stageUuid: "7f908bbb-8fc5-8c3c-a630-f897c2df156f"
     - stage: seal
       stageUuid: "b476b9c2-1da7-898f-9e44-daa502db1bf4"
     - stage: uuid
-      stageUuid: "fccb01f1-e490-8598-92c5-4c07d16aa55b"
+      stageUuid: "e50b5def-97ce-8317-b1d1-6f5379f608b1"
 quantum:
   superposition:
     - atom
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "ca4c65ba-985f-8a3f-98f5-cfede577b98d"
-    contentUuid: "017a3047-a091-55e7-86b6-08b20859a40b"
+    computationUuid: "8358a154-7f70-8032-bf25-1a8045b2fb99"
+    contentUuid: "cf18b4e5-e948-567f-bd70-0607f9aaf6a5"
 version: 2
 ---
 # quantum/digit — the digit corpus (word ⊕ digit)
@@ -72,4 +72,4 @@ Where a [[word]] is discrete and named, a digit is continuous and counted — th
 
 @see [[digit]] · [[word]] · [[quantum/number]] · [[sequence]] · [[stream]] · [[uuid]] · [[matrix]] · [[analog]]
 
-<sub>content-uuid `017a3047-a091-55e7-86b6-08b20859a40b` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `cf18b4e5-e948-567f-bd70-0607f9aaf6a5` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

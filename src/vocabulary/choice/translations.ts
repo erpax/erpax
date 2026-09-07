@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "choice",
-    "uuid": "874c39b1-7779-84e6-b019-173cdef61f00",
+    "uuid": "60e8df4d-f108-8f23-9b75-73786a41d56a",
     "words": [
       "choice"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a buyer selects items up to a value or quantity cap instead of receiving a fixed bundle — the market-style / customizable CSA share (members pick at a table or online to a limit, swap unwanted items), and the generic pick-mix / deli-counter / configure-to-order pattern. The selection model: the inverse of a fixed bundle, trading packing simplicity for member satisfaction.",
-    "uuid": "7f300c62-f42e-8f3d-ae3c-30df938759d3",
+    "uuid": "dd3e79e4-546e-85ad-965f-43c892c79705",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: department
 description: "Use when reasoning about department — A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a stor"
 atomPath: "vocabulary/department"
-coordinate: "vocabulary/department · 1/base · 3bd9bbed"
-contentUuid: "6b7c2321-2aed-561e-8713-4dbde48971a7"
-diamondUuid: "e0798494-dad1-8a7e-8f0c-98de2dc6cd31"
-uuid: "3bd9bbed-3dfb-899e-b86a-9a0b2c5a7d67"
-horo: 1
+coordinate: "vocabulary/department · 5/round · 3ccc2908"
+contentUuid: "e1016f11-a5e9-57e1-aba7-018d4d64dc34"
+diamondUuid: "28909cb3-8056-8f7e-a3e0-6f8c5d17ca6f"
+uuid: "3ccc2908-e0f7-8138-b297-1c8482ceafa6"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "570c30a0-d3d0-8ef3-a92d-5da893f57f38"
+  computationUuid: "6a2d74f3-5bdb-874a-b04f-0e5faf50a2ee"
   stages:
     - stage: path
       stageUuid: "f79e96d2-b5f1-81c3-8bc5-bb17bd9fa405"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "55bde30d-dd42-8ecc-b9eb-b27175e722a8"
     - stage: horo
-      stageUuid: "e5bc205a-e97a-81ea-aec4-a9ebb21be4b7"
+      stageUuid: "3cfea86e-bae3-8e1c-b2ba-ca1c9bd29ac7"
     - stage: seal
       stageUuid: "bf0a7601-5a96-8e05-9999-6f9ef057699d"
     - stage: uuid
-      stageUuid: "3ade67e0-a749-827d-9335-0e3c52fa52c9"
+      stageUuid: "b4cb4baa-b5da-8a3c-8154-577f0c32875e"
 version: 2
 ---
 # department

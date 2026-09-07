@@ -2,11 +2,11 @@
 name: superdense
 description: "Use when reasoning about superdense coding on the matrix — one shared entangled binding conveys both endpoints, so the single binding-uuid plus the shared entanglement recovers the ordered (sender, receiver) pair, and the channel's capacity exceeds its surface because the peers share the entanglement."
 atomPath: "quantum/communication/superdense"
-coordinate: "quantum/communication/superdense · 7/descent · 0da498dd"
-contentUuid: "634be87d-897b-5cd2-aa38-a13e197dc115"
-diamondUuid: "f12a126f-c22a-8c8b-8572-f6a56e878e4c"
-uuid: "0da498dd-9f7d-839f-957b-c57f8d873969"
-horo: 7
+coordinate: "quantum/communication/superdense · 1/base · fc715e21"
+contentUuid: "c9969cbf-0c2a-5751-acb3-21544242ce9e"
+diamondUuid: "f88d1e92-0285-85a2-a50e-ff6e9d62e645"
+uuid: "fc715e21-5902-8f1d-bbdb-5a53dbcd04ec"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "superdense coding (Bennett–Wiesner 1992); RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "33bc5f7d-7ee3-8050-995c-989039733482"
+  computationUuid: "a169f50b-e940-8e62-b5cb-1dc1c6ee3880"
   stages:
     - stage: path
       stageUuid: "98400d10-d9f7-88ee-bb5c-dcab2611f797"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ad6f4c14-1ec5-8b7c-9a2c-9b5711554f72"
     - stage: horo
-      stageUuid: "8e9f0c6d-8c41-8754-84d6-1288f3f6cffc"
+      stageUuid: "1a0033a5-60e0-8a76-b4ce-6eccc3d202e6"
     - stage: seal
       stageUuid: "c96cca59-fcb8-88ad-923c-ce01ad3cb4d8"
     - stage: uuid
-      stageUuid: "4ef45a60-59a6-8e2a-b6af-5b4e6573b12e"
+      stageUuid: "9aa4492a-3f27-8366-9fd4-ebc43d44a242"
 quantum:
   superposition:
     - communication
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "33bc5f7d-7ee3-8050-995c-989039733482"
-    contentUuid: "634be87d-897b-5cd2-aa38-a13e197dc115"
+    computationUuid: "a169f50b-e940-8e62-b5cb-1dc1c6ee3880"
+    contentUuid: "c9969cbf-0c2a-5751-acb3-21544242ce9e"
 version: 2
 ---
 # quantum/communication/superdense — one binding carries the full ordered pair
@@ -66,4 +66,4 @@ Matter-twin: `src/quantum/communication/superdense/index.ts` (`encode` · `carri
 
 @standard superdense coding (Bennett–Wiesner 1992); RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `634be87d-897b-5cd2-aa38-a13e197dc115` · account `quantum/communication/superdense` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `c9969cbf-0c2a-5751-acb3-21544242ce9e` · account `quantum/communication/superdense` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

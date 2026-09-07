@@ -2,18 +2,18 @@
 name: session
 description: "Use when walking a wave plan hop by hop with receipts — opens a session over a plan, emits a uuid-chained receipt per completed wave, and refuses to report ready until every wave is actually done. The actor is folded into the receipt's address, never stored in clear."
 atomPath: "wave/session"
-coordinate: "wave/session · 4/weave · aefc84da"
-contentUuid: "9f63555b-4040-548f-bf40-38925ebae7ea"
-diamondUuid: "3f771571-d178-834c-a4a0-cd6c875a41e1"
-uuid: "aefc84da-9deb-86ee-9d3e-ebf96b53b255"
-horo: 4
+coordinate: "wave/session · 1/base · 3804d927"
+contentUuid: "02dd385c-cbb2-51a5-b0f7-4b06f3e176c2"
+diamondUuid: "f8f14235-07ff-8ed5-979b-6001e5bdeac8"
+uuid: "3804d927-aaaf-8073-a195-d108c655142a"
+horo: 1
 typography:
   partition: wave
   bondDegree: 54
 standards: []
 bindings: []
 signatures:
-  computationUuid: "28dc76f3-ea1a-8380-8229-00280f74f139"
+  computationUuid: "f9ec538a-0cce-81ac-a978-4645e50402eb"
   stages:
     - stage: path
       stageUuid: "2cd3553f-3da7-8a93-af06-61d34426ef3c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d48b4682-dae7-8846-8cee-08e87f1c7138"
     - stage: horo
-      stageUuid: "9e7c3bfb-255f-89f7-a7d5-17f2b5c203bd"
+      stageUuid: "d57d1ca2-6533-8a1d-8972-56cd240e3ab7"
     - stage: seal
       stageUuid: "2cf04081-e520-8338-9fb3-d80b1bf9cd0a"
     - stage: uuid
-      stageUuid: "fe669349-5425-8576-8924-7665fb694809"
+      stageUuid: "d8f46073-0581-8154-be02-1f1418bcb246"
 version: 2
 ---
 # wave/session — readiness is earned, not assumed

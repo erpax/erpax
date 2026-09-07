@@ -2,11 +2,11 @@
 name: website
 description: "Use when the society must be SEEN, heard, and felt — auto-seeding Payload's pages from the spec corpus, the e2e multimedia walkthroughs, and federation peers; the perceptible outward face of the content-addressed record."
 atomPath: website
-coordinate: "website · 8/crest · ee031d37"
-contentUuid: "6b131de3-90c4-52c4-81b8-2b877012efce"
-diamondUuid: "901e6be2-2219-8eff-8b28-0c0a6e572a97"
-uuid: "ee031d37-848a-8e09-8fb4-390504bd9bc0"
-horo: 8
+coordinate: "website · 2/share · 3d9bfa83"
+contentUuid: "fac21d0f-9390-55db-addb-bccd18b62228"
+diamondUuid: "e06b5124-b508-8238-b304-7b74b350a8ff"
+uuid: "3d9bfa83-32fa-82a8-8dfd-53ef5645f158"
+horo: 2
 typography:
   partition: website
   bondDegree: 42
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0cd979c7-89dc-8b60-b302-d99c933151c1"
+  computationUuid: "4762fdc0-86e0-879d-98ce-a149525f12fa"
   stages:
     - stage: path
       stageUuid: "68045f16-4ea4-865c-b7e6-fa0f280a2b5a"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "a2495a38-6e54-86b0-8e40-e235fff7ebbe"
     - stage: horo
-      stageUuid: "d49f444a-6e47-8bb0-832b-603e1e901152"
+      stageUuid: "50e68eba-5cfb-8d20-ad6b-00b5b65431bb"
     - stage: seal
       stageUuid: "b8cd2559-8e44-8bc5-ae05-ef3742b2cf36"
     - stage: uuid
-      stageUuid: "6ac8fc23-8396-85a4-9bfe-a0a575621246"
+      stageUuid: "22b76468-22b5-80d2-849e-98f88eedd030"
 version: 2
 ---
 # website — the record made perceptible

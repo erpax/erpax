@@ -2,10 +2,10 @@
 name: edition
 description: "Use when reasoning about edition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/edition"
-coordinate: "vocabulary/edition · 7/descent · 3e6f49d5"
-contentUuid: "6db6e80a-9cf4-584d-a1b8-58336f698bbc"
-diamondUuid: "a2ce3dd9-e6e1-8abd-a67e-af4cc830cea5"
-uuid: "3e6f49d5-d507-8e35-a897-2e11f1270eb0"
+coordinate: "vocabulary/edition · 7/descent · 2ab9ef31"
+contentUuid: "5aedc825-8f88-5e29-b2b6-966253020485"
+diamondUuid: "15dc55ea-ec62-822e-b13d-09c08d9d2f0d"
+uuid: "2ab9ef31-3a95-8f6c-a21d-c71ad8a1b2f4"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "01f44a25-1b95-85e4-91ed-c28ee04bc667"
+  computationUuid: "309de656-2fe2-8a9d-88d6-6898eb01b338"
   stages:
     - stage: path
       stageUuid: "1e577a69-6fac-82cc-8d77-7ee51257104c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3cf900b4-635b-8600-b383-0bf6dcd89610"
     - stage: horo
-      stageUuid: "7ed29745-1446-81df-84e6-efe4c0a3a45c"
+      stageUuid: "b4529bf4-5352-8323-899c-681aae66d841"
     - stage: seal
       stageUuid: "cc4b796e-c176-8606-8330-2b3f0cf27ddd"
     - stage: uuid
-      stageUuid: "b0d815d4-9aaf-87d2-bdd7-e8f6c7ddfec3"
+      stageUuid: "ffba4322-d391-8ce8-b726-b3c5765c5b46"
 version: 2
 ---
 # edition

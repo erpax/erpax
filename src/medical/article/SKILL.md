@@ -2,11 +2,11 @@
 name: article
 description: "Use when reasoning about article as a medical facet of medical — vocabulary pivot to @/article; nested not duplicated."
 atomPath: "medical/article"
-coordinate: "medical/article · 8/crest · 436d53cb"
-contentUuid: "63187cdb-61c8-5d22-aba0-e93b5e836269"
-diamondUuid: "a5c89408-da33-8c59-961f-8a9076c48480"
-uuid: "436d53cb-184c-8750-9bdf-7e80900746f5"
-horo: 8
+coordinate: "medical/article · 7/descent · 91d2d520"
+contentUuid: "c5d65c4b-7351-5abf-a5cc-753987ae5512"
+diamondUuid: "1741ed7c-5944-80ca-903a-fed19d2b5c82"
+uuid: "91d2d520-d6c4-8f18-abab-c97df876cf16"
+horo: 7
 typography:
   partition: medical
   bondDegree: 80
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ec3bec85-5fc3-8d81-a9e8-324623a0a1f6"
+  computationUuid: "6cc9dd6b-fb77-82f8-a367-b5c3a719fa6d"
   stages:
     - stage: path
       stageUuid: "bbc6b468-5c74-83da-84a5-b4a415de9767"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f433aae0-8f64-8216-a85e-e6a728499aa9"
     - stage: horo
-      stageUuid: "5d00f0bb-974d-8068-94f0-ef2cdfb86a7c"
+      stageUuid: "f96815cc-4d25-8470-92f1-03ef51f56631"
     - stage: seal
       stageUuid: "747f41c7-f034-88f1-8638-ebd1a2f25159"
     - stage: uuid
-      stageUuid: "a70a3472-6637-846e-95a9-5d720c886b89"
+      stageUuid: "c775f6fe-7cad-83f8-a94c-64573a0c074e"
 version: 2
 ---
 # medical/article — medical facet

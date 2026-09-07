@@ -2,11 +2,11 @@
 name: page
 description: "Use when reasoning about page as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: page
-coordinate: "page · 1/base · 10b6d0b8"
-contentUuid: "b5324c1b-3655-5f3d-a9c3-5b5800d67d6b"
-diamondUuid: "41556d84-ebf4-84df-9870-9031b2f29e1e"
-uuid: "10b6d0b8-0672-8e01-9a88-7da469d441d6"
-horo: 1
+coordinate: "page · 4/weave · 03b23a89"
+contentUuid: "1adc55f0-12bf-5abb-8b5a-a0c1db46924b"
+diamondUuid: "f4dd994b-3aa0-8146-8d9c-eab37a1e6640"
+uuid: "03b23a89-1b1b-8cb1-9ae7-ed2e35ff3aa5"
+horo: 4
 typography:
   partition: page
   bondDegree: 141
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "89bd905b-9d1b-81c4-9a92-7f4b1674569d"
+  computationUuid: "d6fe6229-c388-8fb5-9d2b-5adcee8f7402"
   stages:
     - stage: path
       stageUuid: "67a9d817-2e0f-8155-8b29-71841dc7522e"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f0a583e5-31e5-8cc5-a2b6-f1b6241d1a72"
     - stage: horo
-      stageUuid: "742d932e-cc5b-8391-bbcd-d92f67ce4ad2"
+      stageUuid: "6a64eebd-0083-8aeb-9de1-6d0f45eb28f8"
     - stage: seal
       stageUuid: "f4b2ef3c-3d9d-89b5-bc0e-a534c51c2f4d"
     - stage: uuid
-      stageUuid: "e81d4ef6-e7ab-833d-bbf0-9eca82dbc420"
+      stageUuid: "75827ba0-3750-8c6b-a54e-a5cc5cd57672"
 version: 2
 ---
 # page

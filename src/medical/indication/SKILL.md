@@ -2,11 +2,11 @@
 name: indication
 description: "Use when reasoning about indication as a medical facet of medical — vocabulary pivot to @/indication; nested not duplicated."
 atomPath: "medical/indication"
-coordinate: "medical/indication · 2/share · c53e254b"
-contentUuid: "7fef86f0-c76b-53ab-85e4-a645ed6d81ae"
-diamondUuid: "bd0084dd-4e71-86b7-ba99-f4bf6fd3be05"
-uuid: "c53e254b-bcd3-810f-82de-c98e17057670"
-horo: 2
+coordinate: "medical/indication · 7/descent · a3863a45"
+contentUuid: "19e03aae-f829-54be-be30-cdd29e2614ea"
+diamondUuid: "0b96437d-5013-8a00-8b55-bbb9c1060aad"
+uuid: "a3863a45-b663-83eb-b330-797e1852c4c5"
+horo: 7
 typography:
   partition: medical
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d29d6303-efb7-8df3-b257-104601fe65d0"
+  computationUuid: "f9e81f19-32b6-83ca-bf3b-44c47661e312"
   stages:
     - stage: path
       stageUuid: "7b2f307f-5465-8090-b723-d91c2bf87126"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5844eee4-ff23-8d99-a144-9333db6642c1"
     - stage: horo
-      stageUuid: "f205e47e-b6b7-85d1-9d4e-7d758b2ed923"
+      stageUuid: "457706a1-aa52-8cd2-86c4-ccd50323f159"
     - stage: seal
       stageUuid: "410556ed-1abd-81bb-88fe-0e8620bd2c3d"
     - stage: uuid
-      stageUuid: "0cee4c96-7463-831e-a0af-840b74543dd1"
+      stageUuid: "0e68c17f-90a4-8c8c-b360-3ad2a39d5150"
 version: 2
 ---
 # medical/indication — medical facet

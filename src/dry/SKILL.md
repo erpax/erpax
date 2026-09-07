@@ -2,10 +2,10 @@
 name: dry
 description: "Use when migrating logic to maximum tampering cost — the computed dry-clean that collides duplicated/hardcoded/scattered logic into shared content-addressed atoms (merge-by-extension), the word colliding DryCleaningOrLaundry with don't-repeat-yourself."
 atomPath: dry
-coordinate: "dry · 2/share · 966fc81e"
-contentUuid: "8bed3034-44f1-55df-aea3-d9ba3ba75e9f"
-diamondUuid: "4c02fbf1-37d8-861f-ad2d-6048b75a7ca9"
-uuid: "966fc81e-a10c-8d97-9703-bbc02cfde754"
+coordinate: "dry · 2/share · 190c4472"
+contentUuid: "eda9a7ba-ef96-5921-8c71-73e7bc232fc2"
+diamondUuid: "e7748308-d752-8ede-bb8b-3142f91b5d9a"
+uuid: "190c4472-e92e-87be-bd24-229a0081e8e4"
 horo: 2
 typography:
   partition: dry
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a4b70207-96ed-899b-8327-40c78d0e3041"
+  computationUuid: "467a62c3-87c6-8fb8-b14f-3b3ed81e7d6f"
   stages:
     - stage: path
       stageUuid: "b2394453-7ab9-8d6f-8d16-60f17c184790"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "da272b56-4bc2-8875-8a40-1c48e60be4ce"
     - stage: horo
-      stageUuid: "3ffc5c52-2d26-8fc6-ad88-2b2e5af7caa8"
+      stageUuid: "68f23ae7-cac0-84ae-b2ec-af1bb7071ecf"
     - stage: seal
       stageUuid: "bf29a412-9d1a-8e36-8a85-e1c1b7771c34"
     - stage: uuid
-      stageUuid: "c09cca4c-e8e3-89a7-b596-9d727a436bc6"
+      stageUuid: "d4aa89b6-3c0d-8038-bac2-37998cf63337"
 version: 2
 ---
 # dry

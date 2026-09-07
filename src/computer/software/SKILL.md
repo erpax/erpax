@@ -2,11 +2,11 @@
 name: software
 description: "Use when reasoning about software as a part of computer — vocabulary pivot to @/software; nested not duplicated."
 atomPath: "computer/software"
-coordinate: "computer/software · 1/base · ab75bb9d"
-contentUuid: "97608ad8-206b-5141-801c-e86be6595fa4"
-diamondUuid: "c6c86340-3dc6-8afa-89eb-96d9ac037e2c"
-uuid: "ab75bb9d-6f7f-8a90-84c9-521de4e6be60"
-horo: 1
+coordinate: "computer/software · 5/round · d93cc1e4"
+contentUuid: "7ee5b4c6-cbc8-52ad-a2d2-00943f63a9a1"
+diamondUuid: "18d47f5f-07a0-8d7a-9bdb-e0fdb1b44793"
+uuid: "d93cc1e4-808b-8704-b524-74167b25f77d"
+horo: 5
 typography:
   partition: computer
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ea48d780-e4ea-841a-b8ba-c0c6e9c62cf5"
+  computationUuid: "783608e2-a8f9-8924-8564-23203b1fbdc6"
   stages:
     - stage: path
       stageUuid: "9153b602-61e9-8898-b033-d2a36323128c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "96d71888-e759-8fe5-941f-d29a98205647"
     - stage: horo
-      stageUuid: "567bd3b4-09a9-8293-a20c-a856fdcc1769"
+      stageUuid: "3eee3b12-6df0-88b6-8d97-84ddeb838b8f"
     - stage: seal
       stageUuid: "56a20f02-d5ef-834a-a767-a3025552166a"
     - stage: uuid
-      stageUuid: "7baef5c8-30da-8285-9cda-bc5f3b565f1c"
+      stageUuid: "8e8401b3-0b01-86a4-9ab9-ff7f5f120d0f"
 version: 2
 ---
 # computer/software — programs the machine

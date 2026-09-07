@@ -2,11 +2,11 @@
 name: closes
 description: Use when reasoning about closes — The closing hour of the place or service on the given day(s) of the week.
 atomPath: "vocabulary/closes"
-coordinate: "vocabulary/closes · 1/base · e82583e1"
-contentUuid: "187ccc5e-83b1-5250-93d4-11ba5304b64d"
-diamondUuid: "fa975ffd-5b37-8313-aa19-58c61dd3c55b"
-uuid: "e82583e1-a874-82f8-9248-009db785a2e6"
-horo: 1
+coordinate: "vocabulary/closes · 2/share · bc1c4692"
+contentUuid: "5f5716d8-80ee-5ede-9651-f0b1c194549a"
+diamondUuid: "f445efe3-5f70-83d4-8323-92a054578190"
+uuid: "bc1c4692-1cec-84fd-a714-2ee37568bc8b"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "07527127-fe93-82fd-96be-35799201d597"
+  computationUuid: "b0dcf516-2c3e-8ea1-9402-b8761c76783d"
   stages:
     - stage: path
       stageUuid: "c7f4288e-b868-823a-885e-15f6d29024b1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b1d36279-13ee-8d5b-b734-163b651c86e6"
     - stage: horo
-      stageUuid: "6e51d458-960a-87f0-a07b-dd7d77738012"
+      stageUuid: "ae0bfc1f-b649-892a-a104-2eb4cbfbb9f3"
     - stage: seal
       stageUuid: "3875fa08-882e-87c1-bc0e-971c601650a1"
     - stage: uuid
-      stageUuid: "dd7caddf-19b9-8e08-9b9c-beb901db0034"
+      stageUuid: "388c3eec-1010-8bc6-ac74-9b6414a31f72"
 version: 2
 ---
 # closes

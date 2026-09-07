@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "qualification",
-    "uuid": "0a9fe0f8-f0bd-8b1a-8fb1-e8500c8eac3a",
+    "uuid": "d9b4d90d-7474-8362-a642-9b6a8f207269",
     "words": [
       "qualification"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one qualification — the singular model of the qualifications collection (the plural store); a credential establishing fitness for a role.",
-    "uuid": "f9ff98fa-b9a8-8afb-8341-0b6643d220c6",
+    "uuid": "209e8e13-67b3-837c-89fa-50c22de44b45",
     "words": [
       "use",
       "when",

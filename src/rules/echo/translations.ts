@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "echo",
-    "uuid": "d2cb543e-1a63-8ad4-a305-f15a04c27bfa",
+    "uuid": "b461ab4f-959c-8055-9cce-b8abf6ffb4a1",
     "words": [
       "echo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a path restates itself — a meaning-word repeated within one path means the path says the same thing twice and cannot be immediately realised. Computes every such path (framework namespace excluded), ratchets to zero. Run: tsx src/rules/echo/index.ts",
-    "uuid": "09d4c1ba-0824-8ef2-b889-e4e7026e2f24",
+    "uuid": "166ec7b4-dd9c-8391-8b35-d4806e948a6d",
     "words": [
       "use",
       "when",

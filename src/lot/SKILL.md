@@ -2,11 +2,11 @@
 name: lot
 description: Use when modelling one lot — the singular model of the lots collection (the plural store); a tracked batch of like units produced or handled together.
 atomPath: lot
-coordinate: "lot · 5/round · c2c4c706"
-contentUuid: "23fa1e06-c941-5439-a531-d10bf4aeb281"
-diamondUuid: "885583dd-31cf-87a8-9485-ea5f3ba8f1ad"
-uuid: "c2c4c706-1b3a-85ff-bcae-f5e2fe8466a0"
-horo: 5
+coordinate: "lot · 7/descent · 2a3dfca2"
+contentUuid: "d5d9d825-143e-5b17-a07b-d74d71637a5a"
+diamondUuid: "7c1d50b1-f495-80fd-ba5d-d662eb944862"
+uuid: "2a3dfca2-d4bb-8b71-98d5-ac3cb4902ee3"
+horo: 7
 typography:
   partition: lot
   bondDegree: 12
@@ -16,7 +16,7 @@ standards:
   - "UBL-2.1"
 bindings: []
 signatures:
-  computationUuid: "ac92eccd-9868-84cf-8f0a-6d18af20dbc9"
+  computationUuid: "eb68967a-fc51-8cbd-97f0-095b4b796542"
   stages:
     - stage: path
       stageUuid: "255a1157-5a61-83e0-b255-c02ca1728470"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "46deba50-bf1a-8178-b222-3507cf314284"
     - stage: horo
-      stageUuid: "43486441-18d0-82be-b53a-7e0e58e2a9c2"
+      stageUuid: "e52129da-c48e-8488-8e4f-006bb3948698"
     - stage: seal
       stageUuid: "cc1a5d6a-4294-8f36-acc0-5c7983aabd20"
     - stage: uuid
-      stageUuid: "0cf00df0-6b68-8193-9f8a-069922221a5d"
+      stageUuid: "a901e93c-5e34-8f90-9a39-ebf8c4c56c0b"
 version: 2
 ---
 # lot — the model of one [[lots]] row

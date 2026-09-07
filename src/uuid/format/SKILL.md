@@ -2,11 +2,11 @@
 name: format
 description: Use when reasoning about uuid formatting — the canonical string form of a uuid.
 atomPath: "uuid/format"
-coordinate: "uuid/format · 8/crest · 3ab755ee"
-contentUuid: "7c63c7b8-a9ca-52ba-9d9b-f87e83651f0f"
-diamondUuid: "9dc0b67a-3ef8-8925-b682-543e8e0b7605"
-uuid: "3ab755ee-85b1-8426-a16e-15f18c92ed93"
-horo: 8
+coordinate: "uuid/format · 5/round · e48f163b"
+contentUuid: "fbf5de73-368c-5973-9221-ef996b02544d"
+diamondUuid: "d27a8aae-ebbd-879a-837e-2bad26284883"
+uuid: "e48f163b-51cb-8fb4-9a4c-6b999b74dae5"
+horo: 5
 typography:
   partition: uuid
   bondDegree: 39
@@ -20,7 +20,7 @@ standards:
   - "RFC-4122"
 bindings: []
 signatures:
-  computationUuid: "8d5bbf03-cc68-8366-a9a9-691304087d22"
+  computationUuid: "ee6c84c4-ff3b-8a18-a074-f4c337a53506"
   stages:
     - stage: path
       stageUuid: "c377df88-5edc-8dc7-a9e6-05474698b754"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "584523ff-24bd-8c67-8979-e7f8c69d287e"
     - stage: horo
-      stageUuid: "5c23cd6f-1715-8839-a2af-b77b39543b9b"
+      stageUuid: "4894626b-d8b0-8ea8-adc8-5d78db505074"
     - stage: seal
       stageUuid: "0b5d968a-5d8a-863b-bc0a-c37241124074"
     - stage: uuid
-      stageUuid: "9c69a598-2b16-870b-a753-1493be20bb9d"
+      stageUuid: "a8ef348c-79a7-8dfb-b348-4a859b524da3"
 version: 2
 ---
 # uuid/format

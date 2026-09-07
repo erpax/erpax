@@ -2,18 +2,18 @@
 name: spectrum
 description: "Use when reasoning about the spectrum — the finite, discrete set of lines a system can emit or absorb, computed from every leap between the seven horo energy-rungs and deduplicated to its distinct gap-frequencies. The spectrum is the system's fingerprint and a discrete sampling of the continuous aura; it is where the wave shows it is quantised. Each line is the symmetric binding of its two rungs (one coordinate for emission and absorption alike)."
 atomPath: spectrum
-coordinate: "spectrum · 2/share · 3d2670b1"
-contentUuid: "1d1cb9e4-fce0-5bc1-96aa-32bc99944fab"
-diamondUuid: "7de3cf12-9b59-8056-80ae-6bb695ae8d5d"
-uuid: "3d2670b1-4367-8626-ab46-50ac6498d3d9"
-horo: 2
+coordinate: "spectrum · 5/round · 56fe9a59"
+contentUuid: "62d83ed4-a080-5fc9-bcbe-5cc23d84f287"
+diamondUuid: "ec1bacdf-1b1c-8d2d-8f32-7aa546886968"
+uuid: "56fe9a59-8a8c-851c-bace-e21161eaf714"
+horo: 5
 typography:
   partition: spectrum
   bondDegree: 36
 standards: []
 bindings: []
 signatures:
-  computationUuid: "306f0cf4-484d-86e8-8827-217d0e1b3b75"
+  computationUuid: "05c66b8a-083d-8418-a203-c16f773d8cff"
   stages:
     - stage: path
       stageUuid: "4d4e6c40-7276-87a7-81f0-d88d6d6e941c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a7a485d0-2cf4-8c3a-98dc-7f8edf220433"
     - stage: horo
-      stageUuid: "366aadf9-9ba5-85d4-99ae-db051c78c46d"
+      stageUuid: "7b7e87e7-4c98-8934-be92-c0acbc52ae55"
     - stage: seal
       stageUuid: "c1e4ca21-7cf9-8f14-95d7-7a3bde56609b"
     - stage: uuid
-      stageUuid: "04fa5680-ff4b-8e2d-8b2f-ebba18b20a7f"
+      stageUuid: "92cf95bd-d397-8d6a-8d54-6b3e9529496e"
 version: 2
 ---
 # spectrum — the discrete lines of every leap

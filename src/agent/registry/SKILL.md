@@ -2,11 +2,11 @@
 name: registry
 description: "Use when reasoning about registry — In-memory AgentRegistry — single source of truth for the A-vortex."
 atomPath: "agent/registry"
-coordinate: "agent/registry · 8/crest · 6c44e4ab"
-contentUuid: "15652e9d-31cb-5fd1-a3c1-899afa3b1e65"
-diamondUuid: "e0b2c77b-0cad-8af9-8d2d-74d8b4d66f2e"
-uuid: "6c44e4ab-84cb-897c-a720-31270e302e3f"
-horo: 8
+coordinate: "agent/registry · 5/round · 086f9995"
+contentUuid: "f473fc57-6ee4-51fc-9ce5-246fae15d2b0"
+diamondUuid: "b3ec8af3-4668-8fe0-a836-8157a4943cc9"
+uuid: "086f9995-4226-8812-a4e5-2108e865d796"
+horo: 5
 typography:
   partition: agent
   bondDegree: 31
@@ -17,7 +17,7 @@ standards:
   - "ISO/IEC-25010"
 bindings: []
 signatures:
-  computationUuid: "65495b19-402f-83ed-b850-2b844193808a"
+  computationUuid: "dd646327-7528-8ee3-9981-c1cab4517124"
   stages:
     - stage: path
       stageUuid: "457f2f8d-5971-8b74-a894-7b25dca68c23"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "c4030012-e495-897d-af91-dc37e15efe4e"
     - stage: horo
-      stageUuid: "bff3c026-d95c-8f2c-a25f-ee6cc0544681"
+      stageUuid: "2e777fd9-c3dd-83fc-bd30-b812c30d341c"
     - stage: seal
       stageUuid: "fb168a6c-d86e-843f-a3ae-f4b4c0735eda"
     - stage: uuid
-      stageUuid: "af6487a0-7d15-8422-af33-749567738863"
+      stageUuid: "277f1d03-a7d2-8d15-be89-cbc6e7d92d60"
 version: 2
 ---
 # agent/registry

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hr",
-    "uuid": "92811672-a11c-81db-8083-0b430b7182cd",
+    "uuid": "279a10d8-4e00-8fc4-beda-2c2a740e2a2d",
     "words": [
       "hr"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hr — Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time).",
-    "uuid": "031dd3aa-a865-87af-bf08-5752e4f04291",
+    "uuid": "f7723555-f6f8-81f0-838f-1ef291aa6903",
     "words": [
       "use",
       "when",

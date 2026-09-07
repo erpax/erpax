@@ -2,11 +2,11 @@
 name: consumable
 description: Use when reasoning about consumable — A pointer to another product (or multiple products) for which this product is a consumable.
 atomPath: "vocabulary/consumable"
-coordinate: "vocabulary/consumable · 2/share · d79c82c9"
-contentUuid: "cb3558d3-02cd-524f-87c6-9e257be147ab"
-diamondUuid: "4f3d1815-3465-8813-b41f-117b78b64945"
-uuid: "d79c82c9-24ec-8d02-8d2b-90952a7ea93e"
-horo: 2
+coordinate: "vocabulary/consumable · 7/descent · 62e8f3bd"
+contentUuid: "62f49729-dae5-57fe-81cf-937f71741d76"
+diamondUuid: "cd6ab12b-5ef8-838e-8729-91fe30ce0bf8"
+uuid: "62e8f3bd-7006-8606-8032-946d962302b4"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6d345334-a634-8cbc-9bc7-25162c0df6b0"
+  computationUuid: "4a3055f7-50a3-8c6f-be30-481f00c6d660"
   stages:
     - stage: path
       stageUuid: "f0f5aac7-e2ca-8f7a-9f5b-e9a7861761d2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f54c55ce-4f1f-83b2-98b1-a67a0bf55511"
     - stage: horo
-      stageUuid: "6f90c453-975c-8669-a105-a9e4508d2dda"
+      stageUuid: "5c59c36d-be60-89ba-9e05-822c04f1a589"
     - stage: seal
       stageUuid: "d827415e-ab43-8019-94a8-21df8cdfafd1"
     - stage: uuid
-      stageUuid: "88938ade-3f5a-8d90-93da-3873045817cd"
+      stageUuid: "c7726623-f494-8012-a6b9-b652db8bb3de"
 version: 2
 ---
 # consumable

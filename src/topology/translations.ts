@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "topology",
-    "uuid": "918510f1-4f13-8647-ac53-e5326b0bf568",
+    "uuid": "42f588df-cb04-8a0e-a1f3-2bf8947349f1",
     "words": [
       "topology"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about topology — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
-    "uuid": "ffc693a2-cda1-8291-8245-3407987970ff",
+    "uuid": "0726c5ee-f1c4-803a-80f6-97c30a103c2e",
     "words": [
       "use",
       "when",

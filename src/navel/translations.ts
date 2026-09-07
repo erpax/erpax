@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "navel",
-    "uuid": "d8a21623-5e00-8146-99fc-cadaa4624e9f",
+    "uuid": "ed7137ae-80d2-8e2a-bad5-9966b03cd84a",
     "words": [
       "navel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the solar plexus center (Manipura) — index 2 of the seven centers, a standalone projection of the chakra ring whose colour is rendered from a uuid computed from the position math, with the traditional fire-of-identity role named only as cultural overlay, never claimed.",
-    "uuid": "691e8cb1-d5b3-83fa-93de-d48a7344b156",
+    "uuid": "f7d4d02a-f737-84cc-a3b8-004cbeb1d0d4",
     "words": [
       "use",
       "when",

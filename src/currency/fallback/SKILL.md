@@ -2,11 +2,11 @@
 name: fallback
 description: "Use when a currency value is missing, blank, or unknown — the blank currency XXX (ISO 4217 §6.5 \"No currency\") is the identity element of the currency category, so every row, hook, formatter, and conversion resolves cleanly to it instead of crashing."
 atomPath: "currency/fallback"
-coordinate: "currency/fallback · 2/share · 115e7688"
-contentUuid: "6a4b6254-bd0d-5b14-95d9-c2fe4c873201"
-diamondUuid: "c0fbfa85-fb89-88d0-b6f2-1bce8e1842be"
-uuid: "115e7688-5ca3-8571-b655-48576278246f"
-horo: 2
+coordinate: "currency/fallback · 7/descent · 7c0e2122"
+contentUuid: "3ae0f95b-d5dd-5e83-b102-37237fbb949a"
+diamondUuid: "79cb21d8-6ea6-884d-8450-c51adbdd18eb"
+uuid: "7c0e2122-0c4b-8fa8-aaab-df83fe580b51"
+horo: 7
 typography:
   partition: currency
   bondDegree: 24
@@ -21,7 +21,7 @@ standards:
   - "RFC-8785"
 bindings: []
 signatures:
-  computationUuid: "68363e0d-5777-8eb7-973e-571bf7663317"
+  computationUuid: "d223e2ef-0254-8be6-896c-f037edcd6ed8"
   stages:
     - stage: path
       stageUuid: "d7b844f9-d0e5-8dc9-bc13-82697a218af1"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "fd20a679-3f0d-87a8-9573-8b08bef6207d"
     - stage: horo
-      stageUuid: "2be0e0ee-e2ab-8c98-9796-e76dca8dd495"
+      stageUuid: "dc9bb071-5d8a-8bfa-bbd2-d513a4bd2b64"
     - stage: seal
       stageUuid: "71165a1d-9b0b-819b-8287-0db243548164"
     - stage: uuid
-      stageUuid: "2ef4bfd2-c9ff-853d-b3d0-33af51e8605b"
+      stageUuid: "85c9ea3f-d7c9-869a-9eda-d6d8190656dd"
 version: 2
 ---
 # currency/fallback — the blank currency as identity element

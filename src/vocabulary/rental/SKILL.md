@@ -2,11 +2,11 @@
 name: rental
 description: "Use when reasoning about rental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/rental"
-coordinate: "vocabulary/rental · 7/descent · c444ba1f"
-contentUuid: "e390b80a-fe8d-505b-bb08-9b37ffeac03e"
-diamondUuid: "f92c1a7c-e325-8836-bfd6-9c51c0048b7c"
-uuid: "c444ba1f-b73c-8e18-bd0d-b2e52c0e8c77"
-horo: 7
+coordinate: "vocabulary/rental · 5/round · 2429b08c"
+contentUuid: "1b1c2305-b16d-590e-a611-c9f434a7a2f1"
+diamondUuid: "a8490a3e-83fd-87fb-aeab-0ef8ef46fe73"
+uuid: "2429b08c-f6e7-88f2-ab16-a8acf0a20e82"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 36
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "31b5c8b0-340d-84e2-90b1-f756d514bb3e"
+  computationUuid: "e72eb532-3876-8c7f-b309-68e72f152bee"
   stages:
     - stage: path
       stageUuid: "e5defb05-86e8-852d-9e56-738c50cd9aba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "49adfc08-d1d1-85a1-bbd8-0be4bcd61c21"
     - stage: horo
-      stageUuid: "c5c613e3-ee89-8011-913d-010e3747ec1b"
+      stageUuid: "3b8214c3-6f0d-839d-bece-5ac1d36ebc2f"
     - stage: seal
       stageUuid: "bb720e1d-6f4e-8029-933a-63dfed146d49"
     - stage: uuid
-      stageUuid: "8666bb29-f30f-8f1b-87b1-f49c369a95a5"
+      stageUuid: "2e16e742-a62a-8556-887d-943b796e0e43"
 version: 2
 ---
 # rental

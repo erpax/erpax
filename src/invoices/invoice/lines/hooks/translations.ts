@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "25b11cfa-5413-8a29-b9ac-153b0e973a6d",
+    "uuid": "6db04bc1-daf9-811d-8cef-112abbde8da1",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — derives the header's amounts from the lines whenever a line changes, and moves the stock the line commits. normalises the line before either runs.",
-    "uuid": "772e5aa1-4c7a-87b6-a98e-07d70470ecd3",
+    "uuid": "1847d6d6-f489-8f22-8c6b-8036ff9f966b",
     "words": [
       "use",
       "when",

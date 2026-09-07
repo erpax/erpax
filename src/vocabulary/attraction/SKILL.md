@@ -2,11 +2,11 @@
 name: attraction
 description: "Use when reasoning about attraction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/attraction"
-coordinate: "vocabulary/attraction · 4/weave · 375a6029"
-contentUuid: "72574d6f-9328-51bd-9583-732f4940a718"
-diamondUuid: "89f1318c-4af2-8d4b-9c82-92fd0d37b661"
-uuid: "375a6029-6715-87af-8923-92cfec6b689c"
-horo: 4
+coordinate: "vocabulary/attraction · 5/round · a5a7a288"
+contentUuid: "4f59b135-455f-50f1-bbc4-3c92c3b6db56"
+diamondUuid: "064f3be2-c669-8aa3-91e5-ba6b9798ba58"
+uuid: "a5a7a288-0fc5-8f9e-a5e4-9b959877400e"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2b305d9b-e46c-8e7a-a2e2-04d91c3e1a46"
+  computationUuid: "3becb1c3-85a2-8a36-8b9c-8e62f201f434"
   stages:
     - stage: path
       stageUuid: "333fc6ea-5a21-837f-a51d-a28a3f007df7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a13cc369-7506-8c5e-befb-a7cb6b4fc576"
     - stage: horo
-      stageUuid: "11702e1b-7739-8015-9473-22cc2335932d"
+      stageUuid: "29d3fbf8-6f63-8455-8943-9fedb2a0fa8e"
     - stage: seal
       stageUuid: "e76e1ab1-9a16-897e-ba93-18081e83e2d4"
     - stage: uuid
-      stageUuid: "ca76f4e6-430d-83f2-a1c0-815329e39bc8"
+      stageUuid: "6f98d376-7e86-892f-9051-46af955dee78"
 version: 2
 ---
 # attraction

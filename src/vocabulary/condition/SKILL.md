@@ -2,10 +2,10 @@
 name: condition
 description: "Use when reasoning about condition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/condition"
-coordinate: "vocabulary/condition · 1/base · dcf552ce"
-contentUuid: "c287d553-711e-5878-901c-514ab3b69f8c"
-diamondUuid: "07c2c200-7422-862a-a2ae-a01b3584008b"
-uuid: "dcf552ce-1ea8-82f8-bf9d-195f3f6c76fe"
+coordinate: "vocabulary/condition · 1/base · 0abbf40c"
+contentUuid: "03eb00f3-3176-595e-bd3b-0a90ec38d1e4"
+diamondUuid: "a6a75e94-2774-8a4d-8a6e-6578df7a5f92"
+uuid: "0abbf40c-9f92-8bfa-983a-b59a23d9f234"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "219e2261-ea7c-8e90-992c-a461ba0faa84"
+  computationUuid: "6500bfda-f8ea-88d7-963d-6ef729190258"
   stages:
     - stage: path
       stageUuid: "e8c00146-93b4-8652-aec1-f749e70eec8a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "12f33b53-2ef1-846f-a043-d641dbdb8218"
     - stage: horo
-      stageUuid: "e8525a8f-4c5d-823e-b6f5-364a560a0dc3"
+      stageUuid: "5e1ce0f1-37ff-8423-96af-9b3bd6caee44"
     - stage: seal
       stageUuid: "59535b2b-9568-8e0b-8149-52bb6392d984"
     - stage: uuid
-      stageUuid: "137d7a31-d789-86b0-a137-531330a274a8"
+      stageUuid: "630aeba1-f2ad-8150-b823-6e734023bb0b"
 version: 2
 ---
 # condition

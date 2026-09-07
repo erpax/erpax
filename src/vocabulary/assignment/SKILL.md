@@ -2,18 +2,18 @@
 name: assignment
 description: "Use when a contract allows or restricts assignment — assignor, assignee, scope (full/partial), consent requirement (unreasonable withholding, notice), prohibited assigns, assumption of obligations."
 atomPath: "vocabulary/assignment"
-coordinate: "vocabulary/assignment · 4/weave · 4ea0a406"
-contentUuid: "b1945875-e2fc-5b0b-aeda-f390bb9b9cda"
-diamondUuid: "83bb637c-a928-8831-b7c6-6f69206c4d1a"
-uuid: "4ea0a406-451c-89c6-b398-8c0c747d5e1e"
-horo: 4
+coordinate: "vocabulary/assignment · 5/round · f482b323"
+contentUuid: "ce781df4-fff2-54ae-9fbc-5b49bbb1ffad"
+diamondUuid: "68db72b4-46de-8d3d-8210-9798c1215c5c"
+uuid: "f482b323-ed31-8d2c-be99-8e2e7236ce1b"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "30f1b31a-6a57-8af9-916e-676a249f5209"
+  computationUuid: "1298a545-21b6-8476-85c3-683357175675"
   stages:
     - stage: path
       stageUuid: "f76d53b8-6fd0-851f-9a0b-2c1ff579b497"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2bf9251c-44ac-8f94-b1c1-0e69be7d2a35"
     - stage: horo
-      stageUuid: "2323c67a-d570-8e6d-bd23-e3ef44485849"
+      stageUuid: "41700b10-ef2d-8943-929a-7d4750b3a591"
     - stage: seal
       stageUuid: "498cccb3-13dc-84eb-942b-57474e41e264"
     - stage: uuid
-      stageUuid: "5297ef93-f771-8104-abe7-91073130f593"
+      stageUuid: "2a8060ba-5a4e-83aa-9f4a-3b530614a8b1"
 version: 2
 ---
 # assignment

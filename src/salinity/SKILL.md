@@ -2,18 +2,18 @@
 name: salinity
 description: "Use when modelling soluble-salt buildup that degrades soil and stresses crops — salinity as electrical conductivity (ECe, dS/m) of the saturated-paste extract, with sodicity (ESP/SAR, excess sodium destroying structure) as its companion axis. A soil-degradation dimension orthogonal to N-P-K fertility; reclaimed by leaching and, for sodicity, gypsum."
 atomPath: salinity
-coordinate: "salinity · 2/share · 3f3d488f"
-contentUuid: "3039d9ea-26b5-5f5e-bd7b-e417b5d329db"
-diamondUuid: "9478a05c-6767-812f-a29a-149d84c15265"
-uuid: "3f3d488f-3040-85fa-9464-85816b2306b7"
-horo: 2
+coordinate: "salinity · 4/weave · 20d41de2"
+contentUuid: "316a587c-9c80-5035-ab3e-18c672cd5155"
+diamondUuid: "84cded49-0fb2-8eb1-8d91-c4f7e2e017c1"
+uuid: "20d41de2-b663-843d-afd5-8d562d85aa34"
+horo: 4
 typography:
   partition: salinity
   bondDegree: 26
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9db023f1-060f-8ae0-8d4b-90db08ccbc5a"
+  computationUuid: "336961dc-e263-850c-81c6-d1a2bbf1bc65"
   stages:
     - stage: path
       stageUuid: "fdddb4c6-6aeb-81f4-88e1-17b75a775563"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5d0b572e-1837-8383-a999-96d2ab36080f"
     - stage: horo
-      stageUuid: "73cc8462-9ab4-8b0e-8f1f-2d74e6e7e33b"
+      stageUuid: "bd7e5522-3867-8e10-aecc-983612d0c521"
     - stage: seal
       stageUuid: "f438b3ef-90ad-8f2b-941a-6a9fe5f2f2b2"
     - stage: uuid
-      stageUuid: "b95dfaea-6b2a-8488-8411-4fd70a1cb4d2"
+      stageUuid: "12289421-d2aa-8595-93bb-20deec51605d"
 version: 2
 ---
 # salinity — soluble-salt buildup that degrades soil and stresses crops

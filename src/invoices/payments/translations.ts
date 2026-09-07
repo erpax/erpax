@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "payments",
-    "uuid": "bb7e9f4a-50b5-81a4-8c61-4abdc7aa0153",
+    "uuid": "283a18f5-4640-8547-a028-b54f6ceebf02",
     "words": [
       "payments"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection.",
-    "uuid": "4eb94b77-1dbf-8c3d-9c26-acb0bb7fe417",
+    "uuid": "f1cca66d-004b-829c-b1d0-6f41432ce0bf",
     "words": [
       "use",
       "when",

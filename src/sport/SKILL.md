@@ -2,11 +2,11 @@
 name: sport
 description: Use when reasoning about sport — A type of sport (e.g. Baseball).
 atomPath: sport
-coordinate: "sport · 2/share · 28556144"
-contentUuid: "cce5f835-c3be-5845-84ca-8089335ab505"
-diamondUuid: "bd7e58ff-315d-8433-9c2a-7ebec6033263"
-uuid: "28556144-4f6a-882a-b3a1-ad46bbaf3845"
-horo: 2
+coordinate: "sport · 4/weave · 8ffd43e8"
+contentUuid: "8ab84a14-7376-5767-9078-474712d1c0f7"
+diamondUuid: "2a4457a9-fc4e-8923-ba1f-025f782c1193"
+uuid: "8ffd43e8-6da2-8a48-a052-8ac0961a9391"
+horo: 4
 typography:
   partition: sport
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d10d3509-c5bf-8958-a14d-511dfc86a84f"
+  computationUuid: "e5de0826-cef0-87be-9a04-84fce45751c5"
   stages:
     - stage: path
       stageUuid: "fc2c04b8-44dd-8bdf-ad5e-392ec711c0e3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bce40913-78d7-87cc-80e0-445e2701e8bf"
     - stage: horo
-      stageUuid: "b533d146-76ac-8708-be72-41a971fcc835"
+      stageUuid: "8ee96d61-794b-871a-8344-750bd6afcbdc"
     - stage: seal
       stageUuid: "18a93958-0ee9-8dd1-87e3-507b3249a184"
     - stage: uuid
-      stageUuid: "41f24fc9-48f4-8c62-86a0-b8cb5e19dd55"
+      stageUuid: "1b58d779-4b5c-8b9f-b877-43b41cde2c89"
 version: 2
 ---
 # sport

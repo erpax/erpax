@@ -2,18 +2,18 @@
 name: domain
 description: "Use when reasoning about domain — Four cracks in one session, and the same gap behind three of them:"
 atomPath: "rules/domain"
-coordinate: "rules/domain · 4/weave · 29413626"
-contentUuid: "a5decc36-ceca-523d-b2dc-1c3052a6b288"
-diamondUuid: "eafafd50-8246-879b-ae48-62ff72a8d69e"
-uuid: "29413626-0583-841b-9966-039ba68b9bd6"
-horo: 4
+coordinate: "rules/domain · 2/share · 6f2bc51d"
+contentUuid: "bff96035-f677-59aa-86c9-5c85696fd3b4"
+diamondUuid: "ca044fba-d9e3-8b34-8bb3-fdeb59e8e89a"
+uuid: "6f2bc51d-d96e-8252-8760-a71b68ef8d7b"
+horo: 2
 typography:
   partition: rules
   bondDegree: 69
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1b043dfa-246a-8b9d-9cc2-2219ac1227f3"
+  computationUuid: "fc31caa3-96e4-8b48-8a49-d2fd86431aa5"
   stages:
     - stage: path
       stageUuid: "c780e4eb-ff9c-87d1-a427-3daf6d1a71a3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "12b2d5a2-4ddb-8db3-a5c2-a886711e9dd9"
     - stage: horo
-      stageUuid: "a8d7e3f5-0030-8620-a7b6-b46d17ad92e2"
+      stageUuid: "8309d585-46a4-8604-a637-8c73c5b82d80"
     - stage: seal
       stageUuid: "915fdf74-b3bb-8053-99e6-6f89de4bcb43"
     - stage: uuid
-      stageUuid: "25586203-261e-80c5-8b25-88b4bed5e3af"
+      stageUuid: "8bd33e2a-6b82-87f4-ae0d-6fd1fac34ef8"
 version: 2
 ---
 # rules/domain — a law is enforced on the surfaces its checker reads, and nowhere else

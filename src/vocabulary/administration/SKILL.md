@@ -2,11 +2,11 @@
 name: administration
 description: "Use when reasoning about administration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/administration"
-coordinate: "vocabulary/administration · 5/round · 7f008da7"
-contentUuid: "f28bc82b-31ba-5420-8c65-fc4b73eb52ea"
-diamondUuid: "5a7d34f0-c5c5-8c12-8d00-54e8227d3499"
-uuid: "7f008da7-47df-8d45-a264-4d0f349f496c"
-horo: 5
+coordinate: "vocabulary/administration · 4/weave · 4d6266a2"
+contentUuid: "0c684c8a-a27b-5dfb-8be8-11fc4d079a1b"
+diamondUuid: "6210f538-3346-88b5-8058-195cac864fb2"
+uuid: "4d6266a2-d665-8362-acc8-cbd22df51b8f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "20be6d43-c6b2-890a-afb9-b54a320efe30"
+  computationUuid: "70475ca4-82ee-8a3c-98ac-4f34a436a6d2"
   stages:
     - stage: path
       stageUuid: "3bff007d-bbb7-846f-951b-1c9bf065599f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b665c656-c39c-8a1e-8252-4e0cf9ae37e6"
     - stage: horo
-      stageUuid: "4830989d-da5d-8cd6-a82f-e9f5b3ecffa0"
+      stageUuid: "f33a7a25-ce8e-8b47-a917-58401b182762"
     - stage: seal
       stageUuid: "5899f689-8597-8580-9efe-efcff2cc489e"
     - stage: uuid
-      stageUuid: "fae39507-8e39-8b53-aba2-274052ccb01b"
+      stageUuid: "7d532fcd-bc83-80c3-b699-9f8cd7a85b0d"
 version: 2
 ---
 # administration

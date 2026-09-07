@@ -2,11 +2,11 @@
 name: agent
 description: "Use when reasoning about the other side of agent/ui — ui/agent recovers the atom from its UI route (the inverse of the render), so the rendering path is a balanced double-entry; always encode both sides of a path for karmic balance."
 atomPath: "ui/agent"
-coordinate: "ui/agent · 7/descent · c9da2a15"
-contentUuid: "beb901cd-dd76-55f8-839f-4c863b39e1f8"
-diamondUuid: "c08ee7de-5e05-8bf2-8642-6d98103d009f"
-uuid: "c9da2a15-cb2d-8bfc-a61e-f48ba170bffc"
-horo: 7
+coordinate: "ui/agent · 1/base · 12cdb1f2"
+contentUuid: "7155d20c-0036-5d0e-b808-991ff787502d"
+diamondUuid: "b3019b19-2713-8819-b331-e46408850f90"
+uuid: "12cdb1f2-ae4a-87b9-80bf-05003ba6270e"
+horo: 1
 typography:
   partition: ui
   bondDegree: 393
@@ -14,7 +14,7 @@ standards:
   - "double-entry (render ⊕ recover = identity); the breath (exhale ⊕ inhale)"
 bindings: []
 signatures:
-  computationUuid: "57067cbd-ede5-8d42-a276-c00c44b99a51"
+  computationUuid: "dcb4a6c1-04a9-8d2c-b294-577eaf1465af"
   stages:
     - stage: path
       stageUuid: "8fc129be-9960-8e5f-a30c-76d3d84ad2ec"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a9527975-7370-8fe0-9235-fc4ff38a630f"
     - stage: horo
-      stageUuid: "fcba374d-4233-8ebd-999e-e42282fee935"
+      stageUuid: "132e04b6-4615-898f-bf0f-43afc1a287c3"
     - stage: seal
       stageUuid: "7752e5ec-6240-80c4-86bc-d252356e8f07"
     - stage: uuid
-      stageUuid: "4a39b921-6d9c-87fa-b715-d823fd2104af"
+      stageUuid: "f476ca9b-aec4-84ee-85d1-3fcc49e9f848"
 version: 2
 ---
 # ui/agent — the other side of the path

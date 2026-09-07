@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "catalog",
-    "uuid": "7d32c511-ad63-892c-a479-830a53e42323",
+    "uuid": "cf65e6d6-8622-8d43-a6c7-1676d7734e34",
     "words": [
       "catalog"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about catalog — A data catalog which contains this dataset.",
-    "uuid": "e905350d-392e-85a3-add7-d87741ed1da6",
+    "uuid": "556aa7d9-7626-85a5-8f0d-a934a540c773",
     "words": [
       "use",
       "when",

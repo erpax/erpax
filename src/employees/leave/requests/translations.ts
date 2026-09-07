@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "requests",
-    "uuid": "bcc31c06-baea-82cb-b9fb-a06d0962734a",
+    "uuid": "ecb09e8f-58bd-8b81-813a-807365e70980",
     "words": [
       "requests"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register.",
-    "uuid": "354e6ed4-48db-849e-ac7e-0125ace59364",
+    "uuid": "2fcf74af-43e1-8fef-be55-605dd258b132",
     "words": [
       "use",
       "when",

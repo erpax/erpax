@@ -2,18 +2,18 @@
 name: pruning
 description: "Use when plant parts are removed to steer growth, airflow, and fruiting — pruning and suckering (pinching axillary shoots) concentrate the plant's energy into marketable fruit, open the canopy to reduce disease, and shape it to the trellis. Removing growth to improve what remains; the quality/airflow lever on indeterminate fruiting crops."
 atomPath: "vocabulary/pruning"
-coordinate: "vocabulary/pruning · 4/weave · 959941e3"
-contentUuid: "7e4d2461-e927-5ed0-891c-deb1c20415df"
-diamondUuid: "3d459920-5e4b-8a7b-901e-5efe127a2f29"
-uuid: "959941e3-f957-8f20-8b89-75513999ddda"
-horo: 4
+coordinate: "vocabulary/pruning · 1/base · 8b9c850c"
+contentUuid: "fffc318d-ec4a-5e7c-bdc6-027287c7fb78"
+diamondUuid: "ce50f9ca-8e09-8ad5-9d31-fff43758fc9b"
+uuid: "8b9c850c-4036-84ae-a07c-d9b33a530556"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 31
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fff27417-f16f-81ca-8983-21e3e35e2e5f"
+  computationUuid: "3c2672e8-5d41-8b11-8cf4-8e8cd73d0fe8"
   stages:
     - stage: path
       stageUuid: "3629f71b-ca41-8873-9507-d21dfe4ec264"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "44be9cac-a9f2-8671-9d2a-e9104d943698"
     - stage: horo
-      stageUuid: "19cba8c5-a1a4-8bfd-ba29-b58db41bc1ea"
+      stageUuid: "b1a962cc-363b-8f64-9f0a-cf8b7036fc0f"
     - stage: seal
       stageUuid: "5588ffc8-5cc5-80e9-836b-08f68ea28bad"
     - stage: uuid
-      stageUuid: "55663172-a609-8b5e-80c4-97cd2df1e9b7"
+      stageUuid: "3dba6a55-e882-86fb-9eaa-8a2b306886db"
 version: 2
 ---
 # pruning — removing growth to steer the plant

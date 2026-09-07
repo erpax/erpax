@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "canonical",
-    "uuid": "018b73f6-bd73-826d-8528-aae72a20b26f",
+    "uuid": "5418869f-5d59-84a8-b51a-cd8859260a9b",
     "words": [
       "canonical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that an installed package is actually used through its own API — a dependency in package.json whose exports are never called in src is dead weight or a hand-roll waiting to happen. Export names are READ from the package (r2Storage is not derivable from @payloadcms/storage-r2), never guessed from the dep name; an import alone is not use, the call site is the evidence. Run: tsx src/rules/canonical/index.ts",
-    "uuid": "57185770-f4a1-8589-a792-5bd4c1c50c26",
+    "uuid": "a8e096b7-779c-83e7-87b3-68aaaf4612c1",
     "words": [
       "use",
       "when",

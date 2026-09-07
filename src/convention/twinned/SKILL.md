@@ -2,10 +2,10 @@
 name: twinned
 description: "Use when checking whether every antimatter names its matter — the computed convention that each SKILL.md's `Matter-twin:` line points to a real index.ts, measured live as coverage = pointing / total over the real tree."
 atomPath: "convention/twinned"
-coordinate: "convention/twinned · 8/crest · c06b65aa"
-contentUuid: "3c666ecc-6716-5cc3-b9eb-824aeb01c38a"
-diamondUuid: "6fb57448-5b06-8668-8ada-a24808089035"
-uuid: "c06b65aa-ec07-8673-81b5-6c8da4465f87"
+coordinate: "convention/twinned · 8/crest · 7d177ca2"
+contentUuid: "11b613bc-f601-5bfd-9cca-7b5f9b813a1b"
+diamondUuid: "eb3965f9-3902-8a24-83bb-9bf4f5af4747"
+uuid: "7d177ca2-fea4-8ef9-a599-6e9d169fc3d3"
 horo: 8
 typography:
   partition: convention
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fc4f7cd0-a5cb-89bf-a6e3-9a9e7db97294"
+  computationUuid: "e1cecf05-4468-808d-ba8e-6d4d9e388eed"
   stages:
     - stage: path
       stageUuid: "5f9494c6-b4f4-8bbd-8670-fc68043ab08c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d08a2286-4d63-803c-8016-b2b09f66a04c"
     - stage: horo
-      stageUuid: "f0a5b109-9a62-89cd-ab1e-1931adb82414"
+      stageUuid: "03cd1499-e02d-8e1a-a665-62bb1aec56b3"
     - stage: seal
       stageUuid: "393e988f-b7fe-8124-8486-a5923767f8f0"
     - stage: uuid
-      stageUuid: "df179d92-04e6-802c-a456-00e4d9c46c76"
+      stageUuid: "92cdec20-bff9-8272-9691-76752b95d33c"
 version: 2
 ---
 # convention/twinned — every `Matter-twin:` line points to a real index.ts

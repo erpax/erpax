@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "divisor",
-    "uuid": "9862f5f6-11ce-8c8f-b223-037fa450a934",
+    "uuid": "11e77072-52e0-8eeb-be66-cc5014b797de",
     "words": [
       "divisor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the 432 anchor's structure must be exact — the divisor lattice C5×C4 (20 divisors) and its self-dual inversion φ(d)=432/d, where every divisor-fraction d/432 reduces to the unit fraction 1/φ(d), verified to the bit by integer arithmetic.",
-    "uuid": "0ac8d646-f574-8c25-888d-173c28d26de4",
+    "uuid": "2a795647-5445-8c93-8dae-8fefb731ca93",
     "words": [
       "use",
       "when",

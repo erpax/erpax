@@ -2,11 +2,11 @@
 name: podcast
 description: "Use when reasoning about podcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/podcast"
-coordinate: "vocabulary/podcast · 5/round · d506a362"
-contentUuid: "f5036916-5ca6-50ee-a6e4-f52dbc7c8e3d"
-diamondUuid: "e984ba6b-1c09-8d2f-ad85-74a1b2728229"
-uuid: "d506a362-f8ea-8d54-9891-1786ff10182b"
-horo: 5
+coordinate: "vocabulary/podcast · 2/share · c6d9d76c"
+contentUuid: "9a7a16b0-ae7d-5a60-8903-887713ee7ea8"
+diamondUuid: "02125c54-29d9-8a09-a3ea-930bdc8dc10a"
+uuid: "c6d9d76c-c40f-82c7-81ab-b5f8d89da96e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "43fed41f-68d3-88db-b33d-363bebd44b3a"
+  computationUuid: "80f875c6-6b4d-8940-bee3-56a508fe38fc"
   stages:
     - stage: path
       stageUuid: "93badba0-3575-8392-afcb-2874d00dd03f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ad186d13-dd5c-815c-ae70-1fad3daa06be"
     - stage: horo
-      stageUuid: "3920fbe2-7b1c-86ae-a1b8-3aae25c2e465"
+      stageUuid: "39de815a-e89e-8724-8db1-469ddc871867"
     - stage: seal
       stageUuid: "db51b962-3f45-8d5c-b09d-8be47473c4f8"
     - stage: uuid
-      stageUuid: "acf619e0-f84a-82d5-944e-4c165b52b847"
+      stageUuid: "1d8e9233-9d02-8b59-8414-a77123396a15"
 version: 2
 ---
 # podcast

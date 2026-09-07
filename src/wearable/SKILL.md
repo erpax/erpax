@@ -2,10 +2,10 @@
 name: wearable
 description: "Use when reasoning about wearable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: wearable
-coordinate: "wearable · 4/weave · 8f28cecb"
-contentUuid: "db002963-e863-5dba-916f-0bcc7a4f3b8d"
-diamondUuid: "a615bb73-33e0-843b-aebe-f34ae95b20a5"
-uuid: "8f28cecb-9c3b-8241-85aa-190a5ed23602"
+coordinate: "wearable · 4/weave · 92cab136"
+contentUuid: "0bfc4045-bf91-5f64-b6f8-99167589ef72"
+diamondUuid: "8dcb66bd-b90a-831e-89bb-3a91c7c816ff"
+uuid: "92cab136-c0a0-873e-bf17-3fd5e98fdb51"
 horo: 4
 typography:
   partition: wearable
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7b0b569d-f53e-8388-ad73-8b210d059bf5"
+  computationUuid: "87c525fe-2ffd-8926-a7ae-2c3fb1b2f977"
   stages:
     - stage: path
       stageUuid: "8270aca7-de5d-8000-a72d-3b4be67b20f9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b573596e-d7a9-815e-b8d7-aa8f93699754"
     - stage: horo
-      stageUuid: "920ec86e-48c0-8162-be9a-db9dbd46a5c2"
+      stageUuid: "634596a0-6b41-8a71-a2c0-33adb4577c41"
     - stage: seal
       stageUuid: "59452751-cdb4-8752-9fc3-963c64cd9290"
     - stage: uuid
-      stageUuid: "a852b986-d60d-8ab1-aadc-d36c87646bce"
+      stageUuid: "956d9582-4493-8012-892d-95c7823e82a7"
 version: 2
 ---
 # wearable

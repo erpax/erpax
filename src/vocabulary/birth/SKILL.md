@@ -2,11 +2,11 @@
 name: birth
 description: "Use when reasoning about birth as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/birth"
-coordinate: "vocabulary/birth · 1/base · 4770bf25"
-contentUuid: "4cd498b7-e0d4-5eb9-af5c-2e74d5d88835"
-diamondUuid: "046c7a95-b4f6-8692-9569-fd225aa5267b"
-uuid: "4770bf25-8f4c-8bc0-acc3-21225f68b753"
-horo: 1
+coordinate: "vocabulary/birth · 4/weave · 8fa480ee"
+contentUuid: "949ccf38-b572-5d74-b1a9-10f2c542d09e"
+diamondUuid: "e5a8b56e-0bc9-807e-8f66-07276800eff6"
+uuid: "8fa480ee-620b-803a-acef-63338f9f03c4"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "870cee09-3075-81e1-a34a-8eba53c072dc"
+  computationUuid: "8fcab58e-e4d3-89d4-8aad-bc16d18d1864"
   stages:
     - stage: path
       stageUuid: "425ba27a-7639-88ec-af9f-c0070b478df7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e6d394f4-703e-8305-a828-1f3e1714ca72"
     - stage: horo
-      stageUuid: "bf2b8e1a-9e9a-8df2-a322-569a41db8655"
+      stageUuid: "eef88080-e129-8406-a9ff-bc60b1a5c653"
     - stage: seal
       stageUuid: "6726c64e-fce9-83d9-b21d-9696be688b74"
     - stage: uuid
-      stageUuid: "e5347e3d-3a38-85d1-a46f-4299ff5e5c36"
+      stageUuid: "159a9575-05d1-800b-8b96-c0cc47cd0ccc"
 version: 2
 ---
 # birth

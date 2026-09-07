@@ -2,10 +2,10 @@
 name: purchase
 description: "Use when reasoning about purchase as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/purchase"
-coordinate: "vocabulary/purchase · 1/base · 3df9a55c"
-contentUuid: "fc374cb2-a802-5d82-b3f8-85cc79e3aa98"
-diamondUuid: "78f464e4-d80e-8ed3-8184-b1ac1eb51e9a"
-uuid: "3df9a55c-e29a-8fd8-b51c-20ab7d2f373b"
+coordinate: "vocabulary/purchase · 1/base · c21f526b"
+contentUuid: "d3a594bd-eec9-536f-89e7-8a6380f7263e"
+diamondUuid: "4a635b1e-7f11-80d5-a634-6c236aeb534c"
+uuid: "c21f526b-036a-8a39-8209-f768a63b425b"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fa7714c7-f948-8990-80ce-d5ae291f4221"
+  computationUuid: "0fb1d7c6-5cad-804f-b128-6511cec26a43"
   stages:
     - stage: path
       stageUuid: "f6df9d8a-13e7-8e37-8989-0c7ccb315393"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b9855411-a786-8c65-ab08-1e752ad59008"
     - stage: horo
-      stageUuid: "89f6f78b-cd08-8bd0-b8db-f90719e04aa9"
+      stageUuid: "0e9c205d-8e4b-84d9-97e2-b8fddfc1d468"
     - stage: seal
       stageUuid: "04394168-d7ed-8152-9b7c-f8e75c6b8b3b"
     - stage: uuid
-      stageUuid: "5deecb3d-d164-8068-a039-e1681a26153c"
+      stageUuid: "fdd2f40c-28f5-8362-b8f1-41aeee4073a7"
 version: 2
 ---
 # purchase

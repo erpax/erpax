@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "batches",
-    "uuid": "9ca59d05-82fb-830b-8846-f43a18aed739",
+    "uuid": "c26f6990-be9c-8e5d-8217-6c2f7aa17a05",
     "words": [
       "batches"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating or tracing a lot/batch of material or product — GS1 AI(10) lot number, manufacture/expiry dates, quality status, parentBatches genealogy for EU 178/2002 one-step-back recall, pharma/automotive traceability. The batches collection.",
-    "uuid": "a45d991c-eaa6-80c3-a1c6-0cfbd293109c",
+    "uuid": "d1a0740c-1eea-825b-82a5-d2f44cdeeca9",
     "words": [
       "use",
       "when",

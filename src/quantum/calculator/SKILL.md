@@ -2,10 +2,10 @@
 name: calculator
 description: "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable."
 atomPath: "quantum/calculator"
-coordinate: "quantum/calculator · 1/base · 88b70a97"
-contentUuid: "9da173dd-eb8e-5e52-8954-c2b780f4b467"
-diamondUuid: "aec62a34-853a-84ce-a4dc-11d9edbed678"
-uuid: "88b70a97-155f-85f1-95f4-9cfbc62bab20"
+coordinate: "quantum/calculator · 1/base · c4a9d70b"
+contentUuid: "6ae4d3d0-cbcc-52e0-8148-0d2bbfb07867"
+diamondUuid: "fa4b86ed-81f4-894f-a61c-de29ab555f2e"
+uuid: "c4a9d70b-5637-8ad5-8fbd-342830e0078c"
 horo: 1
 typography:
   partition: quantum
@@ -15,7 +15,7 @@ standards:
   - "the digital-root / mod-9 group (rodin)"
 bindings: []
 signatures:
-  computationUuid: "ecca2897-e73b-82e2-8022-3b132ae5a55a"
+  computationUuid: "acbe6be1-7ced-867a-af03-02d09af5e2a2"
   stages:
     - stage: path
       stageUuid: "7bdd17a9-5dfc-89ea-9a81-b998284c6969"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "5100f030-fb79-850f-b75b-0bd145ee80f0"
     - stage: horo
-      stageUuid: "972380ae-4c1a-8414-8e1d-0f5fce2e7f83"
+      stageUuid: "3e543793-668c-8ac8-8f76-72ca8b41d089"
     - stage: seal
       stageUuid: "0ed7c9fb-c881-8913-bbc2-4f2dd610f629"
     - stage: uuid
-      stageUuid: "1e54aa11-c49e-8609-8714-4a5efb78781a"
+      stageUuid: "23c77d36-e165-834e-acf0-d81b71e090a7"
 quantum:
   superposition:
     - calculator
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "ecca2897-e73b-82e2-8022-3b132ae5a55a"
-    contentUuid: "9da173dd-eb8e-5e52-8954-c2b780f4b467"
+    computationUuid: "acbe6be1-7ced-867a-af03-02d09af5e2a2"
+    contentUuid: "6ae4d3d0-cbcc-52e0-8148-0d2bbfb07867"
 version: 2
 ---
 # quantum/calculator — the mod-9 calculator
@@ -65,4 +65,4 @@ Matter-twin: `src/quantum/calculator/index.ts` (`add` · `mul` · `fold`). Compo
 
 @standard the digital-root / mod-9 group (rodin)
 
-<sub>content-uuid `9da173dd-eb8e-5e52-8954-c2b780f4b467` · account `quantum/calculator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `6ae4d3d0-cbcc-52e0-8148-0d2bbfb07867` · account `quantum/calculator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

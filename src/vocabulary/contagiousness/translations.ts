@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contagiousness",
-    "uuid": "37e604bd-724c-87ff-8631-f99176843f78",
+    "uuid": "b7c94dd4-6b4e-86c1-ad16-3495af618add",
     "words": [
       "contagiousness"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about contagiousness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "f47c529c-1b3d-8e20-ac08-47bebd654943",
+    "uuid": "96da73cc-6098-8322-ac38-bd191f001890",
     "words": [
       "use",
       "when",

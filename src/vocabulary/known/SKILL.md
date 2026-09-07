@@ -2,11 +2,11 @@
 name: known
 description: "Use when reasoning about known as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/known"
-coordinate: "vocabulary/known · 1/base · 98b6395d"
-contentUuid: "08f29022-7ccc-5903-8f35-8ca291635283"
-diamondUuid: "386b44bc-2b3b-8854-85bf-45eccecb700d"
-uuid: "98b6395d-febe-8ca5-8284-b165e47da0ae"
-horo: 1
+coordinate: "vocabulary/known · 2/share · 7af68339"
+contentUuid: "157e3e83-a6a5-56f1-8423-fde1058d1450"
+diamondUuid: "3572def1-d93c-8df6-8929-a42968deaf12"
+uuid: "7af68339-f5da-86b9-a0d1-37be44d280f7"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d93b5d81-9990-84e8-8154-cb3e1bceebbe"
+  computationUuid: "23228e3b-9406-835d-9890-7c6518a18e40"
   stages:
     - stage: path
       stageUuid: "53ae9960-ec7b-8004-992d-9c4322d520d6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2a64ceac-7e7e-84c9-9720-5fe5a3a8acc3"
     - stage: horo
-      stageUuid: "3fe9d2cc-f243-81b0-ab35-156fbbdb8824"
+      stageUuid: "d8695149-1d2e-8f5a-a3bc-44b5f697c171"
     - stage: seal
       stageUuid: "b06a71ce-2b6d-8704-809e-aa347639fb5d"
     - stage: uuid
-      stageUuid: "f5d6a1a6-3876-8abd-ba70-79992a54395f"
+      stageUuid: "2f9b457c-f83b-8ae7-a45c-a16e15aefc48"
 version: 2
 ---
 # known

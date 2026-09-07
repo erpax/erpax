@@ -2,10 +2,10 @@
 name: scope
 description: "Use when reasoning about scope as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scope
-coordinate: "scope · 8/crest · 956c0483"
-contentUuid: "cfd38e1f-c6aa-57af-923c-9c0a7bc4508c"
-diamondUuid: "9f93d38e-fa94-8901-af62-bfae0259b4e0"
-uuid: "956c0483-3016-869a-94b5-76707920d976"
+coordinate: "scope · 8/crest · a5e31f41"
+contentUuid: "8709bd69-4c14-5694-9088-50555f5b79b4"
+diamondUuid: "5922b505-d5e9-827d-bb71-8123af9abe0f"
+uuid: "a5e31f41-c8d5-887f-bc71-c7ee07bf1dfa"
 horo: 8
 typography:
   partition: scope
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "efb888a8-64fb-8304-8a79-f23f45ce7a1f"
+  computationUuid: "ee5c5661-6ab7-88fc-80cb-f8e2c44939bb"
   stages:
     - stage: path
       stageUuid: "6a1efb00-f77e-8d55-a22c-daf1a59f8456"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "eb31b0ca-c355-8784-a6e5-ffacc193e689"
     - stage: horo
-      stageUuid: "ee16f831-f8a2-807a-8930-e3b5bcfa0f22"
+      stageUuid: "549a630a-cef0-8cd4-9347-dc3fbc0818ae"
     - stage: seal
       stageUuid: "e7d11dbc-d4e7-8f21-9395-71b79973ebe5"
     - stage: uuid
-      stageUuid: "aa76baa4-a846-8071-9729-44582c7f05f9"
+      stageUuid: "cf3f5ae4-1c5b-89fb-bc1b-6e144afae04c"
 version: 2
 ---
 # scope

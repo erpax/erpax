@@ -2,11 +2,11 @@
 name: crosses
 description: "Use when reasoning about crosses as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/crosses"
-coordinate: "vocabulary/crosses · 2/share · 16ba02af"
-contentUuid: "36da5dd4-4799-56b7-8423-229f58613010"
-diamondUuid: "6b24762c-db9e-8be9-9d56-3b93a10a635e"
-uuid: "16ba02af-ce6d-8b24-9e2e-8d459b93282c"
-horo: 2
+coordinate: "vocabulary/crosses · 7/descent · fe46dbab"
+contentUuid: "76e3b17a-bbcb-55d3-896c-3d03684563be"
+diamondUuid: "d60d1216-4bbf-8e6f-b090-db728bd324ff"
+uuid: "fe46dbab-dca3-8f8d-aae1-c366405d2412"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "629a17eb-58fd-89a5-b3dc-66d0e325a79b"
+  computationUuid: "c46b0d15-6ba9-8bee-9bbc-2644dab930a5"
   stages:
     - stage: path
       stageUuid: "59064da6-da80-8c8b-a1ff-bd73230509e9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1dc281e9-5a46-82db-a97b-f71142aab814"
     - stage: horo
-      stageUuid: "d4fde8e4-e348-846e-bdd6-867c441f92bf"
+      stageUuid: "0d29ec4a-3a05-8d5a-b2ac-acf232fe72ff"
     - stage: seal
       stageUuid: "e4488d47-45b0-85e8-8501-5f0d48bc42f1"
     - stage: uuid
-      stageUuid: "4a6038f8-29be-8d6d-b755-2bcf4c22d434"
+      stageUuid: "cf0df6df-b94c-80e3-bfc1-ff5662973c3f"
 version: 2
 ---
 # crosses

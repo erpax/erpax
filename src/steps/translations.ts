@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "steps",
-    "uuid": "736cc40e-b929-8045-9823-42ba8b35e3aa",
+    "uuid": "ae287f66-7c5d-8509-a4f8-3d838e4e5f1f",
     "words": [
       "steps"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about steps — A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed 'steps'; 'step' is preferred).",
-    "uuid": "2d9fecd8-7658-8abc-8701-60edcb56017d",
+    "uuid": "9db57a12-c99c-8738-8fd2-2a0c143076f6",
     "words": [
       "use",
       "when",

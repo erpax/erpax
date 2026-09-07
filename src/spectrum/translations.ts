@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "spectrum",
-    "uuid": "56fe9a59-8a8c-851c-bace-e21161eaf714",
+    "uuid": "991740f9-1f21-8d19-832d-c00fbfe649b7",
     "words": [
       "spectrum"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the spectrum — the finite, discrete set of lines a system can emit or absorb, computed from every leap between the seven horo energy-rungs and deduplicated to its distinct gap-frequencies. The spectrum is the system's fingerprint and a discrete sampling of the continuous aura; it is where the wave shows it is quantised. Each line is the symmetric binding of its two rungs (one coordinate for emission and absorption alike).",
-    "uuid": "03612f63-a0f4-86ee-8790-65d0d8a487e3",
+    "uuid": "37edcab8-bdf8-837f-8e96-6dc8ecc5d082",
     "words": [
       "use",
       "when",

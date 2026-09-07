@@ -2,11 +2,11 @@
 name: question
 description: "Use when reasoning about question — A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document."
 atomPath: "vocabulary/question"
-coordinate: "vocabulary/question · 4/weave · aeb8e1b3"
-contentUuid: "7d9909dd-48b2-548b-bda2-edb9b2880736"
-diamondUuid: "104949a8-da5e-8367-b5e6-7c9f7cb8e2e2"
-uuid: "aeb8e1b3-bd05-8ee6-a208-7f1a5c601b6e"
-horo: 4
+coordinate: "vocabulary/question · 1/base · 6fec57cd"
+contentUuid: "41cbeae4-eda7-52ed-b697-3b8eb272cb23"
+diamondUuid: "4a5da819-4cfc-80bd-86d4-6fcde5063b4b"
+uuid: "6fec57cd-e2cd-8fc4-a511-9ec5e5671ef8"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6e83d81c-ad0a-8fcb-8f48-80998ee6b3d5"
+  computationUuid: "c17abf28-d41a-8313-8806-ba6422306f14"
   stages:
     - stage: path
       stageUuid: "438e0ca7-e5a0-89fb-a3b1-839992208b55"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "73d7460d-15d3-8b00-98f3-b8c0234ac4ef"
     - stage: horo
-      stageUuid: "4eeb0d1f-b9ab-8068-91ef-f226822ad6f1"
+      stageUuid: "2ddd00e1-d371-8b30-a644-e92cc05f5a59"
     - stage: seal
       stageUuid: "0812ae26-ff41-8393-aabd-bd8e4f5033f3"
     - stage: uuid
-      stageUuid: "6d39b959-d1eb-8812-906c-df1d7d3e31e6"
+      stageUuid: "17330735-382f-8a68-a4ab-e13826a97f79"
 version: 2
 ---
 # question

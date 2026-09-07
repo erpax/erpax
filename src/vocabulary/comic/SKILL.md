@@ -2,11 +2,11 @@
 name: comic
 description: "Use when reasoning about comic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/comic"
-coordinate: "vocabulary/comic · 2/share · c25ca336"
-contentUuid: "b73978f1-a5db-5654-bd82-3965f85cc6d7"
-diamondUuid: "cbe4cda2-4302-8289-a382-23e2baad2f90"
-uuid: "c25ca336-57f2-8bcc-8fc1-3e630178a193"
-horo: 2
+coordinate: "vocabulary/comic · 4/weave · 702cf471"
+contentUuid: "8b8e0752-e908-5f6c-a0ac-a81ca30ecb87"
+diamondUuid: "49187f85-d3dc-82aa-9351-600919b31c79"
+uuid: "702cf471-c0f9-81e6-8466-7fecfebf0908"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 32
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e0d111c1-8d60-8656-b375-8526fc72e56c"
+  computationUuid: "72a734fe-751c-8a7f-a34d-5fdc1e4cb7d2"
   stages:
     - stage: path
       stageUuid: "78e93be6-10a5-8cfa-8c1a-8b8d6d7badfc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b3131a14-5291-8406-a279-b4c2292b70cc"
     - stage: horo
-      stageUuid: "3bdb2ae7-d3e4-8666-90bc-0404988b8903"
+      stageUuid: "5e2a81f0-9626-883c-b644-922f5767bea3"
     - stage: seal
       stageUuid: "26364694-a4c0-8935-b9b5-30f5298b83c4"
     - stage: uuid
-      stageUuid: "82152d80-0299-8cd1-a978-2f7dfdcb8b0e"
+      stageUuid: "d9406476-c6c4-85c2-be53-58677e6803e3"
 version: 2
 ---
 # comic

@@ -2,11 +2,11 @@
 name: gym
 description: "Use when reasoning about gym as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gym"
-coordinate: "vocabulary/gym · 2/share · 8aa70ded"
-contentUuid: "48a75d3c-48b6-5925-a061-581b572dbb13"
-diamondUuid: "b56d3f47-d69c-88af-a1f1-1f2544e283ef"
-uuid: "8aa70ded-8487-8fa2-a6f4-3b885c71d39d"
-horo: 2
+coordinate: "vocabulary/gym · 1/base · 3f20c8ad"
+contentUuid: "eee1b5ca-5017-5a7d-a5d0-40bae6307797"
+diamondUuid: "42692672-4324-809b-936c-e91ee2349c27"
+uuid: "3f20c8ad-bac1-8b0b-abea-01eca00d0f6f"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "045e6dae-c7fb-8f7c-83db-9e7ad268b92d"
+  computationUuid: "73f351de-08cf-869d-b1a7-5f9c76391532"
   stages:
     - stage: path
       stageUuid: "f679a68d-2db8-88a5-ab4e-322bcf987538"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "07c7eb99-a523-8aed-a907-a267a776ff62"
     - stage: horo
-      stageUuid: "b94dc082-05d7-8563-b4c2-c213b4a34efa"
+      stageUuid: "6919fd50-a18b-8882-8cd2-8e5746f1c8e6"
     - stage: seal
       stageUuid: "694647fa-b89a-8022-af8b-183df1fe9395"
     - stage: uuid
-      stageUuid: "e4bc802e-2a11-8e77-84d8-a66aa3f65a36"
+      stageUuid: "8169c8bc-5479-8768-8449-bb7f9e5ed651"
 version: 2
 ---
 # gym

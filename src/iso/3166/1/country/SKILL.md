@@ -2,10 +2,10 @@
 name: country
 description: "Use when reasoning about country — holds a canonical bundle per country and returns the one for an alpha-2 code: its holidays, its VAT treatment, its bank-statement and invoice formats, its signing profile."
 atomPath: "iso/3166/1/country"
-coordinate: "iso/3166/1/country · 5/round · ce2ad736"
-contentUuid: "ce889146-5216-5f27-bcaa-2e71cc9fe852"
-diamondUuid: "402eee9e-6bc6-8b60-a676-2d17adf97a66"
-uuid: "ce2ad736-f683-8127-be2a-6e974f1e22fb"
+coordinate: "iso/3166/1/country · 5/round · dd8cfb14"
+contentUuid: "42828f0e-206d-5d60-bba8-aa6206648f63"
+diamondUuid: "cd11cc52-d33c-856a-ae83-25e575bd65f4"
+uuid: "dd8cfb14-5544-8db8-b6aa-a97db60724b2"
 horo: 5
 typography:
   partition: iso
@@ -16,7 +16,7 @@ standards:
   - "Peppol-BIS-3.0"
 bindings: []
 signatures:
-  computationUuid: "753dcc70-ac88-895f-8e71-1247dd33fda8"
+  computationUuid: "7b7654b8-e7fe-8a9a-87db-5e620e634faf"
   stages:
     - stage: path
       stageUuid: "693914f4-ed29-8973-9b6c-fcbddd6993bc"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "300108cf-02ef-8dd8-83c0-b0a6a4caa1fc"
     - stage: horo
-      stageUuid: "24472842-70ea-8d90-b9c7-7bbc3e620426"
+      stageUuid: "8fee7df4-1738-8e10-a6df-57aacc0934c1"
     - stage: seal
       stageUuid: "f976d4fd-3ce7-89e6-8b41-003ce76a716f"
     - stage: uuid
-      stageUuid: "791c917d-24db-8632-b46d-a64c10a7c0aa"
+      stageUuid: "e02eafc0-082a-86ea-a843-4c4e98dd5922"
 version: 2
 ---
 # iso/3166/1/country — a country is a bundle of decisions, fetched by its code

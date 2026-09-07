@@ -2,18 +2,18 @@
 name: diffusion
 description: "Use when reasoning about HOW a small market becomes big over time — the time-axis the static market product is missing. Adoption spreads as a contagion (Bass: rate = (p + q·F)·(1−F)·m; word-of-mouth q≈0.38 far exceeds advertising p≈0.03), filling the adopter sequence innovators → early-adopters → majority → laggards. Trendsetters are the seed the imitation engine amplifies; the chasm is where that engine stalls and most small markets stay small."
 atomPath: "vocabulary/diffusion"
-coordinate: "vocabulary/diffusion · 8/crest · 61c6cd6d"
-contentUuid: "9b6d230d-83b5-5414-b5fa-971cf2a81b55"
-diamondUuid: "f21d5b9d-3c9c-87ce-b585-232590e6c58c"
-uuid: "61c6cd6d-aa7c-8fd4-9eef-cb1e773a8c54"
-horo: 8
+coordinate: "vocabulary/diffusion · 1/base · a749a05a"
+contentUuid: "2c0862db-9e88-506c-8698-ff69adfffec1"
+diamondUuid: "c6b18fde-bc3b-888a-8a9e-a1f47baad1c7"
+uuid: "a749a05a-1db0-873e-805c-d912e76ee074"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 52
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ad59d41e-9ccb-8c40-b89b-56b2d3d75510"
+  computationUuid: "cccf6dd3-d49b-8b01-85c3-44830b035ad1"
   stages:
     - stage: path
       stageUuid: "1ac3d2f6-6ca6-83ac-9f02-e5a326723178"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9702f09a-9167-8309-82c9-79d3eb00d2a6"
     - stage: horo
-      stageUuid: "fd773651-cba1-8565-98c8-94398cd78130"
+      stageUuid: "15ca487f-fe2f-8fed-b27a-1abb2ab50bcd"
     - stage: seal
       stageUuid: "b98c3ff1-6d6b-8094-832c-1d9280d75d93"
     - stage: uuid
-      stageUuid: "8f1a5a4a-265b-8e94-ad87-7ff5cdc655f2"
+      stageUuid: "fdbd4539-d248-8470-890c-7be7f4f987ec"
 version: 2
 ---
 # diffusion — how a market fills over time (the dynamic the product law is missing)

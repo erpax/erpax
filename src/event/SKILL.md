@@ -2,11 +2,11 @@
 name: event
 description: "Use when reasoning about event — A domain **event** is the matter that crosses the hooks seam: a collection's hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, noti"
 atomPath: event
-coordinate: "event · 2/share · 6537c04b"
-contentUuid: "690fc851-1578-5c20-9d07-7ba5cab0f6ce"
-diamondUuid: "08e683ac-9cb5-8e7f-8d10-a2bc5ab388e2"
-uuid: "6537c04b-e163-8486-b3c6-a0b7772909a3"
-horo: 2
+coordinate: "event · 1/base · 5367adee"
+contentUuid: "baf2e6c5-55ca-548a-8865-75bcec789f8f"
+diamondUuid: "e24f4bf9-5513-89ff-bf75-9c511614ab18"
+uuid: "5367adee-a7b1-811b-a330-b25b359c3545"
+horo: 1
 typography:
   partition: event
   bondDegree: 159
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "623bd7ee-d518-8b46-80fa-9bd397c6da8f"
+  computationUuid: "b976be20-3649-8290-ba96-fbbb737669d9"
   stages:
     - stage: path
       stageUuid: "0e27f2e5-b2cd-8864-bfb3-cd85b8e484e3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "53d1601d-fb16-8e8a-8a1e-20606f84b737"
     - stage: horo
-      stageUuid: "9e742ea0-24f5-84dc-aeb7-a7a32c68fb67"
+      stageUuid: "bdb360db-0659-822d-8eab-f0663d077330"
     - stage: seal
       stageUuid: "c3baa5c0-4275-889a-a370-17c7d074822c"
     - stage: uuid
-      stageUuid: "87e4afde-a814-822f-8676-8071986751c3"
+      stageUuid: "ac4407ab-1fa9-87ee-a919-87155027c916"
 version: 2
 ---
 # event — the content-uuid-keyed domain event (the membrane payload)

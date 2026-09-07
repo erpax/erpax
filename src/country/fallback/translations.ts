@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fallback",
-    "uuid": "35806f73-3913-8f20-bae4-6d31c55d6c53",
+    "uuid": "f27705e7-7f22-83df-a343-6529488dcf2c",
     "words": [
       "fallback"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a country slot is blank or unknown — CLDR ZZ (\\\"Unknown Region\\\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code.",
-    "uuid": "3fa3a7c6-7c40-8a1f-9dbd-93ec32f3f9be",
+    "uuid": "7d5fa3d3-5544-8a2d-a0f6-731e95efde93",
     "words": [
       "use",
       "when",

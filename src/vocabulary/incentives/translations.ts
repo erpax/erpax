@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "incentives",
-    "uuid": "26474e79-36a1-8bd9-a9a5-d0f4590a1aea",
+    "uuid": "9aa929f5-b520-875e-aaf3-7144f29d2f7f",
     "words": [
       "incentives"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about incentives — Description of bonus and commission compensation aspects of the job.",
-    "uuid": "b87ecef7-ac36-89e7-a9cf-c619a820df36",
+    "uuid": "4c6cc341-77e3-89d0-ab94-77ec60c630d8",
     "words": [
       "use",
       "when",

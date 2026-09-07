@@ -2,10 +2,10 @@
 name: tv
 description: "Use when reasoning about tv as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tv
-coordinate: "tv · 4/weave · 6412213b"
-contentUuid: "5abea9a3-9632-5ee1-9c49-06f92f5f6bf8"
-diamondUuid: "6559e6b7-2b29-857d-8c79-f6a4740580ea"
-uuid: "6412213b-8487-89fb-8e4d-ab1b97f0d3b0"
+coordinate: "tv · 4/weave · dc4aca8b"
+contentUuid: "58ded13a-c6c6-549c-90ca-0f6c665078fe"
+diamondUuid: "683467bd-6b4d-84b2-9a7d-610df4658083"
+uuid: "dc4aca8b-1215-80a1-983a-9faaab3e3e77"
 horo: 4
 typography:
   partition: tv
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ad233dc3-f729-8510-b60e-7dc32fb6d8c7"
+  computationUuid: "fb876ce1-00ea-8b6e-a7aa-774d83cb1795"
   stages:
     - stage: path
       stageUuid: "10c765a6-eee4-8035-a821-49e13cc4422a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8fd78947-94fa-8175-aa9f-a8218d7ffb7f"
     - stage: horo
-      stageUuid: "6bf6f62b-5474-89d1-8c97-3de3f5d66a38"
+      stageUuid: "87a6ddf3-c0a7-8c6f-a3d6-92ef7c781400"
     - stage: seal
       stageUuid: "a6cee6a9-1ab8-84ec-b660-c83765099922"
     - stage: uuid
-      stageUuid: "43c1241a-155e-871e-ad5b-f73db41d4cc5"
+      stageUuid: "f5e6ece1-1709-80f8-a48f-716750b3d12a"
 version: 2
 ---
 # tv

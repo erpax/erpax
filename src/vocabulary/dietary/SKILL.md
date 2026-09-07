@@ -2,11 +2,11 @@
 name: dietary
 description: "Use when reasoning about dietary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dietary"
-coordinate: "vocabulary/dietary · 4/weave · 6715bf7a"
-contentUuid: "5ec80e2e-cd5f-5fe1-8113-dc85fb0869cb"
-diamondUuid: "2d668ad8-654d-81be-a15c-e3d058422a20"
-uuid: "6715bf7a-eb9e-8e3d-b3ef-6a385f486f01"
-horo: 4
+coordinate: "vocabulary/dietary · 8/crest · 0fd44dbf"
+contentUuid: "beabd8fe-4b8d-5f4f-a07b-98340e7b610a"
+diamondUuid: "55ef7ff3-aaa6-8f06-ba4f-25904ced35c8"
+uuid: "0fd44dbf-0257-82b3-bbe7-22c64a4cce00"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e5f08504-f0bb-80f2-b99e-fae172d66f7a"
+  computationUuid: "488be968-0c78-8696-8018-68f1c530efb2"
   stages:
     - stage: path
       stageUuid: "681f44da-d065-8e40-8bf8-6a6684767b69"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eb3f1308-6984-88c4-9428-c332521bd3fc"
     - stage: horo
-      stageUuid: "22af0e1b-5322-84f3-aa30-d1b9bca68699"
+      stageUuid: "b3335b83-c009-8b2d-acfc-f5c3e0415045"
     - stage: seal
       stageUuid: "1a34e7a5-7b5c-8976-bc4c-1dff694381fa"
     - stage: uuid
-      stageUuid: "baec01f6-c611-89c0-9808-5399cf286df3"
+      stageUuid: "c9e83566-5ed8-8273-a7f9-4943fabf1bd0"
 version: 2
 ---
 # dietary

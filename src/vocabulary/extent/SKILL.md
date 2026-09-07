@@ -2,11 +2,11 @@
 name: extent
 description: "Use when reasoning about extent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/extent"
-coordinate: "vocabulary/extent · 5/round · e0afb49e"
-contentUuid: "6fa4720d-7800-5d33-9a32-2122214cf00e"
-diamondUuid: "e8bed147-527c-8d18-ac1b-a7337ee4ed8c"
-uuid: "e0afb49e-055a-8553-87f8-25b509855bd3"
-horo: 5
+coordinate: "vocabulary/extent · 4/weave · 791eef9f"
+contentUuid: "30de9338-047f-534e-a16e-a97754e5d9b8"
+diamondUuid: "f98ebdfc-3f8a-8cd2-b3e9-8d5ed5c754b3"
+uuid: "791eef9f-a06b-8d2e-8b3c-8e07c1850c6b"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0159480e-4e6e-8ba0-ae98-c733a823bf3c"
+  computationUuid: "d7ab1ebe-9ca1-856e-ab5e-ed6aff123337"
   stages:
     - stage: path
       stageUuid: "b87ce099-d28c-80c4-8dfc-24ec95525ac6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "06c9e3df-390f-8505-bc5f-2c10dc3332f2"
     - stage: horo
-      stageUuid: "74c691bf-efb3-8495-ac9f-4af60c73b5e9"
+      stageUuid: "c0404943-8896-802a-afc6-6af613413679"
     - stage: seal
       stageUuid: "e92bcfe5-f371-84a7-95f6-a1bea98ec656"
     - stage: uuid
-      stageUuid: "66b21442-3a68-8872-a669-62fd3715db5f"
+      stageUuid: "125e6a82-8d89-8a15-a15e-3acb6dcd8e8c"
 version: 2
 ---
 # extent

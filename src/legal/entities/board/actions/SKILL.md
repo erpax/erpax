@@ -2,10 +2,10 @@
 name: actions
 description: "Use when recording formal board-level decisions for a legal entity — resolutions, policy approvals, risk assessments, control enhancements, attestations, vote tallies, and related internal controls. The SOX §404 corporate-governance board-action register."
 atomPath: "legal/entities/board/actions"
-coordinate: "legal/entities/board/actions · 7/descent · 117f8379"
-contentUuid: "4a171162-dc62-51fe-93d2-c0a1727d01b5"
-diamondUuid: "2c8b1632-a5f3-8716-bc24-66d6c4d31a68"
-uuid: "117f8379-ec1a-8709-9719-f150881fa511"
+coordinate: "legal/entities/board/actions · 7/descent · b6d8ffb3"
+contentUuid: "5524ffe0-66fc-5435-8f51-fa98c9f2bd6b"
+diamondUuid: "0bc75fe4-d3c3-896a-bed1-62d3d755ca16"
+uuid: "b6d8ffb3-9886-8db3-8f4d-96bf127e813c"
 horo: 7
 typography:
   partition: legal
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "37339de3-8c7e-82a8-8892-55b8d705ed0a"
+  computationUuid: "f155d0fc-20c0-8c9d-916b-c2e638ca72a3"
   stages:
     - stage: path
       stageUuid: "426ec008-e521-82bc-b81b-202852ba3a15"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "e18fa1eb-43fe-82c5-869a-8cfbb67ba6a4"
     - stage: horo
-      stageUuid: "e15df5c7-a583-8b08-b085-956531ce1f89"
+      stageUuid: "796108fd-cb68-8fc2-a736-5dcf9ee87ce0"
     - stage: seal
       stageUuid: "3442bb75-3d8a-8bfd-8904-9df7c353f8c7"
     - stage: uuid
-      stageUuid: "aea96552-aa83-83bc-a05f-a0810168b15e"
+      stageUuid: "ffc7ffa2-3bd3-827e-9711-96d8ed2db794"
 version: 2
 ---
 # board-actions

@@ -2,11 +2,11 @@
 name: plans
 description: "Use when planning or tracking remediation of an audit finding or compliance gap — design/process/system/training/policy action steps with owner, target date, priority, budget, risk-of-delay, approval chain; COSO-2013 deficiency-remediation and SOX §404 control lifecycle. The remediation-plans improvement collection."
 atomPath: "internal/controls/audit/findings/remediation/plans"
-coordinate: "internal/controls/audit/findings/remediation/plans · 7/descent · eddbd975"
-contentUuid: "c8f3bc15-1747-5003-803b-8ea37a7ba223"
-diamondUuid: "2c56e2c2-cacd-80c8-a55f-4178928830b9"
-uuid: "eddbd975-9e61-84df-8575-5977dfe702a8"
-horo: 7
+coordinate: "internal/controls/audit/findings/remediation/plans · 5/round · 65a5e7b4"
+contentUuid: "daa0cf35-18f1-5cb7-86db-a2039c7acd5f"
+diamondUuid: "f0063ef4-558d-868a-adf1-bf6d37c2fcea"
+uuid: "65a5e7b4-8d13-8c37-ad46-904a0b1df4e8"
+horo: 5
 typography:
   partition: internal
   bondDegree: 20
@@ -16,7 +16,7 @@ standards:
   - "SOX §404 control-remediation"
 bindings: []
 signatures:
-  computationUuid: "ee164b15-3381-813f-8a75-13b82d241fc4"
+  computationUuid: "35b45538-b620-84a1-aec1-0683ff0ee62c"
   stages:
     - stage: path
       stageUuid: "e73a31c5-2fd5-8343-bebc-1f066e654659"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "af6bef66-990d-88a8-ab52-1528c76b7de0"
     - stage: horo
-      stageUuid: "16db21c5-1fc2-8aca-baba-e5847b3a7009"
+      stageUuid: "48deda51-cfa7-8814-bfd1-985527357548"
     - stage: seal
       stageUuid: "c9c10628-31eb-8d50-8331-4f831d3e4b98"
     - stage: uuid
-      stageUuid: "3aec3b88-327c-8a37-bec7-53ed1690c2c1"
+      stageUuid: "15a8f145-a165-8c70-8187-d33123d3411e"
 version: 2
 ---
 # remediation-plans

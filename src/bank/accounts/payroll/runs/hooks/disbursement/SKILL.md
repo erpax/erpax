@@ -2,11 +2,11 @@
 name: disbursement
 description: "Use when reasoning about disbursement — Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable."
 atomPath: "bank/accounts/payroll/runs/hooks/disbursement"
-coordinate: "bank/accounts/payroll/runs/hooks/disbursement · 5/round · be6bf939"
-contentUuid: "e77e9ee6-46c9-512f-a179-202c484fb83b"
-diamondUuid: "f0e0af8b-bf51-85e3-b262-a00a2860c702"
-uuid: "be6bf939-6393-8e4c-b3e9-59e1992b4808"
-horo: 5
+coordinate: "bank/accounts/payroll/runs/hooks/disbursement · 7/descent · 31e6c960"
+contentUuid: "b29a3dde-4503-52ce-81c9-e64175330779"
+diamondUuid: "4405048d-c965-8809-a5c0-0b0d8318796f"
+uuid: "31e6c960-b544-8c5a-b749-05f33b70f50f"
+horo: 7
 typography:
   partition: bank
   bondDegree: 6
@@ -28,7 +28,7 @@ standards:
   - "SOX §404 internal-controls"
 bindings: []
 signatures:
-  computationUuid: "5a62eb5f-2ee8-8874-9a01-ac7a7cc5ed22"
+  computationUuid: "c2f25274-7ff0-826f-b5d7-583c914eb73d"
   stages:
     - stage: path
       stageUuid: "1cb20a66-71bb-89e1-846f-808027a81294"
@@ -39,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "56be71ec-5b3e-86b6-b111-da7a66a529cb"
     - stage: horo
-      stageUuid: "9ddfd219-0d71-8f74-ac11-ccc1db68b0e6"
+      stageUuid: "6492531a-c189-86d8-979e-a35fb8cf06b9"
     - stage: seal
       stageUuid: "812a4a91-14a9-8752-afc7-2f7be3dc100e"
     - stage: uuid
-      stageUuid: "418ed3b4-cf97-86f3-a95d-bcb615a00473"
+      stageUuid: "4e51918a-15d4-8a48-af35-99df9e778940"
 version: 2
 ---
 # bank/accounts/payroll/runs/hooks/disbursement

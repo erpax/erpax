@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "circle",
-    "uuid": "f4de6e87-6e27-8338-b062-e2f2cb270ee1",
+    "uuid": "5081396c-22ee-8641-80a7-d86293306683",
     "words": [
       "circle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about circle — A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.",
-    "uuid": "b8f8b6f8-9a38-8670-82c7-cb109d0dc891",
+    "uuid": "d647499c-1f60-8ec2-849b-52ee2b501cd1",
     "words": [
       "use",
       "when",

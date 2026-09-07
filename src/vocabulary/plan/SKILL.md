@@ -2,11 +2,11 @@
 name: plan
 description: "Use when reasoning about plan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/plan"
-coordinate: "vocabulary/plan · 5/round · 299a8502"
-contentUuid: "f347d73d-7abc-577a-8fac-64f33978ba82"
-diamondUuid: "50e97cf7-8985-8798-b430-2076f97d180c"
-uuid: "299a8502-8884-8077-b290-b48127216263"
-horo: 5
+coordinate: "vocabulary/plan · 4/weave · 1fd0f2f0"
+contentUuid: "80c8cdc4-5d55-5499-80ec-fabcdaf948e6"
+diamondUuid: "565afd7f-4860-8d4c-970d-98bd7da6bdd9"
+uuid: "1fd0f2f0-f6b1-834c-be1f-42263929ab3d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 118
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e2edad05-cf80-880a-8807-d804fdaae873"
+  computationUuid: "9af084aa-8ecc-86fc-bf40-9f6363b9f130"
   stages:
     - stage: path
       stageUuid: "7e1c68e9-4658-87e3-98f5-2a5498d6ff7c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "052c0599-6844-88cc-92a0-2f4e5140e532"
     - stage: horo
-      stageUuid: "f1676570-848f-888c-8c9c-b55324189694"
+      stageUuid: "91289ece-1cad-8eb6-b8e6-09390cf169f6"
     - stage: seal
       stageUuid: "b2760512-c2b7-89bc-aa7a-f3c8fe289df9"
     - stage: uuid
-      stageUuid: "d79cab49-46d8-8231-a1a7-82fb5be0e5f4"
+      stageUuid: "f044b0f2-26f8-827d-8118-aa4073500a6f"
 version: 2
 ---
 # plan

@@ -2,11 +2,11 @@
 name: process
 description: "Use when reasoning about process as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/process"
-coordinate: "vocabulary/process · 1/base · 2868f1fd"
-contentUuid: "2a8b885b-e998-564f-ac9a-d6d0a2f6a599"
-diamondUuid: "5a75bc22-6dc0-82d0-81dd-2cb4996764bf"
-uuid: "2868f1fd-732c-8c69-b820-5c3806e9eb76"
-horo: 1
+coordinate: "vocabulary/process · 5/round · d65e5d9a"
+contentUuid: "c6072893-04b9-52df-8b15-cdef18a90840"
+diamondUuid: "b4e27b68-1241-8a58-bd36-923d62aee7c0"
+uuid: "d65e5d9a-2545-8ed2-918c-d7f2b4a424e4"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "defd8000-760c-8a1b-95dd-752b71afa192"
+  computationUuid: "49a93359-5cce-8779-a879-81f2d5dfba2f"
   stages:
     - stage: path
       stageUuid: "62911d01-9f66-8b83-b583-d603d3c57e7c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "62803bea-6d2c-8084-b4fa-c6dd3d1edd16"
     - stage: horo
-      stageUuid: "fe040920-50ba-8e01-a52f-4c031d331648"
+      stageUuid: "f8058654-ed1f-85aa-8194-d4d9ccdb0c21"
     - stage: seal
       stageUuid: "bd67b367-e0d9-83fd-bacf-27221491026f"
     - stage: uuid
-      stageUuid: "caf7a205-3b85-8d4b-bab3-28cb55f34224"
+      stageUuid: "b193d196-48d2-8246-ad8e-7e462bc69dd5"
 version: 2
 ---
 # process

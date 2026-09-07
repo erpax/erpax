@@ -2,11 +2,11 @@
 name: property
 description: "Use when reasoning about property — A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property."
 atomPath: "vocabulary/property"
-coordinate: "vocabulary/property · 5/round · 1dad00cf"
-contentUuid: "6ff96d38-f1fa-5679-9b12-b4df88b165fa"
-diamondUuid: "5d97250b-f3f1-8a42-b548-f5a8841a6140"
-uuid: "1dad00cf-190e-83ca-8616-847863d81219"
-horo: 5
+coordinate: "vocabulary/property · 8/crest · 307488aa"
+contentUuid: "32d6175f-a366-5992-b40a-518be0e2dc4c"
+diamondUuid: "0238c6a4-c9b2-8a3e-a404-c6850166b5ba"
+uuid: "307488aa-0a45-82d1-b36e-6bca545fc07e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9be1e5d9-0713-8f02-a769-bd582fe425ff"
+  computationUuid: "95ecdd87-7392-86b7-a96b-d4f63793564a"
   stages:
     - stage: path
       stageUuid: "0a776b12-3a66-8c8a-98a9-9e1799242422"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "12a2fcf4-60e5-880a-a324-e844a9859680"
     - stage: horo
-      stageUuid: "7382de1f-45f6-8fc7-ad1c-ac79f97ac4d6"
+      stageUuid: "13456173-2f94-895f-bf40-c08dcb83a5dd"
     - stage: seal
       stageUuid: "3e402e05-9e23-84dd-9a0f-2c1d07486b36"
     - stage: uuid
-      stageUuid: "e356d0f1-398b-8381-9ab9-4c2258c1c741"
+      stageUuid: "68e90b1c-fc35-81b7-b2df-b94d35ee6b68"
 version: 2
 ---
 # property

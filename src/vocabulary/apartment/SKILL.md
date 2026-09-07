@@ -2,11 +2,11 @@
 name: apartment
 description: "Use when reasoning about apartment — An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source:"
 atomPath: "vocabulary/apartment"
-coordinate: "vocabulary/apartment · 4/weave · eb8eb3fd"
-contentUuid: "520e546c-1bbf-5326-a016-0f1ea2db62d9"
-diamondUuid: "087bfcef-379b-8639-8068-6d458c1430ce"
-uuid: "eb8eb3fd-dc8d-8e95-8ec1-cc83bf9f56ed"
-horo: 4
+coordinate: "vocabulary/apartment · 2/share · 763c9398"
+contentUuid: "c0fa507c-a427-5b56-8eed-b3706d0a8b2d"
+diamondUuid: "35d7123f-a23f-8298-8004-6dd5c013055c"
+uuid: "763c9398-6620-8b1c-b719-96edc155a137"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8596259b-c7b0-88fe-97dd-c41a3b32f3be"
+  computationUuid: "ebcf74f2-bc37-8901-8a61-0f961db53a60"
   stages:
     - stage: path
       stageUuid: "eb2eb68a-1016-85ea-ab2e-bc019760f4d5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d0a2bf2f-cea2-80d7-9ca3-2a662668940e"
     - stage: horo
-      stageUuid: "096b3690-9777-8024-a861-2057cea867ae"
+      stageUuid: "ab56f513-1066-8618-8fc5-da3f7d51f92f"
     - stage: seal
       stageUuid: "4e7c2230-4d53-8bbd-b5ca-0b84cda6b796"
     - stage: uuid
-      stageUuid: "1900334d-d75b-8917-8876-8d684ff6f8d9"
+      stageUuid: "66a24d1b-efeb-8b70-b438-19d12f3b2bba"
 version: 2
 ---
 # apartment

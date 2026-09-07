@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nutrition",
-    "uuid": "bf8bd213-2906-87b4-ba88-109c417c0a9b",
+    "uuid": "b30255d9-952b-8eea-9fd4-385390488451",
     "words": [
       "nutrition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about nutrition — Nutrition information about the recipe or menu item.",
-    "uuid": "18959b96-ab04-81d9-86a6-497c4a4447c9",
+    "uuid": "1dacf8c5-4d70-843f-8956-c67fdb0f8989",
     "words": [
       "use",
       "when",

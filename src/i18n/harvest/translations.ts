@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "harvest",
-    "uuid": "fae98aaa-b76f-8ce2-90ce-ca3cfd53c4e6",
+    "uuid": "e5e84e2c-175b-8987-bb26-28a92d6cab08",
     "words": [
       "harvest"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about i18n harvesting — collecting message keys for i18n.",
-    "uuid": "dbab1bcd-4e91-887c-8214-522ea129d0b6",
+    "uuid": "c08d02ab-387a-8504-adb6-db8110a44daa",
     "words": [
       "use",
       "when",

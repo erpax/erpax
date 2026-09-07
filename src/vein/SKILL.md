@@ -2,11 +2,11 @@
 name: vein
 description: "Use when reasoning about erpax's return vessel — the one-way organ. Venous valves enforce unidirectional flow back to the heart (a ratchet, the append-only return), the veins hold ~70% of blood volume (a capacitance reservoir), and with the artery they close the reciprocal loop. Three properties are computed and mapped — a structural isomorphism — onto erpax's append-only chain and reciprocal wiring."
 atomPath: vein
-coordinate: "vein · 7/descent · 2f21b0af"
-contentUuid: "e74c7d4a-54a2-5f9c-beb2-e2c2d9c99dae"
-diamondUuid: "152e206c-a29e-80f0-8945-578d6b32a0f8"
-uuid: "2f21b0af-656d-8650-9ab6-94a87c31d117"
-horo: 7
+coordinate: "vein · 8/crest · b6bdb48d"
+contentUuid: "aa4f12d0-532a-5efa-baad-544ed1d2dd3c"
+diamondUuid: "ba4d34bf-0690-821a-bd33-c05ac9e4536c"
+uuid: "b6bdb48d-2906-81df-8222-b0cbbb2073db"
+horo: 8
 typography:
   partition: vein
   bondDegree: 26
@@ -15,7 +15,7 @@ standards:
   - venous valves prevent regurgitation; veins hold ≈70% of blood volume (capacitance)
 bindings: []
 signatures:
-  computationUuid: "640f6fe9-2e65-82be-97d4-00c96009a917"
+  computationUuid: "feaaa6d3-6dd2-8c5d-9c0d-75fe6d13816f"
   stages:
     - stage: path
       stageUuid: "8e27d494-4602-8dd5-8e14-bc4ea2a9e638"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "a48af593-96c7-8a3b-9949-d617f819cdbb"
     - stage: horo
-      stageUuid: "493be690-f519-8760-8053-bee003d1ea03"
+      stageUuid: "693540cc-0225-887d-9df1-dce7d2c51c54"
     - stage: seal
       stageUuid: "d8582646-2198-81c4-abb1-fa28d544862e"
     - stage: uuid
-      stageUuid: "9c8da9e7-6878-8fb0-8863-7bc796af0539"
+      stageUuid: "e569a224-cdf3-856e-99aa-2c90ef14c868"
 version: 2
 ---
 # vein — the one-way return (the append-only path)

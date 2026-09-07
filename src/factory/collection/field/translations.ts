@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "field",
-    "uuid": "4e157e9e-826d-8c3f-adf4-d28ed9eac1ab",
+    "uuid": "5dde2bea-e790-87ec-b94f-ead4989001e5",
     "words": [
       "field"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a collection needs a derived value or a relation rather than a question — a calculated number hidden from the admin, GL accounts as relations to gl-accounts, and a line-item array that refuses to be empty.",
-    "uuid": "adbfd4b1-91c6-8a85-9b2d-6ab6cd314aca",
+    "uuid": "a588cabe-2fbc-83a1-8122-d11fa390a030",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "house",
-    "uuid": "c4e7f5d8-f613-873e-9ee5-46c50f7c7612",
+    "uuid": "5d44085d-d477-83c9-8fd6-224f549c28ec",
     "words": [
       "house"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about house — A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see http://en.wikipedi",
-    "uuid": "9b652ada-0395-8591-b225-df676d3a4aa9",
+    "uuid": "06dce00c-cf7f-80f6-96d2-a5107998433d",
     "words": [
       "use",
       "when",

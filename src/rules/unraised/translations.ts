@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unraised",
-    "uuid": "dde32cfe-2fc0-83be-a917-9f184c9bd9bd",
+    "uuid": "ece0bc4c-b9d7-86ea-825a-9bdd52384776",
     "words": [
       "unraised"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a declared failure kind is never raised — a `…Kind` union member that nothing in src ever constructs is a check that cannot fire, so its claim defaults to TRUE by omission. Parsed via ts.createSourceFile, never matched. Run: tsx src/rules/unraised/index.ts",
-    "uuid": "e7cbef01-d842-866c-917c-d406197f2483",
+    "uuid": "45ce99c4-9058-8912-8acf-723d2a1066ec",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: activity
 description: "Use when reasoning about activity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/activity"
-coordinate: "vocabulary/activity · 8/crest · ccb0f101"
-contentUuid: "48cc9285-fc3b-52e3-828a-fea4246c41da"
-diamondUuid: "ad4284fc-3ad3-8348-84b4-648e779dea83"
-uuid: "ccb0f101-d36d-8adc-bd3a-78aae0b6f208"
-horo: 8
+coordinate: "vocabulary/activity · 4/weave · fe3a0022"
+contentUuid: "76cf2dfc-6c12-5fdc-8496-98a74234e237"
+diamondUuid: "2ebd656b-fc8b-87b0-8555-26478f3126f2"
+uuid: "fe3a0022-eaf5-8bda-b13e-fe1f85f58040"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 38
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "33ab1d4d-b463-8d6d-a3f9-803f9953d3ec"
+  computationUuid: "0b2f8dc3-fdb1-8515-a49f-ddfad965b78a"
   stages:
     - stage: path
       stageUuid: "8a8cc340-17ea-8b56-b78f-e018b9efdde8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9775a394-8a07-8d3e-bc64-a524075f5c29"
     - stage: horo
-      stageUuid: "ae7ea626-c7e0-84e6-aada-6848264814fd"
+      stageUuid: "57f42f43-1e8c-8310-b001-3932c9b31938"
     - stage: seal
       stageUuid: "8d56de78-b50e-852e-8ef7-cd2287ad18a1"
     - stage: uuid
-      stageUuid: "7650aa5f-4d92-8743-9bfa-4fe7a700986d"
+      stageUuid: "5a6f6419-5baa-8239-b781-79b480b994fc"
 version: 2
 ---
 # activity

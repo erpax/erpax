@@ -2,18 +2,18 @@
 name: lineage
 description: "Use when tracking data origin and transformation — source-to-target lineage, transformation tracking, column-level lineage, lineage visualization, provenance chain, audit trail of data movement."
 atomPath: "vocabulary/lineage"
-coordinate: "vocabulary/lineage · 5/round · 89926e99"
-contentUuid: "bb037e47-a52d-5489-95d7-d27308c059b5"
-diamondUuid: "a208b8d6-e8a4-8a12-9ab0-7835091bb29c"
-uuid: "89926e99-2237-8f9c-8931-4b9a911c7087"
-horo: 5
+coordinate: "vocabulary/lineage · 2/share · dd7da9ab"
+contentUuid: "6aa8709d-f12d-5dce-81bb-1474739aa439"
+diamondUuid: "d5f197cf-ecb8-809e-9f9a-af6c0cb39489"
+uuid: "dd7da9ab-1a84-8bac-b55b-c4d3ea703bea"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 98
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cb2cb831-ad65-8d93-8baf-35cdc2381e85"
+  computationUuid: "7f55ce89-6f0f-8303-be31-e7747e027ab0"
   stages:
     - stage: path
       stageUuid: "af972014-9f28-80b4-ba5c-08b7a8f2fd8f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "25f7e9fb-4565-8fe2-93a1-ff23340697d6"
     - stage: horo
-      stageUuid: "fdc093f4-5c7e-89bb-b3fa-5d8949cfe9dc"
+      stageUuid: "ae28414c-37a1-8e4f-bc74-953c521c476d"
     - stage: seal
       stageUuid: "8d2c6b1a-a31a-87e0-9f98-70e94621185e"
     - stage: uuid
-      stageUuid: "87aa99bd-ff01-8f41-8884-0b32a0435c0f"
+      stageUuid: "edef748f-bbff-8c9b-825b-54d12b86b8b5"
 version: 2
 ---
 # lineage

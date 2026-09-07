@@ -2,11 +2,11 @@
 name: street
 description: "Use when reasoning about street as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: street
-coordinate: "street · 8/crest · 8d85afe7"
-contentUuid: "53bf4055-1c58-5b53-aed6-6f566acda642"
-diamondUuid: "f05625b8-2fac-8acd-a1de-69e6ad424f2f"
-uuid: "8d85afe7-64c8-831b-b8b7-143f72ca13ba"
-horo: 8
+coordinate: "street · 2/share · 196645f2"
+contentUuid: "462f5360-61ef-56a3-ab28-3d467702710c"
+diamondUuid: "ea0a8450-a783-8727-92ee-0545593fb735"
+uuid: "196645f2-c3cc-8cd1-b7cd-1a4a964bc004"
+horo: 2
 typography:
   partition: street
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "afa28a46-5055-8833-9f67-0d66cd1f80e6"
+  computationUuid: "996b27d8-7208-8534-8531-6413ee7c589e"
   stages:
     - stage: path
       stageUuid: "05050a02-4085-8ae1-b15b-f67692fefc45"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "95d960b1-6bcf-8039-9a13-37f5398f3fc1"
     - stage: horo
-      stageUuid: "ff72cef4-9b43-8cb5-81a6-56d00e47dceb"
+      stageUuid: "e4c79193-4668-8fd6-be8b-95542dfd5092"
     - stage: seal
       stageUuid: "f50f621d-73c8-8712-909e-6d57037b473f"
     - stage: uuid
-      stageUuid: "5ec72126-04f3-8ab0-a175-188908a34ef4"
+      stageUuid: "a1bba8bc-9bfe-83e8-96a5-8593f9da2b81"
 version: 2
 ---
 # street

@@ -2,11 +2,11 @@
 name: compost
 description: "Use when organic residues are decomposed into a soil amendment — compost and manure as the organic-matter/microbial input that rebuilds soil rather than just feeding the crop. The literal entropy→soil recycling node: spent residue, decomposed, credited back to the soil's capacity (the regenerative balance)."
 atomPath: compost
-coordinate: "compost · 5/round · 6d78b9fa"
-contentUuid: "2917b01c-7bd5-5e18-8042-7386934b1e95"
-diamondUuid: "a787945e-e274-875f-8505-9067a0101a82"
-uuid: "6d78b9fa-8de8-8de5-8b89-be84588de8e3"
-horo: 5
+coordinate: "compost · 2/share · a93d04f2"
+contentUuid: "f32b3dc3-abc7-5cd6-8a6a-50f92f8c636d"
+diamondUuid: "a367f901-1f00-8fed-a82f-642e274be1be"
+uuid: "a93d04f2-3229-8416-bfa0-3109c9f27a3a"
+horo: 2
 typography:
   partition: compost
   bondDegree: 56
@@ -17,7 +17,7 @@ standards:
   - "USDA-NOP"
 bindings: []
 signatures:
-  computationUuid: "84b0258f-ce43-8587-9924-e1b11fa47ba8"
+  computationUuid: "1e14d345-a2df-864d-ab26-5f65a4ee27c8"
   stages:
     - stage: path
       stageUuid: "f6bf7fde-93ab-8a11-b344-939400cb706f"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "2b5de81a-742f-81e0-87b9-d91cbcfaeab8"
     - stage: horo
-      stageUuid: "bf6555b6-853a-8ac3-87a3-929fbef53468"
+      stageUuid: "cbd607ad-ebfb-8ecb-843a-559135668082"
     - stage: seal
       stageUuid: "b8b04192-5a91-85d4-a84c-128a5bb227df"
     - stage: uuid
-      stageUuid: "be1068bb-9a67-893b-a779-5fb91c657b05"
+      stageUuid: "94d4c670-3375-82ae-9a49-e37c7bd2a843"
 version: 2
 ---
 # compost — decomposed residue returned to the soil

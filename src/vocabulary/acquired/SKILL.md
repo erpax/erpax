@@ -2,11 +2,11 @@
 name: acquired
 description: Use when reasoning about acquired — The organization or person from which the product was acquired.
 atomPath: "vocabulary/acquired"
-coordinate: "vocabulary/acquired · 2/share · e2f9c75c"
-contentUuid: "33b409cd-39c9-5af7-b91c-683155ab39eb"
-diamondUuid: "09c1510a-e7b9-868b-a7fa-93b7d6b78a30"
-uuid: "e2f9c75c-233c-81ac-9b21-43c0116cfbb6"
-horo: 2
+coordinate: "vocabulary/acquired · 7/descent · 961abe72"
+contentUuid: "6a70f085-8cd6-5039-8c42-979f1c4bbfdb"
+diamondUuid: "06371e58-87a3-802d-a2a2-d1183e9d1b00"
+uuid: "961abe72-cd6c-889f-9f8e-772dbefaea93"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "48968c5d-4f29-8a5f-b071-e8999fd8c059"
+  computationUuid: "e237eb52-8289-802c-86cf-71717dfdb864"
   stages:
     - stage: path
       stageUuid: "1bcad558-a2a5-8c2d-8302-b08ef92ce61a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aae01aac-b30f-8e6b-8417-bf66e1c0d850"
     - stage: horo
-      stageUuid: "44a7dd4c-40ad-8ca5-8032-507a1d4d71dc"
+      stageUuid: "f9f547f9-bb2e-83e6-9040-f3eb7f16f207"
     - stage: seal
       stageUuid: "7c6e93a7-3f65-84b6-9884-f35fe1a0b41b"
     - stage: uuid
-      stageUuid: "725ed869-1c61-8b44-9b2d-ae0c83575e65"
+      stageUuid: "fc4b0267-a3d4-82d5-83ec-c7d87dc6785e"
 version: 2
 ---
 # acquired

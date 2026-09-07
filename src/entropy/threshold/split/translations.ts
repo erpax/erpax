@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "split",
-    "uuid": "a7268881-aac5-8226-9d65-781ebb033eb8",
+    "uuid": "e98b0cd7-eba5-867d-99e8-35630df29907",
     "words": [
       "split"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a secret must survive losing shares — m-of-n reconstruction over GF(256), built locally with no dependency. Any m of n pieces rebuild the secret and the subset chosen is irrelevant; fewer than m reveal nothing, and that is DECIDED rather than argued: reachableSecrets enumerates all 256 candidate bytes and shows the held shares are consistent with every one. Refuses x = 0 (the secret's own coordinate), duplicate coordinates (singular interpolation), a threshold outside 2 ≤ m ≤ n ≤ 255, and a short coefficient vector, which is a lower threshold in disguise.",
-    "uuid": "f547d5f0-98c6-834e-972e-c5436c813534",
+    "uuid": "2eae5e6c-0aa6-85d7-b764-8e3c614ca9a2",
     "words": [
       "use",
       "when",

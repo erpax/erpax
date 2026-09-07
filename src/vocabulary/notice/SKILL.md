@@ -2,11 +2,11 @@
 name: notice
 description: "Use when reasoning about notice as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/notice"
-coordinate: "vocabulary/notice · 5/round · 4469a4f1"
-contentUuid: "9d02da36-097d-56d2-b85f-db44a91dec81"
-diamondUuid: "5539eef8-df27-8101-9838-539de84491b9"
-uuid: "4469a4f1-691c-8d48-834f-d90511ae98e8"
-horo: 5
+coordinate: "vocabulary/notice · 7/descent · c86a3555"
+contentUuid: "d89ac23d-26a3-52a0-9bbb-19508680cc3a"
+diamondUuid: "6539d524-2ab7-8b46-9947-9f6d0af33b10"
+uuid: "c86a3555-e25f-8515-9e5d-c97b1080c14b"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c43b637f-8d05-8df6-a4e8-96cc98d90b56"
+  computationUuid: "78eb26e8-4aec-8a99-8771-dc5e8689d0e3"
   stages:
     - stage: path
       stageUuid: "705fe5fe-e3ee-8090-8067-47dd4051baa0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9bb9ff60-9088-8df1-95c9-ea35fc45386c"
     - stage: horo
-      stageUuid: "96fdf510-8db6-8e05-b8e3-a06a1dead167"
+      stageUuid: "76f5d7cd-629c-8142-9214-119d0b5ec053"
     - stage: seal
       stageUuid: "71095799-c9be-84af-bbf5-7209a7285df8"
     - stage: uuid
-      stageUuid: "7d06bcad-c84b-81ff-8662-0771c926a104"
+      stageUuid: "4d91d892-67b4-8dbd-b25c-3a00c9614793"
 version: 2
 ---
 # notice

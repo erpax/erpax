@@ -2,11 +2,11 @@
 name: ai
 description: "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel."
 atomPath: ai
-coordinate: "ai · 2/share · 6e96fc42"
-contentUuid: "2219b90d-01d8-58cf-ad42-65dcf33ff2a7"
-diamondUuid: "a7f1ed05-13f2-8bc4-bd03-2df996fa1236"
-uuid: "6e96fc42-3174-880f-a2a3-3e1b993ec428"
-horo: 2
+coordinate: "ai · 4/weave · 1b8aa76c"
+contentUuid: "c7ac75eb-022c-51c6-b994-8a8357a46874"
+diamondUuid: "3143b593-af66-8e8e-b4c1-1c65132d25cd"
+uuid: "1b8aa76c-ef8d-821e-afdb-53be7d7d871c"
+horo: 4
 typography:
   partition: ai
   bondDegree: 40
@@ -41,7 +41,7 @@ bindings:
   - "ai/AI"
   - "vectorize/VECTORIZE_DOCS"
 signatures:
-  computationUuid: "dd59b92b-0124-884b-8dc0-9000eb0f8bde"
+  computationUuid: "9a2fa57e-2190-87ad-9032-06b931f45337"
   stages:
     - stage: path
       stageUuid: "8e6da7ff-0947-8c12-b941-623c69161362"
@@ -52,11 +52,11 @@ signatures:
     - stage: links
       stageUuid: "ff12b777-fa00-8f18-acf8-4acd6058dc07"
     - stage: horo
-      stageUuid: "98632025-49e9-802b-84f4-be4980c79061"
+      stageUuid: "14a5218a-1a0a-8fc4-8276-a4ccb3fb0dd6"
     - stage: seal
       stageUuid: "fc61a7fe-c9ef-81cd-8704-4946877a6865"
     - stage: uuid
-      stageUuid: "e2941725-4678-8e02-b29a-d96d21eae5c1"
+      stageUuid: "8c8b3b59-8fe4-84bd-8574-97c521cbfc82"
 version: 2
 ---
 # ai — the AI services barrel

@@ -2,11 +2,11 @@
 name: tenant
 description: "Use when resolving which tenants expose published content to anonymous callers — the TTL-cached lookup of tenant ids flagged `allowPublicRead = true`, minimizing D1 row-reads on cold anonymous paths."
 atomPath: "allow/public/read/tenant"
-coordinate: "allow/public/read/tenant · 7/descent · 3cad57d6"
-contentUuid: "63d7a14f-751c-5f53-9403-8da141bf57ec"
-diamondUuid: "0bdecb1b-5ac9-8e52-8ffa-3ae51fb36d79"
-uuid: "3cad57d6-34fe-876f-924a-63180a8efdf6"
-horo: 7
+coordinate: "allow/public/read/tenant · 1/base · 629cc7ff"
+contentUuid: "f3594386-4f45-5b02-be50-1e273a9949d5"
+diamondUuid: "b071a953-33e4-84c7-b864-fdd34384397f"
+uuid: "629cc7ff-dbff-8070-a129-9db8f625dde1"
+horo: 1
 typography:
   partition: allow
   bondDegree: 59
@@ -17,7 +17,7 @@ standards:
   - "RFC-9110"
 bindings: []
 signatures:
-  computationUuid: "d4ed81dc-6ac5-883b-b0de-daa59b9e9d5e"
+  computationUuid: "0b029038-2394-88e9-bfe2-2bf128ae07ef"
   stages:
     - stage: path
       stageUuid: "ea980209-b26f-8e8b-be04-8138ba749348"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "46fb0549-ab27-835d-9767-bba6fb02c15a"
     - stage: horo
-      stageUuid: "b6105317-39c2-8c35-aa34-a7941a26b2a8"
+      stageUuid: "88f3ec0a-75f3-80ed-ae81-cac3c242e11a"
     - stage: seal
       stageUuid: "9de6a2b2-87a2-8afa-8e86-4b1a7eb1796b"
     - stage: uuid
-      stageUuid: "8282f008-c2ac-8190-8cee-151342d20425"
+      stageUuid: "b47816ba-bd76-8474-91c4-20755490bd97"
 version: 2
 ---
 # allow/public/read/tenant — public-read tenant id cache

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "change",
-    "uuid": "64718791-92b2-8de0-80c4-f41a053d015f",
+    "uuid": "b282d89f-efc1-87d3-9c12-2aaede74d22a",
     "words": [
       "change"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when emitting an audit event after a Payload write — the afterChange hook builds a canonical AuditEntry, logs it to the streaming aggregator, and persists a durable, Merkle-chained row to the audit-events collection for tamper-evident SOX evidence.",
-    "uuid": "9503b8dc-61ac-8a7f-ae2f-7db85445cec7",
+    "uuid": "73195d09-8810-894d-9573-cc66086a06a7",
     "words": [
       "use",
       "when",

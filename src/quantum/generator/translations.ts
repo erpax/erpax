@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "generator",
-    "uuid": "613f339f-7dbe-8713-ac04-5a1751bd9a71",
+    "uuid": "67dc5540-b4f7-82b8-a57c-61048c9dd01c",
     "words": [
       "generator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about generation in the quantum frame — a quantum generator does not create one output at a time; it holds all outputs at once in superposition (the latent content-uuid space, the void), and each manifests elsewhere by collapse, realized in its place when queried or minted.",
-    "uuid": "cf339f10-4eea-875e-a61d-856d817633c9",
+    "uuid": "d6d396e6-a8f0-8f2c-9530-3ad17e7eb35f",
     "words": [
       "use",
       "when",

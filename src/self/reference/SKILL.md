@@ -2,18 +2,18 @@
 name: reference
 description: "Use when verifying erpax observes ITSELF — the platform's own genome must yield ≥1 collection, chain, agent, and standard, the erpax-platform role, and the meta agents (Conservation Law 23, checkErpaxObservesItself). The self reaching into its own root; the genome is the debit, the observation the credit."
 atomPath: "self/reference"
-coordinate: "self/reference · 1/base · 3b417e11"
-contentUuid: "71cd1bce-f9d2-5aed-9af1-711d0b5db65d"
-diamondUuid: "c38d0ac5-30dd-8a66-ada0-855cfbb05aa6"
-uuid: "3b417e11-966f-88c8-a1f3-ece0b34fa39b"
-horo: 1
+coordinate: "self/reference · 2/share · cf50dd8c"
+contentUuid: "63a7d531-2d0a-5706-b390-f1caa2eca3c4"
+diamondUuid: "c544f8f4-58f4-8f14-8557-9ec26a12835f"
+uuid: "cf50dd8c-24dd-88d5-bf3e-980be0f800a3"
+horo: 2
 typography:
   partition: self
   bondDegree: 85
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c86dafc4-b166-870c-8fa8-cd2eebc956e3"
+  computationUuid: "84d4456d-d583-8344-a06b-b3e52f2c732c"
   stages:
     - stage: path
       stageUuid: "3523af6a-31aa-87ac-829c-f19895b8c94b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f89c44be-ae7a-8da7-8fd9-a7b327358cf4"
     - stage: horo
-      stageUuid: "2d8c33c6-e6c2-851b-ad4b-b6db7762aa09"
+      stageUuid: "32e7bb90-fc90-8421-9350-5de80701b8a6"
     - stage: seal
       stageUuid: "eafabeb1-af05-88cb-9735-a0b53b02ff13"
     - stage: uuid
-      stageUuid: "389b72e6-5073-8fee-92e2-18092dc66af9"
+      stageUuid: "c127667f-0cd5-8fb4-82d2-783ac4c4ef11"
 version: 2
 ---
 # self-reference — the self observes itself (under [[self]])

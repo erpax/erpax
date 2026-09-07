@@ -2,10 +2,10 @@
 name: reason
 description: "Use when documenting why a state changed — reason for rejection, reason for deletion/archival, reason for payment hold, audit finding reason code. Text or select; audit trail metadata. Captures intent."
 atomPath: "vocabulary/reason"
-coordinate: "vocabulary/reason · 2/share · 599a080c"
-contentUuid: "e076406c-5d9a-58f3-a69c-b5769f962c3d"
-diamondUuid: "703db94d-235c-8175-8659-33e5148d558d"
-uuid: "599a080c-2bb3-8662-bb90-65a79f178241"
+coordinate: "vocabulary/reason · 2/share · 63e9bb3b"
+contentUuid: "73e4e3dc-a689-5ba8-b680-23e0637e0524"
+diamondUuid: "45756016-f230-8cf7-9757-bad90a0166a6"
+uuid: "63e9bb3b-86c2-8766-8f93-935efbd3913c"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3e7ec8f8-4146-87ce-b30f-2681e08bffa0"
+  computationUuid: "4a09334e-7af3-8320-81fa-ef81a865cdaf"
   stages:
     - stage: path
       stageUuid: "1132c1cc-860b-8e7a-bfb9-e71c9cb4c864"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fc3d99ca-dc48-8338-bdd8-1ae634748e76"
     - stage: horo
-      stageUuid: "c91f653e-013b-8e90-bd19-9a6d9c412eee"
+      stageUuid: "fdbd81b9-8165-846e-b7a4-761613067cdd"
     - stage: seal
       stageUuid: "d53eb580-81fd-81ce-b952-e08ddfffdb88"
     - stage: uuid
-      stageUuid: "e2c8f1f1-32a3-8f0e-b526-0dd1d4913dc7"
+      stageUuid: "4f936f8a-15b4-81f5-9d3a-4e0e3b174957"
 version: 2
 ---
 # reason

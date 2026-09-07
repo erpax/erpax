@@ -2,10 +2,10 @@
 name: season
 description: "Use when output is bounded by a recurring climate window in the annual cycle — the growing/harvest season set by the frost-free period, the cool- vs warm-season crop split, and heat accumulation (growing degree days) rather than the calendar. The season is the time-axis bottleneck of agriculture: land × season caps how much can be grown; it is regional and probabilistic, never a copied calendar."
 atomPath: season
-coordinate: "season · 4/weave · f0c9bfe0"
-contentUuid: "01e06351-722f-550c-a012-99a322caa9e6"
-diamondUuid: "7ba2390e-b1d8-8bf0-91f5-9199f62bb25b"
-uuid: "f0c9bfe0-a6fe-891f-b86b-c989d542fcd4"
+coordinate: "season · 4/weave · 5fff7fb3"
+contentUuid: "f1cc2f68-5f75-5edf-8e91-77312f339786"
+diamondUuid: "a4516208-2760-86c5-84fb-ae0e9781ec67"
+uuid: "5fff7fb3-2cd6-815d-939d-a20ec690648c"
 horo: 4
 typography:
   partition: season
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "598ab4ad-084d-8074-b22f-f412283e80ba"
+  computationUuid: "e6724efc-92f5-8b59-968d-060d3ffa3dce"
   stages:
     - stage: path
       stageUuid: "a06c5aea-06e8-839a-bf73-bff93238b330"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "33644355-c2d3-8cde-99b4-7a3a545b08d7"
     - stage: horo
-      stageUuid: "d0180aaa-0d9c-8da4-87e9-ba750b649e35"
+      stageUuid: "09484a3f-8e8e-8684-a73c-da24bb9a3acc"
     - stage: seal
       stageUuid: "7ba4f872-08c1-88fc-ad93-f0e08ba8c491"
     - stage: uuid
-      stageUuid: "a3212287-52c5-8dac-9728-4831b395339f"
+      stageUuid: "fc5d57ef-5297-8d18-8217-e57eb40cded5"
 version: 2
 ---
 # season — the recurring climate window that bounds growth

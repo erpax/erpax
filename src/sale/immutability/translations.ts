@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "immutability",
-    "uuid": "3f42631a-4a3f-889f-9de0-d1528ad32d1e",
+    "uuid": "07c83155-35e8-845b-b48f-bd7d623b66eb",
     "words": [
       "immutability"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enforcing that a fiscalised sale cannot be edited or deleted — under Наредба Н-18 a closed fiscal sale is corrected by a reversal, never by mutation.",
-    "uuid": "922693d4-5d87-8353-8ff7-8652f62e9d67",
+    "uuid": "246dcd0e-728c-8da0-8d6e-c420c8fda60e",
     "words": [
       "use",
       "when",

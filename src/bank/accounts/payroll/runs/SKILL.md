@@ -2,11 +2,11 @@
 name: runs
 description: "Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection."
 atomPath: "bank/accounts/payroll/runs"
-coordinate: "bank/accounts/payroll/runs · 7/descent · 7a4ee18a"
-contentUuid: "b049f6d3-8035-5032-91c3-4b4d1920f274"
-diamondUuid: "3dc67cbd-1c4d-861b-a2c6-97e41c377e26"
-uuid: "7a4ee18a-2267-8dff-96a7-c1b1484e58a1"
-horo: 7
+coordinate: "bank/accounts/payroll/runs · 5/round · e1078ce4"
+contentUuid: "7ad000a8-2e8b-5388-89ae-990bb3658fce"
+diamondUuid: "83e55948-5319-85e4-8cbf-e2de65b2bd91"
+uuid: "e1078ce4-733d-83f2-be7a-6d93e00fca4f"
+horo: 5
 typography:
   partition: bank
   bondDegree: 42
@@ -41,7 +41,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "000223d8-edd8-84f0-b62c-517d6f1e88bc"
+  computationUuid: "b087852a-8de5-871d-8f36-8ea92da13832"
   stages:
     - stage: path
       stageUuid: "e00cdde0-106c-8683-98dd-e7a809314746"
@@ -52,11 +52,11 @@ signatures:
     - stage: links
       stageUuid: "dc485665-41d9-8d5c-a6f4-57fd5be60fe6"
     - stage: horo
-      stageUuid: "b03fd4ab-3d72-884d-9597-a6634d351017"
+      stageUuid: "40be9e3e-6214-8cd6-9270-099dc8640874"
     - stage: seal
       stageUuid: "74143566-4348-8b45-a1d7-072cfcf61520"
     - stage: uuid
-      stageUuid: "a7c90426-22a7-84b1-82c9-f9da39f4c2ba"
+      stageUuid: "2f810a9a-42f6-84bc-944a-be8ab3cd8522"
 version: 2
 ---
 # payroll-runs

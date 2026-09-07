@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "import",
-    "uuid": "714f40bb-aa65-8536-9d92-3925d30947b7",
+    "uuid": "a1e3bf83-67d3-8454-a725-3706293e1467",
     "words": [
       "import"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about import discipline as a security property — anything importing not from an atom's index is a deep coupling past the seal, a measurable gap that lowers tamper-cost; this finds the violations and prices them.",
-    "uuid": "2b3820aa-efd7-8fdf-bf69-241ab3ae0ca1",
+    "uuid": "9f53bb5c-0927-8737-b3b5-d388fce3e850",
     "words": [
       "use",
       "when",

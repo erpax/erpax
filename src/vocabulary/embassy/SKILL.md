@@ -2,11 +2,11 @@
 name: embassy
 description: Use when reasoning about embassy — An embassy.
 atomPath: "vocabulary/embassy"
-coordinate: "vocabulary/embassy · 1/base · 75761733"
-contentUuid: "eb759b55-0dc7-5342-8320-a098c1d2c44e"
-diamondUuid: "8f81e1ae-ef82-8086-9e61-1d7f0d053b53"
-uuid: "75761733-c55b-84b3-8f26-f885cde7c43a"
-horo: 1
+coordinate: "vocabulary/embassy · 2/share · 7fca3e7d"
+contentUuid: "db52f359-5f36-5e66-97d0-71c0f436a290"
+diamondUuid: "40948c83-a775-8804-a3bd-4971cf0777df"
+uuid: "7fca3e7d-567f-84b6-970b-9c348b65e55d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a3c93a6a-79ed-8b01-ad0b-b02067619c66"
+  computationUuid: "11deb779-fec2-890c-acce-277b4341d521"
   stages:
     - stage: path
       stageUuid: "eaa2e440-783b-86f6-ac60-aade5ecdf7a6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "181afd67-2827-8f54-a21e-6f9c1eff504d"
     - stage: horo
-      stageUuid: "0ba8d4c0-c36f-828c-a4b1-ae78d7e2c5d0"
+      stageUuid: "47d27509-cd4a-8de7-baf3-cdf78ac1940d"
     - stage: seal
       stageUuid: "135b0054-30fa-8a1d-8dc7-649f2ef9d22f"
     - stage: uuid
-      stageUuid: "6a8ace2c-2447-8676-a9a3-a470e0e0709c"
+      stageUuid: "b8f691e9-8c78-86b7-aa01-b7fea6fe925a"
 version: 2
 ---
 # embassy

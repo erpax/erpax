@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "impact",
-    "uuid": "f63fefe5-1aa9-8999-bc0a-abe85223ed21",
+    "uuid": "e81fa052-d622-8342-9ace-b0b32fb2d308",
     "words": [
       "impact"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about impact — The quiet hero: a narrow column holding either rendered children or CMS rich text.",
-    "uuid": "47578854-1571-861c-b602-350c0ad6cdcf",
+    "uuid": "81abf824-0140-8636-90c2-091a324aaa57",
     "words": [
       "use",
       "when",

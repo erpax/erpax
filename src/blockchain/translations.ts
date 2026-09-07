@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "blockchain",
-    "uuid": "1cdb01ee-aee6-8232-9144-fb29aabaef7e",
+    "uuid": "c594d80a-82d7-81e2-8a00-814289979148",
     "words": [
       "blockchain"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax AS a blockchain — the computed proof that it is one. A content-addressed, Merkle-folded, tamper-evident, externally anchored ledger whose security is QUANTUM, not proof-of-work: the double-torus drives forge-cost to ∞ at coverage 1 while verify stays O(N). Six properties, each computed on the live matrix; the conjunction is the proof.",
-    "uuid": "34a86240-13b5-81bf-910f-927769e108d0",
+    "uuid": "0d37cd8a-2e7f-81a0-899d-f821fecd25b4",
     "words": [
       "use",
       "when",

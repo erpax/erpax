@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "motel",
-    "uuid": "26480e33-48c2-8845-937f-0d20562fcdf5",
+    "uuid": "29912da0-7806-80b1-b2f1-3ec9d9c481cf",
     "words": [
       "motel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about motel — A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
-    "uuid": "634d1816-fc32-888c-a865-f726deee601c",
+    "uuid": "30e36436-d3a1-8922-8127-3c943373b61e",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "boltzmann",
-    "uuid": "c9dbc016-86d6-8628-a86f-86b4d9ccdf33",
+    "uuid": "e10e8c18-e1ac-8ebe-b7fd-697767d6ddd2",
     "words": [
       "boltzmann"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about entropy as microstate-counting — Boltzmann's S = k·ln W: the entropy of a macrostate is the log of W, the number of microstates that look the same (W=1 ⇒ S=0). It is extensive (independent systems' entropies add, since ln turns product into sum) and its Gibbs form S = −k·Σ pᵢ ln pᵢ is maximised, equal to k·ln W, exactly when uniform. The microstate foundation under erpax's reciprocity-entropy; DRY collapse removes configurations so entropy falls.",
-    "uuid": "79344199-364c-89a8-8402-c9123b91f2e4",
+    "uuid": "f06a2d7c-30be-8907-b92a-cadef93a3ed5",
     "words": [
       "use",
       "when",

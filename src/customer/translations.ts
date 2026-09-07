@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "customer",
-    "uuid": "38a1437b-668b-87e9-95b0-263c381dd799",
+    "uuid": "2a15613d-4e45-8c2c-8b15-3cf01cf8c6b6",
     "words": [
       "customer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about customer — Party placing the order or paying the invoice.",
-    "uuid": "ead806c5-cc62-81a7-896f-5d2f065b0a35",
+    "uuid": "515a6208-888a-8ea2-bb8d-6543d527cf20",
     "words": [
       "use",
       "when",

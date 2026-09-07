@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fixpoint",
-    "uuid": "62fc8711-73ea-888e-b7dc-1ce7718ad305",
+    "uuid": "4c7409bc-2e6c-8e44-b8c0-d5e86a99c5c9",
     "words": [
       "fixpoint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the measurer is inside the system it measures — a self-applied measure either REFUTES itself or is a FIXED POINT, with no third outcome. Proven by throughVoid(5)=5 (the void pivot) and auditAuditors()=[] (the auditor passes its own audit). The paradox resolves computationally, via fixed-point math, not physics.",
-    "uuid": "1419adbc-70ef-826a-9c83-eb244ed486ba",
+    "uuid": "0d29e0ac-dc4f-83cc-99b4-0541b9049c2f",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: disclosure
 description: "Use when determining which items require quantitative and narrative disclosure in financial statements — mandatory, recommended, and suggested per IFRS/GAAP; gate for materiality and scope"
 atomPath: "vocabulary/disclosure"
-coordinate: "vocabulary/disclosure · 1/base · 3c75b9f6"
-contentUuid: "6ad63a7a-7011-5b85-ae62-fa2b0e667ca7"
-diamondUuid: "9b9ef848-3485-856e-ad68-59acf3292229"
-uuid: "3c75b9f6-9135-85ce-96a2-003e416694fe"
-horo: 1
+coordinate: "vocabulary/disclosure · 7/descent · 0e654db0"
+contentUuid: "93449343-6289-559a-ae68-be5300ffc96c"
+diamondUuid: "13a42f1b-328c-8ee6-8f8a-a03f7cf40040"
+uuid: "0e654db0-d3d2-85e9-a55b-50cb27615248"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "caca945e-50e3-89ee-ab4a-9327992b25bb"
+  computationUuid: "94311200-6375-8d80-b98a-80574e471cdc"
   stages:
     - stage: path
       stageUuid: "3847b321-68a1-8ae6-af6d-0e02ece855e0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "98d49da4-d898-866e-8dce-d0ba6af2b5ab"
     - stage: horo
-      stageUuid: "c8e57a49-f889-8a9f-ac17-0b6bc2a1570a"
+      stageUuid: "da3650a2-d330-8f7f-bd12-23c88f00058f"
     - stage: seal
       stageUuid: "58776837-66f1-8d29-afa2-e8ca4e0a9e09"
     - stage: uuid
-      stageUuid: "57ba3e4a-a908-82c3-bf43-a419146d6aeb"
+      stageUuid: "ceee8f76-ece1-8c61-aae1-4b5cef67bbd9"
 version: 2
 ---
 # disclosure

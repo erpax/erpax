@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "paper",
-    "uuid": "45317fbf-2b82-83c4-99cf-e4a39f69e13b",
+    "uuid": "602a5afd-f71d-80bb-b798-d8b9467ae0b5",
     "words": [
       "paper"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a sealed claim might warrant a publication — emits a lean LaTeX paper and an HONEST prior-art verdict, where an empty Zenodo search is a lead and never a finding.",
-    "uuid": "7a9dfa49-918e-8f6b-a380-93b4a395a72d",
+    "uuid": "2cbe8685-b0f9-8609-aa69-0c0272ebf89e",
     "words": [
       "use",
       "when",

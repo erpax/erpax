@@ -2,18 +2,18 @@
 name: observability
 description: "Use when making systems instrumentable — metrics (gauge/counter/histogram/summary), distributed tracing, structured logging, cardinality explosion in high-dimensional metrics, sampling strategies for observability."
 atomPath: "vocabulary/observability"
-coordinate: "vocabulary/observability · 8/crest · 89506f4d"
-contentUuid: "1959df6f-fa82-53ae-aab5-1ef873c0e2f9"
-diamondUuid: "bf08605a-d5df-828a-a4ae-0d8968d37078"
-uuid: "89506f4d-709b-8b28-8e40-48fd9d0033cf"
-horo: 8
+coordinate: "vocabulary/observability · 1/base · 35d35f4d"
+contentUuid: "c0ef22f6-5f8b-5d5b-9730-eec23ad44406"
+diamondUuid: "2de285a3-1ad5-8bbf-9dc3-2d5513f62017"
+uuid: "35d35f4d-f6e1-8bbf-b41e-d00a949c0893"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6b7fb624-214a-8930-8bb1-0ac35ec10cc9"
+  computationUuid: "4a3be165-90bf-8024-8970-c53ac9c7fcbf"
   stages:
     - stage: path
       stageUuid: "89e333b9-2ae7-81ad-a74a-cd99cb420152"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "45ed9431-aee7-8e10-abab-f676dc631762"
     - stage: horo
-      stageUuid: "efbbcf94-ab42-8b5e-8ee5-c93b45d63913"
+      stageUuid: "7fd1b8ac-2e05-8e3b-b27f-b7253e84edc0"
     - stage: seal
       stageUuid: "163471d8-d193-803f-a130-b351685a6d9d"
     - stage: uuid
-      stageUuid: "c33bf116-46bd-8008-a4dc-3415fd9ee8d2"
+      stageUuid: "f85b4ace-140f-8921-a819-e5465f6bd3ab"
 version: 2
 ---
 # observability

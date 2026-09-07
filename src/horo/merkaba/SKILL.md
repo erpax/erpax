@@ -2,18 +2,18 @@
 name: merkaba
 description: "Use when a figure over the digits is claimed to have a symmetry — structure and symmetry group are two different claims, and the second is not inherited from the first. Ten symbols are not nine: AGL(1,Z/9) has no well-defined action here, AGL(1,Z/10) preserves only the identity, and an exhaustive search over all 10! relabellings finds 24 symmetries that never exchange the figures."
 atomPath: "horo/merkaba"
-coordinate: "horo/merkaba · 4/weave · 00f51637"
-contentUuid: "e66c4a71-875e-553d-9d1d-8c3078a8da56"
-diamondUuid: "03c2a111-791f-8109-8dfc-eaf083f28669"
-uuid: "00f51637-4223-8f00-b637-4a569eae4635"
-horo: 4
+coordinate: "horo/merkaba · 5/round · 047d2d6a"
+contentUuid: "39e8fd3a-4449-5b40-99a1-8a1737185af9"
+diamondUuid: "7eb6b0e4-81ba-873e-91f9-d784d35b9506"
+uuid: "047d2d6a-6503-8f65-8f8f-74da5bf0e9d1"
+horo: 5
 typography:
   partition: horo
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e4ebed5c-ea30-8c70-b54c-b5a6a41c0c1d"
+  computationUuid: "f74cf039-6778-8d5b-aa9d-d57056862336"
   stages:
     - stage: path
       stageUuid: "fd3f9857-248d-897b-b9b9-90b7f6c0fec9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "157a0e2e-8c95-8556-a8f3-b70177575e72"
     - stage: horo
-      stageUuid: "b77c1296-38a1-81d2-bd24-86a1a23e4b8c"
+      stageUuid: "cb93f71a-3f5b-8871-8824-ba4ffed64d41"
     - stage: seal
       stageUuid: "80d3f50f-6e38-81fd-bcc0-aab0a5c76153"
     - stage: uuid
-      stageUuid: "38ad7600-4f9f-8cf9-9ffa-30d43271d275"
+      stageUuid: "d2af52a3-ec89-8ad4-9e07-370a4228e94a"
 version: 2
 ---
 # merkaba — the figure was right, the group was wrong

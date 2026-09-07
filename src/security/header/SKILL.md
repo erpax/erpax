@@ -2,11 +2,11 @@
 name: header
 description: "Use when implementing or referencing `_security-headers/` — Composite HTTP security-headers module."
 atomPath: "security/header"
-coordinate: "security/header · 4/weave · 9928f835"
-contentUuid: "76fbfa34-4b06-5464-a33d-49b6a79fc5b7"
-diamondUuid: "eabeb711-5611-8f9c-aff5-091cb91c9217"
-uuid: "9928f835-5e95-85b2-bdbc-c9f066953ec1"
-horo: 4
+coordinate: "security/header · 5/round · 3b9339a7"
+contentUuid: "7abbc4e5-4755-5454-adf8-73f7dd8b8266"
+diamondUuid: "ea458323-6556-89aa-9091-777b9961273d"
+uuid: "3b9339a7-03c0-869b-97b9-15db2d62b797"
+horo: 5
 typography:
   partition: security
   bondDegree: 21
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e589e048-0e41-8e8f-8c3a-015c492f6610"
+  computationUuid: "d89a695d-fd66-8454-8f55-7ddc6acf510d"
   stages:
     - stage: path
       stageUuid: "58b85437-450d-8dac-a4d8-2398c112c444"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "1a1cccf0-6988-8e89-857f-4a484420fc9e"
     - stage: horo
-      stageUuid: "0779d962-c1fd-80c5-83c9-ec25551eaf1b"
+      stageUuid: "44a6bc62-4f5f-8d66-acbe-9044edd3fd12"
     - stage: seal
       stageUuid: "c3d992d3-6cae-88d7-864d-bbaa8f6ae57a"
     - stage: uuid
-      stageUuid: "bbdb40be-975c-866d-9709-bee5d6f3b8f5"
+      stageUuid: "6c3e208f-e740-8ca5-b78d-d0df20028d04"
 version: 2
 ---
 # `_security-headers/` — Composite HTTP security-headers module

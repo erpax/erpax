@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "algorithm",
-    "uuid": "4da7a844-9821-8a42-be82-02b30880c77c",
+    "uuid": "d7af9c44-d416-8858-a369-89b60ff29c01",
     "words": [
       "algorithm"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when running search/sort primitives under the machine — executable algorithms nested under computer.",
-    "uuid": "40b64e2e-57e7-8b6b-8027-37c3ac27dd07",
+    "uuid": "d33bb61b-de0f-8a59-916c-7c01c31d6118",
     "words": [
       "use",
       "when",

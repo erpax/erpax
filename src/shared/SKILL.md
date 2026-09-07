@@ -2,11 +2,11 @@
 name: shared
 description: "Use when reasoning about shared — One accountable object, two coexisting facets. Every standards rule the codebase declares about money / dates / addresses / common columns lives in one of these shared atoms; highe"
 atomPath: shared
-coordinate: "shared · 5/round · 90261325"
-contentUuid: "63a7cf95-520e-550a-9f56-65cf0002a133"
-diamondUuid: "44418b02-0690-84eb-ad94-d6e2ddfbfa41"
-uuid: "90261325-945f-8669-88b4-04504ee2e4e1"
-horo: 5
+coordinate: "shared · 1/base · d7473d6d"
+contentUuid: "c1e14f4d-b0eb-5069-ba5c-b7cc5f007b42"
+diamondUuid: "32729c47-1b97-82b7-8577-8d2bb528dcfc"
+uuid: "d7473d6d-3c7f-8a7f-a61d-ecee5d613e9d"
+horo: 1
 typography:
   partition: shared
   bondDegree: 7
@@ -48,7 +48,7 @@ standards:
   - "WCAG-2.1` §1.3.1 info-and-relationships; level-AA shared-atom-accessibility"
 bindings: []
 signatures:
-  computationUuid: "67634072-ecbf-8c1a-8ecf-173f183f56bb"
+  computationUuid: "f32349ea-854c-8027-872a-26f0e490c0a7"
   stages:
     - stage: path
       stageUuid: "960ddeff-b79e-8b8f-9a23-a4a598e26676"
@@ -59,11 +59,11 @@ signatures:
     - stage: links
       stageUuid: "f0f687fc-23c4-8af1-aa3c-60a76e00d7bf"
     - stage: horo
-      stageUuid: "24d5e94e-837e-8ada-87d6-5f3db4f93fd9"
+      stageUuid: "88f53621-0a56-89bc-9e23-17a383e98e1b"
     - stage: seal
       stageUuid: "0227a733-8774-8313-b187-6399974fbf22"
     - stage: uuid
-      stageUuid: "7784a669-6ec8-85ed-9837-69299c267159"
+      stageUuid: "caf4b473-82d6-8c09-a099-65f2419b7c6d"
 version: 2
 ---
 # shared

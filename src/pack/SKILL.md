@@ -2,11 +2,11 @@
 name: pack
 description: Use when modelling one pack — the singular model of the packs collection (the plural store); a bundled unit of items handled as one.
 atomPath: pack
-coordinate: "pack · 8/crest · c4f5e184"
-contentUuid: "31974a13-2e15-5f5a-9d74-b98295bff280"
-diamondUuid: "8b847c0e-0c0d-8b7a-a25f-84b162e29620"
-uuid: "c4f5e184-499c-890c-82e5-2ba7438e20b7"
-horo: 8
+coordinate: "pack · 1/base · 44f42fea"
+contentUuid: "800038c3-aa67-576f-979d-414ccb702b69"
+diamondUuid: "be7370d5-b0df-8c08-b21d-885d7cf87f24"
+uuid: "44f42fea-d7be-8fe6-b9c6-17b3098406f3"
+horo: 1
 typography:
   partition: pack
   bondDegree: 12
@@ -15,7 +15,7 @@ standards:
   - "UN-CEFACT"
 bindings: []
 signatures:
-  computationUuid: "ab3ae692-b94f-88e8-841f-ac211759765b"
+  computationUuid: "5601947b-5798-816a-9556-6d93e84072e2"
   stages:
     - stage: path
       stageUuid: "840b847c-f83b-8e52-9b65-f101339b6658"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "2b633144-9f2a-84da-a07f-65ed382ae12a"
     - stage: horo
-      stageUuid: "e135c2b0-8961-8675-b92f-e135afa7ebf4"
+      stageUuid: "154ad417-bc34-81c0-8823-81ea905278fd"
     - stage: seal
       stageUuid: "fd3963f0-80fe-84df-b8b9-fce1772797bc"
     - stage: uuid
-      stageUuid: "4a62b134-5381-8acc-b05e-69138f68e3aa"
+      stageUuid: "e60d6aec-503d-8971-8651-f516e6614f58"
 version: 2
 ---
 # pack — the model of one [[packs]] row

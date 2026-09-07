@@ -2,11 +2,11 @@
 name: arrive
 description: "Use when reasoning about arrive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/arrive"
-coordinate: "vocabulary/arrive · 1/base · be0ac416"
-contentUuid: "d845754c-dda4-57d1-995c-503e7b5fcf43"
-diamondUuid: "6a90db92-849a-8b0c-a5fd-9075ab55b493"
-uuid: "be0ac416-458d-8b0c-acef-d6ac1ddda315"
-horo: 1
+coordinate: "vocabulary/arrive · 4/weave · 53486c11"
+contentUuid: "56f981bd-17a2-5751-885c-e2c43c9628b3"
+diamondUuid: "9db22e42-506a-813d-8c44-bfbc3bccfcf4"
+uuid: "53486c11-4f53-8484-ad00-dce26254528d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8ab7a026-8249-8211-ad50-92b5eb592b13"
+  computationUuid: "0122793a-9e62-8171-bf12-9ab7bbd07892"
   stages:
     - stage: path
       stageUuid: "41510400-1966-8bab-8f7f-575d91cd92ae"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cf03e5df-34f7-8de9-85d1-bf0d86644de8"
     - stage: horo
-      stageUuid: "8a620f5e-8f26-8b80-b05d-94b3c2b5089e"
+      stageUuid: "ce4edefe-9d82-84e2-85b3-b6ea5d452f35"
     - stage: seal
       stageUuid: "75a6b719-1ee4-814a-b317-126fa4d5ba72"
     - stage: uuid
-      stageUuid: "62b4028b-b2ab-8456-a616-e0859b2ada71"
+      stageUuid: "acf04688-7c06-8766-8813-6481e1c6aa9b"
 version: 2
 ---
 # arrive

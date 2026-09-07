@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fiscal",
-    "uuid": "4bdede83-6f45-8fb9-939a-eaefbf41dcf4",
+    "uuid": "e469f68b-3b5f-836a-9055-07ec1e098a04",
     "words": [
       "fiscal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the fiscal side of a sale — the parent atom for the СУПТО fiscalisation family: the tenant's fiscal context, the receipt it issues, the revenue it recognises, and the references that must resolve.",
-    "uuid": "3bbfa4ce-771a-83b8-ac5f-259c696b9b5b",
+    "uuid": "d37ce70b-e360-8d52-a40a-978ea9b76ff2",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "convention",
-    "uuid": "cbb5eff6-e055-8b3d-a5ad-9f799575f9bb",
+    "uuid": "40ac22a6-7a01-87a7-9d82-fa15ba15b3fc",
     "words": [
       "convention"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the corpus's conventions as a layer — each convention is a check-atom with a live coverage(); the collider composes them into one tamper-cost, infinite only when every convention is computed clean (zero entropy).",
-    "uuid": "0b62d695-1788-8d1c-b8ce-c224df4d8b69",
+    "uuid": "8da0c4f0-e6bc-8a40-961b-a6a5dd47e211",
     "words": [
       "use",
       "when",

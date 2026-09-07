@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "routing",
-    "uuid": "95425efc-2f22-8c75-b22e-13586ee323ae",
+    "uuid": "a6716b67-19f7-8fb2-94e9-70145ed32206",
     "words": [
       "routing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about routing — Session routing — improve, append, seal chat sessions",
-    "uuid": "09deac75-0d33-8366-a4b1-4cc4554682b9",
+    "uuid": "3571c700-e35c-8630-8900-08f00d217e67",
     "words": [
       "use",
       "when",

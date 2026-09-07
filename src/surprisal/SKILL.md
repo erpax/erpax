@@ -2,18 +2,18 @@
 name: surprisal
 description: "Use when reasoning about the information of one event — surprisal I(p) = −log₂(p) bits. A certain event (p=1) carries zero bits; a rare event carries many. It is the bit-cost of a specific outcome, and in erpax the bit-cost of a specific forgery: forging a thing of probability p under the wired graph costs −log₂(p) bits. Additive for independent events (I(p·q)=I(p)+I(q)), so improbabilities stack like uuid-chained dimensions; expected surprisal is Shannon entropy."
 atomPath: surprisal
-coordinate: "surprisal · 8/crest · 744f5311"
-contentUuid: "ed827a47-fe00-5e76-b5d1-59870caf8a84"
-diamondUuid: "50f98613-48c3-810d-835d-4897b892eb05"
-uuid: "744f5311-e81a-8b40-993e-663bd48d5ab4"
-horo: 8
+coordinate: "surprisal · 2/share · e7d317f9"
+contentUuid: "ff0c3fd6-c36a-5e74-8bfc-6a8847a8716c"
+diamondUuid: "e6abcf64-e81f-80b2-ac95-62eedd7246b2"
+uuid: "e7d317f9-9345-8744-8a77-1da0cc2606b8"
+horo: 2
 typography:
   partition: surprisal
   bondDegree: 25
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d966734b-9530-8443-a7d3-f3006685ce32"
+  computationUuid: "e4bc7fcc-b23b-8145-a337-172a67548f1f"
   stages:
     - stage: path
       stageUuid: "5aa3857e-6c32-815d-aab3-afdce4634b64"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0b114338-4583-84a6-a46d-2b578267bf30"
     - stage: horo
-      stageUuid: "bdaa86b4-81ea-8c42-a537-224d6944ac78"
+      stageUuid: "a4e764ab-9558-89c8-9b2a-b640fea800fc"
     - stage: seal
       stageUuid: "dee06257-11ca-85a2-839f-ec7bb35b10a9"
     - stage: uuid
-      stageUuid: "d8fbc311-e9ac-8658-90fa-d6cc2a3205ae"
+      stageUuid: "cc0e1b68-79c7-86e1-b0f6-bbc2afdd8b82"
 version: 2
 ---
 # surprisal — the bit-cost of one event (−log₂ p)

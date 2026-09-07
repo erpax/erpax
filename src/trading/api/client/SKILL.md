@@ -2,11 +2,11 @@
 name: client
 description: Use when reasoning about the api API client.
 atomPath: "trading/api/client"
-coordinate: "trading/api/client · 8/crest · 48471e56"
-contentUuid: "d08f95d4-ba25-593f-8475-93e67b30d20f"
-diamondUuid: "2ebbcab8-c49c-8ffa-878a-29d36e2275fa"
-uuid: "48471e56-9781-816d-b06a-654d77240df8"
-horo: 8
+coordinate: "trading/api/client · 7/descent · b9699a28"
+contentUuid: "d3b4ebf7-a266-5fac-b1ee-7746f1f3dde6"
+diamondUuid: "1321e5c5-e33c-82cd-b192-07445f081073"
+uuid: "b9699a28-d8c0-88b7-b9ec-1f251f13a9a1"
+horo: 7
 typography:
   partition: trading
   bondDegree: 6
@@ -18,7 +18,7 @@ standards:
   - "RFC-9110 http-semantics REST-client"
 bindings: []
 signatures:
-  computationUuid: "72854f33-991f-84ac-985d-6368b29c04f7"
+  computationUuid: "b2a10d0e-2f3c-8289-afda-e27cd624a828"
   stages:
     - stage: path
       stageUuid: "8e0d3da0-86c8-8e6d-84d9-e16bc53ab097"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "24693ad2-5abf-8c04-99f5-472d5bac91ae"
     - stage: horo
-      stageUuid: "17b9fcac-c612-8f40-811b-a4c7a0411640"
+      stageUuid: "44d29e75-906b-80df-a711-f61e24f90c97"
     - stage: seal
       stageUuid: "40daf3f2-9c83-89bb-80a0-20570cb42fb9"
     - stage: uuid
-      stageUuid: "3f16637f-9bc4-846c-98b1-a5db73c769aa"
+      stageUuid: "a838769d-36d0-891c-93ef-45549248a915"
 version: 2
 ---
 # trading/api/client

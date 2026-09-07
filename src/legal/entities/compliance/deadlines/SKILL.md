@@ -2,11 +2,11 @@
 name: deadlines
 description: "Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection."
 atomPath: "legal/entities/compliance/deadlines"
-coordinate: "legal/entities/compliance/deadlines · 7/descent · 34a25880"
-contentUuid: "7b54bb06-afe8-5b21-a784-086065597117"
-diamondUuid: "842a348f-f4e6-84ca-af7a-16e24d3bcf94"
-uuid: "34a25880-6339-857d-a170-706f8f25589a"
-horo: 7
+coordinate: "legal/entities/compliance/deadlines · 8/crest · 438498c0"
+contentUuid: "46aa15e6-f53c-5fca-9c7d-f1f9f02eb976"
+diamondUuid: "bad4eed4-d274-8f26-a5d3-2853b41fbb33"
+uuid: "438498c0-8121-8fda-8952-30fa327b3893"
+horo: 8
 typography:
   partition: legal
   bondDegree: 9
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c9732e8f-0587-8491-8472-95c765f924ec"
+  computationUuid: "b7f2f0b1-a000-8223-8198-7199df0b4149"
   stages:
     - stage: path
       stageUuid: "f22d93d6-7327-8c6d-9c07-15621935a2e4"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "f408201f-2111-832f-9872-0d3fca93373c"
     - stage: horo
-      stageUuid: "77846f36-ede8-8bae-a0d2-1b86839d2d51"
+      stageUuid: "f0f21422-3365-802b-b8f8-0560fb635d19"
     - stage: seal
       stageUuid: "3899d114-8c69-8f0f-9507-8244d1e06c34"
     - stage: uuid
-      stageUuid: "93cbe902-b6fc-890a-b37c-214226815343"
+      stageUuid: "9a7e423d-a123-8d96-a7e6-73cb6cb0a548"
 version: 2
 ---
 # compliance-deadlines

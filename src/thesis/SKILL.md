@@ -2,11 +2,11 @@
 name: thesis
 description: Use when reasoning about thesis — A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.
 atomPath: thesis
-coordinate: "thesis · 4/weave · 14157459"
-contentUuid: "7ed7728c-34fa-536e-8dbf-a441e2ee7367"
-diamondUuid: "3c0f0b17-f885-8d06-bd96-1936af8b3917"
-uuid: "14157459-d1e1-828a-b7c5-f2cf960c06d9"
-horo: 4
+coordinate: "thesis · 8/crest · 117e370b"
+contentUuid: "613340c5-e99e-55a9-b032-227ac0b7ba83"
+diamondUuid: "f4f9942b-882e-86ec-aeb5-58cf0b775530"
+uuid: "117e370b-6b01-8e78-ad23-91cff03079d5"
+horo: 8
 typography:
   partition: thesis
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "422e7486-8569-8aed-8751-5ca61e6cab2c"
+  computationUuid: "96170a5c-76aa-86bb-b899-80abc331ff7e"
   stages:
     - stage: path
       stageUuid: "627450bc-4b23-8ba0-8829-eecbdda0b003"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "874a2634-bd3b-8623-9c45-4cf4c8bf2df5"
     - stage: horo
-      stageUuid: "2150627b-da00-8bd4-ae00-6650652d6723"
+      stageUuid: "3371d8aa-33f7-816f-a908-ad779fdaf77e"
     - stage: seal
       stageUuid: "86a4192b-aad0-8c5c-bd67-60fe702d5f8d"
     - stage: uuid
-      stageUuid: "da3bfe9e-bcb7-887b-8538-3ac7c7a7a29a"
+      stageUuid: "4a52d238-869d-8f70-83ca-19f6c375b3f9"
 version: 2
 ---
 # thesis

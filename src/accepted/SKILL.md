@@ -2,11 +2,11 @@
 name: accepted
 description: "Use when reasoning about accepted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: accepted
-coordinate: "accepted · 2/share · 6df35381"
-contentUuid: "37ad67d4-32eb-5a88-9fef-6b15bd703dd8"
-diamondUuid: "3d7efb3d-5466-849f-81b3-c2473b68f073"
-uuid: "6df35381-690c-8c63-9fea-9a0b0bc511bc"
-horo: 2
+coordinate: "accepted · 1/base · b4bdcf05"
+contentUuid: "3072b866-1ed9-5bc6-a07a-354d4a1cbeff"
+diamondUuid: "317696de-3d54-8232-a329-0e2dc38e4c93"
+uuid: "b4bdcf05-00fd-813b-a7a9-f185df86d6b5"
+horo: 1
 typography:
   partition: accepted
   bondDegree: 34
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9db9a2b0-5da1-8159-83cc-a9bdebda9152"
+  computationUuid: "f2596d5e-b850-848e-b962-d502204ceeb1"
   stages:
     - stage: path
       stageUuid: "22fb4cf8-f86e-8087-a8e8-f018bc10bd08"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f909769d-608d-837e-80be-594ad8305568"
     - stage: horo
-      stageUuid: "c5e91248-7cde-8182-bf3d-26d418cfdd9b"
+      stageUuid: "a88df7e1-f121-811a-ba02-0f28e53359e6"
     - stage: seal
       stageUuid: "6c81897a-0b5b-8226-8693-7ea3e96813da"
     - stage: uuid
-      stageUuid: "7a48ee1e-003a-8bb1-a88a-13268ae207dc"
+      stageUuid: "2a7130d0-efa1-8c9f-88a9-1edb9b6a09de"
 version: 2
 ---
 # accepted

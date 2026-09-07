@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chain",
-    "uuid": "25037ae0-e28c-84dd-a17e-9793fa9b2065",
+    "uuid": "3a6408fb-cca1-89de-ad88-0b3a3da56f8b",
     "words": [
       "chain"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when you need the canonical business-chain barrel — the 15+ registered (collection, action, emitted-event) workflows that map to published process standards (SOX P2P, IFRS-15 over-time, IFRS-16 lease cycle), each encoded ONCE with its Socratic check, plus the runner, context, and producer auto-wiring.",
-    "uuid": "c1904eb3-033a-8632-886a-0f2cbd1e3574",
+    "uuid": "c3e30bc1-ccda-80de-b4be-a921d755f509",
     "words": [
       "use",
       "when",

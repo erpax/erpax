@@ -2,10 +2,10 @@
 name: audit
 description: "Use when capturing compliance/evidence metadata — audit fields (createdBy, createdAt, updatedBy, updatedAt, deletedAt), audit trail events, audit evidence, audit finding. Standard immutable history; drives IFRS/SOX compliance. Often shared across all collections via auditFields() helper."
 atomPath: audit
-coordinate: "audit · 5/round · a36f680b"
-contentUuid: "4d76f8db-42a4-5839-97e8-f5a13fd20dce"
-diamondUuid: "e8b2c36b-fd37-85df-9320-cae1395fcb3f"
-uuid: "a36f680b-fe27-8a3d-a4ad-4edb170d0f0b"
+coordinate: "audit · 5/round · 0d0d4f13"
+contentUuid: "c540bbd6-6703-5594-b19b-4e0f80dd52e9"
+diamondUuid: "a9169c37-57ec-81c9-8ba4-21456af8b422"
+uuid: "0d0d4f13-780d-8e4c-880f-c682957c431f"
 horo: 5
 typography:
   partition: audit
@@ -35,7 +35,7 @@ bindings:
   - "analytics_engine_datasets/ANALYTICS_GL"
   - "analytics_engine_datasets/ANALYTICS_JOBS"
 signatures:
-  computationUuid: "30848f33-db8e-893c-a2f9-ff97217e6e6c"
+  computationUuid: "4e9e050c-b4c8-8803-af17-b3156211519b"
   stages:
     - stage: path
       stageUuid: "5818acc2-eaa3-8ca0-aad3-692b527dd02b"
@@ -46,11 +46,11 @@ signatures:
     - stage: links
       stageUuid: "f7d19d10-3870-85e4-a953-4457e25b4b18"
     - stage: horo
-      stageUuid: "d5011f21-2a4d-87cf-9fb6-77dfba3cbbe9"
+      stageUuid: "64364ad9-ccfb-850b-a598-e9e98f2a4ddf"
     - stage: seal
       stageUuid: "0a271ddf-dec3-8029-9575-b0feb2e7acbf"
     - stage: uuid
-      stageUuid: "805c0e60-88b6-8ccd-94b0-e8541fa5b460"
+      stageUuid: "801a9fc4-43c0-8d02-96f1-f6ef06af5334"
 version: 2
 ---
 # audit

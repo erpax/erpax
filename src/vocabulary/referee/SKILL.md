@@ -2,11 +2,11 @@
 name: referee
 description: "Use when reasoning about referee — An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective f"
 atomPath: "vocabulary/referee"
-coordinate: "vocabulary/referee · 7/descent · 1dcbfe6b"
-contentUuid: "49d8db8c-62c3-5eb6-8c07-cb9c1ec41158"
-diamondUuid: "136ac6c8-7e09-8e46-b560-cd4046d5a2c1"
-uuid: "1dcbfe6b-15cc-8c81-9693-d3b24b443c20"
-horo: 7
+coordinate: "vocabulary/referee · 4/weave · 2cab35c6"
+contentUuid: "519ea919-4799-58b5-b066-0a3ed0db98f0"
+diamondUuid: "6c3c1c12-67ce-8257-a6cc-c5aa1d15d0cc"
+uuid: "2cab35c6-3384-8676-9cb0-0b7fa0b9a2f8"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "45c03c56-419e-85d7-b6d1-b6638947bb72"
+  computationUuid: "a11000a7-696d-8175-b76b-981637db79df"
   stages:
     - stage: path
       stageUuid: "ecc259ee-fa81-87cf-baa1-1cbc4287ab8c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "19d79e6b-4a95-8b08-abef-d7b0ad332e4c"
     - stage: horo
-      stageUuid: "56780722-9a8e-8d87-8bad-9378425a14ed"
+      stageUuid: "6a6ce4a5-9ed8-8b03-ad71-d45769d977ba"
     - stage: seal
       stageUuid: "1aa63834-802f-8ed7-b27a-0ef1622dd3c2"
     - stage: uuid
-      stageUuid: "36a5b247-2b06-8b42-8a92-a9b29db82de4"
+      stageUuid: "76afbfc9-ed5d-833a-aea2-94b0f3d7d995"
 version: 2
 ---
 # referee

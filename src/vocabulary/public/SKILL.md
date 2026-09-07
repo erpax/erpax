@@ -2,11 +2,11 @@
 name: public
 description: "Use when reasoning about public as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/public"
-coordinate: "vocabulary/public · 1/base · a42fb369"
-contentUuid: "e4ef3e37-39c0-54c0-b41c-d728df4a7bf1"
-diamondUuid: "ffb443fb-3f05-8a38-bd03-faea330927f7"
-uuid: "a42fb369-1807-84b5-8af1-d82489197f47"
-horo: 1
+coordinate: "vocabulary/public · 4/weave · 42ec9d3c"
+contentUuid: "98f661f1-a98a-565e-8ba0-e5c9e102e963"
+diamondUuid: "9954e457-cb14-848b-925f-2900fdb1da74"
+uuid: "42ec9d3c-65cf-8ea6-8440-d49e9fb997ec"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 61
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3a0dd3d8-abf3-8f0c-a73a-df9a5901c4b6"
+  computationUuid: "47573eb9-c638-85ac-a420-2eaa6355c239"
   stages:
     - stage: path
       stageUuid: "f77a11de-e5e3-8568-8c3f-a4f80cfaff67"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "efb16b7d-d2d6-81bc-ab40-3d9a757e0b81"
     - stage: horo
-      stageUuid: "ddadbe9f-fb76-895f-90be-2c8e9e116ad8"
+      stageUuid: "4eda8e20-3a9e-89fe-94db-09dcea4f65a1"
     - stage: seal
       stageUuid: "729c0790-3435-86b8-8bd2-25abd3fa8f2e"
     - stage: uuid
-      stageUuid: "9b792b25-1a8a-8922-8fbe-9ee3bc0bf450"
+      stageUuid: "8a0b9011-30de-8471-b80a-a704ae499911"
 version: 2
 ---
 # public

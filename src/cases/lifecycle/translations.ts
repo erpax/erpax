@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lifecycle",
-    "uuid": "c5ec1da4-be1e-8542-abf1-09d883a98cb8",
+    "uuid": "f306beaa-3f7a-8c5d-97b5-5e2b3a1275f2",
     "words": [
       "lifecycle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lifecycle — Case state machine on the horo ring—filed to sealed through seven positions",
-    "uuid": "0af8dad5-8900-8a12-af30-33455b5d5c15",
+    "uuid": "57ce81b4-bdd4-8fc2-a672-f4b7216da8b2",
     "words": [
       "use",
       "when",

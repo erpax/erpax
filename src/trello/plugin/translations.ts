@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plugin",
-    "uuid": "ec843a95-bc70-8c5e-a92d-acc5586a93a8",
+    "uuid": "8a11ffc8-b021-8d97-96ac-2f48b36f1e45",
     "words": [
       "plugin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when syncing an erpax collection's records to Trello cards — the Payload plugin whose afterChange/afterDelete hooks upsert a card per record, idempotently: the Trello card id is written back onto the doc and its presence decides create-vs-update, the write-back carries a context flag so the hook cannot re-enter into an unbounded loop, the card-id field is injected whether or not the plugin is enabled so schema never drifts on an env var, and a delete comments on the card rather than destroying data erpax does not own.",
-    "uuid": "5923c88d-bb4e-858e-925b-1da938cde28c",
+    "uuid": "25762b23-e33a-8ce3-8b02-7ed17b6e22de",
     "words": [
       "use",
       "when",

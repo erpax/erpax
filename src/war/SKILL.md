@@ -2,18 +2,18 @@
 name: war
 description: "Use when the society turns warfare tactics to peace — reconnaissance, the OODA loop, coordinated formations, and defense-in-depth applied to building harmony and driving entropy to zero, never to destruction."
 atomPath: war
-coordinate: "war · 1/base · a4d5e6b5"
-contentUuid: "350fb2ad-33f8-555e-9f7e-ed7655018d05"
-diamondUuid: "47c6423b-24cf-8aab-8c02-7171384f6ca5"
-uuid: "a4d5e6b5-bc2b-8c7c-8aaa-7df259b55341"
-horo: 1
+coordinate: "war · 8/crest · f551ee55"
+contentUuid: "dd14efae-a0f1-501b-a52c-2a0caaf04ba9"
+diamondUuid: "97daffd8-d163-8e0b-a1f6-3781cdc1d9a6"
+uuid: "f551ee55-e485-8bc0-8a71-69cb665ba72f"
+horo: 8
 typography:
   partition: war
   bondDegree: 57
 standards: []
 bindings: []
 signatures:
-  computationUuid: "58a6686f-915b-80ff-8c84-c2a2e1f823a8"
+  computationUuid: "3d202aa2-a0b5-8d17-9dff-f4f46c38b825"
   stages:
     - stage: path
       stageUuid: "df5217a4-d25b-8dee-bc87-ddfac1199745"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "025e3b75-232a-8e2e-9753-0b25e536ffb9"
     - stage: horo
-      stageUuid: "33ab5ba7-5c07-87dd-a76c-5579f520644a"
+      stageUuid: "a66c797d-1ac1-88e8-a954-ad0b1b42eda5"
     - stage: seal
       stageUuid: "bac8a572-9e0c-8149-af55-e6b94857adaf"
     - stage: uuid
-      stageUuid: "294c3022-2740-8500-9834-9dab0bc1d307"
+      stageUuid: "70d0bc15-de48-83bb-a3de-fee1ca0b9da0"
 version: 2
 ---
 # war — the tactics of war, turned to peace

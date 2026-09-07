@@ -2,11 +2,11 @@
 name: plans
 description: "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin."
 atomPath: "subscription/plans"
-coordinate: "subscription/plans · 4/weave · 4f2afbb2"
-contentUuid: "c0bc2956-4f9c-5fd0-8204-3b31be93f74a"
-diamondUuid: "d518f112-360b-8c63-ab56-206cdecc2cdf"
-uuid: "4f2afbb2-f5bf-85d0-97da-e518f0f3e7cf"
-horo: 4
+coordinate: "subscription/plans · 1/base · 33bfe9bf"
+contentUuid: "16250042-39be-50cc-bcd4-37f7bedf01a5"
+diamondUuid: "f1bd5e93-a56e-8803-a984-a2367f5f9967"
+uuid: "33bfe9bf-d59a-8aa7-bb43-a37278893f61"
+horo: 1
 typography:
   partition: subscription
   bondDegree: 20
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "9559a738-0775-8007-b366-fd048d67315b"
+  computationUuid: "ad1650a5-7969-8abf-8a5b-806def45872a"
   stages:
     - stage: path
       stageUuid: "0a27e08f-44d1-8b6a-8887-be59f488e5a5"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "eeaa1644-35f8-842a-af04-300f7403ca44"
     - stage: horo
-      stageUuid: "2a362d25-d13f-8fcf-b078-ea4ab7033a97"
+      stageUuid: "fb343818-ff7d-856a-8802-7a65457ea81f"
     - stage: seal
       stageUuid: "eb544582-9ca1-8f9b-9259-e605fe395551"
     - stage: uuid
-      stageUuid: "c8342b7e-d802-837c-bd5f-94a8a3132d3f"
+      stageUuid: "6edafbb9-5a27-8108-a3e7-0ec4c6942ea9"
 version: 2
 ---
 # subscription-plans

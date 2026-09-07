@@ -2,10 +2,10 @@
 name: endorser
 description: Use when modelling one endorser — the singular model of the endorsers collection (the plural store); a party who signs over or backs an instrument.
 atomPath: "vocabulary/endorser"
-coordinate: "vocabulary/endorser · 8/crest · 12ea7613"
-contentUuid: "ef96e760-9203-5a2e-9d0b-cb68b8f94f84"
-diamondUuid: "b222d044-7b88-8ee7-ac5b-d52150ebfeef"
-uuid: "12ea7613-5b35-8cff-b7ac-6fc97859878c"
+coordinate: "vocabulary/endorser · 8/crest · f50c878e"
+contentUuid: "78115c27-e738-5e6f-b582-25f70d29c08e"
+diamondUuid: "7d0cb002-7b8d-86cc-ac6f-9ec5d70196a4"
+uuid: "f50c878e-b870-8f26-b618-f107edfb1f53"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "17ea1960-c0c4-88fc-a46d-58442b181ec8"
+  computationUuid: "0d224aec-e5ee-8d96-b95a-082009b2e927"
   stages:
     - stage: path
       stageUuid: "3c200640-d218-8bc2-b4f7-bd5199a80862"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d5a3c320-1873-89b9-9537-7b9694cf57ae"
     - stage: horo
-      stageUuid: "6effcf16-ddd2-889a-91f4-97f94647c0df"
+      stageUuid: "4c568228-4a40-8f24-b5fd-4ed9462b4ac0"
     - stage: seal
       stageUuid: "a54a361d-f20c-8bc3-85e0-9de975b73880"
     - stage: uuid
-      stageUuid: "07276989-75b5-8429-b35b-51c9bc5129e5"
+      stageUuid: "478a6ce2-d3aa-8bd4-ba96-0e874c8ed187"
 version: 2
 ---
 # endorser — the model of one [[endorsers]] row

@@ -2,10 +2,10 @@
 name: fold
 description: "Use when reasoning about fold — Double fold is mandatory for quantum mentality: word ⊗ digit; 2D documents present both sheets until seal."
 atomPath: "quantum/fold"
-coordinate: "quantum/fold · 1/base · 71f838fc"
-contentUuid: "3d0cb932-f0c8-5d3f-86d6-00d7ae4e48d5"
-diamondUuid: "a836dcae-19a5-8a52-9c38-a5a2e35ebacc"
-uuid: "71f838fc-c5ab-84b9-8f0b-c22a2a4a79bf"
+coordinate: "quantum/fold · 1/base · 63fa5c43"
+contentUuid: "9b3d0564-747a-5834-b383-1a3875b27a63"
+diamondUuid: "db795579-0d35-8d87-9b13-fe04f1985550"
+uuid: "63fa5c43-bc09-89ac-9621-1a0a7fa38e2d"
 horo: 1
 typography:
   partition: quantum
@@ -13,22 +13,22 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "dd8a4ce2-2bf3-82d6-ae24-c31b6b55db06"
+  computationUuid: "92e4ba84-3d40-8059-9011-adce5dfab4c3"
   stages:
     - stage: path
       stageUuid: "fe956b66-4ba5-8132-8af7-adcf7eadfe4c"
     - stage: trinity
       stageUuid: "863673b7-194d-8a2f-9c3b-6b47ed012575"
     - stage: boundary
-      stageUuid: "577e34cf-adcb-82c0-9ed2-69fbffe2b39b"
+      stageUuid: "df8c40e4-9c3c-82cf-86d1-9d35ecd9fc1e"
     - stage: links
       stageUuid: "fabba0d3-bed1-800c-adbd-e491009fe54a"
     - stage: horo
-      stageUuid: "8d38d65f-22ce-8648-86ea-10607a9ad929"
+      stageUuid: "19726645-8bbe-85a8-896e-4f4fa231c9e2"
     - stage: seal
       stageUuid: "a8ea097b-ef3d-8d5b-9854-8c0e90929ce4"
     - stage: uuid
-      stageUuid: "6ce47c7d-209d-8ab7-a714-6e10c15c9d4b"
+      stageUuid: "2a274015-7cd0-8d33-8079-49f0b018f0d1"
 quantum:
   superposition:
     - agent
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "dd8a4ce2-2bf3-82d6-ae24-c31b6b55db06"
-    contentUuid: "3d0cb932-f0c8-5d3f-86d6-00d7ae4e48d5"
+    computationUuid: "92e4ba84-3d40-8059-9011-adce5dfab4c3"
+    contentUuid: "9b3d0564-747a-5834-b383-1a3875b27a63"
 version: 2
 ---
 # quantum/fold
@@ -60,4 +60,4 @@ version: 2
 
 **Law — agents must not mint hyphenated paths; one word per folder.** Linear logic (`findLinearLogic`, `foldLinearPair`) lives in `index.ts` matter — never `linear-logic/` or `linear-logic.ts`.
 
-<sub>content-uuid `3d0cb932-f0c8-5d3f-86d6-00d7ae4e48d5` · account `quantum/fold` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b3d0564-747a-5834-b383-1a3875b27a63` · account `quantum/fold` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

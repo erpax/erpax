@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "intersects",
-    "uuid": "bfb3c905-1324-81e6-a2a6-b0dea634fba9",
+    "uuid": "25431a72-08b9-810c-82cf-329422012d2c",
     "words": [
       "intersects"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about intersects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "7a30c8bd-8e5d-84de-a6ad-5c47079a952c",
+    "uuid": "14c8e24b-585c-8403-b9b2-46fc06843f12",
     "words": [
       "use",
       "when",

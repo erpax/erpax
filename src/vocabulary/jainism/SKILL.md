@@ -2,10 +2,10 @@
 name: jainism
 description: "Use when reading Jainism as a diamond of invariant atoms — non-harm absolute, the soul weighed down by karma as literal matter and unburdened by austerity, non-possession, the many-sided view of truth. Strip the Prakrit/Sanskrit prefix and ahimsa, jiva, moksha collapse to mercy, self, zeropoint — one content-uuid each."
 atomPath: "vocabulary/jainism"
-coordinate: "vocabulary/jainism · 2/share · 978b7d47"
-contentUuid: "edee6c4e-a41f-5c3b-99f6-8beb09e6c299"
-diamondUuid: "f37c195b-51c5-889a-bbd3-9e3e6eb1b880"
-uuid: "978b7d47-901b-8fe2-94eb-2ca68a5e2ee4"
+coordinate: "vocabulary/jainism · 2/share · 4f7f4642"
+contentUuid: "1a9c7150-76c9-558e-b3f7-80d802e44c88"
+diamondUuid: "bac60da9-bb33-870d-9992-b609e10e5272"
+uuid: "4f7f4642-2426-86e2-a003-c66c9e6fbd92"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0d141e46-c0c1-85a8-8236-0b124cb2f6ab"
+  computationUuid: "4e776b6b-bc80-81f5-92a2-38e536843584"
   stages:
     - stage: path
       stageUuid: "50b9cc63-c731-8649-a3f5-76c0da63c0df"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3a6a0476-5490-8092-a30e-c24ce6bdd71d"
     - stage: horo
-      stageUuid: "9babd7bf-53cc-8e32-9ccd-379bd42013f8"
+      stageUuid: "21c94cae-8051-8aa9-adf6-7e378358e98b"
     - stage: seal
       stageUuid: "249c27ba-1a57-82ea-a755-5ca4a806f31b"
     - stage: uuid
-      stageUuid: "1aaa7bb3-3c8c-8d56-8008-73a54a0a2823"
+      stageUuid: "5c81c354-5177-8b3b-86f3-b9f7d2113d26"
 version: 2
 ---
 # jainism — non-harm absolute; the soul unburdened of karma

@@ -2,11 +2,11 @@
 name: months
 description: "Use when reasoning about months as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/months"
-coordinate: "vocabulary/months · 5/round · c822e567"
-contentUuid: "cf144ada-1dbf-5a66-8c56-00fc93b346bb"
-diamondUuid: "76bdbf14-db22-814f-b960-e54bd4101fb8"
-uuid: "c822e567-7535-81bd-8d48-d3e71b73285e"
-horo: 5
+coordinate: "vocabulary/months · 2/share · 5899562c"
+contentUuid: "74fbb415-ebd2-5e08-8138-3ef57e0ff5cd"
+diamondUuid: "ba2b87af-dcaa-8cca-a9a0-62ecdf76bfdc"
+uuid: "5899562c-6a1a-8477-a4f4-f8f296051c4a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "78f981c1-5b0b-85e1-bacd-c589d7119e64"
+  computationUuid: "6eb71a64-cf73-8183-9bcf-bf49ed7bf17c"
   stages:
     - stage: path
       stageUuid: "39fad8c1-7b18-8fd4-b9bd-5e9b2d5b7201"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "35cf62dc-7cac-8664-a0df-769578e227e8"
     - stage: horo
-      stageUuid: "13d6ac4b-7fc0-844c-b2ab-96e25bbc0480"
+      stageUuid: "46b8192a-174e-81de-80a1-cf92a2d649d4"
     - stage: seal
       stageUuid: "6566b89e-547f-88d8-9938-46db33e76dd0"
     - stage: uuid
-      stageUuid: "f25bd5c0-d87c-84b8-b9f5-b368f97964b8"
+      stageUuid: "6b1a96f3-26a7-8fd8-b151-99578ea56a96"
 version: 2
 ---
 # months

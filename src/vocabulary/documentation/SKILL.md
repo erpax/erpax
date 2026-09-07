@@ -2,11 +2,11 @@
 name: documentation
 description: Use when reasoning about documentation — Further documentation describing the Web API in more detail.
 atomPath: "vocabulary/documentation"
-coordinate: "vocabulary/documentation · 5/round · 36e4c689"
-contentUuid: "0573389e-5508-55f6-b44a-8af2f04d3eea"
-diamondUuid: "45d079a5-1080-8195-b2f7-b26cd93a5e7b"
-uuid: "36e4c689-a97f-8300-a97d-fd23d06e165b"
-horo: 5
+coordinate: "vocabulary/documentation · 8/crest · 20db93a4"
+contentUuid: "df447ce2-edf5-50f7-baf2-6a28da383578"
+diamondUuid: "689bfdda-a784-8bf2-beec-01a5c35ee332"
+uuid: "20db93a4-b40b-829b-9963-962ed3a032a0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cec49d67-68fc-8236-b1de-8afa5652da9e"
+  computationUuid: "29d2693c-8cf9-8c2a-8bbb-bcd481f2a063"
   stages:
     - stage: path
       stageUuid: "3c2a8e1a-7116-803c-9c43-31737a8f49ed"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d84d0641-9dd8-8fc8-a387-1b7d688c276a"
     - stage: horo
-      stageUuid: "5b9f4486-a684-851d-a730-8a8af9fe28b2"
+      stageUuid: "5676e108-4fcc-82c5-805c-6cd7c27d4358"
     - stage: seal
       stageUuid: "38580da3-0be3-8e8c-a328-1246dc4ac4ea"
     - stage: uuid
-      stageUuid: "c1c3c94f-e79b-8508-b88c-7341b89a0ad5"
+      stageUuid: "922d02c2-08cc-8687-b54d-cfee8880463a"
 version: 2
 ---
 # documentation

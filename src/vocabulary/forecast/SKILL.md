@@ -2,18 +2,18 @@
 name: forecast
 description: "Use when projecting revenue from pipeline/opportunities — weighted by probability, stage, and close date; aggregated by rep/territory/product/period."
 atomPath: "vocabulary/forecast"
-coordinate: "vocabulary/forecast · 7/descent · 802f2d7c"
-contentUuid: "20a28998-18ab-5d90-aa96-19657179a6a0"
-diamondUuid: "dbe621f6-d8f7-81fb-899b-90d0ad8cffd2"
-uuid: "802f2d7c-457c-8fd4-821d-bd05dea5f8f2"
-horo: 7
+coordinate: "vocabulary/forecast · 2/share · 4d57d9ab"
+contentUuid: "790d0e8d-3819-5b41-a45d-4d819fb8fcf5"
+diamondUuid: "25d72b20-4174-82e7-8c7e-459359963f9c"
+uuid: "4d57d9ab-6fd8-84f0-b168-428703842fd2"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 64
 standards: []
 bindings: []
 signatures:
-  computationUuid: "76848593-f7ff-8538-84d3-dc6a911cee76"
+  computationUuid: "f17ad3ff-0c08-85f2-ab83-8f8bbb366eb6"
   stages:
     - stage: path
       stageUuid: "5e012143-b6be-84e2-8005-6679f6f5280f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5395ac7a-484e-8f4b-b33f-6f2a0e7e311d"
     - stage: horo
-      stageUuid: "b2e6b6f9-ec31-82b4-bfa7-1c72e7ddbb9d"
+      stageUuid: "49e889b8-564d-8fa8-8263-648798c1e5cc"
     - stage: seal
       stageUuid: "f5227531-a1bc-8774-9f6f-b2ae0f6f95fb"
     - stage: uuid
-      stageUuid: "d8b9a93b-1865-89ed-8846-168a738e3a28"
+      stageUuid: "aa62adf4-32b0-8c6c-a26c-8be51ab25157"
 version: 2
 ---
 # forecast

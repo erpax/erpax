@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mirror",
-    "uuid": "a259c818-29d2-82ef-823a-cab26a694bc1",
+    "uuid": "35bf8f9c-0f6d-8f9b-ad26-2a7aaefbf83e",
     "words": [
       "mirror"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it.",
-    "uuid": "5473708e-2044-861c-b12a-4955decd603c",
+    "uuid": "b6daa26e-cb16-8338-a980-74506f96af83",
     "words": [
       "use",
       "when",

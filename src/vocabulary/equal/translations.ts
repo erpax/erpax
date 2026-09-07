@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "equal",
-    "uuid": "d38293dc-facd-8c65-9b96-889579c5c0c5",
+    "uuid": "f3d980f9-ae96-8f57-b0cf-e549a0b81e5a",
     "words": [
       "equal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about equal — This ordering relation for qualitative values indicates that the subject is equal to the object.",
-    "uuid": "73655328-35ea-8f1c-8e29-6bc57d951aa5",
+    "uuid": "424c8ea6-a0dd-8299-994d-58f6daceb2bd",
     "words": [
       "use",
       "when",

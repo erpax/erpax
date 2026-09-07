@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "preschool",
-    "uuid": "16380b04-62f4-80cf-b5dd-4d219da81140",
+    "uuid": "c17d09b6-0f25-8d8e-b3ec-7d3b72cc9c3d",
     "words": [
       "preschool"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about preschool — A preschool.",
-    "uuid": "7399e3b8-ca81-8315-a4c0-eacd6b409059",
+    "uuid": "b427db50-5cc1-8e61-a230-13ce905f4666",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: begin
 description: "Use when reasoning about origin or boundary in erpax — the 0 (both end and beginning), period open/close, lifecycle start/seal, the axis every pass departs from and returns to. The universal root of origin."
 atomPath: "vocabulary/begin"
-coordinate: "vocabulary/begin · 5/round · 6adcade9"
-contentUuid: "62e0cec2-146c-53de-9def-691dfaac47d9"
-diamondUuid: "de18ab4d-195a-878f-b799-c5cd42f15302"
-uuid: "6adcade9-f2d1-8262-b68b-864e4f75af30"
+coordinate: "vocabulary/begin · 5/round · cf97df2e"
+contentUuid: "2e699023-5e22-50d8-9dfe-ca8b1812c081"
+diamondUuid: "4d2e4998-fff1-89fc-a36f-1f0de057f2cc"
+uuid: "cf97df2e-c34b-8709-b3a7-d0949c8bbe39"
 horo: 5
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b076ed21-1918-8f10-9f8d-ac0e9901a72b"
+  computationUuid: "d6866d66-3ad9-8654-a38b-f5fb4620e6fa"
   stages:
     - stage: path
       stageUuid: "dc358c06-eec7-8d99-9ff0-d6f07058f921"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "27c17562-111a-8efc-9fec-7a5947572bfb"
     - stage: horo
-      stageUuid: "fe8166f6-33ca-8468-b5cc-758dc54bf63a"
+      stageUuid: "60e2dc6e-0319-8ae1-bd09-ec52c1ceec18"
     - stage: seal
       stageUuid: "e441617b-580b-875a-8fc1-7368a40d8af1"
     - stage: uuid
-      stageUuid: "429107e6-b408-8f18-9e4d-d8da3a5bbd5f"
+      stageUuid: "3f41f067-dd2e-8254-b6a9-4e34ef05397a"
 version: 2
 ---
 # begin — origin (the 0 is both end and beginning)

@@ -2,11 +2,11 @@
 name: media
 description: "Use when uploading or retrieving files — images, video, documents — stored in Cloudflare R2 with multi-size image variants (thumbnail/square/small/medium/large/xlarge/og), alt text, captions, and GDPR-safe filenames. The tenant-scoped media upload collection."
 atomPath: media
-coordinate: "media · 1/base · 4b62924a"
-contentUuid: "ea2da413-e48e-5c42-9ed7-c1ceae0f3e3e"
-diamondUuid: "078ac42b-eb50-8646-8225-59efe6802071"
-uuid: "4b62924a-35b9-815e-94ef-83faa733262a"
-horo: 1
+coordinate: "media · 5/round · e2c74116"
+contentUuid: "0c2a5b41-aa7d-5a05-bb7f-f65ab3599e7a"
+diamondUuid: "dc2bcce8-1124-8911-a942-b21140ec6e62"
+uuid: "e2c74116-627c-88b2-a809-0b90293cdfc5"
+horo: 5
 typography:
   partition: media
   bondDegree: 96
@@ -31,7 +31,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3dcff075-7ffc-821b-840a-b621310d2fa0"
+  computationUuid: "676ea7e4-6634-8ef4-a634-246edd9c8076"
   stages:
     - stage: path
       stageUuid: "24e98368-9562-8605-a8e0-f7a038cb4734"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "525b1d4d-f088-83de-9e99-cef89d197e4f"
     - stage: horo
-      stageUuid: "24fece9d-f3bc-830c-bcf9-a1be41b5dde0"
+      stageUuid: "ab6904e2-8857-8cf3-967f-6e850585fe47"
     - stage: seal
       stageUuid: "b5365f93-dca2-823a-a4d2-268a2a771327"
     - stage: uuid
-      stageUuid: "c0831f56-944d-8c4e-972d-68807c429a39"
+      stageUuid: "1aef1cca-6718-8662-809e-f0580ed5717d"
 version: 2
 ---
 # media

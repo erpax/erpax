@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "read",
-    "uuid": "086f82a8-5f86-8f14-9971-9a918d666ec5",
+    "uuid": "77afb303-530c-8208-bf7d-a6e92ff28b11",
     "words": [
       "read"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about read — A person who reads (performs) the audiobook.",
-    "uuid": "ee74638d-f892-8528-ac98-1386bce14f33",
+    "uuid": "82f501b7-ab0a-8102-a11f-24fccaf773c2",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wave",
-    "uuid": "773d6728-4a90-8dad-bde9-3cd6b1771985",
+    "uuid": "6dc1db7c-a6f6-894c-bf16-20f04d3d83a0",
     "words": [
       "wave"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when auditing everything at once — every cheap gate measured as one dimension, trended against its own history, sequenced self-improvingly: regressions first, stuck escalates, improving keeps its plan.",
-    "uuid": "6b904042-9b42-8055-ac5b-3187297520d1",
+    "uuid": "83f068ed-19aa-8dc5-834b-49d1b8e63406",
     "words": [
       "use",
       "when",

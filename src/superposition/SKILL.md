@@ -2,18 +2,18 @@
 name: superposition
 description: "Use when reasoning about superposition — the state before measurement is a weighted combination of all seven horo eigenstates at once (|ψ⟩ = Σ cₙ|n⟩), with Σ|cₙ|² = 1 (the Born rule), which is double-entry balance closing at unity. It is accept-always then normalise-into-harmony; measurement is the collapse that picks one eigenstate with probability |cₙ|² — the leap to a definite level. A basis state collapses to itself."
 atomPath: superposition
-coordinate: "superposition · 1/base · 40e665bc"
-contentUuid: "567b7835-8b30-571d-b1a6-d656120c11ac"
-diamondUuid: "ec9c73a4-68e7-8be2-bc43-078349246928"
-uuid: "40e665bc-776f-83b1-b8b4-4f03e561e247"
-horo: 1
+coordinate: "superposition · 5/round · 1bbbc781"
+contentUuid: "d00b85e4-4a34-5b56-ab4a-1a6163849500"
+diamondUuid: "cadfb9b9-1ecb-829a-a159-9f1688292082"
+uuid: "1bbbc781-e5be-8c0c-99ff-0d0459b84b27"
+horo: 5
 typography:
   partition: superposition
   bondDegree: 52
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9b4d3978-ec02-8fb5-a7f8-8f29740bd747"
+  computationUuid: "222cd6d1-154c-8cc3-9395-6228b44eeccf"
   stages:
     - stage: path
       stageUuid: "30253034-9cfe-8652-86a6-ca2539474ec5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "208f80f9-5b33-8c3c-a0bd-c5d1cad2e548"
     - stage: horo
-      stageUuid: "de6b4775-9c2b-8032-ae49-a340c6c44ac1"
+      stageUuid: "eef93e2f-c3ac-8f53-852c-46c38cceffcb"
     - stage: seal
       stageUuid: "8de2a909-449d-8ea9-9a7d-1c5a18602224"
     - stage: uuid
-      stageUuid: "a9edb840-e7c1-8f51-b554-851822217e10"
+      stageUuid: "f98f6284-d7d8-8372-a864-716d9fe9482f"
 version: 2
 ---
 # superposition — accept all states, then collapse to one

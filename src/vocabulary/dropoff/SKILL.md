@@ -2,11 +2,11 @@
 name: dropoff
 description: "Use when reasoning about dropoff as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dropoff"
-coordinate: "vocabulary/dropoff · 1/base · f6de4510"
-contentUuid: "a5799352-23da-52d6-bfd3-d0eb7ecfd02f"
-diamondUuid: "b33801c9-f2c6-8041-b94d-27a8f54fe21a"
-uuid: "f6de4510-2033-8f2e-85e8-803873d6faf9"
-horo: 1
+coordinate: "vocabulary/dropoff · 7/descent · 605e73b9"
+contentUuid: "1ab4c65b-4412-5cb1-a2ba-9ab1c495cac7"
+diamondUuid: "800b2062-93db-8334-8a36-2036db61ca15"
+uuid: "605e73b9-ad7d-880b-8608-74e845a911be"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "daae1a72-cbc1-8913-b8a5-e0ffadcaa61a"
+  computationUuid: "319ec123-8c33-8530-a7f1-9c7883491f64"
   stages:
     - stage: path
       stageUuid: "d2e3a111-d973-88d4-abc5-4d59e5126729"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9acf6494-d647-8380-8393-21b1d733f036"
     - stage: horo
-      stageUuid: "3a8a4071-1218-89f5-b8ec-179dcc50e4f3"
+      stageUuid: "04d7b42a-dcdc-82e0-a17f-9428ca660e8f"
     - stage: seal
       stageUuid: "c8f5961a-e822-8c80-900e-5cf24f277324"
     - stage: uuid
-      stageUuid: "9966a1fb-c36e-8de6-8f18-59579ed27603"
+      stageUuid: "7bb6f515-d588-8d16-affa-3e220de9bc7f"
 version: 2
 ---
 # dropoff

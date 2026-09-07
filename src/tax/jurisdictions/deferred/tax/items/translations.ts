@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "items",
-    "uuid": "7ac4a6f9-3e7e-8c8e-9c56-3633a390a39b",
+    "uuid": "e6057a77-f308-8aa1-8045-efa75173a0f3",
     "words": [
       "items"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection.",
-    "uuid": "a841d30b-4954-8f59-90e5-01ae095eae22",
+    "uuid": "62c774b2-18f0-86ed-b0f9-7f57f5b7ff5e",
     "words": [
       "use",
       "when",

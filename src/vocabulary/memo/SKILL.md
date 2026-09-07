@@ -2,18 +2,18 @@
 name: memo
 description: Use when modelling one memo — the singular model of the memos collection (the plural store); a brief internal written note.
 atomPath: "vocabulary/memo"
-coordinate: "vocabulary/memo · 8/crest · d1ca598a"
-contentUuid: "fdb03e72-5fee-5fe3-b112-1bf8fcd577c0"
-diamondUuid: "baceb24d-5f4f-88be-ba40-74e3df9bd2d6"
-uuid: "d1ca598a-dcdf-89c4-9286-c7079b3e964c"
-horo: 8
+coordinate: "vocabulary/memo · 4/weave · 78038dde"
+contentUuid: "ff2569e8-4e0e-58e3-b669-b8a451f11af5"
+diamondUuid: "d85c2c40-2d40-8c35-8310-db53679ebe89"
+uuid: "78038dde-ae1c-8043-b359-9cee20ed6c66"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f4adc547-4561-8515-8e0c-c5ee33a87ba8"
+  computationUuid: "02b3aba1-9f69-80c6-a146-b5fa8c77b2e0"
   stages:
     - stage: path
       stageUuid: "be820310-791f-8491-a0ca-f8ff31a2adcb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "35865540-31a9-874c-aff8-f40d6eda1566"
     - stage: horo
-      stageUuid: "973b7bfd-1832-802e-8512-d019e6e20a75"
+      stageUuid: "466e3a6c-40a6-8bcd-9136-7aa6db7803e1"
     - stage: seal
       stageUuid: "31e53628-35a5-8cfa-a2ee-2c62235d143a"
     - stage: uuid
-      stageUuid: "29c7cb91-35d6-8ee9-8c36-d3e10aece340"
+      stageUuid: "889d9eec-8e92-8d82-9aa3-c59facc55d26"
 version: 2
 ---
 # memo — the model of one [[memos]] row

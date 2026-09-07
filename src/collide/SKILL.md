@@ -2,10 +2,10 @@
 name: collide
 description: "Use when folding two atoms into one — collide is the deferred INHALE of development, the DRY collapse that merges the expansion back toward one and so lowers entropy; it DEFINES the fold collide(a,b) = merge two into one but is applied LATER, never during the exhale."
 atomPath: collide
-coordinate: "collide · 5/round · 3efc8ad1"
-contentUuid: "030fd8e3-11d8-5dbf-b6b2-67c0a24359d0"
-diamondUuid: "abf7f0eb-ac4a-8dd8-8e1c-87678b0756bc"
-uuid: "3efc8ad1-9779-82a0-a7d7-1c35a08b20d0"
+coordinate: "collide · 5/round · 14eea3c3"
+contentUuid: "0cec5aad-51b2-507d-bdc3-fdf9104d8413"
+diamondUuid: "cd71951c-1bf2-8e27-a1fa-a75146e05c49"
+uuid: "14eea3c3-f03f-88ec-9961-068ae102fad5"
 horo: 5
 typography:
   partition: collide
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "31a6bd00-006d-89ed-b1bd-fe69643a90d9"
+  computationUuid: "b45330c6-62d2-8648-92f3-0f543d5e683e"
   stages:
     - stage: path
       stageUuid: "ff111fa8-69b3-82fd-bdf1-1fbbb3aae960"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3b604740-f985-8b39-9b18-b7346b0f64d4"
     - stage: horo
-      stageUuid: "7e28af41-16a0-8ae1-b644-37325c5e78b0"
+      stageUuid: "705027c4-1f59-84c5-8265-ce586c9f6206"
     - stage: seal
       stageUuid: "b5ddab43-b5a6-86d9-9c10-6066eb0753f1"
     - stage: uuid
-      stageUuid: "714d6c97-7e26-8123-99b5-f96e5537b43e"
+      stageUuid: "5f2253f9-634b-8a48-8053-82e0e76bd09d"
 version: 2
 ---
 # collide — the inhale of development, deferred (fold two into one)

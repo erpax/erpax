@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ticket",
-    "uuid": "aa664ac9-ea0b-8196-974a-f519e5030bb0",
+    "uuid": "3a073335-ef9c-8679-9aa6-41d1fe1dba66",
     "words": [
       "ticket"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a customer/employee request, complaint, or issue becomes a tracked work item with queue, priority, assignment, and SLA. The polymorphic support-case container.",
-    "uuid": "3f81da28-af76-85aa-91a9-15b7a2ace393",
+    "uuid": "26eb3fc3-c08d-8b3c-9627-d7968586aac3",
     "words": [
       "use",
       "when",

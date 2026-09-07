@@ -2,11 +2,11 @@
 name: speakable
 description: "Use when reasoning about speakable — Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections o"
 atomPath: speakable
-coordinate: "speakable · 8/crest · 55aee32e"
-contentUuid: "cbbcf574-8c64-5604-a754-8b2e720e2c97"
-diamondUuid: "117b2655-6545-8f12-9718-d3a0b4c97e0d"
-uuid: "55aee32e-2bdb-8a33-95ee-ad9ebb8e01c6"
-horo: 8
+coordinate: "speakable · 7/descent · 851de80f"
+contentUuid: "17c8522c-ecdc-5973-b2a4-8e59bae06ea6"
+diamondUuid: "00e53b37-ce6e-81ef-8734-c5bd03a14b75"
+uuid: "851de80f-ded5-842f-802d-3b3e402f89bf"
+horo: 7
 typography:
   partition: speakable
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5c25bfe3-4349-8f99-91b9-9d62633596c1"
+  computationUuid: "8f0f903c-ead0-8794-bc23-97e5216b0aa4"
   stages:
     - stage: path
       stageUuid: "7d44d271-793a-8a15-be4e-2cf6985c9e57"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8e70bbc0-1a6f-8854-9e11-09eb7b1e84bb"
     - stage: horo
-      stageUuid: "80cd5a57-4b7c-8a61-82d1-d6cde2fa1781"
+      stageUuid: "840b3a83-097d-84ba-8e02-a6d92f0598d5"
     - stage: seal
       stageUuid: "308e1618-2826-8d39-8af6-675ee1f947c0"
     - stage: uuid
-      stageUuid: "86a865e8-4237-8d08-942b-608695c22771"
+      stageUuid: "f1ec54a8-acef-8bb6-a909-4ecf36b1e9b3"
 version: 2
 ---
 # speakable

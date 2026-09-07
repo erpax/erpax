@@ -2,10 +2,10 @@
 name: fm
 description: "Use when reasoning about fm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fm"
-coordinate: "vocabulary/fm · 5/round · 23851bdf"
-contentUuid: "8bd5c43f-59e0-5a0d-b4f3-b0af3ef92466"
-diamondUuid: "bc84e29b-1675-8fd8-bc85-fca95e702fa3"
-uuid: "23851bdf-8f2e-8c3e-b6c2-b305bc8f57d2"
+coordinate: "vocabulary/fm · 5/round · a0a9abcc"
+contentUuid: "0e16b58c-89b7-5759-80b9-04b937a45932"
+diamondUuid: "5919894b-50a2-8309-b685-e81782b390e8"
+uuid: "a0a9abcc-8687-890f-af6f-b2c0c9d3ada5"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "91c3a153-facf-88bf-82a1-41ffbfb49191"
+  computationUuid: "ac4e7a3e-ebcd-8763-bbfb-4fb6290d66f4"
   stages:
     - stage: path
       stageUuid: "437887be-6833-83c8-9d5a-b0588b851d5d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2bcca785-c71d-8ca0-b3c2-c906e1050041"
     - stage: horo
-      stageUuid: "76341cfe-c032-849e-9e14-96ddcd177740"
+      stageUuid: "49e4f432-c797-84f2-9d68-5e3c76ac6757"
     - stage: seal
       stageUuid: "e1db0452-b785-870a-b3c7-4482d0ff768e"
     - stage: uuid
-      stageUuid: "24699db1-ca1b-846d-8e98-32ddb3d894de"
+      stageUuid: "a2de50d5-0988-8785-ac7b-06d98f92cbc0"
 version: 2
 ---
 # fm

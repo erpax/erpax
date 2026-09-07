@@ -2,11 +2,11 @@
 name: golf
 description: "Use when reasoning about golf as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/golf"
-coordinate: "vocabulary/golf · 5/round · c19af08b"
-contentUuid: "a7fe80f4-cf99-5809-b8d8-42e8e3e23412"
-diamondUuid: "088d0b5c-432d-8b66-b9b3-049e1a1431e0"
-uuid: "c19af08b-db5e-85c4-8741-5ebaa50e69db"
-horo: 5
+coordinate: "vocabulary/golf · 4/weave · 126f2d19"
+contentUuid: "fe31a2e7-dda1-558e-9e92-59e83b8f8894"
+diamondUuid: "3b125645-8c19-8b0d-9935-68412199a096"
+uuid: "126f2d19-1de4-8dd6-a1d9-cea35b40151a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fa499d6c-378f-898a-888e-db225378aa46"
+  computationUuid: "ab2a9eaf-38b6-812e-ac39-3bf640f000ef"
   stages:
     - stage: path
       stageUuid: "955bbdbc-3164-821f-bc5a-0fc74b27ad5f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "466e14de-3805-8964-98ed-d3d51ae12cce"
     - stage: horo
-      stageUuid: "f73b081c-44de-8f27-a625-aced3a8ceff7"
+      stageUuid: "a407a93d-b4ec-8ecb-a3d9-becc7775755f"
     - stage: seal
       stageUuid: "acbedb01-8c72-8bd0-857d-3eb5c7901e67"
     - stage: uuid
-      stageUuid: "5a646397-b636-8081-9777-f1e47910eb98"
+      stageUuid: "3c73ff1b-efbb-8e17-bcb8-bfdf0b5dafdb"
 version: 2
 ---
 # golf

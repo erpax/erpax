@@ -2,10 +2,10 @@
 name: rev2
 description: Use when implementing or referencing NACE Rev. 2.
 atomPath: "nace/rev2"
-coordinate: "nace/rev2 · 1/base · c0d94cda"
-contentUuid: "160b8ba7-5b8e-5107-ac4b-8a530425c872"
-diamondUuid: "e3e92b6c-f40e-8439-8168-25adc39f98f5"
-uuid: "c0d94cda-0ea6-87ad-852a-07507de51bb6"
+coordinate: "nace/rev2 · 1/base · dee9df24"
+contentUuid: "71660ef7-a84d-5c43-9bc1-05eb0b2825f9"
+diamondUuid: "90cec4df-cb11-8e1f-bb45-a2d1b40ce1a9"
+uuid: "dee9df24-1a9b-8305-b9d3-6c4eb8cfdc26"
 horo: 1
 typography:
   partition: nace
@@ -18,7 +18,7 @@ standards:
   - UN ISIC Rev.4 (companion)
 bindings: []
 signatures:
-  computationUuid: "1887a350-b1f4-8c5e-bb2f-44df3ad42178"
+  computationUuid: "c2365db2-211e-85eb-840f-38d442931c6c"
   stages:
     - stage: path
       stageUuid: "01a4cab2-4276-8308-8d09-5b0d1a3ec733"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "dac0f865-0bb2-82db-be5c-65ca3ceff7e1"
     - stage: horo
-      stageUuid: "9284ddc4-462a-8a6c-83fa-0547f1310aa0"
+      stageUuid: "e0d99c71-695d-881d-a618-b0cce7c9addc"
     - stage: seal
       stageUuid: "1ea3438d-a34f-8350-9227-dd7d3e54e014"
     - stage: uuid
-      stageUuid: "8232889b-ef3d-829f-b482-883d1b1e074c"
+      stageUuid: "16a393f1-f01e-8a42-9695-2afe0588b938"
 version: 2
 ---
 # NACE Rev. 2

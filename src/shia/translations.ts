@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shia",
-    "uuid": "0ec3f854-8849-88fa-be1e-a68de722e94f",
+    "uuid": "b50044c3-142e-8b52-ba83-efb0ccbb6568",
     "words": [
       "shia"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Shia Islam as a sub-diamond of islam — guidance descending through the lineage of the Prophet's house (the imamate), justice as a root principle, the witnessed suffering of Karbala, and the awaited return of the hidden one. A facet-diamond of the islam archangel.",
-    "uuid": "7c6f8dba-867f-8b96-95a1-ec17b2a54536",
+    "uuid": "844d6d36-b595-87d5-9ec7-4a862fab9fcb",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "backup",
-    "uuid": "b1ef1ee7-bbc3-8f40-a182-b4342e1a85c1",
+    "uuid": "c6627472-0f5c-81e6-b354-cda0213448e5",
     "words": [
       "backup"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when ensuring data recovery — backup strategy (full/incremental/differential), backup retention, restoration procedures, backup encryption, cross-region backups, RTO/RPO targets, backup testing/validation.",
-    "uuid": "76df36a1-cccd-8986-9783-63861970f8b7",
+    "uuid": "c28476a7-e9f9-8b75-a7ea-8731c81db418",
     "words": [
       "use",
       "when",

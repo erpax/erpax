@@ -2,11 +2,11 @@
 name: competition
 description: "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security."
 atomPath: competition
-coordinate: "competition · 2/share · b7a7b439"
-contentUuid: "0eef3432-e631-5127-9a5d-97c091f72b97"
-diamondUuid: "298756e7-dd6f-80d8-b1f6-217e088f8a33"
-uuid: "b7a7b439-52ec-861b-84d7-dfc24afdb062"
-horo: 2
+coordinate: "competition · 5/round · ba4d8e8b"
+contentUuid: "a5dc7fb8-75c9-5c5e-a469-3ee51d9c3943"
+diamondUuid: "2d35c73b-cb23-8d48-85d4-9bc18eb1085d"
+uuid: "ba4d8e8b-547c-8309-b905-c36d1689fadc"
+horo: 5
 typography:
   partition: competition
   bondDegree: 60
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5739822f-4721-800a-b270-64278a84cf52"
+  computationUuid: "8df8a1f6-4ca1-8f45-9f14-c92b0ad573b8"
   stages:
     - stage: path
       stageUuid: "fa6c9ca3-e81f-8762-85d6-675365bb307e"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "e27e41bb-1005-8c37-bc27-dea38ef3aa46"
     - stage: horo
-      stageUuid: "39a7635f-3cdd-8e59-aa7f-7f1e8d946b30"
+      stageUuid: "2c87e0f0-b9db-8ee6-88f8-61ee8fe9fd6a"
     - stage: seal
       stageUuid: "21331975-8dfb-8b5d-afaf-048593c7812b"
     - stage: uuid
-      stageUuid: "c67dd681-feb7-874a-a0ad-ac3d2fbc6448"
+      stageUuid: "af3ca9ac-afc5-80d1-8166-354db3386f73"
 version: 2
 ---
 # competition — skills evolve by competing (fastest correct wins, optimise to ∞)

@@ -2,11 +2,11 @@
 name: hostel
 description: "Use when reasoning about hostel — A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations."
 atomPath: "vocabulary/hostel"
-coordinate: "vocabulary/hostel · 8/crest · 4ff96164"
-contentUuid: "27bb938c-54d5-5249-9ac0-c747d195ff00"
-diamondUuid: "1113c366-2973-85e1-9df6-41afda33cdf1"
-uuid: "4ff96164-6c4b-83a8-9105-77bae7e0d7a9"
-horo: 8
+coordinate: "vocabulary/hostel · 5/round · b0dcfbc6"
+contentUuid: "2ef475c3-01ea-5039-adad-a52449977bd5"
+diamondUuid: "21f7d185-3532-85df-a954-7f3a60a1a7e2"
+uuid: "b0dcfbc6-4b64-8600-958b-83c9849e28d3"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bb2ebff2-c8e1-8503-b2c0-bc5704407f58"
+  computationUuid: "d5b37e54-b6a6-810c-a124-e7d3ee4f9440"
   stages:
     - stage: path
       stageUuid: "829f7070-51a6-8aa3-941a-8b9954888bb3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "08cc7683-f871-8010-82a7-2bf80280031e"
     - stage: horo
-      stageUuid: "113390b9-6d1e-8686-b90c-73b5c08d22b0"
+      stageUuid: "defd8dc3-f59c-8403-ba93-7a6226fca3ff"
     - stage: seal
       stageUuid: "0501dec7-90a9-87fd-9e1b-1c55eab67c40"
     - stage: uuid
-      stageUuid: "c7c47959-23bb-8ca0-91b1-e7cff287c82f"
+      stageUuid: "103b07a1-a86f-8092-bf21-e4848981620b"
 version: 2
 ---
 # hostel

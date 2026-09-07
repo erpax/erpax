@@ -2,11 +2,11 @@
 name: imperial
 description: "Use when reasoning about imperial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/imperial"
-coordinate: "vocabulary/imperial · 7/descent · 7442d2b0"
-contentUuid: "90e344d6-1aad-5102-8d22-6e86b2fc0cd1"
-diamondUuid: "6a3182b5-4556-8eda-b4d5-14c2825e5e2f"
-uuid: "7442d2b0-3444-820d-8a99-ad43e37efdac"
-horo: 7
+coordinate: "vocabulary/imperial · 4/weave · 46815e1c"
+contentUuid: "03102777-1b06-578e-96c6-a92e2ed6d7af"
+diamondUuid: "87bfed5b-1332-8760-a9a4-df74a78ae6e5"
+uuid: "46815e1c-0bb8-837a-9a9d-c0bd67f22b5b"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "41879893-cbe8-81cc-924b-4c8d160efa59"
+  computationUuid: "d1688b09-3026-81c1-8707-5d1f80de2252"
   stages:
     - stage: path
       stageUuid: "84da32b3-61c4-8c94-8581-fbd191ccaff4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8d0d1c20-01fb-85f0-bee9-b865a6145b40"
     - stage: horo
-      stageUuid: "498e8f0c-441c-868b-9b16-75583053b198"
+      stageUuid: "ae3324b6-ff85-87bd-8896-8df5aecea35c"
     - stage: seal
       stageUuid: "b030706c-33df-853f-b7ef-7b739465e2f9"
     - stage: uuid
-      stageUuid: "f847aec4-ee07-88c8-a876-db3d648ba465"
+      stageUuid: "fd2a9fb2-9ab5-83fa-8b09-92d2b28ed65b"
 version: 2
 ---
 # imperial

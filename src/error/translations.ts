@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "error",
-    "uuid": "c20e39be-1e5d-8788-aea4-9b6c0c1b5f3d",
+    "uuid": "825f9d6a-d05a-8461-8910-421c0dfd2b5c",
     "words": [
       "error"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about error — Representation of an Error.",
-    "uuid": "15f0cbc9-4d54-8a47-a09d-9235d5a9f0c6",
+    "uuid": "79c71890-c4ab-8251-bfa4-6cb98215e165",
     "words": [
       "use",
       "when",

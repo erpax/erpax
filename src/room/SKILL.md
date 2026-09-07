@@ -2,10 +2,10 @@
 name: room
 description: "Use when reasoning about room — A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/w"
 atomPath: room
-coordinate: "room · 5/round · c48d522a"
-contentUuid: "ba56b763-077b-59e8-b61f-99fcb42aa5e8"
-diamondUuid: "a43ff914-b07a-8db7-8270-6f116b863c8b"
-uuid: "c48d522a-8228-8685-995b-b88d36f8cdcb"
+coordinate: "room · 5/round · bc7fa051"
+contentUuid: "fe094dc7-60e1-5989-acb7-8aef81cb1c67"
+diamondUuid: "44ed942e-3d96-895c-b29c-48d204c79985"
+uuid: "bc7fa051-80c2-8651-bafc-2aa9b87514d8"
 horo: 5
 typography:
   partition: room
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "adc4ae5d-a42c-8b9f-820d-60f0a9a65139"
+  computationUuid: "437b676e-87de-84c1-b653-979b0b3a0acd"
   stages:
     - stage: path
       stageUuid: "d2b5b516-ff73-80a5-9de8-58d183eaa153"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bdb271b4-d307-8dcf-afa6-4b06454d1a6e"
     - stage: horo
-      stageUuid: "8d181bd9-821c-8c3a-86bf-0db56d31e1cc"
+      stageUuid: "527ce393-b83e-89a0-b07f-88234baf67cf"
     - stage: seal
       stageUuid: "1361ec25-45e1-85d5-a8dd-e4756c4254c2"
     - stage: uuid
-      stageUuid: "d162acc7-7443-88d5-8b37-e641b61b44a0"
+      stageUuid: "b6327143-676e-8d33-812c-c6c0b01c2c46"
 version: 2
 ---
 # room

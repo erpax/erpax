@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "models",
-    "uuid": "fbb442bd-0bb6-8884-ad98-b9060f1a2fe5",
+    "uuid": "ed2ac506-f110-876e-bfab-bfa1899692db",
     "words": [
       "models"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone.",
-    "uuid": "d15978c4-2f11-8d05-9e29-a43f83b52920",
+    "uuid": "b0555ed5-aa69-8b23-bf47-33f549ebd2fd",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: medicine
 description: "Use when reasoning about medicine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/medicine"
-coordinate: "vocabulary/medicine · 5/round · 94afa719"
-contentUuid: "a8ef1c30-51c8-5637-b5ec-51780f7e22ff"
-diamondUuid: "83eb5dc4-f928-8a22-8438-3c8b81f1a997"
-uuid: "94afa719-d19a-8e18-be12-7faadfc45c75"
-horo: 5
+coordinate: "vocabulary/medicine · 8/crest · e4430ba6"
+contentUuid: "dd6b4bf7-f73f-5a21-8baa-4dcc513c983e"
+diamondUuid: "db866759-fd30-8ee6-9898-280d67b76d3b"
+uuid: "e4430ba6-c452-8109-a379-5d07585e3f4c"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6eefcc9c-0bbb-8ef9-bff6-1b16a7ab9dfa"
+  computationUuid: "6d30cbae-b027-8e0e-8608-670be15762fc"
   stages:
     - stage: path
       stageUuid: "5a6a0212-5043-8159-a172-448bbfd0d7f1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "92b52091-dce6-8490-b627-9c52eea05420"
     - stage: horo
-      stageUuid: "1c936748-ff0c-8cc2-9ef0-9be2b88c4659"
+      stageUuid: "db7437fd-6f77-8bca-beb5-1533bebd011f"
     - stage: seal
       stageUuid: "9d05617f-88ad-84ed-b042-d26380c903f1"
     - stage: uuid
-      stageUuid: "cbb81cdf-98aa-892b-94b3-d2a0718ad39c"
+      stageUuid: "60d8b77b-dc9f-88b7-93ed-8d60e8fd0a85"
 version: 2
 ---
 # medicine

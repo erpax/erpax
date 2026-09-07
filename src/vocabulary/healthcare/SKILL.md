@@ -2,11 +2,11 @@
 name: healthcare
 description: "Use when reasoning about healthcare as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/healthcare"
-coordinate: "vocabulary/healthcare · 1/base · f6bb95f6"
-contentUuid: "833b0edd-f488-50cf-9339-edcf13b18f0c"
-diamondUuid: "9d271e02-2f95-8ba0-a5fd-026297a4ebd5"
-uuid: "f6bb95f6-93b9-867f-8b88-2ab17e98b4c9"
-horo: 1
+coordinate: "vocabulary/healthcare · 4/weave · 80ebd13e"
+contentUuid: "e52b80d9-c626-5723-95d9-7c11cf29b4f0"
+diamondUuid: "a4067728-efb5-8492-adc7-cbfd0e0d1158"
+uuid: "80ebd13e-57e6-87f8-9469-308d45b757c5"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ca47aaad-3f43-81c4-bbd6-cc19b9d423b8"
+  computationUuid: "0f23ac5f-a5d3-807f-9da5-6faa1054a755"
   stages:
     - stage: path
       stageUuid: "c691a610-ae32-8d0a-887c-f7a00934c35a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cd3c9f24-4873-8afb-8fc3-934401f11f22"
     - stage: horo
-      stageUuid: "314735f9-0dd1-86b0-9fd0-6bfed24c642f"
+      stageUuid: "03d0bce2-fab2-899a-b17b-15b28e66cfc5"
     - stage: seal
       stageUuid: "37e7c01b-46fd-8ba6-972c-1a8ad89a955a"
     - stage: uuid
-      stageUuid: "af6540a5-51ac-87a7-bd8d-b8b73b79695d"
+      stageUuid: "3c5b7823-6f02-8805-8e12-a7d447d6c906"
 version: 2
 ---
 # healthcare

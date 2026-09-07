@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cli",
-    "uuid": "7075da3d-ea38-8647-8238-5aff65042cbb",
+    "uuid": "3b703d7a-8228-85f7-8836-d0e6bcce22b0",
     "words": [
       "cli"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when invoking operational gates from package.json — erpax routes readme, lint, test, rules, apply, and confirm without bloating scripts.",
-    "uuid": "95fa866e-37ae-8730-85ae-5e240b04bbcd",
+    "uuid": "878ff7fe-d394-8f66-8af0-dee0b433be23",
     "words": [
       "use",
       "when",

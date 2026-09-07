@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drains",
-    "uuid": "efe05635-a590-8f84-ad9f-488eb0b5ae11",
+    "uuid": "5437521e-dc15-8aaf-97e3-b6d32762083b",
     "words": [
       "drains"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about drains — The vasculature that the vein drains into.",
-    "uuid": "6b5360e4-e6fb-87de-b789-a190b43bfdb4",
+    "uuid": "c71c6856-6d79-8c17-ac70-6ec7ce6b4b57",
     "words": [
       "use",
       "when",

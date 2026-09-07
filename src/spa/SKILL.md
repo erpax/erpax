@@ -2,10 +2,10 @@
 name: spa
 description: "Use when reasoning about spa as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: spa
-coordinate: "spa · 2/share · 63de0b2a"
-contentUuid: "aa5ab868-cbf4-5f22-b658-0d46fa51844b"
-diamondUuid: "b36f54ab-c394-825b-8aa6-d4b8e9fb4876"
-uuid: "63de0b2a-e406-8c46-a12e-467409a7a7d9"
+coordinate: "spa · 2/share · 151f1db0"
+contentUuid: "bba7b4b0-1170-5881-b59a-5fe56610c7f2"
+diamondUuid: "44b87738-5aa6-82b4-a2f0-f8c60a09db88"
+uuid: "151f1db0-210e-8ad5-8c1d-716f5b390023"
 horo: 2
 typography:
   partition: spa
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5e673e8f-8989-8e14-b1f6-151cfb21d257"
+  computationUuid: "c09a7972-5837-8144-b9f8-b00090de0125"
   stages:
     - stage: path
       stageUuid: "1c65383d-ea5c-8bed-a1d4-9fd7cc8c91c7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7efd0d15-14ad-83b4-9b5b-8994895d1a60"
     - stage: horo
-      stageUuid: "1e6d7c81-4964-84dd-8a73-ed0536bcf0be"
+      stageUuid: "a1df4274-d0eb-82b2-811e-7771795dc543"
     - stage: seal
       stageUuid: "64981157-18e1-81a9-a8cb-60becedfc230"
     - stage: uuid
-      stageUuid: "589098d1-2091-82a7-9f28-833f69af4ac2"
+      stageUuid: "486428ee-7f8a-8cbd-8949-53c6360418f4"
 version: 2
 ---
 # spa

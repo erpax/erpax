@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "claim",
-    "uuid": "a73c4daa-9de1-8928-bdab-cbd32a729621",
+    "uuid": "02bb239e-4dc9-82bb-8e2d-7a52247d08c0",
     "words": [
       "claim"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about claim — A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text proper",
-    "uuid": "a7131c6c-de67-86d3-90bd-438ed6842acc",
+    "uuid": "6ac3c803-76c6-8b24-855c-fbb0e85e5cae",
     "words": [
       "use",
       "when",

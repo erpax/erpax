@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "corporation",
-    "uuid": "27dce084-b109-8c3d-9569-95e440696dc9",
+    "uuid": "cb9b6b3c-d887-8863-8c90-d8afe8fd82cb",
     "words": [
       "corporation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about corporation — Organization: A business corporation.",
-    "uuid": "1e0dee1d-b8ec-8d72-9b3d-41f2fa3a6721",
+    "uuid": "42643a68-a5c8-865b-9c18-48a854a5e049",
     "words": [
       "use",
       "when",

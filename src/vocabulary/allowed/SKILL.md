@@ -2,11 +2,11 @@
 name: allowed
 description: "Use when reasoning about allowed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/allowed"
-coordinate: "vocabulary/allowed · 1/base · 1c0f950c"
-contentUuid: "c52854f0-a953-520d-9005-06970e5eea1b"
-diamondUuid: "5e7e9000-8143-8e19-9f83-ae8c7ecba821"
-uuid: "1c0f950c-e004-8823-bd32-0f710c4f0bce"
-horo: 1
+coordinate: "vocabulary/allowed · 2/share · d17e47ea"
+contentUuid: "39daedf5-18ac-5790-92e0-5f7ef28c31bd"
+diamondUuid: "14cdfd81-d156-86a3-a3eb-2bd14db283b5"
+uuid: "d17e47ea-2fda-8af2-964e-54e7ce048736"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1f7ac2c2-c8a1-80ab-b476-fbc8fba587b0"
+  computationUuid: "68aa16f5-e809-8552-8387-54a0bf4f4c46"
   stages:
     - stage: path
       stageUuid: "d0774203-0afa-8d32-8a59-c2222751e185"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2e3ff5e9-7814-84eb-a488-c35b5a9828c3"
     - stage: horo
-      stageUuid: "655d04ba-c9f4-833e-8d06-64c256ac9428"
+      stageUuid: "9f1b4f61-7eb2-86f8-96d0-20aa4d30118c"
     - stage: seal
       stageUuid: "1322e5ae-ad0e-8dba-9c61-fc2c5fb38be6"
     - stage: uuid
-      stageUuid: "91a1bbde-095e-8ef1-af45-8c241cd98c2e"
+      stageUuid: "5d541e7f-814b-8a9a-ae77-b437f20df110"
 version: 2
 ---
 # allowed

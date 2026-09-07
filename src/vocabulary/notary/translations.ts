@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "notary",
-    "uuid": "45b916a2-133d-8d61-aa05-bb17ba381f72",
+    "uuid": "3490ed6d-f1f7-8bf5-9f7a-d8ca80bf3dbd",
     "words": [
       "notary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about notary — A notary.",
-    "uuid": "ceb94892-0eba-83cd-8b67-317239f1e7ff",
+    "uuid": "2cf10c11-1133-8b46-b2ff-4b3beb5e79df",
     "words": [
       "use",
       "when",

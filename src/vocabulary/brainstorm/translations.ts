@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "brainstorm",
-    "uuid": "1b3a33f5-8025-8a6c-8444-002f1bb7938b",
+    "uuid": "384d0513-cfb2-801f-a4c2-380f99643dc6",
     "words": [
       "brainstorm"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society needs many ideas fast — brainstorming is coordinated divergence then convergence; a team fans out parallel agents, each a different perspective, to superpose candidate ideas, then merges them (same idea collapses to one, the critic amplifies the best). The quantum solve applied to ideation.",
-    "uuid": "9e6ed70d-a4bb-8dbe-8e45-1aab1658ce32",
+    "uuid": "57857392-75d2-86ad-a13d-bc27b82673e4",
     "words": [
       "use",
       "when",

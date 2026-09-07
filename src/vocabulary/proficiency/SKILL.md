@@ -2,11 +2,11 @@
 name: proficiency
 description: "Use when reasoning about proficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/proficiency"
-coordinate: "vocabulary/proficiency · 8/crest · 78f34628"
-contentUuid: "8b0f48e0-bd7c-5b49-a3d7-ea976cebf2ce"
-diamondUuid: "119a3f35-bf49-8010-994b-4c1a405f782b"
-uuid: "78f34628-8908-88bc-9b35-36563b1a8b6d"
-horo: 8
+coordinate: "vocabulary/proficiency · 5/round · dffb3250"
+contentUuid: "b8398a39-491b-556f-be3f-9cf395bd66ce"
+diamondUuid: "4baded43-cd55-8373-8784-9c871f0f85c8"
+uuid: "dffb3250-c945-8397-b6f7-f3866180035f"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1a903b2d-bbc1-8662-a322-1a83e60f132c"
+  computationUuid: "ee421dff-16a4-8a8f-879b-a30129da17d8"
   stages:
     - stage: path
       stageUuid: "33e4173c-f5f1-8551-bd99-ec0ea3eec201"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1d0fa688-cb9d-8647-ae43-b1ae6c650c17"
     - stage: horo
-      stageUuid: "e32fdc14-93c4-805f-8b71-c615563048df"
+      stageUuid: "d745c309-fa9e-8e7b-9dde-6105e3e9d429"
     - stage: seal
       stageUuid: "3a57f10c-b357-8b7e-b991-c404df26bb66"
     - stage: uuid
-      stageUuid: "210f4b2c-294a-80d5-81ae-6837ad0015bb"
+      stageUuid: "dabf25c7-cba6-85c1-bda0-4f3e40543c15"
 version: 2
 ---
 # proficiency

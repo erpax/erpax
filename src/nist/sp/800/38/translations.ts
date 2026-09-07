@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing NIST SP 800-38 — Block Cipher Modes of Operation.",
-    "uuid": "1d4ac344-0996-8cd8-94a3-6ff17f2ebddc",
+    "uuid": "94f8e3b8-b1d8-8365-a600-bd20c4a7d2a4",
     "words": [
       "use",
       "when",

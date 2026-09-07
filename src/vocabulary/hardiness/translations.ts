@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hardiness",
-    "uuid": "444e742d-d78c-84a9-bc3a-e44aa96c7aa8",
+    "uuid": "5851ea2f-e82d-8a2f-a579-26ed18d2c50c",
     "words": [
       "hardiness"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when classifying a crop by cold tolerance — hardiness ranks crops hardy / half-hardy / tender / very-tender by the frost they survive, and the USDA hardiness zone places a site by its average annual minimum temperature. The biological cold-tolerance trait (the crop's) paired with the zone (the place's); together they decide what can overwinter or be planted when.",
-    "uuid": "c4127f53-6491-85cc-b45c-8aef25b47d91",
+    "uuid": "01aa2259-21e9-8941-b185-b6921ced1b4a",
     "words": [
       "use",
       "when",

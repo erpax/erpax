@@ -2,11 +2,11 @@
 name: api
 description: "Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components."
 atomPath: api
-coordinate: "api · 1/base · d7e8a958"
-contentUuid: "5936a747-25b7-50a2-8212-12be6fa074a8"
-diamondUuid: "ac00ea21-643d-8cd4-bd38-ad8a0887d526"
-uuid: "d7e8a958-31cf-81b6-a5d7-2fbd430d7fae"
-horo: 1
+coordinate: "api · 7/descent · 68efc756"
+contentUuid: "9a6cdf4d-3dd7-5f43-8411-bb6093c86cab"
+diamondUuid: "98f21fb1-55ff-8377-ad6d-280474373d01"
+uuid: "68efc756-64d7-82cb-bb44-96fd58245593"
+horo: 7
 typography:
   partition: api
   bondDegree: 102
@@ -17,7 +17,7 @@ standards:
   - "RFC-9110"
 bindings: []
 signatures:
-  computationUuid: "fddc5b3a-570d-898e-a1df-63c9fadb57a4"
+  computationUuid: "e436aba7-f9b8-8b15-b6a9-6ed0af8b939f"
   stages:
     - stage: path
       stageUuid: "6ab3d6d5-bcae-8dbf-b4ce-e6a3e6f05d97"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "d9cd4e19-c697-8184-af0b-847ae0b1ade0"
     - stage: horo
-      stageUuid: "c0090b77-1870-8554-8391-a93f75a4e403"
+      stageUuid: "d7c987fd-cb9c-8056-a88b-34050e0189dc"
     - stage: seal
       stageUuid: "f00c0bed-597d-8b45-89ca-1743fd6d7298"
     - stage: uuid
-      stageUuid: "5b891312-7d97-80f7-9ce2-cddbda449ffd"
+      stageUuid: "53426d87-c007-871b-92d7-7fd44f9010db"
 version: 2
 ---
 # api — Local / REST / GraphQL (position 7 of the material cycle)

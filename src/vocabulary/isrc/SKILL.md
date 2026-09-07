@@ -2,10 +2,10 @@
 name: isrc
 description: "Use when reasoning about isrc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/isrc"
-coordinate: "vocabulary/isrc · 4/weave · bd68ad0d"
-contentUuid: "a611460e-153a-5d02-9b71-858ec00000d3"
-diamondUuid: "7bd6df70-4275-8476-94f8-dcea6342c5fe"
-uuid: "bd68ad0d-cd2a-8049-9b62-27e112fa55b9"
+coordinate: "vocabulary/isrc · 4/weave · 0fab26a2"
+contentUuid: "681bcd41-2539-5ca4-b5e2-13c03b22fdd1"
+diamondUuid: "2573076e-7cd9-84bb-85ed-6d87ebc0b7bf"
+uuid: "0fab26a2-30ee-87fc-bfe5-26bbf2f71f6a"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "309f4fb5-3eea-8d47-b9d8-75a0fdf31a1d"
+  computationUuid: "e288f10d-9a2f-8972-a83c-e41f7368e18c"
   stages:
     - stage: path
       stageUuid: "c08ec88d-2cc7-87b3-8844-e0917dd2c308"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c9cd8e34-22b9-87db-b686-fefa27de7b73"
     - stage: horo
-      stageUuid: "56c6a090-372c-8271-90a1-db325ec7b7dc"
+      stageUuid: "e599e490-8d66-808c-9999-2b346d81b662"
     - stage: seal
       stageUuid: "b0ae4631-5314-8c8b-b3d6-9fec42f90a5d"
     - stage: uuid
-      stageUuid: "4b0293cb-c1a0-8d99-af0b-30e5e616eb1e"
+      stageUuid: "0f6b09eb-c3e3-8131-b8e9-e73439b187d3"
 version: 2
 ---
 # isrc

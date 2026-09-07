@@ -2,11 +2,11 @@
 name: agriculture
 description: "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry."
 atomPath: "vocabulary/agriculture"
-coordinate: "vocabulary/agriculture · 7/descent · 421d49bd"
-contentUuid: "71f27862-b4c6-5913-b888-9d6a48463ea8"
-diamondUuid: "e2f56398-e1f2-8c2d-bfc1-ca88e8585fd8"
-uuid: "421d49bd-498f-8e1b-a84c-64aabd117c74"
-horo: 7
+coordinate: "vocabulary/agriculture · 2/share · a4707da7"
+contentUuid: "4f72de51-ca33-591c-8e26-e416d9f7e042"
+diamondUuid: "503b2381-6552-89c7-84a0-c50610c9042a"
+uuid: "a4707da7-0dc2-8d1e-8f29-1100698081e2"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 249
@@ -15,7 +15,7 @@ standards:
   - "IFRS-15"
 bindings: []
 signatures:
-  computationUuid: "1fc5a5cd-c599-8a9a-9818-0d21c11aeb05"
+  computationUuid: "cc24e0ad-69be-8010-88ea-8c53fc0d4b09"
   stages:
     - stage: path
       stageUuid: "f9a424cc-b2d7-8773-b895-645b73ea9637"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "dcde079d-2ad7-8ef5-85a5-e9dc3cc9f34e"
     - stage: horo
-      stageUuid: "d3ab4515-883d-8c06-9e62-4ea7f83380c8"
+      stageUuid: "7b42a26c-a60e-8a89-9149-e66e15d755d2"
     - stage: seal
       stageUuid: "d83d3e9b-04a0-8cc1-b9b8-99142e7dbe04"
     - stage: uuid
-      stageUuid: "fb5880f3-da72-8443-8211-2b9fe6993a98"
+      stageUuid: "f40dfac5-8b6a-8141-a6fe-1194d1546ab0"
 version: 2
 ---
 # agriculture — growing living produce to a market, planned backward from demand to land

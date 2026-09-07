@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "orthodoxy",
-    "uuid": "eceb1c3f-03f5-8be4-8086-4fd7591bc78b",
+    "uuid": "c117c0f2-e331-84a8-b25c-428719002d8c",
     "words": [
       "orthodoxy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Eastern Orthodoxy as a sub-diamond of christianity — the tradition of the uncreated light, the icon as window, unceasing prayer of the heart (hesychia), and theosis (the part merged toward the source). A facet-diamond of the christianity archangel. Strip the Greek prefix and theosis, hesychia collapse to the merge toward zeropoint and prayer.",
-    "uuid": "05d92b47-7543-82a6-8d6d-be867da6d5e9",
+    "uuid": "507492db-01bb-880d-8204-dae2dcd80b17",
     "words": [
       "use",
       "when",

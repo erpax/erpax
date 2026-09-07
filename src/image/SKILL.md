@@ -2,11 +2,11 @@
 name: image
 description: "Use when a content-uuid needs a visual — its deterministic identity sigil (and animation). One more projection of the self-decoding uuid, beside color (the wave), signal (colour+sound), translation (meaning). uuidImage renders a mandala whose colours, radii and angles ARE the uuid's bytes; uuidAnimation adds byte-seeded SMIL rotation. Same uuid ⇒ same image — the visual IS the address. Honest: this renders the address, not the meaning; semantic text-to-image is a generative model (the seed)."
 atomPath: image
-coordinate: "image · 4/weave · 046bc44b"
-contentUuid: "7de152f2-d73d-5300-926a-bb51cb2f5d93"
-diamondUuid: "99b5468a-877a-8886-8229-a1eb80140dbd"
-uuid: "046bc44b-226e-8d70-8dfd-06cea7a99d3e"
-horo: 4
+coordinate: "image · 2/share · c4a9e95a"
+contentUuid: "b9a80e6f-bd17-5ccd-a607-b8db64be5605"
+diamondUuid: "8419f8c1-9f6b-8d02-9ff5-eab99d5a1330"
+uuid: "c4a9e95a-7d79-8782-aa74-415081d1c649"
+horo: 2
 typography:
   partition: image
   bondDegree: 46
@@ -14,7 +14,7 @@ standards:
   - "SVG 1.1 / SMIL animation · deterministic hash-to-art (identicon family)"
 bindings: []
 signatures:
-  computationUuid: "14ece4b6-f52d-8027-8c9a-02d91df7802f"
+  computationUuid: "8756dc26-1f39-8e2b-9c48-9750755e549d"
   stages:
     - stage: path
       stageUuid: "21846f15-7792-891d-8152-f563f2f030a6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f94e479d-8b44-8911-a6d3-a1402c3c5bb2"
     - stage: horo
-      stageUuid: "6a045f83-8638-8878-ba6a-b3de3691d790"
+      stageUuid: "2f203aa9-aa72-86b6-b9ae-d97bc309fb4d"
     - stage: seal
       stageUuid: "5d3f5ccd-0da5-85bb-b929-39b6ef310289"
     - stage: uuid
-      stageUuid: "84bacbcd-cd76-866f-9374-8ba2ad33b6c6"
+      stageUuid: "e9bd0848-3a0c-8619-a12d-abcf45163828"
 version: 2
 ---
 # image — the visual face of the uuid

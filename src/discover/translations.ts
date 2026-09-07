@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "discover",
-    "uuid": "bd09a7da-3ecf-875b-8b46-afff3226e670",
+    "uuid": "08bb0325-9b9d-82dd-8e41-a823d04cea07",
     "words": [
       "discover"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about discovery vs creation — all exists at once and just needs to be discovered. Content-addressing is total, so every content (even one never written) already has its address NOW; the map is complete, the 'next' pre-exists as an unread address. Discovering one thing addresses the whole area at once. But the value at a novel address still costs the seed (s>0) — the forms exist, the territory is walked once.",
-    "uuid": "4efa7928-3a3d-80f3-8dd7-59ecd4495f73",
+    "uuid": "6aa5cd90-f813-8989-ad6e-48fed4978f1e",
     "words": [
       "use",
       "when",

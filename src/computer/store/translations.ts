@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "store",
-    "uuid": "5d1352cf-64ce-8531-9b6f-6302620b5d02",
+    "uuid": "1c7f18a6-9b97-8c83-a444-97b185bc6299",
     "words": [
       "store"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about store as a hardware facet of computer — vocabulary pivot to @/store; nested not duplicated.",
-    "uuid": "28c50a79-55ab-895e-976e-619f573772a0",
+    "uuid": "4b4fefc7-384a-8cf1-92c5-1edc1a9df651",
     "words": [
       "use",
       "when",

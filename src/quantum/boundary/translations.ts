@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "boundary",
-    "uuid": "d96d2012-f303-8030-9ed5-a28030aa26ba",
+    "uuid": "b1a16de9-e78a-8dc5-a0b0-6e94b5ac6754",
     "words": [
       "boundary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing per-file quantum import/export boundaries — barrel entanglements and export facets derived from source bytes, content-addressed as boundaryUuid; drift is impurity; collapse rewrites deep escapes to raise tamper-cost.",
-    "uuid": "fb7a8ef1-ce97-8990-9c86-1d39e21ddeb1",
+    "uuid": "cc8454c3-6653-8a83-ba3e-4cbb9c6a3e69",
     "words": [
       "use",
       "when",

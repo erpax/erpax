@@ -2,10 +2,10 @@
 name: regions
 description: "Use when reasoning about regions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/regions"
-coordinate: "vocabulary/regions · 8/crest · 3753b6e1"
-contentUuid: "e01f350c-2755-5d78-be60-033b4fbded2f"
-diamondUuid: "c1f50787-2918-8afa-ab59-f80ccb162b73"
-uuid: "3753b6e1-7597-8b13-8f8b-74da52d49597"
+coordinate: "vocabulary/regions · 8/crest · 70cc2bff"
+contentUuid: "40d30268-9dc1-53b6-a499-c69f0e41071d"
+diamondUuid: "819b6b1e-3f0b-858d-9ae1-749c98182910"
+uuid: "70cc2bff-6621-8b73-a346-3b707d204c6d"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "87dbe6c0-8f40-84ed-b44d-504cec8e318e"
+  computationUuid: "80e17ae7-3eba-8698-ae4e-7506affb761f"
   stages:
     - stage: path
       stageUuid: "09be22e4-3695-8d73-a94b-d6e213b5f016"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aa644b1c-e7e8-8ac7-b247-aeb20e4e920c"
     - stage: horo
-      stageUuid: "f557e1f7-abfe-8e8d-8da9-d7ac52e9d727"
+      stageUuid: "47e32b78-a189-82a0-8c1e-25058b3242e9"
     - stage: seal
       stageUuid: "d798fe4f-7e43-842a-93fb-2951c38476fd"
     - stage: uuid
-      stageUuid: "db753b7f-8c07-888b-8a88-b0347c592198"
+      stageUuid: "51a3de48-e5f4-8887-9e83-90c7d6d3689c"
 version: 2
 ---
 # regions

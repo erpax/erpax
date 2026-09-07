@@ -2,18 +2,18 @@
 name: publish
 description: "Use when automating commit and push — the local agent that performs the git action, but ONLY through the computed decision (decide), trained on quantum security (tamper · quantum) and the standards, fail-closed, with a tamper-evident uuid-chained receipt. It pushes because the gates said yes, never because it was told to."
 atomPath: publish
-coordinate: "publish · 2/share · d07160b7"
-contentUuid: "fda6581c-133e-574f-a04c-f4f961e879b5"
-diamondUuid: "58fa8c32-074a-84e2-b9dd-60d7f0f7a2a4"
-uuid: "d07160b7-358b-8447-ba19-144005f74306"
-horo: 2
+coordinate: "publish · 7/descent · 575a89e2"
+contentUuid: "ea71120d-966c-587b-b0ec-fcc59e7d106f"
+diamondUuid: "eab3a973-e6c3-8850-9df5-79d1bea27ee7"
+uuid: "575a89e2-f82b-8b6f-896d-2218820e4631"
+horo: 7
 typography:
   partition: publish
   bondDegree: 50
 standards: []
 bindings: []
 signatures:
-  computationUuid: "00d60d98-df28-8791-acda-bed283843d7f"
+  computationUuid: "45793ac4-e8d2-8983-9883-906187b18182"
   stages:
     - stage: path
       stageUuid: "4f8f1fd9-c16a-88a3-bb74-43cc4ec8e934"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dc2745c8-c33d-8afd-97a1-bc369b9f68b1"
     - stage: horo
-      stageUuid: "0ddab46a-31e8-8846-9e8a-fe811268bd70"
+      stageUuid: "3da8d1b2-ddcb-8c2c-a582-718f18398ab3"
     - stage: seal
       stageUuid: "6ac55438-76ca-83e2-a915-e1386ce31b39"
     - stage: uuid
-      stageUuid: "3eb45f04-5c30-8399-8a12-33a6ab2ef53d"
+      stageUuid: "b20859ea-bd9b-8aa7-8271-92ed84936103"
 version: 2
 ---
 # publish — the local agent that automates commit and push, trained in quantum security and the standards

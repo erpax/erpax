@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nerve",
-    "uuid": "f8940470-1ddd-8f4d-b469-fd7b16b2dd50",
+    "uuid": "1ba71c90-5e8f-8594-952b-f2d105758981",
     "words": [
       "nerve"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the nerve as an organ of body — pivot to canonical @/nerve; zero duplication.",
-    "uuid": "8176a9d2-34ea-820a-91c0-0cd37ee6512d",
+    "uuid": "3f382a41-e796-89bc-a110-d644ef1e8fdc",
     "words": [
       "use",
       "when",

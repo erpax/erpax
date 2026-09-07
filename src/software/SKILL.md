@@ -2,10 +2,10 @@
 name: software
 description: "Use when reasoning about software as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: software
-coordinate: "software · 2/share · 92753a44"
-contentUuid: "39a4da3a-b231-5442-830f-defd1ec089c9"
-diamondUuid: "8f087733-5af8-8f09-8b43-119e5e8c1ebf"
-uuid: "92753a44-5c0d-8f3e-806b-7ff3a9978a9f"
+coordinate: "software · 2/share · c5c80736"
+contentUuid: "9ddc4967-32d3-54ff-a289-91ba964cd9d7"
+diamondUuid: "8912f174-4c83-8e96-b259-210a5020a235"
+uuid: "c5c80736-0a43-823d-8370-9dcb24340171"
 horo: 2
 typography:
   partition: software
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a48a3728-8b81-8c15-a6a6-e0826bb0d243"
+  computationUuid: "5b8ed7dd-ab7a-8e9b-8fc2-9f083263fd77"
   stages:
     - stage: path
       stageUuid: "6bd4331c-fb9f-8358-90b6-9c6ada96612c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7fc42d11-5b1d-8f3b-9616-4bfca1266e35"
     - stage: horo
-      stageUuid: "53382d91-1225-8b84-aa4b-617cb449eb96"
+      stageUuid: "e1cd967b-1f89-8eac-8680-a6640e5ff525"
     - stage: seal
       stageUuid: "fc08a761-70a9-87ec-a258-02fc21795b87"
     - stage: uuid
-      stageUuid: "162c75d8-e573-8310-bb9f-739e32eade8b"
+      stageUuid: "47b891d0-19bc-8e00-96b1-933d29d1a062"
 version: 2
 ---
 # software

@@ -2,18 +2,18 @@
 name: limit
 description: "Use when mapping the boundary of erpax — what it CAN do (the provable: addressable, balanced, conserved FORM) vs what it CANNOT do from within (truth, judgment, finality, true-erasure, prevention, the subjective — the Gödel boundary). The live finder is services/architecture-invariants; the hard limits are filled by proving the unprovable — supplying the missing 1/3 from OUTSIDE the formalism."
 atomPath: "vocabulary/limit"
-coordinate: "vocabulary/limit · 4/weave · 8d7e3798"
-contentUuid: "7c051676-1109-5f29-8b1c-8da9141b7fe0"
-diamondUuid: "263d70ff-a21c-8f9c-bd0a-6b5d474cc89d"
-uuid: "8d7e3798-a73e-8526-954b-bc3782fa7566"
-horo: 4
+coordinate: "vocabulary/limit · 8/crest · fa0ad042"
+contentUuid: "5f7bdb43-3122-5d54-922e-6a78bf378add"
+diamondUuid: "c2f47f36-328e-88eb-82af-948f04d4c0cd"
+uuid: "fa0ad042-cb83-8dbd-9e80-9d2af7b3e4cc"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 88
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f4f39ab0-6678-8ae2-8f9b-a2b19cc08596"
+  computationUuid: "0cd8c781-7375-8b32-9db6-cf507919959d"
   stages:
     - stage: path
       stageUuid: "cea28cd9-e99d-89e5-b774-aa44cc5dcab9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "81228d75-76cf-8b0f-ac82-4633613682fd"
     - stage: horo
-      stageUuid: "1f0bed9a-8ece-83d6-8296-ec08c3c22a8c"
+      stageUuid: "d83b6f8a-e6ef-83cc-a471-9666a6d5b461"
     - stage: seal
       stageUuid: "c7f3ae4b-b5a7-8f01-b2ef-5ffa5fbf6b51"
     - stage: uuid
-      stageUuid: "a46bd376-aa6e-8f71-ae3e-0ff3bc9e3e26"
+      stageUuid: "d3863b6c-ec08-8248-94ad-faee62e64a43"
 version: 2
 ---
 # limit — the boundary (what erpax cannot do), and how the unprovable is proved

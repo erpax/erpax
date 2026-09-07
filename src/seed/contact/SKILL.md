@@ -2,18 +2,18 @@
 name: contact
 description: "Use when reasoning about contact — Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route."
 atomPath: "seed/contact"
-coordinate: "seed/contact · 1/base · 5c48ba40"
-contentUuid: "3279694f-0ba5-5c8e-bb23-dc570a70a0c1"
-diamondUuid: "3ccd8e2e-1d9c-8d9b-a50d-1e56a1f6772a"
-uuid: "5c48ba40-7604-86ed-8e3c-4ddc649ded0e"
-horo: 1
+coordinate: "seed/contact · 7/descent · afeac750"
+contentUuid: "74101c87-e2dc-5bdd-915f-919edeb96f0d"
+diamondUuid: "0c6b5717-7b2a-860d-af06-25aab8e9bdad"
+uuid: "afeac750-3948-8924-bff2-3e231a4b6009"
+horo: 7
 typography:
   partition: seed
   bondDegree: 31
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d7990f6a-75cd-8801-a519-8707a8d12f14"
+  computationUuid: "550f0591-9e04-806a-a183-636bcfe26f89"
   stages:
     - stage: path
       stageUuid: "5d4e3d42-5940-8734-93a3-b7eb99181809"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e26aca93-d880-884b-b1b0-4c6dd59579ee"
     - stage: horo
-      stageUuid: "4cb7dd79-a0bd-8b36-8cfc-371c4ea34385"
+      stageUuid: "e5f6dcfc-d133-81dd-84d6-199c0609bff2"
     - stage: seal
       stageUuid: "cdfe5d1d-f536-8213-a91b-d69282d10ad9"
     - stage: uuid
-      stageUuid: "ac0074a6-f23e-83a4-9b76-3e2a541e3e28"
+      stageUuid: "53c28aa1-8cf3-87e9-8d21-51bb2112f1a7"
 version: 2
 ---
 # contact

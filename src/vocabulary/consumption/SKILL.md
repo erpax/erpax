@@ -2,11 +2,11 @@
 name: consumption
 description: "Use when reasoning about consumption as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/consumption"
-coordinate: "vocabulary/consumption · 1/base · b7a77355"
-contentUuid: "29a16a40-55ba-5351-9895-fcbf16bd015f"
-diamondUuid: "ae7eaa30-bfdb-82fa-96f6-4baa0d85c809"
-uuid: "b7a77355-c648-8d54-83ce-d3fbc2369d07"
-horo: 1
+coordinate: "vocabulary/consumption · 8/crest · 2d0ed332"
+contentUuid: "a191ff6c-2dff-535b-822c-f849d1fc96ae"
+diamondUuid: "175c142e-fc37-8f3d-8605-99a8b712adfc"
+uuid: "2d0ed332-dd88-895a-b4cc-ce1d9f6039d0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bff069be-67fa-8abc-a46d-e868f8afe593"
+  computationUuid: "22ef36d2-eaa9-8063-921a-a39c74481093"
   stages:
     - stage: path
       stageUuid: "0db09d62-4f81-8ccc-a8b7-a21b95102cb6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32169275-2113-86d7-978f-de1d9d2da9ff"
     - stage: horo
-      stageUuid: "71b49f5f-0316-83c4-9436-d9c33ca68188"
+      stageUuid: "a1fb3809-2c1d-851d-b904-a1b28e9b0576"
     - stage: seal
       stageUuid: "731e3f42-c3be-8a93-b84c-978bf182dc9b"
     - stage: uuid
-      stageUuid: "c876d8e8-bb1b-8ae1-a45f-bd3152e1d881"
+      stageUuid: "f20d3c25-7509-8b3f-9341-14ba83340659"
 version: 2
 ---
 # consumption

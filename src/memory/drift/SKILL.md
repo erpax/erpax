@@ -2,18 +2,18 @@
 name: drift
 description: "Use when checking that the agent memory index still matches its files — MEMORY.md is the load surface, so a memory absent from it is written but never loaded, and an index line with no file is a citation leading nowhere. Fails closed on both directions; zero is a theorem, not a ratchet."
 atomPath: "memory/drift"
-coordinate: "memory/drift · 5/round · ff8fb19a"
-contentUuid: "b53abadc-a0b6-5965-a909-a9ab3b7a28ca"
-diamondUuid: "88a952c1-6a80-86ad-acf6-2668379646df"
-uuid: "ff8fb19a-6ffa-8c1a-810e-76c80b780245"
-horo: 5
+coordinate: "memory/drift · 8/crest · 2bddbe42"
+contentUuid: "69938a3c-ae4e-57c2-8af2-80819137e457"
+diamondUuid: "fdcc44e2-f11c-8323-9e19-f12560478d9a"
+uuid: "2bddbe42-abc4-89af-96f7-fea30f525978"
+horo: 8
 typography:
   partition: memory
   bondDegree: 14
 standards: []
 bindings: []
 signatures:
-  computationUuid: "52b74127-9bb0-8682-b3d7-a1ca817166f4"
+  computationUuid: "eec78b21-c533-889c-9f81-877e51015cc9"
   stages:
     - stage: path
       stageUuid: "a41e0fad-ca01-8404-bfb0-067b3406f8b9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9459bf8c-4018-8727-953d-6d400c1aec16"
     - stage: horo
-      stageUuid: "6ae2e635-3acd-8fba-9dff-f017c3c52530"
+      stageUuid: "e275fdcd-cfbd-8b7d-a546-717852d08434"
     - stage: seal
       stageUuid: "60395318-1b36-84fa-81ec-533b163d69dd"
     - stage: uuid
-      stageUuid: "171ffc0a-e33c-8ae4-831a-63a3eec961c4"
+      stageUuid: "17ef938d-d516-890f-b10e-b8e2cd5e1915"
 version: 2
 ---
 # drift — a memory off the index is not an instruction

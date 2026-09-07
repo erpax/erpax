@@ -2,10 +2,10 @@
 name: salon
 description: "Use when reasoning about salon as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: salon
-coordinate: "salon · 8/crest · 8f25f9f3"
-contentUuid: "1a0c19bd-82c4-5661-ac3d-b54c02cebde0"
-diamondUuid: "e0242a8a-b3c1-8543-a0f3-72e97f70545d"
-uuid: "8f25f9f3-2655-88a3-9ad3-d68254d19a6f"
+coordinate: "salon · 8/crest · 508cdd5b"
+contentUuid: "fe6bc0b1-94fa-5f7f-be27-74a34806d475"
+diamondUuid: "62c4bf4e-3762-8abb-bdbc-13f87354e03a"
+uuid: "508cdd5b-4ae5-8317-bc97-fc6b50587d87"
 horo: 8
 typography:
   partition: salon
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e1d9b073-66ca-8d0d-8dda-3f6973521775"
+  computationUuid: "15a94762-5360-8752-8038-69c05a80e023"
   stages:
     - stage: path
       stageUuid: "1e3fe668-1a78-8ea5-83c5-e7fc953bdc68"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "db909ca8-8a6c-87bc-81c2-ce0027eff055"
     - stage: horo
-      stageUuid: "24459806-1077-8694-9b7c-ec4ec63fae89"
+      stageUuid: "ac649e62-5de1-8ffd-8d9d-63bd834109f6"
     - stage: seal
       stageUuid: "9d09dd6d-5357-8e77-85e3-365fa676e6bd"
     - stage: uuid
-      stageUuid: "30bb3910-5a59-804c-a506-1126d2d670db"
+      stageUuid: "ae9faf8d-5472-89b1-802f-59a918f58cdd"
 version: 2
 ---
 # salon

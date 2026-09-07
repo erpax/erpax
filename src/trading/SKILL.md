@@ -2,11 +2,11 @@
 name: trading
 description: "Use when wiring an OUTBOUND call to a commercial counterparty — a payment gateway, marketplace, shipping carrier, Peppol/EDI access point, banking aggregator, or FX feed. Every such call runs at maximum tamper-cost — gated by the sandbox (capability + credential-broker + endpoint allowlist) and emitting a uuid-chained receipt — so the integration surface is zero-entropy and tamper-evident; credentials live per-tenant by handle, never in code."
 atomPath: trading
-coordinate: "trading · 5/round · 61f111d8"
-contentUuid: "07c847fb-c308-5dde-8a3c-5dcd17349e53"
-diamondUuid: "23d39fd0-7b0b-889b-8814-7ba563ba32cb"
-uuid: "61f111d8-efec-8222-a1b6-dd7672bbc26c"
-horo: 5
+coordinate: "trading · 7/descent · 5ca0239f"
+contentUuid: "6288b68e-8209-53d8-869f-b950d6ddb1da"
+diamondUuid: "0950d17e-54ae-8b69-b798-1ffc4c26f87d"
+uuid: "5ca0239f-3adc-8fdf-ab19-3c59ef80841a"
+horo: 7
 typography:
   partition: trading
   bondDegree: 69
@@ -18,7 +18,7 @@ standards:
   - "RFC-9110 http-semantics (the REST/fetch client surface)"
 bindings: []
 signatures:
-  computationUuid: "43323abb-a55a-8a6b-8c80-f452b2c08b0f"
+  computationUuid: "7fd1754c-e4fb-8ebe-b4f7-3f5de8567a93"
   stages:
     - stage: path
       stageUuid: "864e1a0a-eecc-8ce3-9db4-0a40af74a45b"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "c6848d66-61ba-8b14-a859-af5152e4cc71"
     - stage: horo
-      stageUuid: "fe8ca031-a362-8f8b-a92b-7ee3c96dd8ff"
+      stageUuid: "7e781fd9-bcf2-8297-94ac-78379157d7da"
     - stage: seal
       stageUuid: "1a8f83f8-bad3-8f9c-a2d5-df4a362407a5"
     - stage: uuid
-      stageUuid: "59fd9afd-50a0-85a3-ab66-6324d30f6813"
+      stageUuid: "4d44632d-d649-8540-87fe-0be86ce1d2b3"
 version: 2
 ---
 # trading — the commercial counterparty layer (every outbound call at max tamper-cost)

@@ -2,10 +2,10 @@
 name: level
 description: "Use when reasoning about level as a medical facet of medical — vocabulary pivot to @/level; nested not duplicated."
 atomPath: "medical/level"
-coordinate: "medical/level · 4/weave · bf42cd0a"
-contentUuid: "3503a51e-bebe-5453-ad68-6ff8386a2b29"
-diamondUuid: "713c7ba3-ea92-865a-b12d-52eafb6cee76"
-uuid: "bf42cd0a-cf53-8359-9601-ff77dfe6f75d"
+coordinate: "medical/level · 4/weave · f91b28bb"
+contentUuid: "449bae25-05c3-5e09-8956-8d819da235f9"
+diamondUuid: "4f6ce53a-5b7e-874f-ade0-601ab5cc7ef5"
+uuid: "f91b28bb-a1b9-8312-9b4c-2eb3f91648b9"
 horo: 4
 typography:
   partition: medical
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "972e11dc-81a2-8ebe-a97f-54a69b66be07"
+  computationUuid: "9e1d9c9e-2e6c-8c44-81aa-dbd054edf418"
   stages:
     - stage: path
       stageUuid: "d010e107-5a04-886d-83b7-3c4aea2c0973"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ab3dc206-71e5-8c58-ac25-bf633257dd01"
     - stage: horo
-      stageUuid: "a35c9138-0d15-8122-b247-f6e23bfff1d7"
+      stageUuid: "f8005631-5d4e-8a29-98c6-83b9094f70fe"
     - stage: seal
       stageUuid: "27a0646d-cf06-8711-9a7b-153abaf42a20"
     - stage: uuid
-      stageUuid: "202a482d-a861-8589-886a-9ad7bd431d4f"
+      stageUuid: "ad92b9ff-7b61-8b11-936e-ea0880288a9a"
 version: 2
 ---
 # medical/level — medical facet

@@ -2,18 +2,18 @@
 name: operations
 description: "Use when reasoning about operations — Algebra operations — closed, movie, product, allAlgebra"
 atomPath: "algebra/operations"
-coordinate: "algebra/operations · 1/base · 13248f7b"
-contentUuid: "347fd11f-281d-5750-84d1-80ba0be19aec"
-diamondUuid: "62eb1b4b-5463-802d-9b57-3b5b9d80171c"
-uuid: "13248f7b-b5f8-8d84-87b3-d02489ad32b7"
-horo: 1
+coordinate: "algebra/operations · 8/crest · 80cd7ecf"
+contentUuid: "a7e1b8fb-8b23-5b87-971e-8fdc4da3441b"
+diamondUuid: "853441f5-ec95-8c73-b952-1fcadf4fa2ac"
+uuid: "80cd7ecf-7a25-8832-8400-82f711781d7b"
+horo: 8
 typography:
   partition: algebra
   bondDegree: 14
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ef66cae6-b633-88a5-bd86-4f42eafe8c14"
+  computationUuid: "b90d7195-824a-8d0a-a0f1-c50d7e016f36"
   stages:
     - stage: path
       stageUuid: "b8ffc372-0b8d-8e31-aa2c-bb0a6bd9f001"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "15f782c3-e76e-8dba-bf95-4cfb65b2394e"
     - stage: horo
-      stageUuid: "8978d22f-94a7-8184-924d-37c3916b3345"
+      stageUuid: "4c9fa0ce-1f9a-8495-857c-74388432996e"
     - stage: seal
       stageUuid: "e2a77a88-dc9d-8e46-9612-177b0978672b"
     - stage: uuid
-      stageUuid: "d478bafd-004c-8986-8732-7490ae867a72"
+      stageUuid: "595f380e-3b65-8d73-b419-e331f5fe188e"
 version: 2
 ---
 # algebra/operations

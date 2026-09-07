@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fuel",
-    "uuid": "7acf0b0d-a53d-815e-b503-801654d0d663",
+    "uuid": "1171db63-96ba-8631-96ae-fb8610cf19c5",
     "words": [
       "fuel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wastewater is treated as a fuel rather than a burden — COD is not a proxy for the energy dissolved in water, it IS that energy, measured as the oxygen needed to burn it. The inverse of water/cycle: that loop can never generate because its exhaust is its feed, while this one oxidises the contaminant and exhausts steam. netPositiveWitness returns a witness where overUnityWitness returns undefined, and the break-even COD is the threshold the whole design turns on.",
-    "uuid": "b3674d9b-845b-8405-bb39-982a8c5a847a",
+    "uuid": "5e6a87f9-4070-85b4-9c84-03542d1c8a58",
     "words": [
       "use",
       "when",

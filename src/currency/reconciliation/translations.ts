@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reconciliation",
-    "uuid": "12a58113-bede-8491-8587-47be3ba271be",
+    "uuid": "9cd4a063-fde5-878b-a198-eb2802a0910b",
     "words": [
       "reconciliation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when closing a multi-currency period — verify each currency's closed revenues equal its closed expenses within tolerance, revalue non-reporting currencies at the period-end rate for unrealized gain/loss, and fold it all into one reporting currency with a chain-linked audit leaf.",
-    "uuid": "bada97a6-bcb0-8ace-9b8e-468278d6408e",
+    "uuid": "b9f12ee4-a734-84d5-85ae-0f0e193260fc",
     "words": [
       "use",
       "when",

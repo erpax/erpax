@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amortize",
-    "uuid": "c683ea7d-394b-890f-b53c-636f8e8336b1",
+    "uuid": "b6e279f9-4a99-8305-90fe-96d4f29cf0ab",
     "words": [
       "amortize"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about amortize — ports the bond discount/premium amortization calculators verbatim (calculate, port): **effective-interest** (or straight-line where permitted) amortization of a discount/premium ov",
-    "uuid": "6b597ec3-a24a-8617-8c65-8934a6f4d5ab",
+    "uuid": "1b6bc9d8-1304-83a8-bc0b-c56a57a43c13",
     "words": [
       "use",
       "when",

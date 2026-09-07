@@ -2,11 +2,11 @@
 name: refutable
 description: "Use when checking that the corpus's claims can be contradicted — an @invariant is a proposition asserted in prose, and one with no test beside it is unfalsifiable: it reads as true forever and nothing will ever say no. A lie is not found by checking truth (fiction and truth read identically); it is found by demanding refutability, because an unrefutable claim is the only place a lie is safe. Run: tsx src/rules/refutable/index.ts"
 atomPath: "rules/refutable"
-coordinate: "rules/refutable · 4/weave · af7dca9f"
-contentUuid: "43a1b44b-61a8-5ea5-b162-25547b0df2ab"
-diamondUuid: "cc865a10-0733-89d1-9484-b77fe23ed3dd"
-uuid: "af7dca9f-14b8-842f-99e6-6cea7b553c23"
-horo: 4
+coordinate: "rules/refutable · 1/base · 7fda26dd"
+contentUuid: "d2dada1a-2177-54ce-9855-ea654230691a"
+diamondUuid: "00592952-d65e-8e58-b6cb-373f4c6f0317"
+uuid: "7fda26dd-fc7e-89b9-b121-04f910870d6d"
+horo: 1
 typography:
   partition: rules
   bondDegree: 9
@@ -15,7 +15,7 @@ standards:
   - Popper — a proposition that forbids nothing explains nothing
 bindings: []
 signatures:
-  computationUuid: "7c11088c-b7cd-89b1-acfe-d957648af33a"
+  computationUuid: "ef816948-abd2-88b9-96d4-703c03730f3c"
   stages:
     - stage: path
       stageUuid: "be9d294a-90c2-8a1c-a7ec-b66ad746b98f"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "40fecfaa-a150-8d79-b048-42fc0a34e9d8"
     - stage: horo
-      stageUuid: "3367e9fa-7cdc-883a-8bd0-1a56d6f333cc"
+      stageUuid: "6a3c16b5-2043-8c9c-933d-840766e974b9"
     - stage: seal
       stageUuid: "7db266a0-dc44-88d4-a7bc-60dd9e59f99e"
     - stage: uuid
-      stageUuid: "478d39f4-2966-8229-918d-94039093d257"
+      stageUuid: "c4e5aca8-db77-8c91-b143-d4ec787124cd"
 version: 2
 ---
 # refutable — a claim nothing can refute is where a lie lives

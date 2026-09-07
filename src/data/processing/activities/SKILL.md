@@ -2,11 +2,11 @@
 name: activities
 description: "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register."
 atomPath: "data/processing/activities"
-coordinate: "data/processing/activities · 5/round · c2303215"
-contentUuid: "1f95cfb9-276b-501e-a03b-6a96098a045b"
-diamondUuid: "68ed998a-6f97-82dd-8a50-c60d5812168c"
-uuid: "c2303215-915f-8308-a0a4-c4cfde41e6af"
-horo: 5
+coordinate: "data/processing/activities · 7/descent · 638fdebd"
+contentUuid: "de5c9594-b2c6-5d80-a7d9-e98a2e3040f3"
+diamondUuid: "8c31fc90-69e5-83e0-be2b-86d344677d23"
+uuid: "638fdebd-ec26-8e48-b904-151da19ff947"
+horo: 7
 typography:
   partition: data
   bondDegree: 58
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b0f3499e-1981-804d-875f-76cff139c41c"
+  computationUuid: "53f39561-5017-810b-8988-0f0dd248e101"
   stages:
     - stage: path
       stageUuid: "8d4664f9-fc2c-82c5-a13f-a40d9e25a966"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "0d5ac127-f4fc-869a-810e-a6d1befde096"
     - stage: horo
-      stageUuid: "744944b4-bc62-898e-99c4-ea06f27d681e"
+      stageUuid: "a3a881b5-be54-885c-b87c-f2a2dacced7b"
     - stage: seal
       stageUuid: "94db3aa7-55aa-8ac5-a9e7-11accdd3822d"
     - stage: uuid
-      stageUuid: "8da0730b-ba20-8a12-8335-44dabf0bd6cf"
+      stageUuid: "29913f16-39e0-89c3-b380-562bdb1dd0aa"
 version: 2
 ---
 # data-processing-activities

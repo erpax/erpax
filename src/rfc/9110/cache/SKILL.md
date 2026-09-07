@@ -2,11 +2,11 @@
 name: cache
 description: "Use when reasoning about cache — Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches."
 atomPath: "rfc/9110/cache"
-coordinate: "rfc/9110/cache · 2/share · d6680b6b"
-contentUuid: "0776e2e3-e600-514e-a683-7134af3c1e26"
-diamondUuid: "e68f5dd7-2be8-8d6e-9c04-a11e2025763f"
-uuid: "d6680b6b-1ee9-8149-85a6-04edf8304c3c"
-horo: 2
+coordinate: "rfc/9110/cache · 4/weave · 091d0ccd"
+contentUuid: "38ead8c0-2a84-52fc-a2ec-df1fa793b9d9"
+diamondUuid: "c1807832-ffce-8df8-a8e2-32727f3b340d"
+uuid: "091d0ccd-2167-8b2a-9e44-b307a53e46e3"
+horo: 4
 typography:
   partition: rfc
   bondDegree: 51
@@ -18,7 +18,7 @@ standards:
   - "W3C HTTP-Cache stale-while-revalidate"
 bindings: []
 signatures:
-  computationUuid: "583f678d-dd4a-8cad-89da-94eb98c5981d"
+  computationUuid: "568bd9e6-923d-8987-bbad-82dee257f437"
   stages:
     - stage: path
       stageUuid: "6a13e2fd-49b2-89c8-aede-a008402ac5a2"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "886a7217-b971-86ef-b153-42b55d3c1b62"
     - stage: horo
-      stageUuid: "4f677e3b-6128-860a-8231-dad0913e4215"
+      stageUuid: "34176f93-8f67-8c7e-8c8c-997a9bf60288"
     - stage: seal
       stageUuid: "3db7c7bc-71c3-8f7d-a969-c60416f0d855"
     - stage: uuid
-      stageUuid: "ba1e5ad0-283d-816d-974e-92f008051cab"
+      stageUuid: "a79699a5-77ac-85d4-8151-16e112357d78"
 version: 2
 ---
 # rfc/9110/cache

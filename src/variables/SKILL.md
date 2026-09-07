@@ -2,11 +2,11 @@
 name: variables
 description: "Use when reasoning about variables as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: variables
-coordinate: "variables · 4/weave · ffa666bf"
-contentUuid: "5b5f120f-0129-528f-93e1-2279a33a6c22"
-diamondUuid: "443c4c9b-f5b3-8777-ad62-7ff1a230e9db"
-uuid: "ffa666bf-9600-83c2-a860-aa00474428f0"
-horo: 4
+coordinate: "variables · 7/descent · a2005462"
+contentUuid: "96cf1fee-94d6-5d59-8f8e-b877ccdfd2cc"
+diamondUuid: "05fabe97-7e9f-8d1c-8311-a2d1e61b7a1b"
+uuid: "a2005462-fe1d-8636-8b7c-18764eda3e76"
+horo: 7
 typography:
   partition: variables
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "34b84eb1-e2e6-8f12-91aa-b0ff8e60a37b"
+  computationUuid: "e785b2d0-ace4-88b5-93d2-4e53c6070c77"
   stages:
     - stage: path
       stageUuid: "bb3ebc23-af26-826f-bc03-1c35618f0046"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7cc6bbf5-6193-8b12-bb88-fdb27bef98fc"
     - stage: horo
-      stageUuid: "49fd5005-d9e6-8a3c-9def-b736ff2f46a4"
+      stageUuid: "85256ff3-c7b2-875f-81e5-e6a31ec09eb7"
     - stage: seal
       stageUuid: "13b5cd3b-2bc8-8f1e-8df3-0564df4735a7"
     - stage: uuid
-      stageUuid: "6465638b-00d7-8a10-8559-7d8a859bbf58"
+      stageUuid: "4313281e-6159-839a-86d0-0b2a0a103c35"
 version: 2
 ---
 # variables

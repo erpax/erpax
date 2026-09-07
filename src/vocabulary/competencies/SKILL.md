@@ -2,18 +2,18 @@
 name: competencies
 description: "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute."
 atomPath: "vocabulary/competencies"
-coordinate: "vocabulary/competencies · 4/weave · aaaf74ee"
-contentUuid: "21aaf422-164c-5b2d-b31b-16e9849e44b6"
-diamondUuid: "726849f6-eb64-8a72-91a4-efce469ce971"
-uuid: "aaaf74ee-7502-8910-a217-d3ff251fc8e6"
-horo: 4
+coordinate: "vocabulary/competencies · 8/crest · 9724c888"
+contentUuid: "dc000af1-4d7b-5f5b-8b01-a61f014348b7"
+diamondUuid: "0a90874c-935e-89f3-99c2-76b1216cb902"
+uuid: "9724c888-28ba-86d4-9b15-43026840f5f8"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 44
 standards: []
 bindings: []
 signatures:
-  computationUuid: "93403cb4-9b9b-8f40-b0b4-3172ac058b5e"
+  computationUuid: "79de27a5-44b3-8156-b7f0-b9158dd4c84a"
   stages:
     - stage: path
       stageUuid: "299a5a9f-aab7-8296-8caa-90c9310bdb41"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "836189a0-8f50-83e7-805e-401da5369c12"
     - stage: horo
-      stageUuid: "60a10249-714a-8857-9996-097de1d8488b"
+      stageUuid: "e1fb3a85-513e-88ff-8f1c-b8b9f392ebaa"
     - stage: seal
       stageUuid: "c5cd5032-9862-8a2a-8630-fad9fd203bf2"
     - stage: uuid
-      stageUuid: "94396b9e-d8e3-8f4e-9638-7bd3a2a457fe"
+      stageUuid: "bfca5d1b-d426-8a76-a55c-c4b607c775c2"
 version: 2
 ---
 # competencies — the ONE actor-capability taxonomy (computed from the corpus)

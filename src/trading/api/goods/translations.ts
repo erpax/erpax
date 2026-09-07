@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "goods",
-    "uuid": "8a6dea3a-57fc-8fbe-b936-cbd42ee6fba9",
+    "uuid": "8f79f106-49b2-888c-b57a-67b24b4e426a",
     "words": [
       "goods"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about goods — Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry.",
-    "uuid": "4499fdbc-7905-8867-82cb-9e79bb9b702d",
+    "uuid": "b9a31fd5-7d89-89aa-b42f-fc89f8eb27c3",
     "words": [
       "use",
       "when",

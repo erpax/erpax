@@ -2,11 +2,11 @@
 name: phone
 description: "Use when reasoning about phone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/phone"
-coordinate: "vocabulary/phone · 8/crest · 1d13313a"
-contentUuid: "05c73626-40bb-5833-a16b-587da33c7b1a"
-diamondUuid: "b8b56c54-3130-8f33-925a-1e60266f1cc2"
-uuid: "1d13313a-868a-83f6-8d12-6185e4c5274a"
-horo: 8
+coordinate: "vocabulary/phone · 7/descent · 0915e994"
+contentUuid: "6ee01062-1e49-549b-9325-d2ad34b5e08c"
+diamondUuid: "01f89663-e367-8b52-acaf-1d3991c2045a"
+uuid: "0915e994-729e-8a94-b433-fe32f67bc372"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "01691d77-f1c2-8185-b274-2f4119bf44d8"
+  computationUuid: "4046e8b6-37f4-8b24-a377-db65d1f2d9e9"
   stages:
     - stage: path
       stageUuid: "fbd06867-e21e-8e0e-8ea1-0126d89b7f71"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "98809cfb-983b-8922-ae6e-5affbdcf4e3a"
     - stage: horo
-      stageUuid: "126b1abb-26c3-8d62-854d-7375ccfb913a"
+      stageUuid: "0035e098-e28e-882d-b27a-355a86080127"
     - stage: seal
       stageUuid: "9e6e881f-f56d-8d22-b277-2d73f308fc7a"
     - stage: uuid
-      stageUuid: "b609427d-3d43-8b36-a4f3-89dd71bb5d33"
+      stageUuid: "f1e25c7f-45b9-84cb-bf92-84f33f594efe"
 version: 2
 ---
 # phone

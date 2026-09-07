@@ -2,11 +2,11 @@
 name: contributor
 description: Use when reasoning about contributor — A secondary contributor to the CreativeWork or Event.
 atomPath: "vocabulary/contributor"
-coordinate: "vocabulary/contributor · 7/descent · 92389f97"
-contentUuid: "123a8fe9-2547-54b7-b212-ccfc562c29ff"
-diamondUuid: "06704ac3-17c9-88ce-81a8-e28c9538388b"
-uuid: "92389f97-6dfd-8061-a013-00f93eb529ad"
-horo: 7
+coordinate: "vocabulary/contributor · 8/crest · 205f91c6"
+contentUuid: "41e18a4b-30f0-5d06-80bc-3d060f7e863b"
+diamondUuid: "4a28d435-8f2b-8331-b9ab-e68f98318a81"
+uuid: "205f91c6-9455-819e-afcd-84248da82668"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0aa2f14d-0a7a-830d-bf0c-f5e1c6493fc8"
+  computationUuid: "98a44454-aec9-8039-aa3b-12e37066cdad"
   stages:
     - stage: path
       stageUuid: "5198be71-c0d4-8183-a8d6-6a8bf03c0fd9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ed0f76b7-52fb-8260-be87-6d3c3017d54e"
     - stage: horo
-      stageUuid: "669c6a41-4336-8d60-bcbc-0eb8552d2952"
+      stageUuid: "b3a1b540-afd3-809a-8e11-60084c454299"
     - stage: seal
       stageUuid: "1e1af2ff-7189-8e60-88cf-b16852b640b9"
     - stage: uuid
-      stageUuid: "d1cc3374-c29c-8501-9af9-8b7592bf210f"
+      stageUuid: "9f05663b-ac8b-86e8-9a44-7c55a9083dd6"
 version: 2
 ---
 # contributor

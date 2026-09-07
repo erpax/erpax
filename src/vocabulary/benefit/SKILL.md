@@ -2,11 +2,11 @@
 name: benefit
 description: "Use when reasoning about benefit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/benefit"
-coordinate: "vocabulary/benefit · 1/base · 54a2b169"
-contentUuid: "9cd2f3ee-d353-5441-9e62-f49a65c7f319"
-diamondUuid: "91772207-6c0a-8142-a956-f290551c03f8"
-uuid: "54a2b169-d0e2-8b65-b7a6-186d58e2befe"
-horo: 1
+coordinate: "vocabulary/benefit · 4/weave · efb192af"
+contentUuid: "3ec96807-53a7-57c9-9746-e51edff90c39"
+diamondUuid: "208aecd9-66ed-8747-9ef4-91db2f1f7aac"
+uuid: "efb192af-e720-80ff-be1b-aba6ca6cdb86"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ad918431-5dae-8448-8521-c2b6e80a527e"
+  computationUuid: "e4b54947-bd80-81aa-ae2a-0b5f0f5070de"
   stages:
     - stage: path
       stageUuid: "a8d54c69-a4d8-8192-bc56-f2960a9a78af"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2f7d24bc-f8d5-8fc5-abb6-df4fe71afc2d"
     - stage: horo
-      stageUuid: "78a9533b-5868-8ec1-ae37-8b2c0e5f1520"
+      stageUuid: "a648b03e-2238-845e-ac62-bfbf5c21eb67"
     - stage: seal
       stageUuid: "3785f7e3-042b-8b2e-8b3d-4944de9f5820"
     - stage: uuid
-      stageUuid: "c7038e20-b97a-8f86-9806-2417d6bc043a"
+      stageUuid: "e96cc55f-8303-8363-946c-c5fa3f2fcc88"
 version: 2
 ---
 # benefit

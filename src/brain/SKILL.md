@@ -2,11 +2,11 @@
 name: brain
 description: "Use when reasoning about erpax's matrix as the connectome organ — a small-world network where any node reaches any other in a handful of hops, wired sparsely yet integrated. ~86 billion neurons, ~150 trillion synapses; high clustering, short path length. Three properties (small-world path length · sparse efficient wiring · connectome-scale cross-check) are computed and mapped — a structural isomorphism — onto erpax's link graph and integrated self-model."
 atomPath: brain
-coordinate: "brain · 7/descent · 4c9eb535"
-contentUuid: "c8d7f368-d5a5-5720-9a25-f238941105fc"
-diamondUuid: "cd2f5e0c-4a68-8330-8f81-d5ea93f073eb"
-uuid: "4c9eb535-f937-8a3f-9f02-f0043aec45f3"
-horo: 7
+coordinate: "brain · 1/base · 0f4d5607"
+contentUuid: "cba8fed9-6be6-5a00-ba5b-f77dd2458caa"
+diamondUuid: "56d55e97-65a0-8415-ae38-7e0e6d6812e9"
+uuid: "0f4d5607-5fe2-899a-a650-41cb1a848afd"
+horo: 1
 typography:
   partition: brain
   bondDegree: 34
@@ -15,7 +15,7 @@ standards:
   - "≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett, Bullmore)"
 bindings: []
 signatures:
-  computationUuid: "661dcd18-9f06-8d79-941f-5cab7f075356"
+  computationUuid: "d23795f0-5ff9-8d74-8740-3ab1c7609804"
   stages:
     - stage: path
       stageUuid: "1ce92240-d9ae-8c67-8d43-fe65e783d44d"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "ca9365b0-b01d-8d08-a696-be1ef56449fb"
     - stage: horo
-      stageUuid: "20d70585-6b19-8d26-b9c0-3a1c5130d056"
+      stageUuid: "f77f6a41-a84d-8e8a-9aec-aefcabb59306"
     - stage: seal
       stageUuid: "2fc162b7-51ab-826d-804c-38140fd92f53"
     - stage: uuid
-      stageUuid: "3450da25-8739-858e-b282-a23b64a05a42"
+      stageUuid: "7c65538a-95eb-87d9-9731-6f90ac9e0175"
 version: 2
 ---
 # brain — the small-world connectome (the matrix)

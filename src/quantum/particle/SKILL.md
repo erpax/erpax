@@ -2,18 +2,18 @@
 name: particle
 description: "Use when reading a content-uuid as wave-particle duality — the same uuid is both a particle (a discrete identity, no-cloning) and a wave (its digit, the position on the harmonic ring)."
 atomPath: "quantum/particle"
-coordinate: "quantum/particle · 1/base · 8a132b89"
-contentUuid: "3984a14b-483c-57ce-a0cb-c0cb366ec166"
-diamondUuid: "79127289-c9f7-82c0-8eb2-74e62b044ee7"
-uuid: "8a132b89-66d8-8f2f-8d17-0d0ee2f92b8a"
-horo: 1
+coordinate: "quantum/particle · 8/crest · c742676c"
+contentUuid: "896f3fe5-a297-57c8-9add-954772c683ce"
+diamondUuid: "82e2f2d9-f9ec-8280-b5a5-01575b113db3"
+uuid: "c742676c-ad5c-8cd4-9a75-b17375316a1f"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b26faab0-973a-89e5-b2f2-899c5ca88772"
+  computationUuid: "4723cad6-6ebb-8560-899e-26edf370628c"
   stages:
     - stage: path
       stageUuid: "9c939ea0-bef4-8f89-8bbe-1ae5489fe881"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "74433739-7d49-85b6-aee5-1ce5846bac8b"
     - stage: horo
-      stageUuid: "bc1e045b-f7b6-84f0-88ed-b913ea371970"
+      stageUuid: "a81c36df-86cc-86e8-be2f-0a1e891eebf5"
     - stage: seal
       stageUuid: "1ffc70e2-a5ec-89c5-b48e-c33da3b7a978"
     - stage: uuid
-      stageUuid: "c2ada1fa-4897-819b-b76f-2aa4c09a5c10"
+      stageUuid: "39088fcd-7b42-8e1f-bb80-1c38571a8961"
 quantum:
   superposition:
     - atom
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "b26faab0-973a-89e5-b2f2-899c5ca88772"
-    contentUuid: "3984a14b-483c-57ce-a0cb-c0cb366ec166"
+    computationUuid: "4723cad6-6ebb-8560-899e-26edf370628c"
+    contentUuid: "896f3fe5-a297-57c8-9add-954772c683ce"
 version: 2
 ---
 # quantum/particle — wave-particle duality
@@ -68,4 +68,4 @@ Matter-twin: `src/quantum/particle/index.ts` (`asParticle` · `asWave` · `isDua
 
 @audit composed from @/particle (uuid) + @/digit (the ring digit); computed
 
-<sub>content-uuid `3984a14b-483c-57ce-a0cb-c0cb366ec166` · account `quantum/particle` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `896f3fe5-a297-57c8-9add-954772c683ce` · account `quantum/particle` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,18 +2,18 @@
 name: defect
 description: "Use when logging product/service quality problems — manufacturing defects, software bugs, rework triggers, quality inspections results. The non-conformance record."
 atomPath: "vocabulary/defect"
-coordinate: "vocabulary/defect · 1/base · 228b7857"
-contentUuid: "8d8bba96-e6a5-5481-8a7c-a010de0e6797"
-diamondUuid: "575c17ec-6a86-811a-9980-d5b63821d15c"
-uuid: "228b7857-e665-8396-8c81-a51b879a135d"
-horo: 1
+coordinate: "vocabulary/defect · 5/round · 048382c9"
+contentUuid: "ba26628d-df6f-5a30-a467-dad53dc24f55"
+diamondUuid: "c388498b-151b-8f5a-aceb-ed19767d0173"
+uuid: "048382c9-9c91-82d0-a62e-69609da8f2a4"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "62bf6290-193e-8cd9-ab48-926c58007099"
+  computationUuid: "304b2404-d52b-8b64-8a93-8a852d41f947"
   stages:
     - stage: path
       stageUuid: "2e8b9be9-5981-8918-bc81-88574ac16e5a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a4391650-59d8-87b8-ac13-0cd66609bf71"
     - stage: horo
-      stageUuid: "4a274098-4ab4-80ef-938f-018aeb47e013"
+      stageUuid: "b672d96f-75fa-8bd5-bd67-612c336a5cd8"
     - stage: seal
       stageUuid: "5a74e34d-55a8-8e0f-b74b-627ef3dbe493"
     - stage: uuid
-      stageUuid: "356a58f6-daeb-8a8d-9b3f-05d695c3303a"
+      stageUuid: "31226566-32d6-808f-8010-4a73b1895fb5"
 version: 2
 ---
 # defect

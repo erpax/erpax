@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nav",
-    "uuid": "ff1d59ff-2290-82fb-b9ca-3cc7c89f3901",
+    "uuid": "488d4553-631d-8e4b-9e1c-9719485383ca",
     "words": [
       "nav"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about nav — builds the corpus links from the atom prefix tree. A hand-maintained menu is a second source of truth about where things live, and it goes stale the first time a folder moves…",
-    "uuid": "72bb7fa6-e3be-865a-bb6f-c940502d019f",
+    "uuid": "fc2cefa7-e63f-83f5-bbc6-fa23a07a5ac2",
     "words": [
       "use",
       "when",

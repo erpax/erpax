@@ -2,11 +2,11 @@
 name: equal
 description: Use when reasoning about equal — This ordering relation for qualitative values indicates that the subject is equal to the object.
 atomPath: "vocabulary/equal"
-coordinate: "vocabulary/equal · 5/round · 92be4118"
-contentUuid: "dbd078f2-80af-5f6c-9d8b-2e3e80e57fe5"
-diamondUuid: "6801ecdc-e9cf-82f9-b18b-e9f44907ffb5"
-uuid: "92be4118-a1d3-8515-8c5c-235ca349ddf8"
-horo: 5
+coordinate: "vocabulary/equal · 2/share · d38293dc"
+contentUuid: "a87bd65b-cef8-5a86-ad2a-11a320f5c159"
+diamondUuid: "9f4bc0ca-1d61-87be-8cfc-12d7f92c69e7"
+uuid: "d38293dc-facd-8c65-9b96-889579c5c0c5"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "99111acc-be8c-872d-8036-28826479db40"
+  computationUuid: "7958fe7b-8094-8b8d-8c0e-9a7368382239"
   stages:
     - stage: path
       stageUuid: "ef7f8356-89c4-8d50-b697-b0a1cb65e5c8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8067c372-ef25-870e-b587-d1c48be01f98"
     - stage: horo
-      stageUuid: "05ed73e4-0268-88a5-b164-6c27a7203f0a"
+      stageUuid: "a6549874-4f17-84eb-9d7b-db7e3097d5b4"
     - stage: seal
       stageUuid: "e0a1b41d-f479-858d-bab5-89b74008184c"
     - stage: uuid
-      stageUuid: "d2cd26ba-a66e-8113-8874-fdccbad5a6be"
+      stageUuid: "28417920-bd20-8159-9783-3208d9fc289e"
 version: 2
 ---
 # equal

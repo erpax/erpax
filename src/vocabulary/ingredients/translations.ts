@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ingredients",
-    "uuid": "917aafe0-86e4-8b7c-b241-df4c3e5db246",
+    "uuid": "d8d06f9a-423f-8cb3-8546-ad35877a2fef",
     "words": [
       "ingredients"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ingredients — A single ingredient used in the recipe, e.g. sugar, flour or garlic.",
-    "uuid": "cba3fc08-02c0-8fac-a449-376869a2f8df",
+    "uuid": "a6ee085e-6a7e-8803-b608-73f000043d71",
     "words": [
       "use",
       "when",

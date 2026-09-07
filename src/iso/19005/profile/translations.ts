@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "profile",
-    "uuid": "aea2e5b4-905b-8f06-a11a-73ac5c9da671",
+    "uuid": "a1634698-9235-88bc-97ff-3d1678bee85d",
     "words": [
       "profile"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about profile — ISO 19005 PDF/A — long-term archival PDF profiles.",
-    "uuid": "b094867d-83b6-8a52-a7c3-71f2af699b64",
+    "uuid": "588b2b34-c7ad-8ede-9519-fbcb63d364bd",
     "words": [
       "use",
       "when",

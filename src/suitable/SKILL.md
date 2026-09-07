@@ -2,11 +2,11 @@
 name: suitable
 description: "Use when reasoning about suitable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: suitable
-coordinate: "suitable · 8/crest · 337457ee"
-contentUuid: "16a03055-26d0-5b46-b0fd-8b197f7b2078"
-diamondUuid: "01a4047b-2257-843f-97f9-60c4522bd9ae"
-uuid: "337457ee-62e3-8e58-a47e-fe6170045831"
-horo: 8
+coordinate: "suitable · 4/weave · 4e792e80"
+contentUuid: "3a14316a-25ac-51a1-9ab0-e0c18d021634"
+diamondUuid: "16e51a3b-f83e-8d02-87ab-cbdd6ed8a837"
+uuid: "4e792e80-3a31-87b8-b2a4-d414a3b39daa"
+horo: 4
 typography:
   partition: suitable
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "38f99043-9a6b-8c7c-83a6-053ef96264e3"
+  computationUuid: "65c41019-6716-8989-8f7a-7fcce84cab24"
   stages:
     - stage: path
       stageUuid: "205e788b-c398-8191-8c25-fdabdc3465d6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e9a436a3-4cfe-8158-bdd8-16e60cbe93bf"
     - stage: horo
-      stageUuid: "5ea7f9dc-9a69-819d-b5fb-3fb1f6673e54"
+      stageUuid: "9b3e5c43-7e7a-86f7-82ac-36d7339f1141"
     - stage: seal
       stageUuid: "d15b27fa-377c-8102-adbe-d2740af3bcf9"
     - stage: uuid
-      stageUuid: "2ba535dc-a849-8aa9-9cef-5efeddd6bc19"
+      stageUuid: "4d66a8f9-191d-8fb2-adfd-3cf19172f8e7"
 version: 2
 ---
 # suitable

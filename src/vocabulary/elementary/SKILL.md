@@ -2,11 +2,11 @@
 name: elementary
 description: "Use when reasoning about elementary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/elementary"
-coordinate: "vocabulary/elementary · 7/descent · 388074bc"
-contentUuid: "069107af-581d-5a79-a27e-c97fbd66ccc0"
-diamondUuid: "88f0c4df-4a82-8275-b340-5e089b060545"
-uuid: "388074bc-f8b6-8ef6-b21f-b232c7245472"
-horo: 7
+coordinate: "vocabulary/elementary · 1/base · 4d701622"
+contentUuid: "baefaf84-7ae2-5cd4-a9d1-4511e155385b"
+diamondUuid: "7f26da62-9df3-837e-94fc-e778d0dca58e"
+uuid: "4d701622-c8cf-8098-b637-afc139f087bf"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e8d53e53-d432-8f04-afe1-68ade9294289"
+  computationUuid: "79ca1ae1-08b8-89d2-8587-206a46d7ac50"
   stages:
     - stage: path
       stageUuid: "6dbc8e2d-05cd-8d39-a946-5a79ad30dacb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "191d7cff-8e94-8edc-bd2a-bdc390fee835"
     - stage: horo
-      stageUuid: "b0c11ad3-c012-8220-8d41-787876b976cf"
+      stageUuid: "a3dfb1a9-e887-8d84-ae2c-d4073fdb4706"
     - stage: seal
       stageUuid: "5e0fb42d-c964-8e41-8c73-26216d8303bd"
     - stage: uuid
-      stageUuid: "eef78735-122f-82c1-8999-f52cecabc8ea"
+      stageUuid: "b3b97fb3-e788-85fc-8667-34308bca57e7"
 version: 2
 ---
 # elementary

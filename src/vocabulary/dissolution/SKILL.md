@@ -2,11 +2,11 @@
 name: dissolution
 description: "Use when reasoning about dissolution as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dissolution"
-coordinate: "vocabulary/dissolution · 8/crest · 8ad579f4"
-contentUuid: "4fcab292-4a99-5ee1-ad84-9c0bd4c72b26"
-diamondUuid: "ab30d82d-de1e-897e-bc36-a65e36c44f27"
-uuid: "8ad579f4-4f3b-8e37-bda4-c43f1142dd3a"
-horo: 8
+coordinate: "vocabulary/dissolution · 2/share · 50ac3d08"
+contentUuid: "04ff0f60-e7ed-54be-808e-688cc64dcca8"
+diamondUuid: "282af185-1040-87d9-b4ef-8118224afed2"
+uuid: "50ac3d08-2a46-8f70-b365-4c1d9e20058f"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8d73edf-c221-8be4-a39d-bc1515c0b6c1"
+  computationUuid: "85d8bbbc-6992-82c3-9635-78f51f77f71e"
   stages:
     - stage: path
       stageUuid: "96491ee1-44e5-864a-bd93-bb920193eb84"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b7881f51-16e7-8c80-9878-7dec1773fbf2"
     - stage: horo
-      stageUuid: "f9d60bb9-a8b4-84e0-a272-12d772edb2c1"
+      stageUuid: "a04324a6-d0e3-8446-af36-7a5a8a0b90ee"
     - stage: seal
       stageUuid: "8fe5eaff-a456-86c3-9175-388e0bda8ec5"
     - stage: uuid
-      stageUuid: "b17afbfe-f167-8af5-bdbf-384404bfed26"
+      stageUuid: "99344a71-559b-84c4-9c39-aa2c8726e211"
 version: 2
 ---
 # dissolution

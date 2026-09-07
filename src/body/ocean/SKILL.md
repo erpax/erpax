@@ -2,11 +2,11 @@
 name: ocean
 description: "Use when reasoning about ocean as a anatomical part of body — vocabulary pivot to @/ocean; nested not duplicated."
 atomPath: "body/ocean"
-coordinate: "body/ocean · 8/crest · 720dcc4c"
-contentUuid: "f978857a-69a5-5ca0-8689-89b6e729155c"
-diamondUuid: "022f406c-5618-8352-b22c-d5480a1904ee"
-uuid: "720dcc4c-0c37-87d5-b7b9-ddf297f6a1c6"
-horo: 8
+coordinate: "body/ocean · 1/base · 5beafc5c"
+contentUuid: "8b887e1f-2758-5391-95ae-e0ce93eb98f9"
+diamondUuid: "5ac1f389-141d-8bba-a571-5e8db4bc4ffa"
+uuid: "5beafc5c-3748-893d-a9c6-031424a8eb4f"
+horo: 1
 typography:
   partition: body
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "de5206fa-f317-8d2a-b3aa-a5b8736ccd1f"
+  computationUuid: "f6d4b26d-b56f-8ca3-8ebb-3d934916e82b"
   stages:
     - stage: path
       stageUuid: "311445e1-a64d-8796-9a54-e72cb8ffaf55"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "13739460-217b-8aeb-a1ea-95962b2a9e88"
     - stage: horo
-      stageUuid: "24aa0d3a-3cbe-8c8f-8ae1-9797cefc6c4a"
+      stageUuid: "e04ef298-518d-8e11-ada1-7db986975da5"
     - stage: seal
       stageUuid: "8921a486-d76e-8613-969f-c4866dd6bec6"
     - stage: uuid
-      stageUuid: "a5c7330a-d634-86b8-b874-540e4fce2a72"
+      stageUuid: "da08183c-80a5-8e7c-9d49-deac6e4abf1c"
 version: 2
 ---
 # body/ocean — anatomical part

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "load",
-    "uuid": "efb82608-d53f-81b6-a51a-d9b93b488f1c",
+    "uuid": "850a7ce2-71a6-8207-95bd-8dd852e07ff9",
     "words": [
       "load"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking the only question no other gate asks — does the app actually LOAD? Boots payload.config for real and asserts every collection registers. It now PASSES — load — OK from esm, 229 collections — after the tool-defs → collections edge was cut and the `pages` collection was renamed. The SCC is still ~225 files: entangled is not fatal. The harness that swallowed the boot fails closed now, and the sentinel is stamped only by a run that verified the schema.",
-    "uuid": "e02d64be-7cb7-8664-93d9-e5b1dae4e9e7",
+    "uuid": "3c57ee81-aad3-87f8-a21c-fd8bf0f9591f",
     "words": [
       "use",
       "when",

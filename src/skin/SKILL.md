@@ -2,11 +2,11 @@
 name: skin
 description: "Use when reasoning about erpax's boundary — the integument organ. The largest organ (~1.2–2.2 m²), a selectively-permeable barrier between inside and outside that renews itself continuously (~28-day epidermal turnover) and holds the interior to a setpoint (thermoregulation). Three properties (selective barrier · self-renewal · homeostasis) are computed and mapped — a structural isomorphism — onto erpax's sandbox/trust boundary."
 atomPath: skin
-coordinate: "skin · 5/round · f3d86342"
-contentUuid: "d4b3e840-943c-55f6-aa85-b506515f7333"
-diamondUuid: "07ef841a-b245-858e-b40f-33709716e53d"
-uuid: "f3d86342-fabd-850f-93ed-a9af07ceaa3b"
-horo: 5
+coordinate: "skin · 1/base · f779e0b8"
+contentUuid: "8e023ea9-f213-5df9-9a0f-4a3cbb9ceef2"
+diamondUuid: "cec60038-1377-8198-b3f5-3cd70a4f6496"
+uuid: "f779e0b8-53ac-8678-9c03-32f4c994626b"
+horo: 1
 typography:
   partition: skin
   bondDegree: 25
@@ -15,7 +15,7 @@ standards:
   - largest organ ≈1.2–2.2 m²; stratum corneum barrier; epidermal turnover ~28 days; thermoregulation
 bindings: []
 signatures:
-  computationUuid: "903c59fb-2b7c-851c-a9fa-954a5fda901f"
+  computationUuid: "70e71bd4-316c-8d5a-aa73-da19dc47e441"
   stages:
     - stage: path
       stageUuid: "b697df77-1a5e-890f-9265-2e426bbb244d"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "730809fa-1898-8365-9a6e-6219559ba255"
     - stage: horo
-      stageUuid: "a5ec836b-ab57-833d-9e4f-18654ffbd38a"
+      stageUuid: "fe749735-0498-89b7-98cb-1033a31dd672"
     - stage: seal
       stageUuid: "9657b8db-57b7-8a54-b8d4-c97798bf2fe9"
     - stage: uuid
-      stageUuid: "e70f307f-8527-8418-94e8-5abf3bd05fb8"
+      stageUuid: "dad6e1a6-38bb-8afe-9f19-2768d63b2800"
 version: 2
 ---
 # skin — the boundary (the trust membrane)

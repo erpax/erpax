@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "offset",
-    "uuid": "39f3df80-b7cb-87f2-a4c8-9623c9ecea97",
+    "uuid": "7c734af1-7e91-8f63-a949-8c528835c847",
     "words": [
       "offset"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about offset as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "f9643f88-3295-8dd5-a5f1-01aaa4c7beff",
+    "uuid": "dae7d83a-b843-8f53-a28f-17d6c3cc97cf",
     "words": [
       "use",
       "when",

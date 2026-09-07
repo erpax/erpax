@@ -2,11 +2,11 @@
 name: import
 description: "Use when reasoning about the import convention — every import must read from an atom index (@/x), never a deep file or a relative path; coverage is the index-only fraction of all imports, and the convention is enforced by the import lint (a ratchet that fails the build when non-index imports rise above a committed baseline), reaching its ∞ tamper-cost limit only at coverage one."
 atomPath: "convention/import"
-coordinate: "convention/import · 5/round · 7dcdd746"
-contentUuid: "cb048481-0c07-5561-9b96-378055fb6090"
-diamondUuid: "5a243564-961e-8cd3-a156-4746333d695a"
-uuid: "7dcdd746-99d5-8cd2-8ab6-e87cf7ba1861"
-horo: 5
+coordinate: "convention/import · 4/weave · 714f40bb"
+contentUuid: "8964e5ab-3e5c-530a-8512-5736f5293e27"
+diamondUuid: "10de1bb4-7a68-8569-a2b8-9615f73c93d3"
+uuid: "714f40bb-aa65-8536-9d92-3925d30947b7"
+horo: 4
 typography:
   partition: convention
   bondDegree: 42
@@ -15,7 +15,7 @@ standards:
   - "the import graph is the config (imported↔declared) — an atom's only public face is its index.ts"
 bindings: []
 signatures:
-  computationUuid: "5ec689db-48a0-872c-90c7-5113993fd09f"
+  computationUuid: "e5501eb6-9b53-875f-9108-172c7e5c6cd0"
   stages:
     - stage: path
       stageUuid: "de3c492b-ce89-85d0-aec4-77aa5233f279"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "bc0a91d1-7269-80d4-a7fc-21c0a44cc42b"
     - stage: horo
-      stageUuid: "72787107-35b7-87f7-8879-90952dda194a"
+      stageUuid: "9dd9cce0-4299-86ed-92e8-4ce0f9af08c3"
     - stage: seal
       stageUuid: "1f48e516-c239-8511-bddf-f57077304e50"
     - stage: uuid
-      stageUuid: "50d903e2-4052-8600-818c-40460e69c31d"
+      stageUuid: "763f0189-d460-8bb2-b5a8-3fb71ab9a77b"
 version: 2
 ---
 # convention/import — every import is from an atom index, never a deep/relative path

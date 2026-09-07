@@ -2,11 +2,11 @@
 name: population
 description: "Use when reasoning about population as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/population"
-coordinate: "vocabulary/population · 1/base · 1f26a665"
-contentUuid: "47a0a380-8880-5f47-97e6-6bf661bea1b7"
-diamondUuid: "810c4ad0-985c-8e58-a808-edd48b788209"
-uuid: "1f26a665-3469-8600-85ef-c3c35ad17de3"
-horo: 1
+coordinate: "vocabulary/population · 2/share · 76424779"
+contentUuid: "78ed12df-b46e-5c56-a1c6-a82c3cfd71c6"
+diamondUuid: "929927c9-4a10-86ca-b063-3313b2aa1eb5"
+uuid: "76424779-b2de-8fba-af8a-4a4604364510"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 32
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8c62a133-e360-8912-992f-5bf8c5b8426f"
+  computationUuid: "71e675b9-d980-8e70-af39-66d2157d6bae"
   stages:
     - stage: path
       stageUuid: "9a4ea642-0edf-8d21-812b-7037935b97ee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "38417162-faa8-86a3-9f29-f2bb26b2587b"
     - stage: horo
-      stageUuid: "d227c5b2-7e3b-8961-b728-818e6802f100"
+      stageUuid: "a084818a-28cf-8629-8b98-ef6682717f4d"
     - stage: seal
       stageUuid: "38e00e35-8f86-83a2-b330-f1ea32a449d6"
     - stage: uuid
-      stageUuid: "74667b49-6fef-8b4e-86f7-381c99afec20"
+      stageUuid: "392277f7-6bcf-871e-851e-eb1169f7c1bf"
 version: 2
 ---
 # population

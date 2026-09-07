@@ -2,11 +2,11 @@
 name: context
 description: "Use when reasoning about context as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/context"
-coordinate: "vocabulary/context · 7/descent · 5cfe4dbe"
-contentUuid: "f3e8f7fe-51c3-5e9d-93cb-69827222b9e7"
-diamondUuid: "ab74f80e-09c1-81e0-9cde-f7871f65ee58"
-uuid: "5cfe4dbe-302a-87fe-8436-bd6e5efee11a"
-horo: 7
+coordinate: "vocabulary/context · 5/round · c179899c"
+contentUuid: "1a804b93-34ec-5776-929b-f85495a9f768"
+diamondUuid: "a2f65279-4d0a-8cc9-8cd2-05ace857ec1e"
+uuid: "c179899c-959c-8136-b4e2-488aedbebaff"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "754e1bd5-7826-8ca9-9b88-c505521ae824"
+  computationUuid: "685fb670-177c-8927-8c70-93b2ee6081d1"
   stages:
     - stage: path
       stageUuid: "5ac95a3f-9abc-8b93-880a-0531964e33fa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0001dce1-48ca-867d-b348-c3e4b2d9658b"
     - stage: horo
-      stageUuid: "9e8393da-dcae-8daf-9d29-44aa25bec8e1"
+      stageUuid: "92472358-3042-80e6-9bd7-949ecd361394"
     - stage: seal
       stageUuid: "a2d567ff-3f4f-8cd6-b952-28de2b1750e3"
     - stage: uuid
-      stageUuid: "9185eab3-d38d-84c1-859d-acbc3316eed9"
+      stageUuid: "951a2932-d775-80d6-a303-b49967f936ea"
 version: 2
 ---
 # context

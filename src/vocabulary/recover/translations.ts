@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recover",
-    "uuid": "6729d856-80eb-860a-b759-3c35ff7ea75a",
+    "uuid": "2dfb7d26-31a0-81a1-9b09-3ec5b9538155",
     "words": [
       "recover"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\"Maximum call stack size exceeded\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\"does not provide an export named 'default'\\\", or ERR_MODULE_NOT_FOUND.",
-    "uuid": "bf765c39-56b8-8727-bf14-f26f6ff1e9b0",
+    "uuid": "3f581736-e18b-873c-9a3a-e7c9194c52a4",
     "words": [
       "use",
       "when",

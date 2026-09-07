@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "jurisdiction",
-    "uuid": "6c864ff7-14b7-8581-95a1-dcb87cf82a35",
+    "uuid": "e5c38997-9f53-8082-9e18-44d3a229c5fa",
     "words": [
       "jurisdiction"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract or matter specifies the governing law and venue — choice of law (which country/state), exclusive vs. non-exclusive forum, dispute resolution (courts, arbitration, mediation).",
-    "uuid": "72df04f8-10b7-88f4-8c5e-3faa1f46cd91",
+    "uuid": "a6b15359-19cd-8fee-bfb2-f27378596a4c",
     "words": [
       "use",
       "when",

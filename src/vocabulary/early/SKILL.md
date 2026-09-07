@@ -2,10 +2,10 @@
 name: early
 description: "Use when reasoning about early as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/early"
-coordinate: "vocabulary/early · 7/descent · a3b733ce"
-contentUuid: "e7cfc88d-b448-59b9-8305-6835d601188f"
-diamondUuid: "976f11b0-d20e-8b9c-a87d-d5fcfda17998"
-uuid: "a3b733ce-eb5e-86f1-bf6c-be5122b3aa18"
+coordinate: "vocabulary/early · 7/descent · e5ad7613"
+contentUuid: "0ffe3fdc-7aee-58b6-b34d-f1e2e60c8693"
+diamondUuid: "591bd39a-275c-8039-b918-bccc8c53ccb8"
+uuid: "e5ad7613-624b-8d54-a7ec-1b4d0f88779c"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f5d5c24b-e1cd-8ea5-a5d0-c1fc1e26bc53"
+  computationUuid: "74d895a9-8341-8e3d-8324-6192b35de103"
   stages:
     - stage: path
       stageUuid: "3a5ce1e0-c0fd-8441-bbc8-77c9d96b1162"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7a5530d2-c03d-8799-bd39-11d7037de087"
     - stage: horo
-      stageUuid: "8b36e775-c8e0-8dba-b4ec-db524fa8b442"
+      stageUuid: "774d5294-08f7-842f-8f45-89f5c68c3f0b"
     - stage: seal
       stageUuid: "723a79f3-cbb4-85c7-9f4b-23292a123b23"
     - stage: uuid
-      stageUuid: "4130c39c-eaf6-8893-b748-55eb0bd31b22"
+      stageUuid: "58ace80d-ff00-874d-b650-ee309e069d8b"
 version: 2
 ---
 # early

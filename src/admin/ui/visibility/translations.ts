@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "visibility",
-    "uuid": "3ee116c7-cedd-8904-9836-679b404952e3",
+    "uuid": "a055f876-8296-8f8c-8616-7e3b515b4569",
     "words": [
       "visibility"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about visibility — 231 collections rendered flat is a list nobody navigates. Visibility decides what this user's panel offers, computed from the collection's own metadata rather than from a…",
-    "uuid": "997d02c1-8224-8eed-9e19-09ad961c585d",
+    "uuid": "b6a533e0-b20c-8c25-928a-045d934b9951",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "protein",
-    "uuid": "690352c9-3c96-8150-9c70-4e8a50108bf1",
+    "uuid": "30400c5b-6266-81f2-99c6-3b1156ab1cc6",
     "words": [
       "protein"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about protein — Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group)",
-    "uuid": "8ed0d8ce-70a1-8717-a0d9-38dccbc965e6",
+    "uuid": "57ab68f3-f7a5-8c51-84fe-67a8ec87962c",
     "words": [
       "use",
       "when",

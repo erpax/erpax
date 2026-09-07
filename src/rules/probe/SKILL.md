@@ -2,18 +2,18 @@
 name: probe
 description: "Use when reasoning about probe — For a React atom the answer is **yes** and this returns **no**. Its barrel is , because JSX does not parse from a file — that is not a stylistic variant, it is the only spelling…"
 atomPath: "rules/probe"
-coordinate: "rules/probe · 2/share · 9866232c"
-contentUuid: "fd0465b7-4331-5685-8978-92613a0f5f6a"
-diamondUuid: "d1f1fab5-07ca-8793-bf5a-711f79ddc0bd"
-uuid: "9866232c-5de9-8979-816d-2cac6d2232d5"
-horo: 2
+coordinate: "rules/probe · 7/descent · 3be06ca0"
+contentUuid: "ad7fa4d4-0687-5545-b558-1a45ee66888b"
+diamondUuid: "03619c05-e8d8-882d-8d73-9e5131e38dfc"
+uuid: "3be06ca0-c93c-8064-8d0a-bb0126052bab"
+horo: 7
 typography:
   partition: rules
   bondDegree: 17
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c4fcfc2a-8103-8e25-b0fd-4633646fb555"
+  computationUuid: "c39d3502-87d7-814b-b7a2-2d33a52a2966"
   stages:
     - stage: path
       stageUuid: "12624f23-0ea4-8a25-a098-3bde552410b3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "49b9d86f-d089-8966-905a-9129eff7d005"
     - stage: horo
-      stageUuid: "a03d20d9-87cb-8826-b34a-601f1337603f"
+      stageUuid: "e9eb8aeb-42e9-8dd0-88a2-ac58b07bc35a"
     - stage: seal
       stageUuid: "bfa647b7-988e-865c-85dc-224530049911"
     - stage: uuid
-      stageUuid: "7627964a-c931-8326-9533-2a9592597250"
+      stageUuid: "a9dd9eac-9a20-878d-b47f-9dffe5c8f5f1"
 version: 2
 ---
 # rules/probe — a test for a file by name must name every spelling that file has

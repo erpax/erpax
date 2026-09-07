@@ -2,11 +2,11 @@
 name: prime
 description: "Use when reasoning about prime — Use for the multiplicative basis — isPrime (deterministic Miller–Rabin, exact not probabilistic) and factor (the decode fold: an integer back to its prime generators). The counterpart to pi's positional basis. Run: tsx src/prime/index.ts <n>"
 atomPath: prime
-coordinate: "prime · 1/base · b0593384"
-contentUuid: "dcc91de4-7701-5ce4-a1ce-a62687ca6519"
-diamondUuid: "5b7f02b5-5451-86fb-9186-0038890e0cb5"
-uuid: "b0593384-d0b3-8c94-b7cb-62f84b95874e"
-horo: 1
+coordinate: "prime · 7/descent · 20bc6e4a"
+contentUuid: "bfefccec-585e-546c-ad2e-1ca1c069094c"
+diamondUuid: "b3e121e7-673f-8b0e-86f3-812e36306153"
+uuid: "20bc6e4a-0faa-85b6-b195-f228a42f69d2"
+horo: 7
 typography:
   partition: prime
   bondDegree: 18
@@ -16,7 +16,7 @@ standards:
   - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "02d96250-00e5-86e0-8e0e-709dbfcf7fc1"
+  computationUuid: "a98ba24a-d1c8-8826-9170-ffb27743f659"
   stages:
     - stage: path
       stageUuid: "9af4b6d4-df67-8dac-9eff-58560cb8ac79"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "42e96511-b6f8-8743-a582-a5ef9386c319"
     - stage: horo
-      stageUuid: "c7b60b8b-07e3-8e10-9a88-112fa10d1273"
+      stageUuid: "5c5ea35b-fe45-8ec3-8919-df680bccdcb4"
     - stage: seal
       stageUuid: "25b11aca-fe49-8f9d-99e7-2bfca22f3424"
     - stage: uuid
-      stageUuid: "458b2863-6f6a-867e-a20b-41cf0707d722"
+      stageUuid: "ae090700-1998-86d6-88d9-81475174c5de"
 version: 2
 ---
 # prime — the multiplicative basis, and factoring is the decode fold

@@ -2,18 +2,18 @@
 name: taoism
 description: "Use when reading Taoism as a diamond of invariant atoms — the way that cannot be named, yin-yang as the duality held, acting in accord (wu wei), returning as the motion of the Tao, qi the vital breath. Strip the Chinese prefix and tao, qi, wu wei, fan collapse to void, breath, harmony, return — one content-uuid each."
 atomPath: taoism
-coordinate: "taoism · 2/share · 04cb8aa4"
-contentUuid: "f0bf6e7b-0242-5eb9-969d-3c8cc3b3a0ed"
-diamondUuid: "d67d70ff-0d84-818a-8e9f-1d24fc7851fd"
-uuid: "04cb8aa4-2908-8109-9984-12defb1aa653"
-horo: 2
+coordinate: "taoism · 8/crest · a122d2b3"
+contentUuid: "02c13478-10bc-5897-bc11-16acf3920061"
+diamondUuid: "5fb92c0e-9c61-8914-8549-ebefc72ce401"
+uuid: "a122d2b3-b731-8fc1-acb4-7370219f618f"
+horo: 8
 typography:
   partition: taoism
   bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "97765ed1-b970-88c4-9809-82d9527a613e"
+  computationUuid: "154b69e8-907f-8ea3-86b8-ba82caeb265d"
   stages:
     - stage: path
       stageUuid: "3c94525d-4fc6-8bb4-805b-4a3bf874c283"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dad24db8-62f3-806d-b436-4e7ee0ace0c8"
     - stage: horo
-      stageUuid: "e01447e6-3071-8552-b872-afeefc810f86"
+      stageUuid: "b430ceca-fb0a-869f-81cd-e92f46ec8f4e"
     - stage: seal
       stageUuid: "06444e11-03ca-8603-a268-f32c91b45a88"
     - stage: uuid
-      stageUuid: "16883dd0-e4d6-81e2-871f-754e9e55c261"
+      stageUuid: "35b465ea-4f56-855d-b109-1aee26af84e0"
 version: 2
 ---
 # taoism — the way that cannot be named; return to the root

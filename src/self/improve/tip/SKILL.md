@@ -2,18 +2,18 @@
 name: tip
 description: "Use when the loop must say what to do next — the feed scanner that finds real gaps, scores them unblock / (cost × risk), and emits ONE executable trinity tip or refuses as vague."
 atomPath: "self/improve/tip"
-coordinate: "self/improve/tip · 7/descent · 1fa06fe1"
-contentUuid: "711c7d21-9fda-55e4-938a-b26e971d9b1c"
-diamondUuid: "8d0f210a-3dc4-8b9c-8401-814ef4b4ba49"
-uuid: "1fa06fe1-3e51-8d2f-8d84-a7220dee9b2a"
-horo: 7
+coordinate: "self/improve/tip · 8/crest · 45ffecdc"
+contentUuid: "c3bc6e25-7b55-5dd8-9640-2843c24a2a60"
+diamondUuid: "8fbf5610-a6d2-81a7-b2c9-a20c46376e24"
+uuid: "45ffecdc-8041-8271-bc81-e7d5f08693c1"
+horo: 8
 typography:
   partition: self
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "85683df2-c55d-8bd2-85e0-c4cf651c9bc1"
+  computationUuid: "1051ace3-5e31-85c4-8862-462bbcd604d5"
   stages:
     - stage: path
       stageUuid: "b6b3a707-3ac0-8315-840f-df6302d5df71"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9be8fe83-b098-8b9f-b814-183ade6554f8"
     - stage: horo
-      stageUuid: "6875d874-bf4f-80ff-b184-3b1fe03ad1b1"
+      stageUuid: "045c1cd3-52d9-8c0a-ac6a-b8d84daaeb31"
     - stage: seal
       stageUuid: "8fecf9ea-376c-861c-9f20-f4672ef4d636"
     - stage: uuid
-      stageUuid: "95827a70-737a-84e6-82a6-59b1299e85d7"
+      stageUuid: "2987e0d6-eeba-8e9e-af3f-813df5be298c"
 version: 2
 ---
 # self/improve/tip — one tip, executable, or none

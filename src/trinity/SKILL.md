@@ -2,11 +2,11 @@
 name: trinity
 description: "Use when reasoning about how one node is told three times and rendered once — matter (index.ts inline docs) · antimatter (SKILL.md) · backend (the generated payload-types schema), fused into VitePress (the speech). The doc-scale DRY law — the page derives from the code and the backend, never restated."
 atomPath: trinity
-coordinate: "trinity · 8/crest · eba5a011"
-contentUuid: "2e87d071-ae83-5be5-8b3f-4a78012cd571"
-diamondUuid: "7942a938-a686-8fa5-ae63-e10212603996"
-uuid: "eba5a011-af6c-8e9a-a758-948d1cea8049"
-horo: 8
+coordinate: "trinity · 7/descent · 4ade54da"
+contentUuid: "ecb34aad-34b5-5bd8-aa65-93f3f90b9f4c"
+diamondUuid: "bae93f92-d007-87dd-ba2d-f2a6d391f5d9"
+uuid: "4ade54da-1576-8de4-9b3b-d7b29ea90b5f"
+horo: 7
 typography:
   partition: trinity
   bondDegree: 263
@@ -14,7 +14,7 @@ standards:
   - "the file is architecture — the detail lives in the folder PATH, never the filename"
 bindings: []
 signatures:
-  computationUuid: "158f4de5-350d-8400-b7d8-2a5621885abd"
+  computationUuid: "7dadb4b9-6ed0-8306-a0b0-49b1d75b380a"
   stages:
     - stage: path
       stageUuid: "9860a726-81bb-8417-9e0d-f0ef6e3dbfdc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "26dab8d7-d3ec-871b-a18e-f0edec04f9c7"
     - stage: horo
-      stageUuid: "f5e375a9-ffde-81b7-beff-b3840c204873"
+      stageUuid: "6f6579fd-2cbe-87cc-99dc-7dc9150ea367"
     - stage: seal
       stageUuid: "a398756a-4de7-8c39-93bf-55f86b1e65e7"
     - stage: uuid
-      stageUuid: "e0bedefa-091c-82da-9275-b94260696f4a"
+      stageUuid: "2a03ac4f-ab85-87de-8685-2cd76e3bca7e"
 version: 2
 ---
 # trinity — one node, three sources, one speech

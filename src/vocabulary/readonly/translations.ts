@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "readonly",
-    "uuid": "04e617b7-4a8c-800a-bbed-04f5e478b637",
+    "uuid": "16b462a0-ea77-84cb-a51f-7c03760df27e",
     "words": [
       "readonly"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about readonly — A schema.org component word, collided out of schema.org compounds — fused from readonlyValue (sti · collapse · merge).",
-    "uuid": "7e898a86-1e83-8679-a038-952878e19460",
+    "uuid": "e3808535-0c63-8099-a4f1-b5c63d9e357b",
     "words": [
       "use",
       "when",

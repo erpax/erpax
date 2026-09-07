@@ -2,10 +2,10 @@
 name: scorecards
 description: "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node."
 atomPath: "vendors/vendor/scorecards"
-coordinate: "vendors/vendor/scorecards · 7/descent · 7eaf5869"
-contentUuid: "ac39cf3b-f6c0-57ec-8fbb-9ac114759762"
-diamondUuid: "86c313b9-89a2-893a-9ed7-80db88df0b7e"
-uuid: "7eaf5869-e9b4-86e3-8e04-9b767729697a"
+coordinate: "vendors/vendor/scorecards · 7/descent · 2a5c9853"
+contentUuid: "b87af818-41d9-58ef-a8f8-dd39abfc242f"
+diamondUuid: "1ffd57ad-4281-8b82-9034-d7e04b568e90"
+uuid: "2a5c9853-09a4-8ab8-bd3a-012901e5c481"
 horo: 7
 typography:
   partition: vendors
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2dc0428a-a894-842d-b1b1-974c7b123cd5"
+  computationUuid: "d8cf3afb-edcb-8d9e-b8be-6cecb725e1ab"
   stages:
     - stage: path
       stageUuid: "63ceafff-7978-8d09-9a1e-dd026358cb01"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "775fed0b-13e7-8f9b-b7fc-e9ea058912b3"
     - stage: horo
-      stageUuid: "26382d05-f2d5-8f1a-a87d-719e65d5ca9d"
+      stageUuid: "312df96d-2d16-8721-b912-adb92cb4b071"
     - stage: seal
       stageUuid: "6f5607e1-780e-88fa-bd2a-61f8db04332e"
     - stage: uuid
-      stageUuid: "02a0b155-2309-8625-8ad3-cf7c849f5d65"
+      stageUuid: "f6d90181-c146-887b-b419-658da825bbe9"
 version: 2
 ---
 # vendor-scorecards

@@ -2,11 +2,11 @@
 name: keywords
 description: "Use when reasoning about keywords — Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property."
 atomPath: "vocabulary/keywords"
-coordinate: "vocabulary/keywords · 7/descent · 0b78e3e4"
-contentUuid: "697d1de7-8118-548b-bec7-6d56deec4c70"
-diamondUuid: "f5822e22-b483-8504-88f8-10d14e009fce"
-uuid: "0b78e3e4-1b41-807c-b935-6a5803ad7a72"
-horo: 7
+coordinate: "vocabulary/keywords · 2/share · 8c6c57cd"
+contentUuid: "a5b2ee12-dd51-5ccf-a33d-0fb56e02677e"
+diamondUuid: "6858f138-232f-8098-9b9e-ebf5c17234ae"
+uuid: "8c6c57cd-d694-8235-bcc2-cf3b1b75f080"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "89bdf9f3-9e2e-8e71-83a5-484f026d75fc"
+  computationUuid: "3f0a031c-17ae-8c43-9cf6-fb17ba591164"
   stages:
     - stage: path
       stageUuid: "9c039be6-5dd5-8fcf-ab4c-48e8316b33f0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4e38072a-ae5b-850d-8f2c-7462ba9fef4b"
     - stage: horo
-      stageUuid: "53ba2411-40e1-8cab-a336-baaeabd79585"
+      stageUuid: "aa83e7ac-eae5-8458-aa3e-2296554b9ca8"
     - stage: seal
       stageUuid: "c17eeb95-f742-8767-99ab-a4ff4bc6a338"
     - stage: uuid
-      stageUuid: "cfa3a39f-a5d6-89be-b368-04e6a9ce904c"
+      stageUuid: "51539f0a-4640-8dc7-a212-7396318bd2b2"
 version: 2
 ---
 # keywords

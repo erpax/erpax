@@ -2,18 +2,18 @@
 name: readings
 description: "Use when reasoning about clinical and biometric readings — a device-collapsed, content-addressed snapshot that feeds the analog result stream; the wire between quantum/device capture and quantum/emr replay."
 atomPath: readings
-coordinate: "readings · 2/share · 0bda69d0"
-contentUuid: "e200dafa-47b9-52c1-8352-514f9dccd123"
-diamondUuid: "273d5261-0df1-8bb7-8fba-98b553474501"
-uuid: "0bda69d0-129a-8b49-953a-4e4a71c0a6c3"
-horo: 2
+coordinate: "readings · 7/descent · dd8a756f"
+contentUuid: "df9843d7-11ca-544c-9d18-dc2a3ebefc93"
+diamondUuid: "3758ccbe-90a0-8af8-bf08-4e12f44b2b5b"
+uuid: "dd8a756f-1915-8297-a2ef-3e9269e21cfc"
+horo: 7
 typography:
   partition: readings
   bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a29138ec-99af-8f17-a9ec-23e6fba83b29"
+  computationUuid: "ecdfd224-6ce7-86f7-8953-84d1d69178a4"
   stages:
     - stage: path
       stageUuid: "9a914982-6326-8f21-b523-ef1bec138526"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d242d98a-e8e7-89f4-8073-82c2504a00e5"
     - stage: horo
-      stageUuid: "91f876f7-0c9e-8021-9adf-2b6cc11c9ef2"
+      stageUuid: "d539730f-1566-8657-a724-a08d82e879f8"
     - stage: seal
       stageUuid: "04550259-ea24-8e42-8d2f-05867c4dbf39"
     - stage: uuid
-      stageUuid: "1308b7e0-496e-84c2-a3ea-c95ca3e563dd"
+      stageUuid: "eca32880-1507-84dc-ba0e-b3f0efcff96a"
 version: 2
 ---
 # readings — device-collapsed snapshots feeding the analog stream

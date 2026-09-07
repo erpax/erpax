@@ -2,10 +2,10 @@
 name: radiography
 description: "Use when reasoning about radiography as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/radiography"
-coordinate: "vocabulary/radiography · 8/crest · b9958dae"
-contentUuid: "dba5891d-1898-56de-9e57-77f2a5d3b1ab"
-diamondUuid: "e38d258c-900e-8591-a58b-7e400cdc0cb1"
-uuid: "b9958dae-405d-8dbb-b754-b52844c518c6"
+coordinate: "vocabulary/radiography · 8/crest · d0588bd8"
+contentUuid: "c76ad40b-0e46-5f87-a188-a8a341e1ab48"
+diamondUuid: "93db6f98-08f2-8806-a58f-f97c5fa74514"
+uuid: "d0588bd8-abf2-86d5-84af-5ac085f4289a"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dc82dc86-c6a8-8526-9012-946b8258c219"
+  computationUuid: "a9575cef-4117-8c07-9976-99f644f38b30"
   stages:
     - stage: path
       stageUuid: "35b8f839-630b-84a7-bf6a-1d2ceb2e9f6b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c56a52ca-ea2e-8fe4-b33f-f7b882fb679b"
     - stage: horo
-      stageUuid: "23d43429-4821-82d3-81c4-c068f41182f7"
+      stageUuid: "23fab8f9-0cda-88cd-8a0f-fc92ff14c8e3"
     - stage: seal
       stageUuid: "8647089d-5e33-856f-bf32-0bba6dbded7f"
     - stage: uuid
-      stageUuid: "102b3777-be28-8e91-b24c-1a225b7f50a0"
+      stageUuid: "3e8372ea-6180-879b-8c50-9601f1acb7ee"
 version: 2
 ---
 # radiography

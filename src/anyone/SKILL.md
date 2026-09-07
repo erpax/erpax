@@ -2,11 +2,11 @@
 name: anyone
 description: "Use when granting deliberate public/unauthenticated read on a Payload collection or field — the access predicate that always grants, documenting the intentional public-read decision as part of the access-control regime."
 atomPath: anyone
-coordinate: "anyone · 8/crest · 5b2b2df3"
-contentUuid: "a3e13a2b-30dd-5da8-92ce-c06180bbf676"
-diamondUuid: "28b08180-2aac-8689-8ff5-e17bb990019e"
-uuid: "5b2b2df3-0d5f-8dbb-9d97-0afdd4c4715d"
-horo: 8
+coordinate: "anyone · 7/descent · edc350ee"
+contentUuid: "9733d95d-b75e-584e-98cc-7808bbb59db7"
+diamondUuid: "091b257f-0808-82a5-a12b-d1d309d4a9e2"
+uuid: "edc350ee-9737-8320-87c2-6267c4a160f2"
+horo: 7
 typography:
   partition: anyone
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "dc0318a1-2f7f-8c3d-b73b-dffeebd046c2"
+  computationUuid: "470b0c78-cac7-8b9a-9848-3bd696cec55d"
   stages:
     - stage: path
       stageUuid: "a25a040e-d3de-8b90-9744-85c571fc800c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5f6bd8f9-01f1-8638-9873-4b6e8a0e71a2"
     - stage: horo
-      stageUuid: "1e28746d-0524-8c1e-affb-ef1554091b32"
+      stageUuid: "d956be37-cb71-88ea-bb5d-70942ca11982"
     - stage: seal
       stageUuid: "146d84af-4019-844d-8ba6-e6b78c300957"
     - stage: uuid
-      stageUuid: "8ca7e6b3-ee47-8622-b35e-dcc0ed605653"
+      stageUuid: "34d00aab-ca6f-86da-902f-e9ae90d07065"
 version: 2
 ---
 # anyone — public read predicate (always grant)

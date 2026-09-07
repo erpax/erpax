@@ -2,18 +2,18 @@
 name: testing
 description: "Use when reaching the bounded-witness helper from the witness side — the double-wire reciprocal of testing/witness."
 atomPath: "witness/testing"
-coordinate: "witness/testing · 1/base · c3b789f0"
-contentUuid: "afe7d927-a82a-5d4c-a25f-10b4c3d00be6"
-diamondUuid: "beb4d904-932e-862d-8020-4eae0b88e9d3"
-uuid: "c3b789f0-782e-844c-aa39-20cf4a3cb639"
-horo: 1
+coordinate: "witness/testing · 5/round · e3b8376e"
+contentUuid: "0e68b022-f0c3-5964-845a-c2f05532bb75"
+diamondUuid: "139a738f-b47e-8428-b1c6-f17303a14681"
+uuid: "e3b8376e-b9b2-8b12-9700-0ba20661ce5e"
+horo: 5
 typography:
   partition: witness
   bondDegree: 86
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ed51f073-afd2-85b9-a1f7-0f64861fbc28"
+  computationUuid: "ed2773d6-5801-89be-8a40-b9673f2a30cc"
   stages:
     - stage: path
       stageUuid: "2c30ea83-8e2d-8f5d-9b38-235ed69e99be"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e626a486-d7d8-8ce7-9d7b-555f2baa1d83"
     - stage: horo
-      stageUuid: "d5655288-1435-830e-a785-63c5bcde98c1"
+      stageUuid: "26757bea-0eb3-8020-ab54-ece479ae4909"
     - stage: seal
       stageUuid: "631f429d-55ae-8ba3-bf3f-096b8006ebd2"
     - stage: uuid
-      stageUuid: "139516a7-1bb1-8b3d-b39d-394b8dabafad"
+      stageUuid: "07fb21af-8287-80f3-997b-12918b9c1be5"
 version: 2
 ---
 # witness/testing — the reciprocal

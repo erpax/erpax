@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "generator",
-    "uuid": "613f339f-7dbe-8713-ac04-5a1751bd9a71",
+    "uuid": "67dc5540-b4f7-82b8-a57c-61048c9dd01c",
     "words": [
       "generator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about generator — The extractor parses each collection's leading banner into a ; the generators beside it emit the chain registry, the test scaffolds, the marketing pages and the i18n keys from…",
-    "uuid": "b5c3769a-32a0-8984-b3d9-5822d8749830",
+    "uuid": "812b860a-2046-8c34-b275-097047a1748b",
     "words": [
       "use",
       "when",

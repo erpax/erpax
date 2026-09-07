@@ -2,11 +2,11 @@
 name: founders
 description: Use when reasoning about founders — A person who founded this organization.
 atomPath: "vocabulary/founders"
-coordinate: "vocabulary/founders · 7/descent · c837dfa1"
-contentUuid: "d27a8912-e8cb-539f-83bb-8e27d3b50ce5"
-diamondUuid: "1317f911-8ea2-806f-9aaf-c10df2de1d4c"
-uuid: "c837dfa1-909b-8fd7-825a-c6aea7d48693"
-horo: 7
+coordinate: "vocabulary/founders · 8/crest · 68f1930b"
+contentUuid: "966ab8ae-9289-534d-a3c2-ad855f543235"
+diamondUuid: "9abbc064-49c5-82e4-b55e-3b1afdeae9c8"
+uuid: "68f1930b-f4fb-832c-8921-b17443a3ea5d"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "162148ca-6959-8c43-a86c-cc642f12d92f"
+  computationUuid: "bfffc4fd-a608-8a8f-b81d-8455279db235"
   stages:
     - stage: path
       stageUuid: "654d0871-882f-850a-9715-aa3d43e8497d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5c2ca8be-13c7-8b27-98af-92e427d83233"
     - stage: horo
-      stageUuid: "4b965672-c253-895f-89fe-04b4bd18a27e"
+      stageUuid: "158c620d-6229-8685-a1cc-fbd06c0d409d"
     - stage: seal
       stageUuid: "1c6909e6-c40b-808b-bed5-dd1d82fe75ec"
     - stage: uuid
-      stageUuid: "4a047c79-8297-8151-8185-fed58fd3c564"
+      stageUuid: "fcbe416e-3b84-88d9-93f8-ff232fd050e7"
 version: 2
 ---
 # founders

@@ -2,18 +2,18 @@
 name: majeure
 description: "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing)."
 atomPath: "vocabulary/force/majeure"
-coordinate: "vocabulary/force/majeure · 2/share · 7ffe1f8c"
-contentUuid: "44c33718-6456-525f-abb8-4bbe7de2977c"
-diamondUuid: "85d6294d-7f58-8b90-83a6-1b353667582c"
-uuid: "7ffe1f8c-d81f-8a6b-a65f-201ee9822c45"
-horo: 2
+coordinate: "vocabulary/force/majeure · 1/base · 0bac01f2"
+contentUuid: "4ede977b-e4d6-5ea8-917a-c3d25db6cf47"
+diamondUuid: "6778c3b4-e75d-89e8-ab30-da8bb9bdb2fb"
+uuid: "0bac01f2-134e-8c99-9a0d-d7f9f92686ca"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ac4bb92e-afcb-81e7-a541-d192d746d034"
+  computationUuid: "8af0eee7-6e3e-84e9-b9fc-7187308233bf"
   stages:
     - stage: path
       stageUuid: "b87da645-8b64-8b4a-aba6-d90da5e3b5cb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "50f1ed91-19bc-82ed-86d5-b8b81e3d09cc"
     - stage: horo
-      stageUuid: "731b2b22-fd94-8c7e-b981-1ee09e942037"
+      stageUuid: "e7725961-b677-8ee5-8f58-58bfa8cf1973"
     - stage: seal
       stageUuid: "a4a5d9b2-83b4-8aea-92e1-a0c450d8dfbb"
     - stage: uuid
-      stageUuid: "c06f7f54-e2ed-8809-aaec-67afe92db1b2"
+      stageUuid: "08041f16-4c99-8735-ae45-8a475e271bda"
 version: 2
 ---
 # majeure

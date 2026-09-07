@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iupac",
-    "uuid": "e19bdeee-3040-8e12-a3d0-a1f2fb125bc0",
+    "uuid": "6cec19ee-8797-843c-bd1d-dfd8c1b445c4",
     "words": [
       "iupac"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about iupac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "9b7af7e1-5a9e-88ca-9bd3-09bd423ef754",
+    "uuid": "6743fcba-49d8-8120-9129-2b10ebb4893d",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: sdk
 description: "Use when reasoning about sdk — resolves the API base URL for the runtime it finds itself in, then returns a singleton in the browser and a fresh instance on the server."
 atomPath: "payload/sdk"
-coordinate: "payload/sdk · 5/round · 1c66e014"
-contentUuid: "500fc690-d2b1-52a8-a4dd-94fa2aef94a8"
-diamondUuid: "a375bce2-1f4a-87a5-b063-6dd6e9a240b0"
-uuid: "1c66e014-6423-857a-88de-da32fce03659"
-horo: 5
+coordinate: "payload/sdk · 2/share · d8507ca3"
+contentUuid: "84da97d7-2d46-586e-a9b3-2dc1316052f4"
+diamondUuid: "42296e0f-c61a-8485-9008-c8ef4f10bf6b"
+uuid: "d8507ca3-4f08-85e5-bdeb-67629aa00181"
+horo: 2
 typography:
   partition: payload
   bondDegree: 3
@@ -16,7 +16,7 @@ standards:
   - "9110 http-semantics"
 bindings: []
 signatures:
-  computationUuid: "ed1ee99e-39be-82ed-bab2-0acf60343f60"
+  computationUuid: "d6d2709c-fcc8-8125-b279-716219769574"
   stages:
     - stage: path
       stageUuid: "6697bc99-f9bf-84ec-85f1-f6f768af2e59"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "366a48c2-9004-8f15-8331-53acb1d469e2"
     - stage: horo
-      stageUuid: "3f0a39cb-078e-8394-a228-d659b893618c"
+      stageUuid: "2dc0600b-f8f5-86fe-8917-cca6bd319245"
     - stage: seal
       stageUuid: "6af490de-c8ee-8d55-94a6-64a158d603f9"
     - stage: uuid
-      stageUuid: "f51ea2f8-2235-898d-b572-e4c2003512a1"
+      stageUuid: "db7e6208-8a87-86c2-b240-6ed34dd7c0a4"
 version: 2
 ---
 # payload/sdk — one client per runtime, resolved rather than configured

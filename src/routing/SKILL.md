@@ -2,10 +2,10 @@
 name: routing
 description: "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service."
 atomPath: routing
-coordinate: "routing · 1/base · fc2e5b95"
-contentUuid: "1fc93848-aa6d-57a4-897e-77822c7e857a"
-diamondUuid: "cc737d5e-22e8-89a2-b7fa-b2514660ee0f"
-uuid: "fc2e5b95-3dda-853a-b72f-a451f4ddfef0"
+coordinate: "routing · 1/base · 95425efc"
+contentUuid: "ef073c49-39d1-5b73-8672-e5180ad5c2fd"
+diamondUuid: "090cb108-0bcc-889f-9f09-a887e89e262d"
+uuid: "95425efc-2f22-8c75-b22e-13586ee323ae"
 horo: 1
 typography:
   partition: routing
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4ca7b380-a3f5-8670-8db0-6aa7124dc798"
+  computationUuid: "ea421ded-62ad-8e2f-9268-72c111d5b34c"
   stages:
     - stage: path
       stageUuid: "9ed916e5-dd6a-84dc-982f-4ef90d7a9ce5"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "35d05721-a829-81ae-8d54-da31449b76c6"
     - stage: horo
-      stageUuid: "2ff64d70-95ab-8392-87c9-4053f7c79fe2"
+      stageUuid: "f99f060f-4a47-842e-aa99-14d2258515b4"
     - stage: seal
       stageUuid: "febd5367-e339-86af-a7ec-68c94cce5c6b"
     - stage: uuid
-      stageUuid: "964be4bd-cf1c-8d3f-a475-80d8449131ab"
+      stageUuid: "6303b135-f219-8918-a20d-a124612b04aa"
 version: 2
 ---
 # routing — size the model to the risk (enforcement, not location, is safety)

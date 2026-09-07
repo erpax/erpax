@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "harvest",
-    "uuid": "fae98aaa-b76f-8ce2-90ce-ca3cfd53c4e6",
+    "uuid": "e5e84e2c-175b-8987-bb26-28a92d6cab08",
     "words": [
       "harvest"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the gathering of matured output from a growth process — the IAS-41 transformation event where a biological asset becomes inventory, and the per-week harvest window (the produce calendar) over which a crop yields. Harvest is the realization point: value created by living growth crosses into sellable stock; the window is non-uniform — a 1 in the calendar marks presence, not constant volume.",
-    "uuid": "70cde6ff-4cc1-826b-8240-c681a98b0218",
+    "uuid": "3cbd5870-73a3-85f9-8852-cb26e3cb08f5",
     "words": [
       "use",
       "when",

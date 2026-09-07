@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disagree",
-    "uuid": "a379aa80-e248-8e7c-b97e-a2b408cbb086",
+    "uuid": "d1cdf040-7a6d-8dd0-a7a8-51de2f8899d2",
     "words": [
       "disagree"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about disagree as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "e815f254-c8cd-80ec-84fb-f9e682c395ac",
+    "uuid": "5c1cd8ca-ae22-891c-b391-7d15a2b3bd73",
     "words": [
       "use",
       "when",

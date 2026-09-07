@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dermatologic",
-    "uuid": "a8a3cc7e-7f95-8ecc-8d3b-a6ec78fc73db",
+    "uuid": "882b9dfa-1a88-8b5a-aaaa-fc98d3384ac9",
     "words": [
       "dermatologic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dermatologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "3b1aa552-5536-8d02-b859-e18b4b5baa13",
+    "uuid": "9f59ac3f-0cf9-8bda-8c7b-13e315cd2b1e",
     "words": [
       "use",
       "when",

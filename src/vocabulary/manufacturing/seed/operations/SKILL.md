@@ -2,11 +2,11 @@
 name: operations
 description: "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards."
 atomPath: "vocabulary/manufacturing/seed/operations"
-coordinate: "vocabulary/manufacturing/seed/operations · 8/crest · 5ff0637e"
-contentUuid: "be2ec4ff-1a5d-583a-ac48-193749cf5216"
-diamondUuid: "584be01f-d774-8f92-8f3c-68e6eecba6f2"
-uuid: "5ff0637e-3daf-878f-bb9a-3f2167d4a59a"
-horo: 8
+coordinate: "vocabulary/manufacturing/seed/operations · 1/base · fa9fb04e"
+contentUuid: "45525e20-5a83-5c1c-a61e-852a049d7f6e"
+diamondUuid: "2c553a1f-927d-8a3f-a67d-5fade35f7c5b"
+uuid: "fa9fb04e-5fef-80bb-8940-23d8182d6f72"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 14
@@ -18,7 +18,7 @@ standards:
   - "UN/CEFACT Rec 20 unit-of-measure (UoM-aware quantities)"
 bindings: []
 signatures:
-  computationUuid: "29eae960-0a34-8d3f-a047-708c7da1be24"
+  computationUuid: "b50ff70b-823b-8f68-9cfc-26e5eb02b62a"
   stages:
     - stage: path
       stageUuid: "6d1e2e84-4409-8a96-9f2f-b2cadb080c9b"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "e6117bd3-c40a-87d5-bae2-e8399aa2f492"
     - stage: horo
-      stageUuid: "4614d4ae-3dda-809b-a32a-fabec5c17c56"
+      stageUuid: "e3eac2cb-6465-8205-82c7-5c027af0ac5c"
     - stage: seal
       stageUuid: "2c87e765-38fa-8428-b560-d2754a56a878"
     - stage: uuid
-      stageUuid: "50ad5060-8ae9-8afd-b7eb-5b342731d5a8"
+      stageUuid: "0f4c1908-ab11-8430-9024-bcc0afa2c525"
 version: 2
 ---
 # vocabulary/manufacturing/seed/operations

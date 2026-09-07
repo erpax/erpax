@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "taxon",
-    "uuid": "bf02a9b0-228d-8fb5-8665-2ffae3dfd516",
+    "uuid": "4556fe5e-24dd-825f-8fb9-f923949ab7c9",
     "words": [
       "taxon"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about taxon — A set of organisms asserted to represent a natural cohesive biological unit.",
-    "uuid": "1208f820-8641-82ce-af2d-3ae375c6dad2",
+    "uuid": "c42648ab-c20a-8767-96b8-25d339d46b97",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: coil
 description: "Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex."
 atomPath: "rodin/coil"
-coordinate: "rodin/coil · 5/round · b391330e"
-contentUuid: "68459a9e-d24b-5168-ad21-8bdae97387ad"
-diamondUuid: "25c7fdf6-7fa9-83a0-9e71-1774b96f0e47"
-uuid: "b391330e-0d90-8c39-a26f-6dfbeeac459a"
-horo: 5
+coordinate: "rodin/coil · 1/base · 8ee9befd"
+contentUuid: "4a3cfe3c-8181-533b-b986-e7cda8da0684"
+diamondUuid: "ec1bfe1d-72b5-8598-afae-e3a0327be11a"
+uuid: "8ee9befd-b36e-8e20-bdca-4e272715396e"
+horo: 1
 typography:
   partition: rodin
   bondDegree: 132
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5e16b7e5-5eef-893c-8c05-94387af9c104"
+  computationUuid: "5ce3692b-9438-8765-8315-e3e971da1b5f"
   stages:
     - stage: path
       stageUuid: "6109ef06-9686-832f-a0a2-3baa645fb9c2"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "a87244dd-41c2-8299-8509-fbc5bc92574f"
     - stage: horo
-      stageUuid: "5aaa8c12-4cd7-8396-9481-c7d529545691"
+      stageUuid: "9d07311e-e8c1-8a70-a6e6-5a68dd21cb26"
     - stage: seal
       stageUuid: "03cff53b-5dfc-8c4d-a0cc-9e4fb0535618"
     - stage: uuid
-      stageUuid: "7f876922-3b94-882b-bff3-faaf2fe6390d"
+      stageUuid: "45d7eb18-4539-82eb-8f7b-1d7fb20e90d6"
 version: 2
 ---
 # coil — the doubling helix (1·2·4·8·7·5, ×2 mod 9)

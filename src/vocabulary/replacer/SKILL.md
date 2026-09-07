@@ -2,11 +2,11 @@
 name: replacer
 description: Use when reasoning about replacer — A sub property of object. The object that replaces.
 atomPath: "vocabulary/replacer"
-coordinate: "vocabulary/replacer · 7/descent · 7e52d8c5"
-contentUuid: "40ccfb1f-2217-5f7e-9b3a-0771458968cb"
-diamondUuid: "173b323d-d304-87dd-a27b-b67fa79802fb"
-uuid: "7e52d8c5-fe1e-8485-8d24-0230d30b099e"
-horo: 7
+coordinate: "vocabulary/replacer · 5/round · c7479b07"
+contentUuid: "619ec553-09e2-5fdc-b233-ccbf81d77ae8"
+diamondUuid: "b0b10623-f0d6-8a5e-978b-1b93978a3a43"
+uuid: "c7479b07-292d-88f4-a368-679ae49ef906"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1949a6c0-a351-8ec5-8bfa-4b5404b964b4"
+  computationUuid: "cd2964a2-dba4-8710-80fa-2fb13514c738"
   stages:
     - stage: path
       stageUuid: "74a74891-eaa7-8d50-8df2-45b0837ea21d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5310844b-68ad-884a-8eca-49000671818b"
     - stage: horo
-      stageUuid: "b648b3ab-a0ae-801c-ad2a-0444fc8f2136"
+      stageUuid: "50a182e8-f372-8ef0-99ca-73ee7266c24d"
     - stage: seal
       stageUuid: "3f7f7c0b-42e0-8567-afb2-1c6fc99f6121"
     - stage: uuid
-      stageUuid: "ae266862-c41d-8d14-b5e9-7fc893dbc8a1"
+      stageUuid: "22731a65-5c0c-86a5-87c2-905474c0c599"
 version: 2
 ---
 # replacer

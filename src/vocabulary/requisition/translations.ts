@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "requisition",
-    "uuid": "f0fd64ff-29d9-8680-af94-eb53a7552569",
+    "uuid": "eff4d674-4ae6-8ba7-9607-99c786a37c7f",
     "words": [
       "requisition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one requisition — the singular model of the requisitions collection (the plural store); a formal internal request to procure goods.",
-    "uuid": "cfb9ed8c-80ef-883b-89ff-f43d1cf3ee22",
+    "uuid": "5585f148-3c48-87b8-a34f-94f1c2b4a77c",
     "words": [
       "use",
       "when",

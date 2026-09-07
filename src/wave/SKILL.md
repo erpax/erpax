@@ -2,18 +2,18 @@
 name: wave
 description: "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication"
 atomPath: wave
-coordinate: "wave · 4/weave · 99fe4f75"
-contentUuid: "f9da5016-7628-58f8-85d2-5411b28e5c4b"
-diamondUuid: "02a09ae2-fcd7-8013-8225-66260c352b50"
-uuid: "99fe4f75-5b3d-8f30-a387-11e81843c311"
-horo: 4
+coordinate: "wave · 2/share · 773d6728"
+contentUuid: "021f1c64-1fdc-5c8c-b686-3a72639616cb"
+diamondUuid: "b2193a7b-f670-8deb-82a1-60d63a40b2ad"
+uuid: "773d6728-4a90-8dad-bde9-3cd6b1771985"
+horo: 2
 typography:
   partition: wave
   bondDegree: 107
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d025d7dd-6a71-88b5-8747-a51adcbf7b19"
+  computationUuid: "dc0f7450-be2a-8daa-867b-c0ffc4d95b83"
   stages:
     - stage: path
       stageUuid: "5844e4f3-8340-8b53-9573-4376c6b7f565"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7baceb11-b8e1-86f6-852d-94a485392369"
     - stage: horo
-      stageUuid: "a20743c9-889f-8d63-a658-f14136a10c5f"
+      stageUuid: "3d96c6f6-f98d-802d-b3c4-8b280172c856"
     - stage: seal
       stageUuid: "50cbcbd5-86c3-8109-a02c-d063e9c97858"
     - stage: uuid
-      stageUuid: "8733e9ae-b40c-8d89-8d71-d323140da4ee"
+      stageUuid: "98804516-1d57-83ca-862b-826190953a50"
 version: 2
 ---
 # wave — quantum computation wave with streaming publication

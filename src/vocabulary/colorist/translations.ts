@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "colorist",
-    "uuid": "ed587165-4f77-8732-aa69-270dbd98d5b0",
+    "uuid": "dd174def-4a61-859e-a837-85c38ef119e8",
     "words": [
       "colorist"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about colorist — The individual who adds color to inked drawings.",
-    "uuid": "e0473a1c-c98d-8970-a1d9-390e903c4564",
+    "uuid": "7c6591d8-0d0e-8e21-bc14-51a74c3246f5",
     "words": [
       "use",
       "when",

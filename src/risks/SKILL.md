@@ -2,11 +2,11 @@
 name: risks
 description: Use when reasoning about risks — Specific physiologic risks associated to the diet plan.
 atomPath: risks
-coordinate: "risks · 8/crest · acb5ecd4"
-contentUuid: "a6f121ce-37fa-5b5f-a719-23ec1d7d2be4"
-diamondUuid: "3381a958-a642-874b-aff6-b40b25e9e4f4"
-uuid: "acb5ecd4-3d36-8311-8d38-33ef40d673ed"
-horo: 8
+coordinate: "risks · 5/round · 2e4a7b23"
+contentUuid: "e9ef7224-f283-58aa-919f-54988331c684"
+diamondUuid: "b09847d6-bce7-83ca-90b6-dd2cdffb69c4"
+uuid: "2e4a7b23-c74a-8293-b8a5-e96b7f06d061"
+horo: 5
 typography:
   partition: risks
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "32daf6d6-5471-89da-8fa5-3492377b4661"
+  computationUuid: "62e28b71-8dd9-8226-bc5c-709c99255ee9"
   stages:
     - stage: path
       stageUuid: "83bb5acb-ba97-8f76-a250-0682b365fcf6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9b047dbf-a1e6-8e80-8037-7e082c27e650"
     - stage: horo
-      stageUuid: "fa199a16-e8a2-8e79-8180-e09e14cfd2bf"
+      stageUuid: "cd6da4db-871d-8e6e-9e95-a0e998926137"
     - stage: seal
       stageUuid: "d25cd141-096d-8930-b2b7-5564bc4ee782"
     - stage: uuid
-      stageUuid: "5c168f00-7d00-8e03-a603-51cf338fcf50"
+      stageUuid: "7b3aa5bf-cda1-8270-a622-d9701de02040"
 version: 2
 ---
 # risks

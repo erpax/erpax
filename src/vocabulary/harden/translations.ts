@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "harden",
-    "uuid": "28ac8696-d9b9-8884-a9a3-129c21dec728",
+    "uuid": "675c7421-168b-8d72-b93c-42e2cecd0bc5",
     "words": [
       "harden"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections.",
-    "uuid": "45a32e8d-50ac-870b-a6d7-4fe91ba00b62",
+    "uuid": "7fa75518-3d2f-80e4-b93a-a49a3ac5642f",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "method",
-    "uuid": "e3b83673-1452-88ce-9df1-69f8dfcfe9cb",
+    "uuid": "caedfa84-bf7a-81f1-8fad-528290a12c7d",
     "words": [
       "method"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about exported symbols as method-diamonds — every method name has a path of diamonds (the atom chain from corpus root to its index.ts barrel, plus the symbol at the leaf); compute methodPath/scanMethodPaths for addresses and boundary uuids; schema.org 'method' vocabulary is the collided homonym.",
-    "uuid": "cd39d12a-2afd-84f9-8ec4-15f171e27f2b",
+    "uuid": "a933846d-25f2-88c8-b522-9274e9a4aaef",
     "words": [
       "use",
       "when",

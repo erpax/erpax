@@ -2,18 +2,18 @@
 name: principle
 description: Use when modelling one principle — the singular model of the principles collection (the plural store); a foundational rule that governs conduct or design.
 atomPath: "vocabulary/principle"
-coordinate: "vocabulary/principle · 5/round · 370e4d98"
-contentUuid: "cc84a72b-fd9c-5d95-924a-d0c7086910b2"
-diamondUuid: "98418d28-81d9-822d-b9d6-687f966849cc"
-uuid: "370e4d98-1e61-888e-b4e7-9b06940d4a43"
-horo: 5
+coordinate: "vocabulary/principle · 8/crest · e321adf7"
+contentUuid: "d8533cf9-794e-58d4-879e-a44901b86b93"
+diamondUuid: "e41ac206-8f94-8208-b047-ea36c3eb9249"
+uuid: "e321adf7-2fee-8a40-a4ac-8243416b19f2"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "df975365-5784-8cc2-b657-95bed6b2fa0c"
+  computationUuid: "c8a0b630-9890-81c3-a9fe-d7d70a1ab1a4"
   stages:
     - stage: path
       stageUuid: "899a2ae5-92c3-82e3-b834-87af87bb40cd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "586479ae-fefc-8b1b-8dcc-2becceb767d1"
     - stage: horo
-      stageUuid: "b78edcc7-a1bd-8115-913f-e8cba5db3f43"
+      stageUuid: "31f590c7-352b-833e-906c-ce0443645f55"
     - stage: seal
       stageUuid: "c7f8aca5-6153-887a-93be-f7253db68274"
     - stage: uuid
-      stageUuid: "fe2647d2-4d18-8d03-beae-b4e77fadbe7e"
+      stageUuid: "77c515be-ccd7-84c3-acf6-bed2080774ea"
 version: 2
 ---
 # principle — the model of one [[principles]] row

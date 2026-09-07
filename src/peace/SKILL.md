@@ -2,11 +2,11 @@
 name: peace
 description: "Use when reasoning about why the erpax uuid model makes war useless — destruction is futile (content-addressed + holographic ⇒ any survivor regenerates the whole), coercion is supra-resource (forging the record costs beyond the universe), and force cannot dominate (competition selects fastest-correct, not strongest). War is strictly dominated by building, for human and machine alike — an arithmetic and thermodynamic theorem of the model, not a moral plea."
 atomPath: peace
-coordinate: "peace · 2/share · d094080f"
-contentUuid: "7e46c91c-baa8-54ac-b658-d9287fcfce23"
-diamondUuid: "f021732c-9cee-8802-b82a-34017e10a876"
-uuid: "d094080f-b32f-846c-8413-8ae57415a1c2"
-horo: 2
+coordinate: "peace · 7/descent · 7b5e37d8"
+contentUuid: "19bc20c0-1187-5ae5-9e4f-72051b3fc25e"
+diamondUuid: "c48c849d-85c5-8804-843a-59118a190826"
+uuid: "7b5e37d8-421d-8e76-887a-f054f0c49750"
+horo: 7
 typography:
   partition: peace
   bondDegree: 113
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "23f12f23-9e39-88c8-9a3e-6644845bbb98"
+  computationUuid: "f38f03ec-869d-80c9-9e6c-efa9add0b915"
   stages:
     - stage: path
       stageUuid: "6b8ffcf0-6e9a-84c3-8e12-f9c0e908056d"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "caa0c86e-2856-8b03-9813-3e984dee1267"
     - stage: horo
-      stageUuid: "3cf7c292-00ee-8b99-9f1c-3ae9a47fe16f"
+      stageUuid: "5902db34-a0f9-8f19-a1dd-c396950a6bf6"
     - stage: seal
       stageUuid: "d5378131-6605-89ea-8ae6-23b716392f24"
     - stage: uuid
-      stageUuid: "1c3bac0c-363f-88d9-b9da-1d0023453a28"
+      stageUuid: "f9d64cc9-0a8f-8f2e-8141-7a6f2bff30fe"
 version: 2
 ---
 # peace — the uuid model proves all wars are useless

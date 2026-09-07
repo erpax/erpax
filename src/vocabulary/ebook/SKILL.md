@@ -2,11 +2,11 @@
 name: ebook
 description: "Use when reasoning about ebook as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ebook"
-coordinate: "vocabulary/ebook · 1/base · 963e88ff"
-contentUuid: "47c29a03-92c8-5493-863f-6abf679c3bb2"
-diamondUuid: "7e8cfe87-1ec7-845e-b85e-594c0a91e45d"
-uuid: "963e88ff-95e8-83ca-90a8-64f6a1e4b6e2"
-horo: 1
+coordinate: "vocabulary/ebook · 8/crest · 22b029b5"
+contentUuid: "6c12ca9b-5417-5434-aa87-9862848f93c3"
+diamondUuid: "16fe2000-3ad9-866c-9bab-ba617c762da9"
+uuid: "22b029b5-8458-8dc1-9708-76cabf5d55b9"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "08f84b77-1f00-86a1-bcc5-3fc098941136"
+  computationUuid: "c9773285-d5fe-8dc1-81b6-d34903308450"
   stages:
     - stage: path
       stageUuid: "cbee98ed-ca00-84f4-bc66-5fcdbed77c5b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d16e00ff-19cd-89ed-8f53-5453cec56a08"
     - stage: horo
-      stageUuid: "d041b779-f72d-88c8-b92c-6819697c0ce2"
+      stageUuid: "596fd970-205b-82c8-88f8-2ed03f8b148e"
     - stage: seal
       stageUuid: "63744e15-78ac-8575-ab84-659b7056e0ee"
     - stage: uuid
-      stageUuid: "b34ba0ef-24fd-89dc-9ebf-e0f3a6c0dc69"
+      stageUuid: "002f73eb-b99d-8def-b69e-a28ee0c96282"
 version: 2
 ---
 # ebook
