@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from 'vitest'
-import { execFileSync } from 'node:child_process'
+import { execFileSync, spawnSync } from 'node:child_process'
 import { mkdirSync, rmSync, writeFileSync as write } from 'node:fs'
 import { join } from 'node:path'
 import { payloadApprovalGate, payloadApprovalSkipped } from './approval'
@@ -65,5 +65,54 @@ describe('payload input key — the memo is only as honest as what its key sees'
       rmSync(dir, { recursive: true, force: true })
     }
     expect(key()).toBe(before)
+  })
+})
+
+// migrate:status boots Payload for ~39s to compare declared migrations against the
+// payload_migrations rows. Memoising it is only honest if the key sees BOTH — and the first
+// attempt keyed on the D1 state FILES, which opening the database rewrites (WAL/SHM), so the key
+// moved on every read and the memo missed 100% of the time. Keying on the ROWS is stable.
+describe('payload migrate key — a memo whose key cannot see the database must refuse', () => {
+  const key = (env: Record<string, string> = {}): { status: number | null; out: string } => {
+    const r = spawnSync('bash', ['scripts/payload-migrate-key.sh'], {
+      cwd: process.cwd(),
+      encoding: 'utf8',
+      env: { ...process.env, ...env },
+    })
+    return { status: r.status, out: (r.stdout ?? '').trim() }
+  }
+
+  it('is stable across reads — reading the database must not change the key', () => {
+    const a = key()
+    if (a.status !== 0) return // no local D1 in this environment; the refusal path is tested below
+    expect(a.out).toMatch(/^[0-9a-f]{64}$/)
+    expect(key().out).toBe(a.out)
+  })
+
+  it('REFUSES under every env where the binding is a remote D1 no local hash can see', () => {
+    const remote: Record<string, string>[] = [
+      { NODE_ENV: 'production' },
+      { CF_PAGES: '1' },
+      { WORKERS_CI: '1' },
+      { PAYLOAD_BUILD_USE_REMOTE_D1: 'true' },
+    ]
+    for (const env of remote) {
+      const r = key(env)
+      expect(r.status).not.toBe(0)
+      expect(r.out).toBe('')
+    }
+  })
+
+  it('CHANGES when src/migrations changes', () => {
+    const base = key()
+    if (base.status !== 0) return
+    const probe = join(process.cwd(), 'src', 'migrations', 'zzkeyprobe.ts')
+    try {
+      write(probe, 'export const probe = 1\n')
+      expect(key().out).not.toBe(base.out)
+    } finally {
+      rmSync(probe, { force: true })
+    }
+    expect(key().out).toBe(base.out)
   })
 })

@@ -49,6 +49,43 @@ tag_label() {
   esac
 }
 
+# ── One tree walk, seven tags ────────────────────────────────────────────────────────────────
+#
+# Every mode below used to run its own `grep -r` PER TAG over src/ tests/ docs/ — seven walks for
+# --check, fourteen for --verify-index (seven to emit, seven to count). Measured 2026-09-07:
+# --check 12.2s, --verify-index 33.4s, and a single COMBINED pass over the same tree is 0.6s.
+# The tree is walked once here; each mode filters the captured lines.
+#
+# The capture is a strict SUPERSET of what any mode matches — `@tag` with or without a value —
+# so re-filtering can only narrow it. The per-tag patterns are re-anchored after the `path:line:`
+# prefix that grep prepends; the generated index is diffed byte-for-byte against the committed
+# copy by --verify-index, which is what proves the rewrite changed nothing.
+# Built EAGERLY, once, at top level. A lazy `if [ -z "$SCAN_FILE" ]` inside scan() looks right and
+# is not: every caller here is `$(scan | …)`, which runs scan in a SUBSHELL, so the assignment never
+# reaches the parent and the tree is walked again on every call. Measured: the lazy version made
+# --check SLOWER (12.2s -> 27.9s) while producing byte-identical output — a "cache" that only ever
+# missed. The eager build costs 0.6s once and cannot have that failure mode.
+# --required reads the filesystem with `find` and never touches the capture, so it must not pay
+# for one: building unconditionally took it 266ms -> 4.8s. The guard is the mode list, stated here.
+SCAN_FILE="$(mktemp)"
+trap 'rm -f "$SCAN_FILE"' EXIT
+case "$mode" in
+  --required) : ;;
+  *)
+    grep -rEn --include='*.ts' --include='*.tsx' --include='*.md' \
+      "^[[:space:]]*\*[[:space:]]*@(standard|rfc|compliance|accounting|security|audit|quality)([[:space:]]|$)" \
+      src/ tests/ docs/ 2>/dev/null > "$SCAN_FILE" || true
+    ;;
+esac
+
+scan() { cat "$SCAN_FILE"; }
+
+# The --check scope is narrower than the scan scope: src/ + tests/ only, .ts/.tsx only.
+# Filtering the one capture is exact — no second walk buys anything.
+scan_code() {
+  scan | grep -E '^(src|tests)/[^:]*\.tsx?:[0-9]+:' || true
+}
+
 emit_section() {
   local tag="$1"
   local label="$2"
@@ -59,8 +96,7 @@ emit_section() {
   echo
   # Files containing this tag, with the value column extracted.
   # `|| true` so a tag with zero citations doesn't fail under `pipefail`.
-  hits=$(grep -rEn --include='*.ts' --include='*.tsx' --include='*.md' \
-       "${pattern}" src/ tests/ docs/ 2>/dev/null | sort -u || true)
+  hits=$(scan | grep -E "^[^:]*:[0-9]+:[[:space:]]*\\*[[:space:]]*${label}[[:space:]]+[^[:space:]]" | sort -u || true)
   if [ -z "$hits" ]; then
     echo "_(no citations yet — reserved for future use)_"
   else
@@ -76,11 +112,7 @@ emit_section() {
 
 count_tag() {
   local label="$1"
-  grep -rE --include='*.ts' --include='*.tsx' --include='*.md' \
-       "^\\s*\\*\\s*${label}\\s" src/ tests/ docs/ 2>/dev/null \
-    | wc -l \
-    | tr -d ' ' \
-    || echo 0
+  scan | grep -cE "^[^:]*:[0-9]+:[[:space:]]*\\*[[:space:]]*${label}[[:space:]]" | tr -d ' ' || echo 0
 }
 
 case "$mode" in
@@ -98,8 +130,7 @@ case "$mode" in
     # Look for tag with no value (e.g. "* @standard" alone on a line).
     for tag in standard rfc compliance accounting security audit quality; do
       label="$(tag_label "$tag")"
-      bad=$(grep -rEn --include='*.ts' --include='*.tsx' \
-            "^\\s*\\*\\s*${label}\\s*$" src/ tests/ 2>/dev/null || true)
+      bad=$(scan_code | grep -E "^[^:]*:[0-9]+:[[:space:]]*\\*[[:space:]]*${label}[[:space:]]*$" || true)
       if [ -n "$bad" ]; then
         echo "ERROR: ${label} with no value:"
         echo "${bad}"
@@ -219,7 +250,7 @@ Source of truth: the JSDoc banners in code. If this file is stale, the
 script regenerates it.
 HEADER
     for tag in standard rfc compliance accounting security audit quality; do
-      emit_section "$tag" "${TAGS[$tag]}"
+      emit_section "$tag" "$(tag_label "$tag")"
     done
     ;;
 esac

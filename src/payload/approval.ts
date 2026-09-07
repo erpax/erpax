@@ -2,7 +2,7 @@
  * payload/approval — canonical gate before waves, commits, or push.
  */
 import { spawnSync } from 'node:child_process'
-import { existsSync } from 'node:fs'
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import { timeoutForLabel } from '@/timeout'
@@ -77,13 +77,41 @@ function runPayloadArgs(
  * `migrate:status` is deliberately NOT memoised: it reads the DATABASE, and no hash of this
  * repository can see that.
  */
+const memoDir = (): string => join(process.env.TMPDIR ?? tmpdir(), 'erpax-payload-verify')
+
+/** The key a script computes, or null when it REFUSES — a refusal must never read as a hit. */
+const contentKey = (script: string, cwd: string): string | null => {
+  if (process.env.PAYLOAD_VERIFY_NOCACHE === '1') return null
+  const r = spawnSync('bash', [script], { cwd, encoding: 'utf8' })
+  if (r.status !== 0) return null
+  const digest = (r.stdout ?? '').trim()
+  return digest.length === 64 ? digest : null
+}
+
 const generatorsAlreadyApproved = (cwd: string): boolean => {
-  if (process.env.PAYLOAD_VERIFY_NOCACHE === '1') return false
-  const key = spawnSync('bash', ['scripts/payload-input-key.sh'], { cwd, encoding: 'utf8' })
-  if (key.status !== 0) return false
-  const digest = (key.stdout ?? '').trim()
-  if (digest.length !== 64) return false
-  return existsSync(join(process.env.TMPDIR ?? tmpdir(), 'erpax-payload-verify', digest))
+  const digest = contentKey('scripts/payload-input-key.sh', cwd)
+  return digest !== null && existsSync(join(memoDir(), digest))
+}
+
+/**
+ * migrate:status boots Payload for ~39s to compare the declared migrations against the
+ * `payload_migrations` rows. Both inputs are cheap to read, so the verdict is memoisable — but
+ * ONLY when the key can see the database the check will query.
+ *
+ * scripts/payload-migrate-key.sh hashes src/migrations and the local miniflare D1 state, and
+ * REFUSES (exits non-zero, no key) under production or remote-binding envs, where the same config
+ * binds a D1 no local hash can reach. A refusal returns null here and the full boot is paid.
+ */
+const migrateKey = (cwd: string): string | null => contentKey('scripts/payload-migrate-key.sh', cwd)
+
+const rememberPass = (digest: string | null): void => {
+  if (digest === null) return
+  try {
+    mkdirSync(memoDir(), { recursive: true })
+    writeFileSync(join(memoDir(), digest), '')
+  } catch {
+    /* a memo that cannot be written is a memo that misses — never a failure */
+  }
 }
 
 export function payloadApprovalGate(opts?: {
@@ -103,11 +131,21 @@ export function payloadApprovalGate(opts?: {
       const { code, output } = runPayloadArgs(args, cwd)
       if (code !== 0) return { approved: false, step, error: tailError(output) }
     }
+    // Remember the pass. Reading a memo without ever writing one is a cache that can only miss —
+    // measured: a cold approve left the memo empty, so the very next approve booted Payload again.
+    // The key is recomputed AFTER the generators run, because generate:types may rewrite an
+    // artefact the key hashes; keying on the pre-run state would remember the wrong inputs.
+    rememberPass(contentKey('scripts/payload-input-key.sh', cwd))
   }
   if (!process.env.PAYLOAD_TEST_SKIP_MIGRATE) {
-    const migrate = runPayloadArgs(['migrate:status'], cwd, PAYLOAD_MIGRATE_NODE_OPTIONS)
-    if (migrate.code !== 0) {
-      return { approved: false, step: 'migrate:status', error: tailError(migrate.output) }
+    const digest = migrateKey(cwd)
+    if (digest === null || !existsSync(join(memoDir(), digest))) {
+      const migrate = runPayloadArgs(['migrate:status'], cwd, PAYLOAD_MIGRATE_NODE_OPTIONS)
+      if (migrate.code !== 0) {
+        return { approved: false, step: 'migrate:status', error: tailError(migrate.output) }
+      }
+      // Only a PASS is remembered: a red must be re-derived, since the fix changes the inputs.
+      rememberPass(digest)
     }
   }
   return { approved: true, step: 'complete' }
