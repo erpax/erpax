@@ -96,29 +96,33 @@ Two things it must NOT flag, and both were learned the hard way:
 - **A function is deferred.** `const build = () => make()` runs long after initialisation. Only an initialiser that *is not* a function body is evaluated at load time.
 - **A builtin cannot be in a dead zone.** The scan reported **49** uses until the source check existed; ~44 were `join`, `existsSync`, `createRequire` — node builtins, fully initialised before our graph starts, structurally incapable of the failure being hunted. Only a binding imported **from a file in the same tangle** can be undefined.
 
-## The tangle also destroys COST attribution — measured 2026-09-07
+## The tangle destroys COST attribution — and 64% of it was TEST EDGES
 
-The corpus records every gate lane's wall time ([[timeout]]'s sample ring, 50 labels), and
-[[mesh]]'s `costRoots` exists to project those costs onto upstream roots — its docstring promises
-*"the root carrying the most cost is the optimisation target, and one fix there collapses every
-dependent's bill"*.
+The corpus records every gate lane's wall time ([[timeout]]'s ring, 50 labels), and [[mesh]]'s
+`costRoots` projects those costs onto upstream roots — promising *"the root carrying the most cost
+is the optimisation target"*. Asked, it answered flat: hundreds of roots tied at one number.
 
-Asked that question, the answer was flat:
+The first reading blamed the cycle, and **overstated it twice**. `upstreamOf('accounting')` returns
+857 atoms; that is the ancestor set, not the component, and calling it the component was wrong. The
+component was 458.
 
-```
-upstreamOf('accounting') = upstreamOf('algebra') = upstreamOf('access') = the SAME 857 atoms
-856 of 875 roots tie at one cost, under a unique top
-```
+Then the real cause: **`meshOf` counted a test file's imports as runtime edges.** This atom's own
+walk has always excluded tests — `sources()` filters `IS_TEST` — and the mesh's did not. Two
+readers of one import graph, disagreeing in silence, which is the defect this corpus keeps paying
+for and had committed inside the instrument built to measure it.
 
-`accounting` is upstream of `algebra` **and** `algebra` is upstream of `accounting`. In a cycle
-every member is every other member's upstream, so each carries the other's bill by construction —
-and the ranking sorts, and names an alphabetical winner, and means nothing below position one.
+| | with test edges | runtime only |
+| --- | ---: | ---: |
+| largest atom SCC | **458** | **167** |
+| upstream(`accounting`) | **857** | **18** |
+| edges | 4,088 | 3,540 (548 test-only) |
 
-So the tangle is not only a TDZ hazard. It is why **this corpus cannot locate its own slowness**:
-the 153s readme, the 127s typecheck, the 99s test wave all collapse onto the same 856 atoms, and no
-fix can be shown to be the one that pays. `costVerdict` now says so rather than ranking inside a
-component — and it asks MUTUAL REACHABILITY, not tie size, because a chain `a→b→c` ties `b` and
-`c` legitimately and that tie IS orderable by depth.
+A test import couples nothing at runtime. Two-thirds of the reported tangle was test files, and the
+ancestor set of a core atom fell by 839. `runtimeMesh` drops them, and `MeshEdge.kind` now
+distinguishes the two so reactivity can keep them — a changed atom SHOULD re-run its test — while
+cost and cycle questions never see them.
+
+**167 atoms remain a genuine runtime cycle**, and that is the number worth cutting.
 
 ## You cannot trust something that is not a theorem
 

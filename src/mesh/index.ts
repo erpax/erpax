@@ -32,7 +32,14 @@ const GENERATED = /\.generated\.|skills\.index\.ts$|payload-types\.ts$/
 export interface MeshEdge {
   readonly from: string
   readonly to: string
-  readonly kind: 'import'
+  /**
+   * 'import' is a RUNTIME edge; 'test' is an edge that exists only because a test file imports the
+   * target. A test import couples nothing at runtime, and counting it as coupling inflated this
+   * mesh's largest strongly-connected component from 167 atoms to 458 — 64% of the reported tangle
+   * was test files. [[rules]]/cycle's own reader has always excluded them; this one did not, and the
+   * two disagreed in silence.
+   */
+  readonly kind: 'import' | 'test'
 }
 
 export interface MeshStandard {
@@ -63,6 +70,9 @@ export interface Mesh {
 const MCP_OPERATIONS = ['find', 'create', 'update', 'delete'] as const
 
 const BANNER = /@(standard|rfc|accounting|compliance|security|audit|quality)\s+([^\s*][^\n*]*)/g
+
+/** A test file's imports are not runtime coupling — same rule [[rules]]/cycle applies to its own walk. */
+const IS_TEST_FILE = /(^|\/)(test|.*\.test)\.tsx?$/
 
 const sources = (root: string): string[] => {
   const out: string[] = []
@@ -117,7 +127,7 @@ export function meshOf(cwd: string = process.cwd()): Mesh {
       const key = `${from}→${to}`
       if (edgeKeys.has(key)) continue
       edgeKeys.add(key)
-      edges.push({ from, to, kind: 'import' })
+      edges.push({ from, to, kind: IS_TEST_FILE.test(f) ? 'test' : 'import' })
     }
 
     let text: string
@@ -415,6 +425,15 @@ export function costVerdict(mesh: Mesh, costMs: ReadonlyMap<string, number>): Co
       '(tsx src/rules/cycle/index.ts); until then this list has no target below the first.',
   }
 }
+
+/**
+ * The mesh with test-only edges dropped — the graph as it exists at RUNTIME.
+ *
+ * Reactivity legitimately wants test edges (change an atom, its test re-runs). Cost and cycle
+ * questions never do: a test import is not coupling, and treating it as such inflated the largest
+ * component from 167 to 458 and flattened every cost ranking built on it.
+ */
+export const runtimeMesh = (mesh: Mesh): Mesh => ({ ...mesh, edges: mesh.edges.filter((e) => e.kind !== 'test') })
 
 export function costRoots(mesh: Mesh, costMs: ReadonlyMap<string, number>): CostRoot[] {
   const acc = new Map<string, { cost: number; atoms: Set<string> }>()

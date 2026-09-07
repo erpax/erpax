@@ -2,7 +2,7 @@ import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
-import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots, costRoots, failedFilesFromVitestJson, standardApiCross, apiStandardsCross, apiOf, meshReactiveFrontier, costVerdict } from '@/mesh'
+import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots, costRoots, failedFilesFromVitestJson, standardApiCross, apiStandardsCross, apiOf, meshReactiveFrontier, costVerdict, runtimeMesh } from '@/mesh'
 import type { Mesh } from '@/mesh'
 
 // Hermetic fixture corpus: three atoms in a chain a→b→c, one standard banner, one
@@ -103,6 +103,19 @@ describe('mesh — one quantum mesh: atoms ⊕ imports ⊕ standards', () => {
     expect(v.localisable).toBe(false)
     expect(v.tied).toBeGreaterThan(1)
     expect(v.reason).toMatch(/MUTUALLY reachable/)
+  })
+
+  // A test file's imports are not runtime coupling. Counting them as such inflated the live mesh's
+  // largest component from 167 atoms to 458 and the ancestor set of one core atom from 18 to 857 —
+  // while [[rules]]/cycle's own walk had excluded tests all along. Two readers, one graph, silence.
+  it('tags a test edge and drops it from the runtime mesh', () => {
+    const withTests = meshOf(tmp)
+    const runtime = runtimeMesh(withTests)
+    expect(runtime.edges.every((e) => e.kind !== 'test')).toBe(true)
+    expect(runtime.edges.length).toBeLessThanOrEqual(withTests.edges.length)
+    // and the tag is the only difference — no runtime edge is lost
+    const rt = new Set(withTests.edges.filter((e) => e.kind === 'import').map((e) => `${e.from}→${e.to}`))
+    expect(new Set(runtime.edges.map((e) => `${e.from}→${e.to}`))).toEqual(rt)
   })
 
   describe('the navigational cross — standard ↔ collection ↔ Payload API (quantum ERP)', () => {
