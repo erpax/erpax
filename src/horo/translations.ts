@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "horo",
-    "uuid": "bd46c1ae-ca4b-89b8-a518-54453ee50a8c",
+    "uuid": "171210f7-0abe-8dd0-9cae-ea7640dd8026",
     "words": [
       "horo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about horo — States in erpax are not free strings; they are positions on **one ring**: the measure-order digits — *base · share · weave · crest · descent · round · unity*. This is the rodin coi",
-    "uuid": "74ae79ab-27a4-8f19-b498-af2af6be50bf",
+    "uuid": "6c683189-dca8-8668-92bb-6720cc53b993",
     "words": [
       "use",
       "when",

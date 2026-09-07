@@ -2,11 +2,11 @@
 name: structure
 description: "Use when reasoning about structure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: structure
-coordinate: "structure · 5/round · 57a1872e"
-contentUuid: "3815bb8a-bc8d-5249-b685-9a3f9c9e2756"
-diamondUuid: "08f05b35-f3fb-85fc-a2e7-43a1a1f9bf42"
-uuid: "57a1872e-c9c2-88db-acc7-c6a40efd1de9"
-horo: 5
+coordinate: "structure · 8/crest · c0009a4c"
+contentUuid: "2d7b5fef-9466-58bd-ba8e-3b1ef8a836d5"
+diamondUuid: "cb81d077-98be-846c-89aa-a30ebd1a3ab7"
+uuid: "c0009a4c-0e1d-8414-b37c-142126660276"
+horo: 8
 typography:
   partition: structure
   bondDegree: 31
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ae1da5a8-2eda-83ec-9498-328c08c2d8e9"
+  computationUuid: "6936b7ad-13e4-8390-9b3f-e7354942ea68"
   stages:
     - stage: path
       stageUuid: "8a3699fa-1b6e-8010-8480-7c9d1594196d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "71abd2cb-b8c2-8b39-a9ca-1948898a8ea5"
     - stage: horo
-      stageUuid: "75b4b195-fb92-8a11-9f46-d25ccd38e5b5"
+      stageUuid: "b8bb7b91-3e2d-879f-8069-9db7fe24dee2"
     - stage: seal
       stageUuid: "6410c8b8-9eb6-80ce-a98f-9844445dc0c1"
     - stage: uuid
-      stageUuid: "7fe13a8e-b797-896c-b0f1-4fa56081b15a"
+      stageUuid: "4681989c-7cf3-8a3f-960f-2f8bf0bef074"
 version: 2
 ---
 # structure

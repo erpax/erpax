@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "width",
-    "uuid": "ebbce062-5e2c-8f1f-800c-82413941ec06",
+    "uuid": "aab7c2b8-afd3-8b97-8132-fcc9002ec1c0",
     "words": [
       "width"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about width — One div, one style. means *half the form*, not fifty pixels — the value is a **percentage**, because a form field's width is meaningful only relative to the form it sits in, and a…",
-    "uuid": "0c11ed78-0809-8887-bc6a-8bf092332179",
+    "uuid": "23ccf108-13e1-81b1-a6da-67b98f145512",
     "words": [
       "use",
       "when",

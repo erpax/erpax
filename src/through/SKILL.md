@@ -2,11 +2,11 @@
 name: through
 description: "Use when reasoning about through as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: through
-coordinate: "through · 5/round · fae81946"
-contentUuid: "ba8f262e-624a-5301-bb2e-3df256598c36"
-diamondUuid: "c8c51420-9a99-8e62-a803-c559f74f2f1f"
-uuid: "fae81946-884c-8809-a6af-04353c1a08eb"
-horo: 5
+coordinate: "through · 1/base · 87c2494a"
+contentUuid: "91092dda-cb01-59df-aba0-5a0de6706367"
+diamondUuid: "7ee9ab02-f5cf-89ef-baec-0bfc00ca70c0"
+uuid: "87c2494a-07f3-8c79-b226-405a1e04cb8c"
+horo: 1
 typography:
   partition: through
   bondDegree: 40
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "28e604c6-3f6b-846c-b1ff-f0ee8f839b47"
+  computationUuid: "cfbad3fe-3e19-8fca-bbe8-845f349ae783"
   stages:
     - stage: path
       stageUuid: "474077ca-f403-8a69-8a6b-14f06fc427e4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "814f6b8d-8cc6-8019-bbcd-48884a75d57f"
     - stage: horo
-      stageUuid: "a895e0aa-eadb-88de-b263-6f8c19cc04d4"
+      stageUuid: "c5491d79-fe27-8a0e-8cc8-a7201ded959e"
     - stage: seal
       stageUuid: "8e2773ef-c993-83f0-9329-e00bd322c66b"
     - stage: uuid
-      stageUuid: "dc29282f-72ed-89d6-abfe-1cf3f737eff3"
+      stageUuid: "58431bb9-a796-8d4f-9d22-14b7ce128d11"
 version: 2
 ---
 # through

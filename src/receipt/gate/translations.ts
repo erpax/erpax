@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gate",
-    "uuid": "677f64e0-0f2f-82c7-9c87-2ff00d56c9ab",
+    "uuid": "380fc5de-a378-8140-9bd8-c5fee43af8b1",
     "words": [
       "gate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the content-addressed test gate from the receipt atom — the double-wire reciprocal of gate/receipt.",
-    "uuid": "f8e7c2e2-c19e-8308-8fdf-2e4831c42e4c",
+    "uuid": "f0990e9f-203b-8e1e-9bdd-90dd4219be79",
     "words": [
       "use",
       "when",

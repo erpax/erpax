@@ -2,11 +2,11 @@
 name: controls
 description: "Use when defining or cataloguing internal controls — preventive, detective, corrective, or compensating — across COSO components (environment, risk assessment, control activities, information, monitoring); owner, frequency, review dates, SOX §404 scope. The internal-controls COSO-2013 register."
 atomPath: "internal/controls"
-coordinate: "internal/controls · 1/base · 82b43977"
-contentUuid: "74a211dd-d73f-5539-a188-f1bb084b95c1"
-diamondUuid: "6e58fc88-50d6-8176-adf5-f899a109c8f6"
-uuid: "82b43977-9966-8d37-a54f-ab56d46632ac"
-horo: 1
+coordinate: "internal/controls · 7/descent · 74077aec"
+contentUuid: "2638c542-a8c0-50a8-add9-25ed0beff609"
+diamondUuid: "4152e97b-e4ae-8bcb-93c9-a8a77fd650cc"
+uuid: "74077aec-5a45-8533-9fe3-2cfd4cc0dfe2"
+horo: 7
 typography:
   partition: internal
   bondDegree: 9
@@ -20,7 +20,7 @@ standards:
   - "SOX §404 internal-controls"
 bindings: []
 signatures:
-  computationUuid: "eb1b2155-c030-8644-9870-2be00204207e"
+  computationUuid: "6d795c7d-e8f8-8868-885f-8d08056ff094"
   stages:
     - stage: path
       stageUuid: "6aa7ba77-f04d-85a8-b56d-e8bd815eab58"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "b248a285-72cb-8729-9890-012ef923137f"
     - stage: horo
-      stageUuid: "d82d3156-4489-8382-a11e-3890c40198bf"
+      stageUuid: "f4ea4d31-ac14-8645-a23b-98b8a54f52ee"
     - stage: seal
       stageUuid: "107b2037-3742-8f77-85b7-e292ef48b7ca"
     - stage: uuid
-      stageUuid: "4ae514f1-c987-8f8a-a278-189cc5fab9e8"
+      stageUuid: "92ca66ed-39c7-869f-b326-2fc49e61d251"
 version: 2
 ---
 # internal-controls

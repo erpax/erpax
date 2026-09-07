@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "book",
-    "uuid": "a92c8574-ea82-850a-8209-233663300313",
+    "uuid": "2ff2651c-882f-8abe-b2a0-44fb7c541134",
     "words": [
       "book"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a question should be ANSWERED from what is already folded rather than recomputed — the sealed book, its search, and the researcher that reads it.",
-    "uuid": "d1e96aef-a996-8007-bde3-de47d2fd654b",
+    "uuid": "71771855-817a-896e-a968-a64171bf639c",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: bindings
 description: "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
 atomPath: "vocabulary/bindings"
-coordinate: "vocabulary/bindings · 5/round · 6070734c"
-contentUuid: "86c1d30b-f76b-50a5-abc3-3d4993248d7e"
-diamondUuid: "5b2feb8b-ab49-88d2-b973-1517213a4fad"
-uuid: "6070734c-4501-87d7-b10e-6bcc3ff671f8"
+coordinate: "vocabulary/bindings · 5/round · 359302a3"
+contentUuid: "9228490e-a352-56ec-8246-c5f18ffb3b8e"
+diamondUuid: "326e0819-ffae-8464-beb0-eb5f5bdb7481"
+uuid: "359302a3-8b5a-8f40-a52d-ea75a0a819ba"
 horo: 5
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e44536f5-1b5b-8407-ae08-e2b7763b09ec"
+  computationUuid: "0049c351-49e5-8201-a525-0c8336911951"
   stages:
     - stage: path
       stageUuid: "73db70eb-5db8-86db-b860-1416a1766a2e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5943bce6-bff0-831b-b05d-4d2f3b347568"
     - stage: horo
-      stageUuid: "81247d8f-1ca3-88c4-a1cf-6783792a1bb0"
+      stageUuid: "7a46eb84-8ef3-872d-9a08-580d80d537f8"
     - stage: seal
       stageUuid: "1144b007-e2ff-895f-b992-388b3a648841"
     - stage: uuid
-      stageUuid: "7d7bfb57-0490-8f16-a292-937559870fae"
+      stageUuid: "c9ccc9d6-41f3-8953-bb2b-7a410a095937"
 version: 2
 ---
 # bindings — erpax fully self-managed on Cloudflare (every binding is a cost lever)

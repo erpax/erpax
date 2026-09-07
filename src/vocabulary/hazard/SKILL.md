@@ -2,11 +2,11 @@
 name: hazard
 description: "Use when reasoning about hazard as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hazard"
-coordinate: "vocabulary/hazard · 4/weave · cf5359fb"
-contentUuid: "1d6b0faf-fd6c-515b-abe0-802ae8e53506"
-diamondUuid: "0a9ae9a3-da15-8286-b773-c6c8c1c63ad2"
-uuid: "cf5359fb-93bc-8df2-b66c-0ac14ea52ac0"
-horo: 4
+coordinate: "vocabulary/hazard · 1/base · c921ef58"
+contentUuid: "270f894f-9782-59bf-ad18-e36dc4c62edc"
+diamondUuid: "a846dfc3-3f45-8e6f-9ddb-b57d06176d5f"
+uuid: "c921ef58-7352-826c-bc0f-dbcd7aed5737"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "17cf0ec7-c198-8fc4-a7cb-6f3423db6d70"
+  computationUuid: "7ce4506a-6c54-8f9c-a676-94e03bf8a1dd"
   stages:
     - stage: path
       stageUuid: "426b32be-296d-88b2-86ae-f2e926cfba2a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "476043e8-7575-8ab3-848a-552d9c564850"
     - stage: horo
-      stageUuid: "1b6687ed-d0c7-802f-842f-862c1ec4d8de"
+      stageUuid: "fd5a68d8-201e-86dc-a110-d3e6f6275562"
     - stage: seal
       stageUuid: "801b8c37-f1c3-846d-a667-db50e12f24ec"
     - stage: uuid
-      stageUuid: "cd34e3cd-a3e1-8c51-a2c0-f94855e82bce"
+      stageUuid: "5203b76b-2c06-8bea-b1d0-c403d8286a40"
 version: 2
 ---
 # hazard

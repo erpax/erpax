@@ -2,11 +2,11 @@
 name: toy
 description: "Use when reasoning about toy — A schema.org component word, collided out of schema.org compounds — fused from ToyStore (sti · collapse · merge)."
 atomPath: toy
-coordinate: "toy · 8/crest · 3cda517c"
-contentUuid: "cc888341-1362-5d5a-8941-10ce2d78fff0"
-diamondUuid: "187ec5e8-241f-86e3-be9a-33bef6d379c6"
-uuid: "3cda517c-67bc-8f3a-95b3-cd294b0531ad"
-horo: 8
+coordinate: "toy · 4/weave · 517bff1e"
+contentUuid: "74af3174-c33d-53ab-a8ac-b47246e64fa7"
+diamondUuid: "bcc8a095-51d5-87a3-9f46-bb5131da644f"
+uuid: "517bff1e-954d-80d1-8725-e069bce36caa"
+horo: 4
 typography:
   partition: toy
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6ecaffbc-80eb-8c7c-aa03-6c086eac0ad3"
+  computationUuid: "036af87d-e9c9-8d59-871a-d0676dc10f95"
   stages:
     - stage: path
       stageUuid: "5f7ed149-4754-846a-9c0f-3bcb6ce346da"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7ac72a57-9fea-88c8-b01f-8a6048a60c75"
     - stage: horo
-      stageUuid: "a134e2fe-da7b-8953-a000-39ddc5ea92ef"
+      stageUuid: "f3cc8d3a-b67b-8c4e-a256-96bbe39881bf"
     - stage: seal
       stageUuid: "506c2341-f320-8a2c-93be-d4182ccdd432"
     - stage: uuid
-      stageUuid: "046a2dbe-5e6b-8354-8ddc-b9a20a138f46"
+      stageUuid: "6778a0a2-2ada-8f13-9672-f9042830e952"
 version: 2
 ---
 # toy

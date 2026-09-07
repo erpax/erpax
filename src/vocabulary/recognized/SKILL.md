@@ -2,11 +2,11 @@
 name: recognized
 description: "Use when reasoning about recognized — An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation."
 atomPath: "vocabulary/recognized"
-coordinate: "vocabulary/recognized · 4/weave · df7e4ade"
-contentUuid: "168415a9-d628-5f55-8683-c863fffa4685"
-diamondUuid: "5b01f315-6b93-8b1c-8b28-db925cdc232d"
-uuid: "df7e4ade-b75e-81ab-aad9-24f1f6e5cbae"
-horo: 4
+coordinate: "vocabulary/recognized · 2/share · 092250fd"
+contentUuid: "5dd0b1ec-d9d5-573d-86ba-f9b5fd702477"
+diamondUuid: "e441c852-61a3-8e14-b048-a908bcbc6cca"
+uuid: "092250fd-b2ab-86e0-a4a5-280afc362d24"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "32148392-0e43-8ede-bf06-f223bc41964b"
+  computationUuid: "ee3cff04-8c84-8ba6-ad5b-173ce4365829"
   stages:
     - stage: path
       stageUuid: "0e2432ff-6f09-8f5e-9034-0197acd04e47"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "701bee1d-37ee-8005-8d77-48fdf3d0e60d"
     - stage: horo
-      stageUuid: "41dce9b9-d93e-8ba3-971b-5bdee19099fb"
+      stageUuid: "ae49c836-f310-8985-a7fb-ffad021903eb"
     - stage: seal
       stageUuid: "ab441b81-5e46-8f36-9ed8-52cc328f3443"
     - stage: uuid
-      stageUuid: "cddf2103-7470-8c22-8e00-21ecf795bbce"
+      stageUuid: "bd3f6ab3-ada1-8b59-a62c-1298d5ee7c61"
 version: 2
 ---
 # recognized

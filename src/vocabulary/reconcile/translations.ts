@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reconcile",
-    "uuid": "cb247be1-f6ca-888e-8378-13e1be1b8f8f",
+    "uuid": "258f7f91-86a9-8844-8a61-d191554b2449",
     "words": [
       "reconcile"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when matching two records of the same flow — bank-statement line ↔ payment, GL ↔ subledger, intercompany pairs. The BankStatementLineReconciliation concern; reconciled state is DERIVED from the match link, not stored.",
-    "uuid": "ebc2dba5-3102-8863-8ebc-678a816e068c",
+    "uuid": "cbb0c871-fb4b-89cd-b2e1-f302b6839ce8",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: shifts
 description: "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k)."
 atomPath: "work/shifts"
-coordinate: "work/shifts · 4/weave · c9ea495f"
-contentUuid: "353e77e4-42ad-5342-a0b9-bacde3b48f05"
-diamondUuid: "834da1c7-fe3e-8da5-8122-409d2ed6dc4e"
-uuid: "c9ea495f-5df5-82fe-a3a0-ed5c3f02cf15"
-horo: 4
+coordinate: "work/shifts · 5/round · 92da13fe"
+contentUuid: "15c6f6b3-4a7d-5942-91b0-a63a3bd722cb"
+diamondUuid: "51d41389-8258-8cfe-84dd-bcad4adc25c9"
+uuid: "92da13fe-28be-89f2-a9bf-58c61f72bf8d"
+horo: 5
 typography:
   partition: work
   bondDegree: 33
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "510a2268-2000-8100-877e-99eccb608db6"
+  computationUuid: "b20fe2ed-e727-8774-bd5f-804ee1d1ad2a"
   stages:
     - stage: path
       stageUuid: "cf2c1704-9108-8aee-9f9b-adea31552ef5"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "242ed191-fd50-81fe-b0c2-5928fc511644"
     - stage: horo
-      stageUuid: "66360564-4932-8487-b071-53450268d1c4"
+      stageUuid: "11262dcf-b82f-82a6-a07f-ef0368192b40"
     - stage: seal
       stageUuid: "7a76c879-97ed-879c-896e-badc1bf7fefc"
     - stage: uuid
-      stageUuid: "ca0c134a-14cf-8095-8d17-3d4ae542c95f"
+      stageUuid: "b2f97924-a130-8892-91cc-6fe400c78511"
 version: 2
 ---
 # work/shifts

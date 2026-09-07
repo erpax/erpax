@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "validate",
-    "uuid": "fa31b6c2-380e-83e7-abb5-fe84e01ea4fa",
+    "uuid": "1e7a8d7f-dc3e-87dc-98c1-a0bb3f63b909",
     "words": [
       "validate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about validate — ISO 3166-2 subdivision-code validator.",
-    "uuid": "123c206f-8b0c-891b-9724-2fe1680920dd",
+    "uuid": "eff67e03-4f3b-893b-9dd0-0ec0bd3e5ad0",
     "words": [
       "use",
       "when",

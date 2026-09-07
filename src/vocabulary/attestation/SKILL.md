@@ -2,18 +2,18 @@
 name: attestation
 description: Use when modelling one attestation — the singular model of the attestations collection (the plural store); a signed assertion that a statement or record is true.
 atomPath: "vocabulary/attestation"
-coordinate: "vocabulary/attestation · 8/crest · 007e40af"
-contentUuid: "c6f30abf-2a9a-55a3-80ac-e087cf5045f2"
-diamondUuid: "2f02d067-01cc-8b32-94a7-e101fd09a429"
-uuid: "007e40af-3588-8800-9fb5-3f7533523cee"
-horo: 8
+coordinate: "vocabulary/attestation · 1/base · dcb5d7a8"
+contentUuid: "08974237-d4ed-52ca-b960-3b1da0e001e7"
+diamondUuid: "0698be51-b202-820b-811e-85ee9c3d5059"
+uuid: "dcb5d7a8-14e2-870f-8510-8fface9b5ed3"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 7
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a64c7c0e-9f57-8524-9fb2-188f4277c3c4"
+  computationUuid: "7d28f694-d657-87a4-ac0e-0d6727f36355"
   stages:
     - stage: path
       stageUuid: "b032fdd8-80c2-8d5d-b53c-41a21cd251d3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bbe1c3fe-33d2-8885-a5de-97c57f1f4469"
     - stage: horo
-      stageUuid: "f8fd8d1a-0677-8750-83be-e6dc83d2742d"
+      stageUuid: "f03c0128-d4fe-8d1f-a912-883d6f0b4c45"
     - stage: seal
       stageUuid: "17cdc10a-ed0d-87cd-a0aa-963d3655f4da"
     - stage: uuid
-      stageUuid: "0a3f372d-0d64-8db1-9fb6-5e6d4ac65d6d"
+      stageUuid: "aaee81fb-052e-818e-9347-d70153ac1783"
 version: 2
 ---
 # attestation — the model of one [[attestations]] row

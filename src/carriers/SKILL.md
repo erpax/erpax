@@ -2,11 +2,11 @@
 name: carriers
 description: "Use when managing shipping or freight carrier master data — DHL, UPS, FedEx, postal, maritime, air-cargo — with per-tenant accounts, INCOTERMS-tagged service levels, hazmat flags, API credentials references, and effective-date lifecycle. The carrier master that normalises free-text carrier strings in shipments."
 atomPath: carriers
-coordinate: "carriers · 4/weave · 16629e85"
-contentUuid: "f2b3a9de-94a7-5305-81d6-ff2fd16e6923"
-diamondUuid: "93b0dd4f-5111-88c1-9c9f-900dd72a7bb3"
-uuid: "16629e85-b300-842c-af0f-d8460054ab5f"
-horo: 4
+coordinate: "carriers · 2/share · 8c1247f4"
+contentUuid: "75e15073-3acb-55e9-b346-68cb397fbda2"
+diamondUuid: "ffd6455b-3b50-8d4c-a9e1-186c28a89dd8"
+uuid: "8c1247f4-83b5-8335-9dd4-8a1312d74726"
+horo: 2
 typography:
   partition: carriers
   bondDegree: 28
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "cd12100f-4267-8045-8b23-2271ad550ba1"
+  computationUuid: "8e18bcf6-c4c2-856b-a467-ae105b63ee7f"
   stages:
     - stage: path
       stageUuid: "7308a306-7dcc-8c72-9d4c-fe5462ab0bbe"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "3aa569c2-8661-84ad-a155-9e943b0cac94"
     - stage: horo
-      stageUuid: "a0403f34-30eb-891a-8942-3786afe1be2f"
+      stageUuid: "fca6a597-7a5b-8b25-8466-30cd44c9e593"
     - stage: seal
       stageUuid: "a09653a1-5898-8d8b-bb67-3d529e2ad5b8"
     - stage: uuid
-      stageUuid: "ea18b183-81d9-806c-8eac-335216990a69"
+      stageUuid: "702f2387-1357-8d52-8d0e-b04c49d82833"
 version: 2
 ---
 # carriers

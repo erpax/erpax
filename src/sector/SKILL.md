@@ -2,18 +2,18 @@
 name: sector
 description: Use when modelling one sector — the singular model of the sectors collection (the plural store); a broad division of economic activity.
 atomPath: sector
-coordinate: "sector · 7/descent · afd5a205"
-contentUuid: "d9d54c36-3659-5541-a88f-c78938050039"
-diamondUuid: "5f9c249b-5fe0-8af0-b045-d2043bdddb31"
-uuid: "afd5a205-ec11-8886-aae6-f0dc30bb51f0"
-horo: 7
+coordinate: "sector · 1/base · a92b9830"
+contentUuid: "dfc14ca4-1fd7-5c1b-8033-97b7ff846fe1"
+diamondUuid: "64885480-37a6-8256-be82-b7daa4c7f506"
+uuid: "a92b9830-ac0b-86b4-a3be-54df4e54bea1"
+horo: 1
 typography:
   partition: sector
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b544a727-2878-8fad-aa4f-e85b5ec0babd"
+  computationUuid: "ea0b3aae-be67-8367-ab50-220baac3dcd0"
   stages:
     - stage: path
       stageUuid: "4a9478b3-2da5-80a3-8c00-9c565fde233f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9b01254f-cef8-8490-a5a1-fc2698acf0df"
     - stage: horo
-      stageUuid: "07955316-46f2-8c77-bd22-170d6fd93420"
+      stageUuid: "94a19aca-7e5a-88b3-81e5-05bcfdf412f9"
     - stage: seal
       stageUuid: "87f93ff6-6c01-8c61-bf5d-b5553ef8f8f3"
     - stage: uuid
-      stageUuid: "30e5e2cf-4018-88c0-b6f8-3abc82a6c682"
+      stageUuid: "1723fa83-a830-8dc3-b3e5-e3256c1bd8e4"
 version: 2
 ---
 # sector — the model of one [[sectors]] row

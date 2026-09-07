@@ -2,11 +2,11 @@
 name: hold
 description: "Use when reasoning about hold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hold"
-coordinate: "vocabulary/hold · 7/descent · e8b58332"
-contentUuid: "b1895732-20b6-5495-9c99-f01ba2022679"
-diamondUuid: "e560c61c-4e56-8fcb-88f6-7a78898ce794"
-uuid: "e8b58332-5e37-8475-946b-0e7fa5b01653"
-horo: 7
+coordinate: "vocabulary/hold · 4/weave · 2abb62da"
+contentUuid: "0e2316e9-ba0e-5cf5-9a41-111843f6b150"
+diamondUuid: "bc726219-8d97-806a-8060-5556c728fd0a"
+uuid: "2abb62da-8fd6-892c-b90e-3c22648b87c4"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3afb07de-1e27-85ee-941a-36343a777eca"
+  computationUuid: "adcc295f-5559-8b52-8346-fd287164b95d"
   stages:
     - stage: path
       stageUuid: "9e55183f-1432-8131-8c00-822697d54256"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "08b00ac1-1d0a-8034-88df-5167ec3d9b71"
     - stage: horo
-      stageUuid: "5f84fed1-f91b-8bd6-bf14-a036af3365da"
+      stageUuid: "619b42cb-7f8f-8437-9092-5764c7c9bb46"
     - stage: seal
       stageUuid: "5a0a5c2b-927c-87a5-b509-48acde9bf3e5"
     - stage: uuid
-      stageUuid: "c81078b8-50d5-8173-b318-cef59f0c22bc"
+      stageUuid: "b36f099e-f80a-8b86-8e1f-607d60e0633b"
 version: 2
 ---
 # hold

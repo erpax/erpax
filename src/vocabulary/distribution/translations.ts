@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "distribution",
-    "uuid": "5486ead7-b9dd-8ee1-a2aa-e91b5f0385f1",
+    "uuid": "2ce4bee2-ee8c-8885-b167-880cf76c9b73",
     "words": [
       "distribution"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when analyzing data spread — normal/Poisson/exponential distributions, distribution testing (Shapiro-Wilk, Kolmogorov-Smirnov), distribution fitting, distribution-aware statistics (mean vs median), distribution plots/histograms.",
-    "uuid": "2abd86bb-732b-8096-ad39-34c8291ccf52",
+    "uuid": "a90a968f-c237-8d6b-b786-bf1b6bc48011",
     "words": [
       "use",
       "when",

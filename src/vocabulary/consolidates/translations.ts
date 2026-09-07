@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consolidates",
-    "uuid": "45707aef-c2a4-89bc-8b20-f4a5745e6a4e",
+    "uuid": "bca605d8-83ac-887a-aaff-b6cb92099f92",
     "words": [
       "consolidates"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about consolidates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "65bd1295-5afa-850a-8fd6-1f47c06b73a9",
+    "uuid": "c734be7e-61e9-8d71-91a2-92f2384ed392",
     "words": [
       "use",
       "when",

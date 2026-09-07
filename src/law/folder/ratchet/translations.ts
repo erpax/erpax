@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ratchet",
-    "uuid": "e1d0d93c-40a4-8110-a473-d1ba0edee2a9",
+    "uuid": "a017fcbd-701f-8197-bf35-3e25e8e9b4e5",
     "words": [
       "ratchet"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing or lowering a gate ceiling — the Landauer×horo ceiling math and the DOWN-only recompute that emits the sealed snapshot. The emitted artifact is OUTPUT ONLY and is never a hand-edited gate input.",
-    "uuid": "00570977-11ee-8678-9f11-f7746196a9ad",
+    "uuid": "beb641f8-50c0-824d-8555-5399b9eb7079",
     "words": [
       "use",
       "when",

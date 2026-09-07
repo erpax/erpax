@@ -2,10 +2,10 @@
 name: redirect
 description: Use when reasoning about redirect — resolves a requested path against the redirects collection and sends the reader on.
 atomPath: "payload/redirect"
-coordinate: "payload/redirect · 8/crest · cd8df3a3"
-contentUuid: "8be9cb22-22cd-5a55-ad39-089a137a4028"
-diamondUuid: "48f3e780-2aba-8a97-bac3-8ce899e3f1ee"
-uuid: "cd8df3a3-ed1d-8d25-bf0b-0388e5d9a008"
+coordinate: "payload/redirect · 8/crest · d3391357"
+contentUuid: "831c3302-05e6-5f35-ba97-c7e87416ce9d"
+diamondUuid: "446da902-f1d8-89f3-9f26-b33b32411929"
+uuid: "d3391357-00ff-85b1-8652-0bdcf1acca3c"
 horo: 8
 typography:
   partition: payload
@@ -18,7 +18,7 @@ standards:
   - "9110 §15.5.5 404-not-found"
 bindings: []
 signatures:
-  computationUuid: "6dfba0b6-fdd7-8a7d-a767-6684233b9a76"
+  computationUuid: "e5b997a5-227e-8bcd-a56c-3d2ed4c85b46"
   stages:
     - stage: path
       stageUuid: "6eefb95a-e87e-8df2-8d48-0b522f00508b"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "ee89372e-1507-8020-9ad8-2a86489af5ec"
     - stage: horo
-      stageUuid: "1fdd4b15-4dd2-8d60-80b8-683b2b9977cf"
+      stageUuid: "2152042e-d56a-8e61-afb9-c123ab4474b6"
     - stage: seal
       stageUuid: "3bdfd795-b586-8ac9-83c1-38168aec3075"
     - stage: uuid
-      stageUuid: "3b3f1888-4734-8b22-b3ea-86925d5565d8"
+      stageUuid: "6bed260d-1055-8784-8abb-5769a50732d3"
 version: 2
 ---
 # payload/redirect — a moved page answers with its new address, not a 404

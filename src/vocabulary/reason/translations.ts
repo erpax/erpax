@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reason",
-    "uuid": "1f7239d6-f7c6-8b1e-942b-761ae9b69900",
+    "uuid": "df19c4be-26f6-8822-b6c1-d91b410e1215",
     "words": [
       "reason"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when documenting why a state changed — reason for rejection, reason for deletion/archival, reason for payment hold, audit finding reason code. Text or select; audit trail metadata. Captures intent.",
-    "uuid": "206115d1-a4e2-8ef1-b69a-64268c74b837",
+    "uuid": "1d30bbf7-bf17-853f-a73d-d25a88d3d261",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "superficial",
-    "uuid": "35508302-15f9-8a81-983f-77c989c728e2",
+    "uuid": "8bb7fa37-dfb9-8033-b9c2-811490de3a99",
     "words": [
       "superficial"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about superficial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "334a3b52-c82d-8d99-992e-28526070dece",
+    "uuid": "3dcebca6-8a50-8ba3-a185-791e50fd652c",
     "words": [
       "use",
       "when",

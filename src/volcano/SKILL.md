@@ -2,11 +2,11 @@
 name: volcano
 description: "Use when reasoning about volcano — A volcano, like Fujisan."
 atomPath: volcano
-coordinate: "volcano · 2/share · 0042c3d0"
-contentUuid: "1799b59a-c536-5018-a14b-0cc2ff2e2565"
-diamondUuid: "2ead4c89-f58c-894a-bbb1-3d0d6b32b490"
-uuid: "0042c3d0-912d-8f54-95af-133db69ba94d"
-horo: 2
+coordinate: "volcano · 4/weave · 91c983df"
+contentUuid: "011c83f6-f04b-51f2-93a3-2a3cfa51217e"
+diamondUuid: "d29766ae-6f07-822a-8994-e15305b8574d"
+uuid: "91c983df-ad0d-8436-85ea-105305244e6d"
+horo: 4
 typography:
   partition: volcano
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0c5fc8a3-e071-8626-80ad-1eb51ae05e36"
+  computationUuid: "549b8520-a18b-85da-9a13-f04b3a5826e7"
   stages:
     - stage: path
       stageUuid: "fb7a9e41-f74d-877b-b24f-c15a0c1f3758"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b5fd064c-9177-8d43-82f4-0d4f8368b5ac"
     - stage: horo
-      stageUuid: "5d8442d8-9901-80c4-815a-40250c2b6c84"
+      stageUuid: "7dae371b-27db-872d-8de4-fbf4b28ffad2"
     - stage: seal
       stageUuid: "2fd9b398-bf42-8894-89af-6004caecc3fa"
     - stage: uuid
-      stageUuid: "e720e83e-812e-857f-a64f-da4b8bead42e"
+      stageUuid: "e15afd96-6f92-8043-b7a7-c907cf3f57e1"
 version: 2
 ---
 # volcano

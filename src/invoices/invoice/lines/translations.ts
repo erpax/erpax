@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lines",
-    "uuid": "7f9e2bd0-b57d-8424-ad5b-a20c77a4cc65",
+    "uuid": "db525245-2e9d-8e70-ac7d-cb704c0f9331",
     "words": [
       "lines"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection.",
-    "uuid": "31d30329-a495-8768-8f6b-c0696f9be58f",
+    "uuid": "ae2b963f-b9e3-8e74-ae5f-7384f322cee9",
     "words": [
       "use",
       "when",

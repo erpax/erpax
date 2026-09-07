@@ -2,11 +2,11 @@
 name: journals
 description: "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register."
 atomPath: "gl/accounts/recurring/journals"
-coordinate: "gl/accounts/recurring/journals · 5/round · e85823d9"
-contentUuid: "af0a579f-323a-5cea-bef2-81ccd054c146"
-diamondUuid: "68ef4173-ea63-8494-bfae-b6e47391c5c1"
-uuid: "e85823d9-50a2-8734-b841-02ccf2b02aff"
-horo: 5
+coordinate: "gl/accounts/recurring/journals · 1/base · b64e0b3e"
+contentUuid: "e5065dab-6123-586c-a9ab-cedc8c17da62"
+diamondUuid: "fbdd03d9-d2e0-8ee8-b64b-8bd77cda82f6"
+uuid: "b64e0b3e-40dd-8b7b-9fd6-490c34d94bf4"
+horo: 1
 typography:
   partition: gl
   bondDegree: 25
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4220733e-d694-8b99-a608-ca9089b55766"
+  computationUuid: "ee735f56-59ad-8c44-a409-cedf2c84524c"
   stages:
     - stage: path
       stageUuid: "994bc4fc-e135-865b-b66d-a47a86410297"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "0c796456-2a98-8e71-aba3-ad42b340a2e2"
     - stage: horo
-      stageUuid: "dd163843-0ec9-8041-b3d3-ce79abbd33e4"
+      stageUuid: "4c72b546-36ca-871b-a2e8-906810a4f91c"
     - stage: seal
       stageUuid: "e218d9ee-bb29-8993-b06a-9920dffcdb8a"
     - stage: uuid
-      stageUuid: "aef3a2d4-7b7c-8dd6-90d0-695d6fb0da82"
+      stageUuid: "512907c4-9125-838a-b1dd-e3756162063b"
 version: 2
 ---
 # recurring-journals

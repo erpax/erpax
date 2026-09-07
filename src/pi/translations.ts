@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pi",
-    "uuid": "1e893b0a-a083-8be3-9f57-0ac5dfebe846",
+    "uuid": "42ce3de0-ace1-8dfb-8b31-f5477dfb2059",
     "words": [
       "pi"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when π must be read as a theorem, not a hardcoded constant — the purest rosetta: a finite seed (3), a fold (the point), and an infinite tail computed at every step. The Bailey–Borwein–Plouffe formula computes the n-th hex digit directly, no prior digits — answered within, read not stored. Even the infinite is a fold of the finite; theorems replace hardcoded values, all the way to π.",
-    "uuid": "fb0d78f6-9da0-8ebd-8f3b-813f03eb053d",
+    "uuid": "87cd74f9-2b47-870b-89f1-30cfc4cd7ca1",
     "words": [
       "use",
       "when",

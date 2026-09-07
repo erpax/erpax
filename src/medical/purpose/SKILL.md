@@ -2,10 +2,10 @@
 name: purpose
 description: "Use when reasoning about purpose as a medical facet of medical — vocabulary pivot to @/purpose; nested not duplicated."
 atomPath: "medical/purpose"
-coordinate: "medical/purpose · 2/share · ed37c911"
-contentUuid: "22704531-83b9-5c1b-a406-34feba64d29b"
-diamondUuid: "5198d796-8926-83ba-b566-b5addebbc2d2"
-uuid: "ed37c911-af82-8b80-9a5d-93f5720f1f64"
+coordinate: "medical/purpose · 2/share · b9137d0d"
+contentUuid: "df928b68-272f-52bd-aa29-b5770f4586f1"
+diamondUuid: "eff8d5ae-9152-8323-87f5-7005aec1f2b3"
+uuid: "b9137d0d-9322-8d59-9a66-9063dd79c465"
 horo: 2
 typography:
   partition: medical
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8712105d-03b9-84a9-ad29-2879a78f1e1d"
+  computationUuid: "4cbcda59-d616-8280-8cae-68e4a7d17604"
   stages:
     - stage: path
       stageUuid: "58cc953b-68db-8c90-ae9e-32c14e522f70"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ec6b7fc7-870f-8f6c-9d80-8a28a3c89d97"
     - stage: horo
-      stageUuid: "8a144e14-25d0-8e81-9a76-63c9390b4015"
+      stageUuid: "7bd246a3-69d8-834b-a59c-8554a03ca01b"
     - stage: seal
       stageUuid: "2bbf0319-b767-8241-95ad-7a5ecc1a8451"
     - stage: uuid
-      stageUuid: "0e9a9a3e-0a78-8e47-b12e-282375c2bb4a"
+      stageUuid: "cce4db3f-c5b3-8a58-a77d-6c4947a9b5a3"
 version: 2
 ---
 # medical/purpose — medical facet

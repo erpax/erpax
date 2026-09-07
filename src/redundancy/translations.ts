@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "redundancy",
-    "uuid": "fca7c23e-a61f-8faf-b23e-a6cd6c4bbf76",
+    "uuid": "2d59efd9-cc0f-8bf5-86b7-8b6f61fc0ab0",
     "words": [
       "redundancy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about redundancy — the structure in a code, R = 1 − H/H_max: the fraction of the channel not carrying fresh information because the wiring constrains it. Zero for a maximal-entropy (uniform, incompressible) source; high when symbols are predictable from each other. In erpax redundancy IS coverage: wiring every dimension makes each input determined by and checkable against the whole, and that redundancy is exactly what detects tamper — redundancy → 1 ⇔ coverage → 1 ⇔ tamper-cost toward its +∞ limit.",
-    "uuid": "ef7de47c-0be8-8f43-a06c-e4d9f51c8fe8",
+    "uuid": "85c440fe-fb51-81db-a762-f14a12be5963",
     "words": [
       "use",
       "when",

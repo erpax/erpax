@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "manifest",
-    "uuid": "51679dc0-15f7-83cb-a6ee-89fb7e886c8b",
+    "uuid": "596159ce-1bf8-8270-be1a-00adc8d9d2cd",
     "words": [
       "manifest"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a change touches many files at once — a mass edit carries a scalpel manifest naming the reason for every cut, or it is a blind sweep and is refused. Measures the DOOR rather than the discipline, because the scalpel already makes this class of damage impossible (unique-match-or-refuse, reasonless ops refused, collisions named, a red batch restored to the byte) and it changed nothing while it stayed optional: in one session, hand-rolled sweeps spliced an import into a doc comment, left 3,184 SKILL.md half-written, and reverted the work a keep-list was written to preserve.",
-    "uuid": "07bdcdc6-012e-8202-8a77-22d5ee923636",
+    "uuid": "1ed5f79c-b228-896f-82ac-eace082514f1",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: entries
 description: "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3."
 atomPath: "journal/entries"
-coordinate: "journal/entries · 1/base · a0863c7f"
-contentUuid: "21cef437-5ccd-5659-b76b-c6a7f9c9af76"
-diamondUuid: "966752df-b47d-85e3-981a-1e13575a0e04"
-uuid: "a0863c7f-e49e-8cbf-9962-ac4173230816"
-horo: 1
+coordinate: "journal/entries · 7/descent · 22ef673d"
+contentUuid: "dd09b937-4a6c-5b8d-9640-a4c39a149302"
+diamondUuid: "6f3a07f3-e6e3-8492-8d87-ad7af9763bc7"
+uuid: "22ef673d-e271-8b3b-959e-dac14e2aa21c"
+horo: 7
 typography:
   partition: journal
   bondDegree: 107
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f155642b-c104-803e-96fa-75376cac6f15"
+  computationUuid: "e03bfd76-23fc-821a-968f-3a0f793607ca"
   stages:
     - stage: path
       stageUuid: "e1568b51-9231-8c31-b451-33e00acace8d"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "d8a582b9-24ef-8760-a424-e9bb0b3974d0"
     - stage: horo
-      stageUuid: "84a0abee-bcbe-801f-b86b-65006d139f99"
+      stageUuid: "f4ee8660-e9fb-8bcb-bb6f-2eac6b7a1def"
     - stage: seal
       stageUuid: "a6185d99-fa65-85ac-aaa5-9d065a99b5aa"
     - stage: uuid
-      stageUuid: "66d5cfd4-8f3e-8502-b9d2-b4c35616fa3e"
+      stageUuid: "25420aa5-5bad-8ef6-b908-4228546fa360"
 version: 2
 ---
 # journal-entries

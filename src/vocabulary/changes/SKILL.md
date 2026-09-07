@@ -2,10 +2,10 @@
 name: changes
 description: "Use when reasoning about changes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/changes"
-coordinate: "vocabulary/changes · 8/crest · d472b5d6"
-contentUuid: "55308a37-b012-5df0-859f-acf83e4b7d03"
-diamondUuid: "6f2b1465-8220-8009-82a2-da761cadad66"
-uuid: "d472b5d6-2c78-8431-bc48-b61afc1f0d93"
+coordinate: "vocabulary/changes · 8/crest · 8d85dc89"
+contentUuid: "9a175b7f-2c9d-5245-b3c4-8efb5bd0d076"
+diamondUuid: "3c2049cc-58f3-89e5-9586-f94e11c910f3"
+uuid: "8d85dc89-53a4-8b15-88d4-a8e12d32f895"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff97bd39-8527-81b4-9b39-81f36cead298"
+  computationUuid: "37524dd1-5b43-8df3-b8b3-825012e669f0"
   stages:
     - stage: path
       stageUuid: "4481ad43-5e8d-81f1-af69-9b2d0382a199"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7f262922-b903-82c3-b81d-90014e70e191"
     - stage: horo
-      stageUuid: "fca8e6cd-897a-8abc-b7ae-3a70bcb1f969"
+      stageUuid: "5a2ac7ee-3239-8975-a8eb-9299eae28606"
     - stage: seal
       stageUuid: "64d1a389-baff-86ae-9480-820f3021a69e"
     - stage: uuid
-      stageUuid: "a4c159a6-7849-82c6-b4f4-7cb24867f581"
+      stageUuid: "13f577ff-0119-89a5-9923-f7740c96fb09"
 version: 2
 ---
 # changes

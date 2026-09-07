@@ -2,10 +2,10 @@
 name: customers
 description: "Use when creating or querying the sale-side party master — customer identity, LEI, IBAN, VAT classification, credit limit, payment terms, accounts-receivable exposure, and GDPR consent. The EN-16931 buyer party collection."
 atomPath: customers
-coordinate: "customers · 7/descent · cf7b4384"
-contentUuid: "5b7f880f-031e-571d-9e37-96cb086b7b10"
-diamondUuid: "453002b4-6e3b-8921-8027-6086e092d96e"
-uuid: "cf7b4384-2462-8a7c-a956-f62b78b1fb09"
+coordinate: "customers · 7/descent · cb2a6345"
+contentUuid: "08bc948a-ea4e-535f-98ec-1fea54dd1a99"
+diamondUuid: "eaeb54b5-fbd8-8911-bec8-1bf3441114ba"
+uuid: "cb2a6345-d608-8ceb-99c8-560f47d29b96"
 horo: 7
 typography:
   partition: customers
@@ -48,7 +48,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "500e702b-a928-8a20-b427-489699cb7dc7"
+  computationUuid: "542a5daf-08de-8770-99a4-d36ba52d08c0"
   stages:
     - stage: path
       stageUuid: "06e2401f-1cb1-8548-a990-755d31d88436"
@@ -59,11 +59,11 @@ signatures:
     - stage: links
       stageUuid: "76a0cd85-c851-88fd-a4e3-0e34bda9597b"
     - stage: horo
-      stageUuid: "48bae429-4df5-87f2-87cc-67d8dc520071"
+      stageUuid: "e76b3431-539b-8fcb-b992-412fff9a6bf3"
     - stage: seal
       stageUuid: "33e367e0-80b1-8bf7-bd57-25b0c02220c7"
     - stage: uuid
-      stageUuid: "ada4da90-6a81-8c4f-aded-15e9590a6dfb"
+      stageUuid: "4696359e-bd83-8a41-9f99-e5599bbb1d37"
 version: 2
 ---
 # customers

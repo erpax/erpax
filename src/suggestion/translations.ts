@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suggestion",
-    "uuid": "736775b4-475d-89a6-9596-e0f27ee349e9",
+    "uuid": "fa8753a5-c783-89dc-8840-b40ffa6064e0",
     "words": [
       "suggestion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one suggestion — the singular model of the suggestions collection (the plural store); a proposed change offered for consideration.",
-    "uuid": "83fc5957-ccb7-8f80-93af-7f5144ae85c1",
+    "uuid": "b303770e-1030-8cb7-8f1f-d90ff78daf95",
     "words": [
       "use",
       "when",

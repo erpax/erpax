@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ofmech",
-    "uuid": "4ff74115-7ea5-88c0-9a3b-5fa64c33f670",
+    "uuid": "cb9ab816-ada6-8615-8c74-e204ddfa8e6b",
     "words": [
       "ofmech"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ofmech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "44f0f85f-aa93-8608-9216-51d4983456e6",
+    "uuid": "c09ebdea-65d1-8af2-99fb-fd2c5187d21d",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "form",
-    "uuid": "7bb65790-7036-812e-bf76-78d83da32ee0",
+    "uuid": "79770670-d895-8254-a4a4-825d12774edc",
     "words": [
       "form"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about form — A CMS form is data: an editor picks field types, and something must turn each stored into a component. is that map, and it is the whole of this atom's authority.",
-    "uuid": "b59a3293-2faa-8ef6-93d0-eab96c6969a1",
+    "uuid": "f8b1347e-32a0-8de7-84b4-241b7b5a858f",
     "words": [
       "use",
       "when",

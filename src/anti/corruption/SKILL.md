@@ -2,11 +2,11 @@
 name: corruption
 description: "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable."
 atomPath: "anti/corruption"
-coordinate: "anti/corruption · 8/crest · f6fede56"
-contentUuid: "3793f848-47f1-57da-95af-4daa97f1d8f6"
-diamondUuid: "5d354923-36cb-8159-9654-c645e7162548"
-uuid: "f6fede56-61ca-83e0-b03b-1ee1dcaa434e"
-horo: 8
+coordinate: "anti/corruption · 5/round · 776b0884"
+contentUuid: "aa18565f-25ca-5f41-85fe-82abd1e9fa8e"
+diamondUuid: "6087564e-dcfe-8c3f-8010-e8c86ac224e7"
+uuid: "776b0884-b348-8b54-beb1-7c3704ed9a18"
+horo: 5
 typography:
   partition: anti
   bondDegree: 62
@@ -19,7 +19,7 @@ standards:
   - "SOX §404 segregation-of-duties internal-controls"
 bindings: []
 signatures:
-  computationUuid: "22ccc1d8-02ab-883b-a4b2-0a28f6737ec7"
+  computationUuid: "5c143767-791a-8416-a90f-06c357947302"
   stages:
     - stage: path
       stageUuid: "29d53fec-2df7-8ef3-b27b-76fdbd140708"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "95c594ce-539f-84a9-8062-deea5da92d05"
     - stage: horo
-      stageUuid: "99bdf274-16e7-8ad5-8248-5e2c6e55404c"
+      stageUuid: "14c73952-cd3d-8c79-8a1d-26719a95913f"
     - stage: seal
       stageUuid: "e21c760a-79f7-8a0b-baad-c61cfdef37a5"
     - stage: uuid
-      stageUuid: "ac880916-5d39-838c-bc38-eecf51994f77"
+      stageUuid: "591e055d-6d72-87da-b7f0-3a4fa03365c8"
 version: 2
 ---
 # anti-corruption — corruption foreclosed by construction, not policed by policy

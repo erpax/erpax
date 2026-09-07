@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "probe",
-    "uuid": "5afc93f2-e7ac-83a1-9cbe-ad18e907cc01",
+    "uuid": "3d2c4726-d62d-87b0-a553-3600a22e1c4b",
     "words": [
       "probe"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about probe — For a React atom the answer is **yes** and this returns **no**. Its barrel is , because JSX does not parse from a file — that is not a stylistic variant, it is the only spelling…",
-    "uuid": "d564afa1-3b99-8b28-8be4-db16f30aaf14",
+    "uuid": "d9f06e8b-1ecd-8026-88c9-657df05d3d56",
     "words": [
       "use",
       "when",

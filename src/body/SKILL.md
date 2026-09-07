@@ -2,10 +2,10 @@
 name: body
 description: "Use when reasoning about erpax as ONE organism — the eight organs harmonized into a body. Each organ is sent through the wave mechanism; its horo position sounds a note and a colour (A432); composed, the organs span the full diatonic spectrum and rest at unity (the closing wave). The body harmonizes ⟺ every organ healthy ⊕ full-spectrum chord ⊕ folds to unity — wholeness renders as harmony, a failing organ as dissonance."
 atomPath: body
-coordinate: "body · 2/share · 42818cbb"
-contentUuid: "6d873a02-768c-564e-80be-c517fe00f664"
-diamondUuid: "2e71fd20-4503-88f4-b456-b1263e6296e6"
-uuid: "42818cbb-e4bb-844d-9c8f-45bcd3855c05"
+coordinate: "body · 2/share · d9d1ea53"
+contentUuid: "984aedbb-c10a-5cd7-a4bb-458c6f2dc428"
+diamondUuid: "d3f5999d-2487-8b02-b827-9de2bc3c9a5b"
+uuid: "d9d1ea53-f88a-8e4e-8988-11575764c971"
 horo: 2
 typography:
   partition: body
@@ -15,7 +15,7 @@ standards:
   - "the A432 just-intonation diatonic ring — the seven horo positions as the seven notes"
 bindings: []
 signatures:
-  computationUuid: "43207f63-1503-88bb-a71e-9e0a56d11bd8"
+  computationUuid: "56ca5d2a-aebe-8cd4-8882-9197859baefe"
   stages:
     - stage: path
       stageUuid: "25cbb789-1b68-87df-9521-3a78713c0542"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8154f2a0-0d15-8789-95f3-37e177188a33"
     - stage: horo
-      stageUuid: "9fdae81f-2b00-8ea5-8cc8-131f284fd170"
+      stageUuid: "12cfcbf9-2d43-8021-ac41-c6ae2b249b59"
     - stage: seal
       stageUuid: "80789d40-7b03-8f3a-a949-059c907b7ee2"
     - stage: uuid
-      stageUuid: "54337707-7e62-8e1a-a0af-cc11c25367af"
+      stageUuid: "74f25a1e-f046-84e2-ad50-25eb3c0cf023"
 version: 2
 ---
 # body — the organs harmonized (one organism)

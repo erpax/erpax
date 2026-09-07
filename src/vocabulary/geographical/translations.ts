@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "geographical",
-    "uuid": "e8190858-902e-8f87-b29c-709fe5f785f1",
+    "uuid": "3241ee27-8ec6-8dd0-940c-c8a35174fda1",
     "words": [
       "geographical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about geographical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "388162b6-5a82-82a3-b627-4d9c5381f028",
+    "uuid": "84d5de3e-2b71-8113-9769-808e59448dc8",
     "words": [
       "use",
       "when",

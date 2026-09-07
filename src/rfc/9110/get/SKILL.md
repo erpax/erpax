@@ -2,10 +2,10 @@
 name: get
 description: "Use when reading a cached document, global or redirect set under RFC 9110 §13 — the read side of the HTTP caching layer, one module per resource kind."
 atomPath: "rfc/9110/get"
-coordinate: "rfc/9110/get · 7/descent · a810e31f"
-contentUuid: "63bdb505-2d7f-5274-a4f2-ef9fa071efef"
-diamondUuid: "53fae5f9-eba7-8740-908a-f0b6e7320e7a"
-uuid: "a810e31f-1fc0-863b-bbf2-7294ec0e8297"
+coordinate: "rfc/9110/get · 7/descent · 141abba0"
+contentUuid: "32e95b5f-c6fc-5e7e-b30d-338729e52683"
+diamondUuid: "ae9872b0-989b-82bf-9b84-37dd6d968263"
+uuid: "141abba0-28c9-87b9-8497-40ad66fd0803"
 horo: 7
 typography:
   partition: rfc
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8418a050-a456-8923-8942-2ae021d452c9"
+  computationUuid: "2e0b8811-e0bf-8cf4-b3db-6b8bc690f5f5"
   stages:
     - stage: path
       stageUuid: "ba2553ce-d658-8057-a4a3-f22f775a7d82"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8506cc5e-8f33-868c-9284-f23e76365876"
     - stage: horo
-      stageUuid: "6e7c0793-edc2-8903-9543-6f869f7bc74e"
+      stageUuid: "f736437d-b8c6-8ba4-8ef3-e712e2a6a64f"
     - stage: seal
       stageUuid: "41be289b-09f9-865a-b5aa-16f648652afd"
     - stage: uuid
-      stageUuid: "fc6562f2-dc02-82ea-b418-235695a087fd"
+      stageUuid: "c43a3995-045c-8133-a87e-00e5b2be1188"
 version: 2
 ---
 # get

@@ -2,10 +2,10 @@
 name: commitments
 description: "Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection."
 atomPath: commitments
-coordinate: "commitments · 2/share · d6e3c539"
-contentUuid: "5340f140-b801-5cf8-b9d4-d3a3a50d49ee"
-diamondUuid: "5b06815f-7e38-84b9-8cbb-3be026b7b947"
-uuid: "d6e3c539-2ae7-8b10-9c36-4db49b7c3c64"
+coordinate: "commitments · 2/share · 58763765"
+contentUuid: "1e3e4ecb-67cb-5809-80da-c4bce1a82202"
+diamondUuid: "9c913edf-16d1-8d76-adf8-b5103ead1d05"
+uuid: "58763765-6a4f-817e-a4bf-7f34884487f0"
 horo: 2
 typography:
   partition: commitments
@@ -31,7 +31,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7a276dcc-1885-8bec-97b4-f9d03e72494c"
+  computationUuid: "503814fd-e62d-8248-a109-262433a8a48f"
   stages:
     - stage: path
       stageUuid: "6b454458-5665-8fda-a6ae-b53b3ef171db"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "2c6db537-bfc3-814b-8a5a-88a457198bdc"
     - stage: horo
-      stageUuid: "0cdca65e-6706-8a39-a849-18025a63db76"
+      stageUuid: "aaacc47e-f333-845a-bc6c-c70e4f21852e"
     - stage: seal
       stageUuid: "0b09f723-83d6-86a7-acac-4b1a62ff3677"
     - stage: uuid
-      stageUuid: "3a095fdc-f3f2-8abf-8793-27021a07a53e"
+      stageUuid: "b2919e7d-508a-8694-8af9-2e37105d9799"
 version: 2
 ---
 # commitments

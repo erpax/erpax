@@ -2,11 +2,11 @@
 name: disambiguating
 description: "Use when reasoning about disambiguating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/disambiguating"
-coordinate: "vocabulary/disambiguating · 2/share · d5db1de9"
-contentUuid: "0ca620f0-3d90-52e4-a7b0-f1b7fe4bbefc"
-diamondUuid: "928a645e-4fcc-8b39-8240-e2fe16927839"
-uuid: "d5db1de9-5af2-85ad-903d-40b7760f1072"
-horo: 2
+coordinate: "vocabulary/disambiguating · 8/crest · 73db5778"
+contentUuid: "817c6425-6229-5632-a015-d5227063c591"
+diamondUuid: "0478a764-3136-8509-b421-ae360fea35b3"
+uuid: "73db5778-3946-8186-9654-226c2357618b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7b0bca92-2737-8169-a524-68043c60059b"
+  computationUuid: "e90d04da-3c23-80da-9e58-f0cc59912ae1"
   stages:
     - stage: path
       stageUuid: "dfb7cf69-8e8e-8204-8dde-eb3798cd2ee8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "df5689fb-e6b1-89dc-974c-14a75f0a41cd"
     - stage: horo
-      stageUuid: "6ce80fca-fe1e-83d2-97ad-4e1c6cf773b6"
+      stageUuid: "b899a303-f1b4-8b1f-9278-b5879705a094"
     - stage: seal
       stageUuid: "5498d633-b3c4-8d74-8dcd-f01cfe39f3cf"
     - stage: uuid
-      stageUuid: "52b2e561-7e0a-8e00-944d-7fc47a9e630b"
+      stageUuid: "44be859f-ab2a-8a5b-bebd-04ee264362d7"
 version: 2
 ---
 # disambiguating

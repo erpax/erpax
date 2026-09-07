@@ -2,11 +2,11 @@
 name: versions
 description: "Use when managing the version history of an internal policy — release date, version number, change log, document upload, lifecycle draft→final→superseded; ISO 9001 documented-information control per policy. The policy-versions collection."
 atomPath: "internal/policies/policy/versions"
-coordinate: "internal/policies/policy/versions · 1/base · 3404e9b5"
-contentUuid: "3d547e47-27b4-5d9e-8bcc-a24cd88abb71"
-diamondUuid: "539aa1a1-9db4-8500-94bf-865d95a45743"
-uuid: "3404e9b5-b816-8678-9196-6851d9e96519"
-horo: 1
+coordinate: "internal/policies/policy/versions · 4/weave · ba1bd9bd"
+contentUuid: "f013a52b-5c2d-5cba-9208-8d23644d77a0"
+diamondUuid: "f37b8bd1-0d74-82ec-b05f-73f65994c4b6"
+uuid: "ba1bd9bd-f6f1-805d-bf6a-8006a72c55fc"
+horo: 4
 typography:
   partition: internal
   bondDegree: 106
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "21ecb19d-a020-85aa-9fa5-31f8dbca3fc3"
+  computationUuid: "56f1732c-202a-88a4-8c93-b10875efcacb"
   stages:
     - stage: path
       stageUuid: "a2878ec1-c87a-8ec5-b919-02bca65a9fe6"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "4763a7c6-cddd-829f-8957-74074507b8c6"
     - stage: horo
-      stageUuid: "c77a3d65-d197-8cbc-b266-7e954abbd820"
+      stageUuid: "d308005a-ae1e-8394-b731-ac63ccd2bb88"
     - stage: seal
       stageUuid: "471cd203-563a-8092-bae0-f351c3453234"
     - stage: uuid
-      stageUuid: "9e8298d3-b964-84f4-94dd-c84d2799b66a"
+      stageUuid: "abc668fc-edbf-8a35-a885-fe4a58bf0ea6"
 version: 2
 ---
 # policy-versions

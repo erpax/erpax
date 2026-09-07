@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "envelope",
-    "uuid": "58ee0383-66e8-849d-8102-6121ae6debd7",
+    "uuid": "02791d00-2e8c-8832-afeb-25bc887414ce",
     "words": [
       "envelope"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about envelope — Envelope encryption keyed by content-uuid — the at-rest companion to `SignedUuid<T>`.",
-    "uuid": "11978ba8-0355-8fbc-8cb0-9949707a28c3",
+    "uuid": "8ae9c131-d6ca-8791-8e7d-3d1fd764fc18",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: special
 description: "Use when reasoning about special as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: special
-coordinate: "special · 4/weave · c96092d0"
-contentUuid: "25ccc19c-aa82-5237-a38f-7d973766721c"
-diamondUuid: "b6da3547-c282-874f-864b-d2ddcbacb9a5"
-uuid: "c96092d0-a135-84c1-b253-7116b58e223f"
-horo: 4
+coordinate: "special · 8/crest · 2f2ebe95"
+contentUuid: "3271c926-88ad-5056-ae42-73e86e90715d"
+diamondUuid: "b3f55b2b-e1bf-8a0c-9a55-ae14725abd7d"
+uuid: "2f2ebe95-947a-8d7a-9d1c-5454c9c13172"
+horo: 8
 typography:
   partition: special
   bondDegree: 39
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cdd91d3b-b458-823a-89a5-fe0abfdbbbd1"
+  computationUuid: "e24b5509-1222-8f66-941f-9a81f4a1a463"
   stages:
     - stage: path
       stageUuid: "9c4492a0-a6d5-800a-a772-62f2508e083e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f8c64672-354f-8a5f-afd7-a5ca7f1965b2"
     - stage: horo
-      stageUuid: "f2f1969d-8bf5-8ef3-a6de-a15ba245b87a"
+      stageUuid: "91759df6-fdf7-8a26-b449-36c97a366194"
     - stage: seal
       stageUuid: "8572bf9e-3a6a-8715-afc6-fdae69449bba"
     - stage: uuid
-      stageUuid: "dfec4ebd-846a-8cd6-95ae-a7e90df224a5"
+      stageUuid: "687a6ffc-2800-85f7-b222-4d43299104b0"
 version: 2
 ---
 # special

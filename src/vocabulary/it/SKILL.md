@@ -2,10 +2,10 @@
 name: it
 description: "Use when reasoning about it as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/it"
-coordinate: "vocabulary/it · 5/round · 3b27ac69"
-contentUuid: "dd2d32c0-a335-5450-a463-85534c5e2fdd"
-diamondUuid: "3466abf0-b08a-81e6-a9e9-cdcabf77ed32"
-uuid: "3b27ac69-1cd9-8d51-af5e-d3ec3c5ed8a5"
+coordinate: "vocabulary/it · 5/round · 52094394"
+contentUuid: "2a515415-1902-55b9-ab89-dc00df09a710"
+diamondUuid: "8cf8e6f9-8c33-8e35-b9d3-c0c034384736"
+uuid: "52094394-4b34-860f-bc96-133684994043"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "42c059d9-4dac-8c4f-a46f-3ff7a034b531"
+  computationUuid: "a4315782-9ba9-809b-ab75-83917c23f082"
   stages:
     - stage: path
       stageUuid: "6f00ac25-8d87-875e-9388-77cd3675582c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f1d41a99-f573-8bbc-875e-0dded5781a99"
     - stage: horo
-      stageUuid: "dc0097d9-0479-8555-abe9-6f93206eda63"
+      stageUuid: "510302cc-cdb8-813c-bc4d-91c7834f10d9"
     - stage: seal
       stageUuid: "c77c8677-4648-8ed4-8e0e-30a4ecdb5cc6"
     - stage: uuid
-      stageUuid: "7ca1ccb8-ae05-807e-bcd5-e9d5f95bfcaf"
+      stageUuid: "740172f5-ad0b-83b9-833d-462b6f908e4f"
 version: 2
 ---
 # it

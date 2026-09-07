@@ -2,10 +2,10 @@
 name: hooks
 description: "Use when reasoning about the media collection's Payload hooks — before/after change and validate logic for media."
 atomPath: "media/hooks"
-coordinate: "media/hooks · 3/3 · 23ee3068"
-contentUuid: "68ece225-bb76-5507-9ca9-df117a16e578"
-diamondUuid: "3d156c96-9005-8141-9a67-2f9c1c0779a2"
-uuid: "23ee3068-2f03-8224-8990-993616151c45"
+coordinate: "media/hooks · 3/3 · 85dccb10"
+contentUuid: "e22e8d9d-a817-5d64-91d9-6bc79b9f793d"
+diamondUuid: "3607f295-7ddb-85ca-b039-1bc6d6033518"
+uuid: "85dccb10-33fc-888f-8c0f-46b0dec890a5"
 horo: 3
 typography:
   partition: media
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0fdb0f53-9d97-86e8-a90c-37c2dfb2b84f"
+  computationUuid: "6f69fcfc-ed49-8380-a3f9-a27caa8decd5"
   stages:
     - stage: path
       stageUuid: "c3f37baf-a1ad-85b4-af81-4b747d9ca2b7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "03ed7aa4-162b-811d-ad72-2886d67c19a2"
     - stage: horo
-      stageUuid: "1b53ed99-3e1d-8c69-b6ac-1aaf660d276c"
+      stageUuid: "f481dae3-3c82-86b6-aeec-d467bd266eeb"
     - stage: seal
       stageUuid: "d1b93627-a508-8cad-97a9-1c1438150be6"
     - stage: uuid
-      stageUuid: "97862ea1-00f0-818c-9936-49dbc414d636"
+      stageUuid: "996fe023-833c-8725-a181-c49a6eed3efc"
 version: 2
 ---
 # media/hooks

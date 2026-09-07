@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hostel",
-    "uuid": "fc45db31-6260-8be5-8b6c-1a5e6f70005b",
+    "uuid": "80bc3f27-b466-8c34-90b6-9e038fcf1f25",
     "words": [
       "hostel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hostel — A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
-    "uuid": "cbd81bef-abba-89fa-84b1-97057589c076",
+    "uuid": "98cd8d2f-122f-8b1c-aaba-01967c688b98",
     "words": [
       "use",
       "when",

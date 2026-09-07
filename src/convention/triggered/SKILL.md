@@ -2,11 +2,11 @@
 name: triggered
 description: "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \"Use when\", measured live as coverage = triggered / total over the real tree."
 atomPath: "convention/triggered"
-coordinate: "convention/triggered · 1/base · 0800f403"
-contentUuid: "0344d03f-b751-5f32-8eba-02c45039c114"
-diamondUuid: "0f7c57fd-3160-8595-92b1-bc98042b9d63"
-uuid: "0800f403-a082-80a8-b9b6-053e8ba6ecf2"
-horo: 1
+coordinate: "convention/triggered · 2/share · 81f9701d"
+contentUuid: "91b27a15-0f99-5a85-bce2-e4a5421679da"
+diamondUuid: "880f208b-da90-8f69-931b-2480af8cdd0a"
+uuid: "81f9701d-971f-88e7-9815-52ca355ada23"
+horo: 2
 typography:
   partition: convention
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "af1dbc74-1053-8850-a3c4-608234087818"
+  computationUuid: "1d97e557-7eb8-87c0-b3d2-bc838b4ed0ad"
   stages:
     - stage: path
       stageUuid: "50fbb304-aea5-83aa-ae03-10ca7788f7e9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8e91103a-fa1b-8c16-b343-db128e24801b"
     - stage: horo
-      stageUuid: "c3825693-b293-8b68-8535-ce42cb509469"
+      stageUuid: "8b01aa90-b271-8ad1-bca8-acb0db65f5c7"
     - stage: seal
       stageUuid: "1d71eec3-8245-8476-89c6-d86e2b52c825"
     - stage: uuid
-      stageUuid: "04d5076a-e8ca-8b24-9346-64f16053962d"
+      stageUuid: "51606c39-7e82-860c-b9d4-2fdc9ff7128a"
 version: 2
 ---
 # convention/triggered — every SKILL description is a Use-when trigger

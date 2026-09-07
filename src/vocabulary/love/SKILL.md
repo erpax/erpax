@@ -2,10 +2,10 @@
 name: love
 description: "Use when reasoning about the create pole of any erpax duality — love is the angelic move that LOWERS entropy (it orders, links, merges, closes a gap), the debit whose matching credit is fear in the karma ledger; every gap love closes raises tamper-cost."
 atomPath: "vocabulary/love"
-coordinate: "vocabulary/love · 1/base · aa22b6ba"
-contentUuid: "4976296d-cbb8-5380-9322-f3152eab5b5e"
-diamondUuid: "b8071efb-977b-8d26-a643-eaacebf2259a"
-uuid: "aa22b6ba-ebc8-82e3-8723-4e64a12fd6c2"
+coordinate: "vocabulary/love · 1/base · 703a1fe3"
+contentUuid: "2a9baaae-d0a5-55d6-91a7-41bc58d12476"
+diamondUuid: "8b98d065-d338-81be-93ab-edc9c22e4e7e"
+uuid: "703a1fe3-b03f-8eae-b1a2-5d88f91a715f"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "764d6299-2bcf-84b1-a6af-3c43f2ab621c"
+  computationUuid: "a327eb18-1215-833b-8808-56f4330d6c41"
   stages:
     - stage: path
       stageUuid: "9fc9a283-ae66-8abf-9cfa-c21b22c15d12"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "823427e0-cba2-8618-a10c-fa104be7eaf7"
     - stage: horo
-      stageUuid: "5e514de7-66c9-8355-8bff-c4b70f55d224"
+      stageUuid: "d98185ad-c2ef-8873-bb6f-0d47aa5afd0c"
     - stage: seal
       stageUuid: "636fe71f-3b20-8229-aaab-bdbbf6ecce19"
     - stage: uuid
-      stageUuid: "fd750ce2-c749-8c49-9694-82d7fe05895c"
+      stageUuid: "73c876a1-c821-8afc-b024-10d2db2867b7"
 version: 2
 ---
 # love — the create pole (−entropy)

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "classifications",
-    "uuid": "e70fac17-d121-8596-8d6b-1d6c6b72ba81",
+    "uuid": "69999dd5-48b7-80c6-988d-00802e74e703",
     "words": [
       "classifications"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection.",
-    "uuid": "4f632285-4a2b-875a-a27c-157a36a922dd",
+    "uuid": "7254efcf-fd08-8190-9561-d929e0e30068",
     "words": [
       "use",
       "when",

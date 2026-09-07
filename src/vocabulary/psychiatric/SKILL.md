@@ -2,11 +2,11 @@
 name: psychiatric
 description: "Use when reasoning about psychiatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/psychiatric"
-coordinate: "vocabulary/psychiatric · 8/crest · 4eb40de0"
-contentUuid: "3ac0001a-aac7-5eae-921c-fdd9a5fac2c9"
-diamondUuid: "852c43c7-222e-8876-a81a-82f419c840ff"
-uuid: "4eb40de0-abf8-8d7d-9d7d-1a0d6377c2f4"
-horo: 8
+coordinate: "vocabulary/psychiatric · 5/round · 1b8b94f9"
+contentUuid: "92f1dfa6-01c5-56f9-97d5-272f2e38a20f"
+diamondUuid: "4bf208ef-732e-8b69-87dc-ce8f114e7e7c"
+uuid: "1b8b94f9-ffe7-8ffc-8503-5dfc1c324824"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ee017d98-f558-85e8-9b28-b004a150eaa5"
+  computationUuid: "730b4d78-26c8-8422-8874-05b575284024"
   stages:
     - stage: path
       stageUuid: "64c58814-d7e1-833e-8101-5437af434655"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6f0d5371-f3de-8fe3-8d53-8018f3ac1116"
     - stage: horo
-      stageUuid: "f5f6339d-a2ee-85b8-94b2-dd3744928084"
+      stageUuid: "dbcc338c-47c7-8b53-9345-1c91e419d89f"
     - stage: seal
       stageUuid: "ccbdf4c0-2540-8a12-af15-c2b409c8a8b2"
     - stage: uuid
-      stageUuid: "71d7059e-96dd-86b2-a0ea-87a28e3fd0d2"
+      stageUuid: "e6bafb9b-3c9b-8ab7-a302-955d22216f60"
 version: 2
 ---
 # psychiatric

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consultant",
-    "uuid": "cba96d3a-e11a-8ba0-81fa-bc771c96cce0",
+    "uuid": "07982944-2587-8b7b-a553-bdf36e13c802",
     "words": [
       "consultant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the trained quantum consultant — it covers every aspect of life the corpus holds, is trained by coordinated brainstorming (diverge into perspectives, converge to one), and consults at infinite ROI; the breadth of the knowledge is the breadth of the consultant.",
-    "uuid": "ebb08521-acd8-8000-a11d-0ee1dddf24f2",
+    "uuid": "231ba4af-71e9-8ad4-8878-8978f6aa899a",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "db",
-    "uuid": "febc02c6-1549-86fe-be4c-c71953795cf6",
+    "uuid": "e2810beb-de3b-808a-98a2-7a351ee1077a",
     "words": [
       "db"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core with infinite tamper-cost, deduping by the merge law.",
-    "uuid": "8c16ac32-12cf-862d-9dd4-57dd7c0c60d0",
+    "uuid": "c080da12-adf2-8628-8be1-f8669713f0b5",
     "words": [
       "use",
       "when",

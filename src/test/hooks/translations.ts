@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "4f8bb562-db93-8c57-9e66-50983847df90",
+    "uuid": "abd2c879-0719-8170-9d60-85b7d89b4140",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tests consume the aura projection to render a colour — green (the A432 heart colour) when the aura is whole (the double-torus complete), else red; tests return coherence as colour, not just pass/fail.",
-    "uuid": "e19a8bd4-2f01-8fdf-a4a6-41647181979f",
+    "uuid": "490c47a4-0aff-80c1-80e4-daf43862990b",
     "words": [
       "use",
       "when",

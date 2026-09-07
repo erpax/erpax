@@ -2,11 +2,11 @@
 name: parents
 description: Use when reasoning about parents — A parents of the person.
 atomPath: "vocabulary/parents"
-coordinate: "vocabulary/parents · 7/descent · fad9a8b2"
-contentUuid: "0b61082c-7512-5592-afe1-03bfbc662d39"
-diamondUuid: "feb0f100-5094-8112-b9bd-e76ddd94f717"
-uuid: "fad9a8b2-8117-8cf4-99e5-31c45aae3e96"
-horo: 7
+coordinate: "vocabulary/parents · 8/crest · ddaa5497"
+contentUuid: "39cbeaa4-4764-5a88-b979-95330145f3f4"
+diamondUuid: "924e41e5-046b-8d2f-8a81-701300c76e2e"
+uuid: "ddaa5497-f1b4-8806-bdb4-625b90e4a3f7"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fc3a2911-f70e-8a1d-a412-ff7157d2d6d9"
+  computationUuid: "b257f1ae-f9c1-8dd6-ae37-f555c353ded9"
   stages:
     - stage: path
       stageUuid: "78f62e3a-c354-8c5d-ae8b-8ea949b56de8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2c758713-8b1f-8e68-aaeb-fd0377306568"
     - stage: horo
-      stageUuid: "68347629-f630-81b8-97b9-d56da8c5263f"
+      stageUuid: "69a21ee8-4ce2-851d-b60a-f7ce72c16a85"
     - stage: seal
       stageUuid: "df8c9f3f-0b4f-8c6c-ab0f-c56e0dd29610"
     - stage: uuid
-      stageUuid: "9e110833-105b-8d9d-934c-3bfa9e2191cc"
+      stageUuid: "ef8da963-ec7b-86b7-9257-c8146e319165"
 version: 2
 ---
 # parents

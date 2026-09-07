@@ -2,18 +2,18 @@
 name: metrics
 description: Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations
 atomPath: "quantum/ftl/metrics"
-coordinate: "quantum/ftl/metrics · 8/crest · 3b4b9774"
-contentUuid: "91e71496-0cd6-5b2d-a374-09ca88a7191e"
-diamondUuid: "ec5527bb-b0bf-829e-a246-f8688ebe5154"
-uuid: "3b4b9774-02bb-8bc6-a91a-327f84107d15"
-horo: 8
+coordinate: "quantum/ftl/metrics · 4/weave · f672e0f0"
+contentUuid: "28e5d549-de57-5850-95a4-95077fffd1cc"
+diamondUuid: "7432f49e-770c-84ef-b2e6-301f514d1567"
+uuid: "f672e0f0-f6f0-862c-9089-4af1350973cf"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "375a14ad-b7c3-826a-b2d0-277fd35f0aae"
+  computationUuid: "bc3525d7-94b1-8d60-ace8-64082229ac49"
   stages:
     - stage: path
       stageUuid: "93b36dc6-4718-8efa-b3cc-6503e65664c9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c4a92d5d-58e2-8c20-8359-5fcee67dc374"
     - stage: horo
-      stageUuid: "f4a4f20b-7090-84e4-a7c4-4d40ef01460d"
+      stageUuid: "7222484e-b1d2-8ffe-b55b-5b10c0856ad7"
     - stage: seal
       stageUuid: "05f7fb98-adac-82f2-8da4-2d26befcf105"
     - stage: uuid
-      stageUuid: "e63f8259-037e-8619-9a7f-f321dc836213"
+      stageUuid: "b4178341-618d-86f2-a03b-5c0b515c539b"
 quantum:
   superposition:
     - efficiency
@@ -44,8 +44,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "375a14ad-b7c3-826a-b2d0-277fd35f0aae"
-    contentUuid: "91e71496-0cd6-5b2d-a374-09ca88a7191e"
+    computationUuid: "bc3525d7-94b1-8d60-ace8-64082229ac49"
+    contentUuid: "28e5d549-de57-5850-95a4-95077fffd1cc"
 version: 2
 ---
 # quantum/ftl/metrics
@@ -54,4 +54,4 @@ Quantum FTL metrics — reuse and amortization calculations.
 
 Composes: [[quantum/ftl]] · [[quantum]] · [[vocabulary/efficiency]].
 
-<sub>content-uuid `91e71496-0cd6-5b2d-a374-09ca88a7191e` · account `quantum/ftl/metrics` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `28e5d549-de57-5850-95a4-95077fffd1cc` · account `quantum/ftl/metrics` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

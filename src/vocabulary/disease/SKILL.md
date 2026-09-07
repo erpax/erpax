@@ -2,11 +2,11 @@
 name: disease
 description: "Use when reasoning about disease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/disease"
-coordinate: "vocabulary/disease · 5/round · 9a46c874"
-contentUuid: "21f9e8a7-5fe5-589a-98d0-e6d534fd2d34"
-diamondUuid: "5edc956d-3019-8c58-9d8f-40db0da50ad1"
-uuid: "9a46c874-337c-8bb9-a335-017ad6fe7fe4"
-horo: 5
+coordinate: "vocabulary/disease · 8/crest · eb2b93d9"
+contentUuid: "3c657d5c-6d5e-5b3c-9006-524329b5ac1d"
+diamondUuid: "d52a6b30-3604-8a39-a26f-29bbf661eb88"
+uuid: "eb2b93d9-00a2-806d-add9-7168c76c61cf"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 41
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "22afbb0e-49ee-80a3-b4a6-b671da614eb0"
+  computationUuid: "f49b6151-f1da-8b14-ad95-ee582eff7fed"
   stages:
     - stage: path
       stageUuid: "b199358e-8433-8909-a712-856188e2b8de"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a8b9cb2b-b452-8ab9-a5c4-8fadbcf4326e"
     - stage: horo
-      stageUuid: "b414c449-4dc0-8459-8e54-a5814e3d8b6c"
+      stageUuid: "c9d94502-2fd3-89f1-94f7-5a11d51bd283"
     - stage: seal
       stageUuid: "70edd64c-966a-8775-963c-6e41903629b6"
     - stage: uuid
-      stageUuid: "c2b99ddc-08cf-8de6-97f5-2fa6297104fa"
+      stageUuid: "37cec901-b52e-8315-be03-e82eac67546e"
 version: 2
 ---
 # disease

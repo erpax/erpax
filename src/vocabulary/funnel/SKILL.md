@@ -2,18 +2,18 @@
 name: funnel
 description: "Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage."
 atomPath: "vocabulary/funnel"
-coordinate: "vocabulary/funnel · 8/crest · 487b6f9f"
-contentUuid: "b8db355f-ddd6-5897-8380-4abc63cd557d"
-diamondUuid: "4c26d18c-a9a2-8fda-9043-35f00568d811"
-uuid: "487b6f9f-6266-8fac-ba50-7d5aca379a3f"
-horo: 8
+coordinate: "vocabulary/funnel · 2/share · 02ba1370"
+contentUuid: "06c3cb73-f773-5e14-93c3-82fdf44e7e76"
+diamondUuid: "e1f9ab23-ec57-87a9-98dc-fcbddd8962a2"
+uuid: "02ba1370-e463-8bc8-a589-3af7ab275a1d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9ee9e66c-54bd-8e46-85c5-7bf6694b3508"
+  computationUuid: "3a63e351-1d9f-80d6-ab9d-b37acd63c609"
   stages:
     - stage: path
       stageUuid: "31efe69a-affb-858d-a6b1-91e2705748d8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0a9daaf2-e87a-864f-bf74-c29f0195a28c"
     - stage: horo
-      stageUuid: "237eadd9-9b0f-8e92-af91-277a368f533a"
+      stageUuid: "f5a768f4-140d-8dc7-8fa4-eea2b34c7e8b"
     - stage: seal
       stageUuid: "da9b2c1a-d437-8e15-b077-ca269792b5ac"
     - stage: uuid
-      stageUuid: "df85e97f-0ef7-8cb9-9761-5ec268bdee7c"
+      stageUuid: "27677946-28e1-85bd-af8d-eb7cea9cf8c9"
 version: 2
 ---
 # funnel

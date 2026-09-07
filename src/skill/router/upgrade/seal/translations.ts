@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seal",
-    "uuid": "907c5005-fa71-8238-a1b9-b9aeb1dc4e18",
+    "uuid": "4781700f-5483-8718-80c6-6c464d41fc7c",
     "words": [
       "seal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when SKILL.md frontmatter must render deterministically or fold content-uuid — renderFrontmatter, upgradeSkillText, parseSignaturesFromText, and contentUuidOf seal the diamond stage chain into YAML.",
-    "uuid": "e7ff41d1-974e-8fd6-975a-a7cf3e84442f",
+    "uuid": "eaecd6dd-c9b5-8261-96a7-02c479310f11",
     "words": [
       "use",
       "when",

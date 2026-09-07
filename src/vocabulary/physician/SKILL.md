@@ -2,11 +2,11 @@
 name: physician
 description: "Use when reasoning about physician — An individual physician or a physician's office considered as a MedicalOrganization."
 atomPath: "vocabulary/physician"
-coordinate: "vocabulary/physician · 4/weave · 21663cba"
-contentUuid: "35b93550-0967-5fc8-9221-272bbaa88693"
-diamondUuid: "f804f795-9481-8eff-a6f3-584ceee24a7c"
-uuid: "21663cba-9fbf-8ce8-80c5-9d3ab8b235f8"
-horo: 4
+coordinate: "vocabulary/physician · 2/share · 2db6dad3"
+contentUuid: "b902e7ce-4ebe-50be-96aa-5deeae843dd2"
+diamondUuid: "bba11038-9ad1-87b8-9770-11f513f26871"
+uuid: "2db6dad3-8758-8424-aa29-f1d8a17a944b"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "78a1e8f4-febe-8e21-89df-f71d590bb1ee"
+  computationUuid: "0afe3b11-6947-85a4-8d22-41733ac52b31"
   stages:
     - stage: path
       stageUuid: "327ffae8-5180-8a1b-ba12-a9cb36b15f3e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e931907b-52fa-868d-9436-fe005efb86f0"
     - stage: horo
-      stageUuid: "7f7e318b-d68e-85bc-b8e8-4443a75ee511"
+      stageUuid: "c22e61cd-d50c-87fd-9643-07c1656af7be"
     - stage: seal
       stageUuid: "11429e8b-e9fa-83ef-8a92-70b11ee75716"
     - stage: uuid
-      stageUuid: "d2465d69-6bfd-8666-bddb-60751d2eebfc"
+      stageUuid: "9fb51c74-c3a2-8d3a-ad33-f438a1af2a4f"
 version: 2
 ---
 # physician

@@ -2,11 +2,11 @@
 name: permission
 description: "Use when reasoning about permission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/permission"
-coordinate: "vocabulary/permission · 7/descent · 0e4a93dc"
-contentUuid: "93731e60-7c52-527b-a1bb-e293fe14e5f9"
-diamondUuid: "6c36cceb-be9a-8f17-9ea2-aa88af145604"
-uuid: "0e4a93dc-861f-8fef-ae9b-8af00b736e39"
-horo: 7
+coordinate: "vocabulary/permission · 4/weave · 564b26c1"
+contentUuid: "bee1e6e0-3acd-5c23-95e3-86de761f2c63"
+diamondUuid: "fe1bf319-8ffa-8ec9-ad8e-6f9c2956b39b"
+uuid: "564b26c1-9cbb-809a-abd8-0ffe6bbfeef1"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c2ead72b-9410-8633-8857-77e2b7aff37d"
+  computationUuid: "b594d636-e5e0-87cc-ad23-ee0529d533c7"
   stages:
     - stage: path
       stageUuid: "efc994d3-d09d-8938-bd46-50428da49db2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f1675bd1-7098-8dfe-96a0-29783514398a"
     - stage: horo
-      stageUuid: "db203dae-a5c4-8647-8fd9-e998d5512baf"
+      stageUuid: "809b009d-2f15-8d72-9ba3-10936402153c"
     - stage: seal
       stageUuid: "1152e53d-ebb3-87ce-a231-6fd47987884f"
     - stage: uuid
-      stageUuid: "b108986c-85ec-8220-949f-db9472ac5ccb"
+      stageUuid: "ccda0b3f-dcd4-8c7a-9f8d-e434a57fd3f3"
 version: 2
 ---
 # permission

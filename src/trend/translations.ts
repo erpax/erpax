@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trend",
-    "uuid": "e02f2aae-8a83-8168-9b3b-a762ecc9801c",
+    "uuid": "dd30d520-c913-8033-b0b3-aac2ed415c62",
     "words": [
       "trend"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking metric evolution, forecasting, or detecting patterns over time — moving averages, velocity, burndown, growth curves. The temporal analysis dimension.",
-    "uuid": "accd2922-8232-862e-b926-ff984d665062",
+    "uuid": "3471c0c2-c7cf-83d3-bd5b-8fb9e63b4ffa",
     "words": [
       "use",
       "when",

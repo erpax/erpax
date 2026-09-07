@@ -2,18 +2,18 @@
 name: redundancy
 description: "Use when reasoning about redundancy — the structure in a code, R = 1 − H/H_max: the fraction of the channel not carrying fresh information because the wiring constrains it. Zero for a maximal-entropy (uniform, incompressible) source; high when symbols are predictable from each other. In erpax redundancy IS coverage: wiring every dimension makes each input determined by and checkable against the whole, and that redundancy is exactly what detects tamper — redundancy → 1 ⇔ coverage → 1 ⇔ tamper-cost toward its +∞ limit."
 atomPath: redundancy
-coordinate: "redundancy · 1/base · 9dd4529a"
-contentUuid: "815b7bf7-3c10-5962-b649-2be4c0721090"
-diamondUuid: "74a21192-fc53-8ec9-9415-f8ec41d4c15c"
-uuid: "9dd4529a-cc72-8b44-9524-168fa2151b80"
-horo: 1
+coordinate: "redundancy · 2/share · fca7c23e"
+contentUuid: "6b3a662e-5ae0-5775-bc66-e12e0c3f712d"
+diamondUuid: "d677a278-47a9-8456-bca4-ee295e54e8b0"
+uuid: "fca7c23e-a61f-8faf-b23e-a6cd6c4bbf76"
+horo: 2
 typography:
   partition: redundancy
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "294a31de-9887-8a6b-ad44-1dbe93316b92"
+  computationUuid: "429a75c4-eb5f-8d9c-bce5-127cedc17d21"
   stages:
     - stage: path
       stageUuid: "1c702925-3a8c-84e7-a471-2f060def6da5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "84c2b7f6-f303-8006-a8ed-dcdf9fc6832d"
     - stage: horo
-      stageUuid: "88535025-82c5-84e8-8fee-c493550c3b96"
+      stageUuid: "69fde247-8da5-8f5c-a245-ec5545dd6c8e"
     - stage: seal
       stageUuid: "9467bb01-501e-855b-9895-26acd718bb46"
     - stage: uuid
-      stageUuid: "87ca6198-d252-8ff5-8124-a53b87d36646"
+      stageUuid: "b84bf93d-99d2-8bf7-94db-e696d1169426"
 version: 2
 ---
 # redundancy — structure is coverage (R = 1 − H/H_max)

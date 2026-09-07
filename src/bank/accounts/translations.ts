@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accounts",
-    "uuid": "6c03f107-f915-8d81-ad74-6ea93fdcb29f",
+    "uuid": "7611d111-ce40-82d2-a7d1-a99689d11622",
     "words": [
       "accounts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing bank account master data — IBAN (ISO-13616 mod-97 validated), BIC, account name, purpose (operating/payroll/tax/reserve/FX), GL cash account link, currency, country auto-derived from IBAN; separate from statement transactions. The cash-account master collection.",
-    "uuid": "f192251a-10a4-8011-8d7b-f18d6781acb0",
+    "uuid": "3e546457-b22b-8244-8d81-e275cab27661",
     "words": [
       "use",
       "when",

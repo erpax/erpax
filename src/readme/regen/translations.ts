@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "regen",
-    "uuid": "a841c60e-df57-821c-94c0-713f46470342",
+    "uuid": "1b3642b8-fd9a-84b3-903a-34de77225bae",
     "words": [
       "regen"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about regen — readme/regen — focused computed-face regen (avoids full-corpus `pnpm readme` OOM).",
-    "uuid": "a3f1e6e3-7282-8840-a684-37b2f55b6018",
+    "uuid": "c25e500e-0c17-85c0-b896-4391f60898b4",
     "words": [
       "use",
       "when",

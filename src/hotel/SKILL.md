@@ -2,11 +2,11 @@
 name: hotel
 description: "Use when reasoning about hotel — A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedica"
 atomPath: hotel
-coordinate: "hotel · 8/crest · 022c2854"
-contentUuid: "cb1d5493-2b67-5c8b-bd42-f84c9e7411f7"
-diamondUuid: "d7ea557c-88f0-873b-b35c-42bf843fadc8"
-uuid: "022c2854-e6b3-8c2f-8f75-d09e9dcd8d34"
-horo: 8
+coordinate: "hotel · 4/weave · 2d289ce9"
+contentUuid: "ca2557cc-332a-5f42-9e74-1fb95149dd33"
+diamondUuid: "3c1adb5f-14aa-8738-a164-98aee9b5eff7"
+uuid: "2d289ce9-dd8f-8e1d-9ce8-774edf0b6658"
+horo: 4
 typography:
   partition: hotel
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c52435dc-b52b-81b6-aeb0-cc684cec3217"
+  computationUuid: "946fa0a2-0a5d-80ea-89a2-63f112884f24"
   stages:
     - stage: path
       stageUuid: "12da98fd-140b-87ae-af2a-c446bd9b5546"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c9475936-94d1-8d3f-a434-0b72c9a6a756"
     - stage: horo
-      stageUuid: "9bc8285b-652c-8031-8133-9172d21fa468"
+      stageUuid: "f3de44c1-e044-8ce9-974e-ca623127588a"
     - stage: seal
       stageUuid: "45c8bffe-bdff-8f05-b39d-37df64eedd02"
     - stage: uuid
-      stageUuid: "ffe9d6c9-6acd-8015-8e23-95526c9c1252"
+      stageUuid: "2d568f8b-1308-84ee-a4f9-b613c2912093"
 version: 2
 ---
 # hotel

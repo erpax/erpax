@@ -2,11 +2,11 @@
 name: furniture
 description: "Use when reasoning about furniture as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/furniture"
-coordinate: "vocabulary/furniture · 1/base · 2fa086ef"
-contentUuid: "a3ca688b-77c1-560b-8e3d-3f73da02da65"
-diamondUuid: "3cc0afce-b669-8e63-94be-2c25af9a69e8"
-uuid: "2fa086ef-75b9-8cf7-aa1d-7c6b8bd00f7b"
-horo: 1
+coordinate: "vocabulary/furniture · 5/round · b6497531"
+contentUuid: "21294427-bd37-585e-83b7-5f97e14ae929"
+diamondUuid: "800a9756-dd44-8319-8fd6-aeead756b338"
+uuid: "b6497531-07c4-8f67-98e4-d66aba6d3333"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a28427ab-d2db-8510-a326-14141ae9dd85"
+  computationUuid: "872677b9-5987-8a16-a88d-fcde03ace4c7"
   stages:
     - stage: path
       stageUuid: "a5a92127-a6b3-8ffe-bcb5-1ac119904753"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5d28c40f-b504-8d2c-9194-a04b521a3d28"
     - stage: horo
-      stageUuid: "aaf0624b-04b6-8d27-a6dc-340eaba98a02"
+      stageUuid: "474330ed-4371-8086-adc0-68f1eb09e68c"
     - stage: seal
       stageUuid: "e95963fa-fa21-8c1d-a060-806dfb25ad15"
     - stage: uuid
-      stageUuid: "14f82a80-df56-8e77-ad26-2f36db4015a6"
+      stageUuid: "6c57950d-9695-8a58-8ae6-564f19c2c3c2"
 version: 2
 ---
 # furniture

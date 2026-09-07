@@ -2,11 +2,11 @@
 name: bedrooms
 description: "Use when reasoning about bedrooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bedrooms"
-coordinate: "vocabulary/bedrooms · 8/crest · 72147649"
-contentUuid: "28e212f3-64d2-56a4-98cb-dd64be067f2d"
-diamondUuid: "20a64e0c-2f41-8980-9241-c464088813c1"
-uuid: "72147649-cdc9-8114-ae1a-f14768188617"
-horo: 8
+coordinate: "vocabulary/bedrooms · 7/descent · ceb7a7cb"
+contentUuid: "a4188d9d-a28a-5229-bade-ad1c8d7e3aa0"
+diamondUuid: "6700ae84-d3fc-8468-a728-805f2a271c28"
+uuid: "ceb7a7cb-82bd-8552-96f8-8a2387576f63"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cdbe4393-66de-8fdb-84fe-6ea2d31d6acb"
+  computationUuid: "7bc32935-d520-89ab-aaad-37d3002655b3"
   stages:
     - stage: path
       stageUuid: "a424ac0f-334c-83e5-8203-13a4f32535f9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "77537656-83fa-8007-89f1-655811eb5652"
     - stage: horo
-      stageUuid: "fdb117e5-116c-81fe-bf00-df587c7b8e98"
+      stageUuid: "edd507f5-4e99-825c-8e3a-1f85338a3f3f"
     - stage: seal
       stageUuid: "932176fd-96a0-8312-95ee-532c7f0a4c1f"
     - stage: uuid
-      stageUuid: "dfe93a6a-6532-8bd3-b4ff-3dcf5dcee59e"
+      stageUuid: "4fbef9b1-8bf7-8b88-9f66-06b5ae0de2f8"
 version: 2
 ---
 # bedrooms

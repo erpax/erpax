@@ -2,11 +2,11 @@
 name: step
 description: "Use when reasoning about step — A single step item (as HowToStep, text, document, video, etc.) or a HowToSection."
 atomPath: step
-coordinate: "step · 1/base · b31e12b2"
-contentUuid: "d44d35f3-5387-5db2-b552-67ae1cae4a46"
-diamondUuid: "48216d55-5760-8319-a191-99b550b7b5d0"
-uuid: "b31e12b2-ed83-8ec2-b564-83c32833275c"
-horo: 1
+coordinate: "step · 4/weave · 203b0a01"
+contentUuid: "8826676a-6db3-5f63-8ba1-fa9d6a1bc3c1"
+diamondUuid: "7def8f86-1fe5-8bd3-b32b-2678193a42bd"
+uuid: "203b0a01-6049-8d4b-997c-d8683d23655f"
+horo: 4
 typography:
   partition: step
   bondDegree: 39
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c5641123-e8e2-8217-ae66-13283a692a0e"
+  computationUuid: "804384cb-7b6f-8d4e-b67b-61cb94f658af"
   stages:
     - stage: path
       stageUuid: "a113d1d8-ddb1-810a-a290-60416502a751"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "be862ac3-0820-8c15-aa97-a949d91cd7aa"
     - stage: horo
-      stageUuid: "f7cc5645-e19b-884c-8e92-819b05f72c5b"
+      stageUuid: "3bddfcd1-0f50-8290-923f-389d226d9f7b"
     - stage: seal
       stageUuid: "dca7b7fa-d8f3-8e07-aa80-b5d461eeaa8a"
     - stage: uuid
-      stageUuid: "3cbe7782-03ff-86a8-9f7f-f895b7e50575"
+      stageUuid: "0e155fd4-7b1e-88ea-8637-eda5e73c3768"
 version: 2
 ---
 # step

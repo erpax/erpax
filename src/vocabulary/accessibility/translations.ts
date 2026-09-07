@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accessibility",
-    "uuid": "abc40143-a2e9-8fbb-8e75-34d53dc9b155",
+    "uuid": "1ce254e5-541e-8462-b631-f62283cc5e27",
     "words": [
       "accessibility"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designing for inclusive experiences — WCAG 2.1/3.0 compliance, color contrast, keyboard navigation, screen-reader support, semantic HTML, alt-text. The capability for all users regardless of disability.",
-    "uuid": "19b044ea-ab2e-81e2-8ac9-5cecd72dfd2c",
+    "uuid": "769a0098-8e43-85f6-b9f8-e3086346fd92",
     "words": [
       "use",
       "when",

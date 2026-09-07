@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eidr",
-    "uuid": "250d5914-1ff2-83ee-8a77-89ca635c6bd0",
+    "uuid": "2b78f1bc-57f6-89b8-abe4-566ec1991205",
     "words": [
       "eidr"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about eidr as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "6f6aa57a-4041-8901-a046-5f6e00cb2d8c",
+    "uuid": "a5059026-5441-8f47-980b-307b0cc80194",
     "words": [
       "use",
       "when",

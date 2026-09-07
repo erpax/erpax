@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "funder",
-    "uuid": "d6fe0499-71ff-8c0d-814b-85c79916d0fe",
+    "uuid": "a8c47b05-3d96-8bae-9b4d-da0d16424109",
     "words": [
       "funder"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about funder — A person or organization that supports (sponsors) something through some kind of financial contribution.",
-    "uuid": "98fd839f-0c0a-8176-a0bc-88f5c0e80188",
+    "uuid": "be6ef255-6904-8df3-af51-6c415ec1fedd",
     "words": [
       "use",
       "when",

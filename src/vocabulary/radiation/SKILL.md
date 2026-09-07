@@ -2,11 +2,11 @@
 name: radiation
 description: "Use when reasoning about radiation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/radiation"
-coordinate: "vocabulary/radiation · 8/crest · b311605d"
-contentUuid: "9c68e05b-8573-5cc0-85b6-7f3fed1e076f"
-diamondUuid: "e843fe34-98b4-86d6-af23-53fd8611be3c"
-uuid: "b311605d-3a5d-8b4a-8fa6-93c78068ec5d"
-horo: 8
+coordinate: "vocabulary/radiation · 4/weave · 2616bd63"
+contentUuid: "f80a0b96-e547-5c7b-b3dc-c9dce1f4066a"
+diamondUuid: "90555426-b243-8648-a593-c675714fd787"
+uuid: "2616bd63-b5d2-880a-b769-2abb90af35ac"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "648c353d-4bd4-837f-9327-c38b848062f4"
+  computationUuid: "baa4ea6b-0248-8c0a-9da6-0ec88403097a"
   stages:
     - stage: path
       stageUuid: "769607b0-c756-876e-a298-9acc40868a47"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "41f3b5fd-78c6-8371-817f-26f18eb81c9d"
     - stage: horo
-      stageUuid: "d9454356-fde2-83c0-bc94-45c75fba3019"
+      stageUuid: "67a20315-bc1f-875a-84ad-8e1e3caf3f94"
     - stage: seal
       stageUuid: "dd55ced7-ce06-8a15-b375-f0f8b18dcaec"
     - stage: uuid
-      stageUuid: "be5350ff-150e-827f-bb37-18f6d10b5578"
+      stageUuid: "f40c9ff5-76f6-833b-9df7-9b5ff52f417e"
 version: 2
 ---
 # radiation

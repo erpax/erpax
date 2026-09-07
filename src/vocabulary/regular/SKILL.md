@@ -2,10 +2,10 @@
 name: regular
 description: "Use when reasoning about regular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/regular"
-coordinate: "vocabulary/regular · 2/share · c904bd7d"
-contentUuid: "ac1df82e-c11a-535b-959f-9c57e90f10cb"
-diamondUuid: "8e174a10-1916-8ac1-947c-33686ba75970"
-uuid: "c904bd7d-2cb9-8138-b15b-d077c0237c72"
+coordinate: "vocabulary/regular · 2/share · b9c7f822"
+contentUuid: "91682350-10a8-5515-88b5-26a5d704d9f1"
+diamondUuid: "a768423e-6bfd-81ea-a477-2cb01940d4c3"
+uuid: "b9c7f822-03a5-8cce-86ae-e2a20212abca"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3a4a4847-eb81-840a-b83b-9fa875752504"
+  computationUuid: "bd843970-0847-86a0-932c-cffa2ada4c59"
   stages:
     - stage: path
       stageUuid: "b42d68af-17d6-8702-9373-b15dc330d4de"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "989327d9-3da8-8e3f-b0c9-17563598e3ce"
     - stage: horo
-      stageUuid: "1d6d2a84-944d-815c-98f7-4a3b1502a140"
+      stageUuid: "246f3291-2fff-84a8-92f6-ee74770ee1bc"
     - stage: seal
       stageUuid: "2de6bd79-b8bd-88c5-b78e-3d10c0118ec5"
     - stage: uuid
-      stageUuid: "8b8f41c0-7216-8d2d-9b31-2b3f636ce245"
+      stageUuid: "b453ffed-9460-80b7-b7ae-bda8a7a6298a"
 version: 2
 ---
 # regular

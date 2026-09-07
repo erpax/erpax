@@ -2,11 +2,11 @@
 name: natural
 description: "Use when reasoning about natural as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/natural"
-coordinate: "vocabulary/natural · 7/descent · 7d3f5778"
-contentUuid: "5c26f081-6311-5189-80db-a08ccb25da54"
-diamondUuid: "18705866-d6dd-8e65-94e8-b9f483e65e2a"
-uuid: "7d3f5778-7632-84be-b1a4-c23ee0917f84"
-horo: 7
+coordinate: "vocabulary/natural · 4/weave · 132caf4c"
+contentUuid: "6a5c34eb-1099-5690-8921-85d61c5cadf7"
+diamondUuid: "fbd63704-7f35-81b0-95b5-8298c8b1b501"
+uuid: "132caf4c-be17-8740-b3d2-e5479115199a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9e30bc3d-4395-8464-96b6-ba58e67f44d0"
+  computationUuid: "a7ff738f-30cc-8c0a-b784-8efbe474abc6"
   stages:
     - stage: path
       stageUuid: "555068bf-4716-8354-9ed5-db8de6b6ab8c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "914a32e6-7807-8664-ac60-893b23067400"
     - stage: horo
-      stageUuid: "0c086a70-e6bd-8846-ae7c-ccd84036b689"
+      stageUuid: "35a6556c-dec4-871b-bcb3-7a043bbfb16c"
     - stage: seal
       stageUuid: "04706d75-bd17-8d0c-ae15-2335a5f286f2"
     - stage: uuid
-      stageUuid: "96f6ce53-c68f-8b74-8a18-7ed9a40bbe08"
+      stageUuid: "91e347ab-514a-88e5-8440-38fcbeb6d39d"
 version: 2
 ---
 # natural

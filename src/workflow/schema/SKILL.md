@@ -2,18 +2,18 @@
 name: schema
 description: "Use when reaching the workflow SCHEMA — the shape a definition must take before the engine can read it — through its own namespace; the face re-exports the workflow barrel while the matter is still being lifted out of the hub."
 atomPath: "workflow/schema"
-coordinate: "workflow/schema · 5/round · 5a62a8ba"
-contentUuid: "fbd71019-e866-587b-8c6a-d026e8106d79"
-diamondUuid: "0dde1aed-1f8d-8297-bb90-06e0b11e3fbc"
-uuid: "5a62a8ba-80ee-8565-a810-26aabd0bf4df"
-horo: 5
+coordinate: "workflow/schema · 4/weave · 0360a779"
+contentUuid: "232b6403-432d-5df2-91e3-739bb19e1be1"
+diamondUuid: "466e850b-e7ea-818d-a772-763923ad913e"
+uuid: "0360a779-2f3c-83be-a94f-18cc47010b14"
+horo: 4
 typography:
   partition: workflow
   bondDegree: 55
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fbab4dc4-b054-8546-9a3a-e0e392cf4871"
+  computationUuid: "45adb677-4174-8820-bdb9-6ae2e6d3b0a4"
   stages:
     - stage: path
       stageUuid: "904f5beb-d601-885d-91fd-0bc9e8659781"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "16037d38-ee6d-8d07-bad1-8b190e680945"
     - stage: horo
-      stageUuid: "ef22ff76-fd8f-8ec1-86e1-0ea3650c0e65"
+      stageUuid: "8fa553f6-9f3b-8032-92e4-6a4eee051b3c"
     - stage: seal
       stageUuid: "675e7f3c-b35d-8cbd-afdd-b43fd82b9b56"
     - stage: uuid
-      stageUuid: "5ad4996d-4077-8e67-b744-71d989a5af84"
+      stageUuid: "a5f1b218-0c87-8249-8d4d-d7b9546fdeff"
 version: 2
 ---
 # workflow/schema — the schema face of [[workflow]]

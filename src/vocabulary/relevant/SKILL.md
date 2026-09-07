@@ -2,10 +2,10 @@
 name: relevant
 description: "Use when reasoning about relevant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/relevant"
-coordinate: "vocabulary/relevant · 4/weave · ee7556f3"
-contentUuid: "61e5d122-1838-5da6-8dc3-de9bd24f7fd5"
-diamondUuid: "9bb944dd-8261-84b4-b699-e13060225bd1"
-uuid: "ee7556f3-ddd4-8b5f-851c-15587ca44fb4"
+coordinate: "vocabulary/relevant · 4/weave · 53a8e820"
+contentUuid: "04531254-1563-55f3-b8af-44cfe08a9ec2"
+diamondUuid: "110e6a4e-20e8-82cb-a77d-5c44a0b89ef7"
+uuid: "53a8e820-99c0-87a9-88c5-142f19093ab0"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ead5d1ea-0577-8b49-a928-d77c6996c033"
+  computationUuid: "997cbe02-216a-8987-bc07-1dc0d3afefea"
   stages:
     - stage: path
       stageUuid: "df9b633f-f7f8-8808-8f89-96de3511b506"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fdfda270-bb9b-861a-b964-d7ec85b3b24f"
     - stage: horo
-      stageUuid: "8262ca15-8d8c-8c25-9181-9b884506a1a3"
+      stageUuid: "04cae194-c62e-8a10-859c-9e712212c9c0"
     - stage: seal
       stageUuid: "9382935d-c012-8115-93ec-63351a26ee17"
     - stage: uuid
-      stageUuid: "8adbc751-d1d4-8f8c-8f57-cbf641aaafb6"
+      stageUuid: "af5dafcf-746c-8dfb-9695-2e83f4677d97"
 version: 2
 ---
 # relevant

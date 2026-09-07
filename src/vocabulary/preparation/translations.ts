@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "preparation",
-    "uuid": "a2670bc8-62c0-86da-8f34-9f48cb7efcce",
+    "uuid": "e3791c41-931d-88c1-84af-1da234150587",
     "words": [
       "preparation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about preparation — Typical preparation that a patient must undergo before having the procedure performed.",
-    "uuid": "0b15d19d-dd16-829f-8fa5-d602b94727af",
+    "uuid": "aa0417b9-688e-827e-acbd-0db01303ffdf",
     "words": [
       "use",
       "when",

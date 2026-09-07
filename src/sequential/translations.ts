@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sequential",
-    "uuid": "de69956d-0680-8517-bd93-6f103bacb809",
+    "uuid": "5afa4bb3-a6e5-8fff-bc5f-0cba52cda186",
     "words": [
       "sequential"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sequential as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "f5c3a0b4-b834-8f89-936a-2d987a68c572",
+    "uuid": "49da6fb0-318d-8615-b5dd-79e3a1a49b1b",
     "words": [
       "use",
       "when",

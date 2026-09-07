@@ -2,18 +2,18 @@
 name: hook
 description: "Use when reasoning about hook — is the header's half of the same rule the footer keeps: a global that every page renders must tell those pages when it changes, or the edit lands everywhere except where it is…"
 atomPath: "header/hook"
-coordinate: "header/hook · 2/share · 08f0582d"
-contentUuid: "0ae0a279-133a-56f2-8cae-0f64d853c4e7"
-diamondUuid: "416c975e-ab4b-887b-9519-3c50a146d8f5"
-uuid: "08f0582d-ab56-8530-b26a-cf2e249e6d52"
-horo: 2
+coordinate: "header/hook · 4/weave · db7f9bb4"
+contentUuid: "ac23b36e-143f-5cf4-8d8f-e614eb0dfa76"
+diamondUuid: "9e7928fe-302f-82b6-93d5-539b49202b17"
+uuid: "db7f9bb4-54c8-87fd-a992-83d1ad2f1866"
+horo: 4
 typography:
   partition: header
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4d089bec-f4bc-8326-9f0f-c55aa76b3222"
+  computationUuid: "0999ae17-5470-8786-bba3-933428e9c319"
   stages:
     - stage: path
       stageUuid: "2602bfcf-a0cd-87ae-b3e5-7d7fd0bade11"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7089a44c-e840-8476-9944-c68231ceae45"
     - stage: horo
-      stageUuid: "98e54734-71ae-85a6-9cc8-6b313469371f"
+      stageUuid: "2bbd68d7-9130-80b1-abcf-bcb930bd6b0b"
     - stage: seal
       stageUuid: "55ae1e60-b12e-8246-b94c-889d70a8ab08"
     - stage: uuid
-      stageUuid: "8c43e9e2-352d-862b-a052-9f6626488d49"
+      stageUuid: "6145b552-bafb-8727-b33b-d26b246fc8f1"
 version: 2
 ---
 # header/hook — editing the header invalidates the pages that render it

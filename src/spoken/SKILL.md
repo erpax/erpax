@@ -2,11 +2,11 @@
 name: spoken
 description: "Use when reasoning about spoken as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: spoken
-coordinate: "spoken · 2/share · 0edc0b53"
-contentUuid: "37b257d6-a5a1-5d67-8c2a-55d9cb797d5c"
-diamondUuid: "88c64876-c0f3-81db-b6c1-b63f7f599fdd"
-uuid: "0edc0b53-7bf4-8381-bfca-c32257d3754f"
-horo: 2
+coordinate: "spoken · 4/weave · 1ecf1221"
+contentUuid: "fcf5b4f2-7d99-5b91-a21c-0f14faea601d"
+diamondUuid: "064ab7e9-95f0-8622-8dfc-3ab1a3c84df0"
+uuid: "1ecf1221-91a2-840b-8902-bd2e3b56b4dd"
+horo: 4
 typography:
   partition: spoken
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1c768668-bf01-8e19-b189-d7ba7e3ffa6f"
+  computationUuid: "4cd289b5-c791-8feb-ae70-18871c2b13f3"
   stages:
     - stage: path
       stageUuid: "96345965-6d2c-8ffc-8230-53633c5098e6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "be37a226-1c6e-8064-90d4-a96292d114b5"
     - stage: horo
-      stageUuid: "877cb2bc-781b-84d6-916e-96f4110a1323"
+      stageUuid: "d1c27d96-561b-89ac-a6f9-1ac67a926e16"
     - stage: seal
       stageUuid: "0f1ddffd-9856-82d2-a73e-8e8d087e7a17"
     - stage: uuid
-      stageUuid: "6848d2f3-edd6-86f2-90b8-8dc19ea91380"
+      stageUuid: "e026d7b8-e90e-8f82-9d78-824daa84d34f"
 version: 2
 ---
 # spoken

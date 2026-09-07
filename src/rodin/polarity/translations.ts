@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "polarity",
-    "uuid": "2be75181-8cd9-8626-afbc-e4e3e7983860",
+    "uuid": "7246a5a3-1ecd-8eee-ae59-3e7b1613b755",
     "words": [
       "polarity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the two directions of the rodin doubling cycle — 3 and 6 are the polarity boundaries: forward helix (×2, cyan, outbound/give) ↔ reverse helix (×5, magenta, inbound/take). The mirror pair the coil winds between. Nested under rodin.",
-    "uuid": "1f9c4de5-4c8e-8d1e-9a35-09dd0294801a",
+    "uuid": "872dd3ac-96ba-8031-8291-b4cf47b91683",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: historical
 description: "Use when reasoning about historical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/historical"
-coordinate: "vocabulary/historical · 7/descent · 2b185208"
-contentUuid: "8f4e967a-46bc-5b07-8dba-9bab5d9beca6"
-diamondUuid: "a3f7995e-b5bb-8ef9-a7b4-637d23c3fe52"
-uuid: "2b185208-9b58-8ab5-a995-e57bf205b250"
+coordinate: "vocabulary/historical · 7/descent · 9d24da97"
+contentUuid: "03d0704e-5f01-5f70-9c42-33bb59c9b791"
+diamondUuid: "c13e6cfc-3524-88ce-88c7-208ad328b71c"
+uuid: "9d24da97-1646-8673-b412-bca5441e1c8c"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ce57dad7-9611-8703-971b-2cc1d5507895"
+  computationUuid: "605a4d20-0d4c-8b54-9b08-4ebb21c6eae1"
   stages:
     - stage: path
       stageUuid: "a5338a66-9887-831c-8d0b-1cdb71f40db0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d86f2cac-5533-8444-ba2b-c7a84341e55f"
     - stage: horo
-      stageUuid: "f39d8f8f-9245-8918-99fb-4145d189c31f"
+      stageUuid: "10bfb96a-0388-8f6d-88bb-a4fc07af60c3"
     - stage: seal
       stageUuid: "e89c0cea-2366-801f-945c-3a8ebe1ef6f8"
     - stage: uuid
-      stageUuid: "0e93a77f-525c-89a6-9b3b-3b30f1bc8be2"
+      stageUuid: "dbbfa318-0698-83be-9970-b208c1bb8b3c"
 version: 2
 ---
 # historical

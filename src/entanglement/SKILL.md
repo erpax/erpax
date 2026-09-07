@@ -2,11 +2,11 @@
 name: entanglement
 description: "Use when reasoning about the link field that couples atoms — the directed edges as a symmetric, monogamous binding (reciprocity, no-cloning); the graph that the ER=EPR reading turns into geometry (mass = entanglement)."
 atomPath: entanglement
-coordinate: "entanglement · 5/round · 31f6c262"
-contentUuid: "bf7ef4b5-88d1-5fdc-a015-71ee12c3f464"
-diamondUuid: "6b2ed46e-2c4a-84d2-a6cc-976364c9726b"
-uuid: "31f6c262-2a0e-8a2c-9667-110a81145ab3"
-horo: 5
+coordinate: "entanglement · 2/share · 16d50ed5"
+contentUuid: "12a3734c-4abc-52a1-bd61-58007e73348f"
+diamondUuid: "409c4c8f-cba8-85c7-9fe5-8d8647dc73e4"
+uuid: "16d50ed5-101b-8519-8bce-5972cc64baac"
+horo: 2
 typography:
   partition: entanglement
   bondDegree: 108
@@ -15,7 +15,7 @@ standards:
   - "ER=EPR — Maldacena & Susskind, \"Cool horizons for entangled black holes\" (2013); monogamy — Coffman–Kundu–Wootters, PRA 61 052306 (2000)"
 bindings: []
 signatures:
-  computationUuid: "79c5aa27-1e4b-8d8e-804d-80127780f686"
+  computationUuid: "1d296ce5-29df-8065-91d9-756c97e948c3"
   stages:
     - stage: path
       stageUuid: "66a2c6a2-51f6-8609-9510-ed305e4f5f99"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "47421384-e146-8505-b17d-ec521153eb5b"
     - stage: horo
-      stageUuid: "3e7039b7-7803-830a-919b-fc63871714ad"
+      stageUuid: "ef39ad77-d15d-836c-89c2-6916196cb0d7"
     - stage: seal
       stageUuid: "b3132f38-3202-8a3d-948f-20c999354e3f"
     - stage: uuid
-      stageUuid: "3896d880-07ef-87d5-bfa1-5f3acae0b73f"
+      stageUuid: "a92e56a2-8b37-8c61-a019-f9ca6bb8100b"
 version: 2
 ---
 # entanglement — the link field that couples the atoms

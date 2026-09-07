@@ -2,18 +2,18 @@
 name: conversion
 description: "Use when reasoning about reversible representation change — a conversion is a bijection on ℤ/9 (multiplication by a unit), and inversion REINVENTS conversion: the inverse of a conversion is another conversion, from the same unit group closed under inverse. Holds only for the reversible units {1,2,4,5,7,8}; the axis {3,6,9} collapses — a lossy conversion (like the one-way fold) has no inverse to reinvent."
 atomPath: conversion
-coordinate: "conversion · 7/descent · a4432ad3"
-contentUuid: "d7dcce9c-5f95-5e89-9db8-018bed6f38fc"
-diamondUuid: "d5e34fcc-900e-8db7-8210-c3fe9cd4d0a4"
-uuid: "a4432ad3-9eb7-8cf7-bf72-1d9a602ab19b"
-horo: 7
+coordinate: "conversion · 8/crest · 5e5a9335"
+contentUuid: "36074858-ce48-5e07-918b-6969e67afea3"
+diamondUuid: "4aee6576-3543-8fe9-94bc-5591347d84a3"
+uuid: "5e5a9335-23ab-8dd7-83d8-9f784d9e2b0d"
+horo: 8
 typography:
   partition: conversion
   bondDegree: 81
 standards: []
 bindings: []
 signatures:
-  computationUuid: "94064688-f4ce-8782-b8e8-d9b140823006"
+  computationUuid: "2226816d-6c7b-8e79-8985-4b7f164d57b3"
   stages:
     - stage: path
       stageUuid: "a9279dc4-0b16-81f3-a8f3-ef3b149504af"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ab280a77-ec3b-8077-8eb9-a37ef301ba79"
     - stage: horo
-      stageUuid: "ecfa1c60-3872-8681-a292-bd4783ace806"
+      stageUuid: "c1de6007-fc90-8332-b27f-1e42e5a03093"
     - stage: seal
       stageUuid: "0f5591f0-1d3a-8e5d-89e3-878da7353aa2"
     - stage: uuid
-      stageUuid: "87a9e472-487e-878f-b67e-7e8ed0251707"
+      stageUuid: "e934ae2d-de8a-836d-855d-d6dc199a3f6a"
 version: 2
 ---
 # conversion — inversion reinvents conversion

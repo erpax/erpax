@@ -2,11 +2,11 @@
 name: book
 description: Use when reasoning about book — A book.
 atomPath: book
-coordinate: "book · 1/base · f627bc46"
-contentUuid: "9a3f80a7-3664-556b-abcd-8149fa27f0f7"
-diamondUuid: "5e2a655b-078e-8ba2-ad62-37d93de807b4"
-uuid: "f627bc46-067f-812d-96d1-ebbe83397517"
-horo: 1
+coordinate: "book · 7/descent · a92c8574"
+contentUuid: "43493a1b-37bd-5e7a-821f-c190625fd825"
+diamondUuid: "556e3694-4610-8468-bfcc-1cb3c7dfb1f6"
+uuid: "a92c8574-ea82-850a-8209-233663300313"
+horo: 7
 typography:
   partition: book
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "32440edb-533f-8750-ac35-6cc5f5f030fa"
+  computationUuid: "56f2b372-98f6-8b82-ae69-40f67b703a71"
   stages:
     - stage: path
       stageUuid: "ae27e4e6-79cc-8222-a2f3-42fa9b1e6fb3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2a1a4bdf-1b6c-8da5-990b-ff69aa5ef53e"
     - stage: horo
-      stageUuid: "8c3d053e-2a80-89da-9aaa-212e3664b703"
+      stageUuid: "e2ec2edc-6745-8781-b09e-7cf8885f3571"
     - stage: seal
       stageUuid: "37fd791c-c267-8417-b4e2-791ddd22d312"
     - stage: uuid
-      stageUuid: "55a4258b-1048-8fcf-a5a0-49b4dcf15461"
+      stageUuid: "57b03528-5d96-8c2d-af12-7332d7203bd0"
 version: 2
 ---
 # book

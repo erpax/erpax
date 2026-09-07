@@ -2,11 +2,11 @@
 name: integration
 description: "Use when calling any external HTTP API — the outbound face of the one api atom, where a vendor is DATA (base URL, declared auth style, published limits with their source, credentials) and the machinery is shared: a continuous-refill token bucket over every published limit at once so a burst queues rather than drops, credentials that fail closed naming every missing variable, errors that propagate as IntegrationError with the vendor named, and a reuse fold that measures the same IntegrationFtl for every vendor — safe methods only, because deduping a write would drop it."
 atomPath: "api/integration"
-coordinate: "api/integration · 4/weave · e923767f"
-contentUuid: "8883a2e5-a7cf-5442-ac53-28555696cea2"
-diamondUuid: "2c99ab07-b500-8cd7-a1d6-fadf706e5e2b"
-uuid: "e923767f-7fc2-830e-bf64-0e7ce856391f"
-horo: 4
+coordinate: "api/integration · 1/base · dd7a4c3b"
+contentUuid: "e47c5c53-89c9-5fdc-b0e8-967ea11a1495"
+diamondUuid: "457141ea-67d2-8cf1-9d26-0a54c5eee63e"
+uuid: "dd7a4c3b-d13e-85b3-bd28-7681bffd8615"
+horo: 1
 typography:
   partition: api
   bondDegree: 23
@@ -18,7 +18,7 @@ standards:
   - "RFC-9110"
 bindings: []
 signatures:
-  computationUuid: "c7155918-6c56-8036-8bd8-44bf5fa5bd50"
+  computationUuid: "50b8fa60-498b-8ae3-9450-00632e0137d4"
   stages:
     - stage: path
       stageUuid: "20410d15-2737-8a23-a46e-5e03071ce4b1"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "d1b3c5ad-6ef8-8254-8099-1d0a730b3213"
     - stage: horo
-      stageUuid: "d7be6465-fe0d-8e25-849b-ffa5986b3c7e"
+      stageUuid: "741b34a8-816b-8d27-8f19-df48e00fdcf8"
     - stage: seal
       stageUuid: "365b205b-9f4b-8153-b938-c14291eb017f"
     - stage: uuid
-      stageUuid: "98a74898-50ec-8c2a-96cc-13f556d98615"
+      stageUuid: "12371eb4-9b55-84c6-8c18-48cc38cfe1b6"
 version: 2
 ---
 # api/integration — the outbound face, where the vendor dissolves into data

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tag",
-    "uuid": "05925ac9-585b-8256-9b97-0963c694843b",
+    "uuid": "4d61a1ce-7483-81ee-8592-63e42930a241",
     "words": [
       "tag"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \\\"Anything is taggable.\\\"",
-    "uuid": "c80490bf-b399-8732-bec8-b7ac562cefa8",
+    "uuid": "f2e223de-d68d-8eff-9491-80207f572db6",
     "words": [
       "use",
       "when",

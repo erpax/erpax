@@ -2,18 +2,18 @@
 name: sync
 description: "Use when reasoning about why memory, cpu, and gpu stay synchronized at zero entropy — the content-uuid is the single invariant across every compute substrate: identical content ⇒ identical hash ⇒ zero divergence. Sync is not a protocol to run but a consequence of content-addressing; it is free and exact, the same merge law that makes federation set-union, applied across substrates instead of across peers."
 atomPath: "vocabulary/sync"
-coordinate: "vocabulary/sync · 1/base · da36adc7"
-contentUuid: "0379f434-d433-5e04-b770-d14534a36384"
-diamondUuid: "83db36b4-6652-8e0c-b609-b02f2661460c"
-uuid: "da36adc7-0375-834a-b196-5f43ae25744b"
-horo: 1
+coordinate: "vocabulary/sync · 4/weave · efecf1c9"
+contentUuid: "29d77cb6-a41d-5148-8134-1fcf38ec38b5"
+diamondUuid: "7524bced-e867-8bcb-a2ff-cddbd74012fd"
+uuid: "efecf1c9-e8d5-88a2-b42e-29eea6575903"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 59
 standards: []
 bindings: []
 signatures:
-  computationUuid: "dd6cadb6-8cfe-8afe-9f08-c5fa3fc0335f"
+  computationUuid: "0624a3f0-fe5a-8a6c-8d65-d284cb76b437"
   stages:
     - stage: path
       stageUuid: "aa003955-3d91-810e-8524-1af30efcc9b2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "30609454-fdcb-80bf-a95d-d83c039fc2ec"
     - stage: horo
-      stageUuid: "7b356a28-c754-8144-83c4-e5f20b0c06b2"
+      stageUuid: "de74ce8a-1f89-8081-8d88-153b55193f3b"
     - stage: seal
       stageUuid: "6390cac5-dfe5-8bf1-bccf-83e7cdad9c9d"
     - stage: uuid
-      stageUuid: "bf00d566-2a46-8d19-b842-16fa8ecf947e"
+      stageUuid: "3f7ae7be-926b-80bc-8e80-c0f787c0e980"
 version: 2
 ---
 # sync — the content-uuid keeps every substrate at zero entropy

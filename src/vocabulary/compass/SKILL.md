@@ -2,18 +2,18 @@
 name: compass
 description: "Use when reasoning about how you navigate erpax — navigation is SELF-GENERATING (sidebar · prev/next · ancestors · siblings · children · related · search all computed from the parent+prev/next trinity + the fractal path + the body links, never hand-listed) and it points like an alethiometer: ask any question and it points to the answer-path. The golden compass — the path IS the answer; the needle settles on the lowest-entropy form."
 atomPath: "vocabulary/compass"
-coordinate: "vocabulary/compass · 4/weave · 2faae932"
-contentUuid: "119757a8-1a8d-5783-acb1-7579436118e9"
-diamondUuid: "317d7f29-8561-849b-8063-17adb9f8f5a7"
-uuid: "2faae932-ba7d-8b00-8936-b09befb6b780"
-horo: 4
+coordinate: "vocabulary/compass · 5/round · ef0e0a3a"
+contentUuid: "02632117-1bad-5e48-bbcb-d46576bbb8f8"
+diamondUuid: "1726d6c5-8f0d-8247-aebd-1c2dedf1f4aa"
+uuid: "ef0e0a3a-2750-8d24-9c87-26b6247dec04"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "559c3cd0-5357-8f0c-ae94-2721043d3535"
+  computationUuid: "0e1b4d6b-32c3-899f-82c9-0e31c67faf3e"
   stages:
     - stage: path
       stageUuid: "0d947836-b2c5-84a1-8d0f-55d4b10c7462"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dad76b54-0bf4-8a92-9ef7-8c789dd73687"
     - stage: horo
-      stageUuid: "b3e5854c-e621-8ad0-a8e1-12a56f486075"
+      stageUuid: "2a38518f-aca5-8375-b78e-b99eccc9ee9f"
     - stage: seal
       stageUuid: "73da705a-b7ba-8bf8-9c71-e9e50c793c35"
     - stage: uuid
-      stageUuid: "9d10533c-86e5-8b36-956a-a455f22e195a"
+      stageUuid: "93bc4dda-7740-80bb-b395-18b8501f243a"
 version: 2
 ---
 # compass — the self-generating navigation (ask, and it points to the answer)

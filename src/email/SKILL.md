@@ -2,11 +2,11 @@
 name: email
 description: Use when reasoning about email — Email address.
 atomPath: email
-coordinate: "email · 8/crest · 256e9217"
-contentUuid: "ff3f6bc8-022f-5ead-9e50-a588e840d6cd"
-diamondUuid: "a0f14cbf-a277-8d11-95a3-a3cb0e1bdb24"
-uuid: "256e9217-9149-824e-aeae-5fe428731e3d"
-horo: 8
+coordinate: "email · 5/round · 832fc058"
+contentUuid: "39b82460-e8e6-563a-8a02-962db205dd54"
+diamondUuid: "aece0b8f-f857-869d-94ef-5fe62cd2a48e"
+uuid: "832fc058-ccbf-8312-8549-b96e795190b2"
+horo: 5
 typography:
   partition: email
   bondDegree: 16
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ab1e2802-06a7-8a39-be64-5a3c428928e9"
+  computationUuid: "86171373-7396-8b83-a5d9-9e23437fdda2"
   stages:
     - stage: path
       stageUuid: "f0d4101a-7708-8880-a02c-2e2d4db8dfa1"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "763bfc80-e528-865d-9839-d8c90097f5a0"
     - stage: horo
-      stageUuid: "4e1a2ef8-1d87-892a-9b97-a0c76bee2842"
+      stageUuid: "90beffde-3034-8008-b2d8-7d17129a6d7b"
     - stage: seal
       stageUuid: "e8e7bbeb-e540-8275-ad2c-1db9c53ca8db"
     - stage: uuid
-      stageUuid: "beb7c833-2937-8d3c-9b6b-96d6605de184"
+      stageUuid: "15578f11-644f-86be-944a-a69e1fdd6079"
 version: 2
 ---
 # email

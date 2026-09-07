@@ -2,11 +2,11 @@
 name: contraindication
 description: "Use when reasoning about contraindication as a medical facet of medical — vocabulary pivot to @/contraindication; nested not duplicated."
 atomPath: "medical/contraindication"
-coordinate: "medical/contraindication · 1/base · afe411d9"
-contentUuid: "cdf01421-a53b-5427-8962-5c87e4d5ceb4"
-diamondUuid: "f7568727-b6cc-8c8a-a952-8d4c7a1fce3d"
-uuid: "afe411d9-1a4a-8f0e-865d-c6954ff69952"
-horo: 1
+coordinate: "medical/contraindication · 7/descent · 23b02702"
+contentUuid: "bbf34a47-7910-5db5-9527-332d3bc767cd"
+diamondUuid: "c24c0a1c-6208-8eba-8509-495a0a552501"
+uuid: "23b02702-237c-8d08-914e-1ffcf6ae1f95"
+horo: 7
 typography:
   partition: medical
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8729bf8b-e40a-8045-97dc-fae75b45514d"
+  computationUuid: "0aed9785-9a95-8fff-b6c4-5bdfde73b0d4"
   stages:
     - stage: path
       stageUuid: "d1eecb00-b6fb-886b-8bc2-f18a868785e0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2601e907-af3c-8802-bd0d-82faa2588dbe"
     - stage: horo
-      stageUuid: "4f264676-e69a-81d3-ac2e-dce499c1f6f4"
+      stageUuid: "101c16b9-d5a7-8608-b03f-4e1e6112710e"
     - stage: seal
       stageUuid: "2aafbb85-9f7b-887c-8ace-e2993753985d"
     - stage: uuid
-      stageUuid: "7d29a524-3c4a-876e-bfcc-9fb8d15eb502"
+      stageUuid: "8e26fd70-6c37-8b77-97fa-fd5fe3734adf"
 version: 2
 ---
 # medical/contraindication — medical facet

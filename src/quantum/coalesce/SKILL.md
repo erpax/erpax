@@ -2,18 +2,18 @@
 name: coalesce
 description: "Use when many API requests must be served without many API calls — content-addressed single-flight collapses identical concurrent work onto ONE upstream call and bounds how much runs at once. Emits MEASURED answers/tokens for amortize, which is what makes the FTL claim refutable. Run: tsx src/quantum/coalesce/index.ts"
 atomPath: "quantum/coalesce"
-coordinate: "quantum/coalesce · 8/crest · 3e736422"
-contentUuid: "bbddee91-37cd-5385-81f9-80d29d379af1"
-diamondUuid: "82da53aa-5679-8937-80df-91cbf8dc39cd"
-uuid: "3e736422-5f72-892e-b2d9-e5f08aef0fa2"
-horo: 8
+coordinate: "quantum/coalesce · 7/descent · 8848a922"
+contentUuid: "e9c716aa-81ff-5882-b9f7-bea1f2afcd6a"
+diamondUuid: "e9ea4b7f-6d82-818f-b7ca-d26580d85a04"
+uuid: "8848a922-1c09-8517-95a8-95262d2eaf9a"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "94b0e9c5-02aa-8344-9914-32b6c85937df"
+  computationUuid: "11b88ae4-ff0f-8254-bd9d-4a1ca75d04df"
   stages:
     - stage: path
       stageUuid: "742d7b1e-3ead-82eb-9a77-4d934cc999e4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b2d4ef7d-58a1-8b46-b819-b850e9c6474d"
     - stage: horo
-      stageUuid: "1a246d2c-983f-8967-b4e8-38f4873868ae"
+      stageUuid: "fa6d3733-a7f6-83b1-aca6-cf15dec67667"
     - stage: seal
       stageUuid: "395ce11a-b2b5-8bb8-a496-82b51c8a6eca"
     - stage: uuid
-      stageUuid: "6555b615-fdb2-8982-90c5-dabca643b207"
+      stageUuid: "0985f886-5aed-8463-b9d9-4a5529cb3613"
 quantum:
   superposition:
     - algebra
@@ -46,8 +46,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "94b0e9c5-02aa-8344-9914-32b6c85937df"
-    contentUuid: "bbddee91-37cd-5385-81f9-80d29d379af1"
+    computationUuid: "11b88ae4-ff0f-8254-bd9d-4a1ca75d04df"
+    contentUuid: "e9c716aa-81ff-5882-b9f7-bea1f2afcd6a"
 version: 2
 ---
 # coalesce — same content ⇒ same address ⇒ one upstream call
@@ -79,4 +79,4 @@ The coalescer's `amortizeInput` method returns what it **actually did**: `answer
 
 Composes: [[quantum]]/request · [[quantum]]/ftl · [[algebra]] · [[law]].
 
-<sub>content-uuid `bbddee91-37cd-5385-81f9-80d29d379af1` · account `quantum/coalesce` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9c716aa-81ff-5882-b9f7-bea1f2afcd6a` · account `quantum/coalesce` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

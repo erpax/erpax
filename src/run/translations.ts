@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "run",
-    "uuid": "417cf552-4866-8e38-bf09-9826aed763dd",
+    "uuid": "97134eba-bc5a-8c60-b29a-99baca47a22e",
     "words": [
       "run"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling one execution of a batch process — a payment run, payroll run, or scheduled job run — the singular of the runs collection; one bounded pass that gathers a set, authorises it, executes, and reconciles on a lifecycle.",
-    "uuid": "0c313991-9b64-8770-b635-54652f0f029d",
+    "uuid": "edb1ec67-79ad-8e88-a191-9f72ceda4ffa",
     "words": [
       "use",
       "when",

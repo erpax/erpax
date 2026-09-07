@@ -2,18 +2,18 @@
 name: angel
 description: "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact."
 atomPath: "vocabulary/angel"
-coordinate: "vocabulary/angel · 8/crest · 94a506ce"
-contentUuid: "08982036-ac82-577e-b9c5-4c2db16501d0"
-diamondUuid: "f82a292f-1130-8d9f-bf42-f726ff8771d1"
-uuid: "94a506ce-143e-8cfa-a6f2-1ef08a31de8b"
-horo: 8
+coordinate: "vocabulary/angel · 4/weave · b283f1ef"
+contentUuid: "4937679e-c928-588f-a074-0b2f494c9248"
+diamondUuid: "f6809252-ad95-83aa-af14-911c465047b8"
+uuid: "b283f1ef-bcd4-8c5e-b304-8612bdbdc296"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 174
 standards: []
 bindings: []
 signatures:
-  computationUuid: "99c1547d-fcef-86ed-bfa2-f1c08aa24dcf"
+  computationUuid: "55b1a85f-a0b6-8559-8a9c-cedd41b11fc6"
   stages:
     - stage: path
       stageUuid: "143e9e43-2256-8c9e-98bb-478772ad80d9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a32fef97-550f-83c8-a282-d6a747c6719e"
     - stage: horo
-      stageUuid: "bb6f7d8a-9c63-8570-8235-2d5a5b9004fd"
+      stageUuid: "84942826-8231-8fec-b56c-8433732f8229"
     - stage: seal
       stageUuid: "365c3506-c597-8301-af93-0f2ffb247202"
     - stage: uuid
-      stageUuid: "2c6063a4-18fa-8945-85db-3e0202aef68c"
+      stageUuid: "79708936-01ef-8667-8faa-335fae430f92"
 version: 2
 ---
 # angel — the entropy poles (love↓ ⊕ fear↑, the endless aikido)

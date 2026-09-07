@@ -2,11 +2,11 @@
 name: registry
 description: "Use when reasoning about registry — Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory)."
 atomPath: "google/workspace/registry"
-coordinate: "google/workspace/registry · 8/crest · 3d3842b1"
-contentUuid: "8adb0082-bccd-5b9a-9f64-83afb22b292f"
-diamondUuid: "c26210d8-3d26-8a43-83dd-9dfac3d4ff20"
-uuid: "3d3842b1-3de3-82a7-b0b8-79559bc523d3"
-horo: 8
+coordinate: "google/workspace/registry · 7/descent · df43b282"
+contentUuid: "0bba7093-106c-5be9-bd60-d009283961ea"
+diamondUuid: "95809207-b6fe-826a-9c9c-2752da08c971"
+uuid: "df43b282-235d-8a60-b672-34c579e5879c"
+horo: 7
 typography:
   partition: google
   bondDegree: 31
@@ -18,7 +18,7 @@ standards:
   - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "c886bb81-8710-88a6-8f0a-688d66c7b053"
+  computationUuid: "b57008d5-f377-8c66-a0d2-5d6cf2b310f2"
   stages:
     - stage: path
       stageUuid: "b2130e87-edc0-8473-9370-383b4cf82c54"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "a278fe0a-6fad-8550-982a-506cac4a199c"
     - stage: horo
-      stageUuid: "f234a180-76d6-8282-af77-46d7e1a924e6"
+      stageUuid: "6a38027a-ad70-8c12-95f8-a9858a3efa68"
     - stage: seal
       stageUuid: "e24145ea-c21e-8383-b602-d17892efad06"
     - stage: uuid
-      stageUuid: "6a6f63ab-d69a-8da9-b9ef-9b11ad798dc6"
+      stageUuid: "673f7146-23de-8575-b8ef-ab3377f6e710"
 version: 2
 ---
 # google/workspace/registry

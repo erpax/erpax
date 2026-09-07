@@ -2,10 +2,10 @@
 name: requirement
 description: "Use when reasoning about requirement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/requirement"
-coordinate: "vocabulary/requirement · 5/round · f9750ea3"
-contentUuid: "627d6ff3-724e-5ad7-9d11-d4d9f836cd94"
-diamondUuid: "f85b440f-8f4c-872b-bce8-134623fec7e0"
-uuid: "f9750ea3-08e3-8d91-8ca4-7b233ea8b011"
+coordinate: "vocabulary/requirement · 5/round · 27353b0c"
+contentUuid: "c6a23a73-75bb-5e81-bd8a-54bc02b5f3c7"
+diamondUuid: "e244aa8d-90b0-8d1e-9206-a602cf993b6b"
+uuid: "27353b0c-eb68-8fa6-a972-30477e56d92b"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "437080b0-52e7-8925-a951-8dab9d9f12d6"
+  computationUuid: "38f20c57-7fdb-8ab2-9057-ecc025212226"
   stages:
     - stage: path
       stageUuid: "12b709b8-3825-867b-9815-26cff7a53c51"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1432a0e4-868c-87ef-a93e-8d368a3f6217"
     - stage: horo
-      stageUuid: "88836d14-90b1-8be8-843f-589b5f87741e"
+      stageUuid: "f8b6d21c-938c-83ff-a5b5-d95789325d3d"
     - stage: seal
       stageUuid: "2ff1517e-8dd5-83b7-b982-6b78633caba1"
     - stage: uuid
-      stageUuid: "7c23d325-216c-876b-b289-27f63ca4cf4f"
+      stageUuid: "a79e21c0-f92f-8233-87cc-e4cceadf80e9"
 version: 2
 ---
 # requirement

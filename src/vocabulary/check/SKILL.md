@@ -2,11 +2,11 @@
 name: check
 description: "Use when reasoning about check as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/check"
-coordinate: "vocabulary/check · 1/base · f198c218"
-contentUuid: "fd420f73-ba3f-536c-8040-c5e8bf4fe539"
-diamondUuid: "2a6a7274-33a0-87b8-98cb-5d987c2069da"
-uuid: "f198c218-3260-89fe-a9af-d12d42a8f783"
-horo: 1
+coordinate: "vocabulary/check · 2/share · 822f451a"
+contentUuid: "b95d50c2-daa1-5e16-ba68-571aab67cdcf"
+diamondUuid: "2e6626ff-63af-863a-8ba2-39800e258315"
+uuid: "822f451a-fa7e-8d1b-b1ea-98fa65618ef0"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4aadaa78-541d-8898-b5f7-a08602ac4454"
+  computationUuid: "84a2e540-b166-84be-bb8b-189cd713018d"
   stages:
     - stage: path
       stageUuid: "8387d392-6db5-8a37-8c13-d2901ff428f5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a4ff6cf9-969a-8260-a787-b9214dd4393c"
     - stage: horo
-      stageUuid: "c41e57f5-8f48-8534-acb3-7ef1500181e0"
+      stageUuid: "c72be392-4fb8-89be-8495-ba51ba476652"
     - stage: seal
       stageUuid: "60495e31-fd8a-8e72-a4c6-40dc7737c4d1"
     - stage: uuid
-      stageUuid: "c4526fb7-2476-86b4-8f93-342c835951e9"
+      stageUuid: "748e8727-4802-8094-8cbc-a3fe545d3fef"
 version: 2
 ---
 # check

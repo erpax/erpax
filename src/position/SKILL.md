@@ -2,11 +2,11 @@
 name: position
 description: "Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder."
 atomPath: position
-coordinate: "position · 5/round · 33db6122"
-contentUuid: "3dfeb7e5-5201-5c83-980c-ff345fb7522d"
-diamondUuid: "f8115cab-6d56-8044-9a8c-d3699e9dbb7b"
-uuid: "33db6122-bf32-889b-8f8e-041c214b4af1"
-horo: 5
+coordinate: "position · 1/base · 9e54e2e6"
+contentUuid: "64f0c354-7d94-5dc2-9595-7a5ac08bd106"
+diamondUuid: "9610e375-4141-8500-9174-83b6a9587d20"
+uuid: "9e54e2e6-a2ea-8655-b289-3cac208b054c"
+horo: 1
 typography:
   partition: position
   bondDegree: 28
@@ -19,7 +19,7 @@ standards:
   - "UN COFOG (Classification of the Functions of Government) — the `function` code"
 bindings: []
 signatures:
-  computationUuid: "38b8418d-04bf-8b8c-9f96-2093bbcaa253"
+  computationUuid: "a47b0594-effb-89f3-9111-54c6d9f66e2e"
   stages:
     - stage: path
       stageUuid: "a83cbf2d-83e1-8233-a8fb-88f785b66b9f"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "26343548-29c8-8397-9c33-50ba322c2fda"
     - stage: horo
-      stageUuid: "f35cdd82-00c8-8e7d-a718-67555039b07a"
+      stageUuid: "de48a57e-c881-8e0f-b894-a12bc19baa07"
     - stage: seal
       stageUuid: "8fb4e8d2-01a7-8ca5-9e88-310a0b0234a7"
     - stage: uuid
-      stageUuid: "5f3576bf-611b-8b8f-ac90-3ae1bf1249bd"
+      stageUuid: "c4ba6f91-1a69-802f-884f-6a28f9b1830b"
 version: 2
 ---
 # positions — the harmonic ladder, filled, where government and society are one

@@ -2,18 +2,18 @@
 name: button
 description: "Use when reasoning about button — The button that fills an empty install. Its whole design is the guard around a single irreversible action: seeding writes demo content into a live database, and running it twice…"
 atomPath: "before/dashboard/seed/button"
-coordinate: "before/dashboard/seed/button · 5/round · 11692050"
-contentUuid: "375363b3-4f3e-5e90-b732-776a07f15ecb"
-diamondUuid: "36f39b3c-97a9-82bd-9a2b-eeb97a3e9d4b"
-uuid: "11692050-0af5-87f7-9f42-17908fa50a92"
-horo: 5
+coordinate: "before/dashboard/seed/button · 2/share · 41618bdf"
+contentUuid: "b44e398e-cba7-5d24-83b9-d97a11203df1"
+diamondUuid: "0baf1ef9-8d0c-878c-b9c0-a014914b8ac1"
+uuid: "41618bdf-5457-8034-9676-9d433db641b4"
+horo: 2
 typography:
   partition: before
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e3464bb0-ddd8-87fa-8082-6c86610938b4"
+  computationUuid: "b1b8c7f3-5647-8bfb-a5b2-ee9cc689266d"
   stages:
     - stage: path
       stageUuid: "d2b34afc-4309-817b-aa66-9206f2238dbc"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b21c33f2-ad0b-80cd-af0b-3a1377cd2b46"
     - stage: horo
-      stageUuid: "95813e59-8356-8004-937a-82c1f9dbbae2"
+      stageUuid: "2ba81e8b-a434-8183-bf66-8a1823386291"
     - stage: seal
       stageUuid: "bbe04b13-1ba4-870a-a37a-b65bed7bdf7e"
     - stage: uuid
-      stageUuid: "26e025e0-ebda-8f7f-98c0-4ef85296f4d5"
+      stageUuid: "0c0843cf-56cb-8ddc-a38b-298b84504ea8"
 version: 2
 ---
 # before/dashboard/seed/button — seeding is destructive, so it may happen exactly once

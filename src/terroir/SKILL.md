@@ -2,10 +2,10 @@
 name: terroir
 description: "Use when the place gives the produce its character and price — terroir: the area-specific soil, climate, topography, and practice that make a product distinctive (OIV). Expressed legally as the appellation / AVA / PDO (a certification over a delimited territory); the perennial/viticulture twin of provenance and a land-value premium."
 atomPath: terroir
-coordinate: "terroir · 4/weave · b6539eb5"
-contentUuid: "cfa1c18a-b3bf-56e5-abe4-d4b4240c793d"
-diamondUuid: "c4eb8b94-cc94-8ec1-b15f-32614308767d"
-uuid: "b6539eb5-fd5a-8195-aaea-113d207cbd1a"
+coordinate: "terroir · 4/weave · a76fceb7"
+contentUuid: "046c4d44-9bd6-5ecb-b0c4-f54d7eab7947"
+diamondUuid: "bdd79494-a18e-8f79-8543-dfd238beaf96"
+uuid: "a76fceb7-7be6-8593-b336-b657e0eb80fd"
 horo: 4
 typography:
   partition: terroir
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3b6d438b-be75-8238-8b4f-a6c4f6e7ce2c"
+  computationUuid: "00f8593f-34d9-80b4-92c9-7c65e7ad511a"
   stages:
     - stage: path
       stageUuid: "9e4302b3-ac23-87ba-b45a-5b1167f1be18"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "379a8b0e-a0eb-8152-98af-088b974b9217"
     - stage: horo
-      stageUuid: "2e174e6d-e9ef-803a-8675-be071f2c2a78"
+      stageUuid: "c471bf57-3153-8b60-8238-ac06b3511df4"
     - stage: seal
       stageUuid: "4b54dde3-53a1-8cac-bdd3-1c2fab4a5426"
     - stage: uuid
-      stageUuid: "59e176c7-c049-89b6-bd96-9328bbbb7714"
+      stageUuid: "4000a116-ea27-8dad-8aee-f21c7dc2e0e7"
 version: 2
 ---
 # terroir — the place-as-value: where land gives produce its character

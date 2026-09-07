@@ -2,11 +2,11 @@
 name: alcohol
 description: "Use when reasoning about alcohol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/alcohol"
-coordinate: "vocabulary/alcohol · 8/crest · 0b5818aa"
-contentUuid: "bffbd743-f059-5daf-bd09-c0c7e6489983"
-diamondUuid: "673ad36a-fb94-866d-9065-7290e0f93424"
-uuid: "0b5818aa-bf41-8d0c-ae8b-87da774d276e"
-horo: 8
+coordinate: "vocabulary/alcohol · 4/weave · 4b1589e2"
+contentUuid: "40f8b79f-b159-5f02-8d40-3fa39f5b32de"
+diamondUuid: "afb742e3-4cda-8f70-8a76-2721465646e4"
+uuid: "4b1589e2-b7ec-81bb-a0d3-5c1a2df8f0d8"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9167ec38-f215-8692-a9b1-52c277f46737"
+  computationUuid: "38a7f520-f445-8bb9-b958-033697a9cce0"
   stages:
     - stage: path
       stageUuid: "3619e9e1-9d3c-89ea-80f1-5d3042cea3af"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "91b96680-541d-84f8-b662-2e4ae71d9b6d"
     - stage: horo
-      stageUuid: "b290e0c4-3b2d-8419-81a7-a4360a6cc1f6"
+      stageUuid: "81f759ea-1d86-81ed-88c5-df3bae84eba6"
     - stage: seal
       stageUuid: "f1f019a7-9a70-897a-b5a1-b247a8eb7677"
     - stage: uuid
-      stageUuid: "4f6b47e8-7973-8923-a11f-179c9ad43f57"
+      stageUuid: "78063e57-97a6-8776-9bcb-db28de99dd41"
 version: 2
 ---
 # alcohol

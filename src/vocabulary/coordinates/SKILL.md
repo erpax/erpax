@@ -2,11 +2,11 @@
 name: coordinates
 description: "Use when reasoning about coordinates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/coordinates"
-coordinate: "vocabulary/coordinates · 1/base · 9714ab1a"
-contentUuid: "07a22014-ad11-50ea-849f-c3018c176cf7"
-diamondUuid: "f6a3e3e2-043a-8bcf-beba-6d296a14e1b3"
-uuid: "9714ab1a-66f9-86a4-93a8-667eca02e70f"
-horo: 1
+coordinate: "vocabulary/coordinates · 7/descent · 8a7346ad"
+contentUuid: "b3c97ece-0640-525e-b81a-e1634759560d"
+diamondUuid: "67a1c848-ee54-88ac-8cfc-a8ea7aaee5cd"
+uuid: "8a7346ad-f895-88f8-9daf-b66c0e27b882"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7a1e3d59-096d-8cb9-9060-9f1dcce04f6e"
+  computationUuid: "76009d0a-0624-890f-a9e8-701143fb7dd4"
   stages:
     - stage: path
       stageUuid: "82c59abe-8f27-828d-9abb-fc3fa969cd52"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "290ca34d-b905-88bb-81e7-ce0347529d1e"
     - stage: horo
-      stageUuid: "c9bcaf89-bb17-88a2-9310-10bd081f216e"
+      stageUuid: "ec55cd45-cbfe-82e3-94db-39222e244594"
     - stage: seal
       stageUuid: "e47d04b8-0fc3-8aea-bcee-3128a3a06914"
     - stage: uuid
-      stageUuid: "fc333820-8daa-8a5f-9d4a-22715f7e38cf"
+      stageUuid: "9c30cdfc-ac5c-8189-b060-f2d07d71d897"
 version: 2
 ---
 # coordinates

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disambiguating",
-    "uuid": "73db5778-3946-8186-9654-226c2357618b",
+    "uuid": "45ecb66a-ff5c-829a-91bf-8459490f3988",
     "words": [
       "disambiguating"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about disambiguating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "adaf7a7a-7150-8c0c-b285-9e0bc77aa4f3",
+    "uuid": "0ed08043-f9bd-8b61-bea6-91e30022247f",
     "words": [
       "use",
       "when",

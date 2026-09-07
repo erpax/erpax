@@ -2,10 +2,10 @@
 name: analytics
 description: "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them."
 atomPath: analytics
-coordinate: "analytics · 5/round · 6e5413d5"
-contentUuid: "7c2e039f-c41f-55bb-860a-94c56f448eb6"
-diamondUuid: "46ad0225-ff31-824c-b5df-d84d0ab4b834"
-uuid: "6e5413d5-e477-8fcd-8320-76a029f12d0c"
+coordinate: "analytics · 5/round · 01df0f81"
+contentUuid: "d9dfc392-56af-56ef-8a1a-40d00f4a486d"
+diamondUuid: "c1d49a24-85f8-8836-bd60-ff8449298f7c"
+uuid: "01df0f81-6e4a-8ee4-8e80-ee31c180200f"
 horo: 5
 typography:
   partition: analytics
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e57458d3-0642-881e-8465-11d3fa7317fa"
+  computationUuid: "0daaef1b-0235-8b61-bb12-87afa5f5289c"
   stages:
     - stage: path
       stageUuid: "9e734818-9a0d-8503-86f7-f75d6ca272fd"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "a3ef7876-eeb4-8a41-a0f0-4b13593ed3af"
     - stage: horo
-      stageUuid: "5fbb6a79-4311-8838-b07c-21c49dc49159"
+      stageUuid: "883cb6aa-934c-8bf5-84e2-5f931810430f"
     - stage: seal
       stageUuid: "b3e01a1d-08b1-836f-8530-effa1ed21d5f"
     - stage: uuid
-      stageUuid: "3a607cbb-332b-825e-b946-b082dc3ded31"
+      stageUuid: "e91ec643-f60e-8ef4-ba6b-a05dee04bbcc"
 version: 2
 ---
 # analytics — the all-aspects analyzer

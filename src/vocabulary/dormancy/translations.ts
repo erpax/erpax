@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dormancy",
-    "uuid": "f86b30c4-9a30-8d8d-8f8e-95b9a21d097e",
+    "uuid": "bfdf49c4-3b4a-8c9d-9390-88caf6d36953",
     "words": [
       "dormancy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the winter rest of a deciduous perennial — dormancy, the cold-requiring quiescent period; a cultivar must accumulate its chilling requirement (chill hours) before bud-break and a crop. The gate of the perennial's recurring season; where frost risk, pruning, and alternate bearing live.",
-    "uuid": "4ee0a97a-032a-8108-8dd3-307df920626d",
+    "uuid": "b29bea64-8a2d-865b-8996-f3a5042326ea",
     "words": [
       "use",
       "when",

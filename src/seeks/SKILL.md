@@ -2,11 +2,11 @@
 name: seeks
 description: Use when reasoning about seeks — A pointer to products or services sought by the organization or person (demand).
 atomPath: seeks
-coordinate: "seeks · 4/weave · 33ada743"
-contentUuid: "cd442abc-3e00-508c-a349-bfc9bc3b066a"
-diamondUuid: "ea670274-8453-85bf-afd9-e118b731e32f"
-uuid: "33ada743-de9c-8e92-acf7-a7fc3ceb932e"
-horo: 4
+coordinate: "seeks · 8/crest · 18ffc44b"
+contentUuid: "a9f2deeb-4de9-5dc0-a562-3b62dbdbaddb"
+diamondUuid: "508467ab-075c-8b21-9adb-c86141fd07bd"
+uuid: "18ffc44b-a7b5-81fe-b54f-96cf7a63ffb3"
+horo: 8
 typography:
   partition: seeks
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0669ed79-446e-847a-ae07-eaced3deb3bd"
+  computationUuid: "0477c71a-df28-8978-80eb-12aa2c46aae6"
   stages:
     - stage: path
       stageUuid: "8f49893b-fc74-8a21-be62-d2606a944573"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5dad98c0-c9e9-8b40-bf46-eb71aeca78ab"
     - stage: horo
-      stageUuid: "8bb99562-33cc-8efe-961a-f5e00298d5b3"
+      stageUuid: "b21e306e-28c9-80e6-b36e-b9d79b175004"
     - stage: seal
       stageUuid: "06480c61-7b71-8e02-a521-f999eabd4ef3"
     - stage: uuid
-      stageUuid: "9ea16036-696d-87a3-a92a-d30fd0b8fbb6"
+      stageUuid: "cd729595-2227-80a7-b539-53ed1ab2df6d"
 version: 2
 ---
 # seeks

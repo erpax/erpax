@@ -2,11 +2,11 @@
 name: airbags
 description: "Use when reasoning about airbags as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/airbags"
-coordinate: "vocabulary/airbags · 2/share · 12c8439b"
-contentUuid: "31954477-2489-5768-afae-ff9e4adb9473"
-diamondUuid: "c17aec20-6e54-8c9c-9071-befa8d7f9903"
-uuid: "12c8439b-6b7f-89e9-8c36-af9f53ce5424"
-horo: 2
+coordinate: "vocabulary/airbags · 8/crest · 01a9fed5"
+contentUuid: "f9fb8fa4-80f6-559a-834f-f5cb67d8c768"
+diamondUuid: "9b0da925-166a-8779-a556-1e2a0027f949"
+uuid: "01a9fed5-3525-8c1c-b5bd-08c38687f2e8"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "080e88e1-fd5b-8435-92e2-ef7bf13dca57"
+  computationUuid: "a230e1de-62fd-8772-93f7-40b8f2638eea"
   stages:
     - stage: path
       stageUuid: "4c0d00a8-762b-88f5-99e6-3c863c821f57"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "86e8fc12-060b-83be-903e-9af077937637"
     - stage: horo
-      stageUuid: "46a44003-8930-80ce-ba60-cdf403b9f778"
+      stageUuid: "22d7e678-0be1-8d0a-8c3c-6fc3d6657edc"
     - stage: seal
       stageUuid: "4383ac88-18ba-8d1e-9621-42cf4db308c6"
     - stage: uuid
-      stageUuid: "024cac3f-fc7d-8d3b-bad2-6d46c14f0515"
+      stageUuid: "c44a0a78-2cdc-8eae-b068-d5d09af04c3a"
 version: 2
 ---
 # airbags

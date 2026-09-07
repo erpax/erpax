@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cross",
-    "uuid": "22b7e6e4-7539-8cb3-9537-c6f860582889",
+    "uuid": "efd1e255-43ee-87c9-9360-3aa0aefe2714",
     "words": [
       "cross"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when authorising \\\"who can do what\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role.",
-    "uuid": "91edf6e5-cb26-8c03-9e74-91e61b5dd327",
+    "uuid": "883138b9-6aae-8611-b15f-c182786ebf87",
     "words": [
       "use",
       "when",

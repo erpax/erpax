@@ -2,11 +2,11 @@
 name: exif
 description: "Use when reasoning about exif as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/exif"
-coordinate: "vocabulary/exif · 7/descent · 4c4a4774"
-contentUuid: "2e06ec5b-0275-54d0-9e9a-4c6b6a33e4cd"
-diamondUuid: "4f9fa042-0548-8f8b-b56c-55178d40e768"
-uuid: "4c4a4774-d87b-8f49-9088-4e7c4b342bd4"
-horo: 7
+coordinate: "vocabulary/exif · 5/round · 5dba8339"
+contentUuid: "5b73321a-0dc2-56fd-a19b-7858cf53c17a"
+diamondUuid: "d78a5766-6980-87e4-b9d9-ab5876e6ac23"
+uuid: "5dba8339-f4db-89ad-bb37-a9a14b8d575c"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7571fb24-27a1-88cc-9968-e2e5fd3e16b2"
+  computationUuid: "5b30ca85-a863-800e-8a9b-49ea2a598ee5"
   stages:
     - stage: path
       stageUuid: "0443fb69-795f-8263-8180-29127eae12ab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9bb4f0e1-8006-84bb-90b1-a3e9e2553618"
     - stage: horo
-      stageUuid: "15f834dd-3104-8e11-a7ff-899f837ef76c"
+      stageUuid: "05a8da5a-deea-8391-bb15-23fc51e43b11"
     - stage: seal
       stageUuid: "1bace15a-930c-84d7-86b7-41d2f2e9c4b8"
     - stage: uuid
-      stageUuid: "b372b150-369b-8ad9-af3e-780d96416da6"
+      stageUuid: "409af781-3d52-8f30-a0c4-adfa57df1606"
 version: 2
 ---
 # exif

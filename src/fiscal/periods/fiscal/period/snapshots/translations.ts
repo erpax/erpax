@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "snapshots",
-    "uuid": "e35d6f12-9159-8d6d-8c77-394bebc18746",
+    "uuid": "78197b6a-fe3a-840e-a5eb-41bc9834fa13",
     "words": [
       "snapshots"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.",
-    "uuid": "c13766b7-24a1-8a1e-a5fd-6808551a5fc4",
+    "uuid": "80509bb5-f45b-8c6a-9067-b512e229142c",
     "words": [
       "use",
       "when",

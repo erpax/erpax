@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "audio",
-    "uuid": "8d115588-f4c0-8412-8553-05fc518fae80",
+    "uuid": "e60449c2-3eca-8f12-9642-5f24b7e13f45",
     "words": [
       "audio"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about audio — An embedded audio object.",
-    "uuid": "8f927e73-3389-8d0a-b704-45eb9b8fd1b4",
+    "uuid": "ad52b136-8b2e-8fbb-a1e2-abe9f050c99a",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: vedanta
 description: "Use when reading Vedanta as a sub-diamond of hinduism — the crown philosophy of the Upanishads: atman is brahman (tat tvam asi), the self IS the whole, non-duality. This is literally erpax's identity law at the metaphysical scale: a thing IS its source, content-uuid = self. A facet-diamond of the hinduism archangel."
 atomPath: vedanta
-coordinate: "vedanta · 8/crest · cc9398b9"
-contentUuid: "60fd71bd-2ea5-577d-90eb-85fc17af4a9f"
-diamondUuid: "6b8a4090-c287-8973-9789-83e1c65c2fb2"
-uuid: "cc9398b9-2679-8023-8d49-5071788ba39c"
-horo: 8
+coordinate: "vedanta · 2/share · e75c5f7b"
+contentUuid: "582d6af0-2385-57b9-9d8e-4db64d778f1b"
+diamondUuid: "f7ea5201-3c0b-8b2f-b5b6-338ba0a3f8b1"
+uuid: "e75c5f7b-3ce3-85aa-9b02-047994799332"
+horo: 2
 typography:
   partition: vedanta
   bondDegree: 50
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2d0c14d1-8440-80f2-93bb-488ae75ee795"
+  computationUuid: "bb936e00-4097-8f4d-aecd-d5813f137df1"
   stages:
     - stage: path
       stageUuid: "f4bf8a63-0954-8b25-8827-ad2a04c0b361"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c38cee88-db81-811b-b4a9-2026a8f48970"
     - stage: horo
-      stageUuid: "c0ae2b5a-e03b-8621-bfe7-2e140f005c3d"
+      stageUuid: "a6fcabf5-f438-86ab-9d18-071abb7b61f6"
     - stage: seal
       stageUuid: "cbb0b90d-f65f-8188-8aec-bf7cdf3e56ed"
     - stage: uuid
-      stageUuid: "eec3db24-aa5a-8b82-978d-f9c697914101"
+      stageUuid: "f6f2dbed-3832-8828-aae3-9f3363061256"
 version: 2
 ---
 # vedanta — the self is the whole; non-duality

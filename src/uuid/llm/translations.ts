@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "llm",
-    "uuid": "57f9d253-fd5f-8666-92f8-a3fedfeeb66b",
+    "uuid": "879f0ec2-505a-896e-9126-5723b04688e3",
     "words": [
       "llm"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload.",
-    "uuid": "d68bc28b-d967-8090-bbad-1041b332892c",
+    "uuid": "3d6c90f8-0e1f-8ef8-8a8a-4db9188d4ad3",
     "words": [
       "use",
       "when",

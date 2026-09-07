@@ -2,11 +2,11 @@
 name: ticketed
 description: "Use when reasoning about ticketed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: ticketed
-coordinate: "ticketed · 4/weave · 3e7de703"
-contentUuid: "45733507-af2b-593b-b07d-3d639d3d838d"
-diamondUuid: "e38a5c93-2c1c-8126-9b34-af7505b12903"
-uuid: "3e7de703-3e54-8dcf-b517-97848c093683"
-horo: 4
+coordinate: "ticketed · 1/base · bd40c416"
+contentUuid: "2e4dc651-b6c8-53a7-a37b-ec5c805ffc23"
+diamondUuid: "017eee6a-8982-80a4-858c-8eed9fd125ba"
+uuid: "bd40c416-39ae-8291-953a-3c5a759e4f4c"
+horo: 1
 typography:
   partition: ticketed
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "692a1cf1-6443-8ac6-85cf-5dc5c23fcaba"
+  computationUuid: "f326eb82-441e-8681-b577-71a3b94ef6b6"
   stages:
     - stage: path
       stageUuid: "11380e88-994e-82ba-aafc-9fa9210c278b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5540d954-4988-8434-a082-f74dee9ce805"
     - stage: horo
-      stageUuid: "e58c5041-39c0-8e8d-8a8a-641b2e3067b5"
+      stageUuid: "ce8b9ac9-2774-8f7a-bd8a-da9065ca33e9"
     - stage: seal
       stageUuid: "b0c0aa09-ac42-8b04-a90c-6b60ff952769"
     - stage: uuid
-      stageUuid: "c3cff588-0442-816b-9ca1-c7eedd454dc8"
+      stageUuid: "3d4c538f-9c2e-8d3e-a43c-50ed853a9323"
 version: 2
 ---
 # ticketed

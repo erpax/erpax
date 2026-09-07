@@ -2,18 +2,18 @@
 name: four
 description: "Use when reasoning about four — Four Color Theorem via basis decomposition - geometry + graph theory"
 atomPath: four
-coordinate: "four · 5/round · e1cba8cb"
-contentUuid: "88291991-e0c1-58a1-b8b8-5e27b61ab8b5"
-diamondUuid: "85a18703-4750-8801-924d-881c79380346"
-uuid: "e1cba8cb-d6a6-8203-a789-d7ffc2c3f29c"
-horo: 5
+coordinate: "four · 2/share · ffbc8dbb"
+contentUuid: "bdcb0c75-3e2a-548d-8cbb-602a61a9aa92"
+diamondUuid: "2a9f7ee3-b671-883e-b0f6-31fc74bd24e3"
+uuid: "ffbc8dbb-91d3-8b6b-9d16-a9460de842a1"
+horo: 2
 typography:
   partition: four
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "635a02f8-bbbd-8be1-ba25-f226dd3d3a0b"
+  computationUuid: "59fe538e-5ab2-8221-8454-5ebf5fb1d98c"
   stages:
     - stage: path
       stageUuid: "72a5d723-621a-85db-b793-510eba40aba6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "318aafda-2d29-8959-b0f8-94696671445a"
     - stage: horo
-      stageUuid: "03a8c9cc-460b-89e7-a709-6b0f28b5f908"
+      stageUuid: "f67e1a69-056c-8dbb-9f8a-baf8f165fefd"
     - stage: seal
       stageUuid: "6a2d0c41-cf77-8bd6-85bb-97f2b7ad3600"
     - stage: uuid
-      stageUuid: "b78d31bf-1b49-815d-988e-946dc71f089d"
+      stageUuid: "bb81c56c-9882-8b15-92f8-d4e4d7e93532"
 version: 2
 ---
 # four — Four Color Theorem decomposed into quantum basis

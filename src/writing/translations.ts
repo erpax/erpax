@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "writing",
-    "uuid": "1ecb91cd-4f24-836b-8123-dfeb30685bda",
+    "uuid": "5a4b8e09-291a-8f2a-95ee-815ebdbeaf04",
     "words": [
       "writing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when writing must be computed from sealed coordinates — debit/credit prose structure · law lines · wikilink density · eb/word from readme/paper.ts; never prose templates.",
-    "uuid": "9c5e181e-ff6d-88aa-b259-d3e1fd5fafa3",
+    "uuid": "14bdb4b1-6998-8732-ac4a-86c29c4a6385",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: normalize
 description: "Use when rewriting cross-unit relative imports to the uniform @/ alias before a move — so the single-word-folder migration becomes a pure @/old→@/new remap with no relative-depth that silently breaks. The address-law dry-clean; the matter is index.mjs."
 atomPath: "vocabulary/refactor/normalize"
-coordinate: "vocabulary/refactor/normalize · 5/round · 38522422"
-contentUuid: "1f6c887a-cd3b-5b9a-a0c3-5fb19dd6be6d"
-diamondUuid: "e928b317-8abb-8984-be67-ac9fe2e77b45"
-uuid: "38522422-1ad9-802c-8b14-99aa9bb8dbd6"
-horo: 5
+coordinate: "vocabulary/refactor/normalize · 8/crest · 5570bc8a"
+contentUuid: "61b49425-e2b2-52f4-a39b-73d11910e276"
+diamondUuid: "0677ac5f-6391-8ea9-9478-8d99c2da9916"
+uuid: "5570bc8a-cb74-8034-979c-b609043a2ab3"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "156044f0-fe65-8961-8b9c-f81cf307cd81"
+  computationUuid: "accb415e-9e0d-8982-944f-bc3a21613fc0"
   stages:
     - stage: path
       stageUuid: "1be1063c-ecf1-8699-8721-2e5a0dec1ad4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a1bf5b0d-7cf3-8723-90ff-84b2f9b64491"
     - stage: horo
-      stageUuid: "60296193-2b58-872b-8951-534a71f5d6f2"
+      stageUuid: "c9bd18a8-5f0f-8562-9a99-463531c032d3"
     - stage: seal
       stageUuid: "6fa71f57-c17e-86e2-86bd-e65489e948a5"
     - stage: uuid
-      stageUuid: "dfab8e2f-a0d8-8fc0-be0b-cd004e2a551f"
+      stageUuid: "d259d77b-7c41-8352-a244-4ff7604ecd87"
 version: 2
 ---
 # normalize — relative imports → the @/ coordinate

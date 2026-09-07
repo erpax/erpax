@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "paganism",
-    "uuid": "39e3f8a3-8d78-8b53-b88e-bfd3f28d826c",
+    "uuid": "12be00ef-1228-842c-a9f1-2eac5b0f0c74",
     "words": [
       "paganism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading paganism as a diamond of invariant atoms — the many gods as many names of the cycles and powers of nature, the wheel of the year, the sacred in sun and soil and season. The polytheist many-as-one: the many names resolve to one root. Covers the historic and revived nature-religions (Hellenic, Norse, Celtic, Wicca, druidry) as one principled umbrella.",
-    "uuid": "c2dbbeb1-ccc0-8c9d-a723-2e876bab3fea",
+    "uuid": "46ee78de-6815-8f51-9b03-36d9f12c61f4",
     "words": [
       "use",
       "when",

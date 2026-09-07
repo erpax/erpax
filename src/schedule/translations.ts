@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "schedule",
-    "uuid": "bdc15eea-3406-8d36-94a9-a419bfdbabd2",
+    "uuid": "345a593c-66b8-88ed-a3f1-bbee76e7d25b",
     "words": [
       "schedule"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when assigning work to calendar slots — resource schedules, shift rosters, project timelines, appointment booking. The time-coordinate commitment.",
-    "uuid": "6e3c3137-3511-86ff-9c23-8f846e8ac561",
+    "uuid": "26e92a20-1a4a-8015-95cc-2f886a53c32e",
     "words": [
       "use",
       "when",

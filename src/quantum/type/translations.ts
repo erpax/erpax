@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "type",
-    "uuid": "1de78624-1848-8f85-bccd-d613c6786993",
+    "uuid": "81b25f2d-8c44-8eec-9078-0c31fef9c542",
     "words": [
       "type"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about type identity on the matrix — a type as the content-uuid of its structural shape, so type-equality is uuid-equality (structural typing by content-addressing) and identical types merge.",
-    "uuid": "6411033f-c0d0-893a-b82c-77b7146b1329",
+    "uuid": "74713fad-fdfd-8e1a-aa84-1427be0ccf22",
     "words": [
       "use",
       "when",

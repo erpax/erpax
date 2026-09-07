@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "funnel",
-    "uuid": "02ba1370-e463-8bc8-a589-3af7ab275a1d",
+    "uuid": "155f800e-df57-82f9-962e-428ff30656b9",
     "words": [
       "funnel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage.",
-    "uuid": "397a2d1f-160b-8d29-84e4-e578143abe7e",
+    "uuid": "92ada271-5893-80dc-b33f-582186bbea22",
     "words": [
       "use",
       "when",

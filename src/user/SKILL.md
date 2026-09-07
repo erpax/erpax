@@ -2,11 +2,11 @@
 name: user
 description: "Use when reasoning about user as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: user
-coordinate: "user · 1/base · 185c74d8"
-contentUuid: "1b1efdfe-e653-5801-baba-61cf99592746"
-diamondUuid: "0ba72721-15ba-8b7d-98f1-8c39d31b9874"
-uuid: "185c74d8-50ba-8406-bcab-e281fa9dbfd4"
-horo: 1
+coordinate: "user · 5/round · 9dc21bcb"
+contentUuid: "712bc43d-0b73-5fde-b4e0-6229f3184fca"
+diamondUuid: "91f19d9c-9699-8b25-a181-b4aa9d407623"
+uuid: "9dc21bcb-7513-867e-81b4-22b4281cf4b3"
+horo: 5
 typography:
   partition: user
   bondDegree: 79
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b4f91442-9883-854f-97b7-92e32bfdd36b"
+  computationUuid: "644bb84f-5dc4-8b39-ba9b-433460198175"
   stages:
     - stage: path
       stageUuid: "9673b4b6-3fd1-8f4a-8ce8-d01f548dddcb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a223726b-6eeb-8c61-9198-3f54cec635c9"
     - stage: horo
-      stageUuid: "401bdb4c-8b15-8125-9e25-1a9b4a132321"
+      stageUuid: "f4bc5ed7-78e6-8df3-89ff-87eafc8e9b89"
     - stage: seal
       stageUuid: "3f76b8c4-42f8-8643-93de-f13a19a8829d"
     - stage: uuid
-      stageUuid: "af240be1-ca10-8cdc-8cdd-b0ddd6743628"
+      stageUuid: "141dfed1-a5ec-82f6-bf15-49330da19028"
 version: 2
 ---
 # user

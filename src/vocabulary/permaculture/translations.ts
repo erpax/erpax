@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "permaculture",
-    "uuid": "d71590b4-d9c6-8004-b001-2c116575a2c7",
+    "uuid": "5318ee05-1718-8b25-a69b-1444f8062ed4",
     "words": [
       "permaculture"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designing a whole farm as a self-sustaining ecosystem — permaculture: Mollison & Holmgren's design system (the three ethics earth-care/people-care/fair-share + 12 principles) and agroecology, arranging crops, animals, water, and structures into closed-loop guilds and zones so the system's outputs feed its own inputs. The design philosophy above the individual operations.",
-    "uuid": "44985f89-a9c1-869c-802c-513347a00b4c",
+    "uuid": "6e6de7a0-7fb8-8905-86ab-8e74157a6466",
     "words": [
       "use",
       "when",

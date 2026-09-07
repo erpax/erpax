@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "qtsp",
-    "uuid": "866d7382-4f50-80e1-bd41-5c0ed4bb6b60",
+    "uuid": "74f19349-9649-87d1-9562-36cf89cdcd98",
     "words": [
       "qtsp"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a notary check needs a qualified electronic signature or a qualified timestamp — the REAL wired eIDAS provider. Resolves the Bulgarian Trusted List from the EU List Of Trusted Lists (LOTL, no country hardcoded), parses the granted qualified services (CA/QC for signature, TSA/QTST for RFC 3161 timestamp), and verifies a named QTSP (BORICA B-Trust / Evrotrust / InfoNotary) holds one. Highest-leverage check: signature+timestamp are on EVERY document type. Honest boundary — verification is public and credential-free; actual issuance needs a QTSP account credential injected at deploy.",
-    "uuid": "23dd3d5e-0d16-87b7-bb89-c0bdd766c5bf",
+    "uuid": "8e274fea-585e-8cbf-b1c6-8777bf9ca4ab",
     "words": [
       "use",
       "when",

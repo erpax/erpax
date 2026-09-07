@@ -2,10 +2,10 @@
 name: quaternary
 description: "Use when enforcing the four-file folder law — an atom folder holds only SKILL.md, index.ts, test.ts, translations.ts; any other file is a violation to collide into its own atom."
 atomPath: "migrate/quaternary"
-coordinate: "migrate/quaternary · 7/descent · 78a414cc"
-contentUuid: "98d74898-bd3b-5161-82b0-b247456e37e5"
-diamondUuid: "cbe9b63a-40c1-8343-9693-798c36c7c4f2"
-uuid: "78a414cc-335c-8d91-bb77-3b887747c6f8"
+coordinate: "migrate/quaternary · 7/descent · 652048c8"
+contentUuid: "a148bcc7-66d6-5fde-9a96-2080d1320a1f"
+diamondUuid: "b0fd413c-9320-88aa-8b72-c2a107aa7ec7"
+uuid: "652048c8-e48d-840a-ae64-d5e9219d40f4"
 horo: 7
 typography:
   partition: migrate
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.1 functional-completeness"
 bindings: []
 signatures:
-  computationUuid: "535330b1-cb8e-8189-a039-30f49ce81612"
+  computationUuid: "314ae9fc-4771-8b64-a97c-e7255a9172dd"
   stages:
     - stage: path
       stageUuid: "85aa950a-5376-8475-8305-c9defe10f675"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d957f2f4-e76e-8f03-9cd1-2d6b440a1b05"
     - stage: horo
-      stageUuid: "ea437d1f-45cc-8ad7-87b8-c30d05b5a3ac"
+      stageUuid: "dfbb3301-3398-8428-87d3-49d6bafbd7b3"
     - stage: seal
       stageUuid: "c92351d2-9637-8abf-af46-5751868fe4e6"
     - stage: uuid
-      stageUuid: "2b90e732-9cb6-8d34-8729-3a23f1aa849d"
+      stageUuid: "63f9c4d7-6bc0-8f27-a5ca-8c869fc3515b"
 version: 2
 ---
 # quaternary

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recognition",
-    "uuid": "c9e6aa29-eb6e-843c-955f-07ac83f5ca0b",
+    "uuid": "29139f9c-7a8d-8e09-9755-7899f3dd07ac",
     "words": [
       "recognition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements",
-    "uuid": "d842fd76-9faa-83c2-a57d-00e5c1cd429b",
+    "uuid": "848f1443-e634-898b-98d1-1d94b8c1d891",
     "words": [
       "use",
       "when",

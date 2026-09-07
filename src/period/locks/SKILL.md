@@ -2,11 +2,11 @@
 name: locks
 description: "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection."
 atomPath: "period/locks"
-coordinate: "period/locks · 5/round · 7d78661c"
-contentUuid: "4e515397-f079-5b48-93bc-9da065ee4218"
-diamondUuid: "0679ad0d-3fd3-8491-867d-b2db5220d689"
-uuid: "7d78661c-5bd4-813d-a013-187e00879df4"
-horo: 5
+coordinate: "period/locks · 4/weave · a24c55ad"
+contentUuid: "cfb3a641-c3ce-5100-b440-79c94a4c9c0b"
+diamondUuid: "6f2de0e6-078d-8b4b-8278-95f30bbabc51"
+uuid: "a24c55ad-302c-82eb-a2a1-124954b40528"
+horo: 4
 typography:
   partition: period
   bondDegree: 12
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "28e33f73-6937-88e8-b47b-e2773f3e5d4b"
+  computationUuid: "50fccca0-a3b8-8203-ae62-006b73327169"
   stages:
     - stage: path
       stageUuid: "cc1e9d80-676b-8778-8069-f436d1fe284c"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "b6768726-1f07-8c78-86d0-8ae3fe4a7b14"
     - stage: horo
-      stageUuid: "e289d284-66ee-89a0-90f1-ce13d14252c4"
+      stageUuid: "196f7db5-8317-8aee-ba81-7ef84d7d60cd"
     - stage: seal
       stageUuid: "af212e82-93c4-83da-9683-6e0fb9a204b2"
     - stage: uuid
-      stageUuid: "e14d4f00-1960-8c11-9e7c-0f6fd9a60834"
+      stageUuid: "3e2aae2b-33b6-828e-a6af-936e756afc68"
 version: 2
 ---
 # period-locks

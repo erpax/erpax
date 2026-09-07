@@ -2,10 +2,10 @@
 name: metadata
 description: "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag."
 atomPath: "vocabulary/metadata"
-coordinate: "vocabulary/metadata · 2/share · 09c61ace"
-contentUuid: "043c676e-6ff2-5d2e-ac1b-d900ea961249"
-diamondUuid: "944b7c55-5164-8638-a400-a8d3065b0038"
-uuid: "09c61ace-d612-8515-b590-a387e16febb2"
+coordinate: "vocabulary/metadata · 2/share · 1deb91fb"
+contentUuid: "b6e9fee3-4b44-56e6-9050-37e193ccfaa1"
+diamondUuid: "999fed17-e8e4-8859-9ec9-0a3151c01244"
+uuid: "1deb91fb-7a29-84f4-b0bf-c64d88912871"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5d5daf50-6095-820a-8469-ffdd3e95fa94"
+  computationUuid: "59e7a7ce-887c-8b6d-8f9a-8cbe3bb77d8e"
   stages:
     - stage: path
       stageUuid: "9e2a40ce-7996-8b4f-8ce0-bb10bad86e8f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ce8af7ea-804b-8071-bc1f-74ca8104d8da"
     - stage: horo
-      stageUuid: "e1604ed3-5cb7-84b9-99fb-25250fdc1dcc"
+      stageUuid: "ca912849-10c3-8a21-8e0f-d3177e10441a"
     - stage: seal
       stageUuid: "01043b60-fb51-8128-85c6-e4eeaf9be713"
     - stage: uuid
-      stageUuid: "60d23bb9-5571-8e0a-958a-e69d85eedf2d"
+      stageUuid: "618d8f0d-d5e3-8425-8e6b-eb0714c1b7c4"
 version: 2
 ---
 # metadata — open attributes (the escape hatch, used last)

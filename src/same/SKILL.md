@@ -2,11 +2,11 @@
 name: same
 description: "Use when reasoning about same — URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website."
 atomPath: same
-coordinate: "same · 4/weave · 9727b43b"
-contentUuid: "2e19bd65-6322-5e9a-9a87-8d5a505c0868"
-diamondUuid: "fc516689-7744-8d68-b123-0b5c2c673525"
-uuid: "9727b43b-f33e-8bd1-8031-89f976b2aa69"
-horo: 4
+coordinate: "same · 2/share · 0e747cb0"
+contentUuid: "8d24fa64-6e37-58e6-84db-7c4874b9473d"
+diamondUuid: "7d00c0c6-8b7e-8cd9-905a-69bb01f74125"
+uuid: "0e747cb0-1be3-8d8a-9c2e-37358ed13510"
+horo: 2
 typography:
   partition: same
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d84d04aa-3918-8bf8-a6f5-516fa4e8b4a4"
+  computationUuid: "766a767b-47f2-8291-be65-edda8c3b24ea"
   stages:
     - stage: path
       stageUuid: "52ea4c54-adfb-8fcc-ab18-07896cef11c7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "603fdecc-14ec-88d3-8cc7-017a281971e9"
     - stage: horo
-      stageUuid: "9c4e6dd6-3a36-8922-b6c0-5ffe62399bea"
+      stageUuid: "876672ee-b9ae-88e2-b785-befc5b99252c"
     - stage: seal
       stageUuid: "ac134b5c-6304-8857-9a3c-2411aa850543"
     - stage: uuid
-      stageUuid: "45a4c530-27e8-880b-99c5-9cd2cab94fb1"
+      stageUuid: "7f8441ab-eeef-8b32-8e9a-5384e9d4a5fd"
 version: 2
 ---
 # same

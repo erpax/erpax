@@ -2,11 +2,11 @@
 name: source
 description: "Use when the translation intelligence must be trained with REAL renderings, not fabricated ones — fetches a word's community-maintained labels in every language from Wikidata (CC0), the zero-cost self-training source. Returns the concept id + description so the sense is verified before registering; returns null when no concept exists. Same pattern as the live sanctions check: a real authoritative endpoint, actually fetched, never invented."
 atomPath: "translation/source"
-coordinate: "translation/source · 2/share · 0efaed93"
-contentUuid: "696262f5-6af3-5faa-9c55-3613cdc1cad5"
-diamondUuid: "c05d16b8-178c-8356-91f9-f1c55b2af62f"
-uuid: "0efaed93-4dff-8d63-a0fa-22afa12813d8"
-horo: 2
+coordinate: "translation/source · 8/crest · 513b3db6"
+contentUuid: "0018b217-7627-579f-abc5-a2c15d9b87a8"
+diamondUuid: "0f44ed3c-da53-8fe2-ad32-ebcd49b88826"
+uuid: "513b3db6-bcb3-8821-ae04-866485664afd"
+horo: 8
 typography:
   partition: translation
   bondDegree: 67
@@ -14,7 +14,7 @@ standards:
   - "Wikidata (CC0) · Wikimedia MediaWiki API · BCP-47 locale tags"
 bindings: []
 signatures:
-  computationUuid: "2c3ce451-289e-8712-a9ae-a82595adb4ce"
+  computationUuid: "06a15ad7-8acb-88d6-883e-db6d40298cbf"
   stages:
     - stage: path
       stageUuid: "a31c9fb4-ad8a-89cf-9225-d68298d49bc9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7a701df4-faa8-8827-834b-e0910d855c10"
     - stage: horo
-      stageUuid: "74968474-6061-8911-9dd4-6b073777a30b"
+      stageUuid: "d5878f15-8cd3-86b3-94dd-075df23ad739"
     - stage: seal
       stageUuid: "88f3b8db-7e5c-84c3-9436-ec9ed0490919"
     - stage: uuid
-      stageUuid: "771820a5-c071-885a-8486-1f2ebb2fd7ce"
+      stageUuid: "5a3f53db-9001-8890-848b-70294bfe6065"
 version: 2
 ---
 # source — real translations from Wikidata

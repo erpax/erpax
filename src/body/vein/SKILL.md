@@ -2,11 +2,11 @@
 name: vein
 description: "Use when reasoning about the vein as an organ of body — pivot to canonical @/vein; zero duplication."
 atomPath: "body/vein"
-coordinate: "body/vein · 4/weave · 1489f67c"
-contentUuid: "ed56fe26-c292-5e81-b561-b7855e4488e1"
-diamondUuid: "840b2447-c34c-849e-8004-34c2462540bc"
-uuid: "1489f67c-0c6a-82c4-b390-90ca551d57f3"
-horo: 4
+coordinate: "body/vein · 5/round · 5d0f5b72"
+contentUuid: "c500ea09-e5c6-5160-b5d8-7b49e4913d65"
+diamondUuid: "950ba745-74b3-8a29-9c7c-9c4471838f62"
+uuid: "5d0f5b72-c34a-87fd-9d36-45f805e92c91"
+horo: 5
 typography:
   partition: body
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "61016856-ffa9-85cf-86ae-5b65894c1d01"
+  computationUuid: "4370026a-56c9-8cf3-baa4-dfeee154281d"
   stages:
     - stage: path
       stageUuid: "34f6ad15-7daa-8316-bc94-4f04aada0f2a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7dcf1cc3-84cb-8660-bb30-3e100eca3a31"
     - stage: horo
-      stageUuid: "bfa17e82-27a8-869e-afce-2aca445eaa9f"
+      stageUuid: "cb06d442-2026-8160-baa4-c3d0c4a7f1ee"
     - stage: seal
       stageUuid: "c99c382f-a847-8abc-bf21-922fa5674d3a"
     - stage: uuid
-      stageUuid: "057dae98-8ea1-85bb-9d21-fdf0d71a3613"
+      stageUuid: "37f09354-9e4a-8df5-a3d0-ca476a41d010"
 version: 2
 ---
 # body/vein — organ facet

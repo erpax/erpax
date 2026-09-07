@@ -2,11 +2,11 @@
 name: enumeration
 description: "Use when reasoning about enumeration — Lists or enumerations—for example, a list of cuisines or music genres, etc."
 atomPath: "vocabulary/enumeration"
-coordinate: "vocabulary/enumeration · 4/weave · f0335f6c"
-contentUuid: "c3e88e90-6b64-51f7-a074-0f820ba15360"
-diamondUuid: "c9140e38-a758-875f-9733-b23f764066e9"
-uuid: "f0335f6c-3f9b-8f5c-ab99-53a2c0932b3c"
-horo: 4
+coordinate: "vocabulary/enumeration · 2/share · b15a9d98"
+contentUuid: "83f8b869-7e61-5277-bf4d-bd1a912db598"
+diamondUuid: "6b902794-4d2e-8ae2-8876-51d26c36a217"
+uuid: "b15a9d98-6ae5-8d72-ae64-ff152cecb8e9"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 148
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9ff9b928-ed9d-85dd-b0f9-f254e8168e65"
+  computationUuid: "f4d54405-7073-8b32-af25-28df1a6ada80"
   stages:
     - stage: path
       stageUuid: "a159bfdf-79ab-895e-893f-57b1c7972e2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "140c3f74-3998-8c0c-a5ae-cf226f3fb1ef"
     - stage: horo
-      stageUuid: "be34a51c-7982-8b9e-9859-89c54be30f4b"
+      stageUuid: "83cec1fa-d064-8867-a0ad-788895b2a611"
     - stage: seal
       stageUuid: "39c62c28-eb70-8b64-b765-4c8da6ad4fad"
     - stage: uuid
-      stageUuid: "62056480-2d58-8c5f-afec-53f5c4ed5eda"
+      stageUuid: "7f86d3cf-5d4c-8a8e-97e2-64b162019b27"
 version: 2
 ---
 # enumeration

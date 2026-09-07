@@ -2,11 +2,11 @@
 name: funded
 description: "Use when reasoning about funded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/funded"
-coordinate: "vocabulary/funded · 4/weave · 8f50ebc3"
-contentUuid: "460a0b36-bf9c-52c3-98b6-9737149f461f"
-diamondUuid: "1526aa7a-df4f-8763-839c-13f0e4642787"
-uuid: "8f50ebc3-e3e3-8b28-886f-138c61c9ef0b"
-horo: 4
+coordinate: "vocabulary/funded · 7/descent · 7319bfed"
+contentUuid: "a96e45bd-27cd-5365-9b40-f92b3fa82dd9"
+diamondUuid: "6d7a2ec1-3114-8791-8f37-d8618bded48b"
+uuid: "7319bfed-8100-8260-8b73-df7682ea9096"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0dcd58cb-f044-8b5d-a575-eee2cf6a79af"
+  computationUuid: "28a26428-5b6c-8313-9f21-7e50566af343"
   stages:
     - stage: path
       stageUuid: "41bfc379-b059-896d-ac52-906644914fee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c80ab382-6680-88c9-8163-da176e8f1268"
     - stage: horo
-      stageUuid: "99637802-6fd6-87cf-892f-95c53fb03aa5"
+      stageUuid: "5e83d25a-ac0c-8949-aa88-aff19a1fde85"
     - stage: seal
       stageUuid: "2ef65916-518e-87d1-b448-e3035d59b45c"
     - stage: uuid
-      stageUuid: "d94a4ad5-bf7e-8d92-99ed-a660280da8be"
+      stageUuid: "51b5885d-ff00-8bd0-b89c-96b206796b76"
 version: 2
 ---
 # funded

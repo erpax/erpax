@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "argument",
-    "uuid": "0fd4b893-67eb-88ef-98d4-3b45dc9b81e0",
+    "uuid": "96737f64-0e8e-8c15-9de2-22b6bb0c55ff",
     "words": [
       "argument"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring an argument's quality — a claim and its critique by the same rule. An argument is INVARIANT if it grounds in evidence/falsifiability/theorem (survives inversion) or FRAGILE if it rests on authority — the person, the consensus, the strangeness of the conclusion (breaks under inversion). Symmetric: lazy debunks fail as badly as the claims they debunk. Anti-fallacy: a fragile critique never makes the claim true.",
-    "uuid": "fe9ce937-06ae-8b7c-83cd-0667828ea2cd",
+    "uuid": "6fc40dab-d34f-843b-bf1c-b1e11377ac21",
     "words": [
       "use",
       "when",

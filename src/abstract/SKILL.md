@@ -2,11 +2,11 @@
 name: abstract
 description: Use when reasoning about abstract — An abstract is a short description that summarizes a CreativeWork.
 atomPath: abstract
-coordinate: "abstract · 1/base · 61a368a6"
-contentUuid: "6ebe8d22-fcf0-543f-b4fc-0ec80abe73a4"
-diamondUuid: "7d86f6d3-9f3b-85db-ae6a-903ea5b64cf6"
-uuid: "61a368a6-82d1-81bf-ac78-9e9321a49675"
-horo: 1
+coordinate: "abstract · 2/share · 498e4b66"
+contentUuid: "db979ca2-9da4-5a96-b6bf-9217242ef57d"
+diamondUuid: "b672f3da-fcd5-8a6c-b618-0290ce5dc5f5"
+uuid: "498e4b66-f0c7-8717-bc68-7af15f3e6276"
+horo: 2
 typography:
   partition: abstract
   bondDegree: 9
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ed8440e8-0239-8538-b59e-07ef3ed8c1dd"
+  computationUuid: "afa75103-fc26-88e4-8b12-2b55a438750c"
   stages:
     - stage: path
       stageUuid: "54f8a493-16c4-8dbd-af0a-0749f8978900"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "30884635-1086-82de-860f-615fa87706fe"
     - stage: horo
-      stageUuid: "451bad53-bf1b-8426-9bf1-cfdda1e322cf"
+      stageUuid: "d67d340e-4ee5-8335-b620-4f63c56f3454"
     - stage: seal
       stageUuid: "8bb30fd2-3efb-8bfa-a548-5e6c0cf5a975"
     - stage: uuid
-      stageUuid: "1b557136-e61e-8c21-a1a4-9ffc8b320f6e"
+      stageUuid: "c5147000-f59c-8883-aefb-3ae9b2f48376"
 version: 2
 ---
 # abstract

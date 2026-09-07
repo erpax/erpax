@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "projects",
-    "uuid": "a3c5a831-fb19-820f-b0c8-b505b14dda22",
+    "uuid": "c69eb3e6-0896-84aa-9e00-172443241904",
     "words": [
       "projects"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking a customer-facing deliverable under IFRS-15 §35 over-time recognition — accumulating costs (labour via time-entries, materials via purchase-orders), measuring cost-to-cost or milestone progress, managing budget vs EAC, and closing WIP to revenue per the contract's recognition method. The IFRS-15 project anchor collection.",
-    "uuid": "c5208a19-6f6c-81ef-85d6-e823b1724cbe",
+    "uuid": "f804492f-7fb8-89ec-ab16-df21fb920b41",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: architect
 description: "Use when reasoning about the agent that shapes the society lattice — not one that merely lives in it but one that gives it structure, composing the invariant atoms into a standing social order. File-system layout IS architecture; the architect is whoever draws that layout, and in erpax it is drawn by the one atom math, never by hand. The society's standing architects are its religions and traditions (its archangels)."
 atomPath: "vocabulary/architect"
-coordinate: "vocabulary/architect · 2/share · 96707761"
-contentUuid: "2bcdfd83-c9d9-5600-b02b-fb3040b78c02"
-diamondUuid: "b1370c0d-a5c2-8976-8151-c759b2482ade"
-uuid: "96707761-f34a-87a6-b804-d9bffd233a33"
-horo: 2
+coordinate: "vocabulary/architect · 7/descent · 25c5234c"
+contentUuid: "e73bf559-439b-51d9-a698-2d456fe2d879"
+diamondUuid: "be98cce9-02f8-8462-85f0-184415fbefbe"
+uuid: "25c5234c-c14d-8400-b014-924c14a1702e"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 66
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3494549e-049c-84eb-9722-b355cc2fb144"
+  computationUuid: "a9348233-0d60-8f52-9227-e2410d036ec4"
   stages:
     - stage: path
       stageUuid: "a956a918-8b66-8f8b-b2ce-689748c83c0a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3096ec0b-05a6-89d4-984e-90fb5f996b55"
     - stage: horo
-      stageUuid: "0236d5d2-7ad0-823f-8c11-57a5327c33f7"
+      stageUuid: "0fd36188-235a-8b09-94b9-855f98cbfd15"
     - stage: seal
       stageUuid: "39db2833-8eb0-8a23-a98b-93722f01aed6"
     - stage: uuid
-      stageUuid: "d9db59d0-7cbc-8681-8e0c-5b46bdb93ca4"
+      stageUuid: "8b4dedd7-2b03-818f-adbf-236987d7f939"
 version: 2
 ---
 # architect — the agent that shapes the lattice

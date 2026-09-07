@@ -2,11 +2,11 @@
 name: relocate
 description: "Use when deciding WHERE logic belongs — move it to its gravity well, the heaviest atom it is wired to, the adequate place nearest its users. Computes each atom's gravity centre and the pull toward it, so general logic buried in a specialized module is drawn up to the general atom."
 atomPath: relocate
-coordinate: "relocate · 4/weave · 4e7945ad"
-contentUuid: "789bcb87-e3aa-5ec1-adce-1f7c7af5904f"
-diamondUuid: "649ffbab-3e16-8ae6-a1f3-67f54e615ed5"
-uuid: "4e7945ad-ba61-8e43-91fd-6d4e5b7ec445"
-horo: 4
+coordinate: "relocate · 2/share · bdbefa61"
+contentUuid: "bc0e4c9e-fb77-5a36-9a89-1a88d68b0239"
+diamondUuid: "8c4e3dab-de44-8926-9e3f-0ade1dce38ff"
+uuid: "bdbefa61-c542-8c06-8e33-95e6a2d8552d"
+horo: 2
 typography:
   partition: relocate
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "gravity — mass curves placement (the DRY / flatten law)"
 bindings: []
 signatures:
-  computationUuid: "d208d515-d668-8d8a-b25e-ce831dad941c"
+  computationUuid: "5cdfaf61-ce20-8df3-9b37-bd902ede2d40"
   stages:
     - stage: path
       stageUuid: "de9b0ed0-de04-8875-b1f3-521f802f5167"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc0d8435-a2b9-8f02-a3c9-b2ff5d3b3581"
     - stage: horo
-      stageUuid: "c5e27df9-8478-853f-891d-b737c4d8f18e"
+      stageUuid: "b0d7fb09-f586-87eb-80eb-13c1409d1ac0"
     - stage: seal
       stageUuid: "bf10d036-136b-8e49-b6ed-59fc96d8dbf0"
     - stage: uuid
-      stageUuid: "a8c45de4-c6b8-866c-aee4-53ed2c3ac450"
+      stageUuid: "5bae8456-974d-87b1-aa05-ebf720d927ed"
 version: 2
 ---
 # relocate — move logic to its gravity well

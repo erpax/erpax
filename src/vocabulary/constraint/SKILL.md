@@ -2,18 +2,18 @@
 name: constraint
 description: "Use when defining data constraints at the schema level — NOT NULL / UNIQUE / FOREIGN KEY / CHECK / DEFAULT constraints, their lifecycle (creation/modification/disable), enforcement semantics, and violation detection in the database layer."
 atomPath: "vocabulary/constraint"
-coordinate: "vocabulary/constraint · 1/base · 9c05db2c"
-contentUuid: "bd7ce294-1f98-56e6-bd78-506c9ed52f87"
-diamondUuid: "51417a67-eb19-8c3c-a784-852e8f3204fe"
-uuid: "9c05db2c-0411-8dd6-afb9-71b3ecc55c03"
-horo: 1
+coordinate: "vocabulary/constraint · 4/weave · ad53e68c"
+contentUuid: "438152eb-c1a8-5ecc-abf5-5bec543718c9"
+diamondUuid: "524b4119-f44b-846d-ae81-fb0f83bb558b"
+uuid: "ad53e68c-2ec6-8f45-a90f-41364d464ce0"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c1456577-531c-8a47-a55b-8d97212d898c"
+  computationUuid: "b335a4b1-27f5-899c-ac3a-d9593ce92b8f"
   stages:
     - stage: path
       stageUuid: "508a6b44-6a81-89f1-a614-5a26b071db24"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7d9ea101-caf0-87c3-96b4-57246a0c02d9"
     - stage: horo
-      stageUuid: "49f82afe-36e7-8404-88fe-ccff0cb260b3"
+      stageUuid: "29811f0c-4956-80e3-80ca-a7cbd5146e98"
     - stage: seal
       stageUuid: "5e523d31-b6d5-8da4-ad51-3a57cdb52043"
     - stage: uuid
-      stageUuid: "99479606-55c4-81a7-bc17-b32cb4b6f0a0"
+      stageUuid: "bde76c10-50ee-8f21-be38-8efa7ff33b5e"
 version: 2
 ---
 # constraint

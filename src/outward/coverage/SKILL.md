@@ -2,18 +2,18 @@
 name: coverage
 description: "Use when asking which external rails erpax can PROVE it speaks. 178 catalogued rails (97 country/bank + 81 trading); a rail declaring clientImplemented is a promise erpax parses its answers, and a promise with no contract check is a claim nothing can contradict. Ratchets the claimed-but-unproven count down; never counts catalogue-only rails as covered."
 atomPath: "outward/coverage"
-coordinate: "outward/coverage · 8/crest · d59c1253"
-contentUuid: "cd648ea1-13c8-5729-9f82-6b1291b82b38"
-diamondUuid: "8d4dc91e-686d-8a57-9b58-3192415af81e"
-uuid: "d59c1253-b610-8975-b4b9-85d2c1482b69"
-horo: 8
+coordinate: "outward/coverage · 2/share · 14dba18f"
+contentUuid: "d6c1efcf-5aeb-5853-a98d-c6d4897aa77e"
+diamondUuid: "9c8072c1-97d8-8843-9aff-1585427e26c3"
+uuid: "14dba18f-cf93-847e-aacc-0a5e8c172285"
+horo: 2
 typography:
   partition: outward
   bondDegree: 77
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5e80edfa-7e73-834c-97dd-c14e9b11c3bb"
+  computationUuid: "d77bd1f5-0a84-8620-b7fe-35394de7b0e8"
   stages:
     - stage: path
       stageUuid: "87a9263c-712e-8139-a1b0-d9a3fb8c0288"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ba5e7831-036d-837f-9e77-a0e96aad23bd"
     - stage: horo
-      stageUuid: "9be2cf64-4d99-85f3-8b0a-a66d631364ac"
+      stageUuid: "1b8585a9-e70d-855d-a28e-c59f57c78421"
     - stage: seal
       stageUuid: "26556069-e3de-89f6-90f9-e6b77380ce52"
     - stage: uuid
-      stageUuid: "5dcef3c9-d3eb-8711-9e29-191a24460d62"
+      stageUuid: "644149e1-5f9d-8dc0-8874-af178988891c"
 version: 2
 ---
 # outward/coverage — a claimed client with no contract is an unrefutable promise

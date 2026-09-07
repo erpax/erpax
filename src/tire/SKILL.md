@@ -2,11 +2,11 @@
 name: tire
 description: "Use when reasoning about tire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tire
-coordinate: "tire · 5/round · 989599e7"
-contentUuid: "44453c04-3cda-5ee9-87da-8b0fba22a990"
-diamondUuid: "a15d84ef-c4ff-866d-b89c-e44eb4760c18"
-uuid: "989599e7-c383-83dc-8a9b-560c2a9620c8"
-horo: 5
+coordinate: "tire · 4/weave · 540036a5"
+contentUuid: "f3aad592-5c8c-58b7-9263-c19f3399eb5e"
+diamondUuid: "848177ea-5ee3-8213-a8df-ffc00c069fa7"
+uuid: "540036a5-b697-846d-936b-a0f62d0e044c"
+horo: 4
 typography:
   partition: tire
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4673b286-db00-860c-86ad-613c3f454a86"
+  computationUuid: "a5077d20-8aca-8018-8264-3180840653e2"
   stages:
     - stage: path
       stageUuid: "dc71ab0d-202d-895e-9c3a-1faf784b022f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d0fa10da-c51b-8825-b76a-b6c37235814e"
     - stage: horo
-      stageUuid: "0dfd7b99-eb75-86e3-be5b-2fd557c5b0cc"
+      stageUuid: "46e29ed4-d80a-8735-88b1-6cd72a471357"
     - stage: seal
       stageUuid: "19b5bb5a-e66b-8e5e-a00a-369d020ae5a7"
     - stage: uuid
-      stageUuid: "eaf90413-8d35-82b0-9516-b7e222bdaab9"
+      stageUuid: "51d6fb26-344f-8747-a267-c5ec87cfd78b"
 version: 2
 ---
 # tire

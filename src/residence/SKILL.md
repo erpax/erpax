@@ -2,11 +2,11 @@
 name: residence
 description: Use when reasoning about residence — The place where a person lives.
 atomPath: residence
-coordinate: "residence · 1/base · 0cfdad89"
-contentUuid: "d2e1c450-39aa-58cb-848f-2b24c12fcac5"
-diamondUuid: "323b3309-8d9b-8f23-8b8f-9961153a02b3"
-uuid: "0cfdad89-ec08-88b2-9b49-5aaae60b1363"
-horo: 1
+coordinate: "residence · 7/descent · b7db9ece"
+contentUuid: "e1f5183a-95b7-5a60-92b0-814e0132dba0"
+diamondUuid: "5a4fa516-7788-8b8c-8a53-a13b2db1204c"
+uuid: "b7db9ece-0075-88b6-bc45-f2ecf434caf6"
+horo: 7
 typography:
   partition: residence
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5677b449-7bce-86c1-a33f-1956c5019f34"
+  computationUuid: "d0c514c0-5541-8a6a-a147-1d783c26694a"
   stages:
     - stage: path
       stageUuid: "f4d1b388-046f-8607-9f41-50dfc709ac05"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9a49eaa0-4b6f-89cc-a405-102495511a97"
     - stage: horo
-      stageUuid: "cb818426-4989-869a-9064-cc8b2265eeb1"
+      stageUuid: "f39ee48f-8238-8bca-a9f9-abb1ca06e430"
     - stage: seal
       stageUuid: "007041f6-727f-8d54-81b2-1d26ddbef680"
     - stage: uuid
-      stageUuid: "abcd2c21-6629-8748-a965-17af72f91c97"
+      stageUuid: "577bd35a-20af-8333-b2c2-e687ed127576"
 version: 2
 ---
 # residence

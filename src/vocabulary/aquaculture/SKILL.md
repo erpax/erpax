@@ -2,18 +2,18 @@
 name: aquaculture
 description: "Use when farming aquatic organisms under managed conditions — fish/shellfish raised in ponds, cages, or recirculating systems as biological assets valued by standing biomass (IAS-41); stocked, grown out through life stages, fed (FCR), bound by water quality (oxygen, salinity), then harvested and depurated. A living-production domain anchor alongside agriculture and livestock."
 atomPath: "vocabulary/aquaculture"
-coordinate: "vocabulary/aquaculture · 5/round · 30c726f1"
-contentUuid: "d34a4ee2-a5b6-53f2-8166-efbbc98fed14"
-diamondUuid: "3c3fb169-e1ca-8a8d-81e9-4b2c080a445a"
-uuid: "30c726f1-748f-804b-a05c-7bb79a84c4a1"
-horo: 5
+coordinate: "vocabulary/aquaculture · 4/weave · b2502817"
+contentUuid: "8efbd1ec-626e-517d-9f4e-94c7aa4e3696"
+diamondUuid: "0ea5e8cd-235f-89e6-a3a3-174d51e41a41"
+uuid: "b2502817-69c3-8881-8f5b-647259e78197"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 62
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a2fbe7a3-65fe-880c-97d8-38f7f4d442d3"
+  computationUuid: "483f5291-ac7d-8368-a877-3284f7e71d9b"
   stages:
     - stage: path
       stageUuid: "d104f4c0-8992-8121-9f43-6998c01a7a82"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "68eecf2d-35f4-8410-a1e5-26155331cda3"
     - stage: horo
-      stageUuid: "da86bb17-7f07-8bd8-9fd4-f4f159e5812e"
+      stageUuid: "27ad7f9e-811d-89da-9a19-63a1014dc98d"
     - stage: seal
       stageUuid: "33b4ddcf-7e10-80ac-a610-d30cb3b92b5e"
     - stage: uuid
-      stageUuid: "edc208de-eead-8eff-ad56-2a9795612e01"
+      stageUuid: "a0151fc6-fd54-836a-9bc2-75dc4df05588"
 version: 2
 ---
 # aquaculture — farming aquatic organisms for produce

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "enterprisebudget",
-    "uuid": "249bcc0d-c2ce-8a31-babe-bab6e6e224be",
+    "uuid": "f9ce142b-0065-869e-8c6f-8aac302276db",
     "words": [
       "enterprisebudget"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when projecting the profit of one crop/product/activity as a standalone line — the crop enterprise budget: revenue (units × price) minus its direct costs (seed, inputs, labor) per crop or per bed-foot, so crops can be ranked by net return and the unprofitable dropped. The per-line P&L projection; the production-economics twin of the cost center.",
-    "uuid": "c3d9f409-a573-8625-b753-7a896f7d4fa7",
+    "uuid": "36b88cee-de9b-80b6-afbd-049b2a8b9072",
     "words": [
       "use",
       "when",

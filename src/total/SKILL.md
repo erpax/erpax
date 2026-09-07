@@ -2,11 +2,11 @@
 name: total
 description: "Use when summing a dimension — line total, invoice total, account total, cumulative amount. A computed or captured aggregate; often read-only (computed from detail lines or GL balance). Carries amount + currency."
 atomPath: total
-coordinate: "total · 1/base · c0a2029a"
-contentUuid: "e4deebef-55a9-5c5d-be72-35da71e1ac04"
-diamondUuid: "f41fd5b5-b7c9-8192-ba7d-cd12bc2c534c"
-uuid: "c0a2029a-8f71-88c2-8213-33275bcd69be"
-horo: 1
+coordinate: "total · 8/crest · d6ecf3a7"
+contentUuid: "029adf83-1121-581d-8059-2b36efb27c55"
+diamondUuid: "c7136131-15c6-862f-8104-ad2d95b379c4"
+uuid: "d6ecf3a7-c3b9-8a96-a0be-cfcec85c312f"
+horo: 8
 typography:
   partition: total
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "ISO-4217`"
 bindings: []
 signatures:
-  computationUuid: "df1b81ba-2b05-873e-8f0d-cc9523a4c560"
+  computationUuid: "c7a332f3-8cc9-890a-8346-993487b72553"
   stages:
     - stage: path
       stageUuid: "d479f207-d9e1-8a56-89c1-808cfe9600c8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "52f3334f-fd27-8888-97e8-c5f19c33fc03"
     - stage: horo
-      stageUuid: "47e318d7-94ae-86d6-9eb1-c23fd7f79bcb"
+      stageUuid: "60110e02-42ee-8400-8acc-025434a0e2f3"
     - stage: seal
       stageUuid: "8e20ba61-e635-8474-af6f-f98d9d8d1a87"
     - stage: uuid
-      stageUuid: "37357010-4604-86e1-861b-85f5adeca3b3"
+      stageUuid: "560757df-0830-8a81-a045-38bc982ea0e6"
 version: 2
 ---
 # total

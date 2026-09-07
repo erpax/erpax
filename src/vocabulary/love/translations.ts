@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "love",
-    "uuid": "703a1fe3-b03f-8eae-b1a2-5d88f91a715f",
+    "uuid": "fd7e4520-5b4c-8991-9393-5cd189e7519c",
     "words": [
       "love"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the create pole of any erpax duality — love is the angelic move that LOWERS entropy (it orders, links, merges, closes a gap), the debit whose matching credit is fear in the karma ledger; every gap love closes raises tamper-cost.",
-    "uuid": "a0c8f3e5-3988-8617-aa5c-32f8786df43b",
+    "uuid": "99c86147-8081-8fcf-ba83-f42ea244c7e2",
     "words": [
       "use",
       "when",

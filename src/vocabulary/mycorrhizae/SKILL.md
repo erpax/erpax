@@ -2,18 +2,18 @@
 name: mycorrhizae
 description: "Use when modelling the root–fungus symbiosis that mines nutrients and water for the plant — arbuscular mycorrhizal fungi colonize >90% of crops, extending hyphae to acquire phosphorus and water in exchange for plant carbon, and binding soil aggregates with glomalin. The living merge at the root zone; tillage and high-P fertilization suppress it."
 atomPath: "vocabulary/mycorrhizae"
-coordinate: "vocabulary/mycorrhizae · 2/share · cd646b83"
-contentUuid: "91200035-97cc-5513-a802-c67af8c6002e"
-diamondUuid: "284cbf03-df77-8fda-a531-39205b64d380"
-uuid: "cd646b83-6b96-8e9f-b53d-f84f83f64d8b"
-horo: 2
+coordinate: "vocabulary/mycorrhizae · 4/weave · b329c438"
+contentUuid: "ce212d04-1fd3-5ad2-8f78-ba5f096c6c64"
+diamondUuid: "7d90a0b8-8c7d-8fd4-8ad3-3ee0ecc46c65"
+uuid: "b329c438-7325-8c75-9516-d71d41dc6b24"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 41
 standards: []
 bindings: []
 signatures:
-  computationUuid: "946a574b-0c82-86cb-b5ba-628c7247532d"
+  computationUuid: "1bad8e69-7c28-8794-a575-570f2c9b9f5d"
   stages:
     - stage: path
       stageUuid: "4957f353-104b-8d4a-bd2c-d7dfe81653d5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0d292cc4-bd00-85c0-a569-2e3954b22d45"
     - stage: horo
-      stageUuid: "05ac8ba7-402d-8d13-aad8-0e6b692800c4"
+      stageUuid: "847e9891-cf56-8de9-a26f-56a2b264aa8c"
     - stage: seal
       stageUuid: "95836bf8-7d7b-8c3c-a53e-89fe5ebafca2"
     - stage: uuid
-      stageUuid: "53a808c3-fdad-8b78-a22d-04da80074940"
+      stageUuid: "144fcf28-73c5-85fe-b6ca-8fed58db3135"
 version: 2
 ---
 # mycorrhizae — the root–fungus symbiosis that feeds the plant

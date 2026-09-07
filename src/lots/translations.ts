@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lots",
-    "uuid": "c4a362a5-29db-8655-9735-c69e58b46655",
+    "uuid": "bfba1001-4cd0-854b-bbf9-fd148bc64fe2",
     "words": [
       "lots"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain.",
-    "uuid": "b35ff019-459c-806b-a5c2-edc2e0d97421",
+    "uuid": "3986b9df-0c56-8dd2-bae9-fc7737a98725",
     "words": [
       "use",
       "when",

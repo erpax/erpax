@@ -2,10 +2,10 @@
 name: thesis
 description: Use when reasoning about thesis — A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.
 atomPath: thesis
-coordinate: "thesis · 2/share · 19192b61"
-contentUuid: "c733391e-2c19-57bd-8a4f-db66693caea3"
-diamondUuid: "cab4f4b8-7e06-831c-8e8d-515d0d7eca15"
-uuid: "19192b61-0e1d-8da5-88f5-ad6ae3972edc"
+coordinate: "thesis · 2/share · 100550ec"
+contentUuid: "b2bb2f77-1e38-5a14-98f2-e7bca266cacc"
+diamondUuid: "5b125579-7498-894d-a180-34ddddf6bbcc"
+uuid: "100550ec-653a-8ff3-a438-71b7a7e47a90"
 horo: 2
 typography:
   partition: thesis
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "64428871-a9b4-8ac5-95d5-81097c3b78bb"
+  computationUuid: "38c6ab7d-5c1e-8bd7-b6b9-8d49dcd14a0a"
   stages:
     - stage: path
       stageUuid: "627450bc-4b23-8ba0-8829-eecbdda0b003"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "874a2634-bd3b-8623-9c45-4cf4c8bf2df5"
     - stage: horo
-      stageUuid: "9a50f295-0dae-8de1-b8e5-0cccba61362a"
+      stageUuid: "7229b91d-d7bd-8ef7-8ada-31cc128e8dea"
     - stage: seal
       stageUuid: "86a4192b-aad0-8c5c-bd67-60fe702d5f8d"
     - stage: uuid
-      stageUuid: "f1b254eb-fa15-840a-b7a1-1d969728fd1e"
+      stageUuid: "8f197089-acd2-8112-bb60-6a5f1c0520c9"
 version: 2
 ---
 # thesis

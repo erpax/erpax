@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lnid",
-    "uuid": "7ad17e66-e755-8d45-b5a5-2ce2e9e7395f",
+    "uuid": "9ada49d7-a2fd-86ba-a8a2-ec7139ec5c35",
     "words": [
       "lnid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lnid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "5cfb818e-f5ca-8b5e-87f1-c71bc902bef9",
+    "uuid": "8aa491b4-a04d-835a-a2c1-de7c3c75c9b9",
     "words": [
       "use",
       "when",

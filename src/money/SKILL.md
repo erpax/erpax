@@ -2,11 +2,11 @@
 name: money
 description: "Use when reasoning about money as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: money
-coordinate: "money · 8/crest · f336a898"
-contentUuid: "8f1c1939-ca41-5b97-a8bc-c316af870fb4"
-diamondUuid: "32e7d600-188a-8000-be9e-1df5739b49f9"
-uuid: "f336a898-03d5-89d7-b0e5-5d6bdaf04124"
-horo: 8
+coordinate: "money · 7/descent · 81856ddb"
+contentUuid: "f5dd3ac8-020d-522c-8ed6-adfa51b426cd"
+diamondUuid: "a5a7ae23-a331-8304-8d42-554dd60667a5"
+uuid: "81856ddb-43d0-879b-bdbb-79ba8c49b219"
+horo: 7
 typography:
   partition: money
   bondDegree: 37
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "248d1ac1-5320-83b7-ada7-8d7f19b1e558"
+  computationUuid: "0335b1a5-6115-8d57-8790-68065cf6be65"
   stages:
     - stage: path
       stageUuid: "b2945010-4ac1-8bb3-a53f-83eba5a1807c"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "4de442af-38b2-818f-b14e-a19ada8f59cf"
     - stage: horo
-      stageUuid: "319d52fa-7fd4-82fe-9454-0c9a2c9a787b"
+      stageUuid: "ddd39534-35d0-88f0-8c6c-8c4cec335b88"
     - stage: seal
       stageUuid: "4cfa9961-2e27-8b40-9639-072d80c2d91e"
     - stage: uuid
-      stageUuid: "4adb76fb-40e8-8f0f-9bef-9994aa961d68"
+      stageUuid: "5cee0b6e-7fce-8270-83d9-1cf48a41dfe6"
 version: 2
 ---
 # money

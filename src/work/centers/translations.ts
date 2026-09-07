@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "centers",
-    "uuid": "f90f454a-b0b5-8020-afe8-2ed66d524af6",
+    "uuid": "3923e696-bbb4-89e6-895e-44fee382467a",
     "words": [
       "centers"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection.",
-    "uuid": "40d67437-e534-8fbd-bc40-0501f98ed3f6",
+    "uuid": "fab2a6ef-2215-8ef1-ab7d-bea27f27ee12",
     "words": [
       "use",
       "when",

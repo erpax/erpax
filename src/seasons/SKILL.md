@@ -2,11 +2,11 @@
 name: seasons
 description: Use when reasoning about seasons — A season in a media series.
 atomPath: seasons
-coordinate: "seasons · 7/descent · cdad4565"
-contentUuid: "1be345d6-c812-5834-b9df-d27ae19d4496"
-diamondUuid: "54433d95-d5e9-8693-bad5-9317f32d812a"
-uuid: "cdad4565-5c89-8793-becf-8ecd3911de29"
-horo: 7
+coordinate: "seasons · 4/weave · 76653b5f"
+contentUuid: "62fadf60-9578-5fb3-a4fa-31bd2aa4819c"
+diamondUuid: "5cc0f84e-1cf2-8e92-ba01-d13b57c10cc7"
+uuid: "76653b5f-6a16-8fb1-a3f6-4368334b722f"
+horo: 4
 typography:
   partition: seasons
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "296b6e78-4911-8fb7-b314-a815c46ba298"
+  computationUuid: "20f4c0f2-bbd9-88d3-9bee-4949e1c4831e"
   stages:
     - stage: path
       stageUuid: "47e6d838-9e79-8371-aa76-62703b71369e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "80cb0ce5-cb1d-8712-b582-275adf28b79a"
     - stage: horo
-      stageUuid: "670933a1-87e8-80ab-860e-40ce38683c1c"
+      stageUuid: "87260b99-2b0c-8610-b7fb-75c510072c99"
     - stage: seal
       stageUuid: "788d7a36-0497-8502-b77c-4e069332df43"
     - stage: uuid
-      stageUuid: "7c48ae12-2934-8af9-a9ab-f81e71d01cb3"
+      stageUuid: "85203314-ee7c-8809-8c7e-ac270f6db442"
 version: 2
 ---
 # seasons

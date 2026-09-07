@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "locks",
-    "uuid": "a24c55ad-302c-82eb-a2a1-124954b40528",
+    "uuid": "4c216f40-9dfa-8cc6-9472-7bcc30d9cf01",
     "words": [
       "locks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
-    "uuid": "98b72164-733a-8765-833c-e78a8414f729",
+    "uuid": "4b16e5ed-5b46-8945-9134-53da7d87de3d",
     "words": [
       "use",
       "when",

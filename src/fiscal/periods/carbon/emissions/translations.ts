@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "emissions",
-    "uuid": "6bd2a33c-cf7e-84f3-be6c-b4bd014cb459",
+    "uuid": "952b2974-dc44-8881-9b3d-46b7c3ebe8b3",
     "words": [
       "emissions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.",
-    "uuid": "46679fdc-b7a2-85ac-9371-b141bfbd176d",
+    "uuid": "2e67c6c6-0dde-81cb-8845-d587d4b39a37",
     "words": [
       "use",
       "when",

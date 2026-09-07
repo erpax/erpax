@@ -2,11 +2,11 @@
 name: quiz
 description: "Use when reasoning about quiz — Quiz: A test of knowledge, skills and abilities."
 atomPath: "vocabulary/quiz"
-coordinate: "vocabulary/quiz · 4/weave · cf03285c"
-contentUuid: "dc8755fd-9241-5b74-9302-e6c561d2c9da"
-diamondUuid: "cb576819-1e18-8856-9549-7583f0062ddb"
-uuid: "cf03285c-6542-8c1d-b38a-ad7a39128459"
-horo: 4
+coordinate: "vocabulary/quiz · 7/descent · 6059dadf"
+contentUuid: "9bb74917-a802-56b9-aca3-34b97e1f7762"
+diamondUuid: "c7baa33b-a00a-8a87-a818-74e0c60b2b6e"
+uuid: "6059dadf-47e6-86aa-ba3b-7cc1a6e1b23c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7d0ca6ca-b502-8a5d-9c2e-5ed5aea2eb93"
+  computationUuid: "f25a8387-0c98-82bf-abc0-8dd7248dd5cd"
   stages:
     - stage: path
       stageUuid: "107c09ab-128d-85e1-9294-16e3a1526fc6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "691f5417-9e73-8d96-90d3-a1f111b77654"
     - stage: horo
-      stageUuid: "d2c76abb-55c4-8b5b-8773-bae6d8aaed3c"
+      stageUuid: "6abc213a-9518-8a32-9f3f-7373d036b602"
     - stage: seal
       stageUuid: "f106edfd-9f00-8821-80ee-f414404075cf"
     - stage: uuid
-      stageUuid: "80ae0915-645c-8872-abf6-fb2a56091104"
+      stageUuid: "1b6ca5a2-3456-8113-8f2f-2444a7fa8d00"
 version: 2
 ---
 # quiz

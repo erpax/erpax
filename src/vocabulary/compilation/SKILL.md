@@ -2,10 +2,10 @@
 name: compilation
 description: "Use when reasoning about compilation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/compilation"
-coordinate: "vocabulary/compilation · 8/crest · f7426aa3"
-contentUuid: "378c465e-b376-542d-ae1b-1e5edc0b706f"
-diamondUuid: "72d30953-29f5-8456-97f4-f9136fb7884a"
-uuid: "f7426aa3-2891-8b9f-91f4-a5af38bb76ce"
+coordinate: "vocabulary/compilation · 8/crest · bf6ff1f8"
+contentUuid: "9f9cf1ed-6873-5974-9d89-15e1902ab74a"
+diamondUuid: "aceaf133-abb0-8a54-a205-3abf93572acc"
+uuid: "bf6ff1f8-7287-8102-b688-9e685ae14d2c"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a39bdd67-6035-8333-8d21-5d7c8cfe9ac1"
+  computationUuid: "40a65ffe-366e-8932-8a6f-ece228db3386"
   stages:
     - stage: path
       stageUuid: "a69f1bb1-8385-8b1b-99e0-a5e1ca412d2a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d5019d91-a837-8bc6-a267-0ebad605f29f"
     - stage: horo
-      stageUuid: "89a5480c-cebe-8fd4-b1d3-a46e1ff5d803"
+      stageUuid: "96c4a72a-80dc-85f9-9d46-eade59ba7b5d"
     - stage: seal
       stageUuid: "ffdafe9e-412c-8d20-b4eb-2f0cba9771f3"
     - stage: uuid
-      stageUuid: "33eea0f3-cd27-8394-9ac7-308dcf2a876f"
+      stageUuid: "9af592aa-b9dd-835a-bdbb-07de9c0059c9"
 version: 2
 ---
 # compilation

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "separation",
-    "uuid": "a30d624c-69fb-8949-b5cc-8fd4d4539d08",
+    "uuid": "cde88958-de76-8f51-a178-03fac3bf986a",
     "words": [
       "separation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking the separation of powers — that no single actor holds two of the legislative, executive, or judicial branches; the anti-corruption segregation-of-duties invariant applied at the scale of the state.",
-    "uuid": "6b110ebe-6876-81ad-9597-bb8fd2d99f60",
+    "uuid": "e0643bc2-c829-8dac-9f15-e435220920c7",
     "words": [
       "use",
       "when",

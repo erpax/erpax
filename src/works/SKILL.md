@@ -2,10 +2,10 @@
 name: works
 description: Use when reasoning about works — Organizations that the person works for.
 atomPath: works
-coordinate: "works · 2/share · 9f814b41"
-contentUuid: "ca454eea-09c5-5626-a2ab-eef419ccc053"
-diamondUuid: "85826930-a4b7-862a-977a-5b02746cea37"
-uuid: "9f814b41-111e-8633-a9c3-afd0cb6d8905"
+coordinate: "works · 2/share · 16e0772c"
+contentUuid: "964d62a8-139b-59af-8b96-cadc4619fae7"
+diamondUuid: "1a6edce2-0393-82c3-bef5-c44afcf50964"
+uuid: "16e0772c-ab1e-8189-a08a-9d76a6d55bfe"
 horo: 2
 typography:
   partition: works
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "73e05525-95b9-84c1-b81c-7d7e2d19c9d6"
+  computationUuid: "0abb1fb3-23c0-8cef-9a1a-309ca8c8c8e4"
   stages:
     - stage: path
       stageUuid: "9f7ce759-6bc3-8e5e-b7f9-590d5f64f7a8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "71e00af9-e387-89fb-9a62-8ba7c76fe5b4"
     - stage: horo
-      stageUuid: "47186735-3536-8481-b869-8f57aa33c175"
+      stageUuid: "4e928642-8d6c-883c-b776-6f85d9265547"
     - stage: seal
       stageUuid: "4a5a76bf-b222-8acb-8487-014727496c2a"
     - stage: uuid
-      stageUuid: "05cbbcef-0bdd-83c8-bccb-00a7cd313119"
+      stageUuid: "2f98d7e6-8959-8f50-824b-9cb3a531dec0"
 version: 2
 ---
 # works

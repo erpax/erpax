@@ -2,11 +2,11 @@
 name: runs
 description: "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order."
 atomPath: "items/bills/of/materials/work/orders/operation/runs"
-coordinate: "items/bills/of/materials/work/orders/operation/runs · 7/descent · 7d71e5d1"
-contentUuid: "20ae5c8d-7465-5dc5-8e68-24ffa7252359"
-diamondUuid: "c657841a-6abe-88cc-9882-057d0a6e5076"
-uuid: "7d71e5d1-a654-802b-b087-9d6a774bfe09"
-horo: 7
+coordinate: "items/bills/of/materials/work/orders/operation/runs · 8/crest · 3973cd38"
+contentUuid: "2dd4041a-0c8b-5d2c-9c3e-2ef32aa8687e"
+diamondUuid: "564475b5-3c45-8479-afeb-b36819dcde7d"
+uuid: "3973cd38-74e0-8f46-89a2-4686e4530954"
+horo: 8
 typography:
   partition: items
   bondDegree: 42
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b78092c1-1702-8d89-8470-1a55ecfa1386"
+  computationUuid: "f27a4b9a-c4a4-8a01-af35-208e6a0151a0"
   stages:
     - stage: path
       stageUuid: "dfc7a5d2-4c1b-872f-9ee1-6b0b2e4412bd"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "3ac9e96c-737f-8e83-8a37-6dfaec0bd75f"
     - stage: horo
-      stageUuid: "04a68671-6db0-826d-8b28-d6e4d4ab756b"
+      stageUuid: "f661d082-4e68-83fe-a29b-7d9fb375bc3f"
     - stage: seal
       stageUuid: "c52a0589-2148-8dff-a5d1-141f46c5aaea"
     - stage: uuid
-      stageUuid: "941bc77d-ffb8-885b-a959-c11beab970a6"
+      stageUuid: "ff6fd233-7d69-887e-ac46-3da01cc5d573"
 version: 2
 ---
 # operation-runs

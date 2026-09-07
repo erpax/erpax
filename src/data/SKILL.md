@@ -2,11 +2,11 @@
 name: data
 description: "Use when reasoning about data — Data associated with the event, like for instance a log message."
 atomPath: data
-coordinate: "data · 4/weave · 6a8e8b31"
-contentUuid: "565b74f3-1ff6-5db6-b694-260777618b9c"
-diamondUuid: "7892f874-2198-8753-8e0d-dceca2a4a68c"
-uuid: "6a8e8b31-f3fa-8b93-87ca-fc8d32ba9c59"
-horo: 4
+coordinate: "data · 7/descent · 75e8b844"
+contentUuid: "a11ce55d-40ce-5450-90ab-accc102e6b0e"
+diamondUuid: "a9af5056-f17a-8ddc-9916-3f60fc3b9113"
+uuid: "75e8b844-8732-8ac5-b174-0c5da461521a"
+horo: 7
 typography:
   partition: data
   bondDegree: 57
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0596db38-b56f-82da-b65c-7a096319b12f"
+  computationUuid: "d0dd0002-d00c-8850-b1e7-08f869bfa464"
   stages:
     - stage: path
       stageUuid: "f80a32fc-bb02-8350-bc78-1bf4fafdf349"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "110600f7-fb1c-8c96-89ed-676602fb39cb"
     - stage: horo
-      stageUuid: "f3bd899e-938c-8799-81ef-960e9b03ef52"
+      stageUuid: "600c9a22-a4a5-8e96-a708-460b9b7c230a"
     - stage: seal
       stageUuid: "74338e2c-6734-8a08-8887-99d528211843"
     - stage: uuid
-      stageUuid: "54987f13-4b82-8b8c-bcdf-562f135a9b45"
+      stageUuid: "077740ef-20fd-8bc5-994c-9c44f3ec2ef1"
 version: 2
 ---
 # data

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "territory",
-    "uuid": "acc66e16-517a-894d-a49c-168a736e95d7",
+    "uuid": "651018d3-fb0c-81b2-ae64-a7051bab4fc5",
     "words": [
       "territory"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when organizing sales coverage — geographic or account-based territory, assignment to rep, quota per territory, coverage/overlap rules.",
-    "uuid": "53758398-aef6-8665-8846-93395c3f34bc",
+    "uuid": "bd9ffc08-6f30-8a64-91c6-afa681a6f6d4",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "adjustments",
-    "uuid": "5636199a-944d-8a5f-8544-aeb5b8720f06",
+    "uuid": "1f74917c-389b-8af4-9691-8a6eb1aa0360",
     "words": [
       "adjustments"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when restating a prior closed period for material errors — IAS-8 §42 retrospective correction, adjusting opening balances without re-opening; disclosing error category and amount per §49; CEO/CFO certification for SOX §906. The prior-period restatement node.",
-    "uuid": "a0b68c79-674c-8def-bf07-249613e2c5d2",
+    "uuid": "3b87138f-6d86-8e08-bb29-23136814f307",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "budget",
-    "uuid": "30055505-e615-8d41-b3e3-ddca2d982866",
+    "uuid": "15158309-afb0-83b6-9d39-4287f18352df",
     "words": [
       "budget"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use.",
-    "uuid": "daf3c499-00fb-83de-9d45-5da5119312da",
+    "uuid": "557ab66e-9933-8f30-90f9-3d65cc05a0ab",
     "words": [
       "use",
       "when",

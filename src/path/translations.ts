@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "path",
-    "uuid": "2acea0f3-42a6-8864-8694-82c2d349fb1f",
+    "uuid": "89639f2f-9d80-8b93-ba15-11cb4b6c0fca",
     "words": [
       "path"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when normalizing addresses across every surface — fs, url, github, mcp, api, and http all collapse to one canonical atom path; the merge point where external APIs entangle with erpax in all quantum dimensions.",
-    "uuid": "75d389d3-4a8f-8f56-8d37-afc2b6b358b8",
+    "uuid": "f7b07fbb-f676-84b0-825d-3ded45b3de76",
     "words": [
       "use",
       "when",

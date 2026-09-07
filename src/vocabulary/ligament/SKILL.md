@@ -2,11 +2,11 @@
 name: ligament
 description: "Use when reasoning about ligament — A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints."
 atomPath: "vocabulary/ligament"
-coordinate: "vocabulary/ligament · 7/descent · 1ec99031"
-contentUuid: "ae6d2556-c7d7-50d0-bbbe-a8f908b92133"
-diamondUuid: "ddf38f5f-1de2-881e-858d-af36d3eec71d"
-uuid: "1ec99031-cbb2-819d-8055-451328343cf8"
-horo: 7
+coordinate: "vocabulary/ligament · 4/weave · 0e9ad2bb"
+contentUuid: "f20549c4-6762-5cc1-972d-da0aa3cb942c"
+diamondUuid: "e9152646-4aad-822a-aa94-7f8950ddf236"
+uuid: "0e9ad2bb-89a4-84e6-aba2-89e3184cf52a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b75d5ada-8dc8-8340-8b99-8859143ff6b0"
+  computationUuid: "6bf5e135-5415-8987-bda6-c6fad4e9f453"
   stages:
     - stage: path
       stageUuid: "f5bc5e27-e85e-894e-9358-8906c554f441"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9de05266-2a15-8efa-92fa-ef77d99d38cb"
     - stage: horo
-      stageUuid: "c6c5fd56-5cf0-8998-a1bd-4537f6bd0707"
+      stageUuid: "1ee11c7b-185b-890c-bf9c-e56e0e04b2ff"
     - stage: seal
       stageUuid: "10d6244b-ea83-86d4-a5be-61a89b7a3169"
     - stage: uuid
-      stageUuid: "e083b893-e26e-8b2f-b41c-f4702ce676c4"
+      stageUuid: "04fd6ad6-f843-87cc-9334-bca5fd480661"
 version: 2
 ---
 # ligament

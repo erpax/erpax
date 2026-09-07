@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing IFRS 16 / ASC 842 — Leases.",
-    "uuid": "bbefb2ef-4f75-8929-a541-2b4517860942",
+    "uuid": "235e849c-586d-8ef8-b688-2211d5b8bb85",
     "words": [
       "use",
       "when",

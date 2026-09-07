@@ -2,18 +2,18 @@
 name: hooks
 description: "Use when reasoning about hooks — publishes the order's transitions from the collection, so an order moved by the storefront, the admin panel or a job emits the same event."
 atomPath: "ecommerce/hooks"
-coordinate: "ecommerce/hooks · 9/unity · eac40a79"
-contentUuid: "515ea2b8-e8e6-564b-95b9-af113f4f91ea"
-diamondUuid: "54aaa803-8703-8597-a3fb-12a58cb49e7f"
-uuid: "eac40a79-9ba8-8c2b-8d74-22071e5dac55"
-horo: 9
+coordinate: "ecommerce/hooks · 6/6 · f8534d9e"
+contentUuid: "cc83b245-2bd5-5fb0-ad1e-d390491a21b3"
+diamondUuid: "7dfb6b45-776a-800a-9063-363fccb1a6fe"
+uuid: "f8534d9e-0177-8d04-93d2-70a340ab676f"
+horo: 6
 typography:
   partition: ecommerce
   bondDegree: 312
 standards: []
 bindings: []
 signatures:
-  computationUuid: "87cbf6bb-9e5f-8c2c-8d65-a4b8d1fb2218"
+  computationUuid: "4b0a996f-bebe-8587-9f76-dc7c2b3c61ea"
   stages:
     - stage: path
       stageUuid: "7dbf637a-b4c6-8f4d-b5ba-ddab50652c89"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c0d8d329-11cd-896c-9163-820181c5d244"
     - stage: horo
-      stageUuid: "6537f440-637b-840e-8b86-aece8c464663"
+      stageUuid: "6b471265-3260-898c-89b8-4cef03d6db69"
     - stage: seal
       stageUuid: "dd62d32b-042f-8a14-afe7-9e9f56f7f621"
     - stage: uuid
-      stageUuid: "8fe0addd-2ed6-8772-aeab-db34b070a99c"
+      stageUuid: "0f4792b8-5b9d-8719-ad3c-4ac7db47ecd6"
 version: 2
 ---
 # ecommerce/hooks — an order's lifecycle is announced where the order changes

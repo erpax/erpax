@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "correspondence",
-    "uuid": "fe494864-fa2d-8ee3-8b32-7ed18f9e19b2",
+    "uuid": "4c5ee137-7652-821b-93ad-e7c38618c9c6",
     "words": [
       "correspondence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asked whether string theory or quantum computation bears on the Millennium Problems, or whether any of it strengthens cryptography. A physical duality can PREDICT a statement that mathematics then proves — mirror symmetry is the genuine instance — but a correspondence never proves the problem it corresponds to, so every row carries the precise gap that remains beside what is really established. bearsOnSecurity is false in every row, declared per row rather than waved away: hardness rests on module-LWE, factoring, discrete logs and hash preimage resistance, and no result here constrains any of them.",
-    "uuid": "23affa70-afe6-8222-9c44-98d356edbddf",
+    "uuid": "8bc83713-0385-8444-9617-d25f022ad264",
     "words": [
       "use",
       "when",

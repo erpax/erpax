@@ -2,11 +2,11 @@
 name: vent
 description: "Use when reasoning about vent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: vent
-coordinate: "vent · 1/base · 4a754e7d"
-contentUuid: "04ba17e0-a3db-5a4f-a48f-42697cff2b66"
-diamondUuid: "c719fa18-e228-8933-8926-9cf8a187b59c"
-uuid: "4a754e7d-0185-85a4-af59-7311698bd11e"
-horo: 1
+coordinate: "vent · 7/descent · 4af39b30"
+contentUuid: "12ce81a7-c97d-595f-872f-e07c16bbc72b"
+diamondUuid: "f256ad66-b43a-8975-b766-d056801ca3e6"
+uuid: "4af39b30-e2dd-87a2-a795-abe62229aa6a"
+horo: 7
 typography:
   partition: vent
   bondDegree: 32
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "167f6697-ac0e-893b-81b5-5f12ac2913fa"
+  computationUuid: "a2100e8f-e361-8240-8f8d-3540f8a14b6a"
   stages:
     - stage: path
       stageUuid: "ae245f19-957f-8c95-8d44-2e6f89a7f8a9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f8a27004-cabf-8b92-bda1-a48e6300562d"
     - stage: horo
-      stageUuid: "deb77947-e6f9-8384-91a7-a53c549a6a3d"
+      stageUuid: "4a6e40bc-11bd-8cdf-9a6d-e1ff1ef6a084"
     - stage: seal
       stageUuid: "2c3d4030-cdf3-8abd-b763-d54d33c9952a"
     - stage: uuid
-      stageUuid: "6cbfa742-a5d1-8425-9196-1d376e7c53c1"
+      stageUuid: "2d1d65a4-7855-8ac3-986c-e2e2966bf805"
 version: 2
 ---
 # vent

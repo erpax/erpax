@@ -2,11 +2,11 @@
 name: negative
 description: "Use when reasoning about negative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/negative"
-coordinate: "vocabulary/negative · 2/share · 245519bd"
-contentUuid: "2a59777e-a115-554a-b1f7-2acc562e4abe"
-diamondUuid: "da587bf0-c6a1-8ce8-a7c3-106d3ddf1ed2"
-uuid: "245519bd-bf5f-855c-9f39-feaf7d7c8047"
-horo: 2
+coordinate: "vocabulary/negative · 8/crest · 7a23ce98"
+contentUuid: "1c26f566-1040-5ea3-ad52-8a8438a895fe"
+diamondUuid: "638af848-f0fb-8e17-a186-fdb300dad9ec"
+uuid: "7a23ce98-35fb-8759-b381-83d1672ce0ef"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "10f936bb-365b-86d8-b934-031bebdef619"
+  computationUuid: "d3dc31d4-33d9-80d3-8e9c-a8c8773df03c"
   stages:
     - stage: path
       stageUuid: "7237df3c-a12a-8bb8-b644-b7238848005a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63190f25-7078-89cf-8bfc-e3ff33041bcc"
     - stage: horo
-      stageUuid: "8fe9b5c0-2ccc-8cf0-99cc-6083460238a6"
+      stageUuid: "82e7c520-de9c-8754-98e2-aa2660a9af9d"
     - stage: seal
       stageUuid: "889b016c-1c79-8465-8a30-c085e004cb2e"
     - stage: uuid
-      stageUuid: "67bc6151-11c5-8968-8ecd-1af102fa5910"
+      stageUuid: "71b703e2-ca51-8ac6-b503-e9ad24be7910"
 version: 2
 ---
 # negative

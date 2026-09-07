@@ -2,18 +2,18 @@
 name: qualification
 description: Use when modelling one qualification — the singular model of the qualifications collection (the plural store); a credential establishing fitness for a role.
 atomPath: "vocabulary/qualification"
-coordinate: "vocabulary/qualification · 7/descent · fc6371f9"
-contentUuid: "bb628348-6f1f-50a1-ad44-6a614396e47c"
-diamondUuid: "2f681f03-fccc-8988-9c37-876c472c9477"
-uuid: "fc6371f9-a055-8822-ab34-76d541a085ca"
-horo: 7
+coordinate: "vocabulary/qualification · 8/crest · e822c615"
+contentUuid: "fd6bbfca-9bdd-5fc0-85f1-f5d6a4abfc99"
+diamondUuid: "fb5820bb-d983-8c54-9da4-b4cd35b8d7da"
+uuid: "e822c615-5923-8de0-8c31-a7ce829445d6"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8f191da0-6e67-83d8-8ca9-48981b2113a9"
+  computationUuid: "cd2f8300-9708-8851-a3f4-1922f7efa8b9"
   stages:
     - stage: path
       stageUuid: "afd4b8be-342e-84e1-b640-e603e5b1fef3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "31d0ea71-1012-836b-a53e-088033066299"
     - stage: horo
-      stageUuid: "ccb33a2e-27f1-8926-aaa6-fbe6f507c98b"
+      stageUuid: "f5adf2df-c535-86a6-a4b1-b00e8d40744d"
     - stage: seal
       stageUuid: "742020a0-7f3b-8c1b-af43-1944e05151af"
     - stage: uuid
-      stageUuid: "9928c35b-8639-8124-ac0d-b4bdbee539f1"
+      stageUuid: "5c9499a9-3b89-856a-b78f-56f196e29a15"
 version: 2
 ---
 # qualification — the model of one [[qualifications]] row

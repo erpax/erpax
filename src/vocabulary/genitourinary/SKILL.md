@@ -2,11 +2,11 @@
 name: genitourinary
 description: "Use when reasoning about genitourinary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/genitourinary"
-coordinate: "vocabulary/genitourinary · 1/base · ed7f6910"
-contentUuid: "f46651e2-5771-5819-9f88-92d0b098dca0"
-diamondUuid: "25fb8bf1-f495-8cab-829f-20e5bfef3603"
-uuid: "ed7f6910-3062-8289-8b67-3f0c5022cbca"
-horo: 1
+coordinate: "vocabulary/genitourinary · 4/weave · 654d93f9"
+contentUuid: "f2b95504-5744-5ca3-b747-948762f4b3b4"
+diamondUuid: "13f6e0a8-b9e0-800c-a169-a9d1b1e170e9"
+uuid: "654d93f9-1e1c-8b2b-8810-2d7f45abc0e2"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8e45de02-1647-824d-84fb-7e095ea5659e"
+  computationUuid: "4f782e8b-b9a6-86e8-a3b4-70f55e1394b4"
   stages:
     - stage: path
       stageUuid: "6f0b112e-0b11-880f-af1c-6b9feaecf014"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b8b8bf9f-684e-8a55-8db6-00add5b5b3d7"
     - stage: horo
-      stageUuid: "b487c00b-920d-852f-bb2f-97259069dd19"
+      stageUuid: "aa412779-5ec6-87d1-88b5-6e8e05b346fa"
     - stage: seal
       stageUuid: "336413a7-ec46-8b3d-843b-94d27a863be6"
     - stage: uuid
-      stageUuid: "0f26b0fb-a035-845d-ba69-eed0b9d4ed3b"
+      stageUuid: "eb12b62e-e822-85aa-bacd-945dcbcbc2ec"
 version: 2
 ---
 # genitourinary

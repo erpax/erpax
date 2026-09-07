@@ -2,11 +2,11 @@
 name: visual
 description: "Use when reasoning about visual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: visual
-coordinate: "visual · 1/base · 750cfb32"
-contentUuid: "fe944aff-74a8-5257-a1b0-cddbd4ee1533"
-diamondUuid: "8ef563c3-8620-82a6-a849-ed8215e17f3c"
-uuid: "750cfb32-10f2-839b-bd0f-c5d6b8bceb60"
-horo: 1
+coordinate: "visual · 2/share · a31cf01c"
+contentUuid: "c917ebd1-af7e-5acc-afd9-addf59fdf6cd"
+diamondUuid: "ae7fe6d0-a628-875b-8fe1-f48ff7f4373f"
+uuid: "a31cf01c-a6cd-85c6-b851-556c69500b58"
+horo: 2
 typography:
   partition: visual
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4ce85e0c-a054-86d3-a0da-5e857de31123"
+  computationUuid: "3694253d-8f97-82e5-9e76-8147a4e29cb7"
   stages:
     - stage: path
       stageUuid: "628096d0-0c95-897f-b0f2-d39c57100584"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2dce5f32-4c4d-8baf-a167-12d9f1e787e4"
     - stage: horo
-      stageUuid: "98628959-473c-87df-b535-c82b6a9b4c0a"
+      stageUuid: "4d155caa-7373-8397-a8b0-2f21af3ceee1"
     - stage: seal
       stageUuid: "28a20ba7-2824-8e85-b78e-02e5ba1c1931"
     - stage: uuid
-      stageUuid: "42798671-9c3b-8c62-b5ff-8155f50c64d4"
+      stageUuid: "3b98c05b-8b47-8dcd-9a83-7655791532c7"
 version: 2
 ---
 # visual

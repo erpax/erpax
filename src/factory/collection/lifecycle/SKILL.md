@@ -2,18 +2,18 @@
 name: lifecycle
 description: "Use when a collection's events should exist without per-collection code — the spine fold derives created + per-transition events from a status select, applied once at registration."
 atomPath: "factory/collection/lifecycle"
-coordinate: "factory/collection/lifecycle · 7/descent · 6323b5c7"
-contentUuid: "a0c81dd1-bbd7-5eee-8305-bc1b41a3ce41"
-diamondUuid: "19f11f70-c603-8e5e-8ad6-518433d52d39"
-uuid: "6323b5c7-9f9d-8256-bca8-1d681f070330"
-horo: 7
+coordinate: "factory/collection/lifecycle · 1/base · b41a81d0"
+contentUuid: "e8cf882e-a26d-5006-992c-09679fbd5635"
+diamondUuid: "f670ac1d-4677-8be8-bde1-b98ae0550475"
+uuid: "b41a81d0-4aa4-8edd-ab26-7044bb322379"
+horo: 1
 typography:
   partition: factory
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5d2df432-46be-8827-860c-bd433355cc98"
+  computationUuid: "938f71d8-5b36-8dcc-bb67-3686cf0e7b5f"
   stages:
     - stage: path
       stageUuid: "2c061c3f-b520-841c-a0c4-74114c1b7218"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "07cf8dd3-c37f-86b0-9cb4-83ed3815953b"
     - stage: horo
-      stageUuid: "21f6e7e0-a035-8269-8325-50f9dc7417ac"
+      stageUuid: "cf1338fe-cbe0-86bb-8821-842bd7fd9801"
     - stage: seal
       stageUuid: "1748ab97-f4c4-83d8-82ea-047d274c03e8"
     - stage: uuid
-      stageUuid: "d67c93e0-daa2-8433-9f8b-8d46fd25d13e"
+      stageUuid: "b87d36db-fa0b-88c0-8cb0-0290c0486298"
 version: 2
 ---
 # factory/collection/lifecycle — the events a status field already implies

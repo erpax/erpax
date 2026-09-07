@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "correlation",
-    "uuid": "22893288-590c-81df-a3c4-bc527be53eae",
+    "uuid": "4e96c426-a830-8f3e-b05d-4b1229661b04",
     "words": [
       "correlation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when analyzing variable relationships — Pearson/Spearman correlation, multicollinearity detection, correlation matrices, spurious vs causal correlation, correlation thresholds in feature selection.",
-    "uuid": "f993c905-cdab-8a09-bf76-165570c97827",
+    "uuid": "2700760a-b432-8fe1-9d14-c5fab4f912ec",
     "words": [
       "use",
       "when",

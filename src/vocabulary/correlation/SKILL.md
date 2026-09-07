@@ -2,18 +2,18 @@
 name: correlation
 description: "Use when analyzing variable relationships — Pearson/Spearman correlation, multicollinearity detection, correlation matrices, spurious vs causal correlation, correlation thresholds in feature selection."
 atomPath: "vocabulary/correlation"
-coordinate: "vocabulary/correlation · 1/base · 375c58b8"
-contentUuid: "ccbffc0f-beb2-5ede-9525-b2a5fc55d2e3"
-diamondUuid: "90cb608f-1026-8878-baac-86ab47c7a6eb"
-uuid: "375c58b8-69c2-864b-ba9a-9d02c71635ca"
-horo: 1
+coordinate: "vocabulary/correlation · 5/round · 22893288"
+contentUuid: "4d48712b-4091-56f5-b16e-5cee5ad87ea7"
+diamondUuid: "adb13cc6-8cb6-87cc-b302-d65a918506fd"
+uuid: "22893288-590c-81df-a3c4-bc527be53eae"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a055e559-a92d-8c4e-9f5b-4b64df3b4ea9"
+  computationUuid: "aab3ecb4-35bb-8a02-a64a-52a314d00fed"
   stages:
     - stage: path
       stageUuid: "f39d5832-6abe-881e-9aad-51dae0ca61f8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e34bf967-ac1b-8185-8811-341af32bc205"
     - stage: horo
-      stageUuid: "36973d2d-0294-8b10-a281-b29d40447b36"
+      stageUuid: "69175731-fef7-8257-8133-de95fc43666b"
     - stage: seal
       stageUuid: "1f64f92d-9c0b-8144-ab68-03cd8c5e7292"
     - stage: uuid
-      stageUuid: "0d1d89db-5dbe-861e-b168-37b389b494bb"
+      stageUuid: "b3533f47-0886-8568-bd06-c75f2885058e"
 version: 2
 ---
 # correlation

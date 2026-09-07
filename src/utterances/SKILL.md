@@ -2,10 +2,10 @@
 name: utterances
 description: "Use when reasoning about utterances — Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry."
 atomPath: utterances
-coordinate: "utterances · 7/descent · fef21fbd"
-contentUuid: "0e102018-eae8-595d-9352-fdc5d8321f50"
-diamondUuid: "6a0593b7-40f4-8f86-8e57-5bc8a0e3679b"
-uuid: "fef21fbd-a361-8af4-b4e4-76b0edf64544"
+coordinate: "utterances · 7/descent · 2df68009"
+contentUuid: "52dade3e-5b13-516b-9d67-eaf6d7fb1d75"
+diamondUuid: "657e29a5-d139-8811-b9ad-cd63d0659bb3"
+uuid: "2df68009-550a-8faf-aaa1-6eb6b11a1241"
 horo: 7
 typography:
   partition: utterances
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a0810eb2-c0b3-8811-8864-a2864be72800"
+  computationUuid: "dede3018-c104-8862-aa8c-54f818427aa3"
   stages:
     - stage: path
       stageUuid: "03e5e520-dbe5-8d6f-9384-ea906b38581e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e1a9e943-b8f0-8594-8cab-2bb588e1c454"
     - stage: horo
-      stageUuid: "89e9cbbe-08d8-8f36-a352-4d599636d071"
+      stageUuid: "50d3aad2-0f18-8ba8-b6ec-29ecc79ff197"
     - stage: seal
       stageUuid: "4b07e272-e293-898d-9b58-285c58363c5d"
     - stage: uuid
-      stageUuid: "e1be41cb-6372-8f94-9b48-79d8f461200c"
+      stageUuid: "bf853bbe-aa38-8549-b26c-b58ad91a6337"
 version: 2
 ---
 # utterances

@@ -2,11 +2,11 @@
 name: router
 description: "Use when reasoning about router — Barrel face for skill/router — re-exports the atom public surface at index."
 atomPath: "skill/router"
-coordinate: "skill/router · 1/base · 81ab12ea"
-contentUuid: "ebf8bfbc-35b6-51c9-9cda-de66137a699b"
-diamondUuid: "d599e61a-8014-84b3-9e71-dc88fb753d6b"
-uuid: "81ab12ea-fd3e-8427-ae8c-1cd2982192bf"
-horo: 1
+coordinate: "skill/router · 8/crest · 28ad5af1"
+contentUuid: "00abc105-e0a7-51c8-9acc-c26ed404d250"
+diamondUuid: "4bd4a262-0258-85a8-89a3-f3a1356cb1bd"
+uuid: "28ad5af1-641d-888c-a060-2bed6bb38f15"
+horo: 8
 typography:
   partition: skill
   bondDegree: 21
@@ -15,7 +15,7 @@ standards:
   - SFIA
 bindings: []
 signatures:
-  computationUuid: "71367ed7-32cc-82ec-9e5e-0e25783eb567"
+  computationUuid: "d6554543-299f-85d5-bfbd-fb9cc84ff67c"
   stages:
     - stage: path
       stageUuid: "28c28e7c-641d-8649-b10f-e93cdb9f85f3"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "9819f976-c8d8-8fc0-894f-d91be9eea9e7"
     - stage: horo
-      stageUuid: "4af249fb-03b3-83f2-9e6b-c5e475c14c5c"
+      stageUuid: "b66c47ee-3a08-841f-ae88-63c633a61c6a"
     - stage: seal
       stageUuid: "a11e89d1-5433-8ded-b396-c58b337afa41"
     - stage: uuid
-      stageUuid: "f3dcde9b-1898-8a1d-b172-2820391fc2cb"
+      stageUuid: "1aaf53ad-8e0d-843c-bffd-38ce64d66f3f"
 version: 2
 ---
 # router

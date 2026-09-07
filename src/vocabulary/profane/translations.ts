@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "profane",
-    "uuid": "b7602a92-a5c4-8afa-8d02-dcb8b78cfb6a",
+    "uuid": "b5b1ec51-93f8-81b9-bb68-2319b82b2931",
     "words": [
       "profane"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when naming what fails the audit — the lie, the manipulated/tampered datum, the forged record, the unbalanced ledger, the unsourced claim, the dead link. The set of all falsehood-forms; dual of sacred; each named form a detector skill (infinite).",
-    "uuid": "8902e35c-3ade-8f6c-9369-a3652e6e832b",
+    "uuid": "a6cc56e5-b896-8e31-9547-2bdedb5fe7d2",
     "words": [
       "use",
       "when",

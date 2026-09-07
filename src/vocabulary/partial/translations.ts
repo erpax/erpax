@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "partial",
-    "uuid": "b2af3a93-9bf9-80d2-8eff-d13ef419cd7f",
+    "uuid": "daf84331-3e95-84aa-bcb3-931ce54793da",
     "words": [
       "partial"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about partial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "37b5c206-ce76-8879-957b-22fc1ea2efaf",
+    "uuid": "4db530fa-7688-8c39-9cb6-c8adb13d1b84",
     "words": [
       "use",
       "when",

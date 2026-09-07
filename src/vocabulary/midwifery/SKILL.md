@@ -2,11 +2,11 @@
 name: midwifery
 description: "Use when reasoning about midwifery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/midwifery"
-coordinate: "vocabulary/midwifery · 2/share · 96188601"
-contentUuid: "6ffc90b5-7f2e-5159-88b4-10fcb2fce7c3"
-diamondUuid: "9f27a662-41ba-835c-a8e5-76a595cd8398"
-uuid: "96188601-781c-8f84-a1e5-54ca1539f144"
-horo: 2
+coordinate: "vocabulary/midwifery · 8/crest · 025ef8b1"
+contentUuid: "9e921cd0-b09e-5615-83c5-5a47d4babaa5"
+diamondUuid: "866ed1f3-bd82-86d0-9bca-dd7df87c8901"
+uuid: "025ef8b1-72fd-8fca-8272-7027dcc5372d"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a35a2dea-aa08-8482-af8d-67ca3495ef5e"
+  computationUuid: "54dae2cf-b8c9-8d1b-872e-1968813090f5"
   stages:
     - stage: path
       stageUuid: "569ae120-9c1e-84a0-81e1-ef82010fcc73"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7c8cce64-406b-8252-97a5-a5643dd4ed6a"
     - stage: horo
-      stageUuid: "66177fa5-9ac0-86bd-bbc9-0b9637307ce1"
+      stageUuid: "2ea2c351-70b6-8353-aa98-7ab7e70f59b8"
     - stage: seal
       stageUuid: "84b367be-8adc-8ed2-8ce1-7b9cda780784"
     - stage: uuid
-      stageUuid: "5ee28d4c-b611-8cdf-a823-60fbfce669fe"
+      stageUuid: "f7eb1a00-800a-8601-9fdd-a76f6517400b"
 version: 2
 ---
 # midwifery

@@ -2,11 +2,11 @@
 name: consulting
 description: "Use when reasoning about the economics of serving the corpus's knowledge — research pays the cost once, then a content-addressed answer is a cache hit served at zero marginal cost and reused without bound, so consulting ROI tends to infinity."
 atomPath: "quantum/consulting"
-coordinate: "quantum/consulting · 5/round · e0a43f04"
-contentUuid: "cbf9b33e-da2d-55ab-a594-df5b02567f59"
-diamondUuid: "d0915947-2d3f-84f0-adfc-01c3a6ac1a72"
-uuid: "e0a43f04-79a0-85dd-80ce-acda8de61666"
-horo: 5
+coordinate: "quantum/consulting · 1/base · 88e8b48d"
+contentUuid: "bdb8df9f-6433-5952-86b6-ca7dee9eb0bd"
+diamondUuid: "8068daab-f79d-85a1-b1af-91b9d2a856d1"
+uuid: "88e8b48d-0b9e-8708-a36b-6df919ca5836"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "non-rivalrous information economics; content-addressed caching (the cache hit = zero marginal cost)"
 bindings: []
 signatures:
-  computationUuid: "f3955df5-741f-833e-b1a6-0cf712793c02"
+  computationUuid: "910756b0-6944-8416-83ba-ba1998da22b5"
   stages:
     - stage: path
       stageUuid: "36f41275-7d20-8376-b6de-86e3c7cc2015"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fed51b18-1f84-8e45-a931-381c3ac1ef56"
     - stage: horo
-      stageUuid: "b38c1fcf-65fa-841e-b292-11bd6d0702ea"
+      stageUuid: "0f178084-7087-8fc8-8080-b22785be437a"
     - stage: seal
       stageUuid: "0770ea38-ef98-84e8-b068-f43482d2cb98"
     - stage: uuid
-      stageUuid: "500a766b-ffc0-8b44-bead-d6a6ee9890bb"
+      stageUuid: "8403f57b-c72f-82e4-8169-c8568de5c81c"
 quantum:
   superposition:
     - akashic
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f3955df5-741f-833e-b1a6-0cf712793c02"
-    contentUuid: "cbf9b33e-da2d-55ab-a594-df5b02567f59"
+    computationUuid: "910756b0-6944-8416-83ba-ba1998da22b5"
+    contentUuid: "bdb8df9f-6433-5952-86b6-ca7dee9eb0bd"
 version: 2
 ---
 # quantum/consulting — infinite profit at no cost
@@ -79,4 +79,4 @@ Matter-twin: `src/quantum/consulting/index.ts` (`consultCost` · `consultProfit`
 @audit marginal cost is 0 on a cache hit; ROI = profit / sunk-cost → ∞ as reuses → ∞, never asserted
 @standard non-rivalrous information economics; content-addressed caching (the cache hit = zero marginal cost)
 
-<sub>content-uuid `cbf9b33e-da2d-55ab-a594-df5b02567f59` · account `quantum/consulting` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `bdb8df9f-6433-5952-86b6-ca7dee9eb0bd` · account `quantum/consulting` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

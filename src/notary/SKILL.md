@@ -2,11 +2,11 @@
 name: notary
 description: "Use when a fact must be given public faith — recorded in a bound chronological register, timestamped, sealed tamper-evident, and made presumptively authentic. The legal notarial act modelled on erpax primitives: the seal is a content-uuid, the protocol is an append-only hash-chain, authenticity is an inclusion proof; the honest boundary is that real legal force needs a commissioned notary or an eIDAS/RFC-3161 trust service."
 atomPath: notary
-coordinate: "notary · 4/weave · 8fd50e34"
-contentUuid: "60023d68-060f-5949-8ddd-8ce08e024e76"
-diamondUuid: "78631bb8-8fd3-82b6-91d2-9e0597feca55"
-uuid: "8fd50e34-5ede-8b43-87b7-6ce6c9e16628"
-horo: 4
+coordinate: "notary · 2/share · 16323b82"
+contentUuid: "6db007bc-8e69-54e7-aa33-b9bbea9bcfdd"
+diamondUuid: "855863b1-40e4-83fa-9581-6370157a2ea0"
+uuid: "16323b82-5650-89b7-a22f-0f733ecacdd2"
+horo: 2
 typography:
   partition: notary
   bondDegree: 44
@@ -20,7 +20,7 @@ standards:
   - "eIDAS — Regulation (EU) No 910/2014 — qualified electronic signatures, seals, timestamps"
 bindings: []
 signatures:
-  computationUuid: "84976a99-36e6-8821-8e9e-73c3ef84c8f9"
+  computationUuid: "49a12278-0719-87dc-ada9-92c13d8ef0bf"
   stages:
     - stage: path
       stageUuid: "e666b797-a70b-81c6-a7cd-a3a6696e39cd"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "6bf2f23d-d22d-8419-a021-1941f4885440"
     - stage: horo
-      stageUuid: "ceff9024-b06b-8d71-a2da-8c65772bafc6"
+      stageUuid: "39a8c127-003e-8845-91b6-ef26818b1bfd"
     - stage: seal
       stageUuid: "2147bdd1-bd20-8276-a3bb-5800a4a6c36a"
     - stage: uuid
-      stageUuid: "d9040e7e-9ef1-8ac1-82a0-a8c3d7dd024e"
+      stageUuid: "400885f0-c1d0-83ce-bf67-fec8c7cd6592"
 version: 2
 ---
 # notary — the notarial act

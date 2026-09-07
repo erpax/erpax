@@ -2,11 +2,11 @@
 name: recourse
 description: "Use when reasoning about recourse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/recourse"
-coordinate: "vocabulary/recourse · 2/share · bad5f13c"
-contentUuid: "db827e72-8db6-51c2-9acd-1635a09615ca"
-diamondUuid: "dd2e7704-3fd4-8303-9fb7-11ad047697f4"
-uuid: "bad5f13c-2072-8077-9bac-f420e0624b38"
-horo: 2
+coordinate: "vocabulary/recourse · 7/descent · 66f431f9"
+contentUuid: "a3423511-8c67-50fd-9d77-477e0547c42f"
+diamondUuid: "a0e617df-db3d-8bee-a442-d305735b78f6"
+uuid: "66f431f9-79b3-885d-bcd6-00a100670a6f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff570643-04bd-8202-a7b9-a22e0792a405"
+  computationUuid: "c3bde337-cd0f-8b5f-9c9f-05e5e42bb696"
   stages:
     - stage: path
       stageUuid: "04701fc0-536d-8f2d-a8ae-708dafbd9cb2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6f2f2c4d-de4b-8716-8120-e626f177f4be"
     - stage: horo
-      stageUuid: "3a0ba41b-1f21-81d6-8ec4-b8ba07fc284c"
+      stageUuid: "c98499c5-41c9-8fa3-a026-d61225c16970"
     - stage: seal
       stageUuid: "64410527-5843-8fc7-81ce-a9441b5e76bd"
     - stage: uuid
-      stageUuid: "7398bda2-d4ee-8210-9c1f-e60cc152fb35"
+      stageUuid: "0c98ad9d-ce3e-835b-bc1d-8066856b09c2"
 version: 2
 ---
 # recourse

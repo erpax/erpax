@@ -2,10 +2,10 @@
 name: closure
 description: "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be."
 atomPath: "millennium/closure"
-coordinate: "millennium/closure · 5/round · 732dc1da"
-contentUuid: "2f6f236f-bbd9-558c-85e4-86923cc622eb"
-diamondUuid: "728d1a15-ee97-83d9-9a89-adce94c02e47"
-uuid: "732dc1da-9b0e-8fb3-9a2a-d8a0bc5ff812"
+coordinate: "millennium/closure · 5/round · 6fe793ff"
+contentUuid: "9857772a-ce1f-52b4-bde6-78025d58a97a"
+diamondUuid: "29f2439b-434c-83dc-b2bf-f394771449b3"
+uuid: "6fe793ff-8578-883a-88bb-570fe971c33e"
 horo: 5
 typography:
   partition: millennium
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "b9a8dd76-8ae1-8545-86d8-9c0479280de0"
+  computationUuid: "fb9c7c46-1a98-88c0-96cd-d6568bd68372"
   stages:
     - stage: path
       stageUuid: "b31ca6c7-4636-8dca-8171-d81aaf0d7974"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a510ca2b-57f9-8445-9f78-579945e953cb"
     - stage: horo
-      stageUuid: "5b636c0f-c73e-87fe-bf21-56d147690442"
+      stageUuid: "7b082be0-4503-8fae-8ff4-39ab196da323"
     - stage: seal
       stageUuid: "7f0d1059-d741-82f5-86bd-33cb655bd9a2"
     - stage: uuid
-      stageUuid: "9c21cb3e-d37b-8145-8720-41e8fe620f10"
+      stageUuid: "e35d0ce9-d205-865b-8cfc-d4d5afccf75c"
 version: 2
 ---
 # millennium/closure — the decidable half, computed

@@ -2,11 +2,11 @@
 name: contracts
 description: "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register."
 atomPath: "insurance/contracts"
-coordinate: "insurance/contracts · 5/round · 5337e36c"
-contentUuid: "e80e536d-341e-5cb0-bc5f-055274ca95f7"
-diamondUuid: "3e8d6837-8348-804c-84f7-cf2c637e65d6"
-uuid: "5337e36c-a782-86b8-b2c2-2bd109eb86ed"
-horo: 5
+coordinate: "insurance/contracts · 8/crest · ffe31b20"
+contentUuid: "68fe20df-e58e-5e83-8a0b-8d8abc5e9186"
+diamondUuid: "292d56a5-2be6-8985-9f5d-2751eca457e9"
+uuid: "ffe31b20-5e88-89ec-9bb1-74b032766fe6"
+horo: 8
 typography:
   partition: insurance
   bondDegree: 97
@@ -36,7 +36,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "60fca608-a5c9-85e2-9141-c727065ddce8"
+  computationUuid: "237b7a6b-2167-8d6b-9e7c-c57cb694b151"
   stages:
     - stage: path
       stageUuid: "ce0a3bec-a16d-8df9-b3be-9ae3bf5945c6"
@@ -47,11 +47,11 @@ signatures:
     - stage: links
       stageUuid: "a7e1e5d3-7bee-871e-93c2-ed4c81dc9699"
     - stage: horo
-      stageUuid: "f87e6cec-6178-823f-93ad-bed91f253068"
+      stageUuid: "fe35c499-22e1-846d-99c7-401b884362f0"
     - stage: seal
       stageUuid: "9e4e4d15-01e5-8147-b28d-624f07c9aaec"
     - stage: uuid
-      stageUuid: "7c49c44b-bfc4-831c-b996-1cabd6d042d9"
+      stageUuid: "14bcb98a-dd40-8a52-9568-a4287a212940"
 version: 2
 ---
 # insurance-contracts

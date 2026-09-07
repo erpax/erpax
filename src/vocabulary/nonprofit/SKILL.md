@@ -2,11 +2,11 @@
 name: nonprofit
 description: "Use when reasoning about nonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/nonprofit"
-coordinate: "vocabulary/nonprofit · 4/weave · ab191afb"
-contentUuid: "6c42657b-4f6f-5bc6-870d-279da6bf6e7b"
-diamondUuid: "d57c788d-d321-82c7-ac26-2568feb52d5d"
-uuid: "ab191afb-3e88-8f85-ac78-e7f2405067e3"
-horo: 4
+coordinate: "vocabulary/nonprofit · 1/base · 6efd091d"
+contentUuid: "124c4194-1e82-53d0-83f7-e1967eadb13d"
+diamondUuid: "e73a8b39-b499-8d57-bb09-2ef2b6295129"
+uuid: "6efd091d-d9b4-8024-88da-ad6bfcc28b7b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 38
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "58800640-c384-8782-a3a2-464bfb2698e6"
+  computationUuid: "d0005bf5-3d89-89d5-a9d7-b3c864fe6aee"
   stages:
     - stage: path
       stageUuid: "5a2688ba-db35-85eb-9b0a-d7dd978e2b0c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "de24f2c8-e18e-8e83-a06c-75e5cb095328"
     - stage: horo
-      stageUuid: "fd2dc9e9-c9d0-879d-abc4-7f010968954d"
+      stageUuid: "d2f128d6-0af3-861d-906b-29f93410b565"
     - stage: seal
       stageUuid: "d19b6937-dd90-85fd-89dd-db9d455b3c1e"
     - stage: uuid
-      stageUuid: "32d7dbe4-2fcd-80ef-9c44-e0b52a52d830"
+      stageUuid: "367c6a4a-3f5e-87a4-b8b0-1d69f3bb58e5"
 version: 2
 ---
 # nonprofit

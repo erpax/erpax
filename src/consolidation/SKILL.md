@@ -2,18 +2,18 @@
 name: consolidation
 description: Use when modelling one consolidation — the singular model of the consolidations collection (the plural store); the combination of multiple entities figures into one set.
 atomPath: consolidation
-coordinate: "consolidation · 1/base · f29528da"
-contentUuid: "301f5600-97a9-5f46-bda2-cf7a782dd1ec"
-diamondUuid: "d61c0a21-6266-8843-bcad-9c311275987a"
-uuid: "f29528da-a0ad-87e8-98eb-a0a88a849933"
-horo: 1
+coordinate: "consolidation · 7/descent · 76d408df"
+contentUuid: "d023ed69-3110-5e35-8b67-93a499687b94"
+diamondUuid: "c80438e8-215d-8f61-8c55-909f99bd7fa2"
+uuid: "76d408df-a61d-8094-aaf7-0ac8f3173269"
+horo: 7
 typography:
   partition: consolidation
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cd8fc738-f271-8aca-af39-1f730a7fe7f2"
+  computationUuid: "e8dc0ef5-f763-8317-b866-243c7a5e4011"
   stages:
     - stage: path
       stageUuid: "957cccfa-a731-89fb-a2d9-ae55987ab50b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4c8b853c-fcba-836f-a440-f9f33e1cb33f"
     - stage: horo
-      stageUuid: "7997409f-4904-8430-83b9-c59f9c760499"
+      stageUuid: "db599daf-9e27-8000-89ad-762c5d1b4131"
     - stage: seal
       stageUuid: "fe574a96-6890-8e21-9be6-e1b683224dbc"
     - stage: uuid
-      stageUuid: "11bb0bff-4fb8-819c-9228-157a89789b5b"
+      stageUuid: "36b89177-7e3b-85d5-964a-0de68be5c33a"
 version: 2
 ---
 # consolidation — the model of one [[consolidations]] row

@@ -2,11 +2,11 @@
 name: ingredient
 description: "Use when reasoning about ingredient as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ingredient"
-coordinate: "vocabulary/ingredient · 4/weave · 70f74b7e"
-contentUuid: "cb87e9f3-80b0-5f75-89ee-5e74f2737046"
-diamondUuid: "f4887f34-d828-8aea-acb7-ee9ef1042e29"
-uuid: "70f74b7e-9f93-85a2-8344-1c77b992b49c"
-horo: 4
+coordinate: "vocabulary/ingredient · 5/round · dee7222a"
+contentUuid: "322231b9-c5b9-5c87-b263-7225d1b9eafc"
+diamondUuid: "edd0c17d-0ed5-891c-9675-744af5087418"
+uuid: "dee7222a-8195-86d3-a60f-5d0747c256c3"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "49a4634c-1ad2-8c4c-8333-1d7797d3e120"
+  computationUuid: "710e9e2a-c9a7-8f74-85f7-8627560a1de3"
   stages:
     - stage: path
       stageUuid: "5ed2dc0b-7018-8c5a-864b-bfc9355cfb32"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "45e3a202-ad49-812a-82b7-7d477b73f50a"
     - stage: horo
-      stageUuid: "a8361a0b-823a-8f99-8378-a763d40e3662"
+      stageUuid: "89e17f1d-e58b-8525-bf83-9338e9689f66"
     - stage: seal
       stageUuid: "f83ef213-a1df-8f82-8133-acf93b30e271"
     - stage: uuid
-      stageUuid: "3c75d1b7-ac67-8603-9f8b-0ed9d127aa0a"
+      stageUuid: "e5ea563f-4289-83ab-93c2-e2aad7a5834a"
 version: 2
 ---
 # ingredient

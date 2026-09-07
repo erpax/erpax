@@ -2,11 +2,11 @@
 name: outlet
 description: "Use when reasoning about outlet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/outlet"
-coordinate: "vocabulary/outlet · 8/crest · f36deb99"
-contentUuid: "9d5958d9-4606-5c85-9a12-986aace8cef2"
-diamondUuid: "6045ec77-aa3d-826f-a5f8-3571726b63de"
-uuid: "f36deb99-0fab-8675-9774-4c8398583ef0"
-horo: 8
+coordinate: "vocabulary/outlet · 1/base · be778b15"
+contentUuid: "80e0959f-a998-56df-a062-e282078bf893"
+diamondUuid: "97ae529e-ae68-8570-bac4-9fe361e39e81"
+uuid: "be778b15-2b80-8623-a8f2-5bcc2c209822"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6307923e-bd86-8ddb-a49b-f73689c43132"
+  computationUuid: "764b128e-be63-8be8-86b7-ba7abe3c25ab"
   stages:
     - stage: path
       stageUuid: "d820e69a-61b5-87c2-9a25-a63545d15442"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "103a89db-e7fa-83cd-ac4f-ac946407492b"
     - stage: horo
-      stageUuid: "a62487c9-1193-8254-a828-38d4d0d5482a"
+      stageUuid: "335ebd1e-7044-8d0f-a2b5-41128c5fadaf"
     - stage: seal
       stageUuid: "e71b7802-f521-8207-8543-a8777c388e56"
     - stage: uuid
-      stageUuid: "84e6d172-52b7-8c5b-9efb-1e982ae0d311"
+      stageUuid: "fac04821-3ee0-8911-8631-4be36ca8f2d0"
 version: 2
 ---
 # outlet

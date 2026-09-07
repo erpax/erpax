@@ -2,18 +2,18 @@
 name: orchestrate
 description: Use when reasoning about orchestrate — Quantum orchestration engine for parallel Millennium Problem computation
 atomPath: orchestrate
-coordinate: "orchestrate · 2/share · 9231013e"
-contentUuid: "4818ee7d-5f85-51a7-b396-ea12b76cdcaa"
-diamondUuid: "7ace55d0-8492-8b2f-9135-555b5674f2f6"
-uuid: "9231013e-122d-8ca5-a892-c0a6127d573f"
-horo: 2
+coordinate: "orchestrate · 4/weave · fec794e4"
+contentUuid: "24ce5f7b-4ab1-5768-a1db-a5ff252bc35e"
+diamondUuid: "0dd62d5c-1275-802b-b032-0309938320a0"
+uuid: "fec794e4-c436-88bc-af50-da1410a66d6b"
+horo: 4
 typography:
   partition: orchestrate
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f596c8a3-edb0-82d5-949e-66d10857a7c5"
+  computationUuid: "b778cd6f-7bc1-8937-9260-4fc2741f368e"
   stages:
     - stage: path
       stageUuid: "5c9d3c4e-8599-8a22-a7ac-443d871561e2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ef7c527b-17e3-8854-b326-bb8ec907a522"
     - stage: horo
-      stageUuid: "b689455b-1091-8081-9f38-e96d0f3d3d61"
+      stageUuid: "c5ad82b3-fe62-815b-bc62-74ee25ed7721"
     - stage: seal
       stageUuid: "53f00c1c-9f50-8ae8-b38c-cd501c1e54d0"
     - stage: uuid
-      stageUuid: "edf1b790-7bde-808c-85cf-b0dc87469e4c"
+      stageUuid: "9c8f5703-d881-8244-8cb7-92d00e2a15e8"
 version: 2
 ---
 # orchestrate — orchestrate quantum computation across all problems in all directions

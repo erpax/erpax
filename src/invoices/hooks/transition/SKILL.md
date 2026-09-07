@@ -2,10 +2,10 @@
 name: transition
 description: "Use when reasoning about transition — The AR hook ( ) and the AP hook ( ) both answer one question before emitting a domain event: *did this write CHANGE the document's liveness?* Both wrote , , and for themselves…"
 atomPath: "invoices/hooks/transition"
-coordinate: "invoices/hooks/transition · 8/crest · bfb22e98"
-contentUuid: "455708cf-20b0-5f32-b85e-c8ce4e53ef98"
-diamondUuid: "880ac030-53a0-8170-9f18-a2a253b3ec67"
-uuid: "bfb22e98-72e5-8527-9330-5e12b47772e5"
+coordinate: "invoices/hooks/transition · 8/crest · 2fd20886"
+contentUuid: "31133933-6c67-516d-a6d2-6d5ff027bdfb"
+diamondUuid: "18971397-b0c3-8be3-a2af-473f4bd4c162"
+uuid: "2fd20886-b6e3-8b32-9637-ffe47d1b03b9"
 horo: 8
 typography:
   partition: invoices
@@ -15,7 +15,7 @@ standards:
   - "IFRS IAS-1 presentation (a reversal is a transition, never an edit)"
 bindings: []
 signatures:
-  computationUuid: "40d8ca2a-f13a-889d-b8bf-a796d2cb20e5"
+  computationUuid: "d0e5383a-b644-8881-a80b-df4f801f5300"
   stages:
     - stage: path
       stageUuid: "be733482-a74c-8b44-8573-a52fe2eb38fe"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "42ee8e40-cda5-85e9-8f56-018d8c1b60a8"
     - stage: horo
-      stageUuid: "aa22b028-23ce-8666-ad88-29128afcc2cf"
+      stageUuid: "f495f61a-0d4a-83bc-9fd4-12ab5992c359"
     - stage: seal
       stageUuid: "2dd7452e-fa21-888d-ad42-15b98432233b"
     - stage: uuid
-      stageUuid: "6d835d91-a033-814e-8181-9b6992ac207c"
+      stageUuid: "670202a4-d2c8-8e99-8226-8fbe63fc064d"
 version: 2
 ---
 # invoices/hooks/transition — an event fires on the crossing, not on the state

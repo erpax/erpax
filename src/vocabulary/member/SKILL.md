@@ -2,10 +2,10 @@
 name: member
 description: Use when reasoning about member — A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.
 atomPath: "vocabulary/member"
-coordinate: "vocabulary/member · 5/round · 33d9a404"
-contentUuid: "e54dc16e-337e-548d-93aa-eaf0a436a0a4"
-diamondUuid: "7a47decc-f1d0-8418-853a-0aa012ebfa53"
-uuid: "33d9a404-4e50-869a-af9a-a194951e17ef"
+coordinate: "vocabulary/member · 5/round · f136cc3a"
+contentUuid: "2fc186ad-e510-5653-9d50-ff1059fa7269"
+diamondUuid: "1c2b252e-80f6-8b66-983b-037be241a432"
+uuid: "f136cc3a-f91d-8ea7-a922-d6c5cc0519ad"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "73b151c3-7f0d-8195-ab95-9d050b45a372"
+  computationUuid: "f64039e1-1989-8171-b401-e1a05b557dc1"
   stages:
     - stage: path
       stageUuid: "58e775ec-bce9-82d8-a6f6-f08cf2657107"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0243a568-6319-8c32-801e-49d3c7e851b6"
     - stage: horo
-      stageUuid: "222756c4-b5cb-8a33-946e-039a4ed9653e"
+      stageUuid: "37ae855e-5794-8478-b0fe-8c263be5435e"
     - stage: seal
       stageUuid: "6b6ac581-978a-84ec-b772-bb5a9c148614"
     - stage: uuid
-      stageUuid: "c52f2a4f-c87e-8e85-bca4-37ab54313280"
+      stageUuid: "31a47c7f-348f-8982-a754-0f330acf9e6b"
 version: 2
 ---
 # member

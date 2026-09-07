@@ -2,11 +2,11 @@
 name: credits
 description: "Use when reasoning about credits as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: credits
-coordinate: "credits · 5/round · e936fa6d"
-contentUuid: "af8d7cdb-3ab0-598f-8f8d-d9e048760b2b"
-diamondUuid: "7322c707-0d0f-8f21-afb5-61377de51072"
-uuid: "e936fa6d-4189-8c11-80f8-d5508077c3cd"
-horo: 5
+coordinate: "credits · 7/descent · 64a76094"
+contentUuid: "fa307e76-a6eb-5863-bc1a-74b6eb25b0a5"
+diamondUuid: "5c185a8f-68fd-8d48-b06e-0ea7cc49f4e7"
+uuid: "64a76094-d0c4-8495-a898-f144ab51df50"
+horo: 7
 typography:
   partition: credits
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b74160e1-44a1-8e91-ac9a-2cf06e4501e7"
+  computationUuid: "c8bc81ed-72dd-8056-aea1-805cb642b801"
   stages:
     - stage: path
       stageUuid: "ae3751d7-2994-83a1-a13f-188633d10034"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "db9e5306-4ef3-8e06-88ef-162bab978066"
     - stage: horo
-      stageUuid: "1ad90491-626b-81c0-a6bd-bba6011e94b1"
+      stageUuid: "dea183da-671e-8cf1-bf88-6a7e6e34eee2"
     - stage: seal
       stageUuid: "75e7cb51-6cab-88bd-853f-2881d64829b6"
     - stage: uuid
-      stageUuid: "3557cfb3-acea-8032-9758-f081375d934e"
+      stageUuid: "caad3f1f-39eb-8b44-a8c5-6d169be1256c"
 version: 2
 ---
 # credits

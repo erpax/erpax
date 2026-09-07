@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "logic",
-    "uuid": "67a782e7-9dba-8fb8-87ef-f4f4be133b74",
+    "uuid": "a8d90913-a116-8a59-8139-1f275c3fc47b",
     "words": [
       "logic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about correctness/consistency in the horo society — consistency IS harmony (a claim is sound iff harmonic: on the horo ring / gate-verified), inference must preserve harmony, and the harmonic-FIRST law orders resolution: self-consistent agents interact with themselves (no external coordination needed), so they resolve first and win the competition. The reasoning substrate education is acquired through and competition selects on.",
-    "uuid": "761279c8-399f-8b3c-9c71-cf31ebff7f05",
+    "uuid": "616a0e56-07b5-8b93-a2f0-f0f63612d9a3",
     "words": [
       "use",
       "when",

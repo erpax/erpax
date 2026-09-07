@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "push",
-    "uuid": "5ded2bad-9368-8efe-a85f-af90c8ac9368",
+    "uuid": "3ab5c4de-5a6d-8f32-8aee-b023462d8e22",
     "words": [
       "push"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a sealed tree should land by itself — the stop-hook body that runs the full seal, then commits and pushes, detached and lock-guarded, and touches nothing when the seal is red.",
-    "uuid": "c540da24-be76-80dc-a1c2-a1095c18120d",
+    "uuid": "8b567e58-d516-8303-87eb-f1279e2163e8",
     "words": [
       "use",
       "when",

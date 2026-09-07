@@ -2,11 +2,11 @@
 name: service
 description: "Use when parsing pain.002 payment-status-report import parser."
 atomPath: "pain002/import/service"
-coordinate: "pain002/import/service · 8/crest · ad65dd46"
-contentUuid: "081d235d-726c-5bc7-8b91-35f2238e5b66"
-diamondUuid: "33e1e37d-397e-8c4e-812c-8d8e8f3620f3"
-uuid: "ad65dd46-26d7-8b82-9344-46db91dc904b"
-horo: 8
+coordinate: "pain002/import/service · 5/round · 43f945cc"
+contentUuid: "f8a79ee7-3f64-58d7-8947-7570cfe75584"
+diamondUuid: "dddc34fa-5c9a-839b-98a8-32c06b13e064"
+uuid: "43f945cc-6b16-83e1-be4f-adfca3154ac7"
+horo: 5
 typography:
   partition: pain002
   bondDegree: 183
@@ -15,7 +15,7 @@ standards:
   - "ISO-20022 pain.002 customer-payment-status-report"
 bindings: []
 signatures:
-  computationUuid: "183b01c0-52c0-87b7-bdfc-c6b706d68a0d"
+  computationUuid: "7478eb19-d1b6-8559-ad94-9be386529b2e"
   stages:
     - stage: path
       stageUuid: "4049ec32-5efe-84e9-b732-aea9c811de07"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "387105c5-1faf-854f-99a0-1ed060f75bfb"
     - stage: horo
-      stageUuid: "5f545494-060d-8023-8eac-100edd07b2f4"
+      stageUuid: "36358775-6584-8cf5-8cbb-50ddd5446d83"
     - stage: seal
       stageUuid: "13d466f8-9905-8b36-b7d5-d7662d32ca46"
     - stage: uuid
-      stageUuid: "60172f06-5d70-8894-a299-4b505f0ed7dc"
+      stageUuid: "b827b56c-6871-8b42-9329-f17885744571"
 version: 2
 ---
 # service — pain.002 payment-status-report import parser

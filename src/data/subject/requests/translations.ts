@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "requests",
-    "uuid": "c1f39e7a-67b3-8ef3-a2ef-6c46fb3429c2",
+    "uuid": "f239ecdb-1b81-8e9e-a58d-430ce1b6db04",
     "words": [
       "requests"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection.",
-    "uuid": "b45e4c28-fb7e-80e2-b640-65676f702d6c",
+    "uuid": "0324c355-70df-8283-aa4e-865bb7ffe96b",
     "words": [
       "use",
       "when",

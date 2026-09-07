@@ -2,11 +2,11 @@
 name: actionable
 description: "Use when reasoning about actionable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/actionable"
-coordinate: "vocabulary/actionable · 4/weave · 69c0e3ff"
-contentUuid: "efa6e1ca-9d4e-5dcf-8f3c-94abdb3cb032"
-diamondUuid: "976b7776-fef2-8990-889d-18a519933306"
-uuid: "69c0e3ff-0c38-8e40-86bc-58a76d15c030"
-horo: 4
+coordinate: "vocabulary/actionable · 1/base · fc1edb6b"
+contentUuid: "924989b7-f67f-5edf-a96b-924169cdd610"
+diamondUuid: "10d8c8ed-eb66-8422-9007-1f7239e0c127"
+uuid: "fc1edb6b-e8f8-8059-b3ee-e50ee411d474"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "356f555a-5664-8006-9e20-66bfc86845f8"
+  computationUuid: "325afca6-34bc-8314-b86a-febc3f2a5181"
   stages:
     - stage: path
       stageUuid: "e14a8a89-aca8-82d3-b295-6cf3c9414b76"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8a425aa6-7027-881f-bdc1-4d1b6e4e6e1a"
     - stage: horo
-      stageUuid: "f9e7e28d-7f1a-87c4-ba92-4b9529f4d2d6"
+      stageUuid: "6c8578d0-ddb3-8c1f-b277-40544694e747"
     - stage: seal
       stageUuid: "2e8d86cc-a9f2-8bab-957d-f14dadae69df"
     - stage: uuid
-      stageUuid: "2e76d8a7-404e-8c6d-988a-26d545c53825"
+      stageUuid: "3b6dc2f9-40ee-86e6-aced-6750a1c8d5fb"
 version: 2
 ---
 # actionable

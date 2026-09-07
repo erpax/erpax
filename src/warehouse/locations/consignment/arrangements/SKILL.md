@@ -2,11 +2,11 @@
 name: arrangements
 description: "Use when managing goods shipped to a consignee for onward sale where control transfers only at consignee sale — master IFRS-15 §B77-B78 / ASC 606-10-55-79 agreement covering consignee, term, control-transfer trigger, return rights, INCOTERM, and max-value cap. The consignment master-agreement collection."
 atomPath: "warehouse/locations/consignment/arrangements"
-coordinate: "warehouse/locations/consignment/arrangements · 1/base · 70310e3e"
-contentUuid: "d588fe9e-072c-5f31-81bd-c6e1de446b4e"
-diamondUuid: "8d3da928-e77b-885b-b183-26cb57159929"
-uuid: "70310e3e-c880-8e55-92e3-f9db8e36aadd"
-horo: 1
+coordinate: "warehouse/locations/consignment/arrangements · 8/crest · fb423f1e"
+contentUuid: "5418006c-b180-5178-ae74-675dd3b9c12d"
+diamondUuid: "b45298d0-8b71-8806-b5d2-2f1d2739f0a5"
+uuid: "fb423f1e-be6f-89eb-aaa8-f1d27b3db9c6"
+horo: 8
 typography:
   partition: warehouse
   bondDegree: 20
@@ -28,7 +28,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "07977a7c-b469-8d47-86fd-65031573d21e"
+  computationUuid: "bd79dcc6-40a6-81b3-ba8f-bbee3e3cc7f4"
   stages:
     - stage: path
       stageUuid: "2832901f-7209-8dd6-a06c-1b54315cc475"
@@ -39,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "90004e18-5413-88c6-9e9a-1a52be7d9698"
     - stage: horo
-      stageUuid: "9fd25bf6-646e-859f-9b29-8b14fa85aff4"
+      stageUuid: "2cb07ff1-c9b7-8a1e-b4f7-5b1ef77bc25e"
     - stage: seal
       stageUuid: "ecefbd6a-8b2d-8825-8205-6bcea0997fc2"
     - stage: uuid
-      stageUuid: "2058917e-86e7-8c71-8dbe-1af2e40231da"
+      stageUuid: "76cb8092-3ad7-80b5-87fc-949d372e0f7f"
 version: 2
 ---
 ## Overview

@@ -2,11 +2,11 @@
 name: industry
 description: "Use when mapping AI industry failure modes to erpax diamond remedies — hallucination, memory loss, multi-agent collision, prompt injection, audit fragmentation, cost runaway, model drift, PII leakage, human-in-the-loop, vendor lock-in. Pure fns in index.ts bind each problem to existing atoms (thought, diamond, sandbox, receipt, memory, confirm) and extend gaps: workflow correlation receipts, grounded tool calls, cascade depth guard."
 atomPath: "ai/industry"
-coordinate: "ai/industry · 8/crest · 6f885682"
-contentUuid: "d8924568-ffe7-5fd4-b7a7-bff91a104a3e"
-diamondUuid: "907b43af-24bb-8bb4-a2a5-b2c47f126549"
-uuid: "6f885682-38f1-821c-82a4-d9a851dd6a86"
-horo: 8
+coordinate: "ai/industry · 5/round · 7ac159d9"
+contentUuid: "91ed45d1-f80d-50e8-8dec-5cdc45adfd97"
+diamondUuid: "c373fd04-9fbe-85c2-809e-8d1b7ea911ab"
+uuid: "7ac159d9-cfa0-80ac-a63e-f3cc125ebfaf"
+horo: 5
 typography:
   partition: ai
   bondDegree: 25
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "45b8917d-6536-8adf-97d2-451c63026a6b"
+  computationUuid: "b4cd99ee-a39d-8a8c-b878-8007f320ee7a"
   stages:
     - stage: path
       stageUuid: "bf8c81db-dabb-81a4-9ea7-d9b8b7a0a33b"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "4992675b-01cb-82f9-b1ba-caff35f1a3a8"
     - stage: horo
-      stageUuid: "e75a5d42-4bbe-8f64-91d5-be4f2de9bc38"
+      stageUuid: "5d60591b-2ecd-8cd5-b4eb-730184a442e6"
     - stage: seal
       stageUuid: "59a3b14f-c480-8bdc-a793-86411c4bae5e"
     - stage: uuid
-      stageUuid: "92293cd0-619e-8760-9a55-7f4121bd4c84"
+      stageUuid: "16f64918-a3a2-8d82-a879-301f38bc64fc"
 version: 2
 ---
 # ai/industry — AI industry problems → erpax diamond remedies

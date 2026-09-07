@@ -2,10 +2,10 @@
 name: fusion
 description: "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root."
 atomPath: fusion
-coordinate: "fusion · 5/round · 86601291"
-contentUuid: "0e365776-6f37-5658-9f39-92159f2698c1"
-diamondUuid: "c00622c1-dd60-8796-92ca-8104e5ce90da"
-uuid: "86601291-7d77-8b0f-81a3-f8ebcf6f5714"
+coordinate: "fusion · 5/round · 518b6a88"
+contentUuid: "0d8e29a2-7b9b-5fff-80b9-d924c6980085"
+diamondUuid: "dc4ddf21-79a9-81e4-9f05-34da6d81a027"
+uuid: "518b6a88-70c9-8fdc-86af-1ec2262eff83"
 horo: 5
 typography:
   partition: fusion
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ba3d9dbb-0ebb-8f4c-83df-fe4f5db67536"
+  computationUuid: "d9b5c3e4-903a-88cf-a28c-e0299f516314"
   stages:
     - stage: path
       stageUuid: "67cba431-d355-8b72-bb9c-d1c47cc97124"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c0afab77-e3fa-80e6-a2ab-82d87b60b3d7"
     - stage: horo
-      stageUuid: "51fd5e3c-2f83-85db-b9af-da238b9c0b1f"
+      stageUuid: "38fcbfa7-3de8-8edf-9835-08b872515c05"
     - stage: seal
       stageUuid: "e7c0bc95-efea-84fe-973f-16f9b6af4224"
     - stage: uuid
-      stageUuid: "a2b87502-3a90-8dcc-bd70-f4b5e82efac4"
+      stageUuid: "9453bc9a-1823-87e0-b1f7-8d424dc1b803"
 version: 2
 ---
 # fusion — the reactor that fuses atoms into the one matrix

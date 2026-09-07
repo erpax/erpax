@@ -2,11 +2,11 @@
 name: offered
 description: Use when reasoning about offered — A pointer to the organization or person making the offer.
 atomPath: "vocabulary/offered"
-coordinate: "vocabulary/offered · 4/weave · c2657968"
-contentUuid: "8c35abcb-e8a0-5fd3-afed-56f7ea8809e9"
-diamondUuid: "165a3940-b764-8204-a6e0-aace69ab3a6f"
-uuid: "c2657968-c025-8e2b-a37e-126f2f0bdeb6"
-horo: 4
+coordinate: "vocabulary/offered · 1/base · 02cd6228"
+contentUuid: "c789eae4-2af1-5b52-abbb-6d8da15505b5"
+diamondUuid: "30eb5fcb-a506-808d-9348-28c5a087154e"
+uuid: "02cd6228-c00a-8c03-9761-deb3cd2fddf6"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 14
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "888e78d1-0100-8e3e-a148-266139264884"
+  computationUuid: "e6dfe51e-9fb4-878d-9a4f-813d80c03949"
   stages:
     - stage: path
       stageUuid: "563b896c-daa1-86f7-a231-ce165532d45a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "79d92186-896f-8536-83e4-fe502c064475"
     - stage: horo
-      stageUuid: "951b4648-5739-8c53-9dd5-5ea5fc2fc6e7"
+      stageUuid: "19287444-0ceb-8d83-b314-13ad8cc2cdf8"
     - stage: seal
       stageUuid: "d1449355-832c-8839-83f0-0001f7d24348"
     - stage: uuid
-      stageUuid: "b744f1e9-2b10-8a7a-ab68-3ef9a7f54c8c"
+      stageUuid: "96f02976-076a-88fe-9439-10f0ad45e4ae"
 version: 2
 ---
 # offered

@@ -2,11 +2,11 @@
 name: quotes
 description: "Use when creating or approving pre-contract proposals — line-item pricing, issuer/approver SoD enforcement, sending to customer, accepting, and converting to a sales order. No GL impact until accepted. The IFRS-15 §10 contract-origination collection."
 atomPath: "customers/quotes"
-coordinate: "customers/quotes · 7/descent · 70a21cf5"
-contentUuid: "87d7c7b9-5d3c-5b0b-8b8a-71ce08b51aee"
-diamondUuid: "1e007912-d195-838b-88f4-6545190ee972"
-uuid: "70a21cf5-a9ca-89cb-a2ae-d903268cae46"
-horo: 7
+coordinate: "customers/quotes · 2/share · acbc6383"
+contentUuid: "96299609-c7c3-56b6-b1d6-74cb924bfd38"
+diamondUuid: "1b572066-d1c5-8be1-a6bf-3bb47a3c1cf9"
+uuid: "acbc6383-bef0-8a6a-b5ea-7d326b2fbe29"
+horo: 2
 typography:
   partition: customers
   bondDegree: 33
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1d4129e3-d36f-8c43-aa08-f2ac0fd60f80"
+  computationUuid: "667edf9a-4fc3-8831-b33c-4669fdc99ca1"
   stages:
     - stage: path
       stageUuid: "a83bba08-3b7a-8b01-9360-ec5673842853"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "7cd6d62b-8fec-88ad-ac73-eb7ebfed0555"
     - stage: horo
-      stageUuid: "44f14a1c-f77e-89e8-901e-08aaa383b479"
+      stageUuid: "1a0c959c-ea9c-8941-a8ec-55b89d01cda5"
     - stage: seal
       stageUuid: "44bd3d0f-85f2-8537-8186-0fdda4117feb"
     - stage: uuid
-      stageUuid: "a3bb16ef-5d1c-81b1-b63c-2df213f33229"
+      stageUuid: "94554821-9a38-877f-99e5-bfd7ffe2819a"
 version: 2
 ---
 # quotes

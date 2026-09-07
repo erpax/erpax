@@ -2,11 +2,11 @@
 name: juniors
 description: "Use when reasoning about juniors as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/juniors"
-coordinate: "vocabulary/juniors · 7/descent · 3753615b"
-contentUuid: "899bc14a-56be-56d5-aea7-891e46adf6c6"
-diamondUuid: "e54baa08-3f00-8817-9251-b6642716832e"
-uuid: "3753615b-5ac5-8192-bcfd-a8a5de3914a1"
-horo: 7
+coordinate: "vocabulary/juniors · 2/share · 568465c3"
+contentUuid: "4442236b-c58b-557d-bb18-380264eda1ea"
+diamondUuid: "b948d81a-f721-8f67-887f-b4aa8511bfed"
+uuid: "568465c3-7fca-871c-a6a6-4480d5ea3723"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "969608c2-bfcd-84f4-94ce-b28f188306f8"
+  computationUuid: "311eddc3-df4b-87a3-9727-9a68d5a0e77e"
   stages:
     - stage: path
       stageUuid: "935e49b2-6e8a-85ac-a0e0-fdfdca2796c6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c6c66d2b-3630-89d0-9cc8-5e8b8f0fd013"
     - stage: horo
-      stageUuid: "787844b7-26f4-8fd1-b89e-08a984e604d3"
+      stageUuid: "9957bdc2-ae65-8a5a-a16f-87cf76c9c7fd"
     - stage: seal
       stageUuid: "83eba93c-8397-8b2a-996a-9c2373d52d2d"
     - stage: uuid
-      stageUuid: "a448d57f-c210-8416-86ca-55b97dfd97cd"
+      stageUuid: "3a0a7209-2d78-8b34-8a80-b61347a512fe"
 version: 2
 ---
 # juniors

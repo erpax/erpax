@@ -2,11 +2,11 @@
 name: hardware
 description: "Use when reasoning about hardware as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hardware"
-coordinate: "vocabulary/hardware · 2/share · 198b53f5"
-contentUuid: "6d5a573b-a42b-5152-9727-7c509ad663a3"
-diamondUuid: "823bdeb2-cc55-83ee-b8a1-954e33e3185c"
-uuid: "198b53f5-3d89-8c68-ac82-e907753369d0"
-horo: 2
+coordinate: "vocabulary/hardware · 8/crest · fc112f5c"
+contentUuid: "bfeb9e47-4c73-5d3c-ae5c-963f65e0df78"
+diamondUuid: "2e88ea15-807f-8c6e-a3d6-656cb8a07a3d"
+uuid: "fc112f5c-2a01-89be-a926-84b24d23a791"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "94f9c506-07da-8f1d-8f49-f765213e1150"
+  computationUuid: "59a982a6-8bdb-83a8-8427-201a7d91f436"
   stages:
     - stage: path
       stageUuid: "0d67308f-18fb-847d-a852-53ff2abea2f4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1c510051-74b1-8253-814a-a44e00d16926"
     - stage: horo
-      stageUuid: "2cd89dc1-15e6-8c56-9d3f-c05e723c3477"
+      stageUuid: "5490353c-1035-82d3-8f68-be075a825573"
     - stage: seal
       stageUuid: "17a5bc02-bbf6-81b1-aff5-a5a272ac35a2"
     - stage: uuid
-      stageUuid: "2b1cc6d5-c8f3-85a6-b64f-9f9d566798eb"
+      stageUuid: "75bcb764-c8dd-8bd4-9176-ade77037d548"
 version: 2
 ---
 # hardware

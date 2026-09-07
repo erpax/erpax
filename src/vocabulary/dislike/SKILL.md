@@ -2,10 +2,10 @@
 name: dislike
 description: "Use when reasoning about dislike — A schema.org component word, collided out of schema.org compounds — fused from DislikeAction (sti · collapse · merge)."
 atomPath: "vocabulary/dislike"
-coordinate: "vocabulary/dislike · 5/round · 310f0b87"
-contentUuid: "b671139a-cebe-58f1-8e5f-44a91139c725"
-diamondUuid: "308aed0a-dbef-8c7c-8677-73c366fc6f68"
-uuid: "310f0b87-bb67-8163-a354-b618b4a28511"
+coordinate: "vocabulary/dislike · 5/round · 612131f5"
+contentUuid: "4c30fc3b-687c-5f84-83d0-8dd3d9d8e083"
+diamondUuid: "74fa46f7-b815-866f-8a54-b658b9c99ec2"
+uuid: "612131f5-cec1-86d2-a007-625d49e50a64"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cf4aea7e-f15b-82fb-b0e0-0b38dd817701"
+  computationUuid: "2b0929d7-3e45-84cb-af51-250606bbea9a"
   stages:
     - stage: path
       stageUuid: "8150cbe8-4311-8d9e-880f-e935ef47c8eb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2e8d1227-6794-8e8d-bb66-da2c7a6f87fa"
     - stage: horo
-      stageUuid: "417bb3ea-5b53-8006-80d6-33e122f59ea7"
+      stageUuid: "5a8a2006-ec6b-8dbb-8f77-2517b9068dd8"
     - stage: seal
       stageUuid: "ca22acbc-1f34-8224-aac1-cb284e9eb3c7"
     - stage: uuid
-      stageUuid: "cb4fed47-f19a-88db-ae86-cff233972613"
+      stageUuid: "ce35c987-ce1a-8653-a2f6-4ea592053eb4"
 version: 2
 ---
 # dislike

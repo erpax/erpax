@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "validate",
-    "uuid": "fa31b6c2-380e-83e7-abb5-fe84e01ea4fa",
+    "uuid": "1e7a8d7f-dc3e-87dc-98c1-a0bb3f63b909",
     "words": [
       "validate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about validate — ISO 8601 date/time validator.",
-    "uuid": "e52d493a-03d3-87e6-849f-b1160da17ac4",
+    "uuid": "673d4d6c-0360-8c38-8d0f-89646e2dbf02",
     "words": [
       "use",
       "when",

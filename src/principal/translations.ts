@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "principal",
-    "uuid": "6a1c46d4-6732-8d91-8096-077adc4be826",
+    "uuid": "2e4c1c6d-b31d-8d4a-be8a-35367b40b76d",
     "words": [
       "principal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when code must act without a human — a scoped system identity instead of overrideAccess:true. Payload's Local API defaults to skipping access control, and the corpus did so at 138 sites, now 132; a principal makes the check RUN and pass, because the identity is authorised for its subsystem and nothing else. Five declared principals (seed, hook, job, migration, import), none holding admin, each tenant-bound. Reads exactly like a person to the access layer — a principal needing its own code path would be a second door.",
-    "uuid": "a3d32bda-4a77-845e-ad0c-55a893f52b57",
+    "uuid": "b60226fa-64b1-8a0b-bb1f-7c190abc82a4",
     "words": [
       "use",
       "when",

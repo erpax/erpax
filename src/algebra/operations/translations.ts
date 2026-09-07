@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "operations",
-    "uuid": "0ca8dcd7-801e-8eb5-ae05-154e9efb88bd",
+    "uuid": "68d093e6-2d8a-8906-b471-c7cd75602854",
     "words": [
       "operations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about operations — Algebra operations — closed, movie, product, allAlgebra",
-    "uuid": "2e79e1dc-233d-87e9-9e09-baef2469f20f",
+    "uuid": "0e2271d8-d624-8c36-ba24-a76986a72927",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: destination
 description: "Use when reasoning about destination as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/destination"
-coordinate: "vocabulary/destination · 4/weave · ac2d9a5d"
-contentUuid: "6855e649-4f81-5097-aaec-d8e3847a5920"
-diamondUuid: "b6700d91-252d-8327-b7c2-e6d6cd6a9085"
-uuid: "ac2d9a5d-20cf-8815-9588-59f835bf59c5"
-horo: 4
+coordinate: "vocabulary/destination · 5/round · dce72398"
+contentUuid: "c11dbef1-dc61-5f3c-9623-5273f121c752"
+diamondUuid: "aa2945fa-7cf7-8e12-bc50-db46f2e238ba"
+uuid: "dce72398-e97e-8b09-a9d4-c4e38f297ea4"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7ac53034-e7c6-8d9a-8574-ad695d5e40fa"
+  computationUuid: "7df7148a-9d76-8630-87dd-ee1959aae72b"
   stages:
     - stage: path
       stageUuid: "1bf5e57b-40fb-8959-93f5-9a0102f45e2a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f6cc4516-8197-8660-96d7-6ffdf0dd94f3"
     - stage: horo
-      stageUuid: "d1cfcf97-9ee1-8778-b5f8-b1457a7c35c4"
+      stageUuid: "010ac592-6dae-8b1f-b764-c2c455599bb6"
     - stage: seal
       stageUuid: "130d5d87-c810-8b6d-938f-3658a8478427"
     - stage: uuid
-      stageUuid: "286d9627-0766-85bb-8cc3-4e4da4789be6"
+      stageUuid: "053418d1-a1a7-8101-8d70-94570a96b7db"
 version: 2
 ---
 # destination

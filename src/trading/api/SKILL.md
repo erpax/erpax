@@ -2,11 +2,11 @@
 name: api
 description: "Use when reasoning about the commercial trading-API catalogue — payment gateways, marketplaces, shipping carriers, Peppol/EDI access points, banking aggregators, and FX feeds; public metadata only, credentials in tenant sandbox."
 atomPath: "trading/api"
-coordinate: "trading/api · 1/base · 2095472c"
-contentUuid: "98b4c576-788f-505f-affc-5b022e0da8b6"
-diamondUuid: "55174e14-7772-8fe3-aeb8-57b9428825b1"
-uuid: "2095472c-97af-802a-bccf-78b41d5f4914"
-horo: 1
+coordinate: "trading/api · 8/crest · 8d1a946f"
+contentUuid: "f08cb1af-befe-5799-bb0e-57b290136ba9"
+diamondUuid: "e2caf8d2-7753-894f-8f4a-cf8174b7f1ba"
+uuid: "8d1a946f-ca0e-8442-b53e-2fe3639fde86"
+horo: 8
 typography:
   partition: trading
   bondDegree: 100
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "8c43b0ee-8640-8434-bc80-f2a57c1f553f"
+  computationUuid: "3564a1f2-2e88-8262-9ad8-63f31c15dd3c"
   stages:
     - stage: path
       stageUuid: "c268fa1b-e1c8-8a18-906e-b42582eac018"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "8a1dffb1-ebe5-886e-bb8a-d106ab9999f0"
     - stage: horo
-      stageUuid: "798bb44c-823f-8aa8-ba71-b0bf6f58ee5e"
+      stageUuid: "82e52775-4aef-8f83-9e71-65e0864af981"
     - stage: seal
       stageUuid: "00198611-fec6-8505-88c1-da8051fa0ab5"
     - stage: uuid
-      stageUuid: "c189cf04-3e0f-8109-baec-5e278ba30de6"
+      stageUuid: "af905155-3768-8d81-8132-4747375c3620"
 version: 2
 ---
 # api — commercial trading-API catalogue

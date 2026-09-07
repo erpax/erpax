@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shape",
-    "uuid": "a4ea1b3b-bee2-8f26-9db0-f353f7ec9809",
+    "uuid": "51565249-e057-8e44-9984-635e1b3d2189",
     "words": [
       "shape"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking whether a new collection is warranted — the rosetta scores a collection against the closed 9-axis basis, and only a NEW signature justifies a table rather than a row.",
-    "uuid": "afc4655a-b7fb-84ed-8076-25db220fbf8f",
+    "uuid": "b894568e-81ec-857d-8144-24acc6ae97e5",
     "words": [
       "use",
       "when",

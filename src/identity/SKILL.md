@@ -2,10 +2,10 @@
 name: identity
 description: "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is uuid."
 atomPath: identity
-coordinate: "identity · 9/unity · 517f4c7f"
-contentUuid: "7490c514-4a3a-5401-b821-1546f809a884"
-diamondUuid: "585fb780-803f-887a-b046-11da21bfc5d5"
-uuid: "517f4c7f-76e2-8146-92a5-461308fb17e4"
+coordinate: "identity · 9/unity · b9bdbfc3"
+contentUuid: "47afcf9e-2db3-56d5-bbf7-fdfcb5795dce"
+diamondUuid: "39547eb0-4c30-8cf1-9f94-923cf06381ad"
+uuid: "b9bdbfc3-f278-8956-8579-25c0c4571e29"
 horo: 9
 typography:
   partition: identity
@@ -21,7 +21,7 @@ standards:
   - "RFC-9562`"
 bindings: []
 signatures:
-  computationUuid: "1e628cac-ee12-8631-ac87-e32728f213e8"
+  computationUuid: "c73771b2-09cd-806d-9c16-c5a71ff9cdff"
   stages:
     - stage: path
       stageUuid: "b7748f0d-c736-8f14-995c-ebed12717689"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "e37564ed-b514-8568-840f-ce7a6b37d4f0"
     - stage: horo
-      stageUuid: "1bbe0c03-37a6-82c7-954c-dd7b383e63d2"
+      stageUuid: "9c522d01-6456-88ac-a937-6eb41cd29362"
     - stage: seal
       stageUuid: "ad8c2b54-34a1-82b4-9d35-118d4e0be4c0"
     - stage: uuid
-      stageUuid: "243084e8-dada-8ca0-9407-6e7e19e8a5bd"
+      stageUuid: "863a51d6-6d99-8174-b757-5a0d88ebb874"
 version: 2
 ---
 # identity — content-addressed UUIDs (same content ⇒ same id ⇒ seamless merge)

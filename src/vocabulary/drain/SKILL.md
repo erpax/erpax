@@ -2,10 +2,10 @@
 name: drain
 description: Use when modelling one drain — the singular model of the drains collection (the plural store); a sink that draws down a resource or stock.
 atomPath: "vocabulary/drain"
-coordinate: "vocabulary/drain · 1/base · e73866c2"
-contentUuid: "dc2b70c7-0f05-5ca3-a7e7-b4510d059f18"
-diamondUuid: "51f1dc70-5aa3-8294-a6b6-9ef7cb5aa238"
-uuid: "e73866c2-fc03-8f59-954d-58d5813a4c30"
+coordinate: "vocabulary/drain · 1/base · f1fe948f"
+contentUuid: "8062ef54-951b-5337-b1ff-580095c55ac5"
+diamondUuid: "8933a150-80e0-8352-9a9b-f3d2a984f7dc"
+uuid: "f1fe948f-8066-83ad-9703-4a546da7790b"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0205172a-292d-8a8f-a09f-d180753f6dc3"
+  computationUuid: "ffe6e5f6-0438-868d-9458-9993aba37fc5"
   stages:
     - stage: path
       stageUuid: "b7095578-ec09-8a77-b83c-6e0f4a10bbaa"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "43b7e211-a3b5-8cfd-9d81-8f97b947a9e3"
     - stage: horo
-      stageUuid: "94aa4870-97c0-805e-94ad-db5d8ddc0f3c"
+      stageUuid: "b5770d9c-c72b-866b-a1cb-e864bc6b6862"
     - stage: seal
       stageUuid: "8a72654e-39c4-8efd-af45-ece6045eccc0"
     - stage: uuid
-      stageUuid: "fc2e4a5e-6978-8156-bd35-034beb2c8aa3"
+      stageUuid: "d30b30a0-07e0-8b6a-a41e-13de5990c8a0"
 version: 2
 ---
 # drain — the model of one [[drains]] row

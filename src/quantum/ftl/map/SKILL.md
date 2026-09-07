@@ -2,18 +2,18 @@
 name: map
 description: "Use when working with quantum/ftl/map."
 atomPath: "quantum/ftl/map"
-coordinate: "quantum/ftl/map · 8/crest · 3e93b78b"
-contentUuid: "65521c37-4c60-592b-9f2e-c23e608c9a2b"
-diamondUuid: "29e5c032-2890-805d-a9b1-4400d345656a"
-uuid: "3e93b78b-ade4-8fc0-880f-962166fc5d19"
-horo: 8
+coordinate: "quantum/ftl/map · 7/descent · 19e47c2f"
+contentUuid: "af82a93f-66f3-5a03-b466-4c77e32e7420"
+diamondUuid: "0a7b2188-d13e-8a0d-9aa3-bd7b8322aa8d"
+uuid: "19e47c2f-43f4-8491-8d92-c0c54f99a234"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "34f4f692-41e0-83cf-84ab-419c1f89dc14"
+  computationUuid: "0e4f027e-b682-8747-8abe-37385b33e5fc"
   stages:
     - stage: path
       stageUuid: "eb03965d-d7f9-8d24-a3b1-ce4214a6331f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1b2b2ee9-e5d6-8f8c-b7a8-469401d4ee74"
     - stage: horo
-      stageUuid: "6cc9939e-dc7f-8bf3-8f7b-6749e5b5d5d4"
+      stageUuid: "f8bf6dfb-8e32-8ada-938d-559514cbfde5"
     - stage: seal
       stageUuid: "896d80c8-4e0b-8d3c-a9d6-cbde0be9eb29"
     - stage: uuid
-      stageUuid: "7eb5f62b-f335-8362-a045-887c0e13adfb"
+      stageUuid: "488ac49d-b831-89c5-b118-781897b6c3dd"
 quantum:
   superposition:
     - category
@@ -48,8 +48,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "34f4f692-41e0-83cf-84ab-419c1f89dc14"
-    contentUuid: "65521c37-4c60-592b-9f2e-c23e608c9a2b"
+    computationUuid: "0e4f027e-b682-8747-8abe-37385b33e5fc"
+    contentUuid: "af82a93f-66f3-5a03-b466-4c77e32e7420"
 version: 2
 ---
 # map
@@ -58,4 +58,4 @@ version: 2
 
 Matter-twin: `index.ts`.
 
-<sub>content-uuid `65521c37-4c60-592b-9f2e-c23e608c9a2b` · account `quantum/ftl/map` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `af82a93f-66f3-5a03-b466-4c77e32e7420` · account `quantum/ftl/map` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

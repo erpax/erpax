@@ -2,11 +2,11 @@
 name: genome
 description: "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact."
 atomPath: "cloning/genome"
-coordinate: "cloning/genome · 5/round · 4bc9e9c1"
-contentUuid: "102dc183-d56c-5e33-85d6-50162b37e3f7"
-diamondUuid: "9f1a2b3e-0669-84fa-8afd-7afda422e9a2"
-uuid: "4bc9e9c1-378a-821b-af43-3c0b25553f81"
-horo: 5
+coordinate: "cloning/genome · 2/share · 3de87f25"
+contentUuid: "d22b412e-e352-5c9c-97f7-b0572f62066a"
+diamondUuid: "a6b3b078-5767-89d9-9a5e-b3e800634c76"
+uuid: "3de87f25-687a-895b-bd1d-fbc5ffec1926"
+horo: 2
 typography:
   partition: cloning
   bondDegree: 6
@@ -17,7 +17,7 @@ standards:
   - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "9af17cb6-5b42-8114-a582-189497ac3a4d"
+  computationUuid: "1b91e98b-0c95-88f1-83f2-3996177a6384"
   stages:
     - stage: path
       stageUuid: "66028b50-c602-8586-bdae-4029aa1b4dcc"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "f91de788-a92a-851d-b27f-53b244d897eb"
     - stage: horo
-      stageUuid: "8dce08b5-2dfa-8f66-9b17-84e0ba52b4cd"
+      stageUuid: "23e6a0eb-8b79-8284-975c-7a6229e2adcc"
     - stage: seal
       stageUuid: "bd2b233e-4ca3-8b3e-af0c-711b077481de"
     - stage: uuid
-      stageUuid: "25e99216-4415-8239-bf0e-c7aa746a4898"
+      stageUuid: "865b04c0-dbb8-8b92-abf0-142edad3f53f"
 version: 2
 ---
 # cloning/genome

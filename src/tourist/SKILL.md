@@ -2,11 +2,11 @@
 name: tourist
 description: "Use when reasoning about tourist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tourist
-coordinate: "tourist · 4/weave · 4c948864"
-contentUuid: "82dc4e63-2123-5177-bda8-85324aedb320"
-diamondUuid: "a881f567-637a-8db7-a562-3a6061d7f990"
-uuid: "4c948864-aeb1-8afb-a546-4ef481ff0ea3"
-horo: 4
+coordinate: "tourist · 5/round · d6804e6c"
+contentUuid: "2ba08145-ec0a-55dc-ae83-cfae55afc174"
+diamondUuid: "ba3b2cc4-927f-8685-8477-97f0a3230edc"
+uuid: "d6804e6c-722b-85f0-8406-cf9bb44073a4"
+horo: 5
 typography:
   partition: tourist
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0ad50d01-c40f-8ab5-9b36-37a6db3b9f53"
+  computationUuid: "b81f5ef1-a207-8bac-b027-c91590055b4a"
   stages:
     - stage: path
       stageUuid: "564255e9-a158-8c4c-b542-5870c84dee42"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0d37fcfa-fb9d-8357-b978-c319e8967052"
     - stage: horo
-      stageUuid: "113a9a43-9e0e-8b46-b865-ec0f664979eb"
+      stageUuid: "ef73d16e-0317-88a7-858f-063f4d6e929e"
     - stage: seal
       stageUuid: "958dd49b-bea2-8359-95f7-2e440a0355ff"
     - stage: uuid
-      stageUuid: "88cd4dd5-0627-8cb9-aca5-47c86d0b3f45"
+      stageUuid: "749a4811-cc17-8fe1-ab35-1cfd49d03140"
 version: 2
 ---
 # tourist

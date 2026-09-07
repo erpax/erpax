@@ -2,11 +2,11 @@
 name: operation
 description: "Use when reasoning about operation — A schema.org component word, collided out of schema.org compounds — fused from yearsInOperation (sti · collapse · merge)."
 atomPath: "vocabulary/operation"
-coordinate: "vocabulary/operation · 4/weave · 5ac229d0"
-contentUuid: "38e5f038-8f5a-53f5-b4a0-ea1accf9df36"
-diamondUuid: "88d18564-f366-83e4-a772-ec067077da1c"
-uuid: "5ac229d0-0553-81c5-bec4-93575f754c4f"
-horo: 4
+coordinate: "vocabulary/operation · 8/crest · 832f4531"
+contentUuid: "037f2fb6-bc4d-564d-a062-bff6a3e56ccc"
+diamondUuid: "4650c7c8-e8e7-86bb-b1dc-109848d35068"
+uuid: "832f4531-0911-8842-9758-f565af103770"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff2d58ae-734b-8867-b44b-abdb941ef297"
+  computationUuid: "e0a1f548-df96-8034-b040-a477cca0f563"
   stages:
     - stage: path
       stageUuid: "9c27afd9-e2f0-8f7f-9856-b76f42c5b9b4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a04e85f6-ba2e-8f45-b5c5-005d9ddbb9f3"
     - stage: horo
-      stageUuid: "91d06a18-2ad4-80a6-826a-abd18cb3fd6c"
+      stageUuid: "2b0f9992-a1dd-8106-9fde-338388a94748"
     - stage: seal
       stageUuid: "20b5b6d3-70a1-877a-ab07-56823385cccb"
     - stage: uuid
-      stageUuid: "7d4c050d-bfea-893a-ab77-052d00d4e55a"
+      stageUuid: "4d5a84da-cb99-84f4-84dc-e0c53c1402f3"
 version: 2
 ---
 # operation

@@ -2,18 +2,18 @@
 name: biofield
 description: "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura."
 atomPath: "vocabulary/biofield"
-coordinate: "vocabulary/biofield · 5/round · c449dad5"
-contentUuid: "0f7b85ed-3017-5253-9689-fe4d945734ae"
-diamondUuid: "27c12286-d44b-8a03-b4b1-bc81066b86a4"
-uuid: "c449dad5-ebb9-883d-8a3b-7d7ee3c61160"
-horo: 5
+coordinate: "vocabulary/biofield · 1/base · 6fa4b3a3"
+contentUuid: "a545a945-0b71-5911-9755-fdba00926e08"
+diamondUuid: "01f9393d-870f-84e7-a3e7-cd5603129581"
+uuid: "6fa4b3a3-888b-8f6a-9a9e-aa13524fa350"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fc219706-eab0-8fb6-a046-b27e9f115760"
+  computationUuid: "f57461c8-e293-828e-a620-efbe4a30f635"
   stages:
     - stage: path
       stageUuid: "27d9f16a-ff51-82bb-8962-4da9dd462697"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "239e3dc1-218b-867d-a449-14d1cec0eb35"
     - stage: horo
-      stageUuid: "0e9bc22a-63bd-8ebd-b4d6-aa8e372759a7"
+      stageUuid: "0c53222f-b520-86bd-a0ec-6415634bf3f6"
     - stage: seal
       stageUuid: "8abeca98-72b2-87cc-ad06-7be134a3517e"
     - stage: uuid
-      stageUuid: "0d9f8873-0bcd-8d1d-a0f4-0ea5a848bc0a"
+      stageUuid: "77a94a8e-0785-8e0d-8cd0-ef3a7a59beb6"
 version: 2
 ---
 # biofield — the claimed aura that measures nothing (the honesty atom)

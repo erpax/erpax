@@ -2,11 +2,11 @@
 name: financial
 description: "Use when reasoning about financial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: financial
-coordinate: "financial · 2/share · 19aede12"
-contentUuid: "e316a2e3-c4f9-506a-b992-a9f3dc1317a8"
-diamondUuid: "3c9e688f-51ad-8e8d-bf08-c0e55fdf5bb4"
-uuid: "19aede12-8a1b-8872-9fc1-8a241ec8b465"
-horo: 2
+coordinate: "financial · 7/descent · bab4016a"
+contentUuid: "84fff8d7-fb02-5c9f-8ec7-312ac968da43"
+diamondUuid: "8c7573a2-55bf-8146-becd-d2e60e193f4b"
+uuid: "bab4016a-be2d-8c24-a295-3fe9a611dac2"
+horo: 7
 typography:
   partition: financial
   bondDegree: 32
@@ -16,7 +16,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "95f4dab1-ad17-8002-aec8-108ebb4cd8d1"
+  computationUuid: "90659a51-83fe-83b1-a9e1-0dbb59fd7231"
   stages:
     - stage: path
       stageUuid: "51512af1-b305-8cc8-846f-ee5b6a120c77"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "c0c31784-fff5-8bdb-b268-1bc370d69760"
     - stage: horo
-      stageUuid: "398f87ad-bdc2-8c1f-9e30-ccc060564bed"
+      stageUuid: "5b8d3d3c-952f-8ce1-8177-774a7c6c0f52"
     - stage: seal
       stageUuid: "2ef1ab3b-1282-86b8-8193-bd639168f640"
     - stage: uuid
-      stageUuid: "4ac05918-99ff-8797-b38f-31cafd681bb4"
+      stageUuid: "50f402f5-cff5-8a8e-9283-e53ea30200eb"
 version: 2
 ---
 # financial

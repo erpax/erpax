@@ -2,18 +2,18 @@
 name: dormancy
 description: "Use when modelling the winter rest of a deciduous perennial — dormancy, the cold-requiring quiescent period; a cultivar must accumulate its chilling requirement (chill hours) before bud-break and a crop. The gate of the perennial's recurring season; where frost risk, pruning, and alternate bearing live."
 atomPath: "vocabulary/dormancy"
-coordinate: "vocabulary/dormancy · 5/round · eb807b32"
-contentUuid: "06ea0c3e-0449-5858-a132-8675f10df7e0"
-diamondUuid: "8d8da25a-c0f5-8a76-8e00-3435f7b807f3"
-uuid: "eb807b32-39bc-84d8-bbed-4d8da8d22aee"
-horo: 5
+coordinate: "vocabulary/dormancy · 1/base · f86b30c4"
+contentUuid: "61c2fbf8-968d-53bd-abc5-976f6ee5d20b"
+diamondUuid: "3ebf0e7c-3329-836a-aa73-eb9d934e4615"
+uuid: "f86b30c4-9a30-8d8d-8f8e-95b9a21d097e"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 38
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5a60fe98-ff4e-8169-90f1-c0227f6f1ebf"
+  computationUuid: "0505971f-a6c4-824f-9ec9-27fc07f8f354"
   stages:
     - stage: path
       stageUuid: "01a7cd46-1070-8703-8fab-0e057cb129bf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "679d73a3-dfa2-8638-a2d6-910bf83660a4"
     - stage: horo
-      stageUuid: "f4763e5b-1542-83ae-81bc-8aade9a38326"
+      stageUuid: "0046bc26-a8e2-8845-a7e3-03b7ac0df245"
     - stage: seal
       stageUuid: "c94a160d-ee1b-8a47-a727-451b14e7df24"
     - stage: uuid
-      stageUuid: "ed56e35c-f597-8439-a453-e5c44f1603a2"
+      stageUuid: "f617b246-dc9c-84bd-9cc2-c5b0925bb1be"
 version: 2
 ---
 # dormancy — the winter rest that gates the perennial's next crop

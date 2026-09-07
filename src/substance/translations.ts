@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "substance",
-    "uuid": "9fb2a0ce-f43e-8b82-a09e-3cd350b17264",
+    "uuid": "df1ce91f-92ab-8833-85d6-2f8edd54b012",
     "words": [
       "substance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about substance — Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.",
-    "uuid": "8c3765b8-e0db-82d1-9421-8362dcde8de2",
+    "uuid": "e6c900f4-87a1-8825-84ad-1d06df65e0bb",
     "words": [
       "use",
       "when",

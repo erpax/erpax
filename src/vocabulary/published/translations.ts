@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "published",
-    "uuid": "2bb3ed6e-6163-858e-bcda-1bf7b74b9601",
+    "uuid": "49fb9f57-9c5c-8aee-9c63-c94c950d7f02",
     "words": [
       "published"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about published — An agent associated with the publication event.",
-    "uuid": "9b748ee6-bede-8381-8cbf-c1bcf6718a2d",
+    "uuid": "be5211b3-3283-86ad-8759-940dd59733cf",
     "words": [
       "use",
       "when",

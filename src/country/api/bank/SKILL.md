@@ -2,10 +2,10 @@
 name: bank
 description: "Use when reasoning about bank — Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry."
 atomPath: "country/api/bank"
-coordinate: "country/api/bank · 7/descent · 7d817bc5"
-contentUuid: "0d8663f4-4295-5047-8de7-0863ff5c92c8"
-diamondUuid: "27c5a943-009f-8737-bfa9-b6eaeae20bb5"
-uuid: "7d817bc5-d4e5-80fa-951f-5612148bc2f2"
+coordinate: "country/api/bank · 7/descent · aa577639"
+contentUuid: "cad3b927-7d30-526d-a696-21c57ecfac17"
+diamondUuid: "b77c4d36-afef-8498-aaaf-814c6c3627c0"
+uuid: "aa577639-5512-844d-ad6a-d33837e10b37"
 horo: 7
 typography:
   partition: country
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "36fc96f3-d320-8e0d-8563-bddeb4750c56"
+  computationUuid: "fd5bd99c-7629-8e53-9f58-0184596e0e48"
   stages:
     - stage: path
       stageUuid: "114c17fc-a1cf-8be7-a81c-805190d31ae7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "064fa38b-b095-8817-87d2-ccb0df65aa33"
     - stage: horo
-      stageUuid: "54640d44-c4c7-8d3d-8483-9b45ef0a25ff"
+      stageUuid: "d915050a-8623-804d-afa7-5376e8ec7d26"
     - stage: seal
       stageUuid: "5d6449a6-9c6e-8d0b-ab4e-d80f162eb5b8"
     - stage: uuid
-      stageUuid: "914363ab-574d-8670-86d9-89824e0e16b3"
+      stageUuid: "2a529159-d2a9-83fc-a099-3f0c675d73a1"
 version: 2
 ---
 # country/api/bank

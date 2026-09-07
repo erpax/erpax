@@ -2,10 +2,10 @@
 name: track
 description: "Use when reasoning about track — A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording."
 atomPath: track
-coordinate: "track · 7/descent · 0d7a8257"
-contentUuid: "ebe4f5ff-ff7c-540a-833c-1e780ca2c0f5"
-diamondUuid: "39810fe2-2b4f-8e2b-9715-8178315c9cf2"
-uuid: "0d7a8257-8772-8144-bb5d-f7a38ac51370"
+coordinate: "track · 7/descent · 7f650dbf"
+contentUuid: "04d2f4c9-b96e-5d41-aec4-82d9de931063"
+diamondUuid: "b4603ff9-68a9-8b9c-87f2-cac3910a0a5d"
+uuid: "7f650dbf-4fb2-8c87-9fed-eb6852f6ff9e"
 horo: 7
 typography:
   partition: track
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "681d2942-27df-8a9c-95b8-456349614357"
+  computationUuid: "f636f8a2-4a2d-8169-b374-bf0d42dd1fde"
   stages:
     - stage: path
       stageUuid: "e2e249c1-7523-82c0-b6ff-7469bb54b8cb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "33800914-2ab8-86ab-a760-cfbe9fd721ce"
     - stage: horo
-      stageUuid: "7e5ae06e-e35a-8a3f-81ac-7d40b46abf3b"
+      stageUuid: "e76bd36f-9abe-877c-9b2c-50ecf0442906"
     - stage: seal
       stageUuid: "4eb82b60-a081-8a80-a7f6-c032726b6b53"
     - stage: uuid
-      stageUuid: "37188f8f-7938-83c7-995c-f55ac62eae51"
+      stageUuid: "0272b433-bd52-8e9c-a2ee-7e57d524183c"
 version: 2
 ---
 # track

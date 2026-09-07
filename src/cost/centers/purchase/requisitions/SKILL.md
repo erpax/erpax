@@ -2,11 +2,11 @@
 name: requisitions
 description: "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection."
 atomPath: "cost/centers/purchase/requisitions"
-coordinate: "cost/centers/purchase/requisitions · 4/weave · dc924b58"
-contentUuid: "6fd9b163-eb62-5348-9c81-5ef8aee92df2"
-diamondUuid: "717b9efd-1ba3-8a24-9f02-7a541afebb95"
-uuid: "dc924b58-b25a-8509-aa19-ee63be534111"
-horo: 4
+coordinate: "cost/centers/purchase/requisitions · 7/descent · 3d165f2f"
+contentUuid: "4ce14d37-e822-5985-a406-6bdb3b9dd226"
+diamondUuid: "637baa6d-88d7-8538-aa44-6b9348ca7f7a"
+uuid: "3d165f2f-26f3-809b-bdbb-77a9f864f32a"
+horo: 7
 typography:
   partition: cost
   bondDegree: 27
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "cf8301e4-e274-888b-a7dd-5625d632bbd3"
+  computationUuid: "81bbc975-80bd-8c9c-bd5f-cdc6a1d01dce"
   stages:
     - stage: path
       stageUuid: "c2e89d2a-b5e8-81cb-9429-458353f2337d"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "dde586d1-1224-8a90-b83e-bfb6f3ce82f2"
     - stage: horo
-      stageUuid: "60eda8ec-45b3-8f83-a23e-112f74a8d3ad"
+      stageUuid: "84a833e8-a0ce-846a-91d2-71979a059ad9"
     - stage: seal
       stageUuid: "1d544be2-e1da-86bd-b8a3-901d65272e17"
     - stage: uuid
-      stageUuid: "f4fac234-f2a2-846a-ae8a-5c06a31dac82"
+      stageUuid: "936ff2f9-d8f5-8947-b292-c0b943fb6424"
 version: 2
 ---
 # purchase-requisitions

@@ -2,11 +2,11 @@
 name: modulation
 description: "Use when reasoning about modulation — A schema.org component word, collided out of schema.org compounds — fused from broadcastSignalModulation (sti · collapse · merge)."
 atomPath: "vocabulary/modulation"
-coordinate: "vocabulary/modulation · 1/base · ea334fc6"
-contentUuid: "7f790497-1d7e-5875-b3ce-b3247c047248"
-diamondUuid: "adeaeed1-c768-83de-b300-6f558208e297"
-uuid: "ea334fc6-7fe8-8213-b2b0-a7e68d879615"
-horo: 1
+coordinate: "vocabulary/modulation · 8/crest · e2844b91"
+contentUuid: "e8ec18c6-ed2c-545d-b752-04ad0cfaf77f"
+diamondUuid: "133d2dba-4720-8bd3-b64e-b3fb064ba14e"
+uuid: "e2844b91-5487-8dcf-beb9-ddfc25deeb24"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6d4d21f0-0173-8496-b265-75855f4bd794"
+  computationUuid: "5f096ede-1364-8bd6-a896-e349bde23226"
   stages:
     - stage: path
       stageUuid: "48e0eccf-87b6-8e4b-b5a3-c325cd7c318c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "590ff206-e20a-860f-84f0-96a4cf780007"
     - stage: horo
-      stageUuid: "6b319afa-ee9a-819e-ac99-6df6c69e16cf"
+      stageUuid: "42ab2c55-d9f3-825c-87ff-4875127da229"
     - stage: seal
       stageUuid: "75edec7c-dfa6-8e76-a899-849394bc90dd"
     - stage: uuid
-      stageUuid: "8507dd92-0a4b-88e3-abb8-cb27a2f1e5b8"
+      stageUuid: "e3265286-8edc-8de6-84ca-d85e073b433d"
 version: 2
 ---
 # modulation

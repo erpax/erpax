@@ -2,11 +2,11 @@
 name: after
 description: "Use when reasoning about after as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/after"
-coordinate: "vocabulary/after · 4/weave · 4bf57595"
-contentUuid: "c51a8211-a2b7-5f6b-8238-e8c8916aef48"
-diamondUuid: "344c9de0-0c0f-821b-bb1c-a10eafa8f93d"
-uuid: "4bf57595-f09e-8b27-8def-16af21425fbb"
-horo: 4
+coordinate: "vocabulary/after · 7/descent · ad5602fe"
+contentUuid: "cf3843fb-8ed9-5716-ac58-aac5dd20176b"
+diamondUuid: "a43c98f8-72a1-8457-a91f-c7886d6fa22a"
+uuid: "ad5602fe-d5ba-86bd-b756-9634b02e9c6c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "50591aae-0b4c-8fe8-be45-3bd4e3032e9b"
+  computationUuid: "a4ad8351-2226-8d65-b338-b694030abb0e"
   stages:
     - stage: path
       stageUuid: "e3755286-12bf-8328-8772-6f6b53e7075f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c8b21bec-ac80-82e8-a204-5585ede30c8b"
     - stage: horo
-      stageUuid: "0dcb12b9-da15-8215-b711-cc9943ff9fef"
+      stageUuid: "6ebdca92-353a-8b6c-af8c-00092955b0c6"
     - stage: seal
       stageUuid: "07bec9b5-df38-8d61-8c1f-38648724c7fc"
     - stage: uuid
-      stageUuid: "6d3957dc-d9d5-8576-afd7-d7f48c8ee749"
+      stageUuid: "d49873f6-8a1a-86bf-9998-0f6440e63f47"
 version: 2
 ---
 # after

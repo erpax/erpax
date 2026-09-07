@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "resort",
-    "uuid": "00465e63-1e5a-8731-8a8e-d59c24f3b4c4",
+    "uuid": "270d39a5-6cd3-8bc4-ab59-31d79cd1f277",
     "words": [
       "resort"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about resort — A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a",
-    "uuid": "a7af79e7-dd0f-8f16-b3ce-69605bdea5d2",
+    "uuid": "371ec730-b249-8432-b825-677caf49198e",
     "words": [
       "use",
       "when",

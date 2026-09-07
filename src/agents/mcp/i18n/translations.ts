@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "i18n",
-    "uuid": "31b4f300-0326-8469-af1f-8106b5794a16",
+    "uuid": "c0151878-44d9-838b-8869-0e73ffdc8550",
     "words": [
       "i18n"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about i18n — MCP localization layer — Slice ZZZZZZZZ (2026-05-11).",
-    "uuid": "f0e70851-ef1c-822c-bc54-88c49d0bce24",
+    "uuid": "df0453b3-e223-866c-b02f-53367b57aaeb",
     "words": [
       "use",
       "when",

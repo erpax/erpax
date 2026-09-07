@@ -2,11 +2,11 @@
 name: partial
 description: "Use when reasoning about partial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/partial"
-coordinate: "vocabulary/partial · 5/round · 25e14c62"
-contentUuid: "b78909df-2ef0-5be8-8e13-7d22ba59d496"
-diamondUuid: "3a4c6e97-0922-8f19-b6c2-b416c36dc16e"
-uuid: "25e14c62-836a-88fe-bd91-b7fc4157089b"
-horo: 5
+coordinate: "vocabulary/partial · 2/share · b2af3a93"
+contentUuid: "43ecdb66-8763-5815-82a8-1ea5151d059d"
+diamondUuid: "61564394-d6f7-80ca-a2e5-f745d0359673"
+uuid: "b2af3a93-9bf9-80d2-8eff-d13ef419cd7f"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff912184-9a1f-87a1-a6ef-68dd1f5d17ed"
+  computationUuid: "75c90ce5-814c-870b-9941-65438b498e76"
   stages:
     - stage: path
       stageUuid: "d9ec9ffa-58eb-8224-b045-56d7d2cd611a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9f820c57-7acd-8f31-9771-14bf1473876c"
     - stage: horo
-      stageUuid: "381fefe1-3f12-8156-a9f4-15918fcf17f3"
+      stageUuid: "fb7ad988-7350-8b3d-8d44-55eb89a6e0f6"
     - stage: seal
       stageUuid: "64009c03-8eb8-8f67-b5da-6b2431c846ec"
     - stage: uuid
-      stageUuid: "8c5e7d5f-70ee-82e1-a9a5-bbb5d2ff065b"
+      stageUuid: "b99523a8-d516-8d37-9cae-5abaadf4663f"
 version: 2
 ---
 # partial

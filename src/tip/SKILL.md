@@ -2,11 +2,11 @@
 name: tip
 description: "Use when reasoning about tip as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tip
-coordinate: "tip · 4/weave · e07cc739"
-contentUuid: "5340323a-ecd4-5c44-8cde-00377548f0c6"
-diamondUuid: "b49b9e63-4811-89c7-9bf8-034b690bed2e"
-uuid: "e07cc739-7c20-8e55-a93e-6dcf3540497e"
-horo: 4
+coordinate: "tip · 2/share · b93fa5b3"
+contentUuid: "d9587c74-f9dc-5179-8b1c-3348870b0d7e"
+diamondUuid: "58b0777e-38b9-8800-8fa9-9fb440b2b6f2"
+uuid: "b93fa5b3-a02a-8dbc-995f-278f2295dbbc"
+horo: 2
 typography:
   partition: tip
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "021f5bee-0487-864e-bd3d-0168f62b28cc"
+  computationUuid: "8dc8db4a-0291-8f52-ab93-1a37e4b8454d"
   stages:
     - stage: path
       stageUuid: "fe0b8187-dffe-8c5f-a495-f10d93523a76"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d310ea6f-a9d8-8ff7-9bb2-f2a57f318542"
     - stage: horo
-      stageUuid: "af21bf7d-a203-89b9-874f-b36f7b57035f"
+      stageUuid: "0ecb346e-ea36-80a0-acf3-d9ac11c12ea6"
     - stage: seal
       stageUuid: "4b52dd16-eb18-830d-8f39-d786489ade1f"
     - stage: uuid
-      stageUuid: "2536e059-ed89-87dc-bf65-9065167bb1e1"
+      stageUuid: "a7765351-ac6e-844e-ad81-d30f6a709753"
 version: 2
 ---
 # tip

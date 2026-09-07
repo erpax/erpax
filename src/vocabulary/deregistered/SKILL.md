@@ -2,11 +2,11 @@
 name: deregistered
 description: "Use when reasoning about deregistered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/deregistered"
-coordinate: "vocabulary/deregistered · 2/share · 5ad51e65"
-contentUuid: "8e435f68-1d92-5aac-b7f4-e622a01d825d"
-diamondUuid: "1ae4354a-2806-8217-8999-e347b7f609b9"
-uuid: "5ad51e65-181d-8a32-b304-303adfd1cf00"
-horo: 2
+coordinate: "vocabulary/deregistered · 5/round · 27cd49db"
+contentUuid: "5aca3c13-f135-5118-b153-7db879b466b7"
+diamondUuid: "c956f1a8-fe57-81d9-9f73-0fccf10415c7"
+uuid: "27cd49db-ecc2-8ea2-817b-72a40b7db845"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "381404e2-76fa-812d-a473-55699835fda7"
+  computationUuid: "6814197c-b327-802b-bda9-fdfc7cfbc8f7"
   stages:
     - stage: path
       stageUuid: "e28fdd18-393b-8383-ae67-cdadc7556633"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d7bffdfc-09dc-8397-b191-85d2b7c0f6b3"
     - stage: horo
-      stageUuid: "5184d8ec-ac40-81b1-9d00-caa00ce63efc"
+      stageUuid: "a4a530ee-5b29-832d-8fec-1dc51b005f33"
     - stage: seal
       stageUuid: "069e4180-83d1-83bb-8cc4-e880dabc55df"
     - stage: uuid
-      stageUuid: "8028c043-36e6-889b-bb7d-4f63e8eedecb"
+      stageUuid: "75455b21-e5ef-85bf-8306-89f68d8d7b74"
 version: 2
 ---
 # deregistered

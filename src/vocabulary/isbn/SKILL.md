@@ -2,11 +2,11 @@
 name: isbn
 description: Use when reasoning about isbn — The ISBN of the book.
 atomPath: "vocabulary/isbn"
-coordinate: "vocabulary/isbn · 2/share · f8f592e2"
-contentUuid: "effba38e-827e-5242-9d8e-ee254f8ed780"
-diamondUuid: "212bf1d4-043f-8b1f-aa09-52561a7cd96c"
-uuid: "f8f592e2-8385-8a91-b54c-b87dc43fb9ed"
-horo: 2
+coordinate: "vocabulary/isbn · 4/weave · 6e2eee9f"
+contentUuid: "228d345c-a87f-578a-a728-b1aee8e9a662"
+diamondUuid: "e5060603-cc48-8d78-9ab5-59d12d3ff8e1"
+uuid: "6e2eee9f-8663-8af5-90d1-1e0801bdcd0f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "72bb90d1-af17-8c49-9068-dca2cdd64691"
+  computationUuid: "59d056f6-fe0f-8234-9337-17f37ee39631"
   stages:
     - stage: path
       stageUuid: "3fcec7d9-8dfd-8d0f-be81-6bf095ea29d1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ea620f59-378b-8bbc-bbd0-e3ae69744579"
     - stage: horo
-      stageUuid: "e62b7cdc-89da-83c0-afe4-98183b8b9189"
+      stageUuid: "60a93c28-f580-8d64-8427-0f286d35271d"
     - stage: seal
       stageUuid: "f0c03edc-0b5e-81bb-a8d8-4b5563363c25"
     - stage: uuid
-      stageUuid: "a0846b3e-6fde-8c31-8293-e878ce66d8c6"
+      stageUuid: "fdee2521-8ace-86ef-bba2-d12b8933bf5f"
 version: 2
 ---
 # isbn

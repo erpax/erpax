@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing RFC 9110 — HTTP Semantics.",
-    "uuid": "2ef20845-46b4-89dc-8460-6da1c3cb550a",
+    "uuid": "5158f42a-ce3e-882d-bbeb-d5d82a9a71f7",
     "words": [
       "use",
       "when",

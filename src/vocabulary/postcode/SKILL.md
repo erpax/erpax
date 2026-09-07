@@ -2,11 +2,11 @@
 name: postcode
 description: "Use when reasoning about postcode as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/postcode"
-coordinate: "vocabulary/postcode · 5/round · 319186fc"
-contentUuid: "46e9a4cf-3862-59f9-852d-96f86c2d0a90"
-diamondUuid: "cad33eeb-63e6-868c-acdf-26f79baa24e7"
-uuid: "319186fc-92ce-8d8e-99ff-d3ca0c97f9c5"
-horo: 5
+coordinate: "vocabulary/postcode · 1/base · 1ed44ad3"
+contentUuid: "cf9ebd3b-51e2-52e2-a41b-bdd257e93207"
+diamondUuid: "93c84170-254e-8773-ac95-3b4248d6846f"
+uuid: "1ed44ad3-f36c-82ac-a2ae-e48188172024"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a26f64fb-944d-8e5c-9174-9b51319be5a7"
+  computationUuid: "88125934-c3e2-841a-9048-a015e4825168"
   stages:
     - stage: path
       stageUuid: "3e594012-13cc-8974-b547-c39d1b4d57f8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a791d79c-71bb-83b5-9965-accf30d79c23"
     - stage: horo
-      stageUuid: "f6105d4c-0f7f-8fc5-be16-250f25e170e2"
+      stageUuid: "6e24009b-8b8f-8f58-b386-0ddfc4437dd8"
     - stage: seal
       stageUuid: "16268537-8109-8abd-a531-c1bc5966425c"
     - stage: uuid
-      stageUuid: "0fb61a25-cda4-82e7-b16e-6a771fc8144c"
+      stageUuid: "7c0c569b-f35c-8f24-b43c-66e4baa62579"
 version: 2
 ---
 # postcode

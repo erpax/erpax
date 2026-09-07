@@ -2,11 +2,11 @@
 name: inker
 description: Use when reasoning about inker — The individual who traces over the pencil drawings in ink after pencils are complete.
 atomPath: "vocabulary/inker"
-coordinate: "vocabulary/inker · 2/share · ca031bd6"
-contentUuid: "9bc8baf8-2312-558a-b2b3-88848a3c5d02"
-diamondUuid: "a1ddf398-70b3-862b-8f52-3f5f7db394c5"
-uuid: "ca031bd6-39e0-875f-8a3f-28645c83b0d4"
-horo: 2
+coordinate: "vocabulary/inker · 5/round · 059a49f6"
+contentUuid: "d2eeb710-9a93-5dcc-8b36-5577ff3da83c"
+diamondUuid: "911d46ec-001e-8538-8199-56b223c1cf14"
+uuid: "059a49f6-cdc7-8230-8dba-e46bc2a72a10"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e2a38469-18e7-803c-a1e2-82a3dd00f3ab"
+  computationUuid: "7513a4a4-2fa3-86e3-9db8-1c4b91fb4148"
   stages:
     - stage: path
       stageUuid: "547ce387-6fb4-8155-a2bd-adb62f552ace"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f69e2f60-e69d-8c70-b075-fc019c8680a7"
     - stage: horo
-      stageUuid: "78701bba-f832-8db2-ae4e-bd8d012e4233"
+      stageUuid: "598509f7-d50f-82e1-a301-ac1d56871079"
     - stage: seal
       stageUuid: "60161d1a-558a-838a-9f49-bac53a0695b6"
     - stage: uuid
-      stageUuid: "697d38c8-a9c6-8df3-a1cc-cef6c8b6192f"
+      stageUuid: "0d8e868d-07e2-82ff-82f5-064fb0ec0446"
 version: 2
 ---
 # inker

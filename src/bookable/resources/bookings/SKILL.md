@@ -2,11 +2,11 @@
 name: bookings
 description: "Use when recording or querying reservation events — hotel check-in/out, vehicle rental, equipment hire, meeting-room holds, field-service slots — against a bookable-resource; IFRS-15 over-time / point-in-time revenue recognition, cancellation policy, deposit, invoice linkage, multi-channel (direct/OTA/GDS). The canonical reservation primitive."
 atomPath: "bookable/resources/bookings"
-coordinate: "bookable/resources/bookings · 4/weave · ac9cc13c"
-contentUuid: "f3fd2f49-299d-5d6d-b7d6-f2789af60f73"
-diamondUuid: "eba70bc6-5c2c-8c4c-83d1-638cb1f5932b"
-uuid: "ac9cc13c-4178-8371-8126-adc6d28bbeb7"
-horo: 4
+coordinate: "bookable/resources/bookings · 2/share · 2f31ec71"
+contentUuid: "7f25ecde-eaa4-591a-84b0-25277d5c4568"
+diamondUuid: "471e7354-b151-8571-b00d-3bd9e4344b1f"
+uuid: "2f31ec71-6834-8bf1-9135-272b592c6c0b"
+horo: 2
 typography:
   partition: bookable
   bondDegree: 26
@@ -33,7 +33,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a6120a3f-8f33-8b74-8a52-a9e500dfe53e"
+  computationUuid: "f5c3070f-e6a9-8cd7-9963-18642611f7d2"
   stages:
     - stage: path
       stageUuid: "6405ba5a-73fd-84c1-ac74-c283390d3803"
@@ -44,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "6aebc6e6-cb9d-8ffe-afac-dcbe690a58dc"
     - stage: horo
-      stageUuid: "d5f24494-d88e-8fbc-9629-5bc0cf8e9570"
+      stageUuid: "1c93ba8c-ccfb-8e01-b337-27155cc92c41"
     - stage: seal
       stageUuid: "e8318bfb-c6b2-883a-bc4e-13718f0a7ba9"
     - stage: uuid
-      stageUuid: "0bf09eb1-4800-8f9f-ab33-5c6ff46d5ef2"
+      stageUuid: "53fce37e-4b23-8628-81c4-f35082c4fa5e"
 version: 2
 ---
 # bookings

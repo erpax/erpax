@@ -2,11 +2,11 @@
 name: echo
 description: "Use when a path restates itself — a meaning-word repeated within one path means the path says the same thing twice and cannot be immediately realised. Computes every such path (framework namespace excluded), ratchets to zero. Run: tsx src/rules/echo/index.ts"
 atomPath: "rules/echo"
-coordinate: "rules/echo · 1/base · 2121611d"
-contentUuid: "7b00d1ff-bffe-584c-ac3d-f8b385664d60"
-diamondUuid: "dd8e3a1d-cfb6-8ff9-81dc-61a47e8dfce7"
-uuid: "2121611d-4cea-83d2-a8fa-26d6e0cc0225"
-horo: 1
+coordinate: "rules/echo · 2/share · 654d237f"
+contentUuid: "0fa86801-0451-5244-a138-52fe5a24a9b2"
+diamondUuid: "f06d9bdf-4ce6-8cb1-ba22-12d525ecb391"
+uuid: "654d237f-8469-8813-b5eb-e58b65524ddf"
+horo: 2
 typography:
   partition: rules
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning"
 bindings: []
 signatures:
-  computationUuid: "0cb2cb52-3a59-8965-94d5-4b53bc0c3d0b"
+  computationUuid: "a7f405d4-9af1-8473-85c5-1b26ad9b6a08"
   stages:
     - stage: path
       stageUuid: "86b2bd9b-0ba8-8b6e-b55b-a5b228235656"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3eaacceb-432a-85b9-97d8-2f2d2dffdbbb"
     - stage: horo
-      stageUuid: "27ae5f4c-e786-8f88-89bc-6064f4ac1e4c"
+      stageUuid: "e947e25a-3504-8c84-96d1-08d9a00e7a9a"
     - stage: seal
       stageUuid: "2f06f82d-ead7-8b1d-b24e-4e2f8d304621"
     - stage: uuid
-      stageUuid: "b92fb324-bdbc-88c7-b08e-0d94670598b6"
+      stageUuid: "fb3edf15-7444-801a-9531-b0f089ec93c6"
 version: 2
 ---
 # echo — a path that restates itself has not folded its meaning

@@ -2,11 +2,11 @@
 name: acknowledgments
 description: "Use when recording or tracking employee acknowledgement of a policy version — signed-document upload, acknowledged date, status pending/overdue/expired; SOX §404 control-attestation evidence per employee per policy. The policy-acknowledgments collection."
 atomPath: "internal/policies/policy/acknowledgments"
-coordinate: "internal/policies/policy/acknowledgments · 1/base · 66e2d386"
-contentUuid: "95505ef2-2e14-5a8e-b457-44adac13d7e5"
-diamondUuid: "acaf1467-7a39-86bd-ae40-3c612afd2e12"
-uuid: "66e2d386-3fee-8f0f-b39f-400e74786ba1"
-horo: 1
+coordinate: "internal/policies/policy/acknowledgments · 8/crest · ccd727e2"
+contentUuid: "07d94eea-1b4e-5fd9-a710-feeee2eccea4"
+diamondUuid: "9bf12ccb-fc78-8aaa-a0a1-f3c2bed78473"
+uuid: "ccd727e2-8abc-8d14-b92a-9edd68bbe19e"
+horo: 8
 typography:
   partition: internal
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "SOX §404 control-attestation"
 bindings: []
 signatures:
-  computationUuid: "7bc9fcbf-c003-8022-9580-97326e94b1bc"
+  computationUuid: "bda8b9b3-4a3a-87d5-85c6-ded61d0342a3"
   stages:
     - stage: path
       stageUuid: "d0e34220-6c13-86ce-a255-6f752d7ce4a9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c3c7eea8-09ec-85e2-9ca1-7102476ac742"
     - stage: horo
-      stageUuid: "3deeeaa9-3e1c-8c75-a871-56d8dd3987bd"
+      stageUuid: "24262f1b-843e-833d-b0cd-dee509c39325"
     - stage: seal
       stageUuid: "e2269f75-90ec-8ee7-b60b-e2d2f2f89796"
     - stage: uuid
-      stageUuid: "dce0bd22-a037-8c48-afa6-68a62ccb3ff3"
+      stageUuid: "9c7e1fd0-bc51-83ff-b757-8c9989c54109"
 version: 2
 ---
 # policy-acknowledgments

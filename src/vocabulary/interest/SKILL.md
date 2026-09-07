@@ -2,11 +2,11 @@
 name: interest
 description: "Use when reasoning about interest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/interest"
-coordinate: "vocabulary/interest · 2/share · 49f3a3a2"
-contentUuid: "77cc4416-ac34-5aa2-b067-f32f6b5c98d2"
-diamondUuid: "31fa3b66-f694-8a1f-b789-d3bb7e8070d5"
-uuid: "49f3a3a2-7b81-8d37-83a8-e92fca8da668"
-horo: 2
+coordinate: "vocabulary/interest · 8/crest · ea15bd0d"
+contentUuid: "5e9855a4-36ec-51cc-92b4-b0fd16ee4953"
+diamondUuid: "de11f845-82b1-8472-8825-f786d655beaf"
+uuid: "ea15bd0d-25a1-8273-806a-e2a7dd3cacb1"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6faacb9d-6c31-842a-b026-82a1c21d0235"
+  computationUuid: "9f398cfe-7a9a-8cd4-aace-160989911d3d"
   stages:
     - stage: path
       stageUuid: "78219fcd-ca58-822c-913f-47f897ce1efe"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d21882ab-8e11-830a-bd97-36b07530fcb9"
     - stage: horo
-      stageUuid: "5b0333bf-d0bf-8c96-91e2-fcd5d7301fcb"
+      stageUuid: "7653da0f-462c-8a5a-951b-aae293c54e4e"
     - stage: seal
       stageUuid: "68a9cf66-e4ca-8a6b-a048-79586959931e"
     - stage: uuid
-      stageUuid: "dce40e98-bc74-89a5-9e71-baa856c30cb0"
+      stageUuid: "b8db6cbd-4cd6-827e-8559-6b9bfe1fade5"
 version: 2
 ---
 # interest

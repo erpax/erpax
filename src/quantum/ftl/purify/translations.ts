@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "purify",
-    "uuid": "0e3b475d-5118-8cd7-a1f0-38d6a5609153",
+    "uuid": "756360bd-cf62-819c-9221-86855593f2de",
     "words": [
       "purify"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when working with quantum/ftl/purify.",
-    "uuid": "3cc535a1-6b74-84ba-b94e-36eeb0e39cde",
+    "uuid": "805d4dfd-5a0c-8a8e-b6e5-b6a54ed1c586",
     "words": [
       "use",
       "when",

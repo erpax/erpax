@@ -2,10 +2,10 @@
 name: solve
 description: "Use when reasoning about solve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: solve
-coordinate: "solve · 7/descent · 575ac8d7"
-contentUuid: "c38cef62-31f2-5e11-8a5a-1bb86512b453"
-diamondUuid: "1fbc3d73-63d1-88a0-94ff-0eb30829d96f"
-uuid: "575ac8d7-81cb-843e-bf49-53326178d521"
+coordinate: "solve · 7/descent · f3fe5020"
+contentUuid: "05a1f93f-b213-572e-a1fa-69c8e063a431"
+diamondUuid: "5ea55403-f0f0-81c0-9516-e5d7261e85d4"
+uuid: "f3fe5020-939a-8664-9b3b-b67cd4cbe7a6"
 horo: 7
 typography:
   partition: solve
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f085338a-be1c-8f82-8011-2fa439a5288e"
+  computationUuid: "bde77cd2-aaba-871e-8a0e-4c08111499c8"
   stages:
     - stage: path
       stageUuid: "9794dd42-9120-8216-950d-ead7a9a8a88c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "76ca4178-5866-8f8e-8ade-b45a878a2e12"
     - stage: horo
-      stageUuid: "4551485d-e8a8-853d-a4df-5125584ed5b9"
+      stageUuid: "1e327f4a-196a-8458-89c8-22f637647f12"
     - stage: seal
       stageUuid: "625b6d8b-c9d1-8a8d-9485-b771a11916d5"
     - stage: uuid
-      stageUuid: "8e8088f3-76bd-8605-b941-6698c1d13987"
+      stageUuid: "7f54f5df-dba8-8696-950a-45f5582c8e52"
 version: 2
 ---
 # solve

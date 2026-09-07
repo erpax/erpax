@@ -2,10 +2,10 @@
 name: slack
 description: "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist."
 atomPath: "rules/slack"
-coordinate: "rules/slack · 2/share · d70e4a2c"
-contentUuid: "65267c59-ff81-581f-a390-7e7ae3bd9a60"
-diamondUuid: "754f706d-ea8f-8499-aa16-a65b04056095"
-uuid: "d70e4a2c-ce30-8c68-81d3-d78d7a3e80ce"
+coordinate: "rules/slack · 2/share · 73a3ab90"
+contentUuid: "e4269eb5-470a-5231-9a70-98154a925bc7"
+diamondUuid: "da45dc42-79bb-87f9-97a5-e1ee4bd28183"
+uuid: "73a3ab90-7b90-8713-a938-f0b49f7a9320"
 horo: 2
 typography:
   partition: rules
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a3c46c37-859e-8deb-ab99-1013e70db756"
+  computationUuid: "1255a126-24a1-837a-8f4e-88f7bd9ee7e5"
   stages:
     - stage: path
       stageUuid: "efa7045d-0d85-8e31-8e46-a24cfd4c482e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f0226838-e8f7-8808-8adc-7a2783156793"
     - stage: horo
-      stageUuid: "b25c4258-aaa2-898e-86d5-22f5286b218e"
+      stageUuid: "8e3f9c0c-60bc-8370-ae1c-e913fb2732e1"
     - stage: seal
       stageUuid: "7dd7aa31-bbf2-87f8-b0c3-770b956b0b6d"
     - stage: uuid
-      stageUuid: "696a5d22-4180-87b8-aabb-a962798d2064"
+      stageUuid: "0108cb91-d364-8f78-bd85-a6232cf03440"
 version: 2
 ---
 # rules/slack — an under-claim is an over-claim, involuted

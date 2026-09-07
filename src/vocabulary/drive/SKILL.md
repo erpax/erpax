@@ -2,11 +2,11 @@
 name: drive
 description: "Use when reasoning about drive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/drive"
-coordinate: "vocabulary/drive · 8/crest · a5414fce"
-contentUuid: "f39ca9c4-3468-58cf-81ed-4ddad1a85b08"
-diamondUuid: "b59aed02-076f-81fe-bf65-7511a0c686b3"
-uuid: "a5414fce-a56d-8fc0-ac74-3357a30759fc"
-horo: 8
+coordinate: "vocabulary/drive · 5/round · 4b2332f0"
+contentUuid: "577b4b5b-a668-5148-9c4c-28e0a1dd6866"
+diamondUuid: "bcbe5a04-8c21-8fe8-a196-ca721e23abe3"
+uuid: "4b2332f0-227f-8947-86c5-e718e236bc96"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cda46424-ec53-85db-91fa-20a95182548a"
+  computationUuid: "6b2881cf-993e-841c-aabf-47a8fa6c58c6"
   stages:
     - stage: path
       stageUuid: "af7df46c-bdac-857b-bd54-81e3f97d101b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e2d12ca3-9ec5-8ae6-9f78-df94f8a96dca"
     - stage: horo
-      stageUuid: "3db70532-d15f-8e6e-a2a7-8b3d674e1c95"
+      stageUuid: "e523d2ea-7a1c-8445-8894-f904d0de9f36"
     - stage: seal
       stageUuid: "297d2295-0144-8441-bbb7-56768dea725a"
     - stage: uuid
-      stageUuid: "ddb7ab06-50a5-83b0-aae6-0ad3247aae2e"
+      stageUuid: "ef99f335-473f-8a88-b605-7c5e919a7a64"
 version: 2
 ---
 # drive

@@ -2,11 +2,11 @@
 name: free
 description: "Use when reasoning about free — A flag to signal that the item, event, or place is accessible for free."
 atomPath: "vocabulary/free"
-coordinate: "vocabulary/free · 4/weave · 2ceeec70"
-contentUuid: "557b17a7-9345-5b3a-baa8-2be1b2c82c5c"
-diamondUuid: "e17da373-6fc5-8477-a5ad-e10c18b1bcc8"
-uuid: "2ceeec70-1e70-8f84-a5b8-35f49bd5c887"
-horo: 4
+coordinate: "vocabulary/free · 5/round · d27ff3a5"
+contentUuid: "950aecde-5b41-58c0-a0fa-ac0a890fa38d"
+diamondUuid: "e8039f71-7021-8237-a06c-4f76bf6a51f4"
+uuid: "d27ff3a5-d547-821d-a4f4-32ea40c6e9d2"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9028740e-eb24-816e-8550-ced83091c80c"
+  computationUuid: "0c26eef0-31ff-871b-9011-710790290580"
   stages:
     - stage: path
       stageUuid: "bc2a2724-2942-8000-889a-6b4cf84abf9c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6cb6af44-edec-834e-81fd-06c5f5177574"
     - stage: horo
-      stageUuid: "25084b34-7e9b-8694-afa7-8460e59505b3"
+      stageUuid: "6afe59c8-da88-806a-87fe-c3272c95fddd"
     - stage: seal
       stageUuid: "76a67911-aa48-8294-8d18-b9c23adb33af"
     - stage: uuid
-      stageUuid: "8d562875-e399-84ca-8c4e-bc467aedfb39"
+      stageUuid: "11a4f28c-98e2-81fb-a1b9-7f93e6b549cb"
 version: 2
 ---
 # free

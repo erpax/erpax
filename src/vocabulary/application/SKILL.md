@@ -2,11 +2,11 @@
 name: application
 description: Use when reasoning about application — An application that can complete the request.
 atomPath: "vocabulary/application"
-coordinate: "vocabulary/application · 7/descent · e390e2fd"
-contentUuid: "c58c8477-9325-53d4-9879-5910cd39468c"
-diamondUuid: "61978be6-9b56-8895-9167-c8082a7e0d3b"
-uuid: "e390e2fd-7236-87e9-a955-e53fd9132129"
-horo: 7
+coordinate: "vocabulary/application · 1/base · 773d9cfb"
+contentUuid: "b98ed9f0-4698-5f0d-8ac9-ab9b1f43712e"
+diamondUuid: "1bd16d71-4d9d-8cfc-a19f-6795cebe5f9e"
+uuid: "773d9cfb-6495-855e-b0b5-671b58dec09c"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 46
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "afe75b4f-52cd-849b-807d-0ba0a3afc6e3"
+  computationUuid: "ea40d629-2bfe-8423-b0be-1740a9594d9d"
   stages:
     - stage: path
       stageUuid: "5f2ca91b-cc9c-8827-91b9-a41a68bd632c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "85f032d4-ab43-8c79-a6c1-81b0b7243f95"
     - stage: horo
-      stageUuid: "7ff9a3fb-456c-89d7-9b77-84e27e287936"
+      stageUuid: "f457d1db-eee6-8103-a165-f650879faeb6"
     - stage: seal
       stageUuid: "07d5128b-f71d-830f-8236-f6e64be990f6"
     - stage: uuid
-      stageUuid: "23cf2b78-dc0f-8383-bff9-90387ca3525e"
+      stageUuid: "bde283f0-cca6-8ed2-a318-68fa5f5a3185"
 version: 2
 ---
 # application

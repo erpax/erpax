@@ -2,10 +2,10 @@
 name: lend
 description: "Use when reasoning about lend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lend"
-coordinate: "vocabulary/lend · 5/round · 2fcd7afe"
-contentUuid: "10ce5d24-b7bc-5c72-8d32-81272ae0416e"
-diamondUuid: "d4db19a1-a734-85a1-90d4-2ed018459384"
-uuid: "2fcd7afe-c2e5-8d37-a0d8-71b7787e3d89"
+coordinate: "vocabulary/lend · 5/round · 71ee047f"
+contentUuid: "446050ca-1aed-5817-a6b5-4e91a48ecbcc"
+diamondUuid: "413bb77d-0e2f-8468-a99d-1afd7d70c412"
+uuid: "71ee047f-7b61-821b-bb9b-f22df7060199"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "14120ba1-9ea2-8e3d-b60e-a1ed944af885"
+  computationUuid: "9bd64af1-dd8f-8f03-bcc6-716db5d8631a"
   stages:
     - stage: path
       stageUuid: "a71122d0-8fdc-8c31-99de-43936197522f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8bba36be-d40d-8a06-a875-c6f499c48b08"
     - stage: horo
-      stageUuid: "1397b02d-3889-8a33-8644-840030c79551"
+      stageUuid: "0cbb72e6-10d6-8343-8d6c-d0c6b98ae811"
     - stage: seal
       stageUuid: "002ae917-32e0-86d6-909c-7ffc248b703b"
     - stage: uuid
-      stageUuid: "e2b6b29b-443b-8f1a-a77b-0eb7500caacf"
+      stageUuid: "a854a94e-a7eb-8bb4-86f0-e829ac53af8d"
 version: 2
 ---
 # lend

@@ -2,11 +2,11 @@
 name: valid
 description: Use when reasoning about valid — The duration of validity of a permit or similar thing.
 atomPath: valid
-coordinate: "valid · 5/round · 2ef77d4c"
-contentUuid: "b62b28aa-5e27-5687-ba12-db946ea0f42a"
-diamondUuid: "12b14d01-4681-8893-a026-6846d368c236"
-uuid: "2ef77d4c-a321-8272-879d-faaa40e1a6a6"
-horo: 5
+coordinate: "valid · 2/share · 6067000c"
+contentUuid: "9458c097-e128-518d-ab03-7ecd7eda38bb"
+diamondUuid: "ee2fb829-e897-83f4-8e04-c7daaacdffa6"
+uuid: "6067000c-1b08-8016-b40c-d233a057c88b"
+horo: 2
 typography:
   partition: valid
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "86c5ad3d-6876-8d4f-a7a7-e4ad32b4de08"
+  computationUuid: "9335efbb-77ca-8416-a358-6213ee3ee79a"
   stages:
     - stage: path
       stageUuid: "ce2c2cec-740d-8dfc-852f-ec0bd70b094f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "21d0a3f9-ae7e-8fbd-a77b-9930d4811705"
     - stage: horo
-      stageUuid: "65343096-810d-805a-94a9-9b50274c3eea"
+      stageUuid: "a421506b-603f-8fe2-b45f-341350f0d839"
     - stage: seal
       stageUuid: "223d4772-cd1f-8211-a9fd-b8c0f6b8f8c2"
     - stage: uuid
-      stageUuid: "151c7f67-31f6-82c0-bf8a-2dfa37f0e277"
+      stageUuid: "d6b063c0-82d1-894a-8d7b-72dd497ebbe9"
 version: 2
 ---
 # valid

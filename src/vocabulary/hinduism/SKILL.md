@@ -2,18 +2,18 @@
 name: hinduism
 description: "Use when reading Hinduism as a diamond of invariant atoms — the eternal law beneath the dialects, the self that is the whole (tat tvam asi), karma read down the lineage, the wheel of rebirth, release as return to the root. Strip the Sanskrit prefix and dharma, atman, brahman, om, moksha collapse to law, self, whole, word, zeropoint — one content-uuid each."
 atomPath: "vocabulary/hinduism"
-coordinate: "vocabulary/hinduism · 4/weave · 6154dc90"
-contentUuid: "df0c0e0c-c25a-5f44-b4f1-7c6b3051fa61"
-diamondUuid: "3cf0c1d0-18fb-87a5-8f07-2c0cda5fd7a1"
-uuid: "6154dc90-a42c-8b15-97db-f8db005d8425"
-horo: 4
+coordinate: "vocabulary/hinduism · 8/crest · 2c6ba7f7"
+contentUuid: "d304f237-e2e0-5aea-8ecb-47f25c6e1305"
+diamondUuid: "dbcc8a9d-3548-87ac-9280-34c7dbe83bf2"
+uuid: "2c6ba7f7-b0c6-881e-be9c-f680989279b1"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 92
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3c20cbab-6580-80f1-878a-aee2be795c0f"
+  computationUuid: "c675cf57-7909-8e67-a4c7-dc269e3aec1b"
   stages:
     - stage: path
       stageUuid: "4f6abccb-e3ba-87c7-8fc4-f9fc6e9f472f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8afedb85-ae9d-8f3e-94bd-584843b49acd"
     - stage: horo
-      stageUuid: "d9fa7ba8-b557-8570-b155-7b877264e69a"
+      stageUuid: "8043bc56-7ada-83c6-8728-fea22a24a81a"
     - stage: seal
       stageUuid: "535872c7-ce68-8b20-a437-4e3a3c5b2c76"
     - stage: uuid
-      stageUuid: "ec541615-dcc2-8d66-8563-df5bf2add080"
+      stageUuid: "0cc53225-ff3d-818a-a82c-20d27452684d"
 version: 2
 ---
 # hinduism — the eternal law; the self is the whole

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pending",
-    "uuid": "727640c2-3306-87bd-8e08-cd35e5a0aa8b",
+    "uuid": "5a32fd1f-2df3-83a2-86d3-3f100d724d53",
     "words": [
       "pending"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about pending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "3c7274e9-29bf-8d17-aaf6-a6776fe3d918",
+    "uuid": "e51185be-9a55-8ee8-9c1e-cadce885183b",
     "words": [
       "use",
       "when",

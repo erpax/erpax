@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disjoint",
-    "uuid": "d1450bfd-48ba-88e2-be30-f0d0bac58730",
+    "uuid": "db4ae9f8-7b17-8707-a0f8-9bb7ead02216",
     "words": [
       "disjoint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about disjoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "a9065e2c-f53c-862c-afd3-9d44346184d4",
+    "uuid": "2c980315-6c4d-84c5-8c03-c8dbd7a24495",
     "words": [
       "use",
       "when",

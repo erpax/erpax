@@ -2,10 +2,10 @@
 name: attribution
 description: "Use when tracking which touchpoint/channel caused a conversion — first-touch, last-touch, multi-touch models; credit value allocation across channels."
 atomPath: "vocabulary/attribution"
-coordinate: "vocabulary/attribution · 8/crest · 5100be58"
-contentUuid: "849f3b2d-99a2-5919-8360-d450fa0fa685"
-diamondUuid: "8a9533a8-a3de-8f45-b55b-715da607f3a7"
-uuid: "5100be58-7a1c-8e97-8368-b4eb29e52bc2"
+coordinate: "vocabulary/attribution · 8/crest · 5d6a42f0"
+contentUuid: "a66465a4-14c9-5de8-990b-418eda0c7342"
+diamondUuid: "dbace1b4-417f-8fb4-9ee3-5bbde5e5f331"
+uuid: "5d6a42f0-9a03-82ba-a58a-526279998f81"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e6e9331d-bc72-8a1d-8b1f-213c0bf3215e"
+  computationUuid: "4f154f33-498b-8ca5-877b-e70287dde73f"
   stages:
     - stage: path
       stageUuid: "0f82d580-ac07-8617-8e23-f8c5d7e7cd13"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d5ee2d11-fe50-88f8-9015-8cce4e16b6c3"
     - stage: horo
-      stageUuid: "bfa3cb53-b83b-85eb-a82d-406c76638abe"
+      stageUuid: "a67683de-5347-8a35-b1c5-7f492b5d2287"
     - stage: seal
       stageUuid: "2cc214f1-a59b-83f0-bfe4-3214bb769b49"
     - stage: uuid
-      stageUuid: "3d8a69e6-d637-8768-9278-42c8603a9c78"
+      stageUuid: "57a04120-525a-8721-8217-c9fcf3475b2f"
 version: 2
 ---
 # attribution

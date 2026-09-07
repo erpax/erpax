@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contribution",
-    "uuid": "e39e0bd8-4ed9-804a-b7e3-49478fb4397a",
+    "uuid": "d8136b2a-5813-8bcd-988a-332a6a04bbf1",
     "words": [
       "contribution"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts.",
-    "uuid": "fd049ae1-3944-86d9-ab3d-3cb3311474a4",
+    "uuid": "bdb11448-6b25-861a-bf4a-1604907f71ac",
     "words": [
       "use",
       "when",

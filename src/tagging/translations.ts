@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tagging",
-    "uuid": "bb4e75c2-6246-8195-8865-b3df797909ed",
+    "uuid": "4aa5d46c-921b-8210-878d-35ab2b5ddfac",
     "words": [
       "tagging"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one tagging — the singular model of the taggings collection (the plural store); the act of attaching a tag to a record.",
-    "uuid": "5fdda0aa-3074-8f53-a0a4-045cb52aedaa",
+    "uuid": "72665b81-2805-88f6-9570-96c046fc0fa8",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: types
 description: "Use when reasoning about types — Canonical IFRS 16 / ASC 842 lease accounting types — lessee model."
 atomPath: "ifrs/16/types"
-coordinate: "ifrs/16/types · 5/round · 5b19d13b"
-contentUuid: "cab2d454-411a-5969-aea3-e90da32e8edd"
-diamondUuid: "5e209a28-4982-8fe5-a5e5-7602089d8e96"
-uuid: "5b19d13b-bbb4-8227-a063-05e661c9d40d"
-horo: 5
+coordinate: "ifrs/16/types · 8/crest · 03718c1f"
+contentUuid: "4689aa24-b685-5442-b816-3e009e1918b0"
+diamondUuid: "163f1ee3-58cd-88e2-9ef5-879ffc7f6d97"
+uuid: "03718c1f-2243-8efe-9411-d32a2ebddf41"
+horo: 8
 typography:
   partition: ifrs
   bondDegree: 85
@@ -31,7 +31,7 @@ standards:
   - "US-GAAP ASC-842-20-35 subsequent-measurement-lessee"
 bindings: []
 signatures:
-  computationUuid: "ad0969b4-1178-86df-87bd-b8624d55951d"
+  computationUuid: "886fa0fa-cb05-8bf7-98f2-f500592c5317"
   stages:
     - stage: path
       stageUuid: "57f29983-80a2-8756-b81e-602f574812bf"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "5e4a5b07-d3c1-8800-a20b-a93256c05508"
     - stage: horo
-      stageUuid: "459e66bd-c130-8b0b-a59e-252a2f12766c"
+      stageUuid: "120ce282-2784-830e-89dd-09260a68a654"
     - stage: seal
       stageUuid: "5767a03d-fdd3-89ee-963d-1e74f4ed44b2"
     - stage: uuid
-      stageUuid: "52d02c13-14f5-8684-931e-4f7b05fe9964"
+      stageUuid: "b65f6535-0ed6-81b5-8481-abb7ca7314a3"
 version: 2
 ---
 # ifrs/16/types

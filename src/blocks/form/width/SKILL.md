@@ -2,18 +2,18 @@
 name: width
 description: "Use when reasoning about width — One div, one style. means *half the form*, not fifty pixels — the value is a **percentage**, because a form field's width is meaningful only relative to the form it sits in, and a…"
 atomPath: "blocks/form/width"
-coordinate: "blocks/form/width · 4/weave · bcdeab92"
-contentUuid: "2d64e0b0-80d9-531f-8a49-6f55e974c1b2"
-diamondUuid: "d6901808-ee18-870f-b767-34b255f431c8"
-uuid: "bcdeab92-5444-8091-bc92-cbd5c89d8423"
-horo: 4
+coordinate: "blocks/form/width · 8/crest · a06bf7ef"
+contentUuid: "2bd67309-f7fd-5157-a19a-14b570d49b9a"
+diamondUuid: "fa108e66-80f4-89c0-aaf1-a8eb2a3c8336"
+uuid: "a06bf7ef-f768-8588-96c1-cc494dc4173c"
+horo: 8
 typography:
   partition: blocks
   bondDegree: 8
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c9385ee7-a907-82a3-94f1-98f7b9f647d7"
+  computationUuid: "50b506fa-7b52-8305-b036-783210d30271"
   stages:
     - stage: path
       stageUuid: "e3d3e4fc-9e79-80d2-97d2-1338e94c2770"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "41bc829a-3065-89c7-807e-2bfcaa4a173e"
     - stage: horo
-      stageUuid: "538d131c-689d-87cf-b28e-8159c36d50ec"
+      stageUuid: "b32642bd-7699-81c0-915f-bd88a36fdd3e"
     - stage: seal
       stageUuid: "bc2a9333-c5cf-8852-af93-08769352c311"
     - stage: uuid
-      stageUuid: "ad39820a-e421-8884-ae45-2126e96776d2"
+      stageUuid: "e5045d96-6476-84d2-8c92-ffd26a07793c"
 version: 2
 ---
 # blocks/form/width — a field's width is a share of the form, and absent is not zero

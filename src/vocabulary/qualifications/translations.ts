@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "qualifications",
-    "uuid": "6d2a1437-514a-8317-b028-5d69c142259c",
+    "uuid": "a12af8fa-1cad-8029-82cd-124c71ccd3c9",
     "words": [
       "qualifications"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about qualifications — Specific qualifications required for this role or Occupation.",
-    "uuid": "9dfe120c-dd86-8faa-b6bc-5a2d4f4d19b0",
+    "uuid": "e68405d5-1743-85b6-ba52-60928bc2afb5",
     "words": [
       "use",
       "when",

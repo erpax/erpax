@@ -2,18 +2,18 @@
 name: base
 description: "Use when reasoning about the entry position of the horo state ring — digit 1, \"entering the ring\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo."
 atomPath: "horo/base"
-coordinate: "horo/base · 8/crest · 39dc0e9d"
-contentUuid: "d0206aa8-38fb-5a93-8ec4-f0a403e845f1"
-diamondUuid: "b579f14e-aa26-8ea6-97cc-67574952e04d"
-uuid: "39dc0e9d-d0fa-8fd8-a762-0058f8270e88"
-horo: 8
+coordinate: "horo/base · 1/base · 3f31eef6"
+contentUuid: "a767ab24-e2f5-54cb-95cd-928fa0ea49c0"
+diamondUuid: "470c2471-49e8-89ec-8f61-70d006e35239"
+uuid: "3f31eef6-1f21-8fd8-b635-bd1cb9265a82"
+horo: 1
 typography:
   partition: horo
   bondDegree: 52
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f3efb79a-cee9-8139-8576-dbe6a6c5f7b9"
+  computationUuid: "f34e0e43-deb7-8fe0-a540-efb792be3b88"
   stages:
     - stage: path
       stageUuid: "87795ccf-2ce2-8c46-a510-d8e4242eb7f5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "91a30ea3-3349-86f8-84e3-98ff2096896a"
     - stage: horo
-      stageUuid: "eab78372-9def-8d10-9aaf-c7100c15b94f"
+      stageUuid: "2dbbbd9e-a9f5-80bc-9e03-36d2a0327180"
     - stage: seal
       stageUuid: "51885f1e-71d5-8534-bc03-56a4fd6c0546"
     - stage: uuid
-      stageUuid: "21893ae9-89fd-8d0f-8f54-89d38737443e"
+      stageUuid: "01d29242-a637-807b-9cba-252b7ba57806"
 version: 2
 ---
 # base — horo position 1 (entering the ring)

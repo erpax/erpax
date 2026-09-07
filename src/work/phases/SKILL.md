@@ -2,11 +2,11 @@
 name: phases
 description: "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time."
 atomPath: "work/phases"
-coordinate: "work/phases · 2/share · adec2095"
-contentUuid: "d7f9e8a8-5c8e-55b1-8b93-44fd529cdf2c"
-diamondUuid: "b412547c-6ef8-8656-9122-283cba94f24c"
-uuid: "adec2095-afbc-82dc-aa99-25f132722dd8"
-horo: 2
+coordinate: "work/phases · 1/base · f2714082"
+contentUuid: "c06463e1-88fb-5c69-990c-0a7c6a94ad18"
+diamondUuid: "c5bcfc3a-e848-8239-bbae-0c722111c27d"
+uuid: "f2714082-49de-85a0-92f8-a989ace19640"
+horo: 1
 typography:
   partition: work
   bondDegree: 27
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c60aa083-b785-84af-9f36-9777317b15c6"
+  computationUuid: "8461437c-66eb-81d3-bd44-3999a5f5a8ff"
   stages:
     - stage: path
       stageUuid: "d0a34978-9410-83f8-b715-d52a1a5f9daa"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "44deebc7-75ec-830c-b1d5-840fe8ac7fc2"
     - stage: horo
-      stageUuid: "2b7867d3-8a73-8c0e-97cb-72499ece666a"
+      stageUuid: "bd7fb08e-428a-85f9-ae68-93c0656ba959"
     - stage: seal
       stageUuid: "ce605f88-8271-828b-ad4c-ec149a16d987"
     - stage: uuid
-      stageUuid: "581c8037-c691-84ee-8e0c-2c7f90784ecf"
+      stageUuid: "c76ed5ab-a407-816b-b644-0d57955b3b4d"
 version: 2
 ---
 # work/phases — the operation catalog (the routing vocabulary, a tree)

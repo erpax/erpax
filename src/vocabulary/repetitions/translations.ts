@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "repetitions",
-    "uuid": "c01eb390-5a81-89cb-85dc-1018f10ff5a9",
+    "uuid": "9ea82ac0-75fa-8ab2-aab4-fcdd84f3743d",
     "words": [
       "repetitions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about repetitions — Number of times one should repeat the activity.",
-    "uuid": "78447433-1db8-80ad-9a52-7202bdbd6c93",
+    "uuid": "332c6436-d96d-84f2-b2bb-856e964c5b9d",
     "words": [
       "use",
       "when",

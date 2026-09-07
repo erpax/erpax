@@ -2,11 +2,11 @@
 name: randomized
 description: "Use when reasoning about randomized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/randomized"
-coordinate: "vocabulary/randomized · 7/descent · 6d7e8e4e"
-contentUuid: "19b7eb5e-aefd-5899-a5e2-c9e11b08f58d"
-diamondUuid: "aefe23be-f58a-808d-bd82-57a2986dc41a"
-uuid: "6d7e8e4e-21b0-8dc6-a3ff-58e8eb0eddf1"
-horo: 7
+coordinate: "vocabulary/randomized · 5/round · 5796ef45"
+contentUuid: "18808a67-fe16-57db-b566-ce6aa309650b"
+diamondUuid: "d2571a43-bd1c-8506-b9df-027b825d502d"
+uuid: "5796ef45-6386-82c0-9230-a5efded6edf4"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b84e2107-0a58-8bc4-b637-01a600a8fb89"
+  computationUuid: "f5c1ef2e-7ee2-852b-a94e-43ed73776f88"
   stages:
     - stage: path
       stageUuid: "2c29a81a-b406-8eb6-b68a-36c6a840e85d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ca59938b-8201-8dd7-bfc1-84854ff10e42"
     - stage: horo
-      stageUuid: "40780bda-a1d2-8afe-903e-4ca6958b1149"
+      stageUuid: "a740d58d-a630-8b6f-b5c9-0fc3e580aa70"
     - stage: seal
       stageUuid: "6f242611-e334-80ad-86c8-492e28c20843"
     - stage: uuid
-      stageUuid: "d0fdd1d1-0078-8f43-b674-8e8b8f631f28"
+      stageUuid: "26bf2c0e-e1e6-88a6-bb8d-88c950b301dd"
 version: 2
 ---
 # randomized

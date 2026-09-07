@@ -2,11 +2,11 @@
 name: hearing
 description: "Use when reasoning about hearing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hearing"
-coordinate: "vocabulary/hearing · 7/descent · 7eacad49"
-contentUuid: "c2475a3a-6680-59d4-8194-1c5c91de33ce"
-diamondUuid: "fab2174b-3bd2-8bfa-b983-bd7be983ed76"
-uuid: "7eacad49-2be6-80ea-82ba-e0e8d8ad2d0d"
-horo: 7
+coordinate: "vocabulary/hearing · 2/share · 56cbabe8"
+contentUuid: "6a4e4f68-b7ed-5ed9-af5d-f44cc2f485e1"
+diamondUuid: "807d949b-c8ac-8fa0-83b5-bbe52946a5f3"
+uuid: "56cbabe8-a873-8f20-95b9-d61b623b33d8"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "33d46510-85c9-8baf-aad1-3d21ac4c1ef8"
+  computationUuid: "046ece8c-6483-8b99-ab84-723558c2093c"
   stages:
     - stage: path
       stageUuid: "d2a3e294-86e8-8cb0-86cc-16c118af1f24"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9a79c7f4-9e03-830f-8b67-0a2687f39460"
     - stage: horo
-      stageUuid: "ec573453-0def-8ff3-9882-049be5f2f7b2"
+      stageUuid: "0971b226-3e98-8692-bcc1-b9f95f69ec02"
     - stage: seal
       stageUuid: "6e8b2d81-6c6f-8cb4-a3a5-672111dac884"
     - stage: uuid
-      stageUuid: "c4aa86fa-3f48-8dea-a3fa-4b6e760c4226"
+      stageUuid: "dedb5088-c7e2-850a-b41b-43a02b8c9211"
 version: 2
 ---
 # hearing

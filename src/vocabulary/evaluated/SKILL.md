@@ -2,11 +2,11 @@
 name: evaluated
 description: "Use when reasoning about evaluated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/evaluated"
-coordinate: "vocabulary/evaluated · 1/base · 5b3bddf0"
-contentUuid: "6eee9316-dbdd-51c2-815f-4cac7ca49fea"
-diamondUuid: "f7b1648f-02d8-88a7-9ef7-402732875811"
-uuid: "5b3bddf0-2a27-82ba-bb77-cb82b980242c"
-horo: 1
+coordinate: "vocabulary/evaluated · 8/crest · a775d93a"
+contentUuid: "9ea13e73-91bd-5c1c-b0ae-88f67d4fd867"
+diamondUuid: "88eeb915-7c7d-8716-91cf-44258f33bf04"
+uuid: "a775d93a-2403-8190-ade7-48f9c68e6a5b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fe0269ad-0c64-838f-b05b-a33d0a598d14"
+  computationUuid: "951b9b49-01e5-85b8-b3e2-4967717e412e"
   stages:
     - stage: path
       stageUuid: "67996888-5c9c-805b-9c56-367234116741"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "59bd39d5-fbe7-8e4e-b1da-0c1e7523876a"
     - stage: horo
-      stageUuid: "b0b1a577-7538-80f3-8a32-a0ded601c1cf"
+      stageUuid: "616a49b5-71a1-84b4-83b2-48c4b55872a2"
     - stage: seal
       stageUuid: "08238e7b-734f-8fb6-a371-682635d2473f"
     - stage: uuid
-      stageUuid: "d063b0eb-1368-847d-b38c-51f38d8d26e7"
+      stageUuid: "cd1ec54d-a566-81e1-bd73-23c853ae46db"
 version: 2
 ---
 # evaluated

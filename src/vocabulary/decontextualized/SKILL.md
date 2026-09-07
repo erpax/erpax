@@ -2,11 +2,11 @@
 name: decontextualized
 description: "Use when reasoning about decontextualized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/decontextualized"
-coordinate: "vocabulary/decontextualized · 4/weave · cb281314"
-contentUuid: "8691ea22-b636-5160-b6e4-a3817cc19c58"
-diamondUuid: "8953a7b2-ade9-81fd-ab5a-6ef3185a5c47"
-uuid: "cb281314-0c5b-872d-8a7f-1471993211d9"
-horo: 4
+coordinate: "vocabulary/decontextualized · 2/share · 7a111186"
+contentUuid: "9277ea15-d6d2-5da6-bbb1-c4d1897d0939"
+diamondUuid: "4d9b0067-fb69-8fc3-9325-566ce60498ac"
+uuid: "7a111186-c058-8bbd-9d19-940c7835cf2b"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "25d6f533-2f87-8714-b8c2-4e0184af193d"
+  computationUuid: "c4200044-0306-89b6-8fb5-672bc6493f85"
   stages:
     - stage: path
       stageUuid: "51660a20-df58-8a8b-8485-eeaba462e7c8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "53737408-1c0c-8565-9a50-6baafd7d36b8"
     - stage: horo
-      stageUuid: "39bd95f8-d324-8fec-9238-f549600ff9bb"
+      stageUuid: "9f3dc68c-4136-8ce4-9347-053d6211e4f2"
     - stage: seal
       stageUuid: "6788d972-7049-8050-a4ff-4d284c20954c"
     - stage: uuid
-      stageUuid: "42880fa3-8b64-88c9-a4f9-83e368843c73"
+      stageUuid: "ce7b54b2-7440-8822-a196-cb08664b294c"
 version: 2
 ---
 # decontextualized

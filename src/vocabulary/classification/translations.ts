@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "classification",
-    "uuid": "b6992f19-1ccd-8f96-8c69-222633ed308a",
+    "uuid": "93ed47a6-d5d5-8637-a843-187566da4bdc",
     "words": [
       "classification"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one classification — the singular model of the classifications collection (the plural store); the assignment of a thing to a category within a scheme.",
-    "uuid": "38f4e95b-75d5-8853-98d7-109a52ee2221",
+    "uuid": "9b6d3b68-fb7f-8851-8b68-b47a2949929c",
     "words": [
       "use",
       "when",

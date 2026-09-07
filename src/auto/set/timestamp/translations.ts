@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "timestamp",
-    "uuid": "f74518cc-513b-8c34-878e-5f5ba3f16310",
+    "uuid": "9dcab176-9c8c-8999-a9a5-d59af7853c22",
     "words": [
       "timestamp"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when stamping a status-transition timestamp (postedAt, approvedAt, reconciledAt, authorizedAt) onto a configurable field the first time a condition fires — a beforeChange hook factory emitting canonical UTC ISO-8601.",
-    "uuid": "7451450a-0f11-8cba-bf93-b7897c81e1c4",
+    "uuid": "1cbcc23b-29bc-8905-955e-e76830f276f1",
     "words": [
       "use",
       "when",

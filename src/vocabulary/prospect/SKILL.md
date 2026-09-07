@@ -2,18 +2,18 @@
 name: prospect
 description: "Use when early-stage contact hasn't yet qualified as a lead — prospect→lead→opportunity progression in CRM. A party in discovery/research phase before qualification."
 atomPath: "vocabulary/prospect"
-coordinate: "vocabulary/prospect · 8/crest · 1b58ee9e"
-contentUuid: "a76c8121-2876-5b40-b30b-608479e9aaf9"
-diamondUuid: "c665622e-ce78-8f7c-8d7a-42f3315450a3"
-uuid: "1b58ee9e-c1a4-8edb-b405-f0e6680b9a52"
-horo: 8
+coordinate: "vocabulary/prospect · 7/descent · 8a6f63fe"
+contentUuid: "2a553342-dd06-5fe2-b465-7bb38512d70f"
+diamondUuid: "65be9db9-dc92-8ef8-bb83-2c746fa10079"
+uuid: "8a6f63fe-7c86-8fcf-86a2-11e731921499"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "987183a4-5427-8767-b65e-075ff5b5deee"
+  computationUuid: "af484f5c-ae90-8151-98c7-4dc50f82d71d"
   stages:
     - stage: path
       stageUuid: "d7c963b9-e1b5-8338-af08-837fd582ea2d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1ae38d0a-40c1-889b-b1a4-8dd19af00089"
     - stage: horo
-      stageUuid: "e5950c8e-f375-89bc-9422-ac04548994bf"
+      stageUuid: "496745ba-fa83-84fc-b040-89d9ea89a896"
     - stage: seal
       stageUuid: "503eee92-b0ac-8413-ade5-e4200e7c293c"
     - stage: uuid
-      stageUuid: "1b767a7e-eccd-8848-897e-a543b5835847"
+      stageUuid: "b948c8da-235c-8231-9493-7aa6dcb3d030"
 version: 2
 ---
 # prospect

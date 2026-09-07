@@ -2,11 +2,11 @@
 name: audience
 description: "Use when reasoning about audience as a medical facet of medical — vocabulary pivot to @/audience; nested not duplicated."
 atomPath: "medical/audience"
-coordinate: "medical/audience · 4/weave · 7ef8cad3"
-contentUuid: "db849ea6-d0d1-5b44-b448-02e13c4d73a8"
-diamondUuid: "d419cf43-8c62-870c-9d54-2caad9990e48"
-uuid: "7ef8cad3-6c8b-89b4-9456-f01e454d2b8e"
-horo: 4
+coordinate: "medical/audience · 5/round · 5e56762b"
+contentUuid: "79bdf52a-675f-5cfb-acbe-48d541148d4a"
+diamondUuid: "1b4cfb99-4ba8-821a-a86b-7727781226ea"
+uuid: "5e56762b-b7ca-87e3-920e-567be1325a55"
+horo: 5
 typography:
   partition: medical
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "99eb6b3b-705b-8220-bdde-48cc3b5851c4"
+  computationUuid: "e3447a71-9c6d-8ccf-8f87-7b2641cfd415"
   stages:
     - stage: path
       stageUuid: "ea9df2a5-a1c3-83d5-835c-0a374c1b131d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5fe3a27a-87c2-80b7-9ddf-f211a1bf2eab"
     - stage: horo
-      stageUuid: "48ed6f3c-0fde-8817-a816-72e420e4449e"
+      stageUuid: "d6a12e3f-3d64-8a14-88c4-b8ed3c21512c"
     - stage: seal
       stageUuid: "245fac7a-0e8b-8de7-be8b-c18ef6a596bd"
     - stage: uuid
-      stageUuid: "9af9c889-b6c2-81fa-841b-24bed4a93a82"
+      stageUuid: "c27c887e-850d-86b1-9f6d-8023912fe793"
 version: 2
 ---
 # medical/audience — medical facet

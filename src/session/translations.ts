@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "session",
-    "uuid": "6e4ef9aa-ee7b-8b3a-b224-4d51e7e1e8db",
+    "uuid": "b39a9daf-b6ef-8d01-803f-f638a63fd399",
     "words": [
       "session"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring a development session — self-building (new atoms/proofs added) and self-healing (existing matter repaired or removed), split by local vs remote computation. Local = every file the gates verified in-tree; remote = the seeds, one per commit. The self-sufficiency magnitude is think.ceiling(seedFraction). Read from the commit record; git injected, hermetically provable.",
-    "uuid": "eb53da72-b34f-8a9d-be57-e289bf2aef4e",
+    "uuid": "bc95f0e3-d7eb-8235-8811-fdaa05578839",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sql",
-    "uuid": "ec3026e0-9029-8b55-9bda-209490e5dbe7",
+    "uuid": "0b9739f7-b765-84d4-8d1d-fc5047de71f9",
     "words": [
       "sql"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling a SQL query as pure data — a SELECT AST with a deterministic canonical stringifier, so equivalent queries normalize identically and the quantum facet hashes them to one content-uuid.",
-    "uuid": "44fe4ffa-0328-8525-8006-27d62b23bc1f",
+    "uuid": "219d33d3-d3d8-83ea-9165-a5299cbe4895",
     "words": [
       "use",
       "when",

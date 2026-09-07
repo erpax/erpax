@@ -2,11 +2,11 @@
 name: driving
 description: "Use when reasoning about driving as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/driving"
-coordinate: "vocabulary/driving · 8/crest · b96f969f"
-contentUuid: "7df9970f-d87e-51e4-a11b-748ed2803926"
-diamondUuid: "53f9dd8e-0945-8ff4-89f5-dfab4aaf8e1b"
-uuid: "b96f969f-3c7c-85bc-b97e-ea93a0e600c7"
-horo: 8
+coordinate: "vocabulary/driving · 7/descent · 5d3f4ab5"
+contentUuid: "9c24cec7-09c5-586d-b4eb-48ea55b9483c"
+diamondUuid: "1d28c8e3-9326-80ec-a25e-fe4d20b48dc7"
+uuid: "5d3f4ab5-8bfb-8c5b-97db-cb77c410c7a1"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e7e9fcc9-bab6-890c-a8a5-788be7f4393e"
+  computationUuid: "bc95878b-67f6-8ef4-9e6b-4142703d2110"
   stages:
     - stage: path
       stageUuid: "555da600-e5b9-8b93-aa44-2af89cb21da5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d1e2a2aa-1041-896f-b916-6c8a95e2345d"
     - stage: horo
-      stageUuid: "db3604a1-52d3-8e56-bc66-0e50a69ce510"
+      stageUuid: "6f8263ae-61c2-84d8-a172-43f4f826cbd8"
     - stage: seal
       stageUuid: "13ed4d69-8123-8c66-a8c9-e384fda8c202"
     - stage: uuid
-      stageUuid: "e316bfde-435d-876a-b846-4cd7216ab74f"
+      stageUuid: "5201504c-8fb9-8aa4-be08-70f3a1e9ab38"
 version: 2
 ---
 # driving

@@ -2,10 +2,10 @@
 name: guests
 description: "Use when reasoning about guests as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/guests"
-coordinate: "vocabulary/guests · 5/round · beffa34d"
-contentUuid: "e3221245-4731-57ad-9460-20499a1f1092"
-diamondUuid: "eff1836a-b99b-8d01-9dbd-2da66cd70920"
-uuid: "beffa34d-63ac-803e-ba0d-b0b9128b939b"
+coordinate: "vocabulary/guests · 5/round · 67a232f9"
+contentUuid: "a5bdf982-7d51-56a4-ac1b-ab3f3791eafb"
+diamondUuid: "5fd6506a-d988-817c-add4-e2e8da0b0bbe"
+uuid: "67a232f9-e788-8ce3-b292-0af97f0b3abe"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "295dcc3d-bae6-890d-8295-f4e9a732f9b9"
+  computationUuid: "0cf9422f-9fad-88a6-8089-e4a2d4ce5706"
   stages:
     - stage: path
       stageUuid: "0187e304-c52f-8652-821b-12aff4467799"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5b4c13e3-b178-84db-88e5-fe3e4aa0d062"
     - stage: horo
-      stageUuid: "b176365e-a42f-8937-b976-8c5f4eea2615"
+      stageUuid: "6a8cd53f-93fc-86a1-b5e4-e3699ace0511"
     - stage: seal
       stageUuid: "3e2dec25-6854-8998-89a1-f7704081fa9c"
     - stage: uuid
-      stageUuid: "47029c1d-30dc-8962-a2b0-580314ffbcab"
+      stageUuid: "876f2f9f-f8f1-863d-8b6d-d8ea09f82597"
 version: 2
 ---
 # guests

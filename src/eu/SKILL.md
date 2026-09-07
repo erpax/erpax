@@ -2,10 +2,10 @@
 name: eu
 description: "Use when reasoning about eu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: eu
-coordinate: "eu · 5/round · 40da5293"
-contentUuid: "e0e1fa63-70c9-5f45-ae9c-6b7505edd548"
-diamondUuid: "fd3f134b-eaca-836a-84ab-34b63c4bf7a1"
-uuid: "40da5293-140a-88ce-a096-07bd61738c64"
+coordinate: "eu · 5/round · 23711483"
+contentUuid: "e71253bf-62eb-52e0-9fe2-bc486d40cf76"
+diamondUuid: "725cce3b-bafa-8e9a-900d-359937ee8c1c"
+uuid: "23711483-a429-8e37-9c94-def69da30e82"
 horo: 5
 typography:
   partition: eu
@@ -25,7 +25,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "89e0706f-9357-8c15-b65a-8f8f1417b438"
+  computationUuid: "a4be7441-696d-8bd8-8cc6-db57d7be0822"
   stages:
     - stage: path
       stageUuid: "6f95362c-8d2d-88c2-9f43-4cd282e9d92b"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "bc4c454e-1d8c-8090-a349-31e4e110b871"
     - stage: horo
-      stageUuid: "395dfb8a-3711-86ca-abbf-febc4fc8f224"
+      stageUuid: "36240005-6610-8a42-a045-68468a870bec"
     - stage: seal
       stageUuid: "80628101-a5f3-8097-9c4c-b7b37f177afa"
     - stage: uuid
-      stageUuid: "a739e2ce-0aa1-8be7-86c8-8ceccfe02234"
+      stageUuid: "67e758e1-95be-819f-8ee6-957455800934"
 version: 2
 ---
 # eu

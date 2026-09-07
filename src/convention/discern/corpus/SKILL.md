@@ -2,10 +2,10 @@
 name: corpus
 description: "Use when reasoning about corpus — Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner."
 atomPath: "convention/discern/corpus"
-coordinate: "convention/discern/corpus · 4/weave · 10a96bac"
-contentUuid: "108021e4-e79d-5deb-b9ba-49913790cce4"
-diamondUuid: "2feff0c3-08a2-8daa-b33b-4179bfaf7f0d"
-uuid: "10a96bac-1ef7-8fdf-a0fe-c728a6d72592"
+coordinate: "convention/discern/corpus · 4/weave · 99ae4795"
+contentUuid: "9b70769d-bf36-5f09-9c2b-7045f11b33d6"
+diamondUuid: "42ad2cc0-d520-8fd9-a40e-3e8fe28a28fe"
+uuid: "99ae4795-7394-8cab-abf0-c2334a044b40"
 horo: 4
 typography:
   partition: convention
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.5 — testability: a claim is measured or it is not made"
 bindings: []
 signatures:
-  computationUuid: "1cf7f754-7248-81ca-a164-5d9f18642352"
+  computationUuid: "94d0013e-8237-8404-ba2e-6d467c390c38"
   stages:
     - stage: path
       stageUuid: "10228e1a-fc74-8120-aa25-b9a0ecfd4f25"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8be8a083-5acd-856b-98c2-8968e03ff446"
     - stage: horo
-      stageUuid: "22ea1500-ddd4-8218-96a6-2606f6b16aec"
+      stageUuid: "2b275953-79b3-8d58-9e23-5d702b787cb3"
     - stage: seal
       stageUuid: "923d4526-dc40-8266-bcf1-ffbe2565cece"
     - stage: uuid
-      stageUuid: "a307bc81-af13-8c4d-89ce-c6412caae582"
+      stageUuid: "13520748-3070-8b9d-bfe2-18a087e5d28e"
 version: 2
 ---
 # convention/discern/corpus — every security claim, as one number

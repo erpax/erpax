@@ -2,11 +2,11 @@
 name: may
 description: "Use when reasoning about may as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/may"
-coordinate: "vocabulary/may · 2/share · a0755ad2"
-contentUuid: "fafd9c0a-906b-517a-8733-2732d3e9bf03"
-diamondUuid: "69cea131-daae-83fa-af03-448fa52aeaf7"
-uuid: "a0755ad2-0148-8dbe-b41a-a626ba5e563e"
-horo: 2
+coordinate: "vocabulary/may · 4/weave · 5633abc0"
+contentUuid: "a1ee79e9-bd17-59d8-a1d3-3276c025ff34"
+diamondUuid: "a92a2ce2-dd41-8cde-9e10-19ae16503b3e"
+uuid: "5633abc0-5313-82b8-b8f4-923844ae112d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "53d1168c-4107-8b53-82ab-7ea20be45ba2"
+  computationUuid: "b4bbd527-d49c-88ef-ad26-6c3876df3d85"
   stages:
     - stage: path
       stageUuid: "fe887c7f-1b7d-8f53-b382-090b0c99f2b6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "76353041-e1a2-8a0c-970d-8882c97ade0b"
     - stage: horo
-      stageUuid: "6af5901b-5cec-8c89-b28d-2078eadeefce"
+      stageUuid: "68e84224-39f4-8f32-b114-b9b81457a151"
     - stage: seal
       stageUuid: "9a6fd294-d3fa-882f-9d5a-2d6b9160d79c"
     - stage: uuid
-      stageUuid: "c13a4b30-b92b-869c-9034-0797a0140660"
+      stageUuid: "286d490c-1c26-81d6-a4e1-58fb48c5b34c"
 version: 2
 ---
 # may

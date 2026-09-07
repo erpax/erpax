@@ -2,11 +2,11 @@
 name: menu
 description: Use when reasoning about menu — A structured representation of food or drink items available from a FoodEstablishment.
 atomPath: "vocabulary/menu"
-coordinate: "vocabulary/menu · 7/descent · 03a45aef"
-contentUuid: "044859b6-0c57-5d91-9e4a-c1ca76f7a711"
-diamondUuid: "d35d0ea3-a830-8569-9aa9-1e9ebca4ec58"
-uuid: "03a45aef-a229-824c-96d9-938de4c8c389"
-horo: 7
+coordinate: "vocabulary/menu · 1/base · 65695d96"
+contentUuid: "44d7834b-6197-51b7-9779-c27c068d5501"
+diamondUuid: "998258cd-8f0c-8fdc-9414-d600998f4fe7"
+uuid: "65695d96-a26a-8a31-a5cd-effdc2721115"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f5ba6f8c-c16e-868f-bb72-a007b61ac657"
+  computationUuid: "78e3c171-7f4d-8b1f-bb9b-78e199b5b44a"
   stages:
     - stage: path
       stageUuid: "4231b3b5-2878-814d-8f17-014dcae0145c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c97796e6-95cf-8a70-88e3-c338605a49f7"
     - stage: horo
-      stageUuid: "6635cf69-14d7-815b-a559-fbe27aa0e1e5"
+      stageUuid: "052e8a52-c2f8-87ea-aeeb-be14a36034d3"
     - stage: seal
       stageUuid: "fae54025-b09c-8c6c-9525-b17923aa05b7"
     - stage: uuid
-      stageUuid: "a6a7e3f5-6f2b-891b-a308-4917393f610b"
+      stageUuid: "b53d666f-1adf-8ea7-a56b-e97c01ff4bce"
 version: 2
 ---
 # menu

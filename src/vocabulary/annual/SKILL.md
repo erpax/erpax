@@ -2,11 +2,11 @@
 name: annual
 description: "Use when reasoning about annual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/annual"
-coordinate: "vocabulary/annual · 7/descent · d4178962"
-contentUuid: "6245b546-3b01-5065-89c1-4cec522bde02"
-diamondUuid: "3e1ce961-cc9b-898c-8d5f-58beb1f9d763"
-uuid: "d4178962-f8f2-83f8-932c-6d2e93c51cf5"
-horo: 7
+coordinate: "vocabulary/annual · 1/base · d1530556"
+contentUuid: "2817a4e4-e1e2-5e63-9832-c9c2ce4f9a98"
+diamondUuid: "e0dd8f94-7be1-812e-a9bf-302889196fe9"
+uuid: "d1530556-df95-8a5a-8dd0-51fe9372d73b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5a80b146-c953-84ff-8f7f-bec329614d9b"
+  computationUuid: "95ba505d-6b1b-85e1-9487-4315b12a6c22"
   stages:
     - stage: path
       stageUuid: "2c309cef-5461-8bee-841a-2ac53ec6ffe8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9b344838-05da-84ac-bb74-3039ec46ad87"
     - stage: horo
-      stageUuid: "be2c95d5-a686-8369-b8e6-5b9a7a311d57"
+      stageUuid: "eae86d54-3e0a-8dd1-ad32-55c97d177316"
     - stage: seal
       stageUuid: "58a4f8f9-a87a-8001-91e5-fc131538a76f"
     - stage: uuid
-      stageUuid: "a48d99d6-28ea-8155-951b-7940a5c5b56d"
+      stageUuid: "03a31a40-76c2-8816-8fe0-e91ec0c3cb9e"
 version: 2
 ---
 # annual

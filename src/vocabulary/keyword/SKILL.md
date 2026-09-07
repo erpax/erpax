@@ -2,18 +2,18 @@
 name: keyword
 description: Use when modelling one keyword — the singular model of the keywords collection (the plural store); a salient term used to index or retrieve content.
 atomPath: "vocabulary/keyword"
-coordinate: "vocabulary/keyword · 5/round · 0b1f234c"
-contentUuid: "1c2481d9-c283-5312-bcbe-38d93dc1442e"
-diamondUuid: "e317d727-4910-88e5-b973-c331eb73b90c"
-uuid: "0b1f234c-c7f7-82cd-a70b-2f723a24752d"
-horo: 5
+coordinate: "vocabulary/keyword · 1/base · 036615b5"
+contentUuid: "02bb71b8-ee5c-5a6b-b0c8-3b2c338b10bb"
+diamondUuid: "9459a830-4c70-888f-bcf7-1a108b8699af"
+uuid: "036615b5-1531-8ee0-9e9c-24780b19b7a4"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c7329fd9-99de-8b2f-a71f-67641611892b"
+  computationUuid: "0762381b-3cab-8d1f-be3e-4afcf3ce4ef8"
   stages:
     - stage: path
       stageUuid: "cc4ba76e-ac4a-86c6-bf89-f92d013a0f73"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0b1e23fb-e8a9-84b3-bba8-c90f67f53c44"
     - stage: horo
-      stageUuid: "9cd847c0-7107-8c33-bf8a-5ce9de77617b"
+      stageUuid: "e8f2fbb7-7761-8099-ad35-4911b2107152"
     - stage: seal
       stageUuid: "80823c8a-6950-8bd7-aa26-8650349634ac"
     - stage: uuid
-      stageUuid: "301c02d1-632a-811f-8029-38d7b54a3523"
+      stageUuid: "553229bb-ea1e-8a0e-a7ff-fd1d5b7fc6dc"
 version: 2
 ---
 # keyword — the model of one [[keywords]] row

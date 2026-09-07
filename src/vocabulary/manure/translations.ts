@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "manure",
-    "uuid": "1662a4db-5abc-8e51-bb63-f79dc8d16d61",
+    "uuid": "509aa5e8-c28a-8f4c-bdeb-1eaa1075695a",
     "words": [
       "manure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the animal byproduct cycles back to the soil — manure (excreta) as the nutrient output that closes the livestock→soil fertility loop, applied or deposited by grazing; the nutrient-management plan balances it to the land. The waste-to-fertility recycling node, the livestock twin of compost.",
-    "uuid": "7f7243a2-b8f0-8743-ab4b-eac8eeeac9b4",
+    "uuid": "36abb8c5-00d6-81fc-8925-678a8d704cfe",
     "words": [
       "use",
       "when",

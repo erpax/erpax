@@ -2,11 +2,11 @@
 name: measurement
 description: "Use when reasoning about measurement as a anatomical part of body — vocabulary pivot to @/measurement; nested not duplicated."
 atomPath: "body/measurement"
-coordinate: "body/measurement · 7/descent · 723b75da"
-contentUuid: "db955207-b3f0-57ec-a0b2-4a343f857e88"
-diamondUuid: "0c9091ff-4311-886b-bf2f-c2f5b9ddc546"
-uuid: "723b75da-938f-808e-9ab1-94f2d41f1e00"
-horo: 7
+coordinate: "body/measurement · 2/share · 7514571c"
+contentUuid: "776f7004-6334-5a39-bf7c-a884135bbfb1"
+diamondUuid: "e62505e8-0ad7-8b8f-a35c-f8708f0477ee"
+uuid: "7514571c-5364-80ec-9923-c4eddca52711"
+horo: 2
 typography:
   partition: body
   bondDegree: 61
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9293dd06-3921-80f9-94ce-414acf2d33bf"
+  computationUuid: "88c2d46c-31b0-8cf0-b91a-9d61a9fd9929"
   stages:
     - stage: path
       stageUuid: "84b9e588-b87f-89f3-9872-523b4baf0302"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cb1f5d18-a69a-8551-b26b-036026b1fec8"
     - stage: horo
-      stageUuid: "b3694fcd-035e-897f-b681-73f94bc81200"
+      stageUuid: "abfbb3f1-3c83-8bb0-9089-5d0d2f1d4f9d"
     - stage: seal
       stageUuid: "e55a8c07-0036-8420-a1b4-2e76bc7b47bd"
     - stage: uuid
-      stageUuid: "0bced8b3-378a-8014-8777-386c368c4b75"
+      stageUuid: "b0981365-a9c9-80df-b362-1bf3d7a8e1bc"
 version: 2
 ---
 # body/measurement — anatomical part

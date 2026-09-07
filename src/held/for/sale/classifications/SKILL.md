@@ -2,11 +2,11 @@
 name: classifications
 description: "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection."
 atomPath: "held/for/sale/classifications"
-coordinate: "held/for/sale/classifications · 4/weave · c3a1afa1"
-contentUuid: "599c2349-093f-56a2-bd93-14fd51367af9"
-diamondUuid: "d71d046a-2519-8d09-b85e-171e816a480c"
-uuid: "c3a1afa1-d0f5-8265-ab29-c480e0c83ebe"
-horo: 4
+coordinate: "held/for/sale/classifications · 8/crest · e70fac17"
+contentUuid: "f244b5c7-4ec1-51c5-9281-061c4793ac52"
+diamondUuid: "d557f31f-56fd-87fc-aba1-c3ed3d4cf42a"
+uuid: "e70fac17-d121-8596-8d6b-1d6c6b72ba81"
+horo: 8
 typography:
   partition: held
   bondDegree: 18
@@ -34,7 +34,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "bb19e40a-9dac-8248-896c-e963bfcd3f25"
+  computationUuid: "b4df5815-90be-8908-89ce-83df21ead88f"
   stages:
     - stage: path
       stageUuid: "1b0570b4-f274-852d-9e14-b7abf8d5f56f"
@@ -45,11 +45,11 @@ signatures:
     - stage: links
       stageUuid: "7868b550-2219-821d-afaa-858a883439f9"
     - stage: horo
-      stageUuid: "5849fefd-678f-8cf0-9321-e87c81f599c6"
+      stageUuid: "129b838a-5475-87d8-b728-39c90a55100c"
     - stage: seal
       stageUuid: "45323345-85b7-8528-84de-71bb6249f3d5"
     - stage: uuid
-      stageUuid: "688e5098-b883-8100-a36a-f7866e78c0ed"
+      stageUuid: "1f3b2bec-b1d9-8de3-9e06-c0cd602a6bee"
 version: 2
 ---
 # held-for-sale-classifications

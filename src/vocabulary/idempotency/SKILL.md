@@ -2,18 +2,18 @@
 name: idempotency
 description: "Use when operations must be safely replayed — idempotent keys, deduplication within a replay window, exactly-once semantics, retry-safe operations, side-effect tracking, idempotency contracts in APIs."
 atomPath: "vocabulary/idempotency"
-coordinate: "vocabulary/idempotency · 2/share · c52cb214"
-contentUuid: "61e91fd9-27f3-52d7-a2ec-3a7fde2fdbba"
-diamondUuid: "46ff7269-00a0-850a-bb72-efa682514fc0"
-uuid: "c52cb214-122d-8d70-addf-e60e12e772f1"
-horo: 2
+coordinate: "vocabulary/idempotency · 5/round · 93554eb3"
+contentUuid: "5049b90b-f7ef-5de4-a608-e5bea2d63ee9"
+diamondUuid: "230486ca-7e80-8004-836a-1379fe046f9d"
+uuid: "93554eb3-1e0c-86d9-b70d-5c7af259e4bc"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e11e2816-8ee4-8aee-ae14-b28076fe7bf0"
+  computationUuid: "e3cd2735-c8e3-878d-b872-e5d82966ced9"
   stages:
     - stage: path
       stageUuid: "dff8cc28-9ebf-83eb-92e7-c85fa5e8dc4a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "19f3aa75-4b04-8e39-b9fb-18a1589e8251"
     - stage: horo
-      stageUuid: "de4f54a8-4678-810c-83d8-d448f34d33bf"
+      stageUuid: "a544424f-c98f-8215-8b67-ba947a659405"
     - stage: seal
       stageUuid: "71eecbb6-6320-838c-a764-facafbc00f18"
     - stage: uuid
-      stageUuid: "2663111f-19de-8627-8caf-6cb2a8119bc4"
+      stageUuid: "c54d4fb6-6463-802a-859d-d409287c41a6"
 version: 2
 ---
 # idempotency

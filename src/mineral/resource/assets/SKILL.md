@@ -2,10 +2,10 @@
 name: assets
 description: "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register."
 atomPath: "mineral/resource/assets"
-coordinate: "mineral/resource/assets · 2/share · 2900b5f9"
-contentUuid: "4639a227-64c9-55ee-bde6-16435fbe57e6"
-diamondUuid: "b9b15c31-c4d2-87d3-a1a3-2dc1dac3ab88"
-uuid: "2900b5f9-7741-82d2-9dec-015f1092c980"
+coordinate: "mineral/resource/assets · 2/share · e92894b4"
+contentUuid: "e4abfb5f-e30a-58ce-a640-050953906d2f"
+diamondUuid: "6c62f337-2c5e-8f03-9ed7-19da606282be"
+uuid: "e92894b4-7ab9-85be-a672-ec23fec636d7"
 horo: 2
 typography:
   partition: mineral
@@ -30,7 +30,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "59eab476-eb5f-83b5-affd-20c9e050a455"
+  computationUuid: "335ac99a-67ec-8c8f-8664-5fd6a43f528d"
   stages:
     - stage: path
       stageUuid: "fd5c6279-1e92-8804-8300-95d37940c381"
@@ -41,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "2776d346-1323-832a-8b30-b18128470380"
     - stage: horo
-      stageUuid: "ed73d704-1657-8e79-9cea-51bb30bdf7b0"
+      stageUuid: "e29c419a-b150-8508-9b7e-e253d0f20e1f"
     - stage: seal
       stageUuid: "6a0cfa3f-f8bf-8463-a8ec-932b13f644cd"
     - stage: uuid
-      stageUuid: "cd017c34-bc6f-8df9-9f1a-888518997bc1"
+      stageUuid: "23c8c2ac-eede-8af9-9b21-85fba63e4f66"
 version: 2
 ---
 # mineral-resource-assets

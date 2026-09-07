@@ -2,11 +2,11 @@
 name: cassette
 description: "Use when reasoning about cassette as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: cassette
-coordinate: "cassette · 5/round · e260c34c"
-contentUuid: "986d1d82-c5d8-5166-a497-ddab7ad11100"
-diamondUuid: "c14a1a05-1606-889b-85de-d07d15b71068"
-uuid: "e260c34c-e066-8fc4-836a-f3f9f54d4e06"
-horo: 5
+coordinate: "cassette · 1/base · 01e28c7c"
+contentUuid: "a6b3b485-65a4-5fc7-b910-0038a99f52ee"
+diamondUuid: "199958ca-7b5e-8406-bf21-8f567bb3fd42"
+uuid: "01e28c7c-e42f-8663-aeb0-818abaeadcd8"
+horo: 1
 typography:
   partition: cassette
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b1a003f8-3e54-8982-b845-7d67eb843418"
+  computationUuid: "5018f016-b5c8-8294-aa06-11aac14cc2ee"
   stages:
     - stage: path
       stageUuid: "4edc8f1e-2ee3-875f-a208-73fd8cf1a584"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a94c33d2-d4ac-8fba-90ae-17861f879aa3"
     - stage: horo
-      stageUuid: "c113703b-cedf-8721-be53-e64e64bb4243"
+      stageUuid: "c59e9960-20a7-8290-93f7-195c0f8dce67"
     - stage: seal
       stageUuid: "bfdaea95-73f5-81ab-9124-2bad4f3281b5"
     - stage: uuid
-      stageUuid: "d50459ce-e5be-896a-9fb2-c31379ab1408"
+      stageUuid: "93e4ca19-dcff-83af-b8f5-e6aa3f5c1c7f"
 version: 2
 ---
 # cassette

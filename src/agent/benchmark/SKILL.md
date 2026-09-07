@@ -2,18 +2,18 @@
 name: benchmark
 description: "Use when measuring an AI model on real work rather than on problems whose answers are already known — the published standard behind agent/receipt. Three axes with their boundaries travelling beside them: precision (claims that held / claims made), efficiency (delivered / delivered+rework), and security as an INCIDENT COUNT that is never softened into a ratio. A row exists only for a model actually run on this corpus; nothing is inferred from a model card, a parameter count or a reputation, and a dirty security record never outranks a clean one."
 atomPath: "agent/benchmark"
-coordinate: "agent/benchmark · 8/crest · f83fbb4c"
-contentUuid: "13a92958-f2bf-5335-87c5-57dbaf8e6133"
-diamondUuid: "e7d6eb06-4d0f-8410-b023-6794b85f96f3"
-uuid: "f83fbb4c-5035-8072-901f-6b21877ee4d4"
-horo: 8
+coordinate: "agent/benchmark · 5/round · da9275ee"
+contentUuid: "eae56ff0-7463-5003-b512-d4bd42491555"
+diamondUuid: "bfe8dfea-87eb-8591-8de3-37a9013ffeca"
+uuid: "da9275ee-970e-8b91-afa8-06536ce53ba3"
+horo: 5
 typography:
   partition: agent
   bondDegree: 16
 standards: []
 bindings: []
 signatures:
-  computationUuid: "98e3ccdf-a18a-84ba-8ec7-d7fed1de7511"
+  computationUuid: "07481ae4-1976-825d-adee-1e4d46ffb87a"
   stages:
     - stage: path
       stageUuid: "0ae7be2e-8581-8a49-9113-442907e294b7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e88bf1e0-4582-8eca-aced-dcdaefba63e2"
     - stage: horo
-      stageUuid: "fc336aff-8f6f-8095-bd1a-b4902f093d33"
+      stageUuid: "91327d1d-66c7-8bb5-9548-92a8a27d4e7c"
     - stage: seal
       stageUuid: "c024380f-4277-870c-b2d8-2ac2f3eacd8b"
     - stage: uuid
-      stageUuid: "e2cd46cc-1fc2-826a-afac-67478e617a7a"
+      stageUuid: "fe2b6a6c-e96c-82a0-8eb8-5c6550b40d4d"
 version: 2
 ---
 # agent/benchmark — a model is measured on the work it did, by a record anyone can recompute

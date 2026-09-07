@@ -2,18 +2,18 @@
 name: intangible
 description: "Use when reasoning about intangible — Use for identifiable intangible assets — patents, licenses, trademarks, software, customer relationships — subject to amortization and impairment per IAS-38; distinct from goodwill"
 atomPath: "vocabulary/intangible"
-coordinate: "vocabulary/intangible · 4/weave · 8c599ab8"
-contentUuid: "6e32c784-a059-5abf-9b96-82443707e981"
-diamondUuid: "bc878936-da7a-83d1-bdb0-3231d83404c3"
-uuid: "8c599ab8-8a10-8c78-a60a-3105dd1d6623"
-horo: 4
+coordinate: "vocabulary/intangible · 7/descent · 090bc3ba"
+contentUuid: "2cba9352-5cbe-5700-9e09-088499f3db34"
+diamondUuid: "7078fe02-9308-8abc-b2fa-e9b28c0f016a"
+uuid: "090bc3ba-583e-8466-99b0-fa71106af679"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 23
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5bac1d96-dbaa-8086-83b8-788bc0a4394e"
+  computationUuid: "5e2c1c98-17e3-861c-becd-ae23203c7c54"
   stages:
     - stage: path
       stageUuid: "9ec4bbc3-5e38-856b-9331-3a3f619f04b3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f2a4d063-d4b5-89ab-89ba-e2e8a211046b"
     - stage: horo
-      stageUuid: "af3a8b24-fff8-8b24-82f2-f201f0d6d8e7"
+      stageUuid: "118ef0bb-19a3-89f1-961b-7b2a46c74f66"
     - stage: seal
       stageUuid: "69e6da3d-a49d-8e61-bbe7-d65cf90515a2"
     - stage: uuid
-      stageUuid: "fa8ee397-6e1c-8012-b5c0-cc0628813a59"
+      stageUuid: "a509e04b-5ec7-85ae-8a65-a59fee48fa24"
 version: 2
 ---
 # intangible

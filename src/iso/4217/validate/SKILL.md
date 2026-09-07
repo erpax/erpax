@@ -2,10 +2,10 @@
 name: validate
 description: "Use when reasoning about validate — ISO 4217 currency-code validator."
 atomPath: "iso/4217/validate"
-coordinate: "iso/4217/validate · 5/round · c4707834"
-contentUuid: "f87c7ace-f01c-51f0-b21f-557d42792565"
-diamondUuid: "b6a7489e-0c6a-8155-8734-8251320fe994"
-uuid: "c4707834-a139-8017-8c7f-9ed189a9395b"
+coordinate: "iso/4217/validate · 5/round · fa31b6c2"
+contentUuid: "c86f108c-c878-5092-9019-b8a2f46ac064"
+diamondUuid: "1dc2d2f0-43d6-8b30-a104-db6638101418"
+uuid: "fa31b6c2-380e-83e7-abb5-fe84e01ea4fa"
 horo: 5
 typography:
   partition: iso
@@ -15,7 +15,7 @@ standards:
   - "ISO-4217:2015 §5 alphabetic-codes"
 bindings: []
 signatures:
-  computationUuid: "6643ff9c-e486-81f6-80c3-196f22c52942"
+  computationUuid: "f2aae8d5-3eff-8f26-b108-72fe56c78fa2"
   stages:
     - stage: path
       stageUuid: "5f5a09b4-4f1c-85aa-a426-e995c4f84866"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "bd778cca-0023-8309-b68c-6603d742338c"
     - stage: horo
-      stageUuid: "f3ef13dd-8451-8094-ac18-9dd6ef6c37c3"
+      stageUuid: "08986404-39af-8d2e-9bf3-fe0becc4cc6a"
     - stage: seal
       stageUuid: "939a0982-276b-887e-ac80-aff0edea157f"
     - stage: uuid
-      stageUuid: "f75eefab-6bad-80d1-acc8-c3e723957825"
+      stageUuid: "16fbae22-1b87-8d59-866b-1e3839d98a48"
 version: 2
 ---
 # iso/4217/validate

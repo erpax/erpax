@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "estimate",
-    "uuid": "ef48db47-3fab-87e7-85c3-4efa0f92f7aa",
+    "uuid": "07fe714d-9130-84f4-b5b1-d161a15ecf37",
     "words": [
       "estimate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one estimate — the singular model of the estimates collection (the plural store); a projected figure issued before the actual is known.",
-    "uuid": "6dc5cede-e1fb-821a-824f-ea2572710d8a",
+    "uuid": "2f65b968-1fa6-89ed-b605-88f0e119ce8b",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: request
 description: "Use when an agent calls an external system — quantum-compress the request to its most compact and cheapest form; content-address it so the uuid is the idempotency key, dedup against the cache, batch, and send the hash not the payload when the other side has seen it; squeeze the request to a point and the external cost drops toward zero."
 atomPath: "quantum/request"
-coordinate: "quantum/request · 4/weave · bda338ea"
-contentUuid: "6a4e5ee7-5fca-59bc-9d06-b200b55d4b85"
-diamondUuid: "d1549be7-b6c4-81ab-8f9a-38b4c1cf8277"
-uuid: "bda338ea-17ab-8359-850d-b34e00a0340b"
-horo: 4
+coordinate: "quantum/request · 5/round · 7d57f68b"
+contentUuid: "a63ba5ef-9c44-546a-a16c-a51048bac6a6"
+diamondUuid: "ebd49173-d46c-8bd9-8ccd-cff2dc87c36c"
+uuid: "7d57f68b-2fd0-8edd-a44e-99ba44f4e0af"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a0a928b9-db32-82e3-bd2e-3abfbadb9c86"
+  computationUuid: "a612f307-c4c8-8517-9d7c-d0aeeb2939f4"
   stages:
     - stage: path
       stageUuid: "a27573a0-750b-84e2-bfcd-6c16b5c1d0e2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dfcaf07b-8859-8a08-8e67-ff7d9923ffd6"
     - stage: horo
-      stageUuid: "8ccb63eb-590f-847f-a44e-eb78652b667a"
+      stageUuid: "77055679-e409-8924-8f2f-eedda82897a9"
     - stage: seal
       stageUuid: "eaa89010-4909-807c-a0d1-cddfcaaa7389"
     - stage: uuid
-      stageUuid: "1d8da033-2439-8e3c-b7ae-974e2e4042b4"
+      stageUuid: "fbc5c076-daa8-8038-bd21-f45253e931aa"
 quantum:
   superposition:
     - quantum
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "a0a928b9-db32-82e3-bd2e-3abfbadb9c86"
-    contentUuid: "6a4e5ee7-5fca-59bc-9d06-b200b55d4b85"
+    computationUuid: "a612f307-c4c8-8517-9d7c-d0aeeb2939f4"
+    contentUuid: "a63ba5ef-9c44-546a-a16c-a51048bac6a6"
 version: 2
 ---
 # quantum/request — the cheapest external call
@@ -74,4 +74,4 @@ Every external call still passes the trust gate — [[access]] permits it, the [
 
 **Law — [[law]]: a request and its replay carry the same content-uuid, so that uuid is the idempotency key — identical calls collapse to one and the external side is never billed twice for the same question. The cost paid out is bounded below by only what is irreducible after dedup; compress the request toward a point and the bytes (and the bill) fall toward zero, but the trust gate still admits it.**
 
-<sub>content-uuid `6a4e5ee7-5fca-59bc-9d06-b200b55d4b85` · account `quantum/request` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `a63ba5ef-9c44-546a-a16c-a51048bac6a6` · account `quantum/request` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

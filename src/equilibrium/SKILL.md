@@ -2,18 +2,18 @@
 name: equilibrium
 description: "Use when reasoning about equilibrium as detailed balance — every forward transition exactly matched by its reverse (rate(i→j)·pᵢ = rate(j→i)·pⱼ), no net flow, entropy maximal and stationary. It is the thermodynamic twin of erpax's symmetric-merge binding: the collider reciprocates every forward link a→b with b→a, so the matrix sits at detailed balance (reciprocity = 1, directed-link entropy = 0). The balance the engine relaxes toward, where the temperature Boltzmann distribution makes every rate-pair cancel."
 atomPath: equilibrium
-coordinate: "equilibrium · 1/base · 0c8631e4"
-contentUuid: "588fe888-69d6-557b-a9fe-0d1efce89f6b"
-diamondUuid: "5e67b61d-ee2d-8057-989a-71c7b76e2cd8"
-uuid: "0c8631e4-96b2-8f70-8bb1-209352eb89fd"
-horo: 1
+coordinate: "equilibrium · 4/weave · 35ef5971"
+contentUuid: "a583f5ed-ed0f-536d-90d4-2efea2ea3d12"
+diamondUuid: "819c3de5-439d-87bd-ba61-82c22b67370d"
+uuid: "35ef5971-8adc-8ca5-9606-81fae316b5f4"
+horo: 4
 typography:
   partition: equilibrium
   bondDegree: 23
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1180f68f-c2ef-8e23-aa7a-e8e6c4965eab"
+  computationUuid: "de9aa895-b1dc-8d44-b295-06d3d2748210"
   stages:
     - stage: path
       stageUuid: "250729d5-051e-82fb-bcc6-2ba800d9c676"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a15ff6cf-f37a-825f-8c55-57e9b5ace912"
     - stage: horo
-      stageUuid: "c0150503-6f73-8fab-af8a-2713f5d67640"
+      stageUuid: "2dd285fa-952f-8c9c-bf1c-ddfb8ed06092"
     - stage: seal
       stageUuid: "79f8b31a-2d7b-8dff-a11a-d0768203d684"
     - stage: uuid
-      stageUuid: "2a9f3d70-2e04-8cde-8e25-b299a5966d5b"
+      stageUuid: "228f8a92-e0e5-8b3d-b36b-9668d9575f5e"
 version: 2
 ---
 # equilibrium — detailed balance = reciprocity

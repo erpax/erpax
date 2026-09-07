@@ -2,10 +2,10 @@
 name: lead
 description: "Use when reasoning about lead as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lead"
-coordinate: "vocabulary/lead · 1/base · 4e5e12af"
-contentUuid: "da0aff48-cde4-5e6d-9511-bda6009edcda"
-diamondUuid: "3e909dbe-c171-87de-a778-d33e63142d7c"
-uuid: "4e5e12af-d3f5-87d7-a0a9-4a2df0cb85c1"
+coordinate: "vocabulary/lead · 1/base · a071b27f"
+contentUuid: "2af91633-2a50-5a83-afc3-20c5e10002ed"
+diamondUuid: "e5004dea-cea3-868b-89be-c03970713648"
+uuid: "a071b27f-6eef-8c59-b894-c9ed29d21daa"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "60bd5a33-3e96-8a6f-9576-6ec5a643dd71"
+  computationUuid: "3a1fe5eb-aa3c-8d0c-ba21-13cafafacead"
   stages:
     - stage: path
       stageUuid: "72e38e25-5078-830e-92ed-41643ab6c7e3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "259de7a6-bda3-8156-bad2-b51e3f14b606"
     - stage: horo
-      stageUuid: "536e7a3e-6dc3-84af-9a89-e7ac4ef586ae"
+      stageUuid: "0b1dddfe-48bc-8526-af52-34168463638c"
     - stage: seal
       stageUuid: "98b99aab-f2a2-84b9-a104-aad4712cb40b"
     - stage: uuid
-      stageUuid: "e61fbc52-c466-8511-9fe3-832e7b0623b9"
+      stageUuid: "7e614f34-b196-8ccc-937e-1b49744b1344"
 version: 2
 ---
 # lead

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "awareness",
-    "uuid": "9abbff7a-d447-8f64-8346-72e21c859857",
+    "uuid": "e0289809-d48e-827b-9205-8355031e80e5",
     "words": [
       "awareness"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the discovery gate of a market — whether people know the thing exists and that it answers a want they hold. The atom marketing produces and trendsetters amplify; distinct from desire (the want) and distribution (the obtaining). If awareness is the zero atom, trendsetters as taste-amplifiers are the right lever.",
-    "uuid": "b839ce24-fb60-80c9-b421-4c4f9d2267fd",
+    "uuid": "99f7dac0-3cdd-80fe-b6df-90bee3a3dda6",
     "words": [
       "use",
       "when",

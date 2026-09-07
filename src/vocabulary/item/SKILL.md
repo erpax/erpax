@@ -2,11 +2,11 @@
 name: item
 description: "Use when reasoning about item — An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')."
 atomPath: "vocabulary/item"
-coordinate: "vocabulary/item · 2/share · b6c6363d"
-contentUuid: "a3420166-5a87-5df4-804e-eadfb07e5a2c"
-diamondUuid: "4db3f998-19c1-80b6-88a4-2d795124cbf2"
-uuid: "b6c6363d-50a8-8ed8-8303-abb372f25b9f"
-horo: 2
+coordinate: "vocabulary/item · 4/weave · 900f848c"
+contentUuid: "543ad9d5-fec1-5e1e-9dfa-43a3226d00ef"
+diamondUuid: "d6670af0-1a03-8568-a435-9ec726dc7334"
+uuid: "900f848c-866c-87db-abdd-9bc0742f5cc3"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 147
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4c1c606e-e012-8cd9-b1d8-4118bd1a555f"
+  computationUuid: "2e2fa1aa-ee73-8fcd-8cf8-cc0b7591535b"
   stages:
     - stage: path
       stageUuid: "2bc9a103-6809-825b-a1f9-2f4bea0400ba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "58ef83bc-3975-8b7a-a9e2-84dba58d9124"
     - stage: horo
-      stageUuid: "c97c6835-5f45-8978-ab4c-23e9c83bc989"
+      stageUuid: "f5428b40-3c12-851b-b5ea-32521b8e5c5c"
     - stage: seal
       stageUuid: "1397aaa4-2e5d-8d52-abbf-96ababec3734"
     - stage: uuid
-      stageUuid: "830f37dd-b42d-8b77-9b63-b48abecb09aa"
+      stageUuid: "fd2796fb-f969-87dd-a557-5b7d1fe97bf9"
 version: 2
 ---
 # item

@@ -2,11 +2,11 @@
 name: supplier
 description: "Use when reasoning about supplier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: supplier
-coordinate: "supplier · 8/crest · f1da9c33"
-contentUuid: "89699e93-fba1-56d3-bc10-87d9e0ecbff2"
-diamondUuid: "5858dd09-e889-885c-9495-685edba6d02d"
-uuid: "f1da9c33-443d-8fe0-b277-034325e1ad37"
-horo: 8
+coordinate: "supplier · 2/share · 191669c5"
+contentUuid: "3f42569a-3834-5fa3-908c-82d48751722f"
+diamondUuid: "7e370b02-baa7-8b07-bc27-59b3ee658b5c"
+uuid: "191669c5-2b5f-88af-9054-a0b2d10bc754"
+horo: 2
 typography:
   partition: supplier
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3d0a7b32-e768-85ba-a2ce-c63705a28200"
+  computationUuid: "35432bdf-6250-89ee-8d2f-94341e0fae27"
   stages:
     - stage: path
       stageUuid: "276a5feb-d531-87a7-85a7-62ebdbc94857"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e802494e-7225-84cc-a3cd-b81d7548724f"
     - stage: horo
-      stageUuid: "074a1063-b842-82c4-992c-c278179b0b35"
+      stageUuid: "737a1488-3aba-8a2a-8212-2f67ecac5fe9"
     - stage: seal
       stageUuid: "9f706f92-8e5e-8f3b-90cc-5b64d0fd3a2a"
     - stage: uuid
-      stageUuid: "84734786-1375-8284-84ad-2e394b8155ed"
+      stageUuid: "be684a9a-b560-83e8-afa6-6ecae18829e0"
 version: 2
 ---
 # supplier

@@ -2,10 +2,10 @@
 name: cache
 description: "Use when caching by content — the content is its own key (its content-uuid), so the same content is always a hit and a changed input is auto-invalidated; dedup by design with no stale-cache bug."
 atomPath: "quantum/cache"
-coordinate: "quantum/cache · 7/descent · f24fe1c0"
-contentUuid: "ed6837d4-96c8-5e55-a1f7-2fb668bad2dc"
-diamondUuid: "344de3c7-94a9-8860-b106-d1c8dea4a261"
-uuid: "f24fe1c0-3ca5-850d-a90d-8d3c500a5937"
+coordinate: "quantum/cache · 7/descent · 26ffcc7b"
+contentUuid: "cbec81bf-5141-5dc6-8f30-add989ebc482"
+diamondUuid: "9caf68ee-b7af-8a5d-8b39-bb1bd6b4f215"
+uuid: "26ffcc7b-bb77-814d-b07b-15bbf792775b"
 horo: 7
 typography:
   partition: quantum
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid (the cache key)"
 bindings: []
 signatures:
-  computationUuid: "84dc7473-8598-8369-ac77-d673b9e64413"
+  computationUuid: "440974b0-ce9e-8d71-90cf-333dc0aad79b"
   stages:
     - stage: path
       stageUuid: "50d48c49-a49d-8bc0-86b4-617a429e2d87"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93df9750-1f4c-8c07-81a5-1d8450858663"
     - stage: horo
-      stageUuid: "eb3077ae-bba9-8360-acc2-69488f22160e"
+      stageUuid: "9dd54bf4-d8e1-868b-aeba-31c97cd41bc6"
     - stage: seal
       stageUuid: "abccbfd8-710b-8146-8454-7275d7eb382c"
     - stage: uuid
-      stageUuid: "16ad5d16-057a-8d15-a136-895518737e34"
+      stageUuid: "7e8151e6-749d-88a2-91bc-85e9de17ff98"
 quantum:
   superposition:
     - artery
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "84dc7473-8598-8369-ac77-d673b9e64413"
-    contentUuid: "ed6837d4-96c8-5e55-a1f7-2fb668bad2dc"
+    computationUuid: "440974b0-ce9e-8d71-90cf-333dc0aad79b"
+    contentUuid: "cbec81bf-5141-5dc6-8f30-add989ebc482"
 version: 2
 ---
 # quantum/cache — the content-addressed cache
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/cache/index.ts` (`key` · `sameKey`). Composes [[cache
 
 @standard RFC 9562 §5.8 content-uuid (the cache key)
 
-<sub>content-uuid `ed6837d4-96c8-5e55-a1f7-2fb668bad2dc` · account `quantum/cache` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `cbec81bf-5141-5dc6-8f30-add989ebc482` · account `quantum/cache` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

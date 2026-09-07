@@ -2,18 +2,18 @@
 name: constants
 description: "Use when reasoning about constants — Cloudflare constants — KIDs, environment keys, binding names"
 atomPath: "cloudflare/constants"
-coordinate: "cloudflare/constants · 2/share · a9f74cb5"
-contentUuid: "3a3ae111-9da5-58ba-aafc-ad8a448ce5ad"
-diamondUuid: "5ad6c1a1-0b59-89e6-b03e-041e2da02932"
-uuid: "a9f74cb5-83f6-8b6c-8030-0615620d736f"
-horo: 2
+coordinate: "cloudflare/constants · 4/weave · d66dc463"
+contentUuid: "4b862232-e0a3-5111-b82e-8944031cafb2"
+diamondUuid: "34ac029c-6b1b-8019-b301-3b7ebc2a93bd"
+uuid: "d66dc463-1027-8b7c-af76-c209f1bea190"
+horo: 4
 typography:
   partition: cloudflare
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a07596b8-9da5-838e-b27b-e113152d7c95"
+  computationUuid: "7c70d901-849d-8999-b413-e40d40edc65e"
   stages:
     - stage: path
       stageUuid: "5d3a1dac-a2a4-88d4-b929-7f115d5f4954"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b0d0ab67-29b5-82cf-bf83-f692f60f6fc6"
     - stage: horo
-      stageUuid: "da77d79f-f6a2-8165-a17f-654957a79a86"
+      stageUuid: "86bef717-a81a-82a6-bd8a-dbd13355f0e1"
     - stage: seal
       stageUuid: "825e4a77-022a-894e-ae46-9b052a4702d7"
     - stage: uuid
-      stageUuid: "f133c4af-6822-8fd1-a18c-f6f5049be868"
+      stageUuid: "b654847a-14d4-8899-be1c-a2302b3049ad"
 version: 2
 ---
 # cloudflare/constants

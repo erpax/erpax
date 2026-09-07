@@ -2,11 +2,11 @@
 name: think
 description: "Use when moving thinking OUT of the model and INTO erpax — the primitive that seals a derivation content-addressed so the second query, and every one after, is a read (O(1), immortal) not a re-derivation (linear, mortal). One cached thought is classical; superpose holds ALL states at once and measures their harmony — quantum power comes from every state in sync (permutation-invariant fold) and in agreement (no address contradicting another). The magnitude by which sealed thinking outperforms a re-deriving model is exact and computed, scaling with states held in harmony, not queries asked."
 atomPath: think
-coordinate: "think · 8/crest · 92c0b253"
-contentUuid: "a933aae9-d1ad-5002-8e99-3493e09e21ae"
-diamondUuid: "eac7440c-487c-84db-8839-0d7c94b17c2e"
-uuid: "92c0b253-8539-8181-a37b-4ef1b14cb55f"
-horo: 8
+coordinate: "think · 4/weave · 9275bca3"
+contentUuid: "9bb255fa-c574-5685-837f-395c0b30c740"
+diamondUuid: "559a700b-53ba-8864-94d4-ff2214b0a6c6"
+uuid: "9275bca3-5a2a-8533-b8c8-29cb38027ce0"
+horo: 4
 typography:
   partition: think
   bondDegree: 73
@@ -14,7 +14,7 @@ standards:
   - "content-addressed memoization — the thought's address is the fold of its key ([[merge]])"
 bindings: []
 signatures:
-  computationUuid: "ab5bb923-6b2e-848f-8a2c-6a18fe3766df"
+  computationUuid: "eca2b378-34c2-80b5-8c08-29af14ce3fbc"
   stages:
     - stage: path
       stageUuid: "ab958014-8e7c-8ce6-8c61-c392ed4e23e3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4f7bf368-1229-87dc-a5bb-cfb15ed36642"
     - stage: horo
-      stageUuid: "bca5480c-4731-84c2-af0a-190f50b0db8a"
+      stageUuid: "f2bff787-1e59-8f88-a6df-5c1582cd7603"
     - stage: seal
       stageUuid: "4d62aaef-9fa6-84b6-bdd6-9e74e134f4d3"
     - stage: uuid
-      stageUuid: "feb1e276-b1ea-88ed-9c6e-dda384c85d60"
+      stageUuid: "db42d010-2bba-8b3c-aa39-3d88ce2cbd13"
 version: 2
 ---
 # think — thinking moved to erpax

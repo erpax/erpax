@@ -2,10 +2,10 @@
 name: archived
 description: "Use when reasoning about archived — Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by"
 atomPath: "vocabulary/archived"
-coordinate: "vocabulary/archived · 8/crest · 70f8af7b"
-contentUuid: "b2d52cc3-4302-50b8-b93c-db412a599e45"
-diamondUuid: "a66e16f8-d175-8c1e-99d8-cbb63357642b"
-uuid: "70f8af7b-9433-8e23-9ed8-c29df5239c40"
+coordinate: "vocabulary/archived · 8/crest · e279348a"
+contentUuid: "4bcf85fd-3547-5d39-ba8d-399f87efc42b"
+diamondUuid: "4cd77592-547e-84fb-9044-7e6807e2fe5b"
+uuid: "e279348a-f764-8683-85f2-3002877a6284"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "35b3a205-27b2-8ec0-b359-d72061fd348b"
+  computationUuid: "dfff0c33-7281-8ca9-9257-d662ea57c09f"
   stages:
     - stage: path
       stageUuid: "b8288949-f7f5-866b-8ab1-c9c9057a4047"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "72b42d68-edd1-88fa-add5-3efb5626df00"
     - stage: horo
-      stageUuid: "df8a3bc8-e15d-8fcb-85aa-2f85c147ceba"
+      stageUuid: "5b9b1583-f26f-8ee9-9b8b-21c7004da0ea"
     - stage: seal
       stageUuid: "62636ff5-ea1a-8d2b-88bd-edc833ffdae9"
     - stage: uuid
-      stageUuid: "f1fd4317-9cd8-82e2-aeab-da3d2bb83f3a"
+      stageUuid: "f4440d7f-5ea3-82e0-8569-938c00ebe2e6"
 version: 2
 ---
 # archived

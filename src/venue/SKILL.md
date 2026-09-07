@@ -2,11 +2,11 @@
 name: venue
 description: "Use when reasoning about venue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: venue
-coordinate: "venue · 2/share · e06334aa"
-contentUuid: "441da193-6b51-5243-83a4-4da1e92495ba"
-diamondUuid: "8edfff8f-999a-8561-b4ac-d0c0398c4881"
-uuid: "e06334aa-d11e-8b17-9c46-ce0e0e215f9f"
-horo: 2
+coordinate: "venue · 5/round · 6fa6f02b"
+contentUuid: "54af68e7-9c5e-5bc6-8d1c-f8d51100f13c"
+diamondUuid: "b161c7f6-5e8d-81cf-a82b-662787bb91c2"
+uuid: "6fa6f02b-3de5-8066-a727-88965d1dd02f"
+horo: 5
 typography:
   partition: venue
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e04bd056-23ed-8271-8b39-5bfaf1a17b2b"
+  computationUuid: "547bf83c-e714-890e-8e34-205abc47e0e1"
   stages:
     - stage: path
       stageUuid: "99ca9373-35d4-8820-8f5f-1f9485748eae"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "efb8fd0c-52f8-8b79-bab1-8fd5c5ca8e76"
     - stage: horo
-      stageUuid: "b7041915-af0e-8a22-b297-583e9b32761b"
+      stageUuid: "5bc2e035-ac2f-8a71-91ca-48bd55f85ac5"
     - stage: seal
       stageUuid: "3793cdbd-7db8-8ea6-801d-387401a67216"
     - stage: uuid
-      stageUuid: "d0162fb3-15c4-81f0-b719-b51b23ff898b"
+      stageUuid: "209e8d57-d433-81e2-ae3b-ec58d3be5dbd"
 version: 2
 ---
 # venue

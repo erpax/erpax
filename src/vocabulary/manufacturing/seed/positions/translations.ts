@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "positions",
-    "uuid": "283574db-b103-85d7-a3c3-0767b732e170",
+    "uuid": "63745770-9f85-89c1-8321-6505ac867937",
     "words": [
       "positions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about positions — positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards.",
-    "uuid": "6f08ba98-c941-8bde-8939-02ea9b52cdfe",
+    "uuid": "54401f07-7021-84cf-94f2-a9bb3a5a352c",
     "words": [
       "use",
       "when",

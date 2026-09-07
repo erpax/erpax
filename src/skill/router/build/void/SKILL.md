@@ -2,18 +2,18 @@
 name: void
 description: "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the void: an empty pool, 265 bytes, written by a module that imports only node:fs and node:path."
 atomPath: "skill/router/build/void"
-coordinate: "skill/router/build/void · 5/round · 02eb0cab"
-contentUuid: "a9e3c099-2304-557b-99e5-06a26e7f7210"
-diamondUuid: "883a3768-9b13-823d-8dcc-af6e29a4a418"
-uuid: "02eb0cab-bb20-8d2f-8170-cc739aeb1952"
-horo: 5
+coordinate: "skill/router/build/void · 1/base · 27f16882"
+contentUuid: "051c8798-dcef-530d-bae1-daa61c1b33c2"
+diamondUuid: "02b3e509-f35f-80a5-b3aa-af97c5dd9926"
+uuid: "27f16882-2961-8922-9f68-d1c4f6290a06"
+horo: 1
 typography:
   partition: skill
   bondDegree: 96
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b19c09da-0d18-89e7-aeb6-f1d422d92945"
+  computationUuid: "56348ebc-fd3d-84a8-9823-d52e765a0fbf"
   stages:
     - stage: path
       stageUuid: "f31247e6-e696-8ff0-a852-511e31ba01b2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c66d423f-cd16-84c8-aff3-87a0f01b8b76"
     - stage: horo
-      stageUuid: "1dfd041b-85e0-893b-95dd-cf65e8f9a039"
+      stageUuid: "0d701640-0b05-8393-9f19-300a6af5dbb9"
     - stage: seal
       stageUuid: "d79c19a4-1c51-80a7-ac4a-0fe1680ae3ba"
     - stage: uuid
-      stageUuid: "7eed5be7-fd59-8845-b0dd-aeaf67c83cd5"
+      stageUuid: "c76949a0-b943-85f8-b149-fa93df30aea9"
 version: 2
 ---
 # skill/router/build/void — 265 bytes should not cost six seconds

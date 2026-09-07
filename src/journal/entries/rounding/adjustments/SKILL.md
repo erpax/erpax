@@ -2,11 +2,11 @@
 name: adjustments
 description: "Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection."
 atomPath: "journal/entries/rounding/adjustments"
-coordinate: "journal/entries/rounding/adjustments · 8/crest · 00b31442"
-contentUuid: "b716930d-8917-5794-a498-c74a80088f5a"
-diamondUuid: "32c97f1d-5be7-8a66-a04f-e77b9b7ec03c"
-uuid: "00b31442-73ec-89ac-abfd-4333ff6d0614"
-horo: 8
+coordinate: "journal/entries/rounding/adjustments · 4/weave · 5636199a"
+contentUuid: "b6fe19e6-9956-5fed-9517-aa39d6df9c50"
+diamondUuid: "713bc570-4776-84c1-a941-41d674e1820b"
+uuid: "5636199a-944d-8a5f-8544-aeb5b8720f06"
+horo: 4
 typography:
   partition: journal
   bondDegree: 42
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "91b6b027-1b39-851b-904c-774bf34ad79d"
+  computationUuid: "5f3ea645-7463-81a6-b1de-f63ff5b79ec8"
   stages:
     - stage: path
       stageUuid: "972c7cc8-3cc4-84e5-a7ce-b01a52be8226"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "cac927e7-8d30-86d6-93b5-2101530981a5"
     - stage: horo
-      stageUuid: "b769e37c-05fc-8804-850a-4bd913cdf39a"
+      stageUuid: "60808778-db62-8a98-afe3-66ace63b1bfa"
     - stage: seal
       stageUuid: "b4a22329-868e-8bab-841c-f39ffd20bfa8"
     - stage: uuid
-      stageUuid: "23ec98b1-b411-86b2-9167-03e43b808131"
+      stageUuid: "ffb9bed1-6c7a-8733-ba11-985d9017b7dc"
 version: 2
 ---
 # rounding-adjustments

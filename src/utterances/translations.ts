@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "utterances",
-    "uuid": "2df68009-550a-8faf-aaa1-6eb6b11a1241",
+    "uuid": "7b12123e-7f78-841d-9fb8-27f210c3654e",
     "words": [
       "utterances"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about utterances — Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry.",
-    "uuid": "4c2f8472-7d9b-8c72-a4e8-c3e88445a874",
+    "uuid": "ac6e398c-052c-8602-b9d2-4e0491cdaab8",
     "words": [
       "use",
       "when",

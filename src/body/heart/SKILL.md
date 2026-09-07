@@ -2,11 +2,11 @@
 name: heart
 description: "Use when reasoning about the heart as an organ of body — pivot to canonical @/heart; zero duplication."
 atomPath: "body/heart"
-coordinate: "body/heart · 5/round · 7c5ef108"
-contentUuid: "a2dc0145-96bf-5bc9-ac57-75e9c4e3097b"
-diamondUuid: "62067187-ad28-858f-ada8-1ee27a961861"
-uuid: "7c5ef108-5c8d-8cf0-a59a-9ced6d42511b"
-horo: 5
+coordinate: "body/heart · 7/descent · 15581746"
+contentUuid: "2110fdf2-e31f-5529-bfd1-5e9820cc529b"
+diamondUuid: "cff973e7-6795-8fa3-ab41-c871bc8f5783"
+uuid: "15581746-ca97-805f-ad64-e6aab6f4a60d"
+horo: 7
 typography:
   partition: body
   bondDegree: 98
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f578e333-4db1-8858-bafc-e37f8b291535"
+  computationUuid: "8edb7d3e-c921-8444-b1c5-412a04ce4422"
   stages:
     - stage: path
       stageUuid: "595b0f85-7e36-833b-a58f-57ccd14b21d2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4405dfb4-735f-8b24-a495-25b9dbf8b6d4"
     - stage: horo
-      stageUuid: "aaf091f2-7b83-8d27-89be-8e6d148b42fc"
+      stageUuid: "36f22bcf-c3a5-8376-acdf-1e1e16acf90f"
     - stage: seal
       stageUuid: "01790a3e-fdb2-85da-9922-fb0bfad57740"
     - stage: uuid
-      stageUuid: "8bb276c9-8fcf-8329-a1f8-6596ca427b79"
+      stageUuid: "21936c19-b82c-8f8b-8cd4-a371317524cc"
 version: 2
 ---
 # body/heart — organ facet

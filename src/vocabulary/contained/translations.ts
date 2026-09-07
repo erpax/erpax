@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contained",
-    "uuid": "7f898d73-992c-8372-9c97-c618bf39baca",
+    "uuid": "b076f12c-2a02-8451-9a84-c8c2093d3655",
     "words": [
       "contained"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about contained — The basic containment relation between a place and one that contains it.",
-    "uuid": "0816bc0e-f66e-8844-9b47-58249ec72016",
+    "uuid": "81897157-3994-8b53-b44a-1626d0070416",
     "words": [
       "use",
       "when",
