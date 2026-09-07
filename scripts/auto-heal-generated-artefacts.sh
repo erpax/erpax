@@ -184,6 +184,34 @@ if [ "$DRY_RUN" = 0 ]; then
   rm -f /tmp/erpax-tr.log
 fi
 
+# ── Artefact 6: the MCP atom catalogue ───────────────────────────────
+#
+# `src/agents/mcp/atom-catalogue.generated.ts` is one entry per atom, carrying each atom's NAME and
+# DESCRIPTION read straight from its SKILL.md frontmatter — so the frontmatter heal above rewrites
+# its inputs, and minting an atom drifts its membership.
+#
+# NOTHING TESTS IT. It was stale on both counts — missing `css/variables`, and carrying
+# descriptions the heal had already replaced — and no gate said so, because no gate could
+# ([[rules]]/refutable: a claim nothing can contradict reads as true forever). It is the surface an
+# MCP-only agent discovers the corpus through, so a stale catalogue is an agent shown a corpus that
+# no longer exists.
+#
+# Its banner cited `pnpm atoms:catalogue`, which did not exist; the script does now.
+# Emits in ~2s and reads only SKILL.md, so it needs no memo and only has to follow the frontmatter.
+if [ "$DRY_RUN" = 0 ]; then
+  if node src/atom/catalogue.mjs >/tmp/erpax-catalogue.log 2>&1; then
+    if ! git diff --quiet -- src/agents/mcp/atom-catalogue.generated.ts; then
+      echo "auto-heal: MCP atom catalogue drifted — regenerated"
+      git add src/agents/mcp/atom-catalogue.generated.ts 2>/dev/null || true
+      healed+=("MCP atom catalogue")
+    fi
+  else
+    echo "auto-heal: atom catalogue emit FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-catalogue.log || true
+  fi
+  rm -f /tmp/erpax-catalogue.log
+fi
+
 # ── Artefact 2 (LAST): src/payload-types.ts ─────────────────────────
 #
 # ORDER IS LOAD-BEARING, and it was wrong. This block used to run FIRST, before the frontmatter,

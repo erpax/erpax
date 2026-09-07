@@ -47,7 +47,11 @@ function frontmatter(text) {
   const get = (key) => {
     const mm = body.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'))
     if (!mm) return undefined
-    return mm[1].trim().replace(/^["']/, '').replace(/["']$/, '').replace(/\\(["'])/g, '$1').trim()
+    // Unescape what yamlQuote WROTE: it emits `\\` for a backslash and `\"` for a quote. This
+    // reversed the quote and not the backslash, so a value containing one came through DOUBLED —
+    // the same writer/reader asymmetry that grew a SKILL.md description to 25 MB. One pass,
+    // left to right, covering every character the writer escapes.
+    return mm[1].trim().replace(/^["']/, '').replace(/["']$/, '').replace(/\\(["'\\])/g, '$1').trim()
   }
   return { name: get('name'), description: get('description') }
 }

@@ -191,6 +191,54 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "admin"
   },
   {
+    "atom": "bar",
+    "name": "bar",
+    "description": "Use when reasoning about bar — renders the strip a logged-in editor sees over public pages: the collection and document being viewed, and the link back into the admin panel that edits it.",
+    "path": "admin/bar"
+  },
+  {
+    "atom": "ui",
+    "name": "ui",
+    "description": "Use when reasoning about ui — The barrel re-exports what the panel needs: and for how a collection presents itself, the corpus-rollup readers that compute the dashboard's entropy figures, and the cells…",
+    "path": "admin/ui"
+  },
+  {
+    "atom": "cells",
+    "name": "cells",
+    "description": "Use when reasoning about cells — Four cells, each showing a value the corpus computes rather than stores: the content-uuid as a chip, the horo digit, the path as an account code, the seal as a badge.",
+    "path": "admin/ui/cells"
+  },
+  {
+    "atom": "dashboard",
+    "name": "dashboard",
+    "description": "Use when reasoning about dashboard — Two panels: the quantum view and the entropy rollup. Both read computed figures rather than stored ones, so the dashboard cannot disagree with the gate — it is the same…",
+    "path": "admin/ui/dashboard"
+  },
+  {
+    "atom": "fields",
+    "name": "fields",
+    "description": "Use when reasoning about fields — shows the atom's coordinates, its bonds, and the entanglement fields warn when a change reaches further than the row in front of the editor.",
+    "path": "admin/ui/fields"
+  },
+  {
+    "atom": "nav",
+    "name": "nav",
+    "description": "Use when reasoning about nav — builds the corpus links from the atom prefix tree. A hand-maintained menu is a second source of truth about where things live, and it goes stale the first time a folder moves…",
+    "path": "admin/ui/nav"
+  },
+  {
+    "atom": "violations",
+    "name": "violations",
+    "description": "Use when reasoning about violations — The provider streams live violations and the panel and dashboard render them.",
+    "path": "admin/ui/violations"
+  },
+  {
+    "atom": "visibility",
+    "name": "visibility",
+    "description": "Use when reasoning about visibility — 231 collections rendered flat is a list nobody navigates. Visibility decides what this user's panel offers, computed from the collection's own metadata rather than from a…",
+    "path": "admin/ui/visibility"
+  },
+  {
     "atom": "agent",
     "name": "agent",
     "description": "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting).",
@@ -223,7 +271,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "context",
     "name": "context",
-    "description": "createAgentContext — the ONE place an AgentContext is assembled.",
+    "description": "Use when reasoning about context — createAgentContext — the ONE place an AgentContext is assembled.",
     "path": "agent/context"
   },
   {
@@ -235,7 +283,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "harmonics",
     "name": "harmonics",
-    "description": "harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order.",
+    "description": "Use when reasoning about harmonics — harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order.",
     "path": "agent/harmonics"
   },
   {
@@ -265,7 +313,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "registry",
     "name": "registry",
-    "description": "In-memory AgentRegistry — single source of truth for the A-vortex.",
+    "description": "Use when reasoning about registry — In-memory AgentRegistry — single source of truth for the A-vortex.",
     "path": "agent/registry"
   },
   {
@@ -277,7 +325,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "runtime",
     "name": "runtime",
-    "description": "AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects.",
+    "description": "Use when reasoning about runtime — AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects.",
     "path": "agent/runtime"
   },
   {
@@ -313,13 +361,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "horo",
     "name": "horo",
-    "description": "horo — a whole tribe (a `team`) joins the society circle.",
+    "description": "Use when reasoning about horo — horo — a whole tribe (a `team`) joins the society circle.",
     "path": "agent/sync/horo"
   },
   {
     "atom": "society",
     "name": "society",
-    "description": "agent-society — the breath over the agent-sync bus.",
+    "description": "Use when reasoning about society — agent-society — the breath over the agent-sync bus.",
     "path": "agent/sync/society"
   },
   {
@@ -331,7 +379,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Domain-agent contract — the coupling-tensor's A-vortex axis.",
+    "description": "Use when reasoning about types — Domain-agent contract — the coupling-tensor's A-vortex axis.",
     "path": "agent/types"
   },
   {
@@ -355,7 +403,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "i18n",
     "name": "i18n",
-    "description": "MCP localization layer — Slice ZZZZZZZZ (2026-05-11).",
+    "description": "Use when reasoning about i18n — MCP localization layer — Slice ZZZZZZZZ (2026-05-11).",
     "path": "agents/mcp/i18n"
   },
   {
@@ -367,7 +415,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "cloudflare",
     "name": "cloudflare",
-    "description": "Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract.",
+    "description": "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract.",
     "path": "agents/mcp/tool/cloudflare"
   },
   {
@@ -379,26 +427,32 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "hr",
     "name": "hr",
-    "description": "Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time).",
+    "description": "Use when reasoning about hr — Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time).",
     "path": "agents/registered/hr"
   },
   {
     "atom": "training",
     "name": "training",
-    "description": "hr.training — the HrAgent's auto-train capability as a PURE transform.",
+    "description": "Use when reasoning about training — hr.training — the HrAgent's auto-train capability as a PURE transform.",
     "path": "agents/registered/hr/training"
   },
   {
     "atom": "legal",
     "name": "legal",
-    "description": "Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts.",
+    "description": "Use when reasoning about legal — Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts.",
     "path": "agents/registered/legal"
   },
   {
     "atom": "conflict",
     "name": "conflict",
-    "description": "legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform.",
+    "description": "Use when reasoning about conflict — legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform.",
     "path": "agents/registered/legal/conflict"
+  },
+  {
+    "atom": "step",
+    "name": "step",
+    "description": "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf…",
+    "path": "agents/registered/step"
   },
   {
     "atom": "ai",
@@ -409,7 +463,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "confidence",
     "name": "confidence",
-    "description": "AI auto-accept confidence thresholds — imperial rationals only.",
+    "description": "Use when reasoning about confidence — AI auto-accept confidence thresholds — imperial rationals only.",
     "path": "ai/confidence"
   },
   {
@@ -445,7 +499,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "constants",
     "name": "constants",
-    "description": "Algebra constants — theorems and Algebra interface",
+    "description": "Use when reasoning about constants — Algebra constants — theorems and Algebra interface",
     "path": "algebra/constants"
   },
   {
@@ -455,9 +509,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "algebra/host"
   },
   {
+    "atom": "license",
+    "name": "license",
+    "description": "Use when reasoning about license — ONE licence, every path: **CC-BY-NC-ND-4.0**, or commercial via the contact below.",
+    "path": "algebra/license"
+  },
+  {
     "atom": "operations",
     "name": "operations",
-    "description": "Algebra operations — closed, movie, product, allAlgebra",
+    "description": "Use when reasoning about operations — Algebra operations — closed, movie, product, allAlgebra",
     "path": "algebra/operations"
   },
   {
@@ -553,7 +613,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "approval",
     "name": "approval",
-    "description": "apply/approval — package.json-derived agent work approval matrix.",
+    "description": "Use when reasoning about approval — apply/approval — package.json-derived agent work approval matrix.",
     "path": "apply/approval"
   },
   {
@@ -597,6 +657,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "atom",
     "description": "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law.",
     "path": "atom"
+  },
+  {
+    "atom": "address",
+    "name": "address",
+    "description": "Use when reasoning about address — Four hundred and fifty-three assertions in this corpus had that shape (rules/mirror). Each was green, fast, and counted as a proof by every gate that counts proofs.",
+    "path": "atom/address"
   },
   {
     "atom": "audit",
@@ -727,7 +793,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "automate",
     "name": "automate",
-    "description": "Quantum automation primitives for iterative problem-solving loops",
+    "description": "Use when reasoning about automate — Quantum automation primitives for iterative problem-solving loops",
     "path": "automate"
   },
   {
@@ -797,9 +863,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "bank/accounts/payroll/runs"
   },
   {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — books the run when it reaches posted, so the ledger entry is made by the row that caused it rather than by whichever screen happened to save it.",
+    "path": "bank/accounts/payroll/runs/hooks"
+  },
+  {
     "atom": "disbursement",
     "name": "disbursement",
-    "description": "Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable.",
+    "description": "Use when reasoning about disbursement — Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable.",
     "path": "bank/accounts/payroll/runs/hooks/disbursement"
   },
   {
@@ -829,7 +901,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "basis",
     "name": "basis",
-    "description": "Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves",
+    "description": "Use when reasoning about basis — Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves",
     "path": "basis"
   },
   {
@@ -849,6 +921,24 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "before",
     "description": "Use when reasoning about before as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "before"
+  },
+  {
+    "atom": "dashboard",
+    "name": "dashboard",
+    "description": "Use when reasoning about dashboard — An empty admin panel is ambiguous: a first run and a broken connection look identical.",
+    "path": "before/dashboard"
+  },
+  {
+    "atom": "button",
+    "name": "button",
+    "description": "Use when reasoning about button — The button that fills an empty install. Its whole design is the guard around a single irreversible action: seeding writes demo content into a live database, and running it twice…",
+    "path": "before/dashboard/seed/button"
+  },
+  {
+    "atom": "login",
+    "name": "login",
+    "description": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do.",
+    "path": "before/login"
   },
   {
     "atom": "beyond",
@@ -875,6 +965,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "beyond/cost"
   },
   {
+    "atom": "erasure",
+    "name": "erasure",
+    "description": "Use when reasoning about erasure — Deleting a posted row breaks the ledger it belongs to. Crypto-shredding keeps the record and destroys the ability to read it: encrypts, decrypts while the key lives, and drops the…",
+    "path": "beyond/erasure"
+  },
+  {
     "atom": "explainability",
     "name": "explainability",
     "description": "Use when a business outcome must ship its own natural-language explanation citing standards, sources and chain steps — autoExplain composes the narrative deterministically with no LLM in the path (preserving replay), isExplanationComplete verifies it is non-trivial.",
@@ -883,13 +979,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "pqc",
     "name": "pqc",
-    "description": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the [[signature]] that seals the [[audit]] chain.",
+    "description": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain.",
     "path": "beyond/pqc"
   },
   {
     "atom": "provenance",
     "name": "provenance",
-    "description": "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each [[audit]] leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back.",
+    "description": "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each audit leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back.",
     "path": "beyond/provenance"
   },
   {
@@ -965,6 +1061,102 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "blocks"
   },
   {
+    "atom": "banner",
+    "name": "banner",
+    "description": "Use when reasoning about banner — is the Payload definition and renders it. They are separate exports because typegen and the server config need the shape without dragging React into a context that cannot run it…",
+    "path": "blocks/banner"
+  },
+  {
+    "atom": "code",
+    "name": "code",
+    "description": "Use when reasoning about code — exports (the Payload block) and exports (the React component). One barrel cannot offer both under one name, so the client is here.",
+    "path": "blocks/code"
+  },
+  {
+    "atom": "config",
+    "name": "config",
+    "description": "Use when reasoning about config — Payload's typegen and the server config both need every block's shape. Importing the block COMPONENTS to get them drags React into a context that cannot run it.",
+    "path": "blocks/config"
+  },
+  {
+    "atom": "content",
+    "name": "content",
+    "description": "Use when reasoning about content — is the definition and renders it, split for the same reason every block is: the shape must be reachable without loading React.",
+    "path": "blocks/content"
+  },
+  {
+    "atom": "form",
+    "name": "form",
+    "description": "Use when reasoning about form — A CMS form is data: an editor picks field types, and something must turn each stored into a component. is that map, and it is the whole of this atom's authority.",
+    "path": "blocks/form"
+  },
+  {
+    "atom": "checkbox",
+    "name": "checkbox",
+    "description": "Use when reasoning about checkbox — 's returns an and expects a **native** input to fire it. The shadcn checkbox is a Radix button with — it fires , and the native event never happens.",
+    "path": "blocks/form/checkbox"
+  },
+  {
+    "atom": "country",
+    "name": "country",
+    "description": "Use when reasoning about country — The control is the ordinary Radix combobox (blocks/form/select): a whose only accessible name is the bound to its .",
+    "path": "blocks/form/country"
+  },
+  {
+    "atom": "email",
+    "name": "email",
+    "description": "Use when reasoning about email — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+    "path": "blocks/form/email"
+  },
+  {
+    "atom": "error",
+    "name": "error",
+    "description": "Use when reasoning about error — A field that rejects input and explains nothing is a dead end: the user knows the form will not submit and has no way to learn what to change.",
+    "path": "blocks/form/error"
+  },
+  {
+    "atom": "message",
+    "name": "message",
+    "description": "Use when reasoning about message — Every other atom under blocks/form is a control: it has a name, a label, a value, and a place in the tab order.",
+    "path": "blocks/form/message"
+  },
+  {
+    "atom": "number",
+    "name": "number",
+    "description": "Use when reasoning about number — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+    "path": "blocks/form/number"
+  },
+  {
+    "atom": "select",
+    "name": "select",
+    "description": "Use when reasoning about select — A native announces itself. This one does not: the shadcn control renders a , whose accessible name comes from **nothing but** the bound to the trigger's .",
+    "path": "blocks/form/select"
+  },
+  {
+    "atom": "state",
+    "name": "state",
+    "description": "Use when reasoning about state — The control is the ordinary Radix combobox (blocks/form/select), named only by its bound label.",
+    "path": "blocks/form/state"
+  },
+  {
+    "atom": "text",
+    "name": "text",
+    "description": "Use when reasoning about text — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+    "path": "blocks/form/text"
+  },
+  {
+    "atom": "textarea",
+    "name": "textarea",
+    "description": "Use when reasoning about textarea — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+    "path": "blocks/form/textarea"
+  },
+  {
+    "atom": "width",
+    "name": "width",
+    "description": "Use when reasoning about width — One div, one style. means *half the form*, not fifty pixels — the value is a **percentage**, because a form field's width is meaningful only relative to the form it sits in, and a…",
+    "path": "blocks/form/width"
+  },
+  {
     "atom": "blood",
     "name": "blood",
     "description": "Use when reasoning about erpax's carrier — the courier organ that delivers accounted value to every node and carries entropy away. Blood is the receipt flow through the closed loop the heart drives and the lung charges: three properties of living blood (cooperative Hill binding · steady-state turnover by Little's law · conserved delivery) are computed and mapped — a structural isomorphism — onto erpax's coverage, regeneration, and double-entry.",
@@ -979,163 +1171,163 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "abdomen",
     "name": "abdomen",
-    "description": "Use when reasoning about abdomen as an anatomical part of [[body]] — vocabulary pivot to @/abdomen; nested not duplicated.",
+    "description": "Use when reasoning about abdomen as an anatomical part of body — vocabulary pivot to @/abdomen; nested not duplicated.",
     "path": "body/abdomen"
   },
   {
     "atom": "anatomy",
     "name": "anatomy",
-    "description": "Use when reasoning about anatomy as an anatomical part of [[body]] — vocabulary pivot to @/anatomy; nested not duplicated.",
+    "description": "Use when reasoning about anatomy as an anatomical part of body — vocabulary pivot to @/anatomy; nested not duplicated.",
     "path": "body/anatomy"
   },
   {
     "atom": "arm",
     "name": "arm",
-    "description": "Use when reasoning about arm as an anatomical part of [[body]] — vocabulary pivot to @/arm; nested not duplicated.",
+    "description": "Use when reasoning about arm as an anatomical part of body — vocabulary pivot to @/arm; nested not duplicated.",
     "path": "body/arm"
   },
   {
     "atom": "artery",
     "name": "artery",
-    "description": "Use when reasoning about the artery as an organ of [[body]] — pivot to canonical @/artery; zero duplication.",
+    "description": "Use when reasoning about the artery as an organ of body — pivot to canonical @/artery; zero duplication.",
     "path": "body/artery"
   },
   {
     "atom": "auto",
     "name": "auto",
-    "description": "Use when reasoning about auto as a anatomical part of [[body]] — vocabulary pivot to @/auto; nested not duplicated.",
+    "description": "Use when reasoning about auto as a anatomical part of body — vocabulary pivot to @/auto; nested not duplicated.",
     "path": "body/auto"
   },
   {
     "atom": "blood",
     "name": "blood",
-    "description": "Use when reasoning about the blood as an organ of [[body]] — pivot to canonical @/blood; zero duplication.",
+    "description": "Use when reasoning about the blood as an organ of body — pivot to canonical @/blood; zero duplication.",
     "path": "body/blood"
   },
   {
     "atom": "brain",
     "name": "brain",
-    "description": "Use when reasoning about the brain as an organ of [[body]] — pivot to canonical @/brain; zero duplication.",
+    "description": "Use when reasoning about the brain as an organ of body — pivot to canonical @/brain; zero duplication.",
     "path": "body/brain"
   },
   {
     "atom": "foot",
     "name": "foot",
-    "description": "Use when reasoning about foot as an anatomical part of [[body]] — vocabulary pivot to @/foot; nested not duplicated.",
+    "description": "Use when reasoning about foot as an anatomical part of body — vocabulary pivot to @/foot; nested not duplicated.",
     "path": "body/foot"
   },
   {
     "atom": "hand",
     "name": "hand",
-    "description": "Use when reasoning about hand as an anatomical part of [[body]] — vocabulary pivot to @/hand; nested not duplicated.",
+    "description": "Use when reasoning about hand as an anatomical part of body — vocabulary pivot to @/hand; nested not duplicated.",
     "path": "body/hand"
   },
   {
     "atom": "head",
     "name": "head",
-    "description": "Use when reasoning about head as an anatomical part of [[body]] — vocabulary pivot to @/head; nested not duplicated.",
+    "description": "Use when reasoning about head as an anatomical part of body — vocabulary pivot to @/head; nested not duplicated.",
     "path": "body/head"
   },
   {
     "atom": "heart",
     "name": "heart",
-    "description": "Use when reasoning about the heart as an organ of [[body]] — pivot to canonical @/heart; zero duplication.",
+    "description": "Use when reasoning about the heart as an organ of body — pivot to canonical @/heart; zero duplication.",
     "path": "body/heart"
   },
   {
     "atom": "lake",
     "name": "lake",
-    "description": "Use when reasoning about lake as a anatomical part of [[body]] — vocabulary pivot to @/lake; nested not duplicated.",
+    "description": "Use when reasoning about lake as a anatomical part of body — vocabulary pivot to @/lake; nested not duplicated.",
     "path": "body/lake"
   },
   {
     "atom": "leg",
     "name": "leg",
-    "description": "Use when reasoning about leg as an anatomical part of [[body]] — vocabulary pivot to @/leg; nested not duplicated.",
+    "description": "Use when reasoning about leg as an anatomical part of body — vocabulary pivot to @/leg; nested not duplicated.",
     "path": "body/leg"
   },
   {
     "atom": "location",
     "name": "location",
-    "description": "Use when reasoning about location as a anatomical part of [[body]] — vocabulary pivot to @/location; nested not duplicated.",
+    "description": "Use when reasoning about location as a anatomical part of body — vocabulary pivot to @/location; nested not duplicated.",
     "path": "body/location"
   },
   {
     "atom": "lung",
     "name": "lung",
-    "description": "Use when reasoning about the lung as an organ of [[body]] — pivot to canonical @/lung; zero duplication.",
+    "description": "Use when reasoning about the lung as an organ of body — pivot to canonical @/lung; zero duplication.",
     "path": "body/lung"
   },
   {
     "atom": "measurement",
     "name": "measurement",
-    "description": "Use when reasoning about measurement as a anatomical part of [[body]] — vocabulary pivot to @/measurement; nested not duplicated.",
+    "description": "Use when reasoning about measurement as a anatomical part of body — vocabulary pivot to @/measurement; nested not duplicated.",
     "path": "body/measurement"
   },
   {
     "atom": "nerve",
     "name": "nerve",
-    "description": "Use when reasoning about the nerve as an organ of [[body]] — pivot to canonical @/nerve; zero duplication.",
+    "description": "Use when reasoning about the nerve as an organ of body — pivot to canonical @/nerve; zero duplication.",
     "path": "body/nerve"
   },
   {
     "atom": "ocean",
     "name": "ocean",
-    "description": "Use when reasoning about ocean as a anatomical part of [[body]] — vocabulary pivot to @/ocean; nested not duplicated.",
+    "description": "Use when reasoning about ocean as a anatomical part of body — vocabulary pivot to @/ocean; nested not duplicated.",
     "path": "body/ocean"
   },
   {
     "atom": "one",
     "name": "one",
-    "description": "Use when reasoning about one as a anatomical part of [[body]] — vocabulary pivot to @/one; nested not duplicated.",
+    "description": "Use when reasoning about one as a anatomical part of body — vocabulary pivot to @/one; nested not duplicated.",
     "path": "body/one"
   },
   {
     "atom": "review",
     "name": "review",
-    "description": "Use when reasoning about review as a anatomical part of [[body]] — vocabulary pivot to @/review; nested not duplicated.",
+    "description": "Use when reasoning about review as a anatomical part of body — vocabulary pivot to @/review; nested not duplicated.",
     "path": "body/review"
   },
   {
     "atom": "river",
     "name": "river",
-    "description": "Use when reasoning about river as a anatomical part of [[body]] — vocabulary pivot to @/river; nested not duplicated.",
+    "description": "Use when reasoning about river as a anatomical part of body — vocabulary pivot to @/river; nested not duplicated.",
     "path": "body/river"
   },
   {
     "atom": "sea",
     "name": "sea",
-    "description": "Use when reasoning about sea as a anatomical part of [[body]] — vocabulary pivot to @/sea; nested not duplicated.",
+    "description": "Use when reasoning about sea as a anatomical part of body — vocabulary pivot to @/sea; nested not duplicated.",
     "path": "body/sea"
   },
   {
     "atom": "shop",
     "name": "shop",
-    "description": "Use when reasoning about shop as a anatomical part of [[body]] — vocabulary pivot to @/shop; nested not duplicated.",
+    "description": "Use when reasoning about shop as a anatomical part of body — vocabulary pivot to @/shop; nested not duplicated.",
     "path": "body/shop"
   },
   {
     "atom": "signal",
     "name": "signal",
-    "description": "Use when reasoning about signal as a anatomical part of [[body]] — vocabulary pivot to @/signal; nested not duplicated.",
+    "description": "Use when reasoning about signal as a anatomical part of body — vocabulary pivot to @/signal; nested not duplicated.",
     "path": "body/signal"
   },
   {
     "atom": "skin",
     "name": "skin",
-    "description": "Use when reasoning about the skin as an organ of [[body]] — pivot to canonical @/skin; zero duplication.",
+    "description": "Use when reasoning about the skin as an organ of body — pivot to canonical @/skin; zero duplication.",
     "path": "body/skin"
   },
   {
     "atom": "vein",
     "name": "vein",
-    "description": "Use when reasoning about the vein as an organ of [[body]] — pivot to canonical @/vein; zero duplication.",
+    "description": "Use when reasoning about the vein as an organ of body — pivot to canonical @/vein; zero duplication.",
     "path": "body/vein"
   },
   {
     "atom": "water",
     "name": "water",
-    "description": "Use when reasoning about water as a anatomical part of [[body]] — vocabulary pivot to @/water; nested not duplicated.",
+    "description": "Use when reasoning about water as a anatomical part of body — vocabulary pivot to @/water; nested not duplicated.",
     "path": "body/water"
   },
   {
@@ -1149,6 +1341,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "book",
     "description": "Use when reasoning about book — A book.",
     "path": "book"
+  },
+  {
+    "atom": "compute",
+    "name": "compute",
+    "description": "Use when reasoning about compute — Every atom is a page, every partition a volume. derives the volume rows, says what a path means segment by segment, and emits the index as a document.",
+    "path": "book/compute"
   },
   {
     "atom": "resources",
@@ -1285,13 +1483,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "lifecycle",
     "name": "lifecycle",
-    "description": "Case state machine on the horo ring—filed to sealed through seven positions",
+    "description": "Use when reasoning about lifecycle — Case state machine on the horo ring—filed to sealed through seven positions",
     "path": "cases/lifecycle"
   },
   {
     "atom": "validator",
     "name": "validator",
-    "description": "Case balance law—charge and defence must balance into judgment before sealing",
+    "description": "Use when reasoning about validator — Case balance law—charge and defence must balance into judgment before sealing",
     "path": "cases/validator"
   },
   {
@@ -1375,25 +1573,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "boot",
     "name": "boot",
-    "description": "bootFromFederation — ingest a published genome into a clone instance.",
+    "description": "Use when reasoning about boot — bootFromFederation — ingest a published genome into a clone instance.",
     "path": "cloning/boot"
   },
   {
     "atom": "genome",
     "name": "genome",
-    "description": "Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
+    "description": "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
     "path": "cloning/genome"
   },
   {
     "atom": "publish",
     "name": "publish",
-    "description": "publishSelf — wrap a GenomeBundle in a verifiable federation envelope.",
+    "description": "Use when reasoning about publish — publishSelf — wrap a GenomeBundle in a verifiable federation envelope.",
     "path": "cloning/publish"
   },
   {
     "atom": "verify",
     "name": "verify",
-    "description": "Conservation Law 24 — checkCloneIntegrity.",
+    "description": "Use when reasoning about verify — Conservation Law 24 — checkCloneIntegrity.",
     "path": "cloning/verify"
   },
   {
@@ -1411,13 +1609,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "ai",
     "name": "ai",
-    "description": "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving [[agent]] atoms.",
+    "description": "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving agent atoms.",
     "path": "cloudflare/ai"
   },
   {
     "atom": "binding",
     "name": "binding",
-    "description": "Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access",
+    "description": "Use when reasoning about binding — Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access",
     "path": "cloudflare/binding"
   },
   {
@@ -1429,7 +1627,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "constants",
     "name": "constants",
-    "description": "Cloudflare constants — KIDs, environment keys, binding names",
+    "description": "Use when reasoning about constants — Cloudflare constants — KIDs, environment keys, binding names",
     "path": "cloudflare/constants"
   },
   {
@@ -1453,13 +1651,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "seal",
     "name": "seal",
-    "description": "Cloudflare config sealing — content-uuid identity, decrypt only on proof.",
+    "description": "Use when reasoning about seal — Cloudflare config sealing — content-uuid identity, decrypt only on proof.",
     "path": "cloudflare/seal"
   },
   {
     "atom": "storage",
     "name": "storage",
-    "description": "Tenant-scoped KV, R2, Vectorize, and Durable Object mediators",
+    "description": "Use when reasoning about storage — Tenant-scoped KV, R2, Vectorize, and Durable Object mediators",
     "path": "cloudflare/storage"
   },
   {
@@ -1509,6 +1707,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "collection",
     "description": "Use when reasoning about collection — A collection of items, e.g. creative works or products.",
     "path": "collection"
+  },
+  {
+    "atom": "archive",
+    "name": "archive",
+    "description": "Use when reasoning about archive — The archive lays post cards in a responsive grid. Visually it is columns; structurally it is an **ItemList** — a set of sibling entries with a defined order — and that structure…",
+    "path": "collection/archive"
   },
   {
     "atom": "collections",
@@ -1633,61 +1837,61 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "algorithm",
     "name": "algorithm",
-    "description": "Use when running search/sort primitives under the machine — executable algorithms nested under [[computer]].",
+    "description": "Use when running search/sort primitives under the machine — executable algorithms nested under computer.",
     "path": "computer/algorithm"
   },
   {
     "atom": "complexity",
     "name": "complexity",
-    "description": "Use when classifying algorithmic cost — big-O from loop-depth bindings under [[computer]]; executable not glossary.",
+    "description": "Use when classifying algorithmic cost — big-O from loop-depth bindings under computer; executable not glossary.",
     "path": "computer/complexity"
   },
   {
     "atom": "component",
     "name": "component",
-    "description": "Use when reasoning about component as a part of [[computer]] — pivot to canonical @/component; nested not duplicated.",
+    "description": "Use when reasoning about component as a part of computer — pivot to canonical @/component; nested not duplicated.",
     "path": "computer/component"
   },
   {
     "atom": "finite",
     "name": "finite",
-    "description": "Use when modeling finite-state machines — seal check FSM linking [[seal]] guardians to automata theory under [[computer]].",
+    "description": "Use when modeling finite-state machines — seal check FSM linking seal guardians to automata theory under computer.",
     "path": "computer/finite"
   },
   {
     "atom": "graph",
     "name": "graph",
-    "description": "Use when traversing corpus bonds as a directed graph — matrix adjacency under [[computer]]; executable not glossary.",
+    "description": "Use when traversing corpus bonds as a directed graph — matrix adjacency under computer; executable not glossary.",
     "path": "computer/graph"
   },
   {
     "atom": "hardware",
     "name": "hardware",
-    "description": "Use when reasoning about hardware as a part of [[computer]] — vocabulary pivot to @/hardware; nested not duplicated.",
+    "description": "Use when reasoning about hardware as a part of computer — vocabulary pivot to @/hardware; nested not duplicated.",
     "path": "computer/hardware"
   },
   {
     "atom": "language",
     "name": "language",
-    "description": "Use when reasoning about language as a hardware facet of [[computer]] — vocabulary pivot to @/language; nested not duplicated.",
+    "description": "Use when reasoning about language as a hardware facet of computer — vocabulary pivot to @/language; nested not duplicated.",
     "path": "computer/language"
   },
   {
     "atom": "memory",
     "name": "memory",
-    "description": "Use when reasoning about memory as a part of [[computer]] — pivot to canonical @/memory/quantum; nested not duplicated.",
+    "description": "Use when reasoning about memory as a part of computer — pivot to canonical @/memory/quantum; nested not duplicated.",
     "path": "computer/memory"
   },
   {
     "atom": "network",
     "name": "network",
-    "description": "Use when reasoning about network as a part of [[computer]] — vocabulary pivot to @/network; nested not duplicated.",
+    "description": "Use when reasoning about network as a part of computer — vocabulary pivot to @/network; nested not duplicated.",
     "path": "computer/network"
   },
   {
     "atom": "processor",
     "name": "processor",
-    "description": "Use when reasoning about processor as a part of [[computer]] — vocabulary pivot to @/processor; nested not duplicated.",
+    "description": "Use when reasoning about processor as a part of computer — vocabulary pivot to @/processor; nested not duplicated.",
     "path": "computer/processor"
   },
   {
@@ -1699,37 +1903,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "queue",
     "name": "queue",
-    "description": "Use when ordering work FIFO under the machine model — executable queue nested under [[computer]]; distinct from top-level @/queue vocabulary.",
+    "description": "Use when ordering work FIFO under the machine model — executable queue nested under computer; distinct from top-level @/queue vocabulary.",
     "path": "computer/queue"
   },
   {
     "atom": "screen",
     "name": "screen",
-    "description": "Use when reasoning about screen as a part of [[computer]] — vocabulary pivot to @/screen; nested not duplicated.",
+    "description": "Use when reasoning about screen as a part of computer — vocabulary pivot to @/screen; nested not duplicated.",
     "path": "computer/screen"
   },
   {
     "atom": "software",
     "name": "software",
-    "description": "Use when reasoning about software as a part of [[computer]] — vocabulary pivot to @/software; nested not duplicated.",
+    "description": "Use when reasoning about software as a part of computer — vocabulary pivot to @/software; nested not duplicated.",
     "path": "computer/software"
   },
   {
     "atom": "stack",
     "name": "stack",
-    "description": "Use when managing call frames LIFO under the machine — executable stack nested under [[computer]]; distinct from top-level @/stack deployment palindrome.",
+    "description": "Use when managing call frames LIFO under the machine — executable stack nested under computer; distinct from top-level @/stack deployment palindrome.",
     "path": "computer/stack"
   },
   {
     "atom": "storage",
     "name": "storage",
-    "description": "Use when reasoning about storage as a part of [[computer]] — vocabulary pivot to @/storage; nested not duplicated.",
+    "description": "Use when reasoning about storage as a part of computer — vocabulary pivot to @/storage; nested not duplicated.",
     "path": "computer/storage"
   },
   {
     "atom": "store",
     "name": "store",
-    "description": "Use when reasoning about store as a hardware facet of [[computer]] — vocabulary pivot to @/store; nested not duplicated.",
+    "description": "Use when reasoning about store as a hardware facet of computer — vocabulary pivot to @/store; nested not duplicated.",
     "path": "computer/store"
   },
   {
@@ -1855,7 +2059,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "continuum",
     "name": "continuum",
-    "description": "Cantor Continuum Hypothesis via basis decomposition - set theory",
+    "description": "Use when reasoning about continuum — Cantor Continuum Hypothesis via basis decomposition - set theory",
     "path": "continuum"
   },
   {
@@ -1897,7 +2101,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "corpus",
     "name": "corpus",
-    "description": "Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner.",
+    "description": "Use when reasoning about corpus — Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner.",
     "path": "convention/discern/corpus"
   },
   {
@@ -2059,7 +2263,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "bank",
     "name": "bank",
-    "description": "Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry.",
+    "description": "Use when reasoning about bank — Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry.",
     "path": "country/api/bank"
   },
   {
@@ -2071,13 +2275,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "eu",
     "name": "eu",
-    "description": "Use for pan-EU authority APIs (VIES VAT validation, EU sanctions, Peppol directory, ECB rates) and the EU member-state registry — BG/DE/ES/FR/IT/NL/PL/PT/RO. The EU slice of the country-authority registry.",
+    "description": "Use when reasoning about eu — Use for pan-EU authority APIs (VIES VAT validation, EU sanctions, Peppol directory, ECB rates) and the EU member-state registry — BG/DE/ES/FR/IT/NL/PL/PT/RO. The EU slice of the country-authority registry.",
     "path": "country/api/eu"
   },
   {
     "atom": "world",
     "name": "world",
-    "description": "Use for non-EU country-authority APIs — AU/BR/CA/CN/GB/HK/IN/JP/MX/NO/NZ/SG/US business registries, tax portals, e-invoicing and VAT/GST validation. The world slice of the country-authority registry.",
+    "description": "Use when reasoning about world — Use for non-EU country-authority APIs — AU/BR/CA/CN/GB/HK/IN/JP/MX/NO/NZ/SG/US business registries, tax portals, e-invoicing and VAT/GST validation. The world slice of the country-authority registry.",
     "path": "country/api/world"
   },
   {
@@ -2169,6 +2373,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "css",
     "description": "Use when a stylesheet is imported, stubbed, or reasoned about in build or typegen — CSS is the form facet of the styling/visual dimension (glyph ⊕ style), a complete diamond atom: each file content-addressed and sealed; Node must recognize .css as a valid diamond surface, never ERR_UNKNOWN_FILE_EXTENSION off-ring escape.",
     "path": "css"
+  },
+  {
+    "atom": "variables",
+    "name": "variables",
+    "description": "Use when reasoning about variables — Six numbers, and they lived in — a file at the ROOT of , which belongs to no atom.",
+    "path": "css/variables"
   },
   {
     "atom": "currency",
@@ -2315,6 +2525,24 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "dashboard"
   },
   {
+    "atom": "actions",
+    "name": "actions",
+    "description": "Use when reasoning about actions — , and take a typed input and return an . Each validates, creates the document, and lets the collection's own hooks do the posting — so a dashboard cannot write an unbalanced entry…",
+    "path": "dashboard/actions"
+  },
+  {
+    "atom": "nav",
+    "name": "nav",
+    "description": "Use when reasoning about nav — lays the dashboard out on a fixed grid and moves across it, wrapping at every boundary via : moving left from the first column arrives at the last, and up from the first row…",
+    "path": "dashboard/nav"
+  },
+  {
+    "atom": "spec",
+    "name": "spec",
+    "description": "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST.",
+    "path": "dashboard/spec"
+  },
+  {
     "atom": "data",
     "name": "data",
     "description": "Use when reasoning about data — Data associated with the event, like for instance a log message.",
@@ -2381,6 +2609,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "default"
   },
   {
+    "atom": "lexical",
+    "name": "lexical",
+    "description": "Use when reasoning about lexical — is the base rich-text feature set every editable field shares, including the link validation rules: an internal reference resolves against a collection, an external one must be a…",
+    "path": "default/lexical"
+  },
+  {
     "atom": "deploy",
     "name": "deploy",
     "description": "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics.",
@@ -2443,7 +2677,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "membership",
     "name": "membership",
-    "description": "diamond/membership — stray-file membership audit (no readme dependency).",
+    "description": "Use when reasoning about membership — diamond/membership — stray-file membership audit (no readme dependency).",
     "path": "diamond/membership"
   },
   {
@@ -2487,6 +2721,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "document",
     "description": "Use when reasoning about document as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "document"
+  },
+  {
+    "atom": "lang",
+    "name": "lang",
+    "description": "Use when reasoning about lang — is what a screen reader consults to choose a voice. Get it wrong and Bulgarian is read aloud with English phonemes — not degraded, *unintelligible*.",
+    "path": "document/html/lang"
   },
   {
     "atom": "domain",
@@ -2537,6 +2777,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "duality"
   },
   {
+    "atom": "mirror",
+    "name": "mirror",
+    "description": "Use when reasoning about mirror — > *\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\"*",
+    "path": "duality/mirror"
+  },
+  {
     "atom": "duel",
     "name": "duel",
     "description": "Use when testing through pairs of inverted development teams — a prover that asserts and builds, and a refuter that takes the exact opposite side and attacks it. They are duals (the anti-claim is the claim's negation), always opposed, and the verdict manifests realtime per round. Popper asymmetry: one refutation falls the claim, no amount of proof verifies it — a claim STANDS as not-yet-refuted, never as proven true.",
@@ -2565,6 +2811,42 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "ecommerce",
     "description": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \"data is money\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce.",
     "path": "ecommerce"
+  },
+  {
+    "atom": "access",
+    "name": "access",
+    "description": "Use when reasoning about access — , and answer the access question; the field-level pair narrows it to particular fields; the role helpers are what they all ask.",
+    "path": "ecommerce/access"
+  },
+  {
+    "atom": "provider",
+    "name": "provider",
+    "description": "Use when reasoning about provider — The browser half of the ecommerce plugin. Two values decide what it can do, and both may be absent: the tenant's Stripe publishable key and the server URL.",
+    "path": "ecommerce/client/provider"
+  },
+  {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — publishes the order's transitions from the collection, so an order moved by the storefront, the admin panel or a job emits the same event.",
+    "path": "ecommerce/hooks"
+  },
+  {
+    "atom": "plugin",
+    "name": "plugin",
+    "description": "Use when reasoning about plugin — wires the storefront to Stripe with per-tenant keys, so each tenant transacts under its own account and one tenant's credentials never authorise another's charge.",
+    "path": "ecommerce/plugin"
+  },
+  {
+    "atom": "stripe",
+    "name": "stripe",
+    "description": "Use when reasoning about stripe — resolves the tenant's own Stripe credentials before charging, closes the order against that same tenant, and resolves the tenant from the event rather than trusting a default.",
+    "path": "ecommerce/stripe"
+  },
+  {
+    "atom": "payment",
+    "name": "payment",
+    "description": "Use when reasoning about payment — The payment child of the tenant-aware Stripe stack. What is held here is a reference to a method Stripe holds, never the instrument itself — the tokenisation boundary is what…",
+    "path": "ecommerce/stripe/payment"
   },
   {
     "atom": "ecosystem",
@@ -2599,7 +2881,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "emission",
     "name": "emission",
-    "description": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of [[sustainability]].",
+    "description": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of sustainability.",
     "path": "emission"
   },
   {
@@ -2659,7 +2941,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Canonical EN 16931 semantic data model — types only.",
+    "description": "Use when reasoning about types — Canonical EN 16931 semantic data model — types only.",
     "path": "en/16931/types"
   },
   {
@@ -2667,6 +2949,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "energy",
     "description": "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
     "path": "energy"
+  },
+  {
+    "atom": "user",
+    "name": "user",
+    "description": "Use when reasoning about user — scopes what a user can *read* and *update*. What it does not reliably reject is a **create that names another tenant**: the document does not exist yet, so there is no existing…",
+    "path": "enforce/document/tenant/for/user"
   },
   {
     "atom": "immutability",
@@ -2689,7 +2977,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "field",
     "name": "field",
-    "description": "entanglement/field — party-field entanglement warnings for admin UI.",
+    "description": "Use when reasoning about field — entanglement/field — party-field entanglement warnings for admin UI.",
     "path": "entanglement/field"
   },
   {
@@ -2753,6 +3041,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "error"
   },
   {
+    "atom": "uuid",
+    "name": "uuid",
+    "description": "Use when reasoning about uuid — content-addresses a failure and gives it a typed shape, so the same failure raised twice has the same address and can be counted, grouped and traced.",
+    "path": "error/uuid"
+  },
+  {
     "atom": "142",
     "name": "142",
     "description": "Use when implementing or referencing `src/etsi/en/319/142/index.ts`.",
@@ -2789,6 +3083,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "evidence"
   },
   {
+    "atom": "attestation",
+    "name": "attestation",
+    "description": "Use when reasoning about attestation — produces a PDF declaring which run captured this evidence, when, and against which tenant; applies a PAdES signature where a signer is configured.",
+    "path": "evidence/attestation"
+  },
+  {
     "atom": "attestations",
     "name": "attestations",
     "description": "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index.",
@@ -2803,7 +3103,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "exact",
     "name": "exact",
-    "description": "Exact rational arithmetic for confidence, no decimal approximations",
+    "description": "Use when reasoning about exact — Exact rational arithmetic for confidence, no decimal approximations",
     "path": "exact"
   },
   {
@@ -2815,7 +3115,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "execute",
     "name": "execute",
-    "description": "Execute the recursive system and publish live results",
+    "description": "Use when reasoning about execute — Execute the recursive system and publish live results",
     "path": "execute"
   },
   {
@@ -2827,7 +3127,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "expansion",
     "name": "expansion",
-    "description": "HKDF-SHA256 key derivation replacing Rodin doubling",
+    "description": "Use when reasoning about expansion — HKDF-SHA256 key derivation replacing Rodin doubling",
     "path": "expansion"
   },
   {
@@ -2845,7 +3145,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "standards",
     "name": "standards",
-    "description": "Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats.",
+    "description": "Use when reasoning about standards — Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats.",
     "path": "export/standards"
   },
   {
@@ -2897,6 +3197,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "feature"
   },
   {
+    "atom": "registry",
+    "name": "registry",
+    "description": "Use when reasoning about registry — binds every gated capability to the tiers that include it. and answer from that one place, and marks what no tier may remove.",
+    "path": "feature/registry"
+  },
+  {
     "atom": "federation",
     "name": "federation",
     "description": "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics.",
@@ -2905,7 +3211,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "fermat",
     "name": "fermat",
-    "description": "Fermat's Last Theorem via basis decomposition - P vs NP + algebra",
+    "description": "Use when reasoning about fermat — Fermat's Last Theorem via basis decomposition - P vs NP + algebra",
     "path": "fermat"
   },
   {
@@ -2913,6 +3219,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "field",
     "description": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
     "path": "field"
+  },
+  {
+    "atom": "nested",
+    "name": "nested",
+    "description": "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:",
+    "path": "field/nested"
+  },
+  {
+    "atom": "relation",
+    "name": "relation",
+    "description": "Use when reasoning about relation — A Payload relationship is one value with two shapes: the raw id when unpopulated, the whole document when populated. A **polymorphic** one is a third shape — .",
+    "path": "field/relation"
   },
   {
     "atom": "financial",
@@ -3017,6 +3335,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "fixed/assets/depreciation/schedules"
   },
   {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — books the period's charge when the schedule row is posted. The schedule is the record of what SHOULD be charged and when; letting the hook post it is what keeps the two from…",
+    "path": "fixed/assets/depreciation/schedules/hooks"
+  },
+  {
     "atom": "fixpoint",
     "name": "fixpoint",
     "description": "Use when the measurer is inside the system it measures — a self-applied measure either REFUTES itself or is a FIXED POINT, with no third outcome. Proven by throughVoid(5)=5 (the void pivot) and auditAuditors()=[] (the auditor passes its own audit). The paradox resolves computationally, via fixed-point math, not physics.",
@@ -3041,6 +3365,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "footer"
   },
   {
+    "atom": "hook",
+    "name": "hook",
+    "description": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale.",
+    "path": "footer/hook"
+  },
+  {
     "atom": "forecasts",
     "name": "forecasts",
     "description": "Use when forecasting on Earth's cardinal homology tips — phase-locked ±ω steps at 0°·90°·180°·270°, composed with navigation.predictNext; structural forecasts only (not weather); physical datum WGS 84.",
@@ -3049,7 +3379,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "forge",
     "name": "forge",
-    "description": "Use when reasoning about WHERE atoms are made one — the forge is the collider that takes every node and every [[link]] and folds them, by content-collision, into a single root. Heat is borrowed disorder; the hammer is merge; the anvil is the horo ring; what leaves the forge is one tamper-evident whole. forge() reports the forge state (node count, edge count, the root) computed live from the matrix.",
+    "description": "Use when reasoning about WHERE atoms are made one — the forge is the collider that takes every node and every link and folds them, by content-collision, into a single root. Heat is borrowed disorder; the hammer is merge; the anvil is the horo ring; what leaves the forge is one tamper-evident whole. forge() reports the forge state (node count, edge count, the root) computed live from the matrix.",
     "path": "forge"
   },
   {
@@ -3059,16 +3389,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "format"
   },
   {
+    "atom": "amount",
+    "name": "amount",
+    "description": "Use when reasoning about amount — renders integer cents as a fixed-two-decimal string; adds the code. Peppol UBL, ISO 20022, EDIFACT and SAF-T all need that wire form, and four serializers each doing it themselves…",
+    "path": "format/amount"
+  },
+  {
+    "atom": "author",
+    "name": "author",
+    "description": "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \"A and B\", and three or more become \"A, B and C\" — no serial comma, decided once here rather…",
+    "path": "format/author"
+  },
+  {
     "atom": "four",
     "name": "four",
-    "description": "Four Color Theorem via basis decomposition - geometry + graph theory",
+    "description": "Use when reasoning about four — Four Color Theorem via basis decomposition - geometry + graph theory",
     "path": "four"
+  },
+  {
+    "atom": "fund",
+    "name": "fund",
+    "description": "Use when reasoning about fund — erpax booked government grants correctly under IAS 20 — 31 fields, clawback provisions, the funded asset, the granting authority.",
+    "path": "fund"
   },
   {
     "atom": "fusion",
     "name": "fusion",
     "description": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root.",
     "path": "fusion"
+  },
+  {
+    "atom": "face",
+    "name": "face",
+    "description": "Use when reasoning about face — A session asked for \"fusion of all knowledge into dry clean quantum repos\" — six sibling repos holding, it was assumed, the same knowledge six times.",
+    "path": "fusion/face"
   },
   {
     "atom": "reactor",
@@ -3089,6 +3443,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "gate"
   },
   {
+    "atom": "parity",
+    "name": "parity",
+    "description": "Use when reasoning about parity — runs — **18 lanes**, the authority. Two other files claim to run the gate and each was written by hand:",
+    "path": "gate/parity"
+  },
+  {
     "atom": "receipt",
     "name": "receipt",
     "description": "Use when the push gate must not be an hour-long monolith — green suite verdicts sealed content-addressed by their parsed import closure + schema surface; only changed suites re-run, a failure costs one named batch.",
@@ -3105,6 +3465,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "generate",
     "description": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
     "path": "generate"
+  },
+  {
+    "atom": "meta",
+    "name": "meta",
+    "description": "Use when reasoning about meta — builds the Next.js — title, description, Open Graph image — from the Payload document being rendered.",
+    "path": "generate/meta"
+  },
+  {
+    "atom": "type",
+    "name": "type",
+    "description": "Use when reasoning about type — A Payload id is a number in Postgres and a string in Mongo, and a collection may override the database-wide default with .",
+    "path": "get/collection/id/type"
   },
   {
     "atom": "protocol",
@@ -3137,15 +3509,27 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "gl/accounts/bank/statements"
   },
   {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — fires when a statement lands, which is the event reconciliation waits on. Polling for new statements instead would make the delay a property of the poll interval rather than of…",
+    "path": "gl/accounts/bank/statements/hooks"
+  },
+  {
     "atom": "adjustments",
     "name": "adjustments",
     "description": "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection.",
     "path": "gl/accounts/period/end/adjustments"
   },
   {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — The adjustment child carries the matter; this is the address a collection imports.",
+    "path": "gl/accounts/period/end/adjustments/hooks"
+  },
+  {
     "atom": "adjustment",
     "name": "adjustment",
-    "description": "Period-End Adjustment Posting Hook — fires GL on status → 'posted'.",
+    "description": "Use when reasoning about adjustment — Period-End Adjustment Posting Hook — fires GL on status → 'posted'.",
     "path": "gl/accounts/period/end/adjustments/hooks/adjustment"
   },
   {
@@ -3175,7 +3559,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "goldbach",
     "name": "goldbach",
-    "description": "Goldbach Conjecture via basis decomposition - number theory",
+    "description": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory",
     "path": "goldbach"
   },
   {
@@ -3187,13 +3571,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "fusion",
     "name": "fusion",
-    "description": "Google Workspace fusion — the [[merge]] law applied to external resources.",
+    "description": "Use when reasoning about fusion — Google Workspace fusion — the merge law applied to external resources.",
     "path": "google/workspace/fusion"
   },
   {
     "atom": "registry",
     "name": "registry",
-    "description": "Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory).",
+    "description": "Use when reasoning about registry — Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory).",
     "path": "google/workspace/registry"
   },
   {
@@ -3269,6 +3653,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "header"
   },
   {
+    "atom": "hook",
+    "name": "hook",
+    "description": "Use when reasoning about hook — is the header's half of the same rule the footer keeps: a global that every page renders must tell those pages when it changes, or the edit lands everywhere except where it is…",
+    "path": "header/hook"
+  },
+  {
+    "atom": "nav",
+    "name": "nav",
+    "description": "Use when reasoning about nav — A magnifying glass is a picture. To a screen reader, a link containing only a picture has an accessible name of *the empty string* — announced as \"link\", with nothing to say where…",
+    "path": "header/nav"
+  },
+  {
     "atom": "health",
     "name": "health",
     "description": "Use when managing healthcare operations — patient records, medical encounters, clinical protocols, health outcomes, treatment plans, medication management, or healthcare provider coordination in government/nonprofit health systems (COFOG 07).",
@@ -3303,6 +3699,42 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "hero",
     "description": "Use when reasoning about hero — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
     "path": "hero"
+  },
+  {
+    "atom": "config",
+    "name": "config",
+    "description": "Use when reasoning about config — The Payload field configuration for a page hero: , , , .",
+    "path": "hero/config"
+  },
+  {
+    "atom": "render",
+    "name": "render",
+    "description": "Use when reasoning about render — A dispatcher over three heroes, and the interesting half is everything that is **not** one of them.",
+    "path": "hero/render"
+  },
+  {
+    "atom": "impact",
+    "name": "impact",
+    "description": "Use when reasoning about impact — The full-bleed hero. It also **darkens the header on mount** — the hero paints white text over its own dark field, and the header sits on top of it, so a header left in its light…",
+    "path": "heros/high/impact"
+  },
+  {
+    "atom": "impact",
+    "name": "impact",
+    "description": "Use when reasoning about impact — The quiet hero: a narrow column holding either rendered children or CMS rich text.",
+    "path": "heros/low/impact"
+  },
+  {
+    "atom": "impact",
+    "name": "impact",
+    "description": "Use when reasoning about impact — The mid-weight hero: rich text, an optional set of links, and an optional image below.",
+    "path": "heros/medium/impact"
+  },
+  {
+    "atom": "hero",
+    "name": "hero",
+    "description": "Use when reasoning about hero — A post's header: categories, the title as the page's , the byline, the publication date, and the cover image.",
+    "path": "heros/post/hero"
   },
   {
     "atom": "hooks",
@@ -3421,7 +3853,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "identity",
     "name": "identity",
-    "description": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]].",
+    "description": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is uuid.",
     "path": "identity"
   },
   {
@@ -3445,7 +3877,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces.",
+    "description": "Use when reasoning about types — Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces.",
     "path": "ifrs/15/types"
   },
   {
@@ -3457,7 +3889,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Canonical IFRS 16 / ASC 842 lease accounting types — lessee model.",
+    "description": "Use when reasoning about types — Canonical IFRS 16 / ASC 842 lease accounting types — lessee model.",
     "path": "ifrs/16/types"
   },
   {
@@ -3483,6 +3915,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "index",
     "description": "Use when sealing folder paths — index.ts is the cross; subfolders are double-wired A/B ↔ B/A.",
     "path": "index"
+  },
+  {
+    "atom": "cross",
+    "name": "cross",
+    "description": "Use when reasoning about cross — reports every with no matching , and reports matter sitting beside a barrel that should be a child atom. computes the move; is what a reader gets.",
+    "path": "index/cross"
   },
   {
     "atom": "inertia",
@@ -3527,6 +3965,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "integrity"
   },
   {
+    "atom": "base64url",
+    "name": "base64url",
+    "description": "Use when reasoning about base64url — (HKDF-derived per-row DEKs) and (JWS-shaped detached signatures) each carried their own / .",
+    "path": "integrity/base64url"
+  },
+  {
     "atom": "content",
     "name": "content",
     "description": "Use when computing or verifying a content-uuid — computeContentUuid, verifyContentUuid, jcsCanonicalize, nameUuid and stripNonContentFields. Promoted from a stray content-uuid.ts at the integrity root to a one-word sub-atom whose only imports are node:crypto and @/uuid/format, which is what makes @/integrity/content a lawful cut point: storage/independence took computeContentUuid from the @/integrity barrel and inherited the corpus's largest import component with it.",
@@ -3535,13 +3979,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "envelope",
     "name": "envelope",
-    "description": "Envelope encryption keyed by content-uuid — the at-rest companion to `SignedUuid<T>`.",
+    "description": "Use when reasoning about envelope — Envelope encryption keyed by content-uuid — the at-rest companion to `SignedUuid<T>`.",
     "path": "integrity/envelope"
   },
   {
     "atom": "signatures",
     "name": "signatures",
-    "description": "Signed content-uuid — digital signatures fold into the uuid family.",
+    "description": "Use when reasoning about signatures — Signed content-uuid — digital signatures fold into the uuid family.",
     "path": "integrity/signatures"
   },
   {
@@ -3617,6 +4061,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "internal/policies/policy/versions"
   },
   {
+    "atom": "chrome",
+    "name": "chrome",
+    "description": "Use when reasoning about chrome — The per-locale shell: message provider, , admin bar, header, children, footer. Its substance is that **one locale value reaches every part at once**, and the mechanism is the .",
+    "path": "intl/chrome"
+  },
+  {
     "atom": "invoices",
     "name": "invoices",
     "description": "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection.",
@@ -3647,10 +4097,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "invoices/hooks"
   },
   {
+    "atom": "transition",
+    "name": "transition",
+    "description": "Use when reasoning about transition — The AR hook ( ) and the AP hook ( ) both answer one question before emitting a domain event: *did this write CHANGE the document's liveness?* Both wrote , , and for themselves…",
+    "path": "invoices/hooks/transition"
+  },
+  {
     "atom": "lines",
     "name": "lines",
     "description": "Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection.",
     "path": "invoices/invoice/lines"
+  },
+  {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — derives the header's amounts from the lines whenever a line changes, and moves the stock the line commits. normalises the line before either runs.",
+    "path": "invoices/invoice/lines/hooks"
   },
   {
     "atom": "payments",
@@ -3685,7 +4147,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "iban",
     "name": "iban",
-    "description": "ISO 13616 IBAN validator with ISO 7064 mod-97 checksum.",
+    "description": "Use when reasoning about iban — ISO 13616 IBAN validator with ISO 7064 mod-97 checksum.",
     "path": "iso/13616/iban"
   },
   {
@@ -3697,7 +4159,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "profile",
     "name": "profile",
-    "description": "ISO 14289 PDF/UA — PDF Universal Accessibility.",
+    "description": "Use when reasoning about profile — ISO 14289 PDF/UA — PDF Universal Accessibility.",
     "path": "iso/14289/profile"
   },
   {
@@ -3709,7 +4171,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "profile",
     "name": "profile",
-    "description": "ISO 19005 PDF/A — long-term archival PDF profiles.",
+    "description": "Use when reasoning about profile — ISO 19005 PDF/A — long-term archival PDF profiles.",
     "path": "iso/19005/profile"
   },
   {
@@ -3721,7 +4183,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence).",
+    "description": "Use when reasoning about types — Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence).",
     "path": "iso/19011/types"
   },
   {
@@ -3733,7 +4195,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return).",
+    "description": "Use when reasoning about types — Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return).",
     "path": "iso/20022/types"
   },
   {
@@ -3745,7 +4207,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase.",
+    "description": "Use when reasoning about types — Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase.",
     "path": "iso/27002/types"
   },
   {
@@ -3755,15 +4217,21 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "iso/3166/1"
   },
   {
+    "atom": "country",
+    "name": "country",
+    "description": "Use when reasoning about country — holds a canonical bundle per country and returns the one for an alpha-2 code: its holidays, its VAT treatment, its bank-statement and invoice formats, its signing profile.",
+    "path": "iso/3166/1/country"
+  },
+  {
     "atom": "bg",
     "name": "bg",
-    "description": "Bulgaria (BG) — canonical country bundle.",
+    "description": "Use when reasoning about bg — Bulgaria (BG) — canonical country bundle.",
     "path": "iso/3166/1/country/bg"
   },
   {
     "atom": "validate",
     "name": "validate",
-    "description": "ISO 3166-1 country-code validators.",
+    "description": "Use when reasoning about validate — ISO 3166-1 country-code validators.",
     "path": "iso/3166/1/validate"
   },
   {
@@ -3775,7 +4243,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "validate",
     "name": "validate",
-    "description": "ISO 3166-2 subdivision-code validator.",
+    "description": "Use when reasoning about validate — ISO 3166-2 subdivision-code validator.",
     "path": "iso/3166/2/validate"
   },
   {
@@ -3787,7 +4255,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "validate",
     "name": "validate",
-    "description": "ISO 4217 currency-code validator.",
+    "description": "Use when reasoning about validate — ISO 4217 currency-code validator.",
     "path": "iso/4217/validate"
   },
   {
@@ -3805,7 +4273,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "validate",
     "name": "validate",
-    "description": "ISO 8601 date/time validator.",
+    "description": "Use when reasoning about validate — ISO 8601 date/time validator.",
     "path": "iso/8601/validate"
   },
   {
@@ -3817,7 +4285,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "bic",
     "name": "bic",
-    "description": "ISO 9362 BIC / SWIFT validator.",
+    "description": "Use when reasoning about bic — ISO 9362 BIC / SWIFT validator.",
     "path": "iso/9362/bic"
   },
   {
@@ -3875,6 +4343,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "items/inventory/movements"
   },
   {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — books the movement's value as it is written. Inventory that moves without a posting is a stock figure and a ledger figure that drift apart with nothing between them to notice.",
+    "path": "items/inventory/movements/hooks"
+  },
+  {
     "atom": "packages",
     "name": "packages",
     "description": "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment.",
@@ -3905,6 +4379,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "jobs"
   },
   {
+    "atom": "audit",
+    "name": "audit",
+    "description": "Use when reasoning about audit — builds each tenant's standardised monthly audit file for the month that has closed — is what decides which — and submits it where an mTLS submitter is wired.",
+    "path": "jobs/audit"
+  },
+  {
     "atom": "journal",
     "name": "journal",
     "description": "Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries.",
@@ -3921,6 +4401,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "postings",
     "description": "Use when writing or querying individual debit/credit lines against a journal entry — source type (invoice/bill/payment/adjustment/revaluation), source date, GL account, amount, currency, and ISO-8601 posted-date auto-set on status → posted. The atomic GL line-item that enforces balanced-entry and SOX posting-timestamp requirements.",
     "path": "journal/entries/gl/postings"
+  },
+  {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — is the fundamental law of double entry enforced where the entry is saved. Checking it in a report instead means the unbalanced entry already exists and every statement built on it…",
+    "path": "journal/entries/hooks"
   },
   {
     "atom": "adjustments",
@@ -3949,7 +4435,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "baseline",
     "name": "baseline",
-    "description": "baseline — guardian ceilings from computed math + emitted snapshot.",
+    "description": "Use when reasoning about baseline — baseline — guardian ceilings from computed math + emitted snapshot.",
     "path": "law/folder/baseline"
   },
   {
@@ -3997,7 +4483,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "posting",
     "name": "posting",
-    "description": "Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry.",
+    "description": "Use when reasoning about posting — Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry.",
     "path": "leases/lease/period/postings/hooks/posting"
   },
   {
@@ -4181,6 +4667,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "link/component"
   },
   {
+    "atom": "field",
+    "name": "field",
+    "description": "Use when reasoning about field — builds the field: an internal choice resolves against a collection, an external one takes a URI, and decides how it renders without changing what it means. is that closed set.",
+    "path": "link/field"
+  },
+  {
     "atom": "group",
     "name": "group",
     "description": "Use when reasoning about a group of links.",
@@ -4337,6 +4829,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "media/hooks"
   },
   {
+    "atom": "products",
+    "name": "products",
+    "description": "Use when reasoning about products — is the Payload definition: the product's fields, its access rules, and the hooks beside it that manage the images a product carries.",
+    "path": "media/products"
+  },
+  {
     "atom": "hooks",
     "name": "hooks",
     "description": "Use when reasoning about the products collection's Payload hooks — before/after change and validate logic for products.",
@@ -4357,61 +4855,61 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "allergies",
     "name": "allergies",
-    "description": "Use when reasoning about allergies as a medical facet of [[medical]] — vocabulary pivot to @/allergies; nested not duplicated.",
+    "description": "Use when reasoning about allergies as a medical facet of medical — vocabulary pivot to @/allergies; nested not duplicated.",
     "path": "medical/allergies"
   },
   {
     "atom": "article",
     "name": "article",
-    "description": "Use when reasoning about article as a medical facet of [[medical]] — vocabulary pivot to @/article; nested not duplicated.",
+    "description": "Use when reasoning about article as a medical facet of medical — vocabulary pivot to @/article; nested not duplicated.",
     "path": "medical/article"
   },
   {
     "atom": "audience",
     "name": "audience",
-    "description": "Use when reasoning about audience as a medical facet of [[medical]] — vocabulary pivot to @/audience; nested not duplicated.",
+    "description": "Use when reasoning about audience as a medical facet of medical — vocabulary pivot to @/audience; nested not duplicated.",
     "path": "medical/audience"
   },
   {
     "atom": "business",
     "name": "business",
-    "description": "Use when reasoning about business as a medical facet of [[medical]] — vocabulary pivot to @/business; nested not duplicated.",
+    "description": "Use when reasoning about business as a medical facet of medical — vocabulary pivot to @/business; nested not duplicated.",
     "path": "medical/business"
   },
   {
     "atom": "calculator",
     "name": "calculator",
-    "description": "Use when reasoning about calculator as a medical facet of [[medical]] — vocabulary pivot to @/calculator; nested not duplicated.",
+    "description": "Use when reasoning about calculator as a medical facet of medical — vocabulary pivot to @/calculator; nested not duplicated.",
     "path": "medical/calculator"
   },
   {
     "atom": "cause",
     "name": "cause",
-    "description": "Use when reasoning about cause as a medical facet of [[medical]] — vocabulary pivot to @/cause; nested not duplicated.",
+    "description": "Use when reasoning about cause as a medical facet of medical — vocabulary pivot to @/cause; nested not duplicated.",
     "path": "medical/cause"
   },
   {
     "atom": "clinic",
     "name": "clinic",
-    "description": "Use when reasoning about clinic as a medical facet of [[medical]] — vocabulary pivot to @/clinic; nested not duplicated.",
+    "description": "Use when reasoning about clinic as a medical facet of medical — vocabulary pivot to @/clinic; nested not duplicated.",
     "path": "medical/clinic"
   },
   {
     "atom": "code",
     "name": "code",
-    "description": "Use when reasoning about code as a medical facet of [[medical]] — vocabulary pivot to @/code; nested not duplicated.",
+    "description": "Use when reasoning about code as a medical facet of medical — vocabulary pivot to @/code; nested not duplicated.",
     "path": "medical/code"
   },
   {
     "atom": "condition",
     "name": "condition",
-    "description": "Use when reasoning about condition as a medical facet of [[medical]] — vocabulary pivot to @/condition; nested not duplicated.",
+    "description": "Use when reasoning about condition as a medical facet of medical — vocabulary pivot to @/condition; nested not duplicated.",
     "path": "medical/condition"
   },
   {
     "atom": "contraindication",
     "name": "contraindication",
-    "description": "Use when reasoning about contraindication as a medical facet of [[medical]] — vocabulary pivot to @/contraindication; nested not duplicated.",
+    "description": "Use when reasoning about contraindication as a medical facet of medical — vocabulary pivot to @/contraindication; nested not duplicated.",
     "path": "medical/contraindication"
   },
   {
@@ -4423,247 +4921,247 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "diagnosis",
     "name": "diagnosis",
-    "description": "Use when reasoning about diagnosis as a medical facet of [[medical]] — vocabulary pivot to @/diagnosis; nested not duplicated.",
+    "description": "Use when reasoning about diagnosis as a medical facet of medical — vocabulary pivot to @/diagnosis; nested not duplicated.",
     "path": "medical/diagnosis"
   },
   {
     "atom": "disease",
     "name": "disease",
-    "description": "Use when reasoning about disease as a medical facet of [[medical]] — vocabulary pivot to @/disease; nested not duplicated.",
+    "description": "Use when reasoning about disease as a medical facet of medical — vocabulary pivot to @/disease; nested not duplicated.",
     "path": "medical/disease"
   },
   {
     "atom": "drug",
     "name": "drug",
-    "description": "Use when reasoning about drug as a medical facet of [[medical]] — vocabulary pivot to @/drug; nested not duplicated.",
+    "description": "Use when reasoning about drug as a medical facet of medical — vocabulary pivot to @/drug; nested not duplicated.",
     "path": "medical/drug"
   },
   {
     "atom": "entity",
     "name": "entity",
-    "description": "Use when reasoning about entity as a medical facet of [[medical]] — vocabulary pivot to @/entity; nested not duplicated.",
+    "description": "Use when reasoning about entity as a medical facet of medical — vocabulary pivot to @/entity; nested not duplicated.",
     "path": "medical/entity"
   },
   {
     "atom": "enumeration",
     "name": "enumeration",
-    "description": "Use when reasoning about enumeration as a medical facet of [[medical]] — vocabulary pivot to @/enumeration; nested not duplicated.",
+    "description": "Use when reasoning about enumeration as a medical facet of medical — vocabulary pivot to @/enumeration; nested not duplicated.",
     "path": "medical/enumeration"
   },
   {
     "atom": "estimator",
     "name": "estimator",
-    "description": "Use when reasoning about estimator as a medical facet of [[medical]] — vocabulary pivot to @/estimator; nested not duplicated.",
+    "description": "Use when reasoning about estimator as a medical facet of medical — vocabulary pivot to @/estimator; nested not duplicated.",
     "path": "medical/estimator"
   },
   {
     "atom": "evidence",
     "name": "evidence",
-    "description": "Use when reasoning about evidence as a medical facet of [[medical]] — vocabulary pivot to @/evidence; nested not duplicated.",
+    "description": "Use when reasoning about evidence as a medical facet of medical — vocabulary pivot to @/evidence; nested not duplicated.",
     "path": "medical/evidence"
   },
   {
     "atom": "factor",
     "name": "factor",
-    "description": "Use when reasoning about factor as a medical facet of [[medical]] — vocabulary pivot to @/factor; nested not duplicated.",
+    "description": "Use when reasoning about factor as a medical facet of medical — vocabulary pivot to @/factor; nested not duplicated.",
     "path": "medical/factor"
   },
   {
     "atom": "folder",
     "name": "folder",
-    "description": "Use when reasoning about folder as a medical facet of [[medical]] — vocabulary pivot to @/folder; nested not duplicated.",
+    "description": "Use when reasoning about folder as a medical facet of medical — vocabulary pivot to @/folder; nested not duplicated.",
     "path": "medical/folder"
   },
   {
     "atom": "guideline",
     "name": "guideline",
-    "description": "Use when reasoning about guideline as a medical facet of [[medical]] — vocabulary pivot to @/guideline; nested not duplicated.",
+    "description": "Use when reasoning about guideline as a medical facet of medical — vocabulary pivot to @/guideline; nested not duplicated.",
     "path": "medical/guideline"
   },
   {
     "atom": "hospital",
     "name": "hospital",
-    "description": "Use when reasoning about hospital as a medical facet of [[medical]] — vocabulary pivot to @/hospital; nested not duplicated.",
+    "description": "Use when reasoning about hospital as a medical facet of medical — vocabulary pivot to @/hospital; nested not duplicated.",
     "path": "medical/hospital"
   },
   {
     "atom": "indication",
     "name": "indication",
-    "description": "Use when reasoning about indication as a medical facet of [[medical]] — vocabulary pivot to @/indication; nested not duplicated.",
+    "description": "Use when reasoning about indication as a medical facet of medical — vocabulary pivot to @/indication; nested not duplicated.",
     "path": "medical/indication"
   },
   {
     "atom": "intangible",
     "name": "intangible",
-    "description": "Use when reasoning about intangible as a medical facet of [[medical]] — vocabulary pivot to @/intangible; nested not duplicated.",
+    "description": "Use when reasoning about intangible as a medical facet of medical — vocabulary pivot to @/intangible; nested not duplicated.",
     "path": "medical/intangible"
   },
   {
     "atom": "level",
     "name": "level",
-    "description": "Use when reasoning about level as a medical facet of [[medical]] — vocabulary pivot to @/level; nested not duplicated.",
+    "description": "Use when reasoning about level as a medical facet of medical — vocabulary pivot to @/level; nested not duplicated.",
     "path": "medical/level"
   },
   {
     "atom": "observational",
     "name": "observational",
-    "description": "Use when reasoning about observational as a medical facet of [[medical]] — vocabulary pivot to @/observational; nested not duplicated.",
+    "description": "Use when reasoning about observational as a medical facet of medical — vocabulary pivot to @/observational; nested not duplicated.",
     "path": "medical/observational"
   },
   {
     "atom": "organization",
     "name": "organization",
-    "description": "Use when reasoning about organization as a medical facet of [[medical]] — vocabulary pivot to @/organization; nested not duplicated.",
+    "description": "Use when reasoning about organization as a medical facet of medical — vocabulary pivot to @/organization; nested not duplicated.",
     "path": "medical/organization"
   },
   {
     "atom": "page",
     "name": "page",
-    "description": "Use when reasoning about page as a medical facet of [[medical]] — vocabulary pivot to @/page; nested not duplicated.",
+    "description": "Use when reasoning about page as a medical facet of medical — vocabulary pivot to @/page; nested not duplicated.",
     "path": "medical/page"
   },
   {
     "atom": "panel",
     "name": "panel",
-    "description": "Use when reasoning about panel as a medical facet of [[medical]] — vocabulary pivot to @/panel; nested not duplicated.",
+    "description": "Use when reasoning about panel as a medical facet of medical — vocabulary pivot to @/panel; nested not duplicated.",
     "path": "medical/panel"
   },
   {
     "atom": "patient",
     "name": "patient",
-    "description": "Use when reasoning about patient as a medical facet of [[medical]] — vocabulary pivot to @/patient; nested not duplicated.",
+    "description": "Use when reasoning about patient as a medical facet of medical — vocabulary pivot to @/patient; nested not duplicated.",
     "path": "medical/patient"
   },
   {
     "atom": "physician",
     "name": "physician",
-    "description": "Use when reasoning about physician as a medical facet of [[medical]] — vocabulary pivot to @/physician; nested not duplicated.",
+    "description": "Use when reasoning about physician as a medical facet of medical — vocabulary pivot to @/physician; nested not duplicated.",
     "path": "medical/physician"
   },
   {
     "atom": "prescription",
     "name": "prescription",
-    "description": "Use when reasoning about prescription as a medical facet of [[medical]] — vocabulary pivot to @/prescription; nested not duplicated.",
+    "description": "Use when reasoning about prescription as a medical facet of medical — vocabulary pivot to @/prescription; nested not duplicated.",
     "path": "medical/prescription"
   },
   {
     "atom": "procedure",
     "name": "procedure",
-    "description": "Use when reasoning about procedure as a medical facet of [[medical]] — vocabulary pivot to @/procedure; nested not duplicated.",
+    "description": "Use when reasoning about procedure as a medical facet of medical — vocabulary pivot to @/procedure; nested not duplicated.",
     "path": "medical/procedure"
   },
   {
     "atom": "purpose",
     "name": "purpose",
-    "description": "Use when reasoning about purpose as a medical facet of [[medical]] — vocabulary pivot to @/purpose; nested not duplicated.",
+    "description": "Use when reasoning about purpose as a medical facet of medical — vocabulary pivot to @/purpose; nested not duplicated.",
     "path": "medical/purpose"
   },
   {
     "atom": "recommendation",
     "name": "recommendation",
-    "description": "Use when reasoning about recommendation as a medical facet of [[medical]] — vocabulary pivot to @/recommendation; nested not duplicated.",
+    "description": "Use when reasoning about recommendation as a medical facet of medical — vocabulary pivot to @/recommendation; nested not duplicated.",
     "path": "medical/recommendation"
   },
   {
     "atom": "risk",
     "name": "risk",
-    "description": "Use when reasoning about risk as a medical facet of [[medical]] — vocabulary pivot to @/risk; nested not duplicated.",
+    "description": "Use when reasoning about risk as a medical facet of medical — vocabulary pivot to @/risk; nested not duplicated.",
     "path": "medical/risk"
   },
   {
     "atom": "scholarly",
     "name": "scholarly",
-    "description": "Use when reasoning about scholarly as a medical facet of [[medical]] — vocabulary pivot to @/scholarly; nested not duplicated.",
+    "description": "Use when reasoning about scholarly as a medical facet of medical — vocabulary pivot to @/scholarly; nested not duplicated.",
     "path": "medical/scholarly"
   },
   {
     "atom": "score",
     "name": "score",
-    "description": "Use when reasoning about score as a medical facet of [[medical]] — vocabulary pivot to @/score; nested not duplicated.",
+    "description": "Use when reasoning about score as a medical facet of medical — vocabulary pivot to @/score; nested not duplicated.",
     "path": "medical/score"
   },
   {
     "atom": "sign",
     "name": "sign",
-    "description": "Use when reasoning about sign as a medical facet of [[medical]] — vocabulary pivot to @/sign; nested not duplicated.",
+    "description": "Use when reasoning about sign as a medical facet of medical — vocabulary pivot to @/sign; nested not duplicated.",
     "path": "medical/sign"
   },
   {
     "atom": "specialty",
     "name": "specialty",
-    "description": "Use when reasoning about specialty as a medical facet of [[medical]] — vocabulary pivot to @/specialty; nested not duplicated.",
+    "description": "Use when reasoning about specialty as a medical facet of medical — vocabulary pivot to @/specialty; nested not duplicated.",
     "path": "medical/specialty"
   },
   {
     "atom": "stage",
     "name": "stage",
-    "description": "Use when reasoning about stage as a medical facet of [[medical]] — vocabulary pivot to @/stage; nested not duplicated.",
+    "description": "Use when reasoning about stage as a medical facet of medical — vocabulary pivot to @/stage; nested not duplicated.",
     "path": "medical/stage"
   },
   {
     "atom": "status",
     "name": "status",
-    "description": "Use when reasoning about status as a medical facet of [[medical]] — vocabulary pivot to @/status; nested not duplicated.",
+    "description": "Use when reasoning about status as a medical facet of medical — vocabulary pivot to @/status; nested not duplicated.",
     "path": "medical/status"
   },
   {
     "atom": "study",
     "name": "study",
-    "description": "Use when reasoning about study as a medical facet of [[medical]] — vocabulary pivot to @/study; nested not duplicated.",
+    "description": "Use when reasoning about study as a medical facet of medical — vocabulary pivot to @/study; nested not duplicated.",
     "path": "medical/study"
   },
   {
     "atom": "surgery",
     "name": "surgery",
-    "description": "Use when reasoning about surgery as a medical facet of [[medical]] — vocabulary pivot to @/surgery; nested not duplicated.",
+    "description": "Use when reasoning about surgery as a medical facet of medical — vocabulary pivot to @/surgery; nested not duplicated.",
     "path": "medical/surgery"
   },
   {
     "atom": "symptom",
     "name": "symptom",
-    "description": "Use when reasoning about symptom as a medical facet of [[medical]] — vocabulary pivot to @/symptom; nested not duplicated.",
+    "description": "Use when reasoning about symptom as a medical facet of medical — vocabulary pivot to @/symptom; nested not duplicated.",
     "path": "medical/symptom"
   },
   {
     "atom": "technique",
     "name": "technique",
-    "description": "Use when reasoning about technique as a medical facet of [[medical]] — vocabulary pivot to @/technique; nested not duplicated.",
+    "description": "Use when reasoning about technique as a medical facet of medical — vocabulary pivot to @/technique; nested not duplicated.",
     "path": "medical/technique"
   },
   {
     "atom": "test",
     "name": "test",
-    "description": "Use when reasoning about test as a medical facet of [[medical]] — vocabulary pivot to @/test; nested not duplicated.",
+    "description": "Use when reasoning about test as a medical facet of medical — vocabulary pivot to @/test; nested not duplicated.",
     "path": "medical/test"
   },
   {
     "atom": "therapy",
     "name": "therapy",
-    "description": "Use when reasoning about therapy as a medical facet of [[medical]] — vocabulary pivot to @/therapy; nested not duplicated.",
+    "description": "Use when reasoning about therapy as a medical facet of medical — vocabulary pivot to @/therapy; nested not duplicated.",
     "path": "medical/therapy"
   },
   {
     "atom": "treatment",
     "name": "treatment",
-    "description": "Use when reasoning about treatment as a medical facet of [[medical]] — vocabulary pivot to @/treatment; nested not duplicated.",
+    "description": "Use when reasoning about treatment as a medical facet of medical — vocabulary pivot to @/treatment; nested not duplicated.",
     "path": "medical/treatment"
   },
   {
     "atom": "trial",
     "name": "trial",
-    "description": "Use when reasoning about trial as a medical facet of [[medical]] — vocabulary pivot to @/trial; nested not duplicated.",
+    "description": "Use when reasoning about trial as a medical facet of medical — vocabulary pivot to @/trial; nested not duplicated.",
     "path": "medical/trial"
   },
   {
     "atom": "type",
     "name": "type",
-    "description": "Use when reasoning about type as a medical facet of [[medical]] — vocabulary pivot to @/type; nested not duplicated.",
+    "description": "Use when reasoning about type as a medical facet of medical — vocabulary pivot to @/type; nested not duplicated.",
     "path": "medical/type"
   },
   {
     "atom": "web",
     "name": "web",
-    "description": "Use when reasoning about web as a medical facet of [[medical]] — vocabulary pivot to @/web; nested not duplicated.",
+    "description": "Use when reasoning about web as a medical facet of medical — vocabulary pivot to @/web; nested not duplicated.",
     "path": "medical/web"
   },
   {
@@ -4675,7 +5173,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "memories",
     "name": "memories",
-    "description": "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice ([[memory/architecture]]); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key).",
+    "description": "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice (memory/architecture); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key).",
     "path": "memories"
   },
   {
@@ -4721,6 +5219,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "merge"
   },
   {
+    "atom": "fold",
+    "name": "fold",
+    "description": "Use when reasoning about fold — and the folds built on it: , , , and the two roots · .",
+    "path": "merge/fold"
+  },
+  {
+    "atom": "order",
+    "name": "order",
+    "description": "Use when reasoning about order — erpax folds content-uuids to a root in two different ways, and both are correct for what they answer:",
+    "path": "merge/order"
+  },
+  {
     "atom": "mesh",
     "name": "mesh",
     "description": "Use when querying the whole ERP as one graph — atoms ⊕ parsed import edges ⊕ standards citations, wave-schedulable; the clause→code trace as a query.",
@@ -4763,6 +5273,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "metric"
   },
   {
+    "atom": "face",
+    "name": "face",
+    "description": "Use when reasoning about face — Every number in this session reached its reader as a sentence. *\"48 blind probes\"*, *\"1.6× slower cached\"*, *\"237 dead pointers\"* — each true when written, none checkable by the…",
+    "path": "metric/face"
+  },
+  {
     "atom": "migrate",
     "name": "migrate",
     "description": "Use when collapsing structural violations into the canonical four-file atom — the computable migrating skills that run with zero manual work.",
@@ -4789,7 +5305,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "closure",
     "name": "closure",
-    "description": "Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
+    "description": "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
     "path": "millennium/closure"
   },
   {
@@ -4831,7 +5347,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "money",
     "name": "money",
-    "description": "`Money` value type — integer-cents amount + ISO 4217 currency.",
+    "description": "Use when reasoning about money — `Money` value type — integer-cents amount + ISO 4217 currency.",
     "path": "money/money"
   },
   {
@@ -4855,7 +5371,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "improve",
     "name": "improve",
-    "description": "monitor/violations/improve — map violation → deterministic improve action.",
+    "description": "Use when reasoning about improve — monitor/violations/improve — map violation → deterministic improve action.",
     "path": "monitor/violations/improve"
   },
   {
@@ -4877,6 +5393,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "multi/currency/closing"
   },
   {
+    "atom": "search",
+    "name": "search",
+    "description": "Use when reasoning about search — Identification answers a typed identifier. Anything else routes here: runs a tenant-scoped query across the collections in scope, ORing over the text fields reports for each, and…",
+    "path": "multi/search"
+  },
+  {
     "atom": "rev2",
     "name": "rev2",
     "description": "Use when implementing or referencing NACE Rev. 2.",
@@ -4891,13 +5413,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "scope",
     "name": "scope",
-    "description": "Наредба Н-18 чл.",
+    "description": "Use when reasoning about scope — Наредба Н-18 чл.",
     "path": "naredba/n/18/scope"
   },
   {
     "atom": "unp",
     "name": "unp",
-    "description": "Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number).",
+    "description": "Use when reasoning about unp — Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number).",
     "path": "naredba/n/18/unp"
   },
   {
@@ -4911,6 +5433,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "navigation",
     "description": "Use when reasoning about navigation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "navigation"
+  },
+  {
+    "atom": "groups",
+    "name": "groups",
+    "description": "Use when reasoning about groups — names the one-word parents that root vocabulary nests under, and derives each atom's admin group from its path prefix. decides membership.",
+    "path": "navigation/groups"
   },
   {
     "atom": "nerve",
@@ -4927,13 +5455,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "conventions",
     "name": "conventions",
-    "description": "Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language.",
+    "description": "Use when reasoning about conventions — Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language.",
     "path": "nist/incits/359/conventions"
   },
   {
     "atom": "predicates",
     "name": "predicates",
-    "description": "Pure predicates over {@link RoleDefinition} rows (`roles` collection).",
+    "description": "Use when reasoning about predicates — Pure predicates over {@link RoleDefinition} rows (`roles` collection).",
     "path": "nist/incits/359/predicates"
   },
   {
@@ -5017,7 +5545,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "orchestrate",
     "name": "orchestrate",
-    "description": "Quantum orchestration engine for parallel Millennium Problem computation",
+    "description": "Use when reasoning about orchestrate — Quantum orchestration engine for parallel Millennium Problem computation",
     "path": "orchestrate"
   },
   {
@@ -5029,7 +5557,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "bg",
     "name": "bg",
-    "description": "Use for the two Bulgarian rails erpax codes against — БНБ daily exchange rates (CODE/REVERSERATE/RATE XML) and Търговски Регистър merchant lookup by дело. Both addresses were dead in production and are now fixed and captured; the contracts pin the euro-era shape, the DD.MM.YYYY fixing date, and the two 200-under-HTML traps that make a working endpoint read as no data.",
+    "description": "Use when reasoning about bg — Use for the two Bulgarian rails erpax codes against — БНБ daily exchange rates (CODE/REVERSERATE/RATE XML) and Търговски Регистър merchant lookup by дело. Both addresses were dead in production and are now fixed and captured; the contracts pin the euro-era shape, the DD.MM.YYYY fixing date, and the two 200-under-HTML traps that make a working endpoint read as no data.",
     "path": "outward/bg"
   },
   {
@@ -5053,7 +5581,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "world",
     "name": "world",
-    "description": "Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200.",
+    "description": "Use when reasoning about world — Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200.",
     "path": "outward/world"
   },
   {
@@ -5091,6 +5619,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "page",
     "description": "Use when reasoning about page as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "page"
+  },
+  {
+    "atom": "range",
+    "name": "range",
+    "description": "Use when reasoning about range — renders which slice of a result set is being shown. The component is because it is JSX; this barrel re-exports it so importers name the atom rather than the spelling of its file.",
+    "path": "page/range"
   },
   {
     "atom": "pagination",
@@ -5153,6 +5687,36 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "path/fold"
   },
   {
+    "atom": "payable",
+    "name": "payable",
+    "description": "Use when reasoning about payable — The A/P field factories: the shapes a bill carries — bill number, vendor, due date, payment terms, A/P analysis. (the type module) is a set of these; this atom is the one.",
+    "path": "payable"
+  },
+  {
+    "atom": "aging",
+    "name": "aging",
+    "description": "Use when reasoning about aging — Wraps party/aging with A/P-shaped output — , — and adds the cash-flow-impact section the payables side needs and the receivables side does not.",
+    "path": "payable/aging"
+  },
+  {
+    "atom": "analytics",
+    "name": "analytics",
+    "description": "Use when reasoning about analytics — Days Payable Outstanding, vendor performance and spend analysis over the bill set.",
+    "path": "payable/analytics"
+  },
+  {
+    "atom": "discounts",
+    "name": "discounts",
+    "description": "Use when reasoning about discounts — \"2/10 Net 30\" — 2% off if paid within 10 days, otherwise the full balance at 30.",
+    "path": "payable/discounts"
+  },
+  {
+    "atom": "workflow",
+    "name": "workflow",
+    "description": "Use when reasoning about workflow — A bill moves through a fixed set of states, and only along edges the graph allows.",
+    "path": "payable/workflow"
+  },
+  {
     "atom": "payload",
     "name": "payload",
     "description": "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid.",
@@ -5165,6 +5729,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "payload/command"
   },
   {
+    "atom": "redirect",
+    "name": "redirect",
+    "description": "Use when reasoning about redirect — resolves a requested path against the redirects collection and sends the reader on.",
+    "path": "payload/redirect"
+  },
+  {
+    "atom": "sdk",
+    "name": "sdk",
+    "description": "Use when reasoning about sdk — resolves the API base URL for the runtime it finds itself in, then returns a singleton in the browser and a fresh instance on the server.",
+    "path": "payload/sdk"
+  },
+  {
     "atom": "payment",
     "name": "payment",
     "description": "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle.",
@@ -5175,6 +5751,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "methods",
     "description": "Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection.",
     "path": "payment/methods"
+  },
+  {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — Every hook sibling is re-exported here, so a collection writes rather than naming each file.",
+    "path": "payment/methods/hooks"
   },
   {
     "atom": "peace",
@@ -5191,7 +5773,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931.",
+    "description": "Use when reasoning about types — Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931.",
     "path": "peppol/bis/3/types"
   },
   {
@@ -5245,7 +5827,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "pivot",
     "name": "pivot",
-    "description": "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for [[readme]].",
+    "description": "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for readme.",
     "path": "pivot"
   },
   {
@@ -5267,6 +5849,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "platform"
   },
   {
+    "atom": "readiness",
+    "name": "readiness",
+    "description": "Use when reasoning about readiness — enumerates the live MCP tool surface and groups it; folds that into a single manifest a reader can act on.",
+    "path": "platform/readiness"
+  },
+  {
     "atom": "platonic",
     "name": "platonic",
     "description": "Use when the sphere must be understood as swept, not given — each of the five regular solids has a circumsphere, rotation is an isometry, so a vertex in motion never leaves it, and the orbit fills the sphere. The vertices are the seeds; what rounds them to a sphere is gravity = the fold: the central pull to equal distance. The octahedron's 6 vertices are the 6 globe directions. Rigorous geometry; the corpus mapping is a model.",
@@ -5275,7 +5863,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "plugin",
     "name": "plugin",
-    "description": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a [[diamond]] — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions.",
+    "description": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a diamond — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions.",
     "path": "plugin"
   },
   {
@@ -5287,7 +5875,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "emit",
     "name": "emit",
-    "description": "plugins/emit — generate Claude Code plugin manifests for erpax.",
+    "description": "Use when reasoning about emit — plugins/emit — generate Claude Code plugin manifests for erpax.",
     "path": "plugins/emit"
   },
   {
@@ -5295,6 +5883,24 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "scopes",
     "description": "Use when collapsing MCP api-key capability columns to a compact deny-list — the matrix→cross collapse for @payloadcms/plugin-mcp at erpax scale (D1 100-col cap); virtual afterRead repopulates the handler's read shape default-open, narrowed by scopes.deny.",
     "path": "plugins/mcp/scopes"
+  },
+  {
+    "atom": "naming",
+    "name": "naming",
+    "description": "Use when reasoning about naming — names every internal table and column by content-addressing the path it sits at.",
+    "path": "plugins/naming"
+  },
+  {
+    "atom": "taggable",
+    "name": "taggable",
+    "description": "Use when reasoning about taggable — makes every record taggable without adding a relationship per collection: the tag references the record's **content-uuid**, so one edge type reaches everything.",
+    "path": "plugins/taggable"
+  },
+  {
+    "atom": "versions",
+    "name": "versions",
+    "description": "Use when reasoning about versions — turns on Payload's native for every collection except those named in , with bounding the history.",
+    "path": "plugins/versions"
   },
   {
     "atom": "port",
@@ -5347,7 +5953,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "pqc",
     "name": "pqc",
-    "description": "NIST post-quantum cryptography (Kyber-768 + SPHINCS+)",
+    "description": "Use when reasoning about pqc — NIST post-quantum cryptography (Kyber-768 + SPHINCS+)",
     "path": "pqc"
   },
   {
@@ -5369,16 +5975,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "product"
   },
   {
+    "atom": "price",
+    "name": "price",
+    "description": "Use when reasoning about price — The ecommerce plugin generates one column per supported currency. resolves the right one for the requested currency and renders it, so application code never names and never…",
+    "path": "product/price"
+  },
+  {
     "atom": "proof",
     "name": "proof",
     "description": "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost.",
     "path": "proof"
   },
   {
+    "atom": "accepted",
+    "name": "accepted",
+    "description": "Use when reasoning about accepted — erpax carries Lean under . **Nothing ran it** — no CI lane, no npm script, no import. Asked, the kernel answers:",
+    "path": "proof/accepted"
+  },
+  {
     "atom": "projection",
     "name": "projection",
     "description": "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle.",
     "path": "proof/projection"
+  },
+  {
+    "atom": "register",
+    "name": "register",
+    "description": "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**.",
+    "path": "proof/register"
+  },
+  {
+    "atom": "replaceable",
+    "name": "replaceable",
+    "description": "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…",
+    "path": "proof/replaceable"
   },
   {
     "atom": "properties",
@@ -5401,13 +6031,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "provider",
     "name": "provider",
-    "description": "Use when reasoning about provider — The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider m",
+    "description": "Use when wiring the app-wide React context tree — the one place theme, computed-CSS and header-theme providers wrap the frontend. A client provider is imported from its own module, never through a barrel that also exports Node fs matter: the @/css barrel exports computeCssDiamond, and pulling it into the browser chunk 500s the Worker homepage.",
     "path": "provider"
+  },
+  {
+    "atom": "theme",
+    "name": "theme",
+    "description": "Use when reasoning about theme — The site theme is one value ( ). The header's is a second, because the header floats over whatever the page puts beneath it: a full-bleed hero paints a dark field and white text…",
+    "path": "providers/header/theme"
+  },
+  {
+    "atom": "theme",
+    "name": "theme",
+    "description": "Use when reasoning about theme — Three states, not two. A theme can be **light**, **dark**, or **unset** — and unset does not mean a default was chosen, it means *follow the operating system*.",
+    "path": "providers/theme"
+  },
+  {
+    "atom": "theme",
+    "name": "theme",
+    "description": "Use when reasoning about theme — A theme applied by React is applied *after* hydration, and hydration happens after first paint.",
+    "path": "providers/theme/init/theme"
+  },
+  {
+    "atom": "selector",
+    "name": "selector",
+    "description": "Use when reasoning about selector — The control that lets a person choose light, dark, or **auto**. Auto is not a synonym for the current system value: choosing it *clears* the stored preference, so the page follows…",
+    "path": "providers/theme/theme/selector"
   },
   {
     "atom": "publication",
     "name": "publication",
-    "description": "Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication",
+    "description": "Use when reasoning about publication — Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication",
     "path": "publication"
   },
   {
@@ -5415,6 +6069,30 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "publish",
     "description": "Use when automating commit and push — the local agent that performs the git action, but ONLY through the computed decision (decide), trained on quantum security (tamper · quantum) and the standards, fail-closed, with a tamper-evident uuid-chained receipt. It pushes because the gates said yes, never because it was told to.",
     "path": "publish"
+  },
+  {
+    "atom": "complete",
+    "name": "complete",
+    "description": "Use when reasoning about complete — Completeness is **required**, and it is not what a single listing reports.",
+    "path": "publish/complete"
+  },
+  {
+    "atom": "harvest",
+    "name": "harvest",
+    "description": "Use when reasoning about harvest — rules/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted and logged .",
+    "path": "publish/harvest"
+  },
+  {
+    "atom": "paper",
+    "name": "paper",
+    "description": "Use when a sealed claim might warrant a publication — emits a lean LaTeX paper and an HONEST prior-art verdict, where an empty Zenodo search is a lead and never a finding.",
+    "path": "publish/paper"
+  },
+  {
+    "atom": "registry",
+    "name": "registry",
+    "description": "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand.",
+    "path": "publish/registry"
   },
   {
     "atom": "pwa",
@@ -5465,6 +6143,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/boundary"
   },
   {
+    "atom": "budget",
+    "name": "budget",
+    "description": "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use.",
+    "path": "quantum/budget"
+  },
+  {
     "atom": "cache",
     "name": "cache",
     "description": "Use when caching by content — the content is its own key (its content-uuid), so the same content is always a hit and a changed input is auto-invalidated; dedup by design with no stale-cache bug.",
@@ -5491,19 +6175,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "coverage",
     "name": "coverage",
-    "description": "Coverage calculation — measure answered question fraction",
+    "description": "Use when reasoning about coverage — Coverage calculation — measure answered question fraction",
     "path": "quantum/chat/coverage"
   },
   {
     "atom": "merkle",
     "name": "merkle",
-    "description": "Merkle chain operations — fold message-uuids into tamper-evident thread-uuids",
+    "description": "Use when reasoning about merkle — Merkle chain operations — fold message-uuids into tamper-evident thread-uuids",
     "path": "quantum/chat/merkle"
   },
   {
     "atom": "routing",
     "name": "routing",
-    "description": "Session routing — improve, append, seal chat sessions",
+    "description": "Use when reasoning about routing — Session routing — improve, append, seal chat sessions",
     "path": "quantum/chat/routing"
   },
   {
@@ -5653,7 +6337,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "cipher",
     "name": "cipher",
-    "description": "Ciphertext-only receipts that seal plaintext boundaries",
+    "description": "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries",
     "path": "quantum/fold/cipher"
   },
   {
@@ -5683,13 +6367,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "constants",
     "name": "constants",
-    "description": "Quantum FTL constants — paths, endpoints, boundary, defaults",
+    "description": "Use when reasoning about constants — Quantum FTL constants — paths, endpoints, boundary, defaults",
     "path": "quantum/ftl/constants"
   },
   {
     "atom": "crack",
     "name": "crack",
-    "description": "Quantum FTL crack detection — boundaries, crack patterns, discovery",
+    "description": "Use when reasoning about crack — Quantum FTL crack detection — boundaries, crack patterns, discovery",
     "path": "quantum/ftl/crack"
   },
   {
@@ -5701,7 +6385,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "metrics",
     "name": "metrics",
-    "description": "Quantum FTL metrics — reuse and amortization calculations",
+    "description": "Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations",
     "path": "quantum/ftl/metrics"
   },
   {
@@ -5741,10 +6425,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/gravity"
   },
   {
+    "atom": "hexbit",
+    "name": "hexbit",
+    "description": "Use when reasoning about hexbit — *\"Hexbits compute faster than all else\"* is two claims wearing one sentence, and they have **opposite** answers.",
+    "path": "quantum/hexbit"
+  },
+  {
     "atom": "import",
     "name": "import",
     "description": "Use when reasoning about quantum computed import — barrel entanglement derived from each file's live import/wikilink set, never hand-annotated; deep paths are escapes that collapse to @/x.",
     "path": "quantum/import"
+  },
+  {
+    "atom": "interval",
+    "name": "interval",
+    "description": "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs.",
+    "path": "quantum/interval"
   },
   {
     "atom": "karma",
@@ -5963,6 +6659,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "query"
   },
   {
+    "atom": "fingerprint",
+    "name": "fingerprint",
+    "description": "Use when reasoning about fingerprint — normalises a statement and addresses it, so the same query issued from two places is recognisably one query. records the execution against that address.",
+    "path": "query/fingerprint"
+  },
+  {
     "atom": "readings",
     "name": "readings",
     "description": "Use when reasoning about clinical and biometric readings — a device-collapsed, content-addressed snapshot that feeds the analog result stream; the wire between quantum/device capture and quantum/emr replay.",
@@ -5983,7 +6685,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "regen",
     "name": "regen",
-    "description": "readme/regen — focused computed-face regen (avoids full-corpus `pnpm readme` OOM).",
+    "description": "Use when reasoning about regen — readme/regen — focused computed-face regen (avoids full-corpus `pnpm readme` OOM).",
     "path": "readme/regen"
   },
   {
@@ -6023,9 +6725,39 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "receipts"
   },
   {
+    "atom": "receivable",
+    "name": "receivable",
+    "description": "Use when reasoning about receivable — The A/R field factories: the shapes an invoice carries — invoice number, status, due date, payment terms, A/R analysis. (the type module) is a set of these; this atom is the one.",
+    "path": "receivable"
+  },
+  {
+    "atom": "aging",
+    "name": "aging",
+    "description": "Use when reasoning about aging — Wraps party/aging with A/R-shaped output — , . The bucket math is identical to payable/aging; only the naming differs, and the two stay separate so each side names its own…",
+    "path": "receivable/aging"
+  },
+  {
+    "atom": "allowance",
+    "name": "allowance",
+    "description": "Use when reasoning about allowance — The allowance for doubtful accounts as an IFRS 9 §5.5 expected-credit-loss estimate driven by the aging buckets: each bucket carries a loss rate, and the allowance is their…",
+    "path": "receivable/allowance"
+  },
+  {
+    "atom": "analytics",
+    "name": "analytics",
+    "description": "Use when reasoning about analytics — Days Sales Outstanding, receivables turnover and the collection effectiveness index over the invoice set — the A/R mirror of payable/analytics.",
+    "path": "receivable/analytics"
+  },
+  {
+    "atom": "workflow",
+    "name": "workflow",
+    "description": "Use when reasoning about workflow — An invoice moves through a fixed set of states, and only along edges the graph allows.",
+    "path": "receivable/workflow"
+  },
+  {
     "atom": "recursive",
     "name": "recursive",
-    "description": "Recursive basis recognition - system generates and observes itself simultaneously",
+    "description": "Use when reasoning about recursive — Recursive basis recognition - system generates and observes itself simultaneously",
     "path": "recursive"
   },
   {
@@ -6075,6 +6807,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "render",
     "description": "Use when you need the full sensory face of an atom — the content-uuid rendered to colour AND sound AND vibration at once; all three are projections of the one uuid's digit, so a stream of uuids is the analog aura, no payload.",
     "path": "render"
+  },
+  {
+    "atom": "scene",
+    "name": "scene",
+    "description": "Use when reasoning about scene — render already projects one content-uuid to **colour · sound · vibration**.",
+    "path": "render/scene"
+  },
+  {
+    "atom": "page",
+    "name": "page",
+    "description": "Use when reasoning about page — A public tenant page is a hero followed by its layout blocks, inside an . That is the whole atom, and its value is that it exists **once**: the same composition served from the…",
+    "path": "render/tenant/page"
   },
   {
     "atom": "report",
@@ -6259,7 +7003,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "cache",
     "name": "cache",
-    "description": "Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches.",
+    "description": "Use when reasoning about cache — Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches.",
     "path": "rfc/9110/cache"
   },
   {
@@ -6271,20 +7015,26 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "document",
     "name": "document",
-    "description": "RFC 9110 §13 cached document fetcher (single doc by collection + slug).",
+    "description": "Use when reasoning about document — RFC 9110 §13 cached document fetcher (single doc by collection + slug).",
     "path": "rfc/9110/get/document"
   },
   {
     "atom": "globals",
     "name": "globals",
-    "description": "RFC 9110 §13 cached global fetcher (per-locale).",
+    "description": "Use when reasoning about globals — RFC 9110 §13 cached global fetcher (per-locale).",
     "path": "rfc/9110/get/globals"
   },
   {
     "atom": "redirects",
     "name": "redirects",
-    "description": "RFC 9110 §13 cached redirects-collection fetcher.",
+    "description": "Use when reasoning about redirects — RFC 9110 §13 cached redirects-collection fetcher.",
     "path": "rfc/9110/get/redirects"
+  },
+  {
+    "atom": "text",
+    "name": "text",
+    "description": "Use when reasoning about text — Lexical's serialized state becomes a React tree here. Most of that is the library's own default converters; what this atom decides is the small part the library cannot know.",
+    "path": "rich/text"
   },
   {
     "atom": "risk",
@@ -6407,10 +7157,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "roles/hooks"
   },
   {
+    "atom": "registry",
+    "name": "registry",
+    "description": "Use when reasoning about registry — binds each role to the standards it answers to and the chain steps it may execute.",
+    "path": "roles/registry"
+  },
+  {
     "atom": "roles",
     "name": "roles",
     "description": "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.",
     "path": "roles/user/roles"
+  },
+  {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — refuses a second grant of a role a user already holds. Without it the same role accumulates rows, and every count of \"who has this\" is wrong by however many times someone clicked.",
+    "path": "roles/user/roles/hooks"
   },
   {
     "atom": "roof",
@@ -6491,6 +7253,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules"
   },
   {
+    "atom": "alt",
+    "name": "alt",
+    "description": "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable).",
+    "path": "rules/alt"
+  },
+  {
     "atom": "ask",
     "name": "ask",
     "description": "Use when measuring or reducing the human-typing cost — a required field with no defaultValue and no computed value is a bare ask. User input is the highest cost in an ERP: it costs attention, invites error, and is re-paid on every document forever. If the law, the tenant, the sequence or the clock determines the value, predefine it case by case and the user CONFIRMS instead of types. What remains is the irreducible ask: the user's actual intent. Run: tsx src/rules/ask/index.ts",
@@ -6521,6 +7289,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/collapse"
   },
   {
+    "atom": "command",
+    "name": "command",
+    "description": "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed.",
+    "path": "rules/command"
+  },
+  {
     "atom": "compatibility",
     "name": "compatibility",
     "description": "Use when a corpus atom's name might collide with the framework — ISO/IEC 25010 §5.3 co-existence: an atom folder whose leaf is a framework-reserved router namespace (pages) is misparsed by Next.js and breaks the build; the gate that seals the engineering FORM trinity.",
@@ -6529,7 +7303,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "concentration",
     "name": "concentration",
-    "description": "rules/concentration — detect logic concentrated in hub index.ts vs child atoms.",
+    "description": "Use when reasoning about concentration — rules/concentration — detect logic concentrated in hub index.ts vs child atoms.",
     "path": "rules/concentration"
   },
   {
@@ -6539,10 +7313,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/confine"
   },
   {
+    "atom": "copy",
+    "name": "copy",
+    "description": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…",
+    "path": "rules/copy"
+  },
+  {
     "atom": "cycle",
     "name": "cycle",
     "description": "Use when a module reads a binding that does not exist yet — 'Cannot access X before initialization'. Reports the strongly connected components of the runtime import graph: sets of files that can all reach each other, where initialisation order is decided by accident. Type imports are not edges. Run: tsx src/rules/cycle/index.ts",
     "path": "rules/cycle"
+  },
+  {
+    "atom": "domain",
+    "name": "domain",
+    "description": "Use when reasoning about domain — Four cracks in one session, and the same gap behind three of them:",
+    "path": "rules/domain"
+  },
+  {
+    "atom": "drift",
+    "name": "drift",
+    "description": "Use when reasoning about drift — The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom is minted.",
+    "path": "rules/drift"
   },
   {
     "atom": "echo",
@@ -6555,6 +7347,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "face",
     "description": "Use when a refactor moves matter between atoms — a split may relocate anything, but an atom that stops offering a name breaks every caller silently. Snapshot corpusFace before, compare after; a LOST name fails closed, a gained one is free. Replayed against the commit that split four concentration hubs, it catches the drop that commit made.",
     "path": "rules/face"
+  },
+  {
+    "atom": "forge",
+    "name": "forge",
+    "description": "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist.",
+    "path": "rules/forge"
   },
   {
     "atom": "hyphen",
@@ -6575,6 +7373,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/manifest"
   },
   {
+    "atom": "mirror",
+    "name": "mirror",
+    "description": "Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it.",
+    "path": "rules/mirror"
+  },
+  {
+    "atom": "probe",
+    "name": "probe",
+    "description": "Use when reasoning about probe — For a React atom the answer is **yes** and this returns **no**. Its barrel is , because JSX does not parse from a file — that is not a stylistic variant, it is the only spelling…",
+    "path": "rules/probe"
+  },
+  {
     "atom": "prose",
     "name": "prose",
     "description": "Use when checking that technical prose cites real code — a SKILL naming a function nothing defines is a citation leading nowhere, and it is worse than a dead path because it reads as true. Wired into confirm, it refuses the claim at the write, so an agent must edit CODE rather than write a sentence about code it has not written. Only SKILLs beside an index.ts are judged; a lexicon atom is prose by design. Run: tsx src/rules/prose/index.ts",
@@ -6593,6 +7403,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/refutable"
   },
   {
+    "atom": "slack",
+    "name": "slack",
+    "description": "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist.",
+    "path": "rules/slack"
+  },
+  {
     "atom": "unfolded",
     "name": "unfolded",
     "description": "Use when checking that an export earns its place — a symbol with no caller is dead, and one with exactly one caller is un-folded (inline it, delete it, or make it reused). Counts real call sites only: an import or re-export NAMES a symbol without USING it, so counting it hides genuine single-use. Candidates, never a purge list — erpax ships as @erpax/* packages, so an export may be the public face with no in-repo caller. Run: tsx src/rules/unfolded/index.ts",
@@ -6603,6 +7419,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "unraised",
     "description": "Use when a declared failure kind is never raised — a `…Kind` union member that nothing in src ever constructs is a check that cannot fire, so its claim defaults to TRUE by omission. Parsed via ts.createSourceFile, never matched. Run: tsx src/rules/unraised/index.ts",
     "path": "rules/unraised"
+  },
+  {
+    "atom": "unreached",
+    "name": "unreached",
+    "description": "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…",
+    "path": "rules/unreached"
   },
   {
     "atom": "run",
@@ -6685,7 +7507,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Canonical OECD SAF-T 2.0 types — audit-file projection.",
+    "description": "Use when reasoning about types — Canonical OECD SAF-T 2.0 types — audit-file projection.",
     "path": "saf/t/types"
   },
   {
@@ -6693,6 +7515,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "safety",
     "description": "Use when reasoning about safety as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "safety"
+  },
+  {
+    "atom": "mode",
+    "name": "mode",
+    "description": "Use when reasoning about mode — reads the operating mode and refuses an operation the mode does not permit; fails closed rather than degrading.",
+    "path": "safety/mode"
   },
   {
     "atom": "salary",
@@ -6845,6 +7673,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "scheduled"
   },
   {
+    "atom": "task",
+    "name": "task",
+    "description": "Use when reasoning about task — The barrel binds the registry, the runner and the task types. A scheduled action declared here is enumerable: something can ask what runs, when, and what evidence it leaves.",
+    "path": "scheduled/task"
+  },
+  {
     "atom": "schema",
     "name": "schema",
     "description": "Use when defining, auditing, or evolving the logical data model — entity relationship diagrams, normalization, column definitions, table structure, field types, cardinality declarations. The canonical blueprint of the data structure.",
@@ -6973,7 +7807,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "corpus",
     "name": "corpus",
-    "description": "search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in.",
+    "description": "Use when reasoning about corpus — search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in.",
     "path": "search/corpus"
   },
   {
@@ -7069,7 +7903,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "headers",
     "name": "headers",
-    "description": "Composite HTTP security-headers — defense-in-depth response hardening.",
+    "description": "Use when reasoning about headers — Composite HTTP security-headers — defense-in-depth response hardening.",
     "path": "security/header/headers"
   },
   {
@@ -7087,13 +7921,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "contact",
     "name": "contact",
-    "description": "Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route.",
+    "description": "Use when reasoning about contact — Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route.",
     "path": "seed/contact"
   },
   {
     "atom": "post",
     "name": "post",
-    "description": "Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples.",
+    "description": "Use when reasoning about post — Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples.",
     "path": "seed/post"
   },
   {
@@ -7105,7 +7939,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "templates",
     "name": "templates",
-    "description": "Industry templates — curated per-(country × industry) opening books.",
+    "description": "Use when reasoning about templates — Industry templates — curated per-(country × industry) opening books.",
     "path": "seeds/template/templates"
   },
   {
@@ -7143,6 +7977,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "closure",
     "description": "Use when an external dependency must fall back to erpax ITSELF — every external role (payment-provider, signing, notification, search, federation) has a registered internal provider that completes the operation when the external call fails (Conservation Law 53, withInternalFallback). The dependency graph terminates at erpax; everything falls back to the self.",
     "path": "self/closure"
+  },
+  {
+    "atom": "provider",
+    "name": "provider",
+    "description": "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…",
+    "path": "self/closure/provider"
   },
   {
     "atom": "generate",
@@ -7597,13 +8437,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "skill",
     "name": "skill",
-    "description": "Use for the SKILL.md frontmatter gate — scans every SKILL.md, refuses unquoted colon-space descriptions, names that disagree with their folder, and new hyphenated atom folders. The atom face exposes the gate only; the 77MB router index is reached by its own path, never through this barrel.",
+    "description": "Use when reasoning about skill — Use for the SKILL.md frontmatter gate — scans every SKILL.md, refuses unquoted colon-space descriptions, names that disagree with their folder, and new hyphenated atom folders. The atom face exposes the gate only; the 77MB router index is reached by its own path, never through this barrel.",
     "path": "skill"
   },
   {
     "atom": "frontmatter",
     "name": "frontmatter",
-    "description": "skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law.",
+    "description": "Use when reasoning about frontmatter — skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law.",
     "path": "skill/frontmatter"
   },
   {
@@ -7627,19 +8467,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "competencies",
     "name": "competencies",
-    "description": "competencies — the actor-capability taxonomy COMPUTED from the skill corpus.",
+    "description": "Use when reasoning about competencies — competencies — the actor-capability taxonomy COMPUTED from the skill corpus.",
     "path": "skill/router/competencies"
   },
   {
     "atom": "merge",
     "name": "merge",
-    "description": "merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the [[merge]] law as code).",
+    "description": "Use when reasoning about merge — merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the merge law as code).",
     "path": "skill/router/merge"
   },
   {
     "atom": "rating",
     "name": "rating",
-    "description": "rating — the voting/rating among skills (the organism's consensus signal).",
+    "description": "Use when reasoning about rating — rating — the voting/rating among skills (the organism's consensus signal).",
     "path": "skill/router/rating"
   },
   {
@@ -7743,6 +8583,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "social",
     "description": "Use when reasoning about social as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "social"
+  },
+  {
+    "atom": "graph",
+    "name": "graph",
+    "description": "Use when reasoning about graph — holds directed edges. asks whether the opposite edge exists, and derives the relation: two mutual follows ARE a friendship, and nothing writes a \"friends\" row to say so.",
+    "path": "social/graph"
   },
   {
     "atom": "society",
@@ -7851,6 +8697,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "spec",
     "description": "Use when one workflow definition must generate many materializations — e2e test, help tip/subtitle, seed, evidence, marketing page, i18n keys — from a single source. The spec-generator over BUSINESS_CHAINS; e2e tests and help tips share one source.",
     "path": "spec"
+  },
+  {
+    "atom": "generator",
+    "name": "generator",
+    "description": "Use when reasoning about generator — The extractor parses each collection's leading banner into a ; the generators beside it emit the chain registry, the test scaffolds, the marketing pages and the i18n keys from…",
+    "path": "spec/generator"
   },
   {
     "atom": "special",
@@ -7997,6 +8849,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "standard/access"
   },
   {
+    "atom": "hook",
+    "name": "hook",
+    "description": "Use when reasoning about hook — Every accountable collection needs the same three things: its tenant filled in before validation, its author recorded on change, and its audit entry written after.",
+    "path": "standard/collection/hook"
+  },
+  {
     "atom": "truth",
     "name": "truth",
     "description": "Use when enforcing that @standard / @compliance banners are true rather than decoration — the computed required-witness lint that fails a cited concept with no field and an enforcement claim with no guard.",
@@ -8123,6 +8981,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "storage"
   },
   {
+    "atom": "independence",
+    "name": "independence",
+    "description": "Use when reasoning about independence — admits a store and recomputes the content-uuid from each one's bytes. Agreement means the object is intact everywhere; disagreement names which store is wrong, without trusting…",
+    "path": "storage/independence"
+  },
+  {
+    "atom": "redundancy",
+    "name": "redundancy",
+    "description": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.",
+    "path": "storage/redundancy"
+  },
+  {
     "atom": "store",
     "name": "store",
     "description": "Use when reasoning about store — A retail good store.",
@@ -8213,16 +9083,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "subscription"
   },
   {
+    "atom": "gate",
+    "name": "gate",
+    "description": "Use when reasoning about gate — , and answer from the tenant's subscription; and encode what a lapsed account may still do — read its own history, write nothing new.",
+    "path": "subscription/gate"
+  },
+  {
     "atom": "plans",
     "name": "plans",
     "description": "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin.",
     "path": "subscription/plans"
   },
   {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — No plan-specific hook is wired yet. The barrel is here because every collection's hooks live at the same address, and a convention with a hole in it is one every future reader…",
+    "path": "subscription/plans/hooks"
+  },
+  {
     "atom": "subscriptions",
     "name": "subscriptions",
     "description": "Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection.",
     "path": "subscription/plans/subscriptions"
+  },
+  {
+    "atom": "hooks",
+    "name": "hooks",
+    "description": "Use when reasoning about hooks — publishes the subscription's transitions and protects its credentials on the way in.",
+    "path": "subscription/plans/subscriptions/hooks"
   },
   {
     "atom": "records",
@@ -8417,6 +9305,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "sustainability"
   },
   {
+    "atom": "generator",
+    "name": "generator",
+    "description": "Use when reasoning about generator — A hero image per product, synthesised rather than commissioned: a 1600×900 SVG built from primitive paths and , with no font file, no raster asset and no image library.",
+    "path": "svg/hero/generator"
+  },
+  {
     "atom": "swatch",
     "name": "swatch",
     "description": "Use when reasoning about swatch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -8463,6 +9357,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "syntax",
     "description": "Use when a gate needs a grammatical fact about source — which comments a file has, which names it binds. Wraps ts.createSourceFile so the answer is the compiler's, not a pattern's: a // inside a string is not a comment, and no regex can tell. The gates derive from here rather than each guessing.",
     "path": "syntax"
+  },
+  {
+    "atom": "cache",
+    "name": "cache",
+    "description": "Use when reasoning about cache — *\"Reuse the computed answer, never re-derive\"* is the first agent law in this corpus.",
+    "path": "syntax/cache"
   },
   {
     "atom": "system",
@@ -8741,6 +9641,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tenant/context"
   },
   {
+    "atom": "role",
+    "name": "role",
+    "description": "Use when reasoning about role — Importing this barrel pulls in the four reference tenant profiles — business, payment provider, bank, government — so any code holding the registry sees them without naming each.",
+    "path": "tenant/role"
+  },
+  {
+    "atom": "service",
+    "name": "service",
+    "description": "Use when reasoning about service — is the client for tenant administration — create, update, batch actions — and is the instance callers use.",
+    "path": "tenant/service"
+  },
+  {
     "atom": "tenants",
     "name": "tenants",
     "description": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
@@ -8905,7 +9817,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "threat",
     "name": "threat",
-    "description": "Quantum threat classification (immediate-retire vs quantum-accelerated)",
+    "description": "Use when reasoning about threat — Quantum threat classification (immediate-retire vs quantum-accelerated)",
     "path": "threat"
   },
   {
@@ -9157,13 +10069,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "goods",
     "name": "goods",
-    "description": "Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry.",
+    "description": "Use when reasoning about goods — Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry.",
     "path": "trading/api/goods"
   },
   {
     "atom": "money",
     "name": "money",
-    "description": "Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry.",
+    "description": "Use when reasoning about money — Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry.",
     "path": "trading/api/money"
   },
   {
@@ -9419,6 +10331,36 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "types/gl/account"
   },
   {
+    "atom": "parties",
+    "name": "parties",
+    "description": "Use when reasoning about parties — Both are a dated, line-itemised financial document with a status lifecycle, a balance and an aging profile. is that shape, the lifecycle it may walk, and the set both age into.",
+    "path": "types/parties"
+  },
+  {
+    "atom": "payables",
+    "name": "payables",
+    "description": "Use when reasoning about payables — , , and carry the fields EN-16931 requires of a supplier invoice; buckets what is outstanding, and is what falls due.",
+    "path": "types/payables"
+  },
+  {
+    "atom": "receivables",
+    "name": "receivables",
+    "description": "Use when reasoning about receivables — , , and are the A/R side of the same party document; buckets it and carries the expected-credit-loss figure IFRS 9 requires, which is the part a receivable cannot honestly omit.",
+    "path": "types/receivables"
+  },
+  {
+    "atom": "sti",
+    "name": "sti",
+    "description": "Use when reasoning about sti — names the column, and describe the union, and , and narrow a row to its subtype without a cast.",
+    "path": "types/sti"
+  },
+  {
+    "atom": "tenant",
+    "name": "tenant",
+    "description": "Use when reasoning about tenant — carries what differs between instances: , the it reports under, and its . The request types — create, update, batch — are the only shapes the management API accepts.",
+    "path": "types/tenant"
+  },
+  {
     "atom": "typical",
     "name": "typical",
     "description": "Use when reasoning about typical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -9441,6 +10383,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "agent",
     "description": "Use when reasoning about the other side of agent/ui — ui/agent recovers the atom from its UI route (the inverse of the render), so the rendering path is a balanced double-entry; always encode both sides of a path for karmic balance.",
     "path": "ui/agent"
+  },
+  {
+    "atom": "class",
+    "name": "class",
+    "description": "Use when reasoning about class — merges Tailwind class lists so a later utility wins over an earlier one — for the conditional shapes, for the conflict resolution. Six modules use it.",
+    "path": "ui/class"
   },
   {
     "atom": "uk",
@@ -9475,7 +10423,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "types",
     "name": "types",
-    "description": "Canonical UN/EDIFACT message types — semantic structure only.",
+    "description": "Use when reasoning about types — Canonical UN/EDIFACT message types — semantic structure only.",
     "path": "un/edifact/types"
   },
   {
@@ -9617,6 +10565,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "use"
   },
   {
+    "atom": "card",
+    "name": "card",
+    "description": "Use when reasoning about card — Making a card clickable is easy and usually wrong. Wrapping the card in an swallows every nested link.",
+    "path": "use/clickable/card"
+  },
+  {
+    "atom": "debounce",
+    "name": "debounce",
+    "description": "Use when reasoning about debounce — holds a changing value still for a delay before releasing it, so a search field issues one request when typing stops instead of one per character.",
+    "path": "use/debounce"
+  },
+  {
     "atom": "used",
     "name": "used",
     "description": "Use when reasoning about used as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -9671,6 +10631,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "utility"
   },
   {
+    "atom": "lock",
+    "name": "lock",
+    "description": "Use when reasoning about lock — is the hook wired into every GL-posting collection: it reads the document's posting date, finds the fiscal period containing it, and throws when that period's status is .",
+    "path": "utility/period/lock"
+  },
+  {
     "atom": "utterance",
     "name": "utterance",
     "description": "Use when modelling one utterance — the singular model of the utterances collection (the plural store); one spoken or written input in a conversation.",
@@ -9689,6 +10655,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "uuid"
   },
   {
+    "atom": "chain",
+    "name": "chain",
+    "description": "Use when reasoning about chain — starts a chain at and extends it: addresses the pair (previous, content), so each link's identity depends on everything before it. walks the and reports where the walk breaks.",
+    "path": "uuid/chain"
+  },
+  {
     "atom": "format",
     "name": "format",
     "description": "Use when reasoning about uuid formatting — the canonical string form of a uuid.",
@@ -9699,6 +10671,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "governance",
     "description": "Use when reasoning about uuid governance — how a uuid is minted and ruled.",
     "path": "uuid/governance"
+  },
+  {
+    "atom": "kv",
+    "name": "kv",
+    "description": "Use when reasoning about kv — addresses the binding itself, lifts a plain map into , and finds the value for a key by address rather than by string.",
+    "path": "uuid/kv"
   },
   {
     "atom": "llm",
@@ -9861,6 +10839,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "versions",
     "description": "Use when enabling or debugging Payload versions, drafts, autosave, or scheduled publish — version history, draft/published status, restoring versions, or controlling how many versions are kept.",
     "path": "versions"
+  },
+  {
+    "atom": "cross",
+    "name": "cross",
+    "description": "Use when reasoning about cross — Every entity change content-addresses to a leaf. That same leaf is simultaneously the VERSION (a new content-uuid), a TAMPER-COST increment (one more link a forger must rewrite)…",
+    "path": "versions/cross"
   },
   {
     "atom": "vessel",
@@ -10195,7 +11179,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "accountable",
     "name": "accountable",
-    "description": "agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal [[entry]] engine.",
+    "description": "Use when reasoning about accountable — agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal entry engine.",
     "path": "vocabulary/agriculture/accountable"
   },
   {
@@ -13813,7 +14797,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "elevation",
     "name": "elevation",
-    "description": "Use when reasoning about elevation — The elevation of a location (WGS 84). Values may be of the form 'NUMBER UNIT\\\\\\\\\\\\\\\\_OF\\\\\\\\\\\\\\\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in",
+    "description": "Use when reasoning about elevation — The elevation of a location (WGS 84). Values may be of the form 'NUMBER UNIT\\\\\\\\_OF\\\\\\\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in",
     "path": "vocabulary/elevation"
   },
   {
@@ -13861,13 +14845,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "emit",
     "name": "emit",
-    "description": "vocabulary/emit — compute the SHARED VOCABULARY and emit words.ts.",
+    "description": "Use when reasoning about emit — vocabulary/emit — compute the SHARED VOCABULARY and emit words.ts.",
     "path": "vocabulary/emit"
   },
   {
     "atom": "empirical",
     "name": "empirical",
-    "description": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as [[source]], dissolve the row-level specifics into the [[akashic]] DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming.",
+    "description": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as source, dissolve the row-level specifics into the akashic DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming.",
     "path": "vocabulary/empirical"
   },
   {
@@ -16781,21 +17765,27 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "vocabulary/manufacturing"
   },
   {
+    "atom": "seed",
+    "name": "seed",
+    "description": "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three.",
+    "path": "vocabulary/manufacturing/seed"
+  },
+  {
     "atom": "operations",
     "name": "operations",
-    "description": "operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
+    "description": "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
     "path": "vocabulary/manufacturing/seed/operations"
   },
   {
     "atom": "positions",
     "name": "positions",
-    "description": "positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards.",
+    "description": "Use when reasoning about positions — positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards.",
     "path": "vocabulary/manufacturing/seed/positions"
   },
   {
     "atom": "standards",
     "name": "standards",
-    "description": "standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it).",
+    "description": "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it).",
     "path": "vocabulary/manufacturing/seed/standards"
   },
   {
@@ -20023,7 +21013,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "list",
     "name": "list",
-    "description": "tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge.",
+    "description": "Use when reasoning about list — tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge.",
     "path": "vocabulary/tag/list"
   },
   {
@@ -20035,7 +21025,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "worker",
     "name": "worker",
-    "description": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a [[diamond]] — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop.",
+    "description": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a diamond — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop.",
     "path": "vocabulary/worker"
   },
   {
@@ -20161,7 +21151,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "wave",
     "name": "wave",
-    "description": "Continuous quantum computation wave with real-time Zenodo publication",
+    "description": "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication",
     "path": "wave"
   },
   {
@@ -20463,6 +21453,24 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "writing",
     "description": "Use when writing must be computed from sealed coordinates — debit/credit prose structure · law lines · wikilink density · eb/word from readme/paper.ts; never prose templates.",
     "path": "writing"
+  },
+  {
+    "atom": "xml",
+    "name": "xml",
+    "description": "Use when reasoning about xml — Peppol UBL, ISO-20022 pain.00x and OECD SAF-T all emit XML. What they share is not a document model — each owns its namespaces, element order and schema — it is the two layers…",
+    "path": "xml"
+  },
+  {
+    "atom": "element",
+    "name": "element",
+    "description": "Use when reasoning about element — was already the one shared escaper — its own docstring says *\"one definition, not three\"*.",
+    "path": "xml/element"
+  },
+  {
+    "atom": "escape",
+    "name": "escape",
+    "description": "Use when reasoning about escape — must be replaced before any text or attribute value is embedded in generated XML (**XML 1.0 §2.4**).",
+    "path": "xml/escape"
   },
   {
     "atom": "xpath",
