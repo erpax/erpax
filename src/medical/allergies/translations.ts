@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about allergies as a medical facet of [[medical]] — vocabulary pivot to @/allergies; nested not duplicated.",
+    "source": "Use when reasoning about allergies as a medical facet of medical — vocabulary pivot to @/allergies; nested not duplicated.",
     "uuid": "4efe2052-b0ba-8d26-9a24-96c61b03f448",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about allergies as a medical facet of [[medical]] — vocabulary pivot to @/allergies; nested not duplicated."
+      "en": "Use when reasoning about allergies as a medical facet of medical — vocabulary pivot to @/allergies; nested not duplicated."
     }
   }
 ]

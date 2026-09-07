@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge.",
-    "uuid": "8c713c5b-ee45-8785-9e7b-f3898168aa51",
+    "source": "Use when reasoning about list — tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge.",
+    "uuid": "0b6e73df-f03f-88a8-a567-db214813944a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "list",
       "tag",
       "list",
       "port",
@@ -37,7 +42,7 @@ export const translations: readonly Translation[] = [
       "bridge"
     ],
     "values": {
-      "en": "tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge."
+      "en": "Use when reasoning about list — tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge."
     }
   }
 ]

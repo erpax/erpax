@@ -14,6 +14,44 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "gate"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about gate — , and answer from the tenant's subscription; and encode what a lapsed account may still do — read its own history, write nothing new.",
+    "uuid": "d726cdad-8f8c-8b7e-8903-f9ddb28c5c5b",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "gate",
+      "and",
+      "answer",
+      "from",
+      "the",
+      "tenant",
+      "s",
+      "subscription",
+      "and",
+      "encode",
+      "what",
+      "a",
+      "lapsed",
+      "account",
+      "may",
+      "still",
+      "do",
+      "read",
+      "its",
+      "own",
+      "history",
+      "write",
+      "nothing",
+      "new"
+    ],
+    "values": {
+      "en": "Use when reasoning about gate — , and answer from the tenant's subscription; and encode what a lapsed account may still do — read its own history, write nothing new."
+    }
   }
 ]
 

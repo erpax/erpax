@@ -14,6 +14,34 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — The adjustment child carries the matter; this is the address a collection imports.",
+    "uuid": "4a1b2959-28c8-8b9e-a79a-fe891712053c",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "the",
+      "adjustment",
+      "child",
+      "carries",
+      "the",
+      "matter",
+      "this",
+      "is",
+      "the",
+      "address",
+      "a",
+      "collection",
+      "imports"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — The adjustment child carries the matter; this is the address a collection imports."
+    }
   }
 ]
 

@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about technique as a medical facet of [[medical]] — vocabulary pivot to @/technique; nested not duplicated.",
+    "source": "Use when reasoning about technique as a medical facet of medical — vocabulary pivot to @/technique; nested not duplicated.",
     "uuid": "3f81c586-165f-8599-a768-63a4d2353b8e",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about technique as a medical facet of [[medical]] — vocabulary pivot to @/technique; nested not duplicated."
+      "en": "Use when reasoning about technique as a medical facet of medical — vocabulary pivot to @/technique; nested not duplicated."
     }
   }
 ]

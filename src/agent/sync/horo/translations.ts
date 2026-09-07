@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "horo — a whole tribe (a `team`) joins the society circle.",
-    "uuid": "d9f857d3-594c-8e24-be1d-f21c3d7c24c1",
+    "source": "Use when reasoning about horo — horo — a whole tribe (a `team`) joins the society circle.",
+    "uuid": "e386d7b2-ccf0-8da7-9945-6ff3e3a57648",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "horo",
       "horo",
       "a",
       "whole",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "circle"
     ],
     "values": {
-      "en": "horo — a whole tribe (a `team`) joins the society circle."
+      "en": "Use when reasoning about horo — horo — a whole tribe (a `team`) joins the society circle."
     }
   }
 ]

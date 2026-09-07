@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Domain-agent contract — the coupling-tensor's A-vortex axis.",
-    "uuid": "6646b4cb-6613-8720-b8ad-a0a1055f7841",
+    "source": "Use when reasoning about types — Domain-agent contract — the coupling-tensor's A-vortex axis.",
+    "uuid": "8442cb2c-b91e-8cf4-8d10-0919f41865ff",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "types",
       "domain",
       "agent",
       "contract",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "axis"
     ],
     "values": {
-      "en": "Domain-agent contract — the coupling-tensor's A-vortex axis."
+      "en": "Use when reasoning about types — Domain-agent contract — the coupling-tensor's A-vortex axis."
     }
   }
 ]

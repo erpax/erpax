@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about surgery as a medical facet of [[medical]] — vocabulary pivot to @/surgery; nested not duplicated.",
+    "source": "Use when reasoning about surgery as a medical facet of medical — vocabulary pivot to @/surgery; nested not duplicated.",
     "uuid": "16d8645f-eac3-82af-804e-c469c9d6ba6f",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about surgery as a medical facet of [[medical]] — vocabulary pivot to @/surgery; nested not duplicated."
+      "en": "Use when reasoning about surgery as a medical facet of medical — vocabulary pivot to @/surgery; nested not duplicated."
     }
   }
 ]

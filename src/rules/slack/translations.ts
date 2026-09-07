@@ -14,6 +14,51 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "slack"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist.",
+    "uuid": "7539e451-2e22-826a-8439-3a5d3785e293",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "slack",
+      "every",
+      "gate",
+      "in",
+      "this",
+      "corpus",
+      "asks",
+      "one",
+      "question",
+      "is",
+      "this",
+      "claim",
+      "stronger",
+      "than",
+      "the",
+      "evidence",
+      "a",
+      "proved",
+      "theorem",
+      "listed",
+      "as",
+      "proven",
+      "a",
+      "directory",
+      "tree",
+      "of",
+      "folders",
+      "that",
+      "do",
+      "not",
+      "exist"
+    ],
+    "values": {
+      "en": "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist."
+    }
   }
 ]
 

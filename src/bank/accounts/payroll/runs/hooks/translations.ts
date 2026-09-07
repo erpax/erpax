@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — books the run when it reaches posted, so the ledger entry is made by the row that caused it rather than by whichever screen happened to save it.",
+    "uuid": "254ade6f-9bbc-8b9f-8e29-9de02708638e",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "books",
+      "the",
+      "run",
+      "when",
+      "it",
+      "reaches",
+      "posted",
+      "so",
+      "the",
+      "ledger",
+      "entry",
+      "is",
+      "made",
+      "by",
+      "the",
+      "row",
+      "that",
+      "caused",
+      "it",
+      "rather",
+      "than",
+      "by",
+      "whichever",
+      "screen",
+      "happened",
+      "to",
+      "save",
+      "it"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — books the run when it reaches posted, so the ledger entry is made by the row that caused it rather than by whichever screen happened to save it."
+    }
   }
 ]
 

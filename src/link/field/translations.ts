@@ -14,6 +14,51 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "field"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about field — builds the field: an internal choice resolves against a collection, an external one takes a URI, and decides how it renders without changing what it means. is that closed set.",
+    "uuid": "4ddc4fd2-0a26-884b-8b6e-9ec3c9be1078",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "field",
+      "builds",
+      "the",
+      "field",
+      "an",
+      "internal",
+      "choice",
+      "resolves",
+      "against",
+      "a",
+      "collection",
+      "an",
+      "external",
+      "one",
+      "takes",
+      "a",
+      "uri",
+      "and",
+      "decides",
+      "how",
+      "it",
+      "renders",
+      "without",
+      "changing",
+      "what",
+      "it",
+      "means",
+      "is",
+      "that",
+      "closed",
+      "set"
+    ],
+    "values": {
+      "en": "Use when reasoning about field — builds the field: an internal choice resolves against a collection, an external one takes a URI, and decides how it renders without changing what it means. is that closed set."
+    }
   }
 ]
 

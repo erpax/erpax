@@ -14,6 +14,50 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "config"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about config — Payload's typegen and the server config both need every block's shape. Importing the block COMPONENTS to get them drags React into a context that cannot run it.",
+    "uuid": "218bfe41-e163-84d4-8c9a-a46052fcb6ce",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "config",
+      "payload",
+      "s",
+      "typegen",
+      "and",
+      "the",
+      "server",
+      "config",
+      "both",
+      "need",
+      "every",
+      "block",
+      "s",
+      "shape",
+      "importing",
+      "the",
+      "block",
+      "components",
+      "to",
+      "get",
+      "them",
+      "drags",
+      "react",
+      "into",
+      "a",
+      "context",
+      "that",
+      "cannot",
+      "run",
+      "it"
+    ],
+    "values": {
+      "en": "Use when reasoning about config — Payload's typegen and the server config both need every block's shape. Importing the block COMPONENTS to get them drags React into a context that cannot run it."
+    }
   }
 ]
 

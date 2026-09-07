@@ -14,6 +14,53 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "cells"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about cells — Four cells, each showing a value the corpus computes rather than stores: the content-uuid as a chip, the horo digit, the path as an account code, the seal as a badge.",
+    "uuid": "5139616c-a6d6-8faf-8035-738e2ab96c53",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "cells",
+      "four",
+      "cells",
+      "each",
+      "showing",
+      "a",
+      "value",
+      "the",
+      "corpus",
+      "computes",
+      "rather",
+      "than",
+      "stores",
+      "the",
+      "content",
+      "uuid",
+      "as",
+      "a",
+      "chip",
+      "the",
+      "horo",
+      "digit",
+      "the",
+      "path",
+      "as",
+      "an",
+      "account",
+      "code",
+      "the",
+      "seal",
+      "as",
+      "a",
+      "badge"
+    ],
+    "values": {
+      "en": "Use when reasoning about cells — Four cells, each showing a value the corpus computes rather than stores: the content-uuid as a chip, the horo digit, the path as an account code, the seal as a badge."
+    }
   }
 ]
 

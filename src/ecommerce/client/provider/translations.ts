@@ -14,6 +14,50 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "provider"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about provider — The browser half of the ecommerce plugin. Two values decide what it can do, and both may be absent: the tenant's Stripe publishable key and the server URL.",
+    "uuid": "7b53b7b8-991e-8958-a100-e03bb0839e85",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "provider",
+      "the",
+      "browser",
+      "half",
+      "of",
+      "the",
+      "ecommerce",
+      "plugin",
+      "two",
+      "values",
+      "decide",
+      "what",
+      "it",
+      "can",
+      "do",
+      "and",
+      "both",
+      "may",
+      "be",
+      "absent",
+      "the",
+      "tenant",
+      "s",
+      "stripe",
+      "publishable",
+      "key",
+      "and",
+      "the",
+      "server",
+      "url"
+    ],
+    "values": {
+      "en": "Use when reasoning about provider — The browser half of the ecommerce plugin. Two values decide what it can do, and both may be absent: the tenant's Stripe publishable key and the server URL."
+    }
   }
 ]
 

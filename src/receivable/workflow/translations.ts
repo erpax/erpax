@@ -14,6 +14,37 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "workflow"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about workflow — An invoice moves through a fixed set of states, and only along edges the graph allows.",
+    "uuid": "7b2a7c9c-0ec4-8073-aefe-b6a0292673dc",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "workflow",
+      "an",
+      "invoice",
+      "moves",
+      "through",
+      "a",
+      "fixed",
+      "set",
+      "of",
+      "states",
+      "and",
+      "only",
+      "along",
+      "edges",
+      "the",
+      "graph",
+      "allows"
+    ],
+    "values": {
+      "en": "Use when reasoning about workflow — An invoice moves through a fixed set of states, and only along edges the graph allows."
+    }
   }
 ]
 

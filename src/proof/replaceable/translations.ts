@@ -14,6 +14,50 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "replaceable"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…",
+    "uuid": "492bae57-fa5c-806a-b70a-e5cf18b0b578",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "replaceable",
+      "erpax",
+      "cites",
+      "iso",
+      "rfc",
+      "wcag",
+      "and",
+      "statute",
+      "across",
+      "atoms",
+      "every",
+      "one",
+      "of",
+      "those",
+      "citations",
+      "is",
+      "an",
+      "assumption",
+      "about",
+      "the",
+      "world",
+      "until",
+      "something",
+      "can",
+      "contradict",
+      "it",
+      "what",
+      "turns",
+      "a",
+      "citation"
+    ],
+    "values": {
+      "en": "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…"
+    }
   }
 ]
 

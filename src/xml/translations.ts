@@ -14,6 +14,54 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "xml"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about xml — Peppol UBL, ISO-20022 pain.00x and OECD SAF-T all emit XML. What they share is not a document model — each owns its namespaces, element order and schema — it is the two layers…",
+    "uuid": "7dfd91a1-8e61-87ee-a236-b9c802b64545",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "xml",
+      "peppol",
+      "ubl",
+      "iso",
+      "pain",
+      "x",
+      "and",
+      "oecd",
+      "saf",
+      "t",
+      "all",
+      "emit",
+      "xml",
+      "what",
+      "they",
+      "share",
+      "is",
+      "not",
+      "a",
+      "document",
+      "model",
+      "each",
+      "owns",
+      "its",
+      "namespaces",
+      "element",
+      "order",
+      "and",
+      "schema",
+      "it",
+      "is",
+      "the",
+      "two",
+      "layers"
+    ],
+    "values": {
+      "en": "Use when reasoning about xml — Peppol UBL, ISO-20022 pain.00x and OECD SAF-T all emit XML. What they share is not a document model — each owns its namespaces, element order and schema — it is the two layers…"
+    }
   }
 ]
 

@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about evidence as a medical facet of [[medical]] — vocabulary pivot to @/evidence; nested not duplicated.",
+    "source": "Use when reasoning about evidence as a medical facet of medical — vocabulary pivot to @/evidence; nested not duplicated.",
     "uuid": "8e6655eb-3f32-837b-8187-10dbb75c2f1a",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about evidence as a medical facet of [[medical]] — vocabulary pivot to @/evidence; nested not duplicated."
+      "en": "Use when reasoning about evidence as a medical facet of medical — vocabulary pivot to @/evidence; nested not duplicated."
     }
   }
 ]

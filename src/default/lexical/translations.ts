@@ -14,6 +14,50 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "lexical"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about lexical — is the base rich-text feature set every editable field shares, including the link validation rules: an internal reference resolves against a collection, an external one must be a…",
+    "uuid": "b4d0dfe7-f26e-82a4-aa72-0d424868d377",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "lexical",
+      "is",
+      "the",
+      "base",
+      "rich",
+      "text",
+      "feature",
+      "set",
+      "every",
+      "editable",
+      "field",
+      "shares",
+      "including",
+      "the",
+      "link",
+      "validation",
+      "rules",
+      "an",
+      "internal",
+      "reference",
+      "resolves",
+      "against",
+      "a",
+      "collection",
+      "an",
+      "external",
+      "one",
+      "must",
+      "be",
+      "a"
+    ],
+    "values": {
+      "en": "Use when reasoning about lexical — is the base rich-text feature set every editable field shares, including the link validation rules: an internal reference resolves against a collection, an external one must be a…"
+    }
   }
 ]
 

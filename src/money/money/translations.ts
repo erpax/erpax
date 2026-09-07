@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "`Money` value type — integer-cents amount + ISO 4217 currency.",
-    "uuid": "9dc76999-fcc6-81f8-b68e-cd89192526e3",
+    "source": "Use when reasoning about money — `Money` value type — integer-cents amount + ISO 4217 currency.",
+    "uuid": "7c7b1aa6-a796-8cc3-92cc-1418f4aed523",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "money",
       "money",
       "value",
       "type",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "currency"
     ],
     "values": {
-      "en": "`Money` value type — integer-cents amount + ISO 4217 currency."
+      "en": "Use when reasoning about money — `Money` value type — integer-cents amount + ISO 4217 currency."
     }
   }
 ]

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves",
-    "uuid": "34e09ce0-b7d8-84d0-a123-a4ec729d7faf",
+    "source": "Use when reasoning about basis — Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves",
+    "uuid": "0af37f57-3cd3-8ef8-8a0b-901617c654f2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "basis",
       "millennium",
       "problems",
       "as",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "waves"
     ],
     "values": {
-      "en": "Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves"
+      "en": "Use when reasoning about basis — Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves"
     }
   }
 ]

@@ -14,6 +14,43 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "code"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about code — exports (the Payload block) and exports (the React component). One barrel cannot offer both under one name, so the client is here.",
+    "uuid": "ba558249-ade0-864b-b274-953b9f9e937e",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "code",
+      "exports",
+      "the",
+      "payload",
+      "block",
+      "and",
+      "exports",
+      "the",
+      "react",
+      "component",
+      "one",
+      "barrel",
+      "cannot",
+      "offer",
+      "both",
+      "under",
+      "one",
+      "name",
+      "so",
+      "the",
+      "client",
+      "is",
+      "here"
+    ],
+    "values": {
+      "en": "Use when reasoning about code — exports (the Payload block) and exports (the React component). One barrel cannot offer both under one name, so the client is here."
+    }
   }
 ]
 

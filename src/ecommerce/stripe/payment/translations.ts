@@ -14,6 +14,51 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "payment"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about payment — The payment child of the tenant-aware Stripe stack. What is held here is a reference to a method Stripe holds, never the instrument itself — the tokenisation boundary is what…",
+    "uuid": "f9b0a8fd-1141-8a2c-bea1-1b3ce86aaca7",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "payment",
+      "the",
+      "payment",
+      "child",
+      "of",
+      "the",
+      "tenant",
+      "aware",
+      "stripe",
+      "stack",
+      "what",
+      "is",
+      "held",
+      "here",
+      "is",
+      "a",
+      "reference",
+      "to",
+      "a",
+      "method",
+      "stripe",
+      "holds",
+      "never",
+      "the",
+      "instrument",
+      "itself",
+      "the",
+      "tokenisation",
+      "boundary",
+      "is",
+      "what"
+    ],
+    "values": {
+      "en": "Use when reasoning about payment — The payment child of the tenant-aware Stripe stack. What is held here is a reference to a method Stripe holds, never the instrument itself — the tokenisation boundary is what…"
+    }
   }
 ]
 

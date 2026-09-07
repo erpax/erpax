@@ -14,6 +14,35 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "element"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about element — was already the one shared escaper — its own docstring says *\\\"one definition, not three\\\"*.",
+    "uuid": "2f855fed-2736-8591-9512-d0a32903c7e3",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "element",
+      "was",
+      "already",
+      "the",
+      "one",
+      "shared",
+      "escaper",
+      "its",
+      "own",
+      "docstring",
+      "says",
+      "one",
+      "definition",
+      "not",
+      "three"
+    ],
+    "values": {
+      "en": "Use when reasoning about element — was already the one shared escaper — its own docstring says *\\\"one definition, not three\\\"*."
+    }
   }
 ]
 

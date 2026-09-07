@@ -14,6 +14,48 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "audit"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about audit — builds each tenant's standardised monthly audit file for the month that has closed — is what decides which — and submits it where an mTLS submitter is wired.",
+    "uuid": "10f68dce-3298-8e85-9cb6-1c840d58527a",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "audit",
+      "builds",
+      "each",
+      "tenant",
+      "s",
+      "standardised",
+      "monthly",
+      "audit",
+      "file",
+      "for",
+      "the",
+      "month",
+      "that",
+      "has",
+      "closed",
+      "is",
+      "what",
+      "decides",
+      "which",
+      "and",
+      "submits",
+      "it",
+      "where",
+      "an",
+      "mtls",
+      "submitter",
+      "is",
+      "wired"
+    ],
+    "values": {
+      "en": "Use when reasoning about audit — builds each tenant's standardised monthly audit file for the month that has closed — is what decides which — and submits it where an mTLS submitter is wired."
+    }
   }
 ]
 

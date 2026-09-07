@@ -14,6 +14,40 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "accepted"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about accepted — erpax carries Lean under . **Nothing ran it** — no CI lane, no npm script, no import. Asked, the kernel answers:",
+    "uuid": "327bcb00-20ff-8c01-b19e-3637c90e1998",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "accepted",
+      "erpax",
+      "carries",
+      "lean",
+      "under",
+      "nothing",
+      "ran",
+      "it",
+      "no",
+      "ci",
+      "lane",
+      "no",
+      "npm",
+      "script",
+      "no",
+      "import",
+      "asked",
+      "the",
+      "kernel",
+      "answers"
+    ],
+    "values": {
+      "en": "Use when reasoning about accepted — erpax carries Lean under . **Nothing ran it** — no CI lane, no npm script, no import. Asked, the kernel answers:"
+    }
   }
 ]
 

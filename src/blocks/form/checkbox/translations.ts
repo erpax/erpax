@@ -14,6 +14,48 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "checkbox"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about checkbox — 's returns an and expects a **native** input to fire it. The shadcn checkbox is a Radix button with — it fires , and the native event never happens.",
+    "uuid": "078cd901-2483-8fad-a168-f246994f991d",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "checkbox",
+      "s",
+      "returns",
+      "an",
+      "and",
+      "expects",
+      "a",
+      "native",
+      "input",
+      "to",
+      "fire",
+      "it",
+      "the",
+      "shadcn",
+      "checkbox",
+      "is",
+      "a",
+      "radix",
+      "button",
+      "with",
+      "it",
+      "fires",
+      "and",
+      "the",
+      "native",
+      "event",
+      "never",
+      "happens"
+    ],
+    "values": {
+      "en": "Use when reasoning about checkbox — 's returns an and expects a **native** input to fire it. The shadcn checkbox is a Radix button with — it fires , and the native event never happens."
+    }
   }
 ]
 

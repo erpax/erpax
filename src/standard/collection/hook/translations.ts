@@ -14,6 +14,46 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hook"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hook — Every accountable collection needs the same three things: its tenant filled in before validation, its author recorded on change, and its audit entry written after.",
+    "uuid": "c346eea2-547a-8dd3-b89c-7926f1946e2e",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hook",
+      "every",
+      "accountable",
+      "collection",
+      "needs",
+      "the",
+      "same",
+      "three",
+      "things",
+      "its",
+      "tenant",
+      "filled",
+      "in",
+      "before",
+      "validation",
+      "its",
+      "author",
+      "recorded",
+      "on",
+      "change",
+      "and",
+      "its",
+      "audit",
+      "entry",
+      "written",
+      "after"
+    ],
+    "values": {
+      "en": "Use when reasoning about hook — Every accountable collection needs the same three things: its tenant filled in before validation, its author recorded on change, and its audit entry written after."
+    }
   }
 ]
 

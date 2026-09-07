@@ -14,6 +14,34 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "redirect"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about redirect — resolves a requested path against the redirects collection and sends the reader on.",
+    "uuid": "d58f7a1c-d904-833b-a71a-ce35c20acfce",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "redirect",
+      "resolves",
+      "a",
+      "requested",
+      "path",
+      "against",
+      "the",
+      "redirects",
+      "collection",
+      "and",
+      "sends",
+      "the",
+      "reader",
+      "on"
+    ],
+    "values": {
+      "en": "Use when reasoning about redirect — resolves a requested path against the redirects collection and sends the reader on."
+    }
   }
 ]
 

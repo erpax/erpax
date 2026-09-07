@@ -14,6 +14,34 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "domain"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about domain — Four cracks in one session, and the same gap behind three of them:",
+    "uuid": "f33364d4-634a-8047-a7d6-0f42a8830cc1",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "domain",
+      "four",
+      "cracks",
+      "in",
+      "one",
+      "session",
+      "and",
+      "the",
+      "same",
+      "gap",
+      "behind",
+      "three",
+      "of",
+      "them"
+    ],
+    "values": {
+      "en": "Use when reasoning about domain — Four cracks in one session, and the same gap behind three of them:"
+    }
   }
 ]
 

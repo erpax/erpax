@@ -14,6 +14,48 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "generator"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about generator — A hero image per product, synthesised rather than commissioned: a 1600×900 SVG built from primitive paths and , with no font file, no raster asset and no image library.",
+    "uuid": "5c5abd7e-7078-866a-9bbe-fc0b48da3547",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "generator",
+      "a",
+      "hero",
+      "image",
+      "per",
+      "product",
+      "synthesised",
+      "rather",
+      "than",
+      "commissioned",
+      "a",
+      "svg",
+      "built",
+      "from",
+      "primitive",
+      "paths",
+      "and",
+      "with",
+      "no",
+      "font",
+      "file",
+      "no",
+      "raster",
+      "asset",
+      "and",
+      "no",
+      "image",
+      "library"
+    ],
+    "values": {
+      "en": "Use when reasoning about generator — A hero image per product, synthesised rather than commissioned: a 1600×900 SVG built from primitive paths and , with no font file, no raster asset and no image library."
+    }
   }
 ]
 

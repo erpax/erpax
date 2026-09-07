@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about cause as a medical facet of [[medical]] — vocabulary pivot to @/cause; nested not duplicated.",
+    "source": "Use when reasoning about cause as a medical facet of medical — vocabulary pivot to @/cause; nested not duplicated.",
     "uuid": "b173666a-666b-83a0-9860-b8ef36d19bb3",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about cause as a medical facet of [[medical]] — vocabulary pivot to @/cause; nested not duplicated."
+      "en": "Use when reasoning about cause as a medical facet of medical — vocabulary pivot to @/cause; nested not duplicated."
     }
   }
 ]

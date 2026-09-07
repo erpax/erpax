@@ -14,6 +14,47 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "debounce"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about debounce — holds a changing value still for a delay before releasing it, so a search field issues one request when typing stops instead of one per character.",
+    "uuid": "01b55b60-57a5-80db-8ed0-13d117f8e5fb",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "debounce",
+      "holds",
+      "a",
+      "changing",
+      "value",
+      "still",
+      "for",
+      "a",
+      "delay",
+      "before",
+      "releasing",
+      "it",
+      "so",
+      "a",
+      "search",
+      "field",
+      "issues",
+      "one",
+      "request",
+      "when",
+      "typing",
+      "stops",
+      "instead",
+      "of",
+      "one",
+      "per",
+      "character"
+    ],
+    "values": {
+      "en": "Use when reasoning about debounce — holds a changing value still for a delay before releasing it, so a search field issues one request when typing stops instead of one per character."
+    }
   }
 ]
 

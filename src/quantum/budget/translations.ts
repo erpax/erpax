@@ -14,6 +14,43 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "budget"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use.",
+    "uuid": "0f3a05c6-1405-84f5-8e01-aff388840010",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "budget",
+      "the",
+      "corpus",
+      "declares",
+      "an",
+      "agent",
+      "context",
+      "ceiling",
+      "is",
+      "and",
+      "enforces",
+      "it",
+      "inside",
+      "the",
+      "lazy",
+      "loader",
+      "the",
+      "orientation",
+      "tells",
+      "every",
+      "agent",
+      "to",
+      "use"
+    ],
+    "values": {
+      "en": "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use."
+    }
   }
 ]
 

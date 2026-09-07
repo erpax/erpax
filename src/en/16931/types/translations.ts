@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Canonical EN 16931 semantic data model — types only.",
-    "uuid": "98c3e42e-9aac-8ac1-ba74-4a139953d2c4",
+    "source": "Use when reasoning about types — Canonical EN 16931 semantic data model — types only.",
+    "uuid": "ece9a620-3bf2-8a35-9d16-ece7a82906df",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "types",
       "canonical",
       "en",
       "semantic",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "only"
     ],
     "values": {
-      "en": "Canonical EN 16931 semantic data model — types only."
+      "en": "Use when reasoning about types — Canonical EN 16931 semantic data model — types only."
     }
   }
 ]

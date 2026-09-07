@@ -14,6 +14,37 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "impact"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about impact — The mid-weight hero: rich text, an optional set of links, and an optional image below.",
+    "uuid": "197e64fa-d755-845b-9cb1-cbfc61362159",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "impact",
+      "the",
+      "mid",
+      "weight",
+      "hero",
+      "rich",
+      "text",
+      "an",
+      "optional",
+      "set",
+      "of",
+      "links",
+      "and",
+      "an",
+      "optional",
+      "image",
+      "below"
+    ],
+    "values": {
+      "en": "Use when reasoning about impact — The mid-weight hero: rich text, an optional set of links, and an optional image below."
+    }
   }
 ]
 

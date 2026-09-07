@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about storage as a part of [[computer]] — vocabulary pivot to @/storage; nested not duplicated.",
+    "source": "Use when reasoning about storage as a part of computer — vocabulary pivot to @/storage; nested not duplicated.",
     "uuid": "82152113-f0e5-8f3f-9951-93424eb2ab0f",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about storage as a part of [[computer]] — vocabulary pivot to @/storage; nested not duplicated."
+      "en": "Use when reasoning about storage as a part of computer — vocabulary pivot to @/storage; nested not duplicated."
     }
   }
 ]

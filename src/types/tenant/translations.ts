@@ -14,6 +14,46 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "tenant"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about tenant — carries what differs between instances: , the it reports under, and its . The request types — create, update, batch — are the only shapes the management API accepts.",
+    "uuid": "baf216bb-1eb5-8d5d-a02d-f75e2949c821",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "tenant",
+      "carries",
+      "what",
+      "differs",
+      "between",
+      "instances",
+      "the",
+      "it",
+      "reports",
+      "under",
+      "and",
+      "its",
+      "the",
+      "request",
+      "types",
+      "create",
+      "update",
+      "batch",
+      "are",
+      "the",
+      "only",
+      "shapes",
+      "the",
+      "management",
+      "api",
+      "accepts"
+    ],
+    "values": {
+      "en": "Use when reasoning about tenant — carries what differs between instances: , the it reports under, and its . The request types — create, update, batch — are the only shapes the management API accepts."
+    }
   }
 ]
 

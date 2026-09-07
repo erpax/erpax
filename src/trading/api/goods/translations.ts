@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry.",
-    "uuid": "bcceb645-5867-876a-99ff-75cf50ae2df9",
+    "source": "Use when reasoning about goods — Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry.",
+    "uuid": "675427ef-a86f-85e5-ab9e-37630a1e970d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "goods",
       "use",
       "for",
       "the",
@@ -50,7 +55,7 @@ export const translations: readonly Translation[] = [
       "registry"
     ],
     "values": {
-      "en": "Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry."
+      "en": "Use when reasoning about goods — Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry."
     }
   }
 ]

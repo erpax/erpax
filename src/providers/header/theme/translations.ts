@@ -14,6 +14,55 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "theme"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about theme — The site theme is one value ( ). The header's is a second, because the header floats over whatever the page puts beneath it: a full-bleed hero paints a dark field and white text…",
+    "uuid": "117db5c1-bf39-8f9f-9c7e-889c0b5052bc",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "theme",
+      "the",
+      "site",
+      "theme",
+      "is",
+      "one",
+      "value",
+      "the",
+      "header",
+      "s",
+      "is",
+      "a",
+      "second",
+      "because",
+      "the",
+      "header",
+      "floats",
+      "over",
+      "whatever",
+      "the",
+      "page",
+      "puts",
+      "beneath",
+      "it",
+      "a",
+      "full",
+      "bleed",
+      "hero",
+      "paints",
+      "a",
+      "dark",
+      "field",
+      "and",
+      "white",
+      "text"
+    ],
+    "values": {
+      "en": "Use when reasoning about theme — The site theme is one value ( ). The header's is a second, because the header floats over whatever the page puts beneath it: a full-bleed hero paints a dark field and white text…"
+    }
   }
 ]
 

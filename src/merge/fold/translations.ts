@@ -14,6 +14,31 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "fold"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about fold — and the folds built on it: , , , and the two roots · .",
+    "uuid": "e8e672ff-5f89-8053-97b1-e64c3cd95579",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "fold",
+      "and",
+      "the",
+      "folds",
+      "built",
+      "on",
+      "it",
+      "and",
+      "the",
+      "two",
+      "roots"
+    ],
+    "values": {
+      "en": "Use when reasoning about fold — and the folds built on it: , , , and the two roots · ."
+    }
   }
 ]
 

@@ -14,6 +14,55 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hook"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hook — is the header's half of the same rule the footer keeps: a global that every page renders must tell those pages when it changes, or the edit lands everywhere except where it is…",
+    "uuid": "54c3749b-32c0-84df-a2d1-64c98d644af0",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hook",
+      "is",
+      "the",
+      "header",
+      "s",
+      "half",
+      "of",
+      "the",
+      "same",
+      "rule",
+      "the",
+      "footer",
+      "keeps",
+      "a",
+      "global",
+      "that",
+      "every",
+      "page",
+      "renders",
+      "must",
+      "tell",
+      "those",
+      "pages",
+      "when",
+      "it",
+      "changes",
+      "or",
+      "the",
+      "edit",
+      "lands",
+      "everywhere",
+      "except",
+      "where",
+      "it",
+      "is"
+    ],
+    "values": {
+      "en": "Use when reasoning about hook — is the header's half of the same rule the footer keeps: a global that every page renders must tell those pages when it changes, or the edit lands everywhere except where it is…"
+    }
   }
 ]
 

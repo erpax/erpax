@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "baseline — guardian ceilings from computed math + emitted snapshot.",
-    "uuid": "3e5f17bf-ead2-8200-bae7-ea1a2312eaf9",
+    "source": "Use when reasoning about baseline — baseline — guardian ceilings from computed math + emitted snapshot.",
+    "uuid": "813619e4-e9ba-80f5-b58f-33b86257a8d8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "baseline",
       "baseline",
       "guardian",
       "ceilings",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "snapshot"
     ],
     "values": {
-      "en": "baseline — guardian ceilings from computed math + emitted snapshot."
+      "en": "Use when reasoning about baseline — baseline — guardian ceilings from computed math + emitted snapshot."
     }
   }
 ]

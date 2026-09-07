@@ -14,6 +14,38 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hexbit"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hexbit — *\\\"Hexbits compute faster than all else\\\"* is two claims wearing one sentence, and they have **opposite** answers.",
+    "uuid": "224b7fac-f884-8806-ad39-45b094139ebf",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hexbit",
+      "hexbits",
+      "compute",
+      "faster",
+      "than",
+      "all",
+      "else",
+      "is",
+      "two",
+      "claims",
+      "wearing",
+      "one",
+      "sentence",
+      "and",
+      "they",
+      "have",
+      "opposite",
+      "answers"
+    ],
+    "values": {
+      "en": "Use when reasoning about hexbit — *\\\"Hexbits compute faster than all else\\\"* is two claims wearing one sentence, and they have **opposite** answers."
+    }
   }
 ]
 

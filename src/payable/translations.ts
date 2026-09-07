@@ -14,6 +14,54 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "payable"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about payable — The A/P field factories: the shapes a bill carries — bill number, vendor, due date, payment terms, A/P analysis. (the type module) is a set of these; this atom is the one.",
+    "uuid": "9a389d4d-1f99-8533-b90a-07cef4af2a99",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "payable",
+      "the",
+      "a",
+      "p",
+      "field",
+      "factories",
+      "the",
+      "shapes",
+      "a",
+      "bill",
+      "carries",
+      "bill",
+      "number",
+      "vendor",
+      "due",
+      "date",
+      "payment",
+      "terms",
+      "a",
+      "p",
+      "analysis",
+      "the",
+      "type",
+      "module",
+      "is",
+      "a",
+      "set",
+      "of",
+      "these",
+      "this",
+      "atom",
+      "is",
+      "the",
+      "one"
+    ],
+    "values": {
+      "en": "Use when reasoning about payable — The A/P field factories: the shapes a bill carries — bill number, vendor, due date, payment terms, A/P analysis. (the type module) is a set of these; this atom is the one."
+    }
   }
 ]
 

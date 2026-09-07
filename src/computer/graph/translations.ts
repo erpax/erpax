@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when traversing corpus bonds as a directed graph — matrix adjacency under [[computer]]; executable not glossary.",
+    "source": "Use when traversing corpus bonds as a directed graph — matrix adjacency under computer; executable not glossary.",
     "uuid": "006036b5-18c7-87d3-95e9-fcdd7db3e325",
     "words": [
       "use",
@@ -38,7 +38,7 @@ export const translations: readonly Translation[] = [
       "glossary"
     ],
     "values": {
-      "en": "Use when traversing corpus bonds as a directed graph — matrix adjacency under [[computer]]; executable not glossary."
+      "en": "Use when traversing corpus bonds as a directed graph — matrix adjacency under computer; executable not glossary."
     }
   }
 ]

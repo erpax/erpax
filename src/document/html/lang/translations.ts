@@ -14,6 +14,45 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "lang"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about lang — is what a screen reader consults to choose a voice. Get it wrong and Bulgarian is read aloud with English phonemes — not degraded, *unintelligible*.",
+    "uuid": "7c562685-419f-86df-8ac1-8c52233fedf8",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "lang",
+      "is",
+      "what",
+      "a",
+      "screen",
+      "reader",
+      "consults",
+      "to",
+      "choose",
+      "a",
+      "voice",
+      "get",
+      "it",
+      "wrong",
+      "and",
+      "bulgarian",
+      "is",
+      "read",
+      "aloud",
+      "with",
+      "english",
+      "phonemes",
+      "not",
+      "degraded",
+      "unintelligible"
+    ],
+    "values": {
+      "en": "Use when reasoning about lang — is what a screen reader consults to choose a voice. Get it wrong and Bulgarian is read aloud with English phonemes — not degraded, *unintelligible*."
+    }
   }
 ]
 

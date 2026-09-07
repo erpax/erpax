@@ -14,6 +14,44 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "attestation"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about attestation — produces a PDF declaring which run captured this evidence, when, and against which tenant; applies a PAdES signature where a signer is configured.",
+    "uuid": "517658f3-89d1-8293-b23d-31babde577d9",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "attestation",
+      "produces",
+      "a",
+      "pdf",
+      "declaring",
+      "which",
+      "run",
+      "captured",
+      "this",
+      "evidence",
+      "when",
+      "and",
+      "against",
+      "which",
+      "tenant",
+      "applies",
+      "a",
+      "pades",
+      "signature",
+      "where",
+      "a",
+      "signer",
+      "is",
+      "configured"
+    ],
+    "values": {
+      "en": "Use when reasoning about attestation — produces a PDF declaring which run captured this evidence, when, and against which tenant; applies a PAdES signature where a signer is configured."
+    }
   }
 ]
 

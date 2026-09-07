@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "country"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about country — holds a canonical bundle per country and returns the one for an alpha-2 code: its holidays, its VAT treatment, its bank-statement and invoice formats, its signing profile.",
+    "uuid": "d6948967-f052-869d-83e1-2a580aa6d0e8",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "country",
+      "holds",
+      "a",
+      "canonical",
+      "bundle",
+      "per",
+      "country",
+      "and",
+      "returns",
+      "the",
+      "one",
+      "for",
+      "an",
+      "alpha",
+      "code",
+      "its",
+      "holidays",
+      "its",
+      "vat",
+      "treatment",
+      "its",
+      "bank",
+      "statement",
+      "and",
+      "invoice",
+      "formats",
+      "its",
+      "signing",
+      "profile"
+    ],
+    "values": {
+      "en": "Use when reasoning about country — holds a canonical bundle per country and returns the one for an alpha-2 code: its holidays, its VAT treatment, its bank-statement and invoice formats, its signing profile."
+    }
   }
 ]
 

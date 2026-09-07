@@ -14,6 +14,41 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "mirror"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it.",
+    "uuid": "de2571aa-e856-8803-b223-1fe040f8bfe6",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "mirror",
+      "that",
+      "assertion",
+      "cannot",
+      "fail",
+      "for",
+      "any",
+      "reason",
+      "a",
+      "reader",
+      "cares",
+      "about",
+      "change",
+      "the",
+      "constant",
+      "and",
+      "the",
+      "test",
+      "changes",
+      "with",
+      "it"
+    ],
+    "values": {
+      "en": "Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it."
+    }
   }
 ]
 

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract.",
-    "uuid": "df7e96fa-abd5-819f-8a3c-7930ba62c458",
+    "source": "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract.",
+    "uuid": "f5e024d3-0828-8d6c-bfe6-18e0acd2fed3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "cloudflare",
       "cloudflare",
       "mcp",
       "tool",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "extract"
     ],
     "values": {
-      "en": "Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract."
+      "en": "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract."
     }
   }
 ]

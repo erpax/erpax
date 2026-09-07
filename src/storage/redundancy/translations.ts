@@ -14,6 +14,47 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "redundancy"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.",
+    "uuid": "411298a1-478a-8257-856e-3e965c49617a",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "redundancy",
+      "puts",
+      "to",
+      "every",
+      "backend",
+      "and",
+      "prefers",
+      "a",
+      "copy",
+      "whose",
+      "recomputed",
+      "uuid",
+      "matches",
+      "its",
+      "content",
+      "repairs",
+      "a",
+      "stale",
+      "or",
+      "tampered",
+      "store",
+      "by",
+      "pulling",
+      "from",
+      "a",
+      "healthy",
+      "peer"
+    ],
+    "values": {
+      "en": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer."
+    }
   }
 ]
 

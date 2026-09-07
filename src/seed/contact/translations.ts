@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route.",
-    "uuid": "9dc57194-a164-8b2d-941b-40134a1044d5",
+    "source": "Use when reasoning about contact — Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route.",
+    "uuid": "dd6dff9c-d8b1-8089-9649-01660acd0517",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "contact",
       "use",
       "for",
       "the",
@@ -49,7 +54,7 @@ export const translations: readonly Translation[] = [
       "route"
     ],
     "values": {
-      "en": "Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route."
+      "en": "Use when reasoning about contact — Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route."
     }
   }
 ]

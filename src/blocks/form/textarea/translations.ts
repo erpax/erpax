@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "textarea"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about textarea — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+    "uuid": "5502c0b7-f506-8cd6-bee8-dd068b354a16",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "textarea",
+      "a",
+      "and",
+      "an",
+      "are",
+      "bound",
+      "by",
+      "a",
+      "string",
+      "that",
+      "appears",
+      "twice",
+      "change",
+      "one",
+      "side",
+      "and",
+      "nothing",
+      "moves",
+      "on",
+      "screen",
+      "the",
+      "field",
+      "still",
+      "renders",
+      "still",
+      "accepts",
+      "input",
+      "still",
+      "submits"
+    ],
+    "values": {
+      "en": "Use when reasoning about textarea — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
+    }
   }
 ]
 

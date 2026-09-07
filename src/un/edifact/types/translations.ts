@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Canonical UN/EDIFACT message types — semantic structure only.",
-    "uuid": "44c6df77-55d5-8670-b3e8-ae93298db221",
+    "source": "Use when reasoning about types — Canonical UN/EDIFACT message types — semantic structure only.",
+    "uuid": "a947439a-dea5-85b3-8ea4-3febf3b1e14b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "types",
       "canonical",
       "un",
       "edifact",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "only"
     ],
     "values": {
-      "en": "Canonical UN/EDIFACT message types — semantic structure only."
+      "en": "Use when reasoning about types — Canonical UN/EDIFACT message types — semantic structure only."
     }
   }
 ]

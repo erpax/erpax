@@ -14,6 +14,35 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "base64url"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about base64url — (HKDF-derived per-row DEKs) and (JWS-shaped detached signatures) each carried their own / .",
+    "uuid": "e8c29964-5dd2-8f7c-9c7f-b9b05e1e7a6c",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "base64url",
+      "hkdf",
+      "derived",
+      "per",
+      "row",
+      "deks",
+      "and",
+      "jws",
+      "shaped",
+      "detached",
+      "signatures",
+      "each",
+      "carried",
+      "their",
+      "own"
+    ],
+    "values": {
+      "en": "Use when reasoning about base64url — (HKDF-derived per-row DEKs) and (JWS-shaped detached signatures) each carried their own / ."
+    }
   }
 ]
 

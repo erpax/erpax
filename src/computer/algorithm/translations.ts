@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when running search/sort primitives under the machine — executable algorithms nested under [[computer]].",
+    "source": "Use when running search/sort primitives under the machine — executable algorithms nested under computer.",
     "uuid": "0aab59c1-ee4e-8b6b-9753-181edad848a4",
     "words": [
       "use",
@@ -36,7 +36,7 @@ export const translations: readonly Translation[] = [
       "computer"
     ],
     "values": {
-      "en": "Use when running search/sort primitives under the machine — executable algorithms nested under [[computer]]."
+      "en": "Use when running search/sort primitives under the machine — executable algorithms nested under computer."
     }
   }
 ]

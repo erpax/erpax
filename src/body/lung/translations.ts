@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the lung as an organ of [[body]] — pivot to canonical @/lung; zero duplication.",
+    "source": "Use when reasoning about the lung as an organ of body — pivot to canonical @/lung; zero duplication.",
     "uuid": "5de95a49-134c-84f1-9297-44c95816006e",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "duplication"
     ],
     "values": {
-      "en": "Use when reasoning about the lung as an organ of [[body]] — pivot to canonical @/lung; zero duplication."
+      "en": "Use when reasoning about the lung as an organ of body — pivot to canonical @/lung; zero duplication."
     }
   }
 ]

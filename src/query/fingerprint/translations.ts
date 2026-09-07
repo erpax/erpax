@@ -14,6 +14,45 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "fingerprint"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about fingerprint — normalises a statement and addresses it, so the same query issued from two places is recognisably one query. records the execution against that address.",
+    "uuid": "f703b219-f144-835d-94bd-250233e91856",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "fingerprint",
+      "normalises",
+      "a",
+      "statement",
+      "and",
+      "addresses",
+      "it",
+      "so",
+      "the",
+      "same",
+      "query",
+      "issued",
+      "from",
+      "two",
+      "places",
+      "is",
+      "recognisably",
+      "one",
+      "query",
+      "records",
+      "the",
+      "execution",
+      "against",
+      "that",
+      "address"
+    ],
+    "values": {
+      "en": "Use when reasoning about fingerprint — normalises a statement and addresses it, so the same query issued from two places is recognisably one query. records the execution against that address."
+    }
   }
 ]
 

@@ -14,6 +14,48 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "login"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do.",
+    "uuid": "c6d4c96d-9a57-8a37-bed7-02555e6a3b1e",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "login",
+      "a",
+      "panel",
+      "above",
+      "the",
+      "admin",
+      "sign",
+      "in",
+      "form",
+      "carrying",
+      "the",
+      "copy",
+      "that",
+      "orients",
+      "a",
+      "first",
+      "time",
+      "visitor",
+      "what",
+      "this",
+      "system",
+      "is",
+      "and",
+      "what",
+      "signing",
+      "in",
+      "will",
+      "do"
+    ],
+    "values": {
+      "en": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do."
+    }
   }
 ]
 

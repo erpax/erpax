@@ -14,6 +14,35 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "naming"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about naming — names every internal table and column by content-addressing the path it sits at.",
+    "uuid": "a7aab037-61a8-8e99-934b-c7fe8dff3295",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "naming",
+      "names",
+      "every",
+      "internal",
+      "table",
+      "and",
+      "column",
+      "by",
+      "content",
+      "addressing",
+      "the",
+      "path",
+      "it",
+      "sits",
+      "at"
+    ],
+    "values": {
+      "en": "Use when reasoning about naming — names every internal table and column by content-addressing the path it sits at."
+    }
   }
 ]
 

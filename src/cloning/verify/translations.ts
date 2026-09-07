@@ -17,15 +17,20 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Conservation Law 24 — checkCloneIntegrity.",
-    "uuid": "ce016604-e543-88f5-b80e-6f7ba885e379",
+    "source": "Use when reasoning about verify — Conservation Law 24 — checkCloneIntegrity.",
+    "uuid": "9c6a040a-a681-8a4b-9b32-fa4ba08bf0fb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "verify",
       "conservation",
       "law",
       "checkcloneintegrity"
     ],
     "values": {
-      "en": "Conservation Law 24 — checkCloneIntegrity."
+      "en": "Use when reasoning about verify — Conservation Law 24 — checkCloneIntegrity."
     }
   }
 ]

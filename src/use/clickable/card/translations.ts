@@ -14,6 +14,39 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "card"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about card — Making a card clickable is easy and usually wrong. Wrapping the card in an swallows every nested link.",
+    "uuid": "f6e3ed44-9e91-8204-a7ca-33970c2a8efb",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "card",
+      "making",
+      "a",
+      "card",
+      "clickable",
+      "is",
+      "easy",
+      "and",
+      "usually",
+      "wrong",
+      "wrapping",
+      "the",
+      "card",
+      "in",
+      "an",
+      "swallows",
+      "every",
+      "nested",
+      "link"
+    ],
+    "values": {
+      "en": "Use when reasoning about card — Making a card clickable is easy and usually wrong. Wrapping the card in an swallows every nested link."
+    }
   }
 ]
 

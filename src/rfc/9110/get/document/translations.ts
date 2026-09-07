@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "RFC 9110 §13 cached document fetcher (single doc by collection + slug).",
-    "uuid": "f53f2b36-f36e-8b00-82d8-09d770d3461a",
+    "source": "Use when reasoning about document — RFC 9110 §13 cached document fetcher (single doc by collection + slug).",
+    "uuid": "e30c1ee0-f029-85dd-be3c-edff62d9fd4c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "document",
       "rfc",
       "cached",
       "document",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "slug"
     ],
     "values": {
-      "en": "RFC 9110 §13 cached document fetcher (single doc by collection + slug)."
+      "en": "Use when reasoning about document — RFC 9110 §13 cached document fetcher (single doc by collection + slug)."
     }
   }
 ]

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Quantum FTL crack detection — boundaries, crack patterns, discovery",
-    "uuid": "8fe932d9-251f-8995-b49e-d2cccaf4140b",
+    "source": "Use when reasoning about crack — Quantum FTL crack detection — boundaries, crack patterns, discovery",
+    "uuid": "038f95c9-4684-8baa-be22-df5c0f680e37",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "crack",
       "quantum",
       "ftl",
       "crack",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "discovery"
     ],
     "values": {
-      "en": "Quantum FTL crack detection — boundaries, crack patterns, discovery"
+      "en": "Use when reasoning about crack — Quantum FTL crack detection — boundaries, crack patterns, discovery"
     }
   }
 ]

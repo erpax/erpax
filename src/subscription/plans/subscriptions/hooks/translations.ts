@@ -14,6 +14,34 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — publishes the subscription's transitions and protects its credentials on the way in.",
+    "uuid": "cf484cdc-8186-8883-b275-e7406823648f",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "publishes",
+      "the",
+      "subscription",
+      "s",
+      "transitions",
+      "and",
+      "protects",
+      "its",
+      "credentials",
+      "on",
+      "the",
+      "way",
+      "in"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — publishes the subscription's transitions and protects its credentials on the way in."
+    }
   }
 ]
 

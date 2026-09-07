@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "email"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about email — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+    "uuid": "e57852d2-01de-8d94-904e-aa492d88ac8c",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "email",
+      "a",
+      "and",
+      "an",
+      "are",
+      "bound",
+      "by",
+      "a",
+      "string",
+      "that",
+      "appears",
+      "twice",
+      "change",
+      "one",
+      "side",
+      "and",
+      "nothing",
+      "moves",
+      "on",
+      "screen",
+      "the",
+      "field",
+      "still",
+      "renders",
+      "still",
+      "accepts",
+      "input",
+      "still",
+      "submits"
+    ],
+    "values": {
+      "en": "Use when reasoning about email — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
+    }
   }
 ]
 

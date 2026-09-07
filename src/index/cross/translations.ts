@@ -14,6 +14,47 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "cross"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about cross — reports every with no matching , and reports matter sitting beside a barrel that should be a child atom. computes the move; is what a reader gets.",
+    "uuid": "5896fafe-ac21-8f52-9ee8-47caa60c4e64",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "cross",
+      "reports",
+      "every",
+      "with",
+      "no",
+      "matching",
+      "and",
+      "reports",
+      "matter",
+      "sitting",
+      "beside",
+      "a",
+      "barrel",
+      "that",
+      "should",
+      "be",
+      "a",
+      "child",
+      "atom",
+      "computes",
+      "the",
+      "move",
+      "is",
+      "what",
+      "a",
+      "reader",
+      "gets"
+    ],
+    "values": {
+      "en": "Use when reasoning about cross — reports every with no matching , and reports matter sitting beside a barrel that should be a child atom. computes the move; is what a reader gets."
+    }
   }
 ]
 

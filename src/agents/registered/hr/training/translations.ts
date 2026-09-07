@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hr.training — the HrAgent's auto-train capability as a PURE transform.",
-    "uuid": "33853f64-0960-8bd9-9336-cf9062cfe226",
+    "source": "Use when reasoning about training — hr.training — the HrAgent's auto-train capability as a PURE transform.",
+    "uuid": "cdafa988-5b80-8287-83b5-e4647465bc94",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "training",
       "hr",
       "training",
       "the",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "transform"
     ],
     "values": {
-      "en": "hr.training — the HrAgent's auto-train capability as a PURE transform."
+      "en": "Use when reasoning about training — hr.training — the HrAgent's auto-train capability as a PURE transform."
     }
   }
 ]

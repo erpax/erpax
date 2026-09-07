@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about clinic as a medical facet of [[medical]] — vocabulary pivot to @/clinic; nested not duplicated.",
+    "source": "Use when reasoning about clinic as a medical facet of medical — vocabulary pivot to @/clinic; nested not duplicated.",
     "uuid": "96bdda3a-15e0-8e00-b7e5-fdbbdac6dd14",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about clinic as a medical facet of [[medical]] — vocabulary pivot to @/clinic; nested not duplicated."
+      "en": "Use when reasoning about clinic as a medical facet of medical — vocabulary pivot to @/clinic; nested not duplicated."
     }
   }
 ]

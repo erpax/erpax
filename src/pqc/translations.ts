@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "NIST post-quantum cryptography (Kyber-768 + SPHINCS+)",
-    "uuid": "68954dce-5810-8ad1-af4e-3526efe2505f",
+    "source": "Use when reasoning about pqc — NIST post-quantum cryptography (Kyber-768 + SPHINCS+)",
+    "uuid": "c312e431-ef09-8afd-b284-7b6ddd1eef36",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "pqc",
       "nist",
       "post",
       "quantum",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "sphincs"
     ],
     "values": {
-      "en": "NIST post-quantum cryptography (Kyber-768 + SPHINCS+)"
+      "en": "Use when reasoning about pqc — NIST post-quantum cryptography (Kyber-768 + SPHINCS+)"
     }
   }
 ]

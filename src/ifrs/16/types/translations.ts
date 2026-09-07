@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Canonical IFRS 16 / ASC 842 lease accounting types — lessee model.",
-    "uuid": "b92493bf-8e37-8bf8-98ab-f89f9ede4f1a",
+    "source": "Use when reasoning about types — Canonical IFRS 16 / ASC 842 lease accounting types — lessee model.",
+    "uuid": "de93afe7-9898-8fc0-8ddc-4a0fd3a27b3a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "types",
       "canonical",
       "ifrs",
       "asc",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "model"
     ],
     "values": {
-      "en": "Canonical IFRS 16 / ASC 842 lease accounting types — lessee model."
+      "en": "Use when reasoning about types — Canonical IFRS 16 / ASC 842 lease accounting types — lessee model."
     }
   }
 ]

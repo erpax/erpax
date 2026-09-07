@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Algebra operations — closed, movie, product, allAlgebra",
-    "uuid": "d9519f85-c187-8788-b04d-9c9417532eda",
+    "source": "Use when reasoning about operations — Algebra operations — closed, movie, product, allAlgebra",
+    "uuid": "95009cde-3ce1-892c-9f99-8da2879c7717",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "operations",
       "algebra",
       "operations",
       "closed",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "allalgebra"
     ],
     "values": {
-      "en": "Algebra operations — closed, movie, product, allAlgebra"
+      "en": "Use when reasoning about operations — Algebra operations — closed, movie, product, allAlgebra"
     }
   }
 ]

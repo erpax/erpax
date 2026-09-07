@@ -14,6 +14,52 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "provider"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…",
+    "uuid": "de075470-e61e-8812-923b-2812180e9b66",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "provider",
+      "each",
+      "provider",
+      "file",
+      "registers",
+      "itself",
+      "at",
+      "its",
+      "own",
+      "bottom",
+      "importing",
+      "this",
+      "barrel",
+      "runs",
+      "those",
+      "side",
+      "effects",
+      "so",
+      "the",
+      "set",
+      "of",
+      "available",
+      "providers",
+      "is",
+      "the",
+      "set",
+      "of",
+      "files",
+      "present",
+      "there",
+      "is",
+      "no"
+    ],
+    "values": {
+      "en": "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…"
+    }
   }
 ]
 

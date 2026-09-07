@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
-    "uuid": "580e89ee-c73d-8e37-8504-a7b856f1e14b",
+    "source": "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
+    "uuid": "995bcc0d-2709-8b4a-b5c8-c379ca130bd4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "operations",
       "operations",
       "the",
       "garment",
@@ -43,7 +48,7 @@ export const translations: readonly Translation[] = [
       "standards"
     ],
     "values": {
-      "en": "operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards."
+      "en": "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards."
     }
   }
 ]

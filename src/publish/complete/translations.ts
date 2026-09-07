@@ -14,6 +14,33 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "complete"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about complete — Completeness is **required**, and it is not what a single listing reports.",
+    "uuid": "89f48e68-6fa0-8c3c-8063-85423722fbcc",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "complete",
+      "completeness",
+      "is",
+      "required",
+      "and",
+      "it",
+      "is",
+      "not",
+      "what",
+      "a",
+      "single",
+      "listing",
+      "reports"
+    ],
+    "values": {
+      "en": "Use when reasoning about complete — Completeness is **required**, and it is not what a single listing reports."
+    }
   }
 ]
 

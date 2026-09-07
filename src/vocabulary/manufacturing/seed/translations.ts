@@ -14,6 +14,38 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "seed"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three.",
+    "uuid": "7d184058-0ec3-80b0-b4be-05fc0c335ed9",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "seed",
+      "operations",
+      "positions",
+      "and",
+      "standards",
+      "are",
+      "each",
+      "their",
+      "own",
+      "atom",
+      "this",
+      "is",
+      "the",
+      "address",
+      "that",
+      "offers",
+      "all",
+      "three"
+    ],
+    "values": {
+      "en": "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three."
+    }
   }
 ]
 

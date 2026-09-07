@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Case state machine on the horo ring—filed to sealed through seven positions",
-    "uuid": "e9fa1ced-bd54-813c-a1d0-8899a7a68b8f",
+    "source": "Use when reasoning about lifecycle — Case state machine on the horo ring—filed to sealed through seven positions",
+    "uuid": "1969eaec-9ed7-8c61-9b62-980f0923ead8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "lifecycle",
       "case",
       "state",
       "machine",
@@ -35,7 +40,7 @@ export const translations: readonly Translation[] = [
       "positions"
     ],
     "values": {
-      "en": "Case state machine on the horo ring—filed to sealed through seven positions"
+      "en": "Use when reasoning about lifecycle — Case state machine on the horo ring—filed to sealed through seven positions"
     }
   }
 ]

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Quantum automation primitives for iterative problem-solving loops",
-    "uuid": "0bb07a39-25aa-8879-8020-e8b486f4ff59",
+    "source": "Use when reasoning about automate — Quantum automation primitives for iterative problem-solving loops",
+    "uuid": "555171c9-79ae-897d-82bd-194e09a9986d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "automate",
       "quantum",
       "automation",
       "primitives",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "loops"
     ],
     "values": {
-      "en": "Quantum automation primitives for iterative problem-solving loops"
+      "en": "Use when reasoning about automate — Quantum automation primitives for iterative problem-solving loops"
     }
   }
 ]

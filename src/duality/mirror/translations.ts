@@ -14,6 +14,43 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "mirror"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about mirror — > *\\\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\\\"*",
+    "uuid": "1fdc1b45-cf8f-8d62-a07e-7bb888c5383b",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "mirror",
+      "all",
+      "not",
+      "harmonic",
+      "is",
+      "pulled",
+      "by",
+      "the",
+      "black",
+      "hole",
+      "as",
+      "one",
+      "coin",
+      "side",
+      "and",
+      "reflected",
+      "from",
+      "the",
+      "other",
+      "white",
+      "hole",
+      "coin",
+      "side"
+    ],
+    "values": {
+      "en": "Use when reasoning about mirror — > *\\\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\\\"*"
+    }
   }
 ]
 

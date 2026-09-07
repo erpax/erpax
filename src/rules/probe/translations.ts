@@ -14,6 +14,55 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "probe"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about probe — For a React atom the answer is **yes** and this returns **no**. Its barrel is , because JSX does not parse from a file — that is not a stylistic variant, it is the only spelling…",
+    "uuid": "f50c5d5f-e2bc-8148-a419-edb4b05e7bca",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "probe",
+      "for",
+      "a",
+      "react",
+      "atom",
+      "the",
+      "answer",
+      "is",
+      "yes",
+      "and",
+      "this",
+      "returns",
+      "no",
+      "its",
+      "barrel",
+      "is",
+      "because",
+      "jsx",
+      "does",
+      "not",
+      "parse",
+      "from",
+      "a",
+      "file",
+      "that",
+      "is",
+      "not",
+      "a",
+      "stylistic",
+      "variant",
+      "it",
+      "is",
+      "the",
+      "only",
+      "spelling"
+    ],
+    "values": {
+      "en": "Use when reasoning about probe — For a React atom the answer is **yes** and this returns **no**. Its barrel is , because JSX does not parse from a file — that is not a stylistic variant, it is the only spelling…"
+    }
   }
 ]
 

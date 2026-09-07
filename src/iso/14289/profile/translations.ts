@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ISO 14289 PDF/UA — PDF Universal Accessibility.",
-    "uuid": "369f2baf-5257-81a2-a81c-2e0abb947a5a",
+    "source": "Use when reasoning about profile — ISO 14289 PDF/UA — PDF Universal Accessibility.",
+    "uuid": "02457e95-02ca-8696-b825-22ac1d22b6cf",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "profile",
       "iso",
       "pdf",
       "ua",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "accessibility"
     ],
     "values": {
-      "en": "ISO 14289 PDF/UA — PDF Universal Accessibility."
+      "en": "Use when reasoning about profile — ISO 14289 PDF/UA — PDF Universal Accessibility."
     }
   }
 ]

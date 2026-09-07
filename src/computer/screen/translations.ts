@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about screen as a part of [[computer]] — vocabulary pivot to @/screen; nested not duplicated.",
+    "source": "Use when reasoning about screen as a part of computer — vocabulary pivot to @/screen; nested not duplicated.",
     "uuid": "892ca3e9-708b-8b97-9e42-4617610b1fc7",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about screen as a part of [[computer]] — vocabulary pivot to @/screen; nested not duplicated."
+      "en": "Use when reasoning about screen as a part of computer — vocabulary pivot to @/screen; nested not duplicated."
     }
   }
 ]

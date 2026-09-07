@@ -14,6 +14,41 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "readiness"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about readiness — enumerates the live MCP tool surface and groups it; folds that into a single manifest a reader can act on.",
+    "uuid": "1ea45002-7729-8e91-8142-ef53d7ed5295",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "readiness",
+      "enumerates",
+      "the",
+      "live",
+      "mcp",
+      "tool",
+      "surface",
+      "and",
+      "groups",
+      "it",
+      "folds",
+      "that",
+      "into",
+      "a",
+      "single",
+      "manifest",
+      "a",
+      "reader",
+      "can",
+      "act",
+      "on"
+    ],
+    "values": {
+      "en": "Use when reasoning about readiness — enumerates the live MCP tool surface and groups it; folds that into a single manifest a reader can act on."
+    }
   }
 ]
 

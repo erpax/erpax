@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language.",
-    "uuid": "9e2a48c7-9bc1-89d2-afb1-23bd30f5f877",
+    "source": "Use when reasoning about conventions — Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language.",
+    "uuid": "5c0258c2-923d-869f-a615-7aeb4ee1d94a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "conventions",
       "unix",
       "style",
       "rwx",
@@ -64,7 +69,7 @@ export const translations: readonly Translation[] = [
       "language"
     ],
     "values": {
-      "en": "Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language."
+      "en": "Use when reasoning about conventions — Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language."
     }
   }
 ]

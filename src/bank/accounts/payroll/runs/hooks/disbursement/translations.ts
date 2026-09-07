@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable.",
-    "uuid": "3b01724f-f55b-804b-a75f-850bc02b7ec8",
+    "source": "Use when reasoning about disbursement — Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable.",
+    "uuid": "6adbe228-6a20-8d33-afae-4aa4b8bb075b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "disbursement",
       "payroll",
       "disbursement",
       "hook",
@@ -44,7 +49,7 @@ export const translations: readonly Translation[] = [
       "payable"
     ],
     "values": {
-      "en": "Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable."
+      "en": "Use when reasoning about disbursement — Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable."
     }
   }
 ]

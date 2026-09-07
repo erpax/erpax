@@ -14,6 +14,57 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "impact"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about impact — The full-bleed hero. It also **darkens the header on mount** — the hero paints white text over its own dark field, and the header sits on top of it, so a header left in its light…",
+    "uuid": "2f02e52a-f1ba-849a-8a7a-9a28fa5fdd9c",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "impact",
+      "the",
+      "full",
+      "bleed",
+      "hero",
+      "it",
+      "also",
+      "darkens",
+      "the",
+      "header",
+      "on",
+      "mount",
+      "the",
+      "hero",
+      "paints",
+      "white",
+      "text",
+      "over",
+      "its",
+      "own",
+      "dark",
+      "field",
+      "and",
+      "the",
+      "header",
+      "sits",
+      "on",
+      "top",
+      "of",
+      "it",
+      "so",
+      "a",
+      "header",
+      "left",
+      "in",
+      "its",
+      "light"
+    ],
+    "values": {
+      "en": "Use when reasoning about impact — The full-bleed hero. It also **darkens the header on mount** — the hero paints white text over its own dark field, and the header sits on top of it, so a header left in its light…"
+    }
   }
 ]
 

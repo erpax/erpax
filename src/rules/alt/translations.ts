@@ -14,6 +14,42 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "alt"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable).",
+    "uuid": "4554dfc3-0989-8cc5-86c3-bcb90ee0249e",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "alt",
+      "wcag",
+      "is",
+      "the",
+      "largest",
+      "block",
+      "of",
+      "undischarged",
+      "conformance",
+      "in",
+      "this",
+      "corpus",
+      "atoms",
+      "cite",
+      "it",
+      "and",
+      "nothing",
+      "gates",
+      "any",
+      "criterion",
+      "proof",
+      "replaceable"
+    ],
+    "values": {
+      "en": "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable)."
+    }
   }
 ]
 

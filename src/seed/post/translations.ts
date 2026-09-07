@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples.",
-    "uuid": "6ce30b6a-410d-8ad1-a835-8d42e72e2014",
+    "source": "Use when reasoning about post — Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples.",
+    "uuid": "01bae5e3-bb1a-8c9e-8f91-e2a221bf0415",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "post",
       "use",
       "for",
       "the",
@@ -44,7 +49,7 @@ export const translations: readonly Translation[] = [
       "samples"
     ],
     "values": {
-      "en": "Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples."
+      "en": "Use when reasoning about post — Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples."
     }
   }
 ]

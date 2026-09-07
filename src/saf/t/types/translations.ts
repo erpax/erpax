@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Canonical OECD SAF-T 2.0 types — audit-file projection.",
-    "uuid": "8ab54569-cc09-8394-97cd-bed32cbf02dc",
+    "source": "Use when reasoning about types — Canonical OECD SAF-T 2.0 types — audit-file projection.",
+    "uuid": "90ae9a25-6fc8-8866-895e-c4dcbc42ed3f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "types",
       "canonical",
       "oecd",
       "saf",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "projection"
     ],
     "values": {
-      "en": "Canonical OECD SAF-T 2.0 types — audit-file projection."
+      "en": "Use when reasoning about types — Canonical OECD SAF-T 2.0 types — audit-file projection."
     }
   }
 ]

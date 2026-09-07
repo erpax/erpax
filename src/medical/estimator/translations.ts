@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about estimator as a medical facet of [[medical]] — vocabulary pivot to @/estimator; nested not duplicated.",
+    "source": "Use when reasoning about estimator as a medical facet of medical — vocabulary pivot to @/estimator; nested not duplicated.",
     "uuid": "ab0b28d0-cb79-8566-8dfa-a5451bec5b14",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about estimator as a medical facet of [[medical]] — vocabulary pivot to @/estimator; nested not duplicated."
+      "en": "Use when reasoning about estimator as a medical facet of medical — vocabulary pivot to @/estimator; nested not duplicated."
     }
   }
 ]

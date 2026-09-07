@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards.",
-    "uuid": "d29b1550-40c7-8a3d-b34b-3fa669728fb8",
+    "source": "Use when reasoning about positions — positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards.",
+    "uuid": "2059f67d-b118-8584-aa4a-ff39a7aa0055",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "positions",
       "positions",
       "the",
       "harmonic",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "standards"
     ],
     "values": {
-      "en": "positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards."
+      "en": "Use when reasoning about positions — positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards."
     }
   }
 ]

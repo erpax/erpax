@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Fermat's Last Theorem via basis decomposition - P vs NP + algebra",
-    "uuid": "20d082d3-9c78-8b27-9a5f-cd71a8d96ba1",
+    "source": "Use when reasoning about fermat — Fermat's Last Theorem via basis decomposition - P vs NP + algebra",
+    "uuid": "bbbc766b-6b7f-8a8d-8317-182caf9b5cb4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "fermat",
       "fermat",
       "s",
       "last",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "algebra"
     ],
     "values": {
-      "en": "Fermat's Last Theorem via basis decomposition - P vs NP + algebra"
+      "en": "Use when reasoning about fermat — Fermat's Last Theorem via basis decomposition - P vs NP + algebra"
     }
   }
 ]

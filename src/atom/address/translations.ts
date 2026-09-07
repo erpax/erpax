@@ -14,6 +14,50 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "address"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about address — Four hundred and fifty-three assertions in this corpus had that shape (rules/mirror). Each was green, fast, and counted as a proof by every gate that counts proofs.",
+    "uuid": "09ec9bcd-9354-8203-a1c7-e3784e1ed90d",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "address",
+      "four",
+      "hundred",
+      "and",
+      "fifty",
+      "three",
+      "assertions",
+      "in",
+      "this",
+      "corpus",
+      "had",
+      "that",
+      "shape",
+      "rules",
+      "mirror",
+      "each",
+      "was",
+      "green",
+      "fast",
+      "and",
+      "counted",
+      "as",
+      "a",
+      "proof",
+      "by",
+      "every",
+      "gate",
+      "that",
+      "counts",
+      "proofs"
+    ],
+    "values": {
+      "en": "Use when reasoning about address — Four hundred and fifty-three assertions in this corpus had that shape (rules/mirror). Each was green, fast, and counted as a proof by every gate that counts proofs."
+    }
   }
 ]
 

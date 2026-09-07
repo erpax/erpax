@@ -14,6 +14,54 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "nav"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about nav — builds the corpus links from the atom prefix tree. A hand-maintained menu is a second source of truth about where things live, and it goes stale the first time a folder moves…",
+    "uuid": "870f537f-4cb5-8ce7-8046-e26c7fbfbab6",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "nav",
+      "builds",
+      "the",
+      "corpus",
+      "links",
+      "from",
+      "the",
+      "atom",
+      "prefix",
+      "tree",
+      "a",
+      "hand",
+      "maintained",
+      "menu",
+      "is",
+      "a",
+      "second",
+      "source",
+      "of",
+      "truth",
+      "about",
+      "where",
+      "things",
+      "live",
+      "and",
+      "it",
+      "goes",
+      "stale",
+      "the",
+      "first",
+      "time",
+      "a",
+      "folder",
+      "moves"
+    ],
+    "values": {
+      "en": "Use when reasoning about nav — builds the corpus links from the atom prefix tree. A hand-maintained menu is a second source of truth about where things live, and it goes stale the first time a folder moves…"
+    }
   }
 ]
 

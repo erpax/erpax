@@ -14,6 +14,52 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "aging"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about aging — Wraps party/aging with A/R-shaped output — , . The bucket math is identical to payable/aging; only the naming differs, and the two stay separate so each side names its own…",
+    "uuid": "c27bc996-dd04-827d-a32e-ded964cc1bb0",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "aging",
+      "wraps",
+      "party",
+      "aging",
+      "with",
+      "a",
+      "r",
+      "shaped",
+      "output",
+      "the",
+      "bucket",
+      "math",
+      "is",
+      "identical",
+      "to",
+      "payable",
+      "aging",
+      "only",
+      "the",
+      "naming",
+      "differs",
+      "and",
+      "the",
+      "two",
+      "stay",
+      "separate",
+      "so",
+      "each",
+      "side",
+      "names",
+      "its",
+      "own"
+    ],
+    "values": {
+      "en": "Use when reasoning about aging — Wraps party/aging with A/R-shaped output — , . The bucket math is identical to payable/aging; only the naming differs, and the two stay separate so each side names its own…"
+    }
   }
 ]
 

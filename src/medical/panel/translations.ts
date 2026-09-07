@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about panel as a medical facet of [[medical]] — vocabulary pivot to @/panel; nested not duplicated.",
+    "source": "Use when reasoning about panel as a medical facet of medical — vocabulary pivot to @/panel; nested not duplicated.",
     "uuid": "570b445a-e5d4-8be8-8e34-10935b40b1ac",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about panel as a medical facet of [[medical]] — vocabulary pivot to @/panel; nested not duplicated."
+      "en": "Use when reasoning about panel as a medical facet of medical — vocabulary pivot to @/panel; nested not duplicated."
     }
   }
 ]

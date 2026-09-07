@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law.",
-    "uuid": "a17f5f35-62a4-8c28-bbcb-f6804812fc2e",
+    "source": "Use when reasoning about frontmatter — skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law.",
+    "uuid": "e560547c-d6ae-823d-bf0f-8e92c69b6352",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "frontmatter",
       "skill",
       "frontmatter",
       "pre",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "law"
     ],
     "values": {
-      "en": "skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law."
+      "en": "Use when reasoning about frontmatter — skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law."
     }
   }
 ]

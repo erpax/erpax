@@ -14,6 +14,52 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "text"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about text — Lexical's serialized state becomes a React tree here. Most of that is the library's own default converters; what this atom decides is the small part the library cannot know.",
+    "uuid": "07bd5c0f-e029-8500-a3d5-e6cee107182e",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "text",
+      "lexical",
+      "s",
+      "serialized",
+      "state",
+      "becomes",
+      "a",
+      "react",
+      "tree",
+      "here",
+      "most",
+      "of",
+      "that",
+      "is",
+      "the",
+      "library",
+      "s",
+      "own",
+      "default",
+      "converters",
+      "what",
+      "this",
+      "atom",
+      "decides",
+      "is",
+      "the",
+      "small",
+      "part",
+      "the",
+      "library",
+      "cannot",
+      "know"
+    ],
+    "values": {
+      "en": "Use when reasoning about text — Lexical's serialized state becomes a React tree here. Most of that is the library's own default converters; what this atom decides is the small part the library cannot know."
+    }
   }
 ]
 

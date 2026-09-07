@@ -14,6 +14,52 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "receivables"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about receivables — , , and are the A/R side of the same party document; buckets it and carries the expected-credit-loss figure IFRS 9 requires, which is the part a receivable cannot honestly omit.",
+    "uuid": "5448beb9-2dc9-881e-bc73-f27a7141cc62",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "receivables",
+      "and",
+      "are",
+      "the",
+      "a",
+      "r",
+      "side",
+      "of",
+      "the",
+      "same",
+      "party",
+      "document",
+      "buckets",
+      "it",
+      "and",
+      "carries",
+      "the",
+      "expected",
+      "credit",
+      "loss",
+      "figure",
+      "ifrs",
+      "requires",
+      "which",
+      "is",
+      "the",
+      "part",
+      "a",
+      "receivable",
+      "cannot",
+      "honestly",
+      "omit"
+    ],
+    "values": {
+      "en": "Use when reasoning about receivables — , , and are the A/R side of the same party document; buckets it and carries the expected-credit-loss figure IFRS 9 requires, which is the part a receivable cannot honestly omit."
+    }
   }
 ]
 

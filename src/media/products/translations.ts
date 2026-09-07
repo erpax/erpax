@@ -14,6 +14,44 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "products"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about products — is the Payload definition: the product's fields, its access rules, and the hooks beside it that manage the images a product carries.",
+    "uuid": "ff0e4936-6112-8898-a233-ca2d1d3b24db",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "products",
+      "is",
+      "the",
+      "payload",
+      "definition",
+      "the",
+      "product",
+      "s",
+      "fields",
+      "its",
+      "access",
+      "rules",
+      "and",
+      "the",
+      "hooks",
+      "beside",
+      "it",
+      "that",
+      "manage",
+      "the",
+      "images",
+      "a",
+      "product",
+      "carries"
+    ],
+    "values": {
+      "en": "Use when reasoning about products — is the Payload definition: the product's fields, its access rules, and the hooks beside it that manage the images a product carries."
+    }
   }
 ]
 

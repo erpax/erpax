@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "AI auto-accept confidence thresholds — imperial rationals only.",
-    "uuid": "87c5d771-3744-8dc3-8fa1-2338c105595a",
+    "source": "Use when reasoning about confidence — AI auto-accept confidence thresholds — imperial rationals only.",
+    "uuid": "fc0ef732-6a2f-87a1-8a7d-1a9928f2c10b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "confidence",
       "ai",
       "auto",
       "accept",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "only"
     ],
     "values": {
-      "en": "AI auto-accept confidence thresholds — imperial rationals only."
+      "en": "Use when reasoning about confidence — AI auto-accept confidence thresholds — imperial rationals only."
     }
   }
 ]

@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "compute"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about compute — Every atom is a page, every partition a volume. derives the volume rows, says what a path means segment by segment, and emits the index as a document.",
+    "uuid": "85d67642-a929-8dd1-a2f7-f01e8848f1c8",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "compute",
+      "every",
+      "atom",
+      "is",
+      "a",
+      "page",
+      "every",
+      "partition",
+      "a",
+      "volume",
+      "derives",
+      "the",
+      "volume",
+      "rows",
+      "says",
+      "what",
+      "a",
+      "path",
+      "means",
+      "segment",
+      "by",
+      "segment",
+      "and",
+      "emits",
+      "the",
+      "index",
+      "as",
+      "a",
+      "document"
+    ],
+    "values": {
+      "en": "Use when reasoning about compute — Every atom is a page, every partition a volume. derives the volume rows, says what a path means segment by segment, and emits the index as a document."
+    }
   }
 ]
 

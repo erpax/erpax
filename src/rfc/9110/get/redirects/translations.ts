@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "RFC 9110 §13 cached redirects-collection fetcher.",
-    "uuid": "b5490be1-7819-87be-8788-9f3949a59142",
+    "source": "Use when reasoning about redirects — RFC 9110 §13 cached redirects-collection fetcher.",
+    "uuid": "8d5d2e47-24b7-8b00-8871-c432ba62dc14",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "redirects",
       "rfc",
       "cached",
       "redirects",
@@ -27,7 +32,7 @@ export const translations: readonly Translation[] = [
       "fetcher"
     ],
     "values": {
-      "en": "RFC 9110 §13 cached redirects-collection fetcher."
+      "en": "Use when reasoning about redirects — RFC 9110 §13 cached redirects-collection fetcher."
     }
   }
 ]

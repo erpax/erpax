@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about review as a anatomical part of [[body]] — vocabulary pivot to @/review; nested not duplicated.",
+    "source": "Use when reasoning about review as a anatomical part of body — vocabulary pivot to @/review; nested not duplicated.",
     "uuid": "76d61382-2dd4-8944-9b7b-66e6f3f9450c",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about review as a anatomical part of [[body]] — vocabulary pivot to @/review; nested not duplicated."
+      "en": "Use when reasoning about review as a anatomical part of body — vocabulary pivot to @/review; nested not duplicated."
     }
   }
 ]

@@ -17,16 +17,21 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ISO 3166-2 subdivision-code validator.",
-    "uuid": "c7543545-397b-8a1f-9335-1f6b31e96126",
+    "source": "Use when reasoning about validate — ISO 3166-2 subdivision-code validator.",
+    "uuid": "8422871a-931b-82c8-9110-4572a3dff60d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "validate",
       "iso",
       "subdivision",
       "code",
       "validator"
     ],
     "values": {
-      "en": "ISO 3166-2 subdivision-code validator."
+      "en": "Use when reasoning about validate — ISO 3166-2 subdivision-code validator."
     }
   }
 ]

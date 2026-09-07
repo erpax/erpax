@@ -14,6 +14,38 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "render"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about render — A dispatcher over three heroes, and the interesting half is everything that is **not** one of them.",
+    "uuid": "6ca3a2ff-1a53-805d-8937-fee34ffcb88e",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "render",
+      "a",
+      "dispatcher",
+      "over",
+      "three",
+      "heroes",
+      "and",
+      "the",
+      "interesting",
+      "half",
+      "is",
+      "everything",
+      "that",
+      "is",
+      "not",
+      "one",
+      "of",
+      "them"
+    ],
+    "values": {
+      "en": "Use when reasoning about render — A dispatcher over three heroes, and the interesting half is everything that is **not** one of them."
+    }
   }
 ]
 

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "publishSelf — wrap a GenomeBundle in a verifiable federation envelope.",
-    "uuid": "5586320a-7620-891b-93b9-dc641deee975",
+    "source": "Use when reasoning about publish — publishSelf — wrap a GenomeBundle in a verifiable federation envelope.",
+    "uuid": "baf7863d-80fa-876f-b163-64121afe1e9f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "publish",
       "publishself",
       "wrap",
       "a",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "envelope"
     ],
     "values": {
-      "en": "publishSelf — wrap a GenomeBundle in a verifiable federation envelope."
+      "en": "Use when reasoning about publish — publishSelf — wrap a GenomeBundle in a verifiable federation envelope."
     }
   }
 ]

@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about risk as a medical facet of [[medical]] — vocabulary pivot to @/risk; nested not duplicated.",
+    "source": "Use when reasoning about risk as a medical facet of medical — vocabulary pivot to @/risk; nested not duplicated.",
     "uuid": "6b6414d0-6359-834e-9228-cf89e1d76ec7",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about risk as a medical facet of [[medical]] — vocabulary pivot to @/risk; nested not duplicated."
+      "en": "Use when reasoning about risk as a medical facet of medical — vocabulary pivot to @/risk; nested not duplicated."
     }
   }
 ]

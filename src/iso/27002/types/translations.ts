@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase.",
-    "uuid": "eedb84ea-ad35-83f5-8256-88b34b969b56",
+    "source": "Use when reasoning about types — Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase.",
+    "uuid": "b1792f13-7c0e-8ac5-a6c2-11ea5804b128",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "types",
       "canonical",
       "iso",
       "security",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "codebase"
     ],
     "values": {
-      "en": "Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase."
+      "en": "Use when reasoning about types — Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase."
     }
   }
 ]

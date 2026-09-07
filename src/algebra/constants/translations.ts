@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Algebra constants — theorems and Algebra interface",
-    "uuid": "ef540793-a9d3-81ef-bd80-cbbefd27a467",
+    "source": "Use when reasoning about constants — Algebra constants — theorems and Algebra interface",
+    "uuid": "a1d12c54-91c9-85c4-979c-7e8eaf6e9e80",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "constants",
       "algebra",
       "constants",
       "theorems",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "interface"
     ],
     "values": {
-      "en": "Algebra constants — theorems and Algebra interface"
+      "en": "Use when reasoning about constants — Algebra constants — theorems and Algebra interface"
     }
   }
 ]

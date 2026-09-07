@@ -14,6 +14,51 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "register"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**.",
+    "uuid": "aad8ced0-71ce-8de9-9afb-8e7af72d7a18",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "register",
+      "a",
+      "theorem",
+      "is",
+      "only",
+      "as",
+      "strong",
+      "as",
+      "what",
+      "it",
+      "assumes",
+      "this",
+      "asks",
+      "the",
+      "kernel",
+      "per",
+      "declaration",
+      "and",
+      "writes",
+      "the",
+      "answer",
+      "down",
+      "is",
+      "the",
+      "arbiter",
+      "and",
+      "it",
+      "is",
+      "asked",
+      "never",
+      "restated"
+    ],
+    "values": {
+      "en": "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**."
+    }
   }
 ]
 

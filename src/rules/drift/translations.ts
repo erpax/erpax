@@ -14,6 +14,42 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "drift"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about drift — The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom is minted.",
+    "uuid": "85b695a8-8044-869b-b818-6a39499e12da",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "drift",
+      "the",
+      "corpus",
+      "computes",
+      "its",
+      "own",
+      "size",
+      "prose",
+      "states",
+      "it",
+      "too",
+      "and",
+      "the",
+      "two",
+      "drift",
+      "apart",
+      "the",
+      "moment",
+      "an",
+      "atom",
+      "is",
+      "minted"
+    ],
+    "values": {
+      "en": "Use when reasoning about drift — The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom is minted."
+    }
   }
 ]
 

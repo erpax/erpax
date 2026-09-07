@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Cloudflare config sealing — content-uuid identity, decrypt only on proof.",
-    "uuid": "031c75fc-3d95-81b6-9373-283210c01a09",
+    "source": "Use when reasoning about seal — Cloudflare config sealing — content-uuid identity, decrypt only on proof.",
+    "uuid": "d3a1c6a7-1c8e-8fad-a658-0af1c7abb41b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "seal",
       "cloudflare",
       "config",
       "sealing",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "proof"
     ],
     "values": {
-      "en": "Cloudflare config sealing — content-uuid identity, decrypt only on proof."
+      "en": "Use when reasoning about seal — Cloudflare config sealing — content-uuid identity, decrypt only on proof."
     }
   }
 ]

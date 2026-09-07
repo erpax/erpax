@@ -14,6 +14,41 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "country"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about country — The control is the ordinary Radix combobox (blocks/form/select): a whose only accessible name is the bound to its .",
+    "uuid": "bd3d4c15-e5db-8778-80cb-8c6dc02596ca",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "country",
+      "the",
+      "control",
+      "is",
+      "the",
+      "ordinary",
+      "radix",
+      "combobox",
+      "blocks",
+      "form",
+      "select",
+      "a",
+      "whose",
+      "only",
+      "accessible",
+      "name",
+      "is",
+      "the",
+      "bound",
+      "to",
+      "its"
+    ],
+    "values": {
+      "en": "Use when reasoning about country — The control is the ordinary Radix combobox (blocks/form/select): a whose only accessible name is the bound to its ."
+    }
   }
 ]
 

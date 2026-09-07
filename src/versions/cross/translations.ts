@@ -14,6 +14,51 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "cross"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about cross — Every entity change content-addresses to a leaf. That same leaf is simultaneously the VERSION (a new content-uuid), a TAMPER-COST increment (one more link a forger must rewrite)…",
+    "uuid": "d20f56a3-dacf-815f-a48d-7ce581ba2813",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "cross",
+      "every",
+      "entity",
+      "change",
+      "content",
+      "addresses",
+      "to",
+      "a",
+      "leaf",
+      "that",
+      "same",
+      "leaf",
+      "is",
+      "simultaneously",
+      "the",
+      "version",
+      "a",
+      "new",
+      "content",
+      "uuid",
+      "a",
+      "tamper",
+      "cost",
+      "increment",
+      "one",
+      "more",
+      "link",
+      "a",
+      "forger",
+      "must",
+      "rewrite"
+    ],
+    "values": {
+      "en": "Use when reasoning about cross — Every entity change content-addresses to a leaf. That same leaf is simultaneously the VERSION (a new content-uuid), a TAMPER-COST increment (one more link a forger must rewrite)…"
+    }
   }
 ]
 

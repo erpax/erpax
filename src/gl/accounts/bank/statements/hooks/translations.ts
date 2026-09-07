@@ -14,6 +14,51 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — fires when a statement lands, which is the event reconciliation waits on. Polling for new statements instead would make the delay a property of the poll interval rather than of…",
+    "uuid": "af410f74-60ed-8be7-b09a-406ada395d9a",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "fires",
+      "when",
+      "a",
+      "statement",
+      "lands",
+      "which",
+      "is",
+      "the",
+      "event",
+      "reconciliation",
+      "waits",
+      "on",
+      "polling",
+      "for",
+      "new",
+      "statements",
+      "instead",
+      "would",
+      "make",
+      "the",
+      "delay",
+      "a",
+      "property",
+      "of",
+      "the",
+      "poll",
+      "interval",
+      "rather",
+      "than",
+      "of"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — fires when a statement lands, which is the event reconciliation waits on. Polling for new statements instead would make the delay a property of the poll interval rather than of…"
+    }
   }
 ]
 

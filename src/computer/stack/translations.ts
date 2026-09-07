@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when managing call frames LIFO under the machine — executable stack nested under [[computer]]; distinct from top-level @/stack deployment palindrome.",
+    "source": "Use when managing call frames LIFO under the machine — executable stack nested under computer; distinct from top-level @/stack deployment palindrome.",
     "uuid": "1c45d938-035b-83d4-b61d-8af8d894602d",
     "words": [
       "use",
@@ -43,7 +43,7 @@ export const translations: readonly Translation[] = [
       "palindrome"
     ],
     "values": {
-      "en": "Use when managing call frames LIFO under the machine — executable stack nested under [[computer]]; distinct from top-level @/stack deployment palindrome."
+      "en": "Use when managing call frames LIFO under the machine — executable stack nested under computer; distinct from top-level @/stack deployment palindrome."
     }
   }
 ]

@@ -14,6 +14,53 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — books the movement's value as it is written. Inventory that moves without a posting is a stock figure and a ledger figure that drift apart with nothing between them to notice.",
+    "uuid": "b0a6eae2-159d-819e-91d9-f4eb5edf88ec",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "books",
+      "the",
+      "movement",
+      "s",
+      "value",
+      "as",
+      "it",
+      "is",
+      "written",
+      "inventory",
+      "that",
+      "moves",
+      "without",
+      "a",
+      "posting",
+      "is",
+      "a",
+      "stock",
+      "figure",
+      "and",
+      "a",
+      "ledger",
+      "figure",
+      "that",
+      "drift",
+      "apart",
+      "with",
+      "nothing",
+      "between",
+      "them",
+      "to",
+      "notice"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — books the movement's value as it is written. Inventory that moves without a posting is a stock figure and a ledger figure that drift apart with nothing between them to notice."
+    }
   }
 ]
 

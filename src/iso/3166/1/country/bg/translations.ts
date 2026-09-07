@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Bulgaria (BG) — canonical country bundle.",
-    "uuid": "8efc19df-fadb-8bec-94e8-7dca919a42e4",
+    "source": "Use when reasoning about bg — Bulgaria (BG) — canonical country bundle.",
+    "uuid": "6f61eea2-e290-8200-ae06-3f5241982fb0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "bg",
       "bulgaria",
       "bg",
       "canonical",
@@ -27,7 +32,7 @@ export const translations: readonly Translation[] = [
       "bundle"
     ],
     "values": {
-      "en": "Bulgaria (BG) — canonical country bundle."
+      "en": "Use when reasoning about bg — Bulgaria (BG) — canonical country bundle."
     }
   }
 ]

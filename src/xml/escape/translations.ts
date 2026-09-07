@@ -14,6 +14,36 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "escape"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about escape — must be replaced before any text or attribute value is embedded in generated XML (**XML 1.0 §2.4**).",
+    "uuid": "bb9a297a-b83a-8b51-a9ea-eb1bad7a78f0",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "escape",
+      "must",
+      "be",
+      "replaced",
+      "before",
+      "any",
+      "text",
+      "or",
+      "attribute",
+      "value",
+      "is",
+      "embedded",
+      "in",
+      "generated",
+      "xml",
+      "xml"
+    ],
+    "values": {
+      "en": "Use when reasoning about escape — must be replaced before any text or attribute value is embedded in generated XML (**XML 1.0 §2.4**)."
+    }
   }
 ]
 

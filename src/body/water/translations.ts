@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about water as a anatomical part of [[body]] — vocabulary pivot to @/water; nested not duplicated.",
+    "source": "Use when reasoning about water as a anatomical part of body — vocabulary pivot to @/water; nested not duplicated.",
     "uuid": "2c3a75d7-e750-8bf4-bc38-675bfc12e6af",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about water as a anatomical part of [[body]] — vocabulary pivot to @/water; nested not duplicated."
+      "en": "Use when reasoning about water as a anatomical part of body — vocabulary pivot to @/water; nested not duplicated."
     }
   }
 ]

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Period-End Adjustment Posting Hook — fires GL on status → 'posted'.",
-    "uuid": "6d763511-eb99-8fec-8ec1-e7e750235fbc",
+    "source": "Use when reasoning about adjustment — Period-End Adjustment Posting Hook — fires GL on status → 'posted'.",
+    "uuid": "86450636-40a4-873c-b728-91b2fd0ab6d5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "adjustment",
       "period",
       "end",
       "adjustment",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "posted"
     ],
     "values": {
-      "en": "Period-End Adjustment Posting Hook — fires GL on status → 'posted'."
+      "en": "Use when reasoning about adjustment — Period-End Adjustment Posting Hook — fires GL on status → 'posted'."
     }
   }
 ]

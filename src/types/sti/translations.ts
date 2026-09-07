@@ -14,6 +14,39 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "sti"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about sti — names the column, and describe the union, and , and narrow a row to its subtype without a cast.",
+    "uuid": "9321e078-a41a-88b7-aa18-5fd0d76cafba",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "sti",
+      "names",
+      "the",
+      "column",
+      "and",
+      "describe",
+      "the",
+      "union",
+      "and",
+      "and",
+      "narrow",
+      "a",
+      "row",
+      "to",
+      "its",
+      "subtype",
+      "without",
+      "a",
+      "cast"
+    ],
+    "values": {
+      "en": "Use when reasoning about sti — names the column, and describe the union, and , and narrow a row to its subtype without a cast."
+    }
   }
 ]
 

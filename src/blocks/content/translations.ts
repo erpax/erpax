@@ -14,6 +14,43 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "content"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about content — is the definition and renders it, split for the same reason every block is: the shape must be reachable without loading React.",
+    "uuid": "363e7210-948a-810e-97cb-6672e2683545",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "content",
+      "is",
+      "the",
+      "definition",
+      "and",
+      "renders",
+      "it",
+      "split",
+      "for",
+      "the",
+      "same",
+      "reason",
+      "every",
+      "block",
+      "is",
+      "the",
+      "shape",
+      "must",
+      "be",
+      "reachable",
+      "without",
+      "loading",
+      "react"
+    ],
+    "values": {
+      "en": "Use when reasoning about content — is the definition and renders it, split for the same reason every block is: the shape must be reachable without loading React."
+    }
   }
 ]
 

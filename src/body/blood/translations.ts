@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the blood as an organ of [[body]] — pivot to canonical @/blood; zero duplication.",
+    "source": "Use when reasoning about the blood as an organ of body — pivot to canonical @/blood; zero duplication.",
     "uuid": "7a67e215-258c-827f-8aac-fecd07a6fb88",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "duplication"
     ],
     "values": {
-      "en": "Use when reasoning about the blood as an organ of [[body]] — pivot to canonical @/blood; zero duplication."
+      "en": "Use when reasoning about the blood as an organ of body — pivot to canonical @/blood; zero duplication."
     }
   }
 ]

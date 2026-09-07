@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform.",
-    "uuid": "b30ee74c-275a-8c8e-962c-bef5bcec6116",
+    "source": "Use when reasoning about conflict — legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform.",
+    "uuid": "e89bfc1d-af95-8ac1-9367-7a0e0bc1f4e9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "conflict",
       "legal",
       "conflict",
       "the",
@@ -35,7 +40,7 @@ export const translations: readonly Translation[] = [
       "transform"
     ],
     "values": {
-      "en": "legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform."
+      "en": "Use when reasoning about conflict — legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform."
     }
   }
 ]

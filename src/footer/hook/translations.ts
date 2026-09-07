@@ -14,6 +14,52 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hook"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale.",
+    "uuid": "4f233c4f-6ee1-8c12-bb11-fcc556de4b63",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hook",
+      "clears",
+      "the",
+      "cached",
+      "pages",
+      "when",
+      "the",
+      "global",
+      "changes",
+      "so",
+      "an",
+      "edit",
+      "is",
+      "visible",
+      "without",
+      "a",
+      "deploy",
+      "a",
+      "cache",
+      "with",
+      "no",
+      "invalidation",
+      "is",
+      "a",
+      "copy",
+      "of",
+      "an",
+      "answer",
+      "and",
+      "copies",
+      "go",
+      "stale"
+    ],
+    "values": {
+      "en": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale."
+    }
   }
 ]
 

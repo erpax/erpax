@@ -14,6 +14,54 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "nav"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about nav — lays the dashboard out on a fixed grid and moves across it, wrapping at every boundary via : moving left from the first column arrives at the last, and up from the first row…",
+    "uuid": "6914a51d-2943-820a-8a93-e34f8eb326b5",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "nav",
+      "lays",
+      "the",
+      "dashboard",
+      "out",
+      "on",
+      "a",
+      "fixed",
+      "grid",
+      "and",
+      "moves",
+      "across",
+      "it",
+      "wrapping",
+      "at",
+      "every",
+      "boundary",
+      "via",
+      "moving",
+      "left",
+      "from",
+      "the",
+      "first",
+      "column",
+      "arrives",
+      "at",
+      "the",
+      "last",
+      "and",
+      "up",
+      "from",
+      "the",
+      "first",
+      "row"
+    ],
+    "values": {
+      "en": "Use when reasoning about nav — lays the dashboard out on a fixed grid and moves across it, wrapping at every boundary via : moving left from the first column arrives at the last, and up from the first row…"
+    }
   }
 ]
 

@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about contraindication as a medical facet of [[medical]] — vocabulary pivot to @/contraindication; nested not duplicated.",
+    "source": "Use when reasoning about contraindication as a medical facet of medical — vocabulary pivot to @/contraindication; nested not duplicated.",
     "uuid": "da39132f-31e9-845e-928d-1766dabde112",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about contraindication as a medical facet of [[medical]] — vocabulary pivot to @/contraindication; nested not duplicated."
+      "en": "Use when reasoning about contraindication as a medical facet of medical — vocabulary pivot to @/contraindication; nested not duplicated."
     }
   }
 ]

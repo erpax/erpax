@@ -14,6 +14,35 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "license"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about license — ONE licence, every path: **CC-BY-NC-ND-4.0**, or commercial via the contact below.",
+    "uuid": "099cd81b-9e21-824c-9896-a080ee083c4d",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "license",
+      "one",
+      "licence",
+      "every",
+      "path",
+      "cc",
+      "by",
+      "nc",
+      "nd",
+      "or",
+      "commercial",
+      "via",
+      "the",
+      "contact",
+      "below"
+    ],
+    "values": {
+      "en": "Use when reasoning about license — ONE licence, every path: **CC-BY-NC-ND-4.0**, or commercial via the contact below."
+    }
   }
 ]
 

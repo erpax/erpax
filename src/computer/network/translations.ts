@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about network as a part of [[computer]] — vocabulary pivot to @/network; nested not duplicated.",
+    "source": "Use when reasoning about network as a part of computer — vocabulary pivot to @/network; nested not duplicated.",
     "uuid": "042e902b-415f-819a-a0d2-f6fdf4661fc4",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about network as a part of [[computer]] — vocabulary pivot to @/network; nested not duplicated."
+      "en": "Use when reasoning about network as a part of computer — vocabulary pivot to @/network; nested not duplicated."
     }
   }
 ]

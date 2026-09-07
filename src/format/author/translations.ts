@@ -14,6 +14,54 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "author"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \\\"A and B\\\", and three or more become \\\"A, B and C\\\" — no serial comma, decided once here rather…",
+    "uuid": "51375391-ee64-8e65-87a7-204ca90f20a3",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "author",
+      "turns",
+      "populated",
+      "authors",
+      "into",
+      "the",
+      "sentence",
+      "a",
+      "reader",
+      "expects",
+      "one",
+      "is",
+      "itself",
+      "two",
+      "become",
+      "a",
+      "and",
+      "b",
+      "and",
+      "three",
+      "or",
+      "more",
+      "become",
+      "a",
+      "b",
+      "and",
+      "c",
+      "no",
+      "serial",
+      "comma",
+      "decided",
+      "once",
+      "here",
+      "rather"
+    ],
+    "values": {
+      "en": "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \\\"A and B\\\", and three or more become \\\"A, B and C\\\" — no serial comma, decided once here rather…"
+    }
   }
 ]
 

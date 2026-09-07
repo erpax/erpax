@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931.",
-    "uuid": "d56ffbd9-845c-8178-81a9-d2d1b35cc380",
+    "source": "Use when reasoning about types — Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931.",
+    "uuid": "4bbcc2a2-e00f-8427-a81e-35f9616d8200",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "types",
       "canonical",
       "peppol",
       "bis",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "en"
     ],
     "values": {
-      "en": "Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931."
+      "en": "Use when reasoning about types — Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931."
     }
   }
 ]

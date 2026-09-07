@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Tenant-scoped KV, R2, Vectorize, and Durable Object mediators",
-    "uuid": "42297263-690d-8ab1-be0e-81eaca79a342",
+    "source": "Use when reasoning about storage — Tenant-scoped KV, R2, Vectorize, and Durable Object mediators",
+    "uuid": "6a1df42f-7aab-8a16-ac16-f85deade9b7d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "storage",
       "tenant",
       "scoped",
       "kv",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "mediators"
     ],
     "values": {
-      "en": "Tenant-scoped KV, R2, Vectorize, and Durable Object mediators"
+      "en": "Use when reasoning about storage — Tenant-scoped KV, R2, Vectorize, and Durable Object mediators"
     }
   }
 ]

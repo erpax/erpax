@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in.",
-    "uuid": "165c2de7-2c89-878c-aa64-58ee79d4ab48",
+    "source": "Use when reasoning about corpus — search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in.",
+    "uuid": "379a889b-4afc-8656-a1a5-1b0d698ab75c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "corpus",
       "search",
       "corpus",
       "ingest",
@@ -48,7 +53,7 @@ export const translations: readonly Translation[] = [
       "in"
     ],
     "values": {
-      "en": "search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in."
+      "en": "Use when reasoning about corpus — search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in."
     }
   }
 ]

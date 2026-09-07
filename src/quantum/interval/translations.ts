@@ -14,6 +14,44 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "interval"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs.",
+    "uuid": "8498debe-fe4b-8c66-8d0b-0ef6bc21a26b",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "interval",
+      "special",
+      "relativity",
+      "s",
+      "decidable",
+      "core",
+      "proved",
+      "for",
+      "all",
+      "integers",
+      "rather",
+      "than",
+      "checked",
+      "on",
+      "a",
+      "carrier",
+      "and",
+      "carrying",
+      "one",
+      "consequence",
+      "this",
+      "corpus",
+      "actually",
+      "needs"
+    ],
+    "values": {
+      "en": "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs."
+    }
   }
 ]
 

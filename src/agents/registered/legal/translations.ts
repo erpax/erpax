@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts.",
-    "uuid": "dbae3d3e-11ab-8560-9c7e-bb64ac1bb2cd",
+    "source": "Use when reasoning about legal — Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts.",
+    "uuid": "6ed6e4b4-0ecc-89ba-b1db-d901d9d001b5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "legal",
       "use",
       "for",
       "the",
@@ -46,7 +51,7 @@ export const translations: readonly Translation[] = [
       "acts"
     ],
     "values": {
-      "en": "Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts."
+      "en": "Use when reasoning about legal — Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts."
     }
   }
 ]

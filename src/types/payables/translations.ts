@@ -14,6 +14,40 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "payables"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about payables — , , and carry the fields EN-16931 requires of a supplier invoice; buckets what is outstanding, and is what falls due.",
+    "uuid": "2090acf9-0839-817a-a22a-362354d4ea03",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "payables",
+      "and",
+      "carry",
+      "the",
+      "fields",
+      "en",
+      "requires",
+      "of",
+      "a",
+      "supplier",
+      "invoice",
+      "buckets",
+      "what",
+      "is",
+      "outstanding",
+      "and",
+      "is",
+      "what",
+      "falls",
+      "due"
+    ],
+    "values": {
+      "en": "Use when reasoning about payables — , , and carry the fields EN-16931 requires of a supplier invoice; buckets what is outstanding, and is what falls due."
+    }
   }
 ]
 

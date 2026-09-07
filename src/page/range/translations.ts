@@ -14,6 +14,55 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "range"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about range — renders which slice of a result set is being shown. The component is because it is JSX; this barrel re-exports it so importers name the atom rather than the spelling of its file.",
+    "uuid": "af86d391-9199-8107-8ff3-01a6856fa37f",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "range",
+      "renders",
+      "which",
+      "slice",
+      "of",
+      "a",
+      "result",
+      "set",
+      "is",
+      "being",
+      "shown",
+      "the",
+      "component",
+      "is",
+      "because",
+      "it",
+      "is",
+      "jsx",
+      "this",
+      "barrel",
+      "re",
+      "exports",
+      "it",
+      "so",
+      "importers",
+      "name",
+      "the",
+      "atom",
+      "rather",
+      "than",
+      "the",
+      "spelling",
+      "of",
+      "its",
+      "file"
+    ],
+    "values": {
+      "en": "Use when reasoning about range — renders which slice of a result set is being shown. The component is because it is JSX; this barrel re-exports it so importers name the atom rather than the spelling of its file."
+    }
   }
 ]
 

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats.",
-    "uuid": "56fbb051-6c5c-8ca7-ab66-8a297ea2e341",
+    "source": "Use when reasoning about standards — Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats.",
+    "uuid": "ada9c9eb-6581-8fd4-91c4-45559fb2b422",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "standards",
       "use",
       "for",
       "the",
@@ -50,7 +55,7 @@ export const translations: readonly Translation[] = [
       "formats"
     ],
     "values": {
-      "en": "Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats."
+      "en": "Use when reasoning about standards — Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats."
     }
   }
 ]

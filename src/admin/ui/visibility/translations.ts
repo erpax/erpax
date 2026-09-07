@@ -14,6 +14,48 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "visibility"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about visibility — 231 collections rendered flat is a list nobody navigates. Visibility decides what this user's panel offers, computed from the collection's own metadata rather than from a…",
+    "uuid": "acf5b76d-81d1-86f9-a633-cac23ccb93e1",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "visibility",
+      "collections",
+      "rendered",
+      "flat",
+      "is",
+      "a",
+      "list",
+      "nobody",
+      "navigates",
+      "visibility",
+      "decides",
+      "what",
+      "this",
+      "user",
+      "s",
+      "panel",
+      "offers",
+      "computed",
+      "from",
+      "the",
+      "collection",
+      "s",
+      "own",
+      "metadata",
+      "rather",
+      "than",
+      "from",
+      "a"
+    ],
+    "values": {
+      "en": "Use when reasoning about visibility — 231 collections rendered flat is a list nobody navigates. Visibility decides what this user's panel offers, computed from the collection's own metadata rather than from a…"
+    }
   }
 ]
 

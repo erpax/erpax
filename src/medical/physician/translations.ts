@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about physician as a medical facet of [[medical]] — vocabulary pivot to @/physician; nested not duplicated.",
+    "source": "Use when reasoning about physician as a medical facet of medical — vocabulary pivot to @/physician; nested not duplicated.",
     "uuid": "6e8fba34-5207-83c7-a844-1b23d878ecb1",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about physician as a medical facet of [[medical]] — vocabulary pivot to @/physician; nested not duplicated."
+      "en": "Use when reasoning about physician as a medical facet of medical — vocabulary pivot to @/physician; nested not duplicated."
     }
   }
 ]

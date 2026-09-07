@@ -14,6 +14,46 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "class"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about class — merges Tailwind class lists so a later utility wins over an earlier one — for the conditional shapes, for the conflict resolution. Six modules use it.",
+    "uuid": "cc0ccf76-fb7d-854c-9d71-86c02269ff51",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "class",
+      "merges",
+      "tailwind",
+      "class",
+      "lists",
+      "so",
+      "a",
+      "later",
+      "utility",
+      "wins",
+      "over",
+      "an",
+      "earlier",
+      "one",
+      "for",
+      "the",
+      "conditional",
+      "shapes",
+      "for",
+      "the",
+      "conflict",
+      "resolution",
+      "six",
+      "modules",
+      "use",
+      "it"
+    ],
+    "values": {
+      "en": "Use when reasoning about class — merges Tailwind class lists so a later utility wins over an earlier one — for the conditional shapes, for the conflict resolution. Six modules use it."
+    }
   }
 ]
 

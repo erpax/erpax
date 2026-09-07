@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Composite HTTP security-headers — defense-in-depth response hardening.",
-    "uuid": "f1f70e0d-d1a5-8f15-8afb-449e04d48076",
+    "source": "Use when reasoning about headers — Composite HTTP security-headers — defense-in-depth response hardening.",
+    "uuid": "94504a5f-99b9-826f-8f5d-87d60f413745",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "headers",
       "composite",
       "http",
       "security",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "hardening"
     ],
     "values": {
-      "en": "Composite HTTP security-headers — defense-in-depth response hardening."
+      "en": "Use when reasoning about headers — Composite HTTP security-headers — defense-in-depth response hardening."
     }
   }
 ]

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry.",
-    "uuid": "bcf591bc-1d87-839c-b20a-ab50bfcd2195",
+    "source": "Use when reasoning about bank — Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry.",
+    "uuid": "9e2bbcb1-d89e-89c6-965d-9ebc0181407a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "bank",
       "use",
       "for",
       "open",
@@ -45,7 +50,7 @@ export const translations: readonly Translation[] = [
       "registry"
     ],
     "values": {
-      "en": "Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry."
+      "en": "Use when reasoning about bank — Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry."
     }
   }
 ]

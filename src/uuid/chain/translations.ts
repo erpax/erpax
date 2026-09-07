@@ -14,6 +14,51 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "chain"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about chain — starts a chain at and extends it: addresses the pair (previous, content), so each link's identity depends on everything before it. walks the and reports where the walk breaks.",
+    "uuid": "f3b9f2e9-ff38-8761-b388-1c127841ab53",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "chain",
+      "starts",
+      "a",
+      "chain",
+      "at",
+      "and",
+      "extends",
+      "it",
+      "addresses",
+      "the",
+      "pair",
+      "previous",
+      "content",
+      "so",
+      "each",
+      "link",
+      "s",
+      "identity",
+      "depends",
+      "on",
+      "everything",
+      "before",
+      "it",
+      "walks",
+      "the",
+      "and",
+      "reports",
+      "where",
+      "the",
+      "walk",
+      "breaks"
+    ],
+    "values": {
+      "en": "Use when reasoning about chain — starts a chain at and extends it: addresses the pair (previous, content), so each link's identity depends on everything before it. walks the and reports where the walk breaks."
+    }
   }
 ]
 

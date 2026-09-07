@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "graph"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about graph — holds directed edges. asks whether the opposite edge exists, and derives the relation: two mutual follows ARE a friendship, and nothing writes a \\\"friends\\\" row to say so.",
+    "uuid": "184c9aa6-0f98-8d5d-acff-07a0cc1911e3",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "graph",
+      "holds",
+      "directed",
+      "edges",
+      "asks",
+      "whether",
+      "the",
+      "opposite",
+      "edge",
+      "exists",
+      "and",
+      "derives",
+      "the",
+      "relation",
+      "two",
+      "mutual",
+      "follows",
+      "are",
+      "a",
+      "friendship",
+      "and",
+      "nothing",
+      "writes",
+      "a",
+      "friends",
+      "row",
+      "to",
+      "say",
+      "so"
+    ],
+    "values": {
+      "en": "Use when reasoning about graph — holds directed edges. asks whether the opposite edge exists, and derives the relation: two mutual follows ARE a friendship, and nothing writes a \\\"friends\\\" row to say so."
+    }
   }
 ]
 

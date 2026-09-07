@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Cantor Continuum Hypothesis via basis decomposition - set theory",
-    "uuid": "88f701cc-54e4-8229-8538-ce6fa33eab44",
+    "source": "Use when reasoning about continuum — Cantor Continuum Hypothesis via basis decomposition - set theory",
+    "uuid": "4c8859e1-b273-8c79-a547-3c11bb55ea6c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "continuum",
       "cantor",
       "continuum",
       "hypothesis",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "theory"
     ],
     "values": {
-      "en": "Cantor Continuum Hypothesis via basis decomposition - set theory"
+      "en": "Use when reasoning about continuum — Cantor Continuum Hypothesis via basis decomposition - set theory"
     }
   }
 ]

@@ -161,23 +161,34 @@ if [ "$DRY_RUN" = 0 ]; then
   rm -f /tmp/erpax-skill-sync.log
 fi
 
-# ── Artefact 4: translations catalogue — NOT HEALED HERE, the generator cannot succeed ──
+# ── Artefact 4: the translations catalogue + per-atom projections ────
 #
-# `erpax translations collect` was wired in here and had to be taken out: it FAILS, every time,
-# and dirties the tree on its way down.
+# Every atom carries a `translations.ts` whose entries store a uuid and a word-split RECOMPUTED
+# from the source string. [[translations]]/collect asserts they recompute — "NO HALLUCINATION" —
+# and nothing regenerated them, so the assertion had been red in CI.
 #
-#   RangeError: Invalid string length
-#     at JSON.stringify — src/translations/collect/index.ts:117 (catalogueFile)
+# CORRECTION, recorded because the wrong version of it was committed: this step was pulled out
+# earlier today on the grounds that `catalogueFile` "cannot succeed at corpus scale", after it
+# died with `RangeError: Invalid string length`. That was a symptom, not the cause. The corpus's
+# SKILL.md descriptions had been corrupted by an escape round-trip that doubled every backslash
+# (see skill/router/upgrade/graph), so the descriptions alone were ~68 MB and the catalogue
+# literal genuinely could not be built. With the descriptions repaired the same command writes
+# 3,582 projections plus a 5.48 MB catalogue in FOUR SECONDS. Scale was never the problem.
 #
-# `catalogueFile` inlines EVERY atom's full translations into one pretty-printed literal. At 3,582
-# atoms that string exceeds V8's maximum, so the catalogue cannot be written at corpus scale — and
-# the per-atom `translations.ts` writes happen BEFORE it, so a failed run leaves hundreds of files
-# modified and unstaged (measured 2026-09-07: 425). Wired in here it did that on every push.
-#
-# The catalogue restates what each atom's own `translations.ts` already holds — this corpus's own
-# law that duplication is camouflage, at a scale where the duplicate no longer fits in a string.
-# The fix is for the catalogue to REFERENCE atoms rather than inline them; until then this is the
-# real cause of the `translations: NO HALLUCINATION` CI failure, and it is not a heal.
+# It is idempotent and inside the <5s contract at the top of this file, so it needs no memo.
+if [ "$DRY_RUN" = 0 ]; then
+  if cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/cli/index.ts translations collect >/tmp/erpax-tr.log 2>&1; then
+    if ! git diff --quiet -- 'src/**/translations.ts' 'src/translations/catalogue.ts'; then
+      echo "auto-heal: translations catalogue drifted — regenerated"
+      git add 'src/**/translations.ts' src/translations/catalogue.ts 2>/dev/null || true
+      healed+=("translations catalogue")
+    fi
+  else
+    echo "auto-heal: translations collect FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-tr.log || true
+  fi
+  rm -f /tmp/erpax-tr.log
+fi
 
 # ── Future artefacts — wire as they land ─────────────────────────────
 # - src/services/spec-generator/* outputs (chain registry, seeds, tests,

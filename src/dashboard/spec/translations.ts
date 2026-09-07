@@ -14,6 +14,37 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "spec"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST.",
+    "uuid": "914a94bc-fe51-8c19-a1e7-1dbbc7f51902",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "spec",
+      "the",
+      "corpus",
+      "grew",
+      "two",
+      "widget",
+      "shapes",
+      "one",
+      "taking",
+      "props",
+      "one",
+      "fetching",
+      "its",
+      "own",
+      "data",
+      "over",
+      "rest"
+    ],
+    "values": {
+      "en": "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST."
+    }
   }
 ]
 

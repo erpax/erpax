@@ -14,6 +14,50 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "dashboard"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about dashboard — Two panels: the quantum view and the entropy rollup. Both read computed figures rather than stored ones, so the dashboard cannot disagree with the gate — it is the same…",
+    "uuid": "02b9e873-0cce-8add-9eb0-a377066c855c",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "dashboard",
+      "two",
+      "panels",
+      "the",
+      "quantum",
+      "view",
+      "and",
+      "the",
+      "entropy",
+      "rollup",
+      "both",
+      "read",
+      "computed",
+      "figures",
+      "rather",
+      "than",
+      "stored",
+      "ones",
+      "so",
+      "the",
+      "dashboard",
+      "cannot",
+      "disagree",
+      "with",
+      "the",
+      "gate",
+      "it",
+      "is",
+      "the",
+      "same"
+    ],
+    "values": {
+      "en": "Use when reasoning about dashboard — Two panels: the quantum view and the entropy rollup. Both read computed figures rather than stored ones, so the dashboard cannot disagree with the gate — it is the same…"
+    }
   }
 ]
 

@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "number"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about number — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+    "uuid": "4ad043d7-22bc-88a3-976c-4d333df76204",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "number",
+      "a",
+      "and",
+      "an",
+      "are",
+      "bound",
+      "by",
+      "a",
+      "string",
+      "that",
+      "appears",
+      "twice",
+      "change",
+      "one",
+      "side",
+      "and",
+      "nothing",
+      "moves",
+      "on",
+      "screen",
+      "the",
+      "field",
+      "still",
+      "renders",
+      "still",
+      "accepts",
+      "input",
+      "still",
+      "submits"
+    ],
+    "values": {
+      "en": "Use when reasoning about number — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
+    }
   }
 ]
 

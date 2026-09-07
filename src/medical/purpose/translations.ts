@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about purpose as a medical facet of [[medical]] — vocabulary pivot to @/purpose; nested not duplicated.",
+    "source": "Use when reasoning about purpose as a medical facet of medical — vocabulary pivot to @/purpose; nested not duplicated.",
     "uuid": "acd731e2-3040-877f-aac4-dc6953102608",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about purpose as a medical facet of [[medical]] — vocabulary pivot to @/purpose; nested not duplicated."
+      "en": "Use when reasoning about purpose as a medical facet of medical — vocabulary pivot to @/purpose; nested not duplicated."
     }
   }
 ]

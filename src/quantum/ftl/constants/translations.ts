@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Quantum FTL constants — paths, endpoints, boundary, defaults",
-    "uuid": "e1fc1597-fd6d-85ce-8f82-730d41b95266",
+    "source": "Use when reasoning about constants — Quantum FTL constants — paths, endpoints, boundary, defaults",
+    "uuid": "5fd7a389-c6f2-8a9f-b69b-d89b4e3cf129",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "constants",
       "quantum",
       "ftl",
       "constants",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "defaults"
     ],
     "values": {
-      "en": "Quantum FTL constants — paths, endpoints, boundary, defaults"
+      "en": "Use when reasoning about constants — Quantum FTL constants — paths, endpoints, boundary, defaults"
     }
   }
 ]

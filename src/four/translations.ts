@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Four Color Theorem via basis decomposition - geometry + graph theory",
-    "uuid": "3e38b1a1-fc00-85db-81a3-414b67ad2b19",
+    "source": "Use when reasoning about four — Four Color Theorem via basis decomposition - geometry + graph theory",
+    "uuid": "87bca075-b6ad-87b5-a3aa-2977aa2f42e4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "four",
       "four",
       "color",
       "theorem",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "theory"
     ],
     "values": {
-      "en": "Four Color Theorem via basis decomposition - geometry + graph theory"
+      "en": "Use when reasoning about four — Four Color Theorem via basis decomposition - geometry + graph theory"
     }
   }
 ]

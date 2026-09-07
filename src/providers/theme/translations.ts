@@ -14,6 +14,48 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "theme"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about theme — Three states, not two. A theme can be **light**, **dark**, or **unset** — and unset does not mean a default was chosen, it means *follow the operating system*.",
+    "uuid": "e3d428ea-7e6a-800c-817f-5f6c8dacad45",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "theme",
+      "three",
+      "states",
+      "not",
+      "two",
+      "a",
+      "theme",
+      "can",
+      "be",
+      "light",
+      "dark",
+      "or",
+      "unset",
+      "and",
+      "unset",
+      "does",
+      "not",
+      "mean",
+      "a",
+      "default",
+      "was",
+      "chosen",
+      "it",
+      "means",
+      "follow",
+      "the",
+      "operating",
+      "system"
+    ],
+    "values": {
+      "en": "Use when reasoning about theme — Three states, not two. A theme can be **light**, **dark**, or **unset** — and unset does not mean a default was chosen, it means *follow the operating system*."
+    }
   }
 ]
 

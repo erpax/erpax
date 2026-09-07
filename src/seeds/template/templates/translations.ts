@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Industry templates — curated per-(country × industry) opening books.",
-    "uuid": "3ea45f1a-fc15-82fb-a16f-17dd630a0db3",
+    "source": "Use when reasoning about templates — Industry templates — curated per-(country × industry) opening books.",
+    "uuid": "e7bb80ab-2284-81eb-98c3-c11c08e21d83",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "templates",
       "industry",
       "templates",
       "curated",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "books"
     ],
     "values": {
-      "en": "Industry templates — curated per-(country × industry) opening books."
+      "en": "Use when reasoning about templates — Industry templates — curated per-(country × industry) opening books."
     }
   }
 ]

@@ -14,6 +14,55 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — No plan-specific hook is wired yet. The barrel is here because every collection's hooks live at the same address, and a convention with a hole in it is one every future reader…",
+    "uuid": "1c333409-3b77-8807-9598-edc128c11301",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "no",
+      "plan",
+      "specific",
+      "hook",
+      "is",
+      "wired",
+      "yet",
+      "the",
+      "barrel",
+      "is",
+      "here",
+      "because",
+      "every",
+      "collection",
+      "s",
+      "hooks",
+      "live",
+      "at",
+      "the",
+      "same",
+      "address",
+      "and",
+      "a",
+      "convention",
+      "with",
+      "a",
+      "hole",
+      "in",
+      "it",
+      "is",
+      "one",
+      "every",
+      "future",
+      "reader"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — No plan-specific hook is wired yet. The barrel is here because every collection's hooks live at the same address, and a convention with a hole in it is one every future reader…"
+    }
   }
 ]
 

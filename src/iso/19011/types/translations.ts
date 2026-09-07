@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence).",
-    "uuid": "8159ac26-533a-833c-8cd2-87ae76837290",
+    "source": "Use when reasoning about types — Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence).",
+    "uuid": "f909d3aa-aed8-85e9-b9ab-e327487723ed",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "types",
       "canonical",
       "audit",
       "trail",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "evidence"
     ],
     "values": {
-      "en": "Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence)."
+      "en": "Use when reasoning about types — Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence)."
     }
   }
 ]

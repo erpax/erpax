@@ -14,6 +14,53 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "parties"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about parties — Both are a dated, line-itemised financial document with a status lifecycle, a balance and an aging profile. is that shape, the lifecycle it may walk, and the set both age into.",
+    "uuid": "62c31a88-d288-80c8-b78e-fc883d781ac6",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "parties",
+      "both",
+      "are",
+      "a",
+      "dated",
+      "line",
+      "itemised",
+      "financial",
+      "document",
+      "with",
+      "a",
+      "status",
+      "lifecycle",
+      "a",
+      "balance",
+      "and",
+      "an",
+      "aging",
+      "profile",
+      "is",
+      "that",
+      "shape",
+      "the",
+      "lifecycle",
+      "it",
+      "may",
+      "walk",
+      "and",
+      "the",
+      "set",
+      "both",
+      "age",
+      "into"
+    ],
+    "values": {
+      "en": "Use when reasoning about parties — Both are a dated, line-itemised financial document with a status lifecycle, a balance and an aging profile. is that shape, the lifecycle it may walk, and the set both age into."
+    }
   }
 ]
 

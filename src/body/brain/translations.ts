@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the brain as an organ of [[body]] — pivot to canonical @/brain; zero duplication.",
+    "source": "Use when reasoning about the brain as an organ of body — pivot to canonical @/brain; zero duplication.",
     "uuid": "4f3e8ebc-f0d8-8e65-9c1c-62d10a4e004f",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "duplication"
     ],
     "values": {
-      "en": "Use when reasoning about the brain as an organ of [[body]] — pivot to canonical @/brain; zero duplication."
+      "en": "Use when reasoning about the brain as an organ of body — pivot to canonical @/brain; zero duplication."
     }
   }
 ]

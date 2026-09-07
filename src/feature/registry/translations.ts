@@ -14,6 +14,44 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "registry"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about registry — binds every gated capability to the tiers that include it. and answer from that one place, and marks what no tier may remove.",
+    "uuid": "60b01c74-e0b6-8ef2-a019-44a33924398a",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "registry",
+      "binds",
+      "every",
+      "gated",
+      "capability",
+      "to",
+      "the",
+      "tiers",
+      "that",
+      "include",
+      "it",
+      "and",
+      "answer",
+      "from",
+      "that",
+      "one",
+      "place",
+      "and",
+      "marks",
+      "what",
+      "no",
+      "tier",
+      "may",
+      "remove"
+    ],
+    "values": {
+      "en": "Use when reasoning about registry — binds every gated capability to the tiers that include it. and answer from that one place, and marks what no tier may remove."
+    }
   }
 ]
 

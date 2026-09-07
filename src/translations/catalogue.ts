@@ -1560,6 +1560,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "bar"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about bar — renders the strip a logged-in editor sees over public pages: the collection and document being viewed, and the link back into the admin panel that edits it.",
+        "uuid": "9724fd26-4d6f-82dd-b816-ede809482fbd",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "bar",
+          "renders",
+          "the",
+          "strip",
+          "a",
+          "logged",
+          "in",
+          "editor",
+          "sees",
+          "over",
+          "public",
+          "pages",
+          "the",
+          "collection",
+          "and",
+          "document",
+          "being",
+          "viewed",
+          "and",
+          "the",
+          "link",
+          "back",
+          "into",
+          "the",
+          "admin",
+          "panel",
+          "that",
+          "edits",
+          "it"
+        ],
+        "values": {
+          "en": "Use when reasoning about bar — renders the strip a logged-in editor sees over public pages: the collection and document being viewed, and the link back into the admin panel that edits it."
+        }
       }
     ]
   },
@@ -1576,6 +1619,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "ui"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about ui — The barrel re-exports what the panel needs: and for how a collection presents itself, the corpus-rollup readers that compute the dashboard's entropy figures, and the cells…",
+        "uuid": "d8abaa10-0a2e-8fa6-b1c2-db1d167dca03",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "ui",
+          "the",
+          "barrel",
+          "re",
+          "exports",
+          "what",
+          "the",
+          "panel",
+          "needs",
+          "and",
+          "for",
+          "how",
+          "a",
+          "collection",
+          "presents",
+          "itself",
+          "the",
+          "corpus",
+          "rollup",
+          "readers",
+          "that",
+          "compute",
+          "the",
+          "dashboard",
+          "s",
+          "entropy",
+          "figures",
+          "and",
+          "the",
+          "cells"
+        ],
+        "values": {
+          "en": "Use when reasoning about ui — The barrel re-exports what the panel needs: and for how a collection presents itself, the corpus-rollup readers that compute the dashboard's entropy figures, and the cells…"
         }
       }
     ]
@@ -1594,6 +1681,53 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "cells"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about cells — Four cells, each showing a value the corpus computes rather than stores: the content-uuid as a chip, the horo digit, the path as an account code, the seal as a badge.",
+        "uuid": "5139616c-a6d6-8faf-8035-738e2ab96c53",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "cells",
+          "four",
+          "cells",
+          "each",
+          "showing",
+          "a",
+          "value",
+          "the",
+          "corpus",
+          "computes",
+          "rather",
+          "than",
+          "stores",
+          "the",
+          "content",
+          "uuid",
+          "as",
+          "a",
+          "chip",
+          "the",
+          "horo",
+          "digit",
+          "the",
+          "path",
+          "as",
+          "an",
+          "account",
+          "code",
+          "the",
+          "seal",
+          "as",
+          "a",
+          "badge"
+        ],
+        "values": {
+          "en": "Use when reasoning about cells — Four cells, each showing a value the corpus computes rather than stores: the content-uuid as a chip, the horo digit, the path as an account code, the seal as a badge."
+        }
       }
     ]
   },
@@ -1610,6 +1744,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "dashboard"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about dashboard — Two panels: the quantum view and the entropy rollup. Both read computed figures rather than stored ones, so the dashboard cannot disagree with the gate — it is the same…",
+        "uuid": "02b9e873-0cce-8add-9eb0-a377066c855c",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "dashboard",
+          "two",
+          "panels",
+          "the",
+          "quantum",
+          "view",
+          "and",
+          "the",
+          "entropy",
+          "rollup",
+          "both",
+          "read",
+          "computed",
+          "figures",
+          "rather",
+          "than",
+          "stored",
+          "ones",
+          "so",
+          "the",
+          "dashboard",
+          "cannot",
+          "disagree",
+          "with",
+          "the",
+          "gate",
+          "it",
+          "is",
+          "the",
+          "same"
+        ],
+        "values": {
+          "en": "Use when reasoning about dashboard — Two panels: the quantum view and the entropy rollup. Both read computed figures rather than stored ones, so the dashboard cannot disagree with the gate — it is the same…"
         }
       }
     ]
@@ -1628,6 +1806,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "fields"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about fields — shows the atom's coordinates, its bonds, and the entanglement fields warn when a change reaches further than the row in front of the editor.",
+        "uuid": "52b2e034-80cb-8dcc-a782-bc61038873a0",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "fields",
+          "shows",
+          "the",
+          "atom",
+          "s",
+          "coordinates",
+          "its",
+          "bonds",
+          "and",
+          "the",
+          "entanglement",
+          "fields",
+          "warn",
+          "when",
+          "a",
+          "change",
+          "reaches",
+          "further",
+          "than",
+          "the",
+          "row",
+          "in",
+          "front",
+          "of",
+          "the",
+          "editor"
+        ],
+        "values": {
+          "en": "Use when reasoning about fields — shows the atom's coordinates, its bonds, and the entanglement fields warn when a change reaches further than the row in front of the editor."
+        }
       }
     ]
   },
@@ -1644,6 +1862,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "nav"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about nav — builds the corpus links from the atom prefix tree. A hand-maintained menu is a second source of truth about where things live, and it goes stale the first time a folder moves…",
+        "uuid": "870f537f-4cb5-8ce7-8046-e26c7fbfbab6",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "nav",
+          "builds",
+          "the",
+          "corpus",
+          "links",
+          "from",
+          "the",
+          "atom",
+          "prefix",
+          "tree",
+          "a",
+          "hand",
+          "maintained",
+          "menu",
+          "is",
+          "a",
+          "second",
+          "source",
+          "of",
+          "truth",
+          "about",
+          "where",
+          "things",
+          "live",
+          "and",
+          "it",
+          "goes",
+          "stale",
+          "the",
+          "first",
+          "time",
+          "a",
+          "folder",
+          "moves"
+        ],
+        "values": {
+          "en": "Use when reasoning about nav — builds the corpus links from the atom prefix tree. A hand-maintained menu is a second source of truth about where things live, and it goes stale the first time a folder moves…"
         }
       }
     ]
@@ -1662,6 +1928,33 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "violations"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about violations — The provider streams live violations and the panel and dashboard render them.",
+        "uuid": "b0ac2779-9c7e-8e85-a7a4-bf76e528ea8a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "violations",
+          "the",
+          "provider",
+          "streams",
+          "live",
+          "violations",
+          "and",
+          "the",
+          "panel",
+          "and",
+          "dashboard",
+          "render",
+          "them"
+        ],
+        "values": {
+          "en": "Use when reasoning about violations — The provider streams live violations and the panel and dashboard render them."
+        }
       }
     ]
   },
@@ -1678,6 +1971,48 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "visibility"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about visibility — 231 collections rendered flat is a list nobody navigates. Visibility decides what this user's panel offers, computed from the collection's own metadata rather than from a…",
+        "uuid": "acf5b76d-81d1-86f9-a633-cac23ccb93e1",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "visibility",
+          "collections",
+          "rendered",
+          "flat",
+          "is",
+          "a",
+          "list",
+          "nobody",
+          "navigates",
+          "visibility",
+          "decides",
+          "what",
+          "this",
+          "user",
+          "s",
+          "panel",
+          "offers",
+          "computed",
+          "from",
+          "the",
+          "collection",
+          "s",
+          "own",
+          "metadata",
+          "rather",
+          "than",
+          "from",
+          "a"
+        ],
+        "values": {
+          "en": "Use when reasoning about visibility — 231 collections rendered flat is a list nobody navigates. Visibility decides what this user's panel offers, computed from the collection's own metadata rather than from a…"
         }
       }
     ]
@@ -2106,9 +2441,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "createAgentContext — the ONE place an AgentContext is assembled.",
-        "uuid": "19b1b7bb-82cd-8fd7-b423-45606c17e255",
+        "source": "Use when reasoning about context — createAgentContext — the ONE place an AgentContext is assembled.",
+        "uuid": "4387f1f2-b71d-8b96-85d6-ffbe155a9414",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "context",
           "createagentcontext",
           "the",
           "one",
@@ -2119,7 +2459,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "assembled"
         ],
         "values": {
-          "en": "createAgentContext — the ONE place an AgentContext is assembled."
+          "en": "Use when reasoning about context — createAgentContext — the ONE place an AgentContext is assembled."
         }
       }
     ]
@@ -2198,9 +2538,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order.",
-        "uuid": "c6d27fed-118c-8af9-9cf1-5aeb12943e7d",
+        "source": "Use when reasoning about harmonics — harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order.",
+        "uuid": "d926c42f-4207-84e7-8ad8-3413a056f065",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "harmonics",
           "harmonics",
           "what",
           "it",
@@ -2229,7 +2574,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "order"
         ],
         "values": {
-          "en": "harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order."
+          "en": "Use when reasoning about harmonics — harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order."
         }
       }
     ]
@@ -2530,9 +2875,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "In-memory AgentRegistry — single source of truth for the A-vortex.",
-        "uuid": "b728be03-6237-80d4-ac11-e62be577d6a3",
+        "source": "Use when reasoning about registry — In-memory AgentRegistry — single source of truth for the A-vortex.",
+        "uuid": "908f21b4-b858-88e4-8150-654d16d6a956",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "registry",
           "in",
           "memory",
           "agentregistry",
@@ -2546,7 +2896,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "vortex"
         ],
         "values": {
-          "en": "In-memory AgentRegistry — single source of truth for the A-vortex."
+          "en": "Use when reasoning about registry — In-memory AgentRegistry — single source of truth for the A-vortex."
         }
       }
     ]
@@ -2635,9 +2985,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects.",
-        "uuid": "eba442f6-a2f7-83ba-9a23-d9362f35094c",
+        "source": "Use when reasoning about runtime — AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects.",
+        "uuid": "b60671fa-ba4b-89f7-a165-68533fd75571",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "runtime",
           "agentruntime",
           "dispatches",
           "chain",
@@ -2656,7 +3011,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "effects"
         ],
         "values": {
-          "en": "AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects."
+          "en": "Use when reasoning about runtime — AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects."
         }
       }
     ]
@@ -3013,9 +3368,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "horo — a whole tribe (a `team`) joins the society circle.",
-        "uuid": "d9f857d3-594c-8e24-be1d-f21c3d7c24c1",
+        "source": "Use when reasoning about horo — horo — a whole tribe (a `team`) joins the society circle.",
+        "uuid": "e386d7b2-ccf0-8da7-9945-6ff3e3a57648",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "horo",
           "horo",
           "a",
           "whole",
@@ -3028,7 +3388,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "circle"
         ],
         "values": {
-          "en": "horo — a whole tribe (a `team`) joins the society circle."
+          "en": "Use when reasoning about horo — horo — a whole tribe (a `team`) joins the society circle."
         }
       }
     ]
@@ -3050,9 +3410,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "agent-society — the breath over the agent-sync bus.",
-        "uuid": "08fdc517-f964-873f-8c5b-f65f0df19df1",
+        "source": "Use when reasoning about society — agent-society — the breath over the agent-sync bus.",
+        "uuid": "2c84f08d-3e2f-8c4a-aec6-6abaa73a4b9c",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "society",
           "agent",
           "society",
           "the",
@@ -3064,7 +3429,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "bus"
         ],
         "values": {
-          "en": "agent-society — the breath over the agent-sync bus."
+          "en": "Use when reasoning about society — agent-society — the breath over the agent-sync bus."
         }
       }
     ]
@@ -3142,9 +3507,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Domain-agent contract — the coupling-tensor's A-vortex axis.",
-        "uuid": "6646b4cb-6613-8720-b8ad-a0a1055f7841",
+        "source": "Use when reasoning about types — Domain-agent contract — the coupling-tensor's A-vortex axis.",
+        "uuid": "8442cb2c-b91e-8cf4-8d10-0919f41865ff",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "domain",
           "agent",
           "contract",
@@ -3157,7 +3527,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "axis"
         ],
         "values": {
-          "en": "Domain-agent contract — the coupling-tensor's A-vortex axis."
+          "en": "Use when reasoning about types — Domain-agent contract — the coupling-tensor's A-vortex axis."
         }
       }
     ]
@@ -3415,9 +3785,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "MCP localization layer — Slice ZZZZZZZZ (2026-05-11).",
-        "uuid": "4e158081-6071-8c82-850a-6dae969b24d6",
+        "source": "Use when reasoning about i18n — MCP localization layer — Slice ZZZZZZZZ (2026-05-11).",
+        "uuid": "2b5b4760-08eb-80c4-bc7e-f8b3a7fbaec1",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "i18n",
           "mcp",
           "localization",
           "layer",
@@ -3425,7 +3800,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "zzzzzzzz"
         ],
         "values": {
-          "en": "MCP localization layer — Slice ZZZZZZZZ (2026-05-11)."
+          "en": "Use when reasoning about i18n — MCP localization layer — Slice ZZZZZZZZ (2026-05-11)."
         }
       }
     ]
@@ -3510,9 +3885,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract.",
-        "uuid": "df7e96fa-abd5-819f-8a3c-7930ba62c458",
+        "source": "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract.",
+        "uuid": "f5e024d3-0828-8d6c-bfe6-18e0acd2fed3",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "cloudflare",
           "cloudflare",
           "mcp",
           "tool",
@@ -3522,7 +3902,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "extract"
         ],
         "values": {
-          "en": "Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract."
+          "en": "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract."
         }
       }
     ]
@@ -3587,9 +3967,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time).",
-        "uuid": "f8044fb7-bd3a-8dda-b32c-d8c2e78a7de8",
+        "source": "Use when reasoning about hr — Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time).",
+        "uuid": "52e4f6d1-efe3-860f-b7e4-e88e444e4a52",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hr",
           "use",
           "for",
           "the",
@@ -3614,7 +3999,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "time"
         ],
         "values": {
-          "en": "Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time)."
+          "en": "Use when reasoning about hr — Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time)."
         }
       }
     ]
@@ -3636,9 +4021,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "hr.training — the HrAgent's auto-train capability as a PURE transform.",
-        "uuid": "33853f64-0960-8bd9-9336-cf9062cfe226",
+        "source": "Use when reasoning about training — hr.training — the HrAgent's auto-train capability as a PURE transform.",
+        "uuid": "cdafa988-5b80-8287-83b5-e4647465bc94",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "training",
           "hr",
           "training",
           "the",
@@ -3653,7 +4043,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "transform"
         ],
         "values": {
-          "en": "hr.training — the HrAgent's auto-train capability as a PURE transform."
+          "en": "Use when reasoning about training — hr.training — the HrAgent's auto-train capability as a PURE transform."
         }
       }
     ]
@@ -3675,9 +4065,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts.",
-        "uuid": "dbae3d3e-11ab-8560-9c7e-bb64ac1bb2cd",
+        "source": "Use when reasoning about legal — Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts.",
+        "uuid": "6ed6e4b4-0ecc-89ba-b1db-d901d9d001b5",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "legal",
           "use",
           "for",
           "the",
@@ -3704,7 +4099,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "acts"
         ],
         "values": {
-          "en": "Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts."
+          "en": "Use when reasoning about legal — Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts."
         }
       }
     ]
@@ -3726,9 +4121,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform.",
-        "uuid": "b30ee74c-275a-8c8e-962c-bef5bcec6116",
+        "source": "Use when reasoning about conflict — legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform.",
+        "uuid": "e89bfc1d-af95-8ac1-9367-7a0e0bc1f4e9",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "conflict",
           "legal",
           "conflict",
           "the",
@@ -3744,7 +4144,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "transform"
         ],
         "values": {
-          "en": "legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform."
+          "en": "Use when reasoning about conflict — legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform."
         }
       }
     ]
@@ -3762,6 +4162,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "step"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf…",
+        "uuid": "e52c245a-04de-8560-be17-942678b7795d",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "step",
+          "every",
+          "registered",
+          "domain",
+          "agent",
+          "answered",
+          "a",
+          "chain",
+          "step",
+          "the",
+          "same",
+          "way",
+          "read",
+          "and",
+          "out",
+          "of",
+          "the",
+          "step",
+          "s",
+          "note",
+          "claim",
+          "the",
+          "step",
+          "only",
+          "if",
+          "the",
+          "agent",
+          "owns",
+          "that",
+          "collection",
+          "and",
+          "return",
+          "one",
+          "audit",
+          "leaf"
+        ],
+        "values": {
+          "en": "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf…"
         }
       }
     ]
@@ -3862,9 +4311,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "AI auto-accept confidence thresholds — imperial rationals only.",
-        "uuid": "87c5d771-3744-8dc3-8fa1-2338c105595a",
+        "source": "Use when reasoning about confidence — AI auto-accept confidence thresholds — imperial rationals only.",
+        "uuid": "fc0ef732-6a2f-87a1-8a7d-1a9928f2c10b",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "confidence",
           "ai",
           "auto",
           "accept",
@@ -3875,7 +4329,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "only"
         ],
         "values": {
-          "en": "AI auto-accept confidence thresholds — imperial rationals only."
+          "en": "Use when reasoning about confidence — AI auto-accept confidence thresholds — imperial rationals only."
         }
       }
     ]
@@ -4302,9 +4756,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Algebra constants — theorems and Algebra interface",
-        "uuid": "ef540793-a9d3-81ef-bd80-cbbefd27a467",
+        "source": "Use when reasoning about constants — Algebra constants — theorems and Algebra interface",
+        "uuid": "a1d12c54-91c9-85c4-979c-7e8eaf6e9e80",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "constants",
           "algebra",
           "constants",
           "theorems",
@@ -4313,7 +4772,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "interface"
         ],
         "values": {
-          "en": "Algebra constants — theorems and Algebra interface"
+          "en": "Use when reasoning about constants — Algebra constants — theorems and Algebra interface"
         }
       }
     ]
@@ -4365,6 +4824,35 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "license"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about license — ONE licence, every path: **CC-BY-NC-ND-4.0**, or commercial via the contact below.",
+        "uuid": "099cd81b-9e21-824c-9896-a080ee083c4d",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "license",
+          "one",
+          "licence",
+          "every",
+          "path",
+          "cc",
+          "by",
+          "nc",
+          "nd",
+          "or",
+          "commercial",
+          "via",
+          "the",
+          "contact",
+          "below"
+        ],
+        "values": {
+          "en": "Use when reasoning about license — ONE licence, every path: **CC-BY-NC-ND-4.0**, or commercial via the contact below."
+        }
       }
     ]
   },
@@ -4385,9 +4873,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Algebra operations — closed, movie, product, allAlgebra",
-        "uuid": "d9519f85-c187-8788-b04d-9c9417532eda",
+        "source": "Use when reasoning about operations — Algebra operations — closed, movie, product, allAlgebra",
+        "uuid": "95009cde-3ce1-892c-9f99-8da2879c7717",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "operations",
           "algebra",
           "operations",
           "closed",
@@ -4396,7 +4889,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "allalgebra"
         ],
         "values": {
-          "en": "Algebra operations — closed, movie, product, allAlgebra"
+          "en": "Use when reasoning about operations — Algebra operations — closed, movie, product, allAlgebra"
         }
       }
     ]
@@ -5588,9 +6081,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "apply/approval — package.json-derived agent work approval matrix.",
-        "uuid": "beca22ff-e102-80f8-a142-35070c051d76",
+        "source": "Use when reasoning about approval — apply/approval — package.json-derived agent work approval matrix.",
+        "uuid": "47d08365-0e29-885b-a736-c00762ff31e2",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "approval",
           "apply",
           "approval",
           "package",
@@ -5602,7 +6100,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "matrix"
         ],
         "values": {
-          "en": "apply/approval — package.json-derived agent work approval matrix."
+          "en": "Use when reasoning about approval — apply/approval — package.json-derived agent work approval matrix."
         }
       }
     ]
@@ -6127,6 +6625,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "address"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about address — Four hundred and fifty-three assertions in this corpus had that shape (rules/mirror). Each was green, fast, and counted as a proof by every gate that counts proofs.",
+        "uuid": "09ec9bcd-9354-8203-a1c7-e3784e1ed90d",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "address",
+          "four",
+          "hundred",
+          "and",
+          "fifty",
+          "three",
+          "assertions",
+          "in",
+          "this",
+          "corpus",
+          "had",
+          "that",
+          "shape",
+          "rules",
+          "mirror",
+          "each",
+          "was",
+          "green",
+          "fast",
+          "and",
+          "counted",
+          "as",
+          "a",
+          "proof",
+          "by",
+          "every",
+          "gate",
+          "that",
+          "counts",
+          "proofs"
+        ],
+        "values": {
+          "en": "Use when reasoning about address — Four hundred and fifty-three assertions in this corpus had that shape (rules/mirror). Each was green, fast, and counted as a proof by every gate that counts proofs."
         }
       }
     ]
@@ -7456,9 +7998,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Quantum automation primitives for iterative problem-solving loops",
-        "uuid": "0bb07a39-25aa-8879-8020-e8b486f4ff59",
+        "source": "Use when reasoning about automate — Quantum automation primitives for iterative problem-solving loops",
+        "uuid": "555171c9-79ae-897d-82bd-194e09a9986d",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "automate",
           "quantum",
           "automation",
           "primitives",
@@ -7469,7 +8016,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "loops"
         ],
         "values": {
-          "en": "Quantum automation primitives for iterative problem-solving loops"
+          "en": "Use when reasoning about automate — Quantum automation primitives for iterative problem-solving loops"
         }
       }
     ]
@@ -8139,6 +8686,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hooks"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — books the run when it reaches posted, so the ledger entry is made by the row that caused it rather than by whichever screen happened to save it.",
+        "uuid": "254ade6f-9bbc-8b9f-8e29-9de02708638e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "books",
+          "the",
+          "run",
+          "when",
+          "it",
+          "reaches",
+          "posted",
+          "so",
+          "the",
+          "ledger",
+          "entry",
+          "is",
+          "made",
+          "by",
+          "the",
+          "row",
+          "that",
+          "caused",
+          "it",
+          "rather",
+          "than",
+          "by",
+          "whichever",
+          "screen",
+          "happened",
+          "to",
+          "save",
+          "it"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — books the run when it reaches posted, so the ledger entry is made by the row that caused it rather than by whichever screen happened to save it."
+        }
       }
     ]
   },
@@ -8159,9 +8749,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable.",
-        "uuid": "3b01724f-f55b-804b-a75f-850bc02b7ec8",
+        "source": "Use when reasoning about disbursement — Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable.",
+        "uuid": "6adbe228-6a20-8d33-afae-4aa4b8bb075b",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "disbursement",
           "payroll",
           "disbursement",
           "hook",
@@ -8186,7 +8781,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "payable"
         ],
         "values": {
-          "en": "Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable."
+          "en": "Use when reasoning about disbursement — Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable."
         }
       }
     ]
@@ -8495,9 +9090,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves",
-        "uuid": "34e09ce0-b7d8-84d0-a123-a4ec729d7faf",
+        "source": "Use when reasoning about basis — Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves",
+        "uuid": "0af37f57-3cd3-8ef8-8a0b-901617c654f2",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "basis",
           "millennium",
           "problems",
           "as",
@@ -8512,7 +9112,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "waves"
         ],
         "values": {
-          "en": "Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves"
+          "en": "Use when reasoning about basis — Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves"
         }
       }
     ]
@@ -8687,6 +9287,36 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "dashboard"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about dashboard — An empty admin panel is ambiguous: a first run and a broken connection look identical.",
+        "uuid": "004fe907-dee0-8437-9a86-b3a353305cb3",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "dashboard",
+          "an",
+          "empty",
+          "admin",
+          "panel",
+          "is",
+          "ambiguous",
+          "a",
+          "first",
+          "run",
+          "and",
+          "a",
+          "broken",
+          "connection",
+          "look",
+          "identical"
+        ],
+        "values": {
+          "en": "Use when reasoning about dashboard — An empty admin panel is ambiguous: a first run and a broken connection look identical."
+        }
       }
     ]
   },
@@ -8704,6 +9334,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "button"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about button — The button that fills an empty install. Its whole design is the guard around a single irreversible action: seeding writes demo content into a live database, and running it twice…",
+        "uuid": "6551407d-f875-8b0e-9dd6-f812bb604a21",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "button",
+          "the",
+          "button",
+          "that",
+          "fills",
+          "an",
+          "empty",
+          "install",
+          "its",
+          "whole",
+          "design",
+          "is",
+          "the",
+          "guard",
+          "around",
+          "a",
+          "single",
+          "irreversible",
+          "action",
+          "seeding",
+          "writes",
+          "demo",
+          "content",
+          "into",
+          "a",
+          "live",
+          "database",
+          "and",
+          "running",
+          "it",
+          "twice"
+        ],
+        "values": {
+          "en": "Use when reasoning about button — The button that fills an empty install. Its whole design is the guard around a single irreversible action: seeding writes demo content into a live database, and running it twice…"
+        }
       }
     ]
   },
@@ -8720,6 +9395,48 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "login"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do.",
+        "uuid": "c6d4c96d-9a57-8a37-bed7-02555e6a3b1e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "login",
+          "a",
+          "panel",
+          "above",
+          "the",
+          "admin",
+          "sign",
+          "in",
+          "form",
+          "carrying",
+          "the",
+          "copy",
+          "that",
+          "orients",
+          "a",
+          "first",
+          "time",
+          "visitor",
+          "what",
+          "this",
+          "system",
+          "is",
+          "and",
+          "what",
+          "signing",
+          "in",
+          "will",
+          "do"
+        ],
+        "values": {
+          "en": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do."
         }
       }
     ]
@@ -9021,6 +9738,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "erasure"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about erasure — Deleting a posted row breaks the ledger it belongs to. Crypto-shredding keeps the record and destroys the ability to read it: encrypts, decrypts while the key lives, and drops the…",
+        "uuid": "01659330-429a-87c5-ba5d-f52cddb48ee5",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "erasure",
+          "deleting",
+          "a",
+          "posted",
+          "row",
+          "breaks",
+          "the",
+          "ledger",
+          "it",
+          "belongs",
+          "to",
+          "crypto",
+          "shredding",
+          "keeps",
+          "the",
+          "record",
+          "and",
+          "destroys",
+          "the",
+          "ability",
+          "to",
+          "read",
+          "it",
+          "encrypts",
+          "decrypts",
+          "while",
+          "the",
+          "key",
+          "lives",
+          "and",
+          "drops",
+          "the"
+        ],
+        "values": {
+          "en": "Use when reasoning about erasure — Deleting a posted row breaks the ledger it belongs to. Crypto-shredding keeps the record and destroys the ability to read it: encrypts, decrypts while the key lives, and drops the…"
+        }
       }
     ]
   },
@@ -9105,7 +9868,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the [[signature]] that seals the [[audit]] chain.",
+        "source": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain.",
         "uuid": "733a7e6d-457c-8b5e-8292-c432f6c1a35b",
         "words": [
           "use",
@@ -9153,7 +9916,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "chain"
         ],
         "values": {
-          "en": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the [[signature]] that seals the [[audit]] chain."
+          "en": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain."
         }
       }
     ]
@@ -9175,7 +9938,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each [[audit]] leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back.",
+        "source": "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each audit leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back.",
         "uuid": "42257455-88e2-88e5-b83b-c8a3568d2cb8",
         "words": [
           "use",
@@ -9224,7 +9987,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "back"
         ],
         "values": {
-          "en": "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each [[audit]] leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back."
+          "en": "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each audit leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back."
         }
       }
     ]
@@ -10059,6 +10822,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "banner"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about banner — is the Payload definition and renders it. They are separate exports because typegen and the server config need the shape without dragging React into a context that cannot run it…",
+        "uuid": "4f2916ef-ec8b-85ac-b722-4a61b49958b8",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "banner",
+          "is",
+          "the",
+          "payload",
+          "definition",
+          "and",
+          "renders",
+          "it",
+          "they",
+          "are",
+          "separate",
+          "exports",
+          "because",
+          "typegen",
+          "and",
+          "the",
+          "server",
+          "config",
+          "need",
+          "the",
+          "shape",
+          "without",
+          "dragging",
+          "react",
+          "into",
+          "a",
+          "context",
+          "that",
+          "cannot",
+          "run",
+          "it"
+        ],
+        "values": {
+          "en": "Use when reasoning about banner — is the Payload definition and renders it. They are separate exports because typegen and the server config need the shape without dragging React into a context that cannot run it…"
+        }
       }
     ]
   },
@@ -10075,6 +10883,43 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "code"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about code — exports (the Payload block) and exports (the React component). One barrel cannot offer both under one name, so the client is here.",
+        "uuid": "ba558249-ade0-864b-b274-953b9f9e937e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "code",
+          "exports",
+          "the",
+          "payload",
+          "block",
+          "and",
+          "exports",
+          "the",
+          "react",
+          "component",
+          "one",
+          "barrel",
+          "cannot",
+          "offer",
+          "both",
+          "under",
+          "one",
+          "name",
+          "so",
+          "the",
+          "client",
+          "is",
+          "here"
+        ],
+        "values": {
+          "en": "Use when reasoning about code — exports (the Payload block) and exports (the React component). One barrel cannot offer both under one name, so the client is here."
         }
       }
     ]
@@ -10093,6 +10938,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "config"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about config — Payload's typegen and the server config both need every block's shape. Importing the block COMPONENTS to get them drags React into a context that cannot run it.",
+        "uuid": "218bfe41-e163-84d4-8c9a-a46052fcb6ce",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "config",
+          "payload",
+          "s",
+          "typegen",
+          "and",
+          "the",
+          "server",
+          "config",
+          "both",
+          "need",
+          "every",
+          "block",
+          "s",
+          "shape",
+          "importing",
+          "the",
+          "block",
+          "components",
+          "to",
+          "get",
+          "them",
+          "drags",
+          "react",
+          "into",
+          "a",
+          "context",
+          "that",
+          "cannot",
+          "run",
+          "it"
+        ],
+        "values": {
+          "en": "Use when reasoning about config — Payload's typegen and the server config both need every block's shape. Importing the block COMPONENTS to get them drags React into a context that cannot run it."
+        }
       }
     ]
   },
@@ -10109,6 +10998,43 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "content"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about content — is the definition and renders it, split for the same reason every block is: the shape must be reachable without loading React.",
+        "uuid": "363e7210-948a-810e-97cb-6672e2683545",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "content",
+          "is",
+          "the",
+          "definition",
+          "and",
+          "renders",
+          "it",
+          "split",
+          "for",
+          "the",
+          "same",
+          "reason",
+          "every",
+          "block",
+          "is",
+          "the",
+          "shape",
+          "must",
+          "be",
+          "reachable",
+          "without",
+          "loading",
+          "react"
+        ],
+        "values": {
+          "en": "Use when reasoning about content — is the definition and renders it, split for the same reason every block is: the shape must be reachable without loading React."
         }
       }
     ]
@@ -10127,6 +11053,53 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "form"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about form — A CMS form is data: an editor picks field types, and something must turn each stored into a component. is that map, and it is the whole of this atom's authority.",
+        "uuid": "e725d475-d05e-827c-b6f9-c0707c98eeb8",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "form",
+          "a",
+          "cms",
+          "form",
+          "is",
+          "data",
+          "an",
+          "editor",
+          "picks",
+          "field",
+          "types",
+          "and",
+          "something",
+          "must",
+          "turn",
+          "each",
+          "stored",
+          "into",
+          "a",
+          "component",
+          "is",
+          "that",
+          "map",
+          "and",
+          "it",
+          "is",
+          "the",
+          "whole",
+          "of",
+          "this",
+          "atom",
+          "s",
+          "authority"
+        ],
+        "values": {
+          "en": "Use when reasoning about form — A CMS form is data: an editor picks field types, and something must turn each stored into a component. is that map, and it is the whole of this atom's authority."
+        }
       }
     ]
   },
@@ -10143,6 +11116,48 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "checkbox"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about checkbox — 's returns an and expects a **native** input to fire it. The shadcn checkbox is a Radix button with — it fires , and the native event never happens.",
+        "uuid": "078cd901-2483-8fad-a168-f246994f991d",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "checkbox",
+          "s",
+          "returns",
+          "an",
+          "and",
+          "expects",
+          "a",
+          "native",
+          "input",
+          "to",
+          "fire",
+          "it",
+          "the",
+          "shadcn",
+          "checkbox",
+          "is",
+          "a",
+          "radix",
+          "button",
+          "with",
+          "it",
+          "fires",
+          "and",
+          "the",
+          "native",
+          "event",
+          "never",
+          "happens"
+        ],
+        "values": {
+          "en": "Use when reasoning about checkbox — 's returns an and expects a **native** input to fire it. The shadcn checkbox is a Radix button with — it fires , and the native event never happens."
         }
       }
     ]
@@ -10161,6 +11176,41 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "country"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about country — The control is the ordinary Radix combobox (blocks/form/select): a whose only accessible name is the bound to its .",
+        "uuid": "bd3d4c15-e5db-8778-80cb-8c6dc02596ca",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "country",
+          "the",
+          "control",
+          "is",
+          "the",
+          "ordinary",
+          "radix",
+          "combobox",
+          "blocks",
+          "form",
+          "select",
+          "a",
+          "whose",
+          "only",
+          "accessible",
+          "name",
+          "is",
+          "the",
+          "bound",
+          "to",
+          "its"
+        ],
+        "values": {
+          "en": "Use when reasoning about country — The control is the ordinary Radix combobox (blocks/form/select): a whose only accessible name is the bound to its ."
+        }
       }
     ]
   },
@@ -10177,6 +11227,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "email"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about email — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+        "uuid": "e57852d2-01de-8d94-904e-aa492d88ac8c",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "email",
+          "a",
+          "and",
+          "an",
+          "are",
+          "bound",
+          "by",
+          "a",
+          "string",
+          "that",
+          "appears",
+          "twice",
+          "change",
+          "one",
+          "side",
+          "and",
+          "nothing",
+          "moves",
+          "on",
+          "screen",
+          "the",
+          "field",
+          "still",
+          "renders",
+          "still",
+          "accepts",
+          "input",
+          "still",
+          "submits"
+        ],
+        "values": {
+          "en": "Use when reasoning about email — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
         }
       }
     ]
@@ -10195,6 +11288,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "error"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about error — A field that rejects input and explains nothing is a dead end: the user knows the form will not submit and has no way to learn what to change.",
+        "uuid": "3ac1a673-7de0-8ff8-bc78-36eebd71cb0c",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "error",
+          "a",
+          "field",
+          "that",
+          "rejects",
+          "input",
+          "and",
+          "explains",
+          "nothing",
+          "is",
+          "a",
+          "dead",
+          "end",
+          "the",
+          "user",
+          "knows",
+          "the",
+          "form",
+          "will",
+          "not",
+          "submit",
+          "and",
+          "has",
+          "no",
+          "way",
+          "to",
+          "learn",
+          "what",
+          "to",
+          "change"
+        ],
+        "values": {
+          "en": "Use when reasoning about error — A field that rejects input and explains nothing is a dead end: the user knows the form will not submit and has no way to learn what to change."
+        }
       }
     ]
   },
@@ -10211,6 +11348,45 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "message"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about message — Every other atom under blocks/form is a control: it has a name, a label, a value, and a place in the tab order.",
+        "uuid": "5f11a17e-06d1-8bd3-b66b-cd4dd5df4289",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "message",
+          "every",
+          "other",
+          "atom",
+          "under",
+          "blocks",
+          "form",
+          "is",
+          "a",
+          "control",
+          "it",
+          "has",
+          "a",
+          "name",
+          "a",
+          "label",
+          "a",
+          "value",
+          "and",
+          "a",
+          "place",
+          "in",
+          "the",
+          "tab",
+          "order"
+        ],
+        "values": {
+          "en": "Use when reasoning about message — Every other atom under blocks/form is a control: it has a name, a label, a value, and a place in the tab order."
         }
       }
     ]
@@ -10229,6 +11405,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "number"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about number — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+        "uuid": "4ad043d7-22bc-88a3-976c-4d333df76204",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "number",
+          "a",
+          "and",
+          "an",
+          "are",
+          "bound",
+          "by",
+          "a",
+          "string",
+          "that",
+          "appears",
+          "twice",
+          "change",
+          "one",
+          "side",
+          "and",
+          "nothing",
+          "moves",
+          "on",
+          "screen",
+          "the",
+          "field",
+          "still",
+          "renders",
+          "still",
+          "accepts",
+          "input",
+          "still",
+          "submits"
+        ],
+        "values": {
+          "en": "Use when reasoning about number — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
+        }
       }
     ]
   },
@@ -10245,6 +11464,47 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "select"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about select — A native announces itself. This one does not: the shadcn control renders a , whose accessible name comes from **nothing but** the bound to the trigger's .",
+        "uuid": "0be0e89a-c52f-8cc3-88ac-a6bf826d636a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "select",
+          "a",
+          "native",
+          "announces",
+          "itself",
+          "this",
+          "one",
+          "does",
+          "not",
+          "the",
+          "shadcn",
+          "control",
+          "renders",
+          "a",
+          "whose",
+          "accessible",
+          "name",
+          "comes",
+          "from",
+          "nothing",
+          "but",
+          "the",
+          "bound",
+          "to",
+          "the",
+          "trigger",
+          "s"
+        ],
+        "values": {
+          "en": "Use when reasoning about select — A native announces itself. This one does not: the shadcn control renders a , whose accessible name comes from **nothing but** the bound to the trigger's ."
         }
       }
     ]
@@ -10263,6 +11523,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "state"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about state — The control is the ordinary Radix combobox (blocks/form/select), named only by its bound label.",
+        "uuid": "97ccf962-23d4-8bf7-8d89-501e3580807f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "state",
+          "the",
+          "control",
+          "is",
+          "the",
+          "ordinary",
+          "radix",
+          "combobox",
+          "blocks",
+          "form",
+          "select",
+          "named",
+          "only",
+          "by",
+          "its",
+          "bound",
+          "label"
+        ],
+        "values": {
+          "en": "Use when reasoning about state — The control is the ordinary Radix combobox (blocks/form/select), named only by its bound label."
+        }
       }
     ]
   },
@@ -10279,6 +11570,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "text"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about text — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+        "uuid": "1f35bce5-ea1e-8f57-b289-73d94eea8de3",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "text",
+          "a",
+          "and",
+          "an",
+          "are",
+          "bound",
+          "by",
+          "a",
+          "string",
+          "that",
+          "appears",
+          "twice",
+          "change",
+          "one",
+          "side",
+          "and",
+          "nothing",
+          "moves",
+          "on",
+          "screen",
+          "the",
+          "field",
+          "still",
+          "renders",
+          "still",
+          "accepts",
+          "input",
+          "still",
+          "submits"
+        ],
+        "values": {
+          "en": "Use when reasoning about text — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
         }
       }
     ]
@@ -10297,6 +11631,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "textarea"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about textarea — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
+        "uuid": "5502c0b7-f506-8cd6-bee8-dd068b354a16",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "textarea",
+          "a",
+          "and",
+          "an",
+          "are",
+          "bound",
+          "by",
+          "a",
+          "string",
+          "that",
+          "appears",
+          "twice",
+          "change",
+          "one",
+          "side",
+          "and",
+          "nothing",
+          "moves",
+          "on",
+          "screen",
+          "the",
+          "field",
+          "still",
+          "renders",
+          "still",
+          "accepts",
+          "input",
+          "still",
+          "submits"
+        ],
+        "values": {
+          "en": "Use when reasoning about textarea — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
+        }
       }
     ]
   },
@@ -10313,6 +11690,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "width"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about width — One div, one style. means *half the form*, not fifty pixels — the value is a **percentage**, because a form field's width is meaningful only relative to the form it sits in, and a…",
+        "uuid": "f5b8539e-84b0-8eb1-97b7-8a54cb06f579",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "width",
+          "one",
+          "div",
+          "one",
+          "style",
+          "means",
+          "half",
+          "the",
+          "form",
+          "not",
+          "fifty",
+          "pixels",
+          "the",
+          "value",
+          "is",
+          "a",
+          "percentage",
+          "because",
+          "a",
+          "form",
+          "field",
+          "s",
+          "width",
+          "is",
+          "meaningful",
+          "only",
+          "relative",
+          "to",
+          "the",
+          "form",
+          "it",
+          "sits",
+          "in",
+          "and",
+          "a"
+        ],
+        "values": {
+          "en": "Use when reasoning about width — One div, one style. means *half the form*, not fifty pixels — the value is a **percentage**, because a form field's width is meaningful only relative to the form it sits in, and a…"
         }
       }
     ]
@@ -10526,7 +11952,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about abdomen as an anatomical part of [[body]] — vocabulary pivot to @/abdomen; nested not duplicated.",
+        "source": "Use when reasoning about abdomen as an anatomical part of body — vocabulary pivot to @/abdomen; nested not duplicated.",
         "uuid": "befb695a-bed8-8807-ad19-12b81d928fbc",
         "words": [
           "use",
@@ -10549,7 +11975,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about abdomen as an anatomical part of [[body]] — vocabulary pivot to @/abdomen; nested not duplicated."
+          "en": "Use when reasoning about abdomen as an anatomical part of body — vocabulary pivot to @/abdomen; nested not duplicated."
         }
       }
     ]
@@ -10571,7 +11997,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about anatomy as an anatomical part of [[body]] — vocabulary pivot to @/anatomy; nested not duplicated.",
+        "source": "Use when reasoning about anatomy as an anatomical part of body — vocabulary pivot to @/anatomy; nested not duplicated.",
         "uuid": "b9a8f516-7776-8976-b050-b005b4306eac",
         "words": [
           "use",
@@ -10594,7 +12020,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about anatomy as an anatomical part of [[body]] — vocabulary pivot to @/anatomy; nested not duplicated."
+          "en": "Use when reasoning about anatomy as an anatomical part of body — vocabulary pivot to @/anatomy; nested not duplicated."
         }
       }
     ]
@@ -10616,7 +12042,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about arm as an anatomical part of [[body]] — vocabulary pivot to @/arm; nested not duplicated.",
+        "source": "Use when reasoning about arm as an anatomical part of body — vocabulary pivot to @/arm; nested not duplicated.",
         "uuid": "7742fb58-deb2-8151-a8df-49c7c8ae9b4e",
         "words": [
           "use",
@@ -10639,7 +12065,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about arm as an anatomical part of [[body]] — vocabulary pivot to @/arm; nested not duplicated."
+          "en": "Use when reasoning about arm as an anatomical part of body — vocabulary pivot to @/arm; nested not duplicated."
         }
       }
     ]
@@ -10661,7 +12087,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about the artery as an organ of [[body]] — pivot to canonical @/artery; zero duplication.",
+        "source": "Use when reasoning about the artery as an organ of body — pivot to canonical @/artery; zero duplication.",
         "uuid": "14934dea-215c-8e05-a613-955ceb0b7512",
         "words": [
           "use",
@@ -10683,7 +12109,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplication"
         ],
         "values": {
-          "en": "Use when reasoning about the artery as an organ of [[body]] — pivot to canonical @/artery; zero duplication."
+          "en": "Use when reasoning about the artery as an organ of body — pivot to canonical @/artery; zero duplication."
         }
       }
     ]
@@ -10705,7 +12131,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about auto as a anatomical part of [[body]] — vocabulary pivot to @/auto; nested not duplicated.",
+        "source": "Use when reasoning about auto as a anatomical part of body — vocabulary pivot to @/auto; nested not duplicated.",
         "uuid": "d83235a4-ba4a-820a-b80b-2e55156b71ee",
         "words": [
           "use",
@@ -10728,7 +12154,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about auto as a anatomical part of [[body]] — vocabulary pivot to @/auto; nested not duplicated."
+          "en": "Use when reasoning about auto as a anatomical part of body — vocabulary pivot to @/auto; nested not duplicated."
         }
       }
     ]
@@ -10750,7 +12176,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about the blood as an organ of [[body]] — pivot to canonical @/blood; zero duplication.",
+        "source": "Use when reasoning about the blood as an organ of body — pivot to canonical @/blood; zero duplication.",
         "uuid": "7a67e215-258c-827f-8aac-fecd07a6fb88",
         "words": [
           "use",
@@ -10772,7 +12198,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplication"
         ],
         "values": {
-          "en": "Use when reasoning about the blood as an organ of [[body]] — pivot to canonical @/blood; zero duplication."
+          "en": "Use when reasoning about the blood as an organ of body — pivot to canonical @/blood; zero duplication."
         }
       }
     ]
@@ -10794,7 +12220,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about the brain as an organ of [[body]] — pivot to canonical @/brain; zero duplication.",
+        "source": "Use when reasoning about the brain as an organ of body — pivot to canonical @/brain; zero duplication.",
         "uuid": "4f3e8ebc-f0d8-8e65-9c1c-62d10a4e004f",
         "words": [
           "use",
@@ -10816,7 +12242,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplication"
         ],
         "values": {
-          "en": "Use when reasoning about the brain as an organ of [[body]] — pivot to canonical @/brain; zero duplication."
+          "en": "Use when reasoning about the brain as an organ of body — pivot to canonical @/brain; zero duplication."
         }
       }
     ]
@@ -10838,7 +12264,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about foot as an anatomical part of [[body]] — vocabulary pivot to @/foot; nested not duplicated.",
+        "source": "Use when reasoning about foot as an anatomical part of body — vocabulary pivot to @/foot; nested not duplicated.",
         "uuid": "c7d98cec-644b-8d46-8968-c8ae505c9ca9",
         "words": [
           "use",
@@ -10861,7 +12287,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about foot as an anatomical part of [[body]] — vocabulary pivot to @/foot; nested not duplicated."
+          "en": "Use when reasoning about foot as an anatomical part of body — vocabulary pivot to @/foot; nested not duplicated."
         }
       }
     ]
@@ -10883,7 +12309,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about hand as an anatomical part of [[body]] — vocabulary pivot to @/hand; nested not duplicated.",
+        "source": "Use when reasoning about hand as an anatomical part of body — vocabulary pivot to @/hand; nested not duplicated.",
         "uuid": "81ca96c6-faa8-84b1-a824-22ca253c2d0a",
         "words": [
           "use",
@@ -10906,7 +12332,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about hand as an anatomical part of [[body]] — vocabulary pivot to @/hand; nested not duplicated."
+          "en": "Use when reasoning about hand as an anatomical part of body — vocabulary pivot to @/hand; nested not duplicated."
         }
       }
     ]
@@ -10928,7 +12354,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about head as an anatomical part of [[body]] — vocabulary pivot to @/head; nested not duplicated.",
+        "source": "Use when reasoning about head as an anatomical part of body — vocabulary pivot to @/head; nested not duplicated.",
         "uuid": "004575a8-0dfa-88b5-8dff-8b8fd4e1b5a1",
         "words": [
           "use",
@@ -10951,7 +12377,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about head as an anatomical part of [[body]] — vocabulary pivot to @/head; nested not duplicated."
+          "en": "Use when reasoning about head as an anatomical part of body — vocabulary pivot to @/head; nested not duplicated."
         }
       }
     ]
@@ -10973,7 +12399,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about the heart as an organ of [[body]] — pivot to canonical @/heart; zero duplication.",
+        "source": "Use when reasoning about the heart as an organ of body — pivot to canonical @/heart; zero duplication.",
         "uuid": "cd37c627-fcb9-8b30-873f-7b335ba3af8f",
         "words": [
           "use",
@@ -10995,7 +12421,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplication"
         ],
         "values": {
-          "en": "Use when reasoning about the heart as an organ of [[body]] — pivot to canonical @/heart; zero duplication."
+          "en": "Use when reasoning about the heart as an organ of body — pivot to canonical @/heart; zero duplication."
         }
       }
     ]
@@ -11017,7 +12443,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about lake as a anatomical part of [[body]] — vocabulary pivot to @/lake; nested not duplicated.",
+        "source": "Use when reasoning about lake as a anatomical part of body — vocabulary pivot to @/lake; nested not duplicated.",
         "uuid": "acda5fc8-1d34-8099-b289-dbfdde559586",
         "words": [
           "use",
@@ -11040,7 +12466,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about lake as a anatomical part of [[body]] — vocabulary pivot to @/lake; nested not duplicated."
+          "en": "Use when reasoning about lake as a anatomical part of body — vocabulary pivot to @/lake; nested not duplicated."
         }
       }
     ]
@@ -11062,7 +12488,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about leg as an anatomical part of [[body]] — vocabulary pivot to @/leg; nested not duplicated.",
+        "source": "Use when reasoning about leg as an anatomical part of body — vocabulary pivot to @/leg; nested not duplicated.",
         "uuid": "aef371fb-c376-804d-864c-4aa7a4298316",
         "words": [
           "use",
@@ -11085,7 +12511,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about leg as an anatomical part of [[body]] — vocabulary pivot to @/leg; nested not duplicated."
+          "en": "Use when reasoning about leg as an anatomical part of body — vocabulary pivot to @/leg; nested not duplicated."
         }
       }
     ]
@@ -11107,7 +12533,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about location as a anatomical part of [[body]] — vocabulary pivot to @/location; nested not duplicated.",
+        "source": "Use when reasoning about location as a anatomical part of body — vocabulary pivot to @/location; nested not duplicated.",
         "uuid": "cd302da8-aa14-8157-b5e9-b178849b03b4",
         "words": [
           "use",
@@ -11130,7 +12556,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about location as a anatomical part of [[body]] — vocabulary pivot to @/location; nested not duplicated."
+          "en": "Use when reasoning about location as a anatomical part of body — vocabulary pivot to @/location; nested not duplicated."
         }
       }
     ]
@@ -11152,7 +12578,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about the lung as an organ of [[body]] — pivot to canonical @/lung; zero duplication.",
+        "source": "Use when reasoning about the lung as an organ of body — pivot to canonical @/lung; zero duplication.",
         "uuid": "5de95a49-134c-84f1-9297-44c95816006e",
         "words": [
           "use",
@@ -11174,7 +12600,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplication"
         ],
         "values": {
-          "en": "Use when reasoning about the lung as an organ of [[body]] — pivot to canonical @/lung; zero duplication."
+          "en": "Use when reasoning about the lung as an organ of body — pivot to canonical @/lung; zero duplication."
         }
       }
     ]
@@ -11196,7 +12622,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about measurement as a anatomical part of [[body]] — vocabulary pivot to @/measurement; nested not duplicated.",
+        "source": "Use when reasoning about measurement as a anatomical part of body — vocabulary pivot to @/measurement; nested not duplicated.",
         "uuid": "acdb61a9-998c-8062-b896-cd4becab0c03",
         "words": [
           "use",
@@ -11219,7 +12645,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about measurement as a anatomical part of [[body]] — vocabulary pivot to @/measurement; nested not duplicated."
+          "en": "Use when reasoning about measurement as a anatomical part of body — vocabulary pivot to @/measurement; nested not duplicated."
         }
       }
     ]
@@ -11241,7 +12667,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about the nerve as an organ of [[body]] — pivot to canonical @/nerve; zero duplication.",
+        "source": "Use when reasoning about the nerve as an organ of body — pivot to canonical @/nerve; zero duplication.",
         "uuid": "d392fa8b-7046-8d84-af89-d2ac7355a320",
         "words": [
           "use",
@@ -11263,7 +12689,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplication"
         ],
         "values": {
-          "en": "Use when reasoning about the nerve as an organ of [[body]] — pivot to canonical @/nerve; zero duplication."
+          "en": "Use when reasoning about the nerve as an organ of body — pivot to canonical @/nerve; zero duplication."
         }
       }
     ]
@@ -11285,7 +12711,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about ocean as a anatomical part of [[body]] — vocabulary pivot to @/ocean; nested not duplicated.",
+        "source": "Use when reasoning about ocean as a anatomical part of body — vocabulary pivot to @/ocean; nested not duplicated.",
         "uuid": "1f35d6a7-3c4b-8243-a939-cc97d91dd85c",
         "words": [
           "use",
@@ -11308,7 +12734,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about ocean as a anatomical part of [[body]] — vocabulary pivot to @/ocean; nested not duplicated."
+          "en": "Use when reasoning about ocean as a anatomical part of body — vocabulary pivot to @/ocean; nested not duplicated."
         }
       }
     ]
@@ -11330,7 +12756,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about one as a anatomical part of [[body]] — vocabulary pivot to @/one; nested not duplicated.",
+        "source": "Use when reasoning about one as a anatomical part of body — vocabulary pivot to @/one; nested not duplicated.",
         "uuid": "b3512209-f883-8b8d-8469-02b29d108f05",
         "words": [
           "use",
@@ -11353,7 +12779,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about one as a anatomical part of [[body]] — vocabulary pivot to @/one; nested not duplicated."
+          "en": "Use when reasoning about one as a anatomical part of body — vocabulary pivot to @/one; nested not duplicated."
         }
       }
     ]
@@ -11375,7 +12801,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about review as a anatomical part of [[body]] — vocabulary pivot to @/review; nested not duplicated.",
+        "source": "Use when reasoning about review as a anatomical part of body — vocabulary pivot to @/review; nested not duplicated.",
         "uuid": "76d61382-2dd4-8944-9b7b-66e6f3f9450c",
         "words": [
           "use",
@@ -11398,7 +12824,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about review as a anatomical part of [[body]] — vocabulary pivot to @/review; nested not duplicated."
+          "en": "Use when reasoning about review as a anatomical part of body — vocabulary pivot to @/review; nested not duplicated."
         }
       }
     ]
@@ -11420,7 +12846,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about river as a anatomical part of [[body]] — vocabulary pivot to @/river; nested not duplicated.",
+        "source": "Use when reasoning about river as a anatomical part of body — vocabulary pivot to @/river; nested not duplicated.",
         "uuid": "e3d7d92d-5759-84a6-bf10-b9b0bb302513",
         "words": [
           "use",
@@ -11443,7 +12869,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about river as a anatomical part of [[body]] — vocabulary pivot to @/river; nested not duplicated."
+          "en": "Use when reasoning about river as a anatomical part of body — vocabulary pivot to @/river; nested not duplicated."
         }
       }
     ]
@@ -11465,7 +12891,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about sea as a anatomical part of [[body]] — vocabulary pivot to @/sea; nested not duplicated.",
+        "source": "Use when reasoning about sea as a anatomical part of body — vocabulary pivot to @/sea; nested not duplicated.",
         "uuid": "1c624df5-64f6-8001-bc17-71c77884436b",
         "words": [
           "use",
@@ -11488,7 +12914,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about sea as a anatomical part of [[body]] — vocabulary pivot to @/sea; nested not duplicated."
+          "en": "Use when reasoning about sea as a anatomical part of body — vocabulary pivot to @/sea; nested not duplicated."
         }
       }
     ]
@@ -11510,7 +12936,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about shop as a anatomical part of [[body]] — vocabulary pivot to @/shop; nested not duplicated.",
+        "source": "Use when reasoning about shop as a anatomical part of body — vocabulary pivot to @/shop; nested not duplicated.",
         "uuid": "4e69d567-7835-8705-ab45-a48fba9a0ea2",
         "words": [
           "use",
@@ -11533,7 +12959,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about shop as a anatomical part of [[body]] — vocabulary pivot to @/shop; nested not duplicated."
+          "en": "Use when reasoning about shop as a anatomical part of body — vocabulary pivot to @/shop; nested not duplicated."
         }
       }
     ]
@@ -11555,7 +12981,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about signal as a anatomical part of [[body]] — vocabulary pivot to @/signal; nested not duplicated.",
+        "source": "Use when reasoning about signal as a anatomical part of body — vocabulary pivot to @/signal; nested not duplicated.",
         "uuid": "690d59ed-d108-8f4e-950e-9bf026c40daf",
         "words": [
           "use",
@@ -11578,7 +13004,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about signal as a anatomical part of [[body]] — vocabulary pivot to @/signal; nested not duplicated."
+          "en": "Use when reasoning about signal as a anatomical part of body — vocabulary pivot to @/signal; nested not duplicated."
         }
       }
     ]
@@ -11600,7 +13026,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about the skin as an organ of [[body]] — pivot to canonical @/skin; zero duplication.",
+        "source": "Use when reasoning about the skin as an organ of body — pivot to canonical @/skin; zero duplication.",
         "uuid": "e756f0b3-38cd-8283-a37a-138372565147",
         "words": [
           "use",
@@ -11622,7 +13048,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplication"
         ],
         "values": {
-          "en": "Use when reasoning about the skin as an organ of [[body]] — pivot to canonical @/skin; zero duplication."
+          "en": "Use when reasoning about the skin as an organ of body — pivot to canonical @/skin; zero duplication."
         }
       }
     ]
@@ -11644,7 +13070,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about the vein as an organ of [[body]] — pivot to canonical @/vein; zero duplication.",
+        "source": "Use when reasoning about the vein as an organ of body — pivot to canonical @/vein; zero duplication.",
         "uuid": "ad138773-1b51-8e45-8465-3dce4b245ab0",
         "words": [
           "use",
@@ -11666,7 +13092,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplication"
         ],
         "values": {
-          "en": "Use when reasoning about the vein as an organ of [[body]] — pivot to canonical @/vein; zero duplication."
+          "en": "Use when reasoning about the vein as an organ of body — pivot to canonical @/vein; zero duplication."
         }
       }
     ]
@@ -11688,7 +13114,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about water as a anatomical part of [[body]] — vocabulary pivot to @/water; nested not duplicated.",
+        "source": "Use when reasoning about water as a anatomical part of body — vocabulary pivot to @/water; nested not duplicated.",
         "uuid": "2c3a75d7-e750-8bf4-bc38-675bfc12e6af",
         "words": [
           "use",
@@ -11711,7 +13137,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about water as a anatomical part of [[body]] — vocabulary pivot to @/water; nested not duplicated."
+          "en": "Use when reasoning about water as a anatomical part of body — vocabulary pivot to @/water; nested not duplicated."
         }
       }
     ]
@@ -11871,6 +13297,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "compute"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about compute — Every atom is a page, every partition a volume. derives the volume rows, says what a path means segment by segment, and emits the index as a document.",
+        "uuid": "85d67642-a929-8dd1-a2f7-f01e8848f1c8",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "compute",
+          "every",
+          "atom",
+          "is",
+          "a",
+          "page",
+          "every",
+          "partition",
+          "a",
+          "volume",
+          "derives",
+          "the",
+          "volume",
+          "rows",
+          "says",
+          "what",
+          "a",
+          "path",
+          "means",
+          "segment",
+          "by",
+          "segment",
+          "and",
+          "emits",
+          "the",
+          "index",
+          "as",
+          "a",
+          "document"
+        ],
+        "values": {
+          "en": "Use when reasoning about compute — Every atom is a page, every partition a volume. derives the volume rows, says what a path means segment by segment, and emits the index as a document."
         }
       }
     ]
@@ -13192,9 +14661,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Case state machine on the horo ring—filed to sealed through seven positions",
-        "uuid": "e9fa1ced-bd54-813c-a1d0-8899a7a68b8f",
+        "source": "Use when reasoning about lifecycle — Case state machine on the horo ring—filed to sealed through seven positions",
+        "uuid": "1969eaec-9ed7-8c61-9b62-980f0923ead8",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "lifecycle",
           "case",
           "state",
           "machine",
@@ -13210,7 +14684,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "positions"
         ],
         "values": {
-          "en": "Case state machine on the horo ring—filed to sealed through seven positions"
+          "en": "Use when reasoning about lifecycle — Case state machine on the horo ring—filed to sealed through seven positions"
         }
       }
     ]
@@ -13232,9 +14706,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Case balance law—charge and defence must balance into judgment before sealing",
-        "uuid": "b7001dba-4547-84e1-b403-283a0c48b55b",
+        "source": "Use when reasoning about validator — Case balance law—charge and defence must balance into judgment before sealing",
+        "uuid": "2eef49b8-0ef6-8738-8e8e-037c16f1157b",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "validator",
           "case",
           "balance",
           "law",
@@ -13249,7 +14728,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "sealing"
         ],
         "values": {
-          "en": "Case balance law—charge and defence must balance into judgment before sealing"
+          "en": "Use when reasoning about validator — Case balance law—charge and defence must balance into judgment before sealing"
         }
       }
     ]
@@ -14246,9 +15725,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "bootFromFederation — ingest a published genome into a clone instance.",
-        "uuid": "59f42972-52c6-8188-bde2-fff8942a8db7",
+        "source": "Use when reasoning about boot — bootFromFederation — ingest a published genome into a clone instance.",
+        "uuid": "41189566-061e-8716-9c23-cc8afd2c0cbd",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "boot",
           "bootfromfederation",
           "ingest",
           "a",
@@ -14260,7 +15744,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "instance"
         ],
         "values": {
-          "en": "bootFromFederation — ingest a published genome into a clone instance."
+          "en": "Use when reasoning about boot — bootFromFederation — ingest a published genome into a clone instance."
         }
       }
     ]
@@ -14282,9 +15766,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
-        "uuid": "6c9579be-828d-8f0b-b554-4a0db568432d",
+        "source": "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
+        "uuid": "3ac6afcc-101b-8110-bb53-841db0091349",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "genome",
           "genome",
           "bundle",
           "the",
@@ -14306,7 +15795,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "artifact"
         ],
         "values": {
-          "en": "Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact."
+          "en": "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact."
         }
       }
     ]
@@ -14328,9 +15817,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "publishSelf — wrap a GenomeBundle in a verifiable federation envelope.",
-        "uuid": "5586320a-7620-891b-93b9-dc641deee975",
+        "source": "Use when reasoning about publish — publishSelf — wrap a GenomeBundle in a verifiable federation envelope.",
+        "uuid": "baf7863d-80fa-876f-b163-64121afe1e9f",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "publish",
           "publishself",
           "wrap",
           "a",
@@ -14342,7 +15836,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "envelope"
         ],
         "values": {
-          "en": "publishSelf — wrap a GenomeBundle in a verifiable federation envelope."
+          "en": "Use when reasoning about publish — publishSelf — wrap a GenomeBundle in a verifiable federation envelope."
         }
       }
     ]
@@ -14364,15 +15858,20 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Conservation Law 24 — checkCloneIntegrity.",
-        "uuid": "ce016604-e543-88f5-b80e-6f7ba885e379",
+        "source": "Use when reasoning about verify — Conservation Law 24 — checkCloneIntegrity.",
+        "uuid": "9c6a040a-a681-8a4b-9b32-fa4ba08bf0fb",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "verify",
           "conservation",
           "law",
           "checkcloneintegrity"
         ],
         "values": {
-          "en": "Conservation Law 24 — checkCloneIntegrity."
+          "en": "Use when reasoning about verify — Conservation Law 24 — checkCloneIntegrity."
         }
       }
     ]
@@ -14520,7 +16019,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving [[agent]] atoms.",
+        "source": "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving agent atoms.",
         "uuid": "4535e1c3-ee47-8684-88af-a4e57c012a6d",
         "words": [
           "use",
@@ -14559,7 +16058,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "atoms"
         ],
         "values": {
-          "en": "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving [[agent]] atoms."
+          "en": "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving agent atoms."
         }
       }
     ]
@@ -14581,9 +16080,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access",
-        "uuid": "41c103af-1f55-88fc-bc0d-88a76313c474",
+        "source": "Use when reasoning about binding — Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access",
+        "uuid": "07c11463-f4ed-8319-a8df-ca0afca55d4b",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "binding",
           "tenant",
           "scoped",
           "rbac",
@@ -14595,7 +16099,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "access"
         ],
         "values": {
-          "en": "Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access"
+          "en": "Use when reasoning about binding — Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access"
         }
       }
     ]
@@ -14729,9 +16233,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Cloudflare constants — KIDs, environment keys, binding names",
-        "uuid": "be156f6d-76be-8809-a115-d7e82cf08dea",
+        "source": "Use when reasoning about constants — Cloudflare constants — KIDs, environment keys, binding names",
+        "uuid": "8aa7ec9a-6cb4-8ec1-9646-ed710dde4a79",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "constants",
           "cloudflare",
           "constants",
           "kids",
@@ -14741,7 +16250,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "names"
         ],
         "values": {
-          "en": "Cloudflare constants — KIDs, environment keys, binding names"
+          "en": "Use when reasoning about constants — Cloudflare constants — KIDs, environment keys, binding names"
         }
       }
     ]
@@ -14973,9 +16482,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Cloudflare config sealing — content-uuid identity, decrypt only on proof.",
-        "uuid": "031c75fc-3d95-81b6-9373-283210c01a09",
+        "source": "Use when reasoning about seal — Cloudflare config sealing — content-uuid identity, decrypt only on proof.",
+        "uuid": "d3a1c6a7-1c8e-8fad-a658-0af1c7abb41b",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "seal",
           "cloudflare",
           "config",
           "sealing",
@@ -14988,7 +16502,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "proof"
         ],
         "values": {
-          "en": "Cloudflare config sealing — content-uuid identity, decrypt only on proof."
+          "en": "Use when reasoning about seal — Cloudflare config sealing — content-uuid identity, decrypt only on proof."
         }
       }
     ]
@@ -15010,9 +16524,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Tenant-scoped KV, R2, Vectorize, and Durable Object mediators",
-        "uuid": "42297263-690d-8ab1-be0e-81eaca79a342",
+        "source": "Use when reasoning about storage — Tenant-scoped KV, R2, Vectorize, and Durable Object mediators",
+        "uuid": "6a1df42f-7aab-8a16-ac16-f85deade9b7d",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "storage",
           "tenant",
           "scoped",
           "kv",
@@ -15024,7 +16543,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "mediators"
         ],
         "values": {
-          "en": "Tenant-scoped KV, R2, Vectorize, and Durable Object mediators"
+          "en": "Use when reasoning about storage — Tenant-scoped KV, R2, Vectorize, and Durable Object mediators"
         }
       }
     ]
@@ -15607,6 +17126,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "archive"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about archive — The archive lays post cards in a responsive grid. Visually it is columns; structurally it is an **ItemList** — a set of sibling entries with a defined order — and that structure…",
+        "uuid": "104efefe-1a4f-82d4-ac63-23747dc11c0a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "archive",
+          "the",
+          "archive",
+          "lays",
+          "post",
+          "cards",
+          "in",
+          "a",
+          "responsive",
+          "grid",
+          "visually",
+          "it",
+          "is",
+          "columns",
+          "structurally",
+          "it",
+          "is",
+          "an",
+          "itemlist",
+          "a",
+          "set",
+          "of",
+          "sibling",
+          "entries",
+          "with",
+          "a",
+          "defined",
+          "order",
+          "and",
+          "that",
+          "structure"
+        ],
+        "values": {
+          "en": "Use when reasoning about archive — The archive lays post cards in a responsive grid. Visually it is columns; structurally it is an **ItemList** — a set of sibling entries with a defined order — and that structure…"
         }
       }
     ]
@@ -16925,7 +18489,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when running search/sort primitives under the machine — executable algorithms nested under [[computer]].",
+        "source": "Use when running search/sort primitives under the machine — executable algorithms nested under computer.",
         "uuid": "0aab59c1-ee4e-8b6b-9753-181edad848a4",
         "words": [
           "use",
@@ -16944,7 +18508,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "computer"
         ],
         "values": {
-          "en": "Use when running search/sort primitives under the machine — executable algorithms nested under [[computer]]."
+          "en": "Use when running search/sort primitives under the machine — executable algorithms nested under computer."
         }
       }
     ]
@@ -16966,7 +18530,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when classifying algorithmic cost — big-O from loop-depth bindings under [[computer]]; executable not glossary.",
+        "source": "Use when classifying algorithmic cost — big-O from loop-depth bindings under computer; executable not glossary.",
         "uuid": "29f2b3ab-d7f0-8fe7-843f-4150b46e6951",
         "words": [
           "use",
@@ -16987,7 +18551,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "glossary"
         ],
         "values": {
-          "en": "Use when classifying algorithmic cost — big-O from loop-depth bindings under [[computer]]; executable not glossary."
+          "en": "Use when classifying algorithmic cost — big-O from loop-depth bindings under computer; executable not glossary."
         }
       }
     ]
@@ -17009,7 +18573,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about component as a part of [[computer]] — pivot to canonical @/component; nested not duplicated.",
+        "source": "Use when reasoning about component as a part of computer — pivot to canonical @/component; nested not duplicated.",
         "uuid": "faaf961f-eb0d-8742-9ff3-a3b709ecdd3c",
         "words": [
           "use",
@@ -17031,7 +18595,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about component as a part of [[computer]] — pivot to canonical @/component; nested not duplicated."
+          "en": "Use when reasoning about component as a part of computer — pivot to canonical @/component; nested not duplicated."
         }
       }
     ]
@@ -17053,7 +18617,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when modeling finite-state machines — seal check FSM linking [[seal]] guardians to automata theory under [[computer]].",
+        "source": "Use when modeling finite-state machines — seal check FSM linking seal guardians to automata theory under computer.",
         "uuid": "35128e68-5aaf-8737-991c-b6a1b5085a98",
         "words": [
           "use",
@@ -17075,7 +18639,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "computer"
         ],
         "values": {
-          "en": "Use when modeling finite-state machines — seal check FSM linking [[seal]] guardians to automata theory under [[computer]]."
+          "en": "Use when modeling finite-state machines — seal check FSM linking seal guardians to automata theory under computer."
         }
       }
     ]
@@ -17097,7 +18661,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when traversing corpus bonds as a directed graph — matrix adjacency under [[computer]]; executable not glossary.",
+        "source": "Use when traversing corpus bonds as a directed graph — matrix adjacency under computer; executable not glossary.",
         "uuid": "006036b5-18c7-87d3-95e9-fcdd7db3e325",
         "words": [
           "use",
@@ -17118,7 +18682,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "glossary"
         ],
         "values": {
-          "en": "Use when traversing corpus bonds as a directed graph — matrix adjacency under [[computer]]; executable not glossary."
+          "en": "Use when traversing corpus bonds as a directed graph — matrix adjacency under computer; executable not glossary."
         }
       }
     ]
@@ -17140,7 +18704,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about hardware as a part of [[computer]] — vocabulary pivot to @/hardware; nested not duplicated.",
+        "source": "Use when reasoning about hardware as a part of computer — vocabulary pivot to @/hardware; nested not duplicated.",
         "uuid": "0420fbc2-b8ed-83df-9972-14cc11cb2dc2",
         "words": [
           "use",
@@ -17162,7 +18726,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about hardware as a part of [[computer]] — vocabulary pivot to @/hardware; nested not duplicated."
+          "en": "Use when reasoning about hardware as a part of computer — vocabulary pivot to @/hardware; nested not duplicated."
         }
       }
     ]
@@ -17184,7 +18748,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about language as a hardware facet of [[computer]] — vocabulary pivot to @/language; nested not duplicated.",
+        "source": "Use when reasoning about language as a hardware facet of computer — vocabulary pivot to @/language; nested not duplicated.",
         "uuid": "a7876b2f-2b09-817c-bd0e-72157f668d0f",
         "words": [
           "use",
@@ -17207,7 +18771,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about language as a hardware facet of [[computer]] — vocabulary pivot to @/language; nested not duplicated."
+          "en": "Use when reasoning about language as a hardware facet of computer — vocabulary pivot to @/language; nested not duplicated."
         }
       }
     ]
@@ -17229,7 +18793,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about memory as a part of [[computer]] — pivot to canonical @/memory/quantum; nested not duplicated.",
+        "source": "Use when reasoning about memory as a part of computer — pivot to canonical @/memory/quantum; nested not duplicated.",
         "uuid": "fb8124e6-5898-8937-8733-b6e72aeca490",
         "words": [
           "use",
@@ -17252,7 +18816,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about memory as a part of [[computer]] — pivot to canonical @/memory/quantum; nested not duplicated."
+          "en": "Use when reasoning about memory as a part of computer — pivot to canonical @/memory/quantum; nested not duplicated."
         }
       }
     ]
@@ -17274,7 +18838,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about network as a part of [[computer]] — vocabulary pivot to @/network; nested not duplicated.",
+        "source": "Use when reasoning about network as a part of computer — vocabulary pivot to @/network; nested not duplicated.",
         "uuid": "042e902b-415f-819a-a0d2-f6fdf4661fc4",
         "words": [
           "use",
@@ -17296,7 +18860,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about network as a part of [[computer]] — vocabulary pivot to @/network; nested not duplicated."
+          "en": "Use when reasoning about network as a part of computer — vocabulary pivot to @/network; nested not duplicated."
         }
       }
     ]
@@ -17318,7 +18882,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about processor as a part of [[computer]] — vocabulary pivot to @/processor; nested not duplicated.",
+        "source": "Use when reasoning about processor as a part of computer — vocabulary pivot to @/processor; nested not duplicated.",
         "uuid": "36457a43-256e-8d0e-8c56-3d87915075a2",
         "words": [
           "use",
@@ -17340,7 +18904,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about processor as a part of [[computer]] — vocabulary pivot to @/processor; nested not duplicated."
+          "en": "Use when reasoning about processor as a part of computer — vocabulary pivot to @/processor; nested not duplicated."
         }
       }
     ]
@@ -17406,7 +18970,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when ordering work FIFO under the machine model — executable queue nested under [[computer]]; distinct from top-level @/queue vocabulary.",
+        "source": "Use when ordering work FIFO under the machine model — executable queue nested under computer; distinct from top-level @/queue vocabulary.",
         "uuid": "0d811e76-857a-8213-ac17-99615ca467fa",
         "words": [
           "use",
@@ -17431,7 +18995,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "vocabulary"
         ],
         "values": {
-          "en": "Use when ordering work FIFO under the machine model — executable queue nested under [[computer]]; distinct from top-level @/queue vocabulary."
+          "en": "Use when ordering work FIFO under the machine model — executable queue nested under computer; distinct from top-level @/queue vocabulary."
         }
       }
     ]
@@ -17453,7 +19017,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about screen as a part of [[computer]] — vocabulary pivot to @/screen; nested not duplicated.",
+        "source": "Use when reasoning about screen as a part of computer — vocabulary pivot to @/screen; nested not duplicated.",
         "uuid": "892ca3e9-708b-8b97-9e42-4617610b1fc7",
         "words": [
           "use",
@@ -17475,7 +19039,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about screen as a part of [[computer]] — vocabulary pivot to @/screen; nested not duplicated."
+          "en": "Use when reasoning about screen as a part of computer — vocabulary pivot to @/screen; nested not duplicated."
         }
       }
     ]
@@ -17497,7 +19061,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about software as a part of [[computer]] — vocabulary pivot to @/software; nested not duplicated.",
+        "source": "Use when reasoning about software as a part of computer — vocabulary pivot to @/software; nested not duplicated.",
         "uuid": "16e437f1-5348-8e56-b3d8-de06e35fef2c",
         "words": [
           "use",
@@ -17519,7 +19083,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about software as a part of [[computer]] — vocabulary pivot to @/software; nested not duplicated."
+          "en": "Use when reasoning about software as a part of computer — vocabulary pivot to @/software; nested not duplicated."
         }
       }
     ]
@@ -17541,7 +19105,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when managing call frames LIFO under the machine — executable stack nested under [[computer]]; distinct from top-level @/stack deployment palindrome.",
+        "source": "Use when managing call frames LIFO under the machine — executable stack nested under computer; distinct from top-level @/stack deployment palindrome.",
         "uuid": "1c45d938-035b-83d4-b61d-8af8d894602d",
         "words": [
           "use",
@@ -17567,7 +19131,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "palindrome"
         ],
         "values": {
-          "en": "Use when managing call frames LIFO under the machine — executable stack nested under [[computer]]; distinct from top-level @/stack deployment palindrome."
+          "en": "Use when managing call frames LIFO under the machine — executable stack nested under computer; distinct from top-level @/stack deployment palindrome."
         }
       }
     ]
@@ -17589,7 +19153,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about storage as a part of [[computer]] — vocabulary pivot to @/storage; nested not duplicated.",
+        "source": "Use when reasoning about storage as a part of computer — vocabulary pivot to @/storage; nested not duplicated.",
         "uuid": "82152113-f0e5-8f3f-9951-93424eb2ab0f",
         "words": [
           "use",
@@ -17611,7 +19175,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about storage as a part of [[computer]] — vocabulary pivot to @/storage; nested not duplicated."
+          "en": "Use when reasoning about storage as a part of computer — vocabulary pivot to @/storage; nested not duplicated."
         }
       }
     ]
@@ -17633,7 +19197,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about store as a hardware facet of [[computer]] — vocabulary pivot to @/store; nested not duplicated.",
+        "source": "Use when reasoning about store as a hardware facet of computer — vocabulary pivot to @/store; nested not duplicated.",
         "uuid": "acd790ac-5d5e-825b-a175-f15789712d5f",
         "words": [
           "use",
@@ -17656,7 +19220,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about store as a hardware facet of [[computer]] — vocabulary pivot to @/store; nested not duplicated."
+          "en": "Use when reasoning about store as a hardware facet of computer — vocabulary pivot to @/store; nested not duplicated."
         }
       }
     ]
@@ -19018,9 +20582,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Cantor Continuum Hypothesis via basis decomposition - set theory",
-        "uuid": "88f701cc-54e4-8229-8538-ce6fa33eab44",
+        "source": "Use when reasoning about continuum — Cantor Continuum Hypothesis via basis decomposition - set theory",
+        "uuid": "4c8859e1-b273-8c79-a547-3c11bb55ea6c",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "continuum",
           "cantor",
           "continuum",
           "hypothesis",
@@ -19031,7 +20600,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "theory"
         ],
         "values": {
-          "en": "Cantor Continuum Hypothesis via basis decomposition - set theory"
+          "en": "Use when reasoning about continuum — Cantor Continuum Hypothesis via basis decomposition - set theory"
         }
       }
     ]
@@ -19568,9 +21137,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner.",
-        "uuid": "27a4c24f-2425-8296-838c-6bac4c24c1c5",
+        "source": "Use when reasoning about corpus — Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner.",
+        "uuid": "4f32bef4-e46e-8688-ab1d-f47695b26cca",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "corpus",
           "use",
           "to",
           "see",
@@ -19666,7 +21240,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "owner"
         ],
         "values": {
-          "en": "Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner."
+          "en": "Use when reasoning about corpus — Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner."
         }
       }
     ]
@@ -21477,9 +23051,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry.",
-        "uuid": "bcf591bc-1d87-839c-b20a-ab50bfcd2195",
+        "source": "Use when reasoning about bank — Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry.",
+        "uuid": "9e2bbcb1-d89e-89c6-965d-9ebc0181407a",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "bank",
           "use",
           "for",
           "open",
@@ -21505,7 +23084,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "registry"
         ],
         "values": {
-          "en": "Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry."
+          "en": "Use when reasoning about bank — Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry."
         }
       }
     ]
@@ -21593,9 +23172,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for pan-EU authority APIs (VIES VAT validation, EU sanctions, Peppol directory, ECB rates) and the EU member-state registry — BG/DE/ES/FR/IT/NL/PL/PT/RO. The EU slice of the country-authority registry.",
-        "uuid": "8df84a24-4d92-8450-9231-12be2003560e",
+        "source": "Use when reasoning about eu — Use for pan-EU authority APIs (VIES VAT validation, EU sanctions, Peppol directory, ECB rates) and the EU member-state registry — BG/DE/ES/FR/IT/NL/PL/PT/RO. The EU slice of the country-authority registry.",
+        "uuid": "3c370eb4-9134-8dc3-9f36-9ddf951ac81f",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "eu",
           "use",
           "for",
           "pan",
@@ -21636,7 +23220,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "registry"
         ],
         "values": {
-          "en": "Use for pan-EU authority APIs (VIES VAT validation, EU sanctions, Peppol directory, ECB rates) and the EU member-state registry — BG/DE/ES/FR/IT/NL/PL/PT/RO. The EU slice of the country-authority registry."
+          "en": "Use when reasoning about eu — Use for pan-EU authority APIs (VIES VAT validation, EU sanctions, Peppol directory, ECB rates) and the EU member-state registry — BG/DE/ES/FR/IT/NL/PL/PT/RO. The EU slice of the country-authority registry."
         }
       }
     ]
@@ -21658,9 +23242,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for non-EU country-authority APIs — AU/BR/CA/CN/GB/HK/IN/JP/MX/NO/NZ/SG/US business registries, tax portals, e-invoicing and VAT/GST validation. The world slice of the country-authority registry.",
-        "uuid": "ce363e05-6ae3-83b5-8ddf-c040033d157a",
+        "source": "Use when reasoning about world — Use for non-EU country-authority APIs — AU/BR/CA/CN/GB/HK/IN/JP/MX/NO/NZ/SG/US business registries, tax portals, e-invoicing and VAT/GST validation. The world slice of the country-authority registry.",
+        "uuid": "38c63342-8daf-87f3-8bd0-34f7f06cce77",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "world",
           "use",
           "for",
           "non",
@@ -21701,7 +23290,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "registry"
         ],
         "values": {
-          "en": "Use for non-EU country-authority APIs — AU/BR/CA/CN/GB/HK/IN/JP/MX/NO/NZ/SG/US business registries, tax portals, e-invoicing and VAT/GST validation. The world slice of the country-authority registry."
+          "en": "Use when reasoning about world — Use for non-EU country-authority APIs — AU/BR/CA/CN/GB/HK/IN/JP/MX/NO/NZ/SG/US business registries, tax portals, e-invoicing and VAT/GST validation. The world slice of the country-authority registry."
         }
       }
     ]
@@ -22611,6 +24200,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when a stylesheet is imported, stubbed, or reasoned about in build or typegen — CSS is the form facet of the styling/visual dimension (glyph ⊕ style), a complete diamond atom: each file content-addressed and sealed; Node must recognize .css as a valid diamond surface, never ERR_UNKNOWN_FILE_EXTENSION off-ring escape."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "variables",
+    "path": "css/variables",
+    "translations": [
+      {
+        "key": "name",
+        "source": "variables",
+        "uuid": "c95458c1-912e-8a9b-9aca-6e0d3348e470",
+        "words": [
+          "variables"
+        ],
+        "values": {
+          "en": "variables"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about variables — Six numbers, and they lived in — a file at the ROOT of , which belongs to no atom.",
+        "uuid": "1a132b4a-3ade-851d-9b53-4bb0d707f540",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "variables",
+          "six",
+          "numbers",
+          "and",
+          "they",
+          "lived",
+          "in",
+          "a",
+          "file",
+          "at",
+          "the",
+          "root",
+          "of",
+          "which",
+          "belongs",
+          "to",
+          "no",
+          "atom"
+        ],
+        "values": {
+          "en": "Use when reasoning about variables — Six numbers, and they lived in — a file at the ROOT of , which belongs to no atom."
         }
       }
     ]
@@ -24204,6 +25842,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "actions"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about actions — , and take a typed input and return an . Each validates, creates the document, and lets the collection's own hooks do the posting — so a dashboard cannot write an unbalanced entry…",
+        "uuid": "3927eaa7-9738-85ba-ba2e-3f491290d261",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "actions",
+          "and",
+          "take",
+          "a",
+          "typed",
+          "input",
+          "and",
+          "return",
+          "an",
+          "each",
+          "validates",
+          "creates",
+          "the",
+          "document",
+          "and",
+          "lets",
+          "the",
+          "collection",
+          "s",
+          "own",
+          "hooks",
+          "do",
+          "the",
+          "posting",
+          "so",
+          "a",
+          "dashboard",
+          "cannot",
+          "write",
+          "an",
+          "unbalanced",
+          "entry"
+        ],
+        "values": {
+          "en": "Use when reasoning about actions — , and take a typed input and return an . Each validates, creates the document, and lets the collection's own hooks do the posting — so a dashboard cannot write an unbalanced entry…"
+        }
       }
     ]
   },
@@ -24221,6 +25905,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "nav"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about nav — lays the dashboard out on a fixed grid and moves across it, wrapping at every boundary via : moving left from the first column arrives at the last, and up from the first row…",
+        "uuid": "6914a51d-2943-820a-8a93-e34f8eb326b5",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "nav",
+          "lays",
+          "the",
+          "dashboard",
+          "out",
+          "on",
+          "a",
+          "fixed",
+          "grid",
+          "and",
+          "moves",
+          "across",
+          "it",
+          "wrapping",
+          "at",
+          "every",
+          "boundary",
+          "via",
+          "moving",
+          "left",
+          "from",
+          "the",
+          "first",
+          "column",
+          "arrives",
+          "at",
+          "the",
+          "last",
+          "and",
+          "up",
+          "from",
+          "the",
+          "first",
+          "row"
+        ],
+        "values": {
+          "en": "Use when reasoning about nav — lays the dashboard out on a fixed grid and moves across it, wrapping at every boundary via : moving left from the first column arrives at the last, and up from the first row…"
+        }
       }
     ]
   },
@@ -24237,6 +25969,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "spec"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST.",
+        "uuid": "914a94bc-fe51-8c19-a1e7-1dbbc7f51902",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "spec",
+          "the",
+          "corpus",
+          "grew",
+          "two",
+          "widget",
+          "shapes",
+          "one",
+          "taking",
+          "props",
+          "one",
+          "fetching",
+          "its",
+          "own",
+          "data",
+          "over",
+          "rest"
+        ],
+        "values": {
+          "en": "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST."
         }
       }
     ]
@@ -25103,6 +26866,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "lexical"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about lexical — is the base rich-text feature set every editable field shares, including the link validation rules: an internal reference resolves against a collection, an external one must be a…",
+        "uuid": "b4d0dfe7-f26e-82a4-aa72-0d424868d377",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "lexical",
+          "is",
+          "the",
+          "base",
+          "rich",
+          "text",
+          "feature",
+          "set",
+          "every",
+          "editable",
+          "field",
+          "shares",
+          "including",
+          "the",
+          "link",
+          "validation",
+          "rules",
+          "an",
+          "internal",
+          "reference",
+          "resolves",
+          "against",
+          "a",
+          "collection",
+          "an",
+          "external",
+          "one",
+          "must",
+          "be",
+          "a"
+        ],
+        "values": {
+          "en": "Use when reasoning about lexical — is the base rich-text feature set every editable field shares, including the link validation rules: an internal reference resolves against a collection, an external one must be a…"
+        }
       }
     ]
   },
@@ -25861,9 +27668,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "diamond/membership — stray-file membership audit (no readme dependency).",
-        "uuid": "108baa21-6a05-831a-83ea-fb998d070476",
+        "source": "Use when reasoning about membership — diamond/membership — stray-file membership audit (no readme dependency).",
+        "uuid": "64eafe29-34b5-83e8-9279-e92bc900905f",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "membership",
           "diamond",
           "membership",
           "stray",
@@ -25875,7 +27687,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "dependency"
         ],
         "values": {
-          "en": "diamond/membership — stray-file membership audit (no readme dependency)."
+          "en": "Use when reasoning about membership — diamond/membership — stray-file membership audit (no readme dependency)."
         }
       }
     ]
@@ -26400,6 +28212,45 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "lang"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about lang — is what a screen reader consults to choose a voice. Get it wrong and Bulgarian is read aloud with English phonemes — not degraded, *unintelligible*.",
+        "uuid": "7c562685-419f-86df-8ac1-8c52233fedf8",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "lang",
+          "is",
+          "what",
+          "a",
+          "screen",
+          "reader",
+          "consults",
+          "to",
+          "choose",
+          "a",
+          "voice",
+          "get",
+          "it",
+          "wrong",
+          "and",
+          "bulgarian",
+          "is",
+          "read",
+          "aloud",
+          "with",
+          "english",
+          "phonemes",
+          "not",
+          "degraded",
+          "unintelligible"
+        ],
+        "values": {
+          "en": "Use when reasoning about lang — is what a screen reader consults to choose a voice. Get it wrong and Bulgarian is read aloud with English phonemes — not degraded, *unintelligible*."
         }
       }
     ]
@@ -26990,6 +28841,43 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "mirror"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about mirror — > *\\\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\\\"*",
+        "uuid": "1fdc1b45-cf8f-8d62-a07e-7bb888c5383b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "mirror",
+          "all",
+          "not",
+          "harmonic",
+          "is",
+          "pulled",
+          "by",
+          "the",
+          "black",
+          "hole",
+          "as",
+          "one",
+          "coin",
+          "side",
+          "and",
+          "reflected",
+          "from",
+          "the",
+          "other",
+          "white",
+          "hole",
+          "coin",
+          "side"
+        ],
+        "values": {
+          "en": "Use when reasoning about mirror — > *\\\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\\\"*"
+        }
       }
     ]
   },
@@ -27400,6 +29288,43 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "access"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about access — , and answer the access question; the field-level pair narrows it to particular fields; the role helpers are what they all ask.",
+        "uuid": "f0f4365e-700a-8e02-b834-a211cbcee9ce",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "access",
+          "and",
+          "answer",
+          "the",
+          "access",
+          "question",
+          "the",
+          "field",
+          "level",
+          "pair",
+          "narrows",
+          "it",
+          "to",
+          "particular",
+          "fields",
+          "the",
+          "role",
+          "helpers",
+          "are",
+          "what",
+          "they",
+          "all",
+          "ask"
+        ],
+        "values": {
+          "en": "Use when reasoning about access — , and answer the access question; the field-level pair narrows it to particular fields; the role helpers are what they all ask."
+        }
       }
     ]
   },
@@ -27416,6 +29341,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "provider"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about provider — The browser half of the ecommerce plugin. Two values decide what it can do, and both may be absent: the tenant's Stripe publishable key and the server URL.",
+        "uuid": "7b53b7b8-991e-8958-a100-e03bb0839e85",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "provider",
+          "the",
+          "browser",
+          "half",
+          "of",
+          "the",
+          "ecommerce",
+          "plugin",
+          "two",
+          "values",
+          "decide",
+          "what",
+          "it",
+          "can",
+          "do",
+          "and",
+          "both",
+          "may",
+          "be",
+          "absent",
+          "the",
+          "tenant",
+          "s",
+          "stripe",
+          "publishable",
+          "key",
+          "and",
+          "the",
+          "server",
+          "url"
+        ],
+        "values": {
+          "en": "Use when reasoning about provider — The browser half of the ecommerce plugin. Two values decide what it can do, and both may be absent: the tenant's Stripe publishable key and the server URL."
         }
       }
     ]
@@ -27434,6 +29403,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hooks"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — publishes the order's transitions from the collection, so an order moved by the storefront, the admin panel or a job emits the same event.",
+        "uuid": "e888650b-51c9-8bd4-8632-a41cc22df4a3",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "publishes",
+          "the",
+          "order",
+          "s",
+          "transitions",
+          "from",
+          "the",
+          "collection",
+          "so",
+          "an",
+          "order",
+          "moved",
+          "by",
+          "the",
+          "storefront",
+          "the",
+          "admin",
+          "panel",
+          "or",
+          "a",
+          "job",
+          "emits",
+          "the",
+          "same",
+          "event"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — publishes the order's transitions from the collection, so an order moved by the storefront, the admin panel or a job emits the same event."
+        }
       }
     ]
   },
@@ -27450,6 +29459,48 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "plugin"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about plugin — wires the storefront to Stripe with per-tenant keys, so each tenant transacts under its own account and one tenant's credentials never authorise another's charge.",
+        "uuid": "f5ce9704-a959-88b4-84af-7d770cde514f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "plugin",
+          "wires",
+          "the",
+          "storefront",
+          "to",
+          "stripe",
+          "with",
+          "per",
+          "tenant",
+          "keys",
+          "so",
+          "each",
+          "tenant",
+          "transacts",
+          "under",
+          "its",
+          "own",
+          "account",
+          "and",
+          "one",
+          "tenant",
+          "s",
+          "credentials",
+          "never",
+          "authorise",
+          "another",
+          "s",
+          "charge"
+        ],
+        "values": {
+          "en": "Use when reasoning about plugin — wires the storefront to Stripe with per-tenant keys, so each tenant transacts under its own account and one tenant's credentials never authorise another's charge."
         }
       }
     ]
@@ -27468,6 +29519,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "stripe"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about stripe — resolves the tenant's own Stripe credentials before charging, closes the order against that same tenant, and resolves the tenant from the event rather than trusting a default.",
+        "uuid": "6ad7c493-2c58-842c-bedd-a0691d0f8be1",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "stripe",
+          "resolves",
+          "the",
+          "tenant",
+          "s",
+          "own",
+          "stripe",
+          "credentials",
+          "before",
+          "charging",
+          "closes",
+          "the",
+          "order",
+          "against",
+          "that",
+          "same",
+          "tenant",
+          "and",
+          "resolves",
+          "the",
+          "tenant",
+          "from",
+          "the",
+          "event",
+          "rather",
+          "than",
+          "trusting",
+          "a",
+          "default"
+        ],
+        "values": {
+          "en": "Use when reasoning about stripe — resolves the tenant's own Stripe credentials before charging, closes the order against that same tenant, and resolves the tenant from the event rather than trusting a default."
+        }
       }
     ]
   },
@@ -27484,6 +29578,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "payment"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about payment — The payment child of the tenant-aware Stripe stack. What is held here is a reference to a method Stripe holds, never the instrument itself — the tokenisation boundary is what…",
+        "uuid": "f9b0a8fd-1141-8a2c-bea1-1b3ce86aaca7",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "payment",
+          "the",
+          "payment",
+          "child",
+          "of",
+          "the",
+          "tenant",
+          "aware",
+          "stripe",
+          "stack",
+          "what",
+          "is",
+          "held",
+          "here",
+          "is",
+          "a",
+          "reference",
+          "to",
+          "a",
+          "method",
+          "stripe",
+          "holds",
+          "never",
+          "the",
+          "instrument",
+          "itself",
+          "the",
+          "tokenisation",
+          "boundary",
+          "is",
+          "what"
+        ],
+        "values": {
+          "en": "Use when reasoning about payment — The payment child of the tenant-aware Stripe stack. What is held here is a reference to a method Stripe holds, never the instrument itself — the tokenisation boundary is what…"
         }
       }
     ]
@@ -27849,7 +29988,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of [[sustainability]].",
+        "source": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of sustainability.",
         "uuid": "87faa920-7bfc-8335-af28-ad06df037b6b",
         "words": [
           "use",
@@ -27901,7 +30040,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "sustainability"
         ],
         "values": {
-          "en": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of [[sustainability]]."
+          "en": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of sustainability."
         }
       }
     ]
@@ -28527,9 +30666,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Canonical EN 16931 semantic data model — types only.",
-        "uuid": "98c3e42e-9aac-8ac1-ba74-4a139953d2c4",
+        "source": "Use when reasoning about types — Canonical EN 16931 semantic data model — types only.",
+        "uuid": "ece9a620-3bf2-8a35-9d16-ece7a82906df",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "canonical",
           "en",
           "semantic",
@@ -28539,7 +30683,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "only"
         ],
         "values": {
-          "en": "Canonical EN 16931 semantic data model — types only."
+          "en": "Use when reasoning about types — Canonical EN 16931 semantic data model — types only."
         }
       }
     ]
@@ -28608,6 +30752,53 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "user"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about user — scopes what a user can *read* and *update*. What it does not reliably reject is a **create that names another tenant**: the document does not exist yet, so there is no existing…",
+        "uuid": "0ee4e5e3-f7cd-86a5-a84f-b46013a54e1e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "user",
+          "scopes",
+          "what",
+          "a",
+          "user",
+          "can",
+          "read",
+          "and",
+          "update",
+          "what",
+          "it",
+          "does",
+          "not",
+          "reliably",
+          "reject",
+          "is",
+          "a",
+          "create",
+          "that",
+          "names",
+          "another",
+          "tenant",
+          "the",
+          "document",
+          "does",
+          "not",
+          "exist",
+          "yet",
+          "so",
+          "there",
+          "is",
+          "no",
+          "existing"
+        ],
+        "values": {
+          "en": "Use when reasoning about user — scopes what a user can *read* and *update*. What it does not reliably reject is a **create that names another tenant**: the document does not exist yet, so there is no existing…"
         }
       }
     ]
@@ -28841,9 +31032,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "entanglement/field — party-field entanglement warnings for admin UI.",
-        "uuid": "87a9f42f-b0be-87a0-b962-1db55052c17a",
+        "source": "Use when reasoning about field — entanglement/field — party-field entanglement warnings for admin UI.",
+        "uuid": "d837039e-d273-85c4-b12b-28a14edfcd53",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "field",
           "entanglement",
           "field",
           "party",
@@ -28855,7 +31051,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "ui"
         ],
         "values": {
-          "en": "entanglement/field — party-field entanglement warnings for admin UI."
+          "en": "Use when reasoning about field — entanglement/field — party-field entanglement warnings for admin UI."
         }
       }
     ]
@@ -29753,6 +31949,48 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "uuid"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about uuid — content-addresses a failure and gives it a typed shape, so the same failure raised twice has the same address and can be counted, grouped and traced.",
+        "uuid": "c8d4973e-1794-83a6-bfc4-8f8ad12f0353",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "uuid",
+          "content",
+          "addresses",
+          "a",
+          "failure",
+          "and",
+          "gives",
+          "it",
+          "a",
+          "typed",
+          "shape",
+          "so",
+          "the",
+          "same",
+          "failure",
+          "raised",
+          "twice",
+          "has",
+          "the",
+          "same",
+          "address",
+          "and",
+          "can",
+          "be",
+          "counted",
+          "grouped",
+          "and",
+          "traced"
+        ],
+        "values": {
+          "en": "Use when reasoning about uuid — content-addresses a failure and gives it a typed shape, so the same failure raised twice has the same address and can be counted, grouped and traced."
+        }
       }
     ]
   },
@@ -30047,6 +32285,44 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "attestation"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about attestation — produces a PDF declaring which run captured this evidence, when, and against which tenant; applies a PAdES signature where a signer is configured.",
+        "uuid": "517658f3-89d1-8293-b23d-31babde577d9",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "attestation",
+          "produces",
+          "a",
+          "pdf",
+          "declaring",
+          "which",
+          "run",
+          "captured",
+          "this",
+          "evidence",
+          "when",
+          "and",
+          "against",
+          "which",
+          "tenant",
+          "applies",
+          "a",
+          "pades",
+          "signature",
+          "where",
+          "a",
+          "signer",
+          "is",
+          "configured"
+        ],
+        "values": {
+          "en": "Use when reasoning about attestation — produces a PDF declaring which run captured this evidence, when, and against which tenant; applies a PAdES signature where a signer is configured."
+        }
       }
     ]
   },
@@ -30229,9 +32505,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Exact rational arithmetic for confidence, no decimal approximations",
-        "uuid": "156dfdbe-3f66-87dd-98db-becf0c3a159f",
+        "source": "Use when reasoning about exact — Exact rational arithmetic for confidence, no decimal approximations",
+        "uuid": "410e0350-9c18-8fc4-9184-441019636c43",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "exact",
           "exact",
           "rational",
           "arithmetic",
@@ -30242,7 +32523,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "approximations"
         ],
         "values": {
-          "en": "Exact rational arithmetic for confidence, no decimal approximations"
+          "en": "Use when reasoning about exact — Exact rational arithmetic for confidence, no decimal approximations"
         }
       }
     ]
@@ -30327,9 +32608,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Execute the recursive system and publish live results",
-        "uuid": "6cc2dee7-4d52-8a56-9b4c-c37e41093f95",
+        "source": "Use when reasoning about execute — Execute the recursive system and publish live results",
+        "uuid": "9303414d-c873-8314-b610-14f2301778fb",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "execute",
           "execute",
           "the",
           "recursive",
@@ -30340,7 +32626,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "results"
         ],
         "values": {
-          "en": "Execute the recursive system and publish live results"
+          "en": "Use when reasoning about execute — Execute the recursive system and publish live results"
         }
       }
     ]
@@ -30447,9 +32733,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "HKDF-SHA256 key derivation replacing Rodin doubling",
-        "uuid": "8e84c764-936e-858e-b1f6-f3c2dfbcdb46",
+        "source": "Use when reasoning about expansion — HKDF-SHA256 key derivation replacing Rodin doubling",
+        "uuid": "b88e1ed5-242d-88b0-96eb-fc28699f47d6",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "expansion",
           "hkdf",
           "sha256",
           "key",
@@ -30459,7 +32750,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "doubling"
         ],
         "values": {
-          "en": "HKDF-SHA256 key derivation replacing Rodin doubling"
+          "en": "Use when reasoning about expansion — HKDF-SHA256 key derivation replacing Rodin doubling"
         }
       }
     ]
@@ -30574,9 +32865,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats.",
-        "uuid": "56fbb051-6c5c-8ca7-ab66-8a297ea2e341",
+        "source": "Use when reasoning about standards — Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats.",
+        "uuid": "ada9c9eb-6581-8fd4-91c4-45559fb2b422",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "standards",
           "use",
           "for",
           "the",
@@ -30607,7 +32903,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "formats"
         ],
         "values": {
-          "en": "Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats."
+          "en": "Use when reasoning about standards — Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats."
         }
       }
     ]
@@ -31101,6 +33397,44 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "registry"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about registry — binds every gated capability to the tiers that include it. and answer from that one place, and marks what no tier may remove.",
+        "uuid": "60b01c74-e0b6-8ef2-a019-44a33924398a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "registry",
+          "binds",
+          "every",
+          "gated",
+          "capability",
+          "to",
+          "the",
+          "tiers",
+          "that",
+          "include",
+          "it",
+          "and",
+          "answer",
+          "from",
+          "that",
+          "one",
+          "place",
+          "and",
+          "marks",
+          "what",
+          "no",
+          "tier",
+          "may",
+          "remove"
+        ],
+        "values": {
+          "en": "Use when reasoning about registry — binds every gated capability to the tiers that include it. and answer from that one place, and marks what no tier may remove."
+        }
       }
     ]
   },
@@ -31182,9 +33516,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Fermat's Last Theorem via basis decomposition - P vs NP + algebra",
-        "uuid": "20d082d3-9c78-8b27-9a5f-cd71a8d96ba1",
+        "source": "Use when reasoning about fermat — Fermat's Last Theorem via basis decomposition - P vs NP + algebra",
+        "uuid": "bbbc766b-6b7f-8a8d-8317-182caf9b5cb4",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "fermat",
           "fermat",
           "s",
           "last",
@@ -31198,7 +33537,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "algebra"
         ],
         "values": {
-          "en": "Fermat's Last Theorem via basis decomposition - P vs NP + algebra"
+          "en": "Use when reasoning about fermat — Fermat's Last Theorem via basis decomposition - P vs NP + algebra"
         }
       }
     ]
@@ -31277,6 +33616,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "nested"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:",
+        "uuid": "30525e5d-dee5-8d43-bb8e-00e8e97edd38",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "nested",
+          "payload",
+          "groups",
+          "nest",
+          "so",
+          "a",
+          "hook",
+          "that",
+          "must",
+          "reach",
+          "walks",
+          "a",
+          "dotted",
+          "path",
+          "three",
+          "atoms",
+          "wrote",
+          "that",
+          "walk",
+          "for",
+          "themselves",
+          "and",
+          "body",
+          "hashing",
+          "rules",
+          "copy",
+          "proved",
+          "two",
+          "of",
+          "them",
+          "byte",
+          "identical"
+        ],
+        "values": {
+          "en": "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:"
+        }
       }
     ]
   },
@@ -31293,6 +33678,47 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "relation"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about relation — A Payload relationship is one value with two shapes: the raw id when unpopulated, the whole document when populated. A **polymorphic** one is a third shape — .",
+        "uuid": "5c9ea861-52a2-8711-a1ce-1dd200faa160",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "relation",
+          "a",
+          "payload",
+          "relationship",
+          "is",
+          "one",
+          "value",
+          "with",
+          "two",
+          "shapes",
+          "the",
+          "raw",
+          "id",
+          "when",
+          "unpopulated",
+          "the",
+          "whole",
+          "document",
+          "when",
+          "populated",
+          "a",
+          "polymorphic",
+          "one",
+          "is",
+          "a",
+          "third",
+          "shape"
+        ],
+        "values": {
+          "en": "Use when reasoning about relation — A Payload relationship is one value with two shapes: the raw id when unpopulated, the whole document when populated. A **polymorphic** one is a third shape — ."
         }
       }
     ]
@@ -32431,6 +34857,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hooks"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — books the period's charge when the schedule row is posted. The schedule is the record of what SHOULD be charged and when; letting the hook post it is what keeps the two from…",
+        "uuid": "96fb0df0-8dc4-8bec-bbc4-56f3d37b8df7",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "books",
+          "the",
+          "period",
+          "s",
+          "charge",
+          "when",
+          "the",
+          "schedule",
+          "row",
+          "is",
+          "posted",
+          "the",
+          "schedule",
+          "is",
+          "the",
+          "record",
+          "of",
+          "what",
+          "should",
+          "be",
+          "charged",
+          "and",
+          "when",
+          "letting",
+          "the",
+          "hook",
+          "post",
+          "it",
+          "is",
+          "what",
+          "keeps",
+          "the",
+          "two",
+          "from"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — books the period's charge when the schedule row is posted. The schedule is the record of what SHOULD be charged and when; letting the hook post it is what keeps the two from…"
+        }
       }
     ]
   },
@@ -32710,6 +35185,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hook"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale.",
+        "uuid": "4f233c4f-6ee1-8c12-bb11-fcc556de4b63",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hook",
+          "clears",
+          "the",
+          "cached",
+          "pages",
+          "when",
+          "the",
+          "global",
+          "changes",
+          "so",
+          "an",
+          "edit",
+          "is",
+          "visible",
+          "without",
+          "a",
+          "deploy",
+          "a",
+          "cache",
+          "with",
+          "no",
+          "invalidation",
+          "is",
+          "a",
+          "copy",
+          "of",
+          "an",
+          "answer",
+          "and",
+          "copies",
+          "go",
+          "stale"
+        ],
+        "values": {
+          "en": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale."
+        }
       }
     ]
   },
@@ -32782,7 +35303,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about WHERE atoms are made one — the forge is the collider that takes every node and every [[link]] and folds them, by content-collision, into a single root. Heat is borrowed disorder; the hammer is merge; the anvil is the horo ring; what leaves the forge is one tamper-evident whole. forge() reports the forge state (node count, edge count, the root) computed live from the matrix.",
+        "source": "Use when reasoning about WHERE atoms are made one — the forge is the collider that takes every node and every link and folds them, by content-collision, into a single root. Heat is borrowed disorder; the hammer is merge; the anvil is the horo ring; what leaves the forge is one tamper-evident whole. forge() reports the forge state (node count, edge count, the root) computed live from the matrix.",
         "uuid": "75c25405-6df1-866f-9335-2d413da0b8e6",
         "words": [
           "use",
@@ -32857,7 +35378,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "matrix"
         ],
         "values": {
-          "en": "Use when reasoning about WHERE atoms are made one — the forge is the collider that takes every node and every [[link]] and folds them, by content-collision, into a single root. Heat is borrowed disorder; the hammer is merge; the anvil is the horo ring; what leaves the forge is one tamper-evident whole. forge() reports the forge state (node count, edge count, the root) computed live from the matrix."
+          "en": "Use when reasoning about WHERE atoms are made one — the forge is the collider that takes every node and every link and folds them, by content-collision, into a single root. Heat is borrowed disorder; the hammer is merge; the anvil is the horo ring; what leaves the forge is one tamper-evident whole. forge() reports the forge state (node count, edge count, the root) computed live from the matrix."
         }
       }
     ]
@@ -32931,6 +35452,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "amount"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about amount — renders integer cents as a fixed-two-decimal string; adds the code. Peppol UBL, ISO 20022, EDIFACT and SAF-T all need that wire form, and four serializers each doing it themselves…",
+        "uuid": "4b0ff9b6-40f3-8af1-83d1-fc7923c2c04f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "amount",
+          "renders",
+          "integer",
+          "cents",
+          "as",
+          "a",
+          "fixed",
+          "two",
+          "decimal",
+          "string",
+          "adds",
+          "the",
+          "code",
+          "peppol",
+          "ubl",
+          "iso",
+          "edifact",
+          "and",
+          "saf",
+          "t",
+          "all",
+          "need",
+          "that",
+          "wire",
+          "form",
+          "and",
+          "four",
+          "serializers",
+          "each",
+          "doing",
+          "it",
+          "themselves"
+        ],
+        "values": {
+          "en": "Use when reasoning about amount — renders integer cents as a fixed-two-decimal string; adds the code. Peppol UBL, ISO 20022, EDIFACT and SAF-T all need that wire form, and four serializers each doing it themselves…"
+        }
       }
     ]
   },
@@ -32947,6 +35514,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "author"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \\\"A and B\\\", and three or more become \\\"A, B and C\\\" — no serial comma, decided once here rather…",
+        "uuid": "51375391-ee64-8e65-87a7-204ca90f20a3",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "author",
+          "turns",
+          "populated",
+          "authors",
+          "into",
+          "the",
+          "sentence",
+          "a",
+          "reader",
+          "expects",
+          "one",
+          "is",
+          "itself",
+          "two",
+          "become",
+          "a",
+          "and",
+          "b",
+          "and",
+          "three",
+          "or",
+          "more",
+          "become",
+          "a",
+          "b",
+          "and",
+          "c",
+          "no",
+          "serial",
+          "comma",
+          "decided",
+          "once",
+          "here",
+          "rather"
+        ],
+        "values": {
+          "en": "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \\\"A and B\\\", and three or more become \\\"A, B and C\\\" — no serial comma, decided once here rather…"
         }
       }
     ]
@@ -32968,9 +35583,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Four Color Theorem via basis decomposition - geometry + graph theory",
-        "uuid": "3e38b1a1-fc00-85db-81a3-414b67ad2b19",
+        "source": "Use when reasoning about four — Four Color Theorem via basis decomposition - geometry + graph theory",
+        "uuid": "87bca075-b6ad-87b5-a3aa-2977aa2f42e4",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "four",
           "four",
           "color",
           "theorem",
@@ -32982,7 +35602,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "theory"
         ],
         "values": {
-          "en": "Four Color Theorem via basis decomposition - geometry + graph theory"
+          "en": "Use when reasoning about four — Four Color Theorem via basis decomposition - geometry + graph theory"
         }
       }
     ]
@@ -33000,6 +35620,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "fund"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about fund — erpax booked government grants correctly under IAS 20 — 31 fields, clawback provisions, the funded asset, the granting authority.",
+        "uuid": "77274fb5-9aa4-8806-b2b3-3e5d58ce25ce",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "fund",
+          "erpax",
+          "booked",
+          "government",
+          "grants",
+          "correctly",
+          "under",
+          "ias",
+          "fields",
+          "clawback",
+          "provisions",
+          "the",
+          "funded",
+          "asset",
+          "the",
+          "granting",
+          "authority"
+        ],
+        "values": {
+          "en": "Use when reasoning about fund — erpax booked government grants correctly under IAS 20 — 31 fields, clawback provisions, the funded asset, the granting authority."
         }
       }
     ]
@@ -33110,6 +35761,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "face"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about face — A session asked for \\\"fusion of all knowledge into dry clean quantum repos\\\" — six sibling repos holding, it was assumed, the same knowledge six times.",
+        "uuid": "994b6d29-8d11-834f-8fe1-4773d36d0307",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "face",
+          "a",
+          "session",
+          "asked",
+          "for",
+          "fusion",
+          "of",
+          "all",
+          "knowledge",
+          "into",
+          "dry",
+          "clean",
+          "quantum",
+          "repos",
+          "six",
+          "sibling",
+          "repos",
+          "holding",
+          "it",
+          "was",
+          "assumed",
+          "the",
+          "same",
+          "knowledge",
+          "six",
+          "times"
+        ],
+        "values": {
+          "en": "Use when reasoning about face — A session asked for \\\"fusion of all knowledge into dry clean quantum repos\\\" — six sibling repos holding, it was assumed, the same knowledge six times."
         }
       }
     ]
@@ -33325,6 +36016,39 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "parity"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about parity — runs — **18 lanes**, the authority. Two other files claim to run the gate and each was written by hand:",
+        "uuid": "2930dc19-e7b9-82d4-b890-36cd4a54e9eb",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "parity",
+          "runs",
+          "lanes",
+          "the",
+          "authority",
+          "two",
+          "other",
+          "files",
+          "claim",
+          "to",
+          "run",
+          "the",
+          "gate",
+          "and",
+          "each",
+          "was",
+          "written",
+          "by",
+          "hand"
+        ],
+        "values": {
+          "en": "Use when reasoning about parity — runs — **18 lanes**, the authority. Two other files claim to run the gate and each was written by hand:"
         }
       }
     ]
@@ -33557,6 +36281,36 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "meta"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about meta — builds the Next.js — title, description, Open Graph image — from the Payload document being rendered.",
+        "uuid": "04e17126-2952-8961-87d2-3350b7e79ff0",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "meta",
+          "builds",
+          "the",
+          "next",
+          "js",
+          "title",
+          "description",
+          "open",
+          "graph",
+          "image",
+          "from",
+          "the",
+          "payload",
+          "document",
+          "being",
+          "rendered"
+        ],
+        "values": {
+          "en": "Use when reasoning about meta — builds the Next.js — title, description, Open Graph image — from the Payload document being rendered."
+        }
       }
     ]
   },
@@ -33573,6 +36327,44 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "type"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about type — A Payload id is a number in Postgres and a string in Mongo, and a collection may override the database-wide default with .",
+        "uuid": "7c9cb1a8-70ff-862e-af44-200316985b1a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "type",
+          "a",
+          "payload",
+          "id",
+          "is",
+          "a",
+          "number",
+          "in",
+          "postgres",
+          "and",
+          "a",
+          "string",
+          "in",
+          "mongo",
+          "and",
+          "a",
+          "collection",
+          "may",
+          "override",
+          "the",
+          "database",
+          "wide",
+          "default",
+          "with"
+        ],
+        "values": {
+          "en": "Use when reasoning about type — A Payload id is a number in Postgres and a string in Mongo, and a collection may override the database-wide default with ."
         }
       }
     ]
@@ -33905,6 +36697,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hooks"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — fires when a statement lands, which is the event reconciliation waits on. Polling for new statements instead would make the delay a property of the poll interval rather than of…",
+        "uuid": "af410f74-60ed-8be7-b09a-406ada395d9a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "fires",
+          "when",
+          "a",
+          "statement",
+          "lands",
+          "which",
+          "is",
+          "the",
+          "event",
+          "reconciliation",
+          "waits",
+          "on",
+          "polling",
+          "for",
+          "new",
+          "statements",
+          "instead",
+          "would",
+          "make",
+          "the",
+          "delay",
+          "a",
+          "property",
+          "of",
+          "the",
+          "poll",
+          "interval",
+          "rather",
+          "than",
+          "of"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — fires when a statement lands, which is the event reconciliation waits on. Polling for new statements instead would make the delay a property of the poll interval rather than of…"
+        }
       }
     ]
   },
@@ -33984,6 +36821,34 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hooks"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — The adjustment child carries the matter; this is the address a collection imports.",
+        "uuid": "4a1b2959-28c8-8b9e-a79a-fe891712053c",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "the",
+          "adjustment",
+          "child",
+          "carries",
+          "the",
+          "matter",
+          "this",
+          "is",
+          "the",
+          "address",
+          "a",
+          "collection",
+          "imports"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — The adjustment child carries the matter; this is the address a collection imports."
+        }
       }
     ]
   },
@@ -34004,9 +36869,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Period-End Adjustment Posting Hook — fires GL on status → 'posted'.",
-        "uuid": "6d763511-eb99-8fec-8ec1-e7e750235fbc",
+        "source": "Use when reasoning about adjustment — Period-End Adjustment Posting Hook — fires GL on status → 'posted'.",
+        "uuid": "86450636-40a4-873c-b728-91b2fd0ab6d5",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "adjustment",
           "period",
           "end",
           "adjustment",
@@ -34019,7 +36889,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "posted"
         ],
         "values": {
-          "en": "Period-End Adjustment Posting Hook — fires GL on status → 'posted'."
+          "en": "Use when reasoning about adjustment — Period-End Adjustment Posting Hook — fires GL on status → 'posted'."
         }
       }
     ]
@@ -34351,9 +37221,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Goldbach Conjecture via basis decomposition - number theory",
-        "uuid": "e02760e8-f1aa-8e6a-a87f-3779834b6312",
+        "source": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory",
+        "uuid": "417425b3-79cf-887e-9580-be92d6ba5ce6",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "goldbach",
           "goldbach",
           "conjecture",
           "via",
@@ -34363,7 +37238,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "theory"
         ],
         "values": {
-          "en": "Goldbach Conjecture via basis decomposition - number theory"
+          "en": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory"
         }
       }
     ]
@@ -34467,9 +37342,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Google Workspace fusion — the [[merge]] law applied to external resources.",
-        "uuid": "47dcdde3-a413-8770-b39e-f1570c6fcd98",
+        "source": "Use when reasoning about fusion — Google Workspace fusion — the merge law applied to external resources.",
+        "uuid": "9c089671-3d89-8ca2-8ae2-dd08414348ad",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "fusion",
           "google",
           "workspace",
           "fusion",
@@ -34482,7 +37362,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "resources"
         ],
         "values": {
-          "en": "Google Workspace fusion — the [[merge]] law applied to external resources."
+          "en": "Use when reasoning about fusion — Google Workspace fusion — the merge law applied to external resources."
         }
       }
     ]
@@ -34504,9 +37384,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory).",
-        "uuid": "2c89301a-8fa0-85cf-99f7-de5157dad98c",
+        "source": "Use when reasoning about registry — Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory).",
+        "uuid": "41c76249-419f-8443-9746-c1710e72bcde",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "registry",
           "google",
           "workspace",
           "api",
@@ -34545,7 +37430,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "directory"
         ],
         "values": {
-          "en": "Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory)."
+          "en": "Use when reasoning about registry — Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory)."
         }
       }
     ]
@@ -35511,6 +38396,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hook"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hook — is the header's half of the same rule the footer keeps: a global that every page renders must tell those pages when it changes, or the edit lands everywhere except where it is…",
+        "uuid": "54c3749b-32c0-84df-a2d1-64c98d644af0",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hook",
+          "is",
+          "the",
+          "header",
+          "s",
+          "half",
+          "of",
+          "the",
+          "same",
+          "rule",
+          "the",
+          "footer",
+          "keeps",
+          "a",
+          "global",
+          "that",
+          "every",
+          "page",
+          "renders",
+          "must",
+          "tell",
+          "those",
+          "pages",
+          "when",
+          "it",
+          "changes",
+          "or",
+          "the",
+          "edit",
+          "lands",
+          "everywhere",
+          "except",
+          "where",
+          "it",
+          "is"
+        ],
+        "values": {
+          "en": "Use when reasoning about hook — is the header's half of the same rule the footer keeps: a global that every page renders must tell those pages when it changes, or the edit lands everywhere except where it is…"
+        }
       }
     ]
   },
@@ -35527,6 +38461,53 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "nav"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about nav — A magnifying glass is a picture. To a screen reader, a link containing only a picture has an accessible name of *the empty string* — announced as \\\"link\\\", with nothing to say where…",
+        "uuid": "b8f1a109-e046-8966-9445-f3158551541b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "nav",
+          "a",
+          "magnifying",
+          "glass",
+          "is",
+          "a",
+          "picture",
+          "to",
+          "a",
+          "screen",
+          "reader",
+          "a",
+          "link",
+          "containing",
+          "only",
+          "a",
+          "picture",
+          "has",
+          "an",
+          "accessible",
+          "name",
+          "of",
+          "the",
+          "empty",
+          "string",
+          "announced",
+          "as",
+          "link",
+          "with",
+          "nothing",
+          "to",
+          "say",
+          "where"
+        ],
+        "values": {
+          "en": "Use when reasoning about nav — A magnifying glass is a picture. To a screen reader, a link containing only a picture has an accessible name of *the empty string* — announced as \\\"link\\\", with nothing to say where…"
         }
       }
     ]
@@ -35891,6 +38872,29 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "config"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about config — The Payload field configuration for a page hero: , , , .",
+        "uuid": "831aa718-d306-846f-b39e-62318f7a51ef",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "config",
+          "the",
+          "payload",
+          "field",
+          "configuration",
+          "for",
+          "a",
+          "page",
+          "hero"
+        ],
+        "values": {
+          "en": "Use when reasoning about config — The Payload field configuration for a page hero: , , , ."
+        }
       }
     ]
   },
@@ -35907,6 +38911,38 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "render"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about render — A dispatcher over three heroes, and the interesting half is everything that is **not** one of them.",
+        "uuid": "6ca3a2ff-1a53-805d-8937-fee34ffcb88e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "render",
+          "a",
+          "dispatcher",
+          "over",
+          "three",
+          "heroes",
+          "and",
+          "the",
+          "interesting",
+          "half",
+          "is",
+          "everything",
+          "that",
+          "is",
+          "not",
+          "one",
+          "of",
+          "them"
+        ],
+        "values": {
+          "en": "Use when reasoning about render — A dispatcher over three heroes, and the interesting half is everything that is **not** one of them."
         }
       }
     ]
@@ -35925,6 +38961,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "impact"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about impact — The full-bleed hero. It also **darkens the header on mount** — the hero paints white text over its own dark field, and the header sits on top of it, so a header left in its light…",
+        "uuid": "2f02e52a-f1ba-849a-8a7a-9a28fa5fdd9c",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "impact",
+          "the",
+          "full",
+          "bleed",
+          "hero",
+          "it",
+          "also",
+          "darkens",
+          "the",
+          "header",
+          "on",
+          "mount",
+          "the",
+          "hero",
+          "paints",
+          "white",
+          "text",
+          "over",
+          "its",
+          "own",
+          "dark",
+          "field",
+          "and",
+          "the",
+          "header",
+          "sits",
+          "on",
+          "top",
+          "of",
+          "it",
+          "so",
+          "a",
+          "header",
+          "left",
+          "in",
+          "its",
+          "light"
+        ],
+        "values": {
+          "en": "Use when reasoning about impact — The full-bleed hero. It also **darkens the header on mount** — the hero paints white text over its own dark field, and the header sits on top of it, so a header left in its light…"
+        }
       }
     ]
   },
@@ -35941,6 +39028,35 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "impact"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about impact — The quiet hero: a narrow column holding either rendered children or CMS rich text.",
+        "uuid": "2e3cccbc-be43-85cb-8ddb-d68a84e23e48",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "impact",
+          "the",
+          "quiet",
+          "hero",
+          "a",
+          "narrow",
+          "column",
+          "holding",
+          "either",
+          "rendered",
+          "children",
+          "or",
+          "cms",
+          "rich",
+          "text"
+        ],
+        "values": {
+          "en": "Use when reasoning about impact — The quiet hero: a narrow column holding either rendered children or CMS rich text."
         }
       }
     ]
@@ -35959,6 +39075,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "impact"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about impact — The mid-weight hero: rich text, an optional set of links, and an optional image below.",
+        "uuid": "197e64fa-d755-845b-9cb1-cbfc61362159",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "impact",
+          "the",
+          "mid",
+          "weight",
+          "hero",
+          "rich",
+          "text",
+          "an",
+          "optional",
+          "set",
+          "of",
+          "links",
+          "and",
+          "an",
+          "optional",
+          "image",
+          "below"
+        ],
+        "values": {
+          "en": "Use when reasoning about impact — The mid-weight hero: rich text, an optional set of links, and an optional image below."
+        }
       }
     ]
   },
@@ -35975,6 +39122,41 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "hero"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hero — A post's header: categories, the title as the page's , the byline, the publication date, and the cover image.",
+        "uuid": "38b1a323-b05c-8a43-b3d1-0fde32b7e005",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hero",
+          "a",
+          "post",
+          "s",
+          "header",
+          "categories",
+          "the",
+          "title",
+          "as",
+          "the",
+          "page",
+          "s",
+          "the",
+          "byline",
+          "the",
+          "publication",
+          "date",
+          "and",
+          "the",
+          "cover",
+          "image"
+        ],
+        "values": {
+          "en": "Use when reasoning about hero — A post's header: categories, the title as the page's , the byline, the publication date, and the cover image."
         }
       }
     ]
@@ -37162,7 +40344,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\"dry\\\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]].",
+        "source": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\"dry\\\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is uuid.",
         "uuid": "9fb5d3bd-ba2f-8875-b48c-6eb11ce89658",
         "words": [
           "use",
@@ -37227,7 +40409,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "uuid"
         ],
         "values": {
-          "en": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\"dry\\\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]]."
+          "en": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\"dry\\\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is uuid."
         }
       }
     ]
@@ -37391,9 +40573,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces.",
-        "uuid": "88cdd8b7-bc28-8f47-923d-c80dd1d3b2b7",
+        "source": "Use when reasoning about types — Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces.",
+        "uuid": "961629a0-cff7-8a7e-9bf1-aeafff70d1ea",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "canonical",
           "ifrs",
           "asc",
@@ -37412,7 +40599,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "produces"
         ],
         "values": {
-          "en": "Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces."
+          "en": "Use when reasoning about types — Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces."
         }
       }
     ]
@@ -37467,9 +40654,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Canonical IFRS 16 / ASC 842 lease accounting types — lessee model.",
-        "uuid": "b92493bf-8e37-8bf8-98ab-f89f9ede4f1a",
+        "source": "Use when reasoning about types — Canonical IFRS 16 / ASC 842 lease accounting types — lessee model.",
+        "uuid": "de93afe7-9898-8fc0-8ddc-4a0fd3a27b3a",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "canonical",
           "ifrs",
           "asc",
@@ -37480,7 +40672,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "model"
         ],
         "values": {
-          "en": "Canonical IFRS 16 / ASC 842 lease accounting types — lessee model."
+          "en": "Use when reasoning about types — Canonical IFRS 16 / ASC 842 lease accounting types — lessee model."
         }
       }
     ]
@@ -37734,6 +40926,47 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "cross"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about cross — reports every with no matching , and reports matter sitting beside a barrel that should be a child atom. computes the move; is what a reader gets.",
+        "uuid": "5896fafe-ac21-8f52-9ee8-47caa60c4e64",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "cross",
+          "reports",
+          "every",
+          "with",
+          "no",
+          "matching",
+          "and",
+          "reports",
+          "matter",
+          "sitting",
+          "beside",
+          "a",
+          "barrel",
+          "that",
+          "should",
+          "be",
+          "a",
+          "child",
+          "atom",
+          "computes",
+          "the",
+          "move",
+          "is",
+          "what",
+          "a",
+          "reader",
+          "gets"
+        ],
+        "values": {
+          "en": "Use when reasoning about cross — reports every with no matching , and reports matter sitting beside a barrel that should be a child atom. computes the move; is what a reader gets."
         }
       }
     ]
@@ -38361,6 +41594,35 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "base64url"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about base64url — (HKDF-derived per-row DEKs) and (JWS-shaped detached signatures) each carried their own / .",
+        "uuid": "e8c29964-5dd2-8f7c-9c7f-b9b05e1e7a6c",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "base64url",
+          "hkdf",
+          "derived",
+          "per",
+          "row",
+          "deks",
+          "and",
+          "jws",
+          "shaped",
+          "detached",
+          "signatures",
+          "each",
+          "carried",
+          "their",
+          "own"
+        ],
+        "values": {
+          "en": "Use when reasoning about base64url — (HKDF-derived per-row DEKs) and (JWS-shaped detached signatures) each carried their own / ."
+        }
       }
     ]
   },
@@ -38476,9 +41738,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Envelope encryption keyed by content-uuid — the at-rest companion to `SignedUuid<T>`.",
-        "uuid": "753413df-4c82-8646-85be-bb07476e765d",
+        "source": "Use when reasoning about envelope — Envelope encryption keyed by content-uuid — the at-rest companion to `SignedUuid<T>`.",
+        "uuid": "ff4c3e36-1384-8acf-9d1d-ae1ee319178b",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "envelope",
           "envelope",
           "encryption",
           "keyed",
@@ -38494,7 +41761,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "t"
         ],
         "values": {
-          "en": "Envelope encryption keyed by content-uuid — the at-rest companion to `SignedUuid<T>`."
+          "en": "Use when reasoning about envelope — Envelope encryption keyed by content-uuid — the at-rest companion to `SignedUuid<T>`."
         }
       }
     ]
@@ -38516,9 +41783,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Signed content-uuid — digital signatures fold into the uuid family.",
-        "uuid": "0347cfcf-1abf-8c99-8afe-96f506c5dd6a",
+        "source": "Use when reasoning about signatures — Signed content-uuid — digital signatures fold into the uuid family.",
+        "uuid": "f7e55e85-5b10-85ff-ad33-8f6b7c5e2c08",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "signatures",
           "signed",
           "content",
           "uuid",
@@ -38531,7 +41803,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "family"
         ],
         "values": {
-          "en": "Signed content-uuid — digital signatures fold into the uuid family."
+          "en": "Use when reasoning about signatures — Signed content-uuid — digital signatures fold into the uuid family."
         }
       }
     ]
@@ -39325,6 +42597,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "chrome"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about chrome — The per-locale shell: message provider, , admin bar, header, children, footer. Its substance is that **one locale value reaches every part at once**, and the mechanism is the .",
+        "uuid": "f27f001b-6d9f-8705-8f5c-f691e29e0c25",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "chrome",
+          "the",
+          "per",
+          "locale",
+          "shell",
+          "message",
+          "provider",
+          "admin",
+          "bar",
+          "header",
+          "children",
+          "footer",
+          "its",
+          "substance",
+          "is",
+          "that",
+          "one",
+          "locale",
+          "value",
+          "reaches",
+          "every",
+          "part",
+          "at",
+          "once",
+          "and",
+          "the",
+          "mechanism",
+          "is",
+          "the"
+        ],
+        "values": {
+          "en": "Use when reasoning about chrome — The per-locale shell: message provider, , admin bar, header, children, footer. Its substance is that **one locale value reaches every part at once**, and the mechanism is the ."
+        }
       }
     ]
   },
@@ -39633,6 +42948,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "transition"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about transition — The AR hook ( ) and the AP hook ( ) both answer one question before emitting a domain event: *did this write CHANGE the document's liveness?* Both wrote , , and for themselves…",
+        "uuid": "5e3083ff-4b99-837b-8312-3e709cc0db68",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "transition",
+          "the",
+          "ar",
+          "hook",
+          "and",
+          "the",
+          "ap",
+          "hook",
+          "both",
+          "answer",
+          "one",
+          "question",
+          "before",
+          "emitting",
+          "a",
+          "domain",
+          "event",
+          "did",
+          "this",
+          "write",
+          "change",
+          "the",
+          "document",
+          "s",
+          "liveness",
+          "both",
+          "wrote",
+          "and",
+          "for",
+          "themselves"
+        ],
+        "values": {
+          "en": "Use when reasoning about transition — The AR hook ( ) and the AP hook ( ) both answer one question before emitting a domain event: *did this write CHANGE the document's liveness?* Both wrote , , and for themselves…"
+        }
       }
     ]
   },
@@ -39710,6 +43069,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "hooks"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — derives the header's amounts from the lines whenever a line changes, and moves the stock the line commits. normalises the line before either runs.",
+        "uuid": "a4f6cd7c-fd5a-8e7e-af16-5204d5887d52",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "derives",
+          "the",
+          "header",
+          "s",
+          "amounts",
+          "from",
+          "the",
+          "lines",
+          "whenever",
+          "a",
+          "line",
+          "changes",
+          "and",
+          "moves",
+          "the",
+          "stock",
+          "the",
+          "line",
+          "commits",
+          "normalises",
+          "the",
+          "line",
+          "before",
+          "either",
+          "runs"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — derives the header's amounts from the lines whenever a line changes, and moves the stock the line commits. normalises the line before either runs."
         }
       }
     ]
@@ -39987,9 +43386,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "ISO 13616 IBAN validator with ISO 7064 mod-97 checksum.",
-        "uuid": "e199c7da-0a61-8dbf-a0b5-b1080253ec14",
+        "source": "Use when reasoning about iban — ISO 13616 IBAN validator with ISO 7064 mod-97 checksum.",
+        "uuid": "955c7c0a-ccfc-82e2-9799-b30743f7024a",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "iban",
           "iso",
           "iban",
           "validator",
@@ -39999,7 +43403,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "checksum"
         ],
         "values": {
-          "en": "ISO 13616 IBAN validator with ISO 7064 mod-97 checksum."
+          "en": "Use when reasoning about iban — ISO 13616 IBAN validator with ISO 7064 mod-97 checksum."
         }
       }
     ]
@@ -40055,9 +43459,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "ISO 14289 PDF/UA — PDF Universal Accessibility.",
-        "uuid": "369f2baf-5257-81a2-a81c-2e0abb947a5a",
+        "source": "Use when reasoning about profile — ISO 14289 PDF/UA — PDF Universal Accessibility.",
+        "uuid": "02457e95-02ca-8696-b825-22ac1d22b6cf",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "profile",
           "iso",
           "pdf",
           "ua",
@@ -40066,7 +43475,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "accessibility"
         ],
         "values": {
-          "en": "ISO 14289 PDF/UA — PDF Universal Accessibility."
+          "en": "Use when reasoning about profile — ISO 14289 PDF/UA — PDF Universal Accessibility."
         }
       }
     ]
@@ -40122,9 +43531,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "ISO 19005 PDF/A — long-term archival PDF profiles.",
-        "uuid": "cec4e7b2-7664-8613-8076-ff5e3d99d884",
+        "source": "Use when reasoning about profile — ISO 19005 PDF/A — long-term archival PDF profiles.",
+        "uuid": "0b3fd76f-9d95-891b-8f77-e597d363d799",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "profile",
           "iso",
           "pdf",
           "a",
@@ -40135,7 +43549,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "profiles"
         ],
         "values": {
-          "en": "ISO 19005 PDF/A — long-term archival PDF profiles."
+          "en": "Use when reasoning about profile — ISO 19005 PDF/A — long-term archival PDF profiles."
         }
       }
     ]
@@ -40193,9 +43607,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence).",
-        "uuid": "8159ac26-533a-833c-8cd2-87ae76837290",
+        "source": "Use when reasoning about types — Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence).",
+        "uuid": "f909d3aa-aed8-85e9-b9ab-e327487723ed",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "canonical",
           "audit",
           "trail",
@@ -40206,7 +43625,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "evidence"
         ],
         "values": {
-          "en": "Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence)."
+          "en": "Use when reasoning about types — Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence)."
         }
       }
     ]
@@ -40264,9 +43683,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return).",
-        "uuid": "d87a1d44-84b5-8219-886e-f36b34808620",
+        "source": "Use when reasoning about types — Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return).",
+        "uuid": "4c159e6a-f652-87bf-ab73-0219bed35669",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "canonical",
           "iso",
           "types",
@@ -40295,7 +43719,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "return"
         ],
         "values": {
-          "en": "Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return)."
+          "en": "Use when reasoning about types — Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return)."
         }
       }
     ]
@@ -40351,9 +43775,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase.",
-        "uuid": "eedb84ea-ad35-83f5-8256-88b34b969b56",
+        "source": "Use when reasoning about types — Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase.",
+        "uuid": "b1792f13-7c0e-8ac5-a6c2-11ea5804b128",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "canonical",
           "iso",
           "security",
@@ -40373,7 +43802,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "codebase"
         ],
         "values": {
-          "en": "Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase."
+          "en": "Use when reasoning about types — Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase."
         }
       }
     ]
@@ -40425,6 +43854,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "country"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about country — holds a canonical bundle per country and returns the one for an alpha-2 code: its holidays, its VAT treatment, its bank-statement and invoice formats, its signing profile.",
+        "uuid": "d6948967-f052-869d-83e1-2a580aa6d0e8",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "country",
+          "holds",
+          "a",
+          "canonical",
+          "bundle",
+          "per",
+          "country",
+          "and",
+          "returns",
+          "the",
+          "one",
+          "for",
+          "an",
+          "alpha",
+          "code",
+          "its",
+          "holidays",
+          "its",
+          "vat",
+          "treatment",
+          "its",
+          "bank",
+          "statement",
+          "and",
+          "invoice",
+          "formats",
+          "its",
+          "signing",
+          "profile"
+        ],
+        "values": {
+          "en": "Use when reasoning about country — holds a canonical bundle per country and returns the one for an alpha-2 code: its holidays, its VAT treatment, its bank-statement and invoice formats, its signing profile."
+        }
       }
     ]
   },
@@ -40445,9 +43917,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Bulgaria (BG) — canonical country bundle.",
-        "uuid": "8efc19df-fadb-8bec-94e8-7dca919a42e4",
+        "source": "Use when reasoning about bg — Bulgaria (BG) — canonical country bundle.",
+        "uuid": "6f61eea2-e290-8200-ae06-3f5241982fb0",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "bg",
           "bulgaria",
           "bg",
           "canonical",
@@ -40455,7 +43932,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "bundle"
         ],
         "values": {
-          "en": "Bulgaria (BG) — canonical country bundle."
+          "en": "Use when reasoning about bg — Bulgaria (BG) — canonical country bundle."
         }
       }
     ]
@@ -40477,16 +43954,21 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "ISO 3166-1 country-code validators.",
-        "uuid": "43e67e10-e265-84ff-9d51-3882a393691f",
+        "source": "Use when reasoning about validate — ISO 3166-1 country-code validators.",
+        "uuid": "33464213-86fe-8803-a713-7ba2ddf44174",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "validate",
           "iso",
           "country",
           "code",
           "validators"
         ],
         "values": {
-          "en": "ISO 3166-1 country-code validators."
+          "en": "Use when reasoning about validate — ISO 3166-1 country-code validators."
         }
       }
     ]
@@ -40541,16 +44023,21 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "ISO 3166-2 subdivision-code validator.",
-        "uuid": "c7543545-397b-8a1f-9335-1f6b31e96126",
+        "source": "Use when reasoning about validate — ISO 3166-2 subdivision-code validator.",
+        "uuid": "8422871a-931b-82c8-9110-4572a3dff60d",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "validate",
           "iso",
           "subdivision",
           "code",
           "validator"
         ],
         "values": {
-          "en": "ISO 3166-2 subdivision-code validator."
+          "en": "Use when reasoning about validate — ISO 3166-2 subdivision-code validator."
         }
       }
     ]
@@ -40605,16 +44092,21 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "ISO 4217 currency-code validator.",
-        "uuid": "8be93fce-c16f-8eda-bf50-83c5aaba9a46",
+        "source": "Use when reasoning about validate — ISO 4217 currency-code validator.",
+        "uuid": "8ceeeaf3-c853-8a42-8342-5f5aaf80c0d7",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "validate",
           "iso",
           "currency",
           "code",
           "validator"
         ],
         "values": {
-          "en": "ISO 4217 currency-code validator."
+          "en": "Use when reasoning about validate — ISO 4217 currency-code validator."
         }
       }
     ]
@@ -40704,16 +44196,21 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "ISO 8601 date/time validator.",
-        "uuid": "e0b01982-bd67-8c20-b457-4362f06c2311",
+        "source": "Use when reasoning about validate — ISO 8601 date/time validator.",
+        "uuid": "8e43d266-0f46-8f94-8b0f-9cb5a246ecc0",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "validate",
           "iso",
           "date",
           "time",
           "validator"
         ],
         "values": {
-          "en": "ISO 8601 date/time validator."
+          "en": "Use when reasoning about validate — ISO 8601 date/time validator."
         }
       }
     ]
@@ -40768,16 +44265,21 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "ISO 9362 BIC / SWIFT validator.",
-        "uuid": "7f668f68-02ab-8652-a242-983b14155517",
+        "source": "Use when reasoning about bic — ISO 9362 BIC / SWIFT validator.",
+        "uuid": "7611d38e-0557-8b2d-b726-9ab2b889f9b5",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "bic",
           "iso",
           "bic",
           "swift",
           "validator"
         ],
         "values": {
-          "en": "ISO 9362 BIC / SWIFT validator."
+          "en": "Use when reasoning about bic — ISO 9362 BIC / SWIFT validator."
         }
       }
     ]
@@ -41359,6 +44861,53 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hooks"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — books the movement's value as it is written. Inventory that moves without a posting is a stock figure and a ledger figure that drift apart with nothing between them to notice.",
+        "uuid": "b0a6eae2-159d-819e-91d9-f4eb5edf88ec",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "books",
+          "the",
+          "movement",
+          "s",
+          "value",
+          "as",
+          "it",
+          "is",
+          "written",
+          "inventory",
+          "that",
+          "moves",
+          "without",
+          "a",
+          "posting",
+          "is",
+          "a",
+          "stock",
+          "figure",
+          "and",
+          "a",
+          "ledger",
+          "figure",
+          "that",
+          "drift",
+          "apart",
+          "with",
+          "nothing",
+          "between",
+          "them",
+          "to",
+          "notice"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — books the movement's value as it is written. Inventory that moves without a posting is a stock figure and a ledger figure that drift apart with nothing between them to notice."
+        }
       }
     ]
   },
@@ -41721,6 +45270,48 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "audit"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about audit — builds each tenant's standardised monthly audit file for the month that has closed — is what decides which — and submits it where an mTLS submitter is wired.",
+        "uuid": "10f68dce-3298-8e85-9cb6-1c840d58527a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "audit",
+          "builds",
+          "each",
+          "tenant",
+          "s",
+          "standardised",
+          "monthly",
+          "audit",
+          "file",
+          "for",
+          "the",
+          "month",
+          "that",
+          "has",
+          "closed",
+          "is",
+          "what",
+          "decides",
+          "which",
+          "and",
+          "submits",
+          "it",
+          "where",
+          "an",
+          "mtls",
+          "submitter",
+          "is",
+          "wired"
+        ],
+        "values": {
+          "en": "Use when reasoning about audit — builds each tenant's standardised monthly audit file for the month that has closed — is what decides which — and submits it where an mTLS submitter is wired."
+        }
       }
     ]
   },
@@ -41928,6 +45519,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "hooks"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — is the fundamental law of double entry enforced where the entry is saved. Checking it in a report instead means the unbalanced entry already exists and every statement built on it…",
+        "uuid": "3dea6f98-f26b-8a25-8057-57a092f53008",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "is",
+          "the",
+          "fundamental",
+          "law",
+          "of",
+          "double",
+          "entry",
+          "enforced",
+          "where",
+          "the",
+          "entry",
+          "is",
+          "saved",
+          "checking",
+          "it",
+          "in",
+          "a",
+          "report",
+          "instead",
+          "means",
+          "the",
+          "unbalanced",
+          "entry",
+          "already",
+          "exists",
+          "and",
+          "every",
+          "statement",
+          "built",
+          "on",
+          "it"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — is the fundamental law of double entry enforced where the entry is saved. Checking it in a report instead means the unbalanced entry already exists and every statement built on it…"
         }
       }
     ]
@@ -42210,9 +45847,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "baseline — guardian ceilings from computed math + emitted snapshot.",
-        "uuid": "3e5f17bf-ead2-8200-bae7-ea1a2312eaf9",
+        "source": "Use when reasoning about baseline — baseline — guardian ceilings from computed math + emitted snapshot.",
+        "uuid": "813619e4-e9ba-80f5-b58f-33b86257a8d8",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "baseline",
           "baseline",
           "guardian",
           "ceilings",
@@ -42223,7 +45865,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "snapshot"
         ],
         "values": {
-          "en": "baseline — guardian ceilings from computed math + emitted snapshot."
+          "en": "Use when reasoning about baseline — baseline — guardian ceilings from computed math + emitted snapshot."
         }
       }
     ]
@@ -42708,9 +46350,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry.",
-        "uuid": "9d379ee2-bbe0-8329-ba8a-e0785bd20d83",
+        "source": "Use when reasoning about posting — Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry.",
+        "uuid": "7c7fb4e5-8774-8527-895a-62fd6649723f",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "posting",
           "lease",
           "period",
           "posting",
@@ -42730,7 +46377,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "entry"
         ],
         "values": {
-          "en": "Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry."
+          "en": "Use when reasoning about posting — Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry."
         }
       }
     ]
@@ -44630,6 +48277,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "field"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about field — builds the field: an internal choice resolves against a collection, an external one takes a URI, and decides how it renders without changing what it means. is that closed set.",
+        "uuid": "4ddc4fd2-0a26-884b-8b6e-9ec3c9be1078",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "field",
+          "builds",
+          "the",
+          "field",
+          "an",
+          "internal",
+          "choice",
+          "resolves",
+          "against",
+          "a",
+          "collection",
+          "an",
+          "external",
+          "one",
+          "takes",
+          "a",
+          "uri",
+          "and",
+          "decides",
+          "how",
+          "it",
+          "renders",
+          "without",
+          "changing",
+          "what",
+          "it",
+          "means",
+          "is",
+          "that",
+          "closed",
+          "set"
+        ],
+        "values": {
+          "en": "Use when reasoning about field — builds the field: an internal choice resolves against a collection, an external one takes a URI, and decides how it renders without changing what it means. is that closed set."
+        }
       }
     ]
   },
@@ -46498,6 +50190,44 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "products"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about products — is the Payload definition: the product's fields, its access rules, and the hooks beside it that manage the images a product carries.",
+        "uuid": "ff0e4936-6112-8898-a233-ca2d1d3b24db",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "products",
+          "is",
+          "the",
+          "payload",
+          "definition",
+          "the",
+          "product",
+          "s",
+          "fields",
+          "its",
+          "access",
+          "rules",
+          "and",
+          "the",
+          "hooks",
+          "beside",
+          "it",
+          "that",
+          "manage",
+          "the",
+          "images",
+          "a",
+          "product",
+          "carries"
+        ],
+        "values": {
+          "en": "Use when reasoning about products — is the Payload definition: the product's fields, its access rules, and the hooks beside it that manage the images a product carries."
+        }
       }
     ]
   },
@@ -46682,7 +50412,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about allergies as a medical facet of [[medical]] — vocabulary pivot to @/allergies; nested not duplicated.",
+        "source": "Use when reasoning about allergies as a medical facet of medical — vocabulary pivot to @/allergies; nested not duplicated.",
         "uuid": "4efe2052-b0ba-8d26-9a24-96c61b03f448",
         "words": [
           "use",
@@ -46705,7 +50435,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about allergies as a medical facet of [[medical]] — vocabulary pivot to @/allergies; nested not duplicated."
+          "en": "Use when reasoning about allergies as a medical facet of medical — vocabulary pivot to @/allergies; nested not duplicated."
         }
       }
     ]
@@ -46727,7 +50457,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about article as a medical facet of [[medical]] — vocabulary pivot to @/article; nested not duplicated.",
+        "source": "Use when reasoning about article as a medical facet of medical — vocabulary pivot to @/article; nested not duplicated.",
         "uuid": "4e7aae4d-e6b5-85b2-9f24-076606de673a",
         "words": [
           "use",
@@ -46750,7 +50480,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about article as a medical facet of [[medical]] — vocabulary pivot to @/article; nested not duplicated."
+          "en": "Use when reasoning about article as a medical facet of medical — vocabulary pivot to @/article; nested not duplicated."
         }
       }
     ]
@@ -46772,7 +50502,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about audience as a medical facet of [[medical]] — vocabulary pivot to @/audience; nested not duplicated.",
+        "source": "Use when reasoning about audience as a medical facet of medical — vocabulary pivot to @/audience; nested not duplicated.",
         "uuid": "f70af69d-30bd-8aec-b1ab-a5cf56149403",
         "words": [
           "use",
@@ -46795,7 +50525,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about audience as a medical facet of [[medical]] — vocabulary pivot to @/audience; nested not duplicated."
+          "en": "Use when reasoning about audience as a medical facet of medical — vocabulary pivot to @/audience; nested not duplicated."
         }
       }
     ]
@@ -46817,7 +50547,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about business as a medical facet of [[medical]] — vocabulary pivot to @/business; nested not duplicated.",
+        "source": "Use when reasoning about business as a medical facet of medical — vocabulary pivot to @/business; nested not duplicated.",
         "uuid": "95790801-34e1-8a11-aea9-6983dc66cc64",
         "words": [
           "use",
@@ -46840,7 +50570,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about business as a medical facet of [[medical]] — vocabulary pivot to @/business; nested not duplicated."
+          "en": "Use when reasoning about business as a medical facet of medical — vocabulary pivot to @/business; nested not duplicated."
         }
       }
     ]
@@ -46862,7 +50592,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about calculator as a medical facet of [[medical]] — vocabulary pivot to @/calculator; nested not duplicated.",
+        "source": "Use when reasoning about calculator as a medical facet of medical — vocabulary pivot to @/calculator; nested not duplicated.",
         "uuid": "8214d8e7-23b4-83f3-a520-4705948f4ef5",
         "words": [
           "use",
@@ -46885,7 +50615,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about calculator as a medical facet of [[medical]] — vocabulary pivot to @/calculator; nested not duplicated."
+          "en": "Use when reasoning about calculator as a medical facet of medical — vocabulary pivot to @/calculator; nested not duplicated."
         }
       }
     ]
@@ -46907,7 +50637,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about cause as a medical facet of [[medical]] — vocabulary pivot to @/cause; nested not duplicated.",
+        "source": "Use when reasoning about cause as a medical facet of medical — vocabulary pivot to @/cause; nested not duplicated.",
         "uuid": "b173666a-666b-83a0-9860-b8ef36d19bb3",
         "words": [
           "use",
@@ -46930,7 +50660,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about cause as a medical facet of [[medical]] — vocabulary pivot to @/cause; nested not duplicated."
+          "en": "Use when reasoning about cause as a medical facet of medical — vocabulary pivot to @/cause; nested not duplicated."
         }
       }
     ]
@@ -46952,7 +50682,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about clinic as a medical facet of [[medical]] — vocabulary pivot to @/clinic; nested not duplicated.",
+        "source": "Use when reasoning about clinic as a medical facet of medical — vocabulary pivot to @/clinic; nested not duplicated.",
         "uuid": "96bdda3a-15e0-8e00-b7e5-fdbbdac6dd14",
         "words": [
           "use",
@@ -46975,7 +50705,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about clinic as a medical facet of [[medical]] — vocabulary pivot to @/clinic; nested not duplicated."
+          "en": "Use when reasoning about clinic as a medical facet of medical — vocabulary pivot to @/clinic; nested not duplicated."
         }
       }
     ]
@@ -46997,7 +50727,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about code as a medical facet of [[medical]] — vocabulary pivot to @/code; nested not duplicated.",
+        "source": "Use when reasoning about code as a medical facet of medical — vocabulary pivot to @/code; nested not duplicated.",
         "uuid": "9c14bff7-66bf-8a93-aada-a0f302f3b5a8",
         "words": [
           "use",
@@ -47020,7 +50750,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about code as a medical facet of [[medical]] — vocabulary pivot to @/code; nested not duplicated."
+          "en": "Use when reasoning about code as a medical facet of medical — vocabulary pivot to @/code; nested not duplicated."
         }
       }
     ]
@@ -47042,7 +50772,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about condition as a medical facet of [[medical]] — vocabulary pivot to @/condition; nested not duplicated.",
+        "source": "Use when reasoning about condition as a medical facet of medical — vocabulary pivot to @/condition; nested not duplicated.",
         "uuid": "fee59a8d-b23f-8f23-9d7d-c8a8f1e8eb78",
         "words": [
           "use",
@@ -47065,7 +50795,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about condition as a medical facet of [[medical]] — vocabulary pivot to @/condition; nested not duplicated."
+          "en": "Use when reasoning about condition as a medical facet of medical — vocabulary pivot to @/condition; nested not duplicated."
         }
       }
     ]
@@ -47087,7 +50817,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about contraindication as a medical facet of [[medical]] — vocabulary pivot to @/contraindication; nested not duplicated.",
+        "source": "Use when reasoning about contraindication as a medical facet of medical — vocabulary pivot to @/contraindication; nested not duplicated.",
         "uuid": "da39132f-31e9-845e-928d-1766dabde112",
         "words": [
           "use",
@@ -47110,7 +50840,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about contraindication as a medical facet of [[medical]] — vocabulary pivot to @/contraindication; nested not duplicated."
+          "en": "Use when reasoning about contraindication as a medical facet of medical — vocabulary pivot to @/contraindication; nested not duplicated."
         }
       }
     ]
@@ -47186,7 +50916,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about diagnosis as a medical facet of [[medical]] — vocabulary pivot to @/diagnosis; nested not duplicated.",
+        "source": "Use when reasoning about diagnosis as a medical facet of medical — vocabulary pivot to @/diagnosis; nested not duplicated.",
         "uuid": "65af41ee-c3f5-89e7-8c2d-cea0d3851584",
         "words": [
           "use",
@@ -47209,7 +50939,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about diagnosis as a medical facet of [[medical]] — vocabulary pivot to @/diagnosis; nested not duplicated."
+          "en": "Use when reasoning about diagnosis as a medical facet of medical — vocabulary pivot to @/diagnosis; nested not duplicated."
         }
       }
     ]
@@ -47231,7 +50961,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about disease as a medical facet of [[medical]] — vocabulary pivot to @/disease; nested not duplicated.",
+        "source": "Use when reasoning about disease as a medical facet of medical — vocabulary pivot to @/disease; nested not duplicated.",
         "uuid": "3aef191c-07cd-82cf-81f7-09bc8ebaf888",
         "words": [
           "use",
@@ -47254,7 +50984,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about disease as a medical facet of [[medical]] — vocabulary pivot to @/disease; nested not duplicated."
+          "en": "Use when reasoning about disease as a medical facet of medical — vocabulary pivot to @/disease; nested not duplicated."
         }
       }
     ]
@@ -47276,7 +51006,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about drug as a medical facet of [[medical]] — vocabulary pivot to @/drug; nested not duplicated.",
+        "source": "Use when reasoning about drug as a medical facet of medical — vocabulary pivot to @/drug; nested not duplicated.",
         "uuid": "bfdb4852-5693-8225-94c8-3e4a22663a6f",
         "words": [
           "use",
@@ -47299,7 +51029,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about drug as a medical facet of [[medical]] — vocabulary pivot to @/drug; nested not duplicated."
+          "en": "Use when reasoning about drug as a medical facet of medical — vocabulary pivot to @/drug; nested not duplicated."
         }
       }
     ]
@@ -47321,7 +51051,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about entity as a medical facet of [[medical]] — vocabulary pivot to @/entity; nested not duplicated.",
+        "source": "Use when reasoning about entity as a medical facet of medical — vocabulary pivot to @/entity; nested not duplicated.",
         "uuid": "1086b810-2df4-813e-8213-03a4f7927fc4",
         "words": [
           "use",
@@ -47344,7 +51074,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about entity as a medical facet of [[medical]] — vocabulary pivot to @/entity; nested not duplicated."
+          "en": "Use when reasoning about entity as a medical facet of medical — vocabulary pivot to @/entity; nested not duplicated."
         }
       }
     ]
@@ -47366,7 +51096,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about enumeration as a medical facet of [[medical]] — vocabulary pivot to @/enumeration; nested not duplicated.",
+        "source": "Use when reasoning about enumeration as a medical facet of medical — vocabulary pivot to @/enumeration; nested not duplicated.",
         "uuid": "02e5f714-997b-86c5-a8bf-e722f248eb79",
         "words": [
           "use",
@@ -47389,7 +51119,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about enumeration as a medical facet of [[medical]] — vocabulary pivot to @/enumeration; nested not duplicated."
+          "en": "Use when reasoning about enumeration as a medical facet of medical — vocabulary pivot to @/enumeration; nested not duplicated."
         }
       }
     ]
@@ -47411,7 +51141,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about estimator as a medical facet of [[medical]] — vocabulary pivot to @/estimator; nested not duplicated.",
+        "source": "Use when reasoning about estimator as a medical facet of medical — vocabulary pivot to @/estimator; nested not duplicated.",
         "uuid": "ab0b28d0-cb79-8566-8dfa-a5451bec5b14",
         "words": [
           "use",
@@ -47434,7 +51164,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about estimator as a medical facet of [[medical]] — vocabulary pivot to @/estimator; nested not duplicated."
+          "en": "Use when reasoning about estimator as a medical facet of medical — vocabulary pivot to @/estimator; nested not duplicated."
         }
       }
     ]
@@ -47456,7 +51186,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about evidence as a medical facet of [[medical]] — vocabulary pivot to @/evidence; nested not duplicated.",
+        "source": "Use when reasoning about evidence as a medical facet of medical — vocabulary pivot to @/evidence; nested not duplicated.",
         "uuid": "8e6655eb-3f32-837b-8187-10dbb75c2f1a",
         "words": [
           "use",
@@ -47479,7 +51209,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about evidence as a medical facet of [[medical]] — vocabulary pivot to @/evidence; nested not duplicated."
+          "en": "Use when reasoning about evidence as a medical facet of medical — vocabulary pivot to @/evidence; nested not duplicated."
         }
       }
     ]
@@ -47501,7 +51231,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about factor as a medical facet of [[medical]] — vocabulary pivot to @/factor; nested not duplicated.",
+        "source": "Use when reasoning about factor as a medical facet of medical — vocabulary pivot to @/factor; nested not duplicated.",
         "uuid": "0be799ac-412b-8bfe-8cf9-406731fc0027",
         "words": [
           "use",
@@ -47524,7 +51254,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about factor as a medical facet of [[medical]] — vocabulary pivot to @/factor; nested not duplicated."
+          "en": "Use when reasoning about factor as a medical facet of medical — vocabulary pivot to @/factor; nested not duplicated."
         }
       }
     ]
@@ -47546,7 +51276,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about folder as a medical facet of [[medical]] — vocabulary pivot to @/folder; nested not duplicated.",
+        "source": "Use when reasoning about folder as a medical facet of medical — vocabulary pivot to @/folder; nested not duplicated.",
         "uuid": "1ce42f88-b471-80e2-a311-101f1a6d70c9",
         "words": [
           "use",
@@ -47569,7 +51299,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about folder as a medical facet of [[medical]] — vocabulary pivot to @/folder; nested not duplicated."
+          "en": "Use when reasoning about folder as a medical facet of medical — vocabulary pivot to @/folder; nested not duplicated."
         }
       }
     ]
@@ -47591,7 +51321,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about guideline as a medical facet of [[medical]] — vocabulary pivot to @/guideline; nested not duplicated.",
+        "source": "Use when reasoning about guideline as a medical facet of medical — vocabulary pivot to @/guideline; nested not duplicated.",
         "uuid": "895753d5-8f36-849f-bc80-a721d4cce1fa",
         "words": [
           "use",
@@ -47614,7 +51344,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about guideline as a medical facet of [[medical]] — vocabulary pivot to @/guideline; nested not duplicated."
+          "en": "Use when reasoning about guideline as a medical facet of medical — vocabulary pivot to @/guideline; nested not duplicated."
         }
       }
     ]
@@ -47636,7 +51366,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about hospital as a medical facet of [[medical]] — vocabulary pivot to @/hospital; nested not duplicated.",
+        "source": "Use when reasoning about hospital as a medical facet of medical — vocabulary pivot to @/hospital; nested not duplicated.",
         "uuid": "0e32fc86-b8d7-8333-81e4-6825c1f7ea86",
         "words": [
           "use",
@@ -47659,7 +51389,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about hospital as a medical facet of [[medical]] — vocabulary pivot to @/hospital; nested not duplicated."
+          "en": "Use when reasoning about hospital as a medical facet of medical — vocabulary pivot to @/hospital; nested not duplicated."
         }
       }
     ]
@@ -47681,7 +51411,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about indication as a medical facet of [[medical]] — vocabulary pivot to @/indication; nested not duplicated.",
+        "source": "Use when reasoning about indication as a medical facet of medical — vocabulary pivot to @/indication; nested not duplicated.",
         "uuid": "212897ca-f712-808e-99cf-094dacc1373b",
         "words": [
           "use",
@@ -47704,7 +51434,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about indication as a medical facet of [[medical]] — vocabulary pivot to @/indication; nested not duplicated."
+          "en": "Use when reasoning about indication as a medical facet of medical — vocabulary pivot to @/indication; nested not duplicated."
         }
       }
     ]
@@ -47726,7 +51456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about intangible as a medical facet of [[medical]] — vocabulary pivot to @/intangible; nested not duplicated.",
+        "source": "Use when reasoning about intangible as a medical facet of medical — vocabulary pivot to @/intangible; nested not duplicated.",
         "uuid": "0805321c-281a-8789-be16-f30ae80b250b",
         "words": [
           "use",
@@ -47749,7 +51479,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about intangible as a medical facet of [[medical]] — vocabulary pivot to @/intangible; nested not duplicated."
+          "en": "Use when reasoning about intangible as a medical facet of medical — vocabulary pivot to @/intangible; nested not duplicated."
         }
       }
     ]
@@ -47771,7 +51501,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about level as a medical facet of [[medical]] — vocabulary pivot to @/level; nested not duplicated.",
+        "source": "Use when reasoning about level as a medical facet of medical — vocabulary pivot to @/level; nested not duplicated.",
         "uuid": "6013c452-af8d-869d-ab3d-53a8ab65f531",
         "words": [
           "use",
@@ -47794,7 +51524,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about level as a medical facet of [[medical]] — vocabulary pivot to @/level; nested not duplicated."
+          "en": "Use when reasoning about level as a medical facet of medical — vocabulary pivot to @/level; nested not duplicated."
         }
       }
     ]
@@ -47816,7 +51546,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about observational as a medical facet of [[medical]] — vocabulary pivot to @/observational; nested not duplicated.",
+        "source": "Use when reasoning about observational as a medical facet of medical — vocabulary pivot to @/observational; nested not duplicated.",
         "uuid": "fa5c318b-d708-8500-8dea-268989002aad",
         "words": [
           "use",
@@ -47839,7 +51569,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about observational as a medical facet of [[medical]] — vocabulary pivot to @/observational; nested not duplicated."
+          "en": "Use when reasoning about observational as a medical facet of medical — vocabulary pivot to @/observational; nested not duplicated."
         }
       }
     ]
@@ -47861,7 +51591,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about organization as a medical facet of [[medical]] — vocabulary pivot to @/organization; nested not duplicated.",
+        "source": "Use when reasoning about organization as a medical facet of medical — vocabulary pivot to @/organization; nested not duplicated.",
         "uuid": "03c4b484-58d9-8e1c-9d07-7138165e7d73",
         "words": [
           "use",
@@ -47884,7 +51614,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about organization as a medical facet of [[medical]] — vocabulary pivot to @/organization; nested not duplicated."
+          "en": "Use when reasoning about organization as a medical facet of medical — vocabulary pivot to @/organization; nested not duplicated."
         }
       }
     ]
@@ -47906,7 +51636,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about page as a medical facet of [[medical]] — vocabulary pivot to @/page; nested not duplicated.",
+        "source": "Use when reasoning about page as a medical facet of medical — vocabulary pivot to @/page; nested not duplicated.",
         "uuid": "45d4da53-9665-8013-9f7a-d36231b01244",
         "words": [
           "use",
@@ -47929,7 +51659,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about page as a medical facet of [[medical]] — vocabulary pivot to @/page; nested not duplicated."
+          "en": "Use when reasoning about page as a medical facet of medical — vocabulary pivot to @/page; nested not duplicated."
         }
       }
     ]
@@ -47951,7 +51681,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about panel as a medical facet of [[medical]] — vocabulary pivot to @/panel; nested not duplicated.",
+        "source": "Use when reasoning about panel as a medical facet of medical — vocabulary pivot to @/panel; nested not duplicated.",
         "uuid": "570b445a-e5d4-8be8-8e34-10935b40b1ac",
         "words": [
           "use",
@@ -47974,7 +51704,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about panel as a medical facet of [[medical]] — vocabulary pivot to @/panel; nested not duplicated."
+          "en": "Use when reasoning about panel as a medical facet of medical — vocabulary pivot to @/panel; nested not duplicated."
         }
       }
     ]
@@ -47996,7 +51726,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about patient as a medical facet of [[medical]] — vocabulary pivot to @/patient; nested not duplicated.",
+        "source": "Use when reasoning about patient as a medical facet of medical — vocabulary pivot to @/patient; nested not duplicated.",
         "uuid": "ebb3baab-5cc1-8321-88cc-59584d470de0",
         "words": [
           "use",
@@ -48019,7 +51749,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about patient as a medical facet of [[medical]] — vocabulary pivot to @/patient; nested not duplicated."
+          "en": "Use when reasoning about patient as a medical facet of medical — vocabulary pivot to @/patient; nested not duplicated."
         }
       }
     ]
@@ -48041,7 +51771,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about physician as a medical facet of [[medical]] — vocabulary pivot to @/physician; nested not duplicated.",
+        "source": "Use when reasoning about physician as a medical facet of medical — vocabulary pivot to @/physician; nested not duplicated.",
         "uuid": "6e8fba34-5207-83c7-a844-1b23d878ecb1",
         "words": [
           "use",
@@ -48064,7 +51794,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about physician as a medical facet of [[medical]] — vocabulary pivot to @/physician; nested not duplicated."
+          "en": "Use when reasoning about physician as a medical facet of medical — vocabulary pivot to @/physician; nested not duplicated."
         }
       }
     ]
@@ -48086,7 +51816,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about prescription as a medical facet of [[medical]] — vocabulary pivot to @/prescription; nested not duplicated.",
+        "source": "Use when reasoning about prescription as a medical facet of medical — vocabulary pivot to @/prescription; nested not duplicated.",
         "uuid": "c4dc60d6-dd5b-8724-afc6-287c9eea3dee",
         "words": [
           "use",
@@ -48109,7 +51839,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about prescription as a medical facet of [[medical]] — vocabulary pivot to @/prescription; nested not duplicated."
+          "en": "Use when reasoning about prescription as a medical facet of medical — vocabulary pivot to @/prescription; nested not duplicated."
         }
       }
     ]
@@ -48131,7 +51861,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about procedure as a medical facet of [[medical]] — vocabulary pivot to @/procedure; nested not duplicated.",
+        "source": "Use when reasoning about procedure as a medical facet of medical — vocabulary pivot to @/procedure; nested not duplicated.",
         "uuid": "9515ad64-95f0-8251-b3d5-575668e35a1a",
         "words": [
           "use",
@@ -48154,7 +51884,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about procedure as a medical facet of [[medical]] — vocabulary pivot to @/procedure; nested not duplicated."
+          "en": "Use when reasoning about procedure as a medical facet of medical — vocabulary pivot to @/procedure; nested not duplicated."
         }
       }
     ]
@@ -48176,7 +51906,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about purpose as a medical facet of [[medical]] — vocabulary pivot to @/purpose; nested not duplicated.",
+        "source": "Use when reasoning about purpose as a medical facet of medical — vocabulary pivot to @/purpose; nested not duplicated.",
         "uuid": "acd731e2-3040-877f-aac4-dc6953102608",
         "words": [
           "use",
@@ -48199,7 +51929,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about purpose as a medical facet of [[medical]] — vocabulary pivot to @/purpose; nested not duplicated."
+          "en": "Use when reasoning about purpose as a medical facet of medical — vocabulary pivot to @/purpose; nested not duplicated."
         }
       }
     ]
@@ -48221,7 +51951,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about recommendation as a medical facet of [[medical]] — vocabulary pivot to @/recommendation; nested not duplicated.",
+        "source": "Use when reasoning about recommendation as a medical facet of medical — vocabulary pivot to @/recommendation; nested not duplicated.",
         "uuid": "2395cab1-9dcc-8be1-bd35-0b7d0691e817",
         "words": [
           "use",
@@ -48244,7 +51974,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about recommendation as a medical facet of [[medical]] — vocabulary pivot to @/recommendation; nested not duplicated."
+          "en": "Use when reasoning about recommendation as a medical facet of medical — vocabulary pivot to @/recommendation; nested not duplicated."
         }
       }
     ]
@@ -48266,7 +51996,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about risk as a medical facet of [[medical]] — vocabulary pivot to @/risk; nested not duplicated.",
+        "source": "Use when reasoning about risk as a medical facet of medical — vocabulary pivot to @/risk; nested not duplicated.",
         "uuid": "6b6414d0-6359-834e-9228-cf89e1d76ec7",
         "words": [
           "use",
@@ -48289,7 +52019,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about risk as a medical facet of [[medical]] — vocabulary pivot to @/risk; nested not duplicated."
+          "en": "Use when reasoning about risk as a medical facet of medical — vocabulary pivot to @/risk; nested not duplicated."
         }
       }
     ]
@@ -48311,7 +52041,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about scholarly as a medical facet of [[medical]] — vocabulary pivot to @/scholarly; nested not duplicated.",
+        "source": "Use when reasoning about scholarly as a medical facet of medical — vocabulary pivot to @/scholarly; nested not duplicated.",
         "uuid": "0c023797-4e8a-8cdb-be7e-cdf24b0bffe9",
         "words": [
           "use",
@@ -48334,7 +52064,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about scholarly as a medical facet of [[medical]] — vocabulary pivot to @/scholarly; nested not duplicated."
+          "en": "Use when reasoning about scholarly as a medical facet of medical — vocabulary pivot to @/scholarly; nested not duplicated."
         }
       }
     ]
@@ -48356,7 +52086,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about score as a medical facet of [[medical]] — vocabulary pivot to @/score; nested not duplicated.",
+        "source": "Use when reasoning about score as a medical facet of medical — vocabulary pivot to @/score; nested not duplicated.",
         "uuid": "937ff78e-ae52-8cf0-855f-0947211fa113",
         "words": [
           "use",
@@ -48379,7 +52109,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about score as a medical facet of [[medical]] — vocabulary pivot to @/score; nested not duplicated."
+          "en": "Use when reasoning about score as a medical facet of medical — vocabulary pivot to @/score; nested not duplicated."
         }
       }
     ]
@@ -48401,7 +52131,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about sign as a medical facet of [[medical]] — vocabulary pivot to @/sign; nested not duplicated.",
+        "source": "Use when reasoning about sign as a medical facet of medical — vocabulary pivot to @/sign; nested not duplicated.",
         "uuid": "84769754-3cad-8fdc-b829-9a158d20aea6",
         "words": [
           "use",
@@ -48424,7 +52154,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about sign as a medical facet of [[medical]] — vocabulary pivot to @/sign; nested not duplicated."
+          "en": "Use when reasoning about sign as a medical facet of medical — vocabulary pivot to @/sign; nested not duplicated."
         }
       }
     ]
@@ -48446,7 +52176,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about specialty as a medical facet of [[medical]] — vocabulary pivot to @/specialty; nested not duplicated.",
+        "source": "Use when reasoning about specialty as a medical facet of medical — vocabulary pivot to @/specialty; nested not duplicated.",
         "uuid": "fe7fd2c2-02a3-8041-8875-255c8b74b9fc",
         "words": [
           "use",
@@ -48469,7 +52199,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about specialty as a medical facet of [[medical]] — vocabulary pivot to @/specialty; nested not duplicated."
+          "en": "Use when reasoning about specialty as a medical facet of medical — vocabulary pivot to @/specialty; nested not duplicated."
         }
       }
     ]
@@ -48491,7 +52221,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about stage as a medical facet of [[medical]] — vocabulary pivot to @/stage; nested not duplicated.",
+        "source": "Use when reasoning about stage as a medical facet of medical — vocabulary pivot to @/stage; nested not duplicated.",
         "uuid": "313cf8d8-8e1d-879d-a2b3-7e8bb1781a6b",
         "words": [
           "use",
@@ -48514,7 +52244,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about stage as a medical facet of [[medical]] — vocabulary pivot to @/stage; nested not duplicated."
+          "en": "Use when reasoning about stage as a medical facet of medical — vocabulary pivot to @/stage; nested not duplicated."
         }
       }
     ]
@@ -48536,7 +52266,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about status as a medical facet of [[medical]] — vocabulary pivot to @/status; nested not duplicated.",
+        "source": "Use when reasoning about status as a medical facet of medical — vocabulary pivot to @/status; nested not duplicated.",
         "uuid": "fa910ee2-8916-8f17-bb15-9f48d750dbca",
         "words": [
           "use",
@@ -48559,7 +52289,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about status as a medical facet of [[medical]] — vocabulary pivot to @/status; nested not duplicated."
+          "en": "Use when reasoning about status as a medical facet of medical — vocabulary pivot to @/status; nested not duplicated."
         }
       }
     ]
@@ -48581,7 +52311,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about study as a medical facet of [[medical]] — vocabulary pivot to @/study; nested not duplicated.",
+        "source": "Use when reasoning about study as a medical facet of medical — vocabulary pivot to @/study; nested not duplicated.",
         "uuid": "32c5dde1-b395-845a-b3ba-c7195b8d9ef5",
         "words": [
           "use",
@@ -48604,7 +52334,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about study as a medical facet of [[medical]] — vocabulary pivot to @/study; nested not duplicated."
+          "en": "Use when reasoning about study as a medical facet of medical — vocabulary pivot to @/study; nested not duplicated."
         }
       }
     ]
@@ -48626,7 +52356,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about surgery as a medical facet of [[medical]] — vocabulary pivot to @/surgery; nested not duplicated.",
+        "source": "Use when reasoning about surgery as a medical facet of medical — vocabulary pivot to @/surgery; nested not duplicated.",
         "uuid": "16d8645f-eac3-82af-804e-c469c9d6ba6f",
         "words": [
           "use",
@@ -48649,7 +52379,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about surgery as a medical facet of [[medical]] — vocabulary pivot to @/surgery; nested not duplicated."
+          "en": "Use when reasoning about surgery as a medical facet of medical — vocabulary pivot to @/surgery; nested not duplicated."
         }
       }
     ]
@@ -48671,7 +52401,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about symptom as a medical facet of [[medical]] — vocabulary pivot to @/symptom; nested not duplicated.",
+        "source": "Use when reasoning about symptom as a medical facet of medical — vocabulary pivot to @/symptom; nested not duplicated.",
         "uuid": "79c425f2-66e5-8e4b-a67a-6d60d87568fb",
         "words": [
           "use",
@@ -48694,7 +52424,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about symptom as a medical facet of [[medical]] — vocabulary pivot to @/symptom; nested not duplicated."
+          "en": "Use when reasoning about symptom as a medical facet of medical — vocabulary pivot to @/symptom; nested not duplicated."
         }
       }
     ]
@@ -48716,7 +52446,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about technique as a medical facet of [[medical]] — vocabulary pivot to @/technique; nested not duplicated.",
+        "source": "Use when reasoning about technique as a medical facet of medical — vocabulary pivot to @/technique; nested not duplicated.",
         "uuid": "3f81c586-165f-8599-a768-63a4d2353b8e",
         "words": [
           "use",
@@ -48739,7 +52469,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about technique as a medical facet of [[medical]] — vocabulary pivot to @/technique; nested not duplicated."
+          "en": "Use when reasoning about technique as a medical facet of medical — vocabulary pivot to @/technique; nested not duplicated."
         }
       }
     ]
@@ -48761,7 +52491,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about test as a medical facet of [[medical]] — vocabulary pivot to @/test; nested not duplicated.",
+        "source": "Use when reasoning about test as a medical facet of medical — vocabulary pivot to @/test; nested not duplicated.",
         "uuid": "3ff0db96-549b-8c25-b146-66d0cfe0d02a",
         "words": [
           "use",
@@ -48784,7 +52514,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about test as a medical facet of [[medical]] — vocabulary pivot to @/test; nested not duplicated."
+          "en": "Use when reasoning about test as a medical facet of medical — vocabulary pivot to @/test; nested not duplicated."
         }
       }
     ]
@@ -48806,7 +52536,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about therapy as a medical facet of [[medical]] — vocabulary pivot to @/therapy; nested not duplicated.",
+        "source": "Use when reasoning about therapy as a medical facet of medical — vocabulary pivot to @/therapy; nested not duplicated.",
         "uuid": "084a6b5e-66ac-87b2-b218-0f9719982c0c",
         "words": [
           "use",
@@ -48829,7 +52559,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about therapy as a medical facet of [[medical]] — vocabulary pivot to @/therapy; nested not duplicated."
+          "en": "Use when reasoning about therapy as a medical facet of medical — vocabulary pivot to @/therapy; nested not duplicated."
         }
       }
     ]
@@ -48851,7 +52581,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about treatment as a medical facet of [[medical]] — vocabulary pivot to @/treatment; nested not duplicated.",
+        "source": "Use when reasoning about treatment as a medical facet of medical — vocabulary pivot to @/treatment; nested not duplicated.",
         "uuid": "7322ccab-70c7-8b66-9079-1a4dcbeb98f0",
         "words": [
           "use",
@@ -48874,7 +52604,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about treatment as a medical facet of [[medical]] — vocabulary pivot to @/treatment; nested not duplicated."
+          "en": "Use when reasoning about treatment as a medical facet of medical — vocabulary pivot to @/treatment; nested not duplicated."
         }
       }
     ]
@@ -48896,7 +52626,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about trial as a medical facet of [[medical]] — vocabulary pivot to @/trial; nested not duplicated.",
+        "source": "Use when reasoning about trial as a medical facet of medical — vocabulary pivot to @/trial; nested not duplicated.",
         "uuid": "88ffb84b-e0e7-87f6-b305-177d766f6240",
         "words": [
           "use",
@@ -48919,7 +52649,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about trial as a medical facet of [[medical]] — vocabulary pivot to @/trial; nested not duplicated."
+          "en": "Use when reasoning about trial as a medical facet of medical — vocabulary pivot to @/trial; nested not duplicated."
         }
       }
     ]
@@ -48941,7 +52671,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about type as a medical facet of [[medical]] — vocabulary pivot to @/type; nested not duplicated.",
+        "source": "Use when reasoning about type as a medical facet of medical — vocabulary pivot to @/type; nested not duplicated.",
         "uuid": "dd888973-08b3-8df0-b58f-6c3f8294a61a",
         "words": [
           "use",
@@ -48964,7 +52694,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about type as a medical facet of [[medical]] — vocabulary pivot to @/type; nested not duplicated."
+          "en": "Use when reasoning about type as a medical facet of medical — vocabulary pivot to @/type; nested not duplicated."
         }
       }
     ]
@@ -48986,7 +52716,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when reasoning about web as a medical facet of [[medical]] — vocabulary pivot to @/web; nested not duplicated.",
+        "source": "Use when reasoning about web as a medical facet of medical — vocabulary pivot to @/web; nested not duplicated.",
         "uuid": "04656faa-d7cf-86c5-8c27-7b48082833c5",
         "words": [
           "use",
@@ -49009,7 +52739,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "duplicated"
         ],
         "values": {
-          "en": "Use when reasoning about web as a medical facet of [[medical]] — vocabulary pivot to @/web; nested not duplicated."
+          "en": "Use when reasoning about web as a medical facet of medical — vocabulary pivot to @/web; nested not duplicated."
         }
       }
     ]
@@ -49086,7 +52816,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice ([[memory/architecture]]); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key).",
+        "source": "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice (memory/architecture); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key).",
         "uuid": "07466921-1404-8f7b-a535-cb04bdd3dd59",
         "words": [
           "use",
@@ -49140,7 +52870,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "key"
         ],
         "values": {
-          "en": "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice ([[memory/architecture]]); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key)."
+          "en": "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice (memory/architecture); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key)."
         }
       }
     ]
@@ -49670,6 +53400,31 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "fold"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about fold — and the folds built on it: , , , and the two roots · .",
+        "uuid": "e8e672ff-5f89-8053-97b1-e64c3cd95579",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "fold",
+          "and",
+          "the",
+          "folds",
+          "built",
+          "on",
+          "it",
+          "and",
+          "the",
+          "two",
+          "roots"
+        ],
+        "values": {
+          "en": "Use when reasoning about fold — and the folds built on it: , , , and the two roots · ."
+        }
       }
     ]
   },
@@ -49686,6 +53441,40 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "order"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about order — erpax folds content-uuids to a root in two different ways, and both are correct for what they answer:",
+        "uuid": "7c07fa1a-0386-816c-ab05-66b4655201b5",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "order",
+          "erpax",
+          "folds",
+          "content",
+          "uuids",
+          "to",
+          "a",
+          "root",
+          "in",
+          "two",
+          "different",
+          "ways",
+          "and",
+          "both",
+          "are",
+          "correct",
+          "for",
+          "what",
+          "they",
+          "answer"
+        ],
+        "values": {
+          "en": "Use when reasoning about order — erpax folds content-uuids to a root in two different ways, and both are correct for what they answer:"
         }
       }
     ]
@@ -50247,6 +54036,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "face"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about face — Every number in this session reached its reader as a sentence. *\\\"48 blind probes\\\"*, *\\\"1.6× slower cached\\\"*, *\\\"237 dead pointers\\\"* — each true when written, none checkable by the…",
+        "uuid": "8aeedd25-3811-85a1-9e42-3d6fba5a8d2e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "face",
+          "every",
+          "number",
+          "in",
+          "this",
+          "session",
+          "reached",
+          "its",
+          "reader",
+          "as",
+          "a",
+          "sentence",
+          "blind",
+          "probes",
+          "slower",
+          "cached",
+          "dead",
+          "pointers",
+          "each",
+          "true",
+          "when",
+          "written",
+          "none",
+          "checkable",
+          "by",
+          "the"
+        ],
+        "values": {
+          "en": "Use when reasoning about face — Every number in this session reached its reader as a sentence. *\\\"48 blind probes\\\"*, *\\\"1.6× slower cached\\\"*, *\\\"237 dead pointers\\\"* — each true when written, none checkable by the…"
+        }
       }
     ]
   },
@@ -50535,9 +54364,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
-        "uuid": "6a1fde1c-db11-85ed-891b-fc20fc2dd891",
+        "source": "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
+        "uuid": "965724e0-e1e3-8836-b12e-0879ac6774a3",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "closure",
           "use",
           "to",
           "decide",
@@ -50643,7 +54477,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "be"
         ],
         "values": {
-          "en": "Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be."
+          "en": "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be."
         }
       }
     ]
@@ -51154,9 +54988,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "`Money` value type — integer-cents amount + ISO 4217 currency.",
-        "uuid": "9dc76999-fcc6-81f8-b68e-cd89192526e3",
+        "source": "Use when reasoning about money — `Money` value type — integer-cents amount + ISO 4217 currency.",
+        "uuid": "7c7b1aa6-a796-8cc3-92cc-1418f4aed523",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "money",
           "money",
           "value",
           "type",
@@ -51167,7 +55006,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "currency"
         ],
         "values": {
-          "en": "`Money` value type — integer-cents amount + ISO 4217 currency."
+          "en": "Use when reasoning about money — `Money` value type — integer-cents amount + ISO 4217 currency."
         }
       }
     ]
@@ -51358,9 +55197,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "monitor/violations/improve — map violation → deterministic improve action.",
-        "uuid": "030404e3-5236-8306-817f-8295a1f0960f",
+        "source": "Use when reasoning about improve — monitor/violations/improve — map violation → deterministic improve action.",
+        "uuid": "619b7055-e12c-8d14-912f-3bccadebed3a",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "improve",
           "monitor",
           "violations",
           "improve",
@@ -51371,7 +55215,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "action"
         ],
         "values": {
-          "en": "monitor/violations/improve — map violation → deterministic improve action."
+          "en": "Use when reasoning about improve — monitor/violations/improve — map violation → deterministic improve action."
         }
       }
     ]
@@ -51536,6 +55380,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "search"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about search — Identification answers a typed identifier. Anything else routes here: runs a tenant-scoped query across the collections in scope, ORing over the text fields reports for each, and…",
+        "uuid": "cc0c708e-3501-8273-814e-e6ea8335b8af",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "search",
+          "identification",
+          "answers",
+          "a",
+          "typed",
+          "identifier",
+          "anything",
+          "else",
+          "routes",
+          "here",
+          "runs",
+          "a",
+          "tenant",
+          "scoped",
+          "query",
+          "across",
+          "the",
+          "collections",
+          "in",
+          "scope",
+          "oring",
+          "over",
+          "the",
+          "text",
+          "fields",
+          "reports",
+          "for",
+          "each",
+          "and"
+        ],
+        "values": {
+          "en": "Use when reasoning about search — Identification answers a typed identifier. Anything else routes here: runs a tenant-scoped query across the collections in scope, ORing over the text fields reports for each, and…"
+        }
       }
     ]
   },
@@ -51657,11 +55544,17 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Наредба Н-18 чл.",
-        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
-        "words": [],
+        "source": "Use when reasoning about scope — Наредба Н-18 чл.",
+        "uuid": "d0e73c79-1b93-846e-bcce-114ade05d312",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "scope"
+        ],
         "values": {
-          "en": "Наредба Н-18 чл."
+          "en": "Use when reasoning about scope — Наредба Н-18 чл."
         }
       }
     ]
@@ -51683,15 +55576,20 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number).",
-        "uuid": "76dcaea2-bb1d-8bd4-b33c-1a90fd73f067",
+        "source": "Use when reasoning about unp — Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number).",
+        "uuid": "20be7c0c-0f7e-83b0-8bd8-d8aa15ca6988",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "unp",
           "unique",
           "sales",
           "number"
         ],
         "values": {
-          "en": "Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number)."
+          "en": "Use when reasoning about unp — Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number)."
         }
       }
     ]
@@ -51839,6 +55737,44 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "groups"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about groups — names the one-word parents that root vocabulary nests under, and derives each atom's admin group from its path prefix. decides membership.",
+        "uuid": "a76b105f-cd9a-80ac-b36b-38a673d5fc95",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "groups",
+          "names",
+          "the",
+          "one",
+          "word",
+          "parents",
+          "that",
+          "root",
+          "vocabulary",
+          "nests",
+          "under",
+          "and",
+          "derives",
+          "each",
+          "atom",
+          "s",
+          "admin",
+          "group",
+          "from",
+          "its",
+          "path",
+          "prefix",
+          "decides",
+          "membership"
+        ],
+        "values": {
+          "en": "Use when reasoning about groups — names the one-word parents that root vocabulary nests under, and derives each atom's admin group from its path prefix. decides membership."
+        }
       }
     ]
   },
@@ -51985,9 +55921,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language.",
-        "uuid": "9e2a48c7-9bc1-89d2-afb1-23bd30f5f877",
+        "source": "Use when reasoning about conventions — Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language.",
+        "uuid": "5c0258c2-923d-869f-a615-7aeb4ee1d94a",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "conventions",
           "unix",
           "style",
           "rwx",
@@ -52032,7 +55973,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "language"
         ],
         "values": {
-          "en": "Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language."
+          "en": "Use when reasoning about conventions — Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language."
         }
       }
     ]
@@ -52054,9 +55995,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Pure predicates over {@link RoleDefinition} rows (`roles` collection).",
-        "uuid": "915cf258-db5f-81fd-b9e8-3e3675928c25",
+        "source": "Use when reasoning about predicates — Pure predicates over {@link RoleDefinition} rows (`roles` collection).",
+        "uuid": "7496e8cb-d868-8d85-a421-35900885a6c4",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "predicates",
           "pure",
           "predicates",
           "over",
@@ -52067,7 +56013,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "collection"
         ],
         "values": {
-          "en": "Pure predicates over {@link RoleDefinition} rows (`roles` collection)."
+          "en": "Use when reasoning about predicates — Pure predicates over {@link RoleDefinition} rows (`roles` collection)."
         }
       }
     ]
@@ -53081,9 +57027,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Quantum orchestration engine for parallel Millennium Problem computation",
-        "uuid": "13a8ee2f-ddbd-8338-bd7b-ace2cab817a3",
+        "source": "Use when reasoning about orchestrate — Quantum orchestration engine for parallel Millennium Problem computation",
+        "uuid": "5f66782d-0581-8978-893f-4a9022688ef6",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "orchestrate",
           "quantum",
           "orchestration",
           "engine",
@@ -53094,7 +57045,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "computation"
         ],
         "values": {
-          "en": "Quantum orchestration engine for parallel Millennium Problem computation"
+          "en": "Use when reasoning about orchestrate — Quantum orchestration engine for parallel Millennium Problem computation"
         }
       }
     ]
@@ -53207,9 +57158,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the two Bulgarian rails erpax codes against — БНБ daily exchange rates (CODE/REVERSERATE/RATE XML) and Търговски Регистър merchant lookup by дело. Both addresses were dead in production and are now fixed and captured; the contracts pin the euro-era shape, the DD.MM.YYYY fixing date, and the two 200-under-HTML traps that make a working endpoint read as no data.",
-        "uuid": "88686d2f-41cc-8d00-b347-72abf7e1fc12",
+        "source": "Use when reasoning about bg — Use for the two Bulgarian rails erpax codes against — БНБ daily exchange rates (CODE/REVERSERATE/RATE XML) and Търговски Регистър merchant lookup by дело. Both addresses were dead in production and are now fixed and captured; the contracts pin the euro-era shape, the DD.MM.YYYY fixing date, and the two 200-under-HTML traps that make a working endpoint read as no data.",
+        "uuid": "30f1deb1-2f8c-8e62-9100-bee3d2799797",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "bg",
           "use",
           "for",
           "the",
@@ -53272,7 +57228,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "data"
         ],
         "values": {
-          "en": "Use for the two Bulgarian rails erpax codes against — БНБ daily exchange rates (CODE/REVERSERATE/RATE XML) and Търговски Регистър merchant lookup by дело. Both addresses were dead in production and are now fixed and captured; the contracts pin the euro-era shape, the DD.MM.YYYY fixing date, and the two 200-under-HTML traps that make a working endpoint read as no data."
+          "en": "Use when reasoning about bg — Use for the two Bulgarian rails erpax codes against — БНБ daily exchange rates (CODE/REVERSERATE/RATE XML) and Търговски Регистър merchant lookup by дело. Both addresses were dead in production and are now fixed and captured; the contracts pin the euro-era shape, the DD.MM.YYYY fixing date, and the two 200-under-HTML traps that make a working endpoint read as no data."
         }
       }
     ]
@@ -53544,9 +57500,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200.",
-        "uuid": "ef80e4f7-b88d-8e37-8e87-519345b40eb7",
+        "source": "Use when reasoning about world — Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200.",
+        "uuid": "653efe0d-081f-8e1f-b5f9-c9a6f7cc5242",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "world",
           "use",
           "for",
           "the",
@@ -53607,7 +57568,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "http"
         ],
         "values": {
-          "en": "Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200."
+          "en": "Use when reasoning about world — Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200."
         }
       }
     ]
@@ -53928,6 +57889,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "range"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about range — renders which slice of a result set is being shown. The component is because it is JSX; this barrel re-exports it so importers name the atom rather than the spelling of its file.",
+        "uuid": "af86d391-9199-8107-8ff3-01a6856fa37f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "range",
+          "renders",
+          "which",
+          "slice",
+          "of",
+          "a",
+          "result",
+          "set",
+          "is",
+          "being",
+          "shown",
+          "the",
+          "component",
+          "is",
+          "because",
+          "it",
+          "is",
+          "jsx",
+          "this",
+          "barrel",
+          "re",
+          "exports",
+          "it",
+          "so",
+          "importers",
+          "name",
+          "the",
+          "atom",
+          "rather",
+          "than",
+          "the",
+          "spelling",
+          "of",
+          "its",
+          "file"
+        ],
+        "values": {
+          "en": "Use when reasoning about range — renders which slice of a result set is being shown. The component is because it is JSX; this barrel re-exports it so importers name the atom rather than the spelling of its file."
         }
       }
     ]
@@ -54609,6 +58619,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "payable"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about payable — The A/P field factories: the shapes a bill carries — bill number, vendor, due date, payment terms, A/P analysis. (the type module) is a set of these; this atom is the one.",
+        "uuid": "9a389d4d-1f99-8533-b90a-07cef4af2a99",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "payable",
+          "the",
+          "a",
+          "p",
+          "field",
+          "factories",
+          "the",
+          "shapes",
+          "a",
+          "bill",
+          "carries",
+          "bill",
+          "number",
+          "vendor",
+          "due",
+          "date",
+          "payment",
+          "terms",
+          "a",
+          "p",
+          "analysis",
+          "the",
+          "type",
+          "module",
+          "is",
+          "a",
+          "set",
+          "of",
+          "these",
+          "this",
+          "atom",
+          "is",
+          "the",
+          "one"
+        ],
+        "values": {
+          "en": "Use when reasoning about payable — The A/P field factories: the shapes a bill carries — bill number, vendor, due date, payment terms, A/P analysis. (the type module) is a set of these; this atom is the one."
+        }
       }
     ]
   },
@@ -54625,6 +58683,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "aging"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about aging — Wraps party/aging with A/P-shaped output — , — and adds the cash-flow-impact section the payables side needs and the receivables side does not.",
+        "uuid": "39588842-46a8-8b60-b728-56cc08bdf23c",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "aging",
+          "wraps",
+          "party",
+          "aging",
+          "with",
+          "a",
+          "p",
+          "shaped",
+          "output",
+          "and",
+          "adds",
+          "the",
+          "cash",
+          "flow",
+          "impact",
+          "section",
+          "the",
+          "payables",
+          "side",
+          "needs",
+          "and",
+          "the",
+          "receivables",
+          "side",
+          "does",
+          "not"
+        ],
+        "values": {
+          "en": "Use when reasoning about aging — Wraps party/aging with A/P-shaped output — , — and adds the cash-flow-impact section the payables side needs and the receivables side does not."
         }
       }
     ]
@@ -54643,6 +58741,33 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "analytics"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about analytics — Days Payable Outstanding, vendor performance and spend analysis over the bill set.",
+        "uuid": "de0817d9-34df-81f4-9ea6-101b640d093d",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "analytics",
+          "days",
+          "payable",
+          "outstanding",
+          "vendor",
+          "performance",
+          "and",
+          "spend",
+          "analysis",
+          "over",
+          "the",
+          "bill",
+          "set"
+        ],
+        "values": {
+          "en": "Use when reasoning about analytics — Days Payable Outstanding, vendor performance and spend analysis over the bill set."
+        }
       }
     ]
   },
@@ -54660,6 +58785,32 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "discounts"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about discounts — \\\"2/10 Net 30\\\" — 2% off if paid within 10 days, otherwise the full balance at 30.",
+        "uuid": "7ad5220e-b71a-84a8-ae8e-82ab18ace8e8",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "discounts",
+          "net",
+          "off",
+          "if",
+          "paid",
+          "within",
+          "days",
+          "otherwise",
+          "the",
+          "full",
+          "balance",
+          "at"
+        ],
+        "values": {
+          "en": "Use when reasoning about discounts — \\\"2/10 Net 30\\\" — 2% off if paid within 10 days, otherwise the full balance at 30."
+        }
       }
     ]
   },
@@ -54676,6 +58827,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "workflow"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about workflow — A bill moves through a fixed set of states, and only along edges the graph allows.",
+        "uuid": "61d9dab4-e12b-8a08-88b7-670a786c57dc",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "workflow",
+          "a",
+          "bill",
+          "moves",
+          "through",
+          "a",
+          "fixed",
+          "set",
+          "of",
+          "states",
+          "and",
+          "only",
+          "along",
+          "edges",
+          "the",
+          "graph",
+          "allows"
+        ],
+        "values": {
+          "en": "Use when reasoning about workflow — A bill moves through a fixed set of states, and only along edges the graph allows."
         }
       }
     ]
@@ -54835,6 +59017,34 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "redirect"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about redirect — resolves a requested path against the redirects collection and sends the reader on.",
+        "uuid": "d58f7a1c-d904-833b-a71a-ce35c20acfce",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "redirect",
+          "resolves",
+          "a",
+          "requested",
+          "path",
+          "against",
+          "the",
+          "redirects",
+          "collection",
+          "and",
+          "sends",
+          "the",
+          "reader",
+          "on"
+        ],
+        "values": {
+          "en": "Use when reasoning about redirect — resolves a requested path against the redirects collection and sends the reader on."
+        }
       }
     ]
   },
@@ -54851,6 +59061,47 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "sdk"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about sdk — resolves the API base URL for the runtime it finds itself in, then returns a singleton in the browser and a fresh instance on the server.",
+        "uuid": "b4f43332-233d-8877-8d23-4e928810a630",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "sdk",
+          "resolves",
+          "the",
+          "api",
+          "base",
+          "url",
+          "for",
+          "the",
+          "runtime",
+          "it",
+          "finds",
+          "itself",
+          "in",
+          "then",
+          "returns",
+          "a",
+          "singleton",
+          "in",
+          "the",
+          "browser",
+          "and",
+          "a",
+          "fresh",
+          "instance",
+          "on",
+          "the",
+          "server"
+        ],
+        "values": {
+          "en": "Use when reasoning about sdk — resolves the API base URL for the runtime it finds itself in, then returns a singleton in the browser and a fresh instance on the server."
         }
       }
     ]
@@ -54992,6 +59243,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "hooks"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — Every hook sibling is re-exported here, so a collection writes rather than naming each file.",
+        "uuid": "2397940e-d58d-818f-9b63-d03dd52953fd",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "every",
+          "hook",
+          "sibling",
+          "is",
+          "re",
+          "exported",
+          "here",
+          "so",
+          "a",
+          "collection",
+          "writes",
+          "rather",
+          "than",
+          "naming",
+          "each",
+          "file"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — Every hook sibling is re-exported here, so a collection writes rather than naming each file."
         }
       }
     ]
@@ -55140,9 +59422,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931.",
-        "uuid": "d56ffbd9-845c-8178-81a9-d2d1b35cc380",
+        "source": "Use when reasoning about types — Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931.",
+        "uuid": "4bbcc2a2-e00f-8427-a81e-35f9616d8200",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "canonical",
           "peppol",
           "bis",
@@ -55153,7 +59440,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "en"
         ],
         "values": {
-          "en": "Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931."
+          "en": "Use when reasoning about types — Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931."
         }
       }
     ]
@@ -55772,7 +60059,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for [[readme]].",
+        "source": "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for readme.",
         "uuid": "eb966216-7ba4-8afd-8cdc-ac387842d1eb",
         "words": [
           "use",
@@ -55810,7 +60097,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "readme"
         ],
         "values": {
-          "en": "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for [[readme]]."
+          "en": "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for readme."
         }
       }
     ]
@@ -56034,6 +60321,41 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "readiness"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about readiness — enumerates the live MCP tool surface and groups it; folds that into a single manifest a reader can act on.",
+        "uuid": "1ea45002-7729-8e91-8142-ef53d7ed5295",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "readiness",
+          "enumerates",
+          "the",
+          "live",
+          "mcp",
+          "tool",
+          "surface",
+          "and",
+          "groups",
+          "it",
+          "folds",
+          "that",
+          "into",
+          "a",
+          "single",
+          "manifest",
+          "a",
+          "reader",
+          "can",
+          "act",
+          "on"
+        ],
+        "values": {
+          "en": "Use when reasoning about readiness — enumerates the live MCP tool surface and groups it; folds that into a single manifest a reader can act on."
+        }
       }
     ]
   },
@@ -56156,7 +60478,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a [[diamond]] — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions.",
+        "source": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a diamond — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions.",
         "uuid": "cd12c479-b3e0-81f0-946b-fb6c01db87d8",
         "words": [
           "use",
@@ -56203,7 +60525,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "extensions"
         ],
         "values": {
-          "en": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a [[diamond]] — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions."
+          "en": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a diamond — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions."
         }
       }
     ]
@@ -56290,9 +60612,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "plugins/emit — generate Claude Code plugin manifests for erpax.",
-        "uuid": "827133e3-d100-8804-bbd3-cbcf6c9917e9",
+        "source": "Use when reasoning about emit — plugins/emit — generate Claude Code plugin manifests for erpax.",
+        "uuid": "988ea9f5-7231-88b2-9a1b-bb9e4736b20b",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "emit",
           "plugins",
           "emit",
           "generate",
@@ -56304,7 +60631,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "erpax"
         ],
         "values": {
-          "en": "plugins/emit — generate Claude Code plugin manifests for erpax."
+          "en": "Use when reasoning about emit — plugins/emit — generate Claude Code plugin manifests for erpax."
         }
       }
     ]
@@ -56391,6 +60718,35 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "naming"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about naming — names every internal table and column by content-addressing the path it sits at.",
+        "uuid": "a7aab037-61a8-8e99-934b-c7fe8dff3295",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "naming",
+          "names",
+          "every",
+          "internal",
+          "table",
+          "and",
+          "column",
+          "by",
+          "content",
+          "addressing",
+          "the",
+          "path",
+          "it",
+          "sits",
+          "at"
+        ],
+        "values": {
+          "en": "Use when reasoning about naming — names every internal table and column by content-addressing the path it sits at."
+        }
       }
     ]
   },
@@ -56408,6 +60764,45 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "taggable"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about taggable — makes every record taggable without adding a relationship per collection: the tag references the record's **content-uuid**, so one edge type reaches everything.",
+        "uuid": "54b21223-31e3-8452-8ca8-dc1484f3e6ea",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "taggable",
+          "makes",
+          "every",
+          "record",
+          "taggable",
+          "without",
+          "adding",
+          "a",
+          "relationship",
+          "per",
+          "collection",
+          "the",
+          "tag",
+          "references",
+          "the",
+          "record",
+          "s",
+          "content",
+          "uuid",
+          "so",
+          "one",
+          "edge",
+          "type",
+          "reaches",
+          "everything"
+        ],
+        "values": {
+          "en": "Use when reasoning about taggable — makes every record taggable without adding a relationship per collection: the tag references the record's **content-uuid**, so one edge type reaches everything."
+        }
       }
     ]
   },
@@ -56424,6 +60819,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "versions"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about versions — turns on Payload's native for every collection except those named in , with bounding the history.",
+        "uuid": "cf16dcc3-c6e2-8fed-8b41-0f7dd49b02a0",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "versions",
+          "turns",
+          "on",
+          "payload",
+          "s",
+          "native",
+          "for",
+          "every",
+          "collection",
+          "except",
+          "those",
+          "named",
+          "in",
+          "with",
+          "bounding",
+          "the",
+          "history"
+        ],
+        "values": {
+          "en": "Use when reasoning about versions — turns on Payload's native for every collection except those named in , with bounding the history."
         }
       }
     ]
@@ -56948,9 +61374,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "NIST post-quantum cryptography (Kyber-768 + SPHINCS+)",
-        "uuid": "68954dce-5810-8ad1-af4e-3526efe2505f",
+        "source": "Use when reasoning about pqc — NIST post-quantum cryptography (Kyber-768 + SPHINCS+)",
+        "uuid": "c312e431-ef09-8afd-b284-7b6ddd1eef36",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "pqc",
           "nist",
           "post",
           "quantum",
@@ -56959,7 +61390,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "sphincs"
         ],
         "values": {
-          "en": "NIST post-quantum cryptography (Kyber-768 + SPHINCS+)"
+          "en": "Use when reasoning about pqc — NIST post-quantum cryptography (Kyber-768 + SPHINCS+)"
         }
       }
     ]
@@ -57224,6 +61655,48 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "price"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about price — The ecommerce plugin generates one column per supported currency. resolves the right one for the requested currency and renders it, so application code never names and never…",
+        "uuid": "2a211442-b9af-8ff8-a6af-04f416db87d8",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "price",
+          "the",
+          "ecommerce",
+          "plugin",
+          "generates",
+          "one",
+          "column",
+          "per",
+          "supported",
+          "currency",
+          "resolves",
+          "the",
+          "right",
+          "one",
+          "for",
+          "the",
+          "requested",
+          "currency",
+          "and",
+          "renders",
+          "it",
+          "so",
+          "application",
+          "code",
+          "never",
+          "names",
+          "and",
+          "never"
+        ],
+        "values": {
+          "en": "Use when reasoning about price — The ecommerce plugin generates one column per supported currency. resolves the right one for the requested currency and renders it, so application code never names and never…"
+        }
       }
     ]
   },
@@ -57316,6 +61789,40 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "accepted"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about accepted — erpax carries Lean under . **Nothing ran it** — no CI lane, no npm script, no import. Asked, the kernel answers:",
+        "uuid": "327bcb00-20ff-8c01-b19e-3637c90e1998",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "accepted",
+          "erpax",
+          "carries",
+          "lean",
+          "under",
+          "nothing",
+          "ran",
+          "it",
+          "no",
+          "ci",
+          "lane",
+          "no",
+          "npm",
+          "script",
+          "no",
+          "import",
+          "asked",
+          "the",
+          "kernel",
+          "answers"
+        ],
+        "values": {
+          "en": "Use when reasoning about accepted — erpax carries Lean under . **Nothing ran it** — no CI lane, no npm script, no import. Asked, the kernel answers:"
         }
       }
     ]
@@ -57411,6 +61918,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "register"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**.",
+        "uuid": "aad8ced0-71ce-8de9-9afb-8e7af72d7a18",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "register",
+          "a",
+          "theorem",
+          "is",
+          "only",
+          "as",
+          "strong",
+          "as",
+          "what",
+          "it",
+          "assumes",
+          "this",
+          "asks",
+          "the",
+          "kernel",
+          "per",
+          "declaration",
+          "and",
+          "writes",
+          "the",
+          "answer",
+          "down",
+          "is",
+          "the",
+          "arbiter",
+          "and",
+          "it",
+          "is",
+          "asked",
+          "never",
+          "restated"
+        ],
+        "values": {
+          "en": "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**."
+        }
       }
     ]
   },
@@ -57427,6 +61979,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "replaceable"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…",
+        "uuid": "492bae57-fa5c-806a-b70a-e5cf18b0b578",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "replaceable",
+          "erpax",
+          "cites",
+          "iso",
+          "rfc",
+          "wcag",
+          "and",
+          "statute",
+          "across",
+          "atoms",
+          "every",
+          "one",
+          "of",
+          "those",
+          "citations",
+          "is",
+          "an",
+          "assumption",
+          "about",
+          "the",
+          "world",
+          "until",
+          "something",
+          "can",
+          "contradict",
+          "it",
+          "what",
+          "turns",
+          "a",
+          "citation"
+        ],
+        "values": {
+          "en": "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…"
         }
       }
     ]
@@ -57735,6 +62331,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "theme"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about theme — The site theme is one value ( ). The header's is a second, because the header floats over whatever the page puts beneath it: a full-bleed hero paints a dark field and white text…",
+        "uuid": "117db5c1-bf39-8f9f-9c7e-889c0b5052bc",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "theme",
+          "the",
+          "site",
+          "theme",
+          "is",
+          "one",
+          "value",
+          "the",
+          "header",
+          "s",
+          "is",
+          "a",
+          "second",
+          "because",
+          "the",
+          "header",
+          "floats",
+          "over",
+          "whatever",
+          "the",
+          "page",
+          "puts",
+          "beneath",
+          "it",
+          "a",
+          "full",
+          "bleed",
+          "hero",
+          "paints",
+          "a",
+          "dark",
+          "field",
+          "and",
+          "white",
+          "text"
+        ],
+        "values": {
+          "en": "Use when reasoning about theme — The site theme is one value ( ). The header's is a second, because the header floats over whatever the page puts beneath it: a full-bleed hero paints a dark field and white text…"
+        }
       }
     ]
   },
@@ -57751,6 +62396,48 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "theme"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about theme — Three states, not two. A theme can be **light**, **dark**, or **unset** — and unset does not mean a default was chosen, it means *follow the operating system*.",
+        "uuid": "e3d428ea-7e6a-800c-817f-5f6c8dacad45",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "theme",
+          "three",
+          "states",
+          "not",
+          "two",
+          "a",
+          "theme",
+          "can",
+          "be",
+          "light",
+          "dark",
+          "or",
+          "unset",
+          "and",
+          "unset",
+          "does",
+          "not",
+          "mean",
+          "a",
+          "default",
+          "was",
+          "chosen",
+          "it",
+          "means",
+          "follow",
+          "the",
+          "operating",
+          "system"
+        ],
+        "values": {
+          "en": "Use when reasoning about theme — Three states, not two. A theme can be **light**, **dark**, or **unset** — and unset does not mean a default was chosen, it means *follow the operating system*."
         }
       }
     ]
@@ -57769,6 +62456,36 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "theme"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about theme — A theme applied by React is applied *after* hydration, and hydration happens after first paint.",
+        "uuid": "b0a02fbc-632d-897a-83a6-393e0cde2702",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "theme",
+          "a",
+          "theme",
+          "applied",
+          "by",
+          "react",
+          "is",
+          "applied",
+          "after",
+          "hydration",
+          "and",
+          "hydration",
+          "happens",
+          "after",
+          "first",
+          "paint"
+        ],
+        "values": {
+          "en": "Use when reasoning about theme — A theme applied by React is applied *after* hydration, and hydration happens after first paint."
+        }
       }
     ]
   },
@@ -57785,6 +62502,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "selector"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about selector — The control that lets a person choose light, dark, or **auto**. Auto is not a synonym for the current system value: choosing it *clears* the stored preference, so the page follows…",
+        "uuid": "e9566120-0170-8f24-af9c-740c02f70d5d",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "selector",
+          "the",
+          "control",
+          "that",
+          "lets",
+          "a",
+          "person",
+          "choose",
+          "light",
+          "dark",
+          "or",
+          "auto",
+          "auto",
+          "is",
+          "not",
+          "a",
+          "synonym",
+          "for",
+          "the",
+          "current",
+          "system",
+          "value",
+          "choosing",
+          "it",
+          "clears",
+          "the",
+          "stored",
+          "preference",
+          "so",
+          "the",
+          "page",
+          "follows"
+        ],
+        "values": {
+          "en": "Use when reasoning about selector — The control that lets a person choose light, dark, or **auto**. Auto is not a synonym for the current system value: choosing it *clears* the stored preference, so the page follows…"
         }
       }
     ]
@@ -57806,9 +62569,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication",
-        "uuid": "fb1ef5af-a542-82b4-96ff-e7eda7b3b205",
+        "source": "Use when reasoning about publication — Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication",
+        "uuid": "dc4807a5-ac57-8183-802f-bc97dab1dbd9",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "publication",
           "zenodo",
           "v1",
           "release",
@@ -57822,7 +62590,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "publication"
         ],
         "values": {
-          "en": "Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication"
+          "en": "Use when reasoning about publication — Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication"
         }
       }
     ]
@@ -57920,6 +62688,33 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "complete"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about complete — Completeness is **required**, and it is not what a single listing reports.",
+        "uuid": "89f48e68-6fa0-8c3c-8063-85423722fbcc",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "complete",
+          "completeness",
+          "is",
+          "required",
+          "and",
+          "it",
+          "is",
+          "not",
+          "what",
+          "a",
+          "single",
+          "listing",
+          "reports"
+        ],
+        "values": {
+          "en": "Use when reasoning about complete — Completeness is **required**, and it is not what a single listing reports."
+        }
       }
     ]
   },
@@ -57936,6 +62731,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "harvest"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about harvest — rules/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted and logged .",
+        "uuid": "13761bfc-5fb8-85a9-9df1-90b36aab390f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "harvest",
+          "rules",
+          "forge",
+          "established",
+          "the",
+          "negative",
+          "an",
+          "identifier",
+          "only",
+          "a",
+          "registry",
+          "may",
+          "assign",
+          "is",
+          "received",
+          "or",
+          "refused",
+          "never",
+          "generated",
+          "three",
+          "sites",
+          "here",
+          "once",
+          "minted",
+          "and",
+          "logged"
+        ],
+        "values": {
+          "en": "Use when reasoning about harvest — rules/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted and logged ."
         }
       }
     ]
@@ -58012,6 +62847,35 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "registry"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand.",
+        "uuid": "cca27e29-16ee-8f2a-8e3b-92087f414757",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "registry",
+          "which",
+          "of",
+          "atoms",
+          "this",
+          "corpus",
+          "can",
+          "honestly",
+          "publish",
+          "computed",
+          "rather",
+          "than",
+          "kept",
+          "by",
+          "hand"
+        ],
+        "values": {
+          "en": "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand."
         }
       }
     ]
@@ -58600,6 +63464,43 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "budget"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use.",
+        "uuid": "0f3a05c6-1405-84f5-8e01-aff388840010",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "budget",
+          "the",
+          "corpus",
+          "declares",
+          "an",
+          "agent",
+          "context",
+          "ceiling",
+          "is",
+          "and",
+          "enforces",
+          "it",
+          "inside",
+          "the",
+          "lazy",
+          "loader",
+          "the",
+          "orientation",
+          "tells",
+          "every",
+          "agent",
+          "to",
+          "use"
+        ],
+        "values": {
+          "en": "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use."
+        }
       }
     ]
   },
@@ -58866,9 +63767,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Coverage calculation — measure answered question fraction",
-        "uuid": "459ca07d-9432-80d5-b42d-f56a3e88e578",
+        "source": "Use when reasoning about coverage — Coverage calculation — measure answered question fraction",
+        "uuid": "64f782f6-2ea7-8e12-84c4-49c306dfadda",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "coverage",
           "coverage",
           "calculation",
           "measure",
@@ -58877,7 +63783,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "fraction"
         ],
         "values": {
-          "en": "Coverage calculation — measure answered question fraction"
+          "en": "Use when reasoning about coverage — Coverage calculation — measure answered question fraction"
         }
       }
     ]
@@ -58899,9 +63805,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Merkle chain operations — fold message-uuids into tamper-evident thread-uuids",
-        "uuid": "302c80b4-7dda-8c29-a0ed-c4604a2e13b3",
+        "source": "Use when reasoning about merkle — Merkle chain operations — fold message-uuids into tamper-evident thread-uuids",
+        "uuid": "739f2075-4c04-80e5-b837-0ab6f8497746",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "merkle",
           "merkle",
           "chain",
           "operations",
@@ -58915,7 +63826,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "uuids"
         ],
         "values": {
-          "en": "Merkle chain operations — fold message-uuids into tamper-evident thread-uuids"
+          "en": "Use when reasoning about merkle — Merkle chain operations — fold message-uuids into tamper-evident thread-uuids"
         }
       }
     ]
@@ -58937,9 +63848,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Session routing — improve, append, seal chat sessions",
-        "uuid": "54ba5463-d9cf-8e8f-8169-484b6acedc5e",
+        "source": "Use when reasoning about routing — Session routing — improve, append, seal chat sessions",
+        "uuid": "48d6c67b-2933-8148-9377-b4a29bfad3bf",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "routing",
           "session",
           "routing",
           "improve",
@@ -58949,7 +63865,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "sessions"
         ],
         "values": {
-          "en": "Session routing — improve, append, seal chat sessions"
+          "en": "Use when reasoning about routing — Session routing — improve, append, seal chat sessions"
         }
       }
     ]
@@ -60641,9 +65557,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Ciphertext-only receipts that seal plaintext boundaries",
-        "uuid": "7af47262-efbb-84c3-990f-37f9375b2448",
+        "source": "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries",
+        "uuid": "7741faff-9140-8465-9ccb-b19a742c3490",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "cipher",
           "ciphertext",
           "only",
           "receipts",
@@ -60653,7 +65574,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "boundaries"
         ],
         "values": {
-          "en": "Ciphertext-only receipts that seal plaintext boundaries"
+          "en": "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries"
         }
       }
     ]
@@ -60940,9 +65861,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Quantum FTL constants — paths, endpoints, boundary, defaults",
-        "uuid": "e1fc1597-fd6d-85ce-8f82-730d41b95266",
+        "source": "Use when reasoning about constants — Quantum FTL constants — paths, endpoints, boundary, defaults",
+        "uuid": "5fd7a389-c6f2-8a9f-b69b-d89b4e3cf129",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "constants",
           "quantum",
           "ftl",
           "constants",
@@ -60952,7 +65878,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "defaults"
         ],
         "values": {
-          "en": "Quantum FTL constants — paths, endpoints, boundary, defaults"
+          "en": "Use when reasoning about constants — Quantum FTL constants — paths, endpoints, boundary, defaults"
         }
       }
     ]
@@ -60974,9 +65900,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Quantum FTL crack detection — boundaries, crack patterns, discovery",
-        "uuid": "8fe932d9-251f-8995-b49e-d2cccaf4140b",
+        "source": "Use when reasoning about crack — Quantum FTL crack detection — boundaries, crack patterns, discovery",
+        "uuid": "038f95c9-4684-8baa-be22-df5c0f680e37",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "crack",
           "quantum",
           "ftl",
           "crack",
@@ -60987,7 +65918,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "discovery"
         ],
         "values": {
-          "en": "Quantum FTL crack detection — boundaries, crack patterns, discovery"
+          "en": "Use when reasoning about crack — Quantum FTL crack detection — boundaries, crack patterns, discovery"
         }
       }
     ]
@@ -61043,9 +65974,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Quantum FTL metrics — reuse and amortization calculations",
-        "uuid": "f017f78f-68e9-8dfc-801e-d24a91e100ae",
+        "source": "Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations",
+        "uuid": "ff25aa4e-ef18-8238-95c1-0656988f6302",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "metrics",
           "quantum",
           "ftl",
           "metrics",
@@ -61055,7 +65991,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "calculations"
         ],
         "values": {
-          "en": "Quantum FTL metrics — reuse and amortization calculations"
+          "en": "Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations"
         }
       }
     ]
@@ -61462,6 +66398,38 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hexbit"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hexbit — *\\\"Hexbits compute faster than all else\\\"* is two claims wearing one sentence, and they have **opposite** answers.",
+        "uuid": "224b7fac-f884-8806-ad39-45b094139ebf",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hexbit",
+          "hexbits",
+          "compute",
+          "faster",
+          "than",
+          "all",
+          "else",
+          "is",
+          "two",
+          "claims",
+          "wearing",
+          "one",
+          "sentence",
+          "and",
+          "they",
+          "have",
+          "opposite",
+          "answers"
+        ],
+        "values": {
+          "en": "Use when reasoning about hexbit — *\\\"Hexbits compute faster than all else\\\"* is two claims wearing one sentence, and they have **opposite** answers."
+        }
       }
     ]
   },
@@ -61534,6 +66502,44 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "interval"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs.",
+        "uuid": "8498debe-fe4b-8c66-8d0b-0ef6bc21a26b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "interval",
+          "special",
+          "relativity",
+          "s",
+          "decidable",
+          "core",
+          "proved",
+          "for",
+          "all",
+          "integers",
+          "rather",
+          "than",
+          "checked",
+          "on",
+          "a",
+          "carrier",
+          "and",
+          "carrying",
+          "one",
+          "consequence",
+          "this",
+          "corpus",
+          "actually",
+          "needs"
+        ],
+        "values": {
+          "en": "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs."
         }
       }
     ]
@@ -64004,6 +69010,45 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "fingerprint"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about fingerprint — normalises a statement and addresses it, so the same query issued from two places is recognisably one query. records the execution against that address.",
+        "uuid": "f703b219-f144-835d-94bd-250233e91856",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "fingerprint",
+          "normalises",
+          "a",
+          "statement",
+          "and",
+          "addresses",
+          "it",
+          "so",
+          "the",
+          "same",
+          "query",
+          "issued",
+          "from",
+          "two",
+          "places",
+          "is",
+          "recognisably",
+          "one",
+          "query",
+          "records",
+          "the",
+          "execution",
+          "against",
+          "that",
+          "address"
+        ],
+        "values": {
+          "en": "Use when reasoning about fingerprint — normalises a statement and addresses it, so the same query issued from two places is recognisably one query. records the execution against that address."
+        }
       }
     ]
   },
@@ -64297,9 +69342,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "readme/regen — focused computed-face regen (avoids full-corpus `pnpm readme` OOM).",
-        "uuid": "4e51ae72-6d2a-8e52-943f-7f12bd9d12e0",
+        "source": "Use when reasoning about regen — readme/regen — focused computed-face regen (avoids full-corpus `pnpm readme` OOM).",
+        "uuid": "83918c75-e6d5-8083-90d6-43885df2b38d",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "regen",
           "readme",
           "regen",
           "focused",
@@ -64314,7 +69364,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "oom"
         ],
         "values": {
-          "en": "readme/regen — focused computed-face regen (avoids full-corpus `pnpm readme` OOM)."
+          "en": "Use when reasoning about regen — readme/regen — focused computed-face regen (avoids full-corpus `pnpm readme` OOM)."
         }
       }
     ]
@@ -64741,6 +69791,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "receivable"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about receivable — The A/R field factories: the shapes an invoice carries — invoice number, status, due date, payment terms, A/R analysis. (the type module) is a set of these; this atom is the one.",
+        "uuid": "1fb34ffb-c1a3-8c4f-acb7-2c5a0970a183",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "receivable",
+          "the",
+          "a",
+          "r",
+          "field",
+          "factories",
+          "the",
+          "shapes",
+          "an",
+          "invoice",
+          "carries",
+          "invoice",
+          "number",
+          "status",
+          "due",
+          "date",
+          "payment",
+          "terms",
+          "a",
+          "r",
+          "analysis",
+          "the",
+          "type",
+          "module",
+          "is",
+          "a",
+          "set",
+          "of",
+          "these",
+          "this",
+          "atom",
+          "is",
+          "the",
+          "one"
+        ],
+        "values": {
+          "en": "Use when reasoning about receivable — The A/R field factories: the shapes an invoice carries — invoice number, status, due date, payment terms, A/R analysis. (the type module) is a set of these; this atom is the one."
+        }
       }
     ]
   },
@@ -64757,6 +69855,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "aging"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about aging — Wraps party/aging with A/R-shaped output — , . The bucket math is identical to payable/aging; only the naming differs, and the two stay separate so each side names its own…",
+        "uuid": "c27bc996-dd04-827d-a32e-ded964cc1bb0",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "aging",
+          "wraps",
+          "party",
+          "aging",
+          "with",
+          "a",
+          "r",
+          "shaped",
+          "output",
+          "the",
+          "bucket",
+          "math",
+          "is",
+          "identical",
+          "to",
+          "payable",
+          "aging",
+          "only",
+          "the",
+          "naming",
+          "differs",
+          "and",
+          "the",
+          "two",
+          "stay",
+          "separate",
+          "so",
+          "each",
+          "side",
+          "names",
+          "its",
+          "own"
+        ],
+        "values": {
+          "en": "Use when reasoning about aging — Wraps party/aging with A/R-shaped output — , . The bucket math is identical to payable/aging; only the naming differs, and the two stay separate so each side names its own…"
         }
       }
     ]
@@ -64775,6 +69919,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "allowance"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about allowance — The allowance for doubtful accounts as an IFRS 9 §5.5 expected-credit-loss estimate driven by the aging buckets: each bucket carries a loss rate, and the allowance is their…",
+        "uuid": "640f1b87-998b-807f-8476-282acc5adf6d",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "allowance",
+          "the",
+          "allowance",
+          "for",
+          "doubtful",
+          "accounts",
+          "as",
+          "an",
+          "ifrs",
+          "expected",
+          "credit",
+          "loss",
+          "estimate",
+          "driven",
+          "by",
+          "the",
+          "aging",
+          "buckets",
+          "each",
+          "bucket",
+          "carries",
+          "a",
+          "loss",
+          "rate",
+          "and",
+          "the",
+          "allowance",
+          "is",
+          "their"
+        ],
+        "values": {
+          "en": "Use when reasoning about allowance — The allowance for doubtful accounts as an IFRS 9 §5.5 expected-credit-loss estimate driven by the aging buckets: each bucket carries a loss rate, and the allowance is their…"
+        }
       }
     ]
   },
@@ -64792,6 +69979,42 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "analytics"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about analytics — Days Sales Outstanding, receivables turnover and the collection effectiveness index over the invoice set — the A/R mirror of payable/analytics.",
+        "uuid": "60f5810d-1f1e-8d04-9682-b91b6d109910",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "analytics",
+          "days",
+          "sales",
+          "outstanding",
+          "receivables",
+          "turnover",
+          "and",
+          "the",
+          "collection",
+          "effectiveness",
+          "index",
+          "over",
+          "the",
+          "invoice",
+          "set",
+          "the",
+          "a",
+          "r",
+          "mirror",
+          "of",
+          "payable",
+          "analytics"
+        ],
+        "values": {
+          "en": "Use when reasoning about analytics — Days Sales Outstanding, receivables turnover and the collection effectiveness index over the invoice set — the A/R mirror of payable/analytics."
+        }
       }
     ]
   },
@@ -64808,6 +70031,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "workflow"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about workflow — An invoice moves through a fixed set of states, and only along edges the graph allows.",
+        "uuid": "7b2a7c9c-0ec4-8073-aefe-b6a0292673dc",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "workflow",
+          "an",
+          "invoice",
+          "moves",
+          "through",
+          "a",
+          "fixed",
+          "set",
+          "of",
+          "states",
+          "and",
+          "only",
+          "along",
+          "edges",
+          "the",
+          "graph",
+          "allows"
+        ],
+        "values": {
+          "en": "Use when reasoning about workflow — An invoice moves through a fixed set of states, and only along edges the graph allows."
         }
       }
     ]
@@ -64829,9 +70083,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Recursive basis recognition - system generates and observes itself simultaneously",
-        "uuid": "bd46c1f1-a34d-8846-9475-413ec6917452",
+        "source": "Use when reasoning about recursive — Recursive basis recognition - system generates and observes itself simultaneously",
+        "uuid": "bb75cf1f-be32-8ddf-9d67-b64ea23d9ae6",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "recursive",
           "recursive",
           "basis",
           "recognition",
@@ -64843,7 +70102,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "simultaneously"
         ],
         "values": {
-          "en": "Recursive basis recognition - system generates and observes itself simultaneously"
+          "en": "Use when reasoning about recursive — Recursive basis recognition - system generates and observes itself simultaneously"
         }
       }
     ]
@@ -65491,6 +70750,31 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "scene"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about scene — render already projects one content-uuid to **colour · sound · vibration**.",
+        "uuid": "478e26cb-1084-892d-8b79-025c99e31163",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "scene",
+          "render",
+          "already",
+          "projects",
+          "one",
+          "content",
+          "uuid",
+          "to",
+          "colour",
+          "sound",
+          "vibration"
+        ],
+        "values": {
+          "en": "Use when reasoning about scene — render already projects one content-uuid to **colour · sound · vibration**."
+        }
       }
     ]
   },
@@ -65507,6 +70791,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "page"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about page — A public tenant page is a hero followed by its layout blocks, inside an . That is the whole atom, and its value is that it exists **once**: the same composition served from the…",
+        "uuid": "aa962778-6748-8c1f-b341-9c335bc49ab7",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "page",
+          "a",
+          "public",
+          "tenant",
+          "page",
+          "is",
+          "a",
+          "hero",
+          "followed",
+          "by",
+          "its",
+          "layout",
+          "blocks",
+          "inside",
+          "an",
+          "that",
+          "is",
+          "the",
+          "whole",
+          "atom",
+          "and",
+          "its",
+          "value",
+          "is",
+          "that",
+          "it",
+          "exists",
+          "once",
+          "the",
+          "same",
+          "composition",
+          "served",
+          "from",
+          "the"
+        ],
+        "values": {
+          "en": "Use when reasoning about page — A public tenant page is a hero followed by its layout blocks, inside an . That is the whole atom, and its value is that it exists **once**: the same composition served from the…"
         }
       }
     ]
@@ -67132,9 +72464,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches.",
-        "uuid": "76213475-d00d-8a28-9ba8-4df73ee5fcd5",
+        "source": "Use when reasoning about cache — Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches.",
+        "uuid": "0f9d3969-4fd3-82ee-8b69-a77f6eeec84f",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "cache",
           "generic",
           "payload",
           "cms",
@@ -67155,7 +72492,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "fetches"
         ],
         "values": {
-          "en": "Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches."
+          "en": "Use when reasoning about cache — Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches."
         }
       }
     ]
@@ -67229,9 +72566,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "RFC 9110 §13 cached document fetcher (single doc by collection + slug).",
-        "uuid": "f53f2b36-f36e-8b00-82d8-09d770d3461a",
+        "source": "Use when reasoning about document — RFC 9110 §13 cached document fetcher (single doc by collection + slug).",
+        "uuid": "e30c1ee0-f029-85dd-be3c-edff62d9fd4c",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "document",
           "rfc",
           "cached",
           "document",
@@ -67243,7 +72585,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "slug"
         ],
         "values": {
-          "en": "RFC 9110 §13 cached document fetcher (single doc by collection + slug)."
+          "en": "Use when reasoning about document — RFC 9110 §13 cached document fetcher (single doc by collection + slug)."
         }
       }
     ]
@@ -67265,9 +72607,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "RFC 9110 §13 cached global fetcher (per-locale).",
-        "uuid": "b0abc2b3-f441-8333-9196-d4ca2f75531b",
+        "source": "Use when reasoning about globals — RFC 9110 §13 cached global fetcher (per-locale).",
+        "uuid": "722e067c-ceb0-80dd-b0ed-405cf84c5a21",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "globals",
           "rfc",
           "cached",
           "global",
@@ -67276,7 +72623,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "locale"
         ],
         "values": {
-          "en": "RFC 9110 §13 cached global fetcher (per-locale)."
+          "en": "Use when reasoning about globals — RFC 9110 §13 cached global fetcher (per-locale)."
         }
       }
     ]
@@ -67298,9 +72645,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "RFC 9110 §13 cached redirects-collection fetcher.",
-        "uuid": "b5490be1-7819-87be-8788-9f3949a59142",
+        "source": "Use when reasoning about redirects — RFC 9110 §13 cached redirects-collection fetcher.",
+        "uuid": "8d5d2e47-24b7-8b00-8871-c432ba62dc14",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "redirects",
           "rfc",
           "cached",
           "redirects",
@@ -67308,7 +72660,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "fetcher"
         ],
         "values": {
-          "en": "RFC 9110 §13 cached redirects-collection fetcher."
+          "en": "Use when reasoning about redirects — RFC 9110 §13 cached redirects-collection fetcher."
         }
       }
     ]
@@ -67326,6 +72678,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "text"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about text — Lexical's serialized state becomes a React tree here. Most of that is the library's own default converters; what this atom decides is the small part the library cannot know.",
+        "uuid": "07bd5c0f-e029-8500-a3d5-e6cee107182e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "text",
+          "lexical",
+          "s",
+          "serialized",
+          "state",
+          "becomes",
+          "a",
+          "react",
+          "tree",
+          "here",
+          "most",
+          "of",
+          "that",
+          "is",
+          "the",
+          "library",
+          "s",
+          "own",
+          "default",
+          "converters",
+          "what",
+          "this",
+          "atom",
+          "decides",
+          "is",
+          "the",
+          "small",
+          "part",
+          "the",
+          "library",
+          "cannot",
+          "know"
+        ],
+        "values": {
+          "en": "Use when reasoning about text — Lexical's serialized state becomes a React tree here. Most of that is the library's own default converters; what this atom decides is the small part the library cannot know."
         }
       }
     ]
@@ -68621,6 +74019,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "registry"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about registry — binds each role to the standards it answers to and the chain steps it may execute.",
+        "uuid": "e58bd701-980c-8bbb-a686-2b5d792453c2",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "registry",
+          "binds",
+          "each",
+          "role",
+          "to",
+          "the",
+          "standards",
+          "it",
+          "answers",
+          "to",
+          "and",
+          "the",
+          "chain",
+          "steps",
+          "it",
+          "may",
+          "execute"
+        ],
+        "values": {
+          "en": "Use when reasoning about registry — binds each role to the standards it answers to and the chain steps it may execute."
+        }
       }
     ]
   },
@@ -68703,6 +74132,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "hooks"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — refuses a second grant of a role a user already holds. Without it the same role accumulates rows, and every count of \\\"who has this\\\" is wrong by however many times someone clicked.",
+        "uuid": "a970bc18-e260-85c9-b1d8-bd2910dabfaa",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "refuses",
+          "a",
+          "second",
+          "grant",
+          "of",
+          "a",
+          "role",
+          "a",
+          "user",
+          "already",
+          "holds",
+          "without",
+          "it",
+          "the",
+          "same",
+          "role",
+          "accumulates",
+          "rows",
+          "and",
+          "every",
+          "count",
+          "of",
+          "who",
+          "has",
+          "this",
+          "is",
+          "wrong",
+          "by",
+          "however",
+          "many",
+          "times",
+          "someone",
+          "clicked"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — refuses a second grant of a role a user already holds. Without it the same role accumulates rows, and every count of \\\"who has this\\\" is wrong by however many times someone clicked."
         }
       }
     ]
@@ -69600,6 +75077,42 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "alt"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable).",
+        "uuid": "4554dfc3-0989-8cc5-86c3-bcb90ee0249e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "alt",
+          "wcag",
+          "is",
+          "the",
+          "largest",
+          "block",
+          "of",
+          "undischarged",
+          "conformance",
+          "in",
+          "this",
+          "corpus",
+          "atoms",
+          "cite",
+          "it",
+          "and",
+          "nothing",
+          "gates",
+          "any",
+          "criterion",
+          "proof",
+          "replaceable"
+        ],
+        "values": {
+          "en": "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable)."
+        }
       }
     ]
   },
@@ -70109,6 +75622,38 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "command"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed.",
+        "uuid": "74d9c929-73e0-85c6-94d2-6cb3b4c4d01b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "command",
+          "that",
+          "file",
+          "became",
+          "a",
+          "child",
+          "atom",
+          "at",
+          "in",
+          "an",
+          "earlier",
+          "refactor",
+          "and",
+          "the",
+          "shell",
+          "was",
+          "never",
+          "repointed"
+        ],
+        "values": {
+          "en": "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed."
+        }
       }
     ]
   },
@@ -70201,9 +75746,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "rules/concentration — detect logic concentrated in hub index.ts vs child atoms.",
-        "uuid": "a14c09f4-4b45-877a-94a7-6129c5a36dcf",
+        "source": "Use when reasoning about concentration — rules/concentration — detect logic concentrated in hub index.ts vs child atoms.",
+        "uuid": "25736f2c-7723-8dff-b032-d5234f5668b9",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "concentration",
           "rules",
           "concentration",
           "detect",
@@ -70218,7 +75768,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "atoms"
         ],
         "values": {
-          "en": "rules/concentration — detect logic concentrated in hub index.ts vs child atoms."
+          "en": "Use when reasoning about concentration — rules/concentration — detect logic concentrated in hub index.ts vs child atoms."
         }
       }
     ]
@@ -70312,6 +75862,53 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "copy"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…",
+        "uuid": "fc1ae379-3035-8d58-873f-7f800a95a344",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "copy",
+          "this",
+          "corpus",
+          "states",
+          "the",
+          "law",
+          "already",
+          "duplication",
+          "is",
+          "camouflage",
+          "while",
+          "one",
+          "law",
+          "is",
+          "stated",
+          "in",
+          "two",
+          "private",
+          "corners",
+          "nothing",
+          "can",
+          "show",
+          "a",
+          "third",
+          "place",
+          "is",
+          "missing",
+          "it",
+          "it",
+          "has",
+          "paid",
+          "for",
+          "it"
+        ],
+        "values": {
+          "en": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…"
         }
       }
     ]
@@ -70412,6 +76009,34 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "domain"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about domain — Four cracks in one session, and the same gap behind three of them:",
+        "uuid": "f33364d4-634a-8047-a7d6-0f42a8830cc1",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "domain",
+          "four",
+          "cracks",
+          "in",
+          "one",
+          "session",
+          "and",
+          "the",
+          "same",
+          "gap",
+          "behind",
+          "three",
+          "of",
+          "them"
+        ],
+        "values": {
+          "en": "Use when reasoning about domain — Four cracks in one session, and the same gap behind three of them:"
+        }
       }
     ]
   },
@@ -70428,6 +76053,42 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "drift"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about drift — The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom is minted.",
+        "uuid": "85b695a8-8044-869b-b818-6a39499e12da",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "drift",
+          "the",
+          "corpus",
+          "computes",
+          "its",
+          "own",
+          "size",
+          "prose",
+          "states",
+          "it",
+          "too",
+          "and",
+          "the",
+          "two",
+          "drift",
+          "apart",
+          "the",
+          "moment",
+          "an",
+          "atom",
+          "is",
+          "minted"
+        ],
+        "values": {
+          "en": "Use when reasoning about drift — The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom is minted."
         }
       }
     ]
@@ -70598,6 +76259,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "forge"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist.",
+        "uuid": "c9977dd8-72b2-8aec-a4b0-7fa20ad2e070",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "forge",
+          "that",
+          "function",
+          "never",
+          "contacted",
+          "zenodo",
+          "it",
+          "was",
+          "named",
+          "it",
+          "logged",
+          "as",
+          "though",
+          "a",
+          "deposit",
+          "had",
+          "been",
+          "made",
+          "and",
+          "it",
+          "returned",
+          "a",
+          "well",
+          "formed",
+          "doi",
+          "and",
+          "a",
+          "url",
+          "for",
+          "a",
+          "record",
+          "that",
+          "does",
+          "not",
+          "exist"
+        ],
+        "values": {
+          "en": "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist."
         }
       }
     ]
@@ -70950,6 +76660,41 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "mirror"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it.",
+        "uuid": "de2571aa-e856-8803-b223-1fe040f8bfe6",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "mirror",
+          "that",
+          "assertion",
+          "cannot",
+          "fail",
+          "for",
+          "any",
+          "reason",
+          "a",
+          "reader",
+          "cares",
+          "about",
+          "change",
+          "the",
+          "constant",
+          "and",
+          "the",
+          "test",
+          "changes",
+          "with",
+          "it"
+        ],
+        "values": {
+          "en": "Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it."
+        }
       }
     ]
   },
@@ -70966,6 +76711,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "probe"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about probe — For a React atom the answer is **yes** and this returns **no**. Its barrel is , because JSX does not parse from a file — that is not a stylistic variant, it is the only spelling…",
+        "uuid": "f50c5d5f-e2bc-8148-a419-edb4b05e7bca",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "probe",
+          "for",
+          "a",
+          "react",
+          "atom",
+          "the",
+          "answer",
+          "is",
+          "yes",
+          "and",
+          "this",
+          "returns",
+          "no",
+          "its",
+          "barrel",
+          "is",
+          "because",
+          "jsx",
+          "does",
+          "not",
+          "parse",
+          "from",
+          "a",
+          "file",
+          "that",
+          "is",
+          "not",
+          "a",
+          "stylistic",
+          "variant",
+          "it",
+          "is",
+          "the",
+          "only",
+          "spelling"
+        ],
+        "values": {
+          "en": "Use when reasoning about probe — For a React atom the answer is **yes** and this returns **no**. Its barrel is , because JSX does not parse from a file — that is not a stylistic variant, it is the only spelling…"
         }
       }
     ]
@@ -71310,6 +77104,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "slack"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist.",
+        "uuid": "7539e451-2e22-826a-8439-3a5d3785e293",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "slack",
+          "every",
+          "gate",
+          "in",
+          "this",
+          "corpus",
+          "asks",
+          "one",
+          "question",
+          "is",
+          "this",
+          "claim",
+          "stronger",
+          "than",
+          "the",
+          "evidence",
+          "a",
+          "proved",
+          "theorem",
+          "listed",
+          "as",
+          "proven",
+          "a",
+          "directory",
+          "tree",
+          "of",
+          "folders",
+          "that",
+          "do",
+          "not",
+          "exist"
+        ],
+        "values": {
+          "en": "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist."
+        }
       }
     ]
   },
@@ -71512,6 +77351,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "unreached"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…",
+        "uuid": "1ac65b1e-c766-83bd-a2f8-02b1960d8797",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "unreached",
+          "the",
+          "accounting",
+          "wave",
+          "s",
+          "remaining",
+          "is",
+          "not",
+          "separate",
+          "defects",
+          "it",
+          "is",
+          "leaves",
+          "and",
+          "their",
+          "ancestors",
+          "an",
+          "atom",
+          "is",
+          "charged",
+          "and",
+          "every",
+          "folder",
+          "above",
+          "it",
+          "is",
+          "then",
+          "charged",
+          "for",
+          "the"
+        ],
+        "values": {
+          "en": "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…"
         }
       }
     ]
@@ -72403,9 +78286,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Canonical OECD SAF-T 2.0 types — audit-file projection.",
-        "uuid": "8ab54569-cc09-8394-97cd-bed32cbf02dc",
+        "source": "Use when reasoning about types — Canonical OECD SAF-T 2.0 types — audit-file projection.",
+        "uuid": "90ae9a25-6fc8-8866-895e-c4dcbc42ed3f",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "canonical",
           "oecd",
           "saf",
@@ -72416,7 +78304,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "projection"
         ],
         "values": {
-          "en": "Canonical OECD SAF-T 2.0 types — audit-file projection."
+          "en": "Use when reasoning about types — Canonical OECD SAF-T 2.0 types — audit-file projection."
         }
       }
     ]
@@ -72489,6 +78377,39 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "mode"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about mode — reads the operating mode and refuses an operation the mode does not permit; fails closed rather than degrading.",
+        "uuid": "f3c0f780-2bac-8063-a911-3076865a9b4d",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "mode",
+          "reads",
+          "the",
+          "operating",
+          "mode",
+          "and",
+          "refuses",
+          "an",
+          "operation",
+          "the",
+          "mode",
+          "does",
+          "not",
+          "permit",
+          "fails",
+          "closed",
+          "rather",
+          "than",
+          "degrading"
+        ],
+        "values": {
+          "en": "Use when reasoning about mode — reads the operating mode and refuses an operation the mode does not permit; fails closed rather than degrading."
         }
       }
     ]
@@ -73966,6 +79887,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "task"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about task — The barrel binds the registry, the runner and the task types. A scheduled action declared here is enumerable: something can ask what runs, when, and what evidence it leaves.",
+        "uuid": "861079db-1e16-888d-b51b-774edcacb2cb",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "task",
+          "the",
+          "barrel",
+          "binds",
+          "the",
+          "registry",
+          "the",
+          "runner",
+          "and",
+          "the",
+          "task",
+          "types",
+          "a",
+          "scheduled",
+          "action",
+          "declared",
+          "here",
+          "is",
+          "enumerable",
+          "something",
+          "can",
+          "ask",
+          "what",
+          "runs",
+          "when",
+          "and",
+          "what",
+          "evidence",
+          "it",
+          "leaves"
+        ],
+        "values": {
+          "en": "Use when reasoning about task — The barrel binds the registry, the runner and the task types. A scheduled action declared here is enumerable: something can ask what runs, when, and what evidence it leaves."
+        }
       }
     ]
   },
@@ -75239,9 +81204,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in.",
-        "uuid": "165c2de7-2c89-878c-aa64-58ee79d4ab48",
+        "source": "Use when reasoning about corpus — search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in.",
+        "uuid": "379a889b-4afc-8656-a1a5-1b0d698ab75c",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "corpus",
           "search",
           "corpus",
           "ingest",
@@ -75270,7 +81240,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "in"
         ],
         "values": {
-          "en": "search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in."
+          "en": "Use when reasoning about corpus — search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in."
         }
       }
     ]
@@ -76121,9 +82091,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Composite HTTP security-headers — defense-in-depth response hardening.",
-        "uuid": "f1f70e0d-d1a5-8f15-8afb-449e04d48076",
+        "source": "Use when reasoning about headers — Composite HTTP security-headers — defense-in-depth response hardening.",
+        "uuid": "94504a5f-99b9-826f-8f5d-87d60f413745",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "headers",
           "composite",
           "http",
           "security",
@@ -76135,7 +82110,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "hardening"
         ],
         "values": {
-          "en": "Composite HTTP security-headers — defense-in-depth response hardening."
+          "en": "Use when reasoning about headers — Composite HTTP security-headers — defense-in-depth response hardening."
         }
       }
     ]
@@ -76311,9 +82286,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route.",
-        "uuid": "9dc57194-a164-8b2d-941b-40134a1044d5",
+        "source": "Use when reasoning about contact — Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route.",
+        "uuid": "dd6dff9c-d8b1-8089-9649-01660acd0517",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "contact",
           "use",
           "for",
           "the",
@@ -76343,7 +82323,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "route"
         ],
         "values": {
-          "en": "Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route."
+          "en": "Use when reasoning about contact — Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route."
         }
       }
     ]
@@ -76365,9 +82345,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples.",
-        "uuid": "6ce30b6a-410d-8ad1-a835-8d42e72e2014",
+        "source": "Use when reasoning about post — Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples.",
+        "uuid": "01bae5e3-bb1a-8c9e-8f91-e2a221bf0415",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "post",
           "use",
           "for",
           "the",
@@ -76392,7 +82377,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "samples"
         ],
         "values": {
-          "en": "Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples."
+          "en": "Use when reasoning about post — Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples."
         }
       }
     ]
@@ -76541,9 +82526,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Industry templates — curated per-(country × industry) opening books.",
-        "uuid": "3ea45f1a-fc15-82fb-a16f-17dd630a0db3",
+        "source": "Use when reasoning about templates — Industry templates — curated per-(country × industry) opening books.",
+        "uuid": "e7bb80ab-2284-81eb-98c3-c11c08e21d83",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "templates",
           "industry",
           "templates",
           "curated",
@@ -76554,7 +82544,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "books"
         ],
         "values": {
-          "en": "Industry templates — curated per-(country × industry) opening books."
+          "en": "Use when reasoning about templates — Industry templates — curated per-(country × industry) opening books."
         }
       }
     ]
@@ -76996,6 +82986,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "provider"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…",
+        "uuid": "de075470-e61e-8812-923b-2812180e9b66",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "provider",
+          "each",
+          "provider",
+          "file",
+          "registers",
+          "itself",
+          "at",
+          "its",
+          "own",
+          "bottom",
+          "importing",
+          "this",
+          "barrel",
+          "runs",
+          "those",
+          "side",
+          "effects",
+          "so",
+          "the",
+          "set",
+          "of",
+          "available",
+          "providers",
+          "is",
+          "the",
+          "set",
+          "of",
+          "files",
+          "present",
+          "there",
+          "is",
+          "no"
+        ],
+        "values": {
+          "en": "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…"
         }
       }
     ]
@@ -81636,9 +87672,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the SKILL.md frontmatter gate — scans every SKILL.md, refuses unquoted colon-space descriptions, names that disagree with their folder, and new hyphenated atom folders. The atom face exposes the gate only; the 77MB router index is reached by its own path, never through this barrel.",
-        "uuid": "5f27e70e-2b63-8705-b723-ba3fc8b65e25",
+        "source": "Use when reasoning about skill — Use for the SKILL.md frontmatter gate — scans every SKILL.md, refuses unquoted colon-space descriptions, names that disagree with their folder, and new hyphenated atom folders. The atom face exposes the gate only; the 77MB router index is reached by its own path, never through this barrel.",
+        "uuid": "c9649656-e257-89e3-9416-b18e4b692cd9",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "skill",
           "use",
           "for",
           "the",
@@ -81689,7 +87730,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "barrel"
         ],
         "values": {
-          "en": "Use for the SKILL.md frontmatter gate — scans every SKILL.md, refuses unquoted colon-space descriptions, names that disagree with their folder, and new hyphenated atom folders. The atom face exposes the gate only; the 77MB router index is reached by its own path, never through this barrel."
+          "en": "Use when reasoning about skill — Use for the SKILL.md frontmatter gate — scans every SKILL.md, refuses unquoted colon-space descriptions, names that disagree with their folder, and new hyphenated atom folders. The atom face exposes the gate only; the 77MB router index is reached by its own path, never through this barrel."
         }
       }
     ]
@@ -81711,9 +87752,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law.",
-        "uuid": "a17f5f35-62a4-8c28-bbcb-f6804812fc2e",
+        "source": "Use when reasoning about frontmatter — skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law.",
+        "uuid": "e560547c-d6ae-823d-bf0f-8e92c69b6352",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "frontmatter",
           "skill",
           "frontmatter",
           "pre",
@@ -81728,7 +87774,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "law"
         ],
         "values": {
-          "en": "skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law."
+          "en": "Use when reasoning about frontmatter — skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law."
         }
       }
     ]
@@ -81904,9 +87950,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "competencies — the actor-capability taxonomy COMPUTED from the skill corpus.",
-        "uuid": "953daf9d-31f0-8ef2-b1b8-788245649064",
+        "source": "Use when reasoning about competencies — competencies — the actor-capability taxonomy COMPUTED from the skill corpus.",
+        "uuid": "85b993c0-5e3e-847e-ae99-a36611b2e3a3",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "competencies",
           "competencies",
           "the",
           "actor",
@@ -81919,7 +87970,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "corpus"
         ],
         "values": {
-          "en": "competencies — the actor-capability taxonomy COMPUTED from the skill corpus."
+          "en": "Use when reasoning about competencies — competencies — the actor-capability taxonomy COMPUTED from the skill corpus."
         }
       }
     ]
@@ -81941,9 +87992,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the [[merge]] law as code).",
-        "uuid": "86f9c53d-d2f0-800b-9622-eae0aec6f725",
+        "source": "Use when reasoning about merge — merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the merge law as code).",
+        "uuid": "f09ea092-6a12-83e6-9714-38c0bea876fd",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "merge",
           "merge",
           "union",
           "the",
@@ -81969,7 +88025,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "code"
         ],
         "values": {
-          "en": "merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the [[merge]] law as code)."
+          "en": "Use when reasoning about merge — merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the merge law as code)."
         }
       }
     ]
@@ -81991,9 +88047,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "rating — the voting/rating among skills (the organism's consensus signal).",
-        "uuid": "7077648d-31b9-8f38-8518-9588cfd633a5",
+        "source": "Use when reasoning about rating — rating — the voting/rating among skills (the organism's consensus signal).",
+        "uuid": "43eaa4c8-b1cb-85a8-8aec-80f72dfa9bde",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "rating",
           "rating",
           "the",
           "voting",
@@ -82007,7 +88068,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "signal"
         ],
         "values": {
-          "en": "rating — the voting/rating among skills (the organism's consensus signal)."
+          "en": "Use when reasoning about rating — rating — the voting/rating among skills (the organism's consensus signal)."
         }
       }
     ]
@@ -83049,6 +89110,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "graph"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about graph — holds directed edges. asks whether the opposite edge exists, and derives the relation: two mutual follows ARE a friendship, and nothing writes a \\\"friends\\\" row to say so.",
+        "uuid": "184c9aa6-0f98-8d5d-acff-07a0cc1911e3",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "graph",
+          "holds",
+          "directed",
+          "edges",
+          "asks",
+          "whether",
+          "the",
+          "opposite",
+          "edge",
+          "exists",
+          "and",
+          "derives",
+          "the",
+          "relation",
+          "two",
+          "mutual",
+          "follows",
+          "are",
+          "a",
+          "friendship",
+          "and",
+          "nothing",
+          "writes",
+          "a",
+          "friends",
+          "row",
+          "to",
+          "say",
+          "so"
+        ],
+        "values": {
+          "en": "Use when reasoning about graph — holds directed edges. asks whether the opposite edge exists, and derives the relation: two mutual follows ARE a friendship, and nothing writes a \\\"friends\\\" row to say so."
         }
       }
     ]
@@ -84213,6 +90317,50 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "generator"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about generator — The extractor parses each collection's leading banner into a ; the generators beside it emit the chain registry, the test scaffolds, the marketing pages and the i18n keys from…",
+        "uuid": "e521670e-0536-8915-af2b-8bc358294e7e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "generator",
+          "the",
+          "extractor",
+          "parses",
+          "each",
+          "collection",
+          "s",
+          "leading",
+          "banner",
+          "into",
+          "a",
+          "the",
+          "generators",
+          "beside",
+          "it",
+          "emit",
+          "the",
+          "chain",
+          "registry",
+          "the",
+          "test",
+          "scaffolds",
+          "the",
+          "marketing",
+          "pages",
+          "and",
+          "the",
+          "i18n",
+          "keys",
+          "from"
+        ],
+        "values": {
+          "en": "Use when reasoning about generator — The extractor parses each collection's leading banner into a ; the generators beside it emit the chain registry, the test scaffolds, the marketing pages and the i18n keys from…"
         }
       }
     ]
@@ -85593,6 +91741,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "hook"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hook — Every accountable collection needs the same three things: its tenant filled in before validation, its author recorded on change, and its audit entry written after.",
+        "uuid": "c346eea2-547a-8dd3-b89c-7926f1946e2e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hook",
+          "every",
+          "accountable",
+          "collection",
+          "needs",
+          "the",
+          "same",
+          "three",
+          "things",
+          "its",
+          "tenant",
+          "filled",
+          "in",
+          "before",
+          "validation",
+          "its",
+          "author",
+          "recorded",
+          "on",
+          "change",
+          "and",
+          "its",
+          "audit",
+          "entry",
+          "written",
+          "after"
+        ],
+        "values": {
+          "en": "Use when reasoning about hook — Every accountable collection needs the same three things: its tenant filled in before validation, its author recorded on change, and its audit entry written after."
+        }
       }
     ]
   },
@@ -86771,6 +92959,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "independence"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about independence — admits a store and recomputes the content-uuid from each one's bytes. Agreement means the object is intact everywhere; disagreement names which store is wrong, without trusting…",
+        "uuid": "c81c33de-cdc3-8ada-b810-109376468d22",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "independence",
+          "admits",
+          "a",
+          "store",
+          "and",
+          "recomputes",
+          "the",
+          "content",
+          "uuid",
+          "from",
+          "each",
+          "one",
+          "s",
+          "bytes",
+          "agreement",
+          "means",
+          "the",
+          "object",
+          "is",
+          "intact",
+          "everywhere",
+          "disagreement",
+          "names",
+          "which",
+          "store",
+          "is",
+          "wrong",
+          "without",
+          "trusting"
+        ],
+        "values": {
+          "en": "Use when reasoning about independence — admits a store and recomputes the content-uuid from each one's bytes. Agreement means the object is intact everywhere; disagreement names which store is wrong, without trusting…"
+        }
       }
     ]
   },
@@ -86787,6 +93018,47 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "redundancy"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.",
+        "uuid": "411298a1-478a-8257-856e-3e965c49617a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "redundancy",
+          "puts",
+          "to",
+          "every",
+          "backend",
+          "and",
+          "prefers",
+          "a",
+          "copy",
+          "whose",
+          "recomputed",
+          "uuid",
+          "matches",
+          "its",
+          "content",
+          "repairs",
+          "a",
+          "stale",
+          "or",
+          "tampered",
+          "store",
+          "by",
+          "pulling",
+          "from",
+          "a",
+          "healthy",
+          "peer"
+        ],
+        "values": {
+          "en": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer."
         }
       }
     ]
@@ -87598,6 +93870,44 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "gate"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about gate — , and answer from the tenant's subscription; and encode what a lapsed account may still do — read its own history, write nothing new.",
+        "uuid": "d726cdad-8f8c-8b7e-8903-f9ddb28c5c5b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "gate",
+          "and",
+          "answer",
+          "from",
+          "the",
+          "tenant",
+          "s",
+          "subscription",
+          "and",
+          "encode",
+          "what",
+          "a",
+          "lapsed",
+          "account",
+          "may",
+          "still",
+          "do",
+          "read",
+          "its",
+          "own",
+          "history",
+          "write",
+          "nothing",
+          "new"
+        ],
+        "values": {
+          "en": "Use when reasoning about gate — , and answer from the tenant's subscription; and encode what a lapsed account may still do — read its own history, write nothing new."
+        }
       }
     ]
   },
@@ -87682,6 +93992,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "hooks"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — No plan-specific hook is wired yet. The barrel is here because every collection's hooks live at the same address, and a convention with a hole in it is one every future reader…",
+        "uuid": "1c333409-3b77-8807-9598-edc128c11301",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "no",
+          "plan",
+          "specific",
+          "hook",
+          "is",
+          "wired",
+          "yet",
+          "the",
+          "barrel",
+          "is",
+          "here",
+          "because",
+          "every",
+          "collection",
+          "s",
+          "hooks",
+          "live",
+          "at",
+          "the",
+          "same",
+          "address",
+          "and",
+          "a",
+          "convention",
+          "with",
+          "a",
+          "hole",
+          "in",
+          "it",
+          "is",
+          "one",
+          "every",
+          "future",
+          "reader"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — No plan-specific hook is wired yet. The barrel is here because every collection's hooks live at the same address, and a convention with a hole in it is one every future reader…"
         }
       }
     ]
@@ -87769,6 +94128,34 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "hooks"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hooks — publishes the subscription's transitions and protects its credentials on the way in.",
+        "uuid": "cf484cdc-8186-8883-b275-e7406823648f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hooks",
+          "publishes",
+          "the",
+          "subscription",
+          "s",
+          "transitions",
+          "and",
+          "protects",
+          "its",
+          "credentials",
+          "on",
+          "the",
+          "way",
+          "in"
+        ],
+        "values": {
+          "en": "Use when reasoning about hooks — publishes the subscription's transitions and protects its credentials on the way in."
         }
       }
     ]
@@ -89715,6 +96102,48 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "generator"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about generator — A hero image per product, synthesised rather than commissioned: a 1600×900 SVG built from primitive paths and , with no font file, no raster asset and no image library.",
+        "uuid": "5c5abd7e-7078-866a-9bbe-fc0b48da3547",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "generator",
+          "a",
+          "hero",
+          "image",
+          "per",
+          "product",
+          "synthesised",
+          "rather",
+          "than",
+          "commissioned",
+          "a",
+          "svg",
+          "built",
+          "from",
+          "primitive",
+          "paths",
+          "and",
+          "with",
+          "no",
+          "font",
+          "file",
+          "no",
+          "raster",
+          "asset",
+          "and",
+          "no",
+          "image",
+          "library"
+        ],
+        "values": {
+          "en": "Use when reasoning about generator — A hero image per product, synthesised rather than commissioned: a 1600×900 SVG built from primitive paths and , with no font file, no raster asset and no image library."
+        }
       }
     ]
   },
@@ -90217,6 +96646,36 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "cache"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about cache — *\\\"Reuse the computed answer, never re-derive\\\"* is the first agent law in this corpus.",
+        "uuid": "eadc0478-eae3-816e-9c2f-e00b4966cd9b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "cache",
+          "reuse",
+          "the",
+          "computed",
+          "answer",
+          "never",
+          "re",
+          "derive",
+          "is",
+          "the",
+          "first",
+          "agent",
+          "law",
+          "in",
+          "this",
+          "corpus"
+        ],
+        "values": {
+          "en": "Use when reasoning about cache — *\\\"Reuse the computed answer, never re-derive\\\"* is the first agent law in this corpus."
         }
       }
     ]
@@ -93016,6 +99475,47 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "role"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about role — Importing this barrel pulls in the four reference tenant profiles — business, payment provider, bank, government — so any code holding the registry sees them without naming each.",
+        "uuid": "6330566b-cd64-808e-b220-1c4dcd8541ee",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "role",
+          "importing",
+          "this",
+          "barrel",
+          "pulls",
+          "in",
+          "the",
+          "four",
+          "reference",
+          "tenant",
+          "profiles",
+          "business",
+          "payment",
+          "provider",
+          "bank",
+          "government",
+          "so",
+          "any",
+          "code",
+          "holding",
+          "the",
+          "registry",
+          "sees",
+          "them",
+          "without",
+          "naming",
+          "each"
+        ],
+        "values": {
+          "en": "Use when reasoning about role — Importing this barrel pulls in the four reference tenant profiles — business, payment provider, bank, government — so any code holding the registry sees them without naming each."
+        }
       }
     ]
   },
@@ -93032,6 +99532,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "service"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about service — is the client for tenant administration — create, update, batch actions — and is the instance callers use.",
+        "uuid": "4a033388-65e4-8b1e-8b01-e26cb8b82392",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "service",
+          "is",
+          "the",
+          "client",
+          "for",
+          "tenant",
+          "administration",
+          "create",
+          "update",
+          "batch",
+          "actions",
+          "and",
+          "is",
+          "the",
+          "instance",
+          "callers",
+          "use"
+        ],
+        "values": {
+          "en": "Use when reasoning about service — is the client for tenant administration — create, update, batch actions — and is the instance callers use."
         }
       }
     ]
@@ -94688,9 +101219,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Quantum threat classification (immediate-retire vs quantum-accelerated)",
-        "uuid": "415155b7-4968-8965-af8d-b5c3a985d1c2",
+        "source": "Use when reasoning about threat — Quantum threat classification (immediate-retire vs quantum-accelerated)",
+        "uuid": "700ae664-6175-8934-8192-10adc9221f09",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "threat",
           "quantum",
           "threat",
           "classification",
@@ -94701,7 +101237,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "accelerated"
         ],
         "values": {
-          "en": "Quantum threat classification (immediate-retire vs quantum-accelerated)"
+          "en": "Use when reasoning about threat — Quantum threat classification (immediate-retire vs quantum-accelerated)"
         }
       }
     ]
@@ -96997,9 +103533,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry.",
-        "uuid": "bcceb645-5867-876a-99ff-75cf50ae2df9",
+        "source": "Use when reasoning about goods — Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry.",
+        "uuid": "675427ef-a86f-85e5-ab9e-37630a1e970d",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "goods",
           "use",
           "for",
           "the",
@@ -97030,7 +103571,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "registry"
         ],
         "values": {
-          "en": "Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry."
+          "en": "Use when reasoning about goods — Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry."
         }
       }
     ]
@@ -97052,9 +103593,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry.",
-        "uuid": "d5791191-2d71-8de2-882d-db58d284d15d",
+        "source": "Use when reasoning about money — Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry.",
+        "uuid": "5ad250e6-d64f-8770-875e-9dda22aecad7",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "money",
           "use",
           "for",
           "the",
@@ -97091,7 +103637,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "registry"
         ],
         "values": {
-          "en": "Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry."
+          "en": "Use when reasoning about money — Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry."
         }
       }
     ]
@@ -99892,6 +106438,53 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "parties"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about parties — Both are a dated, line-itemised financial document with a status lifecycle, a balance and an aging profile. is that shape, the lifecycle it may walk, and the set both age into.",
+        "uuid": "62c31a88-d288-80c8-b78e-fc883d781ac6",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "parties",
+          "both",
+          "are",
+          "a",
+          "dated",
+          "line",
+          "itemised",
+          "financial",
+          "document",
+          "with",
+          "a",
+          "status",
+          "lifecycle",
+          "a",
+          "balance",
+          "and",
+          "an",
+          "aging",
+          "profile",
+          "is",
+          "that",
+          "shape",
+          "the",
+          "lifecycle",
+          "it",
+          "may",
+          "walk",
+          "and",
+          "the",
+          "set",
+          "both",
+          "age",
+          "into"
+        ],
+        "values": {
+          "en": "Use when reasoning about parties — Both are a dated, line-itemised financial document with a status lifecycle, a balance and an aging profile. is that shape, the lifecycle it may walk, and the set both age into."
+        }
       }
     ]
   },
@@ -99908,6 +106501,40 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "payables"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about payables — , , and carry the fields EN-16931 requires of a supplier invoice; buckets what is outstanding, and is what falls due.",
+        "uuid": "2090acf9-0839-817a-a22a-362354d4ea03",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "payables",
+          "and",
+          "carry",
+          "the",
+          "fields",
+          "en",
+          "requires",
+          "of",
+          "a",
+          "supplier",
+          "invoice",
+          "buckets",
+          "what",
+          "is",
+          "outstanding",
+          "and",
+          "is",
+          "what",
+          "falls",
+          "due"
+        ],
+        "values": {
+          "en": "Use when reasoning about payables — , , and carry the fields EN-16931 requires of a supplier invoice; buckets what is outstanding, and is what falls due."
         }
       }
     ]
@@ -99926,6 +106553,52 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "receivables"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about receivables — , , and are the A/R side of the same party document; buckets it and carries the expected-credit-loss figure IFRS 9 requires, which is the part a receivable cannot honestly omit.",
+        "uuid": "5448beb9-2dc9-881e-bc73-f27a7141cc62",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "receivables",
+          "and",
+          "are",
+          "the",
+          "a",
+          "r",
+          "side",
+          "of",
+          "the",
+          "same",
+          "party",
+          "document",
+          "buckets",
+          "it",
+          "and",
+          "carries",
+          "the",
+          "expected",
+          "credit",
+          "loss",
+          "figure",
+          "ifrs",
+          "requires",
+          "which",
+          "is",
+          "the",
+          "part",
+          "a",
+          "receivable",
+          "cannot",
+          "honestly",
+          "omit"
+        ],
+        "values": {
+          "en": "Use when reasoning about receivables — , , and are the A/R side of the same party document; buckets it and carries the expected-credit-loss figure IFRS 9 requires, which is the part a receivable cannot honestly omit."
+        }
       }
     ]
   },
@@ -99943,6 +106616,39 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "sti"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about sti — names the column, and describe the union, and , and narrow a row to its subtype without a cast.",
+        "uuid": "9321e078-a41a-88b7-aa18-5fd0d76cafba",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "sti",
+          "names",
+          "the",
+          "column",
+          "and",
+          "describe",
+          "the",
+          "union",
+          "and",
+          "and",
+          "narrow",
+          "a",
+          "row",
+          "to",
+          "its",
+          "subtype",
+          "without",
+          "a",
+          "cast"
+        ],
+        "values": {
+          "en": "Use when reasoning about sti — names the column, and describe the union, and , and narrow a row to its subtype without a cast."
+        }
       }
     ]
   },
@@ -99959,6 +106665,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "tenant"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about tenant — carries what differs between instances: , the it reports under, and its . The request types — create, update, batch — are the only shapes the management API accepts.",
+        "uuid": "baf216bb-1eb5-8d5d-a02d-f75e2949c821",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "tenant",
+          "carries",
+          "what",
+          "differs",
+          "between",
+          "instances",
+          "the",
+          "it",
+          "reports",
+          "under",
+          "and",
+          "its",
+          "the",
+          "request",
+          "types",
+          "create",
+          "update",
+          "batch",
+          "are",
+          "the",
+          "only",
+          "shapes",
+          "the",
+          "management",
+          "api",
+          "accepts"
+        ],
+        "values": {
+          "en": "Use when reasoning about tenant — carries what differs between instances: , the it reports under, and its . The request types — create, update, batch — are the only shapes the management API accepts."
         }
       }
     ]
@@ -100211,6 +106957,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "class"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about class — merges Tailwind class lists so a later utility wins over an earlier one — for the conditional shapes, for the conflict resolution. Six modules use it.",
+        "uuid": "cc0ccf76-fb7d-854c-9d71-86c02269ff51",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "class",
+          "merges",
+          "tailwind",
+          "class",
+          "lists",
+          "so",
+          "a",
+          "later",
+          "utility",
+          "wins",
+          "over",
+          "an",
+          "earlier",
+          "one",
+          "for",
+          "the",
+          "conditional",
+          "shapes",
+          "for",
+          "the",
+          "conflict",
+          "resolution",
+          "six",
+          "modules",
+          "use",
+          "it"
+        ],
+        "values": {
+          "en": "Use when reasoning about class — merges Tailwind class lists so a later utility wins over an earlier one — for the conditional shapes, for the conflict resolution. Six modules use it."
         }
       }
     ]
@@ -100473,9 +107259,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Canonical UN/EDIFACT message types — semantic structure only.",
-        "uuid": "44c6df77-55d5-8670-b3e8-ae93298db221",
+        "source": "Use when reasoning about types — Canonical UN/EDIFACT message types — semantic structure only.",
+        "uuid": "a947439a-dea5-85b3-8ea4-3febf3b1e14b",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "types",
           "canonical",
           "un",
           "edifact",
@@ -100486,7 +107277,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "only"
         ],
         "values": {
-          "en": "Canonical UN/EDIFACT message types — semantic structure only."
+          "en": "Use when reasoning about types — Canonical UN/EDIFACT message types — semantic structure only."
         }
       }
     ]
@@ -101802,6 +108593,39 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "card"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about card — Making a card clickable is easy and usually wrong. Wrapping the card in an swallows every nested link.",
+        "uuid": "f6e3ed44-9e91-8204-a7ca-33970c2a8efb",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "card",
+          "making",
+          "a",
+          "card",
+          "clickable",
+          "is",
+          "easy",
+          "and",
+          "usually",
+          "wrong",
+          "wrapping",
+          "the",
+          "card",
+          "in",
+          "an",
+          "swallows",
+          "every",
+          "nested",
+          "link"
+        ],
+        "values": {
+          "en": "Use when reasoning about card — Making a card clickable is easy and usually wrong. Wrapping the card in an swallows every nested link."
+        }
       }
     ]
   },
@@ -101818,6 +108642,47 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "debounce"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about debounce — holds a changing value still for a delay before releasing it, so a search field issues one request when typing stops instead of one per character.",
+        "uuid": "01b55b60-57a5-80db-8ed0-13d117f8e5fb",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "debounce",
+          "holds",
+          "a",
+          "changing",
+          "value",
+          "still",
+          "for",
+          "a",
+          "delay",
+          "before",
+          "releasing",
+          "it",
+          "so",
+          "a",
+          "search",
+          "field",
+          "issues",
+          "one",
+          "request",
+          "when",
+          "typing",
+          "stops",
+          "instead",
+          "of",
+          "one",
+          "per",
+          "character"
+        ],
+        "values": {
+          "en": "Use when reasoning about debounce — holds a changing value still for a delay before releasing it, so a search field issues one request when typing stops instead of one per character."
         }
       }
     ]
@@ -102321,6 +109186,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "lock"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about lock — is the hook wired into every GL-posting collection: it reads the document's posting date, finds the fiscal period containing it, and throws when that period's status is .",
+        "uuid": "ddf604ba-cdf3-82d4-a074-f66474a206f3",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "lock",
+          "is",
+          "the",
+          "hook",
+          "wired",
+          "into",
+          "every",
+          "gl",
+          "posting",
+          "collection",
+          "it",
+          "reads",
+          "the",
+          "document",
+          "s",
+          "posting",
+          "date",
+          "finds",
+          "the",
+          "fiscal",
+          "period",
+          "containing",
+          "it",
+          "and",
+          "throws",
+          "when",
+          "that",
+          "period",
+          "s",
+          "status",
+          "is"
+        ],
+        "values": {
+          "en": "Use when reasoning about lock — is the hook wired into every GL-posting collection: it reads the document's posting date, finds the fiscal period containing it, and throws when that period's status is ."
+        }
       }
     ]
   },
@@ -102517,6 +109427,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "chain"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about chain — starts a chain at and extends it: addresses the pair (previous, content), so each link's identity depends on everything before it. walks the and reports where the walk breaks.",
+        "uuid": "f3b9f2e9-ff38-8761-b388-1c127841ab53",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "chain",
+          "starts",
+          "a",
+          "chain",
+          "at",
+          "and",
+          "extends",
+          "it",
+          "addresses",
+          "the",
+          "pair",
+          "previous",
+          "content",
+          "so",
+          "each",
+          "link",
+          "s",
+          "identity",
+          "depends",
+          "on",
+          "everything",
+          "before",
+          "it",
+          "walks",
+          "the",
+          "and",
+          "reports",
+          "where",
+          "the",
+          "walk",
+          "breaks"
+        ],
+        "values": {
+          "en": "Use when reasoning about chain — starts a chain at and extends it: addresses the pair (previous, content), so each link's identity depends on everything before it. walks the and reports where the walk breaks."
+        }
       }
     ]
   },
@@ -102613,6 +109568,43 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "kv"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about kv — addresses the binding itself, lifts a plain map into , and finds the value for a key by address rather than by string.",
+        "uuid": "a26bfe43-0f84-8e69-bcc5-f8e5a4986588",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "kv",
+          "addresses",
+          "the",
+          "binding",
+          "itself",
+          "lifts",
+          "a",
+          "plain",
+          "map",
+          "into",
+          "and",
+          "finds",
+          "the",
+          "value",
+          "for",
+          "a",
+          "key",
+          "by",
+          "address",
+          "rather",
+          "than",
+          "by",
+          "string"
+        ],
+        "values": {
+          "en": "Use when reasoning about kv — addresses the binding itself, lifts a plain map into , and finds the value for a key by address rather than by string."
         }
       }
     ]
@@ -104353,6 +111345,51 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "cross"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about cross — Every entity change content-addresses to a leaf. That same leaf is simultaneously the VERSION (a new content-uuid), a TAMPER-COST increment (one more link a forger must rewrite)…",
+        "uuid": "d20f56a3-dacf-815f-a48d-7ce581ba2813",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "cross",
+          "every",
+          "entity",
+          "change",
+          "content",
+          "addresses",
+          "to",
+          "a",
+          "leaf",
+          "that",
+          "same",
+          "leaf",
+          "is",
+          "simultaneously",
+          "the",
+          "version",
+          "a",
+          "new",
+          "content",
+          "uuid",
+          "a",
+          "tamper",
+          "cost",
+          "increment",
+          "one",
+          "more",
+          "link",
+          "a",
+          "forger",
+          "must",
+          "rewrite"
+        ],
+        "values": {
+          "en": "Use when reasoning about cross — Every entity change content-addresses to a leaf. That same leaf is simultaneously the VERSION (a new content-uuid), a TAMPER-COST increment (one more link a forger must rewrite)…"
         }
       }
     ]
@@ -107437,9 +114474,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal [[entry]] engine.",
-        "uuid": "95f72c3d-c5dd-8c4d-bd2b-cc045e157f84",
+        "source": "Use when reasoning about accountable — agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal entry engine.",
+        "uuid": "fd173b8d-3984-8a13-9713-6ac783e47121",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "accountable",
           "agriculture",
           "accountable",
           "the",
@@ -107460,7 +114502,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "engine"
         ],
         "values": {
-          "en": "agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal [[entry]] engine."
+          "en": "Use when reasoning about accountable — agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal entry engine."
         }
       }
     ]
@@ -140985,9 +148027,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "vocabulary/emit — compute the SHARED VOCABULARY and emit words.ts.",
-        "uuid": "9f2d58aa-ea35-81af-9356-7f415859a04b",
+        "source": "Use when reasoning about emit — vocabulary/emit — compute the SHARED VOCABULARY and emit words.ts.",
+        "uuid": "e2b16a02-9fb2-8eb4-a758-b617d93835b2",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "emit",
           "vocabulary",
           "emit",
           "compute",
@@ -141000,7 +148047,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "ts"
         ],
         "values": {
-          "en": "vocabulary/emit — compute the SHARED VOCABULARY and emit words.ts."
+          "en": "Use when reasoning about emit — vocabulary/emit — compute the SHARED VOCABULARY and emit words.ts."
         }
       }
     ]
@@ -141022,7 +148069,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as [[source]], dissolve the row-level specifics into the [[akashic]] DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming.",
+        "source": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as source, dissolve the row-level specifics into the akashic DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming.",
         "uuid": "8ac99949-a460-8094-850b-310c63ca6db6",
         "words": [
           "use",
@@ -141102,7 +148149,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "naming"
         ],
         "values": {
-          "en": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as [[source]], dissolve the row-level specifics into the [[akashic]] DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming."
+          "en": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as source, dissolve the row-level specifics into the akashic DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming."
         }
       }
     ]
@@ -167924,6 +174971,38 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "seed"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three.",
+        "uuid": "7d184058-0ec3-80b0-b4be-05fc0c335ed9",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "seed",
+          "operations",
+          "positions",
+          "and",
+          "standards",
+          "are",
+          "each",
+          "their",
+          "own",
+          "atom",
+          "this",
+          "is",
+          "the",
+          "address",
+          "that",
+          "offers",
+          "all",
+          "three"
+        ],
+        "values": {
+          "en": "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three."
+        }
       }
     ]
   },
@@ -167944,9 +175023,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
-        "uuid": "580e89ee-c73d-8e37-8504-a7b856f1e14b",
+        "source": "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
+        "uuid": "995bcc0d-2709-8b4a-b5c8-c379ca130bd4",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "operations",
           "operations",
           "the",
           "garment",
@@ -167970,7 +175054,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "standards"
         ],
         "values": {
-          "en": "operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards."
+          "en": "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards."
         }
       }
     ]
@@ -167992,9 +175076,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards.",
-        "uuid": "d29b1550-40c7-8a3d-b34b-3fa669728fb8",
+        "source": "Use when reasoning about positions — positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards.",
+        "uuid": "2059f67d-b118-8584-aa4a-ff39a7aa0055",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "positions",
           "positions",
           "the",
           "harmonic",
@@ -168014,7 +175103,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "standards"
         ],
         "values": {
-          "en": "positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards."
+          "en": "Use when reasoning about positions — positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards."
         }
       }
     ]
@@ -168036,9 +175125,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it).",
-        "uuid": "11b6d358-761c-8e1e-95c5-dd7c458c6578",
+        "source": "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it).",
+        "uuid": "6d1c9c03-2d88-80fc-bf8b-a0641db33229",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "standards",
           "standards",
           "every",
           "standard",
@@ -168071,7 +175165,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "it"
         ],
         "values": {
-          "en": "standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it)."
+          "en": "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it)."
         }
       }
     ]
@@ -197378,9 +204472,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge.",
-        "uuid": "8c713c5b-ee45-8785-9e7b-f3898168aa51",
+        "source": "Use when reasoning about list — tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge.",
+        "uuid": "0b6e73df-f03f-88a8-a567-db214813944a",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "list",
           "tag",
           "list",
           "port",
@@ -197398,7 +204497,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "bridge"
         ],
         "values": {
-          "en": "tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge."
+          "en": "Use when reasoning about list — tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge."
         }
       }
     ]
@@ -197492,7 +204591,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a [[diamond]] — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop.",
+        "source": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a diamond — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop.",
         "uuid": "27387dc1-413e-8538-9d23-269e54453c97",
         "words": [
           "use",
@@ -197545,7 +204644,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "loop"
         ],
         "values": {
-          "en": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a [[diamond]] — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop."
+          "en": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a diamond — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop."
         }
       }
     ]
@@ -198804,9 +205903,14 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Continuous quantum computation wave with real-time Zenodo publication",
-        "uuid": "6c6a6f23-ef59-821c-8c36-8b2917e4cd1e",
+        "source": "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication",
+        "uuid": "5acc29a6-9e97-8458-815a-c135a43b7e93",
         "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "wave",
           "continuous",
           "quantum",
           "computation",
@@ -198818,7 +205922,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "publication"
         ],
         "values": {
-          "en": "Continuous quantum computation wave with real-time Zenodo publication"
+          "en": "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication"
         }
       }
     ]
@@ -201822,6 +208926,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "xml"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about xml — Peppol UBL, ISO-20022 pain.00x and OECD SAF-T all emit XML. What they share is not a document model — each owns its namespaces, element order and schema — it is the two layers…",
+        "uuid": "7dfd91a1-8e61-87ee-a236-b9c802b64545",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "xml",
+          "peppol",
+          "ubl",
+          "iso",
+          "pain",
+          "x",
+          "and",
+          "oecd",
+          "saf",
+          "t",
+          "all",
+          "emit",
+          "xml",
+          "what",
+          "they",
+          "share",
+          "is",
+          "not",
+          "a",
+          "document",
+          "model",
+          "each",
+          "owns",
+          "its",
+          "namespaces",
+          "element",
+          "order",
+          "and",
+          "schema",
+          "it",
+          "is",
+          "the",
+          "two",
+          "layers"
+        ],
+        "values": {
+          "en": "Use when reasoning about xml — Peppol UBL, ISO-20022 pain.00x and OECD SAF-T all emit XML. What they share is not a document model — each owns its namespaces, element order and schema — it is the two layers…"
+        }
       }
     ]
   },
@@ -201839,6 +208991,35 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         "values": {
           "en": "element"
         }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about element — was already the one shared escaper — its own docstring says *\\\"one definition, not three\\\"*.",
+        "uuid": "2f855fed-2736-8591-9512-d0a32903c7e3",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "element",
+          "was",
+          "already",
+          "the",
+          "one",
+          "shared",
+          "escaper",
+          "its",
+          "own",
+          "docstring",
+          "says",
+          "one",
+          "definition",
+          "not",
+          "three"
+        ],
+        "values": {
+          "en": "Use when reasoning about element — was already the one shared escaper — its own docstring says *\\\"one definition, not three\\\"*."
+        }
       }
     ]
   },
@@ -201855,6 +209036,36 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "escape"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about escape — must be replaced before any text or attribute value is embedded in generated XML (**XML 1.0 §2.4**).",
+        "uuid": "bb9a297a-b83a-8b51-a9ea-eb1bad7a78f0",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "escape",
+          "must",
+          "be",
+          "replaced",
+          "before",
+          "any",
+          "text",
+          "or",
+          "attribute",
+          "value",
+          "is",
+          "embedded",
+          "in",
+          "generated",
+          "xml",
+          "xml"
+        ],
+        "values": {
+          "en": "Use when reasoning about escape — must be replaced before any text or attribute value is embedded in generated XML (**XML 1.0 §2.4**)."
         }
       }
     ]
@@ -202318,4 +209529,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3581
+export const TRANSLATIONS_COUNT = 3582

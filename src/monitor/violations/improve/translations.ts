@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "monitor/violations/improve — map violation → deterministic improve action.",
-    "uuid": "030404e3-5236-8306-817f-8295a1f0960f",
+    "source": "Use when reasoning about improve — monitor/violations/improve — map violation → deterministic improve action.",
+    "uuid": "619b7055-e12c-8d14-912f-3bccadebed3a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "improve",
       "monitor",
       "violations",
       "improve",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "action"
     ],
     "values": {
-      "en": "monitor/violations/improve — map violation → deterministic improve action."
+      "en": "Use when reasoning about improve — monitor/violations/improve — map violation → deterministic improve action."
     }
   }
 ]

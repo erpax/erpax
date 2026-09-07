@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about measurement as a anatomical part of [[body]] — vocabulary pivot to @/measurement; nested not duplicated.",
+    "source": "Use when reasoning about measurement as a anatomical part of body — vocabulary pivot to @/measurement; nested not duplicated.",
     "uuid": "acdb61a9-998c-8062-b896-cd4becab0c03",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about measurement as a anatomical part of [[body]] — vocabulary pivot to @/measurement; nested not duplicated."
+      "en": "Use when reasoning about measurement as a anatomical part of body — vocabulary pivot to @/measurement; nested not duplicated."
     }
   }
 ]

@@ -14,6 +14,36 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "cache"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about cache — *\\\"Reuse the computed answer, never re-derive\\\"* is the first agent law in this corpus.",
+    "uuid": "eadc0478-eae3-816e-9c2f-e00b4966cd9b",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "cache",
+      "reuse",
+      "the",
+      "computed",
+      "answer",
+      "never",
+      "re",
+      "derive",
+      "is",
+      "the",
+      "first",
+      "agent",
+      "law",
+      "in",
+      "this",
+      "corpus"
+    ],
+    "values": {
+      "en": "Use when reasoning about cache — *\\\"Reuse the computed answer, never re-derive\\\"* is the first agent law in this corpus."
+    }
   }
 ]
 

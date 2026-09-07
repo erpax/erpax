@@ -14,6 +14,35 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "impact"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about impact — The quiet hero: a narrow column holding either rendered children or CMS rich text.",
+    "uuid": "2e3cccbc-be43-85cb-8ddb-d68a84e23e48",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "impact",
+      "the",
+      "quiet",
+      "hero",
+      "a",
+      "narrow",
+      "column",
+      "holding",
+      "either",
+      "rendered",
+      "children",
+      "or",
+      "cms",
+      "rich",
+      "text"
+    ],
+    "values": {
+      "en": "Use when reasoning about impact — The quiet hero: a narrow column holding either rendered children or CMS rich text."
+    }
   }
 ]
 

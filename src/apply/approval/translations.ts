@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "apply/approval — package.json-derived agent work approval matrix.",
-    "uuid": "beca22ff-e102-80f8-a142-35070c051d76",
+    "source": "Use when reasoning about approval — apply/approval — package.json-derived agent work approval matrix.",
+    "uuid": "47d08365-0e29-885b-a736-c00762ff31e2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "approval",
       "apply",
       "approval",
       "package",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "matrix"
     ],
     "values": {
-      "en": "apply/approval — package.json-derived agent work approval matrix."
+      "en": "Use when reasoning about approval — apply/approval — package.json-derived agent work approval matrix."
     }
   }
 ]

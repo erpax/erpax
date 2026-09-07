@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about software as a part of [[computer]] — vocabulary pivot to @/software; nested not duplicated.",
+    "source": "Use when reasoning about software as a part of computer — vocabulary pivot to @/software; nested not duplicated.",
     "uuid": "16e437f1-5348-8e56-b3d8-de06e35fef2c",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about software as a part of [[computer]] — vocabulary pivot to @/software; nested not duplicated."
+      "en": "Use when reasoning about software as a part of computer — vocabulary pivot to @/software; nested not duplicated."
     }
   }
 ]

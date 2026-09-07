@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
-    "uuid": "6c9579be-828d-8f0b-b554-4a0db568432d",
+    "source": "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
+    "uuid": "3ac6afcc-101b-8110-bb53-841db0091349",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "genome",
       "genome",
       "bundle",
       "the",
@@ -41,7 +46,7 @@ export const translations: readonly Translation[] = [
       "artifact"
     ],
     "values": {
-      "en": "Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact."
+      "en": "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact."
     }
   }
 ]

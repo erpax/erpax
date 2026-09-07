@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about location as a anatomical part of [[body]] — vocabulary pivot to @/location; nested not duplicated.",
+    "source": "Use when reasoning about location as a anatomical part of body — vocabulary pivot to @/location; nested not duplicated.",
     "uuid": "cd302da8-aa14-8157-b5e9-b178849b03b4",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about location as a anatomical part of [[body]] — vocabulary pivot to @/location; nested not duplicated."
+      "en": "Use when reasoning about location as a anatomical part of body — vocabulary pivot to @/location; nested not duplicated."
     }
   }
 ]

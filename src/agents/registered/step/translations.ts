@@ -14,6 +14,55 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "step"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf…",
+    "uuid": "e52c245a-04de-8560-be17-942678b7795d",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "step",
+      "every",
+      "registered",
+      "domain",
+      "agent",
+      "answered",
+      "a",
+      "chain",
+      "step",
+      "the",
+      "same",
+      "way",
+      "read",
+      "and",
+      "out",
+      "of",
+      "the",
+      "step",
+      "s",
+      "note",
+      "claim",
+      "the",
+      "step",
+      "only",
+      "if",
+      "the",
+      "agent",
+      "owns",
+      "that",
+      "collection",
+      "and",
+      "return",
+      "one",
+      "audit",
+      "leaf"
+    ],
+    "values": {
+      "en": "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf…"
+    }
   }
 ]
 

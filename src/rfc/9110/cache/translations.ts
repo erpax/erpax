@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches.",
-    "uuid": "76213475-d00d-8a28-9ba8-4df73ee5fcd5",
+    "source": "Use when reasoning about cache — Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches.",
+    "uuid": "0f9d3969-4fd3-82ee-8b69-a77f6eeec84f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "cache",
       "generic",
       "payload",
       "cms",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "fetches"
     ],
     "values": {
-      "en": "Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches."
+      "en": "Use when reasoning about cache — Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches."
     }
   }
 ]

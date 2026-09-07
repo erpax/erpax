@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces.",
-    "uuid": "88cdd8b7-bc28-8f47-923d-c80dd1d3b2b7",
+    "source": "Use when reasoning about types — Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces.",
+    "uuid": "961629a0-cff7-8a7e-9bf1-aeafff70d1ea",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "types",
       "canonical",
       "ifrs",
       "asc",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "produces"
     ],
     "values": {
-      "en": "Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces."
+      "en": "Use when reasoning about types — Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces."
     }
   }
 ]

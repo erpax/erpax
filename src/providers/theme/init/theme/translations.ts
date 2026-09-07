@@ -14,6 +14,36 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "theme"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about theme — A theme applied by React is applied *after* hydration, and hydration happens after first paint.",
+    "uuid": "b0a02fbc-632d-897a-83a6-393e0cde2702",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "theme",
+      "a",
+      "theme",
+      "applied",
+      "by",
+      "react",
+      "is",
+      "applied",
+      "after",
+      "hydration",
+      "and",
+      "hydration",
+      "happens",
+      "after",
+      "first",
+      "paint"
+    ],
+    "values": {
+      "en": "Use when reasoning about theme — A theme applied by React is applied *after* hydration, and hydration happens after first paint."
+    }
   }
 ]
 

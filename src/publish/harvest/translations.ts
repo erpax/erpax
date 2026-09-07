@@ -14,6 +14,46 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "harvest"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about harvest — rules/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted and logged .",
+    "uuid": "13761bfc-5fb8-85a9-9df1-90b36aab390f",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "harvest",
+      "rules",
+      "forge",
+      "established",
+      "the",
+      "negative",
+      "an",
+      "identifier",
+      "only",
+      "a",
+      "registry",
+      "may",
+      "assign",
+      "is",
+      "received",
+      "or",
+      "refused",
+      "never",
+      "generated",
+      "three",
+      "sites",
+      "here",
+      "once",
+      "minted",
+      "and",
+      "logged"
+    ],
+    "values": {
+      "en": "Use when reasoning about harvest — rules/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted and logged ."
+    }
   }
 ]
 

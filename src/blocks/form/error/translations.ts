@@ -14,6 +14,50 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "error"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about error — A field that rejects input and explains nothing is a dead end: the user knows the form will not submit and has no way to learn what to change.",
+    "uuid": "3ac1a673-7de0-8ff8-bc78-36eebd71cb0c",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "error",
+      "a",
+      "field",
+      "that",
+      "rejects",
+      "input",
+      "and",
+      "explains",
+      "nothing",
+      "is",
+      "a",
+      "dead",
+      "end",
+      "the",
+      "user",
+      "knows",
+      "the",
+      "form",
+      "will",
+      "not",
+      "submit",
+      "and",
+      "has",
+      "no",
+      "way",
+      "to",
+      "learn",
+      "what",
+      "to",
+      "change"
+    ],
+    "values": {
+      "en": "Use when reasoning about error — A field that rejects input and explains nothing is a dead end: the user knows the form will not submit and has no way to learn what to change."
+    }
   }
 ]
 

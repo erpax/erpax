@@ -14,6 +14,48 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "uuid"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about uuid — content-addresses a failure and gives it a typed shape, so the same failure raised twice has the same address and can be counted, grouped and traced.",
+    "uuid": "c8d4973e-1794-83a6-bfc4-8f8ad12f0353",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "uuid",
+      "content",
+      "addresses",
+      "a",
+      "failure",
+      "and",
+      "gives",
+      "it",
+      "a",
+      "typed",
+      "shape",
+      "so",
+      "the",
+      "same",
+      "failure",
+      "raised",
+      "twice",
+      "has",
+      "the",
+      "same",
+      "address",
+      "and",
+      "can",
+      "be",
+      "counted",
+      "grouped",
+      "and",
+      "traced"
+    ],
+    "values": {
+      "en": "Use when reasoning about uuid — content-addresses a failure and gives it a typed shape, so the same failure raised twice has the same address and can be counted, grouped and traced."
+    }
   }
 ]
 

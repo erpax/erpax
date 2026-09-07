@@ -14,6 +14,44 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "groups"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about groups — names the one-word parents that root vocabulary nests under, and derives each atom's admin group from its path prefix. decides membership.",
+    "uuid": "a76b105f-cd9a-80ac-b36b-38a673d5fc95",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "groups",
+      "names",
+      "the",
+      "one",
+      "word",
+      "parents",
+      "that",
+      "root",
+      "vocabulary",
+      "nests",
+      "under",
+      "and",
+      "derives",
+      "each",
+      "atom",
+      "s",
+      "admin",
+      "group",
+      "from",
+      "its",
+      "path",
+      "prefix",
+      "decides",
+      "membership"
+    ],
+    "values": {
+      "en": "Use when reasoning about groups — names the one-word parents that root vocabulary nests under, and derives each atom's admin group from its path prefix. decides membership."
+    }
   }
 ]
 

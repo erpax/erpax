@@ -17,15 +17,20 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number).",
-    "uuid": "76dcaea2-bb1d-8bd4-b33c-1a90fd73f067",
+    "source": "Use when reasoning about unp — Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number).",
+    "uuid": "20be7c0c-0f7e-83b0-8bd8-d8aa15ca6988",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "unp",
       "unique",
       "sales",
       "number"
     ],
     "values": {
-      "en": "Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number)."
+      "en": "Use when reasoning about unp — Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number)."
     }
   }
 ]

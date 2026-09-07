@@ -14,6 +14,52 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "actions"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about actions — , and take a typed input and return an . Each validates, creates the document, and lets the collection's own hooks do the posting — so a dashboard cannot write an unbalanced entry…",
+    "uuid": "3927eaa7-9738-85ba-ba2e-3f491290d261",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "actions",
+      "and",
+      "take",
+      "a",
+      "typed",
+      "input",
+      "and",
+      "return",
+      "an",
+      "each",
+      "validates",
+      "creates",
+      "the",
+      "document",
+      "and",
+      "lets",
+      "the",
+      "collection",
+      "s",
+      "own",
+      "hooks",
+      "do",
+      "the",
+      "posting",
+      "so",
+      "a",
+      "dashboard",
+      "cannot",
+      "write",
+      "an",
+      "unbalanced",
+      "entry"
+    ],
+    "values": {
+      "en": "Use when reasoning about actions — , and take a typed input and return an . Each validates, creates the document, and lets the collection's own hooks do the posting — so a dashboard cannot write an unbalanced entry…"
+    }
   }
 ]
 

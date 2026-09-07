@@ -14,6 +14,38 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "command"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed.",
+    "uuid": "74d9c929-73e0-85c6-94d2-6cb3b4c4d01b",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "command",
+      "that",
+      "file",
+      "became",
+      "a",
+      "child",
+      "atom",
+      "at",
+      "in",
+      "an",
+      "earlier",
+      "refactor",
+      "and",
+      "the",
+      "shell",
+      "was",
+      "never",
+      "repointed"
+    ],
+    "values": {
+      "en": "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed."
+    }
   }
 ]
 

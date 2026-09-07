@@ -14,6 +14,51 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "archive"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about archive — The archive lays post cards in a responsive grid. Visually it is columns; structurally it is an **ItemList** — a set of sibling entries with a defined order — and that structure…",
+    "uuid": "104efefe-1a4f-82d4-ac63-23747dc11c0a",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "archive",
+      "the",
+      "archive",
+      "lays",
+      "post",
+      "cards",
+      "in",
+      "a",
+      "responsive",
+      "grid",
+      "visually",
+      "it",
+      "is",
+      "columns",
+      "structurally",
+      "it",
+      "is",
+      "an",
+      "itemlist",
+      "a",
+      "set",
+      "of",
+      "sibling",
+      "entries",
+      "with",
+      "a",
+      "defined",
+      "order",
+      "and",
+      "that",
+      "structure"
+    ],
+    "values": {
+      "en": "Use when reasoning about archive — The archive lays post cards in a responsive grid. Visually it is columns; structurally it is an **ItemList** — a set of sibling entries with a defined order — and that structure…"
+    }
   }
 ]
 

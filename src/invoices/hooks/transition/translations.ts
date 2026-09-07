@@ -14,6 +14,50 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "transition"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about transition — The AR hook ( ) and the AP hook ( ) both answer one question before emitting a domain event: *did this write CHANGE the document's liveness?* Both wrote , , and for themselves…",
+    "uuid": "5e3083ff-4b99-837b-8312-3e709cc0db68",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "transition",
+      "the",
+      "ar",
+      "hook",
+      "and",
+      "the",
+      "ap",
+      "hook",
+      "both",
+      "answer",
+      "one",
+      "question",
+      "before",
+      "emitting",
+      "a",
+      "domain",
+      "event",
+      "did",
+      "this",
+      "write",
+      "change",
+      "the",
+      "document",
+      "s",
+      "liveness",
+      "both",
+      "wrote",
+      "and",
+      "for",
+      "themselves"
+    ],
+    "values": {
+      "en": "Use when reasoning about transition — The AR hook ( ) and the AP hook ( ) both answer one question before emitting a domain event: *did this write CHANGE the document's liveness?* Both wrote , , and for themselves…"
+    }
   }
 ]
 

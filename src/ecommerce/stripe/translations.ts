@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "stripe"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about stripe — resolves the tenant's own Stripe credentials before charging, closes the order against that same tenant, and resolves the tenant from the event rather than trusting a default.",
+    "uuid": "6ad7c493-2c58-842c-bedd-a0691d0f8be1",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "stripe",
+      "resolves",
+      "the",
+      "tenant",
+      "s",
+      "own",
+      "stripe",
+      "credentials",
+      "before",
+      "charging",
+      "closes",
+      "the",
+      "order",
+      "against",
+      "that",
+      "same",
+      "tenant",
+      "and",
+      "resolves",
+      "the",
+      "tenant",
+      "from",
+      "the",
+      "event",
+      "rather",
+      "than",
+      "trusting",
+      "a",
+      "default"
+    ],
+    "values": {
+      "en": "Use when reasoning about stripe — resolves the tenant's own Stripe credentials before charging, closes the order against that same tenant, and resolves the tenant from the event rather than trusting a default."
+    }
   }
 ]
 

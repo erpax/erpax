@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about score as a medical facet of [[medical]] — vocabulary pivot to @/score; nested not duplicated.",
+    "source": "Use when reasoning about score as a medical facet of medical — vocabulary pivot to @/score; nested not duplicated.",
     "uuid": "937ff78e-ae52-8cf0-855f-0947211fa113",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about score as a medical facet of [[medical]] — vocabulary pivot to @/score; nested not duplicated."
+      "en": "Use when reasoning about score as a medical facet of medical — vocabulary pivot to @/score; nested not duplicated."
     }
   }
 ]

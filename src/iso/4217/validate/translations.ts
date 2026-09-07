@@ -17,16 +17,21 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ISO 4217 currency-code validator.",
-    "uuid": "8be93fce-c16f-8eda-bf50-83c5aaba9a46",
+    "source": "Use when reasoning about validate — ISO 4217 currency-code validator.",
+    "uuid": "8ceeeaf3-c853-8a42-8342-5f5aaf80c0d7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "validate",
       "iso",
       "currency",
       "code",
       "validator"
     ],
     "values": {
-      "en": "ISO 4217 currency-code validator."
+      "en": "Use when reasoning about validate — ISO 4217 currency-code validator."
     }
   }
 ]

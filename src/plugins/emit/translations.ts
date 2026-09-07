@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "plugins/emit — generate Claude Code plugin manifests for erpax.",
-    "uuid": "827133e3-d100-8804-bbd3-cbcf6c9917e9",
+    "source": "Use when reasoning about emit — plugins/emit — generate Claude Code plugin manifests for erpax.",
+    "uuid": "988ea9f5-7231-88b2-9a1b-bb9e4736b20b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "emit",
       "plugins",
       "emit",
       "generate",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "erpax"
     ],
     "values": {
-      "en": "plugins/emit — generate Claude Code plugin manifests for erpax."
+      "en": "Use when reasoning about emit — plugins/emit — generate Claude Code plugin manifests for erpax."
     }
   }
 ]

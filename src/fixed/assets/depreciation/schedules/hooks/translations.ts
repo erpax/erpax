@@ -14,6 +14,55 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — books the period's charge when the schedule row is posted. The schedule is the record of what SHOULD be charged and when; letting the hook post it is what keeps the two from…",
+    "uuid": "96fb0df0-8dc4-8bec-bbc4-56f3d37b8df7",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "books",
+      "the",
+      "period",
+      "s",
+      "charge",
+      "when",
+      "the",
+      "schedule",
+      "row",
+      "is",
+      "posted",
+      "the",
+      "schedule",
+      "is",
+      "the",
+      "record",
+      "of",
+      "what",
+      "should",
+      "be",
+      "charged",
+      "and",
+      "when",
+      "letting",
+      "the",
+      "hook",
+      "post",
+      "it",
+      "is",
+      "what",
+      "keeps",
+      "the",
+      "two",
+      "from"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — books the period's charge when the schedule row is posted. The schedule is the record of what SHOULD be charged and when; letting the hook post it is what keeps the two from…"
+    }
   }
 ]
 

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access",
-    "uuid": "41c103af-1f55-88fc-bc0d-88a76313c474",
+    "source": "Use when reasoning about binding — Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access",
+    "uuid": "07c11463-f4ed-8319-a8df-ca0afca55d4b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "binding",
       "tenant",
       "scoped",
       "rbac",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "access"
     ],
     "values": {
-      "en": "Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access"
+      "en": "Use when reasoning about binding — Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access"
     }
   }
 ]

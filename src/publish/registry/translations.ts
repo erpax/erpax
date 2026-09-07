@@ -14,6 +14,35 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "registry"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand.",
+    "uuid": "cca27e29-16ee-8f2a-8e3b-92087f414757",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "registry",
+      "which",
+      "of",
+      "atoms",
+      "this",
+      "corpus",
+      "can",
+      "honestly",
+      "publish",
+      "computed",
+      "rather",
+      "than",
+      "kept",
+      "by",
+      "hand"
+    ],
+    "values": {
+      "en": "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand."
+    }
   }
 ]
 

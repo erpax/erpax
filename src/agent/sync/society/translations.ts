@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "agent-society — the breath over the agent-sync bus.",
-    "uuid": "08fdc517-f964-873f-8c5b-f65f0df19df1",
+    "source": "Use when reasoning about society — agent-society — the breath over the agent-sync bus.",
+    "uuid": "2c84f08d-3e2f-8c4a-aec6-6abaa73a4b9c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "society",
       "agent",
       "society",
       "the",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "bus"
     ],
     "values": {
-      "en": "agent-society — the breath over the agent-sync bus."
+      "en": "Use when reasoning about society — agent-society — the breath over the agent-sync bus."
     }
   }
 ]

@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Continuous quantum computation wave with real-time Zenodo publication",
-    "uuid": "6c6a6f23-ef59-821c-8c36-8b2917e4cd1e",
+    "source": "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication",
+    "uuid": "5acc29a6-9e97-8458-815a-c135a43b7e93",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "wave",
       "continuous",
       "quantum",
       "computation",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "publication"
     ],
     "values": {
-      "en": "Continuous quantum computation wave with real-time Zenodo publication"
+      "en": "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication"
     }
   }
 ]

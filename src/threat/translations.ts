@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Quantum threat classification (immediate-retire vs quantum-accelerated)",
-    "uuid": "415155b7-4968-8965-af8d-b5c3a985d1c2",
+    "source": "Use when reasoning about threat — Quantum threat classification (immediate-retire vs quantum-accelerated)",
+    "uuid": "700ae664-6175-8934-8192-10adc9221f09",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "threat",
       "quantum",
       "threat",
       "classification",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "accelerated"
     ],
     "values": {
-      "en": "Quantum threat classification (immediate-retire vs quantum-accelerated)"
+      "en": "Use when reasoning about threat — Quantum threat classification (immediate-retire vs quantum-accelerated)"
     }
   }
 ]

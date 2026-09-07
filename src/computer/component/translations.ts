@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about component as a part of [[computer]] — pivot to canonical @/component; nested not duplicated.",
+    "source": "Use when reasoning about component as a part of computer — pivot to canonical @/component; nested not duplicated.",
     "uuid": "faaf961f-eb0d-8742-9ff3-a3b709ecdd3c",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about component as a part of [[computer]] — pivot to canonical @/component; nested not duplicated."
+      "en": "Use when reasoning about component as a part of computer — pivot to canonical @/component; nested not duplicated."
     }
   }
 ]

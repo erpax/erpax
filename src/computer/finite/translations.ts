@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when modeling finite-state machines — seal check FSM linking [[seal]] guardians to automata theory under [[computer]].",
+    "source": "Use when modeling finite-state machines — seal check FSM linking seal guardians to automata theory under computer.",
     "uuid": "35128e68-5aaf-8737-991c-b6a1b5085a98",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "computer"
     ],
     "values": {
-      "en": "Use when modeling finite-state machines — seal check FSM linking [[seal]] guardians to automata theory under [[computer]]."
+      "en": "Use when modeling finite-state machines — seal check FSM linking seal guardians to automata theory under computer."
     }
   }
 ]

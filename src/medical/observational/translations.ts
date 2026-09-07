@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about observational as a medical facet of [[medical]] — vocabulary pivot to @/observational; nested not duplicated.",
+    "source": "Use when reasoning about observational as a medical facet of medical — vocabulary pivot to @/observational; nested not duplicated.",
     "uuid": "fa5c318b-d708-8500-8dea-268989002aad",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about observational as a medical facet of [[medical]] — vocabulary pivot to @/observational; nested not duplicated."
+      "en": "Use when reasoning about observational as a medical facet of medical — vocabulary pivot to @/observational; nested not duplicated."
     }
   }
 ]

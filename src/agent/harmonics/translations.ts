@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order.",
-    "uuid": "c6d27fed-118c-8af9-9cf1-5aeb12943e7d",
+    "source": "Use when reasoning about harmonics — harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order.",
+    "uuid": "d926c42f-4207-84e7-8ad8-3413a056f065",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "harmonics",
       "harmonics",
       "what",
       "it",
@@ -48,7 +53,7 @@ export const translations: readonly Translation[] = [
       "order"
     ],
     "values": {
-      "en": "harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order."
+      "en": "Use when reasoning about harmonics — harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order."
     }
   }
 ]

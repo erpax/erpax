@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "diamond/membership — stray-file membership audit (no readme dependency).",
-    "uuid": "108baa21-6a05-831a-83ea-fb998d070476",
+    "source": "Use when reasoning about membership — diamond/membership — stray-file membership audit (no readme dependency).",
+    "uuid": "64eafe29-34b5-83e8-9279-e92bc900905f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "membership",
       "diamond",
       "membership",
       "stray",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "dependency"
     ],
     "values": {
-      "en": "diamond/membership — stray-file membership audit (no readme dependency)."
+      "en": "Use when reasoning about membership — diamond/membership — stray-file membership audit (no readme dependency)."
     }
   }
 ]

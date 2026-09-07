@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "bar"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about bar — renders the strip a logged-in editor sees over public pages: the collection and document being viewed, and the link back into the admin panel that edits it.",
+    "uuid": "9724fd26-4d6f-82dd-b816-ede809482fbd",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "bar",
+      "renders",
+      "the",
+      "strip",
+      "a",
+      "logged",
+      "in",
+      "editor",
+      "sees",
+      "over",
+      "public",
+      "pages",
+      "the",
+      "collection",
+      "and",
+      "document",
+      "being",
+      "viewed",
+      "and",
+      "the",
+      "link",
+      "back",
+      "into",
+      "the",
+      "admin",
+      "panel",
+      "that",
+      "edits",
+      "it"
+    ],
+    "values": {
+      "en": "Use when reasoning about bar — renders the strip a logged-in editor sees over public pages: the collection and document being viewed, and the link back into the admin panel that edits it."
+    }
   }
 ]
 

@@ -14,6 +14,54 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — refuses a second grant of a role a user already holds. Without it the same role accumulates rows, and every count of \\\"who has this\\\" is wrong by however many times someone clicked.",
+    "uuid": "a970bc18-e260-85c9-b1d8-bd2910dabfaa",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "refuses",
+      "a",
+      "second",
+      "grant",
+      "of",
+      "a",
+      "role",
+      "a",
+      "user",
+      "already",
+      "holds",
+      "without",
+      "it",
+      "the",
+      "same",
+      "role",
+      "accumulates",
+      "rows",
+      "and",
+      "every",
+      "count",
+      "of",
+      "who",
+      "has",
+      "this",
+      "is",
+      "wrong",
+      "by",
+      "however",
+      "many",
+      "times",
+      "someone",
+      "clicked"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — refuses a second grant of a role a user already holds. Without it the same role accumulates rows, and every count of \\\"who has this\\\" is wrong by however many times someone clicked."
+    }
   }
 ]
 

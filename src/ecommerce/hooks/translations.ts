@@ -14,6 +14,46 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — publishes the order's transitions from the collection, so an order moved by the storefront, the admin panel or a job emits the same event.",
+    "uuid": "e888650b-51c9-8bd4-8632-a41cc22df4a3",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "publishes",
+      "the",
+      "order",
+      "s",
+      "transitions",
+      "from",
+      "the",
+      "collection",
+      "so",
+      "an",
+      "order",
+      "moved",
+      "by",
+      "the",
+      "storefront",
+      "the",
+      "admin",
+      "panel",
+      "or",
+      "a",
+      "job",
+      "emits",
+      "the",
+      "same",
+      "event"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — publishes the order's transitions from the collection, so an order moved by the storefront, the admin panel or a job emits the same event."
+    }
   }
 ]
 

@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about language as a hardware facet of [[computer]] — vocabulary pivot to @/language; nested not duplicated.",
+    "source": "Use when reasoning about language as a hardware facet of computer — vocabulary pivot to @/language; nested not duplicated.",
     "uuid": "a7876b2f-2b09-817c-bd0e-72157f668d0f",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about language as a hardware facet of [[computer]] — vocabulary pivot to @/language; nested not duplicated."
+      "en": "Use when reasoning about language as a hardware facet of computer — vocabulary pivot to @/language; nested not duplicated."
     }
   }
 ]

@@ -14,6 +14,41 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hero"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hero — A post's header: categories, the title as the page's , the byline, the publication date, and the cover image.",
+    "uuid": "38b1a323-b05c-8a43-b3d1-0fde32b7e005",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hero",
+      "a",
+      "post",
+      "s",
+      "header",
+      "categories",
+      "the",
+      "title",
+      "as",
+      "the",
+      "page",
+      "s",
+      "the",
+      "byline",
+      "the",
+      "publication",
+      "date",
+      "and",
+      "the",
+      "cover",
+      "image"
+    ],
+    "values": {
+      "en": "Use when reasoning about hero — A post's header: categories, the title as the page's , the byline, the publication date, and the cover image."
+    }
   }
 ]
 

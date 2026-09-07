@@ -14,6 +14,40 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "order"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about order — erpax folds content-uuids to a root in two different ways, and both are correct for what they answer:",
+    "uuid": "7c07fa1a-0386-816c-ab05-66b4655201b5",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "order",
+      "erpax",
+      "folds",
+      "content",
+      "uuids",
+      "to",
+      "a",
+      "root",
+      "in",
+      "two",
+      "different",
+      "ways",
+      "and",
+      "both",
+      "are",
+      "correct",
+      "for",
+      "what",
+      "they",
+      "answer"
+    ],
+    "values": {
+      "en": "Use when reasoning about order — erpax folds content-uuids to a root in two different ways, and both are correct for what they answer:"
+    }
   }
 ]
 

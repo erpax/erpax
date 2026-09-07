@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about signal as a anatomical part of [[body]] — vocabulary pivot to @/signal; nested not duplicated.",
+    "source": "Use when reasoning about signal as a anatomical part of body — vocabulary pivot to @/signal; nested not duplicated.",
     "uuid": "690d59ed-d108-8f4e-950e-9bf026c40daf",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about signal as a anatomical part of [[body]] — vocabulary pivot to @/signal; nested not duplicated."
+      "en": "Use when reasoning about signal as a anatomical part of body — vocabulary pivot to @/signal; nested not duplicated."
     }
   }
 ]

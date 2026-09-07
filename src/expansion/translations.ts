@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "HKDF-SHA256 key derivation replacing Rodin doubling",
-    "uuid": "8e84c764-936e-858e-b1f6-f3c2dfbcdb46",
+    "source": "Use when reasoning about expansion — HKDF-SHA256 key derivation replacing Rodin doubling",
+    "uuid": "b88e1ed5-242d-88b0-96eb-fc28699f47d6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "expansion",
       "hkdf",
       "sha256",
       "key",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "doubling"
     ],
     "values": {
-      "en": "HKDF-SHA256 key derivation replacing Rodin doubling"
+      "en": "Use when reasoning about expansion — HKDF-SHA256 key derivation replacing Rodin doubling"
     }
   }
 ]

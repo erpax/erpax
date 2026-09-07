@@ -14,6 +14,36 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "dashboard"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about dashboard — An empty admin panel is ambiguous: a first run and a broken connection look identical.",
+    "uuid": "004fe907-dee0-8437-9a86-b3a353305cb3",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "dashboard",
+      "an",
+      "empty",
+      "admin",
+      "panel",
+      "is",
+      "ambiguous",
+      "a",
+      "first",
+      "run",
+      "and",
+      "a",
+      "broken",
+      "connection",
+      "look",
+      "identical"
+    ],
+    "values": {
+      "en": "Use when reasoning about dashboard — An empty admin panel is ambiguous: a first run and a broken connection look identical."
+    }
   }
 ]
 

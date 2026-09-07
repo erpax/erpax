@@ -14,6 +14,46 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "fields"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about fields — shows the atom's coordinates, its bonds, and the entanglement fields warn when a change reaches further than the row in front of the editor.",
+    "uuid": "52b2e034-80cb-8dcc-a782-bc61038873a0",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "fields",
+      "shows",
+      "the",
+      "atom",
+      "s",
+      "coordinates",
+      "its",
+      "bonds",
+      "and",
+      "the",
+      "entanglement",
+      "fields",
+      "warn",
+      "when",
+      "a",
+      "change",
+      "reaches",
+      "further",
+      "than",
+      "the",
+      "row",
+      "in",
+      "front",
+      "of",
+      "the",
+      "editor"
+    ],
+    "values": {
+      "en": "Use when reasoning about fields — shows the atom's coordinates, its bonds, and the entanglement fields warn when a change reaches further than the row in front of the editor."
+    }
   }
 ]
 

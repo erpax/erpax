@@ -14,6 +14,51 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "button"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about button — The button that fills an empty install. Its whole design is the guard around a single irreversible action: seeding writes demo content into a live database, and running it twice…",
+    "uuid": "6551407d-f875-8b0e-9dd6-f812bb604a21",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "button",
+      "the",
+      "button",
+      "that",
+      "fills",
+      "an",
+      "empty",
+      "install",
+      "its",
+      "whole",
+      "design",
+      "is",
+      "the",
+      "guard",
+      "around",
+      "a",
+      "single",
+      "irreversible",
+      "action",
+      "seeding",
+      "writes",
+      "demo",
+      "content",
+      "into",
+      "a",
+      "live",
+      "database",
+      "and",
+      "running",
+      "it",
+      "twice"
+    ],
+    "values": {
+      "en": "Use when reasoning about button — The button that fills an empty install. Its whole design is the guard around a single irreversible action: seeding writes demo content into a live database, and running it twice…"
+    }
   }
 ]
 

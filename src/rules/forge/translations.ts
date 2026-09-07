@@ -14,6 +14,55 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "forge"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist.",
+    "uuid": "c9977dd8-72b2-8aec-a4b0-7fa20ad2e070",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "forge",
+      "that",
+      "function",
+      "never",
+      "contacted",
+      "zenodo",
+      "it",
+      "was",
+      "named",
+      "it",
+      "logged",
+      "as",
+      "though",
+      "a",
+      "deposit",
+      "had",
+      "been",
+      "made",
+      "and",
+      "it",
+      "returned",
+      "a",
+      "well",
+      "formed",
+      "doi",
+      "and",
+      "a",
+      "url",
+      "for",
+      "a",
+      "record",
+      "that",
+      "does",
+      "not",
+      "exist"
+    ],
+    "values": {
+      "en": "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist."
+    }
   }
 ]
 

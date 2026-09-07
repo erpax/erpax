@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when classifying algorithmic cost — big-O from loop-depth bindings under [[computer]]; executable not glossary.",
+    "source": "Use when classifying algorithmic cost — big-O from loop-depth bindings under computer; executable not glossary.",
     "uuid": "29f2b3ab-d7f0-8fe7-843f-4150b46e6951",
     "words": [
       "use",
@@ -38,7 +38,7 @@ export const translations: readonly Translation[] = [
       "glossary"
     ],
     "values": {
-      "en": "Use when classifying algorithmic cost — big-O from loop-depth bindings under [[computer]]; executable not glossary."
+      "en": "Use when classifying algorithmic cost — big-O from loop-depth bindings under computer; executable not glossary."
     }
   }
 ]

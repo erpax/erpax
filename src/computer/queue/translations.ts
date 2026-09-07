@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when ordering work FIFO under the machine model — executable queue nested under [[computer]]; distinct from top-level @/queue vocabulary.",
+    "source": "Use when ordering work FIFO under the machine model — executable queue nested under computer; distinct from top-level @/queue vocabulary.",
     "uuid": "0d811e76-857a-8213-ac17-99615ca467fa",
     "words": [
       "use",
@@ -42,7 +42,7 @@ export const translations: readonly Translation[] = [
       "vocabulary"
     ],
     "values": {
-      "en": "Use when ordering work FIFO under the machine model — executable queue nested under [[computer]]; distinct from top-level @/queue vocabulary."
+      "en": "Use when ordering work FIFO under the machine model — executable queue nested under computer; distinct from top-level @/queue vocabulary."
     }
   }
 ]

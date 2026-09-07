@@ -14,6 +14,46 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "face"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about face — Every number in this session reached its reader as a sentence. *\\\"48 blind probes\\\"*, *\\\"1.6× slower cached\\\"*, *\\\"237 dead pointers\\\"* — each true when written, none checkable by the…",
+    "uuid": "8aeedd25-3811-85a1-9e42-3d6fba5a8d2e",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "face",
+      "every",
+      "number",
+      "in",
+      "this",
+      "session",
+      "reached",
+      "its",
+      "reader",
+      "as",
+      "a",
+      "sentence",
+      "blind",
+      "probes",
+      "slower",
+      "cached",
+      "dead",
+      "pointers",
+      "each",
+      "true",
+      "when",
+      "written",
+      "none",
+      "checkable",
+      "by",
+      "the"
+    ],
+    "values": {
+      "en": "Use when reasoning about face — Every number in this session reached its reader as a sentence. *\\\"48 blind probes\\\"*, *\\\"1.6× slower cached\\\"*, *\\\"237 dead pointers\\\"* — each true when written, none checkable by the…"
+    }
   }
 ]
 

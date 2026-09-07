@@ -17,11 +17,17 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Наредба Н-18 чл.",
-    "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
-    "words": [],
+    "source": "Use when reasoning about scope — Наредба Н-18 чл.",
+    "uuid": "d0e73c79-1b93-846e-bcce-114ade05d312",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "scope"
+    ],
     "values": {
-      "en": "Наредба Н-18 чл."
+      "en": "Use when reasoning about scope — Наредба Н-18 чл."
     }
   }
 ]

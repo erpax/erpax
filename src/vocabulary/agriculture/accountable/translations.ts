@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal [[entry]] engine.",
-    "uuid": "95f72c3d-c5dd-8c4d-bd2b-cc045e157f84",
+    "source": "Use when reasoning about accountable — agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal entry engine.",
+    "uuid": "fd173b8d-3984-8a13-9713-6ac783e47121",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "accountable",
       "agriculture",
       "accountable",
       "the",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "engine"
     ],
     "values": {
-      "en": "agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal [[entry]] engine."
+      "en": "Use when reasoning about accountable — agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal entry engine."
     }
   }
 ]

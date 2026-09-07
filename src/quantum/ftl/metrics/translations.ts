@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Quantum FTL metrics — reuse and amortization calculations",
-    "uuid": "f017f78f-68e9-8dfc-801e-d24a91e100ae",
+    "source": "Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations",
+    "uuid": "ff25aa4e-ef18-8238-95c1-0656988f6302",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "metrics",
       "quantum",
       "ftl",
       "metrics",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "calculations"
     ],
     "values": {
-      "en": "Quantum FTL metrics — reuse and amortization calculations"
+      "en": "Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations"
     }
   }
 ]

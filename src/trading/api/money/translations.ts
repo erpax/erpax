@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry.",
-    "uuid": "d5791191-2d71-8de2-882d-db58d284d15d",
+    "source": "Use when reasoning about money — Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry.",
+    "uuid": "5ad250e6-d64f-8770-875e-9dda22aecad7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "money",
       "use",
       "for",
       "the",
@@ -56,7 +61,7 @@ export const translations: readonly Translation[] = [
       "registry"
     ],
     "values": {
-      "en": "Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry."
+      "en": "Use when reasoning about money — Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry."
     }
   }
 ]

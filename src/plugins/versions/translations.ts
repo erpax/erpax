@@ -14,6 +14,37 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "versions"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about versions — turns on Payload's native for every collection except those named in , with bounding the history.",
+    "uuid": "cf16dcc3-c6e2-8fed-8b41-0f7dd49b02a0",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "versions",
+      "turns",
+      "on",
+      "payload",
+      "s",
+      "native",
+      "for",
+      "every",
+      "collection",
+      "except",
+      "those",
+      "named",
+      "in",
+      "with",
+      "bounding",
+      "the",
+      "history"
+    ],
+    "values": {
+      "en": "Use when reasoning about versions — turns on Payload's native for every collection except those named in , with bounding the history."
+    }
   }
 ]
 

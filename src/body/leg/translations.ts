@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about leg as an anatomical part of [[body]] — vocabulary pivot to @/leg; nested not duplicated.",
+    "source": "Use when reasoning about leg as an anatomical part of body — vocabulary pivot to @/leg; nested not duplicated.",
     "uuid": "aef371fb-c376-804d-864c-4aa7a4298316",
     "words": [
       "use",
@@ -40,7 +40,7 @@ export const translations: readonly Translation[] = [
       "duplicated"
     ],
     "values": {
-      "en": "Use when reasoning about leg as an anatomical part of [[body]] — vocabulary pivot to @/leg; nested not duplicated."
+      "en": "Use when reasoning about leg as an anatomical part of body — vocabulary pivot to @/leg; nested not duplicated."
     }
   }
 ]

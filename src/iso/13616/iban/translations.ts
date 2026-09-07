@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ISO 13616 IBAN validator with ISO 7064 mod-97 checksum.",
-    "uuid": "e199c7da-0a61-8dbf-a0b5-b1080253ec14",
+    "source": "Use when reasoning about iban — ISO 13616 IBAN validator with ISO 7064 mod-97 checksum.",
+    "uuid": "955c7c0a-ccfc-82e2-9799-b30743f7024a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "iban",
       "iso",
       "iban",
       "validator",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "checksum"
     ],
     "values": {
-      "en": "ISO 13616 IBAN validator with ISO 7064 mod-97 checksum."
+      "en": "Use when reasoning about iban — ISO 13616 IBAN validator with ISO 7064 mod-97 checksum."
     }
   }
 ]

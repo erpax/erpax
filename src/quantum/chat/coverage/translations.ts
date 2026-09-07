@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Coverage calculation — measure answered question fraction",
-    "uuid": "459ca07d-9432-80d5-b42d-f56a3e88e578",
+    "source": "Use when reasoning about coverage — Coverage calculation — measure answered question fraction",
+    "uuid": "64f782f6-2ea7-8e12-84c4-49c306dfadda",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "coverage",
       "coverage",
       "calculation",
       "measure",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "fraction"
     ],
     "values": {
-      "en": "Coverage calculation — measure answered question fraction"
+      "en": "Use when reasoning about coverage — Coverage calculation — measure answered question fraction"
     }
   }
 ]

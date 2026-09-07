@@ -14,6 +14,47 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "relation"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about relation — A Payload relationship is one value with two shapes: the raw id when unpopulated, the whole document when populated. A **polymorphic** one is a third shape — .",
+    "uuid": "5c9ea861-52a2-8711-a1ce-1dd200faa160",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "relation",
+      "a",
+      "payload",
+      "relationship",
+      "is",
+      "one",
+      "value",
+      "with",
+      "two",
+      "shapes",
+      "the",
+      "raw",
+      "id",
+      "when",
+      "unpopulated",
+      "the",
+      "whole",
+      "document",
+      "when",
+      "populated",
+      "a",
+      "polymorphic",
+      "one",
+      "is",
+      "a",
+      "third",
+      "shape"
+    ],
+    "values": {
+      "en": "Use when reasoning about relation — A Payload relationship is one value with two shapes: the raw id when unpopulated, the whole document when populated. A **polymorphic** one is a third shape — ."
+    }
   }
 ]
 

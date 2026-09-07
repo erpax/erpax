@@ -14,6 +14,39 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "mode"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about mode — reads the operating mode and refuses an operation the mode does not permit; fails closed rather than degrading.",
+    "uuid": "f3c0f780-2bac-8063-a911-3076865a9b4d",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "mode",
+      "reads",
+      "the",
+      "operating",
+      "mode",
+      "and",
+      "refuses",
+      "an",
+      "operation",
+      "the",
+      "mode",
+      "does",
+      "not",
+      "permit",
+      "fails",
+      "closed",
+      "rather",
+      "than",
+      "degrading"
+    ],
+    "values": {
+      "en": "Use when reasoning about mode — reads the operating mode and refuses an operation the mode does not permit; fails closed rather than degrading."
+    }
   }
 ]
 

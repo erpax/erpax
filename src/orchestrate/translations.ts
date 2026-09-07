@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Quantum orchestration engine for parallel Millennium Problem computation",
-    "uuid": "13a8ee2f-ddbd-8338-bd7b-ace2cab817a3",
+    "source": "Use when reasoning about orchestrate — Quantum orchestration engine for parallel Millennium Problem computation",
+    "uuid": "5f66782d-0581-8978-893f-4a9022688ef6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "orchestrate",
       "quantum",
       "orchestration",
       "engine",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "computation"
     ],
     "values": {
-      "en": "Quantum orchestration engine for parallel Millennium Problem computation"
+      "en": "Use when reasoning about orchestrate — Quantum orchestration engine for parallel Millennium Problem computation"
     }
   }
 ]

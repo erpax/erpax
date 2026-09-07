@@ -14,6 +14,53 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "copy"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…",
+    "uuid": "fc1ae379-3035-8d58-873f-7f800a95a344",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "copy",
+      "this",
+      "corpus",
+      "states",
+      "the",
+      "law",
+      "already",
+      "duplication",
+      "is",
+      "camouflage",
+      "while",
+      "one",
+      "law",
+      "is",
+      "stated",
+      "in",
+      "two",
+      "private",
+      "corners",
+      "nothing",
+      "can",
+      "show",
+      "a",
+      "third",
+      "place",
+      "is",
+      "missing",
+      "it",
+      "it",
+      "has",
+      "paid",
+      "for",
+      "it"
+    ],
+    "values": {
+      "en": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…"
+    }
   }
 ]
 

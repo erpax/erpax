@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ISO 19005 PDF/A — long-term archival PDF profiles.",
-    "uuid": "cec4e7b2-7664-8613-8076-ff5e3d99d884",
+    "source": "Use when reasoning about profile — ISO 19005 PDF/A — long-term archival PDF profiles.",
+    "uuid": "0b3fd76f-9d95-891b-8f77-e597d363d799",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "profile",
       "iso",
       "pdf",
       "a",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "profiles"
     ],
     "values": {
-      "en": "ISO 19005 PDF/A — long-term archival PDF profiles."
+      "en": "Use when reasoning about profile — ISO 19005 PDF/A — long-term archival PDF profiles."
     }
   }
 ]

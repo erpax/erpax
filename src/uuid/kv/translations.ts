@@ -14,6 +14,43 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "kv"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about kv — addresses the binding itself, lifts a plain map into , and finds the value for a key by address rather than by string.",
+    "uuid": "a26bfe43-0f84-8e69-bcc5-f8e5a4986588",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "kv",
+      "addresses",
+      "the",
+      "binding",
+      "itself",
+      "lifts",
+      "a",
+      "plain",
+      "map",
+      "into",
+      "and",
+      "finds",
+      "the",
+      "value",
+      "for",
+      "a",
+      "key",
+      "by",
+      "address",
+      "rather",
+      "than",
+      "by",
+      "string"
+    ],
+    "values": {
+      "en": "Use when reasoning about kv — addresses the binding itself, lifts a plain map into , and finds the value for a key by address rather than by string."
+    }
   }
 ]
 

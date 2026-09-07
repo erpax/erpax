@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Session routing — improve, append, seal chat sessions",
-    "uuid": "54ba5463-d9cf-8e8f-8169-484b6acedc5e",
+    "source": "Use when reasoning about routing — Session routing — improve, append, seal chat sessions",
+    "uuid": "48d6c67b-2933-8148-9377-b4a29bfad3bf",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "routing",
       "session",
       "routing",
       "improve",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "sessions"
     ],
     "values": {
-      "en": "Session routing — improve, append, seal chat sessions"
+      "en": "Use when reasoning about routing — Session routing — improve, append, seal chat sessions"
     }
   }
 ]

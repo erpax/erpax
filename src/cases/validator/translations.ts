@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Case balance law—charge and defence must balance into judgment before sealing",
-    "uuid": "b7001dba-4547-84e1-b403-283a0c48b55b",
+    "source": "Use when reasoning about validator — Case balance law—charge and defence must balance into judgment before sealing",
+    "uuid": "2eef49b8-0ef6-8738-8e8e-037c16f1157b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "validator",
       "case",
       "balance",
       "law",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "sealing"
     ],
     "values": {
-      "en": "Case balance law—charge and defence must balance into judgment before sealing"
+      "en": "Use when reasoning about validator — Case balance law—charge and defence must balance into judgment before sealing"
     }
   }
 ]

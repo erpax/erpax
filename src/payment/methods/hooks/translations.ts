@@ -14,6 +14,37 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — Every hook sibling is re-exported here, so a collection writes rather than naming each file.",
+    "uuid": "2397940e-d58d-818f-9b63-d03dd52953fd",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "every",
+      "hook",
+      "sibling",
+      "is",
+      "re",
+      "exported",
+      "here",
+      "so",
+      "a",
+      "collection",
+      "writes",
+      "rather",
+      "than",
+      "naming",
+      "each",
+      "file"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — Every hook sibling is re-exported here, so a collection writes rather than naming each file."
+    }
   }
 ]
 

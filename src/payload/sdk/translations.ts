@@ -14,6 +14,47 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "sdk"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about sdk — resolves the API base URL for the runtime it finds itself in, then returns a singleton in the browser and a fresh instance on the server.",
+    "uuid": "b4f43332-233d-8877-8d23-4e928810a630",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "sdk",
+      "resolves",
+      "the",
+      "api",
+      "base",
+      "url",
+      "for",
+      "the",
+      "runtime",
+      "it",
+      "finds",
+      "itself",
+      "in",
+      "then",
+      "returns",
+      "a",
+      "singleton",
+      "in",
+      "the",
+      "browser",
+      "and",
+      "a",
+      "fresh",
+      "instance",
+      "on",
+      "the",
+      "server"
+    ],
+    "values": {
+      "en": "Use when reasoning about sdk — resolves the API base URL for the runtime it finds itself in, then returns a singleton in the browser and a fresh instance on the server."
+    }
   }
 ]
 

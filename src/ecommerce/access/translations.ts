@@ -14,6 +14,43 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "access"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about access — , and answer the access question; the field-level pair narrows it to particular fields; the role helpers are what they all ask.",
+    "uuid": "f0f4365e-700a-8e02-b834-a211cbcee9ce",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "access",
+      "and",
+      "answer",
+      "the",
+      "access",
+      "question",
+      "the",
+      "field",
+      "level",
+      "pair",
+      "narrows",
+      "it",
+      "to",
+      "particular",
+      "fields",
+      "the",
+      "role",
+      "helpers",
+      "are",
+      "what",
+      "they",
+      "all",
+      "ask"
+    ],
+    "values": {
+      "en": "Use when reasoning about access — , and answer the access question; the field-level pair narrows it to particular fields; the role helpers are what they all ask."
+    }
   }
 ]
 

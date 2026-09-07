@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects.",
-    "uuid": "eba442f6-a2f7-83ba-9a23-d9362f35094c",
+    "source": "Use when reasoning about runtime — AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects.",
+    "uuid": "b60671fa-ba4b-89f7-a165-68533fd75571",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "runtime",
       "agentruntime",
       "dispatches",
       "chain",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "effects"
     ],
     "values": {
-      "en": "AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects."
+      "en": "Use when reasoning about runtime — AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects."
     }
   }
 ]

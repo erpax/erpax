@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "RFC 9110 §13 cached global fetcher (per-locale).",
-    "uuid": "b0abc2b3-f441-8333-9196-d4ca2f75531b",
+    "source": "Use when reasoning about globals — RFC 9110 §13 cached global fetcher (per-locale).",
+    "uuid": "722e067c-ceb0-80dd-b0ed-405cf84c5a21",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "globals",
       "rfc",
       "cached",
       "global",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "locale"
     ],
     "values": {
-      "en": "RFC 9110 §13 cached global fetcher (per-locale)."
+      "en": "Use when reasoning about globals — RFC 9110 §13 cached global fetcher (per-locale)."
     }
   }
 ]

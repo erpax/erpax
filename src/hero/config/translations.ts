@@ -14,6 +14,29 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "config"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about config — The Payload field configuration for a page hero: , , , .",
+    "uuid": "831aa718-d306-846f-b39e-62318f7a51ef",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "config",
+      "the",
+      "payload",
+      "field",
+      "configuration",
+      "for",
+      "a",
+      "page",
+      "hero"
+    ],
+    "values": {
+      "en": "Use when reasoning about config — The Payload field configuration for a page hero: , , , ."
+    }
   }
 ]
 

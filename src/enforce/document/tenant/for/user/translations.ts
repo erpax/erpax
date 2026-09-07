@@ -14,6 +14,53 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "user"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about user — scopes what a user can *read* and *update*. What it does not reliably reject is a **create that names another tenant**: the document does not exist yet, so there is no existing…",
+    "uuid": "0ee4e5e3-f7cd-86a5-a84f-b46013a54e1e",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "user",
+      "scopes",
+      "what",
+      "a",
+      "user",
+      "can",
+      "read",
+      "and",
+      "update",
+      "what",
+      "it",
+      "does",
+      "not",
+      "reliably",
+      "reject",
+      "is",
+      "a",
+      "create",
+      "that",
+      "names",
+      "another",
+      "tenant",
+      "the",
+      "document",
+      "does",
+      "not",
+      "exist",
+      "yet",
+      "so",
+      "there",
+      "is",
+      "no",
+      "existing"
+    ],
+    "values": {
+      "en": "Use when reasoning about user — scopes what a user can *read* and *update*. What it does not reliably reject is a **create that names another tenant**: the document does not exist yet, so there is no existing…"
+    }
   }
 ]
 

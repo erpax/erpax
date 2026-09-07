@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "search"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about search — Identification answers a typed identifier. Anything else routes here: runs a tenant-scoped query across the collections in scope, ORing over the text fields reports for each, and…",
+    "uuid": "cc0c708e-3501-8273-814e-e6ea8335b8af",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "search",
+      "identification",
+      "answers",
+      "a",
+      "typed",
+      "identifier",
+      "anything",
+      "else",
+      "routes",
+      "here",
+      "runs",
+      "a",
+      "tenant",
+      "scoped",
+      "query",
+      "across",
+      "the",
+      "collections",
+      "in",
+      "scope",
+      "oring",
+      "over",
+      "the",
+      "text",
+      "fields",
+      "reports",
+      "for",
+      "each",
+      "and"
+    ],
+    "values": {
+      "en": "Use when reasoning about search — Identification answers a typed identifier. Anything else routes here: runs a tenant-scoped query across the collections in scope, ORing over the text fields reports for each, and…"
+    }
   }
 ]
 

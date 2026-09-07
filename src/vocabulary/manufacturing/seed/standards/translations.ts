@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it).",
-    "uuid": "11b6d358-761c-8e1e-95c5-dd7c458c6578",
+    "source": "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it).",
+    "uuid": "6d1c9c03-2d88-80fc-bf8b-a0641db33229",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "standards",
       "standards",
       "every",
       "standard",
@@ -52,7 +57,7 @@ export const translations: readonly Translation[] = [
       "it"
     ],
     "values": {
-      "en": "standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it)."
+      "en": "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it)."
     }
   }
 ]

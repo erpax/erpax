@@ -14,6 +14,52 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "selector"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about selector — The control that lets a person choose light, dark, or **auto**. Auto is not a synonym for the current system value: choosing it *clears* the stored preference, so the page follows…",
+    "uuid": "e9566120-0170-8f24-af9c-740c02f70d5d",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "selector",
+      "the",
+      "control",
+      "that",
+      "lets",
+      "a",
+      "person",
+      "choose",
+      "light",
+      "dark",
+      "or",
+      "auto",
+      "auto",
+      "is",
+      "not",
+      "a",
+      "synonym",
+      "for",
+      "the",
+      "current",
+      "system",
+      "value",
+      "choosing",
+      "it",
+      "clears",
+      "the",
+      "stored",
+      "preference",
+      "so",
+      "the",
+      "page",
+      "follows"
+    ],
+    "values": {
+      "en": "Use when reasoning about selector — The control that lets a person choose light, dark, or **auto**. Auto is not a synonym for the current system value: choosing it *clears* the stored preference, so the page follows…"
+    }
   }
 ]
 

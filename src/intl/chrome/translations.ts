@@ -14,6 +14,49 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "chrome"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about chrome — The per-locale shell: message provider, , admin bar, header, children, footer. Its substance is that **one locale value reaches every part at once**, and the mechanism is the .",
+    "uuid": "f27f001b-6d9f-8705-8f5c-f691e29e0c25",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "chrome",
+      "the",
+      "per",
+      "locale",
+      "shell",
+      "message",
+      "provider",
+      "admin",
+      "bar",
+      "header",
+      "children",
+      "footer",
+      "its",
+      "substance",
+      "is",
+      "that",
+      "one",
+      "locale",
+      "value",
+      "reaches",
+      "every",
+      "part",
+      "at",
+      "once",
+      "and",
+      "the",
+      "mechanism",
+      "is",
+      "the"
+    ],
+    "values": {
+      "en": "Use when reasoning about chrome — The per-locale shell: message provider, , admin bar, header, children, footer. Its substance is that **one locale value reaches every part at once**, and the mechanism is the ."
+    }
   }
 ]
 

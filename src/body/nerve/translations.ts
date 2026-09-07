@@ -17,7 +17,7 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the nerve as an organ of [[body]] — pivot to canonical @/nerve; zero duplication.",
+    "source": "Use when reasoning about the nerve as an organ of body — pivot to canonical @/nerve; zero duplication.",
     "uuid": "d392fa8b-7046-8d84-af89-d2ac7355a320",
     "words": [
       "use",
@@ -39,7 +39,7 @@ export const translations: readonly Translation[] = [
       "duplication"
     ],
     "values": {
-      "en": "Use when reasoning about the nerve as an organ of [[body]] — pivot to canonical @/nerve; zero duplication."
+      "en": "Use when reasoning about the nerve as an organ of body — pivot to canonical @/nerve; zero duplication."
     }
   }
 ]

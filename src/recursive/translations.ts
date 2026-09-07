@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Recursive basis recognition - system generates and observes itself simultaneously",
-    "uuid": "bd46c1f1-a34d-8846-9475-413ec6917452",
+    "source": "Use when reasoning about recursive — Recursive basis recognition - system generates and observes itself simultaneously",
+    "uuid": "bb75cf1f-be32-8ddf-9d67-b64ea23d9ae6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "recursive",
       "recursive",
       "basis",
       "recognition",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "simultaneously"
     ],
     "values": {
-      "en": "Recursive basis recognition - system generates and observes itself simultaneously"
+      "en": "Use when reasoning about recursive — Recursive basis recognition - system generates and observes itself simultaneously"
     }
   }
 ]

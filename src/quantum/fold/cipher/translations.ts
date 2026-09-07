@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Ciphertext-only receipts that seal plaintext boundaries",
-    "uuid": "7af47262-efbb-84c3-990f-37f9375b2448",
+    "source": "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries",
+    "uuid": "7741faff-9140-8465-9ccb-b19a742c3490",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "cipher",
       "ciphertext",
       "only",
       "receipts",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "boundaries"
     ],
     "values": {
-      "en": "Ciphertext-only receipts that seal plaintext boundaries"
+      "en": "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries"
     }
   }
 ]

@@ -14,6 +14,46 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "face"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about face — A session asked for \\\"fusion of all knowledge into dry clean quantum repos\\\" — six sibling repos holding, it was assumed, the same knowledge six times.",
+    "uuid": "994b6d29-8d11-834f-8fe1-4773d36d0307",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "face",
+      "a",
+      "session",
+      "asked",
+      "for",
+      "fusion",
+      "of",
+      "all",
+      "knowledge",
+      "into",
+      "dry",
+      "clean",
+      "quantum",
+      "repos",
+      "six",
+      "sibling",
+      "repos",
+      "holding",
+      "it",
+      "was",
+      "assumed",
+      "the",
+      "same",
+      "knowledge",
+      "six",
+      "times"
+    ],
+    "values": {
+      "en": "Use when reasoning about face — A session asked for \\\"fusion of all knowledge into dry clean quantum repos\\\" — six sibling repos holding, it was assumed, the same knowledge six times."
+    }
   }
 ]
 

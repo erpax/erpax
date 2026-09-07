@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time).",
-    "uuid": "f8044fb7-bd3a-8dda-b32c-d8c2e78a7de8",
+    "source": "Use when reasoning about hr — Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time).",
+    "uuid": "52e4f6d1-efe3-860f-b7e4-e88e444e4a52",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hr",
       "use",
       "for",
       "the",
@@ -44,7 +49,7 @@ export const translations: readonly Translation[] = [
       "time"
     ],
     "values": {
-      "en": "Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time)."
+      "en": "Use when reasoning about hr — Use for the HR agent and its training corpus — owns the H2R hire-to-retire chain (employees, payroll, recruiting, leave, performance, time)."
     }
   }
 ]

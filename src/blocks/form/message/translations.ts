@@ -14,6 +14,45 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "message"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about message — Every other atom under blocks/form is a control: it has a name, a label, a value, and a place in the tab order.",
+    "uuid": "5f11a17e-06d1-8bd3-b66b-cd4dd5df4289",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "message",
+      "every",
+      "other",
+      "atom",
+      "under",
+      "blocks",
+      "form",
+      "is",
+      "a",
+      "control",
+      "it",
+      "has",
+      "a",
+      "name",
+      "a",
+      "label",
+      "a",
+      "value",
+      "and",
+      "a",
+      "place",
+      "in",
+      "the",
+      "tab",
+      "order"
+    ],
+    "values": {
+      "en": "Use when reasoning about message — Every other atom under blocks/form is a control: it has a name, a label, a value, and a place in the tab order."
+    }
   }
 ]
 

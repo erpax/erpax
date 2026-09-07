@@ -14,6 +14,46 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "hooks"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about hooks — derives the header's amounts from the lines whenever a line changes, and moves the stock the line commits. normalises the line before either runs.",
+    "uuid": "a4f6cd7c-fd5a-8e7e-af16-5204d5887d52",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hooks",
+      "derives",
+      "the",
+      "header",
+      "s",
+      "amounts",
+      "from",
+      "the",
+      "lines",
+      "whenever",
+      "a",
+      "line",
+      "changes",
+      "and",
+      "moves",
+      "the",
+      "stock",
+      "the",
+      "line",
+      "commits",
+      "normalises",
+      "the",
+      "line",
+      "before",
+      "either",
+      "runs"
+    ],
+    "values": {
+      "en": "Use when reasoning about hooks — derives the header's amounts from the lines whenever a line changes, and moves the stock the line commits. normalises the line before either runs."
+    }
   }
 ]
 

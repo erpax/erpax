@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Exact rational arithmetic for confidence, no decimal approximations",
-    "uuid": "156dfdbe-3f66-87dd-98db-becf0c3a159f",
+    "source": "Use when reasoning about exact — Exact rational arithmetic for confidence, no decimal approximations",
+    "uuid": "410e0350-9c18-8fc4-9184-441019636c43",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "exact",
       "exact",
       "rational",
       "arithmetic",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "approximations"
     ],
     "values": {
-      "en": "Exact rational arithmetic for confidence, no decimal approximations"
+      "en": "Use when reasoning about exact — Exact rational arithmetic for confidence, no decimal approximations"
     }
   }
 ]

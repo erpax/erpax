@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the [[merge]] law as code).",
-    "uuid": "86f9c53d-d2f0-800b-9622-eae0aec6f725",
+    "source": "Use when reasoning about merge — merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the merge law as code).",
+    "uuid": "f09ea092-6a12-83e6-9714-38c0bea876fd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "merge",
       "merge",
       "union",
       "the",
@@ -45,7 +50,7 @@ export const translations: readonly Translation[] = [
       "code"
     ],
     "values": {
-      "en": "merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the [[merge]] law as code)."
+      "en": "Use when reasoning about merge — merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the merge law as code)."
     }
   }
 ]

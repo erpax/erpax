@@ -14,6 +14,55 @@ export const translations: readonly Translation[] = [
     "values": {
       "en": "width"
     }
+  },
+  {
+    "key": "description",
+    "source": "Use when reasoning about width — One div, one style. means *half the form*, not fifty pixels — the value is a **percentage**, because a form field's width is meaningful only relative to the form it sits in, and a…",
+    "uuid": "f5b8539e-84b0-8eb1-97b7-8a54cb06f579",
+    "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "width",
+      "one",
+      "div",
+      "one",
+      "style",
+      "means",
+      "half",
+      "the",
+      "form",
+      "not",
+      "fifty",
+      "pixels",
+      "the",
+      "value",
+      "is",
+      "a",
+      "percentage",
+      "because",
+      "a",
+      "form",
+      "field",
+      "s",
+      "width",
+      "is",
+      "meaningful",
+      "only",
+      "relative",
+      "to",
+      "the",
+      "form",
+      "it",
+      "sits",
+      "in",
+      "and",
+      "a"
+    ],
+    "values": {
+      "en": "Use when reasoning about width — One div, one style. means *half the form*, not fifty pixels — the value is a **percentage**, because a form field's width is meaningful only relative to the form it sits in, and a…"
+    }
   }
 ]
 
