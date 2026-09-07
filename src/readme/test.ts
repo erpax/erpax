@@ -689,24 +689,58 @@ describe('readme — entropy gaps · seals (comparable units)', () => {
     expect(acct.totalGapEb).toBeGreaterThan(GAP_BASE_WEIGHT.trinity! + GAP_BASE_WEIGHT.unfolded!)
   })
 
-  it('cross-folder comparison: sealed folder net eb ≤ incomplete folder net eb', () => {
+  // BOTH of these asserted that a NAMED LIVE ATOM is broken — `card` was the "incomplete" folder,
+  // and the four-atom sample was assumed to carry gaps. The corpus then healed, and the
+  // assertions inverted: `card` is sealed now, so `sealed < incomplete` read -12.685 < -13.085
+  // (false — the remaining difference is only the horo ratio), and `totalGapEb > 0` read 0 > 0.
+  //
+  // A test that fails when the corpus IMPROVES is pinned to a defect, not to a law. Compare the
+  // same folder against ITSELF with gaps injected, so the claim is about the accounting and
+  // nothing outside the test can make it true or false.
+  it('a folder carrying gaps has a higher net eb than the same folder sealed', () => {
     const ctx = buildReadmeCorpusContext()
     const graph = buildReadmeTypographyGraph()
-    const sealed = deriveFolderModel('seal', process.cwd(), ctx, graph)
-    const incomplete = deriveFolderModel('card', process.cwd(), ctx, graph)
-    expect(sealed.entropy.netEntropyEb).toBeLessThan(incomplete.entropy.netEntropyEb)
+    const base = deriveFolderModel('seal', process.cwd(), ctx, graph)
+    const common = {
+      atomPath: base.atomPath,
+      form: base.form,
+      code: base.code,
+      proof: base.proof,
+      horo: base.horo,
+      statement: base.statement,
+      typography: base.typography,
+      membershipViolations: [],
+      membershipOk: true,
+    }
+    const sealed = accountGapsAndSeals({ ...common, sealed: true, crossImpurities: [], gravityHeld: true })
+    const gapped = accountGapsAndSeals({
+      ...common,
+      sealed: false,
+      crossImpurities: ['trinity.proof missing (test.ts)', 'not folded into matrix'],
+      gravityHeld: false,
+    })
+    // Same horo on both sides, so the horo ratio cancels and only the gaps move the number.
+    expect(gapped.totalGapEb).toBeGreaterThan(0)
+    expect(sealed.totalGapEb).toBe(0)
+    expect(sealed.netEntropyEb).toBeLessThan(gapped.netEntropyEb)
   })
 
-  it('aggregateCorpusEntropy rolls up sample slice in eb', () => {
+  it('aggregateCorpusEntropy rolls up sample slice in eb — conserving the parts', () => {
     const ctx = buildReadmeCorpusContext()
     const graph = buildReadmeTypographyGraph()
     const sample = ['readme', 'seal', 'card', 'cloudflare']
     const models = sample.map((p) => deriveFolderModel(p, process.cwd(), ctx, graph))
     const rollup = aggregateCorpusEntropy(models)
     expect(rollup.unit).toBe('eb')
-    expect(rollup.totalGapEb).toBeGreaterThan(0)
     expect(rollup.bySector.length).toBeGreaterThan(0)
     expect(rollup.sealedMass + rollup.unsealedMass).toBe(sample.length)
+    // CONSERVATION, not magnitude: the rollup is exactly the sum of its parts. This holds whether
+    // the sample carries gaps or none, so healing the corpus can never turn it red.
+    const gap = models.reduce((n, m) => n + m.entropy.totalGapEb, 0)
+    const seal = models.reduce((n, m) => n + m.entropy.totalSealEb, 0)
+    expect(rollup.totalGapEb).toBeCloseTo(gap, 6)
+    expect(rollup.totalSealEb).toBeCloseTo(seal, 6)
+    expect(rollup.totalGapEb).toBeGreaterThanOrEqual(0)
   })
 
   it('renderFolderReadme includes entropy gaps · seals section', () => {
