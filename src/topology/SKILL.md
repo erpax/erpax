@@ -2,18 +2,18 @@
 name: topology
 description: "Use when reasoning about topology — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: topology
-coordinate: "topology · 1/base · 73e8fe0f"
-contentUuid: "675ea64e-ed10-5ead-83a2-1560856339e2"
-diamondUuid: "d6edf093-1bfe-81c5-81bb-4068e3d7e9db"
-uuid: "73e8fe0f-714a-8ebe-990f-f7ef8e76f069"
-horo: 1
+coordinate: "topology · 5/round · af6a357d"
+contentUuid: "ec151056-d1dd-5dbd-8712-c0d58965b424"
+diamondUuid: "38642a19-6580-8576-9226-b0f67e783e1a"
+uuid: "af6a357d-c77d-8240-b737-d17382ec1bcb"
+horo: 5
 typography:
   partition: topology
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cbe2b873-5472-8e91-ab33-103efd69772f"
+  computationUuid: "b6f823c5-5b29-86ca-b4c8-ba624989a592"
   stages:
     - stage: path
       stageUuid: "e47b0dad-7a90-8447-9525-8b3f1b69e6d0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "01cbeb58-b97b-8757-a91a-6193f6240dd4"
     - stage: horo
-      stageUuid: "aa62bf01-7c00-8453-804d-873184c0b564"
+      stageUuid: "c438e8f1-219c-8522-aa6f-5a281708b13f"
     - stage: seal
       stageUuid: "d639eab1-6303-80a2-913b-04b58d2e2bd0"
     - stage: uuid
-      stageUuid: "95abc099-c12e-824c-badd-e1bdc3da44b6"
+      stageUuid: "a9069e80-c492-8e81-9c6f-45541b0c3168"
 version: 2
 ---
 # topology

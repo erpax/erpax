@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "adjustments",
-    "uuid": "d582edc5-e7d9-8fbf-a4ae-89b18f97e666",
+    "uuid": "1cf6fd7f-c75d-8d8e-85c5-70401c6b24f6",
     "words": [
       "adjustments"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection.",
-    "uuid": "ff7cd234-583c-8890-8218-42a79e350709",
+    "uuid": "d11c53b5-a5e4-82b5-ad1e-9aeace5e11b5",
     "words": [
       "use",
       "when",

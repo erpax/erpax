@@ -2,11 +2,11 @@
 name: mappings
 description: "Use when wiring source collection fields to statutory report template slots — mapping field names, types, transformations, and validation rules for SAF-T/XBRL/EN-16931 filings. The field-level mapping node for statutory report templates."
 atomPath: "taxing/jurisdictions/statutory/report/templates/statutory/field/mappings"
-coordinate: "taxing/jurisdictions/statutory/report/templates/statutory/field/mappings · 5/round · c6142d1f"
-contentUuid: "0f8ff288-37b3-568c-9e0b-23c5b7183c69"
-diamondUuid: "09dc74b5-de07-8343-b7a3-aacae2cbc284"
-uuid: "c6142d1f-5ae7-8d41-bdb2-153f7c2dea94"
-horo: 5
+coordinate: "taxing/jurisdictions/statutory/report/templates/statutory/field/mappings · 4/weave · e26aa6ff"
+contentUuid: "903e7231-9361-5895-85b5-92a9634d417f"
+diamondUuid: "e5a78668-140d-863a-994f-13155367d460"
+uuid: "e26aa6ff-0dfe-8f3f-b6fe-67cd32ccb81e"
+horo: 4
 typography:
   partition: taxing
   bondDegree: 10
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1514fe8e-3c24-82a5-98d3-b8292ddb52b7"
+  computationUuid: "084ccd1a-aa10-86d2-9f46-6a75c7cf63ab"
   stages:
     - stage: path
       stageUuid: "d0dd9ea1-045b-88bb-b212-3e3934e7047a"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "31e6565d-2928-8f2e-bd96-84885ceb3be9"
     - stage: horo
-      stageUuid: "514a7de0-7e4b-8c57-bdbc-660ddff112fa"
+      stageUuid: "99b9eb5c-4fb0-80fc-afaf-47bddcd6fc52"
     - stage: seal
       stageUuid: "c18356bb-d2a1-8fab-b7eb-50adb1e2da4e"
     - stage: uuid
-      stageUuid: "d36389b5-05b3-800e-a726-f1a5deb68fd7"
+      stageUuid: "88f437ce-41a5-86a0-85a9-627a28311b4b"
 version: 2
 ---
 # statutory-field-mappings

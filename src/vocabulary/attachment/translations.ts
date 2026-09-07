@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attachment",
-    "uuid": "631e6353-7902-8ca7-8759-a08f213b4e61",
+    "uuid": "3d63cf2a-d5f5-8ffe-83a9-8528071242e8",
     "words": [
       "attachment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about attachment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "6cf34986-040d-8865-8baa-cbf79d309096",
+    "uuid": "cf510435-31a3-8696-8c73-f7884345217d",
     "words": [
       "use",
       "when",

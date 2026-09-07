@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "receivables",
-    "uuid": "6393ceab-cd89-825f-ba89-787d6b9b4c40",
+    "uuid": "40406558-6d17-8495-95a2-a59e43b55916",
     "words": [
       "receivables"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about receivables — , , and are the A/R side of the same party document; buckets it and carries the expected-credit-loss figure IFRS 9 requires, which is the part a receivable cannot honestly omit.",
-    "uuid": "b291c376-6e5d-8239-9653-236b20091e65",
+    "uuid": "939c3cfe-d385-8424-a2e8-1ea2c7c5c5c9",
     "words": [
       "use",
       "when",

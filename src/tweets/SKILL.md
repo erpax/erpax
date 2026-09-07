@@ -2,11 +2,11 @@
 name: tweets
 description: "Use when reasoning about tweets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tweets
-coordinate: "tweets · 8/crest · a1d4f61d"
-contentUuid: "f5667eb2-9eb4-5742-a62a-58ae452d5370"
-diamondUuid: "991abcd2-1ab4-8fc9-8bab-405a27c16209"
-uuid: "a1d4f61d-2da3-8dc6-a67b-4ccb327bdd2a"
-horo: 8
+coordinate: "tweets · 5/round · a80d056a"
+contentUuid: "ea439599-ecb4-5af6-946d-dc330998c57a"
+diamondUuid: "467754bc-6c27-8e1c-91d0-98760ee694ba"
+uuid: "a80d056a-82c6-80ad-ba3b-b7c44cadcc23"
+horo: 5
 typography:
   partition: tweets
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9cfdbcd8-7231-8cbb-9883-f6dec56fdf7e"
+  computationUuid: "a0bd1c81-29bb-82e7-8785-a2f1bc77d391"
   stages:
     - stage: path
       stageUuid: "84682576-f7c2-860b-819d-ba15085f8485"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "02ab92e7-80fc-822b-9a94-6807613c2ca5"
     - stage: horo
-      stageUuid: "840b18e3-c411-8db6-899d-daae35b9a56d"
+      stageUuid: "28957d62-3912-8f18-834c-337ed37d68a8"
     - stage: seal
       stageUuid: "162056fc-2d48-8315-a6d3-417dd953d5d5"
     - stage: uuid
-      stageUuid: "6925de58-f90f-8894-bcc2-871b13999f01"
+      stageUuid: "2daeb6c1-fd1d-813e-aed5-4f5b814a94fc"
 version: 2
 ---
 # tweets

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fodder",
-    "uuid": "f9140830-2141-867f-87e6-4e075f4c3139",
+    "uuid": "b7cdd44e-fda0-840c-9c55-67f57495a5a0",
     "words": [
       "fodder"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when animals are fed harvested or provided feed rather than grazing — fodder/feed: hay, silage, grain, concentrate, the formulated ration (TMR), and the feed-conversion ratio. The cost driver of confined livestock and the harvested twin of grazed forage; FCR reuses the conversion atom.",
-    "uuid": "709094ec-516f-8534-a051-7ae68ea976b6",
+    "uuid": "48d39374-c465-88ea-be00-a0e2544feae9",
     "words": [
       "use",
       "when",

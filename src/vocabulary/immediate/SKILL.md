@@ -2,10 +2,10 @@
 name: immediate
 description: "Use when reasoning about immediate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/immediate"
-coordinate: "vocabulary/immediate · 7/descent · 9a43b99c"
-contentUuid: "17dea0e7-3eaa-5bcb-8981-f25f49be9206"
-diamondUuid: "f52fe1df-9fd4-86a3-8c53-95a053a2361e"
-uuid: "9a43b99c-1c52-8fcf-b002-abff8d424825"
+coordinate: "vocabulary/immediate · 7/descent · 117d5469"
+contentUuid: "2a07ea97-64a5-5005-8fe3-b6dee39de57b"
+diamondUuid: "3a51d000-b6af-8748-a950-01b15210192e"
+uuid: "117d5469-1add-8a1b-8326-36aa10f0fe4a"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b22748b6-064b-8caf-83bb-1e0a00543f03"
+  computationUuid: "ea32ada3-6c9d-8bf1-a5ad-a5860f7fd3b8"
   stages:
     - stage: path
       stageUuid: "342d243d-83aa-86a8-98e1-3ae6a265d91c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "036aebcc-5ebf-8c54-82b9-308c1fd76b6f"
     - stage: horo
-      stageUuid: "0e88a061-42d5-8674-8e14-b3e670271977"
+      stageUuid: "94c221d8-bb4c-887b-8318-5c007adf136e"
     - stage: seal
       stageUuid: "5677a2b2-8c2c-8741-90b8-378eff1f89f9"
     - stage: uuid
-      stageUuid: "6e5da723-538b-8146-85e8-e8ca69968032"
+      stageUuid: "e550becd-fe2b-8c6b-9256-47616082b798"
 version: 2
 ---
 # immediate

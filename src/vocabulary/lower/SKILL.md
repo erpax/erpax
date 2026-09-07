@@ -2,10 +2,10 @@
 name: lower
 description: "Use when reasoning about lower as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lower"
-coordinate: "vocabulary/lower · 4/weave · 74228f49"
-contentUuid: "726b0b4d-2db7-545a-a565-436c2b1e8fd9"
-diamondUuid: "96cd9c04-cfa9-8759-80c4-400a9b60a524"
-uuid: "74228f49-2115-80fd-a841-bd5e814702fd"
+coordinate: "vocabulary/lower · 4/weave · 830739d0"
+contentUuid: "e52c27a4-3553-5e85-8a26-deb342f606cb"
+diamondUuid: "2bcfd645-f506-8d57-ae26-cd89e8736343"
+uuid: "830739d0-4d4e-88d7-b024-1d98948c9725"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a93966be-b5ad-8b62-981e-c145cadb64ac"
+  computationUuid: "3fc04e6d-901d-87d3-9c7c-daa2161d35c8"
   stages:
     - stage: path
       stageUuid: "7338c074-53f3-87c9-afe6-177e32383498"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "18b47284-d3ca-8647-8d8b-e4958575d08f"
     - stage: horo
-      stageUuid: "089a92db-c4a4-810c-9cc7-8ecef920f92b"
+      stageUuid: "b2dc63fc-dee4-81f3-86c3-75fde6a833a6"
     - stage: seal
       stageUuid: "0a445524-aa17-8658-840e-5a5b98a2a8a9"
     - stage: uuid
-      stageUuid: "cfac93ae-9cf5-82ea-a81b-31ec51ce47c9"
+      stageUuid: "67a0341e-c913-8778-99bb-925adb4ffa29"
 version: 2
 ---
 # lower

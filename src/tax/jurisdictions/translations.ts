@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "jurisdictions",
-    "uuid": "006cdebf-b061-85c6-9ebd-58e68ce5d224",
+    "uuid": "628fac99-3135-8bb7-987d-b1a2e9d8c842",
     "words": [
       "jurisdictions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when setting up or querying tax authority master data — jurisdiction code, country/region/level (national to supranational), VAT registration number and dates, filing frequency and due day, filing currency. The per-tenant tax-authority master collection referenced by tax codes, calculations and returns.",
-    "uuid": "56a42801-119b-8ee1-b977-517d00122eb2",
+    "uuid": "5731d7f1-c0d9-8f59-8338-8eb685c24e9b",
     "words": [
       "use",
       "when",

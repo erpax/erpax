@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "modifications",
-    "uuid": "8fd40153-c4ff-8e6c-9b76-3bf29510c553",
+    "uuid": "36cbb99b-ed56-816b-8f37-99bf095ac5ee",
     "words": [
       "modifications"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register.",
-    "uuid": "8426d04c-2e07-80e0-bb92-76923589e062",
+    "uuid": "76faff8d-7f34-8c8f-babe-b4c402e9af17",
     "words": [
       "use",
       "when",

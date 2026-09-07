@@ -2,10 +2,10 @@
 name: validate
 description: "Use when reasoning about validate — ISO 8601 date/time validator."
 atomPath: "iso/8601/validate"
-coordinate: "iso/8601/validate · 4/weave · f374da8d"
-contentUuid: "e5032920-4a63-596a-9a07-b9a859cecf09"
-diamondUuid: "a69b733f-c406-87e3-b425-5a2b8054f922"
-uuid: "f374da8d-72dc-8eaf-9f51-42b07574b5e3"
+coordinate: "iso/8601/validate · 4/weave · d508f612"
+contentUuid: "2e9a8347-406a-5951-9995-daa2276c1f41"
+diamondUuid: "475614c3-0548-82c4-8f98-ebeaed91a79d"
+uuid: "d508f612-1c50-8d80-a6db-9f879d3e561c"
 horo: 4
 typography:
   partition: iso
@@ -15,7 +15,7 @@ standards:
   - "ISO-8601-1:2019 §5.4 calendar-date-and-time"
 bindings: []
 signatures:
-  computationUuid: "b50f3e76-d156-84f8-8c9a-6dc07bd3eab0"
+  computationUuid: "91948fef-1755-8d89-b6c9-e690aa90fdb1"
   stages:
     - stage: path
       stageUuid: "a307815c-c143-88d4-b093-a4120b79c18a"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "873f240d-f358-8dc9-b1c3-3e83baa6c729"
     - stage: horo
-      stageUuid: "edecd251-fd7e-86b4-a463-692ddf24ddfa"
+      stageUuid: "7c5b2e53-36ac-82eb-ab26-9d0d1e42994a"
     - stage: seal
       stageUuid: "9ea2b30a-2a65-80e1-a599-52d61f78cb18"
     - stage: uuid
-      stageUuid: "fb922ab5-5c7e-8786-8701-0fc3ea221a99"
+      stageUuid: "bbb6740b-41ad-83fe-9524-3c751741165c"
 version: 2
 ---
 # iso/8601/validate

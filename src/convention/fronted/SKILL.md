@@ -2,11 +2,11 @@
 name: fronted
 description: "Use when checking whether every atom has a front door — the computed convention that each SKILL.md carries valid name and description frontmatter, measured live as coverage = fronted / total over the real corpus tree."
 atomPath: "convention/fronted"
-coordinate: "convention/fronted · 1/base · c0f56dd0"
-contentUuid: "6818e901-4c8b-5804-9181-9f046d6a469f"
-diamondUuid: "a52de2dd-754f-8975-9b09-896548fd0fd1"
-uuid: "c0f56dd0-6b32-894c-a8f8-0d36d6f0eb8c"
-horo: 1
+coordinate: "convention/fronted · 4/weave · 9bf94382"
+contentUuid: "e52518ca-bc4a-55a3-8a42-37047d27991f"
+diamondUuid: "556af40b-1384-83e1-8060-bfe6badcb0d8"
+uuid: "9bf94382-fd7c-8d09-b26f-cd205098a1f7"
+horo: 4
 typography:
   partition: convention
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a55c197c-01dc-87f7-9cdd-2ce25dc68582"
+  computationUuid: "d9d46517-bd17-82c3-a119-3eaeac8df6ee"
   stages:
     - stage: path
       stageUuid: "36fcaff5-aec2-895f-974a-ce889f71d491"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b38c3fbd-1ff6-8166-b76b-98c824abc5fe"
     - stage: horo
-      stageUuid: "0a8991a1-b154-8c1b-89b7-f3aaf5c3fda7"
+      stageUuid: "d889b262-596b-8414-890e-29ddb53ad4f5"
     - stage: seal
       stageUuid: "962d7061-6fdf-8d75-a2a0-5374271b3d9f"
     - stage: uuid
-      stageUuid: "6b6182bd-e0d2-8a1a-8f44-b28aae77e54d"
+      stageUuid: "24a4aef6-979a-809c-9ff8-521ef601c6d0"
 version: 2
 ---
 # convention/fronted — every SKILL.md has valid name + description frontmatter

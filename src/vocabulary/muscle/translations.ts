@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "muscle",
-    "uuid": "18678ddd-558b-8c8d-8dc8-86920bf900ad",
+    "uuid": "d2f7ce04-c157-8856-b57e-7a7fd4a005eb",
     "words": [
       "muscle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about muscle — A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.",
-    "uuid": "a22ede55-c284-872e-bbc7-0ad3d103468c",
+    "uuid": "fc39f279-1ddf-83be-9190-c87cae49d098",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: "3"
 description: Use when implementing or referencing Peppol BIS Billing 3.0.
 atomPath: "peppol/bis/3"
-coordinate: "peppol/bis/3 · 8/crest · c933a288"
-contentUuid: "87ae58fe-d5a3-56d3-af4a-c2adf776394d"
-diamondUuid: "23dad4fd-6b06-85db-ac33-351e27f4ce2b"
-uuid: "c933a288-1eec-897c-866b-131bcd24d4b2"
-horo: 8
+coordinate: "peppol/bis/3 · 1/base · ae4fcabd"
+contentUuid: "1a65a5db-1b5d-5798-ac20-22283dbba507"
+diamondUuid: "a5c08b33-7850-8efb-aafb-fa07dc55f234"
+uuid: "ae4fcabd-3b4e-8ba3-96c9-78ea0c5b50e1"
+horo: 1
 typography:
   partition: peppol
   bondDegree: 12
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "35a89a17-b01d-8236-835b-750038253719"
+  computationUuid: "1a52c091-cb55-8099-ae85-b29a788be6f7"
   stages:
     - stage: path
       stageUuid: "05fcd777-41ce-8c51-89aa-018720334d30"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "264f81f9-707d-8d9a-b0ab-db25bcccc1d0"
     - stage: horo
-      stageUuid: "ba431714-1340-80dd-a302-bb1a64b0faad"
+      stageUuid: "62711ffa-0efa-8caf-ba84-3ae33478f013"
     - stage: seal
       stageUuid: "b09770e4-ed3b-8573-81b1-db0ef609494b"
     - stage: uuid
-      stageUuid: "558d6238-0194-8df2-91d2-19f0a42d36ed"
+      stageUuid: "955b0c69-757e-88ac-887a-bec5f95f0bb7"
 version: 2
 ---
 # Peppol BIS Billing 3.0

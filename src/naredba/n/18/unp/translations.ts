@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unp",
-    "uuid": "de3095dd-b564-867b-a28a-2957d250238b",
+    "uuid": "a1af94e7-5e1c-832c-b80a-a04b9b1e4216",
     "words": [
       "unp"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about unp — Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number).",
-    "uuid": "d4fb2ac7-fb3b-883f-a792-13bfdb8e2f9d",
+    "uuid": "f2870360-256c-845c-9f7a-f3461924b9da",
     "words": [
       "use",
       "when",

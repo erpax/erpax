@@ -2,11 +2,11 @@
 name: geographical
 description: "Use when reasoning about geographical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/geographical"
-coordinate: "vocabulary/geographical · 1/base · ea681881"
-contentUuid: "ce69c695-2103-566f-bacf-9c9b1d7ae318"
-diamondUuid: "ce5050d8-8b05-8d0f-a3a1-14edff0e1aa4"
-uuid: "ea681881-6f0f-8e8f-a384-e49de87260b2"
-horo: 1
+coordinate: "vocabulary/geographical · 2/share · 246c6b80"
+contentUuid: "74860f54-79ad-5da8-a870-efe664eb6b37"
+diamondUuid: "e1aee56d-ea3d-8d83-9020-3bca510f81b1"
+uuid: "246c6b80-d595-8706-b481-7bc29930a6a0"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ced1a7e4-4d6d-8286-88c8-fe98c4229809"
+  computationUuid: "193b75c2-9393-88fb-b609-03622cc55589"
   stages:
     - stage: path
       stageUuid: "9b5fe18e-b47b-8437-8682-1c99262a0784"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "44836582-93eb-85e9-ad0b-643d18a90598"
     - stage: horo
-      stageUuid: "04069f8b-39da-8a0f-ad01-bd9c28c69684"
+      stageUuid: "76f9e126-ea9a-8b2c-9308-bd183a783072"
     - stage: seal
       stageUuid: "2b47ae09-f435-8757-8deb-78d4bcab12ef"
     - stage: uuid
-      stageUuid: "14bdccef-a8ba-86a9-ac25-55572836dd0f"
+      stageUuid: "b1f87dda-15a5-828c-ae09-c48c965898b8"
 version: 2
 ---
 # geographical

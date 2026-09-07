@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "letterer",
-    "uuid": "e02424db-340e-8351-ab16-537a4d83a80f",
+    "uuid": "081473ab-b054-807f-92e1-6dd1cdb958b6",
     "words": [
       "letterer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about letterer — The individual who adds lettering, including speech balloons and sound effects, to artwork.",
-    "uuid": "22f85b13-26e6-8430-9338-b74b8b023fb7",
+    "uuid": "55392616-622b-8ef2-bcc5-3ceb1eeb3bfd",
     "words": [
       "use",
       "when",

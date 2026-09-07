@@ -2,18 +2,18 @@
 name: change
 description: Use when modelling one change — the singular model of the changes collection (the plural store); a recorded modification to a controlled record or system.
 atomPath: "vocabulary/change"
-coordinate: "vocabulary/change · 7/descent · 465051e7"
-contentUuid: "4a529cb3-269e-5731-b7b4-be666ffb18ed"
-diamondUuid: "9efcec72-610c-80f6-84c5-455336309cd5"
-uuid: "465051e7-1559-882b-b0a6-c85af2c8fb34"
-horo: 7
+coordinate: "vocabulary/change · 1/base · e38b1103"
+contentUuid: "e75da893-20c9-5a9a-8b01-2e45b5f8c620"
+diamondUuid: "f152813f-c755-8c81-a83f-4735c03c58e1"
+uuid: "e38b1103-07f0-8b94-9dab-cba5255e90a7"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2c6dd302-a172-803c-8343-f7428403f352"
+  computationUuid: "7d6b2865-9761-8df5-94b9-e12b13410871"
   stages:
     - stage: path
       stageUuid: "7eeed6c4-3816-8ff2-b840-fd341cc9c5f0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5500eb80-7b18-863d-aa56-8d0f5dd5fefb"
     - stage: horo
-      stageUuid: "d5b6a5ab-812c-88aa-ae0e-96988703b6b9"
+      stageUuid: "83b97282-e139-86d4-8697-b5fcfd6b1b19"
     - stage: seal
       stageUuid: "3ec2bc07-01b5-8c0d-ad41-cc9a0aeba98c"
     - stage: uuid
-      stageUuid: "b62ebd3c-42f4-8fa0-b6c6-97952b22f340"
+      stageUuid: "53b16095-0313-82a4-a465-6702cfc42c17"
 version: 2
 ---
 # change — the model of one [[changes]] row

@@ -2,11 +2,11 @@
 name: owner
 description: Use when reasoning about owner — A person or organization who owns this Thing.
 atomPath: "vocabulary/owner"
-coordinate: "vocabulary/owner · 4/weave · a1024df6"
-contentUuid: "7a74bc0b-b28a-5049-9449-0bc25c7f3c1d"
-diamondUuid: "00ffa398-5dea-82fb-9a58-e5d18bf81ee7"
-uuid: "a1024df6-7c5d-8f59-9aa5-63bfd4615322"
-horo: 4
+coordinate: "vocabulary/owner · 7/descent · 5d32c3ca"
+contentUuid: "ee252ace-df3e-5e87-89b3-661b7c7cd389"
+diamondUuid: "24d3a123-1a43-844e-94d4-f10bce872837"
+uuid: "5d32c3ca-5fc8-85c1-a844-f03e5ca39a2c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d668f551-9395-8132-a2cf-b97b0d624511"
+  computationUuid: "ea0288f6-daa9-8821-ba19-e71e36f7dc82"
   stages:
     - stage: path
       stageUuid: "ba6428a8-32fa-8f08-9d9f-042697644706"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "297b3402-6a0d-84a8-b7c7-46fb8354280b"
     - stage: horo
-      stageUuid: "0981aa94-5cf5-8c1b-b1ef-b4e3959b03ee"
+      stageUuid: "367d05fc-af1a-86a8-bcb8-d907fbdd313a"
     - stage: seal
       stageUuid: "3ba9529a-1640-80c9-af05-689fd3716ec1"
     - stage: uuid
-      stageUuid: "f0cb2083-ec6e-8baf-a8d1-39c7083d382d"
+      stageUuid: "b39dc831-cba3-8458-bd8f-f8ec523a41e7"
 version: 2
 ---
 # owner

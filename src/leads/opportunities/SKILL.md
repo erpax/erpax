@@ -2,11 +2,11 @@
 name: opportunities
 description: "Use when tracking deals through the sales pipeline — stage progression from qualification to close-won/close-lost, weighted forecast (amount × probability), forecast categories, and contract creation on close-won. The CRM deal-pipeline collection."
 atomPath: "leads/opportunities"
-coordinate: "leads/opportunities · 5/round · f919fb74"
-contentUuid: "c98706fa-55e9-5c2c-b4ec-cf45b6052aa7"
-diamondUuid: "c21a9fb1-db3e-8c13-aabf-c3f790496df6"
-uuid: "f919fb74-a9c0-8cc2-8c91-11cc107b6046"
-horo: 5
+coordinate: "leads/opportunities · 4/weave · bf11812f"
+contentUuid: "acac663b-cc6e-5361-90c4-acd64a7e546a"
+diamondUuid: "4965b943-286e-804e-bc8f-f5c33eceb68f"
+uuid: "bf11812f-8717-84f8-9473-305a3f74c2c4"
+horo: 4
 typography:
   partition: leads
   bondDegree: 35
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "de7dd617-51e7-8ed9-ada6-903a8bb6f59b"
+  computationUuid: "b22c5e93-5ff7-8a41-98ba-843e995b33a7"
   stages:
     - stage: path
       stageUuid: "1333721a-cbe5-8c00-aac6-61a11f3015ee"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "c65ff7f9-1a5c-8bc5-b4ac-d5eccf9cddcf"
     - stage: horo
-      stageUuid: "6d0a9def-980f-8d3a-ada2-890608823018"
+      stageUuid: "85ac89e1-df83-8341-917c-ad37168b7d57"
     - stage: seal
       stageUuid: "fafa7689-027c-8f52-89eb-a2488087bcad"
     - stage: uuid
-      stageUuid: "6fc514d4-bcca-85a6-938a-2d5f42af6c78"
+      stageUuid: "66d93b5c-2251-8e65-90c7-02fd986bff1b"
 version: 2
 ---
 # opportunities

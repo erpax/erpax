@@ -2,11 +2,11 @@
 name: collider
 description: "Use when collapsing the corpus's conventions into one tamper-cost verdict — pure math, no default; joint coverage is the product of each convention-check's computed coverage, and the tamper-cost is coverageCostLog2 of it, infinite only when every convention is computed clean (zero entropy)."
 atomPath: collider
-coordinate: "collider · 5/round · 1e22c94b"
-contentUuid: "d7834eb1-6c8b-5d41-b326-3a193c28ffea"
-diamondUuid: "06684982-a30f-8fd3-921c-eb0cb72d032e"
-uuid: "1e22c94b-a5b9-8fed-9040-c7063f4b0523"
-horo: 5
+coordinate: "collider · 8/crest · c845c278"
+contentUuid: "9cfd9838-2ec7-5b01-95e6-711e9924f99f"
+diamondUuid: "52615904-36c4-85a3-b0bd-54d5f2f2f172"
+uuid: "c845c278-5425-8dee-9ec1-729ec997f942"
+horo: 8
 typography:
   partition: collider
   bondDegree: 31
@@ -14,7 +14,7 @@ standards:
   - "coverageCostLog2 (the ∞ law) · the product of independent convention coverages · computed-not-hardcoded"
 bindings: []
 signatures:
-  computationUuid: "9a197d55-578d-8fd9-8d13-f50332c7ea00"
+  computationUuid: "bf272d86-3fb3-8d95-a4c1-2275278e432a"
   stages:
     - stage: path
       stageUuid: "7e176474-89a3-8875-8b92-9243e294b0b5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "af170a11-c9e6-82b9-afc4-c629d4d38c00"
     - stage: horo
-      stageUuid: "69c21087-f531-8471-9bc7-3d58a808e07c"
+      stageUuid: "43c73033-75af-84c4-bc31-c02a2bb52248"
     - stage: seal
       stageUuid: "682ee176-b3f9-8b44-86a1-627702e3470d"
     - stage: uuid
-      stageUuid: "856d79dd-04c8-8be9-8a19-1bf06f86e169"
+      stageUuid: "01d32d96-a7dd-8fac-9fbc-7bf674e76920"
 version: 2
 ---
 # collider — the conventions collided, pure math, no default

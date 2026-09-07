@@ -2,11 +2,11 @@
 name: taggable
 description: "Use when reasoning about taggable — makes every record taggable without adding a relationship per collection: the tag references the record's **content-uuid**, so one edge type reaches everything."
 atomPath: "plugins/taggable"
-coordinate: "plugins/taggable · 5/round · f3868381"
-contentUuid: "bd7a01e1-2b55-592d-a659-f6eedf6bd198"
-diamondUuid: "2265c26e-6c4c-86e9-9a5c-d40381f505dd"
-uuid: "f3868381-df95-8b99-b553-3e157f3d2b82"
-horo: 5
+coordinate: "plugins/taggable · 4/weave · 54fe85cc"
+contentUuid: "a97c5c8e-4571-52ba-9017-1ea241deb550"
+diamondUuid: "d6bad254-c7d6-814f-b9c5-b266a371cc0a"
+uuid: "54fe85cc-0499-8ad7-81d8-cac88401eb36"
+horo: 4
 typography:
   partition: plugins
   bondDegree: 6
@@ -15,7 +15,7 @@ standards:
   - "RFC-4122 §4.3 uuid"
 bindings: []
 signatures:
-  computationUuid: "4dbdb378-abcb-857d-bf2b-b15eda9bb5a4"
+  computationUuid: "4cb9712c-5fcf-8cbd-bd72-b7cfd3745201"
   stages:
     - stage: path
       stageUuid: "8a94f9e0-8ef8-8f6d-940a-907da67e198f"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "4e83e302-8ccb-855e-98e3-0e4f3bc24b98"
     - stage: horo
-      stageUuid: "4fa22718-f70f-8e9e-b1ed-da614bdc7625"
+      stageUuid: "ee766eba-6a55-8531-911b-68b286e50020"
     - stage: seal
       stageUuid: "35ce7c80-3449-8b41-8548-a6f2488ce12e"
     - stage: uuid
-      stageUuid: "c552942d-71ea-88c2-8a50-fd5ef963aca8"
+      stageUuid: "a6a590e8-401f-87a6-94a1-a5cc7a664b75"
 version: 2
 ---
 # plugins/taggable — anything is taggable, because the tag points at a content-uuid

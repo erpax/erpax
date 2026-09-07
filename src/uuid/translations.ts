@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "uuid",
-    "uuid": "9bc68689-a7b8-8733-85b9-9f4279305672",
+    "uuid": "31823474-c22e-8a17-8348-93d14dfb9a71",
     "words": [
       "uuid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when choosing which RFC 9562 UUID version fits a case — v8 structured content-uuid (identity+capability+schema+digest fused) as the erpax default, v7 time-ordered for index-local speed, v4 random for unguessable secrets. Harmonise the features and everything collapses INTO the uuid itself — the 128-bit singularity.",
-    "uuid": "887bf04a-15b2-8ca4-ae9a-091638bc1dbd",
+    "uuid": "2dacba45-49ef-8008-a0bd-7493b52a60b9",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: substitute
 description: "Use when reasoning about substitute as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: substitute
-coordinate: "substitute · 5/round · 155bdb22"
-contentUuid: "44a4d918-7218-5ff0-893c-6122ce4e1e83"
-diamondUuid: "eb2ec445-8dbd-850c-bdfb-0882e3d7ab00"
-uuid: "155bdb22-34f3-8b71-a681-70f05d427017"
-horo: 5
+coordinate: "substitute · 1/base · 01a833d2"
+contentUuid: "83161817-9a3a-567b-88a2-0a5d10b5eb41"
+diamondUuid: "0036dc74-a4f5-8371-8f5f-684db8145d34"
+uuid: "01a833d2-f6a3-8c7e-9a4f-afc5510a7e11"
+horo: 1
 typography:
   partition: substitute
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fc83d88e-7d65-84b4-a33d-116fa96f180e"
+  computationUuid: "3230c457-2cb5-8693-ac2e-3d94aa5d2a11"
   stages:
     - stage: path
       stageUuid: "c5abcfb6-b705-8570-bac8-a173dc6b2b80"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ba246c16-8cd5-8816-b442-882bbd2348aa"
     - stage: horo
-      stageUuid: "93f07cb9-7bcf-8dd4-9c36-32c99f57bde5"
+      stageUuid: "c03c58b2-3f24-8a3e-8e16-28484e91a899"
     - stage: seal
       stageUuid: "4858589d-cde5-8aab-96e8-a6d5fefd3659"
     - stage: uuid
-      stageUuid: "672bf571-4e6b-809a-8b99-423e2be19125"
+      stageUuid: "b61ed74d-2096-8f21-86bd-d6a6a2585d09"
 version: 2
 ---
 # substitute

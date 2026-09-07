@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "context",
-    "uuid": "757bdcfe-2726-8c9f-aabd-ba6ec945b687",
+    "uuid": "035d9269-a82f-88fe-8547-66911eb3a5b8",
     "words": [
       "context"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about tenant request context — the tenant carried through a request.",
-    "uuid": "0520f49f-4cfc-8262-b005-4dea60686892",
+    "uuid": "0c214fa4-1d85-8d2c-a5ca-26d741ff2ff1",
     "words": [
       "use",
       "when",

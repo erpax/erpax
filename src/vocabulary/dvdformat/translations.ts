@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dvdformat",
-    "uuid": "77a9f361-0590-8c38-b775-da577f946383",
+    "uuid": "6c9ec20b-53fa-8022-b107-ec7277bb9345",
     "words": [
       "dvdformat"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dvdformat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "fe79254c-5d5c-8acf-b5bd-797edf507822",
+    "uuid": "8ad2bea4-1aee-81aa-a648-34bc7bfe3d90",
     "words": [
       "use",
       "when",

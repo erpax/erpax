@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "geometry",
-    "uuid": "ade3af0c-6182-88c9-9ec4-26b95e1445a9",
+    "uuid": "45aac307-b9f3-8aea-a631-d02dd43f1dad",
     "words": [
       "geometry"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when generating visual representations, sequences, and spatial mechanics from the horo ring — loops (circles, lemniscates), breath sequences, turning numbers, corner limits, carry closures, and state validation.",
-    "uuid": "7291cf69-f0b8-877b-89df-eafaca741231",
+    "uuid": "63579bfa-b22f-8cd9-9c17-d520387d9215",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fallback",
-    "uuid": "4c650669-8247-8c52-97be-b502157f42c1",
+    "uuid": "7ef1c5cb-eb11-8788-ad1d-a71d067658c6",
     "words": [
       "fallback"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fallback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "cafe63d9-33ec-8108-a573-2e3696146cf3",
+    "uuid": "9ee32768-b02a-8315-bdc7-1287d312810b",
     "words": [
       "use",
       "when",

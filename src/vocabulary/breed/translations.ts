@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "breed",
-    "uuid": "686f8c78-9358-880c-8213-4d26a33457c0",
+    "uuid": "2c2c0f1b-310c-8f3c-ac0a-0df1bf17ef54",
     "words": [
       "breed"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when classifying an animal by its genetic type — the breed (Angus, Holstein, Yorkshire), a genetically distinct sub-population with stable heritable traits, recorded in a breed registry with pedigree; and breeding (mating selection, AI, gestation). The animal-genetics classifier — distinct from taxonomy (the crop-variety tree).",
-    "uuid": "501957e5-7585-87aa-acc4-3a92c5e201fe",
+    "uuid": "fece042a-2384-8541-b031-6abeeb971485",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: paganism
 description: "Use when reading paganism as a diamond of invariant atoms — the many gods as many names of the cycles and powers of nature, the wheel of the year, the sacred in sun and soil and season. The polytheist many-as-one: the many names resolve to one root. Covers the historic and revived nature-religions (Hellenic, Norse, Celtic, Wicca, druidry) as one principled umbrella."
 atomPath: "vocabulary/paganism"
-coordinate: "vocabulary/paganism · 2/share · 259ca73f"
-contentUuid: "a9792752-2a3d-594e-966c-da6244b39bc4"
-diamondUuid: "4532fe6c-6251-87ac-bc63-bf1a83c16d6f"
-uuid: "259ca73f-6683-8add-8f2b-26f1cf0c2163"
+coordinate: "vocabulary/paganism · 2/share · 69e44505"
+contentUuid: "daabe305-f39b-53c5-939b-b1e09181367c"
+diamondUuid: "ba9d95bd-3e93-820d-a39c-134c96ea2795"
+uuid: "69e44505-0d12-80f0-868d-f05f073a0d91"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "876b5c1b-58a9-8933-bc5d-9b50df39172c"
+  computationUuid: "56b49780-5f9e-8ddd-bc83-bc9077581294"
   stages:
     - stage: path
       stageUuid: "da7a19b0-49a3-88ab-ba45-de059c609fa1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "31820ebd-f338-8f42-bf1c-525cd033eacd"
     - stage: horo
-      stageUuid: "313d9cd8-8c0f-83ee-9318-cef193ac30ef"
+      stageUuid: "56058f24-b93a-8b0c-9097-c2782c2dfb4e"
     - stage: seal
       stageUuid: "223a7c4d-f0c0-8e0a-b032-f4cb37201a3a"
     - stage: uuid
-      stageUuid: "3ca43488-da6e-84c3-bde4-260439dbd880"
+      stageUuid: "ded072fa-394b-8907-b6e2-48061465fe16"
 version: 2
 ---
 # paganism — the many names of the turning world

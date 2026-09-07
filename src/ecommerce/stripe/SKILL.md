@@ -2,18 +2,18 @@
 name: stripe
 description: "Use when reasoning about stripe — resolves the tenant's own Stripe credentials before charging, closes the order against that same tenant, and resolves the tenant from the event rather than trusting a default."
 atomPath: "ecommerce/stripe"
-coordinate: "ecommerce/stripe · 7/descent · fe048c85"
-contentUuid: "8f84b06c-15cb-535b-ade5-6dc2e3330499"
-diamondUuid: "a2a5a448-e6a7-837f-90f1-374dade7b6e9"
-uuid: "fe048c85-d530-8aaa-a812-a4c7654ea602"
-horo: 7
+coordinate: "ecommerce/stripe · 4/weave · 53567e07"
+contentUuid: "05652e78-1ea0-5d6d-898c-f2056300acc5"
+diamondUuid: "8f9c98ed-4468-8569-bfe4-5e7073169179"
+uuid: "53567e07-e924-82d9-8e89-3098a3efc1e0"
+horo: 4
 typography:
   partition: ecommerce
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e14732c3-396b-87c2-b8f9-aaee0dc04768"
+  computationUuid: "01a2e297-2715-8f68-a896-faf2bf32c719"
   stages:
     - stage: path
       stageUuid: "738c5d45-5cfd-8cc4-83df-b67bff50c458"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "677fec6c-4fe1-859d-aa2f-1b2f6a357223"
     - stage: horo
-      stageUuid: "cc2abb15-f646-8ea7-a2bc-3545ecc559fd"
+      stageUuid: "affefc51-b126-8523-9582-8bfa18f3c34f"
     - stage: seal
       stageUuid: "88b7fcdc-669f-8161-a75e-1f79d32ef438"
     - stage: uuid
-      stageUuid: "15f930e6-125d-89c4-a1d4-831a9d3c0084"
+      stageUuid: "7f2528d6-ecf5-84bd-bc89-bb0f7313201b"
 version: 2
 ---
 # ecommerce/stripe — every call carries the tenant, because one tenant's key must never charge another

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lock",
-    "uuid": "b8521cf6-003f-81bf-92d4-fee9b133e523",
+    "uuid": "882df28e-99d1-8cda-b27d-1ee5d1431f27",
     "words": [
       "lock"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one lock — the singular model of the locks collection (the plural store); a hold that prevents change to a record or resource.",
-    "uuid": "3654e5e5-10d9-8362-86ca-efeeff055163",
+    "uuid": "c0c5f3e8-860a-8e1c-af05-1d22f90a81aa",
     "words": [
       "use",
       "when",

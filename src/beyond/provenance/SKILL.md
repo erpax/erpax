@@ -2,11 +2,11 @@
 name: provenance
 description: "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each audit leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back."
 atomPath: "beyond/provenance"
-coordinate: "beyond/provenance · 8/crest · 84322eeb"
-contentUuid: "967d8faf-5cad-52d5-a04d-cb3682616141"
-diamondUuid: "01a60334-7ea2-8080-bf76-32a9213582fc"
-uuid: "84322eeb-7e47-87bd-a50d-a8a63a3a6269"
-horo: 8
+coordinate: "beyond/provenance · 4/weave · 00c6c985"
+contentUuid: "ceaeec29-2cf1-5d71-bc81-92f93fdd1cc7"
+diamondUuid: "11f92fb5-61f7-82b1-9da3-9a5e37fd3b3d"
+uuid: "00c6c985-6f00-8d87-a5a4-35f0d4deff2e"
+horo: 4
 typography:
   partition: beyond
   bondDegree: 15
@@ -16,7 +16,7 @@ standards:
   - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "a1eb910a-e136-8b0b-a5b4-8d4cff7ac637"
+  computationUuid: "9760c6fb-2112-8f48-9413-12da998e9328"
   stages:
     - stage: path
       stageUuid: "fcff7381-cddc-8e9b-aa4c-a1a1d3219805"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "a89cb83d-4ac5-82e0-a8b4-d2147fc7387a"
     - stage: horo
-      stageUuid: "a7579e39-57b2-85ef-8b22-13249f971412"
+      stageUuid: "f62817e0-5eb6-81eb-b38e-f6154268be3c"
     - stage: seal
       stageUuid: "de48b76d-f6bb-8df9-bb22-2971166cee42"
     - stage: uuid
-      stageUuid: "b4fcda9d-375e-8927-b196-9d492c017523"
+      stageUuid: "4a75b57d-bb4b-851b-af8c-ba7112b9a438"
 version: 2
 ---
 # beyond/provenance — causal provenance (the WHY behind every value)

@@ -2,18 +2,18 @@
 name: postharvest
 description: "Use when handling produce between harvest and sale — the cooling→washing→curing→grading→packing→storage chain that preserves quality: remove field heat fast (precool), wash, cure storage crops, then hold in the cold chain. Postharvest does not improve quality — it only slows the loss; the gap between gross and marketable yield (shrink) is lost here."
 atomPath: "vocabulary/postharvest"
-coordinate: "vocabulary/postharvest · 5/round · 85f3e0fc"
-contentUuid: "24f855c3-707a-5e81-a053-e29692bb91ab"
-diamondUuid: "bbb8c95e-656c-8ef3-a489-63cc3d87db60"
-uuid: "85f3e0fc-e644-8f42-82dc-a499feec22d7"
-horo: 5
+coordinate: "vocabulary/postharvest · 7/descent · acbf2bc8"
+contentUuid: "ea9db0d9-a958-5c00-9b33-493e3b78ed01"
+diamondUuid: "846fbacb-c7a4-8c2a-8a1a-e7fdde2e4d3c"
+uuid: "acbf2bc8-2849-8fff-9508-b45dc19edba7"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 41
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c6b761da-0af2-8a5a-9b6d-f72530b46733"
+  computationUuid: "281b7e5f-f364-8d7f-a5a7-6fdac62dfcd7"
   stages:
     - stage: path
       stageUuid: "b09f283a-1c92-8fb0-9ce0-1c8e85c45b7b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "529803cb-f02e-867f-9b4b-90b5db0bec8f"
     - stage: horo
-      stageUuid: "32f85e6d-f5a5-896b-9da6-28559acf97bc"
+      stageUuid: "311ee477-ee5d-8d03-9649-09f4e0508e12"
     - stage: seal
       stageUuid: "d44ec6d6-67d3-8572-bada-d00ef166d3c9"
     - stage: uuid
-      stageUuid: "3578a6cf-8bac-8f54-8cbd-461deadf385f"
+      stageUuid: "f513476e-7c61-8bcc-9b22-350535370f19"
 version: 2
 ---
 # postharvest — handling produce between harvest and sale

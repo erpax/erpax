@@ -2,18 +2,18 @@
 name: inventory
 description: "Use when reasoning about agent/inventory — agent inventory scan, emit, and monitor for stale or duplicate agents."
 atomPath: "agent/inventory"
-coordinate: "agent/inventory · 5/round · f1498bc8"
-contentUuid: "114bd81c-978a-56c6-a5db-da6ef8726c96"
-diamondUuid: "1323fa71-6cf9-8338-a4f6-5fe6aa8645b5"
-uuid: "f1498bc8-94f3-8d9e-b7e3-d637b4ec56f1"
-horo: 5
+coordinate: "agent/inventory · 8/crest · b074127b"
+contentUuid: "ea595614-9756-5998-a73b-bdb358571b9a"
+diamondUuid: "f19dfad2-07a1-88f6-bba1-6f8f6549601a"
+uuid: "b074127b-adec-8302-8117-40e2bfad1741"
+horo: 8
 typography:
   partition: agent
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "16ed8ded-7eed-8b54-88e7-1e6e8bd66181"
+  computationUuid: "f1817cd4-af88-82d3-a370-8662871bc8b7"
   stages:
     - stage: path
       stageUuid: "46dffa67-13c0-822e-a579-03e148c3349a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6289522b-af65-8f35-bab0-c59e4b1584dc"
     - stage: horo
-      stageUuid: "42d96fa8-de19-8a36-a328-898cfde9a4c4"
+      stageUuid: "1cf292c8-84e3-89fe-a124-ed823f0762d1"
     - stage: seal
       stageUuid: "2047f04e-7985-8bda-8d9a-5f2958913d93"
     - stage: uuid
-      stageUuid: "ba8a65a3-f1f6-8b3a-b29c-ce30282c52c1"
+      stageUuid: "65823ca8-d1d5-83a1-9c8c-b986d548b9b4"
 version: 2
 ---
 # agent/inventory

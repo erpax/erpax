@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "leads",
-    "uuid": "269c790e-ad0e-8d23-8d09-521cf941b223",
+    "uuid": "aecb8d0d-40b8-8053-8947-e6e1d4982029",
     "words": [
       "leads"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing and qualifying prospects before they become customers — inbound/outbound sourcing, BANT/MEDDIC lead scoring, MQL/SQL progression, and conversion to an opportunity or customer on close-won. The CRM pre-customer lead collection.",
-    "uuid": "08387bab-8327-840e-aa84-1655f7d9b5d4",
+    "uuid": "e40e6a7f-9c1b-8cc7-80b9-b2d2f1f6363e",
     "words": [
       "use",
       "when",

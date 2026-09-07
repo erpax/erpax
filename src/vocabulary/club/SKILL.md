@@ -2,11 +2,11 @@
 name: club
 description: "Use when reasoning about club — A schema.org component word, collided out of schema.org compounds — fused from ComedyClub · HealthClub · NightClub · SportsClub (sti · collapse · merge)."
 atomPath: "vocabulary/club"
-coordinate: "vocabulary/club · 1/base · c92d46ba"
-contentUuid: "d3a4978e-e793-5580-970d-716173fe0b9b"
-diamondUuid: "c9c28266-2b3c-8048-84ea-417803e57dee"
-uuid: "c92d46ba-fa0a-8c13-a639-390251930fc6"
-horo: 1
+coordinate: "vocabulary/club · 8/crest · 66512b2e"
+contentUuid: "2c0be033-ead4-5730-8d6b-1b1b99a6ec00"
+diamondUuid: "56e19c2b-3933-8a0a-952d-0b5d10568be2"
+uuid: "66512b2e-74f0-8530-a69a-9f9ef4d0a162"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bd220489-8089-8813-b823-4d3d0258530f"
+  computationUuid: "722d853e-d808-85ae-aadf-c689651576ca"
   stages:
     - stage: path
       stageUuid: "7139db21-e108-8d0a-ae28-986778a6df28"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "83605385-2027-8407-a4bf-de1184b19690"
     - stage: horo
-      stageUuid: "753b1465-1f27-819e-9526-4546dbba59e0"
+      stageUuid: "60552325-fd9b-81b3-ad9e-44e7fc66d79c"
     - stage: seal
       stageUuid: "e2f67797-cf41-8abc-8573-455614eb8a3f"
     - stage: uuid
-      stageUuid: "f5e690d7-b289-8f36-bbe2-5e3b46d9030d"
+      stageUuid: "e66655d9-c497-8f63-9c45-290255859a08"
 version: 2
 ---
 # club

@@ -2,11 +2,11 @@
 name: owns
 description: Use when reasoning about owns — Things owned by the organization or person.
 atomPath: "vocabulary/owns"
-coordinate: "vocabulary/owns · 1/base · 46ddcc09"
-contentUuid: "5999a1c9-a091-5708-8ded-4a054276ca02"
-diamondUuid: "08ce963b-4f9c-82f0-be55-75de7de315ed"
-uuid: "46ddcc09-7818-8950-ba0b-b19a979245c5"
-horo: 1
+coordinate: "vocabulary/owns · 5/round · 263cfeaf"
+contentUuid: "2971c573-45dc-5abb-9161-94094c08da1a"
+diamondUuid: "5251d74b-8136-8397-896b-a97125ffaa46"
+uuid: "263cfeaf-8609-8707-a173-982399163ee9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "37375b8a-f01e-83e6-9bb7-7239ab038c7e"
+  computationUuid: "1a05dd88-7a85-83f6-a667-135930a3cc0e"
   stages:
     - stage: path
       stageUuid: "73cf0b69-f9f2-8b35-887c-f36c94c08b53"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f2a11e8b-94b0-84f9-86ae-abe5516fea64"
     - stage: horo
-      stageUuid: "68ef2fae-963d-86c7-a241-3fb77d8d2029"
+      stageUuid: "377497ec-beb3-830d-b27a-024dc72460cf"
     - stage: seal
       stageUuid: "89052c77-68ce-8064-860a-4528fd206ad4"
     - stage: uuid
-      stageUuid: "e138522b-5656-827b-b273-be823cc4d6dd"
+      stageUuid: "c657fd8c-4312-8e82-97be-42c4bb0e8395"
 version: 2
 ---
 # owns

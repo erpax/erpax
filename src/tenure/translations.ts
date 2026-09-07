@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tenure",
-    "uuid": "0598f3d2-aef8-88fa-b26e-02dd1fc2c0e8",
+    "uuid": "522b47c0-2621-861b-a035-945baed08088",
     "words": [
       "tenure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking employment duration, anniversaries, or vesting schedules — hire date, current tenure, service-based benefits accrual, or eligibility calculations.",
-    "uuid": "2773f5fd-1f7b-8ae6-b099-37d35578f5c0",
+    "uuid": "ad78d82d-1df6-8076-9fd3-dee4b1de50ed",
     "words": [
       "use",
       "when",

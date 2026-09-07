@@ -2,11 +2,11 @@
 name: entropy
 description: "Use when reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances — entropy() = 1 − the reciprocal-edge fraction of the uuid-matrix, an audit/aura signal, NOT an input to crackVerdict. It is a DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost via coverageCostLog2); reciprocity=1 does NOT imply coverage=1, so zero entropy does NOT by itself yield infinite cost (the live tree is the counter-example — entropy 0, coverage under 1, cost finite). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor."
 atomPath: entropy
-coordinate: "entropy · 5/round · fcb9fa45"
-contentUuid: "ecc5e678-b08f-5577-8c57-8101b0d13b83"
-diamondUuid: "35bc6caa-bbb1-8938-8472-696479122b35"
-uuid: "fcb9fa45-3159-87f1-8e20-8aaab7dbd78a"
-horo: 5
+coordinate: "entropy · 8/crest · 0d7a221f"
+contentUuid: "ab91a3e9-9acd-528a-b855-c43b1417e242"
+diamondUuid: "f09e538e-1e53-8afb-85f0-a51772161fbd"
+uuid: "0d7a221f-f107-842a-b224-93462b326b70"
+horo: 8
 typography:
   partition: entropy
   bondDegree: 315
@@ -16,7 +16,7 @@ standards:
   - "NIST-SP-800-57"
 bindings: []
 signatures:
-  computationUuid: "518a016b-a2af-833d-a25c-461561339632"
+  computationUuid: "82f5ae26-bb36-8d36-aa67-27e64b99d328"
   stages:
     - stage: path
       stageUuid: "0efe9321-e9d9-88cf-b054-2bbe0937a2f6"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "84b37278-4747-813f-bcd3-41c55c04a53c"
     - stage: horo
-      stageUuid: "a768a884-867f-8d74-bfbd-17f3c1462248"
+      stageUuid: "68943159-253d-87d0-8eab-964c43f968a4"
     - stage: seal
       stageUuid: "e4713d70-378f-8e73-b358-b4d0581e4959"
     - stage: uuid
-      stageUuid: "147e172c-4319-817a-98c1-85ff7bd230ba"
+      stageUuid: "407d0d7b-9409-8458-b048-b994f521b66a"
 version: 2
 ---
 # entropy — the matrix-reciprocity slack the whole ledger balances

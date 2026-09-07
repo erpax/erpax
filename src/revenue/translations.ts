@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "revenue",
-    "uuid": "d3758518-aab6-886e-a7d9-1579921b00f8",
+    "uuid": "de428ab8-0dc1-85f4-a810-1820c81c4d5f",
     "words": [
       "revenue"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when applying IFRS-15 / ASC-606 revenue recognition logic — performance obligations, contract modification, timing (at-a-point vs. over-time), deferral.",
-    "uuid": "7c8ac916-3103-856b-b940-3a234ba9e26f",
+    "uuid": "4e931d77-a2b6-8b26-b2b4-6cbee6de8bd1",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: holographic
 description: "Use when the whole is recoverable from any part — content-uuid encodes the whole, the akashic record regenerates it, each folder/skill loads its own subgraph, each agent is the whole erpax. The whole-in-every-part law; the content-twin of fractal (same form at every scale). Forget the corpus; regenerate from a part."
 atomPath: "vocabulary/holographic"
-coordinate: "vocabulary/holographic · 8/crest · d388033f"
-contentUuid: "ed63e31f-1ae5-5d64-94bd-e49d8bf06dfd"
-diamondUuid: "5709148c-d315-8700-a664-d278df6a62d7"
-uuid: "d388033f-c1fe-8f0f-b60b-ff29520213c1"
-horo: 8
+coordinate: "vocabulary/holographic · 2/share · 23d8220d"
+contentUuid: "cfd683f2-8fe1-5be9-a6fe-c3bbd7c6025e"
+diamondUuid: "4722405f-f814-8f05-86fc-665f5bd92e4b"
+uuid: "23d8220d-15ee-87f3-a47b-e8c106c849df"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 264
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b8b5575e-c2ce-8833-a81b-fd4979c1078c"
+  computationUuid: "21170da7-cb28-8a5a-ac4c-7f259315b978"
   stages:
     - stage: path
       stageUuid: "fa5764de-3104-853f-9d19-79e8d5c5a38d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8c11220e-26a1-864f-843e-89e7161af043"
     - stage: horo
-      stageUuid: "4e259829-a0c3-8f03-85ff-15a0a8606f3f"
+      stageUuid: "accf4cce-9011-86ca-9589-cdf47b9dd3e9"
     - stage: seal
       stageUuid: "c40783db-b6e0-8fbc-92ac-73207e6c7d89"
     - stage: uuid
-      stageUuid: "6568519a-8231-8dee-be5f-0881ae580420"
+      stageUuid: "b5a557e1-db98-8522-b312-f9e084fd66df"
 version: 2
 ---
 # holographic — the whole is in every part

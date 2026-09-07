@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing RFC 6585 — Additional HTTP Status Codes.",
-    "uuid": "12e32eff-6976-8543-b345-f45ec8e7b191",
+    "uuid": "2f786139-70d7-855d-b59d-80b12a4096a9",
     "words": [
       "use",
       "when",

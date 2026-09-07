@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transactions",
-    "uuid": "f0563621-92f3-83b5-8972-fbe51a80bb1a",
+    "uuid": "55132ee5-08a9-83a7-b706-f77038f1a562",
     "words": [
       "transactions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register.",
-    "uuid": "0304d7bc-7800-8604-ad67-04dd5a33d555",
+    "uuid": "aa3c9f2d-8e9d-86b6-b2d0-138e93f75e94",
     "words": [
       "use",
       "when",

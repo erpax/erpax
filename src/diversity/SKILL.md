@@ -2,11 +2,11 @@
 name: diversity
 description: "Use when reasoning about diversity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: diversity
-coordinate: "diversity · 8/crest · 2851fee6"
-contentUuid: "592180cd-bb54-586c-9082-10f49cd1d912"
-diamondUuid: "49e07e35-67ca-87f5-aea5-c25820f90a3f"
-uuid: "2851fee6-1545-86a0-85bb-9c1f19e2b71d"
-horo: 8
+coordinate: "diversity · 5/round · 2726499e"
+contentUuid: "0ec7a990-3627-5514-b3b0-eef850607fad"
+diamondUuid: "fd7713e0-fb73-86c3-8b53-3a805f54d6f2"
+uuid: "2726499e-2b8d-873d-b8da-e2a4d359ec9b"
+horo: 5
 typography:
   partition: diversity
   bondDegree: 38
@@ -17,7 +17,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3fdf56f1-385b-82c1-a146-947ee929e52f"
+  computationUuid: "d9fcee43-97b5-89d7-ae3e-14c06591664d"
   stages:
     - stage: path
       stageUuid: "9f49f81e-351f-86a2-b999-4c9d3cd3b5c0"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "c67e6e1d-a34c-8373-b542-220a083d4917"
     - stage: horo
-      stageUuid: "428e2852-335d-88bc-895d-6527e72d2b87"
+      stageUuid: "a76ea031-e2d9-8eea-84d7-d872351e8e5f"
     - stage: seal
       stageUuid: "870a460c-1ed6-8b78-8c5d-da478cabb81a"
     - stage: uuid
-      stageUuid: "7302d500-4996-8744-a5b5-52c75cc2217c"
+      stageUuid: "212852fd-d4ff-8da8-9338-5062a1d92d7e"
 version: 2
 ---
 # diversity

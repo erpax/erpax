@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "authenticated",
-    "uuid": "5d8044f3-4a2e-8315-836c-1c029fca205b",
+    "uuid": "b95b27f7-2e5f-87ef-889c-7d08637e27b6",
     "words": [
       "authenticated"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when gating a Payload collection or field on a logged-in session — the access predicate that grants only when `req.user` exists, denying every anonymous caller.",
-    "uuid": "235505e4-7441-84f0-a306-3ce611dfaeaf",
+    "uuid": "1f214b47-fe2d-87fa-9c58-5ee2ec8984cc",
     "words": [
       "use",
       "when",

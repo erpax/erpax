@@ -2,11 +2,11 @@
 name: methods
 description: "Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection."
 atomPath: "payment/methods"
-coordinate: "payment/methods · 5/round · 6cf0de52"
-contentUuid: "287f2be8-eda4-5918-87c4-b67596be098d"
-diamondUuid: "10d5284e-33ad-8481-99d0-51a8b1b546d1"
-uuid: "6cf0de52-b081-8c85-ae96-d5f821ccf756"
-horo: 5
+coordinate: "payment/methods · 2/share · 63032b8c"
+contentUuid: "e2f3bd61-e1e2-5268-ab2e-91490857e053"
+diamondUuid: "7d82eccd-1fe5-80e5-866f-8e1aa9d7b0b9"
+uuid: "63032b8c-3e07-8b92-822a-1c15a8636ae8"
+horo: 2
 typography:
   partition: payment
   bondDegree: 22
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fafb5df6-dd20-89d9-9d13-ce48a6e00b44"
+  computationUuid: "43bdf243-5b3d-8b4d-bed5-b2719e18c36e"
   stages:
     - stage: path
       stageUuid: "548df8db-e8a3-8dfe-81e9-542ca18be909"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "b04ea126-6da9-8937-80d9-796fa512023e"
     - stage: horo
-      stageUuid: "3cb26470-d807-89b2-9a49-3987dbc15bb9"
+      stageUuid: "131ef0e2-39b0-828f-b92c-52804218950a"
     - stage: seal
       stageUuid: "7c8031b8-2fe0-81e2-a8e1-e58e928b7f9f"
     - stage: uuid
-      stageUuid: "c98034a8-0bc0-85ba-b6e4-8753aa902ca3"
+      stageUuid: "611eb0cf-e8cd-835c-99e4-4371b6b8b41b"
 version: 2
 ---
 # payment-methods

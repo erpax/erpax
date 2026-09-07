@@ -2,11 +2,11 @@
 name: drained
 description: "Use when reasoning about drained as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/drained"
-coordinate: "vocabulary/drained · 5/round · c961f2c4"
-contentUuid: "6db570d0-d710-5c09-8421-7e1e69a9acdd"
-diamondUuid: "17980b47-2b92-8810-9a8a-470297e8eba2"
-uuid: "c961f2c4-4273-8349-a092-904f7e67383e"
-horo: 5
+coordinate: "vocabulary/drained · 8/crest · 72df4baf"
+contentUuid: "833cb154-9182-525c-8428-9d584d7d7edf"
+diamondUuid: "28e02f7f-0ad4-8493-87c4-9d6db38deaa8"
+uuid: "72df4baf-e399-8d01-a63f-77b9d2af68f8"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d84fdf08-677b-80ee-bbd3-64808f31fce0"
+  computationUuid: "12fa1f00-1840-8488-98de-95690b828a90"
   stages:
     - stage: path
       stageUuid: "8ea51ef9-a29a-8574-875f-4c1be5077538"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "424f229a-4763-8f8b-b655-51553933085c"
     - stage: horo
-      stageUuid: "23d4aef8-b08d-8b72-aa81-22729397af17"
+      stageUuid: "d45fe2e9-19c5-8828-8079-999e2bb1f67e"
     - stage: seal
       stageUuid: "e3a6683b-d1b6-8b80-9e2e-991c3fe295e0"
     - stage: uuid
-      stageUuid: "9735fa2f-99d5-8533-a242-bbabf49eb1cd"
+      stageUuid: "f6a6e5c6-763a-887c-9685-ce47f6103b5f"
 version: 2
 ---
 # drained

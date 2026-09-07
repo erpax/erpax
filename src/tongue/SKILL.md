@@ -2,10 +2,10 @@
 name: tongue
 description: "Use when reasoning about tongue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tongue
-coordinate: "tongue · 5/round · d3de5fff"
-contentUuid: "47660014-61fb-5631-b477-d7aafa31161e"
-diamondUuid: "0b5b0410-6baa-89bf-999b-adb16f65982d"
-uuid: "d3de5fff-81cf-88d9-8514-226315cd19de"
+coordinate: "tongue · 5/round · bcbc926e"
+contentUuid: "03b4d595-cfba-5579-91e4-44a53fc8b00c"
+diamondUuid: "6bf46bf8-aca7-83aa-bf09-226fdd90c8a8"
+uuid: "bcbc926e-3aea-8f73-aca2-de25c372c912"
 horo: 5
 typography:
   partition: tongue
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c77bef32-6e59-8334-aa48-742e371f790c"
+  computationUuid: "f1777ef7-84b8-82ec-b6a6-4b7d2e1e74d6"
   stages:
     - stage: path
       stageUuid: "2e90f482-e1a8-85a8-ab71-773466d40242"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e7e9c751-b850-8faa-b931-49fda091963c"
     - stage: horo
-      stageUuid: "09b03b69-cd87-858c-9349-29c20615b3b4"
+      stageUuid: "abfa6327-d8e5-8740-b268-e47cb64b2dbf"
     - stage: seal
       stageUuid: "3912f104-b00b-824c-b947-a12ce740cae1"
     - stage: uuid
-      stageUuid: "7987643c-1f9e-8c0a-b4a9-ce6b9be68158"
+      stageUuid: "caa9af31-f299-8757-9775-713141f79400"
 version: 2
 ---
 # tongue

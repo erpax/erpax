@@ -2,11 +2,11 @@
 name: pregnancy
 description: "Use when reasoning about pregnancy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pregnancy"
-coordinate: "vocabulary/pregnancy · 8/crest · f3a644a7"
-contentUuid: "ad3759f5-a211-5cc8-b868-b7f0a1909903"
-diamondUuid: "2145ecab-bb04-8a76-8c95-c6bfe2fce4a5"
-uuid: "f3a644a7-381f-867b-9096-f008818762f7"
-horo: 8
+coordinate: "vocabulary/pregnancy · 5/round · 249ee19b"
+contentUuid: "ffde9734-f212-57b8-a05e-2459d58a9731"
+diamondUuid: "c5eca3cf-99c2-82a0-822e-2591650c3785"
+uuid: "249ee19b-3bb6-8516-8f98-bacfc465b307"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "388313fe-bf9f-8dee-aee3-0d63d3917a36"
+  computationUuid: "a822e54e-eb38-88dd-9a77-472b9f179650"
   stages:
     - stage: path
       stageUuid: "3469e18c-9150-8632-ab7f-37d068297842"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2e8118b1-369d-8ea9-b71b-266e7d9c9550"
     - stage: horo
-      stageUuid: "94d94059-0611-80ea-b034-ee3f4d556576"
+      stageUuid: "97ed37ae-03e3-8b98-a328-1fdd06b8719a"
     - stage: seal
       stageUuid: "0ee4473d-bb6f-899b-8f41-42c03cd2ec08"
     - stage: uuid
-      stageUuid: "34cb0aba-ae4d-8002-baa3-a6a28bfbb686"
+      stageUuid: "3ea1c055-191f-8ca1-874d-6975ffdbdfd7"
 version: 2
 ---
 # pregnancy

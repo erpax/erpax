@@ -2,11 +2,11 @@
 name: ingredients
 description: "Use when reasoning about ingredients — A single ingredient used in the recipe, e.g. sugar, flour or garlic."
 atomPath: "vocabulary/ingredients"
-coordinate: "vocabulary/ingredients · 7/descent · 3e0f33f8"
-contentUuid: "19448f86-307f-5164-98a4-47ec16c6b9ab"
-diamondUuid: "c728e603-fc9b-8a7f-8cc8-0024c1c6ea57"
-uuid: "3e0f33f8-02ee-8e35-9752-4f0b51363a3f"
-horo: 7
+coordinate: "vocabulary/ingredients · 2/share · 93c69127"
+contentUuid: "5f1e3424-3aaa-557e-851a-6ff0cb44601e"
+diamondUuid: "ba6d89ba-6318-862b-b8c1-9a65a35a47f4"
+uuid: "93c69127-e904-8349-b16d-9f119f5b4b98"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0823ce07-02e4-80c1-a97d-8dbb4ce5cc1c"
+  computationUuid: "a1929216-068b-8328-9c72-eb4370508d73"
   stages:
     - stage: path
       stageUuid: "27ac0d87-08e3-8d97-bcf1-122b5788a3f0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f42cb818-02a0-8f62-b666-46ae59d58d16"
     - stage: horo
-      stageUuid: "f78bc1ab-4ad1-8d2c-8120-b0eb55b019ce"
+      stageUuid: "c46e9d40-3640-8694-a2fb-9bb31d92a9d7"
     - stage: seal
       stageUuid: "648fde0a-fb11-809e-be61-330337b3ca03"
     - stage: uuid
-      stageUuid: "871f33e7-f3a0-802f-be4c-29546d9f69f3"
+      stageUuid: "7704e65f-152b-8ea2-8ba3-4974b742ab5a"
 version: 2
 ---
 # ingredients

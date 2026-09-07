@@ -2,11 +2,11 @@
 name: executable
 description: "Use when reasoning about executable — A schema.org component word, collided out of schema.org compounds — fused from executableLibraryName (sti · collapse · merge)."
 atomPath: "vocabulary/executable"
-coordinate: "vocabulary/executable · 4/weave · 21449701"
-contentUuid: "01a65136-4310-58d7-8a5d-14f0b3f2c230"
-diamondUuid: "804161e2-f946-82d5-9bd2-d41d64a4714f"
-uuid: "21449701-f1ba-8b38-b37c-3a3377ab3405"
-horo: 4
+coordinate: "vocabulary/executable · 5/round · 3153b537"
+contentUuid: "52e5857e-db62-50d2-a607-1b7249c9839f"
+diamondUuid: "82018e6a-927c-848f-90c4-a97f34d12f91"
+uuid: "3153b537-b57c-8806-a28c-752fcd068e8d"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "99e69c81-c52e-88c5-b83f-668099596191"
+  computationUuid: "0a738a0f-6594-8b69-8738-69acda467114"
   stages:
     - stage: path
       stageUuid: "83d3dd23-a9ba-802b-a9dc-2be6747cbc6a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "291921fb-225a-881d-9b7d-c329cd9c6950"
     - stage: horo
-      stageUuid: "1e769d28-8df6-8e69-b5ef-f9be9aa34541"
+      stageUuid: "6f7f2821-9238-82e1-b7f5-06ae50edc182"
     - stage: seal
       stageUuid: "95109a43-2747-8e13-8ddf-252daca4a535"
     - stage: uuid
-      stageUuid: "42586b06-9ebe-84fa-8017-c7ebd2448fc0"
+      stageUuid: "576c289d-6308-85fa-a5ff-dab07da1eb59"
 version: 2
 ---
 # executable

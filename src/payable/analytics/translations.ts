@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "analytics",
-    "uuid": "d8542d20-62d6-8d28-a87f-c3d95f513f9a",
+    "uuid": "5aec51e1-c3ce-8bdb-82c5-9ea2c4a91406",
     "words": [
       "analytics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about analytics — Days Payable Outstanding, vendor performance and spend analysis over the bill set.",
-    "uuid": "d667bdc1-fd69-85bc-af33-3546d0993da8",
+    "uuid": "668a92c7-3731-854b-bff3-6cc2c1a86402",
     "words": [
       "use",
       "when",

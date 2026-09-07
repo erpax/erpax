@@ -2,18 +2,18 @@
 name: deferredrevenue
 description: "Use when reasoning about deferredrevenue — Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position"
 atomPath: "vocabulary/deferredrevenue"
-coordinate: "vocabulary/deferredrevenue · 4/weave · 37aececf"
-contentUuid: "765e430c-848c-5fe8-891e-035d1c25e4a9"
-diamondUuid: "fdbd6b13-c772-88a0-adf3-0d5c6d2b86b5"
-uuid: "37aececf-064c-8c77-9151-6ea0dbc1e944"
-horo: 4
+coordinate: "vocabulary/deferredrevenue · 8/crest · 3e475a19"
+contentUuid: "7ed2aee8-00c2-5139-8bff-3f29d6998eb6"
+diamondUuid: "5bd326b6-4fc6-84e0-a6b9-0ea26459f6b3"
+uuid: "3e475a19-ea67-89c3-a537-209fd3cf3b2e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e79b8ef6-04bb-835c-a579-00a503c18850"
+  computationUuid: "da67b5fe-954e-8777-a6f7-c99d634d6f2c"
   stages:
     - stage: path
       stageUuid: "043bb685-a1fd-89bd-9b58-f43f6ae67bac"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b1a1609f-262a-8bd7-af4a-f8490ca1bd0d"
     - stage: horo
-      stageUuid: "d01c44ea-b563-89be-a827-e280d66a9433"
+      stageUuid: "c01420f7-ea3f-8fe9-926a-0c04def66698"
     - stage: seal
       stageUuid: "2dc14782-46ed-8bd7-9e60-ad089160ee2d"
     - stage: uuid
-      stageUuid: "8e9aac08-e6ea-8240-a50a-a77f4846b122"
+      stageUuid: "ad2ed2ac-5d30-869a-8e55-36475fdecd3f"
 version: 2
 ---
 # deferredrevenue

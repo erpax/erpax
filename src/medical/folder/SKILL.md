@@ -2,11 +2,11 @@
 name: folder
 description: "Use when reasoning about folder as a medical facet of medical — vocabulary pivot to @/folder; nested not duplicated."
 atomPath: "medical/folder"
-coordinate: "medical/folder · 2/share · 80f4df69"
-contentUuid: "2222a876-bc31-5be7-b971-096ef3150999"
-diamondUuid: "d9503138-49bc-8357-a324-c29d66f0653e"
-uuid: "80f4df69-3f2e-88ab-bef4-9817c9d80ead"
-horo: 2
+coordinate: "medical/folder · 1/base · 1e059f8f"
+contentUuid: "413945c4-cda4-5612-9dc6-047fa5e22b5c"
+diamondUuid: "9e488d00-37d0-8d98-918e-1cc7904204fa"
+uuid: "1e059f8f-8716-80b8-afad-0e4ff8488fde"
+horo: 1
 typography:
   partition: medical
   bondDegree: 67
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8e0a33c1-c7ad-8fca-ba1d-fa552496f107"
+  computationUuid: "4b562ca3-a083-8fbb-825c-e76fdc98ca85"
   stages:
     - stage: path
       stageUuid: "57245451-0015-8461-a4e4-12e89c25c907"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63c2093f-f290-89e3-bd56-e31f9b840303"
     - stage: horo
-      stageUuid: "d9ad4a2b-186d-882e-9f09-ca41ea685503"
+      stageUuid: "f91fbb71-cdcd-8b6a-9f6e-67ccc3f218d7"
     - stage: seal
       stageUuid: "3949d469-1137-82fe-bf7e-e9c27abae021"
     - stage: uuid
-      stageUuid: "9113f838-38f5-81bc-9023-672e08a20402"
+      stageUuid: "9f90e838-0a44-80b8-a8ff-1695130cc9f2"
 version: 2
 ---
 # medical/folder — medical facet

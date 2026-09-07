@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "collection",
-    "uuid": "f507908f-1e4c-804a-98a5-a0dd81f9e1c0",
+    "uuid": "96adc0ae-c3e4-8c41-93f3-b867bb5664cc",
     "words": [
       "collection"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a collection is built, its events derived, its fields generated or its shape judged — the factory as a barrel over base, lifecycle, field and shape.",
-    "uuid": "e385fc5e-35e2-8151-a521-cc319820d25c",
+    "uuid": "7a669acf-53b2-8899-9b40-f58635c1f376",
     "words": [
       "use",
       "when",

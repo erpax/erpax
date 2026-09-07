@@ -2,11 +2,11 @@
 name: remaining
 description: "Use when reasoning about remaining as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/remaining"
-coordinate: "vocabulary/remaining · 5/round · df1ea033"
-contentUuid: "562b3d75-2782-595f-bd44-b02e48ba8c02"
-diamondUuid: "e9a82004-fc96-8e6d-8ebf-dedd8a133468"
-uuid: "df1ea033-197e-8f12-a4bb-95f619bed96d"
-horo: 5
+coordinate: "vocabulary/remaining · 8/crest · 104bcb30"
+contentUuid: "82fefd5b-27cf-5737-87db-b9dfe7640e3a"
+diamondUuid: "9436061b-0adc-82ab-a78f-014e6961fafa"
+uuid: "104bcb30-7da9-8443-bbb2-c0dcf98d728f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2f6d9661-b40c-86e4-95b1-fcc432a93802"
+  computationUuid: "46838fa8-362a-88f9-b1ec-7863ff7f2af5"
   stages:
     - stage: path
       stageUuid: "c9fbb57d-41a2-81b6-8fbb-a7ec5d8b9867"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "770d5b12-d4b6-8a1a-9cf0-bb19f466938f"
     - stage: horo
-      stageUuid: "9c3461e4-b796-8b6b-8740-0ac138f1c667"
+      stageUuid: "3be5bc03-ec80-8d2c-9dca-61c9cbf213ce"
     - stage: seal
       stageUuid: "d385b46d-8c0a-8980-ab88-98dacd314c19"
     - stage: uuid
-      stageUuid: "20a6a0e2-b941-8f28-9009-479d043fd206"
+      stageUuid: "cc600d22-c6c0-8256-831d-17c349c0f6c9"
 version: 2
 ---
 # remaining

@@ -2,11 +2,11 @@
 name: recording
 description: Use when reasoning about recording — The composition this track is a recording of.
 atomPath: "vocabulary/recording"
-coordinate: "vocabulary/recording · 7/descent · 2df748cd"
-contentUuid: "dc39615b-92eb-5044-9a9f-93726f848d13"
-diamondUuid: "6a640c58-3c7a-8d45-b55e-869cd823372a"
-uuid: "2df748cd-1956-8044-b462-889f2a2c587f"
-horo: 7
+coordinate: "vocabulary/recording · 8/crest · ef40d0ab"
+contentUuid: "f81ea88d-4f4c-58be-abe3-dfbf7434aef1"
+diamondUuid: "dfb21ee2-a35d-8c2a-b74a-7223a17f6ab5"
+uuid: "ef40d0ab-10b7-894e-9270-d41444e8d213"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6d54d06c-a9ed-81d7-9f5e-0cad29eb6040"
+  computationUuid: "37423cf4-ac79-8bfa-912c-98103f342c35"
   stages:
     - stage: path
       stageUuid: "ed0bf543-875a-8100-825d-d66b45de7681"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "676038b0-3ed3-87c4-bc54-29515eb788b6"
     - stage: horo
-      stageUuid: "5b59786e-6b37-8b6a-a1c3-c0b0c9d7600b"
+      stageUuid: "ac02a58f-6c72-8bf0-bc5a-1e5bc30505ef"
     - stage: seal
       stageUuid: "1048b56a-4611-8113-9b64-e4e3c1de9064"
     - stage: uuid
-      stageUuid: "00ed6c6b-e4b4-8e0e-b307-b5e5457c056d"
+      stageUuid: "1d4dd094-e733-8838-a425-9a3e0e6e7e6f"
 version: 2
 ---
 # recording

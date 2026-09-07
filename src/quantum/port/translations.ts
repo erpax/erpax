@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "port",
-    "uuid": "a2777a15-763d-8ba8-ae7f-9f3c063cd263",
+    "uuid": "7c4e5cde-1f43-8b34-96bc-e3944573217f",
     "words": [
       "port"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\"port all upstreams again\\\" repeatedly.",
-    "uuid": "4a5e94c8-729b-8b70-aece-b83541341604",
+    "uuid": "ceee780d-d65f-8621-8296-27072990f97c",
     "words": [
       "use",
       "when",

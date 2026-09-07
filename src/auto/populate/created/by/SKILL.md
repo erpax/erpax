@@ -2,11 +2,11 @@
 name: by
 description: "Use when stamping the authoring user onto a row on first save without trusting client input — a beforeChange hook that auto-populates createdBy from the request user, only on create, only when not already set."
 atomPath: "auto/populate/created/by"
-coordinate: "auto/populate/created/by · 5/round · 0d1d8a1c"
-contentUuid: "e4b216ec-ab0b-50f1-ba06-5828234bd661"
-diamondUuid: "50b853ed-c62d-8d94-8ecd-637484355e32"
-uuid: "0d1d8a1c-5487-8c51-bb84-400400028c52"
-horo: 5
+coordinate: "auto/populate/created/by · 2/share · 227bc5cb"
+contentUuid: "5d7c4be2-aad6-5462-9cd6-c6cc721c97f9"
+diamondUuid: "46da3054-351c-8cdd-81db-8e8cbd23d88b"
+uuid: "227bc5cb-5348-81f9-84ae-f2c9bb5f0301"
+horo: 2
 typography:
   partition: auto
   bondDegree: 15
@@ -15,7 +15,7 @@ standards:
   - "SOX §404 internal-controls"
 bindings: []
 signatures:
-  computationUuid: "a4eadd81-269f-84fd-b1db-40e31a482365"
+  computationUuid: "25893645-ed49-8f74-9920-d29788f4ab38"
   stages:
     - stage: path
       stageUuid: "2b7854ab-dfb4-8404-86b3-214533527913"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "5a17be39-ec30-859e-b8e6-0056e340056c"
     - stage: horo
-      stageUuid: "9c134ae1-5218-8bca-8445-1ebb54734d69"
+      stageUuid: "b386e25f-4309-8f33-968d-81bacfcb608a"
     - stage: seal
       stageUuid: "e89a784d-80de-8159-b2f7-b172a4cddd21"
     - stage: uuid
-      stageUuid: "d47dfe18-a3df-894c-9a93-5c6f8ff19ed3"
+      stageUuid: "cbcebce0-d0e6-8fce-ad1f-ca65da3d9599"
 version: 2
 ---
 # auto/populate/created/by — authorship attribution on create

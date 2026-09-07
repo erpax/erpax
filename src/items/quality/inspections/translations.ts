@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inspections",
-    "uuid": "a7bce297-9ac4-881b-962c-efa756fc6084",
+    "uuid": "cc6fcee5-dccd-8e05-9b8e-fcad4395a39f",
     "words": [
       "inspections"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.",
-    "uuid": "624e9abc-7277-80e6-8e9e-8b1b6f7bc122",
+    "uuid": "a4f00499-4eba-8382-864e-90f21803c116",
     "words": [
       "use",
       "when",

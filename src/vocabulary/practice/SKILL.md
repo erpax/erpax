@@ -2,18 +2,18 @@
 name: practice
 description: Use when modelling one practice — the singular model of the practices collection (the plural store); an established way of doing something within a domain.
 atomPath: "vocabulary/practice"
-coordinate: "vocabulary/practice · 8/crest · 532a5603"
-contentUuid: "34400d53-2293-5874-8f09-712ae5818632"
-diamondUuid: "fc048dcd-3e94-8f92-88d3-9e5bba7d701d"
-uuid: "532a5603-7ac4-8bdd-97cc-dc13a84238e1"
-horo: 8
+coordinate: "vocabulary/practice · 2/share · dd1a6575"
+contentUuid: "01c19d74-1ab9-5726-bb93-0d58408c5328"
+diamondUuid: "e01c705c-2bc6-8929-92e8-15de6db99e0f"
+uuid: "dd1a6575-39f2-89be-b26a-8dca320942ea"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b98155a4-62a6-89f0-89fe-99047ac1c5cd"
+  computationUuid: "e69a9e22-a0a6-8cf2-a58d-91c786a2553c"
   stages:
     - stage: path
       stageUuid: "d1a82bb0-8970-8139-b825-132f2e347caa"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fe522d59-ef87-8610-baa1-d36bf6af7c64"
     - stage: horo
-      stageUuid: "6e1e4ea3-2e1b-88f0-b15f-25b917d9042d"
+      stageUuid: "a4e524b6-aef2-857a-8eec-06c2816cfdf4"
     - stage: seal
       stageUuid: "7d4b69e8-19b8-8d16-96b8-6b58a1ef5b53"
     - stage: uuid
-      stageUuid: "7bc34805-7ce7-8068-81ac-fb624cc3d984"
+      stageUuid: "43fa8b8e-3031-8af5-b778-9d0e541f834c"
 version: 2
 ---
 # practice — the model of one [[practices]] row

@@ -2,18 +2,18 @@
 name: expansion
 description: "Use when reasoning about expansion — HKDF-SHA256 key derivation replacing Rodin doubling"
 atomPath: expansion
-coordinate: "expansion · 4/weave · 093dedb0"
-contentUuid: "206f0ddd-acfe-5401-a57d-f0baa44ce898"
-diamondUuid: "ab8dd76d-fd87-8adb-a8af-302d9fb65071"
-uuid: "093dedb0-0c24-8a30-9495-6bc64e1a2ecf"
-horo: 4
+coordinate: "expansion · 2/share · 5d8c9c0d"
+contentUuid: "14402221-4c2a-553a-91a3-e6ea3f707d2f"
+diamondUuid: "1b19a2f1-69c4-8a9d-a489-c9281513e387"
+uuid: "5d8c9c0d-2aa8-8fc8-ae8a-081213350133"
+horo: 2
 typography:
   partition: expansion
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7bdabe38-25f6-8e68-9224-bf60140bb891"
+  computationUuid: "c9d53811-f0ac-86de-9f64-f48a8729b8c8"
   stages:
     - stage: path
       stageUuid: "0188ef52-bf07-8c51-8f9c-acd10f3766f1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a5cdc15e-e26e-8179-accd-0e14fb9d90fa"
     - stage: horo
-      stageUuid: "aa8bebda-cd43-8730-89b9-b69d4f8d8350"
+      stageUuid: "f20db759-63d7-8b3d-b9c7-31d9b2e1721b"
     - stage: seal
       stageUuid: "d438d4db-41ac-8084-9ed6-a6d6deedfb6d"
     - stage: uuid
-      stageUuid: "35f03a28-e4cc-85ac-930f-e1694f7740a8"
+      stageUuid: "b9483b38-89a7-8591-b049-1648b3138842"
 version: 2
 ---
 # expansion — RFC 5869 HKDF-SHA256

@@ -2,11 +2,11 @@
 name: starts
 description: "Use when reasoning about starts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: starts
-coordinate: "starts · 5/round · 03e51624"
-contentUuid: "869d2fe5-a8e5-5c41-a99d-4072ecacc3a8"
-diamondUuid: "54fcb73c-9565-889a-a009-1ac53bea8796"
-uuid: "03e51624-8546-8670-9b90-dae34862e5fd"
-horo: 5
+coordinate: "starts · 2/share · de46566e"
+contentUuid: "8d8da06c-e936-5e9f-ad70-841d1712809f"
+diamondUuid: "1a7b7d02-592b-8ec9-aa95-84d048d44e14"
+uuid: "de46566e-3071-861e-b05f-566e96d3456d"
+horo: 2
 typography:
   partition: starts
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "030d649d-5a5f-8156-8177-ca329854b269"
+  computationUuid: "7fa5f769-2bd1-8ddd-b97d-af2bb84fc614"
   stages:
     - stage: path
       stageUuid: "0506dc4b-940e-8490-9d48-8c85081082ac"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "74f5a407-3fe0-8997-b68f-ea00d8476b5c"
     - stage: horo
-      stageUuid: "f68759ef-6645-8826-8d13-98e2f724ddfc"
+      stageUuid: "d11f94fc-0144-86bc-b4ec-2523aa49447a"
     - stage: seal
       stageUuid: "ee32d5aa-8867-88ec-ada3-8afe7eab2ef3"
     - stage: uuid
-      stageUuid: "dc79312b-5fb8-85a6-b088-be7eeeb82c82"
+      stageUuid: "bfc50785-c321-874c-99cf-90c9dab49266"
 version: 2
 ---
 # starts

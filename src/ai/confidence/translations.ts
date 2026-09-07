@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "confidence",
-    "uuid": "f7cbfee2-b3ec-8535-9811-f6bc20f5f95a",
+    "uuid": "eb21866e-1ac7-8ad4-9299-79c2ffbe7345",
     "words": [
       "confidence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about confidence — AI auto-accept confidence thresholds — imperial rationals only.",
-    "uuid": "e908abdf-4972-8624-8ce4-345352d64f41",
+    "uuid": "85dd50a9-7303-8d12-867c-539acdf82ab1",
     "words": [
       "use",
       "when",

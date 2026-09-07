@@ -2,18 +2,18 @@
 name: debounce
 description: "Use when reasoning about debounce — holds a changing value still for a delay before releasing it, so a search field issues one request when typing stops instead of one per character."
 atomPath: "use/debounce"
-coordinate: "use/debounce · 4/weave · c1f0adbf"
-contentUuid: "571f9b34-5fa6-5f60-afb8-b0cb12aaaabe"
-diamondUuid: "f65d9368-17c4-8a50-ba8a-ce9bd982dd38"
-uuid: "c1f0adbf-d3b1-89e0-94ec-34d9c1842ef0"
-horo: 4
+coordinate: "use/debounce · 1/base · e3a67b83"
+contentUuid: "ca5fc6b8-bf97-5c67-a599-8b100dd0ee57"
+diamondUuid: "20ad599c-5056-8b30-b39c-518855d78e7c"
+uuid: "e3a67b83-f5d9-8ec1-b18c-cdd4bc16f711"
+horo: 1
 typography:
   partition: use
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "31d06962-1d36-8267-bea1-36d9fe3d0196"
+  computationUuid: "ddf9b578-964f-8ec3-a82e-ba222f7cb533"
   stages:
     - stage: path
       stageUuid: "02dd7f72-8905-8752-a51e-7a6432b1f5a0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "655788bf-963d-8b82-90ec-6cada671016c"
     - stage: horo
-      stageUuid: "a0f1f369-190c-8e17-b0f8-23b1ed3940a1"
+      stageUuid: "955a27ea-d76c-8930-bfd9-e2b27325530e"
     - stage: seal
       stageUuid: "d3d1c463-6600-84ae-8431-b6a2d9641a73"
     - stage: uuid
-      stageUuid: "affc4402-9395-8181-b9aa-ef8b001b285c"
+      stageUuid: "573689f1-ad38-874a-9385-fbbbdd325c45"
 version: 2
 ---
 # use/debounce — the keystroke is not the query

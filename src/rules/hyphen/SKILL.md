@@ -2,10 +2,10 @@
 name: hyphen
 description: "Use when driving the hyphenated-filename campaign — computes, as a read-only scalpel manifest, which stems can be renamed because the PATH already says the redundant word, and which need a human because more than one word survives. Specifiers are parsed (declarations, re-exports and dynamic import), ops are anchored on whole lines so an import and a re-export of the same module both cut, and a rename whose ops refuse is withheld rather than forced."
 atomPath: "rules/hyphen"
-coordinate: "rules/hyphen · 5/round · 31a0b92f"
-contentUuid: "4946553e-1850-5d1d-ab4f-56f9c5b59447"
-diamondUuid: "855a75ec-19b6-8c34-ab5d-fc909c9e409a"
-uuid: "31a0b92f-ce27-8dc1-99b7-a113901c02a1"
+coordinate: "rules/hyphen · 5/round · cc967e80"
+contentUuid: "005ca36e-a3d3-5565-81d4-a765534e8510"
+diamondUuid: "b6ec2c88-ca6d-8f26-a610-4d2a4610471e"
+uuid: "cc967e80-5cd0-83a5-b1c0-b30f4dbcfe17"
 horo: 5
 typography:
   partition: rules
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "70a36a57-663b-88b0-8fcf-86498156e6a1"
+  computationUuid: "7af2773f-c99e-8337-9512-6fe3ed216c21"
   stages:
     - stage: path
       stageUuid: "c36f962a-e3c7-87c7-aa81-aa82ab413119"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d3df50b6-2d76-8963-aa6d-8b5352a68873"
     - stage: horo
-      stageUuid: "e68ca963-80a8-8cde-9ee2-1b17e28e50ac"
+      stageUuid: "d6bf3204-522b-89c9-b0ff-9909dd1f4424"
     - stage: seal
       stageUuid: "ba0c1085-6a36-892b-b4c1-32afb38ba1e2"
     - stage: uuid
-      stageUuid: "ff2d83dd-8a61-802e-b0b5-e3a1f695ab87"
+      stageUuid: "56c90f5a-bcac-885e-9f78-1c2b09180567"
 version: 2
 ---
 # rules/hyphen — the campaign, computed instead of swept

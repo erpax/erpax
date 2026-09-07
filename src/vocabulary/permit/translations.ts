@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "permit",
-    "uuid": "de2b089f-ca1d-8109-9024-73ce0a5e1fbd",
+    "uuid": "8d4cea68-478f-84f1-8014-9b5b4f23d0a9",
     "words": [
       "permit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about permit — A permit issued by an organization, e.g. a parking pass.",
-    "uuid": "b5f5faae-7e9d-883b-a702-2c19a8f5e495",
+    "uuid": "2fbf40eb-037c-8b0b-8de8-546ad3651ca7",
     "words": [
       "use",
       "when",

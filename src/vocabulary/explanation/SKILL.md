@@ -2,11 +2,11 @@
 name: explanation
 description: "Use when reasoning about explanation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/explanation"
-coordinate: "vocabulary/explanation · 2/share · ee57715e"
-contentUuid: "d2ae1983-048d-5b82-8a90-45b42dabe274"
-diamondUuid: "4d29f745-a30f-80d9-9045-459c3dc92328"
-uuid: "ee57715e-5805-869a-a8a0-21680996f444"
-horo: 2
+coordinate: "vocabulary/explanation · 8/crest · d2e86544"
+contentUuid: "235c490e-8885-5113-92bc-dd095727a6aa"
+diamondUuid: "db0f1039-f223-86b9-97ad-bb62e7d2cc91"
+uuid: "d2e86544-cfbc-8c00-8b4f-05e77ecb0537"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a53465d9-a373-8b71-8f9e-5201ab1a060c"
+  computationUuid: "854b4350-054b-84ad-89c0-b443321599c0"
   stages:
     - stage: path
       stageUuid: "170ade59-4c8d-8263-aa60-855abbc3f696"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e0e6952-7d3f-805a-bc41-b746d974165b"
     - stage: horo
-      stageUuid: "f742d1c5-c297-85ef-bf8d-fe4f524c5437"
+      stageUuid: "7587569b-ff25-8cfc-9de1-6035ffbfc809"
     - stage: seal
       stageUuid: "102502b9-1902-8413-8123-182d9b05031e"
     - stage: uuid
-      stageUuid: "f8359365-d51c-8d58-b8e3-ac202929ca0c"
+      stageUuid: "9eec3cf8-6c71-858d-b4c0-49afa51f3f5e"
 version: 2
 ---
 # explanation

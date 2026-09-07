@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "archive",
-    "uuid": "d41d90e1-d82a-8dc5-bbde-8819d7f6e60d",
+    "uuid": "eb4a2f7f-a0da-8d5a-b578-9158de09a6ee",
     "words": [
       "archive"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about archive — The archive lays post cards in a responsive grid. Visually it is columns; structurally it is an **ItemList** — a set of sibling entries with a defined order — and that structure…",
-    "uuid": "28b99251-19d6-8d42-94ee-3399c12dfd31",
+    "uuid": "0a18decb-4daa-8a62-a762-86773a18fd3f",
     "words": [
       "use",
       "when",

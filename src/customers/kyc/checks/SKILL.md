@@ -2,11 +2,11 @@
 name: checks
 description: "Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection."
 atomPath: "customers/kyc/checks"
-coordinate: "customers/kyc/checks · 5/round · 85af031a"
-contentUuid: "7050b9c7-f05e-5919-bf5e-988b65069eae"
-diamondUuid: "5e462d43-c456-814a-b92d-4bee49d57b2d"
-uuid: "85af031a-7c1e-80c4-a7b8-be15d3365e33"
-horo: 5
+coordinate: "customers/kyc/checks · 1/base · 8d2109cb"
+contentUuid: "8b612ee6-2fce-5194-9b60-f62b3444fef4"
+diamondUuid: "40b33958-4e31-87a5-a3b5-c0f0083bfc4a"
+uuid: "8d2109cb-f5ea-83fc-8d0f-e12ff2cd3b3e"
+horo: 1
 typography:
   partition: customers
   bondDegree: 15
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0246dced-9f5f-844d-922c-2e2aab3d6d3a"
+  computationUuid: "ad8b6fb9-fc94-8510-8a0a-2823b984e415"
   stages:
     - stage: path
       stageUuid: "423de8ab-f987-829c-9d4c-7b985d4e39d0"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "b8999206-541f-83f6-bd21-98eea84521a5"
     - stage: horo
-      stageUuid: "285fd07b-d5a5-839f-8b7e-ece90a514ca4"
+      stageUuid: "081c79c8-1929-8900-be6b-a9bd6e0f8d11"
     - stage: seal
       stageUuid: "b7b5f3cc-402a-8e30-9f2a-638b3d56a416"
     - stage: uuid
-      stageUuid: "8fce776d-7ff0-86b6-a800-4863112a7a93"
+      stageUuid: "0bb27a07-f817-82f1-8f33-9d1ab5b350bc"
 version: 2
 ---
 # kyc-checks

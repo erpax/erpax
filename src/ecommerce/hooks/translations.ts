@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "27471102-f04b-88f1-a3c2-80a7bd3e7fe2",
+    "uuid": "cb1f084b-a7b5-86b0-99fa-48e6672ae12f",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — publishes the order's transitions from the collection, so an order moved by the storefront, the admin panel or a job emits the same event.",
-    "uuid": "bf4e6c38-eb6b-83f1-a5d0-8ee1227a831a",
+    "uuid": "160f566b-2ab4-8f04-a8d9-e7682e270d64",
     "words": [
       "use",
       "when",

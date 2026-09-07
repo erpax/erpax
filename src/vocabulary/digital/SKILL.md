@@ -2,11 +2,11 @@
 name: digital
 description: "Use when reasoning about digital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/digital"
-coordinate: "vocabulary/digital · 7/descent · 3d790555"
-contentUuid: "b279ae99-bef4-5347-957c-ca0a33ee333b"
-diamondUuid: "50d43850-179b-80b5-b1c0-5a9a2baf3a79"
-uuid: "3d790555-c25f-8684-b107-e12d0398755f"
-horo: 7
+coordinate: "vocabulary/digital · 5/round · a41f6ea1"
+contentUuid: "b84cf770-1c43-51bc-a83b-712cb58a56e0"
+diamondUuid: "8d76e9be-0a49-8f86-961f-90e3a6e7caca"
+uuid: "a41f6ea1-07f7-80a6-a72e-530c6cd5d230"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 67
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "66cf9a64-1b34-839e-8c7c-0d13608e373f"
+  computationUuid: "bd8a64b6-4a5e-87da-83b3-698d0beb0413"
   stages:
     - stage: path
       stageUuid: "5f7da672-15d2-8894-8ccd-a415e437e19c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "57e4dbbc-bc3a-885e-9fb5-6d85d9c97877"
     - stage: horo
-      stageUuid: "072aa340-bb4b-86d0-838a-4dc70fa72fd2"
+      stageUuid: "1d5ea3ca-a937-8af6-beea-44854572c249"
     - stage: seal
       stageUuid: "62fc8753-b1e9-8ab7-a9a0-d0cf7d5a0d29"
     - stage: uuid
-      stageUuid: "5cf7bea4-d37d-8ee8-bd79-aa6d4fa4f55a"
+      stageUuid: "d190b08b-f850-8103-b621-3d4a02cf5540"
 version: 2
 ---
 # digital

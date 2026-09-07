@@ -2,11 +2,11 @@
 name: purpose
 description: "Use when reasoning about purpose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/purpose"
-coordinate: "vocabulary/purpose · 1/base · c26dacf9"
-contentUuid: "020bd89f-72d3-5690-8c29-7a8c09e2098e"
-diamondUuid: "4f7a478a-5e47-812a-944b-6332b8e4b81c"
-uuid: "c26dacf9-2c59-8fe8-816c-2afa6a84a53e"
-horo: 1
+coordinate: "vocabulary/purpose · 7/descent · 4d070cc9"
+contentUuid: "a1b23ff2-6a01-5e63-8ca6-4c91e6b5f07d"
+diamondUuid: "70926aca-182c-8ac0-89a5-24278b194af3"
+uuid: "4d070cc9-fe10-8c63-99d3-118b272efab3"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aa1b0284-54a7-80df-845e-e09d86db6460"
+  computationUuid: "7336f2e2-5b19-823d-8bd8-1552210687fd"
   stages:
     - stage: path
       stageUuid: "7c8d65d1-0569-828f-8d09-fff7ee7111a3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c99fd115-bccc-881a-8e4a-ccf87e2de380"
     - stage: horo
-      stageUuid: "3d9bbaff-23c2-8760-94b9-320277545c3a"
+      stageUuid: "63a3067b-7f67-8b31-a9bd-1099f4289e30"
     - stage: seal
       stageUuid: "7dbfd438-5a92-8d9c-aaa2-6ebb65ff1612"
     - stage: uuid
-      stageUuid: "dd7c3d09-eb20-872c-b13e-f238cc35241c"
+      stageUuid: "828f591e-1624-8569-9f39-11ed61507c37"
 version: 2
 ---
 # purpose

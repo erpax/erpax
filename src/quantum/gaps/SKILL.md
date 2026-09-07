@@ -2,18 +2,18 @@
 name: gaps
 description: "Use when asked to fill the gaps in quantum mechanics — the honest toolbox that NAMES the open gaps (measurement problem, Born rule, preferred basis, quantum gravity, interpretation) and refuses to fill them. Every gap's `fills` is the literal false, so the code cannot claim a solution; the corpus tools are shown as lenses to learn through, never fillings. HARMONY ≠ TRUTH."
 atomPath: "quantum/gaps"
-coordinate: "quantum/gaps · 2/share · 23db2ca4"
-contentUuid: "b0f982b3-70bd-5f85-831d-7c281b7a24ad"
-diamondUuid: "7b3cb7a9-934b-8b62-8391-0c41735afcd9"
-uuid: "23db2ca4-0b4d-86f3-9c18-317cd768a1d1"
-horo: 2
+coordinate: "quantum/gaps · 8/crest · 8c4e5d2a"
+contentUuid: "b1fd6642-3667-5131-b269-d30396a95870"
+diamondUuid: "78fcc21a-a5c5-89c1-86ea-1cde3b05492f"
+uuid: "8c4e5d2a-3104-81ae-b597-543277ff2549"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 22
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f6a80d00-ec5e-8e9d-b77f-bf979ccd087b"
+  computationUuid: "69dd4777-bcd6-8fe4-8965-15f01c62bacd"
   stages:
     - stage: path
       stageUuid: "79f947ad-1601-8f14-ade9-c0cdc3ff19a2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1702143f-74bc-8459-9e19-389072f2553d"
     - stage: horo
-      stageUuid: "aa94919e-835a-8dfd-9b34-9abf8b2b79e2"
+      stageUuid: "1766d409-1df2-8d51-bfcf-82da7a6eb3d0"
     - stage: seal
       stageUuid: "e243a6e8-1ea5-8692-9a09-4078c091f4c5"
     - stage: uuid
-      stageUuid: "4c0f7477-64c5-8e93-99de-c28be1c989fc"
+      stageUuid: "bfddf44e-fef9-8ac4-b0a3-4e397971c1b7"
 quantum:
   superposition:
     - accounting
@@ -48,8 +48,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f6a80d00-ec5e-8e9d-b77f-bf979ccd087b"
-    contentUuid: "b0f982b3-70bd-5f85-831d-7c281b7a24ad"
+    computationUuid: "69dd4777-bcd6-8fe4-8965-15f01c62bacd"
+    contentUuid: "b1fd6642-3667-5131-b269-d30396a95870"
 version: 2
 ---
 # quantum/gaps — the open gaps in QM, taught as lenses, never fillings
@@ -79,4 +79,4 @@ Where real physics *partially* constrains a gap — Gleason's theorem for the Bo
 
 Composes: [[think]] · [[coincidence]] · [[seeing]] · [[rules]]/refutable · [[law]].
 
-<sub>content-uuid `b0f982b3-70bd-5f85-831d-7c281b7a24ad` · account `quantum/gaps` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b1fd6642-3667-5131-b269-d30396a95870` · account `quantum/gaps` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

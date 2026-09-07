@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "matrix",
-    "uuid": "3b57d179-6f20-8951-b673-0736710556d2",
+    "uuid": "81471716-a021-8215-9bda-df0cb1271632",
     "words": [
       "matrix"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the matrix as the cross-product / entanglement adjacency — the N² space of atom pairs and which are actually entangled; cross (the symmetric pair binding), bidirectionalCross, adjacency density, reciprocity, and in-degree centrality.",
-    "uuid": "396e8a7c-4715-8cb3-933f-c2ef6d4c2818",
+    "uuid": "b95cba89-4116-846c-84a1-d057cefa1f2d",
     "words": [
       "use",
       "when",

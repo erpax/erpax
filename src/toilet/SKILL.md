@@ -2,11 +2,11 @@
 name: toilet
 description: "Use when reasoning about toilet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: toilet
-coordinate: "toilet · 4/weave · 82598108"
-contentUuid: "c9e7a59f-aa96-5544-8d4f-d2e01c666fd3"
-diamondUuid: "970a8e01-4a2a-885c-bdcb-a3c80d263593"
-uuid: "82598108-2f55-8108-a4f4-0a4072829d2a"
-horo: 4
+coordinate: "toilet · 2/share · b88ee084"
+contentUuid: "134498cb-78ea-585d-b2a3-b2052115f0d0"
+diamondUuid: "153c0113-b6f7-83d4-8371-f1a8a0096ddf"
+uuid: "b88ee084-3dc5-8007-9395-d356a11e15ad"
+horo: 2
 typography:
   partition: toilet
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dfcdd1fa-463b-8456-8861-55a9c3e8b084"
+  computationUuid: "d9a0eabb-352b-836e-ae5e-b02cc8d00d83"
   stages:
     - stage: path
       stageUuid: "9c0653e3-b575-8d21-a883-1947fb3e298c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7c56a980-9c13-8b8b-80e3-048b00a8860a"
     - stage: horo
-      stageUuid: "6ee5825b-9bfd-889d-929c-ffdf973f7737"
+      stageUuid: "76b8356f-4e2a-82b6-8e73-b69d95363027"
     - stage: seal
       stageUuid: "f55da904-ee8f-843e-ba45-5f6476fdd846"
     - stage: uuid
-      stageUuid: "7a3e7736-3d5f-84c7-ae68-3b39f0be4c8a"
+      stageUuid: "8dc9ff55-a8fc-8319-8e74-039418d89027"
 version: 2
 ---
 # toilet

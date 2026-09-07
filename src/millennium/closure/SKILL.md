@@ -2,10 +2,10 @@
 name: closure
 description: "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be."
 atomPath: "millennium/closure"
-coordinate: "millennium/closure · 7/descent · 39e3939f"
-contentUuid: "d1ba68ac-e8dd-55e9-86bb-7ad30e9d2e70"
-diamondUuid: "209d8c14-406d-8890-8cb2-bd8ebd40e60b"
-uuid: "39e3939f-2342-8f68-8aff-1f4822400d4f"
+coordinate: "millennium/closure · 7/descent · da16beb8"
+contentUuid: "12c8a551-7052-53f7-9d5d-cf0db6e23d82"
+diamondUuid: "e56e21f7-90c0-84dc-9656-e1bd1dcdf2e5"
+uuid: "da16beb8-23e0-831a-9f3b-7e8fe157e009"
 horo: 7
 typography:
   partition: millennium
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "6b7a4ce3-9f71-8c1a-b510-422d9bb2bc97"
+  computationUuid: "05192170-df7f-89a8-b6f5-1da8195ff444"
   stages:
     - stage: path
       stageUuid: "b31ca6c7-4636-8dca-8171-d81aaf0d7974"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a510ca2b-57f9-8445-9f78-579945e953cb"
     - stage: horo
-      stageUuid: "2fdb0e88-2b38-85bb-8313-7cfa721b2b87"
+      stageUuid: "b8e38561-2696-81dc-8627-626929df232a"
     - stage: seal
       stageUuid: "7f0d1059-d741-82f5-86bd-33cb655bd9a2"
     - stage: uuid
-      stageUuid: "7e6444f7-f374-8f1b-a07b-208af4b514ae"
+      stageUuid: "59ec1c22-2b39-8191-ba72-7b8cdf6119a4"
 version: 2
 ---
 # millennium/closure — the decidable half, computed

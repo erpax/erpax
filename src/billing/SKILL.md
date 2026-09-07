@@ -2,10 +2,10 @@
 name: billing
 description: "Use when reasoning about billing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: billing
-coordinate: "billing · 7/descent · f50e0b30"
-contentUuid: "e039db21-fc0f-50fa-8729-7593d06294cb"
-diamondUuid: "5f58f3b1-1c6e-8799-bf53-5dd01fce63bf"
-uuid: "f50e0b30-646c-8987-adba-dbe7f4042d06"
+coordinate: "billing · 7/descent · d7a247ef"
+contentUuid: "895591e4-1df2-5dd5-a77e-42f2b18f486f"
+diamondUuid: "3fdfc656-8d71-83ec-a0f8-3dc33c2a4ec4"
+uuid: "d7a247ef-7d93-89ff-a1cc-f87c49081fa2"
 horo: 7
 typography:
   partition: billing
@@ -18,7 +18,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c5394a86-0d8f-8df4-b309-30e8281101f1"
+  computationUuid: "62c5cf3d-b610-83c4-96e4-c3a5849bdcb5"
   stages:
     - stage: path
       stageUuid: "8052b17b-559b-88a1-bf7f-0acf523781ef"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "0f3a34c3-2e00-8d4b-a6b0-ae27f4848591"
     - stage: horo
-      stageUuid: "23aad484-54fa-8c70-b121-ada2646be576"
+      stageUuid: "2b6ce486-e1f9-8cc2-804a-df2220df6677"
     - stage: seal
       stageUuid: "0b571f3e-80f6-8ee6-aa17-91fb516af0f5"
     - stage: uuid
-      stageUuid: "9e70f9d2-a268-837e-bd9c-c30a2feb7cad"
+      stageUuid: "e21681d7-89c4-8cd7-ab38-ee08c70c4a83"
 version: 2
 ---
 # billing

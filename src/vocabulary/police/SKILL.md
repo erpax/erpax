@@ -2,11 +2,11 @@
 name: police
 description: "Use when reasoning about police as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/police"
-coordinate: "vocabulary/police · 7/descent · d85ad434"
-contentUuid: "2ad7ac72-c9be-5e0e-aade-621a326bc93d"
-diamondUuid: "e27554d5-bd5b-8ad5-8b50-17037e473218"
-uuid: "d85ad434-8ff3-80ce-a754-fd7ff23fcf0d"
-horo: 7
+coordinate: "vocabulary/police · 1/base · ecf53572"
+contentUuid: "2e5caa1b-98c1-5bb9-ace4-8ef879a2f76b"
+diamondUuid: "a78edac9-47b5-80fe-b1bc-94ec1d13b682"
+uuid: "ecf53572-5a56-8191-a846-5f700bddfe83"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "68f23f10-72ef-8850-b9a9-621407ea92eb"
+  computationUuid: "703cd4c8-ae7b-8608-a378-9b2cf61fa0c3"
   stages:
     - stage: path
       stageUuid: "b331ced7-cf1a-806d-954e-2b723bba0fb1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d20738fd-4051-875d-a1f8-61fbcc130be9"
     - stage: horo
-      stageUuid: "2d50dca7-3c5a-89d2-b86a-fcf3caad5712"
+      stageUuid: "ba43329d-8110-8069-bb45-6a70a460c2d2"
     - stage: seal
       stageUuid: "9491c0b0-36ba-83d4-bb9f-69426da317ca"
     - stage: uuid
-      stageUuid: "f19909c2-c177-87f6-b7a1-2b14c46680ed"
+      stageUuid: "5f3a4551-15e9-852c-875b-cd3891f95ec2"
 version: 2
 ---
 # police

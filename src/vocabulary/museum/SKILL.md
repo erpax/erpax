@@ -2,11 +2,11 @@
 name: museum
 description: Use when reasoning about museum — A museum.
 atomPath: "vocabulary/museum"
-coordinate: "vocabulary/museum · 7/descent · 52b6982e"
-contentUuid: "b9bbedcc-7f21-5ecd-9f28-801180e9a2e6"
-diamondUuid: "1f2b9a08-c4de-84e8-994d-6a3837fe0e98"
-uuid: "52b6982e-26bc-81d6-afe4-ede5ed9ee06b"
-horo: 7
+coordinate: "vocabulary/museum · 1/base · fb41c793"
+contentUuid: "f490c3e8-bc48-54cd-b997-9a458098913e"
+diamondUuid: "c218fc44-ac9d-8ba0-8100-d41a54e03ebc"
+uuid: "fb41c793-3ccb-8cd3-bc3f-f6c3cce2b315"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2bbcd81c-4bce-88b1-b9c5-3c20567c643e"
+  computationUuid: "66eb490c-44b9-8c97-8305-48c2e37ffdad"
   stages:
     - stage: path
       stageUuid: "9504c1ab-d36a-884e-bb0a-2c92fcf72c54"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8884db47-cd05-889e-a376-731eb3a0212e"
     - stage: horo
-      stageUuid: "b9368eca-6297-8ebb-af4a-dc915bf579f5"
+      stageUuid: "2f835226-8090-8c87-82ff-a1f9754aa6ca"
     - stage: seal
       stageUuid: "091fc970-b99e-86a6-a9cf-75accb5b2af0"
     - stage: uuid
-      stageUuid: "5e5830e9-151e-828a-8612-75e228e64384"
+      stageUuid: "a8137baa-5ba1-8619-81b7-cc83bd1d5509"
 version: 2
 ---
 # museum

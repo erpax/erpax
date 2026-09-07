@@ -2,11 +2,11 @@
 name: service
 description: "Use when parsing camt.052 account-report import parser."
 atomPath: "camt052/import/service"
-coordinate: "camt052/import/service · 2/share · 242c344e"
-contentUuid: "8880b36d-d498-5722-9a0c-d100e3f93053"
-diamondUuid: "3496dbfa-62ad-8726-a927-576273782417"
-uuid: "242c344e-3e3b-8b28-b227-a7934aba944c"
-horo: 2
+coordinate: "camt052/import/service · 1/base · d4ddf466"
+contentUuid: "398c0731-5e5b-524e-a2b0-e150907c54a5"
+diamondUuid: "84a95832-9982-8036-8e69-c33ff8efb6a1"
+uuid: "d4ddf466-6e85-8c58-990b-9b6b5b9b25db"
+horo: 1
 typography:
   partition: camt052
   bondDegree: 183
@@ -16,7 +16,7 @@ standards:
   - "ISO-20022 camt.052 bank-to-customer-account-report"
 bindings: []
 signatures:
-  computationUuid: "cf2b7a1d-599c-894e-b844-58723dabcc50"
+  computationUuid: "bf4483e0-e820-8db0-b253-9fc54da9d28c"
   stages:
     - stage: path
       stageUuid: "78749ad8-abf9-883a-841b-fda6fb63a513"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "fe696e50-e0d1-8afb-b7bc-65db52960773"
     - stage: horo
-      stageUuid: "1c62952c-8a64-84da-b82d-8033e861e203"
+      stageUuid: "bb0e3f03-9135-88bb-880a-0296bf23d453"
     - stage: seal
       stageUuid: "e9be0cc4-fe6d-8ff1-8ede-5349566f923c"
     - stage: uuid
-      stageUuid: "0be30bdd-1456-8865-869c-9ae217b8ea0e"
+      stageUuid: "e06042d5-0f7d-8e0c-87cc-4214404295a9"
 version: 2
 ---
 # service — camt.052 account-report import parser

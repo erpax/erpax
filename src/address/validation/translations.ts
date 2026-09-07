@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "validation",
-    "uuid": "aadf1645-a169-8f2b-84a9-bfa4ed7e57ed",
+    "uuid": "9d0938a0-cf2d-86bd-8cb9-73b064e0e0ea",
     "words": [
       "validation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that a postal address is complete and well-formed for its declared country — country-aware required components and postal-code pattern checks, returning human-readable errors (empty ⇒ valid) ready for a Payload beforeValidate throw.",
-    "uuid": "2ec190a7-1c34-85fe-9cd1-2c83502ae7e4",
+    "uuid": "f067de87-77c4-8bfa-92a0-2b809ece49e6",
     "words": [
       "use",
       "when",

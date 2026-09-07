@@ -2,11 +2,11 @@
 name: mass
 description: "Use when reasoning about mass — Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'."
 atomPath: "vocabulary/mass"
-coordinate: "vocabulary/mass · 8/crest · 47b6ed35"
-contentUuid: "b16c8253-e8b6-52f5-adb2-3106d4f8be95"
-diamondUuid: "4b5675ce-1333-8d8d-801e-724778772898"
-uuid: "47b6ed35-530b-81d9-a6e4-1cb21b70efa0"
-horo: 8
+coordinate: "vocabulary/mass · 7/descent · 4c12fb5b"
+contentUuid: "55b23dca-e119-5fe3-b768-72a4856005f3"
+diamondUuid: "62219aff-3310-8599-aac0-2a123e446e6f"
+uuid: "4c12fb5b-2b3a-8a88-9609-27851d4105e3"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bb2898b0-99d9-8264-a463-647559e569da"
+  computationUuid: "674e6b33-fb96-8aee-a629-7ffea2204d99"
   stages:
     - stage: path
       stageUuid: "99143c6a-3bcd-832e-a5f0-9ffdb2cedbd3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1d07feca-bfe0-8947-b8e6-70886578bf13"
     - stage: horo
-      stageUuid: "80482081-c05c-870f-a00c-7d6b8f3bfacd"
+      stageUuid: "b7372fc1-fca1-8349-8c7c-e588874e2e43"
     - stage: seal
       stageUuid: "1b8b1363-f8d0-8a91-aefc-426a0fa4e837"
     - stage: uuid
-      stageUuid: "3a09b28a-112f-8456-9f35-db1587b25dd6"
+      stageUuid: "39b26b57-08f1-8437-b00e-601bdc20a428"
 version: 2
 ---
 # mass

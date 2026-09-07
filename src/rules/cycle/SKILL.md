@@ -2,10 +2,10 @@
 name: cycle
 description: "Use when a module reads a binding that does not exist yet — 'Cannot access X before initialization'. Reports the strongly connected components of the runtime import graph: sets of files that can all reach each other, where initialisation order is decided by accident. Type imports are not edges. Run: tsx src/rules/cycle/index.ts"
 atomPath: "rules/cycle"
-coordinate: "rules/cycle · 1/base · feb98860"
-contentUuid: "11883e8c-7012-567d-b536-9fe8a435bf33"
-diamondUuid: "ea4865fa-630e-82fd-96d7-8e2c9e5a7f19"
-uuid: "feb98860-039b-8233-a5dc-6131a487721a"
+coordinate: "rules/cycle · 1/base · c2070b4c"
+contentUuid: "60afd13b-335a-53bc-b931-19028e519074"
+diamondUuid: "94a4b826-0c8c-8131-ad61-3ced9fda162c"
+uuid: "c2070b4c-3aba-8295-a276-24533aafeead"
 horo: 1
 typography:
   partition: rules
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.6.2 modularity"
 bindings: []
 signatures:
-  computationUuid: "d38dffa6-6ba6-8c9f-9fd9-34aa449d1c87"
+  computationUuid: "c8740dce-f87c-8ba0-b0cd-09188036e2ff"
   stages:
     - stage: path
       stageUuid: "c16d54c2-f7ed-88ce-9443-877ba9783871"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5d630872-9cc8-8c1d-b134-177dca279cce"
     - stage: horo
-      stageUuid: "99855eb1-fa4a-8746-b62d-07a896961288"
+      stageUuid: "fe4a47c2-8043-8251-9208-c9c17e338426"
     - stage: seal
       stageUuid: "ecbed9bc-ff8f-83fd-983d-dd7e83ac0533"
     - stage: uuid
-      stageUuid: "4e1ee924-5361-8cf0-a73b-2b5a1a7d71dd"
+      stageUuid: "4a7b8775-23ef-8939-97fd-b4d8c1f46638"
 version: 2
 ---
 # cycle — an import loop is a lie the module graph tells at runtime

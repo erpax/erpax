@@ -2,11 +2,11 @@
 name: verification
 description: "Use when proving a claim by content-uuid — the verifier re-derives the uuid and matches; because the token IS the content's identity, any change requires re-verification by architecture (the ACME DNS-01 pattern)."
 atomPath: verification
-coordinate: "verification · 1/base · 28388fa3"
-contentUuid: "79697e5d-6c56-51f0-b4c7-10a973a6f26f"
-diamondUuid: "f83c2b4d-b481-82e8-a324-72326dfdce9d"
-uuid: "28388fa3-589f-8e01-9e0c-3607ffb1ae45"
-horo: 1
+coordinate: "verification · 8/crest · d24fa2cc"
+contentUuid: "204c9cc9-b215-535d-b303-4977cc8ec6a0"
+diamondUuid: "b15bee3a-1959-8721-830f-bcf79e585765"
+uuid: "d24fa2cc-d231-88a2-89d4-e973a63b63e6"
+horo: 8
 typography:
   partition: verification
   bondDegree: 56
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ce78e638-b54b-838d-afce-9a7f17ed268a"
+  computationUuid: "da150732-4664-8887-b4e1-44934b38a965"
   stages:
     - stage: path
       stageUuid: "54cbf71b-70ec-8cbf-8521-dd7bcfeafc55"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "26c198cb-3c9c-80dd-a27c-4d0fbeb2c5be"
     - stage: horo
-      stageUuid: "96944339-09f3-8e13-9a29-913c4878b23a"
+      stageUuid: "290dd9bd-53bb-806b-8594-e027a5822361"
     - stage: seal
       stageUuid: "c2304e57-11c6-817c-aace-a88bd9e83323"
     - stage: uuid
-      stageUuid: "b464b837-b13c-843a-94c3-ef318f753cc5"
+      stageUuid: "86abb168-ece1-89e7-bb4e-e47269c9a4b7"
 version: 2
 ---
 # verification

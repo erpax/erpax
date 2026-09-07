@@ -2,11 +2,11 @@
 name: openings
 description: "Use when reasoning about openings as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/openings"
-coordinate: "vocabulary/openings · 4/weave · 220c91b9"
-contentUuid: "b83e41f8-1ba6-5dc8-a50b-86aeb732c58b"
-diamondUuid: "84e3c429-7e6b-8883-ba67-2dfb986c8482"
-uuid: "220c91b9-fc78-8d13-b009-b7df5e7b1d75"
-horo: 4
+coordinate: "vocabulary/openings · 2/share · f3dc1e69"
+contentUuid: "db67d940-33e6-5f9b-9706-aa2e3bb0044c"
+diamondUuid: "2d086521-7606-8498-9819-024d430325ee"
+uuid: "f3dc1e69-c39d-87b9-b97e-3405d1198a4f"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "93972a63-d208-8ace-8be9-5810ed44a71b"
+  computationUuid: "a6586781-24ee-8050-962c-24d37f1d53f2"
   stages:
     - stage: path
       stageUuid: "19f3be0f-9b8d-8a21-bdba-b0742915bec5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9f697fa8-ff60-876d-9b2f-6f698c0bcf10"
     - stage: horo
-      stageUuid: "5c135e22-6966-8b3d-bfcf-8c06b2971c8c"
+      stageUuid: "3d5bfc30-6bb3-8982-85ce-60e546d86e41"
     - stage: seal
       stageUuid: "c6181b4c-14c2-8204-8767-93188616665d"
     - stage: uuid
-      stageUuid: "eb4fc16c-cbb4-8fb4-9973-07bddffc82d5"
+      stageUuid: "919b4eb2-43dc-8f65-aa51-85959a25c80c"
 version: 2
 ---
 # openings

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seasons",
-    "uuid": "75c15a38-ceb8-8e9d-b4a2-befdddca0232",
+    "uuid": "bd40e2e4-845a-83db-b29b-14ef0cd65a38",
     "words": [
       "seasons"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about seasons — A season in a media series.",
-    "uuid": "61506a41-00cb-8992-9def-30079e0a5ad3",
+    "uuid": "7ac696e7-cc20-8f53-b08c-fb9d38c948e2",
     "words": [
       "use",
       "when",

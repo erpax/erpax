@@ -2,11 +2,11 @@
 name: label
 description: "Use when reasoning about label as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/label"
-coordinate: "vocabulary/label · 1/base · d5075e25"
-contentUuid: "a2573a17-633c-51c2-8c8b-a912b33552f1"
-diamondUuid: "1b4c13e7-9bac-8fbc-8211-785e35fe4798"
-uuid: "d5075e25-4970-8610-963f-99260ef708a5"
-horo: 1
+coordinate: "vocabulary/label · 5/round · bb41da6e"
+contentUuid: "c4921be1-be61-5f76-983b-4ea4fe6404f5"
+diamondUuid: "cf9f3fa5-1e7e-829c-b7d7-fe9a3d4851db"
+uuid: "bb41da6e-e325-8d05-865a-1cb5921ab93d"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 59
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2bd56163-ea8a-8484-b439-ebaca0fb71c1"
+  computationUuid: "584d7ac9-bdb1-8185-8f10-5bd4362051ae"
   stages:
     - stage: path
       stageUuid: "75aa0f0e-f75c-8063-a96e-a4347fb61c5d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5a192b27-f4f8-8e01-ba05-3d1981c2a7f4"
     - stage: horo
-      stageUuid: "421341fd-054c-81e3-9fa1-8ca9880a4ae2"
+      stageUuid: "f37672b6-1a4a-8902-b4a1-3c4f07f8af29"
     - stage: seal
       stageUuid: "192bc36a-2f66-8956-9c5c-c6cfff5fa32f"
     - stage: uuid
-      stageUuid: "3d19c796-449a-8265-83c9-d3138470310f"
+      stageUuid: "69324261-bc38-891e-960f-85e73cc756b2"
 version: 2
 ---
 # label

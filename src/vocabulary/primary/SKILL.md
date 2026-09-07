@@ -2,11 +2,11 @@
 name: primary
 description: "Use when reasoning about primary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/primary"
-coordinate: "vocabulary/primary · 4/weave · 1fd9ea9d"
-contentUuid: "665704e6-b7b8-57fa-89dc-2d90621cd394"
-diamondUuid: "973855bb-ca58-8102-b523-0f592f070cc9"
-uuid: "1fd9ea9d-e907-8a36-858d-1c956e9cc761"
-horo: 4
+coordinate: "vocabulary/primary · 7/descent · 8c83f6b7"
+contentUuid: "3abdd34e-68aa-5ff1-a7d8-871ad110fa41"
+diamondUuid: "9a3f2b8f-9275-8534-ad43-d32135ae9392"
+uuid: "8c83f6b7-6c5c-8760-b8e4-f9be9dc44f02"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2ab95373-42e7-81a6-870b-cbd5df0ea974"
+  computationUuid: "36d94fbd-33a2-8f3e-8a8b-2f4dc63cd0b6"
   stages:
     - stage: path
       stageUuid: "779117c5-afc0-88f8-82c1-e8ceecb7f00e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1358f94a-1d29-8342-9074-272761800996"
     - stage: horo
-      stageUuid: "64e990ec-44f2-8182-849e-da865261ad9f"
+      stageUuid: "1dc9bafc-594f-84dc-a5b1-3dd5a7719137"
     - stage: seal
       stageUuid: "37b3a1bd-f7ac-8e99-81e4-a6e93b194158"
     - stage: uuid
-      stageUuid: "d40f7d9e-f695-876e-ad36-895661a7023b"
+      stageUuid: "6d74c75a-100c-8551-87a2-8b07e1fe5dfc"
 version: 2
 ---
 # primary

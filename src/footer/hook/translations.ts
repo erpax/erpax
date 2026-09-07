@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hook",
-    "uuid": "21b31c7b-6e17-8aa5-9afe-4ace63554ea3",
+    "uuid": "1590a6f5-0082-85c8-8199-5bf358df4abc",
     "words": [
       "hook"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale.",
-    "uuid": "8fbe083b-ba90-8b0e-9e40-46c70fd0b42d",
+    "uuid": "9fa3b117-6d58-8639-9ece-a3ae3c8a1ed4",
     "words": [
       "use",
       "when",

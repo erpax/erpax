@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pruning",
-    "uuid": "3a357f5a-4caa-8152-b464-a5d827c47d4e",
+    "uuid": "8a8a556d-8dfc-8fb2-b8ee-691055e8aed0",
     "words": [
       "pruning"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when plant parts are removed to steer growth, airflow, and fruiting — pruning and suckering (pinching axillary shoots) concentrate the plant's energy into marketable fruit, open the canopy to reduce disease, and shape it to the trellis. Removing growth to improve what remains; the quality/airflow lever on indeterminate fruiting crops.",
-    "uuid": "7004ac93-e6fa-87ac-826c-4417aa7b4ce0",
+    "uuid": "534f884c-edf4-8fa3-811f-61b02764a377",
     "words": [
       "use",
       "when",

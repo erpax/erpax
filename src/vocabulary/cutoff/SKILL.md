@@ -2,11 +2,11 @@
 name: cutoff
 description: "Use when reasoning about cutoff as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cutoff"
-coordinate: "vocabulary/cutoff · 1/base · bf4c63de"
-contentUuid: "8a6ffb8c-3b0d-5129-ae5f-0e5fd1e66b4e"
-diamondUuid: "db18d070-4908-8bc0-b93c-80a9099091ec"
-uuid: "bf4c63de-1c26-8021-a1f4-c0f14eab8787"
-horo: 1
+coordinate: "vocabulary/cutoff · 8/crest · a95b1caa"
+contentUuid: "b96fc808-5ab8-514c-aba3-2c3c9978fdde"
+diamondUuid: "75b776e9-110c-8978-a0e2-1c2c2cebceff"
+uuid: "a95b1caa-15d0-8d79-b4ee-4d454551ebd9"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5ed0b0ee-6abb-8592-a0db-1f1878ffd382"
+  computationUuid: "be9f110d-28a4-8dd3-b2b5-3ff4523067bc"
   stages:
     - stage: path
       stageUuid: "d7e2e918-3854-875c-9620-6a146cd8ea8f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ec2e210c-802e-89c2-af86-26511e91aa09"
     - stage: horo
-      stageUuid: "b1276c2b-b393-8e07-9e0b-b5fec4adadde"
+      stageUuid: "56bff186-0859-81bc-be53-d0c3fa94caf3"
     - stage: seal
       stageUuid: "8b18e17a-cd38-8e24-b1c4-c22222f1a9dd"
     - stage: uuid
-      stageUuid: "1183f250-af90-8b63-a9c3-4cb6a469f942"
+      stageUuid: "54e8dae1-7692-8c02-9587-cfc11ab4b553"
 version: 2
 ---
 # cutoff

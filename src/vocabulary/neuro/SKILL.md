@@ -2,11 +2,11 @@
 name: neuro
 description: "Use when reasoning about neuro as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/neuro"
-coordinate: "vocabulary/neuro · 1/base · 6f296521"
-contentUuid: "5afb0217-8930-53f8-8901-43683968ac3b"
-diamondUuid: "7c347799-a498-87de-ac8e-9da959836462"
-uuid: "6f296521-e6e5-8933-9700-b493dbf3a87d"
-horo: 1
+coordinate: "vocabulary/neuro · 2/share · 1a1dc380"
+contentUuid: "b6cc1f17-b66d-5415-b936-ffba4027198b"
+diamondUuid: "52783472-1f31-8447-9c23-7efb3e1c7d81"
+uuid: "1a1dc380-928d-8b2a-a81d-e5912a53e6bf"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b83c6f0c-a4ef-875d-9685-f74f096f4361"
+  computationUuid: "793633cb-84a6-8861-a2f1-77261c160d95"
   stages:
     - stage: path
       stageUuid: "7ad44ae0-48c9-8829-a953-c28a5d227e93"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5e86d71c-cd1f-8969-941d-340bc201c543"
     - stage: horo
-      stageUuid: "7e886fdb-bce0-89f7-bcac-5beee5cc518e"
+      stageUuid: "0f025f90-f8a0-88a1-8463-2341b706139f"
     - stage: seal
       stageUuid: "a9ab7681-d8e7-8ddc-80bc-2c32aaca9ffd"
     - stage: uuid
-      stageUuid: "b2834a92-629f-8c53-9ace-d910fa62f58f"
+      stageUuid: "5e2e6a6c-13bd-8895-9935-958e657bfe65"
 version: 2
 ---
 # neuro

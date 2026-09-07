@@ -2,10 +2,10 @@
 name: profane
 description: "Use when naming what fails the audit — the lie, the manipulated/tampered datum, the forged record, the unbalanced ledger, the unsourced claim, the dead link. The set of all falsehood-forms; dual of sacred; each named form a detector skill (infinite)."
 atomPath: "vocabulary/profane"
-coordinate: "vocabulary/profane · 4/weave · 615aa8d3"
-contentUuid: "83783d37-e24c-5bb6-aa52-bdb174a2328a"
-diamondUuid: "df9a195e-7120-8e2e-8d23-66c7a450129f"
-uuid: "615aa8d3-3e73-8445-8427-beb2d1c5b55c"
+coordinate: "vocabulary/profane · 4/weave · d4ce2b96"
+contentUuid: "f5244243-30f9-5816-9e60-eb3a9374c65b"
+diamondUuid: "724ef3fd-e901-8959-8a4f-5334076e050d"
+uuid: "d4ce2b96-520a-898f-be6e-b6bba39a674e"
 horo: 4
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "74100dac-4b1d-89da-8439-1d3d0932adca"
+  computationUuid: "a724ce2f-2769-806e-b6bc-989dbf502dbe"
   stages:
     - stage: path
       stageUuid: "4fc9c0d8-af4d-8b31-aa6f-a84ab3aca562"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "373f50ee-2d62-8818-a13a-509432483fea"
     - stage: horo
-      stageUuid: "747a8bbc-23fa-8d2b-abb5-8b08d097769f"
+      stageUuid: "b61507dd-4062-8c46-90b9-9989f0ebfd60"
     - stage: seal
       stageUuid: "2051f583-7e15-8bab-93b3-ffd6d437d903"
     - stage: uuid
-      stageUuid: "a9db0236-9e1e-8dd4-9974-e5b8ac912769"
+      stageUuid: "320a0163-9eb2-8d90-b2f5-eb0fe9fd21c6"
 version: 2
 ---
 # profane — the false (what the audit names)

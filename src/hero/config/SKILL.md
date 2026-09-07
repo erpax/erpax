@@ -2,11 +2,11 @@
 name: config
 description: "Use when reasoning about config — The Payload field configuration for a page hero: , , , ."
 atomPath: "hero/config"
-coordinate: "hero/config · 3/3 · a1db966e"
-contentUuid: "4a95bec1-7c95-5c76-94b8-8cb68abb018a"
-diamondUuid: "32f524a7-0a46-8b25-96e3-487c4f0f3143"
-uuid: "a1db966e-4eb4-8827-8422-2f712c394752"
-horo: 3
+coordinate: "hero/config · 6/6 · 0557af74"
+contentUuid: "2f709458-e110-53fe-ae39-1876956144f8"
+diamondUuid: "8edddb4a-01a8-8bc0-a11b-44d615b805cb"
+uuid: "0557af74-c9f7-8508-84ad-23ed5eae7760"
+horo: 6
 typography:
   partition: hero
   bondDegree: 171
@@ -19,7 +19,7 @@ standards:
   - schema.org WebPageElement
 bindings: []
 signatures:
-  computationUuid: "9681dcde-2b61-8232-afb2-f1f87e17977c"
+  computationUuid: "57cc6f8f-b4ec-84d0-af55-d3fa8a355603"
   stages:
     - stage: path
       stageUuid: "5f0415da-fd92-849a-90a9-cde6ad6baf84"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "3aac8b1b-021a-8f11-9dfc-d98678a20f19"
     - stage: horo
-      stageUuid: "813fe9ff-d1e3-8920-8f3e-148bb1b58a88"
+      stageUuid: "fe6a1446-f503-8ab4-8438-e9c3a54e0dc8"
     - stage: seal
       stageUuid: "48a7e885-d588-8db1-89be-31aab26b78e4"
     - stage: uuid
-      stageUuid: "15a42c20-6396-8c13-8d42-98440c14859a"
+      stageUuid: "197b1b5b-7fd6-8efe-adb5-b64060fbd4aa"
 version: 2
 ---
 # hero/config — four hero types, and `none` is one of them

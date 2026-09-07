@@ -2,10 +2,10 @@
 name: likes
 description: "Use when reasoning about likes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/likes"
-coordinate: "vocabulary/likes · 4/weave · 82e3461b"
-contentUuid: "8c6fa9b4-79f8-513f-beba-8fb76a0a530a"
-diamondUuid: "b5165b0c-65b7-87a7-a41f-5a4c5d62df0f"
-uuid: "82e3461b-dab0-86bc-8a2c-6c0164cec8b1"
+coordinate: "vocabulary/likes · 4/weave · 7de1280e"
+contentUuid: "af0b12dc-6981-5b79-8229-b51adb4aef12"
+diamondUuid: "ac783a6e-ed0c-806b-89f9-8b0ee0f51e78"
+uuid: "7de1280e-f418-8073-8a9f-ec892e35dd47"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d9bb9609-ea66-8f27-9cac-feffb4406ebb"
+  computationUuid: "687ad5e7-07ff-8cc3-a09d-e52b2648c87a"
   stages:
     - stage: path
       stageUuid: "317ae0cf-e16c-8c40-b013-c88db80ec2bb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7b92fac0-7c39-81ab-98fe-0fe34d28f9a5"
     - stage: horo
-      stageUuid: "a387c308-fd9b-8051-aa5f-84cddd54af09"
+      stageUuid: "e9caa69a-2d4b-8076-b8f0-412d18cc2b73"
     - stage: seal
       stageUuid: "32d1be04-bcfe-8502-bc28-74af61fc626b"
     - stage: uuid
-      stageUuid: "d8709180-984b-8979-b332-5cffbeb78815"
+      stageUuid: "634f3428-6c9a-8571-83fa-be36674aff0d"
 version: 2
 ---
 # likes

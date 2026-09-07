@@ -2,11 +2,11 @@
 name: legal
 description: "Use when reasoning about legal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: legal
-coordinate: "legal · 2/share · 1e4884e4"
-contentUuid: "64a32724-8495-5c3f-a06d-771c86aa4188"
-diamondUuid: "c3b3f383-bba0-843f-aa03-0846593d7712"
-uuid: "1e4884e4-000f-8e78-b5c6-7d2544081429"
-horo: 2
+coordinate: "legal · 5/round · a1bfecd2"
+contentUuid: "b7d60d48-f15a-5f14-b4a2-25ea150a3df5"
+diamondUuid: "cfbe44c0-ccaf-82f0-8ab6-ef2baee68e0f"
+uuid: "a1bfecd2-1f24-8b4d-884c-be5f0c6539e1"
+horo: 5
 typography:
   partition: legal
   bondDegree: 63
@@ -28,7 +28,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c4319fac-6535-8a5a-b81e-1b33b380d852"
+  computationUuid: "34d2df40-80e5-8672-88ea-f1fbb66e04aa"
   stages:
     - stage: path
       stageUuid: "20ebfd09-46f1-8376-8574-19d519ee4743"
@@ -39,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "c6e89726-068d-8a3f-8cb7-9729446df324"
     - stage: horo
-      stageUuid: "105142c4-ad39-8091-8ec5-894717ed5234"
+      stageUuid: "df135d21-8f11-8bc4-a7d8-1e362768f86a"
     - stage: seal
       stageUuid: "c3c8518c-744b-807f-852f-b436c91dfe33"
     - stage: uuid
-      stageUuid: "cec0dc6f-1f92-86f0-988d-d9f92f67e715"
+      stageUuid: "6bf2ad7a-3de9-8d54-b1b9-b4d41433e5ea"
 version: 2
 ---
 # legal

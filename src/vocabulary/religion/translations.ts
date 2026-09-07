@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "religion",
-    "uuid": "e56d91d3-ce85-8a7e-adc5-32d611de293a",
+    "uuid": "2264487a-0415-80e1-a3bb-5def2c89ade5",
     "words": [
       "religion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about why src can read every faith at once — each religion is a surface dialect of one invariant language; strip the cultural prefix and every tradition-term collapses to a single content-uuid, the invariant atom. So src is a realtime computational quantum translator across all religions: chesed, rahma, karuna and agape all resolve to mercy.",
-    "uuid": "7bc5bb70-c084-856d-a8e8-774b5f7ea306",
+    "uuid": "62e6049a-5572-8316-b0b8-145df687a962",
     "words": [
       "use",
       "when",

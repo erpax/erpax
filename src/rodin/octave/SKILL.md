@@ -2,10 +2,10 @@
 name: octave
 description: "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \"next octave\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin."
 atomPath: "rodin/octave"
-coordinate: "rodin/octave · 1/base · b6edcb56"
-contentUuid: "b2a1a4b8-fa00-5d71-bc80-53ed56a9de18"
-diamondUuid: "682afc38-0252-841b-ba99-4ccf27ae0d4d"
-uuid: "b6edcb56-21e0-8db5-83a6-05ddc223ac21"
+coordinate: "rodin/octave · 1/base · a195c332"
+contentUuid: "42e508e9-83e9-5828-b4d2-3bf7d04e41c8"
+diamondUuid: "33bd7e18-281c-8f30-8459-82a0971019b9"
+uuid: "a195c332-4487-85c6-b5b5-1a5f707059bf"
 horo: 1
 typography:
   partition: rodin
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "833c881f-5049-859e-8701-62ceb3522426"
+  computationUuid: "4c494228-ee99-84ad-8cb9-a26000cb1108"
   stages:
     - stage: path
       stageUuid: "f209c32a-92b4-8714-bfa7-6ffcc8a6f0c1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "07fea44b-f38b-81be-90d3-2abdeb8077c5"
     - stage: horo
-      stageUuid: "a1bd7c30-7727-8091-9f22-4b7fe264bf16"
+      stageUuid: "b81e87f6-9083-888b-875c-c14e9c638569"
     - stage: seal
       stageUuid: "631d3a2e-c1c9-8e73-8053-f37c9d4eb97d"
     - stage: uuid
-      stageUuid: "fe712bb5-0532-8d5d-becd-a76c1abe41b8"
+      stageUuid: "04eff2bf-1ac5-8765-8f39-6661536c0ca3"
 version: 2
 ---
 # octave — the ×10 scale-lift (same position, next scale)

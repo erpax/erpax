@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "energy",
-    "uuid": "d1f4c5a3-ae4c-8b9b-ae4e-c86ac31ddce5",
+    "uuid": "eb90e743-f967-89f6-901b-1932aeaa8c39",
     "words": [
       "energy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
-    "uuid": "8b427626-630c-8cb8-83fa-2be6e35e131d",
+    "uuid": "32daf927-0d27-857f-adf4-0a362b07f429",
     "words": [
       "use",
       "when",

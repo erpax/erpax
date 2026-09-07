@@ -2,18 +2,18 @@
 name: redirects
 description: "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \"not assignable to CollectionSlug\" (the plugin isn't registered)."
 atomPath: "vocabulary/redirects"
-coordinate: "vocabulary/redirects · 1/base · 38d85efb"
-contentUuid: "192fc020-69ae-53f1-82ab-7aafc93ca81b"
-diamondUuid: "70464266-e94a-8b75-9233-1361bcb36edf"
-uuid: "38d85efb-c0a1-8960-94c3-08e0b5c004fb"
-horo: 1
+coordinate: "vocabulary/redirects · 2/share · 4943dcf8"
+contentUuid: "76d237e4-2b29-56bc-8137-70cd279a60d1"
+diamondUuid: "12f8cd99-4b19-8afd-a68c-5ab217bd9f15"
+uuid: "4943dcf8-5365-885f-91e5-ab396073150a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 26
 standards: []
 bindings: []
 signatures:
-  computationUuid: "67ec6bbd-7ca2-8673-912c-b144bfee8ce5"
+  computationUuid: "52342876-99b0-820f-a3bf-c78b3e9f76ba"
   stages:
     - stage: path
       stageUuid: "09dff122-1b3e-8a44-8ca0-5926ea8b5edb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7bd96612-10ca-8583-986d-17d1356696c3"
     - stage: horo
-      stageUuid: "d3cb13ad-537d-8593-b603-aeaed33a28ba"
+      stageUuid: "3c79d544-abee-84f3-8a77-60f8699fd4e0"
     - stage: seal
       stageUuid: "0a573e6d-fa8f-8aae-b5dd-942754df3206"
     - stage: uuid
-      stageUuid: "361d3fbd-f49b-81d7-bba3-eea8f8462932"
+      stageUuid: "fc4c07c6-d02a-8237-b7c6-ca88a9e4f4f7"
 version: 2
 ---
 # redirects — URL moved-permanently/found (RFC 9110 §15.4), an official plugin

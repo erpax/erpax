@@ -2,11 +2,11 @@
 name: repetitions
 description: Use when reasoning about repetitions — Number of times one should repeat the activity.
 atomPath: "vocabulary/repetitions"
-coordinate: "vocabulary/repetitions · 5/round · de01a532"
-contentUuid: "4c293257-fb9a-5206-a5ea-c219dbd9d306"
-diamondUuid: "60db30a7-4d8d-8174-8530-e19ccc7caa9a"
-uuid: "de01a532-0fee-80ff-84cc-31df200927c7"
-horo: 5
+coordinate: "vocabulary/repetitions · 7/descent · 36e4103d"
+contentUuid: "6f459f75-839d-5a14-afa5-89aaf365fa43"
+diamondUuid: "bc1c5a3d-8072-8183-b48a-61780267033d"
+uuid: "36e4103d-5e8c-87ca-9b22-2a267e09b012"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d507c96b-b357-8a69-9ca9-07a59559adb8"
+  computationUuid: "0fcf0785-47bf-86d8-a074-d5129a030ab3"
   stages:
     - stage: path
       stageUuid: "1935c3db-9805-8803-8623-6cad39c59092"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b66cfd2-212d-8e17-8e8b-46e9c3b5ac3b"
     - stage: horo
-      stageUuid: "18bfe15b-626c-8824-b232-7b25299e2f4b"
+      stageUuid: "bc9031b4-6d4e-8203-a2d0-474bfb2c8921"
     - stage: seal
       stageUuid: "fe4f2b8c-a8dd-8afc-a254-f36b44f38a5b"
     - stage: uuid
-      stageUuid: "70eb237a-4a76-8671-a88b-c83951fc6978"
+      stageUuid: "b35d18e3-6783-8baf-9707-0df8a1be7c95"
 version: 2
 ---
 # repetitions

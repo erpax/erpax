@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "movement",
-    "uuid": "73b9eef1-600a-8f7d-bf66-c8b570335b90",
+    "uuid": "7432f668-77b5-8046-98ee-9470ca574c89",
     "words": [
       "movement"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one movement — the singular model of the movements collection (the plural store); a recorded transfer of stock or value between locations.",
-    "uuid": "58722e96-0ce4-81b4-a4ea-d496d2ef0952",
+    "uuid": "74eb89ab-4da6-89fd-ab66-c77389e14c9a",
     "words": [
       "use",
       "when",

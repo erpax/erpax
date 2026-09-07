@@ -2,18 +2,18 @@
 name: interview
 description: "Use when conducting or documenting a recorded conversation for research, hiring, or feedback — structured interviews, recorded sessions, interview notes, transcripts, insights extracted."
 atomPath: "vocabulary/interview"
-coordinate: "vocabulary/interview · 7/descent · c169e46a"
-contentUuid: "92214ba6-03e2-5ddf-9e8a-9d002a8a2490"
-diamondUuid: "97897992-fc45-88e0-b93a-7ec33d2442c7"
-uuid: "c169e46a-16bb-8d43-8188-5d9d2442de24"
-horo: 7
+coordinate: "vocabulary/interview · 8/crest · d2919244"
+contentUuid: "0b56ae33-9c53-519a-8e54-0806ef2df1c2"
+diamondUuid: "256c54fe-67aa-8478-8432-6a3ee6e9f556"
+uuid: "d2919244-7596-8bf0-b8c6-ade0ae117472"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "53d23ef3-622c-8181-bdb5-a0e44d964f8f"
+  computationUuid: "8d17b088-8b81-8e8a-abad-769d8db52c3c"
   stages:
     - stage: path
       stageUuid: "55ab7ba8-47a9-8d7c-b575-15a9083ac546"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "96f10876-d032-8a1a-8663-e050a41e2e83"
     - stage: horo
-      stageUuid: "69786b96-9505-8121-bcf8-91bce0733966"
+      stageUuid: "bbbd0fa8-4f86-81df-80d1-f201b7b405df"
     - stage: seal
       stageUuid: "6ff3c745-541c-8e2f-9321-47196fba8489"
     - stage: uuid
-      stageUuid: "0f268e11-4604-870f-adfc-25d6e1aa6a0f"
+      stageUuid: "7a4b070e-8868-8f4b-86e8-fb0238f01128"
 version: 2
 ---
 # interview

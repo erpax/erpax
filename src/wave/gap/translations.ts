@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gap",
-    "uuid": "87ce20f0-f8c6-869b-ae25-2f5f50661d8f",
+    "uuid": "cf4f303b-0e0d-808e-9e26-aa9964214bc8",
     "words": [
       "gap"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when turning the corpus's own structural debt into runnable waves — dead references, stray .ts and unraised kinds grouped by the CLASS they share and ordered biggest-first, so one fix pattern covers a wave. Feeds chat at tokens=0 via wave/feed. Run: tsx src/wave/gap/index.ts",
-    "uuid": "33049cb9-2ad6-8167-b594-1478786666e3",
+    "uuid": "397b9f9b-3d68-8386-a1d5-c49a411ad18c",
     "words": [
       "use",
       "when",

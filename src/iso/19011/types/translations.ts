@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "913f3882-f9d9-8892-beee-e2419988bc26",
+    "uuid": "0422d299-7afe-83f1-be26-ffc75d831a69",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence).",
-    "uuid": "ad4171a8-7da6-839b-bc15-a8044e03242f",
+    "uuid": "12299cdc-ec6c-86d4-990c-0840af1bca97",
     "words": [
       "use",
       "when",

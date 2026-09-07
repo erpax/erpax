@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "executable",
-    "uuid": "3153b537-b57c-8806-a28c-752fcd068e8d",
+    "uuid": "b1fc8343-0592-8755-894e-b9e3d822a2e3",
     "words": [
       "executable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about executable — A schema.org component word, collided out of schema.org compounds — fused from executableLibraryName (sti · collapse · merge).",
-    "uuid": "bcd0e52c-ca17-88a4-a3c5-b06b528c2a74",
+    "uuid": "be92aa97-5162-8293-b8a6-2dcab8b2ef58",
     "words": [
       "use",
       "when",

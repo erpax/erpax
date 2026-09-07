@@ -2,11 +2,11 @@
 name: research
 description: "Use when deep-researching global banking through chat waves at no cost — sealed ISO 20022 · IBAN/BIC · SEPA · PSD2 · SWIFT · AML · reconciliation corpus; emit develop waves for related atoms (pain.002 · camt.054 · leftovers). Uses quantum/ftl; is not the FTL core."
 atomPath: "bank/research"
-coordinate: "bank/research · 5/round · 25f29c8e"
-contentUuid: "bbcf1cd6-66ab-5811-a5fb-69d3b6560ff8"
-diamondUuid: "b7a6757b-ea70-8900-ba1b-4a72fdf6c961"
-uuid: "25f29c8e-bfa4-8db3-8d98-a4ac68288957"
-horo: 5
+coordinate: "bank/research · 7/descent · cdcb6e7e"
+contentUuid: "3e218fd8-9e21-5449-b7c7-d258497b6b99"
+diamondUuid: "997c0457-eba4-89c4-9a40-f6604f2e8af0"
+uuid: "cdcb6e7e-afdb-887f-b198-9b73a31626fb"
+horo: 7
 typography:
   partition: bank
   bondDegree: 160
@@ -21,7 +21,7 @@ standards:
   - SEPA
 bindings: []
 signatures:
-  computationUuid: "365fee3a-a955-8145-b659-e8832a7a215d"
+  computationUuid: "fed86456-bae4-8e0a-af1b-edfe845de763"
   stages:
     - stage: path
       stageUuid: "96b201df-bf47-8c52-8962-21d10862c4da"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "1a1380e9-1578-8479-a969-27e3759e45e3"
     - stage: horo
-      stageUuid: "df440ac4-28e6-8cb2-8668-5e671ad283ef"
+      stageUuid: "9695be14-baed-8acd-bf8e-f42b41eb4a69"
     - stage: seal
       stageUuid: "cd3f0007-17e5-8350-a6e2-0f42aba1222c"
     - stage: uuid
-      stageUuid: "18ceecce-45f7-8e81-9b9f-fcb77c621745"
+      stageUuid: "9fdb603f-b231-8032-b76b-44a00cd83961"
 version: 2
 ---
 # bank/research — global banking chat waves

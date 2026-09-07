@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "receipt",
-    "uuid": "9a4ff4d5-fe8c-8cfd-9d6c-b8a74ea59327",
+    "uuid": "8fe0e713-5a37-8b58-bb4f-24ca977e12b1",
     "words": [
       "receipt"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an agent must publish its own error record — the ledger every atom carries except the thing that writes them. Computes honesty (claims that held / claims made), efficiency (delivered / delivered+rework), self-caught defects, and lapses repeated after acknowledgement; withoutCorpus gives the counterfactual (what ships when the gates are stripped), trainingRules turns each correction into an imperative naming the instrument that already existed, and compareAgents refuses to call one row a comparison. Harness is tracked apart from model, and any harness can emit a receipt — the shape is plain data.",
-    "uuid": "6c6f1676-5b90-8a0e-9ac9-d0b1f3d2a6b0",
+    "uuid": "8d1f9580-a8b3-8a27-9116-ac3a0674c9e6",
     "words": [
       "use",
       "when",

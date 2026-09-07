@@ -2,11 +2,11 @@
 name: surface
 description: "Use when declaring or auditing the whole cryptographic surface an atom exposes — the judgment guard that makes a silently omitted surface fail the build: every reachable surface (root-signing · channel-keying · storage-at-rest · re-exchange) must be registered sealed (naming the standard AND the test) or open (naming the gap AND the owner), a channel sealed without FIPS 203 ML-KEM is channel-unsealed because harvest-now-decrypt-later reads the transport not the root, and a root sealed by anything but FIPS 205 SLH-DSA or FIPS 204 ML-DSA is root-unsealed because Shor breaks a classical root outright."
 atomPath: "anchor/surface"
-coordinate: "anchor/surface · 2/share · c052857d"
-contentUuid: "b05d07d9-f57f-5523-9dc6-319bfad2bf6a"
-diamondUuid: "4ed2d144-48e9-88d5-b448-b1d60d775173"
-uuid: "c052857d-2383-8479-9914-83eee2c9128b"
-horo: 2
+coordinate: "anchor/surface · 1/base · 1d0da1f1"
+contentUuid: "295ea657-77be-5a4d-ad8e-599fa7deaf9c"
+diamondUuid: "7ebd7f0a-ab06-8ee5-96fa-371eca5cdb5c"
+uuid: "1d0da1f1-1bef-8c54-96e8-2697a642f4a1"
+horo: 1
 typography:
   partition: anchor
   bondDegree: 20
@@ -16,7 +16,7 @@ standards:
   - "FIPS 205 (SLH-DSA) — hash-based signature; the primary root, no new assumption"
 bindings: []
 signatures:
-  computationUuid: "1c4fba24-3524-8e22-8eb6-b7d24e462cb5"
+  computationUuid: "5379756c-2f64-8d75-ad6d-d0db0f4baa17"
   stages:
     - stage: path
       stageUuid: "7445b50e-7694-8eac-8c5e-8b0c465ea9b9"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9b106329-658c-8365-a69b-067ef1bd9a3e"
     - stage: horo
-      stageUuid: "5ebcdcae-7d69-8273-abf2-a37ce4b74c03"
+      stageUuid: "d7493da6-1658-800c-9828-cf692da897b1"
     - stage: seal
       stageUuid: "1c3458f6-d0c0-8582-a603-8d5d13a63045"
     - stage: uuid
-      stageUuid: "6c4fe671-4c40-83e0-b153-cd2b2ada4dd5"
+      stageUuid: "e96e0356-1adb-8ebc-8ca0-cbd6d9abdf7c"
 version: 2
 ---
 # anchor/surface — a surface you did not declare is a surface you dismissed

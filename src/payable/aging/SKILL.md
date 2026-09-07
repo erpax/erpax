@@ -2,11 +2,11 @@
 name: aging
 description: "Use when reasoning about aging — Wraps party/aging with A/P-shaped output — , — and adds the cash-flow-impact section the payables side needs and the receivables side does not."
 atomPath: "payable/aging"
-coordinate: "payable/aging · 2/share · 0a76f83e"
-contentUuid: "09589b1b-e806-5510-9429-8758dae3dcc6"
-diamondUuid: "4358747c-4309-8837-8513-bc3fee068cc1"
-uuid: "0a76f83e-bb74-88b5-93c1-3be203ab4654"
-horo: 2
+coordinate: "payable/aging · 5/round · 9cd63558"
+contentUuid: "1a56519f-c83c-5abb-a3ff-b694c4ac83ff"
+diamondUuid: "8b3436ce-1b36-8cb9-a91a-f44a772a38c6"
+uuid: "9cd63558-8fd7-8259-ab7a-06be40febb11"
+horo: 5
 typography:
   partition: payable
   bondDegree: 17
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-405 liabilities"
 bindings: []
 signatures:
-  computationUuid: "6e16d681-2118-8972-a6a0-b0fba1eba8a6"
+  computationUuid: "e981812a-5412-8605-b928-028be6f3ff90"
   stages:
     - stage: path
       stageUuid: "e99a97ce-378c-8250-bc94-07914d529fe6"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "da40b52d-5e23-82ee-a10f-b6d64abceeab"
     - stage: horo
-      stageUuid: "8ac7cbd4-32a1-8926-8ea5-6ea7bb602ce7"
+      stageUuid: "f9d796f3-c168-85d2-99d0-ea0d80bc79c3"
     - stage: seal
       stageUuid: "9375f13c-b633-830e-b0d9-6a6cc9483672"
     - stage: uuid
-      stageUuid: "4b9bf90f-a4ce-8bb7-913a-090cd0c2c063"
+      stageUuid: "b88d29a4-9e7c-8cb6-84f6-9fdbc2d554dc"
 version: 2
 ---
 # payable/aging — the A/P side of one bucket calculation

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "technique",
-    "uuid": "5915ff95-987c-8f8e-ae33-43c4b32d0ad7",
+    "uuid": "55ec22ce-862f-801d-9919-b8bb3efacdf6",
     "words": [
       "technique"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about technique as a medical facet of medical — vocabulary pivot to @/technique; nested not duplicated.",
-    "uuid": "5328a8c2-926d-82f4-8c32-d0019e4d6845",
+    "uuid": "e10c7682-3fce-8ea3-8a51-1f9784df4a75",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "e",
-    "uuid": "6bc80c14-ee05-8685-9f0a-7fafeac00492",
+    "uuid": "3bc2a895-31ef-854b-b8cc-8ad931b0881f",
     "words": [
       "e"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when e must be read as the growth constant that is its own driver — d/dx eˣ = eˣ, the function whose rate of change equals its state at every point. Completes the self-referential trio: pi unfolds a finite seed to an infinite tail, phi is the fixed point of the fold, e is the fixed point of change. Computed never stored: the series Σ 1/k! and continuous compounding (1+1/n)ⁿ both converge to it from a finite seed.",
-    "uuid": "76ba825b-6214-83b9-b701-1a410c0c9d18",
+    "uuid": "447519ea-a75a-83ca-b35f-8fe785276958",
     "words": [
       "use",
       "when",

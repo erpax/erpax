@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "resources",
-    "uuid": "caedd0a7-a2b9-87cd-a151-feea202c7275",
+    "uuid": "cd827fa3-2351-84b6-affd-246e81897cb0",
     "words": [
       "resources"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings.",
-    "uuid": "541670e6-439b-80f0-9ad3-1e67d8734a11",
+    "uuid": "094eef33-c852-8f01-bd78-154bf73096ab",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: "359"
 description: "Use when implementing or referencing NIST INCITS 359 — Role-Based Access Control."
 atomPath: "nist/incits/359"
-coordinate: "nist/incits/359 · 4/weave · cf54c1e7"
-contentUuid: "73db9ee1-ddec-5e7d-a8a5-15a09731a97e"
-diamondUuid: "7b91ae2d-2ee6-8ab0-8ca1-d5d97d46901a"
-uuid: "cf54c1e7-0195-825e-96f3-bae2fa734526"
-horo: 4
+coordinate: "nist/incits/359 · 2/share · 58a3ed72"
+contentUuid: "d03800fe-8448-580c-9160-7db66172daa6"
+diamondUuid: "e6c47a13-c661-854b-b32e-f1b07c7bbd46"
+uuid: "58a3ed72-ad3c-82e1-9e45-ce00d8449527"
+horo: 2
 typography:
   partition: nist
   bondDegree: 12
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "9e27e2d3-973d-8101-b67b-5246200d9e35"
+  computationUuid: "8f4aa4c2-8ccb-8f69-b15b-6326c47f67ca"
   stages:
     - stage: path
       stageUuid: "0e9bb9a2-627a-8ca4-8e8c-ec3b6a75c51a"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "4a27dc48-f471-823c-9b23-787df4dd1be1"
     - stage: horo
-      stageUuid: "bc535960-e2ef-8233-9961-0f5cded0f7f4"
+      stageUuid: "01e65037-6dab-834f-864c-0a9ea25d50c5"
     - stage: seal
       stageUuid: "cbbb38f4-a2f8-8116-8fdb-4603e613f8c1"
     - stage: uuid
-      stageUuid: "a4b73ada-eeaa-8eac-ab25-fb53d9e3fd58"
+      stageUuid: "2a0329ca-5079-8b02-8937-f5da65546455"
 version: 2
 ---
 # NIST INCITS 359 — Role-Based Access Control

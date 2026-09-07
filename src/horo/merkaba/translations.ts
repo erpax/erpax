@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "merkaba",
-    "uuid": "d542fdb6-19c8-8cc2-b92e-bd83ac509868",
+    "uuid": "dc2cca24-e767-8d13-9cbf-1bcc9b2f5b60",
     "words": [
       "merkaba"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a figure over the digits is claimed to have a symmetry — structure and symmetry group are two different claims, and the second is not inherited from the first. Ten symbols are not nine: AGL(1,Z/9) has no well-defined action here, AGL(1,Z/10) preserves only the identity, and an exhaustive search over all 10! relabellings finds 24 symmetries that never exchange the figures.",
-    "uuid": "9f1625c3-a0e0-8b9c-9c53-e5c61fab2a79",
+    "uuid": "0e4cdb00-3747-87fb-a2a7-dbcf5eb9458d",
     "words": [
       "use",
       "when",

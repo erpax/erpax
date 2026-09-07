@@ -2,11 +2,11 @@
 name: statistics
 description: "Use when reasoning about statistics — A schema.org component word, collided out of schema.org compounds — fused from diseaseSpreadStatistics (sti · collapse · merge)."
 atomPath: statistics
-coordinate: "statistics · 5/round · 5990a53b"
-contentUuid: "eb54be56-f1ea-5dd9-9d14-599b9f0059e7"
-diamondUuid: "3e031b41-c926-8ac9-bfd9-698875e19638"
-uuid: "5990a53b-522a-8571-8453-bf5049e580f8"
-horo: 5
+coordinate: "statistics · 7/descent · 481e1f40"
+contentUuid: "760ac6ad-76c4-5a09-bbb6-05a0279cdd62"
+diamondUuid: "1a263ed7-6628-81db-b6ca-6ec407e1c6db"
+uuid: "481e1f40-828c-892e-a4bd-510620d04b09"
+horo: 7
 typography:
   partition: statistics
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1b518aa2-fd7d-8ef7-84f9-13c6ecb2a541"
+  computationUuid: "db697952-1fce-8491-90ad-cb0e4e1abb49"
   stages:
     - stage: path
       stageUuid: "e2d5087b-03db-84e3-8831-983846bc277b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3e5a29c4-d8b6-8a8f-a60b-86b93e121c84"
     - stage: horo
-      stageUuid: "40e3aba3-52ae-8ddd-b836-949a07400820"
+      stageUuid: "9a8096cd-4cfe-807f-87e4-721af1f02109"
     - stage: seal
       stageUuid: "49442ddf-8736-82a6-b219-50962f1122c7"
     - stage: uuid
-      stageUuid: "dfda9ffe-b36b-8f6a-a6c0-60b507cc7a92"
+      stageUuid: "34a91c75-c298-80bb-a683-d58d051b613f"
 version: 2
 ---
 # statistics

@@ -2,11 +2,11 @@
 name: cloudflare
 description: "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract."
 atomPath: "agents/mcp/tool/cloudflare"
-coordinate: "agents/mcp/tool/cloudflare · 8/crest · d7bdf096"
-contentUuid: "98346502-1cea-5f67-8183-1f3230cd4f6a"
-diamondUuid: "9908f60b-1754-85a5-9341-21e243f0b7e6"
-uuid: "d7bdf096-9faf-88b8-88c2-7c4c81f63266"
-horo: 8
+coordinate: "agents/mcp/tool/cloudflare · 7/descent · e71035d5"
+contentUuid: "3b4b9658-2e51-5cba-b5c7-1abb1e8a1ac7"
+diamondUuid: "18a300ea-2345-823f-91c0-2850f6d502fe"
+uuid: "e71035d5-a91b-8467-add8-209de7040f3e"
+horo: 7
 typography:
   partition: agents
   bondDegree: 116
@@ -16,7 +16,7 @@ standards:
   - "ISO/IEC-27001:2022"
 bindings: []
 signatures:
-  computationUuid: "f8cf36d5-f3eb-8b47-83d4-1d2b12616b21"
+  computationUuid: "6c17f34f-68ad-8b5f-8de3-991896d26210"
   stages:
     - stage: path
       stageUuid: "0b7ea0e1-1a63-840f-9fc8-02113c0fee20"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "6250f8c6-bfeb-8464-9524-3553ffe12af6"
     - stage: horo
-      stageUuid: "9158459b-1b2b-8c9b-9606-879a03c34f11"
+      stageUuid: "8e254b8f-0bc4-8491-83ef-77dd11d64033"
     - stage: seal
       stageUuid: "f484a65b-d74a-8cba-b9d8-5b700a860b10"
     - stage: uuid
-      stageUuid: "0ae398ea-b101-863e-8723-6b56ac49e244"
+      stageUuid: "40083bbf-b171-84f3-96c1-5ed56a3beed5"
 version: 2
 ---
 # agents/mcp/tool/cloudflare

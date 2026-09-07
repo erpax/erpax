@@ -2,18 +2,18 @@
 name: defence
 description: "Use when managing defence/military operations — personnel rosters, equipment inventory, deployment scheduling, force readiness, or defence procurement in government military branches (COFOG 02)."
 atomPath: "vocabulary/defence"
-coordinate: "vocabulary/defence · 2/share · ff100438"
-contentUuid: "159ee36c-4155-5782-a418-8c765bf16cb7"
-diamondUuid: "41f7714c-c627-8291-a7f9-99d89ab71575"
-uuid: "ff100438-c98c-880e-bca1-4eb83eb0f703"
-horo: 2
+coordinate: "vocabulary/defence · 1/base · deee2e79"
+contentUuid: "ab6035fc-7c19-59b2-88ec-6e7bd7e11d7d"
+diamondUuid: "a149c832-e983-8b11-8173-2e428d6fff8b"
+uuid: "deee2e79-9909-8564-a1b9-e4df1e1392da"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 64
 standards: []
 bindings: []
 signatures:
-  computationUuid: "146a07df-3aec-814d-aa55-3ae9ef532c44"
+  computationUuid: "a685c38e-8cec-8acf-bba9-65f5f3cd0909"
   stages:
     - stage: path
       stageUuid: "6b4cdfbe-11d3-8ec9-bbec-2ac21d47b0a0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bc45de34-7260-869a-a7dd-f3c40fb57e71"
     - stage: horo
-      stageUuid: "438f31da-a936-872a-9ac5-3259ad6ff79f"
+      stageUuid: "98e4a30c-069d-8a9e-a69c-e8f5da4d1519"
     - stage: seal
       stageUuid: "12258c41-57a6-84a9-aaed-746355ccb854"
     - stage: uuid
-      stageUuid: "adde517c-e799-8dfb-97b6-dc0b55555b31"
+      stageUuid: "c37def17-7804-8c9c-ac23-e4408049b98d"
 version: 2
 ---
 # defence — the readiness sector (COFOG 02)

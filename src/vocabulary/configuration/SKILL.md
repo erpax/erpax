@@ -2,11 +2,11 @@
 name: configuration
 description: "Use when reasoning about configuration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/configuration"
-coordinate: "vocabulary/configuration · 7/descent · cbbb49e4"
-contentUuid: "5560e386-a994-524a-bf70-ad401755ad8d"
-diamondUuid: "0ff3b4b3-1b83-8255-bcd4-574eceac879b"
-uuid: "cbbb49e4-c2d8-803e-9677-86dbe53a336f"
-horo: 7
+coordinate: "vocabulary/configuration · 8/crest · 9f6fe3b7"
+contentUuid: "ccf96199-8405-5a4a-82fc-3c3ef0d1ec9b"
+diamondUuid: "f36e0135-3dcc-88f2-a2fa-8dd690bb1432"
+uuid: "9f6fe3b7-5f22-8691-895e-228f28b4a170"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6a7b3e04-d276-8984-bdf4-a30035146b2e"
+  computationUuid: "26bb0259-191b-8e61-8738-07c342e0ed3f"
   stages:
     - stage: path
       stageUuid: "10b59e61-d544-870c-860e-6f3633dac25d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d7e183da-a14b-80ce-84e7-d4c832f7fbf3"
     - stage: horo
-      stageUuid: "f1333c55-8635-8ce2-8484-f1a3698669ea"
+      stageUuid: "b8bbb54f-e294-8805-88cd-c55d1ae78307"
     - stage: seal
       stageUuid: "41b8ca7d-4dc1-8d1c-9a41-7f2320ee6173"
     - stage: uuid
-      stageUuid: "1b39400e-3406-8139-ad51-1595446a3474"
+      stageUuid: "b76ece19-ba23-87aa-b655-8cddf3544b7f"
 version: 2
 ---
 # configuration

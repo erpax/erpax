@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "modal",
-    "uuid": "d47e3033-6690-8264-86ab-361009489b37",
+    "uuid": "9112c3be-4a11-8b22-a29c-1ae4cf0476f3",
     "words": [
       "modal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about modal — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
-    "uuid": "33803070-554d-8d9b-9198-ce4f245673bb",
+    "uuid": "8b7a6804-f46a-843a-b712-02816ba1d157",
     "words": [
       "use",
       "when",

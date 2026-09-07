@@ -2,11 +2,11 @@
 name: task
 description: "Use when reasoning about task — The barrel binds the registry, the runner and the task types. A scheduled action declared here is enumerable: something can ask what runs, when, and what evidence it leaves."
 atomPath: "scheduled/task"
-coordinate: "scheduled/task · 1/base · 59ed471c"
-contentUuid: "c8ca93aa-2be8-5197-a634-41b397cea804"
-diamondUuid: "8fa012e2-f464-893e-967e-7d59c7f593ec"
-uuid: "59ed471c-7db9-8651-bccb-85bf0bc533fe"
-horo: 1
+coordinate: "scheduled/task · 2/share · 0de619e5"
+contentUuid: "e1a6d79d-979e-5abc-a839-1ceed9525c15"
+diamondUuid: "10d0f9dd-11cf-8bc8-baae-b9e1f1c3f3d5"
+uuid: "0de619e5-ae13-8ce2-a552-58dd303bd0b4"
+horo: 2
 typography:
   partition: scheduled
   bondDegree: 13
@@ -14,7 +14,7 @@ standards:
   - "RFC-5545"
 bindings: []
 signatures:
-  computationUuid: "7600b830-92ce-801e-a06f-fcf90ef6136b"
+  computationUuid: "bfaa534e-2520-8473-914b-d6d2afbb45c3"
   stages:
     - stage: path
       stageUuid: "3d0774e6-498a-8a9b-944a-b72f44a401af"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6f108009-3855-81cd-b4cd-d36ad7d62c1e"
     - stage: horo
-      stageUuid: "0a366c84-2119-8518-b765-81933f2ba809"
+      stageUuid: "cc3d32f0-8c5c-86c7-854a-723a39488e1c"
     - stage: seal
       stageUuid: "37cea76d-9d9b-834c-96bb-7d409824d497"
     - stage: uuid
-      stageUuid: "57cc5f7d-313d-8a79-98db-5160d9c1da62"
+      stageUuid: "bcac592d-1353-86c5-b87f-ff66d4acd581"
 version: 2
 ---
 # scheduled/task — a time-driven action is declared in a registry, not hidden in a cron line

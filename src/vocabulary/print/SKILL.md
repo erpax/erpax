@@ -2,11 +2,11 @@
 name: print
 description: "Use when reasoning about print as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/print"
-coordinate: "vocabulary/print · 8/crest · 9ba42557"
-contentUuid: "a5ca9b21-3ce7-5543-b9ac-931b77068e22"
-diamondUuid: "bfe9b0d8-4be9-8e0e-a9b7-8451d63fb20f"
-uuid: "9ba42557-f4cc-84b8-b6ee-caebd501a4b7"
-horo: 8
+coordinate: "vocabulary/print · 4/weave · 08d8bdf2"
+contentUuid: "4271c164-407d-5dc1-ac18-9eef9cf114e1"
+diamondUuid: "aa6c5329-0485-8155-9395-337c009e9cb4"
+uuid: "08d8bdf2-1cce-8d66-abaf-9e831bae43c7"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "273c6381-878b-8ac9-a3b4-80bb13926196"
+  computationUuid: "4e6d0b57-4d9c-8fdc-94f3-57eaccb44c97"
   stages:
     - stage: path
       stageUuid: "5ac07f57-c085-871a-aa53-c0ea2da036d2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0a5f2df0-dd6b-8fa7-a9a5-38d488ab6587"
     - stage: horo
-      stageUuid: "598fb313-d242-8b75-9f01-10693165f1d2"
+      stageUuid: "c3d6c451-75a8-803e-aeba-15b7c630bec7"
     - stage: seal
       stageUuid: "0de90537-2b6f-8525-80a8-005a76f10ae8"
     - stage: uuid
-      stageUuid: "158d4c7d-4122-8939-9ab6-adf21b0b6753"
+      stageUuid: "00ca249e-f536-8bbb-a669-ade7869d864f"
 version: 2
 ---
 # print

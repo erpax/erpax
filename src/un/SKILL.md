@@ -2,11 +2,11 @@
 name: un
 description: "Use when reasoning about un — A schema.org component word, collided out of schema.org compounds — fused from UnRegisterAction (sti · collapse · merge)."
 atomPath: un
-coordinate: "un · 5/round · d612e17c"
-contentUuid: "f18b4aaf-5199-5764-bb21-91e3cf32c73d"
-diamondUuid: "d200c975-0dad-80ec-948d-fc874f7628c4"
-uuid: "d612e17c-522e-88d2-ab31-49e232866be4"
-horo: 5
+coordinate: "un · 8/crest · 73e14b32"
+contentUuid: "97577e33-428f-5abf-b386-309f4d632da4"
+diamondUuid: "3814a677-2cf9-8b71-a5c3-1cd8a7bd4fdb"
+uuid: "73e14b32-41de-880b-bc52-c16b996c7fcc"
+horo: 8
 typography:
   partition: un
   bondDegree: 21
@@ -16,7 +16,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "61dede18-6f59-81ed-ae90-a7290d1eee1e"
+  computationUuid: "752ad0ec-251c-8fbf-83e5-d2981ea037d0"
   stages:
     - stage: path
       stageUuid: "81553745-be07-869c-afbf-3d32dfeca966"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9b1a6f84-ad46-88df-86a8-fea8db686d3a"
     - stage: horo
-      stageUuid: "3f3f6aad-4628-8d0d-b427-00460c314b9c"
+      stageUuid: "8db5ea75-e3b1-8bb2-a0b5-9a42717c7564"
     - stage: seal
       stageUuid: "de62d2c3-c14a-8ad4-b6a7-263ec5f82fda"
     - stage: uuid
-      stageUuid: "82825240-70aa-85ff-ba0a-ac8864d90478"
+      stageUuid: "3c73f838-45f8-8896-af96-187afb5b8a2f"
 version: 2
 ---
 # un

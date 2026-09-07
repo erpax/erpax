@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "compute",
-    "uuid": "58122408-9fee-826a-8e8d-ef7efca76029",
+    "uuid": "dc80d9e5-b2c2-897a-8122-b164859cd4ed",
     "words": [
       "compute"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about compute — Every atom is a page, every partition a volume. derives the volume rows, says what a path means segment by segment, and emits the index as a document.",
-    "uuid": "7c8df85e-bb45-8ecc-98d7-735ba775cb3b",
+    "uuid": "b378a4c4-cd01-80cc-a1b2-809cc5da7685",
     "words": [
       "use",
       "when",

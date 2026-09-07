@@ -2,11 +2,11 @@
 name: leases
 description: "Use when recognising and tracking IFRS 16 / ASC 842 lessee leases — ROU asset initial measurement, lease liability PV calculation, discount rate, payment frequency/timing, modifications, and period-end carrying amounts. The lease master-data collection."
 atomPath: leases
-coordinate: "leases · 4/weave · 0b9e1ab3"
-contentUuid: "f1402401-cdf8-58a2-abce-e2d8667e67e1"
-diamondUuid: "1726b2ed-a49d-87b8-b0d8-c6c83ed1280a"
-uuid: "0b9e1ab3-0808-807e-b6af-0f24d0478760"
-horo: 4
+coordinate: "leases · 8/crest · 18d8aea8"
+contentUuid: "60100c50-8db5-5ec4-80e7-8c0158a87d90"
+diamondUuid: "9ab43d51-870f-8c2d-9516-a30f56febe3e"
+uuid: "18d8aea8-aaaf-8a0e-b383-7f15a0cc1d41"
+horo: 8
 typography:
   partition: leases
   bondDegree: 29
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "8e225390-116d-853b-9450-6ee839d632b7"
+  computationUuid: "72086059-b0cd-80dc-a690-318924fde805"
   stages:
     - stage: path
       stageUuid: "566de06d-1065-88c3-b090-d0ec5a5a7023"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "07894c5d-5ce7-8252-a4f4-8b064545e334"
     - stage: horo
-      stageUuid: "3179dabb-9298-8e5c-bcb3-113fe455e398"
+      stageUuid: "b6f1e0ee-c32f-82ae-b34d-deb784aca144"
     - stage: seal
       stageUuid: "ac5a322f-1b74-8c50-a9d0-289a63b1eddf"
     - stage: uuid
-      stageUuid: "da15055e-8657-801a-b6a6-c77bed2299fc"
+      stageUuid: "ff657947-d330-8b26-819f-5f6c6db9cb02"
 version: 2
 ---
 # leases

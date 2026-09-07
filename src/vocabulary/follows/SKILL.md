@@ -2,11 +2,11 @@
 name: follows
 description: "Use when reasoning about follows — The most generic uni-directional social relation."
 atomPath: "vocabulary/follows"
-coordinate: "vocabulary/follows · 5/round · 2de1f1b5"
-contentUuid: "c0376713-0b10-5e6f-bac7-9fe42596bd3a"
-diamondUuid: "ed4ef16b-e70a-8fe0-8930-fd0b34a274da"
-uuid: "2de1f1b5-abe4-8aab-8063-f7482fe6cb27"
-horo: 5
+coordinate: "vocabulary/follows · 1/base · 919a0073"
+contentUuid: "2616ec69-e16f-53b0-bedb-69354d1ca410"
+diamondUuid: "e65447b1-63b5-856b-bf3f-49e12fe6f981"
+uuid: "919a0073-f0b5-8b0f-bd43-84fe00e7d729"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f1203883-ba2c-80fa-b2fc-845034427ed3"
+  computationUuid: "995f7a27-acb1-86e4-ae38-37b33dbc0b63"
   stages:
     - stage: path
       stageUuid: "031589f2-7490-8f3c-931d-5002863c13b9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "30d15a66-840a-8bf1-b290-433c64a88069"
     - stage: horo
-      stageUuid: "59ae22e2-1db3-8066-b47e-a5f9e50a4924"
+      stageUuid: "f734abb1-bc47-8faa-a623-963fc8701b8b"
     - stage: seal
       stageUuid: "78f08a96-361f-8381-b0a8-ff2abda76cce"
     - stage: uuid
-      stageUuid: "6f2b5355-4c59-8069-876f-5ee8273c7332"
+      stageUuid: "97f4e9fa-39c4-8e2d-bc12-e3c4fb83f678"
 version: 2
 ---
 # follows

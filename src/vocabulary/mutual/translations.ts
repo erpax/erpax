@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mutual",
-    "uuid": "2549123b-ab65-88ae-b950-bb048665f81a",
+    "uuid": "ebd018eb-ab4e-8a53-9192-7083152ded98",
     "words": [
       "mutual"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about mutual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "ca8d0989-0eae-8826-be12-265d21a55d4b",
+    "uuid": "f77913ba-e343-891b-87f7-d28a4eaee5fb",
     "words": [
       "use",
       "when",

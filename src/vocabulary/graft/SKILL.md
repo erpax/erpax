@@ -2,18 +2,18 @@
 name: graft
 description: "Use when joining a scion to a rootstock into one plant — the graft is the propagation union (variety on top, root system below), and field top-working to change variety. The perennial's clonal propagation event; the plant is not seeded but assembled from two chosen parts."
 atomPath: "vocabulary/graft"
-coordinate: "vocabulary/graft · 5/round · c0d3ff1d"
-contentUuid: "a53a65e1-d30b-5d88-a13a-5c8117008eda"
-diamondUuid: "9ffb2124-f82f-8b76-b097-424549614a0f"
-uuid: "c0d3ff1d-d87d-82de-8ad2-e02d4a4f7e15"
-horo: 5
+coordinate: "vocabulary/graft · 1/base · fa016d35"
+contentUuid: "7360d240-6bf6-59d4-85a9-c94e10de469f"
+diamondUuid: "653e57a9-84e3-8200-a92c-87d9dd285fe7"
+uuid: "fa016d35-f5d5-8011-a6ef-405bd431d463"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "965e5635-cc64-866c-adc7-06e257fda6a2"
+  computationUuid: "eabf9f80-d77b-8151-99e2-b1f33b96d7d4"
   stages:
     - stage: path
       stageUuid: "043ca68c-0d66-8fd5-8ffe-1f80f0cbb5a7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "73674684-0833-8bf3-9299-ca2e495afd37"
     - stage: horo
-      stageUuid: "e1c24b27-5c2a-8461-95bd-888431e95669"
+      stageUuid: "86d48ecb-92d4-8c78-aab1-215346d770dc"
     - stage: seal
       stageUuid: "603c4a5d-8986-8054-bf9a-85f551595134"
     - stage: uuid
-      stageUuid: "0d074cb2-6fa7-8a05-a752-e691e72b5b1a"
+      stageUuid: "808648f1-c4f3-85be-800c-181efc0216fe"
 version: 2
 ---
 # graft — the union of scion and rootstock into one plant

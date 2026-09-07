@@ -2,11 +2,11 @@
 name: sms
 description: "Use when reasoning about sms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sms
-coordinate: "sms · 4/weave · 68053a2f"
-contentUuid: "e5defc22-a6b6-5b8a-b27d-1e7c5f7f0e89"
-diamondUuid: "35379a93-fcbf-857e-9282-4f2d0daf5cab"
-uuid: "68053a2f-e7ba-8fbc-b73e-b5d7396069e5"
-horo: 4
+coordinate: "sms · 8/crest · 2ceeecf7"
+contentUuid: "652695db-d97b-5bd0-9b42-285e28995c62"
+diamondUuid: "5fef780d-81e0-802d-933f-1c3b9229aee3"
+uuid: "2ceeecf7-1870-8471-beb9-c373761e2aa6"
+horo: 8
 typography:
   partition: sms
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f0717d3d-384e-84f5-9575-0acb0d1b6718"
+  computationUuid: "d0b042f1-1344-8089-a007-6c1abbf88923"
   stages:
     - stage: path
       stageUuid: "4f416377-40f9-8b77-95d6-3b4cb9cac1c8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9f526cc2-02a7-888a-b8d1-dddb51ade235"
     - stage: horo
-      stageUuid: "5997690c-cb74-8c40-8cd5-ae7df06de574"
+      stageUuid: "dfafd91e-96ae-86e0-895e-90a2b410e9d8"
     - stage: seal
       stageUuid: "61828dc5-07ea-8987-883a-360f754af95a"
     - stage: uuid
-      stageUuid: "43ceb08c-2207-8af8-acc8-a31573fbd75b"
+      stageUuid: "fa266eac-1c68-8f93-aac1-0209f8e5fe23"
 version: 2
 ---
 # sms

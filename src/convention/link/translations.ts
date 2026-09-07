@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "link",
-    "uuid": "96cac072-00d5-85e6-89f0-13ab8d1939db",
+    "uuid": "fd7961ca-f21b-8dfc-8d27-f72a8c184cf8",
     "words": [
       "link"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when one atom references another in prose — every wikilink must resolve to a real atom, no dead wires; coverage = resolving / total over the live corpus map.",
-    "uuid": "69fa19ab-7c26-8c81-b331-131dc9fb7939",
+    "uuid": "32e122ef-8598-805e-864a-d55f35720a92",
     "words": [
       "use",
       "when",

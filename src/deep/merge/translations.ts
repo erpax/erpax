@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "merge",
-    "uuid": "4ed5d374-b959-8997-a474-12752a69be7a",
+    "uuid": "c3de70fd-a508-8019-ad7d-b23c622ed975",
     "words": [
       "merge"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when overlaying one plain object onto another without mutation — a recursive deep merge where nested objects fuse key-by-key, arrays and scalars are replaced wholesale, and the source value wins on every collision.",
-    "uuid": "1362ac22-7aaf-804e-88b4-9dd4f05a66c7",
+    "uuid": "0505398f-e21d-85f2-a7bd-31e029593a58",
     "words": [
       "use",
       "when",

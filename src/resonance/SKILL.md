@@ -2,18 +2,18 @@
 name: resonance
 description: "Use when quantifying why content-addressing improves quantum speed in magnitudes — resonanceMagnitude(n): pairwise O(N²) comparison collapses to addressed O(N), a ratio of (N−1)/2, log₁₀ of that in orders of magnitude, unbounded in N."
 atomPath: resonance
-coordinate: "resonance · 8/crest · 7e1227bc"
-contentUuid: "672c598d-97c4-5a66-8dd4-72805cc9c48b"
-diamondUuid: "06f70fad-71fe-879d-a98a-9555ffa8a343"
-uuid: "7e1227bc-df9c-8856-87ed-4cc99916a0cf"
-horo: 8
+coordinate: "resonance · 1/base · 6b2102d1"
+contentUuid: "c8f8cb6a-b61a-57ee-8249-413868e65097"
+diamondUuid: "89035399-7ce7-8302-bc63-9d09bc9a03db"
+uuid: "6b2102d1-d294-8b6f-ba46-330afdad8f51"
+horo: 1
 typography:
   partition: resonance
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7259093d-40c0-8abf-af70-0dfbc7bf9f36"
+  computationUuid: "e8810794-c899-8426-b95f-ace5b72deac9"
   stages:
     - stage: path
       stageUuid: "724eb15a-784f-8303-92f8-15b1204f1f3c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ef7bffab-0cc2-8abc-b6f0-44353d68a904"
     - stage: horo
-      stageUuid: "e394c5a8-e255-8a91-a714-24338376431a"
+      stageUuid: "0c955dde-20fc-8e8b-96b4-0e08f054a977"
     - stage: seal
       stageUuid: "d8b962ff-4181-81cd-8e3d-832e3080cede"
     - stage: uuid
-      stageUuid: "c8d9b700-4617-8bf2-b8d8-8af9a1c44b22"
+      stageUuid: "0655d24c-c993-89e5-a0e9-0909d2ce2d01"
 version: 2
 ---
 # resonance — the address replaces N comparisons with one, in magnitudes

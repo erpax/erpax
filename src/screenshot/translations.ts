@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "screenshot",
-    "uuid": "91281635-a455-8ddf-a604-6770172bbbde",
+    "uuid": "59ee90ce-75e2-86a0-97a1-fa116b452dac",
     "words": [
       "screenshot"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about screenshot — A link to a screenshot image of the app.",
-    "uuid": "0d33fee7-63fa-8bd1-a241-8ed4d2667397",
+    "uuid": "c4a38623-e0d8-88e3-b92e-2bc729725bc1",
     "words": [
       "use",
       "when",

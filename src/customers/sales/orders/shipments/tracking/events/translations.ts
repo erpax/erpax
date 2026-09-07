@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "events",
-    "uuid": "a4b380bb-6e90-8ae9-819f-6c80622c5ae5",
+    "uuid": "f6452daa-afd7-820a-b0a6-f6213e8f7714",
     "words": [
       "events"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when ingesting or querying carrier shipment-status events — webhook pushes, API polls, or EDI IFTSTA messages — to update a shipment's in-transit state and trigger IFRS-15 §38 point-in-time revenue recognition on the `delivered` event under DDP/DAP/DPU INCOTERMS. The append-only carrier-tracking event log.",
-    "uuid": "3921217b-cd2b-8053-9b00-81f588d85d9d",
+    "uuid": "03f78b4b-77e0-88e5-8bc1-4c7b78bc3a29",
     "words": [
       "use",
       "when",

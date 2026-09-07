@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "audit",
-    "uuid": "e71d13f0-f767-873d-ab0a-04b704c15399",
+    "uuid": "ff75026f-3680-804f-a299-af0ceac8f86a",
     "words": [
       "audit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking what is actually blocking — the feed scan that finds real gaps and ranks them by unblock / (cost × risk), reading only the NAMES of secrets, never their values.",
-    "uuid": "006e56ba-2405-8ce7-adaf-ada047d96be7",
+    "uuid": "af4f1a82-85d4-828c-80f9-415d517592ca",
     "words": [
       "use",
       "when",

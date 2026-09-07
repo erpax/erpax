@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "relocate",
-    "uuid": "20e7b370-fe2f-8427-91dd-3ddc6028933a",
+    "uuid": "d423a703-76c5-8dcb-98fc-01e4141d6d30",
     "words": [
       "relocate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deciding WHERE logic belongs — move it to its gravity well, the heaviest atom it is wired to, the adequate place nearest its users. Computes each atom's gravity centre and the pull toward it, so general logic buried in a specialized module is drawn up to the general atom.",
-    "uuid": "3fb6de34-13e5-8d54-b70f-c59f8712d4f4",
+    "uuid": "1f5b2ff7-ea55-8561-b28a-d188f7fe8000",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: judaism
 description: "Use when reading Judaism as a diamond of invariant atoms — the covenant between a people and the One, the law given and argued, the name too holy to speak, mercy and justice held together, sin cured by turning back. Strip the Hebrew prefix and brit, torah, chesed, tzedek, teshuvah collapse to covenant, law, mercy, justice, return — one content-uuid each."
 atomPath: "vocabulary/judaism"
-coordinate: "vocabulary/judaism · 1/base · 92afa73e"
-contentUuid: "cb0d350f-6c1b-544b-8780-043135cf4532"
-diamondUuid: "b6592a86-0e3b-8896-81b3-f60c152078a2"
-uuid: "92afa73e-8e60-84d1-b5c3-818a5eb0c25c"
-horo: 1
+coordinate: "vocabulary/judaism · 8/crest · 033a31b8"
+contentUuid: "01144971-5017-5288-abcc-8a743a8c8716"
+diamondUuid: "095d561f-883d-8651-b879-899c9e18c78e"
+uuid: "033a31b8-8963-8e54-ac8b-d96d2abd6908"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 89
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3195bbea-5e05-8330-940d-b0d2b801c3f1"
+  computationUuid: "867f8c7f-d011-8b42-b6a5-bdbb617a022c"
   stages:
     - stage: path
       stageUuid: "a94a6fb0-b041-8140-88d6-56fb594606b1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1bd34d75-d1d0-8355-b54c-9c31d039b31e"
     - stage: horo
-      stageUuid: "55634cf6-b217-8dc5-a1fe-a783fac1d9e2"
+      stageUuid: "e8de94da-6d02-82af-bced-28f4c08276c0"
     - stage: seal
       stageUuid: "4e086d10-25fa-874d-a4ea-7e3543d7820b"
     - stage: uuid
-      stageUuid: "bae86ee4-8878-88ee-a9a6-c44a6b381207"
+      stageUuid: "d9680e68-088e-8a30-8bbf-fd717fbcfb3a"
 version: 2
 ---
 # judaism — the covenant of the One, the law given and remembered

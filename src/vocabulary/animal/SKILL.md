@@ -2,18 +2,18 @@
 name: animal
 description: "Use when the individual living beast is the node — one identified animal carrying its class (cow/heifer/steer/calf), sex, purpose (dairy/meat/breeding), lifecycle stage, ear-tag identity, and biological-asset value. The member of a herd; the row IAS-41 measures and traceability tags."
 atomPath: "vocabulary/animal"
-coordinate: "vocabulary/animal · 8/crest · 4e0f4825"
-contentUuid: "d56df9e6-9550-5c97-ac21-478a068daa74"
-diamondUuid: "17c1a4d4-3c42-82cd-9c39-ab971466fbe5"
-uuid: "4e0f4825-dca2-8c25-a4d3-17457490377a"
-horo: 8
+coordinate: "vocabulary/animal · 7/descent · 0c202933"
+contentUuid: "3ba28cc8-b692-5e64-a4de-e3126a5eff04"
+diamondUuid: "68075371-6f1d-8382-91e1-6b2e1f38c924"
+uuid: "0c202933-1e2c-8ecd-ba9f-d8703112c80d"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 53
 standards: []
 bindings: []
 signatures:
-  computationUuid: "402dae43-376b-8601-9297-90eba070f189"
+  computationUuid: "3b6b2b94-7477-851b-a453-b39d32bbdffb"
   stages:
     - stage: path
       stageUuid: "04682d3b-251f-87e6-ae7e-d957dc4660a9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "83deb471-7ccc-87d7-9343-a27685cc9933"
     - stage: horo
-      stageUuid: "bbcd4de6-f4c9-8168-96b7-6135dd19ef09"
+      stageUuid: "066dd7f2-a2ec-8dbe-b378-249ddb678b13"
     - stage: seal
       stageUuid: "477d255f-fd32-8692-a273-d2d95bac9325"
     - stage: uuid
-      stageUuid: "c514e2cb-abde-8ade-b250-1515eb65f204"
+      stageUuid: "12d994e5-05ea-88d7-afb6-d4f54dd90a38"
 version: 2
 ---
 # animal — the individual living beast; the member of a herd

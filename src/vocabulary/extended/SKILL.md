@@ -2,11 +2,11 @@
 name: extended
 description: "Use when reasoning about extended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/extended"
-coordinate: "vocabulary/extended · 1/base · 9197a079"
-contentUuid: "d31ba20a-7465-5f8d-b8bb-28c176a21697"
-diamondUuid: "75896217-0da8-8781-8adf-db6ce09555cc"
-uuid: "9197a079-1313-8714-8955-56a8d209f227"
-horo: 1
+coordinate: "vocabulary/extended · 7/descent · ac47704f"
+contentUuid: "cbe83e50-da01-5245-90c7-4708bc5b2f7f"
+diamondUuid: "a9c8692f-f4ef-8c69-a0d4-6c5dd0eb5f30"
+uuid: "ac47704f-27ee-887b-a9e6-bcafe0afed90"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "24a4c633-0dc5-810d-8032-082d4a9dee90"
+  computationUuid: "04e821aa-61da-81db-89f3-0d92e973ae1e"
   stages:
     - stage: path
       stageUuid: "a76e4352-651c-89ec-abb0-aded35d64c2c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "18632ee9-a299-82cf-9225-53467419c410"
     - stage: horo
-      stageUuid: "ea357e4d-e4e1-8712-9483-a4d087d3d53c"
+      stageUuid: "1b079677-15e3-8346-84c6-c6e0662cac15"
     - stage: seal
       stageUuid: "a2d21324-3405-8595-9108-bf6731991819"
     - stage: uuid
-      stageUuid: "70cc204e-2de1-8fdd-b643-c1d3d799518a"
+      stageUuid: "0a4eb62b-a71e-8b55-ad91-cb32e26d88fd"
 version: 2
 ---
 # extended

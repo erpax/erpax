@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "epidemiology",
-    "uuid": "98374ff4-65fb-8cc7-aeb4-987ff1cfb76a",
+    "uuid": "c5db080b-fc65-89d2-949c-5a75273e2a93",
     "words": [
       "epidemiology"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about epidemiology — The characteristics of associated patients, such as age, gender, race etc.",
-    "uuid": "09abdebc-5bee-8670-9e0d-1a81cf5654e9",
+    "uuid": "43bf10a3-730b-871e-bf7e-199bafe9a2c9",
     "words": [
       "use",
       "when",

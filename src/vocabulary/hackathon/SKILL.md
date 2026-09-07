@@ -2,11 +2,11 @@
 name: hackathon
 description: Use when reasoning about hackathon — A hackathon event.
 atomPath: "vocabulary/hackathon"
-coordinate: "vocabulary/hackathon · 1/base · ec93e3e0"
-contentUuid: "b27d0739-06d9-54a2-bc39-2ad20bb96a2d"
-diamondUuid: "cd6e63e8-c761-8677-b171-33e8ebbf65d1"
-uuid: "ec93e3e0-8e9d-8960-81d4-eaceeb81fe7f"
-horo: 1
+coordinate: "vocabulary/hackathon · 4/weave · dccf365a"
+contentUuid: "32257920-fdc3-577d-af83-990f8c2f4ba4"
+diamondUuid: "002e3186-3ed0-8ac5-81e2-f7b6f70f382d"
+uuid: "dccf365a-324d-85b3-b95e-19f08439057e"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7bf863a9-5a94-8ac0-a16b-b0c583927a31"
+  computationUuid: "5873ef05-cc7e-86c6-8510-ffb0477c65eb"
   stages:
     - stage: path
       stageUuid: "1863df6f-a324-836c-9936-46138092c18f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3033a7a6-b06d-8575-95cf-a75091e215cc"
     - stage: horo
-      stageUuid: "50c6ca2c-f209-87ed-a388-4abee49d6917"
+      stageUuid: "71d3fb0c-4ac5-8d2f-81c8-7ac80460f816"
     - stage: seal
       stageUuid: "e27f208e-762e-8355-b9dd-547f4dc576a1"
     - stage: uuid
-      stageUuid: "142ce33d-1e4b-8354-8070-93dadc791042"
+      stageUuid: "91c3b182-20d5-8491-adba-73e49e3e3a72"
 version: 2
 ---
 # hackathon

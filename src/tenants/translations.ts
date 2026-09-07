@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tenants",
-    "uuid": "49281a25-a62a-85c1-b0a6-8b327f5e9f25",
+    "uuid": "1263ba5c-6e69-8a08-a79a-829c57cf8eba",
     "words": [
       "tenants"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
-    "uuid": "e89f07ba-c336-8c1b-a5f0-9400089595db",
+    "uuid": "091d4944-660b-8f4b-8843-32635c1c1b7b",
     "words": [
       "use",
       "when",

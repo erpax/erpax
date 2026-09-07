@@ -2,18 +2,18 @@
 name: theme
 description: "Use when reasoning about theme — A theme applied by React is applied *after* hydration, and hydration happens after first paint."
 atomPath: "providers/theme/init/theme"
-coordinate: "providers/theme/init/theme · 4/weave · bf8f027f"
-contentUuid: "b1cc5a8d-9a6c-5160-aa85-d3f73d4ad349"
-diamondUuid: "5d7c0460-22cb-807b-b928-d7f53b0b8c86"
-uuid: "bf8f027f-9630-8920-8148-f2df57d49277"
-horo: 4
+coordinate: "providers/theme/init/theme · 5/round · c71271d9"
+contentUuid: "72e2b4c3-03c0-5111-9224-f0265d4ee4ad"
+diamondUuid: "3238107d-8e69-8bd8-bbf7-aa34cf4167c8"
+uuid: "c71271d9-2e5f-8dee-bf10-619596d6e45f"
+horo: 5
 typography:
   partition: providers
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b2616fa9-001d-896b-b359-fbccb6a853a8"
+  computationUuid: "bef1da37-99c1-8f37-9119-d7a957c400ef"
   stages:
     - stage: path
       stageUuid: "46b4097c-bf4f-8a47-86df-c67f0c3b7585"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1f9bce38-462e-8b15-a917-86a28b0f8f90"
     - stage: horo
-      stageUuid: "0a5ecea4-fdbb-83c8-aa84-eb6575791f61"
+      stageUuid: "98323eee-6c67-86ff-b2ab-007f728ed76e"
     - stage: seal
       stageUuid: "d8f1ec46-728e-8125-a058-ac5cec1532d7"
     - stage: uuid
-      stageUuid: "98beada5-c0ca-8599-9a86-6d43db8492d7"
+      stageUuid: "87979b42-4d7e-8d38-a3eb-8a3616e6449b"
 version: 2
 ---
 # providers/theme/init/theme — the script that runs before the page is painted

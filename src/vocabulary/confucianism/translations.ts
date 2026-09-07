@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "confucianism",
-    "uuid": "14e899c2-89c2-89c3-bb74-cc30d708fa0c",
+    "uuid": "e392bbaf-fcc1-888f-9ebd-a86226e3e93f",
     "words": [
       "confucianism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Confucianism as a diamond of invariant atoms — the ordered relations, humaneness as the central virtue, righteousness, and the rectification of names (let the name match the thing) which is literally the identity law. Strip the Chinese prefix and ren, li, yi, zhengming collapse to love, ritual, justice, name/identity — one content-uuid each.",
-    "uuid": "29e22f16-ac23-8a48-a48e-91d58f0f984c",
+    "uuid": "6df381ce-119c-8e1f-9131-79cf15c1abc8",
     "words": [
       "use",
       "when",

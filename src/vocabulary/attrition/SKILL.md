@@ -2,18 +2,18 @@
 name: attrition
 description: "Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying."
 atomPath: "vocabulary/attrition"
-coordinate: "vocabulary/attrition · 8/crest · f1aa3698"
-contentUuid: "8367bee4-4184-582b-8ff9-0f338ea86ee3"
-diamondUuid: "542cd868-416e-8458-8750-5c205a6d7877"
-uuid: "f1aa3698-51d0-838c-b5ba-47d51355b247"
-horo: 8
+coordinate: "vocabulary/attrition · 4/weave · 00d345b6"
+contentUuid: "c78ab809-981e-5850-9670-32fabeee2537"
+diamondUuid: "87a36a8e-49ec-8edd-9b8b-0367037ba6dd"
+uuid: "00d345b6-362f-8c51-873b-9145d8a32fc4"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "dcce78a5-afe2-86df-a0f0-6a14fec09863"
+  computationUuid: "6525fd0c-260d-883b-9176-337ff6252e02"
   stages:
     - stage: path
       stageUuid: "043e78fe-d2a7-8afc-8852-b44fa098364e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b5637890-fd61-8b00-8237-a032ced11f80"
     - stage: horo
-      stageUuid: "be24d7a1-3c51-899a-addb-ab8948ad31ab"
+      stageUuid: "094915ca-1b6b-8827-9989-9c704a4ac49e"
     - stage: seal
       stageUuid: "38d0c694-e488-8a83-b8b1-2657e7d8ed6a"
     - stage: uuid
-      stageUuid: "39bd18e7-18c9-87f7-8155-e6f9bdbf80bf"
+      stageUuid: "d6462573-0665-8004-8127-13ce39353575"
 version: 2
 ---
 # attrition

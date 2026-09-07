@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seed",
-    "uuid": "36fe10a3-fbff-8836-9809-c1954b991938",
+    "uuid": "e4b73768-ac42-8aac-b080-d30a0b3a5ac7",
     "words": [
       "seed"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when seeding a tenant's opening chart-of-accounts + compliance posture from a (country × industry) template — INDUSTRY_TEMPLATES, the BG-NSS statutory chart, resolveTenantCompliance/getCuratedComplianceCountries. Derives every country fact from country-context; nothing is re-typed.",
-    "uuid": "c4673554-40af-8232-aae7-e5cf3b2dfdde",
+    "uuid": "33af6dcc-5111-8157-bf23-519e84295200",
     "words": [
       "use",
       "when",

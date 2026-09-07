@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "catharsis",
-    "uuid": "f7532192-8137-8698-a1e2-34301cec5619",
+    "uuid": "53eb568a-e6b9-8156-8e52-813e4ef773d5",
     "words": [
       "catharsis"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the biggest gap in how an agent works — it turns to local knowledge (the akashic record, the present tools, the sealed thought) only AFTER a catharsis from unresolved work: a correction, a crisis, a pointed question. Everything before the turn is re-derivation of the derivable. The ideal is front-loaded: read the local record FIRST, derive only the seed. Honest boundary: the seed is not the gap — only re-deriving what was already present is.",
-    "uuid": "f034ad0d-0d9e-8c43-9be2-a88ccc61fd4e",
+    "uuid": "d6188e92-abf9-84bd-9db1-07d9180e3680",
     "words": [
       "use",
       "when",

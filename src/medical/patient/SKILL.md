@@ -2,11 +2,11 @@
 name: patient
 description: "Use when reasoning about patient as a medical facet of medical — vocabulary pivot to @/patient; nested not duplicated."
 atomPath: "medical/patient"
-coordinate: "medical/patient · 2/share · 80c79ec0"
-contentUuid: "f1c26b40-960c-582c-a350-09f894601074"
-diamondUuid: "e1d89064-9390-81c2-97ee-e1d15a7b6db7"
-uuid: "80c79ec0-4a32-89f1-bf6d-8c867555baaa"
-horo: 2
+coordinate: "medical/patient · 7/descent · 43fcfc97"
+contentUuid: "5e5fae01-a88e-56b8-a015-16cc134e2ca2"
+diamondUuid: "cb223bbf-7e04-8776-a108-a1dcf56bc9a8"
+uuid: "43fcfc97-c9ef-82d4-810e-5862d51a6caa"
+horo: 7
 typography:
   partition: medical
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2344c8b4-92e2-8b21-bcca-9da5f4aa15f8"
+  computationUuid: "e3eca8d1-0390-8bed-86c2-244f108b887a"
   stages:
     - stage: path
       stageUuid: "af900c4a-7573-81c2-9f8f-00789fdd6612"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3f201910-cd92-829f-87a4-3477dd0142d8"
     - stage: horo
-      stageUuid: "310a08a9-e3cc-8318-8bcc-790a44c2bb17"
+      stageUuid: "bec07481-6590-8178-b697-239fe8b6acc2"
     - stage: seal
       stageUuid: "95c8a2c5-449b-8402-a5f8-6e5b06050135"
     - stage: uuid
-      stageUuid: "7457f192-8c44-8779-815d-9f09905b0129"
+      stageUuid: "14afe41d-159b-805d-bd28-6e1ba55f69fb"
 version: 2
 ---
 # medical/patient — medical facet

@@ -2,11 +2,11 @@
 name: delimited
 description: "Use when reasoning about delimited as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/delimited"
-coordinate: "vocabulary/delimited · 5/round · b2751ffe"
-contentUuid: "77c1f4b9-9325-52f4-86bf-6b8361df92aa"
-diamondUuid: "cc29d0aa-8b01-8030-aa51-30cb31f22bc8"
-uuid: "b2751ffe-339d-85cd-8ffa-5e32338961d3"
-horo: 5
+coordinate: "vocabulary/delimited · 8/crest · f3b9d815"
+contentUuid: "bc1aec2a-ea24-5781-bdf9-a0b10a6eaf61"
+diamondUuid: "9a47900a-ce8b-889e-a559-1d5be3b6846d"
+uuid: "f3b9d815-2a19-8343-b0e3-24932e19c33f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b55679dc-a549-898e-9a56-b933c825b82a"
+  computationUuid: "0e473d25-a6ce-8883-92c5-aee02f274fe3"
   stages:
     - stage: path
       stageUuid: "a51580bf-001f-8fc0-82d6-e086f0fe1fbe"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc0bb7c0-8709-8b5f-b33f-a70eb67f3387"
     - stage: horo
-      stageUuid: "98498613-a5ef-82af-ba19-eec49aa66142"
+      stageUuid: "2eb6a096-ce61-8aa3-b7a7-6e8eba25d7e8"
     - stage: seal
       stageUuid: "acceb811-14f8-8c4c-a63b-10690488a454"
     - stage: uuid
-      stageUuid: "7d5a5d0c-c7ef-878e-988b-d52b77be03e0"
+      stageUuid: "2431be77-53f6-83ac-8fb6-eaf65584aa88"
 version: 2
 ---
 # delimited

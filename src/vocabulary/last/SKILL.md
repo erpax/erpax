@@ -2,10 +2,10 @@
 name: last
 description: "Use when reasoning about last as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/last"
-coordinate: "vocabulary/last · 4/weave · fcd95a7e"
-contentUuid: "946e183c-644a-5460-bfa6-259e74db0ec0"
-diamondUuid: "5d591df5-70f6-87ac-baf3-537f7a69a926"
-uuid: "fcd95a7e-0f42-87fc-9af2-bc6d650dba28"
+coordinate: "vocabulary/last · 4/weave · 50100217"
+contentUuid: "8e9f9f93-9f11-5024-b703-328999912ad9"
+diamondUuid: "60a43066-7901-8721-a342-68aa38b385fd"
+uuid: "50100217-a45e-8937-a297-f8f67c4c641c"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "62ef7aa4-8068-8d0a-8b09-44e1223028dd"
+  computationUuid: "e7705a0f-42ad-89f6-8390-8b87b08180b7"
   stages:
     - stage: path
       stageUuid: "2aeee6fd-5f85-81c3-a186-3ce6eacf7acc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "824a8e58-697f-88ab-b25d-0cff23a86822"
     - stage: horo
-      stageUuid: "a760277f-87d9-80a9-aa4b-39700a466a8f"
+      stageUuid: "e31500d1-f05a-873a-9b93-50b381883688"
     - stage: seal
       stageUuid: "b50372dc-802d-8570-8faf-6d5d3b1d57ba"
     - stage: uuid
-      stageUuid: "7ede5144-d9ce-8b7a-923a-53bb094df52c"
+      stageUuid: "dcebbc04-4aab-841a-ad72-3332b06aac56"
 version: 2
 ---
 # last

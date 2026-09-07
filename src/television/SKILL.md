@@ -2,11 +2,11 @@
 name: television
 description: "Use when reasoning about television as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: television
-coordinate: "television · 5/round · d62705dc"
-contentUuid: "ec254ecd-2715-57f1-b9e0-cbeff3fdae5e"
-diamondUuid: "b92cfe4e-2ab8-8902-85f8-2909e9c0e15f"
-uuid: "d62705dc-2246-8976-95c5-ea01ddae94b4"
-horo: 5
+coordinate: "television · 2/share · 1aacf459"
+contentUuid: "14e39b35-4a0c-5a98-9a02-c835d95f48f8"
+diamondUuid: "12b231d3-7c0b-85b6-aaee-6a632ade6c6b"
+uuid: "1aacf459-72ff-8a20-aca2-0a80988dfd19"
+horo: 2
 typography:
   partition: television
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "90a0fc78-284c-816b-a681-46f51d2a4690"
+  computationUuid: "b6bd33aa-2d39-8691-9d3e-bf770db8445d"
   stages:
     - stage: path
       stageUuid: "6c124fc7-ff3a-8dbf-8b53-8e2c845e61d3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e0ab6558-3342-8314-a264-e4d8e59f3012"
     - stage: horo
-      stageUuid: "7c63dda2-fb0e-804c-8dae-ba23a8699440"
+      stageUuid: "898c3d19-895d-8bbb-a43d-e98b4bfaf515"
     - stage: seal
       stageUuid: "3f8fa4a0-8466-810c-9484-00c8f175c3b9"
     - stage: uuid
-      stageUuid: "492035d5-3e31-8228-9789-a7b40eb91da9"
+      stageUuid: "1a67c4c3-3947-8977-ae45-27bc65ce7085"
 version: 2
 ---
 # television

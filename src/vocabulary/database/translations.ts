@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "database",
-    "uuid": "6336e9dc-ae17-8826-80bc-6cef5847a5f5",
+    "uuid": "81729a65-8a22-874a-8af5-b6735c299d5d",
     "words": [
       "database"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when configuring the Payload database adapter or working with migrations/schema — choosing sqlite/d1/postgres/mongo, running migrate / migrate:create / migrate:down, dev push, transactions, indexes, defaultIDType, or fixing schema/enum/table-name errors.",
-    "uuid": "2a4b088c-005f-8cd6-b56c-e657ee730faa",
+    "uuid": "23a35f5c-edef-82e9-bce0-df8cd4960657",
     "words": [
       "use",
       "when",

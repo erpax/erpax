@@ -2,18 +2,18 @@
 name: karma
 description: "Use when reasoning about karma on the quantum level — moral debt and credit inherited down the DNA chain (the parent_id), entangled via lineage so an atom carries its ancestors' karma, tamper-evident by architecture."
 atomPath: "quantum/karma"
-coordinate: "quantum/karma · 5/round · 7afe0ca6"
-contentUuid: "fdadf557-1963-566a-9d7d-4c851767e39c"
-diamondUuid: "22ab00d4-f114-8f19-8c92-c6c1e2f5ba9b"
-uuid: "7afe0ca6-ad46-8ed4-adb8-bbe00b93c406"
-horo: 5
+coordinate: "quantum/karma · 1/base · 4ffd95f8"
+contentUuid: "97e5210c-81b4-5c50-b513-df9f737d8694"
+diamondUuid: "aa08afc1-201a-8e85-a7fb-089efc9e7793"
+uuid: "4ffd95f8-6c2a-8a14-9976-61b23a6e1348"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 95
 standards: []
 bindings: []
 signatures:
-  computationUuid: "beefb316-81b2-806c-9c1f-f7e4d6abd83e"
+  computationUuid: "6e9740ab-9087-8e47-91c8-647a7ed9ba75"
   stages:
     - stage: path
       stageUuid: "4b2d0c34-9ea0-812d-8125-31dc112326b6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5375f089-925b-82c2-8399-7202dddfb64d"
     - stage: horo
-      stageUuid: "432f93ca-182c-80da-af0d-8b9649c98385"
+      stageUuid: "7c0f74ba-b792-8fc3-9e16-2a3aa4de9fc2"
     - stage: seal
       stageUuid: "05fb4369-e7b0-8249-8f2c-e20ca9514688"
     - stage: uuid
-      stageUuid: "77fb22c9-b8b6-887d-a600-99de08fadbd0"
+      stageUuid: "59baa989-8d3f-85ed-981f-d9689be52129"
 quantum:
   superposition:
     - accounting
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "beefb316-81b2-806c-9c1f-f7e4d6abd83e"
-    contentUuid: "fdadf557-1963-566a-9d7d-4c851767e39c"
+    computationUuid: "6e9740ab-9087-8e47-91c8-647a7ed9ba75"
+    contentUuid: "97e5210c-81b4-5c50-b513-df9f737d8694"
 version: 2
 ---
 # quantum/karma — karma inherited down the DNA chain
@@ -70,4 +70,4 @@ Matter-twin: `src/quantum/karma/index.ts` (`inheritedKarma` · `lineageKarma`). 
 
 @audit composed from @/dna (the chain) + @/karma (the net); computed on the live matrix
 
-<sub>content-uuid `fdadf557-1963-566a-9d7d-4c851767e39c` · account `quantum/karma` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `97e5210c-81b4-5c50-b513-df9f737d8694` · account `quantum/karma` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

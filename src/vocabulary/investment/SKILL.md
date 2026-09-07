@@ -2,10 +2,10 @@
 name: investment
 description: "Use when reasoning about investment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/investment"
-coordinate: "vocabulary/investment · 5/round · fe9888bc"
-contentUuid: "84358ac2-cbd3-55b6-9519-51cfcf4ea8b5"
-diamondUuid: "dcf1333f-7c64-8580-a0c9-428767d5da04"
-uuid: "fe9888bc-c970-8036-a269-8d1cee96da30"
+coordinate: "vocabulary/investment · 5/round · 5443dc99"
+contentUuid: "4bfe176b-ffc3-5da0-bcde-57debb811aee"
+diamondUuid: "64baac0a-9eb6-8a3d-b671-566b556d2602"
+uuid: "5443dc99-99e4-8e4a-a13e-072604754ed9"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "345b6a97-6055-8bb6-8e23-72e1db611022"
+  computationUuid: "b3e65615-c02e-8969-b5b4-f4d3b108d8aa"
   stages:
     - stage: path
       stageUuid: "2309dde6-a627-813f-b561-37418d46b8b8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aac52399-3174-8207-9001-39d7399015e9"
     - stage: horo
-      stageUuid: "1fd0800d-225e-8a0e-9bc6-976298d49c7a"
+      stageUuid: "3fae6ac2-d936-8aa7-89c6-756bcab6d197"
     - stage: seal
       stageUuid: "bbdcb412-fb2e-8d32-8e28-797f25b3d8eb"
     - stage: uuid
-      stageUuid: "172b539c-86d8-818b-a990-f8b1a1e0e1d9"
+      stageUuid: "5848de38-1c68-82c3-b893-283082e22c0f"
 version: 2
 ---
 # investment

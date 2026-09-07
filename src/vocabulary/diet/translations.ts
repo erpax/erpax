@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diet",
-    "uuid": "c37278ed-5115-83e6-b686-aa0743bf7d6a",
+    "uuid": "28c61446-a1c6-8fa9-b415-d03f6ac3bfed",
     "words": [
       "diet"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about diet — A strategy of regulating the intake of food to achieve or maintain a specific health-related goal.",
-    "uuid": "bef0d15a-c176-83f2-b0fc-ad7b7975a0c3",
+    "uuid": "483eae36-aba9-870b-a3f9-bd041d0a20ca",
     "words": [
       "use",
       "when",

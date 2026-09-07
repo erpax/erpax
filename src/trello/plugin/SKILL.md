@@ -2,10 +2,10 @@
 name: plugin
 description: "Use when syncing an erpax collection's records to Trello cards — the Payload plugin whose afterChange/afterDelete hooks upsert a card per record, idempotently: the Trello card id is written back onto the doc and its presence decides create-vs-update, the write-back carries a context flag so the hook cannot re-enter into an unbounded loop, the card-id field is injected whether or not the plugin is enabled so schema never drifts on an env var, and a delete comments on the card rather than destroying data erpax does not own."
 atomPath: "trello/plugin"
-coordinate: "trello/plugin · 2/share · 48a48e96"
-contentUuid: "c2239dc7-79ec-585a-ad39-413201072b6c"
-diamondUuid: "b19b2198-7914-8e7c-b54b-1f406aa83003"
-uuid: "48a48e96-fe7e-8b5e-8683-2e73b5649253"
+coordinate: "trello/plugin · 2/share · 04fe6807"
+contentUuid: "b2c544fa-37b0-5e73-bb78-c55088e99c35"
+diamondUuid: "6e3030d9-0378-8521-9c60-f3bebfe56407"
+uuid: "04fe6807-5fbe-85cb-9f23-bcd0c7e9a5ec"
 horo: 2
 typography:
   partition: trello
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.3 co-existence (erpax shares Trello's namespace without detriment)"
 bindings: []
 signatures:
-  computationUuid: "4470e94c-de7c-8b20-9388-6151ec61fa27"
+  computationUuid: "00a90b4d-1e7c-8701-b37a-8e247c966b34"
   stages:
     - stage: path
       stageUuid: "a30b5ed9-87b1-8f57-8ac0-020cf2a59459"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "807184bd-2c3c-8e31-bbbe-4ef9582fe23c"
     - stage: horo
-      stageUuid: "fb3a0dc8-13be-8e00-b636-cea1a4cf7b98"
+      stageUuid: "7a1f899c-92f3-8240-bd73-818530cbdf84"
     - stage: seal
       stageUuid: "cdfbf8d1-025f-8e0c-a55a-4a0291fa28ed"
     - stage: uuid
-      stageUuid: "d9962aac-deb5-8f8d-917d-c7b9855cce28"
+      stageUuid: "a62eadf3-7251-82fb-9c73-853f4ac85698"
 version: 2
 ---
 # trello/plugin — the record and the card are one thing observed twice

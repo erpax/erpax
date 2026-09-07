@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "format",
-    "uuid": "c9bfa088-8537-80a0-a04e-f57e7a4c2625",
+    "uuid": "40477680-eb64-88dd-a5bd-4133ed3ed6ce",
     "words": [
       "format"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about uuid formatting — the canonical string form of a uuid.",
-    "uuid": "d3d9f64c-f95d-8486-be7f-03b71712f9a2",
+    "uuid": "3fe5ea40-9fd0-870c-afd4-3b4e25eaf5bd",
     "words": [
       "use",
       "when",

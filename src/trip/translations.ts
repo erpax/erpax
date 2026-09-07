@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trip",
-    "uuid": "7cbde74e-7300-8a85-946d-54bf8ecb077f",
+    "uuid": "e5dc4d01-8d1c-8a1e-a9fe-b7b61092c754",
     "words": [
       "trip"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about trip — A trip or journey. An itinerary of visits to one or more places.",
-    "uuid": "71353ed6-417d-85c8-a6d1-0050ab68aab6",
+    "uuid": "6c49d135-9f8a-856f-b2b2-821a4c825ec5",
     "words": [
       "use",
       "when",

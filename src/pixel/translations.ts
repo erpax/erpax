@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pixel",
-    "uuid": "a5a1991d-c84f-8d45-874d-88b5bc3a1ad1",
+    "uuid": "7e5537be-bc34-866b-a40c-be2f0a248e05",
     "words": [
       "pixel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about rendering — a pixel is an atom made visible, the content-uuid rendered to a colour (from its digit on the A432 ring); the atom and the pixel are one identity at two scales, so a component is an atom rendered and VitePress is the corpus rendered.",
-    "uuid": "93501bec-cb6d-8f9e-af93-ea8776d21a3d",
+    "uuid": "7657ab4b-51ef-862e-b3eb-9fc444331068",
     "words": [
       "use",
       "when",

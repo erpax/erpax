@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "memo",
-    "uuid": "7ae532ff-d95b-88b4-a9d5-354cb977c30d",
+    "uuid": "3eb5223b-6779-8b78-bf38-93a8959f7627",
     "words": [
       "memo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one memo — the singular model of the memos collection (the plural store); a brief internal written note.",
-    "uuid": "a174c790-0b8c-80f6-8bec-f7c47eedd12b",
+    "uuid": "728256d8-1a60-8215-b248-7ba18b92a393",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: transactions
 description: "Use when recording or reconciling paired source-document transactions between two group tenants or legal entities — cash transfers, service charges, goods transfers, loans, capital contributions, and cost allocations that must net to zero on consolidation per IFRS-10 §B86 / ASC-810 / SOX §404. The intercompany paired-document register collection."
 atomPath: "legal/entities/intercompany/transactions"
-coordinate: "legal/entities/intercompany/transactions · 4/weave · 7c4b947b"
-contentUuid: "a2a0e7a6-a3a8-5fe4-a64e-5e9c5c8f960b"
-diamondUuid: "3750385a-d845-8099-a184-50ae9e3c971e"
-uuid: "7c4b947b-610d-842d-ba7a-411aee821ea4"
-horo: 4
+coordinate: "legal/entities/intercompany/transactions · 5/round · 0a8c141b"
+contentUuid: "f9f290d0-f1a0-5b57-ae21-b7a0860fd8a0"
+diamondUuid: "30ac260e-e88f-8ab3-bc14-92ef81bc9558"
+uuid: "0a8c141b-e12a-850a-9214-cd2744ad089b"
+horo: 5
 typography:
   partition: legal
   bondDegree: 54
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "69d99220-ae3b-8113-a65b-af1440bf1f93"
+  computationUuid: "7ba6722f-7ad9-836f-8073-831d1b99b8ff"
   stages:
     - stage: path
       stageUuid: "455bd872-0395-885d-b190-b8df4a087691"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "ad2dad8d-2513-86ab-a98d-dda2d489b373"
     - stage: horo
-      stageUuid: "5cf32d1b-7c9a-84d0-a4af-214654759d49"
+      stageUuid: "105c94e6-21f1-8412-8ab8-6c704f23349f"
     - stage: seal
       stageUuid: "dfb8d9b9-c260-8c95-9b24-3b7f09452202"
     - stage: uuid
-      stageUuid: "40f55b40-0fea-83a8-97dc-ab947cb6238c"
+      stageUuid: "fed4a10f-b07e-8fae-a2be-e4015a99793f"
 version: 2
 ---
 # intercompany-transactions

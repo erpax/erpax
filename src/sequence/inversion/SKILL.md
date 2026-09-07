@@ -2,11 +2,11 @@
 name: inversion
 description: "Use when stating what the sequence's inverted reflection IS — the same ring read through the inverse generator, because 2·5 ≡ 1 (mod 9). Three doublings is ×8 ≡ −1, so half a turn is negation and every digit's polarity partner is 9 − d: 1↔8 · 2↔7 · 4↔5, each pair 180° apart. Six positions divide the circle exactly, so a step is 60°, where the arithmetic closes over the Eisenstein integers. Renders the angle, polarity partner and DECLARED colour and pitch of every position for the README and homepage, computed so the prose cannot drift from the arithmetic."
 atomPath: "sequence/inversion"
-coordinate: "sequence/inversion · 7/descent · 4d6f0077"
-contentUuid: "4e7632c5-9a81-5f61-93d8-5fb1e61d7dc5"
-diamondUuid: "e5e27887-0a46-8bb8-bd00-18cf0e57012f"
-uuid: "4d6f0077-d9c2-8346-a466-5e787153bb5e"
-horo: 7
+coordinate: "sequence/inversion · 8/crest · 7e10dbeb"
+contentUuid: "25ef4b92-a806-5168-a5ac-5222dc7c07f3"
+diamondUuid: "61b3e1fc-e479-8f45-934a-c55d179cd763"
+uuid: "7e10dbeb-60df-8c8e-b258-ed9fdf54949b"
+horo: 8
 typography:
   partition: sequence
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "6c53f0bc-020e-8547-a8cb-074fcc5036c1"
+  computationUuid: "902a5909-8f4f-880e-b347-3acc81331341"
   stages:
     - stage: path
       stageUuid: "1c4e8adf-8434-8371-8a95-ba467793e92c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1899d21b-a614-8d8b-a865-6648a62dbba6"
     - stage: horo
-      stageUuid: "ed93cbd2-4594-884e-ad9c-d2bb4fd939d3"
+      stageUuid: "5302142e-0f30-8f0d-8446-37a0c998468a"
     - stage: seal
       stageUuid: "3a9e62de-aa44-8c41-a0be-b09e9cc4f79e"
     - stage: uuid
-      stageUuid: "b920850b-57f7-8c60-a9e3-3fdbea0d12f5"
+      stageUuid: "5d314cbb-f747-8520-9c14-dd7d7178c7d3"
 version: 2
 ---
 # sequence/inversion — the same ring, read through the inverse generator

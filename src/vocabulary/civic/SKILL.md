@@ -2,10 +2,10 @@
 name: civic
 description: "Use when reasoning about civic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/civic"
-coordinate: "vocabulary/civic · 1/base · a345befa"
-contentUuid: "fa8928c4-feff-5303-99bd-14a04263a06a"
-diamondUuid: "421f484a-db20-89b4-92b3-361df1c73088"
-uuid: "a345befa-f684-8354-935f-bc37297ad1ec"
+coordinate: "vocabulary/civic · 1/base · b6c2574b"
+contentUuid: "36dc9792-6f7a-5a57-aed2-4ccf95b74c1e"
+diamondUuid: "0bee1512-84e7-85c7-90e6-493c0a608e8a"
+uuid: "b6c2574b-da54-8817-9b13-5ef78c071a05"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c277cf3c-a3d5-8aa1-9a8f-008b7b3cadbd"
+  computationUuid: "2404f1d9-5e0a-81d9-9ef1-21028f9e2c6f"
   stages:
     - stage: path
       stageUuid: "749ce941-31dc-817c-a52c-0d42c4b80c84"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4d020b5a-4e29-8c24-8da7-2e247da0e19a"
     - stage: horo
-      stageUuid: "77d589e5-865e-85b0-8f02-cffaf4d636de"
+      stageUuid: "6e5c8e77-b517-859e-8111-c5aa58ee918e"
     - stage: seal
       stageUuid: "d699ec37-5ad2-84a7-b3bf-9cfaad8b978a"
     - stage: uuid
-      stageUuid: "3e63e309-62fb-8acd-983f-8c8692fbd88b"
+      stageUuid: "ccf1b490-28af-872d-be37-04dd747cae98"
 version: 2
 ---
 # civic

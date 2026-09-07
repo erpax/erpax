@@ -2,11 +2,11 @@
 name: repair
 description: "Use when reasoning about repair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/repair"
-coordinate: "vocabulary/repair · 4/weave · 6e02f7dd"
-contentUuid: "7284462b-2c41-538f-bd3a-099fa1a2a90c"
-diamondUuid: "9cd749c4-350b-8204-a101-436cae46ad75"
-uuid: "6e02f7dd-fc73-8b46-8d8e-66506a0bc703"
-horo: 4
+coordinate: "vocabulary/repair · 8/crest · 08964007"
+contentUuid: "5f32fce5-07fd-5361-90bc-0cc046cdcf57"
+diamondUuid: "d5d000fb-29f2-8067-92de-133e237efd74"
+uuid: "08964007-cfa3-8488-ba9c-3989e6aabbbf"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c36447d5-ebe5-8a8e-8cb8-9f2774293ed2"
+  computationUuid: "0e2601fd-08c8-87ad-ac75-6d748fff3c8c"
   stages:
     - stage: path
       stageUuid: "b5473471-7661-892c-ae30-3c4f467919b4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "76fe6c42-a774-80e8-9692-3a04569bfa6f"
     - stage: horo
-      stageUuid: "509fab13-52d8-8bad-b45e-3ea9fae68720"
+      stageUuid: "309899c2-dcc8-8470-9f6b-2c9703687d68"
     - stage: seal
       stageUuid: "a448e71e-1d22-8ef4-a3c3-4c2c527b4c70"
     - stage: uuid
-      stageUuid: "a640e91a-4cd1-8a7c-b341-90d62b603ac7"
+      stageUuid: "e6114814-dca7-8834-8b52-777c04fb7c9a"
 version: 2
 ---
 # repair

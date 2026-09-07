@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "axis",
-    "uuid": "d69fbbcf-3864-8e01-b972-9e49bb477b53",
+    "uuid": "b723700a-82b9-8a87-9040-38d074954983",
     "words": [
       "axis"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin.",
-    "uuid": "fea9c815-c1fe-8f6c-8c3f-2545d5825778",
+    "uuid": "9e758454-a372-84ac-b750-4c1f24d6c165",
     "words": [
       "use",
       "when",

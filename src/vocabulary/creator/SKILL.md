@@ -2,11 +2,11 @@
 name: creator
 description: "Use when reasoning about creator — The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork."
 atomPath: "vocabulary/creator"
-coordinate: "vocabulary/creator · 7/descent · 008f9189"
-contentUuid: "60286a07-fc60-58a4-bacb-98aee55d73eb"
-diamondUuid: "d46e8c95-6b55-886e-9199-7320b59947e9"
-uuid: "008f9189-b972-8cb4-a3fb-04100db1bc56"
-horo: 7
+coordinate: "vocabulary/creator · 1/base · c03a43da"
+contentUuid: "47ec7383-2c1c-5bb3-b385-31187f2d8884"
+diamondUuid: "3a39f30f-1267-8e35-9b61-c8e95f7b552c"
+uuid: "c03a43da-30f6-8469-b6d0-2619229a1788"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1b9e4e94-fab7-8d7c-9888-ac4eae2dd919"
+  computationUuid: "34419ef2-e5c0-8973-a8d8-c63f8850d789"
   stages:
     - stage: path
       stageUuid: "c9d4f840-bb7f-8754-8c09-ab9d10dc36f8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "861e39b7-0ec3-8093-9614-e4f4eadc19d3"
     - stage: horo
-      stageUuid: "4e300c3b-bd42-80f4-b220-2fd09f2a0308"
+      stageUuid: "9bf7e0fc-9c6d-810c-810f-b83058de8f4a"
     - stage: seal
       stageUuid: "b8a8923a-45a8-80f9-aaa6-860258d6198d"
     - stage: uuid
-      stageUuid: "c80656c6-2925-8c12-b5d4-0c4ed37b6b14"
+      stageUuid: "e8078a4d-5f7d-8792-b7ab-f9fbedf7b7d5"
 version: 2
 ---
 # creator

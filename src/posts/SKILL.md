@@ -2,11 +2,11 @@
 name: posts
 description: "Use when publishing or querying CMS articles — authored content with hero image, Lexical rich-text, categories, related posts, SEO meta, per-tenant slug uniqueness, versioned drafts, and scheduled publishing. The Payload CMS post collection."
 atomPath: posts
-coordinate: "posts · 5/round · 68298125"
-contentUuid: "4975843a-cfb5-5ed8-8b14-924042892559"
-diamondUuid: "f9fc188a-b202-8595-a297-2c4a32b4aa75"
-uuid: "68298125-542c-8842-9dc2-3e361d853bf2"
-horo: 5
+coordinate: "posts · 8/crest · 608d1057"
+contentUuid: "6277008a-f368-5ff7-8e25-2851cd04b469"
+diamondUuid: "31265073-2144-8171-9def-081f6901c399"
+uuid: "608d1057-5771-8b3d-9e17-93f1147ec141"
+horo: 8
 typography:
   partition: posts
   bondDegree: 19
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b0bfea7f-b45e-8d29-9e75-f8d01c1ad1bc"
+  computationUuid: "e31f020c-80a0-8947-95d9-b63d102c3dd0"
   stages:
     - stage: path
       stageUuid: "1faaa317-c0a0-8259-b2cb-5da3668f7813"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "3ca9de53-49ff-8fb9-ab54-4a77eb20c795"
     - stage: horo
-      stageUuid: "83fc3c6a-832e-8228-81cc-c507891eb576"
+      stageUuid: "4ceff997-719a-84b7-894d-37c487b3df38"
     - stage: seal
       stageUuid: "a59f7144-f4bf-8a20-b8b6-e3ff2ed8e9b3"
     - stage: uuid
-      stageUuid: "2035e015-c8e6-8a6d-8dad-d7ff59d82c94"
+      stageUuid: "817f250d-c137-8640-bc6f-b79b7bf78e3d"
 version: 2
 ---
 # posts

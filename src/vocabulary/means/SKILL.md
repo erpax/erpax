@@ -2,10 +2,10 @@
 name: means
 description: "Use when reasoning about means as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/means"
-coordinate: "vocabulary/means · 2/share · 62cb1897"
-contentUuid: "3ca82180-581e-530b-9c84-d6cae20b7039"
-diamondUuid: "073e800a-13d4-8d80-9f16-aa4341cd7556"
-uuid: "62cb1897-f7b6-85fc-a773-b11b55ef453a"
+coordinate: "vocabulary/means · 2/share · 7e3c0bba"
+contentUuid: "c0248bfe-56d4-583d-868a-f7a11007d6a0"
+diamondUuid: "c6d10b33-3241-8ea9-8901-9592ee2886e7"
+uuid: "7e3c0bba-4615-8e97-b5bc-429d7adecd7f"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5ab1a919-eede-8ac8-8049-581ab3fc33a5"
+  computationUuid: "d3a636b8-68c5-8a7f-9395-78d28160b8a3"
   stages:
     - stage: path
       stageUuid: "d6a6356c-9690-8fe7-ba05-0c0311c12671"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fe8a2466-142d-86fb-9c56-2555a419235e"
     - stage: horo
-      stageUuid: "4a891f86-3d09-8af4-b0d6-1c1bcb65ed47"
+      stageUuid: "23511b36-a94d-8efc-ba0d-7e5531b65d6e"
     - stage: seal
       stageUuid: "a547cfd4-f53a-8606-9320-a48358d904d4"
     - stage: uuid
-      stageUuid: "ad147915-1a74-80b8-9bcb-6d4e4ceda95e"
+      stageUuid: "220542c4-f2f3-8e22-bff1-60b3d7e3770a"
 version: 2
 ---
 # means

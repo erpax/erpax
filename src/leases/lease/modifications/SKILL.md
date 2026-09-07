@@ -2,11 +2,11 @@
 name: modifications
 description: "Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register."
 atomPath: "leases/lease/modifications"
-coordinate: "leases/lease/modifications · 1/base · 3cc25027"
-contentUuid: "b99cb7ca-edef-564e-b365-e02a5a170ecb"
-diamondUuid: "b00c730f-7561-8597-b14a-59018c21f266"
-uuid: "3cc25027-8d63-81ff-a826-1b22ae3ce507"
-horo: 1
+coordinate: "leases/lease/modifications · 5/round · 8fd40153"
+contentUuid: "2c1acb95-145a-516f-9d90-0a9546f78a0a"
+diamondUuid: "e4874078-60f4-8464-9913-3638cc2d8fad"
+uuid: "8fd40153-c4ff-8e6c-9b76-3bf29510c553"
+horo: 5
 typography:
   partition: leases
   bondDegree: 13
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4b7de086-26c1-8c2e-9a83-83ed277c9140"
+  computationUuid: "8a1e8e07-5448-8b47-950c-2305b2ae1e2b"
   stages:
     - stage: path
       stageUuid: "387d6002-6c26-87de-975b-a8c131c33f94"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "0dbc3a2b-f709-86c7-abd8-6223b3ba9db9"
     - stage: horo
-      stageUuid: "a97e3200-3fc5-8bff-86db-5689646fe1ec"
+      stageUuid: "eafb6737-c3b6-8c30-b102-1d0513caff9a"
     - stage: seal
       stageUuid: "55e2106c-237a-843c-a3b9-d4468f302d64"
     - stage: uuid
-      stageUuid: "44eafea5-7f4e-8054-b90a-5d99489a6a01"
+      stageUuid: "627f308d-3796-8d04-bfee-5235c86d8d4c"
 version: 2
 ---
 # lease-modifications

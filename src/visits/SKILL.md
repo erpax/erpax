@@ -2,10 +2,10 @@
 name: visits
 description: "Use when reasoning about visits as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: visits
-coordinate: "visits · 7/descent · d82fda4e"
-contentUuid: "54d8bed6-dda5-5684-ac04-cceccb4a4f52"
-diamondUuid: "0d5557d0-7d6b-8650-b5d2-353644840554"
-uuid: "d82fda4e-0da1-8ce8-bf68-dc67e34e1969"
+coordinate: "visits · 7/descent · 83b4357c"
+contentUuid: "0a25f565-8d4e-519a-bae1-7568a5dcbe17"
+diamondUuid: "468c805a-de1c-83c0-af79-fb388a407f39"
+uuid: "83b4357c-e170-8e04-84b8-8ea0f465463a"
 horo: 7
 typography:
   partition: visits
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "55a51f88-eb2f-86c5-b7e2-61ef4184290d"
+  computationUuid: "a3f2771b-da78-81e5-a00a-d8e5754b96d0"
   stages:
     - stage: path
       stageUuid: "20f337b6-9081-8878-8079-17ed61234989"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "58482f6f-faf9-8dfe-ab18-9103c2a98a7f"
     - stage: horo
-      stageUuid: "055de714-28b0-84bf-b288-79649a2c9e1d"
+      stageUuid: "c3999d69-8020-89b6-86b6-7b91391c2491"
     - stage: seal
       stageUuid: "b2e51738-08a3-840e-8c31-8cb86a531c6c"
     - stage: uuid
-      stageUuid: "b3362654-913e-8103-8c98-05f13fcd8d51"
+      stageUuid: "c7faf65c-aa7c-8f3c-90ac-32159782c9f1"
 version: 2
 ---
 # visits

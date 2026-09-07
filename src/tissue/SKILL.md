@@ -2,11 +2,11 @@
 name: tissue
 description: "Use when reasoning about tissue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tissue
-coordinate: "tissue · 5/round · 01aaf1da"
-contentUuid: "961e3ed9-3570-53d5-8495-dd6e3b246432"
-diamondUuid: "c5a98ad1-5feb-8e1c-bfcc-fffc91000675"
-uuid: "01aaf1da-537b-851d-836a-a231f03e9d6e"
-horo: 5
+coordinate: "tissue · 4/weave · 43b5d504"
+contentUuid: "c3088476-35d5-5139-bd1f-ed4cbd678c69"
+diamondUuid: "1dcb1c44-9fd8-8fa9-b122-cd0f1090a0e9"
+uuid: "43b5d504-4e7d-8b80-87a0-1a749ab757f0"
+horo: 4
 typography:
   partition: tissue
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2380012e-1528-8dd7-981f-845b98235270"
+  computationUuid: "cdf41ba6-80ca-84d9-a4e8-afa5de3ce5af"
   stages:
     - stage: path
       stageUuid: "3f72b4e9-6abf-8057-9c34-a2a3d462fd98"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "080d09fd-f3a6-8efe-8227-005b30e4506c"
     - stage: horo
-      stageUuid: "e756e13b-f2fc-886b-8f89-05ee4b16f17e"
+      stageUuid: "664eacca-d518-8f73-b7e5-5234fe2e3dd5"
     - stage: seal
       stageUuid: "e3d3d417-ab47-8f10-9ff3-dea761290e5b"
     - stage: uuid
-      stageUuid: "e8375b73-bed5-8c16-a360-56e7d6b5e922"
+      stageUuid: "c37321fe-2d3f-800d-91bb-3beef6752499"
 version: 2
 ---
 # tissue

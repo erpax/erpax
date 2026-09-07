@@ -2,11 +2,11 @@
 name: cron
 description: "Use when a Cloudflare cron trigger must actually reach the Payload jobs sweep — runScheduledJobs POSTs to /api/payload-jobs/run with the Bearer token derived from PAYLOAD_SECRET. The logic lives here rather than in worker.ts because that file imports a build artifact and cannot be loaded in a test. Refuses rather than calling unauthenticated when the secret is unset, refuses rather than reaching the public internet when the service binding is missing, and reports a non-2xx — a cron that fails quietly is the defect it closes."
 atomPath: "run/cron"
-coordinate: "run/cron · 1/base · cad3b975"
-contentUuid: "a5f77356-3ca8-5e12-8ead-4d871f9ecd02"
-diamondUuid: "07c3b1bc-f91b-8830-81c5-4fe509bf8187"
-uuid: "cad3b975-cdbd-868e-bda9-41693f403276"
-horo: 1
+coordinate: "run/cron · 5/round · 759e9968"
+contentUuid: "4fb3c2a2-bb2a-53f5-ac67-110662f8ed7c"
+diamondUuid: "d572e25f-0e69-8f39-b0e2-5c2ab9b3101f"
+uuid: "759e9968-e751-84bd-8db9-c5d952766333"
+horo: 5
 typography:
   partition: run
   bondDegree: 14
@@ -15,7 +15,7 @@ standards:
   - "RFC-6750"
 bindings: []
 signatures:
-  computationUuid: "0404789e-b056-8a2b-98b7-fe0ad402390f"
+  computationUuid: "cc540445-b0b2-8ca9-80c2-adef951535ea"
   stages:
     - stage: path
       stageUuid: "8fa13a34-29df-87a5-b437-0ce52f7bd972"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8ab2e060-7fba-843f-a0bf-0563936a0e7d"
     - stage: horo
-      stageUuid: "a5875cf0-cb37-88bf-a6a2-30de7fc795ca"
+      stageUuid: "3c9c3a57-f2e0-8be8-8e02-1a30c1f80bae"
     - stage: seal
       stageUuid: "a2c61223-c5ca-8404-87dd-e824d992ef9c"
     - stage: uuid
-      stageUuid: "f7990bd8-3b8a-8555-8326-86ea13dc91c1"
+      stageUuid: "bd0dcd08-38bc-8ca0-bcce-d826e77d25b8"
 version: 2
 ---
 # run/cron — the trigger that fired into nothing

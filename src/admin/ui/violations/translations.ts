@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "violations",
-    "uuid": "0b71aa9f-59d9-860d-b77b-7384e7059843",
+    "uuid": "d747743b-086c-8de7-a1b7-a2e3645d9f4e",
     "words": [
       "violations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about violations — The provider streams live violations and the panel and dashboard render them.",
-    "uuid": "4161b4f5-56e8-8735-b323-752d3e2f0ee1",
+    "uuid": "3dfdc42f-68cd-8477-bf75-09d28b6b8e10",
     "words": [
       "use",
       "when",

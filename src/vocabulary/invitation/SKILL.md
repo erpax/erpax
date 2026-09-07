@@ -2,11 +2,11 @@
 name: invitation
 description: "Use when reasoning about invitation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/invitation"
-coordinate: "vocabulary/invitation · 8/crest · ad6e3c02"
-contentUuid: "1b2bfa7f-c4c0-5ccb-ab7b-baadbf77492f"
-diamondUuid: "f5a25797-c297-8452-85a5-0cb7a8284031"
-uuid: "ad6e3c02-8779-81d3-884e-6f089e71f67e"
-horo: 8
+coordinate: "vocabulary/invitation · 2/share · 2bebab10"
+contentUuid: "9b238c8e-0bca-5112-b992-b157231a8060"
+diamondUuid: "8051edfb-e71d-8bc5-8d7f-3310288ace9b"
+uuid: "2bebab10-65b9-8184-85b3-088a68e0e51a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e62997e0-a6b3-8110-b4ef-c7d88848d472"
+  computationUuid: "7d8997e8-398a-866c-ab25-6899975c2385"
   stages:
     - stage: path
       stageUuid: "6f6b5dd5-950e-8bc7-8c52-836d2657b46c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ec458aef-7ed8-82bf-93de-ebf21938e678"
     - stage: horo
-      stageUuid: "7e47b5d3-8d1a-8ab9-a4e3-73be3116b047"
+      stageUuid: "b26a3041-66f2-879d-87ca-79dbdfa29cb9"
     - stage: seal
       stageUuid: "052a7755-e359-82e8-a4d4-beb94269a0dc"
     - stage: uuid
-      stageUuid: "ffbbd657-898d-87ef-b152-bce75053654b"
+      stageUuid: "b0001bd5-d643-8c1a-b4ac-db299377879c"
 version: 2
 ---
 # invitation

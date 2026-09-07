@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accrual",
-    "uuid": "8cb70513-cb00-84f4-a14a-4e59de568f07",
+    "uuid": "54651a8e-4579-85fe-9dca-383cdbe89e86",
     "words": [
       "accrual"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard",
-    "uuid": "dd623d0e-0326-859e-bf2d-e5001338c1c6",
+    "uuid": "74abe610-f511-8bf8-8033-e91af835f188",
     "words": [
       "use",
       "when",

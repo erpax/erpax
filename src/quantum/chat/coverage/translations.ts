@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coverage",
-    "uuid": "ec8055e8-8684-82ec-b31b-35babf06f720",
+    "uuid": "63e562ad-298c-8785-b8b1-3a0165b8c4a3",
     "words": [
       "coverage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about coverage — Coverage calculation — measure answered question fraction",
-    "uuid": "a3013b7d-b305-8e2a-9db9-d08609aeaa39",
+    "uuid": "70e05045-f05c-84f4-8c88-808637c97c67",
     "words": [
       "use",
       "when",

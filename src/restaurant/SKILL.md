@@ -2,11 +2,11 @@
 name: restaurant
 description: Use when reasoning about restaurant — A restaurant.
 atomPath: restaurant
-coordinate: "restaurant · 2/share · ffafceb2"
-contentUuid: "c429b979-7c10-5f41-bef0-5556e625bbb9"
-diamondUuid: "01b513da-8434-89d0-8c58-65018f96dbe7"
-uuid: "ffafceb2-7e5e-8875-8749-62662147fb09"
-horo: 2
+coordinate: "restaurant · 8/crest · 7cfc684e"
+contentUuid: "6599c94c-febd-5d28-a099-5d2439fb75da"
+diamondUuid: "024e649a-130a-8cc2-abdb-8c66d0bdaf78"
+uuid: "7cfc684e-e402-85e2-823d-a44090c0c768"
+horo: 8
 typography:
   partition: restaurant
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "be22d0fb-579b-8ac9-ae85-e2c119bedff5"
+  computationUuid: "fce94ee2-3b80-88ca-aa39-72c8029250ee"
   stages:
     - stage: path
       stageUuid: "15f56cf2-3b68-85fc-a4d2-1f4ff8cfb01a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8039d2b9-f4cb-8139-8eae-025e4970b2a1"
     - stage: horo
-      stageUuid: "9312c8f2-f9b3-8efb-95b0-dea3129d45b6"
+      stageUuid: "a4278aa8-5573-8768-92a3-93cc6560714c"
     - stage: seal
       stageUuid: "0eab0093-104f-8192-94fe-4ff8877f3159"
     - stage: uuid
-      stageUuid: "38b9542a-95f8-8934-9f7c-83f948b6f7dd"
+      stageUuid: "7212a0b4-1192-8a75-ae6f-9e4806de06a7"
 version: 2
 ---
 # restaurant

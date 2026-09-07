@@ -2,11 +2,11 @@
 name: laundry
 description: "Use when reasoning about laundry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/laundry"
-coordinate: "vocabulary/laundry · 7/descent · 46198d71"
-contentUuid: "7308cb9d-71e4-5208-9be9-0eb6342c1cfa"
-diamondUuid: "f6604093-24eb-89b2-8c00-3b723f9c633b"
-uuid: "46198d71-e7db-835c-90dc-1954b6bf7aa2"
-horo: 7
+coordinate: "vocabulary/laundry · 4/weave · 2db6bf0e"
+contentUuid: "f970f64d-8824-506f-912e-2894f5466fb3"
+diamondUuid: "94932567-4e39-89f6-b191-47e8e9e1888e"
+uuid: "2db6bf0e-8bda-8237-ae0c-8300f6c5d646"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b9bea14e-ca2c-89f3-a86b-45d0a68b81a3"
+  computationUuid: "46d5e3ad-3030-84ef-8f1b-1e90ceed36d8"
   stages:
     - stage: path
       stageUuid: "32c0a080-4b4c-8ac2-b7c5-b37cee214261"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6ea74b96-42e3-8a40-af76-149e0992d52b"
     - stage: horo
-      stageUuid: "74259656-e907-8637-946b-1713342f8564"
+      stageUuid: "b9cdb340-507c-809f-8887-e4f737d8f65f"
     - stage: seal
       stageUuid: "b6ccd807-c15f-888d-aa06-7b18ba971b56"
     - stage: uuid
-      stageUuid: "cb4262d8-e7b4-84b6-b952-775e11eb2053"
+      stageUuid: "61e55167-b156-8b21-8bc1-3f8ff929d23d"
 version: 2
 ---
 # laundry

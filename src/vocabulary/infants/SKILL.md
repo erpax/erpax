@@ -2,11 +2,11 @@
 name: infants
 description: "Use when reasoning about infants as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/infants"
-coordinate: "vocabulary/infants · 4/weave · 6aa66490"
-contentUuid: "ac124d3f-2d39-5bbb-aef4-bc5cd86e319b"
-diamondUuid: "f6ddf691-2d94-8ee9-83bc-591100f961d4"
-uuid: "6aa66490-5468-8645-9be4-1f5dee269292"
-horo: 4
+coordinate: "vocabulary/infants · 8/crest · a567e5e9"
+contentUuid: "3c2a56c3-733d-5fed-b39f-1c9001f6069d"
+diamondUuid: "66b1789d-99d2-83c1-98f4-76fe5a6ae162"
+uuid: "a567e5e9-4bed-87ca-a38d-92748c2680d4"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "73d10130-d300-82df-b3d7-1cb14d1456bc"
+  computationUuid: "0e9df95a-c350-85f8-8a91-9e3306e4174b"
   stages:
     - stage: path
       stageUuid: "28551756-e6be-8a25-8276-0664c8f0fab9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "944b98ac-a24a-8d57-9f17-c30d46c25a2e"
     - stage: horo
-      stageUuid: "f58851aa-b0cd-81d5-8702-913be9df688b"
+      stageUuid: "c933d52d-b743-8030-8785-243d34d16308"
     - stage: seal
       stageUuid: "59213b56-99a1-83c2-a565-e64d7d245fff"
     - stage: uuid
-      stageUuid: "31e245ae-4387-823c-b367-a23c1c74a7e8"
+      stageUuid: "6ceb5ae8-2104-8d0f-8b6e-c22ff3842c96"
 version: 2
 ---
 # infants

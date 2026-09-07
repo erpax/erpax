@@ -2,10 +2,10 @@
 name: lifecycle
 description: Use when reasoning about lifecycle — Case state machine on the horo ring—filed to sealed through seven positions
 atomPath: "cases/lifecycle"
-coordinate: "cases/lifecycle · 2/share · 6533b307"
-contentUuid: "7a6604e4-f7ee-5e2a-a70d-9c11dd73866e"
-diamondUuid: "25947ce8-8234-8d7d-9e5e-97a90e156dce"
-uuid: "6533b307-82a3-8c8a-b4cb-03be6bd78943"
+coordinate: "cases/lifecycle · 2/share · 75c283cf"
+contentUuid: "f5ebcdfd-1198-542c-b20b-163ea533018f"
+diamondUuid: "5ddcf603-0780-8cc8-9b68-ecf862a47c2e"
+uuid: "75c283cf-f136-8ecd-8c07-83083bc1e723"
 horo: 2
 typography:
   partition: cases
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "01aafa78-d001-88be-85b5-7bb8111e6c54"
+  computationUuid: "7d63c67b-a50d-81b4-be66-735e48b0a0cc"
   stages:
     - stage: path
       stageUuid: "c52bc31c-0ca7-8396-bc22-a6a6fbf1ab4d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a3940f79-03c9-83ed-9917-7f75530e926d"
     - stage: horo
-      stageUuid: "32f2887d-fd3a-8060-8f8b-215b66978eaf"
+      stageUuid: "9ca6b41d-8c3f-87ce-a1b3-9bc4089437b6"
     - stage: seal
       stageUuid: "d3f0646c-8c5b-824b-9a2d-080e365dbc25"
     - stage: uuid
-      stageUuid: "3c37162d-c5d6-8382-8b77-703a229f8e21"
+      stageUuid: "0d35388d-e2da-8e15-926a-3438da5550f0"
 version: 2
 ---
 # cases/lifecycle — the justice state machine on the horo ring

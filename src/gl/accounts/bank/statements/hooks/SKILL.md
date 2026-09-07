@@ -2,11 +2,11 @@
 name: hooks
 description: "Use when reasoning about hooks — fires when a statement lands, which is the event reconciliation waits on. Polling for new statements instead would make the delay a property of the poll interval rather than of…"
 atomPath: "gl/accounts/bank/statements/hooks"
-coordinate: "gl/accounts/bank/statements/hooks · 6/6 · 251a120f"
-contentUuid: "3881e1d8-bfc1-5207-ab3d-67d8ae0b330b"
-diamondUuid: "5bf09d88-fcaf-8a94-8ad4-a077d67d7f63"
-uuid: "251a120f-7c34-86d4-96fa-6659bf4527c2"
-horo: 6
+coordinate: "gl/accounts/bank/statements/hooks · 9/unity · c417bef9"
+contentUuid: "569501b0-740d-5f5c-8070-34b8865e2cff"
+diamondUuid: "aeaeff51-c6e9-8481-8c64-c2b381d85a1f"
+uuid: "c417bef9-f852-8315-81d4-ec50cde0557c"
+horo: 9
 typography:
   partition: gl
   bondDegree: 348
@@ -14,7 +14,7 @@ standards:
   - "ISO-9362"
 bindings: []
 signatures:
-  computationUuid: "b5dd506a-c634-810d-a957-94a804532aa4"
+  computationUuid: "0c79b2a5-0841-880d-9a83-ca16ab46d05d"
   stages:
     - stage: path
       stageUuid: "453b1a0c-fdf5-8086-bd90-7132bbe81972"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a052f9d2-33e4-8129-8ab7-4f10b1df2a43"
     - stage: horo
-      stageUuid: "e43a05e0-4177-8768-b1cb-158fc788095c"
+      stageUuid: "ad22be6f-55ce-8f08-b61b-6597030c9e33"
     - stage: seal
       stageUuid: "4797bd6a-ebbd-827b-a8c6-9b8953975025"
     - stage: uuid
-      stageUuid: "85177bf8-4ac8-8f63-bead-50c202421127"
+      stageUuid: "38290fac-d2bb-8932-a638-11fd38baee59"
 version: 2
 ---
 # gl/accounts/bank/statements/hooks — an imported statement announces itself so reconciliation can begin

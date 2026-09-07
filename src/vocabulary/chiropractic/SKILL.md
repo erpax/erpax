@@ -2,11 +2,11 @@
 name: chiropractic
 description: "Use when reasoning about chiropractic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/chiropractic"
-coordinate: "vocabulary/chiropractic · 8/crest · cfa1d201"
-contentUuid: "51862d7e-721e-5ea0-9cb4-bc85726ce44d"
-diamondUuid: "4b31a933-f3ff-8993-ab02-c452919d4b1e"
-uuid: "cfa1d201-e9b9-8559-89f7-c999e069f318"
-horo: 8
+coordinate: "vocabulary/chiropractic · 5/round · 3ca308c7"
+contentUuid: "7160393c-1121-5008-a748-bd6e65577785"
+diamondUuid: "562ce0b0-ff80-8b8f-8056-9a07bcf7a378"
+uuid: "3ca308c7-9429-8cc4-8d81-cdfb49a6d2b9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f2af9dae-e029-8890-92db-38346500e370"
+  computationUuid: "6e72e4a8-917e-82e5-8c85-aa32601e0b58"
   stages:
     - stage: path
       stageUuid: "0421318d-8a45-859f-bf80-cc4836c85217"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bf2b21a6-41d1-87c3-8e28-20af366fc79a"
     - stage: horo
-      stageUuid: "e0e14cdd-9bae-85ff-8bec-5f6219f83423"
+      stageUuid: "dc419ba3-b17b-82fb-9b36-0f447e142f43"
     - stage: seal
       stageUuid: "eb7a1900-c609-8d24-9cf1-f4ef6b78e1f3"
     - stage: uuid
-      stageUuid: "294ab087-2ef7-8b62-961c-46ea4b5c0d10"
+      stageUuid: "de3e0d67-bcb1-81e7-ba66-aefa2c37cd63"
 version: 2
 ---
 # chiropractic

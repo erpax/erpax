@@ -2,11 +2,11 @@
 name: grant
 description: "Use when reasoning about grant — A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a"
 atomPath: "vocabulary/grant"
-coordinate: "vocabulary/grant · 4/weave · 176e77fe"
-contentUuid: "fdedd72d-49e0-5c3b-8624-28bf11cb3447"
-diamondUuid: "796f6e5f-1829-8ba6-8203-b5f2bb6abdc7"
-uuid: "176e77fe-7334-8daf-afbe-2631f9b0409a"
-horo: 4
+coordinate: "vocabulary/grant · 2/share · 64b085e5"
+contentUuid: "ab21f2d5-9a40-5edc-8944-93a1742156ef"
+diamondUuid: "fc0df6b8-56a9-8af2-85d4-c9c0ed419364"
+uuid: "64b085e5-92fb-83ee-8d43-a52f877fbc49"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5c1a2fc2-17e7-86ff-885e-289c637f15bb"
+  computationUuid: "b975ee4d-f3a2-86de-beb3-ca337d1b1865"
   stages:
     - stage: path
       stageUuid: "fe9beede-c886-8523-99ea-2b7a851ba1b8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "035f5d21-cf43-85cc-92f0-78be1dfe7fcf"
     - stage: horo
-      stageUuid: "3e6866d1-43ed-8fa5-83df-20a9001e4c4b"
+      stageUuid: "8afe4cc3-05d2-8b0d-b5fe-15fb28fe7475"
     - stage: seal
       stageUuid: "27f2b539-526b-8316-bdf1-cd6cf0249641"
     - stage: uuid
-      stageUuid: "139fe78c-336b-872a-a3a0-af8bd34ae6da"
+      stageUuid: "bccd18b0-7523-8158-aac0-acefc077d9b1"
 version: 2
 ---
 # grant

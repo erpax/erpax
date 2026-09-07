@@ -2,11 +2,11 @@
 name: float
 description: "Use when reasoning about float — Data type: Floating number."
 atomPath: "vocabulary/float"
-coordinate: "vocabulary/float · 8/crest · 266dc682"
-contentUuid: "5945e88e-429a-5a22-909b-e0db4cc412a2"
-diamondUuid: "ffe99ea9-d15d-8b58-ade8-d9a8d0fbcde7"
-uuid: "266dc682-57b4-8fb7-977c-67a6373cf931"
-horo: 8
+coordinate: "vocabulary/float · 4/weave · bfba38cf"
+contentUuid: "c538c420-ffa5-576a-bbab-0a572c799d8f"
+diamondUuid: "1dca31e1-bb1c-8516-a27e-b66c3af19fc5"
+uuid: "bfba38cf-de5e-8678-a58e-678283d46e4f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a829b24e-0d03-8b1b-b1f8-d0a2ce97726f"
+  computationUuid: "24fe094e-1186-8095-8772-8be4dc0c0a6e"
   stages:
     - stage: path
       stageUuid: "8c7fec2e-aca2-8e76-a3c8-1112e866e1db"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5772c4ef-61c5-8df5-a90f-7c44dc74f79a"
     - stage: horo
-      stageUuid: "91958569-d3ce-8a83-95a8-ed939b29e1b1"
+      stageUuid: "d4c934e8-5b13-8925-8a2e-6b4c696dd039"
     - stage: seal
       stageUuid: "f4233c7b-9f73-8321-8a4a-0a4e07cdb46a"
     - stage: uuid
-      stageUuid: "78d225e9-bf72-881f-87a1-b6cf1ba5b18d"
+      stageUuid: "5bde8e8c-8df0-853d-b684-0fe5fc0c201f"
 version: 2
 ---
 # float

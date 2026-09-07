@@ -2,18 +2,18 @@
 name: dissolve
 description: "Use when collapsing prefixed units into the single-word matrix — drop the grouping prefix, split camelCase/hyphen names into nested single-word folders, apply singular-model/plural-collection, remap @/ imports, rewire barrels, merge same-word collisions as accountable collections. The deterministic mover; the matter is index.mjs."
 atomPath: "vocabulary/refactor/dissolve"
-coordinate: "vocabulary/refactor/dissolve · 5/round · 344d5ad7"
-contentUuid: "eef37c8d-3d08-5e92-b5f0-1359ccbc4801"
-diamondUuid: "0573ecc3-255c-8a02-a298-4a804e6848ba"
-uuid: "344d5ad7-28e2-89e5-9676-476334f6efe2"
-horo: 5
+coordinate: "vocabulary/refactor/dissolve · 1/base · 2b2877ee"
+contentUuid: "425fcf26-0225-523e-a91a-dec12adbcd92"
+diamondUuid: "32c780ab-bcfa-81d1-8687-5eddff6e15a2"
+uuid: "2b2877ee-2983-876a-88a1-f4711250eefb"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 22
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1cc302a2-6924-8bc1-928a-39bb8d29803a"
+  computationUuid: "20187da6-7284-82f1-9c86-a81adeb4724c"
   stages:
     - stage: path
       stageUuid: "75e15ee6-0876-8db9-9f0e-365e7db2329f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c06605ec-dd24-8620-8e86-67afcee0d3f4"
     - stage: horo
-      stageUuid: "06d0c2e2-1405-82b3-a878-7562fbc44e9d"
+      stageUuid: "cc8fcb4d-025b-82e9-9ab7-eb5410c53d78"
     - stage: seal
       stageUuid: "74f2c85a-0609-8f1a-96c9-ba09207c79b1"
     - stage: uuid
-      stageUuid: "fcc55096-dd83-8204-bc22-e50af4153cf2"
+      stageUuid: "6f6e763c-9251-8724-a2e8-c6d37caa38e2"
 version: 2
 ---
 # dissolve — collapse prefixes into the single-word matrix

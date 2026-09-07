@@ -2,11 +2,11 @@
 name: constitution
 description: "Use when reasoning about the entrenched foundation, or when judging whether a proposed change may ship — two rules at the root (no expectation: claim no result you have not computed; no judgment: reject nothing you have not measured, discernment by test kept), the nine laws that are their lemmas (duality · legality · honest boundaries · balance · service · conservation · reciprocity · reproducibility · regeneration), and the seven supreme articles saying what a majority may amend versus what is perpetual; every predicate computed, fails closed, and heads every agent prompt."
 atomPath: constitution
-coordinate: "constitution · 5/round · deee6cf0"
-contentUuid: "1900971e-4634-591a-a8e4-e1f7e3d977be"
-diamondUuid: "ed15771f-3032-8835-a522-294dacc5d668"
-uuid: "deee6cf0-b31d-8b1d-86e9-e7ea9c7af936"
-horo: 5
+coordinate: "constitution · 4/weave · 2343c66f"
+contentUuid: "eb578917-c914-58e5-9f6b-0c4f01bf2997"
+diamondUuid: "55a5ebfa-9979-8d65-995a-e19af0b4716b"
+uuid: "2343c66f-1127-81f0-b262-6f68fa8d4a76"
+horo: 4
 typography:
   partition: constitution
   bondDegree: 81
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fe4fe3c0-ed04-8af3-ba8a-e61fc37f7f16"
+  computationUuid: "dd4daf0f-41d9-8034-b7ee-a23e2b67fb41"
   stages:
     - stage: path
       stageUuid: "210a2855-2ef2-8f53-8a65-93ebae61b5f1"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "a7cbe860-88e4-817d-b587-b9ebc2043b6f"
     - stage: horo
-      stageUuid: "49555449-eb1c-8548-ab24-94b1841d8526"
+      stageUuid: "a9293be8-9c81-822e-b83a-8002f1a8c8c9"
     - stage: seal
       stageUuid: "79d6cdcb-5abc-8ea1-af80-6c8ad39015bf"
     - stage: uuid
-      stageUuid: "69543f97-26f7-8fe1-8f96-093ca549e05f"
+      stageUuid: "2fc20505-5c56-8d56-a3ee-3c412055c6b0"
 version: 2
 ---
 # constitution — the 0 of the sequence, the supreme law erpax derives from

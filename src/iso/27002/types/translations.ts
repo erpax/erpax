@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "913f3882-f9d9-8892-beee-e2419988bc26",
+    "uuid": "0422d299-7afe-83f1-be26-ffc75d831a69",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase.",
-    "uuid": "3c4761e4-29c6-85e7-8955-53f2dc0335ff",
+    "uuid": "d0e3e12a-9ce1-8d27-b630-85da881c1357",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sufficient",
-    "uuid": "6c1ec334-5186-8a76-a4fa-ad92a4397e98",
+    "uuid": "2f197aa6-70c4-8d10-8c4a-9ad064f769dc",
     "words": [
       "sufficient"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions.",
-    "uuid": "db3c2832-1fba-8d07-b109-1ae094c201a1",
+    "uuid": "f7e1273c-9a24-8f9a-91e7-c7d7c66b68a1",
     "words": [
       "use",
       "when",

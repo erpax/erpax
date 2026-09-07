@@ -2,10 +2,10 @@
 name: registry
 description: "Use when a standard's canonical title, family or publisher is needed — the curated spine of facts a banner scan cannot derive, joined to fs-derived usage to build the shared catalogue."
 atomPath: "standards/registry"
-coordinate: "standards/registry · 1/base · bb4a2b86"
-contentUuid: "c6b82fd9-4f95-5344-a919-4b2ec5a0c1e0"
-diamondUuid: "ec8f61ad-049d-8060-a10d-441d97df3176"
-uuid: "bb4a2b86-251f-8821-bba8-bd2c3fed3237"
+coordinate: "standards/registry · 1/base · 2a57ec69"
+contentUuid: "5148de23-e30b-5dc0-8f8e-92eb7567caf0"
+diamondUuid: "96126904-f889-8e0e-be64-45f975f2a2eb"
+uuid: "2a57ec69-c61e-86cd-8bb4-8fcca0b42f8e"
 horo: 1
 typography:
   partition: standards
@@ -17,7 +17,7 @@ standards:
   - "banner against every registered matcher: 777 citations across 416 distinct heads"
 bindings: []
 signatures:
-  computationUuid: "ac1b6264-4a81-8f70-81e4-c245dda6c065"
+  computationUuid: "744d23dd-d53e-8282-8de0-9a859d374969"
   stages:
     - stage: path
       stageUuid: "9d2a0781-409a-824e-b4d5-4245013bc8cd"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "14e7d49b-d238-88f2-b37f-9155b78f5e2e"
     - stage: horo
-      stageUuid: "057f07ad-1758-8216-a2d6-34de2d54ab7a"
+      stageUuid: "440d9035-ab4c-80f6-9f19-715cdcd8fa06"
     - stage: seal
       stageUuid: "656dc0b0-4214-8a40-a75c-89b31d85cb4a"
     - stage: uuid
-      stageUuid: "c08ea250-af50-868c-b002-248bc2739ee3"
+      stageUuid: "572755e4-f699-8b5b-b9a7-79b2ff7eb47c"
 version: 2
 ---
 # standards/registry — the facts a scan cannot derive

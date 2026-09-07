@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "risk",
-    "uuid": "154f5704-68bc-8780-9693-0a297be25548",
+    "uuid": "6dbfa9bf-f429-8c66-a62c-85fc157e27a6",
     "words": [
       "risk"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy.",
-    "uuid": "4c20789f-2d74-80aa-9a56-6b8acf09ee90",
+    "uuid": "dcfec98c-278d-840e-b936-0e53fd76a39c",
     "words": [
       "use",
       "when",

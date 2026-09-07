@@ -2,11 +2,11 @@
 name: standards
 description: "Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node."
 atomPath: "taxing/jurisdictions/reporting/standards"
-coordinate: "taxing/jurisdictions/reporting/standards · 8/crest · 81db690f"
-contentUuid: "4da438bc-1232-534b-ac92-cba45fb0d2d6"
-diamondUuid: "f4dad5de-7c21-802e-b61e-0d356eb5b312"
-uuid: "81db690f-9a3d-8634-afb9-23abab658094"
-horo: 8
+coordinate: "taxing/jurisdictions/reporting/standards · 7/descent · 88f7b442"
+contentUuid: "5bb28ff1-9125-5b03-82cb-25f839442e0b"
+diamondUuid: "19aafaf1-8e5c-821f-87df-7fea12e6329d"
+uuid: "88f7b442-5541-8f5f-a31b-6aef0da77bf9"
+horo: 7
 typography:
   partition: taxing
   bondDegree: 188
@@ -18,7 +18,7 @@ standards:
   - XBRL
 bindings: []
 signatures:
-  computationUuid: "147831d0-42e8-81ba-85d7-0c4d67c5fb68"
+  computationUuid: "cd801109-ebac-81b7-8dd1-fc44612ffe2b"
   stages:
     - stage: path
       stageUuid: "4af287e0-188e-844c-8fa6-620d4d1f9c12"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "0cac38e5-17dc-88ae-a5d5-2ae301f12ceb"
     - stage: horo
-      stageUuid: "a87301a1-3745-8500-bdda-ca47fc54e635"
+      stageUuid: "078122b9-d4ef-87fb-9b10-a64f2642238c"
     - stage: seal
       stageUuid: "7167b4d5-549b-8bc9-b2bc-0ff9312d6f51"
     - stage: uuid
-      stageUuid: "04378f95-32e5-8b9d-8b13-022ccc9a9142"
+      stageUuid: "aff30d4a-ab55-8274-8921-e257a9fa947d"
 version: 2
 ---
 # reporting-standards

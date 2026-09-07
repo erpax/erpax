@@ -2,10 +2,10 @@
 name: zoo
 description: Use when reasoning about zoo — A zoo.
 atomPath: zoo
-coordinate: "zoo · 5/round · 0890e641"
-contentUuid: "e500bce6-aeef-5db1-88da-9c0ad21408b4"
-diamondUuid: "12667052-6680-8556-93ae-a264ee0ac8bf"
-uuid: "0890e641-9864-889f-bc9f-432274510e4a"
+coordinate: "zoo · 5/round · a82274da"
+contentUuid: "e43c8889-d5a9-582e-81d6-de3074da8732"
+diamondUuid: "e1c6f9af-d7fa-8db6-8800-8b22f84d1b47"
+uuid: "a82274da-b5ad-8353-a4c9-ae52d2001aba"
 horo: 5
 typography:
   partition: zoo
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a3a91ce1-48c2-8d6d-a4fb-02e065e37408"
+  computationUuid: "68dd6925-fb83-800a-ae54-b735073a15e6"
   stages:
     - stage: path
       stageUuid: "25372f2a-3c51-8d61-a4a2-71dfe72d9acb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "24b8101e-f2b9-8989-b026-533b7dc9e7e4"
     - stage: horo
-      stageUuid: "42f29f70-ddf5-8c08-bccf-c84b463e6d9e"
+      stageUuid: "a9de4e61-71e1-8814-94f5-ae5e38955ddb"
     - stage: seal
       stageUuid: "23b7a85d-2053-8172-b6e5-4d9b59f34ce6"
     - stage: uuid
-      stageUuid: "d6654ad0-00d2-8ee7-a134-3512f34ead1f"
+      stageUuid: "773f7b68-a144-82b2-8597-779a260e13e2"
 version: 2
 ---
 # zoo

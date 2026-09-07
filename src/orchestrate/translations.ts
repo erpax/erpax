@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "orchestrate",
-    "uuid": "5f82706c-3ab8-8f1b-91f7-a81be341b92b",
+    "uuid": "e2a71036-a8bb-8ceb-8529-015962918835",
     "words": [
       "orchestrate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about orchestrate — Quantum orchestration engine for parallel Millennium Problem computation",
-    "uuid": "b9765460-e093-8006-bd60-644bde5458ed",
+    "uuid": "8b644f86-6f3b-8751-b2b3-ae2f867a07c5",
     "words": [
       "use",
       "when",

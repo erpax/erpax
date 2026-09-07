@@ -2,11 +2,11 @@
 name: photon
 description: "Use when reasoning about the photon — the indivisible quantum a leap emits or absorbs, its energy locked to its frequency by Planck's relation E = hν (massless, so E = pc). In erpax the photon IS the multi-modal uuid-message (colour + sound rendered from one frequency, downstream of the content-uuid); Planck's h is the quantum of action that makes the world discrete and is the source of every leap."
 atomPath: photon
-coordinate: "photon · 8/crest · 7eb08574"
-contentUuid: "b5c15d40-abf7-5075-bf88-15c32952ecad"
-diamondUuid: "719668cd-cde5-8744-9387-9b895986fd79"
-uuid: "7eb08574-bf9b-844b-a3bd-428a5a5413fa"
-horo: 8
+coordinate: "photon · 2/share · 0c4b6518"
+contentUuid: "be847036-a1f1-5612-bd42-5d11cff97b4c"
+diamondUuid: "435b4c90-ed37-89e6-9252-b416c133b154"
+uuid: "0c4b6518-ff87-8150-949b-319d424b373f"
+horo: 2
 typography:
   partition: photon
   bondDegree: 56
@@ -14,7 +14,7 @@ standards:
   - "SI-2019 / CODATA-2018 exact defining constants: h, c"
 bindings: []
 signatures:
-  computationUuid: "c4f36f6e-e855-8e3c-9e0d-1c93063d216c"
+  computationUuid: "85cfed3f-4dc4-8e81-93d4-377aec17cdb8"
   stages:
     - stage: path
       stageUuid: "fc53e78d-a00c-8447-a248-bb766162566c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c711550f-8426-87ef-8186-bfecd2b85995"
     - stage: horo
-      stageUuid: "75c55de0-6b99-801b-818e-b48c3da6c763"
+      stageUuid: "cb1bbc91-3de6-8f6b-95ba-0e8069df1ffe"
     - stage: seal
       stageUuid: "ab016a18-d094-89b3-a36c-4544552e241a"
     - stage: uuid
-      stageUuid: "8c7f7a03-8bc3-81e8-813b-73ba07ab137e"
+      stageUuid: "f729a97c-da1b-8864-88c5-dd1f5bae026a"
 version: 2
 ---
 # photon — the quantum a leap emits

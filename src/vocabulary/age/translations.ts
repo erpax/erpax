@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "age",
-    "uuid": "76e36ed0-7073-81a0-b713-d636d123781a",
+    "uuid": "ff0d2dec-28d6-8f3e-8e48-dc0566eab758",
     "words": [
       "age"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when treating age as a sociological axis — възраст — the life-course dimension that stratifies a society alongside class and status. Inequalities compound along it (cumulative advantage — the horo doubling), ageism flips the status sign against older workers, and a population's ageing inverts the pyramid that funds the allocation/decompression pot. The late in late career is a point on this axis; model age as one dimension with roles, not a separate entity.",
-    "uuid": "5496a74c-dbab-83d0-963c-8f482dce7450",
+    "uuid": "8cc18f80-3d6a-8a12-adbd-1ae9dbaf9af8",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: type
 description: "Use when reasoning about type — A Payload id is a number in Postgres and a string in Mongo, and a collection may override the database-wide default with ."
 atomPath: "get/collection/id/type"
-coordinate: "get/collection/id/type · 1/base · 472862db"
-contentUuid: "4d3a9a17-80da-51a9-8830-9497b45e9f6a"
-diamondUuid: "5c248606-5160-8740-8312-3f91af871e53"
-uuid: "472862db-503d-83a9-ad83-4e2a24a9abb3"
-horo: 1
+coordinate: "get/collection/id/type · 5/round · 834f50f0"
+contentUuid: "1b4e4919-7210-53be-9f0c-cb0ede6a7222"
+diamondUuid: "f5df3f0d-01c1-8083-aa2a-3377deb5b72a"
+uuid: "834f50f0-572a-8e67-852f-065c48ae7865"
+horo: 5
 typography:
   partition: get
   bondDegree: 279
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d178a226-a102-8e9b-8a0f-4268ad0ff942"
+  computationUuid: "949765bb-d469-8f92-8ae0-d0d31d75c4ee"
   stages:
     - stage: path
       stageUuid: "c221adbc-5775-8d2a-944e-ee4078da9d47"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ccd8aac8-8b05-84f8-b80f-fc19aa89f605"
     - stage: horo
-      stageUuid: "0f699bce-1545-8c48-a1f7-a5d7ebd82434"
+      stageUuid: "df6b7013-7eb2-8b8e-961c-bffc6bb8146a"
     - stage: seal
       stageUuid: "8fffe971-2757-8365-962c-3a0dd8a08095"
     - stage: uuid
-      stageUuid: "2e6204e9-1eb0-8e1e-b2d0-637b845c747a"
+      stageUuid: "9de30549-4630-8f70-ac1d-e48876134c18"
 version: 2
 ---
 # get/collection/id/type — ask the running config what shape an id is

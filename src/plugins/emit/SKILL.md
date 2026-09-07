@@ -2,18 +2,18 @@
 name: emit
 description: "Use when reasoning about emit — plugins/emit — generate Claude Code plugin manifests for erpax."
 atomPath: "plugins/emit"
-coordinate: "plugins/emit · 1/base · acdc8a77"
-contentUuid: "55120ae6-3d96-52cf-9512-d58703b198b5"
-diamondUuid: "62e1efbd-aa14-8e64-8d44-3c965711dd92"
-uuid: "acdc8a77-a855-8c98-9d9a-d3ffb3b30aa3"
-horo: 1
+coordinate: "plugins/emit · 5/round · a9b311c8"
+contentUuid: "104ace8e-d616-5d3a-8923-7d102968e437"
+diamondUuid: "8c66b688-67e2-87df-9123-9fe398c8a0f0"
+uuid: "a9b311c8-d0d6-868a-853c-330ef435201f"
+horo: 5
 typography:
   partition: plugins
   bondDegree: 8
 standards: []
 bindings: []
 signatures:
-  computationUuid: "233d0f04-8bd8-8337-a4fc-a45739fa9f14"
+  computationUuid: "bd716676-4a0e-8823-9ea2-ead9534d3bce"
   stages:
     - stage: path
       stageUuid: "c4c8351c-c31e-89f9-a0b4-e95dfb4f0fed"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b4287366-f723-84ac-aa89-149b24f16b54"
     - stage: horo
-      stageUuid: "58510477-5f6d-8dc0-86d6-dfb4caa9f28a"
+      stageUuid: "0dfc7984-380e-81f7-9518-7fb7f2b0308e"
     - stage: seal
       stageUuid: "ce9a4e62-3fc1-807b-8103-c362329917be"
     - stage: uuid
-      stageUuid: "68697ff1-5ce8-8711-9c5e-1e0aa225e4bc"
+      stageUuid: "b70c6c0f-135b-82db-9073-abd7c6c3c292"
 version: 2
 ---
 # plugins/emit

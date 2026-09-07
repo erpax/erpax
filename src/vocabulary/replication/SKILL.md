@@ -2,18 +2,18 @@
 name: replication
 description: "Use when data must exist in multiple places — read replicas, primary-replica sync, replication lag, replication filtering, point-in-time recovery from replicas, federation/multi-tenant replication semantics."
 atomPath: "vocabulary/replication"
-coordinate: "vocabulary/replication · 2/share · 262751ea"
-contentUuid: "13459bd6-63a2-54fd-b9bb-c74ce7aaf2e0"
-diamondUuid: "f6c55228-3b07-8b50-9f89-ef368c276f54"
-uuid: "262751ea-9f1f-8e83-a0c2-e3b8378ebfe7"
-horo: 2
+coordinate: "vocabulary/replication · 5/round · 12ff6ec7"
+contentUuid: "8cbdcee2-da82-5f5f-bc6f-48ed0dfb0547"
+diamondUuid: "f43e2439-b88e-8da3-a153-b31e0604f008"
+uuid: "12ff6ec7-92a6-80ed-9de7-76233624cf74"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1dc1d392-714f-8199-b6ff-2c952a90f776"
+  computationUuid: "56382ed2-26c4-83da-905e-cb80d43ff5fe"
   stages:
     - stage: path
       stageUuid: "66aeccf9-cfd7-8881-8c87-1c9a7df9ed06"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ee6c5ba7-83d1-8a19-a562-2f06cc7d3a01"
     - stage: horo
-      stageUuid: "5661fbe9-ad59-8495-94d8-a4293baf55d7"
+      stageUuid: "8ac2b415-f107-8af3-b74a-9e701b07f202"
     - stage: seal
       stageUuid: "6f8292a2-b2f9-8bf1-9872-da18f548ad8f"
     - stage: uuid
-      stageUuid: "81e2898c-716b-88d6-80b8-42d45bdad95c"
+      stageUuid: "37857e8c-eb4e-8abd-978d-e2614e8c7c74"
 version: 2
 ---
 # replication

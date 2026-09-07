@@ -2,10 +2,10 @@
 name: paper
 description: "Use when a sealed claim might warrant a publication — emits a lean LaTeX paper and an HONEST prior-art verdict, where an empty Zenodo search is a lead and never a finding."
 atomPath: "publish/paper"
-coordinate: "publish/paper · 4/weave · c13ed572"
-contentUuid: "823c9048-ca9b-59ff-9958-2433eaeba12c"
-diamondUuid: "3a9eeb0c-369d-82e4-b400-9c499d4f7563"
-uuid: "c13ed572-9e4d-8e34-884e-38377568c1ca"
+coordinate: "publish/paper · 4/weave · 89d6d055"
+contentUuid: "0b9103d5-766b-5d7a-bf1b-6baeb7f84dea"
+diamondUuid: "8a521836-7fb8-84f5-981a-ba34cdffc5ce"
+uuid: "89d6d055-3e72-8477-b8d2-d0fdc8199443"
 horo: 4
 typography:
   partition: publish
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "09b9d3e9-f1fc-81ac-bd8f-38c1aac2947b"
+  computationUuid: "5f644059-f2c7-88d6-a53f-10a00e49601e"
   stages:
     - stage: path
       stageUuid: "9d70424e-9b77-8810-af0f-9e6a0f397b2e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7563090f-f3c1-88bc-be46-72691623fe5f"
     - stage: horo
-      stageUuid: "d50df9cc-3b9c-8bc5-b9c4-9fcfae678952"
+      stageUuid: "6b718a2b-28a8-8cad-8afc-a2021911bdcf"
     - stage: seal
       stageUuid: "8906e13a-4348-88e3-a935-060dcca3d11c"
     - stage: uuid
-      stageUuid: "c1432108-04d3-8248-b247-973f37f5f99c"
+      stageUuid: "132fd642-9882-8bd7-919e-ffe3e917d0ac"
 version: 2
 ---
 # publish/paper — a search box cannot tell you something is new

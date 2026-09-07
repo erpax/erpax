@@ -2,11 +2,11 @@
 name: reservoir
 description: "Use when reasoning about reservoir — A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir."
 atomPath: "vocabulary/reservoir"
-coordinate: "vocabulary/reservoir · 4/weave · 1e4365aa"
-contentUuid: "a60f2871-f5bc-5aa0-a149-32850fcf2319"
-diamondUuid: "44a7c20d-2366-8869-a1fa-d1a4396297c0"
-uuid: "1e4365aa-7a4e-8819-9aa9-8867e545bd6c"
-horo: 4
+coordinate: "vocabulary/reservoir · 5/round · 21243755"
+contentUuid: "39c3aa70-35b0-5dc4-ab6f-5906efe4f66d"
+diamondUuid: "382e4894-3ac7-8841-b07d-c17c322e619b"
+uuid: "21243755-4c70-8937-bda5-4f84803a81c6"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "91d07cab-ca57-8754-b123-97bbe7fa5cc5"
+  computationUuid: "e7a4d1b9-4b2c-80d1-9feb-900281780e24"
   stages:
     - stage: path
       stageUuid: "a312316e-cf75-8d54-a5d4-a1b700f59699"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "25b1a166-b103-837f-8e07-99719a0aed24"
     - stage: horo
-      stageUuid: "467c5307-bc4e-8dcb-84d1-1724360987de"
+      stageUuid: "332c5051-5e45-8b99-a966-e12eeaa10af3"
     - stage: seal
       stageUuid: "94bcfed6-ee61-846c-879d-f4a599ac3280"
     - stage: uuid
-      stageUuid: "8b057d48-ba1c-8849-ae0c-d073880cb86a"
+      stageUuid: "788f792b-5eee-8ca0-b4e3-7d0178b32523"
 version: 2
 ---
 # reservoir

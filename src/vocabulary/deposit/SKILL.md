@@ -2,10 +2,10 @@
 name: deposit
 description: "Use when reasoning about deposit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/deposit"
-coordinate: "vocabulary/deposit · 4/weave · e2508faa"
-contentUuid: "02d9899d-bb15-5a74-a8fe-24d57c40672f"
-diamondUuid: "28af874e-146e-8fa4-a631-5daa8ba86d53"
-uuid: "e2508faa-8c04-8d5c-8b7f-a115be99fed9"
+coordinate: "vocabulary/deposit · 4/weave · 2f11a44e"
+contentUuid: "e3a76cb6-7619-578b-b143-805cfef43177"
+diamondUuid: "40cb8c0d-dfbd-8e07-ab89-8054bcc451a5"
+uuid: "2f11a44e-5ce5-847c-bd91-141273bfee2d"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ffbcc4f6-6a7e-8d78-a651-5c0ef1de184c"
+  computationUuid: "63f5b106-d5d7-81fe-8e79-d591e666b1bd"
   stages:
     - stage: path
       stageUuid: "4929b6f8-d2b3-8452-99ac-1948dea159ed"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ca262907-32eb-8301-b566-9ac6231e74d3"
     - stage: horo
-      stageUuid: "9091f8c8-a481-8243-9fa8-c68b475dd4c5"
+      stageUuid: "1a1b4817-9218-8e69-bbf0-8c1823dbcfb9"
     - stage: seal
       stageUuid: "95cdf743-d60d-86e7-9c3a-45b61cd7b458"
     - stage: uuid
-      stageUuid: "0733e32e-dbc3-8587-bf4a-61c1ce2c77ec"
+      stageUuid: "380d6c65-6764-8ff5-ac68-038f69c60c24"
 version: 2
 ---
 # deposit

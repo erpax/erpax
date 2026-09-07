@@ -2,11 +2,11 @@
 name: female
 description: "Use when reasoning about female as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/female"
-coordinate: "vocabulary/female · 8/crest · 0c5dd709"
-contentUuid: "158f30d5-0c02-508b-b438-5b4e054047c6"
-diamondUuid: "629f76ff-c492-840a-8f27-a08cc185d8d1"
-uuid: "0c5dd709-81c7-80e4-9379-2b8c6e9bc692"
-horo: 8
+coordinate: "vocabulary/female · 4/weave · 6a631920"
+contentUuid: "e1fec3a2-a749-5d31-89ec-4229e9cb7654"
+diamondUuid: "fbdc1f4c-89dd-8ba5-94da-70633f09e3a3"
+uuid: "6a631920-db56-8595-b0ed-fadfdf2e5351"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c2822d85-4a55-8784-b938-6a8945742fb5"
+  computationUuid: "6b47425b-17ab-884d-b418-7835a7e28260"
   stages:
     - stage: path
       stageUuid: "a6df65c4-89d2-88ed-bdb4-d095c9378d26"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ff026dfc-fe18-8d72-bc6b-170dc75cd81a"
     - stage: horo
-      stageUuid: "8f8a0617-78f0-8e42-8ac0-9b7b73b7781e"
+      stageUuid: "e772245a-4e40-873c-81cc-9a03990b5a4d"
     - stage: seal
       stageUuid: "86ff10d9-7537-8955-8dd2-a0d59142c63b"
     - stage: uuid
-      stageUuid: "1524c592-b618-8644-93c6-cfde32b823d5"
+      stageUuid: "d5458a8a-ca70-81d3-aceb-a4be6fac8f27"
 version: 2
 ---
 # female

@@ -2,11 +2,11 @@
 name: toc
 description: "Use when reasoning about toc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: toc
-coordinate: "toc · 4/weave · f15edc86"
-contentUuid: "d4d51618-ae3f-5eff-a9e5-8a41cb0a57c8"
-diamondUuid: "5e2d5147-1b3b-8b6e-8e5d-afa3438ecde8"
-uuid: "f15edc86-0d46-8548-a93f-d046c5f8758f"
-horo: 4
+coordinate: "toc · 8/crest · f0a5c352"
+contentUuid: "65888fe3-b082-5fdd-9795-b77fdad117f8"
+diamondUuid: "a9202241-d121-8361-b220-1aa5ae8d56c3"
+uuid: "f0a5c352-38e2-8167-90ea-043497771bfe"
+horo: 8
 typography:
   partition: toc
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3de4a371-6328-800a-a00e-f567b3254187"
+  computationUuid: "10aefe7c-d650-89b5-9aa8-7394d9c8363c"
   stages:
     - stage: path
       stageUuid: "a536d202-aad2-8470-8ff6-b61527022ed8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ae9d71d4-291b-8839-bd56-3c4b48a53e3a"
     - stage: horo
-      stageUuid: "72429a87-1d7d-8f66-ba2c-81daad0fedcc"
+      stageUuid: "aad62d4d-2422-8aa8-b9c1-5eabc9d058a6"
     - stage: seal
       stageUuid: "9e2ddf20-dbb4-8d35-a538-0c572cdc5ebd"
     - stage: uuid
-      stageUuid: "a65ddf6a-1bfe-8525-a2a5-e41774225324"
+      stageUuid: "ef270c89-d792-8b0b-bc7c-3e7b59209eca"
 version: 2
 ---
 # toc

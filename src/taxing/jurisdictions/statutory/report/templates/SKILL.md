@@ -2,11 +2,11 @@
 name: templates
 description: "Use when defining or retrieving jurisdiction-scoped statutory filing templates — annual reports, tax returns, regulatory filings, financial statements, audit reports — with section sequences and effective dates. The per-jurisdiction statutory filing template node."
 atomPath: "taxing/jurisdictions/statutory/report/templates"
-coordinate: "taxing/jurisdictions/statutory/report/templates · 7/descent · 4a084740"
-contentUuid: "3678673c-398c-507e-894a-11dd72177cea"
-diamondUuid: "eed086da-acb3-87b2-a16e-0481fc2e7dbe"
-uuid: "4a084740-d843-8a26-98fd-337351f599c6"
-horo: 7
+coordinate: "taxing/jurisdictions/statutory/report/templates · 8/crest · 1a2e89a8"
+contentUuid: "7b03ef16-0192-5985-8ede-704fafa9b909"
+diamondUuid: "ae6869f7-b3b5-8647-99b6-b7f06af2dec7"
+uuid: "1a2e89a8-158c-8b38-bf18-f64589c86ce9"
+horo: 8
 typography:
   partition: taxing
   bondDegree: 8
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "62e3c2a7-6259-862c-8724-9ca772e65504"
+  computationUuid: "5d2fe92d-24b2-89bc-aaf0-d02e3ae312e7"
   stages:
     - stage: path
       stageUuid: "63d18618-877d-822d-bee5-7050900c2937"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "8a5e2847-77d4-8f40-9866-7ee4b8c808a7"
     - stage: horo
-      stageUuid: "ce5ee007-e171-8b3e-8169-4b151580a3bc"
+      stageUuid: "40989df2-4d1e-81ea-9e80-5defe2b4082e"
     - stage: seal
       stageUuid: "0963cffa-5350-8c23-bac3-63b4d7b98bcf"
     - stage: uuid
-      stageUuid: "b1fe33a7-b930-89b8-96c4-4a3d21071ebc"
+      stageUuid: "fe1271d8-1ed9-8360-b25d-71b22f6855b6"
 version: 2
 ---
 # statutory-report-templates

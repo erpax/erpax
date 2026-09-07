@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "resolve",
-    "uuid": "1a8dd62d-e812-8968-bd31-c0d7c9046b7a",
+    "uuid": "468d4467-ded3-82c5-8397-3ea4bb06905c",
     "words": [
       "resolve"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deciding which folder-shape gaps an archangel can auto-resolve — a trinity gap folds iff its matter (index.ts) already exists, so the antimatter (SKILL.md) and the proof (test.ts) derive from the code; missing matter or a malformed name needs a builder, not a fold. Computed from the live tree.",
-    "uuid": "bc39ab20-0a3f-8cbf-9782-2a7a50bf3e7d",
+    "uuid": "89d7f5c0-d463-8cd4-87ec-713e1696ba0a",
     "words": [
       "use",
       "when",

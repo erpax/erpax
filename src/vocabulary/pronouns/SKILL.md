@@ -2,10 +2,10 @@
 name: pronouns
 description: Use when reasoning about pronouns — A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression
 atomPath: "vocabulary/pronouns"
-coordinate: "vocabulary/pronouns · 2/share · 6d61ea64"
-contentUuid: "0bd8bd6f-ac90-5eb5-b53d-df5e07508e24"
-diamondUuid: "be32e61f-2064-87ed-86e2-f48c52030a32"
-uuid: "6d61ea64-9de3-8bef-8b58-b9f7f9622475"
+coordinate: "vocabulary/pronouns · 2/share · 370bfa61"
+contentUuid: "4a5bb84d-2459-5331-8b26-d9353953b104"
+diamondUuid: "8e0ecf50-c2d2-8fcd-a7cc-2a109a89c481"
+uuid: "370bfa61-98d7-863a-b898-855d8cd6846f"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "99acebd1-828a-8a01-ae09-b18072ba2bdc"
+  computationUuid: "ca49006e-617e-867d-a8c4-fbcd459c1511"
   stages:
     - stage: path
       stageUuid: "342b6a28-b424-8c50-8278-3c2e66fb9e22"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2c35f728-b6da-8712-abab-5cc8f0c565fd"
     - stage: horo
-      stageUuid: "8d67fda6-143c-8069-8e8b-6de32d0702c4"
+      stageUuid: "0453452d-4486-857b-bf02-48cb80d5054c"
     - stage: seal
       stageUuid: "775f80c2-27ec-8b1b-82b4-985bc84f93f8"
     - stage: uuid
-      stageUuid: "7d19fd0f-9cee-8630-85fb-32eeed9c0939"
+      stageUuid: "88ae2c4b-278f-8825-b57d-97557b39d286"
 version: 2
 ---
 # pronouns

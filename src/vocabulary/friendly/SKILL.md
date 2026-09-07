@@ -2,11 +2,11 @@
 name: friendly
 description: "Use when reasoning about friendly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/friendly"
-coordinate: "vocabulary/friendly · 5/round · 6513a034"
-contentUuid: "3baa0f76-80e6-5e5a-af05-226ec806035a"
-diamondUuid: "d5fd9821-9e6c-879e-8c49-e2c78311db9a"
-uuid: "6513a034-d6a7-865f-90f2-efdc8c91c504"
-horo: 5
+coordinate: "vocabulary/friendly · 2/share · 1e1798c6"
+contentUuid: "f01cc8db-4006-51b7-88d2-e2c9085ab769"
+diamondUuid: "a90ab756-9c7e-874e-b07b-79c22fa1c1f4"
+uuid: "1e1798c6-2be1-8e43-bdc3-9ed94a299c53"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5e8f2164-e856-8843-a52e-e967b5ecb2eb"
+  computationUuid: "4ee46eaf-2fd4-89fd-a00e-7f1e85433543"
   stages:
     - stage: path
       stageUuid: "d2eaf1b2-1e6f-8e60-b6d1-997bf077fe8d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b9c03081-4ec7-87b7-8f3c-62141c368694"
     - stage: horo
-      stageUuid: "680483e9-2a90-8be2-be7b-ddb8e6de4e66"
+      stageUuid: "41c833fa-d64a-8d1a-b3d8-2731142f23fb"
     - stage: seal
       stageUuid: "31f89f81-a3d9-8583-8a04-b13dd89090be"
     - stage: uuid
-      stageUuid: "ef045549-f5fc-87d3-a144-13865add072c"
+      stageUuid: "ad309508-b1f5-85c6-b207-2e34bf39950f"
 version: 2
 ---
 # friendly

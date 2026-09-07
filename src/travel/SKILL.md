@@ -2,11 +2,11 @@
 name: travel
 description: "Use when reasoning about travel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: travel
-coordinate: "travel · 2/share · 7b9a9a97"
-contentUuid: "6b3f2b59-f92a-51a4-b6fd-f6b73003e35c"
-diamondUuid: "26a28303-1489-858b-8707-b7b3be1c184a"
-uuid: "7b9a9a97-15ed-8af0-ac65-0e20477e7ad1"
-horo: 2
+coordinate: "travel · 5/round · be345199"
+contentUuid: "79171115-c990-5823-96bf-6b3eb3c7bcc2"
+diamondUuid: "e288ee51-c771-8f66-a993-b0e8826876f1"
+uuid: "be345199-e817-8215-ac44-5a797342c77a"
+horo: 5
 typography:
   partition: travel
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "48a5cb50-bb2d-88e7-9051-6224d3368cef"
+  computationUuid: "a4028941-0968-8488-92eb-3c511bcd4449"
   stages:
     - stage: path
       stageUuid: "27953545-892c-8e33-ba52-056514ba23c8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f0909e37-dc87-8248-99c0-ee5e365c2f94"
     - stage: horo
-      stageUuid: "68ef0590-c610-83a9-8e32-e2829db9e3b2"
+      stageUuid: "88fe6eb1-0c69-8d94-9218-6cb034ac8039"
     - stage: seal
       stageUuid: "9655ab1f-8c92-8e14-a984-32059496d3d1"
     - stage: uuid
-      stageUuid: "84fa164f-d205-8681-a21d-e8fd99046900"
+      stageUuid: "f366e992-a18f-823a-a74f-3a475147dfc5"
 version: 2
 ---
 # travel

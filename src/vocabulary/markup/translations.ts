@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "markup",
-    "uuid": "8ba56a19-ca16-8080-b9ce-6044823da8fa",
+    "uuid": "f5095acc-ced3-8245-a40c-273681ad4f42",
     "words": [
       "markup"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about markup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "d4c00b21-5c9e-826a-b819-d6af8ebdd92b",
+    "uuid": "b261948d-db8f-8e4f-9236-0aa69f278c78",
     "words": [
       "use",
       "when",

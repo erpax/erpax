@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scheduler",
-    "uuid": "ac9e4cbb-f54a-824a-b8bc-4e2e80c970ba",
+    "uuid": "0d74db50-0222-83a7-aba9-193bba2dcd48",
     "words": [
       "scheduler"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when scheduling corpus paths into balanced waves — turns the max-work/max-tamper policy into concrete wave-schedule options (unit ceiling, items per wave derived from wave depth, weight function) and walks the live path set into a self-balancing plan.",
-    "uuid": "abf71454-e0bb-8c38-ab10-29770d59e1f9",
+    "uuid": "17f6b897-aa8d-8785-a193-a9808786065c",
     "words": [
       "use",
       "when",

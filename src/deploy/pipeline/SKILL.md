@@ -2,10 +2,10 @@
 name: pipeline
 description: "Use when changing a deploy or release workflow — the ORDER is the law. Deploy must follow a green CI on the commit CI verified, build before migrating production, run the deterministic gates before shipping and the smoke after, and the release must assert tag equals version before publishing."
 atomPath: "deploy/pipeline"
-coordinate: "deploy/pipeline · 1/base · 8ffa4261"
-contentUuid: "fc4df72c-ffff-56bc-b13e-975db3d968c8"
-diamondUuid: "2a078739-c79d-8030-b2f5-693c1958fc4e"
-uuid: "8ffa4261-a26b-85a0-afb1-9fd53a40f8fe"
+coordinate: "deploy/pipeline · 1/base · f17d5816"
+contentUuid: "2e62600f-f78a-5774-afd0-c6e671e01bb6"
+diamondUuid: "9b47917d-a810-8d6e-884d-0274ba944962"
+uuid: "f17d5816-2279-83c7-8dd8-a34b2aff975a"
 horo: 1
 typography:
   partition: deploy
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "38ef1edb-e2cb-87f6-948b-c727bf6b88b7"
+  computationUuid: "3c1cded9-6681-8639-bcea-62aac6d7f09a"
   stages:
     - stage: path
       stageUuid: "3f620d88-f740-835d-a6f1-b6461fa4c15c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d1aae0f3-4f83-896c-a86a-7b6477b3cb85"
     - stage: horo
-      stageUuid: "e99b8142-f425-8f3f-8577-1fb404ab3a8b"
+      stageUuid: "4db62c32-b6f9-83ce-b9ad-6498332640a0"
     - stage: seal
       stageUuid: "945b2d71-b6b7-8cb8-8552-ae7f017bf013"
     - stage: uuid
-      stageUuid: "4fee303e-9738-8254-a666-ad2ebd3b8b29"
+      stageUuid: "6d598c1f-704f-8cc2-97c4-57bc0497f68d"
 version: 2
 ---
 # pipeline — the order is the law

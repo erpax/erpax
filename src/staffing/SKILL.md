@@ -2,11 +2,11 @@
 name: staffing
 description: "Use when reasoning about staffing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: staffing
-coordinate: "staffing · 8/crest · edfc2d14"
-contentUuid: "8d19b9d6-bdd8-5a1e-b37c-17a05a82368d"
-diamondUuid: "25d5ef9a-96f2-8a09-b0cd-b4c81f63a7f4"
-uuid: "edfc2d14-2567-8dfd-ac27-13318363cb4b"
-horo: 8
+coordinate: "staffing · 7/descent · e8bb40ea"
+contentUuid: "1e431bdd-a7d4-54cd-bf3c-fe7530d955a3"
+diamondUuid: "882d2e5e-5367-8752-97d5-8f16030d21c4"
+uuid: "e8bb40ea-c7a6-8d24-90e0-fd1767a094de"
+horo: 7
 typography:
   partition: staffing
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f0fd1efc-9b47-8148-b9de-c62f6554b0cb"
+  computationUuid: "09e6b734-6820-8db1-baec-4bb98bbaf8d7"
   stages:
     - stage: path
       stageUuid: "e021809f-7038-8884-93a1-2aeb641cae1c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63fd1912-ad68-8701-83ef-22f4047c2c24"
     - stage: horo
-      stageUuid: "d6ebbff4-b9ba-8794-9ea4-55363604102e"
+      stageUuid: "432fb4d9-f229-84ea-ad61-38b6da3e3060"
     - stage: seal
       stageUuid: "80b88db1-5335-8ed3-b891-1ea1a852e34f"
     - stage: uuid
-      stageUuid: "74f62b71-8e6c-8dd4-968e-56f105b97ed2"
+      stageUuid: "91cc5858-759c-831c-8751-19b6d74828cb"
 version: 2
 ---
 # staffing

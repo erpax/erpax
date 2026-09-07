@@ -2,11 +2,11 @@
 name: service
 description: "Use when reasoning about service — is the client for tenant administration — create, update, batch actions — and is the instance callers use."
 atomPath: "tenant/service"
-coordinate: "tenant/service · 5/round · 8f1677c1"
-contentUuid: "55f74524-054e-51f9-b296-5fbd9bfd1e8a"
-diamondUuid: "53cd8eaf-452b-8776-a406-0fb0e8e4a9d0"
-uuid: "8f1677c1-6ffa-858e-8dd8-50baca653b79"
-horo: 5
+coordinate: "tenant/service · 1/base · 9f92925c"
+contentUuid: "ed54f18a-9df7-5408-bebc-23168ff5bb0f"
+diamondUuid: "e07cc8d1-9914-8d69-ac5e-dda94225f181"
+uuid: "9f92925c-7519-8632-9e0a-2d5d7602c4f3"
+horo: 1
 typography:
   partition: tenant
   bondDegree: 183
@@ -16,7 +16,7 @@ standards:
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
 signatures:
-  computationUuid: "873dd4fd-ee39-86eb-b6ff-873ae73272ee"
+  computationUuid: "56e74508-11be-8f23-bbec-2f5149cbc5e6"
   stages:
     - stage: path
       stageUuid: "f376a9bb-5f15-8b13-ada4-32ea1770458b"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "d04bc1e2-44b7-8d36-a335-48d029fa7118"
     - stage: horo
-      stageUuid: "45b76a74-b683-8217-8c0a-c6aad97da852"
+      stageUuid: "8e54770b-c2c6-8062-acbf-86b163c1f0f7"
     - stage: seal
       stageUuid: "5b7b9e1f-646e-844b-b912-e646229d5fba"
     - stage: uuid
-      stageUuid: "b0137cb3-1d91-80a5-9f72-436a93d2da79"
+      stageUuid: "3b2e5afe-2e02-8d0a-b5d9-3762c19836c9"
 version: 2
 ---
 # tenant/service — the management API is reached through one typed client

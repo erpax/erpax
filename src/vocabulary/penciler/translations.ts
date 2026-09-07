@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "penciler",
-    "uuid": "f5eea5a1-8e71-803b-b606-5cc63f300f64",
+    "uuid": "d623c187-b818-8bfd-be65-71baa0a8c896",
     "words": [
       "penciler"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about penciler — The individual who draws the primary narrative artwork.",
-    "uuid": "a1dd525f-13b7-837c-b088-ac61139abb90",
+    "uuid": "9cd6645b-501b-89e0-a093-48ddf3ca6025",
     "words": [
       "use",
       "when",

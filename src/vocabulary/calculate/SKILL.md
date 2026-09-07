@@ -2,10 +2,10 @@
 name: calculate
 description: "Use when reasoning about calculate — is the computation atom: ceccec/erpax's ~25 are **form-objects** (ActiveModel, ) — validate inputs → compute a standards-cited formula → format; **no persistence, no collection**."
 atomPath: "vocabulary/calculate"
-coordinate: "vocabulary/calculate · 2/share · be1e59c6"
-contentUuid: "1b9ecde3-e7b8-5826-b450-ba8d88c801a5"
-diamondUuid: "8c188c62-55a1-8b6c-a682-ce99cb6538a6"
-uuid: "be1e59c6-c856-8c04-905f-91cc39c20601"
+coordinate: "vocabulary/calculate · 2/share · b7ae72c2"
+contentUuid: "4408df09-2536-5bf5-82f8-4ee6943a4eee"
+diamondUuid: "7f659761-a7f0-83e5-b677-1d9d68768bfa"
+uuid: "b7ae72c2-21d4-8b07-a82c-ee218fe23b74"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "640a4ec5-baeb-8dbd-9c4b-b20ee80acd45"
+  computationUuid: "a7c29e24-6d3d-8261-9c3c-90d22b9012b5"
   stages:
     - stage: path
       stageUuid: "aec199a3-7cd7-837a-9cc2-a7fd58d2c123"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c9b27d1c-40b4-8cf1-9dde-4d334879e780"
     - stage: horo
-      stageUuid: "a9ee3571-4480-8d18-9d7c-45aee71e2c38"
+      stageUuid: "8706ce05-37c9-8517-b253-78740ccb5519"
     - stage: seal
       stageUuid: "b1a648b1-dc55-8a42-9899-98937450f455"
     - stage: uuid
-      stageUuid: "4f52c3dd-b03a-822c-83f7-9c940bc33731"
+      stageUuid: "5e619020-af2b-8e0e-8466-5e00a4ba8132"
 version: 2
 ---
 # calculate — pure compute (matter copies verbatim), no persistence

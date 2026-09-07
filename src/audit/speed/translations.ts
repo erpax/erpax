@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "speed",
-    "uuid": "1a72e5f7-2348-8896-96ce-da436f563959",
+    "uuid": "4ce1a70c-5c5f-85fd-8cdc-35d01b69dab0",
     "words": [
       "speed"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when auditing must prove it is fast — pure invariant checkers (counter/referential/bound integrity) whose SQL forms verify a whole ERP history in seconds at zero tokens; measured on etrima's 20-yr 29.7M-row DB at ~24M rows/s.",
-    "uuid": "16a79100-2265-8971-b891-5641daf1d09f",
+    "uuid": "ad47dbbc-cc6d-8258-8ad3-afe748bafff0",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "periods",
-    "uuid": "198df7f7-a62a-8d08-b260-b1e1baa93cf8",
+    "uuid": "9dd777e4-6420-8877-919a-ce4e0c392852",
     "words": [
       "periods"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
-    "uuid": "b637e4fa-b503-87ad-a104-5f24e2cf93b5",
+    "uuid": "c94f8245-0520-8ee0-aa00-d80b13f98e20",
     "words": [
       "use",
       "when",

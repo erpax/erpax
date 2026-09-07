@@ -2,11 +2,11 @@
 name: branch
 description: Use when reasoning about branch — The branches that delineate from the nerve bundle. Not to be confused with branchOf.
 atomPath: "vocabulary/branch"
-coordinate: "vocabulary/branch · 7/descent · 2fbbd924"
-contentUuid: "7802702e-a9ed-5dd0-b6f8-70348964d975"
-diamondUuid: "a86e924e-4220-83c1-af7b-bdb6148cf02e"
-uuid: "2fbbd924-10a1-808c-9c9a-56d1b0145897"
-horo: 7
+coordinate: "vocabulary/branch · 4/weave · 1208d68e"
+contentUuid: "3c551f72-c7f4-5193-b711-2c42db620da6"
+diamondUuid: "78ef3650-fe83-83e1-af4b-60adc5f75274"
+uuid: "1208d68e-adf3-881d-83f0-83ee1b5f0ab7"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c7f9d0d9-cbe6-83f8-9470-928ad941c7a1"
+  computationUuid: "61dfebf5-68f8-8e09-8f92-d3316a352492"
   stages:
     - stage: path
       stageUuid: "2ff80099-dde3-88f3-92b4-818af4278066"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ee146e30-39f8-818d-9f27-bef2cc33ffa3"
     - stage: horo
-      stageUuid: "d647ab05-a830-86a8-a51f-9ac5b6deaadd"
+      stageUuid: "75c90524-e119-897e-8a37-f2fa90107a85"
     - stage: seal
       stageUuid: "33083203-4917-8731-8c37-9a02344c2c04"
     - stage: uuid
-      stageUuid: "c850a7bb-9176-8c30-ad0f-a62a38915ba3"
+      stageUuid: "789fa5f5-543f-8ba9-abe4-45abae0023c2"
 version: 2
 ---
 # branch

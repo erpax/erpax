@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "game",
-    "uuid": "347ea426-1cf6-8206-9fbd-b62c2ed346c2",
+    "uuid": "a6e01e31-017f-894f-91f6-92559c50e20a",
     "words": [
       "game"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about game — The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters i",
-    "uuid": "9ce64bed-b792-8df9-ac8f-be247d9e568d",
+    "uuid": "8cc44d66-c288-85c7-a4f6-1969b98ff5d4",
     "words": [
       "use",
       "when",

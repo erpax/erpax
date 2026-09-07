@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "verdict",
-    "uuid": "e4c30082-6935-83e2-baac-e9b066b88da5",
+    "uuid": "fe4ac4ca-5c6b-8293-8365-6f61db47a8e1",
     "words": [
       "verdict"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the FTL advantage is claimed — a discriminated union where the break reason exists only on the broken branch, so code cannot use the advantage without having proven it.",
-    "uuid": "58ab324c-8e94-8905-8009-b8d030184f52",
+    "uuid": "3fe79ccb-2ff9-8e49-aa72-517416c33c83",
     "words": [
       "use",
       "when",

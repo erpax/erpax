@@ -2,11 +2,11 @@
 name: sources
 description: "Use when reasoning about sources as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sources
-coordinate: "sources · 2/share · 32a8e4d8"
-contentUuid: "afd50f9f-f827-537b-92e1-081410a1df05"
-diamondUuid: "4fcfb030-0956-84fc-b187-dd026727fd74"
-uuid: "32a8e4d8-13f5-8336-bf13-5362ec65ed73"
-horo: 2
+coordinate: "sources · 5/round · 3051d875"
+contentUuid: "c4ebdb9d-2c29-5a56-a6ab-c0143621b616"
+diamondUuid: "64546971-e4b5-8221-a7ae-d14192ee59d5"
+uuid: "3051d875-517e-8807-9877-e3df0c096041"
+horo: 5
 typography:
   partition: sources
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "65554473-3fa0-8825-8ec5-b450e8a85585"
+  computationUuid: "47c69d35-2c7a-8422-9723-c8e0c9d4e3cb"
   stages:
     - stage: path
       stageUuid: "54e857f0-b75b-813c-ab73-afb0c2b08f90"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0a2e39e5-138a-8ce8-b997-7b3476d3c648"
     - stage: horo
-      stageUuid: "2c44f736-1764-82c6-84f2-2b9456e126e8"
+      stageUuid: "31525f6c-bda0-8cf9-a074-a52fdcf58ef4"
     - stage: seal
       stageUuid: "e4375056-0ab2-8ada-84c1-ed6f1cd72ddc"
     - stage: uuid
-      stageUuid: "029fef73-334e-8723-8644-e36ca908c389"
+      stageUuid: "30262856-890a-85a4-8851-98e0cb0897ac"
 version: 2
 ---
 # sources

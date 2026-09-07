@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sustainability",
-    "uuid": "007bf5f8-e1d2-853b-9d2b-9a9879b0f94f",
+    "uuid": "8d30fe50-3c6e-8bcc-b8e5-da9d61455326",
     "words": [
       "sustainability"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun.",
-    "uuid": "590355de-3f3b-8017-b58b-37f6c7f0125c",
+    "uuid": "101f3cdd-728a-8c22-96d8-566037202f0b",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: manufacturer
 description: Use when reasoning about manufacturer — The manufacturer of the product.
 atomPath: "vocabulary/manufacturer"
-coordinate: "vocabulary/manufacturer · 5/round · bce133ab"
-contentUuid: "0676d8e2-7122-5aa3-b8a2-6dac08484aa9"
-diamondUuid: "8c875b36-9422-85c4-b1a5-83bca2bac288"
-uuid: "bce133ab-641e-8238-b027-a1aad46804fc"
-horo: 5
+coordinate: "vocabulary/manufacturer · 1/base · ce13f109"
+contentUuid: "dd5f9410-09c7-583a-bc35-006a0a949b10"
+diamondUuid: "54c7be07-10a1-81ef-8a90-413ac8adc308"
+uuid: "ce13f109-9b02-8c6f-9082-e7ac1e9c8640"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aaa78b1c-fc21-820c-b699-3435d7d0105a"
+  computationUuid: "51201070-1fd6-8abd-886d-51af5e309334"
   stages:
     - stage: path
       stageUuid: "19580806-6f21-8857-b729-8993b4449838"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cd51ed65-6e1b-89c9-b23f-82b83680b69a"
     - stage: horo
-      stageUuid: "11ffe669-8166-8249-bc2e-4dee71b12d1d"
+      stageUuid: "16f9ba7c-cee4-81aa-917b-500650ab291d"
     - stage: seal
       stageUuid: "f8442460-522c-8835-ad33-295565f7770b"
     - stage: uuid
-      stageUuid: "841b89d0-3750-8fb5-a43c-3b374ae8e795"
+      stageUuid: "076bb412-64fc-8e04-be0f-aaa6eecd4114"
 version: 2
 ---
 # manufacturer

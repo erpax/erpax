@@ -2,11 +2,11 @@
 name: e
 description: "Use when e must be read as the growth constant that is its own driver — d/dx eˣ = eˣ, the function whose rate of change equals its state at every point. Completes the self-referential trio: pi unfolds a finite seed to an infinite tail, phi is the fixed point of the fold, e is the fixed point of change. Computed never stored: the series Σ 1/k! and continuous compounding (1+1/n)ⁿ both converge to it from a finite seed."
 atomPath: e
-coordinate: "e · 8/crest · 49d54d43"
-contentUuid: "17885759-f366-5fd7-b8f1-113001814272"
-diamondUuid: "de34bb2d-de76-8c77-9434-8de1a5661d83"
-uuid: "49d54d43-126d-8471-b4ea-c384e74e7736"
-horo: 8
+coordinate: "e · 1/base · 6bc80c14"
+contentUuid: "99c1068f-fccd-5ebf-8883-be41a8e4cd26"
+diamondUuid: "0a532e54-0d37-8fd7-a501-b01585748287"
+uuid: "6bc80c14-ee05-8685-9f0a-7fafeac00492"
+horo: 1
 typography:
   partition: e
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "Euler's number e = Σ 1/k! = lim (1+1/n)ⁿ — the base of the natural exponential"
 bindings: []
 signatures:
-  computationUuid: "bb79e678-bb36-897a-837d-b5f02f9373a3"
+  computationUuid: "0e50c169-5e73-84e7-a504-abfac7564117"
   stages:
     - stage: path
       stageUuid: "3ea081f4-64ee-8cea-b6ab-b157be0e4e6a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93719d6e-deeb-8bf1-bebf-4d5b3a65796f"
     - stage: horo
-      stageUuid: "4c0059f6-c0ca-8b55-b8e1-28c4262265a5"
+      stageUuid: "1b1ba291-2c72-8a36-a400-980dad680b7d"
     - stage: seal
       stageUuid: "044e2b84-6c61-8d6a-9f36-bf9396d3267c"
     - stage: uuid
-      stageUuid: "22d320a4-fcc3-8ee3-9312-632da689224f"
+      stageUuid: "dc61d58d-154b-84cc-bb34-0d53fa65a922"
 version: 2
 ---
 # e — the number whose rate of change is itself

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "projection",
-    "uuid": "0a03b667-143d-8d3f-84b4-5df97b69c32c",
+    "uuid": "da7cb094-503d-80a6-b95e-68fd28e69eb9",
     "words": [
       "projection"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle.",
-    "uuid": "9785f4cf-76d1-8534-811a-899fe926a3ce",
+    "uuid": "6039338b-035d-8bfb-9816-1dc29a049a2a",
     "words": [
       "use",
       "when",

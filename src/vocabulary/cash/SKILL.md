@@ -2,11 +2,11 @@
 name: cash
 description: "Use when reasoning about cash as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cash"
-coordinate: "vocabulary/cash · 5/round · 788e8d80"
-contentUuid: "8a53e589-f896-5c5e-935d-1268e63aca41"
-diamondUuid: "79a9ed62-85e3-8c63-badc-97c871435368"
-uuid: "788e8d80-5ede-89c0-b37e-75efe2fc84ea"
-horo: 5
+coordinate: "vocabulary/cash · 7/descent · d9a3cb3c"
+contentUuid: "10b9c328-44bc-5c55-a67a-a18af86bb0e6"
+diamondUuid: "37f48c1f-6549-873c-bf70-0f3b86656d1b"
+uuid: "d9a3cb3c-9acf-8ef6-9f34-534e63fa90bd"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4eff7fe3-108a-8fd2-86c3-6e120eb861eb"
+  computationUuid: "2a0c86ee-e429-82dc-b7b5-784dbf1d6a4b"
   stages:
     - stage: path
       stageUuid: "ffba3ff6-2f2b-8524-9bf5-334f5f11ce4f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ccba92ba-39b3-8d7e-81f4-4d4128f82dc1"
     - stage: horo
-      stageUuid: "b9a918e0-d818-87ea-8ea6-8c3815751c78"
+      stageUuid: "3e90f610-484a-8582-9d59-34e021c07314"
     - stage: seal
       stageUuid: "a70ddba8-beea-856a-9d83-bccb60a0cc79"
     - stage: uuid
-      stageUuid: "fbf22532-2205-8109-97e0-7934a10a6ade"
+      stageUuid: "0c6f44c0-7fe4-85c9-a9dd-fd5bd9d19e90"
 version: 2
 ---
 # cash

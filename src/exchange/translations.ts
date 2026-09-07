@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "exchange",
-    "uuid": "627555cc-5767-8479-8634-ececb6f0c146",
+    "uuid": "695709e8-d6de-86a7-9f6e-0f210dc26176",
     "words": [
       "exchange"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about exchange — FORM: **a cross-domain exchange is gated, sanitized, and receipted — the requester gets the data AND the proof of how it was obtained.** Party (one domain, its own identity) asks p",
-    "uuid": "679e6213-16b5-8614-b2de-b5f3b5c24fbb",
+    "uuid": "0a0c4b39-383f-8ec6-af2f-e0185b75be7b",
     "words": [
       "use",
       "when",

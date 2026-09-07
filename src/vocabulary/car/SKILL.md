@@ -2,11 +2,11 @@
 name: car
 description: "Use when reasoning about car — A car is a wheeled, self-powered motor vehicle used for transportation."
 atomPath: "vocabulary/car"
-coordinate: "vocabulary/car · 5/round · 0029a1fb"
-contentUuid: "2a39d466-c712-576e-999b-b97cf1608b4e"
-diamondUuid: "e678d8f6-b186-89bf-a5ae-0c56fecc4300"
-uuid: "0029a1fb-600d-8af4-9e11-265c5e59c6cd"
-horo: 5
+coordinate: "vocabulary/car · 7/descent · a61e5521"
+contentUuid: "a280a789-c82b-5597-b421-99d8c813d561"
+diamondUuid: "60022fa8-8976-8630-8a25-c1031e5d826b"
+uuid: "a61e5521-a6a8-80f4-99b3-69e52103e521"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "51387bd2-a6d2-8b78-aa69-343829cdf75b"
+  computationUuid: "30fa6fdd-6301-852a-bb6c-59aab18ea6f7"
   stages:
     - stage: path
       stageUuid: "8d01196a-3fde-8e83-955b-063a92c17b17"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5fe4463b-2aab-8c6a-8fd9-66c0a078a885"
     - stage: horo
-      stageUuid: "a58863d1-b6cc-8df2-9d23-0d1c2f76e308"
+      stageUuid: "e76f3164-2bcb-8801-bcf2-067d6345d03f"
     - stage: seal
       stageUuid: "d80db1bb-a637-8295-aed4-8334fedf5fff"
     - stage: uuid
-      stageUuid: "406a0373-7447-8ad9-b9c3-4289029aa2e1"
+      stageUuid: "c4d660ba-0c6a-8c56-8904-3e0252c6ee0c"
 version: 2
 ---
 # car

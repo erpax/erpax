@@ -2,11 +2,11 @@
 name: urltemplate
 description: "Use when reasoning about urltemplate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: urltemplate
-coordinate: "urltemplate · 4/weave · 495fc203"
-contentUuid: "dccb6322-6828-53f0-88cc-1bc5223ceaa5"
-diamondUuid: "b6a4b109-bc77-8847-bdc6-b47faacb7b75"
-uuid: "495fc203-a17b-8626-9908-f9a0f50081c1"
-horo: 4
+coordinate: "urltemplate · 8/crest · 30b4af19"
+contentUuid: "a2816135-36f0-59f2-8f8c-bf4a4c85178e"
+diamondUuid: "64420697-4813-84be-afb9-d08d340083be"
+uuid: "30b4af19-7abe-8489-82c7-b7433352b6c2"
+horo: 8
 typography:
   partition: urltemplate
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "db5ea1ae-0530-8c2f-bca9-ac7f2395809b"
+  computationUuid: "cb24d49d-2e83-802a-9810-95f14b1be1ac"
   stages:
     - stage: path
       stageUuid: "cb143a04-a734-8b8a-9dbc-ade33111bcc6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ce62aa6c-ddc5-8d11-bb6e-213446b72c3f"
     - stage: horo
-      stageUuid: "87c19b70-5359-8220-92cd-6fb0636bd149"
+      stageUuid: "703f5f26-da6d-8c97-be3a-76065abf3187"
     - stage: seal
       stageUuid: "0e252ff2-73bc-843d-b06e-24d098ed457e"
     - stage: uuid
-      stageUuid: "a2d4bc2a-178a-8cda-8385-b201777349f8"
+      stageUuid: "2ebb642d-4024-804d-b1d3-5f6fb5927da8"
 version: 2
 ---
 # urltemplate

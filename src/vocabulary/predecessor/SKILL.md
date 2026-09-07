@@ -2,11 +2,11 @@
 name: predecessor
 description: "Use when reasoning about predecessor — A pointer from a previous, often discontinued variant of the product to its newer variant."
 atomPath: "vocabulary/predecessor"
-coordinate: "vocabulary/predecessor · 1/base · bf9fa03b"
-contentUuid: "7c5eb9dc-dde7-5c2d-b233-1b118774a724"
-diamondUuid: "4e7ada25-b4c0-8d64-90d7-9c60a9fd35d2"
-uuid: "bf9fa03b-5be7-8399-a042-fc283025f541"
-horo: 1
+coordinate: "vocabulary/predecessor · 2/share · a9d13a0d"
+contentUuid: "1a476b3b-70ba-534a-a3ec-bd0767a26a0c"
+diamondUuid: "dd876478-0cbb-8b0e-8301-16855d094109"
+uuid: "a9d13a0d-c929-8aa7-ac9f-022bb3bddf78"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "16f77080-8b8f-8a20-bb1d-5f7882a177d7"
+  computationUuid: "4c9661fe-3547-868f-9e16-fedf1737572e"
   stages:
     - stage: path
       stageUuid: "1143fc06-a7da-8466-a361-a128a07e9a53"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0c1783d9-3bba-8ca5-92a8-04daf7260e04"
     - stage: horo
-      stageUuid: "f431d471-8262-83db-95c8-7efafd4eb1ce"
+      stageUuid: "c2b98018-bff2-826d-8790-edf97d29c9de"
     - stage: seal
       stageUuid: "49f38436-340e-83f4-8358-254294ce84b3"
     - stage: uuid
-      stageUuid: "fed71819-75fc-8300-8714-f75eb39f058d"
+      stageUuid: "6ccf6faf-0852-836e-864d-87638dd23911"
 version: 2
 ---
 # predecessor

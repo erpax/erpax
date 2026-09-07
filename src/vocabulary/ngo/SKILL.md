@@ -2,11 +2,11 @@
 name: ngo
 description: "Use when reasoning about ngo — Organization: Non-governmental Organization."
 atomPath: "vocabulary/ngo"
-coordinate: "vocabulary/ngo · 7/descent · 0df178a8"
-contentUuid: "cc416eab-f406-5c7f-b8bd-87bf830eee69"
-diamondUuid: "9f400a7e-a944-8c3c-bd00-cc95f15aec06"
-uuid: "0df178a8-0e9d-8eaf-ae65-d010d366fb0b"
-horo: 7
+coordinate: "vocabulary/ngo · 2/share · 25f9fdc2"
+contentUuid: "1651c535-67b4-5b5e-95d2-bbcc46107be7"
+diamondUuid: "de2d8035-9a4e-8731-99d0-81029f821236"
+uuid: "25f9fdc2-0b9a-8e0f-bf10-7ff71729e0d5"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d2e2c892-3405-87f7-bb21-f26a8e2eede1"
+  computationUuid: "e4b77c9d-ba9e-85c3-a2a5-e1d403541690"
   stages:
     - stage: path
       stageUuid: "1b3505bd-37c1-810b-bf28-fa78ce249d30"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "911d86e2-a77e-89a5-8ef6-b9a7edbf7af3"
     - stage: horo
-      stageUuid: "f395d0b2-306d-8912-a9d4-d44531a4e287"
+      stageUuid: "bd957c70-2e0d-8f51-a0be-f7d2a7a34688"
     - stage: seal
       stageUuid: "956a968a-b999-8ca5-bde0-dc53df375438"
     - stage: uuid
-      stageUuid: "1bf57688-55da-8ab6-b0da-3dabcc1bdbf1"
+      stageUuid: "a2e5fbde-c7c0-8d63-81ca-f32c23ad3b12"
 version: 2
 ---
 # ngo

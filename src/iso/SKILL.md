@@ -2,11 +2,11 @@
 name: iso
 description: "Use when reasoning about iso as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: iso
-coordinate: "iso · 5/round · 52d5bed7"
-contentUuid: "bf11872c-62ba-5fe8-b876-968cbe9480e9"
-diamondUuid: "d09d89b7-9bc4-88ae-9bbd-597510527cef"
-uuid: "52d5bed7-aa67-86ab-9d83-7a145d72d3f3"
-horo: 5
+coordinate: "iso · 8/crest · c0d9e8d8"
+contentUuid: "084b045b-8a0d-5c52-9a70-8c286760c87f"
+diamondUuid: "d1b023d9-b391-86f7-8bf2-b8772f884d04"
+uuid: "c0d9e8d8-9fe2-8c17-b3fc-c900597747e1"
+horo: 8
 typography:
   partition: iso
   bondDegree: 51
@@ -35,7 +35,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b36e372c-ea78-8f65-a472-eef61450c989"
+  computationUuid: "4da106b1-41d3-87ef-8b09-485103a7cacb"
   stages:
     - stage: path
       stageUuid: "c88a843b-bf2a-8898-a154-cee879a8f1ad"
@@ -46,11 +46,11 @@ signatures:
     - stage: links
       stageUuid: "07ae7f54-5b07-8cd0-8122-3b1e2aa1ef6e"
     - stage: horo
-      stageUuid: "8496cb97-0a90-8dfe-9f8f-8265d7e53bcb"
+      stageUuid: "1cceb9ab-8397-8fd1-b71a-45cba8ae0d65"
     - stage: seal
       stageUuid: "77c09a95-2ee8-8d35-bd9d-edfd62ede400"
     - stage: uuid
-      stageUuid: "dc18b72d-f8bd-8ac4-801a-a0cda3e38097"
+      stageUuid: "84394470-3da9-815e-8ee8-5a8c95dc84c3"
 version: 2
 ---
 # iso

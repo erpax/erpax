@@ -2,11 +2,11 @@
 name: automatically
 description: "Use when reasoning about automatically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/automatically"
-coordinate: "vocabulary/automatically · 5/round · a4135177"
-contentUuid: "3f3e000e-c066-56da-88f1-c120fdef6b56"
-diamondUuid: "34225632-3590-8384-9c23-b00b5c3a3aa4"
-uuid: "a4135177-330b-8d60-86ef-a064cb28c6f1"
-horo: 5
+coordinate: "vocabulary/automatically · 7/descent · a35c7670"
+contentUuid: "f53709a3-5da4-5d65-8095-08b549923ec9"
+diamondUuid: "57fb4bdb-83a5-8c3a-8995-590f8aa4b7a8"
+uuid: "a35c7670-f4b5-86c9-9f36-554425c60f9f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "64854f79-8f50-8536-af78-98ccca9629da"
+  computationUuid: "b8b95c5a-75f9-82a1-91f1-470df49beec7"
   stages:
     - stage: path
       stageUuid: "4a09ffe3-b363-872d-a38d-e8c8232362ca"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "303b828b-81df-8a45-8328-1a86fa18116c"
     - stage: horo
-      stageUuid: "a412aaff-e198-8ec8-a27f-e6f40390136c"
+      stageUuid: "05ac702a-9c7c-889d-b1c0-2af376fb10a2"
     - stage: seal
       stageUuid: "608f9888-aaf6-8d09-a243-f2d3e1df8538"
     - stage: uuid
-      stageUuid: "3a4a3adc-335a-83c7-bba5-70e2814c0ffb"
+      stageUuid: "6250b1a5-e014-83e0-a3eb-06b7afdf1936"
 version: 2
 ---
 # automatically

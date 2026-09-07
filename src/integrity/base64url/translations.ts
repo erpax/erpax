@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "base64url",
-    "uuid": "a0a2ace4-1497-83c0-bcb5-f17f1e5701cf",
+    "uuid": "0ce23578-3437-86ef-81f6-61742058df53",
     "words": [
       "base64url"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about base64url — (HKDF-derived per-row DEKs) and (JWS-shaped detached signatures) each carried their own / .",
-    "uuid": "3dd7c3a6-8428-8115-b490-73f1c9f13cdb",
+    "uuid": "fb627a09-1da9-8098-a61a-2126188f33e2",
     "words": [
       "use",
       "when",

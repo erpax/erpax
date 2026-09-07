@@ -2,11 +2,11 @@
 name: swatch
 description: "Use when reasoning about swatch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: swatch
-coordinate: "swatch · 2/share · 9512fd8f"
-contentUuid: "7ab79ea5-b322-5704-b56f-403e32f3a77d"
-diamondUuid: "a60c5363-93c5-86be-bb04-ac4af66ee702"
-uuid: "9512fd8f-074b-8bac-bf3f-e8a65e421b06"
-horo: 2
+coordinate: "swatch · 5/round · 2fb554d3"
+contentUuid: "070bf824-b35d-57f7-97b5-f60ed3788533"
+diamondUuid: "0ae08e92-a489-81a4-8f49-d838dc295eb6"
+uuid: "2fb554d3-9321-8588-b43c-0238f5f59744"
+horo: 5
 typography:
   partition: swatch
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1f3a64c4-0902-831f-af3a-ca8ff89533b1"
+  computationUuid: "3d88ac7a-5a08-89fe-ba5e-147d53c9c0d4"
   stages:
     - stage: path
       stageUuid: "c83c85d3-4dfe-88a0-bdf4-ee44843f6f01"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "767a218a-f915-8291-9f04-7c9ef0612774"
     - stage: horo
-      stageUuid: "f22c8a20-369e-854d-8348-af6d261f6318"
+      stageUuid: "bef6f696-449a-8270-8a15-8dc0c7729bc6"
     - stage: seal
       stageUuid: "b0683dc6-0611-87db-9a39-05355ebed30a"
     - stage: uuid
-      stageUuid: "f255a47c-cedc-8987-ae97-fb268bba840b"
+      stageUuid: "31e7899e-52b6-873f-8085-96048234f0d8"
 version: 2
 ---
 # swatch

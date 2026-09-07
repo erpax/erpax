@@ -2,18 +2,18 @@
 name: finding
 description: Use when modelling one finding — the singular model of the findings collection (the plural store); an observation of fact produced by an audit or review.
 atomPath: "vocabulary/finding"
-coordinate: "vocabulary/finding · 7/descent · 5e023a68"
-contentUuid: "2d220592-3a3f-5cfd-bd2d-0c5a42563ed8"
-diamondUuid: "5441b468-4d3a-8c69-b69f-92172a62b04d"
-uuid: "5e023a68-3677-86e6-90fa-a9df81dbcdea"
-horo: 7
+coordinate: "vocabulary/finding · 1/base · 528f8909"
+contentUuid: "4d436c9c-5eb4-57e6-8da4-9635c17388c6"
+diamondUuid: "9f3cfe6b-db73-8bb8-aa7d-a461703d52b7"
+uuid: "528f8909-63e4-8c0e-9263-32b92f65d13f"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3f69b9c8-f91b-8c2f-8504-bf3f7cbf65ff"
+  computationUuid: "c31237b5-7b28-83d5-8ad1-d63f9e3ddc5e"
   stages:
     - stage: path
       stageUuid: "e2969d90-13f6-8c86-a68a-2e9ee378e766"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f7a6d8ab-df24-8623-8280-052b93a6d966"
     - stage: horo
-      stageUuid: "ec358b70-1cee-8061-8ddb-01d90d26cf05"
+      stageUuid: "d85d5e25-692d-87d6-9d18-e7058d648b04"
     - stage: seal
       stageUuid: "e8c78052-1c22-8a9f-9627-bd12776577a9"
     - stage: uuid
-      stageUuid: "3266da24-c462-84fd-81fc-29412eb113d2"
+      stageUuid: "a908144f-f671-8a3d-94ee-005e6ff1db7c"
 version: 2
 ---
 # finding — the model of one [[findings]] row

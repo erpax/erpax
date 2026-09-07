@@ -2,11 +2,11 @@
 name: combinations
 description: "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register."
 atomPath: "legal/entities/business/combinations"
-coordinate: "legal/entities/business/combinations · 1/base · e32e1abc"
-contentUuid: "94601bd2-82af-5ba1-9b01-a53d13499046"
-diamondUuid: "bd009e79-483a-80b5-9d62-5db2b5715ca5"
-uuid: "e32e1abc-22f4-894b-a048-c9062458b189"
-horo: 1
+coordinate: "legal/entities/business/combinations · 4/weave · 5d8e8ae2"
+contentUuid: "14dce466-9a39-56e2-80e6-dd4bdc8f492a"
+diamondUuid: "518d0aaf-eac1-84b9-a692-b082d7e03a30"
+uuid: "5d8e8ae2-95cb-8c66-968a-a3f45a82fe34"
+horo: 4
 typography:
   partition: legal
   bondDegree: 39
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "9c159fac-77f4-8421-9629-dc1efaf1bbf9"
+  computationUuid: "c1e2a3c7-5029-855b-a848-2c00ae54af3c"
   stages:
     - stage: path
       stageUuid: "b89a2af1-f66a-86c3-b0f0-36f36b52b4b6"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "292e16dd-5b28-80da-9fe8-8384515616a7"
     - stage: horo
-      stageUuid: "3b968a24-4e95-8ad0-88e2-3e3ed274c65a"
+      stageUuid: "4ad253fb-344f-8800-8272-ce9030391128"
     - stage: seal
       stageUuid: "76548578-454b-8d86-92d9-ebdc54121322"
     - stage: uuid
-      stageUuid: "655f8541-0430-809f-8c3d-b408c158b6bf"
+      stageUuid: "c3bd1b9e-af3b-8912-b6ac-41e9fc7eb491"
 version: 2
 ---
 # business-combinations

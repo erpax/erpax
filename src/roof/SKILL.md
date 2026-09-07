@@ -2,10 +2,10 @@
 name: roof
 description: "Use when reasoning about roof as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: roof
-coordinate: "roof · 7/descent · 00d8e795"
-contentUuid: "0b03827e-cd6a-581f-803c-eecae44eabb2"
-diamondUuid: "36bbe6f2-d1a2-8e23-a70f-dc29f88eab39"
-uuid: "00d8e795-e2d2-8037-8e5f-9a0a4e6d4372"
+coordinate: "roof · 7/descent · 5a856cc7"
+contentUuid: "260df457-226d-5ec7-b221-22fc8c5d5c4d"
+diamondUuid: "760daf3b-d729-8afa-9aca-7612a42b01c0"
+uuid: "5a856cc7-6a43-8e10-9e9b-3a393c7f4fa5"
 horo: 7
 typography:
   partition: roof
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "97c1b025-3333-844a-b4c4-ff7ab49598a2"
+  computationUuid: "f70fb458-a355-82ea-9a34-d430efd51d57"
   stages:
     - stage: path
       stageUuid: "1411651d-9fac-8f72-9624-ed79dd55d8b2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e00db0ea-d177-82bd-a180-4b899c22935c"
     - stage: horo
-      stageUuid: "e063474b-a629-8f4d-8f7c-eedf64163126"
+      stageUuid: "3385f92f-0155-82be-bb1c-2ee691fe5c33"
     - stage: seal
       stageUuid: "a93aa5cd-3e67-8c13-8a78-d2a16f3a8fbc"
     - stage: uuid
-      stageUuid: "86534f75-a1f8-8c52-aa19-d6fd8188229a"
+      stageUuid: "37f40715-54f6-8930-adc8-8222b4c4a2ce"
 version: 2
 ---
 # roof

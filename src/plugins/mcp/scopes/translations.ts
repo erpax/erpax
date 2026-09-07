@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scopes",
-    "uuid": "0969cf1a-c7a2-8687-bae5-1eb36164996a",
+    "uuid": "8cd6d1f9-ae48-873f-818a-f71e177d2427",
     "words": [
       "scopes"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when collapsing MCP api-key capability columns to a compact deny-list — the matrix→cross collapse for @payloadcms/plugin-mcp at erpax scale (D1 100-col cap); virtual afterRead repopulates the handler's read shape default-open, narrowed by scopes.deny.",
-    "uuid": "7b454ca2-0d4f-82d4-9cfd-b32539c7bc5a",
+    "uuid": "6c464a7b-0974-8bcb-9695-2e096b0d4619",
     "words": [
       "use",
       "when",

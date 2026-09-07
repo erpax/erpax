@@ -2,11 +2,11 @@
 name: desktop
 description: "Use when reasoning about desktop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/desktop"
-coordinate: "vocabulary/desktop · 7/descent · 1a14eadb"
-contentUuid: "fb946fd4-96b3-58dd-b7c7-7138ca2b6d38"
-diamondUuid: "f980a8d7-e87a-82f4-9062-aa8d6c94f76d"
-uuid: "1a14eadb-2d3e-8a5e-aac7-3d0a21901d7a"
-horo: 7
+coordinate: "vocabulary/desktop · 4/weave · 4ef3e8bd"
+contentUuid: "96a67457-cecb-5617-9fbf-5899c633b150"
+diamondUuid: "bd7603d8-b08a-8ed9-9f28-76ce4528558e"
+uuid: "4ef3e8bd-1fc8-8a42-a805-7549ef7a0c57"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "63934b8e-58da-8587-aaab-e57ebefef0d3"
+  computationUuid: "c9f7d3a8-0ae3-8831-b4b0-cb19981445e1"
   stages:
     - stage: path
       stageUuid: "b8c3a486-b2ae-83f3-870f-a308a00d7c5e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e44314cb-daf7-8188-89e3-09fea9de4ea6"
     - stage: horo
-      stageUuid: "15c8b0fd-3a73-8bb1-bc2c-f713f13e9420"
+      stageUuid: "1dcdfee9-a201-866d-aa3f-34ba3b39dc7b"
     - stage: seal
       stageUuid: "577e209d-7bf0-8ef2-abbf-5fa100e2cfcd"
     - stage: uuid
-      stageUuid: "6e55d6b7-7509-85ff-bd4d-6cf4cb3e2461"
+      stageUuid: "9dc08ac7-fa42-8e68-8304-918649ee7b13"
 version: 2
 ---
 # desktop

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "share",
-    "uuid": "890a6bc6-d8a0-85ea-939d-355efbf2530c",
+    "uuid": "ce7564c6-a7c9-8f73-a6b9-8744301e34dc",
     "words": [
       "share"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a portion of a whole allocated to a member who joins — horo position 2 (digit 2, the first doubling: one becomes two, the whole splits, value allocated). Its domain instance is a proportional, contingent claim on a pooled whole under shared risk: the CSA share (prepaid box of whatever the farm harvests), equity share, profit share — the inverse of a fixed order.",
-    "uuid": "b24eb5f5-6783-8dc7-aec6-04ded93ce5c9",
+    "uuid": "56f38180-e7a9-8423-83f0-c1f19270d5eb",
     "words": [
       "use",
       "when",

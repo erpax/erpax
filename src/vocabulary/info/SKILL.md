@@ -2,11 +2,11 @@
 name: info
 description: "Use when reasoning about info as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/info"
-coordinate: "vocabulary/info · 7/descent · 173df11e"
-contentUuid: "ffb0c777-a7e2-5e89-8420-5330717a3ece"
-diamondUuid: "2bfeafb3-c286-84ef-8086-1cce4d4bdf4b"
-uuid: "173df11e-31ac-86be-99bb-465457fa4aad"
-horo: 7
+coordinate: "vocabulary/info · 8/crest · bc5d1255"
+contentUuid: "75d98c48-5948-5a61-9695-9724be523070"
+diamondUuid: "4b9645d3-68c8-8644-a4bd-16c8c72d6978"
+uuid: "bc5d1255-f548-8a2c-9c6a-15c5af445897"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 70
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ccaf65ea-14cd-8109-aa71-609af5455a1e"
+  computationUuid: "56f7c7aa-7f41-82eb-86e9-64d03149eacb"
   stages:
     - stage: path
       stageUuid: "17bff0c3-e3e7-86f4-9622-bb8450832634"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4c4128e5-8140-84c3-ade0-a6e65743818c"
     - stage: horo
-      stageUuid: "02c41b9c-4585-817f-98b2-cc2514396b2c"
+      stageUuid: "b93e76fc-8e60-86d4-96bc-02995b57b292"
     - stage: seal
       stageUuid: "55de824a-fb14-8cd3-975e-eb550ab6c647"
     - stage: uuid
-      stageUuid: "25f9ec66-2cad-808d-985e-ff595531d24e"
+      stageUuid: "e3ab31ca-7b43-80bb-9699-b5d4a230ec3b"
 version: 2
 ---
 # info

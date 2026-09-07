@@ -2,10 +2,10 @@
 name: substance
 description: "Use when reasoning about substance — Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical."
 atomPath: substance
-coordinate: "substance · 1/base · 22346b29"
-contentUuid: "285bbc06-d66f-5650-a1b7-0efd20336717"
-diamondUuid: "e74627c6-0969-8765-a844-72fef85bd84c"
-uuid: "22346b29-2ce6-884c-b88b-da0f87466b68"
+coordinate: "substance · 1/base · 4ebb55cf"
+contentUuid: "f9a239a2-03b7-5571-8a48-ddcb136d96d4"
+diamondUuid: "e676e29a-f73f-8d4d-998d-1fd63a980735"
+uuid: "4ebb55cf-c9dd-894e-977c-1c15f47b1217"
 horo: 1
 typography:
   partition: substance
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "689308d3-5b89-8a4a-ad21-75995bf9d31d"
+  computationUuid: "7b9d7734-ac1f-83da-a2ce-b34b9b08b070"
   stages:
     - stage: path
       stageUuid: "7495d9e9-5891-83ab-8f1f-4b9be7939e83"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4fe35cc3-45b2-8638-b006-a95183ddb97f"
     - stage: horo
-      stageUuid: "4a3a5ec7-396f-881a-a4da-5c8b68726b74"
+      stageUuid: "eb258123-ae75-8e5b-b15c-9ddae04dd70f"
     - stage: seal
       stageUuid: "e4b21376-ea03-8dd8-90fc-2a774758c465"
     - stage: uuid
-      stageUuid: "f2f61df3-0ee4-8519-8c6f-5ad6d6bc7eba"
+      stageUuid: "a11f0e87-f2c0-8000-9420-7af24f40468a"
 version: 2
 ---
 # substance

@@ -2,10 +2,10 @@
 name: permanently
 description: "Use when reasoning about permanently as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/permanently"
-coordinate: "vocabulary/permanently · 8/crest · 1b318201"
-contentUuid: "3dccd747-4f8c-5180-a9c5-98d5c4463ecd"
-diamondUuid: "0212c63d-44be-87c0-bbcd-6a3c2f8b7a2d"
-uuid: "1b318201-62bf-807c-9216-05ec1a487b17"
+coordinate: "vocabulary/permanently · 8/crest · 244f621e"
+contentUuid: "c4666fe1-8e4a-5623-8405-4f3f3ef60115"
+diamondUuid: "15b5429c-a752-8cb9-8339-f8dee69b95f1"
+uuid: "244f621e-e615-8968-a362-58b0396c6561"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "844f1c03-f875-8c6a-88a9-cbd38c41bb82"
+  computationUuid: "2bd7c689-a6e8-8b68-b68e-5a17484d0d07"
   stages:
     - stage: path
       stageUuid: "5cd0cc1e-3554-897d-8d47-07247bde82fc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0705ee21-16b7-830e-910c-cdb6b743dca2"
     - stage: horo
-      stageUuid: "1fdd87fd-b5e3-8559-8577-d70f4387b213"
+      stageUuid: "f4ddccd6-2a15-8b9a-94a2-2fbc1191cc0d"
     - stage: seal
       stageUuid: "f1fe6b34-3148-8c46-8a5c-d904be915319"
     - stage: uuid
-      stageUuid: "4be43f6a-6017-802a-9a6e-70fb22c04e14"
+      stageUuid: "3ff2f699-c6b5-824b-b613-cb2735396075"
 version: 2
 ---
 # permanently

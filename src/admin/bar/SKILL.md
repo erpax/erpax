@@ -2,11 +2,11 @@
 name: bar
 description: "Use when reasoning about bar — renders the strip a logged-in editor sees over public pages: the collection and document being viewed, and the link back into the admin panel that edits it."
 atomPath: "admin/bar"
-coordinate: "admin/bar · 5/round · e11769a1"
-contentUuid: "cde1c6f0-c934-5bc5-83a6-dcc00cac7009"
-diamondUuid: "3bdb8224-df36-89ec-a9e9-d72d62a24ba7"
-uuid: "e11769a1-febf-858e-bfb9-213e6f21b99b"
-horo: 5
+coordinate: "admin/bar · 8/crest · 69bec715"
+contentUuid: "affde91c-f091-5678-b9ce-9ccf0b927448"
+diamondUuid: "843fdea4-a31e-8ec6-862a-321ce1ce4739"
+uuid: "69bec715-c183-8765-9aa2-c249958e6fbb"
+horo: 8
 typography:
   partition: admin
   bondDegree: 19
@@ -18,7 +18,7 @@ standards:
   - "WCAG-2.1 §2.4.1 bypass-blocks"
 bindings: []
 signatures:
-  computationUuid: "5bd7f948-45b8-8fb7-b6e6-e7f74f1142d1"
+  computationUuid: "ea2e4f27-7309-8c05-a207-28f165823d48"
   stages:
     - stage: path
       stageUuid: "ffb989f2-a9e2-87e6-8899-386a7fe087f7"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "5ab6be97-c12d-888f-9d11-91e3adf10b1c"
     - stage: horo
-      stageUuid: "330c5549-8e1d-8e74-ae0e-796167ee846c"
+      stageUuid: "a9f58f9a-488b-8567-8316-afec94b8fa48"
     - stage: seal
       stageUuid: "054d5b33-ab0b-8dc8-9cae-63a1281e00bb"
     - stage: uuid
-      stageUuid: "ba2179b2-18b0-827b-bcb2-32666bddf3c3"
+      stageUuid: "7a08ce13-63b7-87e7-90f3-a949e96eef50"
 version: 2
 ---
 # admin/bar — the edit affordance the CMS owes an authenticated reader

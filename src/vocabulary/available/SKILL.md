@@ -2,11 +2,11 @@
 name: available
 description: Use when reasoning about available — The place(s) from which the offer can be obtained (e.g. store locations).
 atomPath: "vocabulary/available"
-coordinate: "vocabulary/available · 4/weave · 369b7c22"
-contentUuid: "4e9cdab4-c003-5332-9bd4-c83bf5e2b3cd"
-diamondUuid: "527c5520-b138-8ead-8e80-1433979fa05a"
-uuid: "369b7c22-969d-895c-a02f-e4938ff58ac1"
-horo: 4
+coordinate: "vocabulary/available · 7/descent · cbaae8b0"
+contentUuid: "2f0e97a0-4dbe-5993-9ba0-5ab3d21ec1b6"
+diamondUuid: "c99df525-321e-8a70-97cf-50d2850c34a7"
+uuid: "cbaae8b0-eb52-826e-9dad-1de5f1948c69"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 61
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bb8b3162-839b-862c-871e-813e0ca30e1b"
+  computationUuid: "7ce417ee-bbb9-88bb-9010-03ab15b9e069"
   stages:
     - stage: path
       stageUuid: "d342d972-8183-89bb-8ef7-0991f6b40a18"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2d472511-5ede-8c07-8497-c616f1adf32c"
     - stage: horo
-      stageUuid: "256e9844-696a-8110-a811-b2a914f5e36f"
+      stageUuid: "18dcdc6a-1d67-84b4-b6e7-65e196c198b2"
     - stage: seal
       stageUuid: "6de93319-28be-8640-8b99-e899d71c58cd"
     - stage: uuid
-      stageUuid: "1304e5d3-b078-846f-baf8-2f650d05cd82"
+      stageUuid: "4cef5bd1-ed75-86bb-be21-aae427e74f12"
 version: 2
 ---
 # available

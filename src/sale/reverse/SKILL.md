@@ -2,11 +2,11 @@
 name: reverse
 description: "Use when correcting a fiscalised sale — issues the reversing entry that Наредба Н-18 requires, because a fiscal sale is never deleted and both entries remain visible."
 atomPath: "sale/reverse"
-coordinate: "sale/reverse · 8/crest · 35d2ccba"
-contentUuid: "0c945881-541a-5e1f-9118-5d9d9c4525b0"
-diamondUuid: "22369917-ab3d-8ba5-b25a-606775f9bcfc"
-uuid: "35d2ccba-0045-8e13-b527-c9cec0aed8d7"
-horo: 8
+coordinate: "sale/reverse · 7/descent · 34ea9ddf"
+contentUuid: "3976f4e4-02b2-5bff-9141-598ca0c5f435"
+diamondUuid: "f1f2cbf2-940e-8d61-99e2-90d796c96c33"
+uuid: "34ea9ddf-11c8-882d-928c-29409ee697c8"
+horo: 7
 typography:
   partition: sale
   bondDegree: 86
@@ -14,7 +14,7 @@ standards:
   - "BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original"
 bindings: []
 signatures:
-  computationUuid: "c891a8c5-97b4-8059-b05b-73f550416844"
+  computationUuid: "b6ae0e7f-ebd4-8728-a38a-27b265ab1c78"
   stages:
     - stage: path
       stageUuid: "9475047f-d863-8072-9363-8f96fa850263"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "26ee034d-11b0-82ad-9eec-fe59d0bfe14a"
     - stage: horo
-      stageUuid: "23ff09c2-372d-83ca-abe0-43be627bf211"
+      stageUuid: "68c62098-3eb6-879a-ace2-f60c15667ee1"
     - stage: seal
       stageUuid: "946122b7-ebd7-8c75-92ca-9898b7cd6de2"
     - stage: uuid
-      stageUuid: "eab65ace-52f6-804a-baf0-3dc41ea6ccae"
+      stageUuid: "683a954b-4a0d-8e92-9f16-72174de4c302"
 version: 2
 ---
 # reverse

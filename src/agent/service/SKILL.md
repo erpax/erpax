@@ -2,10 +2,10 @@
 name: service
 description: "Use when an agent's identity is in question — an agent IS its content (name ⊗ skills ⊗ purpose), so its uuid is the content-address of that definition and an identical clone is the SAME agent, not a copy."
 atomPath: "agent/service"
-coordinate: "agent/service · 8/crest · 4045682c"
-contentUuid: "26a48e77-f784-5ba0-9aa6-950c3766c4be"
-diamondUuid: "8729b51d-b170-83f6-b41d-f636f8aaee3f"
-uuid: "4045682c-e3db-847d-9017-41e60046b960"
+coordinate: "agent/service · 8/crest · 14a318ed"
+contentUuid: "09d45cf8-6858-5769-8dea-c1ce32192a9c"
+diamondUuid: "550325df-6b95-874e-8b0f-63a1b2a5aeae"
+uuid: "14a318ed-a117-8484-8ad6-a3cec4517c95"
 horo: 8
 typography:
   partition: agent
@@ -15,7 +15,7 @@ standards:
   - "RFC-9562"
 bindings: []
 signatures:
-  computationUuid: "dafa9836-57f2-8e01-aee5-49fd723ebf3c"
+  computationUuid: "2b19e312-0497-856b-8765-33c552656ecc"
   stages:
     - stage: path
       stageUuid: "867776f3-a362-8e19-a682-7219e264cc43"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "ac6e451b-90ae-87de-b81c-6455f6546173"
     - stage: horo
-      stageUuid: "c5efd9a6-5a75-8ba2-857e-fa5199f57ecb"
+      stageUuid: "31ecebe4-3450-8252-b24f-b36566916542"
     - stage: seal
       stageUuid: "34b9af1d-bbcb-8133-8dcd-77b95ffceaed"
     - stage: uuid
-      stageUuid: "897c32d4-8591-87a1-a111-8f8dd0154f30"
+      stageUuid: "330222bf-042d-870b-a8bd-bb265bd7a901"
 version: 2
 ---
 # agent/service — an agent is its content; cloning is content-addressing

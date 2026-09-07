@@ -2,11 +2,11 @@
 name: marry
 description: "Use when reasoning about marry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/marry"
-coordinate: "vocabulary/marry · 4/weave · 5f2fe077"
-contentUuid: "9d539750-1a5b-5cd1-90f2-d020f6c1fbcc"
-diamondUuid: "babd31d3-85b9-87c9-81f2-65dd4db44232"
-uuid: "5f2fe077-f1c5-8d4f-ab4c-f2a4f756d1be"
-horo: 4
+coordinate: "vocabulary/marry · 7/descent · 3d7c32b1"
+contentUuid: "bd04528d-56d2-595c-8e2d-4dfc5206f02d"
+diamondUuid: "326f4157-e39b-82a2-9c8c-1b09c0de80ae"
+uuid: "3d7c32b1-13cb-8edb-9416-f5bf04a32d8d"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5b281d1c-27dd-805a-83f6-e649922a3e02"
+  computationUuid: "b1e6c191-eaa1-800d-ba8b-91190381189e"
   stages:
     - stage: path
       stageUuid: "d235383f-7e0f-8971-90cf-b5382c0e82e5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1eeb5cb1-bd41-84b3-b654-6ccbb0c4cdce"
     - stage: horo
-      stageUuid: "9f4f05e0-7cde-8694-8c7e-8546dc5e86f8"
+      stageUuid: "ddee44e1-5f33-81fe-8330-e439c380a748"
     - stage: seal
       stageUuid: "9d19d80d-f6da-891d-b1e0-d7ef6f8efd24"
     - stage: uuid
-      stageUuid: "07974317-1d83-8901-9a37-4e3fad4e02ba"
+      stageUuid: "b4eaabc2-edf0-8906-b66e-a02f06f3c289"
 version: 2
 ---
 # marry

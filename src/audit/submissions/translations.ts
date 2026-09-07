@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "submissions",
-    "uuid": "abb892ef-e1fd-8b7c-adbd-c553f9037335",
+    "uuid": "760a208d-944a-886e-9033-d3e0a629e802",
     "words": [
       "submissions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.",
-    "uuid": "8bed4d16-06b6-8df7-9b03-4b01c927a163",
+    "uuid": "803aeff7-5f00-8f1c-bbf8-65c6a4b250ee",
     "words": [
       "use",
       "when",

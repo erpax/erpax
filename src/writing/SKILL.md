@@ -2,18 +2,18 @@
 name: writing
 description: "Use when writing must be computed from sealed coordinates — debit/credit prose structure · law lines · wikilink density · eb/word from readme/paper.ts; never prose templates."
 atomPath: writing
-coordinate: "writing · 2/share · 679fc600"
-contentUuid: "394ba317-7a4e-5981-8763-e4e4bebcaced"
-diamondUuid: "62635553-3a2e-863a-be6c-7abdbbc0e0b3"
-uuid: "679fc600-4e35-8fc2-97d2-4f979e7dd0a9"
-horo: 2
+coordinate: "writing · 8/crest · 90990439"
+contentUuid: "45aec6ca-07c4-526e-8669-807b7d3dfa67"
+diamondUuid: "dbdd41a8-4361-83f7-b000-6d2c3d829c71"
+uuid: "90990439-5249-8a73-b0bb-4c988c673f02"
+horo: 8
 typography:
   partition: writing
   bondDegree: 28
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4d88ddfa-4a53-81ef-b233-c1d15e85b65a"
+  computationUuid: "40c3df42-acd7-8846-8b94-4373ca681b47"
   stages:
     - stage: path
       stageUuid: "4a2340f3-f322-8f89-a6b1-73ec663906b2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6a46da64-5c4f-8970-bb64-77430271f0ae"
     - stage: horo
-      stageUuid: "39224934-ac45-8d78-9035-8e809f737f26"
+      stageUuid: "55359b3b-ed79-8184-8247-3f1cde5e2aef"
     - stage: seal
       stageUuid: "df5b1fc5-5f55-84e6-b042-b7bc5d640f5a"
     - stage: uuid
-      stageUuid: "3523d264-addc-8fb8-ab81-4c57d722bdb5"
+      stageUuid: "2336d59b-dca1-8b2f-8a28-633c2479f28a"
 version: 2
 ---
 # writing — the craft of connected thoughts

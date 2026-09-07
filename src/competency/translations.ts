@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "competency",
-    "uuid": "9a3e4eaa-d741-88bd-aff3-006c17f7e581",
+    "uuid": "0063160d-5a04-8962-a2e9-967b07c78152",
     "words": [
       "competency"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about competency — A schema.org component word, collided out of schema.org compounds — fused from competencyRequired (sti · collapse · merge).",
-    "uuid": "e0d2ee69-1fde-8200-99d6-7464fd3d8a40",
+    "uuid": "22754e85-204d-8f4b-bb84-2b6b3fff965e",
     "words": [
       "use",
       "when",

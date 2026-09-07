@@ -2,11 +2,11 @@
 name: barrier
 description: "Use when reasoning about quantum tunnelling — a particle penetrating a potential barrier it classically cannot surmount (E < V0), the wave decaying exponentially inside so transmission T ≈ e^(−2κa) leaks out. (The word tunnel is taken — it is agriculture's season-extension structure; this is the physics.) In erpax the barrier IS tamper-cost: the work to tunnel through (forge) is −log2(T) = 2κa/ln2 bits, exponentially large in the barrier, yet never quite infinite — the residual forge-probability is the design limit."
 atomPath: barrier
-coordinate: "barrier · 8/crest · 94ed41fc"
-contentUuid: "64414aed-cd8d-5a52-8771-538671c139cc"
-diamondUuid: "077b2bdf-ebc7-8ed8-a704-1b68e94b01a4"
-uuid: "94ed41fc-8bda-89d7-94cf-e1ef1918414d"
-horo: 8
+coordinate: "barrier · 1/base · f54075a3"
+contentUuid: "88d2fa5d-c702-5e0e-9957-31b57edc3178"
+diamondUuid: "4e912c66-962a-854b-b66b-de72af3d2833"
+uuid: "f54075a3-5e64-8819-aedb-c1bfebbd1e3f"
+horo: 1
 typography:
   partition: barrier
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "CODATA-2018 ħ (via ../photon); WKB + exact rectangular-barrier transmission"
 bindings: []
 signatures:
-  computationUuid: "3de0a89e-d814-8444-8fae-0816e619b2e0"
+  computationUuid: "52ef2f9f-e150-877e-bd5f-7742aa7d2c53"
   stages:
     - stage: path
       stageUuid: "1cd2be0d-8cb8-8f6a-935b-9ce1af6d79ad"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "68fc3bc3-95c7-88f6-bcdb-b71c850769f2"
     - stage: horo
-      stageUuid: "7010411b-58b2-846c-9350-a275625c7be7"
+      stageUuid: "2749b269-0321-8011-b3d5-7b9801428085"
     - stage: seal
       stageUuid: "4a46691a-94f5-8123-bf88-4c2583818067"
     - stage: uuid
-      stageUuid: "fdd88f4b-fb18-817c-bf6d-72201295a495"
+      stageUuid: "df5da36d-036b-8508-99d7-6836c53b7457"
 version: 2
 ---
 # barrier — quantum tunnelling, the exponential of tamper-cost

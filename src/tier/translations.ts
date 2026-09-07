@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tier",
-    "uuid": "7405e444-cd49-8716-a7e0-7c26dbb8633d",
+    "uuid": "bd446b9c-0c0b-8213-bac3-1d7880ee595c",
     "words": [
       "tier"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about tier — The member program this tier is a part of.",
-    "uuid": "ea2f1138-7cd7-8523-89e7-852eff7a31b3",
+    "uuid": "ab5520fe-bb3a-8ed1-9e35-de4d4996b672",
     "words": [
       "use",
       "when",

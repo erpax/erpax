@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "oid",
-    "uuid": "b712fe8f-bae1-8c37-8a56-f60a4fa59756",
+    "uuid": "b740b2b3-5375-8e8b-ac05-27a1d20c3215",
     "words": [
       "oid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid).",
-    "uuid": "8c6c47d9-57d7-8e71-a61f-5217f3e5e469",
+    "uuid": "b15e11c6-28e2-8659-9909-da45c5122682",
     "words": [
       "use",
       "when",

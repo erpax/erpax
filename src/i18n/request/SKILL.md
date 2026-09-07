@@ -2,10 +2,10 @@
 name: request
 description: Use when reasoning about the i18n request — locale and message resolution.
 atomPath: "i18n/request"
-coordinate: "i18n/request · 1/base · e1197a41"
-contentUuid: "084d71f0-b72b-5533-8ae7-c9dd667da242"
-diamondUuid: "03da93fe-c3a6-8d42-b162-6a06a72abc46"
-uuid: "e1197a41-475d-8da2-be6f-b015b124365f"
+coordinate: "i18n/request · 1/base · d33eb78b"
+contentUuid: "676c2bb0-320e-5218-b489-c2eb6365d1d6"
+diamondUuid: "83089fc2-825f-8c39-a787-a26cb4100fc7"
+uuid: "d33eb78b-6125-820b-b9b5-6d93de2ac53f"
 horo: 1
 typography:
   partition: i18n
@@ -19,7 +19,7 @@ standards:
   - "RFC-5646"
 bindings: []
 signatures:
-  computationUuid: "f042a764-af48-8402-bd78-4123b33c419b"
+  computationUuid: "250ff738-2b81-8677-8062-a2bc35ad154d"
   stages:
     - stage: path
       stageUuid: "4fbe213c-27d4-8027-b25f-0050955cf89d"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "3bcc0bce-2cfe-812b-90d2-b6cc9620a088"
     - stage: horo
-      stageUuid: "25d4b289-ac72-8472-82e3-ec358fb6759c"
+      stageUuid: "a9404244-1c6f-808b-9ea8-c171aed118b8"
     - stage: seal
       stageUuid: "191db384-ea6e-8c67-a9d5-deafc0e58c23"
     - stage: uuid
-      stageUuid: "cc1f8ae8-3434-8921-9bb3-54135ef38ed0"
+      stageUuid: "679684dc-c2d7-8b77-bc64-b3411c15a826"
 version: 2
 ---
 # i18n/request

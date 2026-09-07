@@ -2,11 +2,11 @@
 name: stupid
 description: "Use when reasoning about stupid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: stupid
-coordinate: "stupid · 1/base · 1368df71"
-contentUuid: "9948a554-99f8-5bdb-8d5a-32691c60f744"
-diamondUuid: "2bd3f128-5699-8a00-8c45-8d5ade9e8bb3"
-uuid: "1368df71-6e4c-829d-8cfc-8ebe212f0dc9"
-horo: 1
+coordinate: "stupid · 8/crest · 7db07bca"
+contentUuid: "5648a29d-59f7-5f1a-bf95-9bfe2cb430c1"
+diamondUuid: "abd80b6a-1e5e-83ca-bf26-f6c068823c2f"
+uuid: "7db07bca-ad04-8c06-ad2a-ddbb86e9cab8"
+horo: 8
 typography:
   partition: stupid
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "58926c9c-10f1-8d25-898b-275d86c96bc6"
+  computationUuid: "f7a1261f-f892-8ad0-bb92-247d44cd0b52"
   stages:
     - stage: path
       stageUuid: "111e0fdb-52b2-8361-b8c1-0dc4f691cd47"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "55336263-7629-80de-ad93-80ef18d2b983"
     - stage: horo
-      stageUuid: "f8fb3f4a-09ed-839a-8a36-9a9c0340356a"
+      stageUuid: "5d5456ee-536c-86a0-a10f-e0fb0d57fde5"
     - stage: seal
       stageUuid: "0ba06aea-ec2b-8e2b-8217-f73b0485fcdf"
     - stage: uuid
-      stageUuid: "d8cfab31-05ce-80cd-a47f-01853fdeb7da"
+      stageUuid: "ff2f851a-d5c5-8931-ac0c-a71114339b6d"
 version: 2
 ---
 # stupid

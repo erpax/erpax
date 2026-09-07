@@ -2,11 +2,11 @@
 name: footer
 description: "Use when reasoning about footer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: footer
-coordinate: "footer · 7/descent · e9cd53b8"
-contentUuid: "7b548792-f782-58ee-8609-27ac7d656d91"
-diamondUuid: "f2fb7b32-f971-8425-9f92-92e949006ec1"
-uuid: "e9cd53b8-eb61-8638-8739-d5ed22670812"
-horo: 7
+coordinate: "footer · 1/base · cd8eab01"
+contentUuid: "497e3134-467d-5a31-b061-451a9ce6fa1d"
+diamondUuid: "b0be8fe5-85ce-8391-b3f4-d5ab1001bd91"
+uuid: "cd8eab01-9a41-8209-9bd8-5f217d384380"
+horo: 1
 typography:
   partition: footer
   bondDegree: 16
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3d6f9157-7c64-812a-97b5-72ec5c27c7b9"
+  computationUuid: "8844c290-4d84-82e4-b32d-4d9d3ecf8af5"
   stages:
     - stage: path
       stageUuid: "53a8a95b-9cae-8ea8-bbfc-c19d6e39dced"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f8feb55b-5fe1-84ce-9813-a776d4320afb"
     - stage: horo
-      stageUuid: "3ac780d8-0f7c-8256-8e6d-b16401bf1a64"
+      stageUuid: "101b949f-453a-8a75-b436-c1e283254fcb"
     - stage: seal
       stageUuid: "7996b6ff-f7da-8142-976c-58fe9b454b75"
     - stage: uuid
-      stageUuid: "85ef7d1b-30e1-89fd-b22b-c6dd2da6b7cd"
+      stageUuid: "d745c94e-830b-839e-8998-f41d0bdc8141"
 version: 2
 ---
 # footer

@@ -2,11 +2,11 @@
 name: terminals
 description: "Use when registering or querying virtual POS terminals for the BG Наредба-Н-18 alternative e-shop regime — terminal number, payment-service provider, settlement IBAN, currency, and active/inactive status. The virtual POS terminal master for NRA e-shop declarations."
 atomPath: terminals
-coordinate: "terminals · 4/weave · 1c72bd73"
-contentUuid: "e57ed3ac-dfa3-5249-a675-9afe85e9f082"
-diamondUuid: "4c35eafc-97e0-80e2-a603-db1e22ddf75b"
-uuid: "1c72bd73-1a9d-8b49-a4e6-2672d764e383"
-horo: 4
+coordinate: "terminals · 7/descent · 6c93b61e"
+contentUuid: "a554448f-ee46-54bc-a591-0bd3c172174f"
+diamondUuid: "e3c4b5bc-556e-84c6-a318-590bada6f9d9"
+uuid: "6c93b61e-2174-861f-b9e6-5eb50b2b5b14"
+horo: 7
 typography:
   partition: terminals
   bondDegree: 21
@@ -16,7 +16,7 @@ standards:
   - "ISO/IEC-27001:2022`"
 bindings: []
 signatures:
-  computationUuid: "f1136bc4-3020-8184-aefb-c8d9e1b94357"
+  computationUuid: "fd01cd98-5863-8023-b0ed-9298f90df65d"
   stages:
     - stage: path
       stageUuid: "baddb3ec-25c0-87b4-936e-a597edbb67e7"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9a3b5ca1-4e94-8214-a56f-56f2bf12ad47"
     - stage: horo
-      stageUuid: "a13aec86-a789-8fd6-8de4-ff68cca8faa0"
+      stageUuid: "9e2f55f8-8676-8fcf-b8d5-171df6fcd57d"
     - stage: seal
       stageUuid: "80745e0a-f7bc-81e8-a770-629fb241f317"
     - stage: uuid
-      stageUuid: "e5c30e20-4c44-8433-b3bc-8919bbadabb1"
+      stageUuid: "59191d61-addb-88e9-bf5f-19d0085bc07c"
 version: 2
 ---
 # terminals

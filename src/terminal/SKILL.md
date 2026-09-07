@@ -2,10 +2,10 @@
 name: terminal
 description: "Use when reasoning about terminal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: terminal
-coordinate: "terminal · 7/descent · e5d0a289"
-contentUuid: "5ba0bdb4-efca-5ce2-a342-353283943a30"
-diamondUuid: "b0f57adc-37d2-8c45-a2ff-0d552d523a35"
-uuid: "e5d0a289-65d0-89a1-a21e-f6d51aefb10a"
+coordinate: "terminal · 7/descent · ad0010e8"
+contentUuid: "0e48e16b-0988-5194-9328-18b7730f3181"
+diamondUuid: "d62235f7-9fa5-8436-901f-ad4e8b6e9ffc"
+uuid: "ad0010e8-6ae6-8d6c-b3c5-54d232279bb8"
 horo: 7
 typography:
   partition: terminal
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e2a6a2e-2f7a-8e97-b42f-acaf36773a38"
+  computationUuid: "9131c789-3664-881d-adc0-fe75266431cb"
   stages:
     - stage: path
       stageUuid: "e9001fdd-3b3a-88c2-8012-2d1706a92e2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "af3f2332-0047-831c-aa09-e2f28e06e9dc"
     - stage: horo
-      stageUuid: "1dd9b105-48e5-8cb5-b54c-f1a66b47a66d"
+      stageUuid: "de237b94-7d65-8ad5-abf0-df52d2801264"
     - stage: seal
       stageUuid: "41a33892-0fc7-88b4-808d-f0c9fe2392ea"
     - stage: uuid
-      stageUuid: "7581c211-89cf-8e36-8c6b-2dd140c597af"
+      stageUuid: "7e1d2289-7230-8905-86d4-0c94c76a9b24"
 version: 2
 ---
 # terminal

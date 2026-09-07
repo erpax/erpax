@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "money",
-    "uuid": "807a7714-733a-86bd-8e83-e5829c6e480f",
+    "uuid": "1f4dd8ab-2649-8020-8f4e-cfa3d022bdd4",
     "words": [
       "money"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about money — `Money` value type — integer-cents amount + ISO 4217 currency.",
-    "uuid": "16b3e9d6-e552-874b-9996-d7015540b851",
+    "uuid": "15568034-a935-86d2-ae7b-e8f68f011ec7",
     "words": [
       "use",
       "when",

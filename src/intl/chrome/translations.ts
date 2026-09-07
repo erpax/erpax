@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chrome",
-    "uuid": "d4d4e4c1-3736-83a4-8ae6-8bffca5f4b10",
+    "uuid": "f191a004-97cc-8c08-992d-4df2d13463b3",
     "words": [
       "chrome"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about chrome — The per-locale shell: message provider, , admin bar, header, children, footer. Its substance is that **one locale value reaches every part at once**, and the mechanism is the .",
-    "uuid": "0ae51745-7f72-8f3b-af5e-23acf76b8492",
+    "uuid": "070b4f5a-b487-8958-9f51-49b24e4116bc",
     "words": [
       "use",
       "when",

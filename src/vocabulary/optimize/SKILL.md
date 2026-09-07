@@ -2,18 +2,18 @@
 name: optimize
 description: "Use when building or reviewing Payload collections, fields, queries, or config for performance — slow admin/API, large generated schemas, heavy relationship population, duplicated block definitions, or oversized client bundles."
 atomPath: "vocabulary/optimize"
-coordinate: "vocabulary/optimize · 5/round · 1fb0fdf1"
-contentUuid: "8cb03832-76db-560c-8f3f-0fd04ba419e6"
-diamondUuid: "91e16a0d-e3fb-887d-a92a-c5e8c4b565b5"
-uuid: "1fb0fdf1-a888-835d-ad5a-0f7f15033966"
-horo: 5
+coordinate: "vocabulary/optimize · 4/weave · 14aeaf2f"
+contentUuid: "75108cce-9ded-56ed-b451-be46d298dc39"
+diamondUuid: "f8272834-b674-88e8-a6c6-22fefb9288ee"
+uuid: "14aeaf2f-df90-8d2f-ae61-076cb5fbc493"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 41
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c2fb1063-c1f2-8234-a392-d1ac3be37391"
+  computationUuid: "2908182e-dba0-8cf5-ae8c-80b1be12f565"
   stages:
     - stage: path
       stageUuid: "5948bcf6-e83a-8f46-a793-9ed3976d88a3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "97669959-65bd-8161-8c95-2df31fdf0b67"
     - stage: horo
-      stageUuid: "85fc5a7a-036c-8ead-bfb0-5da03a38f172"
+      stageUuid: "3000f1e1-b535-8011-aea2-44d51cf21dba"
     - stage: seal
       stageUuid: "27e6b1a3-83ee-8489-9735-ff8bffbc08df"
     - stage: uuid
-      stageUuid: "dfc92732-ba36-8a54-8119-d86ee206639c"
+      stageUuid: "125d7244-00c0-8e24-9f52-8ad2c5a941db"
 version: 2
 ---
 # optimize — Payload performance & schema-size best practices

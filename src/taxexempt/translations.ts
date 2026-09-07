@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "taxexempt",
-    "uuid": "01a98c5b-f1af-8d1d-b0fe-8ce9853d1fde",
+    "uuid": "cc3ef753-54ef-84e8-80ef-b579d04bb537",
     "words": [
       "taxexempt"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about taxexempt — Use for non-taxable income or entities exempt from income tax — requires jurisdiction-specific exemption testing and disclosure; affects deferred-tax calculation",
-    "uuid": "b3283e53-bf7a-8ded-bba0-eed2224831b7",
+    "uuid": "bde8757c-ca35-8f41-ad4e-866fbe709313",
     "words": [
       "use",
       "when",

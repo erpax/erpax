@@ -2,10 +2,10 @@
 name: generate
 description: "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself."
 atomPath: "self/generate"
-coordinate: "self/generate · 2/share · 50fffbff"
-contentUuid: "64658912-1815-554e-9b47-1c1c60a649a0"
-diamondUuid: "76813e60-96ad-885a-a685-bc7b52545237"
-uuid: "50fffbff-74e6-8fb9-bd03-23fa63c2164c"
+coordinate: "self/generate · 2/share · 00a79f2d"
+contentUuid: "802c477b-42b9-5658-8908-403043a1c760"
+diamondUuid: "fd326ffd-02e7-885f-9a25-886080d9b805"
+uuid: "00a79f2d-e692-84f2-ad51-c2ddf66f13af"
 horo: 2
 typography:
   partition: self
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "000166a2-380d-827a-828f-cc073bbe687a"
+  computationUuid: "776b0d73-da25-846b-b330-46445489448f"
   stages:
     - stage: path
       stageUuid: "13616428-278e-8c07-87d4-e42d1a7c6897"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d72c9b65-3277-88ca-b3bd-b7d1d6e65cef"
     - stage: horo
-      stageUuid: "50513b77-0662-8022-a848-25380e5487b7"
+      stageUuid: "4e7151b7-96db-8848-9125-d7ed78e84b16"
     - stage: seal
       stageUuid: "b5f9a2ac-b0e1-8f7e-b5c4-cdd573d3681d"
     - stage: uuid
-      stageUuid: "902ef671-41f8-8a3d-b767-52286cce4bc2"
+      stageUuid: "5ab4a9db-c154-89af-bad0-ce10d57fe898"
 version: 2
 ---
 # self-generate — the self grows its own corpus (under [[self]] · outward coil · 1·base)

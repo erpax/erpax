@@ -2,11 +2,11 @@
 name: wash
 description: "Use when reasoning about wash as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: wash
-coordinate: "wash · 8/crest · c177e969"
-contentUuid: "97583907-270e-5acd-82ad-a7fb2c9c83bc"
-diamondUuid: "3b7d08a4-6152-8dc1-916c-0e2186a7f5c4"
-uuid: "c177e969-83ca-8711-896d-650faab6d838"
-horo: 8
+coordinate: "wash · 5/round · 98fbe33e"
+contentUuid: "be7fc924-4395-5691-9623-44c2de2ba4ef"
+diamondUuid: "1833db25-3be0-8b25-a708-c0adb5e22142"
+uuid: "98fbe33e-eab7-8f7f-9d0c-9513b79a6571"
+horo: 5
 typography:
   partition: wash
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8fba78df-9873-8dcb-8cc7-edd51a7a2ee9"
+  computationUuid: "8d02d6b7-fdd6-825b-95c4-f1448c0395f3"
   stages:
     - stage: path
       stageUuid: "fd7fc68a-6339-8516-85a0-dbf823a387e1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a6aa9c7f-6ff8-873b-af55-ca3748c0541c"
     - stage: horo
-      stageUuid: "4bfc9bba-2e09-829d-ae55-73ff421777e7"
+      stageUuid: "3b9cd5b9-47f0-8066-8b1f-6c5dc16d4a09"
     - stage: seal
       stageUuid: "32e164e6-797c-8ea0-8427-7b94298e5752"
     - stage: uuid
-      stageUuid: "1a0a625b-9cad-8444-89d9-70e5631197b3"
+      stageUuid: "f77903f7-b8b1-8109-9beb-6982503971ce"
 version: 2
 ---
 # wash

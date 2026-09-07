@@ -2,11 +2,11 @@
 name: type
 description: "Use when reasoning about type identity on the matrix — a type as the content-uuid of its structural shape, so type-equality is uuid-equality (structural typing by content-addressing) and identical types merge."
 atomPath: "quantum/type"
-coordinate: "quantum/type · 8/crest · bc430955"
-contentUuid: "571c7678-caea-5006-9b2e-d252f59a28e3"
-diamondUuid: "d1988ecf-4051-843d-91c9-b95205705acc"
-uuid: "bc430955-e53b-8d22-82e6-a690852660c6"
-horo: 8
+coordinate: "quantum/type · 4/weave · 5f6e9052"
+contentUuid: "aab20f3b-8c6c-5122-8c50-ff453330f03e"
+diamondUuid: "ec758958-eeb3-896c-bb24-530dce8bcd7b"
+uuid: "5f6e9052-503c-876b-bd4c-58e45a80784c"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 279
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "b533b6a3-bf72-8cc9-bf7f-0c75114d3b79"
+  computationUuid: "fe5703d9-91e4-8288-a209-001a6254e70e"
   stages:
     - stage: path
       stageUuid: "cff75413-7577-838a-86c5-e0febb781568"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1627ecd5-ca7c-8964-9a3f-4f701a0bd3f7"
     - stage: horo
-      stageUuid: "7b7d0b54-17ed-83bd-8e63-04b0819f3605"
+      stageUuid: "dee8a88c-2020-8ea4-bafc-9d006824a6a5"
     - stage: seal
       stageUuid: "03a36eba-cd9e-8fda-af1e-6d1d333eaa77"
     - stage: uuid
-      stageUuid: "1f51e027-14cc-881b-ac01-e0f5285fad42"
+      stageUuid: "94064ef3-4fa9-8588-87dd-e752dbe37fe3"
 quantum:
   superposition:
     - action
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "b533b6a3-bf72-8cc9-bf7f-0c75114d3b79"
-    contentUuid: "571c7678-caea-5006-9b2e-d252f59a28e3"
+    computationUuid: "fe5703d9-91e4-8288-a209-001a6254e70e"
+    contentUuid: "aab20f3b-8c6c-5122-8c50-ff453330f03e"
 version: 2
 ---
 # quantum/type — type identity as a content-uuid
@@ -69,4 +69,4 @@ Matter-twin: `src/quantum/type/index.ts` (`typeUuid` · `sameType`). Composes [[
 
 @standard RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `571c7678-caea-5006-9b2e-d252f59a28e3` · account `quantum/type` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `aab20f3b-8c6c-5122-8c50-ff453330f03e` · account `quantum/type` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

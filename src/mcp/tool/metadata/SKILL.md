@@ -2,11 +2,11 @@
 name: metadata
 description: "Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register."
 atomPath: "mcp/tool/metadata"
-coordinate: "mcp/tool/metadata · 7/descent · 6ed1b3e2"
-contentUuid: "b7229d03-7515-531f-aab5-88f362c54007"
-diamondUuid: "c1362718-5d64-8802-be1a-11bfcfd80795"
-uuid: "6ed1b3e2-d25a-813c-9bb3-34ba6daf5423"
-horo: 7
+coordinate: "mcp/tool/metadata · 8/crest · ef97bb30"
+contentUuid: "c9ef8d80-479b-551f-b789-ef22955d0a47"
+diamondUuid: "27c5ccc8-5afa-8897-97a6-aa32bd7c5f41"
+uuid: "ef97bb30-5558-82ec-801d-900eb7bd4c02"
+horo: 8
 typography:
   partition: mcp
   bondDegree: 20
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e563a70b-e2a4-8eb9-8dff-aa90685c0daa"
+  computationUuid: "528a42f7-4834-8f50-b8e4-1d674bf74589"
   stages:
     - stage: path
       stageUuid: "f1e2ccc7-d5b9-8141-9193-d7fd8e455fe9"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "04b7fcf6-3b1a-8c0d-bfd4-1b00fb956880"
     - stage: horo
-      stageUuid: "9189d41c-2249-8fff-8fba-7512b85845a9"
+      stageUuid: "ba9dfc53-4e57-8221-ad2d-31200632e487"
     - stage: seal
       stageUuid: "7210b5de-e752-8594-8966-f290384de931"
     - stage: uuid
-      stageUuid: "f6eb2c6f-7ef4-8d7b-b806-d434912f0b3d"
+      stageUuid: "1fdf6604-71ac-8e9d-8cc3-2d2e18dbb5a9"
 version: 2
 ---
 # mcp-tool-metadata

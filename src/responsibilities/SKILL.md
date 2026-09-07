@@ -2,11 +2,11 @@
 name: responsibilities
 description: Use when reasoning about responsibilities — Responsibilities associated with this role or Occupation.
 atomPath: responsibilities
-coordinate: "responsibilities · 4/weave · d3fa689c"
-contentUuid: "726d44c5-7edd-5025-a6a3-51616937bb46"
-diamondUuid: "c51272b3-5056-8bb2-b017-a8b13dd0b387"
-uuid: "d3fa689c-6408-8f57-b247-a2d495df91e3"
-horo: 4
+coordinate: "responsibilities · 1/base · 70a0ed47"
+contentUuid: "ca99b90f-370b-5642-9754-0266a94b5e90"
+diamondUuid: "eb684e52-a064-8735-b921-5a137ccb146a"
+uuid: "70a0ed47-01ac-8342-ba71-eea6fd849b69"
+horo: 1
 typography:
   partition: responsibilities
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "59450b46-274f-8aa8-a6ab-939dd00ea971"
+  computationUuid: "fc288633-5c0a-8c7f-b93e-45cbbd436b7d"
   stages:
     - stage: path
       stageUuid: "d3ac8b60-0cc8-8cbc-8aa5-a7f3d34ddb4d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "701a33f4-f6b7-8f1e-9c7b-923a1d5ed50f"
     - stage: horo
-      stageUuid: "0bbb1679-98ec-88e2-8f41-c5987dd3bb59"
+      stageUuid: "9a25e003-3f14-80ce-8cc7-a6cc10690de0"
     - stage: seal
       stageUuid: "c9810059-0774-86af-817a-ef218da52be0"
     - stage: uuid
-      stageUuid: "87f3827e-3070-8e42-94c4-e67b76bfee98"
+      stageUuid: "9a54aa79-0f16-8889-a548-bb2bec8de55b"
 version: 2
 ---
 # responsibilities

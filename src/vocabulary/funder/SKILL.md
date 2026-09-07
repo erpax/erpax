@@ -2,10 +2,10 @@
 name: funder
 description: Use when reasoning about funder — A person or organization that supports (sponsors) something through some kind of financial contribution.
 atomPath: "vocabulary/funder"
-coordinate: "vocabulary/funder · 7/descent · f866c00b"
-contentUuid: "f5267757-1917-5c98-ad9e-ba82c5833b6d"
-diamondUuid: "dfd46418-fe91-8800-9213-c21ddc1db67d"
-uuid: "f866c00b-96fb-899e-8d3d-1c8ff1583df8"
+coordinate: "vocabulary/funder · 7/descent · a4f1ca02"
+contentUuid: "8e97bec3-cf47-5528-bccc-f1d053acafd4"
+diamondUuid: "86466edf-4710-8b23-b2b7-87eb79db3ab7"
+uuid: "a4f1ca02-73a8-8852-806e-eb2ee77c1d8b"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e1dbcacc-edd3-8075-9bb1-2533f89ac21a"
+  computationUuid: "1f522ca5-6cf6-880f-a4e2-7a221c66fbe2"
   stages:
     - stage: path
       stageUuid: "3609cf5c-5ef2-8bb4-855d-22572d75a620"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "47d18dba-ff9d-855a-b248-9bb8b20ba0d5"
     - stage: horo
-      stageUuid: "2dbe14e0-9bee-8c4c-89bd-1829d380cd0b"
+      stageUuid: "0d77f23c-4be6-809d-9ae8-88a7e4b13b46"
     - stage: seal
       stageUuid: "a00883b5-9a28-866e-b48c-25a640bd1b55"
     - stage: uuid
-      stageUuid: "7bb02210-2cbb-8d11-8704-f75c46a8337f"
+      stageUuid: "e8032a8d-f7ae-837c-ba48-c0df747c06ba"
 version: 2
 ---
 # funder

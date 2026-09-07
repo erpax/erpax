@@ -2,18 +2,18 @@
 name: source
 description: "Use when tracking the origin of data — source document (purchase order for invoice), source system (ERP, spreadsheet), source bank account (for transfer), data-import source. Metadata for audit and reconciliation."
 atomPath: source
-coordinate: "source · 1/base · 55df31a9"
-contentUuid: "b20043f0-bdae-5c80-a9fa-ccae92a9cffd"
-diamondUuid: "cc999355-79b0-878a-8d05-167136699bc7"
-uuid: "55df31a9-e7cc-8309-acd7-edde94871052"
-horo: 1
+coordinate: "source · 5/round · 3060633d"
+contentUuid: "ddc0f2b2-1d5b-5543-b15f-71ef6d0b0ddc"
+diamondUuid: "3906fb09-0d68-8cf1-827d-08b3acd93dcf"
+uuid: "3060633d-05c6-82a5-b29a-0cda8612a44d"
+horo: 5
 typography:
   partition: source
   bondDegree: 67
 standards: []
 bindings: []
 signatures:
-  computationUuid: "99048138-194e-830e-b4a0-6953b206153a"
+  computationUuid: "fe55d47b-8a17-88ce-8477-94674d1de6cf"
   stages:
     - stage: path
       stageUuid: "4063074e-1484-84c5-8c24-5545de7e6723"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3aa21ad1-2994-86de-bd41-afc775e56bf2"
     - stage: horo
-      stageUuid: "13c42d10-e8c1-8950-8c0d-268777038249"
+      stageUuid: "827f99ad-ea93-8bb3-90b5-94b7df4c6201"
     - stage: seal
       stageUuid: "4cdec43a-ba10-8bb9-883a-154e38103946"
     - stage: uuid
-      stageUuid: "260a9cfe-9b39-8d4b-974c-8d399763c811"
+      stageUuid: "62968743-155d-84af-8770-7a62a8c17c85"
 version: 2
 ---
 # source

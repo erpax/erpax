@@ -2,11 +2,11 @@
 name: coherence
 description: "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence."
 atomPath: coherence
-coordinate: "coherence · 7/descent · 869f75b5"
-contentUuid: "439800b2-886c-5e89-b66c-52cf8cd1215a"
-diamondUuid: "ca30762b-06f4-8a3c-a86e-6c15a411efdc"
-uuid: "869f75b5-dd3a-81fd-a188-2bea7c78fb59"
-horo: 7
+coordinate: "coherence · 1/base · 8fe23de0"
+contentUuid: "d68b81ec-fcd8-5ea2-84e3-b28668ca7143"
+diamondUuid: "a104826d-3a3b-86f8-a86d-6fcf27298d25"
+uuid: "8fe23de0-901b-8372-bd92-edd660ba7993"
+horo: 1
 typography:
   partition: coherence
   bondDegree: 71
@@ -14,7 +14,7 @@ standards:
   - "DSP magnitude-spectrum (DFT) + the 0.7..4 Hz human-pulse band"
 bindings: []
 signatures:
-  computationUuid: "654e7d47-8768-8423-9431-d40edb21b3d4"
+  computationUuid: "b1a4812a-3d16-8d61-90f7-a68fc256ce78"
   stages:
     - stage: path
       stageUuid: "4731d009-169d-8f89-80e6-2503486a019e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9c6f5216-2e31-8ec9-8aff-75d5ad7acaa7"
     - stage: horo
-      stageUuid: "f407e70f-77fd-8912-970d-46c7f9708211"
+      stageUuid: "753c7327-5744-8c61-9255-8a1b40d8c8a3"
     - stage: seal
       stageUuid: "dbd2006f-384b-89f2-bfa7-43993c2cb851"
     - stage: uuid
-      stageUuid: "90e8f73c-feb2-8ed9-abf5-e054ab834046"
+      stageUuid: "38aa02e2-197a-8f76-b2be-bea9179db096"
 version: 2
 ---
 # coherence — the measurable form of wholeness (harmony, as a quantity)

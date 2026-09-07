@@ -2,11 +2,11 @@
 name: option
 description: Use when reasoning about option — A sub property of object. The options subject to this action.
 atomPath: "vocabulary/option"
-coordinate: "vocabulary/option · 2/share · c10d00f3"
-contentUuid: "6f9d3aa0-718f-5f88-abed-a534288d5fa1"
-diamondUuid: "3dc4cede-d904-8e70-8c60-803ef0d574b4"
-uuid: "c10d00f3-6f8c-81ae-be06-595ea06bf317"
-horo: 2
+coordinate: "vocabulary/option · 5/round · 8d2ac637"
+contentUuid: "1e7d42e7-2ad1-5855-b06e-d4201e56fcbd"
+diamondUuid: "fc694841-7ce7-8a1b-8977-9b62bdb79020"
+uuid: "8d2ac637-1b8b-88e1-aece-7316023b91e3"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7a361d29-c27c-8e1e-be48-d935afec410a"
+  computationUuid: "14083d1a-bc81-8884-8415-361c638141f5"
   stages:
     - stage: path
       stageUuid: "27503121-9697-8c0f-92b0-7bc150eb2239"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9e08ab2d-b842-8d43-97fd-447e2540f74f"
     - stage: horo
-      stageUuid: "b2a68b78-45c7-848f-8c07-05e85ddef9e3"
+      stageUuid: "7e26c1c8-028f-8722-a51a-126bfbd3181e"
     - stage: seal
       stageUuid: "ac3a6f6d-5d0e-890e-99e8-f6a2ff78a0ae"
     - stage: uuid
-      stageUuid: "1e1b0145-139b-8c10-b184-ba3a98a4fb5d"
+      stageUuid: "fa4deacf-da58-855c-87c5-5187784c1360"
 version: 2
 ---
 # option

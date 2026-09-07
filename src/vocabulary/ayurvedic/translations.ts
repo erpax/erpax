@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ayurvedic",
-    "uuid": "3720e084-706c-8992-a5b3-91f390c31fa6",
+    "uuid": "aee1d203-a19d-8f55-8922-f3d2bb236174",
     "words": [
       "ayurvedic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ayurvedic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "fe735e96-8d92-85d0-9db6-e6de5fc5c1ba",
+    "uuid": "9f62807e-d709-800f-b972-32f0205a7066",
     "words": [
       "use",
       "when",

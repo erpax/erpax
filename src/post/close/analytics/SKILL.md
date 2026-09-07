@@ -2,11 +2,11 @@
 name: analytics
 description: "Use when generating post-close financial analytics — budget-vs-actual and period-over-period variance with waterfall decomposition, the sixteen liquidity/profitability/solvency/efficiency ratios, IFRS-8 business and geographic segment reporting, and executive KPI dashboards, once audit and consolidation are approved."
 atomPath: "post/close/analytics"
-coordinate: "post/close/analytics · 5/round · fcdeaea0"
-contentUuid: "5b1045b1-3c7d-5e86-b51a-f0a42f258c81"
-diamondUuid: "f48cf57e-52ec-87db-a0a6-bd70dbef3bf2"
-uuid: "fcdeaea0-d9cd-80c9-88b7-0448eb4306e9"
-horo: 5
+coordinate: "post/close/analytics · 4/weave · 824ecda1"
+contentUuid: "6ab8cecd-887a-5958-96b2-5b1eb5e0b364"
+diamondUuid: "2d1c0a23-0dc3-8f3b-b7c8-c39cb7c4d9ac"
+uuid: "824ecda1-35fb-8962-b2ff-9e493f358702"
+horo: 4
 typography:
   partition: post
   bondDegree: 92
@@ -15,7 +15,7 @@ standards:
   - "IAS-34"
 bindings: []
 signatures:
-  computationUuid: "aee837d8-fe88-8953-bd59-d03ca997b1f9"
+  computationUuid: "23a47914-7e65-8437-a598-1ca5205ef598"
   stages:
     - stage: path
       stageUuid: "bc73c14b-269d-86d2-9db9-8aadd58b157c"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "d1ee48ed-2c72-8a45-a347-ff6f1cb99fd4"
     - stage: horo
-      stageUuid: "9970fbb8-1065-8b91-9840-a126ff0c9a75"
+      stageUuid: "b0d5c7a9-7914-8a26-92bf-5aff2956fb00"
     - stage: seal
       stageUuid: "c1f231f9-e4aa-84c0-b83b-f1f0aa56bacd"
     - stage: uuid
-      stageUuid: "d09ed33f-43ae-8c7a-89af-acf27da02093"
+      stageUuid: "d2c3e034-4ee8-8644-a628-663093c953fb"
 version: 2
 ---
 # Phase B7: Post-Close Analytics

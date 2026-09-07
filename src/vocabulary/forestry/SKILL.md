@@ -2,18 +2,18 @@
 name: forestry
 description: "Use when managing standing timber's biological transformation for produce — trees grown in stands as IAS-41 biological assets (standing biomass at fair value; the land separate), on a rotation set by mean annual increment, tended by silviculture (thinning/regeneration), felled to merchantable volume. Carbon stock is the cross-cutting ESG output; FSC/PEFC certification with chain-of-custody."
 atomPath: "vocabulary/forestry"
-coordinate: "vocabulary/forestry · 5/round · 529cb453"
-contentUuid: "10200e1d-51f3-534f-8374-0e795a920dd3"
-diamondUuid: "8a9ebca4-1300-8160-81b4-82c810235045"
-uuid: "529cb453-6da1-8ee2-be42-6742b251e676"
-horo: 5
+coordinate: "vocabulary/forestry · 1/base · 42c4a8b2"
+contentUuid: "3129cf8d-62f9-591d-8091-10af68e5f3ec"
+diamondUuid: "be81c035-be07-89ad-b3e8-2f8a247327aa"
+uuid: "42c4a8b2-e91e-8286-bb94-4ffa23d83a3a"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 53
 standards: []
 bindings: []
 signatures:
-  computationUuid: "371c893b-e7e2-8fec-b185-c79267d205bc"
+  computationUuid: "2c3ad699-032c-8efc-84e5-da6ef6f78664"
   stages:
     - stage: path
       stageUuid: "a9b1e194-24b4-8616-9c0c-de4256b7ed7e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7a049120-1cb5-8826-8912-2fc26c7fb243"
     - stage: horo
-      stageUuid: "66a6f521-c02a-8fb2-adfa-53e6595e5fcc"
+      stageUuid: "ebbb3ab4-d120-870f-a895-0e740e516c3f"
     - stage: seal
       stageUuid: "6b44346c-0d4c-8fa3-8788-be832a6f12ab"
     - stage: uuid
-      stageUuid: "d7bdd152-de1c-8f10-a58f-136294f2c348"
+      stageUuid: "b3d3d8d7-d535-825e-b842-82199e71ee79"
 version: 2
 ---
 # forestry — managing standing timber for produce (and carbon)

@@ -2,11 +2,11 @@
 name: diagram
 description: "Use when reasoning about diagram — An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures."
 atomPath: "vocabulary/diagram"
-coordinate: "vocabulary/diagram · 7/descent · 566f675c"
-contentUuid: "1f4c2b50-0104-5b06-a3aa-f4dd45ed3f1e"
-diamondUuid: "bf6519da-1617-87f1-bdba-70553ea38042"
-uuid: "566f675c-400d-8e1f-8c39-896d77815efb"
-horo: 7
+coordinate: "vocabulary/diagram · 1/base · 4df1de22"
+contentUuid: "eeaa1d9a-bb10-5761-8e0d-19289c068840"
+diamondUuid: "d51ba9b6-6097-8082-8466-633119f009f6"
+uuid: "4df1de22-1792-85ac-8724-e3af53ae7260"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ebadcf24-8c31-89ad-961a-a010ed3fb829"
+  computationUuid: "2d43a879-c647-8f71-8c74-47cfa5fb12b6"
   stages:
     - stage: path
       stageUuid: "8936e535-debc-8de6-a000-1742da2304b6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "77ddeac1-31f9-8088-8ce7-1dc0a0687657"
     - stage: horo
-      stageUuid: "cf43bc1e-9a24-8679-b881-ae74bd15628d"
+      stageUuid: "84909bc0-b1db-820f-ad00-70d93bbc9463"
     - stage: seal
       stageUuid: "c60f97f4-0564-8e88-8763-072f4abcda0c"
     - stage: uuid
-      stageUuid: "6d0598eb-bc29-8771-8d11-9c4204643ec3"
+      stageUuid: "32288ec5-a632-86a3-93ed-382d203a00f4"
 version: 2
 ---
 # diagram

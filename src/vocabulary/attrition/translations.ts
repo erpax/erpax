@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attrition",
-    "uuid": "00d345b6-362f-8c51-873b-9145d8a32fc4",
+    "uuid": "c3531a61-523a-8b08-a16b-b2299f108ba4",
     "words": [
       "attrition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying.",
-    "uuid": "87b7a4af-5f34-8a4f-8290-e03b47099757",
+    "uuid": "24fd3b4a-833b-8f48-87f0-62e0c00f99ec",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: compute
 description: "Use when reasoning about compute — Every atom is a page, every partition a volume. derives the volume rows, says what a path means segment by segment, and emits the index as a document."
 atomPath: "book/compute"
-coordinate: "book/compute · 5/round · e01e3837"
-contentUuid: "31ab23c7-3da7-5712-bda5-2462f09c7af3"
-diamondUuid: "85716c4a-7053-8f70-8cd5-011106e34cd1"
-uuid: "e01e3837-4652-8942-8e53-f503e206d84a"
-horo: 5
+coordinate: "book/compute · 2/share · 58122408"
+contentUuid: "afd3bfe8-39b6-506c-ad7a-75bfd55b63c5"
+diamondUuid: "ea17b91f-abc1-85ea-9855-fcd3b6da208a"
+uuid: "58122408-9fee-826a-8e8d-ef7efca76029"
+horo: 2
 typography:
   partition: book
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cb56b01e-8ef2-8e1d-b045-7c03acf84d92"
+  computationUuid: "c523e291-4119-8cd9-98a9-7f9b8a30fb75"
   stages:
     - stage: path
       stageUuid: "3795316b-0375-8e2c-9819-57d3c461a6da"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2754d692-82c2-86da-aa92-fda1894266be"
     - stage: horo
-      stageUuid: "ac30121e-7eed-88db-ac2b-de5237d78288"
+      stageUuid: "14c186a9-24f9-86ae-8f97-08696d5462f4"
     - stage: seal
       stageUuid: "90e5bb4c-aa65-8e29-98dd-c6af1598755e"
     - stage: uuid
-      stageUuid: "2b1957b0-5baf-81e2-a2e5-a871bf466ab0"
+      stageUuid: "3b3ec1c0-0aa0-8bd7-a845-14dca8a1e181"
 version: 2
 ---
 # book/compute — the corpus read as a book of books, computed rather than written

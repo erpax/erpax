@@ -2,11 +2,11 @@
 name: conditional
 description: "Use when a claim holds only under an unproven hypothesis — given(H).proves(Y) folds the unprovable into a PROVEN implication H ⇒ Y, keeping H disclosed. The honest complement to rules/refutable: an unfalsifiable assertion is a lie; an unprovable hypothesis, named, proves another thing. Run: tsx src/conditional/index.ts"
 atomPath: conditional
-coordinate: "conditional · 7/descent · 16a128a0"
-contentUuid: "7c99ca69-3550-5875-b665-eba773b8dc3b"
-diamondUuid: "ee904aa3-d86a-8f72-a228-fe64ec95c529"
-uuid: "16a128a0-105f-8b1f-82b1-938b3622e829"
-horo: 7
+coordinate: "conditional · 5/round · b3fc8929"
+contentUuid: "99fcc5f2-cb81-5302-af63-2b9ac0fdcb86"
+diamondUuid: "db3c4a92-236d-8dc8-9fd6-0a8ff0aa0586"
+uuid: "b3fc8929-8733-88f9-a3b2-550b34404a46"
+horo: 5
 typography:
   partition: conditional
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "ISO-19011:2018 §6.4 — evidence: a conditional finding names its condition"
 bindings: []
 signatures:
-  computationUuid: "2f5ff3fa-730d-8acb-8a38-cc2027f762c2"
+  computationUuid: "00902f11-d733-81a9-9c34-6a22ddfbf43f"
   stages:
     - stage: path
       stageUuid: "8b7b8198-9ca7-89dd-815d-59b01c507829"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c8476fbb-3d6e-8b73-b8d5-5ede48bc1df7"
     - stage: horo
-      stageUuid: "33080de4-5efb-8432-baa9-f5c2e5701c82"
+      stageUuid: "5c3d5995-a16c-8e40-8c19-a791566f8958"
     - stage: seal
       stageUuid: "64df3fbc-d675-83ff-a1f4-48f9a6ba764f"
     - stage: uuid
-      stageUuid: "614fe147-c268-810f-b81a-e871584d1b44"
+      stageUuid: "ee76bd40-7cd0-8eab-a0d5-69154775f4b6"
 version: 2
 ---
 # conditional — anything unprovable, folded, may prove another thing

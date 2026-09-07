@@ -2,10 +2,10 @@
 name: id
 description: "Use when reasoning about identity — the machine-address of an entity, content-addressed (content-uuid) or tenant-local (sequential). Never conflate with name (human label) or number (document handle). The id is what federates and merges."
 atomPath: "vocabulary/id"
-coordinate: "vocabulary/id · 2/share · e3709a86"
-contentUuid: "876744f0-5ab7-535f-9e75-b59e60d1eb75"
-diamondUuid: "db806e4b-4e15-83c8-a196-c91d228f24e1"
-uuid: "e3709a86-2934-892b-b6d8-2c893c32185c"
+coordinate: "vocabulary/id · 2/share · 02cdf3e7"
+contentUuid: "576956e9-5588-540c-ba5c-3119a61c00bf"
+diamondUuid: "40e6f849-3314-8a7b-b5d6-f0e8d6e2f2e5"
+uuid: "02cdf3e7-8b8f-8daa-a2e4-becc068c2900"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2a0c4e72-a6c2-8fee-84e2-ccbe721ec3e0"
+  computationUuid: "af0bf55c-ea30-8e66-9459-1d084b452760"
   stages:
     - stage: path
       stageUuid: "d3b1951e-947c-83f9-997a-69cd26498875"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1ada9aac-e1ef-897d-b830-eb87728a42c3"
     - stage: horo
-      stageUuid: "bd587f5f-2103-8cd3-8f0e-0ddef8833bc5"
+      stageUuid: "aaff9ef4-285d-8f4b-89c2-2019156fe93a"
     - stage: seal
       stageUuid: "561f35e5-50c2-8da0-9935-5add113cb482"
     - stage: uuid
-      stageUuid: "c5a9c570-eac8-8471-98d3-d917217649dc"
+      stageUuid: "fddfefea-6192-8be5-bd0d-2f7a3a0343f1"
 version: 2
 ---
 # id

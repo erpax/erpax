@@ -2,10 +2,10 @@
 name: qa
 description: "Use when reasoning about qa as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/qa"
-coordinate: "vocabulary/qa · 7/descent · 83f39b79"
-contentUuid: "b2abb1f4-32f8-5e5e-8ce8-4bcd2c020688"
-diamondUuid: "154ea51f-c80e-8432-83ef-d0854bee4b33"
-uuid: "83f39b79-3277-8d13-abe7-5db2a30377d1"
+coordinate: "vocabulary/qa · 7/descent · 1019bdea"
+contentUuid: "4681d8db-f25f-5034-9cc2-9cbe63938d41"
+diamondUuid: "057cfdf4-def9-8fe8-96dd-f23bdede799e"
+uuid: "1019bdea-13b4-84ee-a51d-b4610a2cd32f"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "16aac426-c28b-88e0-92e9-a35d96da44f9"
+  computationUuid: "6ddea36f-8fb4-8254-af03-a6f0767a4962"
   stages:
     - stage: path
       stageUuid: "80700544-11ff-8e37-bf21-7a4cc10538f6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4152cf7b-95bd-804f-94a6-eceba064e8e1"
     - stage: horo
-      stageUuid: "39b18f00-a065-8472-9c3d-01cf8ec689c0"
+      stageUuid: "432c6f3c-1134-8f80-98ff-e8a0ca9c3eef"
     - stage: seal
       stageUuid: "d1db9a9a-225c-864b-bb20-2a188da9ae70"
     - stage: uuid
-      stageUuid: "ab150e2c-e4bd-8560-ab9f-23fb513d455b"
+      stageUuid: "e5b09b71-b97d-82de-9101-32759e553f48"
 version: 2
 ---
 # qa

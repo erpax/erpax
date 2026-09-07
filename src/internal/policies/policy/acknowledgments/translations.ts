@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "acknowledgments",
-    "uuid": "1f520d2d-4acc-8178-88b5-6d14190f0c4f",
+    "uuid": "34810e95-f24d-8cf0-9b0f-7fba2b754efa",
     "words": [
       "acknowledgments"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or tracking employee acknowledgement of a policy version — signed-document upload, acknowledged date, status pending/overdue/expired; SOX §404 control-attestation evidence per employee per policy. The policy-acknowledgments collection.",
-    "uuid": "d1ee0028-30dd-84f9-ab1c-8016a2585239",
+    "uuid": "dd2004ca-7980-812b-8125-b623a6da700a",
     "words": [
       "use",
       "when",

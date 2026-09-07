@@ -2,11 +2,11 @@
 name: earth
 description: "Use when realising Earth by computing poles as a pyramid — N·E·S·W tips at 0°·90°·180°·270° with ±ω, zenith/nadir dual apexes, genus-2 χ=−2 H₁=ℤ⁴, bothEarths merkaba shells; physical datum stays WGS 84."
 atomPath: earth
-coordinate: "earth · 5/round · 99221cec"
-contentUuid: "aa71c578-b4ed-59c4-bf39-f94216a0e198"
-diamondUuid: "986ae0f0-a616-8abe-a650-12a8846fab1a"
-uuid: "99221cec-4f17-81ae-9ce0-82a3682ac6c4"
-horo: 5
+coordinate: "earth · 1/base · 767fff42"
+contentUuid: "5620a69e-e56a-5e4c-858d-1e5ba74ea5c9"
+diamondUuid: "7ef93f96-3462-8dfb-a09f-1d75f75b1bd2"
+uuid: "767fff42-0b39-8eb6-b66f-02355ce6135d"
+horo: 1
 typography:
   partition: earth
   bondDegree: 23
@@ -15,7 +15,7 @@ standards:
   - WGS 84 — physical geodetic datum (honest boundary)
 bindings: []
 signatures:
-  computationUuid: "5801e58f-6ec9-8951-a619-5ce0176716b9"
+  computationUuid: "522976eb-25fc-84da-afea-4726e6d16973"
   stages:
     - stage: path
       stageUuid: "f8b6bf06-42f3-8697-b737-964d4f606cc9"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "a13f3163-16e7-87a3-8140-476f49843d2f"
     - stage: horo
-      stageUuid: "7002b004-3eba-8e0d-a166-26f295fbe3d6"
+      stageUuid: "30bc5bb1-5af4-838c-b3a9-6a31ecac8c9c"
     - stage: seal
       stageUuid: "8b1746db-10d3-8d61-9535-ae858f996023"
     - stage: uuid
-      stageUuid: "26426343-f7fa-8b71-8524-844df0df4507"
+      stageUuid: "281d748b-a205-8203-adf2-6644f9e7d775"
 version: 2
 ---
 # earth — poles as a pyramid (7/7)

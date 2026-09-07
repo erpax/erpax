@@ -2,11 +2,11 @@
 name: diet
 description: "Use when reasoning about diet — A strategy of regulating the intake of food to achieve or maintain a specific health-related goal."
 atomPath: "vocabulary/diet"
-coordinate: "vocabulary/diet · 7/descent · 4489f651"
-contentUuid: "0093cce5-513d-5e78-bbbd-2860ae6d72c5"
-diamondUuid: "8d0666ce-5c2e-827c-9ab5-7bf0924c5555"
-uuid: "4489f651-1d76-8d09-89e5-d79a41bb61ad"
-horo: 7
+coordinate: "vocabulary/diet · 5/round · c37278ed"
+contentUuid: "67a4a49a-daf1-54c6-b1b5-ef60f10099f4"
+diamondUuid: "bc94c3d9-4e1b-8e74-8348-fe3f7f77285b"
+uuid: "c37278ed-5115-83e6-b686-aa0743bf7d6a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d4681755-64b6-8e88-91f3-e79ce29e456e"
+  computationUuid: "4e773650-3e77-8b72-bf05-836828ffa760"
   stages:
     - stage: path
       stageUuid: "bccdbb99-3232-8dcf-ad4c-e47bdd003f84"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c2e7a3c9-5460-8bd3-befb-a18ef701e49e"
     - stage: horo
-      stageUuid: "0a679185-57eb-85cb-b1f9-b289e81f3b12"
+      stageUuid: "3edab033-f1bf-8256-b089-cf37404ab740"
     - stage: seal
       stageUuid: "c533dce7-f657-8ba4-9e06-2fd0fa148d98"
     - stage: uuid
-      stageUuid: "141672bd-a5aa-83b6-a5c4-cdd717517291"
+      stageUuid: "1f5bdc86-1e3e-878f-a583-738f148033f9"
 version: 2
 ---
 # diet

@@ -2,18 +2,18 @@
 name: mulch
 description: "Use when the soil surface is covered to suppress weeds and moderate temperature/moisture — plastic film (warms soil + blocks weeds), woven landscape fabric (reusable, burn-holed for transplants), and organic straw/leaf mulch. The smother alternative to cultivation; a soil-surface cover with weed, water, and heat functions."
 atomPath: "vocabulary/mulch"
-coordinate: "vocabulary/mulch · 2/share · 5a885e83"
-contentUuid: "3c92dd56-3b7e-5190-b41e-393a268ca978"
-diamondUuid: "3281df8b-58cd-8d66-81f2-f900da8d6dd9"
-uuid: "5a885e83-eb1a-8acc-9adb-ebdf8756c229"
-horo: 2
+coordinate: "vocabulary/mulch · 1/base · 8beca20f"
+contentUuid: "9e5b1e8e-0d01-585d-b009-94bf74848ff1"
+diamondUuid: "b7a3e976-c450-889e-bf5a-d9ce816f7882"
+uuid: "8beca20f-6eb5-8b6d-b117-0d2111c34a75"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9fbe92c3-07ae-8847-ab57-6063f777d93c"
+  computationUuid: "36363631-4e3a-8316-bd30-4857ae9dc9b4"
   stages:
     - stage: path
       stageUuid: "4772ca3f-08fa-8a52-a3c4-5e942a8f217d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e123e379-ee5a-8e3d-aaeb-468b0ef4e40e"
     - stage: horo
-      stageUuid: "55d106ef-26d4-8560-9422-dba16d976c68"
+      stageUuid: "81d3f39f-83aa-8715-a033-ac208602434e"
     - stage: seal
       stageUuid: "d8a010f9-f8a8-8031-b2e3-f82045a14375"
     - stage: uuid
-      stageUuid: "84c66f16-bc45-82c0-9d8b-5783c8e77b56"
+      stageUuid: "61b420e5-5ae6-8653-8033-7de6a3ba1817"
 version: 2
 ---
 # mulch — covering the soil surface to suppress weeds and hold moisture

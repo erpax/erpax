@@ -2,11 +2,11 @@
 name: prior
 description: "Use when a modern patent claim needs anticipating art — a register of expired grants that are public-domain §102 prior art by construction. Every row's expiry is COMPUTED against the longest term that has ever applied (20 years from filing), never asserted, and the patent number is the citation so a reader checks a row rather than trusting it. Keeps the grant apart from the world: a patent proves a claim was filed, examined and published on a date, never that it works — deployed and undemonstrated are separate fields, and the inference from patented to works is refused."
 atomPath: "patent/prior"
-coordinate: "patent/prior · 7/descent · 780681d3"
-contentUuid: "0cad2f71-ae52-571a-b824-ea1ca84d1bab"
-diamondUuid: "5a14b376-86a2-8fbb-84a3-c897358b961b"
-uuid: "780681d3-e188-8772-aab9-bcbc2b7f9754"
-horo: 7
+coordinate: "patent/prior · 4/weave · 90400493"
+contentUuid: "17b40928-40f3-5eba-a35b-85d145fdad21"
+diamondUuid: "5e79ed8c-fdff-81d3-b880-66d10717d374"
+uuid: "90400493-43c6-89da-8b7e-a49c4fea1fa4"
+horo: 4
 typography:
   partition: patent
   bondDegree: 18
@@ -15,7 +15,7 @@ standards:
   - "35 U.S.C. §154 — patent term (20 years from filing; 17 from grant pre-1995)"
 bindings: []
 signatures:
-  computationUuid: "5718a79a-e0c2-8132-a47f-b8e64dd62d83"
+  computationUuid: "3900d256-9dc7-8b6a-ae2a-4823d1a9abac"
   stages:
     - stage: path
       stageUuid: "f4dfe47e-7f22-8d36-bddb-d09b12136e5a"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "2bdf72ad-c338-8048-a762-aef9bfca22e6"
     - stage: horo
-      stageUuid: "7c6d1f05-1819-84f1-a940-8d7f5710ea87"
+      stageUuid: "1093bd1b-a036-8959-b54e-b69a6d3d4d41"
     - stage: seal
       stageUuid: "5986f2ef-297c-8d45-b8d8-84ebbdbb42f1"
     - stage: uuid
-      stageUuid: "2f9be270-16b7-8fd6-80ba-7ae4c944394a"
+      stageUuid: "e5bdb99e-39ee-887c-8be3-117e46e7a870"
 version: 2
 ---
 # patent/prior — the expired public record, as working §102 art

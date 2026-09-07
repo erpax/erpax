@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "same",
-    "uuid": "fb1f691e-cefb-8725-bd7b-0b3af6540176",
+    "uuid": "72bb592c-830b-86c5-bf44-86a7bc959176",
     "words": [
       "same"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about same — URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
-    "uuid": "b027fe29-2833-8ef6-bcac-ff774408a27e",
+    "uuid": "37e03e32-4310-8a00-81e8-b9f3c59794fa",
     "words": [
       "use",
       "when",

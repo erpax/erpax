@@ -2,11 +2,11 @@
 name: subway
 description: "Use when reasoning about subway as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: subway
-coordinate: "subway · 4/weave · bc0f09ae"
-contentUuid: "69f38fb0-18ea-59f7-9c9c-4eba56d46725"
-diamondUuid: "d9460544-34e4-8d1f-97d8-e53f1a644a00"
-uuid: "bc0f09ae-09b4-812e-a602-b6dcad205edb"
-horo: 4
+coordinate: "subway · 8/crest · a80434ee"
+contentUuid: "43715c67-4093-5925-804d-d2d84aa7a56d"
+diamondUuid: "d6a91f67-5324-8385-88b4-77bec0312fab"
+uuid: "a80434ee-b2ba-8916-8d3b-d6002a7f98c5"
+horo: 8
 typography:
   partition: subway
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d74e23fa-c16e-8d50-809e-4220e89129fb"
+  computationUuid: "b33c6bc4-aac3-8a93-9833-6572091a5f49"
   stages:
     - stage: path
       stageUuid: "9e2c4c97-2f6a-8244-a721-87057d68f40b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "43e78d01-0f12-8da5-bfda-3c64d8a933af"
     - stage: horo
-      stageUuid: "8a81fe15-f692-8cc5-94e7-71032f067afd"
+      stageUuid: "a35d6013-f313-8850-b31c-7f10cd3014ac"
     - stage: seal
       stageUuid: "6e65c7e1-1f9e-8834-b214-f241c10a1615"
     - stage: uuid
-      stageUuid: "bdbac621-1ea6-874d-ba84-97bf9a9a0149"
+      stageUuid: "c6cf3204-0915-89dc-ae2a-e27b2544beee"
 version: 2
 ---
 # subway

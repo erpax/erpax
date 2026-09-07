@@ -2,11 +2,11 @@
 name: monoisotopic
 description: "Use when reasoning about monoisotopic — A schema.org component word, collided out of schema.org compounds — fused from monoisotopicMolecularWeight (sti · collapse · merge)."
 atomPath: "vocabulary/monoisotopic"
-coordinate: "vocabulary/monoisotopic · 2/share · c55b1598"
-contentUuid: "8b107315-2af7-5abe-9ac0-f00f8c54525d"
-diamondUuid: "3b93561a-0c21-841a-b096-d2bacc422d0f"
-uuid: "c55b1598-846c-86a1-a7f1-12987ff6734b"
-horo: 2
+coordinate: "vocabulary/monoisotopic · 7/descent · 03bad285"
+contentUuid: "e80958bf-1ed5-5c6f-b2e3-3485e0dca994"
+diamondUuid: "07b3b852-330c-86e9-ad96-621875eac8d7"
+uuid: "03bad285-198d-8620-8968-5a9020b491ae"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "90d146ed-794a-885e-a614-a83d49fe9934"
+  computationUuid: "f51e2d82-0150-8edb-ad65-9a0a74757e3c"
   stages:
     - stage: path
       stageUuid: "d01b25fd-8599-890b-8277-5e6b29191a64"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "37ffdfd8-a8c5-8e2c-808f-b76454f6d2ac"
     - stage: horo
-      stageUuid: "d065e2a1-57be-8047-8e83-303509480f06"
+      stageUuid: "d4503520-031b-808e-b9cd-703445f6ed3e"
     - stage: seal
       stageUuid: "0b9574da-9fe9-8166-a3a1-3ee2606b0f3d"
     - stage: uuid
-      stageUuid: "589e8e77-434d-8fe8-8421-8be5c1690f94"
+      stageUuid: "62f401f3-0028-8b17-9d9d-4b4273302705"
 version: 2
 ---
 # monoisotopic

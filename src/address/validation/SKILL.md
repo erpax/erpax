@@ -2,11 +2,11 @@
 name: validation
 description: "Use when checking that a postal address is complete and well-formed for its declared country — country-aware required components and postal-code pattern checks, returning human-readable errors (empty ⇒ valid) ready for a Payload beforeValidate throw."
 atomPath: "address/validation"
-coordinate: "address/validation · 7/descent · b28919b6"
-contentUuid: "db07e0cc-89ad-52a7-aaa0-aefbbe18bf40"
-diamondUuid: "bc078566-e668-807a-b4c8-a44881fd7d95"
-uuid: "b28919b6-87ce-810b-950e-11da403bcc9a"
-horo: 7
+coordinate: "address/validation · 5/round · aadf1645"
+contentUuid: "850d44c4-5f99-5da3-a521-776cb70d1d5e"
+diamondUuid: "d8fcf33b-83f1-81a7-b200-5b452818c2ca"
+uuid: "aadf1645-a169-8f2b-84a9-bfa4ed7e57ed"
+horo: 5
 typography:
   partition: address
   bondDegree: 18
@@ -24,7 +24,7 @@ standards:
   - "UPU-S42 international-postal-addressing"
 bindings: []
 signatures:
-  computationUuid: "b044c431-7fe3-80cd-940d-2a78a116c046"
+  computationUuid: "a6a09d8c-c514-8ff7-9eda-1d528e9d886f"
   stages:
     - stage: path
       stageUuid: "509641d0-0cde-868c-98b4-70d9f17ce1a8"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "82b9d3dd-6383-8feb-ab13-a1a3839d291b"
     - stage: horo
-      stageUuid: "72ef12b2-3ffe-8885-961f-bf6931ea75fe"
+      stageUuid: "c7130a8a-c452-8367-8027-964f8d5c03f7"
     - stage: seal
       stageUuid: "6d5501f0-1ad2-80d9-aa3c-0808dd20bd96"
     - stage: uuid
-      stageUuid: "fa070f11-f05f-8aa8-afda-868c912cd4c2"
+      stageUuid: "31324756-3c67-8ecd-8707-fc55b69d8396"
 version: 2
 ---
 # address/validation — the country-aware address validator

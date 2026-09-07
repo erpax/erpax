@@ -2,10 +2,10 @@
 name: technique
 description: "Use when reasoning about technique as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: technique
-coordinate: "technique · 4/weave · c8bf129c"
-contentUuid: "0cd27bf6-c920-5291-93dc-cef1baade2b8"
-diamondUuid: "f458016e-fc26-8366-ab29-dd27fb38c529"
-uuid: "c8bf129c-0477-83cb-b024-f86d1158d65a"
+coordinate: "technique · 4/weave · 5915ff95"
+contentUuid: "7568bdc7-a5d7-508a-9ce0-a4e9b270ecc1"
+diamondUuid: "ccfa97ff-55a2-8855-a728-457bff3330ec"
+uuid: "5915ff95-987c-8f8e-ae33-43c4b32d0ad7"
 horo: 4
 typography:
   partition: technique
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4b3e65c8-e057-8174-896e-549063570469"
+  computationUuid: "f8bdf089-d7e7-8eee-bbd4-415cee86c0d9"
   stages:
     - stage: path
       stageUuid: "7cb2be43-6573-851f-b22e-8f886258f34e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "07b62b6c-1ac2-8a59-90c5-fdf1f0f1fe04"
     - stage: horo
-      stageUuid: "4f56fbfb-1a3f-855a-bcdc-948649fbd255"
+      stageUuid: "7a0aff55-4aff-8ee1-a241-85d50d658ce4"
     - stage: seal
       stageUuid: "20c12094-4282-8ee3-8281-9c8494426335"
     - stage: uuid
-      stageUuid: "116833c2-e307-8528-a546-c072c3078265"
+      stageUuid: "3ddea640-0d60-8e3e-91e2-f62f7637a84f"
 version: 2
 ---
 # technique

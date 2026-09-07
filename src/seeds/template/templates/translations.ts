@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "templates",
-    "uuid": "2ed009fc-de98-87cc-983a-a521c17bdd1e",
+    "uuid": "c14a1681-c7c8-81c1-ae4c-83fa719022c7",
     "words": [
       "templates"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about templates — Industry templates — curated per-(country × industry) opening books.",
-    "uuid": "fa2fb2a1-0ba3-87c1-bd75-c957d1d3e223",
+    "uuid": "8d3d73be-744b-8afb-a480-aaa6d3432d45",
     "words": [
       "use",
       "when",

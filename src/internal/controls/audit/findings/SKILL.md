@@ -2,10 +2,10 @@
 name: findings
 description: "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection."
 atomPath: "internal/controls/audit/findings"
-coordinate: "internal/controls/audit/findings · 5/round · add648fd"
-contentUuid: "1a0a4388-e260-50ca-8cef-aa1a5ae6e93c"
-diamondUuid: "b580246f-6bb1-8548-9a33-0baba22909b5"
-uuid: "add648fd-4746-86fa-8087-0056bf5a986e"
+coordinate: "internal/controls/audit/findings · 5/round · e75b5ff6"
+contentUuid: "9101872c-e90e-5aa2-b9fe-dea113fb1752"
+diamondUuid: "d2a3ee7d-5d1a-895e-abbf-0e035ee1bf56"
+uuid: "e75b5ff6-7fa9-8dfe-a5f4-bfc20c536018"
 horo: 5
 typography:
   partition: internal
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "20b0f3cc-06a4-8dd0-8174-88fe432871dd"
+  computationUuid: "a7945c3b-9317-8f34-b126-1f6379851e8d"
   stages:
     - stage: path
       stageUuid: "793ca585-325a-8e30-96f9-74a39aff22b7"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "6ed701a1-e071-890a-bc8e-ea3d8b841f5e"
     - stage: horo
-      stageUuid: "bfee51c5-9d9b-8e5e-8080-307c894b2040"
+      stageUuid: "0c62bd64-5ef2-8101-95eb-52ea731f0b53"
     - stage: seal
       stageUuid: "95e175e4-276a-82e7-a54c-a0a432dfff48"
     - stage: uuid
-      stageUuid: "4341faf5-288e-8acc-8cf5-6dea580f19fa"
+      stageUuid: "d25ce948-9568-8716-ac31-a4c8539ce25f"
 version: 2
 ---
 # audit-findings

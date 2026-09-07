@@ -2,18 +2,18 @@
 name: awareness
 description: "Use when reasoning about the discovery gate of a market — whether people know the thing exists and that it answers a want they hold. The atom marketing produces and trendsetters amplify; distinct from desire (the want) and distribution (the obtaining). If awareness is the zero atom, trendsetters as taste-amplifiers are the right lever."
 atomPath: "vocabulary/awareness"
-coordinate: "vocabulary/awareness · 1/base · 740a3bff"
-contentUuid: "1e6a485e-5dec-5439-b5b9-e1c49cf05af7"
-diamondUuid: "3ff91d25-ad7f-89ad-a18c-083980dfd728"
-uuid: "740a3bff-e650-82a1-b933-8c47b2484a0c"
-horo: 1
+coordinate: "vocabulary/awareness · 5/round · b9fcdc90"
+contentUuid: "eebbfc3c-7629-5356-859a-73994cb21a18"
+diamondUuid: "b0738315-40d5-8a35-a1b8-71f3e59a615a"
+uuid: "b9fcdc90-0b3e-813b-9783-fb48bd47f838"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 32
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0c02ae95-a5da-85eb-904e-77a57c9ded9e"
+  computationUuid: "3614243a-eaa2-874a-a345-90ee9e973b3b"
   stages:
     - stage: path
       stageUuid: "e85d1772-536e-85fa-9463-b0ab697859b9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d7cc59e8-68b1-8fd6-afe9-412950fd7068"
     - stage: horo
-      stageUuid: "88809ace-3c47-88b9-929f-4aaa1b601376"
+      stageUuid: "42681731-1676-82a3-9dde-00f48ef35b34"
     - stage: seal
       stageUuid: "a81efb79-516c-8ea9-b37b-0d821f3c9f70"
     - stage: uuid
-      stageUuid: "a22aed49-ae1a-80f6-9511-ce296c18c578"
+      stageUuid: "99191fdf-10a5-86b5-9e49-9abf240ab686"
 version: 2
 ---
 # awareness — the discovery gate

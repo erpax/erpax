@@ -2,11 +2,11 @@
 name: net
 description: "Use when reasoning about net as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/net"
-coordinate: "vocabulary/net · 7/descent · 66bb7ff8"
-contentUuid: "8a3c1d22-f31c-50ca-a7c8-070119c440fa"
-diamondUuid: "7c81e015-dc8b-88fe-afd2-6ce5f45fdd1f"
-uuid: "66bb7ff8-0ff0-8f1b-a374-fadf48c2f582"
-horo: 7
+coordinate: "vocabulary/net · 8/crest · a4ff1f72"
+contentUuid: "ef7b383f-f8f6-5762-a327-2809fb07aed6"
+diamondUuid: "f97f56d9-213b-8966-838e-e338b62316ba"
+uuid: "a4ff1f72-a910-8a10-9571-8387e64db657"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ab945adf-4c75-8849-9e72-2c485f0050c8"
+  computationUuid: "d9f44b6b-5108-8b80-91f3-6d7591f9242d"
   stages:
     - stage: path
       stageUuid: "ce140390-4393-8092-bae0-9ec3c58e15be"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "81f43e26-4cd1-88a6-b9d0-ca20963843f1"
     - stage: horo
-      stageUuid: "5e243fd2-13e5-8b05-b2ab-fd579c8e81b7"
+      stageUuid: "b2d66a4a-9443-89e0-9f4f-07c0250344e8"
     - stage: seal
       stageUuid: "45a806e2-2d7d-8731-93b9-406285c66e0e"
     - stage: uuid
-      stageUuid: "de813cb1-b803-8215-b1de-b85ca6309765"
+      stageUuid: "f82fa14a-8bcc-8f17-9a2f-ed5ba0ab9c68"
 version: 2
 ---
 # net

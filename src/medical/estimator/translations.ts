@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "estimator",
-    "uuid": "beb09171-1eb5-8287-a09b-6f0e30e11ca2",
+    "uuid": "d3e0d4a9-5bd6-8f12-bf4f-8619c9ccd92a",
     "words": [
       "estimator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about estimator as a medical facet of medical — vocabulary pivot to @/estimator; nested not duplicated.",
-    "uuid": "7dac2910-3e22-8d91-b9ae-460cf18644d0",
+    "uuid": "ce43fe8e-6aad-88b7-82c8-4fd5c5c4dda1",
     "words": [
       "use",
       "when",

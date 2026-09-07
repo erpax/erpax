@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "receipts",
-    "uuid": "8ad3388f-deaf-8721-b2e2-779f510d643f",
+    "uuid": "7fada966-6c79-8229-be57-da085efbb214",
     "words": [
       "receipts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when confirming vendor goods arrival — receipt number, purchase order link, received-at date, line quantities, and GL accrual (debit inventory/credit AP) per IAS-2 §10, with revenue timing deferred to the FOB point per IFRS-15 §38-42. The second leg of the SOX three-way match that separates inventory accrual from revenue recognition.",
-    "uuid": "fe0cfb6c-e14d-8e69-8c5f-9f091deb8d41",
+    "uuid": "2d94fe3b-2aaa-8c05-89cf-ad747cf6d5c2",
     "words": [
       "use",
       "when",

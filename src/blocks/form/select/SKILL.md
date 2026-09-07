@@ -2,10 +2,10 @@
 name: select
 description: "Use when reasoning about select — A native announces itself. This one does not: the shadcn control renders a , whose accessible name comes from **nothing but** the bound to the trigger's ."
 atomPath: "blocks/form/select"
-coordinate: "blocks/form/select · 7/descent · 2e9e6181"
-contentUuid: "a84226a8-08ce-5bd6-a71b-19e35d9beb15"
-diamondUuid: "fa81cf5d-9ed2-8870-80b2-a4cc23948f82"
-uuid: "2e9e6181-5529-8f8f-a1a4-3b155558b58f"
+coordinate: "blocks/form/select · 7/descent · 9af11592"
+contentUuid: "8e54fefa-b42b-530e-a633-d669bacbf409"
+diamondUuid: "dd7cd39e-b7b1-813f-9f85-c21a4b177033"
+uuid: "9af11592-72cb-8b52-a5f3-317c18c22c2f"
 horo: 7
 typography:
   partition: blocks
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "686dbf89-de54-858c-a849-56aa90f66032"
+  computationUuid: "ccd87fa7-c97e-83f9-8d35-5a57de24d033"
   stages:
     - stage: path
       stageUuid: "43aa11a8-dfc5-8afd-b782-719df2a1d457"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ba0d930d-3377-88ed-bb67-444ef333f6a3"
     - stage: horo
-      stageUuid: "64ac8b47-a811-827b-b1d7-b271a280a1fd"
+      stageUuid: "5520265c-ae8c-8942-8b51-bd7aa9fc4f74"
     - stage: seal
       stageUuid: "383b827b-062a-8a5e-8565-68e5f16aff0f"
     - stage: uuid
-      stageUuid: "6b28ef42-5695-8ac0-8150-d26bde07641a"
+      stageUuid: "ffac2174-8229-8785-897d-b0e362a56fb0"
 version: 2
 ---
 # blocks/form/select — a Radix trigger is a button, so the label is the only name it has

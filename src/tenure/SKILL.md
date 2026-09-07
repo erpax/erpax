@@ -2,18 +2,18 @@
 name: tenure
 description: "Use when tracking employment duration, anniversaries, or vesting schedules — hire date, current tenure, service-based benefits accrual, or eligibility calculations."
 atomPath: tenure
-coordinate: "tenure · 5/round · 1cd5d179"
-contentUuid: "543135af-4ded-5ef8-aa8c-60cd376a2599"
-diamondUuid: "d29c1017-9cc8-8445-b96c-e4804aca8c1a"
-uuid: "1cd5d179-ca4f-87aa-95f0-377b06d33941"
-horo: 5
+coordinate: "tenure · 7/descent · 0598f3d2"
+contentUuid: "15449b09-ebf6-5d72-8e51-e829c9d5f4ec"
+diamondUuid: "5ad38b12-74b7-8f68-b47e-1900e26e1bcc"
+uuid: "0598f3d2-aef8-88fa-b26e-02dd1fc2c0e8"
+horo: 7
 typography:
   partition: tenure
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e3f498f2-b7ab-8c63-815b-27cb9e6cbbf2"
+  computationUuid: "bca42511-9ecf-889e-bfe4-bb8a5dc6e2e7"
   stages:
     - stage: path
       stageUuid: "936814bc-89bc-8ebf-bf3a-a69c064f3247"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2551869a-4437-88e7-bc0a-f4b5894bec89"
     - stage: horo
-      stageUuid: "537d8d48-903e-8f57-bd79-8f9af1e3531d"
+      stageUuid: "79a1d8ae-1135-8440-82d3-0c0f343c4e39"
     - stage: seal
       stageUuid: "2a8c031b-24ec-81f5-9713-e40442b972b6"
     - stage: uuid
-      stageUuid: "53764163-da39-8b38-a235-1838e188b0c3"
+      stageUuid: "68f9cfdc-85d7-8bb1-a501-dc6fee33ed79"
 version: 2
 ---
 # tenure

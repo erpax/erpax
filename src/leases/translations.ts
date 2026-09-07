@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "leases",
-    "uuid": "18d8aea8-aaaf-8a0e-b383-7f15a0cc1d41",
+    "uuid": "9bfe86d6-68eb-854d-aaad-1d6e2120c31c",
     "words": [
       "leases"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recognising and tracking IFRS 16 / ASC 842 lessee leases — ROU asset initial measurement, lease liability PV calculation, discount rate, payment frequency/timing, modifications, and period-end carrying amounts. The lease master-data collection.",
-    "uuid": "8fff0a07-2e75-8dfc-bba7-667bdae16c70",
+    "uuid": "a8a89e7f-a328-8ab4-bdc9-b0bd6c39497a",
     "words": [
       "use",
       "when",

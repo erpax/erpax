@@ -2,11 +2,11 @@
 name: fungus
 description: "Use when reasoning about fungus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fungus"
-coordinate: "vocabulary/fungus · 4/weave · 909cd756"
-contentUuid: "a8cf436c-eafe-5d70-9e7c-1dd7fb2350ba"
-diamondUuid: "0a790f3a-0e55-804c-9039-bcbfac9f4b6a"
-uuid: "909cd756-cb1d-8cc1-8e45-43f9075cd24c"
-horo: 4
+coordinate: "vocabulary/fungus · 2/share · 5050eee3"
+contentUuid: "1bb7791d-8cf9-597c-8c1e-2490a937fe6c"
+diamondUuid: "0fc2c05c-63ac-8c91-ae4f-8833e94aa634"
+uuid: "5050eee3-f394-8693-8aa9-80a4e6121b44"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bb6bfe61-c249-85cc-8c1e-d801490b4ebc"
+  computationUuid: "039fe5fc-32e6-8dea-a5b1-ab5cc57c0415"
   stages:
     - stage: path
       stageUuid: "512c74c8-ea23-8787-a38a-0653f2a64bc7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "edbf8702-9c87-86b4-b00a-658330d23088"
     - stage: horo
-      stageUuid: "6c0e3558-d30c-8754-9ce0-e2fdf0be7f7d"
+      stageUuid: "0d517ff7-f9b1-80fa-8258-03128a0213d9"
     - stage: seal
       stageUuid: "6dcde08a-3c8e-8b08-be7f-6697164cfd17"
     - stage: uuid
-      stageUuid: "fae18d81-afce-8452-90de-1ba8af23002f"
+      stageUuid: "c09ccc45-e23e-87ca-9bc4-dcb438da6088"
 version: 2
 ---
 # fungus

@@ -2,11 +2,11 @@
 name: quantum
 description: "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
 atomPath: quantum
-coordinate: "quantum · 5/round · 101638ca"
-contentUuid: "fd55c323-c880-591b-b763-9b7d1d6392f9"
-diamondUuid: "c481aa18-89d0-894a-9ac3-f85b1a8dadab"
-uuid: "101638ca-79d1-81e9-8419-a4e9d7c13cd7"
-horo: 5
+coordinate: "quantum · 8/crest · e12bb103"
+contentUuid: "611fdead-57df-5066-a542-5f490baa58e2"
+diamondUuid: "af9fda9c-8bcd-8cf1-925b-9c799f587ca4"
+uuid: "e12bb103-be81-8d62-a067-59656f86a485"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 553
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "7f38fde5-743d-895f-9869-ab5a485e24e6"
+  computationUuid: "f043e47c-d0f4-849a-8d29-41ce75b440da"
   stages:
     - stage: path
       stageUuid: "15c162b9-f68a-81b5-be34-6a93fda387d5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "65883705-cdc4-8c3e-97db-3bdd6bd3558a"
     - stage: horo
-      stageUuid: "53512b58-61fb-80e8-bc7e-913865c5d9c8"
+      stageUuid: "4b30ae5a-1ab5-8c92-9f08-a1fab8f3bddb"
     - stage: seal
       stageUuid: "c80781cf-f5a6-814a-a2d6-0b57d9d1e77e"
     - stage: uuid
-      stageUuid: "56ee5761-1266-8cb6-b08e-d41e2838fa24"
+      stageUuid: "9313e064-1211-8b4e-96b8-22ccfdf78714"
 quantum:
   superposition:
     - accounting
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "7f38fde5-743d-895f-9869-ab5a485e24e6"
-    contentUuid: "fd55c323-c880-591b-b763-9b7d1d6392f9"
+    computationUuid: "f043e47c-d0f4-849a-8d29-41ce75b440da"
+    contentUuid: "611fdead-57df-5066-a542-5f490baa58e2"
 version: 2
 ---
 # quantum
@@ -134,4 +134,4 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 
-<sub>content-uuid `fd55c323-c880-591b-b763-9b7d1d6392f9` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `611fdead-57df-5066-a542-5f490baa58e2` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

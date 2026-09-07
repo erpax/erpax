@@ -2,11 +2,11 @@
 name: dimension
 description: "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity."
 atomPath: dimension
-coordinate: "dimension · 7/descent · 264e56aa"
-contentUuid: "8a3a6466-49c2-59ce-9b8c-d4f5c7728e79"
-diamondUuid: "e32a8a25-04d3-829a-95cc-4ff42e27b163"
-uuid: "264e56aa-0f17-8520-89d7-a0a59fa4b3d4"
-horo: 7
+coordinate: "dimension · 4/weave · b2f6f5ee"
+contentUuid: "e6bc031a-7bfe-5d14-8df5-9f240df19d1b"
+diamondUuid: "8be78b24-91fe-8145-97df-6ebea57c2c6c"
+uuid: "b2f6f5ee-26bc-805c-b8bd-6fa3bb0a815e"
+horo: 4
 typography:
   partition: dimension
   bondDegree: 198
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3a4ee706-e4ad-8246-866c-1a19f55c8280"
+  computationUuid: "8aff51d1-5658-8dc9-9ed1-53a4a8d7271c"
   stages:
     - stage: path
       stageUuid: "92fc2a3b-9d95-8c5e-b3e1-db1b571310fe"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "1c50512f-7b1d-8d67-8482-845741b82d6d"
     - stage: horo
-      stageUuid: "fa250da4-e41e-8d7a-a51b-fe17cfd19aa2"
+      stageUuid: "3c6a8bbb-4e96-8c18-be59-c58f0eb78f94"
     - stage: seal
       stageUuid: "37ba233e-727e-87d6-9763-c5748e33db94"
     - stage: uuid
-      stageUuid: "155d261e-a9d5-8e2a-a9bb-109c1da699c1"
+      stageUuid: "31b8182d-1432-8f8f-9726-b6b1e3b6c3a7"
 version: 2
 ---
 # dimension — the axis along which entities coexist at one coordinate

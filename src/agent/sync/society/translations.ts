@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "society",
-    "uuid": "9515e31c-18f2-86a0-b92d-7173d2bd1de6",
+    "uuid": "a722f671-13fa-89b8-bb89-75d9d3988389",
     "words": [
       "society"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about society — agent-society — the breath over the agent-sync bus.",
-    "uuid": "9f18eb86-9992-882b-9199-9ef73bb2b495",
+    "uuid": "80edc0c5-e97e-856e-9e85-67c2139552c0",
     "words": [
       "use",
       "when",

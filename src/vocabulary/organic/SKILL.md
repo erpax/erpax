@@ -2,18 +2,18 @@
 name: organic
 description: "Use when produce carries a certified-organic claim — the labeling status under USDA NOP (7 CFR 205) and EU 2018/848: the National List of allowed/prohibited substances, excluded methods (GMO/irradiation/sewage sludge banned), the 36-month transition, and the organic system plan verified by an accredited certifier. A standards-backed status the product carries through the chain."
 atomPath: "vocabulary/organic"
-coordinate: "vocabulary/organic · 1/base · 903c3d74"
-contentUuid: "b6189898-8875-5ab8-bf42-f4d7157a51df"
-diamondUuid: "3e5f4669-3936-8de8-b4f9-81629153b35e"
-uuid: "903c3d74-d505-82cb-9a00-63739c018566"
-horo: 1
+coordinate: "vocabulary/organic · 8/crest · 8a1592cc"
+contentUuid: "f85096ed-9e3b-5fbc-bef8-a9163907eae5"
+diamondUuid: "5ab89b09-0f97-8f4c-a003-02f4810cfe2e"
+uuid: "8a1592cc-b031-81ed-993e-b58b45c848eb"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 60
 standards: []
 bindings: []
 signatures:
-  computationUuid: "74096d04-e4b2-8080-8594-9a23641763bc"
+  computationUuid: "c7ac848d-13f4-8306-a957-a53a5f7f4f6a"
   stages:
     - stage: path
       stageUuid: "ac1e8962-16e6-8418-935e-0db7b03b4cda"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f91cfd5a-5eab-8a81-b286-6ae826ccb236"
     - stage: horo
-      stageUuid: "e1a2c037-6f27-8d24-9847-abe0d98e3e9c"
+      stageUuid: "2393cd02-1747-84ac-b2d5-ecf964af49a3"
     - stage: seal
       stageUuid: "e6ba87d4-3477-8a83-bf4a-eb46726027dd"
     - stage: uuid
-      stageUuid: "d10d382b-b697-8829-aff8-e4411691be34"
+      stageUuid: "dd87b83a-16c8-8a73-a650-66ffa6fd5adc"
 version: 2
 ---
 # organic — the certified production status the produce carries

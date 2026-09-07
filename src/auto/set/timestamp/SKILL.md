@@ -2,11 +2,11 @@
 name: timestamp
 description: "Use when stamping a status-transition timestamp (postedAt, approvedAt, reconciledAt, authorizedAt) onto a configurable field the first time a condition fires — a beforeChange hook factory emitting canonical UTC ISO-8601."
 atomPath: "auto/set/timestamp"
-coordinate: "auto/set/timestamp · 1/base · 8074b047"
-contentUuid: "6c8532f9-7c4b-523e-b903-625d230a01cb"
-diamondUuid: "fd30fd80-c471-8e17-8858-6af7c9c64d90"
-uuid: "8074b047-26ae-8084-8402-02104dacf3e5"
-horo: 1
+coordinate: "auto/set/timestamp · 5/round · cb627fd2"
+contentUuid: "975a245d-5807-56e4-8fc5-737e56c88f13"
+diamondUuid: "31ef5edf-4092-8f12-a127-095ec7ed3ea8"
+uuid: "cb627fd2-8f8c-8e0f-af37-c27d622dc962"
+horo: 5
 typography:
   partition: auto
   bondDegree: 10
@@ -17,7 +17,7 @@ standards:
   - "SOX §404 internal-controls verifiable-event-time"
 bindings: []
 signatures:
-  computationUuid: "b2e732e5-47a8-884b-bd7c-e5d441ee077e"
+  computationUuid: "ae77d2fa-6fb0-8231-b738-47c9264dd8af"
   stages:
     - stage: path
       stageUuid: "75418288-873f-8a23-9c69-bb50e4dab801"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "adc90156-b6da-82c4-b398-1b38337990b4"
     - stage: horo
-      stageUuid: "55b1be95-6af7-864c-b418-981e1349a2ef"
+      stageUuid: "3afcba86-cae3-896a-90f2-3f3511e49ec1"
     - stage: seal
       stageUuid: "c3bf02a3-f31d-8ccf-816b-6b3aa7bcc308"
     - stage: uuid
-      stageUuid: "6275fa8a-71e3-80ce-97e6-13084051b780"
+      stageUuid: "8c05d5c6-364b-8580-ba79-ef808c2bc1b1"
 version: 2
 ---
 # auto/set/timestamp — verifiable event time on transition

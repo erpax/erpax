@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "account",
-    "uuid": "20928478-0e34-8105-ab28-cca59c6ab8a1",
+    "uuid": "bdea22bb-1d86-8119-bcf1-dc41f7c0ab22",
     "words": [
       "account"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the chart-of-accounts type contract is needed — the GL account atom that names AccountType (the 8 posting categories), GLAccount (the hierarchical per-tenant account), the CRUD/action unions, and the runtime constants a posting is checked against (codePattern, length bounds, AccountType→prefix, the IFRS/GAAP/ASBE 1·2·3 spine). A pure-type atom is proven by TSC; its constants carry REFUTABLE invariants, so the proof is real, not an empty test to game the ledger. HARMONY ≠ TRUTH.",
-    "uuid": "5fc3eea7-a25c-83ef-92d2-196e61174494",
+    "uuid": "ebdcb93e-5127-86f9-b1da-368d8cf85e02",
     "words": [
       "use",
       "when",

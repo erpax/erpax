@@ -2,11 +2,11 @@
 name: trip
 description: Use when reasoning about trip — A trip or journey. An itinerary of visits to one or more places.
 atomPath: trip
-coordinate: "trip · 2/share · 4121f0f2"
-contentUuid: "ddb68c19-9624-5840-b014-2d86ef913daa"
-diamondUuid: "6345577a-1907-8a29-81ad-247ffd99a8a3"
-uuid: "4121f0f2-a5d3-8e1a-87f5-9fc29373ace6"
-horo: 2
+coordinate: "trip · 8/crest · 7cbde74e"
+contentUuid: "17bcd577-30f2-5b22-ad33-790beae13e63"
+diamondUuid: "977094c9-ce39-88b6-a281-ca8fa9f9b5c4"
+uuid: "7cbde74e-7300-8a85-946d-54bf8ecb077f"
+horo: 8
 typography:
   partition: trip
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "af23ce50-f9fc-8af4-b559-3c697dad900c"
+  computationUuid: "a216e964-4391-847e-ba9e-329b9bbe8755"
   stages:
     - stage: path
       stageUuid: "d94447ed-ba6c-8288-84f3-1be02695dcef"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "51be3a2f-e4cc-8059-92d1-422b85ad25d3"
     - stage: horo
-      stageUuid: "2ad43c4e-81c2-86b3-8673-d2cad707fee9"
+      stageUuid: "755bb26c-e052-8b70-a318-05aae6eda4e8"
     - stage: seal
       stageUuid: "3cf85b9c-e4f1-8e84-8700-8fd4bae67ad8"
     - stage: uuid
-      stageUuid: "79f15c40-526a-879e-840d-9e74763bd744"
+      stageUuid: "10ca3ec2-00f6-80ac-ba80-820f37a562b9"
 version: 2
 ---
 # trip

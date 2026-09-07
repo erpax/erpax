@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "slack",
-    "uuid": "67d61474-77fd-8f52-bba4-7744579a8eeb",
+    "uuid": "b583875a-a235-8847-a0c0-b1eea5d97cd9",
     "words": [
       "slack"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist.",
-    "uuid": "ecf64142-6752-8a84-b1c7-108f107bb129",
+    "uuid": "7f5bd088-f67d-8520-be5b-4f5d293e1eac",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "complete",
-    "uuid": "b7069c58-ba8c-8d85-b42f-1de4673e16ab",
+    "uuid": "1be9a143-bad9-81d3-8cbb-c7e0bc32b6b1",
     "words": [
       "complete"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about complete — Completeness is **required**, and it is not what a single listing reports.",
-    "uuid": "ecaea1b2-56c4-8768-aa01-3125311555d8",
+    "uuid": "e8054826-7193-8b0a-81ee-bfb63d0a737c",
     "words": [
       "use",
       "when",

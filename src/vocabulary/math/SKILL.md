@@ -2,11 +2,11 @@
 name: math
 description: "Use when reasoning about math as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/math"
-coordinate: "vocabulary/math · 1/base · 3ef2b813"
-contentUuid: "edfee663-b051-57a3-b598-24e1deb0dff3"
-diamondUuid: "85fcbb7b-558e-8c64-8f68-c93d08d4e7b9"
-uuid: "3ef2b813-ffaf-8b96-8768-b510ac184ba7"
-horo: 1
+coordinate: "vocabulary/math · 8/crest · 00b8660a"
+contentUuid: "2cec2080-87b2-5cb6-b9b9-0bc4a977c98d"
+diamondUuid: "ad6dd6e0-a3e9-82ee-88ad-98a79a6e909f"
+uuid: "00b8660a-ba66-8ff0-a353-cffb2f643a0b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 75
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ccd63e15-da09-858a-b53b-66f7f9ee1afd"
+  computationUuid: "95b65e45-cdb1-8308-bed0-59dd45b661d2"
   stages:
     - stage: path
       stageUuid: "821782d0-5944-8e1a-a01a-66ce4b6bb187"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "195ee980-e498-8adc-8f7a-44c93aaaf419"
     - stage: horo
-      stageUuid: "450474fa-d68f-8713-bf57-c4c983134bb0"
+      stageUuid: "f513a933-1bcd-877a-ad0d-16ce03593d3a"
     - stage: seal
       stageUuid: "f1828d66-6ce4-8fe0-920e-55ca8ad60e53"
     - stage: uuid
-      stageUuid: "97eaef62-7eb6-8d5e-bd41-2683bcc689df"
+      stageUuid: "313da7f1-4309-89a7-b984-e53940a81e78"
 version: 2
 ---
 # math

@@ -2,18 +2,18 @@
 name: contingency
 description: Use when modelling one contingency — the singular model of the contingencies collection (the plural store); a possible obligation that depends on an uncertain future event.
 atomPath: "vocabulary/contingency"
-coordinate: "vocabulary/contingency · 1/base · 81e01617"
-contentUuid: "20f94dc4-6fc2-5c72-bbed-caa7470b85e3"
-diamondUuid: "118732fa-1feb-836b-9bbe-9b0139dd71f8"
-uuid: "81e01617-8148-82cb-b81d-9f05ffb3f7f2"
-horo: 1
+coordinate: "vocabulary/contingency · 8/crest · 345679b4"
+contentUuid: "c2518cb5-873c-54c2-a565-0f8a068978fa"
+diamondUuid: "3f798e08-f8f0-8eef-9fbf-1eaff35e3f94"
+uuid: "345679b4-7d4a-8091-8090-16c7f3d4461e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "dc482889-ecf1-86fa-be62-46c067ab7a8f"
+  computationUuid: "d14f7db2-c0ad-8cce-aa2d-d915a462f5ed"
   stages:
     - stage: path
       stageUuid: "5e3fe6ae-a1f3-868c-93e4-1d8cfd4e5f72"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d14d921d-e5bb-8def-92c1-c1f244cce7b1"
     - stage: horo
-      stageUuid: "fc974de5-be40-8a79-97d1-4607cd002e38"
+      stageUuid: "f22e0b4a-ae81-8325-b841-16b5ccb721c4"
     - stage: seal
       stageUuid: "6585ff33-0f8f-88ef-97de-33e42f1c10ce"
     - stage: uuid
-      stageUuid: "ee58919a-e1cb-872b-9c0e-1ca9b82b3534"
+      stageUuid: "b14f63cb-7c16-8709-ab26-2e351f254478"
 version: 2
 ---
 # contingency — the model of one [[contingencies]] row

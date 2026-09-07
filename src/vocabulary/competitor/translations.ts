@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "competitor",
-    "uuid": "29bf98a1-0d47-86e0-9166-0a17d42e16fa",
+    "uuid": "b3fce3a3-45d2-84f5-89b7-b0f65a5cac92",
     "words": [
       "competitor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about competitor — A competitor in a sports event.",
-    "uuid": "cf6adaed-cc80-8071-8c22-802e0972c557",
+    "uuid": "2f4cd97a-7b29-8d84-b26c-d33f075535d4",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: computer
 description: "Use when reasoning about computer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: computer
-coordinate: "computer · 8/crest · 853f2a17"
-contentUuid: "1786bf98-d4f8-519c-a872-626a5ac3700b"
-diamondUuid: "c3611afa-f720-8f69-b5a2-8c7868f3a205"
-uuid: "853f2a17-c171-8f5d-88e3-d071a6be25a3"
-horo: 8
+coordinate: "computer · 5/round · 73436e69"
+contentUuid: "749c01a6-32ce-59fb-8fed-f9ad7f85fdc8"
+diamondUuid: "3e1b3844-672f-8471-9ef9-79212cd5189b"
+uuid: "73436e69-9bcd-8a0d-9868-74c823deabbf"
+horo: 5
 typography:
   partition: computer
   bondDegree: 92
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "810f37b8-bebc-8ff1-a146-e2c2067e1491"
+  computationUuid: "18e2fefb-53a6-818e-a4a0-5bcf79759e97"
   stages:
     - stage: path
       stageUuid: "99b5b1e3-04ec-8a6c-9e05-ce3772b23a0c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9c17304a-cae2-82f4-9068-21f6aab04831"
     - stage: horo
-      stageUuid: "671c2e96-7845-806d-9ec9-7719c543d71b"
+      stageUuid: "075a155f-1a4e-8b19-8735-dbe950a88390"
     - stage: seal
       stageUuid: "ee2541f7-c8d9-8680-8067-b36807c6a489"
     - stage: uuid
-      stageUuid: "d733cd00-33a1-810f-85c3-a4ecea512136"
+      stageUuid: "fe0a1749-96ad-85e8-96ae-8b6dbbd38ec1"
 version: 2
 ---
 # computer — the machine and its parts

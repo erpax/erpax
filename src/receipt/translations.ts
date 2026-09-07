@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "receipt",
-    "uuid": "9a4ff4d5-fe8c-8cfd-9d6c-b8a74ea59327",
+    "uuid": "8fe0e713-5a37-8b58-bb4f-24ca977e12b1",
     "words": [
       "receipt"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof.",
-    "uuid": "ef14d7d6-6795-8838-aee4-3bd4f02c8f9e",
+    "uuid": "a309e971-d200-88a6-98e7-6743fc84753d",
     "words": [
       "use",
       "when",

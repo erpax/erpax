@@ -2,11 +2,11 @@
 name: overview
 description: "Use when reasoning about overview as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/overview"
-coordinate: "vocabulary/overview · 1/base · 7b5de248"
-contentUuid: "da6e5369-29b4-566b-a3e8-d34578b654d8"
-diamondUuid: "2e0faf7e-3b68-8011-a100-e6c98b71cc0f"
-uuid: "7b5de248-42bd-8512-9ac0-c51c1bbff1f0"
-horo: 1
+coordinate: "vocabulary/overview · 8/crest · 3723df20"
+contentUuid: "cff806b2-aa4f-52f8-8317-59d41ea07906"
+diamondUuid: "a148e33d-8a72-8d53-b0a1-952b0f35ebfb"
+uuid: "3723df20-0934-88c4-84e1-92220ddc0f16"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7d9aaa52-dfa4-83f4-9192-28090983524a"
+  computationUuid: "984fdf70-5fac-898c-a34d-c2be0530f7e7"
   stages:
     - stage: path
       stageUuid: "52b356bf-a63b-86e3-9ee7-97fb87c99927"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eca54d3c-91fb-84dc-bf0d-aa88aaa1195e"
     - stage: horo
-      stageUuid: "5ac70386-2d73-8849-a578-01a269c2c326"
+      stageUuid: "2c96f214-941f-837f-9e77-cec913e14b47"
     - stage: seal
       stageUuid: "073aee78-1d10-8860-b74a-eb79ac6ada63"
     - stage: uuid
-      stageUuid: "2c673b02-19ba-8c6c-acac-f3edbd2db752"
+      stageUuid: "b81eee59-20bf-8cdd-b613-75f698a86020"
 version: 2
 ---
 # overview

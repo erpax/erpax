@@ -2,11 +2,11 @@
 name: contingencies
 description: "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions."
 atomPath: "commitments/and/contingencies"
-coordinate: "commitments/and/contingencies · 2/share · fe0fede4"
-contentUuid: "16f52750-46ee-519f-83e9-7cd6dbb4485f"
-diamondUuid: "82a4ee40-2c77-80df-8338-b46c07464014"
-uuid: "fe0fede4-3fec-87a1-9b1e-e4fb231ec007"
-horo: 2
+coordinate: "commitments/and/contingencies · 4/weave · 3fc56e91"
+contentUuid: "bc2b25dd-85b8-56f0-8207-0ffcd5b333ce"
+diamondUuid: "2d645907-3fb6-805b-bf5d-bfa1a6a9e6d1"
+uuid: "3fc56e91-d3d2-8fe2-856e-8167128d8d28"
+horo: 4
 typography:
   partition: commitments
   bondDegree: 31
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5a9a0f93-9e1a-88ff-b6cb-56bdce3c3857"
+  computationUuid: "30e146bb-7368-87a6-b4b3-30c325453365"
   stages:
     - stage: path
       stageUuid: "364be235-3d55-8a1a-8ce7-0d0931e13720"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "74b1942d-bbb2-8903-bce4-1e014af4329b"
     - stage: horo
-      stageUuid: "84ab00ad-6a92-8eb1-8f1b-385f10e2e4e7"
+      stageUuid: "979e44f2-784b-8e5c-9936-fd5e3232e385"
     - stage: seal
       stageUuid: "3b9143ef-9e29-8e1d-94c5-ab71081921c7"
     - stage: uuid
-      stageUuid: "bcf37bcc-11eb-8aa2-a4aa-9f11e4330aa7"
+      stageUuid: "b7a3610b-2030-8b18-a468-3def0e299927"
 version: 2
 ---
 # commitments-and-contingencies

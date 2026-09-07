@@ -2,18 +2,18 @@
 name: connection
 description: Use when modelling one connection — the singular model of the connections collection (the plural store); one edge in the universal relationship graph between two actors.
 atomPath: "vocabulary/connection"
-coordinate: "vocabulary/connection · 7/descent · d7afcee5"
-contentUuid: "1cdaf6fe-18a1-5522-876c-18cb251d236d"
-diamondUuid: "75d3af9d-3f97-8a9f-a0c5-de0502853545"
-uuid: "d7afcee5-6280-8d84-9d4d-969ef7d35e76"
-horo: 7
+coordinate: "vocabulary/connection · 1/base · 11149200"
+contentUuid: "f99c176b-dc4d-5b25-b6a1-cf0a0433125a"
+diamondUuid: "7c7f7e43-7817-8e15-8541-8ed8095bd8a8"
+uuid: "11149200-977b-8d35-a42f-b97c2024e130"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5751f3ae-48ab-8ba0-b838-a09d2db9ba14"
+  computationUuid: "6eb0652b-da4f-838d-812d-f57bc393804c"
   stages:
     - stage: path
       stageUuid: "fc6e0ecf-71a2-8228-874f-604e3b2bc1d5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "74422ae6-63e1-8689-aed2-24b51e310e3e"
     - stage: horo
-      stageUuid: "6982b350-2381-8d44-ba03-28726760f3f2"
+      stageUuid: "a4ce65bb-a3f2-86e9-8d19-0f7fd6658dae"
     - stage: seal
       stageUuid: "b4b40377-833b-870d-afdd-d62d70503352"
     - stage: uuid
-      stageUuid: "ff99e52a-a918-86f3-9ea1-6dff7a10a303"
+      stageUuid: "918ed77c-4685-84b7-8488-dd60b773aa2f"
 version: 2
 ---
 # connection — the model of one [[connections]] row

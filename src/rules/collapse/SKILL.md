@@ -2,11 +2,11 @@
 name: collapse
 description: "Use when asking which collections can honestly become one — content-addresses every booted collection's shape and reports identical tables (0) and provable subsets (4). Read the boundary before acting: fitting is not sameness, and no theorem decides what two tables MEAN. Run: tsx src/rules/collapse/index.ts"
 atomPath: "rules/collapse"
-coordinate: "rules/collapse · 7/descent · d1a2d8ee"
-contentUuid: "dd582e57-131c-5672-845a-70e54597ed6a"
-diamondUuid: "37549b3f-8c52-8a52-8a89-0085a1711a90"
-uuid: "d1a2d8ee-3ca2-861e-86c9-f8cbb79db8f3"
-horo: 7
+coordinate: "rules/collapse · 1/base · 216acc1e"
+contentUuid: "30522138-fd72-59c8-b903-0942fc478160"
+diamondUuid: "6c0ca137-4148-83c5-9f63-232a3ea4a640"
+uuid: "216acc1e-b77f-87ce-a8e8-3ce2b65a55bd"
+horo: 1
 typography:
   partition: rules
   bondDegree: 4331
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 — content-address (same content, same address)"
 bindings: []
 signatures:
-  computationUuid: "09a6b104-0309-8add-8a38-2c630b9030a0"
+  computationUuid: "a3b7ca7e-27d6-8baf-928c-09f9fc6dfea7"
   stages:
     - stage: path
       stageUuid: "ef3d005e-66ae-88eb-8061-ac54f1cc57d1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a0a729f1-f8b8-8921-86c0-a57cd6473dc2"
     - stage: horo
-      stageUuid: "24036bb4-c2f8-8095-a845-71a99eb630c5"
+      stageUuid: "0dd4b717-c2e1-86e1-a4ab-1852838bd367"
     - stage: seal
       stageUuid: "e72d5eb3-a563-8c63-b1da-33f76f55eb5d"
     - stage: uuid
-      stageUuid: "01e25a98-69f5-82f5-bf8d-211fb50fd1fc"
+      stageUuid: "1be3583d-842d-8537-ae3b-170f85ff7f56"
 version: 2
 ---
 # collapse — the telos, measured

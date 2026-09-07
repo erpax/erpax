@@ -2,11 +2,11 @@
 name: days
 description: "Use when reasoning about days as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/days"
-coordinate: "vocabulary/days · 2/share · 8825cdbc"
-contentUuid: "53b88dd9-3eeb-5a51-82e3-6b59ce98c811"
-diamondUuid: "4888c03f-8444-8248-8728-32c3430dd721"
-uuid: "8825cdbc-efd5-88f9-8a99-c6b9f01d6af9"
-horo: 2
+coordinate: "vocabulary/days · 5/round · f1b4af9f"
+contentUuid: "6a3e16c4-5306-5368-89e2-49f8aa530a28"
+diamondUuid: "8adbb38e-601a-8b3e-922f-9079c3f49c4e"
+uuid: "f1b4af9f-765a-8087-aa38-65e92a7e7cc9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9fcae44c-ad31-8b28-ac15-0f186bd07df8"
+  computationUuid: "50d91e12-f141-8a57-8d36-4fd41ba8589e"
   stages:
     - stage: path
       stageUuid: "2fb50f86-0418-8d07-932d-ef60bd4cc47d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f9e2aded-676e-85e6-a0f8-45221b4f876a"
     - stage: horo
-      stageUuid: "fc3c6341-7fc3-8156-a497-e2b93101980c"
+      stageUuid: "44e7961f-252c-8a51-bc06-df630c2b9e1f"
     - stage: seal
       stageUuid: "bb5b101e-0304-8615-bbf5-95c28db6977e"
     - stage: uuid
-      stageUuid: "5df36dc8-39e9-896b-aebe-d53352782839"
+      stageUuid: "e23978c7-ab6b-8f83-9119-0ae72b24e6d6"
 version: 2
 ---
 # days

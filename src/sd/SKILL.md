@@ -2,11 +2,11 @@
 name: sd
 description: "Use when reasoning about sd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sd
-coordinate: "sd · 7/descent · 3649388e"
-contentUuid: "6f9c5a6e-c81b-5eca-99c5-09721cc1489b"
-diamondUuid: "d10e7d7c-2005-8099-9314-529924ef0d07"
-uuid: "3649388e-a11f-8af8-b952-580172580550"
-horo: 7
+coordinate: "sd · 2/share · fcbd8d1a"
+contentUuid: "2e019f3b-2507-5f79-bc4a-bc6d5403636c"
+diamondUuid: "0b3ac3bd-cfe5-8492-b308-5c63e04c1849"
+uuid: "fcbd8d1a-12d8-8cee-b10d-233c12f59a1d"
+horo: 2
 typography:
   partition: sd
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "631f4db8-3541-80f3-be03-e87f29cde993"
+  computationUuid: "b4a2b0c5-151e-8b9c-9ee9-4a931aa00d62"
   stages:
     - stage: path
       stageUuid: "8d77d6aa-a17b-84d1-9a91-57de7974cf06"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "71ee27bc-50af-8687-96fb-bd1c8252cb22"
     - stage: horo
-      stageUuid: "edb9aa10-fc8a-84de-9ab8-c10da66377ce"
+      stageUuid: "ee7b15bc-df10-8a8f-be04-c251452fd020"
     - stage: seal
       stageUuid: "89432130-c7da-89d0-b215-fc3df2d9fc31"
     - stage: uuid
-      stageUuid: "46d5d1a3-f2e3-81dc-b08d-604abfa69c33"
+      stageUuid: "80e9eb06-f00b-87a8-98d1-fde7b741f296"
 version: 2
 ---
 # sd

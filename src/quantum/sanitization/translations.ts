@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sanitization",
-    "uuid": "d108c098-a336-8a34-b90d-187d1dfb1ab5",
+    "uuid": "0e464160-99d6-8957-9c16-bc013762e959",
     "words": [
       "sanitization"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when cleaning data at a boundary — input, output, or disposal — in the content-addressed model where nothing mutates in place; accept untrusted input but collapse it through the gate, redact by projecting a sanitized view (no spoon for the unauthorized), and purge by crypto-shredding to the void.",
-    "uuid": "39c2b789-1d70-81e6-ada3-6bd8c6633439",
+    "uuid": "37fa67c2-8951-8d7a-9e80-8fef156e349c",
     "words": [
       "use",
       "when",

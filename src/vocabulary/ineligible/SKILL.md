@@ -2,11 +2,11 @@
 name: ineligible
 description: "Use when reasoning about ineligible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ineligible"
-coordinate: "vocabulary/ineligible · 2/share · 07dc57a8"
-contentUuid: "6ac55540-8097-502e-a235-3d413eb1aa3c"
-diamondUuid: "653d0b5f-af6c-8c08-88de-3bc6ce376ef2"
-uuid: "07dc57a8-02ce-8448-85ec-6f3a51ed066f"
-horo: 2
+coordinate: "vocabulary/ineligible · 5/round · 80ea03a5"
+contentUuid: "b461ae0d-8e64-5b07-90ba-c87578e2954a"
+diamondUuid: "eb67033d-4877-8906-874c-2cbee53e7b66"
+uuid: "80ea03a5-13cd-8f7d-95de-da1f5c16e32c"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8d6f0f48-aa4e-8da0-931c-c0ce364d0a72"
+  computationUuid: "bc85fee2-9a32-8c23-b2b6-499d7163f86c"
   stages:
     - stage: path
       stageUuid: "a312f4d2-6173-84b9-9102-79958c0c8fa3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dca34abb-85a5-88fb-99f6-03ad7a6fef2c"
     - stage: horo
-      stageUuid: "a0dd6380-c88a-8479-9cc6-647cfad0bb05"
+      stageUuid: "63b74444-8b3d-8448-b794-3ef7a3fde3a6"
     - stage: seal
       stageUuid: "03a50fd2-bb9a-821b-a2fd-00f334ff882a"
     - stage: uuid
-      stageUuid: "8f959ea3-f6cb-8ce8-8c56-46131b6bc3a4"
+      stageUuid: "e78948a4-db2e-8629-a6ef-fe27bf54b7b9"
 version: 2
 ---
 # ineligible

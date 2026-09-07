@@ -2,10 +2,10 @@
 name: advance
 description: "Use when reasoning about advance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/advance"
-coordinate: "vocabulary/advance · 8/crest · 3a5b6d92"
-contentUuid: "57b2711b-bd18-5c59-978e-707fc46faf4e"
-diamondUuid: "083d54e5-5899-8a22-83b1-c5db61ebf8ec"
-uuid: "3a5b6d92-181c-8184-9820-b254a07d575e"
+coordinate: "vocabulary/advance · 8/crest · e72bbf6e"
+contentUuid: "e4251d38-2471-5310-a245-988cb2cffd73"
+diamondUuid: "00d20abb-d202-8234-91c1-b7c72b022891"
+uuid: "e72bbf6e-defb-8977-abf4-ce218b616914"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e93b0a6d-f2de-83c1-a2de-4211fa987a51"
+  computationUuid: "b3db42fb-7f51-878d-8653-725ae11a8012"
   stages:
     - stage: path
       stageUuid: "eceec9cf-e7bf-8cb5-8ef6-0d52f37c1a08"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b8dc2b69-4fd4-855d-a2ac-58625fcc9563"
     - stage: horo
-      stageUuid: "95567c2a-7cea-8d41-aa86-1eb92988e272"
+      stageUuid: "3e26312a-acdd-8f8e-b8f4-0d5228ff54a2"
     - stage: seal
       stageUuid: "99cdda76-0c57-8c9f-8b42-3d7c7a8c8ccd"
     - stage: uuid
-      stageUuid: "7f44228d-866b-8539-b8af-7da21aa4f5e9"
+      stageUuid: "0c50b481-3f10-873a-ab48-70eb31837c22"
 version: 2
 ---
 # advance

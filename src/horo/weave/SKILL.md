@@ -2,18 +2,18 @@
 name: weave
 description: "Use when reasoning about the third position of the horo state ring — digit 4, \"four hands meeting\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo."
 atomPath: "horo/weave"
-coordinate: "horo/weave · 5/round · 7fcb81b2"
-contentUuid: "cf46d141-651f-5ed0-84e5-c45c8f703de1"
-diamondUuid: "859e8b12-dfb7-89c4-97a3-c0ab09a1ff67"
-uuid: "7fcb81b2-fe0f-8efc-85be-657392303a50"
-horo: 5
+coordinate: "horo/weave · 7/descent · 5ce0a78a"
+contentUuid: "9a051133-39d0-545e-a3b3-5cb5a6ad9be3"
+diamondUuid: "1c1f3dd7-81e5-85be-a2e5-cc841303fff5"
+uuid: "5ce0a78a-f727-8d15-9f1e-c94e28ef7062"
+horo: 7
 typography:
   partition: horo
   bondDegree: 36
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fd87af52-024f-84a0-9c69-f2c3e7562e92"
+  computationUuid: "2e63b58b-6335-853f-a1a4-63678d56b520"
   stages:
     - stage: path
       stageUuid: "d20f3641-be1b-8b2b-b73f-3061bbd2b828"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8704f8ad-d540-8d4c-99eb-6422343ccd9b"
     - stage: horo
-      stageUuid: "3d39185e-0c1c-8f0f-a53b-fa28162e7272"
+      stageUuid: "5d34a1de-c05d-8a76-96da-e3c88cc286a8"
     - stage: seal
       stageUuid: "bc8d478a-f7bd-8945-b01d-9dddff065e62"
     - stage: uuid
-      stageUuid: "39376a92-53e7-81b7-afbb-336c151f62ae"
+      stageUuid: "e7a77fad-7059-8c22-9c46-8a2080b6d83a"
 version: 2
 ---
 # weave — horo position 4 (four hands meeting)

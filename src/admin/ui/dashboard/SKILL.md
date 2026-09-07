@@ -2,10 +2,10 @@
 name: dashboard
 description: "Use when reasoning about dashboard — Two panels: the quantum view and the entropy rollup. Both read computed figures rather than stored ones, so the dashboard cannot disagree with the gate — it is the same…"
 atomPath: "admin/ui/dashboard"
-coordinate: "admin/ui/dashboard · 8/crest · fb8047e1"
-contentUuid: "1d4df45f-26ac-57ae-8fb7-3dab5eead543"
-diamondUuid: "b90849a0-039f-8b75-b6ab-d0c60ad8e45d"
-uuid: "fb8047e1-5829-86aa-90c3-5ddb870df3c1"
+coordinate: "admin/ui/dashboard · 8/crest · 01a4734a"
+contentUuid: "a9cc3874-8745-5ad3-aa06-e8c1f2521d42"
+diamondUuid: "9d962988-b379-854d-b2a8-671ca05c4271"
+uuid: "01a4734a-9059-8839-a14c-6ba2a4c972c2"
 horo: 8
 typography:
   partition: admin
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ccee9654-4e18-8b7a-9d48-4b84f0305ce5"
+  computationUuid: "2ed23ce1-4b22-898f-b1f5-2fe3869f1898"
   stages:
     - stage: path
       stageUuid: "f0b4ad91-c7c9-8767-a86a-3ef0e9593bae"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c3745c35-68da-84f0-af3d-f4be84cafdcc"
     - stage: horo
-      stageUuid: "ad4ea086-ddf7-8ff0-b964-bc4cda9717bf"
+      stageUuid: "29407a88-50a0-8625-9df5-5bcb7a850a58"
     - stage: seal
       stageUuid: "1966c36d-bb9c-8544-9d95-bf9c8d67c12c"
     - stage: uuid
-      stageUuid: "726b3b9f-fba3-8bfb-b995-0a95b567f1ad"
+      stageUuid: "cf34672f-cbee-8de9-ac9f-e343674f24b5"
 version: 2
 ---
 # admin/ui/dashboard — the corpus's own state, shown to the person administering it

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "blog",
-    "uuid": "8da96f26-ef2f-8752-8aa3-3357a57b883a",
+    "uuid": "e39cb99f-bfd7-89c6-8a2f-7d48c4557483",
     "words": [
       "blog"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about blog — A blog, sometimes known as a \\\"weblog\\\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term.",
-    "uuid": "fa362f03-de8b-80bf-af41-4e1d3439c976",
+    "uuid": "ee508ac6-6b49-8194-9b7a-db8e0eee4135",
     "words": [
       "use",
       "when",

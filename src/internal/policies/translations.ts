@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "policies",
-    "uuid": "7735acf1-82ed-8245-ab7c-a77b3f4e990e",
+    "uuid": "90689280-62a9-8b73-8c61-5e5a4b4814ca",
     "words": [
       "policies"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.",
-    "uuid": "b929bb1a-905e-86c3-83a8-fe143836db19",
+    "uuid": "4e4c0546-b03a-808e-99f3-c1bc4e3e0c74",
     "words": [
       "use",
       "when",

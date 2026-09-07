@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fields",
-    "uuid": "fd5fb46e-53d2-8083-b64d-2a18ae36c6a4",
+    "uuid": "b44f8d1a-ae14-81b7-8a2a-68717e4741b7",
     "words": [
       "fields"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fields — shows the atom's coordinates, its bonds, and the entanglement fields warn when a change reaches further than the row in front of the editor.",
-    "uuid": "a9534310-e624-8b78-b697-b77ca2161862",
+    "uuid": "ae2e5dc2-ee26-80bc-bdb2-b799bc77dd4a",
     "words": [
       "use",
       "when",

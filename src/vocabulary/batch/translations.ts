@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "batch",
-    "uuid": "815d6070-558e-885d-a1ef-d65d42d0e2d4",
+    "uuid": "55edc8fb-88be-89a9-a571-3ef7adee2559",
     "words": [
       "batch"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when processing data in bulk — batch ETL jobs, bulk inserts/updates/deletes, batch transaction semantics, atomicity across a batch, partial failure handling and retry strategies in batch operations.",
-    "uuid": "bd893cec-23e8-8e63-ae89-3c78f87cce80",
+    "uuid": "665405b0-6a1b-843f-bef6-e3847c4e412a",
     "words": [
       "use",
       "when",

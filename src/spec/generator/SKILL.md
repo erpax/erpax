@@ -2,11 +2,11 @@
 name: generator
 description: "Use when reasoning about generator — The extractor parses each collection's leading banner into a ; the generators beside it emit the chain registry, the test scaffolds, the marketing pages and the i18n keys from…"
 atomPath: "spec/generator"
-coordinate: "spec/generator · 5/round · 54766d41"
-contentUuid: "83ac2f48-340d-53b4-b641-ba041089b739"
-diamondUuid: "f8dd2420-6fc0-85ba-a1a3-a84a649aace7"
-uuid: "54766d41-9cda-86af-aff1-c548b04afd20"
-horo: 5
+coordinate: "spec/generator · 4/weave · c718b544"
+contentUuid: "1d4a820f-8ea8-5185-aebf-674c8d76cc74"
+diamondUuid: "a61b028a-d25c-897a-a62d-485e69ae7484"
+uuid: "c718b544-577c-8cf5-a560-260b9b80aca1"
+horo: 4
 typography:
   partition: spec
   bondDegree: 40
@@ -16,7 +16,7 @@ standards:
   - "RFC-8259"
 bindings: []
 signatures:
-  computationUuid: "d9f28d6a-2f03-8969-b453-9ef62b74a701"
+  computationUuid: "1a1ee3a1-5bf9-803c-aa94-e183a03cc5b4"
   stages:
     - stage: path
       stageUuid: "50bbe649-e51a-8685-bc36-dc11c78c6c19"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "2f474cec-e157-8eb8-b0ad-eafe873a5c2d"
     - stage: horo
-      stageUuid: "c5fc9684-133e-81c5-9463-67023cded5e9"
+      stageUuid: "b4c29fee-6286-8768-a433-e6e3377aa812"
     - stage: seal
       stageUuid: "91da673c-647a-8977-bbd9-1877a4ea13d6"
     - stage: uuid
-      stageUuid: "1829a25b-7212-8af5-b640-f2979eb71827"
+      stageUuid: "85c1ecdf-2c05-8870-af4e-915117e9735c"
 version: 2
 ---
 # spec/generator — the JSDoc banner is the spec, and everything downstream is generated from it
