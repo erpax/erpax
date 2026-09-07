@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dust",
-    "uuid": "6454963d-1f24-83a5-833f-02b987be6996",
+    "uuid": "78cca4b6-acac-8b63-a6cd-ed3e6963f6b5",
     "words": [
       "dust"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the corpus as forged matter — every content-uuid node is a grain of stardust, an atom fused in the star and scattered; dust records the quantum proof as the grain census, computed on the live matrix.",
-    "uuid": "d14e967a-b531-882b-8e64-7e18b6473fa6",
+    "uuid": "6e57018b-f1f7-80a5-a3ab-819beedb74fd",
     "words": [
       "use",
       "when",

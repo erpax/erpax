@@ -2,18 +2,18 @@
 name: lock
 description: Use when modelling one lock — the singular model of the locks collection (the plural store); a hold that prevents change to a record or resource.
 atomPath: "vocabulary/lock"
-coordinate: "vocabulary/lock · 2/share · aa4a78ec"
-contentUuid: "1c9e57d8-5f59-53ae-8eb0-57dc57a34e3a"
-diamondUuid: "4529d9a2-bdc5-8be5-884e-f2469afcf71b"
-uuid: "aa4a78ec-18ca-8e80-ba33-e1aa7029d567"
-horo: 2
+coordinate: "vocabulary/lock · 8/crest · 549b31a1"
+contentUuid: "f9d3760f-c685-5240-bca4-9a6014643bd7"
+diamondUuid: "d60b0503-1c01-8111-92a4-82ee38b54571"
+uuid: "549b31a1-5d50-8308-8db4-0a49ea7fa396"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f51e1429-4840-8609-8f34-1858d2cc2415"
+  computationUuid: "a44cd41e-f2eb-8f14-b31b-1e94a687f9d4"
   stages:
     - stage: path
       stageUuid: "3b412416-b859-8c6b-ab5b-735f334fd8ca"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0960d7a5-c34c-8c5a-a30e-ef3acbdabe11"
     - stage: horo
-      stageUuid: "ddbf2936-2954-8c38-a0ef-bde7d7bcd0ff"
+      stageUuid: "dfe3cd3d-91df-899c-8282-ce8db2b0ea24"
     - stage: seal
       stageUuid: "2c789540-bc87-8dbb-a2b4-3d68cfdfb3fb"
     - stage: uuid
-      stageUuid: "9730b1f2-6bb3-80c6-87ea-fbd5dca38bbb"
+      stageUuid: "9a25098e-0a49-84ee-aed4-8004030a8392"
 version: 2
 ---
 # lock — the model of one [[locks]] row

@@ -2,11 +2,11 @@
 name: floor
 description: "Use when reasoning about floor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/floor"
-coordinate: "vocabulary/floor · 8/crest · ceeacd2d"
-contentUuid: "bc449dff-ed4c-552d-9a43-4ddc9f8cf822"
-diamondUuid: "610f9c1e-1ac2-85b1-b111-1d0a6175ef1e"
-uuid: "ceeacd2d-7048-8c47-9e90-c42c2adb2add"
-horo: 8
+coordinate: "vocabulary/floor · 7/descent · 280ca4f0"
+contentUuid: "0251dc52-4f75-591f-aa5a-c0a6a6dc085c"
+diamondUuid: "bcb10320-5072-8e53-bda0-e54cd0ef77ac"
+uuid: "280ca4f0-d7ca-8f77-b79c-2db071128b91"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4b44c886-0003-801d-aa5c-47a47b53e3fc"
+  computationUuid: "2ee2ca62-bc1c-8bd0-bbf0-0a0f5a605d6a"
   stages:
     - stage: path
       stageUuid: "b8809de7-2504-81c8-97f3-114bdcc7c8be"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a644e74f-b22f-8c4f-9ad6-494c249f413e"
     - stage: horo
-      stageUuid: "7db4e525-85d0-80a2-ab59-c058a02b1153"
+      stageUuid: "c09fe1aa-32e9-818e-ae52-d9fd6e0e956b"
     - stage: seal
       stageUuid: "66cb0627-47fb-819a-bec6-6523abadf3fd"
     - stage: uuid
-      stageUuid: "0c5dba84-e347-8a87-9677-d819727bfc72"
+      stageUuid: "5af77929-2ba2-8c3d-b332-6b47affb0239"
 version: 2
 ---
 # floor

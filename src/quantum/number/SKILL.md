@@ -2,18 +2,18 @@
 name: number
 description: "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line."
 atomPath: "quantum/number"
-coordinate: "quantum/number · 7/descent · 70c7ce0c"
-contentUuid: "e046f260-e06f-55f1-89b5-d62ecb71278a"
-diamondUuid: "7d8abb1e-a558-8194-9497-d31ebe271560"
-uuid: "70c7ce0c-453b-80b7-8d94-fd9ccdc736ac"
-horo: 7
+coordinate: "quantum/number · 1/base · 71f610b3"
+contentUuid: "6df343d4-7993-5e5f-9478-3234fbe7008d"
+diamondUuid: "7bf2979a-08ae-8e6f-aeb3-d7e2e07335e6"
+uuid: "71f610b3-7b5f-8f3d-8d77-b27d1b8ecb5d"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 226
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f2911827-4dc6-809e-8dce-6e771738f505"
+  computationUuid: "3c85cc9e-a667-8044-8097-0847b25381ec"
   stages:
     - stage: path
       stageUuid: "a4a59051-7c91-876b-903c-230d3d88aa79"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "1305c840-09ac-8a3b-b010-58e5dc83c85b"
     - stage: links
-      stageUuid: "759ebade-752d-8b09-8735-b60be7e1fdc9"
+      stageUuid: "62c55f1c-81b8-896d-8db1-6a0eb81a5138"
     - stage: horo
-      stageUuid: "49b27522-e0df-8d89-982b-8ad23b062b0b"
+      stageUuid: "cbc44fee-54c0-8381-ab70-48bed75492f1"
     - stage: seal
       stageUuid: "3f75ddee-1316-896d-acab-5906cb3d38b3"
     - stage: uuid
-      stageUuid: "0c87e2ca-983b-82f4-9cb3-15537b8d887c"
+      stageUuid: "7ada1670-6909-84d8-bd2d-28c468c0605d"
 quantum:
   superposition:
     - accommodation
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f2911827-4dc6-809e-8dce-6e771738f505"
-    contentUuid: "e046f260-e06f-55f1-89b5-d62ecb71278a"
+    computationUuid: "3c85cc9e-a667-8044-8097-0847b25381ec"
+    contentUuid: "6df343d4-7993-5e5f-9478-3234fbe7008d"
 version: 2
 ---
 # quantum/number — the digit-stream behind the dot
@@ -77,4 +77,4 @@ The (conjectured) **normality** of π — every [[digit]] equally often — *is*
 
 @see [[number]] · [[digit]] · [[stream]] · [[linearity]] · [[finality]] · [[sequence]] · [[breath]] · [[harmony]]
 
-<sub>content-uuid `e046f260-e06f-55f1-89b5-d62ecb71278a` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `6df343d4-7993-5e5f-9478-3234fbe7008d` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

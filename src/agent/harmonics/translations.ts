@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "harmonics",
-    "uuid": "6f6cfc97-733a-8384-921c-17d74f3f003d",
+    "uuid": "228cccfe-bf98-80fb-a72d-54eb6b5a7f05",
     "words": [
       "harmonics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about harmonics — harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order.",
-    "uuid": "6dfe2f72-4632-8c6e-acfa-07402396fa93",
+    "uuid": "abd3bbae-a07e-8fd5-837d-073b4c76873f",
     "words": [
       "use",
       "when",

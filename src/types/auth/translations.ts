@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "auth",
-    "uuid": "0e73dce0-c90a-8925-8ee2-7641c99e5291",
+    "uuid": "a5c7b53b-e10f-815d-a071-f670cf7aaea2",
     "words": [
       "auth"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about auth type definitions — authentication and session shapes.",
-    "uuid": "7b44d6ab-cd98-8657-b523-6708bf8dd1c1",
+    "uuid": "f129cf56-12b7-81b9-9920-d1455f60fd48",
     "words": [
       "use",
       "when",

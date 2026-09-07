@@ -2,18 +2,18 @@
 name: transaction
 description: "Use when reasoning about transaction — A **transaction** is the atom of business: a balance|balanced flow of value between party|parties — two sides (give/take, debit/credit, seller/buyer) that sum to zero. It is the pr"
 atomPath: transaction
-coordinate: "transaction · 5/round · 2dad5d90"
-contentUuid: "78fd7d80-9138-5bca-a2f4-70c18f28e092"
-diamondUuid: "912c19f7-dcbf-8bb3-8d52-e38844ab3d64"
-uuid: "2dad5d90-7f5e-8e15-9a88-1511694fc42a"
-horo: 5
+coordinate: "transaction · 7/descent · 332a629a"
+contentUuid: "b2169a1d-f05a-5a93-9de2-e454450cf902"
+diamondUuid: "2408993c-7e0a-8320-9a8b-b381d940cf7b"
+uuid: "332a629a-9e38-8afe-acb6-1c6e0a1fbbcd"
+horo: 7
 typography:
   partition: transaction
   bondDegree: 281
 standards: []
 bindings: []
 signatures:
-  computationUuid: "064ff450-b15e-89c3-8259-4eace7f8598c"
+  computationUuid: "d8267fcd-d5a1-89db-9f40-b0dd3d3bf09c"
   stages:
     - stage: path
       stageUuid: "7efb4835-90cc-8b5f-bbe5-08297e570eba"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a68abc6d-083b-8ee1-b7bd-1653b11f4a6c"
     - stage: horo
-      stageUuid: "49750a4e-65a2-8909-a5ff-cfabe67f9f63"
+      stageUuid: "94b28cbc-8aa6-8c67-b715-e475901b3d41"
     - stage: seal
       stageUuid: "98754e3c-b2af-843b-adcc-38ea475d5bd1"
     - stage: uuid
-      stageUuid: "20548ee1-a1fc-8437-8fb9-a1a1b55a138c"
+      stageUuid: "34aa58a7-ea18-8e2e-84f5-09f25674a291"
 version: 2
 ---
 # transaction — the universal exchange: a balanced flow between parties

@@ -2,11 +2,11 @@
 name: manufacturing
 description: "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern."
 atomPath: "vocabulary/manufacturing"
-coordinate: "vocabulary/manufacturing · 2/share · 04b50164"
-contentUuid: "7997ff4a-038b-5879-acce-1c68672690ad"
-diamondUuid: "59db541b-4717-8f80-9480-d32b4fd1a52c"
-uuid: "04b50164-ccee-836c-9b3e-4b8ec89fda9f"
-horo: 2
+coordinate: "vocabulary/manufacturing · 8/crest · 4862e60e"
+contentUuid: "37db9fac-4339-5825-8cc6-70d19ef41b36"
+diamondUuid: "ff67b259-fb4b-873e-895d-c3513565b10f"
+uuid: "4862e60e-92a2-8a73-be53-5d9fb3588547"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 144
@@ -18,7 +18,7 @@ standards:
   - "UN-CEFACT"
 bindings: []
 signatures:
-  computationUuid: "f99272a8-4372-8de8-8e69-094db6f366ee"
+  computationUuid: "649c3836-f289-8326-9cf8-d01654e5cbe7"
   stages:
     - stage: path
       stageUuid: "9b4efcc5-7ff9-8fea-a4df-84ef692edc41"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "b2b8a28e-d3d5-808a-bbd4-247fe577a169"
     - stage: horo
-      stageUuid: "45a18b3f-c865-8a6d-b029-f147d09dd2cd"
+      stageUuid: "d1fd1b45-f14e-8cc4-84f8-157c8d3d3bea"
     - stage: seal
       stageUuid: "795bb03e-d87f-8f8a-b869-9534c34becbe"
     - stage: uuid
-      stageUuid: "c0cf9324-b791-802f-8d67-10b03aff83e9"
+      stageUuid: "15a78c58-0453-8a5c-a3a5-9ede7814aba0"
 version: 2
 ---
 # manufacturing — the all-industries production plugin

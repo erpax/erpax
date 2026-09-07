@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "surface",
-    "uuid": "dd961562-6f39-83df-90ad-1f55a7e6997b",
+    "uuid": "34ee39f7-6db3-866f-b5d9-fac2ff021ad1",
     "words": [
       "surface"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when declaring or auditing the whole cryptographic surface an atom exposes — the judgment guard that makes a silently omitted surface fail the build: every reachable surface (root-signing · channel-keying · storage-at-rest · re-exchange) must be registered sealed (naming the standard AND the test) or open (naming the gap AND the owner), a channel sealed without FIPS 203 ML-KEM is channel-unsealed because harvest-now-decrypt-later reads the transport not the root, and a root sealed by anything but FIPS 205 SLH-DSA or FIPS 204 ML-DSA is root-unsealed because Shor breaks a classical root outright.",
-    "uuid": "61e0daab-2fda-8491-8f01-d581f592630f",
+    "uuid": "52c380ed-eeec-879d-a7be-21b7555ed8b0",
     "words": [
       "use",
       "when",

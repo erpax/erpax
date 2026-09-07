@@ -2,11 +2,11 @@
 name: sporting
 description: "Use when reasoning about sporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sporting
-coordinate: "sporting · 2/share · 3728efd2"
-contentUuid: "9f21b8c7-f286-5b58-b9cd-170192c9dae0"
-diamondUuid: "6f8a3c2a-9317-81f6-a76b-e6eb3c3fde94"
-uuid: "3728efd2-ece8-8532-a7fc-af229de3fa52"
-horo: 2
+coordinate: "sporting · 1/base · b865d61e"
+contentUuid: "54278d4f-dce6-5a02-b374-cab6e1e519dd"
+diamondUuid: "53439f94-7536-84f7-9c2e-6b1813580dea"
+uuid: "b865d61e-0c94-8c7e-adc7-5130e00c21e1"
+horo: 1
 typography:
   partition: sporting
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5fd7b8e9-fc04-83e7-8cf0-e48a2db1f5b0"
+  computationUuid: "56de4be6-72d9-89f9-9b2a-4ea8164573e0"
   stages:
     - stage: path
       stageUuid: "e689fead-9250-8e70-b2fe-41a47909a137"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7def2e00-7d5f-811e-9d2e-842ef4251878"
     - stage: horo
-      stageUuid: "5c703a19-1af5-8018-b6f3-6655ea260b6b"
+      stageUuid: "9b73f664-179a-8109-aea2-aa91d1610f98"
     - stage: seal
       stageUuid: "dc0acdb6-76ce-834a-b1fd-ec10a2a21696"
     - stage: uuid
-      stageUuid: "10fa4aa1-2980-8ddb-a1cd-9638636f6ff4"
+      stageUuid: "f78dabda-bf32-87c6-9519-b40e10ef4014"
 version: 2
 ---
 # sporting

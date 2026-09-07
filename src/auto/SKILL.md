@@ -2,11 +2,11 @@
 name: auto
 description: "Use when reasoning about auto as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: auto
-coordinate: "auto · 7/descent · 4282808a"
-contentUuid: "d2508aa4-916f-532d-8542-dd06ce1af5d8"
-diamondUuid: "ae793a92-3fe1-89b5-bde1-67fb98680879"
-uuid: "4282808a-ae12-8cb2-95dc-f1289cfe3ea0"
-horo: 7
+coordinate: "auto · 2/share · c59ce8c1"
+contentUuid: "f19f5c71-eaba-59e2-a3d4-dc764013d081"
+diamondUuid: "a1c9c344-9592-8ef4-a0d2-d7fd834ef771"
+uuid: "c59ce8c1-b1fd-8f41-ba7c-84ae8e8f9828"
+horo: 2
 typography:
   partition: auto
   bondDegree: 59
@@ -16,7 +16,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0c0f52f2-27f7-81f4-bdf8-5af783184b2f"
+  computationUuid: "921998c3-249e-8191-bb4c-9714ce2bac37"
   stages:
     - stage: path
       stageUuid: "a13d9345-25ea-8563-9b86-f77001c4f408"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "f583b79a-9615-861c-80ee-c2f8f880c130"
     - stage: horo
-      stageUuid: "19aa69e2-4a3a-84fd-8231-c00678c1f673"
+      stageUuid: "c20793ca-4599-80ca-a548-73814a65d121"
     - stage: seal
       stageUuid: "db3fa53e-2d37-8741-bf96-cf59c2c69cdf"
     - stage: uuid
-      stageUuid: "da329caf-c604-8dd2-8ee7-e7a3f1a10926"
+      stageUuid: "1728c347-2028-896b-a1b0-576a25e8d656"
 version: 2
 ---
 # auto

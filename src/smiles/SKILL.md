@@ -2,11 +2,11 @@
 name: smiles
 description: Use when reasoning about smiles — A specification in form of a line notation for describing the structure of chemical species using short ASCII strings. Double bond stereochemistry \ indicators may need to be escap
 atomPath: smiles
-coordinate: "smiles · 4/weave · fe329a66"
-contentUuid: "f8892386-ef04-52c5-92b1-7a27928032a0"
-diamondUuid: "bd20fd94-2e7b-88f0-904f-705eb5cf14a0"
-uuid: "fe329a66-1553-8f9e-9153-91584ab90411"
-horo: 4
+coordinate: "smiles · 2/share · b79ae568"
+contentUuid: "43e89a0e-1e71-5ec1-a70e-aba8d2dfc37f"
+diamondUuid: "baaa995e-730f-86d2-a2d2-29df9b5908c2"
+uuid: "b79ae568-7f08-8e06-b7b6-ec8791019971"
+horo: 2
 typography:
   partition: smiles
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7fa74327-a86d-8d62-a206-20675c6266ec"
+  computationUuid: "07036b5b-9a2d-8700-9134-9fb53da8f9b8"
   stages:
     - stage: path
       stageUuid: "83820f98-155d-8493-b1bd-3af5e6472631"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cc1ed9b8-f177-831c-87e4-35af0bf95ff4"
     - stage: horo
-      stageUuid: "dd0146e7-bf36-8a9c-8b15-4589dbcd2461"
+      stageUuid: "3040af4d-ea80-85f1-bea9-567350e54298"
     - stage: seal
       stageUuid: "6f5355a3-4e1e-8dde-a243-d34fffd5f660"
     - stage: uuid
-      stageUuid: "17efca84-c0fa-8737-9b16-41b79c207fed"
+      stageUuid: "cff08e53-5bef-8442-8b8e-c3f4571ccb35"
 version: 2
 ---
 # smiles

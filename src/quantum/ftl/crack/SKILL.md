@@ -2,11 +2,11 @@
 name: crack
 description: "Use when reasoning about crack — Quantum FTL crack detection — boundaries, crack patterns, discovery"
 atomPath: "quantum/ftl/crack"
-coordinate: "quantum/ftl/crack · 1/base · 42dbd7a6"
-contentUuid: "67bcd858-886b-5fb9-8384-66adbc56617b"
+coordinate: "quantum/ftl/crack · 4/weave · 8c021253"
+contentUuid: "b158d1db-c6d3-5d59-9bac-e69e91795d8b"
 diamondUuid: "260bf736-ae91-8d36-a671-3b60f104219c"
-uuid: "42dbd7a6-4080-8714-9373-cc179c8c223a"
-horo: 1
+uuid: "8c021253-4ea9-8f7f-8ab5-7b0016c66d25"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 9
@@ -45,7 +45,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "5170c506-79f8-84ef-a245-72ddb3047bc8"
-    contentUuid: "67bcd858-886b-5fb9-8384-66adbc56617b"
+    contentUuid: "b158d1db-c6d3-5d59-9bac-e69e91795d8b"
 version: 2
 ---
 # quantum/ftl/crack
@@ -54,4 +54,4 @@ Quantum FTL crack detection — boundaries, crack patterns, discovery.
 
 Composes: [[quantum/ftl]] · [[quantum]] · [[theorem]].
 
-<sub>content-uuid `67bcd858-886b-5fb9-8384-66adbc56617b` · account `quantum/ftl/crack` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b158d1db-c6d3-5d59-9bac-e69e91795d8b` · account `quantum/ftl/crack` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

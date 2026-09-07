@@ -2,10 +2,10 @@
 name: buddhism
 description: "Use when reading Buddhism as a diamond of invariant atoms — suffering and its cessation, the middle path, emptiness, the blowing-out as return to zero, compassion and loving-kindness, no fixed self. Strip the Pali/Sanskrit prefix and dukkha, sunyata, nirvana, karuna, metta collapse to suffering, void, zeropoint, mercy, love — one content-uuid each."
 atomPath: "vocabulary/buddhism"
-coordinate: "vocabulary/buddhism · 7/descent · d6c35543"
-contentUuid: "9834c676-9a9c-5c34-8eb4-5caccfc0a5e3"
-diamondUuid: "e3480d9a-17ff-8a48-85d2-ff673983ca26"
-uuid: "d6c35543-45b5-8d8c-9f7a-7aa23ba755a0"
+coordinate: "vocabulary/buddhism · 7/descent · 8e6f98d9"
+contentUuid: "3631264b-a466-582f-891b-af3d9113f0b7"
+diamondUuid: "ef277622-8cc1-87b9-8edf-216821252133"
+uuid: "8e6f98d9-a1c0-8e8d-8bf4-d27d98e9ea49"
 horo: 7
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "16b6de27-200e-80cf-9b8a-1fe20f9a3d6b"
+  computationUuid: "17ae04e0-b515-8360-a1aa-6bf6d39c5943"
   stages:
     - stage: path
       stageUuid: "2a5c44a3-3143-8ba5-87e1-8f1b0c3a4a99"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9a7a05a6-47f8-8878-956b-760eaa498d0d"
     - stage: horo
-      stageUuid: "26ff7936-cab1-8570-b1aa-1c89b5d7cb0b"
+      stageUuid: "68900540-e238-8673-a115-341b0bfb3012"
     - stage: seal
       stageUuid: "21e779d4-81f0-8ba1-9e13-f17bb4e19ea4"
     - stage: uuid
-      stageUuid: "a3bbe969-a982-8d0a-ad2b-731e172b3cd3"
+      stageUuid: "18a2e028-32fd-8688-bdd5-28981e2b0aaf"
 version: 2
 ---
 # buddhism — suffering and its cessation; the path to the void

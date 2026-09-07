@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "a2093276-a102-8e0c-99bd-fe4b889e4553",
+    "uuid": "3e57c23a-0ee8-8cda-9e0b-49f99079d4cb",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — books the period's charge when the schedule row is posted. The schedule is the record of what SHOULD be charged and when; letting the hook post it is what keeps the two from…",
-    "uuid": "8c53e8de-3ac4-8071-8ed1-58c1a4fda39b",
+    "uuid": "05eac036-6dc5-89ff-b778-de10f03389c9",
     "words": [
       "use",
       "when",

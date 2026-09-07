@@ -2,11 +2,11 @@
 name: event
 description: "Use when a sale closes and the rest of the system must learn about it — emits the sale:closed domain event exactly once on the transition, keyed by the content-uuid so a federation peer reconciles by content rather than by local row id."
 atomPath: "sale/event"
-coordinate: "sale/event · 5/round · 3cc0330a"
-contentUuid: "353dd99d-c5aa-5c85-beab-f10fad60d57f"
-diamondUuid: "7823483a-0ff5-8e70-9c02-23688bf665f8"
-uuid: "3cc0330a-bd52-8097-a189-de6f2c7eaa37"
-horo: 5
+coordinate: "sale/event · 4/weave · b54b658a"
+contentUuid: "43854a35-4277-5645-a378-fa02a8a75f4d"
+diamondUuid: "473942e0-9741-8ab0-8214-8932a2cd804b"
+uuid: "b54b658a-7084-8d22-9a7b-75acb08e8731"
+horo: 4
 typography:
   partition: sale
   bondDegree: 159
@@ -15,7 +15,7 @@ standards:
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "8879fabe-6f00-8b90-8e0d-0f20c4274ce8"
+  computationUuid: "9775e91f-463d-85b4-8fe7-ed95aa739f62"
   stages:
     - stage: path
       stageUuid: "feef1816-496f-8421-92b7-e6906737e7fd"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "02cf1756-8a20-84e9-bae8-bfbe7485ab32"
     - stage: horo
-      stageUuid: "3e7bf102-e9f4-8e16-84f5-d0497730270b"
+      stageUuid: "b28cb0b4-8e13-80ae-8bf7-e986e0a75254"
     - stage: seal
       stageUuid: "6ca257c6-27bb-8193-9801-9ff953edd0a6"
     - stage: uuid
-      stageUuid: "f87eaa68-56c8-8d59-9ab9-06989d2b63ef"
+      stageUuid: "b9621869-00f7-8b43-b443-d7014014acd1"
 version: 2
 ---
 # event

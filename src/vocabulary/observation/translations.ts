@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "observation",
-    "uuid": "3513c6ae-f2b1-8e14-8609-72140690b0c8",
+    "uuid": "1d9a56e2-a2a4-8864-b236-398edfa51a9b",
     "words": [
       "observation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about observation — Instances of the class Observation are used to specify observations about an entity at a particular time. The principal properties of an Observation are observationAbout, measuredP",
-    "uuid": "c9638fe9-f360-89c2-b5b7-aba8709ee900",
+    "uuid": "85b7d59d-16f7-8ab6-b984-ff5ea2653d1f",
     "words": [
       "use",
       "when",

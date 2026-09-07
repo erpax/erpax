@@ -2,11 +2,11 @@
 name: patient
 description: Use when reasoning about patient — A patient is any person recipient of health care services.
 atomPath: "vocabulary/patient"
-coordinate: "vocabulary/patient · 4/weave · 44d0a9ee"
-contentUuid: "a84e24e2-e629-5e33-ada1-f495236688c8"
-diamondUuid: "fea100d2-601a-8e36-b97e-98fc5189c0db"
-uuid: "44d0a9ee-970e-834a-a856-9d4e088559d2"
-horo: 4
+coordinate: "vocabulary/patient · 8/crest · 219d9bbd"
+contentUuid: "87ac43c4-bdf1-54a8-9c38-a06507f9106a"
+diamondUuid: "2e17551f-1446-8ffd-9b7a-8e8513e40f3c"
+uuid: "219d9bbd-229a-8f39-9c30-a55516f73107"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d0cabeba-87bc-80b3-91a8-cd98f86e316f"
+  computationUuid: "944f89f9-9347-8d18-909a-1aac7797acd8"
   stages:
     - stage: path
       stageUuid: "b1107787-5937-8317-9266-a85f9eb3e353"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c2d6d9b5-ab06-8446-99f5-5e1de58a4305"
     - stage: horo
-      stageUuid: "782abc4c-3ee4-8a41-ab88-c102ca0e8a1f"
+      stageUuid: "b976154c-37de-816d-add0-9b77291eb080"
     - stage: seal
       stageUuid: "7e21cd52-f9d0-8a63-bdff-a66aee51d848"
     - stage: uuid
-      stageUuid: "3b12acd1-c1d0-8b8a-90ec-883aa73a8a3d"
+      stageUuid: "efeab829-afa4-8281-bd0e-42d49fae5a5d"
 version: 2
 ---
 # patient

@@ -2,11 +2,11 @@
 name: high
 description: "Use when reasoning about high as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/high"
-coordinate: "vocabulary/high · 7/descent · b88bd024"
-contentUuid: "fa171590-a40b-59cd-9571-35a5965e8533"
-diamondUuid: "0274cfa3-e2e7-8d2c-9950-3f3cce35291c"
-uuid: "b88bd024-f34f-89f6-bcb7-6d0bc70f7ec7"
-horo: 7
+coordinate: "vocabulary/high · 5/round · a23162bc"
+contentUuid: "0ae33356-da65-5df8-bdd2-c5092784c73b"
+diamondUuid: "131e3357-c3cc-8c64-ab69-8154fe0016b1"
+uuid: "a23162bc-28d7-83f4-a6fe-2b64addbb546"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "20c27534-f56e-8014-a91a-0537c954fb11"
+  computationUuid: "70c9f5e1-5b29-8362-93af-5116360113e8"
   stages:
     - stage: path
       stageUuid: "af18296c-2886-82db-b240-80a956d3371a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3919c324-f394-889a-ac80-67148fa4505f"
     - stage: horo
-      stageUuid: "5dcd547b-e745-8c5c-b347-cb10cb79bab6"
+      stageUuid: "073a8600-5ac1-8759-aec6-136dab51bbc2"
     - stage: seal
       stageUuid: "a1ed711f-2398-8b9a-8c2e-0cf5ee29c56e"
     - stage: uuid
-      stageUuid: "fd9859e3-a55f-80c1-a9e9-733d4e2fbc58"
+      stageUuid: "75e2f00a-9c2a-85ab-8e4c-738118e6ebf8"
 version: 2
 ---
 # high

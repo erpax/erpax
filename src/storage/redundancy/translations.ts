@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "redundancy",
-    "uuid": "a313b691-4a9d-8cfd-8763-b0514247a8af",
+    "uuid": "f9d706dd-f760-8c74-808b-721652d19a41",
     "words": [
       "redundancy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.",
-    "uuid": "3904e3dd-7320-841c-91a1-f20e1fd4420b",
+    "uuid": "81194463-c6f9-8fb3-937d-2dcb2f8b588c",
     "words": [
       "use",
       "when",

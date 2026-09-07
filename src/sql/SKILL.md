@@ -2,11 +2,11 @@
 name: sql
 description: "Use when modelling a SQL query as pure data — a SELECT AST with a deterministic canonical stringifier, so equivalent queries normalize identically and the quantum facet hashes them to one content-uuid."
 atomPath: sql
-coordinate: "sql · 2/share · fdbb742a"
-contentUuid: "26e4231a-b761-558d-8360-3c07ec0b43d8"
-diamondUuid: "f56568cc-301e-8e42-b6bc-9e2fbda1a4b9"
-uuid: "fdbb742a-fe6e-813c-9265-1fe2b013f4df"
-horo: 2
+coordinate: "sql · 1/base · 1161743f"
+contentUuid: "c1fbc66d-57e6-51f1-b218-ffe9bd0e1cb5"
+diamondUuid: "6efa85a9-ef84-8cae-a6bb-8a2f98bb393e"
+uuid: "1161743f-aea1-8399-a455-0dfb54aab104"
+horo: 1
 typography:
   partition: sql
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - SQL SELECT (a minimal subset); deterministic canonicalisation
 bindings: []
 signatures:
-  computationUuid: "f00347ed-a801-86b7-858a-cd0206667d12"
+  computationUuid: "ea2ac17e-099c-8085-b15f-b2d7ad7ab649"
   stages:
     - stage: path
       stageUuid: "325b429f-b4ab-8912-823a-340384338177"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4f7d7bf1-e823-809c-8339-be43b04eb071"
     - stage: horo
-      stageUuid: "eb581b94-db33-8eae-aaac-06ff968af89c"
+      stageUuid: "144c362f-36f7-8169-a60f-3b8c0a3000d9"
     - stage: seal
       stageUuid: "d8262761-27cd-89a8-b20e-f345f60a2222"
     - stage: uuid
-      stageUuid: "1eecb525-bccb-852f-bcd7-51711e92b82d"
+      stageUuid: "6b35a18d-ab4f-88c4-913b-c9ab166fd59c"
 version: 2
 ---
 # sql — a query as canonical data

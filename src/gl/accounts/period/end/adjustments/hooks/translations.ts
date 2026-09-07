@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "a2093276-a102-8e0c-99bd-fe4b889e4553",
+    "uuid": "3e57c23a-0ee8-8cda-9e0b-49f99079d4cb",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — The adjustment child carries the matter; this is the address a collection imports.",
-    "uuid": "e01a1ff1-89d3-8f02-81a9-1e023507e5b8",
+    "uuid": "1ae07198-7506-8f93-9bf4-410e47a87cd4",
     "words": [
       "use",
       "when",

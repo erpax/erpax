@@ -2,11 +2,11 @@
 name: repeals
 description: "Use when reasoning about repeals as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/repeals"
-coordinate: "vocabulary/repeals · 2/share · 399c0047"
-contentUuid: "db40ac28-0469-58c9-81f9-0dbe6ec85a62"
-diamondUuid: "7621795b-f415-82a8-abdb-e141f912ba4d"
-uuid: "399c0047-8ea9-8999-90ef-71f2abddd292"
-horo: 2
+coordinate: "vocabulary/repeals · 1/base · 9684271f"
+contentUuid: "f5106b5f-fe96-5c62-ba51-ca152bc71e3e"
+diamondUuid: "12c8a06d-2c0e-8ab2-bf62-2060e765c49d"
+uuid: "9684271f-2102-8e3d-96a4-fdb48b2b3fec"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e9db86d0-6325-8457-a4b2-6caf2875cf93"
+  computationUuid: "d6f74221-4979-861a-a598-c83d105b2f12"
   stages:
     - stage: path
       stageUuid: "09d989d8-b401-8f6d-8eb3-ee0e24b60fc9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "05700643-2f18-8685-bf49-90074fbf0524"
     - stage: horo
-      stageUuid: "c761211f-6929-8d7d-8067-ec35035de88f"
+      stageUuid: "54e8f991-a847-86f3-b6bb-924598bacac9"
     - stage: seal
       stageUuid: "bfe1883b-2532-83fc-93ef-f88e5dd0f00e"
     - stage: uuid
-      stageUuid: "5ebc0d29-5204-860f-9131-b234311cc894"
+      stageUuid: "8b3bbe31-c6ff-850d-9874-b768d0dbe7d3"
 version: 2
 ---
 # repeals

@@ -2,11 +2,11 @@
 name: beauty
 description: "Use when reasoning about beauty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/beauty"
-coordinate: "vocabulary/beauty · 7/descent · 0428085a"
-contentUuid: "9254e42b-242d-5fc9-b631-fb97cea6e59d"
-diamondUuid: "f523062e-023a-8d43-9520-b52b9a008d53"
-uuid: "0428085a-348f-8e90-a870-c6d6604e48a5"
-horo: 7
+coordinate: "vocabulary/beauty · 2/share · d7f58fe8"
+contentUuid: "ecfcc39f-7e82-5c40-ace8-d4726dde4547"
+diamondUuid: "0c196c8e-8980-8dec-a465-391856d1605e"
+uuid: "d7f58fe8-1f45-83e1-b6ed-e0670f360ca3"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2c0c10ad-34f7-8f42-9533-4fbbda2831a5"
+  computationUuid: "efea4612-fe96-8dd1-af3c-3035f377548f"
   stages:
     - stage: path
       stageUuid: "f384bf69-091b-8035-b15d-421be0a03111"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "383c0baa-ea3e-8b00-8269-aa13f924a4c3"
     - stage: horo
-      stageUuid: "9b01b051-191b-831a-9eb8-247b0d5d89ef"
+      stageUuid: "fc7b35b7-40c2-8969-93a0-b18998377565"
     - stage: seal
       stageUuid: "122f9b49-0c3d-8fd9-8ce6-5eb56af083b4"
     - stage: uuid
-      stageUuid: "1b29e3b1-3539-861e-a10a-0a0b2416fa1c"
+      stageUuid: "a15125e4-8002-8a80-a34a-2a10f29bb58d"
 version: 2
 ---
 # beauty

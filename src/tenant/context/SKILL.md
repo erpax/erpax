@@ -2,10 +2,10 @@
 name: context
 description: Use when reasoning about tenant request context — the tenant carried through a request.
 atomPath: "tenant/context"
-coordinate: "tenant/context · 1/base · 736e7c7f"
-contentUuid: "48d1e514-244e-5f25-8f33-c7eb389301b4"
-diamondUuid: "6d2e477a-6ab6-87ad-a1d2-03106463d48a"
-uuid: "736e7c7f-30c0-8a25-87cd-312881c2428b"
+coordinate: "tenant/context · 1/base · 8e754097"
+contentUuid: "9711945d-fd4d-5804-adb6-5f5422833883"
+diamondUuid: "f48866c6-7c46-8a2d-8446-8367957de37f"
+uuid: "8e754097-7844-8a72-ac18-beaa7ed9191c"
 horo: 1
 typography:
   partition: tenant
@@ -21,7 +21,7 @@ standards:
   - "US-GAAP ASC-205 presentation-of-financial-statements"
 bindings: []
 signatures:
-  computationUuid: "9b7d7697-2351-8fb9-8326-14115056203d"
+  computationUuid: "9be152d5-d741-8afb-984c-be622a4e06d6"
   stages:
     - stage: path
       stageUuid: "c75870af-8929-8093-84c0-41b6e48c3cf1"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "c2ef65ad-b20a-87d5-abfc-8b0472f87a23"
     - stage: horo
-      stageUuid: "934c6ce5-2b6c-8bae-a5c4-5608c77d3053"
+      stageUuid: "270cb5cd-40bd-89bc-a374-a49022273928"
     - stage: seal
       stageUuid: "e097dfef-70f2-8586-be48-d4e0b75b47a2"
     - stage: uuid
-      stageUuid: "9b92df72-13e7-8f90-a7a5-f350c14feaef"
+      stageUuid: "f5ecdd97-dfc7-836f-a7f1-f3fd362ce1ee"
 version: 2
 ---
 # tenant/context

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "uuid",
-    "uuid": "1421c819-e13b-84d2-8545-65c550cb8b3d",
+    "uuid": "6be5e1f5-1383-8f0e-bc40-078d08b9b436",
     "words": [
       "uuid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an LLM completion must become a verifiable address — the exhale of the breath, where a turn is content-addressed into a v8 query-uuid (deterministic, tamper-evident, attestable from the preimage); the LLM forges and the uuid it cannot invert verifies.",
-    "uuid": "fe6efe42-54ed-86bb-a89d-377992e326c0",
+    "uuid": "aec7ac83-be0f-8cd1-8cd2-bda3587b01e4",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: samples
 description: "Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection."
 atomPath: "internal/controls/control/tests/audit/samples"
-coordinate: "internal/controls/control/tests/audit/samples · 1/base · da5810b1"
-contentUuid: "f1428f2a-ba06-569f-bc23-5fe23bf0877d"
-diamondUuid: "54737b08-5e03-884f-8a2f-faf6e665f538"
-uuid: "da5810b1-e36c-86af-b32a-48c184881f2e"
-horo: 1
+coordinate: "internal/controls/control/tests/audit/samples · 7/descent · 82083726"
+contentUuid: "1ab4bb62-7650-55a8-a41e-786ecf56928b"
+diamondUuid: "0e747872-5717-8a19-bb81-11e64a8eef37"
+uuid: "82083726-3dbd-8901-8031-a09aefd73b9d"
+horo: 7
 typography:
   partition: internal
   bondDegree: 6
@@ -15,7 +15,7 @@ standards:
   - "ISA-530 audit-sampling"
 bindings: []
 signatures:
-  computationUuid: "5b75f5e9-603c-8345-978a-a091645473bc"
+  computationUuid: "362b90fb-b30f-8243-b68a-8b2798921cc2"
   stages:
     - stage: path
       stageUuid: "7fe16e09-6749-898c-9f28-36d98497c640"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "9a9bfa8d-19f0-83f2-844a-e2c433f26a39"
     - stage: horo
-      stageUuid: "38628de9-e075-8ad8-a34a-ec18183b682b"
+      stageUuid: "4ccec3a8-9d7b-8703-9cdb-4d03218f66e3"
     - stage: seal
       stageUuid: "53659ce3-9718-8019-a8fc-9686be6ff4b6"
     - stage: uuid
-      stageUuid: "34ab03c3-b5e3-870a-bb8e-3d8e682f0c3c"
+      stageUuid: "4591db4e-6869-8b55-bdfc-225d63bda145"
 version: 2
 ---
 # audit-samples

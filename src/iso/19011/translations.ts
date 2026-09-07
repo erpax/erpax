@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing ISO 19011 — Guidelines for auditing management systems.",
-    "uuid": "b71bd9c3-f2f6-8bb4-837d-87764e637692",
+    "uuid": "439c5f9e-aa34-8027-88da-dd481528ba3b",
     "words": [
       "use",
       "when",

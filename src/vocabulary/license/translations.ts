@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "license",
-    "uuid": "f15e37f8-3855-8341-8e8c-17207c194efb",
+    "uuid": "eab3323d-d5ac-8e2b-bbf9-04270692e126",
     "words": [
       "license"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination.",
-    "uuid": "9a903546-9523-885e-8e9a-5159499bbaa7",
+    "uuid": "ba8d7565-8d84-823f-b2eb-63e91a42f961",
     "words": [
       "use",
       "when",

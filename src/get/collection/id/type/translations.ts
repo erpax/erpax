@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "type",
-    "uuid": "aa8088b5-c714-87ed-a8f0-6bbc1c110ce4",
+    "uuid": "7086552e-44ba-89d0-8d8e-12ad93a16b3b",
     "words": [
       "type"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about type — A Payload id is a number in Postgres and a string in Mongo, and a collection may override the database-wide default with .",
-    "uuid": "ca866f53-1a64-895b-94c3-e2209a57a8ff",
+    "uuid": "2c2a95fd-d0bf-84e0-9c2c-2cfb28a4360b",
     "words": [
       "use",
       "when",

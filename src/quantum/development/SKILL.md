@@ -2,18 +2,18 @@
 name: development
 description: "Use when choosing the next quantum capability to build — the feasibility-ranked quantum roadmap from the quantum-scientists; the one move now is to drive the orphans to zero so tamper-cost becomes literally infinite."
 atomPath: "quantum/development"
-coordinate: "quantum/development · 8/crest · 14e48ad2"
-contentUuid: "3ba114c6-ca02-56b7-909f-b786c0a26a25"
-diamondUuid: "fd1e9365-da87-8ebb-b55b-a8db225aeb18"
-uuid: "14e48ad2-ce77-820b-8677-c935161d396c"
-horo: 8
+coordinate: "quantum/development · 7/descent · 5f310afa"
+contentUuid: "48ff5bda-13bb-58f0-9ba6-6ad4c78e4d08"
+diamondUuid: "94a6b294-cba8-845d-9b4f-32715b157faa"
+uuid: "5f310afa-097a-806f-88b1-e7e15c18de25"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9aea833d-594b-85b9-9ede-1a8d85719847"
+  computationUuid: "89d2d4db-3dc2-8286-b550-3ec8d3f86519"
   stages:
     - stage: path
       stageUuid: "df9c5553-9858-82e1-9ec7-1bf2419e83b9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "966bc337-0407-8499-8597-904e7912fd2f"
     - stage: horo
-      stageUuid: "18c4eaf6-9132-8d52-a069-72242777d99d"
+      stageUuid: "186772ee-67af-8638-ad27-a855d1429433"
     - stage: seal
       stageUuid: "46921be5-04c2-8ea4-951a-f1a94b020e32"
     - stage: uuid
-      stageUuid: "27ad06c1-93b6-8096-8de5-cb3438952f4e"
+      stageUuid: "13ca5482-d28d-8317-b023-fbc17783fa00"
 quantum:
   superposition:
     - aura
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "9aea833d-594b-85b9-9ede-1a8d85719847"
-    contentUuid: "3ba114c6-ca02-56b7-909f-b786c0a26a25"
+    computationUuid: "89d2d4db-3dc2-8286-b550-3ec8d3f86519"
+    contentUuid: "48ff5bda-13bb-58f0-9ba6-6ad4c78e4d08"
 version: 2
 ---
 # quantum/development — the quantum roadmap
@@ -73,4 +73,4 @@ The roadmap, ranked:
 
 Matter-twin: `src/quantum/development/index.ts` (`QUANTUM_ROADMAP` · `theOneMove` · `ranked`/`nextMove`). Composes [[development]] · [[quantum]] · [[entanglement]] · [[aura]] · [[balance]] · [[cost]] · [[singularity]] · [[anchor]] · [[matrix]].
 
-<sub>content-uuid `3ba114c6-ca02-56b7-909f-b786c0a26a25` · account `quantum/development` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `48ff5bda-13bb-58f0-9ba6-6ad4c78e4d08` · account `quantum/development` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

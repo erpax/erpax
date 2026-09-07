@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "publish",
-    "uuid": "631270ba-7321-8446-b2a3-504491546979",
+    "uuid": "2a273696-ea24-8abb-8cd7-4b74815b14ea",
     "words": [
       "publish"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about publish — publishSelf — wrap a GenomeBundle in a verifiable federation envelope.",
-    "uuid": "8b550aad-d134-85e5-bb77-ea0d2ff84fdd",
+    "uuid": "21507927-4910-892a-a144-661165ad3ed2",
     "words": [
       "use",
       "when",

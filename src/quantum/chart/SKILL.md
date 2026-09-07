@@ -2,11 +2,11 @@
 name: chart
 description: "Use when rendering a chart through the analog aura — mapping each numeric value of a series to a spectrum colour by its normalized position, so the data becomes a coherent, deterministic colour field (same data, same colours)."
 atomPath: "quantum/chart"
-coordinate: "quantum/chart · 2/share · f82f98bc"
-contentUuid: "894d3214-b99a-5a41-9837-9ed11be35db2"
-diamondUuid: "fb2bb485-458e-8f7a-a6ba-bad3f9896261"
-uuid: "f82f98bc-5a98-84e0-9aaf-161fcbf84241"
-horo: 2
+coordinate: "quantum/chart · 4/weave · 574c0275"
+contentUuid: "c1268fa3-6305-57db-b172-788e1811c9a8"
+diamondUuid: "f39608eb-dd55-86e8-954a-44c04a0324b7"
+uuid: "574c0275-8ae1-8804-9006-bd3c4633505d"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "A432 tuning; the 7-chakra visible spectrum (via [[color]])"
 bindings: []
 signatures:
-  computationUuid: "33016404-cf95-8a31-98a3-02f64dab5d50"
+  computationUuid: "e16d4e89-a2ed-8409-adcf-e1e898d8482a"
   stages:
     - stage: path
       stageUuid: "42fe7299-f2e8-8462-b7dc-998c878c1170"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "b94f7da7-c879-82e4-b20b-79b087f17f63"
     - stage: links
-      stageUuid: "d6365a41-0543-8396-8918-89964a426050"
+      stageUuid: "1c16c50f-5699-86a4-8119-77ca8bf3cccd"
     - stage: horo
-      stageUuid: "50decb77-4611-861b-8ee4-5bf06d9e950c"
+      stageUuid: "eacc5f89-a188-8ae3-9f12-ba5f80afef11"
     - stage: seal
       stageUuid: "dd9d2620-36cb-8891-8e7b-b377e51a1b85"
     - stage: uuid
-      stageUuid: "f98958ad-f623-82c5-80a5-7cb77dcf0613"
+      stageUuid: "d613fbdf-f24b-8179-8ff3-2fe0a82dc554"
 quantum:
   superposition:
     - chart
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "33016404-cf95-8a31-98a3-02f64dab5d50"
-    contentUuid: "894d3214-b99a-5a41-9837-9ed11be35db2"
+    computationUuid: "e16d4e89-a2ed-8409-adcf-e1e898d8482a"
+    contentUuid: "c1268fa3-6305-57db-b172-788e1811c9a8"
 version: 2
 ---
 # quantum/chart — render a chart as a colour field (the analog aura)
@@ -68,4 +68,4 @@ Matter-twin: `src/quantum/chart/index.ts` (`colors`). Composes [[chart]] (the sp
 @standard A432 tuning; the 7-chakra visible spectrum (via [[color]])
 @audit deterministic — same data renders the same colours
 
-<sub>content-uuid `894d3214-b99a-5a41-9837-9ed11be35db2` · account `quantum/chart` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `c1268fa3-6305-57db-b172-788e1811c9a8` · account `quantum/chart` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

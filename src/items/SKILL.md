@@ -2,11 +2,11 @@
 name: items
 description: "Use when managing the product/service catalogue — code, SKU, GTIN barcode, pricing, VAT rate, inventory quantity, GL posting; EN-16931 BG-31 item-information, UNSPSC classification. The items collection."
 atomPath: items
-coordinate: "items · 4/weave · d828e06f"
-contentUuid: "594c9311-e875-5f01-859b-fced8f0c7c2d"
-diamondUuid: "78ece654-7c77-8d32-8d16-f0de65e856ca"
-uuid: "d828e06f-139f-8587-9e3b-17436aba0c82"
-horo: 4
+coordinate: "items · 8/crest · d5a5fb79"
+contentUuid: "cac82958-1156-507a-b2b9-42d067e8acde"
+diamondUuid: "9aec5a56-1f70-803c-a0f2-5ad8fe85e17f"
+uuid: "d5a5fb79-5300-8f02-b2fe-7efbf80f165b"
+horo: 8
 typography:
   partition: items
   bondDegree: 116
@@ -34,7 +34,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d09dbbe9-d783-8233-9bc4-4ff41259adbd"
+  computationUuid: "b058a6d7-2667-8925-bbd5-fb774a90b2d9"
   stages:
     - stage: path
       stageUuid: "966285a0-056b-8fe0-94b4-9ced326c71b1"
@@ -45,11 +45,11 @@ signatures:
     - stage: links
       stageUuid: "31c384c8-dc3b-8450-828d-f1e9bbe391aa"
     - stage: horo
-      stageUuid: "bf5613ff-e8da-8d96-b2e0-36f471a2e711"
+      stageUuid: "a18b2d8e-a2bb-8b5e-bf75-c86ba90d0334"
     - stage: seal
       stageUuid: "c34453bf-ba64-8732-9b91-e44427d4dba1"
     - stage: uuid
-      stageUuid: "cbdcaa9f-0bcc-81c7-b558-9696bb292746"
+      stageUuid: "301d9542-326a-8530-887d-5f60bda5db86"
 version: 2
 ---
 # items

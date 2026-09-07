@@ -2,11 +2,11 @@
 name: copay
 description: "Use when reasoning about copay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/copay"
-coordinate: "vocabulary/copay · 4/weave · 293106ae"
-contentUuid: "7b0e0b2c-c860-5758-8dee-4f133f7ab7b7"
-diamondUuid: "d38d2767-6207-810b-a104-c58fa3e79d3e"
-uuid: "293106ae-ae2d-8ce6-b436-eef1715198a6"
-horo: 4
+coordinate: "vocabulary/copay · 2/share · ad270390"
+contentUuid: "11929021-d56c-5ef5-a0f3-8314f3cb5127"
+diamondUuid: "fc36278d-9f00-8a69-9a37-8dc132df844d"
+uuid: "ad270390-d7bc-8b4d-a27a-57e810e97ea9"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6d7307b5-b004-86b8-8451-ccefa72b28be"
+  computationUuid: "2b0aff8c-abf8-8cb2-aa73-dda7d7de4537"
   stages:
     - stage: path
       stageUuid: "dcb4936c-2526-88c7-b954-0b787db4c578"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e4aa79cc-3b97-80a5-9999-926cb292411f"
     - stage: horo
-      stageUuid: "04ac5af7-0cb7-8ffa-af7a-9bc19dc9e932"
+      stageUuid: "32778c8c-2d0c-84b3-9ca5-11db4b9bd19a"
     - stage: seal
       stageUuid: "c9339f5b-b3e9-8705-80b5-6f2743329ae1"
     - stage: uuid
-      stageUuid: "684e4a9f-9be5-82c1-8060-51c24efc3770"
+      stageUuid: "7292ac08-1979-8d78-9872-a88390b8b0c9"
 version: 2
 ---
 # copay

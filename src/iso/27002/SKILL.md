@@ -2,11 +2,11 @@
 name: "27002"
 description: Use when implementing or referencing ISO 27002 — Information security controls.
 atomPath: "iso/27002"
-coordinate: "iso/27002 · 8/crest · 78a2628d"
-contentUuid: "15885e59-160b-5bb2-bea4-98ad9b2c100e"
-diamondUuid: "e0152952-c201-8e44-bbca-42bf87fac569"
-uuid: "78a2628d-072e-84f2-b63e-93ec4d510fa9"
-horo: 8
+coordinate: "iso/27002 · 2/share · d9592f7a"
+contentUuid: "5b07b901-ba17-5e1d-88bd-5b7323c69eaa"
+diamondUuid: "500cc9a5-6e46-84a0-937c-3e4a8d37ca47"
+uuid: "d9592f7a-7340-875c-9aa9-ead4688bd690"
+horo: 2
 typography:
   partition: iso
   bondDegree: 6
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3a8e0a9c-a312-83e8-b893-e90bdce6feb7"
+  computationUuid: "23c5044f-64ce-83eb-9ea3-7c21f24e0fd8"
   stages:
     - stage: path
       stageUuid: "c75f7176-6bcb-807e-90c5-e2348d487758"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "789c778f-a1eb-8e5f-9fa9-163378ce228f"
     - stage: horo
-      stageUuid: "8529414b-7e35-8c6c-a5f8-84a420e53b30"
+      stageUuid: "cd97ba6e-5e1d-806c-a55e-2ea9d60cdc6f"
     - stage: seal
       stageUuid: "078ca16b-83d4-8278-a827-79dea5518265"
     - stage: uuid
-      stageUuid: "569b4437-b8cc-8dc9-b4b8-61d3d1c8df04"
+      stageUuid: "198def63-1524-81d1-b50a-a8d064c2cded"
 version: 2
 ---
 # ISO 27002 — Information security controls

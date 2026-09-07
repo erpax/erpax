@@ -2,11 +2,11 @@
 name: disjoint
 description: "Use when reasoning about disjoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/disjoint"
-coordinate: "vocabulary/disjoint · 5/round · a9f5d1fb"
-contentUuid: "9d1ba6e0-e893-556b-ae4a-b0f832d1b338"
-diamondUuid: "0763d1e0-b266-86ae-b94e-b751bcd06a7b"
-uuid: "a9f5d1fb-47c1-888a-8293-d933f7c6b3a0"
-horo: 5
+coordinate: "vocabulary/disjoint · 2/share · a3e8a679"
+contentUuid: "a53d34cc-f2c6-51f2-8b60-f9f592c63bde"
+diamondUuid: "4a4a1c3e-48b8-8900-8978-4e9bf3448b20"
+uuid: "a3e8a679-b8fa-87ba-a9f8-db176410715e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5955af97-6682-82e2-a2a3-82ad3a6b2bb3"
+  computationUuid: "ae725462-0b93-84c3-bc25-a538aeaf9899"
   stages:
     - stage: path
       stageUuid: "b7b0d9be-eb66-8d2e-9791-d39629296940"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a68f90fc-f2e4-8769-a04e-44cca85e5ada"
     - stage: horo
-      stageUuid: "f6af7f4c-b6ee-8b12-88f5-854c7fe89e3f"
+      stageUuid: "cfcd513b-690b-8751-b5af-3ee81c76280a"
     - stage: seal
       stageUuid: "f20600a6-ee1d-81f3-9b70-195ca06b113a"
     - stage: uuid
-      stageUuid: "89fdf4d5-487d-86aa-a4ea-bc5ce1368e4f"
+      stageUuid: "a5973dce-4df2-8500-924e-1083d4d20445"
 version: 2
 ---
 # disjoint

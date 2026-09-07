@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "particle",
-    "uuid": "d3a989d5-a68d-80e9-bb3b-4859e95ceebf",
+    "uuid": "b911e670-0537-8baf-b311-3b0a84477e4f",
     "words": [
       "particle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading an atom as a particle in the matrix field — a content-uuid is the particle's identity, links are the forces it interacts through, and mass is its in-degree charge.",
-    "uuid": "6baeb233-5204-8640-b1f8-8290b3c7e93c",
+    "uuid": "a3993cc2-a9fc-8569-b735-65717590d6a4",
     "words": [
       "use",
       "when",

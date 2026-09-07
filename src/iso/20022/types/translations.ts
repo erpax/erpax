@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "98486ff9-a951-84e8-8332-7fb01f34acf5",
+    "uuid": "55da726e-ce12-8100-8130-d3208fb9a17b",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return).",
-    "uuid": "e9a0e32e-10ef-8b33-a04b-9c3776a57ba0",
+    "uuid": "46d73f1d-25c8-887d-967d-124dceffcf8a",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: purify
 description: "Use when working with quantum/ftl/purify."
 atomPath: "quantum/ftl/purify"
-coordinate: "quantum/ftl/purify · 7/descent · a0c42596"
-contentUuid: "f84f14ba-1c71-5e54-9d7e-8c98812ab4fa"
-diamondUuid: "fb982bda-59df-849c-91fb-c5de059325e6"
-uuid: "a0c42596-c856-803e-88df-7de5c7bb8a9a"
-horo: 7
+coordinate: "quantum/ftl/purify · 4/weave · 1ffe7164"
+contentUuid: "69ce2c9c-7f0e-529d-ba56-805c1f980097"
+diamondUuid: "ed700ee4-1d2b-8693-a8dc-0718e32b3c4e"
+uuid: "1ffe7164-a197-87ac-b69b-317fe4ce5111"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5cd1225b-7e3d-8e6c-962c-8b1af074644b"
+  computationUuid: "c6169c74-2d81-8980-af43-615ca20e72a8"
   stages:
     - stage: path
       stageUuid: "705527c5-37a7-86a1-83d8-ff9c5ffc78be"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "622ea622-184a-8961-92b2-ee31dac449f5"
     - stage: horo
-      stageUuid: "d705d4f1-b496-87c0-b51e-d79b0a96225e"
+      stageUuid: "1954d476-ed5c-8bc0-a6ad-7997f6d171eb"
     - stage: seal
       stageUuid: "482f30f7-f94c-8ca4-b5b4-b56feda9a67e"
     - stage: uuid
-      stageUuid: "44c12157-21fd-83eb-a228-85d0e15d075a"
+      stageUuid: "f5e0fb91-9162-8077-a400-e19a3160048c"
 quantum:
   superposition:
     - ftl
@@ -45,8 +45,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "5cd1225b-7e3d-8e6c-962c-8b1af074644b"
-    contentUuid: "f84f14ba-1c71-5e54-9d7e-8c98812ab4fa"
+    computationUuid: "c6169c74-2d81-8980-af43-615ca20e72a8"
+    contentUuid: "69ce2c9c-7f0e-529d-ba56-805c1f980097"
 version: 2
 ---
 # purify
@@ -55,4 +55,4 @@ version: 2
 
 Matter-twin: `index.ts`.
 
-<sub>content-uuid `f84f14ba-1c71-5e54-9d7e-8c98812ab4fa` · account `quantum/ftl/purify` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `69ce2c9c-7f0e-529d-ba56-805c1f980097` · account `quantum/ftl/purify` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

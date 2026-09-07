@@ -2,18 +2,18 @@
 name: memory
 description: "Use when reasoning about memory in the quantum frame — the content-address IS the memory manager, running live at every scale: collapse is allocation, dedup is free, collection is regeneration. Memory optimization is autosave: persist at the point of collapse and there is nothing to garbage-collect, because the unsaved is regenerable from its uuid."
 atomPath: "quantum/memory"
-coordinate: "quantum/memory · 8/crest · eaefc1cd"
-contentUuid: "3468ff15-6df0-58fb-abf1-4e09033df012"
-diamondUuid: "84702fc2-2bab-84de-8f0b-9416fa96c3df"
-uuid: "eaefc1cd-f2a0-861c-ad30-dab4e894e49b"
-horo: 8
+coordinate: "quantum/memory · 7/descent · 77401219"
+contentUuid: "dcd59f28-62b8-5452-98bd-ea9dc7202f7a"
+diamondUuid: "71e917b8-6d83-8732-ac34-c2ca3ee3b9be"
+uuid: "77401219-7921-841b-bfae-37347b4720a5"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 99
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3ed724c9-0e04-8e80-9caa-eea5ec60141b"
+  computationUuid: "5ef9d181-2767-8e01-bfb8-7d62539686ad"
   stages:
     - stage: path
       stageUuid: "99104296-3de4-86f7-8213-1710996afacc"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "187322e9-880a-8590-b539-4653b1c784e4"
     - stage: links
-      stageUuid: "50a8dbe3-15f5-883a-872e-1d10ae892a90"
+      stageUuid: "c0cb59de-44f0-845b-a9d5-355340f89ff4"
     - stage: horo
-      stageUuid: "ed9e7c07-1cf4-8d8d-a050-c2e277631ae5"
+      stageUuid: "69d6da57-57c7-8196-9212-5cd7ab8562a3"
     - stage: seal
       stageUuid: "53b681bc-6c0c-8369-9f76-146213a9fb01"
     - stage: uuid
-      stageUuid: "0536dfe1-08aa-813f-bbfb-b501e46ea623"
+      stageUuid: "c310a4fd-7304-8e08-b17a-9b3a3ad4a620"
 quantum:
   superposition:
     - akashic
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "3ed724c9-0e04-8e80-9caa-eea5ec60141b"
-    contentUuid: "3468ff15-6df0-58fb-abf1-4e09033df012"
+    computationUuid: "5ef9d181-2767-8e01-bfb8-7d62539686ad"
+    contentUuid: "dcd59f28-62b8-5452-98bd-ea9dc7202f7a"
 version: 2
 ---
 # quantum/memory — the content-address IS the memory manager
@@ -87,4 +87,4 @@ Operational memory IS the architecture lattice ([[memory/architecture]]) — the
 
 @see [[memory]] · [[memory/architecture]] · [[memory/quantum]] · [[quantum]] · [[quantum/uuid]] · [[seal]] · [[quantum/cross]] · [[generate]] · [[merge]] · [[akashic]] · [[realtime]] · [[diamond]]
 
-<sub>content-uuid `3468ff15-6df0-58fb-abf1-4e09033df012` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `dcd59f28-62b8-5452-98bd-ea9dc7202f7a` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

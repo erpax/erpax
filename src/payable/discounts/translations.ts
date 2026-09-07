@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "discounts",
-    "uuid": "29e8513a-3d15-85aa-94e7-2c3d1d1062a8",
+    "uuid": "2ebcf214-bb41-8a3e-9ddd-3eb7e6861287",
     "words": [
       "discounts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about discounts — \\\"2/10 Net 30\\\" — 2% off if paid within 10 days, otherwise the full balance at 30.",
-    "uuid": "3a50ad6f-208b-806a-8db6-af59d096ba5a",
+    "uuid": "76c66da6-48fb-862c-802e-8df2927394b0",
     "words": [
       "use",
       "when",

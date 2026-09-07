@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unavoidable",
-    "uuid": "52bb36ea-ee4d-83e1-bd02-ac53c6ffb6b5",
+    "uuid": "0fec1fe6-aa03-86a6-bcbe-42d1d2c1d76d",
     "words": [
       "unavoidable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor.",
-    "uuid": "6e12ba3e-440c-8b3c-a4b7-acf2b462d959",
+    "uuid": "0f8635c9-af11-8649-a153-572b0693079d",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: hosp
 description: "Use when reasoning about hosp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hosp"
-coordinate: "vocabulary/hosp · 2/share · 634e4b78"
-contentUuid: "54019761-7050-5ada-bdfc-75a1a30940ef"
-diamondUuid: "a487fb96-718f-8149-9e2e-28df21b21d66"
-uuid: "634e4b78-7ba2-8192-a01d-f7a29e8ccaf5"
-horo: 2
+coordinate: "vocabulary/hosp · 4/weave · ccec9dcf"
+contentUuid: "01f4939a-098d-5ccd-8010-92e0407999b1"
+diamondUuid: "dda8d584-1cb1-8267-889b-8edefbe8bef5"
+uuid: "ccec9dcf-7bee-83d6-983a-fef699d85540"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "64346b3d-d78b-8b06-9808-e37eb3336c80"
+  computationUuid: "2d38849e-8d85-82c5-970e-5db87c04e56c"
   stages:
     - stage: path
       stageUuid: "1f0504bf-512b-8527-84b2-628787bcf22c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "189d469b-2745-854c-b902-bd2f5dae37cb"
     - stage: horo
-      stageUuid: "94419c47-2435-8d58-bb1b-20130a79358a"
+      stageUuid: "fa23ceca-e68c-83e1-8cef-a039cf3a045a"
     - stage: seal
       stageUuid: "facab856-7af6-8f62-9bfa-45306ab53fad"
     - stage: uuid
-      stageUuid: "75c04957-9d03-8589-93b0-dbe27a8a9db5"
+      stageUuid: "deebb7bb-26f4-873e-b973-1fd4bc94e515"
 version: 2
 ---
 # hosp

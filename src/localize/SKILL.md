@@ -2,11 +2,11 @@
 name: localize
 description: "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts."
 atomPath: localize
-coordinate: "localize · 5/round · 8ecd81a6"
-contentUuid: "3eb07b2c-2cbe-55b7-8f4f-6cc8abc1fc49"
-diamondUuid: "96855853-64c4-8a15-8d3a-edced5ec8fde"
-uuid: "8ecd81a6-7218-811c-9bb0-c5654afbef9b"
-horo: 5
+coordinate: "localize · 4/weave · 88f6a3f4"
+contentUuid: "c58756a7-2006-52b5-a9c4-924bd1a5b2d9"
+diamondUuid: "1494d5a2-c33a-868e-9842-37b53019c1e0"
+uuid: "88f6a3f4-773d-89ac-9156-6ba37eeeeeed"
+horo: 4
 typography:
   partition: localize
   bondDegree: 115
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "8a885570-6d93-8e65-8c97-f935f1ed9555"
+  computationUuid: "6453b725-482b-812d-a51f-7387d39238df"
   stages:
     - stage: path
       stageUuid: "2a33b115-eb41-89e9-a3b7-4aeb5c1c1125"
@@ -41,13 +41,13 @@ signatures:
     - stage: boundary
       stageUuid: "dca1443a-03bf-8595-b4d8-da85cc42b9e9"
     - stage: links
-      stageUuid: "96f4fa51-5545-84ac-8215-827873ba297f"
+      stageUuid: "7282828b-8b76-8baa-9ccd-2fceddc45b82"
     - stage: horo
-      stageUuid: "8aeb9035-3e83-814b-a49d-212b8d426b3c"
+      stageUuid: "538a870f-8124-806a-9d61-fa8d89d0f121"
     - stage: seal
       stageUuid: "ab167e4a-044f-8271-bb4c-9d9cd41c765b"
     - stage: uuid
-      stageUuid: "7ee4a77b-5034-82f6-af46-dc38128694c1"
+      stageUuid: "22a2ee28-ecf9-86ed-8ca3-f1b28a5ced9f"
 version: 2
 ---
 # localize — localization as the tamper-cost ⊕ proof fusion

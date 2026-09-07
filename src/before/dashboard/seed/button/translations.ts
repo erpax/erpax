@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "button",
-    "uuid": "af11d922-eaf1-84fc-991e-5dd12630b5f7",
+    "uuid": "64d16ea3-e0e9-8cd3-b008-d8e58503f410",
     "words": [
       "button"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about button — The button that fills an empty install. Its whole design is the guard around a single irreversible action: seeding writes demo content into a live database, and running it twice…",
-    "uuid": "650fb95f-1de1-8d6c-9a7c-9f15a656c2f4",
+    "uuid": "d3dd3f02-c57e-88ad-a549-8b0a18100bcb",
     "words": [
       "use",
       "when",

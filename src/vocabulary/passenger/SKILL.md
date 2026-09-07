@@ -2,11 +2,11 @@
 name: passenger
 description: "Use when reasoning about passenger as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/passenger"
-coordinate: "vocabulary/passenger · 5/round · b663fd17"
-contentUuid: "a2ea02f3-9fe1-5308-a9b5-cde84ced0f0e"
-diamondUuid: "4507cfcd-bf86-865a-9bfd-d1a337dfa793"
-uuid: "b663fd17-4504-83cf-87cb-7d1be5463abc"
-horo: 5
+coordinate: "vocabulary/passenger · 1/base · 63d5a99d"
+contentUuid: "e072939c-3565-5518-8e8a-35c6a3d5873a"
+diamondUuid: "ac259831-c7e0-821e-97f3-6437d52c6820"
+uuid: "63d5a99d-fc97-8975-8f14-4ad7c8b1d347"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3440b800-cc3f-8d83-a144-1d05ea9e7685"
+  computationUuid: "bb7b2d19-d714-86ef-bf28-2c4cd7d9e4d8"
   stages:
     - stage: path
       stageUuid: "654c82a6-5902-8edf-8ff2-0a8275e76832"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7ac94ff8-9fd8-8638-b279-f3a5c5f72147"
     - stage: horo
-      stageUuid: "4964ee81-5089-8888-8b5d-936784107c74"
+      stageUuid: "e58d2ebd-ce62-874c-b078-f6bf3478e6c8"
     - stage: seal
       stageUuid: "ba6264b3-73ed-8404-a0fd-a052d9b949f0"
     - stage: uuid
-      stageUuid: "c887a84c-2548-8837-ae1a-e27ec2f1d060"
+      stageUuid: "5ae2ada3-514a-873f-9aab-c4b15c8e508d"
 version: 2
 ---
 # passenger

@@ -2,11 +2,11 @@
 name: regeneration
 description: "Use when reasoning about erpax as a living, self-repairing system — the computed proof that it regrows from seed and heals its own wounds. The content-uuid is the genome: every observable (uuid, aura, coordinate, the README proof) is derived from content and never stored, so any derived artefact regenerates byte-identically from the surviving seed. A gap (dead link, untested atom) is a wound; the gate is the immune system; healing is monotone, so the loop converges to gap 0 — wholeness, zero entropy, max tamper-cost."
 atomPath: regeneration
-coordinate: "regeneration · 1/base · edc87ccd"
-contentUuid: "86358442-c37f-5e55-8d12-d45f8e361c5d"
-diamondUuid: "b5d52e2d-40a5-8e25-9508-9209f42c1e67"
-uuid: "edc87ccd-6c6e-8ca0-9fe2-ab2312857517"
-horo: 1
+coordinate: "regeneration · 8/crest · 17651b55"
+contentUuid: "811217c7-0682-5f86-80d8-c277bd1105cd"
+diamondUuid: "a50a885b-3edb-8d85-be28-fd09abce36f7"
+uuid: "17651b55-adf1-8384-a352-6450b01ea405"
+horo: 8
 typography:
   partition: regeneration
   bondDegree: 49
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "81590e6f-fee9-8eaa-b48c-c08298dff30c"
+  computationUuid: "9ab16282-6e05-8113-8a2c-23cdd359dbdb"
   stages:
     - stage: path
       stageUuid: "9663116d-30b9-855f-9152-e9e7a1576c7d"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "14d34a35-8df1-8394-b0bf-36ea463b4117"
     - stage: links
-      stageUuid: "6e3ba53a-837c-81b6-952e-47c5fae10438"
+      stageUuid: "7c9ba6bf-0ed9-87e8-a6f7-50d8afaeffca"
     - stage: horo
-      stageUuid: "60e64624-58bc-8f95-acb3-b77b6787dc1f"
+      stageUuid: "fd6f80da-4b26-8d8f-9ce4-efab8934599e"
     - stage: seal
       stageUuid: "d02d9452-f116-8f2f-9333-5f8977fb0156"
     - stage: uuid
-      stageUuid: "f9d5872f-e477-8baa-a377-d8b7eb3bc437"
+      stageUuid: "272bd36f-2ab5-8d06-8354-4b8ea9357521"
 version: 2
 ---
 # regeneration — erpax regrows from seed and heals its own wounds

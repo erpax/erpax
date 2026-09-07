@@ -2,18 +2,18 @@
 name: shipment
 description: Use when modelling one shipment — the singular model of the shipments collection (the plural store); a consignment of goods moved from origin to destination.
 atomPath: shipment
-coordinate: "shipment · 1/base · c11d4556"
-contentUuid: "1a470ce5-06c2-5c80-9b7a-81df49ac22b8"
-diamondUuid: "777ecf84-013f-899a-8310-67a2f37c901d"
-uuid: "c11d4556-31ed-8337-87d2-1599f2a46a1c"
-horo: 1
+coordinate: "shipment · 2/share · 3e6e7764"
+contentUuid: "3abb00f3-9519-54b3-9365-82b597b5061c"
+diamondUuid: "6a097a85-b31e-876e-a50d-1614ac2c8161"
+uuid: "3e6e7764-465f-81f5-9782-bf183167ebc0"
+horo: 2
 typography:
   partition: shipment
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6b143a75-0920-8f3f-a310-b65b80f9a7af"
+  computationUuid: "a539c92a-cb28-8b69-810b-ccbf3d5ff071"
   stages:
     - stage: path
       stageUuid: "2bcb56d3-97db-891a-ba4a-9d8a2dccf63f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f153b9a2-691d-8f61-9b24-c9147b96fa31"
     - stage: horo
-      stageUuid: "849b504a-c81c-8017-bdcc-cc184afee36c"
+      stageUuid: "20334709-a7bd-8e60-9b7b-e84984ac5651"
     - stage: seal
       stageUuid: "6fc8b80e-221d-8a21-88b4-5a008dee4f93"
     - stage: uuid
-      stageUuid: "1385b73b-ab10-8640-981b-f8c955f2ce67"
+      stageUuid: "4aec8849-fa69-808c-988f-d55694b2904b"
 version: 2
 ---
 # shipment — the model of one [[shipments]] row

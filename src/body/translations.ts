@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "body",
-    "uuid": "b4fe2f2d-167e-83b1-b361-8b8bf28a5d88",
+    "uuid": "829a56ba-68b3-8f2b-a6eb-e40eb388c00b",
     "words": [
       "body"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax as ONE organism — the eight organs harmonized into a body. Each organ is sent through the wave mechanism; its horo position sounds a note and a colour (A432); composed, the organs span the full diatonic spectrum and rest at unity (the closing wave). The body harmonizes ⟺ every organ healthy ⊕ full-spectrum chord ⊕ folds to unity — wholeness renders as harmony, a failing organ as dissonance.",
-    "uuid": "9b94625b-cbe8-89e9-8af5-d4b1eab7c846",
+    "uuid": "174fd226-ad21-842d-be2f-87ab02c7c97a",
     "words": [
       "use",
       "when",

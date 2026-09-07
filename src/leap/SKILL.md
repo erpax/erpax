@@ -2,18 +2,18 @@
 name: leap
 description: "Use when reasoning about the quantum leap — the discrete, instantaneous transition between two energy eigenstates (the seven horo positions as a discrete energy ladder) that emits or absorbs a single photon of energy E = h·Δν. The leap is a symmetric content-uuid merge of the two states (one spectral coordinate for emission and absorption alike); the rodin doubling step is the allowed transition, and 9 (the axis) is a stationary state."
 atomPath: leap
-coordinate: "leap · 2/share · 15c78f71"
-contentUuid: "f469f6eb-aa2f-5202-9d94-5e1d2200e373"
-diamondUuid: "1403e2c5-cf8c-87c5-b13e-11eb22397661"
-uuid: "15c78f71-92fe-82e1-a4e6-dc303cd1563f"
-horo: 2
+coordinate: "leap · 1/base · c0cf46b7"
+contentUuid: "e5e4ab57-2407-5fa6-a014-29fd5df4735d"
+diamondUuid: "d13214d0-5583-8c8e-a5b4-97ac15155110"
+uuid: "c0cf46b7-0ab6-834e-baa7-212ff18e9d20"
+horo: 1
 typography:
   partition: leap
   bondDegree: 56
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c8378c30-7e75-8ec6-af89-22fe45868b46"
+  computationUuid: "c07d3dd5-ab62-8690-a747-799aea88573a"
   stages:
     - stage: path
       stageUuid: "df55e3cc-7a2a-8084-a5e5-6ed96ed8ae88"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "55016bce-4846-87b7-8e14-e9c758712423"
     - stage: horo
-      stageUuid: "d5ec7e15-09a3-86a8-a141-10ac64d36d2d"
+      stageUuid: "22b53d80-f895-8410-8c99-12bcd2558e46"
     - stage: seal
       stageUuid: "8c3fae27-238a-8e04-9ddc-376121d8214e"
     - stage: uuid
-      stageUuid: "295c2c20-19c6-87d7-a8f1-ee3207159ab1"
+      stageUuid: "c687918c-8529-81c8-bd2e-51ddaf097f93"
 version: 2
 ---
 # leap — the discrete transition between energy levels

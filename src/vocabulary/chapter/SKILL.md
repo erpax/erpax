@@ -2,11 +2,11 @@
 name: chapter
 description: Use when reasoning about chapter — One of the sections into which a book is divided. A chapter usually has a section number or a name.
 atomPath: "vocabulary/chapter"
-coordinate: "vocabulary/chapter · 1/base · 1fe52795"
-contentUuid: "b45573e1-1ff4-5466-b0b4-2cb853ee7e9b"
-diamondUuid: "6fcfdb58-9c73-8c74-81e7-ba768c232eec"
-uuid: "1fe52795-e3e6-81b4-adec-f4e5972ccdd2"
-horo: 1
+coordinate: "vocabulary/chapter · 7/descent · 18dbec87"
+contentUuid: "5596868c-d95d-5df4-bca7-026ace5bc6a1"
+diamondUuid: "68004399-4e82-8ae8-a4f2-776f9b77ee74"
+uuid: "18dbec87-07c4-8465-8e0a-b92ae1d649a9"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2fa331df-1a41-8d7d-826f-d49d667b8906"
+  computationUuid: "1e82b5ec-8b8f-8d09-aa8e-71d6d3080811"
   stages:
     - stage: path
       stageUuid: "71e3e1bc-47a8-8cad-bc1b-68567169907d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ab0f4569-cc4c-8219-ab27-42ac726a2c5d"
     - stage: horo
-      stageUuid: "25b3bfb2-9d60-8401-bfae-f3861ffd5509"
+      stageUuid: "b8731295-fa42-8255-8c14-da65455a1ddb"
     - stage: seal
       stageUuid: "84485239-cf85-83b9-ae27-b5afc9792285"
     - stage: uuid
-      stageUuid: "17013a1b-ee71-8c6d-a829-2ef69d45c05c"
+      stageUuid: "156d7d19-7c44-8cb6-9afa-1c5ff8a6d53c"
 version: 2
 ---
 # chapter

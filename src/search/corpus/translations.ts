@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "corpus",
-    "uuid": "23371369-b035-8810-99b4-213461aa0a73",
+    "uuid": "8df35bdb-1bea-8cf7-ae69-420ddcfbd229",
     "words": [
       "corpus"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about corpus — search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in.",
-    "uuid": "33ec84bb-4f47-82cc-a860-5dcc29ff3a88",
+    "uuid": "43fcbf84-5f81-8d53-9478-4d4c7a82da01",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: pathology
 description: "Use when reasoning about pathology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pathology"
-coordinate: "vocabulary/pathology · 5/round · 456343f0"
-contentUuid: "94c5a68c-8eab-5d56-8bdc-26be284d2656"
-diamondUuid: "9d35e099-5710-8093-8476-c8d0dfcd9a64"
-uuid: "456343f0-366e-8cde-9cad-d39b4835d70f"
+coordinate: "vocabulary/pathology · 5/round · 724159d2"
+contentUuid: "32e7ed52-f420-59b2-9484-40f7354003c1"
+diamondUuid: "0c54fde0-35f7-8998-b4da-820fdcee4f15"
+uuid: "724159d2-0403-847d-944c-80a2c79e4ba5"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "50a8fb25-fb71-8f05-9ab3-427fcb18c99e"
+  computationUuid: "8b69fca0-97bb-80e0-bcf4-f9cd8df12a41"
   stages:
     - stage: path
       stageUuid: "f68e2da5-971f-84e1-985e-cc9a97a7c7d0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1cc98bf5-dca8-8169-a2a2-dd7c36511107"
     - stage: horo
-      stageUuid: "1246c3de-9e5b-8832-92b6-74d1b507f4ab"
+      stageUuid: "63842f14-2d2c-8015-8cdf-3b6075a8b889"
     - stage: seal
       stageUuid: "e11315a3-610e-82a1-9965-b223604213db"
     - stage: uuid
-      stageUuid: "089c22d8-9940-81dc-b4de-cc37e0118c3b"
+      stageUuid: "b56a2048-ccd3-8c31-bcca-dad498a57967"
 version: 2
 ---
 # pathology

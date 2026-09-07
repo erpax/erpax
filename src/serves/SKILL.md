@@ -2,11 +2,11 @@
 name: serves
 description: "Use when reasoning about serves as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: serves
-coordinate: "serves · 1/base · 039c76e8"
-contentUuid: "fcd597a1-d99f-56e3-aba2-a8886ec7bdd4"
-diamondUuid: "fc2f7d55-5884-85ef-9e8a-fc82aa16e37c"
-uuid: "039c76e8-5a8a-89e8-a13d-d399ef46a2d5"
-horo: 1
+coordinate: "serves · 7/descent · 05c0d328"
+contentUuid: "8a593f34-6b09-5d97-bd7d-537a9e9b6f89"
+diamondUuid: "9d02684d-9ec3-8d6c-be2a-369979629fd2"
+uuid: "05c0d328-490b-8729-aa89-b792f8bd1388"
+horo: 7
 typography:
   partition: serves
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "51cb93f9-8e61-8e78-bef7-27984a17c017"
+  computationUuid: "3de15760-acf1-8b7b-995d-ef8799e5159e"
   stages:
     - stage: path
       stageUuid: "1c2a1c62-e717-8803-a7cc-855ef86bcc65"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0be15cf3-3cec-85f4-a5f0-3086388a8634"
     - stage: horo
-      stageUuid: "da728ce7-f6fa-8d1f-9429-4088b6ad4bdf"
+      stageUuid: "ef16d133-5a53-84e6-90f9-62698ba17863"
     - stage: seal
       stageUuid: "074a5b8a-eb50-8c76-8187-c1bdeadf20b1"
     - stage: uuid
-      stageUuid: "3c1cf49b-1eda-809a-b424-945b7502fe12"
+      stageUuid: "0aa9745e-0b67-848e-889a-19f07af884b5"
 version: 2
 ---
 # serves

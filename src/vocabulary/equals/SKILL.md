@@ -2,11 +2,11 @@
 name: equals
 description: "Use when reasoning about equals as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/equals"
-coordinate: "vocabulary/equals · 7/descent · a4e2eee6"
-contentUuid: "cf7faffb-ac7d-5640-ab62-834b7a169708"
-diamondUuid: "183484f3-79a3-8c18-ab38-521134b8f28c"
-uuid: "a4e2eee6-be88-86c8-911a-00568e4e60a3"
-horo: 7
+coordinate: "vocabulary/equals · 1/base · 512ca288"
+contentUuid: "ac08d0f0-5c5f-51b7-8b75-bbf70b93bd15"
+diamondUuid: "a2838832-eee6-849a-ada1-2a856cdb06e2"
+uuid: "512ca288-a784-881c-9052-6980e8acfe49"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dab10c51-46a7-89e9-8d38-caedf6f3d6b2"
+  computationUuid: "377d5891-1b98-8ba0-a812-3579d1451157"
   stages:
     - stage: path
       stageUuid: "f0fb6b1a-4b1f-8a2e-82b1-c6ff82f2c525"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3e91a7e7-017f-8935-87fc-1fa3fb8af30e"
     - stage: horo
-      stageUuid: "80e83038-2fd6-887c-8af9-2b31fa89b910"
+      stageUuid: "ba8df004-b6f1-8e2b-883f-280fda798165"
     - stage: seal
       stageUuid: "64d5fb6d-fa76-8b81-a938-e196923e0006"
     - stage: uuid
-      stageUuid: "9ca4c12f-94d7-86b5-9e00-7f8d8040a6b0"
+      stageUuid: "63f39479-485e-8548-ad8d-0a3d9c39fb9c"
 version: 2
 ---
 # equals

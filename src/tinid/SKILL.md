@@ -2,11 +2,11 @@
 name: tinid
 description: "Use when reasoning about tinid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tinid
-coordinate: "tinid · 5/round · 8eaddc8e"
-contentUuid: "d61eabdd-5ab4-5bab-8fed-40676789988e"
-diamondUuid: "9d52b129-4e5d-8876-885a-a084adb34216"
-uuid: "8eaddc8e-44ca-8216-86b1-6cd936fd1386"
-horo: 5
+coordinate: "tinid · 8/crest · 72cd5438"
+contentUuid: "976769e6-b3b5-5462-9315-6863507f8291"
+diamondUuid: "a79ee8e8-4fff-8d55-a750-a10ad61f7647"
+uuid: "72cd5438-fa20-84b0-a414-f206390e3f50"
+horo: 8
 typography:
   partition: tinid
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c347f970-7afa-87ce-ad60-44813e3f8469"
+  computationUuid: "0eff0425-8d6c-80ca-8a8d-cbcd7194060c"
   stages:
     - stage: path
       stageUuid: "f5e14bb8-75a3-8727-9fc8-9a992949f56b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "18ac4014-791b-8fa9-936b-021f8ae461b5"
     - stage: horo
-      stageUuid: "3ea7972b-7f5d-883b-9def-08e7fed62a60"
+      stageUuid: "412c390b-5eee-82a1-abfa-b2c96225c278"
     - stage: seal
       stageUuid: "34845686-f04c-8031-8d34-1038ab9706be"
     - stage: uuid
-      stageUuid: "a4516ee0-58fd-8806-b462-596fe87507ac"
+      stageUuid: "a97cb67f-3643-89b2-84ae-3544e73c4c3e"
 version: 2
 ---
 # tinid

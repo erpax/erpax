@@ -2,18 +2,18 @@
 name: merkle
 description: "Use when reasoning about merkle — Merkle chain operations — fold message-uuids into tamper-evident thread-uuids"
 atomPath: "quantum/chat/merkle"
-coordinate: "quantum/chat/merkle · 7/descent · 3acc56a6"
-contentUuid: "5f72a08b-9a67-5536-8685-d1190349bd53"
-diamondUuid: "790ab528-2f75-8215-a836-b9876ec0141c"
-uuid: "3acc56a6-3351-8a52-97fe-35e0d958c72e"
-horo: 7
+coordinate: "quantum/chat/merkle · 4/weave · 9bbea935"
+contentUuid: "2026e43c-2676-552e-bbb8-b5a1556eb682"
+diamondUuid: "19b1eca6-b48b-8e00-bd64-f1daac204527"
+uuid: "9bbea935-1fa8-81b5-88b3-78d2a5383db1"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c9ca7352-034f-8967-b088-2234b59fdd5f"
+  computationUuid: "cc43c8b8-4ef7-8f12-8027-10705972a2e6"
   stages:
     - stage: path
       stageUuid: "e5bf602e-f271-8fc5-9a8d-5c2a8dec1d10"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "03e3cded-73b2-8011-a4b3-f944238a9d53"
     - stage: horo
-      stageUuid: "8584d488-367d-8346-9485-e642cd3e3966"
+      stageUuid: "08782609-9d0f-8b6f-ba1a-0c850b60d070"
     - stage: seal
       stageUuid: "f4c5fa7f-9869-8334-a224-1d9550ccfd03"
     - stage: uuid
-      stageUuid: "40f43f87-0acc-85dc-85f2-aabe4913d494"
+      stageUuid: "f485c04b-2a19-882f-a951-73bbd461c7bc"
 quantum:
   superposition:
     - chat
@@ -44,8 +44,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "c9ca7352-034f-8967-b088-2234b59fdd5f"
-    contentUuid: "5f72a08b-9a67-5536-8685-d1190349bd53"
+    computationUuid: "cc43c8b8-4ef7-8f12-8027-10705972a2e6"
+    contentUuid: "2026e43c-2676-552e-bbb8-b5a1556eb682"
 version: 2
 ---
 # quantum/chat/merkle
@@ -54,4 +54,4 @@ Merkle chain operations for chat threads — fold message-uuids into tamper-evid
 
 Composes: [[quantum/chat]] · [[merge]] · [[seal]].
 
-<sub>content-uuid `5f72a08b-9a67-5536-8685-d1190349bd53` · account `quantum/chat/merkle` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `2026e43c-2676-552e-bbb8-b5a1556eb682` · account `quantum/chat/merkle` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

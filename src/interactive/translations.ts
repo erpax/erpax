@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interactive",
-    "uuid": "f7f553e0-4b74-8e00-921c-d3a8f8b28ab4",
+    "uuid": "c91c2949-bfed-8b1c-ae9c-1609ee4d68d5",
     "words": [
       "interactive"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the collapse of collections into interactive trinities — a collection is a node, the trinity tells it three ways (matter, antimatter, backend) and renders it once; interactive adds the live fourth face (the render), so every collection is seen and acted on, not only read.",
-    "uuid": "7b61baa2-1d48-8750-8013-afd22a097da1",
+    "uuid": "7071cf3c-7f0e-8c84-b675-587091298441",
     "words": [
       "use",
       "when",

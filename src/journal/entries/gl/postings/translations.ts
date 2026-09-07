@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "postings",
-    "uuid": "7022f2c2-8888-8274-bd32-bb68c46f44d9",
+    "uuid": "23486eee-3f52-8ac4-995b-ccaa2b6ddcf1",
     "words": [
       "postings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when writing or querying individual debit/credit lines against a journal entry — source type (invoice/bill/payment/adjustment/revaluation), source date, GL account, amount, currency, and ISO-8601 posted-date auto-set on status → posted. The atomic GL line-item that enforces balanced-entry and SOX posting-timestamp requirements.",
-    "uuid": "b0991a97-12ec-8690-adc7-88edd0c6a9ea",
+    "uuid": "d3caa854-57c9-8179-a0dd-326490db52be",
     "words": [
       "use",
       "when",

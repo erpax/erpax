@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "founder",
-    "uuid": "5ca57748-7c2d-8099-b000-f88283a18179",
+    "uuid": "303eb916-e64b-8eff-916f-fe6dfb0375db",
     "words": [
       "founder"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about founder — A person or organization who founded this organization.",
-    "uuid": "a6f93272-5d27-8e93-b7c7-1181a6fc5bdf",
+    "uuid": "e0de539f-7ed2-8b7a-9aac-2ffa80bc0702",
     "words": [
       "use",
       "when",

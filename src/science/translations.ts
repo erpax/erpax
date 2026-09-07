@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "science",
-    "uuid": "7b16253e-f164-8a3b-9164-e70c0c467220",
+    "uuid": "f827d194-59b2-8c1d-a7b8-eae6b2a9ea59",
     "words": [
       "science"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about which scientific mysteries erpax's form illuminates — information-as-reality, entropy as a conserved ledger, the holographic bound, entanglement as content-address, symmetry as conservation. Honest about correspondence vs metaphor.",
-    "uuid": "a39e5827-91d8-8d53-bdd3-6067ea1a0152",
+    "uuid": "2057e44f-c6ff-84bf-a8e4-8f58d4a91cd9",
     "words": [
       "use",
       "when",

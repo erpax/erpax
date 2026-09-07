@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "failure",
-    "uuid": "7899e4eb-fd7e-8ae8-9bdd-3900735cd071",
+    "uuid": "42e848a0-744d-8546-8f15-4920b2e71bd6",
     "words": [
       "failure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one failure — the singular model of the failures collection (the plural store); a recorded instance of something not meeting its requirement.",
-    "uuid": "27a43670-5a40-8f51-bf43-3978f9924e46",
+    "uuid": "9b58dc5e-fed5-86f5-a255-b04b2fc9034f",
     "words": [
       "use",
       "when",

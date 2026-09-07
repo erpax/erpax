@@ -2,11 +2,11 @@
 name: authenticator
 description: "Use when reasoning about authenticator — The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before pl"
 atomPath: "vocabulary/authenticator"
-coordinate: "vocabulary/authenticator · 5/round · 2b43ed47"
-contentUuid: "ca0012eb-49b9-53bf-80ea-6941c697e8ec"
-diamondUuid: "3160151c-553c-886e-b40d-d021a547de7f"
-uuid: "2b43ed47-2978-8dcd-b322-19c09317f3f7"
-horo: 5
+coordinate: "vocabulary/authenticator · 1/base · bd7ddaff"
+contentUuid: "83444e96-056c-509f-80ac-5fa6aca931ba"
+diamondUuid: "ee000517-270e-8817-80e6-5f5f191416b5"
+uuid: "bd7ddaff-8a49-8c17-95a4-cec80af07389"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5d50aa1e-31ce-8a5a-b3d8-aca8c0721618"
+  computationUuid: "053bc0c6-6029-8d1c-820b-d5e9e2d7fa78"
   stages:
     - stage: path
       stageUuid: "622f9b75-ee51-83fd-82c3-d10a19980ef2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3db7dc50-4bf1-8195-8226-a8181ce4f328"
     - stage: horo
-      stageUuid: "53f43e43-0f08-851d-b062-02d2f562c325"
+      stageUuid: "b0aa3881-778b-8217-ac44-f748bf2315bf"
     - stage: seal
       stageUuid: "c1de9d78-e799-8a7d-a066-80d2516ea193"
     - stage: uuid
-      stageUuid: "fa0566e2-a0d8-8b45-94c2-58a4465f847e"
+      stageUuid: "2c602729-290f-823c-9b03-921b5db6d9e2"
 version: 2
 ---
 # authenticator

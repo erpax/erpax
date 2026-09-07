@@ -2,11 +2,11 @@
 name: segments
 description: "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection."
 atomPath: "customer/segments"
-coordinate: "customer/segments · 7/descent · 3c10c660"
-contentUuid: "f62c9fbc-b610-50b3-9135-cd264282a027"
-diamondUuid: "ccfd937b-4bbc-8c80-948d-6ea8c80b5965"
-uuid: "3c10c660-d929-8df4-ba9a-64f168a66e6c"
-horo: 7
+coordinate: "customer/segments · 8/crest · b426e28b"
+contentUuid: "e95b7984-88ee-5dde-91d3-3cb52f700d73"
+diamondUuid: "489ea022-7d6d-84bc-9112-eeb0b7985582"
+uuid: "b426e28b-5487-8022-93c6-8184a21ed697"
+horo: 8
 typography:
   partition: customer
   bondDegree: 30
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "99d9e896-a617-8ff4-b82c-63ef37aad5b8"
+  computationUuid: "8034e85b-c1dc-860c-813f-2f464dfdf299"
   stages:
     - stage: path
       stageUuid: "1c7ffcd0-9eb2-8460-8d19-ebb9cdc249ad"
@@ -27,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "62109d48-aa7e-8ccd-aa68-d90c8cb6b184"
     - stage: links
-      stageUuid: "ed1130a3-2130-8e0f-8233-8fb0fb5d7dee"
+      stageUuid: "7b14057c-77af-855a-aa6d-281bcd969084"
     - stage: horo
-      stageUuid: "a2283293-259b-8b5f-b288-490b8880dcc4"
+      stageUuid: "0c7ea25d-f018-88b8-b6ed-15b2344b5831"
     - stage: seal
       stageUuid: "fb4a6019-5ed4-81ea-89af-a298d840e048"
     - stage: uuid
-      stageUuid: "a4782d73-0fa5-88d2-88d1-77065081ff56"
+      stageUuid: "4b9a3429-c756-8582-83ff-37fdb86a0a2e"
 version: 2
 ---
 # customer-segments

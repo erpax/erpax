@@ -2,18 +2,18 @@
 name: world
 description: "Use when reasoning about world — Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200."
 atomPath: "outward/world"
-coordinate: "outward/world · 8/crest · ac1572b8"
-contentUuid: "9e6335fb-1239-5146-a3d7-0505a19df23b"
-diamondUuid: "82c52d98-b93e-8133-85f7-9e9cff534593"
-uuid: "ac1572b8-0275-8af3-a2e2-76ded72080b1"
-horo: 8
+coordinate: "outward/world · 7/descent · f9aac467"
+contentUuid: "4c342ab6-dc8a-5804-8e1a-fbe8f6da8083"
+diamondUuid: "6a4a86fb-6a13-8f3d-bd73-133fde578331"
+uuid: "f9aac467-94bd-8532-bd53-f861b0b0f2ed"
+horo: 7
 typography:
   partition: outward
   bondDegree: 14
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ec2acad0-dba4-8fac-85cb-800cecd5cc37"
+  computationUuid: "1909f433-c20a-860d-828e-869044f61d19"
   stages:
     - stage: path
       stageUuid: "f2b5b76d-b487-8529-8985-5f9cb851275b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9ffce1eb-f017-80ea-b1d4-16b28722299a"
     - stage: horo
-      stageUuid: "53556d96-6473-8ec1-af81-49220ed47fab"
+      stageUuid: "67c9e630-dcaf-8c1f-bf73-6d3813678002"
     - stage: seal
       stageUuid: "69e070a4-968d-8432-8296-1bc32e680002"
     - stage: uuid
-      stageUuid: "fbcedad4-85d4-8bf9-93bd-ca77f228a279"
+      stageUuid: "82de8e1a-c5b3-835b-96b4-a457bd0bda54"
 version: 2
 ---
 # outward/world — the rest of the public rails, contracted

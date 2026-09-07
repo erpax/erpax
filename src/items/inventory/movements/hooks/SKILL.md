@@ -2,10 +2,10 @@
 name: hooks
 description: "Use when reasoning about hooks — books the movement's value as it is written. Inventory that moves without a posting is a stock figure and a ledger figure that drift apart with nothing between them to notice."
 atomPath: "items/inventory/movements/hooks"
-coordinate: "items/inventory/movements/hooks · 6/6 · a7d57553"
-contentUuid: "6b6c3584-809a-5268-b6b5-6362ebc7bd50"
-diamondUuid: "f7d440d6-fa47-825f-a2d6-cb295b7d31f8"
-uuid: "a7d57553-2f00-886a-a024-ddb3073a9dff"
+coordinate: "items/inventory/movements/hooks · 6/6 · 9510b02a"
+contentUuid: "8688a07b-0ad9-56ab-8e7b-1eee68288c3b"
+diamondUuid: "26d9087c-ca8b-88dc-852f-2f10e032996e"
+uuid: "9510b02a-0f5c-88a4-a996-14143f35d35e"
 horo: 6
 typography:
   partition: items
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8efaf53a-8bf6-8487-b200-f50301eaea7c"
+  computationUuid: "1757b1df-e451-8a14-a14f-c559e9d28052"
   stages:
     - stage: path
       stageUuid: "85c9e8e4-9d8b-8211-9f77-8512f8f0a2db"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a40b0b95-5dc4-8edd-bc0c-95867dc0fd2e"
     - stage: horo
-      stageUuid: "46d238f2-7edd-82b8-9f9a-5b5e46b95e58"
+      stageUuid: "0c66d8a4-a7ab-8998-b5bc-14805c65e1f1"
     - stage: seal
       stageUuid: "ca6a3eb1-1374-8ce4-ba1d-15b4ba164a50"
     - stage: uuid
-      stageUuid: "b4a69fe1-11d7-8f4f-a900-08e981595307"
+      stageUuid: "1638ec12-41bd-802c-bca6-830d435ba86d"
 version: 2
 ---
 # items/inventory/movements/hooks — stock moves and the ledger hears about it in the same transaction

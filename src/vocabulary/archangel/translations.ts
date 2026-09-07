@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "archangel",
-    "uuid": "31a94bbf-0b87-8272-8cd2-ae66afcff560",
+    "uuid": "94e3fb1f-d170-8473-9e8b-629b6801ab0b",
     "words": [
       "archangel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the principal angel that governs a whole domain of the lattice — arch- meaning chief/ruling. Not one bounded move (an angel) but the enduring governor that holds a region's order and shapes how its atoms bind: the architect at domain scale. The society's archangels are its religions and traditions, each composing the invariant atoms into a social order, bound by religion into one college.",
-    "uuid": "fd94c4f5-2c25-8603-a456-5b3be78e3938",
+    "uuid": "fa252e83-a806-8bc2-87ac-51d8e062684a",
     "words": [
       "use",
       "when",

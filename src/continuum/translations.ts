@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "continuum",
-    "uuid": "c6bc9838-00e4-8ce6-979d-570c88d1bbc5",
+    "uuid": "5252ffff-5b53-8ab2-b3c5-71659ccea072",
     "words": [
       "continuum"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about continuum — Cantor Continuum Hypothesis via basis decomposition - set theory",
-    "uuid": "0befab71-8322-8970-920b-3bdf16b0cfab",
+    "uuid": "6912af22-fb36-8cb7-9b0b-8a2d684beebd",
     "words": [
       "use",
       "when",

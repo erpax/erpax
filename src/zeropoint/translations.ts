@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "zeropoint",
-    "uuid": "3a16a9d9-ade9-8bc9-b50c-77144c6f4740",
+    "uuid": "ec58a7cc-7ba3-84e1-a478-06b7da5d4b69",
     "words": [
       "zeropoint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the criterion that decides what is canonical — zero entropy wins: of all forms of a thing, the LOWEST-entropy one (most ordered, DRY, integer, content-addressed) is the truth. The source erpax descends from (ceccec/zeropoint-node, the a432/vortex prior art): irrationality collapses to integer resonance (rodin digital-root, the horo ring), sprawl collapses to the uuid singularity, duplicates merge to one. The 0 everything radiates from and returns to.",
-    "uuid": "d13fde46-a9c7-80ad-9316-0ab819a312e6",
+    "uuid": "f646d0d8-e299-85ae-97aa-e703aadafba6",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "id",
-    "uuid": "d3c10956-ac16-8099-8d81-0e0f274a084f",
+    "uuid": "e3709a86-2934-892b-b6d8-2c893c32185c",
     "words": [
       "id"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a tax-ID needs a normalised type-label stamped onto the document — a beforeChange hook that matches the raw number against the per-country regex registry so downstream code branches on a label, not a free-form match.",
-    "uuid": "2f9001e1-1f9c-8342-8ac7-1c52fe3170b4",
+    "uuid": "6f772c62-50d9-8a80-a8ad-d7a61b1c33a1",
     "words": [
       "use",
       "when",

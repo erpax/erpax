@@ -2,11 +2,11 @@
 name: parts
 description: "Use when reasoning about parts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/parts"
-coordinate: "vocabulary/parts · 7/descent · 7ba6c1e0"
-contentUuid: "3088ad56-e1fc-5b93-86ee-5d47e1233b17"
-diamondUuid: "9ef3d7cd-3ae5-8b13-8612-435779554501"
-uuid: "7ba6c1e0-12bc-8d56-8cad-15d7f0c9efcc"
-horo: 7
+coordinate: "vocabulary/parts · 4/weave · bf2a13ae"
+contentUuid: "85097ec4-d6d3-56c0-a03f-f953c352427e"
+diamondUuid: "5f0c6865-a80b-8d88-aa1f-a24fbdb3a5fe"
+uuid: "bf2a13ae-eae8-8d1c-b9db-65ab53e014b6"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e292ff2b-4275-8f1b-8908-4f737e064939"
+  computationUuid: "d715b96d-e6ec-8541-9815-b31e4ff57eb3"
   stages:
     - stage: path
       stageUuid: "5a98ec1a-26e0-80c0-9efe-98c6ed309784"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c1ade5fe-0448-85b4-829e-3763bedac406"
     - stage: horo
-      stageUuid: "2dd5f748-0eb4-81f2-8496-c3ef0e7fb152"
+      stageUuid: "05adec2f-d45b-8494-9033-3b56bca73805"
     - stage: seal
       stageUuid: "2dda1014-9314-8718-b09a-bdae2ab9758c"
     - stage: uuid
-      stageUuid: "a7b3d359-c57f-86b9-9a48-ac03f6d158db"
+      stageUuid: "b4199d0e-7d2f-88c5-aea3-48601422f06e"
 version: 2
 ---
 # parts

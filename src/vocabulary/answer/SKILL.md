@@ -2,10 +2,10 @@
 name: answer
 description: "Use when reasoning about answer — An answer offered to a question; perhaps correct, perhaps opinionated or wrong."
 atomPath: "vocabulary/answer"
-coordinate: "vocabulary/answer · 5/round · 4140db4f"
-contentUuid: "94aefb75-001c-53d8-9a91-ac3902a2bbfe"
-diamondUuid: "59641b3b-d9a2-866a-b80d-84513af6b3d7"
-uuid: "4140db4f-1927-8f6c-b8b7-2177feb0a131"
+coordinate: "vocabulary/answer · 5/round · 1cc9b075"
+contentUuid: "880f6300-fb06-5027-ae2d-0ab5e88b2701"
+diamondUuid: "77fb80d6-12fe-8083-8017-aa67e858f733"
+uuid: "1cc9b075-9107-8bd3-bf14-ac0d33370483"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2baf1f10-271c-80d1-b2b4-7a3160336693"
+  computationUuid: "83efbc34-1eb8-89d6-bc03-feb0d714fb86"
   stages:
     - stage: path
       stageUuid: "bdf4acff-b323-8044-b5b6-51083ff1c266"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "40031949-9ac5-83c4-bdb5-8971250c0eff"
     - stage: horo
-      stageUuid: "4eb84a25-dfa2-8f6e-9e0d-ffe032b1e0e4"
+      stageUuid: "06914436-27df-8453-9011-67f79ac4d031"
     - stage: seal
       stageUuid: "8a098dc1-15aa-8580-bf4a-612477b0e585"
     - stage: uuid
-      stageUuid: "17754b93-81dd-8789-af5e-878b34b93294"
+      stageUuid: "226c3643-ba15-8431-b6b4-efbe625b02c8"
 version: 2
 ---
 # answer

@@ -2,18 +2,18 @@
 name: scratch
 description: "Use when an ad-hoc measurement or throwaway tsx -e script would otherwise be run inline and discarded — save it here content-addressed instead. A throwaway is a proto-tool: identical scripts merge (same content ⇒ same address ⇒ the fold), the store accretes distinct measurements, and a script that has proven useful graduates into a tested src atom. Single-use code is entropy only if you delete it; saved, it quantomises in time."
 atomPath: scratch
-coordinate: "scratch · 4/weave · c4828d25"
-contentUuid: "4ea0ecc2-e3bd-5873-96d1-7611aa9cec24"
-diamondUuid: "8e54e023-7fe4-8f79-ab70-a088164a6794"
-uuid: "c4828d25-bc64-8827-b967-ff513eeaa0fd"
-horo: 4
+coordinate: "scratch · 5/round · df246627"
+contentUuid: "6a5d6d46-cb58-5bec-beaa-f43891dd5dc0"
+diamondUuid: "41c4aec7-1730-88a1-896b-56acc41af132"
+uuid: "df246627-7f45-82c4-9a60-f06af5e6e470"
+horo: 5
 typography:
   partition: scratch
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0be9f785-b3db-88f3-a46d-8e727986c7f4"
+  computationUuid: "5b02ed86-48c1-879a-960d-95050fa4600c"
   stages:
     - stage: path
       stageUuid: "31035ad2-9460-860d-9deb-f033d7a782d7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cf805cbd-49f9-8b6a-aeb0-a0f6bc3f8dd0"
     - stage: horo
-      stageUuid: "16ae3936-211d-87d4-87f4-45249ad3760f"
+      stageUuid: "fa8715d1-6592-808b-8e21-477af5024f31"
     - stage: seal
       stageUuid: "70679d08-5ab4-8a7c-b5e0-8f4cfb45f7eb"
     - stage: uuid
-      stageUuid: "1a18b4de-159e-8644-980c-0ffd49fe3dac"
+      stageUuid: "fb895505-9036-8333-a072-e9b94b67f564"
 version: 2
 ---
 # scratch — saved throwaways, content-addressed, quantomising

@@ -2,11 +2,11 @@
 name: payments
 description: "Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection."
 atomPath: "invoices/payments"
-coordinate: "invoices/payments · 4/weave · 56702960"
-contentUuid: "e9d50878-91f5-5fb7-9f31-7d74999d7c55"
-diamondUuid: "b6a16f3b-4009-8e0f-bb0d-c3d279776ebd"
-uuid: "56702960-28df-8c32-960f-d1ba9339e020"
-horo: 4
+coordinate: "invoices/payments · 8/crest · b3b32e7a"
+contentUuid: "43ab3c58-05f7-56cd-b0f4-13c319712919"
+diamondUuid: "a729a9a2-3c95-867d-a320-edef7f396372"
+uuid: "b3b32e7a-75fc-813d-aa04-0a359ea81e59"
+horo: 8
 typography:
   partition: invoices
   bondDegree: 40
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "17247b4d-7bf3-8ec4-a608-6da7d8d65bf6"
+  computationUuid: "a91d73cd-3354-809d-aa0a-6f8e9edaf091"
   stages:
     - stage: path
       stageUuid: "88ef4de9-3e18-8ada-8375-bab76c5205dc"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "7eed6bf4-5b4b-84d1-b951-0d8bb04a0472"
     - stage: horo
-      stageUuid: "9799d552-2ca0-8625-884b-b082021a9054"
+      stageUuid: "fc431968-cba1-8caa-b406-02ca500b924c"
     - stage: seal
       stageUuid: "8dca2122-7371-8050-8241-4c1292634a63"
     - stage: uuid
-      stageUuid: "446a2bb6-7f55-8883-9639-58f3541f53e1"
+      stageUuid: "742bc375-eaff-8a8e-977c-9c0d773b3a4f"
 version: 2
 ---
 # payments

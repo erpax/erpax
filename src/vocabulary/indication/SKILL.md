@@ -2,11 +2,11 @@
 name: indication
 description: "Use when reasoning about indication as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/indication"
-coordinate: "vocabulary/indication · 7/descent · cad5cf77"
-contentUuid: "553bf425-751f-5bee-bd00-b119871be450"
-diamondUuid: "d83c325b-1061-8189-889b-4b1c00e62c68"
-uuid: "cad5cf77-3a9e-85c9-8a50-70a3deb0d92f"
-horo: 7
+coordinate: "vocabulary/indication · 8/crest · ae9e5cdd"
+contentUuid: "72e0080f-1307-53df-8cc3-c0ae9d520bc4"
+diamondUuid: "1fc97cad-4f56-8511-b811-fa41cb5e1157"
+uuid: "ae9e5cdd-6881-8f26-9831-55f0991ba13f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "46dc2619-f587-85b4-8b96-27fa2c3b15ff"
+  computationUuid: "05c71440-0d56-8192-a38a-70cf6d920fb7"
   stages:
     - stage: path
       stageUuid: "699f8444-b73c-82ab-8296-154f842c08b9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c581b863-3256-8bd8-a555-92d6d548e71a"
     - stage: horo
-      stageUuid: "16e0be03-5758-802c-b1d5-c8231b8bc1ea"
+      stageUuid: "767c9a01-e7b6-86cc-8afa-f34201ad0bff"
     - stage: seal
       stageUuid: "42a57b82-5d32-8bcd-8768-d4652db7ab5b"
     - stage: uuid
-      stageUuid: "2e01e717-4a05-8a33-82ac-b48d5a2f15b2"
+      stageUuid: "58d10244-cf22-879b-bebc-055ff3ecbe5c"
 version: 2
 ---
 # indication

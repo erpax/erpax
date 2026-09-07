@@ -2,18 +2,18 @@
 name: services
 description: "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks."
 atomPath: services
-coordinate: "services · 1/base · d39cc512"
-contentUuid: "6766e158-5920-5744-932b-c79c427d9bbc"
-diamondUuid: "4df6c518-f03a-837f-a908-048b87bf234d"
-uuid: "d39cc512-a21d-89ec-9cb2-3ecae40bcf00"
-horo: 1
+coordinate: "services · 4/weave · 7855a3dc"
+contentUuid: "00b4bce5-b315-5779-a7d9-941be35ad7ef"
+diamondUuid: "645f5785-964c-80f7-a626-e36fe1094cbf"
+uuid: "7855a3dc-45a1-8abd-8243-0f7d5277cd1c"
+horo: 4
 typography:
   partition: services
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "976a65dc-9d92-8ecf-b8b1-5fdfdef7f461"
+  computationUuid: "bb75e4de-1696-8c6f-9320-92f14bd993ba"
   stages:
     - stage: path
       stageUuid: "8721cd8a-0dc1-8bc6-a92c-c43565ede507"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3a7973fe-f8db-8f52-a923-0812a3399283"
     - stage: horo
-      stageUuid: "6cd4cbf1-c7a8-8138-833f-38f4efad6ad0"
+      stageUuid: "8a0b5bd3-e6f5-8e39-9230-4e7ae4584c40"
     - stage: seal
       stageUuid: "2c138267-6d8f-8968-950c-1875f0099876"
     - stage: uuid
-      stageUuid: "04f025dd-27ca-89b8-b0bf-fa522e94777f"
+      stageUuid: "b419ac71-f131-819a-a3f6-c71da655b62b"
 version: 2
 ---
 # services — the society's organ-body (the executable matter)

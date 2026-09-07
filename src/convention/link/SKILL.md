@@ -2,11 +2,11 @@
 name: link
 description: "Use when one atom references another in prose — every wikilink must resolve to a real atom, no dead wires; coverage = resolving / total over the live corpus map."
 atomPath: "convention/link"
-coordinate: "convention/link · 4/weave · 679b8a2d"
-contentUuid: "875bdb5d-a690-52e6-b7e1-7811ce2ab40f"
-diamondUuid: "1a0cece0-7827-87e4-af3f-6449d49c03ee"
-uuid: "679b8a2d-85fc-804c-951c-5c7a16d46f66"
-horo: 4
+coordinate: "convention/link · 5/round · 0ca6c660"
+contentUuid: "ce20467f-34bc-56a0-baed-919f6736402e"
+diamondUuid: "3882801c-2e78-84c6-8ef5-c444d38e8a2f"
+uuid: "0ca6c660-7ea3-8f80-8a4d-a26a04f168af"
+horo: 5
 typography:
   partition: convention
   bondDegree: 161
@@ -16,7 +16,7 @@ standards:
   - "UBL-2.1"
 bindings: []
 signatures:
-  computationUuid: "846222a4-cbb1-8bdb-b6a3-574267b9ac0e"
+  computationUuid: "6f6c207d-35c6-88aa-bf15-1fabe8591bf8"
   stages:
     - stage: path
       stageUuid: "4f12721d-341e-8779-9d0a-cf8212509727"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "c4664dd3-6406-81a3-8588-f559e923e520"
     - stage: horo
-      stageUuid: "fe09525f-0074-8bb5-af58-4680131d8efc"
+      stageUuid: "a390bbb6-1f89-8526-aaab-65b57ec88446"
     - stage: seal
       stageUuid: "7cf09e63-2371-8497-97e1-66a2be400971"
     - stage: uuid
-      stageUuid: "ba90f60a-d98a-8022-bb3b-216cd2c7544c"
+      stageUuid: "c8481154-868a-8901-b490-b14dcfccbc89"
 version: 2
 ---
 # convention/link — every [[link]] resolves

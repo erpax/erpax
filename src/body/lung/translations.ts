@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lung",
-    "uuid": "8f2f5786-4dbc-8754-9df9-340d5e041bbd",
+    "uuid": "fa981df9-d92e-878d-abf1-527094476066",
     "words": [
       "lung"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the lung as an organ of body — pivot to canonical @/lung; zero duplication.",
-    "uuid": "afce2152-d3b3-8593-accb-f39355d2637f",
+    "uuid": "5b42d7db-097e-80d6-8f3b-4c4c6953c3c4",
     "words": [
       "use",
       "when",

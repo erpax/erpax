@@ -2,11 +2,11 @@
 name: geopolitical
 description: "Use when reasoning about geopolitical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/geopolitical"
-coordinate: "vocabulary/geopolitical · 1/base · 65dde09f"
-contentUuid: "dd2247f4-e850-55a0-bc6e-7f132a89870f"
-diamondUuid: "be0cc801-c19f-8726-946c-38aabc9417bf"
-uuid: "65dde09f-8d4f-8700-84a3-111883950a54"
-horo: 1
+coordinate: "vocabulary/geopolitical · 7/descent · ccef81f0"
+contentUuid: "21b398fc-37e3-5285-a8c2-a15c16c4ea6a"
+diamondUuid: "3502033e-6286-8da1-9165-d2369b142d76"
+uuid: "ccef81f0-9604-8383-bb58-9c42538b30a3"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "595f29e8-0223-89bf-99e3-09b53ca15af1"
+  computationUuid: "aaa15b48-b58e-8842-b053-798dbe2b1d16"
   stages:
     - stage: path
       stageUuid: "2f663d1a-7386-808e-a651-03e7a8f89dba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "402bfebc-0c13-8170-aa83-ede648eedfea"
     - stage: horo
-      stageUuid: "7e1c1e55-2923-8722-be08-930f706c7d30"
+      stageUuid: "bd6794bd-4d8b-8fd4-895c-9611a91e44b8"
     - stage: seal
       stageUuid: "5a161dbc-836c-81ad-8558-08babf2cf0a8"
     - stage: uuid
-      stageUuid: "e0ea6a0f-d2b1-8791-b67a-e513c1285585"
+      stageUuid: "892a78df-968f-8f7c-978d-928dcc21c257"
 version: 2
 ---
 # geopolitical

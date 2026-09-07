@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "deduction",
-    "uuid": "c4f552a5-5dfc-8928-838f-5e8f05453a3b",
+    "uuid": "da524310-1799-8de1-9aea-cc823a293c36",
     "words": [
       "deduction"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about deduction — Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-ta",
-    "uuid": "6fa6f271-1698-884f-a060-d52a2f3ec95f",
+    "uuid": "8e9508ee-5e69-8757-b8d3-7312460ecadb",
     "words": [
       "use",
       "when",

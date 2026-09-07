@@ -2,18 +2,18 @@
 name: deploy
 description: "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics."
 atomPath: deploy
-coordinate: "deploy · 2/share · bc29d28b"
-contentUuid: "a29ab5ce-d279-5f03-8521-e37054926ee8"
-diamondUuid: "fdbe551c-bb8f-83df-84e6-292b611f94a9"
-uuid: "bc29d28b-967a-8a3b-b532-a1b9a54df94c"
-horo: 2
+coordinate: "deploy · 7/descent · 8455a640"
+contentUuid: "cf5551cf-dc6b-5766-b83b-0f0eae2a77cc"
+diamondUuid: "995f97b6-e54b-8f2f-b05c-25c6dd0c1aeb"
+uuid: "8455a640-f933-81b0-990c-ce4241e355f4"
+horo: 7
 typography:
   partition: deploy
   bondDegree: 99
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1db86870-e263-8794-bb09-5889e81faf32"
+  computationUuid: "f48affbd-9151-87c9-81d0-d34c4803aac6"
   stages:
     - stage: path
       stageUuid: "b2dec97d-58be-8973-929d-1384ec4ddcf8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d3db1d99-7bf0-8094-9885-10212d437084"
     - stage: horo
-      stageUuid: "b2d831f4-2da3-8649-a0bd-f1a4a616ef43"
+      stageUuid: "ab8cc7dc-1fa6-8d8d-97c1-838596cc8e6b"
     - stage: seal
       stageUuid: "846600a4-d368-8e6e-bb3d-2e82c706994c"
     - stage: uuid
-      stageUuid: "ceeb2a20-3cdb-83f6-96f6-0951c11946b7"
+      stageUuid: "5019515e-803f-8eb3-8f19-f789849ec1ae"
 version: 2
 ---
 # deploy — Payload production deployment

@@ -2,11 +2,11 @@
 name: itinerary
 description: Use when reasoning about itinerary — Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples).
 atomPath: "vocabulary/itinerary"
-coordinate: "vocabulary/itinerary · 8/crest · dec885ed"
-contentUuid: "484d6173-3f21-51d5-bf37-82c1f1d5196d"
-diamondUuid: "66cb0a19-4eb1-8e99-b605-a34259c57f79"
-uuid: "dec885ed-29d7-8de0-b638-e403b8fac075"
-horo: 8
+coordinate: "vocabulary/itinerary · 2/share · fec21474"
+contentUuid: "130e92e8-2af8-51ef-a275-fa6d6a2e7be6"
+diamondUuid: "ec91246f-1c1e-8fcb-a0bf-2768edb4147f"
+uuid: "fec21474-8553-8fe7-af15-846306956441"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b8b0043d-a776-867e-be1b-de76ad8a9002"
+  computationUuid: "e43b0283-e4a1-823f-8a30-e216aaf5a32c"
   stages:
     - stage: path
       stageUuid: "bb905f89-a006-8489-ac27-2df1ef014112"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "52e2a946-e02f-8e17-a9b7-c1f2d6a3934e"
     - stage: horo
-      stageUuid: "40381e29-22f0-8fa8-bfeb-9f71a7eea03b"
+      stageUuid: "b9c4e850-a299-8159-a682-88a86980abf7"
     - stage: seal
       stageUuid: "926a0d50-08ae-86bc-90b0-3b9149f3d1d6"
     - stage: uuid
-      stageUuid: "07553458-d9cb-851a-8119-f149b55ebdf0"
+      stageUuid: "d4832c4c-97c1-82ca-b5ef-e95c75d75da8"
 version: 2
 ---
 # itinerary

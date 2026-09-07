@@ -2,11 +2,11 @@
 name: shop
 description: "Use when reasoning about shop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: shop
-coordinate: "shop · 4/weave · ec45ab70"
-contentUuid: "6de87b15-96ef-5d49-965b-9d9952e3c3e3"
-diamondUuid: "4b802869-55af-89d4-9f79-221bad0a6922"
-uuid: "ec45ab70-eb8a-8c8e-96ae-1e246dcd8813"
-horo: 4
+coordinate: "shop · 5/round · 02049009"
+contentUuid: "a30ac5f7-a283-54ff-8ec3-f2ecc86787a3"
+diamondUuid: "71415083-3d1b-8efd-8049-a370375cd84e"
+uuid: "02049009-f626-8747-8e08-be8e96503090"
+horo: 5
 typography:
   partition: shop
   bondDegree: 54
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0cdc27e7-fb18-8fa7-af4c-fd7a36386cc6"
+  computationUuid: "2c9101f1-82b6-828e-9b12-af25b18141b7"
   stages:
     - stage: path
       stageUuid: "0d86ce93-d2b3-8d7d-b3d1-6530a0746d02"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a3e13d48-e82f-8f07-a291-432c462c2835"
     - stage: horo
-      stageUuid: "ffbc7289-08aa-869d-977c-b76bd6117a72"
+      stageUuid: "243548f3-5dd5-8d8e-a883-4be0060d86aa"
     - stage: seal
       stageUuid: "648faab1-847d-893a-b4e6-a1bfaa28dc86"
     - stage: uuid
-      stageUuid: "6edbb41f-f217-8887-b373-0ac3eadd27e7"
+      stageUuid: "4e4edaaa-9031-855d-aad7-57c303150071"
 version: 2
 ---
 # shop

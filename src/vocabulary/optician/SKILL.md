@@ -2,10 +2,10 @@
 name: optician
 description: Use when reasoning about optician — A store that sells reading glasses and similar devices for improving vision.
 atomPath: "vocabulary/optician"
-coordinate: "vocabulary/optician · 8/crest · 14e9a4be"
-contentUuid: "ec019872-20ee-5bef-a19a-c7a5d4db6a2d"
-diamondUuid: "3254c797-cb6e-892a-bb6b-f7ae7b085557"
-uuid: "14e9a4be-ab35-87a5-9048-ac72c1677ef6"
+coordinate: "vocabulary/optician · 8/crest · abd1d7d4"
+contentUuid: "667a1c07-84be-52e8-b64d-f87d95e4383a"
+diamondUuid: "1fb22887-bc8b-8d50-8991-1a9a07664374"
+uuid: "abd1d7d4-5d60-8ff3-8fa4-fb18e8a6263f"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1771b2cb-d198-88f3-82e1-77111b5c3953"
+  computationUuid: "18d4b455-42f0-8d58-8553-50b4c8c323f9"
   stages:
     - stage: path
       stageUuid: "3eb70336-cc96-80b1-8be6-eb8187b71557"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c534c625-5b3f-87b0-be55-ad2896fcfa61"
     - stage: horo
-      stageUuid: "bfe9e185-cbf6-8e92-a187-1aae34172843"
+      stageUuid: "e7afd23c-4d68-84bd-b8f7-373a323b93e1"
     - stage: seal
       stageUuid: "29bdb210-9d17-8b7f-bbb2-ef0cf6fbef91"
     - stage: uuid
-      stageUuid: "5ee7b836-73dc-856d-a771-cca38777296b"
+      stageUuid: "322fe2eb-7157-88d0-80c1-a62d03ef4c76"
 version: 2
 ---
 # optician

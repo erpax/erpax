@@ -2,10 +2,10 @@
 name: urltemplate
 description: "Use when reasoning about urltemplate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: urltemplate
-coordinate: "urltemplate · 2/share · 08a27a1d"
-contentUuid: "261a5f1a-01d0-5ce3-b444-250518ae9060"
-diamondUuid: "63829ade-5c28-8c58-8109-2bab43faf431"
-uuid: "08a27a1d-9ffd-88fc-b436-8eb70729b578"
+coordinate: "urltemplate · 2/share · f2462bf0"
+contentUuid: "8ed3dc88-c031-52ef-bacb-801adfd972f0"
+diamondUuid: "4b51c089-8648-898d-864d-7991961d1ffc"
+uuid: "f2462bf0-3cf7-85df-ad71-f28719280766"
 horo: 2
 typography:
   partition: urltemplate
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6e340824-f19a-8fba-a134-054d5eefe1e6"
+  computationUuid: "c1ea1b81-c67b-8045-810c-4ead817834af"
   stages:
     - stage: path
       stageUuid: "cb143a04-a734-8b8a-9dbc-ade33111bcc6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ce62aa6c-ddc5-8d11-bb6e-213446b72c3f"
     - stage: horo
-      stageUuid: "2f26f01e-5878-8453-af53-c63ce6e6b2e3"
+      stageUuid: "3798a477-1c2a-849e-996d-65f714f66f3e"
     - stage: seal
       stageUuid: "0e252ff2-73bc-843d-b06e-24d098ed457e"
     - stage: uuid
-      stageUuid: "c49a3ffd-130c-89ba-a65b-ea7f1acc13a1"
+      stageUuid: "d6e421cd-e517-8333-b489-f6027d771276"
 version: 2
 ---
 # urltemplate

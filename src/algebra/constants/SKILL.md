@@ -2,18 +2,18 @@
 name: constants
 description: Use when reasoning about constants — Algebra constants — theorems and Algebra interface
 atomPath: "algebra/constants"
-coordinate: "algebra/constants · 8/crest · b2dd0397"
-contentUuid: "b8814d99-45fa-5347-8017-e5db51f36a85"
-diamondUuid: "013cc901-384d-8949-98f5-5efc62970f76"
-uuid: "b2dd0397-254b-8b66-b847-72496dc971ec"
-horo: 8
+coordinate: "algebra/constants · 5/round · c3f215b2"
+contentUuid: "f8d11a9f-2290-5331-9ce1-2b8433a57b1c"
+diamondUuid: "a8dc9451-cda0-8c73-abb8-8acd824f489f"
+uuid: "c3f215b2-b363-858b-80c3-dd703a96003d"
+horo: 5
 typography:
   partition: algebra
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8b9773e6-1854-8eab-9a57-c4912f6c31d6"
+  computationUuid: "69095d56-616b-88de-9b95-305b37b08719"
   stages:
     - stage: path
       stageUuid: "99918b7a-01d8-8f50-9f9c-0816756f046e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "98d1d540-6bf2-8a9b-82da-3ea76f4c40b2"
     - stage: horo
-      stageUuid: "bd25f0b7-63de-8815-a845-800fe8d88969"
+      stageUuid: "879bcb23-e739-8868-8cd2-1b7de54921b4"
     - stage: seal
       stageUuid: "54b07e6e-3527-8932-aa45-7dd33bfa31df"
     - stage: uuid
-      stageUuid: "12f41a6f-b771-8fa8-9b17-8dfcb33ddf5e"
+      stageUuid: "08b3e0ef-7d95-8e22-9e59-328e6da0ec7b"
 version: 2
 ---
 # algebra/constants

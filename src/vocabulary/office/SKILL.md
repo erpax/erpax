@@ -2,11 +2,11 @@
 name: office
 description: "Use when reasoning about office as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/office"
-coordinate: "vocabulary/office · 7/descent · 181525a5"
-contentUuid: "eb6ff821-84ed-5376-a52c-6453e4572627"
-diamondUuid: "b59345de-3ef0-88d7-bcc7-c2a65f91a40a"
-uuid: "181525a5-0c18-8e0a-aa6a-89d41a77bd8c"
-horo: 7
+coordinate: "vocabulary/office · 8/crest · fca4f79b"
+contentUuid: "08dc5a88-d8f0-519f-833b-4eb335fb7187"
+diamondUuid: "08dcc8e9-77f3-82d3-8cb2-35eb3aec9ee2"
+uuid: "fca4f79b-b95d-837b-91bc-3d2123097d61"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 39
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "671875d9-0e19-8a93-b98a-c8bc0187c74f"
+  computationUuid: "811eae70-9d59-8113-b2bb-51a6195b4ec4"
   stages:
     - stage: path
       stageUuid: "8c23400f-d944-89b2-a64d-24eb196f7032"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0a97a325-9794-87b0-bf8d-166a1a0c8e50"
     - stage: horo
-      stageUuid: "d417c609-4051-8232-bc32-6c531428b885"
+      stageUuid: "40034a90-12b9-8bd2-b7b0-96a02558f160"
     - stage: seal
       stageUuid: "ec0beb91-115d-8521-8f83-3a56bbac1fcb"
     - stage: uuid
-      stageUuid: "ab6f1c8b-8428-88dd-ab7d-e7187adcdcb2"
+      stageUuid: "3546349b-78c1-8820-b8db-2c7d9f61df58"
 version: 2
 ---
 # office

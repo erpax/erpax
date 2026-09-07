@@ -2,11 +2,11 @@
 name: promotional
 description: "Use when reasoning about promotional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/promotional"
-coordinate: "vocabulary/promotional · 4/weave · 5daca980"
-contentUuid: "d0b52f1f-cc21-5e4f-a288-755619f2aa24"
-diamondUuid: "a0e8a164-91cf-88b4-bf0a-c7fd5842f3ba"
-uuid: "5daca980-27fe-8eab-9930-bdba64af9f08"
-horo: 4
+coordinate: "vocabulary/promotional · 2/share · feb6aa2c"
+contentUuid: "e9a4a50b-2940-5f1e-960e-3650360a9011"
+diamondUuid: "e57548a1-b7c8-8193-8fe6-63f53b3fd791"
+uuid: "feb6aa2c-d996-8139-8d19-abdef0359412"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "79f68a7f-78c1-87ec-9eae-9542ba1d823a"
+  computationUuid: "6547a9f8-42ae-8f19-add5-b90e83b99ed0"
   stages:
     - stage: path
       stageUuid: "95785f22-4bba-87cf-a2c1-752796c4448c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1a12be44-9a89-8bce-af0e-326509247d65"
     - stage: horo
-      stageUuid: "4b95d06f-d029-81eb-8ad9-a61870632388"
+      stageUuid: "2a8488ee-bc20-867f-91f0-e1afba37321e"
     - stage: seal
       stageUuid: "5090e416-28fd-82db-93ce-30f0fb2baacb"
     - stage: uuid
-      stageUuid: "dae971f0-2374-80e7-a04d-26b31e5f4ea1"
+      stageUuid: "3887c53d-f951-8c8f-b941-75435a4407c8"
 version: 2
 ---
 # promotional

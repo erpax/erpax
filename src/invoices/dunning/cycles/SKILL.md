@@ -2,11 +2,11 @@
 name: cycles
 description: "Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection."
 atomPath: "invoices/dunning/cycles"
-coordinate: "invoices/dunning/cycles · 1/base · c3ceeb6d"
-contentUuid: "01bcc935-79f9-5e4c-a5d4-6ac5b763d703"
-diamondUuid: "833daea4-2842-8a65-b19e-e3515341ded0"
-uuid: "c3ceeb6d-e038-8faa-a4c4-3073971b78f7"
-horo: 1
+coordinate: "invoices/dunning/cycles · 2/share · c52456d4"
+contentUuid: "b752e801-82a4-54f4-8118-879fcfc1e1c7"
+diamondUuid: "b79f0729-e50f-80c9-ae41-34b05ba43deb"
+uuid: "c52456d4-f42b-8ae5-8216-0cbd6a01e115"
+horo: 2
 typography:
   partition: invoices
   bondDegree: 25
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ff8fc6da-04fb-8eb4-86b5-2dee810922c4"
+  computationUuid: "37967cc4-5410-8246-9bcb-79033adb7e1d"
   stages:
     - stage: path
       stageUuid: "a80297b2-61c1-8809-9076-b2bf8d9eb151"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "482c0a9e-c55e-8378-9917-25d183a6850c"
     - stage: horo
-      stageUuid: "2c99b282-c93d-8800-ba0c-22d296d578ca"
+      stageUuid: "784c55f2-6e56-8cf1-a720-1e62ee248efa"
     - stage: seal
       stageUuid: "68c0c8c6-a9ad-858d-9757-f84cd4e2aec0"
     - stage: uuid
-      stageUuid: "b34b95ff-55e8-8db9-beeb-6c0106ad16f2"
+      stageUuid: "1a5e0740-6ce4-816e-9bf0-114a5a5842c9"
 version: 2
 ---
 # dunning-cycles

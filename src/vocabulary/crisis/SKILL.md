@@ -2,10 +2,10 @@
 name: crisis
 description: "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath."
 atomPath: "vocabulary/crisis"
-coordinate: "vocabulary/crisis · 1/base · 446bca29"
-contentUuid: "a26e8c43-f53f-5de8-aaa1-7effda2773eb"
-diamondUuid: "b9843503-33bd-8de2-83db-b5a65357474a"
-uuid: "446bca29-5292-895e-828b-34a0489c953b"
+coordinate: "vocabulary/crisis · 1/base · 2dd9b7cb"
+contentUuid: "353a7b4d-8d95-5fb6-96c3-1a679db16801"
+diamondUuid: "ef803ac1-c719-83aa-86ba-51941214fd00"
+uuid: "2dd9b7cb-35b7-8121-bd54-9ae53c8f9366"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ef39d7c7-938c-8975-b395-9bb0a3e16d80"
+  computationUuid: "3fcd7a19-a76e-8b02-9c18-1b9f221c2f42"
   stages:
     - stage: path
       stageUuid: "e6d9c57b-92db-8b3e-b2c1-a417edb20e87"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "59f28125-e04a-87f0-840e-1e002e720f93"
     - stage: horo
-      stageUuid: "9301699e-40fe-8ecb-818f-c2a7ab20d353"
+      stageUuid: "6c9352c1-edbd-8935-b901-5830897eefd1"
     - stage: seal
       stageUuid: "48dddbe0-07cd-8116-8256-8fd6f9291426"
     - stage: uuid
-      stageUuid: "6c6db706-cbe8-84e0-9332-0ae98a722685"
+      stageUuid: "b2e4252d-92c5-8297-bde2-acf564ce19af"
 version: 2
 ---
 # crisis — the complex/poly-crisis conditions, an entropy spike on the society ledger (комплексни кризи)

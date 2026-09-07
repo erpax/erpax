@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pronouns",
-    "uuid": "87bb6dc9-9d33-8bc4-af9f-5af861358b48",
+    "uuid": "6d61ea64-9de3-8bef-8b58-b9f7f9622475",
     "words": [
       "pronouns"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about pronouns — A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression",
-    "uuid": "5e2da1a7-7d9f-894d-9e0e-d5a97921bc0d",
+    "uuid": "e8bbfd8e-7fa8-8e7f-9a22-09cce12e254d",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: hooks
 description: "Use when tests consume the aura projection to render a colour — green (the A432 heart colour) when the aura is whole (the double-torus complete), else red; tests return coherence as colour, not just pass/fail."
 atomPath: "test/hooks"
-coordinate: "test/hooks · 9/unity · bd5ec195"
-contentUuid: "0120b3d9-9725-5f30-93bc-3ec10d5c4038"
-diamondUuid: "db6670de-23a9-84ad-ba53-2f1251d3c16e"
-uuid: "bd5ec195-e248-8629-a38e-9e5c06aae817"
-horo: 9
+coordinate: "test/hooks · 3/3 · 8814b53a"
+contentUuid: "2f5b53b9-8649-51df-93cb-888d6aa0a16b"
+diamondUuid: "ea00b819-c72f-812f-89b3-58f2f798a296"
+uuid: "8814b53a-863d-8679-9a33-62b4bd90948a"
+horo: 3
 typography:
   partition: test
   bondDegree: 348
@@ -15,7 +15,7 @@ standards:
   - A432 tuning; green = whole aura (a passing test)
 bindings: []
 signatures:
-  computationUuid: "b48e1ce9-cf50-8bf3-b1df-82a104ff7fb9"
+  computationUuid: "e7e0880f-4957-8ef2-ab21-b8f0ad7aff52"
   stages:
     - stage: path
       stageUuid: "5d45318d-1180-870a-a6b9-811ba3603eac"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "40951bbc-ee1a-8a90-9ef9-5ecaf282900d"
     - stage: horo
-      stageUuid: "cc0ba921-54e9-8b14-a3c0-ed76b76ba62e"
+      stageUuid: "748eecc7-ae8c-856c-89c1-86fff055f26d"
     - stage: seal
       stageUuid: "fdf8e2f2-7893-80fb-9440-8cc4d74bfacc"
     - stage: uuid
-      stageUuid: "a642aa9e-c783-8667-a666-e220f70d4e3d"
+      stageUuid: "57d48938-0a18-89ec-90d8-643876b9c970"
 version: 2
 ---
 # test/hooks — tests consume the aura → A432 green

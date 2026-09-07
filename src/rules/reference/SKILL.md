@@ -2,11 +2,11 @@
 name: reference
 description: "Use when the statute→code trace must resolve — the gate that a `src/…` path cited in prose or comments actually exists. The corpus fails closed on dead atom links but left dead FILE-PATH pointers ungated, and they rotted: the Наредба Н-18 law pointed at a standards path long after the matter moved. A citation that leads nowhere is unreviewable (ISO-19011 §6.4), so a legally usable ERP cannot have one. Zero tolerance on the statutory surface; a down-only ratchet elsewhere. Run: tsx src/rules/reference/index.ts"
 atomPath: "rules/reference"
-coordinate: "rules/reference · 5/round · 81841358"
-contentUuid: "7621a52e-d900-5260-9328-eb17106b642e"
-diamondUuid: "8929ce7f-200b-86be-bf3c-834ab96771ac"
-uuid: "81841358-468f-84ed-bee3-c81fd615aaea"
-horo: 5
+coordinate: "rules/reference · 2/share · a51ea52d"
+contentUuid: "7ba11866-4de4-5312-98cb-5f02dd880320"
+diamondUuid: "d722bbb9-866e-8948-8345-837f4157276c"
+uuid: "a51ea52d-da86-8765-8980-18ed505e1e4e"
+horo: 2
 typography:
   partition: rules
   bondDegree: 85
@@ -20,7 +20,7 @@ standards:
   - "ZDDS — BG Value Added Tax Act; statute→code traces for fiscal citations fail closed here (not prose-only under rules/)"
 bindings: []
 signatures:
-  computationUuid: "c9a5dde8-6a6a-87d1-ae51-426f80cd79c5"
+  computationUuid: "1a4df04e-50b8-8e69-931e-9b7cf0bbe6a3"
   stages:
     - stage: path
       stageUuid: "86832b64-e6a5-86a1-ace5-29376412f4d1"
@@ -29,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "d323fd78-939d-8f92-bf00-f7313e739514"
     - stage: links
-      stageUuid: "8655abb9-2f68-8c26-bef6-be8578eb948c"
+      stageUuid: "fc98578e-f12a-85ad-90d2-1b6dcd4188ef"
     - stage: horo
-      stageUuid: "1939f5d9-f9a5-8602-8999-8877882fb0b4"
+      stageUuid: "0acc0599-c4b1-8e09-9ab0-aca14015bc92"
     - stage: seal
       stageUuid: "ac1e0d49-543a-8fa9-a0d7-82885f0e7986"
     - stage: uuid
-      stageUuid: "43b65f74-b3d8-81f1-8c67-1011d086fd79"
+      stageUuid: "09efb9f3-af00-882b-bccd-4fbb4bfa8758"
 version: 2
 ---
 # reference — the citation must lead to the evidence

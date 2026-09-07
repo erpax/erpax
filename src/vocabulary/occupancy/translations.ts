@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "occupancy",
-    "uuid": "9fcf4708-11fa-8c33-b81d-b601bc1c3f8d",
+    "uuid": "e2444b5d-1aa6-86a8-8a16-bea9c3ba2b07",
     "words": [
       "occupancy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about occupancy — The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permi",
-    "uuid": "f2015d99-cb40-8db9-a75f-29ebda47db43",
+    "uuid": "60ad8b54-e559-804e-8415-c465ff71dc91",
     "words": [
       "use",
       "when",

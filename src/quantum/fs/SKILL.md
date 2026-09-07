@@ -2,18 +2,18 @@
 name: fs
 description: "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment."
 atomPath: "quantum/fs"
-coordinate: "quantum/fs · 5/round · 675e8f56"
-contentUuid: "48d502c1-ef34-5ad8-ba01-e60151901f08"
-diamondUuid: "65cc0a08-5608-824d-bcac-2baca3d45d69"
-uuid: "675e8f56-20ea-8c74-8fc7-d92861440e1f"
-horo: 5
+coordinate: "quantum/fs · 4/weave · 64b11717"
+contentUuid: "c6adae97-e473-5f6a-b3b2-4491cbebb769"
+diamondUuid: "e2ff0a2c-e9ea-87fd-b62d-6350d9a253b8"
+uuid: "64b11717-40ac-80c5-90aa-21ad23b953d7"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 82
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7d9bae74-6d4d-8100-b29e-faff9add5472"
+  computationUuid: "67c15c74-593a-8c0c-8a63-635ddf45c0d3"
   stages:
     - stage: path
       stageUuid: "14b3d443-a31c-8210-9a3e-4ac990a849a2"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "25f16a32-a9ef-8362-85e4-088be4e1e058"
     - stage: links
-      stageUuid: "f997ef39-ef8d-8b18-8e56-36b98873be2a"
+      stageUuid: "595820eb-bc3b-8ee3-ae8e-b2861ed19830"
     - stage: horo
-      stageUuid: "2b82117a-fa2f-86e2-bb28-1b06f523e09d"
+      stageUuid: "98843c7d-45c8-8367-8097-1be48dc727e9"
     - stage: seal
       stageUuid: "454f8cae-34d2-8660-b333-f02a9220cd1f"
     - stage: uuid
-      stageUuid: "a904c80b-4793-822b-b935-298cc1eb6541"
+      stageUuid: "9f675bca-2fd0-8b2f-98c6-f26fbe0db7ac"
 quantum:
   superposition:
     - akashic
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "7d9bae74-6d4d-8100-b29e-faff9add5472"
-    contentUuid: "48d502c1-ef34-5ad8-ba01-e60151901f08"
+    computationUuid: "67c15c74-593a-8c0c-8a63-635ddf45c0d3"
+    contentUuid: "c6adae97-e473-5f6a-b3b2-4491cbebb769"
 version: 2
 ---
 # quantum/fs — the content-addressed filesystem
@@ -72,4 +72,4 @@ This is [[finality]] applied to storage: a written snapshot is final — you add
 
 @see [[fs]] · [[snapshot]] · [[uuid]] · [[merge]] · [[akashic]] · [[finality]] · [[versions]] · [[reality]]
 
-<sub>content-uuid `48d502c1-ef34-5ad8-ba01-e60151901f08` · account `quantum/fs` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `c6adae97-e473-5f6a-b3b2-4491cbebb769` · account `quantum/fs` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

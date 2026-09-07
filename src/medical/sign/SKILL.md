@@ -2,11 +2,11 @@
 name: sign
 description: "Use when reasoning about sign as a medical facet of medical — vocabulary pivot to @/sign; nested not duplicated."
 atomPath: "medical/sign"
-coordinate: "medical/sign · 2/share · 59333157"
-contentUuid: "26a981ee-119b-52d3-aaff-17d28060236d"
-diamondUuid: "1afd8651-51c5-852f-9618-086dbe997372"
-uuid: "59333157-9a2b-88c6-aebe-b5db81141491"
-horo: 2
+coordinate: "medical/sign · 1/base · a8642bfd"
+contentUuid: "b0fb9866-cbf8-57ef-b32c-d3d2edf6c88f"
+diamondUuid: "3d68d8e3-ad49-873f-b794-f2c09b176baf"
+uuid: "a8642bfd-fc31-8e39-997b-599c5bff0403"
+horo: 1
 typography:
   partition: medical
   bondDegree: 43
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ddb0a040-15c2-81ca-a12c-5ea70b980888"
+  computationUuid: "81f27ab0-a5c0-8026-adfa-642089e7f0f0"
   stages:
     - stage: path
       stageUuid: "c27978e7-259f-8060-b76c-6c335634ac96"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "12ca86ac-26f9-8610-86bd-961f64f8be90"
     - stage: horo
-      stageUuid: "2089ca2f-4b16-8d6d-8331-26308ed3ab2d"
+      stageUuid: "4dfe6a3b-70e0-886b-a468-9cbe71b0b7fa"
     - stage: seal
       stageUuid: "23a4a7b9-1dab-8839-9b0f-d99187a783ac"
     - stage: uuid
-      stageUuid: "315b417a-a408-8e62-896b-752c2a3abbff"
+      stageUuid: "afd9b1fc-2b66-8846-a874-3ee02bc990ec"
 version: 2
 ---
 # medical/sign — medical facet

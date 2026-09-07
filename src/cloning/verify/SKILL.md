@@ -2,11 +2,11 @@
 name: verify
 description: Use when reasoning about verify — Conservation Law 24 — checkCloneIntegrity.
 atomPath: "cloning/verify"
-coordinate: "cloning/verify · 8/crest · d05e6027"
-contentUuid: "428a5f5a-7ff1-5199-98e8-cb14544b6ad8"
-diamondUuid: "c351eba3-2ae8-8d1c-a232-d1b0345bed9c"
-uuid: "d05e6027-e07a-821c-9ffc-f1cbf3f161b0"
-horo: 8
+coordinate: "cloning/verify · 7/descent · 904a061c"
+contentUuid: "ae07c6c0-dcfe-5ae3-b795-03169162c8e7"
+diamondUuid: "5032dc34-cc15-8f51-a6d0-c44dbd96a3e7"
+uuid: "904a061c-6a13-8bbc-b212-e77d38daabb5"
+horo: 7
 typography:
   partition: cloning
   bondDegree: 6
@@ -15,7 +15,7 @@ standards:
   - "RFC-8785"
 bindings: []
 signatures:
-  computationUuid: "a62a5492-659b-8794-9801-db519e37247a"
+  computationUuid: "aafddba6-c3fe-8551-adec-ed5b0e81902e"
   stages:
     - stage: path
       stageUuid: "d77f6a69-a58b-8945-b39a-cf4c1abfe9ee"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "37bf3527-a939-8d14-855b-9a992cb097af"
     - stage: horo
-      stageUuid: "732bca31-00cf-8eec-b9ad-595158ed7252"
+      stageUuid: "ee42e277-3956-8a2b-a9f5-e89144105eb6"
     - stage: seal
       stageUuid: "ea74ea03-73d8-8c82-908e-44dab14a3bb1"
     - stage: uuid
-      stageUuid: "e1b7927d-c0bd-848d-9916-b000f241f57d"
+      stageUuid: "ca9f56da-8dc7-8929-8360-748799dee934"
 version: 2
 ---
 # cloning/verify

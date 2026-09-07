@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "software",
-    "uuid": "1a19e45e-b328-8ca0-bedb-7f847b2e112d",
+    "uuid": "2c8e0c51-6122-8cba-97f0-5d8b2339d8d8",
     "words": [
       "software"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about software as a part of computer — vocabulary pivot to @/software; nested not duplicated.",
-    "uuid": "e38ebc39-6381-8144-9564-9ac29d270d40",
+    "uuid": "f23ad570-3b5a-85da-b037-3da650fce2e4",
     "words": [
       "use",
       "when",

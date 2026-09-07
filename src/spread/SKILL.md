@@ -2,11 +2,11 @@
 name: spread
 description: "Use when reasoning about spread as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: spread
-coordinate: "spread · 1/base · f6efc88a"
-contentUuid: "30028826-7f81-50ba-b435-81c8f2e7d7a5"
-diamondUuid: "fad7682f-6eee-8482-9022-f92e704d028a"
-uuid: "f6efc88a-120f-8fb8-9902-a9e92e358877"
-horo: 1
+coordinate: "spread · 2/share · 8d039e69"
+contentUuid: "8d82b539-6ca4-5383-9366-e718a3519c43"
+diamondUuid: "aefdf889-5c60-82ea-b069-9561fc510633"
+uuid: "8d039e69-7a88-8781-80b8-c7ab39a1c266"
+horo: 2
 typography:
   partition: spread
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "72c67913-3fd8-82bc-b32f-d8e048a96bd3"
+  computationUuid: "9efeb4b8-33b5-8519-a0b4-d109657b53dd"
   stages:
     - stage: path
       stageUuid: "eefcfccc-c3e3-84c2-b6c8-7673d5541fdc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ede14bb0-81c4-89f1-af73-8c3d2e3664ea"
     - stage: horo
-      stageUuid: "85746c67-19c8-8872-b1d3-525170e1896e"
+      stageUuid: "6716abb2-584b-81df-8893-26a8d7f5d22b"
     - stage: seal
       stageUuid: "5655e955-331e-85de-a424-bdd38c99542a"
     - stage: uuid
-      stageUuid: "a4ae90e5-3404-8b3a-92c7-a0ff4e6855b2"
+      stageUuid: "135b19c3-7f66-8476-a342-42ffc1ed1a3a"
 version: 2
 ---
 # spread

@@ -2,11 +2,11 @@
 name: night
 description: "Use when reasoning about night as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/night"
-coordinate: "vocabulary/night · 2/share · 2be4836e"
-contentUuid: "d69193d8-05d7-5051-9c5e-24c2a84895ac"
-diamondUuid: "d68c8b6c-0e09-83f1-9904-603cd14b04f8"
-uuid: "2be4836e-6738-8d7b-8927-c0c46e010aa9"
-horo: 2
+coordinate: "vocabulary/night · 4/weave · d9afb842"
+contentUuid: "57fdf1b3-cb21-5051-80c4-0b8d2267d051"
+diamondUuid: "6e363501-bd69-831b-a4d6-d25e2819cc20"
+uuid: "d9afb842-9c90-8bcd-b77e-9e0a11fb2687"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2cf4895d-0d44-8d7d-be59-57c922dd3d72"
+  computationUuid: "cc9421e4-6eb2-87e4-a18f-0db9452c7065"
   stages:
     - stage: path
       stageUuid: "5914c1b8-5d34-8920-a30e-0cafb94139e3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "82db3743-3ff6-898d-96ad-b484e1a9ce8f"
     - stage: horo
-      stageUuid: "67736de0-517c-8683-b3ab-20bd744736c7"
+      stageUuid: "f9743cd8-d175-893c-9741-84064b0e5611"
     - stage: seal
       stageUuid: "bc27268f-07d5-86f2-8615-98317e1b09ba"
     - stage: uuid
-      stageUuid: "58a15d80-4ac7-85c2-ab63-f68b2fa62446"
+      stageUuid: "f042d76d-08cc-8d8e-8463-e08046e4aa84"
 version: 2
 ---
 # night

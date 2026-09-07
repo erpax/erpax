@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cycle",
-    "uuid": "b45a2783-f07f-8576-afe0-a011f361f254",
+    "uuid": "feb98860-039b-8233-a5dc-6131a487721a",
     "words": [
       "cycle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period.",
-    "uuid": "ec8c947b-dab8-88e3-b651-a7c5c97fb3ea",
+    "uuid": "35246abc-fec3-8e8a-b8d1-bcb3a2ba806c",
     "words": [
       "use",
       "when",

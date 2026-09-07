@@ -2,11 +2,11 @@
 name: message
 description: "Use when reasoning about the uuid AS the message — decode identity · OID · colour · sound out of the 128 bits alone, no payload. Completes localize.decodeIdentity (colour) with the missing sound channel (the note the uuid sounds, A432). To send is to send the uuid; to receive is to decode it. Matter-twin message/index.ts."
 atomPath: message
-coordinate: "message · 4/weave · ee421272"
-contentUuid: "dfcc6f48-f493-5de1-b050-01ad3677860e"
-diamondUuid: "df64584f-1a86-8328-ac60-8f35180a92cb"
-uuid: "ee421272-da35-8fb3-a2d7-b1b9c9d1af61"
-horo: 4
+coordinate: "message · 1/base · 4aa6ce21"
+contentUuid: "e8265ee8-94d9-595c-93fe-bafdb34ade1f"
+diamondUuid: "78c99b95-3a3d-83c8-8c09-62666efd80fb"
+uuid: "4aa6ce21-b529-86c7-b0bc-8a573d549983"
+horo: 1
 typography:
   partition: message
   bondDegree: 85
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1a6fe771-4fad-81aa-bb19-a26e0c63b3d8"
+  computationUuid: "85affcaf-339a-80d9-a6f4-28979d4819f7"
   stages:
     - stage: path
       stageUuid: "c14742f0-dca2-8497-aa08-328b9fc736b3"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "4e6d9bcc-3b2e-8b47-8096-f6b36b659da1"
     - stage: links
-      stageUuid: "57c2ea4f-516a-8b9e-a3e6-dc28522d06dc"
+      stageUuid: "db66be01-8376-851a-98e3-07ab0eaf029e"
     - stage: horo
-      stageUuid: "d4146ad3-930d-8e8f-b849-d2d9dbf968d3"
+      stageUuid: "8ed036b5-574f-8d20-be22-d0f199a2f3b1"
     - stage: seal
       stageUuid: "b12cc4a5-c4fc-8fb1-af5f-d761b6a563cc"
     - stage: uuid
-      stageUuid: "a34ef0e7-5d0f-8c46-a78a-f4cdd8c819a0"
+      stageUuid: "d46aba35-fcec-88a4-b551-8e8fcdf3cef1"
 version: 2
 ---
 # message — the uuid is the message itself

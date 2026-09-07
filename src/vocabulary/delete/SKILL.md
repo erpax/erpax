@@ -2,11 +2,11 @@
 name: delete
 description: "Use when reasoning about delete as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/delete"
-coordinate: "vocabulary/delete · 4/weave · 873e7156"
-contentUuid: "ae7adaff-63ec-5b88-87fe-d0879137bfdf"
-diamondUuid: "14f81409-2df6-8ed1-9c3c-ff0d83713f29"
-uuid: "873e7156-3630-89d9-b924-8a6df7c2525b"
-horo: 4
+coordinate: "vocabulary/delete · 5/round · dcc9c653"
+contentUuid: "76470a5d-ab45-51f3-b789-8f7fdbe4df24"
+diamondUuid: "186a32a7-5737-82ab-a580-ac494cf41d6d"
+uuid: "dcc9c653-f546-89cb-9016-d1954e1dcdce"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "73746379-80b3-860e-9851-22a23079c218"
+  computationUuid: "8f565b2c-c763-8069-a72e-172aeab904e9"
   stages:
     - stage: path
       stageUuid: "0f618de7-7370-8626-9d32-8d6d4570230d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "457641ef-c1d1-8ebf-8fbd-bb9b8b386338"
     - stage: horo
-      stageUuid: "06455af9-1e38-81c3-8b1e-50e0f77c8aa6"
+      stageUuid: "5b0e46f1-770c-8a68-a228-f2ff5f42012a"
     - stage: seal
       stageUuid: "a1f131d0-9856-81a5-aab8-2378020691e2"
     - stage: uuid
-      stageUuid: "bacd8429-21e1-8d21-adcc-fbf3a78e50be"
+      stageUuid: "783675df-cdfe-8327-b390-72d603f1a2d9"
 version: 2
 ---
 # delete

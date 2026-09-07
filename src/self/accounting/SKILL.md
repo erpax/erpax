@@ -2,11 +2,11 @@
 name: accounting
 description: "Use when erpax runs its OWN books — auto-booking subscription revenue (IFRS-15), infra/payroll/supplier/tax costs, scheduling regulatory filings (FINREP/COREP/CSRD/VAT) and obligations, and checking nothing is overdue (Conservation Law 26, checkSelfAccountingComplete). The self as a double-entry gateway; revenue is the credit, cost the debit, the filing the proof."
 atomPath: "self/accounting"
-coordinate: "self/accounting · 7/descent · 7a0dbbe9"
-contentUuid: "5aa87993-3075-5949-87ab-c235c657ae75"
-diamondUuid: "16af23bb-22e5-8999-979c-db5be4d84d40"
-uuid: "7a0dbbe9-16e0-8eef-b3b1-675da4207a5e"
-horo: 7
+coordinate: "self/accounting · 2/share · 9573b7e3"
+contentUuid: "cf22a2cd-933a-5692-b0d9-d26f7800462a"
+diamondUuid: "632633a9-c334-86f0-9d26-ed06220ec6e6"
+uuid: "9573b7e3-c359-8675-ba89-2a2f8cd46d2b"
+horo: 2
 typography:
   partition: self
   bondDegree: 824
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b3400d11-5aa1-8bd7-8c67-e6353d1b5249"
+  computationUuid: "88cfdac5-8aaf-8ae6-9578-ddd4946904cc"
   stages:
     - stage: path
       stageUuid: "cfa69d58-ab80-8fce-8919-5079e6b8c540"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "a04c649f-3004-8cac-99b5-b89080222934"
     - stage: horo
-      stageUuid: "a6b80df5-8ca4-8d24-a1ee-b30ea6b0e13a"
+      stageUuid: "b6721c97-e535-8339-8f1e-49132ee8f9f4"
     - stage: seal
       stageUuid: "bebb7e3e-120b-8180-b647-3b3950e329fd"
     - stage: uuid
-      stageUuid: "dfad7ed7-1045-8313-b56f-f8d2d1aa15eb"
+      stageUuid: "10a8b358-b611-880a-8741-8257fdaf9df8"
 version: 2
 ---
 # self-accounting — erpax books itself (under [[self]])

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sparsity",
-    "uuid": "d23b7ea7-d43a-88ee-8b34-84eb53f95531",
+    "uuid": "15ed59d4-8f4f-8606-9131-73d6927a288a",
     "words": [
       "sparsity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form.",
-    "uuid": "20021a9f-59f7-8c7a-9741-843e1fa03841",
+    "uuid": "d1c7006b-bb8e-8f4c-987f-6129599fb835",
     "words": [
       "use",
       "when",

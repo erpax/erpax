@@ -2,10 +2,10 @@
 name: subscriptions
 description: "Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection."
 atomPath: "subscription/plans/subscriptions"
-coordinate: "subscription/plans/subscriptions · 4/weave · 85de2017"
-contentUuid: "42c3735b-6926-5ee9-b754-5f89421b1d3b"
-diamondUuid: "f08f6b9a-19b7-8583-8fa2-6aed73c00ecf"
-uuid: "85de2017-76d2-8a51-9f0d-c09f2b59dbd3"
+coordinate: "subscription/plans/subscriptions · 4/weave · 62272d4f"
+contentUuid: "bf3e7e08-7e7e-5668-9d2b-324a87248bc1"
+diamondUuid: "7d360e10-296e-8a7b-937b-d5d4a9cba65a"
+uuid: "62272d4f-b523-880e-a7b6-4f062c70fdaa"
 horo: 4
 typography:
   partition: subscription
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "feb557f6-7c92-805a-a61c-9a05337e861a"
+  computationUuid: "fc3f31a9-9220-8851-9cd0-54ad59d666fe"
   stages:
     - stage: path
       stageUuid: "8a6b4be8-8660-8607-a803-17dbc5bf5473"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "3828dfd8-4fbd-8d50-a4b0-1d986f302d54"
     - stage: horo
-      stageUuid: "2f49bfe4-af1a-8085-b11c-ca4d4731579b"
+      stageUuid: "610636bd-1ab5-88fb-a9fc-f7c1737c7b34"
     - stage: seal
       stageUuid: "fdbbf58c-8bff-89bb-a22e-40b54afb0c3b"
     - stage: uuid
-      stageUuid: "e2cbbf5a-9546-808a-b64f-7879dfb3aa32"
+      stageUuid: "853f0023-9aa1-86cd-bca5-998019bb687a"
 version: 2
 ---
 # subscriptions

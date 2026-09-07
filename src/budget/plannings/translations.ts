@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plannings",
-    "uuid": "abb88983-53ad-88ed-ba22-3a28997c4fb8",
+    "uuid": "168febcb-e4eb-89cd-8842-15d1e245f722",
     "words": [
       "plannings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
-    "uuid": "576b5f9e-ce51-8f52-9224-30eff936ac13",
+    "uuid": "458852ed-b9be-8867-aa42-84a299c2b192",
     "words": [
       "use",
       "when",

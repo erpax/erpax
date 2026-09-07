@@ -2,10 +2,10 @@
 name: port
 description: "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \"port all upstreams again\" repeatedly."
 atomPath: "quantum/port"
-coordinate: "quantum/port · 8/crest · 46b57331"
-contentUuid: "4d9ce15d-109a-5bce-9f63-fdee6f89a028"
-diamondUuid: "5b75a235-b00d-8151-be62-8e11950824f2"
-uuid: "46b57331-e1e6-8c3f-8051-eedea5357fca"
+coordinate: "quantum/port · 8/crest · e2ba58e3"
+contentUuid: "83b0857a-1eba-5fc4-8a2d-ebf70acfe6d7"
+diamondUuid: "927abd18-5702-8c28-8aa0-ce5c93639520"
+uuid: "e2ba58e3-39ec-8db7-a390-543d2c0123a7"
 horo: 8
 typography:
   partition: quantum
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid (the port identity)"
 bindings: []
 signatures:
-  computationUuid: "5a8e5c3c-950d-865c-b156-ba3f3033639e"
+  computationUuid: "adea2747-3b29-8c99-b307-9d0991299091"
   stages:
     - stage: path
       stageUuid: "4d526fb5-e032-8b8a-8e0f-adf0b82da3a6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2bc5548f-d789-814b-9d5e-f3e836b99a1a"
     - stage: horo
-      stageUuid: "11df9257-8a63-8779-bad0-211c8a0e784b"
+      stageUuid: "d3229fa5-fabe-8765-92a0-bdb0baf46883"
     - stage: seal
       stageUuid: "d115d019-efd7-8baa-b1e1-9fc942a44339"
     - stage: uuid
-      stageUuid: "b0e19550-201d-86fe-98d1-bbf7724c50b5"
+      stageUuid: "3f92f846-1aca-8a0d-825c-36af93d80b67"
 quantum:
   superposition:
     - access
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "5a8e5c3c-950d-865c-b156-ba3f3033639e"
-    contentUuid: "4d9ce15d-109a-5bce-9f63-fdee6f89a028"
+    computationUuid: "adea2747-3b29-8c99-b307-9d0991299091"
+    contentUuid: "83b0857a-1eba-5fc4-8a2d-ebf70acfe6d7"
 version: 2
 ---
 # quantum/port — content-addressed, idempotent porting
@@ -68,4 +68,4 @@ Matter-twin: `src/quantum/port/index.ts` (`portUuid` · `alreadyPorted`). Compos
 
 @standard RFC 9562 §5.8 content-uuid (the port identity)
 
-<sub>content-uuid `4d9ce15d-109a-5bce-9f63-fdee6f89a028` · account `quantum/port` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `83b0857a-1eba-5fc4-8a2d-ebf70acfe6d7` · account `quantum/port` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

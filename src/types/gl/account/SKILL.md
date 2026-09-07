@@ -2,10 +2,10 @@
 name: account
 description: "Use when the chart-of-accounts type contract is needed — the GL account atom that names AccountType (the 8 posting categories), GLAccount (the hierarchical per-tenant account), the CRUD/action unions, and the runtime constants a posting is checked against (codePattern, length bounds, AccountType→prefix, the IFRS/GAAP/ASBE 1·2·3 spine). A pure-type atom is proven by TSC; its constants carry REFUTABLE invariants, so the proof is real, not an empty test to game the ledger. HARMONY ≠ TRUTH."
 atomPath: "types/gl/account"
-coordinate: "types/gl/account · 2/share · 7f20f662"
-contentUuid: "95ceeeee-eb7b-5277-be9a-236b1d4f8111"
-diamondUuid: "153491c6-bb86-80ca-be13-20fcda599eb6"
-uuid: "7f20f662-0ab1-8f42-89bf-0c1e2c96bab6"
+coordinate: "types/gl/account · 2/share · 7a0f4270"
+contentUuid: "2197dcb5-1ece-52ed-bcda-09d4ac6e4622"
+diamondUuid: "dd0551f3-3770-8fb3-b824-92ec92b8ff63"
+uuid: "7a0f4270-93d4-8cba-b4c8-04bfdfef0f19"
 horo: 2
 typography:
   partition: types
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-210 balance-sheet"
 bindings: []
 signatures:
-  computationUuid: "46f58ef7-767b-8338-ba70-66a721365ff7"
+  computationUuid: "8a52ca59-a660-8232-8c2c-f87d5c68920c"
   stages:
     - stage: path
       stageUuid: "5286d3a3-edbd-81ff-bcc5-b91775016111"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "c3ff71ce-5e54-8c94-9963-8a97462cda07"
     - stage: horo
-      stageUuid: "bb6fcf1a-02e6-809a-b07a-fdbd33b0b04a"
+      stageUuid: "8104c8fb-b9bc-8d49-aee9-79ecc98b5f40"
     - stage: seal
       stageUuid: "5cb782a0-b61d-87da-a69c-d50636d1eedb"
     - stage: uuid
-      stageUuid: "c065944e-d334-85a2-bbd6-46cf3af9fab0"
+      stageUuid: "fba9885e-2806-8809-b22b-29a12de0c4f9"
 version: 2
 ---
 # account — the chart-of-accounts contract, proven not decorated

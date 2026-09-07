@@ -2,11 +2,11 @@
 name: rating
 description: "Use when reasoning about rating — A rating is an evaluation on a numeric scale, such as 1 to 5 stars."
 atomPath: "vocabulary/rating"
-coordinate: "vocabulary/rating · 4/weave · fab8917a"
-contentUuid: "0ff21327-d18b-5884-badf-6bfd4ad66487"
-diamondUuid: "bf05931f-4255-8bcb-82ba-69392162cc0f"
-uuid: "fab8917a-c6cf-8e52-b0c2-ac7dead4c9fa"
-horo: 4
+coordinate: "vocabulary/rating · 7/descent · b22cb463"
+contentUuid: "47327aa1-0a5e-567f-908c-b9ca7e92af1d"
+diamondUuid: "e256e0da-1426-8e52-8a45-6877a4729607"
+uuid: "b22cb463-8876-8805-b841-4cf8213b8934"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 66
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5c641564-5bb0-8069-bd92-09ed9c437f5d"
+  computationUuid: "da8c877b-b17c-8267-b819-538fba8eb4a4"
   stages:
     - stage: path
       stageUuid: "b3d84782-633d-8a13-9780-3df73756f0d0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c392cae8-b93a-8fd7-bb69-98700a67bba5"
     - stage: horo
-      stageUuid: "b45c974c-e05f-8247-a264-969adf0a538e"
+      stageUuid: "d921d1a9-f63b-8e3d-aa5d-551a8e380385"
     - stage: seal
       stageUuid: "05e1e25c-ddd9-8af1-937e-1baa97b58be1"
     - stage: uuid
-      stageUuid: "2066e58d-aa6e-819c-b5e2-f1ee1f956a2e"
+      stageUuid: "55849214-6e73-894c-97c3-93a2bd2a034a"
 version: 2
 ---
 # rating

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "complexity",
-    "uuid": "0aa61004-6d70-868f-a591-c9a765433625",
+    "uuid": "4523f1c7-5d54-8180-b631-a064a9c06683",
     "words": [
       "complexity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when classifying algorithmic cost — big-O from loop-depth bindings under computer; executable not glossary.",
-    "uuid": "c3826deb-ada1-890e-b05f-696154cee2c9",
+    "uuid": "cc403624-3ced-8f1d-8350-86be985f2dbd",
     "words": [
       "use",
       "when",

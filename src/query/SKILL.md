@@ -2,11 +2,11 @@
 name: query
 description: Use when reasoning about query — A sub property of instrument. The query used on this action.
 atomPath: query
-coordinate: "query · 7/descent · 1a3b0933"
-contentUuid: "afc0aa02-28e2-5bf4-8389-fdcb3e91cc4b"
-diamondUuid: "591d6803-4095-88ec-b332-b16783e33916"
-uuid: "1a3b0933-e527-8a78-87ba-11655914d10a"
-horo: 7
+coordinate: "query · 2/share · 44734e37"
+contentUuid: "45719c7e-0618-5752-aa0a-0337f4865df0"
+diamondUuid: "0f6c6bbc-eb93-8c03-9ac1-68cdd39f9306"
+uuid: "44734e37-2bb6-8551-b1a8-c8771cadd61b"
+horo: 2
 typography:
   partition: query
   bondDegree: 20
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c0d60f05-d13c-81b0-911f-cb2b3acf3146"
+  computationUuid: "9c82afed-304b-8dfe-83f3-f3a0c6f92d93"
   stages:
     - stage: path
       stageUuid: "6f4a2981-7283-86b3-be17-972325e47944"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "11cc4b94-5e44-8e78-8cca-6c7ee5204017"
     - stage: horo
-      stageUuid: "327eea07-ce4e-8847-9295-d32b2b372c55"
+      stageUuid: "bfe0bacd-46ae-8994-bc3c-31a4bc71647f"
     - stage: seal
       stageUuid: "6d07a2ac-67ab-84e3-a021-477a142b92e7"
     - stage: uuid
-      stageUuid: "d7560573-fe69-8234-8ea2-c43625766b73"
+      stageUuid: "c244f0ab-e492-8227-bd02-93aae8bf4a8f"
 version: 2
 ---
 # query

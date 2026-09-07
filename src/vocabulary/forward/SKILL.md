@@ -2,11 +2,11 @@
 name: forward
 description: "Use when reasoning about forward as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/forward"
-coordinate: "vocabulary/forward · 7/descent · 14b283b6"
-contentUuid: "75990e43-a2f2-50e6-9060-05023d66f955"
-diamondUuid: "a44d2e8b-4c63-86b8-b566-701a3283e483"
-uuid: "14b283b6-7cc6-89c0-89e6-859d7745124f"
-horo: 7
+coordinate: "vocabulary/forward · 1/base · 0ec7bfb5"
+contentUuid: "f542006c-52d7-50b3-b65f-ae34d46ac870"
+diamondUuid: "4e3572a6-20b6-8dfd-8b39-a68fdbab1e9a"
+uuid: "0ec7bfb5-5e28-8a10-a998-165172a1fbeb"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e4c6354a-4963-8bee-8939-1a51b3358322"
+  computationUuid: "bf68dc9f-201d-809b-bd2f-b60e637c1cac"
   stages:
     - stage: path
       stageUuid: "41963bdc-1f05-8e5e-8789-e8c2a3fd2743"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ca811621-46e6-8f6e-a278-1b62df03cb61"
     - stage: horo
-      stageUuid: "1dbeedb1-0b7f-8d30-952e-52d119f14075"
+      stageUuid: "6b1743db-4e1f-86ff-9691-8c28b0daa14d"
     - stage: seal
       stageUuid: "0acce4a2-75ce-8986-b479-d4fa078d713b"
     - stage: uuid
-      stageUuid: "dcbca49a-f70f-8e33-be52-b1541f34e3c9"
+      stageUuid: "e9076dfe-2a1c-815c-9aab-c0b21d666336"
 version: 2
 ---
 # forward

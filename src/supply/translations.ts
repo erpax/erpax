@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "supply",
-    "uuid": "551dd809-b5f0-893c-9ad3-e8a3032f4f1d",
+    "uuid": "e3344f6f-7d99-844a-ab31-b3874fbaedda",
     "words": [
       "supply"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about supply — A sub-property of instrument. A supply consumed when performing instructions or a direction.",
-    "uuid": "fe0b3d5d-987b-8e54-a5fc-f7eafcd81583",
+    "uuid": "e10e7201-ac0a-873b-80f3-69c5bd707333",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tamper",
-    "uuid": "b5404a0d-b0a0-824c-9e13-08eae9e674ab",
+    "uuid": "c579b6bf-1ef8-801e-b55b-956142a7a2f5",
     "words": [
       "tamper"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about integrity attacks on the content-uuid store — the cost to forge, collide, or rewrite a record undetected, and why all-directions uuid wiring drives that cost toward infinity.",
-    "uuid": "46c01a28-cb4a-814d-bbe6-f259e15858c9",
+    "uuid": "f48b5164-85b9-8f3a-ab7d-5a70fcb478ea",
     "words": [
       "use",
       "when",

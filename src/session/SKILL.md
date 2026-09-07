@@ -2,18 +2,18 @@
 name: session
 description: "Use when measuring a development session — self-building (new atoms/proofs added) and self-healing (existing matter repaired or removed), split by local vs remote computation. Local = every file the gates verified in-tree; remote = the seeds, one per commit. The self-sufficiency magnitude is think.ceiling(seedFraction). Read from the commit record; git injected, hermetically provable."
 atomPath: session
-coordinate: "session · 8/crest · 124e8b76"
-contentUuid: "cddfc769-921f-5260-bb17-0c65f39a5338"
-diamondUuid: "6da0e723-c1a7-8d1a-81ba-f422335e2dd6"
-uuid: "124e8b76-1b2c-8313-b700-426b0111548d"
-horo: 8
+coordinate: "session · 4/weave · b4007f8e"
+contentUuid: "75a35910-05cb-51d1-8edb-7cbd1164610f"
+diamondUuid: "3db10cea-bdaf-85a4-84b9-ec5712b482fd"
+uuid: "b4007f8e-3aa8-8cdf-8c8c-52776109c5e8"
+horo: 4
 typography:
   partition: session
   bondDegree: 54
 standards: []
 bindings: []
 signatures:
-  computationUuid: "162c560b-2dbc-8e06-95a7-da34579bcb1d"
+  computationUuid: "e52d9cde-eed2-8969-8134-9a8aeecb5427"
   stages:
     - stage: path
       stageUuid: "4dbad5c9-db6e-87e5-9bdd-32e764a4d0a3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1375771e-668f-8ac1-a8f6-1575ccfe531a"
     - stage: horo
-      stageUuid: "cdcb7c2b-1aff-8305-b942-820bcfdd3e23"
+      stageUuid: "22896e64-63fb-88da-a483-1494be8b5ab8"
     - stage: seal
       stageUuid: "a848e004-b457-8fd1-b86a-ce9328590d3a"
     - stage: uuid
-      stageUuid: "b40d7fc8-e853-8896-8cb3-49c245c49ea5"
+      stageUuid: "f34d868e-d61e-8168-964b-cef0d810e148"
 version: 2
 ---
 # session — self-building and self-healing, measured per session

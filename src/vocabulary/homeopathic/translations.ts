@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "homeopathic",
-    "uuid": "7a2e52f8-6060-8313-bbb2-263dcbbbab50",
+    "uuid": "64c607e3-58f1-88d5-a24a-ac9bf4a9bbbe",
     "words": [
       "homeopathic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about homeopathic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "a41dfab2-80da-89f6-85ed-eea4537d4a88",
+    "uuid": "e1ed1342-68c5-86cc-9de2-919cb9cad592",
     "words": [
       "use",
       "when",

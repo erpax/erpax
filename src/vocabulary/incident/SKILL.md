@@ -2,18 +2,18 @@
 name: incident
 description: "Use when logging unplanned downtime, service interruptions, production stops, or safety events — the adverse event log with root-cause, impact, resolution, and prevention tracking."
 atomPath: "vocabulary/incident"
-coordinate: "vocabulary/incident · 4/weave · aac560ef"
-contentUuid: "6941a9f1-c2d4-56ba-aad2-aa8cad39fdab"
-diamondUuid: "db49cc06-3b08-8fd5-addd-f829055b1f3a"
-uuid: "aac560ef-6387-8881-ab10-3ea00c5d55d4"
-horo: 4
+coordinate: "vocabulary/incident · 1/base · 057caf7f"
+contentUuid: "b5334080-ebc8-5714-9458-551774ac3128"
+diamondUuid: "71494606-9f48-883e-9971-2fe54e5e82b2"
+uuid: "057caf7f-e3e1-8fea-a4ab-be9644dccd20"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 25
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7d9efd21-2ae0-85d3-9511-578cf30ef962"
+  computationUuid: "547a0f1b-0236-8aac-92e8-78cff40749bb"
   stages:
     - stage: path
       stageUuid: "9b49effa-95cb-88a5-a43c-2078e39b7fd8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2df2ae2f-7fe4-883c-88dd-cc23e14cc660"
     - stage: horo
-      stageUuid: "2d8d917f-0b1b-8063-9cd0-be624462f69a"
+      stageUuid: "96459e43-9d73-8a88-96d6-9428c59599f1"
     - stage: seal
       stageUuid: "c5e939c4-8f2a-835d-8424-a8f0e4430b06"
     - stage: uuid
-      stageUuid: "46c51687-0bb6-80ab-b421-def05b0d2d4a"
+      stageUuid: "789f6f8a-5be8-8e2e-a7ea-51fb354fac49"
 version: 2
 ---
 # incident

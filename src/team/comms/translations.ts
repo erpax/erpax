@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "comms",
-    "uuid": "cff7c580-936e-8770-b166-e33ffd05d3a1",
+    "uuid": "5867284d-ff20-8e16-b68e-a3fb25bfca59",
     "words": [
       "comms"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enforcing secure realtime communication between teams — every team-scoped emit onto the chat/realtime bus must pass tenant match, content-uuid event integrity, depth cap, and (when a team is in scope) horo voice law; allowed and blocked emits are receipted.",
-    "uuid": "b3269fe4-f87f-8975-b17b-d12e5f1edec2",
+    "uuid": "b55a4cf9-d95f-8303-8a3c-432aeb5ad8e2",
     "words": [
       "use",
       "when",

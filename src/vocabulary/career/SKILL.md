@@ -2,18 +2,18 @@
 name: career
 description: "Use when modelling a work career as a life-course trajectory — трудова кариера — a sequence of positions on the harmonic allocation ladder walked over time. Late career is a late band on that ring (the maintenance→disengagement stage before decompression/retirement) where accumulated experience peaks against skill obsolescence and the status sign can flip with age. Derive the stage from the sequence and time; never store it."
 atomPath: "vocabulary/career"
-coordinate: "vocabulary/career · 2/share · 97464cab"
-contentUuid: "698aeb66-80b9-596a-a6ed-e31968e40b2f"
-diamondUuid: "2ba141ca-94e7-8179-968c-35d9f2137411"
-uuid: "97464cab-9cd1-8d47-9fed-95703ba53409"
-horo: 2
+coordinate: "vocabulary/career · 1/base · b3f9b8a7"
+contentUuid: "073fbe0e-518b-555e-accb-6e3b966f6cdc"
+diamondUuid: "d851fa1b-d0a0-8a2f-91a3-687a417874e0"
+uuid: "b3f9b8a7-30e3-8c0a-9ddb-c0f61a8fd3e0"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ef3db83f-ec7e-8581-888e-f89688297f09"
+  computationUuid: "821b7abe-9cca-8f80-aca6-ffbf6c8199be"
   stages:
     - stage: path
       stageUuid: "adcfe4be-b41d-80f7-ac09-ba010b6c9b02"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "20e25282-1d3e-849e-a94a-9f0953d20194"
     - stage: horo
-      stageUuid: "fc90c3a1-c6a2-8299-9097-6cf463578691"
+      stageUuid: "c2740227-ca30-8673-8ddd-2314bae63029"
     - stage: seal
       stageUuid: "3a624c56-2377-8f88-b163-52a69ffb2ec5"
     - stage: uuid
-      stageUuid: "527490e5-a48f-8db3-a38a-dae730ceee46"
+      stageUuid: "9623d4c6-eba5-850f-a284-a061b5a25cf5"
 version: 2
 ---
 # career — the life-course work trajectory, a sequence of positions (трудова кариера)

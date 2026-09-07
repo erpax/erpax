@@ -2,18 +2,18 @@
 name: step
 description: "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf…"
 atomPath: "agents/registered/step"
-coordinate: "agents/registered/step · 7/descent · ccaa6bcb"
-contentUuid: "04330b29-8ecc-570e-b919-7f8efeac7908"
-diamondUuid: "2e88144c-0ee3-8371-b7e9-7668b8bcd8e0"
-uuid: "ccaa6bcb-184f-8564-b537-f34f20a907f0"
-horo: 7
+coordinate: "agents/registered/step · 5/round · 90b51b12"
+contentUuid: "a347fcc0-fb3c-55f1-939a-766930cbb169"
+diamondUuid: "e690ce03-af47-8afc-ae4f-cb807389c4b2"
+uuid: "90b51b12-b106-8c66-a82c-9bd5276ac102"
+horo: 5
 typography:
   partition: agents
   bondDegree: 39
 standards: []
 bindings: []
 signatures:
-  computationUuid: "998978e8-599c-8449-b438-058b3d84bc4a"
+  computationUuid: "f36a1ace-a897-85a8-a079-433bd58f2884"
   stages:
     - stage: path
       stageUuid: "4d362222-6461-8c15-88c9-9d3578877ef8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c162b245-e650-882c-91d0-172a7cbf85c2"
     - stage: horo
-      stageUuid: "f9ee9819-80ce-8025-8942-b2b9f2756163"
+      stageUuid: "00b5bfc4-fc6f-80d2-beb2-18a29d7062be"
     - stage: seal
       stageUuid: "1387f692-affa-8a05-8b44-68ef9d47f26f"
     - stage: uuid
-      stageUuid: "400761f6-04f0-8c8b-b4e5-356eddf25767"
+      stageUuid: "b7b8f7dc-82d0-88cc-a607-7fd04086d4f9"
 version: 2
 ---
 # agents/registered/step — one chain-step handler, where eleven agents each had their own

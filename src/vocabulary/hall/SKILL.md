@@ -2,11 +2,11 @@
 name: hall
 description: "Use when reasoning about hall as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hall"
-coordinate: "vocabulary/hall · 4/weave · 79f1325e"
-contentUuid: "e7b75e42-94b0-5172-a092-5dae9ccf8f6d"
-diamondUuid: "cdcc357c-e3fe-8b51-9e84-1bdc8bedd9e9"
-uuid: "79f1325e-3884-8181-b853-97a8f2803674"
-horo: 4
+coordinate: "vocabulary/hall · 2/share · 1c968c51"
+contentUuid: "b413f0a1-8ef6-54d2-8633-b618f3d01723"
+diamondUuid: "684ab6b0-779d-8c39-811a-6d79fcae478e"
+uuid: "1c968c51-dce6-83fd-b8ab-c066dfd5fdca"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "19b94a1f-4d1a-8ce8-9ba9-9befd295817a"
+  computationUuid: "5dc1c751-3b41-88f4-b817-73b3ebbaa06d"
   stages:
     - stage: path
       stageUuid: "8b15b8b8-ff48-8ff5-a1ec-fd69a596a0d6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9b988ef6-03ac-8d94-a1d5-7e85326cefe0"
     - stage: horo
-      stageUuid: "694b63a8-193e-80fe-92ba-9849fe8bbd3a"
+      stageUuid: "23cf2fea-5f4e-81dc-9d7a-5f0cc5a037f5"
     - stage: seal
       stageUuid: "e2e1a3ad-1ccb-8d64-975a-a67ac626e0a8"
     - stage: uuid
-      stageUuid: "28522191-2ac1-8de6-bf6a-e43bd8fe051a"
+      stageUuid: "c2fdf227-eed0-8582-865d-9e1525a184ac"
 version: 2
 ---
 # hall

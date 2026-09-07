@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calories",
-    "uuid": "6a22fa21-53c5-809b-b3a6-dfb1a08817f0",
+    "uuid": "97afb990-5e71-80d4-a4ed-9fa4d7e167db",
     "words": [
       "calories"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about calories — The number of calories.",
-    "uuid": "d3dc8fd8-482f-8808-9eb6-d54cb78ae873",
+    "uuid": "caf3856b-d0d0-8081-a39b-0d3adece2cd2",
     "words": [
       "use",
       "when",

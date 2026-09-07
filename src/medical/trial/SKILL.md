@@ -2,11 +2,11 @@
 name: trial
 description: "Use when reasoning about trial as a medical facet of medical — vocabulary pivot to @/trial; nested not duplicated."
 atomPath: "medical/trial"
-coordinate: "medical/trial · 2/share · e9bd4c53"
-contentUuid: "49443890-4304-58d1-943b-c07738eaf8cc"
-diamondUuid: "42478727-717e-8b72-8506-e0ca8c0eccb4"
-uuid: "e9bd4c53-7a25-8645-993a-e2c0207028e1"
-horo: 2
+coordinate: "medical/trial · 1/base · d7b617fa"
+contentUuid: "200d49ef-e0dd-5da7-a7a7-5bef9da11d8d"
+diamondUuid: "6bfaed17-561f-864e-ae0d-9e9746bfbe04"
+uuid: "d7b617fa-b057-86c3-9665-b7220ca19acd"
+horo: 1
 typography:
   partition: medical
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6c531813-01a3-8d37-a4a5-4ef7cbee6f22"
+  computationUuid: "0e75ff5b-6145-8ced-abaa-8a3f305928ac"
   stages:
     - stage: path
       stageUuid: "15c616e2-f201-8169-b882-b97f7b1d2647"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ffdcad48-efe8-8faf-9f83-323571d280d3"
     - stage: horo
-      stageUuid: "30b5dbbb-2b05-8906-9369-1c8eb40b1cbe"
+      stageUuid: "bb6f731d-7b3f-8912-8be6-f99303b1799a"
     - stage: seal
       stageUuid: "26d0361a-8854-8fbd-99a9-16a76e36be80"
     - stage: uuid
-      stageUuid: "48a1b8e4-f6bf-82e2-9336-f69dc6006923"
+      stageUuid: "1075d614-c329-8c1c-9d1d-ea44fc03cdf0"
 version: 2
 ---
 # medical/trial — medical facet

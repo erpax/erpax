@@ -2,18 +2,18 @@
 name: amortize
 description: "Use when reasoning about amortize — ports the bond discount/premium amortization calculators verbatim (calculate, port): **effective-interest** (or straight-line where permitted) amortization of a discount/premium ov"
 atomPath: "vocabulary/calculate/amortize"
-coordinate: "vocabulary/calculate/amortize · 8/crest · 1575047e"
-contentUuid: "e12df8e3-19a9-5948-b88b-7e8647257e5e"
-diamondUuid: "9980e5fb-5ec5-8b2b-be43-7defc5b656bc"
-uuid: "1575047e-353a-859a-b938-762e2465945d"
-horo: 8
+coordinate: "vocabulary/calculate/amortize · 1/base · 72324074"
+contentUuid: "6adfb18a-5bdf-5f46-8bff-e334b13040d8"
+diamondUuid: "81f8f8d1-e800-84b0-b4b1-d39ea546116c"
+uuid: "72324074-397c-8c32-892c-02966dba4e49"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0f1db4a9-b982-875f-8c69-5a23cc8c82f1"
+  computationUuid: "9eeacfde-aaf6-83bb-8ffc-3638fa9a6dec"
   stages:
     - stage: path
       stageUuid: "ac42360a-d5da-830c-8ae9-1cd31e4c425e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "34eac497-f725-81a9-8fd0-068d1dec5adc"
     - stage: horo
-      stageUuid: "fe5da548-8a59-8d2a-8c73-89e888168fac"
+      stageUuid: "f540f0b4-5a18-8b4d-a60a-8199f88e1737"
     - stage: seal
       stageUuid: "ec943acf-67a7-8530-8057-ffe20dc6e884"
     - stage: uuid
-      stageUuid: "d2366b71-aa85-87af-a235-17bff956d58b"
+      stageUuid: "e046c6a9-100c-81fb-bada-e2df37c472ce"
 version: 2
 ---
 # amortize — amortization schedules (pure compute)

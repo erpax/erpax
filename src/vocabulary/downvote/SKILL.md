@@ -2,11 +2,11 @@
 name: downvote
 description: "Use when reasoning about downvote — A schema.org component word, collided out of schema.org compounds — fused from downvoteCount (sti · collapse · merge)."
 atomPath: "vocabulary/downvote"
-coordinate: "vocabulary/downvote · 2/share · 44acf00b"
-contentUuid: "e53cb2ae-5554-5140-af46-67b2f4c02d98"
-diamondUuid: "d940b0b2-be86-8a86-a9dd-c3159b13b2a4"
-uuid: "44acf00b-ed49-8448-be61-97bedd7d42aa"
-horo: 2
+coordinate: "vocabulary/downvote · 8/crest · 3a4efef0"
+contentUuid: "1d9a1360-3b3b-552a-a7ad-5f5bf8b0026c"
+diamondUuid: "3c4eec67-a875-8e65-a9d9-dccf2dca61a9"
+uuid: "3a4efef0-24d4-83ff-b9f5-51feb248e5db"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aea40079-a8b7-8cd2-8934-31f0ad31fd48"
+  computationUuid: "80ff3e14-3dd7-8b49-87d7-80b83f87f068"
   stages:
     - stage: path
       stageUuid: "3a7f7435-8ddc-8d0f-b016-9c78e03655ce"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "80901461-087a-8212-b509-cd656443181f"
     - stage: horo
-      stageUuid: "87b48107-ad91-878e-8a9d-d4812983f86d"
+      stageUuid: "5ab89147-898e-89a5-986d-4b41ddc39ae5"
     - stage: seal
       stageUuid: "ab4db9e7-1cea-8a78-bf91-3c0766a0e724"
     - stage: uuid
-      stageUuid: "3f8faaf0-70c8-8bf2-9f4e-5e3afeb54a2b"
+      stageUuid: "0b8fd551-0357-82a9-85b5-852a173bce3b"
 version: 2
 ---
 # downvote

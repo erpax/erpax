@@ -2,18 +2,18 @@
 name: email
 description: "Use when reasoning about email — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
 atomPath: "blocks/form/email"
-coordinate: "blocks/form/email · 5/round · 3ac83a94"
-contentUuid: "cd1242cb-163e-53e0-9a14-68e0cfa278f3"
-diamondUuid: "b054fe68-1450-8fa9-b0f4-75c133424202"
-uuid: "3ac83a94-241d-8700-abb8-2aad21484fed"
-horo: 5
+coordinate: "blocks/form/email · 2/share · 33dc3caa"
+contentUuid: "d89b13fa-efc3-506e-b6a1-7e259ea6e384"
+diamondUuid: "b1ca5be7-c153-8d6a-b13c-33a0a05b0fe2"
+uuid: "33dc3caa-c1a2-8c8f-b3af-d649657e14a4"
+horo: 2
 typography:
   partition: blocks
   bondDegree: 16
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9c57b665-1078-849d-8a30-f343bce30bc7"
+  computationUuid: "9635a0bc-1493-8b71-acc3-592a0e137630"
   stages:
     - stage: path
       stageUuid: "d55a01c8-60f3-8b93-8ea3-1a312429dd6d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "46a87902-4624-8780-b0a7-bb567e7b247f"
     - stage: horo
-      stageUuid: "cd297d60-43e9-8ff3-a0ed-719527bcb1d3"
+      stageUuid: "0ae15c68-53e7-82a0-bd07-4e5ecfbb9f68"
     - stage: seal
       stageUuid: "a3d9d98c-47fe-8542-889d-f61e3ce3dea1"
     - stage: uuid
-      stageUuid: "ccdc4381-e470-818b-9781-2a4bc6d9d37b"
+      stageUuid: "a713a171-5db1-81f9-a6c7-8710f1e9656f"
 version: 2
 ---
 # blocks/form/email — the label names the control, or the control has no name

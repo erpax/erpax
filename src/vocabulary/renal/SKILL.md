@@ -2,11 +2,11 @@
 name: renal
 description: "Use when reasoning about renal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/renal"
-coordinate: "vocabulary/renal · 7/descent · 52f49ecd"
-contentUuid: "e8f63137-8383-5112-b139-7f03e75a0c5c"
-diamondUuid: "c843490e-1e0b-84eb-a784-6759ef34a71e"
-uuid: "52f49ecd-0938-8a49-9422-18e79da87550"
-horo: 7
+coordinate: "vocabulary/renal · 4/weave · aca3781c"
+contentUuid: "16f9a797-bc98-5962-8a41-a7f47c4e8992"
+diamondUuid: "750b1b8b-d762-8327-9402-57f7c5a2f3bc"
+uuid: "aca3781c-a9b2-8e35-98ef-5b7283732c1d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f157612c-9c48-8883-b424-3d0f15f8d224"
+  computationUuid: "fe76c914-c704-84f2-82a2-824dbfe253bf"
   stages:
     - stage: path
       stageUuid: "d4bb490e-7f8b-80b8-ad5d-1db23fc247a7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4bcf310b-5cef-8fc3-b2e7-aef285fd0135"
     - stage: horo
-      stageUuid: "6d4d0fc7-fa1a-8813-b29f-648ab0618db0"
+      stageUuid: "0a491d71-66fb-8634-bbfa-f7355bbf15bb"
     - stage: seal
       stageUuid: "a63b4e9b-c669-8f0e-98f4-75f55f8d0758"
     - stage: uuid
-      stageUuid: "9c5aac24-170d-8f4b-97aa-8452231f7950"
+      stageUuid: "54441d59-1f08-89ef-b9e6-06d91b0d7200"
 version: 2
 ---
 # renal

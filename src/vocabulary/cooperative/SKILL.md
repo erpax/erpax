@@ -2,11 +2,11 @@
 name: cooperative
 description: Use when reasoning about cooperative — An organization that is a joint project of multiple organizations or persons.
 atomPath: "vocabulary/cooperative"
-coordinate: "vocabulary/cooperative · 4/weave · f2c46b60"
-contentUuid: "784e7d65-af2f-5275-bc86-9028e7fb76ef"
-diamondUuid: "7b137023-4245-831c-ac84-bddd59eed50e"
-uuid: "f2c46b60-6bd3-8736-b063-5c245fcc2610"
-horo: 4
+coordinate: "vocabulary/cooperative · 5/round · 91c6216d"
+contentUuid: "f0c7e1f3-127c-5e5a-8ef1-4c034fe0c380"
+diamondUuid: "53d13e36-cf81-82eb-a60b-9d1ad5ab693c"
+uuid: "91c6216d-3a21-8280-bb23-e9d266d887b7"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1828beb0-a5b3-863d-ac6d-d0c73bafe9f9"
+  computationUuid: "f28fd8c8-7fe2-8896-ac7c-ad2736d20757"
   stages:
     - stage: path
       stageUuid: "cde4e4b6-8996-8d84-9867-d3f6e0a9286e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a6507782-74b2-8a00-bad8-73670c41ee4d"
     - stage: horo
-      stageUuid: "ada64bf5-8387-8309-9e10-7405975d39ea"
+      stageUuid: "3fab06ae-4fe2-8257-86b2-70de7700336b"
     - stage: seal
       stageUuid: "afd3f96a-f179-8e27-944c-4307ca36d37e"
     - stage: uuid
-      stageUuid: "543ac610-f7d6-87b0-9ce6-67d19a5944e1"
+      stageUuid: "705c46bb-2730-8097-a936-43270f9a227d"
 version: 2
 ---
 # cooperative

@@ -2,11 +2,11 @@
 name: structure
 description: "Use when reasoning about structure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: structure
-coordinate: "structure · 2/share · 5ffc2574"
-contentUuid: "51169979-802e-5c17-867c-87c210d0604f"
-diamondUuid: "241fc783-a83b-8a8c-93d6-e07f2690eeb3"
-uuid: "5ffc2574-ded4-8235-ab6e-4c82b4bccc1b"
-horo: 2
+coordinate: "structure · 4/weave · 2bb44172"
+contentUuid: "6264a4fa-0d73-521d-9265-89cb0be281d6"
+diamondUuid: "3f0220f0-02a3-8874-8da4-f48184b4e796"
+uuid: "2bb44172-af9f-8cb2-b94d-26c7a073515b"
+horo: 4
 typography:
   partition: structure
   bondDegree: 31
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e3f5aa0-24de-88fb-83cc-ba2732b136ca"
+  computationUuid: "93bff300-0730-860d-b569-694b9fe6d69f"
   stages:
     - stage: path
       stageUuid: "8a3699fa-1b6e-8010-8480-7c9d1594196d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "71abd2cb-b8c2-8b39-a9ca-1948898a8ea5"
     - stage: horo
-      stageUuid: "7bba2ff1-cdac-893f-8af0-3463f7e8706f"
+      stageUuid: "d6f3c1a9-7964-803d-a997-262851411552"
     - stage: seal
       stageUuid: "6410c8b8-9eb6-80ce-a98f-9844445dc0c1"
     - stage: uuid
-      stageUuid: "43444b57-0715-888f-b2d1-2aaa294e978b"
+      stageUuid: "afb9204a-c17d-841e-ad80-45feddc6ea1e"
 version: 2
 ---
 # structure

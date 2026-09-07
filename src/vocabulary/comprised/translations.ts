@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "comprised",
-    "uuid": "97043015-4baa-8b19-81a5-61ecb7e93b1a",
+    "uuid": "950437d2-3b16-8433-9619-2b56c6f64c06",
     "words": [
       "comprised"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about comprised — Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system.",
-    "uuid": "4a562555-72e6-8385-8ed1-2ddf735c1e1b",
+    "uuid": "ae21b677-eed5-89ce-8568-1d4a169971af",
     "words": [
       "use",
       "when",

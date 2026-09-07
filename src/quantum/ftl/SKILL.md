@@ -2,10 +2,10 @@
 name: ftl
 description: "Use when reasoning about ftl — Use for ftl — reuse · amortize · crack · boundary · seal · chat · research. Metrics prove FTL on QPU=CPU/GPU. Boundary = boundary(cracks). Math.* and prose prefixes are cracks."
 atomPath: "quantum/ftl"
-coordinate: "quantum/ftl · 1/base · dab6199f"
-contentUuid: "6ea17c37-baa4-5b04-a974-d1c752b58374"
-diamondUuid: "0368ef02-2489-8d0f-bed2-b2114ef5d883"
-uuid: "dab6199f-594c-8468-ace0-945ab4c458ef"
+coordinate: "quantum/ftl · 1/base · 76254dec"
+contentUuid: "b014fd4f-7b2c-58f8-ba88-5e943b5d4f12"
+diamondUuid: "a932f3ea-3073-8506-9ed3-77a59947563e"
+uuid: "76254dec-16fc-8c65-8235-5b57ddb8e68b"
 horo: 1
 typography:
   partition: quantum
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cf29179c-ce62-8c30-8303-b4336d3b3d29"
+  computationUuid: "ad8de890-5362-85e8-ba9c-47d5b059be4e"
   stages:
     - stage: path
       stageUuid: "9ca9e6ca-980b-82d4-9825-6d808813fe0f"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "657bf87e-ac1d-8b91-a315-657811ddc8ec"
     - stage: links
-      stageUuid: "707d6032-dd5e-8b20-8bb7-e01959076d9c"
+      stageUuid: "5b4952fb-db56-874e-bb76-88b87f21e946"
     - stage: horo
-      stageUuid: "2a031228-a0ea-858f-90c1-9bbcaa9904f7"
+      stageUuid: "7b245e4f-d3c9-8fc3-a07c-110c3acb6da0"
     - stage: seal
       stageUuid: "896227db-c4ed-8482-8c78-047044df4607"
     - stage: uuid
-      stageUuid: "1f0782da-79f8-8801-a29f-a3a8978db80b"
+      stageUuid: "80c80d38-9fe6-8698-938a-0f75a5bcb6df"
 quantum:
   superposition:
     - algebra
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "cf29179c-ce62-8c30-8303-b4336d3b3d29"
-    contentUuid: "6ea17c37-baa4-5b04-a974-d1c752b58374"
+    computationUuid: "ad8de890-5362-85e8-ba9c-47d5b059be4e"
+    contentUuid: "b014fd4f-7b2c-58f8-ba88-5e943b5d4f12"
 version: 2
 ---
 # quantum/ftl
@@ -90,4 +90,4 @@ The compiler refused three places the moment the type landed — one in [[readme
 
 Composes [[quantum/computer]] · [[quantum/chat]] · [[algebra]] · [[wave/feed]].
 
-<sub>content-uuid `6ea17c37-baa4-5b04-a974-d1c752b58374` · account `quantum/ftl` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b014fd4f-7b2c-58f8-ba88-5e943b5d4f12` · account `quantum/ftl` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

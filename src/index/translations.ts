@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "index",
-    "uuid": "d54e7903-4f3c-8a55-90de-efe9d3cc9cd5",
+    "uuid": "6474fbea-2e23-87d3-886c-f66ffbda0431",
     "words": [
       "index"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when sealing folder paths — index.ts is the cross; subfolders are double-wired A/B ↔ B/A.",
-    "uuid": "2cd36a02-fcd6-8859-bda1-6adae680e255",
+    "uuid": "04a6bb84-453e-82ca-a8a5-d9c2c50536c7",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: prepend
 description: "Use when reasoning about prepend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prepend"
-coordinate: "vocabulary/prepend · 1/base · 8e32ad2c"
-contentUuid: "01e71533-7209-526b-a90f-4f5a64498829"
-diamondUuid: "4c61fbac-3cd9-8f65-b834-0e05dee01eee"
-uuid: "8e32ad2c-1539-8d98-8bf8-17d8157dd139"
-horo: 1
+coordinate: "vocabulary/prepend · 8/crest · a2ac9bc9"
+contentUuid: "2ffbfec9-58f8-5ab0-9e6d-0c7aa65ba481"
+diamondUuid: "2c4e15ef-93a8-80f4-84b4-0dca192ef817"
+uuid: "a2ac9bc9-451f-852c-ad59-49f7928e6cb0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a1a6b7cd-3e50-87e6-b45b-9738c1edcfd6"
+  computationUuid: "8e19bfa1-5aca-8e3f-8160-d4102645dcbe"
   stages:
     - stage: path
       stageUuid: "a8131e89-3b0f-85fa-9376-d45c2473b07b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "10744e29-f28c-8d43-8001-65f5e3ceff0d"
     - stage: horo
-      stageUuid: "47fb2ebb-f502-8ca4-b33d-920c854e9e30"
+      stageUuid: "8be95504-b3c2-8a15-84a3-d88c11c63f56"
     - stage: seal
       stageUuid: "fd594b2e-5c49-89a3-9ed4-cc6369433d47"
     - stage: uuid
-      stageUuid: "fd310e65-819a-8d93-9d9c-11757c30cde9"
+      stageUuid: "5a4ced04-f012-8bc7-8dca-d047c5313ae7"
 version: 2
 ---
 # prepend

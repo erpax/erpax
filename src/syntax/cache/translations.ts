@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cache",
-    "uuid": "6d232c37-4d22-88af-8114-c0f715e1b31b",
+    "uuid": "74ebd51f-7bfe-8e2d-a77f-75c2a934e9fb",
     "words": [
       "cache"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cache — *\\\"Reuse the computed answer, never re-derive\\\"* is the first agent law in this corpus.",
-    "uuid": "3af23d14-9f6c-8ddc-a818-ceed7c3a07ab",
+    "uuid": "7aff7339-a6d3-8f7b-9cf5-3cac18cfc399",
     "words": [
       "use",
       "when",

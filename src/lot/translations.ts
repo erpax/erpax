@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lot",
-    "uuid": "a77b7b43-96a8-85f6-b60e-15a4146e9f24",
+    "uuid": "e3601954-4990-84f0-b6d2-3b6dcd15b7d3",
     "words": [
       "lot"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one lot — the singular model of the lots collection (the plural store); a tracked batch of like units produced or handled together.",
-    "uuid": "c50a75cd-6a9c-8995-9929-fb1138925c99",
+    "uuid": "6c7ddae3-cf09-8485-9d36-fb4b66f79670",
     "words": [
       "use",
       "when",

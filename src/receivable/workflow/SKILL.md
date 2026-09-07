@@ -2,11 +2,11 @@
 name: workflow
 description: "Use when reasoning about workflow — An invoice moves through a fixed set of states, and only along edges the graph allows."
 atomPath: "receivable/workflow"
-coordinate: "receivable/workflow · 8/crest · 48e260b3"
-contentUuid: "44b53b02-355e-5103-9120-db57af1e2403"
-diamondUuid: "9a48ebc7-e770-8f0f-abfb-8dec5d5f2604"
-uuid: "48e260b3-3bab-8efa-9b1c-fd00df875feb"
-horo: 8
+coordinate: "receivable/workflow · 2/share · b30c21f7"
+contentUuid: "82f3da88-07de-571c-863e-c57235460181"
+diamondUuid: "8e25dbc4-c0da-8604-bc47-4113b4f126e2"
+uuid: "b30c21f7-262d-8668-b6fd-c6c16daa7824"
+horo: 2
 typography:
   partition: receivable
   bondDegree: 107
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
 bindings: []
 signatures:
-  computationUuid: "36c2c9d3-c05e-8aeb-ac91-e8b5e6bfaf8f"
+  computationUuid: "b0a37f14-26a4-88c4-9b6a-eabe3a59fda3"
   stages:
     - stage: path
       stageUuid: "f8d03570-37c1-8cd7-a44b-9f6b7d796f83"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "7019c206-d64f-8d0d-9fef-cf86c95bbc77"
     - stage: horo
-      stageUuid: "df8f8a04-0951-8c06-a4f4-21dad875106c"
+      stageUuid: "cbfba2b7-a289-8fe9-bb38-30b25b5e01ff"
     - stage: seal
       stageUuid: "ba465e34-a0cc-8109-aa96-d3d8339653aa"
     - stage: uuid
-      stageUuid: "3c1773fd-e9e3-8227-a32b-4992cbf489c5"
+      stageUuid: "e749f807-d048-85fc-9493-134adf9704ad"
 version: 2
 ---
 # receivable/workflow — the invoice lifecycle as a directed graph

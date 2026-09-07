@@ -2,18 +2,18 @@
 name: discover
 description: "Use when reasoning about discovery vs creation — all exists at once and just needs to be discovered. Content-addressing is total, so every content (even one never written) already has its address NOW; the map is complete, the 'next' pre-exists as an unread address. Discovering one thing addresses the whole area at once. But the value at a novel address still costs the seed (s>0) — the forms exist, the territory is walked once."
 atomPath: discover
-coordinate: "discover · 1/base · ab37641b"
-contentUuid: "22d8efc6-ed4a-587c-a543-f98fbacf8d49"
-diamondUuid: "d0b1ee2d-5333-8933-afa5-4286f2adf412"
-uuid: "ab37641b-489c-8ecd-9f35-97f4718ccf27"
-horo: 1
+coordinate: "discover · 8/crest · 68079326"
+contentUuid: "ed2e9ed3-b275-5aaa-9e76-a6c7bc720bd3"
+diamondUuid: "96231231-94de-816d-a4bc-4298ee8903e4"
+uuid: "68079326-32b8-83c2-9405-d725e965ea17"
+horo: 8
 typography:
   partition: discover
   bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "614de7d9-d1e2-8969-b981-a1692a98158e"
+  computationUuid: "3c2b6fd0-e154-865c-a76b-d3de3dde6fb4"
   stages:
     - stage: path
       stageUuid: "1e9afdd6-6a25-84fe-a840-fc423a10d987"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c3c7d7af-4258-8e79-b39f-edb6a8237a0e"
     - stage: horo
-      stageUuid: "e75f1f54-92d3-8624-926b-035f90b5f273"
+      stageUuid: "b226842d-1f34-8241-ae03-54bbf330e106"
     - stage: seal
       stageUuid: "7289028e-357c-833f-9ed3-e23f385ec6fe"
     - stage: uuid
-      stageUuid: "ab359e92-742d-8ebe-ad12-f2fcb10c144f"
+      stageUuid: "da47fae8-4229-873f-b3f7-440c44d2e646"
 version: 2
 ---
 # discover — all exists at once and just needs to be discovered

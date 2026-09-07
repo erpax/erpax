@@ -2,10 +2,10 @@
 name: android
 description: "Use when reasoning about android as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/android"
-coordinate: "vocabulary/android · 1/base · 246668a6"
-contentUuid: "0d53f66e-eeaf-5d00-b1e4-ed53dc7ae646"
-diamondUuid: "ddb9a7fb-3793-8758-9659-b46361ff5a17"
-uuid: "246668a6-6aca-816b-8053-41a383e3d578"
+coordinate: "vocabulary/android · 1/base · 0de75b4b"
+contentUuid: "5a78fc2f-77d3-502e-bad7-027b0e2a2c1f"
+diamondUuid: "7bbd4187-418a-82ab-8005-e347b8694296"
+uuid: "0de75b4b-06c3-8049-be8a-7e25031b32b1"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4418d2ae-f13d-8850-aa27-25ac26102027"
+  computationUuid: "80b69ce1-6346-8ee9-b625-7aba834b1afb"
   stages:
     - stage: path
       stageUuid: "f5640369-071d-8e69-be9d-19415337ab07"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6a682f20-338e-819d-ae12-1ef748d7b101"
     - stage: horo
-      stageUuid: "28f93892-ab9e-811d-803a-ece2affaa4fb"
+      stageUuid: "8b812534-0a75-8798-9d59-e65a27fa0b10"
     - stage: seal
       stageUuid: "59d9052d-70f8-885c-a8da-2d1cf1f032fe"
     - stage: uuid
-      stageUuid: "6b85b3a0-54b4-8971-b2e5-a8842d7abf65"
+      stageUuid: "5548589a-4d04-8266-94f4-38104eca9f30"
 version: 2
 ---
 # android

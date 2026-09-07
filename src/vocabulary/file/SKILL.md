@@ -2,11 +2,11 @@
 name: file
 description: "Use when reasoning about file as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/file"
-coordinate: "vocabulary/file · 7/descent · da65fa86"
-contentUuid: "f53aecbe-43a3-5dde-98c4-1186ff29760a"
-diamondUuid: "d27f20ad-d48c-857f-bd15-480e13ef0e96"
-uuid: "da65fa86-1288-8b12-b369-dda77097137c"
-horo: 7
+coordinate: "vocabulary/file · 4/weave · fbdb9039"
+contentUuid: "99f94c8f-c00b-528f-99ba-6a60cb63c061"
+diamondUuid: "fbb2afb8-3bf6-8c17-b5e7-87e915218bdb"
+uuid: "fbdb9039-1524-8748-868a-d26bfbe8700d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c11924b1-bcae-878a-9fb5-19159697732c"
+  computationUuid: "611cd562-736f-814f-b2fa-8fa1c161be7b"
   stages:
     - stage: path
       stageUuid: "a4f12718-1fc7-8a87-9146-c2f95b25facf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "936ea682-e00e-8527-8616-81b481a4a27c"
     - stage: horo
-      stageUuid: "777c398f-705e-8684-a1c6-62e7d36a1e4f"
+      stageUuid: "98858da5-709d-87c0-88ac-f71f26e6c154"
     - stage: seal
       stageUuid: "865ff958-ca01-8e7c-9940-aea8ddeae766"
     - stage: uuid
-      stageUuid: "2e3cef63-2335-8b41-930c-9681c235a4ce"
+      stageUuid: "c4e4975a-d0a3-8f65-be50-1dc25f0f50d0"
 version: 2
 ---
 # file

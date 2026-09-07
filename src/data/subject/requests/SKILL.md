@@ -2,11 +2,11 @@
 name: requests
 description: "Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection."
 atomPath: "data/subject/requests"
-coordinate: "data/subject/requests · 8/crest · aa18c0f8"
-contentUuid: "515a0d31-ac2f-536e-9afe-b3143a901ef1"
-diamondUuid: "73809140-d560-86e7-ad94-81923d7a577a"
-uuid: "aa18c0f8-025d-8a72-82e0-c0cdc6553af0"
-horo: 8
+coordinate: "data/subject/requests · 1/base · f505f9d6"
+contentUuid: "1b03f428-1709-50ce-8577-c636946e18fc"
+diamondUuid: "6d461b10-6ea2-89ac-ab1e-92104ec2845e"
+uuid: "f505f9d6-fa00-8dff-ba5d-78ddb3dfbeab"
+horo: 1
 typography:
   partition: data
   bondDegree: 37
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "8584374b-84ab-8e18-a8b1-e37936d95245"
+  computationUuid: "505357e2-23bd-858e-a2c7-24de8c27a97f"
   stages:
     - stage: path
       stageUuid: "28925805-056e-8035-9a44-b88e23a1a67b"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "58ff38e4-f50e-84bd-aecd-90798812f470"
     - stage: horo
-      stageUuid: "891f9acf-f8ac-87fe-acff-2ccc4bff786c"
+      stageUuid: "9df47d71-b6b0-8900-bd13-155cbef37fee"
     - stage: seal
       stageUuid: "53e7d3f6-7d08-8260-9a70-01dcf94624de"
     - stage: uuid
-      stageUuid: "93dea0b4-acf9-8c5e-8eb8-1bb35edd7c0a"
+      stageUuid: "baaf9843-8754-8b1f-a9e3-c311d357ef9e"
 version: 2
 ---
 # data-subject-requests

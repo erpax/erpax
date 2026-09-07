@@ -2,18 +2,18 @@
 name: interference
 description: "Use when reasoning about interference — two wave amplitudes combine by phase, not classical sum: I = a1² + a2² + 2·a1·a2·cos(φ), constructive (in phase) reinforcing to (a1+a2)², destructive (out of phase) cancelling to (a1−a2)². The cross term is the quantum part that draws the double-slit fringes; averaged over a period it vanishes, so energy is conserved — interference redistributes intensity, never creates it. In erpax in-phase link-paths reinforce (gravity deepens), out-of-phase cancel."
 atomPath: interference
-coordinate: "interference · 8/crest · 70be8251"
-contentUuid: "29584fcc-8325-5710-89b0-61eb7cb8a8ab"
-diamondUuid: "d5888082-a3e1-87df-8f9d-83eef4346557"
-uuid: "70be8251-8ec5-8df4-b683-9a570d5fd416"
-horo: 8
+coordinate: "interference · 4/weave · eabb4181"
+contentUuid: "093a2da9-a647-5db1-b812-13d72d99088c"
+diamondUuid: "2c836f0c-33a2-8139-a716-289000baf66e"
+uuid: "eabb4181-c71c-8218-87ce-268d63b2879c"
+horo: 4
 typography:
   partition: interference
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "26dde9c7-ad58-846e-8e14-a8fdbd1ca207"
+  computationUuid: "6db7b3ac-795c-874b-bd43-b7c2a4088995"
   stages:
     - stage: path
       stageUuid: "02a61968-c435-8bc6-abf9-efe2c460c476"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b907126e-b131-8515-828d-b0be8220f2a9"
     - stage: horo
-      stageUuid: "be0a52e9-04de-8c41-a340-92f3b6689638"
+      stageUuid: "c04d3282-f2c2-866a-a624-30a0c395339b"
     - stage: seal
       stageUuid: "ea9e81aa-2b09-86b1-a93b-0074fd78ca4c"
     - stage: uuid
-      stageUuid: "7a97f74e-7d6c-835b-bcc9-8a1e893e0065"
+      stageUuid: "8e873ed3-3169-80ee-a07f-723602dd1659"
 version: 2
 ---
 # interference — amplitudes combine by phase

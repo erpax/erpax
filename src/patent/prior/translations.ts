@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prior",
-    "uuid": "1bcfb8f1-0927-86ea-98e2-2123d67a44e3",
+    "uuid": "780681d3-e188-8772-aab9-bcbc2b7f9754",
     "words": [
       "prior"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a modern patent claim needs anticipating art — a register of expired grants that are public-domain §102 prior art by construction. Every row's expiry is COMPUTED against the longest term that has ever applied (20 years from filing), never asserted, and the patent number is the citation so a reader checks a row rather than trusting it. Keeps the grant apart from the world: a patent proves a claim was filed, examined and published on a date, never that it works — deployed and undemonstrated are separate fields, and the inference from patented to works is refused.",
-    "uuid": "0f5835ea-850e-8261-8ac7-20575fc6a51b",
+    "uuid": "4f83aa64-01f0-8a6b-8375-67f462f869bf",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: postponed
 description: "Use when reasoning about postponed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/postponed"
-coordinate: "vocabulary/postponed · 4/weave · 814505d7"
-contentUuid: "960fae8c-1d8a-57e2-b8b6-5ee078786d7f"
-diamondUuid: "3e8fa4ed-f65e-879c-bbc7-3613da47995d"
-uuid: "814505d7-8ca9-8cbc-99a0-028529b3b770"
-horo: 4
+coordinate: "vocabulary/postponed · 8/crest · 847b79de"
+contentUuid: "35a60cb9-3e98-5bd0-9f13-349fbb8fe8bf"
+diamondUuid: "552f9647-9ba2-891a-bf43-bdceea429b48"
+uuid: "847b79de-79c2-8190-92b3-5f3953347eef"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7a4dd9d9-b95e-891a-a126-2060e4b5913f"
+  computationUuid: "b89ad236-01e5-8b2a-bd73-f311f0107d6a"
   stages:
     - stage: path
       stageUuid: "6b655c57-2f2f-881a-8465-a5dfef62ce0d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "849371cd-deb9-81b6-b612-1a127b1351b0"
     - stage: horo
-      stageUuid: "3b6c1801-339b-82b4-8963-7895742d8660"
+      stageUuid: "293f2fc5-ce1a-8b0b-a1d1-a9648371a458"
     - stage: seal
       stageUuid: "195fcb05-8ec0-8989-911e-548a920fe246"
     - stage: uuid
-      stageUuid: "6acc7ec7-80ba-8d93-8f65-66a9bf574c4f"
+      stageUuid: "82a90e7e-b8cf-8da8-97a9-d7f5bd3ab46a"
 version: 2
 ---
 # postponed

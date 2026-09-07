@@ -2,11 +2,11 @@
 name: anchor
 description: "Use when a memory, note or doc OUTSIDE the corpus points at something inside it — anchorOf computes the target's content-uuid so the pointer can prove it is still current, and verifyAnchor reads fresh · moved · gone. A name says WHERE and rots silently; a content-address says WHAT and is derived. Run: tsx src/memory/anchor/index.ts <path…>"
 atomPath: "memory/anchor"
-coordinate: "memory/anchor · 1/base · 18ba8bcb"
-contentUuid: "677fa85c-b1ec-5007-8ec2-667d6140ee49"
-diamondUuid: "afd302ca-02ac-8f08-87e8-b2b7aa306bee"
-uuid: "18ba8bcb-2e72-809c-bddc-709b8aecd395"
-horo: 1
+coordinate: "memory/anchor · 2/share · 176923f0"
+contentUuid: "e7f0d5f3-5f63-5396-8ec5-e8e10112f675"
+diamondUuid: "0c70d810-a5a5-845e-9d57-bba287d0acb4"
+uuid: "176923f0-bdca-8408-8f3a-4e5af7862d1e"
+horo: 2
 typography:
   partition: memory
   bondDegree: 139
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 — uuidv8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "fa9f8c7d-fac2-88e9-94ed-c6d28f2da03e"
+  computationUuid: "3ba594c4-f2bf-81fa-a5f0-48140d2ee77d"
   stages:
     - stage: path
       stageUuid: "46701383-7bb2-8bde-baf9-9df2dc4f2f98"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "58076480-0270-8ff4-9b73-23745d0a5cc6"
     - stage: horo
-      stageUuid: "88398d39-1c80-82e6-9e11-63516a41e84c"
+      stageUuid: "fbd19619-ee72-8d1c-a006-a85dfb2648a8"
     - stage: seal
       stageUuid: "28f4173d-50f5-8ce8-9df2-934c623de954"
     - stage: uuid
-      stageUuid: "13be77a2-37c6-89d5-8de4-b74f9983f052"
+      stageUuid: "b58f062c-5759-8b6e-bb6e-230a133fcd59"
 version: 2
 ---
 # anchor — the content-address is what links inside and outside, both ways

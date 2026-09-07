@@ -2,18 +2,18 @@
 name: recover
 description: "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \"Maximum call stack size exceeded\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \"does not provide an export named 'default'\", or ERR_MODULE_NOT_FOUND."
 atomPath: "vocabulary/recover"
-coordinate: "vocabulary/recover · 8/crest · 58af7e56"
-contentUuid: "97507bce-cde2-5093-a045-3d8510627ad0"
-diamondUuid: "517da10e-1522-8b96-b137-fbac6c759e73"
-uuid: "58af7e56-8ccd-8617-906e-0a1f34440156"
-horo: 8
+coordinate: "vocabulary/recover · 1/base · 950de398"
+contentUuid: "57ef4d38-c2bb-5ee7-893c-2a4001159d9f"
+diamondUuid: "06395e4c-233c-8b9c-a8a6-f68b724c8757"
+uuid: "950de398-c20a-8538-af15-d483fd6720e3"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 63
 standards: []
 bindings: []
 signatures:
-  computationUuid: "152c2283-9490-8cbe-885b-f462cca3c9a8"
+  computationUuid: "ea624038-5d82-8172-94bf-cf9f0b5816f7"
   stages:
     - stage: path
       stageUuid: "bb2ae903-6d29-8697-855b-d82478fc9b11"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "604840d6-f4bc-84e6-b8cf-215f6cfeb241"
     - stage: horo
-      stageUuid: "1e226853-80b9-8026-9502-e58c5f3e4238"
+      stageUuid: "9df97cb5-b4f6-8734-96a6-429c139d2d13"
     - stage: seal
       stageUuid: "d68a86f0-f1bd-84be-9c5f-01b35e3ad144"
     - stage: uuid
-      stageUuid: "ebc827d7-9f5c-8722-95f8-a371e7f46240"
+      stageUuid: "722b3793-1ae0-850a-9a92-044757ddf77d"
 version: 2
 ---
 # recover — Repair a Payload Build After a Reorg

@@ -2,10 +2,10 @@
 name: auto
 description: "Use when reasoning about auto as a anatomical part of body — vocabulary pivot to @/auto; nested not duplicated."
 atomPath: "body/auto"
-coordinate: "body/auto · 1/base · 0cee2aeb"
-contentUuid: "bd216900-ccf1-5309-91d4-4770ee887f3a"
-diamondUuid: "1beb6d59-2700-84f2-b59c-2cf798fd297e"
-uuid: "0cee2aeb-7a31-8c79-9580-2f9b1ae73873"
+coordinate: "body/auto · 1/base · d2aa78d6"
+contentUuid: "6f92352d-3397-5cee-a532-144f11d8f286"
+diamondUuid: "21729995-54f1-83b1-b0d1-e69a1386763e"
+uuid: "d2aa78d6-8a32-88aa-8d0d-584d14d843ba"
 horo: 1
 typography:
   partition: body
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e6742be9-2cde-8992-b404-425cf4d14175"
+  computationUuid: "0c2def2c-e2bb-8126-bdaa-ef05d50adcb0"
   stages:
     - stage: path
       stageUuid: "c80ffd93-2d5c-8690-ac9a-ccd5b605b6ea"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c6bc1efb-826b-82c9-b075-22ffb3c2fdfc"
     - stage: horo
-      stageUuid: "55a6ca0f-a18b-840b-83ab-6192d4c43208"
+      stageUuid: "80f823be-b04e-8c2d-bda0-35ec60169852"
     - stage: seal
       stageUuid: "29c4220d-e42b-8952-ba17-c9abd575e379"
     - stage: uuid
-      stageUuid: "f67844f7-602a-81ad-8095-dc2fbcb27d7b"
+      stageUuid: "8fce5565-a734-8bb7-bcd2-fc655b485734"
 version: 2
 ---
 # body/auto — anatomical part

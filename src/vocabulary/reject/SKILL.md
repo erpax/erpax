@@ -2,11 +2,11 @@
 name: reject
 description: "Use when reasoning about reject as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reject"
-coordinate: "vocabulary/reject · 7/descent · d3706b1b"
-contentUuid: "51828b9c-622a-5198-8cad-eba9fac8fef3"
-diamondUuid: "031222dd-b776-86da-a470-3fae010ec6a9"
-uuid: "d3706b1b-388e-8f50-80a0-de0fe0cbe476"
-horo: 7
+coordinate: "vocabulary/reject · 4/weave · b2f44004"
+contentUuid: "e52981dc-4d20-5bdd-aaa5-7fe880576440"
+diamondUuid: "149da9a7-6b27-8341-a988-1460f95727e4"
+uuid: "b2f44004-e270-8d26-b8df-798e714bd5f0"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff998db3-6008-8c1a-a144-57f277b8fac1"
+  computationUuid: "76226b3b-4fca-8d54-b1a3-718203358f51"
   stages:
     - stage: path
       stageUuid: "15adcaad-a807-8a42-8ea3-84730a8d6623"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a40058d9-21b6-8b3e-a64f-d478cfe60672"
     - stage: horo
-      stageUuid: "d7e04b07-d170-85ab-859f-bd15691c9831"
+      stageUuid: "10720fa6-4a63-8160-a2a3-44f36bde7203"
     - stage: seal
       stageUuid: "40511bf2-f13a-8f56-ae64-4ce623c13d1a"
     - stage: uuid
-      stageUuid: "ef59e615-9fc4-80ce-ba56-5040d3b430ba"
+      stageUuid: "05e38ddf-8948-8373-b7fa-2164a5ec57ea"
 version: 2
 ---
 # reject

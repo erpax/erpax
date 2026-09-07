@@ -2,11 +2,11 @@
 name: transmission
 description: "Use when reasoning about transmission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: transmission
-coordinate: "transmission · 2/share · 4d41bd25"
-contentUuid: "dcf9afe3-62e7-5ae2-b880-81fd1a23b235"
-diamondUuid: "d47c5280-7878-8721-8733-ede9875ccd6c"
-uuid: "4d41bd25-6911-89d4-a8d5-326923dc8952"
-horo: 2
+coordinate: "transmission · 8/crest · f7f3b027"
+contentUuid: "15648c32-f620-5c76-8f05-a003e955c65a"
+diamondUuid: "dd31e565-0b00-842e-a398-1c826337c10c"
+uuid: "f7f3b027-00df-8272-b266-78fe1c453b3d"
+horo: 8
 typography:
   partition: transmission
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "40ecea55-b503-8417-962b-a2be5ef946a8"
+  computationUuid: "28afff97-5327-8aa4-a53a-9236a2a8dbfe"
   stages:
     - stage: path
       stageUuid: "bfb4839c-06fc-87a3-b045-286d76c8b106"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "19482bfe-3ef6-8204-b16f-4a40204b8b8e"
     - stage: horo
-      stageUuid: "d182c11c-a43a-85aa-b2a9-871014a6b142"
+      stageUuid: "0451e6dd-24af-8e0d-afc4-4143ed9b2119"
     - stage: seal
       stageUuid: "dd2f585f-c42a-8c98-aed7-c7e71e4bd114"
     - stage: uuid
-      stageUuid: "e7c2a437-5600-8480-b38a-7a1b01259d6f"
+      stageUuid: "a4556138-d88a-8562-aae2-6663340f145b"
 version: 2
 ---
 # transmission

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "functions",
-    "uuid": "816e5974-5654-852e-aaaa-1dccfd3811c9",
+    "uuid": "b4bb408f-7faa-8dbc-81fd-a1ed6cd9e33a",
     "words": [
       "functions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection.",
-    "uuid": "aa5f41e2-cc97-8cc1-a3fd-191b9953fcdd",
+    "uuid": "7150cc81-ef5b-8f07-9e45-9376defdbf35",
     "words": [
       "use",
       "when",

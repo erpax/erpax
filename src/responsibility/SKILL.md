@@ -2,18 +2,18 @@
 name: responsibility
 description: Use when modelling one responsibility — the singular model of the responsibilities collection (the plural store); a duty assigned to a role or position.
 atomPath: responsibility
-coordinate: "responsibility · 1/base · 3a65d613"
-contentUuid: "79c5fd35-4b92-5d6b-9c96-8c84b7be0869"
-diamondUuid: "85062b95-aa34-8904-b787-8d4c4cb11dd8"
-uuid: "3a65d613-6138-8358-8e8c-b0eb4f2028fc"
-horo: 1
+coordinate: "responsibility · 7/descent · 724d42d3"
+contentUuid: "3b3e1872-8cc1-5586-a638-c32815b1f910"
+diamondUuid: "75af207a-663f-866e-894a-904b83f506f0"
+uuid: "724d42d3-90ac-8d7f-840e-9744b96e907a"
+horo: 7
 typography:
   partition: responsibility
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cc289453-6f97-8648-968c-cd80478416aa"
+  computationUuid: "48b08f8d-db57-82d7-bddd-b1b9e974824e"
   stages:
     - stage: path
       stageUuid: "908b416e-e7c5-8fab-8754-8547498f6ec3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "01351e3f-39fd-8566-a1cd-711727d21064"
     - stage: horo
-      stageUuid: "c62ec599-499c-8061-a0be-8b483f5ace2a"
+      stageUuid: "1206d42f-b85d-8cac-838f-2fef61e610b9"
     - stage: seal
       stageUuid: "19d7bc22-29e5-8cc6-a252-3d3ca0d08db2"
     - stage: uuid
-      stageUuid: "3118c40a-6736-838c-b0fd-795743b9dcbb"
+      stageUuid: "6da9d4f6-83f4-8601-a31d-448ecf80625a"
 version: 2
 ---
 # responsibility — the model of one [[responsibilities]] row

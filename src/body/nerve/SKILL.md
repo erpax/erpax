@@ -2,11 +2,11 @@
 name: nerve
 description: "Use when reasoning about the nerve as an organ of body — pivot to canonical @/nerve; zero duplication."
 atomPath: "body/nerve"
-coordinate: "body/nerve · 1/base · 782d1de3"
-contentUuid: "22bacd9d-7b45-58b5-84b4-9231a9665e14"
-diamondUuid: "3c6b1ff3-8c06-8146-a29f-46d72a586f74"
-uuid: "782d1de3-5f1d-8bca-84c8-210e4ca61ff4"
-horo: 1
+coordinate: "body/nerve · 4/weave · e67651f3"
+contentUuid: "1330d7a9-344d-5d61-a0af-e3978fa73a4d"
+diamondUuid: "05f355ff-682d-874f-9c8b-40017ba652d5"
+uuid: "e67651f3-25d6-8a59-b185-c004a51038bf"
+horo: 4
 typography:
   partition: body
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a7e9db89-1cb3-8b2f-ab1d-bbdddf08430d"
+  computationUuid: "91408e44-2cf2-8dbc-97c6-a5007447dc01"
   stages:
     - stage: path
       stageUuid: "32176f51-fe83-8fdc-9f5d-a8b795930688"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c6be4106-de93-8648-8394-160386ccf532"
     - stage: horo
-      stageUuid: "3e6ee084-3411-8d9e-9c48-1c3c7692a45b"
+      stageUuid: "5e81e019-0542-884b-ba39-069536dae64f"
     - stage: seal
       stageUuid: "afef6307-79b6-8c54-b99a-fe3fd81cabab"
     - stage: uuid
-      stageUuid: "5b950cd9-3ebb-8858-803a-65c2de633b9d"
+      stageUuid: "dd9dd79b-ab70-8e93-8f57-06ed77151941"
 version: 2
 ---
 # body/nerve — organ facet

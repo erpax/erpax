@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "a2093276-a102-8e0c-99bd-fe4b889e4553",
+    "uuid": "3e57c23a-0ee8-8cda-9e0b-49f99079d4cb",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the media collection's Payload hooks — before/after change and validate logic for media.",
-    "uuid": "8bb80323-c724-8897-9e9e-6a48fdf0587a",
+    "uuid": "c158ef6d-6b43-855c-8642-3b4a62dae3a0",
     "words": [
       "use",
       "when",

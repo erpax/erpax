@@ -2,11 +2,11 @@
 name: reviews
 description: "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection."
 atomPath: "employees/performance/reviews"
-coordinate: "employees/performance/reviews · 1/base · 2ef924b5"
-contentUuid: "1c6b3638-14f4-5a2d-b201-d65adbb68381"
-diamondUuid: "83d24cf3-e9f1-8d4f-b453-6b8b8db64b1b"
-uuid: "2ef924b5-41ed-8be9-9dc6-01e572159371"
-horo: 1
+coordinate: "employees/performance/reviews · 7/descent · 68313ed0"
+contentUuid: "997e230d-ce01-5d32-ad6a-ccee8e38fd1c"
+diamondUuid: "4e08d77f-ff6c-8dbf-820b-1cc2edf92ca5"
+uuid: "68313ed0-d8f1-8043-8483-eb785d555d08"
+horo: 7
 typography:
   partition: employees
   bondDegree: 27
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3bfb0e29-9d71-8ce5-b8f2-7c7e5d64c534"
+  computationUuid: "6527341c-f027-8139-baba-41f6480963e2"
   stages:
     - stage: path
       stageUuid: "5277ad0d-e19b-863b-952e-000dac385bcf"
@@ -27,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "dac28e6c-5d86-8d20-9a67-126286acb7dd"
     - stage: links
-      stageUuid: "5aa1577c-bd93-8e99-8b08-243272bc8ade"
+      stageUuid: "ce231bb4-ab71-8a1c-91d5-c9c402efc98a"
     - stage: horo
-      stageUuid: "0d7c2c6a-f037-8152-bfb3-dc1336a1762e"
+      stageUuid: "cc88a939-e1a8-8f9c-b52d-434411149963"
     - stage: seal
       stageUuid: "f9b059a7-e7da-8eac-a32e-15eb604c42c3"
     - stage: uuid
-      stageUuid: "26460ce2-14ae-8e8d-930e-f0bd6ce186ef"
+      stageUuid: "013efeb2-259a-8a8f-a44c-39611da3b21b"
 version: 2
 ---
 # performance-reviews

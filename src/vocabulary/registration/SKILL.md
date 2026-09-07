@@ -2,10 +2,10 @@
 name: registration
 description: "Use when reasoning about registration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/registration"
-coordinate: "vocabulary/registration · 2/share · 6d18ed6e"
-contentUuid: "c710ef0f-fe41-5987-871a-b6508845d9f9"
-diamondUuid: "9d77cf86-0931-831b-97d9-7a71e163aaaa"
-uuid: "6d18ed6e-8521-8c3d-873b-eb4b1de86318"
+coordinate: "vocabulary/registration · 2/share · c96f673f"
+contentUuid: "31b62398-6642-5078-a087-83ea5e9aab32"
+diamondUuid: "79a2dffd-6d71-8126-96de-b74038254967"
+uuid: "c96f673f-1da8-8c95-b77b-1281bfbcc122"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3050e07e-c71d-867b-825a-d03dacc79481"
+  computationUuid: "68f45fbe-02f5-83e3-bd93-f7cc875550b3"
   stages:
     - stage: path
       stageUuid: "12eb64d5-25de-89e3-b21a-05609f909d7b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "905acbd5-b644-89aa-b9da-a6439ff61881"
     - stage: horo
-      stageUuid: "1be29acd-4db7-8726-a8d4-91035de329db"
+      stageUuid: "5d6ec962-2d52-8e1d-8e49-37b95e804372"
     - stage: seal
       stageUuid: "ac762363-bc84-8dc1-bc2a-7a872a42c89b"
     - stage: uuid
-      stageUuid: "a5118c98-b3b6-8974-8388-b614d62ef9c6"
+      stageUuid: "f0696f37-f120-89bd-9399-5a9966e00975"
 version: 2
 ---
 # registration

@@ -2,18 +2,18 @@
 name: take
 description: "Use when reasoning about the inflow side of an exchange in erpax — debit, units-in, receive, claim, post-in. The universal root of taking; dual of give, equilibrium is balance."
 atomPath: take
-coordinate: "take · 7/descent · 71fc8737"
-contentUuid: "93221ef7-62c9-5240-9968-fae417e742a6"
-diamondUuid: "1f1a2176-1206-8446-be9e-bfe601926b04"
-uuid: "71fc8737-8be0-80d7-950d-5fc62a5c91cd"
-horo: 7
+coordinate: "take · 5/round · ebc4ca31"
+contentUuid: "b474b543-3064-58be-9a8d-ea9e68c220f0"
+diamondUuid: "fb438d25-3ed8-822e-9427-2d73e8bce4e6"
+uuid: "ebc4ca31-7e63-8e96-8c25-51b70a7c8839"
+horo: 5
 typography:
   partition: take
   bondDegree: 112
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7a652bac-eb7f-8b00-b99e-5e082f789624"
+  computationUuid: "77a1517e-0864-87b6-8e2d-00941de4e14a"
   stages:
     - stage: path
       stageUuid: "5735698e-c741-81e9-8591-ff38bd2fc754"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "459be82e-8ce2-82d1-9afb-a474572ce9a6"
     - stage: horo
-      stageUuid: "33de660f-d766-876c-a2f4-5983d1807873"
+      stageUuid: "af33e814-b772-8c43-9d45-fcb17940dcc0"
     - stage: seal
       stageUuid: "26ce2e8f-bfaa-8b18-b950-c86eece0ec91"
     - stage: uuid
-      stageUuid: "bbf836f4-9e3f-8f45-bb02-16d9e5dd8287"
+      stageUuid: "033b7fe8-6aea-82ae-9bc6-c79be0436da7"
 version: 2
 ---
 # take

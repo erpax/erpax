@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "periods",
-    "uuid": "85319d66-cb26-8fc1-9184-0b6f0b4ac23f",
+    "uuid": "2ecd19c2-b5c3-8628-8a66-b09f90a7b4c3",
     "words": [
       "periods"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked).",
-    "uuid": "4de105d9-67fd-885d-b685-713965491a5a",
+    "uuid": "48a75dd3-3279-8e65-b3a1-80147deb371a",
     "words": [
       "use",
       "when",

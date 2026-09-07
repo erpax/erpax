@@ -2,18 +2,18 @@
 name: upload
 description: "Use when configuring a Payload upload collection or debugging file handling — image sizes/crop/focal point, mime/file-size limits, storage adapters (R2/S3), static serving, or securing uploaded files."
 atomPath: upload
-coordinate: "upload · 8/crest · b415a4a5"
-contentUuid: "d7f98602-3aa8-508d-827c-3c599c132505"
-diamondUuid: "3bb27685-a787-8c1a-bc12-3289ed922a3c"
-uuid: "b415a4a5-de18-8f3b-9fea-4e4778bdc349"
-horo: 8
+coordinate: "upload · 7/descent · 40df926a"
+contentUuid: "4558c995-ffbd-5012-a129-3d303e6d1edc"
+diamondUuid: "8fa47ac5-c48c-8d3a-8b2f-9dfa411cf2f8"
+uuid: "40df926a-08d1-8e41-bf5c-a16bed1699dc"
+horo: 7
 typography:
   partition: upload
   bondDegree: 32
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fc5f4c33-3f5d-880c-bd7d-639ac8f9915b"
+  computationUuid: "386d89c6-e932-84a8-91e9-3e2d8b3eb949"
   stages:
     - stage: path
       stageUuid: "e30c7cf3-dc39-839e-b6ee-e0ee7164523a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "eb04a93b-d0a6-86bb-81c7-9bc194e86eb8"
     - stage: horo
-      stageUuid: "7d285d94-d2d3-899c-8229-ec3fc0e08c1d"
+      stageUuid: "24f756f8-85b9-88a9-afa5-c8802a8832bd"
     - stage: seal
       stageUuid: "aad8904b-cb0a-86be-8ff1-f2400a2627b3"
     - stage: uuid
-      stageUuid: "911d782e-f150-84df-b29f-c3c042613116"
+      stageUuid: "0889fbe7-4aa0-8cfe-8afe-37223990f358"
 version: 2
 ---
 # upload — file/media collections

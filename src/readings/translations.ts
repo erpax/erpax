@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "readings",
-    "uuid": "5ee0b1b0-0275-8792-b3c8-ec86e32efbf6",
+    "uuid": "06bb1bb9-47d1-8f00-82ba-c58459aae35a",
     "words": [
       "readings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about clinical and biometric readings — a device-collapsed, content-addressed snapshot that feeds the analog result stream; the wire between quantum/device capture and quantum/emr replay.",
-    "uuid": "66f43d2c-5d2d-8be8-a3fb-70f8cd80c0b9",
+    "uuid": "3531e460-b357-810f-bc46-538f056369bc",
     "words": [
       "use",
       "when",

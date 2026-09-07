@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "size",
-    "uuid": "ff9d9c6d-ac64-8984-af30-92c13f6ac44b",
+    "uuid": "95e66b07-b29c-8db3-a4dc-3ce9ec12549e",
     "words": [
       "size"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about size — A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a QuantitativeValue with a unitCode, or a compreh",
-    "uuid": "c9d66e78-f604-8bf7-9027-4868379e34e7",
+    "uuid": "dca89037-3fb8-852e-94a7-05dbe232bb61",
     "words": [
       "use",
       "when",

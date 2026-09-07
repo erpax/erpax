@@ -2,18 +2,18 @@
 name: confucianism
 description: "Use when reading Confucianism as a diamond of invariant atoms — the ordered relations, humaneness as the central virtue, righteousness, and the rectification of names (let the name match the thing) which is literally the identity law. Strip the Chinese prefix and ren, li, yi, zhengming collapse to love, ritual, justice, name/identity — one content-uuid each."
 atomPath: "vocabulary/confucianism"
-coordinate: "vocabulary/confucianism · 8/crest · a2458c48"
-contentUuid: "09e8efc8-951f-54af-8f41-f3de2ec81733"
-diamondUuid: "ed788df3-9a25-822c-91ec-8138f267a3c6"
-uuid: "a2458c48-2ac6-81a0-9389-782d45b24f68"
-horo: 8
+coordinate: "vocabulary/confucianism · 1/base · e7d80da3"
+contentUuid: "987ded05-9b33-56ff-b4c2-4c9ca1e1ffa6"
+diamondUuid: "5115e9db-de0a-89cc-8a44-c32ab2f36601"
+uuid: "e7d80da3-76b8-8a3d-b1e2-946821d7303d"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 65
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2f0e0e45-aa4f-8964-9e63-f15a2868720a"
+  computationUuid: "e6fbfc2a-347e-8c21-bdf9-d438cbc021d0"
   stages:
     - stage: path
       stageUuid: "a01f4c6d-103d-8a65-8d25-18a55f730ed0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "18a27dfb-c7be-8dcc-80ba-375496ff9aa8"
     - stage: horo
-      stageUuid: "ce6d595a-f957-82f9-ab81-f80d5ccda34f"
+      stageUuid: "866c4044-ebce-82a6-8421-888b7bd5f36a"
     - stage: seal
       stageUuid: "9de1bae5-3b36-8a2c-8d24-6569913c46bb"
     - stage: uuid
-      stageUuid: "114f57c1-b9dd-864c-9887-e0f843afdec4"
+      stageUuid: "784eff3b-1203-8228-8f37-56c1ecfadd45"
 version: 2
 ---
 # confucianism — ordered relations; let the name match the thing

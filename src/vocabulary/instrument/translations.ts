@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "instrument",
-    "uuid": "28f1e6e0-826f-8b7f-8735-8f3eda243ff6",
+    "uuid": "288081af-9edb-837e-8672-ab4c9e392656",
     "words": [
       "instrument"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about instrument — The object that helped the agent perform the action. E.g. John wrote a book with *a pen*.",
-    "uuid": "48b5356d-24be-8e14-9f88-b4fd17749c2e",
+    "uuid": "3fd64928-014e-839c-adbe-8c2b8d38b81f",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "98486ff9-a951-84e8-8332-7fb01f34acf5",
+    "uuid": "55da726e-ce12-8100-8130-d3208fb9a17b",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931.",
-    "uuid": "dcb03992-dedf-8eba-abc9-f1964aca19bc",
+    "uuid": "719e6ae5-b92e-8e84-b064-d3ca0975fc92",
     "words": [
       "use",
       "when",

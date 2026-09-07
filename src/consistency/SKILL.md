@@ -2,18 +2,18 @@
 name: consistency
 description: "Use when enforcing or auditing data consistency — ACID properties, eventual consistency vs strong consistency, consistency models (read-after-write, causal), constraint enforcement, synchronization guarantees across replicas or shards."
 atomPath: consistency
-coordinate: "consistency · 4/weave · 5ddbb678"
-contentUuid: "7ab68f06-216d-5797-86c8-2906847bb538"
-diamondUuid: "27ddf14f-cc40-8ffe-aa1b-9f6779d5d8aa"
-uuid: "5ddbb678-a689-8b57-a161-7432457438f6"
-horo: 4
+coordinate: "consistency · 8/crest · 72fa65ee"
+contentUuid: "36fa3c9e-43e3-52e0-89f2-4168db478a19"
+diamondUuid: "31ad8ef0-bc48-88fd-9978-7407bf728a82"
+uuid: "72fa65ee-26c9-88ee-a7a6-c91bda3fa601"
+horo: 8
 typography:
   partition: consistency
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "26643c7b-df57-8aee-aca8-11bd78b6b184"
+  computationUuid: "9e7f2d78-6e83-85c2-95b4-a5c83cf1f9c8"
   stages:
     - stage: path
       stageUuid: "5a173b75-283c-8e8e-b372-6f955f1fa6ea"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "db809132-84c8-8992-9b57-7a4bc35ac1c6"
     - stage: horo
-      stageUuid: "47a80f2d-29cd-8142-8ffe-4490d46baced"
+      stageUuid: "2b2cae53-8950-8fb3-95b1-2ecea7a89c15"
     - stage: seal
       stageUuid: "675e26be-78a1-8589-8c73-6740f640795a"
     - stage: uuid
-      stageUuid: "95d6729d-1734-8b3c-af0b-61bd1f84c81f"
+      stageUuid: "49468b8a-cbe2-8977-bf7b-07bba0127986"
 version: 2
 ---
 # consistency

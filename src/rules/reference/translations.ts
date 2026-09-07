@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reference",
-    "uuid": "a51ea52d-da86-8765-8980-18ed505e1e4e",
+    "uuid": "3fa95728-d85b-86b8-ae12-4d01dae8ebd5",
     "words": [
       "reference"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the statute→code trace must resolve — the gate that a `src/…` path cited in prose or comments actually exists. The corpus fails closed on dead atom links but left dead FILE-PATH pointers ungated, and they rotted: the Наредба Н-18 law pointed at a standards path long after the matter moved. A citation that leads nowhere is unreviewable (ISO-19011 §6.4), so a legally usable ERP cannot have one. Zero tolerance on the statutory surface; a down-only ratchet elsewhere. Run: tsx src/rules/reference/index.ts",
-    "uuid": "0ef7fdad-4245-86a2-b020-b9c80c399bee",
+    "uuid": "2d301bea-314e-8f2f-bb6c-bfee50df9903",
     "words": [
       "use",
       "when",

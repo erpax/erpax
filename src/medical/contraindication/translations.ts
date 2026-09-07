@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contraindication",
-    "uuid": "4ff4238f-746a-83f8-a62d-10b4581ef972",
+    "uuid": "f154ae84-8faa-881c-bb96-43b388601876",
     "words": [
       "contraindication"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about contraindication as a medical facet of medical — vocabulary pivot to @/contraindication; nested not duplicated.",
-    "uuid": "c19744b2-bbe8-8e85-a9f4-3968b46c0d6f",
+    "uuid": "4f55199d-de35-8818-a9bd-72de698a082f",
     "words": [
       "use",
       "when",

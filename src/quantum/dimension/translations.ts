@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dimension",
-    "uuid": "17fa78cf-03de-898c-942a-5bc13aba2cb4",
+    "uuid": "264e56aa-0f17-8520-89d7-a0a59fa4b3d4",
     "words": [
       "dimension"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when projecting the corpus across its quantum dimensions — the dimension identities, plugin surface and coverage results the realtime child streams from. Promoted from a loose sibling; the hyphenated realtime half nests as a child atom rather than a second root file. Run: tsx src/quantum/dimension/index.ts",
-    "uuid": "3a08278a-2860-8ff3-8d89-085a9ee56de3",
+    "uuid": "ec1fa2b9-a092-83f8-bf18-76310ae2bfab",
     "words": [
       "use",
       "when",

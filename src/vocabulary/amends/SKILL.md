@@ -2,11 +2,11 @@
 name: amends
 description: "Use when reasoning about amends as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/amends"
-coordinate: "vocabulary/amends · 7/descent · 8ff6bcb4"
-contentUuid: "d0563e58-8bc4-51cc-99d8-0edba4afb521"
-diamondUuid: "9b81d35d-3caf-83f1-96b2-04d3f9f28611"
-uuid: "8ff6bcb4-69ba-8f47-948b-ea4139774d21"
-horo: 7
+coordinate: "vocabulary/amends · 5/round · 5e668ec5"
+contentUuid: "5f0ab34c-c1c4-5db5-a731-c115e79647cf"
+diamondUuid: "5f60b560-2d6c-8275-ab7c-4b709c92a4c1"
+uuid: "5e668ec5-e358-89d7-9ad3-602417336ef0"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ab63bc6b-f91f-8be0-8f2e-2a2a8f8169f2"
+  computationUuid: "7eaf5e79-a909-82ca-ba30-67fc8e233646"
   stages:
     - stage: path
       stageUuid: "df6f0653-c83d-88ec-b231-e3b60ce41961"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cebc926d-947a-81cb-a903-3ec6949a8135"
     - stage: horo
-      stageUuid: "d6a51f51-80b8-8e5c-bc54-b6f847ee29cf"
+      stageUuid: "a87a6063-354b-87d5-bcf6-9443e937abed"
     - stage: seal
       stageUuid: "a0394d19-8600-82d2-9fd5-88524a44bf6b"
     - stage: uuid
-      stageUuid: "8302df3e-c4d5-88fe-80c5-e1b81e2ff8a5"
+      stageUuid: "adc971b5-26c2-8bba-8490-16f275a1426d"
 version: 2
 ---
 # amends

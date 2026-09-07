@@ -2,10 +2,10 @@
 name: multi
 description: "Use when reasoning about multi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: multi
-coordinate: "multi · 1/base · 81733459"
-contentUuid: "303de25c-18f4-5861-93ee-372db101e2bd"
-diamondUuid: "620b7b43-a014-849c-ba6b-b54358d1a4b2"
-uuid: "81733459-5edf-88ca-a83d-746bb165ed39"
+coordinate: "multi · 1/base · 153572d7"
+contentUuid: "cf63a213-7614-5898-8f56-be0ed3b7f704"
+diamondUuid: "e1b6e0c2-4740-88ca-a099-a6f992b77ff1"
+uuid: "153572d7-4a12-8dfa-92f6-8881008a4ba4"
 horo: 1
 typography:
   partition: multi
@@ -20,7 +20,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4ee5a9de-15f0-89f8-a92f-70a07e775d78"
+  computationUuid: "300fd6d9-6406-8238-b4d2-0a53e4f3c026"
   stages:
     - stage: path
       stageUuid: "bed8a347-3ead-802d-9c4d-1e907b2dd424"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "9eb6b262-e382-8c0d-83a4-30c02ff1e33f"
     - stage: horo
-      stageUuid: "d46c0010-f16b-8483-9815-72dace70d0a8"
+      stageUuid: "9c3cc6d6-5089-87ca-af03-603bbfba0540"
     - stage: seal
       stageUuid: "702ccc2e-60d8-81a5-a5b7-c1702b3df704"
     - stage: uuid
-      stageUuid: "f4acc48e-f8fd-873b-a9e4-c5d4528c8007"
+      stageUuid: "865db2c2-059f-8590-a124-9a8e61310184"
 version: 2
 ---
 # multi

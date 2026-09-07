@@ -2,11 +2,11 @@
 name: jewelry
 description: "Use when reasoning about jewelry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/jewelry"
-coordinate: "vocabulary/jewelry · 7/descent · b453d001"
-contentUuid: "0b77ff53-d15d-5a1e-99eb-d279aa7e9f80"
-diamondUuid: "f8df0856-c0af-8e8a-a1fe-9fbb2ea70c3a"
-uuid: "b453d001-5635-8e9e-9a80-2ff54673a59b"
-horo: 7
+coordinate: "vocabulary/jewelry · 4/weave · 65d86509"
+contentUuid: "bc44d3ba-96b2-5efc-bfbd-484869c7fba1"
+diamondUuid: "7b90161a-6579-8b5e-ab40-48dfd103108d"
+uuid: "65d86509-1f53-89eb-9b1d-660bc2a8320c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2a75201c-33bb-841e-b0a7-0972b1f583f2"
+  computationUuid: "f494f888-7ad3-853d-aea4-f4ca1719c37f"
   stages:
     - stage: path
       stageUuid: "5e96e785-0a2b-81d4-b2c6-0cac23d04029"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b7ae38c7-4d80-8813-9efd-83c0719cf399"
     - stage: horo
-      stageUuid: "537fe3e7-57b6-8651-a88a-2d11438f3703"
+      stageUuid: "4fc29157-d679-8f8f-95ac-90284ade4156"
     - stage: seal
       stageUuid: "23780bf3-32b5-882f-98a4-f296e72da1d9"
     - stage: uuid
-      stageUuid: "537cd037-1fe5-888a-a66f-1e3358b694da"
+      stageUuid: "07b559f6-0a9f-88ec-8c42-d4a3ecc6608d"
 version: 2
 ---
 # jewelry

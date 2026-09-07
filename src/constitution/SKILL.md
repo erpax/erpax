@@ -2,11 +2,11 @@
 name: constitution
 description: "Use when reasoning about the entrenched foundation, or when judging whether a proposed change may ship — two rules at the root (no expectation: claim no result you have not computed; no judgment: reject nothing you have not measured, discernment by test kept), the nine laws that are their lemmas (duality · legality · honest boundaries · balance · service · conservation · reciprocity · reproducibility · regeneration), and the seven supreme articles saying what a majority may amend versus what is perpetual; every predicate computed, fails closed, and heads every agent prompt."
 atomPath: constitution
-coordinate: "constitution · 2/share · c1646cac"
-contentUuid: "b7f2649f-b39d-5d9c-8027-3f37a605ffe1"
-diamondUuid: "20956c90-06ca-8941-875e-63401f2cc6a5"
-uuid: "c1646cac-d0b2-8f7e-b67a-ddc63a6bcd32"
-horo: 2
+coordinate: "constitution · 5/round · f7c9f415"
+contentUuid: "dc28b6a5-7d8b-529e-80ad-68e290aa5ef7"
+diamondUuid: "f4f92594-36e5-8240-bc0d-7e85a7ea7966"
+uuid: "f7c9f415-c445-8551-a515-bb86512f7ed4"
+horo: 5
 typography:
   partition: constitution
   bondDegree: 81
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f15e97d5-fe15-8c77-bf4a-485511679e01"
+  computationUuid: "5fef186e-3557-8ec5-8564-333093369c5d"
   stages:
     - stage: path
       stageUuid: "210a2855-2ef2-8f53-8a65-93ebae61b5f1"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "9815a851-a4c3-86d1-877f-6d59b6ec14e3"
     - stage: links
-      stageUuid: "f884e2b1-1a03-8756-95d8-fa23f5d26198"
+      stageUuid: "a7cbe860-88e4-817d-b587-b9ebc2043b6f"
     - stage: horo
-      stageUuid: "f5b06c7e-12fe-8ca9-8eba-823159c75d5d"
+      stageUuid: "1a517be1-28cd-87fa-80bb-53a1ddcc7e47"
     - stage: seal
       stageUuid: "79d6cdcb-5abc-8ea1-af80-6c8ad39015bf"
     - stage: uuid
-      stageUuid: "6758c958-00aa-821d-afb0-fcec874069ae"
+      stageUuid: "5587bd02-7fc5-8b65-9965-46ffc2760b91"
 version: 2
 ---
 # constitution — the 0 of the sequence, the supreme law erpax derives from

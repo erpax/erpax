@@ -2,11 +2,11 @@
 name: receipts
 description: "Use when issuing, querying, or auditing Наредба Н-18 fiscal receipts — касови бонове and e-receipts (alternative regime) — carrying УНП, fiscal-QR payload, VAT breakdown per tax group, and payment type; tamper-evident via content-uuid audit chain; never deleted. The Н-18 fiscal receipt collection."
 atomPath: receipts
-coordinate: "receipts · 1/base · 0239f73d"
-contentUuid: "704ce5d2-5c5d-57d4-9f74-dafbe88b2325"
-diamondUuid: "c4db8ae4-b0c5-87c9-abb0-fab72064c71e"
-uuid: "0239f73d-b2d1-8a40-97c1-bc0d57f6d640"
-horo: 1
+coordinate: "receipts · 8/crest · 385cdf9e"
+contentUuid: "83827d01-41df-5699-8359-185d280a5d1c"
+diamondUuid: "37bfa00c-ab4d-8d80-b4c3-e8de59df4010"
+uuid: "385cdf9e-46e2-84c8-9cf8-c6bc7c59240f"
+horo: 8
 typography:
   partition: receipts
   bondDegree: 34
@@ -17,7 +17,7 @@ standards:
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "84b717bc-25ca-8149-bb5b-9a389c5f2725"
+  computationUuid: "a5d553ce-4419-836b-918c-bd1c9af34798"
   stages:
     - stage: path
       stageUuid: "a48f65c4-e5f4-82c9-951d-9be7fc45f151"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "ba8a0303-8554-8beb-a5f1-1430b7a3a11d"
     - stage: horo
-      stageUuid: "eb478802-7768-8403-8c18-8a2f9e9d8a22"
+      stageUuid: "0b5189a7-0fc8-860f-be01-1ab322938e51"
     - stage: seal
       stageUuid: "f43e4860-056e-8829-a385-7d5841a42563"
     - stage: uuid
-      stageUuid: "92101e68-dc5a-8ec0-b697-3c3c53941f03"
+      stageUuid: "9b804537-f5fb-84e4-addc-318e97669d90"
 version: 2
 ---
 # receipts

@@ -2,11 +2,11 @@
 name: work
 description: "Use when reasoning about work as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: work
-coordinate: "work · 8/crest · e2c79599"
-contentUuid: "98c12ae6-f1d0-5017-a3db-3a2a96a6c67d"
-diamondUuid: "ce8fd77b-2304-81c5-a7d1-bb6ff64a37e7"
-uuid: "e2c79599-d243-8159-ba97-3a94418f5050"
-horo: 8
+coordinate: "work · 7/descent · 5aa20e0b"
+contentUuid: "cb3e9e88-4bc8-5bce-ad28-a86cee79da62"
+diamondUuid: "ef6d0252-726a-82df-ae83-ba3c620b2c22"
+uuid: "5aa20e0b-02aa-8959-b418-240634fd4ab4"
+horo: 7
 typography:
   partition: work
   bondDegree: 93
@@ -17,7 +17,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "097991ff-e2b1-8d79-869a-b78bf2f9eed0"
+  computationUuid: "ed5d7d6d-bf7d-80cc-a0a5-9a82858bbc82"
   stages:
     - stage: path
       stageUuid: "7c771e81-28fd-8848-8c9f-e0730bfcabda"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "72677b9c-bad7-8b15-b78d-3274892d4f6e"
     - stage: horo
-      stageUuid: "5476e73c-25d7-8a59-882b-e53825aaaf48"
+      stageUuid: "5789c328-332f-889e-ad48-fb37245b8f77"
     - stage: seal
       stageUuid: "8325267a-6fec-8531-a8ff-6aa5060b6e7a"
     - stage: uuid
-      stageUuid: "d9ef9512-14a4-86c4-b2be-c84bc3e07a2f"
+      stageUuid: "6a587e6c-be12-8b0d-a211-be0003f85c09"
 version: 2
 ---
 # work

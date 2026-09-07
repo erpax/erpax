@@ -2,10 +2,10 @@
 name: optometric
 description: "Use when reasoning about optometric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/optometric"
-coordinate: "vocabulary/optometric · 5/round · 5be35195"
-contentUuid: "5248d162-c6c2-52d1-ba8f-b3dcd115a4f7"
-diamondUuid: "fc5b62d2-6952-8cb4-9df9-a817a83b0cd1"
-uuid: "5be35195-a176-8521-90eb-1cf420e16baf"
+coordinate: "vocabulary/optometric · 5/round · 4328ace9"
+contentUuid: "6fc02509-68e6-5687-b12e-fdee76875b5b"
+diamondUuid: "3d9a8531-f086-899d-b974-3a1e300eb5c1"
+uuid: "4328ace9-771d-81d6-a969-2180973d8de0"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "33c9d724-69d3-8d31-a05b-19a900347baf"
+  computationUuid: "d1a300b1-0a45-8944-ba95-b4792ac78289"
   stages:
     - stage: path
       stageUuid: "1164a0ff-3b14-8e74-852a-a382597a686d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "922e7b96-e3db-8a86-ab15-c4d04492984e"
     - stage: horo
-      stageUuid: "393b65f9-5743-8ede-8fe8-23c3e8e05c5e"
+      stageUuid: "bdc83d7e-3dc1-8238-ab94-da9c32efae3c"
     - stage: seal
       stageUuid: "adb3c548-6d6a-839d-a9b9-f586bf0e9546"
     - stage: uuid
-      stageUuid: "d8ce21df-0181-86d3-b78a-76b9bc91f7de"
+      stageUuid: "403b8dbc-62bc-8d4f-a0cb-22f30d263fc2"
 version: 2
 ---
 # optometric

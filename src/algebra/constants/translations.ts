@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "constants",
-    "uuid": "c3f215b2-b363-858b-80c3-dd703a96003d",
+    "uuid": "8e17a5af-b7d9-8dea-960e-cb0210f18cb9",
     "words": [
       "constants"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about constants — Algebra constants — theorems and Algebra interface",
-    "uuid": "835fe187-7e63-8ab4-85e3-1670f4f6f359",
+    "uuid": "b3bb86e8-143e-85ff-9222-5a69d5b9883d",
     "words": [
       "use",
       "when",

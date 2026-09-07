@@ -2,11 +2,11 @@
 name: stage
 description: "Use when reasoning about stage — The stage of the condition, if applicable."
 atomPath: stage
-coordinate: "stage · 4/weave · 7652f1ed"
-contentUuid: "078a4b0b-b437-580f-845c-fc0f715caf56"
-diamondUuid: "657b6875-0c91-83d3-8aa5-9fbfbcd0fa78"
-uuid: "7652f1ed-5283-88bd-9569-3d3135a8affc"
-horo: 4
+coordinate: "stage · 8/crest · 6f785ec7"
+contentUuid: "22867367-0aa1-5c5f-a7c3-b5a084ddd4b2"
+diamondUuid: "10026ad0-018f-833c-b845-0a9b24e99054"
+uuid: "6f785ec7-82e5-876c-8772-627df8c425b4"
+horo: 8
 typography:
   partition: stage
   bondDegree: 31
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "74bfc919-0072-81a0-bd9f-31fbf13b1c8a"
+  computationUuid: "f2d694ea-ac7a-85a0-96d7-18392e4261a6"
   stages:
     - stage: path
       stageUuid: "200f5fb0-ead3-8fdd-8016-43b45376ad89"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6d98ebe8-e926-856e-aa48-fdba44aa08ce"
     - stage: horo
-      stageUuid: "e1826907-2d10-82bd-88a9-70d54c98edeb"
+      stageUuid: "79c55f0e-db04-87e4-8ce5-8381eba2283a"
     - stage: seal
       stageUuid: "f36ed90a-8993-8e29-9831-055c03d80d9a"
     - stage: uuid
-      stageUuid: "f21a937c-6afe-874b-b242-d8e83acddaf9"
+      stageUuid: "d42fc01e-9f41-87a9-9202-9bc15f5e8a57"
 version: 2
 ---
 # stage

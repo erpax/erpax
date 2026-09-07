@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contracts",
-    "uuid": "7e18ea50-ced3-80f1-ad49-1a64d591155b",
+    "uuid": "c12731b0-ab4a-874b-b39d-f27e0ee2d11e",
     "words": [
       "contracts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording, approving, or recognizing revenue from customer contracts — IFRS-15 §10 master record with transaction price decomposition (fixed, variable, financing), performance obligations, contract combination, amendments, and SOX-gated approval. The canonical revenue-contract collection.",
-    "uuid": "edd76951-31e9-80aa-820a-36aa4da2970b",
+    "uuid": "08654976-261c-8999-be9f-8b1d2a223e75",
     "words": [
       "use",
       "when",

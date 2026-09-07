@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "engineering",
-    "uuid": "2904bbb0-a6bb-845b-a398-8234bcc0d701",
+    "uuid": "645343a5-3a87-84ff-b2b8-780832ff459c",
     "words": [
       "engineering"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recovering a system's design from its artifact — the reverse pull of gravity (the binary back to the root words), the inhale of the breath; how erpax absorbs an external system by deriving its structure into content-addressed atoms, for migration, interoperability, defensive audit, and learning.",
-    "uuid": "1c74d6cc-846b-8a80-87f9-74f9e814b5e4",
+    "uuid": "9f810ecb-a24b-810e-9732-e2de99780588",
     "words": [
       "use",
       "when",

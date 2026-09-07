@@ -2,11 +2,11 @@
 name: impaired
 description: "Use when reasoning about impaired as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/impaired"
-coordinate: "vocabulary/impaired · 2/share · 5c76d9e5"
-contentUuid: "b139ff83-31cd-5bbd-aa43-fb0f143eb0fd"
-diamondUuid: "7f107823-ae7e-872e-85e3-19f47f51c2d5"
-uuid: "5c76d9e5-8915-8caf-8306-3d65561b1298"
-horo: 2
+coordinate: "vocabulary/impaired · 5/round · 2b3487c3"
+contentUuid: "15b38e6d-9901-581a-9b7b-f13d7a07d114"
+diamondUuid: "4aca12a7-b0b9-8679-8204-fae951c69683"
+uuid: "2b3487c3-980b-82d1-9c50-fbb9c2c7584f"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cd4a2fc6-2a88-8917-841d-1c62ce8429f0"
+  computationUuid: "6157df6f-df71-8e59-82cc-e1f5956c9871"
   stages:
     - stage: path
       stageUuid: "6fceba9e-7796-8dba-a5bd-ec2080da9cce"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a10f3e16-d8f5-8edf-b442-ff03283f5ae4"
     - stage: horo
-      stageUuid: "adf88bef-814e-8019-b521-cc74d1bf8a1c"
+      stageUuid: "6644ed82-03d6-80ee-9f75-b4a6e5993392"
     - stage: seal
       stageUuid: "52ed362d-30db-821a-96a4-62bd1e98ef05"
     - stage: uuid
-      stageUuid: "9c3889e0-b70a-88b4-b9c1-6d77ef6baef4"
+      stageUuid: "e7e79fcb-072a-892c-84a0-c4f294e20748"
 version: 2
 ---
 # impaired

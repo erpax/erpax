@@ -2,10 +2,10 @@
 name: relation
 description: "Use when reading the id a Payload relationship points at — idOf collapses the three shapes Payload resolves a relationship to (raw string id, numeric id, or the populated document) into one id, or undefined. Depth is a query concern and must not change identity."
 atomPath: relation
-coordinate: "relation · 8/crest · da6f4b21"
-contentUuid: "3cbdca7b-0d9f-58f6-b7d3-43b9325d44e4"
-diamondUuid: "5101d48a-d410-8a9c-957b-2b79d2802c14"
-uuid: "da6f4b21-efb0-8a55-9cee-be844d00e4a3"
+coordinate: "relation · 8/crest · 3713856a"
+contentUuid: "a9e1f097-284d-571e-a246-16ecd6a5d8c1"
+diamondUuid: "3eccb15e-70a4-8a93-95f8-1d24d5eb43a9"
+uuid: "3713856a-127d-82fd-bbb6-801e38e82add"
 horo: 8
 typography:
   partition: relation
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5f2ed26a-b387-8d38-82e0-cc66ee53eff5"
+  computationUuid: "a1aa6908-8545-88a9-969c-bd80df8beea6"
   stages:
     - stage: path
       stageUuid: "db6fe48b-8982-871e-8d50-1d501acc2c2c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2d6f7a21-383d-80d4-b575-f6b92894c54a"
     - stage: horo
-      stageUuid: "274f9476-e6ee-8bb1-b66d-b9e004b07ec4"
+      stageUuid: "9b30177b-6dd2-87f0-bd18-84b399251f6b"
     - stage: seal
       stageUuid: "277aea28-ede4-8274-86aa-cde0b4ec43f6"
     - stage: uuid
-      stageUuid: "d25bb487-b90a-8de8-a614-671f1ad6d7e3"
+      stageUuid: "aa486377-bf77-8fd7-a582-a766543943b2"
 version: 2
 ---
 # relation — a relationship is a value OR the row it points at

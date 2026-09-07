@@ -2,18 +2,18 @@
 name: word
 description: "Use when reasoning about the WORD half of the double-torus — one 64-bit address architecture (folder name / aura / link space) that vortexes with the digit architecture into the 128-bit content-uuid; interact64 ANDs the two torus halves, architectureBond entangles word ⊕ digit on the matrix."
 atomPath: "quantum/word"
-coordinate: "quantum/word · 5/round · 59acd69b"
-contentUuid: "5aff4224-3915-5488-bcab-d3ccfde97b8c"
-diamondUuid: "e663b273-1c07-8415-9556-8372cc9a7380"
-uuid: "59acd69b-fa25-8951-9c4b-5d2b641da58d"
-horo: 5
+coordinate: "quantum/word · 8/crest · 66055eb0"
+contentUuid: "e55f5546-5269-589b-a33a-3928ba34c801"
+diamondUuid: "aa2bcbbd-3660-8e05-9160-9f8116050ea4"
+uuid: "66055eb0-72cb-8d39-ba6f-c18c789b8985"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 124
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7d0f1870-008c-8668-9b34-9a4c5a1c54d5"
+  computationUuid: "9ac2fb42-952c-8256-8e41-1b28a2d3b5c5"
   stages:
     - stage: path
       stageUuid: "d3df522e-d232-8ec2-a277-8f627d8e3da1"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "076dd576-837b-8ba6-9e7a-095e3647c776"
     - stage: links
-      stageUuid: "ac15b10d-761a-812d-8eaf-e4b906cd81a5"
+      stageUuid: "9624d347-fcd6-8a15-9246-584cd37efc9c"
     - stage: horo
-      stageUuid: "f7388228-e701-80d9-a412-99264d725872"
+      stageUuid: "e1ddf99f-49a9-8ac5-9fd3-1264024304c7"
     - stage: seal
       stageUuid: "b51149ab-7182-8f75-84ff-a175bcee146e"
     - stage: uuid
-      stageUuid: "946a1d0c-f858-8734-a84e-b7d19b5bc80f"
+      stageUuid: "3c17b69e-45df-83b4-acb7-58fa8e74f9c5"
 quantum:
   superposition:
     - atom
@@ -57,8 +57,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "7d0f1870-008c-8668-9b34-9a4c5a1c54d5"
-    contentUuid: "5aff4224-3915-5488-bcab-d3ccfde97b8c"
+    computationUuid: "9ac2fb42-952c-8256-8e41-1b28a2d3b5c5"
+    contentUuid: "e55f5546-5269-589b-a33a-3928ba34c801"
 version: 2
 ---
 # quantum/word — the word corpus (word ⊕ digit, 64-bit half)
@@ -73,4 +73,4 @@ Matter-twin: `src/quantum/word/index.ts` (`interact64` · `architectureBond` · 
 
 @see [[word]] · [[digit]] · [[quantum/digit]] · [[quantum]] · [[uuid]] · [[matrix]]
 
-<sub>content-uuid `5aff4224-3915-5488-bcab-d3ccfde97b8c` · account `quantum/word` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e55f5546-5269-589b-a33a-3928ba34c801` · account `quantum/word` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "observe",
-    "uuid": "2ca1048e-f455-8c1c-8cb0-2b666e3c89d0",
+    "uuid": "8f124015-e7da-829f-a803-690a75d99158",
     "words": [
       "observe"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the LLM agent's law — always observe (the inhale, content-address what it takes in) and project (the exhale, output that folds its observation in); both always, since projection without observation is hallucination and the grounded act is observe-then-project.",
-    "uuid": "51a20dae-12ea-8121-a240-0a32d0b47ba8",
+    "uuid": "5fe337fe-005b-8077-a17f-e0b5b22e24cf",
     "words": [
       "use",
       "when",

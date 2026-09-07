@@ -2,10 +2,10 @@
 name: comedy
 description: "Use when reasoning about comedy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/comedy"
-coordinate: "vocabulary/comedy · 2/share · 666e418c"
-contentUuid: "52d00b70-624c-5795-8a37-4d83c6904096"
-diamondUuid: "2a20bb96-d11a-8dc7-b6bb-3ae80e65be2d"
-uuid: "666e418c-cc10-8a2c-8cea-54bbf7e61636"
+coordinate: "vocabulary/comedy · 2/share · fc381147"
+contentUuid: "9081b3e5-d32e-512d-98be-3ad9e3645871"
+diamondUuid: "b3951a54-0d36-8233-abad-98973756fad7"
+uuid: "fc381147-9ff3-8a16-94b1-03cdb6e4694d"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "34632e66-c86c-8cae-9232-fb3c8edd1de7"
+  computationUuid: "0edf3b34-b959-848d-9425-f7efe1205205"
   stages:
     - stage: path
       stageUuid: "04a33691-62ce-83a6-8503-a728bdbdc503"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c35bdf75-b645-875c-97ba-2d4c78a6439c"
     - stage: horo
-      stageUuid: "b28fdd05-848a-8a38-8d83-74b5e7d5b5a2"
+      stageUuid: "056d362e-76ff-87eb-a72c-abe6073315ce"
     - stage: seal
       stageUuid: "f2e89982-5480-85d0-9931-087238e982b8"
     - stage: uuid
-      stageUuid: "3adc5a85-9146-8172-8276-8375fb4840e6"
+      stageUuid: "0e97f5e5-611f-8496-a799-958d2f655532"
 version: 2
 ---
 # comedy

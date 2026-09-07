@@ -2,18 +2,18 @@
 name: training
 description: "Use when delivering, tracking, or assessing skill development — course enrollment, completion, certification, competency gain. The experience record of learning an actor undergoes."
 atomPath: training
-coordinate: "training · 4/weave · 7905c3dd"
-contentUuid: "a5591425-301f-56ef-9a57-09e5d6b23c4c"
-diamondUuid: "2eaf386f-26aa-887d-874a-66cc9ff8f9e7"
-uuid: "7905c3dd-4be2-8334-816c-3319e04542f8"
-horo: 4
+coordinate: "training · 2/share · 0eb32d6d"
+contentUuid: "bb04241e-e03a-511c-9735-2460fa81a5ef"
+diamondUuid: "8f628dcb-800c-811e-8d36-c1bd030a6216"
+uuid: "0eb32d6d-e217-8e46-9bf1-01164fbd280e"
+horo: 2
 typography:
   partition: training
   bondDegree: 32
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5a1c4b9f-a39d-88ac-970d-2d9a977ba093"
+  computationUuid: "cf9842d7-9858-8624-87f1-28c1460154e5"
   stages:
     - stage: path
       stageUuid: "4d23f2ca-df8e-8f4c-9bbb-409c794d3a97"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "00a8b4f9-a618-870b-a790-a36c913ae38f"
     - stage: horo
-      stageUuid: "b7a1ca1f-b8ea-8633-9110-e2c6c8a36aa6"
+      stageUuid: "ce04fa44-8678-82d7-ad0d-27e8ded8f37f"
     - stage: seal
       stageUuid: "d2ea17f7-a59f-8505-b28a-21799696b238"
     - stage: uuid
-      stageUuid: "0f7bf66e-9916-8f4d-9cc0-13dfede4cc98"
+      stageUuid: "875f087c-5388-835b-8a45-aa105fd035a1"
 version: 2
 ---
 # training

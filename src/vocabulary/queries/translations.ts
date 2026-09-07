@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "queries",
-    "uuid": "3985d74e-6a07-8a44-88dd-56dab37449ca",
+    "uuid": "f6072a0a-3622-8512-ae4a-1ebc5360a282",
     "words": [
       "queries"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when building or debugging Payload queries — where filters/operators, sort, pagination, depth, select, populating relationships, joins, or query presets across Local/REST/GraphQL.",
-    "uuid": "dd0982d3-0938-86f9-ae6b-7d9e429f5bd0",
+    "uuid": "adfa4176-91a6-83da-b2bb-7ba6b1fb50b9",
     "words": [
       "use",
       "when",

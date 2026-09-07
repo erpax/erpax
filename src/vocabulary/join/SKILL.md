@@ -2,11 +2,11 @@
 name: join
 description: "Use when reasoning about join as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/join"
-coordinate: "vocabulary/join · 5/round · 14460c1b"
-contentUuid: "695a460b-8994-5d97-8fbb-6539cfbf5e99"
-diamondUuid: "d6372020-d351-855b-bfac-1a1a009017fb"
-uuid: "14460c1b-6b52-8d91-85c9-47cbbe373927"
-horo: 5
+coordinate: "vocabulary/join · 2/share · a25e3895"
+contentUuid: "6a77293f-1406-5108-ada4-67e1225061ca"
+diamondUuid: "47b42316-1037-8175-a79e-f1bfd1632d20"
+uuid: "a25e3895-518c-89d3-83d7-536189a5d3c2"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "459b3fa2-c113-8adf-a2ad-c598ee4d4cf1"
+  computationUuid: "fecfd816-4b9f-86a0-a8c2-bb0cbeccd971"
   stages:
     - stage: path
       stageUuid: "1d2692e8-48d6-8c7e-9c2c-e6784df86adc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3401564c-4004-8162-bcec-263b414e6681"
     - stage: horo
-      stageUuid: "d4444ea2-4779-8ff6-96ee-478f3caec8f0"
+      stageUuid: "66d84237-bc0c-8ef7-902e-876a1d357a4a"
     - stage: seal
       stageUuid: "9c0bb655-b109-84f5-b6af-4016fd7edf5a"
     - stage: uuid
-      stageUuid: "de865209-b472-8847-b79c-96d18095a0ea"
+      stageUuid: "f4b2b5dd-8fd2-8f4a-9e8a-dc0d12382256"
 version: 2
 ---
 # join

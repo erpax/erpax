@@ -2,18 +2,18 @@
 name: islam
 description: "Use when reading Islam as a diamond of invariant atoms — submission to the absolute One, mercy opening every recitation, the ninety-nine names as facets of one, the five daily alignments, the fast and the alms. Strip the Arabic prefix and tawhid, rahma, iman, salam collapse to one, mercy, faith, peace — one content-uuid each."
 atomPath: "vocabulary/islam"
-coordinate: "vocabulary/islam · 8/crest · 60959f0e"
-contentUuid: "86809614-58af-5bda-a63b-0b8ea9017f18"
-diamondUuid: "4f2d82bb-3aa8-898a-9b65-938e52bc8daa"
-uuid: "60959f0e-5493-8aae-a917-2b382751518c"
-horo: 8
+coordinate: "vocabulary/islam · 4/weave · 9ddd4c6c"
+contentUuid: "8030e4e4-75c6-52ae-a061-b38bc69f3cdd"
+diamondUuid: "0ec2d021-1079-89b0-910f-ef28968311ed"
+uuid: "9ddd4c6c-b267-8870-aa24-3912f1f9b2f2"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 86
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bb620753-8f51-85a6-b08a-c5aa5c397ba9"
+  computationUuid: "248fdb94-964c-894b-a752-2ba8cf106f0f"
   stages:
     - stage: path
       stageUuid: "f442b852-e7b2-8d6a-957a-695614cc5c70"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "15a0c986-6170-8021-9c6c-9eece138c461"
     - stage: horo
-      stageUuid: "a7757b88-0db8-8017-b1f5-db26d85a03ad"
+      stageUuid: "a8e766cc-2ebe-82b6-9219-31af86033b83"
     - stage: seal
       stageUuid: "4f67d7a1-f4e0-8483-8f4b-5f45468053cd"
     - stage: uuid
-      stageUuid: "54cf07d0-a18e-8ea8-90b4-78bcc591df01"
+      stageUuid: "7039e7e2-b061-87c5-a8fe-0c4dc6544856"
 version: 2
 ---
 # islam — submission to the One, mercy opening every word

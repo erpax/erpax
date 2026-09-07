@@ -2,11 +2,11 @@
 name: currency
 description: "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name."
 atomPath: currency
-coordinate: "currency · 5/round · c74dca10"
-contentUuid: "8581d4f4-0fa5-5182-bdf5-cb72a6413ed7"
-diamondUuid: "a54d7cfc-3f7e-8142-88fa-b77aaf5c6274"
-uuid: "c74dca10-e9bf-84e3-b396-8f1a38e5ada6"
-horo: 5
+coordinate: "currency · 1/base · 3ebc8205"
+contentUuid: "d9db7f4b-6350-5bf9-be7d-9d8ac5f53d8f"
+diamondUuid: "681f5d78-3c20-8cc3-b5cd-fdae3803a1ae"
+uuid: "3ebc8205-eb79-8df9-abb0-31abfa6a8d01"
+horo: 1
 typography:
   partition: currency
   bondDegree: 145
@@ -25,7 +25,7 @@ standards:
   - "SAF-T"
 bindings: []
 signatures:
-  computationUuid: "6af9e8f4-1bee-83c7-bdc8-1786f32916ad"
+  computationUuid: "203b98b2-b61e-898e-bca8-ebec73c37e04"
   stages:
     - stage: path
       stageUuid: "88086f14-e2e7-866a-8bde-e04e3b3e732a"
@@ -34,13 +34,13 @@ signatures:
     - stage: boundary
       stageUuid: "073e76e1-7359-8297-8ab1-c32a9cf23e8b"
     - stage: links
-      stageUuid: "9b190c3c-d14a-8729-8fc3-0a24b36f689b"
+      stageUuid: "3a104531-9b42-85dc-9292-d7398b11c252"
     - stage: horo
-      stageUuid: "c5a77b4f-7c46-8cfd-ad41-b1d12c9a2034"
+      stageUuid: "141b0fa8-5563-80cc-999c-6b820b2fe1b0"
     - stage: seal
       stageUuid: "b3024b56-3245-8e63-8c3d-aa51dde15274"
     - stage: uuid
-      stageUuid: "a6b1ff1d-9954-8ef8-b7e1-a9a26bc565c4"
+      stageUuid: "9dd7318a-b405-8bc4-97c5-10d764a5cba6"
 version: 2
 ---
 # currency — money is amount + ISO-4217 code (never baked into the name)

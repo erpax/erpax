@@ -2,10 +2,10 @@
 name: digit
 description: "Use when storing numeric or realtime data the way words are stored — one folder per digit (0-9), crosslinked exactly like the word atoms; the numeric corpus is the twin of the word corpus, the word and digit duality, and a stream of digits is realtime data addressed by position."
 atomPath: "quantum/digit"
-coordinate: "quantum/digit · 1/base · d09e9644"
-contentUuid: "82204cc7-7625-5191-96b8-fd5e0fb61d52"
-diamondUuid: "c835f732-bc56-80ca-85fb-a1e56fc2a6b7"
-uuid: "d09e9644-7f86-8c73-a6a9-a112563ad935"
+coordinate: "quantum/digit · 1/base · a613a6d5"
+contentUuid: "dc439afe-9d7f-5fa2-82e2-43c896e66781"
+diamondUuid: "342c52ec-a95a-8722-a2b3-3be6a16f15ef"
+uuid: "a613a6d5-d88d-835d-9de4-623b6b965d33"
 horo: 1
 typography:
   partition: quantum
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "20627d71-9b12-8ca3-9033-ea795bc04d81"
+  computationUuid: "03c66a13-1a51-8bbc-9463-6d2f42bbcecd"
   stages:
     - stage: path
       stageUuid: "f06c9941-f2ab-8c8a-9812-f185dbe1b169"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "b4e43f8d-caed-86f7-8cf0-738d3c9c3460"
     - stage: links
-      stageUuid: "affbe1c0-2ea2-8512-a11b-47146a5602ad"
+      stageUuid: "3833dce9-e851-8d6d-a09c-2a728b8137da"
     - stage: horo
-      stageUuid: "d39de927-f858-841c-84f2-ededd1c1d589"
+      stageUuid: "27711ab7-6c0a-839b-9bdf-91098211b188"
     - stage: seal
       stageUuid: "b476b9c2-1da7-898f-9e44-daa502db1bf4"
     - stage: uuid
-      stageUuid: "1d95a685-20a6-813a-b31a-ffc7c7a2f087"
+      stageUuid: "c0b5c720-020d-82e0-be27-7b86715a2285"
 quantum:
   superposition:
     - atom
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "20627d71-9b12-8ca3-9033-ea795bc04d81"
-    contentUuid: "82204cc7-7625-5191-96b8-fd5e0fb61d52"
+    computationUuid: "03c66a13-1a51-8bbc-9463-6d2f42bbcecd"
+    contentUuid: "dc439afe-9d7f-5fa2-82e2-43c896e66781"
 version: 2
 ---
 # quantum/digit — the digit corpus (word ⊕ digit)
@@ -72,4 +72,4 @@ Where a [[word]] is discrete and named, a digit is continuous and counted — th
 
 @see [[digit]] · [[word]] · [[quantum/number]] · [[sequence]] · [[stream]] · [[uuid]] · [[matrix]] · [[analog]]
 
-<sub>content-uuid `82204cc7-7625-5191-96b8-fd5e0fb61d52` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc439afe-9d7f-5fa2-82e2-43c896e66781` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

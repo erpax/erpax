@@ -2,11 +2,11 @@
 name: continuation
 description: "Use when reasoning about continuation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/continuation"
-coordinate: "vocabulary/continuation · 2/share · b68db5ff"
-contentUuid: "2f0f3270-50cc-585e-bdb0-acfa7fce41f5"
-diamondUuid: "5a6dfe8e-e24f-875a-b6d3-f1bc42fab42b"
-uuid: "b68db5ff-805f-89d1-a764-1fcc4a44190e"
-horo: 2
+coordinate: "vocabulary/continuation · 1/base · c4b6b975"
+contentUuid: "af28cf09-a5f1-5879-b670-d10ebc08ab9b"
+diamondUuid: "67fb8a9d-e164-8c24-a7fc-6ccfcf352d59"
+uuid: "c4b6b975-18e1-8512-a044-c6810b550aa7"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "50fff931-e519-8f3d-b8b9-e32f666a0fcf"
+  computationUuid: "50f29208-13e5-8d72-ba99-370795095aca"
   stages:
     - stage: path
       stageUuid: "5f8c7b5e-9bb3-8dbe-a922-0a1e8f78bb83"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5be2b95a-d5b2-89b0-98da-b93c3ef687a2"
     - stage: horo
-      stageUuid: "8bd41497-a2d0-8aa2-a148-4dea2ee8343d"
+      stageUuid: "077fa39a-a37d-8d9c-ac21-ddc75af3fc9d"
     - stage: seal
       stageUuid: "38de475b-49c6-8e29-8205-6bffb0183230"
     - stage: uuid
-      stageUuid: "893a05b8-957e-8634-b180-f99d98460e97"
+      stageUuid: "4b4af6b5-7fa7-820d-bc2f-2a143c3165aa"
 version: 2
 ---
 # continuation

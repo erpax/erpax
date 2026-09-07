@@ -2,10 +2,10 @@
 name: occupational
 description: "Use when reasoning about occupational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/occupational"
-coordinate: "vocabulary/occupational · 1/base · c8e7094b"
-contentUuid: "6a323d10-1cc4-5ba3-a46c-e8542f1ca11d"
-diamondUuid: "e20b5f9e-0a77-844f-ba04-1a9e7e97a3bf"
-uuid: "c8e7094b-470b-8cfc-b085-5448b203d629"
+coordinate: "vocabulary/occupational · 1/base · e01620ca"
+contentUuid: "9515f83e-94e5-5fa9-aeb2-3a772c7cb10e"
+diamondUuid: "cfccc9e8-8383-88ab-b459-8aa818a171d0"
+uuid: "e01620ca-8c88-8f64-acb1-34d08cadd859"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f319d272-7a1c-8827-b870-5760724383d4"
+  computationUuid: "090ab7fe-323d-8a8e-84cb-1c33117f646d"
   stages:
     - stage: path
       stageUuid: "96c2fef9-379d-8e2d-b2dd-29fedeba4903"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "08ac5c26-28b5-87dc-a45b-fc36140045b9"
     - stage: horo
-      stageUuid: "d3cd9411-1ceb-8f54-8dfd-4fbdda4365d3"
+      stageUuid: "b7f4e4d1-7ccc-8fc0-8a63-f95cf0d10cbf"
     - stage: seal
       stageUuid: "6b844962-d7fe-82c3-a2f0-a62973175173"
     - stage: uuid
-      stageUuid: "412fcb97-8892-8a6e-8d30-803ab87c7228"
+      stageUuid: "1160c010-ff49-841d-9009-e8e856af1496"
 version: 2
 ---
 # occupational

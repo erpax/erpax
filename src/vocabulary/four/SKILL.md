@@ -2,11 +2,11 @@
 name: four
 description: "Use when reasoning about four as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/four"
-coordinate: "vocabulary/four · 7/descent · 926ee7b5"
-contentUuid: "fa85381b-03fb-55ea-a75c-da679b214bc5"
-diamondUuid: "2205e547-1d81-8814-923b-b8fc630393b6"
-uuid: "926ee7b5-7cf8-86df-bc57-d8a8de29a44d"
-horo: 7
+coordinate: "vocabulary/four · 2/share · 86374b94"
+contentUuid: "598cdeb7-2623-546d-81aa-8134f9ac00f0"
+diamondUuid: "73140d52-3bde-89ad-afdb-cf1c700a7744"
+uuid: "86374b94-bba9-8b8b-976f-66016ceff130"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "51f60d25-65d5-8e00-bac2-143de0fa94fd"
+  computationUuid: "efae058f-695d-8e03-ae9e-8b82e40a1653"
   stages:
     - stage: path
       stageUuid: "8c89b0e0-b8ea-8586-939d-037009df6c51"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "318aafda-2d29-8959-b0f8-94696671445a"
     - stage: horo
-      stageUuid: "28d28e4e-fc2b-853f-a2f9-c83496df9540"
+      stageUuid: "9766c2a8-3cba-8883-bb56-3dcfea3eda88"
     - stage: seal
       stageUuid: "6a2d0c41-cf77-8bd6-85bb-97f2b7ad3600"
     - stage: uuid
-      stageUuid: "0e93a939-b75b-84e8-b191-5639816ee2ab"
+      stageUuid: "80ddea0a-cf95-8593-8c1b-84b7c7438504"
 version: 2
 ---
 # four

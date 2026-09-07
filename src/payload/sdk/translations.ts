@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sdk",
-    "uuid": "83d3b247-918d-8e20-8ba6-0db2905f4529",
+    "uuid": "0509243b-5465-877c-908c-735c4cbe26cd",
     "words": [
       "sdk"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sdk — resolves the API base URL for the runtime it finds itself in, then returns a singleton in the browser and a fresh instance on the server.",
-    "uuid": "a50e8204-e96a-8001-b1f0-cb5853df401b",
+    "uuid": "94fa6281-af78-8862-abbe-4d02b50af757",
     "words": [
       "use",
       "when",

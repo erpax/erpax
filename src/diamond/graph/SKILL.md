@@ -2,10 +2,10 @@
 name: graph
 description: "Use when reaching the diamond as a GRAPH — atoms and the bonds between them — through its own namespace; the face re-exports the diamond barrel while the matter is still being lifted out of the hub."
 atomPath: "diamond/graph"
-coordinate: "diamond/graph · 2/share · 59d1d2c8"
-contentUuid: "ee3e287b-96e6-528e-b187-aa6acadb383f"
-diamondUuid: "04d806c4-eca9-8a4e-8274-bc7b978da987"
-uuid: "59d1d2c8-2c56-814a-a349-5cc134988de0"
+coordinate: "diamond/graph · 2/share · 02092670"
+contentUuid: "75124dc3-ee6a-523e-8b6e-16aed7c3d42d"
+diamondUuid: "43c1352b-d58b-8b02-8397-a2c33c2d8e8b"
+uuid: "02092670-7feb-89b2-bbcb-d2c8992fd30a"
 horo: 2
 typography:
   partition: diamond
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "76415128-551a-87b0-b6aa-3d779644e0b4"
+  computationUuid: "d4bbf458-8642-8ce7-8641-c42ea84a750c"
   stages:
     - stage: path
       stageUuid: "3f20a1eb-be55-82cf-9420-bb5ee752da1f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b99f07d9-7c8e-876f-b190-47850625c816"
     - stage: horo
-      stageUuid: "71c8b34b-803b-8e24-b4cc-2f29c66becff"
+      stageUuid: "801b239d-5265-897b-a9d0-62cdc69f6d29"
     - stage: seal
       stageUuid: "ecd99946-6efe-8ea6-a356-3f68868352e0"
     - stage: uuid
-      stageUuid: "636567b0-1da2-8679-93bb-41cd9dfe18ce"
+      stageUuid: "b9aa3ebd-1b21-8c37-bc5c-622f378b0d7e"
 version: 2
 ---
 # diamond/graph — the graph face of [[diamond]]

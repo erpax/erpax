@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mentions",
-    "uuid": "711838f7-8e92-85a8-a781-710d9a114915",
+    "uuid": "2c89b790-2948-8774-97a2-392532ccd5bf",
     "words": [
       "mentions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about mentions — Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",
-    "uuid": "3b8504f5-c397-86b5-9f91-3cbb68525035",
+    "uuid": "cf4206fe-cffb-8c65-b1d8-8fe7e0a44a66",
     "words": [
       "use",
       "when",

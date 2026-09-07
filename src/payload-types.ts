@@ -14838,7 +14838,7 @@ export interface McpToolMetadatum {
 /**
  * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
  *
- * — diamond-uuid: c3f00f23-3ce3-8898-bcd9-0ed032a19b2e
+ * — diamond-uuid: 12c176d7-6475-8521-adb2-b1f8e856e704
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "memories".
@@ -17857,7 +17857,7 @@ export interface Share {
 /**
  * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
  *
- * — diamond-uuid: 8f948f71-2204-872d-8163-bc9abad3053e
+ * — diamond-uuid: fb4c8703-4706-8613-b18a-45734eae74b3
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "standards".
@@ -18757,7 +18757,7 @@ export interface TransferPricingFile {
 /**
  * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
  *
- * — diamond-uuid: 069768de-bc01-8835-bef8-2ffc4753f9f8
+ * — diamond-uuid: 15750d7f-f238-8084-9bf0-d219630b0ea6
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "translations".

@@ -2,18 +2,18 @@
 name: plan
 description: "Use when a scored gap must become one executable tip — planTrinity builds FORM ⊗ CODE ⊗ PROOF, and isPreciseTip refuses anything vaguer, so 'continue improving' can never be emitted."
 atomPath: "self/improve/tip/plan"
-coordinate: "self/improve/tip/plan · 7/descent · b7fb9ed9"
-contentUuid: "98da0cfa-706e-5588-8a34-d70b3249ce04"
-diamondUuid: "d0e1ad28-fdaa-868a-bf24-41a4f2efa66a"
-uuid: "b7fb9ed9-ae03-89f8-8af6-8860840ebe6f"
-horo: 7
+coordinate: "self/improve/tip/plan · 2/share · c659667c"
+contentUuid: "971a96cb-53f9-5675-a9cb-1a792460bc7b"
+diamondUuid: "7a1f9c1e-bd3b-898a-b1af-b8127590ebce"
+uuid: "c659667c-dae5-8fd5-8168-4dc07629e284"
+horo: 2
 typography:
   partition: self
   bondDegree: 118
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b9d22a1e-b8d3-8a24-9330-ad3538449541"
+  computationUuid: "2629a0e8-43c8-82cc-9c67-04a595214fe6"
   stages:
     - stage: path
       stageUuid: "51153109-f4a6-88ff-b6b4-2fbac640b4d1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f42782a2-462b-8573-8e91-77b8c17424c9"
     - stage: horo
-      stageUuid: "faa721e4-e6de-810c-9d95-0cfc359c2ee1"
+      stageUuid: "402c57e9-4b56-88c2-9d52-22c6aa89ab6a"
     - stage: seal
       stageUuid: "2c8317ad-a78d-8153-8792-06053566087b"
     - stage: uuid
-      stageUuid: "aa91de73-f371-8aac-ba95-66e50fa9a9a2"
+      stageUuid: "69200d8a-bc4b-8bca-83b0-cd18969f4e66"
 version: 2
 ---
 # self/improve/tip/plan — one gap, one executable tip, or a refusal

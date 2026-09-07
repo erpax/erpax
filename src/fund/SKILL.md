@@ -2,18 +2,18 @@
 name: fund
 description: "Use when reasoning about fund — erpax booked government grants correctly under IAS 20 — 31 fields, clawback provisions, the funded asset, the granting authority."
 atomPath: fund
-coordinate: "fund · 5/round · f6199716"
-contentUuid: "925a2545-4fea-5170-aa95-a7b5dce45b4d"
-diamondUuid: "2662c896-9b6f-8d79-885e-24eda102cdc0"
-uuid: "f6199716-f433-8b58-9fc9-1fa99dffec03"
-horo: 5
+coordinate: "fund · 1/base · 49bfa961"
+contentUuid: "f290b7ba-ea82-5a36-aeac-6165bd6fac0a"
+diamondUuid: "b598e4b4-4b1a-88b0-acff-e4a84c72b21b"
+uuid: "49bfa961-327c-8c73-aba1-178f779b2136"
+horo: 1
 typography:
   partition: fund
   bondDegree: 17
 standards: []
 bindings: []
 signatures:
-  computationUuid: "25e55812-4040-861f-b86c-de29f9a7fbaa"
+  computationUuid: "7d2a2d53-e832-8ec9-a87e-bd4dbeba543a"
   stages:
     - stage: path
       stageUuid: "b02dcc61-764c-8cca-bba7-b6e122050044"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0991bdc5-e3ce-8232-bf80-0fbee86f4f38"
     - stage: horo
-      stageUuid: "9911e4d2-543a-8aaa-8de8-1770becf0bd6"
+      stageUuid: "4bcd93f4-3fb4-8cde-854a-cd50b5a4b529"
     - stage: seal
       stageUuid: "57410021-8182-87bd-b1b3-4c84125a86d0"
     - stage: uuid
-      stageUuid: "379c9061-0263-829e-b00f-bf2e2513e6fd"
+      stageUuid: "d20a9898-0220-8e90-9a7f-fd2ac2491a2e"
 version: 2
 ---
 # fund — the award was a table nothing could point at, and one zero capped every domain

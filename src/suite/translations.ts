@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suite",
-    "uuid": "a474dc07-c877-8af3-a250-d2d05d5f0881",
+    "uuid": "b15fdf90-c712-8c32-9f39-7532d0f55695",
     "words": [
       "suite"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about suite — A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, se",
-    "uuid": "7c9d9512-0ffe-8e32-95ee-630eec4d07f0",
+    "uuid": "d45940cc-5415-8513-b321-30525e40a22d",
     "words": [
       "use",
       "when",

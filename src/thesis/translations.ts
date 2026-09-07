@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "thesis",
-    "uuid": "ef5f74ce-903d-851c-91e2-c38d736f3d13",
+    "uuid": "72af7f75-b5bf-8b0d-88ec-2eb0f6d22f83",
     "words": [
       "thesis"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about thesis — A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.",
-    "uuid": "d8864f0a-0509-8d5b-a0a5-440914b88a25",
+    "uuid": "5103a8e8-2eba-8828-b54a-8a6d4e2a710a",
     "words": [
       "use",
       "when",

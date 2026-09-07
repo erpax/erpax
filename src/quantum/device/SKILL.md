@@ -2,18 +2,18 @@
 name: device
 description: "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain."
 atomPath: "quantum/device"
-coordinate: "quantum/device · 8/crest · 0a758547"
-contentUuid: "904b9953-a14d-516d-948a-4d6540c57f12"
-diamondUuid: "9fb1443f-2621-8592-a0c3-17792b701f97"
-uuid: "0a758547-63f7-8e7c-a548-81fff7193384"
-horo: 8
+coordinate: "quantum/device · 1/base · c0fc63fe"
+contentUuid: "6feafb01-5ef0-58e0-8005-b3b558a6d85c"
+diamondUuid: "2751a732-a1e9-87d2-a4b5-2e79a29d411d"
+uuid: "c0fc63fe-567c-8a38-8280-f40404fdc3f1"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 97
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a6952fb5-03b3-80a9-af79-102125afd151"
+  computationUuid: "e8718b0c-b12d-8d44-a236-b19f250653bf"
   stages:
     - stage: path
       stageUuid: "225454fc-327d-859d-bf56-45cec052be2b"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "2fbe82b3-9c40-8b5c-a38a-6372d928e6a8"
     - stage: links
-      stageUuid: "c75add25-7639-8fd0-945e-284d26f9babd"
+      stageUuid: "9c5dce20-b961-8d72-a15b-82c1649fb8df"
     - stage: horo
-      stageUuid: "12dd2f1d-83d8-879e-aa0e-60b40a3c51ac"
+      stageUuid: "4494b3ed-1323-8785-a962-424f6c7eb9c3"
     - stage: seal
       stageUuid: "cbd3726a-b32c-851f-9de4-8b730f12369a"
     - stage: uuid
-      stageUuid: "7bfd69d2-2f58-8992-98b5-3bccb3d3f759"
+      stageUuid: "1d41dbec-e288-838a-8c77-938c6162fa40"
 quantum:
   superposition:
     - analog
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: true
     speechResults: false
-    computationUuid: "a6952fb5-03b3-80a9-af79-102125afd151"
-    contentUuid: "904b9953-a14d-516d-948a-4d6540c57f12"
+    computationUuid: "e8718b0c-b12d-8d44-a236-b19f250653bf"
+    contentUuid: "6feafb01-5ef0-58e0-8005-b3b558a6d85c"
 version: 2
 ---
 # quantum/device — the measurement instrument
@@ -75,4 +75,4 @@ Edge law: **capture on the device, compute pure on the Worker** — `getUserMedi
 
 @see [[device]] · [[measurement]] · [[reality]] · [[analog]] · [[sensory]] · [[snapshot]] · [[biometric]] · [[coherence]] · [[finality]]
 
-<sub>content-uuid `904b9953-a14d-516d-948a-4d6540c57f12` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `6feafb01-5ef0-58e0-8005-b3b558a6d85c` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

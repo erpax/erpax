@@ -2,11 +2,11 @@
 name: batches
 description: "Use when creating or tracing a lot/batch of material or product — GS1 AI(10) lot number, manufacture/expiry dates, quality status, parentBatches genealogy for EU 178/2002 one-step-back recall, pharma/automotive traceability. The batches collection."
 atomPath: "items/batches"
-coordinate: "items/batches · 8/crest · 5caf5f1b"
-contentUuid: "178990d6-9b64-5b15-93f3-dea482a8113c"
-diamondUuid: "e5d914f9-af81-8d03-83cf-8bf727e3d250"
-uuid: "5caf5f1b-28b7-87e6-9d5c-03c5d6193e64"
-horo: 8
+coordinate: "items/batches · 1/base · f71cd101"
+contentUuid: "cde63bed-25d7-5892-bda0-fc2c10cfe436"
+diamondUuid: "9c3c1a8a-d203-8325-a350-f7ce25a18c95"
+uuid: "f71cd101-b38d-867a-9892-517b69548cca"
+horo: 1
 typography:
   partition: items
   bondDegree: 21
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7128f237-3a9d-8da2-a18d-538149881faa"
+  computationUuid: "d4df535c-a8a2-860d-9154-183a0e2a582c"
   stages:
     - stage: path
       stageUuid: "aefe3c34-f084-86b3-ad32-498d7d774cbb"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "840869f7-3c68-8539-ad9f-445dd151baeb"
     - stage: horo
-      stageUuid: "d5f8ca9c-566f-82d5-9aa1-d37bf8f4e338"
+      stageUuid: "6ab77708-76d6-8074-a522-a486aa524d7c"
     - stage: seal
       stageUuid: "bd80cad1-0b2f-842a-82a5-de59947139f1"
     - stage: uuid
-      stageUuid: "ec9db766-5741-80d5-9cbd-3e7e30db51a5"
+      stageUuid: "a498c940-9814-842a-b956-829c00371f30"
 version: 2
 ---
 # batches

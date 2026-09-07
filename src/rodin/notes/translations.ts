@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "notes",
-    "uuid": "d6157bf9-c436-8aab-93ef-4777e1dfb511",
+    "uuid": "1e181ecf-9fca-82dc-874b-684b470c972a",
     "words": [
       "notes"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sound from sequence position in erpax — the seven horo positions ARE seven diatonic notes, just-intonation ratios over A432 (La=A=432 Hz at the round step), Ti resolves to Do as the ring closes. The sound twin of cmyk. Nested under rodin.",
-    "uuid": "25db5e98-a7a8-83cc-8303-ade007f2dadc",
+    "uuid": "598b9b3f-0d49-8c0c-a4af-e9d2947d3c26",
     "words": [
       "use",
       "when",

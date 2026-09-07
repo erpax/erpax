@@ -2,11 +2,11 @@
 name: inspections
 description: "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts."
 atomPath: "items/quality/inspections"
-coordinate: "items/quality/inspections · 8/crest · d1f91891"
-contentUuid: "178201ba-733b-574e-85bc-bfc23814496d"
-diamondUuid: "97f8ab57-8063-8e39-a61f-714327b51c93"
-uuid: "d1f91891-7a60-8511-b087-31a266c826ba"
-horo: 8
+coordinate: "items/quality/inspections · 1/base · b4adca91"
+contentUuid: "c0225fbd-07a9-533d-be51-1d9364b6c217"
+diamondUuid: "6b709672-e207-8900-903e-5a986c045a85"
+uuid: "b4adca91-b4e0-85f3-b413-ff84b910b8b1"
+horo: 1
 typography:
   partition: items
   bondDegree: 33
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3c7a464f-4480-8bb8-9adc-97089f0925f6"
+  computationUuid: "1aaf6ecd-0d2d-872d-943a-a35822776428"
   stages:
     - stage: path
       stageUuid: "0834a322-004d-889e-b174-a48dca66cacf"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "45d31dd3-eb97-8bd8-9a1d-0cb4a715a236"
     - stage: horo
-      stageUuid: "d70344ea-4a26-8b83-a6ca-40662593aeae"
+      stageUuid: "d6467860-3921-8b9f-bd58-47df30328aaa"
     - stage: seal
       stageUuid: "c4b9f3de-9b2f-8be9-ba4d-32b708ca009f"
     - stage: uuid
-      stageUuid: "a633ba7b-1d61-8b5e-97b5-4eac0920bf0a"
+      stageUuid: "d48431d8-163c-8181-8b1a-67e3ad4098a4"
 version: 2
 ---
 # quality-inspections

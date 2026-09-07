@@ -2,11 +2,11 @@
 name: muscle
 description: Use when reasoning about muscle — A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.
 atomPath: "vocabulary/muscle"
-coordinate: "vocabulary/muscle · 4/weave · 40eb4365"
-contentUuid: "2cf06b4c-bea6-5e90-b33f-718f63e9e7dd"
-diamondUuid: "e5e2e17d-56ad-8fe6-aea9-c96197968465"
-uuid: "40eb4365-61a3-8399-a698-8d1db3110ab5"
-horo: 4
+coordinate: "vocabulary/muscle · 5/round · d94e9be8"
+contentUuid: "0b96cb65-599a-5761-a5c9-3f5ddc38711c"
+diamondUuid: "2f0a928e-2fb7-89ad-a9e8-8b7e76125403"
+uuid: "d94e9be8-22ed-88bd-82ae-5018ea730ab4"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "abaf7dc6-4053-812f-bc1a-91e5fb4a6096"
+  computationUuid: "dad322cf-17b6-8b49-b7ac-61582c194f35"
   stages:
     - stage: path
       stageUuid: "1f677656-52f7-8a64-8d94-5ebe5cd2b202"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e1b0229b-0099-838f-a637-f0e162721a4a"
     - stage: horo
-      stageUuid: "2e149de3-0292-805b-92f0-262d91a5f01f"
+      stageUuid: "54cc99cf-dafa-8457-b2f0-0e270c1dd5e5"
     - stage: seal
       stageUuid: "d2a0dcd8-46ce-8cbe-8e9e-39f6119a3a9c"
     - stage: uuid
-      stageUuid: "50194dc7-0f95-8778-a8e2-1eae344b3b0d"
+      stageUuid: "e2f023ea-7425-8205-9b63-ec990b57797f"
 version: 2
 ---
 # muscle

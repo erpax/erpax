@@ -2,11 +2,11 @@
 name: funding
 description: Use when reasoning about funding — A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo.
 atomPath: "vocabulary/funding"
-coordinate: "vocabulary/funding · 4/weave · 2793dcb4"
-contentUuid: "1761b67a-702b-5b44-8afd-3c57c0c5174d"
-diamondUuid: "eb2dbc6b-2bb2-8496-bfaf-eea802af4716"
-uuid: "2793dcb4-edbb-86cf-84b7-3308918e8004"
-horo: 4
+coordinate: "vocabulary/funding · 8/crest · 83a780fb"
+contentUuid: "055bb60b-d9fc-5dda-a279-3648b715e221"
+diamondUuid: "edecba90-3a98-8e03-84c5-1e1d028cd815"
+uuid: "83a780fb-82b9-8169-b4ff-01d1895f29b5"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5da4e24b-32a1-8409-bb96-bb4770d93ed1"
+  computationUuid: "dd18b9e9-9852-8aa4-80e8-d07a7f7cc9d1"
   stages:
     - stage: path
       stageUuid: "47fd9a19-05bf-8547-be61-a33053bd9ed1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "08fb93ec-8958-847d-aee1-68761b01d982"
     - stage: horo
-      stageUuid: "dce7ec1b-49ca-818c-9071-a874050a720a"
+      stageUuid: "14716093-bba5-811a-9151-f3b6e6798576"
     - stage: seal
       stageUuid: "be590755-cc10-8612-98ae-bda8ffe8feb6"
     - stage: uuid
-      stageUuid: "01191e85-a08b-81c4-8278-1f93aceb2de8"
+      stageUuid: "efb46b05-ced6-81d5-9df0-cfd923dca067"
 version: 2
 ---
 # funding

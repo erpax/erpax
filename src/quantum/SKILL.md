@@ -2,11 +2,11 @@
 name: quantum
 description: "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
 atomPath: quantum
-coordinate: "quantum · 7/descent · 58eb0f40"
-contentUuid: "d6d95092-789e-5242-94d5-f4e22a8978d4"
-diamondUuid: "a295c57b-efe0-8ad9-aaba-fb8d313636fa"
-uuid: "58eb0f40-9517-8e12-8817-994ee3afecf6"
-horo: 7
+coordinate: "quantum · 1/base · 4e94b169"
+contentUuid: "bfa5feaf-09ae-5f39-b553-6150fa39db66"
+diamondUuid: "35e0f95e-ca2b-8924-92d6-b942d810940b"
+uuid: "4e94b169-9a74-83fa-bcb2-0e1d08db623f"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 553
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "487f70f5-ebb6-8af6-bb61-abc2c623043a"
+  computationUuid: "a5186342-0244-8e12-9dd9-00c020b7a1af"
   stages:
     - stage: path
       stageUuid: "15c162b9-f68a-81b5-be34-6a93fda387d5"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "07c35499-b397-8ffd-891e-0fd0c686cd24"
     - stage: links
-      stageUuid: "fba31f88-0da7-88b3-8266-0624e8b34118"
+      stageUuid: "65883705-cdc4-8c3e-97db-3bdd6bd3558a"
     - stage: horo
-      stageUuid: "5f3dd803-0f58-87b9-ac69-7896a5797ebc"
+      stageUuid: "58a0505d-7b2a-8b26-99a6-548aeaa11b94"
     - stage: seal
       stageUuid: "c80781cf-f5a6-814a-a2d6-0b57d9d1e77e"
     - stage: uuid
-      stageUuid: "457af99e-706e-8d83-9c2a-3c851625cc6a"
+      stageUuid: "15551d0f-e6bf-8b1d-a87c-a336780b64fb"
 quantum:
   superposition:
     - accounting
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "487f70f5-ebb6-8af6-bb61-abc2c623043a"
-    contentUuid: "d6d95092-789e-5242-94d5-f4e22a8978d4"
+    computationUuid: "a5186342-0244-8e12-9dd9-00c020b7a1af"
+    contentUuid: "bfa5feaf-09ae-5f39-b553-6150fa39db66"
 version: 2
 ---
 # quantum
@@ -134,4 +134,4 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 
-<sub>content-uuid `d6d95092-789e-5242-94d5-f4e22a8978d4` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `bfa5feaf-09ae-5f39-b553-6150fa39db66` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

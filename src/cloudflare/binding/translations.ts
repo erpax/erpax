@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "binding",
-    "uuid": "becc8cd3-e095-8f1b-bd60-573198294423",
+    "uuid": "cea9625b-2a76-8a45-a17a-6419cfc79f10",
     "words": [
       "binding"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about binding — Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access",
-    "uuid": "189b5da3-36d2-819b-be7b-87ead4d82d57",
+    "uuid": "cf399940-d3bb-880b-9538-2756374ab967",
     "words": [
       "use",
       "when",

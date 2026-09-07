@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "workspace",
-    "uuid": "8be3e1e9-108f-81f4-bbf1-67b83f1aac92",
+    "uuid": "22915961-3611-8c13-bec6-a3a53405a5b9",
     "words": [
       "workspace"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry.",
-    "uuid": "90959fdc-6f07-8dd0-a6b2-357c0abd3aae",
+    "uuid": "d3af8c34-3ed3-8937-aee1-08f0c8f1f428",
     "words": [
       "use",
       "when",

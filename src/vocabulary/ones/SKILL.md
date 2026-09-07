@@ -2,11 +2,11 @@
 name: ones
 description: "Use when reasoning about ones as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ones"
-coordinate: "vocabulary/ones · 1/base · 912c73cd"
-contentUuid: "31457c83-28d3-58c3-bafa-9642d657120c"
-diamondUuid: "d99839b3-253b-8f38-add1-e88db10a21ab"
-uuid: "912c73cd-0adb-8794-9af5-c7f5de718097"
-horo: 1
+coordinate: "vocabulary/ones · 8/crest · 1a2288c3"
+contentUuid: "e7e97e07-6288-5c9e-98f0-8913a6b29444"
+diamondUuid: "142f8899-9289-8c2e-9161-6dfbdba82192"
+uuid: "1a2288c3-70d0-8def-9ab5-0388f7ead782"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "610410ef-4a78-8061-8d5f-78e490831cc4"
+  computationUuid: "be8daaa0-8668-853e-8d23-3ee31a6c2026"
   stages:
     - stage: path
       stageUuid: "db8f8864-8cbc-8b97-9cd0-f716e5640c05"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42eb3b5c-4d7d-84bf-992b-04d506c71f82"
     - stage: horo
-      stageUuid: "bf69bfa4-5615-8a2f-bd88-06184bf33b7f"
+      stageUuid: "824ee539-01dc-8b2e-9fad-4c18c18b9189"
     - stage: seal
       stageUuid: "db7dd1d6-f981-8b9a-aa35-ffa91de4dc1d"
     - stage: uuid
-      stageUuid: "8f65df58-c770-89ac-9e32-02f7f56151f2"
+      stageUuid: "fd0926bc-0408-858a-84c3-7f5d29ea3de7"
 version: 2
 ---
 # ones

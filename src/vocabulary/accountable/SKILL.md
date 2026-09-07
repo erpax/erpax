@@ -2,11 +2,11 @@
 name: accountable
 description: "Use when reasoning about accountable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/accountable"
-coordinate: "vocabulary/accountable · 8/crest · 16a5fd65"
-contentUuid: "e8f64197-78c2-53b7-b56b-e8e9ab8c015c"
-diamondUuid: "c2e57103-a222-8b70-8c39-e214c0d0c658"
-uuid: "16a5fd65-5f16-8e31-a021-2b1ef51f1ec4"
-horo: 8
+coordinate: "vocabulary/accountable · 2/share · b4d05d39"
+contentUuid: "6d69ef04-6375-5cb8-93ca-7fd58615e00e"
+diamondUuid: "5b98eb93-09e0-8139-91b4-4b7ed5e12f1c"
+uuid: "b4d05d39-d5be-80e5-85da-85def5fdcfa0"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "314265b3-1024-821c-a58a-13231429f6fe"
+  computationUuid: "a2225e80-fe7c-8e3b-adcc-8766c898d5a2"
   stages:
     - stage: path
       stageUuid: "7f833104-b426-8bd9-8292-500ca829d115"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d0d5b83f-2f3e-8edb-a1e1-cf7477267197"
     - stage: horo
-      stageUuid: "0c455f91-3f47-8996-9384-263f8c00f1f5"
+      stageUuid: "43af9869-a937-84fa-84ce-422d7c7a8201"
     - stage: seal
       stageUuid: "6503978b-3345-837d-82cf-0c735df7f4f4"
     - stage: uuid
-      stageUuid: "c0e38dde-e52f-85e9-be2a-aad0914e7c51"
+      stageUuid: "942bbd37-ea42-8c02-9cef-84b4a35f34df"
 version: 2
 ---
 # accountable

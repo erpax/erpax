@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mcp",
-    "uuid": "f5c6371c-5068-811f-944f-b431ef6c61d4",
+    "uuid": "204c4d74-67a7-8e1c-83d4-b2723e36a2cb",
     "words": [
       "mcp"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside.",
-    "uuid": "d915ff9a-f1f3-8ce6-9ab0-ee6f2a37e04b",
+    "uuid": "7c844caf-38c9-8505-ac44-1ed08f370516",
     "words": [
       "use",
       "when",

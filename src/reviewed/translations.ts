@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reviewed",
-    "uuid": "18ddcd26-98c3-8dda-b71d-42de1054f490",
+    "uuid": "eb99a2aa-6935-864e-8fed-3e662ae4c5ad",
     "words": [
       "reviewed"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about reviewed — People or organizations that have reviewed the content on this web page for accuracy and/or completeness.",
-    "uuid": "57b46296-4717-8802-8f2e-272e71df51cf",
+    "uuid": "2d4929d9-8993-82ce-9df8-49512989eec2",
     "words": [
       "use",
       "when",

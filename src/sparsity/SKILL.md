@@ -2,11 +2,11 @@
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
 atomPath: sparsity
-coordinate: "sparsity · 4/weave · 3862b3cb"
-contentUuid: "818e9bba-edb9-5c73-94d5-c6dc0ae12e0d"
-diamondUuid: "26b33373-6cd8-8eaa-b7e4-1b3c4b3668e0"
-uuid: "3862b3cb-7b84-8ba4-8e91-eff78be4c3a5"
-horo: 4
+coordinate: "sparsity · 7/descent · d23b7ea7"
+contentUuid: "232c85ef-785c-5766-b6de-a07f8e428f0c"
+diamondUuid: "057415bb-6ede-8e23-8917-82765a8fca53"
+uuid: "d23b7ea7-d43a-88ee-8b34-84eb53f95531"
+horo: 7
 typography:
   partition: sparsity
   bondDegree: 81
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation"
 bindings: []
 signatures:
-  computationUuid: "9fa5628f-1e04-8aa4-a473-c6fd2fc40cf8"
+  computationUuid: "584d094b-880d-8d0c-918f-b46c432e1055"
   stages:
     - stage: path
       stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3598cef6-cb85-8eae-83ac-0a1bcfd60fcf"
     - stage: horo
-      stageUuid: "55a54318-25a8-8904-b0dc-24ae5fa26295"
+      stageUuid: "14b86550-b2a5-8149-bd56-9949869b7603"
     - stage: seal
       stageUuid: "05ff4ba5-f389-8961-93c4-317fa21cc0d4"
     - stage: uuid
-      stageUuid: "ebc5984e-d103-8082-96b2-a51541a7c023"
+      stageUuid: "9d9e44e1-4678-8571-9069-005c5d6c35fb"
 version: 2
 ---
 # sparsity — the active fraction (few of many, alive at once)

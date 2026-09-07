@@ -2,11 +2,11 @@
 name: quotes
 description: "Use when capturing or evaluating vendor RFQ responses — quote lines, pricing, INCOTERMS, lead time, award decision and rationale for OECD BEPS Action 13 and SOX §404 arm's-length evidence. The per-vendor RFQ response and competitive-bid award record."
 atomPath: "vendors/vendor/quotes"
-coordinate: "vendors/vendor/quotes · 2/share · 3c053cf7"
-contentUuid: "62f92ad3-1567-5481-8e2c-90d487424053"
-diamondUuid: "4ffc000b-6048-8990-9f2b-db3b420813bb"
-uuid: "3c053cf7-e5a5-8e4c-8081-3c5369fa4fbb"
-horo: 2
+coordinate: "vendors/vendor/quotes · 8/crest · eb20f6a6"
+contentUuid: "9499b3de-0cee-55f7-be52-e1e3207ca25b"
+diamondUuid: "b13aa1a6-d33b-8f3f-98d0-da61443fac12"
+uuid: "eb20f6a6-9764-8ed5-9748-6481b80b188d"
+horo: 8
 typography:
   partition: vendors
   bondDegree: 33
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "02d3f7fb-f404-8fe7-a562-e6fd68051cce"
+  computationUuid: "111355f4-7e18-8ab0-a88f-c2830c2b78bc"
   stages:
     - stage: path
       stageUuid: "b2d1a970-616d-85ed-bf0e-818237217dc1"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "6e0ab57d-123e-8717-89e7-f5fd8df3852a"
     - stage: horo
-      stageUuid: "c01b9a53-16ee-8209-8119-812befb35f65"
+      stageUuid: "bb313192-ddc5-8ef5-8c0f-a0468a227265"
     - stage: seal
       stageUuid: "b6a560dd-dcc3-838e-9d9a-8f24fed4f2aa"
     - stage: uuid
-      stageUuid: "85375ae5-e8d4-8223-af45-9ab4291e8ae5"
+      stageUuid: "b5380d74-2c4e-8989-8b73-cbcc439aad79"
 version: 2
 ---
 # vendor-quotes

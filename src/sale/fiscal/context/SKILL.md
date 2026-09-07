@@ -2,11 +2,11 @@
 name: context
 description: "Use when resolving which fiscal device, tenant and operator apply to a sale — the context every downstream fiscal step is computed against, so a wrong context silently fiscalises against the wrong device."
 atomPath: "sale/fiscal/context"
-coordinate: "sale/fiscal/context · 5/round · 779f68da"
-contentUuid: "2d1a4072-93ad-51e7-af4e-8445c8142a84"
-diamondUuid: "44103b96-3a0c-8435-bc1d-b9fbd0af8ad3"
-uuid: "779f68da-5309-82e9-aac1-3aadb36c8ebd"
-horo: 5
+coordinate: "sale/fiscal/context · 7/descent · 484357eb"
+contentUuid: "17f1f541-11de-5a21-95a5-221d5652cee6"
+diamondUuid: "166552ae-56e4-828a-868d-8c8c08909cc6"
+uuid: "484357eb-f0f1-882f-9bf8-ea51a4a0019e"
+horo: 7
 typography:
   partition: sale
   bondDegree: 29
@@ -16,7 +16,7 @@ standards:
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "41e20791-b92c-89fc-995f-c7b468a57e70"
+  computationUuid: "a04165c1-9264-8c9a-8b64-c6c8defd7719"
   stages:
     - stage: path
       stageUuid: "e6bd166c-1fe6-82ed-b676-4121bd1d4c59"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "d05528e5-2827-8150-99a0-8effd71d3493"
     - stage: horo
-      stageUuid: "da7f987d-a90f-8e08-a17a-0e70f770beb5"
+      stageUuid: "8b55357b-3c91-848f-bc97-22400a2ff03d"
     - stage: seal
       stageUuid: "d9fc8e2b-2c80-8a5c-b019-55a6eb56abe7"
     - stage: uuid
-      stageUuid: "50194880-24e0-81f8-8b80-cbec7d872412"
+      stageUuid: "be7c5156-b9ee-83cf-8bd2-37bd2f3c8442"
 version: 2
 ---
 # context

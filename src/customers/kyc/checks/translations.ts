@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "checks",
-    "uuid": "b9dfcbdc-93d1-8b8f-a603-d3c748234424",
+    "uuid": "85af031a-7c1e-80c4-a7b8-be15d3365e33",
     "words": [
       "checks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection.",
-    "uuid": "79bfec20-976c-8b1f-9e70-f181acda3a25",
+    "uuid": "6252352b-2a3d-8576-b37a-cf4272fc3c2b",
     "words": [
       "use",
       "when",

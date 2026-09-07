@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ui",
-    "uuid": "585519d0-a1bf-8ff8-94a2-ab068bf4d41f",
+    "uuid": "819fb692-814e-864f-a566-f6239a677f2a",
     "words": [
       "ui"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when mounting shadcn/Radix primitives — the component catalog under src/ui/ (Tooltip, Dialog, Tabs, Collapsible, Sonner, etc.) wired to corpus-computed CSS and live quantum dimension surfaces.",
-    "uuid": "78f67ef1-e87f-87f6-bc1a-a5f0b72ef005",
+    "uuid": "ce9a27ac-b70e-8f81-8378-11959d35c0d8",
     "words": [
       "use",
       "when",

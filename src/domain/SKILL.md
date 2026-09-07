@@ -2,10 +2,10 @@
 name: domain
 description: "Use when modelling a tenant's domain — NOT tenant isolation (the multi-tenant plugin does that), but the domain as the tenant's identity and managed entity: the name that routes the request to the tenant, its hierarchy, status lifecycle, SSL, billing, and — the key — proof of domain ownership, which IS the computational admin grant: prove you control the domain and the tenant is yours."
 atomPath: domain
-coordinate: "domain · 2/share · b9e51330"
-contentUuid: "50d4fb3b-5b88-5935-b546-65f6203ebf98"
-diamondUuid: "abb74102-7b80-8ba6-9de6-b8becafdd7f1"
-uuid: "b9e51330-9dbb-815a-be4f-5dcb684aaab4"
+coordinate: "domain · 2/share · 202a29fe"
+contentUuid: "9022ed75-4062-5948-9d66-2ac76364d263"
+diamondUuid: "4ed35f8f-e5e2-86e3-874f-d0eb1b0e504b"
+uuid: "202a29fe-3681-838e-8d34-d0445b5d7748"
 horo: 2
 typography:
   partition: domain
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c33d3bf0-1d6b-839d-8a3b-096e6961e474"
+  computationUuid: "062c07ae-83c6-889e-b4bd-c2de8db00d8a"
   stages:
     - stage: path
       stageUuid: "d51a7a0f-f89c-8662-8ebd-2bb8db95d24e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "535501f4-42d8-864e-8df6-8ccedf07e910"
     - stage: horo
-      stageUuid: "206c4c48-9f6c-894a-a3c8-1bbb332cbc17"
+      stageUuid: "d452351a-f6ef-8313-80b1-fa035a159650"
     - stage: seal
       stageUuid: "ff5ffc08-4181-8d78-9844-ef039741d3bf"
     - stage: uuid
-      stageUuid: "2d558624-54a0-8923-95ff-6e2ba7e47c24"
+      stageUuid: "a90ee37b-bb2a-8b1b-ba21-7d6d54d6dc82"
 version: 2
 ---
 # domain — prove ownership and the tenant is yours

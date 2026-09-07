@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gate",
-    "uuid": "917fe170-a320-8e39-89c8-23415c714d22",
+    "uuid": "2d72a43c-fa8b-8657-881e-68bbe35e28df",
     "words": [
       "gate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about gate — , and answer from the tenant's subscription; and encode what a lapsed account may still do — read its own history, write nothing new.",
-    "uuid": "e4820b45-4c75-88e2-8fce-eaf99372aaca",
+    "uuid": "d86541e5-06e4-8c01-af4b-64e53a0e7733",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "grantee",
-    "uuid": "6805b7a4-5990-8361-8f46-006f735cf9f5",
+    "uuid": "009d3be9-3d93-881e-ad04-0da7e3cc2b61",
     "words": [
       "grantee"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about grantee — The person, organization, contact point, or audience that has been granted this permission.",
-    "uuid": "3c44e2f6-91cb-8419-8dcf-7b41a9ff63e0",
+    "uuid": "b094161a-1c2b-8c8e-a8ee-79bfd0e5c4bf",
     "words": [
       "use",
       "when",

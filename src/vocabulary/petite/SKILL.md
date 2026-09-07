@@ -2,11 +2,11 @@
 name: petite
 description: "Use when reasoning about petite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/petite"
-coordinate: "vocabulary/petite · 8/crest · b6aade89"
-contentUuid: "31865c84-50f2-54af-a0a4-a88b2c180435"
-diamondUuid: "06080741-a41c-82b0-bef1-919cd6ef1944"
-uuid: "b6aade89-5362-8be1-8aea-04015fe4f615"
-horo: 8
+coordinate: "vocabulary/petite · 5/round · 08d09094"
+contentUuid: "0ab1bdc6-0236-5706-a389-ba1c0e9d94e7"
+diamondUuid: "165d5a7d-a5ba-8279-85c2-5dd9f5079bf8"
+uuid: "08d09094-1898-8a6a-b886-3e6d38704d2f"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2b687442-a450-8e10-afcb-74f92e168a30"
+  computationUuid: "25ae49f5-8fb0-8e2f-abe0-acccfcb104e3"
   stages:
     - stage: path
       stageUuid: "68702db1-0296-8b9f-a2b4-6a1bca416eba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b34e5b59-b68d-884d-8931-323c21c6ddc6"
     - stage: horo
-      stageUuid: "94a674d9-e804-89b0-8eac-a05846c93a0a"
+      stageUuid: "7a71fba8-2e28-8e66-93d4-a78fd6828330"
     - stage: seal
       stageUuid: "16fd0d41-8d78-80a5-8715-cb5fe5128876"
     - stage: uuid
-      stageUuid: "df10ad17-0d84-8e43-b158-92ab2d175e7e"
+      stageUuid: "019cc4cb-a744-89b0-9ca9-89f6b0f06d0f"
 version: 2
 ---
 # petite

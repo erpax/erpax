@@ -2,18 +2,18 @@
 name: replaceable
 description: "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…"
 atomPath: "proof/replaceable"
-coordinate: "proof/replaceable · 1/base · a97df46c"
-contentUuid: "d75cf6f7-fc9b-52e1-aae7-d3c17aac1fec"
-diamondUuid: "be6b277a-2015-88de-b987-150d02e72e61"
-uuid: "a97df46c-8ccc-858a-8ec7-3afc3019204d"
-horo: 1
+coordinate: "proof/replaceable · 7/descent · e0986e42"
+contentUuid: "a4ce12f8-30c1-5239-9545-e017400c7494"
+diamondUuid: "02ce9648-08a6-820b-846a-1a972397babc"
+uuid: "e0986e42-e5c3-8b41-b671-9a1eef79558a"
+horo: 7
 typography:
   partition: proof
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0c9396c5-2e67-8adf-a6af-eb4420f589b5"
+  computationUuid: "7299db8d-876c-8de2-80af-90ea826324a6"
   stages:
     - stage: path
       stageUuid: "5f5c9b89-d5ca-8eec-8edb-3eaaddac934c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "443c335f-e44e-8636-b3a2-ca927c94ecc6"
     - stage: horo
-      stageUuid: "e8ea792d-7cfb-8f92-a8c9-7f0efa0c6b5a"
+      stageUuid: "d58f8b17-7719-8275-aa87-d653896799f2"
     - stage: seal
       stageUuid: "6e36f693-8734-847a-814c-dd3c318a8664"
     - stage: uuid
-      stageUuid: "acaff9e9-a86e-8843-8ac4-40d6ec9f1107"
+      stageUuid: "5a1eb2aa-a1b3-8905-bc48-afdb7ef1f37d"
 version: 2
 ---
 # proof/replaceable — a cited standard is an axiom until a gate discharges it

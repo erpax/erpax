@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "decoherence",
-    "uuid": "6a50c760-6f23-8f5a-b9e0-44823794c15a",
+    "uuid": "14ae7957-7403-8d88-ad8d-bad59f931b27",
     "words": [
       "decoherence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about decoherence — how a quantum superposition becomes classical. Coupled to an environment, off-diagonal coherences decay as e^(−t/τ): a pure superposition becomes a classical mixture, the von Neumann entropy rising 0 → ln2 (irreversible). It is measurement without a measurer — the environment is the measurer, the record it leaves is the proof/receipt. Fast: τ shrinks with coupled dimensions, which is why the wired corpus is classical and definite, never observed in superposition.",
-    "uuid": "d4026b46-3330-872c-9bce-c983953f1217",
+    "uuid": "7b087fe5-5901-845e-8173-e5987880815d",
     "words": [
       "use",
       "when",

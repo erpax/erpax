@@ -2,11 +2,11 @@
 name: classifier
 description: "Use when reasoning about classifier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/classifier"
-coordinate: "vocabulary/classifier · 8/crest · eb7df947"
-contentUuid: "b4146592-a424-5dfb-bd9c-0ba0cd4809e1"
-diamondUuid: "46531abb-f34e-8645-aac5-df45d14b4e7e"
-uuid: "eb7df947-a7ac-82d4-8648-7623555fc92c"
-horo: 8
+coordinate: "vocabulary/classifier · 1/base · 21739012"
+contentUuid: "7be46895-dc4e-5d64-a840-400fd737133f"
+diamondUuid: "3764335a-24cc-8b87-ad18-454fd3e326f3"
+uuid: "21739012-3350-8629-9320-2dd08385ec5a"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7f303c61-f604-8fc9-abc0-d8e410afbeb8"
+  computationUuid: "caae2724-5e33-8263-94aa-681888abaf00"
   stages:
     - stage: path
       stageUuid: "5af8e3b4-fc49-8942-93a9-178cf2542204"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f3163f86-6a33-8024-b0aa-26937ae9bcc8"
     - stage: horo
-      stageUuid: "82a2da5f-1936-8a77-90f4-10f957cbc753"
+      stageUuid: "b0534f0b-fe70-8c46-b745-8ccb93466369"
     - stage: seal
       stageUuid: "c75dc833-49e8-83ec-8b29-8642f6d4ee0a"
     - stage: uuid
-      stageUuid: "91248deb-0bc5-8e06-8edc-1d162e4ebe5a"
+      stageUuid: "296e081e-155f-89b8-b86d-6d7ea2f4f09f"
 version: 2
 ---
 # classifier

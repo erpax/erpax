@@ -2,10 +2,10 @@
 name: register
 description: "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**."
 atomPath: "proof/register"
-coordinate: "proof/register · 2/share · 7519e820"
-contentUuid: "5180f550-63c1-51b9-9b95-689ee2bd0f88"
-diamondUuid: "161f7aec-c792-85f8-9d22-ab31c7483014"
-uuid: "7519e820-ad8f-8a5a-8002-c000138f6d84"
+coordinate: "proof/register · 2/share · fb624d03"
+contentUuid: "0afa309c-08b6-5781-bb72-822b43180461"
+diamondUuid: "6a087b5a-6cfa-887f-9f04-7dcca57a2ed1"
+uuid: "fb624d03-c816-8bac-832f-52a3ddf1694d"
 horo: 2
 typography:
   partition: proof
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "42cd244a-5a5a-80a1-b3b6-6c2198bfaab9"
+  computationUuid: "a066d612-dce6-8d10-9651-201164a2b4f5"
   stages:
     - stage: path
       stageUuid: "cfc60e6f-7522-8225-a769-4433b06ac0ee"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7b0758b1-5189-866c-b9ea-b8b539c0c4a0"
     - stage: horo
-      stageUuid: "5a652d39-0143-86ff-99c3-8dfe5bc269b8"
+      stageUuid: "9f52503d-bd2f-89da-ab73-8fc6e795572d"
     - stage: seal
       stageUuid: "555e4ce7-2af4-8c39-ac13-4331392d1197"
     - stage: uuid
-      stageUuid: "0d12de0c-2e6c-8dad-9dac-dd312ac7e142"
+      stageUuid: "88381291-fd70-87c3-adef-a11f2d2a68c2"
 version: 2
 ---
 # proof/register — the axiom index: what every theorem in this corpus actually rests on

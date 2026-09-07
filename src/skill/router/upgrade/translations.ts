@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "upgrade",
-    "uuid": "4d59a2d9-bb03-8a03-b735-a060246c2daf",
+    "uuid": "1acd01d2-7064-824f-9c5b-ffaaf553a677",
     "words": [
       "upgrade"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when SKILL.md frontmatter must self-upgrade from live corpus state — connectFrontmatter folds diamond, matrix, typography, standards, bonds, and per-stage signatures into one connected graph.",
-    "uuid": "7ab7da59-1ec9-828c-a935-7519e2067314",
+    "uuid": "f326ae24-b89c-8c01-b96a-378e3c5d23f2",
     "words": [
       "use",
       "when",

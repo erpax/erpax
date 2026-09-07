@@ -2,11 +2,11 @@
 name: import
 description: "Use when reasoning about import discipline as a security property — anything importing not from an atom's index is a deep coupling past the seal, a measurable gap that lowers tamper-cost; this finds the violations and prices them."
 atomPath: "tamper/import"
-coordinate: "tamper/import · 7/descent · 4ca8eb5a"
-contentUuid: "2807024e-e9da-538a-9d1e-f1552677bfbd"
-diamondUuid: "1462fcf0-31f4-80fc-9b3f-7ca3690152da"
-uuid: "4ca8eb5a-e93a-8d09-97f0-2a6da353bb1d"
-horo: 7
+coordinate: "tamper/import · 4/weave · aedd5b76"
+contentUuid: "d4fe4298-0d4a-52bb-9774-3e91a97d9db2"
+diamondUuid: "6fafd2d5-9003-83a7-a735-71e7355845ec"
+uuid: "aedd5b76-851f-8385-8784-7b515b2bf9c0"
+horo: 4
 typography:
   partition: tamper
   bondDegree: 42
@@ -14,7 +14,7 @@ standards:
   - the import graph is the config (imported↔declared) — the public face is index.ts only
 bindings: []
 signatures:
-  computationUuid: "9b950517-a518-8170-a2cb-709207fc732e"
+  computationUuid: "b5ebea66-9246-811f-aeb9-409d070415d4"
   stages:
     - stage: path
       stageUuid: "da6ded94-b45e-87b7-b96d-061117e9c0fa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6ed4c285-efce-8731-a35e-b1be1b028421"
     - stage: horo
-      stageUuid: "86f5c01f-9570-82e2-b79c-462371339037"
+      stageUuid: "fbb5de2f-907b-891e-b546-51e9927941f4"
     - stage: seal
       stageUuid: "839b59c4-dff7-8014-ab71-407b3583da0f"
     - stage: uuid
-      stageUuid: "afc0ffd7-44c4-8190-b553-852abd8bf8ae"
+      stageUuid: "485d47e4-85e0-8a7a-b68f-22bf3ab9b794"
 version: 2
 ---
 # tamper/import — anything importing not from index raises

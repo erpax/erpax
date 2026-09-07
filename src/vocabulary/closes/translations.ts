@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "closes",
-    "uuid": "8064b621-a8ad-8ef9-ab8b-4efeabc96315",
+    "uuid": "fccc236d-f819-8c6b-b03d-b2b10698f5af",
     "words": [
       "closes"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about closes — The closing hour of the place or service on the given day(s) of the week.",
-    "uuid": "f6e6791e-f59a-8d3f-bf68-1da1acc9d251",
+    "uuid": "adb9bb47-6228-812d-bb80-c29129fc4af7",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: taxexempt
 description: "Use when reasoning about taxexempt — Use for non-taxable income or entities exempt from income tax — requires jurisdiction-specific exemption testing and disclosure; affects deferred-tax calculation"
 atomPath: taxexempt
-coordinate: "taxexempt · 1/base · 585e1c62"
-contentUuid: "a16d85be-983a-5cd8-9ebe-00d5817c0b60"
-diamondUuid: "fac9bfde-4aa4-8aae-a326-f7d1f993b064"
-uuid: "585e1c62-52be-8d14-afd4-e8c8cbce09aa"
+coordinate: "taxexempt · 1/base · a4efa44a"
+contentUuid: "bfae0518-b585-5808-a9a0-a20c6f014c08"
+diamondUuid: "8e5183ff-67ed-84bd-a3d8-b6a4e3fb794f"
+uuid: "a4efa44a-9aee-894e-8af1-d89e1349a8cd"
 horo: 1
 typography:
   partition: taxexempt
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3610825f-1add-8137-bd5a-e264f4f2c641"
+  computationUuid: "5a712d09-a7e1-8e51-8732-4ccbdb3d2d21"
   stages:
     - stage: path
       stageUuid: "33b05baf-d69b-8843-85ba-0090ba5a3411"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a17751d7-fbb3-8af2-b76e-4e61352bd5ef"
     - stage: horo
-      stageUuid: "9ee362b5-4b52-8a81-88ae-2a34cb838220"
+      stageUuid: "ebc286ab-9070-8814-a823-e90647de8b80"
     - stage: seal
       stageUuid: "519cb7df-e33b-8ae7-80b8-cbd2a7bc7696"
     - stage: uuid
-      stageUuid: "3cef949a-dc22-8b98-8977-d176af043e8d"
+      stageUuid: "47f8cc3a-dd9e-8a65-bdb6-3a9621c5f7ee"
 version: 2
 ---
 # taxexempt

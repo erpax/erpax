@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cross",
-    "uuid": "8503b2ea-eb54-805b-bc3c-d5b834329086",
+    "uuid": "0cfbdcb9-b87e-8bb8-9b8b-a3c2de5085aa",
     "words": [
       "cross"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cross — reports every with no matching , and reports matter sitting beside a barrel that should be a child atom. computes the move; is what a reader gets.",
-    "uuid": "6c9c76fd-2c7e-8b3c-ae4e-7326024273a3",
+    "uuid": "a89c1886-7443-8b21-965c-08ecf033fd40",
     "words": [
       "use",
       "when",

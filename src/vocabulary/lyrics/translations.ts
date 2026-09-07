@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lyrics",
-    "uuid": "918d2a32-0972-8828-a8e1-49e7137cf165",
+    "uuid": "32496114-475f-8acd-8c83-aaa9bab06180",
     "words": [
       "lyrics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lyrics — The words in the song.",
-    "uuid": "426cf32b-686a-8a0a-8c86-6f5de355863f",
+    "uuid": "1163c17d-e0d5-8fce-b3e2-f48075f28ff8",
     "words": [
       "use",
       "when",

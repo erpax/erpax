@@ -2,11 +2,11 @@
 name: design
 description: "Use when defining the visual and interaction form of an experience — wireframes, prototypes, design reviews, design systems, accessibility, user research insights applied to form."
 atomPath: design
-coordinate: "design · 8/crest · cc314e73"
-contentUuid: "c53b64a2-7b46-513e-9a1f-cd041712e19a"
-diamondUuid: "1c76d175-8068-8a6b-8482-6ae3349d2082"
-uuid: "cc314e73-fb05-886a-96db-3ffc9ee1ce8a"
-horo: 8
+coordinate: "design · 2/share · 8c186e01"
+contentUuid: "ba9724d3-23d5-53eb-a9ca-f01315817664"
+diamondUuid: "fde8f3a1-adfe-8ea1-a0ea-30767f09ba97"
+uuid: "8c186e01-8759-8bd0-8b0f-fb2d11261ef0"
+horo: 2
 typography:
   partition: design
   bondDegree: 60
@@ -14,7 +14,7 @@ standards:
   - "the analog aura — colour as a projection of one content-uuid (digit → A432 spectrum)"
 bindings: []
 signatures:
-  computationUuid: "a13edfbf-3e60-80d2-9ee9-a385107f7b4a"
+  computationUuid: "ddd08856-f38a-878b-beb5-0234300517ae"
   stages:
     - stage: path
       stageUuid: "62cc72ba-9cae-8220-9ff9-2651c1b2a207"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bba72066-651c-878a-a767-40a7a319d91d"
     - stage: horo
-      stageUuid: "ec4c96cb-2433-8e15-ba28-aaba871e158d"
+      stageUuid: "f7400b5c-0524-8e74-b49c-fb52abd1759c"
     - stage: seal
       stageUuid: "73ec4986-5c4f-887f-91a8-9634a27080c6"
     - stage: uuid
-      stageUuid: "6c26e9ef-31d9-86f2-8dd3-ce74513d3e0d"
+      stageUuid: "2a61419e-59c5-841f-a35a-13397df524c8"
 version: 2
 ---
 # design

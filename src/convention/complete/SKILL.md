@@ -2,11 +2,11 @@
 name: complete
 description: "Use when checking whether the corpus stays whole — the computed convention that every atom is the full trinity {SKILL.md, index.ts, test.ts}, measured live as coverage = complete / total over the real tree."
 atomPath: "convention/complete"
-coordinate: "convention/complete · 7/descent · bce8f868"
-contentUuid: "a044f629-45c9-51fe-89b3-3de0f02aab93"
-diamondUuid: "c97e9998-2f3f-814a-bf9d-d2155b01a141"
-uuid: "bce8f868-b1ce-877a-8128-c3907d8e7609"
-horo: 7
+coordinate: "convention/complete · 5/round · 5a837796"
+contentUuid: "4cc50cc5-1ad8-5d73-b84a-4134bd8b9b04"
+diamondUuid: "622c1004-b3de-80de-9164-4ce038115ba6"
+uuid: "5a837796-c0ec-8587-b24f-e12a11f110bb"
+horo: 5
 typography:
   partition: convention
   bondDegree: 59
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0c14ac1d-0e25-830a-8186-5a1889049616"
+  computationUuid: "c455976d-0998-8ffa-a1ac-800b5fd83682"
   stages:
     - stage: path
       stageUuid: "9a0444b1-1fce-8095-8864-9ed8f536acf3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2d0a3719-cc44-88f0-b791-426d2df685d7"
     - stage: horo
-      stageUuid: "28c9c70e-4019-8a5d-912a-ba96c69f4cf2"
+      stageUuid: "8fd55a3e-0c65-877e-a5ac-6b759b8d2d7d"
     - stage: seal
       stageUuid: "034abbf9-47d5-8b20-8fb9-642a915776a8"
     - stage: uuid
-      stageUuid: "216d2425-a2f8-800e-b451-86ab545073ce"
+      stageUuid: "a9c0553a-4313-82b9-8795-01ee30685c50"
 version: 2
 ---
 # convention/complete — every atom is the full trinity {SKILL.md, index.ts, test.ts}

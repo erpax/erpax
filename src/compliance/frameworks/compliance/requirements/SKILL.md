@@ -2,11 +2,11 @@
 name: requirements
 description: "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference."
 atomPath: "compliance/frameworks/compliance/requirements"
-coordinate: "compliance/frameworks/compliance/requirements · 4/weave · 213c1c36"
-contentUuid: "5510d784-e44d-5864-971a-02decc2ee410"
-diamondUuid: "494b4412-f841-8f78-9854-c603ea12f371"
-uuid: "213c1c36-4ad1-8c4c-bfec-72115e4062c8"
-horo: 4
+coordinate: "compliance/frameworks/compliance/requirements · 2/share · 3366f21c"
+contentUuid: "9239dc4a-8fe0-5a97-82e8-5b61b677a087"
+diamondUuid: "6570d2e2-7b0b-8f57-88ba-8c0469a34763"
+uuid: "3366f21c-8b4d-8e22-a61b-05a96cc46cf9"
+horo: 2
 typography:
   partition: compliance
   bondDegree: 36
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fa7bf5ee-7b57-84a0-bf69-7b6f5f46aef1"
+  computationUuid: "77b7abe9-34c0-8667-974b-fccb312ebb9e"
   stages:
     - stage: path
       stageUuid: "12c5ca21-ec66-85c6-ac1b-89a64544597b"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "379eb10e-62d0-8e8b-8482-ee00d61563d7"
     - stage: horo
-      stageUuid: "a8a55f4a-9023-80ef-9888-1fe953d3ab50"
+      stageUuid: "656122a0-71dd-8bff-894e-e1b93e619270"
     - stage: seal
       stageUuid: "66c3d07c-0ea3-856a-a68a-827c41865036"
     - stage: uuid
-      stageUuid: "e5267858-e2d9-8286-95b0-3128e30ebdce"
+      stageUuid: "4c4a9609-db2c-88c9-a2ca-ba1ba4c38ae1"
 version: 2
 ---
 # compliance-requirements

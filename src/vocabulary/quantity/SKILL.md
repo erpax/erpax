@@ -2,11 +2,11 @@
 name: quantity
 description: "Use when reasoning about quantity — Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'."
 atomPath: "vocabulary/quantity"
-coordinate: "vocabulary/quantity · 1/base · 29c8ed67"
-contentUuid: "a1138e1d-ed51-5813-a324-d977c694ff4f"
-diamondUuid: "d4c4656f-3daa-8f81-a1c7-3ba84138ce49"
-uuid: "29c8ed67-8e1a-87f9-a1d7-575839e6f447"
-horo: 1
+coordinate: "vocabulary/quantity · 7/descent · cd4e1865"
+contentUuid: "bc12900a-86df-5096-b2ed-ae66f1d01c42"
+diamondUuid: "49e8f129-4326-8ef8-9cb7-7d846a321866"
+uuid: "cd4e1865-910e-86f4-9cae-c3ea67f66d56"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b9f3b447-c97a-8d47-9a4a-d21ee9d36f77"
+  computationUuid: "34a7acb5-70c2-89bb-8641-c5388e917d1f"
   stages:
     - stage: path
       stageUuid: "6f7b60ed-cc0c-8c59-ba14-3be03d0a1d0e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "30170b90-8e9d-837d-8bd0-caacc07d32b4"
     - stage: horo
-      stageUuid: "bf907c0a-6c30-854e-b65d-7f345c96dcce"
+      stageUuid: "8790813b-dc98-8b70-bf73-7a483fb70e62"
     - stage: seal
       stageUuid: "aa0300bf-4e03-8162-98cb-a61c36a1c03d"
     - stage: uuid
-      stageUuid: "462129af-b067-872c-b498-1e0f9d7637eb"
+      stageUuid: "b3dd6926-f65c-8c4e-b4b0-2b0ac5ee22c2"
 version: 2
 ---
 # quantity

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sandbox",
-    "uuid": "287c3cd8-957f-807c-bef7-49380e72b0e9",
+    "uuid": "bc390416-22c8-8ad3-a603-384206634c3e",
     "words": [
       "sandbox"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on.",
-    "uuid": "899a4d80-fa08-8abc-a561-7ce1d9284375",
+    "uuid": "2e70606b-dd6e-82c5-a22d-e71f4afc44f1",
     "words": [
       "use",
       "when",

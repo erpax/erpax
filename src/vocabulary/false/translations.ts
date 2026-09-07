@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "false",
-    "uuid": "2ee2d615-4839-83a1-baeb-c10ea27e55c5",
+    "uuid": "9ee93a67-4a8a-824e-b15e-7d8227b457f0",
     "words": [
       "false"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about false as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "371a09bc-99ba-8586-ba24-51f14e5cdbf3",
+    "uuid": "cd097614-ece0-84b4-93b7-866c6404f537",
     "words": [
       "use",
       "when",

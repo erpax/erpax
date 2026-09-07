@@ -2,18 +2,18 @@
 name: elimination
 description: "Use when removing intercompany balances, transactions, and profits in consolidation per IFRS-10 and IFRS-3 — consolidation adjustment that nets balances across entities to zero"
 atomPath: "vocabulary/elimination"
-coordinate: "vocabulary/elimination · 2/share · fe2a06ab"
-contentUuid: "836e201a-2e4a-5f21-9c38-d65cb48ea851"
-diamondUuid: "13080ebc-78ee-86e6-a2a9-783599e078aa"
-uuid: "fe2a06ab-9048-8024-8076-241439f29c65"
-horo: 2
+coordinate: "vocabulary/elimination · 1/base · c5ed35a6"
+contentUuid: "a6be94e7-9f53-5399-a097-22042860dd4b"
+diamondUuid: "796c4fef-3345-8413-b336-a1a4a09b2316"
+uuid: "c5ed35a6-2edf-8870-9efb-488e9eeecb2c"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "30e83069-2552-897b-ab0e-0201934b9e42"
+  computationUuid: "a54613fc-e86b-83f1-8643-06fe65914494"
   stages:
     - stage: path
       stageUuid: "ba6f0730-61f4-8a56-9a7a-898ff01d29bf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "986c4f21-dc43-8257-9dce-f1e8921219ba"
     - stage: horo
-      stageUuid: "8b583e70-6510-8b35-82b4-7ee2f6e5f32d"
+      stageUuid: "1599cd2f-0000-8ee7-8a48-4615f97b04ca"
     - stage: seal
       stageUuid: "f267b267-51fe-823b-9728-00713bd0d3fa"
     - stage: uuid
-      stageUuid: "fab1a37d-eceb-8b76-99b5-4c55dcde6b3e"
+      stageUuid: "74228066-2be6-84f8-be05-11729ff524da"
 version: 2
 ---
 # elimination

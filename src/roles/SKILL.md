@@ -2,11 +2,11 @@
 name: roles
 description: "Use when defining RBAC roles — global, collection-scoped, or document-scoped — each carrying an optional capability (read/write/sign/admin/audit) and skill routes that users inherit on assignment. The NIST INCITS-359 role-definition collection."
 atomPath: roles
-coordinate: "roles · 5/round · 300bbced"
-contentUuid: "a3196d29-9d6b-5f87-b323-8ecf0822d32a"
-diamondUuid: "3dbeaa7e-f1fc-8c39-a259-e812f5e5c84e"
-uuid: "300bbced-adb5-8500-8413-1fa36a1b4595"
-horo: 5
+coordinate: "roles · 1/base · 802c198c"
+contentUuid: "61cc610f-7c21-5679-ba59-873b40bcc310"
+diamondUuid: "cbffd4c2-5bd2-88ed-a957-660bfb301aab"
+uuid: "802c198c-6ae6-8117-8bd6-671ff63151d0"
+horo: 1
 typography:
   partition: roles
   bondDegree: 29
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "35429fae-4bc1-8366-ae67-66ff620b4d5d"
+  computationUuid: "27385845-7dd5-89ce-a1b8-4858d43a9773"
   stages:
     - stage: path
       stageUuid: "c2462caf-3a26-8139-bb34-a7aa31fec32d"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "613e1af0-0fd9-8258-8792-e208dfeab713"
     - stage: horo
-      stageUuid: "1f611b80-4cd5-87cd-bdd2-de341a5089bc"
+      stageUuid: "64397e2a-1f58-8edc-888c-b02679d0ebfc"
     - stage: seal
       stageUuid: "16991275-4158-81cf-8d8e-2306dc00b31d"
     - stage: uuid
-      stageUuid: "7fc127f8-a5b7-8301-9a26-3002d79b91f7"
+      stageUuid: "7c5f09a3-483d-8589-b1ae-2f9ebacb088e"
 version: 2
 ---
 # roles

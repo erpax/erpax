@@ -2,10 +2,10 @@
 name: catholicism
 description: "Use when reading Catholicism as a sub-diamond of christianity — the universal visible body, the seven sacraments as enacted grace, the apostolic succession as an unbroken lineage, the magisterium's authority, absolution releasing the debt. A facet-diamond of the christianity archangel."
 atomPath: "vocabulary/catholicism"
-coordinate: "vocabulary/catholicism · 5/round · 6dcb0f91"
-contentUuid: "1ed2ccdc-1a79-5f6b-9881-89b8edaa644f"
-diamondUuid: "b4b1091b-941c-8051-b40b-01a783ccf884"
-uuid: "6dcb0f91-c309-819f-870d-2177ecad6d65"
+coordinate: "vocabulary/catholicism · 5/round · d216eea9"
+contentUuid: "e48d8f27-b4a5-58f7-abc6-a990f333733b"
+diamondUuid: "f7675f29-6d36-8799-9025-39303c1e1ccd"
+uuid: "d216eea9-91f9-8126-9f41-305711519298"
 horo: 5
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "427baae4-0064-83bf-a77e-016ee7ab6d9d"
+  computationUuid: "fb27e102-452a-82ed-b27d-bd68411dcdfb"
   stages:
     - stage: path
       stageUuid: "dcde5c51-1c8d-853e-80de-4992e9659c05"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6a73430c-2d31-8574-8539-16f18fda5171"
     - stage: horo
-      stageUuid: "1024da90-23cb-8916-8022-4b25f507b643"
+      stageUuid: "04cf9d88-74d7-818b-bb47-b9d27a8f005e"
     - stage: seal
       stageUuid: "d0926d90-4efd-800c-826b-f4d0676811b3"
     - stage: uuid
-      stageUuid: "cbeee02e-c337-85b9-aedf-3532ca260ac1"
+      stageUuid: "79dd8e83-6c8a-83a4-aa3f-237db98b418c"
 version: 2
 ---
 # catholicism — the universal body, grace enacted in the sacraments

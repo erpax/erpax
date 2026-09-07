@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "revenue",
-    "uuid": "ad1853f2-291d-8e32-ad48-d0136654f6d1",
+    "uuid": "386e59dc-f3ff-8150-9ab6-ce4f21955491",
     "words": [
       "revenue"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recognising the revenue of a fiscalised sale — turns a closed sale into the accounting fact, and reverses it through the reverse path rather than deleting anything.",
-    "uuid": "8dd180b4-ed3f-897c-b893-747d6989066f",
+    "uuid": "bec724d3-5555-8452-a76a-050b350fdb58",
     "words": [
       "use",
       "when",

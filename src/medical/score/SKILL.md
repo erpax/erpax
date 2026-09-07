@@ -2,11 +2,11 @@
 name: score
 description: "Use when reasoning about score as a medical facet of medical — vocabulary pivot to @/score; nested not duplicated."
 atomPath: "medical/score"
-coordinate: "medical/score · 4/weave · 365dc6c9"
-contentUuid: "fc1ce805-8be3-5f9b-9e36-a3f23b83d5b5"
-diamondUuid: "d1fa99c2-a6cc-8083-a7a7-5fc3d7cd12c4"
-uuid: "365dc6c9-f59e-8c0d-ae3d-05e31cde15ee"
-horo: 4
+coordinate: "medical/score · 5/round · 36473e86"
+contentUuid: "abaadd11-54db-565a-86b2-ed10bce4469a"
+diamondUuid: "4a91b72c-6881-878b-900c-735b885054d2"
+uuid: "36473e86-f4d7-8f14-9326-e714a665ddfa"
+horo: 5
 typography:
   partition: medical
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "16344c70-d358-8187-a1af-76164490d177"
+  computationUuid: "32fb95ba-04dc-88f1-9eb4-e5d5d7857cb3"
   stages:
     - stage: path
       stageUuid: "ce61771a-7b71-806a-ab35-8334d9d7b9e4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6a63bbf8-ebf1-8ded-9c22-c7140dea328e"
     - stage: horo
-      stageUuid: "9f921e88-1761-8dc3-b5e4-1f3d8c6a2d36"
+      stageUuid: "3979dc92-0ccd-8f9f-a70b-05069149a576"
     - stage: seal
       stageUuid: "da84b570-5c20-8129-aeca-49c3d1764658"
     - stage: uuid
-      stageUuid: "7b222bce-ac8d-80e5-92db-9d7d4dcbf20e"
+      stageUuid: "775859a9-fa21-8ab0-bd45-2db03da6e0cd"
 version: 2
 ---
 # medical/score — medical facet

@@ -2,11 +2,11 @@
 name: iso6523
 description: "Use when reasoning about iso6523 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/iso6523"
-coordinate: "vocabulary/iso6523 · 5/round · 1f0f3349"
-contentUuid: "87e65e6d-8ba6-5f46-ad18-e64677d46ffa"
-diamondUuid: "4a0356a0-ecd0-863d-b0ba-3a75664f61cb"
-uuid: "1f0f3349-1b65-8fd9-87aa-3fff9576cde8"
-horo: 5
+coordinate: "vocabulary/iso6523 · 1/base · 1a3ab78e"
+contentUuid: "c3624a7b-6929-5dfc-a850-9b83e445bed0"
+diamondUuid: "c249551a-a6c8-8f37-9ce2-c5e3eeb11c3a"
+uuid: "1a3ab78e-28e5-87c2-853c-b06b345735bf"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7b970013-f3a5-8f59-90b0-828a048e103e"
+  computationUuid: "ad0ac187-f7fe-8fda-b578-da4079ef2ca5"
   stages:
     - stage: path
       stageUuid: "d4e18c48-136a-8357-9df4-99652e7f4fe0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7f885e5b-b536-86dd-a63b-ae8d42172fad"
     - stage: horo
-      stageUuid: "f29efa4a-3973-812e-9a8f-b3f54bc29534"
+      stageUuid: "0b2346b6-64f8-8074-be8d-ce21a758f620"
     - stage: seal
       stageUuid: "5ec2bc0e-6191-825a-835e-a738f156f804"
     - stage: uuid
-      stageUuid: "a8a660f6-ab72-87d1-8607-061d5549e78f"
+      stageUuid: "20143948-34ba-883e-9a16-b0888be1d90a"
 version: 2
 ---
 # iso6523

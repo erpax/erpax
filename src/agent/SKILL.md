@@ -2,11 +2,11 @@
 name: agent
 description: "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting)."
 atomPath: agent
-coordinate: "agent · 8/crest · 73fa0867"
-contentUuid: "d6c30e6b-3b45-5e50-8b23-7d2a339ac13f"
-diamondUuid: "c8fd1be4-4e7f-8282-8c9d-9aab029d7084"
-uuid: "73fa0867-9be8-8d6d-8591-c48e7230e28e"
-horo: 8
+coordinate: "agent · 2/share · 47322d0f"
+contentUuid: "0b33b4c4-b1dd-5616-b953-9686ae1d4c9f"
+diamondUuid: "a9dd4d33-f35a-8ef6-a7dc-7cb91796c538"
+uuid: "47322d0f-de44-8d7c-b3b4-b054f2618f78"
+horo: 2
 typography:
   partition: agent
   bondDegree: 393
@@ -31,7 +31,7 @@ standards:
   - "W3C-ActivityPub"
 bindings: []
 signatures:
-  computationUuid: "fa5e0f00-b0d9-8ad7-a30a-4940f579f122"
+  computationUuid: "ad295f88-4d7d-8a36-9aba-b45be18dab16"
   stages:
     - stage: path
       stageUuid: "a0f973da-5aaf-8198-87b0-f6e725af250f"
@@ -40,13 +40,13 @@ signatures:
     - stage: boundary
       stageUuid: "b1faa78b-bf1e-8049-9116-e9019e66cc72"
     - stage: links
-      stageUuid: "f7819c72-5bf4-8519-bcd9-8c35947852ea"
+      stageUuid: "45b702da-f85d-800a-a638-71b96aabe5f3"
     - stage: horo
-      stageUuid: "2d118ea8-ed77-8cc0-95ae-77325ebbf921"
+      stageUuid: "4a62967f-05f4-80f8-b0a5-1a72848580cb"
     - stage: seal
       stageUuid: "cc386600-b64e-8962-8301-0eeb688cc21b"
     - stage: uuid
-      stageUuid: "bf1a147b-a7ca-8962-a5ee-65edfd7e0cb3"
+      stageUuid: "7c041a9a-b695-8d18-b626-e6a2f311c93e"
 version: 2
 ---
 # agent — an agent is its content; cloning is content-addressing; the actor decides in pure functions while only the substrate acts

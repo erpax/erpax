@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "categories",
-    "uuid": "ceda68ed-d6d9-8c4f-a76e-e0421d6f638a",
+    "uuid": "3abccd51-44e0-88e3-920a-afd770f3ec8b",
     "words": [
       "categories"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when building or browsing hierarchical content or product taxonomies — title, URL slug (per-tenant unique), parent relationship, breadcrumb trail — for posts, catalogue products, or any schema.org DefinedTerm classification. The tenant-scoped category taxonomy node.",
-    "uuid": "79f9d583-ada8-8588-a191-a8bd791d438a",
+    "uuid": "0461e763-faa0-8e0a-ade4-5fd1cb141123",
     "words": [
       "use",
       "when",

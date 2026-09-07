@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "forecasts",
-    "uuid": "0863aabd-4e44-895d-adeb-e32ed2d9c6aa",
+    "uuid": "84e99553-f712-8490-a3b5-f72e094ca401",
     "words": [
       "forecasts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when forecasting on Earth's cardinal homology tips — phase-locked ±ω steps at 0°·90°·180°·270°, composed with navigation.predictNext; structural forecasts only (not weather); physical datum WGS 84.",
-    "uuid": "d43a49d1-67bf-83ad-a11e-ed23441089b2",
+    "uuid": "eeb4e9d5-042e-8135-af07-78f27a3f143b",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: declarations
 description: "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection."
 atomPath: "customers/sales/orders/shipments/customs/declarations"
-coordinate: "customers/sales/orders/shipments/customs/declarations · 7/descent · 3eec46b3"
-contentUuid: "bfb699bb-0bbb-5bf0-adb4-2231d6c2a2f0"
-diamondUuid: "ada158ea-1a7f-8d09-87e1-fcd80eac3d62"
-uuid: "3eec46b3-82f4-8e01-8900-dc58dc49a943"
+coordinate: "customers/sales/orders/shipments/customs/declarations · 7/descent · 76e91f40"
+contentUuid: "1fec856a-dadb-51d6-9008-eee0a93be91a"
+diamondUuid: "71f4c90c-4114-8780-ac30-0ee89c475f66"
+uuid: "76e91f40-027f-83c4-94b5-6d11f8b76a00"
 horo: 7
 typography:
   partition: customers
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c73b23bf-c39a-838c-b4aa-47ed03028707"
+  computationUuid: "f3632399-083b-8ce0-bd88-816567e019a8"
   stages:
     - stage: path
       stageUuid: "f4aaf92f-e8f6-837f-9176-90853296d68d"
@@ -36,13 +36,13 @@ signatures:
     - stage: boundary
       stageUuid: "b161df1e-ad44-88f0-9c53-2791d9294c42"
     - stage: links
-      stageUuid: "c73b92a8-a21a-8357-99b1-8451fc7545ab"
+      stageUuid: "1bf33a65-f181-8403-83fe-47f2b0fac359"
     - stage: horo
-      stageUuid: "50cac1df-ac79-8439-b880-6b7e5323aa66"
+      stageUuid: "c22e03c7-a170-8e7a-a8f7-222711385f79"
     - stage: seal
       stageUuid: "a0e29fa5-94ed-834e-ae8c-6de1a9f3b023"
     - stage: uuid
-      stageUuid: "6c9b32ae-df2f-8d21-9dd8-ed8bd7348c5a"
+      stageUuid: "10ff2278-178f-8f03-a871-04c0c5e6c553"
 version: 2
 ---
 # customs-declarations

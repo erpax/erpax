@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "honest",
-    "uuid": "bb7d244a-449f-8a6c-81a9-dd753c908e77",
+    "uuid": "5cf200a7-9798-847b-bd15-b8a9540401a3",
     "words": [
       "honest"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a SKILL.md reaches for a metaphysical figure of speech — the convention is that such a phrase is named as convention or folklore, never stated as a bare fact; this atom measures the corpus's live honesty as coverage = honest / total over the real tree.",
-    "uuid": "afc12665-ce6f-8036-a1e0-a9e7282fc1d3",
+    "uuid": "0889bbd4-0719-8f41-a1a4-2c3a65fa89cc",
     "words": [
       "use",
       "when",

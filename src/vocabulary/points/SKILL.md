@@ -2,11 +2,11 @@
 name: points
 description: "Use when reasoning about points as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/points"
-coordinate: "vocabulary/points · 1/base · 05e1d39e"
-contentUuid: "e902aad3-fc18-5031-8e34-9b777a5b358a"
-diamondUuid: "7f3513dd-0691-8ba2-9ef0-c0ce14349c6c"
-uuid: "05e1d39e-945b-8da1-9ef1-a1971073564a"
-horo: 1
+coordinate: "vocabulary/points · 2/share · 270beee6"
+contentUuid: "3cbc1fe8-1398-5f37-8730-b06d49155d1c"
+diamondUuid: "40681bf0-01e7-80b4-9607-fc7846b3e01e"
+uuid: "270beee6-f9ff-8fa0-ab00-b1bcb0d3d1dc"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5af99457-294e-8b76-8da6-efa322985b63"
+  computationUuid: "07b634c1-1ba5-893d-a8a8-6295eb933036"
   stages:
     - stage: path
       stageUuid: "986932ab-be32-8cd9-92a1-9a0ed2badbc8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6a47dfca-5c52-8f43-a84a-bff1418a4eb5"
     - stage: horo
-      stageUuid: "143e3bfa-08e5-80f9-9fe9-0861e95018bb"
+      stageUuid: "06c8206c-bacc-8039-99d2-82f8db7142fa"
     - stage: seal
       stageUuid: "cb0ff91f-6444-8c1c-82eb-320a35ef48e2"
     - stage: uuid
-      stageUuid: "b01358a3-32b4-8da6-b8e7-230d54693dbb"
+      stageUuid: "289c885a-7c0f-8d89-ba0c-81bc195d284f"
 version: 2
 ---
 # points

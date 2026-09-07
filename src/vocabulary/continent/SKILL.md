@@ -2,11 +2,11 @@
 name: continent
 description: "Use when reasoning about continent — One of the continents (for example, Europe or Africa)."
 atomPath: "vocabulary/continent"
-coordinate: "vocabulary/continent · 4/weave · 60a3da61"
-contentUuid: "77e5330a-b987-5153-8ab9-bd5ccd4ac570"
-diamondUuid: "b6d5544e-20b6-8373-ae51-b4cb0af7a4a4"
-uuid: "60a3da61-e662-8d31-aa63-eaa1692be484"
-horo: 4
+coordinate: "vocabulary/continent · 5/round · 07fb4f30"
+contentUuid: "0bca1370-bf3f-51f0-b770-f9538f0c3858"
+diamondUuid: "41e785a9-080c-8755-8677-8b25be071395"
+uuid: "07fb4f30-2297-897c-8997-19ea24fbea3e"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "148ecfcf-2daa-84f7-8ac2-2433a7bb46df"
+  computationUuid: "918e96b9-d24b-83e4-9b42-47acaeb40b2a"
   stages:
     - stage: path
       stageUuid: "aacebed9-3668-8b9d-9b61-238296121845"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "438a3ff9-c171-8045-a9fa-363137541fc4"
     - stage: horo
-      stageUuid: "716174ed-c8fe-88a7-b61d-e5eb67f80e24"
+      stageUuid: "097d24d3-e9c1-8db4-918d-c9ad1ed8c6b8"
     - stage: seal
       stageUuid: "12de1b3e-10b4-85b4-b18e-5be273d6ed1a"
     - stage: uuid
-      stageUuid: "d4683029-840f-8eaf-97dc-950c64e189b7"
+      stageUuid: "cec56515-0e57-818d-991f-934f73689bf1"
 version: 2
 ---
 # continent

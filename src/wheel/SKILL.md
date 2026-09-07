@@ -2,11 +2,11 @@
 name: wheel
 description: "Use when reasoning about wheel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: wheel
-coordinate: "wheel · 7/descent · a412fbc5"
-contentUuid: "52a1703c-d63b-54b5-b01d-dfa27ae937cc"
-diamondUuid: "e8dbd15d-7509-8200-9d5e-41c7f18695c4"
-uuid: "a412fbc5-b212-8000-bace-da22e5f99b47"
-horo: 7
+coordinate: "wheel · 2/share · ea105b4b"
+contentUuid: "3ccf10e1-daf1-5fc4-aa9c-8ebf156ea4fc"
+diamondUuid: "c2347bcc-6a04-8511-a336-98ba5212793b"
+uuid: "ea105b4b-aa4f-852d-b13b-cdcff66e8ae0"
+horo: 2
 typography:
   partition: wheel
   bondDegree: 38
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "28ebadb0-9452-808b-b4c4-26b8c0663463"
+  computationUuid: "378239b5-15f6-8cab-a6f6-ee41603e53b1"
   stages:
     - stage: path
       stageUuid: "46a36ec6-bcad-8493-a4db-57999e052689"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6297e221-05c2-8ebf-8704-bca792a481bb"
     - stage: horo
-      stageUuid: "f2035b2f-a874-8abb-85c3-d9842619f5cf"
+      stageUuid: "7ebb29e7-598b-8014-be79-6e020c509683"
     - stage: seal
       stageUuid: "400ab394-1b10-88fe-af3d-8cf328ed0892"
     - stage: uuid
-      stageUuid: "79a80a3d-568b-8770-96cf-6daf0c77b31d"
+      stageUuid: "fa29f664-96ed-8b3c-a75e-0ac0ef55f72b"
 version: 2
 ---
 # wheel

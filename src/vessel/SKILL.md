@@ -2,11 +2,11 @@
 name: vessel
 description: Use when reasoning about vessel — A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.
 atomPath: vessel
-coordinate: "vessel · 8/crest · 0b4e3dd3"
-contentUuid: "09fdb36c-e265-5001-b399-e772f793270d"
-diamondUuid: "54944032-cd28-808d-8b46-24093279f928"
-uuid: "0b4e3dd3-ac99-85ce-9649-505c69b4835d"
-horo: 8
+coordinate: "vessel · 5/round · 6d1424b1"
+contentUuid: "ff407388-a2e5-50b8-a68f-a35c3033d5c2"
+diamondUuid: "affb167c-f9c5-85b2-9d10-736299a3e6ac"
+uuid: "6d1424b1-d22d-8109-b217-4d439dbd2eb1"
+horo: 5
 typography:
   partition: vessel
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "87623f42-1df5-82cf-a509-e71d00834787"
+  computationUuid: "ef5ed852-3868-87ae-983a-92a2c2fccc2c"
   stages:
     - stage: path
       stageUuid: "d67d0e0b-7904-8f84-b071-377ba9c2977c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42ad67b9-b94f-8c55-b64e-75c87b71d831"
     - stage: horo
-      stageUuid: "0aa0957e-4bef-8d0d-b38f-499c4e8beb44"
+      stageUuid: "14bf071c-ad2f-8ced-99d2-8f73a4d23189"
     - stage: seal
       stageUuid: "bbcf3831-cd22-80b5-b36f-c9b8a98e8c4e"
     - stage: uuid
-      stageUuid: "b101625f-c791-8fe4-af19-492be6a418f2"
+      stageUuid: "b6e5e806-176e-8ecb-b63d-fe4d014fcaed"
 version: 2
 ---
 # vessel

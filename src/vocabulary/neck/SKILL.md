@@ -2,11 +2,11 @@
 name: neck
 description: "Use when reasoning about neck as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/neck"
-coordinate: "vocabulary/neck · 4/weave · 4dfbef97"
-contentUuid: "b17e6533-468e-522c-b830-e62d68bdeff7"
-diamondUuid: "5153d459-ab3d-8c4e-bfe9-e56b6c726ada"
-uuid: "4dfbef97-3000-8fe4-b8f5-3abe69496b75"
-horo: 4
+coordinate: "vocabulary/neck · 5/round · d92f6853"
+contentUuid: "61092b1f-4296-5b89-a651-9183d9cfb450"
+diamondUuid: "393cdf28-d11d-8cf1-86a8-a96685ed4e2e"
+uuid: "d92f6853-23a8-8582-9736-489c45cffad9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "06adf6aa-fc5b-80f9-8d52-249f4b08993f"
+  computationUuid: "6f31e9f3-cb75-8d83-b2f0-f5256cd98c98"
   stages:
     - stage: path
       stageUuid: "d771dfcf-3cbb-8637-a43f-dc99081dd334"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "738ebd0f-d09a-81d8-97a2-527722f5639e"
     - stage: horo
-      stageUuid: "26ed5b7b-9ffe-83f2-8f50-4e8db3ae87e9"
+      stageUuid: "37bd265a-c783-8565-8665-d38c88fdbf77"
     - stage: seal
       stageUuid: "7fe283fb-a298-8dd8-a197-8fe2ce85f4e2"
     - stage: uuid
-      stageUuid: "8c57b5ac-b65e-81e1-8add-293a274c76ab"
+      stageUuid: "e5d02530-5366-8181-9007-8d254d008c42"
 version: 2
 ---
 # neck

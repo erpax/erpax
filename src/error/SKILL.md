@@ -2,10 +2,10 @@
 name: error
 description: Use when reasoning about error — Representation of an Error.
 atomPath: error
-coordinate: "error · 8/crest · afc9ea33"
-contentUuid: "ee6b131a-e710-5347-9833-701647835ded"
-diamondUuid: "73ff99fd-5881-82bb-b9a5-706507474dc9"
-uuid: "afc9ea33-bb02-8dc7-b78d-675d72a36bdb"
+coordinate: "error · 8/crest · 6a121d4a"
+contentUuid: "6350cfb1-3664-5f98-9d4f-ecf54cbf9bfa"
+diamondUuid: "583ba054-395a-838e-a008-2e70d635af98"
+uuid: "6a121d4a-c1cb-8507-a91a-a085cb6d0e64"
 horo: 8
 typography:
   partition: error
@@ -22,7 +22,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a324a96d-8322-8342-af9c-3b5dbf170012"
+  computationUuid: "3053c146-fddf-8c58-a0dd-c50a4704ae8e"
   stages:
     - stage: path
       stageUuid: "059b2d4e-0017-857e-9938-cc8fe5dd15b0"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "8fd5bc9e-5d1e-8e2e-85db-6016aa13106c"
     - stage: horo
-      stageUuid: "f456f4e8-dffa-818d-94f7-234c712e6f8d"
+      stageUuid: "82b9deac-06db-8375-8d0b-658fafa168f5"
     - stage: seal
       stageUuid: "a55ad6c7-2921-8ee5-a94b-b166b8a36dea"
     - stage: uuid
-      stageUuid: "a917f331-c873-8391-9e5b-19bfdddbde86"
+      stageUuid: "df085d02-b956-81e4-a41d-57f792b81fbb"
 version: 2
 ---
 # error

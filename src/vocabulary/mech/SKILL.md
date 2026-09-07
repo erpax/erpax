@@ -2,11 +2,11 @@
 name: mech
 description: "Use when reasoning about mech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mech"
-coordinate: "vocabulary/mech · 7/descent · 64d34f37"
-contentUuid: "d012e044-05c6-57fb-8f2a-21a7603e1e25"
-diamondUuid: "81d3df45-73df-8e5a-9c63-8ab653c541a7"
-uuid: "64d34f37-3226-807a-b86c-ce9a893eefc9"
-horo: 7
+coordinate: "vocabulary/mech · 4/weave · 1702c1c8"
+contentUuid: "aca24235-e3ba-53c4-86fa-81c66760d091"
+diamondUuid: "56c362e7-23b4-87f2-9689-ac1e3de7ef0c"
+uuid: "1702c1c8-6929-8c39-8145-306a3ef960c0"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1fcaa3a5-875c-8bdc-840b-fd8d0df839dc"
+  computationUuid: "9d8aacb4-f247-8533-b48d-48357ddf1353"
   stages:
     - stage: path
       stageUuid: "5f5cf1e9-fb0f-8b70-843f-99e53802b7c6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a846236a-804e-8f2f-b228-82f5ae006df5"
     - stage: horo
-      stageUuid: "136906c8-eb2c-86ba-b914-82d46ec497cf"
+      stageUuid: "cbdce705-8ca1-8408-9b66-1c332ffc68ba"
     - stage: seal
       stageUuid: "582d259b-2065-8401-b979-c0d97c95d490"
     - stage: uuid
-      stageUuid: "57d8804f-a9be-8d32-844c-848532e3de8e"
+      stageUuid: "a2a77ddd-36db-8763-9319-1825d8262bc0"
 version: 2
 ---
 # mech

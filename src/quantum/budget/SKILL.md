@@ -2,18 +2,18 @@
 name: budget
 description: "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use."
 atomPath: "quantum/budget"
-coordinate: "quantum/budget · 4/weave · 0849b583"
-contentUuid: "60276633-696c-56aa-bb91-81d80a6a069e"
-diamondUuid: "287e7ab1-1243-886c-85c9-9ae18b47e34a"
-uuid: "0849b583-1dd2-850e-89d4-95ac400e0035"
-horo: 4
+coordinate: "quantum/budget · 8/crest · e9dd9e75"
+contentUuid: "f79fff35-ba25-52f4-b8cd-182d53bddf36"
+diamondUuid: "4eee3cac-9e40-84a8-b9bd-91d19a873b53"
+uuid: "e9dd9e75-92a0-8db6-aa8a-e28d4f0df896"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 10
 standards: []
 bindings: []
 signatures:
-  computationUuid: "990b2192-a7cd-89a8-81a7-75127d3b7dfa"
+  computationUuid: "d14bc8db-6c91-8fb0-acdd-605759aa293c"
   stages:
     - stage: path
       stageUuid: "c8a5526d-334d-8944-865c-26e284c4d58f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cdbe79e3-228f-8d06-a5a7-cd36ba1e1d49"
     - stage: horo
-      stageUuid: "a5984030-9b65-8387-af16-e3056db307a5"
+      stageUuid: "9bbb9910-f2fa-84cd-a7fb-2651d6f3916c"
     - stage: seal
       stageUuid: "9b64e585-f112-8ab4-8fad-e675901d19a7"
     - stage: uuid
-      stageUuid: "b76305cc-e232-83a7-81dd-fa1a7136457e"
+      stageUuid: "4add5e42-15cc-82a9-9495-3d160fb4d237"
 quantum:
   superposition:
     - agent
@@ -44,8 +44,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "990b2192-a7cd-89a8-81a7-75127d3b7dfa"
-    contentUuid: "60276633-696c-56aa-bb91-81d80a6a069e"
+    computationUuid: "d14bc8db-6c91-8fb0-acdd-605759aa293c"
+    contentUuid: "f79fff35-ba25-52f4-b8cd-182d53bddf36"
 version: 2
 ---
 # quantum/budget — a byte written into an orientation is billed once per turn, not once
@@ -104,4 +104,4 @@ the ceiling, the fix is usually fewer atoms rather than thinner prose.**
 
 Composes: [[quantum]] · [[agent]] · [[law]].
 
-<sub>content-uuid `60276633-696c-56aa-bb91-81d80a6a069e` · account `quantum/budget` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `f79fff35-ba25-52f4-b8cd-182d53bddf36` · account `quantum/budget` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

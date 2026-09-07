@@ -2,10 +2,10 @@
 name: vendors
 description: "Use when managing purchase-side party master data — vendor identity, VAT/tax classification, IBAN/BIC bank details, payment terms, AP ledger defaults, and IRS 1099 eligibility. The supplier/vendor master and accounts-payable party registry."
 atomPath: vendors
-coordinate: "vendors · 8/crest · 1a2df8b8"
-contentUuid: "7160bc8c-47a3-5cc2-ba83-a76c478fcb35"
-diamondUuid: "5d2ab8d3-6ad4-87c7-8e9e-395907dda7e8"
-uuid: "1a2df8b8-6efd-8244-9f26-103375422f3b"
+coordinate: "vendors · 8/crest · 8236c783"
+contentUuid: "91d91a2d-4efa-5bf0-9079-6aaf10368f74"
+diamondUuid: "6b7d6ced-6bf0-8624-98f6-5e5570923785"
+uuid: "8236c783-39cf-8816-8352-49e4ceb2fc65"
 horo: 8
 typography:
   partition: vendors
@@ -37,7 +37,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4739e0b8-6724-898c-a3f9-a1357cac2b04"
+  computationUuid: "1d5f2ae4-5b86-805a-b73f-b9e1daa75de1"
   stages:
     - stage: path
       stageUuid: "2a6e8c99-f082-82ff-91e2-e5d52e9d7121"
@@ -48,11 +48,11 @@ signatures:
     - stage: links
       stageUuid: "1b5d1159-5783-83c7-9049-b3dd23d11d74"
     - stage: horo
-      stageUuid: "94983fc0-1dfc-8160-b98b-281795768976"
+      stageUuid: "3ae37f7e-27c2-8aa4-b0bd-007495ddd8c5"
     - stage: seal
       stageUuid: "ac5d9531-8734-8004-9492-f6b35fe6bf0c"
     - stage: uuid
-      stageUuid: "c5439be2-f589-8c4a-a167-6aa8743a75de"
+      stageUuid: "39e9eb08-b747-8604-aafd-0c73f0668dbd"
 version: 2
 ---
 # vendors

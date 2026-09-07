@@ -2,11 +2,11 @@
 name: organization
 description: "Use when reasoning about organization as a medical facet of medical — vocabulary pivot to @/organization; nested not duplicated."
 atomPath: "medical/organization"
-coordinate: "medical/organization · 1/base · c240a62d"
-contentUuid: "f33afd4b-6e04-5505-a7e7-0571a5217082"
-diamondUuid: "b12a59a0-7d58-8953-91bd-bb5b741eb109"
-uuid: "c240a62d-8bff-8b26-8ff1-80437d869711"
-horo: 1
+coordinate: "medical/organization · 5/round · 252f27ea"
+contentUuid: "8c11c17e-c5ab-5356-9cb4-b4860a45796e"
+diamondUuid: "0e38bbe5-c341-8238-8f01-0506c4e96474"
+uuid: "252f27ea-0514-81d2-af15-c41b1bf63b3f"
+horo: 5
 typography:
   partition: medical
   bondDegree: 91
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "49a78ca5-73bc-8d08-b8dc-b13c4e416907"
+  computationUuid: "08323fea-c335-87c6-8ebb-f9068b45eab8"
   stages:
     - stage: path
       stageUuid: "aab288b8-79b7-8453-a8fb-c3b41aaf8ffe"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8a994ef3-d277-8643-be4b-daab7aa55381"
     - stage: horo
-      stageUuid: "51201eed-9d15-8739-ad20-dc765df67a26"
+      stageUuid: "73a6a430-87b1-8f70-947a-2716b666e0c5"
     - stage: seal
       stageUuid: "2b803227-d924-8a2d-affd-f0c83e81297c"
     - stage: uuid
-      stageUuid: "34fe38b1-18bb-8fe1-8492-a52fb895301c"
+      stageUuid: "7f30480e-6fa1-8e1a-9be2-bca964b8f211"
 version: 2
 ---
 # medical/organization — medical facet

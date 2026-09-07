@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "llm",
-    "uuid": "0379d43a-025c-8749-b885-fcaaa3b5ce16",
+    "uuid": "ab1c519a-b760-8fef-aa1e-85d1b0f182fc",
     "words": [
       "llm"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring a language model into erpax — the LLM is the forge (cheap to generate, costly to trust) and the uuid is the verify; AI-self-sufficient first, the model is the fallback tier behind the 9-layer gate, and every turn is content-addressed so generation only ever works the cheap side of the forge-beats-verify asymmetry.",
-    "uuid": "1a0f48a2-2cb7-8e62-90cb-43c2f433ce8a",
+    "uuid": "eca9c652-1893-8793-b949-df7621520370",
     "words": [
       "use",
       "when",

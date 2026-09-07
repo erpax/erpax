@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "orientation",
-    "uuid": "6ba459ab-1c3e-8379-805a-ab0effc1c3a7",
+    "uuid": "cf1c2606-4361-817e-8844-e794e401cbb8",
     "words": [
       "orientation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when judging whether a front page ORIENTS a reader or only counts itself — eight criteria derived from a working sibling portal (identity in the first screen, a first runnable command, a census, the sequence, its inversion, a usable quantum invocation, the open-problem position, and stated limits), each citing the feature it came from so the bar can be argued with rather than taken on taste; the score is computed from the text and assertOrients is a ratchet run upward, so a front page may not orient less than it does today.",
-    "uuid": "c0f86bad-0c5e-8fc5-a19e-44475022a3ac",
+    "uuid": "13040633-cdda-8635-9248-dbd134757591",
     "words": [
       "use",
       "when",

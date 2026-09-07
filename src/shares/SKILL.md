@@ -2,11 +2,11 @@
 name: shares
 description: "Use when granting, checking, or revoking uuid-based RBAC access (Law 59) — share bindings (granteeUuid, accessRole, targetUuid) per tenant over content-uuid-addressed resources; the access-control source of truth checkShare reads at read time, with each grant/revoke attested by a chain-linked audit leaf. Revocation is a soft flag, never a delete. The uuid-share RBAC binding collection."
 atomPath: shares
-coordinate: "shares · 8/crest · 5c1dc9ac"
-contentUuid: "5f241352-50b3-5168-bc69-fe5841514b1a"
-diamondUuid: "3f082290-6ee9-8b52-ae68-dc18b45797a0"
-uuid: "5c1dc9ac-c4cd-81f9-85e3-d78a144e3e83"
-horo: 8
+coordinate: "shares · 1/base · ae6d29be"
+contentUuid: "10668647-0c36-5048-b3fb-2bc832682fa0"
+diamondUuid: "2ac95f67-9f72-894f-9217-be0b0a0f7252"
+uuid: "ae6d29be-0bc2-88cf-8cd2-80f1cee38a54"
+horo: 1
 typography:
   partition: shares
   bondDegree: 16
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "821a1056-8279-8195-84a0-051f8c512d4c"
+  computationUuid: "54256c06-02a1-848e-a7a7-e025640586bf"
   stages:
     - stage: path
       stageUuid: "ec32f3ed-127b-8f0a-bf2f-5e9b6a630ce6"
@@ -34,13 +34,13 @@ signatures:
     - stage: boundary
       stageUuid: "b60935b5-0fae-8cd4-a583-97aa5f0e622c"
     - stage: links
-      stageUuid: "266298e2-a565-8646-8e90-92a2815d5af8"
+      stageUuid: "705b9f8a-bee1-8f92-8847-9e1d0d0a2b1d"
     - stage: horo
-      stageUuid: "8be5ef54-3ca8-893d-acce-449e84c134f1"
+      stageUuid: "791db325-faf1-8889-8a3b-e57f7bd1d519"
     - stage: seal
       stageUuid: "023fe6c2-9d77-8671-86c6-b544648ede27"
     - stage: uuid
-      stageUuid: "db56607a-47cb-8f3b-8198-d6aa17e77ba6"
+      stageUuid: "3eb26ba9-522c-8321-ae1a-c21f38c0b009"
 version: 2
 ---
 # shares

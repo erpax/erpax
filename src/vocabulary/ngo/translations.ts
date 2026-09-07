@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ngo",
-    "uuid": "6a8eb11f-cf2e-818d-a18f-5c1a25d104c6",
+    "uuid": "0df178a8-0e9d-8eaf-ae65-d010d366fb0b",
     "words": [
       "ngo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ngo — Organization: Non-governmental Organization.",
-    "uuid": "8e3b6b45-0f41-823f-85c7-29768966e9d0",
+    "uuid": "112da935-a8ec-89a9-8b12-87b8a1771a1c",
     "words": [
       "use",
       "when",

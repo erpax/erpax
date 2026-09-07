@@ -2,11 +2,11 @@
 name: hematologic
 description: "Use when reasoning about hematologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hematologic"
-coordinate: "vocabulary/hematologic · 7/descent · 5572038d"
-contentUuid: "2912b7b6-a003-524f-8d18-426bc1df1f3e"
-diamondUuid: "4b613826-6f4e-8f39-901f-0a7074dee60e"
-uuid: "5572038d-9506-8692-8c20-071a94f70beb"
-horo: 7
+coordinate: "vocabulary/hematologic · 2/share · 5d6897e6"
+contentUuid: "ef118be4-49a7-5c92-a572-b2d151b64262"
+diamondUuid: "e5e647fb-aaee-8d23-aa0f-c96d5d31ad83"
+uuid: "5d6897e6-a16e-8c54-bf9f-e327d471031e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8587c721-f8b3-89bf-b6bb-708ccf8128be"
+  computationUuid: "eed701fb-ecba-85e7-8f4c-a1db62d3730f"
   stages:
     - stage: path
       stageUuid: "d47078cd-4797-8158-856e-5e18cde17cc9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1d520548-c8ef-8839-8526-60a521842a6a"
     - stage: horo
-      stageUuid: "2a5e308c-368d-899a-bbc2-ce324d90c0b4"
+      stageUuid: "58b196df-c1de-88a5-98fa-ba310836cfcc"
     - stage: seal
       stageUuid: "83ee6d27-7439-8c2c-b7b5-e96380c20fd7"
     - stage: uuid
-      stageUuid: "74983731-8ce7-896e-9009-6ef6a4911ebf"
+      stageUuid: "088696ca-716b-87b4-9046-b08fe9139986"
 version: 2
 ---
 # hematologic

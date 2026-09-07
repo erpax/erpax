@@ -2,11 +2,11 @@
 name: protein
 description: "Use when reasoning about protein — Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group)"
 atomPath: "vocabulary/protein"
-coordinate: "vocabulary/protein · 5/round · d0837ef0"
-contentUuid: "3992b371-ef4c-59a3-90eb-56e42d1974e0"
-diamondUuid: "4cfc211a-b4e8-8198-9d76-84389617c652"
-uuid: "d0837ef0-dfee-8cc4-89ab-37a877692a8e"
-horo: 5
+coordinate: "vocabulary/protein · 1/base · 839d7b48"
+contentUuid: "b07651b8-9cf5-5130-a637-a309deae4f6a"
+diamondUuid: "9daf7125-1294-8152-87e9-3572cfcab321"
+uuid: "839d7b48-a597-8db9-8a9d-44ac926dabc2"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d34b20e0-c2cd-897b-bca6-74f4817a05c1"
+  computationUuid: "f40c14fe-e5db-8f77-95c5-9f809a7ae3fa"
   stages:
     - stage: path
       stageUuid: "2904aa77-9a62-8870-959a-535f417dccab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0f4b71b9-fad4-8f50-845f-f9f7e10cb47b"
     - stage: horo
-      stageUuid: "27b7be02-952f-8440-8ab9-be63fe888145"
+      stageUuid: "dae67e2c-db53-8ed1-ab45-129370667c55"
     - stage: seal
       stageUuid: "7aa2c2be-50a3-822d-b4ff-ff01f9c8d78c"
     - stage: uuid
-      stageUuid: "f503e331-e39b-82df-915b-560627b0a852"
+      stageUuid: "f66e60e4-dba7-85ea-92a9-1a0d207669e7"
 version: 2
 ---
 # protein

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pacs004",
-    "uuid": "060d6abc-ca0f-838a-9fe4-50ade942f343",
+    "uuid": "54c212de-8a19-8e8a-b10e-4aac6642e5f5",
     "words": [
       "pacs004"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing ISO 20022 pacs.004 PaymentReturn — return of a previous credit transfer.",
-    "uuid": "956de22b-ee3d-8d1e-b5f2-d95ea15b48d5",
+    "uuid": "247d27d6-9fa1-8f3e-89a1-dc3215248ca3",
     "words": [
       "use",
       "when",

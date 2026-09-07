@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing `src/iso/14289/index.ts`.",
-    "uuid": "480652c1-02fa-893b-b976-4a88723f547d",
+    "uuid": "c7af89cd-af93-8419-a66a-fbf05702f53f",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: direct
 description: "Use when reasoning about direct as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/direct"
-coordinate: "vocabulary/direct · 4/weave · 3d5d361c"
-contentUuid: "47bf10e5-d838-5855-a1c3-b06b9446eca9"
-diamondUuid: "c39e9719-0971-8add-9990-4ed1fdd02696"
-uuid: "3d5d361c-1319-89e7-a7ac-451b9382333d"
-horo: 4
+coordinate: "vocabulary/direct · 8/crest · f42c8ad9"
+contentUuid: "61023cfe-11af-53f4-9c07-3ce3e9437b67"
+diamondUuid: "10fe776d-cb61-8559-ba17-3275526f1db3"
+uuid: "f42c8ad9-c4a5-8cb4-bb9e-673f24ab9fa6"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "df13d877-e5ef-8e2b-9fc2-4f3973179691"
+  computationUuid: "6b8d40d2-0ada-89d1-920c-a524b96e668a"
   stages:
     - stage: path
       stageUuid: "3ce4b265-d6a3-81c8-8234-0294b9d1152e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1c7beb7a-a486-8946-bfa5-4b451bf5bb2d"
     - stage: horo
-      stageUuid: "c5dc77b3-56d7-8cab-aa61-748da0bcd9a2"
+      stageUuid: "d75b3c8e-76c3-8c6c-9387-0ccae86e17c1"
     - stage: seal
       stageUuid: "232a3514-23a4-8b30-8044-f6cbea28dc59"
     - stage: uuid
-      stageUuid: "00887c9e-ceee-8b4b-a271-ee22d57af00a"
+      stageUuid: "6927d21d-e839-8136-b548-71998d74f931"
 version: 2
 ---
 # direct

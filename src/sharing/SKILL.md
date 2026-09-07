@@ -2,11 +2,11 @@
 name: sharing
 description: "Use when reasoning about sharing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sharing
-coordinate: "sharing · 7/descent · 0be36549"
-contentUuid: "d7af8771-5ee1-51bc-a2b2-39a2cfb344be"
-diamondUuid: "034c2215-a799-85e5-856f-916d8ef9dc3d"
-uuid: "0be36549-6f0f-83b4-9774-2a3d783bf8b6"
-horo: 7
+coordinate: "sharing · 2/share · 1a0745b4"
+contentUuid: "6ec67031-b867-526d-93f8-d3cbca429425"
+diamondUuid: "a9453533-1a87-87f7-a9d0-cc5b7ec11594"
+uuid: "1a0745b4-9ca9-88f6-943f-ad50e46c2874"
+horo: 2
 typography:
   partition: sharing
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1bbbb5e1-fcde-8e59-a1b9-b1d1441665a1"
+  computationUuid: "95a88d62-3d97-8a15-a8d0-f4edbaceb23e"
   stages:
     - stage: path
       stageUuid: "a48220ce-a4b9-878c-b5c2-a10e59ed6fee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2421d24c-ba4b-836c-bc3f-1d48216db948"
     - stage: horo
-      stageUuid: "40407c1d-dbd6-8d42-a6d5-70ac515a3d65"
+      stageUuid: "afebc4b9-84c6-835a-ad0a-27f25a794fca"
     - stage: seal
       stageUuid: "94f77049-c201-89c0-9ce1-91664fb9857d"
     - stage: uuid
-      stageUuid: "b62dddb2-41cb-84da-ac72-f050afd8493a"
+      stageUuid: "209f1a66-5db3-8af8-889f-5474a6d8790e"
 version: 2
 ---
 # sharing

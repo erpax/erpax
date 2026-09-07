@@ -2,11 +2,11 @@
 name: online
 description: "Use when reasoning about online as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/online"
-coordinate: "vocabulary/online · 5/round · db3545d7"
-contentUuid: "e7a86296-d9ce-57bd-a481-5dfdd31099bc"
-diamondUuid: "91585e1a-8f58-89c0-95b8-06899b64a0d3"
-uuid: "db3545d7-3107-8418-a2a1-7e3b49f6795f"
-horo: 5
+coordinate: "vocabulary/online · 1/base · 2d193223"
+contentUuid: "c8e6aab8-7683-585b-afc9-c404083f573e"
+diamondUuid: "4e8b985b-4fb5-8e4e-a6da-40c419d61a47"
+uuid: "2d193223-fb1e-8286-be99-3d2213fb74f6"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d5d366c9-77c1-8bd9-9d24-89a56048a819"
+  computationUuid: "bee72092-0bd9-84af-beb7-0a1a241d8caf"
   stages:
     - stage: path
       stageUuid: "27d41345-a166-8c59-8146-cd0dcbbe9c63"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "653e4856-c752-8647-9631-2d9cd880f494"
     - stage: horo
-      stageUuid: "eb7b6cda-eff5-85d8-bb74-6bd77391c45c"
+      stageUuid: "5c60fd55-be04-811c-a19a-cb00977aeb7a"
     - stage: seal
       stageUuid: "a9c15a66-1bc4-8ae7-bf72-7a2441ec2f32"
     - stage: uuid
-      stageUuid: "5a5772f9-bbb1-8af5-a07e-f9b190f2fdeb"
+      stageUuid: "3b2a77e8-a05f-8152-bea8-64012754635f"
 version: 2
 ---
 # online

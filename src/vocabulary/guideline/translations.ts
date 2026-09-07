@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "guideline",
-    "uuid": "ec660521-74de-85e8-80e6-1cf2d2ae3973",
+    "uuid": "336c1f6d-b814-881e-8f19-b38e0df18ff6",
     "words": [
       "guideline"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about guideline — A medical guideline related to this entity.",
-    "uuid": "f98e12bf-e095-8670-9e8d-33921b7df143",
+    "uuid": "4a53484f-1327-8830-810a-899ed1158737",
     "words": [
       "use",
       "when",

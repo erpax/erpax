@@ -2,11 +2,11 @@
 name: reverse
 description: "Use when reasoning about reverse — A reversal is not a new computation; it is the **mirror of an existing balanced entry**: take the source accounting journal entry's , swap each line's and , keep the SAME . Because"
 atomPath: reverse
-coordinate: "reverse · 7/descent · 2ccecd7a"
-contentUuid: "9164e8ba-dd2f-50d5-b7eb-df4a38b0a419"
-diamondUuid: "e93bd129-8216-88ea-a883-e6af7c1544c2"
-uuid: "2ccecd7a-da2a-8e8f-ab16-d238b318e525"
-horo: 7
+coordinate: "reverse · 2/share · 551aebd0"
+contentUuid: "0ce061f4-5260-580e-8b77-abdc704d83f5"
+diamondUuid: "50e7d118-da67-836e-8e0c-14ee6931fbf8"
+uuid: "551aebd0-3389-81b9-a54b-566508f67933"
+horo: 2
 typography:
   partition: reverse
   bondDegree: 86
@@ -21,7 +21,7 @@ standards:
   - "SOX §404 reversal-traceability · @audit ISO-19011 mirror↔origin link.\\\"\""
 bindings: []
 signatures:
-  computationUuid: "4525b335-98e6-834e-a13a-faf2ea9bb0c0"
+  computationUuid: "6a4e697b-601a-8b6a-a37c-f921bb36b96a"
   stages:
     - stage: path
       stageUuid: "41402a87-7c9d-8539-bf50-38830f6553a1"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "4ed67f4f-c998-8d8d-ac9a-56b5ef164ee1"
     - stage: links
-      stageUuid: "ea1cba43-0f03-8d52-8826-355738e41006"
+      stageUuid: "9d279787-8bbf-80cd-8274-0067a0496f7e"
     - stage: horo
-      stageUuid: "12cf8781-94e0-8771-82ef-8923eb8c4788"
+      stageUuid: "8ca80390-5b43-829d-8a74-d2eac9e19043"
     - stage: seal
       stageUuid: "ce204f8d-b998-8269-ab87-64097497b587"
     - stage: uuid
-      stageUuid: "45ca45bc-bca8-8965-b122-31dd1dfaa5f3"
+      stageUuid: "3afa1166-11ee-86fd-8ba7-39fa29d5a254"
 version: 2
 ---
 # reverse — swap the source's debit↔credit, same accounts

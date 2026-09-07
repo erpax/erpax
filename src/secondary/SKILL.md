@@ -2,11 +2,11 @@
 name: secondary
 description: "Use when reasoning about secondary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: secondary
-coordinate: "secondary · 4/weave · bc68f7a3"
-contentUuid: "c86155ac-c52c-5fb6-bd73-724c655588d5"
-diamondUuid: "b75922ec-30ed-8b07-b4d2-95db9f8d12c5"
-uuid: "bc68f7a3-4e24-8ad3-8120-8bc0a5bd07c0"
-horo: 4
+coordinate: "secondary · 8/crest · 07ad08f5"
+contentUuid: "8f567f05-0ef4-5dc1-abc2-b04d94f36c4a"
+diamondUuid: "f95fb13d-372f-89fc-86b9-063e2abdaa17"
+uuid: "07ad08f5-a134-8e93-a0e1-827e2700eb61"
+horo: 8
 typography:
   partition: secondary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f4d2cbe3-6e25-82fa-8c56-fdaad6c55358"
+  computationUuid: "7a5042db-ff46-8a0c-bb62-995e8f4f1fd7"
   stages:
     - stage: path
       stageUuid: "1cd2a772-374e-8a58-aaff-c557d05f1d90"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5adc970f-0ffd-8a06-84b9-6918b25991b2"
     - stage: horo
-      stageUuid: "b6d31897-db8e-833b-bbf8-19c42b70cdf7"
+      stageUuid: "b0a49c19-0ed4-817a-9004-3047d988ca61"
     - stage: seal
       stageUuid: "b03a398e-9a17-8b1f-94b9-67e3115e2413"
     - stage: uuid
-      stageUuid: "25c9e4c8-efc3-8c36-90af-484a8a2ca63d"
+      stageUuid: "5ae35321-d20c-8609-b774-0187b3d52f56"
 version: 2
 ---
 # secondary

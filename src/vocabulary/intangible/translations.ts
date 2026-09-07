@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "intangible",
-    "uuid": "2be6bc26-abfe-8f60-801c-3dc0cad2275a",
+    "uuid": "9163a632-4104-8307-9c39-a1c4586b6ea0",
     "words": [
       "intangible"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about intangible — Use for identifiable intangible assets — patents, licenses, trademarks, software, customer relationships — subject to amortization and impairment per IAS-38; distinct from goodwill",
-    "uuid": "789798a1-f836-8a05-96e4-f02d6a6e9959",
+    "uuid": "088104e1-35c7-8dce-b219-0d834c39d04d",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: djmix
 description: "Use when reasoning about djmix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/djmix"
-coordinate: "vocabulary/djmix · 7/descent · 814efa41"
-contentUuid: "9eff12ba-06ad-5b7b-ad5f-6f53baf78169"
-diamondUuid: "00e2c5fd-01db-858e-ab01-0b70d9022c00"
-uuid: "814efa41-19ef-80a0-a5b6-1d8ecd6f686e"
+coordinate: "vocabulary/djmix · 7/descent · 99d38670"
+contentUuid: "42a86a9d-df69-5ed8-a3e5-8b1c964335fd"
+diamondUuid: "e9406e66-9f09-8a50-94b5-6ffa0fadc56c"
+uuid: "99d38670-cf6c-82e7-90c3-73fe1692e05a"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "04ec6c12-e3a6-8a6f-8c28-dc3e6d865277"
+  computationUuid: "f44f4b0c-c013-8f7f-bf90-beee24c3fb7e"
   stages:
     - stage: path
       stageUuid: "4073bf8a-a6ba-8a1e-9a78-e91d10b49276"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a5d99644-1b64-8bd9-a555-350078e87179"
     - stage: horo
-      stageUuid: "a6e78eec-7ba2-884d-9589-5b8e5a394381"
+      stageUuid: "d73d723b-c133-81f8-8592-c96c5e673618"
     - stage: seal
       stageUuid: "ee9c4b8f-f258-8e60-9e72-423b2e27249e"
     - stage: uuid
-      stageUuid: "2c91b7a2-246a-86fb-bfab-de03ab0e16ee"
+      stageUuid: "5f0e4dbe-98b3-8c30-8476-d9de3bbb3452"
 version: 2
 ---
 # djmix

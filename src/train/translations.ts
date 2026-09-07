@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "train",
-    "uuid": "6a2cda83-af73-867a-b146-66c5b788e899",
+    "uuid": "1f6e7004-1d51-82e4-b201-1aba3df0b50e",
     "words": [
       "train"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay.",
-    "uuid": "eb4cae76-aee3-82ea-809f-8dad09bac45c",
+    "uuid": "c61e4273-761d-8b62-839b-fee7256f43e1",
     "words": [
       "use",
       "when",

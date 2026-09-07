@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unity",
-    "uuid": "c6557de6-3181-83c2-8486-738d59e9b307",
+    "uuid": "44dd6e7b-f5cb-81a7-8ea9-874af196f05c",
     "words": [
       "unity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the closing position of the horo state ring — digit 9, \\\"the ring closes\\\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo.",
-    "uuid": "89d6d839-2355-81bf-ba56-1d8bd876c66f",
+    "uuid": "5e6e7849-4a13-8f7d-a38a-c8672e418fd1",
     "words": [
       "use",
       "when",

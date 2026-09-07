@@ -2,10 +2,10 @@
 name: development
 description: "Use when reasoning about development from the research side — building the tooling and systems that enable inquiry; the other direction of the symmetric research↔development cross, which is one entangled binding."
 atomPath: "research/development"
-coordinate: "research/development · 5/round · ba211572"
-contentUuid: "62af2bc4-f60e-504f-a2b7-656b7fbf67c6"
-diamondUuid: "f75d39cd-9cff-87a2-aeec-83b589715d4c"
-uuid: "ba211572-4177-8af8-a427-fe8461cedcdb"
+coordinate: "research/development · 5/round · bbca363c"
+contentUuid: "76cf2133-dec0-5010-ad52-5b871b4fb581"
+diamondUuid: "2e8757b1-9d70-8552-a164-0de9dfb11b76"
+uuid: "bbca363c-5626-8eb6-ba59-1ee1fd22368b"
 horo: 5
 typography:
   partition: research
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4b503b25-109c-8fdb-9ad2-98cda5ff6cd9"
+  computationUuid: "c92290a0-2ebc-8462-8923-20d7488df06f"
   stages:
     - stage: path
       stageUuid: "f6121bea-b660-885e-9656-3f4636dead8e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "98825b2b-7003-8cf1-9fdf-16f6b44a76a5"
     - stage: horo
-      stageUuid: "9d3620eb-6cd4-8cad-a7f2-84a7cd1a97f9"
+      stageUuid: "eaa78f4c-6acd-8080-9c2d-9e70cba72f76"
     - stage: seal
       stageUuid: "ba9fb947-cbd4-8d64-af44-8f3eda0005a6"
     - stage: uuid
-      stageUuid: "929ffb52-e15b-8ba4-a2e8-2640f6b4390d"
+      stageUuid: "b050844d-7115-8489-8648-7ef405c51eef"
 version: 2
 ---
 # research/development — development → research (enabling)

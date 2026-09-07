@@ -2,11 +2,11 @@
 name: activities
 description: "Use when logging or analysing CRM touch-points — calls, emails, meetings, demos, tasks, social touches, document/quote sends, site visits — against a lead, opportunity, customer, vendor or project; relationship history, last-touch date, direction (inbound/outbound), rep activity volume, next-step planning. The CRM activity-log collection."
 atomPath: activities
-coordinate: "activities · 1/base · d777c55f"
-contentUuid: "8e15c2f1-575f-5c82-b00f-f64bfa637389"
-diamondUuid: "28a2abbb-57d9-8fea-b3a8-c2686111b30d"
-uuid: "d777c55f-fbe3-85b9-b59d-811506f6b335"
-horo: 1
+coordinate: "activities · 7/descent · b270afab"
+contentUuid: "b5153ded-51da-5664-9fbf-265c69c5bfb6"
+diamondUuid: "7d889648-7c22-8c02-b323-9512fb83c8d8"
+uuid: "b270afab-0748-8335-8068-6da4c28c1bb1"
+horo: 7
 typography:
   partition: activities
   bondDegree: 58
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "17344b8d-cadb-8db1-88d9-aed9866ff218"
+  computationUuid: "8cd9c53f-8c49-866f-aaa2-9e421cbaeb1a"
   stages:
     - stage: path
       stageUuid: "a7db485e-6813-825e-9e77-3c34e544ca06"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "8f1f16fe-52fe-8875-8f4c-967707c27f48"
     - stage: horo
-      stageUuid: "ca6960ac-bba2-83f3-b7e0-dc13ca46613f"
+      stageUuid: "1ceb1906-f231-819d-8677-86f1cb85d165"
     - stage: seal
       stageUuid: "181d77b7-a31c-8a7d-9890-4da0bae80813"
     - stage: uuid
-      stageUuid: "e95a464c-90e2-8402-944f-b8ef65be9c3f"
+      stageUuid: "da36f9ba-1822-862b-bb9d-17e7737dc99e"
 version: 2
 ---
 # activities

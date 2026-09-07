@@ -2,18 +2,18 @@
 name: handoff
 description: "Use when a specification must be checked by a command instead of re-read by a human — any prompt is a spec: a handoff document, a chat directive, a PR description, a ticket. Each requirement is transcribed once carrying the document line it came from, and its satisfaction is computed from the tree on every run: atoms checked for the real trinity, symbols read from the parser rather than matched, env keys read from the files. Deviations where the build departs from the spec on purpose are recorded, never absorbed, so implemented never quietly means implemented differently."
 atomPath: handoff
-coordinate: "handoff · 1/base · fb332a49"
-contentUuid: "f685250b-14b8-5a17-8c36-42e1c2f98908"
-diamondUuid: "c609b81d-7d89-8f29-8b35-7381733e669c"
-uuid: "fb332a49-2185-818a-b69e-7104bad9f171"
-horo: 1
+coordinate: "handoff · 8/crest · 0e360b63"
+contentUuid: "4b26ac14-819e-5a62-a33b-d4dd7bc80b3d"
+diamondUuid: "6389d56f-c1aa-8079-aaa0-015ce4a3ba19"
+uuid: "0e360b63-87d6-82cf-8196-dfb6ef3b3689"
+horo: 8
 typography:
   partition: handoff
   bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0229068b-f7f9-8697-8c22-2b876b50c32d"
+  computationUuid: "63d51b5c-2912-88d5-ba07-4ab743831b8d"
   stages:
     - stage: path
       stageUuid: "e31c6351-6aaf-815a-bb84-1b83cc7afbdf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a279a637-102b-8aad-b9ba-e90d8aadb24a"
     - stage: horo
-      stageUuid: "1e7d2e8a-f0e6-8100-b4b4-abfcfa7eec47"
+      stageUuid: "f6fe3c42-9dd2-8f88-831e-5443f9a310ff"
     - stage: seal
       stageUuid: "7f72eca6-072a-8745-8d43-aa5e83f6dd3e"
     - stage: uuid
-      stageUuid: "afdee519-0b09-83f0-868e-18258f52347b"
+      stageUuid: "a1904b90-85c3-85a7-8d5f-1ed0c91a4af8"
 version: 2
 ---
 # handoff — a specification is checked by a command, not by a reading

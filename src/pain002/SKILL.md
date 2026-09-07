@@ -2,18 +2,18 @@
 name: pain002
 description: "Use when parsing ISO 20022 pain.002 CustomerPaymentStatusReport — status report for pain.001/008 initiations."
 atomPath: pain002
-coordinate: "pain002 · 2/share · a07214d1"
-contentUuid: "c6cbc057-9ed1-5715-b2a1-9642070efef5"
-diamondUuid: "e697a357-ef51-8d7e-a46b-f27fd32856b3"
-uuid: "a07214d1-5074-8038-afc1-20e61cdc94ea"
-horo: 2
+coordinate: "pain002 · 7/descent · c7c9e209"
+contentUuid: "24573dfb-a856-5c6b-92b2-4ba184aa0699"
+diamondUuid: "88a8ea0a-2923-8129-8cd7-5f61e558a1bb"
+uuid: "c7c9e209-30eb-80fa-b88a-24de58eb4aa1"
+horo: 7
 typography:
   partition: pain002
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6d67a9d1-085a-8342-a1f0-b86242f327f6"
+  computationUuid: "4d6247ed-3b4d-8e93-b9f8-ff01e3ec2c2b"
   stages:
     - stage: path
       stageUuid: "22d28bd1-d267-80de-a8ae-7b2bdbfbca0e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b2730e29-0904-83af-8d5b-e29bb7c359fa"
     - stage: horo
-      stageUuid: "848bd4a0-99c7-8404-94dc-08626dcda03c"
+      stageUuid: "3326ff6f-d571-899c-821a-e850d04a98d1"
     - stage: seal
       stageUuid: "ac83357c-d90c-8d10-90f8-c0160a563ac8"
     - stage: uuid
-      stageUuid: "1a43f39c-07fe-8114-839f-8c02bb252b64"
+      stageUuid: "cee5e77b-1a44-87c2-a21d-7ce2bcc193d8"
 version: 2
 ---
 # pain.002 — Customer Payment Status Report

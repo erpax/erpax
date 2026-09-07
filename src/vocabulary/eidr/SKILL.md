@@ -2,11 +2,11 @@
 name: eidr
 description: "Use when reasoning about eidr as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/eidr"
-coordinate: "vocabulary/eidr · 8/crest · 36a81adb"
-contentUuid: "846f64fe-748d-54f6-b5e1-690b421de202"
-diamondUuid: "35c12c45-b526-8e0a-9702-214fdb44fee9"
-uuid: "36a81adb-5d15-80b2-bd32-520817c9892e"
-horo: 8
+coordinate: "vocabulary/eidr · 7/descent · a1a2a08d"
+contentUuid: "287cd1ed-271a-5cc7-bcca-56f765261d99"
+diamondUuid: "c4838be0-b1e8-88de-aeef-b57d381117d1"
+uuid: "a1a2a08d-6b7f-8cbd-a347-51835a20546d"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "63ba8515-09f3-8c2d-b046-d798795eaf3f"
+  computationUuid: "ad867d3b-5c84-8a23-beee-b172c57aa2fa"
   stages:
     - stage: path
       stageUuid: "e01127be-18e9-8407-9562-22c8012a95b8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "859b5d5d-b43c-87c7-ad9a-6f1189fdbfc5"
     - stage: horo
-      stageUuid: "09380469-bb65-816d-b5a3-f2dc41ed259e"
+      stageUuid: "f6e0e2f7-bcf4-83b9-aa01-2c9d5590d1ba"
     - stage: seal
       stageUuid: "bc5aa837-60f9-8f48-b715-238ea5484141"
     - stage: uuid
-      stageUuid: "29ee2770-4542-8b59-82b7-79897db02357"
+      stageUuid: "3121b3dc-4114-85a2-9d22-60cd320fbb3c"
 version: 2
 ---
 # eidr

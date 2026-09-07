@@ -2,11 +2,11 @@
 name: fat
 description: "Use when reasoning about fat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fat"
-coordinate: "vocabulary/fat · 1/base · 3a9ad7ca"
-contentUuid: "9af71620-42a8-5bed-a150-d21f08c506ad"
-diamondUuid: "7d9b35f0-488c-848e-beba-4a4f7cac11bb"
-uuid: "3a9ad7ca-971c-83ce-adf3-36f8f94f6152"
-horo: 1
+coordinate: "vocabulary/fat · 5/round · d48cd11c"
+contentUuid: "711c774c-2522-52f9-bf30-abed9a48a5e0"
+diamondUuid: "b7481d3e-653c-8580-b4dd-0bc1f364f8ee"
+uuid: "d48cd11c-34b7-8a28-af55-6d141bdae3a4"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f64d4b05-f175-862d-8b49-267ce9e2cef1"
+  computationUuid: "7a589be1-47d1-8ebd-b2d0-763467a9a67c"
   stages:
     - stage: path
       stageUuid: "9076d9ed-172e-8efc-a692-748e3156c9d6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "87587320-9bcf-8060-9908-6399871ea6b1"
     - stage: horo
-      stageUuid: "bf67eb2c-2b52-8a91-957f-e5860f086b0c"
+      stageUuid: "91d97d7d-a96c-82a3-9861-4f7969d73ab3"
     - stage: seal
       stageUuid: "b2f701a5-96f0-88ef-9a14-4232d600677c"
     - stage: uuid
-      stageUuid: "c951c2be-73c7-819d-aa90-7a953300dec6"
+      stageUuid: "fd651a6f-ad88-8d81-91dd-977db5be9faf"
 version: 2
 ---
 # fat

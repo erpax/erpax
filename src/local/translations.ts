@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "local",
-    "uuid": "a1c48593-a279-81b7-924b-c341ef8ea144",
+    "uuid": "7dc13f9c-1366-86e6-9bce-047c9ad33fd7",
     "words": [
       "local"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-    "uuid": "6a9bab6d-8015-8822-8e9f-aa4bf13a5276",
+    "uuid": "7bba1eef-790d-8763-a261-742df9415c5f",
     "words": [
       "use",
       "when",

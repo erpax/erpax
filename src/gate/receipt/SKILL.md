@@ -2,18 +2,18 @@
 name: receipt
 description: "Use when the push gate must not be an hour-long monolith — green suite verdicts sealed content-addressed by their parsed import closure + schema surface; only changed suites re-run, a failure costs one named batch."
 atomPath: "gate/receipt"
-coordinate: "gate/receipt · 2/share · 41e9ddc3"
-contentUuid: "ac547a3f-4a57-5c4c-85e2-327e96d1ff19"
-diamondUuid: "320448d5-bb9a-8e28-968b-b69e4c37bfbf"
-uuid: "41e9ddc3-08ad-82f8-b8c3-9d510e4e5a65"
-horo: 2
+coordinate: "gate/receipt · 7/descent · a92b81d9"
+contentUuid: "06ad843c-d51a-5269-97f5-b2fc26f879d1"
+diamondUuid: "86380203-511b-8d70-bf33-4a2c198d4f7d"
+uuid: "a92b81d9-66f1-8dd2-801a-b5793d2fad73"
+horo: 7
 typography:
   partition: gate
   bondDegree: 118
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c9c71046-f892-81b3-8dd5-e350eae1e8af"
+  computationUuid: "a6c50cd6-e209-8547-bf66-6f95f2ac2743"
   stages:
     - stage: path
       stageUuid: "f178bb35-a2d1-8dd6-b553-60ce2326c2ea"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f040f95d-228c-8baf-b72d-7c6ca77718e4"
     - stage: horo
-      stageUuid: "7d43d9b3-e47d-8dd7-b731-c378f449626e"
+      stageUuid: "b4fe54f1-3f69-8595-98b1-ea76837ab674"
     - stage: seal
       stageUuid: "6cc79d23-0240-8af8-8e6d-1af1ed6c61c7"
     - stage: uuid
-      stageUuid: "63130da2-cfc9-8ac4-a749-102a740fd660"
+      stageUuid: "35d68d9a-ac44-8840-856a-34a3628dcaef"
 version: 2
 ---
 # gate/receipt — the push failure fixed at its core

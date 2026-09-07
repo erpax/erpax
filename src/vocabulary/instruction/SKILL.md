@@ -2,18 +2,18 @@
 name: instruction
 description: Use when modelling one instruction — the singular model of the instructions collection (the plural store); a directive step to be carried out.
 atomPath: "vocabulary/instruction"
-coordinate: "vocabulary/instruction · 5/round · 026e4543"
-contentUuid: "ed1ede6e-c72f-564f-8e3d-ab95995f9598"
-diamondUuid: "e6986c63-0d11-8bcc-adf7-0320aef074bc"
-uuid: "026e4543-12a2-8ab9-854f-84c8d4c71ebd"
-horo: 5
+coordinate: "vocabulary/instruction · 4/weave · 7d5e4224"
+contentUuid: "999d72aa-5417-58d6-a378-07ccc4cc9bb8"
+diamondUuid: "71bab955-7714-884c-8a3e-d06ff3745d03"
+uuid: "7d5e4224-05c1-8af5-be5f-c70b3da5f60b"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0b11e15d-bf46-8e45-bd32-fba79b666702"
+  computationUuid: "0fb65500-c8e4-8b67-a323-2fcc2b86f577"
   stages:
     - stage: path
       stageUuid: "76cf25d1-df7b-8e3e-9799-ac12632acf18"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fe53fa0a-1117-84d6-a7b2-6a624fe80f45"
     - stage: horo
-      stageUuid: "3b2fe304-0bbf-802c-a93f-d6554728f1d8"
+      stageUuid: "4060eaa1-90b4-8371-a0bb-7adce4853e2e"
     - stage: seal
       stageUuid: "5611e28d-f4b9-8b93-bc10-032457b6a509"
     - stage: uuid
-      stageUuid: "e2d82ab2-0f04-83ac-b4fe-eaf4b468b160"
+      stageUuid: "03c7d35d-ea7c-8080-b5c6-9d9f2700fb9f"
 version: 2
 ---
 # instruction — the model of one [[instructions]] row

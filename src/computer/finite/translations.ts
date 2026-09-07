@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "finite",
-    "uuid": "88427e3d-c25c-8b82-9abe-98a1bbd03452",
+    "uuid": "3347d2ff-ee42-851b-95e6-e0b9280fb678",
     "words": [
       "finite"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling finite-state machines — seal check FSM linking seal guardians to automata theory under computer.",
-    "uuid": "7b3ccd7f-5057-8db5-895e-9507dfa70e69",
+    "uuid": "43776d48-95b9-8c78-a71c-b9ef6e016950",
     "words": [
       "use",
       "when",

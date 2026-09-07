@@ -2,18 +2,18 @@
 name: upsell
 description: "Use when recommending higher-value or complementary products — opportunity detection, recommendation engine, success metrics."
 atomPath: upsell
-coordinate: "upsell · 7/descent · 039b2086"
-contentUuid: "57385ad0-998f-59d2-a77f-9bf488a20f9c"
-diamondUuid: "d61ad0b2-70e0-87b7-b248-a44311f24afb"
-uuid: "039b2086-630e-87b6-b9b6-6001b3ca5e3f"
-horo: 7
+coordinate: "upsell · 5/round · e185cf76"
+contentUuid: "945f3773-bba4-5ceb-93a6-75668122cb88"
+diamondUuid: "f38a9948-03ca-83a7-851f-2e75009b0f5b"
+uuid: "e185cf76-c256-8292-9b61-02a03c1d707d"
+horo: 5
 typography:
   partition: upsell
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bdbba952-e0a0-87b8-a39a-8ff0f63aee86"
+  computationUuid: "7aba9a27-3d97-84be-9566-f35cf1d34afd"
   stages:
     - stage: path
       stageUuid: "b36d76fa-f52d-8781-b7f6-8273fe3b9521"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d96ac48f-35a4-86d3-8f6a-c0a2b4769008"
     - stage: horo
-      stageUuid: "68f92ee6-99cd-8882-a8ac-35956d9d4c95"
+      stageUuid: "bf6817b8-12db-8b30-b47a-827a49832a12"
     - stage: seal
       stageUuid: "cf33e60a-0c4f-807d-8574-32a0ddf7839f"
     - stage: uuid
-      stageUuid: "95527e7d-455a-86e1-baf4-017ea253a028"
+      stageUuid: "fceca6dc-66b0-825e-99f7-1898e06745e3"
 version: 2
 ---
 # upsell

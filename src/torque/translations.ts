@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "torque",
-    "uuid": "823fe067-9303-87c3-a725-f8bc8e017813",
+    "uuid": "4c642b9c-9658-8f96-be56-24858b099b61",
     "words": [
       "torque"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about torque — The torque (turning force) of the vehicle's engine. Typical unit code(s): NU for newton metre (N m), F17 for pound-force per foot, or F48 for pound-force per inch * Note 1: You can",
-    "uuid": "f0dc764b-8fcc-86f0-9602-49287ea3f194",
+    "uuid": "657439bb-ea2e-8917-bd31-f5ddd1f7befb",
     "words": [
       "use",
       "when",

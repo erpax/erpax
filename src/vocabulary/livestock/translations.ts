@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "livestock",
-    "uuid": "0e6af696-8fd2-8395-b35f-b869788f3308",
+    "uuid": "b729e420-2cb6-84c9-95bd-38ec32bbc201",
     "words": [
       "livestock"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling animals raised for produce — the non-crop living-production domain: a herd of animals (cattle/sheep/swine/poultry) measured as biological assets (IAS-41), yielding milk/meat/wool/eggs at harvest, fed on grazed pasture or fodder, bred and health-managed. The animal twin of crop; agriculture's other half.",
-    "uuid": "0132c65d-aa06-82bb-a60c-8e2566feecf9",
+    "uuid": "b0562bc2-2308-8e58-bd91-dc797d6df3c3",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: nested
 description: "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:"
 atomPath: "field/nested"
-coordinate: "field/nested · 1/base · 692ed3a0"
-contentUuid: "6cd3f230-6fde-57fd-9277-e0e334dcc63a"
-diamondUuid: "4e530ffa-02a1-8296-a37f-38b98e937dfc"
-uuid: "692ed3a0-7a86-82ee-b587-df44ebac8b9b"
+coordinate: "field/nested · 1/base · 941f4c99"
+contentUuid: "56449955-c5ce-51b0-84f1-df5bb4926d05"
+diamondUuid: "5a0c231a-f77d-8ae6-b1d0-7706bf62ed2b"
+uuid: "941f4c99-828e-8217-aecb-eb10f8424306"
 horo: 1
 typography:
   partition: field
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.6 maintainability (one truth, one address)"
 bindings: []
 signatures:
-  computationUuid: "5b36861c-ce33-8ca4-9ec2-eccf962ca5a5"
+  computationUuid: "071c70f3-a493-805a-b309-03be884eff19"
   stages:
     - stage: path
       stageUuid: "d262b25f-1e45-8e9a-af99-a14dba4560ac"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7a652f45-e64e-8f23-8224-c458abc8c30d"
     - stage: horo
-      stageUuid: "b6a98c40-2d1a-8186-b050-5fb5d71bb486"
+      stageUuid: "211eb1ff-0001-8bb2-a1c1-050292401ad5"
     - stage: seal
       stageUuid: "05b3c750-fcde-849c-8678-cfc62de8491f"
     - stage: uuid
-      stageUuid: "d6bc2fb0-e908-855c-b399-d17e7d2f1bc0"
+      stageUuid: "c3d355c5-a702-8cdb-ac2d-e2545e9c3434"
 version: 2
 ---
 # field/nested — one dotted path, three private implementations

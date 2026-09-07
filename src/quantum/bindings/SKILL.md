@@ -2,18 +2,18 @@
 name: bindings
 description: "Use when attaching every Cloudflare binding to the edge Worker — each binding is a sense the pure-compute Worker is granted to reach the world (D1, R2, AI, Vectorize, KV, Queues, Durable Objects, Browser, Analytics, Email), the platform-level measurement boundary; attach all, gate each through access, emit a receipt."
 atomPath: "quantum/bindings"
-coordinate: "quantum/bindings · 2/share · a550e7e9"
-contentUuid: "6e4ad56d-7c5a-5347-9d9d-a691a26946d5"
-diamondUuid: "8916e195-1ec1-8fdd-8405-747869c4135b"
-uuid: "a550e7e9-495a-8fab-8c2d-74794b0d89be"
-horo: 2
+coordinate: "quantum/bindings · 8/crest · 06cbdf64"
+contentUuid: "da3c0562-cca2-5068-b526-14df758145eb"
+diamondUuid: "db0ee5e0-7a99-87a8-a557-1fd05d19d8cf"
+uuid: "06cbdf64-1021-8fca-a42a-2bd38e24820d"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 95
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3622259f-622f-8c2a-84da-d3754a3e1dc2"
+  computationUuid: "ff93cf5d-2032-827b-bf51-6e719a40a902"
   stages:
     - stage: path
       stageUuid: "6afb2d1c-7bbf-824c-babb-b9e1df553e05"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "16db4767-ed97-8077-a958-13451ee65f2b"
     - stage: links
-      stageUuid: "e3c767cf-afbd-82e3-8c17-82c64bbce10e"
+      stageUuid: "c6bf8e50-dad7-8046-b7f4-2472538c13fa"
     - stage: horo
-      stageUuid: "95c8d825-7622-81a3-99cd-b98758568aed"
+      stageUuid: "f884ba0e-4ff8-869a-af88-c606e71171c4"
     - stage: seal
       stageUuid: "12a8a4a2-3333-8969-a944-0675f5ed5e3e"
     - stage: uuid
-      stageUuid: "554f8f06-0065-8d45-946e-fba5ce77d91b"
+      stageUuid: "0a592c0d-f5f0-820f-865c-90dd66c439b9"
 quantum:
   superposition:
     - access
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "3622259f-622f-8c2a-84da-d3754a3e1dc2"
-    contentUuid: "6e4ad56d-7c5a-5347-9d9d-a691a26946d5"
+    computationUuid: "ff93cf5d-2032-827b-bf51-6e719a40a902"
+    contentUuid: "da3c0562-cca2-5068-b526-14df758145eb"
 version: 2
 ---
 # quantum/bindings — the Worker's senses
@@ -83,4 +83,4 @@ A binding is a capability grant, so every call passes the trust sandbox — [[ac
 
 @see [[bindings]] · [[worker]] · [[quantum/device]] · [[access]] · [[sandbox]] · [[broker]] · [[receipt]] · [[uuid]] · [[deploy]]
 
-<sub>content-uuid `6e4ad56d-7c5a-5347-9d9d-a691a26946d5` · account `quantum/bindings` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `da3c0562-cca2-5068-b526-14df758145eb` · account `quantum/bindings` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,11 +2,11 @@
 name: estate
 description: "Use when reasoning about estate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/estate"
-coordinate: "vocabulary/estate · 7/descent · 9d7395e1"
-contentUuid: "e6fad550-8bf5-5e00-b74a-9684b5325cea"
-diamondUuid: "fea1532c-7552-8788-8d59-b4be0faca74e"
-uuid: "9d7395e1-a792-8a35-8a67-48eed59a2d3f"
-horo: 7
+coordinate: "vocabulary/estate · 4/weave · c9c1331f"
+contentUuid: "f4f7169d-29df-5053-bd05-333c7aa27917"
+diamondUuid: "9119baab-ec4f-8aef-bcb5-d8d443ce3e58"
+uuid: "c9c1331f-5541-87ad-a2cc-ff6e47c8741a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8b0ec194-ebc9-8884-9666-834824233a62"
+  computationUuid: "d89d4639-2047-8d4e-8703-40a57cd34660"
   stages:
     - stage: path
       stageUuid: "3bbd5759-ec1b-8747-b959-14c99ae88076"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "865310c5-17ed-8c92-b0b8-040ecf1d304b"
     - stage: horo
-      stageUuid: "8e79f2ef-8e45-8984-9fc0-2837c35f9e04"
+      stageUuid: "674ebf88-7775-88c9-b824-dc23fb11dc27"
     - stage: seal
       stageUuid: "2acbae23-4cba-86e7-9816-56a1e6a578ca"
     - stage: uuid
-      stageUuid: "c07c33d6-c5a2-8e61-8259-54cf6ea11439"
+      stageUuid: "65ee10f1-6f44-88b4-871a-cb8190e88589"
 version: 2
 ---
 # estate

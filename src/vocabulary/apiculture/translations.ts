@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "apiculture",
-    "uuid": "e4079dd0-e5f1-838b-a553-ade4e0329616",
+    "uuid": "07deff34-e2e0-8985-a6d0-163b616a6d29",
     "words": [
       "apiculture"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when keeping bee colonies for produce and pollination — the colony (queen + workers) as a biological asset (the hive housing is IAS-16 equipment); honey and wax are harvested produce, the colony is also rented as a pollination service; brood is its growth, swarming its propagation, colony loss its mortality, the nectar flow its season. A living-production domain anchor and the pollination link to crops.",
-    "uuid": "3df23e8f-aa21-8c03-af30-274e3214ce04",
+    "uuid": "897ae585-bce1-8551-a04d-b426d3fac19d",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: qapage
 description: "Use when reasoning about qapage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/qapage"
-coordinate: "vocabulary/qapage · 4/weave · d78bd042"
-contentUuid: "492f19af-0f7c-55e2-9ab6-317ded559bdf"
-diamondUuid: "407a3ba4-0f68-842a-afee-246712275d35"
-uuid: "d78bd042-4ba4-828d-91ab-4bbd5a7eeb3b"
-horo: 4
+coordinate: "vocabulary/qapage · 2/share · 68d65f1f"
+contentUuid: "5f49a2aa-9757-508a-bc9e-0235c39f6366"
+diamondUuid: "7a2d0d1d-4a07-8010-b98f-694117c3ffda"
+uuid: "68d65f1f-d1b9-85a6-96eb-ec09abe2fd0e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8725141-217c-84b8-9df1-8a404d192560"
+  computationUuid: "f5dc558f-912b-86dd-9db1-83c41f31ed6c"
   stages:
     - stage: path
       stageUuid: "b29c9c78-bd27-8cd7-895a-92719a00d544"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4099d51b-c91a-8f62-8f75-d11b784990c2"
     - stage: horo
-      stageUuid: "2e79b86a-99ec-8110-8da3-43c323dbec6e"
+      stageUuid: "ba75c080-0536-889f-aaf8-d546814c6179"
     - stage: seal
       stageUuid: "49d3d81b-8d04-873b-b29a-6713dae8bb5b"
     - stage: uuid
-      stageUuid: "bf9b1784-0671-88de-a4b5-e40bb12fd130"
+      stageUuid: "98abe981-45cc-8ba4-85b4-e072a8c63df3"
 version: 2
 ---
 # qapage

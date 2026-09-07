@@ -2,10 +2,10 @@
 name: boys
 description: "Use when reasoning about boys as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/boys"
-coordinate: "vocabulary/boys · 2/share · 9686c73f"
-contentUuid: "a9fe9eff-59fa-598d-b903-104a45ef4615"
-diamondUuid: "4670c4d3-2f32-85fd-8601-d7f2f2a0fa71"
-uuid: "9686c73f-9277-8519-9860-5164802ea0ff"
+coordinate: "vocabulary/boys · 2/share · 8bca2388"
+contentUuid: "dda29509-5336-5316-8d98-1f6bf3592756"
+diamondUuid: "93e0c000-eec6-8892-8dc3-e92b9bd909d7"
+uuid: "8bca2388-4028-81f9-a260-eb10af5e412a"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "18f9ef91-6d37-8e73-a893-8e9029638320"
+  computationUuid: "8689491a-eb92-837a-ae19-a929c5f6bd2d"
   stages:
     - stage: path
       stageUuid: "4cdd1306-c183-8899-b33e-93f43adeab97"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "313c53db-5967-8981-8768-9613a0e2f6dd"
     - stage: horo
-      stageUuid: "ca2c2d4f-6dae-888c-bc7c-e222f02c70e8"
+      stageUuid: "c771cdaa-44d0-8dae-aad9-fa1827fb82ee"
     - stage: seal
       stageUuid: "354c89e8-5f79-8678-a798-cd84f987fcb6"
     - stage: uuid
-      stageUuid: "0c981a03-50da-827d-b290-475461ccb2d1"
+      stageUuid: "736787c8-f79c-881f-90bb-ff2b04277e16"
 version: 2
 ---
 # boys

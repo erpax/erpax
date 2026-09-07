@@ -2,10 +2,10 @@
 name: penciler
 description: Use when reasoning about penciler — The individual who draws the primary narrative artwork.
 atomPath: "vocabulary/penciler"
-coordinate: "vocabulary/penciler · 1/base · a09ddef4"
-contentUuid: "bb8f0a68-1bc6-5370-aafc-9620291dc70e"
-diamondUuid: "c12bea3c-0e4f-81c7-964e-15ee0be18ddd"
-uuid: "a09ddef4-1fad-82fb-9172-adf650806d91"
+coordinate: "vocabulary/penciler · 1/base · 03074486"
+contentUuid: "b3a43982-91dc-58e3-9f61-ae9af2b67018"
+diamondUuid: "c9647edc-d13d-8f06-a036-920ceb167282"
+uuid: "03074486-da65-89e6-9bcf-ef2fb5cfe254"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "452cef05-5069-8b79-9e1d-f02a02b1c223"
+  computationUuid: "c411c8c9-0bd5-8ba3-a5af-e243be788004"
   stages:
     - stage: path
       stageUuid: "6fcf1a05-90af-8299-aed1-89c4a413a6aa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0719a1e6-d693-8968-8e5f-80b14c1c83f7"
     - stage: horo
-      stageUuid: "7a01f742-071f-82e9-9169-ff2ec07c8878"
+      stageUuid: "f00a42c8-8fe2-867a-8af7-34f31595c9c5"
     - stage: seal
       stageUuid: "4c7631e3-ef42-8d40-b617-e6991a8a6a29"
     - stage: uuid
-      stageUuid: "9c7fa243-0788-86ba-b241-98646d6cfa86"
+      stageUuid: "9bdae5c0-5d36-87fb-b0bd-40eba23563ca"
 version: 2
 ---
 # penciler

@@ -2,11 +2,11 @@
 name: protozoa
 description: "Use when reasoning about protozoa as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/protozoa"
-coordinate: "vocabulary/protozoa · 2/share · df37e912"
-contentUuid: "6e9551c8-42f7-5d25-9e74-7af86b8226f2"
-diamondUuid: "ff4d10b0-6779-82bb-857a-d82ef304c6bc"
-uuid: "df37e912-f637-8fa4-ac51-2e9a3e382ec5"
-horo: 2
+coordinate: "vocabulary/protozoa · 4/weave · a29eb369"
+contentUuid: "9b27ab89-5cfc-5ae2-9a8b-27222d41d0a3"
+diamondUuid: "a1a647bc-b26a-8711-8820-968688d85575"
+uuid: "a29eb369-2403-88ff-a0d4-5fe176190140"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d1a157d8-8bf6-8bf7-9440-7d8757b3f643"
+  computationUuid: "6868a603-46ad-8307-8cf9-a02d303385a0"
   stages:
     - stage: path
       stageUuid: "4dbeac77-1452-8fd4-9d75-d2586cb32d3f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eb85db5f-e0b6-8749-853d-9efb11f7bc01"
     - stage: horo
-      stageUuid: "1cb90690-12c5-8aed-9961-1090680cac66"
+      stageUuid: "78d88556-2c21-8cd4-aa86-958a6ad3f6c4"
     - stage: seal
       stageUuid: "72869611-8f16-81a1-942f-c2a4b026bf93"
     - stage: uuid
-      stageUuid: "219a77ab-068a-8294-94de-c88d55a77987"
+      stageUuid: "45861876-983e-8983-97b6-c00a25cde23b"
 version: 2
 ---
 # protozoa

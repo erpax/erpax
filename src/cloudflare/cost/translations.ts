@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cost",
-    "uuid": "7045777e-0f54-8808-b0ef-4e5ae160e623",
+    "uuid": "faf73738-f76a-8c6d-9b41-4117927c63c1",
     "words": [
       "cost"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing or fine-tuning Cloudflare spend — every wrangler.jsonc binding (Workers, D1, R2, KV, Vectorize, Workers AI, Queues, Durable Objects, Analytics Engine) as a billable dimension priced into the one efficiency law (output/cost, kind money). cloudflareCost(profile) computes $ from a usage profile; LEVERS ranks the fine-tunes. The prices are a verifiable input and the magnitudes need real telemetry — the bill is the truth, not this model.",
-    "uuid": "8af68aa6-afbc-8464-92ad-1618946e65b8",
+    "uuid": "7361822a-fab5-8a5a-bd30-c7a3728311b8",
     "words": [
       "use",
       "when",

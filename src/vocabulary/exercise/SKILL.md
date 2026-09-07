@@ -2,10 +2,10 @@
 name: exercise
 description: "Use when reasoning about exercise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/exercise"
-coordinate: "vocabulary/exercise · 7/descent · c938a371"
-contentUuid: "5bc3c46b-34fd-5abc-8f1c-1e47bec98ab8"
-diamondUuid: "2f34c4db-c806-80e7-b659-634e948544f5"
-uuid: "c938a371-6cdf-8c01-ac85-6767ecb70736"
+coordinate: "vocabulary/exercise · 7/descent · 6b957b59"
+contentUuid: "77c7f14d-171d-5dc2-8fe4-e54245e700db"
+diamondUuid: "6bca7318-e6cd-8de7-ae3e-0a9040115582"
+uuid: "6b957b59-d04f-8f43-adea-b5d1b21c6f1f"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1c53754b-dacd-85ba-bdb8-fa635b7ff598"
+  computationUuid: "ed8626f1-cbae-84bb-b390-5e72610da1b3"
   stages:
     - stage: path
       stageUuid: "fdac0f7b-d5d2-83a5-a4df-49d5e51780bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "29748272-4325-82c6-a531-f25f1d15061a"
     - stage: horo
-      stageUuid: "fd2c9c13-d31b-8995-9354-8e0c912a0c23"
+      stageUuid: "a7ba21cc-5515-81b2-aebd-b7ffcb7eeaa3"
     - stage: seal
       stageUuid: "64be30f7-7b39-8fec-9fad-ba534fa409b9"
     - stage: uuid
-      stageUuid: "f7760ff8-1ca7-8fdb-9c32-f521f15f13d6"
+      stageUuid: "a2b75ad1-3a57-86b2-a87c-60580efebac6"
 version: 2
 ---
 # exercise

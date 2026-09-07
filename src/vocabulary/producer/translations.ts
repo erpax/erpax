@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "producer",
-    "uuid": "84f010be-3637-821b-8845-fcbff955d668",
+    "uuid": "e51321ad-440c-8226-a2a0-eae369b18814",
     "words": [
       "producer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about producer — The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.).",
-    "uuid": "f5747cda-336c-8cad-a39c-ca350e3bda10",
+    "uuid": "68094d3d-b0a6-898e-80dc-5587687a1d7c",
     "words": [
       "use",
       "when",

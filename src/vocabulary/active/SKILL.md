@@ -2,18 +2,18 @@
 name: active
 description: "Use when an entity can be active or inactive — archived customers, disabled accounts, deactivated users. Boolean or select (active/inactive); toggle switches lifecycle state without deletion. Antonym of status when status carries workflow states."
 atomPath: "vocabulary/active"
-coordinate: "vocabulary/active · 4/weave · de60b98b"
-contentUuid: "ab89a7e4-6562-50f7-83ef-55687cbbbd69"
-diamondUuid: "a4cabc13-cd3c-8567-b49e-e60185b4e1d2"
-uuid: "de60b98b-7956-8896-9aa0-de24b7a5b24f"
-horo: 4
+coordinate: "vocabulary/active · 7/descent · e9fe5adf"
+contentUuid: "33677879-99b2-53c6-8b26-1ffeb8980b3a"
+diamondUuid: "81b0b6e3-5efb-86e4-8ef0-307048b6c71b"
+uuid: "e9fe5adf-2b63-8b2d-a107-0908db364a8c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "89bf387f-1d48-88a9-b282-183281291eff"
+  computationUuid: "b7351158-361a-8a83-b07c-9c542ce418f8"
   stages:
     - stage: path
       stageUuid: "72a4b27e-6f21-8a90-b29b-666d2aa03471"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3238df51-828d-8acd-aef2-b3560686f643"
     - stage: horo
-      stageUuid: "720dd8c8-f065-8923-834e-8c4c2d3eef66"
+      stageUuid: "5209abb4-e188-8abc-a2fb-f88d761e7fe1"
     - stage: seal
       stageUuid: "ec6bc272-2887-8bdd-8bbc-fb1fc1ce9ad1"
     - stage: uuid
-      stageUuid: "86183faa-b7af-8cf6-9771-7ec066a43d1f"
+      stageUuid: "570b5c8f-5bd8-853f-ad06-3a97938bab8a"
 version: 2
 ---
 # active

@@ -2,10 +2,10 @@
 name: airport
 description: Use when reasoning about airport — An airport.
 atomPath: "vocabulary/airport"
-coordinate: "vocabulary/airport · 8/crest · bad1ed28"
-contentUuid: "70d2cdeb-8cbf-58c0-b5c1-12c140f852b5"
-diamondUuid: "1cdbc1fd-babb-8639-9d67-36215536c0f8"
-uuid: "bad1ed28-1313-874c-9043-cef662808e3d"
+coordinate: "vocabulary/airport · 8/crest · c375a4f2"
+contentUuid: "ebdf40f6-2e98-550e-a061-472dc4d19d38"
+diamondUuid: "6cc8b958-44ce-8eb5-8d58-ee2650551acc"
+uuid: "c375a4f2-a799-8acf-98f3-f8f7c29d352c"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "39c57ee7-e72c-8ade-ac59-5f47d19f0ba0"
+  computationUuid: "300c6f0c-2e31-84fa-824d-88915c7e1380"
   stages:
     - stage: path
       stageUuid: "c23f145c-7a8c-86fe-83bc-dcb7dbcaa397"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0309d007-9190-847f-8e70-228985368a64"
     - stage: horo
-      stageUuid: "7dbe4cbe-7209-827b-a45a-b9d908392724"
+      stageUuid: "ce5520b7-edb7-83e6-bf9e-c857dd075b38"
     - stage: seal
       stageUuid: "027519cf-89c0-8f63-b0d3-a0c666f493de"
     - stage: uuid
-      stageUuid: "50e07930-18ae-8c1b-a047-16ed2cba3465"
+      stageUuid: "61bfc017-a466-825e-a9f7-0eba29b05ec0"
 version: 2
 ---
 # airport

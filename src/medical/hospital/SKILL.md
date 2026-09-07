@@ -2,10 +2,10 @@
 name: hospital
 description: "Use when reasoning about hospital as a medical facet of medical — vocabulary pivot to @/hospital; nested not duplicated."
 atomPath: "medical/hospital"
-coordinate: "medical/hospital · 7/descent · 53cba771"
-contentUuid: "527e3113-c005-5c78-a693-7b9c32468191"
-diamondUuid: "d9e33e83-a5a8-87e2-b372-80428e065710"
-uuid: "53cba771-40ea-825c-a596-c98d1034d23b"
+coordinate: "medical/hospital · 7/descent · b6f50105"
+contentUuid: "744e49b1-5071-577f-9880-a5fec065625f"
+diamondUuid: "02eb97f1-aa15-8bc7-a74f-c99ff6fb77e8"
+uuid: "b6f50105-af09-85af-8474-af483fd2ae09"
 horo: 7
 typography:
   partition: medical
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "89be9c4f-85ee-8b6b-9061-4f738d75665b"
+  computationUuid: "5ea76903-2bd7-8c32-a5db-9901113195af"
   stages:
     - stage: path
       stageUuid: "caef6c52-0c3f-8473-bb93-3f8325c65dd8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "743b084f-16fe-8a68-960f-5211a1096859"
     - stage: horo
-      stageUuid: "50edbfaa-e8cb-8411-aecc-01c9da419e09"
+      stageUuid: "19330dfe-f329-8022-a6ed-f59de19c87f1"
     - stage: seal
       stageUuid: "7c58a79e-69e5-89ac-a228-afe5d156b509"
     - stage: uuid
-      stageUuid: "6948d256-b14d-82c9-8fe5-71df95c1febe"
+      stageUuid: "5f0e6a54-1b16-84c9-96ca-f61ae1337d25"
 version: 2
 ---
 # medical/hospital — medical facet

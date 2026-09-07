@@ -2,10 +2,10 @@
 name: cultivation
 description: "Use when weeds are controlled mechanically among a standing crop — shallow soil-stirring (hoeing, wheel hoe, tine weeder) and thermal (flame weeding). Distinct from tillage (which opens bare ground): cultivation works between the rows of a growing crop, timed to the white-thread weed stage. Many shallow, well-timed passes are the low-cost alternative to herbicide."
 atomPath: "vocabulary/cultivation"
-coordinate: "vocabulary/cultivation · 1/base · 13275ae6"
-contentUuid: "2ad7e3a5-94dc-50da-bd45-6a776f94f3e5"
-diamondUuid: "c90b4aa8-5d9b-851f-94f0-6c3f1cf4c4fc"
-uuid: "13275ae6-25ca-8a31-b9f4-88c084862988"
+coordinate: "vocabulary/cultivation · 1/base · a5e417ae"
+contentUuid: "6dfc4d0b-76d8-5947-9c36-0d91e124f902"
+diamondUuid: "9d4553c8-1c8d-8374-a188-c014c9aefeed"
+uuid: "a5e417ae-89c9-8f56-bf5d-a20f6f8f8565"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4b19ef90-4b4c-8a43-8ab8-2f4bcadd9642"
+  computationUuid: "999405c7-8813-84ba-bf87-4979d42da3b2"
   stages:
     - stage: path
       stageUuid: "cc2d49ce-1dd1-8128-9a33-6e67d3728756"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9a973d43-495e-8aad-a9d3-8a3d6c1b65b5"
     - stage: horo
-      stageUuid: "3c58d40f-987a-8773-908b-55a2789c2a1c"
+      stageUuid: "66eb1c26-dcfc-8d3a-8fe0-68c1b665c54a"
     - stage: seal
       stageUuid: "8365373e-fb81-898a-ba30-1077ecf11494"
     - stage: uuid
-      stageUuid: "f7fde25d-d609-8afd-8cea-bbc40ff88a7a"
+      stageUuid: "fba7f05d-b286-8ba2-bff8-75db1a7ed955"
 version: 2
 ---
 # cultivation — killing weeds among the standing crop

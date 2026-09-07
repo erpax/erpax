@@ -2,11 +2,11 @@
 name: completion
 description: "Use when reasoning about completion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/completion"
-coordinate: "vocabulary/completion · 4/weave · cd84d381"
-contentUuid: "9ade66f0-44f8-5e47-8cc4-545b99a736eb"
-diamondUuid: "63c1ab1a-3f46-80e5-b82f-afd255a5624b"
-uuid: "cd84d381-9aa0-8499-959a-c15ae93e4b50"
-horo: 4
+coordinate: "vocabulary/completion · 7/descent · 19d1da82"
+contentUuid: "3a2ad632-6db2-5f52-9aec-af439852a3d7"
+diamondUuid: "0ef7663c-13fa-8ce4-b41e-f0fef81760a0"
+uuid: "19d1da82-b878-86ee-9195-2cba631afac1"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e1bc11e1-8bd5-8e14-aa69-ff6e263e125b"
+  computationUuid: "624eeabe-1408-8431-9dd7-dcb1f06efcea"
   stages:
     - stage: path
       stageUuid: "06808d01-763d-84dd-8101-7c7f1072d512"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ef7fb950-bc1b-82c6-a084-1dae1ea45eb5"
     - stage: horo
-      stageUuid: "01cd2f77-bde8-86dc-b94a-1216df198551"
+      stageUuid: "b3d9b72c-58f1-8568-89fb-a4f3764d40b8"
     - stage: seal
       stageUuid: "7687467f-af9f-815d-8f76-4b05d73a4543"
     - stage: uuid
-      stageUuid: "f866fb94-a220-8d3e-823f-377db3f69b34"
+      stageUuid: "1907bd19-baab-81e7-a2d5-b3567a32c125"
 version: 2
 ---
 # completion

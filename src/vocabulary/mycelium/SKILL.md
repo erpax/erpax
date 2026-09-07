@@ -2,18 +2,18 @@
 name: mycelium
 description: "Use when modelling a living network with NO center — mycelium is the fungal body as a self-organizing web of hyphae that explores, connects, and transports nutrients with no brain and no coordinator; the literal decentralization and the substrate of the mycorrhizal trade. Nature's proof of the wired whole — but the 'wood wide web' is real as a network while its 'mother tree' resource-sharing is contested."
 atomPath: "vocabulary/mycelium"
-coordinate: "vocabulary/mycelium · 2/share · 443f3d1c"
-contentUuid: "cf1c6c16-3a0e-50c6-8213-99e18538cba2"
-diamondUuid: "13e5bb2d-058f-8c14-8321-f4fafd989099"
-uuid: "443f3d1c-328c-899f-afd0-5476a1354ed4"
-horo: 2
+coordinate: "vocabulary/mycelium · 7/descent · abbe3bc3"
+contentUuid: "776bc49e-6f24-52f5-860c-5db6cb9a702c"
+diamondUuid: "6e818faa-478b-86a6-830c-7b29c733cfba"
+uuid: "abbe3bc3-20f7-8630-821a-2daf014da8a0"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c9e90854-b78f-87dd-8d84-065b44460f55"
+  computationUuid: "cd2b12e5-7628-89a6-a0a9-d3bf1f02b974"
   stages:
     - stage: path
       stageUuid: "8a199687-fd65-8184-b1f2-c9ee1a047ffe"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a06c1542-da24-89cf-9a3c-3d3478466324"
     - stage: horo
-      stageUuid: "21fb20b4-3f23-8d31-a17f-ca63aa50b33b"
+      stageUuid: "b4307bc4-6ed2-8b71-9fcf-f3a52efd0ad6"
     - stage: seal
       stageUuid: "b19eafd4-b332-84b4-b3a5-7bbbf52a1380"
     - stage: uuid
-      stageUuid: "9b622ee4-7033-85ff-b1ed-aa70ae044320"
+      stageUuid: "b3c0e63e-7055-806c-9208-f9471295e9f5"
 version: 2
 ---
 # mycelium — the network that is a body (decentralization, alive)

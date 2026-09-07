@@ -2,11 +2,11 @@
 name: expression
 description: "Use when reasoning about expression as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/expression"
-coordinate: "vocabulary/expression · 4/weave · 9b3008ab"
-contentUuid: "2c26c3c6-b59f-55b1-9e86-9d475bc37f10"
-diamondUuid: "e95ac68f-41e3-8274-a1c1-d4b3bcc0005c"
-uuid: "9b3008ab-5f08-8277-b874-5393712d27e3"
-horo: 4
+coordinate: "vocabulary/expression · 8/crest · 2d7d648b"
+contentUuid: "074ca57a-c2c9-5eea-912f-4ef6f035df25"
+diamondUuid: "b23af285-1d4d-8a9d-8f76-a29aeb6226b6"
+uuid: "2d7d648b-bf84-84c0-bca1-fddf1566ca83"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fc4f4faf-32cf-8932-9fbc-ee3fd2cf9b17"
+  computationUuid: "6ea33859-c788-888f-ab27-97b7bfee1323"
   stages:
     - stage: path
       stageUuid: "79deb689-e7dd-85eb-825c-80573bf9807e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f429cdb1-2fcd-88c3-8e64-83f6866f10fd"
     - stage: horo
-      stageUuid: "35f24374-fd01-8239-adc0-73f5b6b8a4a6"
+      stageUuid: "da409831-ec84-8269-9c59-30f9218e00be"
     - stage: seal
       stageUuid: "76745a04-6452-8618-b789-7b07181a5b94"
     - stage: uuid
-      stageUuid: "b6f046e4-1529-8d01-ba1c-aefd99a49bec"
+      stageUuid: "adb512db-26d9-8ed6-a6ac-c1b9b6512576"
 version: 2
 ---
 # expression

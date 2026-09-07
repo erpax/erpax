@@ -2,18 +2,18 @@
 name: network
 description: "Use when a market's desire RISES with its own adoption — network effects, the strongest small-to-big engine. Below critical mass value is negative (anti-network: new users churn, the market collapses to zero — the cold-start problem); above the tipping point growth self-sustains. Seed a dense atomic network, not the whole market; the trendsetter cohort is that first cell."
 atomPath: "vocabulary/network"
-coordinate: "vocabulary/network · 1/base · 90da60e9"
-contentUuid: "bf5d5a8b-76fa-5c42-b034-12cb18d73d8b"
-diamondUuid: "dec700b9-37c4-8a37-bcce-c55112e9214f"
-uuid: "90da60e9-7ade-8fc1-9bce-12dbeafd3b53"
-horo: 1
+coordinate: "vocabulary/network · 4/weave · f0979e5c"
+contentUuid: "71e8fc2d-71b3-5299-96c4-d1978a16b6f3"
+diamondUuid: "7c5f563c-7620-8c5e-ab40-8d9cbcd87da8"
+uuid: "f0979e5c-ec55-8b44-8f35-57eaabd0796c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 69
 standards: []
 bindings: []
 signatures:
-  computationUuid: "954682f7-6c4e-8486-ae3c-8787c7959a01"
+  computationUuid: "e5d07298-3596-80f2-b3a2-d1494c5d2dbb"
   stages:
     - stage: path
       stageUuid: "de1a5f86-b406-8900-987c-c42e2bc31f4e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8a8cae04-b7c8-87a8-8f30-57f1ae0e2eeb"
     - stage: horo
-      stageUuid: "4be613b4-eb3f-86f5-9a21-06ef7c5198e0"
+      stageUuid: "4d524c4a-40d7-8a66-9954-d24d256cd4fe"
     - stage: seal
       stageUuid: "298cda71-114a-8dfe-95d8-76a34dd4907d"
     - stage: uuid
-      stageUuid: "5d6c9e5b-4aa2-8f20-aca1-6331237b1b14"
+      stageUuid: "71408828-2403-8850-93d5-de4fd4af470d"
 version: 2
 ---
 # network — when desire grows with adoption (the self-reinforcing engine)
