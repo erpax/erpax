@@ -2,11 +2,11 @@
 name: runtime
 description: "Use when reasoning about runtime — Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0)."
 atomPath: runtime
-coordinate: "runtime · 2/share · 56e8d5d7"
-contentUuid: "3efbb7e1-33bd-5558-b100-a3a940f9fdb5"
-diamondUuid: "96f1b7fe-ce6c-8041-95aa-05c3899e3cc5"
-uuid: "56e8d5d7-9142-8ca6-90dc-97f1363d444f"
-horo: 2
+coordinate: "runtime · 8/crest · 4736551a"
+contentUuid: "27cbd0a7-6aa9-5295-9f2f-b96b1a2c34d0"
+diamondUuid: "f0a05a14-2b09-81fd-af6a-bd5838268aad"
+uuid: "4736551a-0231-83c1-b26f-5be9eb9b0978"
+horo: 8
 typography:
   partition: runtime
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8233f3bd-17ec-8ac4-803b-7be8a0da6499"
+  computationUuid: "a9020902-6e88-8dfe-855e-a334e65fc061"
   stages:
     - stage: path
       stageUuid: "b5b1d4e1-baeb-84a1-9a63-509ffe052049"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6257f0ca-2080-88c3-be5f-b627c73e158c"
     - stage: horo
-      stageUuid: "b3c4bf4d-aed8-86f2-9635-211f6991b35e"
+      stageUuid: "0fed47db-e46a-86af-a778-ffeeccb0d598"
     - stage: seal
       stageUuid: "b4533044-d016-8644-ad0e-4e8fd971c456"
     - stage: uuid
-      stageUuid: "3df0df39-4cdd-8040-8195-d4bd315543ed"
+      stageUuid: "c6b5f066-81d3-8834-8a3b-ba98f3a75359"
 version: 2
 ---
 # runtime

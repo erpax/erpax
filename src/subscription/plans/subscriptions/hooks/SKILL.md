@@ -2,11 +2,11 @@
 name: hooks
 description: "Use when reasoning about hooks — publishes the subscription's transitions and protects its credentials on the way in."
 atomPath: "subscription/plans/subscriptions/hooks"
-coordinate: "subscription/plans/subscriptions/hooks · 9/unity · 813d8893"
-contentUuid: "423ad29c-984e-529d-a718-6d2833d57e10"
-diamondUuid: "b46d943c-4de2-8776-989a-2598fd44d846"
-uuid: "813d8893-334e-8d14-b3e1-8a1b219c4cb8"
-horo: 9
+coordinate: "subscription/plans/subscriptions/hooks · 3/3 · b64af4ce"
+contentUuid: "df414109-02f9-502e-94bd-5fa95a4c3544"
+diamondUuid: "ec1cf246-3cad-86cd-88af-44add2d983e6"
+uuid: "b64af4ce-bf4a-879b-8568-c36a0ff8d0c4"
+horo: 3
 typography:
   partition: subscription
   bondDegree: 348
@@ -14,7 +14,7 @@ standards:
   - "NIST-SP-800-38D"
 bindings: []
 signatures:
-  computationUuid: "8fcc39e5-bafe-8877-913d-de383f663649"
+  computationUuid: "4e7aceb8-c233-86c7-ba5a-0cd877bb2292"
   stages:
     - stage: path
       stageUuid: "66fe0035-69db-81b9-8a7f-d62629864a9f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "67b8b4ad-c7b5-8cb9-9f3e-8345dc57c12f"
     - stage: horo
-      stageUuid: "a3e98489-3d6a-880f-ac87-91a1bb002f7b"
+      stageUuid: "7cc729f5-7ac7-8c26-add9-0819652eb50a"
     - stage: seal
       stageUuid: "d6466ada-ef38-8aca-a71f-b23330ba1187"
     - stage: uuid
-      stageUuid: "0096a22a-f1b4-879a-b334-ab9689972dab"
+      stageUuid: "1c8ad7da-3cbe-8baa-8faa-79833c6ab856"
 version: 2
 ---
 # subscription/plans/subscriptions/hooks — lifecycle events are emitted where the row changes

@@ -2,11 +2,11 @@
 name: alternative
 description: Use when reasoning about alternative — Another gene which is a variation of this one.
 atomPath: "vocabulary/alternative"
-coordinate: "vocabulary/alternative · 4/weave · 17b3a093"
-contentUuid: "3935a497-1e46-57a6-a408-f04dbdc1f4b4"
-diamondUuid: "b5be92b5-f566-8e3f-be11-015a90f99006"
-uuid: "17b3a093-fe8c-88cc-9e57-b57aadcb9ce5"
-horo: 4
+coordinate: "vocabulary/alternative · 5/round · d978e725"
+contentUuid: "21ee4b96-4f1d-50dc-a76c-afadc47f17cc"
+diamondUuid: "47764bdd-45f0-8b74-96db-62645faa382f"
+uuid: "d978e725-f76b-86db-b314-148dad1d5f58"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "931feee2-4739-84b9-ba86-91699ebf6ec1"
+  computationUuid: "200e255d-1e28-8913-bc44-ebc3b011be8b"
   stages:
     - stage: path
       stageUuid: "34e2d2ce-84b3-8e47-ade7-65ef4171d999"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aaf3b1f9-c262-898e-83ef-19f5e782a632"
     - stage: horo
-      stageUuid: "1270b516-b5bf-8b86-b46e-d924960bd59d"
+      stageUuid: "34b763c6-4f04-8512-ba90-f779286dab2b"
     - stage: seal
       stageUuid: "101482b4-1afa-86c7-a75f-2904ac48051d"
     - stage: uuid
-      stageUuid: "9af00f5e-7157-84bb-b1e4-abf34ddcf137"
+      stageUuid: "1467e7a4-a3be-8a23-a6e1-cf7e95ef8448"
 version: 2
 ---
 # alternative

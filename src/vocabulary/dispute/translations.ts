@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dispute",
-    "uuid": "6800b7b1-1a96-81e6-80d3-aab44c7b3e34",
+    "uuid": "ba37af9f-0fc7-8a63-9450-79903229389a",
     "words": [
       "dispute"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when naming a disagreement between parties that a contract or forum must settle — the parent term, including the mechanism that settles it.",
-    "uuid": "fac302e1-0d72-848b-861a-cc0bb73441c4",
+    "uuid": "33e1e3b5-05b0-8dc4-95f8-75e20c5ab612",
     "words": [
       "use",
       "when",

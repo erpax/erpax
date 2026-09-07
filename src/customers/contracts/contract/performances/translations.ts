@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "performances",
-    "uuid": "32330d30-9e36-8854-a86f-6c0ed5569c34",
+    "uuid": "556b2ce6-20e5-8e9d-8faf-52661c37e8df",
     "words": [
       "performances"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection.",
-    "uuid": "6de8ef7d-2550-8993-b317-25a07ae20add",
+    "uuid": "1785d9c6-e85d-8bfb-aac9-c86b7c45f53f",
     "words": [
       "use",
       "when",

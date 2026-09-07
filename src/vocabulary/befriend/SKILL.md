@@ -2,11 +2,11 @@
 name: befriend
 description: "Use when reasoning about befriend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/befriend"
-coordinate: "vocabulary/befriend · 7/descent · 254730e1"
-contentUuid: "b28264d4-7f5e-544c-ac15-4e89b8f69121"
-diamondUuid: "136ec3ff-00dc-8fde-8143-ea242e24d9cb"
-uuid: "254730e1-ffe4-866c-890b-78ed472e8df1"
-horo: 7
+coordinate: "vocabulary/befriend · 5/round · d58718d1"
+contentUuid: "f783f256-ad93-5d58-8083-4b98dccbe39e"
+diamondUuid: "06a5bc61-873d-80ac-bf64-b0e4b58b83a8"
+uuid: "d58718d1-0b23-82a4-9aef-fe56d4cc3dc4"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d9e2b391-381a-8697-b1a0-d9eef6033f14"
+  computationUuid: "ee342e79-d2a5-8c99-9381-13c01c010e3a"
   stages:
     - stage: path
       stageUuid: "0e2e7d58-46e1-8117-8e10-b063028fbb8e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "33065498-668c-8535-acff-629396c5d80c"
     - stage: horo
-      stageUuid: "635d9e06-3bc2-8c51-94dd-b9d6bf20cc32"
+      stageUuid: "85111391-9c4e-8a17-89e8-2ae0d467c2f8"
     - stage: seal
       stageUuid: "84cffe56-addb-8460-95c9-dbf6e45a0f71"
     - stage: uuid
-      stageUuid: "38bdc925-9a43-86ef-9923-2d37a2f5d4b9"
+      stageUuid: "5f07238b-f6ca-8842-8293-2448625b7bc2"
 version: 2
 ---
 # befriend

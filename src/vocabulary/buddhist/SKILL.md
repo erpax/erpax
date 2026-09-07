@@ -2,11 +2,11 @@
 name: buddhist
 description: "Use when reasoning about buddhist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/buddhist"
-coordinate: "vocabulary/buddhist · 7/descent · 98fb2757"
-contentUuid: "cff6cbad-1662-5d1c-be21-5b3c3ad68dd3"
-diamondUuid: "fe622840-0028-85f8-8f1e-c0f6c93de810"
-uuid: "98fb2757-07fe-8738-a474-15cf02525847"
-horo: 7
+coordinate: "vocabulary/buddhist · 8/crest · 70878868"
+contentUuid: "4182831c-6e87-535f-9f37-6628f38e24f3"
+diamondUuid: "7e369705-5fa2-872b-a083-8567f7242ea8"
+uuid: "70878868-d693-8297-a065-6a3118f69f39"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b274effd-a275-8e35-aa00-8dc495e993e5"
+  computationUuid: "f92bbaee-31fa-8ba5-a080-1759ec4f78fc"
   stages:
     - stage: path
       stageUuid: "4cf85a57-fce2-8d39-af44-93c86dc4bac2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3953a236-12fd-8c22-93ea-c1e6f45f1c47"
     - stage: horo
-      stageUuid: "c6db3b3f-9141-8e1b-834c-9b7792389d2e"
+      stageUuid: "f3824b4f-356a-85c1-bce8-a954208796de"
     - stage: seal
       stageUuid: "13513717-ee49-883c-817f-6cdae2e8186c"
     - stage: uuid
-      stageUuid: "c1829a6f-2e07-8487-8ef5-1f93875e5a20"
+      stageUuid: "017aaee6-8686-8eb6-a1fd-c3a01851a54f"
 version: 2
 ---
 # buddhist

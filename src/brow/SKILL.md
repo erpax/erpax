@@ -2,18 +2,18 @@
 name: brow
 description: "Use when reasoning about the sixth center — the third eye (Ajna), index 5 of the seven; a standalone projection of the chakra atom whose note and uuid are computed from the position math and whose colour is rendered from that uuid, never the reverse."
 atomPath: brow
-coordinate: "brow · 5/round · cd149bce"
-contentUuid: "82bc8b4e-2d41-5b16-97f7-1ab449c94ffe"
-diamondUuid: "f6ec9128-b9b6-863b-8795-95e8b9cb4467"
-uuid: "cd149bce-4e21-8513-a896-7751fa973be0"
-horo: 5
+coordinate: "brow · 8/crest · 814ad193"
+contentUuid: "ac620387-5f81-5fde-81ee-d7fc7bc4f0e2"
+diamondUuid: "fa7a7456-f13e-8feb-92b6-36aceea57eb5"
+uuid: "814ad193-2b76-85af-9a8c-ad57ff5cb832"
+horo: 8
 typography:
   partition: brow
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "02f22ed6-05e6-80e0-b342-aa117982ac17"
+  computationUuid: "09a12d60-dc99-8d07-bd53-76242572204e"
   stages:
     - stage: path
       stageUuid: "85b18506-530d-8833-bc27-b19d215bc160"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "560edab2-fd86-8d97-965b-cb3b7bf5934d"
     - stage: horo
-      stageUuid: "f89744d7-0f91-8bb8-a945-7fb166aa21b0"
+      stageUuid: "462ddb18-7b02-8174-ae87-ca1abd67430a"
     - stage: seal
       stageUuid: "cb3ff578-3350-8e9b-9402-0bf79d2e8385"
     - stage: uuid
-      stageUuid: "9a6737a5-da2c-8a14-89e2-7b9bf57260ce"
+      stageUuid: "a7db60ba-8d8b-8eff-af94-e8df9a0f08b6"
 version: 2
 ---
 # brow — the third eye center (Ajna)

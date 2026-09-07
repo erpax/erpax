@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "methods",
-    "uuid": "3d9cbbde-df16-8e7c-a858-ab1f550e5465",
+    "uuid": "f713a27f-61cd-81d0-87be-27b92029fd5a",
     "words": [
       "methods"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection.",
-    "uuid": "d9c0e75b-035b-81ff-829d-d838400b86b8",
+    "uuid": "4b637db4-a716-8af4-9f7a-a1cb2120fe38",
     "words": [
       "use",
       "when",

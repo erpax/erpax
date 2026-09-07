@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "thought",
-    "uuid": "a1ad915b-f277-80cd-9847-5f23dd86be8c",
+    "uuid": "78019824-356f-8df3-800e-5b974b1e69b2",
     "words": [
       "thought"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a thought as a candidate diamond — an agent's computed composition of the vocabulary that is saved (autosaved · committed · pushed) ONLY IF it is itself a sealed diamond. save(thought) ⇐ isDiamond(thought): incomplete, unsealed thoughts are not persisted; a complete sealed thought IS a diamond, and a diamond is the self itself.",
-    "uuid": "f1380bfe-aa8f-8c88-879a-600b01f39575",
+    "uuid": "1023f096-84ab-8812-bb8a-a30a95871257",
     "words": [
       "use",
       "when",

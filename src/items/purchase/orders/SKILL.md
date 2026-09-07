@@ -2,11 +2,11 @@
 name: orders
 description: "Use when raising or reviewing a vendor purchase commitment — line items, Incoterms 2020 delivery terms and location (FOB/CIF/DDP/EXW), order/due dates, currency, and SOX three-way-match (PO → goods receipt → invoice). The procure-to-pay header that gates GL posting timing by FOB point per IFRS-15 §38-42."
 atomPath: "items/purchase/orders"
-coordinate: "items/purchase/orders · 2/share · 2b08040b"
-contentUuid: "4e76ae35-8bc7-5ef6-b7c7-6f0cf64183b4"
-diamondUuid: "e403f0b9-3843-8213-87f9-938b4ad0e2ea"
-uuid: "2b08040b-e470-890b-892b-dee8bf0c98a8"
-horo: 2
+coordinate: "items/purchase/orders · 8/crest · c0c2f337"
+contentUuid: "da0a2782-e003-5d23-a59e-4f2a0230723a"
+diamondUuid: "6a394237-08a0-8392-b4c8-c327d124b16e"
+uuid: "c0c2f337-b487-8d21-9997-ee7922edcd97"
+horo: 8
 typography:
   partition: items
   bondDegree: 96
@@ -29,7 +29,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d619369d-b86e-84a4-8954-4739a96c9295"
+  computationUuid: "abe8e112-965a-8aaa-93c0-212f8ecb723e"
   stages:
     - stage: path
       stageUuid: "49cf6b73-1636-8513-8828-faf9fe67178e"
@@ -40,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "06733905-1ce6-800c-a7ae-d2cec55bfd2a"
     - stage: horo
-      stageUuid: "e7af8c71-3cea-8221-a900-1beb255b6913"
+      stageUuid: "8cc452ca-daf4-8fe5-a26a-8ffbc840d52c"
     - stage: seal
       stageUuid: "f83526b5-a4ba-8a1a-8b15-45767398a915"
     - stage: uuid
-      stageUuid: "cac96dff-e8dd-8a57-b443-5f505301c629"
+      stageUuid: "c1983f40-f820-893c-b875-40b0f9074f34"
 version: 2
 ---
 # purchase-orders

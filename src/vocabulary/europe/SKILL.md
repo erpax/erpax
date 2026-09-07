@@ -2,11 +2,11 @@
 name: europe
 description: "Use when reasoning about europe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/europe"
-coordinate: "vocabulary/europe · 4/weave · f6cbb722"
-contentUuid: "c07a2c4f-0931-51b5-9908-8dc26ec82bf3"
-diamondUuid: "5b44e29d-c1c5-8c5c-ab5e-69626c132c52"
-uuid: "f6cbb722-6821-864e-af15-1fcdc39b8f0c"
-horo: 4
+coordinate: "vocabulary/europe · 2/share · debdd562"
+contentUuid: "b899c09b-882a-5a43-b281-44b174dc4110"
+diamondUuid: "4f27d3c1-a926-8702-97d6-18803a5337b7"
+uuid: "debdd562-2976-885d-a4c5-2f8b62789f37"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3acc24a4-607d-85bd-844b-94dcb7fdcd76"
+  computationUuid: "1f5bee73-f40a-81b2-a417-e00e6093671d"
   stages:
     - stage: path
       stageUuid: "d60c986e-a701-8aaf-ad16-2a0bf6304d82"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "98116dcb-3283-89ef-87cf-5e6a05648042"
     - stage: horo
-      stageUuid: "c449edaf-7005-8210-8452-d35984343c69"
+      stageUuid: "dcad39e2-2158-873b-958f-4a6bb1ffd3a2"
     - stage: seal
       stageUuid: "f58f2c6f-394e-895b-a247-bdaedd6157dd"
     - stage: uuid
-      stageUuid: "58177671-7f7a-85b0-955c-5438f7f52a84"
+      stageUuid: "76aab72c-bf4d-8866-bb78-757d8ab68436"
 version: 2
 ---
 # europe

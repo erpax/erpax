@@ -2,11 +2,11 @@
 name: registry
 description: "Use when a notary check must confirm a company exists and resolve its registered name/address — the REAL wired provider for registryAgency (Агенция по вписванията). Validates an EIK/ЕИК as a BG VAT number against the EU VIES service, which answers over the national Commercial Register in real time; no credential. Honest boundary — VIES gives existence + name + address; representatives/capital and the Property Register (title/encumbrance) need credentialed RegiX / data-sharing access, refused honestly."
 atomPath: "notary/check/registry"
-coordinate: "notary/check/registry · 5/round · 09303d2d"
-contentUuid: "55a457c7-846f-5d15-a084-e1d99ba61870"
-diamondUuid: "2cde81b1-170e-82fb-85b5-faeae7e457d7"
-uuid: "09303d2d-4e50-84fc-b335-49ca2a499ca0"
-horo: 5
+coordinate: "notary/check/registry · 8/crest · 7c6d0357"
+contentUuid: "3423de2f-bb5f-5398-a9ee-b47b78bd7287"
+diamondUuid: "bfd54c67-2d29-84bf-b7b4-056660e5dc98"
+uuid: "7c6d0357-7222-874d-ab6a-31cd9fc9f9ee"
+horo: 8
 typography:
   partition: notary
   bondDegree: 31
@@ -16,7 +16,7 @@ standards:
   - "EU-VAT-Directive"
 bindings: []
 signatures:
-  computationUuid: "4be25875-70fe-8cd8-a68b-dd0c9ecf64fa"
+  computationUuid: "92c74594-70e1-8d47-a4f2-2536dd8a6489"
   stages:
     - stage: path
       stageUuid: "62be28ea-e63e-8245-b065-c99bc8028413"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "ed52fded-1c62-8d52-aa51-9215cd618bd9"
     - stage: horo
-      stageUuid: "e6ec9406-0bf1-8953-bb38-fa8185ce3341"
+      stageUuid: "9cb7919d-5790-8f60-ad9c-594ef7c469bb"
     - stage: seal
       stageUuid: "77f1d446-dde5-8b26-93b5-9744382e2004"
     - stage: uuid
-      stageUuid: "cd1538ed-65a8-8728-a9b2-cc06f41767ac"
+      stageUuid: "bd3060ca-e312-80eb-bb78-2f1eb4a67059"
 version: 2
 ---
 # registry — real company verification via VIES

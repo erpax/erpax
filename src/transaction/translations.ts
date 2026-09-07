@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transaction",
-    "uuid": "025522eb-f63a-8908-a26e-b945210ec72d",
+    "uuid": "dd9a12be-4b43-81e4-a73b-7342bb67f508",
     "words": [
       "transaction"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about transaction — A **transaction** is the atom of business: a balance|balanced flow of value between party|parties — two sides (give/take, debit/credit, seller/buyer) that sum to zero. It is the pr",
-    "uuid": "99240730-0db9-815c-8392-673bb8c845fc",
+    "uuid": "e041141a-6216-838d-9c70-427b2c110fd5",
     "words": [
       "use",
       "when",

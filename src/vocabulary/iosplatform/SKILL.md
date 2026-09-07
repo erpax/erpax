@@ -2,11 +2,11 @@
 name: iosplatform
 description: "Use when reasoning about iosplatform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/iosplatform"
-coordinate: "vocabulary/iosplatform · 2/share · b6469007"
-contentUuid: "36253474-86e1-57fe-ac13-78e700e23e0f"
-diamondUuid: "b3b689f6-b958-8ddb-84cf-dbc901e2e53f"
-uuid: "b6469007-b25d-885c-af03-2b696a56ac95"
-horo: 2
+coordinate: "vocabulary/iosplatform · 5/round · 81ffeae1"
+contentUuid: "314ac1fb-2ec3-5f12-8b08-151942fc7c5a"
+diamondUuid: "fdca9b93-d711-88b1-8a84-593cf97608b7"
+uuid: "81ffeae1-8992-8fc8-a700-07169221abfc"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c72034ff-92b0-82b7-be59-f9c20248e686"
+  computationUuid: "e0183ec7-ca7b-83e3-ade4-9b722a8cb903"
   stages:
     - stage: path
       stageUuid: "c2b153e2-ddf5-8a1e-a258-af794f9c5d40"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "51cc1c48-9410-8374-a812-a282791bd645"
     - stage: horo
-      stageUuid: "a499e951-73ae-8233-a7e7-a1cfa98be060"
+      stageUuid: "24858716-9fd9-8702-becc-522a00b132d8"
     - stage: seal
       stageUuid: "ca0b6e04-e6ca-896b-9b99-147634487a70"
     - stage: uuid
-      stageUuid: "b181bfa3-8fa1-8ade-b543-491eac02ecd1"
+      stageUuid: "9e189839-8fb6-8a86-b6c6-13e5f5de0b2b"
 version: 2
 ---
 # iosplatform

@@ -2,11 +2,11 @@
 name: coverage
 description: "Use when reasoning about coverage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/coverage"
-coordinate: "vocabulary/coverage · 4/weave · 75d10534"
-contentUuid: "1358080a-56d0-5869-a941-0adb5e938f3b"
-diamondUuid: "4b5f3a0a-fb23-8420-bc92-a415f943aaf8"
-uuid: "75d10534-a6bb-8a89-b06b-19533f8c85d6"
-horo: 4
+coordinate: "vocabulary/coverage · 7/descent · 6caa2554"
+contentUuid: "56a9f246-8d0e-5f2b-8e7b-ca18d80af5ce"
+diamondUuid: "a5486dd2-09fd-87d0-9374-a668e1102ba9"
+uuid: "6caa2554-85a6-8cd0-82d0-1b92a108ef13"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 81
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a186b792-88a9-85f7-b89e-2fd29f803de1"
+  computationUuid: "0cb1c5ca-560a-8898-b238-19845247d0ba"
   stages:
     - stage: path
       stageUuid: "de7260d4-fd6e-8dd1-a3c7-ff29e1f9c64a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d64789f2-fbe3-8a5a-b03a-1b838279294c"
     - stage: horo
-      stageUuid: "6bafd4a3-c088-835a-a013-787ba9dccd83"
+      stageUuid: "b03c731a-3276-8316-a771-5844a69e948d"
     - stage: seal
       stageUuid: "4354aa29-8db6-8dc6-9f19-37b0d313f02a"
     - stage: uuid
-      stageUuid: "53b3e0de-9eb1-8aff-a52d-3b429575d58b"
+      stageUuid: "d19d3294-f566-88f1-b224-18583aec317e"
 version: 2
 ---
 # coverage

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "skill",
-    "uuid": "f4f629ee-0936-82b5-815f-85decf72a1b2",
+    "uuid": "f5a814eb-92aa-8e0e-a1c0-4175bcf5fa73",
     "words": [
       "skill"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about skill — Use for the SKILL.md frontmatter gate — scans every SKILL.md, refuses unquoted colon-space descriptions, names that disagree with their folder, and new hyphenated atom folders. The atom face exposes the gate only; the 77MB router index is reached by its own path, never through this barrel.",
-    "uuid": "a24f6e38-28f9-814a-9863-130078d4a4c0",
+    "uuid": "e91c0df2-8deb-8fc2-859a-b1ead0709172",
     "words": [
       "use",
       "when",

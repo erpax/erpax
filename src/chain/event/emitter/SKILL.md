@@ -2,10 +2,10 @@
 name: emitter
 description: "Use when an afterChange transition must fire a business-chain domain event — the wiring layer that maps a status change (or row-create) to one emitDomainEvent call so the chain registry's declared emits matches what actually fires."
 atomPath: "chain/event/emitter"
-coordinate: "chain/event/emitter · 8/crest · 60b2d3e5"
-contentUuid: "d917e01f-cecb-5d64-9a3e-948d1af5ac52"
-diamondUuid: "cf1e94df-d6d6-8d06-aa45-76e3037be347"
-uuid: "60b2d3e5-5e11-8940-8198-4fcdc48e33db"
+coordinate: "chain/event/emitter · 8/crest · 9e45edbf"
+contentUuid: "44eab127-ab4c-5310-b091-4600d363cecc"
+diamondUuid: "cb61549b-0723-8641-b316-8aa8ec703b43"
+uuid: "9e45edbf-0549-8bae-8e91-9d726db9da77"
 horo: 8
 typography:
   partition: chain
@@ -14,7 +14,7 @@ standards:
   - "SOX §404 internal-controls process-evidence"
 bindings: []
 signatures:
-  computationUuid: "a351ea65-ebe3-8762-babd-0c6158b13d10"
+  computationUuid: "8d0aa966-e89c-87b8-b213-42685f10fde6"
   stages:
     - stage: path
       stageUuid: "91fff2a3-0d2a-8036-83a7-8126d5e36879"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2c23b722-a4e2-8e75-86ed-e04b129dccc4"
     - stage: horo
-      stageUuid: "8e7bb6c1-9b54-85f3-b6e2-6bf9479199f0"
+      stageUuid: "46b68a5a-0212-8265-8a24-1fa15d233db3"
     - stage: seal
       stageUuid: "3e9010de-8f57-8c20-9e0a-308f7cfab3a5"
     - stage: uuid
-      stageUuid: "733022b3-9d37-82d7-9e07-0fd991b45f7a"
+      stageUuid: "645b5341-5fbe-8452-83d6-09763fd2c99b"
 version: 2
 ---
 # chain/event/emitter — declared emits become fired events

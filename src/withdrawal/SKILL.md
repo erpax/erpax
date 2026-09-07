@@ -2,18 +2,18 @@
 name: withdrawal
 description: "Use when a treated animal's produce cannot yet be sold — the withdrawal period: the mandatory days after a drug/vaccine/treatment before milk/meat/eggs are residue-safe to market. A food-safety embargo that gates saleability (the accountable cannot-sell-yet state); the livestock twin of a quarantine or lock-up period."
 atomPath: withdrawal
-coordinate: "withdrawal · 7/descent · 57905a89"
-contentUuid: "594bbed9-68b0-51d2-a8ea-6ae25910620d"
-diamondUuid: "c1f5bb08-a7fe-8d85-ad94-2e475bdd1aa5"
-uuid: "57905a89-c1f3-87d0-9898-fd988f740ea7"
-horo: 7
+coordinate: "withdrawal · 5/round · cb2b2213"
+contentUuid: "5915ed01-59ae-5fc9-b4c4-b94153c206fb"
+diamondUuid: "15971850-45d3-898d-ac5e-892fdddb09dc"
+uuid: "cb2b2213-f967-8fd7-abfd-564daa96ffba"
+horo: 5
 typography:
   partition: withdrawal
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "27edf8bf-8f0c-8e8b-9d39-55705d43d7fe"
+  computationUuid: "f42d73fd-53c3-819e-9335-e7bb83251c5e"
   stages:
     - stage: path
       stageUuid: "fb378487-c542-8a29-b37a-d50dd851d558"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c95d2c75-7825-8739-8ec6-facceb96ccb6"
     - stage: horo
-      stageUuid: "95538b17-079f-84c2-831c-f312a0ccfca6"
+      stageUuid: "70d9c923-e05e-82ef-84a6-85e01a17c555"
     - stage: seal
       stageUuid: "17bca5ce-ffb8-8b6d-937d-fda76d431839"
     - stage: uuid
-      stageUuid: "67b5889f-ba3d-86bb-8a3b-e3f1ea1a86f7"
+      stageUuid: "cdc268d7-a0eb-8d5b-b2ff-f0908af4cee2"
 version: 2
 ---
 # withdrawal — the residue-safety embargo that gates saleability

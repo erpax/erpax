@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "row",
-    "uuid": "e5ba098a-206c-8ee7-8484-63f2127fdea4",
+    "uuid": "28359ec4-9dc4-826c-9af7-3844e022fe07",
     "words": [
       "row"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a seed must stay addressable — the entanglement continued one scale down, from atom into seed: a seed row is content-addressed by its canonical key-order-independent bytes and folded with its atom's uuid, so the same content yields the same uuid in every corpus (federation is set-union, re-seeding is idempotent by construction rather than by a remembered upsert), a re-parented or tampered row is caught because its uuid must recompute, and rows are DERIVED from the atom's own exports — never a re-typed constant that forks the truth on the next edit.",
-    "uuid": "3067edc6-975c-8b4f-96c2-a8571ee04c62",
+    "uuid": "b60ab127-aada-8590-844f-1970dc0ebe9e",
     "words": [
       "use",
       "when",

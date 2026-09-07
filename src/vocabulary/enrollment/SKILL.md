@@ -2,11 +2,11 @@
 name: enrollment
 description: "Use when reasoning about enrollment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/enrollment"
-coordinate: "vocabulary/enrollment · 5/round · c59d99c6"
-contentUuid: "89b483a4-766d-55b5-a322-0c3af13d9a15"
-diamondUuid: "7feba8fc-d176-8f54-aa53-6e12317f2bf9"
-uuid: "c59d99c6-3779-8640-8f9c-ad39266936ae"
-horo: 5
+coordinate: "vocabulary/enrollment · 4/weave · f8988338"
+contentUuid: "bace6ecf-413c-57af-8dff-806ac69e5b74"
+diamondUuid: "68ca782c-3a6a-82fa-a17a-d7da32bd4ac6"
+uuid: "f8988338-6439-8740-84d7-ff18ce905538"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f301547b-ff8a-89ed-aab9-d1492e5ee25c"
+  computationUuid: "747e2324-fa6d-8b41-b0fd-1d22f2eaa22e"
   stages:
     - stage: path
       stageUuid: "2a621542-6236-8c9b-a8f7-d0f897cbc159"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "09852b6e-3673-89c9-927c-d9586cbddd39"
     - stage: horo
-      stageUuid: "807de644-821c-8893-beca-3d53f31f5a24"
+      stageUuid: "daefda36-d95d-8ebd-a958-b4f7ed52ab21"
     - stage: seal
       stageUuid: "921dc1f7-afcc-8383-ba05-2bf28a055417"
     - stage: uuid
-      stageUuid: "8354a5b0-7dab-862b-8654-d1db241650c7"
+      stageUuid: "d3a607d0-61d2-83ca-9c77-2d20dc6752c5"
 version: 2
 ---
 # enrollment

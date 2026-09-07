@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "buddhism",
-    "uuid": "88e12f5d-5081-8865-b20e-bb65bbecad32",
+    "uuid": "d3bbafc4-4a9b-88e7-b694-20c5cd92bf27",
     "words": [
       "buddhism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Buddhism as a diamond of invariant atoms — suffering and its cessation, the middle path, emptiness, the blowing-out as return to zero, compassion and loving-kindness, no fixed self. Strip the Pali/Sanskrit prefix and dukkha, sunyata, nirvana, karuna, metta collapse to suffering, void, zeropoint, mercy, love — one content-uuid each.",
-    "uuid": "c7ee206c-f551-8fa0-9d7b-c8769e50ee68",
+    "uuid": "20d23510-cee0-898a-a804-dec3fcce048b",
     "words": [
       "use",
       "when",

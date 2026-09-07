@@ -2,11 +2,11 @@
 name: audio
 description: Use when reasoning about audio — An embedded audio object.
 atomPath: "vocabulary/audio"
-coordinate: "vocabulary/audio · 1/base · 2d25b232"
-contentUuid: "e953fbae-7e24-540f-bf45-cb629451ec5d"
-diamondUuid: "d6541d0c-7528-8bf1-87f5-dc09ba80c1f5"
-uuid: "2d25b232-8c3a-8ec8-a91b-53da1f2d9485"
-horo: 1
+coordinate: "vocabulary/audio · 8/crest · 6782294e"
+contentUuid: "b36f3702-adfd-5d9e-a785-b2ef85281186"
+diamondUuid: "354b0f85-4e76-8db9-83aa-8ee7934c410f"
+uuid: "6782294e-3353-8ebe-a213-093a2757d883"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3a4f227f-2b24-824a-9d1b-d69dcc313e84"
+  computationUuid: "2e4156d3-bf7a-8aa2-8b85-c8cf86844612"
   stages:
     - stage: path
       stageUuid: "c5999713-c9f1-8822-a3aa-b074f3ac7b48"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6dc01c48-a8e6-8105-94b2-0f116f1b67df"
     - stage: horo
-      stageUuid: "78009106-3a4d-80ab-8069-d9103650696d"
+      stageUuid: "f2334d23-d130-8b47-9b8e-93326c3decbc"
     - stage: seal
       stageUuid: "c0e32267-e149-8ff7-b165-aae5e20ed2de"
     - stage: uuid
-      stageUuid: "5221f245-0f0e-8c57-9e91-6c48d8252016"
+      stageUuid: "e7926e92-bbee-87f1-a949-9f1a1aea4967"
 version: 2
 ---
 # audio

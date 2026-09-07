@@ -2,10 +2,10 @@
 name: contagiousness
 description: "Use when reasoning about contagiousness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/contagiousness"
-coordinate: "vocabulary/contagiousness · 2/share · 59dba0b8"
-contentUuid: "9cb0d06c-73e7-59f5-807d-8128affe2dea"
-diamondUuid: "c37836c0-943a-80ef-811a-ae76c55fc119"
-uuid: "59dba0b8-feba-81e0-bd65-134f701c76ac"
+coordinate: "vocabulary/contagiousness · 2/share · b53b3264"
+contentUuid: "5e801cb1-7958-5fe8-932d-3e462678ddcb"
+diamondUuid: "601e9370-497f-83ea-99e0-161c114ab46d"
+uuid: "b53b3264-46c1-83fd-9b34-43e45bca3edb"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "93e905a2-a28b-8cfe-ac10-01b06892582a"
+  computationUuid: "bb7fec21-049d-8448-8b59-c3bdb34a9576"
   stages:
     - stage: path
       stageUuid: "f9c3737a-d5a9-8491-bd06-630289b2ced4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c7e90ede-dc4e-8367-aa9a-6ab51b18a98f"
     - stage: horo
-      stageUuid: "1e1af3a0-ccdd-8205-86f6-febb8468e29e"
+      stageUuid: "2a1442f8-79a9-8b91-a266-2b99b79be8e7"
     - stage: seal
       stageUuid: "233201fd-85d8-87d9-85fa-67ba97fb9aa0"
     - stage: uuid
-      stageUuid: "5604a854-c809-8324-8a04-6c092b3957bf"
+      stageUuid: "120de48f-9352-8b0e-a45c-1c96e370077d"
 version: 2
 ---
 # contagiousness

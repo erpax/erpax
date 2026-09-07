@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "spaces",
-    "uuid": "e79f3f4a-837b-864f-ae27-260c8c44ce1d",
+    "uuid": "5d930e82-c7bb-8ea2-a60e-a5ea2e20df18",
     "words": [
       "spaces"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing IWMS sub-property zones — floors, rooms, open-plan areas, desks, parking bays — with area, capacity, occupancy, amenities, fire-zone, bookability flag, and GL-account or cost-centre allocation under a parent property. The ISO 41011 §3.3.5 space-management collection.",
-    "uuid": "8b97e872-3bc6-8aba-b1b2-0b296fdf7aea",
+    "uuid": "63b09fb5-0eb5-803d-9a44-b5f167b88a87",
     "words": [
       "use",
       "when",

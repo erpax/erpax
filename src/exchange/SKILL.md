@@ -2,11 +2,11 @@
 name: exchange
 description: "Use when reasoning about exchange — FORM: **a cross-domain exchange is gated, sanitized, and receipted — the requester gets the data AND the proof of how it was obtained.** Party (one domain, its own identity) asks p"
 atomPath: exchange
-coordinate: "exchange · 2/share · 695709e8"
-contentUuid: "de17bd87-e9fe-5ee4-ab30-359d4d95c497"
-diamondUuid: "1235d4ae-9849-8317-8466-907772da641d"
-uuid: "695709e8-d6de-86a7-9f6e-0f210dc26176"
-horo: 2
+coordinate: "exchange · 7/descent · 9b8e19d1"
+contentUuid: "6b934e26-0c7f-5dc0-aefa-67b57e6a3a3f"
+diamondUuid: "14bce6bf-f6bb-8543-94d4-4c61286cbcc6"
+uuid: "9b8e19d1-8436-8b59-bd94-ff9ed6d3dbf5"
+horo: 7
 typography:
   partition: exchange
   bondDegree: 43
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c4743fc2-3321-8f6e-9b7c-6a490d7d42fb"
+  computationUuid: "b42f5e17-25ff-836d-8454-f05642a8ab17"
   stages:
     - stage: path
       stageUuid: "991b5f8f-298a-8f09-8315-f7dfb61efe52"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "7ee5a9a7-e172-840f-8783-4dd0724a9c93"
     - stage: horo
-      stageUuid: "a89179b8-beaa-88f6-b0a3-f2b3d6033945"
+      stageUuid: "3fbf4fb1-fa70-87f3-a36e-11dff7aef972"
     - stage: seal
       stageUuid: "6c9ba44c-525d-852c-bc20-becc2a651f3d"
     - stage: uuid
-      stageUuid: "3fbb11b7-42bf-8bca-8722-4444bcd1efc0"
+      stageUuid: "fbbedd85-b267-88f3-a237-0f6890a90e04"
 version: 2
 ---
 # exchange — governed cross-domain data exchange with provenance

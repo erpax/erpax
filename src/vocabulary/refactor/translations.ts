@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "refactor",
-    "uuid": "2f92cd8b-a580-8c6d-a6fd-475d222b2267",
+    "uuid": "51bdb97e-f1cd-8e68-86b7-05c5b38b5e37",
     "words": [
       "refactor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts.",
-    "uuid": "25e50318-148e-8c67-9416-cf966ce9efcd",
+    "uuid": "bba4ddd8-8b41-860c-8bf3-f0527acce58f",
     "words": [
       "use",
       "when",

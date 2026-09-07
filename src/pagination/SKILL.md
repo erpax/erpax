@@ -2,10 +2,10 @@
 name: pagination
 description: "Use when reasoning about pagination — Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\"."
 atomPath: pagination
-coordinate: "pagination · 7/descent · c37c95bf"
-contentUuid: "a1f7b459-1863-5636-ba5b-acb801329c6f"
-diamondUuid: "6bfeed49-8ed4-8a18-ba50-0b6c58096462"
-uuid: "c37c95bf-80aa-89cd-9fb1-5041ee1d09de"
+coordinate: "pagination · 7/descent · 21a599ad"
+contentUuid: "9968a703-d3e0-5296-9d17-662598c2571e"
+diamondUuid: "8e18464a-f1aa-8925-b822-f24f7da59115"
+uuid: "21a599ad-add0-829f-a0df-85f8c7a5e9ef"
 horo: 7
 typography:
   partition: pagination
@@ -19,7 +19,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "db024bdb-789b-88d8-b03f-263cf0a15297"
+  computationUuid: "a2d481be-6e64-8cc3-87b4-cccb259ee5f9"
   stages:
     - stage: path
       stageUuid: "cd29e980-99dd-8094-81d4-544b49908dc2"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "59e03f7c-8d8d-855b-9464-c299f929ecde"
     - stage: horo
-      stageUuid: "47acb7d3-65b2-80a5-8a36-7f8ba30ccfb9"
+      stageUuid: "6d00709a-a255-8ba9-b40b-9d5409802079"
     - stage: seal
       stageUuid: "99c58e65-9552-8283-926c-d2433d9eb3bf"
     - stage: uuid
-      stageUuid: "9c982dde-58ff-8d0d-9c76-2594156284c6"
+      stageUuid: "4697498d-a648-8b68-a04a-3eaebb494781"
 version: 2
 ---
 # pagination

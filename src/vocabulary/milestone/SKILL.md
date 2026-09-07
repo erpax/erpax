@@ -2,18 +2,18 @@
 name: milestone
 description: Use when modelling one milestone — the singular model of the milestones collection (the plural store); a marked checkpoint in a plan or project.
 atomPath: "vocabulary/milestone"
-coordinate: "vocabulary/milestone · 7/descent · 9342219c"
-contentUuid: "fc2126d0-b3c9-597e-baeb-234210ded8ff"
-diamondUuid: "049c8cd4-2062-833b-ac63-c93a8bb9ee7f"
-uuid: "9342219c-a19a-8f49-9576-f05f0aba3c8b"
-horo: 7
+coordinate: "vocabulary/milestone · 4/weave · 1d165632"
+contentUuid: "cb52f1e8-81eb-5f66-ad2b-cd8612d76862"
+diamondUuid: "a4c9940e-8e51-8c8f-864b-a6d8660bd685"
+uuid: "1d165632-352b-8694-a0e7-d71ef441f430"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "35a7e4ac-66ca-8a68-ae5e-e354f61af007"
+  computationUuid: "9decfb73-ee39-8540-97cf-a8a4aae53492"
   stages:
     - stage: path
       stageUuid: "58e4f3c5-8997-87f3-ac6b-d9bc6ae862c4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "459ca5ef-a54f-87fa-8a4e-caae2122808f"
     - stage: horo
-      stageUuid: "21c6f486-c310-8501-bf58-ef1d159b4e6f"
+      stageUuid: "03bbfa04-a18e-8957-99c8-81f4a12aed9c"
     - stage: seal
       stageUuid: "4ca633c2-ffff-8fcd-82e5-8953fc832cbd"
     - stage: uuid
-      stageUuid: "0c0b7ef1-b4d6-86d1-9ea5-1b52e734efaf"
+      stageUuid: "76784357-bc73-8085-a1ac-b9081cddc31b"
 version: 2
 ---
 # milestone — the model of one [[milestones]] row

@@ -2,11 +2,11 @@
 name: covid
 description: "Use when reasoning about covid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/covid"
-coordinate: "vocabulary/covid · 4/weave · d7bb2aa9"
-contentUuid: "7fcb469d-4a02-5409-b8a2-11f5bc0344c9"
-diamondUuid: "3d1b62d5-20f3-8eef-98f3-886024ca1c14"
-uuid: "d7bb2aa9-5779-8d64-a7fa-610f341dcb6b"
-horo: 4
+coordinate: "vocabulary/covid · 8/crest · a651161b"
+contentUuid: "656f0c12-a0ce-5294-826c-56759d4c14be"
+diamondUuid: "237f162e-06e2-86d4-87f5-c6580446bfeb"
+uuid: "a651161b-f1c7-86d7-abb9-b89042f80a04"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e93cfa00-80e1-8ee8-9603-0993449b629b"
+  computationUuid: "db0b0608-a354-826d-bee6-70cef6166c41"
   stages:
     - stage: path
       stageUuid: "15c784bf-6341-80dc-a3bd-a54a441514e6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "47c2d47d-3580-8507-a2c4-fe01672b3dac"
     - stage: horo
-      stageUuid: "3196d554-b6fb-898e-b6d9-13de81ba48a5"
+      stageUuid: "54dee09e-443f-8020-8e00-e353602fd9f3"
     - stage: seal
       stageUuid: "79402276-e614-8317-92ad-760a107b95c3"
     - stage: uuid
-      stageUuid: "88f49103-959c-89d6-99a9-6f8cf0a796d4"
+      stageUuid: "c4f9ed5f-5df5-81bd-b2cd-67694f7eeeaf"
 version: 2
 ---
 # covid

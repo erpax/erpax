@@ -2,11 +2,11 @@
 name: bcc
 description: "Use when reasoning about bcc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bcc"
-coordinate: "vocabulary/bcc · 5/round · e653f99f"
-contentUuid: "ec752370-80b6-570d-8f06-44bab22cb765"
-diamondUuid: "6f87f350-ce76-8b0b-a167-e4e1df510455"
-uuid: "e653f99f-a27c-8ce6-8959-d4ade6a3b73f"
-horo: 5
+coordinate: "vocabulary/bcc · 8/crest · 8c25ba72"
+contentUuid: "5a4995ad-5d52-57e1-97c5-861c90ef6e05"
+diamondUuid: "603794f0-3b8c-8ab5-9b7e-5c74891615f7"
+uuid: "8c25ba72-9360-84d6-959c-65d280e5b488"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "54154cc4-64ed-8450-b08b-d4a07f4404bd"
+  computationUuid: "6fc4acab-e491-806e-8387-5cd86cfe21b5"
   stages:
     - stage: path
       stageUuid: "ebfdc6b9-ed1d-8830-a595-dca01b6e44a3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6034c847-9ed1-8979-a51d-1038e587c27d"
     - stage: horo
-      stageUuid: "771cca17-0468-8f28-a60e-b887079ec36d"
+      stageUuid: "11a0a9fa-ca7c-88b6-9c2b-e878f1c9134e"
     - stage: seal
       stageUuid: "09187deb-0ca5-8cb6-9afc-624cd0f0cec3"
     - stage: uuid
-      stageUuid: "3d384db0-5882-8dfe-b39a-503b34ac3076"
+      stageUuid: "994e747d-8b0b-8851-9410-cf203e654762"
 version: 2
 ---
 # bcc

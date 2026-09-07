@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "selfeducate",
-    "uuid": "8c36c18b-98d8-8272-a19e-1d508b78fa65",
+    "uuid": "82554410-3065-84ed-9647-cca170135e65",
     "words": [
       "selfeducate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about selfeducate — Sealed self-educate workflow definition (scan, wave, seal).",
-    "uuid": "2d456bd2-3a91-8799-b0a0-64f41ef23ca2",
+    "uuid": "d86a84b2-3361-8140-84b9-6105a2d60839",
     "words": [
       "use",
       "when",

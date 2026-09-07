@@ -2,11 +2,11 @@
 name: knows
 description: "Use when reasoning about knows — The most generic bi-directional social/work relation."
 atomPath: "vocabulary/knows"
-coordinate: "vocabulary/knows · 1/base · 1ce12340"
-contentUuid: "0996779c-6052-545d-8444-c93554f717bc"
-diamondUuid: "a66277f6-e4fa-8191-abbd-2d49dc38a416"
-uuid: "1ce12340-bcec-85e3-9562-93dcb99b86ec"
-horo: 1
+coordinate: "vocabulary/knows · 4/weave · 7db4a8d0"
+contentUuid: "98f32ab3-f3de-5b8f-ad80-a5d029eb303d"
+diamondUuid: "b70ee8d0-5489-8f4e-9b47-fa222cd028d6"
+uuid: "7db4a8d0-5b92-8659-a751-8e9d783b53d4"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 13
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7e99d991-da9e-81c7-8f81-51a1a8716e7d"
+  computationUuid: "c5dd61ef-6a16-868a-8c21-e2066099c010"
   stages:
     - stage: path
       stageUuid: "fe8dd2ec-4498-8898-a207-b514d2f5d00c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63593712-0ebd-817d-bce7-493d4581f931"
     - stage: horo
-      stageUuid: "1affb610-3c62-8566-8828-ff50adff0a93"
+      stageUuid: "2017ea1b-f30f-8cbd-ab34-5c79919cce6f"
     - stage: seal
       stageUuid: "7d308303-a568-816b-8470-017019167657"
     - stage: uuid
-      stageUuid: "2c8b6311-aba6-8003-8fbf-623e8b2a1e6e"
+      stageUuid: "1878dbcc-1ae3-81e5-902e-442971cc062a"
 version: 2
 ---
 # knows

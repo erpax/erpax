@@ -2,11 +2,11 @@
 name: lender
 description: Use when reasoning about lender — A sub property of participant. The person that lends the object being borrowed.
 atomPath: "vocabulary/lender"
-coordinate: "vocabulary/lender · 1/base · 08e34b5f"
-contentUuid: "245342a0-7598-52cd-84dc-8c0b5428a627"
-diamondUuid: "f1abc866-7f40-8148-a597-3810158d4a28"
-uuid: "08e34b5f-4a4e-8e14-a0a9-7af59323f1a6"
-horo: 1
+coordinate: "vocabulary/lender · 8/crest · 320cd988"
+contentUuid: "b05127ef-b205-5f29-80de-b5a1226a47d6"
+diamondUuid: "1993ed7e-bac4-8fd0-b260-93dfa5dd20fa"
+uuid: "320cd988-c9fe-8750-8c49-a01cf26bfad8"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d704f851-8e38-8cf7-aff4-da26a1f6e4d8"
+  computationUuid: "f710c03a-b737-85bb-85c9-5f5a4b995e69"
   stages:
     - stage: path
       stageUuid: "78af98f6-3b2d-8843-a665-c7b37344bc41"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bac98fb8-7d7b-80cd-a862-dbb51ff10771"
     - stage: horo
-      stageUuid: "40fb6655-41d3-8ffa-b890-af2a04844d0d"
+      stageUuid: "e0aab62c-17ab-8b64-846b-45901f4e773e"
     - stage: seal
       stageUuid: "7569519f-e49f-868d-b499-0491c79dba42"
     - stage: uuid
-      stageUuid: "50c107c5-7d6c-82f0-9a15-52b53bcc083b"
+      stageUuid: "aa5fa328-5ab0-8e63-9dcc-a51b5ee7b429"
 version: 2
 ---
 # lender

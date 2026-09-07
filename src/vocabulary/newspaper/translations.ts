@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "newspaper",
-    "uuid": "b4beef36-6a2c-8533-bd67-e07622fbfff1",
+    "uuid": "da74a306-395d-84a9-bdd9-7dd3b3c3a171",
     "words": [
       "newspaper"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about newspaper — A publication containing information about varied topics that are pertinent to general information, a geographic area, or a specific subject matter (i.e. business, culture, educati",
-    "uuid": "9007bc0c-0a83-888d-ba13-e25a8a65725d",
+    "uuid": "d55556c6-5f8b-892f-8ec8-f45f2964419b",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: correspondence
 description: "Use when asked whether string theory or quantum computation bears on the Millennium Problems, or whether any of it strengthens cryptography. A physical duality can PREDICT a statement that mathematics then proves — mirror symmetry is the genuine instance — but a correspondence never proves the problem it corresponds to, so every row carries the precise gap that remains beside what is really established. bearsOnSecurity is false in every row, declared per row rather than waved away: hardness rests on module-LWE, factoring, discrete logs and hash preimage resistance, and no result here constrains any of them."
 atomPath: "millennium/correspondence"
-coordinate: "millennium/correspondence · 4/weave · d31c9667"
-contentUuid: "e6b4a6ae-5c70-5e53-97e4-34e9151ee884"
-diamondUuid: "0b2d8cca-4cda-8b04-a4b0-d4b34d0e4fdb"
-uuid: "d31c9667-37f2-806d-8653-a86a6cdc3d94"
-horo: 4
+coordinate: "millennium/correspondence · 1/base · c3ef6a62"
+contentUuid: "e68bee30-05dd-52d7-9e98-06690a995d0b"
+diamondUuid: "4a1cc953-0ce5-8edb-b39d-66c0cdb129a1"
+uuid: "c3ef6a62-53be-88e0-a253-33a302f63ce0"
+horo: 1
 typography:
   partition: millennium
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "b23ea935-801a-8981-83a3-224c1c2e3404"
+  computationUuid: "4ec8f7a8-2a38-800f-9375-29e260e7e550"
   stages:
     - stage: path
       stageUuid: "6b842b5c-c0d8-8f7a-8349-13a15db100ff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "942c7bc3-56bc-8790-953c-2ae30a7c2f6b"
     - stage: horo
-      stageUuid: "cb02a247-7c68-84e0-b569-c1a5834548f8"
+      stageUuid: "716b48af-9de3-81cb-b3da-0f8df98aad4a"
     - stage: seal
       stageUuid: "9f13dd7b-9fcc-8525-88fc-568d02bd66c5"
     - stage: uuid
-      stageUuid: "f4f455be-c94c-80ce-9a5a-996e36e755ac"
+      stageUuid: "e506e7e3-6046-82d3-992b-82d15c427130"
 version: 2
 ---
 # millennium/correspondence — physics predicts; mathematics proves

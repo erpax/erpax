@@ -2,11 +2,11 @@
 name: specification
 description: "Use when reasoning about specification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: specification
-coordinate: "specification · 7/descent · 027ea0b4"
-contentUuid: "c7937f6a-fc88-59cb-83c2-a56ec3708f0b"
-diamondUuid: "94099984-ef58-8dcf-a2d2-21a86d9e18cb"
-uuid: "027ea0b4-dbbb-848c-9409-1e286c3d8848"
-horo: 7
+coordinate: "specification · 1/base · fd7c8368"
+contentUuid: "ba032d3b-9691-5f0e-aaff-5b55159d4f81"
+diamondUuid: "26507ad2-5b49-8634-9868-dbb1e88db542"
+uuid: "fd7c8368-7f40-8b7d-bd50-b457a1e8058d"
+horo: 1
 typography:
   partition: specification
   bondDegree: 144
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "78805d17-68d0-83ee-a91b-5ebde17015bd"
+  computationUuid: "b1512efa-fd34-82ae-aa57-25a078fce003"
   stages:
     - stage: path
       stageUuid: "2ed28284-0dd4-819e-8a6e-a2ad5a56fe15"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2dbeda3f-8d0d-87ea-85a8-29ac75537df7"
     - stage: horo
-      stageUuid: "e809c050-24c3-8645-a68a-cb4c76d1be34"
+      stageUuid: "dec07c1e-da71-8d65-99bf-7662b2949440"
     - stage: seal
       stageUuid: "052322e5-04d4-88b9-87e3-f6957c05af8d"
     - stage: uuid
-      stageUuid: "1483ea04-44c2-8ac4-9d38-03f457f3e09e"
+      stageUuid: "8ac88064-fa48-8048-89ba-1a3adfebaae5"
 version: 2
 ---
 # specification

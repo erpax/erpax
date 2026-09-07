@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "similar",
-    "uuid": "6c044486-3ac9-89a6-8133-72883941b162",
+    "uuid": "b1bc20ef-c7b9-8578-8872-6417007bf6a2",
     "words": [
       "similar"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about why the same form holds at every scale of erpax — field → collection → plugin → erpax → agent — the fractal recursion the sequence embodies. The octave lift (×10 mod 9) preserves position (scale-invariance) and the unit Cayley table is a hologram (6 generators → 36 cells); self-similarity is zero-entropy.",
-    "uuid": "620fd24b-e428-80c2-82fc-7f15524c2c71",
+    "uuid": "c625aa0f-04fa-81ca-bfe5-7c250d2cb1a6",
     "words": [
       "use",
       "when",

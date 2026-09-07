@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "media",
-    "uuid": "aef7e194-d51b-88ab-88e2-6c44015fc759",
+    "uuid": "c59e911c-4145-8f55-bf1e-f21095e1b429",
     "words": [
       "media"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when turning Playwright test artifacts into Media records — screenshots and videos are uploaded to the Media collection and each video gets a WebVTT subtitle track built from its test step titles, so marketing pages can embed live, captioned evidence of documented capabilities.",
-    "uuid": "de5772f0-ebf3-8c02-bfe9-1cdd5c2c3da3",
+    "uuid": "1b585da5-389c-8aff-9377-6885b245dfae",
     "words": [
       "use",
       "when",

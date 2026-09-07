@@ -2,11 +2,11 @@
 name: collar
 description: "Use when reasoning about collar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/collar"
-coordinate: "vocabulary/collar · 2/share · 1a216ea6"
-contentUuid: "834428ad-bd38-5cb4-9562-e4f1f68452b6"
-diamondUuid: "725cdfc2-f597-898c-b80c-38a590eeddc9"
-uuid: "1a216ea6-1b5c-849b-b1ca-ea8a5a3be05c"
-horo: 2
+coordinate: "vocabulary/collar · 1/base · e00f886e"
+contentUuid: "8f2676a8-a431-5804-a411-51c6a13e6c5d"
+diamondUuid: "a2dbbac6-458b-8720-bf0e-42a5ca4acb65"
+uuid: "e00f886e-31bc-832c-9408-db058dbbef46"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9620af89-c74d-8e2d-a797-7fd00cb675e4"
+  computationUuid: "1d63f79b-f3aa-8693-ad95-4af871443ddb"
   stages:
     - stage: path
       stageUuid: "bce01bec-02cd-8a4e-860d-44b99e196b56"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cc7951c3-63cf-8241-8c31-4f26be3e5b21"
     - stage: horo
-      stageUuid: "a053d8ed-5892-8f74-a3a4-f840d9e1535b"
+      stageUuid: "40298e51-b300-8ecb-8d6a-56cf8cabaf40"
     - stage: seal
       stageUuid: "a96423da-e6ca-8992-90bd-eaf3f41ef93a"
     - stage: uuid
-      stageUuid: "8660659a-2ad1-8f28-8d96-81524b30e915"
+      stageUuid: "4357b797-1713-804d-ba37-5bf5a06d8958"
 version: 2
 ---
 # collar

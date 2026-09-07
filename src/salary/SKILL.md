@@ -2,11 +2,11 @@
 name: salary
 description: "Use when reasoning about salary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: salary
-coordinate: "salary · 8/crest · 62d2b126"
-contentUuid: "27a5a8c3-95e1-5689-856d-9331241ded54"
-diamondUuid: "2e457c66-7280-899e-887e-d21632b8faaf"
-uuid: "62d2b126-c905-8591-886b-e86e98ec8322"
-horo: 8
+coordinate: "salary · 5/round · a405a550"
+contentUuid: "7dfa5f20-1c50-593e-9038-80820fee8b4a"
+diamondUuid: "4ac94442-2bc6-8fb9-a772-d58ddb29c5da"
+uuid: "a405a550-be5a-8750-9e55-70462aa1582a"
+horo: 5
 typography:
   partition: salary
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "76f65951-6535-8ff5-b8d9-5bffa6067b65"
+  computationUuid: "30102c88-1cdb-8c07-9e3b-a08a5b89ef0e"
   stages:
     - stage: path
       stageUuid: "2c489882-11ab-88c5-b990-ba94ba45fe46"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cb7aa72b-bc99-8d42-b55f-7f00485bb9d1"
     - stage: horo
-      stageUuid: "45ac724b-9396-8425-97bc-595daa3791d3"
+      stageUuid: "51dca07b-bd2e-808d-800b-355835ab3960"
     - stage: seal
       stageUuid: "e94ab42d-bf9d-80e1-9a8c-ed7b5d6cd2b8"
     - stage: uuid
-      stageUuid: "9dc1542d-97bb-838c-b56a-e258cf77a90c"
+      stageUuid: "9225d54f-a9a7-895a-b3f6-31042f553811"
 version: 2
 ---
 # salary

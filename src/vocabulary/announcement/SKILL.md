@@ -2,10 +2,10 @@
 name: announcement
 description: "Use when reasoning about announcement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/announcement"
-coordinate: "vocabulary/announcement · 7/descent · d36976e6"
-contentUuid: "9acdc6bc-81cc-5e63-b802-1cf282971bfe"
-diamondUuid: "e4350eca-ebf0-8de3-bc4f-7989921a7e96"
-uuid: "d36976e6-ebae-8f24-a9f3-5cf6867b4855"
+coordinate: "vocabulary/announcement · 7/descent · f4b7495c"
+contentUuid: "dd4357f9-0442-56b6-8b42-b4ae90099e52"
+diamondUuid: "04d85f18-786f-8db3-8cf1-ad3a00ec3206"
+uuid: "f4b7495c-36c1-8f3e-b2bc-be36af060f9e"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b67b0ec7-9f92-8d77-b0a2-c5889a8051e7"
+  computationUuid: "6ea6b29d-0a65-8917-83b6-43eee8f3b119"
   stages:
     - stage: path
       stageUuid: "e2e14291-82f8-8087-947d-3ef74154167b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "231106c5-d9db-8b8e-b51d-98246fa4c062"
     - stage: horo
-      stageUuid: "ab25e0c6-02bb-8b70-aa5d-dce33908d988"
+      stageUuid: "acccbd9e-03c7-8fa6-88b9-c4471d6013f7"
     - stage: seal
       stageUuid: "51d5eb9f-8ca9-806d-b02b-7e8640003279"
     - stage: uuid
-      stageUuid: "eecd410a-4bb8-81e9-9681-fcccf3f943c6"
+      stageUuid: "280677b1-00c2-8beb-b212-d55a97d790b4"
 version: 2
 ---
 # announcement

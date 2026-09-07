@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "directors",
-    "uuid": "93a9bb6f-0cb0-8682-902a-eb0138b51d69",
+    "uuid": "2ff78469-ff66-8213-aa6e-30f05ab67954",
     "words": [
       "directors"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about directors — A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
-    "uuid": "4448460b-3351-889b-bc88-1999a9f7b970",
+    "uuid": "8781c245-37a8-8b18-b1d5-30d6428a9738",
     "words": [
       "use",
       "when",

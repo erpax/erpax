@@ -2,11 +2,11 @@
 name: arm
 description: "Use when reasoning about arm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/arm"
-coordinate: "vocabulary/arm · 7/descent · 6c19b0ce"
-contentUuid: "e0fddd1c-f47a-5b22-9909-b659219ecc3a"
-diamondUuid: "face7e82-32b4-8d5b-a503-66774d723978"
-uuid: "6c19b0ce-3fc5-8893-820f-1931c78e7ede"
-horo: 7
+coordinate: "vocabulary/arm · 2/share · 3dc81f42"
+contentUuid: "9a2a6a61-b993-5710-8a6a-b1a5a5ab8358"
+diamondUuid: "edefb0fb-79cd-84f3-890c-709b6939cafc"
+uuid: "3dc81f42-b37f-89df-af9a-3fa398aa435b"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4acef338-356f-8427-ba34-d0a7003a4fe8"
+  computationUuid: "8b9d4a1f-fbfe-8a96-bd4f-c03b75f11da8"
   stages:
     - stage: path
       stageUuid: "4ad2589a-798e-83d0-ac5f-9eaa5b9fed4d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "27af3efe-bcab-8b36-a6b2-13a42eb7a42a"
     - stage: horo
-      stageUuid: "646b83fe-65f2-8ab1-b1dd-139009d63f0c"
+      stageUuid: "55e6a730-96ad-86a1-acc8-14de481403e7"
     - stage: seal
       stageUuid: "e47c5bdd-ebab-8fe3-a9ee-f801e51b1000"
     - stage: uuid
-      stageUuid: "7176efb4-75ab-884f-8af8-88e974fba56d"
+      stageUuid: "a536a92c-34c5-8262-87df-ad5584a50caf"
 version: 2
 ---
 # arm

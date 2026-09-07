@@ -2,10 +2,10 @@
 name: element
 description: "Use when reasoning about element — was already the one shared escaper — its own docstring says *\"one definition, not three\"*."
 atomPath: "xml/element"
-coordinate: "xml/element · 5/round · 5d4245f7"
-contentUuid: "c6f1350e-e91c-5b47-9b3f-5382f8b50a39"
-diamondUuid: "9b1e166b-bd02-844c-a818-c1dbd55675b5"
-uuid: "5d4245f7-462d-8bf9-8264-ba81b9738e32"
+coordinate: "xml/element · 5/round · 05567021"
+contentUuid: "51849af4-942a-5086-b834-3f1f17a55d4e"
+diamondUuid: "8a43aba3-e18d-8d33-9623-06086a2587dd"
+uuid: "05567021-c7c9-8203-81e1-a25d60c70624"
 horo: 5
 typography:
   partition: xml
@@ -14,7 +14,7 @@ standards:
   - "XML-1.0 §3.1 start-tag · attribute · element-content"
 bindings: []
 signatures:
-  computationUuid: "d4377dd9-babb-8b8c-8f78-a017483c5df9"
+  computationUuid: "28b364b4-b1c9-8031-8aa9-ed2a43dd108c"
   stages:
     - stage: path
       stageUuid: "0322e525-8383-800d-b409-c7b1f0fcbb0c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a309e87d-56e8-8841-ba68-ee14d10497c6"
     - stage: horo
-      stageUuid: "44847087-b6cc-83fb-bb93-45f5af1ccd0d"
+      stageUuid: "b57411fc-d7aa-8012-b095-7c0c755aeef7"
     - stage: seal
       stageUuid: "b5dbda9f-1e8e-804a-b0da-e21145637f09"
     - stage: uuid
-      stageUuid: "fea6a975-223d-857c-b1f7-80780c53598a"
+      stageUuid: "3407dd4f-be23-817a-ac26-9238c5586ec1"
 version: 2
 ---
 # xml/element — three serializers each wrote the same three functions

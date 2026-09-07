@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ftl",
-    "uuid": "4c4d9388-db2f-8313-94d3-78b0886b2de2",
+    "uuid": "0a7b1a11-abec-835d-89fe-75121360d255",
     "words": [
       "ftl"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ftl — Use for ftl — reuse · amortize · crack · boundary · seal · chat · research. Metrics prove FTL on QPU=CPU/GPU. Boundary = boundary(cracks). Math.* and prose prefixes are cracks.",
-    "uuid": "8958a70b-de81-8eeb-8f2e-061f23c1ce46",
+    "uuid": "98949316-73f2-8f91-863e-eb08c5856a93",
     "words": [
       "use",
       "when",

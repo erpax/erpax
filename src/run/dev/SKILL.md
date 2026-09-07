@@ -2,18 +2,18 @@
 name: dev
 description: "Use when reasoning about dev — erpax is a multi-tenant accounting platform: **Payload 4 CMS + Next.js 16**, backed by **Cloudflare D1** (SQLite) and R2, served in prod via OpenNext/workerd. Locally there is no r"
 atomPath: "run/dev"
-coordinate: "run/dev · 7/descent · 79904c93"
-contentUuid: "55a5074c-c1ff-5853-b2ce-9c9486a66f7c"
-diamondUuid: "7fdbf48c-a363-803d-aafa-7337fe1accdb"
-uuid: "79904c93-5d77-8b15-abde-18bcb1b0e9fb"
-horo: 7
+coordinate: "run/dev · 4/weave · 974515b8"
+contentUuid: "ba4a2ee1-7fe9-5661-8e52-ee5374ef10bd"
+diamondUuid: "3e0b09f2-70aa-8fc6-b894-d65fa5420347"
+uuid: "974515b8-6614-8146-87cd-477de959f6f6"
+horo: 4
 typography:
   partition: run
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "111b6ea7-0b25-8fe0-9e91-ac6adec84064"
+  computationUuid: "4c62cdb5-b6f8-8ba5-b962-504a27274327"
   stages:
     - stage: path
       stageUuid: "df9eef96-8448-8d48-ac42-bf649026aafd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3178a008-71f7-8ff5-bbe0-9532f40650f5"
     - stage: horo
-      stageUuid: "c0e2fa8c-cb30-80e2-ae65-48e53ead7dcf"
+      stageUuid: "5bdfe297-c810-806d-9d99-4497e3527005"
     - stage: seal
       stageUuid: "942e3de2-7c1c-8a60-9475-a2f80c762017"
     - stage: uuid
-      stageUuid: "f60fe735-cea2-8bd2-916d-7d3c3408b6db"
+      stageUuid: "0ba2bf34-4114-850c-8c7a-32949d91ab37"
 version: 2
 ---
 # run/dev — launch & drive the app locally

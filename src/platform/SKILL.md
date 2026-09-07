@@ -2,11 +2,11 @@
 name: platform
 description: "Use when reasoning about platform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: platform
-coordinate: "platform · 5/round · 2c237336"
-contentUuid: "2dee0553-0951-547c-bb77-e1024562acc4"
-diamondUuid: "a4cc5e9b-bf4d-8f1f-84f3-0f8d25728731"
-uuid: "2c237336-2cc4-8cdd-9e99-9b7d08d45fd4"
-horo: 5
+coordinate: "platform · 7/descent · b06ad036"
+contentUuid: "5f7ed6bc-eef7-5dce-af0c-d8afec198eda"
+diamondUuid: "482f29c1-29b7-8049-9b7f-a773e55ea934"
+uuid: "b06ad036-28d8-85ca-8fd9-44833c924ed2"
+horo: 7
 typography:
   partition: platform
   bondDegree: 48
@@ -16,7 +16,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2a9f8b3a-462b-81c7-af2e-a17994c38856"
+  computationUuid: "522db4c7-a03c-8a24-b45b-fcf932437a04"
   stages:
     - stage: path
       stageUuid: "e36e51c1-b55c-80bb-b6c6-efaef8dfb68a"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "6174e41f-9d03-8e9a-8a4d-46e5d0001e89"
     - stage: horo
-      stageUuid: "35d923ec-f693-83be-b383-daea04b531c0"
+      stageUuid: "b0b1b7e6-92e6-83bb-aab2-8e9dd0522d71"
     - stage: seal
       stageUuid: "b06cd12d-bda0-83b1-b59b-4a8142cfc628"
     - stage: uuid
-      stageUuid: "0a9c6352-8eda-85a1-aeea-8d5227d9c128"
+      stageUuid: "1b0f86d5-af31-8317-a18c-14c888a103eb"
 version: 2
 ---
 # platform

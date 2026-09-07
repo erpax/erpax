@@ -2,11 +2,11 @@
 name: clincal
 description: "Use when reasoning about clincal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/clincal"
-coordinate: "vocabulary/clincal · 2/share · bbae6898"
-contentUuid: "bdfdde93-4f8b-5913-9d14-48b57f73aadc"
-diamondUuid: "df5b3628-f5fe-82fb-b547-eccb76ccf603"
-uuid: "bbae6898-fe18-8901-9daf-80a752d7bcb8"
-horo: 2
+coordinate: "vocabulary/clincal · 5/round · fb87df75"
+contentUuid: "35d83528-0592-5d09-9d3c-87c077bcb9ae"
+diamondUuid: "a3190973-d1b8-88cf-8a03-90dbe0edfda8"
+uuid: "fb87df75-50d4-8bd4-812b-9188c8d7b262"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bf0ad05e-c127-8cb9-816d-25efdb8826ca"
+  computationUuid: "1f51429d-607c-871d-92ab-1af9939d2a0e"
   stages:
     - stage: path
       stageUuid: "911d8e8e-f9c3-872e-9527-841b7a62a7ed"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bc216452-664d-8045-a4c4-85d9849a0837"
     - stage: horo
-      stageUuid: "fb900b4c-f150-86f7-97a1-0d036538fa44"
+      stageUuid: "2c971bc4-e4b8-8d3c-b891-a43da8adcf57"
     - stage: seal
       stageUuid: "a3cac356-4090-8977-b666-2ce738d3d923"
     - stage: uuid
-      stageUuid: "0656ebc0-71b7-8571-8e2e-a749761b86fe"
+      stageUuid: "17d043ad-73bf-83fa-b55b-e1d7381ef65a"
 version: 2
 ---
 # clincal

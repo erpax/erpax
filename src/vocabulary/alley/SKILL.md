@@ -2,11 +2,11 @@
 name: alley
 description: "Use when reasoning about alley as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/alley"
-coordinate: "vocabulary/alley · 2/share · df2ee91a"
-contentUuid: "987e7541-12d9-5a49-b86c-5fad18e2c778"
-diamondUuid: "0488509b-0f41-8631-b919-2422395e5125"
-uuid: "df2ee91a-017e-8fde-87b1-962ad7449648"
-horo: 2
+coordinate: "vocabulary/alley · 1/base · 0544a625"
+contentUuid: "54b3c52f-7791-5323-819c-8f0e4e78ae51"
+diamondUuid: "54f75bdd-c5fb-8dc0-a9e0-192489fbefb6"
+uuid: "0544a625-d2e4-89a2-9fee-3c9d4be8d75f"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c10a49a6-f0c5-8be3-885c-71999b94f7cf"
+  computationUuid: "aacf0a2c-00ac-8045-92ab-72c5d290bd26"
   stages:
     - stage: path
       stageUuid: "8b819090-1c0c-8f16-889e-82dcb99ab8c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7ed1b7b8-67ce-8984-83fd-0af77b4c0b01"
     - stage: horo
-      stageUuid: "ef95b053-5e4d-86e9-a856-af26a8888178"
+      stageUuid: "87951b0b-fb56-8058-a47d-dac7553656a7"
     - stage: seal
       stageUuid: "7f5038ce-13ab-8d5b-b65b-cc47bfdd9c72"
     - stage: uuid
-      stageUuid: "f1516e81-51e5-836c-a889-368cef6e249b"
+      stageUuid: "65edab0d-3471-8be4-ac18-460a8277d4d8"
 version: 2
 ---
 # alley

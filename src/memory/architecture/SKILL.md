@@ -2,18 +2,18 @@
 name: architecture
 description: "Use when operational memory must be understood as the architecture lattice itself — NOT a side store. The diamond graph, uuid/matrix bindings, typography partitions, folder SKILL statements, architecture-invariants, and sealed git tree ARE what the system remembers; session blobs sanitize to architecture content and verify against the live-tree facet."
 atomPath: "memory/architecture"
-coordinate: "memory/architecture · 4/weave · 60f46c60"
-contentUuid: "c884a2f2-d77f-5079-9ee2-1e0dc4606759"
-diamondUuid: "802ccde2-702d-8805-8d3a-f12515aa292a"
-uuid: "60f46c60-1213-8fe6-adb8-73f3a59100f3"
-horo: 4
+coordinate: "memory/architecture · 7/descent · 440ad23a"
+contentUuid: "53aaa091-604f-5fe4-ad91-299aaa3bec8d"
+diamondUuid: "248d1e23-b242-817a-8934-91b8b0769b4e"
+uuid: "440ad23a-b613-85c5-b3c0-652541b50dcf"
+horo: 7
 typography:
   partition: memory
   bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7052623f-0292-8b40-b2a7-928949234ebd"
+  computationUuid: "13e62cc0-356e-8362-bd07-3560aaac7cae"
   stages:
     - stage: path
       stageUuid: "8f069e56-fb54-8a40-a584-9f30450616f7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cf7b6fb4-d006-8ba2-8b81-341646b1629a"
     - stage: horo
-      stageUuid: "376396af-3dce-8576-8061-de1b799193e2"
+      stageUuid: "2ba5a8c7-1852-801f-951b-0423c195ca84"
     - stage: seal
       stageUuid: "7ae51871-f487-88a2-aeef-aeb807f81130"
     - stage: uuid
-      stageUuid: "bba5b517-417b-8317-ab8a-6aa44bcd9a10"
+      stageUuid: "8b1e3c05-2c35-859b-af60-a5062da3e2b2"
 version: 2
 ---
 # memory/architecture — operational memory IS the lattice

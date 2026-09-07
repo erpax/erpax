@@ -2,11 +2,11 @@
 name: symptom
 description: "Use when reasoning about symptom as a medical facet of medical — vocabulary pivot to @/symptom; nested not duplicated."
 atomPath: "medical/symptom"
-coordinate: "medical/symptom · 5/round · c84d46e6"
-contentUuid: "8f3a7b59-86c0-5c81-a1de-65bd8f62f62d"
-diamondUuid: "06221295-35ca-8797-84f6-8bf25d533e3e"
-uuid: "c84d46e6-cc10-8889-bc8a-db69b0d0025f"
-horo: 5
+coordinate: "medical/symptom · 4/weave · 2427c64b"
+contentUuid: "22cc637c-d8d8-5fa6-8c45-81524e496a60"
+diamondUuid: "82dbfe3c-415c-84b4-a131-870da9737b08"
+uuid: "2427c64b-ff6f-86a9-888b-e6cb446d06a4"
+horo: 4
 typography:
   partition: medical
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aaa0732a-cd84-80d2-b639-0e5f1c57a059"
+  computationUuid: "014ff0f7-c61a-879f-8c4b-2a8f360ced3c"
   stages:
     - stage: path
       stageUuid: "2fc75234-0a83-80c6-8790-144a1951efbf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3da5390b-0aca-8e86-b704-52c38ac9ece3"
     - stage: horo
-      stageUuid: "ae7dc02a-93dd-8667-8e59-48b29da254c2"
+      stageUuid: "29ef315b-7b77-84c7-9cfb-71adba4e946c"
     - stage: seal
       stageUuid: "f63d42f5-ab41-80c1-b2fd-1e1b87587fc6"
     - stage: uuid
-      stageUuid: "ea4cc23c-423f-8c41-a3d2-88604520c2e9"
+      stageUuid: "1b055f93-0bf5-8cf4-9ca3-9c5a6d71e205"
 version: 2
 ---
 # medical/symptom — medical facet

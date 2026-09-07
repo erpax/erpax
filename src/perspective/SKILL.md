@@ -2,10 +2,10 @@
 name: perspective
 description: "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \"my customer\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection."
 atomPath: perspective
-coordinate: "perspective · 8/crest · f21397d5"
-contentUuid: "d00b74f6-ee8f-57c9-8e06-8c1883d5fb91"
-diamondUuid: "baad8e9d-0c14-8fec-86b6-afe079a1d575"
-uuid: "f21397d5-ad66-8c55-935d-24e625939bd3"
+coordinate: "perspective · 8/crest · fbdde6d1"
+contentUuid: "b8a1cf74-e2c3-5e0e-b0ee-118d394a5ab2"
+diamondUuid: "5ffeb233-2da9-84e8-b6d0-36656acaeb58"
+uuid: "fbdde6d1-52d3-819a-b800-070e0f9c3fab"
 horo: 8
 typography:
   partition: perspective
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ab9e0dcf-ef11-8101-bacf-ad880bb0f4a5"
+  computationUuid: "f3d76ab5-6f5c-8ff9-aac6-7e57156df037"
   stages:
     - stage: path
       stageUuid: "47043968-a748-879d-a82c-692c8f9fa7f6"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "56785171-b4d8-8340-a24a-9d6e4f9fa82d"
     - stage: horo
-      stageUuid: "aefb89c4-f9d0-81eb-a6ba-88ced56df5da"
+      stageUuid: "54a86149-b6f0-8f8f-b319-16564e4c4ebe"
     - stage: seal
       stageUuid: "06fe005b-da97-8e4d-933a-1cafaf819730"
     - stage: uuid
-      stageUuid: "72920f1b-3265-8405-b17e-0ab29e2a7585"
+      stageUuid: "fc873474-062d-85c4-a377-a0fd6e6df6e4"
 version: 2
 ---
 # perspective — switch the point of view (derived, never stored)

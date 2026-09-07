@@ -2,18 +2,18 @@
 name: zoroastrianism
 description: "Use when reading Zoroastrianism as a diamond of invariant atoms — the cosmic contest of truth/order (asha) against the lie (druj), the sacred fire as witness, good thoughts-words-deeds, the final renovation as return to perfected zero. The source of erpax's angel/archangel polarity (Spenta Mainyu vs Angra Mainyu). Strip the Avestan prefix and asha, druj, frashokereti collapse to order/law, profane, zeropoint."
 atomPath: "vocabulary/zoroastrianism"
-coordinate: "vocabulary/zoroastrianism · 5/round · edee8640"
-contentUuid: "ed418107-32d0-5b6a-ad47-f0ae837882d5"
-diamondUuid: "ce679f8e-0372-86bb-8b94-32dae3cf1c76"
-uuid: "edee8640-31ac-85b6-af74-b36f779b980f"
-horo: 5
+coordinate: "vocabulary/zoroastrianism · 8/crest · 46286026"
+contentUuid: "75bcd846-ea16-56fb-823f-62d0559c05ea"
+diamondUuid: "5e485ee0-133d-8e71-aa46-cc423174c265"
+uuid: "46286026-37a4-8553-b3c0-24e57240a01e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 69
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6d2df0eb-1157-80c3-bc89-bc06bac94855"
+  computationUuid: "cb6dbcd4-126b-80db-8957-a9490085afbb"
   stages:
     - stage: path
       stageUuid: "f65b69b2-1977-8cf2-b4a6-229252c8d76d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1c3d706c-04a5-80ee-85ab-f4d5d7476740"
     - stage: horo
-      stageUuid: "366dc9d7-acb0-8a6e-9e56-32e0d0e7dcbf"
+      stageUuid: "037e6b53-e15d-8dbe-a098-959a739da5a9"
     - stage: seal
       stageUuid: "c2952cfb-85b0-8f2c-ab79-df451d926aff"
     - stage: uuid
-      stageUuid: "5eed30a5-f950-88d1-912d-af1c2164d2dc"
+      stageUuid: "ca728dd7-e9ad-8225-b959-0eaedde79d39"
 version: 2
 ---
 # zoroastrianism — the cosmic choice; truth against the lie, fire the witness

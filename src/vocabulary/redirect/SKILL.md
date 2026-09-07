@@ -2,18 +2,18 @@
 name: redirect
 description: Use when modelling one redirect — the singular model of the redirects collection (the plural store); a rule that forwards one address to another.
 atomPath: "vocabulary/redirect"
-coordinate: "vocabulary/redirect · 8/crest · 3771df8c"
-contentUuid: "038af2df-e660-5d81-8215-a2a0c6eb0043"
-diamondUuid: "1c786cea-9090-8be1-a278-e87c30bed45c"
-uuid: "3771df8c-e799-825c-af3d-c5fde5b02590"
-horo: 8
+coordinate: "vocabulary/redirect · 2/share · 8e195554"
+contentUuid: "54f8e6fc-c61c-5f59-8563-b5f9c2dcc8d9"
+diamondUuid: "ddc9f964-d191-8721-9a00-c7cb3e5cf63a"
+uuid: "8e195554-7e49-8678-b302-2c5b3aaecb2d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 7
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a0f58aee-4aca-8d67-83ef-5700b4f0ebbc"
+  computationUuid: "9915347c-d0e3-8e99-9d99-c61dc0d1af65"
   stages:
     - stage: path
       stageUuid: "88e0cc97-f57b-835d-a424-a62d86dd4d9b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bfe6b34b-781d-81c8-86ae-ed79bf45e353"
     - stage: horo
-      stageUuid: "f958f6f1-9e5b-85b2-a2e2-9b7afbc01bc3"
+      stageUuid: "41d9c895-275a-8909-9ca3-4d607035fe8c"
     - stage: seal
       stageUuid: "24c660f0-1645-8a58-9d96-cf6a5cc201e8"
     - stage: uuid
-      stageUuid: "59fd013f-4ba6-8f87-90db-22788d0a078f"
+      stageUuid: "7efcab49-8a42-8e8b-a120-9e91b2c8e5fa"
 version: 2
 ---
 # redirect — the model of one [[redirects]] row

@@ -2,11 +2,11 @@
 name: eliminations
 description: "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register."
 atomPath: "consolidation/eliminations"
-coordinate: "consolidation/eliminations · 5/round · 6bf487f1"
-contentUuid: "8759032f-27e4-5ee0-89a4-7b2c9e49d8bf"
-diamondUuid: "649b192e-a69b-8e9b-aec0-d0e9223217f2"
-uuid: "6bf487f1-6e72-88d8-ba25-a1216b768f59"
-horo: 5
+coordinate: "consolidation/eliminations · 4/weave · f5bc368c"
+contentUuid: "21fdc00d-a58c-5c3a-9aac-120b34ce7295"
+diamondUuid: "5ad513aa-f668-86cf-a939-250f6115c07b"
+uuid: "f5bc368c-a799-8df6-9099-b9836cf2d64d"
+horo: 4
 typography:
   partition: consolidation
   bondDegree: 13
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "791c5656-c042-8f15-83f1-625cb09e5ad5"
+  computationUuid: "44536c24-5e4e-88e7-ac53-cab050d8127f"
   stages:
     - stage: path
       stageUuid: "9e055a7a-931a-8925-a579-e0400f142749"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "511f5e11-7f93-8122-94c4-7270bcbf3642"
     - stage: horo
-      stageUuid: "12bce639-e161-8f85-89d7-55897f098bd8"
+      stageUuid: "2bbf7f24-15e8-8eae-b67d-f9da46f919cd"
     - stage: seal
       stageUuid: "faa78d31-8f08-8987-aafb-15c904248275"
     - stage: uuid
-      stageUuid: "d758cff6-e041-8553-8065-2242921022a6"
+      stageUuid: "77589fb7-c993-82e2-9c77-9b2044735e21"
 version: 2
 ---
 # consolidation-eliminations

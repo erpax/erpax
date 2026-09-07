@@ -2,11 +2,11 @@
 name: independence
 description: "Use when reasoning about independence — admits a store and recomputes the content-uuid from each one's bytes. Agreement means the object is intact everywhere; disagreement names which store is wrong, without trusting…"
 atomPath: "storage/independence"
-coordinate: "storage/independence · 4/weave · cf8fd381"
-contentUuid: "68d99d0b-075a-539e-9fba-dd2243d839ce"
-diamondUuid: "be722679-3d2d-80b8-88e1-c81dd320a8ff"
-uuid: "cf8fd381-6c96-8695-9a30-83af14d1631d"
-horo: 4
+coordinate: "storage/independence · 1/base · e11968b5"
+contentUuid: "2fa36a1a-ac57-51d1-8be2-166817ed9ea4"
+diamondUuid: "0c3171dc-8a36-8d6e-9676-120a71e5505e"
+uuid: "e11968b5-e706-87dc-b38e-aa2f2ddd845b"
+horo: 1
 typography:
   partition: storage
   bondDegree: 6
@@ -17,7 +17,7 @@ standards:
   - W3C Verifiable Data Registry conformance (storage layer)
 bindings: []
 signatures:
-  computationUuid: "c730e4c6-16c7-8951-a687-56adc7cb04f0"
+  computationUuid: "8df0c373-a9b2-8da9-9432-61ad68962aaf"
   stages:
     - stage: path
       stageUuid: "c998f0bb-dd5e-8f8a-a95f-7bdac2f39003"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "a49b427b-b57b-80a5-86a6-bd946f0f3769"
     - stage: horo
-      stageUuid: "72d7932d-fe2d-8e29-8f16-d8fcef198f9e"
+      stageUuid: "b813dc49-427b-8135-8083-74b03a2403ae"
     - stage: seal
       stageUuid: "e110ea00-1bd9-8a3d-a12c-66f58081e52e"
     - stage: uuid
-      stageUuid: "07265666-a2c8-8a7f-88f7-4e8b5694607b"
+      stageUuid: "6eb58e4c-bb41-8dc2-9395-3e13e9c2d597"
 version: 2
 ---
 # storage/independence — an object belongs to no store, because its address is its content

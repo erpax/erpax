@@ -2,18 +2,18 @@
 name: calendar
 description: Use when modelling one calendar — the singular model of the calendars collection (the plural store); a scheme of dates against which events and schedules are placed.
 atomPath: "vocabulary/calendar"
-coordinate: "vocabulary/calendar · 1/base · 8ffb6da6"
-contentUuid: "2d9e2f33-1e90-5c6f-bea1-88a880908e94"
-diamondUuid: "6a7555c6-ad60-8fb6-97c0-ca090a6cbda4"
-uuid: "8ffb6da6-7852-8711-b07c-7e68419ff7be"
-horo: 1
+coordinate: "vocabulary/calendar · 7/descent · 0014634f"
+contentUuid: "dd807084-5e8b-5761-93cf-0b5813ca7592"
+diamondUuid: "cc8cf51c-d3e8-8195-9edc-036419b2feb6"
+uuid: "0014634f-1ce7-8471-adef-f70485ff6d1a"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f86e7e43-0d97-862d-8d8b-a15ac37aabd2"
+  computationUuid: "208e62d5-5885-8fa1-9431-422c1abcfb1b"
   stages:
     - stage: path
       stageUuid: "94d537e4-51cc-8f67-8dff-d88beb08c462"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "52f400db-275d-8514-8d09-9af0614307ec"
     - stage: horo
-      stageUuid: "f9c75518-7d21-80ee-850c-02ef3826cfdc"
+      stageUuid: "cf2b8faf-8cd1-8e01-ace3-33a1c2da5fdf"
     - stage: seal
       stageUuid: "c3c4ea18-b43d-86a4-9122-f787437f936b"
     - stage: uuid
-      stageUuid: "6e25ddb9-5fe7-8233-b965-f6d97f8d89fa"
+      stageUuid: "ed5a3832-ec08-8be2-819e-19904e0bd717"
 version: 2
 ---
 # calendar — the model of one [[calendars]] row

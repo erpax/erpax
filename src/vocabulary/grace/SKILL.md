@@ -2,10 +2,10 @@
 name: grace
 description: "Use when reasoning about the unearned credit in erpax — the write-off / jubilee / forgiveness that clears a debt the debtor cannot pay; the reversal that restores balance from outside the ledger. The universal root of unmerited settlement; dual of debt."
 atomPath: "vocabulary/grace"
-coordinate: "vocabulary/grace · 1/base · 79b02011"
-contentUuid: "5ea655de-80a2-5bd3-af2a-b67d222827df"
-diamondUuid: "39ab552c-7c13-8b76-a021-782b78dad0ea"
-uuid: "79b02011-22bd-8043-8f81-cd335cca00dc"
+coordinate: "vocabulary/grace · 1/base · 179e64a6"
+contentUuid: "1bb754ae-1837-5de3-b03d-4e770d34f06f"
+diamondUuid: "a3fb3e86-fa69-8fbb-83c2-029130469a8c"
+uuid: "179e64a6-6793-811a-9098-30941731b81a"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d538d6c3-04e2-8e0a-93b2-83d91dc9c8ed"
+  computationUuid: "2b4816f8-1706-835d-b5c7-ed327dd03420"
   stages:
     - stage: path
       stageUuid: "d5baf9a5-ef8b-800d-a3ea-d93416acb520"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e8c555b2-de96-843a-9c3b-0e1822cd0e62"
     - stage: horo
-      stageUuid: "862881a3-345c-8c1d-b1e1-f3d9fc0a7fb5"
+      stageUuid: "693f218d-367f-816b-8bd6-9607db1e62ce"
     - stage: seal
       stageUuid: "6848fa1b-8e8a-8cdc-881f-e3e9c05511b9"
     - stage: uuid
-      stageUuid: "df87290d-3c44-8fd8-84fd-c61b7ec23a52"
+      stageUuid: "77ceddb2-e59e-8002-aba2-d3a8e143fa29"
 version: 2
 ---
 # grace — the unearned credit (the debt cleared from outside)

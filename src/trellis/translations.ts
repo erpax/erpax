@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trellis",
-    "uuid": "cbf444f1-c376-870d-9b9c-47cab592bc94",
+    "uuid": "5119d3ba-a852-85c4-a369-ebf301f3917c",
     "words": [
       "trellis"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a crop is supported vertically — trellising/staking holds vining or heavy crops (tomatoes, cucumbers, pole beans, peas) off the ground for airflow, quality, and harvest access; methods scale from stake-and-weave (basket weave) for determinates to lower-and-lean string for indeterminates. Vertical support trades labor/materials for yield, quality, and disease reduction.",
-    "uuid": "ea725dd8-79e6-8f72-8604-4d6b6e189252",
+    "uuid": "cee53de3-c558-84be-8065-892ac02f7a8c",
     "words": [
       "use",
       "when",

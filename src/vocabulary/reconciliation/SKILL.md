@@ -2,18 +2,18 @@
 name: reconciliation
 description: Use when modelling one reconciliation — the singular model of the reconciliations collection (the plural store); the matching of two records to confirm they agree.
 atomPath: "vocabulary/reconciliation"
-coordinate: "vocabulary/reconciliation · 1/base · 72a98e70"
-contentUuid: "05f31d99-7346-5451-8cd2-48036c006b26"
-diamondUuid: "b1c68c7f-4daa-824b-9b64-2f0651d5c188"
-uuid: "72a98e70-e72d-8d21-8391-08508a36a841"
-horo: 1
+coordinate: "vocabulary/reconciliation · 4/weave · e696cd51"
+contentUuid: "8e302648-cd6f-5a8f-aa93-dd7e48f67075"
+diamondUuid: "7e4b80bd-e0ef-8f8b-87f8-78e76be0ea6d"
+uuid: "e696cd51-7a4e-86cc-8994-5e215f3a4f92"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "407de0dc-f99e-8bdd-80e6-26fb034c1886"
+  computationUuid: "9e59b84a-90b8-866c-86dc-9ba2a23fafa9"
   stages:
     - stage: path
       stageUuid: "bd7d93f0-33fb-85cb-8394-0ea57d31c4c1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "be874b9b-52da-8c8e-9a4c-d4d03c9e2ae7"
     - stage: horo
-      stageUuid: "542b208d-eda0-8866-bec6-cdd40c36d27b"
+      stageUuid: "32bd099e-77f9-8443-acbb-2391134cbc87"
     - stage: seal
       stageUuid: "dcb3e658-a475-88ec-98a6-35297d75525a"
     - stage: uuid
-      stageUuid: "595db64b-73cf-8c4d-a098-179acb79f2db"
+      stageUuid: "b7daf1e4-efa7-838d-b9a9-64a8b073cf81"
 version: 2
 ---
 # reconciliation — the model of one [[reconciliations]] row

@@ -2,10 +2,10 @@
 name: medium
 description: "Use when reasoning about medium as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/medium"
-coordinate: "vocabulary/medium · 7/descent · 146dd1e7"
-contentUuid: "8c1c7d69-1d34-5eae-b3d3-d6b4e30adce8"
-diamondUuid: "b2b55bf4-9719-8fd3-8a26-301399f51aad"
-uuid: "146dd1e7-d919-8d5f-8069-132cf8679d73"
+coordinate: "vocabulary/medium · 7/descent · 260d900d"
+contentUuid: "e4101ce8-f7fe-51bc-b653-f3e2b9b11240"
+diamondUuid: "c9152b4b-e0fc-85bd-bbd2-8f97e65f880e"
+uuid: "260d900d-f7ca-8765-b80a-408ad7be19d3"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0e3a96b9-314f-8529-9e92-b4e25bb028a3"
+  computationUuid: "3bf2f4dc-34dc-8d96-b53f-2260c889c3ef"
   stages:
     - stage: path
       stageUuid: "620f987d-e605-8c68-8cc1-96258780fa19"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4e23907c-edf5-8e0d-963e-f29d9794a780"
     - stage: horo
-      stageUuid: "75fcadd7-9cf6-81b0-9567-36de850ec52d"
+      stageUuid: "b7c27cef-31b1-8b81-917a-cb7a74793c3a"
     - stage: seal
       stageUuid: "4e74e10f-1417-890e-a6fa-7ff009ef4c74"
     - stage: uuid
-      stageUuid: "ef77e0ef-0e3e-8d71-9714-5958a5089349"
+      stageUuid: "9e6b95ef-ec7a-8ad7-80a1-45bfd91bdb9b"
 version: 2
 ---
 # medium

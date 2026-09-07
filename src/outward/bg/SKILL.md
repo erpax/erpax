@@ -2,18 +2,18 @@
 name: bg
 description: "Use when reasoning about bg — Use for the two Bulgarian rails erpax codes against — БНБ daily exchange rates (CODE/REVERSERATE/RATE XML) and Търговски Регистър merchant lookup by дело. Both addresses were dead in production and are now fixed and captured; the contracts pin the euro-era shape, the DD.MM.YYYY fixing date, and the two 200-under-HTML traps that make a working endpoint read as no data."
 atomPath: "outward/bg"
-coordinate: "outward/bg · 7/descent · efc480be"
-contentUuid: "b935d255-509e-521b-8a96-c13175ad95a9"
-diamondUuid: "df2e5085-2fb2-82d2-9d76-f35a46a5c2f0"
-uuid: "efc480be-6f62-896e-979d-d18a23857353"
-horo: 7
+coordinate: "outward/bg · 8/crest · c1e2430e"
+contentUuid: "5e00188c-345d-5aba-8400-37dc76c092b2"
+diamondUuid: "b573222e-615c-8543-a7b9-7df411978260"
+uuid: "c1e2430e-abca-8d2d-af03-f3d277f10974"
+horo: 8
 typography:
   partition: outward
   bondDegree: 14
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6b05c5de-f0be-8f60-a90b-a7cf32101151"
+  computationUuid: "db437e64-c8c1-8df9-8d52-afa3ebd1c040"
   stages:
     - stage: path
       stageUuid: "0fed7f17-ca26-8f77-8ca8-462864a1e499"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e0203a1c-9ddc-86f3-a298-9ba0ce9f40bb"
     - stage: horo
-      stageUuid: "1252a523-4773-8e03-9d86-765cda7b62fe"
+      stageUuid: "5c5b82f7-b6dc-8d20-b346-d9a4e0dcbf8d"
     - stage: seal
       stageUuid: "4a303de8-84da-8247-b91b-15f70442e9ad"
     - stage: uuid
-      stageUuid: "8e05e6be-97c1-863e-89cd-b7108c64d48d"
+      stageUuid: "0e77ef6b-aac5-8b75-b321-99943a3bd852"
 version: 2
 ---
 # outward/bg — the two Bulgarian rails, contracted

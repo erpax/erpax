@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "composer",
-    "uuid": "ea6521cb-3b6c-8143-8aee-54eea0da6bde",
+    "uuid": "bdcf97bc-3841-8ed2-ae36-c57be5117ed3",
     "words": [
       "composer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about composer — The person or organization who wrote a composition, or who is the composer of a work performed at some event.",
-    "uuid": "5b46f591-bfe5-8845-baf6-09b7f591cc16",
+    "uuid": "10bb20c3-e750-835b-bd93-2a8030621e07",
     "words": [
       "use",
       "when",

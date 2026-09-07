@@ -2,11 +2,11 @@
 name: local
 description: "Use when reasoning about local as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/local"
-coordinate: "vocabulary/local · 5/round · fc91a7ab"
-contentUuid: "2a2d0823-e1ae-5358-9b03-2d64c375706f"
-diamondUuid: "e6f43276-cd3c-8437-98b4-82a5944d7a6c"
-uuid: "fc91a7ab-3bf0-84c9-a574-a067b9f1065c"
-horo: 5
+coordinate: "vocabulary/local · 4/weave · 7b9b014f"
+contentUuid: "2e616769-c009-5420-98c9-01b131326e91"
+diamondUuid: "f12f4b59-ae36-80dd-9a8c-73c1d53eaadb"
+uuid: "7b9b014f-687a-8a1f-8110-5485bea6b479"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 41
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "445357cb-ccf4-8984-abd0-365ecdb9d288"
+  computationUuid: "bc547d99-f16e-8a94-9df4-f15fb63318ef"
   stages:
     - stage: path
       stageUuid: "22e64a0e-f913-8364-afa0-acb89f4e0104"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f45d8100-952a-80a9-8a24-9f2cc064650d"
     - stage: horo
-      stageUuid: "91518ac0-1a62-8dae-ab4c-5148379a91ae"
+      stageUuid: "0b08fb9f-75bb-8f6e-813c-00d505d2a353"
     - stage: seal
       stageUuid: "38a931e2-3326-8944-982a-967c80211c31"
     - stage: uuid
-      stageUuid: "debffa18-6948-8612-8e99-f89fa51e8362"
+      stageUuid: "37a84abd-7160-86bd-998d-65f51feed907"
 version: 2
 ---
 # local

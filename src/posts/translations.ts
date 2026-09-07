@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "posts",
-    "uuid": "f32a9554-bc6e-8bd9-acb2-f370ddef6e11",
+    "uuid": "dec67205-028e-817b-b82d-c696dc031f40",
     "words": [
       "posts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when publishing or querying CMS articles — authored content with hero image, Lexical rich-text, categories, related posts, SEO meta, per-tenant slug uniqueness, versioned drafts, and scheduled publishing. The Payload CMS post collection.",
-    "uuid": "744b28ef-2d1d-8a45-b762-59f9e227e6f9",
+    "uuid": "538e8071-c690-8554-b55c-ddd14d0010e9",
     "words": [
       "use",
       "when",

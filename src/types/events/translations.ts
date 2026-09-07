@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "events",
-    "uuid": "071471b4-b085-8280-a667-c824522f9d26",
+    "uuid": "423e9aa2-c03c-811b-a505-f9f114e8eeda",
     "words": [
       "events"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about event type definitions — the event shapes the corpus emits.",
-    "uuid": "ddca4d83-bea3-8809-81a6-2b8ab47774c3",
+    "uuid": "f9c5a58b-d521-8d2e-9a73-eb99cd4a56ea",
     "words": [
       "use",
       "when",

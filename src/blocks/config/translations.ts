@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "config",
-    "uuid": "8b3a9be3-7336-82e0-a91e-0d55f051e8bb",
+    "uuid": "a9113ab9-6124-89da-a22b-ec55e4160dae",
     "words": [
       "config"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about config — Payload's typegen and the server config both need every block's shape. Importing the block COMPONENTS to get them drags React into a context that cannot run it.",
-    "uuid": "d9bb5b0f-5c1b-80da-b8b9-1138a202684b",
+    "uuid": "f608d29c-fb9c-8542-89b5-afd9982350e8",
     "words": [
       "use",
       "when",

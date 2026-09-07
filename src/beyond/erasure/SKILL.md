@@ -2,11 +2,11 @@
 name: erasure
 description: "Use when reasoning about erasure — Deleting a posted row breaks the ledger it belongs to. Crypto-shredding keeps the record and destroys the ability to read it: encrypts, decrypts while the key lives, and drops the…"
 atomPath: "beyond/erasure"
-coordinate: "beyond/erasure · 5/round · 5a555b0b"
-contentUuid: "eb8a6f04-1f01-5648-8616-a66e2bf78183"
-diamondUuid: "4f2089f1-4fd7-8257-ae5c-85cb2a61cbeb"
-uuid: "5a555b0b-aecf-8095-b299-834eff5fac3c"
-horo: 5
+coordinate: "beyond/erasure · 8/crest · cfea0818"
+contentUuid: "0e1ffdd8-b5b6-54a5-a51d-5f13cb327d44"
+diamondUuid: "26335d1c-a5ab-8188-b506-ca45cade69a9"
+uuid: "cfea0818-9c68-8565-8a2f-137984a3901e"
+horo: 8
 typography:
   partition: beyond
   bondDegree: 3
@@ -17,7 +17,7 @@ standards:
   - "NIST-SP-800-63"
 bindings: []
 signatures:
-  computationUuid: "63832a18-1f01-8357-bf56-590aafd27e6c"
+  computationUuid: "68b83aaa-5ec3-8332-b891-d42e341de2fb"
   stages:
     - stage: path
       stageUuid: "0b58141e-f59d-83a7-8578-65876bf6ab08"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "f2efc885-5475-8efe-a568-d87328d22bc8"
     - stage: horo
-      stageUuid: "e41c8c4a-580f-82ae-b620-7bf21725a4de"
+      stageUuid: "af5c4775-d377-8f60-b6ae-f260aec8954f"
     - stage: seal
       stageUuid: "06b77714-6c76-8117-a3e7-75797b3c8433"
     - stage: uuid
-      stageUuid: "dbd71f11-c608-83b5-85c7-388d03bbdcc0"
+      stageUuid: "18c8ef12-28fe-8391-b33a-ec2525767cae"
 version: 2
 ---
 # beyond/erasure — a right-to-erasure request is met by losing the KEY, never the record

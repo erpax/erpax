@@ -2,11 +2,11 @@
 name: operator
 description: "Use when reasoning about operator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/operator"
-coordinate: "vocabulary/operator · 7/descent · 7aedbc7a"
-contentUuid: "a61a5cf0-2ca7-57e9-aaf6-b0a5ab79e0f6"
-diamondUuid: "7c490034-ee88-82b1-bf35-1884817ec211"
-uuid: "7aedbc7a-fc78-86c0-a245-4843b3c8995d"
-horo: 7
+coordinate: "vocabulary/operator · 4/weave · 8802045f"
+contentUuid: "fe6bddc2-63d1-5178-aaad-bf1218e981a0"
+diamondUuid: "5934156a-79f7-8f06-982d-bbb211f6f025"
+uuid: "8802045f-dbf9-81b3-a332-502e196dee0c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "117702d7-ae1a-8963-beca-f176cfe882ae"
+  computationUuid: "adc3b19a-faf9-8a3f-840c-09927afc51cf"
   stages:
     - stage: path
       stageUuid: "6eb5de60-e0c7-8cfe-8237-112f0b118795"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7cb91c03-cdc9-84ec-a99f-113695a73c5b"
     - stage: horo
-      stageUuid: "5e210f83-9953-81ae-b233-b0164e5e5ab6"
+      stageUuid: "811dba4b-138c-8cc8-8447-4f9b01a147ce"
     - stage: seal
       stageUuid: "dc94664c-928a-8041-9a0a-45c614977701"
     - stage: uuid
-      stageUuid: "74bc9709-ffbb-8c92-b43b-8640cef43a23"
+      stageUuid: "df0e6871-6a0a-87ae-9670-2bfcd853e999"
 version: 2
 ---
 # operator

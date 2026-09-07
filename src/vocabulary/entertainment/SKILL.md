@@ -2,11 +2,11 @@
 name: entertainment
 description: "Use when reasoning about entertainment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/entertainment"
-coordinate: "vocabulary/entertainment · 7/descent · d95bb3d1"
-contentUuid: "fedeeead-6504-5a30-937c-2d180a73a987"
-diamondUuid: "a4b78b88-52c0-8806-ae45-c54645ac700d"
-uuid: "d95bb3d1-0e94-82b5-b507-5944860a0278"
-horo: 7
+coordinate: "vocabulary/entertainment · 8/crest · e91c8070"
+contentUuid: "e38ae9d3-0fe3-56ac-a1f2-075d7832f192"
+diamondUuid: "b7046e76-8523-8be6-8c2b-cf498c4b6511"
+uuid: "e91c8070-2254-873e-8511-29607689b704"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "352b3c05-bebe-8a6f-8178-add49d19871d"
+  computationUuid: "eeac4b05-1064-86b7-93a5-07b5c21a6bf2"
   stages:
     - stage: path
       stageUuid: "8d346090-10b6-8d79-b377-b0a8cb2ca8cb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "048a1da4-5917-8d75-8e1a-9a0a29dea052"
     - stage: horo
-      stageUuid: "3d6f4658-b456-8d75-b20c-142fb32c44d4"
+      stageUuid: "3858d53b-1b69-89ff-9dae-228b232c2119"
     - stage: seal
       stageUuid: "59fac25c-4d0e-8666-9823-0fbb8ac9d6ad"
     - stage: uuid
-      stageUuid: "61d3b148-bf18-81ec-88a2-4e3075d3d3c0"
+      stageUuid: "175af98c-8d5f-84ae-ac24-640c6524a75e"
 version: 2
 ---
 # entertainment

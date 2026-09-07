@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sti",
-    "uuid": "fe26c3ec-15ca-8009-9d4f-3592c4becc94",
+    "uuid": "1554b9cb-b95a-8878-8813-6473290542bc",
     "words": [
       "sti"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sti — names the column, and describe the union, and , and narrow a row to its subtype without a cast.",
-    "uuid": "f1c28944-113b-837e-a789-dd91bed7b895",
+    "uuid": "35161f82-c363-8799-b2cb-ebca9f5383f6",
     "words": [
       "use",
       "when",

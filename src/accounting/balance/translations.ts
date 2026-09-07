@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "balance",
-    "uuid": "e0e9abac-e3c4-815c-bf70-ec32a09411b4",
+    "uuid": "efa03ea0-dbc4-87d4-9698-4e29c06c9a5e",
     "words": [
       "balance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about balance — Debit and credit meet in balance; every fold meets the same law at seal.",
-    "uuid": "e0441fef-16f2-8f7e-801c-98fe591de5fa",
+    "uuid": "a1c2cd6a-3c5f-8d34-b09f-df263c2f789b",
     "words": [
       "use",
       "when",

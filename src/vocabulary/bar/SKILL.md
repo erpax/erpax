@@ -2,11 +2,11 @@
 name: bar
 description: "Use when reasoning about bar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bar"
-coordinate: "vocabulary/bar · 7/descent · 0f7ccde5"
-contentUuid: "e99b4bcc-ce8a-50d3-af48-30e16d2c7067"
-diamondUuid: "7a8cc9c9-3cc9-8fb8-a4d3-70c60d2eb1de"
-uuid: "0f7ccde5-a23d-8f8f-a95a-4d8647b1de22"
-horo: 7
+coordinate: "vocabulary/bar · 2/share · 822bcbcb"
+contentUuid: "f2844b6f-58bc-5cac-8a59-3f936bd6fd54"
+diamondUuid: "57e32307-bd87-8543-ba78-e4706ae9f0e7"
+uuid: "822bcbcb-1f2b-8a44-a862-065a0aa0d121"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fb92c39c-8df3-8215-984b-07abc6ca175e"
+  computationUuid: "0ab70c74-0c59-8b3e-8a1a-4dac2b75ea12"
   stages:
     - stage: path
       stageUuid: "167c7d02-776b-87b1-8af8-761ef7dba0f8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "59f9b9e1-781c-865c-a864-8a208a7b8e52"
     - stage: horo
-      stageUuid: "07193350-971b-8820-b69b-171f4c9e5c8f"
+      stageUuid: "22f49c31-b416-84ea-b91c-2032f40d49b4"
     - stage: seal
       stageUuid: "097d73f7-7143-8427-a39d-289bc93b34bd"
     - stage: uuid
-      stageUuid: "23498111-d1fa-84a0-8d6d-d3fa1cf0b579"
+      stageUuid: "c0a5fdad-74fa-8e33-87c9-b7c29ea1d58f"
 version: 2
 ---
 # bar

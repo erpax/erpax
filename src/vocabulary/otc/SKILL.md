@@ -2,11 +2,11 @@
 name: otc
 description: "Use when reasoning about otc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/otc"
-coordinate: "vocabulary/otc · 8/crest · 4e36b8e5"
-contentUuid: "424a1066-3212-585b-bec8-99741d64fcb9"
-diamondUuid: "565f3947-5827-806b-81b7-fe7702b8a10f"
-uuid: "4e36b8e5-4abe-839f-b7a0-2fb0bdcb7bf7"
-horo: 8
+coordinate: "vocabulary/otc · 4/weave · 9265a1a1"
+contentUuid: "a71a88b6-6831-5b77-96ce-a32f96aa80b9"
+diamondUuid: "2dad239f-67e7-8ef7-b1a5-83080aa5be3c"
+uuid: "9265a1a1-96d0-8140-a3ce-1ec600ba62a1"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "adcd1291-5b00-851d-bcfd-d09bab727665"
+  computationUuid: "43af6460-650f-888b-9a25-59e5969c9485"
   stages:
     - stage: path
       stageUuid: "630dcc01-dbd3-856a-b25a-637a38be4d65"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "daca41eb-4354-864e-a62c-6fd038385f9f"
     - stage: horo
-      stageUuid: "53bb5ece-d5e8-8bb7-b773-585dd8d0b0a2"
+      stageUuid: "46af3c39-76e2-8d6a-8302-c1930d916505"
     - stage: seal
       stageUuid: "071e3c5d-8e08-86db-bf0a-d36752287fe9"
     - stage: uuid
-      stageUuid: "7217bbd5-cece-8f05-ac28-020a055b36f0"
+      stageUuid: "9197458a-7658-8a5b-a66c-28b1dccc454d"
 version: 2
 ---
 # otc

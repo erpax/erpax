@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "engine",
-    "uuid": "ab4504fe-ae86-8f52-936b-fc4e3a252331",
+    "uuid": "147d5513-43b8-8dab-ba22-5a88020a78b2",
     "words": [
       "engine"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a document must change state under a declared state machine, or when auditing that machine for dead-ends and unreachable states — attemptTransition gates the move and returns the next state plus the content-uuid event it emits; deadEnds and noInbound name where the machine is incomplete.",
-    "uuid": "971f0410-5310-84bd-8435-1fd59baed689",
+    "uuid": "6c3788ca-13a5-8bfb-a45d-6fce06a6382f",
     "words": [
       "use",
       "when",

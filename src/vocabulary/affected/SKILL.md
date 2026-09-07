@@ -2,10 +2,10 @@
 name: affected
 description: "Use when reasoning about affected — Drugs that affect the test's results."
 atomPath: "vocabulary/affected"
-coordinate: "vocabulary/affected · 8/crest · ff24a221"
-contentUuid: "186020db-8d80-552c-b8fc-8dd04704d056"
-diamondUuid: "b1c1f620-08dc-8040-bcd1-92487a59bac7"
-uuid: "ff24a221-5689-86aa-8cf3-567ae012fdf4"
+coordinate: "vocabulary/affected · 8/crest · 348f6ccb"
+contentUuid: "a833e4ed-5d43-5048-b1a3-27edb2c4d25d"
+diamondUuid: "efa5feeb-5b20-8f63-aa1e-9507026131b4"
+uuid: "348f6ccb-f0fa-8a99-b3db-f287c634a021"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "54c6ee20-5f47-8a0f-b030-00848e765f72"
+  computationUuid: "76ae0259-2441-8c1d-bdde-48dc8f1379cd"
   stages:
     - stage: path
       stageUuid: "ebe59757-9758-8a54-a13b-a61ad824a9b8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f4c1254d-0423-84ab-b7d8-84126026f919"
     - stage: horo
-      stageUuid: "90d2d01f-e0dc-809f-95b6-5d1a6cf7c2fe"
+      stageUuid: "53dc75ce-61fc-840d-96db-48199c01c137"
     - stage: seal
       stageUuid: "ad8116fc-723a-8b8b-8c15-28c5d2cb6a37"
     - stage: uuid
-      stageUuid: "934a201a-b5aa-8234-b470-84e8ca50e04b"
+      stageUuid: "4d285b2e-c696-8886-8064-975e0ae2b24b"
 version: 2
 ---
 # affected

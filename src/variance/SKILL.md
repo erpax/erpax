@@ -2,10 +2,10 @@
 name: variance
 description: "Use when reasoning about variance — Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined perfor"
 atomPath: variance
-coordinate: "variance · 8/crest · cdc2d612"
-contentUuid: "d04cbf98-be2e-5c0d-bedb-fc09d0af5c45"
-diamondUuid: "db613564-9c37-8d86-abec-7725b331dc5b"
-uuid: "cdc2d612-8111-8dea-9df0-1e34b65e8f7d"
+coordinate: "variance · 8/crest · f268166b"
+contentUuid: "53577b47-fd48-52e2-bc28-bd3097b0e313"
+diamondUuid: "aa4a1cce-7983-8dfd-a2bf-b73c30dba575"
+uuid: "f268166b-01e8-822f-8235-1b165790312e"
 horo: 8
 typography:
   partition: variance
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ae85be2e-8f47-8b77-94f5-fc92b8a40775"
+  computationUuid: "aed0164f-1e73-820d-9ed3-009eb34c4b15"
   stages:
     - stage: path
       stageUuid: "aa628208-4853-8a9e-b904-aa05fa325790"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "072b9828-4903-8aeb-bdd8-5964490a8082"
     - stage: horo
-      stageUuid: "07db2408-2fe0-8e6b-a04d-7b47621c897d"
+      stageUuid: "34fb64a1-ef1b-8436-89fd-ce6f3bcd4d50"
     - stage: seal
       stageUuid: "1f7164c4-3bdf-8734-b7bb-d3ac490880d4"
     - stage: uuid
-      stageUuid: "3e2a3d57-8969-8f80-95ff-59dec52ca85e"
+      stageUuid: "be03fb0b-5cc8-8b72-a6cd-7ef0482309b9"
 version: 2
 ---
 # variance

@@ -2,11 +2,11 @@
 name: counter
 description: "Use when reasoning about counter as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/counter"
-coordinate: "vocabulary/counter · 2/share · 44d5d7cc"
-contentUuid: "b5b29bb0-67cb-5884-938b-8fd05ca27dcb"
-diamondUuid: "76c7624e-a87a-8185-9f51-32921aca7c85"
-uuid: "44d5d7cc-b81a-89e3-b3f3-b4ed97a9b5c9"
-horo: 2
+coordinate: "vocabulary/counter · 4/weave · a6c25c01"
+contentUuid: "e919fa4f-af2b-52ba-a7bb-5e3d877a5bd2"
+diamondUuid: "9d07f352-8397-8ee4-9919-7b9945c0e5db"
+uuid: "a6c25c01-c209-8062-8ce8-a1799166a009"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b6a75441-2660-861f-b305-93b548555535"
+  computationUuid: "d6bb2e93-4e23-82f4-8135-184d60e197bd"
   stages:
     - stage: path
       stageUuid: "bdcf027c-3fe1-8b77-baad-0b96c649bdf9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a1620a10-319d-8025-855b-b4502d250cf1"
     - stage: horo
-      stageUuid: "f5e0c649-609a-889b-8591-24b72ceac5e3"
+      stageUuid: "f45c4a9d-eae1-8a0e-9fdb-7b31124a92f5"
     - stage: seal
       stageUuid: "fef18eb6-426c-8521-96ee-69394e4b6830"
     - stage: uuid
-      stageUuid: "093f80d3-6b58-8898-badb-eb531a95f9ea"
+      stageUuid: "a959e6b3-b2e4-8139-b53f-a451b049e5c9"
 version: 2
 ---
 # counter

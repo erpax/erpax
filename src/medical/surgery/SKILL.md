@@ -2,10 +2,10 @@
 name: surgery
 description: "Use when reasoning about surgery as a medical facet of medical — vocabulary pivot to @/surgery; nested not duplicated."
 atomPath: "medical/surgery"
-coordinate: "medical/surgery · 4/weave · f7fb535d"
-contentUuid: "30977281-a68d-511d-925a-b917315967fb"
-diamondUuid: "e1e77e9e-f98b-89ec-92e7-616ded25dd95"
-uuid: "f7fb535d-7f51-87f6-9ea1-376eabc0c6dc"
+coordinate: "medical/surgery · 4/weave · de54b5a4"
+contentUuid: "3f536aee-7d2d-5b08-bd92-d559fc468ac6"
+diamondUuid: "886c42e1-d90a-8fc6-a69c-7c07b5cdfbff"
+uuid: "de54b5a4-e181-83d8-bdf4-2ecf25f6ac77"
 horo: 4
 typography:
   partition: medical
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e65a225b-51fe-8c7d-aff3-4580c3729c89"
+  computationUuid: "dc764c0c-1fc2-8321-a687-f6432f1bb42d"
   stages:
     - stage: path
       stageUuid: "2fbfb64a-ad64-809a-b95f-a0adaac45d3b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d5f25760-122b-868a-b35b-d89a71501147"
     - stage: horo
-      stageUuid: "e50cabf0-4717-8780-a04b-124b574a8814"
+      stageUuid: "3ff3309b-4be2-8d09-9f3b-1ed8279e3eec"
     - stage: seal
       stageUuid: "44f4c181-8519-8063-ac93-cc2319404644"
     - stage: uuid
-      stageUuid: "9496be0e-95a2-81a6-bc2f-2560d9fafef4"
+      stageUuid: "c072c13b-ad1c-8aec-95a6-c8160f06ccf6"
 version: 2
 ---
 # medical/surgery — medical facet

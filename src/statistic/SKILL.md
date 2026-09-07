@@ -2,11 +2,11 @@
 name: statistic
 description: "Use when reasoning about statistic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: statistic
-coordinate: "statistic · 5/round · 97fd202e"
-contentUuid: "32db8e14-95d1-5621-a90b-7b2f764664e0"
-diamondUuid: "7c064829-261a-802b-8b3f-7a8386c40edc"
-uuid: "97fd202e-9d48-843a-864a-6af3ca183592"
-horo: 5
+coordinate: "statistic · 1/base · 049cf7f1"
+contentUuid: "1ed0758e-8dfb-54b5-8bcd-394628b79dfa"
+diamondUuid: "9ffff9e1-f18c-84e6-b984-a3b3d6c7d0fa"
+uuid: "049cf7f1-dd80-85d9-ade5-f759ad230449"
+horo: 1
 typography:
   partition: statistic
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e6ee4f76-c759-8055-93cb-37b737df7526"
+  computationUuid: "8bda5be5-b733-8ba3-b832-802e3441912d"
   stages:
     - stage: path
       stageUuid: "8f786eb7-9599-8036-863b-9c9a713726e4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0393cc2d-d27f-8c50-938d-e027c2cae5ae"
     - stage: horo
-      stageUuid: "bb0bbd27-e881-89fc-bed5-d5de420891b6"
+      stageUuid: "07a90b9f-d967-8604-9174-a761a8b69e27"
     - stage: seal
       stageUuid: "d190d709-e8dc-89e8-9174-392849609da2"
     - stage: uuid
-      stageUuid: "4dcfd798-2345-899e-9798-c75706d54b33"
+      stageUuid: "5e7e61b5-a9e8-8f8c-b3f3-3a2784c1e9c0"
 version: 2
 ---
 # statistic

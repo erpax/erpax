@@ -2,11 +2,11 @@
 name: demo
 description: "Use when reasoning about demo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/demo"
-coordinate: "vocabulary/demo · 5/round · 45dba4ba"
-contentUuid: "5c7a845d-b7b0-556f-ba1e-cd0f479bc6ac"
-diamondUuid: "a3e30752-fd7c-8c88-a2d6-ad5736e03ead"
-uuid: "45dba4ba-7423-8b25-9cda-ba852b08ca1a"
-horo: 5
+coordinate: "vocabulary/demo · 8/crest · 4be9eec7"
+contentUuid: "aed471c4-9b58-5746-ae47-b694b2658dac"
+diamondUuid: "6f6796b2-4be9-8c00-ab79-fec60176ce82"
+uuid: "4be9eec7-30f8-83c0-a9e0-1314e4be51f0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a1130de2-0a35-8cd0-adc6-2745aba0919b"
+  computationUuid: "9ef6b45e-6a87-8522-b21b-111c3d96ea53"
   stages:
     - stage: path
       stageUuid: "5f4bc17a-3533-8085-bd58-1b421701944b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42dc1f0f-1485-80a5-b32e-6be6166b617b"
     - stage: horo
-      stageUuid: "07818660-7db1-8592-8590-be81e1b7debb"
+      stageUuid: "081e0c72-0d12-8566-a8ab-1d724f17bad9"
     - stage: seal
       stageUuid: "d3f2019d-15d1-8245-90b6-b48c8ec1cd74"
     - stage: uuid
-      stageUuid: "7563134a-1201-8e15-9274-98b16015a2bb"
+      stageUuid: "a6bb9f67-6209-83bf-b0a0-4155cb961b38"
 version: 2
 ---
 # demo

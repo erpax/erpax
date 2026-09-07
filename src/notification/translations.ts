@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "notification",
-    "uuid": "f05bd4a1-6ca0-895d-86b4-ebc5132d59df",
+    "uuid": "d17d78d9-fe76-8792-b182-59fcd91ca08d",
     "words": [
       "notification"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map.",
-    "uuid": "8173ef9f-ad27-8bb2-b7df-177e55d2c1a0",
+    "uuid": "780c98ec-ef72-851f-8f3b-fb8b327a9900",
     "words": [
       "use",
       "when",

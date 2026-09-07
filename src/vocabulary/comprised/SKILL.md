@@ -2,11 +2,11 @@
 name: comprised
 description: "Use when reasoning about comprised — Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system."
 atomPath: "vocabulary/comprised"
-coordinate: "vocabulary/comprised · 1/base · 167233c8"
-contentUuid: "5da532aa-0158-5a13-b257-be73f06479e1"
-diamondUuid: "01463fa5-2481-8b2b-88f3-035d35753027"
-uuid: "167233c8-d842-8012-8f58-497c35dc1670"
-horo: 1
+coordinate: "vocabulary/comprised · 7/descent · 9ab9f341"
+contentUuid: "7cc5432c-a94f-51e6-9a92-7b0be1b3116d"
+diamondUuid: "0a3669c0-a34e-83b1-8da4-14fddbf52498"
+uuid: "9ab9f341-d0e3-89b0-9698-49b753e635c7"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cc9a1abd-1e7a-8025-b1b4-fb3a4efb29b2"
+  computationUuid: "41004f87-8517-8395-8315-540106903fdf"
   stages:
     - stage: path
       stageUuid: "b742c0a0-8dce-8a37-ad88-353c805fc25e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cc7d4d79-39d3-865a-ad7f-bcd79169ae02"
     - stage: horo
-      stageUuid: "221df843-6bbf-8383-be78-acb8f23ea8a3"
+      stageUuid: "f47903d5-45a3-8984-9cbc-acf470153515"
     - stage: seal
       stageUuid: "02dc8f3a-3b88-8dba-8290-88757ea84ad5"
     - stage: uuid
-      stageUuid: "55383ed6-95ad-8e82-a8e7-598a8ee57177"
+      stageUuid: "11f030c1-0df0-8213-a51e-8ac5257f0eea"
 version: 2
 ---
 # comprised

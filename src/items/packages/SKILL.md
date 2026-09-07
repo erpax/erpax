@@ -2,11 +2,11 @@
 name: packages
 description: "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment."
 atomPath: "items/packages"
-coordinate: "items/packages · 1/base · f5d0f67c"
-contentUuid: "1793f28b-b7b1-5867-a261-5837173f3ffb"
-diamondUuid: "43c353c8-eebb-8d09-b58b-de7c9d112e78"
-uuid: "f5d0f67c-d7a8-8553-86d4-f167e39bb52b"
-horo: 1
+coordinate: "items/packages · 8/crest · c3839a83"
+contentUuid: "2c75c8e9-3095-56e0-9b67-54c49347bbd2"
+diamondUuid: "7cc933de-bd2c-8ed5-8790-10993e1d7ff3"
+uuid: "c3839a83-2e52-85a0-8c85-049c1c951655"
+horo: 8
 typography:
   partition: items
   bondDegree: 27
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "94ffa3ef-eeb1-8ed0-80f6-a3fa60ad875b"
+  computationUuid: "56b87d07-99f2-8277-8829-2af985e9890d"
   stages:
     - stage: path
       stageUuid: "8ea3744e-cdbf-8fe2-bf73-27dfdf390c3c"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "455d7c67-611d-8c32-be6c-eac41fa816ec"
     - stage: horo
-      stageUuid: "6a7d099b-c429-82bb-99dd-8b832803c459"
+      stageUuid: "d06895c5-66d2-825f-bc40-8d3e72157a0f"
     - stage: seal
       stageUuid: "a8f125be-03c8-8591-86e0-eb8f19594a06"
     - stage: uuid
-      stageUuid: "b55181c7-194c-8d70-806c-8eba74644329"
+      stageUuid: "d4acea96-9c11-8b38-9e7c-2c8d47ad549d"
 version: 2
 ---
 # packages

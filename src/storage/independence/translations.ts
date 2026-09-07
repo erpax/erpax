@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "independence",
-    "uuid": "e11968b5-e706-87dc-b38e-aa2f2ddd845b",
+    "uuid": "7f9e3e03-fb16-87a3-a0a8-1f6955c0f317",
     "words": [
       "independence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about independence — admits a store and recomputes the content-uuid from each one's bytes. Agreement means the object is intact everywhere; disagreement names which store is wrong, without trusting…",
-    "uuid": "384e4aaf-f851-8d70-8600-03d12f8d74ce",
+    "uuid": "75713d3a-20ee-8191-a29a-52efc8cff6c4",
     "words": [
       "use",
       "when",

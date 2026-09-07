@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plugin",
-    "uuid": "ada6b091-a825-8e76-a55f-ecf7bc630fc7",
+    "uuid": "03d37f58-4973-8acc-b03f-13734729af95",
     "words": [
       "plugin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about plugin — wires the storefront to Stripe with per-tenant keys, so each tenant transacts under its own account and one tenant's credentials never authorise another's charge.",
-    "uuid": "7fc70a69-1a4a-8fa0-a490-373bfaf5fa11",
+    "uuid": "22b428b1-3a80-8bc0-8653-9938eb6e0b1d",
     "words": [
       "use",
       "when",

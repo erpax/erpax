@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "predicates",
-    "uuid": "e3c98561-2a43-8cdf-ac54-7b717b741aa3",
+    "uuid": "42f4cf21-5822-8928-8edd-2466bbbf94ee",
     "words": [
       "predicates"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about predicates — Pure predicates over {@link RoleDefinition} rows (`roles` collection).",
-    "uuid": "488ca0fa-7f7c-8f6b-ae30-12fe0b195287",
+    "uuid": "30d04e15-579a-8300-b377-e5e9fb0ab8dd",
     "words": [
       "use",
       "when",

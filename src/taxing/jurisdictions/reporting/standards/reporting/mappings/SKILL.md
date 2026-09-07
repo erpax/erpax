@@ -2,11 +2,11 @@
 name: mappings
 description: "Use when translating elements across reporting frameworks — account/line-item/disclosure/metric mappings between a source and target standard (XBRL-GL, IFRS-Taxonomy, SAF-T). The cross-standard element-mapping node."
 atomPath: "taxing/jurisdictions/reporting/standards/reporting/mappings"
-coordinate: "taxing/jurisdictions/reporting/standards/reporting/mappings · 1/base · be2e14d0"
-contentUuid: "4df6ade8-e614-5939-b155-dedee4b0f8b2"
-diamondUuid: "7b3ba005-f540-8cf0-b82c-2f766b16a464"
-uuid: "be2e14d0-8afd-8fbc-b4c5-b637eef292ca"
-horo: 1
+coordinate: "taxing/jurisdictions/reporting/standards/reporting/mappings · 7/descent · 26aad3a8"
+contentUuid: "9fd7e4a1-ffee-5e45-84e7-e4bb294cba79"
+diamondUuid: "41229b50-7cb3-8c20-9a55-e9db2d30f59e"
+uuid: "26aad3a8-816a-831e-a631-d75324e433f5"
+horo: 7
 typography:
   partition: taxing
   bondDegree: 10
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ff347528-7427-86a5-8460-0fed134e0d74"
+  computationUuid: "0341a049-6b6d-8f91-82d1-4d8b4759421b"
   stages:
     - stage: path
       stageUuid: "a13c53e0-51cd-816a-95c8-8c72d5657b95"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "46a129b6-4883-81ca-a485-8fa957d58d31"
     - stage: horo
-      stageUuid: "2a94e06c-7ac1-812c-89e7-5eff7e964ec6"
+      stageUuid: "bd44bb0e-1ecc-8e22-a7ae-68c62b566de2"
     - stage: seal
       stageUuid: "28fef98e-2137-8a3c-baf9-17ab842acad5"
     - stage: uuid
-      stageUuid: "5729e7d5-ea1d-8ce0-9a83-d5d7dd4a405d"
+      stageUuid: "9d5ade85-e715-8255-acd7-3b8454e8ed88"
 version: 2
 ---
 # reporting-mappings

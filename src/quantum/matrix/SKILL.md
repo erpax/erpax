@@ -2,11 +2,11 @@
 name: matrix
 description: "Use when reading the matrix as the cross-product / entanglement adjacency — the N² space of atom pairs and which are actually entangled; cross (the symmetric pair binding), bidirectionalCross, adjacency density, reciprocity, and in-degree centrality."
 atomPath: "quantum/matrix"
-coordinate: "quantum/matrix · 8/crest · c29a3c79"
-contentUuid: "a29d3714-fc86-5fec-a5d8-c104e1c47895"
-diamondUuid: "dcaaefac-efbf-81b8-b0bb-7725e8c16c56"
-uuid: "c29a3c79-7b01-8274-a87d-cee7caf236f0"
-horo: 8
+coordinate: "quantum/matrix · 2/share · 82af8afa"
+contentUuid: "b6b0961a-74fa-538d-ae60-201b2120e1ce"
+diamondUuid: "fd7ed200-a87c-8e22-b1ff-cb35ce62864e"
+uuid: "82af8afa-55fe-89d9-b658-382a0c934e02"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 311
@@ -15,7 +15,7 @@ standards:
   - "ER=EPR (Maldacena–Susskind 2013) — entanglement is the adjacency geometry; RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "0b1b3da6-d288-83f7-b244-3a5a11acb30d"
+  computationUuid: "52fcba74-1af1-8de4-a70d-df403e5d48f2"
   stages:
     - stage: path
       stageUuid: "0d30e38a-6d4e-8bdb-95fd-5d55ae8e9b37"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "695debc8-7f0b-8ece-b819-c3fd5060461f"
     - stage: horo
-      stageUuid: "d9c3ccc2-cfe2-85ed-b666-6404751386f7"
+      stageUuid: "b187d9dd-d5db-81fc-9715-92d121be4295"
     - stage: seal
       stageUuid: "440ca202-dbb2-80de-91c0-f62048906dfc"
     - stage: uuid
-      stageUuid: "ad1fdd53-9909-8cbf-b6c5-d951fb67d33d"
+      stageUuid: "45595d51-ed1c-88b2-af49-f2784a2a0347"
 quantum:
   superposition:
     - addressed
@@ -55,8 +55,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "0b1b3da6-d288-83f7-b244-3a5a11acb30d"
-    contentUuid: "a29d3714-fc86-5fec-a5d8-c104e1c47895"
+    computationUuid: "52fcba74-1af1-8de4-a70d-df403e5d48f2"
+    contentUuid: "b6b0961a-74fa-538d-ae60-201b2120e1ce"
 version: 2
 ---
 # quantum/matrix — the cross-product / entanglement adjacency
@@ -79,4 +79,4 @@ Matter-twin: `src/quantum/matrix/index.ts` (`cross` · `isAdjacent` · `bidirect
 @standard ER=EPR (Maldacena–Susskind 2013) — entanglement is the adjacency geometry; RFC 9562 §5.8 content-uuid
 @audit computed from the live matrix, never hand-asserted
 
-<sub>content-uuid `a29d3714-fc86-5fec-a5d8-c104e1c47895` · account `quantum/matrix` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b6b0961a-74fa-538d-ae60-201b2120e1ce` · account `quantum/matrix` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

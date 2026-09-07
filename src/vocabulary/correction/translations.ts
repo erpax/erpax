@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "correction",
-    "uuid": "e33714d3-8753-8acd-b1ae-7740890740ea",
+    "uuid": "87d10055-5889-8aa8-b5b1-3c706a1e841f",
     "words": [
       "correction"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about correction — Indicates a correction to a CreativeWork, either via a CorrectionComment, textually or in another document.",
-    "uuid": "d45d21cd-24b9-837f-9db8-38787e933c51",
+    "uuid": "e58cf542-5eb8-82b7-b73f-56f297f664de",
     "words": [
       "use",
       "when",

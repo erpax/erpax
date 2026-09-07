@@ -2,11 +2,11 @@
 name: architecture
 description: "Use when checking that the corpus obeys its own structural laws — the executable invariants (single-word atoms, no prefixes, locality, the cross balance, the naming matrix) that are the matter-twin of the architecture gate, reached through one face."
 atomPath: architecture
-coordinate: "architecture · 1/base · 45b1424c"
-contentUuid: "d1d37bdb-a5e0-5d21-868e-27eec4ce1061"
-diamondUuid: "4193f6c7-a7d1-8eaa-8b4a-6fbdfaf986d4"
-uuid: "45b1424c-93eb-8290-9782-cd8425a2db68"
-horo: 1
+coordinate: "architecture · 8/crest · 1b11f4e0"
+contentUuid: "1736a8f9-3aa1-5976-804d-2b25adc7bbc6"
+diamondUuid: "516e88f9-993b-8d21-9c54-a960295823c2"
+uuid: "1b11f4e0-a11c-82eb-a4ad-5a97aa5ed8e1"
+horo: 8
 typography:
   partition: architecture
   bondDegree: 35
@@ -32,7 +32,7 @@ standards:
   - "W3C-JSON-LD-1.1"
 bindings: []
 signatures:
-  computationUuid: "32e977dc-607d-8a9c-80f7-dde7b1ceb470"
+  computationUuid: "a184a487-0c12-8343-a46e-a4d90e00d611"
   stages:
     - stage: path
       stageUuid: "063c0bc6-9213-841b-a67d-09e5a0634905"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "30d259c1-1e1d-8cc0-ac2f-40064713986c"
     - stage: horo
-      stageUuid: "5146bfb3-7bff-849d-9438-faac62872980"
+      stageUuid: "6e94678b-c3d2-818e-b726-5ae2dcaab467"
     - stage: seal
       stageUuid: "2899e426-02a5-8984-a940-0476350d9a34"
     - stage: uuid
-      stageUuid: "166da553-92bf-8f48-9cc7-d84a6e5c3e09"
+      stageUuid: "1fc224f2-25e8-8ba5-8a0b-1ba2366e6f74"
 version: 2
 ---
 # architecture

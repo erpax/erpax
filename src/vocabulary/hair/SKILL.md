@@ -2,11 +2,11 @@
 name: hair
 description: "Use when reasoning about hair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hair"
-coordinate: "vocabulary/hair · 2/share · 8397b9b1"
-contentUuid: "df9ea923-4268-505f-b5ef-e1aa1eefe958"
-diamondUuid: "50bba1db-3cc5-8ed0-8cab-a474cfebe432"
-uuid: "8397b9b1-5036-815b-b355-4c54b1bdc613"
-horo: 2
+coordinate: "vocabulary/hair · 5/round · 93d80444"
+contentUuid: "4fe61133-0d07-5ab8-8fc7-1669a88b4c8a"
+diamondUuid: "24500ffb-6f0f-8566-b593-7c0b5cef3b63"
+uuid: "93d80444-a4c8-8b0a-9a64-cb8a52ef6556"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4aafc70f-b321-8854-ab66-7e1c746cd2dc"
+  computationUuid: "2146725e-ed21-8bca-91a2-831b1e4a8487"
   stages:
     - stage: path
       stageUuid: "62414813-71d5-8395-a0e2-2b00fbcd4814"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0a430916-f046-870e-b3fa-3ba0a116bbde"
     - stage: horo
-      stageUuid: "074b9900-b614-8489-a5a7-13a83d3f025d"
+      stageUuid: "ac7b6d23-517f-8239-bb50-a2c8768e7d72"
     - stage: seal
       stageUuid: "b478a7bd-1511-885b-8b74-caedd10123f7"
     - stage: uuid
-      stageUuid: "46a12224-4d48-83ed-a0db-5bac505e1e61"
+      stageUuid: "c938c72e-1f6e-815a-9f0f-d410abd97455"
 version: 2
 ---
 # hair

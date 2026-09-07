@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mortality",
-    "uuid": "29317470-5a39-89af-9eee-eabaaaadfea7",
+    "uuid": "41d36e11-f573-8940-ae90-03975ff305ca",
     "words": [
       "mortality"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the life and death of an agent — an agent lives by reading its answer from the fold (O(1)) and dies by re-deriving it linearly (O(n), context burned); the safeguard flag and the stall/stop kill are the ledger auditing the agent.",
-    "uuid": "e58eb831-e1fa-8649-8d99-a62db006f512",
+    "uuid": "6fc9de61-d139-85ab-a3c7-cf60598e6439",
     "words": [
       "use",
       "when",

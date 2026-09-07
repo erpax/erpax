@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "perspective",
-    "uuid": "fbdde6d1-52d3-819a-b800-070e0f9c3fab",
+    "uuid": "ea359363-8e97-8e32-9efb-a08f21645dd4",
     "words": [
       "perspective"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \\\"my customer\\\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection.",
-    "uuid": "659b2b1c-4d9d-8f8d-8116-3bd51679d4a1",
+    "uuid": "8b467f3f-4501-833c-a53d-2b85982c3093",
     "words": [
       "use",
       "when",

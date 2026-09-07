@@ -2,11 +2,11 @@
 name: info
 description: "Use when reasoning about info as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/info"
-coordinate: "vocabulary/info · 1/base · 0964e8d7"
-contentUuid: "289ff0a7-d6b3-5a75-ba6a-fd485c849f1f"
-diamondUuid: "af20f085-808f-81ea-b7b0-bba84881f6a0"
-uuid: "0964e8d7-5f8c-86d0-a383-f711d351ed72"
-horo: 1
+coordinate: "vocabulary/info · 5/round · 8cef32af"
+contentUuid: "89c2ca75-a732-53d1-b0df-6ada6606f016"
+diamondUuid: "75614a8d-1fe7-890d-8f98-ef28c3651535"
+uuid: "8cef32af-d4f5-8533-99dc-4634fbb8c575"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 70
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "84625d71-d196-8e9f-985f-b611ff2bddbd"
+  computationUuid: "16b14b69-5e20-8c3b-89c9-24deec036fcf"
   stages:
     - stage: path
       stageUuid: "17bff0c3-e3e7-86f4-9622-bb8450832634"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4c4128e5-8140-84c3-ade0-a6e65743818c"
     - stage: horo
-      stageUuid: "a5c13355-ac6a-8c25-9fdc-dd48e698c856"
+      stageUuid: "884e3e95-41ca-8a0c-8661-c39d6485fb30"
     - stage: seal
       stageUuid: "55de824a-fb14-8cd3-975e-eb550ab6c647"
     - stage: uuid
-      stageUuid: "29dfc271-cab3-8573-b34a-f8187d0ea6f7"
+      stageUuid: "563c8b2e-6d2b-8931-86be-b9ca9c364548"
 version: 2
 ---
 # info

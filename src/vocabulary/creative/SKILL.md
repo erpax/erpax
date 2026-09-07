@@ -2,11 +2,11 @@
 name: creative
 description: "Use when reasoning about creative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/creative"
-coordinate: "vocabulary/creative · 1/base · 6e9c7360"
-contentUuid: "e65a9a88-20b4-57c4-9de6-a09268377280"
-diamondUuid: "4803d977-413a-8669-84cc-28b7a143e8d2"
-uuid: "6e9c7360-f0ef-8e0c-8095-c09e9cf8759a"
-horo: 1
+coordinate: "vocabulary/creative · 2/share · 1d176453"
+contentUuid: "c6e3a115-3df3-50c3-8506-c4d1fe51a387"
+diamondUuid: "ecf8ce98-e9e9-891b-91c6-6df3c12aad73"
+uuid: "1d176453-299e-85b4-9990-75e6010181a5"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 90
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5cb36e27-1fc4-8310-9818-dc64645ef62b"
+  computationUuid: "bc14bc7e-4452-8f07-8f95-d22a0cce865f"
   stages:
     - stage: path
       stageUuid: "83085a0e-770c-83fe-bb73-c2a787199a32"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e1a0b46c-bd85-8120-aed6-e2e09cecd53e"
     - stage: horo
-      stageUuid: "d5f424af-8739-81f8-8cc8-475d2bc3cafd"
+      stageUuid: "5056e4b1-07e0-8cf7-8294-9cbdf8e61dfa"
     - stage: seal
       stageUuid: "d12903c7-e2a1-8a3a-9396-15df2c481d34"
     - stage: uuid
-      stageUuid: "1118f659-7a9d-8137-8778-8de128363c17"
+      stageUuid: "efb7fd8c-cb4b-8292-92de-a4ecf18cedf3"
 version: 2
 ---
 # creative

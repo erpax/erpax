@@ -2,11 +2,11 @@
 name: adjustments
 description: "Use when restating a prior closed period for material errors — IAS-8 §42 retrospective correction, adjusting opening balances without re-opening; disclosing error category and amount per §49; CEO/CFO certification for SOX §906. The prior-period restatement node."
 atomPath: "fiscal/periods/prior/period/adjustments"
-coordinate: "fiscal/periods/prior/period/adjustments · 2/share · ae733d8d"
-contentUuid: "6de20c4d-8d85-5b51-b544-d5d1c5d88249"
-diamondUuid: "672ecd13-e9e4-86e5-8f02-09a988ce423b"
-uuid: "ae733d8d-75d4-80fb-9d93-59e73091726d"
-horo: 2
+coordinate: "fiscal/periods/prior/period/adjustments · 5/round · cb95bf0f"
+contentUuid: "f72b50ac-8f71-5078-968d-d7be3091bd0d"
+diamondUuid: "b7c1c5d0-f741-853e-a13a-a842455e85b4"
+uuid: "cb95bf0f-cca1-8065-8172-174baaa03123"
+horo: 5
 typography:
   partition: fiscal
   bondDegree: 42
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b144801c-aea8-8fd3-9515-00fc07ccc058"
+  computationUuid: "dc6c0754-c8af-8ce3-9bb8-9c47f7c29580"
   stages:
     - stage: path
       stageUuid: "1f95d29e-02c6-8b0c-9dab-53841947a863"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "b6864de4-6161-8094-93fc-79891ad11721"
     - stage: horo
-      stageUuid: "2eff48de-7c44-869b-9f4e-bbc5974fc6d5"
+      stageUuid: "2e684cf1-034d-8e1d-9bb4-f33a83177855"
     - stage: seal
       stageUuid: "f3030037-d05c-80cb-9772-d0bfce04fb30"
     - stage: uuid
-      stageUuid: "f0c9c921-a4a9-8ef3-8ac3-663607c1ecec"
+      stageUuid: "99f33cef-4ed3-896d-944e-b9ad7ec984f8"
 version: 2
 ---
 # prior-period-adjustments

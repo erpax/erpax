@@ -2,10 +2,10 @@
 name: erpax
 description: "Use when a consumer needs to FIND erpax rather than run it — the orientation face: the canonical repo, the sealed skill entry, the one law, and the tiered licence, shipped as @erpax/erpax."
 atomPath: erpax
-coordinate: "erpax · 4/weave · 0e51e1fd"
-contentUuid: "7a28351c-b2c9-5a7d-b18d-9a97f1d94cc2"
-diamondUuid: "35cf6370-6819-88d4-aba8-f0f54f24c5d2"
-uuid: "0e51e1fd-2beb-8841-93ad-2b961a1cb7ae"
+coordinate: "erpax · 4/weave · a5bd796c"
+contentUuid: "efff89e0-aa0f-5476-98a3-2c7795754a06"
+diamondUuid: "5c988361-bac5-8d72-b56e-5a1750c9ecfc"
+uuid: "a5bd796c-cb0e-8591-90d0-dbd666f0002f"
 horo: 4
 typography:
   partition: erpax
@@ -14,7 +14,7 @@ standards:
   - "RFC-3986"
 bindings: []
 signatures:
-  computationUuid: "df8dc6f0-2d47-80b7-8fd4-71694ab15e7e"
+  computationUuid: "66b7c2ea-d09d-8645-82ff-b90f0652047f"
   stages:
     - stage: path
       stageUuid: "310fdc7c-997b-8b46-8844-78a6e6ab4850"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "50d5ca2e-f395-89fb-acd7-afd4b002fcbf"
     - stage: horo
-      stageUuid: "42b417d7-947b-8be4-a9ea-3ea4c996f1c6"
+      stageUuid: "61ad918c-a717-8384-a74c-c785fd926df5"
     - stage: seal
       stageUuid: "78085b66-b263-878f-a974-bdecc79ac026"
     - stage: uuid
-      stageUuid: "ac0be791-e4d8-89d1-9e60-59a1a9740fc2"
+      stageUuid: "9572a154-d791-8f2f-b8ee-3e4a40bc50e9"
 version: 2
 ---
 # erpax — the face that names the whole

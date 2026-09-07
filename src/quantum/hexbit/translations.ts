@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hexbit",
-    "uuid": "cabe8521-7c3c-8955-a2bf-81bcac9d05ad",
+    "uuid": "bff19a2b-b8e1-829c-8407-7837cf305ed2",
     "words": [
       "hexbit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hexbit — *\\\"Hexbits compute faster than all else\\\"* is two claims wearing one sentence, and they have **opposite** answers.",
-    "uuid": "34c2a2f6-27be-8d00-85ad-4cd77578a923",
+    "uuid": "af740cbb-ccb7-8215-aad7-3ded448a867e",
     "words": [
       "use",
       "when",

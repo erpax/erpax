@@ -2,11 +2,11 @@
 name: maintainer
 description: "Use when reasoning about maintainer — A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of,"
 atomPath: "vocabulary/maintainer"
-coordinate: "vocabulary/maintainer · 4/weave · bd897869"
-contentUuid: "505530fc-c71f-589c-b0d5-fe92d0ce4c88"
-diamondUuid: "c9762d68-3a8f-8593-8dd8-b76b0c540fa7"
-uuid: "bd897869-b93b-8a22-affa-d2b98259acb6"
-horo: 4
+coordinate: "vocabulary/maintainer · 5/round · 2ede5e17"
+contentUuid: "d89f3772-2884-5eef-a2ac-597fe171df2b"
+diamondUuid: "7315c6d7-6823-8a08-a0cf-a18712652315"
+uuid: "2ede5e17-0d03-86fa-a492-68b7e8698513"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ea4deca7-5a87-8e1d-b1c1-5ce3095bc1c2"
+  computationUuid: "180e1fe2-122e-8897-b9b6-c0090eb2445a"
   stages:
     - stage: path
       stageUuid: "c64e7af9-393d-8cf0-829a-a8aa20bd689e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f15cf0f9-4bc3-8a9b-bdc4-b2d0e7dddb50"
     - stage: horo
-      stageUuid: "87c75174-fe1f-89e0-9e61-d9356615d0d1"
+      stageUuid: "6b02d186-373d-8992-96e5-cacd9bbf256c"
     - stage: seal
       stageUuid: "224a538c-fb49-8768-be1e-874c1ee292a6"
     - stage: uuid
-      stageUuid: "5dd663b4-2ddc-8433-9688-df1fe100e10c"
+      stageUuid: "77fdcef5-c81c-83c4-a2b3-33c28dfd4bd8"
 version: 2
 ---
 # maintainer

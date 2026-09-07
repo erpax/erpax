@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "karma",
-    "uuid": "9fb3453a-2aff-8def-be0c-0223dc6f60b0",
+    "uuid": "5fbc20d0-51ff-85e5-a642-71240cea3cca",
     "words": [
       "karma"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about karma on the quantum level — moral debt and credit inherited down the DNA chain (the parent_id), entangled via lineage so an atom carries its ancestors' karma, tamper-evident by architecture.",
-    "uuid": "aa6c9cc6-f20f-8e2f-825e-76da70516e5f",
+    "uuid": "a54f53c6-5d2c-86db-86c3-aac122b77b88",
     "words": [
       "use",
       "when",

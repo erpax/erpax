@@ -2,11 +2,11 @@
 name: ikey
 description: "Use when reasoning about ikey as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ikey"
-coordinate: "vocabulary/ikey · 8/crest · 76312709"
-contentUuid: "ea572ce2-4ac8-51e1-b1a0-5a1dea5315d3"
-diamondUuid: "a6458d88-0307-8195-9a2d-8497e2a8edb8"
-uuid: "76312709-ce42-8d02-9298-239866c8d874"
-horo: 8
+coordinate: "vocabulary/ikey · 1/base · d373f685"
+contentUuid: "12dad7a0-4664-5552-9ee9-1bb23d68b2e7"
+diamondUuid: "8886fd98-0356-8fb0-8d54-dd5a3b402fc7"
+uuid: "d373f685-999f-8e23-a453-cf77a2fcdc3b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3952cd1a-b7e8-8984-afb7-9e192487c016"
+  computationUuid: "4a752569-13ee-8974-b11c-4032ce6adde3"
   stages:
     - stage: path
       stageUuid: "66ec3fcd-2376-8995-858d-e69d3a6f5ef9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "35647abc-473a-8e6e-84a3-ab2a09ea3912"
     - stage: horo
-      stageUuid: "c982c98f-decc-8635-abe1-6740c659b49c"
+      stageUuid: "757a3cc0-bc31-82a7-844a-0107e235df5a"
     - stage: seal
       stageUuid: "83482eab-0160-854a-90ed-4ef66c37342f"
     - stage: uuid
-      stageUuid: "695e3eea-23cf-8938-ab7c-c33f8bb46643"
+      stageUuid: "d7371cf0-cb5d-8b61-8c92-ca87fe4337e4"
 version: 2
 ---
 # ikey

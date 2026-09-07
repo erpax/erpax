@@ -2,11 +2,11 @@
 name: damages
 description: "Use when reasoning about damages as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/damages"
-coordinate: "vocabulary/damages · 5/round · ce33d37e"
-contentUuid: "8877ed32-9a2a-5b1f-82d0-3c922bb3d465"
-diamondUuid: "12a2219c-798b-840e-b61c-453f9e508aa8"
-uuid: "ce33d37e-38c2-8fc5-959f-388cd05441e4"
-horo: 5
+coordinate: "vocabulary/damages · 8/crest · 7048c081"
+contentUuid: "7ad7e247-98b6-573c-8821-1701d51f1f93"
+diamondUuid: "889e1bcc-75b8-8160-9c9e-34ed36b280e3"
+uuid: "7048c081-43cf-846c-b323-1055a61551ab"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "77e11425-4e95-8ae0-b4a0-0d30e1d9b5c5"
+  computationUuid: "5f2ce48f-6571-8f77-8b07-3066b369de7a"
   stages:
     - stage: path
       stageUuid: "a5debd6b-ac59-8319-a4af-28c271c84dd2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4d6807b0-4d5b-8d6b-a7d4-37d5613e07c4"
     - stage: horo
-      stageUuid: "31eb92a4-88b2-8916-bba6-8216d65b1eb3"
+      stageUuid: "f201abed-e278-8c81-97ed-8ee2f8939662"
     - stage: seal
       stageUuid: "741f41bf-4bc6-8ac1-9dc6-b1bde01b3e19"
     - stage: uuid
-      stageUuid: "f604f674-3e5c-8930-aa6a-a95c4505a9d1"
+      stageUuid: "6d9a7d55-d1c0-898b-b51f-b245e0b8f9e9"
 version: 2
 ---
 # damages

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "defoundation",
-    "uuid": "f009c44b-7d17-84ef-9c93-20735235a8a4",
+    "uuid": "0d7f7d8b-8c63-8a11-b165-84383d625dee",
     "words": [
       "defoundation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about defoundation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "96918414-636d-87e0-8534-0322c48a2784",
+    "uuid": "bbf27a7c-072e-809f-9a4f-8937c064d697",
     "words": [
       "use",
       "when",

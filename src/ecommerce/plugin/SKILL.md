@@ -2,10 +2,10 @@
 name: plugin
 description: "Use when reasoning about plugin — wires the storefront to Stripe with per-tenant keys, so each tenant transacts under its own account and one tenant's credentials never authorise another's charge."
 atomPath: "ecommerce/plugin"
-coordinate: "ecommerce/plugin · 1/base · 0718ddda"
-contentUuid: "814b12b1-1f3e-5442-bc84-45eefaae1310"
-diamondUuid: "5afba6be-0e43-857e-93d9-44416de8d082"
-uuid: "0718ddda-17d1-8c47-be74-6d4e362f2ea9"
+coordinate: "ecommerce/plugin · 1/base · 8cf95042"
+contentUuid: "3fa63cea-e2c0-55a7-bbda-ec2fcbd013d9"
+diamondUuid: "f8e0249b-41e9-8a53-b635-8633804854de"
+uuid: "8cf95042-01fa-899c-aae8-5dd693667bfc"
 horo: 1
 typography:
   partition: ecommerce
@@ -26,7 +26,7 @@ standards:
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
 bindings: []
 signatures:
-  computationUuid: "155fa2f0-476f-8556-8008-2b1175d810b5"
+  computationUuid: "c0cc3e57-b596-8716-9b7f-9ddcac4265db"
   stages:
     - stage: path
       stageUuid: "58bcad0d-de0b-8954-b0bc-c5bfc966b4c1"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "bfc48bc4-e27f-80a0-a249-6fc7448fb5c0"
     - stage: horo
-      stageUuid: "b9501b35-e301-8659-8252-ca14d4adbdd3"
+      stageUuid: "56032343-e804-8442-9118-9a5d2cc5e42e"
     - stage: seal
       stageUuid: "42ce4c45-625e-8206-83a8-c69c70cba163"
     - stage: uuid
-      stageUuid: "c66db59d-fb6c-88d8-a8e5-3d85956da51b"
+      stageUuid: "c3c3d0f1-ec5c-84dd-bb45-aa350c44e9b0"
 version: 2
 ---
 # ecommerce/plugin — the card never reaches this system

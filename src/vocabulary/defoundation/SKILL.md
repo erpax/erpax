@@ -2,11 +2,11 @@
 name: defoundation
 description: "Use when reasoning about defoundation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/defoundation"
-coordinate: "vocabulary/defoundation · 5/round · 6faf60ff"
-contentUuid: "46f7f154-5252-5a2c-9aa6-7a3068042d5a"
-diamondUuid: "16eb5e3f-c6ff-8966-aa29-e01f0eb8429e"
-uuid: "6faf60ff-5d61-81d7-9a42-02679cca0059"
-horo: 5
+coordinate: "vocabulary/defoundation · 1/base · f009c44b"
+contentUuid: "b957983b-c541-5655-8aec-5c62343d4c58"
+diamondUuid: "bdc1f9f3-e445-8c47-8127-c03c7f40f3cd"
+uuid: "f009c44b-7d17-84ef-9c93-20735235a8a4"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "66ccc7a2-4200-88c1-84f0-2c20253e1fbb"
+  computationUuid: "6d414670-1f69-8fa4-b50d-3c3cc1af8e4b"
   stages:
     - stage: path
       stageUuid: "fa458661-f63f-877f-8c0a-ee78bfe3b90f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "77525980-dd83-858d-a53d-01132e0f5cce"
     - stage: horo
-      stageUuid: "b1a36450-2d95-8f42-84c5-62d53f252e53"
+      stageUuid: "5474c87c-c70c-8a1a-9c81-1d7f183b122a"
     - stage: seal
       stageUuid: "e2e1c459-d3d0-80e9-985c-7d4e8097c34f"
     - stage: uuid
-      stageUuid: "440fe259-957e-8788-a0a9-5347a8879c5e"
+      stageUuid: "f072ab44-2cae-801d-a9c6-a5ef427da0df"
 version: 2
 ---
 # defoundation

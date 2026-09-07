@@ -2,11 +2,11 @@
 name: navigation
 description: "Use when reasoning about navigation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: navigation
-coordinate: "navigation · 1/base · ee3f822f"
-contentUuid: "40f2052d-1116-5fae-9180-4e9229d94f92"
-diamondUuid: "6d1a68db-ab41-819a-adcf-a7511715f412"
-uuid: "ee3f822f-2c1c-893d-8084-6842e99764cc"
-horo: 1
+coordinate: "navigation · 8/crest · 0fd438bd"
+contentUuid: "770666fd-dcbd-5589-a657-daf96f7a3a80"
+diamondUuid: "ee39f3d1-6982-8927-b2b6-8ffd39d69962"
+uuid: "0fd438bd-9c21-819a-ac66-33b5fe6efb86"
+horo: 8
 typography:
   partition: navigation
   bondDegree: 62
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6243df8a-5657-8bf3-bf83-870630e2d37d"
+  computationUuid: "02f5f66b-dc3b-824e-93cc-9910a660e528"
   stages:
     - stage: path
       stageUuid: "88b4b1d3-663f-8f37-860f-f3a6fd284517"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a7fb9708-2632-8433-8886-2fe4a9178a72"
     - stage: horo
-      stageUuid: "69477ff7-1ff4-8c88-b723-c3c9c3d2d82f"
+      stageUuid: "c822b74d-7e66-8fee-9875-85d394e08c7c"
     - stage: seal
       stageUuid: "d093409a-f16e-88e2-ab80-1823007a15b3"
     - stage: uuid
-      stageUuid: "26d2bc2e-fd34-816a-83fe-86cb37309e54"
+      stageUuid: "bd703914-f462-84ee-91d4-5ba5ccf75bca"
 version: 2
 ---
 # navigation

@@ -2,11 +2,11 @@
 name: marketplace
 description: "Use when reasoning about marketplace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/marketplace"
-coordinate: "vocabulary/marketplace · 2/share · 47e20faf"
-contentUuid: "f7acf465-926f-580e-b31c-f0015f5378be"
-diamondUuid: "40c5e9e7-dd20-8296-bd87-7c3993d2d35d"
-uuid: "47e20faf-786c-8abf-b860-2acd774d8812"
-horo: 2
+coordinate: "vocabulary/marketplace · 8/crest · a299e9a7"
+contentUuid: "12d9dc0a-bb2c-5fc3-a5db-a63e7680b439"
+diamondUuid: "c0bf4480-baa9-83d4-b81e-dcb78c30c5b0"
+uuid: "a299e9a7-15f7-87de-9da1-740aac000fc0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3a1ad14d-076e-824f-8692-9fbb38910898"
+  computationUuid: "18fa95b6-199b-8d44-9c8f-77b74f9e44fc"
   stages:
     - stage: path
       stageUuid: "0f30cc69-3678-80fb-9582-6031cced3909"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d5599c56-f2ae-8b11-90d5-c2d750d25508"
     - stage: horo
-      stageUuid: "70e240f9-f888-8388-96c7-9bb5bea4c16c"
+      stageUuid: "28f3553e-5c5a-8dc6-9600-d2c433b72112"
     - stage: seal
       stageUuid: "a12ed750-bdd8-80ba-8f95-7be484e62e32"
     - stage: uuid
-      stageUuid: "f363043d-4538-807d-b39d-bc9ddf7a2cc4"
+      stageUuid: "5bf74f25-72d1-82b5-81d3-0cdafb0478ba"
 version: 2
 ---
 # marketplace

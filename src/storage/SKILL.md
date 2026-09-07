@@ -2,11 +2,11 @@
 name: storage
 description: "Use when reasoning about storage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: storage
-coordinate: "storage · 5/round · e150f361"
-contentUuid: "c1a0fa28-483d-5e90-b6c5-1c6555188502"
-diamondUuid: "fec8548b-b129-86f7-a8b3-c8e59ecae48e"
-uuid: "e150f361-21f8-822b-91c1-f70e557ee07a"
-horo: 5
+coordinate: "storage · 8/crest · a83e6057"
+contentUuid: "1dc1292b-1b63-5df1-b7a8-2d8097a9822d"
+diamondUuid: "0561c26a-f029-846f-bee1-98794f9d7ccf"
+uuid: "a83e6057-7db2-87e2-888e-44f5ce21c145"
+horo: 8
 typography:
   partition: storage
   bondDegree: 36
@@ -18,7 +18,7 @@ bindings:
   - "r2_buckets/NEXT_INC_CACHE_R2_BUCKET"
   - "r2_buckets/R2"
 signatures:
-  computationUuid: "c6b870bb-452e-8eee-82d7-9ee5cbf94964"
+  computationUuid: "7b0f20a6-fd67-80ac-9ae6-5b3f6fbd3294"
   stages:
     - stage: path
       stageUuid: "eba06007-f92e-8303-980e-d88beade93b9"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "58a22a30-5820-8d1c-a912-05e62f38ddf8"
     - stage: horo
-      stageUuid: "21bbb30c-da55-8c59-9da2-95cb2991ef69"
+      stageUuid: "be0d563f-ff37-8f12-be1a-d1421019852d"
     - stage: seal
       stageUuid: "e0c4747e-7ab6-8e10-9e56-f7f50dc2cbae"
     - stage: uuid
-      stageUuid: "c5e220b5-7139-8d1e-9f50-b809c14969c9"
+      stageUuid: "684e7a33-2393-8f07-9b1f-d21809680866"
 version: 2
 ---
 # storage

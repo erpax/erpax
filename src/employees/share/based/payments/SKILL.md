@@ -2,10 +2,10 @@
 name: payments
 description: "Use when recording employee equity grants — stock options, RSUs, RSAs, PSUs, ESPP, SARs — under IFRS 2, tracking equity-settled vs cash-settled treatment, vesting tranches with service/performance/market conditions, cumulative expense recognition, exercises and forfeitures. The IFRS 2 share-based-payment grant register."
 atomPath: "employees/share/based/payments"
-coordinate: "employees/share/based/payments · 5/round · 6b561712"
-contentUuid: "81ba02bb-896b-5db6-93c4-640422ab86b4"
-diamondUuid: "59a8cca0-d7a0-8dfd-9bf9-89f29f8756df"
-uuid: "6b561712-9fab-8c91-99ec-d900932b8f6b"
+coordinate: "employees/share/based/payments · 5/round · c376fae8"
+contentUuid: "d5ee840d-2780-558f-b252-fb32e32d43f4"
+diamondUuid: "65af6889-d6c9-899e-9ce4-4cdbcfdd24a1"
+uuid: "c376fae8-f13b-84fd-869c-1e8d5c2e2240"
 horo: 5
 typography:
   partition: employees
@@ -30,7 +30,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "284cb46f-7c0a-82aa-83fd-0ccbf4f74b9c"
+  computationUuid: "011c23fb-1572-874b-98e2-ec4afabef8ae"
   stages:
     - stage: path
       stageUuid: "b5564dbb-e5b4-8543-a762-cf24c4531a33"
@@ -41,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "3056a3ce-5e46-8ac2-9702-961c64a5be1f"
     - stage: horo
-      stageUuid: "e49790db-1c67-8f3b-9322-be1119620f8d"
+      stageUuid: "455e3919-a837-83c1-ad98-39f45a43fc59"
     - stage: seal
       stageUuid: "b44c8410-4853-8778-8956-5de437407bf0"
     - stage: uuid
-      stageUuid: "6743570e-64b7-84c2-9d4e-24b71b003d9d"
+      stageUuid: "516070bd-3f21-81b1-8e4c-5155c2b733a5"
 version: 2
 ---
 # share-based-payments

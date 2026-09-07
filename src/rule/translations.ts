@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rule",
-    "uuid": "07ad4f92-555f-81a1-8c2b-08aaedbc1578",
+    "uuid": "5e3fa7dd-fe16-804f-91cc-574e429f8dc1",
     "words": [
       "rule"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one rule — the singular model of the rules collection (the plural store); a condition-action statement the system enforces.",
-    "uuid": "4e58fe67-e2e5-862e-ba84-03e565a21d4b",
+    "uuid": "c4322795-5eec-8de5-a863-9f8d06dd9d99",
     "words": [
       "use",
       "when",

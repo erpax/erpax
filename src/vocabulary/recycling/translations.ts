@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recycling",
-    "uuid": "72ace2be-f510-81a3-93ff-32e142dedc6e",
+    "uuid": "d33e9bde-400f-88a8-b82f-3acda81060f6",
     "words": [
       "recycling"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about recycling — A schema.org component word, collided out of schema.org compounds — fused from RecyclingCenter (sti · collapse · merge).",
-    "uuid": "4dce7429-84f4-856d-a868-eb4a41428b65",
+    "uuid": "c2b54768-cde9-83f7-93d3-8c9ca559614d",
     "words": [
       "use",
       "when",

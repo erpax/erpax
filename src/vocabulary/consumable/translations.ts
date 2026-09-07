@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consumable",
-    "uuid": "c8787131-2691-81af-bfa8-d44660991e4d",
+    "uuid": "312d866f-ad1a-87d1-ad82-9d84cc3bce26",
     "words": [
       "consumable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about consumable — A pointer to another product (or multiple products) for which this product is a consumable.",
-    "uuid": "29dd664f-7e8f-8dd6-9bdf-f55c28fa6531",
+    "uuid": "481648fe-4d81-8ff8-a8cc-6eda397f1c20",
     "words": [
       "use",
       "when",

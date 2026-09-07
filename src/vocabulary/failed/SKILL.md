@@ -2,10 +2,10 @@
 name: failed
 description: "Use when reasoning about failed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/failed"
-coordinate: "vocabulary/failed · 2/share · 765991a3"
-contentUuid: "18e01da1-e3a7-56ea-8f1e-63415f63c8fd"
-diamondUuid: "3dd3ecf5-8ddd-8916-a413-62ae5d875b3b"
-uuid: "765991a3-eb96-8356-805d-ca9f24502d85"
+coordinate: "vocabulary/failed · 2/share · e44d2fb3"
+contentUuid: "ee4c217d-988b-5364-a615-a7bfc0feedc5"
+diamondUuid: "43a116be-1f13-8246-b250-aa29c8070519"
+uuid: "e44d2fb3-cd3d-89ff-8ab6-14739ca24c69"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a65f3b34-9cbd-85b6-9746-8942b0d7a6c4"
+  computationUuid: "a4f66d68-ca34-8161-a300-240e8e32a1fa"
   stages:
     - stage: path
       stageUuid: "20778995-3336-83a7-b32d-e35cbec9490d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "47f3faa2-c92d-8f5c-8cdb-2d475c54c7c3"
     - stage: horo
-      stageUuid: "1d62d462-71cb-83e6-bc40-eafe088c6318"
+      stageUuid: "ff42958b-1989-8a88-a6c9-95728966cb28"
     - stage: seal
       stageUuid: "5135e97f-a1ec-8258-b08e-01bf37b22f3f"
     - stage: uuid
-      stageUuid: "89be5ed8-1ae7-8358-921d-fba21ba18990"
+      stageUuid: "d40d714e-8ee0-8737-9595-8a08f7a1a961"
 version: 2
 ---
 # failed

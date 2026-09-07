@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "notary",
-    "uuid": "1cd1d5d5-4351-8318-ab22-d7bdda19990c",
+    "uuid": "0a2fdc98-1ad7-8723-b6ef-b8fbad7de4dc",
     "words": [
       "notary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a fact must be given public faith — recorded in a bound chronological register, timestamped, sealed tamper-evident, and made presumptively authentic. The legal notarial act modelled on erpax primitives: the seal is a content-uuid, the protocol is an append-only hash-chain, authenticity is an inclusion proof; the honest boundary is that real legal force needs a commissioned notary or an eIDAS/RFC-3161 trust service.",
-    "uuid": "7fc694e9-dc4f-8528-a9a2-990e191a75a1",
+    "uuid": "59c236df-f354-853a-8a35-c442b1d5f44a",
     "words": [
       "use",
       "when",

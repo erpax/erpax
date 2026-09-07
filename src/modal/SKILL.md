@@ -2,11 +2,11 @@
 name: modal
 description: "Use when reasoning about modal — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: modal
-coordinate: "modal · 1/base · 9112c3be"
-contentUuid: "da0bcfbd-4970-5fd2-abaf-da308df5d1c7"
-diamondUuid: "ce6c4aa8-2418-850d-928d-4069ab0d5369"
-uuid: "9112c3be-4a11-8b22-a29c-1ae4cf0476f3"
-horo: 1
+coordinate: "modal · 4/weave · 19e008ea"
+contentUuid: "92b941d4-ee01-56b1-a559-1ff2f34446c9"
+diamondUuid: "a5d41f09-258b-8500-8e85-1788512f87ba"
+uuid: "19e008ea-ea87-8836-89a0-4ac60ced0234"
+horo: 4
 typography:
   partition: modal
   bondDegree: 3
@@ -14,7 +14,7 @@ standards:
   - "ECMA-262"
 bindings: []
 signatures:
-  computationUuid: "692ef067-42b6-813c-8e62-bdc87b5a3e13"
+  computationUuid: "d4bf4bcb-8c57-8eb0-a0eb-779fe6e7de1a"
   stages:
     - stage: path
       stageUuid: "fff78956-ab6f-865a-a4e9-800355e977f4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c5403ec7-73b8-83ad-9861-ee0bfddef5f1"
     - stage: horo
-      stageUuid: "01facb3d-4bca-8a5b-bfed-8d3d656cf13c"
+      stageUuid: "0e9249ec-cf03-8007-a72a-84ab15237324"
     - stage: seal
       stageUuid: "ac61b83c-934b-8b23-a65d-37a8bdc71668"
     - stage: uuid
-      stageUuid: "df421128-8071-80df-84f7-68f50e78a4b2"
+      stageUuid: "785e198a-dca3-8296-b955-db7a55dac3e8"
 version: 2
 ---
 # modal

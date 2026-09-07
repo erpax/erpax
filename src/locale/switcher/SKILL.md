@@ -2,18 +2,18 @@
 name: switcher
 description: "Use when reasoning about switcher — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: "locale/switcher"
-coordinate: "locale/switcher · 1/base · 1f66fd43"
-contentUuid: "b5a2e06c-362a-5ff1-9a41-87e417c68048"
-diamondUuid: "dda04ee6-3fe5-8227-acf3-abf329c059e7"
-uuid: "1f66fd43-e48b-8384-ba76-559caf408a3b"
-horo: 1
+coordinate: "locale/switcher · 5/round · 5831c328"
+contentUuid: "eb0fe9c0-b48b-5147-a0b3-3ca647060dfc"
+diamondUuid: "a6181c94-9dee-87ce-a74f-466fc13c749f"
+uuid: "5831c328-916b-8246-8b6e-51c4d3fa5aea"
+horo: 5
 typography:
   partition: locale
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1b363bf3-3c03-8205-af15-a62706b08e23"
+  computationUuid: "057d6e3d-f60f-8368-8e98-4ab7f2b14fdf"
   stages:
     - stage: path
       stageUuid: "1553062a-2ee9-8d40-bcde-195c818280fd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b6b5d742-107c-8513-82f1-8871d4e932f4"
     - stage: horo
-      stageUuid: "72687925-8898-8649-bfb8-e56b63d06989"
+      stageUuid: "1901601a-eb95-872e-b32d-1a8ff262431d"
     - stage: seal
       stageUuid: "ab110f81-b026-82a6-87ea-21a6550a99f9"
     - stage: uuid
-      stageUuid: "31e16248-0a00-8ebe-a5b5-38aacf680d59"
+      stageUuid: "d78e6142-f638-814a-aab5-2ea14482c18c"
 version: 2
 ---
 # switcher

@@ -2,10 +2,10 @@
 name: differential
 description: "Use when reasoning about differential — A schema.org component word, collided out of schema.org compounds — fused from differentialDiagnosis (sti · collapse · merge)."
 atomPath: "vocabulary/differential"
-coordinate: "vocabulary/differential · 7/descent · 5503bf20"
-contentUuid: "fd1b0464-353a-5a4d-a079-ca191dd86356"
-diamondUuid: "6806683d-826e-852b-8560-01a38c0f8b83"
-uuid: "5503bf20-3fc3-80a3-a846-3306fec113ff"
+coordinate: "vocabulary/differential · 7/descent · 336426d8"
+contentUuid: "7f87e918-5006-5f67-b3fd-27337fd54b0f"
+diamondUuid: "a1ad6c56-9a27-82ce-b882-ef7074ad29e5"
+uuid: "336426d8-c602-8b84-b729-aa1865b1b34d"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2ab435e4-b72a-8565-8510-16e304573401"
+  computationUuid: "c899f448-6528-8dda-86c0-e9d9a8ab7e7c"
   stages:
     - stage: path
       stageUuid: "9503062c-1563-8b6d-817e-de05a6a58394"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d7c03922-5047-87ac-a1bd-6f32b9a17ecd"
     - stage: horo
-      stageUuid: "5e0c9637-bad6-8a65-b89c-4bfc7c4aaae9"
+      stageUuid: "1ace770c-8b4c-8a5d-b9f7-e62f9ea534a9"
     - stage: seal
       stageUuid: "af735a1d-f0c2-8705-914c-d383c0250e0d"
     - stage: uuid
-      stageUuid: "a5ed3065-0d8c-8698-99c1-362067b80a7a"
+      stageUuid: "29158398-4a3b-822f-a6a2-c51bc8cc11ec"
 version: 2
 ---
 # differential

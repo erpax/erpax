@@ -2,11 +2,11 @@
 name: composite
 description: "Use when reasoning about composite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/composite"
-coordinate: "vocabulary/composite · 1/base · 8e25832f"
-contentUuid: "b1b55a02-1a68-515e-a75b-b4cbb509448d"
-diamondUuid: "e9c4739f-3b9f-8c21-8169-0ad0d739007e"
-uuid: "8e25832f-a739-84eb-916a-339b6b664bb7"
-horo: 1
+coordinate: "vocabulary/composite · 4/weave · d74a443a"
+contentUuid: "3d410802-8590-5cd7-8f27-c3e966dc0ef1"
+diamondUuid: "f1dbfa3b-ff45-86da-aa88-4f3449ee9180"
+uuid: "d74a443a-c8a6-8a7e-9324-57c5b37457be"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ba73676f-68cc-8694-9e2d-e3cba2c9110b"
+  computationUuid: "e61b9ee0-67fc-842f-973a-77de5574f50c"
   stages:
     - stage: path
       stageUuid: "fb48db0b-3346-8016-b411-bf3f255462f8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5c88ebb8-9e3d-88d5-a666-89aec7e3b334"
     - stage: horo
-      stageUuid: "972306d5-177e-8e1b-b047-7c946b82e76e"
+      stageUuid: "cc9b8b25-c481-83eb-93ec-3d9288ad80a2"
     - stage: seal
       stageUuid: "ddf3e234-2a0a-8bd7-bf3a-2d4508885d20"
     - stage: uuid
-      stageUuid: "5d4ec9c0-cd6f-8941-bb11-def4a5b2ad6f"
+      stageUuid: "00c7fac1-0efe-8117-8c71-bfee471b8a20"
 version: 2
 ---
 # composite

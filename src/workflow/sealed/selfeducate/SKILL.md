@@ -2,18 +2,18 @@
 name: selfeducate
 description: "Use when reasoning about selfeducate — Sealed self-educate workflow definition (scan, wave, seal)."
 atomPath: "workflow/sealed/selfeducate"
-coordinate: "workflow/sealed/selfeducate · 2/share · 1ec049af"
-contentUuid: "e7b7c28d-be75-53b8-b796-59efef464c81"
-diamondUuid: "3f06d5d6-54df-83c9-88d3-78aa0a6cf6c8"
-uuid: "1ec049af-7b2b-83e9-b091-26af918fe0d3"
-horo: 2
+coordinate: "workflow/sealed/selfeducate · 7/descent · 8c36c18b"
+contentUuid: "baaffcbf-6515-5b53-94fd-15aa5c22fde1"
+diamondUuid: "335e5602-6a07-8e91-b2c5-6b062ee845bc"
+uuid: "8c36c18b-98d8-8272-a19e-1d508b78fa65"
+horo: 7
 typography:
   partition: workflow
   bondDegree: 0
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9159ab00-4441-803c-88df-0c8b8f3d2a3e"
+  computationUuid: "96ec67e3-92d3-8e07-8675-5a15641a5cb8"
   stages:
     - stage: path
       stageUuid: "3a65a0ae-9984-89a2-a883-229723354f00"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "43eabc42-44a2-89c3-aba5-d19bef0cec7e"
     - stage: horo
-      stageUuid: "bf117733-ba8e-8e1e-ac6e-41db14c369a5"
+      stageUuid: "3be39693-9003-8a95-b82f-a6cc008d7717"
     - stage: seal
       stageUuid: "b5b312d4-cad7-8dfe-b0d3-f3f1da4822e9"
     - stage: uuid
-      stageUuid: "ceee11e4-cc55-8974-8258-8c285c242f04"
+      stageUuid: "844d32ca-2aea-801a-a799-9472d72cd06b"
 version: 2
 ---
 # workflow/sealed/selfeducate

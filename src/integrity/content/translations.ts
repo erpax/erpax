@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "content",
-    "uuid": "906fac85-c0b0-899d-80b9-62085b2e7499",
+    "uuid": "e2403d2c-f6c9-858b-a79b-81b953c3e50f",
     "words": [
       "content"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing or verifying a content-uuid — computeContentUuid, verifyContentUuid, jcsCanonicalize, nameUuid and stripNonContentFields. Promoted from a stray content-uuid.ts at the integrity root to a one-word sub-atom whose only imports are node:crypto and @/uuid/format, which is what makes @/integrity/content a lawful cut point: storage/independence took computeContentUuid from the @/integrity barrel and inherited the corpus's largest import component with it.",
-    "uuid": "6c29b931-095c-8164-9eb7-5859b1b00247",
+    "uuid": "d4c96c83-1212-86f4-b745-12972ad822d4",
     "words": [
       "use",
       "when",

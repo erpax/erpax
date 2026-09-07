@@ -2,10 +2,10 @@
 name: numeric
 description: "Use when reasoning about numeric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/numeric"
-coordinate: "vocabulary/numeric · 2/share · 848ec75d"
-contentUuid: "d6a43082-b0b3-5917-ac4f-d6cbbd8a0fa9"
-diamondUuid: "d4bd541d-fec3-8468-aeef-0318ae858360"
-uuid: "848ec75d-ad38-84cf-bb07-93023599423a"
+coordinate: "vocabulary/numeric · 2/share · c34ef202"
+contentUuid: "bcb88c68-451e-560a-9aba-66feec8aa171"
+diamondUuid: "aab07492-24fb-844e-bc1c-4929b3704d1d"
+uuid: "c34ef202-6778-812a-9800-33928d28aa6a"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "752ec08c-6488-8f10-8e2f-684ef86c3e33"
+  computationUuid: "9dbf6087-4baf-861e-9d68-06db435aae4f"
   stages:
     - stage: path
       stageUuid: "a3d93a76-230d-8c79-98b3-e05fbb44edbc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6a2c82f8-7141-889a-947c-9da0d0085396"
     - stage: horo
-      stageUuid: "f14048b2-ba73-86f8-809a-4f39a95c6ebc"
+      stageUuid: "e01f1286-b3f4-83c9-b828-43ec51a4c423"
     - stage: seal
       stageUuid: "44b58191-d01a-8cd1-a7b5-b56bbe2ba9b4"
     - stage: uuid
-      stageUuid: "eaccb4cb-6fc6-85e4-8f0c-4db1703cb7b5"
+      stageUuid: "8db676d1-1977-8680-977e-897c7e728162"
 version: 2
 ---
 # numeric

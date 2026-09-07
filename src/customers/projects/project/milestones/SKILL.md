@@ -2,11 +2,11 @@
 name: milestones
 description: "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project."
 atomPath: "customers/projects/project/milestones"
-coordinate: "customers/projects/project/milestones · 5/round · 85776cc6"
-contentUuid: "4a1a4ee0-18fa-595e-8912-4c472bb04c8f"
-diamondUuid: "20c092ee-eff3-8611-aecd-0460604c2bdd"
-uuid: "85776cc6-c51f-8c95-8b2f-caddaccdba62"
-horo: 5
+coordinate: "customers/projects/project/milestones · 8/crest · ae444a4d"
+contentUuid: "8f14eab1-2b25-51c9-9d57-1d4395b823db"
+diamondUuid: "ad7b6a0f-d268-8f8b-9ad5-50cbdfdbc523"
+uuid: "ae444a4d-f1e1-820d-81f5-8de26a80250b"
+horo: 8
 typography:
   partition: customers
   bondDegree: 36
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b13697c7-4510-86e9-9327-6d23009b02ee"
+  computationUuid: "2be0e6d8-259c-8968-aac7-c72c23077719"
   stages:
     - stage: path
       stageUuid: "bdab54e2-97ee-8ee5-ad3d-05b2c6a88bdb"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "74caf248-0b5e-8279-9a65-e4f768080a51"
     - stage: horo
-      stageUuid: "c0cb85c9-1a2f-828c-9533-163750507a0b"
+      stageUuid: "f83e92d8-a261-8e09-9fa8-aac998936937"
     - stage: seal
       stageUuid: "1f65602e-51ed-87e6-bd2c-848f454d26c2"
     - stage: uuid
-      stageUuid: "4ff14775-b86f-8d5c-9b89-c244f847529a"
+      stageUuid: "fb966d7a-5fe2-85e2-9789-0a600452d543"
 version: 2
 ---
 # project-milestones

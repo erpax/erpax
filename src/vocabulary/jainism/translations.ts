@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "jainism",
-    "uuid": "2a95cd97-d404-865d-975a-267df2870dc4",
+    "uuid": "69c9a7ff-07d5-858e-8eea-4c56c7ec6881",
     "words": [
       "jainism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Jainism as a diamond of invariant atoms — non-harm absolute, the soul weighed down by karma as literal matter and unburdened by austerity, non-possession, the many-sided view of truth. Strip the Prakrit/Sanskrit prefix and ahimsa, jiva, moksha collapse to mercy, self, zeropoint — one content-uuid each.",
-    "uuid": "9e221423-09cf-851e-8262-3b8201e29c02",
+    "uuid": "a4d25d14-d052-8b71-9e33-3793eb9aff0a",
     "words": [
       "use",
       "when",

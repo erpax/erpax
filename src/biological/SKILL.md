@@ -2,11 +2,11 @@
 name: biological
 description: "Use when reasoning about biological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: biological
-coordinate: "biological · 7/descent · aba8f603"
-contentUuid: "19006737-bf39-5420-81d2-3d9aa27cb82a"
-diamondUuid: "5768fcac-ea7b-8a44-9415-7d37c0208c79"
-uuid: "aba8f603-8533-8bb3-aec8-5b4d457c31c8"
-horo: 7
+coordinate: "biological · 2/share · efc7fbf5"
+contentUuid: "19b35ace-4874-5617-8e2b-394f6898a180"
+diamondUuid: "3593e22a-5762-8fab-a2d5-e04fbda7dbb5"
+uuid: "efc7fbf5-8dbe-80cf-ab00-dcdea41b18f9"
+horo: 2
 typography:
   partition: biological
   bondDegree: 24
@@ -16,7 +16,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9060b9f9-6f0d-84ac-8fac-682b6555537b"
+  computationUuid: "a1297a1f-aea3-813b-8385-babafe97f8be"
   stages:
     - stage: path
       stageUuid: "6bf03bbe-9d87-8680-9b3e-3fe24f05fd24"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "7a0becd4-2025-8c17-aac5-3182bfb15b22"
     - stage: horo
-      stageUuid: "ddb0da0c-6d42-8574-86f1-ed13b9f79445"
+      stageUuid: "23aa03cb-207b-8c07-b11c-dec7160ad0df"
     - stage: seal
       stageUuid: "d57360fb-95fa-8e37-bd21-da531b908d8b"
     - stage: uuid
-      stageUuid: "6ab1eeb4-b01c-8cb7-99ca-c63107ba07f2"
+      stageUuid: "dd4dd3f2-c07b-83d1-b687-373a21fdbab5"
 version: 2
 ---
 # biological

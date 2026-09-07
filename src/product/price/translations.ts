@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "price",
-    "uuid": "d796b052-7dd1-8ad1-80b0-cfc49b2ddc7e",
+    "uuid": "db3cef31-ef2f-81e6-8204-edf72c1e1770",
     "words": [
       "price"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about price — The ecommerce plugin generates one column per supported currency. resolves the right one for the requested currency and renders it, so application code never names and never…",
-    "uuid": "dd3c8c2e-a8ad-8549-abae-136bbea28132",
+    "uuid": "220e57ad-03ae-8c9b-b3c5-f67c9ea6ba04",
     "words": [
       "use",
       "when",

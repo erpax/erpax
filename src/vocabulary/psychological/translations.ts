@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "psychological",
-    "uuid": "c6bba923-f0d5-8322-b8ee-d63a4d85d6ea",
+    "uuid": "68f6d8e3-0b44-82c2-b010-6c74e41dc01a",
     "words": [
       "psychological"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about psychological — A schema.org component word, collided out of schema.org compounds — fused from PsychologicalTreatment (sti · collapse · merge).",
-    "uuid": "89db40d6-1a1d-8bf0-98e8-082f9db4abd2",
+    "uuid": "3d68f2f1-dbeb-8d3b-a0b9-5eeeddd8cf3b",
     "words": [
       "use",
       "when",

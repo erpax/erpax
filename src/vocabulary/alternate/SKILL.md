@@ -2,11 +2,11 @@
 name: alternate
 description: "Use when reasoning about alternate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/alternate"
-coordinate: "vocabulary/alternate · 7/descent · fd3a6a72"
-contentUuid: "12629756-a2f0-5add-9f67-5c53536a372c"
-diamondUuid: "d66802cb-1b87-8cc1-998b-4f3ad2bce6a3"
-uuid: "fd3a6a72-5967-8827-b1ce-adabd4f68b9e"
-horo: 7
+coordinate: "vocabulary/alternate · 4/weave · 2db90770"
+contentUuid: "e2d40854-97f4-59c0-852c-db8a509b8f22"
+diamondUuid: "a3e81d28-9a94-861b-89e0-fa4687ee5e8f"
+uuid: "2db90770-3973-8d1c-832b-b64851197a30"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "adec25de-d655-8854-8e18-1e55b5ca7e7a"
+  computationUuid: "906000d0-ff46-8692-b95c-b33e3396e4f9"
   stages:
     - stage: path
       stageUuid: "c2720e3b-263d-85ef-8a26-f77b0b359204"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "359882c5-bf9e-8a79-b5dd-495d703b8e0e"
     - stage: horo
-      stageUuid: "8b0525ce-41ae-81bd-b2a1-2814d2c6325e"
+      stageUuid: "1aabfde8-ab42-8343-aae3-06edc6ef964c"
     - stage: seal
       stageUuid: "0483b69f-bc78-871e-8a7e-6abfc37b2b37"
     - stage: uuid
-      stageUuid: "1d3aac99-09d4-88da-aee3-8b936a30f257"
+      stageUuid: "e24644ac-97bc-826d-b89c-667b9bf3ae12"
 version: 2
 ---
 # alternate

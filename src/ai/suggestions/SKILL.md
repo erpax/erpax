@@ -2,11 +2,11 @@
 name: suggestions
 description: "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection."
 atomPath: "ai/suggestions"
-coordinate: "ai/suggestions · 1/base · bf6eab07"
-contentUuid: "069f28e3-981a-585e-810c-79623d880751"
-diamondUuid: "be31094e-ac5e-8dda-9659-a0549018199d"
-uuid: "bf6eab07-195b-8e8f-8fbd-61e71c990823"
-horo: 1
+coordinate: "ai/suggestions · 5/round · bda8227b"
+contentUuid: "b612c874-0d5e-557e-8de0-97eed54db0fb"
+diamondUuid: "d7965fb2-7372-89e6-8739-b3d6601168ba"
+uuid: "bda8227b-5922-8a90-b9f5-f1e6cd6b6780"
+horo: 5
 typography:
   partition: ai
   bondDegree: 24
@@ -34,7 +34,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "6de70bf6-343b-8879-8573-b12fe7f12198"
+  computationUuid: "70019ef9-9a90-88f5-bb60-e42e1c673419"
   stages:
     - stage: path
       stageUuid: "3c06436e-b3fb-8511-a3a0-62d905fcab0b"
@@ -45,11 +45,11 @@ signatures:
     - stage: links
       stageUuid: "ca14180c-045f-8e6c-904b-e270b3d207a0"
     - stage: horo
-      stageUuid: "9d7bb94d-57ad-817f-8dd1-de04fc9928ae"
+      stageUuid: "34e3557a-f487-8335-8d79-562531a9889e"
     - stage: seal
       stageUuid: "ae0af0cd-2dc4-8a12-9711-71b9604b1a35"
     - stage: uuid
-      stageUuid: "94791a7b-d426-853a-a70d-2def3bb86339"
+      stageUuid: "041cf860-6fac-82dd-a016-5568e6086f4c"
 version: 2
 ---
 # ai-suggestions

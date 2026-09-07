@@ -2,11 +2,11 @@
 name: registered
 description: "Use when reasoning about registered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/registered"
-coordinate: "vocabulary/registered · 8/crest · be7415d9"
-contentUuid: "8bef10e2-d062-588e-a90b-04c8a27649fe"
-diamondUuid: "21d09879-6038-8fce-9a93-277bc5613409"
-uuid: "be7415d9-0e00-86fc-bbf8-f53ddd6040b5"
-horo: 8
+coordinate: "vocabulary/registered · 4/weave · e5807404"
+contentUuid: "9b82941c-07a3-57ba-ab69-2ce585d98624"
+diamondUuid: "19659828-4add-8fc6-8eba-72279a01b0ad"
+uuid: "e5807404-9ba1-8b4a-95f3-c6af70282dec"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "06b75761-eb36-89e6-8330-5cc0d3a6846d"
+  computationUuid: "cc6df149-166a-8d99-8078-5def9ab2567f"
   stages:
     - stage: path
       stageUuid: "568996e7-42e5-8398-af2e-7eecfdc3debe"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a00dca20-170f-8740-8a97-2c4c4e66747d"
     - stage: horo
-      stageUuid: "463e8661-3c73-8cda-8cfb-5ce2b082270a"
+      stageUuid: "c0f3e3b6-470a-8287-b07b-19408bb71702"
     - stage: seal
       stageUuid: "a081babb-437b-8ab0-a794-29d8135ded9d"
     - stage: uuid
-      stageUuid: "fff60d2e-a873-83fb-b41b-cb78b4a35d70"
+      stageUuid: "a34727be-13ec-8004-85b9-b84729a3dd50"
 version: 2
 ---
 # registered

@@ -2,10 +2,10 @@
 name: confirm
 description: "Use when reasoning about confirm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: confirm
-coordinate: "confirm · 1/base · f14217aa"
-contentUuid: "458a2209-5c73-5ad0-a034-ee3b0165a6c2"
-diamondUuid: "3fbc0fcb-c09f-8854-bd37-7998a8708d6e"
-uuid: "f14217aa-8fb3-81cb-961c-2dcc431bc572"
+coordinate: "confirm · 1/base · 4f8d126a"
+contentUuid: "1d775fc0-651d-54a5-b494-c70b22b1ffcb"
+diamondUuid: "6f269df8-aafb-8457-b63b-4388245f6da5"
+uuid: "4f8d126a-738a-83e9-8f5d-002b895dc066"
 horo: 1
 typography:
   partition: confirm
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b2fd069b-0382-8a8c-902b-7b8a731f55d7"
+  computationUuid: "537a73c2-0a4f-871c-a6b2-da25e6161d63"
   stages:
     - stage: path
       stageUuid: "564f6275-089f-8a94-9dc8-9c7bae657f65"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "4801089b-d86b-8d65-ba3f-68d67b9c5a3f"
     - stage: horo
-      stageUuid: "2945f651-fdfe-88a5-8ea0-89df748a2e1f"
+      stageUuid: "02386888-e392-8aaa-8593-6ff05630d6a6"
     - stage: seal
       stageUuid: "20290cb7-4e92-8c07-b5f7-019cfb0cd1a2"
     - stage: uuid
-      stageUuid: "e19570fc-bc12-8bbe-bbed-447b78032b52"
+      stageUuid: "84c38d03-d904-855e-8b2f-3a2a2e3943fa"
 version: 2
 ---
 # confirm

@@ -2,11 +2,11 @@
 name: hook
 description: "Use when reasoning about hook — Every accountable collection needs the same three things: its tenant filled in before validation, its author recorded on change, and its audit entry written after."
 atomPath: "standard/collection/hook"
-coordinate: "standard/collection/hook · 7/descent · 2255dab0"
-contentUuid: "2df46b4c-0539-561a-ba4f-117a6cf903bf"
-diamondUuid: "e648ed2e-0d3d-8368-bf35-77dc0826120a"
-uuid: "2255dab0-a31b-87ab-8cf4-84311ec53e91"
-horo: 7
+coordinate: "standard/collection/hook · 1/base · 63d5d260"
+contentUuid: "7cfb8637-013f-5b3b-9531-5d63a9866057"
+diamondUuid: "29087683-f265-8488-8c78-ec3ae27de6bd"
+uuid: "63d5d260-836b-8ff3-9cfd-b252f84b769c"
+horo: 1
 typography:
   partition: standard
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "SOX §404 internal-controls provenance"
 bindings: []
 signatures:
-  computationUuid: "8fd08a19-6d3c-8565-887a-b615e2c64bf2"
+  computationUuid: "faa0f551-a80a-829f-a0ef-0996b97373c5"
   stages:
     - stage: path
       stageUuid: "90bb1be7-b970-817a-9459-b8bcb8da9698"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "21006af8-a5e9-82fd-81f4-a4ab20189276"
     - stage: horo
-      stageUuid: "5a893ff0-7e4b-8ceb-90cb-2de5451c004d"
+      stageUuid: "9043eac0-8e15-87b6-b710-14a1b259332f"
     - stage: seal
       stageUuid: "530ed1ff-2c8e-8bce-957e-2bea08e586bc"
     - stage: uuid
-      stageUuid: "75231668-3bbf-8619-a9f3-221ea71650bb"
+      stageUuid: "f31013da-c32f-8ee6-bfd6-583ba33a24b6"
 version: 2
 ---
 # standard/collection/hook — one spine, so no collection can forget a leg of it

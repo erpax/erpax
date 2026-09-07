@@ -2,10 +2,10 @@
 name: tag
 description: "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \"Anything is taggable.\""
 atomPath: "vocabulary/tag"
-coordinate: "vocabulary/tag · 1/base · 10757fba"
-contentUuid: "5eaa449d-0a1f-5245-98ca-8c7eb982aaa8"
-diamondUuid: "43deaa35-9014-8ae6-a749-521911d09e10"
-uuid: "10757fba-ff53-8dea-8522-998666db3a24"
+coordinate: "vocabulary/tag · 1/base · 5e47804e"
+contentUuid: "440dd748-f822-5e63-9d69-4d989b8c4b29"
+diamondUuid: "e40f97c0-05ae-8fef-8bd9-0d3862e075bf"
+uuid: "5e47804e-88d4-8135-9feb-2fe23f1b7315"
 horo: 1
 typography:
   partition: vocabulary
@@ -15,7 +15,7 @@ standards:
   - "RFC-4122"
 bindings: []
 signatures:
-  computationUuid: "66db1546-67d1-89f2-b848-8e10864133b0"
+  computationUuid: "cf16c7cc-714f-8f94-93ea-7725c299ef36"
   stages:
     - stage: path
       stageUuid: "ae1f1de6-fc42-8529-99e7-e5273728afea"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "87de044c-6949-85a4-8daa-c023743a6478"
     - stage: horo
-      stageUuid: "0509d325-4581-80eb-b4ef-a95e606858df"
+      stageUuid: "f9592550-61fc-84f6-be24-10d9177bd03a"
     - stage: seal
       stageUuid: "d2bb32f0-091e-8964-9b23-532aab827c04"
     - stage: uuid
-      stageUuid: "036cf1cb-428e-8104-be9d-a5c1957aa1e1"
+      stageUuid: "593a0305-7e12-8ddb-a6a6-0c6e8f89ed6c"
 version: 2
 ---
 # tags — anything is taggable (less collections, more features)

@@ -2,11 +2,11 @@
 name: downpayment
 description: "Use when reasoning about downpayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/downpayment"
-coordinate: "vocabulary/downpayment · 2/share · 964b74e5"
-contentUuid: "1610cedf-ea03-5825-8d4b-bc233ae221eb"
-diamondUuid: "358bd00a-5d22-8d1c-8115-f21b93740590"
-uuid: "964b74e5-d5ed-8ec2-9977-931cbd302647"
-horo: 2
+coordinate: "vocabulary/downpayment · 8/crest · 63bcdca7"
+contentUuid: "e712d33c-8d2a-5e5c-8202-4e92d8fe43f3"
+diamondUuid: "44d5797e-2a36-8110-b351-b40f0ab7248c"
+uuid: "63bcdca7-3766-82b8-bf1c-45e7258c9e26"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3a52704f-2d4b-81b7-8906-f225c1fd0995"
+  computationUuid: "e466149c-d6b4-87ad-96f2-5cdc2fd0a3da"
   stages:
     - stage: path
       stageUuid: "448d779d-941a-8be6-a4d4-68db132c270e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "10dcf5fa-5bc2-804e-956f-53065b9b6693"
     - stage: horo
-      stageUuid: "8458e8eb-41b5-8994-8c34-d0d9e9bb68e2"
+      stageUuid: "dfb563e8-4952-8bd4-984e-bb659622ff1a"
     - stage: seal
       stageUuid: "121d4208-2a93-8e3d-8660-8886cafcf073"
     - stage: uuid
-      stageUuid: "c72364f5-5aac-8ae7-b2fc-6673c17873a2"
+      stageUuid: "08cdac54-603c-82a9-bacc-505bcadf3cc7"
 version: 2
 ---
 # downpayment

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sender",
-    "uuid": "cbf18783-5b0b-8f48-8046-00dcf8e6a7d3",
+    "uuid": "54a547f8-cd0b-8b8e-9977-7d0c20c0346b",
     "words": [
       "sender"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sender — A sub property of participant. The participant who is at the sending end of the action.",
-    "uuid": "5e67597f-5241-85c3-992b-65e943711617",
+    "uuid": "6f316a8f-568b-815d-bc12-81b54f9312a4",
     "words": [
       "use",
       "when",

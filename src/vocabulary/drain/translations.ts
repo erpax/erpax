@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drain",
-    "uuid": "2fbb1849-46dc-88e9-8f14-239c0409fd0b",
+    "uuid": "1b32dd90-5acf-8d21-9e23-84c825ddb0be",
     "words": [
       "drain"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one drain — the singular model of the drains collection (the plural store); a sink that draws down a resource or stock.",
-    "uuid": "3bb2a17c-63af-85cd-b76a-5822e5737c7e",
+    "uuid": "bc8e2570-c012-8aaf-a384-5eacd95df6bd",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: paint
 description: "Use when reasoning about paint — A schema.org component word, collided out of schema.org compounds — fused from PaintAction (sti · collapse · merge)."
 atomPath: "vocabulary/paint"
-coordinate: "vocabulary/paint · 1/base · fbb140fd"
-contentUuid: "ce5d4b69-908b-57ac-8520-6c14025431c7"
-diamondUuid: "7abc8719-eae7-8511-a5e2-aebc73953488"
-uuid: "fbb140fd-d92f-8ba2-a75d-2da5abd52d35"
-horo: 1
+coordinate: "vocabulary/paint · 2/share · 44be1ec8"
+contentUuid: "ddb81f94-e488-5edf-af1c-42995944a206"
+diamondUuid: "c0547311-33a2-88c5-89db-ecfb0a84cef7"
+uuid: "44be1ec8-9af3-87e1-b8ec-b9378dc8864b"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bf20b2a9-2578-8c6b-956f-8124749f1ca9"
+  computationUuid: "4fb6c7ca-9006-88e1-baed-d50d7f847719"
   stages:
     - stage: path
       stageUuid: "08641a68-55ee-8402-a9d8-68c7507d0daf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "74b88c5f-fe55-8cde-9eb7-2e5519d1e40e"
     - stage: horo
-      stageUuid: "861dfab4-c085-877c-85b5-268f3e1fe5f9"
+      stageUuid: "2c281f00-08c4-8c42-8fc1-3eedc62230e8"
     - stage: seal
       stageUuid: "65a7b40e-2228-8886-a5d5-f3033721c2fa"
     - stage: uuid
-      stageUuid: "f5e4c1b8-95d6-8ba1-8b59-eef8bfb6886e"
+      stageUuid: "79e171a5-276e-8b26-b2d7-2ed7a4fea23e"
 version: 2
 ---
 # paint

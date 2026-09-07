@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "analog",
-    "uuid": "3c7129d4-7f5e-85fd-8fcc-e23ae2a45816",
+    "uuid": "d48b8494-fe7c-8e08-bdeb-ba5d330c2d55",
     "words": [
       "analog"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field.",
-    "uuid": "7138ea68-468b-82dd-bc7a-7b351ffd7549",
+    "uuid": "1158c901-17ce-847f-8122-4fdf997269c0",
     "words": [
       "use",
       "when",

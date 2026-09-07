@@ -2,18 +2,18 @@
 name: impact
 description: "Use when reasoning about impact — The quiet hero: a narrow column holding either rendered children or CMS rich text."
 atomPath: "heros/low/impact"
-coordinate: "heros/low/impact · 5/round · 806ba5c0"
-contentUuid: "2e458c9c-2dc8-58f4-8974-fd8df4f2a7a3"
-diamondUuid: "8c5df08f-0155-8bb9-93cb-f0c9b1420afe"
-uuid: "806ba5c0-4216-806b-a4db-22a81b44a1a9"
-horo: 5
+coordinate: "heros/low/impact · 4/weave · 8977929c"
+contentUuid: "a964b2b5-82ca-5b90-8574-441864bc36fe"
+diamondUuid: "ec76dece-cef0-88a8-a6a4-fad5fdce884e"
+uuid: "8977929c-db24-846f-abf1-20c081d5f04a"
+horo: 4
 typography:
   partition: heros
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fa401f19-e124-8c43-b51a-43eadae38eb3"
+  computationUuid: "56a44328-87f8-8fb2-bde9-c05f659f6dda"
   stages:
     - stage: path
       stageUuid: "e75caccc-864c-893b-840a-88e74ec7acee"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a2396f3c-9962-848f-b23d-6e61035e5018"
     - stage: horo
-      stageUuid: "bb23d7e7-2aec-8a28-947c-c172a17b40fe"
+      stageUuid: "d7cb3474-5839-8cd2-a566-3afff579fe4d"
     - stage: seal
       stageUuid: "b220c57c-11ce-8a8f-9936-3021e6655d19"
     - stage: uuid
-      stageUuid: "81d71bdf-4779-873e-bf0e-e98aed3377d5"
+      stageUuid: "cf36cd7d-c79d-84ba-860e-95aae2cc3aa3"
 version: 2
 ---
 # heros/low/impact — children OR rich text, and the type says exactly one

@@ -2,11 +2,11 @@
 name: rsvp
 description: "Use when reasoning about rsvp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: rsvp
-coordinate: "rsvp · 4/weave · 5dcff3ff"
-contentUuid: "e9b393ca-32c0-5bdb-94f1-bcc41a1beacf"
-diamondUuid: "57f79e34-7465-8940-bed6-5c31fcd18019"
-uuid: "5dcff3ff-b604-82e6-868a-e77dff47dc94"
-horo: 4
+coordinate: "rsvp · 8/crest · 9d3fe315"
+contentUuid: "d7060972-090d-56c8-9279-11e06bb19c04"
+diamondUuid: "183ef6d0-af1f-874a-a920-c34dbf11180d"
+uuid: "9d3fe315-db02-864f-bf34-8b0e08cd7777"
+horo: 8
 typography:
   partition: rsvp
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e952273f-14c4-8690-802b-3cde346d2c2c"
+  computationUuid: "1ff1067d-ed40-80bf-a751-d36874605016"
   stages:
     - stage: path
       stageUuid: "8ebacfe3-524d-821d-949e-4f886421350e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c382cfb4-e4a3-8823-9af7-139dd492f560"
     - stage: horo
-      stageUuid: "12c13e32-21bb-8641-9ad6-db5281c48fb8"
+      stageUuid: "0cbfc682-22dc-8aae-afa4-1659db98c37e"
     - stage: seal
       stageUuid: "707db08c-673b-891c-b3c8-65d6cf93b030"
     - stage: uuid
-      stageUuid: "d4ccca62-8809-853a-a860-203f8dbbce81"
+      stageUuid: "ba3ac690-de06-8bf9-abc8-c4814f7c4a24"
 version: 2
 ---
 # rsvp

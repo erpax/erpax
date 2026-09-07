@@ -2,11 +2,11 @@
 name: artwork
 description: "Use when reasoning about artwork as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/artwork"
-coordinate: "vocabulary/artwork · 7/descent · 067e91e0"
-contentUuid: "7e2f2332-669b-5e11-881c-0c63f3d3f109"
-diamondUuid: "89a1da88-282f-8e6f-883f-01a2e11e7996"
-uuid: "067e91e0-086f-8ff3-99e0-a7191d969440"
-horo: 7
+coordinate: "vocabulary/artwork · 2/share · d4125a12"
+contentUuid: "166b2458-1638-5c3e-a8aa-96074845ee61"
+diamondUuid: "14d6725f-8aaa-87dc-93e8-eba932914fff"
+uuid: "d4125a12-b992-8723-9e3f-6ee2691065db"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "41314ef8-dbd5-86ba-95a9-38dd235a662c"
+  computationUuid: "14b210e3-3072-8458-972d-d99862df4744"
   stages:
     - stage: path
       stageUuid: "1655592b-4ed7-8f3f-bdc0-d226a734d688"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "71c4a3ef-1a69-8856-871f-e835e93e81eb"
     - stage: horo
-      stageUuid: "d3b2f632-95c2-8e0a-9070-f137ad4a7054"
+      stageUuid: "7de4cd97-45ec-89b3-a5d9-39791379b77c"
     - stage: seal
       stageUuid: "a73fe107-7c01-89e5-beb2-5812f1d03337"
     - stage: uuid
-      stageUuid: "04881f8f-d08f-88ce-8f70-083cd93601ea"
+      stageUuid: "0ba9558c-f665-8c3c-bc75-cb2c2464ce1d"
 version: 2
 ---
 # artwork

@@ -2,11 +2,11 @@
 name: structures
 description: "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings."
 atomPath: "taxing/jurisdictions/entity/legal/structures"
-coordinate: "taxing/jurisdictions/entity/legal/structures · 2/share · fae83aab"
-contentUuid: "9ac6c53c-3291-5b55-b64f-2f4d53e0fb25"
-diamondUuid: "01c7b224-2dd4-87cf-8c98-7a5b3f3a3ad9"
-uuid: "fae83aab-7cab-806a-933a-b2ec715d1662"
-horo: 2
+coordinate: "taxing/jurisdictions/entity/legal/structures · 7/descent · adf123b3"
+contentUuid: "00f29a88-6e43-5152-aa62-57c23dacf1a9"
+diamondUuid: "b2302f2f-14c1-8236-9aa8-7c0d1b5d07f7"
+uuid: "adf123b3-375f-82ea-b43b-76cbcc43a47b"
+horo: 7
 typography:
   partition: taxing
   bondDegree: 4
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "6410e2ee-a4a9-8e0e-9631-9aee321a2c5e"
+  computationUuid: "b760849e-f806-8c5d-9959-555786b2c4bd"
   stages:
     - stage: path
       stageUuid: "09e5f36d-9485-8d71-a05d-6a62b594cc0d"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "120e887d-dc17-818e-94ee-78e38a1caee3"
     - stage: horo
-      stageUuid: "1cf442a8-7b8d-8035-be29-25de7d9f3cc3"
+      stageUuid: "ff57b2e6-7366-8d86-a0e3-4c4cef91978f"
     - stage: seal
       stageUuid: "4de7642f-30ca-86a9-b5dd-c33b54aaaf0c"
     - stage: uuid
-      stageUuid: "bfccbe7e-7df9-8bbd-824d-b05983e8f532"
+      stageUuid: "3870417f-1a0a-8cad-8af5-dad439732bb3"
 version: 2
 ---
 # entity-legal-structures

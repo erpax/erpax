@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "duns",
-    "uuid": "35e4ae57-a1f7-8271-8295-9caa309e3f94",
+    "uuid": "f13672b7-241c-8e78-9eeb-476530a2143b",
     "words": [
       "duns"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about duns — The Dun & Bradstreet DUNS number for identifying an organization or business person.",
-    "uuid": "701e8556-2830-8857-8297-3d966d972ea4",
+    "uuid": "6d99ce44-4afc-8205-8904-002e5eaa2409",
     "words": [
       "use",
       "when",

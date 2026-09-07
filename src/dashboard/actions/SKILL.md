@@ -2,11 +2,11 @@
 name: actions
 description: "Use when reasoning about actions — , and take a typed input and return an . Each validates, creates the document, and lets the collection's own hooks do the posting — so a dashboard cannot write an unbalanced entry…"
 atomPath: "dashboard/actions"
-coordinate: "dashboard/actions · 2/share · 95bfca2a"
-contentUuid: "7cd1a19f-f1dc-57f6-93a6-1fc90eed44fd"
-diamondUuid: "97f5d93d-9bf0-8df3-af39-0bb91800ec7d"
-uuid: "95bfca2a-0d1f-8373-b304-1f7eeb536c41"
-horo: 2
+coordinate: "dashboard/actions · 7/descent · f1e0a12b"
+contentUuid: "058dc71b-c27d-52f3-83d9-27351287b198"
+diamondUuid: "401a33b5-9dab-8b37-924f-cd9bccf1e89d"
+uuid: "f1e0a12b-88fb-8baf-942f-59fdcdc9ebf0"
+horo: 7
 typography:
   partition: dashboard
   bondDegree: 4
@@ -23,7 +23,7 @@ standards:
   - "SOX §404 internal-controls"
 bindings: []
 signatures:
-  computationUuid: "8d6af32f-0aa5-823a-ab51-2340585b1212"
+  computationUuid: "9ffabacc-4664-854f-83ae-875161366407"
   stages:
     - stage: path
       stageUuid: "0876f985-b420-8341-94cc-fbb79d57b13e"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "864bbb33-3b7b-8a10-9803-3f15ca4ee76e"
     - stage: horo
-      stageUuid: "fcd82ee4-00dc-863f-a6a0-b077441ffbd2"
+      stageUuid: "3ea6c41f-6661-8157-8a9f-321ed623018f"
     - stage: seal
       stageUuid: "3995fd1f-4062-8682-b377-8f357703abcb"
     - stage: uuid
-      stageUuid: "91bc60f7-2280-868d-bc33-5d25c599b308"
+      stageUuid: "971cad75-5300-8db0-8a1a-e88ab3333152"
 version: 2
 ---
 # dashboard/actions — a document is created by a server action that books it, never by a form that posts fields

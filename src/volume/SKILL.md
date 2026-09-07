@@ -2,11 +2,11 @@
 name: volume
 description: "Use when reasoning about volume as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: volume
-coordinate: "volume · 4/weave · eac8790a"
-contentUuid: "81978bee-8506-5f05-9a2f-4109ac724f60"
-diamondUuid: "b03a1327-3324-8fb1-bb09-6123f077f48c"
-uuid: "eac8790a-bcbb-81e9-8279-acd928420f8d"
-horo: 4
+coordinate: "volume · 1/base · 3c91cab4"
+contentUuid: "c967a52b-f5c3-5e16-9c4c-c0ea9da83c2d"
+diamondUuid: "738a6e11-df97-864f-8bf9-568b156bb03c"
+uuid: "3c91cab4-06d7-8b85-afb7-d113181e7d0f"
+horo: 1
 typography:
   partition: volume
   bondDegree: 32
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f13e3def-6483-8a32-a061-0cfb83a64138"
+  computationUuid: "7c290cd4-bf50-8adc-b38a-f15e766e55e6"
   stages:
     - stage: path
       stageUuid: "3342abf2-129c-86e0-84db-c173a0d5fce7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6bb7f378-f3c3-8bd0-8a87-1827db00223a"
     - stage: horo
-      stageUuid: "23a0d6e7-c31a-857a-b3da-4664a97db55c"
+      stageUuid: "91770af1-43ae-8d19-9015-3e8cc7133094"
     - stage: seal
       stageUuid: "c04802e0-44ca-8f4f-8b0f-b8cb43ab7955"
     - stage: uuid
-      stageUuid: "13c0ef18-1277-85fa-8d22-268531f76a0e"
+      stageUuid: "56a96431-e6c5-88d3-9e50-afce7b553c87"
 version: 2
 ---
 # volume

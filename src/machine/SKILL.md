@@ -2,11 +2,11 @@
 name: machine
 description: "Use when modelling shop-floor equipment mined from the upstream source of truth (etrima, 20 years of garment manufacturing) — the machine node of the production-traceability spine. Every machine carries a three-rate spread (pay ≤ cost ≤ price per hour) that is double-entry economics on the floor: machineRate decomposes a machine-hour into revenue = cost + margin and cost = pay + overhead. A machine runs a work/phase for a lot variant during a shift; fields are the real etrima columns, never invented."
 atomPath: machine
-coordinate: "machine · 5/round · e18f5de8"
-contentUuid: "7fd1a5bc-fe68-536b-b4a1-153925b0d2fd"
-diamondUuid: "231c9d21-88f3-8219-8b76-0139b9937516"
-uuid: "e18f5de8-081f-85a9-83c3-0611fbc30387"
-horo: 5
+coordinate: "machine · 8/crest · e3ac4aa8"
+contentUuid: "a99e0fd0-9268-50d8-96ad-baac9076d07f"
+diamondUuid: "734bd8fa-ea6b-86cb-a82d-810e24a1f8c4"
+uuid: "e3ac4aa8-f65a-85e9-8279-c98d8612c453"
+horo: 8
 typography:
   partition: machine
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "mined from etrima (Rails source-of-truth) · the machine rate spread as double-entry"
 bindings: []
 signatures:
-  computationUuid: "072fc399-f793-82b5-a20a-6e1f073c81eb"
+  computationUuid: "fdb78a22-fc8a-8a8d-8477-2468a457c965"
   stages:
     - stage: path
       stageUuid: "ee1ac092-ea90-8ee0-be23-a48b5d927d1d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "58de7a37-bb34-8486-8340-e18bf594c02e"
     - stage: horo
-      stageUuid: "54f045c0-1957-8de9-bedf-fb0ae966b82b"
+      stageUuid: "553dd6d9-0a9f-8a3c-9e1b-67fb43cb41a6"
     - stage: seal
       stageUuid: "1e89d487-806b-8232-9825-099d3c3e4ae8"
     - stage: uuid
-      stageUuid: "3ad5195a-0f00-8546-aedd-8c067485821b"
+      stageUuid: "dd8e6bb7-f1d8-8e9b-a550-f7787a9bb46e"
 version: 2
 ---
 # machine — the equipment node, mined from upstream

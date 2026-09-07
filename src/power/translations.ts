@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "power",
-    "uuid": "44b05e7f-279a-8bb4-b602-87149529c60d",
+    "uuid": "26dc62d7-92e0-8942-8da6-ee9fc2345911",
     "words": [
       "power"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about how the LIVE network makes erpax harder to forge — usage = entropy = power; realtime clients are the distributed hardware (as Bitcoin's miners are its hashpower), and accumulated use raises the cost to decode the private keys (the inverse projection).",
-    "uuid": "accf54fe-1208-8531-b755-94cef411c4e0",
+    "uuid": "1a351fc9-8c38-85bf-8306-93e5ba7303ba",
     "words": [
       "use",
       "when",

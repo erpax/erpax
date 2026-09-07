@@ -2,10 +2,10 @@
 name: sync
 description: "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens."
 atomPath: "agent/sync"
-coordinate: "agent/sync · 2/share · 8d265d83"
-contentUuid: "de8863a6-f886-5c0f-b10a-8308bc867c8f"
-diamondUuid: "a0e5f9e6-7dc3-83fc-a20f-e8c3fe6db24e"
-uuid: "8d265d83-b1ac-8a44-a848-9cfc96c96a26"
+coordinate: "agent/sync · 2/share · 40f94b8f"
+contentUuid: "50e9534a-8b44-5533-ad97-ca47d73bfe6d"
+diamondUuid: "51c59872-b41f-8ea8-907e-0bfa376045b5"
+uuid: "40f94b8f-6c3f-81dc-9056-bb9ee863d86c"
 horo: 2
 typography:
   partition: agent
@@ -28,7 +28,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "427d1b7c-9545-82e2-9bc2-3842f2a3a09f"
+  computationUuid: "fd7be897-d738-8b78-af5b-b00102f570c6"
   stages:
     - stage: path
       stageUuid: "c91a7dfa-6b1d-868a-aa90-fd6a59e2b176"
@@ -39,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "3f334104-da41-8028-bdee-d36e51f400b9"
     - stage: horo
-      stageUuid: "41e40b2d-6baa-8b92-be3a-85b282e0979c"
+      stageUuid: "228012c0-4797-842f-aace-6396c656c661"
     - stage: seal
       stageUuid: "c97e4b52-3f61-87b5-b6d7-7dbeecb6e5fa"
     - stage: uuid
-      stageUuid: "6ce46470-1dd6-8459-8c8d-74788f9ccfd6"
+      stageUuid: "becbef83-f65a-89b8-89db-3d0192730299"
 version: 2
 ---
 # agent-sync

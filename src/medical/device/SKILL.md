@@ -2,10 +2,10 @@
 name: device
 description: "Use when reasoning about clinical hardware — the medical device registry where analog physiology collapses at the edge into lawful readings, LOINC-mapped observations, and EMR analog replay."
 atomPath: "medical/device"
-coordinate: "medical/device · 4/weave · 0d56206f"
-contentUuid: "9bb0e6ff-206a-5d9f-80b5-9e3e87031c1f"
-diamondUuid: "35a2fbad-3a6b-8a1a-bdbc-4b0ae8eb0e39"
-uuid: "0d56206f-337a-8454-9494-0948a1ca76f7"
+coordinate: "medical/device · 4/weave · 873563f4"
+contentUuid: "6bd3b01c-05cf-5a9b-a6f3-73465a1cb122"
+diamondUuid: "37875900-e2c8-8c14-bb20-3edbd7fcf57e"
+uuid: "873563f4-11db-8af1-9639-1a79d82f2c6d"
 horo: 4
 typography:
   partition: medical
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6236c4a0-ecd9-85a6-a63f-5c2c9260c71a"
+  computationUuid: "63329f1e-8475-8fae-863e-c55f57fae533"
   stages:
     - stage: path
       stageUuid: "9d518572-ca2a-82b1-9799-fd3a5ebde98d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "616fcf3f-bcd4-80f5-9d8b-6ded3725ed14"
     - stage: horo
-      stageUuid: "f56e15d4-abd6-8eba-be4e-16afb4ac624d"
+      stageUuid: "6d2bc5e2-1a98-803e-bcb0-c85b2345ba9a"
     - stage: seal
       stageUuid: "bf5a17b3-b747-8b89-847d-822bb7814f65"
     - stage: uuid
-      stageUuid: "aea7c770-ae25-8cb8-8e99-9bb7e0518f5c"
+      stageUuid: "fa66965b-8010-890f-b31e-f2cbd68e2a8f"
 version: 2
 ---
 # medical/device — clinical hardware registry

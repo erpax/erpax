@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "termination",
-    "uuid": "e475ccab-a6f7-8854-a656-88714212fdeb",
+    "uuid": "5e8e1886-bcd1-865d-b283-73a670acda24",
     "words": [
       "termination"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling contract end conditions — termination for convenience, termination for cause, notice period, effect (wind-down obligations, survival clauses), remedies on termination.",
-    "uuid": "3d7a511c-f9c1-84fe-87f5-d9906431982b",
+    "uuid": "ef2be4e4-561d-84e1-8857-aa9526c16047",
     "words": [
       "use",
       "when",

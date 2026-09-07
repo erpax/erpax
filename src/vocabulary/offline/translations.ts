@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "offline",
-    "uuid": "7ce9f6d0-621e-8dc6-87bf-e238fa2fa25a",
+    "uuid": "8d1a71cd-78ae-82d3-baa0-2daeecbb122d",
     "words": [
       "offline"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about offline as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "b1d30834-5397-8084-b54a-906990c93453",
+    "uuid": "2e146a22-9816-8f97-aeae-1810d6dbceec",
     "words": [
       "use",
       "when",

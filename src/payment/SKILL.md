@@ -2,11 +2,11 @@
 name: payment
 description: "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle."
 atomPath: payment
-coordinate: "payment · 2/share · 5a3fe99a"
-contentUuid: "80409b3c-6b4c-5ef4-bd00-dd4ec1ace13a"
-diamondUuid: "039fa64e-19c8-89f2-aaca-4a277f804668"
-uuid: "5a3fe99a-0d58-8ad1-8a9c-f418d1f62226"
-horo: 2
+coordinate: "payment · 4/weave · 6e5059d6"
+contentUuid: "4a6c92af-89c5-5572-924d-6da8ca96ef05"
+diamondUuid: "e5b2b52d-017a-868b-8a6b-2fa613e5a598"
+uuid: "6e5059d6-a0fb-81d8-8f50-a2056b40d816"
+horo: 4
 typography:
   partition: payment
   bondDegree: 78
@@ -14,7 +14,7 @@ standards:
   - "NIST-SP-800-38D"
 bindings: []
 signatures:
-  computationUuid: "efa7a0e1-10fd-8ebc-a88b-30e60fb2d3f2"
+  computationUuid: "4d7fa5a6-fa7e-8225-983d-4de934d52392"
   stages:
     - stage: path
       stageUuid: "fce1c4ca-2d13-8596-ab81-de229be75d71"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "907f79ce-678e-8fbb-a427-8f7b5453c20e"
     - stage: horo
-      stageUuid: "7e17a95b-193a-80ee-949e-1c086492e004"
+      stageUuid: "bd4167c0-aab0-8297-8265-f3e14d721677"
     - stage: seal
       stageUuid: "de11b79b-23b5-81ac-8e05-797a10e6b5a8"
     - stage: uuid
-      stageUuid: "a8c2a285-9ee3-8a2b-b624-eb7d74392a78"
+      stageUuid: "db2bde0a-09ab-8d8e-b4e2-12ef03fc56a9"
 version: 2
 ---
 # payment

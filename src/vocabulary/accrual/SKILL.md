@@ -2,18 +2,18 @@
 name: accrual
 description: "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard"
 atomPath: "vocabulary/accrual"
-coordinate: "vocabulary/accrual · 1/base · 54651a8e"
-contentUuid: "4a164a1b-ee27-5bbc-a8eb-07dc5055ce50"
-diamondUuid: "6bb22e1b-be5e-87dd-b1f0-d3f954c15e9d"
-uuid: "54651a8e-4579-85fe-9dca-383cdbe89e86"
-horo: 1
+coordinate: "vocabulary/accrual · 4/weave · 7b7edd62"
+contentUuid: "b3728a55-5464-58e8-8cd9-4d1dcf9c3d50"
+diamondUuid: "eb1d1a7f-3147-871a-b746-53cbb900aa4c"
+uuid: "7b7edd62-6966-8046-86a5-79184d9d67f6"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 36
 standards: []
 bindings: []
 signatures:
-  computationUuid: "51a4645a-b4e9-8871-b35c-7b845d96055a"
+  computationUuid: "3bd5cab0-5221-889e-a244-182f6152af07"
   stages:
     - stage: path
       stageUuid: "e00c3106-e18e-8526-a94b-81dc1d110083"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bcef482f-f536-867c-bd50-57b648d67f39"
     - stage: horo
-      stageUuid: "f22a4f8c-ca52-861e-9178-67c7b2829848"
+      stageUuid: "369ef5aa-8633-8939-9c14-18c640c4a66d"
     - stage: seal
       stageUuid: "00324935-47be-8a88-a2ed-d6ab0e7046fc"
     - stage: uuid
-      stageUuid: "3365e9f6-a651-8349-be11-a299395f37cf"
+      stageUuid: "9a1ba960-4fdd-81c6-bc81-56d3bdac695b"
 version: 2
 ---
 # accrual

@@ -2,11 +2,11 @@
 name: recommendation
 description: "Use when reasoning about recommendation as a medical facet of medical — vocabulary pivot to @/recommendation; nested not duplicated."
 atomPath: "medical/recommendation"
-coordinate: "medical/recommendation · 7/descent · bcb85632"
-contentUuid: "b7d9e69b-4d59-5a19-b005-8fefecccb955"
-diamondUuid: "b50a441a-673e-89d5-a591-dc38c9bc5ff1"
-uuid: "bcb85632-5279-8b1a-a29a-0017c51f82a5"
-horo: 7
+coordinate: "medical/recommendation · 5/round · a8d286b5"
+contentUuid: "fa570e61-a457-5efc-a701-a08061e09f9c"
+diamondUuid: "3af62885-7d66-8063-a798-abe0edbd4e28"
+uuid: "a8d286b5-3d04-8a20-b191-f91f93f9325d"
+horo: 5
 typography:
   partition: medical
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "37b1fdca-0905-81cd-82e8-00f555abf4bb"
+  computationUuid: "2f392dc1-aec8-8244-94e5-01f758ee1fe8"
   stages:
     - stage: path
       stageUuid: "a63b427c-d9b5-8829-864a-713854b41d39"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8c682f75-f7e0-83b7-bc88-7dd7eb402a42"
     - stage: horo
-      stageUuid: "6f6b078d-de78-84e0-85d5-6754cd02de3e"
+      stageUuid: "4d305336-28cd-8ebd-ad39-1d57f0f75c35"
     - stage: seal
       stageUuid: "99b558af-7c56-870d-9ef7-366f5fa84ca2"
     - stage: uuid
-      stageUuid: "e3e58a66-da53-8c4d-ad94-0ed79769b032"
+      stageUuid: "18a772a5-4b0e-8200-afb8-2bc587da1915"
 version: 2
 ---
 # medical/recommendation — medical facet

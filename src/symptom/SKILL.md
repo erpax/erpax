@@ -2,11 +2,11 @@
 name: symptom
 description: "Use when reasoning about symptom as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: symptom
-coordinate: "symptom · 4/weave · c909c97e"
-contentUuid: "95a11b0f-de17-5aeb-9f9b-5c977629f00f"
-diamondUuid: "887465fa-02ba-82e8-a412-5c2be13c831b"
-uuid: "c909c97e-5673-8dc8-8e71-0975a1e917ff"
-horo: 4
+coordinate: "symptom · 2/share · d71aa046"
+contentUuid: "6a756665-cbb1-5e4f-b432-42a3e928580b"
+diamondUuid: "2cbfe888-18ab-8fac-81a0-20174448ad1d"
+uuid: "d71aa046-c3a3-8a00-b469-357db01fff9b"
+horo: 2
 typography:
   partition: symptom
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4e28746a-c80c-8fde-a1d6-e88bed6526ea"
+  computationUuid: "68c9b95f-d489-8739-9ff7-ba1a24cb0b3f"
   stages:
     - stage: path
       stageUuid: "5ea4118d-09d5-85dd-8967-4d2295dd8062"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "078c787e-3857-8793-923d-e7e29f672422"
     - stage: horo
-      stageUuid: "e8308149-dfdf-8ae8-9486-a11717445cd3"
+      stageUuid: "719294fb-b5d0-8540-b54b-4f39436d7a42"
     - stage: seal
       stageUuid: "e284131a-9344-80bc-a7f6-b4421762dd2f"
     - stage: uuid
-      stageUuid: "a634963b-f2c8-8dd0-8af0-4d6c7b623cfe"
+      stageUuid: "b85d2cec-a275-8cca-9372-01a6c45947f2"
 version: 2
 ---
 # symptom

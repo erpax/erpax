@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "replacer",
-    "uuid": "e53ec691-36d4-81c6-9981-eb61699f00a5",
+    "uuid": "017bbed3-6634-8e45-aa2f-3d01072f766b",
     "words": [
       "replacer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about replacer — A sub property of object. The object that replaces.",
-    "uuid": "351848c8-afd9-899a-b809-26d3dd59996a",
+    "uuid": "b3b9b45b-ae0b-8900-996b-88cf6ea13381",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "industry",
-    "uuid": "d153a88a-1d1f-8965-bf6b-5426bd58017f",
+    "uuid": "6eaf9883-5c5a-8f1c-a907-948fccc0b972",
     "words": [
       "industry"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when mapping AI industry failure modes to erpax diamond remedies — hallucination, memory loss, multi-agent collision, prompt injection, audit fragmentation, cost runaway, model drift, PII leakage, human-in-the-loop, vendor lock-in. Pure fns in index.ts bind each problem to existing atoms (thought, diamond, sandbox, receipt, memory, confirm) and extend gaps: workflow correlation receipts, grounded tool calls, cascade depth guard.",
-    "uuid": "dfec9d57-5e6c-861a-9d21-3f1e3c39adc9",
+    "uuid": "f443ba4c-201b-8ebe-baaa-58a240c0c568",
     "words": [
       "use",
       "when",

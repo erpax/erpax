@@ -2,11 +2,11 @@
 name: tattoo
 description: "Use when reasoning about tattoo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tattoo
-coordinate: "tattoo · 8/crest · 5beaff3f"
-contentUuid: "e1551d0f-beeb-5771-b1f9-10152ac6891e"
-diamondUuid: "ac2b2b02-834f-81cf-8449-2240641e80a9"
-uuid: "5beaff3f-cd97-88f2-9c74-73ee47fef8da"
-horo: 8
+coordinate: "tattoo · 1/base · 13342182"
+contentUuid: "4a12f17f-08ed-5a42-a8bb-8a1d467f00f8"
+diamondUuid: "8ac72a68-627e-855a-b3b6-1ad24a322a73"
+uuid: "13342182-7f9d-891f-ad52-c9af66b18244"
+horo: 1
 typography:
   partition: tattoo
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cccd6471-8a7f-821e-ad26-a8c917b3c80f"
+  computationUuid: "4f3f231a-c76b-800d-a494-cdf74feac8c2"
   stages:
     - stage: path
       stageUuid: "0d70c3c4-e547-8a6b-bfc1-614834df8233"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bd75e0ac-b5d8-87dc-b6b9-67b6311f8e8f"
     - stage: horo
-      stageUuid: "cb538d00-2c1b-80b5-a347-00028d31c52f"
+      stageUuid: "7b8e77c0-d9b4-8ddf-b05f-5c2cad52946c"
     - stage: seal
       stageUuid: "f319cb80-3dd6-84c8-ae25-dda8eee6613c"
     - stage: uuid
-      stageUuid: "93b53669-ebf6-8014-9a8b-35cf3c192787"
+      stageUuid: "00ee7d0e-bdfb-8284-9a2a-9ad8dbada7d1"
 version: 2
 ---
 # tattoo

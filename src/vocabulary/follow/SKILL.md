@@ -2,11 +2,11 @@
 name: follow
 description: "Use when reasoning about follow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/follow"
-coordinate: "vocabulary/follow · 2/share · 0f9a58cc"
-contentUuid: "89537915-6a8f-5911-9aa1-8b74cf088d00"
-diamondUuid: "9242635d-6e61-854e-b0fd-5f0127104e8c"
-uuid: "0f9a58cc-9e45-883e-bbea-e7a393d602a9"
-horo: 2
+coordinate: "vocabulary/follow · 4/weave · c1838f18"
+contentUuid: "44ab70d5-916b-5abe-9206-a5b6be362182"
+diamondUuid: "cb898d27-f79f-8299-9334-218df19690cc"
+uuid: "c1838f18-839e-8569-bf75-7f4bb1e95fe7"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d6763395-e069-8c27-b965-389f222a0c7e"
+  computationUuid: "f0a2f89c-38aa-84b6-a00a-2de5db74f302"
   stages:
     - stage: path
       stageUuid: "876c0e63-20c6-820b-9d8d-f384b1d95a96"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3e3de1ae-6148-88c1-bc4f-cb3c4aa88cff"
     - stage: horo
-      stageUuid: "cebcbba3-1c6e-8b2d-9bd7-57035c5e09e4"
+      stageUuid: "14e8885e-d1fe-8726-8262-f5e07778193a"
     - stage: seal
       stageUuid: "d8e1d847-c161-8aba-b35d-7c9d6b20e234"
     - stage: uuid
-      stageUuid: "a396b7ca-469f-8e88-b849-e12a51f641b0"
+      stageUuid: "1c78a0e2-f750-8972-a782-99bd8b33818b"
 version: 2
 ---
 # follow

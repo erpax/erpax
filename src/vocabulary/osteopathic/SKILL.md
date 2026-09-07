@@ -2,11 +2,11 @@
 name: osteopathic
 description: "Use when reasoning about osteopathic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/osteopathic"
-coordinate: "vocabulary/osteopathic · 5/round · fbda1b68"
-contentUuid: "4fdb8c86-5ec1-5e7a-9178-2e108bb6a3af"
-diamondUuid: "62a3232a-c02d-8ca7-a7c9-977ddb61396d"
-uuid: "fbda1b68-71e4-8fc9-b1dd-83c97f89ab8d"
-horo: 5
+coordinate: "vocabulary/osteopathic · 4/weave · 96b91c8e"
+contentUuid: "c31b2b83-d504-54c1-aded-28c769e35e45"
+diamondUuid: "c23baf86-ed35-871a-8874-e6b4df5f9a86"
+uuid: "96b91c8e-9421-8879-9420-4e764c0bc612"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d8a36bee-c84e-84a0-8a1b-a842df1f3132"
+  computationUuid: "149bd201-518c-8143-a437-568be86d003d"
   stages:
     - stage: path
       stageUuid: "854dc868-ec12-8872-a4d9-c0a082e03398"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b390bde1-ef04-8ad1-b45d-b060d23371d0"
     - stage: horo
-      stageUuid: "f0218839-1a9d-8a9b-b31e-7b52a6926067"
+      stageUuid: "fadbec70-8002-8983-abbb-869edadc38d3"
     - stage: seal
       stageUuid: "80359969-1332-8e61-88c3-39ef03bc415d"
     - stage: uuid
-      stageUuid: "761de73e-e9d3-8855-a0d9-e51a87cf61cc"
+      stageUuid: "5c78a2e9-cf2d-8cb9-a485-21c3ff100d3f"
 version: 2
 ---
 # osteopathic

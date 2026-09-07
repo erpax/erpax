@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "assignment",
-    "uuid": "dcbbd272-6b5c-8c54-8111-caf973b30fbc",
+    "uuid": "baf998c2-43b3-85f8-bfaa-2c3810a914d7",
     "words": [
       "assignment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract allows or restricts assignment — assignor, assignee, scope (full/partial), consent requirement (unreasonable withholding, notice), prohibited assigns, assumption of obligations.",
-    "uuid": "6ebbefda-c311-8634-b6ed-abdf75955386",
+    "uuid": "66c42830-25d0-85dc-94b9-d856adf0dec1",
     "words": [
       "use",
       "when",

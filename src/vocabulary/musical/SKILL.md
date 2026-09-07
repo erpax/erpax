@@ -2,11 +2,11 @@
 name: musical
 description: "Use when reasoning about musical — A schema.org component word, collided out of schema.org compounds — fused from musicalKey (sti · collapse · merge)."
 atomPath: "vocabulary/musical"
-coordinate: "vocabulary/musical · 2/share · d09f5ce4"
-contentUuid: "7e754d6e-3269-5da6-b6ee-f369ae688cf1"
-diamondUuid: "178c778e-62d5-8a4b-bbc2-0e6f20615e09"
-uuid: "d09f5ce4-146d-83c6-906b-a1c987993f34"
-horo: 2
+coordinate: "vocabulary/musical · 8/crest · 003583d4"
+contentUuid: "0e802bb0-5e36-5d03-a040-95316c87fdef"
+diamondUuid: "e6d49ab0-baaa-82f7-a6a4-1122c4d5e530"
+uuid: "003583d4-35fd-864c-899f-d0ab739db56f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "eed34eb4-f9e4-8e9a-afc2-e3d7974184d0"
+  computationUuid: "8ef48f4c-b1d7-8a99-a3be-5fca2942456d"
   stages:
     - stage: path
       stageUuid: "310bfebf-d529-8b46-baf9-0739b74b04d2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c8711a0c-c297-80ec-81e8-68d0e6c2df88"
     - stage: horo
-      stageUuid: "a3a3ce8d-46ca-8582-b663-cec57096fc3d"
+      stageUuid: "81588f71-0dfe-862c-9912-02e1db53fe58"
     - stage: seal
       stageUuid: "e3cd59d3-65b8-8fa7-b962-e761a127fe1f"
     - stage: uuid
-      stageUuid: "fc34d40e-96b0-8307-8b9b-5cb6938feb9b"
+      stageUuid: "e89359a8-a06c-82c3-969f-ffe2842b1ca1"
 version: 2
 ---
 # musical

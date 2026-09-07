@@ -2,10 +2,10 @@
 name: order
 description: "Use when reasoning about order — An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer."
 atomPath: "vocabulary/order"
-coordinate: "vocabulary/order · 1/base · 7474442e"
-contentUuid: "abbf698e-2e14-5d93-959b-b5d97de6da1b"
-diamondUuid: "9fa45e56-6485-8e72-a634-4d07e88a9cf6"
-uuid: "7474442e-59ac-848a-b4fe-a88c02db4fc1"
+coordinate: "vocabulary/order · 1/base · fe25da5f"
+contentUuid: "dcd34a0f-81f3-5559-ab21-0f91167a9df0"
+diamondUuid: "d53bdc85-9b1c-850e-8cbc-48852a5d12f9"
+uuid: "fe25da5f-39a6-88b6-a3f7-3dc846eea878"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5a251a56-57f2-898b-b880-1bebfeeb8f9f"
+  computationUuid: "34e986b2-489b-86ca-8e45-8c6f2e3cdd3e"
   stages:
     - stage: path
       stageUuid: "44c06513-31df-865b-b240-a887d80a95c2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "59c0f551-a936-85eb-bbfc-e89820c1c98f"
     - stage: horo
-      stageUuid: "45d794bd-56e9-8ea7-a1ba-b6f5de668db0"
+      stageUuid: "46d7f902-f666-8bda-8d02-cfd5d01cc024"
     - stage: seal
       stageUuid: "9cd51493-5bd7-885c-b2e7-741afb12420f"
     - stage: uuid
-      stageUuid: "cbdd372d-b2ee-89c2-ab6c-d779da554b8d"
+      stageUuid: "1645195e-59eb-822c-8c75-fb84a6f8c631"
 version: 2
 ---
 # order

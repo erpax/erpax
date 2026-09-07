@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seeks",
-    "uuid": "f28853cb-5a62-885b-801e-780a6ec0e9b4",
+    "uuid": "d5702ce3-7c64-8728-af09-8cfbe5764e14",
     "words": [
       "seeks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about seeks — A pointer to products or services sought by the organization or person (demand).",
-    "uuid": "a7286648-a4ce-8370-ada9-d5d898ee6624",
+    "uuid": "2ece9b8a-f252-8f2d-aba2-180e1a1b223b",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "satirical",
-    "uuid": "aafdc3ab-7dbc-81e6-891a-57d343849dbb",
+    "uuid": "b9d697cc-0bd3-86fb-a4dc-3156a08c17d9",
     "words": [
       "satirical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about satirical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "93f1154e-d1c7-8750-a2f0-5a84120c931b",
+    "uuid": "dacbba61-90e2-8f24-a888-83257b1389bf",
     "words": [
       "use",
       "when",

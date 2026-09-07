@@ -2,18 +2,18 @@
 name: depth
 description: "Use when a module needs the broadcast cascade guard without inheriting the sync subtree — MAX_BROADCAST_DEPTH and withinBroadcastDepth live here alone, in a module with ZERO imports. That property is the whole atom: the constant used to sit in chat-broadcast.ts, deep inside the corpus's largest import tangle, so any atom wanting one integer paid for @/ai/industry, @/agent, effect-processor, context and payload-chat. A constant that depends on nothing must be reachable without depending on anything."
 atomPath: "agent/sync/depth"
-coordinate: "agent/sync/depth · 5/round · 66851cbf"
-contentUuid: "44457ec8-deee-54b9-8bb3-cd6ab85985a4"
-diamondUuid: "92c01506-d156-80b7-9be8-747b766ac139"
-uuid: "66851cbf-868d-87d6-a26e-1f67a4e21035"
-horo: 5
+coordinate: "agent/sync/depth · 2/share · ea2db7ae"
+contentUuid: "4f09ad45-31c1-50dd-8537-35901ad6e65f"
+diamondUuid: "09c64eab-4aeb-80bf-a808-e4f1d66846d6"
+uuid: "ea2db7ae-5213-885d-bf4e-76c1f279435f"
+horo: 2
 typography:
   partition: agent
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "30608f6f-7a03-8db6-a271-48b59511ead6"
+  computationUuid: "a517fbbf-0aee-8e3e-b30a-a9d7deebd3e3"
   stages:
     - stage: path
       stageUuid: "1d18d2b1-7906-8ca5-8f57-db9ed521d95c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9dd436b8-1af5-893a-b7aa-7876ba7cd2fe"
     - stage: horo
-      stageUuid: "106a3a36-a0ad-84a4-9c23-69cd8e3b15c7"
+      stageUuid: "5b4903c4-b1e7-8fab-9152-8a34d4c77d76"
     - stage: seal
       stageUuid: "343aa8a1-ee4b-84b8-95a2-b514368c5336"
     - stage: uuid
-      stageUuid: "3ffd0eda-54b8-83cc-8b80-6214705aab6a"
+      stageUuid: "c59d06de-4808-81f5-90c5-f182fdda0cc1"
 version: 2
 ---
 # agent/sync/depth — a constant that depends on nothing, reachable without depending on anything

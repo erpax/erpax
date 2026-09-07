@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "team",
-    "uuid": "2a10422e-2ec3-8c01-ab53-6e87ad196e44",
+    "uuid": "84ca2c96-1a8d-81b2-9811-e6998e1a7e26",
     "words": [
       "team"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society spawns multiple agents that share skills — a team is a set of content-addressed agents whose competence is the UNION of their skills (merge/holographic: a skill one loads, the team has), with distinct purposes preserved. Spawn → share → cover the gap in parallel. Matter-twin services/agent/team.ts.",
-    "uuid": "d404a7c8-5cd4-80a0-99ff-070354a13c3f",
+    "uuid": "b6f99413-e108-83d8-9424-65a1cb509295",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "broadcaster",
-    "uuid": "eee660ec-356f-81c1-8dda-ecc0b786f908",
+    "uuid": "968ab21e-388c-8dcc-af61-94c09fe39c87",
     "words": [
       "broadcaster"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about broadcaster — The organization owning or operating the broadcast service.",
-    "uuid": "0b325df7-f5a3-8a97-9c83-35c41e2ef1d7",
+    "uuid": "1a4def55-655b-82cf-9b91-81f1fea3804e",
     "words": [
       "use",
       "when",

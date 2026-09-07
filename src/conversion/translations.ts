@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conversion",
-    "uuid": "1c1153b4-fc76-8e1d-9cb8-ba2d6a4e3c34",
+    "uuid": "23554c3b-66dc-8b3a-baff-b673cbd3a24c",
     "words": [
       "conversion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about reversible representation change — a conversion is a bijection on ℤ/9 (multiplication by a unit), and inversion REINVENTS conversion: the inverse of a conversion is another conversion, from the same unit group closed under inverse. Holds only for the reversible units {1,2,4,5,7,8}; the axis {3,6,9} collapses — a lossy conversion (like the one-way fold) has no inverse to reinvent.",
-    "uuid": "7b980092-eab0-829c-b4d5-fe407b0f7d49",
+    "uuid": "ab4eab78-17b7-842b-89d0-c567c61ed3c5",
     "words": [
       "use",
       "when",

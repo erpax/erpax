@@ -2,18 +2,18 @@
 name: intelligence
 description: "Use when reasoning about intelligence — Self-improving agent intelligence via measure, fold, seal, and balance cycles."
 atomPath: "agent/intelligence"
-coordinate: "agent/intelligence · 8/crest · 6bd0de2b"
-contentUuid: "94c480b0-9d21-58f0-bfc1-06103f98bc49"
-diamondUuid: "3ca4202e-9dc5-8560-9456-2ed3e09ed018"
-uuid: "6bd0de2b-470a-82bc-ae27-7dd8fca75cef"
-horo: 8
+coordinate: "agent/intelligence · 7/descent · 2d301e57"
+contentUuid: "d169b9b4-4497-5bcf-9a2c-05da33fe12f3"
+diamondUuid: "90bdfd66-e614-8c7f-988e-796d37955523"
+uuid: "2d301e57-ba37-8782-978e-f36754f47f9c"
+horo: 7
 typography:
   partition: agent
   bondDegree: 10
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a685671a-c066-85d8-9e77-66a66771f9e5"
+  computationUuid: "8de69be7-8e41-8430-9172-f9595bc052fa"
   stages:
     - stage: path
       stageUuid: "d3d8edb9-636f-8cab-ab84-c5468f812e98"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "08be4e69-1653-814c-93ed-a2eec420f0fe"
     - stage: horo
-      stageUuid: "355b7f31-0b83-8a21-92e2-1fe4de17ef48"
+      stageUuid: "d1ebf193-605a-8cec-b501-7c75ef39f340"
     - stage: seal
       stageUuid: "6a14e097-c527-8f77-996e-34fbfdf31941"
     - stage: uuid
-      stageUuid: "ab2a761e-b77d-837d-b0bc-47452171b4c2"
+      stageUuid: "1c39dd4c-8a1b-865b-b40d-3f1292f5c3f0"
 version: 2
 ---
 # agent/intelligence

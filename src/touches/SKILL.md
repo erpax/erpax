@@ -2,11 +2,11 @@
 name: touches
 description: "Use when reasoning about touches as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: touches
-coordinate: "touches · 1/base · 7bc5f094"
-contentUuid: "a460fd7b-9443-5856-974b-b9ab1d0d50eb"
-diamondUuid: "e8028d08-6b9f-8fda-8499-c803e586f257"
-uuid: "7bc5f094-7dd9-881a-b50b-b1d8c1764d4d"
-horo: 1
+coordinate: "touches · 4/weave · 935b0857"
+contentUuid: "99d220c4-00d4-5cb9-af61-04f15e267796"
+diamondUuid: "424bf4ff-5755-804d-ab6f-6d9033706636"
+uuid: "935b0857-abda-8473-a291-fc789110d96a"
+horo: 4
 typography:
   partition: touches
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9b24c36d-fbca-8dc1-a13f-f5517579a4bb"
+  computationUuid: "b6871246-969d-8d5f-a216-e746cb917e69"
   stages:
     - stage: path
       stageUuid: "07fa61f7-a5d0-82ee-8f0e-3983ada76585"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dc8c1097-5cbd-8842-a00b-82de5bcc734d"
     - stage: horo
-      stageUuid: "1fb62e3a-dd6a-8d44-bffc-2c8061830e80"
+      stageUuid: "dc5d2abf-bd3c-8231-9ed8-0180fe8ef4d0"
     - stage: seal
       stageUuid: "fcc4deb7-53bf-8fda-804a-b609f29e5bc0"
     - stage: uuid
-      stageUuid: "1d30330f-1cf0-8010-a70c-ff38d338f550"
+      stageUuid: "dabfad10-de08-8ea1-ad4c-6f9b0bac491b"
 version: 2
 ---
 # touches

@@ -2,11 +2,11 @@
 name: diagnose
 description: "Use when reasoning about diagnose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/diagnose"
-coordinate: "vocabulary/diagnose · 7/descent · 1b798a58"
-contentUuid: "19bc8b1c-2450-567d-abe6-0423776bfbef"
-diamondUuid: "5e84ce2d-969c-8edf-a794-1da0a9754084"
-uuid: "1b798a58-0fc3-81e1-862a-5cf638ab1f76"
-horo: 7
+coordinate: "vocabulary/diagnose · 4/weave · 12c9803e"
+contentUuid: "6516e8fc-165b-5f48-bd9a-659d41e6b4de"
+diamondUuid: "6a593192-0931-8a15-99ca-92551cc1167e"
+uuid: "12c9803e-56ea-83ee-b337-6ff2f452e0dd"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c03ec593-82b5-85af-8ab3-86bd2c7aec0e"
+  computationUuid: "ccffc147-f102-8cee-b758-27ccc2820cf1"
   stages:
     - stage: path
       stageUuid: "3836105e-392b-8e94-825d-8c5c0f58d276"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a6c125c7-809b-8874-807f-e2c883fde31d"
     - stage: horo
-      stageUuid: "dd1bbf50-9136-89f4-9583-1e87297b0489"
+      stageUuid: "9b674773-6a74-844d-93fb-a44c531ceda4"
     - stage: seal
       stageUuid: "6a979ac1-3d98-8216-83aa-2b5188178d25"
     - stage: uuid
-      stageUuid: "89b6c5c7-47aa-8cce-8e85-ffb53c32bab6"
+      stageUuid: "530e7b51-193e-894b-8be6-6878decce8ba"
 version: 2
 ---
 # diagnose

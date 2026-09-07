@@ -2,11 +2,11 @@
 name: demand
 description: "Use when reasoning about demand — A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. Fo"
 atomPath: "vocabulary/demand"
-coordinate: "vocabulary/demand · 1/base · 02aa7383"
-contentUuid: "a7b7eda3-8009-5092-9d7b-8d6862e3dc65"
-diamondUuid: "5eff1acd-77d6-88d5-b9f5-9959a145157a"
-uuid: "02aa7383-fe02-8fa0-b856-8a47addcba41"
-horo: 1
+coordinate: "vocabulary/demand · 4/weave · 4dc8b196"
+contentUuid: "40537dfa-7167-52db-b607-767955bdf568"
+diamondUuid: "bbbb87a0-338f-881b-aa53-4c896f8107a5"
+uuid: "4dc8b196-18e1-8ceb-98bd-a745a9e3a374"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cc8b31da-6092-830b-ab06-757164a675fe"
+  computationUuid: "622575f3-737f-8f9d-9231-95e54e03b3ce"
   stages:
     - stage: path
       stageUuid: "f6650339-3056-8b35-99ee-6a4246cc8ae2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7f7511a7-40de-8195-a53c-91d942dd7e43"
     - stage: horo
-      stageUuid: "7a7392f3-de3c-86d4-a0fc-444621e8da39"
+      stageUuid: "e5c3d2dd-6c53-87a0-b5c1-a43db09edc63"
     - stage: seal
       stageUuid: "1c57f883-cb2d-8c2f-a94b-e1e7ae926d8b"
     - stage: uuid
-      stageUuid: "6dcc4767-35ac-8c1d-8b44-e2579b669d99"
+      stageUuid: "9f31da93-7dea-84b7-a165-010498053627"
 version: 2
 ---
 # demand

@@ -2,11 +2,11 @@
 name: marketing
 description: "Use when reasoning about marketing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/marketing"
-coordinate: "vocabulary/marketing · 5/round · 5b6a17d6"
-contentUuid: "8f94913c-0699-594c-a964-0c34276e9cca"
-diamondUuid: "f62da6f3-996d-89a2-bd52-c15fdc421cb9"
-uuid: "5b6a17d6-cfed-857a-8e72-3d37c57cf38a"
-horo: 5
+coordinate: "vocabulary/marketing · 8/crest · 25877771"
+contentUuid: "a02d46f3-a22b-5a55-b3d3-d8abaceb35e2"
+diamondUuid: "16824912-a8db-8ea2-8f05-f772a43d8117"
+uuid: "25877771-f8e4-81d0-a1c6-73c716f14381"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f43f058a-eace-852f-8f1a-d22e085db14d"
+  computationUuid: "93b3ec9e-c05f-8bee-9234-6eb6e3640fb0"
   stages:
     - stage: path
       stageUuid: "8b2101d1-9a42-8b38-ab3e-e8b8008426fb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1dfd1c69-81f9-8aae-ad83-782afb7e332d"
     - stage: horo
-      stageUuid: "de3d8c0e-ce28-8f41-bb50-93c0d1e18fe5"
+      stageUuid: "4a716186-f66a-879b-9544-36991391d2e7"
     - stage: seal
       stageUuid: "85691d92-ce87-8874-8c31-f6882932c4bd"
     - stage: uuid
-      stageUuid: "9cecf7ff-d300-8fc3-ac14-e926f7806717"
+      stageUuid: "5935d57e-4377-81b5-ad16-783d60b73d78"
 version: 2
 ---
 # marketing

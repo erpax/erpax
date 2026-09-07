@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sync",
-    "uuid": "40f94b8f-6c3f-81dc-9056-bb9ee863d86c",
+    "uuid": "549de9ea-ac2b-84e1-969b-f1e9678e962e",
     "words": [
       "sync"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about why memory, cpu, and gpu stay synchronized at zero entropy — the content-uuid is the single invariant across every compute substrate: identical content ⇒ identical hash ⇒ zero divergence. Sync is not a protocol to run but a consequence of content-addressing; it is free and exact, the same merge law that makes federation set-union, applied across substrates instead of across peers.",
-    "uuid": "a8f1d2be-8990-8170-b5c7-885da3a6d58b",
+    "uuid": "10bd78fd-f6d2-8d94-8503-d0a713f32a9e",
     "words": [
       "use",
       "when",

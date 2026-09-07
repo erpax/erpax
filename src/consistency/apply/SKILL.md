@@ -2,11 +2,11 @@
 name: apply
 description: "Use when running the deterministic, idempotent consistency transforms that close code-consistency gaps (chain producer backfill, emits upgrade, e2e + shadcn scaffolds, localized flags) — the appliers the `erpax.consistency.applyAll` MCP tool and the ConsistencyAgent cron dispatch to."
 atomPath: "consistency/apply"
-coordinate: "consistency/apply · 4/weave · b4881f8e"
-contentUuid: "5d24b26c-adf6-5bd0-8aa6-3fb4cb00ee1e"
-diamondUuid: "d99f806a-d70f-8f9b-b7c3-782f869b3834"
-uuid: "b4881f8e-486c-8cbd-846a-c3e3317cadc8"
-horo: 4
+coordinate: "consistency/apply · 7/descent · dc81452c"
+contentUuid: "69d2a126-06b4-5a89-a0d4-00b0b2ae952e"
+diamondUuid: "1b329008-5fb3-8f43-ad0c-8830131d2cfc"
+uuid: "dc81452c-c120-88ab-a287-04a6a6a4901f"
+horo: 7
 typography:
   partition: consistency
   bondDegree: 45
@@ -18,7 +18,7 @@ standards:
   - "WCAG-2.1-AA contrast text-spacing"
 bindings: []
 signatures:
-  computationUuid: "b2c476ec-7453-8cf0-a9b0-b445ed6b972e"
+  computationUuid: "094992af-53a0-8c32-ae6c-fc5404fd787f"
   stages:
     - stage: path
       stageUuid: "687fe7d3-a4dc-818f-b682-c0e0f5fc553a"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "08a8b179-fe37-80d6-834f-e3e7fea990be"
     - stage: horo
-      stageUuid: "7eced28f-96de-8bf3-9855-b2b086119b99"
+      stageUuid: "6f162468-57c4-8204-9966-c4fc02d93aab"
     - stage: seal
       stageUuid: "67f93012-a553-85bd-97a7-5e1c9cabc351"
     - stage: uuid
-      stageUuid: "50acba26-96c2-8eab-9a4b-697d93d3a59d"
+      stageUuid: "327503ce-fee2-8141-b24c-600bb82f892b"
 version: 2
 ---
 # consistency/apply — the deterministic gap-closing transforms

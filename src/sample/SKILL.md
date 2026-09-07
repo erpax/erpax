@@ -2,11 +2,11 @@
 name: sample
 description: "Use when reasoning about sample as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sample
-coordinate: "sample · 7/descent · 68d5cc29"
-contentUuid: "48ae8920-45ad-58a1-9351-eb9882777bfa"
-diamondUuid: "2e6a165f-fc15-833c-b158-cc2216015a00"
-uuid: "68d5cc29-828f-8cd3-83a0-c7daac740420"
-horo: 7
+coordinate: "sample · 5/round · 24174160"
+contentUuid: "1554182e-9ef5-539d-a663-77e446a4a1fd"
+diamondUuid: "6787fe71-b4de-8845-9b53-30ae1a4e812e"
+uuid: "24174160-897b-8f25-ada1-9554bbb10ab4"
+horo: 5
 typography:
   partition: sample
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d034b617-c93a-8dbc-b2ff-a19f29e9b602"
+  computationUuid: "9e2a4453-228b-8f06-9649-4e430a9dfac2"
   stages:
     - stage: path
       stageUuid: "e3157093-c18a-86eb-ba1f-37b4e751350c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c89b7a07-e398-8e28-b207-4eb36cf09d54"
     - stage: horo
-      stageUuid: "27bda250-2b04-859f-8f36-ffadd5f9812a"
+      stageUuid: "225bd0e0-1997-8782-8fcc-57ced9441777"
     - stage: seal
       stageUuid: "89438189-727d-83cf-912f-4b82f9de1b07"
     - stage: uuid
-      stageUuid: "3a6b67c2-3aec-8486-85d1-227983233447"
+      stageUuid: "dc70844d-16bf-8944-ac11-74e69d10326e"
 version: 2
 ---
 # sample

@@ -2,11 +2,11 @@
 name: specialty
 description: "Use when reasoning about specialty — Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort."
 atomPath: specialty
-coordinate: "specialty · 4/weave · 9b984259"
-contentUuid: "b05ffb25-c407-5d88-b915-958d1cc07083"
-diamondUuid: "c7d69b37-2a6e-8a80-bd40-fcd376d90def"
-uuid: "9b984259-90fc-87ec-b2a7-55867b2d6966"
-horo: 4
+coordinate: "specialty · 8/crest · 02e8a2e9"
+contentUuid: "7c4df871-f3f9-5194-80c9-806b33d110d5"
+diamondUuid: "5a1a7ab2-f423-8c69-9f00-0328bfbccaa1"
+uuid: "02e8a2e9-9893-8ed1-8ee3-3675c2b671cb"
+horo: 8
 typography:
   partition: specialty
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7c79735f-9ac8-8df1-b911-5eb550c228a2"
+  computationUuid: "02caea6f-eee0-81ab-b139-42a9b5704779"
   stages:
     - stage: path
       stageUuid: "6af5e168-0f99-8301-9565-26b6db0c118d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "40d04c3e-5be2-89e9-a8f4-522fbe2bef1e"
     - stage: horo
-      stageUuid: "0b82fc41-ca4d-8086-86f9-20e18d7aae4f"
+      stageUuid: "2b632d0d-3ccd-8abd-9c6a-2ce6d2b101b3"
     - stage: seal
       stageUuid: "d510d9ae-838b-871a-852f-efc10064787f"
     - stage: uuid
-      stageUuid: "ed8df243-67f6-8f76-91af-d6647ffd7a76"
+      stageUuid: "09614a02-3e56-8ebe-843b-92d57971f467"
 version: 2
 ---
 # specialty

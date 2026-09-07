@@ -2,18 +2,18 @@
 name: corpus
 description: "Use when reasoning about corpus — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: corpus
-coordinate: "corpus · 8/crest · 04fee1f6"
-contentUuid: "6a1603c3-2193-5794-9486-7b31b36ebca0"
-diamondUuid: "3c497b54-7c06-808f-8fd0-08d040c68493"
-uuid: "04fee1f6-9f81-89c9-afe7-2291533f0035"
-horo: 8
+coordinate: "corpus · 7/descent · 94a65732"
+contentUuid: "97f11668-0295-5891-81a2-ca71bf85bc1d"
+diamondUuid: "97460199-1c15-869a-a119-2c7d5bda2713"
+uuid: "94a65732-6903-8296-ad4a-8d58abc8c163"
+horo: 7
 typography:
   partition: corpus
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "19b1f1e2-b093-8591-9b36-d11a0800f040"
+  computationUuid: "40155abc-b115-8eb1-aebd-f59537da59ad"
   stages:
     - stage: path
       stageUuid: "4cb83d96-7cc7-8195-96b4-a4bc6c332369"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "33ea7918-c028-86ef-8bd8-c340610ad7b3"
     - stage: horo
-      stageUuid: "0d05533f-3023-80a6-a8e6-b3907a639e32"
+      stageUuid: "560fe287-0a97-8539-ac1c-7246cc5f1d0c"
     - stage: seal
       stageUuid: "dc27f33b-d047-8876-a2b6-5af9f8b5caf5"
     - stage: uuid
-      stageUuid: "cdcd08b5-b219-8162-b484-81186ee2d26b"
+      stageUuid: "14ba6a16-72a5-852e-b5f8-d17047346f3e"
 version: 2
 ---
 # corpus

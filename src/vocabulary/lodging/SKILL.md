@@ -2,10 +2,10 @@
 name: lodging
 description: "Use when reasoning about lodging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lodging"
-coordinate: "vocabulary/lodging · 1/base · b4928e94"
-contentUuid: "be4cad13-f327-516b-a4de-b62eeee030a5"
-diamondUuid: "53fd6059-24e2-85c9-b5f2-eb2118138dfe"
-uuid: "b4928e94-0e7f-8f2d-85b5-73929deb51a1"
+coordinate: "vocabulary/lodging · 1/base · 3024bae9"
+contentUuid: "0d197493-bd96-5b76-9763-3ad18569101c"
+diamondUuid: "577f2ab8-40e4-8e9e-9781-b5e4777ad163"
+uuid: "3024bae9-1757-85c3-8ff2-cc7b96e48592"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e64f32ae-5429-8af0-804b-fa4b4be2697a"
+  computationUuid: "223743ea-3da6-8f84-bbe9-fb75971ccbfc"
   stages:
     - stage: path
       stageUuid: "1844960b-810d-89a1-825d-8efdba18535d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f172d2fb-7c77-8e67-b207-209701d6ddb5"
     - stage: horo
-      stageUuid: "cc175401-9978-84ee-96f2-48fba6d3ed1f"
+      stageUuid: "964eed0e-c093-8af6-bd3f-6118b8b25a95"
     - stage: seal
       stageUuid: "3505e5d6-20ba-8508-be03-8040e8535b4c"
     - stage: uuid
-      stageUuid: "5b610834-d81b-8d49-b96c-3aa4a7dbf55a"
+      stageUuid: "8140367c-6a07-8904-bf6c-dc21f54b2af9"
 version: 2
 ---
 # lodging

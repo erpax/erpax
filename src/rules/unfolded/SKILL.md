@@ -2,11 +2,11 @@
 name: unfolded
 description: "Use when checking that an export earns its place — a symbol with no caller is dead, and one with exactly one caller is un-folded (inline it, delete it, or make it reused). Counts real call sites only: an import or re-export NAMES a symbol without USING it, so counting it hides genuine single-use. Candidates, never a purge list — erpax ships as @erpax/* packages, so an export may be the public face with no in-repo caller. Run: tsx src/rules/unfolded/index.ts"
 atomPath: "rules/unfolded"
-coordinate: "rules/unfolded · 1/base · 2adb8456"
-contentUuid: "42bb11df-3e8e-58bc-bb21-57e27fcd60ca"
-diamondUuid: "079ca2c4-6416-8b2d-9248-876838158264"
-uuid: "2adb8456-356f-8bc5-86cd-9e280192379a"
-horo: 1
+coordinate: "rules/unfolded · 5/round · 1977c7ae"
+contentUuid: "aa1d135d-0f7c-59f8-8acc-4b1be255f8ec"
+diamondUuid: "3b31c6ac-c38a-8937-b28b-33d7809cf4e1"
+uuid: "1977c7ae-7e79-87a6-b211-d4e95692d0da"
+horo: 5
 typography:
   partition: rules
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.5 — reusability: a function called once is inlined, deleted, or reused"
 bindings: []
 signatures:
-  computationUuid: "1e0ece55-db25-8624-8893-16631537c6ce"
+  computationUuid: "7db68523-da67-8455-9592-eb0dd71b75cc"
   stages:
     - stage: path
       stageUuid: "dbaca632-7f08-88d4-a803-026cfc3f9c52"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b9aa4c5-a7df-88c7-bca8-c01df86e5722"
     - stage: horo
-      stageUuid: "c95caf62-340a-81e9-bb35-de0c3a33875d"
+      stageUuid: "760ff4c3-70a1-8012-9356-f62c71a73013"
     - stage: seal
       stageUuid: "1e3335d3-3a49-8409-b0e8-835a24339999"
     - stage: uuid
-      stageUuid: "aa81cb41-5ad0-8f51-95f5-ff85f0a4b3dd"
+      stageUuid: "aabf5193-51db-88f0-a3d9-df8dfed55ea0"
 version: 2
 ---
 # unfolded — an export with no caller is entropy

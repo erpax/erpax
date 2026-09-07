@@ -2,11 +2,11 @@
 name: qtsp
 description: "Use when a notary check needs a qualified electronic signature or a qualified timestamp — the REAL wired eIDAS provider. Resolves the Bulgarian Trusted List from the EU List Of Trusted Lists (LOTL, no country hardcoded), parses the granted qualified services (CA/QC for signature, TSA/QTST for RFC 3161 timestamp), and verifies a named QTSP (BORICA B-Trust / Evrotrust / InfoNotary) holds one. Highest-leverage check: signature+timestamp are on EVERY document type. Honest boundary — verification is public and credential-free; actual issuance needs a QTSP account credential injected at deploy."
 atomPath: "notary/check/qtsp"
-coordinate: "notary/check/qtsp · 2/share · 6a9521f0"
-contentUuid: "815bdd91-3ad2-5500-bdd6-5abe10da67f2"
-diamondUuid: "93f82232-ddf0-8719-8c03-19a2e38c548c"
-uuid: "6a9521f0-04bc-8594-b4db-cb11febc091e"
-horo: 2
+coordinate: "notary/check/qtsp · 7/descent · 9c61aadd"
+contentUuid: "b5570b80-899e-5228-94e0-184aa3996089"
+diamondUuid: "4b80fc4d-3a5c-83ca-9f17-f9a49ed34ba9"
+uuid: "9c61aadd-4c9e-8826-9f19-71c0e47775b1"
+horo: 7
 typography:
   partition: notary
   bondDegree: 9
@@ -17,7 +17,7 @@ standards:
   - "eIDAS Art. 22 — member-state Trusted Lists; ETSI TS 119 612 — TL format"
 bindings: []
 signatures:
-  computationUuid: "286c400b-ea75-85eb-a1a4-7375a07eb59e"
+  computationUuid: "053eadf7-01fc-8833-b07b-d544a81306b7"
   stages:
     - stage: path
       stageUuid: "ce516877-1f4a-81d2-a1fa-9e2ddffdf186"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "57587cbd-7aa6-80a1-ba2c-939f1df256b3"
     - stage: horo
-      stageUuid: "95566c74-1a54-8f9e-858c-391e8a4e1e7a"
+      stageUuid: "d9295327-59fb-83f8-aac1-3439117d9581"
     - stage: seal
       stageUuid: "422ef0c2-d455-8b30-9f20-3baa64087a82"
     - stage: uuid
-      stageUuid: "8129b719-7617-8ecc-9e4d-80b6cd282041"
+      stageUuid: "9b1e61fd-3259-8d11-aeb8-b2282e34bba1"
 version: 2
 ---
 # qtsp — real eIDAS qualified-trust verification

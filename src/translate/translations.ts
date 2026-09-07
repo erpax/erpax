@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "translate",
-    "uuid": "9472fc43-5f48-8b9e-bd08-99f317df9f64",
+    "uuid": "cfd83321-0d3f-876c-a5a3-e1b8cfeedd22",
     "words": [
       "translate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing i18n keys and humanizing them into default labels for the translations dropdown — the computed-default + DB-override pattern (DB value > humanized default > raw key). Also enforces the strict singular-model / plural-collection matrix (translation ↔ translations), itself a tamper-cost dimension.",
-    "uuid": "ad6029fc-15b2-8631-bdd2-86b830bb8f84",
+    "uuid": "e309eefb-8f1d-86fc-a90c-89d636535661",
     "words": [
       "use",
       "when",

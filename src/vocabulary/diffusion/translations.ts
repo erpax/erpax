@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diffusion",
-    "uuid": "d4d5c609-b745-89ae-b47b-c9eb6123cf2b",
+    "uuid": "64da8021-0d30-8251-b326-a91ba41df324",
     "words": [
       "diffusion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about HOW a small market becomes big over time — the time-axis the static market product is missing. Adoption spreads as a contagion (Bass: rate = (p + q·F)·(1−F)·m; word-of-mouth q≈0.38 far exceeds advertising p≈0.03), filling the adopter sequence innovators → early-adopters → majority → laggards. Trendsetters are the seed the imitation engine amplifies; the chasm is where that engine stalls and most small markets stay small.",
-    "uuid": "fc18b918-2ae4-833d-807c-9d42ffbfcbc4",
+    "uuid": "629e1c35-8595-8fbf-9644-c6f885e9c9f0",
     "words": [
       "use",
       "when",

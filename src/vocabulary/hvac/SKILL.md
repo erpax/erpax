@@ -2,11 +2,11 @@
 name: hvac
 description: "Use when reasoning about hvac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hvac"
-coordinate: "vocabulary/hvac · 7/descent · ba9ad2f3"
-contentUuid: "2b56d8bb-9770-5205-ba03-e2ddb489afc1"
-diamondUuid: "1bb14d80-4676-8588-96e2-631551ad443d"
-uuid: "ba9ad2f3-54d5-8de4-b9b9-632f504237ba"
-horo: 7
+coordinate: "vocabulary/hvac · 2/share · 8b9380b0"
+contentUuid: "fb7c4f3e-6a4e-5aee-abc6-4288fb29b30f"
+diamondUuid: "0aeb33d2-add3-8ef0-a077-332fd8e620ad"
+uuid: "8b9380b0-2e48-825b-87d3-ba8236b557fe"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f258d409-afa5-8a2e-9849-3327219b290c"
+  computationUuid: "8093efbe-ef16-841f-9402-afe8fb2bb019"
   stages:
     - stage: path
       stageUuid: "a086cb6d-e6af-8a57-931e-71ff86027f0f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32870552-af87-8061-8429-806b7f660129"
     - stage: horo
-      stageUuid: "5ec67807-96b3-8ac9-9e7f-532181884d54"
+      stageUuid: "123a51c5-0bdb-80ec-a603-dd6e12c293cf"
     - stage: seal
       stageUuid: "70eef857-e2f6-891b-9f0e-9b1982d04642"
     - stage: uuid
-      stageUuid: "20a6c0aa-267b-8a47-ac77-f29f6bbdc1f2"
+      stageUuid: "ea77a149-36d1-88a9-a06f-755a352ce1aa"
 version: 2
 ---
 # hvac

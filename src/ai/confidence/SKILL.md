@@ -2,18 +2,18 @@
 name: confidence
 description: "Use when reasoning about confidence — AI auto-accept confidence thresholds — imperial rationals only."
 atomPath: "ai/confidence"
-coordinate: "ai/confidence · 4/weave · eb21866e"
-contentUuid: "3a915576-8db1-5571-aaa6-0695ca7912ec"
-diamondUuid: "603ce76a-441e-8ad0-b9fe-b87ffedba8d3"
-uuid: "eb21866e-1ac7-8ad4-9299-79c2ffbe7345"
-horo: 4
+coordinate: "ai/confidence · 2/share · 41e8775b"
+contentUuid: "34142b61-7426-5b00-813a-75ab1cded91b"
+diamondUuid: "322c8b19-fec9-8efc-a785-5b80699e5122"
+uuid: "41e8775b-38d9-8ea7-b3cf-50bba9666a42"
+horo: 2
 typography:
   partition: ai
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "712f0ec4-6443-8d68-bc13-327942233c27"
+  computationUuid: "cf53800c-a1f3-847c-a6af-a29c99179718"
   stages:
     - stage: path
       stageUuid: "a3ab3ca4-b1dc-8ddd-a4c7-551e1f55a495"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "79714638-512a-8a5a-913b-8acffd9f4dd8"
     - stage: horo
-      stageUuid: "f3a89699-4295-8016-b29e-151cda3ec66b"
+      stageUuid: "79486fd1-a55c-8b8c-87c4-b6098ab1a367"
     - stage: seal
       stageUuid: "cca423a4-ac88-8437-bf7d-0ee3c04d2af5"
     - stage: uuid
-      stageUuid: "5dc44efa-3d2e-8edd-ba51-43ffb181ae1c"
+      stageUuid: "abd61b34-574f-8953-b186-02e180166f45"
 version: 2
 ---
 # ai/confidence

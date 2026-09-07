@@ -2,18 +2,18 @@
 name: suggestion
 description: Use when modelling one suggestion — the singular model of the suggestions collection (the plural store); a proposed change offered for consideration.
 atomPath: suggestion
-coordinate: "suggestion · 5/round · b803ef92"
-contentUuid: "c60a26ac-b852-56f1-be78-f1f0172a15b2"
-diamondUuid: "07ed327e-3bdf-85ca-8b42-74192fbde637"
-uuid: "b803ef92-9cfb-8125-a50d-4ff97d731018"
-horo: 5
+coordinate: "suggestion · 4/weave · 1cebcdf0"
+contentUuid: "5d91fd96-fda7-5f86-936c-68cbf553fdf6"
+diamondUuid: "92c6992a-2890-8d7b-a4cf-1b955dcd1e72"
+uuid: "1cebcdf0-c4ca-8b81-9777-fd619bb7ac96"
+horo: 4
 typography:
   partition: suggestion
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9b669d3d-9b43-8e62-8290-4750ca2219f5"
+  computationUuid: "147e9495-d481-8f46-a994-f7788d5b6c13"
   stages:
     - stage: path
       stageUuid: "5dace1db-bf45-81b3-b1bc-b22c4aa31f9b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6fb7cd3a-895d-8609-81a2-16f1b9a5c86f"
     - stage: horo
-      stageUuid: "56a910ab-2051-8126-93a0-2367336f5612"
+      stageUuid: "41d74767-5800-8054-9d9f-13f08ca2c2d1"
     - stage: seal
       stageUuid: "17e6cf2e-30ef-8b60-96e4-35f6d58cd056"
     - stage: uuid
-      stageUuid: "b67b9cd8-450d-8f6b-aeed-7e7837611fee"
+      stageUuid: "75d57eb2-f78c-800f-975c-8725cb67d831"
 version: 2
 ---
 # suggestion — the model of one [[suggestions]] row

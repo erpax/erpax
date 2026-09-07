@@ -2,18 +2,18 @@
 name: theme
 description: "Use when reasoning about theme — Three states, not two. A theme can be **light**, **dark**, or **unset** — and unset does not mean a default was chosen, it means *follow the operating system*."
 atomPath: "providers/theme"
-coordinate: "providers/theme · 5/round · 52dba7bb"
-contentUuid: "08796f66-7a44-555b-9165-0678c278e6a7"
-diamondUuid: "ceeca139-dd5f-8ec5-addb-729cbdbbfb6d"
-uuid: "52dba7bb-8316-8446-be31-ed897cb175d6"
-horo: 5
+coordinate: "providers/theme · 2/share · c45743b6"
+contentUuid: "9072a219-ed7f-528e-af06-6413f35a2e62"
+diamondUuid: "4b326db7-ce84-8637-8030-693cd03f072a"
+uuid: "c45743b6-cdc5-8f65-ac20-b61872d677e4"
+horo: 2
 typography:
   partition: providers
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "90106cfd-0870-8e1d-a47d-0886f15c5544"
+  computationUuid: "7a2277ab-2b48-886f-90c0-cb89bfb8013d"
   stages:
     - stage: path
       stageUuid: "1a1f5c26-a423-8173-9927-0eb15add61bd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "da4ff6b3-2588-88eb-9ba8-41839d1281e1"
     - stage: horo
-      stageUuid: "563ed239-f004-8960-b4c5-52b571a10f37"
+      stageUuid: "207b122b-9a5f-802f-a84f-bf8a3a05119c"
     - stage: seal
       stageUuid: "1068f131-71a0-81b7-bed7-d6159b8c3b08"
     - stage: uuid
-      stageUuid: "17924ac4-cd4d-86f6-b0a2-f93ff23c8452"
+      stageUuid: "284d9d25-369d-8457-8d08-eb0be70d968d"
 version: 2
 ---
 # providers/theme — null means "follow the system", and that is not the same as light

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tillage",
-    "uuid": "5951418b-6a37-80a7-9391-ac0af74fa71a",
+    "uuid": "7f9a4bd8-cdd1-8e55-ab3c-b05b17768f50",
     "words": [
       "tillage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when soil is mechanically opened to make a seedbed, incorporate residue/amendments, or disrupt weeds — primary vs secondary tillage, the no-till/reduced-till spectrum, broadfork aeration, and weed-flush methods (stale seedbed, occultation/tarping, solarization). The ground-opening operation; its intensity is the soil-disturbance dial fertility and structure pay for.",
-    "uuid": "637df984-5a4f-8918-8b8b-04ed12a40f1e",
+    "uuid": "30a655ac-fe69-8670-96e5-d9cfd8500f47",
     "words": [
       "use",
       "when",

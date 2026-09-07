@@ -2,18 +2,18 @@
 name: sentiment
 description: "Use when analyzing emotional tone — from text, survey, or interaction. The polarity/intensity of emotion (positive/negative/neutral) or sentiment score."
 atomPath: sentiment
-coordinate: "sentiment · 8/crest · a8489a52"
-contentUuid: "5bd8fe88-61f7-51ac-9e27-01e3ee2e6027"
-diamondUuid: "f8a5dd1e-180c-85c3-8a5a-3d70e1944125"
-uuid: "a8489a52-4a03-8644-8ae2-8cfb73a1d9d6"
-horo: 8
+coordinate: "sentiment · 5/round · 4d3ae5ce"
+contentUuid: "a4e7903a-09b5-5336-b332-aaed1231f767"
+diamondUuid: "cb465d89-db97-8893-bbe5-759d7536af12"
+uuid: "4d3ae5ce-bb91-8c92-af18-f6b687afd1ef"
+horo: 5
 typography:
   partition: sentiment
   bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ddbb18cd-fc8d-8b8a-ad03-b1e273f83e40"
+  computationUuid: "78ba00be-daf9-885a-b161-1a98aae171a3"
   stages:
     - stage: path
       stageUuid: "46d13c32-4944-8243-9098-9fd22f8c6f76"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "481de95b-b936-8849-be12-6ead952fa81d"
     - stage: horo
-      stageUuid: "2699203d-adff-8504-8fc7-77330c0bc10d"
+      stageUuid: "de53acd7-87d3-8327-ae3e-8ce4a55ab976"
     - stage: seal
       stageUuid: "ab5971c2-6b55-8564-88a7-22f185c5e003"
     - stage: uuid
-      stageUuid: "836cf67d-5a27-8eda-be89-da8c4e195ae8"
+      stageUuid: "06fdc57e-a6d7-82b2-bd0f-cea58b73d70e"
 version: 2
 ---
 # sentiment

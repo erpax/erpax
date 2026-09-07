@@ -2,11 +2,11 @@
 name: anatomy
 description: "Use when reasoning about anatomy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/anatomy"
-coordinate: "vocabulary/anatomy · 8/crest · bdb2ba85"
-contentUuid: "becaf6de-ba66-52ea-89e3-32178aaad317"
-diamondUuid: "a1746daf-0bf4-8b99-81b7-0ad16feb71de"
-uuid: "bdb2ba85-96d9-84f2-9dbd-89e0bd2896d6"
-horo: 8
+coordinate: "vocabulary/anatomy · 7/descent · 4f5bfb58"
+contentUuid: "1aee139e-00ca-5a27-b9cb-71168dad7447"
+diamondUuid: "ebf40ce2-1716-8d7c-ad10-7913ad59dcdd"
+uuid: "4f5bfb58-2ec5-86d3-bb51-3ade0809f10f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 48
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d2f4c0ed-1813-8da0-8d97-cf0bfda0ad1d"
+  computationUuid: "98f89059-f8fd-8955-82c5-25b386c1dda0"
   stages:
     - stage: path
       stageUuid: "c1f81e2c-9738-8269-a684-8286c7c8d6ba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cfdfc09b-427f-84cd-af66-f882603df577"
     - stage: horo
-      stageUuid: "68752716-27dd-8f5a-afd8-c266e22f8ac0"
+      stageUuid: "a44bf0f3-f761-88fc-87c6-ea28ac5f6431"
     - stage: seal
       stageUuid: "f98e0602-42a6-8dc1-8d7e-6fe486ad6b96"
     - stage: uuid
-      stageUuid: "a447a9b9-69b7-844f-ad1c-ff23caa63bb1"
+      stageUuid: "b62cb1fc-2bf4-8c3d-8645-d0083c75199b"
 version: 2
 ---
 # anatomy

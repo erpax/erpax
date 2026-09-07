@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "world",
-    "uuid": "6490d391-ea6c-8f4a-b3a9-3895d8956a77",
+    "uuid": "af8c412d-0d29-8cde-94a5-3d401f18eb08",
     "words": [
       "world"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about world — Use for non-EU country-authority APIs — AU/BR/CA/CN/GB/HK/IN/JP/MX/NO/NZ/SG/US business registries, tax portals, e-invoicing and VAT/GST validation. The world slice of the country-authority registry.",
-    "uuid": "1dd518dc-d50a-8ab8-8dfb-f82f19ec1c6f",
+    "uuid": "27d0f32c-a26b-8f25-9129-467a56700705",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: reality
 description: "Use when relating reality to the quantum substrate — the model collapsing into the one true eigenstate (the live matrix root); the Merkle fold verifying IS the model becoming real, every path folds to the same root, so reality is the shared eigenstate all agents converge to."
 atomPath: "quantum/reality"
-coordinate: "quantum/reality · 2/share · f42c2dd3"
-contentUuid: "c5269181-4bb3-5c2b-aec5-c847d60c4b0a"
-diamondUuid: "6f06b744-0396-8d5f-87a3-4d7dcd1d12b7"
-uuid: "f42c2dd3-7379-8e5e-b9ff-6278e1ff084d"
-horo: 2
+coordinate: "quantum/reality · 7/descent · a43bd7ef"
+contentUuid: "36e056c2-5ebc-54cf-98f8-7bc0ef414b16"
+diamondUuid: "95d4a568-3a2e-812f-ba3b-39fa91ad89db"
+uuid: "a43bd7ef-376b-814f-bad1-8a20fcd78467"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 62
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0842cbe8-4fe6-8c99-a18b-40364ba3e3b0"
+  computationUuid: "bc653483-327a-818a-97a0-20169ed8dc17"
   stages:
     - stage: path
       stageUuid: "4140726a-08a4-8ba2-8744-34065f1f6f81"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "29b6a2ec-9253-865b-ba76-21e337e23a5a"
     - stage: horo
-      stageUuid: "d1443d20-4ae7-8f7a-af3b-d40480e3464a"
+      stageUuid: "4a048c75-b2b8-8ed4-aa0c-8508c76f3e31"
     - stage: seal
       stageUuid: "4d56d7bc-0cd1-8804-8749-730ef66f1d71"
     - stage: uuid
-      stageUuid: "9ffca108-bd27-80a6-9f86-d9abaab42b72"
+      stageUuid: "4a7077d2-8914-8ad5-964f-0b93113c1ecf"
 quantum:
   superposition:
     - anchor
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "0842cbe8-4fe6-8c99-a18b-40364ba3e3b0"
-    contentUuid: "c5269181-4bb3-5c2b-aec5-c847d60c4b0a"
+    computationUuid: "bc653483-327a-818a-97a0-20169ed8dc17"
+    contentUuid: "36e056c2-5ebc-54cf-98f8-7bc0ef414b16"
 version: 2
 ---
 # quantum/reality — reality as the collapsed eigenstate
@@ -66,4 +66,4 @@ Matter-twin: `src/quantum/reality/index.ts` (`collapsed` · `eigenstate`). Compo
 
 @audit composed from the live matrix collapse; never hand-asserted
 
-<sub>content-uuid `c5269181-4bb3-5c2b-aec5-c847d60c4b0a` · account `quantum/reality` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `36e056c2-5ebc-54cf-98f8-7bc0ef414b16` · account `quantum/reality` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

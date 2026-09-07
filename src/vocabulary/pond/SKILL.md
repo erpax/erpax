@@ -2,10 +2,10 @@
 name: pond
 description: Use when reasoning about pond — A pond.
 atomPath: "vocabulary/pond"
-coordinate: "vocabulary/pond · 5/round · a0f09d1d"
-contentUuid: "80853b5d-93bd-5329-b890-98ad4348ca55"
-diamondUuid: "471a7e52-2978-8e13-9ad1-acdf8f514569"
-uuid: "a0f09d1d-f6be-8106-a8b6-42856398b7a3"
+coordinate: "vocabulary/pond · 5/round · 5d39a620"
+contentUuid: "0df0c963-200d-576b-b54f-41643ed2a2d7"
+diamondUuid: "707ec2fd-d227-8440-8232-bc34c8b0e395"
+uuid: "5d39a620-8b8a-858f-b60b-af583868445e"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "705d1f2c-c9b7-8cc2-8581-f0236541a5a3"
+  computationUuid: "2f084ba8-8ce6-8114-b418-db27f092ddaa"
   stages:
     - stage: path
       stageUuid: "be378d9b-4b1a-867c-a049-38a049b76a3d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "84029910-cc34-8c3e-b2be-00754c04b380"
     - stage: horo
-      stageUuid: "c148bb92-315b-8126-8afe-cfd1fb644be1"
+      stageUuid: "49a1c1c5-e104-8830-8c34-12020476460d"
     - stage: seal
       stageUuid: "195790f1-5b1f-8ac3-b87a-454b27959adf"
     - stage: uuid
-      stageUuid: "1e56df8e-2991-8960-8fc2-611c431e2bb8"
+      stageUuid: "9b69d277-c84a-8e23-a0c3-2e2bcd5d77ab"
 version: 2
 ---
 # pond

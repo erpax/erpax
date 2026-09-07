@@ -2,11 +2,11 @@
 name: occupation
 description: "Use when reasoning about occupation — A profession, may involve prolonged training and/or a formal qualification."
 atomPath: "vocabulary/occupation"
-coordinate: "vocabulary/occupation · 7/descent · 9041ccb4"
-contentUuid: "7232ce11-5413-5293-9812-919450633661"
-diamondUuid: "c82ae199-a177-8d75-b472-2f756de65fea"
-uuid: "9041ccb4-a580-8473-8c2d-16f7ef5fed54"
-horo: 7
+coordinate: "vocabulary/occupation · 5/round · 5910b798"
+contentUuid: "e6d6a2ab-785c-50de-8c64-df4434daaf0c"
+diamondUuid: "d8d3aa4e-e46a-8f9a-98ba-a3b809a388f5"
+uuid: "5910b798-c928-8397-bb0a-280e391f6b5a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d2307f66-8851-8ef1-815e-1891b954f147"
+  computationUuid: "5a895c9b-01cf-80b7-839f-3ec388813859"
   stages:
     - stage: path
       stageUuid: "228b13c5-d39f-8900-8bb0-4a5a7869f28d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d6a9ee3a-88e3-8de3-ba83-d329ce640963"
     - stage: horo
-      stageUuid: "c2cc3f3a-ed9f-871c-bae7-8ac4cfca0bfd"
+      stageUuid: "068b5dbd-2f88-861e-a8be-6bc1a0a77eb1"
     - stage: seal
       stageUuid: "6a8cb1d6-fcd2-8a06-a488-42742486a9a5"
     - stage: uuid
-      stageUuid: "13db3ad0-da87-8585-b1f2-51ed2c9dd8a0"
+      stageUuid: "d723b967-70e0-87de-b5e0-8ee92183f1e3"
 version: 2
 ---
 # occupation

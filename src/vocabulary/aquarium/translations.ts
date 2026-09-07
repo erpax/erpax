@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aquarium",
-    "uuid": "2756f203-5b5c-8614-9645-2e0a9a56113d",
+    "uuid": "dd4b9f1c-3755-8857-99ca-717ff2701c9a",
     "words": [
       "aquarium"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about aquarium — Aquarium.",
-    "uuid": "06b1ec83-daee-8986-a7c8-1d07f0997f5a",
+    "uuid": "670b5816-ac21-8603-9c71-b7dbffd3397c",
     "words": [
       "use",
       "when",

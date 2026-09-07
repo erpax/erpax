@@ -2,11 +2,11 @@
 name: arts
 description: "Use when reasoning about arts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/arts"
-coordinate: "vocabulary/arts · 2/share · cca9e4d7"
-contentUuid: "00600d36-9a2d-527a-9431-e62615ee0982"
-diamondUuid: "7d513968-d4a8-85d4-bf5d-22f5032af7d1"
-uuid: "cca9e4d7-c2cc-851e-8b6d-cfa6611b1ee7"
-horo: 2
+coordinate: "vocabulary/arts · 7/descent · ba1b96b3"
+contentUuid: "cbf57553-f822-56c9-b14d-9c9c04672514"
+diamondUuid: "3dcc7689-7d23-88b3-9726-8823cd045058"
+uuid: "ba1b96b3-785b-8bf2-82c2-a9822b358a3b"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2c1e838e-77bb-812c-9d31-d4ca4b10ab88"
+  computationUuid: "fcef26a3-211b-8969-a75e-61a773040529"
   stages:
     - stage: path
       stageUuid: "771563f4-ca48-8b5e-8e13-134490d719a9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "24b464ae-91df-8cbc-acbf-895bfb9fb917"
     - stage: horo
-      stageUuid: "7d331ae5-1cfe-8982-979c-1a330eb17df3"
+      stageUuid: "22bf9047-5ede-84de-8024-d2b9060bc283"
     - stage: seal
       stageUuid: "6d11272b-6074-829d-8566-28966dbd929a"
     - stage: uuid
-      stageUuid: "d9be77e3-87a4-8c17-b8ea-c261c3f329c4"
+      stageUuid: "49400bf4-1371-86d6-afa0-d52899b1da20"
 version: 2
 ---
 # arts

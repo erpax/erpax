@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reveal",
-    "uuid": "9ce23046-654a-8f98-8476-6f0dcda3a44d",
+    "uuid": "7e25acf1-23d2-8cf7-9eb9-b2a5bd0d5c33",
     "words": [
       "reveal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when looking for structure the corpus grew on its own — emergence, the development exhale's reward. As the forge keeps wiring atoms (↑entropy), past a density threshold a pattern appears that no one authored — a closed triad of three mutually-bound atoms, a trinity revealed by the matrix itself. reveal scans the live uuid-matrix edge graph for these triangles and surfaces them, each keyed by its merged binding-uuid and scored by a horo composition. Honest — a heuristic pattern-finder over the wiring, not a proof the triad means anything.",
-    "uuid": "27d622a8-5825-8ce2-be54-58e2db2b9fde",
+    "uuid": "31c38c56-d01e-8458-9d60-4ec7abe4a356",
     "words": [
       "use",
       "when",

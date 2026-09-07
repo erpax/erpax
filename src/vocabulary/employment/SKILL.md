@@ -2,11 +2,11 @@
 name: employment
 description: "Use when reasoning about employment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/employment"
-coordinate: "vocabulary/employment · 1/base · bd67455d"
-contentUuid: "8ed514cd-9a25-525f-9a74-91bae2bb8ee3"
-diamondUuid: "a15ef4d2-51d8-8484-8b39-4f2023432ca0"
-uuid: "bd67455d-58bc-8de9-ad11-8da84693f385"
-horo: 1
+coordinate: "vocabulary/employment · 8/crest · 5ed1d2fc"
+contentUuid: "2b331a06-9db2-5772-a58a-a3b027a0a418"
+diamondUuid: "89bf234e-1f01-822c-b564-dd81e7162c19"
+uuid: "5ed1d2fc-7671-897a-b177-77f009c701aa"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "74862927-f59f-88ce-812a-57cd65353ca3"
+  computationUuid: "bb36360e-5852-809f-b90e-93b247d32a48"
   stages:
     - stage: path
       stageUuid: "a9dca80a-41d8-812f-b839-9f1a5f1c732a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "46f29057-9afe-8aa6-9a02-8d446f5cd1c2"
     - stage: horo
-      stageUuid: "880d6b86-0b5d-8c33-99cc-42d5d5a3e2ef"
+      stageUuid: "12525800-b168-8fbc-9d8a-021e4359dd6f"
     - stage: seal
       stageUuid: "b3d13d36-8b4b-8f63-a7ee-62ac3abf35b6"
     - stage: uuid
-      stageUuid: "74fab09d-df81-86f5-9a06-451575a3eed4"
+      stageUuid: "8b45fe16-d12a-80ec-8944-57e75bcea7a4"
 version: 2
 ---
 # employment

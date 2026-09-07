@@ -2,11 +2,11 @@
 name: canonical
 description: "Use when checking that an installed package is actually used through its own API — a dependency in package.json whose exports are never called in src is dead weight or a hand-roll waiting to happen. Export names are READ from the package (r2Storage is not derivable from @payloadcms/storage-r2), never guessed from the dep name; an import alone is not use, the call site is the evidence. Run: tsx src/rules/canonical/index.ts"
 atomPath: "rules/canonical"
-coordinate: "rules/canonical · 2/share · 59ce85ac"
-contentUuid: "a18a4c16-a31c-5971-a26c-2fbf7a64b796"
-diamondUuid: "d7bce21d-ca54-8f04-bf7a-010b122b1626"
-uuid: "59ce85ac-ab91-8ca3-9072-1e708ac0fd31"
-horo: 2
+coordinate: "rules/canonical · 8/crest · a3c9d746"
+contentUuid: "40b673dd-2e1a-5f98-bd3e-ab4dbfcf44e2"
+diamondUuid: "9ac84f80-27cd-84da-8ad0-6b156b096653"
+uuid: "a3c9d746-a6ef-8976-a2b3-a2e401a7abae"
+horo: 8
 typography:
   partition: rules
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.5 reusability — use the dependency or drop it"
 bindings: []
 signatures:
-  computationUuid: "903f7a98-01b1-8df6-bd97-235595bb57bc"
+  computationUuid: "ccebf245-3be3-8b01-8514-97d69446a2c7"
   stages:
     - stage: path
       stageUuid: "e528b63d-cf3f-820b-84cb-079a936e9a0e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b279fc1e-4e0d-80b6-8f14-7e16854e853e"
     - stage: horo
-      stageUuid: "71f24a69-874c-8393-8aba-f8b5421485c6"
+      stageUuid: "2d682660-a53a-82a5-88e3-6041b52e3936"
     - stage: seal
       stageUuid: "14b51cff-c456-8397-89ab-e8e595f6ffdc"
     - stage: uuid
-      stageUuid: "eb291283-47e0-8ba4-ac22-7d22e902d1a7"
+      stageUuid: "030a9eca-18c6-8219-9cb7-20f4b1e05166"
 version: 2
 ---
 # canonical — use the package or drop it

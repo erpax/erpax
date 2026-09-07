@@ -2,11 +2,11 @@
 name: country
 description: Use when reasoning about country — A country.
 atomPath: country
-coordinate: "country · 8/crest · da613849"
-contentUuid: "6b015b9a-03cc-539f-ac5d-ea8b14851a67"
-diamondUuid: "8e3fbc2a-5940-8e1d-9ca3-db4fd7c8d57f"
-uuid: "da613849-f89d-80c1-8c0e-c0b0a06a2e1b"
-horo: 8
+coordinate: "country · 2/share · 3c9c75de"
+contentUuid: "e0fe5a67-0106-52f5-b71a-965c34113048"
+diamondUuid: "ed4a37b8-855c-8fb3-bb4f-21ef3f775c8f"
+uuid: "3c9c75de-1ed9-8155-a95f-dc4cd511940f"
+horo: 2
 typography:
   partition: country
   bondDegree: 90
@@ -36,7 +36,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6564f751-dfa0-83fe-a8ae-f3718b653121"
+  computationUuid: "81d8e186-deb6-8c9b-ac81-f8e45fc38aad"
   stages:
     - stage: path
       stageUuid: "a7018df6-c9bd-8f1f-bc1b-8e9d799f2238"
@@ -47,11 +47,11 @@ signatures:
     - stage: links
       stageUuid: "ae78dd80-73dc-8a2d-8aea-b90057d44a3d"
     - stage: horo
-      stageUuid: "fd8f717b-d1b5-8e6d-85cf-a889bd490bfe"
+      stageUuid: "2c98866a-b65d-81d6-bcd8-88afdd6737ac"
     - stage: seal
       stageUuid: "d539d2ce-85eb-8970-9e03-2ad2f781508f"
     - stage: uuid
-      stageUuid: "94935f7e-1e49-8640-badb-c3b517f8540d"
+      stageUuid: "920a1cd3-27c7-8485-b65a-9cac9a3a0a91"
 version: 2
 ---
 # country

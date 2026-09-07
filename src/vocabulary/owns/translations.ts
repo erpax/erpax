@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "owns",
-    "uuid": "e2c9f64a-883d-8b55-b66b-3c3b343cd707",
+    "uuid": "29b417ce-ff75-8b6a-ab28-f4f6a1940883",
     "words": [
       "owns"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about owns — Things owned by the organization or person.",
-    "uuid": "6b33ebf3-6f5f-844f-94dc-ceda088d1565",
+    "uuid": "2081f53b-1199-8394-839a-72681697b0c8",
     "words": [
       "use",
       "when",

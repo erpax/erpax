@@ -2,11 +2,11 @@
 name: submissions
 description: "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log."
 atomPath: "audit/submissions"
-coordinate: "audit/submissions · 7/descent · 760a208d"
-contentUuid: "f6dc0fdd-79fc-5594-8a8f-ab7c5ec1f0d0"
-diamondUuid: "76852b44-04fe-89c4-90c1-84ebaa3f7c87"
-uuid: "760a208d-944a-886e-9033-d3e0a629e802"
-horo: 7
+coordinate: "audit/submissions · 5/round · d99419d0"
+contentUuid: "db08a413-430e-558d-95fa-049b860a07ae"
+diamondUuid: "70c576bb-f57c-8934-b4c0-228aa73cd07c"
+uuid: "d99419d0-dd94-8473-b524-ef75115ad62d"
+horo: 5
 typography:
   partition: audit
   bondDegree: 27
@@ -21,7 +21,7 @@ standards:
   - "SOX §404 internal-controls"
 bindings: []
 signatures:
-  computationUuid: "ad983c04-ddf9-8431-bf43-76c7bd98107a"
+  computationUuid: "2d07b480-2cbf-877e-9b15-3991e0b5fabc"
   stages:
     - stage: path
       stageUuid: "c41e6e01-f5ea-87c8-a1a3-680732a14cbd"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "2fe05e95-ee3c-861d-849f-a4fd25ca2523"
     - stage: horo
-      stageUuid: "4e674f85-0fb5-83ce-ba41-5a8524f78be5"
+      stageUuid: "2378c62f-866e-8597-8ea5-d6081dcc268c"
     - stage: seal
       stageUuid: "c05b6749-8524-8c66-8d77-262e821bab5b"
     - stage: uuid
-      stageUuid: "8784658d-4083-8d48-8fe7-1bf3abbdf76a"
+      stageUuid: "50a6a3a1-ce3d-8dec-94e8-226651475603"
 version: 2
 ---
 # audit-submissions

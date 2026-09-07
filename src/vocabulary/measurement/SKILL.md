@@ -2,11 +2,11 @@
 name: measurement
 description: "Use when reasoning about measurement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/measurement"
-coordinate: "vocabulary/measurement · 4/weave · ae8d50ba"
-contentUuid: "6d88eb79-540a-5b4f-97fd-7f2e199d3302"
-diamondUuid: "9f5b2aba-56e1-8c08-af23-534868f4e93e"
-uuid: "ae8d50ba-ddec-8794-9a1e-d11a5a95cb88"
-horo: 4
+coordinate: "vocabulary/measurement · 1/base · 0a9c8bfb"
+contentUuid: "e37070ac-982d-528d-b613-098a33ea633b"
+diamondUuid: "6e203a00-3981-82cc-b4e6-1391f427e242"
+uuid: "0a9c8bfb-f928-8c95-8e61-bd4543237ca5"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 61
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6ba6839d-6522-804b-b897-4ed4a1e843e7"
+  computationUuid: "2257b2b6-b4d0-8e4c-aade-84cb6351b85a"
   stages:
     - stage: path
       stageUuid: "11733a73-9716-8af7-a3c2-5f23b2bb760c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f9eee1b9-4c77-8185-a0e4-47d60e387105"
     - stage: horo
-      stageUuid: "1d89bb1f-dc6e-8e3f-9f07-c191829578ce"
+      stageUuid: "0db8cf69-db06-8451-b03a-d0e1a9a111f2"
     - stage: seal
       stageUuid: "14a0d0b3-31b5-8119-9f48-8b51ac7af99e"
     - stage: uuid
-      stageUuid: "d6e90b6e-8d5e-884d-b350-e861da7422ea"
+      stageUuid: "ccce25bc-603a-876e-8fe9-1c0c6e4d40c6"
 version: 2
 ---
 # measurement

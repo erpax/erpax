@@ -2,11 +2,11 @@
 name: start
 description: "Use when a date-range or period begins — contract start date, employment start date, fiscal period start, promotion period start. Pairs with end (or duration, or another date atom) to define a temporal span. ISO-8601 datetime."
 atomPath: start
-coordinate: "start · 5/round · c67b86de"
-contentUuid: "9f86b33b-e2e0-59bc-8964-33a157742025"
-diamondUuid: "3972321a-c2a9-829e-ae77-97772a26d668"
-uuid: "c67b86de-f879-8dbb-8571-66117bb195af"
-horo: 5
+coordinate: "start · 8/crest · 719eecee"
+contentUuid: "77f9ba5d-627b-59f2-86f7-453148ae05f1"
+diamondUuid: "9f2c270a-5269-8b12-8ffa-a7f5eea68da1"
+uuid: "719eecee-ef9a-838e-83e6-b57b0845685c"
+horo: 8
 typography:
   partition: start
   bondDegree: 40
@@ -14,7 +14,7 @@ standards:
   - "ISO-8601-1`"
 bindings: []
 signatures:
-  computationUuid: "a4756f01-aa42-8176-9f55-d1ca9d7abf30"
+  computationUuid: "f15d7077-080d-8d2b-8ccd-3582497fdb04"
   stages:
     - stage: path
       stageUuid: "68b66661-edd0-83c8-9523-b49631e7506a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e7551df0-8329-82bb-9669-4e124821e329"
     - stage: horo
-      stageUuid: "14669a97-d55b-8d16-8e10-6a1507c85bc3"
+      stageUuid: "bd6a49a7-c8c0-8aa0-a7a4-04f9709b4127"
     - stage: seal
       stageUuid: "02408270-e6e8-8615-94e6-aa4f3b220f2d"
     - stage: uuid
-      stageUuid: "257b3b15-14db-873e-8d9d-9ecaf85055de"
+      stageUuid: "d1676dd2-fa94-893b-82ab-4239392f8aee"
 version: 2
 ---
 # start

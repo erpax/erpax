@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "segment",
-    "uuid": "c7e9430e-d0be-8f47-8fa3-414e8657694c",
+    "uuid": "ae7d4f67-9165-8833-baa0-39fec71c0445",
     "words": [
       "segment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when identifying and reporting operating segments per IFRS-8 — revenue/expense/asset/liability grouping for disclosure and management reporting; distinct from cost-center dimension",
-    "uuid": "1c42cb44-8abf-8a9e-9a62-e5dc9d1bab2f",
+    "uuid": "c3c78f48-b4d7-83d3-bb10-69c7d3b04003",
     "words": [
       "use",
       "when",

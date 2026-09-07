@@ -2,11 +2,11 @@
 name: aircraft
 description: "Use when reasoning about aircraft — The kind of aircraft (e.g., \"Boeing 747\")."
 atomPath: "vocabulary/aircraft"
-coordinate: "vocabulary/aircraft · 2/share · bfcd3cec"
-contentUuid: "e6a7ff90-d600-56f6-be7a-3b177b7da9d4"
-diamondUuid: "920d087c-4d01-8510-a99e-fdfb8d73ccce"
-uuid: "bfcd3cec-686e-89d9-a0d7-61da9e519347"
-horo: 2
+coordinate: "vocabulary/aircraft · 8/crest · 20d655e6"
+contentUuid: "95cfdb46-8208-5ae3-87cc-a1576738835d"
+diamondUuid: "e31bf713-fee3-82d5-b7d3-e400d67b9957"
+uuid: "20d655e6-4617-890a-beff-7d93de7ce00f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2dbd416a-f805-866c-ad74-40ba539560a8"
+  computationUuid: "17f3413d-5ec1-8dfa-913f-f0aa96878e23"
   stages:
     - stage: path
       stageUuid: "c4069f41-4d98-897b-86e9-6f9dc4eee8bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "212c40ef-8fe9-8561-b634-a658710e6c88"
     - stage: horo
-      stageUuid: "92721bd3-9b7d-892e-b4c3-789b7c14655e"
+      stageUuid: "c7295a3f-a025-8975-a781-607e66b2c092"
     - stage: seal
       stageUuid: "37e2c779-ce17-81f8-8494-215b65a5d734"
     - stage: uuid
-      stageUuid: "f0e12923-9de0-8bea-8a04-2faaa8d14bc0"
+      stageUuid: "9d72c3a1-42c7-80bf-a8e8-f101a009e9c5"
 version: 2
 ---
 # aircraft

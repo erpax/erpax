@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "license",
-    "uuid": "c1c246dd-43c4-8b9e-9995-82d3e81a346b",
+    "uuid": "490caf69-518e-8aeb-89d4-af6917ab54bc",
     "words": [
       "license"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about license — ONE licence, every path: **CC-BY-NC-ND-4.0**, or commercial via the contact below.",
-    "uuid": "61f6e382-50e2-818e-93b9-dde1693fe185",
+    "uuid": "193d4bc0-ce9c-895a-9222-50cc0bae70e8",
     "words": [
       "use",
       "when",

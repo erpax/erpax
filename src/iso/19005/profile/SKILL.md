@@ -2,11 +2,11 @@
 name: profile
 description: "Use when reasoning about profile — ISO 19005 PDF/A — long-term archival PDF profiles."
 atomPath: "iso/19005/profile"
-coordinate: "iso/19005/profile · 8/crest · 7972f303"
-contentUuid: "8f728b0d-296f-5ca4-8ec7-7f7d3095ae28"
-diamondUuid: "4226837f-9306-8fbc-8f41-b3095220ad80"
-uuid: "7972f303-9bfe-8bfb-8ba9-7ab6c025f7dd"
-horo: 8
+coordinate: "iso/19005/profile · 4/weave · 03cc55fd"
+contentUuid: "b63ea34f-c83e-5043-a7e3-4a2d31b31c7c"
+diamondUuid: "920bc4a5-4747-8b80-b91c-f9b9e0a101b3"
+uuid: "03cc55fd-2eeb-8233-a8f3-eaa687c946ca"
+horo: 4
 typography:
   partition: iso
   bondDegree: 20
@@ -23,7 +23,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "f3921b7e-8598-85d0-936b-3b54c042e74d"
+  computationUuid: "2cb6ac35-aed8-87d0-9b4d-e7a262c0eed2"
   stages:
     - stage: path
       stageUuid: "f92f360e-91ae-8e15-9db3-7155422e14a0"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "f1bb01c1-8f36-815a-8b4e-753adb232f9b"
     - stage: horo
-      stageUuid: "50c5a884-5fcc-8aa4-a40c-b086be1605eb"
+      stageUuid: "e1699175-31bc-8c49-8d51-21768a82e8f6"
     - stage: seal
       stageUuid: "09de3638-8d83-81d4-80ac-2612a7e8a9bd"
     - stage: uuid
-      stageUuid: "fe1470c1-356d-8f77-9cc0-9cbee64fedb9"
+      stageUuid: "ae45a075-55ae-8b05-a229-5b341f08e325"
 version: 2
 ---
 # iso/19005/profile

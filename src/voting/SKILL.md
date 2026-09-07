@@ -2,10 +2,10 @@
 name: voting
 description: "Use when the society casts and tallies collective choice — ballots, votes, and rating series — where every gameable violation (double-voting, stuffing, post-cast tampering, aggregate fudging, anonymity collision, cross-tenant pollution) is made a uuid-mismatch any third party can detect without trusting the platform."
 atomPath: voting
-coordinate: "voting · 7/descent · ba62a2ff"
-contentUuid: "2f3f79c4-140b-5044-8347-26cb8a8f0d71"
-diamondUuid: "38624530-82bc-8690-a1dc-a7138e044bd4"
-uuid: "ba62a2ff-ca07-8171-b6b5-c95422dfc7ac"
+coordinate: "voting · 7/descent · 374e0085"
+contentUuid: "6b45d35c-590c-51b5-bc3f-ba21c24ca840"
+diamondUuid: "c95fbd6c-d665-84a1-9c99-fba342c5837c"
+uuid: "374e0085-1c87-80b1-8429-7b9dee4462f9"
 horo: 7
 typography:
   partition: voting
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "879c3699-4403-8604-8f3e-d6b097ce1586"
+  computationUuid: "969f69db-cb09-85a3-a9a2-0620876c98c5"
   stages:
     - stage: path
       stageUuid: "9debe9bf-638e-8ad6-93a1-babceae3d7f9"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "2830f216-7973-88b1-9c00-92409ef13f45"
     - stage: horo
-      stageUuid: "c8871b05-d83c-8b94-aed3-f3ef92aa3926"
+      stageUuid: "825d0285-e2e5-8b51-a1bf-3eb82e498b02"
     - stage: seal
       stageUuid: "4edfd136-7ee9-8e9f-bdd6-b995a1c173ee"
     - stage: uuid
-      stageUuid: "6abaf9e7-e855-8ef3-8974-b258e540662b"
+      stageUuid: "3dbb92ec-2426-812c-9a01-ec1947c4d110"
 version: 2
 ---
 # voting — the unforgeable cast and the honest tally

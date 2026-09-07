@@ -2,11 +2,11 @@
 name: embedded
 description: "Use when reasoning about embedded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/embedded"
-coordinate: "vocabulary/embedded · 5/round · b621d87c"
-contentUuid: "c2540a53-8f48-52e3-86f0-a5d6a85f817e"
-diamondUuid: "175a0c4d-fa57-802b-841d-5638355eb3ee"
-uuid: "b621d87c-4fce-89cc-a276-2280c50ef0eb"
-horo: 5
+coordinate: "vocabulary/embedded · 7/descent · d0e91882"
+contentUuid: "be9250f5-0c3a-5363-a82e-17468582cde4"
+diamondUuid: "2ee9ec81-e373-801a-82e0-c28057775d4d"
+uuid: "d0e91882-07aa-8e78-a3c0-69ba49704067"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e9e9837b-2a00-8f77-ac2e-f7f83550f334"
+  computationUuid: "ea9c89ff-0075-800e-8151-1868ff47c80a"
   stages:
     - stage: path
       stageUuid: "61e44911-3963-8e7a-86fe-9c21c0dca17b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3cd97365-4c8d-8ccd-907e-cf3a7481db13"
     - stage: horo
-      stageUuid: "730c31b7-71e4-851c-b8b7-0e6dacdf0c66"
+      stageUuid: "8159c893-ef30-8937-82fd-6deae07d3acd"
     - stage: seal
       stageUuid: "36019d6b-bbbf-8eec-8a2a-92c8b1c36d70"
     - stage: uuid
-      stageUuid: "e4bc57b6-ca72-85af-9159-2540a27b28d7"
+      stageUuid: "02130cde-bec6-8a12-b7e3-580fe3e9ac26"
 version: 2
 ---
 # embedded

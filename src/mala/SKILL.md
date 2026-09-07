@@ -2,11 +2,11 @@
 name: mala
 description: "Use when reasoning about the 108-step round — the next math after the dualities reach 100% coverage; 108 = 1¹·2²·3³ = 9×12 = 2²·3³ with digital root 9 (the rodin axis), and the dualities walk it as steps toward a full round."
 atomPath: mala
-coordinate: "mala · 1/base · ebf89548"
-contentUuid: "2a5bf6dd-1c59-5545-b77a-17df2270a426"
-diamondUuid: "f0d5c684-f552-845f-99a0-7eabc92a5918"
-uuid: "ebf89548-b491-87e9-8a6c-afc80e7f6cbb"
-horo: 1
+coordinate: "mala · 4/weave · e92ef8c5"
+contentUuid: "46028773-7d5b-575e-8afb-31b953aa590f"
+diamondUuid: "a5a61b1b-6948-807d-9eea-b4d19a9b87c4"
+uuid: "e92ef8c5-0153-8cfe-8164-29b3049d913d"
+horo: 4
 typography:
   partition: mala
   bondDegree: 24
@@ -15,7 +15,7 @@ standards:
   - "the base-10 digital root (the rodin reduction); 108 = 1¹·2²·3³ (computed identity)"
 bindings: []
 signatures:
-  computationUuid: "5dc6dbde-f288-834b-afc5-381a1c296016"
+  computationUuid: "2e257873-44d4-896d-85e4-24f73c2abc80"
   stages:
     - stage: path
       stageUuid: "5d1972a3-9d5a-88db-8bca-4eca8af07ca3"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "7ef61150-2711-8eae-9770-693e53049f64"
     - stage: horo
-      stageUuid: "14e06073-e010-810c-98d6-764e98e1ac06"
+      stageUuid: "10f59c6d-6aff-8c29-aa13-b809ad9a9114"
     - stage: seal
       stageUuid: "6b231a5c-9ee4-8905-a8a3-7a9c84c1c97c"
     - stage: uuid
-      stageUuid: "e132919c-e88e-857c-be2b-49d83a62d038"
+      stageUuid: "167b0b08-424f-8cec-bb92-4c1f58044069"
 version: 2
 ---
 # mala — the 108-step round (the next math)

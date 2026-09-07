@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "math",
-    "uuid": "3d595404-061e-8804-b143-44b2d43d63c8",
+    "uuid": "8969a457-5b98-87ec-9c90-332a7a33f349",
     "words": [
       "math"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet.",
-    "uuid": "38c79a3c-06c6-87d7-b1fe-f83e19cd2a9d",
+    "uuid": "7f676ee6-4deb-83b2-83f0-c32b37b4a9ad",
     "words": [
       "use",
       "when",

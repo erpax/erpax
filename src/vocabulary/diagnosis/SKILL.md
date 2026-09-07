@@ -2,11 +2,11 @@
 name: diagnosis
 description: Use when reasoning about diagnosis — One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.
 atomPath: "vocabulary/diagnosis"
-coordinate: "vocabulary/diagnosis · 1/base · 7bd36a7d"
-contentUuid: "91d44dba-9ca8-5987-a33e-355f13fd0933"
-diamondUuid: "cbc7c000-e953-80b3-bd52-817347b4a080"
-uuid: "7bd36a7d-7827-842a-acaf-b2a4ca478076"
-horo: 1
+coordinate: "vocabulary/diagnosis · 7/descent · dc279bdf"
+contentUuid: "9cff7958-2121-5c8f-a059-a6fe01204db0"
+diamondUuid: "75417c9a-f56e-8bcb-9d9d-e4c152f8e9fe"
+uuid: "dc279bdf-d77d-8e76-b3e2-ad23b1dac138"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9434a9c5-f20f-8c17-b46d-de413d072f59"
+  computationUuid: "4a0c7c35-ba7c-8e00-8554-9646a0e84f66"
   stages:
     - stage: path
       stageUuid: "2a5d8e97-f594-8d90-8a8d-8861736ad8b6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f3c005e7-80cb-89b7-a539-4d000740e6b4"
     - stage: horo
-      stageUuid: "584a14b2-3614-86b1-a765-268274038d9e"
+      stageUuid: "b6473149-ecf9-812c-8071-fd67638392e2"
     - stage: seal
       stageUuid: "c3f6ea4b-969b-8705-942e-43c4203fdbda"
     - stage: uuid
-      stageUuid: "5ab197fe-cc59-8849-897e-d6f76b61f1e7"
+      stageUuid: "c43c9d64-969e-8ab2-9ed5-2d7fbdfadb79"
 version: 2
 ---
 # diagnosis

@@ -2,10 +2,10 @@
 name: formula
 description: "Use when reasoning about formula as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/formula"
-coordinate: "vocabulary/formula · 4/weave · cfe78ee1"
-contentUuid: "8050ee43-c481-5594-b5d9-fa8a15f3505a"
-diamondUuid: "c7777608-646a-80a5-afd9-1db86e30239a"
-uuid: "cfe78ee1-5f38-8c0b-ae29-af6fef48df6e"
+coordinate: "vocabulary/formula · 4/weave · 3c22acea"
+contentUuid: "c74f9dbc-4748-5d87-b8df-b5199be9f6f7"
+diamondUuid: "94fbbde9-73c6-875e-8b7d-968ec58be418"
+uuid: "3c22acea-8be7-8ec2-bd7e-48e00a1ee40b"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d63ee795-b862-8613-bed5-5bde27c3c0de"
+  computationUuid: "5d4e9d04-dc3f-8374-88a5-906d79caf03e"
   stages:
     - stage: path
       stageUuid: "cc943531-9617-8b19-a00b-8145cfa658c5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd2eddf6-eb83-8350-b5da-999c0bf32429"
     - stage: horo
-      stageUuid: "759ba22b-64ec-8de8-a8d5-ce3c15946de4"
+      stageUuid: "2f6f681e-79d0-8585-a5fc-10d63eadca43"
     - stage: seal
       stageUuid: "060ca1ba-c297-8676-bfe8-88d63c67b69c"
     - stage: uuid
-      stageUuid: "aa4a982d-bfef-88dd-8be6-fb6e209d39a6"
+      stageUuid: "03f29b91-f258-8313-9b2d-ff3725374b97"
 version: 2
 ---
 # formula

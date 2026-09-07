@@ -2,11 +2,11 @@
 name: predicates
 description: "Use when reasoning about predicates — Pure predicates over {@link RoleDefinition} rows (`roles` collection)."
 atomPath: "nist/incits/359/predicates"
-coordinate: "nist/incits/359/predicates · 1/base · 74e74ca8"
-contentUuid: "b680afd5-7ecc-5890-a9a3-c61513151d52"
-diamondUuid: "d5c3defa-d7ee-85fb-98e6-855c6ae93af3"
-uuid: "74e74ca8-99b4-8bdb-a03f-ae508fac6032"
-horo: 1
+coordinate: "nist/incits/359/predicates · 7/descent · e3c98561"
+contentUuid: "c6c5386e-f010-59d2-8519-8f7f11f2f434"
+diamondUuid: "125228a1-2c79-875e-8e42-e951e0d67edd"
+uuid: "e3c98561-2a43-8cdf-ac54-7b717b741aa3"
+horo: 7
 typography:
   partition: nist
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "NIST INCITS-359-2012 §5 core-rbac-predicates"
 bindings: []
 signatures:
-  computationUuid: "ccb69d99-e2bd-899b-9598-0945ccd115dc"
+  computationUuid: "e3d5132f-81f8-82b6-a9a4-a6fe8c7351d0"
   stages:
     - stage: path
       stageUuid: "a92087d7-fd7c-8be1-ba93-96820b3e7bf7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7bdde260-b760-844b-943c-c358ae5569df"
     - stage: horo
-      stageUuid: "a00fc056-34b6-81bc-a8bf-8f0c38001283"
+      stageUuid: "dd57b695-1a41-8860-af65-cafd968062a2"
     - stage: seal
       stageUuid: "c892663b-7423-8a70-809b-d38e2b2f1534"
     - stage: uuid
-      stageUuid: "a9b6ac69-b97f-8484-ad5e-560615116e9f"
+      stageUuid: "464fd2f6-30fc-8999-b060-80345da717aa"
 version: 2
 ---
 # nist/incits/359/predicates

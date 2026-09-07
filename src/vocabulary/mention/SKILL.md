@@ -2,18 +2,18 @@
 name: mention
 description: Use when modelling one mention — the singular model of the mentions collection (the plural store); a reference to an actor within a piece of content.
 atomPath: "vocabulary/mention"
-coordinate: "vocabulary/mention · 4/weave · 4a3cfceb"
-contentUuid: "e82f1a19-5b17-57c3-90ba-d579b05ff9fa"
-diamondUuid: "034acdec-d772-856c-a017-2622ab4cd83d"
-uuid: "4a3cfceb-51dc-820b-abf5-4a5c25098f88"
-horo: 4
+coordinate: "vocabulary/mention · 7/descent · 6dab9ea2"
+contentUuid: "0d8b3aa2-a70c-57f1-b553-e4cf6ab4fbc2"
+diamondUuid: "7a2b3f8e-796c-82dd-8736-88df837a9695"
+uuid: "6dab9ea2-9dea-8bb5-977a-5d52eae06dcc"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7749e40a-57b6-8938-a30d-7e2aa03df072"
+  computationUuid: "6ed06672-4bcd-8de8-8243-d43c6118ef38"
   stages:
     - stage: path
       stageUuid: "57cc6233-018d-83e2-b048-ee709cd18841"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b63ac46c-12ca-8ef8-a469-2cf68ae7f9d9"
     - stage: horo
-      stageUuid: "355575cb-7220-892f-ae4e-37d72e810916"
+      stageUuid: "45069e18-fdb9-8e9b-b96e-c3d2a0e764d7"
     - stage: seal
       stageUuid: "6afd0b7d-a2a7-8407-91a5-28abcb6c08c4"
     - stage: uuid
-      stageUuid: "4a9c36c5-a84b-88b2-9eae-b0f9f63b8ef1"
+      stageUuid: "2f2ca9a7-7db4-86f7-aaa7-72ca7d705e29"
 version: 2
 ---
 # mention — the model of one [[mentions]] row

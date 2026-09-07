@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consortium",
-    "uuid": "7805caca-d301-8ca6-b8b0-0860cf963eb5",
+    "uuid": "7fd9f573-c564-83eb-82b1-01e78e4709f9",
     "words": [
       "consortium"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about consortium — A Consortium is a membership Organization whose members are typically Organizations.",
-    "uuid": "7a8cc48d-1be4-86aa-b7d4-5de5cbc4c757",
+    "uuid": "fc5fbfc8-95f5-84d6-ad0a-ba9d679936fb",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: definition
 description: Use when modelling one definition — the singular model of the definitions collection (the plural store); the precise meaning assigned to a term.
 atomPath: "vocabulary/definition"
-coordinate: "vocabulary/definition · 7/descent · a2c52c6e"
-contentUuid: "60e09909-74b6-5573-9e4f-681d5d9ef71e"
-diamondUuid: "87c88a6b-cfeb-83b1-87b7-762fe7a90d5b"
-uuid: "a2c52c6e-680e-84f3-8ac2-527d6b9da9fc"
-horo: 7
+coordinate: "vocabulary/definition · 2/share · 72f5bf64"
+contentUuid: "298bd972-7e24-5516-ad58-d724fbb54e5c"
+diamondUuid: "5f2cae6c-409d-843b-a3b4-5a1210ce1ef8"
+uuid: "72f5bf64-1476-877d-b4fa-a74d617c765e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ad8a8705-3109-8238-a3c2-de68005e8adf"
+  computationUuid: "01080bd4-39da-8a05-8f67-642a92168c53"
   stages:
     - stage: path
       stageUuid: "1364c5e2-2c47-85dd-8d86-5ecba7017d25"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3213ff07-8c97-8b38-9a20-956412a7f90b"
     - stage: horo
-      stageUuid: "e9d15d46-45f4-8ba3-9e1f-efe88f58ca1b"
+      stageUuid: "c23624da-95d3-8d4c-830d-ef7b0ad3e374"
     - stage: seal
       stageUuid: "7318b39e-b23d-8a5d-a00b-3394dece476b"
     - stage: uuid
-      stageUuid: "4a01acb1-b25d-8f52-8b52-3d5fcadb1c5c"
+      stageUuid: "d86a07af-fad8-8ce1-ba6a-4b1b1906f5bb"
 version: 2
 ---
 # definition — the model of one [[definitions]] row

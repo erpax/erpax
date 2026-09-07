@@ -2,11 +2,11 @@
 name: instantaneous
 description: "Use when reasoning about instantaneous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/instantaneous"
-coordinate: "vocabulary/instantaneous · 7/descent · 38cd42a3"
-contentUuid: "5a577038-5c0d-5557-bab4-77305ca19259"
-diamondUuid: "ecbbb59a-2345-8e43-ab2a-850c8cb72a63"
-uuid: "38cd42a3-6879-8279-8b58-2f39843b043c"
-horo: 7
+coordinate: "vocabulary/instantaneous · 8/crest · a2c4f447"
+contentUuid: "ded30712-cbee-592a-b21a-efe1f1c67f63"
+diamondUuid: "0e68000d-3ad1-813a-9a3e-4da58936660a"
+uuid: "a2c4f447-fecd-846a-9129-058ed742c5f0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "45fea77c-7a15-84e3-bccb-48fb3df7cceb"
+  computationUuid: "5c9d7aa2-3bb4-84f4-9448-9c35bc4b4d0a"
   stages:
     - stage: path
       stageUuid: "346f3580-dca4-8978-813a-0f087d735a8c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "abf29ca9-d572-8c94-9981-06e075c60550"
     - stage: horo
-      stageUuid: "e39641a2-a3bd-8d5a-9eee-fb08cfb7d964"
+      stageUuid: "e07c3676-14c8-8267-96bf-593a236dc172"
     - stage: seal
       stageUuid: "1a7f5586-664d-8533-9804-69f6ff8d631f"
     - stage: uuid
-      stageUuid: "228d78c7-90d4-88c5-8f2c-489bf867e708"
+      stageUuid: "9d4b727c-7b49-865a-8630-991e6e7b86e6"
 version: 2
 ---
 # instantaneous

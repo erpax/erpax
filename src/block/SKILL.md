@@ -2,11 +2,11 @@
 name: block
 description: "Use when reasoning about block as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: block
-coordinate: "block · 5/round · b9983895"
-contentUuid: "0dc8735d-13f5-501f-85b6-e3ce65f00d5d"
-diamondUuid: "ef41bd24-a593-8712-bcf4-7b5d9c851238"
-uuid: "b9983895-3578-8980-b5de-bd2f7c946d21"
-horo: 5
+coordinate: "block · 8/crest · 9733ac0d"
+contentUuid: "c37466f2-03a8-55e6-97d6-47b1644e9680"
+diamondUuid: "0bf9d805-9ae9-8750-b278-3df060575452"
+uuid: "9733ac0d-5adb-8c77-a3fb-d7928055ae52"
+horo: 8
 typography:
   partition: block
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e82de2b2-7451-8f79-90ee-535de89649ef"
+  computationUuid: "6d9d6e52-b309-858e-af17-da9733d15c52"
   stages:
     - stage: path
       stageUuid: "e581da96-cb31-82b1-bcfb-2ddebcec694d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "216219ce-4417-8b9b-87b4-622539c678fc"
     - stage: horo
-      stageUuid: "827e6862-740e-88e7-b214-7132f964e856"
+      stageUuid: "9df8d02b-b0bc-8c44-9614-3492e8985518"
     - stage: seal
       stageUuid: "bd3b709b-952e-804a-92a0-35e9c1535bde"
     - stage: uuid
-      stageUuid: "236d6cca-5314-8c0c-979d-2ecf23b5aa70"
+      stageUuid: "1c885ac5-6434-8702-bd45-fa964bea162b"
 version: 2
 ---
 # block

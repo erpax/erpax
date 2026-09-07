@@ -2,11 +2,11 @@
 name: testing
 description: "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema."
 atomPath: testing
-coordinate: "testing · 5/round · 69d5f92b"
-contentUuid: "a2f74cb0-3499-5ab1-ac4d-2614d3478c66"
-diamondUuid: "83ff3fe9-e719-8b52-8ad0-b6cc2f9b02db"
-uuid: "69d5f92b-6f49-8cc1-b65e-093357d022f7"
-horo: 5
+coordinate: "testing · 7/descent · bef0338b"
+contentUuid: "29f83e2f-991e-52e4-9355-21b5c5dbfa3a"
+diamondUuid: "4bc2405e-7002-8f1e-a823-2f4e9c5c750e"
+uuid: "bef0338b-6b69-800e-b128-827ce77268a8"
+horo: 7
 typography:
   partition: testing
   bondDegree: 86
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b9bb99fe-b49a-8882-93a6-0d79fffd5d36"
+  computationUuid: "ee471e88-32ad-8392-ac3f-1da44fe2fdc5"
   stages:
     - stage: path
       stageUuid: "b045970f-6ba3-8082-a1a6-e3d6082d4602"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "78968b17-e4f4-899c-be75-8cf00a5fd301"
     - stage: horo
-      stageUuid: "818ef6f5-92f8-80d2-92ad-48b02acaa1ea"
+      stageUuid: "4cb139eb-79e4-8df2-b422-a18dd6a2bd58"
     - stage: seal
       stageUuid: "8986dcda-83ae-8d42-84c4-eddba02a65bd"
     - stage: uuid
-      stageUuid: "6520c676-a5d6-89c9-b0d6-09740a43d5c1"
+      stageUuid: "5e09fd4f-ba77-86de-a768-07a81ecb39a6"
 version: 2
 ---
 # testing — the society proving itself against its own schema

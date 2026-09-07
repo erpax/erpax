@@ -2,11 +2,11 @@
 name: vehicle
 description: "Use when reasoning about vehicle — A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."
 atomPath: vehicle
-coordinate: "vehicle · 7/descent · 801ecb8f"
-contentUuid: "448110db-2d96-544b-a35b-c864fba9730d"
-diamondUuid: "f316791e-11a3-8ae9-aedb-3ae4b6d5f59d"
-uuid: "801ecb8f-d2ee-814b-98d1-00be456b71c0"
-horo: 7
+coordinate: "vehicle · 4/weave · a0e9cfd4"
+contentUuid: "bfb9348c-e022-5631-aa3e-c467643de77c"
+diamondUuid: "05d13d08-e78d-81ad-bf1b-f329512cb6c8"
+uuid: "a0e9cfd4-faa3-8b04-8c32-3090486c777d"
+horo: 4
 typography:
   partition: vehicle
   bondDegree: 75
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dce03902-b67e-8915-8924-2d2c9a9ca4d8"
+  computationUuid: "925a2aef-03f8-8636-9981-0351c18b8eef"
   stages:
     - stage: path
       stageUuid: "6c1d143d-4b27-876e-a475-f0e30032736d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b6400891-6740-8ab3-833a-873e8fc5cdb4"
     - stage: horo
-      stageUuid: "afd367df-59a5-856c-8b9c-3a77dad431c6"
+      stageUuid: "36b99f23-c48f-8649-bf31-47006bf3e937"
     - stage: seal
       stageUuid: "b1abd8e9-b583-8372-886d-15ad4ec62480"
     - stage: uuid
-      stageUuid: "1f66a0e4-b053-8ebc-9685-c8c581069eba"
+      stageUuid: "8b297f12-9614-8a31-b54e-d38a0369053f"
 version: 2
 ---
 # vehicle

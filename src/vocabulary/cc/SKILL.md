@@ -2,10 +2,10 @@
 name: cc
 description: "Use when reasoning about cc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cc"
-coordinate: "vocabulary/cc · 2/share · 423ca531"
-contentUuid: "7f392a69-24d1-5612-9269-85bbf2bcc119"
-diamondUuid: "f4c76686-ff88-84c9-8bc7-a89078d077bb"
-uuid: "423ca531-71ab-8b4d-a7df-468a1bd54914"
+coordinate: "vocabulary/cc · 2/share · 714bec2e"
+contentUuid: "3ec1122a-8832-589b-a72c-a796f7355947"
+diamondUuid: "9689ac45-cbdf-87c8-99d4-8b8fd675c154"
+uuid: "714bec2e-299d-8805-ba74-91a06ecd2fa1"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "66693162-0ff0-8126-ad66-80a2f1869601"
+  computationUuid: "9c90f314-1f3b-8838-8ba6-d83fbc9a4ecf"
   stages:
     - stage: path
       stageUuid: "80ba8ba8-2ddf-865e-b2fe-094c6c5fd4ed"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "756499db-0e80-8788-bbb7-b2babd4f9921"
     - stage: horo
-      stageUuid: "6392aafc-f363-80e4-9550-db4d11bebf6c"
+      stageUuid: "7c3d6ce2-b61d-8bf3-b46f-a397c4277c32"
     - stage: seal
       stageUuid: "4a1267dc-66f6-8811-b67e-7b858ddb9aaf"
     - stage: uuid
-      stageUuid: "98c0be7c-3f95-8b0c-a290-6553e12360d2"
+      stageUuid: "715b3fcf-facf-8891-bef5-816bce2b2cd6"
 version: 2
 ---
 # cc

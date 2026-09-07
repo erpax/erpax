@@ -2,18 +2,18 @@
 name: impairment
 description: "Use when an asset's fair value or recoverable amount falls permanently below book value, triggering writedown testing and loss recognition — mandatory under IAS-36 for all assets"
 atomPath: "vocabulary/impairment"
-coordinate: "vocabulary/impairment · 5/round · 2f44ea6d"
-contentUuid: "ac050b88-20e1-59b2-bcc8-e304f20af625"
-diamondUuid: "63abb528-1e9b-8265-9f38-0dacd327a235"
-uuid: "2f44ea6d-1d11-8818-912e-00daebdf5a34"
-horo: 5
+coordinate: "vocabulary/impairment · 2/share · e65129b1"
+contentUuid: "4b42ac91-b60b-5849-a5e0-df6d0a6be39e"
+diamondUuid: "ceb4daba-e77e-85db-8fb8-2d74b707ee34"
+uuid: "e65129b1-e84f-8704-b581-e1094fd7cf9b"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f1e34534-e27d-8f12-91a9-733db13ee31c"
+  computationUuid: "92e975b7-b7ac-82f1-900e-63624ebbf5e6"
   stages:
     - stage: path
       stageUuid: "c297bbe0-6039-8ed6-bb45-5644926e36e9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "97195f1f-457c-887e-97bd-7e277eb10e6c"
     - stage: horo
-      stageUuid: "34ce0cb2-6304-88ba-a4c9-288ae048db18"
+      stageUuid: "0cfe8c69-c3cf-8dd1-8946-628ecb23a098"
     - stage: seal
       stageUuid: "974d422a-1e88-8831-8248-e5bdcd03cf7e"
     - stage: uuid
-      stageUuid: "5a5723fb-da6d-820c-9482-8c45d47838b7"
+      stageUuid: "cc54e17e-6723-8688-a119-80495e23f582"
 version: 2
 ---
 # impairment

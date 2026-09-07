@@ -2,11 +2,11 @@
 name: participation
 description: "Use when reasoning about participation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/participation"
-coordinate: "vocabulary/participation · 1/base · d60735eb"
-contentUuid: "e62cd760-1c0f-5e2d-a657-a8590d476c31"
-diamondUuid: "a17db0bd-2a80-8ae3-9b36-9199694a0b5d"
-uuid: "d60735eb-65d5-8fe8-8be4-f981d013388a"
-horo: 1
+coordinate: "vocabulary/participation · 5/round · 1c0c77d1"
+contentUuid: "6a2d7209-7d02-5d06-b5d2-062ee6cedd62"
+diamondUuid: "2bc566af-086d-8cec-8aaa-e2689061c40f"
+uuid: "1c0c77d1-fc6a-8031-8fb4-7831b480fd3b"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "09ccb8fb-e0d0-8956-b634-4697c21e632e"
+  computationUuid: "549d488c-e6b8-89a8-8ff6-92087d9cd307"
   stages:
     - stage: path
       stageUuid: "356ab068-1e52-846b-a1a6-d73fb08362a7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d776cd1d-565f-80bf-af6b-90560a37e27d"
     - stage: horo
-      stageUuid: "7ef9aba9-5d71-8d6b-8f10-77256155f0e7"
+      stageUuid: "ae7bd237-99cd-8e34-bcb4-d2ee7c44f0b6"
     - stage: seal
       stageUuid: "d0d1032e-4848-8115-b9cf-935340615628"
     - stage: uuid
-      stageUuid: "5d1e940f-71fc-8a2d-a8ee-49cee5832bbf"
+      stageUuid: "134277a9-bcca-86d3-b0fe-1bc0a4a866b6"
 version: 2
 ---
 # participation

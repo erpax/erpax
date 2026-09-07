@@ -2,10 +2,10 @@
 name: adjustment
 description: Use when modelling one adjustment — the singular model of the adjustments collection (the plural store); a correction posted against a prior figure or balance.
 atomPath: "vocabulary/adjustment"
-coordinate: "vocabulary/adjustment · 8/crest · 09557f86"
-contentUuid: "dc8bebc3-3281-5282-b4fb-de64bf48adef"
-diamondUuid: "989b5cc7-8f49-8518-9af3-24182a4640d4"
-uuid: "09557f86-dd19-8b18-a65c-6d2fda350414"
+coordinate: "vocabulary/adjustment · 8/crest · f7abe930"
+contentUuid: "8f988857-b991-5e75-a07b-896a8ec5248c"
+diamondUuid: "6ea5a88d-8620-8fc8-a827-6c311e386d47"
+uuid: "f7abe930-9e22-8f95-adf7-9a7043051b99"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d5d2834e-1520-8bf2-9470-62059cbd9345"
+  computationUuid: "c9bab9a9-ddca-894e-8e6c-c04377f12991"
   stages:
     - stage: path
       stageUuid: "da69af37-b23b-8ca0-b9cc-e894d7ffe4dd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a56f8671-94b4-894a-a437-a1127ca7f7d5"
     - stage: horo
-      stageUuid: "7538faf4-82fe-8ee9-9f17-adc217bdc374"
+      stageUuid: "02388bbf-d788-86f2-bbc5-d920d07e4eb1"
     - stage: seal
       stageUuid: "4ccae9a3-efa2-8e57-9609-78ed56f95ac7"
     - stage: uuid
-      stageUuid: "0915c779-fe73-8074-92a6-fcabff55298e"
+      stageUuid: "6b02221e-735c-86b9-97d6-0fa7f0c5a933"
 version: 2
 ---
 # adjustment — the model of one [[adjustments]] row

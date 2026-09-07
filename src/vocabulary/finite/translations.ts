@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "finite",
-    "uuid": "7dab7f1f-4911-8e56-8f5f-d303cb4b2400",
+    "uuid": "16d6556b-a301-8dfa-962a-651a2bd6096a",
     "words": [
       "finite"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about finite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "a4394e19-e22f-8b19-9fea-1e3e7ed3b6bd",
+    "uuid": "84afad70-a4c6-88ee-af7f-223dddf4a58d",
     "words": [
       "use",
       "when",

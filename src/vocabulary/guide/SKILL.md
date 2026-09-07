@@ -2,11 +2,11 @@
 name: guide
 description: "Use when reasoning about guide — Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of p"
 atomPath: "vocabulary/guide"
-coordinate: "vocabulary/guide · 4/weave · dd9e89d4"
-contentUuid: "cb2c6648-ec20-56cf-8ebf-91933e0caa9a"
-diamondUuid: "bae2d8d2-75cc-885a-b53f-b1e189da67a2"
-uuid: "dd9e89d4-9d3d-8ce1-a4fd-38ad4e0e544d"
-horo: 4
+coordinate: "vocabulary/guide · 5/round · e77148a0"
+contentUuid: "f2347181-99bf-5c25-9ff7-be309594258d"
+diamondUuid: "30f0dd75-c363-8c33-bcb3-2dbe1ae756ed"
+uuid: "e77148a0-a7a9-8211-95bd-1bee6a38be8b"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1d3a4713-a1ec-854e-8a45-5327056a491d"
+  computationUuid: "27858332-0524-860e-8646-f118297ebb22"
   stages:
     - stage: path
       stageUuid: "0d40bb44-9793-8a02-b113-2b632d3196ab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b22412ef-933b-82a5-99dc-0c288cf16780"
     - stage: horo
-      stageUuid: "43efbe05-670f-855e-86b3-93501344102c"
+      stageUuid: "fe133fdf-de37-843d-8eee-c512572420d3"
     - stage: seal
       stageUuid: "5c734da7-79c6-87c1-95ad-0555658114bf"
     - stage: uuid
-      stageUuid: "e9bace8e-2028-80cd-b167-1baf3abd7f9d"
+      stageUuid: "c5dbe1cb-fd09-878e-9df0-0f191d91b1a9"
 version: 2
 ---
 # guide

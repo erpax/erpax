@@ -2,18 +2,18 @@
 name: engagement
 description: "Use when measuring or improving involvement/participation — employee engagement, customer engagement, learning engagement. The observed commitment/interaction level."
 atomPath: "vocabulary/engagement"
-coordinate: "vocabulary/engagement · 8/crest · 73789861"
-contentUuid: "e8341be6-815a-5bc3-8e7f-e6e08e04cd7b"
-diamondUuid: "4357de6c-6af5-85ab-8945-c7688a0629a2"
-uuid: "73789861-9fad-856d-8ff1-4c1e4ea9b90f"
-horo: 8
+coordinate: "vocabulary/engagement · 1/base · 0d0d03df"
+contentUuid: "4e47ad40-01d2-517a-bb33-a8f4a2e528b8"
+diamondUuid: "33e79cf6-fa88-89a9-8db7-39f701a3c5a7"
+uuid: "0d0d03df-0b2d-891b-81d4-bd148e845e56"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ac7dcc18-36f0-83ac-87ae-29033e5cc2fc"
+  computationUuid: "3944793b-b801-8785-8aaa-7ded62935a38"
   stages:
     - stage: path
       stageUuid: "41a488fa-8935-83d0-98e7-b0bbe8ffe1fd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "48d292cd-ea8d-87f4-a13a-ce73e3bf5013"
     - stage: horo
-      stageUuid: "ecfe09e7-a8a1-8a1d-911f-dc58c72a60dc"
+      stageUuid: "de182433-430c-82b5-83e5-0d85a0e1c378"
     - stage: seal
       stageUuid: "99a02f31-4255-8fd4-ba19-5d4e1e2cad52"
     - stage: uuid
-      stageUuid: "be6837c4-8539-8d0b-9c7b-29ab31baacef"
+      stageUuid: "6ca44cb1-cfab-8160-a42c-ab527c026f29"
 version: 2
 ---
 # engagement

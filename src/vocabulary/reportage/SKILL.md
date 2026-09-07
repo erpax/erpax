@@ -2,11 +2,11 @@
 name: reportage
 description: "Use when reasoning about reportage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reportage"
-coordinate: "vocabulary/reportage · 8/crest · 752ef5ec"
-contentUuid: "2da92290-0d95-5cc5-9143-d655ee3d5bdb"
-diamondUuid: "f17e349b-f48d-85bc-b9c8-64792c7713ab"
-uuid: "752ef5ec-a2ce-819d-b9c3-8b6c69a3133b"
-horo: 8
+coordinate: "vocabulary/reportage · 1/base · 9311bcbe"
+contentUuid: "0e2e70f7-f573-5c90-a228-b699c2af4c51"
+diamondUuid: "13091cbc-a637-8d5f-a720-6ee91c114f1f"
+uuid: "9311bcbe-58af-8751-b136-1a9e5c49de49"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a7658827-50d1-8ba0-858c-cdbd7b5b3940"
+  computationUuid: "1769ebaa-3a5f-8137-8b20-2daaea10eef7"
   stages:
     - stage: path
       stageUuid: "f00fa3c6-84e1-8b23-8e15-a971e3426e6e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ee0c84de-33dc-8bb0-830a-0b605f28e145"
     - stage: horo
-      stageUuid: "ca0efc15-e96d-89d0-b00f-eb140f0e37e6"
+      stageUuid: "486a72ed-a271-868a-a781-bfc975221aed"
     - stage: seal
       stageUuid: "1f5bb3aa-b7ea-8392-849d-6bccf1ca0e28"
     - stage: uuid
-      stageUuid: "9cbfb305-ca9b-89da-8d9a-822ecc8f29f2"
+      stageUuid: "ca28a91a-d689-891d-ba71-7cedb13d3ce7"
 version: 2
 ---
 # reportage

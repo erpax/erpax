@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "brain",
-    "uuid": "891aa3ae-e896-8be3-919d-0d652b6ad804",
+    "uuid": "38de2755-a43f-89df-a315-71995a62dd54",
     "words": [
       "brain"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's matrix as the connectome organ — a small-world network where any node reaches any other in a handful of hops, wired sparsely yet integrated. ~86 billion neurons, ~150 trillion synapses; high clustering, short path length. Three properties (small-world path length · sparse efficient wiring · connectome-scale cross-check) are computed and mapped — a structural isomorphism — onto erpax's link graph and integrated self-model.",
-    "uuid": "c03c2647-7036-8df7-9c8a-5b58751ee7a7",
+    "uuid": "6cafc5ab-120b-8de0-b7ad-8697bca20c3e",
     "words": [
       "use",
       "when",

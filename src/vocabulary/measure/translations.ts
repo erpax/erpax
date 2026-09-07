@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "measure",
-    "uuid": "ec353721-02be-87e1-99ad-9dfa91470ea1",
+    "uuid": "8e6742eb-7010-8ed8-af32-f92c95772ea3",
     "words": [
       "measure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a value carries a physical quantity — a number + a unit of measure (UN/CEFACT Rec 20: KGM/MTR/LTR/HUR/H87…), UoM-aware rounding, unit conversion, BOM/stock/production/line quantities. The MeasureConcern/quantity field-factory; a quantity is value+unit, never a unit-baked field name — the substance twin of currency (value+ISO-4217).",
-    "uuid": "4fe56094-e090-895f-97ea-efe7e1e2c89b",
+    "uuid": "f5187ad4-84e8-8ed0-8d59-07d89ecabff9",
     "words": [
       "use",
       "when",

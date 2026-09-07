@@ -2,11 +2,11 @@
 name: am
 description: "Use when reasoning about am as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/am"
-coordinate: "vocabulary/am · 1/base · f593c70a"
-contentUuid: "0896308d-118c-546f-97b2-31eb1c925d02"
-diamondUuid: "e66e4771-5b0c-80c1-ada4-3ba462ae2201"
-uuid: "f593c70a-ea8d-8618-ba8d-277786512456"
-horo: 1
+coordinate: "vocabulary/am · 8/crest · f43c4771"
+contentUuid: "e34dd26c-84ea-5773-b810-10565ddf24b2"
+diamondUuid: "1da1dc3a-b6b7-8681-a3cf-e5c1b302f892"
+uuid: "f43c4771-a3be-8296-95a2-b69b41b77634"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "90d9b711-9007-8e35-8780-8caa408d43fa"
+  computationUuid: "531065c8-e176-8721-94d9-8dc98fa6a076"
   stages:
     - stage: path
       stageUuid: "bdac8900-d178-89f0-bb0f-6fcd56398e27"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cfb7f073-ae67-8233-9afa-35324df8c1bf"
     - stage: horo
-      stageUuid: "014061ae-5dfb-855a-8523-ea7d39f38085"
+      stageUuid: "a6c075f7-6f71-876e-9d71-0d7f1b06b493"
     - stage: seal
       stageUuid: "8c3426b9-69dd-818d-8fe9-b09bd96a9fec"
     - stage: uuid
-      stageUuid: "066b0fe2-6b81-8e4b-9070-8881ffdfa22c"
+      stageUuid: "aeacd38e-1c8f-8dd1-8dab-3546c1f67d21"
 version: 2
 ---
 # am

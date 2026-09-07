@@ -2,11 +2,11 @@
 name: published
 description: "Use when a Payload collection should show drafts to logged-in users but only published versions to anonymous callers — the access predicate that grants `true` to a session and otherwise returns the published-only Where filter."
 atomPath: "authenticated/or/published"
-coordinate: "authenticated/or/published · 5/round · ca4ed530"
-contentUuid: "ff3bfba3-6648-5f4c-b57e-9e8843a47c15"
-diamondUuid: "fac3554c-5d17-881d-b2b9-0548626bd7ec"
-uuid: "ca4ed530-2bf7-8bc1-a833-0534676fd2b0"
-horo: 5
+coordinate: "authenticated/or/published · 2/share · 0a2d0afe"
+contentUuid: "3318adbd-84ae-5d54-9249-37f813901649"
+diamondUuid: "4ffb2d85-2b9d-89f9-bc01-306758189f77"
+uuid: "0a2d0afe-a2b6-8cfa-b02c-07818450e6b2"
+horo: 2
 typography:
   partition: authenticated
   bondDegree: 14
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "c0fb4a02-3309-817b-88e3-1eb07f2fd09f"
+  computationUuid: "c51001de-a656-88ff-9018-f4dbdd40bccb"
   stages:
     - stage: path
       stageUuid: "77e73e4e-1f3d-8153-89d4-719928b2850f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4e13624c-2aec-89da-bf29-2b800ab0ed81"
     - stage: horo
-      stageUuid: "f1302132-2d71-83c8-b8ca-d103ab579f40"
+      stageUuid: "5e015fc1-55c3-8047-96c5-f194e87f166d"
     - stage: seal
       stageUuid: "3e059415-bbed-8eb7-a694-938a7978b483"
     - stage: uuid
-      stageUuid: "a62317c7-e80c-8c73-b6aa-240dd6fab4a3"
+      stageUuid: "fb173344-bfad-879d-aaf4-4429bccf9fc2"
 version: 2
 ---
 # authenticated/or/published — draft for auth, published for anonymous

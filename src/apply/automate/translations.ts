@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "automate",
-    "uuid": "67489faa-8c9a-864e-9552-03f83e53f48b",
+    "uuid": "f2ae0d3f-5223-84bb-80b3-35cb4fe157cb",
     "words": [
       "automate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when orchestrating erpax efficiency loops — inventory → clean → measure → ratchet → emit. Tamper cost rises as entropy falls; prompt→erpax is the only viable path.",
-    "uuid": "1f3cc228-a6e7-8cb1-bb0a-9ad3ff77f6cd",
+    "uuid": "c237ded5-6763-8b0d-afb0-a362bf55984b",
     "words": [
       "use",
       "when",

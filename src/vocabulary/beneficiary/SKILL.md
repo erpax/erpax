@@ -2,11 +2,11 @@
 name: beneficiary
 description: "Use when reasoning about beneficiary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/beneficiary"
-coordinate: "vocabulary/beneficiary · 7/descent · a1ea7b5b"
-contentUuid: "9d791e18-1fc9-5fb4-a77b-ae2b13a24604"
-diamondUuid: "3ceeb474-3259-8962-b1f5-a59d5b5db352"
-uuid: "a1ea7b5b-e005-8b89-bda1-fec3a67f1c80"
-horo: 7
+coordinate: "vocabulary/beneficiary · 1/base · 69ca151c"
+contentUuid: "9af2ccad-39a1-5443-a56d-523ee4bb23bc"
+diamondUuid: "80ff39c0-8f43-8eee-b5a6-3fa39c10094b"
+uuid: "69ca151c-c476-8561-b9e5-8865ed700cbc"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "969ef3a0-d762-8981-a77e-e5cc0d9e0fb0"
+  computationUuid: "a9eade18-50b3-822f-abd7-ecd4bd178252"
   stages:
     - stage: path
       stageUuid: "35aa0b02-9da9-8c23-97d7-9928e59f54d0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eea711e3-a1be-824a-8c56-1756d6ff65c2"
     - stage: horo
-      stageUuid: "868da03e-bfc9-816e-b021-c12d25c46092"
+      stageUuid: "b4f9fd5b-6edf-8d1d-b23d-b94e94581c9a"
     - stage: seal
       stageUuid: "4f743d4a-a086-8730-a380-3f4af163edd9"
     - stage: uuid
-      stageUuid: "322f1db5-1a8a-8736-bf50-86f537affc71"
+      stageUuid: "0c1b8f02-3247-821a-8c4d-b2e0ccb183ad"
 version: 2
 ---
 # beneficiary

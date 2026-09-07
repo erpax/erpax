@@ -2,11 +2,11 @@
 name: charitable
 description: "Use when reasoning about charitable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/charitable"
-coordinate: "vocabulary/charitable · 7/descent · 5e2180ea"
-contentUuid: "ed6a413c-f5c9-5422-b910-db9c4aa1205a"
-diamondUuid: "5ac7bec9-28ce-88c6-8fcb-0f2d85891da0"
-uuid: "5e2180ea-02e8-8da7-bc21-5260e2114b08"
-horo: 7
+coordinate: "vocabulary/charitable · 5/round · fa6ed4fc"
+contentUuid: "1631ee2a-1c09-503a-8e8f-fe00f6936a45"
+diamondUuid: "33bda0d1-5d60-8fec-9cb4-a11ac4f06813"
+uuid: "fa6ed4fc-3ed6-8155-ae98-5739eae330be"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "eae9300c-b0bc-8dcb-803f-66e5a2f944d2"
+  computationUuid: "50add609-859b-800c-a0c6-4910719378cf"
   stages:
     - stage: path
       stageUuid: "26f96bb2-2f11-8dac-b014-8811740c4443"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32ff538e-6d94-8b93-87de-680a9d498cbc"
     - stage: horo
-      stageUuid: "639c801e-56b5-8325-8dcc-63e1b2cf9b87"
+      stageUuid: "f38fd3c5-de8f-8cb9-8bb8-256ac02ed0e7"
     - stage: seal
       stageUuid: "ac06b38a-4a04-8e17-ac42-ff89da5b8ebe"
     - stage: uuid
-      stageUuid: "ba7aed53-9cb7-88db-8566-00f6c1688a36"
+      stageUuid: "544ea126-93ff-8928-a6c8-6c581b8bad48"
 version: 2
 ---
 # charitable

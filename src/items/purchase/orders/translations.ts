@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "orders",
-    "uuid": "197ae02a-9a03-875c-994e-6edd2f42cd8c",
+    "uuid": "b02102da-d5b2-8e66-a891-885cd184cd7e",
     "words": [
       "orders"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when raising or reviewing a vendor purchase commitment — line items, Incoterms 2020 delivery terms and location (FOB/CIF/DDP/EXW), order/due dates, currency, and SOX three-way-match (PO → goods receipt → invoice). The procure-to-pay header that gates GL posting timing by FOB point per IFRS-15 §38-42.",
-    "uuid": "70af3489-651e-8685-893d-433e283434e2",
+    "uuid": "3ee34317-c4f9-8ee6-9573-9779ca975174",
     "words": [
       "use",
       "when",

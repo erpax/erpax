@@ -2,11 +2,11 @@
 name: fact
 description: "Use when reasoning about fact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fact"
-coordinate: "vocabulary/fact · 4/weave · 3612c55a"
-contentUuid: "cd800933-92ba-5a6f-8bb3-f3b8419b0fac"
-diamondUuid: "12fa1b8e-21bb-85cb-8e95-ba3b71ec5977"
-uuid: "3612c55a-5c13-8582-8cd0-d7dbafa7c710"
-horo: 4
+coordinate: "vocabulary/fact · 7/descent · bc6e52ce"
+contentUuid: "74b14ce3-49bc-5d74-8a92-9420e63be1a3"
+diamondUuid: "38f71e4c-7e34-8fd4-960c-b72b3a2225b3"
+uuid: "bc6e52ce-5e35-8b53-b441-edd29c090d6f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6df95df5-7100-8e9f-9e80-9c954d2fa058"
+  computationUuid: "36f58b20-0b1b-88bd-89ee-ef9ac0a38f80"
   stages:
     - stage: path
       stageUuid: "428f1d95-f2e4-8038-b8f8-28c1f1cd56da"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "30554583-ba41-88fb-8574-72fb535ca56d"
     - stage: horo
-      stageUuid: "31ba8bc7-fede-8a42-a506-856f1af1f130"
+      stageUuid: "1c5eb7af-5151-84be-bff5-0e71e4d4cc2b"
     - stage: seal
       stageUuid: "1eb559ee-84e4-890f-be3a-b5c6f0e45044"
     - stage: uuid
-      stageUuid: "54a7e7d8-7cd3-87fb-8d29-825726e76f02"
+      stageUuid: "c4c6da90-7886-8103-8fd0-125a3e29959e"
 version: 2
 ---
 # fact

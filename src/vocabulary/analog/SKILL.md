@@ -2,18 +2,18 @@
 name: analog
 description: "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field."
 atomPath: "vocabulary/analog"
-coordinate: "vocabulary/analog · 8/crest · 81211a5c"
-contentUuid: "c9869cd5-a6d0-5023-a0d1-02922a70fb9f"
-diamondUuid: "60a283db-91b2-8443-ba28-b2e471960bd4"
-uuid: "81211a5c-ad50-83da-aeff-a4363069d2c1"
-horo: 8
+coordinate: "vocabulary/analog · 7/descent · 3c7129d4"
+contentUuid: "acb0552d-581d-557c-af20-955997e09f9d"
+diamondUuid: "ec6b1a86-7877-8e8e-9e11-82b9bfbe3c63"
+uuid: "3c7129d4-7f5e-85fd-8fcc-e23ae2a45816"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 121
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8a3d30c4-3129-8ce0-9adf-72a0c4017268"
+  computationUuid: "e0a7338b-eb90-8c0d-ad5e-59b31ca8e31c"
   stages:
     - stage: path
       stageUuid: "7e1d0ce1-f72f-8593-9d1b-f2c53cfac1ab"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "88e348c2-b91d-8661-bc02-473ad4f6e0bc"
     - stage: horo
-      stageUuid: "1c311d9a-91a6-8ca3-b66a-433b0bac400b"
+      stageUuid: "0f0988ea-603a-8ddb-8915-40e0c594a70d"
     - stage: seal
       stageUuid: "ebbee0f1-046f-8405-b6c5-0f0606e80acb"
     - stage: uuid
-      stageUuid: "0be052b4-b59b-8e53-9e7a-7a231c33d906"
+      stageUuid: "33381a1c-2857-8ce2-a16e-b9c1ced24dde"
 version: 2
 ---
 # analog — the continuous computed aura (gapless at every scale, at no cost)

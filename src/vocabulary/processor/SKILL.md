@@ -2,11 +2,11 @@
 name: processor
 description: "Use when reasoning about processor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/processor"
-coordinate: "vocabulary/processor · 4/weave · 4456d425"
-contentUuid: "7d7d5589-10c5-555e-b142-0ec62a41ab2e"
-diamondUuid: "b700c6e7-b2b2-8b4d-bdb4-c14e2f509e24"
-uuid: "4456d425-ef66-8bf9-ab01-9f6441ad2974"
-horo: 4
+coordinate: "vocabulary/processor · 7/descent · be8957ca"
+contentUuid: "7aa6f504-5224-537a-8166-b3ad1b36d88b"
+diamondUuid: "2039c5ec-5f91-8e25-bfe4-9b8df13bd561"
+uuid: "be8957ca-6d43-82df-854b-6ae7a74cc1e0"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "09e3fda5-9f86-8e72-b315-0b2b94492701"
+  computationUuid: "3a3ec75a-2df0-8040-8315-3a41d23bc962"
   stages:
     - stage: path
       stageUuid: "87fdd880-2eb1-8cfd-b491-9549e8c6d018"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "06b99dca-eb9c-80e8-86f9-e5abdad4ba22"
     - stage: horo
-      stageUuid: "811600a9-dbcc-8cdc-9046-1e667b0f089e"
+      stageUuid: "80d71249-5342-8165-ad34-478a278f11ee"
     - stage: seal
       stageUuid: "ad45919f-4615-80c3-ab84-cc8d569f9205"
     - stage: uuid
-      stageUuid: "fa7861be-71a0-8716-997f-899507499915"
+      stageUuid: "d6159515-0cc9-8861-b51e-6fcd5518fc21"
 version: 2
 ---
 # processor

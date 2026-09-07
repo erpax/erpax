@@ -2,11 +2,11 @@
 name: test
 description: "Use when reasoning about test as a medical facet of medical — vocabulary pivot to @/test; nested not duplicated."
 atomPath: "medical/test"
-coordinate: "medical/test · 1/base · 912d35ec"
-contentUuid: "82bee071-3c5a-58de-8ce2-1008ecafc61c"
-diamondUuid: "c47df8b1-b250-8b53-a089-afd0f2b9dc1c"
-uuid: "912d35ec-035f-8ba4-a715-9eb32417e385"
-horo: 1
+coordinate: "medical/test · 5/round · dbe8d786"
+contentUuid: "26e98394-bb77-5aad-8336-f4b35e507b8f"
+diamondUuid: "5818869b-d68e-8d7e-bbc7-dac05124c761"
+uuid: "dbe8d786-f133-8fcd-b9d6-15113f61af1f"
+horo: 5
 typography:
   partition: medical
   bondDegree: 102
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "daff3b00-8d31-827b-b38e-253a05048ebf"
+  computationUuid: "02bb429e-e2b1-8db5-9197-dd469c120c9a"
   stages:
     - stage: path
       stageUuid: "a1d06cbb-840f-8b9e-9ff4-abf91813154c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8c2cc8ee-87de-8b70-991a-12496c99eaa7"
     - stage: horo
-      stageUuid: "f41b81e6-3f70-8a40-8fe8-bfcab7143310"
+      stageUuid: "6e4ba697-815a-883a-93ff-74e3186c8e60"
     - stage: seal
       stageUuid: "54762295-5624-8a34-a5b7-4048ca86a84b"
     - stage: uuid
-      stageUuid: "b7273660-85a3-8253-85b8-2843161ca32d"
+      stageUuid: "fddec621-9f6b-8438-8090-e331d3cfd936"
 version: 2
 ---
 # medical/test — medical facet

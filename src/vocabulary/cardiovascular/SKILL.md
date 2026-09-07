@@ -2,11 +2,11 @@
 name: cardiovascular
 description: "Use when reasoning about cardiovascular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cardiovascular"
-coordinate: "vocabulary/cardiovascular · 8/crest · 8921cb31"
-contentUuid: "53cca32d-7056-5c32-ba4a-a7538bca22e4"
-diamondUuid: "331d3577-5a98-82d2-8646-5f1dd1a17f08"
-uuid: "8921cb31-e61e-89ae-8a1d-91731f6d2a99"
-horo: 8
+coordinate: "vocabulary/cardiovascular · 7/descent · ddba96f2"
+contentUuid: "3677c3ce-0ae6-5df9-b162-77f1bd0bbc1d"
+diamondUuid: "2f24a715-4f29-81d5-a2ea-424aabfdd26e"
+uuid: "ddba96f2-1ed0-80e5-ad47-7bf526dd1e07"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "59352651-011e-8057-addb-35e7dd6bcd89"
+  computationUuid: "c1bd1875-3e88-888d-8e48-512de2ab41e1"
   stages:
     - stage: path
       stageUuid: "929048f9-49ff-8b48-89ae-e254eeef54d9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1443f881-386d-80e1-bfd2-8f8c40467ad9"
     - stage: horo
-      stageUuid: "1a03d36e-691d-803f-a6bd-4868481a76cf"
+      stageUuid: "768b7574-955b-8e80-8b31-11a32842965c"
     - stage: seal
       stageUuid: "a2236cad-8f74-8c12-8c62-622a158b605d"
     - stage: uuid
-      stageUuid: "a2fa3303-04a5-8e1b-83f3-2b5f848dd587"
+      stageUuid: "7cd1d659-a792-805c-abb2-abd61158a4c6"
 version: 2
 ---
 # cardiovascular

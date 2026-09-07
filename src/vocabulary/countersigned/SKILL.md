@@ -2,11 +2,11 @@
 name: countersigned
 description: "Use when reasoning about countersigned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/countersigned"
-coordinate: "vocabulary/countersigned · 5/round · d76174a4"
-contentUuid: "64c53303-3302-5631-97f3-ba55373aaccd"
-diamondUuid: "df48e910-4897-837b-ae64-514b62fc805b"
-uuid: "d76174a4-edaf-8612-a885-65e9bf83fd09"
-horo: 5
+coordinate: "vocabulary/countersigned · 1/base · a16ab42e"
+contentUuid: "f00d412d-35e6-57ca-b945-2bc7b9a82b31"
+diamondUuid: "17259602-fd03-8abb-8b3e-a7a73f9384eb"
+uuid: "a16ab42e-348b-83c3-96ee-734a25b30657"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c63e798f-a771-8ee1-aca1-a84a7a3f63b4"
+  computationUuid: "297db2f6-f9dc-8b50-b970-d43863d16292"
   stages:
     - stage: path
       stageUuid: "e67ad2db-baa4-80c4-b3bb-b1060debd02d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fb3115c8-87cf-89fe-8ebd-7567d8cf4a57"
     - stage: horo
-      stageUuid: "131187f7-7d4a-85b3-ba2e-64807ebef973"
+      stageUuid: "93a4f697-d6c1-84b0-aa27-a399ecf2120d"
     - stage: seal
       stageUuid: "75d38112-4532-81b5-8a15-b6597126a183"
     - stage: uuid
-      stageUuid: "bac9fe03-f845-83f6-b9fd-c8b7436d32d1"
+      stageUuid: "43aea184-8268-8e62-8105-b428ed3b454b"
 version: 2
 ---
 # countersigned

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ring",
-    "uuid": "25bcd227-8a32-8058-82bc-f5766bf057f9",
+    "uuid": "a556f465-bc90-8eec-958e-2496d4731ed0",
     "words": [
       "ring"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when analyzing the ring's structure — which elements compose to what, which orbits exist, how trinities move under doubling, where each digit lives (ring / axis / void), and the split between balance (5) and attraction (9).",
-    "uuid": "85ca5804-04c9-8d8b-9a81-51ffd46a9ebe",
+    "uuid": "1c64ecb6-5d7a-8152-bc32-fdff587e5a83",
     "words": [
       "use",
       "when",

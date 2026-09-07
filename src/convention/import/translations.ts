@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "import",
-    "uuid": "1cb1ea87-92bd-82e0-b2e3-eef85d25961c",
+    "uuid": "55ac49e3-520f-8c95-ae24-a4c99c0099e1",
     "words": [
       "import"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the import convention — every import must read from an atom index (@/x), never a deep file or a relative path; coverage is the index-only fraction of all imports, and the convention is enforced by the import lint (a ratchet that fails the build when non-index imports rise above a committed baseline), reaching its ∞ tamper-cost limit only at coverage one.",
-    "uuid": "d6a5a3bf-23e7-8c1c-89b1-7b83ce22ff4b",
+    "uuid": "ee9af58d-2e2f-8b0a-9f71-f80306941b11",
     "words": [
       "use",
       "when",

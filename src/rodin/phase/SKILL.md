@@ -2,11 +2,11 @@
 name: phase
 description: "Use when reasoning about WHERE on the cycle something sits in erpax — the 120° offset of the three axis coils (0°/120°/240°), the ⅓-period animation tick at A432 ms, the moment a version captures. The time-position of a state. Nested under rodin."
 atomPath: "rodin/phase"
-coordinate: "rodin/phase · 4/weave · 775cae6d"
-contentUuid: "179bdd11-a069-5916-9571-4f2362fd50d1"
-diamondUuid: "20e500e0-e0bf-8b5a-a027-755c6887ecab"
-uuid: "775cae6d-3468-8666-a45b-eafe8aa50fe9"
-horo: 4
+coordinate: "rodin/phase · 2/share · dafc6a83"
+contentUuid: "6e8fd167-e03b-52f1-9d40-0787b4270438"
+diamondUuid: "9d12b323-0c04-848e-a290-b2e62410f172"
+uuid: "dafc6a83-808f-82ed-9d87-a3b577a6f2b5"
+horo: 2
 typography:
   partition: rodin
   bondDegree: 48
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "789018ad-1761-86c4-9222-f758e1b95b7c"
+  computationUuid: "5155bff8-6f15-8b05-bd38-8e42463be4a7"
   stages:
     - stage: path
       stageUuid: "896bbf00-4089-8161-91ce-b6648e3f8ca2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8f346ffd-c3dc-8885-8a91-2007e27e7433"
     - stage: horo
-      stageUuid: "4aa5cde0-b449-8a66-968c-3bc184a4c7c3"
+      stageUuid: "9c1f0e8f-ce7e-859c-b23d-bc2e8e7b7697"
     - stage: seal
       stageUuid: "da335eb5-a601-845f-8e52-1b94f852b47b"
     - stage: uuid
-      stageUuid: "af98c581-6206-8ad0-9cc7-d83266ee6b82"
+      stageUuid: "fabd4871-0b39-8b8b-b5ec-ff1a9be9bcd2"
 version: 2
 ---
 # phase — position-in-the-cycle (the 120° offset, the A432-ms tick)

@@ -2,10 +2,10 @@
 name: category
 description: Use when reasoning about category — A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
 atomPath: "vocabulary/category"
-coordinate: "vocabulary/category · 4/weave · 9066d539"
-contentUuid: "1b35b1a5-f7db-5ebb-a989-cec177f13df7"
-diamondUuid: "ea0da560-7bc0-8d20-9c4c-0514e300d3c4"
-uuid: "9066d539-d163-89da-9a3a-d89b414ee255"
+coordinate: "vocabulary/category · 4/weave · a958e663"
+contentUuid: "afb28f14-8bf7-5563-acc4-3531c2bc0e7c"
+diamondUuid: "3a23345d-1f8e-8ef6-b76d-b6a039c85e0e"
+uuid: "a958e663-52d7-8d85-a2ac-79ea2e1cc848"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7a55e69a-3ce9-8b15-a527-ff71411d2a9f"
+  computationUuid: "46c28f38-4a51-8f89-b993-69149e55986e"
   stages:
     - stage: path
       stageUuid: "7d619975-0ca9-8d39-8b29-ea73a44ed23b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d8aab23a-af40-8fa6-9f99-ca8d346734c8"
     - stage: horo
-      stageUuid: "cf314c2b-a268-810f-b7ec-03cd4d39e942"
+      stageUuid: "07bfefa5-5925-8232-85e5-cad0a27dc6cb"
     - stage: seal
       stageUuid: "b0d1a987-9bcf-874f-8be4-11d6ce84ff2c"
     - stage: uuid
-      stageUuid: "eb34ec47-1ee1-8a16-abb1-7c72fe3cf6a1"
+      stageUuid: "bb2c961a-9915-861a-a97e-0ba4ac01624b"
 version: 2
 ---
 # category

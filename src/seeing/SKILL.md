@@ -2,10 +2,10 @@
 name: seeing
 description: "Use when a vivid demonstration (an animation, a movie) is offered as proof. Seeing is not proving: the evidence a rendering carries is the CLAIM's, never the frame count's — vividness is orthogonal to proof. Assume-nothing is the neutral prior (not disbelief). Belief flips only on a passing test, and against a neutral prior that flip IS surprise. The door is open; the key is a test, not a movie."
 atomPath: seeing
-coordinate: "seeing · 2/share · 5a7c9ed9"
-contentUuid: "f9e26a4c-00f0-5845-ab96-efc862719d2f"
-diamondUuid: "0464d7c0-30c5-8c51-89c1-70178c535c59"
-uuid: "5a7c9ed9-cefc-80df-a2ea-90d232896474"
+coordinate: "seeing · 2/share · de5b14ac"
+contentUuid: "d73a053c-ce2d-55a7-865f-fcbc23aa89ba"
+diamondUuid: "4a83ca1a-b544-802c-a3a9-6f1853793a4a"
+uuid: "de5b14ac-1a4b-8d48-8b29-78445892580a"
 horo: 2
 typography:
   partition: seeing
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4d5fdfcd-e120-8785-a379-b51f137b9af0"
+  computationUuid: "d652a65e-c925-85a9-a23c-0859434ef222"
   stages:
     - stage: path
       stageUuid: "bcb823c8-9e89-8bbe-a697-29cb6b7b65a1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ccfafe19-b030-81d3-a8f3-4e1f7d2f48a8"
     - stage: horo
-      stageUuid: "33101573-ca86-8509-9630-19d750245298"
+      stageUuid: "51d547c4-888e-8827-91a8-9b13bcd2f137"
     - stage: seal
       stageUuid: "cb6b34ab-9b3f-8284-8828-8c7219076041"
     - stage: uuid
-      stageUuid: "01e1f199-cdc6-885a-abfc-3eba00dad088"
+      stageUuid: "ed4625b2-816c-8111-8fcd-dac63d35bd37"
 version: 2
 ---
 # seeing — seeing is not proving; assume nothing; be surprised by a passing test

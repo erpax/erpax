@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "certification",
-    "uuid": "d5c2fd32-f1e0-83bf-b755-251f93d34047",
+    "uuid": "e22ec666-01da-8aa6-b5e1-6ea5188eac5d",
     "words": [
       "certification"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a third party attests an operation conforms to a standard — the generic certify→audit→label mechanism behind organic (NOP/EU), biodynamic (Demeter), Regenerative Organic, GLOBALG.A.P., GAP/GHP food safety, and participatory guarantee systems. An accredited agent verifies against a standard and issues a transferable claim; the claim is only as strong as the record proving it.",
-    "uuid": "0b02fb42-3977-85f0-b1b8-249eeed2c453",
+    "uuid": "01ed9cca-239b-85db-84b3-bb044bdff180",
     "words": [
       "use",
       "when",

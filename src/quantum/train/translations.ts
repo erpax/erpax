@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "train",
-    "uuid": "6422c628-5e2f-8de7-9edb-7c8bfc585944",
+    "uuid": "8cab4a7a-49dc-8f5a-891f-ad03a2b1bde5",
     "words": [
       "train"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about training at the quantum scale — infinite agents train themselves yet cannot exceed the device, because content-addressing collapses identical work to one cached result; and zero-entropy reversible computation dissipates less, the 2/3 rodin working-ratio symbolic of that purification.",
-    "uuid": "b92a2812-bab3-86ef-9ed8-f606ec418f70",
+    "uuid": "54634972-55dc-8437-b912-cee3db22f9e7",
     "words": [
       "use",
       "when",

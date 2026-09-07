@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing NIST INCITS 359 — Role-Based Access Control.",
-    "uuid": "4c7181f2-c201-8923-a2b2-aa04f37cbcc3",
+    "uuid": "f89d2bf2-c3c6-8166-9e90-9fcd4682fb83",
     "words": [
       "use",
       "when",

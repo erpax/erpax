@@ -2,10 +2,10 @@
 name: pqc
 description: "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain."
 atomPath: "beyond/pqc"
-coordinate: "beyond/pqc · 5/round · 7aa033b7"
-contentUuid: "35f779e2-958b-5085-82c2-1bba2e7ea1f7"
-diamondUuid: "4411a04c-e8e2-8a61-a11a-c19ea91873af"
-uuid: "7aa033b7-c1a1-83bd-b356-15d6bf98ca2c"
+coordinate: "beyond/pqc · 5/round · f4db3439"
+contentUuid: "ee60ec9c-e055-546b-9bc4-bb9f7a27d6a4"
+diamondUuid: "358a55dc-0751-8042-aad5-e4c8c639e9fa"
+uuid: "f4db3439-855a-8b2c-90a9-2743289d319c"
 horo: 5
 typography:
   partition: beyond
@@ -17,7 +17,7 @@ standards:
   - "NIST-SP-800-63"
 bindings: []
 signatures:
-  computationUuid: "15562bed-0b47-87fd-befd-aa641a79e348"
+  computationUuid: "9987a5b3-7eda-8fe3-918e-dc92abaeb620"
   stages:
     - stage: path
       stageUuid: "f85f7d6a-4941-80ff-a861-f7d878cf2dcf"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "31bddfc0-7937-884e-a920-26133111a862"
     - stage: horo
-      stageUuid: "0f9aeaab-90a6-821f-841f-7c866a132499"
+      stageUuid: "e938f9c6-81dd-8d55-9982-871c76567aeb"
     - stage: seal
       stageUuid: "71ae10f2-0dca-8d23-b6e5-b6abc8dfca03"
     - stage: uuid
-      stageUuid: "b3e37073-1652-8a4b-a99d-a0e7c13a78cc"
+      stageUuid: "3998cb86-225e-8591-9da9-6d38eca46711"
 version: 2
 ---
 # beyond/pqc — post-quantum signatures (the quantum-proof seal)

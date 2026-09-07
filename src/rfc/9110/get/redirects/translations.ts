@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "redirects",
-    "uuid": "47ea5cb8-50fb-87eb-9dee-9f71dac24646",
+    "uuid": "06496996-6eb3-8956-9954-6664a2d25de6",
     "words": [
       "redirects"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about redirects — RFC 9110 §13 cached redirects-collection fetcher.",
-    "uuid": "955177a5-2a6e-81c9-b3a7-3fac3e2ad4b7",
+    "uuid": "14563464-710c-879f-b1be-33a4b832477f",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: rule
 description: "Use when modelling one rule — the singular model of the rules collection (the plural store); a condition-action statement the system enforces."
 atomPath: rule
-coordinate: "rule · 7/descent · f60a9563"
-contentUuid: "b8d83b9d-6e65-548f-8142-4bb1439cff6a"
-diamondUuid: "7e7ca340-91e2-882b-a751-97de532d4ca9"
-uuid: "f60a9563-e016-830b-a578-a65f3a57dd9c"
-horo: 7
+coordinate: "rule · 4/weave · 07ad4f92"
+contentUuid: "d5a259ca-d124-58b6-9c20-dd91fecf1cd9"
+diamondUuid: "c20a81da-534a-8207-aaba-f290089ff3bc"
+uuid: "07ad4f92-555f-81a1-8c2b-08aaedbc1578"
+horo: 4
 typography:
   partition: rule
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "770ed8af-0782-8bdd-aa5a-ce13a50caf7a"
+  computationUuid: "75dc820f-6f92-8162-be74-9ab9f4f4fb5f"
   stages:
     - stage: path
       stageUuid: "351c57f7-e80f-8ac6-8db5-c93e3e9d3772"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c961afc0-be61-8458-b8e9-c6236e37a420"
     - stage: horo
-      stageUuid: "55b60dab-5b61-84fc-afb6-fbd6c78bd62e"
+      stageUuid: "dba24b5d-dbd5-843f-88b7-697fe11f90a8"
     - stage: seal
       stageUuid: "0d97494d-0ba0-8c76-ad9f-53b689dd23b2"
     - stage: uuid
-      stageUuid: "67a5b78e-c9c4-8fec-8b39-8feb1c49eb92"
+      stageUuid: "a3babeb4-9206-812f-8b28-5a49b16ad0d9"
 version: 2
 ---
 # rule — the model of one [[rules]] row

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "take",
-    "uuid": "b6a0c47d-0dd2-8652-b714-31d3785a15d1",
+    "uuid": "453e2138-c7f4-8cb6-80f8-b56b9f29a096",
     "words": [
       "take"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the inflow side of an exchange in erpax — debit, units-in, receive, claim, post-in. The universal root of taking; dual of give, equilibrium is balance.",
-    "uuid": "8af2de5c-ad5c-81ef-9c57-c135adea6891",
+    "uuid": "5da6d6e7-5312-865c-a8f8-4fd6ccf64a8c",
     "words": [
       "use",
       "when",

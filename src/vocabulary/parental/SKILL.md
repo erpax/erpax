@@ -2,11 +2,11 @@
 name: parental
 description: "Use when reasoning about parental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/parental"
-coordinate: "vocabulary/parental · 1/base · 52db5ad7"
-contentUuid: "4b26e7c5-da05-55d0-98e1-a72bf4640fad"
-diamondUuid: "a6419c77-8f26-8baa-8ec4-c2af6ccba268"
-uuid: "52db5ad7-5068-8aa6-8e85-90a390ef5051"
-horo: 1
+coordinate: "vocabulary/parental · 4/weave · 42b971b8"
+contentUuid: "9f25b1d7-25a8-5da8-879a-c08628e629fe"
+diamondUuid: "248ff8a3-42b8-83af-a671-87a80356babc"
+uuid: "42b971b8-d019-835a-8c04-c3149f9e9898"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ca227118-bc20-8360-b453-688ab8ca1f2e"
+  computationUuid: "85317715-5b09-886e-a716-54561eafcccd"
   stages:
     - stage: path
       stageUuid: "f54bc21a-806d-88bb-893b-e2e1f1f72c44"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2dcdc88e-6a66-81ba-aaef-5364b1568e61"
     - stage: horo
-      stageUuid: "63ea71df-f504-88d0-a84d-acb8646192c8"
+      stageUuid: "8614db12-8de2-80b3-b9ed-fed8f3d22dcc"
     - stage: seal
       stageUuid: "5a9737d0-e8ee-86f7-b531-6f851ead6aea"
     - stage: uuid
-      stageUuid: "e6160cdb-b151-8193-82f1-c6d6d327e730"
+      stageUuid: "e3a33955-efd8-81ec-bb2b-b5366f48d9db"
 version: 2
 ---
 # parental

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "skin",
-    "uuid": "c0a2cf94-a6e2-83e6-9292-cc261b76d08d",
+    "uuid": "108cf15a-b75b-8d98-b3ca-8f6b7dcb9683",
     "words": [
       "skin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's boundary — the integument organ. The largest organ (~1.2–2.2 m²), a selectively-permeable barrier between inside and outside that renews itself continuously (~28-day epidermal turnover) and holds the interior to a setpoint (thermoregulation). Three properties (selective barrier · self-renewal · homeostasis) are computed and mapped — a structural isomorphism — onto erpax's sandbox/trust boundary.",
-    "uuid": "1bfeb77d-90e6-8890-b392-1207c8b826e2",
+    "uuid": "3cd10ac5-49a0-8d68-9c96-328c4e09b5eb",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: amp
 description: "Use when reasoning about amp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/amp"
-coordinate: "vocabulary/amp · 8/crest · 5010d16d"
-contentUuid: "aa8bdf77-7567-53c6-ad72-0b2697290aed"
-diamondUuid: "35110c59-8a11-8203-af10-37628ddfc950"
-uuid: "5010d16d-0262-81ee-beeb-9108167fa17c"
-horo: 8
+coordinate: "vocabulary/amp · 5/round · 2382cf1d"
+contentUuid: "0387bf72-5701-55aa-934b-82cf636cc3cd"
+diamondUuid: "08fbf898-765e-8c72-9536-8cfc9d2f5004"
+uuid: "2382cf1d-c3dd-8a7c-a41d-b2317e186624"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "87e6b2ef-ca35-84dd-b145-539a3be56b29"
+  computationUuid: "980121ea-1779-84e4-b308-0377f2ead437"
   stages:
     - stage: path
       stageUuid: "cf1e5050-e044-83d9-8f20-c060a38afdb8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "41c2ddb5-98aa-8e4d-9ad6-0a09eb1ff43b"
     - stage: horo
-      stageUuid: "98418f62-5aa7-8b5a-9820-f2000350df7e"
+      stageUuid: "cafdbf50-4494-8f3e-a194-f699d85b055d"
     - stage: seal
       stageUuid: "38b43312-bdd8-84ba-8ca2-effb184c9086"
     - stage: uuid
-      stageUuid: "2c376030-c02d-8a0c-a6f7-a99e978ae5c4"
+      stageUuid: "40641024-0016-8795-a9c0-f91cfd4fe650"
 version: 2
 ---
 # amp

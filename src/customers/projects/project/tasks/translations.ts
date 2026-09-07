@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tasks",
-    "uuid": "f2c658bd-8408-833a-ae56-7fbec0059e81",
+    "uuid": "2d59db05-7eaf-83d9-9377-7b14e5fa2e86",
     "words": [
       "tasks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project.",
-    "uuid": "197487dc-2626-8ebb-9ba9-aa9988a3c8c8",
+    "uuid": "43e6b3da-8dd3-8a9a-be74-29c27f7c2875",
     "words": [
       "use",
       "when",

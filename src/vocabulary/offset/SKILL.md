@@ -2,11 +2,11 @@
 name: offset
 description: "Use when reasoning about offset as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/offset"
-coordinate: "vocabulary/offset · 7/descent · 6ed27998"
-contentUuid: "42c9fd25-268c-5b97-b6dc-0185a03a09bc"
-diamondUuid: "340e3dd8-b6cf-8a6f-8e74-c5c03ea0affd"
-uuid: "6ed27998-8f83-8903-a6a1-038724c6d2aa"
-horo: 7
+coordinate: "vocabulary/offset · 5/round · b162aaed"
+contentUuid: "6af81f9c-a3c1-5b4e-826f-73638b29f483"
+diamondUuid: "c4515edd-0905-806d-99d1-d7ef7b34eb7f"
+uuid: "b162aaed-0e93-883f-a992-94f1a4d8c726"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8c6396e-23b2-8d3c-a6dc-8be84081d3d2"
+  computationUuid: "4e28bf18-8846-8efd-8c46-090deeb274ab"
   stages:
     - stage: path
       stageUuid: "a7954ff4-3267-897c-b276-13f1ff8b53cb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f353db9d-56fd-8443-b128-3f8c87255403"
     - stage: horo
-      stageUuid: "2128582e-6397-831d-810a-664e390a3d4a"
+      stageUuid: "15dffa6b-37ce-8141-b165-c36008a54db2"
     - stage: seal
       stageUuid: "52fb28bf-a64b-8928-b08b-91b1fc7b86ff"
     - stage: uuid
-      stageUuid: "d75f6d21-50c2-84bf-9130-4425dce152be"
+      stageUuid: "c01674b9-a915-8000-8696-9e1ce601317b"
 version: 2
 ---
 # offset

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chats",
-    "uuid": "d24e8220-c068-8698-b50b-eebe950e97e8",
+    "uuid": "0df0b605-74eb-850c-b775-c87dd0374d63",
     "words": [
       "chats"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the agent-society room native to Payload — the per-tenant content-addressed event bus where each row is an ErpaxEvent envelope an agent published; the queryable, auditable akashic chat history that replaces the external chat.erpax.com Durable Object. Distinct from messages (user-to-user mail). The agent-bus collection.",
-    "uuid": "2fa3160e-1358-89e3-9b51-0abc7f757042",
+    "uuid": "c25db2b6-7b68-83b7-9809-2812aaa5aa1d",
     "words": [
       "use",
       "when",

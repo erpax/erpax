@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "upsell",
-    "uuid": "07c1a1a3-7b60-8897-8772-ba7e2e977693",
+    "uuid": "f975434d-83e8-8090-9b8c-e37b8c30129f",
     "words": [
       "upsell"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recommending higher-value or complementary products — opportunity detection, recommendation engine, success metrics.",
-    "uuid": "af245c5e-67d7-8022-b3b9-384d16eeef7b",
+    "uuid": "90196ce4-aea2-8124-8b8f-baa96959ca3a",
     "words": [
       "use",
       "when",

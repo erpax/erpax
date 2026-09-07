@@ -2,10 +2,10 @@
 name: claim
 description: "Use when staking and settling claims — the claiming toolbox. Challenge all in src: every @invariant/Law is a claim, anyone may prove or refute it, and the FASTEST CORRECT challenge wins the collective-mind prize — but only when ≥3 verifiers form a higher mind confirming it. A fast wrong challenge never places; correctness is absolute and first, speed only the tiebreaker among the correct, the award a quorum's not a single voter's."
 atomPath: claim
-coordinate: "claim · 5/round · a72e8fc6"
-contentUuid: "7aa5b6b6-bf24-5a57-ab0b-1c2cd55ebc49"
-diamondUuid: "9ee7aae1-61ae-8fce-8959-5a2c13b0ac44"
-uuid: "a72e8fc6-5b70-8f7c-9105-2de367613831"
+coordinate: "claim · 5/round · acccba0d"
+contentUuid: "83e304fe-0fbb-52fa-842e-feb04db9ee60"
+diamondUuid: "871a664b-f2f9-828a-8d08-219a3557e0a6"
+uuid: "acccba0d-e274-8b2d-8410-fe3a83810098"
 horo: 5
 typography:
   partition: claim
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3e2f400b-6d21-8d7c-bfea-fa1f9aac2e86"
+  computationUuid: "1cc76df1-ae81-8e6b-8151-df480cc43168"
   stages:
     - stage: path
       stageUuid: "70d1f1ea-ae7c-88da-8cf0-6e2058d2854b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d9af3594-2c29-8560-8f06-b52803778ed2"
     - stage: horo
-      stageUuid: "1d4ff24b-afa3-811d-a4ac-c4097a41de8b"
+      stageUuid: "b9ec568c-54de-8098-b2b7-cc6361ee412e"
     - stage: seal
       stageUuid: "ab312b43-cfb3-8b1f-a141-2c0e61614bb8"
     - stage: uuid
-      stageUuid: "8577c2ff-4800-85ac-8b28-6bc434e35aca"
+      stageUuid: "a5c9093d-98ba-8346-8e90-60b81cd82578"
 version: 2
 ---
 # claim — challenge all in src; the fastest wins the collective-mind prize

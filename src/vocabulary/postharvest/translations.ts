@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "postharvest",
-    "uuid": "0f646024-77c9-857c-a7f5-00ce956fb018",
+    "uuid": "6258f92a-a0a6-81ae-a6db-3a8ae4cd1d36",
     "words": [
       "postharvest"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when handling produce between harvest and sale — the cooling→washing→curing→grading→packing→storage chain that preserves quality: remove field heat fast (precool), wash, cure storage crops, then hold in the cold chain. Postharvest does not improve quality — it only slows the loss; the gap between gross and marketable yield (shrink) is lost here.",
-    "uuid": "9cbec44e-d9f6-837d-8c28-843250e42118",
+    "uuid": "78d1b528-935a-8b17-874e-cde1c5a74786",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: monetary
 description: "Use when reasoning about monetary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/monetary"
-coordinate: "vocabulary/monetary · 4/weave · 403e2534"
-contentUuid: "52f6db57-21ef-58be-a882-6e56cbafca21"
-diamondUuid: "1d479ca7-5822-80fa-b08f-3eb91d34d05f"
-uuid: "403e2534-53d8-8040-a4ca-81fbff9431c6"
-horo: 4
+coordinate: "vocabulary/monetary · 7/descent · ecd8e9a7"
+contentUuid: "9428e229-0b59-5183-a4d1-08421ea66914"
+diamondUuid: "13aa2a2e-931a-8d6a-83e6-042e9b350db6"
+uuid: "ecd8e9a7-3f49-8bca-9356-633e15890a69"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4d80e94d-8947-8528-a84d-444467ddcb2a"
+  computationUuid: "f010aa87-9b2a-8bbc-af5f-9c7b7991071a"
   stages:
     - stage: path
       stageUuid: "5d2feee7-dd94-8db7-a0b3-7bc9ae9911be"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5a8c498b-d282-86cb-8c22-e7c1dd167e11"
     - stage: horo
-      stageUuid: "62078aa2-4f0a-892d-8d95-38f97bd1ec6d"
+      stageUuid: "3edd21cc-d4b2-86ac-9357-121f101bf629"
     - stage: seal
       stageUuid: "d370361b-f7f4-8da7-b760-732142f5373b"
     - stage: uuid
-      stageUuid: "a1ae27c3-79ff-8ace-8734-0309efb8483b"
+      stageUuid: "626cfa23-2551-8bcc-af59-050236732a87"
 version: 2
 ---
 # monetary

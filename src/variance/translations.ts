@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "variance",
-    "uuid": "f268166b-01e8-822f-8235-1b165790312e",
+    "uuid": "0d0d22a8-8586-8950-849c-d99233632ddc",
     "words": [
       "variance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about variance — Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined perfor",
-    "uuid": "04106ee6-c242-837a-9b20-e2c17f0e4510",
+    "uuid": "603a3e39-5007-8d04-befb-ec1eb1276842",
     "words": [
       "use",
       "when",

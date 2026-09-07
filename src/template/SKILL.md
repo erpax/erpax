@@ -2,11 +2,11 @@
 name: template
 description: "Use when reasoning about template as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: template
-coordinate: "template · 8/crest · 63e0f67b"
-contentUuid: "57231389-55cc-54af-bd0a-64c3301c5735"
-diamondUuid: "6b19e32a-eaa6-83af-9a7f-04e9ea66f3f1"
-uuid: "63e0f67b-ada9-868d-9f8c-de943ffad864"
-horo: 8
+coordinate: "template · 4/weave · 9a8e2afa"
+contentUuid: "f518c992-94e3-56ef-8f87-a845934b2398"
+diamondUuid: "d8da3128-fa59-8703-82c7-6d218d9d6458"
+uuid: "9a8e2afa-fb7d-87ed-bd2a-bbf7dcfef99e"
+horo: 4
 typography:
   partition: template
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "da958aff-dffb-844c-a8ce-3280c6a9529c"
+  computationUuid: "f8e9b0af-aa52-84eb-a70a-933a3d38eff2"
   stages:
     - stage: path
       stageUuid: "90bbb228-61c0-86e4-860e-18a60c7aa62e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fea3f77b-05aa-8092-8769-3668bb6b1f57"
     - stage: horo
-      stageUuid: "2f137ac0-5b5b-8c8b-8552-f1654cb6bebd"
+      stageUuid: "23912c5e-e10d-821e-8009-cf05d4c92018"
     - stage: seal
       stageUuid: "e2c81bd5-aac1-89ed-8c66-130daa69fa9a"
     - stage: uuid
-      stageUuid: "d5725357-a32d-8c82-8a22-fc12e87b31bb"
+      stageUuid: "84325032-29d5-8715-9d1b-b6eaae5afa7c"
 version: 2
 ---
 # template

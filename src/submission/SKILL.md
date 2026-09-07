@@ -2,18 +2,18 @@
 name: submission
 description: Use when modelling one submission — the singular model of the submissions collection (the plural store); a record sent in for review or processing.
 atomPath: submission
-coordinate: "submission · 7/descent · 8faadb37"
-contentUuid: "d05187eb-aadd-5e05-b114-6ae721dbcf57"
-diamondUuid: "14255c3d-8cd0-8f91-a99b-97669d22596b"
-uuid: "8faadb37-af25-8256-bc02-49cac24090a8"
-horo: 7
+coordinate: "submission · 8/crest · 403b6cb0"
+contentUuid: "12ba547d-1ab1-5d3c-b1da-112b1af10c7b"
+diamondUuid: "623da5fe-4d11-85c6-9d5e-03d8c9079784"
+uuid: "403b6cb0-5586-8b33-91c6-9f4659bd45b0"
+horo: 8
 typography:
   partition: submission
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "287ac32c-e684-829f-86f4-534633027e5a"
+  computationUuid: "211ae72a-5c5f-8222-942d-6290c25a0011"
   stages:
     - stage: path
       stageUuid: "901a0970-6b71-8b98-ba09-0c7fd7a3f185"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9c7e82c0-bccd-89ab-86ff-7cd8b5fdccc9"
     - stage: horo
-      stageUuid: "335cef78-e84e-851b-b1c4-ea9fcd66fd3a"
+      stageUuid: "1cf6ab3c-bcb4-856b-9a8c-c52bbb8f613d"
     - stage: seal
       stageUuid: "1c1baf53-3662-87ce-9b5f-03f3b6b55610"
     - stage: uuid
-      stageUuid: "5ebe25b3-e69f-8593-947c-da18868f0edf"
+      stageUuid: "7a44b955-2578-8fd4-98e3-5a5b9d573863"
 version: 2
 ---
 # submission — the model of one [[submissions]] row

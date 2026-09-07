@@ -2,11 +2,11 @@
 name: parking
 description: "Use when reasoning about parking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/parking"
-coordinate: "vocabulary/parking · 5/round · 7dbfe4c7"
-contentUuid: "a642593b-dec0-5c3d-b91f-129126a90460"
-diamondUuid: "efdec5ad-7a63-8a26-a90f-f78a6ef768e0"
-uuid: "7dbfe4c7-7fb9-8549-9347-037080d49e79"
-horo: 5
+coordinate: "vocabulary/parking · 8/crest · 110ff393"
+contentUuid: "90569ecc-2658-5410-b68b-11f62f1745db"
+diamondUuid: "49997328-e564-8025-8725-f0dc61934cba"
+uuid: "110ff393-1812-8d68-ac45-1db43c59bb62"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d932c2b8-42ed-8fff-a80c-1fc777fcd05c"
+  computationUuid: "3dc0fde1-a100-84a5-84cb-eb56f21c7f17"
   stages:
     - stage: path
       stageUuid: "6401e6ac-aff1-845c-8d05-0067222800ae"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "78a16d3f-4851-8923-b74b-7f84b5fcc03e"
     - stage: horo
-      stageUuid: "9998eddc-18bb-84ef-b4e8-5eff9672c2d1"
+      stageUuid: "42521d20-ff0f-8bf2-aace-34fc5e0ac762"
     - stage: seal
       stageUuid: "97a93935-73bc-8197-beb7-9173a40f839d"
     - stage: uuid
-      stageUuid: "7bc1d8c1-db9b-8968-8397-7e96f55a9894"
+      stageUuid: "c7189cb5-424c-8257-9a1d-cd5fa37c26e6"
 version: 2
 ---
 # parking

@@ -2,11 +2,11 @@
 name: drink
 description: "Use when reasoning about drink as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/drink"
-coordinate: "vocabulary/drink · 1/base · e5ce520e"
-contentUuid: "6b9b5b07-29de-5b23-955c-ee010da8d966"
-diamondUuid: "cd47c421-d84a-87fe-94a6-493276da10fb"
-uuid: "e5ce520e-75df-86dc-aca8-8af6102f32ec"
-horo: 1
+coordinate: "vocabulary/drink · 7/descent · 75fd94ac"
+contentUuid: "427d647b-5752-5dd9-bf45-6b4bc5ab8c3f"
+diamondUuid: "17ab1275-2de8-8566-8fed-dfbd46897cf7"
+uuid: "75fd94ac-f420-82a3-8eea-2718665b4c6b"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d2388250-ed4e-83ff-b33a-810e8d3d5f66"
+  computationUuid: "937af72d-acfa-8eb2-ac97-2c328c29a5d4"
   stages:
     - stage: path
       stageUuid: "85b5f4c5-9b08-8e03-a650-8e085f6f3c5c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e6845cc-9317-8a3a-94a1-a605e01ccc31"
     - stage: horo
-      stageUuid: "60380018-a6b1-81af-bc0d-b95e2434926f"
+      stageUuid: "9091c038-a78d-81c1-a6a8-7616e88c2388"
     - stage: seal
       stageUuid: "17c2747a-14e6-89db-b437-0e74125c68a9"
     - stage: uuid
-      stageUuid: "acadbb8e-142f-8f4d-9741-3f88285a3c14"
+      stageUuid: "9e225581-2f7d-8595-acf7-7ac772d32d45"
 version: 2
 ---
 # drink

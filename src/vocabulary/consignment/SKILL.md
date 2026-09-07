@@ -2,11 +2,11 @@
 name: consignment
 description: "Use when reasoning about consignment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/consignment"
-coordinate: "vocabulary/consignment · 7/descent · 2cc10b3a"
-contentUuid: "2a8daa15-f520-584f-bba3-39b949282a3c"
-diamondUuid: "dd2a9a42-c92e-8528-a432-a83eb5577467"
-uuid: "2cc10b3a-11cc-8ecb-9286-7525a0651239"
-horo: 7
+coordinate: "vocabulary/consignment · 5/round · cf6eeeb9"
+contentUuid: "15cdeeb3-1a90-5173-813c-9c518fc9e5f5"
+diamondUuid: "327bcee6-26b1-8908-bb55-cb007aa5b421"
+uuid: "cf6eeeb9-b1e8-81f9-b99a-01f4bb417836"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f4439086-d7de-8fd7-be9e-d1b4c6ee16c5"
+  computationUuid: "84d2f96e-0249-8e95-bdf6-7472c0c3487d"
   stages:
     - stage: path
       stageUuid: "601af838-389a-8b09-a1d1-aa8afdc15708"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fb46d6d9-f43c-8181-9abd-0b785624afc1"
     - stage: horo
-      stageUuid: "57c0cd48-cd6a-8fe7-8dbc-b89bf7181f22"
+      stageUuid: "11314d1c-a6df-82e4-8a07-5abeb3b072f2"
     - stage: seal
       stageUuid: "6973a7fd-4387-8d93-b347-cb37e7a6776f"
     - stage: uuid
-      stageUuid: "69a6b074-00d6-8068-9310-e701152d4eac"
+      stageUuid: "cfd83bdf-60e8-8703-afeb-d92400fbc0d7"
 version: 2
 ---
 # consignment

@@ -2,11 +2,11 @@
 name: odometer
 description: "Use when reasoning about odometer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/odometer"
-coordinate: "vocabulary/odometer · 5/round · 61dd1841"
-contentUuid: "aedaea6f-954d-562f-90b0-704788aa572f"
-diamondUuid: "7e75f48e-0f53-803c-8646-b9f322a823e0"
-uuid: "61dd1841-e88c-8966-84ea-93447927edfd"
-horo: 5
+coordinate: "vocabulary/odometer · 1/base · d7c22489"
+contentUuid: "eae26d8b-cccf-5297-907e-65a332e4ff31"
+diamondUuid: "b130fbce-dfdd-8d25-9688-4b9ccbe6ee2b"
+uuid: "d7c22489-405b-8333-a96b-28a7db802544"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d1a42ee9-9c14-8af3-8dd0-32306a5a5d35"
+  computationUuid: "03ab648a-5841-883b-aa71-5ecdc42c2aa3"
   stages:
     - stage: path
       stageUuid: "2ffd7569-d8d8-8fa8-9d5a-90b7be99e33c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9ec211da-e22e-877b-bdbf-2f0b636cc1c6"
     - stage: horo
-      stageUuid: "7d724b1b-3617-8cfc-8a2a-836639d56dea"
+      stageUuid: "8396e29b-f2da-8d89-8658-d8b4227986a0"
     - stage: seal
       stageUuid: "71757fcb-f320-892b-b57b-25b82561ffb8"
     - stage: uuid
-      stageUuid: "65fc0828-1238-8e41-bba9-0faea5ab3ce7"
+      stageUuid: "baf73ddb-8727-8ec1-abbb-5de2e2eac7f4"
 version: 2
 ---
 # odometer

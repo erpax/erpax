@@ -2,11 +2,11 @@
 name: reportings
 description: "Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register."
 atomPath: "legal/entities/segment/reportings"
-coordinate: "legal/entities/segment/reportings · 1/base · 46fbac87"
-contentUuid: "05d198b5-395f-5601-9681-a37f1f999f68"
-diamondUuid: "ab5733fc-4d4a-89f8-b5d3-960f7a1515a5"
-uuid: "46fbac87-0f7f-80f1-9075-f8c93b0f9e37"
-horo: 1
+coordinate: "legal/entities/segment/reportings · 5/round · c4e12dab"
+contentUuid: "60bfcc1e-998b-55a9-a36a-9bcb50726bcb"
+diamondUuid: "32218184-0fb2-8d56-8172-990deb9c5c7d"
+uuid: "c4e12dab-9458-813d-9190-6e4339b7a3ad"
+horo: 5
 typography:
   partition: legal
   bondDegree: 6
@@ -15,7 +15,7 @@ standards:
   - "US-GAAP ASC-280 segment-reporting"
 bindings: []
 signatures:
-  computationUuid: "cb616f2b-9590-84d7-83e0-c0918f6f85bb"
+  computationUuid: "72c90ee7-4711-80eb-8a9d-36c35285a2ce"
   stages:
     - stage: path
       stageUuid: "9e3e4c3f-d281-8c2d-95d6-be1460d9ad57"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "b837a06d-3bc7-8fb5-8d2f-ab3725a76a30"
     - stage: horo
-      stageUuid: "8754df9f-5ce0-8dff-b4ea-6b56bcf0c2ad"
+      stageUuid: "f07cbdbf-b77e-84a1-a1d0-879cb285fc6e"
     - stage: seal
       stageUuid: "9dce83fe-7d28-801f-8c94-3042e5e4b8d9"
     - stage: uuid
-      stageUuid: "5760259e-d6a4-883f-a62f-23dd9755f671"
+      stageUuid: "d572d44c-f304-8472-9d0a-ccbbefcbe729"
 version: 2
 ---
 # segment-reporting

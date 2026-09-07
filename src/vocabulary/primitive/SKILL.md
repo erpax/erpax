@@ -2,18 +2,18 @@
 name: primitive
 description: "Use when reasoning about the smallest frontend diamond — the irreducible UI vertex below the component (a design token, a raw input, a pixel-level element). What the atom is to the corpus, the primitive is to the UI: one content-uuid, one render, complete and sealed; components compose primitives, blocks compose components."
 atomPath: "vocabulary/primitive"
-coordinate: "vocabulary/primitive · 4/weave · 5bfc8ac9"
-contentUuid: "5a5617d5-aad1-5904-ab85-a7618a58a44a"
-diamondUuid: "75e59a23-86c9-8b67-9d2f-22aafd5e419f"
-uuid: "5bfc8ac9-ab2f-8ef3-82e0-b44a0be02c32"
-horo: 4
+coordinate: "vocabulary/primitive · 7/descent · f62b0342"
+contentUuid: "1f4f677c-0156-5141-85ce-55f2b83c6779"
+diamondUuid: "80346be4-f9cf-8b4c-bd54-10fad9252a47"
+uuid: "f62b0342-15a6-8130-b91d-66813e730c5e"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "346b2773-eb78-819f-9a25-67729c75f8fe"
+  computationUuid: "1829b063-3398-8d5d-b9f0-f8eddf9dbfcc"
   stages:
     - stage: path
       stageUuid: "4e8195f7-78dc-8816-a4e8-065cbc746f54"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "080f3ede-b97f-8b54-b937-8e0ea54d7035"
     - stage: horo
-      stageUuid: "3d2bee57-d77a-8d56-b632-55d6b44420e4"
+      stageUuid: "3485ef8f-024b-84b8-af5e-319575e4ef5b"
     - stage: seal
       stageUuid: "29c60ef5-f4b6-8875-846a-9819679f8ac2"
     - stage: uuid
-      stageUuid: "7c454765-4b7b-8747-8209-de199662cac6"
+      stageUuid: "3d5ba371-bade-87ed-9e72-07c9b3278e30"
 version: 2
 ---
 # primitive — the irreducible UI vertex (the smallest frontend diamond)

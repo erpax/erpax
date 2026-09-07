@@ -2,11 +2,11 @@
 name: gated
 description: "Use when reasoning about gated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gated"
-coordinate: "vocabulary/gated · 1/base · 84743bf5"
-contentUuid: "ff290173-7b5b-536d-8519-0f36264deaf5"
-diamondUuid: "a9f4b0d1-96f8-8de9-a959-5bd23791d160"
-uuid: "84743bf5-e3fc-8e73-b728-7d187417c946"
-horo: 1
+coordinate: "vocabulary/gated · 4/weave · 77374afb"
+contentUuid: "4e54ef72-3234-51f4-8233-9442d56d19bd"
+diamondUuid: "2b9dea8e-7cc7-841e-8ec7-06188e168ca5"
+uuid: "77374afb-4312-8d95-9362-0680afc13451"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e050cae6-21f3-8235-a576-18ad8033cf74"
+  computationUuid: "455e7168-83ea-8ed7-aedc-92c60e3f3bfd"
   stages:
     - stage: path
       stageUuid: "f847e305-7a20-8932-938a-98a91f62481d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b4e401c8-ba2a-87d6-8763-14f293462dd9"
     - stage: horo
-      stageUuid: "ffa84a75-de62-85b6-9ffc-3d968f7b2f4c"
+      stageUuid: "9ebb2cea-0505-8767-a438-500ef5fed639"
     - stage: seal
       stageUuid: "f6c3bf0b-2010-82b8-acee-53b4d22e0955"
     - stage: uuid
-      stageUuid: "7869d8ab-d5ec-8849-a1fb-7f96f323689c"
+      stageUuid: "e62ccce6-a51c-8484-9f90-c6662436162b"
 version: 2
 ---
 # gated

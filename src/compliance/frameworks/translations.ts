@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "frameworks",
-    "uuid": "640fb56c-02a0-8dd5-a2c3-93b1eeb07004",
+    "uuid": "989dbd52-5c76-8614-9820-49a101614de0",
     "words": [
       "frameworks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to.",
-    "uuid": "41073870-489e-8fe5-941b-4cc351afea55",
+    "uuid": "f483119a-ef52-8035-92e0-cbb6d185cc7d",
     "words": [
       "use",
       "when",

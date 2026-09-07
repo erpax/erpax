@@ -2,11 +2,11 @@
 name: estimated
 description: "Use when reasoning about estimated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/estimated"
-coordinate: "vocabulary/estimated · 4/weave · 633845cc"
-contentUuid: "2ee5d825-2d3d-5043-8771-6099e856b609"
-diamondUuid: "b7d694f7-bfd3-8095-9b0e-5d3c60ed4d5b"
-uuid: "633845cc-be79-837e-ae74-3945e846ce08"
-horo: 4
+coordinate: "vocabulary/estimated · 5/round · d295f7c1"
+contentUuid: "797c95cc-1c94-506f-a897-bc7ae8d21db7"
+diamondUuid: "5b0d760c-e4f5-8da4-a308-b92639be0110"
+uuid: "d295f7c1-e6a6-8a96-aee7-ebcde9c1ff14"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d226ad04-46c4-8f56-bf91-1b93ac1b49a3"
+  computationUuid: "66a5342b-df0a-87e3-9ff6-7da6de67e9e1"
   stages:
     - stage: path
       stageUuid: "d573d827-f2c2-8a0e-a117-1315d14d63c7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "65703031-707c-80c8-b56d-687e6b7fe199"
     - stage: horo
-      stageUuid: "ad3f9990-ef5a-8082-9555-e606d1f14169"
+      stageUuid: "31134056-05a3-81a5-bba4-5be6450638d5"
     - stage: seal
       stageUuid: "0bbab016-61c0-8b48-98c9-d0f772e531bc"
     - stage: uuid
-      stageUuid: "6598f217-9c54-8417-9111-81ef9c76e26e"
+      stageUuid: "7fdd8a02-5fc1-87b0-a464-66346aec4ba7"
 version: 2
 ---
 # estimated

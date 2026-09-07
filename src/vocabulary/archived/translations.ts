@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "archived",
-    "uuid": "dc30c5f3-5fdd-80c3-9423-bc251b6a7321",
+    "uuid": "65bc2810-8e34-89a4-8c56-bc8f4d3eddc5",
     "words": [
       "archived"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about archived — Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by",
-    "uuid": "53ac15bb-2c1a-8e5e-8259-919041170022",
+    "uuid": "68e495bf-7fe6-84be-998e-9c0fba510825",
     "words": [
       "use",
       "when",

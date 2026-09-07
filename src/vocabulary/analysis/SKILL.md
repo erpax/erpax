@@ -2,10 +2,10 @@
 name: analysis
 description: "Use when reasoning about analysis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/analysis"
-coordinate: "vocabulary/analysis · 4/weave · ef91014c"
-contentUuid: "9dc3f837-c935-5a76-a16a-6d99705518b2"
-diamondUuid: "144a1a4e-2f16-8fc4-8cc9-5c271fb3e938"
-uuid: "ef91014c-5493-8e4b-b86c-6e552f28dea3"
+coordinate: "vocabulary/analysis · 4/weave · 231f6af8"
+contentUuid: "185c1990-9d9d-59ec-8ad7-a33462c6d2c4"
+diamondUuid: "a4b19978-86f2-8cde-a9ce-c2585ca4f964"
+uuid: "231f6af8-758e-8ca2-9f6c-d3238ea548f1"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7f8fa61e-c98f-86a6-83de-0cd9d89b47ab"
+  computationUuid: "6f12b5c8-ae67-8690-9320-e5301553e79d"
   stages:
     - stage: path
       stageUuid: "0046cfdb-e790-8d22-b837-d48d4772b543"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "01eed5f6-933b-8bb9-b5ae-732623382520"
     - stage: horo
-      stageUuid: "0f716bcf-8506-8d13-9ce7-bb017e57d5d0"
+      stageUuid: "5c7c3584-d805-835b-845b-8cc820776347"
     - stage: seal
       stageUuid: "7a29976b-849e-8195-b080-a8858d68d8b2"
     - stage: uuid
-      stageUuid: "96c9d75c-8a0b-88e3-a860-d089468fbe60"
+      stageUuid: "6c0eeba1-bda5-825d-9939-e6055f476967"
 version: 2
 ---
 # analysis

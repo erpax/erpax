@@ -2,10 +2,10 @@
 name: assembly
 description: "Use when reasoning about assembly — Library file name, e.g., mscorlib.dll, system.web.dll."
 atomPath: "vocabulary/assembly"
-coordinate: "vocabulary/assembly · 1/base · dc03fa16"
-contentUuid: "98669a0e-abcd-596c-a49d-4198dadb955a"
-diamondUuid: "e4719d61-1303-8e13-80b3-9572f2b7d7c2"
-uuid: "dc03fa16-997f-848d-b925-5a0a480e6713"
+coordinate: "vocabulary/assembly · 1/base · e2cb338c"
+contentUuid: "1dbb87af-fb1a-5bf9-8ff5-a1675faf12b6"
+diamondUuid: "ed673c25-d99d-81b1-8496-c094464dff9a"
+uuid: "e2cb338c-c21a-8839-beeb-bd7766c1e136"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c01f2ae9-1608-804a-b3d1-538ef616aadb"
+  computationUuid: "0398d08a-cb24-8ee5-9562-d52e4e6c168e"
   stages:
     - stage: path
       stageUuid: "1bc9e508-f092-8741-8461-b3a8973899b1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8e6c34db-ee7d-8687-bfcf-82054ca2d9b7"
     - stage: horo
-      stageUuid: "c6c963ed-c088-80b0-b5d9-6b9c61b7ee3d"
+      stageUuid: "f96bb63b-1fa4-8569-ae3b-6c025d7c1de9"
     - stage: seal
       stageUuid: "828a185f-c22e-81cb-8684-83a7bacbbde0"
     - stage: uuid
-      stageUuid: "0320aa86-bbae-814a-b6a5-a3f816e3d5b0"
+      stageUuid: "fcd9f11c-4b40-80e0-87ec-38a4c321773c"
 version: 2
 ---
 # assembly

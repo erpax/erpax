@@ -2,11 +2,11 @@
 name: locations
 description: "Use when registering or querying physical or logical inventory locations — warehouses, 3PL, retail, bonded, virtual/drop-ship — with bins, GL account defaults, and IAS 2 / ASC 330 cost-flow segregation. The inventory location master for stock tracking and SOX §404 inventory controls."
 atomPath: "warehouse/locations"
-coordinate: "warehouse/locations · 8/crest · 02be9b53"
-contentUuid: "9149cb88-20f4-5c56-b7be-110fef9a585d"
-diamondUuid: "1ace575d-11b3-8d0e-967f-800437abd433"
-uuid: "02be9b53-86db-8917-b2fb-a38039d7a563"
-horo: 8
+coordinate: "warehouse/locations · 7/descent · 18af22b6"
+contentUuid: "6eb24958-f65c-53ec-bf7b-4411ae953073"
+diamondUuid: "2d94b53c-1727-8f9b-82b5-8466472edbb0"
+uuid: "18af22b6-a187-8b83-aab5-4f843d9129ec"
+horo: 7
 typography:
   partition: warehouse
   bondDegree: 16
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f4c15fce-ad3d-8e28-882f-f4923eabb322"
+  computationUuid: "2a4e59d6-d6c8-8070-aadc-921419d4ba2d"
   stages:
     - stage: path
       stageUuid: "ace619dd-85f6-8bbd-8017-68f7403463dd"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "efdb6f1e-25d5-8687-b250-35e9193bede0"
     - stage: horo
-      stageUuid: "1272bd6b-f23b-88bc-a760-6964ecd3b1b2"
+      stageUuid: "da7ac4a3-a5b3-85c1-8610-eb88092fb3dc"
     - stage: seal
       stageUuid: "e20e76d5-f2e9-879e-b889-ac1b2a49a390"
     - stage: uuid
-      stageUuid: "9c03babd-9e32-8a1a-a3ae-182203d1336f"
+      stageUuid: "5826acfa-37dc-8af7-a2af-3559b2c8a54b"
 version: 2
 ---
 # warehouse-locations

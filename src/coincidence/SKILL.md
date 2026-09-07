@@ -2,10 +2,10 @@
 name: coincidence
 description: "Use when a research program claims its numbers match physical constants (Haramein's holographic work, the 3·6·9 / vortex literature) and asks whether that confirms it. The tool separates a THEOREM (an exact identity in a closed algebraic system) from a COINCIDENCE (a within-tolerance match, possibly fitted) — and refuses the leap from either to 'recompute all science', because a match is necessary but never sufficient."
 atomPath: coincidence
-coordinate: "coincidence · 2/share · 55c0ffe9"
-contentUuid: "0658e3b1-ad27-56bd-9001-55e876d4595f"
-diamondUuid: "86a3f55a-ee8c-8fb0-89e7-704ef4a1a17f"
-uuid: "55c0ffe9-8f95-8995-b341-45c2d8f2796e"
+coordinate: "coincidence · 2/share · 55cb7928"
+contentUuid: "1d01b6ae-7f70-5fed-82f8-325293729c46"
+diamondUuid: "383d0a20-e254-870b-bf6f-66d2e94e4f3e"
+uuid: "55cb7928-91f8-8bb6-b5eb-a451159e1379"
 horo: 2
 typography:
   partition: coincidence
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ffda0334-47d3-8c6a-af74-fb681cfa7a19"
+  computationUuid: "f671516d-9fa0-8b3c-be17-c2364e1855ff"
   stages:
     - stage: path
       stageUuid: "f825e16c-c5de-8542-8140-34748f9d4f3d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2bc8504d-182a-86ed-9f53-945dfe1ef2b6"
     - stage: horo
-      stageUuid: "3b82fc3d-49ba-8d5d-851e-a2ed8c8e55c9"
+      stageUuid: "41bd466a-b993-8d0d-be54-369311818d5a"
     - stage: seal
       stageUuid: "7e6b4b3e-149f-8e4f-aedc-b470a11afb6f"
     - stage: uuid
-      stageUuid: "aabfbca8-63fe-8266-a1b7-bf18500c6f29"
+      stageUuid: "e20e6f49-2bc0-88be-8c89-40e3df9c027f"
 version: 2
 ---
 # coincidence — the testing ground: theorem, or coincidence?

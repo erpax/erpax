@@ -2,11 +2,11 @@
 name: consolidations
 description: "Use when running or auditing a multi-entity group consolidation — entity closure readiness, intercompany balance reconciliation, elimination entry preparation, and consolidation workflow per IFRS-10 / IAS-27 / ASC-810. The group-consolidation process collection."
 atomPath: "legal/entities/consolidations"
-coordinate: "legal/entities/consolidations · 2/share · 22c11528"
-contentUuid: "70350bb3-e14c-5f93-9c86-3c265fad09a4"
-diamondUuid: "ecd9dc8c-cc94-8395-a263-f6da2269cd87"
-uuid: "22c11528-7d04-84ab-bb26-654866029be8"
-horo: 2
+coordinate: "legal/entities/consolidations · 8/crest · 7d07d93d"
+contentUuid: "8de9c797-3cd2-59ad-ab0b-81ac4c9d248e"
+diamondUuid: "e2c3d9c2-f681-80ea-8d87-52ab5fa03a7c"
+uuid: "7d07d93d-9ec9-80cb-b6b5-0a791ee0fcc9"
+horo: 8
 typography:
   partition: legal
   bondDegree: 19
@@ -16,7 +16,7 @@ standards:
   - "US-GAAP ASC-810 consolidation"
 bindings: []
 signatures:
-  computationUuid: "93750d5d-0e4b-8991-a9dd-bd8ee1aea3ee"
+  computationUuid: "93de080b-9908-892a-9c34-4f85882b0a2f"
   stages:
     - stage: path
       stageUuid: "981322d4-a858-86a3-8e3b-8912515070e7"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "11896191-723c-837c-90db-46de117ce476"
     - stage: horo
-      stageUuid: "01cf7308-fe2d-8be5-b593-e972dfa67147"
+      stageUuid: "50fc5227-5c3d-8376-8c9e-fb079837d5a7"
     - stage: seal
       stageUuid: "80374fbf-39a0-80c0-8d9b-2c05ac4d04c5"
     - stage: uuid
-      stageUuid: "81f0ca8d-185c-8d63-89a0-ea31cb509b19"
+      stageUuid: "59b4bbdc-463e-8e63-bb1e-32c8f670f2bb"
 version: 2
 ---
 # consolidations

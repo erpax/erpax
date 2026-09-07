@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lung",
-    "uuid": "d5df0ed3-4e36-8861-84f6-8292d7add84d",
+    "uuid": "0120a1bc-baf2-85ed-8734-bc35650c9f37",
     "words": [
       "lung"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's gas-exchange surface — the respiratory organ where it BREATHES. The breath atom names it: 'the chat is the lung-tissue where agents coordinate.' The society inhales gaps and exhales gate-green atoms across a vast, thin, fractal surface; three properties of the living lung (Fick's-law gas exchange · 23-generation fractal surface · the closed tidal cycle) are computed and mapped — a structural isomorphism — onto erpax's breath/wave loop.",
-    "uuid": "57c70424-8948-89fd-bb44-e4f2fbb30d81",
+    "uuid": "154651f8-95d2-8946-80e0-562641469dc6",
     "words": [
       "use",
       "when",

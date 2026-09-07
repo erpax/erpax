@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "baseline",
-    "uuid": "d157b27c-db04-896d-a72e-9c46f6233f40",
+    "uuid": "585a7904-4c96-8e10-99e1-1611a038aeb9",
     "words": [
       "baseline"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about baseline — A **baseline** is the real-data INPUT a model fits to — for example an efficiency distribution measured across observed shifts. It is the **data, not the calibration**: the calibra",
-    "uuid": "8a2f2d56-24eb-835a-bd1e-6a42b4d56741",
+    "uuid": "515373f8-7d4f-8e77-bd01-8607e703bea1",
     "words": [
       "use",
       "when",

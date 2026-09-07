@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pipeline",
-    "uuid": "6a485790-2047-8f62-a3b8-14032c5f9d92",
+    "uuid": "99b00eb0-5675-8a8c-af47-67516a294abe",
     "words": [
       "pipeline"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when changing a deploy or release workflow — the ORDER is the law. Deploy must follow a green CI on the commit CI verified, build before migrating production, run the deterministic gates before shipping and the smoke after, and the release must assert tag equals version before publishing.",
-    "uuid": "3e5ac5ff-e537-87b4-aea4-486c62ec8bb2",
+    "uuid": "2226856a-9c47-83f1-a9e5-2e738d6d546d",
     "words": [
       "use",
       "when",

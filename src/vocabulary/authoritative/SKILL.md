@@ -2,11 +2,11 @@
 name: authoritative
 description: "Use when reasoning about authoritative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/authoritative"
-coordinate: "vocabulary/authoritative · 5/round · 66792f71"
-contentUuid: "79f77de3-3980-504f-8316-ce8dda304d78"
-diamondUuid: "d5960375-b6cf-8bb4-bec5-435f9b730d16"
-uuid: "66792f71-6253-89be-b465-9e1e23c63a82"
-horo: 5
+coordinate: "vocabulary/authoritative · 8/crest · ebf8a56c"
+contentUuid: "a1789b7c-9b54-5f39-8f4f-8fb07365ff54"
+diamondUuid: "3fdc13bb-b95d-89c3-911c-f024c3f1f832"
+uuid: "ebf8a56c-4d32-8d62-a97c-dc41e97e77ff"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "afaf1729-9f37-8531-98a7-4f9d36857626"
+  computationUuid: "05085c03-0dc7-87fd-ad6a-b6442a47e7d4"
   stages:
     - stage: path
       stageUuid: "a573f977-bf5a-8cb4-91c7-2502b0f881f1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "465a97fd-8074-868b-8bfc-e678137565ed"
     - stage: horo
-      stageUuid: "a6a4d6e6-606d-8ef9-9c3c-647c023b571f"
+      stageUuid: "088db045-1efa-852f-bf44-35b25de5d838"
     - stage: seal
       stageUuid: "5915618c-1eda-8c7c-8f12-f15a68e9a7ac"
     - stage: uuid
-      stageUuid: "edb88adc-c1c8-8037-8247-fbe61cfc63e4"
+      stageUuid: "4c023796-5316-8467-ad1c-de6d5ec9be0e"
 version: 2
 ---
 # authoritative

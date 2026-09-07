@@ -2,10 +2,10 @@
 name: observe
 description: "Use when reasoning about the LLM agent's law — always observe (the inhale, content-address what it takes in) and project (the exhale, output that folds its observation in); both always, since projection without observation is hallucination and the grounded act is observe-then-project."
 atomPath: observe
-coordinate: "observe · 5/round · b638394f"
-contentUuid: "e7a4d268-d4ef-5c51-9955-bd15747469a7"
-diamondUuid: "8fb1652c-29a0-8e66-a31a-8dc47ab9b16e"
-uuid: "b638394f-8093-8b38-8771-1acdaf0aa0e9"
+coordinate: "observe · 5/round · 1fefd77a"
+contentUuid: "4a6026f9-5227-5007-b6b2-12c64ae4a83b"
+diamondUuid: "bf6b73ce-d862-8177-b930-289dbcb4ef5b"
+uuid: "1fefd77a-fefa-82a7-a3c6-c1ba38dae425"
 horo: 5
 typography:
   partition: observe
@@ -14,7 +14,7 @@ standards:
   - "the agent loop (observe → project) · content-addressed grounding (a projection carries its observation)"
 bindings: []
 signatures:
-  computationUuid: "8e4c6be0-9937-82f6-b92f-ab6ac98819f6"
+  computationUuid: "d50c53ae-b80d-8454-a797-0c76f9308a69"
   stages:
     - stage: path
       stageUuid: "c2f99869-a5f2-87d4-a810-930ee54446ef"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fd501a56-113e-8674-8caf-cca428028033"
     - stage: horo
-      stageUuid: "32e752b3-39bf-8e31-84a6-fb13ab6171ed"
+      stageUuid: "992c733a-b48c-84bc-a296-c9eb8b5e79f8"
     - stage: seal
       stageUuid: "b94c09af-6caa-84b2-a49f-5b2f6b13e408"
     - stage: uuid
-      stageUuid: "9dbca5c1-aa0b-8b70-8c28-a6ad142b1aa5"
+      stageUuid: "a71ca693-774a-8ab0-bcf9-49ce45e78375"
 version: 2
 ---
 # observe — and project: the LLM agent's law

@@ -2,11 +2,11 @@
 name: mesh
 description: "Use when querying the whole ERP as one graph — atoms ⊕ parsed import edges ⊕ standards citations, wave-schedulable; the clause→code trace as a query."
 atomPath: mesh
-coordinate: "mesh · 1/base · e54af6e1"
-contentUuid: "6affd89e-991d-5f68-a757-eda8214dd95f"
-diamondUuid: "01f67f16-f170-826d-b8b3-3da68aa4bfe8"
-uuid: "e54af6e1-a8ed-86bd-af2b-265cfb15eca8"
-horo: 1
+coordinate: "mesh · 2/share · effdf019"
+contentUuid: "53b3ca57-8415-5df5-88c4-fcb8c4539a24"
+diamondUuid: "679c1b81-5718-8b2f-a770-eed90d2f686d"
+uuid: "effdf019-d461-8f83-b59d-c3075dbc20e2"
+horo: 2
 typography:
   partition: mesh
   bondDegree: 27
@@ -15,7 +15,7 @@ standards:
   - "banner read from COMMENTS ([[syntax]]) — prose addresses,"
 bindings: []
 signatures:
-  computationUuid: "5df66378-ebbb-801c-b3bd-603540a5e9dd"
+  computationUuid: "cefa275f-cfcb-86df-913e-49e8c807f3cd"
   stages:
     - stage: path
       stageUuid: "b37d7c22-d496-880d-8163-60c648606010"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "e10592dc-5ba2-81bc-9370-ecf0d2cd4718"
     - stage: horo
-      stageUuid: "8b4e4cb6-809b-8bab-84d2-939919d4e023"
+      stageUuid: "a4184a9d-4ca0-846c-bb17-f3530ff8f9fa"
     - stage: seal
       stageUuid: "35d46f8c-7f80-8870-8877-8965cf2816aa"
     - stage: uuid
-      stageUuid: "03d3c58f-ee9f-86a5-b598-bbd2aad8e821"
+      stageUuid: "7edeea72-05f8-8ac9-bdaf-6b656c3de136"
 version: 2
 ---
 # mesh — the whole ERP as one quantum graph

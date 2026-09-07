@@ -2,11 +2,11 @@
 name: closure
 description: "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be."
 atomPath: "millennium/closure"
-coordinate: "millennium/closure · 8/crest · a37bb9b0"
-contentUuid: "d1f1b35e-b6c3-5fbc-8bab-f8811d3297a2"
-diamondUuid: "027e5d6a-68d2-88e0-861c-505145670429"
-uuid: "a37bb9b0-aaed-87d5-b1f3-9707494962a1"
-horo: 8
+coordinate: "millennium/closure · 4/weave · 68e19ccd"
+contentUuid: "42705d64-9267-5064-97b0-432c3cf9f936"
+diamondUuid: "94a8cbd8-413c-89fd-a5b5-69e921947738"
+uuid: "68e19ccd-a895-81f0-870f-0eeb29b7a1f8"
+horo: 4
 typography:
   partition: millennium
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "eb63bde5-4669-8bcf-a5cc-48a553a7d3cd"
+  computationUuid: "7853492e-1ee9-8f24-ac13-01f6acda2a5c"
   stages:
     - stage: path
       stageUuid: "b31ca6c7-4636-8dca-8171-d81aaf0d7974"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a510ca2b-57f9-8445-9f78-579945e953cb"
     - stage: horo
-      stageUuid: "c889dc63-5713-8664-89a3-bc0cb8f74ed6"
+      stageUuid: "22268138-236b-867b-8cd3-6640ce24928e"
     - stage: seal
       stageUuid: "7f0d1059-d741-82f5-86bd-33cb655bd9a2"
     - stage: uuid
-      stageUuid: "0a756312-c40e-89e3-ae82-154d4fca4963"
+      stageUuid: "08b7dcc5-90e3-86cc-808d-558a4cb9098c"
 version: 2
 ---
 # millennium/closure — the decidable half, computed

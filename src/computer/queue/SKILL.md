@@ -2,10 +2,10 @@
 name: queue
 description: "Use when ordering work FIFO under the machine model — executable queue nested under computer; distinct from top-level @/queue vocabulary."
 atomPath: "computer/queue"
-coordinate: "computer/queue · 7/descent · e3067c05"
-contentUuid: "4daa23ec-85be-50b5-b369-5bbe947b90bc"
-diamondUuid: "9fcb49c5-ee64-831f-920c-8bf80d69679c"
-uuid: "e3067c05-0144-8272-8a86-b9862b30ecf7"
+coordinate: "computer/queue · 7/descent · 668db949"
+contentUuid: "400743de-f8a6-5efd-a742-63c7eb007d0d"
+diamondUuid: "307785fa-719d-840f-9d70-50e9db00c961"
+uuid: "668db949-9167-829c-ba97-aba03db1d05d"
 horo: 7
 typography:
   partition: computer
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cde7db4e-89a0-85db-af51-1c4259b456f2"
+  computationUuid: "4ee1a32f-9405-8074-9173-b68ee2f7c87c"
   stages:
     - stage: path
       stageUuid: "1869d141-8b8e-8412-a657-9587d53be921"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1c2d61c3-e92c-89d4-8e83-f7c8eb7939d1"
     - stage: horo
-      stageUuid: "7ef6676d-e0c9-883d-b5ce-4fe251ffb941"
+      stageUuid: "14340e01-363c-8bbc-8497-cacacba399b2"
     - stage: seal
       stageUuid: "06f258c1-9ee7-84ca-b84d-7bcf1de97aff"
     - stage: uuid
-      stageUuid: "d57d24c9-6634-8274-9365-6c1cffb2abfd"
+      stageUuid: "3d547933-4cb4-887a-9027-41d742b53249"
 version: 2
 ---
 # computer/queue — FIFO work queue

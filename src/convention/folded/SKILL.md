@@ -2,11 +2,11 @@
 name: folded
 description: "Use when checking whether every atom folds into the matrix — the computed convention that each SKILL.md atom is a node in the collided uuid-matrix, measured live as coverage = folded / total over the real tree."
 atomPath: "convention/folded"
-coordinate: "convention/folded · 8/crest · ad390c7c"
-contentUuid: "9e0a9982-e92c-5edc-b723-1bf719d489cf"
-diamondUuid: "66caf11a-0245-8bd5-af49-3d8b74f23523"
-uuid: "ad390c7c-1cec-8781-8363-0ab6bfb820ce"
-horo: 8
+coordinate: "convention/folded · 7/descent · 47f5a787"
+contentUuid: "29d7be63-ab0e-570a-b277-8e03aa9f5d05"
+diamondUuid: "6444359d-3db6-8839-b0fa-7059f177b607"
+uuid: "47f5a787-900c-8343-aa7a-3a8c6ac2e5b9"
+horo: 7
 typography:
   partition: convention
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2fe119c7-73ce-8f8b-8084-cec32473b2ba"
+  computationUuid: "a12746f8-f0a0-8b25-8b29-4b4d9ea09940"
   stages:
     - stage: path
       stageUuid: "73754e98-b99c-87ae-a3c8-48859e4790cf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "96ab009f-bf84-8f29-9800-7fd368dc2913"
     - stage: horo
-      stageUuid: "6fa1913a-579d-8bbc-8318-f59f0925b73a"
+      stageUuid: "7fb70337-ecbb-813a-a9f6-040626c9fb1c"
     - stage: seal
       stageUuid: "14779d41-b302-8b6c-9d1d-32af7688a80d"
     - stage: uuid
-      stageUuid: "0f666296-c2a5-8333-b28b-64a562b5b079"
+      stageUuid: "87c525d8-7c94-8655-9f65-3a125ad12684"
 version: 2
 ---
 # convention/folded — every atom folds into the matrix (is a node)

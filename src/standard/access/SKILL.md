@@ -2,18 +2,18 @@
 name: access
 description: "Use when reaching access enforcement from the standard side — the double-wire reciprocal of access/standard, the API-access-derived-from-law cross."
 atomPath: "standard/access"
-coordinate: "standard/access · 9/unity · f6357c8f"
-contentUuid: "7f5ee606-acab-5e54-ba07-585c495a1322"
-diamondUuid: "b39bb373-09cc-8391-9319-747053a25466"
-uuid: "f6357c8f-5f80-884b-910d-b3e12798492d"
-horo: 9
+coordinate: "standard/access · 3/3 · d5522d70"
+contentUuid: "1f41560c-2c9d-5f04-b8b7-0c739af8c602"
+diamondUuid: "557f390e-fdeb-859d-a2b1-840d7e823872"
+uuid: "d5522d70-d012-871a-8d62-b7000d42ece3"
+horo: 3
 typography:
   partition: standard
   bondDegree: 436
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d012a356-10dc-838c-acc6-5058ac45bd05"
+  computationUuid: "4ed064cb-c33e-87bd-8598-53bf347e14bc"
   stages:
     - stage: path
       stageUuid: "c3b743a6-4e41-8c5c-8acf-9b69d34a62a0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5734b9b7-ac50-8199-bcf3-4ea3d67a361f"
     - stage: horo
-      stageUuid: "9e7df2e7-70c7-8fad-89de-51f8d8c599eb"
+      stageUuid: "39135df2-8d78-8ff4-83f2-95c0e5290599"
     - stage: seal
       stageUuid: "b319ff16-dc22-8489-9047-4e429cfa89c5"
     - stage: uuid
-      stageUuid: "2875cdea-0bda-8938-bef9-00ea8ce824e3"
+      stageUuid: "e1a1cd59-06c3-8a34-ae6b-5216718caf16"
 version: 2
 ---
 # standard/access — the reciprocal

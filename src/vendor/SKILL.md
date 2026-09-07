@@ -2,11 +2,11 @@
 name: vendor
 description: "Use when reasoning about vendor — 'vendor' is an earlier term for 'seller'."
 atomPath: vendor
-coordinate: "vendor · 8/crest · 94981cb6"
-contentUuid: "b4175269-2f22-5168-8b48-af81cf02927b"
-diamondUuid: "884792ea-61c2-8a65-93b4-8aa8256f0938"
-uuid: "94981cb6-7108-824b-b245-1a67333c03c9"
-horo: 8
+coordinate: "vendor · 1/base · 2c78f24c"
+contentUuid: "707f407e-a598-5983-a7b2-a64ba1145175"
+diamondUuid: "3594f47d-f367-8b17-bf97-73d3e5ee0e70"
+uuid: "2c78f24c-a3ea-83e3-a806-2f279cf18030"
+horo: 1
 typography:
   partition: vendor
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4dcc1003-04fd-89cc-9847-2d5dffc36ad1"
+  computationUuid: "bfd15a25-9a83-8ee8-ad15-05cc3e49f9ea"
   stages:
     - stage: path
       stageUuid: "ba9b6217-f4f2-84bb-8f08-ec3888843cb2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2ebb31ad-6f8d-8979-8c8f-ad98e751c248"
     - stage: horo
-      stageUuid: "fd3c19ef-e0c0-8de2-aaa8-1f8df7d1bca4"
+      stageUuid: "008d2c19-bb88-80ad-9f9f-71f40c587ae2"
     - stage: seal
       stageUuid: "a222a04e-8204-87aa-a282-85701d97ca94"
     - stage: uuid
-      stageUuid: "2f431794-aef8-8568-888e-59491ec23c4b"
+      stageUuid: "740c58b8-47b1-80f4-a6b8-ef148c6d6d15"
 version: 2
 ---
 # vendor

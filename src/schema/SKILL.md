@@ -2,18 +2,18 @@
 name: schema
 description: "Use when defining, auditing, or evolving the logical data model — entity relationship diagrams, normalization, column definitions, table structure, field types, cardinality declarations. The canonical blueprint of the data structure."
 atomPath: schema
-coordinate: "schema · 4/weave · 9b3c2d2e"
-contentUuid: "8c7eaad0-fd44-56cb-9ad3-e27a3f3dd83e"
-diamondUuid: "646208ea-dbc3-8fd0-aa43-f068032ce1be"
-uuid: "9b3c2d2e-562a-8f15-8f30-5abc19500426"
-horo: 4
+coordinate: "schema · 1/base · 873588f3"
+contentUuid: "cdd3276d-88b0-5cb3-a205-c3f9ab948bdd"
+diamondUuid: "728fc3bc-2e58-848e-a549-6b33edcb2849"
+uuid: "873588f3-4e70-8476-ac2f-3a7fd69d9ace"
+horo: 1
 typography:
   partition: schema
   bondDegree: 57
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fa84b124-b984-8624-b41b-87a98ef1436d"
+  computationUuid: "a29f0f5b-2470-8bed-9af6-6cfbdf8ab7ad"
   stages:
     - stage: path
       stageUuid: "1929c80a-a247-827b-9af7-c3d1b27e653d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0c8c38b6-5701-8dfe-9061-7dbd296878bc"
     - stage: horo
-      stageUuid: "746e589e-91dd-8c59-954f-2d6ff43418a1"
+      stageUuid: "716f01a6-2fae-8683-b829-1298196c57db"
     - stage: seal
       stageUuid: "9dba4e54-fea7-8c31-bd25-2f5a3f2c5dd0"
     - stage: uuid
-      stageUuid: "d72291ee-b7e9-8a9f-8034-aeb2ae13383f"
+      stageUuid: "bb71c5c8-b398-8d42-80f9-7fa3e34383c8"
 version: 2
 ---
 # schema

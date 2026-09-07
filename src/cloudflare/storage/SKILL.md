@@ -2,10 +2,10 @@
 name: storage
 description: "Use when reasoning about storage — Tenant-scoped KV, R2, Vectorize, and Durable Object mediators"
 atomPath: "cloudflare/storage"
-coordinate: "cloudflare/storage · 1/base · f02217ce"
-contentUuid: "aa5933c3-8ca6-55cb-9f78-4f739366f39f"
-diamondUuid: "9cb576ac-307a-861d-9f6d-cc91b8a8441f"
-uuid: "f02217ce-0455-886f-8596-f6d8e00bfe51"
+coordinate: "cloudflare/storage · 1/base · 5c5fe51e"
+contentUuid: "614606c2-6f57-5abc-a596-6a99da20facc"
+diamondUuid: "21b46739-e76e-81ef-8706-17ee9fa55ac0"
+uuid: "5c5fe51e-a0d3-8ec3-8113-0f6083182359"
 horo: 1
 typography:
   partition: cloudflare
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f65cdc46-365f-8404-84b0-b1f021774d7b"
+  computationUuid: "a4a4607e-e242-84c7-ab6a-6ec91b35cff4"
   stages:
     - stage: path
       stageUuid: "7219ec81-f859-8802-859c-a27c698eebde"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4a5d43bc-b86c-8079-b37b-fb28cdc0da16"
     - stage: horo
-      stageUuid: "61e29ac8-3bf4-8ab1-9886-6c9a673ca6e4"
+      stageUuid: "e382b252-3fb5-82ba-a2a4-bab0d9675b7d"
     - stage: seal
       stageUuid: "72ee8a39-65cd-8e41-95e9-04b6f6106176"
     - stage: uuid
-      stageUuid: "06031935-c98c-8400-b9a0-5f2b81cdc1c1"
+      stageUuid: "106d874e-10f3-8a76-991a-3cf923123889"
 version: 2
 ---
 # cloudflare/storage — storage operations

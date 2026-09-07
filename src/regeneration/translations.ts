@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "regeneration",
-    "uuid": "ed89041e-da1f-8b17-9464-0691d43822c6",
+    "uuid": "a6b29ccd-61aa-8872-84a5-1578dd51cb35",
     "words": [
       "regeneration"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax as a living, self-repairing system — the computed proof that it regrows from seed and heals its own wounds. The content-uuid is the genome: every observable (uuid, aura, coordinate, the README proof) is derived from content and never stored, so any derived artefact regenerates byte-identically from the surviving seed. A gap (dead link, untested atom) is a wound; the gate is the immune system; healing is monotone, so the loop converges to gap 0 — wholeness, zero entropy, max tamper-cost.",
-    "uuid": "90d35f97-c642-8368-928d-a871defc5a71",
+    "uuid": "dabc9398-a1d1-8d64-b79c-d2db68e3212c",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: analytics
 description: "Use when reasoning about analytics — Days Sales Outstanding, receivables turnover and the collection effectiveness index over the invoice set — the A/R mirror of payable/analytics."
 atomPath: "receivable/analytics"
-coordinate: "receivable/analytics · 4/weave · 23784982"
-contentUuid: "59209bc3-e398-5f4e-9ba3-69e9cdf87a86"
-diamondUuid: "ba33791b-536f-8fda-8e36-512328ada936"
-uuid: "23784982-c194-89e8-b50d-c3ac3046fc31"
+coordinate: "receivable/analytics · 4/weave · 44629fcc"
+contentUuid: "9ff54239-33dc-5b2d-88fe-0d6e8767d666"
+diamondUuid: "689a4416-9ea2-8102-90e6-a4d890954655"
+uuid: "44629fcc-08ea-82ef-9205-c2331a002979"
 horo: 4
 typography:
   partition: receivable
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
 bindings: []
 signatures:
-  computationUuid: "6a2e9d8e-7dfa-8007-a5cd-cb808fc72ab1"
+  computationUuid: "99850dc0-ccb6-8545-9cb5-47d2417f84bb"
   stages:
     - stage: path
       stageUuid: "a89ba93b-1e30-897b-85fc-b72f913609fe"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "9fbc38c0-4441-8d47-8fd1-7166223272a3"
     - stage: horo
-      stageUuid: "00820a65-5387-8f42-b7a9-98cf8ec53674"
+      stageUuid: "3fa77301-d718-8def-8d21-7565d12d7d18"
     - stage: seal
       stageUuid: "88e283a9-2cd5-82e0-800b-2bce040e0d67"
     - stage: uuid
-      stageUuid: "da4867fd-11fd-8a85-9553-1b72a5ff0606"
+      stageUuid: "89283162-5fcb-80a5-ac88-12d0da3a79af"
 version: 2
 ---
 # receivable/analytics — DSO, turnover and collection effectiveness

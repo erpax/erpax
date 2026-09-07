@@ -2,11 +2,11 @@
 name: mixed
 description: "Use when reasoning about mixed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mixed"
-coordinate: "vocabulary/mixed · 5/round · 0e7ec8c2"
-contentUuid: "4f94b118-0167-5148-ab0a-b626b1bc6292"
-diamondUuid: "961a2415-0939-854d-af6c-633a4853a7fb"
-uuid: "0e7ec8c2-5584-89f8-a293-93c51999da4c"
-horo: 5
+coordinate: "vocabulary/mixed · 7/descent · 1e4f1f6b"
+contentUuid: "0e159903-165d-5b96-b672-602c28a69439"
+diamondUuid: "a96ed5e2-d13e-836b-9920-7778287e906b"
+uuid: "1e4f1f6b-4f27-836f-8ebc-2e5ee60605d2"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a06edb43-0a23-8358-bf0c-a62b272b5172"
+  computationUuid: "26694c37-0578-8bcf-b1b3-a2a8ab30eca0"
   stages:
     - stage: path
       stageUuid: "2e74966c-a6c5-8fda-8611-2f3b6233c7d0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "95e129a3-f790-82d2-9271-fe1f79efe9ef"
     - stage: horo
-      stageUuid: "376d8317-c22c-8edb-aa72-3beba5831746"
+      stageUuid: "29e1612b-8a80-820d-a249-80cedd2435a0"
     - stage: seal
       stageUuid: "fbd87162-1ccc-8cc1-9ca8-af3e0358c67d"
     - stage: uuid
-      stageUuid: "d3a0e906-157b-84bc-8f19-ac80299f33af"
+      stageUuid: "56cc272b-6db6-8023-96d5-4d31efaa549b"
 version: 2
 ---
 # mixed

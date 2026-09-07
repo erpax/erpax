@@ -2,11 +2,11 @@
 name: recommendation
 description: "Use when reasoning about recommendation — Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concre"
 atomPath: "vocabulary/recommendation"
-coordinate: "vocabulary/recommendation · 7/descent · 02b450b8"
-contentUuid: "321fb6b1-7cf8-5fa5-b8d9-3cc67021c24d"
-diamondUuid: "e7ce6b40-2a2b-89c5-bcb1-99c665dd13b1"
-uuid: "02b450b8-939a-89b5-adc4-d89ef9099ac4"
-horo: 7
+coordinate: "vocabulary/recommendation · 8/crest · 79cf68d8"
+contentUuid: "43d92c7c-fe71-5bb4-91ec-a3cbee300d03"
+diamondUuid: "eaed1e81-55ac-847e-9213-cb7d7445fa5c"
+uuid: "79cf68d8-3f11-82ee-a230-1160d41432ea"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1347608a-9eb2-867c-b2ed-ab8e505983b6"
+  computationUuid: "853503b0-e0f3-821b-b081-b32d5611c115"
   stages:
     - stage: path
       stageUuid: "c1f10e29-270e-86b6-91ba-7da76d1bba6f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "24a1ede4-1a43-81b8-8d22-1dd03ad13370"
     - stage: horo
-      stageUuid: "3c9c712a-e3b8-8c92-9d55-0aec3d78f417"
+      stageUuid: "068e9926-af98-8528-bf1e-1172f1d9cd45"
     - stage: seal
       stageUuid: "0dd93667-5f29-8dd7-97c8-fa8b74c5597d"
     - stage: uuid
-      stageUuid: "adac35d3-9223-8329-a2b6-cda3e22a8706"
+      stageUuid: "ab32ba4d-4c1d-8ab6-9da1-995cf1c9b6b1"
 version: 2
 ---
 # recommendation

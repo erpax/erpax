@@ -2,10 +2,10 @@
 name: reference
 description: "Use when validating that a sale's fiscal references resolve — a citation that leads nowhere makes the sale unreviewable, which is a legal defect rather than a cosmetic one."
 atomPath: "sale/fiscal/reference"
-coordinate: "sale/fiscal/reference · 4/weave · 00baf661"
-contentUuid: "b6cebb62-4297-5709-831e-80f14160c4fa"
-diamondUuid: "c9021887-d83e-89bd-9ed6-8dcce24a3590"
-uuid: "00baf661-655b-8e7d-a769-90d591d2d9d5"
+coordinate: "sale/fiscal/reference · 4/weave · 01237875"
+contentUuid: "463322fa-25b6-55e7-af46-8c18fecd945a"
+diamondUuid: "c71f439a-c877-856f-944f-6efa4776470f"
+uuid: "01237875-e17d-8d14-83c2-377b86b7f294"
 horo: 4
 typography:
   partition: sale
@@ -14,7 +14,7 @@ standards:
   - "BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature"
 bindings: []
 signatures:
-  computationUuid: "268badec-7706-8b21-8504-13cf2669fb91"
+  computationUuid: "e4dc3c51-e035-89eb-a25d-10a5e916f7a5"
   stages:
     - stage: path
       stageUuid: "85d46ff2-724c-896c-ae9e-17a8b930cc6f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "79494409-57ab-873a-8d57-d6e086abf7b4"
     - stage: horo
-      stageUuid: "56149aa1-311d-8f9f-a98a-a1cb4a77d41c"
+      stageUuid: "5cd8bccb-1b4a-894c-a82a-118c91c04497"
     - stage: seal
       stageUuid: "a315d9c2-40cf-8479-a834-e538503650a7"
     - stage: uuid
-      stageUuid: "7c87a38f-71d3-8f80-9a2e-fe7c3693d6ed"
+      stageUuid: "b64d7b18-70d2-834a-ba29-bb3fe42a6356"
 version: 2
 ---
 # reference

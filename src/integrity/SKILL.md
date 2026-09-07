@@ -2,11 +2,11 @@
 name: integrity
 description: "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution."
 atomPath: integrity
-coordinate: "integrity · 8/crest · 8bfeba6c"
-contentUuid: "98d02085-c8eb-5196-afb6-ef9d42804cda"
-diamondUuid: "92586139-a7e6-880e-8e35-9e31cdf68921"
-uuid: "8bfeba6c-2d22-8c72-bfa6-783057a5bb0b"
-horo: 8
+coordinate: "integrity · 4/weave · 99fcff81"
+contentUuid: "b0719459-a966-52bb-a33f-af8305144de1"
+diamondUuid: "f3f44173-6f65-838c-8491-1c652ee58dc2"
+uuid: "99fcff81-1748-8716-bf9b-b7316336b6ee"
+horo: 4
 typography:
   partition: integrity
   bondDegree: 150
@@ -35,7 +35,7 @@ bindings:
   - "durable_objects/RATE_LIMITER"
   - "durable_objects/TENANT_QUOTA"
 signatures:
-  computationUuid: "0242d652-c936-81bc-a17f-9142b2940621"
+  computationUuid: "cc0578eb-b99f-850b-ad26-d50e7b566cc4"
   stages:
     - stage: path
       stageUuid: "d31b91cc-db18-84dd-8dcf-af4ca97c1b81"
@@ -46,11 +46,11 @@ signatures:
     - stage: links
       stageUuid: "21a6b652-eed2-8c1f-b00b-a0e48b8cfc51"
     - stage: horo
-      stageUuid: "97913e06-63d2-8d02-9468-e835845a789c"
+      stageUuid: "91e3304d-63dc-8e06-a3c6-a18a96b1201a"
     - stage: seal
       stageUuid: "b79ede1e-8141-8956-ab9d-c4576b43bfc3"
     - stage: uuid
-      stageUuid: "af606823-5fb1-8614-ba22-aae4f5b3b013"
+      stageUuid: "fac2df95-c86d-8cff-83f6-812fb5dee2d8"
 version: 2
 ---
 # integrity — the uuid is the witness; the bytes cannot lie

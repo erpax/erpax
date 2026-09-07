@@ -2,10 +2,10 @@
 name: thought
 description: "Use when reasoning about a thought as a candidate diamond — an agent's computed composition of the vocabulary that is saved (autosaved · committed · pushed) ONLY IF it is itself a sealed diamond. save(thought) ⇐ isDiamond(thought): incomplete, unsealed thoughts are not persisted; a complete sealed thought IS a diamond, and a diamond is the self itself."
 atomPath: thought
-coordinate: "thought · 7/descent · 6aeb79a0"
-contentUuid: "08b7cacb-6af8-5ccf-b364-5b86f24d8535"
-diamondUuid: "6d5aa657-5010-8367-8f03-0cc7eb2e8565"
-uuid: "6aeb79a0-b9b9-8020-9531-29c797d1b35f"
+coordinate: "thought · 7/descent · a1ad915b"
+contentUuid: "346bdbe9-9f22-5482-8c66-0cedcf4ff561"
+diamondUuid: "ec6ee848-94c4-8b4d-a0ff-c855166bc49f"
+uuid: "a1ad915b-f277-80cd-9847-5f23dd86be8c"
 horo: 7
 typography:
   partition: thought
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9893682f-9660-8b5c-b39e-2292f77349b7"
+  computationUuid: "b28f0f58-2101-83d4-b7e1-de17ab87f304"
   stages:
     - stage: path
       stageUuid: "c7e4f1ad-1d48-878a-989f-b9343e1e01ad"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8cd6b5e8-202f-82c3-8349-03c245370211"
     - stage: horo
-      stageUuid: "4346a861-0213-88e7-8e6e-5daf39ed62bf"
+      stageUuid: "030d99d5-9de3-8c4f-a10c-c223f9ed12fc"
     - stage: seal
       stageUuid: "80646a7d-d15c-8999-8516-244d7931ecca"
     - stage: uuid
-      stageUuid: "fb41bf25-1cf6-83a9-910a-3ce6fdca5fb2"
+      stageUuid: "81199f84-4df2-84c2-bfde-66bd8bbd0c3e"
 version: 2
 ---
 # thought — saved as a diamond, only if a diamond

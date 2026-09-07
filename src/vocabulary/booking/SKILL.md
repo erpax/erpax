@@ -2,11 +2,11 @@
 name: booking
 description: "Use when reasoning about booking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/booking"
-coordinate: "vocabulary/booking · 8/crest · 9660c432"
-contentUuid: "05d07539-246a-552e-9ea9-c17327a92243"
-diamondUuid: "cf626ae0-8f56-83cd-a15e-a6a59c6345fe"
-uuid: "9660c432-4f9a-8382-83b7-557ed12392dc"
-horo: 8
+coordinate: "vocabulary/booking · 7/descent · 82297518"
+contentUuid: "6ec2d57a-6004-5d79-b02b-4a03b0864d0c"
+diamondUuid: "d79a2ae1-de87-8be7-a0fc-aaa8391dfcf0"
+uuid: "82297518-5987-8178-96f5-33f0925e9e97"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1bb58e32-8864-8d74-9383-7079eec1c392"
+  computationUuid: "11e88da0-fa68-82ef-8e26-c5d1d0c45e89"
   stages:
     - stage: path
       stageUuid: "d7c8b3ba-61c1-8058-aa8b-84258f6634f5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c6aa18b2-a2db-8288-9173-595bc4eddaa1"
     - stage: horo
-      stageUuid: "e09e84d3-65ed-87fb-8131-e9378f77f277"
+      stageUuid: "02dd7c28-dee6-8cfe-9ce1-29bdea6714d4"
     - stage: seal
       stageUuid: "e07020c0-601c-82c7-b721-5767ce773420"
     - stage: uuid
-      stageUuid: "6390b199-9c4c-864d-8cfb-3e0eb7668566"
+      stageUuid: "bafb1372-e4e3-81cf-80c7-7064002a1ab7"
 version: 2
 ---
 # booking

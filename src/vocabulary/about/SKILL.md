@@ -2,11 +2,11 @@
 name: about
 description: Use when reasoning about about — The subject matter of an object.
 atomPath: "vocabulary/about"
-coordinate: "vocabulary/about · 4/weave · 22f15a26"
-contentUuid: "22955f22-2b58-5668-a46f-019fcba1fd31"
-diamondUuid: "eeb8224b-5f36-8ce7-b53c-a3fa5173da77"
-uuid: "22f15a26-0275-819a-b5cd-fd988d3552e6"
-horo: 4
+coordinate: "vocabulary/about · 2/share · 802b8765"
+contentUuid: "1a39ebb3-981f-5b07-9e27-be04f6257f4c"
+diamondUuid: "47262d93-b86d-8adf-a399-981cc174f848"
+uuid: "802b8765-18a1-87c0-b3de-80d05d69771a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e3700ff9-f6a2-8af3-921a-83720cf86056"
+  computationUuid: "eb725f6c-9d5a-8345-a431-f642d5cc6623"
   stages:
     - stage: path
       stageUuid: "ace9d78e-adcc-8d6c-b5a5-ee348fa48f57"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9880220a-211a-84df-898a-49d3fef535ce"
     - stage: horo
-      stageUuid: "26c15cb2-eb52-809e-b76e-ae459244acf2"
+      stageUuid: "cba98ec6-bb8a-82ca-a230-af0b9086cd7f"
     - stage: seal
       stageUuid: "7b9a2cba-755a-8617-ad67-37fead4ca296"
     - stage: uuid
-      stageUuid: "4af2a506-43e1-81ea-a629-add686bac2f2"
+      stageUuid: "18bfcb9d-60da-852c-ae6f-d83cf2a48758"
 version: 2
 ---
 # about

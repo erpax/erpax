@@ -2,11 +2,11 @@
 name: postal
 description: "Use when reasoning about postal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/postal"
-coordinate: "vocabulary/postal · 4/weave · 82af9ed5"
-contentUuid: "8c7498bb-0410-5078-8042-4979c59d8656"
-diamondUuid: "52b3189b-d45a-8afa-aecd-809a1d1ef585"
-uuid: "82af9ed5-10df-8d16-981d-a8f6eddb7ce9"
-horo: 4
+coordinate: "vocabulary/postal · 8/crest · d7c9afca"
+contentUuid: "43224716-3ae3-5d3a-84c0-9b44cf3a85aa"
+diamondUuid: "4f063f71-05ff-83f8-985b-91c2bbc96ef4"
+uuid: "d7c9afca-5263-8780-93c9-c3cdc51cc481"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 46
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9c7eee0d-3002-8616-b31b-865d7f6a86de"
+  computationUuid: "752d1a27-2b9a-82d4-b47c-7d42d055448e"
   stages:
     - stage: path
       stageUuid: "aa811c93-9988-834a-80c7-6fc89d2375d5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "11626d2c-8130-83f5-99b7-2a97b6f86271"
     - stage: horo
-      stageUuid: "02db8e40-0db4-8940-b53b-a9b5fa45f0ad"
+      stageUuid: "9989e5f6-8013-8867-8427-cdbad25de9ce"
     - stage: seal
       stageUuid: "f220f3a0-0a13-86ea-8cdf-a3347dd9a5be"
     - stage: uuid
-      stageUuid: "1fef4089-5a26-8abc-898a-ded24b966941"
+      stageUuid: "54c6adaa-f08e-845b-a95a-ec9c7d23f175"
 version: 2
 ---
 # postal

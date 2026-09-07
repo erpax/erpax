@@ -2,18 +2,18 @@
 name: history
 description: "Use when reasoning about git history as the akashic record's time axis — a content-addressed Merkle DAG of commits the agents read as a knowledge source AND another independent tamper-evidence level (forging the past = rewriting every commit on every clone). Wired in, it increases tamper cost and costs nothing to keep."
 atomPath: "vocabulary/history"
-coordinate: "vocabulary/history · 7/descent · 877902b9"
-contentUuid: "251a29e6-9a17-5b35-9eda-5f2cf7e03954"
-diamondUuid: "45552d38-0552-86d6-8a6f-da1ab91a1d41"
-uuid: "877902b9-b61d-87c1-bd42-d9cbaa6509f5"
-horo: 7
+coordinate: "vocabulary/history · 5/round · 9e0cd2d1"
+contentUuid: "b964c9b1-c982-56e9-925d-771a0ce9b3ef"
+diamondUuid: "97a0f08d-5e03-8795-9aca-2f3cbaf50597"
+uuid: "9e0cd2d1-3e44-8fe7-8920-78ff81ac4712"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 104
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9c8d51f6-d8c8-83e3-bd46-485ee9a54a91"
+  computationUuid: "780ff6d6-329f-8585-ac52-d2dc542fdd40"
   stages:
     - stage: path
       stageUuid: "7a56b746-a6c8-8c6f-9541-ffd9adaa1bf2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9eb11879-1f96-87c3-94e4-7b576578e0e7"
     - stage: horo
-      stageUuid: "f0197156-5e58-8c07-9ff4-af1d8776b32d"
+      stageUuid: "991760cd-1e12-8494-aa92-6807098764d8"
     - stage: seal
       stageUuid: "826e3543-e6e3-8c72-bd7f-3dea6e7cfdbc"
     - stage: uuid
-      stageUuid: "c784d3e8-8db3-86c9-9e3f-adbdc2423e85"
+      stageUuid: "eec491a5-7100-8f06-bc17-e25505a96b16"
 version: 2
 ---
 # history — the content-addressed timeline

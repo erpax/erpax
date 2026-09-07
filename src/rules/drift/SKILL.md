@@ -2,18 +2,18 @@
 name: drift
 description: "Use when reasoning about drift — The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom is minted."
 atomPath: "rules/drift"
-coordinate: "rules/drift · 4/weave · 7a1b4221"
-contentUuid: "190e4d9f-7b25-52b3-992f-a20573dc7851"
-diamondUuid: "aeff6e6d-b5ab-87f8-91f9-c1470a4e3196"
-uuid: "7a1b4221-5349-881e-9512-3ce64f480e58"
-horo: 4
+coordinate: "rules/drift · 2/share · 92bcd3e4"
+contentUuid: "09c5ddfa-c256-53c8-a199-81a173f17488"
+diamondUuid: "49069f3a-4529-8e3a-a998-fed2c12a3582"
+uuid: "92bcd3e4-0ca4-8e8f-b656-511ffaa98fc3"
+horo: 2
 typography:
   partition: rules
   bondDegree: 14
 standards: []
 bindings: []
 signatures:
-  computationUuid: "260c2cbb-851d-8994-978f-38921e5ce639"
+  computationUuid: "22d48fe1-09ee-8c49-b83b-a2ef358e3e54"
   stages:
     - stage: path
       stageUuid: "f0341797-e669-8474-9922-fa097a18406d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "586dfa76-ef2c-8b04-9be4-fa3436ab9c33"
     - stage: horo
-      stageUuid: "bee48591-585d-877f-8e57-7bd22439032d"
+      stageUuid: "e167c289-23ac-8357-a3b2-cdc7f89d5e4c"
     - stage: seal
       stageUuid: "74f43639-d338-80f0-8100-239009ccdb29"
     - stage: uuid
-      stageUuid: "abd150e4-9f4d-8e1c-bfb7-619e1f8f231e"
+      stageUuid: "c237c016-f62d-8f4c-8977-1010732d9338"
 version: 2
 ---
 # rules/drift — a number typed into prose is a copy of an answer, and copies go stale

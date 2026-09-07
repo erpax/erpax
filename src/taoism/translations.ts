@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "taoism",
-    "uuid": "6be5e7f2-ee29-8cbf-9e09-bbbb1b67939f",
+    "uuid": "f175fbfe-0b4e-8853-92db-e08d87d32a2e",
     "words": [
       "taoism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Taoism as a diamond of invariant atoms — the way that cannot be named, yin-yang as the duality held, acting in accord (wu wei), returning as the motion of the Tao, qi the vital breath. Strip the Chinese prefix and tao, qi, wu wei, fan collapse to void, breath, harmony, return — one content-uuid each.",
-    "uuid": "e14ec1fb-b517-8b67-8bcb-4d97365f68e2",
+    "uuid": "7c3f8884-6685-82f1-964f-33a742ebddad",
     "words": [
       "use",
       "when",

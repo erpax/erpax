@@ -2,18 +2,18 @@
 name: hooks
 description: "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \"my hook didn't run / ran at the wrong time\"."
 atomPath: hooks
-coordinate: "hooks · 3/3 · cb1f084b"
-contentUuid: "dcb12bb0-00d2-5b95-be98-33e480df82cb"
-diamondUuid: "fbab4421-b958-8029-bc62-0b781ba653d0"
-uuid: "cb1f084b-a7b5-86b0-99fa-48e6672ae12f"
-horo: 3
+coordinate: "hooks · 6/6 · 659a4134"
+contentUuid: "7320801b-463c-5ebb-a125-20705e92749f"
+diamondUuid: "b40f515a-02c2-8d29-ab2e-bf88951d7480"
+uuid: "659a4134-e7d0-8731-9e24-2765cd6d1ef8"
+horo: 6
 typography:
   partition: hooks
   bondDegree: 348
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7a2ffc78-ffc1-82b2-9d3e-34637989da3c"
+  computationUuid: "9805e548-8bb5-8973-8533-4ba693acb911"
   stages:
     - stage: path
       stageUuid: "f43cfff2-b630-83f3-b35e-a37d64a3262d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "552bfb18-9c5b-82c0-baf2-86ba8e34f4f7"
     - stage: horo
-      stageUuid: "0734ec9e-3b56-80ad-8aff-52497e00ca6e"
+      stageUuid: "d6873578-cf28-8bd1-93f4-bdfab0c30dce"
     - stage: seal
       stageUuid: "93e763fe-898c-8d89-9ae3-818c3b4b8d91"
     - stage: uuid
-      stageUuid: "5e44a0c9-ddba-8698-90e8-6ee52a21d9da"
+      stageUuid: "cc4b474b-35b4-89e9-bd0a-ff7786bea65c"
 version: 2
 ---
 # hooks — Payload lifecycle hooks (position 6, the control triad)

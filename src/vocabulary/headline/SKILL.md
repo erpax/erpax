@@ -2,11 +2,11 @@
 name: headline
 description: Use when reasoning about headline — Headline of the article.
 atomPath: "vocabulary/headline"
-coordinate: "vocabulary/headline · 4/weave · 001990a8"
-contentUuid: "20bf54a4-82b4-5289-8052-d5440782bb98"
-diamondUuid: "1f3bfedc-fd36-8161-80bd-3bace728a4a1"
-uuid: "001990a8-abc2-8b62-a828-8b8941729620"
-horo: 4
+coordinate: "vocabulary/headline · 2/share · 1f8a8cbb"
+contentUuid: "243e174c-e573-5a7e-a0d2-7247a5a4987b"
+diamondUuid: "addaa416-7ec2-8255-9f11-d7d7ccef6bbc"
+uuid: "1f8a8cbb-0785-83e4-b824-af1c138af73f"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e0c58770-6f30-868c-b02b-c2e4c3f2b88b"
+  computationUuid: "e103db62-05cd-87eb-9101-da3d5edc77ab"
   stages:
     - stage: path
       stageUuid: "d844b4b7-e28c-8263-840f-ace06b27bfa3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "444370f8-a3bf-8f3c-8f6f-5621bc0725fd"
     - stage: horo
-      stageUuid: "425fe630-c10c-8b06-937b-bf0582bfe08d"
+      stageUuid: "61b7efcb-33ab-805c-bb59-8b8e71594c80"
     - stage: seal
       stageUuid: "b111c325-029c-89f8-b3a9-b3cceaca18a3"
     - stage: uuid
-      stageUuid: "50053577-de1a-8843-af34-eb38f928400e"
+      stageUuid: "7f672803-32a0-8ecd-aa34-c5202d4e8252"
 version: 2
 ---
 # headline

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "percentile",
-    "uuid": "66c2b124-745a-851a-a916-26bfa7a90319",
+    "uuid": "b9aae378-5985-8500-a028-f2cd4401eab0",
     "words": [
       "percentile"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about percentile — The 10th percentile value.",
-    "uuid": "dc0a2598-660c-8ae7-a20e-6e67e71617df",
+    "uuid": "93ecfa22-1be8-8f39-b470-1e19aadd5292",
     "words": [
       "use",
       "when",

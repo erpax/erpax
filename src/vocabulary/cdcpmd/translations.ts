@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cdcpmd",
-    "uuid": "511c33cb-9d9f-8ab3-b8b7-8b0eff09a313",
+    "uuid": "7754c847-11b1-82dc-9dbb-f516cd0841c2",
     "words": [
       "cdcpmd"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cdcpmd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "2f6931fc-d263-83a8-86ef-f38b829d41d5",
+    "uuid": "59933135-aab4-892f-bb80-f680b784d2ee",
     "words": [
       "use",
       "when",

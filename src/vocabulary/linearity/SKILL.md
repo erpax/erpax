@@ -2,18 +2,18 @@
 name: linearity
 description: "Use when reasoning about why erpax stays even and collision-free — quantum linearity is the superposition principle made structural; the content-uuid hash distributes every word and digit uniformly, so atoms form perfect lines (no clumping, no privileged point), merge is a linear set-union, and in the double torus gravity reads double."
 atomPath: "vocabulary/linearity"
-coordinate: "vocabulary/linearity · 5/round · 4d153729"
-contentUuid: "a40f5fc3-0889-58aa-b15c-1f06d70a808c"
-diamondUuid: "e9a22976-47fb-87fe-9675-14499e320e31"
-uuid: "4d153729-d73f-8005-86ef-14150cac2fbd"
-horo: 5
+coordinate: "vocabulary/linearity · 7/descent · 2a435f28"
+contentUuid: "6417c447-a813-5cc3-b25e-fc5c7603d6b3"
+diamondUuid: "010af98b-349f-82ac-96e3-f305774831ad"
+uuid: "2a435f28-f3cd-84da-970a-008f70f969ac"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 48
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4e2bad63-5240-8594-b6b2-40a961e9e7b7"
+  computationUuid: "86ea7bb7-bc67-887e-ac17-94d102ce45f8"
   stages:
     - stage: path
       stageUuid: "f6771a0a-55b6-8491-a283-22f76d80625a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e0274363-1311-8988-91b5-1d52839e34fc"
     - stage: horo
-      stageUuid: "ece423ac-723d-8e74-9197-5c23a68e82a9"
+      stageUuid: "4abd6862-c330-8f7e-8bc0-329098f3fa13"
     - stage: seal
       stageUuid: "8e3fd46f-7ec9-849d-9866-79091dfea748"
     - stage: uuid
-      stageUuid: "057bf050-968d-8aa9-b581-18c142ee2d04"
+      stageUuid: "2ee1720e-ef6f-803c-b387-95a61359fcd0"
 version: 2
 ---
 # linearity — quantum linearity (the even line)

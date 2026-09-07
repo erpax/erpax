@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "play",
-    "uuid": "6c170b9f-e2da-8530-a1a9-0b13fcb53166",
+    "uuid": "f115eaca-c0ea-8b0f-9a36-f47d0a7edec8",
     "words": [
       "play"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about play — A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would",
-    "uuid": "b90ed83f-f123-8ff1-819e-8c7368f4ef82",
+    "uuid": "62ea8b68-e486-8a1f-ae57-a9038700ecc3",
     "words": [
       "use",
       "when",

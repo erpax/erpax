@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "roadmap",
-    "uuid": "fe41c00f-4526-86b1-a539-a1d1d08c874f",
+    "uuid": "f60691b4-4846-8a3f-a44f-6900a8f28597",
     "words": [
       "roadmap"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when planning deliverables across quarters/years — a timeline of features, milestones, epics, with dependency links and resource allocation. The strategic sequencing.",
-    "uuid": "6b443284-dcd8-879c-90f3-bdbd9b8e2e38",
+    "uuid": "d0e29ae8-4c9e-8ccf-8d63-78d4c58b7d3c",
     "words": [
       "use",
       "when",

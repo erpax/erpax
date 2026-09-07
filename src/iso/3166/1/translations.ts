@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing ISO 3166-1 — Country codes.",
-    "uuid": "b0142b17-a120-8d83-b327-bac72e8266a7",
+    "uuid": "3f55bc6b-e053-834c-a6c2-1d6de7535691",
     "words": [
       "use",
       "when",

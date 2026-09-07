@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "grade",
-    "uuid": "6897ff11-3106-84ac-bd12-53f7a19497e3",
+    "uuid": "b48e5b48-d103-824d-a440-ddee3a0ae4ee",
     "words": [
       "grade"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria.",
-    "uuid": "65ee05f1-7d51-8c05-827d-ce0f20f1b052",
+    "uuid": "79e2f2ed-1635-8ff2-8b37-83693c4b7074",
     "words": [
       "use",
       "when",

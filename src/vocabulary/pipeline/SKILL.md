@@ -2,18 +2,18 @@
 name: pipeline
 description: "Use when tracking the progression of deals through sales stages — lead → qualified → proposal → negotiation → won/lost. The sales funnel state at each stage with value, probability, and close date."
 atomPath: "vocabulary/pipeline"
-coordinate: "vocabulary/pipeline · 8/crest · cba0ec58"
-contentUuid: "94d3109f-b17c-5bb1-b51a-79e892bd30f2"
-diamondUuid: "5c7ea079-e0fd-8b52-bb2c-fac26d87d1b0"
-uuid: "cba0ec58-8afd-871b-9f90-d2a9d54242ee"
-horo: 8
+coordinate: "vocabulary/pipeline · 7/descent · ac4363da"
+contentUuid: "0d36cd76-0308-565e-aaea-0ffad0864dd7"
+diamondUuid: "9f39b7f4-3382-81c9-ae47-d486bd288a9a"
+uuid: "ac4363da-5cda-8a36-9fd2-02d7960950d7"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 26
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8c0c0c4a-980c-85cb-9aaf-34daa9f0dc48"
+  computationUuid: "1f6aa536-1607-809b-bd51-ddb0851dabb3"
   stages:
     - stage: path
       stageUuid: "d12cfc50-071b-8ace-959f-0f00786fab60"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c3984f88-4a56-8f76-8e90-9e6bcfd254eb"
     - stage: horo
-      stageUuid: "d04fdd77-2a66-8bb3-8644-53e1ab48e01d"
+      stageUuid: "b08a900d-8a1f-8d4e-a6fb-222863d88255"
     - stage: seal
       stageUuid: "25c3ee30-5ffd-86fe-b993-a421968c913f"
     - stage: uuid
-      stageUuid: "15b8c459-7979-8e9a-9bba-682e6c08b930"
+      stageUuid: "c129b506-4223-8124-93f6-df0ba27497db"
 version: 2
 ---
 # pipeline

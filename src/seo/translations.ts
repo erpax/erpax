@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seo",
-    "uuid": "32c459c8-d41f-8ba1-8820-9259a7ba1680",
+    "uuid": "a83b3f15-bcba-8d80-b034-50cd103142d5",
     "words": [
       "seo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when ensuring every atom carries comprehensive marketing and SEO — title, meta description, keywords, canonical, and schema.org JSON-LD — computed from the atom and verified by a forcing-function test, then displayed directly in vitepress.",
-    "uuid": "1ee2f12b-bf32-8e72-8c90-a05c45e02a67",
+    "uuid": "23e70af5-8b9f-8a86-92ce-dbf5d209d6c9",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: fast
 description: "Use when reasoning about fast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fast"
-coordinate: "vocabulary/fast · 7/descent · 5db8fa51"
-contentUuid: "179e0bad-3700-5aad-b9c0-4ef47bf54ea6"
-diamondUuid: "35dd77ce-2517-8b99-aa73-a97ce7cd8cb8"
-uuid: "5db8fa51-5a76-8eec-b3e4-c4162eb1c3cb"
-horo: 7
+coordinate: "vocabulary/fast · 5/round · 20a8de4d"
+contentUuid: "ac0a57ed-eaad-51a4-986c-3419c79ca6b7"
+diamondUuid: "5a97d46f-5c2f-8034-98a0-b104b5114071"
+uuid: "20a8de4d-5bd8-849a-98ee-5481c0caa963"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 32
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e6fc11f9-f817-876e-867b-344a066d1021"
+  computationUuid: "a3050086-45f2-8608-ac4a-4faec78ed7ad"
   stages:
     - stage: path
       stageUuid: "d0fa67ed-b6c6-839b-8a59-bfa6ca050def"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "013b44ca-9bd0-813e-8784-2368f6f8f35b"
     - stage: horo
-      stageUuid: "0c346741-618c-8ab4-8181-f818f7bd1dba"
+      stageUuid: "70711a65-0a22-84bf-91ee-6eba1e4f9242"
     - stage: seal
       stageUuid: "f8b0b66b-34bc-8580-a4c9-21be542877eb"
     - stage: uuid
-      stageUuid: "d02495f0-0cd1-8cb3-8cbd-3efebb2875d6"
+      stageUuid: "0c8fc14d-6e97-8bf1-8148-7666ae07ae90"
 version: 2
 ---
 # fast

@@ -2,11 +2,11 @@
 name: resolver
 description: "Use when resolving a calendar date to a fiscal year/period, generating a fiscal calendar, or amending a period config — monthly, quarterly, weekly, iso-week, retail-445 and custom period types, with a chainLeafUuid audit leaf. Read this before trusting any chainLeafUuid: the leaf was a reversible base64 prefix claiming tamper detection, hand-rolled identically in seven atoms, and it is now the corpus fold."
 atomPath: "fiscal/period/resolver"
-coordinate: "fiscal/period/resolver · 4/weave · f8224d96"
-contentUuid: "561df585-d758-5a70-941a-e1adf7bc5db4"
-diamondUuid: "d99fc303-b858-874f-b925-a3a72c22113b"
-uuid: "f8224d96-b0c4-8821-9029-d22354198ca3"
-horo: 4
+coordinate: "fiscal/period/resolver · 5/round · fff4dfcd"
+contentUuid: "afe0164c-36e5-58b8-b879-3ccea52e933e"
+diamondUuid: "092ca884-6c01-8a83-acfe-28d820be4a30"
+uuid: "fff4dfcd-9157-8c61-8fe1-3cc4a297aa7c"
+horo: 5
 typography:
   partition: fiscal
   bondDegree: 9
@@ -19,7 +19,7 @@ standards:
   - "SAF-T:3.0.2 (regulatory period coding)"
 bindings: []
 signatures:
-  computationUuid: "4d43cb7c-51fc-8a48-833e-2f11e433473c"
+  computationUuid: "fbeb3024-3ca8-83b5-841b-86ec05ea2aeb"
   stages:
     - stage: path
       stageUuid: "55de6411-02fe-859f-902c-a74ec5438835"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "52645885-dde2-82c7-820d-36f2d2889441"
     - stage: horo
-      stageUuid: "075ee9e8-5958-8d75-8c70-1f86a2606f40"
+      stageUuid: "63d62fc8-afb8-8254-a453-245423036370"
     - stage: seal
       stageUuid: "0d6126e9-a941-81c7-ae72-8b673d88e81a"
     - stage: uuid
-      stageUuid: "59bd2fc0-26ef-8d37-bcd3-f27ee765e1dd"
+      stageUuid: "12147d22-3ada-8bbd-bbba-39f366b45ada"
 version: 2
 ---
 # resolver — the chain leaf is the fold

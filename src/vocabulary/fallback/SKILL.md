@@ -2,10 +2,10 @@
 name: fallback
 description: "Use when reasoning about fallback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fallback"
-coordinate: "vocabulary/fallback · 4/weave · c6bcf14d"
-contentUuid: "923c08be-49c8-50ee-8594-9cdfbb0b31e8"
-diamondUuid: "26684031-5732-8f03-8794-df8963102d4f"
-uuid: "c6bcf14d-3dcc-82ef-abad-ceb6ba2d09f8"
+coordinate: "vocabulary/fallback · 4/weave · 080b9d15"
+contentUuid: "203d3c0c-69ee-58ab-895c-d2bc04e99008"
+diamondUuid: "00d89352-079f-8756-bafe-975df8c95570"
+uuid: "080b9d15-f0f7-8a36-8f87-f7a1b72aef0a"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9d7fb4d8-2505-855b-bcd4-ab43318b7aff"
+  computationUuid: "88d8cf4e-f413-8f26-8c37-848d7a1a7f6c"
   stages:
     - stage: path
       stageUuid: "6f88c06a-b29c-8584-a6b6-30b78dc49942"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "81a32db7-b3de-812c-b244-60a064f23dea"
     - stage: horo
-      stageUuid: "f2dfe0cf-2816-89ef-9d6c-2e2383384663"
+      stageUuid: "8f5f7aa6-9f4e-8a95-8d1e-9af1f12ea021"
     - stage: seal
       stageUuid: "c9d2b760-54b2-87c4-8a48-b6338d40054b"
     - stage: uuid
-      stageUuid: "ffd446d6-3d19-89e2-a7fe-bf2223919fdc"
+      stageUuid: "d2df5d21-6191-8eab-b2a5-8c69506a73a6"
 version: 2
 ---
 # fallback

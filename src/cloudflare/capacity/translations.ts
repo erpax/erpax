@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "capacity",
-    "uuid": "ceeb30f0-ef8f-884c-bc94-40cd52fe3967",
+    "uuid": "0c1e0ca7-6aa4-8346-92b9-e8d87e4d73ba",
     "words": [
       "capacity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's production hardware — the Cloudflare edge (Worker isolate, D1, R2, Durable Objects) has hard limits, and CLOUDFLARE_LIMITS declares them with sources. productionCapacity(cwd) computes erpax's demand vs each; the decisive one is the 80MB skill index against the 3MB Worker script limit (27× over), deployable only because it is never bundled. assertFitsProduction refuses a deploy where the worker entry imports the index — the discipline made a theorem. Models the ceiling; the actual built artifact needs a build to measure.",
-    "uuid": "0c23cc3c-6279-841d-9ca4-ec71ed5a85bd",
+    "uuid": "9de747cc-0d3d-8e2d-b75e-861040c4f9dd",
     "words": [
       "use",
       "when",

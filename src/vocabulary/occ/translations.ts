@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "occ",
-    "uuid": "9fa2a5fd-acf8-862d-86a8-eaa4f0fc8641",
+    "uuid": "82a61293-4dcc-851e-9430-3c24ef247dd9",
     "words": [
       "occ"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about occ as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "d903d82c-92bf-891d-9721-a09633748474",
+    "uuid": "d3acb499-56c2-8e59-a447-fa2d0b8a2e73",
     "words": [
       "use",
       "when",

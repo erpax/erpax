@@ -2,11 +2,11 @@
 name: extra
 description: "Use when reasoning about extra as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/extra"
-coordinate: "vocabulary/extra · 4/weave · 4d5e8978"
-contentUuid: "c5c8177b-9dd5-5d5d-8134-4373b9ab2bc2"
-diamondUuid: "4c6c907a-f2f5-8269-b0ce-48da124b4c09"
-uuid: "4d5e8978-d162-8ce5-895d-29eb577b0d53"
-horo: 4
+coordinate: "vocabulary/extra · 7/descent · ae3997cc"
+contentUuid: "15314a7c-2200-5d13-9e21-3640cc69cd6f"
+diamondUuid: "dc5e071e-1dff-8443-80ee-36df26c02961"
+uuid: "ae3997cc-9e9e-8a53-a985-eca168d8a93f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "57f812df-aa2a-8698-a92f-b190112709ff"
+  computationUuid: "9facc34f-7e83-89ab-9cc8-64859fb50e94"
   stages:
     - stage: path
       stageUuid: "9c313f1b-c0ea-8cda-bcdf-0a0fa4da4892"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f3f4edef-141d-8c96-a528-cb171b538445"
     - stage: horo
-      stageUuid: "85f40260-f769-8b55-8341-18ec5524db54"
+      stageUuid: "f9ee282c-9414-8353-92a8-3f77802e6460"
     - stage: seal
       stageUuid: "294b98d8-798f-8804-8918-6b6b65dfcc70"
     - stage: uuid
-      stageUuid: "c60fb356-0625-81e8-9976-fd96273d193d"
+      stageUuid: "22e77290-82d7-8b79-8342-e795195bc9e4"
 version: 2
 ---
 # extra

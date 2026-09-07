@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "metadata",
-    "uuid": "67ff08d3-ae83-86ec-83ba-5c719ccb73ce",
+    "uuid": "bff8f3a6-65dc-8922-ad43-93b3abee717b",
     "words": [
       "metadata"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register.",
-    "uuid": "44b26463-c1b3-8b45-bd38-4e9c731cf48c",
+    "uuid": "605dbda0-c5c5-86ad-b9c3-a61063e7a6c8",
     "words": [
       "use",
       "when",
