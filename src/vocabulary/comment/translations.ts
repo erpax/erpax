@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "comment",
-    "uuid": "eb7554c5-bdb4-867c-b114-e7f028d358fb",
+    "uuid": "8e18d21c-fb25-8759-8d3e-5b9d1dda89ed",
     "words": [
       "comment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when any record needs threaded notes/annotations with author provenance — the polymorphic CommentsConcern. One comments collection serves all others via a polymorphic relationTo; author ties to audit.",
-    "uuid": "72273b78-a6f8-86b1-8aab-597df94665fc",
+    "uuid": "a611f780-f884-83ff-afd1-c52beb8d75f6",
     "words": [
       "use",
       "when",

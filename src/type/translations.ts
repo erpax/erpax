@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "type",
-    "uuid": "fd420e49-82b8-86ec-b116-421a48c45948",
+    "uuid": "9ac40052-6ef2-8a20-bf72-f660c6551ff7",
     "words": [
       "type"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when categorizing an entity into a taxonomic class — customer type (company/individual), transaction type (sale/purchase), account type (asset/liability/equity). A select field carrying domain-specific enums; often paired with status for state-machine workflows.",
-    "uuid": "23c1404a-fdad-84dc-8778-ecf7e93dffbd",
+    "uuid": "c0bae0e2-ea44-8ed4-b823-ca45f3566675",
     "words": [
       "use",
       "when",

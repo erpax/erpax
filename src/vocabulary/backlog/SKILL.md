@@ -2,10 +2,10 @@
 name: backlog
 description: "Use when managing a prioritized list of pending work — features to build, bugs to fix, support tickets, maintenance requests. The work-capture system."
 atomPath: "vocabulary/backlog"
-coordinate: "vocabulary/backlog · 4/weave · 04822128"
-contentUuid: "45992326-0424-53db-8ed2-294fb9066c05"
-diamondUuid: "dd93b40f-4089-8ca3-8393-eee4e64bb609"
-uuid: "04822128-e42e-8db0-97c1-3b189fbd7fd2"
+coordinate: "vocabulary/backlog · 4/weave · 36f40fc2"
+contentUuid: "b8fffa2a-53e1-519b-9422-91dd6cd3b69d"
+diamondUuid: "17abdd08-b5e6-8dcd-8884-b671be0c6fbd"
+uuid: "36f40fc2-e388-8b5a-bc84-bb677a77e03c"
 horo: 4
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "265b83a7-fe41-8fba-83d6-34a2b76cbdc1"
+  computationUuid: "4ae1e5b0-47b1-8b6c-be59-8dd4ee3d602e"
   stages:
     - stage: path
       stageUuid: "473661f8-9c4c-8cc6-81b3-b2bdae6f1106"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bbd06a5a-4216-8693-85fa-85c04af9f93e"
     - stage: horo
-      stageUuid: "c4cd1ee9-889d-842e-a1c3-534dff9bc067"
+      stageUuid: "8e08af07-1fbf-8e88-a1e3-c5ac51a56447"
     - stage: seal
       stageUuid: "1574b545-8dac-8961-b424-5bc8a90e48e1"
     - stage: uuid
-      stageUuid: "2308b5cf-a765-8459-ae1a-aa807d91ed2c"
+      stageUuid: "f1be6e20-5479-88b4-be4e-640947b458f7"
 version: 2
 ---
 # backlog

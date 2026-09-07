@@ -2,11 +2,11 @@
 name: speed
 description: "Use when auditing must prove it is fast — pure invariant checkers (counter/referential/bound integrity) whose SQL forms verify a whole ERP history in seconds at zero tokens; measured on etrima's 20-yr 29.7M-row DB at ~24M rows/s."
 atomPath: "audit/speed"
-coordinate: "audit/speed · 7/descent · 63b88ce6"
-contentUuid: "42c5207b-44fc-5d5f-bf1a-b4a80a407525"
-diamondUuid: "1fcc05d1-a184-888e-adce-e9ebc0079cb6"
-uuid: "63b88ce6-8a25-8afc-90c0-b41badbaf638"
-horo: 7
+coordinate: "audit/speed · 4/weave · 130d989c"
+contentUuid: "6fe4165a-6dfc-56b2-859d-31e745de5d7f"
+diamondUuid: "d08c678d-ea4e-8931-a2a9-6129045d8491"
+uuid: "130d989c-2f18-8cb8-91b7-1369a42f771b"
+horo: 4
 typography:
   partition: audit
   bondDegree: 14
@@ -15,7 +15,7 @@ standards:
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "795a442a-723d-8560-ad0e-240ff8f3fb43"
+  computationUuid: "6a402a26-2b3f-8522-8a8f-39fee4f005ab"
   stages:
     - stage: path
       stageUuid: "e19ebb5e-3f26-8821-82e2-7084aebe2bfe"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "91b70b84-d3f7-8992-b476-808dd34af005"
     - stage: horo
-      stageUuid: "6361433a-1aef-81f4-81af-98e1ed29104e"
+      stageUuid: "de629016-caa0-86e1-9117-c135ae7adcf5"
     - stage: seal
       stageUuid: "63e87e4a-2c58-83c8-b78d-b8f3cd9b3b0e"
     - stage: uuid
-      stageUuid: "2e988c83-b1ab-8d21-aa1b-be15e642d929"
+      stageUuid: "a58c6c61-076b-847d-9ccb-cf1bc0a96917"
 version: 2
 ---
 # audit/speed — a whole ERP history audited in seconds, at no AI bill

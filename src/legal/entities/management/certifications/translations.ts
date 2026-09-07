@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "certifications",
-    "uuid": "ad62e008-8959-89a5-a401-83cd1eaa0f90",
+    "uuid": "2853646e-e8cc-801f-811e-8fede1eb094e",
     "words": [
       "certifications"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or auditing officer certifications — SOX 302 / 906 corporate-responsibility and criminal certifications, internal-control and financial-statement sign-offs, with certifying officer, assertions, and certification level per SOX §302 / SOX §906. The management-certification sign-off collection.",
-    "uuid": "da7e1d7d-ac1d-8a91-bd9a-89cd90df264d",
+    "uuid": "058e00e6-b9be-8236-ab37-695b85d863e3",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: sacral
 description: "Use when reasoning about the sacral center (Svadhisthana) — index 1 of the seven chakras, a standalone projection of the chakra atom whose uuid is computed from the position math and whose colour is rendered from that uuid, never the reverse."
 atomPath: sacral
-coordinate: "sacral · 2/share · f3dba39e"
-contentUuid: "a1c0e38e-b406-57cb-a14b-302f99988aab"
-diamondUuid: "7ce05b9e-0e09-838c-9441-a9e0abded243"
-uuid: "f3dba39e-11d7-8678-ab13-6940f1ed4fd2"
-horo: 2
+coordinate: "sacral · 1/base · 3f30f219"
+contentUuid: "5f54a315-91c8-5e17-b234-197678367f01"
+diamondUuid: "c676ede3-8ce2-802e-8acc-a2a0e2d0288b"
+uuid: "3f30f219-ae35-8f39-905b-0d87d5d25f64"
+horo: 1
 typography:
   partition: sacral
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f69a5559-d936-818a-a097-fdd5ae36989c"
+  computationUuid: "67a5bf96-ae43-8c15-8eff-2c67d3f74dca"
   stages:
     - stage: path
       stageUuid: "2c0ec5db-3d1d-8582-a46e-4964b4ce7d7d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9d62770b-122b-8726-a65b-fc7e363d5956"
     - stage: horo
-      stageUuid: "23b1e627-1ad1-87af-ac8c-c68a6466f771"
+      stageUuid: "e0a264e6-99db-8f3e-8387-f5d3ac65ce1a"
     - stage: seal
       stageUuid: "08512895-70ab-81b5-a814-832783521bb8"
     - stage: uuid
-      stageUuid: "83be48ed-a2a7-8a7d-9a13-b3261eb70a27"
+      stageUuid: "52b1d27c-34e3-8fc4-86f1-3a3ebe9d04ce"
 version: 2
 ---
 # sacral — the sacral center (Svadhisthana)

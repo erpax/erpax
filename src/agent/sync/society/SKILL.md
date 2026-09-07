@@ -2,11 +2,11 @@
 name: society
 description: "Use when reasoning about society — agent-society — the breath over the agent-sync bus."
 atomPath: "agent/sync/society"
-coordinate: "agent/sync/society · 7/descent · 91871086"
-contentUuid: "3515be02-273b-5325-a8a9-f26961fe6953"
-diamondUuid: "ad63c6ca-4d68-883c-ac62-3689758348c3"
-uuid: "91871086-4d90-8cc6-ae9d-5294a4730473"
-horo: 7
+coordinate: "agent/sync/society · 1/base · a9e6bedf"
+contentUuid: "5035d3e4-91fe-58b2-9bbd-f26afd7616e0"
+diamondUuid: "bf360ebb-3f16-8fdf-99b2-5833639ce957"
+uuid: "a9e6bedf-2e48-8aeb-84d7-a24c7733964e"
+horo: 1
 typography:
   partition: agent
   bondDegree: 448
@@ -20,7 +20,7 @@ standards:
   - "W3C-ActivityPub"
 bindings: []
 signatures:
-  computationUuid: "cff79cd7-9e52-80a2-af5d-bda3fca7eaaa"
+  computationUuid: "53ce520a-f5f2-8b58-abd7-86a6420e5631"
   stages:
     - stage: path
       stageUuid: "ee13706d-10c1-85d2-a60b-5b3788245a78"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "11491ad3-4c0d-8bdd-b0a6-c318f9313917"
     - stage: horo
-      stageUuid: "28edc15d-ee25-889e-acf7-993a59f89a86"
+      stageUuid: "716d4d3f-3f84-833e-9a35-29bcc9808382"
     - stage: seal
       stageUuid: "4309ad44-74c6-8388-bef0-6d2bd5c5988e"
     - stage: uuid
-      stageUuid: "423c0f40-b624-81d1-bf86-83202edcb3c1"
+      stageUuid: "aa090411-2ba1-80a1-bbd1-0497e211e387"
 version: 2
 ---
 # agent/sync/society

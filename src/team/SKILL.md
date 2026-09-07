@@ -2,18 +2,18 @@
 name: team
 description: "Use when the society spawns multiple agents that share skills — a team is a set of content-addressed agents whose competence is the UNION of their skills (merge/holographic: a skill one loads, the team has), with distinct purposes preserved. Spawn → share → cover the gap in parallel. Matter-twin services/agent/team.ts."
 atomPath: team
-coordinate: "team · 5/round · 2a10422e"
-contentUuid: "0fa9a1fe-db40-58f9-9bd1-2e9d338e9b87"
-diamondUuid: "e51be815-3591-85d9-98b9-1ff1ff9257ba"
-uuid: "2a10422e-2ec3-8c01-ab53-6e87ad196e44"
-horo: 5
+coordinate: "team · 4/weave · 84ca2c96"
+contentUuid: "588044e7-91d2-55c4-9092-b21d41d563d2"
+diamondUuid: "11740259-f02e-81bd-bb87-a2f42464fe4b"
+uuid: "84ca2c96-1a8d-81b2-9811-e6998e1a7e26"
+horo: 4
 typography:
   partition: team
   bondDegree: 142
 standards: []
 bindings: []
 signatures:
-  computationUuid: "59bcd2f6-9f2d-8de2-a46f-065f731f79f1"
+  computationUuid: "31a0ef8b-0204-8d32-be9a-24512f0981ce"
   stages:
     - stage: path
       stageUuid: "4d706eb7-0a34-8fe3-b270-5fa968cfb4c1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2196cb76-2eee-8f7f-b5f3-2180c79ec45b"
     - stage: horo
-      stageUuid: "85f14a39-7993-82bf-be9e-5b6689b8cb66"
+      stageUuid: "ac7fe14c-4451-8bbd-95d2-6895ecc4f28d"
     - stage: seal
       stageUuid: "79cdc5ff-6754-827d-97cb-368680df6387"
     - stage: uuid
-      stageUuid: "916f699f-2a35-8afc-94a6-c6242c79db99"
+      stageUuid: "999205b9-c399-8e44-b274-841d27b4fff9"
 version: 2
 ---
 # team — agents sharing skills (competence is the union)

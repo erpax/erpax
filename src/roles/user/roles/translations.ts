@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "roles",
-    "uuid": "08c39792-1f7c-8e36-b90e-9c9f1dee8e3b",
+    "uuid": "8f0b4801-a48a-86b0-9d71-b1f9cf041372",
     "words": [
       "roles"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.",
-    "uuid": "c9d94730-1951-809a-922d-15a6e5deccdc",
+    "uuid": "db09167e-868d-8952-9566-28d6964a06b7",
     "words": [
       "use",
       "when",

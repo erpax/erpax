@@ -2,18 +2,18 @@
 name: forge
 description: "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist."
 atomPath: "rules/forge"
-coordinate: "rules/forge · 1/base · 3896f07f"
-contentUuid: "6d092cca-e972-5289-af06-1c0e0fc6d9dd"
-diamondUuid: "e27c8ea7-d588-876e-8237-6a0527084aa3"
-uuid: "3896f07f-95c4-85a7-8ef7-5993dc0f70ea"
-horo: 1
+coordinate: "rules/forge · 5/round · fc501a98"
+contentUuid: "7badf096-9ebf-5596-8bb7-1083f090921c"
+diamondUuid: "967f55c7-0a1c-825e-973a-b326a1b586c8"
+uuid: "fc501a98-f5c3-8979-bb20-8d27e12caca5"
+horo: 5
 typography:
   partition: rules
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2c613645-819e-8b0d-8fce-b23933030a85"
+  computationUuid: "22d49526-b7b9-8517-bdc2-d4075ac39dff"
   stages:
     - stage: path
       stageUuid: "b4ae3133-6eef-8257-917f-9a221b93d174"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d6212688-41ef-81a0-89fa-4edc4b8cd5b5"
     - stage: horo
-      stageUuid: "c9f9463b-85a9-8da8-b095-c67771a91552"
+      stageUuid: "8bbf9899-6a92-8434-812a-d5a31d8756fb"
     - stage: seal
       stageUuid: "ffdd1e82-43d1-83a0-9034-6845c2d28995"
     - stage: uuid
-      stageUuid: "958cb767-3544-8c3d-945a-1e4b11ecebc6"
+      stageUuid: "baf0b3b3-c2cf-8c35-bb84-fdb589d77694"
 version: 2
 ---
 # rules/forge — an identifier a registry assigns may not be minted locally

@@ -2,11 +2,11 @@
 name: policies
 description: "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection."
 atomPath: "internal/policies"
-coordinate: "internal/policies · 2/share · d6b17b7b"
-contentUuid: "598e255a-224a-55af-83ae-1b33b8ce2dd8"
-diamondUuid: "072a73fc-f6ac-864d-9c5d-538b6780ef08"
-uuid: "d6b17b7b-b952-8f42-acdd-35f643cbfa3a"
-horo: 2
+coordinate: "internal/policies · 4/weave · 4724629f"
+contentUuid: "c1a5829b-12d1-58f6-86f4-595a466eaef9"
+diamondUuid: "a6ccf4d9-8b0d-8ef2-9ede-01512cd83133"
+uuid: "4724629f-035f-86fd-a41b-54f3a0a2c134"
+horo: 4
 typography:
   partition: internal
   bondDegree: 9
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "418fcfbd-60df-8226-aa43-52bb0e46ca9e"
+  computationUuid: "e6c5a450-d771-8393-a507-15a0864166d8"
   stages:
     - stage: path
       stageUuid: "9d12f2fc-ba71-8b93-911b-f143d8f1748d"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "4c793d27-326b-8383-ba13-52cf81d104fe"
     - stage: horo
-      stageUuid: "c23e7158-ed47-8bba-90ae-fc24e1b19625"
+      stageUuid: "c9ae967e-3c12-85ce-a1b9-f6ab90b7f202"
     - stage: seal
       stageUuid: "548fd963-cc88-864c-9e20-fee715c5a489"
     - stage: uuid
-      stageUuid: "95357a1f-b86b-8edc-8802-e68a84f5982b"
+      stageUuid: "77d468fb-ae10-8507-9d7b-0b7e9f69fa72"
 version: 2
 ---
 # internal-policies

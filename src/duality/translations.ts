@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "duality",
-    "uuid": "01978582-c589-8041-8da7-6723634aff4e",
+    "uuid": "6fcbd4fd-c682-8d6c-aafd-ffd519a89307",
     "words": [
       "duality"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's pervasive two-fold law — matter↔antimatter (code↔skill), physical↔metaphysical, give↔take, flow↔balance, build↔bind, learn↔forget, whole↔part, begin↔end, open↔close. The pair that recurs at every scale.",
-    "uuid": "eb9a2bc7-9fe8-8bb5-b7df-94fb2b188fc9",
+    "uuid": "bddf40c8-66c8-848f-871a-e19cc118a0e5",
     "words": [
       "use",
       "when",

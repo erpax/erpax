@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ingest",
-    "uuid": "7915bc1a-2629-88af-a90e-e668cca4b407",
+    "uuid": "31f8240d-f087-8747-ae8d-2448f5e96417",
     "words": [
       "ingest"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when pulling external records into the mesh idempotently — each record is content-addressed (a uuid), so re-fetching unchanged data is a no-op and only new or changed records are upserted. planIngest splits a batch into upsert vs skip against the already-seen uuids, deduping within the batch too. The fetch and the DB write are runtime boundaries; the idempotency plan is native and tested. Serves the Google Workspace sync and any external source.",
-    "uuid": "603d1c48-f6be-87da-9dcf-d6f75b9f38ff",
+    "uuid": "f2de23a7-2b2d-82a4-9d5a-49bd7e71f76a",
     "words": [
       "use",
       "when",

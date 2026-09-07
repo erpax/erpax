@@ -2,11 +2,11 @@
 name: incentives
 description: Use when reasoning about incentives — Description of bonus and commission compensation aspects of the job.
 atomPath: "vocabulary/incentives"
-coordinate: "vocabulary/incentives · 1/base · aca0f2d9"
-contentUuid: "fb7cd093-bde8-5306-a93e-b4d3f554296b"
-diamondUuid: "9ef8f305-9883-839a-8da0-5d768983c4f0"
-uuid: "aca0f2d9-9524-89c7-9390-6c07ad51b55b"
-horo: 1
+coordinate: "vocabulary/incentives · 4/weave · cbeee867"
+contentUuid: "8a7fc0e1-e1bc-5a63-83ec-7eac17eb0478"
+diamondUuid: "6f2834d9-0392-8924-926c-626680c743b3"
+uuid: "cbeee867-1d75-89db-bc85-e798a30dc2f8"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "46b5ce12-a2dc-83f5-befa-452d12d113d3"
+  computationUuid: "3245b22d-5e95-8a5b-82c0-aadbc0091cd2"
   stages:
     - stage: path
       stageUuid: "ec9ca1c6-cd8e-8e26-afa8-babdba767fea"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9b01310e-e8ce-8f4b-be8b-f3c2833abd72"
     - stage: horo
-      stageUuid: "9341944c-f07b-85bb-a3e1-54abaf4b0baf"
+      stageUuid: "68e8598d-47aa-8e55-9a9c-8467d6ecb9f9"
     - stage: seal
       stageUuid: "93205548-1c2b-8a46-a608-3a559aacbe2e"
     - stage: uuid
-      stageUuid: "81eec54d-988b-8b31-a367-98423ae2bd03"
+      stageUuid: "85ee5d1c-55e5-8d21-a75e-011903822428"
 version: 2
 ---
 # incentives

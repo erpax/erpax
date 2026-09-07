@@ -2,11 +2,11 @@
 name: weight
 description: Use when reasoning about weight — The weight of the product or person.
 atomPath: weight
-coordinate: "weight · 8/crest · 3cd99f0b"
-contentUuid: "a187b921-867b-5b43-af89-be0f870d24f1"
-diamondUuid: "7ce5ea1b-0d0b-875e-9631-8c9a2f91952f"
-uuid: "3cd99f0b-ff8c-84d8-a099-ec6cf1cb6088"
-horo: 8
+coordinate: "weight · 4/weave · 51f0c699"
+contentUuid: "432d5920-e367-5c8a-a3b4-f5e58ceb3bef"
+diamondUuid: "5d8fa9b2-bf9e-84e4-9a42-aff133c4d599"
+uuid: "51f0c699-2a45-8753-99a2-928cbb084394"
+horo: 4
 typography:
   partition: weight
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "51bdedb1-e6a5-8757-bfc6-6694b22d9600"
+  computationUuid: "66832239-c7be-8f20-8d18-daabed2d96ee"
   stages:
     - stage: path
       stageUuid: "6a548358-b669-810f-b945-a7f5a00c6644"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ffc632c0-29db-88e1-bcd8-046e98cee59c"
     - stage: horo
-      stageUuid: "a4772432-1df3-8b4d-a32b-d7121a610aaf"
+      stageUuid: "e37fd66f-6a2e-8c2a-a01b-21c94c27e1b1"
     - stage: seal
       stageUuid: "f59a28a8-c348-8e63-bcdf-f7652b14989e"
     - stage: uuid
-      stageUuid: "808d6184-a546-837e-84fd-84577b4e0eda"
+      stageUuid: "21ac3be3-1142-8a73-ab91-f0dfb7663274"
 version: 2
 ---
 # weight

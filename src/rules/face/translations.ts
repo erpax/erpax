@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "face",
-    "uuid": "685113f1-69c2-81b1-85ca-a9f99318d97f",
+    "uuid": "0c59cfab-b027-8491-be9c-af10044a29b6",
     "words": [
       "face"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a refactor moves matter between atoms — a split may relocate anything, but an atom that stops offering a name breaks every caller silently. Snapshot corpusFace before, compare after; a LOST name fails closed, a gained one is free. Replayed against the commit that split four concentration hubs, it catches the drop that commit made.",
-    "uuid": "23ad2524-53fb-8750-a174-781d8c46dfa8",
+    "uuid": "c18e98b1-1933-8fb9-ad7a-15048ab187b5",
     "words": [
       "use",
       "when",

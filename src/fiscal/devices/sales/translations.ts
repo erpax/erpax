@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sales",
-    "uuid": "04796251-6a08-8d53-ab62-7599812e80a9",
+    "uuid": "3844d141-c5e8-8489-a771-fb82802418f4",
     "words": [
       "sales"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register.",
-    "uuid": "ceb6a1ec-f96f-8190-ac26-9c051cba1cd7",
+    "uuid": "af3a59ad-fdbb-8252-873a-066c4e0a4edd",
     "words": [
       "use",
       "when",

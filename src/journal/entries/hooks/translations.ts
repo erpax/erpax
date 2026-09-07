@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "3078307b-a01e-8513-9da4-e3888dbf95da",
+    "uuid": "06ef360f-a795-8198-a749-d077431804f8",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — is the fundamental law of double entry enforced where the entry is saved. Checking it in a report instead means the unbalanced entry already exists and every statement built on it…",
-    "uuid": "eb6bab4e-7daa-8fca-8f0d-94c0f0294a56",
+    "uuid": "e77ee279-798a-8af9-88b9-149975a9aa94",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "xml",
-    "uuid": "f96deb7c-d9a3-88de-addf-ebca12ebbc32",
+    "uuid": "4a4e99b7-335e-88ef-a7d2-55723f58e305",
     "words": [
       "xml"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about xml — Peppol UBL, ISO-20022 pain.00x and OECD SAF-T all emit XML. What they share is not a document model — each owns its namespaces, element order and schema — it is the two layers…",
-    "uuid": "b151852f-a341-8d9b-95a6-f47606433d31",
+    "uuid": "43d64dc1-53a8-8d59-92fe-01c024e90bbb",
     "words": [
       "use",
       "when",

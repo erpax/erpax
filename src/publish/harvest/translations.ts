@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "harvest",
-    "uuid": "05bcf741-890b-85e3-9e19-7e6d53f06008",
+    "uuid": "f47ca745-3a7e-8bcb-9277-a3989abed25c",
     "words": [
       "harvest"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about harvest — rules/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted and logged .",
-    "uuid": "6e237918-46f9-85ec-a2dc-39751374763b",
+    "uuid": "81400a6d-118e-8945-95ff-7e1e1d50fa62",
     "words": [
       "use",
       "when",

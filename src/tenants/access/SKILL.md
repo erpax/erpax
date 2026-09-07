@@ -2,18 +2,18 @@
 name: access
 description: "Use when reasoning about the tenants collection's access control — who may read, create, update, or delete tenants."
 atomPath: "tenants/access"
-coordinate: "tenants/access · 3/3 · c2895197"
-contentUuid: "47e0a378-02b0-51bc-8e51-3bb2196227ea"
-diamondUuid: "0dd8c4f4-1425-8e4c-87e9-3d9e9c2c7c6f"
-uuid: "c2895197-c57e-86d2-b85a-2fbc06ef4bb3"
-horo: 3
+coordinate: "tenants/access · 6/6 · 901f259f"
+contentUuid: "bf7bfd25-f6dc-5cdc-82d5-ee7c1cd07fd7"
+diamondUuid: "28395b7c-227a-85b1-a49e-603f60d96ad1"
+uuid: "901f259f-9c5f-820c-878c-20ae1fb67366"
+horo: 6
 typography:
   partition: tenants
   bondDegree: 436
 standards: []
 bindings: []
 signatures:
-  computationUuid: "faa0ffc2-e1ff-81a2-b43a-25508316ddc0"
+  computationUuid: "5ae095be-9554-8e5d-a017-67939627ea90"
   stages:
     - stage: path
       stageUuid: "18add80e-4fd4-8c9c-9038-d3d2c47c2308"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "32842493-1953-83bd-999a-30f3189d24a2"
     - stage: horo
-      stageUuid: "f5e51432-6377-8621-8c19-b2bebd9dbc48"
+      stageUuid: "e9fb7ea2-8638-8e68-909f-ae6576362d0d"
     - stage: seal
       stageUuid: "5c3d65a0-852b-8b11-a588-10b78a751d6b"
     - stage: uuid
-      stageUuid: "f4086331-e4a1-887c-a874-c79d3fc52305"
+      stageUuid: "b9e873c4-b373-8070-8f22-125faef99c5f"
 version: 2
 ---
 # tenants/access

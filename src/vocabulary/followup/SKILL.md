@@ -2,11 +2,11 @@
 name: followup
 description: Use when reasoning about followup — Typical or recommended followup care after the procedure is performed.
 atomPath: "vocabulary/followup"
-coordinate: "vocabulary/followup · 8/crest · df537684"
-contentUuid: "4f4104b9-8412-5efd-aef9-b31a64b13bc7"
-diamondUuid: "4fce851b-144f-8d86-be75-51b42db51392"
-uuid: "df537684-401e-8398-94e5-88b4208927ad"
-horo: 8
+coordinate: "vocabulary/followup · 4/weave · 366b4328"
+contentUuid: "7f293594-71db-52d7-bb22-4fe4aaf51972"
+diamondUuid: "f97e67b2-9afb-89d2-adcd-7c5cc3ab79c3"
+uuid: "366b4328-594e-88fd-a5cf-5867af29e083"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "783d6236-8800-83e0-9bbd-d292a605fea2"
+  computationUuid: "b47eace0-87a3-8a48-9c63-8baa00987155"
   stages:
     - stage: path
       stageUuid: "73e1afac-beac-8070-bfb7-3ec98e494dc4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "afd5b271-8772-8a16-ae4e-f9163f50f14e"
     - stage: horo
-      stageUuid: "01440539-21c6-8eaa-8b29-a8528ebd02b3"
+      stageUuid: "3788a33c-bcc0-8357-95d4-70ba795a4634"
     - stage: seal
       stageUuid: "a5fd18ef-3edc-894b-af00-4db629584efd"
     - stage: uuid
-      stageUuid: "984aa271-b0d3-86de-b2a8-1e94831c1771"
+      stageUuid: "e7070d16-a68e-8771-a1bd-d5a206e0e29c"
 version: 2
 ---
 # followup

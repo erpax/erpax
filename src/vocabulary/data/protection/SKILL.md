@@ -2,18 +2,18 @@
 name: protection
 description: "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms."
 atomPath: "vocabulary/data/protection"
-coordinate: "vocabulary/data/protection · 4/weave · 15d9106b"
-contentUuid: "f0595eef-582b-5c0a-a70f-eaf810e4b162"
-diamondUuid: "9aad0590-3883-85d6-b596-9b7bc74f4550"
-uuid: "15d9106b-4735-8551-b8e3-8734b66a83bc"
-horo: 4
+coordinate: "vocabulary/data/protection · 8/crest · 1bd42ca5"
+contentUuid: "106ce642-57fc-54e4-9146-0594c8d6a3e9"
+diamondUuid: "da04f509-cfd7-8e52-a9e6-f4694e3894bf"
+uuid: "1bd42ca5-2107-8852-9a42-9d14993f7054"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f5412ce1-9ec8-8aec-bfcc-6c78c3166098"
+  computationUuid: "225203e5-61cb-8d97-a7d2-63cc3dcd282c"
   stages:
     - stage: path
       stageUuid: "7ea16cda-6d14-8c4a-9776-cdfb7e345774"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7dcef653-72f3-8a5f-a0bd-439e7184de34"
     - stage: horo
-      stageUuid: "547845eb-9798-8762-9f6f-6c314b66f7b3"
+      stageUuid: "cc051026-7341-8b5a-9bbd-ce9a188a6868"
     - stage: seal
       stageUuid: "15b99564-787b-86c1-9deb-977517a9cdad"
     - stage: uuid
-      stageUuid: "1b4b9da2-7f94-8c4c-9c9e-77f2b8b4a9af"
+      stageUuid: "9a031226-47a4-8dd4-8b56-4d626e3e7ffa"
 version: 2
 ---
 # protection

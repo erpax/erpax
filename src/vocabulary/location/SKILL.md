@@ -2,11 +2,11 @@
 name: location
 description: Use when reasoning about location — A sub property of location. The original location of the object or the agent before the action.
 atomPath: "vocabulary/location"
-coordinate: "vocabulary/location · 2/share · 002e01a9"
-contentUuid: "e4e2fe98-5c20-51f6-a7fd-dbd9534c96fe"
-diamondUuid: "008b453e-7248-821f-9f07-b9bc5c45a042"
-uuid: "002e01a9-ec2c-8d60-ad3e-8da5785595a7"
-horo: 2
+coordinate: "vocabulary/location · 5/round · 0fb11adb"
+contentUuid: "226ae5a7-0223-59d3-87f5-cafd16818cde"
+diamondUuid: "824b83e2-88af-8324-8758-1b18147fbec7"
+uuid: "0fb11adb-e5cc-8cc3-a5ef-d246848faff0"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 121
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "31af978c-bd8f-803a-bb86-a22b0abbe7f3"
+  computationUuid: "20e9ebdf-fbbe-8e0a-8c02-5cbfd36f688e"
   stages:
     - stage: path
       stageUuid: "e6693567-a4de-81e7-9b7a-7dbb1e5fa9b5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0f5a491d-6d64-852f-b3ab-d400d78faf07"
     - stage: horo
-      stageUuid: "cfa2d41b-1c84-82a3-a845-fa7dc55c44c2"
+      stageUuid: "2ecacb7f-7fa1-8984-88c0-a13d9f53ea38"
     - stage: seal
       stageUuid: "fe5d5c9d-2c82-8152-8730-1408f2c78e0c"
     - stage: uuid
-      stageUuid: "85678425-408c-855c-b790-9622f6dddb4b"
+      stageUuid: "70377362-bc5c-88a9-b14b-50d707d964ad"
 version: 2
 ---
 # location

@@ -2,11 +2,11 @@
 name: entries
 description: "Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection."
 atomPath: "legal/entities/closing/entries"
-coordinate: "legal/entities/closing/entries · 5/round · 20d3fe2a"
-contentUuid: "c428c44f-bc83-5a76-be42-7ca24164b836"
-diamondUuid: "5b6b2664-d2c8-8dbb-8db3-d5c94a316d40"
-uuid: "20d3fe2a-4160-85d8-8af7-f7ba9dcefb92"
-horo: 5
+coordinate: "legal/entities/closing/entries · 2/share · 1d5dd8c4"
+contentUuid: "72481ec9-1551-5cf5-8134-ea959c2f150c"
+diamondUuid: "056ee81f-149c-8163-99cb-3d4f647c7b3a"
+uuid: "1d5dd8c4-894d-8202-ade2-103fd971a433"
+horo: 2
 typography:
   partition: legal
   bondDegree: 113
@@ -16,7 +16,7 @@ standards:
   - "US-GAAP ASC-205 presentation"
 bindings: []
 signatures:
-  computationUuid: "7cd098e0-03a5-8ecd-8926-3c8fead5ac2a"
+  computationUuid: "fcdafa19-d593-8d26-a69e-3e8a6a3b11ba"
   stages:
     - stage: path
       stageUuid: "0b6a5b9d-3f38-825c-9636-6c6279aff0ad"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "8507a562-ffd6-8849-b503-b12040f159a9"
     - stage: horo
-      stageUuid: "b5dcf00f-299f-88c1-a4bf-207be45a15bd"
+      stageUuid: "ee5a5164-aca1-8f99-8df5-053c4a4d352f"
     - stage: seal
       stageUuid: "8751e6d7-4ad7-826e-9e70-5844196dc9c6"
     - stage: uuid
-      stageUuid: "fc5695ff-0ce3-8c09-a7ca-49c92d48bfe3"
+      stageUuid: "064889d4-978d-8ff0-9122-e97ad8537e92"
 version: 2
 ---
 # closing-entries

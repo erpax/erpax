@@ -2,18 +2,18 @@
 name: supto
 description: "Use when reasoning about supto — СУПТО (*Софтуер за управление на продажбите в търговски обекти* — sales-management software for commercial outlets), regulated by **Наредба Н-18** and the НАП registry, is — struct"
 atomPath: supto
-coordinate: "supto · 5/round · e14ffb80"
-contentUuid: "55323ccd-f9c0-5fbc-8e01-9d8eb3f43ad9"
-diamondUuid: "815f97fa-01de-8356-b6dc-4eca8802a4a3"
-uuid: "e14ffb80-0be8-8c2f-8b00-de0077921947"
-horo: 5
+coordinate: "supto · 8/crest · a03f9dd5"
+contentUuid: "d014043f-e3ae-5ff1-83d6-baaf26005b5a"
+diamondUuid: "d7c60ce1-d81d-8333-8913-92fc5362c0f2"
+uuid: "a03f9dd5-b302-8503-98b0-a36428350794"
+horo: 8
 typography:
   partition: supto
   bondDegree: 71
 standards: []
 bindings: []
 signatures:
-  computationUuid: "80f541a4-5351-8828-91bd-e9347a801e4f"
+  computationUuid: "a6fea0cc-b9fe-88cd-9628-6a41d0d88336"
   stages:
     - stage: path
       stageUuid: "c1caa05d-8260-8f05-a39c-810de0d29926"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "93b2df3d-7f3e-8f2e-b0e1-2f044e149272"
     - stage: horo
-      stageUuid: "dd9a16a7-d6fb-8fb2-9211-9a5259d4ea8e"
+      stageUuid: "a6cc2bb6-2ef9-8905-85c8-dc759fe3eb62"
     - stage: seal
       stageUuid: "5ca8a64b-8f64-89fb-9e6e-82ac282688c6"
     - stage: uuid
-      stageUuid: "dfc18326-6355-8991-be3a-70744ea79431"
+      stageUuid: "9f175cac-e0f8-8917-9f53-27a4707323bc"
 version: 2
 ---
 # supto — Наредба Н-18 / СУПТО, mapped onto the content-uuid model

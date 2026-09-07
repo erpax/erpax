@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "participant",
-    "uuid": "b03088e2-1915-8c54-a656-acba32e0ef2d",
+    "uuid": "52eff7d3-ed7f-8787-a909-547288b674ce",
     "words": [
       "participant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about participant — Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*.",
-    "uuid": "dbfbc5d7-c6b6-8a32-b109-1d8462e2ede1",
+    "uuid": "6d4110e7-a3d5-8c76-9d16-c4e26db6f7af",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: materials
 description: "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption."
 atomPath: "items/bills/of/materials"
-coordinate: "items/bills/of/materials · 4/weave · a995e336"
-contentUuid: "a0c56668-a759-588c-b640-662a9d26bff8"
-diamondUuid: "c19a1295-579d-8aa6-8eab-d199333bc365"
-uuid: "a995e336-f5dc-89d6-83a7-d4b593ae5d32"
-horo: 4
+coordinate: "items/bills/of/materials · 1/base · 6bce8e04"
+contentUuid: "d4cbedeb-bcfa-58a9-ba97-c5970874a37a"
+diamondUuid: "da5254c3-a020-8fc0-b566-184feca938b7"
+uuid: "6bce8e04-4c81-82a1-b502-db224c617802"
+horo: 1
 typography:
   partition: items
   bondDegree: 16
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4d26d1ea-c81a-88f9-8150-46ec20bbcb1d"
+  computationUuid: "adfdb04f-db80-8050-a006-ab678a5af2db"
   stages:
     - stage: path
       stageUuid: "0678991a-9722-84ce-95fd-3f875a126a04"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "0a586a94-3b81-86cc-91c0-bfdc65d37a1b"
     - stage: horo
-      stageUuid: "3f3d5b95-d4b2-8335-95e7-d48af4746559"
+      stageUuid: "32c73b71-7a41-88f6-813d-af61b8e86130"
     - stage: seal
       stageUuid: "05195066-ede7-8221-98f5-9697ae5d3c81"
     - stage: uuid
-      stageUuid: "bf657027-d380-888f-90fc-043812699596"
+      stageUuid: "c9e3bddd-3607-80b9-b896-e4e042aa222d"
 version: 2
 ---
 # bills-of-materials

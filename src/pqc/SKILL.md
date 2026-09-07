@@ -2,18 +2,18 @@
 name: pqc
 description: "Use when reasoning about pqc — NIST post-quantum cryptography (Kyber-768 + SPHINCS+)"
 atomPath: pqc
-coordinate: "pqc · 7/descent · 514bde1d"
-contentUuid: "4a52105b-96e0-570f-bd94-52074f9dc3e5"
-diamondUuid: "7f3433e5-184e-8253-9857-d1621154cf15"
-uuid: "514bde1d-667b-86cb-a57a-d7cd6b75457b"
-horo: 7
+coordinate: "pqc · 2/share · 66730eb3"
+contentUuid: "8dfc3554-0577-527b-a749-0ba2df6b66a8"
+diamondUuid: "99ef7b01-5be2-8409-8b58-8f510818d3d3"
+uuid: "66730eb3-4f21-8118-b0a3-ad25ebfaa9eb"
+horo: 2
 typography:
   partition: pqc
   bondDegree: 10
 standards: []
 bindings: []
 signatures:
-  computationUuid: "90fd7e8c-e4e7-83ce-b179-7252ccd6fcfa"
+  computationUuid: "7cbd20f4-3156-85a7-9141-0a84d071e151"
   stages:
     - stage: path
       stageUuid: "a9e9da78-ed87-8fbb-a557-37dbd7659875"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "11d2df12-8155-83ff-9713-2bb3fd14c376"
     - stage: horo
-      stageUuid: "0745c08d-f355-8ca1-b420-0a5ac769cbae"
+      stageUuid: "209ec23e-cabc-871e-93dd-348c8514581c"
     - stage: seal
       stageUuid: "043f6e38-2073-8f87-84ca-5bab4ae3d961"
     - stage: uuid
-      stageUuid: "5a07ce05-3fc8-8336-850e-2600d778c740"
+      stageUuid: "06cf91f8-0f83-8173-939b-4411b9ea1c28"
 version: 2
 ---
 # pqc — NIST Post-Quantum Cryptography

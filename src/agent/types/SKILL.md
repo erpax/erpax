@@ -2,11 +2,11 @@
 name: types
 description: "Use when reasoning about types — Domain-agent contract — the coupling-tensor's A-vortex axis."
 atomPath: "agent/types"
-coordinate: "agent/types · 5/round · 79d18339"
-contentUuid: "a54ce5ed-47ec-5df8-817b-adde8e1d252b"
-diamondUuid: "8f973ea2-751a-8f0a-99d1-2ae0c577cb21"
-uuid: "79d18339-ff70-885f-bbcd-7c2a2a0830db"
-horo: 5
+coordinate: "agent/types · 7/descent · 41fad4f7"
+contentUuid: "a12058bf-94f9-5b12-8603-4c35c3f0765c"
+diamondUuid: "be45070d-a2dc-82e6-aa0f-89e53c392f4b"
+uuid: "41fad4f7-08c2-82ec-bd67-d81c0b1dfe16"
+horo: 7
 typography:
   partition: agent
   bondDegree: 85
@@ -17,7 +17,7 @@ standards:
   - "ISO/IEC-25010"
 bindings: []
 signatures:
-  computationUuid: "0dc3cb76-3890-8fb9-bef5-d4cd6b63913a"
+  computationUuid: "2afa6f4d-bddd-8f97-83c8-758b0ef23bf3"
   stages:
     - stage: path
       stageUuid: "61d6da2a-856a-82b4-8c25-1bc30f70dfc0"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "05ce6500-2535-81e2-ad12-ea3fbb367b6a"
     - stage: horo
-      stageUuid: "27d0b6b8-fcf6-8753-94e4-447e928e5624"
+      stageUuid: "a0d50054-eb6b-840b-bf4e-9e8e7c9e90a4"
     - stage: seal
       stageUuid: "2bb3d141-7b50-8ac7-9932-9b7bb1ede545"
     - stage: uuid
-      stageUuid: "2fbcae84-67b4-8315-985e-62363c82a106"
+      stageUuid: "a59ee5ab-80aa-882a-990f-e307dfaa6e46"
 version: 2
 ---
 # agent/types

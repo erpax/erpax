@@ -2,11 +2,11 @@
 name: broader
 description: "Use when reasoning about broader as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/broader"
-coordinate: "vocabulary/broader · 7/descent · 2b98f0e0"
-contentUuid: "7c5b1ca8-7b59-5e78-ac0f-53dfa47e1400"
-diamondUuid: "3c031d74-1053-8e20-a6d5-d1404dd6fce2"
-uuid: "2b98f0e0-4cdf-8e75-b709-a54ea09ff310"
-horo: 7
+coordinate: "vocabulary/broader · 2/share · 7b7e5772"
+contentUuid: "31dcb8b5-a20a-586c-ab3f-f812c85db913"
+diamondUuid: "42040279-0695-806b-9c3f-fefded6a1f37"
+uuid: "7b7e5772-e34e-8435-8155-faaf939b9ca6"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2861d3f3-af4a-8d2f-9d5c-742d07fe1de9"
+  computationUuid: "c485384f-d8c1-8ffd-8549-5837557b8c33"
   stages:
     - stage: path
       stageUuid: "45f6dc3d-041e-863d-bd0d-b2ea34fac16e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e4d28214-d957-8995-a1c4-a42e6097cfc3"
     - stage: horo
-      stageUuid: "05841254-342e-86cb-830f-8eaac1a82768"
+      stageUuid: "6d1e559b-94f2-88fc-a583-1f9157a5324d"
     - stage: seal
       stageUuid: "95ef7d99-4c82-84f3-b1e7-5db30986e028"
     - stage: uuid
-      stageUuid: "da156bdc-789a-8601-be78-f08162d368cb"
+      stageUuid: "17ece7ce-447e-8ff7-8847-d9adf9d06518"
 version: 2
 ---
 # broader

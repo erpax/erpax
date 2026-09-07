@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "endpoint",
-    "uuid": "9b053bd8-6576-819f-a398-a6a2dfd8ef34",
+    "uuid": "c39dfdc2-cac2-88ec-b24e-ceb0d1118693",
     "words": [
       "endpoint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one endpoint — the singular model of the endpoints collection (the plural store); an addressable interface where a service is reached.",
-    "uuid": "dd4702c1-7587-8c83-bbb3-da0b608e5032",
+    "uuid": "594cc6c6-ef25-845f-a4c2-c56e89197c94",
     "words": [
       "use",
       "when",

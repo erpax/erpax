@@ -2,10 +2,10 @@
 name: spacing
 description: "Use when plant geometry sets density and yield — in-row × between-row spacing and rows-per-bed determine plants per area (plants/acre = rows ÷ in-row-spacing ÷ bed-center × 43,560), which sets seed/transplant counts and, with per-plant yield, total yield. Tighter is not linearly more: beyond an optimum, plants compete and per-plant size falls."
 atomPath: spacing
-coordinate: "spacing · 7/descent · d9bc3baa"
-contentUuid: "36fec61e-2c79-5146-a675-95597978d93f"
-diamondUuid: "56e893fa-c3c0-8df2-9f38-c122e659038a"
-uuid: "d9bc3baa-5964-8b7d-877f-27528b1924ec"
+coordinate: "spacing · 7/descent · b8f3a44d"
+contentUuid: "eb04b5a0-e707-5f69-b791-013c9210e51d"
+diamondUuid: "009c6605-2e4a-8f3f-9581-7f15c3355492"
+uuid: "b8f3a44d-99c9-8223-8cf4-cd3feba170ed"
 horo: 7
 typography:
   partition: spacing
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6b4faff2-3c1d-84f0-bdb6-ea80c05e562b"
+  computationUuid: "550f397d-eb2e-864e-b589-ea0cd386a103"
   stages:
     - stage: path
       stageUuid: "9107f483-3d39-8418-9cd7-12b9c7d9a6db"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7bdeba80-0814-8baa-abd5-0f3149453108"
     - stage: horo
-      stageUuid: "bd88a781-8a53-898c-9127-281915af64be"
+      stageUuid: "1401805e-146c-84d9-85ee-a585764082df"
     - stage: seal
       stageUuid: "2ec627dd-5e83-8c1f-bccc-2b796fefade1"
     - stage: uuid
-      stageUuid: "df281de0-031a-8b7c-bcd4-33f5bb2757f5"
+      stageUuid: "432be07a-d61a-88ee-b517-1a501723cf27"
 version: 2
 ---
 # spacing — plant geometry that sets density and yield

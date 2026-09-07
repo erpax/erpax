@@ -2,18 +2,18 @@
 name: gaps
 description: "Use when scanning the corpus's own accounting for entropy gaps — waveAccountingGapViolations walks the README model in OOM-safe horo waves; fixGapsOnP0 applies P0 fixes. Corpus SELF-accounting dev tooling, nested off the mountable @erpax/accounting face."
 atomPath: "accounting/gaps"
-coordinate: "accounting/gaps · 8/crest · 6f8b6fed"
-contentUuid: "0866fc54-a560-5b0a-ac3e-51c027a6db16"
-diamondUuid: "e2719803-1df8-88b8-bca2-0e715c948385"
-uuid: "6f8b6fed-b5ef-8745-8fa0-fa18dbbfc1b5"
-horo: 8
+coordinate: "accounting/gaps · 2/share · cfd92a35"
+contentUuid: "d32bea7a-f5f2-5a6d-aad4-8a6fe48dd72b"
+diamondUuid: "27c11a26-6aba-8ad4-ad3a-65805d43711e"
+uuid: "cfd92a35-1892-86ea-ab4a-74569bf2a4f6"
+horo: 2
 typography:
   partition: accounting
   bondDegree: 22
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1c2d49cf-5532-80fe-8f95-1bc3d6278115"
+  computationUuid: "c05b0ecb-8ef8-81a6-b15b-6937897150b0"
   stages:
     - stage: path
       stageUuid: "cdd8b4fb-244b-811e-a4aa-afcd766cbcc0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0c1cc9a5-2870-8a05-a231-5da1a844c352"
     - stage: horo
-      stageUuid: "302f7812-c18f-8875-a576-d747ff6a3a4b"
+      stageUuid: "60f99c96-e778-8e7a-86fb-8a8814f405cb"
     - stage: seal
       stageUuid: "6d298312-c457-8782-b636-dad0c4075578"
     - stage: uuid
-      stageUuid: "5d541d15-e6da-88c8-9108-77e9f82d9260"
+      stageUuid: "d612c2b0-23dd-8596-933b-b02fa445daa8"
 version: 2
 ---
 # accounting/gaps — the wave-batch entropy gap scan

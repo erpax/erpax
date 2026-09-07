@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "3078307b-a01e-8513-9da4-e3888dbf95da",
+    "uuid": "06ef360f-a795-8198-a749-d077431804f8",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — refuses a second grant of a role a user already holds. Without it the same role accumulates rows, and every count of \\\"who has this\\\" is wrong by however many times someone clicked.",
-    "uuid": "61863dfc-e646-8821-9edc-8e0c0e246834",
+    "uuid": "4e448766-ec6b-8b45-a4c0-3d14f9abde7d",
     "words": [
       "use",
       "when",

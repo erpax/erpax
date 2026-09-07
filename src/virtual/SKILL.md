@@ -2,11 +2,11 @@
 name: virtual
 description: "Use when reasoning about virtual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: virtual
-coordinate: "virtual · 4/weave · 1f589105"
-contentUuid: "655319e8-4fdf-5a6d-8965-cffacf2963fb"
-diamondUuid: "e1310f73-0563-8b79-bac5-43a48a82bcb2"
-uuid: "1f589105-66ee-8a91-a4d7-5f9960dea039"
-horo: 4
+coordinate: "virtual · 5/round · 26c8a7de"
+contentUuid: "9030c3e0-8f9f-5a41-a0ad-e85dd7ebf5c6"
+diamondUuid: "077c7bba-aeaa-8f51-998d-e99076ef3209"
+uuid: "26c8a7de-44db-86ad-a5e0-fba201d82b92"
+horo: 5
 typography:
   partition: virtual
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "97273f4a-1676-8764-97fa-6ba28d1ccfc3"
+  computationUuid: "bd5120e7-6e74-8ed8-b47a-c4c3e6c3eab3"
   stages:
     - stage: path
       stageUuid: "e8cdfd1d-c46d-86d0-8ed6-6a5f31572be8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "98baa8ec-4d45-8db0-a064-bb137877336a"
     - stage: horo
-      stageUuid: "5ba24476-4416-8665-b862-074ce93120c4"
+      stageUuid: "964e3b6e-95fa-8b47-86dd-6b7e2a6fd5a4"
     - stage: seal
       stageUuid: "b86fa544-eafd-8f7f-909b-ebc67a91b81b"
     - stage: uuid
-      stageUuid: "b3612e86-9780-8b8d-a220-a95d2ba37c10"
+      stageUuid: "08ef01bd-9fa8-82e4-befd-64804d93979c"
 version: 2
 ---
 # virtual

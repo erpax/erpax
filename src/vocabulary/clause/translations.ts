@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clause",
-    "uuid": "473953a2-d872-820c-a418-667c8792a080",
+    "uuid": "e1f1814f-6db0-8e75-82b9-3b31cdfc88f6",
     "words": [
       "clause"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when decomposing a contract into its constituent promises — each clause is a distinct obligation/right with its own conditions, beneficiaries, triggers, and performance timeline. The atomic unit of contract analysis.",
-    "uuid": "37556d74-d84d-8512-97d3-e94707f0e801",
+    "uuid": "09d515d3-9737-8e4d-ae5a-d2022c10498c",
     "words": [
       "use",
       "when",

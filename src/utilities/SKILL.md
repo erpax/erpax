@@ -2,18 +2,18 @@
 name: utilities
 description: "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them."
 atomPath: utilities
-coordinate: "utilities · 5/round · aeba42b2"
-contentUuid: "bfa3589b-bd8d-5907-8968-6e6e0b8da1ee"
-diamondUuid: "a48121e6-b67c-82e8-978f-ff3fe7fc8b6c"
-uuid: "aeba42b2-bc28-8a98-82d3-0d7cc4942eeb"
-horo: 5
+coordinate: "utilities · 7/descent · 9d50ce8c"
+contentUuid: "d0a49d2a-e2fa-57c9-bc91-b72d294606c2"
+diamondUuid: "e8be27ae-d5e9-843e-81ca-a627fb7e63cd"
+uuid: "9d50ce8c-c11b-871f-89ac-304a495bb274"
+horo: 7
 typography:
   partition: utilities
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8ccdf5d9-83f4-854b-a4ef-cad690f82766"
+  computationUuid: "1664acb2-3f5b-85ae-b620-39de2b0f7820"
   stages:
     - stage: path
       stageUuid: "85499cae-a3de-8d06-b5da-dd72ad73e566"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e2a07171-8001-84f1-aae8-08ac2468999e"
     - stage: horo
-      stageUuid: "1a07bb70-5059-82b3-af90-71e1e4146a6a"
+      stageUuid: "c54ca72c-d894-8957-ae8f-35a122e13cfb"
     - stage: seal
       stageUuid: "8494d340-b08e-88ac-82ae-be3460d548d4"
     - stage: uuid
-      stageUuid: "c6429968-d8af-8057-99ae-754ad41dd1f5"
+      stageUuid: "c7b57ba1-53fe-8c6c-a5cf-a0aee9a07a11"
 version: 2
 ---
 # utilities — the non-standards helper layer (domain glue, not vendor-spec)

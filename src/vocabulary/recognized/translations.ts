@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recognized",
-    "uuid": "e922d5d2-5c61-8d40-a669-7d48491e463d",
+    "uuid": "a3044f0c-f473-85da-9f65-10c31490aed9",
     "words": [
       "recognized"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about recognized — An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation.",
-    "uuid": "4c5360d5-783b-80d9-93f3-5789ea532dd3",
+    "uuid": "2c37fffc-93c1-8717-86f9-d36d1aa254b4",
     "words": [
       "use",
       "when",

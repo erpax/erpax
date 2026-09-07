@@ -2,11 +2,11 @@
 name: delivered
 description: "Use when reasoning about delivered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/delivered"
-coordinate: "vocabulary/delivered · 5/round · 29155029"
-contentUuid: "aab74356-794e-5e2f-ace8-2cf03fbb9c62"
-diamondUuid: "993071e8-6354-8776-b2b5-9711cd1cca99"
-uuid: "29155029-126b-867c-81e3-da0f008e0484"
-horo: 5
+coordinate: "vocabulary/delivered · 7/descent · 3e77d566"
+contentUuid: "e6834dcb-843f-5d4a-ad58-ed78d612feb9"
+diamondUuid: "ae22c1fe-1ddc-819f-87c4-c635b6de14d1"
+uuid: "3e77d566-8c2a-8225-b50d-583b16de518f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "60bf94af-2b95-8cf8-86c3-16930616c905"
+  computationUuid: "6b81dfce-dfa0-89bf-be54-0ab19f81dee1"
   stages:
     - stage: path
       stageUuid: "79353ecc-7be0-81de-9938-785f75472538"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "118c6da7-f15e-8e42-8bfd-730dbdfc6f1c"
     - stage: horo
-      stageUuid: "185baf7b-0993-886b-acd6-7972138a9767"
+      stageUuid: "1f3b3255-8c2f-857a-b561-7202acd26b77"
     - stage: seal
       stageUuid: "4098af3d-ac7d-8c49-b1db-d82138031cbe"
     - stage: uuid
-      stageUuid: "e98cbd81-1c9c-868b-8883-b0a693167e56"
+      stageUuid: "cdc660ce-8df0-857b-b7b3-7ed01bb24aab"
 version: 2
 ---
 # delivered

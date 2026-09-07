@@ -2,11 +2,11 @@
 name: inventory
 description: "Use when reasoning about inventory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/inventory"
-coordinate: "vocabulary/inventory · 8/crest · f45f3b3e"
-contentUuid: "b33c8581-a8c8-5e4f-8bf9-c0ab8ab41c5d"
-diamondUuid: "09e6027e-52cc-831a-94b1-4b72c9c67397"
-uuid: "f45f3b3e-aa0d-8b38-9eae-a94eb4160820"
-horo: 8
+coordinate: "vocabulary/inventory · 1/base · 96592369"
+contentUuid: "7f8570d6-58b1-531b-8b83-38c5799a1285"
+diamondUuid: "580d398a-b8e3-88db-9ed3-0f3299e7806b"
+uuid: "96592369-66a4-806b-acca-b940158be3d2"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0cc2d5d5-6060-8907-bfcb-9de8813b7e9c"
+  computationUuid: "a44973d1-ba4a-8b24-959a-1436b7ea90d3"
   stages:
     - stage: path
       stageUuid: "dca2a56a-e3fc-8adc-8bbb-8ffb1be9a135"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7f6238f9-f298-8cad-b623-30961e9d1960"
     - stage: horo
-      stageUuid: "a611735a-fa81-8b58-a9b5-227443508fd9"
+      stageUuid: "29352f35-9637-81b6-95b0-2bf8412d16a1"
     - stage: seal
       stageUuid: "c5fc58d6-b327-8e81-9b6d-cce03307e4cb"
     - stage: uuid
-      stageUuid: "6f3d73ae-26c8-85a0-8377-0e9341b098de"
+      stageUuid: "a2435753-cfdd-85c8-a2b2-43110a14264f"
 version: 2
 ---
 # inventory

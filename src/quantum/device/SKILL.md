@@ -2,18 +2,18 @@
 name: device
 description: "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain."
 atomPath: "quantum/device"
-coordinate: "quantum/device · 2/share · a248e97f"
-contentUuid: "b4b0e1da-4c49-5f9c-9658-f256766b194f"
-diamondUuid: "459273be-bfed-8ad8-91c9-05655528c433"
-uuid: "a248e97f-e068-8645-825e-76f648d35bf2"
-horo: 2
+coordinate: "quantum/device · 8/crest · d1f8d6a7"
+contentUuid: "dcf3140f-78a3-58dc-876c-ddf7c57bf338"
+diamondUuid: "20f1d150-25a9-8152-8011-d451e76bea27"
+uuid: "d1f8d6a7-da29-811f-b4af-c486f7fe9b81"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 97
 standards: []
 bindings: []
 signatures:
-  computationUuid: "62401506-e884-8505-8d1a-537fa12ca86d"
+  computationUuid: "b67fe178-48f6-810e-b7d8-561530c86050"
   stages:
     - stage: path
       stageUuid: "225454fc-327d-859d-bf56-45cec052be2b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9c5dce20-b961-8d72-a15b-82c1649fb8df"
     - stage: horo
-      stageUuid: "3e2d8466-a79c-83d7-9efb-fa278245d99a"
+      stageUuid: "b7f1fa6a-5aab-8107-a677-82252ff54ce6"
     - stage: seal
       stageUuid: "cbd3726a-b32c-851f-9de4-8b730f12369a"
     - stage: uuid
-      stageUuid: "4f25c60e-756f-8fda-8bd9-4fab23bc10f2"
+      stageUuid: "3a568618-9400-8154-bc98-f6e95977291e"
 quantum:
   superposition:
     - analog
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: true
     speechResults: false
-    computationUuid: "62401506-e884-8505-8d1a-537fa12ca86d"
-    contentUuid: "b4b0e1da-4c49-5f9c-9658-f256766b194f"
+    computationUuid: "b67fe178-48f6-810e-b7d8-561530c86050"
+    contentUuid: "dcf3140f-78a3-58dc-876c-ddf7c57bf338"
 version: 2
 ---
 # quantum/device — the measurement instrument
@@ -75,4 +75,4 @@ Edge law: **capture on the device, compute pure on the Worker** — `getUserMedi
 
 @see [[device]] · [[measurement]] · [[reality]] · [[analog]] · [[sensory]] · [[snapshot]] · [[biometric]] · [[coherence]] · [[finality]]
 
-<sub>content-uuid `b4b0e1da-4c49-5f9c-9658-f256766b194f` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `dcf3140f-78a3-58dc-876c-ddf7c57bf338` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

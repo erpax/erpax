@@ -2,10 +2,10 @@
 name: instrument
 description: "Use when reasoning about instrument — The object that helped the agent perform the action. E.g. John wrote a book with *a pen*."
 atomPath: "vocabulary/instrument"
-coordinate: "vocabulary/instrument · 8/crest · 03f7bd2c"
-contentUuid: "4a83532f-c815-5b64-ac3a-07df8871815d"
-diamondUuid: "71ad1e02-644a-8298-8d81-9e88396d1e06"
-uuid: "03f7bd2c-741a-8778-98d5-83fe43791524"
+coordinate: "vocabulary/instrument · 8/crest · 0318ab11"
+contentUuid: "63c1e9d5-76ae-5112-ab2c-0b042cf7d2e5"
+diamondUuid: "d766917e-abed-835b-ad26-2fcec097e88e"
+uuid: "0318ab11-dda5-8ebe-84f3-1083b854633b"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c6813aa1-e45d-878c-ae10-c9e3f3d08125"
+  computationUuid: "9b049eb3-bdbb-86e2-aac8-ced294da9862"
   stages:
     - stage: path
       stageUuid: "494ac3a0-29c4-862c-be43-ffe332638c11"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5ae35c98-91d4-8480-aa53-f8949b1a0b4d"
     - stage: horo
-      stageUuid: "f3e51f94-1b17-8c14-a711-509f13af19a6"
+      stageUuid: "4065c085-eda7-8fd3-b877-7abb7a97eb62"
     - stage: seal
       stageUuid: "46d545ec-c98e-8ed6-a4d5-879a7af9b2a3"
     - stage: uuid
-      stageUuid: "0120d0c7-a95f-8a59-b8a2-8b6c5521dd0c"
+      stageUuid: "bc09cd1e-2ea1-81bc-848c-1f4a9cdfcbde"
 version: 2
 ---
 # instrument

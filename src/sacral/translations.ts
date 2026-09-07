@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sacral",
-    "uuid": "3f30f219-ae35-8f39-905b-0d87d5d25f64",
+    "uuid": "8fb73a95-dc6f-8b84-8717-02acb5b2cab7",
     "words": [
       "sacral"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the sacral center (Svadhisthana) — index 1 of the seven chakras, a standalone projection of the chakra atom whose uuid is computed from the position math and whose colour is rendered from that uuid, never the reverse.",
-    "uuid": "f0982c29-9869-8c9c-9343-3c16b16b02bc",
+    "uuid": "0f4c9739-81fe-80b7-b334-fb32573f671d",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "audit",
-    "uuid": "102f74a7-fdce-8d96-867c-c2ff2e5b61a1",
+    "uuid": "a36f680b-fe27-8a3d-a4ad-4edb170d0f0b",
     "words": [
       "audit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about audit — builds each tenant's standardised monthly audit file for the month that has closed — is what decides which — and submits it where an mTLS submitter is wired.",
-    "uuid": "4662aa6e-02d8-8429-96a6-ebde00c8d757",
+    "uuid": "abefc832-64a8-8cd9-ac63-02f57eb29dbf",
     "words": [
       "use",
       "when",

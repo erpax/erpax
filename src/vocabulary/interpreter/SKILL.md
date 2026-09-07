@@ -2,10 +2,10 @@
 name: interpreter
 description: "Use when reasoning about interpreter — A schema.org component word, collided out of schema.org compounds — fused from claimInterpreter (sti · collapse · merge)."
 atomPath: "vocabulary/interpreter"
-coordinate: "vocabulary/interpreter · 8/crest · 6e737ecf"
-contentUuid: "c8f6784d-bcfc-596b-8504-e7fe54652320"
-diamondUuid: "7176440d-b3aa-888a-b4a0-1da02c7c8e6d"
-uuid: "6e737ecf-e169-8e14-b104-6d6f9a6f79c8"
+coordinate: "vocabulary/interpreter · 8/crest · 47d94cd1"
+contentUuid: "fa72b5db-b62b-5562-a815-1d6bd6de9f72"
+diamondUuid: "5eae350f-d1c8-8a0c-811f-58f2ca43aee3"
+uuid: "47d94cd1-59e3-8371-8ae0-c691b297ad3f"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "38f4e17d-e62c-8019-9775-1c380ab2cac0"
+  computationUuid: "c722b396-d958-872b-b276-aaf016a724e8"
   stages:
     - stage: path
       stageUuid: "8121194b-2218-8841-be3c-0f895074404d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d77bf96f-e138-8fa8-b292-8a267767afd5"
     - stage: horo
-      stageUuid: "5b686877-2e92-8ee1-8ef6-afbc253f919f"
+      stageUuid: "74b0b369-890e-8088-8927-1efd1bafcbcf"
     - stage: seal
       stageUuid: "856ba42a-4fff-8b86-b717-23c8ed60898f"
     - stage: uuid
-      stageUuid: "1690769b-9584-84d8-a6d2-0b0185c064c8"
+      stageUuid: "dee65421-afbe-86cb-899f-2bc84cc8b8be"
 version: 2
 ---
 # interpreter

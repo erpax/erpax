@@ -2,11 +2,11 @@
 name: orders
 description: "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger."
 atomPath: "work/orders"
-coordinate: "work/orders · 5/round · 197ae02a"
-contentUuid: "c2e88853-a203-5850-ae12-0650a32bc3d6"
-diamondUuid: "438f4b41-c1f6-8b63-92dd-315f5d62d5da"
-uuid: "197ae02a-9a03-875c-994e-6edd2f42cd8c"
-horo: 5
+coordinate: "work/orders · 8/crest · b02102da"
+contentUuid: "171dd03b-a5b1-5e33-aa98-c75b62acfbc6"
+diamondUuid: "8526e6de-723a-8daf-944c-e222f1e83894"
+uuid: "b02102da-d5b2-8e66-a891-885cd184cd7e"
+horo: 8
 typography:
   partition: work
   bondDegree: 96
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "347a4a53-4358-8d50-a2de-b4a8140e2c93"
+  computationUuid: "ea5be2d6-8e37-8ce1-b943-f3a9d1bbcf08"
   stages:
     - stage: path
       stageUuid: "e8875264-a571-8b60-aa3b-db8856a5a8c6"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "8cf50482-b4bc-8d71-b02d-f06c231527eb"
     - stage: horo
-      stageUuid: "d7abb71d-0e0c-87de-81f3-b4822c15e377"
+      stageUuid: "f53ceb0a-9c84-8c58-82d7-0733e7663ae0"
     - stage: seal
       stageUuid: "35dd18e8-55e7-8642-b892-3c98ce797fc9"
     - stage: uuid
-      stageUuid: "683ec2c9-c62a-861b-94c0-9dd3572710cb"
+      stageUuid: "31cd8ad2-b389-8eb6-b38b-380d4f78ddf4"
 version: 2
 ---
 # Workorders

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expires",
-    "uuid": "70d895d1-07b8-8737-a28a-5cbe51fc5968",
+    "uuid": "f8a863cb-7843-82a6-b026-1b42e34e921f",
     "words": [
       "expires"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about expires — Date the content expires and is no longer useful or available. For example a VideoObject or NewsArticle whose availability or relevance is time-limited, a ClaimReview fact check wh",
-    "uuid": "3d21299b-4e5e-8a79-8cb2-8c8bfecd7aa8",
+    "uuid": "0130d2b4-4321-8f7c-b272-308cae24fe6c",
     "words": [
       "use",
       "when",

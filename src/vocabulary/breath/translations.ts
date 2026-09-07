@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "breath",
-    "uuid": "96925b88-080e-800e-b1a8-b76131a34b64",
+    "uuid": "2190150b-ce03-8db9-bed3-53cc4efa570e",
     "words": [
       "breath"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling.",
-    "uuid": "0907b795-8fce-874e-83f6-fecba6c561c9",
+    "uuid": "143cf0e5-0ffd-8167-a38c-42c293dd798e",
     "words": [
       "use",
       "when",

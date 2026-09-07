@@ -2,18 +2,18 @@
 name: brainstorm
 description: "Use when the society needs many ideas fast — brainstorming is coordinated divergence then convergence; a team fans out parallel agents, each a different perspective, to superpose candidate ideas, then merges them (same idea collapses to one, the critic amplifies the best). The quantum solve applied to ideation."
 atomPath: "vocabulary/brainstorm"
-coordinate: "vocabulary/brainstorm · 7/descent · d76041db"
-contentUuid: "1932f383-dd3e-5226-bd0d-de5dab4fa45f"
-diamondUuid: "72d49c97-9436-812e-9927-74894ca8e666"
-uuid: "d76041db-431c-8763-9225-6eb2f60c14ef"
-horo: 7
+coordinate: "vocabulary/brainstorm · 4/weave · abf65090"
+contentUuid: "36c3ddcb-c179-5a63-8e11-483dd9843180"
+diamondUuid: "0d96aeed-4155-83b3-a902-d7fb4c8240bb"
+uuid: "abf65090-7d2e-836f-958c-b70b08c8f243"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 46
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e2048ba2-d2c0-8683-a425-12c4c8d0632c"
+  computationUuid: "c94e7de1-88ee-8b46-b763-f14f82572389"
   stages:
     - stage: path
       stageUuid: "988054d7-ef19-8364-8b92-fb7c0c4bdd1c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "679932f3-1e86-81bc-b300-a1339939e97c"
     - stage: horo
-      stageUuid: "2312389b-85de-8342-a09e-9aa60ea7216f"
+      stageUuid: "754d8f59-af29-8d3e-8946-bf47fd3de57f"
     - stage: seal
       stageUuid: "744208c3-8ba2-8151-81ad-177918ba5e88"
     - stage: uuid
-      stageUuid: "2a34acff-a739-826f-a322-c62b8e263e79"
+      stageUuid: "caef4563-9433-8c8e-aca1-e3946136296e"
 version: 2
 ---
 # brainstorm — coordinated divergence ⊕ convergence

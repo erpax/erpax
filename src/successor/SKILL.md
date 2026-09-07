@@ -2,11 +2,11 @@
 name: successor
 description: "Use when reasoning about successor — A pointer from a newer variant of a product to its previous, often discontinued predecessor."
 atomPath: successor
-coordinate: "successor · 7/descent · a5aab755"
-contentUuid: "b22dd27c-7f54-5145-a69a-badc65b95569"
-diamondUuid: "864e226c-0947-8dd3-b2ad-c83745750e86"
-uuid: "a5aab755-941d-81c1-b782-7db82f35abcd"
-horo: 7
+coordinate: "successor · 5/round · 22bf1e73"
+contentUuid: "0b070e8a-25b7-505f-b5bf-4d66c56c8230"
+diamondUuid: "90e7b6da-bdaa-800f-88ff-590d2959b389"
+uuid: "22bf1e73-f930-80c0-a72b-d035b277b8a6"
+horo: 5
 typography:
   partition: successor
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "71812e23-cfbc-828e-a669-343937dd6728"
+  computationUuid: "227821e3-308b-8523-8054-c5a10cc5c8d0"
   stages:
     - stage: path
       stageUuid: "33e157e2-0b17-8e73-bfe1-9434587920e4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c0705c18-015f-89c4-ba74-d18248e19905"
     - stage: horo
-      stageUuid: "5f67ce20-d985-802d-8bff-f56696a4b8d0"
+      stageUuid: "b166cabe-197f-80b7-9a55-704cbb7ee747"
     - stage: seal
       stageUuid: "de36f18c-099f-8c37-be4e-f2229bc97e40"
     - stage: uuid
-      stageUuid: "552b3297-bf76-899e-9f0e-ddc6e9b219bf"
+      stageUuid: "c979fe70-f63c-8521-b7c3-2d43f362ebe9"
 version: 2
 ---
 # successor

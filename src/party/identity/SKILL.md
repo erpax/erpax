@@ -2,10 +2,10 @@
 name: identity
 description: "Use when deciding whether two party records are the same legal person — partyUuid folds (country + taxId) to one content-address, so a company recorded as both a customer and a vendor collides by construction. The role is never part of the address. Refuses a party with no tax registration rather than folding on a name."
 atomPath: "party/identity"
-coordinate: "party/identity · 9/unity · 2e3e4f29"
-contentUuid: "c4d9529d-b2e2-5c7d-bc65-752fa42de466"
-diamondUuid: "9e2295fc-9cbd-85d4-8d4c-534b1c300547"
-uuid: "2e3e4f29-d247-83cb-9d50-bbd23b700125"
+coordinate: "party/identity · 9/unity · 1ed8e90e"
+contentUuid: "bac61527-c1f6-5557-bfcd-7e4d5feae5d3"
+diamondUuid: "db55aecd-fbe2-8af2-8e95-4e72cedb8697"
+uuid: "1ed8e90e-9bb3-8161-be60-7d8cf07181a2"
 horo: 9
 typography:
   partition: party
@@ -15,7 +15,7 @@ standards:
   - "RFC 9562 §5.8 — the content-address"
 bindings: []
 signatures:
-  computationUuid: "ee8bf932-0030-8917-9ddb-a5f070e5b7ce"
+  computationUuid: "2486f180-42ef-8659-a5db-fcae5e2d67a6"
   stages:
     - stage: path
       stageUuid: "7d17a163-efdb-8081-ac8b-7fe4d6d9eb2f"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "bbd10cd6-bc89-8bb1-9d5e-774c935ab85a"
     - stage: horo
-      stageUuid: "3146a59a-d30e-89cd-bc00-f1c8513c8764"
+      stageUuid: "9402d778-2bef-810f-89af-71610e8ecc28"
     - stage: seal
       stageUuid: "f3a1e4c3-1ab8-8b10-a9a9-b87c1edda7ed"
     - stage: uuid
-      stageUuid: "d80b3dcf-d477-84de-9736-64855d3e87a5"
+      stageUuid: "35917db4-7621-8ae9-b560-db28408d1fba"
 version: 2
 ---
 # identity — a party is what it IS, never what it is TO YOU

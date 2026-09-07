@@ -2,11 +2,11 @@
 name: co
 description: "Use when reasoning about co as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/co"
-coordinate: "vocabulary/co · 8/crest · eef3a1b3"
-contentUuid: "2f5e16f9-763d-50fc-889e-fed1bf0e8afc"
-diamondUuid: "ae3b661d-8faa-8d73-8ce2-694d2a0e624d"
-uuid: "eef3a1b3-f277-8742-bb13-139665263086"
-horo: 8
+coordinate: "vocabulary/co · 4/weave · 057813f8"
+contentUuid: "c2e2899a-2840-5c9f-9a5f-b9e4a9c2c695"
+diamondUuid: "843460ce-29d2-8abe-a256-96f664d52c42"
+uuid: "057813f8-cda1-8602-b540-c58f8fdbb1f6"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7d1de0f8-28ed-808a-8555-1bf38f3af7a9"
+  computationUuid: "6c553033-776a-83a3-97d0-d09b630a9977"
   stages:
     - stage: path
       stageUuid: "f552c58d-0ff9-83d6-8bf4-4bd1c5e2742e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e9254132-a159-8a19-af2b-3a9225d47e3d"
     - stage: horo
-      stageUuid: "a5b0c56b-8499-8219-881d-4e8733527644"
+      stageUuid: "8b206b10-a2c7-8762-8fae-ba6bbac0582b"
     - stage: seal
       stageUuid: "ab51897a-a2a8-8b0f-aeaf-ba6199911bf2"
     - stage: uuid
-      stageUuid: "fac6d238-a7af-8727-b53f-ed8e8ce81bc6"
+      stageUuid: "c82617e1-5a61-8a10-af98-67aa7c944dc0"
 version: 2
 ---
 # co

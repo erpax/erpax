@@ -2,18 +2,18 @@
 name: mirror
 description: Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it.
 atomPath: "rules/mirror"
-coordinate: "rules/mirror · 1/base · fbf0eb4a"
-contentUuid: "87521f8e-858d-5ff2-9d1f-53712878ec01"
-diamondUuid: "343e88c3-a681-8317-9b3c-627ab01f7749"
-uuid: "fbf0eb4a-2266-8e94-8b47-5eed9a67a19b"
-horo: 1
+coordinate: "rules/mirror · 8/crest · f9c18cc7"
+contentUuid: "17c3088e-ee35-5011-a222-65ee563bace5"
+diamondUuid: "7c059d02-b97a-8af4-98f3-ab1f8ef220bd"
+uuid: "f9c18cc7-ac35-86b0-b567-8b8c466dd071"
+horo: 8
 typography:
   partition: rules
   bondDegree: 28
 standards: []
 bindings: []
 signatures:
-  computationUuid: "acb9aa03-7f03-8ca4-89ca-107975393312"
+  computationUuid: "6fdfb3cb-227d-81fe-bd2d-53a33855aa45"
   stages:
     - stage: path
       stageUuid: "a41af642-052b-899f-b78d-b837ab008c07"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ae2540da-e02f-8e3a-a41d-d98c340bac9e"
     - stage: horo
-      stageUuid: "14fe9d75-27fb-8835-8996-a6cd002a7cda"
+      stageUuid: "06e7c862-1184-868e-bec3-e02bc64363bf"
     - stage: seal
       stageUuid: "0135c6a6-3ff8-86fb-866c-1471123ad156"
     - stage: uuid
-      stageUuid: "516a2a32-ec30-8939-9c79-12cb77059ecb"
+      stageUuid: "e7876034-3c77-89c9-a760-6ec2f572ab51"
 version: 2
 ---
 # rules/mirror — a proof that restates its own definition is not evidence, and evidence is a legal word

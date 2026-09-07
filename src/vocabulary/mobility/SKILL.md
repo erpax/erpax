@@ -2,11 +2,11 @@
 name: mobility
 description: "Use when reasoning about mobility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mobility"
-coordinate: "vocabulary/mobility · 5/round · 98588c01"
-contentUuid: "ca550ac1-7d5e-5105-a843-9371b6fb11a3"
-diamondUuid: "7bed0c01-7872-8b64-95f9-b11581b9b332"
-uuid: "98588c01-a371-8c48-b5fc-3cf5a6a72dcc"
-horo: 5
+coordinate: "vocabulary/mobility · 1/base · 9ba013e6"
+contentUuid: "2b949479-f2fe-501a-b0b0-c0ab3c5e6dec"
+diamondUuid: "4f8c66b4-c909-826b-ad84-39c46ca9ab74"
+uuid: "9ba013e6-3a5b-8eb8-8699-8bda9934ea20"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff733726-18ee-8503-8278-c93ba21667e3"
+  computationUuid: "4e4f851f-7b86-834e-b0db-a10d7d843aba"
   stages:
     - stage: path
       stageUuid: "b7a9c5fb-84c1-8053-9977-5473c15597c3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f7253f7d-0973-84c4-8db0-1542ff47a829"
     - stage: horo
-      stageUuid: "7f15d7af-3de3-8c6c-ae4e-975d35d74aa5"
+      stageUuid: "78abe029-cab7-8932-bfae-3ceef7db24a8"
     - stage: seal
       stageUuid: "9f6277ba-1dca-8a30-879f-26aaf1680ca2"
     - stage: uuid
-      stageUuid: "00e42f02-b0c6-845b-916e-29e72dc68d6f"
+      stageUuid: "b95f04d9-e428-896c-92d8-7b78452cac2f"
 version: 2
 ---
 # mobility

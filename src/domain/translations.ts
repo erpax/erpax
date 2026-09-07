@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "domain",
-    "uuid": "b914c13f-996c-8220-8a3e-caf4d0e9e3d8",
+    "uuid": "2a5db771-eb96-8b15-b322-646bf8b883d8",
     "words": [
       "domain"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling a tenant's domain — NOT tenant isolation (the multi-tenant plugin does that), but the domain as the tenant's identity and managed entity: the name that routes the request to the tenant, its hierarchy, status lifecycle, SSL, billing, and — the key — proof of domain ownership, which IS the computational admin grant: prove you control the domain and the tenant is yours.",
-    "uuid": "4a444d51-cee6-8309-b754-3bf309548236",
+    "uuid": "23092d02-de68-8bbe-846a-2c616e91caa0",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: declined
 description: "Use when reasoning about declined as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/declined"
-coordinate: "vocabulary/declined · 4/weave · 4c0f679d"
-contentUuid: "d9058dfd-a792-517c-ac76-753e09be71f7"
-diamondUuid: "dbae623f-1e76-808f-9ddb-cfc70c5fa885"
-uuid: "4c0f679d-e7d0-8d01-a31a-08644fe3cb64"
-horo: 4
+coordinate: "vocabulary/declined · 2/share · 5158c8d1"
+contentUuid: "722a8fe4-8c84-5812-91d7-f7eb2788f6e3"
+diamondUuid: "4d10c015-c15b-8a21-8d62-9d8dfa729db1"
+uuid: "5158c8d1-537e-8acb-bac6-21c3ff71c97a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9418a753-a534-8c7a-9d2d-0fc3bad14adf"
+  computationUuid: "597ee228-4e2f-8788-9fbe-856af62a7530"
   stages:
     - stage: path
       stageUuid: "a6adf58d-bc9d-861b-905a-88f66b015718"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ba126083-5bb5-8c7c-9840-83ab8ddc6f4a"
     - stage: horo
-      stageUuid: "1150950a-a17e-8a47-ad72-32e19c7f728f"
+      stageUuid: "e2d65659-e33c-8e7f-b2a1-947ffada37ae"
     - stage: seal
       stageUuid: "e994e98a-5517-8202-a60b-ac680b9a8f60"
     - stage: uuid
-      stageUuid: "d044ce46-c495-8d00-b04c-3b34b301ba99"
+      stageUuid: "c078649c-aa74-83ae-8a17-a9d5f7eaf8d8"
 version: 2
 ---
 # declined

@@ -2,18 +2,18 @@
 name: fold
 description: "Use when folding any address surface to the one canonical atom path — pure string work, with none of the 4.2 MB corpus matrix its parent barrel loads for the ring walk."
 atomPath: "path/fold"
-coordinate: "path/fold · 2/share · 6194492d"
-contentUuid: "9d3d66f6-9beb-5111-8bf0-7db0a5f03271"
-diamondUuid: "70804571-171d-8c7f-8c5b-7cd99d3f2841"
-uuid: "6194492d-da30-8f18-9a95-4455ca3f885e"
-horo: 2
+coordinate: "path/fold · 5/round · 38a248a5"
+contentUuid: "a79bfebd-019b-53c0-8caa-74d9ae120e2d"
+diamondUuid: "f8b6e18d-7d2f-88d7-9b7c-31bea77992ea"
+uuid: "38a248a5-a2c9-8248-80c3-0ea226edcb96"
+horo: 5
 typography:
   partition: path
   bondDegree: 89
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5e6ab4ba-29df-86a9-8181-340187cd5cf7"
+  computationUuid: "e9636d76-7bcd-8be7-aa32-3533f746df34"
   stages:
     - stage: path
       stageUuid: "61f58d64-b65f-8e75-9ab2-3548efafbc90"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bbfa2525-bfce-8276-8e16-ee7856e27775"
     - stage: horo
-      stageUuid: "a68b325f-c3b2-8675-92cd-1bf5394ee38b"
+      stageUuid: "6e5b98f2-ce40-860f-8b69-4907d929f544"
     - stage: seal
       stageUuid: "c56bcd48-f3ee-8b08-864e-8e7752d933c0"
     - stage: uuid
-      stageUuid: "9e9773d9-b799-852a-8079-52e8f5111b54"
+      stageUuid: "88d8439d-c5d2-83cf-b422-57bf4720ee64"
 version: 2
 ---
 # path/fold — folding a string should not load the corpus

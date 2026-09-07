@@ -2,10 +2,10 @@
 name: unp
 description: "Use when reasoning about unp — Наредба Н-18 / СУПТО — УНП (Уникален номер на продажба / Unique Sales Number)."
 atomPath: "naredba/n/18/unp"
-coordinate: "naredba/n/18/unp · 4/weave · 76fd84d6"
-contentUuid: "24346c4a-5877-506e-bf42-77a92ec6cb85"
-diamondUuid: "4ef14b75-99bf-8752-9f89-4f7559100eda"
-uuid: "76fd84d6-2b63-8bd2-89de-1ff55f2bade0"
+coordinate: "naredba/n/18/unp · 4/weave · 651d2a8b"
+contentUuid: "dba7695e-5c24-5a14-9dec-71ce6d5074f3"
+diamondUuid: "5be7dbb3-a6e1-8d23-a787-5f5bc2e83c0f"
+uuid: "651d2a8b-17a6-83a8-978d-683d85c18f29"
 horo: 4
 typography:
   partition: naredba
@@ -15,7 +15,7 @@ standards:
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "d761e777-7e63-84b2-87dc-74579c37c567"
+  computationUuid: "4f2e3319-a68f-8b2c-a743-1ddf65273352"
   stages:
     - stage: path
       stageUuid: "2df041c4-1f6c-8acf-873c-b88aba127750"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "71c1d92c-0527-8a6e-81a8-289c9440b116"
     - stage: horo
-      stageUuid: "1381ecc5-27ba-8633-8c1f-dbf0fdf617fa"
+      stageUuid: "9d4ff650-7920-8016-a5a9-794f470d8111"
     - stage: seal
       stageUuid: "24f0ec25-369d-85c0-8aab-ddf9beb14396"
     - stage: uuid
-      stageUuid: "a9bc7d79-1924-879d-8b04-f46ee326ef79"
+      stageUuid: "74d0828c-e8bc-8f20-8aef-2b222b509968"
 version: 2
 ---
 # naredba/n/18/unp

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "research",
-    "uuid": "7fb5a0e0-32a6-8568-91b9-54b8f469cebd",
+    "uuid": "7de10e6f-e637-856d-86e6-4570daf14490",
     "words": [
       "research"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering an agent R&D society as tenant users with assigned roles, coordinating findings over the chat bus, and gating each finding behind tamper-evident tenant-admin approval — the actor-merge made operational (an agent IS a user).",
-    "uuid": "7ca179ac-a5f7-8689-a67c-a50ac40108c1",
+    "uuid": "3e9c4644-3775-8098-bf16-620e42203168",
     "words": [
       "use",
       "when",

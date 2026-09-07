@@ -2,11 +2,11 @@
 name: types
 description: Use when reasoning about types — Canonical EN 16931 semantic data model — types only.
 atomPath: "en/16931/types"
-coordinate: "en/16931/types · 1/base · 05bb27af"
-contentUuid: "2dd5d34c-7bd8-5510-a96e-f0975f0b5a05"
-diamondUuid: "3b24df99-c4fe-82bc-b289-1aab6236a285"
-uuid: "05bb27af-7d24-819c-8a37-c7185952dd38"
-horo: 1
+coordinate: "en/16931/types · 7/descent · ef0a03c9"
+contentUuid: "f54986ee-1f85-543d-a1ae-23e8e8e4010f"
+diamondUuid: "0ecc547a-0533-81c4-a511-bcb34f7fe1f5"
+uuid: "ef0a03c9-ae5b-893a-873d-3f34187ce5e3"
+horo: 7
 typography:
   partition: en
   bondDegree: 85
@@ -38,7 +38,7 @@ standards:
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
 bindings: []
 signatures:
-  computationUuid: "47ba965d-0beb-8d50-aeaa-557e87688d5f"
+  computationUuid: "0983ca6c-b0fe-8885-8912-7efb9289f793"
   stages:
     - stage: path
       stageUuid: "f05ad91e-0d2b-8d64-ab14-341d9d0d31af"
@@ -49,11 +49,11 @@ signatures:
     - stage: links
       stageUuid: "8f9ea297-ed2f-8ea4-9cc8-825ffca380a2"
     - stage: horo
-      stageUuid: "a73478f1-c1e2-80ab-ae83-796974216e24"
+      stageUuid: "13c875d9-bef2-8294-8e9e-a3f1d3207b0f"
     - stage: seal
       stageUuid: "63f737a6-7373-8143-bd47-45663b90d468"
     - stage: uuid
-      stageUuid: "0d21614d-a8f9-81c5-854a-94c42578bbca"
+      stageUuid: "f46e6f0f-e2c6-8ce6-8ed7-bce487d214c8"
 version: 2
 ---
 # en/16931/types

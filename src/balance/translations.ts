@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "balance",
-    "uuid": "efa03ea0-dbc4-87d4-9698-4e29c06c9a5e",
+    "uuid": "22f49228-b8bd-8d14-9fc1-3e3491ec163e",
     "words": [
       "balance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about equilibrium in erpax — Σdebit=Σcredit, trial balance, conservation laws, two sides of a flow at rest. The universal root of equilibrium.",
-    "uuid": "42c051aa-40d2-8c53-b0e1-18fe83aabd7c",
+    "uuid": "e59c3be9-c4bf-8d97-ae34-293a446b839f",
     "words": [
       "use",
       "when",

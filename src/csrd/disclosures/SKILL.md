@@ -2,11 +2,11 @@
 name: disclosures
 description: "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register."
 atomPath: "csrd/disclosures"
-coordinate: "csrd/disclosures · 7/descent · 203145d7"
-contentUuid: "576b4414-f50b-5450-ae04-2e6a13afef7b"
-diamondUuid: "bddab05a-5010-855d-a3df-4b57a65c0414"
-uuid: "203145d7-7e21-84c6-8de5-7229b2e77e3a"
-horo: 7
+coordinate: "csrd/disclosures · 4/weave · e63f65a2"
+contentUuid: "970a1640-9caa-5bc8-b4b2-ba3279ae81a0"
+diamondUuid: "fa32d6aa-50c2-8a92-811c-e584b2c198a0"
+uuid: "e63f65a2-cd80-828f-bfd6-9a9abb8271d3"
+horo: 4
 typography:
   partition: csrd
   bondDegree: 19
@@ -30,7 +30,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a412a47a-d6dc-8512-bd6b-f30a3f905603"
+  computationUuid: "7ff174f6-e99c-8c35-a903-91149ed5bb83"
   stages:
     - stage: path
       stageUuid: "42d87685-4469-8d8d-ad0f-b3fec575bd74"
@@ -41,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "1e7f1414-0741-8ec9-a84c-735342da5ab0"
     - stage: horo
-      stageUuid: "ee10b5cc-e398-8a63-8dc5-c0e470818070"
+      stageUuid: "53241f53-904a-8d3a-b52f-db514d329e5a"
     - stage: seal
       stageUuid: "ab8206c5-d899-82d6-a4d0-72b32ebbef7e"
     - stage: uuid
-      stageUuid: "c8c4c836-8bd8-8484-b584-a5471b5e895c"
+      stageUuid: "65351959-ee37-8ef3-99bc-bb4233a5166e"
 version: 2
 ---
 # csrd-disclosures

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "maintainer",
-    "uuid": "94ba7f90-59d3-8ecc-bd4e-cb6eae9feea1",
+    "uuid": "edcca2d7-e03c-83b9-8ee4-0bb664f8d537",
     "words": [
       "maintainer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about maintainer — A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of,",
-    "uuid": "2bb70440-cc5e-8df6-8a00-9afc01c217f4",
+    "uuid": "8a0f7f19-a0c1-82e7-8a04-e7d7f7a82ddb",
     "words": [
       "use",
       "when",

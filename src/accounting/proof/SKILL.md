@@ -2,11 +2,11 @@
 name: proof
 description: "Use when reasoning about proof — Use to see the corpus accounting itself in realtime — every claim (@invariant · @standard · @compliance · @audit) is a DEBIT, every proof (a test beside it) the CREDIT, and the ledger balances iff all is proven. The residual is the unproven surface, computed at read. Run: tsx src/accounting/proof/index.ts"
 atomPath: "accounting/proof"
-coordinate: "accounting/proof · 5/round · 204ab8dd"
-contentUuid: "9edb68b6-6450-5f8c-b0da-dc5d6512c729"
-diamondUuid: "3c0c3137-2620-859b-a396-1951848ef9b0"
-uuid: "204ab8dd-e43a-80d4-b47f-cbadb9c7cc69"
-horo: 5
+coordinate: "accounting/proof · 7/descent · 33c0bc98"
+contentUuid: "cf03396e-76dd-54d6-a1de-2104eaa49fcd"
+diamondUuid: "479c3de1-82b0-8ee2-8c4b-a6c6c3a627ce"
+uuid: "33c0bc98-4b1b-8cd8-b26f-50206a2e9135"
+horo: 7
 typography:
   partition: accounting
   bondDegree: 634
@@ -20,7 +20,7 @@ standards:
   - "· @compliance · @audit) is a DEBIT, every proof (a test beside it) the CREDIT, and the ledger balances iff all is proven. The residual is the unproven surface, computed at read. Run: tsx src/accounting/proof/index.ts\""
 bindings: []
 signatures:
-  computationUuid: "c8f642e0-c288-85cf-a427-3099196ab35a"
+  computationUuid: "58dbfe7b-7a26-8235-ad5b-527c33a3be2b"
   stages:
     - stage: path
       stageUuid: "2ce85a5a-7225-8570-b871-756a01b64294"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "0a343537-e0eb-891f-9ff6-6b03367d66cb"
     - stage: horo
-      stageUuid: "d6ed598e-c0c7-8acb-a56e-63bf32312e4e"
+      stageUuid: "489b177b-efe4-80e0-a3bb-b520f405a24d"
     - stage: seal
       stageUuid: "26af9697-41e9-87b9-b519-a4c6a6a4a644"
     - stage: uuid
-      stageUuid: "84822a7f-cd82-8320-8016-65b4c5c07ef9"
+      stageUuid: "750af60e-d014-8b52-8a3c-ff9cc68b973b"
 version: 2
 ---
 # proof — realtime double-entry of what the corpus CLAIMS against what it PROVES

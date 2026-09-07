@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lymphatic",
-    "uuid": "cf3d5bed-cc4a-8e6d-9ed6-375ff6135e91",
+    "uuid": "9fa5a146-6e08-863c-b8c0-3e1061d62b6c",
     "words": [
       "lymphatic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lymphatic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "3c3d060a-34e8-8c49-acc2-c02bca81e1fe",
+    "uuid": "9398d8d5-19a1-82b6-8ca3-412d81faca28",
     "words": [
       "use",
       "when",

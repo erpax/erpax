@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "demand",
-    "uuid": "cd63ade7-382b-8226-8e63-474753a97853",
+    "uuid": "9ecb804f-13ce-873c-ad8a-6078536fcc92",
     "words": [
       "demand"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about demand — A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. Fo",
-    "uuid": "1b31246d-80b0-8008-9c05-582da78ee867",
+    "uuid": "4fd0974d-5135-8e23-84f5-2a2e535f6f82",
     "words": [
       "use",
       "when",

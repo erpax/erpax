@@ -2,11 +2,11 @@
 name: invoices
 description: "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection."
 atomPath: invoices
-coordinate: "invoices · 8/crest · c92f2fbc"
-contentUuid: "eebc6b30-0831-5af4-897c-5c05a9468ce2"
-diamondUuid: "45b84785-30eb-866e-ae91-63092edc3988"
-uuid: "c92f2fbc-0930-896a-8853-4e329eb0db30"
-horo: 8
+coordinate: "invoices · 4/weave · 017a34c0"
+contentUuid: "0695b07e-9df8-5eb3-9bad-f359bf7ad8d8"
+diamondUuid: "fdc4a6b7-f92f-8c1a-902b-71811ba74d67"
+uuid: "017a34c0-4593-8f21-8a53-6509bc9496ac"
+horo: 4
 typography:
   partition: invoices
   bondDegree: 74
@@ -44,7 +44,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ecb47462-72a4-8adc-a1e0-095e8dfec727"
+  computationUuid: "d32c35e6-71bb-8220-b55f-b0e4ef08742b"
   stages:
     - stage: path
       stageUuid: "343d953a-b200-88f2-9d81-ba44e9b2c0ea"
@@ -55,11 +55,11 @@ signatures:
     - stage: links
       stageUuid: "0d1a4cd3-01dc-82ba-a9f1-7d5140a02884"
     - stage: horo
-      stageUuid: "cc32c4a6-23cc-8efc-9721-b78dbde1d982"
+      stageUuid: "f6256ac9-cb5d-8293-8812-73b147ea2041"
     - stage: seal
       stageUuid: "f8aa3d49-1329-819d-bf1d-17fc61614637"
     - stage: uuid
-      stageUuid: "4714211b-14da-811e-9801-9aa8eb76d093"
+      stageUuid: "5d6e4e8d-311e-89c5-9f3f-812fbd7e8699"
 version: 2
 ---
 # invoices

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "knows",
-    "uuid": "709ad382-ebc5-8d58-84bf-97dedc595ade",
+    "uuid": "be0aa922-7f41-8de0-9c2f-6873759d4f29",
     "words": [
       "knows"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about knows — The most generic bi-directional social/work relation.",
-    "uuid": "6adcfa36-aa5c-867f-b950-f27f95ff519c",
+    "uuid": "657daa49-215f-8424-a7ac-79dd55445080",
     "words": [
       "use",
       "when",

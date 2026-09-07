@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "memories",
-    "uuid": "6efa8b8d-e9d4-807e-9bbb-fbc8723c2b77",
+    "uuid": "b131b38a-eac7-858c-ab30-5621df1f2302",
     "words": [
       "memories"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice (memory/architecture); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key).",
-    "uuid": "8994cbcd-45e3-873d-96d5-9746204268cd",
+    "uuid": "9aec1c3c-5ab0-8152-ad7c-1fd4ae2ecc8a",
     "words": [
       "use",
       "when",

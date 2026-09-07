@@ -2,11 +2,11 @@
 name: original
 description: "Use when reasoning about original as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/original"
-coordinate: "vocabulary/original · 2/share · dc663858"
-contentUuid: "ccfd9a4f-da93-58dc-945f-553340c0f69c"
-diamondUuid: "d1081606-cbf5-8908-a995-f818e8ca9b25"
-uuid: "dc663858-092f-8180-8e40-7da24a2d78e6"
-horo: 2
+coordinate: "vocabulary/original · 5/round · e26a3837"
+contentUuid: "c1f79505-6d7f-5483-b13b-6a578a4b068b"
+diamondUuid: "51b95d6f-fc5a-8ba0-a56e-491f9c3d499b"
+uuid: "e26a3837-b360-8986-b3c4-0712567313d0"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "85a7b103-32b5-8e46-a521-541c1d644349"
+  computationUuid: "a5f597d9-2d64-8bff-849f-fbfb6be9f7d3"
   stages:
     - stage: path
       stageUuid: "c8ab1d0a-3aab-8f01-92fc-8117d34e1747"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8d52b331-3fc5-8281-a406-f960e5a23e1a"
     - stage: horo
-      stageUuid: "13bf7411-6466-8a5a-9918-826a43e07a3b"
+      stageUuid: "9bbde58f-2bf8-82ec-81d7-610e607fdab4"
     - stage: seal
       stageUuid: "966d31a5-a44e-8f1f-b700-e6892e61ca19"
     - stage: uuid
-      stageUuid: "02111706-7975-8422-ab25-14147d902499"
+      stageUuid: "55d98ec9-8664-852b-9d05-d45443d3c27e"
 version: 2
 ---
 # original

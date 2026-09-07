@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mortality",
-    "uuid": "41d36e11-f573-8940-ae90-03975ff305ca",
+    "uuid": "750190af-2cd5-8807-a7d4-099b5c95f2ee",
     "words": [
       "mortality"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when living stock dies and the asset is written down — mortality, the death-loss rate/event across a herd, fish stock, forest stand, or bee colony. The negative biological transformation (IAS-41 P&L decrement, distinct from price change); the loss twin of yield, shared across every living-production domain.",
-    "uuid": "eed684ee-d8f6-8231-a599-f36eb8ec059e",
+    "uuid": "69ec547e-377f-8bf1-b8d8-6719fdeb9a80",
     "words": [
       "use",
       "when",

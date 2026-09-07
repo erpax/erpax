@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "publication",
-    "uuid": "2398ecad-25c4-8c35-8167-d6994d149c12",
+    "uuid": "b03c5dab-cf59-80a3-9266-89bd0306e450",
     "words": [
       "publication"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about publication — Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication",
-    "uuid": "0a9c350d-4872-8388-a280-0f72b4cd40a3",
+    "uuid": "a94c80c5-72c5-8d04-ab82-b926224e3c95",
     "words": [
       "use",
       "when",

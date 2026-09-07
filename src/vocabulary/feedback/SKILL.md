@@ -2,18 +2,18 @@
 name: feedback
 description: "Use when collecting, structuring, and acting on input from users, employees, or customers — surveys, reviews, suggestions, 360-degree feedback. The structured loop of input → analysis → action."
 atomPath: "vocabulary/feedback"
-coordinate: "vocabulary/feedback · 1/base · 2645cc03"
-contentUuid: "ab3d99b2-03ae-566f-869b-2f59250aa36b"
-diamondUuid: "eb8e12b5-040d-899f-a020-83cf0b3bcebe"
-uuid: "2645cc03-4aaf-8242-a02e-6c3e733fbd82"
-horo: 1
+coordinate: "vocabulary/feedback · 7/descent · 8c6f6537"
+contentUuid: "935fa455-e7f7-581a-be97-ed8bca825de1"
+diamondUuid: "0c66f04c-2ca3-8ae8-96ed-88a70c521714"
+uuid: "8c6f6537-e8e7-89b0-ac5f-34ab5c53eaa6"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "faa100f3-98c6-88f4-b913-c8c46d3fd445"
+  computationUuid: "f575851c-e44f-8a11-980c-c88799164f0e"
   stages:
     - stage: path
       stageUuid: "c99b0b65-7d85-8cc5-bb93-233e46a59920"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6b1742db-e044-8744-bd1e-8a0d1b0c798b"
     - stage: horo
-      stageUuid: "fd09212a-c90d-8a2c-9f0c-edf6dcacfc0f"
+      stageUuid: "66d3a19d-4180-81a6-8859-2fb05879ba50"
     - stage: seal
       stageUuid: "a86bb065-d6db-8cd1-9e2e-8d5b6b93bf78"
     - stage: uuid
-      stageUuid: "11fda074-d47c-8e6b-a368-b9177fce46c4"
+      stageUuid: "6a41f18f-29a2-8b6b-b1cb-cd4c4a7120fb"
 version: 2
 ---
 # feedback

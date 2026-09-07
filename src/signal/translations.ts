@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "signal",
-    "uuid": "837b5f6f-86d8-85eb-bb43-e7f64de4a90c",
+    "uuid": "753839ed-c8e8-874f-b8b2-e04839718a01",
     "words": [
       "signal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a horo position or any uuid must become perceivable — colour, sound, realtime motion — derived from the address itself with zero per-item design; identity IS its render, drift is visible.",
-    "uuid": "d45573c4-2bfd-8808-98ee-57fa94670e83",
+    "uuid": "6ebcddee-069a-88ab-aea5-b02047b7b935",
     "words": [
       "use",
       "when",

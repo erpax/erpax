@@ -2,11 +2,11 @@
 name: tasks
 description: "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project."
 atomPath: "customers/projects/project/tasks"
-coordinate: "customers/projects/project/tasks · 2/share · f2c658bd"
-contentUuid: "7b10131f-f9ae-5825-81d3-0055f0beae0c"
-diamondUuid: "0fff6863-d4c7-88f2-b498-cf49535db241"
-uuid: "f2c658bd-8408-833a-ae56-7fbec0059e81"
-horo: 2
+coordinate: "customers/projects/project/tasks · 5/round · 2d59db05"
+contentUuid: "f042bb3d-0241-5d14-b5d6-cfdec2f78769"
+diamondUuid: "2e53473a-f339-8425-91cc-cdce6602858d"
+uuid: "2d59db05-7eaf-83d9-9377-7b14e5fa2e86"
+horo: 5
 typography:
   partition: customers
   bondDegree: 30
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b52ed79f-0a48-8050-88cc-919042660504"
+  computationUuid: "18e2cbac-5e5f-8f2a-8329-03d19928500f"
   stages:
     - stage: path
       stageUuid: "a57cdb53-1b7d-81af-a372-2690819ffcd8"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "25ec2227-8b1f-81cb-a63a-1f308f0cb1a0"
     - stage: horo
-      stageUuid: "e2c1671b-3078-8fab-b773-28b4902136f2"
+      stageUuid: "f882d461-136a-8b03-911e-db114f9fa5b7"
     - stage: seal
       stageUuid: "82274d5a-73a9-8296-8ea8-f10b74ff350a"
     - stage: uuid
-      stageUuid: "03ef159a-9923-8b03-ba0c-490c246f3ece"
+      stageUuid: "c2ae2b07-727c-88fe-aaf0-fa58e915a2dd"
 version: 2
 ---
 # project-tasks

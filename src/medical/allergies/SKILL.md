@@ -2,11 +2,11 @@
 name: allergies
 description: "Use when reasoning about allergies as a medical facet of medical — vocabulary pivot to @/allergies; nested not duplicated."
 atomPath: "medical/allergies"
-coordinate: "medical/allergies · 5/round · 0f4550db"
-contentUuid: "a4dda649-ed69-52d6-ba4e-844ca8cc6a70"
-diamondUuid: "86e746f0-cb82-84c3-9bd1-27f0ff92981d"
-uuid: "0f4550db-aa06-88b9-885c-8afa10d2886d"
-horo: 5
+coordinate: "medical/allergies · 7/descent · f89ceeb5"
+contentUuid: "e50ac001-8f65-5231-a3ec-d121ae4b2d4b"
+diamondUuid: "994ce418-f71f-81eb-8d62-1438bdddaf3d"
+uuid: "f89ceeb5-6266-81c0-8892-0ad87d6c2dca"
+horo: 7
 typography:
   partition: medical
   bondDegree: 17
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6082ed5b-27ab-8863-bf64-837318cf392e"
+  computationUuid: "34836096-a9ee-884a-a304-6ce1617bd268"
   stages:
     - stage: path
       stageUuid: "16bbcb62-0ffe-87e4-8181-fe859aca8baa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "74fe169f-77ca-8be9-bba1-ec8ac22aeccb"
     - stage: horo
-      stageUuid: "8fcd33d9-cd34-8eee-a51a-632d19b16550"
+      stageUuid: "3f405bf4-1096-8ca5-bc5c-bd61ce87a791"
     - stage: seal
       stageUuid: "603a9306-99e9-886b-8b1b-821bb8d98cdd"
     - stage: uuid
-      stageUuid: "44f30a23-87ac-8015-8b41-205afd717eaf"
+      stageUuid: "a217ee68-5e6f-883f-b869-dc91d20e429b"
 version: 2
 ---
 # medical/allergies — medical facet

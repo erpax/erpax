@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "priorities",
-    "uuid": "5d167412-032f-8511-a263-e3e12d14d848",
+    "uuid": "2a0b5f52-2bae-83aa-ae86-1431c3d44876",
     "words": [
       "priorities"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about priorities as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "4a348741-1ee4-8ccc-8dc8-0ac0be58a98f",
+    "uuid": "60ba7abc-97b5-8755-8920-e43f95bf38bb",
     "words": [
       "use",
       "when",

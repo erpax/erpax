@@ -2,11 +2,11 @@
 name: train
 description: "Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay."
 atomPath: train
-coordinate: "train · 1/base · 6422c628"
-contentUuid: "dad7cffe-2234-5143-b04a-13a2c17eb664"
-diamondUuid: "a6fa347f-6503-8429-abc8-8459b1b141f2"
-uuid: "6422c628-5e2f-8de7-9edb-7c8bfc585944"
-horo: 1
+coordinate: "train · 7/descent · 8cab4a7a"
+contentUuid: "0c0bbf79-3ad4-5e2b-b5be-b472febf3484"
+diamondUuid: "9e3812db-c604-8597-971e-0a508feb39f4"
+uuid: "8cab4a7a-49dc-8f5a-891f-ad03a2b1bde5"
+horo: 7
 typography:
   partition: train
   bondDegree: 114
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3d1ee897-906f-8501-9999-d280ae46dbf7"
+  computationUuid: "159fd038-1f30-8493-8429-a27a7d9311b0"
   stages:
     - stage: path
       stageUuid: "a67248fb-3e0d-87f5-a3e2-ec84b3e1290e"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "13392687-7c2f-8146-be8b-ee858fb75212"
     - stage: horo
-      stageUuid: "133bea31-4716-8e9d-a202-d4116c78f458"
+      stageUuid: "e4f11e14-290c-863a-9464-cd910ae3b99b"
     - stage: seal
       stageUuid: "d3ee79bb-827b-8f01-a69d-14db001a86ad"
     - stage: uuid
-      stageUuid: "dd4e21d9-e108-8700-8f06-cb9756ea47b7"
+      stageUuid: "d9a3f228-9381-87e4-9f06-93b9d34c4009"
 version: 2
 ---
 # train — close the competency gap, off-gas the debt, climb the pay curve

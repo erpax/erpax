@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "question",
-    "uuid": "0eaf80c2-2d11-8388-bafa-e3dd8b4ca289",
+    "uuid": "aeb8e1b3-bd05-8ee6-a208-7f1a5c601b6e",
     "words": [
       "question"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about question — A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
-    "uuid": "03847305-d1e8-8df4-8737-e0110972fe7d",
+    "uuid": "b7fb2ec7-9eed-80ff-8d7d-a85da4c83946",
     "words": [
       "use",
       "when",

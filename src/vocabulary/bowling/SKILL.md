@@ -2,11 +2,11 @@
 name: bowling
 description: "Use when reasoning about bowling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bowling"
-coordinate: "vocabulary/bowling · 8/crest · 10b62970"
-contentUuid: "9d6e9578-463c-5c05-8cbf-ab92137abbec"
-diamondUuid: "421f8d21-fe3c-8836-8a75-6299d8bf3aa7"
-uuid: "10b62970-26bf-8e43-817b-eafadd119943"
-horo: 8
+coordinate: "vocabulary/bowling · 4/weave · e6c18c80"
+contentUuid: "d28630b2-0d7f-56c8-8805-6819de7ea1ae"
+diamondUuid: "c5a78b86-be18-802b-b627-09094155db54"
+uuid: "e6c18c80-c8e5-81c7-aca5-6fd0fc18c466"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aa35160a-c6ff-8fb7-80aa-8d4240faec05"
+  computationUuid: "20eb8ba0-73df-896e-9031-4556a66eb029"
   stages:
     - stage: path
       stageUuid: "0f4bf8fd-1d94-8098-9eae-dc9d2c8c9e06"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cf7215c9-e799-8434-9432-8ef2587aa466"
     - stage: horo
-      stageUuid: "f40405d3-5345-8f6d-b9b9-cc7d59665c0b"
+      stageUuid: "3e916523-7fae-8be1-a64a-7fd0ab0d08fa"
     - stage: seal
       stageUuid: "35fe83da-cb22-8688-af58-70262494f1a5"
     - stage: uuid
-      stageUuid: "94497a82-b9fe-8024-a1aa-e878425e2a37"
+      stageUuid: "714f9515-39ea-8115-b671-ba7d22a53b15"
 version: 2
 ---
 # bowling

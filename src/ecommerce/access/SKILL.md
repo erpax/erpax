@@ -2,11 +2,11 @@
 name: access
 description: "Use when reasoning about access — , and answer the access question; the field-level pair narrows it to particular fields; the role helpers are what they all ask."
 atomPath: "ecommerce/access"
-coordinate: "ecommerce/access · 6/6 · 828f2521"
-contentUuid: "aa905a62-0165-5197-874f-738631f92099"
-diamondUuid: "ae29c63d-3255-8221-8557-a1e17cdb63eb"
-uuid: "828f2521-3d6d-8eee-a833-548f6c9cbf46"
-horo: 6
+coordinate: "ecommerce/access · 9/unity · 6d8d01db"
+contentUuid: "1f7b6245-41b6-56bb-8013-6cd8c9b219dc"
+diamondUuid: "5cc6d6f8-90d6-8e09-9e6c-abba4cfa8c38"
+uuid: "6d8d01db-5239-835f-8b4e-b2d24af44214"
+horo: 9
 typography:
   partition: ecommerce
   bondDegree: 436
@@ -14,7 +14,7 @@ standards:
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "960dc453-b0e9-81c0-a96e-2cb21c3842fe"
+  computationUuid: "56961325-5c33-8dba-99f1-2744c8924d6e"
   stages:
     - stage: path
       stageUuid: "d374def4-c97f-88ab-86f4-1a4516b20db7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ac95d255-28eb-8747-9c5c-8a4f8ee74379"
     - stage: horo
-      stageUuid: "f2653b88-f342-8f7d-ae66-1a0174b93a7e"
+      stageUuid: "e1110713-e518-8dfd-9425-6952e30e9e37"
     - stage: seal
       stageUuid: "22a73c6e-e8b4-88b6-9481-3722beed901e"
     - stage: uuid
-      stageUuid: "84ce99a0-ee8f-8c55-911b-53eb842c7897"
+      stageUuid: "be3256b4-ec2b-8b5e-ad29-e367220064c4"
 version: 2
 ---
 # ecommerce/access — who may see a storefront record, decided by predicates rather than by a screen

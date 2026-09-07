@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "discount",
-    "uuid": "65d19f18-763b-8d64-a334-aaa6e3292fba",
+    "uuid": "80f697aa-ac88-8063-900b-5729d1da1170",
     "words": [
       "discount"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow.",
-    "uuid": "d14a2582-33ea-8d6c-8e4e-b15abf3ca858",
+    "uuid": "e31a4f81-61d2-81ee-9c15-7f3a9e9d0e47",
     "words": [
       "use",
       "when",

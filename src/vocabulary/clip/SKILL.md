@@ -2,11 +2,11 @@
 name: clip
 description: "Use when reasoning about clip — A short TV or radio program or a segment/part of a program."
 atomPath: "vocabulary/clip"
-coordinate: "vocabulary/clip · 7/descent · 4d4eda60"
-contentUuid: "ad40318a-6bc4-5c9f-bdd6-792fcd0fdd04"
-diamondUuid: "5a56a7f8-ea9a-8b2e-877f-65ddf7bf7560"
-uuid: "4d4eda60-386c-8eb1-b306-8affd01fe699"
-horo: 7
+coordinate: "vocabulary/clip · 4/weave · 60db38ac"
+contentUuid: "b28449ad-c5f9-5ab4-9527-c91bf903df70"
+diamondUuid: "6603cb91-ce45-8f9b-b27b-11c10d7335b4"
+uuid: "60db38ac-df92-832f-a417-8b2a36715607"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "698553df-9a63-8ca2-9988-784e578ce2e0"
+  computationUuid: "72bdfc1a-3ce5-83fe-aa0a-4dbb37faf608"
   stages:
     - stage: path
       stageUuid: "10a29e05-73fe-8440-ab52-ddb3fdfd399d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "318c069e-33be-83e1-9789-52cf55dc8ece"
     - stage: horo
-      stageUuid: "c57008d9-b010-8623-9d28-fe6a9fac68fb"
+      stageUuid: "d2356eaa-9a66-8407-839f-5debc7c805bc"
     - stage: seal
       stageUuid: "d31cf048-9a22-8a48-9b9b-7e92c6504201"
     - stage: uuid
-      stageUuid: "42010f69-14e5-838d-a118-49ff840d2a3c"
+      stageUuid: "56ca230d-0144-8765-9c87-1673a326f99f"
 version: 2
 ---
 # clip

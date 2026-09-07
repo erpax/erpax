@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "access",
-    "uuid": "4feb7072-8e38-82a4-9c87-36401aab96f7",
+    "uuid": "0e8f8d84-2485-8cea-9db1-c2249660e89c",
     "words": [
       "access"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the tenants collection's access control — who may read, create, update, or delete tenants.",
-    "uuid": "4d448254-ffb7-8310-965b-b5940cc40049",
+    "uuid": "1b36d6c7-390b-8ed9-be96-cb2ac16842c7",
     "words": [
       "use",
       "when",

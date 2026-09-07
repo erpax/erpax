@@ -2,18 +2,18 @@
 name: right
 description: "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access."
 atomPath: "vocabulary/audit/right"
-coordinate: "vocabulary/audit/right · 2/share · 9d8d340f"
-contentUuid: "d43ce207-a1f1-5568-9970-04c21a7e2540"
-diamondUuid: "f5ff7872-cb69-87b4-bb0d-5ca12bf914d8"
-uuid: "9d8d340f-f167-82e7-b9db-98ca65e09779"
-horo: 2
+coordinate: "vocabulary/audit/right · 8/crest · 8546aab0"
+contentUuid: "1b966cb7-c07f-5d34-83e9-79ff22c6c6e1"
+diamondUuid: "ec794996-69d1-830d-b7e4-3fce4191d208"
+uuid: "8546aab0-1725-8ce2-92a6-2ef999d89ce0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2f3c5689-d60c-8fcf-ab07-8edf508b5b50"
+  computationUuid: "9a4001f1-a512-8368-a879-a182a034c2da"
   stages:
     - stage: path
       stageUuid: "47656631-4074-8c8f-8594-06c6f43c98fc"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d9dd785f-c412-886f-8026-579c68cb21cf"
     - stage: horo
-      stageUuid: "75e98f81-f2e2-8bb0-8f5e-bfb682e226fb"
+      stageUuid: "155cca3b-00dd-8ec8-a53f-58d1b5f3055a"
     - stage: seal
       stageUuid: "0713c777-4d75-8018-a025-1d890a66ddc9"
     - stage: uuid
-      stageUuid: "12969be1-142e-839f-a3e6-0eab1459b522"
+      stageUuid: "3563dd38-755e-8ed8-a68d-c246c6f01a3e"
 version: 2
 ---
 # right

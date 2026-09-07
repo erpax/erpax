@@ -2,10 +2,10 @@
 name: reserve
 description: "Use when reasoning about reserve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reserve"
-coordinate: "vocabulary/reserve · 7/descent · 351158e3"
-contentUuid: "cd97318a-0cf3-57f1-ace3-71df55d411d5"
-diamondUuid: "bfd33d72-ca96-85ae-94a8-f4f72f0b46b4"
-uuid: "351158e3-cc5c-8087-bcbf-447be5db0c76"
+coordinate: "vocabulary/reserve · 7/descent · c9d6c3c8"
+contentUuid: "c5d52e3c-1327-5774-9477-60479b934909"
+diamondUuid: "d7b0064f-8d75-84cb-970b-4f6ea1dd70d4"
+uuid: "c9d6c3c8-3116-887c-8491-80df85140854"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "73a9e783-d2f7-8efc-87e7-c33c196fe688"
+  computationUuid: "248fab10-37ae-8b9f-b908-489685add60e"
   stages:
     - stage: path
       stageUuid: "c6555f65-0e2b-8ddc-9682-415f41995c55"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bc19a666-58ca-8ea1-b04c-d0513d4026d4"
     - stage: horo
-      stageUuid: "49b2a84d-f272-8203-94ca-6e97ad67144c"
+      stageUuid: "ccaf5f53-46d0-8abe-adef-e7eb8b888ab0"
     - stage: seal
       stageUuid: "ab464a8b-e617-8c8f-9fd9-902340cdde69"
     - stage: uuid
-      stageUuid: "0e15926a-ec75-8ab8-ac7f-558301774f21"
+      stageUuid: "c3183176-2a6e-8817-834e-20a0ca921b8c"
 version: 2
 ---
 # reserve

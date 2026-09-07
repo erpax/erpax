@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing ISO 27002 — Information security controls.",
-    "uuid": "65e9f8df-c4c0-8d98-aa88-0ce9d8a2affb",
+    "uuid": "7712f352-d229-80aa-8834-a7ea96d3cc76",
     "words": [
       "use",
       "when",

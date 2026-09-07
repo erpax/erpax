@@ -2,11 +2,11 @@
 name: pets
 description: "Use when reasoning about pets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pets"
-coordinate: "vocabulary/pets · 8/crest · d0c6b61b"
-contentUuid: "531cdf5a-22bd-5774-8448-7893199fb6b3"
-diamondUuid: "85be3c76-192f-81e3-8eaf-43a731278a34"
-uuid: "d0c6b61b-01de-8069-b69f-bed6492da4a1"
-horo: 8
+coordinate: "vocabulary/pets · 5/round · dfbc9073"
+contentUuid: "1402449c-3a1a-564b-94aa-f10b2d947ef4"
+diamondUuid: "76391f88-00fa-8af6-856a-5721642b6d20"
+uuid: "dfbc9073-c20b-8e05-b4e7-f362ebdb5df0"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dc190828-5823-87e8-851a-56a44d581611"
+  computationUuid: "7c3d597b-00f1-86de-890f-7bc3757a0940"
   stages:
     - stage: path
       stageUuid: "a20cf696-7574-84f1-b91d-c1684320d101"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d5f4c9df-b7b0-820c-af36-0f2c98df8b0b"
     - stage: horo
-      stageUuid: "1179aef5-b5d9-8e5c-857c-bdd6a56bc0a4"
+      stageUuid: "246226c7-2174-8b22-8315-7978512407c7"
     - stage: seal
       stageUuid: "955d7ae2-22f1-8032-91e4-a67f7c32c3d9"
     - stage: uuid
-      stageUuid: "1f0d9bf2-be6e-8e75-8cfe-2edc53333f99"
+      stageUuid: "1cd6eb59-9ea2-8552-89c4-397fa4106de0"
 version: 2
 ---
 # pets

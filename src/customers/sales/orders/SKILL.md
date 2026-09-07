@@ -2,11 +2,11 @@
 name: orders
 description: "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P)."
 atomPath: "customers/sales/orders"
-coordinate: "customers/sales/orders · 2/share · 7a809093"
-contentUuid: "e01d2dc8-6589-5665-a268-7684c1078ce4"
-diamondUuid: "4e8f0bfb-2596-858c-9863-e629c84a149a"
-uuid: "7a809093-cab9-81f6-882b-90799069f924"
-horo: 2
+coordinate: "customers/sales/orders · 7/descent · 3fa33bef"
+contentUuid: "81ee0725-c507-592f-8e7e-ddd94f819fa8"
+diamondUuid: "8c18d929-56c0-8acf-9c3c-b2c927138dda"
+uuid: "3fa33bef-a922-8987-87be-a37b4dc70aca"
+horo: 7
 typography:
   partition: customers
   bondDegree: 96
@@ -38,7 +38,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "8b595221-c4b1-8331-8b28-5b1ae026d97b"
+  computationUuid: "8db1df4d-ad5e-85c9-80f5-55dbd04adae8"
   stages:
     - stage: path
       stageUuid: "5c34a03f-a43b-89db-9e2d-711268cc5a2b"
@@ -49,11 +49,11 @@ signatures:
     - stage: links
       stageUuid: "31265c36-810c-88c8-8c26-becd09f1595f"
     - stage: horo
-      stageUuid: "ff476e45-5007-8030-9dd9-6827c5d16ec2"
+      stageUuid: "1eeea0be-91e1-85e1-b1f2-0319ff0d4333"
     - stage: seal
       stageUuid: "d26ecb74-da97-8151-b843-1839acad68d9"
     - stage: uuid
-      stageUuid: "b8635eb6-e298-8753-b9db-5fbd289299ee"
+      stageUuid: "bc97cc77-8bd4-8626-9d2b-e7ca449a9c09"
 version: 2
 ---
 # sales-orders

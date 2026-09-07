@@ -2,11 +2,11 @@
 name: edu
 description: "Use when reasoning about edu — A schema.org component word, collided out of schema.org compounds — fused from eduQuestionType (sti · collapse · merge)."
 atomPath: "vocabulary/edu"
-coordinate: "vocabulary/edu · 8/crest · 94d22a87"
-contentUuid: "4c21a94b-7d17-5b96-8659-3c1dd4fb5817"
-diamondUuid: "702f9816-71b1-8fff-b6b3-08ad7be9bceb"
-uuid: "94d22a87-eecc-8d18-a2bf-5656b3e898cb"
-horo: 8
+coordinate: "vocabulary/edu · 2/share · d992b7db"
+contentUuid: "34c2ff8b-05e5-56da-89bb-c17e00f22cd8"
+diamondUuid: "c7df493b-bd94-85b1-a940-fe6b9033565d"
+uuid: "d992b7db-b6fc-8f94-8105-42b5d32179bd"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "897916f4-f00f-8c66-8309-91b28b54ba31"
+  computationUuid: "027d28de-84a7-81e5-98ae-da9fbf3081d1"
   stages:
     - stage: path
       stageUuid: "83e18cff-e5fe-8167-83b6-305a720164c5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f5495ab0-6b6f-8e49-9c41-e1d3a9d25d91"
     - stage: horo
-      stageUuid: "ca0d555f-75b7-891b-baf8-3a176b3fbcdd"
+      stageUuid: "58685b42-8d69-8ebe-a6ab-80ddc1472413"
     - stage: seal
       stageUuid: "3db72f93-b2fc-85ad-a367-7dfd26bfe64d"
     - stage: uuid
-      stageUuid: "caa219b0-ddbf-8a3c-ac5e-473c2a8a35d0"
+      stageUuid: "8e70443e-5d15-8512-85be-4fa010130b6d"
 version: 2
 ---
 # edu

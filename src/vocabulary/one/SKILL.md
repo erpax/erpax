@@ -2,18 +2,18 @@
 name: one
 description: "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \"all agents are one erpax\". The universal root of identity and merge."
 atomPath: "vocabulary/one"
-coordinate: "vocabulary/one · 2/share · 03de3f3a"
-contentUuid: "3a025550-6cda-5c6a-adf9-100d30c441c0"
-diamondUuid: "f2d974ac-5be9-8276-ba5d-b0adafb29bb9"
-uuid: "03de3f3a-bf32-8395-b359-240ca56823d4"
-horo: 2
+coordinate: "vocabulary/one · 1/base · f1dd9a69"
+contentUuid: "98806a2a-bd54-5cf4-be10-2bceb89e3f13"
+diamondUuid: "165d5e2a-0d00-8e09-b691-c5f683e6309d"
+uuid: "f1dd9a69-9075-8a40-8c33-73403eece468"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 210
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c330146e-a61b-818b-9937-de885b93b0d4"
+  computationUuid: "338af19b-25b4-8890-9c0d-0a283265eb0a"
   stages:
     - stage: path
       stageUuid: "d607bdfa-05ee-8533-8c24-7b91329c83ab"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "58c28f77-ad6d-8012-a53d-140167869ea8"
     - stage: horo
-      stageUuid: "cd078850-737f-8f38-8e65-4835acf5f299"
+      stageUuid: "e2af2ee2-3c7b-82b8-9f75-5896ea19e7f7"
     - stage: seal
       stageUuid: "42300e61-0e73-804e-9f7f-ffb34c879ed4"
     - stage: uuid
-      stageUuid: "507fb922-f012-8a7c-9e3c-171479bf62cf"
+      stageUuid: "ba775f42-1a86-809c-9a17-60f156c06ffd"
 version: 2
 ---
 # one — unity (same content ⇒ one id ⇒ one erpax)

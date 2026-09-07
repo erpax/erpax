@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "greater",
-    "uuid": "4db86e6f-6a2c-8185-999a-50b63267de6f",
+    "uuid": "6716bcb3-9de7-82fc-9fbf-0734820ddbb3",
     "words": [
       "greater"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about greater — This ordering relation for qualitative values indicates that the subject is greater than the object.",
-    "uuid": "d1cb1257-e379-8aa8-97b6-6386992a5b0c",
+    "uuid": "e3e957ac-858d-8914-9a33-cd8910683aa7",
     "words": [
       "use",
       "when",

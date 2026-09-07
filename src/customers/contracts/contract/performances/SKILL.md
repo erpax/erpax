@@ -2,10 +2,10 @@
 name: performances
 description: "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection."
 atomPath: "customers/contracts/contract/performances"
-coordinate: "customers/contracts/contract/performances · 4/weave · 32330d30"
-contentUuid: "d1a01b95-4f4b-514d-95ee-7fa01eb315fc"
-diamondUuid: "d13619a8-5158-8c43-b300-3024e4c1f5a4"
-uuid: "32330d30-9e36-8854-a86f-6c0ed5569c34"
+coordinate: "customers/contracts/contract/performances · 4/weave · 556b2ce6"
+contentUuid: "3e2e69b2-6566-50e7-9f91-411317cfa534"
+diamondUuid: "bae4bcb3-05bd-8fd0-a877-9401e78c648d"
+uuid: "556b2ce6-20e5-8e9d-8faf-52661c37e8df"
 horo: 4
 typography:
   partition: customers
@@ -33,7 +33,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c5e41574-3db9-8e6a-bf74-e1977bc5d5a7"
+  computationUuid: "4bf0a105-5d6f-8c0f-9f79-b17ad4703255"
   stages:
     - stage: path
       stageUuid: "cb42c745-6dbc-87f3-aac0-82979dadd14c"
@@ -44,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "e3fa67ff-7cce-8031-a1a9-5f62cab2ed35"
     - stage: horo
-      stageUuid: "eece97da-7887-84f1-96b8-72aedd4e3778"
+      stageUuid: "87452f4c-fd9b-8833-96c4-3e5619bacd0b"
     - stage: seal
       stageUuid: "0f31a180-1b87-878a-b48c-0d791e459c3d"
     - stage: uuid
-      stageUuid: "35e76799-d7c3-8fd1-a92b-130bc0abc2df"
+      stageUuid: "0a2f2ed6-87a0-81f0-8570-bae111bb2400"
 version: 2
 ---
 # contract-performance

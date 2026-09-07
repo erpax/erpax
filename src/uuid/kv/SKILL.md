@@ -2,11 +2,11 @@
 name: kv
 description: "Use when reasoning about kv — addresses the binding itself, lifts a plain map into , and finds the value for a key by address rather than by string."
 atomPath: "uuid/kv"
-coordinate: "uuid/kv · 1/base · 41b3b047"
-contentUuid: "70f15828-275c-5ab9-836b-18754d29f58e"
-diamondUuid: "a7a8fba4-a679-8721-b8e1-1b3d25744da9"
-uuid: "41b3b047-e638-8f0b-b7f9-f859e9cf968c"
-horo: 1
+coordinate: "uuid/kv · 4/weave · b7430dd2"
+contentUuid: "b03787fa-8513-5312-b041-02b7bfab182e"
+diamondUuid: "cddd65cf-e754-8f0f-90ab-6803d7283b30"
+uuid: "b7430dd2-5be7-8d41-a444-bff89b93b246"
+horo: 4
 typography:
   partition: uuid
   bondDegree: 6
@@ -16,7 +16,7 @@ standards:
   - RFC 9562 §5.8 uuidv8 (both sides)
 bindings: []
 signatures:
-  computationUuid: "f4f6190c-a1a7-8f63-b6b2-17482485a24a"
+  computationUuid: "a50fa7be-7c9a-8476-83b3-9c950b77a1a2"
   stages:
     - stage: path
       stageUuid: "3a38938b-a1f6-8af2-8e3b-1ad201702ea9"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "d9d2d12d-1175-86df-bd38-c740a427c2c5"
     - stage: horo
-      stageUuid: "a1807f7a-dc37-89b8-baf8-a5ec1fcfe6dd"
+      stageUuid: "0461de17-8ce8-80bd-ae42-49b52309777b"
     - stage: seal
       stageUuid: "e6c8b0d2-b822-8b1b-b683-431b4ee91e98"
     - stage: uuid
-      stageUuid: "e101ab45-63fe-87aa-9cf6-942161bb2ccf"
+      stageUuid: "abfba206-203d-86ca-80f8-2a3f72bce5e7"
 version: 2
 ---
 # uuid/kv — a key-value pair is uuid → uuid, so a mapping is addressable like anything else

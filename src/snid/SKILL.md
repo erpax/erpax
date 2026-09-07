@@ -2,11 +2,11 @@
 name: snid
 description: "Use when reasoning about snid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: snid
-coordinate: "snid · 5/round · b859be9f"
-contentUuid: "4410b18d-f059-5626-80a7-6a9c1373da0d"
-diamondUuid: "85640141-c45c-8523-8733-f6fd9485c7ee"
-uuid: "b859be9f-70b4-895b-8999-ff1896f8a529"
-horo: 5
+coordinate: "snid · 1/base · 0132c69d"
+contentUuid: "a910f620-51b8-5607-ad1a-1f21c243f13f"
+diamondUuid: "25f63337-8459-8b99-b4ed-ba2da997ba7a"
+uuid: "0132c69d-7f5a-8a29-81b7-c65f731690ca"
+horo: 1
 typography:
   partition: snid
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6508a508-5f42-8a32-8654-e725758ce3b6"
+  computationUuid: "68b305a7-daa2-8fe3-bf63-8c0148598062"
   stages:
     - stage: path
       stageUuid: "c00656d5-ad15-839e-bd61-8252bfd1e461"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a6f314d0-e52e-81bb-87f8-45066ead450a"
     - stage: horo
-      stageUuid: "e8097d7f-c49d-8d2d-ac5f-e3f0586249c8"
+      stageUuid: "444f0de8-46cd-8f43-b27f-814c3e6e787c"
     - stage: seal
       stageUuid: "a1cd4509-d6b1-835d-ad6e-4cddc87cc15c"
     - stage: uuid
-      stageUuid: "21743bcf-5ca3-8f45-9c3d-bfd4ad67c115"
+      stageUuid: "3d6f2459-f1da-8bc0-a454-3d0b4581f21a"
 version: 2
 ---
 # snid

@@ -2,11 +2,11 @@
 name: sequential
 description: "Use when reasoning about sequential as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sequential
-coordinate: "sequential · 4/weave · fcb3590b"
-contentUuid: "f7f5d580-88ef-5878-9943-b4554c855cc2"
-diamondUuid: "ca56e895-3bc5-88c3-b016-d7cfbbc15478"
-uuid: "fcb3590b-58a9-8d88-9cb7-af5612b3961e"
-horo: 4
+coordinate: "sequential · 1/base · c81f0d29"
+contentUuid: "bf8c2007-5b55-5729-b8cb-26371874416d"
+diamondUuid: "4fef62fa-0443-837d-814d-c6464163061d"
+uuid: "c81f0d29-15d9-84d0-9f2a-bf366764682e"
+horo: 1
 typography:
   partition: sequential
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c88b821e-5365-8919-a072-34d2ffa01af1"
+  computationUuid: "096944af-3cf1-880f-8760-dc6ae03cfa6c"
   stages:
     - stage: path
       stageUuid: "6f1b3dbc-6490-805b-b09b-74853cd37adb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5bcaee1c-64b7-8692-8a68-cffcca72c9b4"
     - stage: horo
-      stageUuid: "46ad254a-311c-8bc0-8f2d-9db94f62543d"
+      stageUuid: "a5f4ded4-04c7-82f0-9141-814f58248896"
     - stage: seal
       stageUuid: "5d2ff07c-c36c-8784-be07-99e816379eb5"
     - stage: uuid
-      stageUuid: "f6076ce2-1672-847d-81a1-50ec89edee87"
+      stageUuid: "f15a3280-a3f3-8c2a-bab3-f9518adfb360"
 version: 2
 ---
 # sequential

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hardware",
-    "uuid": "035f5012-7306-8773-ae86-ed4878e5067a",
+    "uuid": "82bc767c-5beb-801e-ba0f-c9153b8469e9",
     "words": [
       "hardware"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hardware as a part of computer — vocabulary pivot to @/hardware; nested not duplicated.",
-    "uuid": "61da192d-cf42-83e9-9633-5749e6b37585",
+    "uuid": "621511eb-58ec-8926-9d45-8420a7c0dd56",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: country
 description: "Use when reasoning about country — The control is the ordinary Radix combobox (blocks/form/select): a whose only accessible name is the bound to its ."
 atomPath: "blocks/form/country"
-coordinate: "blocks/form/country · 5/round · 51314d5b"
-contentUuid: "67561bea-25e3-55f9-9661-cd729ad1ad7a"
-diamondUuid: "4035ff4c-d84f-8d90-a6da-ed19ec9b4440"
-uuid: "51314d5b-d347-8ec9-88c4-1aca69660184"
-horo: 5
+coordinate: "blocks/form/country · 7/descent · f317d6ec"
+contentUuid: "ff410735-776d-5fc0-b6f3-c243166c5758"
+diamondUuid: "2d74f45c-75a0-8c53-90ed-bf1d09e06b4d"
+uuid: "f317d6ec-2e3a-8587-88ae-381708f5f6ec"
+horo: 7
 typography:
   partition: blocks
   bondDegree: 90
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9126d2f1-9e69-8065-8b08-1f16ffa0aed3"
+  computationUuid: "9f0b30a3-148b-8d49-b315-74b8fff872ac"
   stages:
     - stage: path
       stageUuid: "680ab7ac-1c6e-8428-96c0-a3e4c8dfa4ef"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ffc8b45a-5d34-8e5f-9747-0accb9d2afd4"
     - stage: horo
-      stageUuid: "9cb5c5e3-4ef9-8998-bfeb-3e0ecfbbc100"
+      stageUuid: "0f32c9d9-1760-885f-9e48-d4d1a73443b0"
     - stage: seal
       stageUuid: "0321e80d-9971-8b79-bbe7-acb550f72cb8"
     - stage: uuid
-      stageUuid: "6aa337d7-5399-8594-87cd-6e7ff0638788"
+      stageUuid: "a995c02b-db38-839f-b9f5-21f65c517f33"
 version: 2
 ---
 # blocks/form/country — 245 codes that must each be a real ISO 3166-1 alpha-2

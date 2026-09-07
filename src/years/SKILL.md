@@ -2,11 +2,11 @@
 name: years
 description: "Use when reasoning about years as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: years
-coordinate: "years · 4/weave · ccf2c840"
-contentUuid: "e23d0277-e9b9-521d-9ae3-6bc646271e41"
-diamondUuid: "921b12f9-e11e-8f21-8a8e-6a0c7f1d1b0a"
-uuid: "ccf2c840-e39b-85fb-8aad-981ae8169972"
-horo: 4
+coordinate: "years · 2/share · 313bc775"
+contentUuid: "c47a763e-1a14-5d68-9e5a-f9b772ad69c1"
+diamondUuid: "a5896e08-84be-89f2-880e-eed57725fe72"
+uuid: "313bc775-f093-8e26-94ec-9ed2b1edd288"
+horo: 2
 typography:
   partition: years
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dc4a68a7-88f4-8b48-89c6-cc207e235060"
+  computationUuid: "dadbbaf6-d1eb-8fa5-92db-be04807cdce9"
   stages:
     - stage: path
       stageUuid: "7b138a3e-016e-8d6f-b225-29ec3709bf6b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42cd3f79-180d-89b8-94af-11ef0cafd4c8"
     - stage: horo
-      stageUuid: "308040b1-8534-8ee9-93ef-4312c71f1ae9"
+      stageUuid: "b087898b-9729-8b80-8861-6d0c70fd49af"
     - stage: seal
       stageUuid: "d0bdca1a-9b86-8fb4-9225-d08c9a6743cc"
     - stage: uuid
-      stageUuid: "45eed3a7-1dbc-8561-95df-303bce728616"
+      stageUuid: "91cb2557-d458-8684-bf29-6b9c832540cc"
 version: 2
 ---
 # years

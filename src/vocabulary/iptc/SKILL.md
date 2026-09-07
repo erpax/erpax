@@ -2,11 +2,11 @@
 name: iptc
 description: "Use when reasoning about iptc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/iptc"
-coordinate: "vocabulary/iptc · 2/share · a90b029d"
-contentUuid: "034f5be8-4774-51f7-be03-2c80f14885cf"
-diamondUuid: "10dbe30f-139f-8132-af8b-680eb9c1e774"
-uuid: "a90b029d-003c-8610-bce4-ee312af63621"
-horo: 2
+coordinate: "vocabulary/iptc · 1/base · 662deda7"
+contentUuid: "7416e17b-4f2f-59f7-9303-317796eb5157"
+diamondUuid: "d8deeeab-f9fd-805c-ad92-bcbea5483504"
+uuid: "662deda7-89fe-8aa8-a2ef-94c10c0691a3"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6bb46258-1863-8987-9895-8ab822f7fce8"
+  computationUuid: "203aab7a-dde5-86ed-8296-7ecc1543cc10"
   stages:
     - stage: path
       stageUuid: "28f2d866-2d65-8911-b374-0cb626ef395d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d0aa9bb9-4e2d-8729-9a0e-3cd907f2c3fb"
     - stage: horo
-      stageUuid: "eec3906a-ad52-8907-9144-9c7592d7cbbe"
+      stageUuid: "6dcc9223-fadc-8421-abaa-85829ad98c96"
     - stage: seal
       stageUuid: "6f70b36e-bba2-89c0-b04f-b4d1fdee05e0"
     - stage: uuid
-      stageUuid: "8aa36c42-cf52-80c7-bb59-453f3671c941"
+      stageUuid: "5a8e2ab9-5d82-823b-b960-ec0d2a89ccd5"
 version: 2
 ---
 # iptc

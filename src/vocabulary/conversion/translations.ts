@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conversion",
-    "uuid": "23554c3b-66dc-8b3a-baff-b673cbd3a24c",
+    "uuid": "0a5d32cf-f229-8b1c-8489-fcba6d372b60",
     "words": [
       "conversion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic.",
-    "uuid": "5a844060-6a96-8bd6-9604-0db6b6a39c7a",
+    "uuid": "b0ae9f95-f05e-8b0d-bed2-d4d957b19d4c",
     "words": [
       "use",
       "when",

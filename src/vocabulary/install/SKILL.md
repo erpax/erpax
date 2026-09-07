@@ -2,11 +2,11 @@
 name: install
 description: "Use when reasoning about install as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/install"
-coordinate: "vocabulary/install · 5/round · 09d8432e"
-contentUuid: "07bff7dd-a0e9-5de8-85e3-3041b88d0a66"
-diamondUuid: "485ec434-0554-87b2-aced-90b74ab2b99d"
-uuid: "09d8432e-a210-80c3-909c-5401168a8cdd"
-horo: 5
+coordinate: "vocabulary/install · 7/descent · 910da73d"
+contentUuid: "77648ad9-668f-50a7-b583-f9322acd7c33"
+diamondUuid: "d2cc05a5-5beb-81c2-a4b6-4ee5fb3c0468"
+uuid: "910da73d-03a6-8bf9-ae1c-79ca2f673981"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c6fac918-0ecd-8015-b115-a887e6993478"
+  computationUuid: "8e750e95-9598-85f3-a0e6-b50a6e7d545d"
   stages:
     - stage: path
       stageUuid: "b9af3630-5d30-8cb9-9391-8f23a1f1aea5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ed3eab7a-628a-8c79-baf1-3c9b9eedee93"
     - stage: horo
-      stageUuid: "fd5bc0e3-8d1d-843e-9ee1-2ed71753bc28"
+      stageUuid: "d1d71a4d-48b9-8fe0-ba55-642ef9df2f40"
     - stage: seal
       stageUuid: "8b843a8d-c4df-8ecf-9b08-728558245de6"
     - stage: uuid
-      stageUuid: "40c573fd-57eb-81c4-a772-7cca26443f61"
+      stageUuid: "1cee298e-21b8-882a-b1d8-a7d8fbeb3850"
 version: 2
 ---
 # install

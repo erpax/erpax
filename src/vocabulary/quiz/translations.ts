@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quiz",
-    "uuid": "9535bf32-ab90-8cd9-b753-6139f5a61ee3",
+    "uuid": "a6b00b46-a56c-8f24-8d5c-b6233848dd8c",
     "words": [
       "quiz"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quiz — Quiz: A test of knowledge, skills and abilities.",
-    "uuid": "0cbf2050-e29d-87ff-be86-9385bb05d14f",
+    "uuid": "d5f0315d-599f-8f53-8ee0-05ce61944d6f",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scorecards",
-    "uuid": "51ec19af-6975-8749-8fae-77f00fd8de71",
+    "uuid": "7eaf5869-e9b4-86e3-8e04-9b767729697a",
     "words": [
       "scorecards"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node.",
-    "uuid": "b0f594b2-695f-84e6-886c-5c12cbfbde97",
+    "uuid": "e8b9c0cc-8933-883b-8e7b-36fd3a30f89a",
     "words": [
       "use",
       "when",

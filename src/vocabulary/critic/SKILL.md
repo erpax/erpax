@@ -2,11 +2,11 @@
 name: critic
 description: "Use when reasoning about critic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/critic"
-coordinate: "vocabulary/critic · 1/base · 6867f3af"
-contentUuid: "bc3d5145-b479-5afe-a03b-51c9020c7dba"
-diamondUuid: "8d81a68d-a71a-837b-b8d9-7ccb8b9929e4"
-uuid: "6867f3af-dd03-807e-bc28-89d79f08a030"
-horo: 1
+coordinate: "vocabulary/critic · 5/round · 76edf0db"
+contentUuid: "3ab034c1-8836-534c-8b63-2845a56131cb"
+diamondUuid: "f55dea90-c992-8cd5-9382-7587d700b556"
+uuid: "76edf0db-4cab-8e44-afd1-8b54176f3906"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "af9519e3-a070-81e2-bcac-5b0d65ce0b35"
+  computationUuid: "ce98a9a3-76f0-8319-ac60-ec232e1f84da"
   stages:
     - stage: path
       stageUuid: "b7121254-5cd2-8207-bf1d-2ff301b0ca16"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f35ee154-5a39-857c-969a-e89f7e639a57"
     - stage: horo
-      stageUuid: "14c6b808-cf0e-8ef0-b2f3-63c1458ee09a"
+      stageUuid: "807008a0-c738-80c3-949c-42cfe138c6ec"
     - stage: seal
       stageUuid: "a1481ad5-a2ce-8f69-8fa6-1ecfd5ea37a6"
     - stage: uuid
-      stageUuid: "baa999c4-6f5a-8631-8900-ad294e966a35"
+      stageUuid: "6df65b72-b8f7-831a-96d7-0c9737085527"
 version: 2
 ---
 # critic

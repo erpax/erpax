@@ -2,10 +2,10 @@
 name: speed
 description: "Use when reasoning about speed — The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regu"
 atomPath: speed
-coordinate: "speed · 5/round · b5789c61"
-contentUuid: "a3009c2d-9461-587a-a755-038b4a792493"
-diamondUuid: "1b286755-9663-8098-a6ef-de3f3a85689e"
-uuid: "b5789c61-83fe-80e7-b254-455e5673dc6f"
+coordinate: "speed · 5/round · 6e481bfc"
+contentUuid: "2b2933ab-45b0-5272-9540-71b32c6005d3"
+diamondUuid: "12a2451b-2630-8398-9c90-5e8f73527a0b"
+uuid: "6e481bfc-d091-8180-82e6-e5adc5bdabb7"
 horo: 5
 typography:
   partition: speed
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "55d5b4d9-a484-81e9-8dcd-bfca971dba3f"
+  computationUuid: "ac61a5f7-d2b0-8066-a086-34391f7b0d79"
   stages:
     - stage: path
       stageUuid: "2c510ab9-45f5-8bdf-8745-bae6bf412fe1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "86486c61-7774-8ff1-a9c7-3eb2ca715b22"
     - stage: horo
-      stageUuid: "7e620cd2-4aa4-8dd3-90bc-c400d02a158e"
+      stageUuid: "c5d2ea1f-2fd9-8c09-be96-89dc708df4a8"
     - stage: seal
       stageUuid: "76baadff-edf4-8368-aa7b-39d96649ba64"
     - stage: uuid
-      stageUuid: "6e2242a3-4cb9-8611-87a0-58ba796a5d0f"
+      stageUuid: "70fa654d-7bcc-84e5-a76d-a70ef19c17ab"
 version: 2
 ---
 # speed

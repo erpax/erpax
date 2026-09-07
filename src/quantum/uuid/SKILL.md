@@ -2,11 +2,11 @@
 name: uuid
 description: "Use when reasoning about the content-uuid in the quantum frame — the 128-bit address is the collapse of content (a sha-256 measurement of the infinite stream into one settled point); it fuses identity, capability, schema, and a multi-modal projection (color plus sound), and it is the entanglement key that binds the whole corpus into one."
 atomPath: "quantum/uuid"
-coordinate: "quantum/uuid · 8/crest · 2f2c94c4"
-contentUuid: "f9fb1d4d-c974-5f4c-85c4-25c7cd0251c8"
-diamondUuid: "583ab28a-7c93-89f2-aa34-7c85f0c72586"
-uuid: "2f2c94c4-6c70-899b-9ae3-0d6091c59e16"
-horo: 8
+coordinate: "quantum/uuid · 7/descent · 8832a37b"
+contentUuid: "63b2d6cd-f46a-5974-883f-cb588d9c4c3e"
+diamondUuid: "d0c6b953-d494-8f08-ba5d-efe9f3853a1c"
+uuid: "8832a37b-06b4-875a-baae-dfd8cadfef6a"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 825
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "b6f13f32-6094-892a-9427-dd78ab27ddd5"
+  computationUuid: "d96ce0fb-4d49-8783-85ad-db2a6b0eda24"
   stages:
     - stage: path
       stageUuid: "f07af087-f161-8df7-83aa-761b91b668bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1418095e-e96e-8de4-8a0a-f2cc9c0f510f"
     - stage: horo
-      stageUuid: "dec54ea6-5bf5-8f4f-9b07-12c68ee7c970"
+      stageUuid: "d0c5e994-8c13-82c9-8b55-d4d369fc9203"
     - stage: seal
       stageUuid: "a7b816c3-9b29-8f74-8bd1-8a2f1d97cecc"
     - stage: uuid
-      stageUuid: "cbaf104e-59bf-8bc8-af56-1d2f24711498"
+      stageUuid: "2763def2-5fe9-8a66-b83e-266c39ec5f60"
 quantum:
   superposition:
     - access
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "b6f13f32-6094-892a-9427-dd78ab27ddd5"
-    contentUuid: "f9fb1d4d-c974-5f4c-85c4-25c7cd0251c8"
+    computationUuid: "d96ce0fb-4d49-8783-85ad-db2a6b0eda24"
+    contentUuid: "63b2d6cd-f46a-5974-883f-cb588d9c4c3e"
 version: 2
 ---
 # quantum/uuid — the collapse that is the address
@@ -87,4 +87,4 @@ It is *at all quantum scales* because the address is [[fractal]]: the identical 
 
 @see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · [[finality]] · [[signal]] · [[realtime]] · [[memory]] · [[generate]] · [[snapshot]] · [[akashic]] · [[fractal]] · [[holographic]] · [[confirm]] · [[payload]] · [[seal]]
 
-<sub>content-uuid `f9fb1d4d-c974-5f4c-85c4-25c7cd0251c8` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `63b2d6cd-f46a-5974-883f-cb588d9c4c3e` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

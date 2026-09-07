@@ -2,11 +2,11 @@
 name: gtin8
 description: "Use when reasoning about gtin8 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gtin8"
-coordinate: "vocabulary/gtin8 · 2/share · d33c86cb"
-contentUuid: "aa8cd258-281b-5a43-a84f-aebfb72e381b"
-diamondUuid: "9453664f-de77-88c6-ac73-60b2d046b1d1"
-uuid: "d33c86cb-511a-8cdf-a8a3-609766e7a10b"
-horo: 2
+coordinate: "vocabulary/gtin8 · 1/base · c2700b99"
+contentUuid: "54c07732-2c3b-5e03-a33e-541bc6f2f779"
+diamondUuid: "8dba4135-93a9-88fb-b1f7-64195133901f"
+uuid: "c2700b99-8f9b-8271-b111-6ea41500a521"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8c26b31b-4b8a-8df1-967a-92849958f586"
+  computationUuid: "3a39105c-13ae-8f49-baea-94b6551dc1de"
   stages:
     - stage: path
       stageUuid: "240eecd4-b664-8a5a-88e6-bf8c8d9c683d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8e845d28-f324-8088-9ec6-9b4d57dc3ad7"
     - stage: horo
-      stageUuid: "ef8baf4c-f1d3-8024-bc10-4e01f689dbd4"
+      stageUuid: "f2c37458-96a7-8fb3-86f7-1cd6b6f8ccda"
     - stage: seal
       stageUuid: "00bcd4a5-c285-84d2-b9dc-bbf2decf0b50"
     - stage: uuid
-      stageUuid: "c4440c73-985a-8f9f-baf6-29db2a079b54"
+      stageUuid: "a0c91038-3dca-8bea-aadc-26e84d99a875"
 version: 2
 ---
 # gtin8

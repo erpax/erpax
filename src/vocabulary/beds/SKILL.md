@@ -2,11 +2,11 @@
 name: beds
 description: "Use when reasoning about beds as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/beds"
-coordinate: "vocabulary/beds · 2/share · a7389c58"
-contentUuid: "26a5c384-dfd4-56c0-be13-1d8ce6ea8e60"
-diamondUuid: "a88b4942-366c-85d0-b07f-61df7aa894bd"
-uuid: "a7389c58-5e63-8ea2-bd35-b592a2270c67"
-horo: 2
+coordinate: "vocabulary/beds · 8/crest · 515281b6"
+contentUuid: "16189daf-8abe-5e5f-adde-f0bf67a59783"
+diamondUuid: "4654fee0-a95d-83d6-9936-b60b5bac0fb1"
+uuid: "515281b6-c25b-879a-ad46-0bac80a7883c"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ed16818a-07c4-858d-b203-d44ada139dae"
+  computationUuid: "63cd5ded-3a43-8409-a166-bef7f38866bc"
   stages:
     - stage: path
       stageUuid: "e68914f7-a4dd-82f0-8fab-d95d973a6b0b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b8d8474-89e8-8d0a-b628-6e73c354b2fa"
     - stage: horo
-      stageUuid: "489f8e14-235c-815f-945a-77be5e14975e"
+      stageUuid: "9a66912b-c887-8db8-b17a-8fa1579bbf95"
     - stage: seal
       stageUuid: "deb9750c-8690-815d-af31-dcd348f7c7a2"
     - stage: uuid
-      stageUuid: "5f7fb8c4-8ff1-8ff7-8c2c-a9246ec63daf"
+      stageUuid: "62910be8-8566-843f-ac6b-93982860c0e3"
 version: 2
 ---
 # beds

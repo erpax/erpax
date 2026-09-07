@@ -2,11 +2,11 @@
 name: archival
 description: "Use when pinning tenant content to long-term decentralized storage (IPFS, Arweave, Filecoin, R2-glacier) for regulatory long-retention rules — banks 10y, gov 30y, healthcare 50y, archives unlimited — pinning to every listed backend for defense-in-depth and verifying or recovering by receipt."
 atomPath: archival
-coordinate: "archival · 2/share · 2f505cae"
-contentUuid: "99e72c0a-48a1-5d81-bf77-ca435a05569a"
-diamondUuid: "0412ec4a-69df-8892-b2a6-16d3b5442ca0"
-uuid: "2f505cae-550d-84f0-9c7d-50fb51811fb5"
-horo: 2
+coordinate: "archival · 4/weave · 8d69c869"
+contentUuid: "3dbe7fff-646b-5ead-abf1-fb49980f95c3"
+diamondUuid: "681f05e3-fa47-8833-a910-9bc9cc667e25"
+uuid: "8d69c869-2295-8e46-9a8b-47424d173161"
+horo: 4
 typography:
   partition: archival
   bondDegree: 24
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "553ed6d5-e4cb-8cee-b0af-fa4225087965"
+  computationUuid: "0d29bef4-3bf1-83d3-a65b-63cd3241a03c"
   stages:
     - stage: path
       stageUuid: "d3d18419-2856-8d1d-be61-c116e67f2795"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "f0cd27dc-0269-802d-bf19-dbc015f56944"
     - stage: horo
-      stageUuid: "2a1ffc31-3599-8f8a-8d1b-91650f64fa69"
+      stageUuid: "a55e32b9-e2e0-8f0a-84c4-fc9814efcea7"
     - stage: seal
       stageUuid: "6cb5ad34-44ce-8321-aa0d-86c1e70a252c"
     - stage: uuid
-      stageUuid: "f8bd7c0c-28cc-8e1d-90bc-ebf7a22f4251"
+      stageUuid: "1511a85c-926c-8469-b162-45e67df4ec22"
 version: 2
 ---
 # archival — long-term decentralized archival (defense-in-depth pinning)

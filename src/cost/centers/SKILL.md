@@ -2,11 +2,11 @@
 name: centers
 description: "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master."
 atomPath: "cost/centers"
-coordinate: "cost/centers · 8/crest · ed12956a"
-contentUuid: "49658cdc-c502-5fff-b90f-0c0dc6fc6740"
-diamondUuid: "9f600260-81eb-858a-b3f4-e82c7e738cf6"
-uuid: "ed12956a-4e63-80a3-b043-23080f5a5321"
-horo: 8
+coordinate: "cost/centers · 4/weave · 27ecd1f7"
+contentUuid: "341e71eb-3814-57a0-87d7-d8c091f59cdc"
+diamondUuid: "7484cf3a-e59e-8442-a730-4adf44ef2ce5"
+uuid: "27ecd1f7-2ff8-86fb-b6bb-02fbba85f872"
+horo: 4
 typography:
   partition: cost
   bondDegree: 48
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "039f5dc3-54a2-8255-9ba2-dd194a08a623"
+  computationUuid: "5f6022d7-3c16-8ddf-a645-bc18a5fce591"
   stages:
     - stage: path
       stageUuid: "4e92b35a-d309-88ba-8cd6-2f9f169a7ff6"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "27d8c9a0-9099-8236-b7a8-be92e75c3455"
     - stage: horo
-      stageUuid: "51e78db0-55db-8f64-a378-8686de85192f"
+      stageUuid: "a5ca0c2d-353d-89a7-a293-0a26208554f8"
     - stage: seal
       stageUuid: "1e3c2c75-34fd-8279-986f-9b429b8fc616"
     - stage: uuid
-      stageUuid: "79417bb3-91a8-8cd1-b8c5-a3116b86c7a3"
+      stageUuid: "5946bc90-779d-8b04-a101-a0b37014a8a2"
 version: 2
 ---
 # cost-centers

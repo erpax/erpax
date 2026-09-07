@@ -2,11 +2,11 @@
 name: dependencies
 description: Use when reasoning about dependencies — Prerequisites needed to fulfill steps in article.
 atomPath: "vocabulary/dependencies"
-coordinate: "vocabulary/dependencies · 7/descent · a0499a41"
-contentUuid: "0b123b90-5446-5ea4-b32b-2ceb9bf039e9"
-diamondUuid: "e834aa9f-a7be-8f1c-9bca-31f8a00dfb02"
-uuid: "a0499a41-d2e7-83f0-b2b5-9b3b682647f0"
-horo: 7
+coordinate: "vocabulary/dependencies · 4/weave · f7fb695f"
+contentUuid: "ea4cd324-6c40-58c8-b35b-0aaa7acd625f"
+diamondUuid: "2f7a1ff9-0ff3-873d-8ae1-c20a485e249b"
+uuid: "f7fb695f-464d-83ec-a42e-e7d8315242c0"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "49bb0f42-665d-8e2c-8686-47e2077a6f98"
+  computationUuid: "70e0a889-f167-84c9-ba3c-bd99d793800a"
   stages:
     - stage: path
       stageUuid: "a32a62c6-2a2c-8b6c-aee2-17b8a573c732"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7fa8ccc6-96cf-85dd-be66-8a0abbb5e173"
     - stage: horo
-      stageUuid: "256dd487-068e-8e37-9acc-1d877afd88cb"
+      stageUuid: "4ab7aa8f-9e8d-8bba-b860-81bdab0d185d"
     - stage: seal
       stageUuid: "d597435a-501b-8832-9f17-f80952f01bcf"
     - stage: uuid
-      stageUuid: "70696761-28df-84e8-a2d6-c4308e25c2f6"
+      stageUuid: "81e99297-4883-89fc-8cca-80dee49c8ee9"
 version: 2
 ---
 # dependencies

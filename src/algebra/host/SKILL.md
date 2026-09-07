@@ -2,10 +2,10 @@
 name: host
 description: "Use when working with algebra/host."
 atomPath: "algebra/host"
-coordinate: "algebra/host · 4/weave · 12fdbf8e"
-contentUuid: "d9ec991d-36ec-5f2b-9898-cd59edac7cfd"
-diamondUuid: "9f6ac420-c3bd-8500-aa00-574ab908fd28"
-uuid: "12fdbf8e-c0c6-8ec2-9d1a-0ddff97eb387"
+coordinate: "algebra/host · 4/weave · 3cff1f30"
+contentUuid: "f1b7a2a8-3019-5df5-8e7b-622efcaf5398"
+diamondUuid: "b3f354ea-604e-865e-9952-02d3740b02cd"
+uuid: "3cff1f30-e755-84c3-bca8-26923608f44b"
 horo: 4
 typography:
   partition: algebra
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d6a75830-c0fe-82c1-924d-79b925e02225"
+  computationUuid: "b5dbe7bd-7fa1-8bad-8c28-fc598f83954a"
   stages:
     - stage: path
       stageUuid: "675f63e7-f8f4-8d59-8f3a-ae9a0d36353b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d7ba03e6-57f6-8d11-8ef8-59459e68d577"
     - stage: horo
-      stageUuid: "cb2e82c8-eb78-8e33-95b8-f8a8a08fedb6"
+      stageUuid: "65e14b37-b7b5-85f5-a2e1-578b2fb8cb9a"
     - stage: seal
       stageUuid: "6bde46a3-2712-86c4-b911-1253e2faee2e"
     - stage: uuid
-      stageUuid: "9192158c-ad8e-899d-be3b-8b9b0d6d7fa9"
+      stageUuid: "3ea43400-a538-89bf-a750-4895fc6fba6c"
 version: 2
 ---
 # host

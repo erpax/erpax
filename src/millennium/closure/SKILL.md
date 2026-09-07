@@ -2,11 +2,11 @@
 name: closure
 description: "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be."
 atomPath: "millennium/closure"
-coordinate: "millennium/closure · 4/weave · 68e19ccd"
-contentUuid: "42705d64-9267-5064-97b0-432c3cf9f936"
-diamondUuid: "94a8cbd8-413c-89fd-a5b5-69e921947738"
-uuid: "68e19ccd-a895-81f0-870f-0eeb29b7a1f8"
-horo: 4
+coordinate: "millennium/closure · 1/base · fd7f2f9f"
+contentUuid: "d22c942f-f90f-52e0-bd48-1f5da19926a4"
+diamondUuid: "256d4d44-474e-8124-9c1e-8bca54f6a93f"
+uuid: "fd7f2f9f-7dfe-89b1-b004-df0444ba2c6e"
+horo: 1
 typography:
   partition: millennium
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "7853492e-1ee9-8f24-ac13-01f6acda2a5c"
+  computationUuid: "362fd84b-43aa-8d95-986a-f05e2418c769"
   stages:
     - stage: path
       stageUuid: "b31ca6c7-4636-8dca-8171-d81aaf0d7974"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a510ca2b-57f9-8445-9f78-579945e953cb"
     - stage: horo
-      stageUuid: "22268138-236b-867b-8cd3-6640ce24928e"
+      stageUuid: "7a97bcfd-5cb5-8218-ad7f-b8126ed6b985"
     - stage: seal
       stageUuid: "7f0d1059-d741-82f5-86bd-33cb655bd9a2"
     - stage: uuid
-      stageUuid: "08b7dcc5-90e3-86cc-808d-558a4cb9098c"
+      stageUuid: "a833b19a-2e91-80db-b804-adef81e7e8b8"
 version: 2
 ---
 # millennium/closure — the decidable half, computed

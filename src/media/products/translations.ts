@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "products",
-    "uuid": "dd74e47d-36d3-82bc-9f38-2ffb957904e7",
+    "uuid": "f5880da7-155c-8bac-bf15-eb29fc43834f",
     "words": [
       "products"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about products — is the Payload definition: the product's fields, its access rules, and the hooks beside it that manage the images a product carries.",
-    "uuid": "42e26fe7-862c-8688-8c7b-dac2ec4a1194",
+    "uuid": "eaac46a9-60ad-8a12-bcb5-56c3af23b38f",
     "words": [
       "use",
       "when",

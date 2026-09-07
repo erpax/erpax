@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "crest",
-    "uuid": "3f50f697-de6e-8781-89c3-949be0668c60",
+    "uuid": "fef972d5-fb12-8614-b9e3-35b977079d2c",
     "words": [
       "crest"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the peak position of the horo state ring — digit 8, \\\"the ascent peaks\\\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo.",
-    "uuid": "ab61e823-3d30-828e-bd56-573af9e3b494",
+    "uuid": "cd650e15-78c2-81c8-8533-ca7686a5d677",
     "words": [
       "use",
       "when",

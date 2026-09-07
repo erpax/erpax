@@ -2,11 +2,11 @@
 name: "3986"
 description: Use when implementing or referencing RFC 3986 — Uniform Resource Identifier.
 atomPath: "rfc/3986"
-coordinate: "rfc/3986 · 8/crest · 25e10a06"
-contentUuid: "bdf2fae0-809b-5daa-a36e-9cbd9d4b3335"
-diamondUuid: "6a7b280a-2813-8857-a716-97d013f05876"
-uuid: "25e10a06-479a-84ed-aa00-127271b7780f"
-horo: 8
+coordinate: "rfc/3986 · 7/descent · 4409b549"
+contentUuid: "1942bec8-937d-5ef4-b67d-3074fd5db822"
+diamondUuid: "0f29c335-f7fc-821d-8dad-d7c95cde3a13"
+uuid: "4409b549-cd42-88a3-a1ae-6f55d24019df"
+horo: 7
 typography:
   partition: rfc
   bondDegree: 6
@@ -15,7 +15,7 @@ standards:
   - "ECMA-262"
 bindings: []
 signatures:
-  computationUuid: "51ee770c-c578-8029-8e17-5e8c96b85fab"
+  computationUuid: "c0b0614a-f6be-892b-ab19-7a9e6eb8d9db"
   stages:
     - stage: path
       stageUuid: "93e4846c-b5f7-8c7e-a040-2b26e244eb9f"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "fa0808c4-1524-8973-969f-788a28b0461f"
     - stage: horo
-      stageUuid: "b6021234-00f9-8b14-af26-d8678ea4acf6"
+      stageUuid: "da751ef2-8e41-8174-b5df-44fa8e977a28"
     - stage: seal
       stageUuid: "907ce2c2-df89-889c-a453-ed77d0e5d9ff"
     - stage: uuid
-      stageUuid: "e95b3dbc-36b7-85ab-a716-ff8c75dd28fb"
+      stageUuid: "9e67d8bc-de62-86f9-843e-c570898f698b"
 version: 2
 ---
 # RFC 3986 — Uniform Resource Identifier

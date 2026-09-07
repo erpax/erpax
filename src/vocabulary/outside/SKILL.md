@@ -2,11 +2,11 @@
 name: outside
 description: "Use when reasoning about outside as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/outside"
-coordinate: "vocabulary/outside · 5/round · fe241c70"
-contentUuid: "1bbae6dd-afba-562a-96d2-b0ccbb519b37"
-diamondUuid: "27397e12-7fdb-8e63-b7cf-6dc0a133b23c"
-uuid: "fe241c70-2b6d-8268-bb1b-d12ede6d9f1e"
-horo: 5
+coordinate: "vocabulary/outside · 4/weave · c6b6bf80"
+contentUuid: "681d6e82-1495-52ac-b368-5cf3eb871824"
+diamondUuid: "4564f83e-29d0-8dbb-ba55-6d4a2fbc4d0c"
+uuid: "c6b6bf80-5161-85dd-9911-347c42b8bc63"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8557a90-0a88-8bfe-9805-48751fac72ec"
+  computationUuid: "79326e94-89db-84a4-9433-591222c1669c"
   stages:
     - stage: path
       stageUuid: "03913916-f38f-8ddc-adb4-b6d1f8a88748"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "034519ab-7e2f-8782-a67a-b7cb8a2b10f2"
     - stage: horo
-      stageUuid: "dc7a025d-f625-807d-9677-0083bd8afc71"
+      stageUuid: "fbc6d819-4f94-8c01-8806-bb4658de01a7"
     - stage: seal
       stageUuid: "8c7e06b6-94d0-8df5-8e39-5914d599d9e1"
     - stage: uuid
-      stageUuid: "d60217f9-71be-87d6-b061-9b8fbd4d42fa"
+      stageUuid: "f7294150-7bb0-8e27-b158-4f19efba0552"
 version: 2
 ---
 # outside

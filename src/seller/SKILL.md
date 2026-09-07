@@ -2,11 +2,11 @@
 name: seller
 description: "Use when reasoning about seller — An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider."
 atomPath: seller
-coordinate: "seller · 8/crest · b0536986"
-contentUuid: "af524e32-3ac5-5444-84cf-ebe434d42821"
-diamondUuid: "f3b78d7c-80e3-8057-88ee-df088e9a2f82"
-uuid: "b0536986-7a83-80bd-98d5-159d9d42e5be"
-horo: 8
+coordinate: "seller · 2/share · 5013ebf5"
+contentUuid: "d1541513-7cd0-5f7d-9243-1c93814c1a96"
+diamondUuid: "6b5aa724-4ee4-8e6e-a43c-65ddfc4c78b6"
+uuid: "5013ebf5-e47c-861e-b202-b66cb2fdf69f"
+horo: 2
 typography:
   partition: seller
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ab9ac431-0b56-8bba-8336-fa2df42d4077"
+  computationUuid: "8f85e02a-6d6e-871c-af9b-b55383b3fc73"
   stages:
     - stage: path
       stageUuid: "9ce3a295-e776-895a-a8b6-ab9981a17eba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5cc40968-6a9d-8a98-8f87-1752d3da1425"
     - stage: horo
-      stageUuid: "a5b1a022-db06-842f-8aee-4f0703a195de"
+      stageUuid: "a8b70b45-ca31-815a-9334-07a3e7726252"
     - stage: seal
       stageUuid: "dd6fef97-6e7f-8bfe-b2c4-ff5a5fcaa37f"
     - stage: uuid
-      stageUuid: "654b4915-b502-82e5-a71b-c0643bad7cd1"
+      stageUuid: "90c85982-2a2a-8b67-9188-896ebb691556"
 version: 2
 ---
 # seller

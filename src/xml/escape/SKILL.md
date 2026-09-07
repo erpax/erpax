@@ -2,11 +2,11 @@
 name: escape
 description: "Use when reasoning about escape — must be replaced before any text or attribute value is embedded in generated XML (**XML 1.0 §2.4**)."
 atomPath: "xml/escape"
-coordinate: "xml/escape · 2/share · 15d913cf"
-contentUuid: "3d6fdafc-c932-52c5-a29e-c7d16b7d3232"
-diamondUuid: "d836d1c7-9b77-887f-8634-08390b8397ff"
-uuid: "15d913cf-6cb7-8f1f-98ec-75c34bdcf8c1"
-horo: 2
+coordinate: "xml/escape · 7/descent · be45fd1a"
+contentUuid: "f3da0d2d-ac99-5d88-9e91-6562aa5cad89"
+diamondUuid: "ddc7f42e-a1e5-88af-9266-550e54a2b84a"
+uuid: "be45fd1a-adfd-8b40-918c-e83c019753cb"
+horo: 7
 typography:
   partition: xml
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "XML-1.0 §2.4 predefined-entities"
 bindings: []
 signatures:
-  computationUuid: "1780b92d-279d-8c79-8a37-2e2c6c392129"
+  computationUuid: "e9165feb-0996-825e-9af5-2b4bc7a848fa"
   stages:
     - stage: path
       stageUuid: "190898cf-d503-8d7f-9628-a22f5b97c35d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5e6cd3b1-8ecf-8304-a848-39fb4e4b4fc3"
     - stage: horo
-      stageUuid: "2eb0a46c-ebf9-8cb3-ac38-f6fcd5728889"
+      stageUuid: "b38bd2fa-1aaa-8b97-872a-f95c41b31e8b"
     - stage: seal
       stageUuid: "81f4065c-e5de-802b-b849-31d66410b513"
     - stage: uuid
-      stageUuid: "cd410f97-cfa3-8eb3-ab2d-cb4810bd3744"
+      stageUuid: "134eea51-990f-846e-8748-0381f6c114ed"
 version: 2
 ---
 # xml/escape — the five predefined entities, once

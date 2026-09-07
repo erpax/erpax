@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bookings",
-    "uuid": "38152de1-2bb9-8450-ada2-d3fe5cd310e8",
+    "uuid": "852c4795-15e0-8d81-92ec-33b9df8c55a4",
     "words": [
       "bookings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or querying reservation events — hotel check-in/out, vehicle rental, equipment hire, meeting-room holds, field-service slots — against a bookable-resource; IFRS-15 over-time / point-in-time revenue recognition, cancellation policy, deposit, invoice linkage, multi-channel (direct/OTA/GDS). The canonical reservation primitive.",
-    "uuid": "9ebeeb30-f02f-87f6-b01d-b14db92a1ca0",
+    "uuid": "496156e8-9647-8a02-88c6-13763ed998f6",
     "words": [
       "use",
       "when",

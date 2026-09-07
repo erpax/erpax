@@ -2,10 +2,10 @@
 name: events
 description: "Use when recording or querying every outbound external-API call (FX rate, VAT validation, sanctions screening, e-invoicing discovery, business registry, mTLS filing) — one row per call, kind-bucketed, country-scoped, source-attributed, result + error captured; SOX §404 / ISO 19011 evidence of every external system contacted. The external-API audit-trail collection."
 atomPath: "api/audit/events"
-coordinate: "api/audit/events · 5/round · 00520626"
-contentUuid: "db7fa73e-87a4-5d8a-aa8a-09ce22da1562"
-diamondUuid: "c62ba0ec-ff5d-8c0d-8499-bf49cc776093"
-uuid: "00520626-a6a7-892d-b232-2f38fee3884e"
+coordinate: "api/audit/events · 5/round · 8c2a509d"
+contentUuid: "f48558d7-e433-5ea6-8f72-799d5dc690d5"
+diamondUuid: "cc9e8284-911a-853b-9276-718d9b80cee3"
+uuid: "8c2a509d-541d-8d2f-afaf-0f0363af85fa"
 horo: 5
 typography:
   partition: api
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "44e6a306-c2fc-82e5-9e08-e6ea99de5c5e"
+  computationUuid: "b18a5676-bb58-8770-a640-51ef7d2cdafd"
   stages:
     - stage: path
       stageUuid: "bf738222-5914-8955-a76b-9db80f3809f4"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "a155ffda-06a3-889b-af5e-2eb0ca4e4c66"
     - stage: horo
-      stageUuid: "b3a02f07-9efd-838f-b117-7ff9d43a2b42"
+      stageUuid: "656573c5-941e-8387-9b3e-30f8a3d23314"
     - stage: seal
       stageUuid: "8b1abacb-6f15-8b8c-81c3-84b4a999eab6"
     - stage: uuid
-      stageUuid: "76842f74-33c9-8795-920f-41bccb82ddd1"
+      stageUuid: "6d78fb02-d77f-8919-9746-cec18193e39c"
 version: 2
 ---
 # api-audit-events

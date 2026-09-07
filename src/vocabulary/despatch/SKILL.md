@@ -2,10 +2,10 @@
 name: despatch
 description: "Use when reasoning about despatch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/despatch"
-coordinate: "vocabulary/despatch · 4/weave · 45584eed"
-contentUuid: "dd445988-b0f2-5238-b587-c299a6b4d5d2"
-diamondUuid: "29a8e3db-6d91-85cf-a337-65a8d7e28a81"
-uuid: "45584eed-4072-8477-90ed-dd280452918e"
+coordinate: "vocabulary/despatch · 4/weave · ef768e6a"
+contentUuid: "83f93fe9-bc1c-5839-9778-bc4045944ed9"
+diamondUuid: "d1d3b1c7-bed7-8eae-a028-054437e5a22a"
+uuid: "ef768e6a-a0dd-8f2b-928b-40032667b06f"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7fd636ac-392d-8534-ad52-5e0385f890a8"
+  computationUuid: "d55413f6-68f3-8ebd-8fc2-882ffe317a13"
   stages:
     - stage: path
       stageUuid: "ef01e8b0-1239-825a-8e4e-d6962ada19c7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7cd29a93-9619-89f7-b808-83ce2d9c0675"
     - stage: horo
-      stageUuid: "432c2b51-8cbe-8ceb-83fd-aa45b10d9dba"
+      stageUuid: "2c3689d8-ffd4-8b48-92e0-81d8b6f0d052"
     - stage: seal
       stageUuid: "94072df9-06a1-8133-a217-84af17eadc45"
     - stage: uuid
-      stageUuid: "f3700463-cc62-8d7a-b112-81d5da1b2cfa"
+      stageUuid: "c86c5499-7b5c-8e82-9201-73a733509f12"
 version: 2
 ---
 # despatch

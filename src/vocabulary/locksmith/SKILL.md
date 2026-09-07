@@ -2,11 +2,11 @@
 name: locksmith
 description: Use when reasoning about locksmith — A locksmith.
 atomPath: "vocabulary/locksmith"
-coordinate: "vocabulary/locksmith · 2/share · 8027d9ac"
-contentUuid: "66a4e7a5-b3ef-5c31-8174-9bde3207315d"
-diamondUuid: "a843b68b-20c6-849f-bcfe-996d1ebec267"
-uuid: "8027d9ac-a01d-826f-9bb2-dd83a04b31b0"
-horo: 2
+coordinate: "vocabulary/locksmith · 7/descent · 97464a6e"
+contentUuid: "a9a95ac0-4100-56c6-9149-1a53cef69e20"
+diamondUuid: "39fa486d-88b9-841a-bd6f-113c78f867dc"
+uuid: "97464a6e-d42d-854e-b59a-faa2587492b6"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "55780080-2417-8034-a4a1-8f90f56964f8"
+  computationUuid: "94f7eea5-a56e-8315-beae-48bdc3070747"
   stages:
     - stage: path
       stageUuid: "f4785273-91bd-826b-a612-f12343aef215"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a5cea578-0771-8d64-bad0-de6d266a3724"
     - stage: horo
-      stageUuid: "c9e36043-c5c5-811d-a025-6df54be1e73c"
+      stageUuid: "5ce2a8a3-5a8a-86b4-906b-3c3df119e66f"
     - stage: seal
       stageUuid: "5c0b8fbb-f32d-866e-a4c6-026ea6f3270e"
     - stage: uuid
-      stageUuid: "0eb076d1-19fd-887b-9da8-32cd437d7a3c"
+      stageUuid: "ac37edb9-5f89-8159-b3ca-02bd988a7401"
 version: 2
 ---
 # locksmith

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "credential",
-    "uuid": "70e9b796-3aee-8ce5-bd05-296758a41453",
+    "uuid": "7ebbae6f-797b-8921-b851-0173775f41ca",
     "words": [
       "credential"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about credential — A credential is a certificate that is used to verify the identity of a person or entity.",
-    "uuid": "b646451f-56f3-8636-990d-cce06c34e5ca",
+    "uuid": "f21c6b58-f786-844e-a083-7a0cd8bd84da",
     "words": [
       "use",
       "when",

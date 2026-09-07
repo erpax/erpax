@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coach",
-    "uuid": "bafe31aa-f0ae-84ab-9f70-1d2e23521c1a",
+    "uuid": "5418b50d-0ed2-8b54-b4df-2fd9bf488f53",
     "words": [
       "coach"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about coach — A person that acts in a coaching role for a sports team.",
-    "uuid": "59447dd4-c973-8d4f-9351-c563e6659c3a",
+    "uuid": "9e6c7ee0-684e-85ba-904a-2ed72ebda425",
     "words": [
       "use",
       "when",

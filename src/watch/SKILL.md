@@ -2,11 +2,11 @@
 name: watch
 description: "Use when reasoning about watch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: watch
-coordinate: "watch · 1/base · 3379836a"
-contentUuid: "33a8d625-d5ef-5e5b-aa87-bf126be610e6"
-diamondUuid: "3dc59a9b-61fc-85ca-9c43-e98d73edf40a"
-uuid: "3379836a-3904-8e92-8fd4-cc99b8c82793"
-horo: 1
+coordinate: "watch · 4/weave · 6f8cf3a4"
+contentUuid: "fda12aee-ba06-57dc-aad5-aca1c69ed1ed"
+diamondUuid: "1f4f83e3-ae6f-8245-ae3f-5806ea32617d"
+uuid: "6f8cf3a4-8644-8a80-9462-b6be7d040fb2"
+horo: 4
 typography:
   partition: watch
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e47e8d8b-07c2-8b53-982c-ff57cd416cbf"
+  computationUuid: "5cd5beb2-ccbe-8700-9963-daa96d888e8e"
   stages:
     - stage: path
       stageUuid: "749c3e90-3484-8f9c-bcd3-8e96d3bd669b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42cb5d14-6f1c-8a00-9902-06abd8767f1d"
     - stage: horo
-      stageUuid: "09216327-95b4-835e-845c-a538225985cf"
+      stageUuid: "7181486b-5f8c-8c0d-a405-04318720f151"
     - stage: seal
       stageUuid: "c2ea3b2c-0568-8793-92e8-8d5cbefbd5d6"
     - stage: uuid
-      stageUuid: "258b1144-0e82-8cd6-b653-572eeaf13cfa"
+      stageUuid: "593bea4f-e2af-88a1-99b5-754adbe01b08"
 version: 2
 ---
 # watch

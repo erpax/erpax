@@ -2,11 +2,11 @@
 name: day
 description: "Use when reasoning about day — Defines the day(s) of the week on which a recurring Event takes place. May be specified using either DayOfWeek, or alternatively Text conforming to iCal's syntax for byDay recurren"
 atomPath: "vocabulary/day"
-coordinate: "vocabulary/day · 7/descent · c95038ff"
-contentUuid: "3121d038-d991-5133-aad4-be6506e766b4"
-diamondUuid: "cdc48fa5-2871-8edd-addf-2d7f3f01e4a7"
-uuid: "c95038ff-8e90-841b-8ab0-be2d896aef90"
-horo: 7
+coordinate: "vocabulary/day · 4/weave · 20408c2b"
+contentUuid: "3df46a5c-f6ae-5dc8-b3a8-a66a4857f525"
+diamondUuid: "b449d6a1-76d0-8979-8435-82f18bc5badd"
+uuid: "20408c2b-a84f-8e6c-9ff6-535ad78298b3"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7c47f894-c78b-81a4-b1a2-8e13dd66ce97"
+  computationUuid: "504e7acf-45bc-8401-a75b-b6c78e127b8d"
   stages:
     - stage: path
       stageUuid: "8faaecee-4b46-828c-b88d-0831d5471595"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3ee5601e-0e59-869e-87fa-0e6c9069df5a"
     - stage: horo
-      stageUuid: "2834fa8d-81f1-83ee-95ad-ffbc5a2dbda3"
+      stageUuid: "69cc2f53-2056-86ca-9e90-78e76da5a3f2"
     - stage: seal
       stageUuid: "cfb3d881-6ded-8e28-bcb5-d8b78193f53b"
     - stage: uuid
-      stageUuid: "f1b04630-d32e-8572-ba15-b415f4e66ed6"
+      stageUuid: "2809de13-9bc9-8b2f-afb9-f9e7bbcdc6a5"
 version: 2
 ---
 # day

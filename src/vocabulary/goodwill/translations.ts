@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "goodwill",
-    "uuid": "602ccfbf-9a8c-84c0-bd02-0eafdd83c70b",
+    "uuid": "b5811704-c2c9-80e8-b945-8cf3c47932ef",
     "words": [
       "goodwill"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about goodwill — Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs",
-    "uuid": "76cbbea9-efa1-8f13-bf92-5ac2aaafd658",
+    "uuid": "5047ba39-77d9-867d-942c-de527cf239d4",
     "words": [
       "use",
       "when",

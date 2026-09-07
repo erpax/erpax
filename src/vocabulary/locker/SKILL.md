@@ -2,11 +2,11 @@
 name: locker
 description: "Use when reasoning about locker as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/locker"
-coordinate: "vocabulary/locker · 4/weave · 265c34d0"
-contentUuid: "9c053ac4-5114-58e3-9d7d-544abaec96bb"
-diamondUuid: "8f3bea4a-0c0a-83cd-9774-225e3e0c8363"
-uuid: "265c34d0-3a0a-8302-b754-252d985d3a4f"
-horo: 4
+coordinate: "vocabulary/locker · 1/base · cad8f6fe"
+contentUuid: "c365cc75-8500-516e-bfe3-94be88f83ba1"
+diamondUuid: "6db06a88-e21d-8fd3-a85c-88ab824043c3"
+uuid: "cad8f6fe-2df5-88de-9921-a18a858624dc"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "936bc413-d685-82dc-ac04-1514b07594db"
+  computationUuid: "71eca3f8-3945-873c-b9c1-f6e67c088aea"
   stages:
     - stage: path
       stageUuid: "e9b15b51-9714-82ae-ae76-541a9b93d05a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93d24591-5411-88b1-a02a-b024fe6181a6"
     - stage: horo
-      stageUuid: "d034ba11-cb1d-8bda-94b9-fa17709cdea5"
+      stageUuid: "65d12e59-69ee-8ef1-90a9-6637a2349e81"
     - stage: seal
       stageUuid: "0bc6a4e4-5765-8c98-a419-95806d497e2e"
     - stage: uuid
-      stageUuid: "584731aa-6052-8cc7-af4d-cae8ecb1277e"
+      stageUuid: "f7ad9feb-58b0-88a0-80c6-6b82aad3bb3a"
 version: 2
 ---
 # locker

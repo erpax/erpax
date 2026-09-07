@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "manufacturing",
-    "uuid": "2f16f776-9d45-8e6a-9a34-e8ef9d627bc5",
+    "uuid": "579feba0-a854-88c1-a0b2-41dfc484a12e",
     "words": [
       "manufacturing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.",
-    "uuid": "35a373a4-00ee-8727-80a0-677c1d97c9d9",
+    "uuid": "542efe4d-e3f5-8c08-8dea-94e23b2fa39b",
     "words": [
       "use",
       "when",

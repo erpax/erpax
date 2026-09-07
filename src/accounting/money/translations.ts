@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "money",
-    "uuid": "9b802998-5770-8a0f-b12d-fc7910b32076",
+    "uuid": "857270fa-3c80-8f51-ab96-8524e1a3b73d",
     "words": [
       "money"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting/money — money fields — Payload money type fixes and currency handling.",
-    "uuid": "dc119bfa-26a4-8939-954b-99a054955544",
+    "uuid": "2c583023-3bb1-8702-b9f7-d917ad387d8c",
     "words": [
       "use",
       "when",

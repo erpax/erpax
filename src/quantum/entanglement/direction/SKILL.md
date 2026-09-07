@@ -2,18 +2,18 @@
 name: direction
 description: "Use when a running agent must change course immediately — a parent publishes a content-uuid sealed direction and subscribed workers observe it on the same tick, with in-flight work holding an interrupt token that a publish invalidates. Promoted from a hyphenated sibling; 12 importers repointed. Run: tsx src/quantum/entanglement/direction/index.ts"
 atomPath: "quantum/entanglement/direction"
-coordinate: "quantum/entanglement/direction · 1/base · c1edce90"
-contentUuid: "ab6b6538-e02a-57dc-85e7-9099ed5004d6"
-diamondUuid: "02f39eb2-af09-8c5c-87ed-85944f088588"
-uuid: "c1edce90-5a97-80c9-a6f2-13b8030d0b40"
-horo: 1
+coordinate: "quantum/entanglement/direction · 5/round · 8dfdcf7c"
+contentUuid: "497b2116-c9da-5745-b4f4-9bf2c92deb3f"
+diamondUuid: "182ea1de-3408-85ce-aab9-35d45befbb4e"
+uuid: "8dfdcf7c-fc9b-880c-aa74-90edfe27a077"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "db8473cf-571a-8606-9d31-ed64a72ffdb9"
+  computationUuid: "b6f244d4-fce6-82d8-97d3-b9e7fd9b4d4e"
   stages:
     - stage: path
       stageUuid: "338e2a12-deb1-85a2-8162-62dd45a019e9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7a7c7d52-bf41-8f1a-8986-afaa62af43dd"
     - stage: horo
-      stageUuid: "ecfc81b7-0c7c-810e-8673-aaf9ebf7b4b3"
+      stageUuid: "eeb581f8-11d3-86a7-b18c-3df0dda2ce54"
     - stage: seal
       stageUuid: "38ce4063-11ea-89e6-9c22-e20df9a536c1"
     - stage: uuid
-      stageUuid: "bd390cc5-4dea-819d-8a33-726546de3105"
+      stageUuid: "6281080d-4b8b-8163-a3eb-d1c0267aed43"
 quantum:
   superposition:
     - collapse
@@ -48,8 +48,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "db8473cf-571a-8606-9d31-ed64a72ffdb9"
-    contentUuid: "ab6b6538-e02a-57dc-85e7-9099ed5004d6"
+    computationUuid: "b6f244d4-fce6-82d8-97d3-b9e7fd9b4d4e"
+    contentUuid: "497b2116-c9da-5745-b4f4-9bf2c92deb3f"
 version: 2
 ---
 # direction — a course change that lands on the same tick
@@ -80,4 +80,4 @@ One thing bit, and it is worth recording. A blanket rewrite of `./direction-bus`
 
 Composes: [[quantum]]/entanglement · [[agent]]/communication · [[rules]]/reference · [[law]].
 
-<sub>content-uuid `ab6b6538-e02a-57dc-85e7-9099ed5004d6` · account `quantum/entanglement/direction` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `497b2116-c9da-5745-b4f4-9bf2c92deb3f` · account `quantum/entanglement/direction` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

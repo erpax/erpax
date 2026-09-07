@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "live",
-    "uuid": "6331e723-d627-84df-9cc9-dda2bf561cd5",
+    "uuid": "737a1c79-b8b8-8e1d-9992-927304caed1a",
     "words": [
       "live"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the aura as a live animation — the analog field stepping through the horo ring, each position a frame lit by its colour and sound, where scanning an atom joins it to the horo (its position is its frame), the society animated.",
-    "uuid": "970d4cdb-cbcf-88c7-b58d-17d3c8971622",
+    "uuid": "21fb8663-2869-8df6-a56b-cb164471b26e",
     "words": [
       "use",
       "when",

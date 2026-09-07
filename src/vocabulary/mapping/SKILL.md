@@ -2,18 +2,18 @@
 name: mapping
 description: Use when modelling one mapping — the singular model of the mappings collection (the plural store); a correspondence from one set of values to another.
 atomPath: "vocabulary/mapping"
-coordinate: "vocabulary/mapping · 5/round · 131cc1e4"
-contentUuid: "66f5df42-362c-50b9-b2d6-5722b4800287"
-diamondUuid: "ec682102-3811-8e00-9625-dc0ae5d702ed"
-uuid: "131cc1e4-187f-8395-b84a-28851964e1bf"
-horo: 5
+coordinate: "vocabulary/mapping · 8/crest · 0aa106b2"
+contentUuid: "76236761-b312-59b7-8f00-68feea56a653"
+diamondUuid: "8ceac120-3005-826f-8f00-8440049b2102"
+uuid: "0aa106b2-68b3-8a97-850e-ebffbdc9b918"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "25ef7ca4-1ea3-8240-93fd-952103507f1d"
+  computationUuid: "2800b830-d245-813b-a7eb-9c193897bbb8"
   stages:
     - stage: path
       stageUuid: "b7d60609-07f9-87c7-838d-e5dbada6be07"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ffbce504-20a7-8bf8-a778-838ad27ea349"
     - stage: horo
-      stageUuid: "838571ac-3385-828e-bfd8-39e4fe10d76f"
+      stageUuid: "263e690d-c9c9-83b8-b527-87367bc39817"
     - stage: seal
       stageUuid: "c42ccd5d-a8dd-8e2e-a343-0a425b5dd534"
     - stage: uuid
-      stageUuid: "86a5ef7e-4c1c-82c0-8134-8c4939322eaa"
+      stageUuid: "15eadff5-bc7d-8512-9a71-c4cf1990ceb5"
 version: 2
 ---
 # mapping — the model of one [[mappings]] row

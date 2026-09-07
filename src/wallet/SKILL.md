@@ -2,11 +2,11 @@
 name: wallet
 description: "Use when holding value — a balance under an owner identity; double-entry and content-addressed, so the wallet state is tamper-evident and every move balances."
 atomPath: wallet
-coordinate: "wallet · 2/share · efd8567c"
-contentUuid: "8ea372a9-1e11-5e7c-983c-3ce60e56e9c2"
-diamondUuid: "39feb81e-4c51-8866-9e54-9a9c19e6d464"
-uuid: "efd8567c-29ef-80ef-9639-4aaf77d9cb2e"
-horo: 2
+coordinate: "wallet · 7/descent · 6322e27a"
+contentUuid: "1653a269-c552-58c4-afd8-7dc2cb9507e0"
+diamondUuid: "4f6cbef4-791b-8808-bedc-71b0813073d8"
+uuid: "6322e27a-f37c-8ca4-b47e-33ef14955926"
+horo: 7
 typography:
   partition: wallet
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "double-entry ([[entry]]); content-addressed state ([[uuid]])"
 bindings: []
 signatures:
-  computationUuid: "1155737b-4ecd-87b1-bf24-c0e784467854"
+  computationUuid: "cb8f2604-33a8-8a82-a003-e69f36332ed3"
   stages:
     - stage: path
       stageUuid: "d002acff-9010-8d8b-ac94-fc5c9bc24276"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c46cad00-3f8e-82ec-8dec-27e4f2ecdb7d"
     - stage: horo
-      stageUuid: "098bf032-6e70-83ba-9a29-b1f3d6bbed9d"
+      stageUuid: "4d358ab8-d700-893a-a2eb-899efc98fcab"
     - stage: seal
       stageUuid: "4f93e8ec-4060-8fba-a09c-5e6544393434"
     - stage: uuid
-      stageUuid: "0525ba2a-cda7-8c40-b4b8-626f77f2a123"
+      stageUuid: "5565d2e6-764b-86a4-8306-56bbe40f0d0b"
 version: 2
 ---
 # wallet — holds value

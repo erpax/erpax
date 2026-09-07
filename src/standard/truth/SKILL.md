@@ -2,10 +2,10 @@
 name: truth
 description: "Use when enforcing that @standard / @compliance banners are true rather than decoration — the computed required-witness lint that fails a cited concept with no field and an enforcement claim with no guard."
 atomPath: "standard/truth"
-coordinate: "standard/truth · 2/share · b2e1d197"
-contentUuid: "6c382e32-cd5e-535b-a56f-49d37cd83ee2"
-diamondUuid: "dd86d2c7-6274-8949-975e-790ccdbaf7e6"
-uuid: "b2e1d197-87f5-82fd-a549-440258786419"
+coordinate: "standard/truth · 2/share · 692d04f6"
+contentUuid: "733100e4-41e4-59c4-80df-ef818e17a697"
+diamondUuid: "1538deff-b748-8006-8c4a-0695ae972225"
+uuid: "692d04f6-0433-8d8d-906a-446c4a5540a3"
 horo: 2
 typography:
   partition: standard
@@ -22,7 +22,7 @@ standards:
   - "banners are true rather than decoration — the computed required-witness lint that fails a cited concept with no field and an enforcement claim with no guard.\\\"\""
 bindings: []
 signatures:
-  computationUuid: "7ae3cf6f-7171-86a4-87f5-b0d18fe02577"
+  computationUuid: "1f3a6604-f4b6-8b44-9156-dc169b552a0c"
   stages:
     - stage: path
       stageUuid: "3ffde99c-df01-8b4b-9262-14c8ec9c2d14"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "984346bd-18e1-8a58-b9ae-ecb929a4d847"
     - stage: horo
-      stageUuid: "7fc4b434-4f63-8db2-8d28-ea50ea299a70"
+      stageUuid: "3ce8f7c5-ab72-85a5-906c-e66fa6db26d2"
     - stage: seal
       stageUuid: "0c6ffc6b-4a25-80fa-98ea-65186604200b"
     - stage: uuid
-      stageUuid: "863e1b37-cdca-87d3-a900-4960dfdafdf6"
+      stageUuid: "c2772054-ace8-8322-b871-bb9bcc054fab"
 version: 2
 ---
 # truth

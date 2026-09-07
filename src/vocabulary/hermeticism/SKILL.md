@@ -2,10 +2,10 @@
 name: hermeticism
 description: "Use when reading Hermeticism as a diamond of invariant atoms — as above, so below: the part mirrors the whole at every scale, the All is One, know thyself and know the source. This is literally erpax's fractal/holographic law and the identity of part and whole. Strip the prefix and the correspondence collapses to fractal, the mirror to holographic, the All to one."
 atomPath: "vocabulary/hermeticism"
-coordinate: "vocabulary/hermeticism · 7/descent · c416e807"
-contentUuid: "fd2afea9-fa26-5466-a887-b4142ef715fb"
-diamondUuid: "5df7a078-d69f-8db8-8b82-35fae7893c0d"
-uuid: "c416e807-b234-8224-8ec7-e5f69510997b"
+coordinate: "vocabulary/hermeticism · 7/descent · 86b5fc31"
+contentUuid: "e6f92bf3-f0c3-55af-b83e-6d446ebcf671"
+diamondUuid: "a66f139b-ef88-8064-b1bf-d918cd29423a"
+uuid: "86b5fc31-a77a-8922-8a81-53f8d174c639"
 horo: 7
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "49881b04-fbda-84aa-93f6-7e3d37dc16df"
+  computationUuid: "764ceccd-b2c2-8bde-bce4-f802537cb171"
   stages:
     - stage: path
       stageUuid: "892c08bc-12c4-832d-b1de-5832abc14007"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5b1b19ce-aa7a-81db-b756-6b9cdbfef47c"
     - stage: horo
-      stageUuid: "81135fc8-96ad-8c5b-93b8-daae93964a72"
+      stageUuid: "8c56fbc8-3938-8305-bf78-e6886d51a193"
     - stage: seal
       stageUuid: "24c237ac-4c42-86c7-8568-bb15b208088d"
     - stage: uuid
-      stageUuid: "abda12a0-80ed-84cd-ac89-4f269dccde39"
+      stageUuid: "086d0bd4-4c11-8865-acbb-78ba1db8eb56"
 version: 2
 ---
 # hermeticism — as above, so below; the part mirrors the whole

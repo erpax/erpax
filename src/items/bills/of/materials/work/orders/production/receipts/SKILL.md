@@ -2,10 +2,10 @@
 name: receipts
 description: "Use when receiving finished goods from an internal manufacturing work order into inventory — absorbed cost (material/labour/overhead), lot/serial tracking, target warehouse, and IAS-2 §10 cost-of-conversion booking. The produced-inventory receipt record — distinct from vendor goods receipts."
 atomPath: "items/bills/of/materials/work/orders/production/receipts"
-coordinate: "items/bills/of/materials/work/orders/production/receipts · 8/crest · ae51ce0a"
-contentUuid: "61e47b83-c2d8-5258-a00d-793f5d861aa9"
-diamondUuid: "c13c4e60-78b7-87f3-9a67-9f0d45a84187"
-uuid: "ae51ce0a-6c3b-882f-9a4b-b81f54b98e07"
+coordinate: "items/bills/of/materials/work/orders/production/receipts · 8/crest · 8abc73d8"
+contentUuid: "6d0cfa5a-0f02-5c7b-b502-01f7ac720507"
+diamondUuid: "64deacda-7d25-8f5e-9dd3-d7935855ab3a"
+uuid: "8abc73d8-604e-82b8-9512-690916fc80fb"
 horo: 8
 typography:
   partition: items
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "de7e6b78-527b-80c6-b5dc-263680310540"
+  computationUuid: "604004dc-810c-8614-a980-aab4d6c4adff"
   stages:
     - stage: path
       stageUuid: "5fa42070-58ce-8159-98f4-a9baf7f592ad"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "cae361e1-7abf-866e-8fd2-c54cf65e4034"
     - stage: horo
-      stageUuid: "dfa6e64c-dc59-844c-a96f-c7f646133094"
+      stageUuid: "10ab5115-f14a-8371-b125-eaf70d434a61"
     - stage: seal
       stageUuid: "04bb44d3-fe71-89aa-aea0-b37a8f78e755"
     - stage: uuid
-      stageUuid: "a533b010-e1a7-82b4-bf3f-096141eaefde"
+      stageUuid: "e42e3cfa-9ffd-8808-b0ef-39ae4e216b1c"
 version: 2
 ---
 # production-receipts

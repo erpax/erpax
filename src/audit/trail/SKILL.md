@@ -2,11 +2,11 @@
 name: trail
 description: "Use when reasoning about trail — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: "audit/trail"
-coordinate: "audit/trail · 2/share · 7ab9d256"
-contentUuid: "45f75e58-afcb-524c-9b23-907adb71f0fc"
-diamondUuid: "c45ec31a-80ad-88fd-bec5-1cd7453de73d"
-uuid: "7ab9d256-ec7f-8f40-9575-eae577d245a1"
-horo: 2
+coordinate: "audit/trail · 1/base · 76f5970f"
+contentUuid: "11d14c2b-676f-564f-9447-1e64fa401839"
+diamondUuid: "f3235879-5c66-8a0a-8050-657f28f3521c"
+uuid: "76f5970f-6f0a-802e-bb29-2b15685e7c44"
+horo: 1
 typography:
   partition: audit
   bondDegree: 3
@@ -21,7 +21,7 @@ standards:
   - SOX
 bindings: []
 signatures:
-  computationUuid: "d7206cc5-7542-8748-8ff3-210b15487a4a"
+  computationUuid: "9d55a392-377c-83b2-a0ec-5578772a58e4"
   stages:
     - stage: path
       stageUuid: "88a3b638-17e6-8419-971d-f72cf9a5779c"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "4715ad68-b223-80bb-b225-a815d88144ab"
     - stage: horo
-      stageUuid: "06f0a888-68fd-8a76-85da-ec432d7e1026"
+      stageUuid: "f6801e22-db67-8552-b126-211dbd5551d9"
     - stage: seal
       stageUuid: "22e8ac0a-27b6-89d7-8ebc-575e919b6b3d"
     - stage: uuid
-      stageUuid: "6711c1ae-45e7-8558-88d5-952245bc8123"
+      stageUuid: "dc52de6b-282e-845c-b772-9dc2c0adb616"
 version: 2
 ---
 # trail

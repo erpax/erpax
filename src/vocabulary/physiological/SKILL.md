@@ -2,11 +2,11 @@
 name: physiological
 description: "Use when reasoning about physiological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/physiological"
-coordinate: "vocabulary/physiological · 8/crest · 55eecbc2"
-contentUuid: "a1c03360-ea67-538d-a9e7-fc412b24c7be"
-diamondUuid: "1362a728-49fe-8461-bd71-64c6e6a3e180"
-uuid: "55eecbc2-d4cf-883f-8d44-13d9b92c3ae1"
-horo: 8
+coordinate: "vocabulary/physiological · 4/weave · 2c3e0dcd"
+contentUuid: "def3342d-5f27-59d2-83c0-8bbf408e77d0"
+diamondUuid: "e082dfab-09d6-8fc4-8974-425172917013"
+uuid: "2c3e0dcd-db76-89c2-9908-364116367d1d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "769f38ad-8fcd-844e-9298-717c7de88326"
+  computationUuid: "5a7bad26-4b4a-8e45-86a4-3038ec45f8c1"
   stages:
     - stage: path
       stageUuid: "8261c51c-379c-82b1-901d-cbb79b404c82"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "62a523c5-4225-8c77-a3bd-65fb117e15cd"
     - stage: horo
-      stageUuid: "4b76470d-690e-8243-ae4f-27332d4a8da7"
+      stageUuid: "75255b5f-ea16-81b3-9298-36aecff1a892"
     - stage: seal
       stageUuid: "51bad1b6-1026-8373-8840-4f86956ccfae"
     - stage: uuid
-      stageUuid: "00d50108-740d-8628-90ce-b090cedb0314"
+      stageUuid: "d09b2e0a-bc93-8f2c-bda7-1ac3f36b67c7"
 version: 2
 ---
 # physiological

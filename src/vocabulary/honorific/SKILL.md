@@ -2,11 +2,11 @@
 name: honorific
 description: "Use when reasoning about honorific as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/honorific"
-coordinate: "vocabulary/honorific · 5/round · 2854630b"
-contentUuid: "eacf1290-7e2d-578b-bf95-3407c4313e33"
-diamondUuid: "1bb945c3-1931-8fea-97d7-9231654a7603"
-uuid: "2854630b-d053-86ff-80d0-24e8e3188b1d"
-horo: 5
+coordinate: "vocabulary/honorific · 4/weave · 5294071a"
+contentUuid: "15c10a07-e62c-54ae-a76b-0fc0e09daeb0"
+diamondUuid: "4faa8deb-be2b-8734-a68b-0d010fd73f69"
+uuid: "5294071a-1106-801d-939c-1c8f623a0918"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "577590e1-35f6-8e9b-a11f-1f3d00a7ec53"
+  computationUuid: "de0ca79b-b563-8f07-a7c5-c3b7b3545b9a"
   stages:
     - stage: path
       stageUuid: "c58ed0b9-9cbe-8e17-90a5-188807c9a0aa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1608ae06-9593-86c5-a93d-19f4304a92e5"
     - stage: horo
-      stageUuid: "a8de8881-7b34-8ce5-9067-6ac77805915d"
+      stageUuid: "7a5facf9-43fe-8da1-bcb8-533b9e3def5d"
     - stage: seal
       stageUuid: "d780045d-c5f1-8674-a89b-1f4d8d508d11"
     - stage: uuid
-      stageUuid: "76734ef6-4668-8e94-b3fd-5908cc71fddc"
+      stageUuid: "b10fbf5e-0491-8fc6-a94f-3e5f5473fd60"
 version: 2
 ---
 # honorific

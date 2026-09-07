@@ -2,18 +2,18 @@
 name: metric
 description: "Use when the metrics need to be quantum too — quantomize holds the corpus's classical readings (session, gravity, leftover, the gravity pools) AT ONCE in one coherent superposition, folded to a single address, coherent iff no instrument disagrees with itself. Quantum here is the superposition overlay (not quantum metrology); coherence is agreement between instruments, never truth."
 atomPath: metric
-coordinate: "metric · 4/weave · 222dc52b"
-contentUuid: "608b39a6-fb31-5a2c-8517-6b385e5b9fbc"
-diamondUuid: "39f0a312-1263-8180-988e-8330521719de"
-uuid: "222dc52b-2cb3-8a0a-bce0-c957ae2994cd"
-horo: 4
+coordinate: "metric · 1/base · 210d518e"
+contentUuid: "c2c83975-f5e6-559a-8e4a-0ee69ad52887"
+diamondUuid: "bc16957c-fa3e-8585-af24-dc6c35c2725c"
+uuid: "210d518e-b866-83d2-8730-5e67900743de"
+horo: 1
 typography:
   partition: metric
   bondDegree: 57
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0aef24d3-4349-8331-bd64-36912353e24d"
+  computationUuid: "173dce29-0619-8cf3-bf4b-105fb4bc48f9"
   stages:
     - stage: path
       stageUuid: "64aeb57b-3de2-8aaf-bde7-ce337c8b7218"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5f36684c-e643-84eb-bfa5-dca4a78fe6f9"
     - stage: horo
-      stageUuid: "2c75da71-78fc-8b4b-95e8-f2d283dc4d95"
+      stageUuid: "9c3b81dc-8eab-8101-9e04-1e0e04c617d7"
     - stage: seal
       stageUuid: "e5e9c6cc-587d-8e46-8bd9-f3575c86a9af"
     - stage: uuid
-      stageUuid: "44d7465b-a3a0-84bc-b6c0-a87e9bfc4604"
+      stageUuid: "06aad55a-45a4-8d69-bc8f-f3534a127a28"
 version: 2
 ---
 # metric — quantomize: the corpus measured as one quantum metric

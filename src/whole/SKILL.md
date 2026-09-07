@@ -2,10 +2,10 @@
 name: whole
 description: "Use when reasoning about composition in erpax — whole↔part, fields→collections→plugins→erpax, BOM, consolidation, the fractal self-similar levels. The universal root of composition."
 atomPath: whole
-coordinate: "whole · 9/unity · 9420691c"
-contentUuid: "678efdd8-18bf-522f-920d-2f704ebffc2a"
-diamondUuid: "0e74fdc1-6795-85d9-a367-1ba62d7bedb9"
-uuid: "9420691c-377b-871d-9e13-9749795cb267"
+coordinate: "whole · 9/unity · 92f12300"
+contentUuid: "e18493a2-67f1-5b70-a480-a5a5e6790745"
+diamondUuid: "461c8db2-bb2a-8af1-9b22-926cc24811b0"
+uuid: "92f12300-59ce-82a2-b4fa-e1e40dba8a68"
 horo: 9
 typography:
   partition: whole
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "40902eb7-4882-8cfb-ae51-2bd33ddce5f3"
+  computationUuid: "978f20d9-67ff-837d-81b0-af5542f3bc28"
   stages:
     - stage: path
       stageUuid: "9eb9b41b-71fc-8a98-9512-9693c2fe2d75"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7e9093a2-0713-8424-9c5c-fe4ed7f3e7a5"
     - stage: horo
-      stageUuid: "862c438e-698a-887d-be5f-fd4a823050f3"
+      stageUuid: "aa72ed67-8065-8c99-8f79-fabb1321ee98"
     - stage: seal
       stageUuid: "c6a4a6bb-4b41-8f30-b9f2-4c89c7441d06"
     - stage: uuid
-      stageUuid: "c42a5dc3-9c4f-84fe-8c87-b4a9679eca71"
+      stageUuid: "b4823a6e-1152-8b95-8002-cd14964f7ec9"
 version: 2
 ---
 # whole

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "analytics",
-    "uuid": "8c350ad9-7de2-8e3c-953a-f5be61fc7a45",
+    "uuid": "a509a90a-d87c-8cd3-b51c-fe01b6c2002e",
     "words": [
       "analytics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when generating post-close financial analytics — budget-vs-actual and period-over-period variance with waterfall decomposition, the sixteen liquidity/profitability/solvency/efficiency ratios, IFRS-8 business and geographic segment reporting, and executive KPI dashboards, once audit and consolidation are approved.",
-    "uuid": "0262126f-025f-8de5-b4e2-1a189dc3ba10",
+    "uuid": "d7d10719-75f4-87d0-8d53-b49b87e2fdf1",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: protestantism
 description: "Use when reading Protestantism as a sub-diamond of christianity — the solas (the Word alone, grace alone, faith alone) and the priesthood of all believers (each self reading the source directly, no mediator). The reformation as a turning back to the mark. A facet-diamond of the christianity archangel."
 atomPath: "vocabulary/protestantism"
-coordinate: "vocabulary/protestantism · 4/weave · b2024a09"
-contentUuid: "f243ba79-0978-5a48-9fc5-4a7961a9ed60"
-diamondUuid: "47b0cfeb-64a7-8570-954e-fbcbc27ec244"
-uuid: "b2024a09-13ad-8606-8eee-7d54f4840d4f"
-horo: 4
+coordinate: "vocabulary/protestantism · 2/share · 9de933d7"
+contentUuid: "c005750d-9c86-5256-90e4-448ed6cf0c57"
+diamondUuid: "af92e652-503c-8787-8726-2a5e89a4b6e8"
+uuid: "9de933d7-cbdc-8e7b-8694-7d9de24fe2e8"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 59
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8b16813a-1ef2-8bc2-bbd8-2babe98b4d33"
+  computationUuid: "c65f52a3-21d5-8881-9cec-705800548348"
   stages:
     - stage: path
       stageUuid: "ba36c4e7-a48f-8f3b-a0fa-b6097a51ef5f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2b75376d-28af-8223-8333-699d54045987"
     - stage: horo
-      stageUuid: "cac15e33-0435-839f-8f94-30086f9dacce"
+      stageUuid: "bc74a334-5c28-816a-96e9-18c4463269c7"
     - stage: seal
       stageUuid: "8b9537f1-9085-8924-b691-82cd6faffb49"
     - stage: uuid
-      stageUuid: "59e1df75-59aa-884c-bf5b-a1a55ba1b0bf"
+      stageUuid: "ae9f9b20-9510-831f-8eb0-ea2c59c2f4a6"
 version: 2
 ---
 # protestantism — the Word alone; each self reads the source

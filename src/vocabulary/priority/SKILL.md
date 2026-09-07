@@ -2,18 +2,18 @@
 name: priority
 description: "Use when assigning work urgency or escalation level — P1/P2/P3/P4, Blocker/Critical/High/Medium/Low, SLA breach risk. The relative weight field."
 atomPath: "vocabulary/priority"
-coordinate: "vocabulary/priority · 4/weave · 75b1afee"
-contentUuid: "7bd361a0-b679-58dc-93a7-5908c451fa3f"
-diamondUuid: "71a3e2c5-c4a3-87a8-818f-998a4fb1e7f3"
-uuid: "75b1afee-e880-879f-af95-26d260de30fd"
-horo: 4
+coordinate: "vocabulary/priority · 8/crest · a4580c34"
+contentUuid: "85338cd2-7e7b-5398-a349-1333d0e8026d"
+diamondUuid: "6cb6f452-aa34-81d2-89a4-d7b91f9e4d58"
+uuid: "a4580c34-469b-8d78-8a95-2f9fa5fe959c"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "615fcbb5-7bf5-8640-9909-2f32b5f80ab7"
+  computationUuid: "8d329801-c828-8fe7-b3fa-0c2a3ca07e66"
   stages:
     - stage: path
       stageUuid: "17fc4bef-3c2a-8779-89a2-008b55da246e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "45bd5668-c438-89bf-8069-ca5b29c5d7ff"
     - stage: horo
-      stageUuid: "f07a37dc-9d3e-8d03-aea0-74f885967210"
+      stageUuid: "71355c89-4868-8010-aca9-c1c88b491b02"
     - stage: seal
       stageUuid: "d42e3f66-fcb1-8a5f-af67-ce3c30af32be"
     - stage: uuid
-      stageUuid: "922f4c49-f911-8403-8004-1eb4d3e841d9"
+      stageUuid: "c2ea7846-08af-832c-a6dd-014fd1195652"
 version: 2
 ---
 # priority

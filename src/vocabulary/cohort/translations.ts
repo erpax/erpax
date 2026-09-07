@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cohort",
-    "uuid": "04eeb345-9128-8764-8419-0a2cc4806de3",
+    "uuid": "8da4356b-17ca-8c1f-afb2-1f64bdd1ed4a",
     "words": [
       "cohort"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when analyzing or tracking groups of customers/users/items by shared trait — acquisition cohort, product cohort, geographic cohort. The segmentation for lifecycle or comparative analysis.",
-    "uuid": "c3a71f57-6a1d-8044-ad51-d6d81f87138a",
+    "uuid": "91edaaa3-fb16-8c04-99df-c4f168d6eaeb",
     "words": [
       "use",
       "when",

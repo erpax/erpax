@@ -2,18 +2,18 @@
 name: scene
 description: "Use when reasoning about scene — render already projects one content-uuid to **colour · sound · vibration**."
 atomPath: "render/scene"
-coordinate: "render/scene · 1/base · 27219be4"
-contentUuid: "ebac7388-17ca-5657-b42a-3ccb46c820ae"
-diamondUuid: "ed9356fe-8314-8a8b-aa67-b6790627034e"
-uuid: "27219be4-a5ad-8135-a246-ed4788163d18"
-horo: 1
+coordinate: "render/scene · 2/share · 219099ce"
+contentUuid: "b885bc60-94da-583a-a368-127e035e01f6"
+diamondUuid: "e7db37e5-83d1-833b-ac07-f6601ddb6370"
+uuid: "219099ce-9875-88b5-a260-d2d49b99506d"
+horo: 2
 typography:
   partition: render
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2222dbcc-b94c-89e1-9509-4bbb23f79a19"
+  computationUuid: "a4971ad9-6b6c-86be-8203-53ebed21820a"
   stages:
     - stage: path
       stageUuid: "aabc7027-76aa-87d9-bdd0-54cbd3731039"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4841acea-f32c-8b2a-a7a7-30e4c26cb0d3"
     - stage: horo
-      stageUuid: "c462a922-dde2-82ad-b1b4-f32e14b13cb6"
+      stageUuid: "ee899d50-6e42-8650-91aa-883218894398"
     - stage: seal
       stageUuid: "8fe0a27d-ea26-8685-89dd-c1f89fff39ff"
     - stage: uuid
-      stageUuid: "022d2273-0c01-8483-9258-119e908df6f6"
+      stageUuid: "416e35e8-04e5-8ced-abb3-cd33eb5dd6f2"
 version: 2
 ---
 # render/scene — the fourth projection: a theorem, as geometry

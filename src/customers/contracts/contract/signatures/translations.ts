@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "signatures",
-    "uuid": "ccf737b7-b285-8953-8ea7-aec2e46a647d",
+    "uuid": "995d393e-2a40-8ae3-a281-96bea4b50d6f",
     "words": [
       "signatures"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection.",
-    "uuid": "eaedf406-44d0-82a7-870e-8e3b6436ef67",
+    "uuid": "5a2fdeb6-753c-8fcc-bd85-f96871993e4d",
     "words": [
       "use",
       "when",

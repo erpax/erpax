@@ -2,11 +2,11 @@
 name: serious
 description: "Use when reasoning about serious as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: serious
-coordinate: "serious · 1/base · ddf3453e"
-contentUuid: "09f1b730-fec6-5987-b70d-0d6f40ad80cd"
-diamondUuid: "679cf08a-4b52-860a-9877-eda7aff67c74"
-uuid: "ddf3453e-21ad-8f52-9a4e-696743db7bc9"
-horo: 1
+coordinate: "serious · 5/round · 9c21c659"
+contentUuid: "79fc9577-251d-512c-be27-f4773ecb79d7"
+diamondUuid: "97ea27ac-2df9-8109-834f-1b0b24806613"
+uuid: "9c21c659-59ee-89cd-9ac6-7809c3e780c9"
+horo: 5
 typography:
   partition: serious
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "49f6aad4-763e-8423-a618-e5c8208c6fb1"
+  computationUuid: "5e7c0396-586f-8d61-b21e-a922e8d9ffe0"
   stages:
     - stage: path
       stageUuid: "171fc3cb-ca3d-8b36-8ed0-0943ecceca67"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d518f379-edfe-8e17-b02c-d9fd27eefb88"
     - stage: horo
-      stageUuid: "578ecc29-5b5b-8cf8-8a8c-f889948d6509"
+      stageUuid: "785f4dbe-13f9-8aea-8cc3-2d675c679da3"
     - stage: seal
       stageUuid: "429f7733-96d6-8147-9832-fc3582e08d48"
     - stage: uuid
-      stageUuid: "3cb595ca-6e5a-8761-b9b7-a0b94bf7f622"
+      stageUuid: "a192837f-7d79-8f9c-b545-360cc30e8c4a"
 version: 2
 ---
 # serious

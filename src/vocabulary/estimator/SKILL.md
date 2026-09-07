@@ -2,11 +2,11 @@
 name: estimator
 description: "Use when reasoning about estimator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/estimator"
-coordinate: "vocabulary/estimator · 1/base · b1050880"
-contentUuid: "5dc35a5c-5bdb-5dec-b768-2877414b65c5"
-diamondUuid: "479cd9f7-4ca5-8a16-aa2a-63c24f5fbadd"
-uuid: "b1050880-c878-8277-a220-2c9c25ca2f59"
-horo: 1
+coordinate: "vocabulary/estimator · 5/round · bc072712"
+contentUuid: "77e89c68-3b66-5f3a-91de-170bf94e8e08"
+diamondUuid: "31460a19-8095-81df-9c8b-c39cb7ca26f9"
+uuid: "bc072712-de8e-8f01-8e01-aa8d0e18e7b8"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7e1cc130-6028-88de-bd5e-3470cc35ce69"
+  computationUuid: "bc0f3641-5048-855c-bd73-eadf6fb44df1"
   stages:
     - stage: path
       stageUuid: "e8ae7ad3-ed45-8ad9-9346-8ba987de709f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "69e40492-614b-8ad2-ad63-7a63da266457"
     - stage: horo
-      stageUuid: "8556f641-7cd4-8324-852b-9ea606eeaef3"
+      stageUuid: "502210f1-fbc9-8df5-9eab-2b029422bcb2"
     - stage: seal
       stageUuid: "fb1a8ccb-96a3-852e-8e85-f5a6ec9d09bc"
     - stage: uuid
-      stageUuid: "81ff90aa-ef52-81f8-8c51-4516eda2c5e6"
+      stageUuid: "191f8677-e3e2-8f28-9caf-45343d442d65"
 version: 2
 ---
 # estimator

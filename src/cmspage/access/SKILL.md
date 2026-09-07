@@ -2,11 +2,11 @@
 name: access
 description: "Use when reasoning about the pages collection's access control — who may read, create, update, or delete pages."
 atomPath: "cmspage/access"
-coordinate: "cmspage/access · 3/3 · c7fb02ba"
-contentUuid: "5a9c7c66-6fe8-59f5-b4ea-e44f8c4f8ff1"
-diamondUuid: "096120fb-a770-82d5-a8be-db8be4d8ca26"
-uuid: "c7fb02ba-a309-86f0-8628-a6f25dabffe5"
-horo: 3
+coordinate: "cmspage/access · 6/6 · 11740276"
+contentUuid: "df0d9968-ed36-5c5b-bd9a-a1cb1d0a4579"
+diamondUuid: "b54bb6a7-3da1-8023-8201-9c38a022b5f8"
+uuid: "11740276-b31f-8639-a630-641a2a062607"
+horo: 6
 typography:
   partition: cmspage
   bondDegree: 436
@@ -14,7 +14,7 @@ standards:
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "11df4e01-c9ef-8b48-9271-9eec6ac0fa4b"
+  computationUuid: "c7fa8370-aded-8709-8f34-8c2a11da07ce"
   stages:
     - stage: path
       stageUuid: "c827a1ea-dcdb-8e28-aa62-c655ca560c86"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dc02bedd-c0de-84d4-8fad-ae23ab7216af"
     - stage: horo
-      stageUuid: "b02027e0-ec26-85d1-883a-196adf7f6b8e"
+      stageUuid: "fb4a62d5-4c13-8f3c-a827-c000f0328a3f"
     - stage: seal
       stageUuid: "9dc34403-9b91-865e-8d02-cb3d56033440"
     - stage: uuid
-      stageUuid: "7db28d79-4331-8cef-8c2d-f209ff441535"
+      stageUuid: "6c5a27b9-9425-8b5e-9491-a0adf5148f46"
 version: 2
 ---
 # pages/access

@@ -2,11 +2,11 @@
 name: url
 description: "Use when reasoning about url — Data type: URL."
 atomPath: url
-coordinate: "url · 1/base · 32ac2aef"
-contentUuid: "1d38c72a-40b3-5843-999c-31fdc0997c1f"
-diamondUuid: "5d062400-2d77-86de-9f4a-8dc606a8f283"
-uuid: "32ac2aef-e498-8cb8-8c3f-ffbf6b4016f3"
-horo: 1
+coordinate: "url · 4/weave · 2d60f4a8"
+contentUuid: "78b6209b-07a6-5105-83b4-cd9eadd17d7d"
+diamondUuid: "a35ca621-3731-88bc-a912-fcc8c753feee"
+uuid: "2d60f4a8-c997-8187-b5c7-0d58b00848b2"
+horo: 4
 typography:
   partition: url
   bondDegree: 99
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "205b4eb3-8539-88e0-8921-802290cf63d9"
+  computationUuid: "6d1c6eb0-c8ec-88ee-b317-65b2ae4dc295"
   stages:
     - stage: path
       stageUuid: "4ea297b2-95b2-89bc-aa94-6d1622b97e48"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e6977fe-4a5c-837b-9fcf-f60cb91a707e"
     - stage: horo
-      stageUuid: "8adeba62-cabb-83d7-a825-27066b990c4b"
+      stageUuid: "29eecb7e-5beb-8948-981d-9c5072304705"
     - stage: seal
       stageUuid: "cd4f5ea5-94a7-8213-92fc-2578375d2fff"
     - stage: uuid
-      stageUuid: "3c21f5aa-0f4d-874b-8707-b3b32663398e"
+      stageUuid: "bddffe47-1e18-8dfd-b79f-81a341a799dd"
 version: 2
 ---
 # url

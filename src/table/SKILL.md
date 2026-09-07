@@ -2,10 +2,10 @@
 name: table
 description: Use when reasoning about table — A table on a Web page.
 atomPath: table
-coordinate: "table · 8/crest · 0b0ee659"
-contentUuid: "f368b77d-5037-5957-94a8-b3b17a8d807a"
-diamondUuid: "6a5fde09-3fd2-8614-9370-4556921163a3"
-uuid: "0b0ee659-fb16-89b6-ba94-6f5cb0df4a7f"
+coordinate: "table · 8/crest · 4659d25b"
+contentUuid: "d2820c37-5b79-5508-accd-9c494d162dc0"
+diamondUuid: "e8872bba-a24f-8d7a-8eb0-0dced51111f9"
+uuid: "4659d25b-32dd-8ba5-bbe4-743ac72f4796"
 horo: 8
 typography:
   partition: table
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4010960e-43c6-8020-b293-4a82c1fd29a3"
+  computationUuid: "2352c414-4047-88fe-b47d-1341496d7d44"
   stages:
     - stage: path
       stageUuid: "19f9473c-6995-8ede-b7c8-395037b009a2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63fe80d6-f8f8-8f51-95d3-287bee17f140"
     - stage: horo
-      stageUuid: "5d1412b3-fe2a-8669-8e2d-6e7650a8e6c4"
+      stageUuid: "fcdbf5f4-484c-8eab-b834-311a99c4c818"
     - stage: seal
       stageUuid: "13135ef3-30a2-8297-8535-c647bd14203e"
     - stage: uuid
-      stageUuid: "8bf5eba5-483f-8454-9ab3-8fc633884fba"
+      stageUuid: "2a775d4b-1e11-8b30-8e87-89a3956c5829"
 version: 2
 ---
 # table

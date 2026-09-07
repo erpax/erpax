@@ -2,11 +2,11 @@
 name: surface
 description: "Use when declaring or auditing the whole cryptographic surface an atom exposes — the judgment guard that makes a silently omitted surface fail the build: every reachable surface (root-signing · channel-keying · storage-at-rest · re-exchange) must be registered sealed (naming the standard AND the test) or open (naming the gap AND the owner), a channel sealed without FIPS 203 ML-KEM is channel-unsealed because harvest-now-decrypt-later reads the transport not the root, and a root sealed by anything but FIPS 205 SLH-DSA or FIPS 204 ML-DSA is root-unsealed because Shor breaks a classical root outright."
 atomPath: "anchor/surface"
-coordinate: "anchor/surface · 5/round · 8b553c69"
-contentUuid: "c45b08e1-e54a-512d-bda3-67bb4b4bdb8c"
-diamondUuid: "55667cc0-c2ac-8531-bd1f-4b63a4441327"
-uuid: "8b553c69-59cb-80cb-b845-e08df8c0e6c9"
-horo: 5
+coordinate: "anchor/surface · 2/share · 958710de"
+contentUuid: "684a3b6d-8eef-5ece-90c0-abaaa7105a02"
+diamondUuid: "cd6ca403-9906-8879-9d3a-e6f302a5888e"
+uuid: "958710de-fc8a-8370-9a76-ade55a9d7fae"
+horo: 2
 typography:
   partition: anchor
   bondDegree: 20
@@ -16,7 +16,7 @@ standards:
   - "FIPS 205 (SLH-DSA) — hash-based signature; the primary root, no new assumption"
 bindings: []
 signatures:
-  computationUuid: "fd8f173e-c1b4-80a1-85ea-42f881fb3f01"
+  computationUuid: "fa95cded-4c81-801e-9bc7-7dc92f9bcbe6"
   stages:
     - stage: path
       stageUuid: "7445b50e-7694-8eac-8c5e-8b0c465ea9b9"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9b106329-658c-8365-a69b-067ef1bd9a3e"
     - stage: horo
-      stageUuid: "7fa29edb-2c11-8eeb-ab19-ad2da76cd105"
+      stageUuid: "622b1aeb-856f-8e93-8694-2ceb22c670f6"
     - stage: seal
       stageUuid: "1c3458f6-d0c0-8582-a603-8d5d13a63045"
     - stage: uuid
-      stageUuid: "e2bd6b2d-5744-8668-bc39-ba0309eb7c00"
+      stageUuid: "c0420029-d1d6-8c31-8936-edd448c15899"
 version: 2
 ---
 # anchor/surface — a surface you did not declare is a surface you dismissed

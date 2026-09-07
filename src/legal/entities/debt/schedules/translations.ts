@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "schedules",
-    "uuid": "31687748-32a3-84b5-8b10-40783eca9564",
+    "uuid": "c8c8dd86-b868-8e85-a504-7f0211e2291b",
     "words": [
       "schedules"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection.",
-    "uuid": "4699085d-a013-8923-b1d8-d49d199ee139",
+    "uuid": "de388afe-f7be-8ebe-9741-a3b051dbf797",
     "words": [
       "use",
       "when",

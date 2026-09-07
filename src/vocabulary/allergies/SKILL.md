@@ -2,11 +2,11 @@
 name: allergies
 description: "Use when reasoning about allergies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/allergies"
-coordinate: "vocabulary/allergies · 4/weave · 5d4571bf"
-contentUuid: "2fae07bb-3986-59cc-9aaf-5fdd7b0db96d"
-diamondUuid: "ed52e2e1-748b-8587-a34b-d2421e68ce36"
-uuid: "5d4571bf-dcb4-89ef-9706-08179d040091"
-horo: 4
+coordinate: "vocabulary/allergies · 7/descent · 335d201f"
+contentUuid: "61845165-9bd9-5136-94af-510221abe410"
+diamondUuid: "5a1d0c28-361e-8164-b401-61f78db1f33a"
+uuid: "335d201f-12ec-8ed5-84d4-7b82f9367b67"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 17
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9c510314-8a53-8706-ac81-b395bcd0a082"
+  computationUuid: "f854528d-47c2-80bf-aaed-f61596e5dc85"
   stages:
     - stage: path
       stageUuid: "e442df63-fae4-869a-a706-100ea70a366e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d946cf51-99f6-8676-9f1f-9ef3e001f31b"
     - stage: horo
-      stageUuid: "0643e0e6-6285-84f3-ac50-83b3b4cefcf8"
+      stageUuid: "d3b7fa02-9ede-84bb-b260-2b615b832201"
     - stage: seal
       stageUuid: "78b15766-0d12-8cbd-942b-f65b9ebecdab"
     - stage: uuid
-      stageUuid: "5cafe11e-5d5d-8da9-8516-9e23d14f39ea"
+      stageUuid: "270b9606-67dc-8c35-abf5-c4ad6d645d8a"
 version: 2
 ---
 # allergies

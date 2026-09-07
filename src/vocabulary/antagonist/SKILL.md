@@ -2,11 +2,11 @@
 name: antagonist
 description: Use when reasoning about antagonist — The muscle whose action counteracts the specified muscle.
 atomPath: "vocabulary/antagonist"
-coordinate: "vocabulary/antagonist · 8/crest · 4e837099"
-contentUuid: "720f054e-aec2-5097-a361-584c6cc5fefc"
-diamondUuid: "c45d401a-9aed-8cb2-87ae-6e6232789dd1"
-uuid: "4e837099-7f04-8fc7-8f44-cb97a15c5cf6"
-horo: 8
+coordinate: "vocabulary/antagonist · 7/descent · 4c22dee4"
+contentUuid: "8a318d2e-d88f-5edc-9270-65bbbb97d6c7"
+diamondUuid: "ff94d493-b408-8040-a07f-fe450978d15b"
+uuid: "4c22dee4-80bb-8e9e-a5d8-80bbc5032e1d"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "298e9729-5832-8abf-85e8-7ef2c68539ec"
+  computationUuid: "b02eec43-0256-8b69-89b5-6483e7ab7df0"
   stages:
     - stage: path
       stageUuid: "4db3d2fd-261a-8530-83ea-aef6e0d22ecf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9c69a957-e6b3-804a-b7ca-662c04383f16"
     - stage: horo
-      stageUuid: "57a1671b-8894-82c6-899c-7f72b8138cae"
+      stageUuid: "baced918-1346-89dd-8529-dfc0014541a8"
     - stage: seal
       stageUuid: "15890920-d00e-8f94-9475-15e03a3398c7"
     - stage: uuid
-      stageUuid: "cb09328b-3d60-8e6a-ad50-0a97dc237f22"
+      stageUuid: "811f07ab-8d26-8611-8899-b20ebf023109"
 version: 2
 ---
 # antagonist

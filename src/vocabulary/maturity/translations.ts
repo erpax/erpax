@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "maturity",
-    "uuid": "6fc11dcf-01a9-8fd4-b47f-1acbb81f859a",
+    "uuid": "c9c53a8f-46f3-89e8-8970-7260865fdf90",
     "words": [
       "maturity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deciding a crop is ready to harvest — days-to-maturity (DTM, the scheduling constant from sow/transplant to first pick), the maturity index (color, firmness, size, °Brix sugar) that signals harvest readiness, and the harvest window before over-maturity. Harvest maturity (pick-point) differs from eating ripeness; DTM lengthens as daylight wanes.",
-    "uuid": "9b95cc36-c4e9-8658-9f48-07324e0808e0",
+    "uuid": "f15c15da-601c-8a89-a103-a12ba828753d",
     "words": [
       "use",
       "when",

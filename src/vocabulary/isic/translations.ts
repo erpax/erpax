@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "isic",
-    "uuid": "2f5d3794-8859-88ea-8492-d7c6b9160341",
+    "uuid": "2b2ea040-abb4-8140-b218-af2e189b7569",
     "words": [
       "isic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about isic — The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
-    "uuid": "2b3e2714-0797-8eab-a79e-0b1c2d0649ea",
+    "uuid": "3c8411d7-b204-889b-a526-834d1bfc2e39",
     "words": [
       "use",
       "when",

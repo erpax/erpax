@@ -2,11 +2,11 @@
 name: range
 description: "Use when reasoning about range as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/range"
-coordinate: "vocabulary/range · 1/base · 7e3a90fa"
-contentUuid: "f5d5356c-6810-5a06-979e-f9cdf9d4f607"
-diamondUuid: "70d9902e-96be-8454-97eb-d5c4333d5792"
-uuid: "7e3a90fa-c78d-8e4f-85fe-f860f707d533"
-horo: 1
+coordinate: "vocabulary/range · 7/descent · a33e03ab"
+contentUuid: "39577cd4-7c1d-5aef-a1bd-790d05e43f99"
+diamondUuid: "02db4fde-4b55-8533-905d-aedf66e01d82"
+uuid: "a33e03ab-ac92-82b4-ab5b-f9b06ddcae79"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "02fe832b-1361-8d96-9814-ef03ee77bbb0"
+  computationUuid: "59bb277a-4db5-801f-83dc-40d6b9861b3a"
   stages:
     - stage: path
       stageUuid: "f4f43835-29fb-85d0-827d-8cb1d3916982"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5d3b7e5a-b692-8f10-8494-1056cac23ed2"
     - stage: horo
-      stageUuid: "12687ea1-10d8-83f7-b033-49a093c5e192"
+      stageUuid: "78bccab7-5626-8205-92ac-e18e7f16a3b2"
     - stage: seal
       stageUuid: "554416b8-e7fa-8a6b-a658-daa4cf4da5ed"
     - stage: uuid
-      stageUuid: "7ad9aa08-f230-820d-a5b0-497143991341"
+      stageUuid: "da268ff6-21cd-8e77-9106-9a50de8b53df"
 version: 2
 ---
 # range

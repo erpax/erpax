@@ -2,10 +2,10 @@
 name: dimension
 description: "Use when projecting the corpus across its quantum dimensions — the dimension identities, plugin surface and coverage results the realtime child streams from. Promoted from a loose sibling; the hyphenated realtime half nests as a child atom rather than a second root file. Run: tsx src/quantum/dimension/index.ts"
 atomPath: "quantum/dimension"
-coordinate: "quantum/dimension · 1/base · 8a0a9873"
-contentUuid: "e95fd3ee-b555-58e9-b851-99b1e5073b98"
-diamondUuid: "4bd7f4ce-014a-8dce-90b2-1c7668cbc093"
-uuid: "8a0a9873-d70d-85f9-9c6a-83d40699b405"
+coordinate: "quantum/dimension · 1/base · 2002a1fe"
+contentUuid: "361035c5-66e7-58a4-8af1-67e2f2dbf2f5"
+diamondUuid: "fd054e1c-8815-8930-a4b7-2bf648b673df"
+uuid: "2002a1fe-1529-885f-bd43-e7dcc2d091ec"
 horo: 1
 typography:
   partition: quantum
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7b94aa28-f6f0-8642-9761-bb60cdcb1721"
+  computationUuid: "3215e63a-541f-8318-af91-a8b60db9fc0c"
   stages:
     - stage: path
       stageUuid: "f7ccccaf-c59f-8e7e-9780-63a5a94ba155"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3102cb2a-93ee-8edf-8bc9-76cf302f6ca1"
     - stage: horo
-      stageUuid: "afd82d8c-0a8f-8e23-94da-a1445bed2214"
+      stageUuid: "607c6152-42e5-8fca-b67c-cdd1294c902a"
     - stage: seal
       stageUuid: "ece88ba2-ff8c-878e-bf3d-c6c665cf5ea1"
     - stage: uuid
-      stageUuid: "ccbb5b42-b8de-8e36-acb0-11468e3bc97e"
+      stageUuid: "cfa34167-12ad-8f49-b0b4-548bb36f72a0"
 quantum:
   superposition:
     - age
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "7b94aa28-f6f0-8642-9761-bb60cdcb1721"
-    contentUuid: "e95fd3ee-b555-58e9-b851-99b1e5073b98"
+    computationUuid: "3215e63a-541f-8318-af91-a8b60db9fc0c"
+    contentUuid: "361035c5-66e7-58a4-8af1-67e2f2dbf2f5"
 version: 2
 ---
 # dimension — the projection axes, held as one atom
@@ -76,4 +76,4 @@ So the specifiers were repointed with the move, in the same diff, and the whole 
 
 Composes: [[quantum]] · [[quantum]]/dimension/realtime · [[rules]]/invisible · [[law]].
 
-<sub>content-uuid `e95fd3ee-b555-58e9-b851-99b1e5073b98` · account `quantum/dimension` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `361035c5-66e7-58a4-8af1-67e2f2dbf2f5` · account `quantum/dimension` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

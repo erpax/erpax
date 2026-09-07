@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "settings",
-    "uuid": "4a2030df-5f5d-84dc-98ba-6b95ecee16c1",
+    "uuid": "d2781468-465d-8f88-9738-74e26a1b9d0c",
     "words": [
       "settings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about settings — A schema.org component word, collided out of schema.org compounds — fused from DeliveryTimeSettings · ShippingRateSettings · shippingSettingsLink (sti · collapse · merge).",
-    "uuid": "c0a7bedd-bf33-8d8a-bc49-b785a2d14a9b",
+    "uuid": "ae0d8222-ac3f-8501-979d-600103d67233",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: logic
 description: "Use when reasoning about correctness/consistency in the horo society — consistency IS harmony (a claim is sound iff harmonic: on the horo ring / gate-verified), inference must preserve harmony, and the harmonic-FIRST law orders resolution: self-consistent agents interact with themselves (no external coordination needed), so they resolve first and win the competition. The reasoning substrate education is acquired through and competition selects on."
 atomPath: logic
-coordinate: "logic · 7/descent · ad913bb4"
-contentUuid: "0359e884-178d-56bc-940e-047630cabe6d"
-diamondUuid: "f77ddabc-b237-801e-ad10-334e41f48d80"
-uuid: "ad913bb4-3b0b-8944-b21b-dbae5c447a32"
+coordinate: "logic · 7/descent · 2681bf73"
+contentUuid: "8d1ff858-aae4-5b80-a813-94389806bcba"
+diamondUuid: "a5c44efb-83b3-845e-beb9-7f9346beef5e"
+uuid: "2681bf73-efb6-8140-8654-1daf7130e393"
 horo: 7
 typography:
   partition: logic
@@ -14,7 +14,7 @@ standards:
   - classical propositional consistency (no P ∧ ¬P) grounded in the horo ring
 bindings: []
 signatures:
-  computationUuid: "985013fd-c482-8aee-a07b-b5244e7c6eff"
+  computationUuid: "159ec792-dfec-892b-8e3e-0d8a1771256e"
   stages:
     - stage: path
       stageUuid: "087bb473-992f-86b8-9199-9d48aae601ed"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "871eb0c1-3fee-8f79-a1e8-49f952d9a4a7"
     - stage: horo
-      stageUuid: "ef476266-e34a-8717-b0c9-3a3416e168e9"
+      stageUuid: "3c07ecde-22f5-869f-8594-613a9b4018c0"
     - stage: seal
       stageUuid: "c9404cc7-1544-86db-b62f-6c93843ceea1"
     - stage: uuid
-      stageUuid: "a697fd3e-5c72-8319-9cc7-e85abb4b534c"
+      stageUuid: "936fe3d1-d333-84b5-b582-17f54a4f141b"
 version: 2
 ---
 # logic — consistency is harmony; the harmonic resolve first

@@ -2,10 +2,10 @@
 name: claims
 description: "Use when stating what erpax's post-quantum posture actually proves — the anchor surfaces typed by discern into verdicts (what the corpus computes: the manifest gate, the channel and root rules, the pinning, the threat calibration) and compasses (the primitives, because nothing here signs: no PQC implementation is installed). Standards are pinned to their revision because FIPS 203 and 204 carry errata, and a bare citation names a document that differs from the one in force. FIPS 206 and HQC are the honest open rows. Integrity reads 5 of 9 — lower and true."
 atomPath: "anchor/claims"
-coordinate: "anchor/claims · 2/share · 678bea4f"
-contentUuid: "dcc26007-4cd1-5c49-9a89-5a373b95c642"
-diamondUuid: "256e982d-cac3-8631-9129-b24dabebe7cf"
-uuid: "678bea4f-8685-86d6-abed-350944bb11f9"
+coordinate: "anchor/claims · 2/share · 827c439e"
+contentUuid: "6d5d2989-4e3e-505a-af19-ce08ffd4775a"
+diamondUuid: "e308f141-6e5c-87af-a048-0931db595bb8"
+uuid: "827c439e-1e6b-8735-a323-d9b8e5e0836c"
 horo: 2
 typography:
   partition: anchor
@@ -19,7 +19,7 @@ standards:
   - "NIST-SP-800-63"
 bindings: []
 signatures:
-  computationUuid: "891a733f-125b-89bb-8a09-c10a27674039"
+  computationUuid: "141d1124-4f21-8beb-9b25-65b241e487b1"
   stages:
     - stage: path
       stageUuid: "c9e0ccd4-deab-880f-8a95-76fa910dce49"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "1b7329ec-5f04-8609-a216-1722d3577bbb"
     - stage: horo
-      stageUuid: "bcd04cbb-0d4a-8963-90fb-3038371d50bd"
+      stageUuid: "1ba3d5bb-ba37-8e79-9652-3441fd115585"
     - stage: seal
       stageUuid: "fb837cbb-43f8-8174-b3dc-cd8829747945"
     - stage: uuid
-      stageUuid: "483827fb-dd7a-849d-9cc4-823fd3c37d64"
+      stageUuid: "f091a235-7543-8334-8870-105c908f5280"
 version: 2
 ---
 # anchor/claims — the post-quantum surfaces, typed

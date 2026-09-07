@@ -2,10 +2,10 @@
 name: compatibility
 description: "Use when a corpus atom's name might collide with the framework — ISO/IEC 25010 §5.3 co-existence: an atom folder whose leaf is a framework-reserved router namespace (pages) is misparsed by Next.js and breaks the build; the gate that seals the engineering FORM trinity."
 atomPath: "rules/compatibility"
-coordinate: "rules/compatibility · 1/base · 04690f03"
-contentUuid: "ffa67cef-abf7-5258-9f54-4190e759dec6"
-diamondUuid: "0976c0cc-f3a4-8ad9-9277-7c025cef07d0"
-uuid: "04690f03-f6f2-8700-8375-ec6394badf12"
+coordinate: "rules/compatibility · 1/base · 83e59d1b"
+contentUuid: "0f78638f-65d0-5a29-b81f-2b774ac03630"
+diamondUuid: "755422fe-a42e-8923-837d-b4c0cef98a6a"
+uuid: "83e59d1b-bf74-89a8-aad7-f74a27593e30"
 horo: 1
 typography:
   partition: rules
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.3 compatibility — co-existence with the framework namespace"
 bindings: []
 signatures:
-  computationUuid: "9de49c27-f87d-8bb2-ab59-35a4aa56bf04"
+  computationUuid: "f8359b82-a4fe-8842-8565-c58ebd1889b7"
   stages:
     - stage: path
       stageUuid: "138cde0b-8fa2-82f5-aaea-d1c5716dd79c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "52f1e19f-27ed-89bd-b4b1-01ac85668aa9"
     - stage: horo
-      stageUuid: "a46c9fba-7a56-830a-833f-1675db02a422"
+      stageUuid: "2c50afce-ca92-812f-ad3b-69f79a5b9a28"
     - stage: seal
       stageUuid: "28892a9d-3b18-8422-86b3-e038812fa1ea"
     - stage: uuid
-      stageUuid: "7d59ad68-82d5-882b-abde-7344ef8291d2"
+      stageUuid: "873ad5a9-fcaf-82bf-85c3-6707f8f5fdad"
 version: 2
 ---
 # rules/compatibility — an atom may not seize a name the framework reserves

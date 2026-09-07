@@ -2,11 +2,11 @@
 name: horo
 description: "Use when placing a wave on the horo ring — maps a 1-based ordinal onto the seven-position ring, content-addresses a wave from its features so identical plans fold to the same digest, and composes waves into a single resting step. UNITY is 9, the point a closing wave lands on."
 atomPath: "wave/horo"
-coordinate: "wave/horo · 7/descent · 3e015e9a"
-contentUuid: "85320c3b-5d66-54f2-94cf-2644bce66756"
-diamondUuid: "4bd209f4-d52b-871d-9d64-125a32d7ae89"
-uuid: "3e015e9a-44fc-8091-a88f-71481ce632e4"
-horo: 7
+coordinate: "wave/horo · 8/crest · 1fdfcf13"
+contentUuid: "8d54efc5-7e90-551a-ad2a-41bd7aa09b12"
+diamondUuid: "a146c741-dfc3-8908-8005-537a66cc7276"
+uuid: "1fdfcf13-8d83-8a7d-ad38-bb90b9dde783"
+horo: 8
 typography:
   partition: wave
   bondDegree: 532
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "c76a18fe-12d2-80eb-8e75-3564ee1516d5"
+  computationUuid: "51659f40-4a25-8b86-9c81-dae484833892"
   stages:
     - stage: path
       stageUuid: "e6c291ce-87ce-8c00-82e5-7e76bda70af0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9e969ced-3eda-8177-a33f-25494b7de7c1"
     - stage: horo
-      stageUuid: "a6a80314-0006-823a-9c66-00f9f7a4639e"
+      stageUuid: "9b96705f-4df3-879a-b951-e0c00a433250"
     - stage: seal
       stageUuid: "6dfb83ea-987d-8f03-b7c6-822f1b78e5c2"
     - stage: uuid
-      stageUuid: "183b9eea-761c-863a-bd88-f274fd4616b5"
+      stageUuid: "22e69c78-9d65-83c0-bc7a-4a78d336df08"
 version: 2
 ---
 # wave/horo — where a wave sits on the ring

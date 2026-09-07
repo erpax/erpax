@@ -2,11 +2,11 @@
 name: reporting
 description: "Use when implementing or referencing Phase B6: Audit & Compliance Reporting."
 atomPath: "audit/compliance/reporting"
-coordinate: "audit/compliance/reporting · 7/descent · d0a9ccbe"
-contentUuid: "43d7f3fd-9514-5d4f-9ff9-6eecdebb75c1"
-diamondUuid: "262841ce-096a-8515-b242-f4d60d0a4a0d"
-uuid: "d0a9ccbe-cdad-86e4-b778-839b8c1d3e6d"
-horo: 7
+coordinate: "audit/compliance/reporting · 2/share · a8775410"
+contentUuid: "af035228-3625-54b4-b2ef-93cf4c340112"
+diamondUuid: "2ffe0093-628b-8e2a-b5b0-2eec8ddaae5b"
+uuid: "a8775410-f763-8438-a10d-e0d9f1fb0c55"
+horo: 2
 typography:
   partition: audit
   bondDegree: 20
@@ -33,7 +33,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "12a0ecc0-e13e-8e46-b2a5-9ac19b7599cd"
+  computationUuid: "288a612e-18f3-8120-ab7d-952e1bb8745e"
   stages:
     - stage: path
       stageUuid: "ff906584-7cd3-86ed-822c-d5619e136f2c"
@@ -44,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "a33cf334-e2ab-8c33-998d-ff03bbe35f68"
     - stage: horo
-      stageUuid: "6dca006a-fe20-89c4-9d79-b47fc50b14b4"
+      stageUuid: "4941700b-2b6a-8c4c-9f09-b5527bd75a78"
     - stage: seal
       stageUuid: "c4da9bb5-a0ac-8412-8b35-c0699d4468f0"
     - stage: uuid
-      stageUuid: "cbb783fb-23fc-852d-803d-df32132ad794"
+      stageUuid: "c8db2482-a6f3-80e2-a388-31c06bdd8449"
 version: 2
 ---
 # Phase B6: Audit & Compliance Reporting

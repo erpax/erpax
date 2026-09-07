@@ -2,11 +2,11 @@
 name: overdraft
 description: "Use when reasoning about overdraft as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/overdraft"
-coordinate: "vocabulary/overdraft · 1/base · 3562190d"
-contentUuid: "436feaaf-87eb-57ab-bf41-a3360de19fa3"
-diamondUuid: "5246a273-bc10-8b12-8878-5500f5019e26"
-uuid: "3562190d-ed58-8aa8-af03-141390e95735"
-horo: 1
+coordinate: "vocabulary/overdraft · 7/descent · b1369f5c"
+contentUuid: "0621c163-1b71-584a-a711-73b32d01605f"
+diamondUuid: "0be5d9a1-8479-8bf2-86cb-b0f64db64c62"
+uuid: "b1369f5c-d40d-8f76-98ed-3f2510fe18e9"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2a4c4360-c60b-8b8c-bd98-6839e6f62bb1"
+  computationUuid: "0db097fb-1834-8060-b88e-0f5207167405"
   stages:
     - stage: path
       stageUuid: "3867af45-f727-8290-a754-0b2580d4c83b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cfbc0a43-37f4-8767-beb9-81687bc1441b"
     - stage: horo
-      stageUuid: "43a81f43-9b73-8997-9323-28d7734f245e"
+      stageUuid: "9cce9ca4-fb93-86e0-ade0-abd587d810d9"
     - stage: seal
       stageUuid: "c739733c-18d3-8626-80ff-3ba0976d1a28"
     - stage: uuid
-      stageUuid: "fb21e673-c8a1-8aac-9dd2-2521e7942ecf"
+      stageUuid: "a7fb7b01-8e17-8851-ab56-191d0c97d860"
 version: 2
 ---
 # overdraft

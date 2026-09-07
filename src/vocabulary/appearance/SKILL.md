@@ -2,11 +2,11 @@
 name: appearance
 description: Use when reasoning about appearance — Indicates an occurrence of a Claim in some CreativeWork.
 atomPath: "vocabulary/appearance"
-coordinate: "vocabulary/appearance · 8/crest · fc51e04e"
-contentUuid: "087cb4db-eb9c-5a59-812d-1220b7e2e49d"
-diamondUuid: "e2ed77c1-6a11-88c3-8588-76dc8c1d916a"
-uuid: "fc51e04e-07cf-85fb-bfba-898e70f93ce7"
-horo: 8
+coordinate: "vocabulary/appearance · 1/base · bad64d69"
+contentUuid: "cd4daec6-a8e6-582e-b92e-c1d217282735"
+diamondUuid: "8743ad9d-0ba5-80cf-b632-52785cdffcc0"
+uuid: "bad64d69-13e2-8030-8c5b-77405244696e"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 14
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "06ad770d-5732-80ab-9d0d-5f04d406b5d3"
+  computationUuid: "06d9ec35-d05d-8923-ad3d-090cb7118e45"
   stages:
     - stage: path
       stageUuid: "917b4dd2-55da-88d8-9a8a-b22fa298a413"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "289ecbeb-9cf6-8b69-81ae-18d0b19798d1"
     - stage: horo
-      stageUuid: "46230ab3-0f86-8005-b8b7-ecf81c5fe964"
+      stageUuid: "f801002a-2c37-8f6b-845c-8b091f25b9c9"
     - stage: seal
       stageUuid: "9be3e815-07d4-8fa9-8d8c-f5fd6b6152ff"
     - stage: uuid
-      stageUuid: "e812d279-64d0-886b-a494-275f1817b662"
+      stageUuid: "528359fd-51e5-8049-accb-ffb2fa1920a3"
 version: 2
 ---
 # appearance

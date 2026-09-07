@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "snapshot",
-    "uuid": "60bd7058-58cd-8ae3-9282-acd987c201aa",
+    "uuid": "ef00619a-f73a-8080-996e-1dae491e8fd1",
     "words": [
       "snapshot"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when finding and developing digital quantum snapshots — any stateful thing has a snapshot (the collapse of its state at a moment), and its quantum twin is the content-addressed, immutable, append-only chain that nests layer after layer. The skill that finds a domain's snapshots and develops their twins.",
-    "uuid": "3413961b-2f78-82f2-9d5c-748b20a0dbc4",
+    "uuid": "fbee4c3c-0662-8cc2-8e7b-982cc1a00181",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: check
 description: "Use when a notary must verify an instrument before sealing it — the per-document-type duty matrix (identity, capacity, title, encumbrance, cadastre, sanctions, tax, spousal consent, company, signature, timestamp, apostille) mapped to the responsible Bulgarian register and the standard it satisfies, with a rosetta coverage audit that surfaces every unwired gap. Provider adapters are contracts; live wiring needs accredited credentials — no endpoint is fabricated, no gap is hidden."
 atomPath: "notary/check"
-coordinate: "notary/check · 5/round · 3887b2e3"
-contentUuid: "45bf3618-ba1b-50bf-9fd2-6b3f5c07bf7a"
-diamondUuid: "87b5cafc-3ee4-818b-9ede-6b01411c6110"
-uuid: "3887b2e3-9448-8c01-9e98-59804baaf32b"
+coordinate: "notary/check · 5/round · 5f1c4d70"
+contentUuid: "95c8932c-0c6c-5a07-a73b-a583c616a979"
+diamondUuid: "96af540e-5605-8df0-a6f0-ab71bc491b3a"
+uuid: "5f1c4d70-8fd5-854d-b5bb-9208d2e4e0cd"
 horo: 5
 typography:
   partition: notary
@@ -17,7 +17,7 @@ standards:
   - "eIDAS (EU 910/2014) · RFC 3161 · AMLD5 (EU 2018/843) · Hague Apostille 1961"
 bindings: []
 signatures:
-  computationUuid: "abcb4ea5-3734-8419-90a5-b55fa8be8d2a"
+  computationUuid: "b24d7738-d8c8-8972-8ba8-f29f5f720bb9"
   stages:
     - stage: path
       stageUuid: "c1d0233e-08c5-8fd8-afea-8f2b09d28582"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "75dce7cd-2a32-8c8f-95eb-b58109162c8f"
     - stage: horo
-      stageUuid: "01eeba2a-6b94-8ab2-900b-92b8b3e64a72"
+      stageUuid: "2e0529a6-54d1-8776-8893-d4fced53b7c1"
     - stage: seal
       stageUuid: "6957cd82-6137-8194-ab8b-308eb3509227"
     - stage: uuid
-      stageUuid: "134e7973-d96f-8e2d-91a2-e031ca463dc9"
+      stageUuid: "5f009e03-70f8-8a6c-80e5-05db024e449d"
 version: 2
 ---
 # check — what a notary verifies, per document

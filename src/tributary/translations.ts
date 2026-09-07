@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tributary",
-    "uuid": "bba463d1-f19c-8670-8b1b-c0d2644672ef",
+    "uuid": "745dcf0f-5f01-8795-855e-ef6639142482",
     "words": [
       "tributary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about tributary — The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.",
-    "uuid": "c844422f-09dc-8fbe-aaff-a857af1a6805",
+    "uuid": "821e09d3-290a-8b17-9361-8b1f473a4900",
     "words": [
       "use",
       "when",

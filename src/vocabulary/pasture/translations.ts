@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pasture",
-    "uuid": "0505ed4e-3dd8-8246-983f-9c82c85f6e9d",
+    "uuid": "934c0a4c-defc-82f9-ba39-705e8004b1cd",
     "words": [
       "pasture"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the managed forage land livestock graze — pasture (improved/tame forage) and rangeland (native), divided into paddocks for rotational grazing. The grazing land-unit; the livestock counterpart of a crop field, its productivity a fertility/capacity measure.",
-    "uuid": "4e7e87b5-38fb-8a70-9a81-13ceb2c97cdc",
+    "uuid": "adc41c99-5fbf-8ccf-ba18-ff06bbfb1901",
     "words": [
       "use",
       "when",

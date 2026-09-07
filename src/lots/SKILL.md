@@ -2,11 +2,11 @@
 name: lots
 description: "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain."
 atomPath: lots
-coordinate: "lots · 4/weave · c290d914"
-contentUuid: "fc3cd4f1-3a5c-54cb-8875-12cbf45faf76"
-diamondUuid: "ed8fad67-45f1-8a7e-9ed2-8721c5ed2065"
-uuid: "c290d914-0411-8a9d-be71-bd7b533301ef"
-horo: 4
+coordinate: "lots · 7/descent · b902d52a"
+contentUuid: "cc10f2c0-a8bd-5654-9f3f-5121293fcac4"
+diamondUuid: "f2007e88-ffad-8f6d-9c36-40f28487587d"
+uuid: "b902d52a-fc80-8eaf-8b15-865fb886f5fd"
+horo: 7
 typography:
   partition: lots
   bondDegree: 53
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a303869c-42be-8718-845e-41f2a8692163"
+  computationUuid: "5fcf8011-65e1-8d9d-8f26-f82b710179b6"
   stages:
     - stage: path
       stageUuid: "be1ef1f2-590a-83fa-a1d3-498285b60554"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "5db61009-ae9e-8118-bf90-7c0764d34a6f"
     - stage: horo
-      stageUuid: "c1f47247-1e12-8088-a499-e61171fa5b6e"
+      stageUuid: "033a5d23-ef1e-85b6-b183-6423bde82a04"
     - stage: seal
       stageUuid: "8dd29a52-6490-8c98-b3e1-660e72ea3347"
     - stage: uuid
-      stageUuid: "2cb6504d-5840-87ea-b0c7-3b190ca9225e"
+      stageUuid: "2fc1e526-bbd6-89f9-af05-186992f5e243"
 version: 2
 ---
 # lots — the production order (the funnel head, derived-state on the horo ring)

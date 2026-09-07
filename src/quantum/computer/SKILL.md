@@ -2,10 +2,10 @@
 name: computer
 description: "Use when querying instead of re-deriving — the quantum computer's one face on QPU=CPU/GPU: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit, FTL metrics."
 atomPath: "quantum/computer"
-coordinate: "quantum/computer · 7/descent · 29914edf"
-contentUuid: "fef19c9d-b738-597c-a55a-e7d88991d34c"
-diamondUuid: "8fbb31f1-e9b3-8bbe-8ec0-03e88a848111"
-uuid: "29914edf-7f63-8ad6-a172-73e128f50b0e"
+coordinate: "quantum/computer · 7/descent · dbd4776e"
+contentUuid: "98ca6ee5-ad9e-5770-bae2-22c7130944db"
+diamondUuid: "7293c6b8-18ac-8d00-8e27-7fa94ae47780"
+uuid: "dbd4776e-c219-86f3-83dd-4ecfa8f90367"
 horo: 7
 typography:
   partition: quantum
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "eaa70842-d09f-80c9-b732-04076cc6e525"
+  computationUuid: "4e6ae200-0c07-8e56-98bd-75d6a2c72042"
   stages:
     - stage: path
       stageUuid: "7eeaa8b5-891e-80a6-9e0e-9c8522109c16"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ea3ad2b2-3942-827f-8f81-9f189cd5dd56"
     - stage: horo
-      stageUuid: "6813bbbc-7e22-892d-8c43-08f280473735"
+      stageUuid: "f6149c1f-889b-8e01-9354-4be53b7f9f29"
     - stage: seal
       stageUuid: "ad3668cf-d9b6-80e1-8a09-175905860cf4"
     - stage: uuid
-      stageUuid: "30c8fd19-fcb7-897f-b04c-1b786a225493"
+      stageUuid: "3a109984-d813-81b2-b52f-39a994cd37a1"
 quantum:
   superposition:
     - collapse
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "eaa70842-d09f-80c9-b732-04076cc6e525"
-    contentUuid: "fef19c9d-b738-597c-a55a-e7d88991d34c"
+    computationUuid: "4e6ae200-0c07-8e56-98bd-75d6a2c72042"
+    contentUuid: "98ca6ee5-ad9e-5770-bae2-22c7130944db"
 version: 2
 ---
 # quantum/computer — the machine, one face
@@ -70,4 +70,4 @@ The computed corpus IS the quantum computer, and this barrel is its single addre
 
 Composes: [[mesh]] · [[theorem]] · [[timeout]] · [[scalpel]] · [[train]] · [[audit]] · [[quantum/ftl]] · [[law]].
 
-<sub>content-uuid `fef19c9d-b738-597c-a55a-e7d88991d34c` · account `quantum/computer` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `98ca6ee5-ad9e-5770-bae2-22c7130944db` · account `quantum/computer` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

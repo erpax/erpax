@@ -2,10 +2,10 @@
 name: patent
 description: "Use when challenging an over-broad or illegally granted patent — encode the claim as a content-digest and test it on three computable grounds (prior art via anchored anteriority, obviousness via merge identity, abstract-math via §101); defensive only, not legal advice."
 atomPath: patent
-coordinate: "patent · 7/descent · 70597b04"
-contentUuid: "c5e0776d-0e84-5ad8-ac39-9688a325f47e"
-diamondUuid: "aa08a1ec-4791-8021-80cc-36f3c80181a4"
-uuid: "70597b04-6320-8532-837f-6b688a9ad520"
+coordinate: "patent · 7/descent · 7ac049dd"
+contentUuid: "94a1eb0f-9ed4-57fe-bd90-cc8c69386041"
+diamondUuid: "1d24e0e7-02e9-806a-a7cd-0330106647f0"
+uuid: "7ac049dd-b6a5-8afe-90a2-616a24e4c18b"
 horo: 7
 typography:
   partition: patent
@@ -15,7 +15,7 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "55635c4a-f595-854e-8252-60278d80b354"
+  computationUuid: "2936e531-b899-8b1a-a2b4-7cb4ae28b4a8"
   stages:
     - stage: path
       stageUuid: "7eece577-454d-86ea-b63b-a6207db8a551"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "106e2a9a-1fb3-8fd5-a623-1cad776d5753"
     - stage: horo
-      stageUuid: "b7f747ae-f6a8-8c0a-a4d1-426ba5917e46"
+      stageUuid: "dbe4a28c-128e-8de3-93b1-25efebbed474"
     - stage: seal
       stageUuid: "1f4d844e-60e1-8802-ba73-bb58a1e3bffb"
     - stage: uuid
-      stageUuid: "48f5e24a-e853-8d50-8cae-bc14404dbafd"
+      stageUuid: "e40ac18d-980a-8cd5-9509-012ef194f057"
 version: 2
 ---
 # patent — challenge illegal patents, encoded in math

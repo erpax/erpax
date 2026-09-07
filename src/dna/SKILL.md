@@ -2,10 +2,10 @@
 name: dna
 description: "Use when reasoning about inheritance in erpax — an atom's genome is its parent_id chain encoded in the uuid chain; ancestry is entangled into identity (change an ancestor and every descendant's uuid changes), so lineage is tamper-evident by architecture."
 atomPath: dna
-coordinate: "dna · 7/descent · 7dd9f12c"
-contentUuid: "15d97784-61c8-5949-a2b1-f60d67f881ab"
-diamondUuid: "5234723b-4289-8971-beb6-d65d012fc4c0"
-uuid: "7dd9f12c-e344-8d6f-a5a2-47fb79acc4da"
+coordinate: "dna · 7/descent · 558a46cd"
+contentUuid: "bcf607b9-fee2-5cce-b1a8-b34d00c18dc7"
+diamondUuid: "ac401040-86de-8c1e-830c-8837b9940972"
+uuid: "558a46cd-598a-85c7-bf3a-d65a15913868"
 horo: 7
 typography:
   partition: dna
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "22c19d6f-c300-845e-a1ad-1542d964d2f8"
+  computationUuid: "20d76dd3-57df-8f37-b84b-5625057f3793"
   stages:
     - stage: path
       stageUuid: "b7b3eb75-ff34-8f42-b03c-095cd97132cf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "25213efb-ba19-82a1-80aa-5c63c577c9be"
     - stage: horo
-      stageUuid: "7cb182ab-7af7-8f5d-a7c0-6f6095bba932"
+      stageUuid: "a67c20c6-b4fb-8b87-8998-4f5d533a4ad2"
     - stage: seal
       stageUuid: "0e435895-6895-87e5-b544-2736827cc9a4"
     - stage: uuid
-      stageUuid: "20a23dfb-7494-8b8e-8c25-adcb994825a3"
+      stageUuid: "69082a7e-8394-8704-8a42-0a065884c406"
 version: 2
 ---
 # dna — the inherited code encoded in the uuid chain

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bridge",
-    "uuid": "3514b2a6-df4f-89de-a24c-7fc1106c0bae",
+    "uuid": "3ce19797-d3c9-8175-be38-cbedd4bce3a3",
     "words": [
       "bridge"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bridge — A bridge.",
-    "uuid": "ba16d89c-f7e6-8a05-9903-d26259570284",
+    "uuid": "fb99a3ac-77da-8033-bb09-1a362d941d25",
     "words": [
       "use",
       "when",

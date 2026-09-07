@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wire",
-    "uuid": "1d4044a5-c999-8f0b-b5e7-948e60c02b37",
+    "uuid": "9984bc34-681d-83db-94b0-e88ca0f0ac08",
     "words": [
       "wire"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a reader receives the erpax GitHub URL — wireFromRepoUrl validates github.com/erpax/erpax and returns the canonical skill entry paths (content-uuid sealed). All orientation surfaces point to .claude/skills/SKILL.md; paste or clone.",
-    "uuid": "6a73188a-d270-892f-a363-c2f4dac49e7d",
+    "uuid": "406b7579-a356-84da-aa9d-2467df0a943e",
     "words": [
       "use",
       "when",

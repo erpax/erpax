@@ -2,10 +2,10 @@
 name: dosage
 description: "Use when reasoning about dosage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dosage"
-coordinate: "vocabulary/dosage · 7/descent · e9765cbf"
-contentUuid: "fd31e764-7c5c-5ac7-b6dc-01f1338e7231"
-diamondUuid: "540e6584-5e6f-8bae-ad54-59d97d61940d"
-uuid: "e9765cbf-5979-8f84-add1-17bce10f0ae8"
+coordinate: "vocabulary/dosage · 7/descent · 4003aa7b"
+contentUuid: "6e63b79b-7df3-5608-847d-e61dbcaee368"
+diamondUuid: "86e55a27-8804-81fa-b4bf-c602ca84d9b9"
+uuid: "4003aa7b-1398-8797-865b-510374310f00"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "578695c5-a03b-8fb1-9fbf-47e86112e8a4"
+  computationUuid: "af8e5d58-6e9f-8f36-ad72-8a7595f75b1e"
   stages:
     - stage: path
       stageUuid: "7096fb1c-9a35-899f-9f10-325773cc775d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "642feb9f-81dc-8547-a988-c7b1cd1091de"
     - stage: horo
-      stageUuid: "380d663a-3fa1-81d4-895b-8fc187d1b0ae"
+      stageUuid: "df85e53d-2048-8da3-b127-c833472abe13"
     - stage: seal
       stageUuid: "69d67bcd-b23c-838a-b590-c34a8f5bdbb0"
     - stage: uuid
-      stageUuid: "c364a0d9-3558-8b7a-8447-e5ff1aac42e8"
+      stageUuid: "1343bbfc-690b-88e2-90d0-f7111e999185"
 version: 2
 ---
 # dosage

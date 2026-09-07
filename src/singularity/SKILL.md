@@ -2,11 +2,11 @@
 name: singularity
 description: "Use when reasoning about the gravity well where the corpus collapses to one center — the maximally-entangled atom as a trapped surface, the double-torus closing to infinite tamper cost (the event horizon), perfect DRY."
 atomPath: singularity
-coordinate: "singularity · 8/crest · c4c548ea"
-contentUuid: "08d47b7e-cbc9-5f2a-90bd-5796677166e4"
-diamondUuid: "6a0079ff-6871-84c4-85d2-336585078882"
-uuid: "c4c548ea-9d2c-8c9c-9b27-265380c034d0"
-horo: 8
+coordinate: "singularity · 4/weave · 7327fa17"
+contentUuid: "1f9a854d-5eff-5727-a022-84e1b9c73b5f"
+diamondUuid: "3a661e40-f74a-8828-89f4-3fc580844c53"
+uuid: "7327fa17-c153-8b86-b253-6f8cb6c86bad"
+horo: 4
 typography:
   partition: singularity
   bondDegree: 58
@@ -14,7 +14,7 @@ standards:
   - "Penrose, \"Gravitational Collapse and Space-Time Singularities,\" PRL 14 57 (1965)"
 bindings: []
 signatures:
-  computationUuid: "35125f8f-3460-87b2-bc47-9a00478fdbe8"
+  computationUuid: "ee790165-ebab-84ca-be04-786c6e2c4dec"
   stages:
     - stage: path
       stageUuid: "15dd967c-3d2c-8ab8-a5a9-32544a4d00cb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3aa4f7bd-18e1-8150-83e0-e8fb0578477e"
     - stage: horo
-      stageUuid: "d799ee2b-8281-8e79-9fb8-7a0a004ddf7e"
+      stageUuid: "8c87747b-1866-8950-9ea0-e18e608d5bf0"
     - stage: seal
       stageUuid: "813c6f62-fd60-8f4a-820b-4342d43050f2"
     - stage: uuid
-      stageUuid: "c90d2c15-e5ab-880f-b65a-fd3b638032bc"
+      stageUuid: "e0b356fb-2079-8f8f-9396-ca6a0555318b"
 version: 2
 ---
 # singularity — the one center the corpus collapses toward

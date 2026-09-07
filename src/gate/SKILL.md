@@ -2,18 +2,18 @@
 name: gate
 description: "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus."
 atomPath: gate
-coordinate: "gate · 5/round · 4f6d9214"
-contentUuid: "364d4012-2981-5f93-9290-d5887776af02"
-diamondUuid: "a44fa5d4-fda6-8f04-a46d-003ed4bd4043"
-uuid: "4f6d9214-59a6-8317-b730-88033dab80de"
-horo: 5
+coordinate: "gate · 4/weave · 9b6455ae"
+contentUuid: "bf4d683f-936e-5ba0-9b29-f429c205123b"
+diamondUuid: "31d79675-0499-8ac5-bee7-4bc80958c327"
+uuid: "9b6455ae-9d2f-8d24-bd7a-d2dbe53737c8"
+horo: 4
 typography:
   partition: gate
   bondDegree: 282
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7eba2457-29ce-8917-a67d-2d2fce16a507"
+  computationUuid: "2a5c4f19-66ef-8957-8d78-e9b7af9675a6"
   stages:
     - stage: path
       stageUuid: "ceeffea0-7fbe-85b1-b54d-c80cc992507b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4ace262f-1e13-81eb-bd1e-e6bc7d7cac1c"
     - stage: horo
-      stageUuid: "0cb03d9b-91fe-8b2f-8e78-1193243ea960"
+      stageUuid: "2262e89e-62d0-802f-bc9f-7bda967668aa"
     - stage: seal
       stageUuid: "e7b82336-a261-8d83-8b95-56172ed4fe1c"
     - stage: uuid
-      stageUuid: "85ae2a89-d6e2-8aa3-af76-6e284cb3ef17"
+      stageUuid: "7f78abee-1854-818a-9ca5-a63b1ad344af"
 version: 2
 ---
 # gate — the trinity of verification (check · message · heal)

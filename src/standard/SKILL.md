@@ -2,11 +2,11 @@
 name: standard
 description: "Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration."
 atomPath: standard
-coordinate: "standard · 5/round · bad789c7"
-contentUuid: "cf50b16c-40c0-5d51-9d77-efde4772fc62"
-diamondUuid: "b00aed96-78ad-803a-ae1e-8b5b67276366"
-uuid: "bad789c7-bcd1-8025-9de1-7ca415083419"
-horo: 5
+coordinate: "standard · 7/descent · 00c12856"
+contentUuid: "678debdf-68f3-58db-b9f0-c75590f23c77"
+diamondUuid: "be618754-dc33-80dc-9cd4-4b774d363421"
+uuid: "00c12856-e661-85ca-afb4-306cfd00d805"
+horo: 7
 typography:
   partition: standard
   bondDegree: 567
@@ -14,7 +14,7 @@ standards:
   - "banners must be true, not decoration.\""
 bindings: []
 signatures:
-  computationUuid: "0ed5eb93-a8fe-8f48-a3e6-8829dd921ffa"
+  computationUuid: "f7668733-0593-8546-96d2-8cf0d230c09f"
   stages:
     - stage: path
       stageUuid: "0aa0868c-6d55-83c3-94c6-122e2da6c587"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "62e743ac-c3ad-8623-9772-5c639a9f3155"
     - stage: horo
-      stageUuid: "128169e4-9839-814e-ae88-fe377702dab6"
+      stageUuid: "60edeabc-2dbb-8a84-af82-9e986d45f054"
     - stage: seal
       stageUuid: "8c87b949-2c1a-8fc5-a33b-c929157b5e68"
     - stage: uuid
-      stageUuid: "b51fcf54-2b40-8c16-a56a-ea428f26c7bf"
+      stageUuid: "70448eae-de16-8109-867d-ea3d5794f85b"
 version: 2
 ---
 # standard

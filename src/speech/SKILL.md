@@ -2,11 +2,11 @@
 name: speech
 description: "Use when speech must be computed from sealed coordinates — pitch · phonemes · duration derived from content-uuid · horo · path; never hand-authored audio text. User alias: speach."
 atomPath: speech
-coordinate: "speech · 2/share · 16e073c5"
-contentUuid: "6f06368f-4c64-5a0e-bdd2-7d4a4afec2c6"
-diamondUuid: "ce1af6a1-4597-87f3-9079-e876e202cb88"
-uuid: "16e073c5-819a-8e1a-aa93-4bea4feba38b"
-horo: 2
+coordinate: "speech · 1/base · 828d119b"
+contentUuid: "382c5500-ad84-57cb-a9d4-652c276e532f"
+diamondUuid: "8e92580a-5a15-89ed-96e7-0e64b521d8b2"
+uuid: "828d119b-5679-8c41-84e7-43bf08af0eaf"
+horo: 1
 typography:
   partition: speech
   bondDegree: 33
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "121c32e2-f2ab-8b24-975d-0c258ffa69b6"
+  computationUuid: "c26283a6-df84-8969-8631-571217e144b7"
   stages:
     - stage: path
       stageUuid: "45be4a08-8f4d-8e1f-82ee-05803966a144"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "988367dc-c022-887d-a8d6-39f9c1268d0d"
     - stage: horo
-      stageUuid: "4514f1d0-12e9-8d73-aa09-8cb62a9395ee"
+      stageUuid: "edcd9d87-474d-86cc-87fd-fa595ee783f9"
     - stage: seal
       stageUuid: "68bc7b80-f73d-8555-a53d-f02d07f5108d"
     - stage: uuid
-      stageUuid: "aa934fcc-6e4d-8f9d-b570-da8695e7d148"
+      stageUuid: "2e3d345e-4e26-8908-9047-dd9854d9abd4"
 version: 2
 ---
 # speech

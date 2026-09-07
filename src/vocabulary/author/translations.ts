@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "author",
-    "uuid": "e3829a69-682b-87ff-9301-fb2d7aec326d",
+    "uuid": "c3335443-929d-8d0a-bbe3-3f9febcbbcdd",
     "words": [
       "author"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about author — The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent t",
-    "uuid": "f0ab7ebe-72ad-83e8-b23d-8a8f6394e626",
+    "uuid": "0148846b-5850-87af-9924-7423f4f4be18",
     "words": [
       "use",
       "when",

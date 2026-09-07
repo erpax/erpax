@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "material",
-    "uuid": "a68e6b9a-77fd-8ac3-9f59-a3dcdd046ebb",
+    "uuid": "ccb4d222-505c-838b-b78e-81fd4a9e642c",
     "words": [
       "material"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about material — A material that something is made from, e.g. leather, wool, cotton, paper.",
-    "uuid": "c89ef877-f4ea-891f-8396-9b444ace12fc",
+    "uuid": "96e74aaa-1588-88bb-aa64-eb50ad2ecb8f",
     "words": [
       "use",
       "when",

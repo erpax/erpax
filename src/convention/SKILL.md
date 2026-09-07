@@ -2,11 +2,11 @@
 name: convention
 description: "Use when reasoning about the corpus's conventions as a layer — each convention is a check-atom with a live coverage(); the collider composes them into one tamper-cost, infinite only when every convention is computed clean (zero entropy)."
 atomPath: convention
-coordinate: "convention · 5/round · e3b528a1"
-contentUuid: "90d401f1-2a50-576c-bc14-3681527a1405"
-diamondUuid: "2838ba67-d600-8cd2-a452-15aeb4639f78"
-uuid: "e3b528a1-dc99-8e1e-9346-39a236c8976e"
-horo: 5
+coordinate: "convention · 2/share · f9b44d06"
+contentUuid: "6c4c04f0-21f5-54c3-a04f-8558de784751"
+diamondUuid: "35e3dca6-1f49-8098-b2b3-1e84184bded7"
+uuid: "f9b44d06-aa00-842b-b3cb-497fd54b49cd"
+horo: 2
 typography:
   partition: convention
   bondDegree: 87
@@ -15,7 +15,7 @@ standards:
   - "each convention is computed-not-hardcoded; the collider product (zero entropy ⟺ ∞)"
 bindings: []
 signatures:
-  computationUuid: "56232f39-6be9-8fe7-b9e9-84c75f0e253d"
+  computationUuid: "29b954db-9e51-839c-a97d-8dcaaab94d86"
   stages:
     - stage: path
       stageUuid: "48c3e91b-9781-81dc-93c6-1ecf52313477"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "39d9560a-b0ce-84e0-a848-acb969ff494b"
     - stage: horo
-      stageUuid: "3e5c42e3-0ab4-880e-93e9-2af48e9586fe"
+      stageUuid: "a81010f9-aa49-897b-9662-7fee1ecd2778"
     - stage: seal
       stageUuid: "94d8b8e7-8102-8814-a492-29667c6caaaa"
     - stage: uuid
-      stageUuid: "b947e11b-5d27-88a4-b90b-9fbbdd7d531d"
+      stageUuid: "946db234-124b-8ddc-a35c-6b94e8582824"
 version: 2
 ---
 # convention — the corpus's laws, each a measured check

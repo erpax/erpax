@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "product",
-    "uuid": "e1340d05-856c-8998-a51a-ab5936f457eb",
+    "uuid": "7279a610-2691-8811-af77-12056adbee6a",
     "words": [
       "product"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about product — Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.",
-    "uuid": "fdff8684-a9c7-88a9-8432-4be5861b8773",
+    "uuid": "d03dc871-ae99-85fe-9ae8-8e9aec37b80e",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: correspondence
 description: "Use when asked whether string theory or quantum computation bears on the Millennium Problems, or whether any of it strengthens cryptography. A physical duality can PREDICT a statement that mathematics then proves — mirror symmetry is the genuine instance — but a correspondence never proves the problem it corresponds to, so every row carries the precise gap that remains beside what is really established. bearsOnSecurity is false in every row, declared per row rather than waved away: hardness rests on module-LWE, factoring, discrete logs and hash preimage resistance, and no result here constrains any of them."
 atomPath: "millennium/correspondence"
-coordinate: "millennium/correspondence · 1/base · c3ef6a62"
-contentUuid: "e68bee30-05dd-52d7-9e98-06690a995d0b"
-diamondUuid: "4a1cc953-0ce5-8edb-b39d-66c0cdb129a1"
-uuid: "c3ef6a62-53be-88e0-a253-33a302f63ce0"
-horo: 1
+coordinate: "millennium/correspondence · 7/descent · b206eee4"
+contentUuid: "406f77a6-f7b3-5100-8a77-c2648b4dfaa0"
+diamondUuid: "ad37cca4-4af4-83ec-9c47-8958fd594a4a"
+uuid: "b206eee4-3980-896a-abaf-9d78b359a1ee"
+horo: 7
 typography:
   partition: millennium
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "4ec8f7a8-2a38-800f-9375-29e260e7e550"
+  computationUuid: "f6caadd5-10ed-8e19-98f5-62d599892dae"
   stages:
     - stage: path
       stageUuid: "6b842b5c-c0d8-8f7a-8349-13a15db100ff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "942c7bc3-56bc-8790-953c-2ae30a7c2f6b"
     - stage: horo
-      stageUuid: "716b48af-9de3-81cb-b3da-0f8df98aad4a"
+      stageUuid: "ad525eb9-0fbe-801f-9bc9-8895ffe42256"
     - stage: seal
       stageUuid: "9f13dd7b-9fcc-8525-88fc-568d02bd66c5"
     - stage: uuid
-      stageUuid: "e506e7e3-6046-82d3-992b-82d15c427130"
+      stageUuid: "3bfcac38-127a-818b-94b5-744446d7e02a"
 version: 2
 ---
 # millennium/correspondence — physics predicts; mathematics proves

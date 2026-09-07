@@ -2,10 +2,10 @@
 name: cdcpmdrecord
 description: "Use when reasoning about cdcpmdrecord as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cdcpmdrecord"
-coordinate: "vocabulary/cdcpmdrecord · 2/share · dda71af4"
-contentUuid: "52bf2168-06c3-5ae6-b25a-59016f0daa1c"
-diamondUuid: "5cdd8b79-b34f-809f-9537-889ad92f4cb4"
-uuid: "dda71af4-a0e8-81b9-9d27-e4bd33e00485"
+coordinate: "vocabulary/cdcpmdrecord · 2/share · 1c1afb6d"
+contentUuid: "3e841204-ba15-5dd0-b1d6-b92f65ae1d2b"
+diamondUuid: "6ad9a38a-6b59-83ee-8f63-8095b39600a5"
+uuid: "1c1afb6d-d815-8f91-b623-b7cce990dafb"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "20a9ef21-f033-85f6-a631-ff041c3f1046"
+  computationUuid: "34147425-83dd-880b-a14a-ed03d99cd38a"
   stages:
     - stage: path
       stageUuid: "a2c79a76-8467-8c90-9e89-0b9269fb0c6e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a835e636-bf4d-896b-95e7-e02d269b5158"
     - stage: horo
-      stageUuid: "d405cae1-abce-801d-8994-8bad0accfd09"
+      stageUuid: "95f2aa65-686f-8265-b1b7-f721e1dd191c"
     - stage: seal
       stageUuid: "9618f5a3-675d-8881-9298-714a56200849"
     - stage: uuid
-      stageUuid: "bc12fd16-2e01-8552-945f-44c68a7e70a1"
+      stageUuid: "2020b13c-7210-859c-b9e0-c6fc7d887621"
 version: 2
 ---
 # cdcpmdrecord

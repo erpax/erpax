@@ -2,11 +2,11 @@
 name: ordered
 description: "Use when reasoning about ordered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ordered"
-coordinate: "vocabulary/ordered · 2/share · b5bcdae2"
-contentUuid: "d9ae9aca-b75f-5181-b618-753c1cfabc34"
-diamondUuid: "37cf6bff-9492-8f25-8adc-44b33ee71580"
-uuid: "b5bcdae2-641f-8d9d-bfa1-206856d1ce92"
-horo: 2
+coordinate: "vocabulary/ordered · 4/weave · 233e382d"
+contentUuid: "e605737b-456f-576c-ab33-2f2693668565"
+diamondUuid: "3c0008bd-2e72-826b-bcb0-3a8b194984ed"
+uuid: "233e382d-be1d-8e2f-9189-7e92616c007d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "232b9043-7002-84ca-b8f5-33e6c38c6e80"
+  computationUuid: "04b89b55-5bd9-83df-9c9e-0c7f56c38cd2"
   stages:
     - stage: path
       stageUuid: "2649f491-e682-8d7b-bda3-005fce204f14"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "67968d93-1f2a-85ca-acf1-020e31233a61"
     - stage: horo
-      stageUuid: "ce020d73-3662-8aac-9ef5-1b5ddbc5c2d3"
+      stageUuid: "b17c57fa-97da-8d30-83c0-b6463738590a"
     - stage: seal
       stageUuid: "dbc21fab-cf8c-8c9f-b6ea-1a0dcc90e40c"
     - stage: uuid
-      stageUuid: "e3977b9b-b4e8-82a9-877b-0fa1ac64ebc0"
+      stageUuid: "aa7df4ad-02bd-8d57-bbb6-b1b7d08ecf8c"
 version: 2
 ---
 # ordered

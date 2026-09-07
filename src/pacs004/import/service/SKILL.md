@@ -2,10 +2,10 @@
 name: service
 description: "Use when parsing pacs.004 payment-return import parser."
 atomPath: "pacs004/import/service"
-coordinate: "pacs004/import/service · 7/descent · 587ab5ca"
-contentUuid: "58e9a76b-e582-5c34-87e1-8d8e04210125"
-diamondUuid: "5d3fa824-99da-8283-ac35-0c0764662515"
-uuid: "587ab5ca-c384-88cc-9364-a1a17de7aafd"
+coordinate: "pacs004/import/service · 7/descent · 507f13a0"
+contentUuid: "e15a5c67-d5fb-5ff1-ab7c-d6dbc05f37f3"
+diamondUuid: "b952d28b-3fa7-87c4-abf2-797afbe3a085"
+uuid: "507f13a0-51b1-8993-a73c-f53900113957"
 horo: 7
 typography:
   partition: pacs004
@@ -15,7 +15,7 @@ standards:
   - "ISO-20022 pacs.004 payment-return"
 bindings: []
 signatures:
-  computationUuid: "982e981e-63f7-8bb4-8feb-00c3320ad35c"
+  computationUuid: "5296a21f-c5af-8c81-86dc-6516058b783e"
   stages:
     - stage: path
       stageUuid: "63682f30-6350-8527-a214-1656ec515537"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "3fe640e4-1782-8f58-9688-932c2dea057a"
     - stage: horo
-      stageUuid: "f4ff769c-fd38-873b-99e7-80915e8ed6ec"
+      stageUuid: "acabe894-7648-8961-b4ec-c06688b61fc4"
     - stage: seal
       stageUuid: "4a20c7cc-9ab8-82c3-973f-5d048ee4b398"
     - stage: uuid
-      stageUuid: "dd8f94d3-7aa5-8945-818c-809bee6d006d"
+      stageUuid: "a1a823fe-05c2-8c7e-bea2-a10794ea9f8c"
 version: 2
 ---
 # service — pacs.004 payment-return import parser

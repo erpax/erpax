@@ -2,11 +2,11 @@
 name: fresh
 description: "Use when reasoning about stale references as entropy — an import whose target does not exist on disk is a dead wire that lowers tamper-cost; this scans every `@/` import across src/scripts/.vitepress and reports the live fraction that resolves to a real file."
 atomPath: "convention/fresh"
-coordinate: "convention/fresh · 1/base · 09164cbd"
-contentUuid: "7feba925-d560-55d2-b65e-ccede686dc5d"
-diamondUuid: "e2d7c6b6-d0eb-81f2-b18c-b259ad5f7827"
-uuid: "09164cbd-2928-836c-8dee-d1723c722ae0"
-horo: 1
+coordinate: "convention/fresh · 8/crest · 83ac6b63"
+contentUuid: "c6e201ab-5a6b-5e6d-accb-aec0da144c03"
+diamondUuid: "0e761339-bbde-8fc8-9dd2-de56897ff89b"
+uuid: "83ac6b63-b828-8579-9965-229924658161"
+horo: 8
 typography:
   partition: convention
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "TypeScript module resolution (tsconfig `@/"
 bindings: []
 signatures:
-  computationUuid: "e491dcfc-8b47-8edc-b6f1-e5db2b27b2ce"
+  computationUuid: "c5cbcc0d-abbb-81a8-8b24-77897ae46f7a"
   stages:
     - stage: path
       stageUuid: "102fb3c0-d0a4-8e13-bf98-c3ab5266f117"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fcaf6256-c50c-8604-a395-6f292d304aae"
     - stage: horo
-      stageUuid: "0cdb1a39-029c-86f1-b504-38eaa1ad3358"
+      stageUuid: "850ce3d0-af93-89f3-ba69-b4693bfde330"
     - stage: seal
       stageUuid: "e86a184b-8460-8e6c-bd79-34edd4374715"
     - stage: uuid
-      stageUuid: "09f043df-3d1a-8aab-a361-400ed7b40b9a"
+      stageUuid: "361d5930-3a43-8cef-a8cf-704737c237aa"
 version: 2
 ---
 # convention/fresh — no stale refs, every import target exists on disk

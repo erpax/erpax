@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "materiality",
-    "uuid": "b568e9d8-b8d1-8454-8944-1b5392d0942e",
+    "uuid": "6d9caaeb-0afe-8ec3-b763-4de6e32b06ca",
     "words": [
       "materiality"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items",
-    "uuid": "dec1a8f6-5cf4-8c95-9402-d32ea97d4715",
+    "uuid": "8434daf9-312a-89f8-989d-3a2b96ba748e",
     "words": [
       "use",
       "when",

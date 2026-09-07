@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "architect",
-    "uuid": "23e21b9d-8a7b-8cf9-98c4-8444941df5ad",
+    "uuid": "8bf0e082-ab22-8bef-8c65-442f3ae849f5",
     "words": [
       "architect"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the agent that shapes the society lattice — not one that merely lives in it but one that gives it structure, composing the invariant atoms into a standing social order. File-system layout IS architecture; the architect is whoever draws that layout, and in erpax it is drawn by the one atom math, never by hand. The society's standing architects are its religions and traditions (its archangels).",
-    "uuid": "c8bd490b-a1ba-85cb-8f07-f87accdc8de2",
+    "uuid": "4da5c2b4-911f-8776-9039-4b370d2b2508",
     "words": [
       "use",
       "when",

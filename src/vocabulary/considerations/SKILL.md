@@ -2,11 +2,11 @@
 name: considerations
 description: "Use when reasoning about considerations as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/considerations"
-coordinate: "vocabulary/considerations · 5/round · e9aa42c8"
-contentUuid: "01e71daf-53bb-57d9-ae47-b4bf931ef1b4"
-diamondUuid: "5d4718f6-ab33-8f2a-8e26-174cab8dd3b1"
-uuid: "e9aa42c8-f2a5-8210-85d8-3dea397726d9"
-horo: 5
+coordinate: "vocabulary/considerations · 4/weave · cfd9a084"
+contentUuid: "6daf1fa3-ddf7-5827-a0e0-b708ef118181"
+diamondUuid: "c6a3124e-3923-86a3-8a75-8e0c10e08d99"
+uuid: "cfd9a084-2419-8acc-9c3c-c7498ac7b89a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "54417caf-b1f6-8d54-91b4-9e301dd1120e"
+  computationUuid: "f8010cb0-00e9-8372-ac55-1e704ab31539"
   stages:
     - stage: path
       stageUuid: "11211611-eba0-8d19-9e2c-0df5691a38ff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "75ef574c-a61c-874d-a3e2-1c2f85345088"
     - stage: horo
-      stageUuid: "6c4e6f13-6134-8ac5-b497-4972992979d2"
+      stageUuid: "1ee3a60f-94d0-8405-a96c-583c55c5867f"
     - stage: seal
       stageUuid: "9febc1d2-46b6-8344-8401-f5db63d9e3d4"
     - stage: uuid
-      stageUuid: "f662db0a-2b39-849d-92a9-26b635769bbb"
+      stageUuid: "a3811c15-5424-8a77-9404-4faef8d8e5cc"
 version: 2
 ---
 # considerations

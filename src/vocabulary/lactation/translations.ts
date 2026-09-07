@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lactation",
-    "uuid": "6090ab4d-d9c7-87b8-8e38-ec88f192abca",
+    "uuid": "84c50614-a05f-843d-91c0-c34714ebb786",
     "words": [
       "lactation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the dairy production phase — lactation, the milk-producing interval of a dairy female between parturition and dry-off, with its yield curve, parity (lactation number), and the dry period before the next cycle. The per-animal dairy season; milk is the agricultural produce realized at each milking (harvest).",
-    "uuid": "bc358da1-8a48-8cef-b20b-e89d3caebffd",
+    "uuid": "91fb97c1-2f42-8ddd-be46-c9aa84c3dcef",
     "words": [
       "use",
       "when",

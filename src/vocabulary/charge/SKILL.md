@@ -2,10 +2,10 @@
 name: charge
 description: "Use when reasoning about charge as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/charge"
-coordinate: "vocabulary/charge · 7/descent · f3be88f5"
-contentUuid: "3b8a236c-707a-5526-86ec-f013e4b3c26b"
-diamondUuid: "bff49097-0bd3-8f2d-818b-9dc063f0a546"
-uuid: "f3be88f5-03df-8d72-bc36-6f0ecd0352f2"
+coordinate: "vocabulary/charge · 7/descent · 7f3f35d9"
+contentUuid: "209a4547-633d-5dc0-b2ac-3176e46768e9"
+diamondUuid: "1dc6b5bc-f1c0-8bc3-8534-62335409c700"
+uuid: "7f3f35d9-3e26-8049-a699-f35c6b0e6496"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1372bb26-61af-882b-80c6-447066b9bae6"
+  computationUuid: "25d8b58f-b20a-896e-b261-3d36b179fb8b"
   stages:
     - stage: path
       stageUuid: "57ab9dde-3fbd-88c1-815c-14ac10968652"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0585ea03-d8a8-8068-865f-93feef77f521"
     - stage: horo
-      stageUuid: "b7f8b727-2078-8397-8b1b-fed3ec575f51"
+      stageUuid: "6e8e02ee-80e9-8e0c-81c5-1febefe9cd98"
     - stage: seal
       stageUuid: "9d9a1f38-4fa7-8017-9b4b-ffd451e9f3ff"
     - stage: uuid
-      stageUuid: "f1988c90-6a95-87bc-9f6d-b07acec3ff3e"
+      stageUuid: "35e3fdcf-7572-8fa5-824c-a6a933783629"
 version: 2
 ---
 # charge

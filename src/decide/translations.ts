@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "decide",
-    "uuid": "0a6c84cb-2f22-86ed-8789-ba3981988c87",
+    "uuid": "44d1f4ed-3971-87c4-a200-d5cc91da5d00",
     "words": [
       "decide"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary.",
-    "uuid": "cd049ad1-da62-8aac-8084-49bd5e976a77",
+    "uuid": "a6549f76-526c-89b8-a219-e8193faa99a2",
     "words": [
       "use",
       "when",

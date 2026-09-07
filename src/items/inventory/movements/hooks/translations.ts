@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "3078307b-a01e-8513-9da4-e3888dbf95da",
+    "uuid": "06ef360f-a795-8198-a749-d077431804f8",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — books the movement's value as it is written. Inventory that moves without a posting is a stock figure and a ledger figure that drift apart with nothing between them to notice.",
-    "uuid": "a7f4c8c2-e444-8b7e-934d-d8207042341d",
+    "uuid": "85b64805-b0cc-8fab-8fb1-58ecd1582f51",
     "words": [
       "use",
       "when",

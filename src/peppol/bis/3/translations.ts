@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing Peppol BIS Billing 3.0.",
-    "uuid": "238c9844-6559-8e80-8822-55241edb6b46",
+    "uuid": "eebd558d-f32c-8045-b7bd-2fad954e38f8",
     "words": [
       "use",
       "when",

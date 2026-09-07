@@ -2,18 +2,18 @@
 name: grade
 description: "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria."
 atomPath: "vocabulary/grade"
-coordinate: "vocabulary/grade · 7/descent · 6897ff11"
-contentUuid: "e499de98-9534-562d-9320-58ea567120a6"
-diamondUuid: "5ce0f6ae-b59e-857e-8d6d-9a5df324283b"
-uuid: "6897ff11-3106-84ac-bd12-53f7a19497e3"
-horo: 7
+coordinate: "vocabulary/grade · 2/share · b48e5b48"
+contentUuid: "f6099659-885c-5537-9619-6f1dbd431748"
+diamondUuid: "5de3c137-c012-8ade-a603-ef992fd4f492"
+uuid: "b48e5b48-d103-824d-a440-ddee3a0ae4ee"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 51
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b1c3164f-dbd6-8bba-a9dd-760afa30f722"
+  computationUuid: "eec9f5f3-f810-85ae-ade9-731b8d1459cb"
   stages:
     - stage: path
       stageUuid: "319a139f-50cd-878b-941b-bda754f70d74"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "28a480fe-fdf2-8f06-b3bb-273e24faa6b7"
     - stage: horo
-      stageUuid: "aee28742-4b87-87e0-882f-e13c8bea7b82"
+      stageUuid: "fec2c88e-a8de-845c-a5a7-b3644bf4a412"
     - stage: seal
       stageUuid: "59b85b37-f327-80ed-b112-3f089134e0b0"
     - stage: uuid
-      stageUuid: "cdd20060-495a-890f-88f1-65286872c3f5"
+      stageUuid: "7fe1ddb3-8b9d-8f2b-ac39-ce8061b42ea4"
 version: 2
 ---
 # grade — sorting produce into quality classes

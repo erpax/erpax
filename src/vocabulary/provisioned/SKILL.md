@@ -2,11 +2,11 @@
 name: provisioned
 description: "Use when reasoning about provisioned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/provisioned"
-coordinate: "vocabulary/provisioned · 2/share · 7bfd0636"
-contentUuid: "2814a512-8481-511a-b4ec-4cd154307876"
-diamondUuid: "885201f8-a3b8-882b-9b7e-9cf7c60582c8"
-uuid: "7bfd0636-3999-8ab4-a5e1-5f03e6ce592e"
-horo: 2
+coordinate: "vocabulary/provisioned · 1/base · be38f75c"
+contentUuid: "ee16f82a-0702-54bc-ac6f-72d54f24f592"
+diamondUuid: "74dd7312-0b8d-8285-b213-6d66d2da9159"
+uuid: "be38f75c-49d0-84ac-8bd3-2add67ef93ce"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "09a788b3-1d0f-8d79-a6d8-85c825374e02"
+  computationUuid: "3b7208db-e42a-8736-880f-ccf9c79fc572"
   stages:
     - stage: path
       stageUuid: "d7f6587a-a405-8081-8c2c-5b446b3e1f02"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2d291392-380b-8fa6-8088-6ca3c0512854"
     - stage: horo
-      stageUuid: "1f2b36b6-6d95-80ab-800e-7230254d883f"
+      stageUuid: "e231eece-b8c4-8530-9e8c-60054a0cd13b"
     - stage: seal
       stageUuid: "4299250d-ddb6-8dac-b810-28a8115c20e0"
     - stage: uuid
-      stageUuid: "36f9ec85-6eb8-85c1-ba5a-0e19743e06fd"
+      stageUuid: "6087e17e-3c51-898d-a094-90c78bd9482e"
 version: 2
 ---
 # provisioned

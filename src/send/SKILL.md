@@ -2,11 +2,11 @@
 name: send
 description: "Use when reasoning about send as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: send
-coordinate: "send · 7/descent · 1fb8324c"
-contentUuid: "8259d241-5e1b-5292-bf89-ae4d1d4edc4f"
-diamondUuid: "ee5540da-fc6c-8938-bf7f-74f21ac51b7a"
-uuid: "1fb8324c-3c95-8a06-9696-9a4846470641"
-horo: 7
+coordinate: "send · 2/share · e94db2f3"
+contentUuid: "7b6ede54-3e7f-5678-beb2-7f5ce297840f"
+diamondUuid: "219a8289-ebac-819b-ad03-faa66c90ce04"
+uuid: "e94db2f3-f5e5-8802-bbbf-86b03a77543d"
+horo: 2
 typography:
   partition: send
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d66093d1-bb2e-88fd-9abd-5728c9d7fb77"
+  computationUuid: "3cc984ec-f22b-8505-82e8-49c4418d99f8"
   stages:
     - stage: path
       stageUuid: "249b6d2b-c700-851c-9d52-b4c0a8e4373a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f77793e6-fc39-87b2-8784-5ecfbb3e2bda"
     - stage: horo
-      stageUuid: "4d242d5d-353c-8df3-a16c-e669cd5cd18c"
+      stageUuid: "01f120c7-fc0c-8371-b124-53ad7cd4693e"
     - stage: seal
       stageUuid: "04434ce6-204a-843d-b4fb-008b94f9a6c5"
     - stage: uuid
-      stageUuid: "c4ca9388-5f53-8645-aeed-4f3195bbcf14"
+      stageUuid: "c4352f26-1ca9-8ae6-bb2b-4d0c51525994"
 version: 2
 ---
 # send

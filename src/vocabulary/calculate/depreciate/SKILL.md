@@ -2,18 +2,18 @@
 name: depreciate
 description: "Use when reasoning about depreciate — ports the etrima/erpax depreciation calculators verbatim (calculate, port): given cost, salvage, useful-life (and units for activity-based), compute the per-period charge by method"
 atomPath: "vocabulary/calculate/depreciate"
-coordinate: "vocabulary/calculate/depreciate · 4/weave · 1b7a178c"
-contentUuid: "98116cdd-d7d0-5fe5-a6e6-8c3d7279e47c"
-diamondUuid: "ccf7ec9e-69ca-8c51-bdb1-9a2310f6a623"
-uuid: "1b7a178c-c497-8879-b01d-443ab0db828a"
-horo: 4
+coordinate: "vocabulary/calculate/depreciate · 5/round · ee36b29f"
+contentUuid: "b080246f-babb-5596-b924-684d8ff6ff6a"
+diamondUuid: "1b9ff2d3-4a14-85fa-bf47-db3758be5598"
+uuid: "ee36b29f-6f72-82f6-928c-e6648d6ccaf6"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9d71fa5b-7d1f-810f-a1b8-5995f8c0edf6"
+  computationUuid: "c273a4cf-ef60-8e82-8293-1e793aa76340"
   stages:
     - stage: path
       stageUuid: "77e91b0c-24f9-843d-92a0-67a993c85081"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c391e1e4-148e-85ce-91d5-08ea04452294"
     - stage: horo
-      stageUuid: "c86fde85-2b25-8259-8fc6-171da507410f"
+      stageUuid: "959941f5-8d95-8054-8c1f-d0eea695eaed"
     - stage: seal
       stageUuid: "3d5bef02-950d-8fb8-8dfc-dc8cd8576e34"
     - stage: uuid
-      stageUuid: "d7a90e5a-aab9-89c1-8210-62da42c7e43d"
+      stageUuid: "e0c9cfa1-1742-8a53-9f63-bd1437755bc7"
 version: 2
 ---
 # depreciate — depreciation schedules (pure compute)

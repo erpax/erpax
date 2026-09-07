@@ -2,11 +2,11 @@
 name: imaging
 description: "Use when reasoning about imaging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: imaging
-coordinate: "imaging · 1/base · 78ab3639"
-contentUuid: "da0090fb-17d4-50d2-aa93-825bc4d59760"
-diamondUuid: "e6a9bc9c-f23f-8907-a802-d6e33f891287"
-uuid: "78ab3639-f1d4-8372-9897-d06cd164f7dd"
-horo: 1
+coordinate: "imaging · 7/descent · c8d7724f"
+contentUuid: "44dfe477-7c29-5879-a3de-6350f0a2fdca"
+diamondUuid: "1e081a5c-f94c-811c-aced-672110126f0f"
+uuid: "c8d7724f-c996-82dc-a9b1-f98a4a4dd16e"
+horo: 7
 typography:
   partition: imaging
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bc69c23b-f345-8800-a4c8-cfa9f3961599"
+  computationUuid: "251fe20f-b6cd-86c4-b998-8b6fd2c56cb2"
   stages:
     - stage: path
       stageUuid: "81edcc73-8cc2-801d-8de6-d133e5dc32db"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "26bfa820-5a9d-80fc-80b7-69759833bd13"
     - stage: horo
-      stageUuid: "7aff2cc2-87eb-811a-885f-4cc275ddd6a3"
+      stageUuid: "1d5ebaae-1d6f-83e0-b478-bbc1cc218251"
     - stage: seal
       stageUuid: "ff10fb05-c0b0-89bf-8966-27796afedd23"
     - stage: uuid
-      stageUuid: "7139a559-cf14-89fb-af95-adfd229ee59e"
+      stageUuid: "7b1a606c-8359-8195-a666-4d15ce0b0024"
 version: 2
 ---
 # imaging

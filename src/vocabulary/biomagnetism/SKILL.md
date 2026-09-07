@@ -2,18 +2,18 @@
 name: biomagnetism
 description: "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test."
 atomPath: "vocabulary/biomagnetism"
-coordinate: "vocabulary/biomagnetism · 1/base · 526b2076"
-contentUuid: "7355fe78-29a5-5ef8-a651-67d34ef3e634"
-diamondUuid: "06920989-0597-8115-b37a-79e8b4b28012"
-uuid: "526b2076-085c-8fe0-a665-c7653a970c7a"
-horo: 1
+coordinate: "vocabulary/biomagnetism · 8/crest · 31ecb07d"
+contentUuid: "a676a06a-516b-580a-b40e-d393f9fca77c"
+diamondUuid: "d56af829-2c0a-8fe6-a59c-d7c2d73a91f0"
+uuid: "31ecb07d-e9a7-8567-a354-2f008fc398f1"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 43
 standards: []
 bindings: []
 signatures:
-  computationUuid: "45e0edd5-3c8a-82b1-badf-aa6daf0b23cc"
+  computationUuid: "6e1a942e-98df-8762-82d9-b82486409ced"
   stages:
     - stage: path
       stageUuid: "f3497d9c-8928-8700-a93d-47082e156c99"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6bdec23e-5567-8217-9748-a6cd770ebe95"
     - stage: horo
-      stageUuid: "d69bdf8a-3813-8b85-bcc9-10fc6832157e"
+      stageUuid: "16c8f35a-d2c7-89ff-a7c6-f5c3d1665817"
     - stage: seal
       stageUuid: "93c82721-49cd-8561-9af0-874653d9f0d6"
     - stage: uuid
-      stageUuid: "85324bf0-70eb-8c8c-ab3f-541083c18c7d"
+      stageUuid: "8d52fc1c-04ff-8917-81cc-5fcfa0971a27"
 version: 2
 ---
 # biomagnetism — the body's real (but contained) magnetic field

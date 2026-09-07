@@ -2,18 +2,18 @@
 name: cells
 description: "Use when reasoning about cells — Four cells, each showing a value the corpus computes rather than stores: the content-uuid as a chip, the horo digit, the path as an account code, the seal as a badge."
 atomPath: "admin/ui/cells"
-coordinate: "admin/ui/cells · 5/round · c32810ff"
-contentUuid: "f2f054fa-0de1-5e9b-90e1-8c5cfb18a731"
-diamondUuid: "3adb4347-0d04-878b-b6eb-8153f65432e4"
-uuid: "c32810ff-6e60-8880-b775-f810a64b0f51"
-horo: 5
+coordinate: "admin/ui/cells · 2/share · 12f5e0e3"
+contentUuid: "b650bbaa-6758-5fcf-b14f-bf4a0419d0fc"
+diamondUuid: "6fac7eab-1603-8056-8e33-88a58542f51b"
+uuid: "12f5e0e3-21bb-8ef8-a569-77fa91ceabc6"
+horo: 2
 typography:
   partition: admin
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "08d0b4cf-99d1-8916-b223-99b23b12c74c"
+  computationUuid: "0fe453ec-ea20-83a0-bcad-6a50947b2b94"
   stages:
     - stage: path
       stageUuid: "afc3ce1c-e90a-8a82-9024-d2f05558d85c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "572cf3f2-0adb-8d3d-81ed-dc50add8c253"
     - stage: horo
-      stageUuid: "01dd3fb8-0091-887c-9497-d00e9f8af125"
+      stageUuid: "1ca5f7f9-3555-8d80-8e80-b3c7f25169d1"
     - stage: seal
       stageUuid: "7c494136-4b03-89a1-97ab-fb0482263c91"
     - stage: uuid
-      stageUuid: "71b8360e-7020-8da1-be09-021a1cf44fa0"
+      stageUuid: "73b831b8-ef0d-8064-8e07-70a2cb61c650"
 version: 2
 ---
 # admin/ui/cells — a list column renders the corpus's own coordinates, not a raw string

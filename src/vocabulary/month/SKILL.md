@@ -2,11 +2,11 @@
 name: month
 description: "Use when reasoning about month — Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1."
 atomPath: "vocabulary/month"
-coordinate: "vocabulary/month · 7/descent · 9ce9e77d"
-contentUuid: "7e7cbc3e-a092-5a93-a2cc-e240953db31d"
-diamondUuid: "105e95de-074a-89cf-ad7c-6dab1fa56a5e"
-uuid: "9ce9e77d-5f6f-826a-9a0d-203c2a5cafa9"
-horo: 7
+coordinate: "vocabulary/month · 8/crest · 0ad41c6b"
+contentUuid: "4e3f4a0a-3194-52d5-83c5-58a316e217ff"
+diamondUuid: "9d8e48f7-d58e-80d0-9ec5-f9ed68c68d11"
+uuid: "0ad41c6b-e8d5-8041-82d8-b3339c3b3314"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c199fdb2-356b-88ad-9ff8-0600cf7e41b0"
+  computationUuid: "55cb7782-967d-8a91-9306-5b3d82684be3"
   stages:
     - stage: path
       stageUuid: "58cb79ad-0815-85ab-9bed-2772c05a205e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f659fdc9-9010-85d0-b959-18cf9314e52c"
     - stage: horo
-      stageUuid: "1ebe1997-1042-8e56-a155-761472a8008b"
+      stageUuid: "177def58-8532-85cf-bf34-2fe4d924f43d"
     - stage: seal
       stageUuid: "9cc9e06a-cda5-8c92-88db-ddc9e01a499e"
     - stage: uuid
-      stageUuid: "35c1d396-47dc-8d92-a2b5-6f58cf75b67b"
+      stageUuid: "7243a01f-2ab5-8145-856c-536fbfafbf27"
 version: 2
 ---
 # month

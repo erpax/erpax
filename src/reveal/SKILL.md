@@ -2,11 +2,11 @@
 name: reveal
 description: "Use when looking for structure the corpus grew on its own — emergence, the development exhale's reward. As the forge keeps wiring atoms (↑entropy), past a density threshold a pattern appears that no one authored — a closed triad of three mutually-bound atoms, a trinity revealed by the matrix itself. reveal scans the live uuid-matrix edge graph for these triangles and surfaces them, each keyed by its merged binding-uuid and scored by a horo composition. Honest — a heuristic pattern-finder over the wiring, not a proof the triad means anything."
 atomPath: reveal
-coordinate: "reveal · 8/crest · 9ce23046"
-contentUuid: "84cbc611-9765-57b9-b9b4-98403e936f61"
-diamondUuid: "ff94089a-66c2-83cd-b896-6d7dfd37f086"
-uuid: "9ce23046-654a-8f98-8476-6f0dcda3a44d"
-horo: 8
+coordinate: "reveal · 2/share · 7e25acf1"
+contentUuid: "05f84fd1-9d63-5b57-ab44-13534d431edd"
+diamondUuid: "6f0b1409-750e-8b66-9c8e-8d5363b560a0"
+uuid: "7e25acf1-23d2-8cf7-9eb9-b2a5bd0d5c33"
+horo: 2
 typography:
   partition: reveal
   bondDegree: 48
@@ -14,7 +14,7 @@ standards:
   - "the structure lives in the wiring — a revealed triad is read from the live matrix edges, never asserted (the @/entropy reciprocity, the RFC 9562 §5.8 content-uuid key)"
 bindings: []
 signatures:
-  computationUuid: "f69693e2-e837-8cad-af8e-a8086763d965"
+  computationUuid: "81e8cbfc-5764-8c49-af80-a075d07d7fe1"
   stages:
     - stage: path
       stageUuid: "a0f74e8e-6c8b-8857-9404-4323b2d506eb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ab092948-d022-8daf-99fa-4e0f96c662f5"
     - stage: horo
-      stageUuid: "3262c7c1-023c-82fc-8e3c-ec1dbccfa84b"
+      stageUuid: "0e2a39d4-19bb-816c-a6b2-4cda1350c959"
     - stage: seal
       stageUuid: "fb999ab7-f872-8a0d-8e0e-c2d8ae0151f1"
     - stage: uuid
-      stageUuid: "64a8306a-f085-87ff-9ac7-dfa948a989ba"
+      stageUuid: "5042f399-5d3f-8906-aa8c-2979fc925e6a"
 version: 2
 ---
 # reveal — emergence: the pattern the forge reveals when it holds enough entropy

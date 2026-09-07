@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "followee",
-    "uuid": "0bf9b955-56de-8b7e-98e6-5c59a98f5fc8",
+    "uuid": "1fcaae41-e05c-8bee-bb5a-bd4e43752a7b",
     "words": [
       "followee"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about followee — A sub property of object. The person or organization being followed.",
-    "uuid": "2c664e08-5a2b-83ac-8ddb-3abcca8b7a83",
+    "uuid": "0820acaa-4cc3-8bce-8c14-03c16443a732",
     "words": [
       "use",
       "when",

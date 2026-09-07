@@ -2,11 +2,11 @@
 name: people
 description: "Use when reasoning about people as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/people"
-coordinate: "vocabulary/people · 4/weave · d61de3c8"
-contentUuid: "e06b6b70-8e53-590a-a25c-3c74fa1b2632"
-diamondUuid: "3e957ecc-b3fc-86ff-9d34-bf4bc960e77c"
-uuid: "d61de3c8-22c6-8634-8475-c7944c59f574"
-horo: 4
+coordinate: "vocabulary/people · 5/round · c2e8299d"
+contentUuid: "3d8bb00c-0dc1-54e8-9421-82ec9de76f5e"
+diamondUuid: "14cedc56-c048-8274-ab40-0711bbddc44a"
+uuid: "c2e8299d-32b0-865c-9d32-fde1c0441f17"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "110a48b3-ef00-83cb-acd0-c069f0b2e58f"
+  computationUuid: "c3f98b2f-4c27-89ec-9b4f-00b05e1a5980"
   stages:
     - stage: path
       stageUuid: "c13b7ae4-e30e-8d46-9265-f8bbfae5d69d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a7818d21-6399-8727-8c3f-a67dd2bd0f69"
     - stage: horo
-      stageUuid: "545bcc55-8581-84a1-9193-7d50475a8803"
+      stageUuid: "dade3e2e-1098-82ee-8fb7-d8c24fa4c8c6"
     - stage: seal
       stageUuid: "c3cee961-9e36-8d1d-a179-f61726c2b28e"
     - stage: uuid
-      stageUuid: "b1b49c1a-2186-88e4-bfdf-013a10cfe182"
+      stageUuid: "305db021-5286-807f-b8d8-ef0851d9dc0c"
 version: 2
 ---
 # people

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diagnosis",
-    "uuid": "1e2d112b-83ed-87c0-b7a5-64ad1e8173e4",
+    "uuid": "d9f2436d-8410-8d59-bc9e-c46aff3bad2d",
     "words": [
       "diagnosis"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about diagnosis — One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
-    "uuid": "42ac983b-e989-870d-9c5f-dcda58155b31",
+    "uuid": "29f0f5ea-7369-827b-80e2-9e33fdbfcdc2",
     "words": [
       "use",
       "when",

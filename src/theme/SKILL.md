@@ -2,18 +2,18 @@
 name: theme
 description: "Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious."
 atomPath: theme
-coordinate: "theme · 8/crest · e557d8ef"
-contentUuid: "dab08b06-9cd5-5400-a7c5-19130331529a"
-diamondUuid: "c4a585b2-4fde-8ebc-aa8e-756eca092a04"
-uuid: "e557d8ef-886f-807e-a3fc-440edd152ccc"
-horo: 8
+coordinate: "theme · 2/share · 3a63a0d1"
+contentUuid: "e565801d-79bc-5e0b-bc96-ca3dd9b5709a"
+diamondUuid: "4c8e5345-7470-8a19-bd42-1da5d78ce586"
+uuid: "3a63a0d1-7b76-86fe-89a2-6844c2cc14d5"
+horo: 2
 typography:
   partition: theme
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "82f77a86-938a-8cda-a4e3-afcc82abe69e"
+  computationUuid: "4135351a-277b-84b8-b665-ab3d7d2effea"
   stages:
     - stage: path
       stageUuid: "cadbfa49-91a5-8389-a84b-d9a10886c100"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a0410a36-c9eb-84c2-9952-33083f76f463"
     - stage: horo
-      stageUuid: "2ccd73f2-5329-859a-850b-19f14d205625"
+      stageUuid: "1b9a426f-47d3-8d48-9e12-95ffc71ec33b"
     - stage: seal
       stageUuid: "f0d763c2-0f79-8235-bd4c-4339dddbaee7"
     - stage: uuid
-      stageUuid: "1c79c694-8d64-82a8-bd6e-5f0f6382e059"
+      stageUuid: "db692e81-ce21-83e8-bac3-aed8c0265bfd"
 version: 2
 ---
 # theme

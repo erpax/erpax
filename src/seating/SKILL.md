@@ -2,11 +2,11 @@
 name: seating
 description: "Use when reasoning about seating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: seating
-coordinate: "seating · 1/base · 3ab5d84a"
-contentUuid: "78823a08-024b-507a-bbe6-d84e869aa686"
-diamondUuid: "aa12ca6e-1e77-8cc0-908c-d43a00eeb165"
-uuid: "3ab5d84a-1ae1-8ada-8bed-6d793a123129"
-horo: 1
+coordinate: "seating · 7/descent · 999df2cb"
+contentUuid: "bb014752-85a8-52d7-8727-a6eeff353e88"
+diamondUuid: "0efc02b5-91be-87b7-924f-6c5c915b8f07"
+uuid: "999df2cb-d5da-849d-bfea-8b105dbc2be5"
+horo: 7
 typography:
   partition: seating
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "96a69efa-dd57-815c-8e0c-ba0f2b291de9"
+  computationUuid: "23ef750c-5039-81c5-9d99-62765a730ead"
   stages:
     - stage: path
       stageUuid: "04642440-16a1-8e23-b94b-629be81bf1bb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5e3b2b8b-442e-8cdc-9801-874202be7bcf"
     - stage: horo
-      stageUuid: "2bfe024b-f6ec-849d-8e5a-da4c0b233bff"
+      stageUuid: "5858860c-ece5-8c44-93bb-e1cfa1fc5cbd"
     - stage: seal
       stageUuid: "e151609e-8f5b-8caf-9522-f725d0ff2930"
     - stage: uuid
-      stageUuid: "1e24aaf2-3aa3-844f-a977-9d3c99f2bc3f"
+      stageUuid: "9fecbe31-331b-8c76-8f6d-dfc158bcf22d"
 version: 2
 ---
 # seating

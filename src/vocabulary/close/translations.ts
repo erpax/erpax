@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "close",
-    "uuid": "eda7c373-5242-8981-a003-b00ee2bf2c54",
+    "uuid": "4c82bddd-84a9-8abf-864d-ced2f6ce22c2",
     "words": [
       "close"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the forbidding boundary state in erpax — fiscal period locked, document sealed, shift/stream finished, month-end close. The universal root of the closed state; dual of open.",
-    "uuid": "e6ba3cde-4d7f-8559-a285-df664df69295",
+    "uuid": "efd52c5d-eb11-8b19-af64-fe9e3608625f",
     "words": [
       "use",
       "when",

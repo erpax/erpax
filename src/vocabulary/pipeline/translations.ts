@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pipeline",
-    "uuid": "99b00eb0-5675-8a8c-af47-67516a294abe",
+    "uuid": "6fc92c5e-3578-8a51-953f-4b6f91c4a9dd",
     "words": [
       "pipeline"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking the progression of deals through sales stages — lead → qualified → proposal → negotiation → won/lost. The sales funnel state at each stage with value, probability, and close date.",
-    "uuid": "a10df5c3-0e1f-8c23-b48a-640e04913e5a",
+    "uuid": "ec43aac8-f84d-8a80-ae20-086653c1f3c6",
     "words": [
       "use",
       "when",

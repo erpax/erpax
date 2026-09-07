@@ -2,11 +2,11 @@
 name: buyer
 description: "Use when reasoning about buyer — A sub property of participant. The participant/person/organization that bought the object."
 atomPath: "vocabulary/buyer"
-coordinate: "vocabulary/buyer · 8/crest · 8e2159fb"
-contentUuid: "20c60b8c-3b35-5e64-beab-68cf51af795a"
-diamondUuid: "c49e5bb8-b86b-81f9-a5bf-043442020ab2"
-uuid: "8e2159fb-6ca0-840c-914d-d7c677b39ef1"
-horo: 8
+coordinate: "vocabulary/buyer · 1/base · 6794c5a1"
+contentUuid: "3ef4baea-e89c-5f14-a139-3827f6110622"
+diamondUuid: "3cb302b9-454a-8744-8cce-fb6095c37a4c"
+uuid: "6794c5a1-1902-8873-98a7-965838567c6c"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dd96eac5-3554-89b5-9aea-fc72de4f380c"
+  computationUuid: "ca6bab73-3606-8c76-87e3-1c4be88a2ab0"
   stages:
     - stage: path
       stageUuid: "c5bd7408-848e-830d-be48-7e0abb4c1dd0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "41e05a78-3888-880e-828e-0f2f1d2780b5"
     - stage: horo
-      stageUuid: "a50185d8-f458-8515-a4a1-0dfaef3fb714"
+      stageUuid: "5d1a9f87-c53c-85d7-8473-51a91b57753c"
     - stage: seal
       stageUuid: "5f6ee6b4-b887-8e0f-b514-15af42cefba8"
     - stage: uuid
-      stageUuid: "9e77551a-4e98-8757-973c-c44a6fe4b264"
+      stageUuid: "8b5a59eb-6727-85a4-98e0-096988d7da1b"
 version: 2
 ---
 # buyer

@@ -2,11 +2,11 @@
 name: gears
 description: "Use when reasoning about gears as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gears"
-coordinate: "vocabulary/gears · 7/descent · 7aebe08c"
-contentUuid: "7d939ad8-ebfb-5afb-bece-83b3ea429d6a"
-diamondUuid: "b022db8f-eb57-8915-8f69-fbceab2ae307"
-uuid: "7aebe08c-f4f3-8ba4-9830-251f9324172f"
-horo: 7
+coordinate: "vocabulary/gears · 2/share · c1a1a8cf"
+contentUuid: "66760638-0fe8-593c-ad19-59db39afd196"
+diamondUuid: "21062a9e-01bf-8bf5-a233-a319dfd9383c"
+uuid: "c1a1a8cf-5c24-8221-a049-94e1c994f49e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7515a761-60d8-89d3-8daa-df15cbffc4a4"
+  computationUuid: "6342c503-5aed-8770-8190-cf5dc894ce3d"
   stages:
     - stage: path
       stageUuid: "99b6b237-09de-875a-8fd5-bdf3c66672de"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cc5c5a8d-5c51-83f6-8640-02644dad26c4"
     - stage: horo
-      stageUuid: "be0215eb-2b01-8a33-9a41-c9bbe4f503a0"
+      stageUuid: "e952ae2e-4f15-8ea8-9afd-5ed1553ff478"
     - stage: seal
       stageUuid: "fb1eb231-8999-8c39-ba0d-e39348ba4d6c"
     - stage: uuid
-      stageUuid: "43c5dd00-f7b6-8cfc-8a0a-661108351fc7"
+      stageUuid: "fcfa2852-f7b3-8207-9b9e-7259301e875e"
 version: 2
 ---
 # gears

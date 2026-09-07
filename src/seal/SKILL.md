@@ -2,11 +2,11 @@
 name: seal
 description: "Use when reasoning about the whole-corpus green verdict — a seal is the cross of every guardian; it is SEALED only when all guardians hold, fails closed on an empty set, and is exactly what the auto-commit/push waves gate on. The state in which the tree may be saved, committed, and pushed."
 atomPath: seal
-coordinate: "seal · 2/share · ea3aa460"
-contentUuid: "64b8ffcf-6301-5d43-8078-a0088e36ff69"
-diamondUuid: "3708b431-62ac-8bd5-982f-f32f6ecd4ab3"
-uuid: "ea3aa460-6e0f-878c-abf7-deac93d3ddbe"
-horo: 2
+coordinate: "seal · 8/crest · 509c0421"
+contentUuid: "8a8f975f-b88d-5c3d-aa40-57b9e98ef195"
+diamondUuid: "2d90f09e-6bc4-8601-8f34-4e4152fa8d58"
+uuid: "509c0421-a072-89bf-a5a1-43bc994827e3"
+horo: 8
 typography:
   partition: seal
   bondDegree: 194
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a5fd8e84-9814-86d2-8484-d534d1aadf1c"
+  computationUuid: "4682ae98-023c-85fc-83e4-3a4af824c8fd"
   stages:
     - stage: path
       stageUuid: "f6907831-0fbf-8948-8dd4-ea9b45f73e4e"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "37dee7ba-f002-8c01-8508-5e9e04cfc31d"
     - stage: horo
-      stageUuid: "53ca8f69-e0b8-852c-94fe-51a4fdf2999e"
+      stageUuid: "a73a96ae-9289-8ae7-9274-f23d01b3411b"
     - stage: seal
       stageUuid: "56658faa-27d4-8d85-af5e-acf270d33643"
     - stage: uuid
-      stageUuid: "fe301a93-3f61-80a7-8ddf-aea5e7c44588"
+      stageUuid: "ec6ef212-d08c-896b-a4e4-4b6ca24f50fb"
 version: 2
 ---
 # seal — all guardians hold, or it is not sealed

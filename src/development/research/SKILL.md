@@ -2,18 +2,18 @@
 name: research
 description: "Use when reasoning about R&D from the development side — research that precedes a build; one direction of the symmetric research↔development cross, which is one entangled binding (X/Y equals Y/X)."
 atomPath: "development/research"
-coordinate: "development/research · 4/weave · 6f5f3007"
-contentUuid: "e2833ebc-c1e4-55dd-8a15-f2fed92f2e12"
-diamondUuid: "03e71315-7ba2-8e11-ab0b-6622645fb2a4"
-uuid: "6f5f3007-2fb2-83b3-abd4-7aafd4ffa2d5"
-horo: 4
+coordinate: "development/research · 2/share · f6054f6c"
+contentUuid: "e044bb5e-5437-5043-9517-09f5da24d8b9"
+diamondUuid: "0ebff84a-e2fe-8c7d-8acf-ebce2eddc90e"
+uuid: "f6054f6c-d9f5-8825-affe-8eca4c42eeaf"
+horo: 2
 typography:
   partition: development
   bondDegree: 160
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ddb8e646-7a1d-8826-b0e3-ff92d8c94cf3"
+  computationUuid: "1baf4b63-ed3b-8453-b8f2-d546b2e9c5fa"
   stages:
     - stage: path
       stageUuid: "a7fe0ef4-a5e1-8494-982d-9ea202bff611"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bdebf88d-f65e-8477-81a3-5f4b1c034584"
     - stage: horo
-      stageUuid: "10aacb18-2b04-8beb-a42d-0c7b86ec8ca5"
+      stageUuid: "d9b1bade-7f03-8da9-846a-0c228de5923a"
     - stage: seal
       stageUuid: "b5367e6a-57b6-863f-bbb9-298c7cc7db9b"
     - stage: uuid
-      stageUuid: "02b9060d-d300-875a-91dc-4139094c1f8a"
+      stageUuid: "4ed6eb34-3a41-8863-9e54-6c36bcc3aad9"
 version: 2
 ---
 # development/research — R&D (research → development)

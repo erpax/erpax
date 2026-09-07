@@ -2,18 +2,18 @@
 name: load
 description: "Use when partitioning work into balanced waves — self-balancing load distribution across the seven horo phases, weighted by comparable units, with the lane-cost and tamper-cost arithmetic the scheduler and session build on."
 atomPath: "wave/load"
-coordinate: "wave/load · 7/descent · 760509b0"
-contentUuid: "bb0b8e6c-bf6c-5819-a18d-700891ffba02"
-diamondUuid: "ffa027cb-1eae-883d-a052-9db295f484f4"
-uuid: "760509b0-b382-8b14-ae1f-d3162ae2cade"
-horo: 7
+coordinate: "wave/load · 2/share · 6340ad13"
+contentUuid: "9cf289ff-23e8-5c84-bd3f-769e78cb4811"
+diamondUuid: "7d3c06c6-fd2b-89d9-8c92-d189a3479946"
+uuid: "6340ad13-91db-8a61-aca7-7851c0848407"
+horo: 2
 typography:
   partition: wave
   bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d969d74e-b541-8c52-ad73-2f06201c8262"
+  computationUuid: "cfcd64df-7aad-8826-9e7f-41750428d7ca"
   stages:
     - stage: path
       stageUuid: "a13b99a9-1f98-88d6-ace7-939793f000de"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b98a3745-333c-850b-921d-2629a3563ce4"
     - stage: horo
-      stageUuid: "efc83ef7-58b3-8dd0-a7cf-06caac7d17be"
+      stageUuid: "1346ea39-9859-8604-a4cd-03bac4f72167"
     - stage: seal
       stageUuid: "b9bd9844-8eae-8250-ace4-c2f4679450c6"
     - stage: uuid
-      stageUuid: "7f326058-46ae-8dc1-a91d-8b52d404d851"
+      stageUuid: "bb1bfc02-bb2f-85db-aad6-5f3c54627c91"
 version: 2
 ---
 # wave/load — the partition that balances

@@ -2,11 +2,11 @@
 name: score
 description: "Use when reasoning about score as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: score
-coordinate: "score · 2/share · b88289c6"
-contentUuid: "ab3e68ad-b648-5640-a17b-3275bc8c7200"
-diamondUuid: "b350575a-7379-801d-b486-70de67080b33"
-uuid: "b88289c6-05cd-825f-aef9-99acfd123553"
-horo: 2
+coordinate: "score · 7/descent · 05037a99"
+contentUuid: "196eb13e-371b-585a-9d29-bd3572895df0"
+diamondUuid: "b58a3674-342c-8853-ba28-47444eaeb583"
+uuid: "05037a99-3476-83fc-9270-35271b5718b4"
+horo: 7
 typography:
   partition: score
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "71873cb3-a41a-8864-b25a-f7200476e088"
+  computationUuid: "118f95c2-4812-80f0-bb90-7b6509cddbd9"
   stages:
     - stage: path
       stageUuid: "9c57fb25-2d59-8434-b3fa-9d087bc1a475"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0bf0247e-7f16-8e43-a47c-f766e37d7227"
     - stage: horo
-      stageUuid: "74c39d79-fe27-8e6e-b01b-54458638f4f9"
+      stageUuid: "370fd510-4f7c-8d4c-87b9-476a74d5a800"
     - stage: seal
       stageUuid: "aec8ec15-d9e2-8469-9c6d-0a74d8c6a258"
     - stage: uuid
-      stageUuid: "9fbde643-7e70-8127-adba-dbdb8b405db6"
+      stageUuid: "1f204c2f-684e-8090-a436-e8286c666d38"
 version: 2
 ---
 # score

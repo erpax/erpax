@@ -2,11 +2,11 @@
 name: apireference
 description: "Use when reasoning about apireference as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/apireference"
-coordinate: "vocabulary/apireference · 5/round · b16a9f69"
-contentUuid: "ec18ddf7-9993-573d-b44d-f6fdaa1185ee"
-diamondUuid: "202533dc-71cd-859c-a46d-18ea99ecaaef"
-uuid: "b16a9f69-0e0c-8457-a401-0ed4d5ce706d"
-horo: 5
+coordinate: "vocabulary/apireference · 7/descent · 70f1d25d"
+contentUuid: "4cd559e2-de31-53ef-acfe-759184145cec"
+diamondUuid: "9ba4eec6-a986-8b43-9455-a216757a1e09"
+uuid: "70f1d25d-261b-8ff5-b96f-6041fa0bd906"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "39d3826e-fc78-8242-84b6-2bd07ff49555"
+  computationUuid: "c7b1b226-6b53-8ad7-8681-5b18f3fd8005"
   stages:
     - stage: path
       stageUuid: "1758b0a7-7abd-88f1-a170-2da0ff17a5b5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4b391adf-a9e6-8ae8-8b91-3846b861e989"
     - stage: horo
-      stageUuid: "da538567-3a38-8674-b58b-068107831f53"
+      stageUuid: "9a46a2c5-52e2-8bf9-b46e-94cd58523e33"
     - stage: seal
       stageUuid: "c620516f-f1ec-8f97-9769-3200f6747ff6"
     - stage: uuid
-      stageUuid: "3ed675cc-5b38-8788-a762-c17e5138a1ef"
+      stageUuid: "32e8c827-d03b-8c0a-9eda-c2c403147b2d"
 version: 2
 ---
 # apireference

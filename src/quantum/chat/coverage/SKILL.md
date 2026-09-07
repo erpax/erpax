@@ -2,11 +2,11 @@
 name: coverage
 description: Use when reasoning about coverage — Coverage calculation — measure answered question fraction
 atomPath: "quantum/chat/coverage"
-coordinate: "quantum/chat/coverage · 4/weave · 25ac42d2"
-contentUuid: "44304a12-c90b-5046-82fc-c81acaca4f0d"
+coordinate: "quantum/chat/coverage · 8/crest · e3cee0c8"
+contentUuid: "44af0e7f-9593-5cbf-b9c5-810ef5857643"
 diamondUuid: "31dcb672-4746-8334-bb26-cd9d898bec64"
-uuid: "25ac42d2-a456-8bb5-803d-e1d91e0976b5"
-horo: 4
+uuid: "e3cee0c8-ff8c-8bd8-bc52-1ce4cc2e43d3"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 81
@@ -51,11 +51,11 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "c2a1701c-67dd-8a0b-868d-8e5b52e99038"
-    contentUuid: "44304a12-c90b-5046-82fc-c81acaca4f0d"
+    contentUuid: "44af0e7f-9593-5cbf-b9c5-810ef5857643"
 version: 2
 ---
 # quantum/chat/coverage
 
 Coverage calculation for chat threads — measure answered question fraction.
 
-<sub>content-uuid `44304a12-c90b-5046-82fc-c81acaca4f0d` · account `quantum/chat/coverage` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `44af0e7f-9593-5cbf-b9c5-810ef5857643` · account `quantum/chat/coverage` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

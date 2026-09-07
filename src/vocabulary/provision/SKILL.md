@@ -2,18 +2,18 @@
 name: provision
 description: "Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37"
 atomPath: "vocabulary/provision"
-coordinate: "vocabulary/provision · 1/base · 64d51e7e"
-contentUuid: "38076221-5665-5647-83b4-aeb578e74257"
-diamondUuid: "0d794ab5-c674-8cc0-b76e-ddaea6c04b66"
-uuid: "64d51e7e-0c36-8449-aacd-8e45451d25e1"
-horo: 1
+coordinate: "vocabulary/provision · 8/crest · ded38f79"
+contentUuid: "603e03a3-d2c7-52c5-b847-073e825b143f"
+diamondUuid: "8d582544-0696-89a7-8702-9a9a53f13bf5"
+uuid: "ded38f79-ae1f-874f-b5cd-32e1f6938a6b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "91d47aa3-76f0-8cc2-87cf-233e23eb301e"
+  computationUuid: "0288f916-972d-8db5-8a6e-ef255ae13397"
   stages:
     - stage: path
       stageUuid: "df55e55b-c7c6-8f64-9cff-55c2e82ab697"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bb77cdff-d639-8332-a834-40300b5aa24d"
     - stage: horo
-      stageUuid: "d1eea1d0-2643-8380-83b2-c89cb4720d98"
+      stageUuid: "5b8aff79-b3f3-8c64-b001-092905591896"
     - stage: seal
       stageUuid: "ac93e26c-7c71-89fc-ac7d-dc9df48551b4"
     - stage: uuid
-      stageUuid: "798915f3-1392-8a1b-9f4a-19f912751951"
+      stageUuid: "3dec1f57-2aec-862a-bcd2-2c7ea2268746"
 version: 2
 ---
 # provision

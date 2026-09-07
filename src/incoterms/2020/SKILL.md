@@ -2,11 +2,11 @@
 name: "2020"
 description: Use when implementing or referencing INCOTERMS 2020.
 atomPath: "incoterms/2020"
-coordinate: "incoterms/2020 · 1/base · 905bba9d"
-contentUuid: "d9466b8f-d6e0-5f5b-b5af-1b261e859464"
-diamondUuid: "e66e6298-6ab9-8d8f-b065-f60a5d433dfd"
-uuid: "905bba9d-d648-8c8d-8f03-b51e9875b62d"
-horo: 1
+coordinate: "incoterms/2020 · 4/weave · 09331946"
+contentUuid: "936c0419-543a-50eb-bf7e-55c302449e20"
+diamondUuid: "66bbc0b6-5363-80b1-8c83-b934b29f9929"
+uuid: "09331946-699c-8f10-b594-1805dc0f375d"
+horo: 4
 typography:
   partition: incoterms
   bondDegree: 6
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5300d17d-877b-8867-aeae-e7eb4701ad16"
+  computationUuid: "3189fcc1-062b-8afe-8ed9-a1bb6fd33eb1"
   stages:
     - stage: path
       stageUuid: "df4f13a5-87ea-850c-b3f9-b4a9aeaa2eaa"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "1634edfc-d2bf-8282-a7f7-a4d8e0745434"
     - stage: horo
-      stageUuid: "d791e2c6-d066-8b78-a624-98cf2ef2e210"
+      stageUuid: "4b09650e-b843-8a80-b47f-382d4d817c63"
     - stage: seal
       stageUuid: "bc5c7bce-a07b-891e-96de-7b7acde63fc6"
     - stage: uuid
-      stageUuid: "89120691-218e-8ab8-aa9a-09da40d8a760"
+      stageUuid: "5ebbbfd4-dd05-83b7-9075-cb01730578e9"
 version: 2
 ---
 # INCOTERMS 2020

@@ -2,18 +2,18 @@
 name: number
 description: "Use when reasoning about number — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
 atomPath: "blocks/form/number"
-coordinate: "blocks/form/number · 7/descent · e752fb00"
-contentUuid: "efbbd399-fc2c-5d97-9e15-9d8db21c5a36"
-diamondUuid: "3515ba8b-94be-8fb8-b3a7-b5a932fd5729"
-uuid: "e752fb00-1a26-8c02-ba2a-28831ee81ab3"
-horo: 7
+coordinate: "blocks/form/number · 4/weave · 303b55e1"
+contentUuid: "22580cc9-9dc6-5eea-8de1-030ee8ba5d75"
+diamondUuid: "7d670076-e897-8e1e-8187-52a18f01603e"
+uuid: "303b55e1-6d0b-8293-af91-0fb870aa2ec9"
+horo: 4
 typography:
   partition: blocks
   bondDegree: 226
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0acec3ea-b7c2-8dff-9ba0-ca9cca2241e4"
+  computationUuid: "9ebdb2fd-dd14-8368-a71a-08b3219561b4"
   stages:
     - stage: path
       stageUuid: "948ab81e-37a6-8c3b-9b82-1f5f46446f5f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e51eefcf-b51f-8498-ac46-2573a4b4ee1e"
     - stage: horo
-      stageUuid: "4a2eb407-3289-8c53-8070-0dbb0e2cbfc4"
+      stageUuid: "84c81253-5043-88ab-b22a-40f7c8775eb5"
     - stage: seal
       stageUuid: "bf02deea-a937-8951-a682-0d80e5ff5de8"
     - stage: uuid
-      stageUuid: "d1a348ac-ffeb-888b-8092-7f2f86ff0ee6"
+      stageUuid: "64a06981-87fa-8dc6-a9d1-27f66372556f"
 version: 2
 ---
 # blocks/form/number — the label names the control, or the control has no name

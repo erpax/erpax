@@ -2,18 +2,18 @@
 name: polarity
 description: "Use when reasoning about the two directions of the rodin doubling cycle — 3 and 6 are the polarity boundaries: forward helix (×2, cyan, outbound/give) ↔ reverse helix (×5, magenta, inbound/take). The mirror pair the coil winds between. Nested under rodin."
 atomPath: "rodin/polarity"
-coordinate: "rodin/polarity · 5/round · 8ab2534d"
-contentUuid: "005098bd-aba1-56eb-b1ae-6cef72fe426a"
-diamondUuid: "8474de53-67e8-8c3f-941d-773f54826eba"
-uuid: "8ab2534d-8790-873d-8995-78e3acccebf6"
-horo: 5
+coordinate: "rodin/polarity · 2/share · 9c7494f5"
+contentUuid: "29e04c35-c1dc-5aee-a25e-bd23e98af966"
+diamondUuid: "8b204065-1dac-87e8-82b1-2626601240f4"
+uuid: "9c7494f5-c5e3-8a3f-a5f3-dbf7031a7a9e"
+horo: 2
 typography:
   partition: rodin
   bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "778b1658-f4d6-8e6d-bbb6-f2f8af4ed798"
+  computationUuid: "8c3de361-d152-8a00-b80c-9d85d08dab0d"
   stages:
     - stage: path
       stageUuid: "428e806c-9644-85e1-86f8-0b7e468c0d3d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5408e019-8353-85fc-9a92-c97497cd6acc"
     - stage: horo
-      stageUuid: "a0ca1899-42d2-8a2d-823e-84321dabc655"
+      stageUuid: "b0112a1e-f62a-8b20-9fca-86b21b2bc0ff"
     - stage: seal
       stageUuid: "cc52bc7e-59e9-8077-aa20-4ddb623d6b9f"
     - stage: uuid
-      stageUuid: "64d8946a-c908-82bc-a2c4-03ef049cb058"
+      stageUuid: "ee4fdeb0-4661-837b-a845-a11325c721d5"
 version: 2
 ---
 # polarity — the 3↔6 boundary (forward ×2 ↔ reverse ×5)

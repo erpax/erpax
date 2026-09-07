@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attestation",
-    "uuid": "850ef50c-40b7-8982-978c-7aec4e763660",
+    "uuid": "552abc05-00d1-8f79-898a-43f6215ab681",
     "words": [
       "attestation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one attestation — the singular model of the attestations collection (the plural store); a signed assertion that a statement or record is true.",
-    "uuid": "60d754c2-ebbc-83ed-9c08-832fdd0431e1",
+    "uuid": "78d3aaf9-1b31-8dad-a5ba-aa7f887fac86",
     "words": [
       "use",
       "when",

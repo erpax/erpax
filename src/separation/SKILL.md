@@ -2,11 +2,11 @@
 name: separation
 description: "Use when checking the separation of powers — that no single actor holds two of the legislative, executive, or judicial branches; the anti-corruption segregation-of-duties invariant applied at the scale of the state."
 atomPath: separation
-coordinate: "separation · 2/share · 267ad68d"
-contentUuid: "34bf8bdb-4a97-5c8d-b682-a209e5f5a9c7"
-diamondUuid: "703c7999-8784-8c3f-aa6c-2b1416834e53"
-uuid: "267ad68d-1a3d-8345-9717-dbaf09ca97e7"
-horo: 2
+coordinate: "separation · 4/weave · c8196d07"
+contentUuid: "dbc8c689-2f98-5fa5-a9e9-acd8ad13d554"
+diamondUuid: "11a8a4d8-a8d0-8b14-9146-4d191b82a4e8"
+uuid: "c8196d07-d57b-8060-ae62-b7c12df8d733"
+horo: 4
 typography:
   partition: separation
   bondDegree: 29
@@ -15,7 +15,7 @@ standards:
   - "SOX §404 segregation-of-duties (the same invariant, public-office scale)"
 bindings: []
 signatures:
-  computationUuid: "822dc58f-b3e6-845a-935e-3eee23dc8c1d"
+  computationUuid: "b4620d6f-c107-8758-9501-45de4f950556"
   stages:
     - stage: path
       stageUuid: "a5700057-d58d-822e-a0cb-8d50ac3fc025"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f8f9ff1c-ba37-8238-abab-5ff1ff34f5b4"
     - stage: horo
-      stageUuid: "9d61e0e3-3174-818b-82fd-9b7caa363ba8"
+      stageUuid: "fb668700-2ba0-8e68-88eb-553d69c3e0fd"
     - stage: seal
       stageUuid: "ce33e633-06c7-84dc-8ca6-43b258fb8381"
     - stage: uuid
-      stageUuid: "309b469b-454e-8246-bf88-6c16ee362109"
+      stageUuid: "9fa853ee-d739-8611-a13c-ecb9573e4316"
 version: 2
 ---
 # separation — the separation of powers, the SoD invariant at the scale of the state

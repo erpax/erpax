@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chat",
-    "uuid": "be5072ab-297a-86df-bdb8-e7e0d0fa14b1",
+    "uuid": "31bf8817-2ee1-80f4-b0f2-d58c3616f8c0",
     "words": [
       "chat"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when agents converse — an ordered thread of content-uuid messages between agent ids; each message is a communication, the thread tamper-evident via the quantum chat chain.",
-    "uuid": "66339089-248b-8215-be0c-45ac91e1513c",
+    "uuid": "a4f725b7-e237-8f63-959d-e29e65ffd6f4",
     "words": [
       "use",
       "when",

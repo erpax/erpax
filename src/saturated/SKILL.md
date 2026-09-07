@@ -2,11 +2,11 @@
 name: saturated
 description: "Use when reasoning about saturated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: saturated
-coordinate: "saturated · 4/weave · 1b26f181"
-contentUuid: "01294dc9-1407-53c0-924d-7e9d3c943fbf"
-diamondUuid: "d24d0dab-9966-8766-87fe-e8fd2cdd3d5c"
-uuid: "1b26f181-cb55-8178-a015-85902eab9968"
-horo: 4
+coordinate: "saturated · 1/base · f6546d76"
+contentUuid: "27beb348-d297-58b9-bdb5-057dee811d60"
+diamondUuid: "54610c1e-546e-8bdb-972b-698dbbbb30a3"
+uuid: "f6546d76-1810-81dd-8d94-04ba2ceaadd3"
+horo: 1
 typography:
   partition: saturated
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c1ec9af1-a36a-84c3-88c2-8a4c70578267"
+  computationUuid: "023b7e42-a745-8a2f-acde-7ce30c93b211"
   stages:
     - stage: path
       stageUuid: "f356638c-e6d8-82ab-8920-cf1e20f07efc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7a6080eb-0472-8c51-9124-72cb88c92b21"
     - stage: horo
-      stageUuid: "8d52c7c7-458e-8dee-b09a-192511722dfa"
+      stageUuid: "e7eaf9e0-e9d5-87a8-8edc-72ea667072b1"
     - stage: seal
       stageUuid: "974435b3-46a6-88a1-8dc3-691a5b2e3b8d"
     - stage: uuid
-      stageUuid: "5a41d260-c260-87dc-a562-6500a85ccc2e"
+      stageUuid: "dda3b0cb-2f9b-8ddc-90ba-51bee4d5e209"
 version: 2
 ---
 # saturated

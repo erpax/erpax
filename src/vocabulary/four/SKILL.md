@@ -2,11 +2,11 @@
 name: four
 description: "Use when reasoning about four as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/four"
-coordinate: "vocabulary/four · 5/round · 36da7d64"
-contentUuid: "dffcb098-08b2-5999-9206-ce9bd37600eb"
-diamondUuid: "93b7341d-b5de-82ab-af9a-4ab20da8d5f6"
-uuid: "36da7d64-2377-8c44-9a37-dced6c9dd8f3"
-horo: 5
+coordinate: "vocabulary/four · 8/crest · 2f208e0e"
+contentUuid: "87e44dd6-f7c0-537c-b5f5-a713890b9926"
+diamondUuid: "c553c4cc-73f7-8c0b-9bc9-250a590ec7d5"
+uuid: "2f208e0e-bb85-8601-95bc-19196a9360bf"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cc256c98-7e02-8707-84f6-97e86a8e71a7"
+  computationUuid: "59e96cc9-918c-873d-af10-40dc7dff271e"
   stages:
     - stage: path
       stageUuid: "8c89b0e0-b8ea-8586-939d-037009df6c51"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "318aafda-2d29-8959-b0f8-94696671445a"
     - stage: horo
-      stageUuid: "9f1e1c77-e6a0-8937-8f90-e1849a94a18d"
+      stageUuid: "47aa40db-83d3-83a2-a84c-ebf348de6307"
     - stage: seal
       stageUuid: "6a2d0c41-cf77-8bd6-85bb-97f2b7ad3600"
     - stage: uuid
-      stageUuid: "1f3c051f-16cf-8ca8-88d8-2ef308881877"
+      stageUuid: "4281f426-0323-8fe2-ae9b-b05503e64835"
 version: 2
 ---
 # four

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "uncertainty",
-    "uuid": "81b13f8c-c8bc-8408-b92d-b3459b46e58e",
+    "uuid": "a26eb9ca-c50a-893d-9ca1-04bd76913689",
     "words": [
       "uncertainty"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the Heisenberg uncertainty floor — two conjugate quantities (position⊗momentum, energy⊗time) can never both be sharp, their spreads obey Δa·Δb ≥ ħ/2. It is the wave nature of the state, not a measurement defect. In erpax it is a real design limit: the irreducible slack that can never reach zero, and the natural linewidth that broadens every spectrum line (a leap living only Δt has ΔE ≥ ħ/2Δt).",
-    "uuid": "5fcff71c-b292-861f-a9ab-8e4635c32137",
+    "uuid": "496f5766-1ef2-8365-90f4-0d2edade0d28",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aspect",
-    "uuid": "ab4a23ad-b40a-8e3e-a09b-2fa4dc16a4c7",
+    "uuid": "6e713640-95d9-864b-b034-2552c58a5d3b",
     "words": [
       "aspect"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about aspect — An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
-    "uuid": "0a608767-e643-89a9-8fa8-87ff84babe92",
+    "uuid": "cecb1c1d-fb7d-82ec-b5fe-48596226e494",
     "words": [
       "use",
       "when",

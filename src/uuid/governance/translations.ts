@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "governance",
-    "uuid": "5a4c335f-c112-89c4-96f4-f8f614701301",
+    "uuid": "9f109368-70bf-8431-b98c-d43d54fd7b06",
     "words": [
       "governance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about uuid governance — how a uuid is minted and ruled.",
-    "uuid": "4844400d-72d3-89e4-9fa0-45452c51c433",
+    "uuid": "79dbef66-3a4b-86a8-91fe-14169f815189",
     "words": [
       "use",
       "when",

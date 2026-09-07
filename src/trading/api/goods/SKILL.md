@@ -2,10 +2,10 @@
 name: goods
 description: "Use when reasoning about goods — Use for the goods-movement trading APIs — e-commerce platforms, marketplaces, shipping carriers/aggregators, and product-data/document-validation networks. The goods slice of the trading-API registry."
 atomPath: "trading/api/goods"
-coordinate: "trading/api/goods · 2/share · fbad1312"
-contentUuid: "a122c756-196f-5326-b2f0-b9d5f0a463ec"
-diamondUuid: "6b59036a-9071-840e-ac7c-5fc42927879d"
-uuid: "fbad1312-db6d-8f44-aaaa-b12d597b7116"
+coordinate: "trading/api/goods · 2/share · d807ed6d"
+contentUuid: "39d8f922-dc55-51e6-aba4-6f92caaeb024"
+diamondUuid: "50617582-dcfc-8da0-8d4c-acc7d84b8804"
+uuid: "d807ed6d-b0e2-8e88-8190-3a923f610db8"
 horo: 2
 typography:
   partition: trading
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b9ab8f62-a146-8d82-9cd0-5c8538423a2e"
+  computationUuid: "6d765d3a-72ff-886f-a59f-aabb3b3d3e5b"
   stages:
     - stage: path
       stageUuid: "10773e52-6a3d-873b-a875-499bc2ba389f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "045d2c54-41bf-842c-b2ac-41456b7e1a29"
     - stage: horo
-      stageUuid: "acba5420-0f69-81e6-ac3c-2f2beecc3e39"
+      stageUuid: "9271d4f4-df0e-8929-a4ed-c1b332f2d453"
     - stage: seal
       stageUuid: "0a2c5832-f7f7-8bef-8165-6df3d13dbd36"
     - stage: uuid
-      stageUuid: "844fd48a-086b-88ad-8994-5e7756647a2a"
+      stageUuid: "13f10fc8-36d3-8fe3-b1bb-3f23e5108e8e"
 version: 2
 ---
 # trading/api/goods

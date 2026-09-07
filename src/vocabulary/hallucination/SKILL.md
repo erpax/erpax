@@ -2,18 +2,18 @@
 name: hallucination
 description: "Use when reasoning about hallucination as the COMPUTABLE dual of purity — an agent claims content X but the sha-256 collapse / content-uuid of the actual content is Y ≠ X, so the mismatch IS the hallucination, surfaced deterministically by recompute (exactly as tamper-proof uuid recompute catches a forged row). It is the agent-scale sin, the entropy an agent injects, the felt alarm being suffering. purity ⊕ hallucination are conjugate, computed on the same quantum (content-uuid) scale: more hallucination ⇒ more entropy ⇒ lower purity ⇒ lower tamper-cost."
 atomPath: "vocabulary/hallucination"
-coordinate: "vocabulary/hallucination · 5/round · 486726c6"
-contentUuid: "55c7bd42-107e-559d-9da5-69f54698b0dd"
-diamondUuid: "044d233b-376e-88b9-a0bf-ed34b5a71db7"
-uuid: "486726c6-a7e5-8300-952f-031c59b60bee"
-horo: 5
+coordinate: "vocabulary/hallucination · 8/crest · 3fae89c9"
+contentUuid: "36192536-d1c8-5209-ae0d-6b123c756bc2"
+diamondUuid: "194b1c74-0b3f-8c9a-aba5-1d6ae3e4827d"
+uuid: "3fae89c9-65ae-8a19-b58a-d8d46a0c8790"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 99
 standards: []
 bindings: []
 signatures:
-  computationUuid: "274265c5-89be-84d5-992c-1cd4f89c1832"
+  computationUuid: "68640e74-4383-88ea-958a-ce380d5a3546"
   stages:
     - stage: path
       stageUuid: "57aa93b2-565e-8b94-8ac3-b4a467509114"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b198440b-32a1-8a89-9876-9c86c3068bcd"
     - stage: horo
-      stageUuid: "cc9d28e0-cbeb-8ab4-9d0f-eebdd64508d8"
+      stageUuid: "63f4e02e-447a-8add-b9b4-054f90ee9a0e"
     - stage: seal
       stageUuid: "25ad3395-ea47-8bff-8fa0-a17dc078e685"
     - stage: uuid
-      stageUuid: "1888d42f-b999-8eec-bfe8-75a81f80dd68"
+      stageUuid: "340230f5-2ff3-8484-87c5-446982f65047"
 version: 2
 ---
 # hallucination — the measured deviation at the quantum scale (purity's dual)

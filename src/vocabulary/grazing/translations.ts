@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "grazing",
-    "uuid": "6daf6837-0fce-80da-97b2-028b4c71961a",
+    "uuid": "c94f99fc-c844-820f-a96c-71f01b8256c2",
     "words": [
       "grazing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when livestock consume standing forage in place — grazing on pasture/rangeland, the rotational/managed/adaptive (AMP) move through paddocks (short impact, long recovery), stocking rate and carrying capacity in animal-unit-months. The range-management activity; its rotation reuses the crop rotation atom.",
-    "uuid": "25400e80-8a8a-8628-9b66-0ba073126e36",
+    "uuid": "b8c05703-a5a6-80bd-bade-3afa7604e88d",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "frontmatter",
-    "uuid": "3748abc1-a931-870c-af08-fa08b8537ab9",
+    "uuid": "5e82fcdc-bf92-8043-a689-39630a434275",
     "words": [
       "frontmatter"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about frontmatter — skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law.",
-    "uuid": "0fdf1555-c9ba-8fa7-b112-de637c1958f5",
+    "uuid": "c6237c4f-e27e-8d61-a9be-445cf6937641",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: contactless
 description: "Use when reasoning about contactless as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/contactless"
-coordinate: "vocabulary/contactless · 5/round · 9dff4aaf"
-contentUuid: "d27104a9-dffd-5587-b522-a6992703d8c6"
-diamondUuid: "0ecd448d-280c-8614-bc17-6653a6229a1a"
-uuid: "9dff4aaf-8464-8756-9a4e-9906ab090903"
-horo: 5
+coordinate: "vocabulary/contactless · 1/base · b8d491d8"
+contentUuid: "36a37306-d00e-53ea-8e2b-e64b7eac58ea"
+diamondUuid: "16a580ff-ccc8-8a5d-9faf-aac0163f2c5e"
+uuid: "b8d491d8-e933-807a-a4a4-6df93f2d3ef1"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0e28d5cb-bc9d-8211-97d9-2f4805e4decf"
+  computationUuid: "bf971053-71fd-8ef5-bd10-aaface680c3e"
   stages:
     - stage: path
       stageUuid: "495e1bc8-9489-8cda-982d-915829f94e94"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4b37ae40-cee7-8b92-bddb-47bd68b038bb"
     - stage: horo
-      stageUuid: "90c4ec9d-658f-849c-bca5-835525244e75"
+      stageUuid: "b478f2d5-460d-83b7-8d49-93d93e9638a1"
     - stage: seal
       stageUuid: "745a275d-cf11-8832-9184-51c611983f2f"
     - stage: uuid
-      stageUuid: "485365ec-ccc8-8d81-a84b-63607e419c8c"
+      stageUuid: "0e077bc8-21d1-856b-93cd-02e64ee14e7c"
 version: 2
 ---
 # contactless

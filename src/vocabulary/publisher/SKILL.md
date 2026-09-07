@@ -2,10 +2,10 @@
 name: publisher
 description: Use when reasoning about publisher — The publisher of the article in question.
 atomPath: "vocabulary/publisher"
-coordinate: "vocabulary/publisher · 5/round · 518ea133"
-contentUuid: "b5fc0010-f658-5da4-b457-ae177fcf789d"
-diamondUuid: "7e4ca97e-a9ab-86b1-a718-86f81341282e"
-uuid: "518ea133-985d-8d97-b267-2c40d2d9ccd7"
+coordinate: "vocabulary/publisher · 5/round · 9a37213c"
+contentUuid: "6e82fd39-c0f1-52cc-ae53-9f0cd0c9db86"
+diamondUuid: "0ec10b54-0855-872b-9588-b167b71d74f6"
+uuid: "9a37213c-2d5b-89ac-9437-1eceb74c5d15"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cd6fa9a3-cf04-8bc1-98e0-d95603493c40"
+  computationUuid: "8ffab855-7f28-8cd3-9609-c9c381d841e0"
   stages:
     - stage: path
       stageUuid: "84243dfb-862f-8625-960e-3427d113b4cd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0c8c3fb6-a83e-81a9-9326-2d0649c9f718"
     - stage: horo
-      stageUuid: "53dc6c4d-9c65-82e1-ac87-c2d98d8b4f16"
+      stageUuid: "1fe1688c-7458-834e-8b5e-ff7079b5a0e6"
     - stage: seal
       stageUuid: "4218b7c5-ba90-8995-a3d5-60fdb8c4cc7f"
     - stage: uuid
-      stageUuid: "a9cc5262-f267-814f-b27c-6ae3e5c94bcd"
+      stageUuid: "b61a0eff-6a3b-890a-a7aa-2bd92c9ae915"
 version: 2
 ---
 # publisher

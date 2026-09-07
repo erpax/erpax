@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "relation",
-    "uuid": "9e19b6fe-eea5-810c-bf2f-89d13e2aad3b",
+    "uuid": "1bd03543-b948-8156-82a5-d1bca658f3df",
     "words": [
       "relation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about relation — A Payload relationship is one value with two shapes: the raw id when unpopulated, the whole document when populated. A **polymorphic** one is a third shape — .",
-    "uuid": "454c971f-6e35-8618-bb00-b30ba06c6919",
+    "uuid": "0ba9854f-2651-867d-af63-e2bc8eaa8bcf",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: pyramid
 description: "Use when reading the fold as a solid — the cross is a pyramid's net (a square base with four triangular faces folded flat; fold them up and they meet at one apex). A wide base of leaves rises pairwise, each merge(a,b) one cross, to a single apex that is the seal. The notary is built on this: its protocol root is an apex over act-seals, an inclusion proof is the path up one edge, and tamper-evidence is that no ground course can change without the apex moving. Composes merge's fold; adds the geometry (base·apex·height·faces·courses) and the tamper law."
 atomPath: pyramid
-coordinate: "pyramid · 7/descent · 3cc9bb36"
-contentUuid: "46da0a86-d479-5616-9776-70b6350f0187"
-diamondUuid: "c0e5a3c0-f881-86e3-9560-4d8e6712fff0"
-uuid: "3cc9bb36-a75a-8350-8484-7109c7e9548e"
-horo: 7
+coordinate: "pyramid · 1/base · 1c82f3e0"
+contentUuid: "d6da33d8-e87d-5716-9e3a-5383833ba4d6"
+diamondUuid: "ced0a378-fe67-84ad-837b-46ba255632b8"
+uuid: "1c82f3e0-81d6-83bb-a9e6-48581f132380"
+horo: 1
 typography:
   partition: pyramid
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "Merkle tree — the balanced binary fold; apex = root, edge = authentication path"
 bindings: []
 signatures:
-  computationUuid: "316a23c5-d4c5-8721-a84f-5aa13c60504a"
+  computationUuid: "c3ec65c9-495a-8e0a-8fd2-3383d145604d"
   stages:
     - stage: path
       stageUuid: "40e5b3be-aa2f-838c-85a8-f270509ea248"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a3f5dc76-43ce-88f3-b4f9-ad16af7975b0"
     - stage: horo
-      stageUuid: "c07066f0-39cb-8c0d-a2d1-216c1ec3b14e"
+      stageUuid: "dc09c33c-6548-8e15-abb2-f820c3bcb9b7"
     - stage: seal
       stageUuid: "ba413e58-ccdc-8a04-a6d3-dd4ae7c9622f"
     - stage: uuid
-      stageUuid: "1c735cbb-d7dc-8602-bb94-4b9e5dce0089"
+      stageUuid: "84c781bd-2e47-88da-b164-cca9b3b3ae5b"
 version: 2
 ---
 # pyramid — the geometry of the fold

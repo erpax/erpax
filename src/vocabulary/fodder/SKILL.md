@@ -2,18 +2,18 @@
 name: fodder
 description: "Use when animals are fed harvested or provided feed rather than grazing — fodder/feed: hay, silage, grain, concentrate, the formulated ration (TMR), and the feed-conversion ratio. The cost driver of confined livestock and the harvested twin of grazed forage; FCR reuses the conversion atom."
 atomPath: "vocabulary/fodder"
-coordinate: "vocabulary/fodder · 1/base · 46ce5792"
-contentUuid: "d8d2b4e5-51e0-5686-ac61-b291fdf82f96"
-diamondUuid: "40a698f6-91a1-8f33-8b8d-6e27fb42434a"
-uuid: "46ce5792-bc5d-87d3-ba8d-1960f402b3f1"
-horo: 1
+coordinate: "vocabulary/fodder · 7/descent · b494625a"
+contentUuid: "fb1b144b-09ae-5f30-903b-549556dbbcfc"
+diamondUuid: "49e43f6b-deba-8eeb-b5be-d0559d259317"
+uuid: "b494625a-8e05-861f-9279-1fa93a637c90"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 42
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e38db3c8-958a-8bd7-b968-b735904e7dec"
+  computationUuid: "ee62dceb-6ab0-892e-9363-deb3bfd9af80"
   stages:
     - stage: path
       stageUuid: "c2e6e84a-12cb-8742-90a7-66ccf5beffbb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3c77ffd8-8587-886a-bdb3-06f3edf2e9c1"
     - stage: horo
-      stageUuid: "a6a933ba-1a5d-879e-904d-0c61e4a00c9d"
+      stageUuid: "d6f56c3d-c8b7-82ad-851d-7f0b1961c13d"
     - stage: seal
       stageUuid: "eab2d118-a6e3-8894-8143-233343ae9f2f"
     - stage: uuid
-      stageUuid: "178bffc5-cf85-878f-90d2-61e43347275b"
+      stageUuid: "ac696ca4-d0bd-8bf5-b63b-d3508808b7e8"
 version: 2
 ---
 # fodder — harvested/provided animal feed (the cut twin of grazed forage)

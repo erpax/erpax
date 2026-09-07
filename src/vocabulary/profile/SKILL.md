@@ -2,10 +2,10 @@
 name: profile
 description: "Use when reasoning about profile as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/profile"
-coordinate: "vocabulary/profile · 4/weave · fc01c2e1"
-contentUuid: "95795bdc-920f-5728-b4b7-3a52b7d24e1c"
-diamondUuid: "b5d672cf-68b6-8b66-bc69-6ee546b13009"
-uuid: "fc01c2e1-241f-88c0-b07a-25cf4258078c"
+coordinate: "vocabulary/profile · 4/weave · 3412f1a0"
+contentUuid: "7d0b0ffe-7878-5967-982d-d0d58310a24c"
+diamondUuid: "08344a73-c10f-8358-85f6-1e577e686683"
+uuid: "3412f1a0-8338-8764-bdfa-3dcd4153a769"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "06bb8f58-706a-8326-9e01-0ae8ee5244c4"
+  computationUuid: "2c166de0-4845-8a2b-a0a4-95c32447cad2"
   stages:
     - stage: path
       stageUuid: "c75e53d4-b187-823b-91e0-04a003790b3c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ae1300a1-bf84-85b7-be2e-e28bbd23569f"
     - stage: horo
-      stageUuid: "bed131f1-7503-8d5a-951e-d1fdcb564a2d"
+      stageUuid: "4156d39d-f88a-837e-a752-32a1494228f6"
     - stage: seal
       stageUuid: "e8ec62ac-4544-8e24-bd0d-865d41974eeb"
     - stage: uuid
-      stageUuid: "92871e0e-6721-8a82-95c3-df6c241f3ef7"
+      stageUuid: "8f0c2981-cbd4-8288-a4f3-502669fa0bf2"
 version: 2
 ---
 # profile

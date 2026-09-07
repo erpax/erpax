@@ -2,11 +2,11 @@
 name: mortgage
 description: "Use when reasoning about mortgage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mortgage"
-coordinate: "vocabulary/mortgage · 7/descent · 5d4842d4"
-contentUuid: "21a95607-c063-5841-891c-81b337f75cb2"
-diamondUuid: "4ad994b9-adbf-8efc-b79e-cb4a137ecae0"
-uuid: "5d4842d4-36ba-8e1e-9fc8-0bdcc5203709"
-horo: 7
+coordinate: "vocabulary/mortgage · 2/share · 8bdc9b10"
+contentUuid: "cd85848e-8c43-541b-b48b-da3d83497bdd"
+diamondUuid: "2139910b-7b9e-862c-9cc7-aa291e0f74c2"
+uuid: "8bdc9b10-9046-8db0-a9cb-d9bbe78fe18b"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e6a9d7c9-e38f-8c55-9a0f-81f9c4b90be9"
+  computationUuid: "d309ef33-0ece-8804-b791-546fe4e9e886"
   stages:
     - stage: path
       stageUuid: "a59462cc-c9b0-86d2-a219-9a6e3ae121eb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0ed7581a-cd20-880b-a656-b5449e7bae1d"
     - stage: horo
-      stageUuid: "791a9c3c-de4f-876a-b6ec-07ccf2ecedb9"
+      stageUuid: "5b73f8f9-f190-8bb7-aa4e-3408a0243feb"
     - stage: seal
       stageUuid: "3134e51f-4db5-8153-aa16-96857f2f06b1"
     - stage: uuid
-      stageUuid: "f57af75c-4a78-80d0-b5ab-5b924f864a77"
+      stageUuid: "5d380681-3070-81fb-8c71-75e046b00eb7"
 version: 2
 ---
 # mortgage

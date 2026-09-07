@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "globe",
-    "uuid": "523d1ef5-ad8a-83eb-9d00-145768c40532",
+    "uuid": "9cb4b67d-73da-8449-a699-aa73ac979de7",
     "words": [
       "globe"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the corpus must be read as a sphere, not a flat wheel — the colour wheel and spectrum column were projections of one globe, and flattening collapsed longitude ⊥ latitude and lost elevation. Longitude = the 60° hue/doubling ring on the equator; latitude = the spectrum/elevation pole to pole; the heart sits on the equator; the poles are the coordinate singularity where longitude is undefined — the honest division by zero. The notary deed is a geodetic point; WGS 84.",
-    "uuid": "f3b007c9-115c-8853-a59f-b35a27ef4d56",
+    "uuid": "cb6c08d6-5bb6-8701-b217-4bb2cb08fcc9",
     "words": [
       "use",
       "when",

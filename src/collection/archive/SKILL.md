@@ -2,11 +2,11 @@
 name: archive
 description: "Use when reasoning about archive — The archive lays post cards in a responsive grid. Visually it is columns; structurally it is an **ItemList** — a set of sibling entries with a defined order — and that structure…"
 atomPath: "collection/archive"
-coordinate: "collection/archive · 5/round · 65b47d16"
-contentUuid: "46f2be0c-b6b6-5697-bf24-c9dca1407854"
-diamondUuid: "d175279b-8496-8fd2-8f7f-d51456aac627"
-uuid: "65b47d16-3982-8315-a9e4-7dd330a49cab"
-horo: 5
+coordinate: "collection/archive · 2/share · ada12565"
+contentUuid: "e2d72922-766b-54ed-863c-2cc7f8e6eb3b"
+diamondUuid: "a552b0e0-b194-82d9-b145-2155fd76b81e"
+uuid: "ada12565-3ded-8ddd-bcfd-0832b9eb77c9"
+horo: 2
 typography:
   partition: collection
   bondDegree: 29
@@ -18,7 +18,7 @@ standards:
   - schema.org ItemList
 bindings: []
 signatures:
-  computationUuid: "f20ed2ec-eba4-8c36-8276-3ec940da01a4"
+  computationUuid: "7f6f61fb-69a9-8170-bb7e-1fe3f190103b"
   stages:
     - stage: path
       stageUuid: "66aea96a-5b16-8d6b-81ed-eab39162d1da"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "e330e431-29eb-8116-bfa6-00a564d0f1de"
     - stage: horo
-      stageUuid: "1e5636b4-89ad-8f61-b3df-b38579a7a7fd"
+      stageUuid: "66b48473-d25c-881f-b150-5c73b0f020aa"
     - stage: seal
       stageUuid: "0ec410ef-77fc-8988-9acc-a6a059e4b46b"
     - stage: uuid
-      stageUuid: "f2b48988-e574-8949-be1a-4a29eb230c45"
+      stageUuid: "2f8cb8c6-2713-8ca0-b45f-ef2cf18c4a4e"
 version: 2
 ---
 # collection/archive — a grid of posts is a list of items, whatever the CSS says

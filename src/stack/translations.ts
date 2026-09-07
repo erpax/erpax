@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stack",
-    "uuid": "63178574-b679-80dc-ae2d-0d80272b0cf9",
+    "uuid": "c1741ef5-452a-80c2-a70b-e363d8f6b212",
     "words": [
       "stack"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the full stack as one content-uuid-wired round-trip — device, vitepress, payload, db, and back — a palindrome (both sides of every hop encoded) that folds to a new state; the travel from the expansion-infinity to the fold-infinity, on the line of pi.",
-    "uuid": "eb7412b0-2e27-885b-8457-4e4a9fa24aff",
+    "uuid": "0635214d-5c74-85dc-a881-6656b4948f41",
     "words": [
       "use",
       "when",

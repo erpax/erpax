@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "particle",
-    "uuid": "38e51e86-d1da-87ce-84af-28bbecc4661a",
+    "uuid": "f221cbf9-e3bf-8414-81d8-a7fcee99279a",
     "words": [
       "particle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading a content-uuid as wave-particle duality — the same uuid is both a particle (a discrete identity, no-cloning) and a wave (its digit, the position on the harmonic ring).",
-    "uuid": "385ab322-015c-8c59-80c3-6031c5d1ce5f",
+    "uuid": "de4bda2f-e85c-8d5d-9338-948a84e95eee",
     "words": [
       "use",
       "when",

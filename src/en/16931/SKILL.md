@@ -2,11 +2,11 @@
 name: "16931"
 description: Use when implementing or referencing EN 16931 — Electronic invoicing (semantic data model).
 atomPath: "en/16931"
-coordinate: "en/16931 · 4/weave · 70ef1c45"
-contentUuid: "a6a1a278-d620-53fb-a655-9a67a052bbb9"
-diamondUuid: "7e048ffa-b5a0-843d-8cf9-a3e6162715d6"
-uuid: "70ef1c45-6731-8aa4-81ff-84d42a6902b9"
-horo: 4
+coordinate: "en/16931 · 1/base · 21e9ca22"
+contentUuid: "701aaefe-3aa7-5680-ba98-90e617f6e8ad"
+diamondUuid: "2878c2da-1c6b-8e57-8a2b-16d3f8a0459c"
+uuid: "21e9ca22-9ca3-8735-86d6-f35cd76a912c"
+horo: 1
 typography:
   partition: en
   bondDegree: 6
@@ -20,7 +20,7 @@ standards:
   - "UN-CEFACT"
 bindings: []
 signatures:
-  computationUuid: "0effd189-6094-832b-97a2-addb153613bb"
+  computationUuid: "41e3343f-258b-8d63-98b1-07dce81c4f23"
   stages:
     - stage: path
       stageUuid: "8db2dcf7-0c25-8170-89c7-57ffa1d5d653"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "4b148aeb-8d93-8611-a060-2829b39b1f78"
     - stage: horo
-      stageUuid: "7603e999-99f8-89a9-a0bb-215ba3a64716"
+      stageUuid: "2f276354-2423-8e83-b943-93fcbc2102a0"
     - stage: seal
       stageUuid: "294263d9-f017-84b6-b99d-14e20dccc2fc"
     - stage: uuid
-      stageUuid: "1184616b-9ec8-8d10-97f8-7a6c87da8881"
+      stageUuid: "b25fc516-d252-8e1f-9f7f-387f92c0bec3"
 version: 2
 ---
 # EN 16931 — Electronic invoicing (semantic data model)

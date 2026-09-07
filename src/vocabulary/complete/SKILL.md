@@ -2,10 +2,10 @@
 name: complete
 description: "Use when reasoning about complete as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/complete"
-coordinate: "vocabulary/complete · 5/round · 576aba4b"
-contentUuid: "2fa1f026-2321-5abb-bab9-0fb46550c028"
-diamondUuid: "7b3abffc-fc4c-8e84-9b1d-7e32cc672a59"
-uuid: "576aba4b-6480-8e8b-af92-225c603d352f"
+coordinate: "vocabulary/complete · 5/round · 76238ebe"
+contentUuid: "c0d2aec3-f461-5aa0-a431-d1d58cdf1f27"
+diamondUuid: "80236a87-3c8c-8ee3-bbfa-3d51d54a1a31"
+uuid: "76238ebe-574e-83c4-b3d4-d42eb71ea286"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8e108e9f-a108-8852-b5a4-c836a0f8942a"
+  computationUuid: "4814cbf1-7ce0-84f5-a1cf-61cfbf5e5d7f"
   stages:
     - stage: path
       stageUuid: "5469798e-97c0-8b0b-9536-68d9bd283481"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fa70bb47-6cfa-8303-a676-2fc5138639b3"
     - stage: horo
-      stageUuid: "97cb34b1-215b-82cb-ac6a-c9a26ec011f1"
+      stageUuid: "7c8903e6-3b0d-84f4-b7cd-0ca6c2b1dbbc"
     - stage: seal
       stageUuid: "48a01af5-7f84-85de-851f-a82bf5c88689"
     - stage: uuid
-      stageUuid: "e5aebb00-0e40-83ba-b90e-1cfcecc642d2"
+      stageUuid: "bc4240f9-6e0a-8749-89da-312b46683804"
 version: 2
 ---
 # complete

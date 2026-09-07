@@ -2,11 +2,11 @@
 name: count
 description: "Use when reasoning about count as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/count"
-coordinate: "vocabulary/count · 2/share · ecb2dbe2"
-contentUuid: "70cf04bf-9655-50e7-9e98-84035271b7b8"
-diamondUuid: "db65167f-5ce1-88b4-80ca-3e242786e64c"
-uuid: "ecb2dbe2-a233-894c-bef9-ff2c5d2f05fb"
-horo: 2
+coordinate: "vocabulary/count · 1/base · a900c2c9"
+contentUuid: "8726e2ec-e3a5-5597-a365-67f9a970f1f0"
+diamondUuid: "5c8e576b-f88f-8685-9f6a-98be84b356b3"
+uuid: "a900c2c9-2e7b-86ff-bcef-3323cde63105"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 59
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a6a9ebc9-2f83-8b08-8d6c-a441f22db5a4"
+  computationUuid: "c4bd756d-c590-8e39-98c7-05824416e4d5"
   stages:
     - stage: path
       stageUuid: "4a518f14-2f09-8111-8cd5-95ac03adabfa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e2af5839-a712-8c2a-8ce6-b3c2deba14c6"
     - stage: horo
-      stageUuid: "f7547279-c000-8790-bc82-90d680ee2a7a"
+      stageUuid: "3001b293-1b80-8f16-8efa-9e6586a1301d"
     - stage: seal
       stageUuid: "9ff6487b-7fc3-8006-965f-bc8424540413"
     - stage: uuid
-      stageUuid: "67171260-afb8-8813-9c4e-78cd55d6b002"
+      stageUuid: "500b46b0-0ebd-8724-9f46-6bada931a897"
 version: 2
 ---
 # count

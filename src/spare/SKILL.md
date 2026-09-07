@@ -2,11 +2,11 @@
 name: spare
 description: "Use when reasoning about spare as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: spare
-coordinate: "spare · 7/descent · 9de9da85"
-contentUuid: "d0d48895-bbf0-54c5-9cf9-91f3e075c9a7"
-diamondUuid: "727722c7-a6bb-8877-bd19-57791221d068"
-uuid: "9de9da85-dffc-89e1-b1da-879b82ca66e5"
-horo: 7
+coordinate: "spare · 2/share · f8db894f"
+contentUuid: "acc28a50-b1d9-5f2d-ac05-cdfb29586159"
+diamondUuid: "6104fa90-902c-8b29-9fd7-9e5ac80df576"
+uuid: "f8db894f-fd4a-8314-9f69-8d3ea336fbdd"
+horo: 2
 typography:
   partition: spare
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5143d926-609c-8553-b56c-42ec37581608"
+  computationUuid: "2a9f422b-ff0f-8b5e-b11d-07ee47c4db2d"
   stages:
     - stage: path
       stageUuid: "11c86834-bc43-8b25-9002-2561f341abd9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "70ccd798-fa1f-8acd-98bc-2c8784d83c84"
     - stage: horo
-      stageUuid: "ce975eef-c4a1-8cba-9ab6-8c5ae486b70d"
+      stageUuid: "9fea8b18-0d8d-8970-a3f9-08ceb6fcae25"
     - stage: seal
       stageUuid: "11be72ba-78f8-8eaf-9972-176ddd3060f6"
     - stage: uuid
-      stageUuid: "b49b4531-7da6-80ed-8cb7-4db8dcb64810"
+      stageUuid: "770aa3b0-235c-8365-a7d5-1740d5bdc9e4"
 version: 2
 ---
 # spare

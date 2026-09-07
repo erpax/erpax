@@ -2,18 +2,18 @@
 name: movement
 description: Use when modelling one movement — the singular model of the movements collection (the plural store); a recorded transfer of stock or value between locations.
 atomPath: "vocabulary/movement"
-coordinate: "vocabulary/movement · 4/weave · 5fe9b785"
-contentUuid: "4972f0b6-82fd-52d4-a6e2-22ca080b2211"
-diamondUuid: "7e7d6c87-96ec-8169-870a-d84fc73a8780"
-uuid: "5fe9b785-b138-85a4-80c7-055d0b460d49"
-horo: 4
+coordinate: "vocabulary/movement · 7/descent · d4053639"
+contentUuid: "a2e935a2-9dca-599a-b212-5205c5cd547d"
+diamondUuid: "03fe3f7d-920b-8375-812b-173d4ed347e8"
+uuid: "d4053639-bc67-8c78-9130-5edc962cf16d"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9ce650b1-f24a-8b2b-bae2-0e54afa496e5"
+  computationUuid: "3027cb75-aa11-890b-b54b-eaf17fc2ffa6"
   stages:
     - stage: path
       stageUuid: "f09099b8-c576-8114-bdb3-08474460e0f2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "98af7851-c92a-811a-ab5b-e996c483c4ee"
     - stage: horo
-      stageUuid: "68140409-bb71-87b8-881e-695cf66c1e15"
+      stageUuid: "5ba21e24-ba29-83e2-ad46-a44e0100aefd"
     - stage: seal
       stageUuid: "c6512298-5af2-8fcf-8ee2-308f442f8a1a"
     - stage: uuid
-      stageUuid: "c05b91c8-d345-871a-bfdd-1ae67d44dfb6"
+      stageUuid: "10d18567-b767-8799-ae3a-4e81db278f6d"
 version: 2
 ---
 # movement — the model of one [[movements]] row

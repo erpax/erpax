@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "audit",
-    "uuid": "102f74a7-fdce-8d96-867c-c2ff2e5b61a1",
+    "uuid": "a36f680b-fe27-8a3d-a4ad-4edb170d0f0b",
     "words": [
       "audit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when naming the examination of records by someone entitled to see them — the parent term for the audit-side vocabulary, including the right of access itself.",
-    "uuid": "4c2d5530-4133-812e-967e-bd505294f98b",
+    "uuid": "5c0d35d3-10a6-8ec7-ada9-a3b1581b7812",
     "words": [
       "use",
       "when",

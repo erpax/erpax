@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "address",
-    "uuid": "daea3a8e-29b8-8e54-9471-5724e14162e7",
+    "uuid": "85b5146f-4535-8039-a397-924d2d13407e",
     "words": [
       "address"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about address — Four hundred and fifty-three assertions in this corpus had that shape (rules/mirror). Each was green, fast, and counted as a proof by every gate that counts proofs.",
-    "uuid": "df8798af-338c-8bb5-9fa3-c60ea2a3dd0a",
+    "uuid": "d1d766dd-5fad-8e58-8a7e-5450c9569099",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "numeric",
-    "uuid": "bc2e3ce6-8de8-8340-a2aa-5a9cdd6d334e",
+    "uuid": "1541ca35-7926-813b-879d-c84d7abb085d",
     "words": [
       "numeric"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about numeric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "5155a615-509a-8376-8f59-22b841f6f6b3",
+    "uuid": "1bb133f6-6369-8c5a-b88d-e6c3ac9c03d3",
     "words": [
       "use",
       "when",

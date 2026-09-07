@@ -2,10 +2,10 @@
 name: seo
 description: "Use when reading the SEO face registry — listFaces and the schema/OG vortex, in a module with ZERO imports. That property is why it is its own atom: @/integrity/uuid-stream took listFaces from the @/website barrel, and the barrel dragged the whole page/agent/spec subtree into the module that exports uuid and jcsCanonicalize to the entire corpus. Importing a leaf adds no edge."
 atomPath: "website/seo"
-coordinate: "website/seo · 2/share · af9434e6"
-contentUuid: "16f3d1fd-19e9-54ed-beb2-6394ed6eda27"
-diamondUuid: "eb8a7188-b773-8a97-93a6-8019895518fd"
-uuid: "af9434e6-10eb-8291-9ea8-f0b1ab1ac7f5"
+coordinate: "website/seo · 2/share · f901d74a"
+contentUuid: "0bfa3204-78ff-586c-a62f-c8e4d378798a"
+diamondUuid: "227a29c7-71ef-8670-b2cf-d339c505780f"
+uuid: "f901d74a-929d-8964-9941-81915a2c5a6c"
 horo: 2
 typography:
   partition: website
@@ -21,7 +21,7 @@ standards:
   - "W3C-JSON-LD-1.1"
 bindings: []
 signatures:
-  computationUuid: "e6e8f10d-f764-84e2-a288-793fd1d8b6e3"
+  computationUuid: "1fe66c47-d7d3-8254-b1d0-6e7403377b26"
   stages:
     - stage: path
       stageUuid: "2c02905f-d5a0-8804-b310-64c790d5c775"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "308e1741-adad-8aa5-9598-ee61bedb773f"
     - stage: horo
-      stageUuid: "bf80529d-11e8-8f95-823b-13f34a3473b6"
+      stageUuid: "8e27554a-bae9-8fd0-976d-59822ba4c572"
     - stage: seal
       stageUuid: "37b5f46a-1705-8287-95dc-0ab59e7d1d4f"
     - stage: uuid
-      stageUuid: "65072765-2db4-84c8-b545-3b780bc92aaf"
+      stageUuid: "3bfa4f9c-c8cc-853d-9069-45fd916b994d"
 version: 2
 ---
 # website/seo — the leaf that let `@/integrity` out of the tangle

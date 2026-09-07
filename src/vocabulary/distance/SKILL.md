@@ -2,11 +2,11 @@
 name: distance
 description: "Use when reasoning about distance — Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'."
 atomPath: "vocabulary/distance"
-coordinate: "vocabulary/distance · 8/crest · 1f1055f6"
-contentUuid: "abd1907e-947f-5e9d-ac64-da2a790a728e"
-diamondUuid: "d2d3a24e-4d55-8eaf-88e0-b3b1e1a33139"
-uuid: "1f1055f6-9e23-8bb0-9476-64527c46bbac"
-horo: 8
+coordinate: "vocabulary/distance · 5/round · 3e38e7a3"
+contentUuid: "e575d32f-6b83-5b2f-a117-70a3f2cda522"
+diamondUuid: "f142153d-5678-85d5-9a93-80b76fb79ff0"
+uuid: "3e38e7a3-afe7-854a-ad54-ccbfed94e190"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "51b7c402-1ccd-89b3-8d12-d187533eaa31"
+  computationUuid: "b86f4889-9b1f-8b8b-aeb6-2f95dd635ea7"
   stages:
     - stage: path
       stageUuid: "781d8a3d-8d8f-8cb1-a5d6-098ee312a138"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "36609366-f72c-8aad-b471-cfed82e06018"
     - stage: horo
-      stageUuid: "f9fc2708-37f3-84ee-8c2c-78b5d64df562"
+      stageUuid: "926bff67-23ec-8808-b6ee-02471bf81292"
     - stage: seal
       stageUuid: "538d7c17-034f-87c3-986d-fcc1d610625e"
     - stage: uuid
-      stageUuid: "78e0f1c4-6b67-8a51-a8fd-d664751b579b"
+      stageUuid: "92597253-f2ac-8293-8ec8-4053aab6deea"
 version: 2
 ---
 # distance

@@ -2,10 +2,10 @@
 name: good
 description: "Use when reasoning about good as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/good"
-coordinate: "vocabulary/good · 5/round · 2290ee0b"
-contentUuid: "801ccac4-72bd-5b2f-b53b-474e804c003b"
-diamondUuid: "3a3ec1dc-be24-8fa9-88d9-bd6a716d4f5f"
-uuid: "2290ee0b-8146-89e5-b811-51adb7369dc6"
+coordinate: "vocabulary/good · 5/round · 706cf74f"
+contentUuid: "3e2f880f-70fc-5e66-921d-fbf09005b1fe"
+diamondUuid: "cf9618bb-738d-86c6-a07d-692c5a458554"
+uuid: "706cf74f-4040-89f8-92cc-9d20babe5354"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a79e9ba0-37d0-8811-bfce-496a3805508b"
+  computationUuid: "58524fbe-9c77-8d26-80e8-c072f629091e"
   stages:
     - stage: path
       stageUuid: "6bc66c1b-bcb3-834a-929b-618904bda7fc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3ec460ad-cdd4-892f-aaea-092807f6faf0"
     - stage: horo
-      stageUuid: "31f41ec6-b8d0-8cc1-91c5-c135e3091162"
+      stageUuid: "bf260d5f-7703-8fbf-9ef4-fb57a5000707"
     - stage: seal
       stageUuid: "92e98562-82ab-8ec0-9148-b5f3fe4c92e2"
     - stage: uuid
-      stageUuid: "00a403ee-7195-8fca-a3fa-83158ff8842c"
+      stageUuid: "0d68dad1-c4b1-8c31-910a-e56808bf1698"
 version: 2
 ---
 # good

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "beyond",
-    "uuid": "df2109f3-85f3-8cad-ac2b-a5ced2ef6d2b",
+    "uuid": "bb3daab4-09f6-84f1-adea-688ecbd99f37",
     "words": [
       "beyond"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22.",
-    "uuid": "053873b0-3a9b-8766-80f2-18cc4ab127b7",
+    "uuid": "e905b27e-02b0-8079-b21f-c7167c106ffc",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: maternity
 description: "Use when reasoning about maternity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/maternity"
-coordinate: "vocabulary/maternity · 4/weave · dbbdb9ff"
-contentUuid: "52e6f997-d84e-5d24-85b1-5e8e3e03bf22"
-diamondUuid: "dd44e900-5701-8390-85aa-beee9c24ead1"
-uuid: "dbbdb9ff-f4c2-854d-a829-c72671e4cb7e"
-horo: 4
+coordinate: "vocabulary/maternity · 1/base · 70cc753b"
+contentUuid: "dcd2b95f-dda2-5604-9a46-2f2c769128d6"
+diamondUuid: "d9bc8981-115c-8619-b93e-a67285bbd4dc"
+uuid: "70cc753b-fdd3-8f98-a0bd-01ee888d8a74"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e27f6c28-f359-84e1-b0b9-950ead4ffb41"
+  computationUuid: "6a9aba74-57b0-826e-9ee9-7cb1815b47c8"
   stages:
     - stage: path
       stageUuid: "b8a4c258-71c5-85d2-9e09-24a8b2cb337e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "79ad4c51-7315-8b6f-b55d-866b32045731"
     - stage: horo
-      stageUuid: "dd04ac85-b6a8-86d6-a02d-09d7e483aa58"
+      stageUuid: "739e019b-7960-8d50-a342-c5ff65224852"
     - stage: seal
       stageUuid: "f1d3331e-d7a4-8aea-802d-c387e0bcc84d"
     - stage: uuid
-      stageUuid: "c42a90ec-d5c4-837c-8e61-e4441505d452"
+      stageUuid: "5c80c649-6afd-82d8-acd8-287b582ca59c"
 version: 2
 ---
 # maternity

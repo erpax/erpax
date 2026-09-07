@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "text",
-    "uuid": "2a4d8260-ca07-808e-9b48-fb641b1cde4d",
+    "uuid": "5ff40c97-03aa-834d-96b6-35c862a6449d",
     "words": [
       "text"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing or persisting prose — text decomposes into word ⊕ digit tokens, each a content-addressed diamond; parse walks text, save folds tokens into a typography-style root without one-folder-per-word sprawl.",
-    "uuid": "2062b8eb-3ef8-87d1-ba55-27f74ce89b3e",
+    "uuid": "a9ed1487-b30f-8ba8-bee0-123a1d2de5a1",
     "words": [
       "use",
       "when",

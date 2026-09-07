@@ -2,11 +2,11 @@
 name: ecommerce
 description: "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \"data is money\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce."
 atomPath: ecommerce
-coordinate: "ecommerce · 7/descent · e0955c2b"
-contentUuid: "26cb2dbd-3836-5ec0-9b3f-05e9b0b70ca5"
-diamondUuid: "3f22f5fa-19e5-8243-b982-9c53ea693e36"
-uuid: "e0955c2b-54bb-8872-80f8-c430cf7b0ed5"
-horo: 7
+coordinate: "ecommerce · 2/share · 1c89a3f6"
+contentUuid: "0540583e-4d97-525c-846b-15f66912d15c"
+diamondUuid: "8515f93a-f577-80e8-b7c6-235a32df3701"
+uuid: "1c89a3f6-fe7b-8187-b174-b4da46f8907b"
+horo: 2
 typography:
   partition: ecommerce
   bondDegree: 33
@@ -15,7 +15,7 @@ standards:
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "055c11cc-718c-8caf-b900-9d4c6edaca63"
+  computationUuid: "f35b9494-2fcc-8e76-baad-fa56e6fd43c4"
   stages:
     - stage: path
       stageUuid: "9b42707f-dc63-8c2f-88c9-2bb5e0e6cfda"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "664dcdcd-c127-8af3-ad17-39cbd2544cd2"
     - stage: horo
-      stageUuid: "e7f95cb5-ee3c-86ef-87ca-75e5fd6c3f20"
+      stageUuid: "041b5aaa-d52e-836c-83dc-117881301ac2"
     - stage: seal
       stageUuid: "025e1f4e-a192-8d70-81ef-6be2751aa981"
     - stage: uuid
-      stageUuid: "8770c07a-7ef3-8fe6-8034-01d9e3dc7eb4"
+      stageUuid: "8f9902fe-d5cd-865b-b8a2-7f0bc51ef0b7"
 version: 2
 ---
 # ecommerce — the storefront, configured into the society

@@ -2,11 +2,11 @@
 name: rear
 description: "Use when reasoning about rear as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/rear"
-coordinate: "vocabulary/rear · 2/share · 8fb5f91d"
-contentUuid: "7b4317e7-2621-5e4b-9431-bb8a884c6d0e"
-diamondUuid: "62d08780-9e46-8f4f-a3b4-b5ce7774e3ea"
-uuid: "8fb5f91d-5fdc-8907-b978-e7b47615ad24"
-horo: 2
+coordinate: "vocabulary/rear · 5/round · 6a27313c"
+contentUuid: "5aaf192f-364a-52ef-a6c6-1610dd528fd6"
+diamondUuid: "e3a6a735-6c57-8562-b0f1-018135ac178d"
+uuid: "6a27313c-6f22-8cc5-8f98-e90d26a5612a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4938c949-b860-8f6a-a7aa-c172605adcdf"
+  computationUuid: "c60a7149-be09-8673-9f00-c6c1d3da81e8"
   stages:
     - stage: path
       stageUuid: "1e505d63-7fe7-83ea-bd30-d120e02838df"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4ddebbd4-221f-82e5-8cda-9b5e990acb32"
     - stage: horo
-      stageUuid: "17fd65be-809a-83a4-b82e-8b31783e65ad"
+      stageUuid: "73dda874-82d9-856f-a101-4fcedcecf39b"
     - stage: seal
       stageUuid: "9adc53ac-2de0-8d09-a6f4-b2ae6bc1d3b5"
     - stage: uuid
-      stageUuid: "c468b96b-58a7-8fa9-87af-79cae8876bcd"
+      stageUuid: "011b6a02-0473-8677-bb71-f44aebeb4bcf"
 version: 2
 ---
 # rear

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "physician",
-    "uuid": "8b846e59-4c55-8d0a-9037-ac630692ea83",
+    "uuid": "1ea1affa-aa5e-80ad-a754-d03605c7f789",
     "words": [
       "physician"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about physician — An individual physician or a physician's office considered as a MedicalOrganization.",
-    "uuid": "0b8f8b0c-1954-8dbf-b6dd-a923ef815ed6",
+    "uuid": "cc6f7497-470d-83f0-bbc1-aa98594ee902",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "receipt",
-    "uuid": "46255da9-e769-80c5-ab15-310dbca0c324",
+    "uuid": "fb18e688-a0da-89b1-b264-e620dc74d9ff",
     "words": [
       "receipt"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the push gate must not be an hour-long monolith — green suite verdicts sealed content-addressed by their parsed import closure + schema surface; only changed suites re-run, a failure costs one named batch.",
-    "uuid": "b852042a-c5e4-8146-b437-52330728f080",
+    "uuid": "fa44e2d3-9031-8225-b1f1-939fc9af2300",
     "words": [
       "use",
       "when",

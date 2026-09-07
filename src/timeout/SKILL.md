@@ -2,10 +2,10 @@
 name: timeout
 description: "Use when bounding any command's wall time — the reasonable timeout is computed from measured samples onto the 1·2·3·5-minute ladder, never guessed."
 atomPath: timeout
-coordinate: "timeout · 2/share · fa03fc1a"
-contentUuid: "ebbc3c1e-c762-5d54-bc76-3cca7e211987"
-diamondUuid: "879b269c-c791-84ef-8db4-5684065cd067"
-uuid: "fa03fc1a-0b82-8424-b80a-2510f7155462"
+coordinate: "timeout · 2/share · 43891782"
+contentUuid: "84cf3b13-2277-5afb-ba89-f444954fe70a"
+diamondUuid: "d456ac39-e18e-8afc-a2b6-5684faa8c257"
+uuid: "43891782-76d9-8516-8e22-fc96051a05e2"
 horo: 2
 typography:
   partition: timeout
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a8496f72-0aaa-8577-a615-dc13e2a28220"
+  computationUuid: "e07f3056-e2e8-801e-a30d-713a9ed07660"
   stages:
     - stage: path
       stageUuid: "40f7818d-bd6e-8cd2-96d4-533ee1f18309"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "544bf708-f914-8791-bf91-82f776a84171"
     - stage: horo
-      stageUuid: "7f1871ea-abe3-8a9f-9fc6-09ccb4dab19d"
+      stageUuid: "e79e4b37-3f6f-84b2-8871-db6c06c60baf"
     - stage: seal
       stageUuid: "a4834f58-4482-8972-aea9-17b0ee135421"
     - stage: uuid
-      stageUuid: "6ef7fc81-20ad-8b5f-b26e-6b0da716e353"
+      stageUuid: "3eded800-c5f9-8be2-b280-c4e8e442d098"
 version: 2
 ---
 # timeout — the reasonable timeout is computed, never guessed

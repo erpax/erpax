@@ -2,10 +2,10 @@
 name: seal
 description: "Use when reaching the sealing half of the diamond — the receipt that makes a diamond signed rather than merely computed — through its own namespace; the face re-exports the diamond barrel while the matter is still being lifted out of the hub."
 atomPath: "diamond/seal"
-coordinate: "diamond/seal · 2/share · 9318a740"
-contentUuid: "0da21c43-df3c-5e0e-8a8c-0d32309c8027"
-diamondUuid: "491e9b0c-560e-8cf1-83e5-929b3ef16cf6"
-uuid: "9318a740-f051-8342-8ada-7acc7467095b"
+coordinate: "diamond/seal · 2/share · f9b9d01f"
+contentUuid: "6b5f05bb-cd47-5011-a6ca-107149abaff8"
+diamondUuid: "994d8147-40d7-8e0a-b0a8-491658c3b189"
+uuid: "f9b9d01f-824c-868c-9530-395ac255bd34"
 horo: 2
 typography:
   partition: diamond
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "04496831-3da7-8641-87d1-a5d6ae077f45"
+  computationUuid: "7b5bf235-3605-8766-babf-0272de0f4ac6"
   stages:
     - stage: path
       stageUuid: "2c36d2b0-a7e0-8c2f-bcc7-362be3266d3a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ba517c4a-01ca-894b-b1bd-352c8ec725d3"
     - stage: horo
-      stageUuid: "ea38e6e0-4f08-884b-8df6-37a7d43f2bb6"
+      stageUuid: "9dc6d14c-136c-8bc3-9702-250a204cd539"
     - stage: seal
       stageUuid: "ae568656-3716-8baf-af77-a0b7ad3acb85"
     - stage: uuid
-      stageUuid: "7a06f6f1-9439-8bcb-a1ea-9eb0a12ac383"
+      stageUuid: "16d4a389-c8fb-8bf4-b140-e57570650924"
 version: 2
 ---
 # diamond/seal — the seal face of [[diamond]]

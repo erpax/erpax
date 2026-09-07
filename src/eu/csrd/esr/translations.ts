@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "esr",
-    "uuid": "a0cbe589-b02d-821b-86a3-d589a1a7ed50",
+    "uuid": "084d94ca-df94-8410-abed-93b4fc91c99d",
     "words": [
       "esr"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing EU CSRD / ESRS.",
-    "uuid": "3a08696e-7149-8152-a104-f2b6278f0a91",
+    "uuid": "0ec9795f-56c2-8e86-9797-f77a5da8d39f",
     "words": [
       "use",
       "when",

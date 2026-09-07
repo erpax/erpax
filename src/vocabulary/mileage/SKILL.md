@@ -2,11 +2,11 @@
 name: mileage
 description: "Use when reasoning about mileage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mileage"
-coordinate: "vocabulary/mileage · 4/weave · 039aebee"
-contentUuid: "aaa952dc-343d-52b0-8485-9b487c499e9f"
-diamondUuid: "e72822df-040b-8113-8ee7-166f240bc6f1"
-uuid: "039aebee-05c3-8f1b-9466-8e2908abbd9d"
-horo: 4
+coordinate: "vocabulary/mileage · 8/crest · ee8e4bb5"
+contentUuid: "e8d55d78-f3b6-51b0-a919-6f19b8cab0e1"
+diamondUuid: "a537e5b3-e125-8c5e-a3d6-72e0e6ea1e95"
+uuid: "ee8e4bb5-021f-8ded-8c9d-190bc6a95fb7"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8da5bd31-b923-894a-9542-9af0ef9db3dc"
+  computationUuid: "0a0e104e-f31b-8b4e-8c8e-2cdd88a1bbf1"
   stages:
     - stage: path
       stageUuid: "5158b4ca-d766-8385-8a85-7de6b3853add"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8ea930d2-75bb-8881-b662-6b51f2a274e6"
     - stage: horo
-      stageUuid: "ed35beea-17cd-8b6c-9a8b-122fa22b0ca6"
+      stageUuid: "836e8238-5d08-885b-81a1-9e370843184f"
     - stage: seal
       stageUuid: "0c1fa1eb-3ec1-83d0-9178-490b8aae8d40"
     - stage: uuid
-      stageUuid: "e32c65bc-d248-87fe-bba1-0c903d7fe7a0"
+      stageUuid: "f4d1425a-0ca6-840c-a00b-8a64f65e0e4d"
 version: 2
 ---
 # mileage

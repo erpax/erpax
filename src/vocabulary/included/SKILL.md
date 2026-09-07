@@ -2,10 +2,10 @@
 name: included
 description: "Use when reasoning about included as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/included"
-coordinate: "vocabulary/included · 7/descent · 81be4d28"
-contentUuid: "9d8a0706-4453-5ada-bb90-eaa9d29fb3f4"
-diamondUuid: "9017fba9-09f8-85dd-b981-ec22aa9226d7"
-uuid: "81be4d28-3a55-8832-aaed-a7dbb9148f5a"
+coordinate: "vocabulary/included · 7/descent · c586e55b"
+contentUuid: "f997e5b4-8c6d-5873-8924-5b5308598f27"
+diamondUuid: "4cea2c13-3f58-8d34-acc2-3d58ed1e3588"
+uuid: "c586e55b-13fe-89bf-9bf1-beafbfd0d0ba"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "95122e63-0cd7-880d-a75a-ae9546c8ed99"
+  computationUuid: "784518f6-7749-89ba-a500-6ff2b3d11f6f"
   stages:
     - stage: path
       stageUuid: "15b0ee41-a5c3-80ac-a074-6fd006cb6cdb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "19ebb509-19f5-8988-9e08-ec2da5bbc91d"
     - stage: horo
-      stageUuid: "63a86928-70ef-8cbd-9e7f-c101f528dafc"
+      stageUuid: "12c82181-ea18-8062-b4b9-3fed5910f157"
     - stage: seal
       stageUuid: "f25822e2-d4ed-8a39-8e08-827e38f0109c"
     - stage: uuid
-      stageUuid: "fa27d7c4-4630-88c8-9c26-4a89108c4f0c"
+      stageUuid: "090f6704-8d56-8e1f-ac04-fc85df3fbfb7"
 version: 2
 ---
 # included

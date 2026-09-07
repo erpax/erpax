@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inverse",
-    "uuid": "575ab255-642c-83c6-a825-a0a0b6111561",
+    "uuid": "5ab41ed5-5adc-8495-b0f4-7f0ff467209d",
     "words": [
       "inverse"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about inverse — Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alu",
-    "uuid": "12f10eb0-14bb-80d8-ac1b-71a878bd7b6c",
+    "uuid": "3b381c49-c78f-8d3d-bac0-5fead2ebcd5c",
     "words": [
       "use",
       "when",

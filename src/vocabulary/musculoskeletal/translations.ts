@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "musculoskeletal",
-    "uuid": "628a43af-ccd8-8053-a6ed-bd907e54377e",
+    "uuid": "93d585f4-e167-8a15-9949-a9d4ce2dc2dc",
     "words": [
       "musculoskeletal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about musculoskeletal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "2882ddd8-0746-8dfd-8e2d-d6688472e7d3",
+    "uuid": "7f8046c4-3a24-81b5-926b-75704ffdc558",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "3078307b-a01e-8513-9da4-e3888dbf95da",
+    "uuid": "06ef360f-a795-8198-a749-d077431804f8",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the posts collection's Payload hooks — before/after change and validate logic for posts.",
-    "uuid": "91dea2d0-ac66-83e8-b337-b05d64d2af59",
+    "uuid": "204fe6c3-9331-8387-9b5c-b4aa5bac9c88",
     "words": [
       "use",
       "when",

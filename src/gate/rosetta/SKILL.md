@@ -2,10 +2,10 @@
 name: rosetta
 description: "Use when the structural gate is too slow to run every push — the rosetta gate folds the corpus to one root (corpusRoot) and reuses it: unchanged root ⇒ O(1) structural PASS, changed ⇒ verify only the changed atoms; the notary chain is the tamper-evident gate ledger. Fold-first for structure; tsc + tests remain the semantic complement."
 atomPath: "gate/rosetta"
-coordinate: "gate/rosetta · 8/crest · c823b92e"
-contentUuid: "ab35baf5-e518-5e1b-8703-dbf867530880"
-diamondUuid: "809af83f-706c-857b-9195-0c8299d6e816"
-uuid: "c823b92e-2a3f-8d29-b708-64f1928e7406"
+coordinate: "gate/rosetta · 8/crest · bb306177"
+contentUuid: "8b187f8c-aa09-5762-9ec3-066e2b0992d4"
+diamondUuid: "dd8e42b9-cfb6-8d4b-918c-463224367b1b"
+uuid: "bb306177-105e-852f-ba25-0325b1c38f86"
 horo: 8
 typography:
   partition: gate
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d90ea169-87db-8ab5-a0be-e850302543b1"
+  computationUuid: "3c6fd36f-677a-8ee2-943c-0d0413d41051"
   stages:
     - stage: path
       stageUuid: "399e5292-6d35-8ce2-9254-84097e383654"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "07720a55-5928-85c6-976f-150f822b9c37"
     - stage: horo
-      stageUuid: "acaa6cff-9bb4-85f8-87cb-ee8595ce30ef"
+      stageUuid: "db63bf62-9c59-8d20-a6ec-36778cc42054"
     - stage: seal
       stageUuid: "2c0b4f66-77ba-8d52-bc1a-cefcc510eb2d"
     - stage: uuid
-      stageUuid: "008103dc-9351-8ed0-95b1-93cf9f1795f3"
+      stageUuid: "bc089b33-4d16-8cc8-9d9c-863a73058792"
 version: 2
 ---
 # gate/rosetta — the incremental fold-first gate

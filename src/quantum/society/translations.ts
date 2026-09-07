@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "society",
-    "uuid": "0181869b-140f-843f-adce-e594e7b1e3a3",
+    "uuid": "7d709c02-33f1-8105-a84d-60dd294d2798",
     "words": [
       "society"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax as a social-engineering platform in the civic sense — society run on the quantum substrate (content-uuid, double-entry, tamper-evident) so coordination is legible and accountable, not covert; the quantum twin of society.",
-    "uuid": "166eaf5f-f5ca-88ef-9075-f73271ecfdba",
+    "uuid": "db365b22-9b90-8743-ac05-02d3d36f8718",
     "words": [
       "use",
       "when",

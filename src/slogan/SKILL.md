@@ -2,11 +2,11 @@
 name: slogan
 description: Use when reasoning about slogan — A slogan or motto associated with the item.
 atomPath: slogan
-coordinate: "slogan · 1/base · 70795578"
-contentUuid: "a675c6d3-f8f3-56a0-9661-c436a2edd728"
-diamondUuid: "2cd98bff-ba85-8a5e-b0ce-91b386535846"
-uuid: "70795578-32b5-87e4-a679-6e962d5f9516"
-horo: 1
+coordinate: "slogan · 7/descent · ae134031"
+contentUuid: "811ec078-c728-51b8-959b-d7e124a84a7c"
+diamondUuid: "c5b36285-491c-828d-88f6-ab552884b4d5"
+uuid: "ae134031-0e4a-8313-9f50-69f964edb91f"
+horo: 7
 typography:
   partition: slogan
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d057c6a1-ffa5-858e-a02c-5d3eca79a2d5"
+  computationUuid: "e8536721-cdd6-8b47-ab92-93eeb99bc602"
   stages:
     - stage: path
       stageUuid: "b3c63ebd-2a90-893e-b6fd-093df23c6bc3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "19bba710-0ed7-8b9c-a51a-b2d231b66e65"
     - stage: horo
-      stageUuid: "bce73b1e-c411-84c5-8ee9-06335561772d"
+      stageUuid: "cdcd924f-8f02-85b5-831b-36568b396587"
     - stage: seal
       stageUuid: "5291d3ae-dc2b-8dfd-9e9a-44d5dd4da511"
     - stage: uuid
-      stageUuid: "3a438d55-a8b1-8c46-96cb-65b0599a1d90"
+      stageUuid: "50265f93-17f4-84f9-b623-507b602eb47b"
 version: 2
 ---
 # slogan

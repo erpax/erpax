@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "allergies",
-    "uuid": "f89ceeb5-6266-81c0-8892-0ad87d6c2dca",
+    "uuid": "809a554a-985a-8fcd-a5bf-1632430031ec",
     "words": [
       "allergies"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about allergies as a medical facet of medical — vocabulary pivot to @/allergies; nested not duplicated.",
-    "uuid": "b681b480-7af2-8367-8a75-1f4951941de8",
+    "uuid": "a62c23c3-1a43-8e3e-8f93-2e8bbb7458b5",
     "words": [
       "use",
       "when",

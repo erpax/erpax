@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "schedules",
-    "uuid": "31687748-32a3-84b5-8b10-40783eca9564",
+    "uuid": "c8c8dd86-b868-8e85-a504-7f0211e2291b",
     "words": [
       "schedules"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node.",
-    "uuid": "42b239f9-6dfa-862e-a875-e93742c180d1",
+    "uuid": "95b1ca73-43f0-88af-bc4a-2093bd76df81",
     "words": [
       "use",
       "when",

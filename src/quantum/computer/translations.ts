@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "computer",
-    "uuid": "a64c532a-977e-8086-80bd-75c4b404beb5",
+    "uuid": "076e218b-04d2-8a28-8fa7-2f25fb3cb2de",
     "words": [
       "computer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when querying instead of re-deriving — the quantum computer's one face on QPU=CPU/GPU: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit, FTL metrics.",
-    "uuid": "5f41ac35-a7d3-808b-982d-ddfa772787de",
+    "uuid": "889cae49-53a3-8fe7-97a6-dc2e35e57713",
     "words": [
       "use",
       "when",

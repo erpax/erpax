@@ -2,10 +2,10 @@
 name: auth
 description: "Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts."
 atomPath: auth
-coordinate: "auth · 6/6 · d371a97a"
-contentUuid: "cf39c50a-6979-5360-8258-303b1c2062f6"
-diamondUuid: "4c6835af-d9fa-8e20-b16b-e971b1a0bf5d"
-uuid: "d371a97a-f2db-8cf5-8532-4675c0cc0cb7"
+coordinate: "auth · 6/6 · c103da44"
+contentUuid: "31f8c9a4-db70-53ba-a1c6-fc1d696fe8d1"
+diamondUuid: "6f13b0b2-a105-863c-ac3d-907a3b19e7aa"
+uuid: "c103da44-8201-852d-b18e-d4de76124312"
 horo: 6
 typography:
   partition: auth
@@ -22,7 +22,7 @@ standards:
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
 signatures:
-  computationUuid: "3136484d-17bb-8417-b08a-17d122a3d502"
+  computationUuid: "9bf22bec-6196-8f88-9c1b-68c20a85bab6"
   stages:
     - stage: path
       stageUuid: "b7524e53-dec3-83e8-aabc-a84f5ebd1222"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "e2230da0-7d68-83ab-97f6-404745395947"
     - stage: horo
-      stageUuid: "61e25996-29ca-87a9-a21e-edaa9a68f8b8"
+      stageUuid: "8ea52663-55db-8042-968b-b9374b6d4b65"
     - stage: seal
       stageUuid: "59b92b17-6478-81f2-ba2f-db85cafe564c"
     - stage: uuid
-      stageUuid: "a73da601-c122-85fb-a980-5b553c8334f3"
+      stageUuid: "c31191fe-c65f-8351-acd8-f99fa7f8ada6"
 version: 2
 ---
 # auth — Payload authentication (position 9, the control triad)

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calculation",
-    "uuid": "4b3ea763-4937-8d0e-a894-4b84fbfa9e26",
+    "uuid": "1bc4d1af-b733-8dd3-a45a-536bd75359f0",
     "words": [
       "calculation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one calculation — the singular model of the calculations collection (the plural store); a computed numeric result derived from inputs.",
-    "uuid": "4c27fac7-4f26-82b6-a652-1eb5e8d84393",
+    "uuid": "3824bc43-1240-8f5f-b787-581d1677adbf",
     "words": [
       "use",
       "when",

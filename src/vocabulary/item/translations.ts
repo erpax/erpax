@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "item",
-    "uuid": "d217fef3-9e91-8e02-ad6d-258e7c3a6b10",
+    "uuid": "5c063f5c-56f6-84aa-9ea2-47dc079b0611",
     "words": [
       "item"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about item — An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists').",
-    "uuid": "10e9b8dc-ff58-8264-9907-7b7400675670",
+    "uuid": "55daaaa8-ba5b-8af9-8218-fd0f33218f89",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: closing
 description: "Use when implementing or referencing Multi-Currency Closing Standard."
 atomPath: "multi/currency/closing"
-coordinate: "multi/currency/closing · 5/round · 0a015f32"
-contentUuid: "fefe948c-43d1-5c61-aed4-c2c5e709ba99"
-diamondUuid: "e546e0af-a066-8fad-9605-caaa726df763"
-uuid: "0a015f32-0705-8bdb-82e0-a91867fa8635"
-horo: 5
+coordinate: "multi/currency/closing · 8/crest · a40de6b6"
+contentUuid: "950e4b30-8f4c-5fc9-bb0b-0061cbd49180"
+diamondUuid: "227883fd-5b4c-8456-b852-e6d975e1919f"
+uuid: "a40de6b6-f1ac-8150-b74e-b7acfb5eb6cd"
+horo: 8
 typography:
   partition: multi
   bondDegree: 8
@@ -31,7 +31,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "95b346dd-cda4-8f04-944a-18c0cf55c7cd"
+  computationUuid: "34e246ed-5eb9-8cc8-ac33-da26dec7ef84"
   stages:
     - stage: path
       stageUuid: "ee296f9c-14ae-88ee-b819-bc23bebfb1f0"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "30df3af0-a1a0-89ff-84b6-af7314a98975"
     - stage: horo
-      stageUuid: "5062a888-14f9-88d5-8ce7-2c977ed4cb83"
+      stageUuid: "4aad4f48-a713-85a0-b39a-20f566556b36"
     - stage: seal
       stageUuid: "f3e26392-4109-8e84-ab19-f0edfaa5b97b"
     - stage: uuid
-      stageUuid: "40f10ab2-08db-8f62-a08e-6a2109cced26"
+      stageUuid: "71c4dafc-6e8f-89f5-80ab-6d14001bbb0b"
 version: 2
 ---
 # Multi-Currency Closing Standard

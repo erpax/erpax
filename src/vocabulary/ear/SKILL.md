@@ -2,11 +2,11 @@
 name: ear
 description: "Use when reasoning about ear as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ear"
-coordinate: "vocabulary/ear · 8/crest · 128148b2"
-contentUuid: "afd86f9c-f9dd-5525-92b1-e957a60f191f"
-diamondUuid: "768bb70a-6c94-89ab-a424-bdb2c76bd69e"
-uuid: "128148b2-c29e-8a56-9bd7-ec9dafb533fe"
-horo: 8
+coordinate: "vocabulary/ear · 2/share · 385b3416"
+contentUuid: "43379a07-295b-5bc5-944b-2c064cf3629f"
+diamondUuid: "966ee5f3-fb1c-8ab6-9d08-e6701cb1ce8a"
+uuid: "385b3416-3514-8f19-8422-01b2d6f80004"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fe971676-8265-8509-a4c8-f35cc843d1f2"
+  computationUuid: "7c2983d8-7660-8275-bccc-0ba6b99c98e2"
   stages:
     - stage: path
       stageUuid: "e246e47f-babb-8ef5-bef2-fd575a2a406b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "decb52cd-98a9-8c11-8b44-0d2d8944a51f"
     - stage: horo
-      stageUuid: "d60af9db-fa7c-8908-990d-b15510606937"
+      stageUuid: "74b22453-db84-8b66-b5a5-20d3bc9d629f"
     - stage: seal
       stageUuid: "7cd9aa9d-a928-8176-85b2-8940f4705eeb"
     - stage: uuid
-      stageUuid: "ffc3e3c6-7519-8117-89e8-8ec1d8199928"
+      stageUuid: "5c04f895-15e1-85e6-a599-ea1beea0a29b"
 version: 2
 ---
 # ear

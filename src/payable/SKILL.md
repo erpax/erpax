@@ -2,11 +2,11 @@
 name: payable
 description: "Use when reasoning about payable — The A/P field factories: the shapes a bill carries — bill number, vendor, due date, payment terms, A/P analysis. (the type module) is a set of these; this atom is the one."
 atomPath: payable
-coordinate: "payable · 8/crest · b22d1e6e"
-contentUuid: "93b4db3a-e00a-5ea0-aa6f-b4d25471b032"
-diamondUuid: "f3091f3c-7fa6-83c1-8dd2-d427e4bbffd5"
-uuid: "b22d1e6e-0378-8a26-ac04-2b5d5ae83027"
-horo: 8
+coordinate: "payable · 5/round · 1383875d"
+contentUuid: "225f6fdf-ea89-5906-9dda-4065dfe01b58"
+diamondUuid: "eaa0d632-5dbe-821c-9592-66a12c90e8c6"
+uuid: "1383875d-fc87-8eec-b852-b1e18877dd46"
+horo: 5
 typography:
   partition: payable
   bondDegree: 40
@@ -19,7 +19,7 @@ standards:
   - "US-GAAP ASC-405 liabilities"
 bindings: []
 signatures:
-  computationUuid: "f03d8467-c11a-8b50-a0a9-1745edc758df"
+  computationUuid: "b2f9e785-8592-8573-a2ef-f604546e6294"
   stages:
     - stage: path
       stageUuid: "568e663c-e2ed-8f3a-85e9-ec08ec29fdd2"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "150ebdb6-66c5-84ef-b645-4028645eb3ed"
     - stage: horo
-      stageUuid: "cc4dff04-4ff0-82fe-bb68-b711a31ded44"
+      stageUuid: "a444c90c-78c5-8d4e-8b99-25ca834bbf92"
     - stage: seal
       stageUuid: "61a2c646-d323-8b2a-9ef5-6965c6a23fa2"
     - stage: uuid
-      stageUuid: "86102b27-1c6c-8d02-97ac-829b8099b846"
+      stageUuid: "4cb500de-601c-8fde-b15b-296a637b6858"
 version: 2
 ---
 # payable — the singular the `payables` collection is a set of

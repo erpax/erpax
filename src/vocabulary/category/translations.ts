@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "category",
-    "uuid": "5eb29346-62b6-8695-abd6-54d53c9eeff4",
+    "uuid": "1b0a5dba-e160-8673-8dd3-a3ba8fdf6060",
     "words": [
       "category"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about category — A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
-    "uuid": "77a255ed-1a39-8aa4-9bd7-2cfd665016ac",
+    "uuid": "740151b4-f310-8aca-964c-3612d745f9ce",
     "words": [
       "use",
       "when",

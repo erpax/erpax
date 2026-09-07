@@ -2,11 +2,11 @@
 name: handling
 description: "Use when reasoning about handling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/handling"
-coordinate: "vocabulary/handling · 5/round · 2165de40"
-contentUuid: "9eabd33e-582e-5a52-bcd7-57cbf25aba08"
-diamondUuid: "96bd50b2-9478-8c9b-84ae-4e02d2893ff1"
-uuid: "2165de40-74eb-859a-a24f-62ea6404ecf2"
-horo: 5
+coordinate: "vocabulary/handling · 1/base · e4bd8b94"
+contentUuid: "02bd6901-a77c-5257-ae6f-a08474d6e8fb"
+diamondUuid: "ebc1c441-490d-8f9a-aa63-0e768c053a50"
+uuid: "e4bd8b94-1a11-843f-9d94-9a9a4117ea1f"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7656e82f-5896-82e1-a830-a6759fc591c9"
+  computationUuid: "6cdfca68-ac4e-8567-b566-6e960f77a38a"
   stages:
     - stage: path
       stageUuid: "b96c05b6-7306-8df2-bdda-598b1cede60e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4db1b154-5195-8c0e-8108-ddf6787b8942"
     - stage: horo
-      stageUuid: "06aa94a5-b409-8464-ba97-c7f5e001a844"
+      stageUuid: "e25e3ae3-f4b4-88f1-a18c-b1f3e010d737"
     - stage: seal
       stageUuid: "140bade6-86e7-83a5-b180-d7453be2a243"
     - stage: uuid
-      stageUuid: "2b924972-5cc7-8b53-983b-176040867d29"
+      stageUuid: "482a2199-8ec2-8154-a3a8-be7c0f18bc2b"
 version: 2
 ---
 # handling

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eliminations",
-    "uuid": "d58cf55e-fe77-8f91-8864-8a743e896cc2",
+    "uuid": "6e670df7-e83d-8b8c-8d85-9dd96355e2d3",
     "words": [
       "eliminations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register.",
-    "uuid": "0170463b-231f-8fa5-a8e2-fe6028b53cee",
+    "uuid": "05016aa8-33d5-896e-9894-f6ff40549e59",
     "words": [
       "use",
       "when",

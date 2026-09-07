@@ -2,18 +2,18 @@
 name: code
 description: "Use when master-data needs a unique short code — accounts, products, machines, teams, categories. The CodeConcern field-factory; code derived from name when absent; code is the human key, content-uuid the machine key."
 atomPath: "vocabulary/code"
-coordinate: "vocabulary/code · 7/descent · a85af727"
-contentUuid: "c02f9a11-d276-53b8-8f06-e9079b35bf24"
-diamondUuid: "925932f5-4ddc-87f2-9aaf-245562ee60c5"
-uuid: "a85af727-d02c-86de-b557-15e2864699ce"
-horo: 7
+coordinate: "vocabulary/code · 8/crest · d0b2b223"
+contentUuid: "f2d6631c-4aec-527e-8af8-d7c361f18879"
+diamondUuid: "07391c9c-3c1c-8e27-92fa-c6f0379f2d7a"
+uuid: "d0b2b223-7e24-815c-9b72-23805d5b993a"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 103
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8dd8a6c0-018d-80c5-b1ec-d02a2b3d09e7"
+  computationUuid: "8317904e-55c4-8405-a8b1-435ca96f63a8"
   stages:
     - stage: path
       stageUuid: "81c8167f-d6a5-868d-8ffe-a7fd07876781"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3ab44cfc-3d39-8ace-b669-427a3fe5a812"
     - stage: horo
-      stageUuid: "8f521d1a-7fb4-893a-b4f4-49e16109ddf3"
+      stageUuid: "9e99271d-2ea6-85eb-9e00-dc18a7ea6366"
     - stage: seal
       stageUuid: "3c3767c7-d51e-8947-b8d0-6f61be3f7832"
     - stage: uuid
-      stageUuid: "37a04f2e-2ba6-82ab-b6ab-65a4b45c3875"
+      stageUuid: "a778de3b-dcf0-8a0b-8568-9e1ed54269fa"
 version: 2
 ---
 # code — the master-data human key

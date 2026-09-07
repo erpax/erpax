@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "course",
-    "uuid": "f9b64806-96bb-89a3-abd9-591f8b79b7dc",
+    "uuid": "7a6c63a7-a237-8911-8a6f-ba3f267d0313",
     "words": [
       "course"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about course — A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through di",
-    "uuid": "6ed6cab6-fe20-8cf6-93b2-52358a9deecc",
+    "uuid": "625de105-f1e7-8541-92d7-7533bc1f8f5a",
     "words": [
       "use",
       "when",

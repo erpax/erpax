@@ -2,11 +2,11 @@
 name: address
 description: Use when reasoning about address — Physical address of the item.
 atomPath: address
-coordinate: "address · 5/round · 6c6f159d"
-contentUuid: "2d0b95c5-c6ce-5ae8-8191-8b8556b767f5"
-diamondUuid: "a6f73129-7f54-818e-8802-6b30c9371480"
-uuid: "6c6f159d-14f4-8481-b431-4d3294bc2e67"
-horo: 5
+coordinate: "address · 1/base · daea3a8e"
+contentUuid: "b93ec45b-f3ca-54d4-96cf-215e50ffc6e5"
+diamondUuid: "547dcda0-c7a5-8a01-b0b4-d0696290176e"
+uuid: "daea3a8e-29b8-8e54-9471-5724e14162e7"
+horo: 1
 typography:
   partition: address
   bondDegree: 54
@@ -20,7 +20,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7983c6de-a5a8-80ac-ad01-b764f851db63"
+  computationUuid: "9bc8285a-214f-8da5-90d2-4d306f95532f"
   stages:
     - stage: path
       stageUuid: "51c72db3-5231-882c-abd3-5c06874b9a72"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "bf70b2b6-8b38-8735-8dcb-2963a21fe3a7"
     - stage: horo
-      stageUuid: "2d5b6d22-4287-8226-b05a-a3a2b9d50bae"
+      stageUuid: "5c01c1fc-00cb-8218-97dd-79b9ff422da4"
     - stage: seal
       stageUuid: "405199e1-be11-8ded-b269-b7b0c784b888"
     - stage: uuid
-      stageUuid: "e41814ea-ee4d-8a84-ab56-e1b34bacba52"
+      stageUuid: "c3477790-c24b-87a2-8f04-55b8eb6727bf"
 version: 2
 ---
 # address

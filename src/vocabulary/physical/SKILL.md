@@ -2,11 +2,11 @@
 name: physical
 description: "Use when reasoning about physical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/physical"
-coordinate: "vocabulary/physical · 7/descent · 5f64f68d"
-contentUuid: "a10d422b-8b8b-5aca-a310-9aafb6137835"
-diamondUuid: "65fdab7d-a38c-8f49-9700-7044bb273b4b"
-uuid: "5f64f68d-a5f3-8f7e-a731-43567c7c4f1d"
-horo: 7
+coordinate: "vocabulary/physical · 5/round · cf010611"
+contentUuid: "fc83064d-46d1-5d9e-9bfe-4ff7e77d0e9f"
+diamondUuid: "12682111-c653-8bed-a34e-ea7872181b3c"
+uuid: "cf010611-421c-8cc4-a3bc-cc1e99ab7ccf"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 43
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2e0201a7-fe10-8df3-be53-f4c85a4a7931"
+  computationUuid: "20da9853-f5c3-81f0-a865-2b1978b0c40c"
   stages:
     - stage: path
       stageUuid: "02db1573-0f89-8b7f-acc3-a9c6e05a0099"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2e8807b0-231e-8c2e-bbd8-aa7757f4730c"
     - stage: horo
-      stageUuid: "e9eac139-6f6f-8ae3-ad3d-bb7bb1cc2fd6"
+      stageUuid: "8a6ef04c-d2aa-8f40-85db-bb02f7f1b64c"
     - stage: seal
       stageUuid: "944071a2-e4ae-87e2-be8c-94d513077653"
     - stage: uuid
-      stageUuid: "04352371-12a8-89d4-adba-5fd7a5c5fc90"
+      stageUuid: "82814905-8545-8fca-a932-e03bea877c7c"
 version: 2
 ---
 # physical

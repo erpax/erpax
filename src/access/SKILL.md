@@ -2,11 +2,11 @@
 name: access
 description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \"access denied\"/\"document hidden\". In erpax access is the society's \"who can do what\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
 atomPath: access
-coordinate: "access · 9/unity · 50e356dc"
-contentUuid: "e1118810-2ca9-5c2a-96a1-48c15d8a4f93"
-diamondUuid: "928cb781-4f39-8e2d-8672-d0ef95110954"
-uuid: "50e356dc-39a9-8881-8f7f-ba39775b45ec"
-horo: 9
+coordinate: "access · 6/6 · 4feb7072"
+contentUuid: "f9d4c3c0-8801-5a17-b99c-0bff66d44672"
+diamondUuid: "2a69a290-78cb-8a39-8b1b-9fec20c600b2"
+uuid: "4feb7072-8e38-82a4-9c87-36401aab96f7"
+horo: 6
 typography:
   partition: access
   bondDegree: 436
@@ -29,7 +29,7 @@ bindings:
   - "ratelimit/RATE_LIMITER_AI"
   - "ratelimit/RATE_LIMITER_API"
 signatures:
-  computationUuid: "a3c02ccb-b08a-8b3c-a586-54c71d6ab747"
+  computationUuid: "1f723cf7-aaea-8dac-874d-37e9ff2b2370"
   stages:
     - stage: path
       stageUuid: "d7b1808b-9c66-801b-a8de-ed55ac4d2ba0"
@@ -40,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "61f812ba-81c0-8cf6-bf03-133a2e00058f"
     - stage: horo
-      stageUuid: "e6ce4d2b-83a9-8eae-8328-856cfe17d415"
+      stageUuid: "4dd97757-4334-83f1-9778-806f4b0d1e10"
     - stage: seal
       stageUuid: "67f50dad-9ba9-8e96-bf4a-17b64f5ed91c"
     - stage: uuid
-      stageUuid: "c2e0d1a3-7846-8cdd-9b4d-8725afc317fc"
+      stageUuid: "740904a2-0617-8535-ba88-3ddfc378f271"
 version: 2
 ---
 # access — who can do what in the society (position 3, the 3·6·9 governing axis)

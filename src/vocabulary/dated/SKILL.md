@@ -2,11 +2,11 @@
 name: dated
 description: "Use when reasoning about dated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dated"
-coordinate: "vocabulary/dated · 7/descent · cbf742f9"
-contentUuid: "92029900-d81b-5186-ba00-c5e8d760bcdb"
-diamondUuid: "df8f28a0-ddb2-8cab-8c7b-ba2f8d13b077"
-uuid: "cbf742f9-5271-89e3-aa07-9e5fee2222a4"
-horo: 7
+coordinate: "vocabulary/dated · 5/round · 1810c31c"
+contentUuid: "bcdf073d-b60f-58a6-abd4-fcaf434d62de"
+diamondUuid: "e4acc890-40ff-8961-a80e-846dc10dfcfe"
+uuid: "1810c31c-fe19-8bef-a226-e0c6af267862"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9f2a0b4d-83e0-8fcb-976f-a9987f13ca2a"
+  computationUuid: "cf6481fd-2292-8dfe-949b-476d0adca0cd"
   stages:
     - stage: path
       stageUuid: "8dc56ac1-e211-84d9-b573-8a52a06d1d54"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d4b1eff3-2869-8ca4-bfe8-d34e314fde91"
     - stage: horo
-      stageUuid: "820139cc-e924-8625-a127-c3533a71e8c2"
+      stageUuid: "e9310f35-3a80-87e8-ab88-36fa2b548198"
     - stage: seal
       stageUuid: "1015d44b-1543-83bf-bf75-ddc5a90303bf"
     - stage: uuid
-      stageUuid: "63d58857-c73e-893a-bc95-49181c0433b8"
+      stageUuid: "e1d0712d-a70a-8657-84a0-555370090c3c"
 version: 2
 ---
 # dated

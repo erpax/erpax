@@ -2,11 +2,11 @@
 name: governance
 description: Use when reasoning about uuid governance — how a uuid is minted and ruled.
 atomPath: "uuid/governance"
-coordinate: "uuid/governance · 7/descent · 3bb4dd44"
-contentUuid: "0be3b11a-8c75-54aa-a6ed-e7907abd453d"
-diamondUuid: "21071446-c42c-872e-aad1-7b9c69edf15b"
-uuid: "3bb4dd44-6e82-8601-80b5-82dd8fee51b5"
-horo: 7
+coordinate: "uuid/governance · 4/weave · 55cf488f"
+contentUuid: "48fc4293-916a-5408-ad2d-de8ed963f4e9"
+diamondUuid: "823c4045-6099-8b27-a4e1-8421adaae47c"
+uuid: "55cf488f-e635-836a-a62c-e95a915af049"
+horo: 4
 typography:
   partition: uuid
   bondDegree: 59
@@ -20,7 +20,7 @@ standards:
   - eIDAS §6 electronic identification
 bindings: []
 signatures:
-  computationUuid: "a92e5007-5cd6-86e5-9457-ce3821350f95"
+  computationUuid: "627a059f-3914-8238-b58f-6932ccfdfb81"
   stages:
     - stage: path
       stageUuid: "215c3d8d-8cff-85b2-a64b-f704d581ad54"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "8c2f07a1-3352-830b-9c66-b3e4c75b9a66"
     - stage: horo
-      stageUuid: "c8cdd2af-abf9-828d-b467-f23144b1150d"
+      stageUuid: "129d6300-755c-8100-80b7-c1f93f5fb31c"
     - stage: seal
       stageUuid: "bd953fed-f89e-864a-9d36-5443db886d0a"
     - stage: uuid
-      stageUuid: "54b0f3a4-4c65-8c06-ad7b-bf5dff547815"
+      stageUuid: "ceabdf7f-189c-8c7c-a258-cb52f0dcf572"
 version: 2
 ---
 # uuid/governance

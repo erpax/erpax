@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "runs",
-    "uuid": "a36b9371-bd19-8e27-8def-5a5a362a33c1",
+    "uuid": "3d76376b-a242-8296-ae2d-33b3412bc8bf",
     "words": [
       "runs"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection.",
-    "uuid": "b2d033d1-7407-86e7-88eb-8f3e5368ff40",
+    "uuid": "2b74146b-c786-8887-ae3a-d2620b4ddde9",
     "words": [
       "use",
       "when",

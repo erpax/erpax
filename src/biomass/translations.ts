@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "biomass",
-    "uuid": "989bbcd6-973a-8926-9fcb-e8db4633b902",
+    "uuid": "0cc8c979-f3f7-8604-87fa-10082a3a5084",
     "words": [
       "biomass"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a living stock is valued by its total mass, not per-individual — standing biomass (kg) is the IAS-41 fair-value unit for an aquaculture stock, a forest stand, or a bee colony's strength: mass × forward price − costs-to-sell. Its growth rate is biological transformation. The non-individuated living-asset measure, shared across aquaculture/forestry/apiculture.",
-    "uuid": "ad85233f-a068-866b-ac9a-1ac55d917e4f",
+    "uuid": "86ecb381-ed0b-855f-a4e1-6267a8896c25",
     "words": [
       "use",
       "when",

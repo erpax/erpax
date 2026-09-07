@@ -2,11 +2,11 @@
 name: parcel
 description: "Use when reasoning about parcel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/parcel"
-coordinate: "vocabulary/parcel · 1/base · 6c829be6"
-contentUuid: "da989ff4-c9ef-538f-bc1a-74bd9f2c7699"
-diamondUuid: "b317e4a5-b95e-8cba-8499-22f96f9f0ffa"
-uuid: "6c829be6-b8b5-8cfd-86a1-366f5990b084"
-horo: 1
+coordinate: "vocabulary/parcel · 7/descent · 8f8d6075"
+contentUuid: "928a2458-e576-53f1-8dbe-1b62d43931e5"
+diamondUuid: "525d6c62-074b-8fe2-83d5-64dbc39e1209"
+uuid: "8f8d6075-676c-81d5-9c87-44efcc50dd05"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "957227f1-7563-856c-9f71-05bfd35895f1"
+  computationUuid: "ca82b317-bed9-8e26-b718-bcf31db55e26"
   stages:
     - stage: path
       stageUuid: "ae7c26f5-3d5b-8d3f-ae68-fe971b1c089c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4d42bcd6-1580-8923-a67b-3b15624a6f8d"
     - stage: horo
-      stageUuid: "81d73c8f-38f4-894c-a584-45ae47b8ae85"
+      stageUuid: "23797f68-4344-84b1-9740-1aa0067640ee"
     - stage: seal
       stageUuid: "48265e38-657d-8663-854c-4f922e7f6d2b"
     - stage: uuid
-      stageUuid: "c4f87490-2e62-8124-bca8-942047dde7c2"
+      stageUuid: "631f9a0d-2b9a-82c8-a945-740cff9fda19"
 version: 2
 ---
 # parcel

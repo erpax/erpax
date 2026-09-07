@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "whole",
-    "uuid": "92f12300-59ce-82a2-b4fa-e1e40dba8a68",
+    "uuid": "5f545bd9-a926-8d9b-aa67-fa6ce24a05cb",
     "words": [
       "whole"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about composition in erpax — whole↔part, fields→collections→plugins→erpax, BOM, consolidation, the fractal self-similar levels. The universal root of composition.",
-    "uuid": "9c469c05-158e-8313-9323-75904c49a66d",
+    "uuid": "6bcdea3a-fb52-8d73-8275-c0aacacfbb20",
     "words": [
       "use",
       "when",

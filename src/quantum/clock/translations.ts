@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clock",
-    "uuid": "13585726-4894-82e2-96f7-c5c2f940dd65",
+    "uuid": "882620fa-f02c-8f8a-aea0-11fcb2a82ede",
     "words": [
       "clock"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when order must be provable — one clock replacing 621 scattered time reads, where each tick folds (prev ⊕ content) so reordering or editing history breaks every later address. Supplies the interval dimension quantum/ftl lacks. Logical order, not seconds. Run: tsx src/quantum/clock/index.ts",
-    "uuid": "0064f266-0594-8673-a9cb-bbdefcd942b0",
+    "uuid": "c0702653-437a-8c0a-b075-a69349cb064f",
     "words": [
       "use",
       "when",

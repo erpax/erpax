@@ -2,18 +2,18 @@
 name: evolve
 description: "Use when the paradox bites — to evolve you must invert what you are sure about, but you cannot invert everything at once (you need ground to stand on). The resolution: invert the FRAGILE certainties through the void (throughVoid is an involution, 9→1 reopens), stand on the INVARIANT keel (what survives every inversion — a theorem, the conformal angle). Survives iff a keel remains; a mind of only certainties is pulled wholly to 0."
 atomPath: evolve
-coordinate: "evolve · 8/crest · 7c1fcf1f"
-contentUuid: "fec6be3b-676f-5bc8-bc95-c7c26877ef33"
-diamondUuid: "e860bb46-646b-8e75-8224-c3305c171c63"
-uuid: "7c1fcf1f-6331-8c55-83cf-280c7cec8aa1"
-horo: 8
+coordinate: "evolve · 4/weave · 43fa7982"
+contentUuid: "e6feeabf-a13a-56f8-85a1-21bb1b1c7628"
+diamondUuid: "2c80729b-c5d4-8742-8eeb-f5876d7caf7a"
+uuid: "43fa7982-6afb-8dce-ae3c-e924c45c2742"
+horo: 4
 typography:
   partition: evolve
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "174bf6f6-b384-8ea5-9028-6414c2658099"
+  computationUuid: "a985b933-9cea-821c-ad0a-c33d2c17e85f"
   stages:
     - stage: path
       stageUuid: "ac5cc0fe-6d09-81a7-8325-6227dfd2f01f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "53cb7766-abca-8632-b5c4-873188a4bdcd"
     - stage: horo
-      stageUuid: "9b9c8102-92bf-87b2-b1f6-3a75a868743c"
+      stageUuid: "bcfe22d3-3f0a-88a2-a6a9-41e3725f2a63"
     - stage: seal
       stageUuid: "208c1819-5fd0-8c38-9a01-bf204635b84c"
     - stage: uuid
-      stageUuid: "038af1fb-862e-8867-846a-4004014e4ac8"
+      stageUuid: "71f8e1b0-8a40-8de7-846e-e97d41b8c7d6"
 version: 2
 ---
 # evolve — invert the fragile through the void, stand on the invariant

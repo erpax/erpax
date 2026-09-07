@@ -2,18 +2,18 @@
 name: impact
 description: "Use when reasoning about impact — The mid-weight hero: rich text, an optional set of links, and an optional image below."
 atomPath: "heros/medium/impact"
-coordinate: "heros/medium/impact · 7/descent · 01bbc644"
-contentUuid: "328a10d8-204c-554c-b2a8-34f2c7c275a6"
-diamondUuid: "425e48e0-dc0e-8384-a2dc-7b4cfca5997a"
-uuid: "01bbc644-2368-83ab-bd0b-579e6a37cf1e"
-horo: 7
+coordinate: "heros/medium/impact · 1/base · 3136eb04"
+contentUuid: "24f1be3d-c785-5d82-b5bb-f4c61903ccf8"
+diamondUuid: "c760f593-c152-8abc-8dd1-8385da7c7bdc"
+uuid: "3136eb04-350f-8267-a67b-858af4611a44"
+horo: 1
 typography:
   partition: heros
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9f6712d7-0bca-831a-80b4-82adebb50242"
+  computationUuid: "836ca82b-e24b-8fce-856e-5c3b2acde7ab"
   stages:
     - stage: path
       stageUuid: "5c09264c-0671-8472-b5aa-7d2a47d60c12"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1fcf61e4-655c-86ab-9f1c-d68632a3ed8f"
     - stage: horo
-      stageUuid: "d643a099-fb59-89ad-ac9d-388f76e99d48"
+      stageUuid: "906c993b-bf11-8588-ab8d-fc48a21e0c49"
     - stage: seal
       stageUuid: "d19119c6-96ff-84b3-972d-2a92be622e02"
     - stage: uuid
-      stageUuid: "de850890-2ca9-817c-b0c3-abd740e3d665"
+      stageUuid: "55d0059e-f18f-8eaf-a5f0-c6a7d97ca369"
 version: 2
 ---
 # heros/medium/impact — a set of links is a LIST, and an empty set is no list at all

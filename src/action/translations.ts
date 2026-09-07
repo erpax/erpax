@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "action",
-    "uuid": "5134de2c-5c63-813b-92ae-ffe28521b0ca",
+    "uuid": "287f6cd1-4ee7-8cd6-89df-bea630acc2f8",
     "words": [
       "action"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about action — An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of th",
-    "uuid": "25dc403c-42fd-8099-9b3d-08b31b499b92",
+    "uuid": "2b99d1ad-9caf-8880-9619-fb1d2930e276",
     "words": [
       "use",
       "when",

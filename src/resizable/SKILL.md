@@ -2,11 +2,11 @@
 name: resizable
 description: "Use when reasoning about resizable — Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality."
 atomPath: resizable
-coordinate: "resizable · 8/crest · 4d3a4760"
-contentUuid: "1b97ebc7-65f8-5f27-9310-d22412cbf7a2"
-diamondUuid: "e92d6eee-c9da-84e3-8f4e-39db9916558d"
-uuid: "4d3a4760-8d2e-8093-bb45-ec8102b4ee16"
-horo: 8
+coordinate: "resizable · 4/weave · ccdaa51f"
+contentUuid: "545a9ad8-fb47-52bb-93f2-a2ee0b841a12"
+diamondUuid: "10d29b66-87f3-89fa-9ba6-69a509b84db0"
+uuid: "ccdaa51f-8b28-8b9c-897b-731f62f782cf"
+horo: 4
 typography:
   partition: resizable
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "451ae222-32f3-842f-9fda-e9f8ae0d5518"
+  computationUuid: "56db280d-ba88-8583-a0be-f522cc79d126"
   stages:
     - stage: path
       stageUuid: "f19b54dc-af9f-813f-8734-ecd84956090a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f8dae1a2-0c25-8aae-932e-12f7f94e4a7e"
     - stage: horo
-      stageUuid: "38679ec5-fb81-879d-abdf-bea2b3b991a4"
+      stageUuid: "ab89d770-47d9-8b65-8bc3-b025466bb458"
     - stage: seal
       stageUuid: "6b00feca-434c-8954-ad8f-2f33c505c314"
     - stage: uuid
-      stageUuid: "566885bd-cd69-8d1c-8f42-e8bd2f2a45b1"
+      stageUuid: "8650f535-50b3-846f-b012-86030cb377ff"
 version: 2
 ---
 # resizable

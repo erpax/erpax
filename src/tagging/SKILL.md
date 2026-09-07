@@ -2,18 +2,18 @@
 name: tagging
 description: Use when modelling one tagging — the singular model of the taggings collection (the plural store); the act of attaching a tag to a record.
 atomPath: tagging
-coordinate: "tagging · 4/weave · 6013256e"
-contentUuid: "406407f4-aa35-55eb-a7f0-6ebe48c6d9b1"
-diamondUuid: "18fd9ccd-98ea-85ce-bb03-c1ae37ac5ba2"
-uuid: "6013256e-2f1b-8637-8707-64a8f0099b01"
-horo: 4
+coordinate: "tagging · 5/round · 6aa54a3e"
+contentUuid: "652d33d3-bf74-539b-a941-0263142e5268"
+diamondUuid: "43dce914-57c0-807d-afdc-a93f40bcd30e"
+uuid: "6aa54a3e-a6dd-8fc6-9526-949919224bc0"
+horo: 5
 typography:
   partition: tagging
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7154d25a-d002-8cf4-ad3e-5c73838f1bc9"
+  computationUuid: "41ca0a82-dbbc-8579-a21f-9bb00949aa23"
   stages:
     - stage: path
       stageUuid: "0229d620-d8ef-853f-a1a3-2937bad0631f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9b59a0c0-349a-8324-8785-f87212382e89"
     - stage: horo
-      stageUuid: "2ef6ccdb-fc5c-8478-b4b2-d829b9feaa96"
+      stageUuid: "29d27458-e759-87b5-a66f-756f6f413367"
     - stage: seal
       stageUuid: "76d44a89-fedb-8507-8370-fe34c3109369"
     - stage: uuid
-      stageUuid: "44262e71-c471-8b0f-b4d7-75d4dadafad0"
+      stageUuid: "65bc4fbf-bc05-880e-b3aa-2e1f7e13023b"
 version: 2
 ---
 # tagging — the model of one [[taggings]] row

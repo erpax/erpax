@@ -2,11 +2,11 @@
 name: constraints
 description: "Use when reasoning about constraints as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/constraints"
-coordinate: "vocabulary/constraints · 1/base · 06fa6ee2"
-contentUuid: "eeaade25-dc6a-50dc-a27b-6de7596e2950"
-diamondUuid: "b7a119ae-c149-8e96-9b68-7a7a490508a1"
-uuid: "06fa6ee2-2182-8650-bf69-68148376ebf5"
-horo: 1
+coordinate: "vocabulary/constraints · 2/share · a4656663"
+contentUuid: "492c284c-7113-57f4-b8df-828b7424ccb0"
+diamondUuid: "1cd15fc0-b106-8da3-866e-78568c67aff6"
+uuid: "a4656663-ee39-8095-8683-289d17416d4a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6cb9173e-37ae-863d-ace3-35fe224a3ebb"
+  computationUuid: "b1abaab6-18a0-8151-b0da-d1e5f38ad802"
   stages:
     - stage: path
       stageUuid: "4c24160f-29a4-873c-98cf-57f8138fcb35"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "267007f2-5681-8b95-95a0-d915418ebe9d"
     - stage: horo
-      stageUuid: "e77c508b-c940-8298-b849-7d8a00bf3af8"
+      stageUuid: "773785eb-234b-86dc-ac43-d18e50a052b7"
     - stage: seal
       stageUuid: "dc66a028-348f-831b-b1cd-061002bd8e6b"
     - stage: uuid
-      stageUuid: "5c9eecd5-15ed-81c1-ba6b-c102d5331713"
+      stageUuid: "fce315f1-5361-8a93-b9ac-0e26f0681ec9"
 version: 2
 ---
 # constraints

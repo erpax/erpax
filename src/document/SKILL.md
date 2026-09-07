@@ -2,11 +2,11 @@
 name: document
 description: "Use when reasoning about document as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: document
-coordinate: "document · 7/descent · 17938c5b"
-contentUuid: "b2044a55-4696-50ea-894a-05002215ffa7"
-diamondUuid: "33021aae-c29e-8443-9c30-aac3225e8078"
-uuid: "17938c5b-d132-844c-a34c-0d0c9c97fc9b"
-horo: 7
+coordinate: "document · 2/share · 33c8bb6d"
+contentUuid: "55f3238f-48ca-54c0-ab94-28a6019a9897"
+diamondUuid: "e9e4cae1-6d41-860c-aa74-f1ba14f5e780"
+uuid: "33c8bb6d-acca-8d93-a37c-a209d56f5e52"
+horo: 2
 typography:
   partition: document
   bondDegree: 56
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "81bd1f61-82fe-80ea-af7b-6bc0401b1505"
+  computationUuid: "9a0c0395-6206-82d8-a92d-6220082fd276"
   stages:
     - stage: path
       stageUuid: "7d65c198-109c-8f30-bb8a-40cf6a377306"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "26284b4f-414b-85a8-8582-090d8c3bba29"
     - stage: horo
-      stageUuid: "86a21780-f5fa-8849-aa2c-01441d6c0234"
+      stageUuid: "b0019d5b-9e7a-8b2a-a9ab-431c8ea28fbf"
     - stage: seal
       stageUuid: "d34ef351-bf6d-8db5-bbe9-04692b41f13f"
     - stage: uuid
-      stageUuid: "dcec4e61-76e3-8631-aab6-a9d115bed2c8"
+      stageUuid: "85fdb633-1caf-832c-86c6-10df7c60b88e"
 version: 2
 ---
 # document

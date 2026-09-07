@@ -2,18 +2,18 @@
 name: development
 description: "Use when planning what to build next — a feasibility-ranked roadmap of capabilities driven by the self-building loop; nextMove picks the highest-feasibility development for the society to advance."
 atomPath: development
-coordinate: "development · 1/base · 3bad4b4c"
-contentUuid: "2b04cd38-b98d-5e0c-b4f4-08a4d546be9c"
-diamondUuid: "7c666466-24aa-838f-9e04-8eb325bd8fd7"
-uuid: "3bad4b4c-7309-8dbd-9866-51e0455095b2"
-horo: 1
+coordinate: "development · 4/weave · 8b471db1"
+contentUuid: "18b12044-a680-5363-a33e-1521c4e24b8d"
+diamondUuid: "42455933-e3ce-80f5-a3ad-82cd8f529a86"
+uuid: "8b471db1-ce5f-85e2-ba12-0bca76b99e34"
+horo: 4
 typography:
   partition: development
   bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "20d72351-d7f6-8483-ba9f-cff722284598"
+  computationUuid: "a2b4f1a5-e690-8def-87ad-1bd1a0970835"
   stages:
     - stage: path
       stageUuid: "b961d87f-7eaa-8108-b3ab-5dc23f2579c0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "17809f6b-1781-8913-b5ba-233610e620c9"
     - stage: horo
-      stageUuid: "7a4a1342-9944-8d52-816b-96fcad185cf3"
+      stageUuid: "c299ce9a-21b2-89cb-a27b-cf62d1f8ec29"
     - stage: seal
       stageUuid: "685c8484-8916-88dc-9745-05402d2764c5"
     - stage: uuid
-      stageUuid: "98110934-e0c9-8fdf-b522-ce02510c4476"
+      stageUuid: "750469d9-d5b9-8f48-aa89-f31d036a9f99"
 version: 2
 ---
 # development — building toward the goal, one ranked move at a time

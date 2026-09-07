@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "photos",
-    "uuid": "ee52c031-7305-8933-a194-56166aef41e7",
+    "uuid": "a6f849c1-6226-8196-9cb2-3d498fa7e58b",
     "words": [
       "photos"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about photos — Photographs of this place.",
-    "uuid": "4cd636fc-e3bf-8d57-a788-7876ec66d2d1",
+    "uuid": "a5f1dd42-40b7-8e33-ae7a-06608938dc24",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: terms
 description: "Use when reasoning about terms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: terms
-coordinate: "terms · 5/round · 87af53ca"
-contentUuid: "6605849d-a989-56a0-8dd5-fb0c79fa12b1"
-diamondUuid: "0e60f1c3-17dd-833f-b26b-8446c3bf46a3"
-uuid: "87af53ca-3323-8f58-9500-2b307fb253fd"
-horo: 5
+coordinate: "terms · 1/base · 1865d277"
+contentUuid: "2df28a38-97b9-5ce5-ba6a-e9e0ca59fa9a"
+diamondUuid: "de59a2be-cfc5-88df-b762-bef8e6266162"
+uuid: "1865d277-de9d-8d95-b432-feb081fdf463"
+horo: 1
 typography:
   partition: terms
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e508c216-3067-81e8-bbc2-4f9e71c29f98"
+  computationUuid: "30f8c7cc-a51b-878e-846d-504b2fbde0f8"
   stages:
     - stage: path
       stageUuid: "108d6e1a-e115-8e29-873d-3bbae2ff0f2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6d6a359d-5ba2-88f7-9d56-3a63bab5270c"
     - stage: horo
-      stageUuid: "2cfa3b73-fb39-8f9b-ad52-63672bed7ed3"
+      stageUuid: "a7616ae2-ae2b-86ce-9264-da7cb9bb0008"
     - stage: seal
       stageUuid: "4e8b6296-58e3-8401-b164-8b5f80cfda84"
     - stage: uuid
-      stageUuid: "98730166-ade5-8cb5-ace7-05e503915c4c"
+      stageUuid: "30445b1b-98b1-890d-abbd-ab003b2fed84"
 version: 2
 ---
 # terms

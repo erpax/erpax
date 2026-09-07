@@ -2,10 +2,10 @@
 name: pending
 description: "Use when reasoning about pending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pending"
-coordinate: "vocabulary/pending · 1/base · 95867e38"
-contentUuid: "9653cbcb-6369-511e-868e-7dbe25d6fc29"
-diamondUuid: "0e336a9d-11cd-8ed2-98c8-5ba743109e47"
-uuid: "95867e38-6f10-837b-bc2e-158cee4537a1"
+coordinate: "vocabulary/pending · 1/base · e6340742"
+contentUuid: "c00c1c1b-c66c-51dc-965a-b1b832f261a0"
+diamondUuid: "271cf135-6518-81b1-abe8-646e61a756ba"
+uuid: "e6340742-6acc-86e5-b159-4ff00a317076"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "df117326-98de-8711-a92e-714209e4497e"
+  computationUuid: "946e39c0-dad7-8790-a900-deb89070d80a"
   stages:
     - stage: path
       stageUuid: "aafd9e66-0a70-8ccd-82c7-942f0f287e76"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8213c4c5-846a-8bc7-8bc2-b95b1ffdb747"
     - stage: horo
-      stageUuid: "4be0d074-5d00-8169-8306-caf704053afd"
+      stageUuid: "9c8f0fdb-6a39-84f5-85b3-38ee1c6e770d"
     - stage: seal
       stageUuid: "d390fe2c-7ed6-8fea-8d06-54c19d506474"
     - stage: uuid
-      stageUuid: "d249b073-f45c-8610-ba65-8a940cdb270f"
+      stageUuid: "6c62665d-9402-84a5-8d36-1727481333ea"
 version: 2
 ---
 # pending

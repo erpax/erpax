@@ -2,11 +2,11 @@
 name: non
 description: "Use when reasoning about non as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/non"
-coordinate: "vocabulary/non · 1/base · 8755d9bb"
-contentUuid: "e24d6421-88be-5a02-92fd-aeb9d132d508"
-diamondUuid: "2954cedb-1a04-8a4a-a6bc-3f0cc529ef57"
-uuid: "8755d9bb-dab5-842e-8782-ec18b2ab2e4b"
-horo: 1
+coordinate: "vocabulary/non · 4/weave · d56ac20d"
+contentUuid: "f5c94653-1636-5344-814d-136491f4f159"
+diamondUuid: "f4f21927-c24c-8784-9326-7a1d2ab1efc8"
+uuid: "d56ac20d-2f88-8bc0-8102-af3254c73ce1"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff14320e-43bf-89aa-bee8-7eba64937cb4"
+  computationUuid: "f2b4039f-ad1d-8d96-b47b-dafdf71034c7"
   stages:
     - stage: path
       stageUuid: "9d489510-af7d-8765-a7ec-025a800d82e9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dc116b09-bd94-8fe4-b37e-b64317bb403c"
     - stage: horo
-      stageUuid: "b6fcc1f8-cff0-839d-afd5-5e9e0ef400ce"
+      stageUuid: "fc6691bc-5ffb-8e02-9365-55bc41dd3e4d"
     - stage: seal
       stageUuid: "48c02797-b0a4-896a-90de-7fe495e10f55"
     - stage: uuid
-      stageUuid: "6f821d39-2b7a-858c-b7d4-fd026efd28aa"
+      stageUuid: "f68628b0-cb96-8aa2-b580-d65fa57f3391"
 version: 2
 ---
 # non

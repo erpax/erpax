@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "collapse",
-    "uuid": "3297adf9-8a7e-8e90-87c9-18045830b941",
+    "uuid": "e2ab96c7-9709-85a4-bde3-6e1c1a411e26",
     "words": [
       "collapse"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \\\"collapse all to Payload\\\" law; one name across every dimension, drawn from the standards.",
-    "uuid": "c476d658-bac4-8862-ba9c-ce0818eb34bf",
+    "uuid": "d854e20b-c803-8409-bab3-960fae38aacd",
     "words": [
       "use",
       "when",

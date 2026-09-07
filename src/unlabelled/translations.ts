@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unlabelled",
-    "uuid": "65c589ce-dfbd-830a-9e0b-acc550ea003f",
+    "uuid": "ef397abc-ec68-80ad-95fe-3239248f3147",
     "words": [
       "unlabelled"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about unlabelled — A schema.org component word, collided out of schema.org compounds — fused from isUnlabelledFallback (sti · collapse · merge).",
-    "uuid": "32d3fa4a-e703-828a-ab0c-db02beb254c5",
+    "uuid": "446028e8-8fdd-8705-8eff-5e9a7ebeadb2",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: interactive
 description: "Use when reasoning about the collapse of collections into interactive trinities — a collection is a node, the trinity tells it three ways (matter, antimatter, backend) and renders it once; interactive adds the live fourth face (the render), so every collection is seen and acted on, not only read."
 atomPath: interactive
-coordinate: "interactive · 4/weave · ad3f5d6a"
-contentUuid: "78cf25de-3bf1-5e21-badd-d47497d288ed"
-diamondUuid: "1de6b163-fd5e-8203-bcf1-028e163af3a3"
-uuid: "ad3f5d6a-0be2-82fc-af49-1da7512abf44"
-horo: 4
+coordinate: "interactive · 1/base · 013343e9"
+contentUuid: "43e5dd92-8e90-5dbc-8a6b-84d1eaad909a"
+diamondUuid: "2a2a4974-cb8f-8212-858b-590942ef84f1"
+uuid: "013343e9-ee63-8c3b-94bb-b318afa932f4"
+horo: 1
 typography:
   partition: interactive
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "the trinity (one node, three sources, one page) extended by the render (the fourth, live face)"
 bindings: []
 signatures:
-  computationUuid: "2f4ce47f-4fb3-8680-bd86-bb2d6c159dc9"
+  computationUuid: "ad38c8f9-162c-8708-a3e4-9fc45f1dd193"
   stages:
     - stage: path
       stageUuid: "9581d773-c763-85a2-a158-f500278b94a0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "34faae01-fe54-8752-872c-284dcf1e9683"
     - stage: horo
-      stageUuid: "4122e800-6e1a-8a44-9703-0df69f896bfb"
+      stageUuid: "2e202009-178a-8881-ae04-5a61dc108a40"
     - stage: seal
       stageUuid: "16b2264d-ce46-87ea-a921-8e39b2dfde16"
     - stage: uuid
-      stageUuid: "2d463aa9-4796-84e0-9605-75b2e2f4aeaf"
+      stageUuid: "0199e49f-d38e-8189-9d8d-e9d93e53a39d"
 version: 2
 ---
 # interactive — the collections folded into interactive trinities

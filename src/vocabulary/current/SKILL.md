@@ -2,11 +2,11 @@
 name: current
 description: "Use when reasoning about current as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/current"
-coordinate: "vocabulary/current · 4/weave · 2841d235"
-contentUuid: "01038197-09f3-506d-b5f8-75b2086b9a26"
-diamondUuid: "83cd74f4-9c6d-860d-a8fe-01d014203405"
-uuid: "2841d235-5bb0-8c1b-a562-6ad12bc27055"
-horo: 4
+coordinate: "vocabulary/current · 8/crest · fa8dea09"
+contentUuid: "21169934-66bd-5f33-9dfb-8eddfbb38da0"
+diamondUuid: "83585415-9201-8e80-bb5d-c2d19018f2aa"
+uuid: "fa8dea09-5528-821a-b148-4bc25b664b8a"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bb4c81cd-ba90-8fdd-bbe7-98648ecb8853"
+  computationUuid: "70baaac9-5799-83fa-b89f-3850425edec5"
   stages:
     - stage: path
       stageUuid: "d4d5dc17-1118-8118-b304-e01fd73c52fe"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "180cca48-07d3-85cd-8e8b-c0a09ecf84e1"
     - stage: horo
-      stageUuid: "5ea4533b-47b6-8d18-b4b5-913a20cdcc58"
+      stageUuid: "35d4f455-9175-8bdf-be6d-0b30e540299b"
     - stage: seal
       stageUuid: "0571350c-48ff-86a7-b0f8-f0000776c8f1"
     - stage: uuid
-      stageUuid: "7ca57890-0cb8-8a53-a876-1fff6068849c"
+      stageUuid: "1f3644ae-bf55-83d2-b3d6-fdbd15e173bf"
 version: 2
 ---
 # current

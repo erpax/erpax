@@ -2,11 +2,11 @@
 name: representation
 description: "Use when reasoning about representation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/representation"
-coordinate: "vocabulary/representation · 1/base · 2af3ffbb"
-contentUuid: "8c018b6f-cff4-506c-a187-75d734d4ce54"
-diamondUuid: "da3752fc-aeb5-8339-8623-34a751db5256"
-uuid: "2af3ffbb-3adf-8113-bf7a-4be419b08a6d"
-horo: 1
+coordinate: "vocabulary/representation · 2/share · 360aa836"
+contentUuid: "e323f14a-63f9-5e1a-a946-8115f1949a21"
+diamondUuid: "9447da70-19e1-8526-b497-21e6610732f5"
+uuid: "360aa836-4b12-81b1-a079-bb36e5066e15"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9bfdab87-cbcf-8b5b-b143-c0585a464c1d"
+  computationUuid: "163ad08a-2407-88e9-84f4-f22b1bac621d"
   stages:
     - stage: path
       stageUuid: "e092dccb-8ced-8dbd-843c-8e9a2a6a522e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "83e7b6d5-1ace-87b1-8182-3661f9932374"
     - stage: horo
-      stageUuid: "da537692-38f5-85c6-b2a3-46e8605d468f"
+      stageUuid: "b3e69dc5-2387-849f-9099-452f6a05fd54"
     - stage: seal
       stageUuid: "6ea80f0c-3a3c-8d0b-b7e5-426b4ab5f68b"
     - stage: uuid
-      stageUuid: "d1db7dd6-4bc6-8c0b-acef-2d189b84cb03"
+      stageUuid: "85af2950-223a-861c-9db1-9d8e00886b33"
 version: 2
 ---
 # representation

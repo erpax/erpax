@@ -2,11 +2,11 @@
 name: disagree
 description: "Use when reasoning about disagree as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/disagree"
-coordinate: "vocabulary/disagree · 1/base · 53463e1a"
-contentUuid: "da190214-8d09-5445-b4eb-a482ae6a1433"
-diamondUuid: "a49f145d-fc6c-8a1d-8f40-3ba06fe3e99e"
-uuid: "53463e1a-bdcd-8532-becb-db92aed1d3fe"
-horo: 1
+coordinate: "vocabulary/disagree · 8/crest · 5e44ff91"
+contentUuid: "396333d0-84d0-5ec4-997d-22d1a39846c9"
+diamondUuid: "71cf26fe-3bbc-8ccd-bc4f-8a5e28b5a1f8"
+uuid: "5e44ff91-c6e8-8e27-9165-3b50a2163742"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2d83caf2-b1e1-89a3-9bfb-73cbc03d7e9b"
+  computationUuid: "dd08fc6a-8e85-8613-b168-bb13320ad103"
   stages:
     - stage: path
       stageUuid: "b1490621-cedd-8299-89f2-7194255555a2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "22deae5f-98ca-8996-a1f2-a3d54f4e236b"
     - stage: horo
-      stageUuid: "f78794c1-7ccd-8d6b-b2ee-df85a9944ed3"
+      stageUuid: "9877d8fd-f172-806c-befd-0c2913cd9158"
     - stage: seal
       stageUuid: "91c6fd45-5e31-86d5-ab54-1dd956be6644"
     - stage: uuid
-      stageUuid: "dee707ae-9928-85e5-a915-0c59395ad5f3"
+      stageUuid: "894c3992-b007-8da0-93c7-4e6388886444"
 version: 2
 ---
 # disagree

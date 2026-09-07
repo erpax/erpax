@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "breath",
-    "uuid": "96925b88-080e-800e-b1a8-b76131a34b64",
+    "uuid": "2190150b-ce03-8db9-bed3-53cc4efa570e",
     "words": [
       "breath"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the oscillation in erpax — the C↔M (3↔6) polarity swing, forward↔reverse, give↔take, expand↔bind; the pulse the ring moves on (A432 ms). La/A432 sits at the breathing position (round). The living dual of balance. Nested under rodin.",
-    "uuid": "d7ebfc44-aec2-8c27-bede-ae8ad825945d",
+    "uuid": "7df3c12c-d55c-8b58-98f9-ebbfa53fcc55",
     "words": [
       "use",
       "when",

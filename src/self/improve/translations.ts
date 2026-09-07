@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "improve",
-    "uuid": "44215108-bf4c-86d7-aadd-75a0588c789a",
+    "uuid": "e2c075a7-c3ff-887c-a140-bfb5e905df3c",
     "words": [
       "improve"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the corpus improving itself with NO external tool — the development-time twin of self/closure's Law 53. Every stage of the improvement loop (leftover · rosetta · decide · publish · think) is a local atom; selfImproves proves the external-tool count is zero and loopResolves proves the loop is real matter on disk, not fabricated prose.",
-    "uuid": "c93966b6-e254-82bd-afdb-cec044c72178",
+    "uuid": "880cb788-e5d1-83b4-85f2-4f2c845cfedc",
     "words": [
       "use",
       "when",

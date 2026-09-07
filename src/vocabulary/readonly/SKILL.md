@@ -2,11 +2,11 @@
 name: readonly
 description: "Use when reasoning about readonly — A schema.org component word, collided out of schema.org compounds — fused from readonlyValue (sti · collapse · merge)."
 atomPath: "vocabulary/readonly"
-coordinate: "vocabulary/readonly · 4/weave · f90f4ac1"
-contentUuid: "74c2a8db-4079-58b6-aeae-f175b2b6c69c"
-diamondUuid: "c27d6a5a-5cec-8caa-bf47-05d32a161a73"
-uuid: "f90f4ac1-f727-84c2-b5e4-cc9064821c58"
-horo: 4
+coordinate: "vocabulary/readonly · 1/base · 69499ce7"
+contentUuid: "d4458efb-76a1-51e5-b269-f791ce9ac6e2"
+diamondUuid: "8b42e44b-804e-8bc7-aef6-16035fe60e30"
+uuid: "69499ce7-fa67-8593-96cd-29e3da70f849"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "15f967d4-019a-840c-ba04-d123a14e6500"
+  computationUuid: "3a451600-b012-8763-a5f0-73b6dbf00562"
   stages:
     - stage: path
       stageUuid: "773a4649-dbd0-87e9-a596-8d1f38d7a43d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9bb629d4-742e-8930-81f5-a2241b4a8b60"
     - stage: horo
-      stageUuid: "c452fa0d-463e-81c7-a3a1-82106da8c484"
+      stageUuid: "f49bbe04-c095-8e93-87eb-fde114231a8f"
     - stage: seal
       stageUuid: "e2ca9e24-25ef-8db6-8413-0582b72b1dd8"
     - stage: uuid
-      stageUuid: "ff284db1-e599-8130-8209-d32af7e183be"
+      stageUuid: "d2f2fda8-7207-8ead-83b7-555552b486ed"
 version: 2
 ---
 # readonly
