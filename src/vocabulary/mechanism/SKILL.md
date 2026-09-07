@@ -2,11 +2,11 @@
 name: mechanism
 description: "Use when reasoning about mechanism as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mechanism"
-coordinate: "vocabulary/mechanism · 5/round · 9471ad97"
-contentUuid: "e52e3d8b-563e-537f-a215-b9e5fb46dd80"
-diamondUuid: "cb197894-ef54-856e-bbbf-871cf404f19a"
-uuid: "9471ad97-4c59-8105-bf72-f50825e05907"
-horo: 5
+coordinate: "vocabulary/mechanism · 1/base · 9724e9da"
+contentUuid: "1fbb9363-3571-544d-9576-0ec0f8c9bea6"
+diamondUuid: "74da4be5-44e6-8bd2-a28a-97fa7eab2e62"
+uuid: "9724e9da-b1b4-82f3-b8fc-9bf448b02da8"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "85b7a067-b7de-8275-8b1a-c33b8939f245"
+  computationUuid: "a9fda46c-15ce-8fc8-97df-93498afa518d"
   stages:
     - stage: path
       stageUuid: "40bee92e-b920-8ec7-8941-3e50192f76d8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c296d151-f73f-8485-a086-84040a10ce4a"
     - stage: horo
-      stageUuid: "28005921-0472-8dbd-abd2-367b12c7c1ac"
+      stageUuid: "56970e39-24e7-8262-87a4-c63087a9ac0e"
     - stage: seal
       stageUuid: "9343abef-eab4-8660-9f0c-3bde820ba404"
     - stage: uuid
-      stageUuid: "8b655b71-db3a-89e7-bac8-4db465f6fff9"
+      stageUuid: "fe1c0531-f0f1-87d7-92d5-14069107ebd6"
 version: 2
 ---
 # mechanism

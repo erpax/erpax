@@ -2,11 +2,11 @@
 name: station
 description: "Use when reasoning about station as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: station
-coordinate: "station · 4/weave · c74736eb"
-contentUuid: "fd1464bf-957c-59f9-9c2a-97c0925537e5"
-diamondUuid: "890777a1-0131-8644-9fd4-e7870acff3d1"
-uuid: "c74736eb-3423-8a77-bcb8-9c1006d89403"
-horo: 4
+coordinate: "station · 5/round · 53056da0"
+contentUuid: "21491279-f735-598f-929e-8ee0e35781f0"
+diamondUuid: "877cf215-ec68-8585-b637-c405907dae29"
+uuid: "53056da0-d304-864b-94c0-af13445899cd"
+horo: 5
 typography:
   partition: station
   bondDegree: 51
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d3e60ccf-b8b4-8267-b7d8-1126044ba5b5"
+  computationUuid: "2c10be96-abe0-86db-b3e1-e6fdca982801"
   stages:
     - stage: path
       stageUuid: "21d52352-3228-8054-9b55-cbfbbce9770b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e9a44d90-c42b-83b8-980f-b5e19cfbfc5c"
     - stage: horo
-      stageUuid: "c1148255-67e1-8dd9-b002-a5995a7758ca"
+      stageUuid: "4762b8c9-6249-8635-afa6-04ebdcf82786"
     - stage: seal
       stageUuid: "c9a2c2d0-b193-836b-98dc-09a705ddc57c"
     - stage: uuid
-      stageUuid: "16aad320-0991-8f8e-96aa-834aa5d7838d"
+      stageUuid: "e2e25b76-89e7-81a5-90a4-3bc1d3784fc2"
 version: 2
 ---
 # station

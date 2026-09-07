@@ -2,18 +2,18 @@
 name: termination
 description: "Use when modeling contract end conditions — termination for convenience, termination for cause, notice period, effect (wind-down obligations, survival clauses), remedies on termination."
 atomPath: termination
-coordinate: "termination · 5/round · e0ec8d54"
-contentUuid: "1d27111b-629f-5c5f-b3a3-83650682dc6e"
-diamondUuid: "635d655e-e6f7-8c48-b579-7c893e3b299d"
-uuid: "e0ec8d54-985d-86eb-9337-46190a045f4c"
-horo: 5
+coordinate: "termination · 8/crest · 6f9b9ddc"
+contentUuid: "39d92e5c-9a6c-5ea1-aa05-45f5fba2a307"
+diamondUuid: "d2d90884-ccd2-83f8-b11b-5fd3ab82e3b8"
+uuid: "6f9b9ddc-b81b-8678-894c-772a650a2e62"
+horo: 8
 typography:
   partition: termination
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9adfe8d2-ab73-8ba7-9bba-0c133ce11aa8"
+  computationUuid: "5d89c93b-2733-8f00-ada9-adb4dd8b87d2"
   stages:
     - stage: path
       stageUuid: "9d2856f5-5589-8396-aaf2-cd446750b4a7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f1b2e992-5017-87f7-8ff8-ef9d4ab3f849"
     - stage: horo
-      stageUuid: "e32ca07c-b414-8502-b7d2-a9e3c7cd7adb"
+      stageUuid: "264ca39d-b7cc-8684-8ad4-835c6db3246a"
     - stage: seal
       stageUuid: "55dc51da-cdda-894a-a9f1-2340789b1f2f"
     - stage: uuid
-      stageUuid: "051e66e1-aa1d-82e6-ad11-40b7d947a6fd"
+      stageUuid: "eeb5ed2d-7320-8b63-ad24-d0cd916ede38"
 version: 2
 ---
 # termination

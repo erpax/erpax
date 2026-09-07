@@ -2,11 +2,11 @@
 name: tour
 description: "Use when reasoning about tour as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tour
-coordinate: "tour · 8/crest · 16fbc6e4"
-contentUuid: "b8cb979c-1be2-5d20-b443-0babbe36158c"
-diamondUuid: "993616f0-4a34-86fb-995a-75babd1bcb4a"
-uuid: "16fbc6e4-02bf-8e67-8d69-115caad33dd3"
-horo: 8
+coordinate: "tour · 2/share · 2faf10c5"
+contentUuid: "a1793329-ba09-5d38-89d5-c691e22f2dab"
+diamondUuid: "c8775fdf-7a6d-8cd0-b97c-559ad9effd51"
+uuid: "2faf10c5-5d09-8a41-b6d9-f9a2d4e0b536"
+horo: 2
 typography:
   partition: tour
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "36b7cb47-cbf3-83fa-badd-5ad13f866435"
+  computationUuid: "4beaff2d-14d4-81f6-a7fb-eb72a6051d21"
   stages:
     - stage: path
       stageUuid: "143f6f8c-cb74-8591-83be-7133e2a73a00"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2f6660ae-5f0a-853a-8473-160a3a9656ca"
     - stage: horo
-      stageUuid: "545f593f-43ca-80ad-8aa1-b72466157425"
+      stageUuid: "8ef3fb60-cedc-8f56-8cf1-9513b2a0f301"
     - stage: seal
       stageUuid: "2fd7e0a3-72ed-8d7e-939c-f251fc11afd1"
     - stage: uuid
-      stageUuid: "708ff8dc-7137-8e8c-9022-090a298c59bb"
+      stageUuid: "d24f4ffd-c286-869c-8214-4ec3b71230ac"
 version: 2
 ---
 # tour

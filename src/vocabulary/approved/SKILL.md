@@ -2,10 +2,10 @@
 name: approved
 description: "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value."
 atomPath: "vocabulary/approved"
-coordinate: "vocabulary/approved · 7/descent · 14d46a28"
-contentUuid: "6310514e-b661-5143-aeb6-fea302273ce1"
-diamondUuid: "d8514655-4333-8ea7-ac5b-c6feb8a994bd"
-uuid: "14d46a28-d3c4-8e46-8ed4-6295f4ed9c91"
+coordinate: "vocabulary/approved · 7/descent · b133fdec"
+contentUuid: "fb13379b-e118-5497-aefa-8c6458090783"
+diamondUuid: "41fe583e-b2eb-8949-b8b1-c4f53f40dcdd"
+uuid: "b133fdec-dbc3-8b42-ada5-216e4c108bda"
 horo: 7
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f2d09b43-3edf-8ebd-abcc-cdcf4ce190c3"
+  computationUuid: "eb2ed30b-571c-83d2-a7f3-7df8541b416f"
   stages:
     - stage: path
       stageUuid: "d294dc78-dce2-8d55-af3b-262888edccd0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a8713ffe-62f2-81f6-8eff-4354f7d13afb"
     - stage: horo
-      stageUuid: "04ae6c87-0347-8d55-aa38-7907259f2c85"
+      stageUuid: "9ef4c45d-1fae-8169-81e5-5adc7bb8d058"
     - stage: seal
       stageUuid: "efacdaf2-f96c-8ed2-97e5-e5d6a8083ef6"
     - stage: uuid
-      stageUuid: "a0120bec-7b53-83cb-8027-2dc46bd4e8de"
+      stageUuid: "e920f4e1-45fc-8f89-b316-aa8057701234"
 version: 2
 ---
 # approved

@@ -2,11 +2,11 @@
 name: target
 description: "Use when reasoning about target — Indicates a target EntryPoint, or url, for an Action."
 atomPath: target
-coordinate: "target · 4/weave · 209bc9cf"
-contentUuid: "fa66fbbf-ffd1-533d-92bf-11609cc66a24"
-diamondUuid: "8e8233d9-118c-88c9-b4e3-40038f0c5be1"
-uuid: "209bc9cf-a73e-841d-a27b-e127359153d7"
-horo: 4
+coordinate: "target · 8/crest · 2b43c45b"
+contentUuid: "8f8ab83a-f317-5160-b17e-8e583878a510"
+diamondUuid: "2cc8da65-7f43-8cf6-a039-cbc167ebaf9a"
+uuid: "2b43c45b-7509-84ee-bf79-647dcafca98c"
+horo: 8
 typography:
   partition: target
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d3eb6814-9a2c-83ee-97ab-d05dfe9fb0ec"
+  computationUuid: "3181100e-7ed6-8319-a704-4456ae7d7f37"
   stages:
     - stage: path
       stageUuid: "47fd291e-2854-8ab1-8dd0-0e435e6db5c1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e496a4bf-9334-8864-a5f3-5e861d3a7ccd"
     - stage: horo
-      stageUuid: "5e63b8af-398c-8a98-acb4-c61e4ef37cb1"
+      stageUuid: "0aaacbb7-e1f4-8fe7-acc0-596a6391caee"
     - stage: seal
       stageUuid: "f708fe79-a7fa-80a4-84eb-f354d5e85688"
     - stage: uuid
-      stageUuid: "36cdb7dc-d98b-817f-9c05-1a827ee8cb7f"
+      stageUuid: "a6c7f134-fc3a-86f9-bf0f-b136584ad769"
 version: 2
 ---
 # target

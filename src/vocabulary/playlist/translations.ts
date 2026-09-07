@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "playlist",
-    "uuid": "5588952e-a373-874a-a694-e329ba254174",
+    "uuid": "2844ee8c-f87e-805a-84a7-8936a422f2ad",
     "words": [
       "playlist"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about playlist — The playlist to which this recording belongs.",
-    "uuid": "222ffe30-c261-85d7-b87b-5a5df1afba48",
+    "uuid": "f4414080-8425-838b-8931-f0b285d73da7",
     "words": [
       "use",
       "when",

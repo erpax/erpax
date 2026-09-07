@@ -2,11 +2,11 @@
 name: fulfillment
 description: "Use when reasoning about fulfillment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fulfillment"
-coordinate: "vocabulary/fulfillment · 4/weave · 41532c24"
-contentUuid: "986ad5e4-0f16-52d5-9fb7-256c4a71eb96"
-diamondUuid: "aa961625-9599-8db7-88ed-9e4d8da64f36"
-uuid: "41532c24-ed80-85e2-95bf-1607bf8eb494"
-horo: 4
+coordinate: "vocabulary/fulfillment · 1/base · e89c6451"
+contentUuid: "5431b1c7-322f-590f-97c1-de443e9db6ee"
+diamondUuid: "60c03de0-5c57-8848-afe1-1df63a85af57"
+uuid: "e89c6451-1a3f-8148-aa19-ac88d6534881"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ea346bd5-b9be-82b4-9902-1b5a4d336720"
+  computationUuid: "670e808c-a3dc-8862-b37e-b89235d549de"
   stages:
     - stage: path
       stageUuid: "887ba75c-1941-86b4-a50e-457950624f94"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cf2e2858-a94f-8228-8af2-a951bc438f74"
     - stage: horo
-      stageUuid: "93012f4f-a5ce-8323-b673-319bd29959d3"
+      stageUuid: "c4c75451-9c08-867b-8b6d-69d61bd1a718"
     - stage: seal
       stageUuid: "8f2ccee9-914e-887d-b38d-184e537b0275"
     - stage: uuid
-      stageUuid: "f80df0ca-1773-81f6-8d3f-22ef9caebd89"
+      stageUuid: "dbb8a29e-1e3c-81ad-9e52-7bf2bdf03e7a"
 version: 2
 ---
 # fulfillment

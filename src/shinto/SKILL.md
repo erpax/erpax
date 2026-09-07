@@ -2,18 +2,18 @@
 name: shinto
 description: "Use when reading Shinto as a diamond of invariant atoms — the way of the kami, the sacred dwelling in every place and thing, purity restored by washing, the rite renewed on the turning cycle. Strip the Japanese prefix and kami, matsuri, harae collapse to sacred, ritual, the profane cleansed — one content-uuid each."
 atomPath: shinto
-coordinate: "shinto · 1/base · a5b5e433"
-contentUuid: "d4243d19-a205-5b16-a497-7172cc8db729"
-diamondUuid: "7ea459bd-6464-89d1-b63c-e9d7b601d5f0"
-uuid: "a5b5e433-c723-8852-b85e-0fefc8ec08cb"
-horo: 1
+coordinate: "shinto · 4/weave · 670322d6"
+contentUuid: "a5d9dbee-c8ae-5e82-b9da-6a9e586be374"
+diamondUuid: "9cc9fb36-cf25-8c3b-93f6-27e61886adb8"
+uuid: "670322d6-63e8-8244-89db-68aa77fd8e39"
+horo: 4
 typography:
   partition: shinto
   bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b8822769-3fa4-89bc-9895-0f9c4163ab40"
+  computationUuid: "3c6f550b-c5b3-82b3-b55b-377db2eefa0c"
   stages:
     - stage: path
       stageUuid: "53a40a22-3a09-8606-818c-022f1468b23f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "41db587c-998a-8c23-bbca-5698979fb7d1"
     - stage: horo
-      stageUuid: "77da5159-598d-85c1-b951-a9a3d64d7793"
+      stageUuid: "8db26ac3-4073-8be2-a7fb-47022702de26"
     - stage: seal
       stageUuid: "7e29e5d9-28cb-89c1-8037-04505a9de42f"
     - stage: uuid
-      stageUuid: "8a98dc31-1950-819a-9cb4-dd15071a7abc"
+      stageUuid: "96dbf795-7505-8bbd-a895-fb686f06fe5b"
 version: 2
 ---
 # shinto — the way of the kami; the sacred in every place

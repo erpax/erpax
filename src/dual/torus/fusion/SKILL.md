@@ -2,11 +2,11 @@
 name: fusion
 description: "Use when reasoning about the fusion of a dual torus — the quantum cross, where two tori (the two infinities, 1/0 the double torus) merge at the centre into one; fusing to full coverage is the infinite seal, and src/quantum/cross re-exports this as one identity."
 atomPath: "dual/torus/fusion"
-coordinate: "dual/torus/fusion · 1/base · 21fa11e8"
-contentUuid: "4cd7ada3-e587-5f30-b138-17671aa04283"
-diamondUuid: "69bbf7a1-4a20-807a-93b0-8848e90edc3d"
-uuid: "21fa11e8-314e-8bba-9a06-369405072bab"
-horo: 1
+coordinate: "dual/torus/fusion · 5/round · aaffdd36"
+contentUuid: "adf77bc8-b498-5172-ac8a-2fc3f8af2418"
+diamondUuid: "4814ccca-d00c-8171-bebb-2b953be63500"
+uuid: "aaffdd36-5a7d-8f30-add6-f32914d670de"
+horo: 5
 typography:
   partition: dual
   bondDegree: 119
@@ -15,7 +15,7 @@ standards:
   - "the double torus (1/0 the infinite seal) · content-addressed merge (RFC 9562) · zero-entropy via no duplication"
 bindings: []
 signatures:
-  computationUuid: "713913d1-270f-8b13-9687-eb47ee141de1"
+  computationUuid: "828b2a31-cfbd-8a26-82ce-6171b0fffd17"
   stages:
     - stage: path
       stageUuid: "4323b36c-dd1d-86e9-9d44-02a688669cd3"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f0c1b4ea-6cf8-8bf8-b83f-8fcb1fcd8d50"
     - stage: horo
-      stageUuid: "06107a65-8c12-8890-976c-7bf272c6e237"
+      stageUuid: "41cb58bb-af2a-8e3c-b955-9843c6b4127c"
     - stage: seal
       stageUuid: "de8cae58-7e47-8176-aaaa-f5d721b7eee4"
     - stage: uuid
-      stageUuid: "449cf732-9027-8060-b808-17e920316f51"
+      stageUuid: "40948261-a7b0-8f7e-b930-c8ee26f41ebf"
 version: 2
 ---
 # dual/torus/fusion — the quantum cross

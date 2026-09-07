@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "guide",
-    "uuid": "dd9e89d4-9d3d-8ce1-a4fd-38ad4e0e544d",
+    "uuid": "e77148a0-a7a9-8211-95bd-1bee6a38be8b",
     "words": [
       "guide"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about guide — Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of p",
-    "uuid": "1e34d6aa-a455-8887-be20-c5003cff761b",
+    "uuid": "6d4e55ce-4772-8d4b-befa-716554439623",
     "words": [
       "use",
       "when",

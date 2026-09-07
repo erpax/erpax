@@ -2,11 +2,11 @@
 name: pats
 description: "Use when reasoning about pats as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pats"
-coordinate: "vocabulary/pats · 8/crest · 0f580c45"
-contentUuid: "46d544fb-19e5-5d7a-aded-89f162938f40"
-diamondUuid: "c99a24d5-6d32-8fd5-bd5c-86ab81e51ac1"
-uuid: "0f580c45-713e-87be-8b16-90d37bf86325"
-horo: 8
+coordinate: "vocabulary/pats · 4/weave · fa141d0c"
+contentUuid: "8aa63fb8-cc4f-5ee0-848c-994a00942722"
+diamondUuid: "251a4f5e-caa9-8054-879c-05a73c44dae7"
+uuid: "fa141d0c-3dd1-8494-8f20-45b16ed53b12"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 40
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e028d760-477d-8cb0-a8d4-5bb6ca31bbe0"
+  computationUuid: "5320313b-e530-834f-8966-f174406048f2"
   stages:
     - stage: path
       stageUuid: "d5892f1f-6324-8f31-af57-12fa9fd0e580"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dc6e6754-a229-8b0c-8f5f-3ed86501144e"
     - stage: horo
-      stageUuid: "73b37b9c-7ceb-8065-b3f6-25d35da067e7"
+      stageUuid: "2592fe7e-46ed-8b93-adaf-a0eba18db2ab"
     - stage: seal
       stageUuid: "2f611b4e-0f12-8372-9005-2a1ab4c2022c"
     - stage: uuid
-      stageUuid: "04530c2b-de0f-80dd-af8f-c39909e86825"
+      stageUuid: "357de6aa-a255-8d66-aaba-4b4e6a6f7583"
 version: 2
 ---
 # pats

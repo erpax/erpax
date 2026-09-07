@@ -2,11 +2,11 @@
 name: educational
 description: "Use when reasoning about educational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/educational"
-coordinate: "vocabulary/educational · 2/share · e51db023"
-contentUuid: "324951d6-800a-5525-97fc-84d2f0e20a16"
-diamondUuid: "88923742-bac5-89ea-94cd-834f9a6cc4cc"
-uuid: "e51db023-77f5-83a3-952d-d9981475a684"
-horo: 2
+coordinate: "vocabulary/educational · 5/round · 1b3ee211"
+contentUuid: "6134b68b-908b-5877-8f41-452a61b589c1"
+diamondUuid: "e6fd71f0-ee2e-83f6-b730-05f1ef57a2f2"
+uuid: "1b3ee211-da15-8960-9ffd-c448f8f421c6"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 68
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "48b55850-3645-8016-93d7-4a6c97037950"
+  computationUuid: "3582e1af-7be0-83f5-a21f-0d73ea3f6ce7"
   stages:
     - stage: path
       stageUuid: "48a58874-d431-83a5-9b4d-a7724ec7e7c5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "463e8a8a-f3d3-85d0-b637-caef06a17371"
     - stage: horo
-      stageUuid: "b84e4f6a-9502-8866-931c-f674f8f1e17e"
+      stageUuid: "f82a4d35-7167-8e81-b5e7-e84c86c989a8"
     - stage: seal
       stageUuid: "6c43d945-dd5c-835c-b703-0a8e7f910883"
     - stage: uuid
-      stageUuid: "e0678e90-1171-8f04-bf78-e9f8bf264a0b"
+      stageUuid: "826af363-fa77-86c2-9e9f-2824e9d7e36b"
 version: 2
 ---
 # educational

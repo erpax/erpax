@@ -2,10 +2,10 @@
 name: installment
 description: "Use when reasoning about installment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/installment"
-coordinate: "vocabulary/installment · 4/weave · e3b86c92"
-contentUuid: "f481ae06-f4c4-5696-aa07-5cd57cd94a23"
-diamondUuid: "a32b5dad-2a28-84ea-a8e1-c85d4d7df8d9"
-uuid: "e3b86c92-4da0-892c-b876-8bf591b977fa"
+coordinate: "vocabulary/installment · 4/weave · ca17354b"
+contentUuid: "e68f8b81-e04e-5c3d-b2fe-342fb06573cc"
+diamondUuid: "2550f370-25d4-8894-abe7-478b3e74a7fc"
+uuid: "ca17354b-3798-8bff-acb7-0602ae16d59a"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "56a47377-7fc9-8f11-84dc-b38bc764da4f"
+  computationUuid: "bcdfa935-0b20-8da1-a60e-05059cb76ad1"
   stages:
     - stage: path
       stageUuid: "8b82ee30-4714-86c3-a303-15482d29f213"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eb37234f-66c9-89fc-ba6c-2f2429135b62"
     - stage: horo
-      stageUuid: "2abc679c-4841-850f-816e-39d45ce5467c"
+      stageUuid: "ad921713-acf8-8ce3-9771-3fe7c0c8793c"
     - stage: seal
       stageUuid: "af747fb0-fe12-8038-9a6a-458990d68493"
     - stage: uuid
-      stageUuid: "b9ad978b-91e7-8c67-90ea-99aaa4d0d204"
+      stageUuid: "8c5a6278-32cf-8087-8f7f-c2814473c360"
 version: 2
 ---
 # installment

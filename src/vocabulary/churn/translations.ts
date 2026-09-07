@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "churn",
-    "uuid": "e5714184-9e4b-81b0-82c4-24054687a19a",
+    "uuid": "87d1cccc-6a19-83c2-bb74-4b976684202c",
     "words": [
       "churn"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring customer retention/attrition — monthly/annual churn %, cohort analysis, at-risk indicators, retention drivers.",
-    "uuid": "896a991e-abdb-8682-89d2-fd79e0925365",
+    "uuid": "2a69d321-d5c3-8f50-9b7a-97cd18d1c3b0",
     "words": [
       "use",
       "when",

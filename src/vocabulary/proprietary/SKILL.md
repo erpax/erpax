@@ -2,10 +2,10 @@
 name: proprietary
 description: "Use when reasoning about proprietary — True if this item's name is a proprietary/brand name (vs. generic name)."
 atomPath: "vocabulary/proprietary"
-coordinate: "vocabulary/proprietary · 7/descent · 166f2ae6"
-contentUuid: "3518883b-a626-511a-a5ab-5a4b1ed85a19"
-diamondUuid: "ea5db820-0337-8519-9087-c0c3d82e80e7"
-uuid: "166f2ae6-ab95-832f-9fea-bc96bc118af1"
+coordinate: "vocabulary/proprietary · 7/descent · a9c0aad2"
+contentUuid: "2d308a87-0276-553c-ae83-1d0f70d50f17"
+diamondUuid: "edfeaaf3-8475-8b4e-a8f5-f99488d38ab8"
+uuid: "a9c0aad2-4c97-8e0f-87a5-4d827e03dfe4"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "35b26292-7a4f-8c00-ba94-a494858abe9e"
+  computationUuid: "de50d074-d3fc-86cd-b7dd-36e18211e070"
   stages:
     - stage: path
       stageUuid: "0d174b91-5fd3-8e3d-b7b3-e9d4e0b549eb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2f5fa9ad-f6bb-88a3-a85d-c4ae4f9bee0e"
     - stage: horo
-      stageUuid: "756de74b-289b-8f2b-ba26-2920b80f091b"
+      stageUuid: "54109387-32e2-8dfc-9f71-09172d5b4699"
     - stage: seal
       stageUuid: "48017d0f-e197-81ff-bcc9-a67ab7852afe"
     - stage: uuid
-      stageUuid: "7fee11bc-1c25-8247-9098-913c77ea31b5"
+      stageUuid: "f8f57fd1-dc20-8de6-a614-bdabb6820907"
 version: 2
 ---
 # proprietary

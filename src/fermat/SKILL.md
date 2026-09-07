@@ -2,18 +2,18 @@
 name: fermat
 description: "Use when reasoning about fermat — Fermat's Last Theorem via basis decomposition - P vs NP + algebra"
 atomPath: fermat
-coordinate: "fermat · 1/base · 67cc20a1"
-contentUuid: "7e1ef8a3-7304-57ed-bec0-996a4ef2e1db"
-diamondUuid: "b7e5b41c-462e-8893-bde3-7fbb10d5afa1"
-uuid: "67cc20a1-48fb-85ac-b964-15dcebb81233"
-horo: 1
+coordinate: "fermat · 4/weave · 01c7520f"
+contentUuid: "6f7c31bb-4b1a-508b-b8d9-f541f404ac4d"
+diamondUuid: "d80d7ec3-2355-80a9-820d-b02857d7907f"
+uuid: "01c7520f-c858-83ff-b60e-34e7c521d088"
+horo: 4
 typography:
   partition: fermat
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "dd18788a-05c6-8476-9dc9-72ced9d2bf75"
+  computationUuid: "8f0fd3aa-9390-8423-a61b-93a58bf69202"
   stages:
     - stage: path
       stageUuid: "862f9e91-d55e-8d2a-a4ef-add25c3dec5f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b293a988-6a31-8bc9-8f9c-647146f75770"
     - stage: horo
-      stageUuid: "f8dc4024-3c73-8369-85c8-16264789cc3b"
+      stageUuid: "e6c5b145-397c-8334-b102-c90f01d784e4"
     - stage: seal
       stageUuid: "bf9493b1-68b9-8b50-a141-80144ccff9f0"
     - stage: uuid
-      stageUuid: "e1acb396-3cb4-85e6-a722-5716efc2ada7"
+      stageUuid: "78b45f71-e0c5-8fb8-9c40-f6a6dcadb1c1"
 version: 2
 ---
 # fermat — Fermat's Last Theorem decomposed into quantum basis

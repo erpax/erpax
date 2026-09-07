@@ -2,11 +2,11 @@
 name: fdanot
 description: "Use when reasoning about fdanot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fdanot"
-coordinate: "vocabulary/fdanot · 4/weave · b16dd8a6"
-contentUuid: "d84b8c41-e836-5268-9f92-3f681baf404f"
-diamondUuid: "87edbce2-943a-8b89-a213-9e8c52c5068b"
-uuid: "b16dd8a6-ba2f-8b27-8306-5d5cc2a58430"
-horo: 4
+coordinate: "vocabulary/fdanot · 8/crest · ed8520b9"
+contentUuid: "9437732c-2464-5658-8004-c26b12b99b1b"
+diamondUuid: "94705362-3966-81b9-a0f8-137750d8cbf2"
+uuid: "ed8520b9-0b38-8890-b1c7-b745f5da12ea"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "157b8a41-3a7f-86ba-82a4-c7020c385242"
+  computationUuid: "86645969-e962-8638-baa1-8664db6be920"
   stages:
     - stage: path
       stageUuid: "89fa5cab-1ccb-8818-8acb-81cf2d95f992"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "20054bd7-fc39-8ff0-9044-2fdd2e2b6df4"
     - stage: horo
-      stageUuid: "b999beba-d931-8e35-a8e6-4fd3b34e1a07"
+      stageUuid: "1ebe3529-4385-87db-afb8-ec69f164eaa0"
     - stage: seal
       stageUuid: "218804cd-c7c8-89a1-a84e-da8f44b55e27"
     - stage: uuid
-      stageUuid: "13569f61-304e-871c-a9f7-ffcf40d8ebf6"
+      stageUuid: "7b79f2d3-ac4f-8bcf-bd02-1985d64eb072"
 version: 2
 ---
 # fdanot

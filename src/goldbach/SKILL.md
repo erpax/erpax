@@ -2,18 +2,18 @@
 name: goldbach
 description: "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory"
 atomPath: goldbach
-coordinate: "goldbach · 2/share · c2d77392"
-contentUuid: "1bf81bb4-ba2d-57f4-8400-120c3ee66026"
-diamondUuid: "04383070-3645-857a-9b9c-9d1e9f463561"
-uuid: "c2d77392-30a5-86fa-817a-ef8729dbe62b"
-horo: 2
+coordinate: "goldbach · 8/crest · de315e3d"
+contentUuid: "f16fa13f-1ec9-55b0-9a7c-4113f8fb2c2f"
+diamondUuid: "933cce1c-5eb1-859b-8e15-f95d4691c432"
+uuid: "de315e3d-4424-8602-af08-3b767dc7526b"
+horo: 8
 typography:
   partition: goldbach
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1a35eced-515e-83b6-bd65-3e57a73b7d1b"
+  computationUuid: "d8362753-6dec-8492-b7c1-bfccec8286e2"
   stages:
     - stage: path
       stageUuid: "21924b66-52a9-8124-92b9-44114cd5191c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a1a56920-1be4-88ff-b81f-0ff5ceaa8f2a"
     - stage: horo
-      stageUuid: "1ec4cc35-1091-8205-95ff-5fe622989551"
+      stageUuid: "16f77a6c-d991-834a-97b2-384beeec2378"
     - stage: seal
       stageUuid: "d874855a-fa99-8de7-bfb7-1baa5f4a6d35"
     - stage: uuid
-      stageUuid: "26670b88-6205-8a77-941a-0a2daed2f9c9"
+      stageUuid: "c2e2024b-3cf3-8627-9be7-da3b7c84cb7b"
 version: 2
 ---
 # goldbach — Goldbach Conjecture via basis decomposition

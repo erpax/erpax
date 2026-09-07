@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mala",
-    "uuid": "ebf89548-b491-87e9-8a6c-afc80e7f6cbb",
+    "uuid": "e92ef8c5-0153-8cfe-8164-29b3049d913d",
     "words": [
       "mala"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the 108-step round — the next math after the dualities reach 100% coverage; 108 = 1¹·2²·3³ = 9×12 = 2²·3³ with digital root 9 (the rodin axis), and the dualities walk it as steps toward a full round.",
-    "uuid": "d8158637-e05c-87bb-b2c5-440ae1205fd1",
+    "uuid": "527d876a-b56b-8a4e-91a5-0ccb9e99f3fc",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "empirical",
-    "uuid": "e615d6ee-4cbb-8b29-9134-76ee019a063e",
+    "uuid": "819fd37a-b095-8f24-b9be-4e0f4bfd8836",
     "words": [
       "empirical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as source, dissolve the row-level specifics into the akashic DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming.",
-    "uuid": "56dee50e-02e5-8da2-9851-a55b2f348a39",
+    "uuid": "209c8e04-9a85-8253-ade0-d7393ff55604",
     "words": [
       "use",
       "when",

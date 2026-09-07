@@ -2,11 +2,11 @@
 name: standards
 description: "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it)."
 atomPath: "vocabulary/manufacturing/seed/standards"
-coordinate: "vocabulary/manufacturing/seed/standards · 1/base · d309f39d"
-contentUuid: "619fc655-8ecc-51cf-b33a-e620711b0d67"
-diamondUuid: "703bad62-73d1-87c6-b639-7a6414042e74"
-uuid: "d309f39d-26b9-8168-8ce3-48edbdb7370b"
-horo: 1
+coordinate: "vocabulary/manufacturing/seed/standards · 5/round · bafb4b6f"
+contentUuid: "79de9f07-987b-5018-a412-ceeaa7d787ee"
+diamondUuid: "faf48b22-33cf-8adc-893f-134c4d505103"
+uuid: "bafb4b6f-bcd2-8e85-a32c-3f9d91038244"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 188
@@ -20,7 +20,7 @@ standards:
   - banners (the reference key).
 bindings: []
 signatures:
-  computationUuid: "2d2faae7-181b-89f6-bd15-9c29de95f98f"
+  computationUuid: "dbe0f295-bf79-844e-aba2-cf07ef14263f"
   stages:
     - stage: path
       stageUuid: "ad405e7a-fe9c-89cc-a068-d2ca3b799528"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "3704fdd5-d8b7-80e5-8229-40ca10fe7123"
     - stage: horo
-      stageUuid: "eda8194b-daee-803a-b226-52f81df07565"
+      stageUuid: "6a80a65e-ae5c-85ad-9b22-4a3442424532"
     - stage: seal
       stageUuid: "5ce5f53d-10b0-8c9d-a77e-42776888bf88"
     - stage: uuid
-      stageUuid: "75d57bbe-e1fe-83a4-b336-6fffaba8d15a"
+      stageUuid: "9c09ba76-cd5e-87c5-a894-b60f7909b122"
 version: 2
 ---
 # vocabulary/manufacturing/seed/standards

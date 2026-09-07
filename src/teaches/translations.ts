@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "teaches",
-    "uuid": "c90c1745-6640-87de-be7f-0befe71e8025",
+    "uuid": "76d617fe-6461-8ae6-b873-50eb61e6e18e",
     "words": [
       "teaches"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about teaches — The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.",
-    "uuid": "6d7ac4ca-b5cc-832a-9890-e3f96d966c7a",
+    "uuid": "518eaa24-284a-8071-ac74-c45c7c52f1a4",
     "words": [
       "use",
       "when",

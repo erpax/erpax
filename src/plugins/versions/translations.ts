@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "versions",
-    "uuid": "1f9bc95f-325f-8a3c-abc8-4906da4aea44",
+    "uuid": "c315b429-80f4-86ea-9b8a-e10e8e19674d",
     "words": [
       "versions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about versions — turns on Payload's native for every collection except those named in , with bounding the history.",
-    "uuid": "99554d3b-8bb9-8b5e-83eb-34f169557bd7",
+    "uuid": "698b4bd8-94dc-87b7-aa31-997ca757be14",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "snapshots",
-    "uuid": "81ae29bd-1717-8383-ac3e-c986f8f9d107",
+    "uuid": "2d114bfd-b1f1-8b96-848d-07039404a64b",
     "words": [
       "snapshots"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection.",
-    "uuid": "b43c7888-29c9-82ed-af22-0eb9b2bcce95",
+    "uuid": "703b907e-15e7-8962-b51f-3c98730ba08a",
     "words": [
       "use",
       "when",

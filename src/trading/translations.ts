@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trading",
-    "uuid": "476bbd29-bc79-8001-8cdb-56f020e06b5e",
+    "uuid": "cd36c668-209c-89d0-a8bb-78277dd7b51e",
     "words": [
       "trading"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring an OUTBOUND call to a commercial counterparty — a payment gateway, marketplace, shipping carrier, Peppol/EDI access point, banking aggregator, or FX feed. Every such call runs at maximum tamper-cost — gated by the sandbox (capability + credential-broker + endpoint allowlist) and emitting a uuid-chained receipt — so the integration surface is zero-entropy and tamper-evident; credentials live per-tenant by handle, never in code.",
-    "uuid": "55b2b21c-4cd8-805d-8699-061fb085b71e",
+    "uuid": "0cc86a54-ee2b-815a-a7fb-bdc6247aa983",
     "words": [
       "use",
       "when",

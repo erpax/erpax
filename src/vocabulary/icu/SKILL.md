@@ -2,11 +2,11 @@
 name: icu
 description: "Use when reasoning about icu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/icu"
-coordinate: "vocabulary/icu · 5/round · 23ef6e22"
-contentUuid: "8322663c-c8d3-5564-853b-5328510c0c8d"
-diamondUuid: "7be467e5-2164-82ba-a83d-59285473b9b0"
-uuid: "23ef6e22-a73b-83f5-a0da-fb3f05098df4"
-horo: 5
+coordinate: "vocabulary/icu · 2/share · be4277c7"
+contentUuid: "2ea24f6d-003f-5bce-925a-4eb585408e68"
+diamondUuid: "9e663da2-e6c8-8b0c-b49e-611c0f5513f6"
+uuid: "be4277c7-3cfd-82e9-8b3c-5f1ba1c21e43"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "39249219-f508-82a0-b6e9-d3a95e8e56bb"
+  computationUuid: "99593dac-63b9-8891-82f8-1cdd6acdc08c"
   stages:
     - stage: path
       stageUuid: "2f766ecf-b665-8d51-82fd-74335406377f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9228dcd6-f4e8-8619-b1b5-660a5ede1a01"
     - stage: horo
-      stageUuid: "9173d497-afcb-87fd-ba30-2a8d7a6ef4d1"
+      stageUuid: "33011170-53f2-8a2e-9549-104dce7ab602"
     - stage: seal
       stageUuid: "5fd9709c-1cf7-8ec9-b2bb-1c0abccdcf46"
     - stage: uuid
-      stageUuid: "bb07b8c2-95bc-83dc-b6ce-0709c471c2f9"
+      stageUuid: "4dd5ee66-7278-8440-a916-bd407add1775"
 version: 2
 ---
 # icu

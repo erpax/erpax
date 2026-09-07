@@ -2,11 +2,11 @@
 name: ledger
 description: "Use when reasoning about accounting/ledger — token ledger — path-keyed postings and balance by path."
 atomPath: "accounting/ledger"
-coordinate: "accounting/ledger · 5/round · 05b5d2e0"
-contentUuid: "8a8e5887-6b01-5f47-a460-307bc104aad2"
-diamondUuid: "10b89bb9-215d-8855-a090-9c1605df1178"
-uuid: "05b5d2e0-eba0-8457-ae5b-3803a95fdcd5"
-horo: 5
+coordinate: "accounting/ledger · 4/weave · cafa1f74"
+contentUuid: "35ce9ffc-ab75-546e-aaa7-c4ad2379166e"
+diamondUuid: "005d7732-1598-8faa-9b63-9e6a4994ad76"
+uuid: "cafa1f74-45a9-848e-80ca-178ce8e5d8f1"
+horo: 4
 typography:
   partition: accounting
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "IFRS IAS-1 + IFRS-15 §B16 metered usage"
 bindings: []
 signatures:
-  computationUuid: "492320a2-bed5-84a3-9c7a-43808a8ab26b"
+  computationUuid: "340b8fdb-9e15-87ba-b675-30398c58e763"
   stages:
     - stage: path
       stageUuid: "07dc4f3e-b63d-8305-aec4-5d7c8b559ce3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "302ef3d4-1e74-8a44-9e5c-f1f56ceb0e98"
     - stage: horo
-      stageUuid: "b2fb22d9-6f77-886d-8c90-6345b6de91d3"
+      stageUuid: "3f36c1c9-9f06-8f86-90e0-184d23c7878c"
     - stage: seal
       stageUuid: "34a00910-8197-812a-81b7-986686cbfec1"
     - stage: uuid
-      stageUuid: "3175029c-5045-83cd-a77f-5f3f56f2c7f6"
+      stageUuid: "d9c0e805-d2ce-8a2f-9c77-216fdde546e6"
 version: 2
 ---
 # accounting/ledger

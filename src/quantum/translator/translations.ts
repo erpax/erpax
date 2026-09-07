@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "translator",
-    "uuid": "195801f4-a002-89a0-9e7f-4a78b8d70a74",
+    "uuid": "8df7174c-193e-861f-ac32-6a5213c7e0bc",
     "words": [
       "translator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits.",
-    "uuid": "5a866a15-fa82-8e7a-b9bb-d11c4fc4b4ea",
+    "uuid": "45792caa-d2b4-84df-ace2-4ecb538e3456",
     "words": [
       "use",
       "when",

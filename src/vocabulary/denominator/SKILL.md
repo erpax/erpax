@@ -2,11 +2,11 @@
 name: denominator
 description: "Use when reasoning about denominator — A schema.org component word, collided out of schema.org compounds — fused from measurementDenominator (sti · collapse · merge)."
 atomPath: "vocabulary/denominator"
-coordinate: "vocabulary/denominator · 4/weave · d53eba0b"
-contentUuid: "047bc4bf-beb7-5e7d-ab01-0b07b9390e5d"
-diamondUuid: "cda12ba2-ad14-8b30-994a-304ddce8f53d"
-uuid: "d53eba0b-8bd8-8c19-a24b-4c783af016a5"
-horo: 4
+coordinate: "vocabulary/denominator · 2/share · 433f4aaa"
+contentUuid: "cb9daa63-d8c1-57a7-838a-64df0127bc6c"
+diamondUuid: "36cfe13f-ef47-8064-af82-8e8c2b6fba91"
+uuid: "433f4aaa-f1ee-801d-ba2e-ca8a76892058"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c91e90c9-0cb9-854b-a665-425f1ccea060"
+  computationUuid: "6bc60e24-a49b-8f9c-beb4-5ea90b61c295"
   stages:
     - stage: path
       stageUuid: "7f3cbf3a-e477-8604-97b2-57f9af4803bb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42a11854-349e-8be8-bd4e-486d01817303"
     - stage: horo
-      stageUuid: "2f785832-d09e-8f6e-ae8d-7978683cf6af"
+      stageUuid: "4fab75f4-c6ea-8973-ad23-b0e72f680fd9"
     - stage: seal
       stageUuid: "24ae9ce9-0653-85ce-95a4-d0c84beb280e"
     - stage: uuid
-      stageUuid: "64118be3-48b1-84ad-bb63-e4e08d3fcafc"
+      stageUuid: "69d7a13f-8301-8fe2-b36d-51097f052df0"
 version: 2
 ---
 # denominator

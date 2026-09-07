@@ -2,11 +2,11 @@
 name: policy
 description: "Use when reasoning about policy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/policy"
-coordinate: "vocabulary/policy · 2/share · 7839d63c"
-contentUuid: "10d7c296-330c-57a5-bf24-9bda05b6f21d"
-diamondUuid: "51984692-d189-8b12-b820-b1c3ce2c1834"
-uuid: "7839d63c-a289-82b0-aeb6-bad45cb59de3"
-horo: 2
+coordinate: "vocabulary/policy · 1/base · 950d9d91"
+contentUuid: "da93dbbf-a83c-57c9-b819-0c31e953023e"
+diamondUuid: "da4ca5e9-cad4-809c-82cb-8d5d6a593db1"
+uuid: "950d9d91-1505-8e73-be5f-53c3aa5c1f6b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 114
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "55756f80-6daa-8b57-969b-56d4cab87ee8"
+  computationUuid: "f0fa1d2b-77d3-89c8-b3f5-59fb1381333a"
   stages:
     - stage: path
       stageUuid: "25168423-5029-88c8-a567-44aed15d958b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "60af30d3-a35d-8b23-8638-481abc94f5fa"
     - stage: horo
-      stageUuid: "64874151-7573-8f60-8e3d-81de8e422789"
+      stageUuid: "1101cc06-a756-8128-b47c-1592af28b14f"
     - stage: seal
       stageUuid: "fb81df3f-8184-8125-8c8d-76592d62fd5b"
     - stage: uuid
-      stageUuid: "c8d35466-e2f5-894e-b600-0c4f8b078e70"
+      stageUuid: "abbd999e-b836-87b6-bf60-39919c98a9ad"
 version: 2
 ---
 # policy

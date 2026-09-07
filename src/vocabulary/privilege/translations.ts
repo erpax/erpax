@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "privilege",
-    "uuid": "e5909e6f-fb68-8584-b2b1-0dafb586c251",
+    "uuid": "4f1412e5-bf5b-8926-b93c-bbc02b2aa905",
     "words": [
       "privilege"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about privilege — **Privilege** — attorney-client confidentiality and the ethical wall that screens a matter from conflicted staff — is an access scope: a capability on the role × isolation to the m",
-    "uuid": "bf62e7e2-814c-81c2-a5ad-c8dc25990935",
+    "uuid": "dec7d349-822e-8af2-a1f2-687f061e3a64",
     "words": [
       "use",
       "when",

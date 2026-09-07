@@ -2,10 +2,10 @@
 name: lang
 description: "Use when reasoning about lang — is what a screen reader consults to choose a voice. Get it wrong and Bulgarian is read aloud with English phonemes — not degraded, *unintelligible*."
 atomPath: "document/html/lang"
-coordinate: "document/html/lang · 8/crest · 122457f8"
-contentUuid: "180da52f-d8be-53d6-9dd3-d3952072cd4d"
-diamondUuid: "200b1474-51dc-8e5e-a951-3208c6d03f71"
-uuid: "122457f8-197b-8910-92a9-5604cfe3c9a9"
+coordinate: "document/html/lang · 8/crest · e6640fb3"
+contentUuid: "93a0d0d2-d2d7-57d5-8346-f14d4a79fdc3"
+diamondUuid: "dcac3745-688f-8a80-87c9-d6d51a50b10b"
+uuid: "e6640fb3-1da7-870d-9b1a-9109b463b514"
 horo: 8
 typography:
   partition: document
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1ed7a113-1089-80a5-95f2-9fb1b23d3ae8"
+  computationUuid: "ae6b622f-e87d-8729-aecc-d31dd3b6ec08"
   stages:
     - stage: path
       stageUuid: "4636507e-9fa9-8f97-b266-eeac1841e26d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f9df28b8-1957-83bf-b117-457a58a2072b"
     - stage: horo
-      stageUuid: "4f0fbff8-daad-846c-9250-57a71073c071"
+      stageUuid: "84ad17e2-d24d-8add-a331-0b902ff79f68"
     - stage: seal
       stageUuid: "7d6af736-2760-8626-98c3-00b292b4a4c7"
     - stage: uuid
-      stageUuid: "f8842ad2-b7a7-8435-9f83-886c0d96b64e"
+      stageUuid: "d3bd6499-576d-83c4-b87a-36c29235ff85"
 version: 2
 ---
 # document/html/lang — the page must say what language it is in

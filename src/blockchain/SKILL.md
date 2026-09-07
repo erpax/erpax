@@ -2,11 +2,11 @@
 name: blockchain
 description: "Use when reasoning about erpax AS a blockchain — the computed proof that it is one. A content-addressed, Merkle-folded, tamper-evident, externally anchored ledger whose security is QUANTUM, not proof-of-work: the double-torus drives forge-cost to ∞ at coverage 1 while verify stays O(N). Six properties, each computed on the live matrix; the conjunction is the proof."
 atomPath: blockchain
-coordinate: "blockchain · 4/weave · 5d323e74"
-contentUuid: "62a39c01-62cd-51fa-8c5e-ec130e87d5ce"
-diamondUuid: "1884def5-4200-8743-94b9-49b1a25b3c77"
-uuid: "5d323e74-57e1-82ea-9093-1aa451849033"
-horo: 4
+coordinate: "blockchain · 2/share · 4a916685"
+contentUuid: "6e0de9db-128a-501f-ae6c-093626bb3c06"
+diamondUuid: "65b87c91-315b-8d66-88c1-db9925db40d9"
+uuid: "4a916685-54d1-8981-a5a6-82b3fe57851c"
+horo: 2
 typography:
   partition: blockchain
   bondDegree: 52
@@ -15,7 +15,7 @@ standards:
   - "RFC-9562"
 bindings: []
 signatures:
-  computationUuid: "df4ab005-050d-8433-a3d7-a8c1cd74f51b"
+  computationUuid: "2692d168-2126-8f52-910c-9176f3f77b64"
   stages:
     - stage: path
       stageUuid: "54bbc9ce-c1aa-8ea4-9f05-b7c0c84fcc4a"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "db070c4e-3315-8eca-b0f0-85ecf45cf7ae"
     - stage: horo
-      stageUuid: "abb3ba5d-32ea-8cb5-be02-9e275f1e27f6"
+      stageUuid: "cf3a1dd8-c307-8b8c-8e74-4ca874046476"
     - stage: seal
       stageUuid: "9bab9b68-d178-88dc-b203-5d2fad7ec40a"
     - stage: uuid
-      stageUuid: "9cdb8daa-ce41-891c-adae-414501e7348d"
+      stageUuid: "6c670604-71fd-8f4d-a638-4223dfcaafe6"
 version: 2
 ---
 # blockchain — the computed proof that erpax IS the quantum blockchain

@@ -2,18 +2,18 @@
 name: fields
 description: "Use when reasoning about fields — shows the atom's coordinates, its bonds, and the entanglement fields warn when a change reaches further than the row in front of the editor."
 atomPath: "admin/ui/fields"
-coordinate: "admin/ui/fields · 5/round · fd5fb46e"
-contentUuid: "e3a85c19-aa90-5f06-9212-faf838110073"
-diamondUuid: "2f419264-aa37-817f-8356-05e7a31f3ae6"
-uuid: "fd5fb46e-53d2-8083-b64d-2a18ae36c6a4"
-horo: 5
+coordinate: "admin/ui/fields · 7/descent · b44f8d1a"
+contentUuid: "dfe2eebe-8a1d-505b-8fbb-4e2d364fd78a"
+diamondUuid: "8fe912d2-67d5-8220-8535-2573af229c30"
+uuid: "b44f8d1a-ae14-81b7-8a2a-68717e4741b7"
+horo: 7
 typography:
   partition: admin
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "67de1151-1164-8e67-9ecb-a218c5231251"
+  computationUuid: "857bfcb8-7874-8d14-84ce-abcc7412ed4d"
   stages:
     - stage: path
       stageUuid: "8161ad72-76dc-8c16-b665-806197f96e83"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ca443174-a770-8b5d-bcc0-422ad45c10da"
     - stage: horo
-      stageUuid: "eaa9cf69-7c33-8eef-94dd-08346c4e3b31"
+      stageUuid: "c8af3df8-a834-8d37-946a-14fa2c801a13"
     - stage: seal
       stageUuid: "ccfec27c-65f2-8456-9a86-5c0ea28fadba"
     - stage: uuid
-      stageUuid: "66e16507-a80a-8392-a5c2-8644ec736b8d"
+      stageUuid: "9cbf07c5-5b85-80c4-89ed-0efc2e8c4209"
 version: 2
 ---
 # admin/ui/fields — the editor sees what the record is bonded to, while editing it

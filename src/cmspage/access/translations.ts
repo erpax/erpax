@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "access",
-    "uuid": "29495b07-2f56-8422-a188-20b07fd5b7e1",
+    "uuid": "50e356dc-39a9-8881-8f7f-ba39775b45ec",
     "words": [
       "access"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the pages collection's access control — who may read, create, update, or delete pages.",
-    "uuid": "1e13141b-dc58-8d49-a0eb-f8a85152d440",
+    "uuid": "b787f2a1-3b2d-8fa8-8457-826418f08f3c",
     "words": [
       "use",
       "when",

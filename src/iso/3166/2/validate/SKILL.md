@@ -2,11 +2,11 @@
 name: validate
 description: "Use when reasoning about validate — ISO 3166-2 subdivision-code validator."
 atomPath: "iso/3166/2/validate"
-coordinate: "iso/3166/2/validate · 2/share · 1e7faca5"
-contentUuid: "0118bd3a-e656-5582-bfdc-924e11c3e784"
-diamondUuid: "6eee8956-3826-867a-beff-d64ce2c46293"
-uuid: "1e7faca5-bca2-86ee-a9fa-d4a8e090c24c"
-horo: 2
+coordinate: "iso/3166/2/validate · 1/base · b48b1fdc"
+contentUuid: "c690ebdf-056a-5052-8a73-1f9a131d89bb"
+diamondUuid: "aa60b2d1-44f1-8a70-965f-5c2bf277c83d"
+uuid: "b48b1fdc-503d-8d54-83c2-7772982f43fa"
+horo: 1
 typography:
   partition: iso
   bondDegree: 12
@@ -16,7 +16,7 @@ standards:
   - "ISO-3166-2:2020 §5 code-element"
 bindings: []
 signatures:
-  computationUuid: "52a6d275-d0ba-815a-af11-043ff3a417ab"
+  computationUuid: "b5674f9b-a912-8e68-876d-bf70329ae578"
   stages:
     - stage: path
       stageUuid: "7e4e99ab-9b55-867a-a645-18157640f43c"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "5858662e-15dc-8ede-a6dc-9b93bef46320"
     - stage: horo
-      stageUuid: "eea8f4d1-9c84-8a3f-aff6-a31a55fffe33"
+      stageUuid: "4feae5d5-82dd-8983-9942-805053d91731"
     - stage: seal
       stageUuid: "c05330af-2a7d-8b97-a2ac-cf6e17a39f79"
     - stage: uuid
-      stageUuid: "c65ec437-1264-804d-b638-ad627b342cf9"
+      stageUuid: "d134ef1f-4e2e-85db-848e-c151199f72df"
 version: 2
 ---
 # iso/3166/2/validate

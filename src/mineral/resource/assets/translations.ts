@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "assets",
-    "uuid": "ca5389fd-1c02-843e-bef1-f6d845bca5d9",
+    "uuid": "980272c0-b499-82be-b2f3-151911f337ff",
     "words": [
       "assets"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
-    "uuid": "b2f16e0d-e2ca-85b6-b274-013b0a3e44aa",
+    "uuid": "0b18fa10-8958-8a5f-bf0b-9c8d05abd0b1",
     "words": [
       "use",
       "when",

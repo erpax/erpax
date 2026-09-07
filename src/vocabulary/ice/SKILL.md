@@ -2,11 +2,11 @@
 name: ice
 description: "Use when reasoning about ice as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ice"
-coordinate: "vocabulary/ice · 4/weave · 70fa93d8"
-contentUuid: "f011c804-3359-5d64-b15d-7ed5fcdb88b1"
-diamondUuid: "4df36027-8390-84a7-ba61-bbe79f8ec223"
-uuid: "70fa93d8-279e-8ad9-9c2b-715d8eddc9e4"
-horo: 4
+coordinate: "vocabulary/ice · 5/round · 3faa1c64"
+contentUuid: "6179c990-31db-5e82-968a-49f01f5d30de"
+diamondUuid: "564b781c-48bf-80b0-bca8-d06f6eeb7a30"
+uuid: "3faa1c64-302e-8ebd-9a5f-0bfefd51783f"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5745e875-e50d-8485-a79e-7838b2313a25"
+  computationUuid: "a0e01ae8-b821-86c3-9dab-7e161d6c47dc"
   stages:
     - stage: path
       stageUuid: "22adaeba-3565-8637-928c-74b02e4be1f8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3eb7f463-bc17-8e6e-8f76-159e0d681a09"
     - stage: horo
-      stageUuid: "4ff85578-384c-86b7-98f3-930227593d93"
+      stageUuid: "e420e060-597a-8758-8de3-dbbce3eeae86"
     - stage: seal
       stageUuid: "0f612b26-7f55-89ef-882a-d4e087b0c7a0"
     - stage: uuid
-      stageUuid: "c121e8fe-9823-88d5-8ce9-6c8a5fdd59b6"
+      stageUuid: "60f22f1a-3684-808b-b0e1-0645d5c181fb"
 version: 2
 ---
 # ice

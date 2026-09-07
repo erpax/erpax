@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "service",
-    "uuid": "3a18fe67-36e6-8696-acbe-086eab4b7ab3",
+    "uuid": "e24a0e2a-6207-82f9-a23b-1c7c42d29bb0",
     "words": [
       "service"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing camt.053 statement import parser.",
-    "uuid": "3aa789e4-9ebd-89b6-a8f6-5771603b7fed",
+    "uuid": "64ab66f0-6973-809e-bee7-5d3e16bf7d76",
     "words": [
       "use",
       "when",

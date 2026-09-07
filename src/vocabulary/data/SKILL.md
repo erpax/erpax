@@ -2,10 +2,10 @@
 name: data
 description: "Use when naming information held about an identifiable person or entity — the parent term for the data-side vocabulary, including its protection."
 atomPath: "vocabulary/data"
-coordinate: "vocabulary/data · 1/base · 5a3b1ef9"
-contentUuid: "ee3f9901-2bc6-54a6-a4cf-2583d6b46a3a"
-diamondUuid: "6062d4d5-2633-8cb7-a03f-2f73860a3766"
-uuid: "5a3b1ef9-20a8-83ef-b4c3-6848da373632"
+coordinate: "vocabulary/data · 1/base · ea942046"
+contentUuid: "f1123bc4-f6fa-5033-9209-c422854c2dbf"
+diamondUuid: "a8c60d98-ae90-8c11-bbd3-18d86c41e34f"
+uuid: "ea942046-e658-8468-aa27-ed6cad30b8af"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6e90d4c9-87ec-840c-9b10-296b50e7708b"
+  computationUuid: "f580a6a5-6313-8fc2-8294-24ed3e032f09"
   stages:
     - stage: path
       stageUuid: "90e8972f-0b46-87a3-9b8c-a3e74d239192"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "68feb19e-da55-8d92-962b-8ea55e283bd1"
     - stage: horo
-      stageUuid: "26ef6e05-e183-8af1-93c9-afa24d927a83"
+      stageUuid: "65c65a05-e425-85ba-bde8-4260d03997be"
     - stage: seal
       stageUuid: "20269403-28dd-890a-8429-239b0baa4db7"
     - stage: uuid
-      stageUuid: "4e9b55ba-d76b-8139-9563-e523ad60c88b"
+      stageUuid: "3bb3cf43-5341-808b-9774-f22bba828455"
 version: 2
 ---
 # data

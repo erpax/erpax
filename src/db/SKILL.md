@@ -2,10 +2,10 @@
 name: db
 description: "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core with infinite tamper-cost, deduping by the merge law."
 atomPath: db
-coordinate: "db · 7/descent · 5403028a"
-contentUuid: "33417824-4c22-5540-afb3-e34d2716c4f0"
-diamondUuid: "7c612074-b80b-87e1-83d1-fe04f9a7f6c1"
-uuid: "5403028a-28af-889d-8eac-53401bafb7d9"
+coordinate: "db · 7/descent · 0fc44cbc"
+contentUuid: "eb491391-045f-5382-a3dc-5d715cde257d"
+diamondUuid: "3d1110f9-36ab-8c00-b0ef-5352f60f9a32"
+uuid: "0fc44cbc-bf26-8de1-8a73-07e0e5790fe3"
 horo: 7
 typography:
   partition: db
@@ -14,7 +14,7 @@ standards:
   - "content-addressed storage (RFC 9562 §5.8 UUIDv8) · append-only (the akashic record)"
 bindings: []
 signatures:
-  computationUuid: "2acb313d-afa6-8a71-a788-7ca5a9c1fcf0"
+  computationUuid: "5efbee10-fcd9-8213-9e96-def147a83438"
   stages:
     - stage: path
       stageUuid: "6bcf193d-6449-8182-a415-705c75ed4739"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f6faac58-122e-88cc-8990-d1e201d1e4e7"
     - stage: horo
-      stageUuid: "ca6a3bdb-e197-8c18-9e8d-de01eb587b57"
+      stageUuid: "0d8de5d9-e831-8720-a4be-2e7c7c1758e1"
     - stage: seal
       stageUuid: "d54757e6-4a64-87c0-93c4-37e2ba702649"
     - stage: uuid
-      stageUuid: "aec79e34-fe8e-82f8-a163-e1801b3297fc"
+      stageUuid: "c8670138-aac3-8876-8313-b39332164704"
 version: 2
 ---
 # db — the store, the fold's outside-∞ end

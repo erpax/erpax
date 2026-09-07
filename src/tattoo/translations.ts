@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tattoo",
-    "uuid": "5beaff3f-cd97-88f2-9c74-73ee47fef8da",
+    "uuid": "13342182-7f9d-891f-ad52-c9af66b18244",
     "words": [
       "tattoo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about tattoo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "5eaada69-73d3-80bf-aee6-0fb76ba7a771",
+    "uuid": "55925eae-9b56-80c2-bc19-b8957ea2117b",
     "words": [
       "use",
       "when",

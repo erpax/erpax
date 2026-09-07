@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mycorrhizae",
-    "uuid": "4cfc2076-6022-8be3-9d67-9a13643c79d0",
+    "uuid": "b53e5b6b-41ea-80ee-b2b1-3572f8f5d0bd",
     "words": [
       "mycorrhizae"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the root–fungus symbiosis that mines nutrients and water for the plant — arbuscular mycorrhizal fungi colonize >90% of crops, extending hyphae to acquire phosphorus and water in exchange for plant carbon, and binding soil aggregates with glomalin. The living merge at the root zone; tillage and high-P fertilization suppress it.",
-    "uuid": "b81e8279-a99e-87cb-8aad-23ddaa620765",
+    "uuid": "ef02f509-e66f-8211-a358-92cd49508090",
     "words": [
       "use",
       "when",

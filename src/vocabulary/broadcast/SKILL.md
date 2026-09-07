@@ -2,11 +2,11 @@
 name: broadcast
 description: "Use when reasoning about broadcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/broadcast"
-coordinate: "vocabulary/broadcast · 5/round · c32bbcbc"
-contentUuid: "6d0d69cd-ceae-59c6-8860-f182a5690da4"
-diamondUuid: "bdbe21c5-c086-86ca-8984-cd5ae7185f4d"
-uuid: "c32bbcbc-f8b1-818d-9117-d9bacf066c6c"
-horo: 5
+coordinate: "vocabulary/broadcast · 1/base · 634243b6"
+contentUuid: "c7790b3d-4b6f-584c-aa1e-717e8d1a43e6"
+diamondUuid: "a70cf069-72bf-86bf-9d06-1bb36b0f1704"
+uuid: "634243b6-2317-8e42-aa3f-3a679284243a"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 87
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9e557c64-d58b-88e2-bda2-fd22ae9c939a"
+  computationUuid: "f83d06a5-b51f-809e-ad40-969d5870fab1"
   stages:
     - stage: path
       stageUuid: "dda0b8c3-d9a8-8e61-a9eb-07379adebd30"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3e8fd0ff-5ab1-81a6-ae20-1db2d1359a1f"
     - stage: horo
-      stageUuid: "0e71acc3-5423-88ea-ac7e-230d17b4e56d"
+      stageUuid: "3698f5ea-98dd-8ab8-bd1d-e606a59572d6"
     - stage: seal
       stageUuid: "1af3d766-e1e4-8184-9b74-31849bdd1ce9"
     - stage: uuid
-      stageUuid: "abf85033-cb2e-8a88-b163-9a800d758120"
+      stageUuid: "85977dcb-6a92-8d90-8582-2c7037fa02f5"
 version: 2
 ---
 # broadcast

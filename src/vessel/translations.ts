@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vessel",
-    "uuid": "7fbe4155-7d29-8cbc-b47a-674ba54e9e6d",
+    "uuid": "9a588d5f-9ffc-841f-973b-5f086efc9eb8",
     "words": [
       "vessel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about vessel — A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.",
-    "uuid": "c775b5fa-d9d4-8d35-9a38-36cb4311e8db",
+    "uuid": "35460dfa-b900-8dc3-990e-c77d2185ab67",
     "words": [
       "use",
       "when",

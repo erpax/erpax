@@ -2,11 +2,11 @@
 name: returns
 description: "Use when authorising, tracking, and closing a customer return (RMA) — recording the reason, line-level items and restock decisions, enforcing SoD on approval, and linking to the credit memo that reverses revenue per IFRS-15 §B22. The returns-and-RMA collection."
 atomPath: "customers/sales/orders/returns"
-coordinate: "customers/sales/orders/returns · 2/share · 36685ac3"
-contentUuid: "fc4ad6f6-9d1a-557f-927f-3e90a30e1fb5"
-diamondUuid: "344f7720-6b78-8825-a448-17c2c2c1d832"
-uuid: "36685ac3-178a-8697-a0a6-a74e5f1a0715"
-horo: 2
+coordinate: "customers/sales/orders/returns · 5/round · 7e4ed86e"
+contentUuid: "c61dded2-e0fb-5ef4-84b8-e96c1365c72a"
+diamondUuid: "7cf22044-eb98-849f-84f8-2457c438e63d"
+uuid: "7e4ed86e-9a70-81f1-aab9-de6fd41e0471"
+horo: 5
 typography:
   partition: customers
   bondDegree: 36
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "348598fb-ecc3-8f3a-a1d8-ffb9fac08dc7"
+  computationUuid: "ba08ba41-0b6e-8cfe-92d6-eeacbfcf2b0e"
   stages:
     - stage: path
       stageUuid: "2bf7c8f8-0287-893b-af46-38d6e75a697e"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "a7a5832b-bc7f-82d1-bc1f-89e00f5f7b77"
     - stage: horo
-      stageUuid: "85f0b00d-e7ea-87f7-b48d-2039d5e513be"
+      stageUuid: "3bcd2dc1-e85a-88d4-bb0b-e82846e1bab5"
     - stage: seal
       stageUuid: "70ac5fd1-5c8d-8cfe-aa60-4be79ba32b9b"
     - stage: uuid
-      stageUuid: "117f3a5a-81bf-8f9b-b5ff-eb76199ab9bc"
+      stageUuid: "bd6a7dd9-835d-8edd-b05f-06d8ad3711a3"
 version: 2
 ---
 # returns

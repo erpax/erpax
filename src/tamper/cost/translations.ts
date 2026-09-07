@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cost",
-    "uuid": "43ac7722-aff4-85a6-a42d-6fd1c693f63c",
+    "uuid": "dc2fd47b-db58-8544-b550-c6fbd425e143",
     "words": [
       "cost"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.",
-    "uuid": "adc8bc88-f8b2-88e1-94e5-f9e2b5a141e9",
+    "uuid": "3abe3dab-8e47-8a66-bc60-6d61a67da7d7",
     "words": [
       "use",
       "when",

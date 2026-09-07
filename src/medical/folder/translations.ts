@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "folder",
-    "uuid": "c3ca0078-cce6-8f63-9ed2-2a833b612c5a",
+    "uuid": "49f45db5-9271-88d8-899e-d4d2c4d4844d",
     "words": [
       "folder"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about folder as a medical facet of medical — vocabulary pivot to @/folder; nested not duplicated.",
-    "uuid": "9f020e6b-1f40-8c30-81e8-0aedb442b694",
+    "uuid": "c68f1056-4673-81b0-9673-b07bc2a61659",
     "words": [
       "use",
       "when",

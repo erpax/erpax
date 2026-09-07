@@ -2,11 +2,11 @@
 name: change
 description: "Use when emitting an audit event after a Payload write — the afterChange hook builds a canonical AuditEntry, logs it to the streaming aggregator, and persists a durable, Merkle-chained row to the audit-events collection for tamper-evident SOX evidence."
 atomPath: "audit/trail/after/change"
-coordinate: "audit/trail/after/change · 7/descent · 0c6aab01"
-contentUuid: "334915bf-1825-50ac-a1bb-00420b2c6008"
-diamondUuid: "186ce4e4-3122-8d9e-a5fb-9f173aea318a"
-uuid: "0c6aab01-2f54-846a-b07e-e60fc4aaee6c"
-horo: 7
+coordinate: "audit/trail/after/change · 1/base · ec09901d"
+contentUuid: "24d3d4aa-ae10-5ad5-97eb-e82ecce30f4d"
+diamondUuid: "5eb65e84-80fb-89b5-b074-2ead1fc103be"
+uuid: "ec09901d-e742-8422-b654-0608777934e9"
+horo: 1
 typography:
   partition: audit
   bondDegree: 18
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "04c6dbec-54e0-85f5-b380-9f96b6586ebf"
+  computationUuid: "bf87af72-f5e7-81b0-a749-b5c5d71c1b23"
   stages:
     - stage: path
       stageUuid: "be6ac1fb-54a3-82cd-8b82-f3991779d2f4"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "cac2ce41-769e-83ec-b339-e93ef9a9e1c5"
     - stage: horo
-      stageUuid: "e92e6550-2b93-890a-848d-24ad539d84ef"
+      stageUuid: "73e773b5-8272-8174-9dd2-91309eef236f"
     - stage: seal
       stageUuid: "be6e5db3-52ed-8e1c-9240-8cc23b01210f"
     - stage: uuid
-      stageUuid: "882c428f-1cca-8d1c-b3a1-f34a883d6de0"
+      stageUuid: "62374aff-4984-8d46-9a07-4779aed3446f"
 version: 2
 ---
 # audit/trail/after/change — the [[audit]] afterChange emitter

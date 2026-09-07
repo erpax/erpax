@@ -2,11 +2,11 @@
 name: phonetic
 description: "Use when reasoning about phonetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/phonetic"
-coordinate: "vocabulary/phonetic · 4/weave · a2f80a68"
-contentUuid: "283c2fe3-9eea-56fc-bd62-b79ff18b5da6"
-diamondUuid: "cb26d157-9070-8677-9035-c857875a55ba"
-uuid: "a2f80a68-96c6-8da8-84a1-1e8a0e29853e"
-horo: 4
+coordinate: "vocabulary/phonetic · 1/base · e67285ad"
+contentUuid: "20b69c7e-234a-5a43-aa46-bb970faaaf1d"
+diamondUuid: "10083ce1-a95b-83e3-8fb2-e25dd495f765"
+uuid: "e67285ad-3b82-8c07-b367-af3a4f2e2a90"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "85a50a43-d7e1-8db0-ae88-bfe2441f1c65"
+  computationUuid: "6c7ca67b-8685-83a7-bb2a-a9e1d5cdaf32"
   stages:
     - stage: path
       stageUuid: "3dafe48d-0afa-8004-adcf-0b322522ec86"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1d020af8-49e6-8a57-85bb-40979f94eb61"
     - stage: horo
-      stageUuid: "84eaf0d0-d2a4-8f73-ab70-64c07d737390"
+      stageUuid: "53abf40d-839e-8976-a65d-5447ad38dbb9"
     - stage: seal
       stageUuid: "6fd8cced-1e35-8ae1-9d86-c7be6f154f3c"
     - stage: uuid
-      stageUuid: "4fb89af6-950a-8ad4-9f18-99127eef976b"
+      stageUuid: "b35a69f6-1a84-8157-9c27-daccd761b4af"
 version: 2
 ---
 # phonetic

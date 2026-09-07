@@ -2,10 +2,10 @@
 name: audiobook
 description: Use when reasoning about audiobook — An audiobook.
 atomPath: "vocabulary/audiobook"
-coordinate: "vocabulary/audiobook · 2/share · 40785024"
-contentUuid: "f30b5c0a-8ced-5b94-afdf-022c0cbc3ff2"
-diamondUuid: "4d60349f-5cad-8758-beb9-f29fd895a306"
-uuid: "40785024-25e7-8618-bba4-dd8135d6082d"
+coordinate: "vocabulary/audiobook · 2/share · 3156fae5"
+contentUuid: "0b2b5c95-f742-5594-a9dd-a3dc6a42214e"
+diamondUuid: "b7fa6dff-f2cc-84a4-b067-05cf3258d562"
+uuid: "3156fae5-e096-8c18-81b5-983c01472aa9"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "96b82b97-826f-8545-9433-222f4095eeb8"
+  computationUuid: "943cd8ba-91c1-8747-80ae-1352bcf3f39a"
   stages:
     - stage: path
       stageUuid: "4ce5e387-5717-8b6f-9f15-442cca566975"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6ffc7f09-7fc3-8aaf-8c4e-e29f03547034"
     - stage: horo
-      stageUuid: "fc99e222-b03d-8050-98f2-0ebb8ebfec90"
+      stageUuid: "e048e554-19a1-85a1-8a56-2e671a1fac24"
     - stage: seal
       stageUuid: "83dc7777-fff4-8e11-ae2c-068f410113a3"
     - stage: uuid
-      stageUuid: "18eedfd7-d5bc-879c-9ed2-8f1afe963327"
+      stageUuid: "aaf9e2ff-2e7a-84a3-bbb5-2ba006bbb45b"
 version: 2
 ---
 # audiobook

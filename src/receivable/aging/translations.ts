@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aging",
-    "uuid": "680011c2-67a1-8a7a-be36-fc3583c9b279",
+    "uuid": "1469b5a9-255c-8ef8-b754-a07521abeb77",
     "words": [
       "aging"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about aging — Wraps party/aging with A/R-shaped output — , . The bucket math is identical to payable/aging; only the naming differs, and the two stay separate so each side names its own…",
-    "uuid": "a643d6eb-89ed-85a3-b027-eeea4fcfe7c9",
+    "uuid": "f2173130-edec-8f62-b66b-97947ecc0493",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: review
 description: "Use when reasoning about review as a anatomical part of body — vocabulary pivot to @/review; nested not duplicated."
 atomPath: "body/review"
-coordinate: "body/review · 8/crest · 360ad7f7"
-contentUuid: "6460c407-7642-5460-9541-e9bfcae07d50"
-diamondUuid: "7007e60f-de48-8dea-9578-017663c06e58"
-uuid: "360ad7f7-fc57-843d-8592-5df8fb0215c1"
+coordinate: "body/review · 8/crest · c3c0c800"
+contentUuid: "6e0e2cb3-f737-55ae-a003-121e743e4906"
+diamondUuid: "722cc4d2-dad4-8876-9dd9-1b128375a1cd"
+uuid: "c3c0c800-7671-8b27-b8af-0d2e1b7ca648"
 horo: 8
 typography:
   partition: body
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f948ae03-5d41-8bc6-b12c-327d7298fb43"
+  computationUuid: "1d9a4cfd-4b59-842a-ac5a-94506dbf790b"
   stages:
     - stage: path
       stageUuid: "1a741d6c-9ddd-8fd0-81c2-8ce144df46ce"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "35b32471-552e-8315-a40a-f9e502f40930"
     - stage: horo
-      stageUuid: "99236d9b-28d5-80fd-b15e-93b41ef25ec6"
+      stageUuid: "00805dad-0b86-817f-b670-22b5216476ec"
     - stage: seal
       stageUuid: "be2b3b67-d1f9-8c40-ab73-25067f3e71b7"
     - stage: uuid
-      stageUuid: "d51a49f0-0bad-8804-99a9-f8453fbec38d"
+      stageUuid: "1c34f45a-aa90-8a86-a02a-8245f00f9af5"
 version: 2
 ---
 # body/review — anatomical part

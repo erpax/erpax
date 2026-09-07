@@ -2,11 +2,11 @@
 name: short
 description: "Use when reasoning about short as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: short
-coordinate: "short · 2/share · ac524120"
-contentUuid: "6788ba3c-17da-5c55-a918-85c04e988786"
-diamondUuid: "548f7dfe-b090-81b9-be89-9cfbfd266190"
-uuid: "ac524120-ce11-8dad-8ca7-ae8773bf8a5d"
-horo: 2
+coordinate: "short · 4/weave · 12f297c0"
+contentUuid: "e7845e3f-352b-5bbc-9610-73b758bac823"
+diamondUuid: "1f828dec-f74c-8ab2-ba4c-8e6a03e225cd"
+uuid: "12f297c0-8652-84e3-978f-04baf8901b0f"
+horo: 4
 typography:
   partition: short
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8b45598-e184-8309-b678-7519d17b1460"
+  computationUuid: "8738af8d-6dfa-8a26-9733-4b43f87d7206"
   stages:
     - stage: path
       stageUuid: "a0d81790-69b7-82db-832c-687338e3bfdf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "04da9390-0d03-8b87-9d78-fa846b020c56"
     - stage: horo
-      stageUuid: "3cdca782-8612-820b-8203-0d10e0004657"
+      stageUuid: "340206d0-fef8-8735-a38b-9f9766201325"
     - stage: seal
       stageUuid: "3ffbb145-e88e-8dd7-8f6d-622936aa95eb"
     - stage: uuid
-      stageUuid: "1edf4eb3-ab16-8b9e-8f68-8ea937332ab2"
+      stageUuid: "85baacd3-fb68-8b85-9f03-10e55da837ef"
 version: 2
 ---
 # short

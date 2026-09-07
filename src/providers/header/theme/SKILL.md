@@ -2,18 +2,18 @@
 name: theme
 description: "Use when reasoning about theme — The site theme is one value ( ). The header's is a second, because the header floats over whatever the page puts beneath it: a full-bleed hero paints a dark field and white text…"
 atomPath: "providers/header/theme"
-coordinate: "providers/header/theme · 7/descent · 86a7f3bb"
-contentUuid: "d1e727cc-a1da-54d8-bd99-954e1452b084"
-diamondUuid: "eee0cc9f-38a6-842c-b438-f974319ab9c7"
-uuid: "86a7f3bb-f856-8ef6-b553-128ea155a38e"
-horo: 7
+coordinate: "providers/header/theme · 5/round · ac9ebf3f"
+contentUuid: "f4a88f45-1f7d-5de1-8ebe-9f2a1dde4388"
+diamondUuid: "f95ac08b-a760-87f9-b652-a957ab56d9fe"
+uuid: "ac9ebf3f-1aed-8d36-9167-e04335322578"
+horo: 5
 typography:
   partition: providers
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e9c9bcfb-5cda-8ddf-86d2-3ed2ff346368"
+  computationUuid: "ce9f0b06-aca6-8dad-b3e5-0f6aab33bc52"
   stages:
     - stage: path
       stageUuid: "73601db9-0717-86ba-acc4-b210bb6ea516"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3c032bbd-389d-8c05-a18f-881b822a60d3"
     - stage: horo
-      stageUuid: "ca008fb8-9f0f-8db8-83dd-986c2865d8b9"
+      stageUuid: "975d4fd5-8944-8947-bb5e-cc239ff83b2b"
     - stage: seal
       stageUuid: "811fcbc8-78ab-8d66-952c-59281637957d"
     - stage: uuid
-      stageUuid: "21dfadf0-c4c3-8e3e-b3b0-f9220847ec19"
+      stageUuid: "0d431a4b-80d5-8da2-9f7a-53a957c8227c"
 version: 2
 ---
 # providers/header/theme — the header's theme is the page's, until a hero overrides it

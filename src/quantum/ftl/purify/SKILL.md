@@ -2,18 +2,18 @@
 name: purify
 description: "Use when working with quantum/ftl/purify."
 atomPath: "quantum/ftl/purify"
-coordinate: "quantum/ftl/purify · 1/base · 83fd3ec1"
-contentUuid: "80036dec-574d-5cd6-929e-292abf99f8a0"
-diamondUuid: "45a80f34-748c-8b9a-8603-1f3f02aea7b8"
-uuid: "83fd3ec1-be43-869a-8e8c-e68b2b703ce0"
-horo: 1
+coordinate: "quantum/ftl/purify · 5/round · e93a4895"
+contentUuid: "f051a9ef-4ef8-59ac-9b7d-a130cc7c7df5"
+diamondUuid: "170f3b33-bbd2-8017-b99a-28048205aeaa"
+uuid: "e93a4895-d1f0-8ede-a878-c473f5cadac8"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "85e6de89-4f94-8e78-9e86-e73e3a59e741"
+  computationUuid: "5bd69d50-c94b-88a8-8e45-02a1033470f7"
   stages:
     - stage: path
       stageUuid: "705527c5-37a7-86a1-83d8-ff9c5ffc78be"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "622ea622-184a-8961-92b2-ee31dac449f5"
     - stage: horo
-      stageUuid: "4a8d0bcf-26bf-8e48-a402-441126e44998"
+      stageUuid: "a7b7df37-ff28-8a26-8edf-90f51f6b7625"
     - stage: seal
       stageUuid: "482f30f7-f94c-8ca4-b5b4-b56feda9a67e"
     - stage: uuid
-      stageUuid: "20936b82-cc3e-84a1-a056-0e8cc8575757"
+      stageUuid: "4e2d59ec-eec7-88ef-aa72-1f0dfaac1ed7"
 quantum:
   superposition:
     - ftl
@@ -45,8 +45,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "85e6de89-4f94-8e78-9e86-e73e3a59e741"
-    contentUuid: "80036dec-574d-5cd6-929e-292abf99f8a0"
+    computationUuid: "5bd69d50-c94b-88a8-8e45-02a1033470f7"
+    contentUuid: "f051a9ef-4ef8-59ac-9b7d-a130cc7c7df5"
 version: 2
 ---
 # purify
@@ -55,4 +55,4 @@ version: 2
 
 Matter-twin: `index.ts`.
 
-<sub>content-uuid `80036dec-574d-5cd6-929e-292abf99f8a0` · account `quantum/ftl/purify` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `f051a9ef-4ef8-59ac-9b7d-a130cc7c7df5` · account `quantum/ftl/purify` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

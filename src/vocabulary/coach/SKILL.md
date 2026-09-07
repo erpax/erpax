@@ -2,11 +2,11 @@
 name: coach
 description: Use when reasoning about coach — A person that acts in a coaching role for a sports team.
 atomPath: "vocabulary/coach"
-coordinate: "vocabulary/coach · 1/base · b1ed9b1b"
-contentUuid: "7c08f0a2-7c71-58f6-9d02-00929ea11a99"
-diamondUuid: "c6ee5bd6-8062-8fb7-95ee-d7cfe6384cf3"
-uuid: "b1ed9b1b-d23d-89ea-8b82-0157e63b9501"
-horo: 1
+coordinate: "vocabulary/coach · 7/descent · b1bbc625"
+contentUuid: "b23dceaf-722e-5894-b01e-855ea2035d24"
+diamondUuid: "04562c41-317e-88e7-8150-d66d80ca8aa4"
+uuid: "b1bbc625-57e0-8a7d-883e-fa49ee4c9cb4"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2383bba5-55d6-851b-8363-19a29ce849c9"
+  computationUuid: "ce0e713d-5769-891c-a2cc-63de6ccb620d"
   stages:
     - stage: path
       stageUuid: "b60dfb00-65c1-838b-bf93-74187096973e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "516c7a1f-f839-8e1c-bb61-de0a5ccb5cb8"
     - stage: horo
-      stageUuid: "419eca7c-b562-8879-8e3d-074a2ec05a97"
+      stageUuid: "cc8899a3-a42f-88f2-9e88-2644e2c377c1"
     - stage: seal
       stageUuid: "f8ab6297-856a-8915-a74d-ac340e0eb7fb"
     - stage: uuid
-      stageUuid: "c1810784-2606-8983-acdb-59a33208d1d7"
+      stageUuid: "edb62439-eca8-8d02-8277-aa7a99b5e205"
 version: 2
 ---
 # coach

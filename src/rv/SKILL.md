@@ -2,11 +2,11 @@
 name: rv
 description: "Use when reasoning about rv as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: rv
-coordinate: "rv · 1/base · 1a0d8b92"
-contentUuid: "1c90b504-d2b1-5192-a257-86570f99f990"
-diamondUuid: "8b4ea188-f9ce-87df-ab4b-140377212e32"
-uuid: "1a0d8b92-ba07-8604-a623-d39c7319274a"
-horo: 1
+coordinate: "rv · 4/weave · df1d7050"
+contentUuid: "3e3c4a14-f6de-5ef5-ab3f-c6c31fff408c"
+diamondUuid: "34b66137-ff00-872d-be41-27ac5324162e"
+uuid: "df1d7050-1afb-8f30-acf7-83d13838eff8"
+horo: 4
 typography:
   partition: rv
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4628bdff-ac02-84e7-8c66-12c544a7079f"
+  computationUuid: "fc3f526c-966b-83a2-aaaa-4e0d0061e0f0"
   stages:
     - stage: path
       stageUuid: "18f6fe0f-716d-8975-99bc-2f32c920ebd1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e320390-ada4-85ea-896a-547005364a4b"
     - stage: horo
-      stageUuid: "a9449242-46f9-81e5-982f-ee30d3f09796"
+      stageUuid: "fae7ed06-bf06-8ff5-a309-95064be6a685"
     - stage: seal
       stageUuid: "2409ba47-f248-8753-8cf3-380daa25958a"
     - stage: uuid
-      stageUuid: "216e9ed9-894d-83f7-8a9d-5b268677b51a"
+      stageUuid: "d08e7e90-2bc3-8157-91ec-0e4d68317f03"
 version: 2
 ---
 # rv

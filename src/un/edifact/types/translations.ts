@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "0422d299-7afe-83f1-be26-ffc75d831a69",
+    "uuid": "ecfdba99-541c-829a-b965-5ff7933607eb",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical UN/EDIFACT message types — semantic structure only.",
-    "uuid": "3006351f-8dd4-85f2-8308-535822ad8536",
+    "uuid": "034b3069-b907-8f4d-a299-11adbacdc6ff",
     "words": [
       "use",
       "when",

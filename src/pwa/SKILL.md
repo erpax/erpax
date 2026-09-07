@@ -2,11 +2,11 @@
 name: pwa
 description: "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem."
 atomPath: pwa
-coordinate: "pwa · 5/round · 82def364"
-contentUuid: "f1fad85f-1810-5107-bb48-7ed7e8bf4f9e"
-diamondUuid: "5f2cef2d-ad7b-8eec-9fff-31903e6f7178"
-uuid: "82def364-09f9-8f5e-8986-5d6fdca6806a"
-horo: 5
+coordinate: "pwa · 8/crest · 97a3c18e"
+contentUuid: "faf7b192-adaf-543c-8580-c3285af85525"
+diamondUuid: "d9a91a48-1928-81c5-b0ad-78bd1febc368"
+uuid: "97a3c18e-faed-8e0e-a5af-f1f7cf3c5230"
+horo: 8
 typography:
   partition: pwa
   bondDegree: 65
@@ -30,7 +30,7 @@ bindings:
   - "r2_buckets/NEXT_INC_CACHE_R2_BUCKET"
   - "r2_buckets/R2"
 signatures:
-  computationUuid: "92f536a6-46c3-865c-8ebb-e6dc6e58c0fc"
+  computationUuid: "226060dd-5587-89b2-9dba-f5ee045d50a9"
   stages:
     - stage: path
       stageUuid: "676397c4-de7a-80f0-a0ed-b7ebbf44bd01"
@@ -41,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "3ebf72d4-ca43-84f7-bbf1-614f5dde77db"
     - stage: horo
-      stageUuid: "f31402e7-19e2-85b6-aeb3-b6d628d4dd9c"
+      stageUuid: "159864cf-a4d4-8b41-953f-a538a800db0c"
     - stage: seal
       stageUuid: "5bbab41d-c2cb-8eab-b456-5c2d964fe8c9"
     - stage: uuid
-      stageUuid: "6092d2f3-dfac-8279-b19a-02d697aefae1"
+      stageUuid: "6640c2b5-dfe7-875a-b7fc-8fd6411c4c94"
 version: 2
 ---
 # pwa — every offline pain point collapses to a content-uuid

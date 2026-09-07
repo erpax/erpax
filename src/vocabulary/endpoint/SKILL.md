@@ -2,18 +2,18 @@
 name: endpoint
 description: Use when modelling one endpoint — the singular model of the endpoints collection (the plural store); an addressable interface where a service is reached.
 atomPath: "vocabulary/endpoint"
-coordinate: "vocabulary/endpoint · 2/share · fbdc68c4"
-contentUuid: "b1472cf7-4ce3-5682-a967-5d507c1d99c5"
-diamondUuid: "e97f9851-6882-8f88-b60e-b94ca11b6b3c"
-uuid: "fbdc68c4-a6d4-88c6-baa2-5cebca6c8348"
-horo: 2
+coordinate: "vocabulary/endpoint · 7/descent · b360c526"
+contentUuid: "553560a4-d8e6-5973-80ce-93edc4dacccc"
+diamondUuid: "6f23cd89-80a3-86a7-9e40-e73f7daa4d5b"
+uuid: "b360c526-ea20-8067-b918-f095bf0594ad"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "176ca9e2-1644-8ad4-acec-9893735fc24f"
+  computationUuid: "942388c8-81cb-87a7-a059-13e033fda2cd"
   stages:
     - stage: path
       stageUuid: "f0358055-c312-8892-bb57-324c13c5091a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9222266f-56cc-8564-b964-fcb83379dc83"
     - stage: horo
-      stageUuid: "24a57c55-8e8e-8bff-889e-5c7ad00b404b"
+      stageUuid: "1282eaa9-ee12-870b-9445-06a874cdfd14"
     - stage: seal
       stageUuid: "bc7482ad-a791-8353-b516-7d80c86793ad"
     - stage: uuid
-      stageUuid: "3f7d2dbc-1318-80ee-bfea-ce9707ca7043"
+      stageUuid: "5c744172-3c41-890f-b664-d48ff75a6653"
 version: 2
 ---
 # endpoint — the model of one [[endpoints]] row

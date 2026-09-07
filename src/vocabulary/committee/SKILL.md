@@ -2,18 +2,18 @@
 name: committee
 description: Use when modelling one committee — the singular model of the committees collection (the plural store); a constituted group with delegated authority over a domain.
 atomPath: "vocabulary/committee"
-coordinate: "vocabulary/committee · 4/weave · d5e1cce4"
-contentUuid: "f4720120-fc0a-542f-b29f-cf15c0ebc947"
-diamondUuid: "8d22cd01-2cd7-855c-a545-1a7c32c64111"
-uuid: "d5e1cce4-7821-8547-a1b4-5d997162f1b8"
-horo: 4
+coordinate: "vocabulary/committee · 1/base · 4bb8b630"
+contentUuid: "90807cb3-d899-54e9-a055-c6392451c719"
+diamondUuid: "d3e878f7-1bcd-881a-a6b3-e661c28c2004"
+uuid: "4bb8b630-f4d5-8565-8163-0f4b6f31f96d"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d381f7a0-9788-8781-b8ab-1033026f07ea"
+  computationUuid: "4c36590e-ec43-812c-9423-304700e5d695"
   stages:
     - stage: path
       stageUuid: "59cafb9c-41fe-8c69-afeb-eb6351f9b177"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "07dc63df-f655-81f0-9e10-6f1901013598"
     - stage: horo
-      stageUuid: "06af9a83-1f88-82f3-b701-b740ea5dcae6"
+      stageUuid: "ba882afb-7a95-8e78-a294-cca2b0251bcd"
     - stage: seal
       stageUuid: "a493bb33-d40e-8a62-b615-a1a3dcbf2c70"
     - stage: uuid
-      stageUuid: "90c3467e-6376-84ac-ae6d-f8e513f96e42"
+      stageUuid: "fe953a7c-b1fd-8473-a48e-192720453f74"
 version: 2
 ---
 # committee — the model of one [[committees]] row

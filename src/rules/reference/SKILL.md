@@ -2,10 +2,10 @@
 name: reference
 description: "Use when the statute→code trace must resolve — the gate that a `src/…` path cited in prose or comments actually exists. The corpus fails closed on dead atom links but left dead FILE-PATH pointers ungated, and they rotted: the Наредба Н-18 law pointed at a standards path long after the matter moved. A citation that leads nowhere is unreviewable (ISO-19011 §6.4), so a legally usable ERP cannot have one. Zero tolerance on the statutory surface; a down-only ratchet elsewhere. Run: tsx src/rules/reference/index.ts"
 atomPath: "rules/reference"
-coordinate: "rules/reference · 7/descent · f805abaf"
-contentUuid: "d5c453b6-54d2-5ee9-a84f-9b10d91bd150"
-diamondUuid: "2f266f97-d111-89a4-90d6-2b0efc0e7080"
-uuid: "f805abaf-9650-8280-9927-fa8bcbd8b25b"
+coordinate: "rules/reference · 7/descent · 552b1a76"
+contentUuid: "77266712-07b6-54e6-814a-21abc09855fd"
+diamondUuid: "b6cea0ee-38c0-86cf-b3ec-3cca4f72c4dc"
+uuid: "552b1a76-d170-846f-8104-f7b78210f1b4"
 horo: 7
 typography:
   partition: rules
@@ -20,7 +20,7 @@ standards:
   - "ZDDS — BG Value Added Tax Act; statute→code traces for fiscal citations fail closed here (not prose-only under rules/)"
 bindings: []
 signatures:
-  computationUuid: "64db6ec4-c154-8289-b63f-b24a699d5d32"
+  computationUuid: "8419f9ce-5d84-8524-a5eb-d7a824254e9f"
   stages:
     - stage: path
       stageUuid: "86832b64-e6a5-86a1-ace5-29376412f4d1"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "fc98578e-f12a-85ad-90d2-1b6dcd4188ef"
     - stage: horo
-      stageUuid: "3387bd36-fdc9-8e15-ba8e-e438e21121b7"
+      stageUuid: "be7a2f4e-c172-80b3-89ec-54dc26a8a6f4"
     - stage: seal
       stageUuid: "ac1e0d49-543a-8fa9-a0d7-82885f0e7986"
     - stage: uuid
-      stageUuid: "02c1a4fd-8e1e-8a7f-8f05-7aa40f55f283"
+      stageUuid: "228cf9dc-899f-8872-8466-4098647df4a1"
 version: 2
 ---
 # reference — the citation must lead to the evidence

@@ -2,10 +2,10 @@
 name: eligible
 description: "Use when reasoning about eligible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/eligible"
-coordinate: "vocabulary/eligible · 7/descent · 5ba89441"
-contentUuid: "2e5191bb-71fd-5083-9fc6-42fe3f015971"
-diamondUuid: "4b36fe9c-87b9-89b7-8781-b21a471d39ef"
-uuid: "5ba89441-527e-8a76-879e-182bad13d70b"
+coordinate: "vocabulary/eligible · 7/descent · 0d550cf1"
+contentUuid: "e4e9a2c8-87d0-5c25-a7ee-06ae33e7b471"
+diamondUuid: "da6773f0-008e-8889-92dc-f24719aea564"
+uuid: "0d550cf1-a085-878e-8389-55f2e0fe9989"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f54d2176-40bd-8f5c-8181-740ef9b0ef88"
+  computationUuid: "330b9e93-6520-8d92-8ac1-385bbc2a00d5"
   stages:
     - stage: path
       stageUuid: "4fd9f1ca-8c3d-898e-8782-7dfe25f0ee7c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c2161171-6ec6-89af-906f-9a1830a413ea"
     - stage: horo
-      stageUuid: "bda7ac3e-db7d-8cbc-8fc4-102f8a956d64"
+      stageUuid: "34c9e99c-bd9b-8c01-8b93-95cb01736b5e"
     - stage: seal
       stageUuid: "fb08ef26-d2e2-89aa-a4ef-7b3c13a5583d"
     - stage: uuid
-      stageUuid: "56dfa00e-28e6-845f-9128-c5fa6ba81860"
+      stageUuid: "1813cbfe-615e-8a38-bf40-99873abecc55"
 version: 2
 ---
 # eligible

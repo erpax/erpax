@@ -2,11 +2,11 @@
 name: illustrator
 description: Use when reasoning about illustrator — The illustrator of the book.
 atomPath: "vocabulary/illustrator"
-coordinate: "vocabulary/illustrator · 5/round · 66aebd9f"
-contentUuid: "664bc829-942e-5edf-b369-7963f2ecbaec"
-diamondUuid: "c185ffad-6b39-882c-9506-0b00e1a55157"
-uuid: "66aebd9f-25c5-8632-b00c-5d3fda121cd7"
-horo: 5
+coordinate: "vocabulary/illustrator · 1/base · fc07193f"
+contentUuid: "3a548ed3-c0ea-5342-ae62-df45f000263b"
+diamondUuid: "b9047144-e9bc-8f20-9cc2-ae6babed7ca3"
+uuid: "fc07193f-3264-8c05-9be2-2aa18988d150"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8d85892e-3aa8-868e-80fe-f53538e7cccd"
+  computationUuid: "8fd78687-ac45-84a9-a7d8-0629dbdcde1f"
   stages:
     - stage: path
       stageUuid: "fc78828d-25ca-8375-b685-549560b697a7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7d5282c4-0b2d-8b73-ba91-d6f1091c1981"
     - stage: horo
-      stageUuid: "3a65abb0-9624-8879-94c7-4dd34bd60dfd"
+      stageUuid: "35d719c5-79f1-8a88-a2cc-73dac4d0ff19"
     - stage: seal
       stageUuid: "6a95ab30-1ad8-80b5-a31a-d61e2530f607"
     - stage: uuid
-      stageUuid: "fc8694aa-fc38-8d2c-b75e-fb100d669cfe"
+      stageUuid: "a58093ce-8e3a-8ca7-a4f0-717b7d76b8de"
 version: 2
 ---
 # illustrator

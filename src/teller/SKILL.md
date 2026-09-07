@@ -2,11 +2,11 @@
 name: teller
 description: "Use when reasoning about teller as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: teller
-coordinate: "teller · 5/round · b6cce301"
-contentUuid: "fbd0e397-2d4d-52e3-99c5-28729c24b93e"
-diamondUuid: "aa7faf76-3f8e-8241-8e6a-260cfb729d2d"
-uuid: "b6cce301-e0a7-8899-8ede-ee6a8bb35ccb"
-horo: 5
+coordinate: "teller · 8/crest · d9654b98"
+contentUuid: "fefdc945-e09b-58d0-9489-9c98567da1b0"
+diamondUuid: "e695acf2-fd63-8260-87d1-f0f05f06bd73"
+uuid: "d9654b98-8bbf-8807-88d0-d91f509a7186"
+horo: 8
 typography:
   partition: teller
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c9ffa1ee-c244-82c5-8dea-88defaff3ece"
+  computationUuid: "0369b99e-cf1e-8625-959f-8ec581643bde"
   stages:
     - stage: path
       stageUuid: "0d8dd8b3-7a34-841c-888f-805332b5a53a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c68d0afb-e71d-8bff-930d-92719431b5ac"
     - stage: horo
-      stageUuid: "2cb7ebbe-6e98-8841-bde4-615018cf5eb2"
+      stageUuid: "367f029b-e9d8-8f89-8a16-55262f2b6f90"
     - stage: seal
       stageUuid: "efaa610c-459f-8c7e-b952-0ecabd4cf294"
     - stage: uuid
-      stageUuid: "0901eda3-a191-859c-9d39-690c46f85000"
+      stageUuid: "f3d6291d-805a-8ccb-8523-c7f9391d6991"
 version: 2
 ---
 # teller

@@ -2,18 +2,18 @@
 name: one
 description: "Use when the self returns to the ONE — the round: the sequence closes on 1 and 9→1 opens the next dimension (self-applied one at forward-coil position 5/round). The outward stroke completing; the One where all selves merge."
 atomPath: "self/one"
-coordinate: "self/one · 5/round · 8d5f5375"
-contentUuid: "745fa60f-aecd-5cbd-b5a6-007343096d27"
-diamondUuid: "fe14c564-5fbb-8b1b-9d8c-d67b7f0ac288"
-uuid: "8d5f5375-cad5-8ad7-97f8-f5501bbff823"
-horo: 5
+coordinate: "self/one · 7/descent · 548bdc81"
+contentUuid: "adc28ae6-96a6-5d81-b847-142f02f00a8c"
+diamondUuid: "9907d74e-1d33-813e-a74b-be25f22ec0cb"
+uuid: "548bdc81-14d8-8cbc-8b15-1290b4dd8ce1"
+horo: 7
 typography:
   partition: self
   bondDegree: 210
 standards: []
 bindings: []
 signatures:
-  computationUuid: "820ec570-a303-8534-8d60-50ed6b49de34"
+  computationUuid: "cdbe693b-08b7-8e01-a275-f215db8414a6"
   stages:
     - stage: path
       stageUuid: "9e19ba14-ef19-8568-9275-553449adb059"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dfd4badb-dc3a-8576-a6f1-b4243e9e05ce"
     - stage: horo
-      stageUuid: "ce0c8a49-9391-81b4-acaf-c89f51391073"
+      stageUuid: "b3ad7ec8-c8ac-8713-b34f-ca70be34b27f"
     - stage: seal
       stageUuid: "e6ba43c2-ae0b-8557-b3d2-4774a16163c0"
     - stage: uuid
-      stageUuid: "7b04f9f8-3fd8-8326-aaa6-155749393bc9"
+      stageUuid: "e0bb19fe-b413-8ae3-8f36-92da92ef2e2a"
 version: 2
 ---
 # self-one — the self returns to the One (under [[self]] · outward coil · 5·round)

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "employee",
-    "uuid": "f5b667ac-e91a-8331-818d-b4d114ff7a23",
+    "uuid": "37f4630b-62cb-86b2-ad41-e1c41269f600",
     "words": [
       "employee"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about employee — Someone working for this organization.",
-    "uuid": "d69db7e4-2eb1-8d71-a65c-71899056cf75",
+    "uuid": "d5317526-34ee-8fae-a8ea-b6838dca206f",
     "words": [
       "use",
       "when",

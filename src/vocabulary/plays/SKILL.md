@@ -2,11 +2,11 @@
 name: plays
 description: "Use when reasoning about plays as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/plays"
-coordinate: "vocabulary/plays · 1/base · 3b5bb24d"
-contentUuid: "089c1eb1-32b6-5ce9-bad6-4e2d7b28349c"
-diamondUuid: "94cb4846-8a0e-82df-97af-ef0d3379d192"
-uuid: "3b5bb24d-5ec6-8e4a-ab85-8f071d48be3a"
-horo: 1
+coordinate: "vocabulary/plays · 2/share · 92fa4e3a"
+contentUuid: "3bf364ed-7ad5-5929-bae6-c892f14632d8"
+diamondUuid: "58644bc8-2168-806a-9ffc-df81d9a1ca70"
+uuid: "92fa4e3a-e52c-8dc2-b837-d04f542983cb"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8f5fadfe-7c19-847d-90fc-e4a88bbf7aa5"
+  computationUuid: "86b67c2f-8107-8732-a62d-35ea87655399"
   stages:
     - stage: path
       stageUuid: "83ef8b54-cc24-8d10-ab3b-7e329bd224e2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b9aaf2ab-4607-8238-a1dd-dc32c998fa7c"
     - stage: horo
-      stageUuid: "446b3ea0-326b-8b0c-98bd-6905a7995700"
+      stageUuid: "d30bb7ee-0324-82b2-81bd-67b897548fb9"
     - stage: seal
       stageUuid: "1e8ba2bc-3e36-8372-a088-2a08dc2b3d6e"
     - stage: uuid
-      stageUuid: "06fd60cb-6fc2-8ec0-8329-4c0458f0926d"
+      stageUuid: "8ee56bb2-c743-816b-94f8-189ba4239636"
 version: 2
 ---
 # plays

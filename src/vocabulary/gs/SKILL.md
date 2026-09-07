@@ -2,11 +2,11 @@
 name: gs
 description: "Use when reasoning about gs as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gs"
-coordinate: "vocabulary/gs · 4/weave · 1ecf71c0"
-contentUuid: "fa24e4fe-084c-5cb7-8db2-66cc582de90e"
-diamondUuid: "d3aab303-bb0d-80d0-8f6a-8e601eec676b"
-uuid: "1ecf71c0-6d2c-8732-988e-54c1982c91e8"
-horo: 4
+coordinate: "vocabulary/gs · 7/descent · 2b121615"
+contentUuid: "cb10db95-f7b4-5249-946d-90ad9feb54cd"
+diamondUuid: "1ed35824-0941-8ce3-a4ff-d813b70140e2"
+uuid: "2b121615-9da8-89be-ab61-d025496e96a6"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "69b0c3f2-74ba-8ce2-ae2f-7f2f33122109"
+  computationUuid: "980cf061-7e46-8603-87de-6c4ed0b6f95f"
   stages:
     - stage: path
       stageUuid: "06ffa816-7c65-86e1-b87a-9630677e9a68"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "87ade3d0-7592-8266-9b70-f7f3bafbb003"
     - stage: horo
-      stageUuid: "eebdb3e5-45bc-85f8-a1a7-47a837bbafca"
+      stageUuid: "0a9ac770-3858-8339-b1c4-ee2636dfdc4e"
     - stage: seal
       stageUuid: "929862f5-5628-8bf5-a819-8447f593cc26"
     - stage: uuid
-      stageUuid: "05b457a6-a323-8dbc-b87a-26a20b0a233c"
+      stageUuid: "75ca2d93-57dd-8736-ba62-2b30da0a7a27"
 version: 2
 ---
 # gs

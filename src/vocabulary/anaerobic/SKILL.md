@@ -2,11 +2,11 @@
 name: anaerobic
 description: "Use when reasoning about anaerobic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/anaerobic"
-coordinate: "vocabulary/anaerobic · 1/base · 53534397"
-contentUuid: "cc11921d-d208-5451-ba2f-263481eae6ef"
-diamondUuid: "d59dbae3-e6da-8a39-b839-cde4a9797d12"
-uuid: "53534397-b1a2-8729-afb5-5958d2b6b973"
-horo: 1
+coordinate: "vocabulary/anaerobic · 5/round · 293a4fd5"
+contentUuid: "3d95460d-48ab-5986-981b-b68ff5f96f0e"
+diamondUuid: "76a1fb1d-0ada-8945-a83d-bcb25833031b"
+uuid: "293a4fd5-2bca-8305-9f41-aa7c24174f77"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "56e0501d-cb9e-8364-ac84-e073d6d3bd0c"
+  computationUuid: "4420e06e-705a-8ffe-86fb-a207b775efff"
   stages:
     - stage: path
       stageUuid: "fea340a5-046b-8f32-8dcd-d11e16410a3f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5ced36a9-0865-848a-90e2-1b8c7dc12d4c"
     - stage: horo
-      stageUuid: "5bda2796-ec22-8ff1-a079-aac0a7fe1869"
+      stageUuid: "7e1e3e65-5fe1-8af2-bff6-4f9372982756"
     - stage: seal
       stageUuid: "d4f7ad67-b6ce-8935-877f-8e1baf1afd85"
     - stage: uuid
-      stageUuid: "1a06c315-6944-8e9d-8812-48e925de0614"
+      stageUuid: "ad577967-1a27-8a88-9228-579393600f38"
 version: 2
 ---
 # anaerobic

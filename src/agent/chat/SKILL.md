@@ -2,18 +2,18 @@
 name: chat
 description: "Use when agents converse — an ordered thread of content-uuid messages between agent ids; each message is a communication, the thread tamper-evident via the quantum chat chain."
 atomPath: "agent/chat"
-coordinate: "agent/chat · 1/base · da5ba865"
-contentUuid: "6b5e15bf-b297-5039-a1eb-3ebf617d5f7e"
-diamondUuid: "14cffb3e-ce73-82bd-b619-0b468e46a0c9"
-uuid: "da5ba865-aefb-84d3-b888-61fd0610b9ff"
-horo: 1
+coordinate: "agent/chat · 4/weave · 8a55d348"
+contentUuid: "aa02da93-5ab9-5ee2-832a-364f2123c839"
+diamondUuid: "e4bd16c0-d560-8591-90e9-1c20d77dbf38"
+uuid: "8a55d348-a9e5-827e-9ae6-e15a64bd8846"
+horo: 4
 typography:
   partition: agent
   bondDegree: 161
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1a09c417-eb67-800f-9f2f-55a6cad57aca"
+  computationUuid: "797d61f9-9316-8380-b2b6-6dc06738f396"
   stages:
     - stage: path
       stageUuid: "98aef98a-97ad-869d-bca5-aaf4c28400e3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5fe11ab5-ca41-8ea2-84e8-558410fba0bd"
     - stage: horo
-      stageUuid: "5530d99b-1199-87f8-8f0a-04064ee21a39"
+      stageUuid: "05518d27-b914-83c2-a474-f2637a04904b"
     - stage: seal
       stageUuid: "73b6a997-6ed0-8070-82f3-fc3717fb1eed"
     - stage: uuid
-      stageUuid: "54488f39-659f-8a90-9f68-14d32df2c142"
+      stageUuid: "24ff739b-f482-81f5-a12a-f7a82aa5e1a6"
 version: 2
 ---
 # agent/chat — agents conversing

@@ -2,18 +2,18 @@
 name: contribution
 description: "Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts."
 atomPath: "vocabulary/contribution"
-coordinate: "vocabulary/contribution · 2/share · f74e3913"
-contentUuid: "e4f56b96-f63e-57b4-a0e8-0a676df15bda"
-diamondUuid: "188c3ede-e689-8ded-9f38-d96d755a4591"
-uuid: "f74e3913-eaf2-80e8-9f22-977db68b6347"
-horo: 2
+coordinate: "vocabulary/contribution · 7/descent · 46241939"
+contentUuid: "f51d3712-9043-58f1-9310-ad91e4cb18d3"
+diamondUuid: "bc461de5-c61b-8c0a-83a8-8416147fa252"
+uuid: "46241939-f435-8a5a-b99b-f1f1b7acb5e1"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 74
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1fc8b462-4176-84a6-941d-d2a1c8b5a747"
+  computationUuid: "14de4f08-66f3-8c85-896c-64283d6b2354"
   stages:
     - stage: path
       stageUuid: "d3ccb13a-b2cc-88cd-a23a-02555ca2160f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "180920a2-e755-85fb-87b6-47aed4da8c3b"
     - stage: horo
-      stageUuid: "e569bced-4fa1-8cae-b567-2927121c67c2"
+      stageUuid: "e85a7718-4ed9-8033-80fa-d6081af6d6f5"
     - stage: seal
       stageUuid: "cebf92c7-b4c0-808b-bf91-7db6c26d7f6f"
     - stage: uuid
-      stageUuid: "90902b07-00a8-8f0f-9c54-7524ed47636d"
+      stageUuid: "dd60085f-4835-88c4-93f1-6915f3b50bb8"
 version: 2
 ---
 # contribution — shared discoveries fill gaps by many

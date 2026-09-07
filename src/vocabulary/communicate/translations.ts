@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "communicate",
-    "uuid": "82fcf28b-e658-88df-8a38-0a60a0964f2a",
+    "uuid": "82a7d393-d830-838a-8771-4a1c63e64ebc",
     "words": [
       "communicate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about communicate — A schema.org component word, collided out of schema.org compounds — fused from CommunicateAction (sti · collapse · merge).",
-    "uuid": "ba174262-f35e-893e-8035-bead787c1eab",
+    "uuid": "0e98a8f8-5695-8b99-ac4e-660b1797e1c9",
     "words": [
       "use",
       "when",

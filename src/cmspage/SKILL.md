@@ -2,11 +2,11 @@
 name: cmspage
 description: "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection."
 atomPath: cmspage
-coordinate: "cmspage · 8/crest · f528cbb4"
-contentUuid: "79b37f15-6e6e-5dcf-9d1a-6ee8a742561d"
-diamondUuid: "f1680a51-552f-8780-8cc7-a84e2143096a"
-uuid: "f528cbb4-9a2a-8bf8-8892-27fa98c06ae9"
-horo: 8
+coordinate: "cmspage · 1/base · 65ba45a7"
+contentUuid: "2d64e902-393b-5d00-8d55-610442ce2b3d"
+diamondUuid: "c787c2e9-ac62-8bb5-b055-739de3acde8c"
+uuid: "65ba45a7-1c5f-8723-a371-517968e2d6ee"
+horo: 1
 typography:
   partition: cmspage
   bondDegree: 18
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2f55df68-0473-840d-8c81-83fc58eb0bb2"
+  computationUuid: "5b28fa69-7229-8582-ae5c-6b5b18fef17d"
   stages:
     - stage: path
       stageUuid: "92bc216a-c0cb-8198-8fd5-bad8486018cd"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "7de51d3e-208f-8086-b014-43a61b50fbd5"
     - stage: horo
-      stageUuid: "f91c8b85-bdeb-832b-be2e-932b39be3f01"
+      stageUuid: "1b5f5947-ff8a-8eb7-b787-283a17941f86"
     - stage: seal
       stageUuid: "513d1eda-4757-8047-8dc6-8cb82e2851f4"
     - stage: uuid
-      stageUuid: "109b86fe-0341-80b3-bd9e-24c0aa82d2cb"
+      stageUuid: "4f83473d-b327-8f67-86c8-ef6c96ec54a0"
 version: 2
 ---
 # pages

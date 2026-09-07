@@ -2,18 +2,18 @@
 name: perennial
 description: "Use when a crop lives and bears across many years — the multi-year woody crop (orchard, vineyard, cane): established once, ramping over years, bearing for decades, then renewed. Its productive plant is a depreciating fixed asset (IAS-16 bearer plant); only its growing produce is IAS-41. The antonym of the annual crop — renewal replaces rotation, yield ramps rather than resets."
 atomPath: "vocabulary/perennial"
-coordinate: "vocabulary/perennial · 8/crest · 536ce06b"
-contentUuid: "bf10d050-4f02-5396-8cc3-c09f5990de9d"
-diamondUuid: "cdda0962-dc1d-829b-b4a4-8f301b0e35a2"
-uuid: "536ce06b-02f8-846d-b8ff-a240d720d95d"
-horo: 8
+coordinate: "vocabulary/perennial · 1/base · d9a96eb3"
+contentUuid: "7daeb20a-0690-5532-bdf2-01df42e93591"
+diamondUuid: "23e8b2c2-68cb-886e-9560-d46cb9ebde98"
+uuid: "d9a96eb3-5756-87c6-85d9-87068a8e85b7"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 54
 standards: []
 bindings: []
 signatures:
-  computationUuid: "de2c4312-5783-841f-8c52-6791ed982092"
+  computationUuid: "99a256a9-b450-87bb-a5dc-78e1cf971de2"
   stages:
     - stage: path
       stageUuid: "2daff38d-966d-8414-9192-1e540ef80e95"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e72db1fd-aea5-8a2d-b78c-2b4be88308cd"
     - stage: horo
-      stageUuid: "bc58298f-6c58-8ef7-9dec-4685c4ded6e5"
+      stageUuid: "48dff304-303b-80ca-8a2e-100e5a97be5a"
     - stage: seal
       stageUuid: "d8f764a3-219b-81e3-8d0c-3348e0db8296"
     - stage: uuid
-      stageUuid: "db996cef-1dcf-81df-879f-84471e82475b"
+      stageUuid: "0fb8757c-9514-817e-aeac-d6a557815649"
 version: 2
 ---
 # perennial — a crop that lives and bears across many years

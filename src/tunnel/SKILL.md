@@ -2,18 +2,18 @@
 name: tunnel
 description: "Use when a structure or cover extends the growing season — the family from floating row cover → low tunnel → caterpillar tunnel → high tunnel/hoophouse → greenhouse, scaled by size, that buffers frost and adds weeks at each end of the season. Season extension as built capacity; the structure that widens the climate window land×season otherwise caps."
 atomPath: tunnel
-coordinate: "tunnel · 8/crest · bc35d4b0"
-contentUuid: "01a7e6a2-c838-5ee9-b375-5ab81fb566de"
-diamondUuid: "ee9c369f-e862-8f25-8a1c-9b0e5dd86aa3"
-uuid: "bc35d4b0-e937-84b6-a1bc-f7e703bdafec"
-horo: 8
+coordinate: "tunnel · 7/descent · f850623c"
+contentUuid: "810a614c-95a1-5b77-a476-446ff44169b5"
+diamondUuid: "7332d8ae-8ffe-879e-8819-bb4c96b31f67"
+uuid: "f850623c-3315-85e5-8f56-377c70fa8b89"
+horo: 7
 typography:
   partition: tunnel
   bondDegree: 39
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a9c4dc67-bd98-8cf6-af3d-a013dac4d29a"
+  computationUuid: "87558112-0f2c-82ea-a469-27b99db0454a"
   stages:
     - stage: path
       stageUuid: "d575e056-2168-83cd-81b5-a1bbffcec1a5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "620d7655-5fce-84a5-8ca4-59bfb5620570"
     - stage: horo
-      stageUuid: "7d488941-c2e9-80d9-9de6-4e3e2603db49"
+      stageUuid: "15f9bb40-e9f4-83be-ac7c-177861d0e746"
     - stage: seal
       stageUuid: "ea973962-bcc9-8aca-b1ee-799f20c6963d"
     - stage: uuid
-      stageUuid: "25d95f4e-e2f0-8b30-a3a7-a012f379dee2"
+      stageUuid: "d61aaca2-35d4-8e40-a2a8-e3aeefcab2c0"
 version: 2
 ---
 # tunnel — the structure that extends the season

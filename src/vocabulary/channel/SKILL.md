@@ -2,11 +2,11 @@
 name: channel
 description: "Use when reasoning about channel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/channel"
-coordinate: "vocabulary/channel · 5/round · 4b7e5e8d"
-contentUuid: "8134bbe4-98a7-511f-8ed7-588a18b933e4"
-diamondUuid: "8f1428ad-5bc7-8317-9971-5f70e4cb9127"
-uuid: "4b7e5e8d-f775-887f-9f23-ab14cd150764"
-horo: 5
+coordinate: "vocabulary/channel · 8/crest · db23faa4"
+contentUuid: "d76e5bf0-920b-5f5c-b36e-f39f85fc12ad"
+diamondUuid: "f9ea86af-8d14-8591-8cf4-3178a99b01bc"
+uuid: "db23faa4-3a0a-8ef9-913c-a053a6f6b549"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 54
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6a2dad9f-1005-8c6d-9928-059ac789fa25"
+  computationUuid: "c6966d42-d216-8a04-ad12-2f2cedc5c323"
   stages:
     - stage: path
       stageUuid: "0ba63c5e-dc40-8db4-a53a-2982172ec59e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "69710b7c-f8f1-8213-a7bb-d4967e7ad22f"
     - stage: horo
-      stageUuid: "adb3fe00-4547-8201-af21-229f42ce6487"
+      stageUuid: "3ac90647-f5c9-8eab-9921-2e463347646f"
     - stage: seal
       stageUuid: "c3f92609-f590-8be8-8751-4cf1cb283fc6"
     - stage: uuid
-      stageUuid: "15a360c9-00de-8eed-a442-c9aaa15aefbb"
+      stageUuid: "22592c05-952a-883d-8d59-d82b3a970416"
 version: 2
 ---
 # channel

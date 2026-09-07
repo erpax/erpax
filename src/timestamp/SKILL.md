@@ -2,11 +2,11 @@
 name: timestamp
 description: Use when reasoning about timestamp — The instant the event occured.
 atomPath: timestamp
-coordinate: "timestamp · 1/base · 4ec9454f"
-contentUuid: "ceffefe4-2d12-5d5b-be86-c8b32928faa3"
-diamondUuid: "1b760a20-ad74-80b2-9d42-7b38fa69846f"
-uuid: "4ec9454f-7b5f-803c-a7cf-ee5cc8c6b556"
-horo: 1
+coordinate: "timestamp · 5/round · 47f4bab5"
+contentUuid: "89e998f7-771f-5067-a0a0-8e6f9b058440"
+diamondUuid: "904d06d3-07ad-8224-9fb3-dcd1442ffb91"
+uuid: "47f4bab5-a97c-8644-b864-8d006f888f6b"
+horo: 5
 typography:
   partition: timestamp
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a6ca1b9e-1410-8c02-a090-2cee80556156"
+  computationUuid: "a33d7cc9-8f03-831a-b784-1d0d337f95b0"
   stages:
     - stage: path
       stageUuid: "266dd096-0058-8fde-b652-76181bc7eb15"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "de946d94-7594-8300-9378-c071d4040f58"
     - stage: horo
-      stageUuid: "2c577a07-15c2-86da-beb2-b2ef56a344d7"
+      stageUuid: "289b2e2c-c9fc-856d-8118-a6b7b3556685"
     - stage: seal
       stageUuid: "48774fb3-de11-8416-9c46-2f330e326010"
     - stage: uuid
-      stageUuid: "cfc6cbda-e263-8732-aee6-24d03153bd36"
+      stageUuid: "dbcfda1e-d4df-8bdf-bbaf-44fd6bc91f44"
 version: 2
 ---
 # timestamp

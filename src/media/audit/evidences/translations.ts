@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "evidences",
-    "uuid": "8cf0222b-8673-8289-9c72-7c5e44c036fb",
+    "uuid": "90b612c1-d87d-8af4-8c42-9f6b975ffb99",
     "words": [
       "evidences"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when attaching or retrieving documentary evidence for audit work — PDF documents, bank statements, GL printouts, reconciliations, signed approvals, workpapers — with chain-of-custody log, confidentiality classification, retention schedule, and links to controls, control tests, samples, and findings. The ISA-500/PCAOB-AS-1105 audit-evidence register.",
-    "uuid": "cb288b2a-6a10-8e13-b2da-6c41b680ce30",
+    "uuid": "bac8f08e-2ecf-887b-a5a6-4b1872476e27",
     "words": [
       "use",
       "when",

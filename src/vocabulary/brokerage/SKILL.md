@@ -2,11 +2,11 @@
 name: brokerage
 description: "Use when reasoning about brokerage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/brokerage"
-coordinate: "vocabulary/brokerage · 8/crest · 1ddbd996"
-contentUuid: "cc274f77-9c7e-53ee-a56a-17a485e76652"
-diamondUuid: "edfaafb1-bba8-844c-a55e-cf05664bd782"
-uuid: "1ddbd996-30c6-8a6b-87da-bf45d665547b"
-horo: 8
+coordinate: "vocabulary/brokerage · 7/descent · 1abeeb42"
+contentUuid: "4c56a118-cfda-527d-823c-692475040f0f"
+diamondUuid: "f05f0546-2e74-8e28-af2d-08bf4bd8b9e7"
+uuid: "1abeeb42-ed45-8be0-a48d-997188f5afb5"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f225bb42-9193-8c45-bdb4-b176d7542f98"
+  computationUuid: "36613011-7652-8dc7-b2f7-66724add1010"
   stages:
     - stage: path
       stageUuid: "d98709a3-2f44-8429-ac5b-06a47e18e7d2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b774bd5c-2b81-8610-8010-df6910ae97fb"
     - stage: horo
-      stageUuid: "c0a4873b-f579-81f3-bd90-df37aec32092"
+      stageUuid: "53b16ebe-3820-8775-b7a0-b16d22a6433c"
     - stage: seal
       stageUuid: "b914591a-98db-807d-8aef-fad0c7f0b852"
     - stage: uuid
-      stageUuid: "197c1be0-a1e2-85cf-983c-4ed70e54ed7c"
+      stageUuid: "f68291c7-bc73-8adf-be1e-928751db19e4"
 version: 2
 ---
 # brokerage

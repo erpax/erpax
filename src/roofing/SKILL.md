@@ -2,10 +2,10 @@
 name: roofing
 description: "Use when reasoning about roofing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: roofing
-coordinate: "roofing · 5/round · 8ebade27"
-contentUuid: "b9aeec54-3092-5131-ad00-d3be8131a526"
-diamondUuid: "bf630e75-5014-8670-a074-c51e365dc3eb"
-uuid: "8ebade27-925f-873b-88bc-74ae3f4bddc0"
+coordinate: "roofing · 5/round · a739fc5b"
+contentUuid: "37007c37-28f0-5e5e-ad23-054f8d73eb22"
+diamondUuid: "35f6608a-41e6-8385-8bd6-f72fd116f841"
+uuid: "a739fc5b-0dba-8b85-b68c-a83033bf3dee"
 horo: 5
 typography:
   partition: roofing
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ba62a0f6-fcf8-8826-aa67-84ac87abd42d"
+  computationUuid: "ea78514d-d792-8b12-8440-125163d468b4"
   stages:
     - stage: path
       stageUuid: "3fccd85c-ff82-8e38-9117-001055df586e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f162aa2b-4939-87c6-94d3-263d073b4cf3"
     - stage: horo
-      stageUuid: "28366f7e-b649-885f-88be-371995192372"
+      stageUuid: "b5fd826e-2a24-8a25-8f03-f08caa93442b"
     - stage: seal
       stageUuid: "ba45f959-c99d-8ea4-b523-d6c168a116ee"
     - stage: uuid
-      stageUuid: "ca4477c7-7d7c-8a2e-909c-7d45e5266aea"
+      stageUuid: "5e2e168c-4344-8097-9565-2311d8118aa2"
 version: 2
 ---
 # roofing

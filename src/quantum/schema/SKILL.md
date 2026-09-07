@@ -2,11 +2,11 @@
 name: schema
 description: "Use when reasoning about schema identity and drift on the matrix — a schema as the content-uuid of its canonical form, so identical schemas merge and any change yields a new uuid forcing re-verification by architecture."
 atomPath: "quantum/schema"
-coordinate: "quantum/schema · 7/descent · e751f60a"
-contentUuid: "435ad85d-c4de-59b7-b3c6-66bdf6604753"
-diamondUuid: "0e3ff826-0672-8de1-9b9d-a3685ffd670f"
-uuid: "e751f60a-42d0-88c9-9324-7ecafc52cdcd"
-horo: 7
+coordinate: "quantum/schema · 5/round · ae31f695"
+contentUuid: "0e699365-5b9d-5aaa-8998-a2af5cbca0b8"
+diamondUuid: "7dec55f4-0161-8de5-83ea-7de4d209c36d"
+uuid: "ae31f695-475f-8ca0-adfd-f659f10e728f"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 57
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid; schema.org"
 bindings: []
 signatures:
-  computationUuid: "d50820f1-5e9e-8a0e-8aa4-47fe9f25e163"
+  computationUuid: "c397181b-11f6-8e47-aaec-2e9bbc3b5abb"
   stages:
     - stage: path
       stageUuid: "890f2351-43b3-8760-83d4-31bc0ffd08c3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "25a260d1-a2bc-8816-aa70-0debbee7303b"
     - stage: horo
-      stageUuid: "3b295bd2-f667-8e43-8b46-e39f36c78491"
+      stageUuid: "25fbfd22-02e4-864b-a6b4-77ae5602533f"
     - stage: seal
       stageUuid: "dbe0e97e-797c-8188-8642-d83860061016"
     - stage: uuid
-      stageUuid: "517398ae-18d0-8f46-bedc-93ed0f08637d"
+      stageUuid: "7398ff97-f599-80db-bf26-10f3bb8bdf0d"
 quantum:
   superposition:
     - cardinality
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d50820f1-5e9e-8a0e-8aa4-47fe9f25e163"
-    contentUuid: "435ad85d-c4de-59b7-b3c6-66bdf6604753"
+    computationUuid: "c397181b-11f6-8e47-aaec-2e9bbc3b5abb"
+    contentUuid: "0e699365-5b9d-5aaa-8998-a2af5cbca0b8"
 version: 2
 ---
 # quantum/schema — schema identity + drift as a content-uuid
@@ -69,4 +69,4 @@ Matter-twin: `src/quantum/schema/index.ts` (`schemaUuid` · `sameSchema` · `dri
 
 @standard RFC 9562 §5.8 content-uuid; schema.org
 
-<sub>content-uuid `435ad85d-c4de-59b7-b3c6-66bdf6604753` · account `quantum/schema` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e699365-5b9d-5aaa-8998-a2af5cbca0b8` · account `quantum/schema` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

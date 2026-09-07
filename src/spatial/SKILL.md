@@ -2,11 +2,11 @@
 name: spatial
 description: "Use when reasoning about spatial — The \"spatial\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate."
 atomPath: spatial
-coordinate: "spatial · 2/share · af9834c7"
-contentUuid: "32a70db3-b35f-5d5d-a557-d5a86191c36f"
-diamondUuid: "f057c360-c280-82d6-aed0-bbc9a1f18e76"
-uuid: "af9834c7-1e4d-8679-9ee4-c935dc9fa4aa"
-horo: 2
+coordinate: "spatial · 5/round · 0262cba1"
+contentUuid: "4b08bde5-4ad5-59cb-8188-c17f358b8543"
+diamondUuid: "68daf561-3b51-883a-ab06-0ae905b40fc5"
+uuid: "0262cba1-29c2-8f84-a603-9c681b1c9d9a"
+horo: 5
 typography:
   partition: spatial
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "84cf1d61-3863-8987-853f-9171bf41f7cf"
+  computationUuid: "b86923fc-f43a-8202-b853-4bc7f99a3561"
   stages:
     - stage: path
       stageUuid: "fab04c15-505b-8b79-9f07-89fc3483bec8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f8a7c123-33f9-88b2-9f32-c92648dac3f1"
     - stage: horo
-      stageUuid: "7f527af3-9793-836f-ba91-d9230f6ca009"
+      stageUuid: "c92c7bb7-1264-873c-82f3-5e5f53a9d209"
     - stage: seal
       stageUuid: "a9ed8d82-0cea-8078-8958-d8eefd17d4e3"
     - stage: uuid
-      stageUuid: "e55d9d6f-62a4-83e1-aeb0-ce3c1ddd3e73"
+      stageUuid: "2657e60d-75ed-8381-bc4a-59a588ee0329"
 version: 2
 ---
 # spatial

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "defence",
-    "uuid": "d4addfe5-0e39-814c-8c8f-2b05ade15b59",
+    "uuid": "9c2b64c6-0dfb-8dd8-8876-828da2393af0",
     "words": [
       "defence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing defence/military operations — personnel rosters, equipment inventory, deployment scheduling, force readiness, or defence procurement in government military branches (COFOG 02).",
-    "uuid": "58ce95be-eefa-8119-be28-f8faddac5266",
+    "uuid": "508235c8-aaee-8a32-941f-537f77aa4679",
     "words": [
       "use",
       "when",

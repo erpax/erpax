@@ -2,11 +2,11 @@
 name: range
 description: "Use when reasoning about range — renders which slice of a result set is being shown. The component is because it is JSX; this barrel re-exports it so importers name the atom rather than the spelling of its file."
 atomPath: "page/range"
-coordinate: "page/range · 5/round · ad549ff8"
-contentUuid: "ceaad9d7-4c73-5189-880a-b4f304f7a782"
-diamondUuid: "ab731a3c-93f4-851e-bfd8-88bb9fa4c5b2"
-uuid: "ad549ff8-f9f6-896b-85a9-db6adc7c5257"
-horo: 5
+coordinate: "page/range · 4/weave · 9876b908"
+contentUuid: "aef6b982-26dd-5d5d-a7b9-d1daa0159743"
+diamondUuid: "8b4d18a7-e21b-81b4-b7d7-3bc62f178bef"
+uuid: "9876b908-c3be-8c45-bf17-2dc5400e25d8"
+horo: 4
 typography:
   partition: page
   bondDegree: 37
@@ -17,7 +17,7 @@ standards:
   - "WCAG-2.1 §1.3.1 info-and-relationships"
 bindings: []
 signatures:
-  computationUuid: "6cc16154-c97c-8748-9598-2fe7eb9aaf55"
+  computationUuid: "5a68bb20-f1f1-82e2-8785-6535ed127077"
   stages:
     - stage: path
       stageUuid: "faa0a054-6615-8d52-83b5-e900280b2107"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "08dd9b8c-fc01-8034-bd52-7a8001b50c94"
     - stage: horo
-      stageUuid: "35a3d024-4db7-831a-a3d1-85961843ae20"
+      stageUuid: "4a4d7e4b-b986-8627-b7e8-512c35db8a01"
     - stage: seal
       stageUuid: "1eac9f7d-0366-882f-9b1d-4f6c084d19c8"
     - stage: uuid
-      stageUuid: "b1aa034c-7376-8935-bff2-ab8107f23d92"
+      stageUuid: "c1eca439-6de8-8002-8e6c-9fa2032c2972"
 version: 2
 ---
 # page/range — the paginator, exported from a barrel a server module can import

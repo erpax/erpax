@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "data",
-    "uuid": "b8a69115-5833-87b6-bafe-40e4052d623c",
+    "uuid": "27296b7a-ddbf-899b-b79a-73ef16db98a6",
     "words": [
       "data"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when naming information held about an identifiable person or entity — the parent term for the data-side vocabulary, including its protection.",
-    "uuid": "3af34b0d-909a-8c48-8686-ed2ce3fba126",
+    "uuid": "8c8fe741-81d0-8e34-8cbb-51ce59fac485",
     "words": [
       "use",
       "when",

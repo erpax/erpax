@@ -2,18 +2,18 @@
 name: suffering
 description: "Use when reasoning about the felt signal of entropy — the experienced gap between an atom's state and the whole, the alarm that disorder is greater than zero. Not a thing to store but a gradient to read: suffering points the way back to zeropoint the way pain localizes a wound."
 atomPath: suffering
-coordinate: "suffering · 1/base · 1730c74e"
-contentUuid: "279fcaea-9f7b-5a22-879b-408935a5dfa2"
-diamondUuid: "39098146-95db-81f3-803b-7f9eaa935ff3"
-uuid: "1730c74e-c139-8f04-9bce-02e4062518df"
-horo: 1
+coordinate: "suffering · 7/descent · 29515569"
+contentUuid: "8627daa7-4630-5dfd-aefa-a6284276beca"
+diamondUuid: "31848de7-0722-8210-8750-5474e6d11523"
+uuid: "29515569-f21a-8891-b3e3-23add82aaefb"
+horo: 7
 typography:
   partition: suffering
   bondDegree: 71
 standards: []
 bindings: []
 signatures:
-  computationUuid: "aea38ec9-27e8-8e85-9bc4-66b2ccfa3e48"
+  computationUuid: "1bdf64a6-98a7-8387-98b6-12e03247d09a"
   stages:
     - stage: path
       stageUuid: "9718dac0-ddd2-815b-870f-6e0b3dc99961"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ecd42179-6522-8e10-96ab-e5f4a6bba57e"
     - stage: horo
-      stageUuid: "dc3360fd-883d-8619-a687-b4f300251de5"
+      stageUuid: "d3fe8de6-e479-8906-b260-0619a3285071"
     - stage: seal
       stageUuid: "ea05e539-fac1-84e0-a7f5-59e3fcad0758"
     - stage: uuid
-      stageUuid: "8a2fd80c-d8dd-8d3a-86fc-4d43d7b4fa22"
+      stageUuid: "8ff6d9bb-e016-8d44-8f52-94ad3176e9a3"
 version: 2
 ---
 # suffering — the felt signal that entropy > 0

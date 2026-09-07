@@ -2,11 +2,11 @@
 name: table
 description: Use when reasoning about table — A table on a Web page.
 atomPath: table
-coordinate: "table · 1/base · 3652778d"
-contentUuid: "4cb23e5d-c311-5bf5-9f81-00284a98843f"
-diamondUuid: "6b606e49-176a-8161-bcfd-cdb7c05402dd"
-uuid: "3652778d-3007-8e6f-a366-7abaac71237d"
-horo: 1
+coordinate: "table · 2/share · f17ba3e5"
+contentUuid: "3a9bd973-91d7-5999-b5ee-1d3a7dff0a4f"
+diamondUuid: "d099dfbf-ee13-837b-b630-f069bcfbe953"
+uuid: "f17ba3e5-8224-8ed5-afd1-bc69bbf8ad19"
+horo: 2
 typography:
   partition: table
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3d239e22-8c10-88bd-8ad0-c6734f5b5f6b"
+  computationUuid: "639fd324-a273-8d26-b0d9-502a7e7dc982"
   stages:
     - stage: path
       stageUuid: "19f9473c-6995-8ede-b7c8-395037b009a2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63fe80d6-f8f8-8f51-95d3-287bee17f140"
     - stage: horo
-      stageUuid: "2a598157-c076-8444-87c2-464c4be771c8"
+      stageUuid: "4efb9ca5-b0e5-82cb-8eda-69d4e305a877"
     - stage: seal
       stageUuid: "13135ef3-30a2-8297-8535-c647bd14203e"
     - stage: uuid
-      stageUuid: "4e9a2137-0730-8e47-adc0-9cd23fb41773"
+      stageUuid: "ad30ee85-f7da-86d2-a14d-748e89ef08d3"
 version: 2
 ---
 # table

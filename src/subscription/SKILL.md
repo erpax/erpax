@@ -2,11 +2,11 @@
 name: subscription
 description: "Use when reasoning about subscription as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: subscription
-coordinate: "subscription · 8/crest · ba787e1a"
-contentUuid: "7538eb14-49e4-574a-a52f-308c3fcbb077"
-diamondUuid: "4d5b3663-5877-84f7-8bef-56d54081aba9"
-uuid: "ba787e1a-0735-8409-ac67-d7eca9a5706e"
-horo: 8
+coordinate: "subscription · 5/round · 291773d5"
+contentUuid: "b06a9ca6-44a8-5c9e-b062-32bbc43ffd16"
+diamondUuid: "0879883d-7bbf-8da4-90e7-5bcc5df56ab1"
+uuid: "291773d5-b357-8192-bb45-e7b8017d9c75"
+horo: 5
 typography:
   partition: subscription
   bondDegree: 19
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f16786e1-07e5-8a8c-827f-21c7741c3b2c"
+  computationUuid: "a8f119b8-9129-8e9a-a158-2cf418ef36b7"
   stages:
     - stage: path
       stageUuid: "35df4d32-a6b7-844d-93f4-513b9b4ef87b"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "947156eb-b61d-83f1-ac9b-f89f19333944"
     - stage: horo
-      stageUuid: "80c6cea7-7233-89c9-abbc-6322c452668e"
+      stageUuid: "34822a5e-e66a-884c-b16c-8f09a67809e6"
     - stage: seal
       stageUuid: "8747c963-7f5f-82c6-98df-d45edcb7c2a7"
     - stage: uuid
-      stageUuid: "097afa01-2fe1-8ea6-919a-ee18ec5a35ee"
+      stageUuid: "0edeb531-b48d-87e8-935f-d6d5c0e14d25"
 version: 2
 ---
 # subscription

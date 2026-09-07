@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "violation",
-    "uuid": "8c23ea79-fdc7-8bd5-a3d5-70c239d82217",
+    "uuid": "37675379-1e39-85b3-8dbc-95be382914b3",
     "words": [
       "violation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking what ONE violation is — the singular model beside the plural store: the severity order, whether a finding clears a floor, and the identity that makes the same finding twice one row.",
-    "uuid": "6635e3f1-eb50-87ad-a400-3f7750ef8bee",
+    "uuid": "2e176494-c4c2-8765-a244-04c863f4a638",
     "words": [
       "use",
       "when",

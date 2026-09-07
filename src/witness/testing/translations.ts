@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "testing",
-    "uuid": "69d5f92b-6f49-8cc1-b65e-093357d022f7",
+    "uuid": "bef0338b-6b69-800e-b128-827ce77268a8",
     "words": [
       "testing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the bounded-witness helper from the witness side — the double-wire reciprocal of testing/witness.",
-    "uuid": "d8dc3602-970b-88f7-afe5-91c8dadf07d4",
+    "uuid": "60174926-cb0b-81c1-8bf0-e42224578eae",
     "words": [
       "use",
       "when",

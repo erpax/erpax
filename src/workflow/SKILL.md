@@ -2,11 +2,11 @@
 name: workflow
 description: "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service."
 atomPath: workflow
-coordinate: "workflow · 1/base · 6ba76874"
-contentUuid: "3c40a477-cb8c-5e13-8174-cef7e2576a2b"
-diamondUuid: "cd38b19d-8ea8-88f0-a361-388bb1dfbd38"
-uuid: "6ba76874-1ad8-895b-ae6b-0640f90027b9"
-horo: 1
+coordinate: "workflow · 5/round · 7be2dc04"
+contentUuid: "c22019bc-233c-5be4-9ced-ca2d0486f861"
+diamondUuid: "4b4a8e22-0f7e-8682-8e3d-e0178f6d5760"
+uuid: "7be2dc04-4b04-8dbc-8bc2-242fdd12163f"
+horo: 5
 typography:
   partition: workflow
   bondDegree: 107
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b04d0323-8217-8a85-ab49-895e8aa630c1"
+  computationUuid: "3c4bc1c5-a2f7-8ad0-af10-64e17e344f1d"
   stages:
     - stage: path
       stageUuid: "94f4098e-fbfa-80dd-a103-8e647ab5c24d"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "2b2be7bc-c8ec-892f-af0a-dc286bafd288"
     - stage: horo
-      stageUuid: "347a25f5-adb5-8a64-a39d-cd331cac60aa"
+      stageUuid: "55a27e93-9f24-8413-b598-8ca6efcb096c"
     - stage: seal
       stageUuid: "46c9e25b-b9a6-8512-a7e7-0c913d1cd3a6"
     - stage: uuid
-      stageUuid: "c4286a91-08cb-8cf0-846c-779fbcfdb6e1"
+      stageUuid: "04270550-64c2-87b0-9cdb-bb40cfe49ffa"
 version: 2
 ---
 # process — the running approval chain, BPMN execution made live

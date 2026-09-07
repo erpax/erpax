@@ -2,10 +2,10 @@
 name: release
 description: Use when reasoning about release — The album this is a release of.
 atomPath: "vocabulary/release"
-coordinate: "vocabulary/release · 5/round · 0069264c"
-contentUuid: "3c15ce83-181c-5040-8363-7da67c72f4b7"
-diamondUuid: "13faadaf-4301-800f-93ec-66e8b7425158"
-uuid: "0069264c-7ab6-889e-b3b3-e9e889a0f474"
+coordinate: "vocabulary/release · 5/round · ba54b33e"
+contentUuid: "0d5c64f4-08a8-517e-8378-5ed7e64e4678"
+diamondUuid: "6a07b1e3-80bd-8028-b757-f8d3e29e8a4c"
+uuid: "ba54b33e-f8cd-84d1-b69e-2e146ddab455"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "604965e3-e8cc-886a-a43e-2d8ccf626270"
+  computationUuid: "740686c2-6b90-814d-a163-fc1e1b8ef692"
   stages:
     - stage: path
       stageUuid: "2033dadb-1a54-8230-b1c5-e6da7aa95c2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "242fb924-ae66-8814-b9f3-17e232e8638b"
     - stage: horo
-      stageUuid: "8d3855d6-8668-843f-aa90-22767b11657a"
+      stageUuid: "c1aaeab0-9bd1-898e-829d-835041a387b3"
     - stage: seal
       stageUuid: "5fe8bb81-731c-8905-8c1d-52f6541b24c8"
     - stage: uuid
-      stageUuid: "c9684ee9-c0c9-8f69-a385-f990a05e543b"
+      stageUuid: "063923a1-00a6-8120-95d5-c7dd4c9d63c4"
 version: 2
 ---
 # release

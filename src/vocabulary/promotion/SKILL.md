@@ -2,10 +2,10 @@
 name: promotion
 description: "Use when reasoning about promotion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/promotion"
-coordinate: "vocabulary/promotion · 5/round · fe3ed1e6"
-contentUuid: "a397d368-7db8-583a-8841-15cab3a2e36d"
-diamondUuid: "2cf5b1e9-24c9-85d7-8364-490d24996db2"
-uuid: "fe3ed1e6-1dde-82aa-b439-24fbca8ce459"
+coordinate: "vocabulary/promotion · 5/round · 6d99f683"
+contentUuid: "2d280c15-37d6-583d-94b3-6ae33f8fbbbc"
+diamondUuid: "93f6a6f7-ccca-8fcc-9fe7-bf886b5aab07"
+uuid: "6d99f683-3f75-8054-bf0f-66a1375315b6"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9125c21e-4ccf-80a0-92db-da43e5c3cc56"
+  computationUuid: "fb0c3efe-9211-87d7-b442-5faf82d0daa3"
   stages:
     - stage: path
       stageUuid: "94014ef4-247d-8a34-bab5-7a1d9cab474e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "67678df0-956b-8cfe-b6f0-1444d212532a"
     - stage: horo
-      stageUuid: "7dc88fe8-373b-8e8b-95a3-ffac77bd3773"
+      stageUuid: "baa2a347-38b1-8315-b532-46e2308ce4ac"
     - stage: seal
       stageUuid: "22cc93a6-0455-843d-af0f-10bb01508544"
     - stage: uuid
-      stageUuid: "3fc76452-86cc-88d5-94fe-b7bc62e1c5c0"
+      stageUuid: "4b033afd-3f29-8120-bb5d-cb7173d29f77"
 version: 2
 ---
 # promotion

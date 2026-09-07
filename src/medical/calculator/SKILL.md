@@ -2,11 +2,11 @@
 name: calculator
 description: "Use when reasoning about calculator as a medical facet of medical — vocabulary pivot to @/calculator; nested not duplicated."
 atomPath: "medical/calculator"
-coordinate: "medical/calculator · 1/base · 52d3cd9b"
-contentUuid: "046f9397-554e-5706-8ff8-2e534e01ea02"
-diamondUuid: "ca554dd1-6d98-80d0-9de4-e8658c4df00e"
-uuid: "52d3cd9b-b751-8622-91df-a39560c6cf68"
-horo: 1
+coordinate: "medical/calculator · 5/round · e658e766"
+contentUuid: "238b07d3-de09-57ee-ac7d-9e4c51d272b8"
+diamondUuid: "3106e24b-353b-8d92-8d2a-ad0717dca7cf"
+uuid: "e658e766-27f0-80f3-8843-eefb9bc9b67e"
+horo: 5
 typography:
   partition: medical
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c412d756-64bf-85a8-89d0-1827b6d55847"
+  computationUuid: "c2b9cdbb-e978-8ae5-95e3-d2a7189a5458"
   stages:
     - stage: path
       stageUuid: "b8f8da81-463e-890e-954a-5f33aa1b284e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "16518658-0fec-83a9-ac69-e4bb39b6bdbe"
     - stage: horo
-      stageUuid: "f8a3f59a-7f1a-8cc9-a3d8-d76866fd63b1"
+      stageUuid: "a01cdfd7-0dec-8f1e-9438-32a36c128306"
     - stage: seal
       stageUuid: "ee6b1e49-8eca-8dd8-bf0a-01935db9ba40"
     - stage: uuid
-      stageUuid: "0e153d4c-aaab-8356-873d-5090c33dc9d7"
+      stageUuid: "4184cdb0-23d4-8f11-8933-45ad56e3ee0b"
 version: 2
 ---
 # medical/calculator — medical facet

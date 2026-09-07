@@ -2,11 +2,11 @@
 name: unsaturated
 description: "Use when reasoning about unsaturated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: unsaturated
-coordinate: "unsaturated · 1/base · 2734c357"
-contentUuid: "a2fa74d4-44f9-533f-af45-93618d809cff"
-diamondUuid: "cd2cbd06-da5a-8e97-bd2a-2088afb3bc7c"
-uuid: "2734c357-dd90-831a-a80b-0569b3a64396"
-horo: 1
+coordinate: "unsaturated · 8/crest · 6c6bd860"
+contentUuid: "8a5ef4b5-a14e-5cda-b321-72c59a6e56f8"
+diamondUuid: "99ce2ef2-c64c-8522-a3ec-60f2a79844a4"
+uuid: "6c6bd860-b01f-89b3-bd06-909a8d3dc9c7"
+horo: 8
 typography:
   partition: unsaturated
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "44104bcf-ddfd-857d-9575-3efdb85fdaad"
+  computationUuid: "094a55bd-ff7f-865e-b56f-2ef9f2d16e81"
   stages:
     - stage: path
       stageUuid: "813c9692-93e0-8039-af64-529f395ebe47"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b2192172-dc5e-8593-97ec-8248af7c9de9"
     - stage: horo
-      stageUuid: "a217e88a-35ae-86da-afd3-a155f9513c7b"
+      stageUuid: "897137fe-66ab-87da-b70e-45dee7759255"
     - stage: seal
       stageUuid: "ace6f32d-c68a-8b66-8b9f-b552505aeab0"
     - stage: uuid
-      stageUuid: "2c9fcd7f-7101-8dcb-ac35-1778daa34bad"
+      stageUuid: "5dfc61ad-f898-8efa-858d-84036ea781b6"
 version: 2
 ---
 # unsaturated

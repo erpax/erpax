@@ -2,11 +2,11 @@
 name: county
 description: "Use when reasoning about county as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/county"
-coordinate: "vocabulary/county · 4/weave · 3b54a729"
-contentUuid: "28007852-0c77-57cb-9561-4a1e8f0b6bda"
-diamondUuid: "5e633342-dc63-82a0-8d4c-7d1f7a384e71"
-uuid: "3b54a729-5ef9-8425-a265-84817856f3f8"
-horo: 4
+coordinate: "vocabulary/county · 2/share · 2a90dec7"
+contentUuid: "1a19f5e2-20ee-56b6-8c71-fe35b3832e04"
+diamondUuid: "d10285b9-ad3d-838c-87f8-62d7d2787dfe"
+uuid: "2a90dec7-2df8-8ae8-97a5-3c7baae0e4d0"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "041d6a08-72b2-8286-92eb-e22d4e3b59b9"
+  computationUuid: "53174d41-470d-80cc-a609-9052060866fa"
   stages:
     - stage: path
       stageUuid: "5ff8ff08-c825-8acf-861a-a07d88d52b74"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a23c30fd-0586-855a-949b-61e1348a96a7"
     - stage: horo
-      stageUuid: "6cb13065-c32d-81ad-9c1c-7054fdd10b70"
+      stageUuid: "1cf93a8c-a075-860c-a68e-c7b9b5108982"
     - stage: seal
       stageUuid: "8bfed828-167b-80f5-b28f-0200c088e588"
     - stage: uuid
-      stageUuid: "eb26bc69-bde3-8313-a26f-e5b333a0657e"
+      stageUuid: "4c2d36cb-edc0-80b1-bb53-943bc6a8d613"
 version: 2
 ---
 # county

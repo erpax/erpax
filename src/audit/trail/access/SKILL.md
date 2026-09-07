@@ -2,10 +2,10 @@
 name: access
 description: "Use when gating reads, creates and mutations of the audit trail — authenticated users see only their own tenant's events, super-admins see all, and update/delete is denied outright so the trail stays append-only tamper-evident."
 atomPath: "audit/trail/access"
-coordinate: "audit/trail/access · 3/3 · 1bb06407"
-contentUuid: "c572f7f5-0a1b-5acf-91df-e1f5771d4ba3"
-diamondUuid: "8c8f0030-7da6-83c1-a0dd-79d4c1ec158c"
-uuid: "1bb06407-fe3f-83fd-8f6d-1014eb70987a"
+coordinate: "audit/trail/access · 3/3 · 39115609"
+contentUuid: "7012b660-0ba2-5f71-afbf-8296e16f6ae5"
+diamondUuid: "d5ebcff5-f56d-832b-9b2d-4e9317ccfe3f"
+uuid: "39115609-527f-86b5-b31c-2d6779e77591"
 horo: 3
 typography:
   partition: audit
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1f3a6983-ae52-834b-b420-4d189af0f44a"
+  computationUuid: "f7687af5-5a01-83c5-9255-1f8066bc9783"
   stages:
     - stage: path
       stageUuid: "ea69bffd-2f68-8074-8e10-720ffa07d9e6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4e61fa24-30fe-893d-bc11-85bbd43aa8bf"
     - stage: horo
-      stageUuid: "93abbfd1-2ff1-89eb-b37e-25569bf5d933"
+      stageUuid: "738472d0-7ae0-8477-ac41-306736b6f640"
     - stage: seal
       stageUuid: "7f1ce938-1033-8f8a-ab39-c60d9f9643de"
     - stage: uuid
-      stageUuid: "0640d687-9d78-8c85-8ddb-295267e96199"
+      stageUuid: "fc5353c1-3ffd-8130-b87c-4ca43cc55ae0"
 version: 2
 ---
 # audit/trail/access — who may touch the [[audit]] trail

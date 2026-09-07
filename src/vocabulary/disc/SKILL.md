@@ -2,11 +2,11 @@
 name: disc
 description: "Use when reasoning about disc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/disc"
-coordinate: "vocabulary/disc · 5/round · af6182ca"
-contentUuid: "b68cbac0-ff3b-5d53-b145-a778b1eddb30"
-diamondUuid: "ec705c9d-b754-897e-90b6-728f858d2e34"
-uuid: "af6182ca-beb7-8fee-92b0-61b33cc94979"
-horo: 5
+coordinate: "vocabulary/disc · 7/descent · c0167689"
+contentUuid: "d20eca3a-68cf-5c6e-9cc1-1cb89f38bf14"
+diamondUuid: "0ab8a33f-3211-854a-ae61-077578255639"
+uuid: "c0167689-ed48-8098-88f2-d48a67e590d6"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7ab6d499-f418-8f52-a04b-bc5dbbb10af6"
+  computationUuid: "7239ff66-9d3c-81b9-b582-d17f93390ca0"
   stages:
     - stage: path
       stageUuid: "63880641-a381-86ec-a375-2714ffc26d6e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e4284ed2-34b7-8697-abad-a7c025052d02"
     - stage: horo
-      stageUuid: "d213b759-6633-8814-aace-6547aae4cc0e"
+      stageUuid: "88ce95d1-1c22-8c52-93e2-26abbff87c3d"
     - stage: seal
       stageUuid: "229134a7-16dc-81d9-8c48-b0404ba82c0e"
     - stage: uuid
-      stageUuid: "31a3118b-456c-8a21-9de6-7cc191563868"
+      stageUuid: "0d536bac-5809-8794-92be-eff6abed62c9"
 version: 2
 ---
 # disc

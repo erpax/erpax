@@ -2,11 +2,11 @@
 name: efficiency
 description: "Use when reasoning about efficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/efficiency"
-coordinate: "vocabulary/efficiency · 2/share · fdae7db7"
-contentUuid: "c804d820-fc8c-510c-a73f-c4c5f8a0ba34"
-diamondUuid: "3135610c-4059-8904-8a59-8de0f15a9821"
-uuid: "fdae7db7-fbf9-8319-9b68-2b93d9aad43a"
-horo: 2
+coordinate: "vocabulary/efficiency · 8/crest · 360ffb63"
+contentUuid: "250ba52c-1d0b-5949-99d5-30cbea3fd724"
+diamondUuid: "08a8acbb-b670-811b-85ec-3609d4181682"
+uuid: "360ffb63-8893-8a33-89d8-679ebca2f3d1"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 66
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f5ae8bfb-e7e3-8af3-a15d-bcef5e3a079d"
+  computationUuid: "9a722756-1fbc-8243-b028-25b571354547"
   stages:
     - stage: path
       stageUuid: "bada7275-8061-8f4e-a6d7-228eee47f24e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "822392f5-733d-8b6b-a2be-0db940f1dfc9"
     - stage: horo
-      stageUuid: "37b57016-872d-8b74-a593-71e6d160ff03"
+      stageUuid: "9510bf55-4aeb-8d52-b6c3-6e252e035eab"
     - stage: seal
       stageUuid: "5f0fc1db-7742-843e-a4a8-18c32b232f8b"
     - stage: uuid
-      stageUuid: "a32a0532-76ea-8d81-82c8-1b5a63d9acb4"
+      stageUuid: "e01dde4f-ed6b-8d47-94bf-c0c9190c29e5"
 version: 2
 ---
 # efficiency

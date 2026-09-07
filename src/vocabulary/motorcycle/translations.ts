@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "motorcycle",
-    "uuid": "2bb855ee-5edb-84dd-a5b0-0c0a88eeab41",
+    "uuid": "6b37382d-5e00-8d1f-9eba-0dd0c785fec0",
     "words": [
       "motorcycle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about motorcycle — A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.",
-    "uuid": "73d4d164-4adf-809c-a18c-76b1c23f2a56",
+    "uuid": "668e57b1-52a0-8440-b242-6375b1ac6824",
     "words": [
       "use",
       "when",

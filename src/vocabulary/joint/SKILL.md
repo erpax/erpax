@@ -2,11 +2,11 @@
 name: joint
 description: Use when reasoning about joint — The anatomical location at which two or more bones make contact.
 atomPath: "vocabulary/joint"
-coordinate: "vocabulary/joint · 5/round · 8c1fae68"
-contentUuid: "d2b9aa39-eff4-5647-bb69-613396b524a6"
-diamondUuid: "4063799b-08be-8ef4-90bf-b8868235a4fc"
-uuid: "8c1fae68-091b-8ce2-a222-fafef4cada8e"
-horo: 5
+coordinate: "vocabulary/joint · 8/crest · 652ae53b"
+contentUuid: "f3eb5e6f-b2a4-5e6c-a5a4-74f4f8155d68"
+diamondUuid: "5ef69809-f5f5-8519-9a05-94bb23200168"
+uuid: "652ae53b-e104-860f-be22-54f887665d1e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "80c10b33-fff1-8a33-9cba-439d13f7f19f"
+  computationUuid: "d5548d2e-a66b-8069-b6cf-cf164d07f15f"
   stages:
     - stage: path
       stageUuid: "695ee449-4246-81cb-a572-c897515e775c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "53044963-c46d-8db7-b274-4bfb31422fa1"
     - stage: horo
-      stageUuid: "0ed8ab10-000d-8990-83a3-4e3ccc8540aa"
+      stageUuid: "f5ec76ca-eb58-8202-8025-3039ed08b9f4"
     - stage: seal
       stageUuid: "6b7c4e6d-7af3-86ef-ab2f-cc715e095a92"
     - stage: uuid
-      stageUuid: "d9cdeece-d97b-854a-8be0-9aac53780952"
+      stageUuid: "01546198-ead1-8d9d-8e6c-aac7f201164c"
 version: 2
 ---
 # joint

@@ -2,10 +2,10 @@
 name: emissions
 description: "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register."
 atomPath: "fiscal/periods/carbon/emissions"
-coordinate: "fiscal/periods/carbon/emissions · 5/round · 4ab59aa1"
-contentUuid: "b58b5041-f343-504d-a7d1-cae724b3de8e"
-diamondUuid: "5bebf741-945d-8f7f-b625-b567dfad181d"
-uuid: "4ab59aa1-80f8-8c63-ae84-1861ab067e1c"
+coordinate: "fiscal/periods/carbon/emissions · 5/round · 27c83fe5"
+contentUuid: "cd78c4ea-3512-51e2-829f-6eff4f8bacc5"
+diamondUuid: "db1ff528-9830-8679-a976-6aed47c5f8dc"
+uuid: "27c83fe5-1f1e-88a0-b7c8-66e757de2523"
 horo: 5
 typography:
   partition: fiscal
@@ -31,7 +31,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7c7bb498-c670-8259-9683-ccf3cf127968"
+  computationUuid: "2d4507b3-65f8-8d01-b923-cdab7412bab5"
   stages:
     - stage: path
       stageUuid: "e8de1031-e28a-8497-b72f-151bcf47c09f"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "6f9384b9-a559-8a9e-a724-12e3f24e1b79"
     - stage: horo
-      stageUuid: "eea652fd-08b9-8945-95ec-5f4bd4b72f97"
+      stageUuid: "0477f8af-44c8-857b-9fc0-9f599dbf7c27"
     - stage: seal
       stageUuid: "296ad0d4-9eac-8303-adba-49660f568ace"
     - stage: uuid
-      stageUuid: "96b2da81-af52-8305-bc1e-6b4b20f1144d"
+      stageUuid: "9dd623fa-6b41-8601-ad41-6916a26851c6"
 version: 2
 ---
 # carbon-emissions

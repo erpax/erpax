@@ -2,10 +2,10 @@
 name: notification
 description: "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map."
 atomPath: notification
-coordinate: "notification · 5/round · 665d2c74"
-contentUuid: "9903e426-ec33-51c3-9c3d-bca7139fb838"
-diamondUuid: "837a071d-b198-86cc-ab99-f087ca03afcc"
-uuid: "665d2c74-bd89-8f1a-9c29-12916cc1f14d"
+coordinate: "notification · 5/round · 6b59c69b"
+contentUuid: "8a119590-9861-5124-909c-6133cdaf13ae"
+diamondUuid: "f0b64667-3398-8eb9-8205-64f6e704a03a"
+uuid: "6b59c69b-f326-82f1-be55-660083a21f3b"
 horo: 5
 typography:
   partition: notification
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "89f4f130-8db9-8696-981f-2a6b74da95fc"
+  computationUuid: "e0018b8a-73ab-8250-9a6a-25fdb812eff7"
   stages:
     - stage: path
       stageUuid: "3b455aa7-b87d-8eef-bd29-9a328d496f75"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "a57bfae1-871c-8b86-bc07-8ba1d006be68"
     - stage: horo
-      stageUuid: "e4935364-7d13-8e5c-9f5a-06d6c9650e2e"
+      stageUuid: "263b7918-0f7c-8d3f-9c60-a3cd761c0011"
     - stage: seal
       stageUuid: "87bc6056-fe3a-8f50-9e56-93779e9c71d7"
     - stage: uuid
-      stageUuid: "51d84960-c087-8566-bbd3-d59b5fbd507c"
+      stageUuid: "c007fa0e-865b-8bc2-9f8e-74ecfeb9f9c0"
 version: 2
 ---
 # notifications — the society's one voice outward, consent-gated and audited

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "movements",
-    "uuid": "7f1c123b-316a-83ce-9e43-24d4051eb59c",
+    "uuid": "25f8d08f-5276-86ed-805b-8d1879f6ca7b",
     "words": [
       "movements"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.",
-    "uuid": "fa24a318-ef18-8264-b759-5464b69e3f16",
+    "uuid": "972de86c-576d-81df-a5f4-0e280e28c44a",
     "words": [
       "use",
       "when",

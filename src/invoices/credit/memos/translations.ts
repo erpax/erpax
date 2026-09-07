@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "memos",
-    "uuid": "7d6b04cc-c956-88ac-91a1-d402e5d98f79",
+    "uuid": "ba587cad-575a-84de-a7d4-7ba740c74573",
     "words": [
       "memos"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection.",
-    "uuid": "f88b305d-3f5e-8eff-938d-9dedc4c9b3c4",
+    "uuid": "e93dd894-4435-897b-9413-0e8eacffa9b1",
     "words": [
       "use",
       "when",

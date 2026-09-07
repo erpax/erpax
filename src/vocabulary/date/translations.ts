@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "date",
-    "uuid": "e9b7cb6f-2f4d-8ca8-9112-9d0ea7b9c7f3",
+    "uuid": "461ea98f-587d-8627-8c91-27c9a2d5bed0",
     "words": [
       "date"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a document carries a temporal point — invoice date, transaction date, period-end date, expiry date, created-at, effective-at. An ISO-8601 datetime pinned at a point in time (the UTC timestamp + timezone context via versions). The temporal positioning twin of period.",
-    "uuid": "a3bc5b1c-648c-8ce6-a752-ffaf31bd00c6",
+    "uuid": "3a94a07d-003d-8888-bd01-3cdad9aeca63",
     "words": [
       "use",
       "when",

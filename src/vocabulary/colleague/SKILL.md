@@ -2,11 +2,11 @@
 name: colleague
 description: Use when reasoning about colleague — A colleague of the person.
 atomPath: "vocabulary/colleague"
-coordinate: "vocabulary/colleague · 8/crest · 795f3ae3"
-contentUuid: "a2dfdd97-95b7-5cf7-9535-f6a3443b4532"
-diamondUuid: "c91d7c8f-e56f-8f55-85a2-9aeabd5c6d52"
-uuid: "795f3ae3-c6c8-80cd-9f8b-209e9ce1c91d"
-horo: 8
+coordinate: "vocabulary/colleague · 5/round · e9b143b7"
+contentUuid: "48cd422a-5e95-5eb0-a6cd-2b270dbcd5b0"
+diamondUuid: "548971eb-5cca-8bbd-b5d1-a69a34e90421"
+uuid: "e9b143b7-68f8-89ce-a2e9-0968a5f65693"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c0ec0763-2ca9-8b7d-bcbb-d9a1caf23d7b"
+  computationUuid: "90da148b-a687-806a-b5e1-ef73fb056496"
   stages:
     - stage: path
       stageUuid: "9f5e89cd-e519-85aa-9902-7541a0cb160c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "13ed68d3-033a-8ccc-ac27-baafd0a990f1"
     - stage: horo
-      stageUuid: "fea1059d-8910-8435-9606-c45c686905f6"
+      stageUuid: "7ab89b8f-3df9-88bf-a150-9239a6c675a2"
     - stage: seal
       stageUuid: "d1a9c5b2-c6a2-8b92-afb0-8c1cdfb12578"
     - stage: uuid
-      stageUuid: "dc0d64be-9c2b-87c4-a3f7-5267c2312e36"
+      stageUuid: "8e0d785e-9be2-8aac-8129-1d84b644731f"
 version: 2
 ---
 # colleague

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "access",
-    "uuid": "29495b07-2f56-8422-a188-20b07fd5b7e1",
+    "uuid": "50e356dc-39a9-8881-8f7f-ba39775b45ec",
     "words": [
       "access"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when gating reads, creates and mutations of the audit trail — authenticated users see only their own tenant's events, super-admins see all, and update/delete is denied outright so the trail stays append-only tamper-evident.",
-    "uuid": "60cb54e1-9375-833e-858c-46b80dcdda96",
+    "uuid": "cc159947-242f-803b-bc0f-e7083e7c8df8",
     "words": [
       "use",
       "when",

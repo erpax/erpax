@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cache",
-    "uuid": "6a01ef73-fdf5-8376-b529-ec8a3ca925fb",
+    "uuid": "eaa2bd24-6df4-85d5-a1fa-3960f6d43bbc",
     "words": [
       "cache"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when caching by content — the content is its own key (its content-uuid), so the same content is always a hit and a changed input is auto-invalidated; dedup by design with no stale-cache bug.",
-    "uuid": "54df4bec-9bf6-8c10-a0b4-247e43c53b0d",
+    "uuid": "55260de9-a493-8e66-8c84-96c826a5408c",
     "words": [
       "use",
       "when",

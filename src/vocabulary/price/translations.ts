@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "price",
-    "uuid": "6660b473-0b3b-8820-bff8-ef4d426ddbba",
+    "uuid": "d796b052-7dd1-8ad1-80b0-cfc49b2ddc7e",
     "words": [
       "price"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about price — The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes. Usage guidelines: * Use the priceCurrency property (with standard format",
-    "uuid": "3981c4d5-a858-87cb-ad00-a3ec662dd0ba",
+    "uuid": "76beb46e-cc64-8026-a55d-b37ab69c9229",
     "words": [
       "use",
       "when",

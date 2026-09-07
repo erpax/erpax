@@ -2,10 +2,10 @@
 name: child
 description: "Use when reasoning about child as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/child"
-coordinate: "vocabulary/child · 1/base · 8b1de59f"
-contentUuid: "eff5a73d-bde8-569c-8844-83f2180e8822"
-diamondUuid: "846e2796-7abc-8df5-bcd8-9c6f28bc8d3a"
-uuid: "8b1de59f-bc95-8a86-8e01-d0f10eb66cab"
+coordinate: "vocabulary/child · 1/base · a493689a"
+contentUuid: "3463ecea-36a7-50cf-9a10-27b41125a519"
+diamondUuid: "ac57e1e2-3deb-8de8-8440-aec94fd60164"
+uuid: "a493689a-9ce0-8cb7-ac63-8d2497942c5b"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "539bedff-4654-815c-b267-72c036001c4b"
+  computationUuid: "7101dbb6-4bce-868d-9b02-94c18ae4a4d6"
   stages:
     - stage: path
       stageUuid: "1bcbf712-998a-862e-b3c4-7388cca38847"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0a605469-77f4-881e-910a-90ead73534ba"
     - stage: horo
-      stageUuid: "93e3a085-dbb2-8e01-ab67-5c47d8388714"
+      stageUuid: "4fabc5a8-d11b-8148-9431-5de096422c7b"
     - stage: seal
       stageUuid: "63b6a66f-4d2d-8f66-b5d8-570a809a1032"
     - stage: uuid
-      stageUuid: "5043fddd-b205-8055-8683-8c169cc4141b"
+      stageUuid: "d616e35b-8860-89df-a814-e11504ba5c27"
 version: 2
 ---
 # child

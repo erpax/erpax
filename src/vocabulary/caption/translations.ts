@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "caption",
-    "uuid": "720f81ea-5c91-8e01-a24d-2722ec71d505",
+    "uuid": "dced0855-a064-8925-8a4d-78c8b7590355",
     "words": [
       "caption"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about caption — The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the encodingFormat.",
-    "uuid": "17ff69c1-00c5-85a0-b6b0-262c22cad86c",
+    "uuid": "e881335b-8997-849c-bff7-6645f24288bd",
     "words": [
       "use",
       "when",

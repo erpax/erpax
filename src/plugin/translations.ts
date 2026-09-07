@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plugin",
-    "uuid": "9172abb5-7de9-8967-b374-1cefad87d058",
+    "uuid": "ada6b091-a825-8e76-a55f-ecf7bc630fc7",
     "words": [
       "plugin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a diamond — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions.",
-    "uuid": "362901d3-cc55-8ed2-a7f6-584d3dd55608",
+    "uuid": "3f0b2972-7b95-8f3d-ade1-978a6632be3c",
     "words": [
       "use",
       "when",

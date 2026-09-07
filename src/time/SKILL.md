@@ -2,18 +2,18 @@
 name: time
 description: "Use when tracking hours/minutes — labor hours, shift duration, production runtime per unit, throughput per time unit. A duration (number + time unit HUR/H87 code) or clock time. Pairs with rate (wage per hour, throughput per hour) in manufacturing/labor."
 atomPath: time
-coordinate: "time · 4/weave · fec04ba3"
-contentUuid: "3bd0c1e1-5da9-5840-b4af-f5d7f7fd2827"
-diamondUuid: "e7704572-5bed-8040-9e57-42be054e9820"
-uuid: "fec04ba3-da9c-87b9-b7d5-dad5b1ab6821"
-horo: 4
+coordinate: "time · 5/round · 03fc3009"
+contentUuid: "2400149a-9e6d-5edd-b7dc-296502212750"
+diamondUuid: "21aac635-6e71-80c2-8b55-afcb0a07a170"
+uuid: "03fc3009-6c78-8e3a-8bd3-cc45726bec7b"
+horo: 5
 typography:
   partition: time
   bondDegree: 138
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d1ac28bf-1963-8dd2-be01-edb05ad792aa"
+  computationUuid: "cb214544-f46b-807c-ab72-f645a4630baa"
   stages:
     - stage: path
       stageUuid: "123be2fd-7985-8dab-9840-092763531f5a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e881e1e1-caf0-8510-8649-b973addb9b56"
     - stage: horo
-      stageUuid: "6233be12-f248-84ae-b1b3-6710e5322de5"
+      stageUuid: "8ca6cc87-c3e6-8b8d-ac41-aa9221924768"
     - stage: seal
       stageUuid: "7bcf8dbd-7c7a-8a6a-a164-e50f95de6ba3"
     - stage: uuid
-      stageUuid: "da5d1e94-2d98-8855-b083-f0bc02867cdb"
+      stageUuid: "3878c317-9196-8047-8e6c-86aa4c7885dc"
 version: 2
 ---
 # time

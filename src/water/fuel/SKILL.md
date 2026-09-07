@@ -2,18 +2,18 @@
 name: fuel
 description: "Use when wastewater is treated as a fuel rather than a burden — COD is not a proxy for the energy dissolved in water, it IS that energy, measured as the oxygen needed to burn it. The inverse of water/cycle: that loop can never generate because its exhaust is its feed, while this one oxidises the contaminant and exhausts steam. netPositiveWitness returns a witness where overUnityWitness returns undefined, and the break-even COD is the threshold the whole design turns on."
 atomPath: "water/fuel"
-coordinate: "water/fuel · 8/crest · 3163a1cd"
-contentUuid: "793c9a5c-2c52-5bf5-be62-fc1c7e7753e7"
-diamondUuid: "5633dbaa-9d70-8379-9178-1ee4ae4477c3"
-uuid: "3163a1cd-ee4c-88ac-937c-973016be17ac"
-horo: 8
+coordinate: "water/fuel · 4/weave · dd8ff28f"
+contentUuid: "66140edd-da6f-596b-b777-6d542e23929e"
+diamondUuid: "11d25648-90d6-88da-bbc2-51e1de9f2997"
+uuid: "dd8ff28f-96d6-84bb-b530-f834ced1ed53"
+horo: 4
 typography:
   partition: water
   bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5b35e4a8-67c6-85a7-a87f-5bb95dc34b1d"
+  computationUuid: "a2dbb947-3791-879e-8f87-97a7336ba5c0"
   stages:
     - stage: path
       stageUuid: "865fa88b-d956-8011-94bd-8d2d571fd726"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1e31b497-b82b-8316-9100-b3cf1cb79a38"
     - stage: horo
-      stageUuid: "0c1150de-8e5d-8fa9-84d7-f7830888daeb"
+      stageUuid: "776e6f08-44ea-801b-a298-67e500a908bc"
     - stage: seal
       stageUuid: "62536e1c-4a95-8111-aefa-8720e7939a8d"
     - stage: uuid
-      stageUuid: "627940ae-dfaa-8218-ad1a-16e1e4c95d26"
+      stageUuid: "c87c4947-0aef-83cd-9c1e-27295e636084"
 version: 2
 ---
 # water/fuel — the contaminant is the fuel, and the water is the exhaust

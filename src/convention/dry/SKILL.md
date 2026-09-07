@@ -2,11 +2,11 @@
 name: dry
 description: "Use when checking whether the corpus stays DRY — the computed convention that no reference is duplicated, every one folded to a single source, measured live as coverage = atoms / (atoms + residue) over the real tree."
 atomPath: "convention/dry"
-coordinate: "convention/dry · 7/descent · a5028d63"
-contentUuid: "04a15445-0e47-519d-9cda-8c2a5abaa8f5"
-diamondUuid: "b6310633-e32c-8990-b98d-83a8f7586457"
-uuid: "a5028d63-b9e5-85fb-810f-5ec61ef8eaa1"
-horo: 7
+coordinate: "convention/dry · 8/crest · 52cb40e1"
+contentUuid: "f11e5b1a-326c-52e5-813b-1236a432e1fd"
+diamondUuid: "75495883-0998-80f5-9736-c72aa612842d"
+uuid: "52cb40e1-cd70-830e-9952-7b9610249ab9"
+horo: 8
 typography:
   partition: convention
   bondDegree: 109
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a9eb2e01-f804-8173-922f-445da445b6dd"
+  computationUuid: "d96df01e-54f1-89d5-ad05-caa1aecca887"
   stages:
     - stage: path
       stageUuid: "f16a4d18-bd62-8760-b46b-7ede514743b6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0f088d3d-86cb-83e6-8b24-16d331c6f813"
     - stage: horo
-      stageUuid: "d7683f61-1bc1-89ca-8aad-1ffd5114ded7"
+      stageUuid: "6137277b-1252-8b07-88d7-9df170ae3c8d"
     - stage: seal
       stageUuid: "304b13dc-3c90-87d4-8b1f-ada85e465b65"
     - stage: uuid
-      stageUuid: "f37f1ddb-c98d-86d2-aa4e-22e13d28bc1a"
+      stageUuid: "be7eefce-ee7d-84b8-a1e3-b928d5060a84"
 version: 2
 ---
 # convention/dry — no duplication, every reference folded to one source

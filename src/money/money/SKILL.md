@@ -2,11 +2,11 @@
 name: money
 description: "Use when reasoning about money — `Money` value type — integer-cents amount + ISO 4217 currency."
 atomPath: "money/money"
-coordinate: "money/money · 8/crest · e58f39dd"
-contentUuid: "cb170c56-6026-5afc-a798-9a71b45ae784"
-diamondUuid: "45b9ea52-ae76-886a-98ee-2e36c85cd3fa"
-uuid: "e58f39dd-211f-8647-b280-598529e3d195"
-horo: 8
+coordinate: "money/money · 2/share · ef188177"
+contentUuid: "26d5d5d4-0142-5342-a4f3-7997bf8aa5e6"
+diamondUuid: "8c45ec06-3ecf-8b77-ae5b-04deb0f16fa7"
+uuid: "ef188177-1c38-89f8-ba30-fb8cd257d2bb"
+horo: 2
 typography:
   partition: money
   bondDegree: 45
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-830 foreign-currency-matters"
 bindings: []
 signatures:
-  computationUuid: "56e7abab-0ce2-8e5f-9b58-44547bb95c9f"
+  computationUuid: "e13d1eb2-8fca-8ee3-8853-6cb22bf89352"
   stages:
     - stage: path
       stageUuid: "c46d2f85-ba5f-8463-aeee-95f7c3e46987"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "71c97cd6-b70c-8484-9622-e1eedd3430c7"
     - stage: horo
-      stageUuid: "318bb17e-7a7b-8910-bf64-d4e4c04ff279"
+      stageUuid: "5362a777-a102-8478-a90d-31517b78d9e9"
     - stage: seal
       stageUuid: "c4e8b0dd-2a33-8f3e-97cb-1439fd5bf5db"
     - stage: uuid
-      stageUuid: "831e280a-b7a9-8814-ae02-e8469c80056c"
+      stageUuid: "9689583e-a1e4-80b3-a802-5612738cd0de"
 version: 2
 ---
 # money/money

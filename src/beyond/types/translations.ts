@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "0422d299-7afe-83f1-be26-ffc75d831a69",
+    "uuid": "ecfdba99-541c-829a-b965-5ff7933607eb",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when you need the shared type vocabulary for the next-horizon conservation primitives (Laws 11-20+22) — causal provenance, deterministic replay, tenant-isolation proof, bitemporal coordinates, cost and carbon metrics, post-quantum signatures, self-explainability, reversible inverse-effects, and AI-decision provenance — what no current standard fully demands yet every regulator will within five years.",
-    "uuid": "1b557a85-68d1-8b58-bdca-597d475e3246",
+    "uuid": "361d6208-0301-8657-989c-9ebc68e13fed",
     "words": [
       "use",
       "when",

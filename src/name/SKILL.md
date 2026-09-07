@@ -2,11 +2,11 @@
 name: name
 description: "Use when identifying an entity with a human-readable label — customer name, product name, account name, journal name. Text identifier for humans; machine identity is via content-uuid. Never a duplicate field per naming convention (one name per entity scope)."
 atomPath: name
-coordinate: "name · 5/round · 16903b71"
-contentUuid: "fb9e717a-0954-52c2-ad58-53e8a7c95998"
-diamondUuid: "efef7b62-b9d2-81a6-bfb9-3dea488747d2"
-uuid: "16903b71-5cc9-841d-af25-0f9fbeeee584"
-horo: 5
+coordinate: "name · 2/share · 5818f7b5"
+contentUuid: "a603abb9-a477-52bf-9224-3039a3a831c6"
+diamondUuid: "72069603-2778-8134-b3b0-d687f6f44913"
+uuid: "5818f7b5-b0a2-8526-a943-8e8f4ca2c1ee"
+horo: 2
 typography:
   partition: name
   bondDegree: 132
@@ -14,7 +14,7 @@ standards:
   - "EN-16931`"
 bindings: []
 signatures:
-  computationUuid: "3f9dca3d-7a70-8ae0-a536-dad2b525486a"
+  computationUuid: "80de9079-7901-8d77-a033-715d633adc39"
   stages:
     - stage: path
       stageUuid: "dae99ed6-4f92-8101-b9e1-a3f5b37efae8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1b2e57cc-24fc-8c3b-8dd9-ba7bd527a930"
     - stage: horo
-      stageUuid: "5cd98c10-5ad1-851c-ae5f-ec1a16c09967"
+      stageUuid: "3bf93f0f-94fb-8fc8-bd81-165968e3ed13"
     - stage: seal
       stageUuid: "85abac57-56d6-8da1-b924-9b81580c76e4"
     - stage: uuid
-      stageUuid: "8256ed29-aef6-89b1-8a22-abfaa7afb57c"
+      stageUuid: "5722507e-91d2-87e5-aa8b-eae46f12c859"
 version: 2
 ---
 # name

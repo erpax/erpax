@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "field",
-    "uuid": "6994c88a-3216-8785-a76d-c27b807db6ea",
+    "uuid": "8f808324-c43e-8cde-bbf8-b626ae1e5b35",
     "words": [
       "field"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
-    "uuid": "b6bd1c85-8dc3-8377-9606-54e11064eea7",
+    "uuid": "5c6af107-73fe-876c-8b14-b5d5e6b8baa1",
     "words": [
       "use",
       "when",

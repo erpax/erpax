@@ -2,11 +2,11 @@
 name: business
 description: "Use when reasoning about business as a medical facet of medical — vocabulary pivot to @/business; nested not duplicated."
 atomPath: "medical/business"
-coordinate: "medical/business · 8/crest · 6692b9bc"
-contentUuid: "c5f70daa-d821-55a3-9886-96d2db7728a9"
-diamondUuid: "f4e72639-22f0-87b4-bf49-48a7684818f5"
-uuid: "6692b9bc-3665-8508-b4cf-66b9470a94df"
-horo: 8
+coordinate: "medical/business · 7/descent · b46d809d"
+contentUuid: "d48ead56-bd0c-5afe-965b-a872f1f0e178"
+diamondUuid: "78558b39-01ef-8c73-b785-97983e2ad349"
+uuid: "b46d809d-44d7-84ed-ad9c-c7136fcb45aa"
+horo: 7
 typography:
   partition: medical
   bondDegree: 91
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aa3f4887-1efd-8967-9def-6c6b9cef2432"
+  computationUuid: "bc63eac3-2275-8368-b65a-5c7a62bfee32"
   stages:
     - stage: path
       stageUuid: "4c0b28ad-969f-8218-9593-2887b32e9adb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "53287957-b3ae-855e-b3f8-27e5f5dc5128"
     - stage: horo
-      stageUuid: "d503fb0f-d14a-8090-bbed-646d7c7484a9"
+      stageUuid: "41b852b2-1217-87c5-b526-3b9b336db15f"
     - stage: seal
       stageUuid: "67cf825e-7832-8a9b-b711-169f2c048bb7"
     - stage: uuid
-      stageUuid: "8846becc-23ca-81d2-a789-cc1d88d87e6b"
+      stageUuid: "b0f9971f-1e67-8cbe-a3d5-4c4d2f968f7a"
 version: 2
 ---
 # medical/business — medical facet

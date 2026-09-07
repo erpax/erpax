@@ -2,11 +2,11 @@
 name: language
 description: "Use when reasoning about language as a hardware facet of computer — vocabulary pivot to @/language; nested not duplicated."
 atomPath: "computer/language"
-coordinate: "computer/language · 1/base · c27eb8a4"
-contentUuid: "519332c3-729d-565d-a62d-2605806e2d32"
-diamondUuid: "4f46d79f-fb01-8bee-bde3-c0e21716e97f"
-uuid: "c27eb8a4-8d61-8195-9a10-b14adb4aeea2"
-horo: 1
+coordinate: "computer/language · 8/crest · 3ae36713"
+contentUuid: "836fa367-dda1-5702-8a3d-a5d99b3015cd"
+diamondUuid: "f2045e12-2a39-8e42-abae-056647e00649"
+uuid: "3ae36713-628a-89c4-9165-178647af3e7a"
+horo: 8
 typography:
   partition: computer
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "24236800-e1ca-8346-b0eb-7a5412db38ab"
+  computationUuid: "9e87d32d-3713-86f1-89a6-727701b5e14c"
   stages:
     - stage: path
       stageUuid: "5016144a-3b8d-873d-ad67-7615c5ca2a4c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ede21386-d366-8166-86d1-24c9c4285748"
     - stage: horo
-      stageUuid: "6a9db43c-d957-8228-b0b1-b8159cf7dda7"
+      stageUuid: "16d2a52f-9e7c-8c34-be9c-69a300001456"
     - stage: seal
       stageUuid: "25c83719-04b1-84da-bf16-7564d4357334"
     - stage: uuid
-      stageUuid: "1abf3bf7-d472-8870-804b-77c1b86be45b"
+      stageUuid: "967845f8-431f-83e8-8351-376d83676ae2"
 version: 2
 ---
 # computer/language — hardware facet

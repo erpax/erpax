@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "war",
-    "uuid": "b85b0bc2-94e1-8832-9b9a-78cf0ee187d2",
+    "uuid": "2c2a8fac-b7e6-86a9-8228-973ccd393e6b",
     "words": [
       "war"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society turns warfare tactics to peace — reconnaissance, the OODA loop, coordinated formations, and defense-in-depth applied to building harmony and driving entropy to zero, never to destruction.",
-    "uuid": "efedbcea-f0a8-82c5-98c4-a7ab65887f84",
+    "uuid": "d3c1208f-a52c-8617-bc68-73e9d9962ee3",
     "words": [
       "use",
       "when",

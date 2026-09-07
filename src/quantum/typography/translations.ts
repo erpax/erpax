@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "typography",
-    "uuid": "f7650b70-e48c-8521-8a32-7695a272153d",
+    "uuid": "fd86604a-da24-8321-9dcf-08de2914b10b",
     "words": [
       "typography"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when treating typographic richness as tamper-cost — each vitepress feature a page uses is a dimension a forger must reproduce, so fuller (gapless) typography costs more to forge.",
-    "uuid": "537d91e1-3e92-8fb6-a2a0-b86946078da8",
+    "uuid": "cc287d16-be5e-8413-bc65-8558ae95984f",
     "words": [
       "use",
       "when",

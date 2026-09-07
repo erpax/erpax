@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "operations",
-    "uuid": "f02d5b50-7c5f-83ba-9a58-8265dbbbe64b",
+    "uuid": "94bd87ab-b829-8cb0-aab3-405cb92d1af2",
     "words": [
       "operations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
-    "uuid": "27aa3798-a52a-8e3a-aa37-0d57e3b98823",
+    "uuid": "67fbc6c3-71fb-8a60-afd8-96bab9e33b50",
     "words": [
       "use",
       "when",

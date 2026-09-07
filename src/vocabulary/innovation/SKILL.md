@@ -2,18 +2,18 @@
 name: innovation
 description: "Use when reasoning about innovation — **Innovation is driven by tested and proven ideas.** A new wire (Cloudflare AI bindings, path surfaces, seal gates) must:"
 atomPath: "vocabulary/innovation"
-coordinate: "vocabulary/innovation · 1/base · 2b4ec92e"
-contentUuid: "e7ef822e-7125-5a1d-bba2-70d0e4b3cd65"
-diamondUuid: "5b41fc89-cb73-89aa-9e91-94ad7a57c27d"
-uuid: "2b4ec92e-8969-8703-8107-e4baaf10b0ff"
-horo: 1
+coordinate: "vocabulary/innovation · 4/weave · 44eb7342"
+contentUuid: "fcdc446c-62c8-5f05-b3d2-1f466da6fa62"
+diamondUuid: "6b18d4cd-a540-84b7-8df0-957d2e253840"
+uuid: "44eb7342-08fb-8fce-9260-f6709e6f96a5"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 26
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4877d288-e5d2-8f3b-a3c4-9f6b9eddfe62"
+  computationUuid: "4e2afa7e-a694-83d3-a7f9-b63bd6904c48"
   stages:
     - stage: path
       stageUuid: "1f887b8b-7d0f-8f10-af27-1b4f8ad9cad1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b295210e-68d8-837f-a90d-534ef989f31c"
     - stage: horo
-      stageUuid: "de86f5d7-160b-8254-a0c1-cb696aa9bfb8"
+      stageUuid: "cceae485-765b-8f8f-8dc1-b6862d1570c8"
     - stage: seal
       stageUuid: "3959374e-d257-80f3-bd33-abb1eccca9ac"
     - stage: uuid
-      stageUuid: "a125c3e8-a5cd-831c-a81a-f11439f7ebe2"
+      stageUuid: "cba2cd19-364d-8641-9270-982aa73c0901"
 version: 2
 ---
 # innovation — tested ideas, not untested cleverness

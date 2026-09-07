@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "oauth",
-    "uuid": "16980a60-32a2-84e4-84ec-7db29ee21ac2",
+    "uuid": "f5be6c7d-a88f-884f-a9f9-906f327d1296",
     "words": [
       "oauth"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when acquiring or refreshing an external OAuth 2.0 token — the credential lifecycle (acquire → use → expire → refresh) and scope/least-privilege check, encoded as pure policy. The token-endpoint HTTP is a runtime boundary; the lifecycle logic is native and tested. One atom serves every external API (Google Workspace, country-apis…), with secrets resolved per-tenant via the credential broker — never in the registry.",
-    "uuid": "cfe6745a-12fb-8a74-afc5-7add8f8289e6",
+    "uuid": "33dfc6ea-83d2-8d67-a6c5-851183fc23cb",
     "words": [
       "use",
       "when",

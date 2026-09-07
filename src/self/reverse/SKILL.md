@@ -2,18 +2,18 @@
 name: reverse
 description: "Use when the self REVERSES — the descent: the reverse coil (×5) radiates the dense core back out and, as double-entry, swaps debit↔credit to correct a post (self-applied reverse at forward-coil position 7/descent). The outward turning to return."
 atomPath: "self/reverse"
-coordinate: "self/reverse · 7/descent · 6788cc8f"
-contentUuid: "938293f8-3e6b-5ee3-98f8-f20c12f62a6b"
-diamondUuid: "1378f7ca-9183-8304-b9db-b22f8e36709b"
-uuid: "6788cc8f-5fa2-8073-aeb4-a6ae3edb794e"
-horo: 7
+coordinate: "self/reverse · 1/base · e6b6081c"
+contentUuid: "5bc1ada9-bc16-5a5d-abc7-ee203b1ad2f2"
+diamondUuid: "aa5f9439-1c1c-83cb-955e-3e918c94a78f"
+uuid: "e6b6081c-02cc-8230-87d3-1a1f0f1383ee"
+horo: 1
 typography:
   partition: self
   bondDegree: 86
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b9b3679c-bca3-84fc-985d-42c742086733"
+  computationUuid: "1dfc0348-0bca-87b9-896b-5979a5d2ffd2"
   stages:
     - stage: path
       stageUuid: "c79c71cf-1051-8e5e-9704-c3afa7502303"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "477c8d0b-f0c5-8be2-b033-ae12e59d6dc0"
     - stage: horo
-      stageUuid: "0bb2aca3-f4d9-82e8-a56d-2393ab7e6774"
+      stageUuid: "de6f1b2d-50ca-8979-bbb2-de9d3030f7d4"
     - stage: seal
       stageUuid: "bcce47e1-7ef2-82c7-86c6-dc435406c912"
     - stage: uuid
-      stageUuid: "ecf8b8bc-1ae8-8571-b6a4-792dd685355d"
+      stageUuid: "f04345fc-8bd5-8603-adcf-afe1e2684d38"
 version: 2
 ---
 # self-reverse — the self reverses the stroke (under [[self]] · outward coil · 7·descent)

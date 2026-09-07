@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "qapage",
-    "uuid": "7f6133cd-f5f9-85e5-bc1e-be4b09eed983",
+    "uuid": "16978c78-5c0d-8bd8-9bd4-dbbe22c885e7",
     "words": [
       "qapage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about qapage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "f27580da-54e5-8e05-b722-7b2c6e7de6ba",
+    "uuid": "22c2135c-91ce-8d79-a2f1-4287ff15eb74",
     "words": [
       "use",
       "when",

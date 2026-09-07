@@ -2,11 +2,11 @@
 name: password
 description: "Use when reasoning about password as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/password"
-coordinate: "vocabulary/password · 1/base · 0335d0f6"
-contentUuid: "852dbc1a-2aac-5532-9960-62216bc4faf7"
-diamondUuid: "cdf6bcb6-0984-81bd-8460-3da7b682d1c2"
-uuid: "0335d0f6-bbb5-88a4-b3a4-9ef0b63c82af"
-horo: 1
+coordinate: "vocabulary/password · 7/descent · f518e5e8"
+contentUuid: "59563e17-0cef-5075-b689-186a034d2000"
+diamondUuid: "214c2455-ef04-8fb9-ab08-ae150b03105f"
+uuid: "f518e5e8-fe32-80e3-90e4-ceaff0af284d"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9b246b6c-6b96-8c18-90cf-4dda51e02d6f"
+  computationUuid: "018a675a-04e1-801d-82dc-778e09dd4030"
   stages:
     - stage: path
       stageUuid: "8b2b0f67-b4ae-84d9-a5e4-424a1e81628b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7afb4c75-47e0-8784-9ef2-ccd78675290e"
     - stage: horo
-      stageUuid: "f0d605e7-7e88-896f-a6ef-8e7d89f7ab5f"
+      stageUuid: "c36f05ad-2d3b-8503-b19e-1e7ef1fa4ff6"
     - stage: seal
       stageUuid: "0ec3e8d1-0a03-8090-8f0a-ee57ee6a21d0"
     - stage: uuid
-      stageUuid: "3f6fc4e6-92f6-81cd-b0bd-518a8b32161c"
+      stageUuid: "7eac2807-bec9-80cf-96ab-20743592b3d9"
 version: 2
 ---
 # password

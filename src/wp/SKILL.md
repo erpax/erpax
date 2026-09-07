@@ -2,10 +2,10 @@
 name: wp
 description: "Use when reasoning about wp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: wp
-coordinate: "wp · 1/base · d95320ef"
-contentUuid: "29d6ed68-2dec-5828-b986-4abaac126024"
-diamondUuid: "641d591b-a54e-8754-a5d4-e7ab145828c9"
-uuid: "d95320ef-c703-8c53-99ec-c3626ebbbfa2"
+coordinate: "wp · 1/base · 9ad32edf"
+contentUuid: "5699cfe2-9d70-5c9d-a05c-0c32f59e81b2"
+diamondUuid: "01dbbbb0-6bd2-8a9e-a140-8b8a5ab6cfa1"
+uuid: "9ad32edf-53b6-88c6-9d71-28313fdc90f3"
 horo: 1
 typography:
   partition: wp
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "982b1295-1afe-8071-a266-00c1d7dc2d11"
+  computationUuid: "465d6151-6783-8602-a585-b30bdf3349d4"
   stages:
     - stage: path
       stageUuid: "da56ea1c-eb88-8f91-a26e-8099a0bcd6cd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f23dbc45-2956-857b-9c5f-eec35d81cac1"
     - stage: horo
-      stageUuid: "7db266d0-94aa-88a8-91eb-cd33e9a9d7bc"
+      stageUuid: "33531788-143f-80d9-956a-fb5b062f5c81"
     - stage: seal
       stageUuid: "3477c91d-46ad-8017-99c3-08373d74b408"
     - stage: uuid
-      stageUuid: "d3304cf8-5681-84ef-a841-41386dc32fc3"
+      stageUuid: "4d980c94-12ce-85c7-ba53-389c5ff03ff1"
 version: 2
 ---
 # wp

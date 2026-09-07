@@ -2,11 +2,11 @@
 name: faqpage
 description: "Use when reasoning about faqpage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/faqpage"
-coordinate: "vocabulary/faqpage · 8/crest · 5df088c5"
-contentUuid: "e3fde422-f2e6-582b-be83-d45d08cd5e16"
-diamondUuid: "19ffa89c-32d4-8c48-bf42-277c38b2ec65"
-uuid: "5df088c5-a825-88d9-824f-99e22226e95e"
-horo: 8
+coordinate: "vocabulary/faqpage · 1/base · 0cec5a2e"
+contentUuid: "b5f3b7fe-dde4-5e1c-a12d-d4636b870e2c"
+diamondUuid: "28928732-b85d-882c-a2d4-c3d470b4d5b8"
+uuid: "0cec5a2e-93eb-8ce1-88e3-3351cc69fc7b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e26273b8-b899-8faf-a926-90574009b3cf"
+  computationUuid: "c0c131aa-9ff3-8c86-a6c3-2f42a128cd79"
   stages:
     - stage: path
       stageUuid: "a0b20265-17bd-83eb-9a7f-0eaf499d4c8a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "057b86b2-ceff-8b67-8826-016406f472ab"
     - stage: horo
-      stageUuid: "216e01f0-9c62-8a6b-8579-3e30ef7f1924"
+      stageUuid: "9e785fac-b82d-89d9-b8ce-7a0dd6118400"
     - stage: seal
       stageUuid: "1be83a9d-134f-82e7-85bf-6631c96cb554"
     - stage: uuid
-      stageUuid: "284c3fcc-0d90-8db6-b7f4-188100fd2288"
+      stageUuid: "9d9d472f-d8a3-8fcd-a27e-e75806bdfda0"
 version: 2
 ---
 # faqpage

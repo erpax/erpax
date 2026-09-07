@@ -2,10 +2,10 @@
 name: hospital
 description: Use when reasoning about hospital — A hospital.
 atomPath: "vocabulary/hospital"
-coordinate: "vocabulary/hospital · 4/weave · fa591d82"
-contentUuid: "e633fbc7-2393-514e-a925-a8c639c9ac1e"
-diamondUuid: "f859aea3-f614-81e4-b3aa-17312edba4e6"
-uuid: "fa591d82-7496-8251-a6bd-592e9a9e53c2"
+coordinate: "vocabulary/hospital · 4/weave · 56743e4e"
+contentUuid: "317b0906-28eb-5938-a163-0b0f4fa46091"
+diamondUuid: "1ced19fb-0c9c-89be-99dc-3bab19bd4a01"
+uuid: "56743e4e-d123-8ebd-9216-fa42a429b77f"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9fa60a9a-dcfe-879b-b366-6de829779913"
+  computationUuid: "e2ceb689-133f-870a-9825-b5d7a7264ad5"
   stages:
     - stage: path
       stageUuid: "fac45346-f79c-8894-a365-66936a11e7a5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6195f7dc-a773-8d5d-abaa-3711c5f9e56e"
     - stage: horo
-      stageUuid: "313144d0-c713-8e78-8d4c-53d0e7ded6dd"
+      stageUuid: "d11dcacb-65c4-8e69-9ac8-61b8f9ef37da"
     - stage: seal
       stageUuid: "1f45ec42-2c49-8f17-a33c-b432cc8df863"
     - stage: uuid
-      stageUuid: "8d17e512-8a83-8234-aa70-164c96f3f69b"
+      stageUuid: "6c9405b0-9c61-85c5-956c-47e0461da25e"
 version: 2
 ---
 # hospital

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mpn",
-    "uuid": "2eafce47-0265-88b8-affb-b72f8140bbf1",
+    "uuid": "19559a8a-c38c-810c-ae2d-f430d88993ae",
     "words": [
       "mpn"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about mpn — The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
-    "uuid": "5a36b220-f41d-837f-8ccf-0922e4326d45",
+    "uuid": "75014406-9883-821e-bca6-f7c034d2fa54",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: reactor
 description: "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost."
 atomPath: "fusion/reactor"
-coordinate: "fusion/reactor · 2/share · b13a6fae"
-contentUuid: "d5b07fd3-bfa6-54c3-a98f-812e3bd2ff3e"
+coordinate: "fusion/reactor · 8/crest · 38fe636e"
+contentUuid: "03d57433-54ad-5061-9ed6-893468917bb2"
 diamondUuid: "e4bc47a4-4762-8cdf-9a59-d31bfe17ed16"
-uuid: "b13a6fae-73a4-83d0-8965-395af20bc06d"
-horo: 2
+uuid: "38fe636e-6315-841a-95dc-72f7aa4f408f"
+horo: 8
 typography:
   partition: fusion
   bondDegree: 31

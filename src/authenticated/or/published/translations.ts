@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "published",
-    "uuid": "d5d933c1-ac49-8965-8264-bb45cd04a580",
+    "uuid": "4d1765e9-b275-8459-83ad-22bfa15292de",
     "words": [
       "published"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a Payload collection should show drafts to logged-in users but only published versions to anonymous callers — the access predicate that grants `true` to a session and otherwise returns the published-only Where filter.",
-    "uuid": "1dc21240-fc6b-8347-93a6-8cca1d836a3e",
+    "uuid": "6a10af6a-c739-8230-b215-aa0606c2fba5",
     "words": [
       "use",
       "when",

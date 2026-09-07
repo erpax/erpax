@@ -2,18 +2,18 @@
 name: payload
 description: "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid."
 atomPath: payload
-coordinate: "payload · 5/round · e9f74467"
-contentUuid: "8f34139e-f2b2-577d-8acf-422b89429c04"
-diamondUuid: "b42f34f9-fbd6-85e6-b1a3-d3584cd4d54f"
-uuid: "e9f74467-2b68-8207-8eef-0874b3c7622d"
-horo: 5
+coordinate: "payload · 4/weave · 02ec4d6b"
+contentUuid: "d7b31aac-2101-5232-a1dc-e7df32bac667"
+diamondUuid: "a93a8113-5068-8190-8245-e66e6298505b"
+uuid: "02ec4d6b-e726-8c47-a32c-ca933ad979e0"
+horo: 4
 typography:
   partition: payload
   bondDegree: 115
 standards: []
 bindings: []
 signatures:
-  computationUuid: "59d3bd0f-7ebc-86f0-ae51-2733fc32b843"
+  computationUuid: "6bd8b24b-6654-812a-b9a0-fff543ebd26c"
   stages:
     - stage: path
       stageUuid: "4f7949d9-27a5-859a-8059-12de4a450ea6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "82549f79-74cf-80c2-9cbe-1fd913ba331d"
     - stage: horo
-      stageUuid: "07e65259-0873-8d4a-b508-986838497dc2"
+      stageUuid: "9b42b7aa-06c8-85ff-b0da-95f2381b3e99"
     - stage: seal
       stageUuid: "4013a8dc-9d32-84bb-b365-9caddb63686e"
     - stage: uuid
-      stageUuid: "42e01966-a67d-83dd-b28b-afbdda7578b9"
+      stageUuid: "076e4284-57d5-83cf-a69d-f7cc67d62674"
 version: 2
 ---
 # payload — the matter coil

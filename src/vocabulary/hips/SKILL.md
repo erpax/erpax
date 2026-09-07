@@ -2,10 +2,10 @@
 name: hips
 description: "Use when reasoning about hips as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hips"
-coordinate: "vocabulary/hips · 7/descent · f0a2d08b"
-contentUuid: "db73ef6c-bae2-536d-afd6-b5a64b39c84f"
-diamondUuid: "dedffb35-f595-88f7-b68b-ab1bdbcd290c"
-uuid: "f0a2d08b-0244-849d-9b50-a23d547e4777"
+coordinate: "vocabulary/hips · 7/descent · a296403b"
+contentUuid: "40df0185-0e7f-5fb2-9fb1-e1360e9c967c"
+diamondUuid: "6dcf3d7e-efea-821f-8c82-178496b6f3ad"
+uuid: "a296403b-3fb7-8287-971d-7c1fde468697"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "77563e56-5c09-81a9-81ee-2af207e223e2"
+  computationUuid: "353f847e-5e5a-82cd-99e8-6402d67f8968"
   stages:
     - stage: path
       stageUuid: "429c163e-c4a0-866f-a907-dd1581b85368"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "36d094e0-6424-8422-9a40-5043bcd070c5"
     - stage: horo
-      stageUuid: "e84def2f-0701-81d7-a482-4802db4f4ba6"
+      stageUuid: "a9c5d8cc-c027-87f5-a6aa-1911e5ac3d69"
     - stage: seal
       stageUuid: "4569c3c8-caa4-8d13-bbdf-1cc76500a64a"
     - stage: uuid
-      stageUuid: "66b899ec-0a87-8ab8-9a2c-84a5ebd04e52"
+      stageUuid: "a558d0b5-d11e-8d81-9917-c516d39c256e"
 version: 2
 ---
 # hips

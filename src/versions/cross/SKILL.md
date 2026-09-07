@@ -2,11 +2,11 @@
 name: cross
 description: "Use when reasoning about cross — Every entity change content-addresses to a leaf. That same leaf is simultaneously the VERSION (a new content-uuid), a TAMPER-COST increment (one more link a forger must rewrite)…"
 atomPath: "versions/cross"
-coordinate: "versions/cross · 2/share · c0087bf1"
-contentUuid: "345fe86a-d2e0-5969-ba57-2d1c4fde8eb1"
-diamondUuid: "50511159-b092-8bb0-b802-a0192a1d0668"
-uuid: "c0087bf1-27dd-8889-8bf5-b497295462f0"
-horo: 2
+coordinate: "versions/cross · 8/crest · 4c495e97"
+contentUuid: "b0eb48fb-f817-567e-b465-c23c5351501f"
+diamondUuid: "cdfe542d-a4f7-8831-86c9-09ba638eb6ce"
+uuid: "4c495e97-e1a2-8d85-86d4-9ebd85da2161"
+horo: 8
 typography:
   partition: versions
   bondDegree: 68
@@ -16,7 +16,7 @@ standards:
   - "SOX §404 internal-controls record-retention"
 bindings: []
 signatures:
-  computationUuid: "848dca52-051a-8444-ab4e-ba40921baeec"
+  computationUuid: "2944f03f-efe6-8482-9152-f4f7f80aa5d1"
   stages:
     - stage: path
       stageUuid: "4522ecaf-80a1-8da7-bb21-0ee1ea34c597"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "adaae29d-78d6-8ee5-9b3e-3e55b7f78f0a"
     - stage: horo
-      stageUuid: "106eafe1-b328-8fa9-bd17-26b30c29595a"
+      stageUuid: "cbfdf45b-5c04-89db-8e3b-58dedb39b768"
     - stage: seal
       stageUuid: "4b9077aa-e5b0-817f-a54d-0eeb5725bcea"
     - stage: uuid
-      stageUuid: "fc3e9ac7-ad9c-8468-bffb-017d8ed0736b"
+      stageUuid: "be04d4c6-1023-8b4e-b7a2-85413d1221ee"
 version: 2
 ---
 # versions/cross — one change mints ONE leaf, read three ways

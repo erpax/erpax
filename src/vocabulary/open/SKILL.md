@@ -2,18 +2,18 @@
 name: open
 description: "Use when reasoning about the permitting boundary state in erpax — fiscal period open (postable), draft editable, session/stream open. The universal root of the open state; dual of close."
 atomPath: "vocabulary/open"
-coordinate: "vocabulary/open · 2/share · dfffa2a4"
-contentUuid: "fef316dc-2a44-5aa8-aeaf-05e4c68a0556"
-diamondUuid: "97ce3f74-3d88-8788-b562-79cb96b8309d"
-uuid: "dfffa2a4-4e44-887b-b44b-3d9bf35841a3"
-horo: 2
+coordinate: "vocabulary/open · 1/base · 4a2658b6"
+contentUuid: "727bd565-a26b-516a-a569-c4a807f9ab7a"
+diamondUuid: "db015465-ac52-89fe-982c-70144ec8468d"
+uuid: "4a2658b6-d65d-8166-8b2b-635d436f6361"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 49
 standards: []
 bindings: []
 signatures:
-  computationUuid: "daae6536-8c9c-874d-abcf-8e01bf4b113e"
+  computationUuid: "30baccea-6c35-8032-9785-e47277c69c78"
   stages:
     - stage: path
       stageUuid: "cb73fce8-1334-85f7-a5b1-db384780704b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "db4fa748-ae60-8180-bcf1-2573301c28f4"
     - stage: horo
-      stageUuid: "8965aa67-95d5-8b39-a40f-548a8f92746a"
+      stageUuid: "2381880e-1532-8daf-8cdf-945a9e62a589"
     - stage: seal
       stageUuid: "a9349a49-543d-8249-acf8-77a5d00e7253"
     - stage: uuid
-      stageUuid: "c7d2de4c-2770-841a-9b68-107e7bedba85"
+      stageUuid: "c6ceee90-7124-81b5-bed7-fd6e6e8a5556"
 version: 2
 ---
 # open — the permitting state (postable · editable)

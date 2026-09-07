@@ -2,11 +2,11 @@
 name: audit
 description: "Use when naming the examination of records by someone entitled to see them — the parent term for the audit-side vocabulary, including the right of access itself."
 atomPath: "vocabulary/audit"
-coordinate: "vocabulary/audit · 5/round · c6da508d"
-contentUuid: "e279046f-4aca-5fc7-8960-47035de6e062"
+coordinate: "vocabulary/audit · 8/crest · 6ac311e2"
+contentUuid: "0f2a7375-fd0c-56b6-84ed-23e3e1b05224"
 diamondUuid: "6ebb4179-0e04-856d-89f9-9c45b27ba8c8"
-uuid: "c6da508d-3e78-8f9e-a254-7ca362918699"
-horo: 5
+uuid: "6ac311e2-7590-8f12-8f94-cc155e7af31e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 137

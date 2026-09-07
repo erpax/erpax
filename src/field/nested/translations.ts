@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nested",
-    "uuid": "37802c0c-d560-871f-9d0e-960abb5f8c26",
+    "uuid": "d340ee70-6d8b-8613-a390-550aec3fb693",
     "words": [
       "nested"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:",
-    "uuid": "9153796d-a57d-8845-9085-189e4baf2440",
+    "uuid": "d4cdd0e3-e527-8a32-afe5-9e4690145644",
     "words": [
       "use",
       "when",

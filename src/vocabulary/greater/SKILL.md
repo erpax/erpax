@@ -2,11 +2,11 @@
 name: greater
 description: Use when reasoning about greater — This ordering relation for qualitative values indicates that the subject is greater than the object.
 atomPath: "vocabulary/greater"
-coordinate: "vocabulary/greater · 7/descent · fe6a4f95"
-contentUuid: "4b01bba8-f7e7-504a-83b2-9b64e35333c1"
-diamondUuid: "472c428f-8ffc-8e9f-ac16-2c447904b71c"
-uuid: "fe6a4f95-2545-84b6-a611-7e3f436e2f26"
-horo: 7
+coordinate: "vocabulary/greater · 1/base · 5d3b420a"
+contentUuid: "af3bbbf1-06cf-5760-82a4-ef1e8d366b33"
+diamondUuid: "a81f726d-64a9-8d59-a0e8-b37a80ec8efb"
+uuid: "5d3b420a-475d-8378-95ab-ea2a9604f914"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9d977c30-b246-88a4-a8d7-eb188d4cf46c"
+  computationUuid: "f9cf8482-3e97-8ce7-89c4-88b2e1360598"
   stages:
     - stage: path
       stageUuid: "0d92e4e8-7dd7-8ed7-8ab1-be6e10504b60"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6cde14a5-f2d0-8068-89ef-dcc8d238259f"
     - stage: horo
-      stageUuid: "15d2a670-ce5f-883f-809f-f58829e0ef6b"
+      stageUuid: "d9672dd7-c1d5-884b-adca-5b897e1e78e8"
     - stage: seal
       stageUuid: "2494e7d7-e92b-8111-b926-78cf33b47bae"
     - stage: uuid
-      stageUuid: "6c3fc764-4d28-841e-96ef-9f1263a451ff"
+      stageUuid: "fee1b0b7-2fa2-80e7-83bd-0c9370c412cf"
 version: 2
 ---
 # greater

@@ -2,10 +2,10 @@
 name: usage
 description: "Use when reasoning about usage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: usage
-coordinate: "usage · 4/weave · 971c335d"
-contentUuid: "48af3fd1-25fb-5a4a-8aa9-afdc2f6cbb0d"
-diamondUuid: "f916cdd5-adb0-84f7-aca8-8a8c3cd6ea9c"
-uuid: "971c335d-d412-8062-a61f-208cc45fc6ab"
+coordinate: "usage · 4/weave · f19de5d6"
+contentUuid: "e9470dcd-eb89-5d85-a9c8-22bcc613a9b1"
+diamondUuid: "e3c014e2-f0e8-80c4-838f-be424543e25b"
+uuid: "f19de5d6-039e-8a2a-b8b7-48bc4fdd9ac7"
 horo: 4
 typography:
   partition: usage
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cf31e102-a75c-89f9-b735-ec13d1e67f9b"
+  computationUuid: "bad19244-c17f-8fa2-a4a4-789139204d29"
   stages:
     - stage: path
       stageUuid: "7c01c169-807b-8150-aca5-359bec2576c3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0c608e65-e70d-840b-9935-6411e320e025"
     - stage: horo
-      stageUuid: "11a85e9a-5913-8b75-842b-cd2e7da5ee1f"
+      stageUuid: "cbfedfbf-0215-8515-94e2-f4afc72e7e29"
     - stage: seal
       stageUuid: "b72ef9d8-bd1c-8b36-a1d9-1ddd86a618e7"
     - stage: uuid
-      stageUuid: "d2a4f411-bd0b-8b34-8f9d-94178e937b5d"
+      stageUuid: "d8a54780-eebf-81c6-b829-65cd4576ce78"
 version: 2
 ---
 # usage

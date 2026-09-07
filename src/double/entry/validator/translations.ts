@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "validator",
-    "uuid": "5fbc3c70-8dda-860f-92fe-181171d5d290",
+    "uuid": "5456bdc5-111e-8192-83aa-edbbceac0077",
     "words": [
       "validator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when posting or reviewing a journal entry — the double-entry gate: every entry has two sides and the sides agree. Enforces a balance tolerance, one side per posting, non-negative amounts; warns (never refuses) on account polarity, because contra-accounts legitimately invert. Read this before trusting the word tolerance: the bound is absolute over float amounts, so the same one-cent gap posts at 50 and is refused at 100.",
-    "uuid": "3b3da5c7-a062-8160-9c49-500225b1fe24",
+    "uuid": "53f92853-6e02-8d45-8040-1267bacf246f",
     "words": [
       "use",
       "when",

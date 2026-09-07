@@ -2,18 +2,18 @@
 name: resolution
 description: "Use when closing or resolving a ticket, issue, or complaint — root-cause analysis, solution implementation, confirmation, closure. The endpoint of a support lifecycle."
 atomPath: resolution
-coordinate: "resolution · 4/weave · 5ebfe0b6"
-contentUuid: "6f54dbc3-b352-54b2-b190-b8f642cd108a"
-diamondUuid: "2c7bf1df-8524-865a-b5b9-dfb0911d8ae8"
-uuid: "5ebfe0b6-c835-873d-a493-63e345f72055"
-horo: 4
+coordinate: "resolution · 2/share · d72eaf1a"
+contentUuid: "d078b485-762e-5b2f-baa9-c938131a7333"
+diamondUuid: "4f77a193-a69d-8600-996b-ecc21aff1848"
+uuid: "d72eaf1a-16f8-894b-9a14-651b6eda951e"
+horo: 2
 typography:
   partition: resolution
   bondDegree: 31
 standards: []
 bindings: []
 signatures:
-  computationUuid: "81735bf9-d3b5-8b3a-93a6-02ced56f915f"
+  computationUuid: "74643484-482e-8dd8-90a2-855862c4ec9f"
   stages:
     - stage: path
       stageUuid: "a02c98ef-dd68-86d9-8f00-fdfc91d09f7b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2ce3b04a-9653-88bf-9d6f-f92b9747dc87"
     - stage: horo
-      stageUuid: "3ffeee2c-2d23-8efd-924c-45e5db6ea4c7"
+      stageUuid: "c0108117-d826-8cd7-ae3f-6ccf5880b63e"
     - stage: seal
       stageUuid: "0a2e9b61-18fa-85cc-9318-5b726fc23b5e"
     - stage: uuid
-      stageUuid: "9c3d4912-8ee2-8ba2-a29b-dcb0e771deaa"
+      stageUuid: "0509aeb9-c786-8a85-aa89-7eeb4fc2c3ec"
 version: 2
 ---
 # resolution

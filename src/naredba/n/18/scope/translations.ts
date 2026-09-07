@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scope",
-    "uuid": "b529e85e-f867-8559-86ff-8071b5ee99f0",
+    "uuid": "ab2f7b4f-02ce-87b9-b8e8-835d1f8ab170",
     "words": [
       "scope"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about scope — Наредба Н-18 чл.",
-    "uuid": "eeb786ce-a595-8fdb-bded-164d6d4975df",
+    "uuid": "f2d6509e-36e2-84b9-9df4-34496bfe3833",
     "words": [
       "use",
       "when",

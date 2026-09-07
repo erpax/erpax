@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "components",
-    "uuid": "a0fe62c5-2cb9-846f-b0aa-2192b4b4ad97",
+    "uuid": "13ec3e03-d9c7-8aa6-8988-8464e4e8d049",
     "words": [
       "components"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when building or debugging the erpax React UI — server-component-first Next.js App Router views, Lexical/Payload block renderers, admin panels, dashboards, widgets, and shared primitives — the society's FACE, the rendered surface where matter meets the eye.",
-    "uuid": "39c2dcc5-7f37-8c0b-8d24-654b3295c395",
+    "uuid": "aaadc4d6-b9af-8241-a084-654296eafd75",
     "words": [
       "use",
       "when",

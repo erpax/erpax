@@ -2,11 +2,11 @@
 name: payables
 description: "Use when reasoning about payables — , , and carry the fields EN-16931 requires of a supplier invoice; buckets what is outstanding, and is what falls due."
 atomPath: "types/payables"
-coordinate: "types/payables · 7/descent · b41194f8"
-contentUuid: "d5106a21-74ff-5020-a35d-6ad0057e566d"
-diamondUuid: "1309b045-4f83-8d29-a326-21f64982da4c"
-uuid: "b41194f8-1aef-8ead-91bc-d66b60f05590"
-horo: 7
+coordinate: "types/payables · 2/share · 74f2dd22"
+contentUuid: "802f2ab6-6076-5e26-8146-9af60056e629"
+diamondUuid: "19738bf7-e512-8ea4-a383-32a08028e49b"
+uuid: "74f2dd22-2f28-8a61-b6de-1f554fa31349"
+horo: 2
 typography:
   partition: types
   bondDegree: 3
@@ -22,7 +22,7 @@ standards:
   - "US-IRS Form-1099 information-return"
 bindings: []
 signatures:
-  computationUuid: "5fdbf993-96be-8721-a0a5-a6b7f165bbc2"
+  computationUuid: "36a5784a-2b91-8126-9379-de577b8f655c"
   stages:
     - stage: path
       stageUuid: "b1a49c4f-f35e-84c9-ab13-7195a4241d2a"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "e2d88b8d-203c-8633-bd60-caff6a7c689e"
     - stage: horo
-      stageUuid: "7e1d494b-64f4-82c8-aafa-a87f67a29032"
+      stageUuid: "df7f5196-6b8a-8c2e-ae0a-ef56294eaa11"
     - stage: seal
       stageUuid: "05db6d9d-4147-8912-b0e3-4181312cb781"
     - stage: uuid
-      stageUuid: "ee9c8c98-cfb9-879c-9861-40b60f445875"
+      stageUuid: "32107939-6a0f-83a5-95c2-317b0f0093fe"
 version: 2
 ---
 # types/payables — what the business owes, typed to the standard that governs the document

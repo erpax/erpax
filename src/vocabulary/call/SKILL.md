@@ -2,11 +2,11 @@
 name: call
 description: "Use when reasoning about call as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/call"
-coordinate: "vocabulary/call · 7/descent · 15b87b65"
-contentUuid: "577e8235-37fb-5efe-bfe9-a97208bb8b3a"
-diamondUuid: "9edbdfbc-de05-8665-b437-d1060af449aa"
-uuid: "15b87b65-ae0c-8a1e-a79c-88cd79e550a1"
-horo: 7
+coordinate: "vocabulary/call · 4/weave · 16745e1c"
+contentUuid: "e5286417-a242-53c2-9e48-1ec58544e8b8"
+diamondUuid: "08d776a5-3024-8972-8f99-7a10de14f8e5"
+uuid: "16745e1c-eb85-869e-9601-859ade5ecffb"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "405d2ce3-0f6e-8fba-a881-a1875521dc37"
+  computationUuid: "b40381e6-e34b-8b9a-bb68-6db6e6431bbc"
   stages:
     - stage: path
       stageUuid: "dd3a4e0e-ba78-8727-a533-d6ae622f040d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0c10380b-5b5b-811a-9b46-021531bc7e56"
     - stage: horo
-      stageUuid: "65b98aff-4814-85f4-9a73-f66f50448921"
+      stageUuid: "f51fcf39-5f80-80ce-8470-3e406368c818"
     - stage: seal
       stageUuid: "f6949f60-c7cd-8e2d-8378-c714ccaa2b08"
     - stage: uuid
-      stageUuid: "3677eb82-d74a-8396-ad7f-022029ff4557"
+      stageUuid: "4313e8a9-f46f-814d-b9d8-9d4a8254d946"
 version: 2
 ---
 # call

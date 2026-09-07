@@ -2,10 +2,10 @@
 name: translator
 description: "Use when translating a live event tail as it arrives — each realtime message reduced to its language-independent meaning so any EU-language subscriber reads the same thing zero-shot."
 atomPath: "realtime/translator"
-coordinate: "realtime/translator · 2/share · ba97d29b"
-contentUuid: "6fb6b7bc-c3a9-5c73-b563-736c8ea4466f"
-diamondUuid: "fc8ba3eb-cb31-88d7-bdcb-8a5361e66873"
-uuid: "ba97d29b-0068-8aa1-9d88-466291df883d"
+coordinate: "realtime/translator · 2/share · 4d8b91a9"
+contentUuid: "62b400df-f206-5253-8dfb-0d35d81a5dc3"
+diamondUuid: "2532f880-0dc7-8232-9412-90a5cab5c501"
+uuid: "4d8b91a9-0908-8022-91de-7452e2c82bf4"
 horo: 2
 typography:
   partition: realtime
@@ -14,7 +14,7 @@ standards:
   - "interlingua (language-independent meaning) over the realtime tail"
 bindings: []
 signatures:
-  computationUuid: "a38ba123-282e-8e18-b56f-52244447fd82"
+  computationUuid: "11dfa39d-3926-8843-9e03-681432c1a856"
   stages:
     - stage: path
       stageUuid: "825a5814-e7ec-8bd3-97ff-71f053eccdc0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bca216b8-8fd3-89cb-aeeb-e94bad36f3ea"
     - stage: horo
-      stageUuid: "3f62b285-f89a-80f4-b225-be5c8019fbb2"
+      stageUuid: "65e12e36-0a62-887a-8378-55b8e65afec9"
     - stage: seal
       stageUuid: "a0c22524-18d4-8971-af97-9d4228e5bcb3"
     - stage: uuid
-      stageUuid: "4f75ad49-19ff-8aad-a1a8-db3802fd157e"
+      stageUuid: "67d5c24d-197d-860e-9e82-a3fb42f68d3c"
 version: 2
 ---
 # realtime/translator — translate the live tail

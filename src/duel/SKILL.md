@@ -2,18 +2,18 @@
 name: duel
 description: "Use when testing through pairs of inverted development teams — a prover that asserts and builds, and a refuter that takes the exact opposite side and attacks it. They are duals (the anti-claim is the claim's negation), always opposed, and the verdict manifests realtime per round. Popper asymmetry: one refutation falls the claim, no amount of proof verifies it — a claim STANDS as not-yet-refuted, never as proven true."
 atomPath: duel
-coordinate: "duel · 2/share · 99dd55c8"
-contentUuid: "fed64a18-898c-5ea4-874b-730d52e9988c"
-diamondUuid: "6c1af7fe-4529-8eb2-b7b8-0f1dc9d9d091"
-uuid: "99dd55c8-96c9-8283-8e24-5b6b2b434be3"
-horo: 2
+coordinate: "duel · 5/round · e455284e"
+contentUuid: "0e95668b-832e-5056-8c40-26e5a9ef16f6"
+diamondUuid: "8376198e-f5b2-8733-a142-d4c0a8fb337b"
+uuid: "e455284e-9d8e-8a24-8d42-58f9d69eaa9d"
+horo: 5
 typography:
   partition: duel
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bd686fb6-0294-81eb-b4db-bfa5753478e5"
+  computationUuid: "752720b3-4c57-8999-82e1-83808e1f1a71"
   stages:
     - stage: path
       stageUuid: "03bb6adc-8a46-8305-9452-bee3c72e4ee8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "723eb80c-8729-8068-9a64-13803b244c4c"
     - stage: horo
-      stageUuid: "ce8eb5f9-b5b3-8a09-a324-61de4b2965e5"
+      stageUuid: "c9d7fbfa-c822-8fb8-88fa-a33c10639483"
     - stage: seal
       stageUuid: "e3f8c36f-4e40-8e59-a750-ca97362ee051"
     - stage: uuid
-      stageUuid: "12810585-6f37-807d-ab44-c8b0ee4d05d5"
+      stageUuid: "43cf00f8-1c1b-8d94-916a-f52f2a8ed948"
 version: 2
 ---
 # duel — inverted teams, opposite sides, manifesting realtime

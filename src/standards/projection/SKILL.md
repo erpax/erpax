@@ -2,11 +2,11 @@
 name: projection
 description: "Use when the standards catalogue must be read rather than changed — coverage by schema, UI improvement waves, and O(1) address lookup, each memoized on the catalogue's own content-address."
 atomPath: "standards/projection"
-coordinate: "standards/projection · 5/round · f6a7ca19"
-contentUuid: "ecaa4be2-a24e-5dbe-84d9-8f448e6acb1a"
-diamondUuid: "4694234c-12c1-827e-ad95-f79de4769a72"
-uuid: "f6a7ca19-ff43-8e29-a257-015de26dbcfa"
-horo: 5
+coordinate: "standards/projection · 7/descent · 76f4f5c8"
+contentUuid: "8a930125-2feb-5e5a-93e2-7fb3fd72181a"
+diamondUuid: "5a017f35-8ff9-8c2b-84ca-d815919fdc95"
+uuid: "76f4f5c8-2048-8a30-a570-27dd937e189b"
+horo: 7
 typography:
   partition: standards
   bondDegree: 57
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC-25010:2023 §5.1 functional-completeness (every standard is covered)"
 bindings: []
 signatures:
-  computationUuid: "ebb9c16e-a4ca-8f32-8fa8-a00254f9f619"
+  computationUuid: "9e93513f-c627-8935-b324-e90f59148b45"
   stages:
     - stage: path
       stageUuid: "05064c17-3515-88cb-b7d7-f6b5a0e951d7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5a52d981-f2a6-88d9-b9bd-189164e71265"
     - stage: horo
-      stageUuid: "b850339c-4428-811e-b655-112a8434340b"
+      stageUuid: "b7814bb2-213a-8b8c-a090-11c0cfd4dc58"
     - stage: seal
       stageUuid: "e3cc8139-d132-85d5-980c-0529b846d216"
     - stage: uuid
-      stageUuid: "08160786-81b9-8e40-8c36-b162919e3e4d"
+      stageUuid: "7f8b9eea-6446-8086-936c-bee131ffd05d"
 version: 2
 ---
 # standards/projection — the catalogue, seen three ways

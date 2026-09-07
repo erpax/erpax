@@ -2,10 +2,10 @@
 name: electronic
 description: "Use when reasoning about electronic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/electronic"
-coordinate: "vocabulary/electronic · 2/share · 92246a30"
-contentUuid: "18a1be45-7bb9-5d54-af23-81a0f7a2ff28"
-diamondUuid: "5e30474b-48d7-8760-98b7-b9e62e8173e4"
-uuid: "92246a30-35fc-8dab-8cbd-9ff3f1d8538d"
+coordinate: "vocabulary/electronic · 2/share · 98643650"
+contentUuid: "a3f732c9-7e20-570c-a51b-23ea24476e80"
+diamondUuid: "37e8eefe-defd-81df-8772-947c764a933a"
+uuid: "98643650-e15e-8ca3-89a3-5e05ee090960"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c8e531d2-5394-85ed-b71f-d6ed4302e8b3"
+  computationUuid: "2b568ce1-43a8-8cdb-b784-a55edd29eb02"
   stages:
     - stage: path
       stageUuid: "b48e6a37-2199-8f86-a233-bb06adf0e59d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3c97a0d2-133d-8376-8037-c24743026856"
     - stage: horo
-      stageUuid: "e91dd8f7-9dba-8b86-8659-5e1157b4d31e"
+      stageUuid: "e8e40a92-719f-84da-8bd1-3eb0bece989c"
     - stage: seal
       stageUuid: "df11cd4b-af4f-89ae-b9cb-9fcbcf08b28f"
     - stage: uuid
-      stageUuid: "8d7a27dc-0cf3-88ac-b085-f1b6b62fa679"
+      stageUuid: "7373d8bd-4eb2-8ae5-a32d-b6f85ffc1777"
 version: 2
 ---
 # electronic

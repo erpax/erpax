@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "kv",
-    "uuid": "7864cda6-ffbb-8184-80de-1d1878050d9c",
+    "uuid": "41b3b047-e638-8f0b-b7f9-f859e9cf968c",
     "words": [
       "kv"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about kv — addresses the binding itself, lifts a plain map into , and finds the value for a key by address rather than by string.",
-    "uuid": "f3804ed2-da19-8bd4-a86f-c1039ab30259",
+    "uuid": "ac2238ab-c26d-8596-808c-422a3baa520a",
     "words": [
       "use",
       "when",

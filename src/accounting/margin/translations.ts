@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "margin",
-    "uuid": "f1553da5-4942-833c-bbbd-b539d6ca65b1",
+    "uuid": "701f8b40-4fa4-841a-be9d-dd8e17fe7b6f",
     "words": [
       "margin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting/margin — margin analysis — gross margin and contribution calculations.",
-    "uuid": "5361268d-bad7-8182-8537-266720266eec",
+    "uuid": "d2b7f562-344b-8bfa-9b1f-867fed702693",
     "words": [
       "use",
       "when",

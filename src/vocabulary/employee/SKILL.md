@@ -2,11 +2,11 @@
 name: employee
 description: Use when reasoning about employee — Someone working for this organization.
 atomPath: "vocabulary/employee"
-coordinate: "vocabulary/employee · 2/share · a3a4c37e"
-contentUuid: "1dff6932-a7ac-56f4-9c5b-93363b6094f7"
-diamondUuid: "7f4b8bd1-e6b4-8e9a-b5c3-531899fdeaad"
-uuid: "a3a4c37e-9922-8239-bf0d-ac726effa9a9"
-horo: 2
+coordinate: "vocabulary/employee · 1/base · f5b667ac"
+contentUuid: "82b182a5-e75d-5b5f-9c4a-e768c504b3af"
+diamondUuid: "a424aa40-beef-89df-b19a-a4ff42e976bb"
+uuid: "f5b667ac-e91a-8331-818d-b4d114ff7a23"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 13
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4c937098-72fe-8052-a543-a70c73704ead"
+  computationUuid: "444185f2-2b7f-8c4a-83aa-98d0aeea893d"
   stages:
     - stage: path
       stageUuid: "e4edf1db-4858-861e-b92f-8e49fbf5163c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2c13fca2-761e-8194-b9c8-73dd16600aa9"
     - stage: horo
-      stageUuid: "2df180aa-639c-8f2b-b43f-fa478c252e1b"
+      stageUuid: "92b6642f-9b2a-835f-a9bc-f26843cd585b"
     - stage: seal
       stageUuid: "e2992ade-9654-8b2c-bebb-4b237a4ed8ae"
     - stage: uuid
-      stageUuid: "15c93ae1-e6b6-875f-80b9-b0ef1c42e52c"
+      stageUuid: "81ad4cd2-ea46-8f89-b3d2-60426bd1c26e"
 version: 2
 ---
 # employee

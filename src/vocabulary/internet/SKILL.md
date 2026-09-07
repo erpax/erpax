@@ -2,10 +2,10 @@
 name: internet
 description: "Use when reasoning about internet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/internet"
-coordinate: "vocabulary/internet · 1/base · fc63b2f4"
-contentUuid: "d2f194d3-8147-5790-b624-c99ceb0da656"
-diamondUuid: "4aff9767-725b-8aba-93f0-d1e718f9510c"
-uuid: "fc63b2f4-d56a-8d45-8a3c-719abe85c45a"
+coordinate: "vocabulary/internet · 1/base · 4ec7a228"
+contentUuid: "b9fa93ca-3b16-5b3d-b8e0-5d9817b7fadc"
+diamondUuid: "766dc052-0ddb-806c-b46c-0950dd765ba8"
+uuid: "4ec7a228-cabc-8acb-ad4b-0d136a4beb56"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ccbea407-bc66-82ef-bc2a-cc933bddbb0d"
+  computationUuid: "fd8d55dc-35a5-8338-8418-5f8abc886db6"
   stages:
     - stage: path
       stageUuid: "c8c82c15-00ca-8d2d-97a5-5aece02fe825"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b2b0b832-5fd6-835b-b4c1-2537ded1793c"
     - stage: horo
-      stageUuid: "dc2509c1-abce-8f98-8558-2ebb03503cdb"
+      stageUuid: "47f9fb0f-a509-89d5-80a2-3a7b9a999c72"
     - stage: seal
       stageUuid: "f9cb5bf9-41a7-84a3-95ab-91c67cbbc483"
     - stage: uuid
-      stageUuid: "ef82354c-cd93-8894-ad7a-cd38076da81f"
+      stageUuid: "57396b78-7d30-8ca8-9d3e-f43a88ddf64d"
 version: 2
 ---
 # internet

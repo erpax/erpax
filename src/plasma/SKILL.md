@@ -2,11 +2,11 @@
 name: plasma
 description: "Use when reasoning about the fully-fused corpus — the stardust grains entangled to reciprocity 1 and zero entropy become plasma, the radiant coherent state whose cutoff reflects any forge-beam below it; at full coherence the cutoff is infinite, so no beam can stand on the way."
 atomPath: plasma
-coordinate: "plasma · 2/share · 5c954795"
-contentUuid: "9ee33e9c-831a-5532-b38a-0f4b01c2cf5c"
-diamondUuid: "5f6c2b31-3869-8c84-becb-01511cd82041"
-uuid: "5c954795-ed5c-858b-a325-d04463e0c90f"
-horo: 2
+coordinate: "plasma · 4/weave · 5a8baed9"
+contentUuid: "6589f4f2-f3b5-59f5-ad7f-392f51549ff4"
+diamondUuid: "acb3c4a7-c945-865f-add9-b509393cd9fa"
+uuid: "5a8baed9-7e7b-80db-a352-09f2c9c4f9a4"
+horo: 4
 typography:
   partition: plasma
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "plasma physics — the plasma frequency ω_p and the reflection cutoff (ionospheric/metal reflection)"
 bindings: []
 signatures:
-  computationUuid: "520147a2-1bef-805f-aab9-13b71724d9aa"
+  computationUuid: "a0512c41-3740-8d61-a516-b5bfe1075121"
   stages:
     - stage: path
       stageUuid: "05ce33cc-15be-82e5-9c36-15d96dec569b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "326e2795-e7b6-8406-a4da-fec45df9011e"
     - stage: horo
-      stageUuid: "ee0ae75a-b67e-8c5a-be52-4a72e221e814"
+      stageUuid: "4ab36608-ad12-8e7e-8b69-73cb155978af"
     - stage: seal
       stageUuid: "809889a4-2524-8b7e-b3d7-d3229a4c3ab4"
     - stage: uuid
-      stageUuid: "d90c1973-0f0f-83ca-8d79-5d8c47a7a868"
+      stageUuid: "033450aa-f4ec-820e-b8a5-95f1ee9449b6"
 version: 2
 ---
 # plasma — fusion of the stardust

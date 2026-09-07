@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tax",
-    "uuid": "919958ca-adf5-8e8f-aaa4-9ef29cfc3770",
+    "uuid": "410d328a-af9b-8a43-90fd-7dc037a1de01",
     "words": [
       "tax"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a value bears VAT/GST/sales/withholding tax — a rate on a taxable base, UN/CEFACT 5305 category codes, EN-16931 VAT breakdown, inclusive/exclusive pricing, exemption, reverse-charge, the tax point. The TaxConcern; tax is a cascade-resolved rate on a base, one engine feeding receipt+total+SAF-T, never a baked literal.",
-    "uuid": "7a7aea22-518f-871a-b174-06a506a90cf3",
+    "uuid": "3b20a039-de96-8bcd-a79d-0892772a8f9b",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: "47"
 description: Use when implementing or referencing BCP 47 — Language tags.
 atomPath: "bcp/47"
-coordinate: "bcp/47 · 1/base · a6ca40d6"
-contentUuid: "b769e4e4-a1e3-5572-94ac-d7de608239ed"
-diamondUuid: "1a04dac6-c342-8b5a-877c-9b68cb01a161"
-uuid: "a6ca40d6-3653-83a5-bb2e-d0f52e35bcae"
-horo: 1
+coordinate: "bcp/47 · 4/weave · 21a7917f"
+contentUuid: "5760da98-51b7-50bc-93bc-99519960d624"
+diamondUuid: "32f0cd9c-4581-8f21-b271-66ac06d1e1a5"
+uuid: "21a7917f-8a59-82e7-a13b-37a19da7c90f"
+horo: 4
 typography:
   partition: bcp
   bondDegree: 3
@@ -18,7 +18,7 @@ standards:
   - "Unicode-CLDR"
 bindings: []
 signatures:
-  computationUuid: "62ccf06b-88fb-802e-81d0-fb3c8aa8029d"
+  computationUuid: "f296e60c-6513-8954-ab82-0b8869cce745"
   stages:
     - stage: path
       stageUuid: "1f0e9428-09ae-8d94-9c4b-9f6d3aefac8c"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "d77252c3-f8f4-8112-95d3-20697cf66d79"
     - stage: horo
-      stageUuid: "f00ce7f5-ea0d-87d7-883e-655d128b675c"
+      stageUuid: "55a3836b-7663-83b9-abc2-aaa002fbb477"
     - stage: seal
       stageUuid: "b9a63bbc-1867-8430-9ee7-e3dc57ed9b8d"
     - stage: uuid
-      stageUuid: "27a5e2d0-cf1c-816b-a686-bbf6394198e3"
+      stageUuid: "7e688df0-d0dd-8904-ae2b-a7421fb458a7"
 version: 2
 ---
 # BCP 47 — Language tags

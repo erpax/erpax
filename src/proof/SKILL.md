@@ -2,11 +2,11 @@
 name: proof
 description: "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost."
 atomPath: proof
-coordinate: "proof · 5/round · 14080b23"
-contentUuid: "023f9f4d-9777-5fb4-a0c1-bffd6b9245a8"
-diamondUuid: "970e90a4-343d-8219-afaf-c6470f7ac7b2"
-uuid: "14080b23-dc42-8b8e-a963-b4d38b742884"
-horo: 5
+coordinate: "proof · 1/base · 75411dd5"
+contentUuid: "d52a0b46-ac4d-5224-9505-fe51479b4197"
+diamondUuid: "141070de-8565-88c7-bb27-2377c043e035"
+uuid: "75411dd5-5fbb-850a-8c07-3da1cc18cff3"
+horo: 1
 typography:
   partition: proof
   bondDegree: 634
@@ -17,7 +17,7 @@ standards:
   - "W3C-JSON-LD-1.1"
 bindings: []
 signatures:
-  computationUuid: "887f3a02-6788-8cc9-ab04-2e4b66622e2c"
+  computationUuid: "1609f76f-eebe-849f-9588-fab309538767"
   stages:
     - stage: path
       stageUuid: "9f7446bd-24b4-8d3b-b842-83c4c0cf961d"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "0b3b8798-06ea-8bd5-abe8-1c2b16230443"
     - stage: horo
-      stageUuid: "6c7ee6f1-0aa8-8968-bbf0-2fe471ebbc40"
+      stageUuid: "53b5e17e-4780-8125-b9ba-ea3f217a7c68"
     - stage: seal
       stageUuid: "6b3fd5ef-f5c0-8774-b24c-61f19719435f"
     - stage: uuid
-      stageUuid: "0b446286-c080-894c-b7a5-4450548ca53a"
+      stageUuid: "2cae1d93-9d1d-89b8-ba68-b0e206ea12b3"
 version: 2
 ---
 # proof — the verify nucleus (the other half of the fusion)

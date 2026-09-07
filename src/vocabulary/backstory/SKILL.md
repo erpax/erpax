@@ -2,11 +2,11 @@
 name: backstory
 description: "Use when reasoning about backstory — For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setti"
 atomPath: "vocabulary/backstory"
-coordinate: "vocabulary/backstory · 8/crest · d0588030"
-contentUuid: "69d4e471-8662-5c76-8f16-386b4168f66a"
-diamondUuid: "a76ca0b3-fad5-88f0-bf95-a0cb025def30"
-uuid: "d0588030-de41-8bb1-a863-b2639ef82703"
-horo: 8
+coordinate: "vocabulary/backstory · 1/base · 238edbe7"
+contentUuid: "87363fd9-85b2-5d4e-8b80-ab110ed3af2e"
+diamondUuid: "cbbb2b24-7f57-8b95-afa7-f48acd5e4117"
+uuid: "238edbe7-18d5-8f7f-8470-f5650f6a842d"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "125892b9-ba04-88ed-8407-d4ad5d28dcf3"
+  computationUuid: "579d7e8f-3a5f-8dbf-bb5c-a70f32bc3929"
   stages:
     - stage: path
       stageUuid: "d0daaccd-afad-86c3-9b19-14c0ce077710"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f650fb14-78ca-8112-a76a-7bea6c8d6816"
     - stage: horo
-      stageUuid: "86ae4a70-a72f-853a-acb5-8bd529c9348d"
+      stageUuid: "94a6ed7c-b2be-8cb9-9aaa-224ac358b564"
     - stage: seal
       stageUuid: "19733e79-c6a2-8810-8ffe-2523d87fd056"
     - stage: uuid
-      stageUuid: "183b3c3c-108d-82d1-9db1-3921f975923e"
+      stageUuid: "be18eda1-8f4b-8836-8d9e-382ce121f83f"
 version: 2
 ---
 # backstory

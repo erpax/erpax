@@ -2,11 +2,11 @@
 name: overlaps
 description: "Use when reasoning about overlaps as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/overlaps"
-coordinate: "vocabulary/overlaps · 7/descent · f2421c30"
-contentUuid: "1be81d91-c9d0-5f6b-b833-0049a03e1b73"
-diamondUuid: "dfee2cc6-e931-8345-894c-41d14db208b3"
-uuid: "f2421c30-5633-897a-82ea-b813cc8212d5"
-horo: 7
+coordinate: "vocabulary/overlaps · 4/weave · b708a11b"
+contentUuid: "cba1d25f-c7c9-5d73-a533-38663f44d607"
+diamondUuid: "4f2c0df7-56e1-849a-ae0d-9654ebda9102"
+uuid: "b708a11b-8cbd-8154-aad8-38ca0503146b"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "de3cce96-0978-845c-8667-7add322fc753"
+  computationUuid: "0f678bf6-4bac-87f2-bf86-1b42a0c7ebd2"
   stages:
     - stage: path
       stageUuid: "4ca352e7-10f7-8715-97f7-87c4ee6ce49d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "05f214af-4a51-8cda-86b7-5781eb17728b"
     - stage: horo
-      stageUuid: "ffb75619-8261-816e-9614-48ebf16d2bf3"
+      stageUuid: "d528f8f2-5a07-8a38-ac4d-76f45e95ccb7"
     - stage: seal
       stageUuid: "b1ae54e8-07cc-8653-aef8-637fefd5a573"
     - stage: uuid
-      stageUuid: "08d1f384-cc88-8303-b68c-bc7d7d2e5684"
+      stageUuid: "284cb847-5b2b-8b0c-bc0e-77e26491ea8e"
 version: 2
 ---
 # overlaps

@@ -2,11 +2,11 @@
 name: musculoskeletal
 description: "Use when reasoning about musculoskeletal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/musculoskeletal"
-coordinate: "vocabulary/musculoskeletal · 1/base · a37dc652"
-contentUuid: "56295675-c4be-58d2-ba33-373cd463cb0e"
-diamondUuid: "0a887742-949b-834e-a62b-bc48afe7da20"
-uuid: "a37dc652-2f1b-877a-a31a-bcd10aa8f530"
-horo: 1
+coordinate: "vocabulary/musculoskeletal · 4/weave · 87b8b551"
+contentUuid: "2e051e4f-f101-526b-a792-253d231a928f"
+diamondUuid: "da3f37ea-3240-8b32-ac69-302c81dcee1b"
+uuid: "87b8b551-1910-80dc-a463-7fa1006dd1c5"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "14fc58d1-efec-8e00-91f6-9e34dbc4387e"
+  computationUuid: "01e1a86a-e82c-886f-ad7f-a3320af1c4f6"
   stages:
     - stage: path
       stageUuid: "53536364-0105-8996-9cfe-950ea9126cc0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "14375f1d-6f06-89b7-af92-cabc4a2c1706"
     - stage: horo
-      stageUuid: "55c82890-d5cc-892d-a3e5-7f058fd52011"
+      stageUuid: "85bcebc1-f0d2-85b9-acbd-af3a5129384a"
     - stage: seal
       stageUuid: "8af35708-f2e5-8363-9c22-09a8824ff9be"
     - stage: uuid
-      stageUuid: "ffab9c28-52ba-8756-87c2-9d4579176ab1"
+      stageUuid: "f0fa6889-33a0-8b0b-bfa3-3accf4cbbc97"
 version: 2
 ---
 # musculoskeletal

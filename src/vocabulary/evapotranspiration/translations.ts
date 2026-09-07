@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "evapotranspiration",
-    "uuid": "306abf2f-6270-8e6d-8e7c-666ee46314e5",
+    "uuid": "b26d81be-4b50-8e54-8181-cbaa7579c6d0",
     "words": [
       "evapotranspiration"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when quantifying crop water demand — evapotranspiration (ET) = soil evaporation + plant transpiration, the daily withdrawal from the soil-moisture reservoir that drives irrigation scheduling. The debit side of the water budget; reference ET × crop coefficient gives the crop's actual draw.",
-    "uuid": "4536e5fb-1f65-8ed7-bfeb-8dd248765652",
+    "uuid": "7873b664-7343-83f6-afdc-77fd54a6dc61",
     "words": [
       "use",
       "when",

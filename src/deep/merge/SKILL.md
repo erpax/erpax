@@ -2,11 +2,11 @@
 name: merge
 description: "Use when overlaying one plain object onto another without mutation — a recursive deep merge where nested objects fuse key-by-key, arrays and scalars are replaced wholesale, and the source value wins on every collision."
 atomPath: "deep/merge"
-coordinate: "deep/merge · 8/crest · 9bc921a7"
-contentUuid: "97372dc5-c84e-546f-a56c-c549034bfac6"
-diamondUuid: "c4a43cc6-3e63-89aa-973a-1a802697a4f9"
-uuid: "9bc921a7-993f-8311-a7df-4f47759d0879"
-horo: 8
+coordinate: "deep/merge · 2/share · 879d33f6"
+contentUuid: "0b2ae55a-6c4b-5e23-8795-6a23bfe9e76e"
+diamondUuid: "fcee0ba6-3ae4-8154-8ca8-e7afd1a93590"
+uuid: "879d33f6-a23e-8f3e-9f50-07c7a333fb53"
+horo: 2
 typography:
   partition: deep
   bondDegree: 5332
@@ -14,7 +14,7 @@ standards:
   - structural recursion over plain objects; arrays are opaque leaves
 bindings: []
 signatures:
-  computationUuid: "f8afb585-c691-8222-810e-8b2e884ed83d"
+  computationUuid: "7e26e4bb-07b6-89bf-8b77-51d74f4513e6"
   stages:
     - stage: path
       stageUuid: "f189872f-a5ec-88f3-8236-f2cc945ea37a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6e5b2792-650c-8276-81c1-5d01e4fa0b8c"
     - stage: horo
-      stageUuid: "d2847a54-bf2a-86f6-a2d4-831264a23211"
+      stageUuid: "54a47319-26f2-85cb-a8b5-745508dd7442"
     - stage: seal
       stageUuid: "aa05d4bd-45b1-8ebd-9038-9c485d0e1823"
     - stage: uuid
-      stageUuid: "0b519f99-af8b-8dd4-93b6-16d073685ce7"
+      stageUuid: "12689f20-e102-83d9-8d1c-910dc3f41e96"
 version: 2
 ---
 # deep/merge — recursive non-mutating object overlay

@@ -2,11 +2,11 @@
 name: camping
 description: "Use when reasoning about camping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/camping"
-coordinate: "vocabulary/camping · 8/crest · 4f6448f2"
-contentUuid: "b73ea66a-d2ae-5fe4-ab17-747f6e8b50e7"
-diamondUuid: "a47cbf76-c0da-83c2-8c16-aeb3feb9420d"
-uuid: "4f6448f2-c606-8542-a1a3-17dfb53d87fe"
-horo: 8
+coordinate: "vocabulary/camping · 1/base · c123dc1c"
+contentUuid: "e438bc26-74c2-513d-8cb1-034b6ef44f2d"
+diamondUuid: "d72b83c3-2593-816b-81eb-1fcbe9b33162"
+uuid: "c123dc1c-20f2-81d9-8f07-b2a1a9d34e5d"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3cce3911-c615-86d0-bdc6-dd35234f9356"
+  computationUuid: "a7f46502-bfe1-8af2-87f2-f6b085f51aff"
   stages:
     - stage: path
       stageUuid: "aad68ed4-14a2-89cc-ae44-6bdaef70f420"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "60cc2011-aaab-8a42-8e5f-b4ee8aefd737"
     - stage: horo
-      stageUuid: "f2d5b5ab-3290-8d2a-a0f5-c02c96093fbf"
+      stageUuid: "555ec102-5450-8f9c-a57c-15e88c0b8a43"
     - stage: seal
       stageUuid: "af31eaa1-1281-87b0-8498-bc7d01e575d6"
     - stage: uuid
-      stageUuid: "94f4d045-92fb-88bc-9bad-bdbc537b1564"
+      stageUuid: "0b64229a-1740-872e-a403-fbeb717bb3e9"
 version: 2
 ---
 # camping

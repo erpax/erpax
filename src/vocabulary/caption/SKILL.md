@@ -2,11 +2,11 @@
 name: caption
 description: "Use when reasoning about caption — The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the encodingFormat."
 atomPath: "vocabulary/caption"
-coordinate: "vocabulary/caption · 8/crest · 5927795e"
-contentUuid: "0b7ddca9-b97b-5ca6-bed1-04fef8a58a36"
-diamondUuid: "727252b1-0d95-8fe0-b0b2-3f1101faefa5"
-uuid: "5927795e-9f7e-8a30-a9ad-5a4cf1cb41ec"
-horo: 8
+coordinate: "vocabulary/caption · 5/round · 720f81ea"
+contentUuid: "949645ff-0fed-554a-9bba-36197271c909"
+diamondUuid: "8e2b31e4-da1e-85fa-b902-ee8f3dd79204"
+uuid: "720f81ea-5c91-8e01-a24d-2722ec71d505"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3503e7fa-185c-873c-8df7-2f92e10a939f"
+  computationUuid: "df1ef4aa-1591-87e3-8d24-48cf0a4f8ff1"
   stages:
     - stage: path
       stageUuid: "e6702106-d0b3-8705-9e55-6fc66d734b6e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dc817e2b-02a2-8845-8804-b793fadd05bf"
     - stage: horo
-      stageUuid: "bc3737fa-914f-85bb-915b-777f03d14a64"
+      stageUuid: "329a6a89-7909-8058-98b2-55d415ceb224"
     - stage: seal
       stageUuid: "5e93bfce-2b09-8252-91ab-b6e9fdc9b081"
     - stage: uuid
-      stageUuid: "26d2e33a-a6f3-88f1-a564-7c2f0595888a"
+      stageUuid: "aed30f00-29d6-87b2-8777-4b124e5026c7"
 version: 2
 ---
 # caption

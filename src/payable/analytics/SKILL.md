@@ -2,11 +2,11 @@
 name: analytics
 description: "Use when reasoning about analytics — Days Payable Outstanding, vendor performance and spend analysis over the bill set."
 atomPath: "payable/analytics"
-coordinate: "payable/analytics · 8/crest · c2463ec6"
-contentUuid: "c2744ab9-8cc5-554a-a290-0b46d3717145"
-diamondUuid: "08023d1e-f13b-884c-b763-db41816431c3"
-uuid: "c2463ec6-9706-8b38-9a7b-9221178b638a"
-horo: 8
+coordinate: "payable/analytics · 4/weave · d0e80aac"
+contentUuid: "01e753bf-efbd-5cb7-8a97-8154dd65ac8a"
+diamondUuid: "c0ef6b55-ad72-8081-85d9-47da06190b44"
+uuid: "d0e80aac-1a68-8d2b-a8de-e94616e78cf8"
+horo: 4
 typography:
   partition: payable
   bondDegree: 92
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-405 liabilities"
 bindings: []
 signatures:
-  computationUuid: "be856b13-3a9b-8e60-ba7f-85ed1d4175ec"
+  computationUuid: "1400cdbc-09c8-8d09-abfe-1528cc118d4d"
   stages:
     - stage: path
       stageUuid: "f671a977-1537-8908-ab6f-16ef15c4b933"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "3d03dfb8-9ddf-899c-9754-2be62abcbd2f"
     - stage: horo
-      stageUuid: "1450ba9d-a221-8284-aee0-10320f1d4634"
+      stageUuid: "1950d391-f38e-864f-ab5c-6139e7fb031d"
     - stage: seal
       stageUuid: "904f4294-2a67-845a-ad77-54b69ee554f7"
     - stage: uuid
-      stageUuid: "92f31f15-1d8d-8f13-b79a-abbd13ac3599"
+      stageUuid: "69bfd431-4555-80a4-8cea-cfda009788bd"
 version: 2
 ---
 # payable/analytics — vendor performance, DPO and spend

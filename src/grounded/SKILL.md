@@ -2,10 +2,10 @@
 name: grounded
 description: "Use when checking that a trust computation sources only from sealed content — erpax's tamper-cost (coverageCostLog2 ← collider ← convention) is priced on 6 conventions that scan process.cwd()/src, the mutable unsealed working tree, so the forge-cost reduces to an unverified directory listing; reads git-HEAD-sealed blobs (SHA-addressed) and returns the grounded fraction (11/17), pricing its own provenance into the cost."
 atomPath: grounded
-coordinate: "grounded · 2/share · 39e5c4e1"
-contentUuid: "18e5b71e-ee71-5f23-8511-f77968eb7e75"
-diamondUuid: "8506dbef-8ee7-8b27-a37f-d6c0a0b7f3e1"
-uuid: "39e5c4e1-1bbc-8e78-817a-bff0c08d9bbf"
+coordinate: "grounded · 2/share · 49ee50fa"
+contentUuid: "d0ae6f86-561d-5ace-bcf3-06b3d376da17"
+diamondUuid: "74b36196-b3e5-8b09-a40d-da384fc23ac7"
+uuid: "49ee50fa-198f-8328-924e-82823a32f964"
 horo: 2
 typography:
   partition: grounded
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3b659093-a25c-802c-a31b-1467e884efd4"
+  computationUuid: "8883bceb-026e-8f38-ae26-6e7f232411c0"
   stages:
     - stage: path
       stageUuid: "aae50bcb-cfa5-846a-84ac-c051e83c1dce"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7e2636be-7d04-809a-9163-f1c9e59a498d"
     - stage: horo
-      stageUuid: "64591552-10c3-8341-b840-cf601700f5a8"
+      stageUuid: "14aa3029-3068-88a9-a0f0-b67596451c88"
     - stage: seal
       stageUuid: "09d5738b-9b1a-8a5c-9660-bd46fc26a4b9"
     - stage: uuid
-      stageUuid: "c40cd3e9-a8ee-82ac-853f-bc48eb795fc9"
+      stageUuid: "384e8b67-339a-8e82-93be-5e4c405b69a0"
 version: 2
 ---
 # grounded — a trust computation may source only from sealed content

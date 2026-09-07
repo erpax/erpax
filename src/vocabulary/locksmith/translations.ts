@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "locksmith",
-    "uuid": "e54d469f-dc6c-8bf2-87b3-6f88bcd802be",
+    "uuid": "8027d9ac-a01d-826f-9bb2-dd83a04b31b0",
     "words": [
       "locksmith"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about locksmith — A locksmith.",
-    "uuid": "01b0b2b0-a5b2-8f28-8e57-3e2e4d9782cc",
+    "uuid": "40174a27-1bf9-84a3-8bb7-b89149a3b1a7",
     "words": [
       "use",
       "when",

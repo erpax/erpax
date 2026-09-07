@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "assembly",
-    "uuid": "dc03fa16-997f-848d-b925-5a0a480e6713",
+    "uuid": "e2cb338c-c21a-8839-beeb-bd7766c1e136",
     "words": [
       "assembly"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about assembly — Library file name, e.g., mscorlib.dll, system.web.dll.",
-    "uuid": "44882d90-78d8-8790-ba2e-acdce216895f",
+    "uuid": "ce1282c4-259b-8368-adc8-8b0eb02b362e",
     "words": [
       "use",
       "when",

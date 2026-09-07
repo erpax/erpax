@@ -2,11 +2,11 @@
 name: lineup
 description: "Use when reasoning about lineup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lineup"
-coordinate: "vocabulary/lineup · 8/crest · 2fd6fd18"
-contentUuid: "2c11b9a0-5c7d-51ac-8170-fdf692d2ad3d"
-diamondUuid: "480316fe-a2df-83ee-8df1-a0345a55c354"
-uuid: "2fd6fd18-e0cb-849d-a523-3cf553ff44a6"
-horo: 8
+coordinate: "vocabulary/lineup · 5/round · 7a760a9c"
+contentUuid: "63ff30c9-94ff-5b27-8430-6214dbbcf8d7"
+diamondUuid: "d1d65216-17cd-830d-9ed6-50df32740051"
+uuid: "7a760a9c-4608-81e8-8098-f7a0573a1406"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0e058047-d020-8457-a7f5-74590480ebd7"
+  computationUuid: "97e29323-d875-8877-a077-5cb7894479f1"
   stages:
     - stage: path
       stageUuid: "ba2f8dad-b120-812d-972f-a4b9f96ebe77"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cf33b90d-131a-8fdd-a3c8-502ff6ecbd4a"
     - stage: horo
-      stageUuid: "e9d8cef6-2f88-8cd3-b19f-3b944fc51e70"
+      stageUuid: "50197c86-d243-82ca-8881-f57f8d2dd81d"
     - stage: seal
       stageUuid: "736815ed-cda5-8af6-8ac4-2d10954dff90"
     - stage: uuid
-      stageUuid: "c6e30faa-224d-8625-be34-a12499543d2f"
+      stageUuid: "9a23b15e-b374-8972-b815-d5c33e951099"
 version: 2
 ---
 # lineup

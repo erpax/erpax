@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cells",
-    "uuid": "9da49cfd-cfa5-8992-b227-079be1ad4415",
+    "uuid": "c32810ff-6e60-8880-b775-f810a64b0f51",
     "words": [
       "cells"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cells — Four cells, each showing a value the corpus computes rather than stores: the content-uuid as a chip, the horo digit, the path as an account code, the seal as a badge.",
-    "uuid": "3f51e752-aad8-8225-89cc-19eb7ee2c768",
+    "uuid": "3477aecf-c9ce-8ca8-bd99-4d8296c18bf9",
     "words": [
       "use",
       "when",

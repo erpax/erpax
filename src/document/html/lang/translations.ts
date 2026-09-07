@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lang",
-    "uuid": "e6640fb3-1da7-870d-9b1a-9109b463b514",
+    "uuid": "d46b5415-a3fd-8a83-bfd0-161364ffdd86",
     "words": [
       "lang"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lang — is what a screen reader consults to choose a voice. Get it wrong and Bulgarian is read aloud with English phonemes — not degraded, *unintelligible*.",
-    "uuid": "5fae2d92-0d48-8667-bf2e-c45c84c8e985",
+    "uuid": "1c69c42b-2d0f-8d94-b1b0-146eca4fd927",
     "words": [
       "use",
       "when",

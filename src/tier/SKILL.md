@@ -2,11 +2,11 @@
 name: tier
 description: Use when reasoning about tier — The member program this tier is a part of.
 atomPath: tier
-coordinate: "tier · 1/base · 7405e444"
-contentUuid: "d821b83c-be55-5346-a437-6a15abce2817"
-diamondUuid: "2b5f5deb-6e49-8bde-958a-b302245b4368"
-uuid: "7405e444-cd49-8716-a7e0-7c26dbb8633d"
-horo: 1
+coordinate: "tier · 5/round · bd446b9c"
+contentUuid: "64903382-4d7c-546d-b382-da51c42b5a97"
+diamondUuid: "b43e3bde-796a-8767-9eca-9fa18d9bc2d4"
+uuid: "bd446b9c-0c0b-8213-bac3-1d7880ee595c"
+horo: 5
 typography:
   partition: tier
   bondDegree: 56
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8543343e-d8aa-89b1-acaa-fdf8dcc5d85b"
+  computationUuid: "c738c7c0-13f6-8d53-a358-45ba92b419ad"
   stages:
     - stage: path
       stageUuid: "8560fb88-c7ed-8cc9-adfa-6de727fbbcb3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "43005f41-83df-8978-8917-c1de1df27a41"
     - stage: horo
-      stageUuid: "81b12afd-5802-8a30-a63a-1122f98d379d"
+      stageUuid: "653c6a65-bf74-86b5-af63-af385441dfd6"
     - stage: seal
       stageUuid: "2aa1bd37-2d24-89e6-bb64-fda569183dd9"
     - stage: uuid
-      stageUuid: "4ab3b247-9123-824e-abcc-8ad12d56aa6e"
+      stageUuid: "a2aed860-218b-8d33-a613-f53319e39087"
 version: 2
 ---
 # tier

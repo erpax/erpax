@@ -2,18 +2,18 @@
 name: ticket
 description: "Use when a customer/employee request, complaint, or issue becomes a tracked work item with queue, priority, assignment, and SLA. The polymorphic support-case container."
 atomPath: ticket
-coordinate: "ticket · 5/round · 16c1564b"
-contentUuid: "aa879223-5b80-5414-a8f6-31a41ff29943"
-diamondUuid: "491adfa4-d230-868e-8bc9-1c4517202d2d"
-uuid: "16c1564b-95e9-88c2-a4d3-e7be7673dbc9"
-horo: 5
+coordinate: "ticket · 1/base · 8f99c9b0"
+contentUuid: "5638e17e-6174-5de0-a77c-d5f9bef37779"
+diamondUuid: "25fe4241-2549-8c97-86d5-f939fea0a25d"
+uuid: "8f99c9b0-e7d6-8133-9f4b-83e7ceac25fd"
+horo: 1
 typography:
   partition: ticket
   bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2844768e-fffd-84b1-bf34-0f471f180f43"
+  computationUuid: "fd729a8c-0bc5-8437-ab28-b7167cb478c7"
   stages:
     - stage: path
       stageUuid: "a02176d5-17c3-830d-beb2-24e2e4f99db1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c884e9a4-0774-8b45-ab96-09605fd6c031"
     - stage: horo
-      stageUuid: "0f64b3a7-030a-8c7e-9c2f-a2aa1dafac31"
+      stageUuid: "6c1224af-a415-81fa-9b5d-692ad7a9c3de"
     - stage: seal
       stageUuid: "042f70c8-ed21-8e65-9b1c-d2f3d40c77c5"
     - stage: uuid
-      stageUuid: "32d5d685-0bd4-8aee-b701-f5cc537dc13d"
+      stageUuid: "46d9070d-1752-8dd1-a0a8-3dc87dc42c2f"
 version: 2
 ---
 # ticket

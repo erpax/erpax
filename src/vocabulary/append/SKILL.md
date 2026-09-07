@@ -2,11 +2,11 @@
 name: append
 description: "Use when reasoning about append as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/append"
-coordinate: "vocabulary/append · 1/base · e9760a83"
-contentUuid: "d8a10f50-749b-508f-9eb0-4f9cbd0afc46"
-diamondUuid: "f79937b0-3ee6-8413-98a9-3b19e680451b"
-uuid: "e9760a83-7b71-8f87-90b6-d4ec03448700"
-horo: 1
+coordinate: "vocabulary/append · 5/round · f2ce28cd"
+contentUuid: "6ceff608-5fdf-59dd-987e-1541262ae5bc"
+diamondUuid: "ba0bced2-9adb-812d-9b0d-232433bbd492"
+uuid: "f2ce28cd-6546-82c0-a545-8638602b2a9e"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cc1b0e8f-457d-82a2-9ff3-4a0b2fea8ea0"
+  computationUuid: "a912b921-9cc9-8644-a080-5ec9541164f6"
   stages:
     - stage: path
       stageUuid: "48a0193a-d365-8184-9417-91e880d806aa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "05a79972-c83f-865a-a90b-7b59385714e1"
     - stage: horo
-      stageUuid: "95da2d65-e7c5-8c13-8d8a-6b4205680dcc"
+      stageUuid: "94243db0-16c4-8c5a-9441-96dd0d6dc49f"
     - stage: seal
       stageUuid: "723c35d3-ff89-808a-bd74-ef840eec27b3"
     - stage: uuid
-      stageUuid: "e9483340-d3ae-8642-bc22-3cac57e3bb69"
+      stageUuid: "8f5ae914-0bd9-8bae-b29c-0dda78ee5f28"
 version: 2
 ---
 # append

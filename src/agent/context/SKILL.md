@@ -2,11 +2,11 @@
 name: context
 description: Use when reasoning about context — createAgentContext — the ONE place an AgentContext is assembled.
 atomPath: "agent/context"
-coordinate: "agent/context · 7/descent · 757bdcfe"
-contentUuid: "9df3c5d7-8a71-5f7c-a1bb-abcbe023c7d0"
-diamondUuid: "1dfc1eeb-8829-8128-a831-37ad17a5ddad"
-uuid: "757bdcfe-2726-8c9f-aabd-ba6ec945b687"
-horo: 7
+coordinate: "agent/context · 5/round · 035d9269"
+contentUuid: "1367ed73-7342-5e92-a9d8-f08de693336c"
+diamondUuid: "8f939a48-c064-8b09-a76d-02d1c29ba433"
+uuid: "035d9269-a82f-88fe-8547-66911eb3a5b8"
+horo: 5
 typography:
   partition: agent
   bondDegree: 29
@@ -17,7 +17,7 @@ standards:
   - "ISO/IEC-25010"
 bindings: []
 signatures:
-  computationUuid: "ced82ce1-534d-8a9c-9920-a36dc843d484"
+  computationUuid: "88449e0e-691d-89b9-8047-e7f1a48c7852"
   stages:
     - stage: path
       stageUuid: "8b3c709d-b6e0-88ca-8c52-b574922b2ff0"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "01837e2d-4a3a-8606-a8d3-7945994c06e3"
     - stage: horo
-      stageUuid: "2fb217ac-d0fa-8c45-9c59-b82402875d90"
+      stageUuid: "4cc31071-f966-876a-bdf9-64f06c2b302f"
     - stage: seal
       stageUuid: "313862e8-b468-8239-8ebc-3180fbef7352"
     - stage: uuid
-      stageUuid: "7b3a125f-01ad-8732-8a80-955a458f781c"
+      stageUuid: "5f37c056-4e94-8efc-a18b-1b44be4689c9"
 version: 2
 ---
 # agent/context

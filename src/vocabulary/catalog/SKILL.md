@@ -2,11 +2,11 @@
 name: catalog
 description: Use when reasoning about catalog — A data catalog which contains this dataset.
 atomPath: "vocabulary/catalog"
-coordinate: "vocabulary/catalog · 2/share · faaab50d"
-contentUuid: "1aed2ba0-45c3-5542-ac04-05cf39a27351"
-diamondUuid: "45734308-5158-82ce-b0be-3a69854c8343"
-uuid: "faaab50d-543b-809c-b36b-0f25041ab246"
-horo: 2
+coordinate: "vocabulary/catalog · 1/base · ec85e1d0"
+contentUuid: "68705bea-0470-5443-8820-506b6b891d36"
+diamondUuid: "126038a2-31f3-838d-8eac-b929b6a01977"
+uuid: "ec85e1d0-5887-8af0-921c-8fc9a493b1db"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "10bb8bbb-a403-8108-9824-dfdd01990e20"
+  computationUuid: "0bbefa47-3bb3-8074-bfbc-c6814c97a255"
   stages:
     - stage: path
       stageUuid: "26639d9b-6d37-827d-9f05-d490ca4fae95"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "31079ad8-f78b-8800-b14f-b6eb1c3f4656"
     - stage: horo
-      stageUuid: "4c6dde97-0a14-896d-ad17-2e50b2884dc7"
+      stageUuid: "c9d80509-cf2a-8d86-b3af-4bf6aff7a19e"
     - stage: seal
       stageUuid: "cef41fb8-2fd1-8153-ac06-db0b19b30f9d"
     - stage: uuid
-      stageUuid: "a1c66b79-1721-844e-8ae4-c74d3cbcada9"
+      stageUuid: "b26a8c6c-1542-8c62-97da-e7a3d41aa801"
 version: 2
 ---
 # catalog

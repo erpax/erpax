@@ -2,10 +2,10 @@
 name: cache
 description: "Use when optimizing repeated access — cache invalidation strategies, cache-aside vs write-through, TTL/expiry, cache coherency, memoization, query result caching, distributed cache semantics (Cloudflare KV, Redis)."
 atomPath: cache
-coordinate: "cache · 5/round · fed5302b"
-contentUuid: "d4691e03-bbd0-5d52-a647-f1beff56d944"
-diamondUuid: "ad0a4a58-c793-8dff-a571-996d45fbd6b4"
-uuid: "fed5302b-7504-8f43-b469-648a7e16ba23"
+coordinate: "cache · 5/round · 6a01ef73"
+contentUuid: "eb71ba7a-0bc5-5ebe-a102-6129cf43d867"
+diamondUuid: "8b8f9b04-fa95-8e02-b23d-6bc92f15a3d2"
+uuid: "6a01ef73-fdf5-8376-b529-ec8a3ca925fb"
 horo: 5
 typography:
   partition: cache
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0be76443-c630-8499-9ceb-d33bd665fd1c"
+  computationUuid: "7b7cf6cd-d31f-8e9f-8d79-377c475ade70"
   stages:
     - stage: path
       stageUuid: "b4f861a8-7bbb-82a6-8f64-b4fc9af00e26"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3b1b8ee0-ac33-8921-924e-314476a0ff9c"
     - stage: horo
-      stageUuid: "a7ade055-eb22-8e23-b2c8-62750e616d33"
+      stageUuid: "f744df64-53ce-87b8-a06b-2018d27ffbf4"
     - stage: seal
       stageUuid: "efa332ed-0488-85f2-8e0e-72f0cb96efd8"
     - stage: uuid
-      stageUuid: "656fa851-9186-8065-b53d-9bb95fb7a36f"
+      stageUuid: "4b4d3f75-7b3a-8156-bcec-4ed29b246b33"
 version: 2
 ---
 # cache

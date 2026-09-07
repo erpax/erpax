@@ -2,11 +2,11 @@
 name: adverse
 description: "Use when reasoning about adverse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/adverse"
-coordinate: "vocabulary/adverse · 2/share · deaed6a3"
-contentUuid: "9ef93467-01d0-5c73-bd10-0c15994680d1"
-diamondUuid: "13592771-e8bb-8d0d-a4d2-34a882989270"
-uuid: "deaed6a3-03d9-8531-86d7-005264a89b00"
-horo: 2
+coordinate: "vocabulary/adverse · 1/base · c3dc62db"
+contentUuid: "789e0be5-24c8-5946-8508-3bfdccefab1c"
+diamondUuid: "8df4c116-7932-8225-8c26-8ca305c649dc"
+uuid: "c3dc62db-4a5c-84a4-902f-265d58a53aff"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d4f08f55-3167-84ff-afd7-90cc200e59a4"
+  computationUuid: "46c4c5d2-dec1-872c-a5b8-eb2d264a94c3"
   stages:
     - stage: path
       stageUuid: "74124a1b-74e3-8383-a644-170e7ab46627"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9affb3d3-725a-8db1-9cc8-14a165e82cc2"
     - stage: horo
-      stageUuid: "63da3175-a7dc-8df3-a7aa-667ee8c91fa2"
+      stageUuid: "b92166be-fdf2-86bf-8d09-271e11bac8f0"
     - stage: seal
       stageUuid: "8eeae0a2-674a-841b-bf20-c25c33460c99"
     - stage: uuid
-      stageUuid: "42c033b0-e129-841b-91ed-24e3e7eb1ca0"
+      stageUuid: "ee0cf05c-b08d-8142-ab7d-ac8c2f66c63a"
 version: 2
 ---
 # adverse

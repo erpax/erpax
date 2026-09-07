@@ -2,11 +2,11 @@
 name: unlabelled
 description: "Use when reasoning about unlabelled — A schema.org component word, collided out of schema.org compounds — fused from isUnlabelledFallback (sti · collapse · merge)."
 atomPath: unlabelled
-coordinate: "unlabelled · 7/descent · 5ff32de9"
-contentUuid: "58bc1b69-417a-50fa-a69b-64369474c392"
-diamondUuid: "5e2d0cb9-0e97-8723-a1f0-5e5a295ff5a6"
-uuid: "5ff32de9-1b50-8020-ab0a-6f81a157ad61"
-horo: 7
+coordinate: "unlabelled · 1/base · ccf4b147"
+contentUuid: "1b7aa59c-aeb0-5cfb-b240-7be98d9afc11"
+diamondUuid: "51b2b022-e8fc-8752-a427-858490c2c07c"
+uuid: "ccf4b147-0557-82df-a421-ae6dd1120210"
+horo: 1
 typography:
   partition: unlabelled
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d0fa94ca-44ef-89af-988d-f60fa8082e8d"
+  computationUuid: "8eec16a0-589a-8399-8c27-3c454455665d"
   stages:
     - stage: path
       stageUuid: "3370c6d3-0d07-8ec3-881b-4217418d5b2a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2c2a1b11-fe39-84f9-8cd3-af33141eb435"
     - stage: horo
-      stageUuid: "25e968c5-e40d-8a82-adb0-4e9e52c5268d"
+      stageUuid: "1e00819b-3f50-8ae4-b307-ae3dafacc18f"
     - stage: seal
       stageUuid: "6b2b41af-2e63-84f6-aaac-599157c842e0"
     - stage: uuid
-      stageUuid: "00f284ea-5f1d-8548-b0ab-0e4156365bc7"
+      stageUuid: "4aa40520-c837-8d40-96ab-54a0f335f1cb"
 version: 2
 ---
 # unlabelled

@@ -2,11 +2,11 @@
 name: grants
 description: "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register."
 atomPath: "government/grants"
-coordinate: "government/grants · 7/descent · 7c356588"
-contentUuid: "a87f2aa1-ff62-5778-b96a-d800214747cc"
-diamondUuid: "51d05fb5-9053-8972-824a-26c7ef0039b1"
-uuid: "7c356588-7594-8aed-a5d2-7cc77d389d32"
-horo: 7
+coordinate: "government/grants · 5/round · 8192297a"
+contentUuid: "29624b99-2d57-5ba4-a952-2d7d2d336eee"
+diamondUuid: "c2736f5b-8eee-8da0-93da-2915d0dcbc38"
+uuid: "8192297a-114c-8150-a645-8ff3441f498c"
+horo: 5
 typography:
   partition: government
   bondDegree: 22
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "516ae111-8e87-8930-9637-9b6fe2838bc4"
+  computationUuid: "162616a4-f5bc-885c-ab94-9d1e4fc4f030"
   stages:
     - stage: path
       stageUuid: "2bb7f38f-4966-81c1-93cc-90dc05023fcb"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "19d20619-ea59-8250-a52d-66611330fcca"
     - stage: horo
-      stageUuid: "8a17fa69-e22c-83a6-ac6f-01544c3e00fa"
+      stageUuid: "e4d3edaf-64e9-89c5-b056-806c2228c7e2"
     - stage: seal
       stageUuid: "fd6f4322-366a-832d-a044-b8f47fc13c52"
     - stage: uuid
-      stageUuid: "ac5e9c05-9c80-89c4-af7a-f3f16ba36abe"
+      stageUuid: "fa6db35f-8a8d-8e41-a378-52a0e489ea86"
 version: 2
 ---
 # government-grants

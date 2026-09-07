@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quotes",
-    "uuid": "c1ca1463-c2be-8afc-b36c-2418eb6c7389",
+    "uuid": "64cf5df9-8133-8f05-ad5f-503d1fa607d6",
     "words": [
       "quotes"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing or evaluating vendor RFQ responses — quote lines, pricing, INCOTERMS, lead time, award decision and rationale for OECD BEPS Action 13 and SOX §404 arm's-length evidence. The per-vendor RFQ response and competitive-bid award record.",
-    "uuid": "39348316-f651-8611-a4d6-12c49a4f7738",
+    "uuid": "3a1b679d-a560-8faf-882a-997e14532ac3",
     "words": [
       "use",
       "when",

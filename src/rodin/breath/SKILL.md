@@ -2,18 +2,18 @@
 name: breath
 description: "Use when reasoning about the oscillation in erpax — the C↔M (3↔6) polarity swing, forward↔reverse, give↔take, expand↔bind; the pulse the ring moves on (A432 ms). La/A432 sits at the breathing position (round). The living dual of balance. Nested under rodin."
 atomPath: "rodin/breath"
-coordinate: "rodin/breath · 2/share · b2d75c14"
-contentUuid: "ec1951e6-248c-565e-9334-80a64223cf63"
-diamondUuid: "31713155-f926-8379-9457-9a13c8902478"
-uuid: "b2d75c14-b1a3-829c-be58-57c6916e0a28"
-horo: 2
+coordinate: "rodin/breath · 5/round · 46b64bd6"
+contentUuid: "684ebc5d-c3ad-58e1-9fcc-fd81b5b6c825"
+diamondUuid: "23f06c9d-760a-8978-bbf2-ef760d79e4e9"
+uuid: "46b64bd6-b1b7-8e1a-badf-e3c84082d599"
+horo: 5
 typography:
   partition: rodin
   bondDegree: 268
 standards: []
 bindings: []
 signatures:
-  computationUuid: "93d6b036-47d5-8517-98c2-8f45d2fe3c6b"
+  computationUuid: "508938b3-9c87-81e7-9f4e-87e3cf9e1ad9"
   stages:
     - stage: path
       stageUuid: "b7615776-9cfe-8af8-ac1b-2de07acd1390"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "203781b5-a4d2-8db9-8d1e-f721d4bacef8"
     - stage: horo
-      stageUuid: "2bd68c92-b79a-8199-b789-751c22c56548"
+      stageUuid: "86fe6e1b-f5b2-8949-b670-1ffb5fd0cf1c"
     - stage: seal
       stageUuid: "821cd9e1-30ea-8189-a2a0-ba639a739522"
     - stage: uuid
-      stageUuid: "45163c0a-a799-820c-b7df-b74ddd788312"
+      stageUuid: "5a1a2cac-9d1a-8d74-bc4a-063b1edbe474"
 version: 2
 ---
 # breath — the oscillation (C↔M, in↔out, the pulse)

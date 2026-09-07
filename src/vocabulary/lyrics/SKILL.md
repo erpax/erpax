@@ -2,10 +2,10 @@
 name: lyrics
 description: Use when reasoning about lyrics — The words in the song.
 atomPath: "vocabulary/lyrics"
-coordinate: "vocabulary/lyrics · 7/descent · 500704ab"
-contentUuid: "cc8fdc18-54a0-5fac-8929-d8475f562a4a"
-diamondUuid: "d661eade-36f1-8bef-9d2b-c60ba253301b"
-uuid: "500704ab-9b1f-82a0-9429-62abe844fcce"
+coordinate: "vocabulary/lyrics · 7/descent · 3d28ba64"
+contentUuid: "e8f1be0f-3c6b-5066-a6a3-da1a52b329bb"
+diamondUuid: "ec4333f6-a0b8-891d-bf12-6b65d7987efc"
+uuid: "3d28ba64-9747-8dd1-b732-c949cf7eba8f"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "023d468c-3e61-8406-a451-c0e8601650cf"
+  computationUuid: "02dff95b-ffd3-8b64-a1ce-5bfe51423a48"
   stages:
     - stage: path
       stageUuid: "1bddd59b-78ea-80a9-b8da-0440a606cfa0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d8c34459-1417-8b9c-bbd9-174942b02d11"
     - stage: horo
-      stageUuid: "22dd82bc-8717-8db7-b61f-e5b315ccce2b"
+      stageUuid: "c868e5b4-7c11-850e-b36b-5a7cc26481bf"
     - stage: seal
       stageUuid: "c20c7303-b62c-870a-a232-eb1aad21fdcb"
     - stage: uuid
-      stageUuid: "ddfc4083-4071-84ca-b2cd-d8ddc8b60db4"
+      stageUuid: "5c21baf6-1ab5-87f7-b043-3b150d5138e1"
 version: 2
 ---
 # lyrics

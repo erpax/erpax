@@ -2,11 +2,11 @@
 name: mission
 description: "Use when reasoning about mission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mission"
-coordinate: "vocabulary/mission · 2/share · 01b4d62d"
-contentUuid: "417aa445-a4a3-50c1-8e39-19fbcb1a4f35"
-diamondUuid: "725dbeb1-05ff-88e1-a6dd-a06d044c7df8"
-uuid: "01b4d62d-5fa5-8f8c-8369-22e81a48614f"
-horo: 2
+coordinate: "vocabulary/mission · 7/descent · af433482"
+contentUuid: "209de23c-5585-5d37-bb98-12ce78a2d429"
+diamondUuid: "82a802b9-b90a-8336-b14f-2a751dcef0d1"
+uuid: "af433482-eeb3-87de-913b-c67f8d04bb1b"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c8807d68-41a5-806e-a34f-6aa5619c0822"
+  computationUuid: "dfb73d30-9645-8a9d-b6f7-bfe0ed1201cf"
   stages:
     - stage: path
       stageUuid: "34ba4dba-d6d8-8915-badc-76fbe9398044"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ded75754-081d-8305-8cf7-450004409e5e"
     - stage: horo
-      stageUuid: "0b6221aa-e52d-8b44-89ac-805efbfcd282"
+      stageUuid: "cfdb8552-210a-8981-b460-a9339d803a3e"
     - stage: seal
       stageUuid: "bf973a8e-c78b-81ac-9c73-0633dda56c33"
     - stage: uuid
-      stageUuid: "91d7ec33-0e40-8083-92eb-7fafa416e333"
+      stageUuid: "1cba5c7e-e920-8914-b885-9db2192c5046"
 version: 2
 ---
 # mission

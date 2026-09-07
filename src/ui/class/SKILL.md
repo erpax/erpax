@@ -2,18 +2,18 @@
 name: class
 description: "Use when reasoning about class — merges Tailwind class lists so a later utility wins over an earlier one — for the conditional shapes, for the conflict resolution. Six modules use it."
 atomPath: "ui/class"
-coordinate: "ui/class · 2/share · 8cacbfb2"
-contentUuid: "18bed474-a716-579a-a0e4-ffe498954049"
-diamondUuid: "6f85d484-9768-894c-963c-4d82e196f591"
-uuid: "8cacbfb2-d7be-8d50-827e-c30ae0ac62e5"
-horo: 2
+coordinate: "ui/class · 1/base · 7b685a93"
+contentUuid: "9b828d3a-920d-5602-8486-a5255db6b83c"
+diamondUuid: "43d71045-cf68-8ef8-b643-970c6f153ca6"
+uuid: "7b685a93-1191-89e2-9d59-873091c24d80"
+horo: 1
 typography:
   partition: ui
   bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c260405f-7f93-8f79-85cf-3cab35d00f0d"
+  computationUuid: "6cf09543-8414-8fe9-aef6-b0d7d4a01108"
   stages:
     - stage: path
       stageUuid: "375f7b83-a0a7-8592-bb3a-ee74fbd873ff"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e6fc6a7c-64c0-8ce7-a0d8-2f7cb06a66b3"
     - stage: horo
-      stageUuid: "bd4cdb84-a932-8dc0-8120-b37768b1a32d"
+      stageUuid: "f0d67b12-4c5a-8b11-8406-28a82544e3ce"
     - stage: seal
       stageUuid: "5f768016-b464-8126-8dcc-4343cca9d75a"
     - stage: uuid
-      stageUuid: "77d886ae-d200-8ce6-8e12-986aca4723e7"
+      stageUuid: "7e67be2c-511a-81f7-9a35-82a7d3b2c7b8"
 version: 2
 ---
 # ui/class — one place merges class names, and it is not called `utils`

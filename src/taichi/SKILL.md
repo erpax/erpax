@@ -2,11 +2,11 @@
 name: taichi
 description: "Use when reasoning about tai chi (太極) internal energy flow — chi (气) stored in the dantian (丹田 cung) and spiralled through counter-rotating double-torus vortices on the horo ring; the martial/wellbeing breath-body twin of rodin/coil and dual/torus/fusion, rendered as analog signal+wave."
 atomPath: taichi
-coordinate: "taichi · 7/descent · 42906495"
-contentUuid: "f4996998-022e-542f-87df-1441c78d6787"
-diamondUuid: "7f08d584-f0ee-81a9-aaaf-03bbf682df00"
-uuid: "42906495-74b5-8cf9-929f-6aadbeda1695"
-horo: 7
+coordinate: "taichi · 1/base · 05ec1cc7"
+contentUuid: "bd4619af-87d6-5b87-a8e2-96fbed37db57"
+diamondUuid: "c6ad655f-fb1f-838f-b8f1-02c67219f899"
+uuid: "05ec1cc7-0f79-8152-80f6-0732ea988e62"
+horo: 1
 typography:
   partition: taichi
   bondDegree: 51
@@ -14,7 +14,7 @@ standards:
   - "ISO-16:1975 a432-tuning-reference + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "c159aa14-37d7-8e22-8b83-2baa69da2cab"
+  computationUuid: "44aa922e-c58d-8234-8e8a-3ad1b85443ec"
   stages:
     - stage: path
       stageUuid: "dd62bc40-2800-8095-80c9-d4611f869fb3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "508d87d0-39b1-8951-87d0-4915b6d73904"
     - stage: horo
-      stageUuid: "f679354e-1240-8885-9a77-c5ac2eb9f152"
+      stageUuid: "a9decb94-55d8-8117-b91d-f0eae276b793"
     - stage: seal
       stageUuid: "080dbe7f-61ab-826d-8e4d-928cf79f749d"
     - stage: uuid
-      stageUuid: "d153a647-75d7-86ac-bd1e-1706b1df0ff7"
+      stageUuid: "677c8ec1-cd39-8c31-8164-c976f461a7a6"
 version: 2
 ---
 # taichi — chi-cung breath through the double torus

@@ -2,10 +2,10 @@
 name: mentions
 description: "Use when reasoning about mentions — Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept."
 atomPath: "vocabulary/mentions"
-coordinate: "vocabulary/mentions · 4/weave · fc4290ee"
-contentUuid: "9aea9e56-cb27-5455-8287-bbff19aaa91c"
-diamondUuid: "c77f2c93-f19e-88ae-8646-0259bd4f23e8"
-uuid: "fc4290ee-06ed-8a82-8cd0-8e1fc21ecc44"
+coordinate: "vocabulary/mentions · 4/weave · 7dff46f5"
+contentUuid: "b5386772-cd30-5a38-84b8-b349db7eca47"
+diamondUuid: "c7e6ca15-6482-8956-b785-b7fd6355d3b9"
+uuid: "7dff46f5-1079-8374-b721-867931769d8a"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "760b2ca3-1d6b-8d6e-81bd-60b3df0f77f6"
+  computationUuid: "83a179c3-7028-84bb-8026-1e4618435acd"
   stages:
     - stage: path
       stageUuid: "14e9f0d5-80ee-873b-961e-5c0406ff7b6f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bfd0bbe2-5c81-897a-b772-964be6719cf5"
     - stage: horo
-      stageUuid: "30f5ac74-ad4d-87e5-9467-17b5bb12198c"
+      stageUuid: "7758fedb-a140-8bd3-8b3a-50142a6779e7"
     - stage: seal
       stageUuid: "efb13afa-4409-878d-9cae-118202bfce09"
     - stage: uuid
-      stageUuid: "92779acf-bd77-88f5-85a5-fa5137162f5e"
+      stageUuid: "36955c36-910e-827b-bbb9-73f5274b3e8d"
 version: 2
 ---
 # mentions

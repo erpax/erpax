@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "command",
-    "uuid": "d91b7955-a2d3-8ae9-a998-153a97669b93",
+    "uuid": "cb7d64ae-3a7a-8d63-8228-e7a8e4f1225c",
     "words": [
       "command"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the Payload CLI command set folded into the corpus — each command a name (name equals path equals uuid), the set folding to one root by the merge, with both-sides inverse pairs encoded (migrate up and down, fresh and reset) and generators forward-only.",
-    "uuid": "6b49035b-03c8-89c5-b827-a9f78a58c713",
+    "uuid": "9f412695-8d5d-8693-828d-b8a814677502",
     "words": [
       "use",
       "when",

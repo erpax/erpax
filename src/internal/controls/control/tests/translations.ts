@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tests",
-    "uuid": "98f38572-e4b2-8c03-bc32-c292c99ce28e",
+    "uuid": "9464bf48-ae56-81fa-8285-4ba8682adbd9",
     "words": [
       "tests"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designing or executing SOX §404 control-effectiveness tests — sampling methodology (statistical/stratified/judgmental/census), assertion, sample size, tolerance, deviation count/rate, conclusion on effectiveness; links to the tested internal-control. The control-tests ISO-19011 sampling-evidence collection.",
-    "uuid": "3d7926d1-6b0d-8133-9dab-72ce3a554b40",
+    "uuid": "2c77773e-26ba-8295-9b81-6cefefedc990",
     "words": [
       "use",
       "when",

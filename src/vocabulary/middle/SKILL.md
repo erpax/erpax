@@ -2,10 +2,10 @@
 name: middle
 description: "Use when reasoning about middle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/middle"
-coordinate: "vocabulary/middle · 1/base · bc6e3668"
-contentUuid: "ef45743f-be3b-5738-9d45-c618dc718bcb"
-diamondUuid: "d4f43717-a369-8856-aa6a-e1539a1bfd4d"
-uuid: "bc6e3668-b2f8-8322-be6e-66d0b2fee285"
+coordinate: "vocabulary/middle · 1/base · 1595c143"
+contentUuid: "c461ad20-0c87-5478-8554-4d59d34d1e95"
+diamondUuid: "2086baef-92e5-8d19-9c42-5f2ee51f9a21"
+uuid: "1595c143-1c65-8b1a-bfbe-59b098702d8b"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dad452a8-be28-8cfc-a11f-fbe99f5d8c48"
+  computationUuid: "29e27406-4372-88a4-9041-59ef266feec3"
   stages:
     - stage: path
       stageUuid: "7fd36690-bca6-86a5-9f33-48d54b787e5f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c603be47-6376-85d4-86e8-44992cc4a4cd"
     - stage: horo
-      stageUuid: "d7070d15-095d-82c5-a31d-c6ae6aa2a11a"
+      stageUuid: "85c30d5e-f681-8035-8eb7-f697ccc722ae"
     - stage: seal
       stageUuid: "47cfa974-4988-8cd5-93d9-1a09e64a8f14"
     - stage: uuid
-      stageUuid: "2c87d9f9-9463-89b1-9f75-b36c710578db"
+      stageUuid: "fc8103dc-a6b8-86e4-9c7c-2ae3c75f8ed1"
 version: 2
 ---
 # middle

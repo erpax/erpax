@@ -2,11 +2,11 @@
 name: midpoint
 description: "Use when reasoning about midpoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/midpoint"
-coordinate: "vocabulary/midpoint · 7/descent · 604fe316"
-contentUuid: "0557b75e-e0b3-5fcc-a48e-9d94db1f8e6c"
-diamondUuid: "dd702859-d547-884d-97cf-33b933d01e3d"
-uuid: "604fe316-503b-88b8-b516-f28bb86c2dae"
-horo: 7
+coordinate: "vocabulary/midpoint · 8/crest · 1dad2ff6"
+contentUuid: "671ab863-074c-50f2-99d1-1d7270831dbc"
+diamondUuid: "a3b9527b-b64a-87c7-9279-f72c0603459e"
+uuid: "1dad2ff6-b4fd-8e31-a356-dbf6fb70098a"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d600eed0-80f3-85eb-8bc0-78c5e37f6846"
+  computationUuid: "f1d6668b-b2a3-8272-b059-e8955a6e208b"
   stages:
     - stage: path
       stageUuid: "2236a07e-602a-87ba-a229-62a6b6954aed"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dba644c1-0098-867d-ad32-e826b42e195e"
     - stage: horo
-      stageUuid: "e626ccc1-5ec4-84a3-9f70-74c91250beaa"
+      stageUuid: "4d34e0ab-d736-8c8d-a77e-68a973fe3afa"
     - stage: seal
       stageUuid: "1fa08ee8-8a0e-881a-b0f3-9cc50fc11b56"
     - stage: uuid
-      stageUuid: "b95171fa-d4fb-83a5-b2b7-66474aa21c3d"
+      stageUuid: "5d3ce76a-8373-89a2-983a-a8d87c8e991d"
 version: 2
 ---
 # midpoint

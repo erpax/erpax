@@ -2,11 +2,11 @@
 name: programming
 description: "Use when reasoning about programming as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/programming"
-coordinate: "vocabulary/programming · 2/share · 2e1ee31b"
-contentUuid: "6a57b2de-63c1-5a9e-a18c-3bea75108fc7"
-diamondUuid: "844e77da-ddb3-8479-a31b-77e190ff7eb7"
-uuid: "2e1ee31b-2fc8-8a71-9f1a-802662d32f62"
-horo: 2
+coordinate: "vocabulary/programming · 5/round · a470eba9"
+contentUuid: "fc38a641-1952-538f-bd94-3b4c45e738ed"
+diamondUuid: "b7301359-f2b4-8dc5-9d30-36dafd69413f"
+uuid: "a470eba9-3781-8644-9962-655ea1390cc3"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "393e65e4-37d8-83be-953c-0b8233c984ea"
+  computationUuid: "2de5a0ca-deb3-833b-9a68-f1d5c24d2427"
   stages:
     - stage: path
       stageUuid: "692e96a6-d927-8ee6-98d5-a0522723e68a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7985d406-62c9-881e-b8bb-183ad67c4dc9"
     - stage: horo
-      stageUuid: "b6746429-2366-83be-b534-1216fbad2a71"
+      stageUuid: "49a0d6fb-6813-84f6-960c-256494389e49"
     - stage: seal
       stageUuid: "cc80502e-cd8e-87bc-a3bc-0da59a46a542"
     - stage: uuid
-      stageUuid: "3456898c-7dc0-800e-97ea-5f5af9657630"
+      stageUuid: "98369be1-023f-85ff-91ab-360a6c13cea9"
 version: 2
 ---
 # programming

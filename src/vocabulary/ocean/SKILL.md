@@ -2,11 +2,11 @@
 name: ocean
 description: "Use when reasoning about ocean as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ocean"
-coordinate: "vocabulary/ocean · 1/base · 238379fc"
-contentUuid: "9e1a5496-7f03-551b-bea1-0a548b8ae594"
-diamondUuid: "9910e2eb-6676-8692-b599-7bb3de1d2df0"
-uuid: "238379fc-05d7-8325-9b6c-74c31d8fc358"
-horo: 1
+coordinate: "vocabulary/ocean · 8/crest · 55eae252"
+contentUuid: "a8b8666f-ad14-5873-8223-b5a3dc576557"
+diamondUuid: "bde9168c-e817-8470-b880-6c5d08677f00"
+uuid: "55eae252-a33b-8a2d-9591-f3b3459bdec5"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a4e51118-3146-8fe4-8c4b-8c40c7e4b53f"
+  computationUuid: "f390e49a-4271-8315-90ca-f07204f96733"
   stages:
     - stage: path
       stageUuid: "8a7fe0fa-e91d-890f-92cc-e6f0d971c319"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "658eee6d-6498-8407-9a87-0eeb86e70209"
     - stage: horo
-      stageUuid: "9558d49e-5b9e-8087-adb8-220b9771ea8d"
+      stageUuid: "4f840b37-0e5e-8d32-9957-7e58a282814f"
     - stage: seal
       stageUuid: "375761a2-25a8-8c3b-9848-4701249a723c"
     - stage: uuid
-      stageUuid: "f04fa210-875d-893e-af16-17b4c2d73b38"
+      stageUuid: "d31d0ddc-69b0-8acc-b684-0c563da3d429"
 version: 2
 ---
 # ocean

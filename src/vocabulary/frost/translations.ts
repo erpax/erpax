@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "frost",
-    "uuid": "20c2069d-1e57-878f-9658-fda67d00ea49",
+    "uuid": "f3e0f77e-38c7-8948-a642-c07906c9d5ad",
     "words": [
       "frost"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the freeze event bounds the growing season — the last spring frost and first fall frost define the frost-free period that caps which crops are feasible; frost dates are probabilistic (per-station, at a confidence level), not fixed calendar dates. The hard bound of the season; the event tunnels and hardiness buffer against.",
-    "uuid": "749e445d-bb44-8443-b090-2607915bbcd3",
+    "uuid": "bf0b0b91-1209-8de5-bbd0-94719421aad7",
     "words": [
       "use",
       "when",

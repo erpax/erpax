@@ -2,10 +2,10 @@
 name: spec
 description: "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST."
 atomPath: "dashboard/spec"
-coordinate: "dashboard/spec · 2/share · fa347ef1"
-contentUuid: "3725d9b8-167d-5245-a054-8fe2c1f79cd3"
-diamondUuid: "1769bac6-852d-8df1-ad86-9a1525ad010d"
-uuid: "fa347ef1-db3e-84d5-879b-f07197e1fe7f"
+coordinate: "dashboard/spec · 2/share · c27cfb04"
+contentUuid: "6519018f-0a31-5121-9ae8-dfd980947378"
+diamondUuid: "a853b0c4-a892-8fe5-8107-345d99ba1126"
+uuid: "c27cfb04-c0d5-89a7-a284-a8880ea4aa29"
 horo: 2
 typography:
   partition: dashboard
@@ -20,7 +20,7 @@ standards:
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "6b482129-b4a1-84da-8faf-0f8c3c45304a"
+  computationUuid: "651d3321-6c58-8735-b53d-f15769f66866"
   stages:
     - stage: path
       stageUuid: "f7bce593-f824-8b0f-bafc-52a67ea70dfe"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "b976ac0b-2698-80f5-9d7f-d9e64f288d3a"
     - stage: horo
-      stageUuid: "814f870e-65b7-8282-8ce1-e4350b428611"
+      stageUuid: "a7695cca-870f-876f-b846-d7621958b16a"
     - stage: seal
       stageUuid: "52bcf7f7-5552-8cd1-bb2c-0493c480d74d"
     - stage: uuid
-      stageUuid: "5343e32c-939e-840b-8b52-778373ea6e54"
+      stageUuid: "1bbe2bf3-9e26-84c5-8750-acee7198b35c"
 version: 2
 ---
 # dashboard/spec — a widget is pure, so the page decides what it costs to render

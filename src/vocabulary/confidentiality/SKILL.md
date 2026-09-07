@@ -2,18 +2,18 @@
 name: confidentiality
 description: "Use when a contract restricts disclosure — confidential information definition, permitted uses, exceptions (public domain, legally compelled, independent discovery), return/destruction, duration."
 atomPath: "vocabulary/confidentiality"
-coordinate: "vocabulary/confidentiality · 7/descent · 62bc1328"
-contentUuid: "3dd0527d-b2b1-5f20-a8c9-f58112e3d9fa"
-diamondUuid: "0e3bcd7a-2e8a-8ca7-a9a2-268adb4034e4"
-uuid: "62bc1328-bbe4-8dad-83c8-b3c0a1c9493d"
-horo: 7
+coordinate: "vocabulary/confidentiality · 1/base · dc220757"
+contentUuid: "dfbffcf7-3773-54fd-8401-27a4cf1ec3cf"
+diamondUuid: "1942b21b-d975-8101-b5f9-21ef04ab9786"
+uuid: "dc220757-de30-8764-9a74-f1eb7799230e"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "258f90e1-5e3a-8197-a4f9-3d0c5062dd16"
+  computationUuid: "423975b7-643b-82df-bd44-0dd1717e8131"
   stages:
     - stage: path
       stageUuid: "4ad70540-af12-8d48-89ac-dba7a591293c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b9c4ea8a-2961-8d81-823d-219ee60f888f"
     - stage: horo
-      stageUuid: "a335ec38-8912-843e-b148-2544a403f0aa"
+      stageUuid: "fd4b1efc-ae02-8bd4-8800-ad9a5599b20e"
     - stage: seal
       stageUuid: "3ca3cfe4-9da5-8536-b69d-59e28614849c"
     - stage: uuid
-      stageUuid: "8b11450e-017c-870e-b264-b43b1cc948e9"
+      stageUuid: "052157e4-8429-8572-8a10-d68dc5f6666b"
 version: 2
 ---
 # confidentiality

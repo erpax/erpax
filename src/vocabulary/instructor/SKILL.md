@@ -2,11 +2,11 @@
 name: instructor
 description: Use when reasoning about instructor — A person assigned to instruct or provide instructional assistance for the CourseInstance.
 atomPath: "vocabulary/instructor"
-coordinate: "vocabulary/instructor · 2/share · d374bed5"
-contentUuid: "6c6b3f87-056d-5811-9830-46b2379940e9"
-diamondUuid: "18ecc117-9c0b-8168-b57b-9614612424a1"
-uuid: "d374bed5-d92f-8e3c-92d8-1fee56bdaf3a"
-horo: 2
+coordinate: "vocabulary/instructor · 5/round · 77987701"
+contentUuid: "fbeb4106-4b79-5dec-befd-e07723751730"
+diamondUuid: "95adddc8-b3de-8aac-bc4f-a61b4037576a"
+uuid: "77987701-9a2b-8890-b826-316c54de4e48"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6607882b-d149-8255-b41a-5511196a2512"
+  computationUuid: "bf6c367a-14c8-8cc2-9646-6746b2abdfdd"
   stages:
     - stage: path
       stageUuid: "b096f257-0595-8087-b1ce-f17b68ce04bd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e19ea85d-566b-806d-801c-4fc77cbd6c0b"
     - stage: horo
-      stageUuid: "79e0138a-3212-88ae-9fb1-1a8ea4adbadd"
+      stageUuid: "7046d0b7-96b8-831d-ba31-d55d4b78b088"
     - stage: seal
       stageUuid: "2f7781a6-73d3-86b8-86ab-14d6ba6b8c37"
     - stage: uuid
-      stageUuid: "1bc755bf-157a-86b4-8bbb-d607af88b522"
+      stageUuid: "1d1d30a6-f636-8f47-9f7b-2dcc83203eef"
 version: 2
 ---
 # instructor

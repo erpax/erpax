@@ -2,11 +2,11 @@
 name: service
 description: "Use when reasoning about service — A service provided by an organization, e.g. delivery service, print services, etc."
 atomPath: service
-coordinate: "service · 7/descent · 065214d0"
-contentUuid: "0060d614-0532-5815-b7a9-338fcd61141c"
-diamondUuid: "e3bd49cb-a6f5-8b2c-939b-de1252deeba8"
-uuid: "065214d0-105f-84ef-81bb-89a9f32ca180"
-horo: 7
+coordinate: "service · 1/base · 3a18fe67"
+contentUuid: "e607bb68-2281-5b1c-91b4-d9ae3345a4eb"
+diamondUuid: "25001e18-bcd9-84bc-ba3f-fc82642f8ba2"
+uuid: "3a18fe67-36e6-8696-acbe-086eab4b7ab3"
+horo: 1
 typography:
   partition: service
   bondDegree: 183
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "28aa2a5a-4564-8756-ab16-16cd16fbfd69"
+  computationUuid: "116f14df-65fc-88e0-bdb2-bd0905f0bbcc"
   stages:
     - stage: path
       stageUuid: "23930370-1809-8ec5-a4ad-ffdc68e5e25b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f60239c8-ab5e-8a4d-8c54-1610c624b01b"
     - stage: horo
-      stageUuid: "3648ea64-d0d0-8b60-952d-d12e25f32c02"
+      stageUuid: "52b8b664-11e1-82ea-b5ac-0c73aec26215"
     - stage: seal
       stageUuid: "d3a4da0a-34c6-87a5-bbb1-f0864b8a9636"
     - stage: uuid
-      stageUuid: "4a1330e5-0ac0-84cc-92d8-e89744044890"
+      stageUuid: "c748f6ab-5e24-8b0b-bb49-685d4bff4454"
 version: 2
 ---
 # service

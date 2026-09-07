@@ -2,18 +2,18 @@
 name: admin
 description: "Use when the admin panel must boot by reuse rather than by searching the matrix — adminBootShell / adminBootFtl precompute the boot surface and report an ftl verdict for it. Promoted from a loose sibling because self/improve/tip locates it by FILE PATH, which no import scan can see. Run: tsx src/quantum/ftl/admin/index.ts"
 atomPath: "quantum/ftl/admin"
-coordinate: "quantum/ftl/admin · 4/weave · 3b3d4ee4"
-contentUuid: "93fe4315-50f6-592e-a4d4-150e3d890afb"
-diamondUuid: "fb2a1b29-205b-8524-9c28-7d96b179c291"
-uuid: "3b3d4ee4-479d-8c98-8564-0f51fb807f63"
-horo: 4
+coordinate: "quantum/ftl/admin · 1/base · 7c0dc9b0"
+contentUuid: "d2324dc3-6712-5b35-b8b7-474ee0e0bb75"
+diamondUuid: "a7c802e4-c850-8054-a3e7-287c6809b35a"
+uuid: "7c0dc9b0-4dfe-81ae-a7f6-ca98c57a6a6c"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 39
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d9d204b1-5434-8567-a7ff-0c0081804619"
+  computationUuid: "37366dd4-cf69-8a0a-909b-3c83ed6104ff"
   stages:
     - stage: path
       stageUuid: "a5be311c-86d5-80dd-a98d-f7cc5545aef3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "27a8e5b2-4707-8567-9514-4bb001b65e56"
     - stage: horo
-      stageUuid: "aa3a98ec-69e6-8085-972b-e5915739b106"
+      stageUuid: "6cb2c5ec-d54c-8bf6-b20e-02ead552c4fa"
     - stage: seal
       stageUuid: "afa31ef5-3792-8b2c-b596-80973e5210f6"
     - stage: uuid
-      stageUuid: "b4c53593-baf7-8fc5-b07e-c847cb385b8c"
+      stageUuid: "3ef41169-bbbe-8b7c-b835-4190bc16bb8f"
 quantum:
   superposition:
     - access
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d9d204b1-5434-8567-a7ff-0c0081804619"
-    contentUuid: "93fe4315-50f6-592e-a4d4-150e3d890afb"
+    computationUuid: "37366dd4-cf69-8a0a-909b-3c83ed6104ff"
+    contentUuid: "d2324dc3-6712-5b35-b8b7-474ee0e0bb75"
 version: 2
 ---
 # admin — boot as reuse, not as a search
@@ -81,4 +81,4 @@ The guard is therefore asserted from this side. The test reads the tip engine's 
 
 Composes: [[quantum]]/ftl · [[self]]/improve · [[law]].
 
-<sub>content-uuid `93fe4315-50f6-592e-a4d4-150e3d890afb` · account `quantum/ftl/admin` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `d2324dc3-6712-5b35-b8b7-474ee0e0bb75` · account `quantum/ftl/admin` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

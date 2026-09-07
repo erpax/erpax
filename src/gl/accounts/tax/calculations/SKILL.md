@@ -2,11 +2,11 @@
 name: calculations
 description: "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection."
 atomPath: "gl/accounts/tax/calculations"
-coordinate: "gl/accounts/tax/calculations · 7/descent · 0f8df543"
-contentUuid: "20c4ddd2-4ee8-5d38-885a-ae0a6c5c151a"
-diamondUuid: "5ea077ba-7b12-848a-82d0-6c071dad6872"
-uuid: "0f8df543-d9b1-8fee-b9bb-2ab20160ce02"
-horo: 7
+coordinate: "gl/accounts/tax/calculations · 4/weave · 0d7075c5"
+contentUuid: "0b2e9362-5e30-5dd9-a733-aeb397925d32"
+diamondUuid: "e7ac3118-b90b-8157-ae35-8fa09a94803a"
+uuid: "0d7075c5-16c7-8fb9-8feb-e9474995ba12"
+horo: 4
 typography:
   partition: gl
   bondDegree: 34
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "bd5a8f38-e2fa-8a4a-828a-e14bdd0426cc"
+  computationUuid: "0266cb81-5691-8869-91ef-5faebaa16bf1"
   stages:
     - stage: path
       stageUuid: "a21c4d46-dfb9-8827-8d5d-ef79247677a5"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "8ea662ea-5321-83e2-a608-92cabfadaa94"
     - stage: horo
-      stageUuid: "7fc3f933-6d99-8290-abae-571610b18994"
+      stageUuid: "bc4dbf11-6471-890e-9530-ce82f1c6a9bc"
     - stage: seal
       stageUuid: "b7722fdd-120b-851d-9fc0-2b05bb0200b2"
     - stage: uuid
-      stageUuid: "62341e3d-b795-8f14-9d4d-197f024c125a"
+      stageUuid: "c582e7ac-ffc8-823d-a468-6071f6c05105"
 version: 2
 ---
 # tax-calculations

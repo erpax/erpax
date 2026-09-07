@@ -2,10 +2,10 @@
 name: format
 description: "Use when reasoning about format as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: format
-coordinate: "format · 1/base · c9bfa088"
-contentUuid: "2fdb2f40-e064-5f63-a393-fe9ac37faf65"
-diamondUuid: "bb1a77d9-1098-89e6-925b-ba376f3d81dc"
-uuid: "c9bfa088-8537-80a0-a04e-f57e7a4c2625"
+coordinate: "format · 1/base · 40477680"
+contentUuid: "468c4fd4-114e-5772-a746-3b91c6e6f288"
+diamondUuid: "d4e7716a-da97-804f-83c4-9328fa53056a"
+uuid: "40477680-eb64-88dd-a5bd-4133ed3ed6ce"
 horo: 1
 typography:
   partition: format
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fb75af0b-6284-872b-b4d4-36a7ca77fd52"
+  computationUuid: "81627641-16c6-8761-89f3-3f2ab57a324d"
   stages:
     - stage: path
       stageUuid: "8daff3e1-4d09-8d8a-b0e9-460b61355101"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "58535139-d1ce-80d2-a201-b1e9f9f4ec9d"
     - stage: horo
-      stageUuid: "d7df9018-5643-83af-ae2b-58c573fe8422"
+      stageUuid: "0272f619-cc4b-8501-ad86-ca074615a52b"
     - stage: seal
       stageUuid: "5ae1651f-4162-8fce-938c-28a15024a478"
     - stage: uuid
-      stageUuid: "fd496bb4-35ab-8d86-97ba-406417699332"
+      stageUuid: "a2b06d25-a12d-8446-8856-a8ac3c09ee7e"
 version: 2
 ---
 # format

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "code",
-    "uuid": "be89eb28-8dbf-87cd-a27b-56efb3f54cbe",
+    "uuid": "6a447ddb-3c56-82f9-9e67-56fd41bc86f0",
     "words": [
       "code"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when master-data needs a unique short code — accounts, products, machines, teams, categories. The CodeConcern field-factory; code derived from name when absent; code is the human key, content-uuid the machine key.",
-    "uuid": "a8022dcb-8399-832d-a650-5b3872157115",
+    "uuid": "cd4d6619-b68b-8544-b1e7-3019f65acd05",
     "words": [
       "use",
       "when",

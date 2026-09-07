@@ -2,18 +2,18 @@
 name: backup
 description: "Use when ensuring data recovery — backup strategy (full/incremental/differential), backup retention, restoration procedures, backup encryption, cross-region backups, RTO/RPO targets, backup testing/validation."
 atomPath: "vocabulary/backup"
-coordinate: "vocabulary/backup · 8/crest · d0b50915"
-contentUuid: "f71a9162-c3dd-5c46-968f-8020578378f4"
-diamondUuid: "6c22a742-0fa4-845f-a6d8-d539f070af58"
-uuid: "d0b50915-5c5e-8e3e-aa78-3dc70c76e9b1"
-horo: 8
+coordinate: "vocabulary/backup · 1/base · 8e218598"
+contentUuid: "265d1425-82ca-514f-885c-6647ea999890"
+diamondUuid: "45683cf0-ef59-8738-b2b6-f8202cbd2b08"
+uuid: "8e218598-b664-8a0d-be45-15767bcf1049"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8193236f-c46d-820a-970c-f34f036b9805"
+  computationUuid: "44d08524-f28b-8005-8b67-97c5f5f4d9b5"
   stages:
     - stage: path
       stageUuid: "b843c4b7-72c8-8e49-8bad-69faa101bd9c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6dc6616b-709c-8f8e-ab5c-bec8fb75b74b"
     - stage: horo
-      stageUuid: "7a281fb5-b429-8d58-9894-7b12a5ca7e05"
+      stageUuid: "e7c1ef5f-89a5-815a-b395-755ef1ac5836"
     - stage: seal
       stageUuid: "7c54926e-21e9-8904-8da5-8949800c2300"
     - stage: uuid
-      stageUuid: "4c78820c-4bbc-8c37-ad76-595b48cb5088"
+      stageUuid: "dbf83d21-e9e1-85cd-90c5-f43d63956d00"
 version: 2
 ---
 # backup

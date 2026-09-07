@@ -2,11 +2,11 @@
 name: presented
 description: "Use when reasoning about presented as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/presented"
-coordinate: "vocabulary/presented · 7/descent · 72fab3ec"
-contentUuid: "77f3e29e-4400-5151-a1fd-962bba36821c"
-diamondUuid: "325752f5-5f54-8429-bf0b-92144f07e749"
-uuid: "72fab3ec-f72c-800a-9130-d696c17faa95"
-horo: 7
+coordinate: "vocabulary/presented · 4/weave · 1c5dc556"
+contentUuid: "68a443a4-6ddd-5cf0-b84f-31d2e3ae8024"
+diamondUuid: "31cf0be9-97c2-8c50-98bd-93016fce9d8a"
+uuid: "1c5dc556-cfbf-8623-ad6b-c8bee69ef68b"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b4dd4407-db34-8531-9588-fe06dcc595d4"
+  computationUuid: "16cdb698-efa3-8aad-ae59-145388efe4e6"
   stages:
     - stage: path
       stageUuid: "19df93da-535b-8f72-87f0-4864c5e760bf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c2b89ae5-4cc6-8b7d-b9a7-6b2eaa802137"
     - stage: horo
-      stageUuid: "4246f98b-b192-848d-a61e-4e3fa036315a"
+      stageUuid: "27d46de7-a91c-8836-8829-1306365acfe8"
     - stage: seal
       stageUuid: "508bbeb9-9d4e-8fc0-a8f6-1f064f79c0fa"
     - stage: uuid
-      stageUuid: "cdbf447b-2ef2-8049-8d78-d961ec7e1d0a"
+      stageUuid: "c365c993-f7f3-8600-b9eb-2c6664449256"
 version: 2
 ---
 # presented

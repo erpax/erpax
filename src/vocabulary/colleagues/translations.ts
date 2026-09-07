@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "colleagues",
-    "uuid": "f5c06602-0039-8fdc-9746-44a8ffd42320",
+    "uuid": "ab46a8ff-d418-856c-a361-d4d065c5b11c",
     "words": [
       "colleagues"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about colleagues — The person's colleagues — see colleague (the singular). A dimension of one relation: colleagues is the collection, colleague the unit; the text lives once, in colleague.",
-    "uuid": "d5d743b1-73f5-8f8c-b2e2-290372443835",
+    "uuid": "465f4486-5cfd-8c38-a553-31b9adb05d25",
     "words": [
       "use",
       "when",

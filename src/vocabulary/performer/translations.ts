@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "performer",
-    "uuid": "fab7a185-715a-87c4-92c5-720d77ab73d1",
+    "uuid": "8f46a93f-4484-81c0-b21b-5a8db4d83091",
     "words": [
       "performer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about performer — A performer at the event&#x2014;for example, a presenter, musician, musical group or actor.",
-    "uuid": "ecdaecaf-0935-8acc-be11-629607cd34b7",
+    "uuid": "643e507b-37fc-8a24-a32a-ad2cb6ece2ca",
     "words": [
       "use",
       "when",

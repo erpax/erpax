@@ -2,11 +2,11 @@
 name: graph
 description: "Use when reading a graph as entanglement — an edge is an entangled pair, entanglement is symmetric, so a coherent corpus reciprocates every edge; entangled is the connected component."
 atomPath: "quantum/graph"
-coordinate: "quantum/graph · 8/crest · d027dd20"
-contentUuid: "516cc05b-f6c4-5792-a72f-7cb977c13b10"
-diamondUuid: "8529a7bb-63b4-8d0d-8964-a0b72ae6ce3f"
-uuid: "d027dd20-a860-8e5d-b5f0-5c8e4aa3ee22"
-horo: 8
+coordinate: "quantum/graph · 7/descent · e39c456b"
+contentUuid: "533e802e-cc09-50ba-964c-ecb75574a59d"
+diamondUuid: "65cbb582-c649-867c-8bd0-5c66c37800bc"
+uuid: "e39c456b-2ad0-8996-a42f-a649b00e4331"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 42
@@ -14,7 +14,7 @@ standards:
   - "symmetric (reciprocal) entanglement — directed-link entropy → 0"
 bindings: []
 signatures:
-  computationUuid: "2b4fbd83-f351-8565-9752-ba7e9314504d"
+  computationUuid: "416574da-7a46-8b0a-a399-84b4ae7b9d6c"
   stages:
     - stage: path
       stageUuid: "0512b6c1-b02f-8872-b8b1-a82178658a4d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6b8524db-4eed-8e5a-97e7-276da15b5a02"
     - stage: horo
-      stageUuid: "eb2f421e-fc73-8e96-bc24-577444c51626"
+      stageUuid: "bd0d4101-a4b6-8fed-b785-7b36e5967665"
     - stage: seal
       stageUuid: "7079e992-19eb-80c7-9f80-82d1867b2f24"
     - stage: uuid
-      stageUuid: "5156466e-e387-8492-8820-969974bde507"
+      stageUuid: "40a0a387-1952-8621-9b17-646527ae46fc"
 quantum:
   superposition:
     - atom
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "2b4fbd83-f351-8565-9752-ba7e9314504d"
-    contentUuid: "516cc05b-f6c4-5792-a72f-7cb977c13b10"
+    computationUuid: "416574da-7a46-8b0a-a399-84b4ae7b9d6c"
+    contentUuid: "533e802e-cc09-50ba-964c-ecb75574a59d"
 version: 2
 ---
 # quantum/graph — the graph as entanglement
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/graph/index.ts` (`isReciprocal` · `reciprocate` · `e
 
 @standard symmetric (reciprocal) entanglement — directed-link entropy → 0
 
-<sub>content-uuid `516cc05b-f6c4-5792-a72f-7cb977c13b10` · account `quantum/graph` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `533e802e-cc09-50ba-964c-ecb75574a59d` · account `quantum/graph` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

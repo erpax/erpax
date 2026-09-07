@@ -2,11 +2,11 @@
 name: treatment
 description: "Use when reasoning about treatment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: treatment
-coordinate: "treatment · 4/weave · e0191375"
-contentUuid: "d30c5b09-0a4e-53b6-a4fb-ccf48acc64a8"
-diamondUuid: "d1f373f5-7d67-8183-9f9b-48971b537bdb"
-uuid: "e0191375-cfe0-8ab7-9797-913a4aaaff45"
-horo: 4
+coordinate: "treatment · 1/base · 7b903b5d"
+contentUuid: "6d226906-0058-5394-bfda-e2c6e4ffe6c8"
+diamondUuid: "29febc6b-0591-834d-96b1-a54873962f42"
+uuid: "7b903b5d-4f3a-898c-b8e3-9fbaf490b655"
+horo: 1
 typography:
   partition: treatment
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c9196807-42e6-8f3f-8190-c178dd44e891"
+  computationUuid: "be4b283f-5a4e-8a33-98ab-3e2f1bf018a3"
   stages:
     - stage: path
       stageUuid: "1b9d5f6f-8219-84be-a7e1-515f16c62fc2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "50448a84-619d-8933-be21-b441865e032f"
     - stage: horo
-      stageUuid: "b18e4832-cb79-8f1b-885e-92defef88d83"
+      stageUuid: "c7ddfcfe-5a48-8e3c-a13b-9b18f6596621"
     - stage: seal
       stageUuid: "05af4ebc-1ff6-8812-a6ef-5872698f05fe"
     - stage: uuid
-      stageUuid: "b7ed0ab4-b73a-8aa2-975e-25f480811e3f"
+      stageUuid: "9f392f1b-558d-89b7-92ff-14dc4bcd63a2"
 version: 2
 ---
 # treatment

@@ -2,11 +2,11 @@
 name: pathophysiology
 description: "Use when reasoning about pathophysiology — Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition."
 atomPath: "vocabulary/pathophysiology"
-coordinate: "vocabulary/pathophysiology · 5/round · 78c34607"
-contentUuid: "744908c9-3130-5872-a038-2d6e7e03dbf5"
-diamondUuid: "10936b81-55b1-841b-b2e0-08ad9f19487a"
-uuid: "78c34607-df2b-89ee-bfb2-5f3bd98551a6"
-horo: 5
+coordinate: "vocabulary/pathophysiology · 8/crest · 0ce0866a"
+contentUuid: "07ae786b-7410-5016-b889-b138c9ce0a91"
+diamondUuid: "10289f17-4b58-87bc-8afa-80360bb23322"
+uuid: "0ce0866a-3c2d-8cbd-baac-205630fc628b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1b19840f-4482-8b3d-a228-5880eadad8ab"
+  computationUuid: "bee2fa51-0f9e-86d4-9e61-ad4dadf2fc01"
   stages:
     - stage: path
       stageUuid: "aababcac-e8dc-857a-b14c-7ade5a61347d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e2214ce6-54e9-8408-a5bc-15ad2985e448"
     - stage: horo
-      stageUuid: "f344eeff-91e6-8808-85d6-83d4226aef7d"
+      stageUuid: "051a6d4d-3bd4-8e51-8637-5008eaeae9d5"
     - stage: seal
       stageUuid: "92615758-76fd-842e-a408-5fa51b58e00d"
     - stage: uuid
-      stageUuid: "df0933e5-c98a-806a-acb4-6af39876752f"
+      stageUuid: "d31db6d6-c099-8828-acd8-1e323e533dd3"
 version: 2
 ---
 # pathophysiology

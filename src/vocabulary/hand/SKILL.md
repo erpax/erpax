@@ -2,11 +2,11 @@
 name: hand
 description: "Use when reasoning about hand as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hand"
-coordinate: "vocabulary/hand · 7/descent · 2eb03342"
-contentUuid: "c0ac711d-fa52-5b49-bb0a-08ec4d19c258"
-diamondUuid: "5849f767-48a7-8448-9989-a0a3b7c16fdf"
-uuid: "2eb03342-dff1-838c-82c1-ebac4ef130c5"
-horo: 7
+coordinate: "vocabulary/hand · 1/base · 6517b36f"
+contentUuid: "8ea992d7-1f48-57d2-9f50-59dbd2a29ed2"
+diamondUuid: "f43ceb06-5772-88f0-a13e-ba2581d8ee7d"
+uuid: "6517b36f-a9f5-8119-a170-fda2e9c7eaee"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "22fb7d29-a884-80b3-9356-dc43bcf6901e"
+  computationUuid: "ba4cd093-9653-859d-a381-b19966ab718b"
   stages:
     - stage: path
       stageUuid: "d1b68bea-5f45-80e2-a3a6-7cbe7fe9a068"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4a6d2d67-1efe-8ef9-917b-ddd17753c84b"
     - stage: horo
-      stageUuid: "8a64dac3-39e3-8d1a-b557-1cd6434ca0f6"
+      stageUuid: "be00542f-48d4-83f5-bf80-c777c6ed32c7"
     - stage: seal
       stageUuid: "5728928a-05d1-83db-9505-4891332a7df3"
     - stage: uuid
-      stageUuid: "f7ebe245-32f2-88ae-a211-224203439738"
+      stageUuid: "5059a301-0f2d-8e85-a5d8-73c667d1ccb4"
 version: 2
 ---
 # hand

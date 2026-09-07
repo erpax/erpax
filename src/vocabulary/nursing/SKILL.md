@@ -2,10 +2,10 @@
 name: nursing
 description: "Use when reasoning about nursing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/nursing"
-coordinate: "vocabulary/nursing · 7/descent · 1e28d5c1"
-contentUuid: "d8cf3ef1-cbc9-5efd-8ca7-7f5ad6548c52"
-diamondUuid: "e43e810b-9db0-8838-999b-ae416451f779"
-uuid: "1e28d5c1-fba1-88e8-911d-9d3f03678a30"
+coordinate: "vocabulary/nursing · 7/descent · 45c03ea5"
+contentUuid: "978c9b17-cad6-5438-bcdc-bbcad7278de7"
+diamondUuid: "dc51cc76-f7fe-81e2-98b7-b13262a997eb"
+uuid: "45c03ea5-e684-8a17-ab2d-cf18bce1d7a8"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9d93d821-d716-81a1-bc78-57775f2f40ea"
+  computationUuid: "6884977d-814f-8943-b9e3-75d32fced2b9"
   stages:
     - stage: path
       stageUuid: "a4754f84-eb89-8f0a-b1ea-2bb803855d47"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "73abb282-54f0-8047-ab3a-3b1717642a9b"
     - stage: horo
-      stageUuid: "15233c87-11b5-80b0-b58a-b4ad310a13e1"
+      stageUuid: "2bdc9a8a-818a-81c4-93be-322f3ebfc148"
     - stage: seal
       stageUuid: "3c2565f0-a4f0-8751-8255-22914b3809a5"
     - stage: uuid
-      stageUuid: "adb58123-820f-8cb4-940b-5707ae4745eb"
+      stageUuid: "5ca146e7-bef7-8582-a9dc-19cdd13bf0b2"
 version: 2
 ---
 # nursing

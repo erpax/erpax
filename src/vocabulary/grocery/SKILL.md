@@ -2,11 +2,11 @@
 name: grocery
 description: "Use when reasoning about grocery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/grocery"
-coordinate: "vocabulary/grocery · 2/share · 45c94320"
-contentUuid: "844155ad-2d4d-52d0-a26a-f4f823f88fa7"
-diamondUuid: "5c5cc9ab-ab07-89e9-aee8-6ded0ab8db83"
-uuid: "45c94320-b8cd-895e-9685-0c9c2c7d541e"
-horo: 2
+coordinate: "vocabulary/grocery · 8/crest · 20180a4a"
+contentUuid: "666d1e54-beb4-5760-a29f-009cf3f4f4fe"
+diamondUuid: "63ce6efc-45b6-8c09-9313-5f152f57cfc8"
+uuid: "20180a4a-3155-8f35-9251-deefadb21aa6"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff635088-dc11-8549-880d-3b55756a5d99"
+  computationUuid: "a7caebde-4946-8514-9f7d-b017bce0358d"
   stages:
     - stage: path
       stageUuid: "65b59090-12e6-806d-b893-4f4bc5cb21d3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cb39cbea-bae5-84dc-9acc-6232dcd11a4d"
     - stage: horo
-      stageUuid: "02de527c-7dd8-8ce9-aaa8-6d598be3c7dd"
+      stageUuid: "186e56e9-93ff-8454-807b-61cb4f0e714b"
     - stage: seal
       stageUuid: "164c4f40-cb49-83b6-aa44-5de50b7f99d9"
     - stage: uuid
-      stageUuid: "8a924682-06f6-8c99-85e1-f206d1bc4cde"
+      stageUuid: "f2aa6c95-a925-81c8-84ab-3eb1fe00374c"
 version: 2
 ---
 # grocery

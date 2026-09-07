@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "grace",
-    "uuid": "79b02011-22bd-8043-8f81-cd335cca00dc",
+    "uuid": "179e64a6-6793-811a-9098-30941731b81a",
     "words": [
       "grace"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the unearned credit in erpax — the write-off / jubilee / forgiveness that clears a debt the debtor cannot pay; the reversal that restores balance from outside the ledger. The universal root of unmerited settlement; dual of debt.",
-    "uuid": "50322294-8d92-82f1-a23f-5622455fcc2e",
+    "uuid": "a49fd44f-0da1-8c48-a78b-5aa692b7b626",
     "words": [
       "use",
       "when",

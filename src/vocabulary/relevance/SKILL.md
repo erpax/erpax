@@ -2,10 +2,10 @@
 name: relevance
 description: "Use when reasoning about relevance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/relevance"
-coordinate: "vocabulary/relevance · 8/crest · 6c7a0459"
-contentUuid: "4b4c7374-29de-5b37-a7b9-1a57fcea94f0"
-diamondUuid: "445023d3-dd65-8b65-837b-a15a2e391881"
-uuid: "6c7a0459-55f2-8dcf-a75e-4c0a62d8dc2c"
+coordinate: "vocabulary/relevance · 8/crest · 72c44e00"
+contentUuid: "20a47794-aa47-5fa0-acf3-7ddf19465eb0"
+diamondUuid: "d5b303ef-ef9f-829a-ac61-2a4bae2358b7"
+uuid: "72c44e00-8812-8f5b-b317-a68a86593676"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e9e05dc4-9813-8377-8636-e52e447d055d"
+  computationUuid: "72bc702b-e992-82a8-b8b9-23c5638df84d"
   stages:
     - stage: path
       stageUuid: "5aabc1b2-6cb2-8b96-8cb7-310e4133e317"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6e6d84e7-defb-8975-8399-e3787a97481c"
     - stage: horo
-      stageUuid: "94371a42-4220-804e-865c-2ca91b716902"
+      stageUuid: "f38bc93c-fda7-8065-87b8-d106d7332e62"
     - stage: seal
       stageUuid: "41ec61d3-72a6-866c-83bd-58d65c7f7a1e"
     - stage: uuid
-      stageUuid: "88810001-82d5-8053-b71c-26a95e207856"
+      stageUuid: "2dcd7d21-7887-8879-8fd3-8ccdfa803f1a"
 version: 2
 ---
 # relevance

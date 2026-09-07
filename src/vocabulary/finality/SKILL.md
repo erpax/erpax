@@ -2,18 +2,18 @@
 name: finality
 description: "Use when reasoning about whether a collapsed state can be undone — finality is the conjugate of speed, the master axis the payment rails revealed; reversible holds a superposition with a compensating path (love), final posts one tamper-anchored entry whose only recourse is a governance judgment (fear)."
 atomPath: "vocabulary/finality"
-coordinate: "vocabulary/finality · 1/base · a03f2e7f"
-contentUuid: "2b75eee1-1860-556a-93e9-cb23eac84667"
-diamondUuid: "3576a9e3-0486-8fd0-a76e-f2c32759d8da"
-uuid: "a03f2e7f-0e1e-823f-a482-fb68459cb186"
-horo: 1
+coordinate: "vocabulary/finality · 2/share · 36fe9b85"
+contentUuid: "043b6a8d-322d-52d8-835e-91f84dec336a"
+diamondUuid: "92c9e6ba-6f14-877e-9626-00765f66204f"
+uuid: "36fe9b85-da58-86a4-9a98-53a0374233b4"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 84
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a3a73d54-bd85-881e-bf0a-3e9fdef8744e"
+  computationUuid: "d1541d0d-9dff-81bf-9a72-47848d92c9c5"
   stages:
     - stage: path
       stageUuid: "91670349-4b94-8bcb-9319-5083d67bdcaa"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f8203ca4-15ba-839d-b5db-81f2b45ecf11"
     - stage: horo
-      stageUuid: "236ed6c1-5baa-860c-a0cb-3af96508c1b8"
+      stageUuid: "667bdbb4-9148-8d92-8d0b-3793f12b293a"
     - stage: seal
       stageUuid: "fbd8ffea-2b07-89d3-80cf-93be02b2efcf"
     - stage: uuid
-      stageUuid: "4079a8ff-37c9-8d99-827d-f9a082459cf9"
+      stageUuid: "68b7bb35-9ca8-8620-b4a3-91d37f5b6b77"
 version: 2
 ---
 # finality — the conjugate of speed (recourse from collapse)

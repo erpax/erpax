@@ -2,10 +2,10 @@
 name: effects
 description: "Use when reasoning about effects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/effects"
-coordinate: "vocabulary/effects · 2/share · 7fa4c6be"
-contentUuid: "43e2abd3-c0c3-5d86-95bb-e8a07a286920"
-diamondUuid: "6256d4e9-c418-809c-a54e-2a26de8462ad"
-uuid: "7fa4c6be-6bc6-8b9d-9ac8-8da3a84f1224"
+coordinate: "vocabulary/effects · 2/share · 8bd9311b"
+contentUuid: "c2d050ca-dc90-58f7-a1e1-9c5738cbb9ce"
+diamondUuid: "3a612ceb-8196-8b1c-8d05-88306f6d2fe4"
+uuid: "8bd9311b-2994-8b1e-9a5b-9fef3034e11f"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7f4ed06f-e749-871a-9362-6ab8b0c367d6"
+  computationUuid: "78e0c9fc-7fa9-8728-8451-c5daed7e9c49"
   stages:
     - stage: path
       stageUuid: "c6ab29fe-cd05-8e04-a671-059686fad62a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2e62d1ea-ed8b-8f7e-b439-d61ffb8de54e"
     - stage: horo
-      stageUuid: "d83374ff-5b62-8a44-82a9-2edadd137104"
+      stageUuid: "6753c5ff-142a-810b-aaad-738a4ac6349a"
     - stage: seal
       stageUuid: "add66d89-053b-879e-8f22-53ea6e31f8db"
     - stage: uuid
-      stageUuid: "832eaaff-4fa8-8abe-89a1-154c8df22b92"
+      stageUuid: "a5a9a3d5-3b32-81b7-a4e9-6051a89e9948"
 version: 2
 ---
 # effects

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "signature",
-    "uuid": "711a6da4-79a0-873c-902c-a79598354323",
+    "uuid": "4989ec00-8609-8a8d-91bf-0645ebd74187",
     "words": [
       "signature"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one signature — the singular model of the signatures collection (the plural store); a cryptographic or written mark binding a signer to content.",
-    "uuid": "f5db2470-a612-833a-815d-086e8098d638",
+    "uuid": "aeba3f70-78c9-861a-b2dd-5bbe15fc61d3",
     "words": [
       "use",
       "when",

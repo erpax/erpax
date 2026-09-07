@@ -2,10 +2,10 @@
 name: identification
 description: "Use when reasoning about identification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: identification
-coordinate: "identification · 7/descent · 3778af4d"
-contentUuid: "8644037a-0ea7-5771-a4c0-c11e57de4897"
-diamondUuid: "2aef321d-4532-8e89-9879-71c68f5372a1"
-uuid: "3778af4d-2db6-856b-a204-4cf9693f107f"
+coordinate: "identification · 7/descent · e2e55819"
+contentUuid: "24793c47-3528-55a8-8d60-89a492dcc06d"
+diamondUuid: "14e96111-ffd6-8464-90b7-cd8b174ad8df"
+uuid: "e2e55819-64eb-8381-ace9-e301546699dd"
 horo: 7
 typography:
   partition: identification
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5e3a7b42-c07f-83f7-8c0b-7eb25387f77c"
+  computationUuid: "f632605c-b7d9-89ce-afe8-e0ccd17638f3"
   stages:
     - stage: path
       stageUuid: "b71e7779-3107-8ce3-ba38-be0df79f76a1"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "9ad6c042-03b6-8801-8d49-4934de6362f1"
     - stage: horo
-      stageUuid: "1ffd7557-3aa1-82b3-80f5-07f3fbbe73e4"
+      stageUuid: "beeea94d-2cca-83ca-9958-5278d131757c"
     - stage: seal
       stageUuid: "54cee6c7-18d8-82db-90bb-68d23750a8fa"
     - stage: uuid
-      stageUuid: "0c2cda9a-6e6f-8437-b6a2-19a54c1a90c7"
+      stageUuid: "f1aa708c-d83c-8ea0-8ca6-2a572b7b4ff1"
 version: 2
 ---
 # identification

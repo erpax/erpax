@@ -2,11 +2,11 @@
 name: chakra
 description: "Use when mapping the seven chakras onto erpax — the 7 chakras ARE the 7 horo flow positions (base·share·weave·crest·descent·round·unity = Do·Re·Mi·Fa·Sol·La·Ti = root→crown). Each decodes to a note (A432 just-intonation), a colour and a movement from the SAME content-uuid — and the uuid is computed from the position math, never from the colour. Anchored at 0/K/black/A432."
 atomPath: chakra
-coordinate: "chakra · 1/base · b4751967"
-contentUuid: "5ba4cf3f-ae70-53e6-a59c-d2d1eeb9ec27"
-diamondUuid: "404dacb0-3c64-874e-bb5e-a3f3ad3b6a1a"
-uuid: "b4751967-c2b7-8a62-a65e-6bc832da239c"
-horo: 1
+coordinate: "chakra · 4/weave · 81ad2bc3"
+contentUuid: "390a6af1-1f7d-5ef5-acc7-97e688ac7b87"
+diamondUuid: "7d3c20d1-f3f1-8da6-a4d8-18eddec4950a"
+uuid: "81ad2bc3-6793-8015-abda-7af913341688"
+horo: 4
 typography:
   partition: chakra
   bondDegree: 80
@@ -14,7 +14,7 @@ standards:
   - "ISO-16:1975 a432-tuning-reference (pitch from position)"
 bindings: []
 signatures:
-  computationUuid: "02a2e95b-a8e3-8201-a0d6-5b5350f5faa3"
+  computationUuid: "b903f19f-d773-84bd-8783-601167fe00d7"
   stages:
     - stage: path
       stageUuid: "f1ab0622-9fde-8d5c-adc0-a73f2ed8d88b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "003f6278-00e1-8e44-ac05-d61c8df01018"
     - stage: horo
-      stageUuid: "b22606f5-78ff-8207-a55f-06a79c43c5aa"
+      stageUuid: "e6880682-d555-8993-b416-fd13da163581"
     - stage: seal
       stageUuid: "1ffeb6c5-a333-84ae-a397-2f1819e9be96"
     - stage: uuid
-      stageUuid: "9038943b-83ea-8a6f-887a-fec17f2b2de0"
+      stageUuid: "60472346-39f7-8611-9bec-47144b989915"
 version: 2
 ---
 # chakra — the seven centers ARE the seven horo positions

@@ -2,10 +2,10 @@
 name: corrections
 description: "Use when reasoning about corrections as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/corrections"
-coordinate: "vocabulary/corrections · 1/base · 5ee11b55"
-contentUuid: "9c06a5ca-22dc-517f-afd3-05cb7573e95d"
-diamondUuid: "1c311af2-fb11-8c18-8ef7-f91ed4c17894"
-uuid: "5ee11b55-21bd-8afd-b509-e704c07ce82f"
+coordinate: "vocabulary/corrections · 1/base · 3ed79609"
+contentUuid: "d19f2239-e848-53b0-8368-3754832f3817"
+diamondUuid: "be49cd44-967b-8481-92ac-a9d0d2c397a1"
+uuid: "3ed79609-4501-8448-82ba-03aa480f768a"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8e19bfba-d80b-88c6-8c5c-6581d1221d05"
+  computationUuid: "97faa530-e7a3-8cf1-b629-41e333d20096"
   stages:
     - stage: path
       stageUuid: "d07ea90d-1c8d-8666-878f-e992473965d7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1ad86263-430a-8d29-8a8f-463c7a7d9491"
     - stage: horo
-      stageUuid: "b3b60beb-91fa-8e2b-9217-7ea969287c1c"
+      stageUuid: "e026d8f0-eab7-8504-9174-eb57ea08497b"
     - stage: seal
       stageUuid: "8813d7fc-65df-89be-b319-efc48dd730a2"
     - stage: uuid
-      stageUuid: "075568b7-881b-8238-a3be-63fa3df6d1cb"
+      stageUuid: "7e47fcee-ee0b-8016-b3ba-2f8e3434ae0a"
 version: 2
 ---
 # corrections

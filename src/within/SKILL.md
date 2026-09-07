@@ -2,11 +2,11 @@
 name: within
 description: "Use when reasoning about within as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: within
-coordinate: "within · 8/crest · ffe5b946"
-contentUuid: "82df9bba-cef9-5fdb-8d9b-743eb0d4eb6a"
-diamondUuid: "3b831e99-4cb9-81da-a52b-f0552751c13b"
-uuid: "ffe5b946-5ef3-8e3b-8d64-b6ddc35a0dca"
-horo: 8
+coordinate: "within · 7/descent · f8e24c5d"
+contentUuid: "af71f6cb-bb4c-51a3-a164-c9305979662c"
+diamondUuid: "787d5dd7-9663-8ff4-bef3-ce8f7b2d5f73"
+uuid: "f8e24c5d-6875-8319-85c8-186a6d5ddc3d"
+horo: 7
 typography:
   partition: within
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "328d1e35-c344-8d62-8231-65d3a1647c18"
+  computationUuid: "05cb0c49-a7ae-85d6-98be-dd1b05aa1a79"
   stages:
     - stage: path
       stageUuid: "67b072eb-0ec0-8cf8-b724-c80371be0221"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b5acfcf-b19e-8a11-a444-31776fe6de3b"
     - stage: horo
-      stageUuid: "4c1c9ac8-0795-868d-81c9-bcc91fff886f"
+      stageUuid: "2c21140c-80f9-8ff1-ad2e-5ebee63da1be"
     - stage: seal
       stageUuid: "a97737b8-01f1-821d-ba93-56258f369fac"
     - stage: uuid
-      stageUuid: "f32ec821-9a39-8277-84de-0c0d2b72d158"
+      stageUuid: "4eec7529-8f9e-83c8-8447-8476aa11deea"
 version: 2
 ---
 # within

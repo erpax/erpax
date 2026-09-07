@@ -2,18 +2,18 @@
 name: akashic
 description: "Use when reasoning about erpax's total queryable record — the codebase (source → config → payload-types) AND every uuid-addressed database row/file; the source of truth the agent reads and regenerates from, and can safely forget into. Code AND data, content-addressed."
 atomPath: akashic
-coordinate: "akashic · 7/descent · 9151a1b7"
-contentUuid: "c44a0d97-1e21-53f7-a502-3b0af28ac3e3"
-diamondUuid: "15722667-499f-8fd4-8f2b-b448aeadb3ba"
-uuid: "9151a1b7-7dc9-8b20-a335-23862927c6da"
-horo: 7
+coordinate: "akashic · 1/base · bff67a9d"
+contentUuid: "4eceb80f-6138-5faf-8581-dbca9c001d7e"
+diamondUuid: "33749267-1d16-87dd-ab15-531b2454a580"
+uuid: "bff67a9d-a1fa-87c1-870d-08586a5c4d12"
+horo: 1
 typography:
   partition: akashic
   bondDegree: 298
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c278ab98-4244-805a-aa9f-b9ddbf2c09f2"
+  computationUuid: "797b663f-c58f-84b6-87f4-b894248390a5"
   stages:
     - stage: path
       stageUuid: "3af6eb9f-a71b-8476-a366-7c043497c3fe"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e9c21520-6b94-80ab-a804-49a230976fee"
     - stage: horo
-      stageUuid: "1a28524d-9ccf-88f8-850e-2d9fad5144b6"
+      stageUuid: "628ebcd4-111e-8707-9e4e-d8cef30f296f"
     - stage: seal
       stageUuid: "fbb95449-c919-8814-9de1-2578c22a6c68"
     - stage: uuid
-      stageUuid: "cd4ddccf-4daa-84f8-9cea-dec0343161df"
+      stageUuid: "211f3264-204b-8119-973e-281f1b2a0683"
 version: 2
 ---
 # akashic

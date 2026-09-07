@@ -2,11 +2,11 @@
 name: reviewed
 description: "Use when reasoning about reviewed — People or organizations that have reviewed the content on this web page for accuracy and/or completeness."
 atomPath: reviewed
-coordinate: "reviewed · 5/round · 28ec1b15"
-contentUuid: "6c51f75d-ef7b-50c1-903d-cd018c3e876f"
-diamondUuid: "bfd25f12-bc6e-8385-9736-e721a9a15f09"
-uuid: "28ec1b15-41e9-8200-8282-190a460a9fa5"
-horo: 5
+coordinate: "reviewed · 1/base · e27e0ebf"
+contentUuid: "dfb1d599-ca83-5bce-801c-bd86cdaa759f"
+diamondUuid: "a7b69488-028a-8d02-9aaa-8bc67f58ed82"
+uuid: "e27e0ebf-4192-81d2-8d11-7a2ce31813ed"
+horo: 1
 typography:
   partition: reviewed
   bondDegree: 17
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dfcded3a-02e0-8cb0-a721-e4dab4b32323"
+  computationUuid: "463bea67-98ff-8f6d-9639-29a698a67ca3"
   stages:
     - stage: path
       stageUuid: "a9afcb6c-c113-8061-badf-7f778f2c40a1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cec1b3ad-4010-8446-84c5-3495552a409f"
     - stage: horo
-      stageUuid: "48bf117d-86e7-82d6-85eb-2e002a8b0238"
+      stageUuid: "43bbc661-e831-8621-9874-72cf93540c8b"
     - stage: seal
       stageUuid: "f66de871-3c19-8f3c-87ce-b991cb092c41"
     - stage: uuid
-      stageUuid: "a9ca53a1-bbd1-8031-9dd1-13ab1d65192a"
+      stageUuid: "973bc492-33fa-8651-b6c3-f638c1e72a20"
 version: 2
 ---
 # reviewed

@@ -2,11 +2,11 @@
 name: symbol
 description: "Use when reasoning about symbol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: symbol
-coordinate: "symbol · 4/weave · 4fa05e72"
-contentUuid: "92b5ae21-8bca-59db-aa75-7ef17a5daeb2"
-diamondUuid: "9f4aac01-fef2-8a9b-9135-884765c7cd24"
-uuid: "4fa05e72-e67b-808d-a9a7-abb62b1ef3b8"
-horo: 4
+coordinate: "symbol · 5/round · 0ae8a8af"
+contentUuid: "e85f9e4b-8124-5880-8eef-b8dd6f6b2f09"
+diamondUuid: "2765588b-831a-86ad-ba8a-0e43dcb1e70a"
+uuid: "0ae8a8af-2baf-8e11-9651-b0bc7a8bd3fa"
+horo: 5
 typography:
   partition: symbol
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4b951207-00e1-8fd1-b09e-3bbe884ade02"
+  computationUuid: "647fe9ce-88b5-8431-a8d8-474d45c61453"
   stages:
     - stage: path
       stageUuid: "c76d189a-1c87-8205-aa12-05c918f3b270"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "11380026-4e09-8d96-83df-2892db3ddb8a"
     - stage: horo
-      stageUuid: "5e7fe605-79cf-85d2-a1cf-d06beb6e4e7b"
+      stageUuid: "73eb7a70-ea2e-884c-9d28-be67076fd015"
     - stage: seal
       stageUuid: "49958def-151b-84d6-8fda-ee527c0b2512"
     - stage: uuid
-      stageUuid: "32d9078b-7574-8c92-8a71-749494546732"
+      stageUuid: "a034b5b1-d88c-8200-b703-66a83ba69046"
 version: 2
 ---
 # symbol

@@ -2,11 +2,11 @@
 name: game
 description: "Use when reasoning about game — The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters i"
 atomPath: "vocabulary/game"
-coordinate: "vocabulary/game · 2/share · 347ea426"
-contentUuid: "fa6e168d-f7ac-5621-96ab-532ffb220c7a"
-diamondUuid: "975fe24a-b5d5-8848-ad52-f6060918a52a"
-uuid: "347ea426-1cf6-8206-9fbd-b62c2ed346c2"
-horo: 2
+coordinate: "vocabulary/game · 5/round · a6e01e31"
+contentUuid: "23a73616-9bea-5a1b-adb8-0a21f6380d6c"
+diamondUuid: "bf857f39-68b4-8ae3-9160-abe1c13a058a"
+uuid: "a6e01e31-017f-894f-91f6-92559c50e20a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 70
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ae2d3dea-875c-89c1-a855-6b77c4334d9c"
+  computationUuid: "22c7a9ae-78bc-85eb-8776-698ff35cb005"
   stages:
     - stage: path
       stageUuid: "fa98ad95-513d-851a-ab8f-696d75616878"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "20c9598d-3c3f-8250-9731-ff1890b6f844"
     - stage: horo
-      stageUuid: "79cae30f-b625-8940-92d5-4f05f6239776"
+      stageUuid: "d932572c-53fa-8de3-ac6c-28475c25a0f2"
     - stage: seal
       stageUuid: "1d5e57d0-7f86-8587-92f1-1a40dfaecd68"
     - stage: uuid
-      stageUuid: "4317d02d-62c0-8108-b4ad-e7b89774a11c"
+      stageUuid: "2dfcd4b1-eeff-85af-a103-0b1f98561178"
 version: 2
 ---
 # game

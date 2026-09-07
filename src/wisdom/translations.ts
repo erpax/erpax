@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wisdom",
-    "uuid": "16a7a252-e578-8513-b77b-72a849703f3b",
+    "uuid": "d7823a53-e369-822b-ac5c-2c7f6f46fef6",
     "words": [
       "wisdom"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about holding the law instead of the list — seeing the one pattern that generates the many cases, so a part reconstructs the whole. Distinct from truth (a verified fact) and knowledge (stored facts): wisdom is the holographic compression that lets you regenerate the facts rather than store them.",
-    "uuid": "2772bc8e-b601-8ece-baa2-4b764a786d57",
+    "uuid": "4d704595-3743-8fb2-8706-60532e38a84e",
     "words": [
       "use",
       "when",

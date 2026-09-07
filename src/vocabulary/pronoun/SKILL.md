@@ -2,18 +2,18 @@
 name: pronoun
 description: Use when modelling one pronoun — the singular model of the pronouns collection (the plural store); a term by which a person chooses to be referred to.
 atomPath: "vocabulary/pronoun"
-coordinate: "vocabulary/pronoun · 1/base · d992fdbb"
-contentUuid: "d4ffdd4f-72b7-5577-b421-6d410d997cd8"
-diamondUuid: "764c2b40-d9d8-8fc0-837d-f2666e1b667f"
-uuid: "d992fdbb-c311-883f-ada6-d3d7a4e73c14"
-horo: 1
+coordinate: "vocabulary/pronoun · 7/descent · 47cd6cd1"
+contentUuid: "a30c6880-3171-5f6b-b49b-2789be1ef078"
+diamondUuid: "d5043580-7044-83b3-8a89-ba8ff79a8ade"
+uuid: "47cd6cd1-7d3b-89aa-989f-23f23675a368"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6bec5c14-376c-83af-bdb3-1691b9b5c95b"
+  computationUuid: "1d4123a3-f248-8e25-81f9-92acf0d0b0a3"
   stages:
     - stage: path
       stageUuid: "8db614e2-22f1-8388-860c-23f3c3fcc7d8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cf18d119-6c1a-8282-9e0c-253b6f19394f"
     - stage: horo
-      stageUuid: "01c1ef21-98ef-8fa7-bc9a-0c39580dc57c"
+      stageUuid: "f1650f5a-373f-862d-9b82-15f7b0305218"
     - stage: seal
       stageUuid: "c26e6a33-99db-8529-a186-43d65079f39c"
     - stage: uuid
-      stageUuid: "55c82c44-b474-83a5-b03d-c42ee6676c0c"
+      stageUuid: "8cf15834-5ca1-8051-8b8e-fe62381205a2"
 version: 2
 ---
 # pronoun — the model of one [[pronouns]] row

@@ -2,11 +2,11 @@
 name: pronounceable
 description: "Use when reasoning about pronounceable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pronounceable"
-coordinate: "vocabulary/pronounceable · 4/weave · 61fd5391"
-contentUuid: "57ee2e81-88fb-5787-99e0-961d85b1c90b"
-diamondUuid: "ccdd9972-b738-8315-bd7b-cd29508f007e"
-uuid: "61fd5391-1667-85fb-b910-281b3879a503"
-horo: 4
+coordinate: "vocabulary/pronounceable · 1/base · 52b5bbe8"
+contentUuid: "87626007-5773-5320-af2d-ddba806e960b"
+diamondUuid: "8403a923-792f-86d0-889b-c0fa595d5a28"
+uuid: "52b5bbe8-ea3f-842a-bdbf-b4094ef962af"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bbe3633f-477e-8d68-a369-9327cdde6e11"
+  computationUuid: "e185554c-1f36-82d4-b808-e32d6ebe9952"
   stages:
     - stage: path
       stageUuid: "f0bc31e4-405c-8415-9aec-44db4bd2ad73"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3bd63c4b-88f7-83e9-bd7b-dbbe244c3375"
     - stage: horo
-      stageUuid: "04dfa1f4-187b-8c2c-b270-2aebe85f06ce"
+      stageUuid: "28cd5b9e-aac4-84e2-bdd8-e856bd69374c"
     - stage: seal
       stageUuid: "7f1a4cfc-d1d0-883f-8c3f-ff30851244b8"
     - stage: uuid
-      stageUuid: "73626cf8-3b82-8b0c-a2ce-4ed9c6bec680"
+      stageUuid: "d3fc3589-f6ea-8d75-8fe0-e4519141b45a"
 version: 2
 ---
 # pronounceable

@@ -2,11 +2,11 @@
 name: distillery
 description: Use when reasoning about distillery — A distillery.
 atomPath: "vocabulary/distillery"
-coordinate: "vocabulary/distillery · 5/round · 7ec8de51"
-contentUuid: "2746cc20-db08-5083-8056-c47f56c01e1f"
-diamondUuid: "707aab82-f4a4-827a-a2c3-80332c1c04b9"
-uuid: "7ec8de51-6437-81d3-acb3-a8c586b98a7e"
-horo: 5
+coordinate: "vocabulary/distillery · 4/weave · abbd6ada"
+contentUuid: "2af1dc61-665d-58d4-9128-f999bb12eee7"
+diamondUuid: "b00e9252-5437-8b49-9642-cdf01e849082"
+uuid: "abbd6ada-f1ea-8a43-a350-d537aeeecf46"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "eb2d4af0-8bdf-81a6-ab86-f2f032902432"
+  computationUuid: "25c854ab-8f18-8d16-8df3-8a489b826bdc"
   stages:
     - stage: path
       stageUuid: "b74f8988-b1ab-8edb-aa41-f7efe2c321da"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fd5fcdc7-eb25-8e0c-913c-d8c5704ae92c"
     - stage: horo
-      stageUuid: "b8cdc52d-872e-83a3-9e3d-a28a8f3c71f0"
+      stageUuid: "16302b27-5964-8068-bfea-4438e62e88da"
     - stage: seal
       stageUuid: "47848bdf-4b6f-81f9-a7af-2f38c34b3bc3"
     - stage: uuid
-      stageUuid: "0d046038-2376-8855-8dda-f86bd67ff56c"
+      stageUuid: "1d317249-0da9-80b2-8bae-7f0edf95d56f"
 version: 2
 ---
 # distillery

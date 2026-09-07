@@ -2,10 +2,10 @@
 name: instructions
 description: "Use when reasoning about instructions — A schema.org component word, collided out of schema.org compounds — fused from recipeInstructions (sti · collapse · merge)."
 atomPath: "vocabulary/instructions"
-coordinate: "vocabulary/instructions · 2/share · c89c3624"
-contentUuid: "0e1264ea-a828-5753-a5c4-1ffb97fda7e5"
-diamondUuid: "fec6ae84-339e-841a-af7a-629dfe03f001"
-uuid: "c89c3624-c78a-8bc6-8c92-e268b060f990"
+coordinate: "vocabulary/instructions · 2/share · 0b90e3c6"
+contentUuid: "eb2f3be6-dac1-5b35-9b80-cb9a0719528c"
+diamondUuid: "8cf1e30c-4f0a-8438-bfba-48ad563d0857"
+uuid: "0b90e3c6-5701-8fd5-8e06-2d6d30ed3f1f"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "662499cb-0273-8ef3-a8e4-ed07500fb41f"
+  computationUuid: "62c7afff-2782-8cc1-8f95-f028d4391e06"
   stages:
     - stage: path
       stageUuid: "6aa29580-12d7-8b7c-8d2a-26f79203bd0a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b9b96d83-2eb2-8628-bc6a-b893f0093d7b"
     - stage: horo
-      stageUuid: "49623c12-52d9-8021-a064-ad9c9446f3f1"
+      stageUuid: "4dcdcf99-1e13-8bd2-8c36-82fc702a67cf"
     - stage: seal
       stageUuid: "cd9be0f9-18e0-80e0-b9fc-cc5e0fca625d"
     - stage: uuid
-      stageUuid: "8058aa36-be87-866a-ae75-9aa28719fef4"
+      stageUuid: "9bfd0098-b54f-8731-87a5-8a5ebf4de14c"
 version: 2
 ---
 # instructions

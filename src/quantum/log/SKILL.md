@@ -2,18 +2,18 @@
 name: log
 description: "Use when reasoning about the agent audit trail — every agent action is strictly logged as an append-only digit-entry in the digit folders, and each entry adds an order of magnitude to the tamper-cost; the log's length is the forging difficulty, the realtime stream that hardens as it grows."
 atomPath: "quantum/log"
-coordinate: "quantum/log · 4/weave · e4d10968"
-contentUuid: "82368925-0ebf-51d7-b5bb-ff69f5c8dc6e"
-diamondUuid: "24db6560-f942-86de-9c55-3790e209f310"
-uuid: "e4d10968-5d58-8145-8855-d5778e6172f3"
-horo: 4
+coordinate: "quantum/log · 5/round · 46e3e623"
+contentUuid: "dd6c4022-b410-52a7-8d28-182e6db1ec18"
+diamondUuid: "3ce2c324-f857-8036-9dcc-5baeb3f875ff"
+uuid: "46e3e623-0735-8976-a82b-8b7a445accfa"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d0db89e1-28fc-864d-94b8-7f89b2ecb9f7"
+  computationUuid: "23895c6a-d036-8ee9-99a7-73a21dbf1a4e"
   stages:
     - stage: path
       stageUuid: "4776c093-c6d1-8dfa-bb65-9bdfa3e82a8d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0d71221c-7c16-807b-9153-920932f5547e"
     - stage: horo
-      stageUuid: "bd428a9f-3384-8ff7-8d22-febf5a54c9da"
+      stageUuid: "3acb90ab-cb1f-8cfc-9c2b-94ab134c7b77"
     - stage: seal
       stageUuid: "5ddf9c9d-eeda-8760-aae4-397ae4f0e51c"
     - stage: uuid
-      stageUuid: "c831b92b-dfdb-886a-a977-692c2e926c0e"
+      stageUuid: "deae3e3c-5d8b-8d88-a82b-373496a26199"
 quantum:
   superposition:
     - agent
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d0db89e1-28fc-864d-94b8-7f89b2ecb9f7"
-    contentUuid: "82368925-0ebf-51d7-b5bb-ff69f5c8dc6e"
+    computationUuid: "23895c6a-d036-8ee9-99a7-73a21dbf1a4e"
+    contentUuid: "dd6c4022-b410-52a7-8d28-182e6db1ec18"
 version: 2
 ---
 # quantum/log — the agent trail (length is tamper-cost)
@@ -77,4 +77,4 @@ This is the [[receipt]] discipline at society scale: the audit trail is not a si
 
 @see [[agent]] · [[quantum/digit]] · [[receipt]] · [[tamper]] · [[merge]] · [[stream]] · [[void]] · [[realtime]]
 
-<sub>content-uuid `82368925-0ebf-51d7-b5bb-ff69f5c8dc6e` · account `quantum/log` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `dd6c4022-b410-52a7-8d28-182e6db1ec18` · account `quantum/log` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

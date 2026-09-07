@@ -2,18 +2,18 @@
 name: violations
 description: Use when reasoning about violations — The provider streams live violations and the panel and dashboard render them.
 atomPath: "admin/ui/violations"
-coordinate: "admin/ui/violations · 5/round · b794b1c5"
-contentUuid: "21f86a7f-c385-5204-b0df-ad2f3c076bb0"
-diamondUuid: "6d5d4c2d-ad5a-8deb-8750-c1cf5df2c1ca"
-uuid: "b794b1c5-7d81-8bc8-84d0-c5c0c28f6845"
-horo: 5
+coordinate: "admin/ui/violations · 7/descent · 0a87eda7"
+contentUuid: "48dc679b-415e-5149-a100-89e7e99d2716"
+diamondUuid: "2a3483d5-33ed-82a4-b614-5f67972de669"
+uuid: "0a87eda7-27a4-8954-94fe-f8832b369b74"
+horo: 7
 typography:
   partition: admin
   bondDegree: 23
 standards: []
 bindings: []
 signatures:
-  computationUuid: "741f85fa-9f65-8583-981b-bce5b90bbdf7"
+  computationUuid: "a9705e71-43bb-804f-8fda-88917060b217"
   stages:
     - stage: path
       stageUuid: "8cce2a5b-0983-8d5f-b9e3-493086310c2f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fd946254-4cd5-8a70-bf7a-534469a24635"
     - stage: horo
-      stageUuid: "89b16e05-df72-8cae-bcb7-51e87298fef6"
+      stageUuid: "5f05fdcf-5837-8305-b00f-3dad82725484"
     - stage: seal
       stageUuid: "a2fff21b-0825-8987-98e6-259933fea58a"
     - stage: uuid
-      stageUuid: "578b4cea-bcbc-883d-95c7-b4774e75b0eb"
+      stageUuid: "9e67d6ab-f283-860b-bf8a-0385bd609213"
 version: 2
 ---
 # admin/ui/violations — the gate's findings, where the person who can fix them is already working

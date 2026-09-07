@@ -2,11 +2,11 @@
 name: eprelease
 description: "Use when reasoning about eprelease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/eprelease"
-coordinate: "vocabulary/eprelease · 1/base · 379b4d3d"
-contentUuid: "5a8555ad-ba85-562f-8c17-7fa6f3206d2b"
-diamondUuid: "eb6eccaf-5f99-87b4-9240-fabb324d32a2"
-uuid: "379b4d3d-e651-8f23-9f25-1931542847d8"
-horo: 1
+coordinate: "vocabulary/eprelease · 8/crest · 1ec2fdf1"
+contentUuid: "de4f865d-7226-5423-9c28-72fb2b510d97"
+diamondUuid: "c83a5f6a-0dd1-8492-8997-faeb45e83780"
+uuid: "1ec2fdf1-97eb-878f-b1e4-f6fdef36c4e4"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "706670ce-6f1f-854f-9574-e9a75b2cb6ad"
+  computationUuid: "b8bdc162-07ce-89f9-8342-7bdbbe43fdb2"
   stages:
     - stage: path
       stageUuid: "eada28c4-605d-8d39-8161-a4b4020b34ee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "67f02b5e-39ad-868b-89ff-b68b5b5da4d9"
     - stage: horo
-      stageUuid: "eb912faf-5504-8ada-ab70-bc1f1e636c7d"
+      stageUuid: "a054cc7a-d4e9-8f10-9ad7-6ea0efc7f5fb"
     - stage: seal
       stageUuid: "cbfdcefb-daec-8d1d-a3a0-eea2e23da0b2"
     - stage: uuid
-      stageUuid: "fe578122-18a4-8ca1-b451-4dcc8d5f54a1"
+      stageUuid: "cad8b1d0-0999-8cc1-9102-0f7bb653085f"
 version: 2
 ---
 # eprelease

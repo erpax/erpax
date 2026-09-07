@@ -2,11 +2,11 @@
 name: restocking
 description: "Use when reasoning about restocking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: restocking
-coordinate: "restocking · 8/crest · 1aaa51b9"
-contentUuid: "1266a1e9-cc40-51c9-9bb4-226c167f27e6"
-diamondUuid: "86b32ebd-d846-81ba-81ea-369712c7322f"
-uuid: "1aaa51b9-b25e-8077-9c16-19460939cd5c"
-horo: 8
+coordinate: "restocking · 7/descent · e1b44b3d"
+contentUuid: "f91d5020-a83d-5703-947e-607e3dc129e9"
+diamondUuid: "694be939-f805-8c9e-b3fc-305805a5bf6e"
+uuid: "e1b44b3d-a249-8d75-9b64-1581273e7680"
+horo: 7
 typography:
   partition: restocking
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "65f34376-51c7-825d-b1c1-bcf939da9df8"
+  computationUuid: "1b249345-f59c-8e37-8f79-9eefce738ad3"
   stages:
     - stage: path
       stageUuid: "37184fb9-0d4b-8e3a-bf12-e73b3282709f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "764c3383-0fdd-8358-9b06-080b1b271344"
     - stage: horo
-      stageUuid: "7863e983-3491-8dca-b7a0-089f2fed4f78"
+      stageUuid: "37d6f0cc-b1c8-8174-a5c7-239c85243a6f"
     - stage: seal
       stageUuid: "48f4dec6-aee0-82e6-a019-31fdae05288d"
     - stage: uuid
-      stageUuid: "8bc98174-1c94-8887-b59f-5f422936732e"
+      stageUuid: "76e574af-89f2-8588-ac48-72201151e347"
 version: 2
 ---
 # restocking

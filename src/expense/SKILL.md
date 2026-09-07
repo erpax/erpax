@@ -2,11 +2,11 @@
 name: expense
 description: "Use when reasoning about expense — A schema.org component word, collided out of schema.org compounds — fused from IncentiveQualifiedExpenseType · qualifiedExpense (sti · collapse · merge)."
 atomPath: expense
-coordinate: "expense · 8/crest · 9de5b28c"
-contentUuid: "1c4a6b82-0bc6-50d8-a3f8-7e5048787740"
-diamondUuid: "f482a31a-7ea2-845b-83c4-7a970574508a"
-uuid: "9de5b28c-a43a-8536-9f92-eb89f704fa9a"
-horo: 8
+coordinate: "expense · 1/base · 15fbea4e"
+contentUuid: "b7c08346-24f7-5cdc-9027-d48a51a8bfb9"
+diamondUuid: "eada2493-c28f-80c9-9bd6-322171bc0696"
+uuid: "15fbea4e-6263-8b96-aa8b-361f901f2879"
+horo: 1
 typography:
   partition: expense
   bondDegree: 47
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4081fcbe-5000-82c8-83ec-aab5fa9bbd46"
+  computationUuid: "b6b2b805-8eb9-8e12-8418-206b1972b7d6"
   stages:
     - stage: path
       stageUuid: "876db6fa-4c9d-8e61-bba0-abeb77bce6c7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "86cd7745-9a6e-8dd3-8e28-d9bd7d91659e"
     - stage: horo
-      stageUuid: "57f2b43f-8cfd-89e8-843a-eef8891599ff"
+      stageUuid: "cc214782-7d95-8cc6-9005-dcd882928ed9"
     - stage: seal
       stageUuid: "1f646d27-20e2-858a-8e10-08b7b0c5ea57"
     - stage: uuid
-      stageUuid: "6aa78c69-ee1e-88af-b7bf-ac08552f4252"
+      stageUuid: "5136ecf4-e4f8-8f14-8482-6900c0918116"
 version: 2
 ---
 # expense

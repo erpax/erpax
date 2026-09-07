@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "forecast",
-    "uuid": "c704997a-5f91-8ce8-8695-0f3ce539c9e3",
+    "uuid": "60257b77-3a82-8cef-8e81-4d9298659983",
     "words": [
       "forecast"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when projecting revenue from pipeline/opportunities — weighted by probability, stage, and close date; aggregated by rep/territory/product/period.",
-    "uuid": "b1c0045c-3186-8389-be23-350ef8b96414",
+    "uuid": "00d77e7e-d73a-8c42-9508-961b22478e32",
     "words": [
       "use",
       "when",

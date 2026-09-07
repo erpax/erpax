@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chakra",
-    "uuid": "81ad2bc3-6793-8015-abda-7af913341688",
+    "uuid": "cd925666-4987-8ab0-943c-dfec0a089295",
     "words": [
       "chakra"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when mapping the seven chakras onto erpax — the 7 chakras ARE the 7 horo flow positions (base·share·weave·crest·descent·round·unity = Do·Re·Mi·Fa·Sol·La·Ti = root→crown). Each decodes to a note (A432 just-intonation), a colour and a movement from the SAME content-uuid — and the uuid is computed from the position math, never from the colour. Anchored at 0/K/black/A432.",
-    "uuid": "36f8204f-0db0-8f25-b5e0-49a5dc2e97b7",
+    "uuid": "51450f36-6616-8895-87b3-b08dd272f7c6",
     "words": [
       "use",
       "when",

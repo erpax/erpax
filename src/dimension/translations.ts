@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dimension",
-    "uuid": "368cc181-043a-87b6-879d-cbb6d2a22f1e",
+    "uuid": "6bdf6f08-88db-8a6f-a7f8-414e7e3e47ec",
     "words": [
       "dimension"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity.",
-    "uuid": "4dea1c30-e100-8911-933d-669194dcee48",
+    "uuid": "e8453007-bde4-82b1-b353-861873008822",
     "words": [
       "use",
       "when",

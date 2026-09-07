@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "habit",
-    "uuid": "848a2115-4dd7-8acb-81a4-d037f99886d2",
+    "uuid": "d0bf0801-e44e-8932-8819-fe8fd138e3f0",
     "words": [
       "habit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the repetition atom that turns a sale into a market — the loop that makes one transaction many. Without habit a launch spikes and dies; with it, awareness and proof compound. The atom retention and churn measure, and the catch the market needs when the trendsetter's status fades.",
-    "uuid": "a74136cf-5552-8de2-a97e-0853dbb5da82",
+    "uuid": "0b838309-6400-8e7d-81ed-d8914eb021da",
     "words": [
       "use",
       "when",

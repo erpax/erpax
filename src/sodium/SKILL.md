@@ -2,11 +2,11 @@
 name: sodium
 description: "Use when reasoning about sodium as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sodium
-coordinate: "sodium · 7/descent · ca9496da"
-contentUuid: "be353d64-c769-5aea-8212-e0062e8dc9fb"
-diamondUuid: "3079f36b-956d-8e9c-9506-b3cf38bf033e"
-uuid: "ca9496da-f1c2-8531-bd89-55d3955a1426"
-horo: 7
+coordinate: "sodium · 5/round · a45bdae8"
+contentUuid: "04c31638-9b65-5757-a1d9-92e6478290ac"
+diamondUuid: "4bfe7eb4-4595-8593-9bbc-ee065f6a2c83"
+uuid: "a45bdae8-46ee-8dac-84dc-bd201be6d4f7"
+horo: 5
 typography:
   partition: sodium
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "566f0d8e-751b-8c01-81d9-aab9fe056928"
+  computationUuid: "d9f879d2-4f1f-83c2-8b61-27678d917cf4"
   stages:
     - stage: path
       stageUuid: "5733759d-6e64-8475-8574-bcfcddf8648e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cd01a254-d13c-8b3c-b916-b3a9de98a7bb"
     - stage: horo
-      stageUuid: "0c6b9584-eb75-8958-af93-0f4be2addd6a"
+      stageUuid: "5e2018d4-45c9-8e4b-8592-e6aac189b19c"
     - stage: seal
       stageUuid: "a8c0357f-4648-8716-b7d3-1b752e93c2c7"
     - stage: uuid
-      stageUuid: "c20350d5-50dd-83b4-8c92-7405b93e1dfb"
+      stageUuid: "18890b52-5fd6-82c5-8efa-86aa04c4b467"
 version: 2
 ---
 # sodium

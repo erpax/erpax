@@ -2,11 +2,11 @@
 name: reciprocal
 description: "Use when checking whether the corpus stays symmetrically entangled — the computed convention that every directed edge is reciprocated, measured live as coverage = reciprocal / total over the real uuid-matrix."
 atomPath: "convention/reciprocal"
-coordinate: "convention/reciprocal · 4/weave · 80b5fbbf"
-contentUuid: "2bdbe370-4228-519f-9e76-c3053170f494"
-diamondUuid: "9304ef8e-bc16-858b-b7db-a147e3f090dc"
-uuid: "80b5fbbf-a56e-8e15-8d38-b73a9886eb68"
-horo: 4
+coordinate: "convention/reciprocal · 1/base · 3be72f96"
+contentUuid: "b288915f-5053-5993-84a7-a95220a33d5e"
+diamondUuid: "59c63bcf-1e2f-8f11-bad6-9e1e01fb92f3"
+uuid: "3be72f96-e02b-89ea-8964-80619d3e337b"
+horo: 1
 typography:
   partition: convention
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5fdaae06-aff3-8c0d-a8d8-f1fc72dfdb88"
+  computationUuid: "aefa68b9-1703-8421-99c3-4e33c8fa2618"
   stages:
     - stage: path
       stageUuid: "a02cd22c-756b-889f-81e6-f1eee32f6dc2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "66c09ab0-f99a-8672-95ad-d15e48262d40"
     - stage: horo
-      stageUuid: "48a7ec10-5313-8635-becb-3f1d16fa6dfa"
+      stageUuid: "0c84b138-b5da-8948-9bf2-d064db80b4d6"
     - stage: seal
       stageUuid: "8b2d7d83-d61f-88f7-a44a-88cda25373d5"
     - stage: uuid
-      stageUuid: "228c9e15-4a0b-8cd1-9105-9f7a8f814b35"
+      stageUuid: "c2111888-30db-8d4d-93e5-4f2d514b6b83"
 version: 2
 ---
 # convention/reciprocal — every directed edge is reciprocated (symmetric entanglement)

@@ -2,10 +2,10 @@
 name: enterprisebudget
 description: "Use when projecting the profit of one crop/product/activity as a standalone line — the crop enterprise budget: revenue (units × price) minus its direct costs (seed, inputs, labor) per crop or per bed-foot, so crops can be ranked by net return and the unprofitable dropped. The per-line P&L projection; the production-economics twin of the cost center."
 atomPath: "vocabulary/enterprisebudget"
-coordinate: "vocabulary/enterprisebudget · 2/share · 00ea6d89"
-contentUuid: "bff5ecec-0a3d-5410-8929-8f3dd296b60b"
-diamondUuid: "f646fccb-efed-8a5c-8210-6a69f97ac774"
-uuid: "00ea6d89-ac46-8c80-acb9-7b423343f66f"
+coordinate: "vocabulary/enterprisebudget · 2/share · ce5d8f54"
+contentUuid: "f4d8d8d6-4dbd-5fa2-9661-710a100cee82"
+diamondUuid: "541eb5da-1fc5-8543-b98c-3296b421ac53"
+uuid: "ce5d8f54-6b13-8957-a586-695c4dcd4287"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "042a3f7e-ffa7-8b45-a46b-c6b25b8958cd"
+  computationUuid: "9c2a0e20-ad73-8151-9a4d-aeae0f8f2ece"
   stages:
     - stage: path
       stageUuid: "c9d4e529-8ac3-8163-95bf-4ca070742d9a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1c33df34-f86f-8d41-ad50-e4522441e700"
     - stage: horo
-      stageUuid: "9f6b2dc7-4cff-85bf-ac58-bb8e52dbe44c"
+      stageUuid: "95d766de-6676-81b0-aa35-f83d7b6efcad"
     - stage: seal
       stageUuid: "7addff6c-8047-8b9e-9274-1c587360aff3"
     - stage: uuid
-      stageUuid: "a85dd751-6924-8b23-911b-eed5a45ba9a6"
+      stageUuid: "4c93bf53-3af2-813c-a0d2-8bdbdacc7320"
 version: 2
 ---
 # enterprisebudget — the per-line profit projection that ranks what to grow

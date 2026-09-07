@@ -2,11 +2,11 @@
 name: fdacategory
 description: "Use when reasoning about fdacategory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fdacategory"
-coordinate: "vocabulary/fdacategory · 5/round · 65be095f"
-contentUuid: "2cf34cc1-2f93-53cf-b115-58c999903324"
-diamondUuid: "55db3f1e-3874-812a-a846-600dbf04f37a"
-uuid: "65be095f-100c-896f-8a78-119fca8fa6f3"
-horo: 5
+coordinate: "vocabulary/fdacategory · 1/base · eb6fc240"
+contentUuid: "c745d3d2-6831-5421-98bf-281c0abf33d5"
+diamondUuid: "3081300c-80c8-809c-84a9-eab1bf8a0a46"
+uuid: "eb6fc240-4d3c-8fe9-a27f-0c8e1f4cf5bc"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bce7626c-e454-85cc-b874-36db8dcd9de0"
+  computationUuid: "246388be-0a30-826c-9c65-e4012d4bb166"
   stages:
     - stage: path
       stageUuid: "a8a6c847-003f-8b5e-aec8-63c49cce0bdd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1f1ed38d-76a9-8c84-baff-61060ef7d196"
     - stage: horo
-      stageUuid: "214991f7-8868-8298-9633-f9dce02872ef"
+      stageUuid: "8e2495ae-c335-8f32-b8d3-cd4a1ae0309d"
     - stage: seal
       stageUuid: "ce42f2cd-4184-8448-a423-ff0c4f67f64e"
     - stage: uuid
-      stageUuid: "20cb7bf2-425c-8494-b3fc-842bc0683e73"
+      stageUuid: "a862e81d-a267-825d-8994-2424b6e475a0"
 version: 2
 ---
 # fdacategory

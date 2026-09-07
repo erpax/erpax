@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "author",
-    "uuid": "9d179942-e0b9-8c4c-9cba-d1a96abc9e59",
+    "uuid": "e3c57c53-b893-86a3-b924-3aa8a6e4aa42",
     "words": [
       "author"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \\\"A and B\\\", and three or more become \\\"A, B and C\\\" — no serial comma, decided once here rather…",
-    "uuid": "3254f2b6-ec40-8921-a071-2ce15f328440",
+    "uuid": "6391767b-7007-8721-b1f2-de535c64d705",
     "words": [
       "use",
       "when",

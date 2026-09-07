@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "impact",
-    "uuid": "2a65d727-620d-805f-8092-8a9d36b7e654",
+    "uuid": "3216ee7a-a2bb-859d-bbba-4c6c56bcdd36",
     "words": [
       "impact"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about impact — The full-bleed hero. It also **darkens the header on mount** — the hero paints white text over its own dark field, and the header sits on top of it, so a header left in its light…",
-    "uuid": "b4852413-d724-8428-bfc0-7368498b6307",
+    "uuid": "3a9e0bd9-60aa-847f-a07d-667c84d068dd",
     "words": [
       "use",
       "when",

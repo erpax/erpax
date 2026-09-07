@@ -2,18 +2,18 @@
 name: visibility
 description: "Use when reasoning about visibility — 231 collections rendered flat is a list nobody navigates. Visibility decides what this user's panel offers, computed from the collection's own metadata rather than from a…"
 atomPath: "admin/ui/visibility"
-coordinate: "admin/ui/visibility · 4/weave · 7cbb72b3"
-contentUuid: "45966d73-5ae7-50aa-8d14-7c631ff98978"
-diamondUuid: "fb6186db-9cdc-8044-aa4b-e7ebbc597043"
-uuid: "7cbb72b3-72c4-893c-98ba-f869ce369a2a"
-horo: 4
+coordinate: "admin/ui/visibility · 1/base · c64927d4"
+contentUuid: "f5953377-2dd5-57ca-8dd7-2ef32c7bc68b"
+diamondUuid: "b16f771a-7dda-8d05-84bf-ccfeaf0af0ee"
+uuid: "c64927d4-09d7-84ac-94ad-4263a02210d2"
+horo: 1
 typography:
   partition: admin
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b500f3c0-8cbb-849a-a8ea-f51f95d4bd6d"
+  computationUuid: "9ffa8372-98b8-87e3-ac98-0a0f22fb347b"
   stages:
     - stage: path
       stageUuid: "1e433233-6667-88ce-963a-729f40c00043"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "14b97a78-eac0-8b2b-996d-58bbab939de6"
     - stage: horo
-      stageUuid: "e3d0bf11-a406-858e-8ba0-0374b972e029"
+      stageUuid: "8bdb3699-1d44-8a54-9e78-da8980aea2d2"
     - stage: seal
       stageUuid: "982fb540-0c42-83ca-aab3-77df6e7eac31"
     - stage: uuid
-      stageUuid: "0ab40135-9e2f-8145-a0a6-ee01ba6f1180"
+      stageUuid: "00330b6e-313b-8b94-be82-a86b74a5b080"
 version: 2
 ---
 # admin/ui/visibility — a collection appears in the panel because a rule says so, not because it exists

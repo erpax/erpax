@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fingerprint",
-    "uuid": "6621b436-c26e-8c78-8074-1f9f8803945c",
+    "uuid": "4f49a305-78cc-8cb6-a0bd-4c9e925e4b28",
     "words": [
       "fingerprint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fingerprint — normalises a statement and addresses it, so the same query issued from two places is recognisably one query. records the execution against that address.",
-    "uuid": "3dae055a-fbfa-85b3-8f83-1ebd6d37d162",
+    "uuid": "4aa2a853-3589-8c5a-9d65-085949c8cd3f",
     "words": [
       "use",
       "when",

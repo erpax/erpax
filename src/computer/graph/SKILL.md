@@ -2,10 +2,10 @@
 name: graph
 description: Use when traversing corpus bonds as a directed graph — matrix adjacency under computer; executable not glossary.
 atomPath: "computer/graph"
-coordinate: "computer/graph · 8/crest · a4455ac7"
-contentUuid: "c597543b-4c37-5d7a-a329-db96c026b0ff"
-diamondUuid: "5918958c-2790-8446-a777-3f80d834fc71"
-uuid: "a4455ac7-c566-8e32-98a3-7e3c9c235357"
+coordinate: "computer/graph · 8/crest · e061231c"
+contentUuid: "d21352f4-f215-50ef-a280-5c30f474ad4d"
+diamondUuid: "55f97200-741b-8011-8186-70558756ab24"
+uuid: "e061231c-2d95-8580-9f07-8af70a0c78c7"
 horo: 8
 typography:
   partition: computer
@@ -14,7 +14,7 @@ standards:
   - directed graph (nodes + edges)
 bindings: []
 signatures:
-  computationUuid: "f8b3e3b9-d955-82b9-8c38-8456ed3906bf"
+  computationUuid: "931951a7-e2ec-80aa-869d-839724ba119d"
   stages:
     - stage: path
       stageUuid: "5d1f0380-5707-8442-877c-b9bd0bfa7447"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "17fa06dc-96ef-8310-985d-3418469b7441"
     - stage: horo
-      stageUuid: "bdc63471-1781-8e50-ae52-7a2ced36b6f7"
+      stageUuid: "6e705657-2898-8006-a051-6744f1025daa"
     - stage: seal
       stageUuid: "49e5528a-3e63-8ad3-b687-7d44c8b1590c"
     - stage: uuid
-      stageUuid: "26fe2dcb-c8a1-8001-99a1-a4070e160222"
+      stageUuid: "43910e4b-532d-80ad-ab3d-07469623cc3d"
 version: 2
 ---
 # computer/graph — matrix adjacency

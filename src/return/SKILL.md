@@ -2,11 +2,11 @@
 name: return
 description: "Use when reasoning about return as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: return
-coordinate: "return · 7/descent · 3093194b"
-contentUuid: "d6b2b157-224c-5e68-96af-9f39016bfe88"
-diamondUuid: "b7e8b730-d68d-8e7e-abea-1873392a196d"
-uuid: "3093194b-da64-85a0-81be-cb846ea6f11b"
-horo: 7
+coordinate: "return · 8/crest · cc9223da"
+contentUuid: "1d602147-26bb-5892-922f-639792e82b38"
+diamondUuid: "d5ce9180-4ff3-8d83-aa09-9d93b8d961e9"
+uuid: "cc9223da-8dad-83e4-ba67-0eb31a174e3e"
+horo: 8
 typography:
   partition: return
   bondDegree: 159
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "236ce592-59e6-8f16-84bc-a0d34dc852ac"
+  computationUuid: "02f8ce85-d77a-84b3-80bc-25f0d829cd6b"
   stages:
     - stage: path
       stageUuid: "1f90e6f6-7a46-8a92-85a4-98c9b7381193"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f52f8493-38bc-8746-82b7-0be9a77fa2db"
     - stage: horo
-      stageUuid: "3c048c36-9fc1-84ac-be6a-76cc1eb958ca"
+      stageUuid: "821cf28a-dd30-81ca-ac06-84f0557365c8"
     - stage: seal
       stageUuid: "abc5ca62-f47a-8293-aacd-b23ef569a9cd"
     - stage: uuid
-      stageUuid: "c3f0dc9b-e974-8386-93a3-ac6e0ae13525"
+      stageUuid: "e57b2974-a584-8506-a81c-f01428756d23"
 version: 2
 ---
 # return

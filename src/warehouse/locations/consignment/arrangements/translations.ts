@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "arrangements",
-    "uuid": "807f8610-f1c2-884a-9df3-e87aa3b17755",
+    "uuid": "40a5ea64-af8d-82d8-a036-31b10e78bf7c",
     "words": [
       "arrangements"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing goods shipped to a consignee for onward sale where control transfers only at consignee sale — master IFRS-15 §B77-B78 / ASC 606-10-55-79 agreement covering consignee, term, control-transfer trigger, return rights, INCOTERM, and max-value cap. The consignment master-agreement collection.",
-    "uuid": "834bfc9e-af65-8da2-b39d-4fa8452319ce",
+    "uuid": "69f5ea9f-90e4-8d51-a205-5a225a81daf8",
     "words": [
       "use",
       "when",

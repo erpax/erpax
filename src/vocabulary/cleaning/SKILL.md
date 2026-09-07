@@ -2,10 +2,10 @@
 name: cleaning
 description: "Use when reasoning about cleaning as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cleaning"
-coordinate: "vocabulary/cleaning · 7/descent · defcd5f4"
-contentUuid: "3ba62858-c841-5a8f-92d4-750bf5813ec6"
-diamondUuid: "0f20cc63-4a9b-8580-9bc2-ee4bbccf60b1"
-uuid: "defcd5f4-b6f6-8d60-9001-79674cfc056a"
+coordinate: "vocabulary/cleaning · 7/descent · 94933c51"
+contentUuid: "0157d693-7971-55d2-8f3d-22100281fdb7"
+diamondUuid: "4770e7ed-bddb-869e-a3e8-25c870b73b38"
+uuid: "94933c51-5190-8844-9ec9-a54aea18b6c3"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4b0263e9-16e1-80d7-8e9a-b6400d23591a"
+  computationUuid: "5ce04597-1a36-8b96-8f4d-c4ea3b16c30b"
   stages:
     - stage: path
       stageUuid: "95b75242-8dbb-85dd-af16-b321aa279e0e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8c6faaa1-33c4-8bac-a065-81bbdf63dab3"
     - stage: horo
-      stageUuid: "10dc5f9d-9f08-8696-ad58-486060833346"
+      stageUuid: "dba65a23-4b95-8e5e-933f-c06526d8ebef"
     - stage: seal
       stageUuid: "301449b5-9f7b-8f69-9090-810f0c310d39"
     - stage: uuid
-      stageUuid: "6153ceee-6c92-8e97-b8d1-dab305329be4"
+      stageUuid: "0b8520fa-1600-8717-82d2-6ffb71f77e0f"
 version: 2
 ---
 # cleaning

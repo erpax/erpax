@@ -2,11 +2,11 @@
 name: provider
 description: "Use when reasoning about provider — The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider m"
 atomPath: "vocabulary/provider"
-coordinate: "vocabulary/provider · 7/descent · 9c6e87d4"
-contentUuid: "01b69fd7-9244-53b6-b0c1-19888a9a9d2c"
-diamondUuid: "e5f6afee-4034-8bb7-9408-01c703432656"
-uuid: "9c6e87d4-c7bf-8391-806b-18a8a1211c80"
-horo: 7
+coordinate: "vocabulary/provider · 8/crest · b3a3e999"
+contentUuid: "3ed04e51-706d-5410-8c4d-f11b8fb7d1d0"
+diamondUuid: "7993db5e-3fb2-8ba2-8d38-3f149760bfc0"
+uuid: "b3a3e999-3e9c-85e5-8fd1-d2402fc99158"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 25
@@ -17,7 +17,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9f39a3d3-fd85-8092-8e8c-b039c83ac135"
+  computationUuid: "33dfb119-ed8a-8c26-8295-ac68a4fc7764"
   stages:
     - stage: path
       stageUuid: "6c07bf19-b6a9-847d-9ad8-46428669415f"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "4f9fed48-6b8a-890e-8736-7a4b696f6f39"
     - stage: horo
-      stageUuid: "6c67eff8-bb56-8e99-b62d-a97d885776fb"
+      stageUuid: "227af7b4-6641-8607-9e12-6af46f96d309"
     - stage: seal
       stageUuid: "ee3d69b5-45e4-8f26-ac51-ff389e679984"
     - stage: uuid
-      stageUuid: "ef54145c-3829-8917-91a9-8b44f45de5f3"
+      stageUuid: "b40f5091-c969-8567-bcd9-ff0c74c7daa4"
 version: 2
 ---
 # provider

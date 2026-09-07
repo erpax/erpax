@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "permanently",
-    "uuid": "2dd688a3-99f0-862f-9b5f-8e7d55ac7d58",
+    "uuid": "93bb1029-287c-814a-8b36-1dbc616e9af2",
     "words": [
       "permanently"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about permanently as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "83253d57-657a-8bdd-a88b-f5c4422fe4cb",
+    "uuid": "d03b4c60-020d-872c-872f-5709179f26cf",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mass",
-    "uuid": "ed80ddcf-f1f3-8101-b3cb-d5e45639e7aa",
+    "uuid": "bca684ba-51cd-815c-95f3-77f43a3316e4",
     "words": [
       "mass"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about mass — Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'.",
-    "uuid": "e1789d74-52cd-88e4-8ecb-df8543635f51",
+    "uuid": "0b85364c-7095-8ab2-a908-363c0738660a",
     "words": [
       "use",
       "when",

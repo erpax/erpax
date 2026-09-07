@@ -2,11 +2,11 @@
 name: eu
 description: "Use when reasoning about eu — Use for pan-EU authority APIs (VIES VAT validation, EU sanctions, Peppol directory, ECB rates) and the EU member-state registry — BG/DE/ES/FR/IT/NL/PL/PT/RO. The EU slice of the country-authority registry."
 atomPath: "country/api/eu"
-coordinate: "country/api/eu · 7/descent · 4a28a5a0"
-contentUuid: "54484e1b-e1cb-51c1-a2db-b249153bedb0"
-diamondUuid: "617d640c-f56e-8578-9a7a-f15a2da0c0d5"
-uuid: "4a28a5a0-b48f-8fb2-abb4-bb1bc13a9ead"
-horo: 7
+coordinate: "country/api/eu · 4/weave · bc64cf26"
+contentUuid: "9a29c429-4d0b-565f-86da-fe366399df75"
+diamondUuid: "ee862c9e-9819-89ee-ae4a-4332fd6e1c13"
+uuid: "bc64cf26-047f-8500-b425-00391611614f"
+horo: 4
 typography:
   partition: country
   bondDegree: 37
@@ -17,7 +17,7 @@ standards:
   - "SDMX 2.1 statistical-data-and-metadata-exchange"
 bindings: []
 signatures:
-  computationUuid: "268e873b-7127-85da-af41-3702ba5367f5"
+  computationUuid: "c44ee62e-a365-83b5-997b-3705445a3c77"
   stages:
     - stage: path
       stageUuid: "0e91e2e6-4f18-8f2b-b22f-ad37f6314ab6"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "0da5ee87-4361-833c-b121-f75a97a1452a"
     - stage: horo
-      stageUuid: "7477ec0c-5a81-87b6-82d7-bda96d2bd89f"
+      stageUuid: "142c8cb9-0c11-8992-9d01-bcc63d851f2c"
     - stage: seal
       stageUuid: "fb2f6e47-8fba-8ad5-9ea2-3340d3ea4aec"
     - stage: uuid
-      stageUuid: "0cc2fc9e-1d6c-8819-87fa-b4fbf51d49e1"
+      stageUuid: "386ff3f0-d9c7-899b-8d45-0133f312d887"
 version: 2
 ---
 # country/api/eu

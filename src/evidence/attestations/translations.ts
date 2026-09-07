@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attestations",
-    "uuid": "2c7574c2-f609-84bb-b256-41f62f4227e1",
+    "uuid": "ed999706-395f-81db-87c6-5d5b37991d34",
     "words": [
       "attestations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index.",
-    "uuid": "d9124c85-88ba-8094-a9e5-71175991e627",
+    "uuid": "d2ce9fb2-e92d-883b-af4e-497b3860f972",
     "words": [
       "use",
       "when",

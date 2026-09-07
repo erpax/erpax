@@ -2,10 +2,10 @@
 name: authorize
 description: "Use when reasoning about authorize as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/authorize"
-coordinate: "vocabulary/authorize · 1/base · c8d3ac43"
-contentUuid: "dac6713b-ef71-5ede-913b-96e10f95b150"
-diamondUuid: "1d1a30a7-513d-8c8b-ba32-be629825cf9e"
-uuid: "c8d3ac43-774a-8bda-938e-18f1c6345bd7"
+coordinate: "vocabulary/authorize · 1/base · 41fd70dc"
+contentUuid: "4f3f8aa4-2228-5d43-92c0-47e35d9e2692"
+diamondUuid: "04a7fb2d-bf2e-8c03-b010-b9073cf12cad"
+uuid: "41fd70dc-75ef-86aa-9202-727ccb1e778e"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "37bc9d60-0fa8-8c8b-b373-704b74a858cd"
+  computationUuid: "4e339602-eb41-8573-8fc7-2651b3ea5dd9"
   stages:
     - stage: path
       stageUuid: "3865092e-66b2-8663-a3d0-88633f598beb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "18f567d7-58e4-8e05-9606-d794b32f1baa"
     - stage: horo
-      stageUuid: "2e934cb5-4b49-8bac-89de-368527877701"
+      stageUuid: "f1c9d74e-5998-822c-8f0e-12d80ca9ec28"
     - stage: seal
       stageUuid: "4f0ab3c8-d3cc-8483-b659-b5186bb60a89"
     - stage: uuid
-      stageUuid: "3b427394-d733-8296-9e47-b05154462cd8"
+      stageUuid: "b43346c9-a817-8689-953f-7ecc6db8463c"
 version: 2
 ---
 # authorize

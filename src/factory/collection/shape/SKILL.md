@@ -2,18 +2,18 @@
 name: shape
 description: "Use when asking whether a new collection is warranted — the rosetta scores a collection against the closed 9-axis basis, and only a NEW signature justifies a table rather than a row."
 atomPath: "factory/collection/shape"
-coordinate: "factory/collection/shape · 1/base · 5a21bdbf"
-contentUuid: "fdf7e2f3-7035-5f75-b6ec-eea77c0147a6"
-diamondUuid: "726b13a9-1067-8f96-b3ab-b6a07c64bd73"
-uuid: "5a21bdbf-cbc2-8f19-b6fe-5df4970a9e54"
-horo: 1
+coordinate: "factory/collection/shape · 4/weave · b4e6386a"
+contentUuid: "961a2d32-d0a0-5ea5-9310-7385b50aaf00"
+diamondUuid: "2e77af3a-a49a-8873-bd63-4dca675c61a1"
+uuid: "b4e6386a-0794-825b-90ae-4abf772d063b"
+horo: 4
 typography:
   partition: factory
   bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e8b0cb2a-21c8-8e9f-ae93-845a35d5268d"
+  computationUuid: "29e6e604-6bfa-83ec-8fef-52529d2a7d2a"
   stages:
     - stage: path
       stageUuid: "a2758c5a-0edd-8f32-859e-d95e478dad39"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2fad9dc0-cd8c-83f7-9879-0389718e34b7"
     - stage: horo
-      stageUuid: "d2e6b663-47d3-8c1a-b388-b5039ac71410"
+      stageUuid: "02f8101a-fe57-8f54-9e8c-cfa2e37fd10a"
     - stage: seal
       stageUuid: "f2fa4eef-b3b8-8f43-9d3f-7dede93e8ba8"
     - stage: uuid
-      stageUuid: "a81a21a1-3e47-8a17-9f3e-2e8f96b8c0c0"
+      stageUuid: "3698a20d-681c-863a-8645-ebb49f3788f7"
 version: 2
 ---
 # factory/collection/shape — a new table needs a new shape

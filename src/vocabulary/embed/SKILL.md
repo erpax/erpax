@@ -2,11 +2,11 @@
 name: embed
 description: "Use when reasoning about embed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/embed"
-coordinate: "vocabulary/embed · 2/share · 5c32ab9f"
-contentUuid: "0a75f5b5-0c3d-5ede-976e-1b73c653d0e7"
-diamondUuid: "b18216b6-e62a-8a27-8ae3-90dd984e97ff"
-uuid: "5c32ab9f-d003-8d16-94d5-4f5f87da742f"
-horo: 2
+coordinate: "vocabulary/embed · 1/base · 9264e0ae"
+contentUuid: "ff0a21aa-fddd-59fa-83fd-de4de0e73196"
+diamondUuid: "f913aacc-1d61-8c45-ba66-3be78d10eb1f"
+uuid: "9264e0ae-9888-8c1d-a1f5-6c31d7266285"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f88d2491-88b6-89f3-960e-e81c737a3873"
+  computationUuid: "3cb0d1b6-1cdd-8b7a-bb03-1a6b45bf14f5"
   stages:
     - stage: path
       stageUuid: "eac56252-b720-8d38-bd81-26dc51c466ae"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3ddab6f3-9c32-8bc7-9f0e-44316f82a974"
     - stage: horo
-      stageUuid: "cf8f73c8-23ae-89cf-8e76-55f93bf41efc"
+      stageUuid: "683dfa33-c623-8b73-b659-cba85cb5a884"
     - stage: seal
       stageUuid: "7f5d9c44-8abd-845e-950c-450e60c90041"
     - stage: uuid
-      stageUuid: "4e8a35b7-a2e5-8b81-836a-90912a94574e"
+      stageUuid: "9be0eac8-06af-8cec-becb-60bbcf0077e5"
 version: 2
 ---
 # embed

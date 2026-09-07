@@ -2,11 +2,11 @@
 name: catholic
 description: "Use when reasoning about catholic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/catholic"
-coordinate: "vocabulary/catholic · 7/descent · 04601a63"
-contentUuid: "1afdf607-a1a7-573c-a9ed-44ef7f2f70fb"
-diamondUuid: "1ef65dab-3c57-8462-a7cb-1c8455822676"
-uuid: "04601a63-2325-8407-b4e0-3d8452a17383"
-horo: 7
+coordinate: "vocabulary/catholic · 8/crest · c5873a65"
+contentUuid: "220d4e48-1b4c-5327-9b28-9cd869966eb4"
+diamondUuid: "7a004fe6-0610-8f3d-98b3-1d06f3102fcb"
+uuid: "c5873a65-b7b5-821f-bab0-0858b2ab99c1"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0df86ce1-78dc-8cd2-ba18-1b5e6e4088d3"
+  computationUuid: "cc80ae90-a6fe-8399-bf11-15cdd46639fe"
   stages:
     - stage: path
       stageUuid: "fb9ea674-4507-8fa0-a0e6-b2f642d791b5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "586671ad-4567-87b6-944d-5b422ad429a7"
     - stage: horo
-      stageUuid: "1f500927-ae53-8e9a-b861-e7644bba7bac"
+      stageUuid: "05567d53-b51c-8be9-9f20-2809f19bd39e"
     - stage: seal
       stageUuid: "9b683b0f-021f-84f2-b8f7-1d501866dd67"
     - stage: uuid
-      stageUuid: "a7557334-72d6-8399-893c-6addd928cb3c"
+      stageUuid: "34d66bf9-ad34-8457-80db-32c085234142"
 version: 2
 ---
 # catholic

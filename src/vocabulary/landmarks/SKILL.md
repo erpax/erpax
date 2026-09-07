@@ -2,10 +2,10 @@
 name: landmarks
 description: "Use when reasoning about landmarks as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/landmarks"
-coordinate: "vocabulary/landmarks · 2/share · 0fe70e64"
-contentUuid: "38dba893-d802-5d07-9d0a-09093c188f1c"
-diamondUuid: "0e0dddfa-f0eb-8ec1-99c7-b79f5ad4a679"
-uuid: "0fe70e64-a8e5-8172-b1f3-833d7b40e1b9"
+coordinate: "vocabulary/landmarks · 2/share · 224c09d2"
+contentUuid: "e147d01d-87d2-5508-84b8-1ef2c8f6471c"
+diamondUuid: "6038b2f7-7005-8637-90c1-1cc37271b956"
+uuid: "224c09d2-a992-8656-82a2-4b6d6c16be0f"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "02d44dfc-78ba-8787-aa0b-3d7f674d257a"
+  computationUuid: "b81a4a4a-4f9c-8544-abd2-34752447cbad"
   stages:
     - stage: path
       stageUuid: "0fab9ed2-1e07-83ac-8808-dfd1da3ddc55"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3fa4d5cb-ca25-83f6-9f61-b6738d36e929"
     - stage: horo
-      stageUuid: "ef080e22-640c-8064-94f4-ba56da8441fe"
+      stageUuid: "2c436d5c-9aba-8ee9-80f2-bbc0497e949f"
     - stage: seal
       stageUuid: "93e11c39-d192-8dfb-af0e-4477b4f6d19a"
     - stage: uuid
-      stageUuid: "32464c1e-c568-88f2-984a-4911f1ace336"
+      stageUuid: "34e4ff92-fd2a-8fba-93a2-244cf8c963e1"
 version: 2
 ---
 # landmarks

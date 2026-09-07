@@ -2,10 +2,10 @@
 name: kiosk
 description: "Use when reasoning about kiosk as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/kiosk"
-coordinate: "vocabulary/kiosk · 5/round · d68eb280"
-contentUuid: "5ab530bf-c453-56d0-9764-2e7bfbb4101a"
-diamondUuid: "61a2adc4-df50-8f74-9445-540608421a4d"
-uuid: "d68eb280-27ad-84e1-be8f-7f06ee01f93a"
+coordinate: "vocabulary/kiosk · 5/round · 762a665b"
+contentUuid: "1b7ebb06-3827-5e67-bfdd-46a18b650130"
+diamondUuid: "2f4c2eba-cf21-8cbc-8f8f-acda35c71abe"
+uuid: "762a665b-692b-8876-bee7-0e4a8bf4b450"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fcc32180-2673-8429-95d2-b15b4c070c55"
+  computationUuid: "74f1ae0d-8c10-844f-8589-7e48efeb2243"
   stages:
     - stage: path
       stageUuid: "7f44b322-d1ec-8af9-b52c-d8b4b3191b0b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f95115ba-5e98-8acf-88f1-5f3dcec21cc0"
     - stage: horo
-      stageUuid: "6aa07fe9-fa0d-8f09-8a83-373e91f23992"
+      stageUuid: "8b3e1632-8725-8b1a-a120-0ce6f55a460c"
     - stage: seal
       stageUuid: "e7d2c8bf-6eb5-8e75-b75a-911e91766d3d"
     - stage: uuid
-      stageUuid: "39a94b13-6534-86e5-b022-52de7a0b9997"
+      stageUuid: "a1e9aa63-6e4b-8a99-a9b1-cfc283f82db5"
 version: 2
 ---
 # kiosk

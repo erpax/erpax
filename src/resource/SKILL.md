@@ -2,11 +2,11 @@
 name: resource
 description: "Use when reasoning about resource as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: resource
-coordinate: "resource · 8/crest · f59a338e"
-contentUuid: "c694511f-9601-553a-b2ce-8dc2a92a3dfe"
-diamondUuid: "c5735301-2c11-80d1-b843-de0f93aa4215"
-uuid: "f59a338e-2437-89bd-ad74-d7886d54f3d8"
-horo: 8
+coordinate: "resource · 4/weave · a6b11638"
+contentUuid: "982b88c3-77be-5610-a4fe-8dfbf5fa9c1b"
+diamondUuid: "18fa320b-8bcf-8ae7-8de4-9dbcb9875464"
+uuid: "a6b11638-af97-8c56-907d-759a899b3906"
+horo: 4
 typography:
   partition: resource
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7df352f0-6e6e-84d7-baf3-de3059396e7b"
+  computationUuid: "1616e1aa-386f-8ca1-b57c-1348210f9685"
   stages:
     - stage: path
       stageUuid: "468926c0-c453-8e18-a89b-668f4bb7f624"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bfa16bcf-88f6-8a92-a7cc-5f5336956a2d"
     - stage: horo
-      stageUuid: "04c44d40-1c3d-8232-8c44-243a2be8f4f0"
+      stageUuid: "382117a0-307d-8c58-97f1-28a39989a81a"
     - stage: seal
       stageUuid: "bfc58060-8a54-83f1-a39a-6b04bd880a02"
     - stage: uuid
-      stageUuid: "f3e5726c-d526-80de-a4b5-225ad7e3c64a"
+      stageUuid: "14f847e1-7989-88da-a76e-096d499cbffe"
 version: 2
 ---
 # resource

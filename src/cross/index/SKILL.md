@@ -2,18 +2,18 @@
 name: index
 description: "Use when reasoning about index — Reciprocal cross of index/cross — path double-wire B/A face."
 atomPath: "cross/index"
-coordinate: "cross/index · 2/share · 8d799637"
-contentUuid: "cd90c2b2-3821-5b11-be52-ca9002bef890"
-diamondUuid: "ae6db606-3fd4-806d-8fee-6a50988ab9e8"
-uuid: "8d799637-ece7-85a8-bc2a-2fec621c819e"
-horo: 2
+coordinate: "cross/index · 1/base · 4ac127bc"
+contentUuid: "5c907870-9c1b-541a-a519-9f698155e3e9"
+diamondUuid: "25d94427-169b-8129-8cf9-63d85ade85b5"
+uuid: "4ac127bc-d0ec-832a-a944-909462728a4a"
+horo: 1
 typography:
   partition: cross
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b13bb51a-78e0-82ae-ac3b-f6282a37f1ec"
+  computationUuid: "59fc3e42-3380-8b08-9fad-f3ec98638ca6"
   stages:
     - stage: path
       stageUuid: "4dd4683d-7a95-8d5f-b34c-633fe392a818"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "abbf30ac-176d-8eb0-bb7d-e2d4dd24d301"
     - stage: horo
-      stageUuid: "a853ee69-fa6b-843f-b2ff-da919dca2400"
+      stageUuid: "f4f089d0-e937-8345-b148-1afcef7cc755"
     - stage: seal
       stageUuid: "7d29c4f8-f242-8a42-b0d8-fadfcb5abd6d"
     - stage: uuid
-      stageUuid: "ce39eedb-0b4a-8b6f-ab95-1832e9f6e7c2"
+      stageUuid: "42dd816a-4f54-8ffc-ad43-c7fa40b8d7bf"
 version: 2
 ---
 # cross/index

@@ -2,11 +2,11 @@
 name: news
 description: "Use when reasoning about news as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/news"
-coordinate: "vocabulary/news · 1/base · b56ff609"
-contentUuid: "04b77852-9137-5c50-b549-158f763eb23a"
-diamondUuid: "0bbab24d-7c5d-8122-88d0-6a727ebcace5"
-uuid: "b56ff609-746b-8aa4-9b40-da791c60bf4d"
-horo: 1
+coordinate: "vocabulary/news · 7/descent · 7f00a41f"
+contentUuid: "c22dca13-b331-5785-8915-700c6872b055"
+diamondUuid: "31beb123-a449-8ad8-b0de-658f3ad9e00f"
+uuid: "7f00a41f-18c4-8675-8823-9bf87a9bb1e5"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 67
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5c2568e8-a58d-8544-9d7f-cf72094ffa31"
+  computationUuid: "024c5d88-1593-8945-9a90-eaaf43faf669"
   stages:
     - stage: path
       stageUuid: "e8cd311b-8d5c-820e-8863-bc892bfef696"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bb607fdd-2644-86dd-a41e-3a3b3a7adc4e"
     - stage: horo
-      stageUuid: "0c28b647-3e22-8eeb-b607-6a9f9e4ad735"
+      stageUuid: "830cf702-108c-86a9-a1f3-0e20ad5eda1a"
     - stage: seal
       stageUuid: "aee991db-ec14-8705-a3dd-417222db4eae"
     - stage: uuid
-      stageUuid: "e4dcbef5-2c08-80d2-a1af-135d126431e9"
+      stageUuid: "d1e4b708-e14a-88eb-8511-50e6b5bc0024"
 version: 2
 ---
 # news

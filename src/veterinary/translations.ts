@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "veterinary",
-    "uuid": "1d62f65b-8fdf-8cdb-ae2c-3317bc6db38c",
+    "uuid": "2bc6fcfe-4396-8422-9d73-75157828aa33",
     "words": [
       "veterinary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about veterinary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "f16c8600-05d6-8734-a586-d5d017312280",
+    "uuid": "32dfbee5-6fdd-80df-8b81-f4d77c3ef4c2",
     "words": [
       "use",
       "when",

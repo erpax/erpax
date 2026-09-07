@@ -2,11 +2,11 @@
 name: casino
 description: Use when reasoning about casino — A casino.
 atomPath: "vocabulary/casino"
-coordinate: "vocabulary/casino · 2/share · ac261011"
-contentUuid: "86016cf3-1778-5ed8-9874-0fbde5eabcdb"
-diamondUuid: "6ba68ece-3015-8834-9278-cc9370ec6617"
-uuid: "ac261011-c271-8cdf-94d8-d0bb4c73a1c5"
-horo: 2
+coordinate: "vocabulary/casino · 8/crest · d8d7ba6f"
+contentUuid: "bca55f73-dfa1-5a69-942b-145d89d8f126"
+diamondUuid: "7c58bbb5-dfa9-8697-a27f-ab132c885b06"
+uuid: "d8d7ba6f-5085-8489-8e12-1398aacac5d1"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bfd9a59b-7527-8ee6-932f-0c0011337e45"
+  computationUuid: "b81c975e-641c-80df-82b3-d88700256105"
   stages:
     - stage: path
       stageUuid: "e1c70dd8-77b0-8c55-af3b-1b110be52271"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c7aa3b79-26b1-8b43-9d76-daad4eeb9f10"
     - stage: horo
-      stageUuid: "48a727e2-8056-89ca-8a3e-80f76988306f"
+      stageUuid: "c1cd2589-7392-8d6a-9ae1-0f596c6a1d1c"
     - stage: seal
       stageUuid: "77cb2681-5cb6-8a2a-bbe0-96e7715f1f1f"
     - stage: uuid
-      stageUuid: "e81d4604-de05-82d4-90c5-bfda3f83b69c"
+      stageUuid: "2a650b5f-0aeb-84c5-b7a0-41366651bc17"
 version: 2
 ---
 # casino

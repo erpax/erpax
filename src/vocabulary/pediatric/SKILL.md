@@ -2,11 +2,11 @@
 name: pediatric
 description: "Use when reasoning about pediatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pediatric"
-coordinate: "vocabulary/pediatric · 7/descent · b1d77980"
-contentUuid: "ee6e6713-7246-5f9a-8904-c4f217d00308"
-diamondUuid: "19ff9f25-029c-8782-a826-63c80c250e1e"
-uuid: "b1d77980-c1e5-8f1e-a5aa-a2b0ff3c3048"
-horo: 7
+coordinate: "vocabulary/pediatric · 4/weave · 552622ac"
+contentUuid: "9361b199-1156-574d-9635-29fefcbbfa11"
+diamondUuid: "16ebe0df-0693-850a-8294-2001c24320cb"
+uuid: "552622ac-a919-8857-8069-857b9824ea43"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2d00f703-989a-8bc3-ba09-4ce712a94f0d"
+  computationUuid: "59115533-497b-8c24-9d6d-5db6ca53997e"
   stages:
     - stage: path
       stageUuid: "a5566294-5c3e-8fae-90df-073bab8b6f68"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "43f9b0e6-f98e-8b36-9cbc-ed7d534af8cb"
     - stage: horo
-      stageUuid: "c874285e-b4c4-81be-9d88-4815966157a1"
+      stageUuid: "71727ae2-f5f8-8911-b9c1-53c0f6f27019"
     - stage: seal
       stageUuid: "c7f36d87-961b-8620-86b3-43634c0871a3"
     - stage: uuid
-      stageUuid: "f68ed3f6-63cf-8fe2-adfb-254cbf45a0aa"
+      stageUuid: "c28a9265-979a-85d3-a366-381c6917a55d"
 version: 2
 ---
 # pediatric

@@ -2,11 +2,11 @@
 name: max
 description: "Use when reasoning about max as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/max"
-coordinate: "vocabulary/max · 2/share · b848748d"
-contentUuid: "e63a4015-a965-51db-9950-fabffed01fcb"
-diamondUuid: "ccb16ae1-e0ec-8ff7-938f-957b2f40e1a5"
-uuid: "b848748d-70e1-8d93-9396-47a44cfed2a1"
-horo: 2
+coordinate: "vocabulary/max · 7/descent · fd719f11"
+contentUuid: "0df66b91-915a-5d56-958d-18dc4fee7e60"
+diamondUuid: "92d7706c-5693-8d91-809a-0140b044142f"
+uuid: "fd719f11-4520-8714-8cdc-c72423da68e4"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 52
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2c4422d2-3520-8c20-8438-cf7b4b3e330b"
+  computationUuid: "6a162581-aac7-8e96-958a-1eaa5440dc95"
   stages:
     - stage: path
       stageUuid: "cce08b68-2314-8948-8c7a-89761ff4a2c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b317ad3c-339a-8e44-8a8c-1f1d68159690"
     - stage: horo
-      stageUuid: "4a93d47c-ba9a-8834-a7bd-8481959d3f54"
+      stageUuid: "5862926f-cb77-8ddd-9413-2246822bb30b"
     - stage: seal
       stageUuid: "9cab6092-66d0-8eef-8fec-4bdf3daaee04"
     - stage: uuid
-      stageUuid: "f1e376c1-3192-8a0b-aa51-455668043423"
+      stageUuid: "44945c2f-7ac6-81ca-920a-32863dce7576"
 version: 2
 ---
 # max

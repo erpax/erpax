@@ -2,11 +2,11 @@
 name: ski
 description: "Use when reasoning about ski as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: ski
-coordinate: "ski · 5/round · a7906cdf"
-contentUuid: "3ade14b6-dcd6-5f45-817d-5098cf69b665"
-diamondUuid: "be497d72-c054-8de4-81b4-ccdf257f74b7"
-uuid: "a7906cdf-45ba-8a6b-9f8e-4e80e5627308"
-horo: 5
+coordinate: "ski · 2/share · 00dd32c3"
+contentUuid: "3b7a3333-b36c-5151-8301-5518a8aa3e30"
+diamondUuid: "1d5ad105-a19a-8201-9b2e-6493746b77e7"
+uuid: "00dd32c3-14e2-8c0b-bde6-b6363de9b1ac"
+horo: 2
 typography:
   partition: ski
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "886b8d24-8ed1-819c-ac62-e9496c924616"
+  computationUuid: "f52d5151-1930-8e2a-8ee9-c59c974bf463"
   stages:
     - stage: path
       stageUuid: "5e0a47f7-09bf-8007-8255-0dffad29c5bd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9c922038-8c8f-8232-9a52-29865c88fade"
     - stage: horo
-      stageUuid: "89e1283d-e456-8aec-860f-bcfc0f90a7a0"
+      stageUuid: "c0ba252d-1be2-8db2-a5f6-26f6085b8151"
     - stage: seal
       stageUuid: "4078bfbd-0955-8867-aba5-4a6e05b3acbf"
     - stage: uuid
-      stageUuid: "e3254ee4-420e-82b8-af75-86b090e119c5"
+      stageUuid: "0b91eb95-7467-8c4c-aa0b-c02b0d1fb622"
 version: 2
 ---
 # ski

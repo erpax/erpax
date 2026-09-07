@@ -2,11 +2,11 @@
 name: prognosis
 description: "Use when reasoning about prognosis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prognosis"
-coordinate: "vocabulary/prognosis · 1/base · 0ea2cd5b"
-contentUuid: "d9bc00a4-c882-595e-9f20-c8d9c2ce0edb"
-diamondUuid: "174fec2f-3871-8fba-b0a0-742280453f50"
-uuid: "0ea2cd5b-c5ac-8ad4-a427-620c8e0ad995"
-horo: 1
+coordinate: "vocabulary/prognosis · 4/weave · 0e340989"
+contentUuid: "8a1e33ae-4ecf-571b-917c-cc8ca2b05038"
+diamondUuid: "79963b76-c341-8020-a3fb-ae63ecdc2d06"
+uuid: "0e340989-96e6-80d3-a970-9a69300b88b2"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dad78668-9ea0-88a2-9ea9-f754218340a9"
+  computationUuid: "9458dbdf-3a0c-86fa-8278-26ae94b613ed"
   stages:
     - stage: path
       stageUuid: "d49ab89b-82a5-8e70-b527-aa04000612d1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "489cfc9c-8417-8681-a430-d8b70f52966b"
     - stage: horo
-      stageUuid: "2ad1c428-4fbb-82eb-b868-842ed7fc0b79"
+      stageUuid: "30ec4e7a-4368-890a-b9b5-f27d0e2b894c"
     - stage: seal
       stageUuid: "81af827b-d204-89b9-b08f-dcefa2d5f3c0"
     - stage: uuid
-      stageUuid: "c3b42e77-dcf8-864e-86f4-e96d81ddb92a"
+      stageUuid: "1fbbefb4-ef56-8184-9aa4-2db35d506611"
 version: 2
 ---
 # prognosis

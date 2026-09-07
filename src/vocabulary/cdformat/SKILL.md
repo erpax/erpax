@@ -2,11 +2,11 @@
 name: cdformat
 description: "Use when reasoning about cdformat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cdformat"
-coordinate: "vocabulary/cdformat · 4/weave · b866a72f"
-contentUuid: "87f39e2a-358d-5434-8303-ddc52d82142e"
-diamondUuid: "c85f7449-472d-8d1e-ab74-3efe2be8d506"
-uuid: "b866a72f-00ce-85ea-b61b-86714fba92cc"
-horo: 4
+coordinate: "vocabulary/cdformat · 5/round · 6fa939b7"
+contentUuid: "5c9522a1-5960-5783-9b7f-620797933632"
+diamondUuid: "28ab78b0-b2f3-8c73-a3a4-71023ae60520"
+uuid: "6fa939b7-9f64-8427-9f5c-b0ca592ba44a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3370e509-cfc8-843c-ba55-0aa43d3625b2"
+  computationUuid: "b5cb9035-536b-87a9-b027-8c2dee6841c6"
   stages:
     - stage: path
       stageUuid: "0e2844d3-6137-8c11-a643-c0719ad7f368"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9b79d791-f515-86bf-9f2e-f232c972c1e7"
     - stage: horo
-      stageUuid: "b25fa1d1-cb83-8236-b67b-88bc119326b5"
+      stageUuid: "bba330ce-5412-81a3-b342-38f286651240"
     - stage: seal
       stageUuid: "cd6f0e5c-f9f1-86ef-b0d0-abb325b876f2"
     - stage: uuid
-      stageUuid: "0b1a9c79-f739-8b77-989d-10a2bfdaee84"
+      stageUuid: "ff0b56e8-534a-8704-85ce-93f377772962"
 version: 2
 ---
 # cdformat

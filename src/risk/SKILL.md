@@ -2,10 +2,10 @@
 name: risk
 description: "Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy."
 atomPath: risk
-coordinate: "risk · 7/descent · 154f5704"
-contentUuid: "da798ddb-780d-53bc-bb07-cecda0f9a3a5"
-diamondUuid: "de1c1a3d-810d-8da9-889b-a8a9eb0ea8b1"
-uuid: "154f5704-68bc-8780-9693-0a297be25548"
+coordinate: "risk · 7/descent · 6dbfa9bf"
+contentUuid: "c87527e7-1bc5-5aed-8a79-cd3ddd0236a1"
+diamondUuid: "07cf205a-ba36-859e-b1d0-55646dbda077"
+uuid: "6dbfa9bf-f429-8c66-a62c-85fc157e27a6"
 horo: 7
 typography:
   partition: risk
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "998530b0-0eb6-856b-a369-f4277599b6b8"
+  computationUuid: "02c71b32-fb93-8793-bbb2-c05fab849749"
   stages:
     - stage: path
       stageUuid: "5c07745a-1a0a-8b95-b142-94fb7960898c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fbfc9017-580d-8fc3-adc9-6f4f22c3ce07"
     - stage: horo
-      stageUuid: "30ed905b-324c-8dae-9142-b8cabfa5ff04"
+      stageUuid: "cdaacb70-19eb-82a0-a7df-a8e7ded0b95c"
     - stage: seal
       stageUuid: "c39f455c-d760-8792-9f54-72bc110ce582"
     - stage: uuid
-      stageUuid: "e02f4814-276f-8069-8f7b-d9fdb1f056ec"
+      stageUuid: "dbcef153-51a2-828e-bbde-efe870ad60c2"
 version: 2
 ---
 # risk

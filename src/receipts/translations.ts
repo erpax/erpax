@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "receipts",
-    "uuid": "7fada966-6c79-8229-be57-da085efbb214",
+    "uuid": "fed76f94-016f-84f8-9eaa-4a45fad43fcb",
     "words": [
       "receipts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when issuing, querying, or auditing Наредба Н-18 fiscal receipts — касови бонове and e-receipts (alternative regime) — carrying УНП, fiscal-QR payload, VAT breakdown per tax group, and payment type; tamper-evident via content-uuid audit chain; never deleted. The Н-18 fiscal receipt collection.",
-    "uuid": "7773bd01-c28e-8c5b-928f-249bc1119459",
+    "uuid": "b8d0c821-e129-80ef-bf9c-57bd8f7c6386",
     "words": [
       "use",
       "when",

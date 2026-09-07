@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "redirect",
-    "uuid": "f747571b-2ed8-874b-9776-c95a887cf57c",
+    "uuid": "d5809abf-5357-8932-a93b-ce95bdf759ad",
     "words": [
       "redirect"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one redirect — the singular model of the redirects collection (the plural store); a rule that forwards one address to another.",
-    "uuid": "dc1ad07d-b033-8348-b352-7aea8745b2f1",
+    "uuid": "b202d216-1489-8eb7-b477-e3c00dfa6e77",
     "words": [
       "use",
       "when",

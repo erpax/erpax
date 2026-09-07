@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "complex",
-    "uuid": "c67873dd-2dc4-8109-a8ca-da736fffe599",
+    "uuid": "5003d0d6-70c8-8142-bfb3-2efe007ff0f1",
     "words": [
       "complex"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about complex as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "70c49905-e127-8321-9a70-eba69025066a",
+    "uuid": "82240521-a17c-8f56-82cd-33f37e1a8ae5",
     "words": [
       "use",
       "when",

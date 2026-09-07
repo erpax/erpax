@@ -2,11 +2,11 @@
 name: model
 description: "Use when reasoning about model — A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats c"
 atomPath: "vocabulary/model"
-coordinate: "vocabulary/model · 8/crest · 3f48d317"
-contentUuid: "01cae241-91f0-5a35-afbe-8ecefb5852ae"
-diamondUuid: "c671e758-0c90-8994-8c87-0d98727993dc"
-uuid: "3f48d317-fc87-816c-ac37-0c5c253bb59a"
-horo: 8
+coordinate: "vocabulary/model · 5/round · 727c654b"
+contentUuid: "5f87525e-7792-512e-8f0d-806a112c21c9"
+diamondUuid: "20e93c8a-22da-8ad6-b7d4-1cc4cae0ff67"
+uuid: "727c654b-b6fb-8b9c-8146-da1211d9b628"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 32
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3fabc530-7d90-8428-ae23-231ebb72185f"
+  computationUuid: "0f095846-8117-83ba-ba64-89dd9d62eccd"
   stages:
     - stage: path
       stageUuid: "5e782d3e-3467-8950-8bee-977e175cd85c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9a56dc47-f263-80ce-9d06-2af128a972a6"
     - stage: horo
-      stageUuid: "32452b22-d883-867e-85a0-db573397c62e"
+      stageUuid: "02aade85-7b5c-8086-ab06-ad5dbf7419ce"
     - stage: seal
       stageUuid: "d455d048-d48b-8fbd-aa96-9d56176bc629"
     - stage: uuid
-      stageUuid: "29c04fb2-ddb9-81d6-8b39-be71f43e1591"
+      stageUuid: "26110aa7-8fc6-81b8-ab9b-9e2b928a4c07"
 version: 2
 ---
 # model

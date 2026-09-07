@@ -2,20 +2,20 @@
 name: mesh
 description: "Use when querying the whole ERP as one graph — atoms ⊕ parsed import edges ⊕ standards citations, wave-schedulable; the clause→code trace as a query."
 atomPath: mesh
-coordinate: "mesh · 5/round · 963c22de"
-contentUuid: "40db3580-4d79-5bb3-8418-dbc3bcb96143"
-diamondUuid: "40df86c8-14fe-863c-b84d-b8ad91111ec6"
-uuid: "963c22de-e91c-8717-8e92-3dbc2cbdb397"
-horo: 5
+coordinate: "mesh · 1/base · e54af6e1"
+contentUuid: "6affd89e-991d-5f68-a757-eda8214dd95f"
+diamondUuid: "01f67f16-f170-826d-b8b3-3da68aa4bfe8"
+uuid: "e54af6e1-a8ed-86bd-af2b-265cfb15eca8"
+horo: 1
 typography:
   partition: mesh
-  bondDegree: 30
+  bondDegree: 27
 standards:
   - "ISO/IEC 25010:2023 §5.6.2 modularity — the whole is one addressable graph"
   - "banner read from COMMENTS ([[syntax]]) — prose addresses,"
 bindings: []
 signatures:
-  computationUuid: "0b65ffdb-589b-85ff-b818-a7ce2848f996"
+  computationUuid: "5df66378-ebbb-801c-b3bd-603540a5e9dd"
   stages:
     - stage: path
       stageUuid: "b37d7c22-d496-880d-8163-60c648606010"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "e10592dc-5ba2-81bc-9370-ecf0d2cd4718"
     - stage: horo
-      stageUuid: "f4d7842b-8602-8b6d-b601-c163c6c0cd22"
+      stageUuid: "8b4e4cb6-809b-8bab-84d2-939919d4e023"
     - stage: seal
       stageUuid: "35d46f8c-7f80-8870-8877-8965cf2816aa"
     - stage: uuid
-      stageUuid: "4330f9ac-b65a-8ea0-b0d0-2bb29fc0c65e"
+      stageUuid: "03d3c58f-ee9f-86a5-b598-bbd2aad8e821"
 version: 2
 ---
 # mesh — the whole ERP as one quantum graph

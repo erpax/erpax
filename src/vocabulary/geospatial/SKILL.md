@@ -2,10 +2,10 @@
 name: geospatial
 description: "Use when reasoning about geospatial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/geospatial"
-coordinate: "vocabulary/geospatial · 8/crest · ba2bfa4c"
-contentUuid: "373dcaf6-17d7-52ea-a57b-c79851371629"
-diamondUuid: "c73865c7-31d7-8de9-a6e5-3be2a230a67a"
-uuid: "ba2bfa4c-4b50-84c9-92ee-e54aeabb204c"
+coordinate: "vocabulary/geospatial · 8/crest · 16129778"
+contentUuid: "12eb1207-9b19-55b1-b14c-c89428952b74"
+diamondUuid: "0fe8ad2b-f159-890e-bcce-9a1625a18e9d"
+uuid: "16129778-0aa6-8696-9a9f-3b00a03d4a83"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0208cce8-a376-815f-985d-ab3a8a3e9312"
+  computationUuid: "11db70c5-77cf-8458-a816-b1c1ac2c494a"
   stages:
     - stage: path
       stageUuid: "e8f8c039-9217-8dd8-b0a6-28242d7369df"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8f5284df-cff7-8c23-be75-86c9bccad071"
     - stage: horo
-      stageUuid: "adadb36d-9ff0-87d7-b13b-e8a316f3cbf2"
+      stageUuid: "19a7d442-5f88-8de5-ace5-dbd5c9e3b5d4"
     - stage: seal
       stageUuid: "5a543105-64ee-8b28-82c6-3e8c876204ce"
     - stage: uuid
-      stageUuid: "6546d024-a0f9-86c5-b95d-3e65288d0d37"
+      stageUuid: "935ea65d-d3ee-8299-81e0-68ef9e76964d"
 version: 2
 ---
 # geospatial

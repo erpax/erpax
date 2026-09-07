@@ -2,11 +2,11 @@
 name: wallet
 description: "Use when putting a wallet on the quantum substrate — when you need its state to be a content-uuid (tamper-evident, any balance change yields a new state-uuid) and every transfer to be a balanced double-entry (payer credited, payee debited) over a history that is a chain of state-uuids."
 atomPath: "quantum/wallet"
-coordinate: "quantum/wallet · 1/base · 7e0887d6"
-contentUuid: "a30de8a6-3ffe-5eb5-a0fe-f58121b1d27b"
-diamondUuid: "c9ee5d99-e995-8a09-b0e4-e68ea48a6a1f"
-uuid: "7e0887d6-26a7-880a-b58f-c16698b65530"
-horo: 1
+coordinate: "quantum/wallet · 2/share · ca0dda58"
+contentUuid: "64a69ba6-14cb-58c9-9798-f1ae6b1ddede"
+diamondUuid: "9a763171-4eac-81b1-8542-6056d24e0517"
+uuid: "ca0dda58-a0c8-8e28-b67d-d5795e292341"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "double-entry ([[entry]]); RFC 9562 §5.8 content-uuid (tamper-evident state)"
 bindings: []
 signatures:
-  computationUuid: "daeeee49-7552-829b-8a65-22a8cd4ea2db"
+  computationUuid: "bc096e7b-34eb-8bcf-9d91-e80dbc9837ce"
   stages:
     - stage: path
       stageUuid: "f32d55f5-b79b-8134-a3f7-08e464af10a9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "268bdd28-5c8d-8f9b-9bf4-1104cd9f843a"
     - stage: horo
-      stageUuid: "fa90a08f-51e1-8f8e-85a7-78c8ac7c4b7e"
+      stageUuid: "2619d6d8-cc78-82f1-b62e-4ea567465180"
     - stage: seal
       stageUuid: "b820d6ec-568b-8335-9cc3-01bbde7b618f"
     - stage: uuid
-      stageUuid: "340eb09b-ce48-81e1-8a3d-66ca71630f20"
+      stageUuid: "6daf9c99-b6bb-8b67-8407-677670ba01d1"
 quantum:
   superposition:
     - account
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "daeeee49-7552-829b-8a65-22a8cd4ea2db"
-    contentUuid: "a30de8a6-3ffe-5eb5-a0fe-f58121b1d27b"
+    computationUuid: "bc096e7b-34eb-8bcf-9d91-e80dbc9837ce"
+    contentUuid: "64a69ba6-14cb-58c9-9798-f1ae6b1ddede"
 version: 2
 ---
 # quantum/wallet — the tamper-evident wallet (state = content-uuid)
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/wallet/index.ts` (`stateUuid` · `transfer` · `balanc
 
 @standard double-entry ([[entry]]); RFC 9562 §5.8 content-uuid (tamper-evident state)
 
-<sub>content-uuid `a30de8a6-3ffe-5eb5-a0fe-f58121b1d27b` · account `quantum/wallet` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `64a69ba6-14cb-58c9-9798-f1ae6b1ddede` · account `quantum/wallet` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "planting",
-    "uuid": "50bc6877-9480-8ecc-b179-270c488a23ec",
+    "uuid": "a7279332-5a49-8f66-8207-bea0ea5a9b60",
     "words": [
       "planting"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when output is spread across the season by staggered sequential sowings — succession planting: number of plantings (sowings) and number of harvests (pickings) are the two scheduling levers that replace one glut with a continuous supply. The interval between sowings ≈ one planting's picking window; total seasonal row-length divides evenly across the plantings to size each sowing and its seed order.",
-    "uuid": "e1aad2f6-9d7f-8fbc-aadb-f3e364bb2697",
+    "uuid": "ba0e0434-9e6b-88dd-9bf6-b143de148bec",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "manuscript",
-    "uuid": "47ec1682-bf47-808f-9fb8-45bbe787758c",
+    "uuid": "7f107057-a27f-8192-80ba-d564af325c9d",
     "words": [
       "manuscript"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about manuscript — A book, document, or piece of music written by hand rather than typed or printed.",
-    "uuid": "4900a8b7-d9ab-8b86-a2b5-c456f8b7c34e",
+    "uuid": "27c2e368-89fa-8e32-b9f9-1af8b86df618",
     "words": [
       "use",
       "when",

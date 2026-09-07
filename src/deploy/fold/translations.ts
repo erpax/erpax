@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fold",
-    "uuid": "1a7388fa-30d5-8cbb-8a15-1be9ecd69855",
+    "uuid": "6bbc1aac-ce1d-8ff4-a0be-9db38b6e7b5d",
     "words": [
       "fold"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a heavy dev/meta leaf must not ship in the Cloudflare Worker — the production module swaps live here as data, and their patterns are re-derived against the tree. A NormalModuleReplacement regex is a CLAIM about a path, and the path moves: when the scalpel renamed the matrix data leaf the pattern kept naming its old stem, nothing failed, and ~4 MiB of corpus matrix shipped until Cloudflare refused the upload at 11.5 MiB gz against a 10 MiB ceiling.",
-    "uuid": "5f989525-93d9-88cd-8d05-5fa225877743",
+    "uuid": "4252df50-5cd9-8d2b-b397-44cbe7a6ba1d",
     "words": [
       "use",
       "when",

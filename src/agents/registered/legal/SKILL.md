@@ -2,11 +2,11 @@
 name: legal
 description: "Use when reasoning about legal — Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts."
 atomPath: "agents/registered/legal"
-coordinate: "agents/registered/legal · 7/descent · 275256e7"
-contentUuid: "c29c3091-5744-5a4a-92e9-a7fdb9eb1c7a"
-diamondUuid: "3e7a057f-1e4e-8732-ae05-e67df6bff4e4"
-uuid: "275256e7-2854-8c3d-8761-a3dee4c1c360"
-horo: 7
+coordinate: "agents/registered/legal · 1/base · 5ce77b2e"
+contentUuid: "e4ff8f4b-ce9b-545c-8a9b-d6167dbe977e"
+diamondUuid: "23c34e56-58ae-8dd2-8d42-0f03ef060c1d"
+uuid: "5ce77b2e-128b-8d90-be9f-9dfe34ce0886"
+horo: 1
 typography:
   partition: agents
   bondDegree: 63
@@ -16,7 +16,7 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "602a3541-dbe1-8ca1-b367-00ff8e5fa4ab"
+  computationUuid: "83d82225-07ba-849c-99a4-987e8b2c4633"
   stages:
     - stage: path
       stageUuid: "8ac30a94-238b-8efd-b730-17fc5bd9f10b"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "2881da25-c22a-8015-8f8d-586e182fc2ca"
     - stage: horo
-      stageUuid: "df4d5bd0-2201-86f0-a739-0cc9bcf4f5cd"
+      stageUuid: "0be04193-1c41-8212-b543-f843918eacd8"
     - stage: seal
       stageUuid: "4545161f-d79b-8734-95ef-db88ab0b4076"
     - stage: uuid
-      stageUuid: "12e23e11-c7ce-866e-b652-8fcef125e067"
+      stageUuid: "9af95729-f9d0-813d-9ad4-a899a0d1c856"
 version: 2
 ---
 # legal

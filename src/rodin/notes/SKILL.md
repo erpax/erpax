@@ -2,18 +2,18 @@
 name: notes
 description: "Use when reasoning about sound from sequence position in erpax — the seven horo positions ARE seven diatonic notes, just-intonation ratios over A432 (La=A=432 Hz at the round step), Ti resolves to Do as the ring closes. The sound twin of cmyk. Nested under rodin."
 atomPath: "rodin/notes"
-coordinate: "rodin/notes · 1/base · 5088bbaa"
-contentUuid: "767bdc3d-5e83-5976-9df5-5ea5a65052da"
-diamondUuid: "1d87aec7-aab1-83a1-9988-33428d0fccd7"
-uuid: "5088bbaa-4720-8665-a2bb-c3430f5903cf"
-horo: 1
+coordinate: "rodin/notes · 4/weave · 5036cb95"
+contentUuid: "8849d53d-eaac-518b-8289-9384eb5059dc"
+diamondUuid: "fb5212a2-4a7f-8e4d-ac55-e4fb984da858"
+uuid: "5036cb95-4ca8-8228-b086-9e5c4e04a95b"
+horo: 4
 typography:
   partition: rodin
   bondDegree: 83
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2b6eaa1a-1ba4-8dc0-9611-aa9c6ec2ac20"
+  computationUuid: "631ce308-a29f-8e25-b450-d4fc99cdaddb"
   stages:
     - stage: path
       stageUuid: "44be2154-bc3d-81ad-8863-cdf91a2dd9cf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "209454ce-773b-890c-9c42-d150f5137ebe"
     - stage: horo
-      stageUuid: "6dcf8ffd-bbb9-8faa-bd74-46ff0be75261"
+      stageUuid: "51925d77-a450-8b03-8db8-37ddde888258"
     - stage: seal
       stageUuid: "002e10b4-8ad5-8e70-8b7f-61e622bff0fd"
     - stage: uuid
-      stageUuid: "ae370fb0-af1e-8340-8358-6bde712c4af2"
+      stageUuid: "5a5ea288-fe9c-86b6-88c4-1b84475eda5d"
 version: 2
 ---
 # notes — sound from position (the horo IS music)

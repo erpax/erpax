@@ -2,18 +2,18 @@
 name: status
 description: "Use when reading the quantum surface state from the CLI — superposition pending paths, last collapse, bond reciprocity. Promoted from a loose sibling to an atom because it is dispatched by PATH, which no lexical reference scan can see. Run: tsx src/quantum/status/index.ts"
 atomPath: "quantum/status"
-coordinate: "quantum/status · 2/share · d8db00f2"
-contentUuid: "e1e8c375-545a-50da-8276-006cbfce4d6c"
-diamondUuid: "218b130e-7fba-8717-a8af-e82309042d3a"
-uuid: "d8db00f2-6c84-8f7d-b44f-b7e8a16fab27"
-horo: 2
+coordinate: "quantum/status · 1/base · fa762c6d"
+contentUuid: "301d00b8-a327-575b-b1ca-fd0c69d456ed"
+diamondUuid: "cd64b7ba-0ced-8f11-b401-a049c8bf8f3b"
+uuid: "fa762c6d-330e-8903-8c4a-12c3315f97e2"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 107
 standards: []
 bindings: []
 signatures:
-  computationUuid: "99c0920b-6523-8f22-921b-1aeb684a8480"
+  computationUuid: "a4f5c671-3a60-8cd1-9d8e-89757225c31a"
   stages:
     - stage: path
       stageUuid: "17e4090b-f037-8d1e-bedb-2c9bfcbb8c39"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ec2847f2-6f46-8946-93eb-52f61c1dad96"
     - stage: horo
-      stageUuid: "a2bff8f5-ae5d-871c-8a59-f11507626c12"
+      stageUuid: "443520e7-aefc-83b4-9672-ea01184512c1"
     - stage: seal
       stageUuid: "ab3be850-b093-88e7-8c6a-de9fb39b138a"
     - stage: uuid
-      stageUuid: "7913d8a7-d5e9-8639-8eb2-cb073582352b"
+      stageUuid: "c8df9c01-deb6-8656-948e-e65e30b6c29f"
 quantum:
   superposition:
     - action
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "99c0920b-6523-8f22-921b-1aeb684a8480"
-    contentUuid: "e1e8c375-545a-50da-8276-006cbfce4d6c"
+    computationUuid: "a4f5c671-3a60-8cd1-9d8e-89757225c31a"
+    contentUuid: "301d00b8-a327-575b-b1ca-fd0c69d456ed"
 version: 2
 ---
 # status — the entry point a reference scan cannot see
@@ -78,4 +78,4 @@ The test pins both directions: every quantum dispatch target resolves, and the t
 
 Composes: [[quantum]]/context · [[cli]] · [[rules]]/unfolded · [[law]].
 
-<sub>content-uuid `e1e8c375-545a-50da-8276-006cbfce4d6c` · account `quantum/status` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `301d00b8-a327-575b-b1ca-fd0c69d456ed` · account `quantum/status` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,18 +2,18 @@
 name: audit
 description: "Use when reaching the audit dimension from the wave machinery — the double-wire reciprocal of audit/wave."
 atomPath: "wave/audit"
-coordinate: "wave/audit · 2/share · 8ed98d9b"
-contentUuid: "2739004a-fd7d-5ccf-b738-8f9019ab8ea8"
-diamondUuid: "ae0b7ebb-788f-89dc-84b5-9ae4ba29bd94"
-uuid: "8ed98d9b-b60d-8794-9137-26d3e84a54b1"
-horo: 2
+coordinate: "wave/audit · 7/descent · 1034f114"
+contentUuid: "98233fa2-bfb5-54ae-b0fe-da1161354d36"
+diamondUuid: "15648f1b-8f65-8d6f-bd59-bea2b7008af0"
+uuid: "1034f114-67c1-8511-aceb-e8f37a873be3"
+horo: 7
 typography:
   partition: wave
   bondDegree: 137
 standards: []
 bindings: []
 signatures:
-  computationUuid: "885ebf3a-98f9-8301-8195-72d22fd4f578"
+  computationUuid: "09780788-51a2-88c6-b796-cb9156e93d6a"
   stages:
     - stage: path
       stageUuid: "7718c7d4-74be-85ec-8669-214225c88177"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b078d63f-b684-8f08-bd68-7bfb4ab29348"
     - stage: horo
-      stageUuid: "29d2eab7-b605-8359-a0f9-c730468c3211"
+      stageUuid: "af81ca2a-ad69-85f1-bcac-334916370cb8"
     - stage: seal
       stageUuid: "2a184627-b74d-82a8-bbb6-9d1b8f7cd2d3"
     - stage: uuid
-      stageUuid: "4a612e7f-ad1c-850d-a700-97f9c5d9262e"
+      stageUuid: "9cc46cda-bb2a-8c5a-a3a5-7839fe115e6b"
 version: 2
 ---
 # wave/audit — the reciprocal

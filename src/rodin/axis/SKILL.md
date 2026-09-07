@@ -2,18 +2,18 @@
 name: axis
 description: "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin."
 atomPath: "rodin/axis"
-coordinate: "rodin/axis · 4/weave · d69fbbcf"
-contentUuid: "a1cfd2b7-0c97-514d-a63f-cdac62540b67"
-diamondUuid: "6ba4a843-b603-86f2-a633-2112ca52fd3b"
-uuid: "d69fbbcf-3864-8e01-b972-9e49bb477b53"
-horo: 4
+coordinate: "rodin/axis · 8/crest · b723700a"
+contentUuid: "94e0ca4a-42cd-5cfa-8b5a-0f800eac5785"
+diamondUuid: "28a68f12-3cf4-8d13-b60a-10c4f164e078"
+uuid: "b723700a-82b9-8a87-9040-38d074954983"
+horo: 8
 typography:
   partition: rodin
   bondDegree: 71
 standards: []
 bindings: []
 signatures:
-  computationUuid: "226fbb6b-0381-8831-946a-f34b024754f7"
+  computationUuid: "1ac3af77-e744-883b-bb42-84172a034832"
   stages:
     - stage: path
       stageUuid: "27e7a0ac-0083-8356-b67d-8a03daca798e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "212df84e-b488-8525-891d-e455b76289c9"
     - stage: horo
-      stageUuid: "205923cc-3268-8082-a7f0-7c4d96820413"
+      stageUuid: "a1efb7c2-991e-81d7-ad20-0b55f24dff19"
     - stage: seal
       stageUuid: "48e4c350-6fd9-8945-9d90-81293b318493"
     - stage: uuid
-      stageUuid: "86c0da8c-9bc2-8bae-a401-9b4945d711ba"
+      stageUuid: "c6cd0c8a-41fe-88d1-9a2d-1abad8cedd2b"
 version: 2
 ---
 # axis — the 3·6·9 control plane (three coils, 120° apart)

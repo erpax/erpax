@@ -2,18 +2,18 @@
 name: landmark
 description: Use when modelling one landmark — the singular model of the landmarks collection (the plural store); a notable place used as a point of reference.
 atomPath: "vocabulary/landmark"
-coordinate: "vocabulary/landmark · 5/round · acfca0b4"
-contentUuid: "7ccfa1c6-d26e-568c-953a-c7c54f7e3801"
-diamondUuid: "cca2fae8-933b-840d-ac9a-713e311880a9"
-uuid: "acfca0b4-85f3-8ea0-b129-e346318ec740"
-horo: 5
+coordinate: "vocabulary/landmark · 2/share · bef42400"
+contentUuid: "05fe7a4e-3d1f-5418-a08e-2723ced53ae8"
+diamondUuid: "89579c45-3122-8ab5-9118-61fa9837a659"
+uuid: "bef42400-cc23-866f-abdf-a68e8cbb800e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1abba0f0-3095-81bb-b1ea-6ce2b05f8441"
+  computationUuid: "4222a769-c951-8e42-951d-cd1a501774b7"
   stages:
     - stage: path
       stageUuid: "d477a858-76c5-8ee0-b1f2-3d278d0eeb60"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b8973d63-a2f9-8ad5-8122-c521bdf9f277"
     - stage: horo
-      stageUuid: "59f320c1-52dd-8e82-a834-996ab37f0fbf"
+      stageUuid: "86b3f09d-9b08-8599-95c9-aeae3e439e6d"
     - stage: seal
       stageUuid: "6f551bcf-58d2-8e43-8a21-f3456af28987"
     - stage: uuid
-      stageUuid: "94318997-4aa3-82b1-938c-b8164f65e51d"
+      stageUuid: "536e5725-4500-8399-a924-18bc66ba20ec"
 version: 2
 ---
 # landmark — the model of one [[landmarks]] row

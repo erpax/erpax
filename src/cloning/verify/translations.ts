@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "verify",
-    "uuid": "53a37c0b-f4da-8706-912d-c087316ba4e1",
+    "uuid": "41e0c39d-18ec-8b2e-aca9-45e7c1150f3a",
     "words": [
       "verify"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about verify — Conservation Law 24 — checkCloneIntegrity.",
-    "uuid": "5de07720-73ec-8a92-896f-4e44d6f12ad3",
+    "uuid": "d35792a7-c366-84c6-baf0-eeaaa696077f",
     "words": [
       "use",
       "when",

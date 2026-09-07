@@ -2,10 +2,10 @@
 name: pharmacology
 description: "Use when reasoning about pharmacology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pharmacology"
-coordinate: "vocabulary/pharmacology · 1/base · 072da708"
-contentUuid: "ff30e6c4-8e58-5105-8dfd-df9ed4321262"
-diamondUuid: "96375a14-2d98-8364-9765-a310ef56440c"
-uuid: "072da708-f799-88e8-9888-336f339042ca"
+coordinate: "vocabulary/pharmacology · 1/base · 58d55e4d"
+contentUuid: "7c0406e2-9027-52fb-8047-64821682067b"
+diamondUuid: "cbc80404-00fc-8d7d-a01e-d9997e96e75a"
+uuid: "58d55e4d-c75a-8620-9615-993360205002"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fd6cf75a-310f-8860-9cb4-6d05212694df"
+  computationUuid: "7e4c3684-6a4a-870f-8782-9424d4d90da3"
   stages:
     - stage: path
       stageUuid: "8e796857-40ad-81bc-9be0-763ef4e3c82c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "44739682-f03c-86a1-84ed-7e124f73d8ba"
     - stage: horo
-      stageUuid: "4b9b65c2-5a63-8d99-89d9-cc00d0b6a0ce"
+      stageUuid: "4cfe6e52-fe27-89b9-a2fb-003478eb329e"
     - stage: seal
       stageUuid: "2eac01ba-ecf9-8255-b785-fa9546a9f2d0"
     - stage: uuid
-      stageUuid: "8f0fda35-b79d-82fc-844f-8b8304ae8f50"
+      stageUuid: "bf69f90f-2874-8b0b-864e-a6a61145f2e9"
 version: 2
 ---
 # pharmacology

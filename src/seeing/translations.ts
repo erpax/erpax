@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seeing",
-    "uuid": "5a7c9ed9-cefc-80df-a2ea-90d232896474",
+    "uuid": "de5b14ac-1a4b-8d48-8b29-78445892580a",
     "words": [
       "seeing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a vivid demonstration (an animation, a movie) is offered as proof. Seeing is not proving: the evidence a rendering carries is the CLAIM's, never the frame count's — vividness is orthogonal to proof. Assume-nothing is the neutral prior (not disbelief). Belief flips only on a passing test, and against a neutral prior that flip IS surprise. The door is open; the key is a test, not a movie.",
-    "uuid": "d0ea14b7-4fbd-8086-be49-f4a2995d371f",
+    "uuid": "e2f46c88-e106-81a3-8b1c-8cc668af7ea8",
     "words": [
       "use",
       "when",

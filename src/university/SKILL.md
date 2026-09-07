@@ -2,11 +2,11 @@
 name: university
 description: "Use when reasoning about university as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: university
-coordinate: "university · 4/weave · cced7b60"
-contentUuid: "82c7789e-44b4-51b0-ae00-9e464355f973"
-diamondUuid: "4169c16d-481b-861b-a325-d3177c31d540"
-uuid: "cced7b60-f9bb-8ab9-99b4-f88a9d407e43"
-horo: 4
+coordinate: "university · 2/share · 16220c44"
+contentUuid: "f354b62b-2527-50a3-bcfc-bbdde768750c"
+diamondUuid: "9593346b-5a02-8137-a20f-3cf5f2a74508"
+uuid: "16220c44-5214-8a44-ac4d-bbd5ecd07107"
+horo: 2
 typography:
   partition: university
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7b83e1c2-f003-832a-8bff-b41237b41f7d"
+  computationUuid: "307aefc4-4457-88c4-ae81-57f566f9684a"
   stages:
     - stage: path
       stageUuid: "20c22d81-42bf-8b48-98c3-efb5234cb85c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3e238252-c1cc-876e-8b55-7080475cec82"
     - stage: horo
-      stageUuid: "9ff1c04f-41de-8d8b-a8d3-b015fc89d1cb"
+      stageUuid: "70e71469-6ce8-855a-ab39-719d1bd11f74"
     - stage: seal
       stageUuid: "aeff6203-e114-8640-9c03-92d8bc41917b"
     - stage: uuid
-      stageUuid: "524d7d0b-94c3-8063-ad20-dd33c62958f6"
+      stageUuid: "d9d2875d-6335-8b5f-8e03-68985fd36a0d"
 version: 2
 ---
 # university

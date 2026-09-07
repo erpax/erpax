@@ -2,11 +2,11 @@
 name: level
 description: "Use when reasoning about level as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/level"
-coordinate: "vocabulary/level · 7/descent · c4c94169"
-contentUuid: "99d7a1c1-88a4-5af4-9c34-7d2e82cdcf79"
-diamondUuid: "e84d81c8-fb02-894a-b27b-c3721e92d335"
-uuid: "c4c94169-57a0-869b-9fa2-ed5a8636719a"
-horo: 7
+coordinate: "vocabulary/level · 4/weave · 0e99dcf5"
+contentUuid: "38250fb6-4b67-5abf-ac5c-b9bc11052458"
+diamondUuid: "79bd25ec-aa80-8cbf-aaf4-bb02bca7a424"
+uuid: "0e99dcf5-93b3-84b0-bcc7-65e411060817"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 53
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bbcd6e4c-61e6-81c8-9bbf-0149bf6a46b3"
+  computationUuid: "98fd3f3e-5de3-82e7-a7e2-9102e0279a1b"
   stages:
     - stage: path
       stageUuid: "115ff731-862a-8502-a3e1-f15894175862"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d38995b2-4eaf-868a-83df-59b3a694675e"
     - stage: horo
-      stageUuid: "f739c9f2-1483-8671-a638-541c1f07375b"
+      stageUuid: "21e463da-216c-839c-965d-91628428b62f"
     - stage: seal
       stageUuid: "f44276fa-c012-89bf-83d4-0cca861cbc4e"
     - stage: uuid
-      stageUuid: "dd5e73a9-6ad2-8a7c-90d7-04d4f9e863e7"
+      stageUuid: "e6ced1b3-8985-8fa5-abf2-a6c3586508f1"
 version: 2
 ---
 # level

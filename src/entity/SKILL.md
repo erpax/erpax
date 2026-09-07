@@ -2,10 +2,10 @@
 name: entity
 description: "Use when reasoning about entity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: entity
-coordinate: "entity · 2/share · cd49dd93"
-contentUuid: "1fc8f829-0221-5914-9d2b-00d4ee9179d9"
-diamondUuid: "e51c1f49-cf5c-8e4e-9e78-4955c12e5e86"
-uuid: "cd49dd93-3d4e-8f18-9d44-4667220fb052"
+coordinate: "entity · 2/share · a8b6c2ed"
+contentUuid: "b90b6b38-b646-5e53-befd-39e50595a0b3"
+diamondUuid: "b2cd7ccd-0e65-8eab-b7d0-498adb5d7992"
+uuid: "a8b6c2ed-5e7b-899d-ad75-6e360da54473"
 horo: 2
 typography:
   partition: entity
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1c2ad3f8-72e3-80a4-930b-427e9bd7d34a"
+  computationUuid: "b3ee0b1a-359c-8d6f-84d2-c8d5299d4d3e"
   stages:
     - stage: path
       stageUuid: "da38b77f-624a-8103-8473-29bcd4f7c451"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "604b93a6-e42a-809e-ae05-a0a76e750ac2"
     - stage: horo
-      stageUuid: "3256ee79-bf30-8a1c-9807-de267ea9e6da"
+      stageUuid: "17c77067-1e72-82dc-86f8-49f610af5c0e"
     - stage: seal
       stageUuid: "73137cbd-3deb-894d-b26e-4945510e9a0d"
     - stage: uuid
-      stageUuid: "46e0245c-aedd-84b2-a267-e96c7e41c59e"
+      stageUuid: "4009aae8-a4a9-8f3d-8a1e-a62aa11399b6"
 version: 2
 ---
 # entity

@@ -2,10 +2,10 @@
 name: karma
 description: "Use when scoring moral weight as entropy — creating order is good karma, destroying it (waste) is bad; every move is a balanced double-entry (order debited, entropy credited), and karma is the running net of order created over destroyed."
 atomPath: karma
-coordinate: "karma · 7/descent · 46f6fa22"
-contentUuid: "0b1de65b-103a-523a-ac80-28a7b7768080"
-diamondUuid: "a9627812-ed76-866b-bb5d-29b957be5adf"
-uuid: "46f6fa22-758c-8472-b1d9-64a1c0237f2e"
+coordinate: "karma · 7/descent · 3920db0d"
+contentUuid: "6c3d3d9f-a12e-56ae-8b80-a5f00ddb57a3"
+diamondUuid: "88fb9bc3-b2f2-8548-b153-50224ab11be3"
+uuid: "3920db0d-23b4-8d27-95a4-7e4f358f9191"
 horo: 7
 typography:
   partition: karma
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3661106a-2029-8116-90bb-f12dab76e2a5"
+  computationUuid: "ff5c2472-350b-83d2-a803-a71f604fc429"
   stages:
     - stage: path
       stageUuid: "44cae3f1-6581-862f-8fba-381b2f0411f0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "60138bee-72f5-8696-a735-a3593342c543"
     - stage: horo
-      stageUuid: "ec55c54e-08d5-8e3c-a4a2-bd8fd1e74bbd"
+      stageUuid: "eb21a6ce-19c9-83ae-a05d-78667816041f"
     - stage: seal
       stageUuid: "704282ee-d20e-8a7f-87e5-f4fbb27e9b34"
     - stage: uuid
-      stageUuid: "3950c103-fe5d-8747-9bfe-2950c13d74a0"
+      stageUuid: "aafaf974-c8b4-845b-9000-37e125195fc5"
 version: 2
 ---
 # karma — the entropy moral ledger

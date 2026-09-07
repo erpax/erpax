@@ -2,18 +2,18 @@
 name: card
 description: Use when reasoning about card — Making a card clickable is easy and usually wrong. Wrapping the card in an swallows every nested link.
 atomPath: "use/clickable/card"
-coordinate: "use/clickable/card · 1/base · 12992cee"
-contentUuid: "5781300a-c59d-5425-b7a8-23300584eca2"
-diamondUuid: "6fcc3dcc-600c-8c30-aa38-f44f73c18400"
-uuid: "12992cee-01dd-8db3-bcda-032f6677e9f9"
-horo: 1
+coordinate: "use/clickable/card · 2/share · dae47603"
+contentUuid: "61c80d0a-fa7c-53e0-8760-de39e063aa7d"
+diamondUuid: "8c6cd243-7761-825d-b239-b71b315fb571"
+uuid: "dae47603-3cac-88f5-b9a3-0fd5ac7e495e"
+horo: 2
 typography:
   partition: use
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "48fb84fc-77a7-8e6a-bfca-41cc3fa34b70"
+  computationUuid: "18eeaae3-4e80-8c71-ba36-cc974e2159d9"
   stages:
     - stage: path
       stageUuid: "605b0008-d230-8fc8-abe7-9df5181fb3c6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8450bc3c-052f-80fc-acc7-8e7cd8877034"
     - stage: horo
-      stageUuid: "a3dc1876-6ece-8640-9b39-18aaee73c12a"
+      stageUuid: "ac09e030-2e0b-8088-87c3-3e4f2f666890"
     - stage: seal
       stageUuid: "3c6a28cd-13d6-87ca-9688-2f1bbc85cfe6"
     - stage: uuid
-      stageUuid: "d67a1b1b-5402-872b-8452-62473cf63da9"
+      stageUuid: "df465962-511d-8596-9c35-f27666383bb4"
 version: 2
 ---
 # use/clickable/card — the whole card is clickable, and every other way of clicking still works

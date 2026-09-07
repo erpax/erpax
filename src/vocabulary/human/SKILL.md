@@ -2,11 +2,11 @@
 name: human
 description: "Use when reasoning about human as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/human"
-coordinate: "vocabulary/human · 1/base · e6ccaebd"
-contentUuid: "951e16b7-6e9f-52b2-af9a-c006fb2dfffc"
-diamondUuid: "8c5b0aa4-4b1b-8b33-a398-0df28404be35"
-uuid: "e6ccaebd-43cc-8cd6-97d8-eca44b6c0f07"
-horo: 1
+coordinate: "vocabulary/human · 8/crest · 991d1019"
+contentUuid: "56a87303-5d65-59a6-a467-2c345b1f41f8"
+diamondUuid: "f1d2f065-72b1-8416-9359-31a3d7adc875"
+uuid: "991d1019-d589-824f-bf0e-6fc5901c56ee"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3a902155-2273-87ac-9a61-f221f11623fb"
+  computationUuid: "10277e23-ea4a-89a8-a492-101aeeeffca5"
   stages:
     - stage: path
       stageUuid: "2bdd22ac-3687-81c6-90f8-24153e5d5110"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0a02c2f5-bcdc-83ea-ad5d-fba769a3a314"
     - stage: horo
-      stageUuid: "aad2c330-1daf-8605-9e8a-362ba32db1d0"
+      stageUuid: "2e57f331-3482-8da5-86da-b60bc82cd621"
     - stage: seal
       stageUuid: "3b6096d1-e3d5-8c18-bbd1-f3ada3a8434a"
     - stage: uuid
-      stageUuid: "152c3ac8-bc27-8b13-9889-4ef97c6b4f7f"
+      stageUuid: "39cabd0e-a7ca-8624-92f6-fc06056b6248"
 version: 2
 ---
 # human

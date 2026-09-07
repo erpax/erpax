@@ -2,11 +2,11 @@
 name: generically
 description: "Use when reasoning about generically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/generically"
-coordinate: "vocabulary/generically · 5/round · e3f7054f"
-contentUuid: "6ba68bf6-d588-5a8a-8e7c-85f0d4c42f9c"
-diamondUuid: "d546422b-6ef4-8784-af03-9cc2b46d8443"
-uuid: "e3f7054f-4a10-84bc-b566-69131bc8738e"
-horo: 5
+coordinate: "vocabulary/generically · 2/share · 5c3ed3f7"
+contentUuid: "ab721cad-892a-5937-804d-af52572897f2"
+diamondUuid: "6bfa014a-0802-8189-8863-d380e013e8b5"
+uuid: "5c3ed3f7-3fd0-842a-90f1-d50d15222b11"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bd99b912-2d8c-8905-ba78-8e89c84806a7"
+  computationUuid: "929c3ee1-da56-8f00-935d-80850df1d4d1"
   stages:
     - stage: path
       stageUuid: "458c6f0a-4ea2-8578-8acf-f0b548120831"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ad0c9ad0-da04-8dc8-90f4-820416d6ec1a"
     - stage: horo
-      stageUuid: "473b4b92-8461-841f-b511-69f7a9c3bc6a"
+      stageUuid: "534907a4-7f16-871a-8909-8489b84a741b"
     - stage: seal
       stageUuid: "902785b3-f5d0-8d42-af41-69e7d1167316"
     - stage: uuid
-      stageUuid: "b6c51b65-7a50-86d1-b66b-1a5cf903f368"
+      stageUuid: "f4134695-641c-87e2-beb4-e7c8b326a6c5"
 version: 2
 ---
 # generically

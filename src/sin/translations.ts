@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sin",
-    "uuid": "d042a1b8-9695-89fa-8f7a-2c2ca821c939",
+    "uuid": "c7e68d4b-b43e-88c3-90eb-7aba31d06b35",
     "words": [
       "sin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about missing the mark — a measured deviation from the law/target, the violation a guardian catches. Not a stain but a distance: sin is entropy with a direction away from the whole, cured by turning back (reverse) and the debt released (mercy), never by hiding the gap.",
-    "uuid": "5f51abe1-8994-8fbf-a869-eceb81feef81",
+    "uuid": "1d9362f3-98db-88c0-9190-37c10108dcb1",
     "words": [
       "use",
       "when",

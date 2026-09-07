@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suggestions",
-    "uuid": "bf6eab07-195b-8e8f-8fbd-61e71c990823",
+    "uuid": "bda8227b-5922-8a90-b9f5-f1e6cd6b6780",
     "words": [
       "suggestions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection.",
-    "uuid": "c033ac70-0ef6-8f2b-8cfb-8618e3197eae",
+    "uuid": "d2462f75-8c33-8c07-a216-9e36fcb608fb",
     "words": [
       "use",
       "when",

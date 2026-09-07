@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "adjustment",
-    "uuid": "09557f86-dd19-8b18-a65c-6d2fda350414",
+    "uuid": "f7abe930-9e22-8f95-adf7-9a7043051b99",
     "words": [
       "adjustment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about adjustment — Period-End Adjustment Posting Hook — fires GL on status → 'posted'.",
-    "uuid": "1695d535-e5c7-862f-b64f-9525b70d517e",
+    "uuid": "a6fd6d91-cde5-81a1-95c8-2eb2fd8c713f",
     "words": [
       "use",
       "when",

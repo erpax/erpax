@@ -2,10 +2,10 @@
 name: relation
 description: "Use when reasoning about relation — A Payload relationship is one value with two shapes: the raw id when unpopulated, the whole document when populated. A **polymorphic** one is a third shape — ."
 atomPath: "field/relation"
-coordinate: "field/relation · 7/descent · c8c8f224"
-contentUuid: "b3bfa36d-d9fc-5517-ace6-2ad4d8a37afe"
-diamondUuid: "d3d01444-b928-8e65-bcd3-3fc871e8f6b5"
-uuid: "c8c8f224-6017-832a-8f08-db5fcfa9b44d"
+coordinate: "field/relation · 7/descent · d10de1a6"
+contentUuid: "ef67669b-f652-55af-b67a-df3a7a48a327"
+diamondUuid: "aa93fc85-34e5-8083-8321-4086c84d45e3"
+uuid: "d10de1a6-d488-842d-aa6c-c32f901ddc53"
 horo: 7
 typography:
   partition: field
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "420645f6-ed3f-8113-9a11-868f22113e98"
+  computationUuid: "416220fe-4102-839a-a737-32e7eae676b1"
   stages:
     - stage: path
       stageUuid: "194bd4d9-a82f-89fc-b136-f7e2961e90a6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c9dfd5fb-eecd-80f6-a5c5-2a7741a9a4e1"
     - stage: horo
-      stageUuid: "d2b74e15-54b7-805e-90be-9040eb42d7b8"
+      stageUuid: "fc1e2ad2-f1d6-8d4c-b4e1-79480a26f2bd"
     - stage: seal
       stageUuid: "ed9b5633-2aa2-8fa6-a4a4-7bc6492a43b1"
     - stage: uuid
-      stageUuid: "ac075d63-c5e8-8525-b896-2a80272427fd"
+      stageUuid: "11bd85d0-d18d-8b32-b0b0-6e39bf28211c"
 version: 2
 ---
 # field/relation — six sites, three answers, one input

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dom",
-    "uuid": "3e33cc73-86b3-8678-9210-e6e2dc3bed83",
+    "uuid": "6eda0894-5fcf-87a4-825a-e612efa1af64",
     "words": [
       "dom"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when code must branch on whether a real browser DOM is available — a default boolean that is true only when window, window.document and document.createElement all exist, guarding browser-only work on the server or in non-DOM runtimes.",
-    "uuid": "e3f844fa-13f2-8c93-a817-accd5b648346",
+    "uuid": "012bbd2f-38b6-880e-96e5-483d5b4351a5",
     "words": [
       "use",
       "when",

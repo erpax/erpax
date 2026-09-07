@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plan",
-    "uuid": "bc1838e2-0769-8a6f-859d-fff781b627e6",
+    "uuid": "d5373980-59c7-8ec1-a161-f2458294ece0",
     "words": [
       "plan"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a scored gap must become one executable tip — planTrinity builds FORM ⊗ CODE ⊗ PROOF, and isPreciseTip refuses anything vaguer, so 'continue improving' can never be emitted.",
-    "uuid": "2f42800a-5d15-8536-9317-2d4d6fa0bb66",
+    "uuid": "b37c5e7a-838e-8cd2-8ae3-18685332ea30",
     "words": [
       "use",
       "when",

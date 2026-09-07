@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "by",
-    "uuid": "9f98b0e4-88dc-8434-9ada-50ed67b0ead4",
+    "uuid": "dd622803-fb92-8749-a073-534b914f0a2c",
     "words": [
       "by"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when stamping the authoring user onto a row on first save without trusting client input — a beforeChange hook that auto-populates createdBy from the request user, only on create, only when not already set.",
-    "uuid": "80534ad0-ffe7-8559-9866-706bab4e2da2",
+    "uuid": "c8136b6e-1ce1-8159-8bb1-38ac9c15d631",
     "words": [
       "use",
       "when",

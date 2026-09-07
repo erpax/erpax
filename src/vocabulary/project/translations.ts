@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "project",
-    "uuid": "56292f1c-1fbd-864b-b2aa-c3dbe91f10c0",
+    "uuid": "50f06894-d8c1-8f5a-a536-2708a5547bf6",
     "words": [
       "project"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about project — An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to ind",
-    "uuid": "ef450dbb-5e4e-86d8-ae79-ce293c2028e7",
+    "uuid": "94067b3a-9cad-859c-a18e-5088a52a17dc",
     "words": [
       "use",
       "when",

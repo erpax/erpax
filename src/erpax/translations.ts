@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "erpax",
-    "uuid": "0e51e1fd-2beb-8841-93ad-2b961a1cb7ae",
+    "uuid": "a5bd796c-cb0e-8591-90d0-dbd666f0002f",
     "words": [
       "erpax"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a consumer needs to FIND erpax rather than run it — the orientation face: the canonical repo, the sealed skill entry, the one law, and the tiered licence, shipped as @erpax/erpax.",
-    "uuid": "119a1cfd-59b5-8252-9d1d-791c1622bae1",
+    "uuid": "9f38487f-bb1a-86be-91b3-3ece9e410fca",
     "words": [
       "use",
       "when",

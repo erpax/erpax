@@ -2,11 +2,11 @@
 name: drone
 description: "Use when the society sends scouts to fly the content-uuid matrix in coordinated self-learning — reconnoitring sectors for gaps and entropy and feeding them to the agents to eat, warfare tactics applied to building."
 atomPath: drone
-coordinate: "drone · 5/round · 80acaa79"
-contentUuid: "ec6cd9f0-2d72-5e41-bb21-07d1d1cc7cb8"
-diamondUuid: "cf11df78-4127-819e-a309-7033e4bc9495"
-uuid: "80acaa79-022b-8fb0-b474-40882d69c759"
-horo: 5
+coordinate: "drone · 1/base · effe5d9b"
+contentUuid: "d87abca9-e06b-5b5a-8cf1-8c97a92b0b8d"
+diamondUuid: "4029f0a3-c1f4-8c91-8176-1f60ae608193"
+uuid: "effe5d9b-ff74-8d37-8491-f0e4a7798ed9"
+horo: 1
 typography:
   partition: drone
   bondDegree: 52
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5e8ee49e-be11-8672-94bb-eed310116b74"
+  computationUuid: "9fe714c7-ffba-8ee8-99b7-5daf381d6de2"
   stages:
     - stage: path
       stageUuid: "756ed54f-14fb-86e9-8438-c165e3c14dc8"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "cc538335-990e-8c1b-a623-ac5c9fcc1b18"
     - stage: horo
-      stageUuid: "8bdae9cd-4973-836e-a39a-622704bb9ea8"
+      stageUuid: "474f2216-760f-8b0c-bcc2-07a7fe303145"
     - stage: seal
       stageUuid: "8f407fb9-467c-85d7-b812-9dc90614bc96"
     - stage: uuid
-      stageUuid: "fdc2f4d1-4c14-8314-944a-c1d7562f6618"
+      stageUuid: "ad7e63ec-60d2-805f-9311-90f85e7eed31"
 version: 2
 ---
 # drone — the scout that flies the matrix, for peace

@@ -2,11 +2,11 @@
 name: euenergy
 description: "Use when reasoning about euenergy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/euenergy"
-coordinate: "vocabulary/euenergy · 5/round · b7e18c28"
-contentUuid: "0e6e731d-8e4d-594c-8bde-2bc431e63b25"
-diamondUuid: "62d03ea0-a550-8f66-9ba3-e80c042b5d4d"
-uuid: "b7e18c28-ed1c-881f-b4b6-f4a2dc51948a"
-horo: 5
+coordinate: "vocabulary/euenergy · 2/share · 9e515632"
+contentUuid: "d70c8315-b3c7-5e4c-b460-78ac2d049b04"
+diamondUuid: "7c14b6b8-4a1e-8425-8e1d-12606930d5dd"
+uuid: "9e515632-f224-8b23-b2d1-c528b8bde96e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8286a647-d856-8643-9e9e-0be7aaf792e3"
+  computationUuid: "9a68d301-92ea-88dc-bc33-57367f1c346c"
   stages:
     - stage: path
       stageUuid: "6db23ec9-cdc2-845e-ad93-c1304dcd75c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "af864a3d-f40e-87ce-911f-521566cb4eb1"
     - stage: horo
-      stageUuid: "f80c8ea3-c7bb-849b-926f-6d15b5cfadc3"
+      stageUuid: "cf2b1006-feb1-8d70-9f5c-d0cca1e9dae3"
     - stage: seal
       stageUuid: "ee8141f8-578e-8fd9-83f6-845baeef8b75"
     - stage: uuid
-      stageUuid: "e26837b3-559b-89e0-a424-5d5e9d477d5a"
+      stageUuid: "59b36952-512c-8f72-be7b-bddf712073f4"
 version: 2
 ---
 # euenergy

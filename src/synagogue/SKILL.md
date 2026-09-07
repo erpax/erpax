@@ -2,11 +2,11 @@
 name: synagogue
 description: Use when reasoning about synagogue — A synagogue.
 atomPath: synagogue
-coordinate: "synagogue · 8/crest · 52b88d31"
-contentUuid: "cb596f00-542a-587d-a64a-2016dc574535"
-diamondUuid: "4970bd60-392d-8006-a65d-f6fd3f51d52e"
-uuid: "52b88d31-427e-801b-bc8f-01203f9403c8"
-horo: 8
+coordinate: "synagogue · 4/weave · ac073dd3"
+contentUuid: "0f31843b-c75a-5fd1-b0b3-30a2cbc6c20f"
+diamondUuid: "12e99e5c-61d7-8a06-aed0-162af4c71111"
+uuid: "ac073dd3-ec90-8f34-b452-0b46b1cde08b"
+horo: 4
 typography:
   partition: synagogue
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c42a2449-1461-8e18-969b-3e4c54259d57"
+  computationUuid: "645ea473-b567-838e-a1c7-aa1658961851"
   stages:
     - stage: path
       stageUuid: "329e1f9f-7ab8-871b-83bd-ed37bedbfdc7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7af4f923-f788-8c59-a007-73b4327304fe"
     - stage: horo
-      stageUuid: "3307a6cd-8fe2-8dd3-9db9-87d733459e93"
+      stageUuid: "fbb3c93b-0e13-8364-8f28-fecd5751466a"
     - stage: seal
       stageUuid: "d5a3680e-45a6-8916-a9a8-d0bb712fc4c9"
     - stage: uuid
-      stageUuid: "391658f5-6bf4-80bb-b9f9-ecae9938f810"
+      stageUuid: "68ecbc0b-f97c-819d-bfc5-bf6e4c998c1a"
 version: 2
 ---
 # synagogue

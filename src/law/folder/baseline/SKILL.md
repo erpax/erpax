@@ -2,18 +2,18 @@
 name: baseline
 description: Use when reasoning about baseline — baseline — guardian ceilings from computed math + emitted snapshot.
 atomPath: "law/folder/baseline"
-coordinate: "law/folder/baseline · 5/round · 64745502"
-contentUuid: "ad7c3f06-5cb1-576f-9796-763f9be5cc97"
-diamondUuid: "64cb9a86-d8c5-8ec5-9301-3fe62a4042a8"
-uuid: "64745502-0c16-8fbd-9594-cfef310e8751"
-horo: 5
+coordinate: "law/folder/baseline · 4/weave · 1267985f"
+contentUuid: "a0d92640-b7e2-5719-bcd2-6807acfb953f"
+diamondUuid: "118d4afb-ae40-8194-9921-a90088fdb733"
+uuid: "1267985f-a34a-86c6-bf76-06c7ff6e5b6f"
+horo: 4
 typography:
   partition: law
   bondDegree: 42
 standards: []
 bindings: []
 signatures:
-  computationUuid: "70293c09-9c88-8636-b7a9-6cb7513b980c"
+  computationUuid: "cfed40dc-4136-8517-a46e-a2b286dfc69d"
   stages:
     - stage: path
       stageUuid: "70521b32-d4a2-852e-bd3a-3f14f25bace7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ff5696ef-6a55-8747-a61e-84b1564f1d3c"
     - stage: horo
-      stageUuid: "b0941af4-d4f8-8751-b802-6de7a015d9e0"
+      stageUuid: "5e47d530-ed6e-884d-9cc8-01da0836eea5"
     - stage: seal
       stageUuid: "c9347eb1-9571-8ba1-9bb4-8f10bedaef88"
     - stage: uuid
-      stageUuid: "31a04b47-6515-80b7-b8bc-87de1a2f930e"
+      stageUuid: "861905bb-d465-81c8-a2a6-98fa717a2bb9"
 version: 2
 ---
 # law/folder/baseline

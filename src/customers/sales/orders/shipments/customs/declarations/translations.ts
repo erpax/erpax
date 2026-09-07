@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "declarations",
-    "uuid": "03ad831e-9a5e-8502-ac31-59e6a8ccbf05",
+    "uuid": "a970d79d-c42e-8551-a2fe-b655d6eced6f",
     "words": [
       "declarations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection.",
-    "uuid": "50b48b8d-e411-84ae-a384-19ebac94298e",
+    "uuid": "c0fc2103-c442-8cf9-b84c-3f890ddfc153",
     "words": [
       "use",
       "when",

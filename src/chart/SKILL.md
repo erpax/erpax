@@ -2,18 +2,18 @@
 name: chart
 description: "Use when specifying a chart as pure data — a numeric series with its range and a deterministic normalizer to [0,1]; rendering is the quantum facet (colour per value via the analog aura)."
 atomPath: chart
-coordinate: "chart · 7/descent · 1f5fc19b"
-contentUuid: "b4a4743f-27eb-516e-8d5a-b7a5af44bd9b"
-diamondUuid: "69bde947-47e0-805b-8428-36eb824447a7"
-uuid: "1f5fc19b-073d-8c1d-8e0c-79aa6b4e34f9"
-horo: 7
+coordinate: "chart · 4/weave · 95df898d"
+contentUuid: "fea484a4-592c-500c-a8ce-39909c2df224"
+diamondUuid: "a266aa76-e3d7-833a-9732-ce4c0ff4af02"
+uuid: "95df898d-626c-85d9-81f9-ed187cae0946"
+horo: 4
 typography:
   partition: chart
   bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f13b0b59-a627-8801-bcac-06c9991f8154"
+  computationUuid: "1e57b4ee-5c7a-8880-bf12-9d1bae301fd6"
   stages:
     - stage: path
       stageUuid: "af0fc2b8-6ff3-8ac5-ae16-776f26b2ce2d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "57ce59fb-211e-869c-8a4f-88fdc39648a7"
     - stage: horo
-      stageUuid: "f201d83a-7f8e-86fd-bfa8-70620122fe4d"
+      stageUuid: "08d22d65-2ce3-8b73-97ab-3733c39f0be9"
     - stage: seal
       stageUuid: "7bfac704-3c0e-873d-92f1-b386506acc3b"
     - stage: uuid
-      stageUuid: "5ef8a6a8-c431-8275-aa69-0945d5013c05"
+      stageUuid: "18c60943-8150-8eb7-a9f2-15662fd00886"
 version: 2
 ---
 # chart — a chart as pure data
