@@ -2375,12 +2375,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "css"
   },
   {
-    "atom": "variables",
-    "name": "variables",
-    "description": "Use when reasoning about variables — Six numbers, and they lived in — a file at the ROOT of , which belongs to no atom.",
-    "path": "css/variables"
-  },
-  {
     "atom": "currency",
     "name": "currency",
     "description": "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name.",

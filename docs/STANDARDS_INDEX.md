@@ -914,7 +914,6 @@ src/csrd/disclosures/index.ts:17: * @standard EU ESRS 2 General Disclosures
 src/csrd/disclosures/index.ts:18: * @standard ISO 14064-1:2018 ghg-quantification (basis for ESRS E1)
 src/csrd/disclosures/index.ts:19: * @standard EU EFRAG ESRS-XBRL taxonomy
 src/css/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/css/variables/index.ts:4: * @standard W3C CSS Media Queries Level 4 — width breakpoints
 src/currency/fallback/index.test.ts:19: * @standard ISO 4217 §6.5 "No currency" (XXX numeric 999)
 src/currency/fallback/index.ts:449: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
 src/currency/fallback/index.ts:450: * @standard IAS 21 §38 presentation-currency translation

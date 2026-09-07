@@ -24205,55 +24205,6 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
-    "atom": "variables",
-    "path": "css/variables",
-    "translations": [
-      {
-        "key": "name",
-        "source": "variables",
-        "uuid": "03ba6667-3b93-86e3-8c91-506129f14c4f",
-        "words": [
-          "variables"
-        ],
-        "values": {
-          "en": "variables"
-        }
-      },
-      {
-        "key": "description",
-        "source": "Use when reasoning about variables — Six numbers, and they lived in — a file at the ROOT of , which belongs to no atom.",
-        "uuid": "1f44f59b-11a2-829f-b5b0-730592fb20f5",
-        "words": [
-          "use",
-          "when",
-          "reasoning",
-          "about",
-          "variables",
-          "six",
-          "numbers",
-          "and",
-          "they",
-          "lived",
-          "in",
-          "a",
-          "file",
-          "at",
-          "the",
-          "root",
-          "of",
-          "which",
-          "belongs",
-          "to",
-          "no",
-          "atom"
-        ],
-        "values": {
-          "en": "Use when reasoning about variables — Six numbers, and they lived in — a file at the ROOT of , which belongs to no atom."
-        }
-      }
-    ]
-  },
-  {
     "atom": "currency",
     "path": "currency",
     "translations": [
@@ -209529,4 +209480,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3582
+export const TRANSLATIONS_COUNT = 3581
