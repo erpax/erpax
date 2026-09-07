@@ -14,31 +14,14 @@ export interface GateSurface {
   readonly file: string
 }
 
-/**
- * The two surfaces besides `pnpm check` itself. DECLARED — a new one is invisible until named.
- *
- * NOT EXPORTED. It cannot be derived: discovering "files that mention the gate" answers a different
- * question — it finds `cloudflare.yml` and misses `.husky/pre-push`, moving the drift 31 -> 32. The
- * list is a JUDGEMENT about which surfaces must agree with the authority, and judgements are
- * declared. But an exported data literal is seal-debt the constants audit counts, and this was the
- * one crack this session added (786 -> 787), so the judgement stays and the export goes.
- *
- * Its consumer asserts through the public face, and its test declares its OWN expectation — which
- * is stronger than importing this list and comparing it to itself ([[rules]]/mirror).
- */
+/** The two surfaces besides `pnpm check`. DECLARED, not exported — see ./SKILL.md. */
 const GATE_SURFACES: readonly GateSurface[] = [
   { name: 'pre-push', file: '.husky/pre-push' },
   { name: 'ci', file: '.github/workflows/ci.yml' },
 ]
 
-/**
- * A surface's EXECUTABLE text — full-line comments removed.
- *
- * A lane named only in a comment is prose about the gate, not the gate. Both surfaces comment with
- * `#`, and this strips a line whose first non-space character is one. An inline `#` inside a quoted
- * string is NOT handled, which can only make a surface look like it covers MORE than it does — so
- * the count this produces is a ceiling on coverage, never a floor.
- */
+/** A surface's EXECUTABLE text — full-line comments removed; a lane named only in a comment is
+ *  prose about the gate, not the gate. Over-reports coverage, never invents it. See ./SKILL.md. */
 export const executableText = (text: string): string =>
   text
     .split('\n')
@@ -51,14 +34,8 @@ export interface LaneGap {
   readonly missingFrom: readonly string[]
 }
 
-/**
- * Lanes the authority defines that a surface does not run.
- *
- * A lane is "run" by a surface when the surface's executable text contains the lane's COMMAND. That
- * is a fact about text, not about execution: a surface could invoke the lane by another spelling and
- * be reported as missing it. The direction of that error is the safe one — it over-reports a gap and
- * never invents coverage.
- */
+/** Lanes the authority defines that a surface does not run — matched on the lane's COMMAND, a fact
+ *  about text. Over-reports a gap, never invents coverage. See ./SKILL.md. */
 export function laneGaps(cwd: string = process.cwd()): LaneGap[] {
   const surfaces = GATE_SURFACES.map((s) => {
     let text = ''

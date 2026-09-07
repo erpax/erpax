@@ -10,18 +10,6 @@ import type { Props as MediaProps } from '../../types'
 
 import { getMediaUrl } from '@/get/media/url'
 
-/**
- * The breakpoint widths, beside their ONE consumer.
- *
- * These lived at `src/cssVariables.js` — six numbers at the ROOT of `src`, which folds to the
- * pseudo-atom `.` that also holds `payload.config.ts`, welding them to the entire collection
- * registry ([[rules]]/cycle, −23 atoms when cut). Giving them an addressed atom cut that; keeping
- * that atom did not, because a single-use export is un-folded ([[rules]]/unfolded) and an exported
- * data literal is seal-debt the constants audit counts. Inlined here they are neither, and they are
- * still out of the root.
- *
- * Keep in sync with the Tailwind screen widths (v4 defaults plus a custom 3xl).
- */
 const breakpoints = {
   '3xl': 1920,
   '2xl': 1536,

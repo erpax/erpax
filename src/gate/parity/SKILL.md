@@ -82,3 +82,34 @@ silently, and the drift is invisible from inside either one.**
 - **ISO 19011:2018 §6.4** — audit evidence: a check that did not run produced none.
 
 Composes: [[gate]] · [[rules]]/command · [[rules]]/copy · [[law]].
+
+## Notes from the code
+
+Long docstrings live here; the code keeps one line and a pointer ([[rules]]/word-matter — a comment
+earns its place, and a file that is 60% commentary is prose with code in it).
+
+### `GATE_SURFACES` — declared, and not exported
+
+It cannot be derived. Discovering "files that invoke the gate" answers a different question: it
+finds `.github/workflows/cloudflare.yml`, misses `.husky/pre-push`, and moves the drift `31 → 32`.
+The list is a JUDGEMENT about which surfaces must agree with the authority, not a fact about which
+files mention it — so it stays declared.
+
+It is not EXPORTED, because an exported data literal is seal-debt the constants audit counts
+([[matrix]]), and a two-element list consumed inside its own atom does not need to be one. Its test
+declares the surfaces it expects rather than importing this list and asserting the implementation
+agrees with itself — that comparison was a tautology ([[rules]]/mirror) and could not fail.
+
+### `executableText` — why a comment is not a lane
+
+A lane named only in a comment is prose about the gate, not the gate. Both surfaces comment with
+`#`, and this strips a line whose first non-space character is one. An inline `#` inside a quoted
+string is NOT handled, which can only make a surface look like it covers MORE than it does — so the
+count is a ceiling on coverage, never a floor.
+
+### `laneGaps` — a fact about text
+
+A lane is "run" by a surface when the surface's executable text contains the lane's COMMAND. That is
+a fact about text, not about execution: a surface could invoke the lane by another spelling and be
+reported as missing it. The direction of that error is the safe one — it over-reports a gap and
+never invents coverage.

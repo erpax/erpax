@@ -93,32 +93,16 @@ export function closureHashOf(entryFiles: readonly string[], cwd: string = proce
 /**
  * Suites whose verdict is a function of the WHOLE CORPUS, not of their import closure.
  *
- * A receipt cites a suite when its closure has not moved. That is exactly right for a suite that
- * tests its own atom, and WRONG for one that SCANS `src` at runtime: `src/matrix/test.ts` counts
- * every `export const` in the tree, so adding one in a distant atom changes its verdict while its
- * imports sit unchanged — and the receipt says it already passed.
- *
- * Measured 2026-09-07: the constants audit stood at 788 against a ceiling of 786 and CI was GREEN,
- * because the push lane cites (`erpax test waves`; only a pull request runs `--all`) and this
- * suite's closure had not moved. A gate that cannot go red is the defect this corpus names
- * everywhere else — [[rules]]/unraised, [[rules]]/mirror, [[rules]]/command — arriving in the
- * receipt layer.
- *
- * DECLARED, because no theorem derives "this suite reads the filesystem": a scan happens at
- * runtime, behind a call the closure walk cannot see. Written here in the open so it can be
- * argued with, and so a new corpus-wide suite is one line rather than a silent false green.
+ * A receipt cites a suite when its closure has not moved — right for a suite testing its own atom,
+ * wrong for one that SCANS `src` at runtime. The constants audit stood at 788 against a 786 ceiling
+ * while CI was green, because its imports had not moved. DECLARED: no theorem derives "this suite
+ * reads the filesystem". See ./SKILL.md.
  */
 export const CORPUS_WIDE_SUITES: ReadonlySet<string> = new Set([
   'src/matrix/test.ts',
 ])
 
-/**
- * A suite's content address.
- *
- * Its import closure — plus, for a corpus-wide suite, the fold of everything it can SEE. Both
- * halves are needed: the closure catches a change to the suite or its atom, the corpus fold
- * catches a change anywhere the scan reaches.
- */
+/** Closure — plus, for a corpus-wide suite, the fold of everything its scan can see. */
 export function suiteClosureHash(suiteFile: string, cwd: string = process.cwd()): string {
   const closure = closureHashOf([join(cwd, suiteFile)], cwd)
   if (!CORPUS_WIDE_SUITES.has(suiteFile.replace(/\\/g, '/'))) return closure

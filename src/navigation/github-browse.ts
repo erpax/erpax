@@ -117,11 +117,11 @@ export function countSrcTopLevel(cwd: string = process.cwd()): SrcTopLevelCount 
  */
 export function vocabularyFoldCandidates(cwd: string = process.cwd()): FoldCandidate[] {
   return memoByFingerprintOnDisk('navigation-vocabulary-fold-candidates', cwd, () =>
-    computeVocabularyFoldCandidates(cwd),
+    foldCandidatesOf(cwd),
   )
 }
 
-function computeVocabularyFoldCandidates(cwd: string): FoldCandidate[] {
+function foldCandidatesOf(cwd: string): FoldCandidate[] {
   const audit = wordWithoutLogicViolations(cwd)
   const importIndex = buildImportIndex(cwd)
   const out: FoldCandidate[] = []
