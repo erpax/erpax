@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "positions",
-    "uuid": "87bf0a6d-442c-8c93-9322-a3ce5ce41487",
+    "uuid": "5bd21a04-5551-891e-9bea-63c4ebaea8b0",
     "words": [
       "positions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.",
-    "uuid": "287cb384-3988-82b2-8edf-2c875b4e1772",
+    "uuid": "9e94b520-0136-8d84-ad90-f0799bb1ea9b",
     "words": [
       "use",
       "when",

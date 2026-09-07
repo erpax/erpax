@@ -2,10 +2,10 @@
 name: located
 description: "Use when reasoning about located as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/located"
-coordinate: "vocabulary/located · 4/weave · 097a5370"
-contentUuid: "01d784fc-1a8b-5e18-9fbf-e76f2ce85f50"
-diamondUuid: "8343684c-c2d2-8cba-83fc-8d7c97806683"
-uuid: "097a5370-8b41-8291-8de5-3594c0096aa1"
+coordinate: "vocabulary/located · 4/weave · 26e079da"
+contentUuid: "c3f8d869-22d5-5f22-be1c-5dd1f7433184"
+diamondUuid: "59d699aa-5fef-86da-ab27-45a6b72d0991"
+uuid: "26e079da-e1bd-8dda-94f7-9b21dbb7e0ad"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "77d0a1c0-ebd0-8596-b294-8538717a36f9"
+  computationUuid: "a564951e-d3e2-8a85-9c72-f6917c4ed470"
   stages:
     - stage: path
       stageUuid: "e595d41d-f16e-8ce3-ab0b-73c1b0e5da18"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "66add062-1ba7-8926-b6b8-93952664133c"
     - stage: horo
-      stageUuid: "ded8b556-b644-897a-ba43-670d9b22d499"
+      stageUuid: "1c35a10f-0b25-8987-9588-65c8d5710ba6"
     - stage: seal
       stageUuid: "181884dc-081b-892a-ba1c-986ee0bbf62e"
     - stage: uuid
-      stageUuid: "10a7d566-ea37-82ee-8527-91517448a884"
+      stageUuid: "fab1afcf-4da3-8143-b341-360e5170e2f5"
 version: 2
 ---
 # located

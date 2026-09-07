@@ -2,11 +2,11 @@
 name: project
 description: "Use when reasoning about project — An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to ind"
 atomPath: "vocabulary/project"
-coordinate: "vocabulary/project · 4/weave · 89db6cbd"
-contentUuid: "a4be29c3-b401-575b-8ad3-06241dc3f5c7"
-diamondUuid: "4a68f4c8-7880-8ae8-8a70-695fdc477bda"
-uuid: "89db6cbd-e07d-86cb-89b7-87b59c712399"
-horo: 4
+coordinate: "vocabulary/project · 1/base · f0e50868"
+contentUuid: "86702fcd-043c-5ff5-be7f-dfcb520129a7"
+diamondUuid: "e99f88d1-1928-89d3-96c6-b552c5429e0a"
+uuid: "f0e50868-fc9c-8a5a-ae64-1143b2085aff"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cf358dd9-774a-8a3b-ba0c-67efecb91e76"
+  computationUuid: "93aa9b5d-47eb-8d8d-837e-433e982a4898"
   stages:
     - stage: path
       stageUuid: "1ed74a37-e9c7-8929-a304-1d0eb2b10f39"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e5a0e301-7dcd-8bf6-8105-2a1c471d05bc"
     - stage: horo
-      stageUuid: "456d194f-eb8b-8205-9eaa-9cfa9681fb35"
+      stageUuid: "1b6a9657-149e-8d2a-8e27-d9c4fd6e7c1d"
     - stage: seal
       stageUuid: "ba35e629-03b3-81c5-a140-25e36bed75a0"
     - stage: uuid
-      stageUuid: "b03c302e-afaa-8a05-b6e7-77e871498840"
+      stageUuid: "d59c6a3a-04a0-8b93-ad46-99a21aa690fa"
 version: 2
 ---
 # project

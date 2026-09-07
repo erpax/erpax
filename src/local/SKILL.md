@@ -2,18 +2,18 @@
 name: local
 description: "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade."
 atomPath: local
-coordinate: "local · 8/crest · 4726c294"
-contentUuid: "3c269269-90d5-5400-9893-33d6efad0ca9"
-diamondUuid: "108c991c-0323-8626-a387-2cd356207b67"
-uuid: "4726c294-477b-819d-a0a4-ae43a0933fd5"
-horo: 8
+coordinate: "local · 1/base · 90424b4a"
+contentUuid: "fd9f4b97-ce45-50dd-99a6-1860a6e453bc"
+diamondUuid: "8cae36f1-3e72-8a7c-8269-6574267d771a"
+uuid: "90424b4a-c0ed-85a6-920c-120f6bcf53d1"
+horo: 1
 typography:
   partition: local
   bondDegree: 41
 standards: []
 bindings: []
 signatures:
-  computationUuid: "39a747cb-f575-8712-9ceb-0791afdb4e09"
+  computationUuid: "19ae38ea-4237-8393-9250-570d43c12342"
   stages:
     - stage: path
       stageUuid: "777da901-66a4-8c1b-a9b8-5684d02d1c0d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f45d8100-952a-80a9-8a24-9f2cc064650d"
     - stage: horo
-      stageUuid: "0ef36a9e-6380-80dd-ac45-dcbc41423448"
+      stageUuid: "c039df11-5d8a-8b33-a66c-5280f433c549"
     - stage: seal
       stageUuid: "38a931e2-3326-8944-982a-967c80211c31"
     - stage: uuid
-      stageUuid: "ac17a6d5-abb0-8ac8-8989-ee04a0121b5f"
+      stageUuid: "41044476-b1cf-8de6-9d75-05d0592c6b2a"
 version: 2
 ---
 # local — a remote read returns a rendering; a local read returns bytes

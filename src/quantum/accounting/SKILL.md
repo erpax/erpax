@@ -2,18 +2,18 @@
 name: accounting
 description: "Use when reasoning about accounting on the quantum level — double-entry that balances entropy (karma), inheriting down the uuid parent chain where the parent_id is the DNA; the universal ledger's quantum facet."
 atomPath: "quantum/accounting"
-coordinate: "quantum/accounting · 2/share · 581756ce"
-contentUuid: "0cf79737-ebb6-59a0-be1e-3df88800c4d4"
-diamondUuid: "aeec023c-8f3a-856a-b89a-6252431d964b"
-uuid: "581756ce-c98f-875d-9a23-c0194e0045e7"
-horo: 2
+coordinate: "quantum/accounting · 8/crest · 0b8dda27"
+contentUuid: "1e324f2e-1442-5bd2-ae2b-64d20735fe28"
+diamondUuid: "9c872599-c336-866e-997e-428dcb5047e5"
+uuid: "0b8dda27-f187-865f-8c66-a6cd29d98bfd"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 770
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a9f03e7b-0983-8c63-adfa-48b709383a9f"
+  computationUuid: "cd789d29-c2ed-876d-b4cf-2b032da13ccd"
   stages:
     - stage: path
       stageUuid: "864dffee-010b-8c9c-8c5b-1ff78e2e46ea"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b65259b0-bc7d-8066-8999-e00ad07ad68e"
     - stage: horo
-      stageUuid: "4a547707-2772-842d-a33d-5290a7de0ec6"
+      stageUuid: "14134d48-6995-8705-90fb-876bc48ea401"
     - stage: seal
       stageUuid: "51d92256-6304-8943-bd33-cc052a28b59c"
     - stage: uuid
-      stageUuid: "224eb166-9945-8993-aaae-b199193ffc1c"
+      stageUuid: "838bbd1f-b9c5-841d-a78a-d499cd9656c1"
 quantum:
   superposition:
     - account
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "a9f03e7b-0983-8c63-adfa-48b709383a9f"
-    contentUuid: "0cf79737-ebb6-59a0-be1e-3df88800c4d4"
+    computationUuid: "cd789d29-c2ed-876d-b4cf-2b032da13ccd"
+    contentUuid: "1e324f2e-1442-5bd2-ae2b-64d20735fe28"
 version: 2
 ---
 # quantum/accounting — karma double-entry + the DNA chain
@@ -73,4 +73,4 @@ Matter-twin: `src/quantum/accounting/index.ts` (`dnaChain` ← [[dna]] · `karma
 
 @audit composed from @/entry (double-entry) + @/uuid/matrix (the parent chain); computed on the live matrix
 
-<sub>content-uuid `0cf79737-ebb6-59a0-be1e-3df88800c4d4` · account `quantum/accounting` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e324f2e-1442-5bd2-ae2b-64d20735fe28` · account `quantum/accounting` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

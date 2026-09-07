@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "confidentiality",
-    "uuid": "36648ebd-41a2-8c9b-b3e0-1207076f4299",
+    "uuid": "dff0eaf2-194d-8844-a455-f7fb39aaa3e1",
     "words": [
       "confidentiality"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract restricts disclosure — confidential information definition, permitted uses, exceptions (public domain, legally compelled, independent discovery), return/destruction, duration.",
-    "uuid": "f09265fb-2c94-8e97-ad27-b761d0fbfd11",
+    "uuid": "8722e4e0-2c96-85b2-8758-a0a5932c979b",
     "words": [
       "use",
       "when",

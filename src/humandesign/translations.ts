@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "humandesign",
-    "uuid": "11986f46-85e1-897f-87b6-61afb21ee5c2",
+    "uuid": "2789945a-cc7b-8dfe-9580-d015b8fb24c7",
     "words": [
       "humandesign"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when mapping Human Design onto erpax — its real combinatorics (64 gates = 2^6 I Ching hexagrams, 6 lines, 9 centers, 12 profiles) sent to the math, with the divination layer named as convention and never claimed.",
-    "uuid": "7eaadea9-9f20-8817-9ebf-2716f3bb433c",
+    "uuid": "bc1ccba8-b879-8110-baaf-c95c5fd390a4",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: money
 description: "Use when reasoning about money — Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry."
 atomPath: "trading/api/money"
-coordinate: "trading/api/money · 8/crest · 27a71964"
-contentUuid: "4478f79c-17ec-53d9-9348-5e163c2d31a3"
-diamondUuid: "ac4d3b02-ad47-8cab-9f3f-c6f6c279ebbe"
-uuid: "27a71964-d025-8d27-b1c4-d8de9c93a4b1"
-horo: 8
+coordinate: "trading/api/money · 1/base · 356a2336"
+contentUuid: "c6ed0f6a-e776-5a2a-a6ce-08a5a5f8e239"
+diamondUuid: "9a49e500-2bf9-8472-b16b-8e4465bbfc61"
+uuid: "356a2336-13de-820c-96e3-e24236cd1f60"
+horo: 1
 typography:
   partition: trading
   bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "131ebe26-b4a5-8fc6-922f-67cfaf08c4ad"
+  computationUuid: "34e27f1d-b892-8a60-8ecd-1230c5b3967c"
   stages:
     - stage: path
       stageUuid: "20c274ea-f1d9-8fe0-8d30-561e9ddc4dc2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0605dd02-aa1f-82d9-bde3-7d7db7a0540e"
     - stage: horo
-      stageUuid: "6c69f1b7-ecf2-893c-9afd-4a4ec5221083"
+      stageUuid: "a53c2119-76f8-85a1-beee-818bd35ccdf4"
     - stage: seal
       stageUuid: "a5e2169b-da73-89a5-ba80-e5551c1aa40d"
     - stage: uuid
-      stageUuid: "c1bdd7a6-544f-8a0a-b696-f24503b8c01a"
+      stageUuid: "1ed3ad9a-fd02-8fbf-b082-afd6e1b2c34d"
 version: 2
 ---
 # trading/api/money

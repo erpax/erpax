@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "handoff",
-    "uuid": "8ba9e93d-13bf-8327-85b1-09adb9fbbd9d",
+    "uuid": "2e54bcc5-697d-89e8-a320-281757b63467",
     "words": [
       "handoff"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a specification must be checked by a command instead of re-read by a human — any prompt is a spec: a handoff document, a chat directive, a PR description, a ticket. Each requirement is transcribed once carrying the document line it came from, and its satisfaction is computed from the tree on every run: atoms checked for the real trinity, symbols read from the parser rather than matched, env keys read from the files. Deviations where the build departs from the spec on purpose are recorded, never absorbed, so implemented never quietly means implemented differently.",
-    "uuid": "a0cbe4f0-4c0e-89d2-a9e3-94da466379d1",
+    "uuid": "8c933e3c-ac73-8aae-92f7-efb5465f29b7",
     "words": [
       "use",
       "when",

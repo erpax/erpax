@@ -2,11 +2,11 @@
 name: motor
 description: "Use when reasoning about motor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/motor"
-coordinate: "vocabulary/motor · 2/share · 0721605c"
-contentUuid: "ffda77fd-70bc-55af-b683-eb2a494f0335"
-diamondUuid: "cefa93fb-c8e0-89a0-9f72-881dc3612c5f"
-uuid: "0721605c-8eeb-863b-a0e5-12c869eb1052"
-horo: 2
+coordinate: "vocabulary/motor · 4/weave · 138128bd"
+contentUuid: "aa16754f-7be6-54a5-b64b-b86eddc4a34d"
+diamondUuid: "92787185-10fc-8b51-9458-29f5b60ec1a3"
+uuid: "138128bd-3647-8dfd-bf69-0a26a7c3c953"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9102fe76-31d6-854f-8b79-8e46dc60e809"
+  computationUuid: "bf1a336c-8bd8-80f1-a0fe-4ad9246b0626"
   stages:
     - stage: path
       stageUuid: "6e95ad4e-96e8-8d58-ac40-3994d96776dc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7644181c-cbf5-8bac-9767-f05677a86244"
     - stage: horo
-      stageUuid: "17b51815-c5c2-8718-98b7-de8275fd4b0d"
+      stageUuid: "883800a4-e344-8a9c-b9ab-d408ec166aab"
     - stage: seal
       stageUuid: "465432ed-cddd-8378-a018-f2d8b245befd"
     - stage: uuid
-      stageUuid: "96aca1b0-c65a-84bc-a022-272d6953d50a"
+      stageUuid: "43742da8-f152-8238-b6e4-b790f19ad8e4"
 version: 2
 ---
 # motor

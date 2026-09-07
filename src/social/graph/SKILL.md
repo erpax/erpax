@@ -2,11 +2,11 @@
 name: graph
 description: "Use when reasoning about graph — holds directed edges. asks whether the opposite edge exists, and derives the relation: two mutual follows ARE a friendship, and nothing writes a \"friends\" row to say so."
 atomPath: "social/graph"
-coordinate: "social/graph · 2/share · 9219205b"
-contentUuid: "0acd5a65-bb3d-5297-b85d-905d6e2a20a7"
-diamondUuid: "f1fc3b18-7a6e-865e-affa-1e97260dad53"
-uuid: "9219205b-41f8-8fac-8c5e-5b63ffa21bad"
-horo: 2
+coordinate: "social/graph · 4/weave · e3f723d1"
+contentUuid: "c18cf282-8f74-54c2-9a35-17f44bc37fd5"
+diamondUuid: "30162e99-b10d-8f0d-bcc2-88b8db0b6a13"
+uuid: "e3f723d1-e4d1-8131-8d39-4b16192f74a0"
+horo: 4
 typography:
   partition: social
   bondDegree: 42
@@ -14,7 +14,7 @@ standards:
   - "W3C ActivityStreams 2.0 Follow/Accept reciprocity"
 bindings: []
 signatures:
-  computationUuid: "107b64a3-e8dc-885e-a7b3-8fae01954559"
+  computationUuid: "0dbd908b-c273-8b35-957e-0a49c189d2aa"
   stages:
     - stage: path
       stageUuid: "25f65add-d0c0-8de0-8100-62d8fe77f442"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8c7dd8dc-b631-86a9-8ddb-d3b15b36ba50"
     - stage: horo
-      stageUuid: "cb7aaa0f-00dd-8457-bf21-278841bef6db"
+      stageUuid: "608dd9b2-b049-84a1-b20c-f13fca1f4275"
     - stage: seal
       stageUuid: "f5e0ea77-f0ad-8065-aec8-7cd71740f1ca"
     - stage: uuid
-      stageUuid: "e38a547c-62bb-82c3-a154-6e97073fe3ce"
+      stageUuid: "1e9c7414-85a1-8ffb-96a8-6bacb1d76418"
 version: 2
 ---
 # social/graph — reciprocity is computed from the two edges, never stored as a third state

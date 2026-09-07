@@ -2,11 +2,11 @@
 name: year
 description: "Use when reasoning about year as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: year
-coordinate: "year · 4/weave · 1542479e"
-contentUuid: "2c11b151-3087-5597-8457-abbfe728a339"
-diamondUuid: "a924c1b2-7cf0-8d52-9364-900c7b2b0411"
-uuid: "1542479e-6330-8b8a-b806-56374a379cda"
-horo: 4
+coordinate: "year · 1/base · b65527d2"
+contentUuid: "17af258f-7bac-5417-a6eb-0d1166bcdc06"
+diamondUuid: "d988621b-45c2-8a14-8012-47c8caba99be"
+uuid: "b65527d2-9e6d-84e5-9afc-a3fb0eb9de39"
+horo: 1
 typography:
   partition: year
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d5d21b09-506a-84e6-896b-42be036c5906"
+  computationUuid: "da9db0b0-9dd7-8db2-8e6a-7609c7e0e11e"
   stages:
     - stage: path
       stageUuid: "1c8e2365-3ce6-8103-8b0b-3bd5df14ed85"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "860291fa-accc-8735-88df-5187719e4094"
     - stage: horo
-      stageUuid: "bd2389e8-5d4c-8bc9-a7d9-023fede57019"
+      stageUuid: "47e68c0e-92aa-8377-9576-9da900fd4b4a"
     - stage: seal
       stageUuid: "335fed2d-95e2-8e04-a09e-d7793e5ae60a"
     - stage: uuid
-      stageUuid: "45f0182b-1963-852e-bb91-9661cdb4d307"
+      stageUuid: "7c6e78d5-6fc0-873e-a8c3-3677fcac4277"
 version: 2
 ---
 # year

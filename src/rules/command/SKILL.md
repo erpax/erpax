@@ -2,18 +2,18 @@
 name: command
 description: "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed."
 atomPath: "rules/command"
-coordinate: "rules/command · 7/descent · bd710170"
-contentUuid: "c0b4c4b1-87ba-585e-b1e4-6861a705b0c3"
-diamondUuid: "9d979620-d784-8ed1-b8ca-354ee13a051d"
-uuid: "bd710170-bfd4-8836-9b7a-7328cc4723f6"
-horo: 7
+coordinate: "rules/command · 1/base · e8a4021f"
+contentUuid: "fcc08b66-9f5f-5610-aa3c-bb1078f6aeb1"
+diamondUuid: "4b4cc8a7-3da9-8982-b08a-5354e835f502"
+uuid: "e8a4021f-27e8-848a-8ec2-797cc385ca61"
+horo: 1
 typography:
   partition: rules
   bondDegree: 62
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ff3c7759-649e-8a20-900d-ebd87cf0e6ca"
+  computationUuid: "871e797a-21ce-8358-8b7d-5a66f0508c27"
   stages:
     - stage: path
       stageUuid: "b5e62b08-01b9-8aa0-b446-cccc0c0e3659"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e5be4147-abd0-8b92-844c-e9720219a480"
     - stage: horo
-      stageUuid: "05b2bd8f-be85-8b02-b376-eba7b947dca1"
+      stageUuid: "8cb03060-e4c9-835d-beb8-e1996f41c639"
     - stage: seal
       stageUuid: "e46e9b95-f7ef-804c-a92b-840ae48a5ddd"
     - stage: uuid
-      stageUuid: "f3834690-3096-8d6f-8172-46b9fd0ad1e3"
+      stageUuid: "9feaa049-a62e-8e53-be41-01843d2ce3e4"
 version: 2
 ---
 # rules/command — a step that cannot run reports the same green as a step that passed

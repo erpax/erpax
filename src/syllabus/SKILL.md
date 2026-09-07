@@ -2,11 +2,11 @@
 name: syllabus
 description: "Use when reasoning about syllabus — A syllabus that describes the material covered in a course, often with several such sections per Course so that a distinct timeRequired can be provided for that section of the Cour"
 atomPath: syllabus
-coordinate: "syllabus · 2/share · 07969cd2"
-contentUuid: "e8fb5aa2-1942-51f9-b662-b2b853fea883"
-diamondUuid: "93dc1c0d-27bb-8787-865c-7120b1a6fe51"
-uuid: "07969cd2-a11d-81c6-a013-98eb9a3eec2b"
-horo: 2
+coordinate: "syllabus · 7/descent · effc4cbe"
+contentUuid: "2890afea-7c32-58e3-9cac-14ba65e21fc2"
+diamondUuid: "cbc25280-0057-8022-a520-75aab283a31f"
+uuid: "effc4cbe-b154-8e6f-8f15-e315946f8109"
+horo: 7
 typography:
   partition: syllabus
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "abdd0503-a5a9-8e5c-9993-d689b2b0f1f4"
+  computationUuid: "0c22b2aa-13f6-81f2-8825-3b82a40a16f9"
   stages:
     - stage: path
       stageUuid: "ebe471b1-ba89-86d9-9a54-6da999db529c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4be6c155-6599-85cf-937c-2ebdee24dc40"
     - stage: horo
-      stageUuid: "37f6c67e-f891-8a3d-b5ba-dd472b74dfab"
+      stageUuid: "e37c6e72-11d9-8433-bdb6-8c4542e39529"
     - stage: seal
       stageUuid: "db0e4200-f34c-829c-9009-49753bdb2e3e"
     - stage: uuid
-      stageUuid: "341dc792-3378-843b-a578-e87818b2530a"
+      stageUuid: "c3741d62-b49a-84d9-bac0-1c72758dea24"
 version: 2
 ---
 # syllabus

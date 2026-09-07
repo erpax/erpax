@@ -2,10 +2,10 @@
 name: us
 description: "Use when reasoning about us as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: us
-coordinate: "us · 2/share · ea57793c"
-contentUuid: "4da9c2f4-56be-5c1b-89da-b105020d958c"
-diamondUuid: "25daac36-4e7b-8cb0-a8d3-7851c3cc9802"
-uuid: "ea57793c-8ede-8693-a730-adfcb615794a"
+coordinate: "us · 2/share · 65e35201"
+contentUuid: "96c75be0-5816-5640-80ca-0848e601d94d"
+diamondUuid: "b9f3519b-cf60-85fc-99cd-e83a4ccc5b44"
+uuid: "65e35201-68b9-8ea1-bc7c-88d5de694355"
 horo: 2
 typography:
   partition: us
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2302bf8e-0fb2-8776-a900-481ad3c6a59c"
+  computationUuid: "3c2c213a-37c7-8ff0-aab8-06d8f910d2be"
   stages:
     - stage: path
       stageUuid: "490872a6-1240-88d1-aab3-1d4a8a33dc7a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9512b787-e25a-8812-b488-537bc52ee808"
     - stage: horo
-      stageUuid: "0f94ab96-08f4-86b0-84d3-9a96ba571e3b"
+      stageUuid: "ea16ca79-9142-883d-b3e7-ceb11c412918"
     - stage: seal
       stageUuid: "9f271807-38f5-89b2-816f-e5cbd60b4299"
     - stage: uuid
-      stageUuid: "96450789-6ead-8959-a95b-b27fa4f76cac"
+      stageUuid: "ca6423ca-cc89-866b-8fd5-1826888da861"
 version: 2
 ---
 # us

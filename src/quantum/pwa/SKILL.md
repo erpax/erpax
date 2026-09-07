@@ -2,11 +2,11 @@
 name: pwa
 description: "Use when reasoning about erpax as a PWA of quantum apps — a device whose every folder is an installable quantum app, cached offline by content-address (the uuid is the cache key); installable because every folder is a quantum app."
 atomPath: "quantum/pwa"
-coordinate: "quantum/pwa · 7/descent · 862561af"
-contentUuid: "ed2dfebd-86a2-5c48-b1b7-9864c643cc67"
-diamondUuid: "6b2d2a1b-c882-83dd-995a-111894785795"
-uuid: "862561af-4859-8aa4-b43f-d3cbf82dd19f"
-horo: 7
+coordinate: "quantum/pwa · 8/crest · c9653a4e"
+contentUuid: "a6d3582f-e12c-58e6-ac58-2ca2064f7860"
+diamondUuid: "b28221b0-686c-8b4f-b6f0-160f6e5b51ef"
+uuid: "c9653a4e-49fc-83f7-8a45-07c6e2030e55"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 39
@@ -14,7 +14,7 @@ standards:
   - "W3C Web App Manifest + Service Worker (content-addressed cache)"
 bindings: []
 signatures:
-  computationUuid: "0aecaebf-77e2-8857-b63f-e2c28973289c"
+  computationUuid: "ce81ad56-0b56-8133-9ca4-816d398c781d"
   stages:
     - stage: path
       stageUuid: "917cba2b-8267-846e-84f5-3aa6ff5a6a2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d8f953f7-4a9b-8794-8393-ee07e1d2b13f"
     - stage: horo
-      stageUuid: "a7c500bb-a88f-848b-b738-67f916a672e8"
+      stageUuid: "7114e68b-b950-831a-a271-3b8a953515ea"
     - stage: seal
       stageUuid: "e1e2bb73-f3f9-8a1b-a762-44fc0394e88b"
     - stage: uuid
-      stageUuid: "2717fe7e-8097-89f9-a737-c355edbfa0d0"
+      stageUuid: "b263c746-c1dc-8adc-b102-cc9981f3027a"
 quantum:
   superposition:
     - cache
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "0aecaebf-77e2-8857-b63f-e2c28973289c"
-    contentUuid: "ed2dfebd-86a2-5c48-b1b7-9864c643cc67"
+    computationUuid: "ce81ad56-0b56-8133-9ca4-816d398c781d"
+    contentUuid: "a6d3582f-e12c-58e6-ac58-2ca2064f7860"
 version: 2
 ---
 # quantum/pwa — the corpus as a PWA of quantum apps
@@ -72,4 +72,4 @@ Matter-twin: `src/quantum/pwa/index.ts` (`appCount` · `installable` · `offline
 
 @standard W3C Web App Manifest + Service Worker (content-addressed cache)
 
-<sub>content-uuid `ed2dfebd-86a2-5c48-b1b7-9864c643cc67` · account `quantum/pwa` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6d3582f-e12c-58e6-ac58-2ca2064f7860` · account `quantum/pwa` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

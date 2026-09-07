@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "theorem",
-    "uuid": "5dc5cf5e-b44d-8837-bf41-c6dbce5ca85c",
+    "uuid": "d7e3a073-8a2b-86e6-81b1-84656e48970a",
     "words": [
       "theorem"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the question is whether to trust a claim — including the user's, including the agent's. A claim is warranted only by REDUCING to composed base theorems; authority (who said it) is never a step, a cycle is a claim proven by itself, a missing ground is fiction. All is theorem of theorems, and it bottoms out at a base the graph cannot prove — assumed, stated in the open.",
-    "uuid": "cad95123-115d-860b-af07-9b01da9cd49e",
+    "uuid": "2761f5d4-e69c-847d-a367-7620ff3d7d65",
     "words": [
       "use",
       "when",

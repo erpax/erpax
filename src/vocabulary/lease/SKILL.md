@@ -2,11 +2,11 @@
 name: lease
 description: "Use when reasoning about lease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lease"
-coordinate: "vocabulary/lease · 4/weave · ff8cef9b"
-contentUuid: "9626b74b-c4c3-55e5-b12d-2d01dc4e88fa"
-diamondUuid: "308ea85f-7d01-8a85-b1db-77bc191b755a"
-uuid: "ff8cef9b-deb3-8b37-8b74-1e5b74bfe58e"
-horo: 4
+coordinate: "vocabulary/lease · 8/crest · dd9b0a70"
+contentUuid: "c28c7f0c-7427-5730-aa9b-2f894e1dd6b5"
+diamondUuid: "7f87f749-b80a-8734-a526-4c9553d07f88"
+uuid: "dd9b0a70-d99a-8fd1-a58b-bce35ce370f2"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9fe7c1b7-72de-8d99-a90b-dce52c20f698"
+  computationUuid: "c1680707-944a-823d-9f54-edaefec570c6"
   stages:
     - stage: path
       stageUuid: "2ed93ba3-374a-849d-a4a6-495419478cb0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6c89ffee-3f55-8a80-96ac-e8d36518b1ed"
     - stage: horo
-      stageUuid: "dd0f2e0d-c556-853a-937e-58cf82c224e1"
+      stageUuid: "2d2ccd3d-7f0e-8fc6-a4ca-96b72fc2af97"
     - stage: seal
       stageUuid: "b6db3ac2-5bd7-8728-b87e-a8ab00ad60ed"
     - stage: uuid
-      stageUuid: "98385092-d5b8-873f-95b3-e0e2b17775dc"
+      stageUuid: "3c9bd89c-65af-8460-9626-51c3ab96fd20"
 version: 2
 ---
 # lease

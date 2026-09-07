@@ -2,11 +2,11 @@
 name: author
 description: Use when reasoning about author — The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent t
 atomPath: "vocabulary/author"
-coordinate: "vocabulary/author · 5/round · 1ce8d211"
-contentUuid: "6d9f3b88-17c3-50ca-b36d-7cfe9797b6e8"
-diamondUuid: "8d1d3ec9-0518-8430-bf93-985992450e0a"
-uuid: "1ce8d211-0ac9-8df5-99c0-4c29a87fea6c"
-horo: 5
+coordinate: "vocabulary/author · 4/weave · 2af1a1ce"
+contentUuid: "6ee53736-4cbd-521e-aa3b-f3f23d1546c3"
+diamondUuid: "c2bec0ba-1fd1-8c33-b2b4-8beec1288747"
+uuid: "2af1a1ce-eed0-894d-ae71-7c1c8e260704"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8bb64528-410e-82da-9d33-928fb2045b1a"
+  computationUuid: "7db10de9-3362-86f6-bd79-8038ae8b69cd"
   stages:
     - stage: path
       stageUuid: "cd55c32c-8dc1-8896-bbac-3d7c8c4b9739"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "28ea3582-b35c-8b01-a148-81b042dc57a5"
     - stage: horo
-      stageUuid: "d92a0c77-42f6-8aab-8e25-48a250de8217"
+      stageUuid: "3a53468d-ffef-8804-9f90-c11d033ab404"
     - stage: seal
       stageUuid: "3614a174-e196-8b79-8d8e-b22b30906750"
     - stage: uuid
-      stageUuid: "22c81035-3371-8d53-8284-e608fac53de0"
+      stageUuid: "fe04c3b6-5e2b-8131-bdc6-1c909367ff62"
 version: 2
 ---
 # author

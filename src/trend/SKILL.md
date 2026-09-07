@@ -2,18 +2,18 @@
 name: trend
 description: "Use when tracking metric evolution, forecasting, or detecting patterns over time — moving averages, velocity, burndown, growth curves. The temporal analysis dimension."
 atomPath: trend
-coordinate: "trend · 2/share · c41c10e5"
-contentUuid: "607f53a3-2aec-5339-9822-c2c9fc76df98"
-diamondUuid: "d587dee8-2c12-8067-9890-22ab5c120abb"
-uuid: "c41c10e5-22e0-8826-8cdb-48a88051705e"
-horo: 2
+coordinate: "trend · 1/base · eea0fe24"
+contentUuid: "417c10fc-fd4d-5326-af70-551498e57481"
+diamondUuid: "0f3935e3-5a80-89d6-93eb-d941144cb6c1"
+uuid: "eea0fe24-e4c2-88dd-9e07-ef9b095c80e5"
+horo: 1
 typography:
   partition: trend
   bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2dadc989-9522-8caa-83aa-0bf13593fe39"
+  computationUuid: "94e6cfe4-b76d-829c-afa8-c021cbc0ef52"
   stages:
     - stage: path
       stageUuid: "4a01ca74-5c50-8740-b312-01ef4f4dba70"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1463288a-c5d8-8b98-acec-a20289dcebff"
     - stage: horo
-      stageUuid: "be185e63-fa7a-8ac3-8d26-4a31630caeea"
+      stageUuid: "1948e25d-eb4b-83ad-b28a-c5c2fce05b88"
     - stage: seal
       stageUuid: "8b851da9-b905-8166-b718-0f21778d4d61"
     - stage: uuid
-      stageUuid: "5012f981-adb9-8ca3-8653-afd7d9253c75"
+      stageUuid: "623e9f88-62c3-8f7d-9412-dafef817d678"
 version: 2
 ---
 # trend

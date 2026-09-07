@@ -2,18 +2,18 @@
 name: admin
 description: "Use when the admin panel must boot by reuse rather than by searching the matrix — adminBootShell / adminBootFtl precompute the boot surface and report an ftl verdict for it. Promoted from a loose sibling because self/improve/tip locates it by FILE PATH, which no import scan can see. Run: tsx src/quantum/ftl/admin/index.ts"
 atomPath: "quantum/ftl/admin"
-coordinate: "quantum/ftl/admin · 7/descent · 45ba4bba"
-contentUuid: "b2f10410-c4c5-5cbe-8ab4-abdab179ff8e"
-diamondUuid: "6b403277-a6e5-8825-8b83-eb2c6e1bb62f"
-uuid: "45ba4bba-8585-8561-8286-0b36af84b145"
-horo: 7
+coordinate: "quantum/ftl/admin · 2/share · 78c61264"
+contentUuid: "48f8f9dd-25c2-5465-ab0d-39373a0b10ce"
+diamondUuid: "18ba8a41-0f10-8bfa-97b6-1404a548b60d"
+uuid: "78c61264-e45f-845d-9d8b-f0ffe6143733"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8056a1c1-3308-8c30-9b6e-05541d9dc8c0"
+  computationUuid: "7080bfc5-fe89-8ced-badb-988cdc0b4b94"
   stages:
     - stage: path
       stageUuid: "a5be311c-86d5-80dd-a98d-f7cc5545aef3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "27a8e5b2-4707-8567-9514-4bb001b65e56"
     - stage: horo
-      stageUuid: "1b3c9739-02f2-88b0-8ff6-d33c9a79c055"
+      stageUuid: "d86b5562-5f5f-810f-9862-4bd4578f91ea"
     - stage: seal
       stageUuid: "afa31ef5-3792-8b2c-b596-80973e5210f6"
     - stage: uuid
-      stageUuid: "86b79072-3ea2-87f5-9ef5-9a046526c21f"
+      stageUuid: "fe36e99e-f5a7-8d15-98ea-84579a67cf93"
 quantum:
   superposition:
     - access
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "8056a1c1-3308-8c30-9b6e-05541d9dc8c0"
-    contentUuid: "b2f10410-c4c5-5cbe-8ab4-abdab179ff8e"
+    computationUuid: "7080bfc5-fe89-8ced-badb-988cdc0b4b94"
+    contentUuid: "48f8f9dd-25c2-5465-ab0d-39373a0b10ce"
 version: 2
 ---
 # admin — boot as reuse, not as a search
@@ -81,4 +81,4 @@ The guard is therefore asserted from this side. The test reads the tip engine's 
 
 Composes: [[quantum]]/ftl · [[self]]/improve · [[law]].
 
-<sub>content-uuid `b2f10410-c4c5-5cbe-8ab4-abdab179ff8e` · account `quantum/ftl/admin` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `48f8f9dd-25c2-5465-ab0d-39373a0b10ce` · account `quantum/ftl/admin` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

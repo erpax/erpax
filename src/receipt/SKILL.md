@@ -2,11 +2,11 @@
 name: receipt
 description: "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof."
 atomPath: receipt
-coordinate: "receipt · 7/descent · 8b2db30f"
-contentUuid: "4c21f5d4-513d-58b9-863a-746cdf4ba39a"
-diamondUuid: "26c92de9-d3ff-8914-8fd7-65e51962e758"
-uuid: "8b2db30f-3256-82ca-bf32-1d85600dcfb3"
-horo: 7
+coordinate: "receipt · 5/round · b385dab9"
+contentUuid: "2c936531-d78b-55ad-8819-4e4a6a4f7374"
+diamondUuid: "21221d14-1632-8679-9e3f-a80c1505e62a"
+uuid: "b385dab9-75db-8f12-9e04-f6d38065d560"
+horo: 5
 typography:
   partition: receipt
   bondDegree: 116
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4d556168-626d-8e02-9abf-4e9dee0309d6"
+  computationUuid: "ac3aaf4f-d1af-8de0-a355-d2d2ea266d1b"
   stages:
     - stage: path
       stageUuid: "cc04b1dd-4046-8298-8ca3-851b589e3a1e"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "55a3e16a-f012-8c23-a8ce-1ed45e07edb3"
     - stage: horo
-      stageUuid: "fe261ee3-d783-80a6-b645-fc15e7a8d9ff"
+      stageUuid: "2ec0036f-5805-8067-8d42-ec4c4e5e4b71"
     - stage: seal
       stageUuid: "e574e02d-5a5b-820d-9947-9a350d7b26bb"
     - stage: uuid
-      stageUuid: "27bad9db-34e8-82b3-93c6-38b8f4d5a6b9"
+      stageUuid: "8ce65556-a315-88b8-bc8c-1a0d628455e3"
 version: 2
 ---
 # receipt — the governance receipt IS a uuid (wire all through uuid)

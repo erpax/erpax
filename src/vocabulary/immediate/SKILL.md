@@ -2,11 +2,11 @@
 name: immediate
 description: "Use when reasoning about immediate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/immediate"
-coordinate: "vocabulary/immediate · 8/crest · 9a5d9b7b"
-contentUuid: "ac3a0139-d2f2-5b4e-b607-5b4652a03dfd"
-diamondUuid: "d0e7159b-d86d-800f-ac5c-e6e5579603e1"
-uuid: "9a5d9b7b-797e-81bb-a56b-4a42ac1442cf"
-horo: 8
+coordinate: "vocabulary/immediate · 2/share · cb9761ef"
+contentUuid: "399e0c5e-7db4-590d-a14c-c571d40326cd"
+diamondUuid: "62563350-1454-8d9f-a9d6-b976180ea1a9"
+uuid: "cb9761ef-e4cd-8398-bdc3-3291e9c7b76b"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d65cdb96-4282-8a97-bada-867bf38e6ab9"
+  computationUuid: "88e8d092-ebe4-8b26-9e1b-2e414cb60c8e"
   stages:
     - stage: path
       stageUuid: "342d243d-83aa-86a8-98e1-3ae6a265d91c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "036aebcc-5ebf-8c54-82b9-308c1fd76b6f"
     - stage: horo
-      stageUuid: "a20688a0-fc80-8df2-be7f-e84f33391e92"
+      stageUuid: "b1f5c7d0-37df-8144-9636-65edf5309d09"
     - stage: seal
       stageUuid: "5677a2b2-8c2c-8741-90b8-378eff1f89f9"
     - stage: uuid
-      stageUuid: "87bcd169-f8f2-8bbb-aa5a-40beb90fb48e"
+      stageUuid: "d0ab468c-6d8c-8154-a042-b6ceac9694cc"
 version: 2
 ---
 # immediate

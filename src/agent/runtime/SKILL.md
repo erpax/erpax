@@ -2,10 +2,10 @@
 name: runtime
 description: Use when reasoning about runtime — AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects.
 atomPath: "agent/runtime"
-coordinate: "agent/runtime · 2/share · d70d93d6"
-contentUuid: "406d05d5-a294-50a3-bc19-0abba617b8de"
-diamondUuid: "0f2de573-c084-88d1-a152-12be3d353d11"
-uuid: "d70d93d6-724f-8ac5-a9dd-6e6d1b4a3f07"
+coordinate: "agent/runtime · 2/share · dd54acc1"
+contentUuid: "54c28bf3-deb4-52b5-b391-1eb09e8d660c"
+diamondUuid: "ab6ecd3b-b64c-83f6-ba52-a7df778e68ff"
+uuid: "dd54acc1-be7a-80a2-bfbc-e7f7e3d1b8d8"
 horo: 2
 typography:
   partition: agent
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC-25010"
 bindings: []
 signatures:
-  computationUuid: "dfc04b1a-a6ef-888c-92f0-a8eae2db1367"
+  computationUuid: "16c61b23-2daa-8af7-8dd8-23c18d8eb9cc"
   stages:
     - stage: path
       stageUuid: "4176836a-85e7-89cc-9808-83d4818fc47d"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "6fe967e4-30cb-8c10-a75e-bd9f9c5f5e3c"
     - stage: horo
-      stageUuid: "d924dfa1-73f0-80ef-bcbe-41a7bde255c3"
+      stageUuid: "39c8b0a5-152c-8c89-9306-52e87aaf62df"
     - stage: seal
       stageUuid: "dcd5c30f-68c9-8b20-b71a-8fdb51a3551b"
     - stage: uuid
-      stageUuid: "d3f6a9de-1d33-803f-83af-dbeb9c3d72ed"
+      stageUuid: "93314daa-6119-80dd-bef2-631be07cfcbe"
 version: 2
 ---
 # agent/runtime

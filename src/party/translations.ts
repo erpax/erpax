@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "party",
-    "uuid": "b6e2519d-54de-88c9-8812-9ebd76ef83b2",
+    "uuid": "aff62268-8c38-84c8-94fe-bd1ebe814eda",
     "words": [
       "party"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides.",
-    "uuid": "c1d1162f-cb8e-8e38-9155-0ae8c7242ca1",
+    "uuid": "eeda6852-a74f-88b1-8ab3-294c02419ad1",
     "words": [
       "use",
       "when",

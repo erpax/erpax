@@ -2,11 +2,11 @@
 name: nose
 description: "Use when reasoning about nose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/nose"
-coordinate: "vocabulary/nose · 1/base · 78202c3c"
-contentUuid: "0af206a7-b683-5b4d-88cc-6349e3c9bd6c"
-diamondUuid: "47fa9105-e325-862e-b24b-84b552688958"
-uuid: "78202c3c-6af6-8d39-b633-3c8170998677"
-horo: 1
+coordinate: "vocabulary/nose · 4/weave · 79f3dc19"
+contentUuid: "255051c2-1a2e-5d3f-bbfd-78e427f4943c"
+diamondUuid: "63e6a146-3101-89ae-933d-9d088ceebca2"
+uuid: "79f3dc19-1b27-8406-9338-491b9fc6f68f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7af7ab44-729f-8c35-99fb-9a1839dae0bf"
+  computationUuid: "795c9107-874b-891c-bb77-71756c5b55e5"
   stages:
     - stage: path
       stageUuid: "e0966087-68bc-8a88-a440-6ed95b26da52"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "56064c24-c1ad-8f92-bd00-3967958f0790"
     - stage: horo
-      stageUuid: "1f8b1ee6-2b05-8e5a-b433-47521888dab7"
+      stageUuid: "60a61604-18c6-8ee9-ba1b-d10ccde69bd3"
     - stage: seal
       stageUuid: "8a62251a-ace5-8496-9f8f-dd9ef4c6c030"
     - stage: uuid
-      stageUuid: "eb212dd0-d7ae-8c52-b67f-600f17623543"
+      stageUuid: "14da2912-fe8c-8395-934f-897129774e52"
 version: 2
 ---
 # nose

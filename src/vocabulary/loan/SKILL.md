@@ -2,11 +2,11 @@
 name: loan
 description: "Use when reasoning about loan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/loan"
-coordinate: "vocabulary/loan · 7/descent · 0925319c"
-contentUuid: "30c003dc-3f9d-5306-b49f-3997105f6d32"
-diamondUuid: "773c6827-528c-83eb-94e6-c6abfea116d6"
-uuid: "0925319c-9904-8bbc-b893-3ab7be8c8033"
-horo: 7
+coordinate: "vocabulary/loan · 2/share · 34bbaf9f"
+contentUuid: "d08d88bc-1fcf-57f7-b64e-a8ff797d65f7"
+diamondUuid: "bf4af8c2-5140-8357-ac75-76ee32ea9b07"
+uuid: "34bbaf9f-c0bd-803f-9d84-31c62d9f0d47"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 65
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d2f71813-4823-8c1b-a7ec-fa1613c7f896"
+  computationUuid: "7e07b451-204b-8b98-bc0e-02f49ca147df"
   stages:
     - stage: path
       stageUuid: "5bd920b6-f5d4-8e44-9653-2283ad3d5b1e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aa305801-28de-8f9c-8f3a-5cb0d1207949"
     - stage: horo
-      stageUuid: "da96cc50-d0ad-83cc-86ff-463536401e69"
+      stageUuid: "c9c71f15-ad8a-8813-84be-fce69304700f"
     - stage: seal
       stageUuid: "4781791f-9325-8bdb-ad22-d04f0bdf1203"
     - stage: uuid
-      stageUuid: "90d394c7-dde1-870b-ba3a-deab4095946a"
+      stageUuid: "720bfc4c-ada2-8cd7-9cf8-4595c3d13b77"
 version: 2
 ---
 # loan

@@ -2,11 +2,11 @@
 name: role
 description: "Use when reasoning about role — Importing this barrel pulls in the four reference tenant profiles — business, payment provider, bank, government — so any code holding the registry sees them without naming each."
 atomPath: "tenant/role"
-coordinate: "tenant/role · 4/weave · 5fe43071"
-contentUuid: "5af455e6-fa68-5392-af0c-db468e93e50a"
-diamondUuid: "509749a6-e539-8e94-b140-26ef22b205dc"
-uuid: "5fe43071-9062-8177-9cd4-c8cde3049d33"
-horo: 4
+coordinate: "tenant/role · 5/round · 08905332"
+contentUuid: "d462f580-7fa4-58b7-b018-f53797050887"
+diamondUuid: "c59eea18-d7d6-8eb6-aef5-00a65cea70a8"
+uuid: "08905332-48d2-8f72-980e-1cefa5f5ec3a"
+horo: 5
 typography:
   partition: tenant
   bondDegree: 41
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC-12207"
 bindings: []
 signatures:
-  computationUuid: "bfa858fa-c27e-822e-a599-0578fc920ff5"
+  computationUuid: "13c12ceb-07e7-8e9a-99b3-3a42fd8f0728"
   stages:
     - stage: path
       stageUuid: "a5095f2f-bf6a-8dd2-8c96-debf7ca8a4ff"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "19ed62f1-13ba-8372-8431-095b9e0e7247"
     - stage: horo
-      stageUuid: "15fd2792-eb35-89bd-976d-11614d741b5f"
+      stageUuid: "740bdc17-3c34-855a-a3f1-64f5ef01cd3c"
     - stage: seal
       stageUuid: "c21462c1-945f-83a9-b3a3-757b6a51f92a"
     - stage: uuid
-      stageUuid: "a6f0f9f4-5bab-8681-afaf-bf4e3102866d"
+      stageUuid: "04e7ad58-6005-8158-82fb-e6989b41a0bb"
 version: 2
 ---
 # tenant/role — the reference profiles register themselves by being imported

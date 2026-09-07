@@ -2,10 +2,10 @@
 name: issue
 description: "Use when reasoning about issue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/issue"
-coordinate: "vocabulary/issue · 4/weave · 911da12e"
-contentUuid: "ca013df9-b064-517d-8701-347e170c2955"
-diamondUuid: "3db83978-c601-85eb-8caa-df95570e9760"
-uuid: "911da12e-6564-8a51-b61f-f6bfba9c27c0"
+coordinate: "vocabulary/issue · 4/weave · 246ce012"
+contentUuid: "558b3daf-5c5a-5e15-a34b-178fe3757067"
+diamondUuid: "f20ceb67-741c-8afe-8c9d-356c2f0aafa1"
+uuid: "246ce012-50e5-87c6-b6d8-320d3f54dc18"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e257fb86-4913-849a-bfd4-95034bebaa05"
+  computationUuid: "bce1ee05-48b9-8a55-99b6-e0d1d77fd74a"
   stages:
     - stage: path
       stageUuid: "b5be3a81-3260-8e6b-ab28-c811fc6dd8a5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3d0880e0-304c-8647-86b0-5c5241cfd677"
     - stage: horo
-      stageUuid: "ffc44c30-8413-831b-b74b-808f712cbabb"
+      stageUuid: "429b551f-1f80-8129-b4fb-a7c80ffee6c3"
     - stage: seal
       stageUuid: "d0e0c0c6-f999-8ba9-b8bf-09ed38d99539"
     - stage: uuid
-      stageUuid: "01d24ed4-b535-8931-bc97-12f8680ffa87"
+      stageUuid: "e64953e8-21e5-8944-86e6-ed9b50b91a29"
 version: 2
 ---
 # issue

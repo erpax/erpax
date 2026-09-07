@@ -2,11 +2,11 @@
 name: flexibility
 description: "Use when reasoning about flexibility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/flexibility"
-coordinate: "vocabulary/flexibility · 2/share · c3dae1a0"
-contentUuid: "019f4fb0-5ae5-52e8-8a8b-f902af2022de"
-diamondUuid: "f6e1bee9-f951-861b-8d26-203374478209"
-uuid: "c3dae1a0-173d-89bd-90b0-a2e1fa40fb05"
-horo: 2
+coordinate: "vocabulary/flexibility · 1/base · d331d0b5"
+contentUuid: "c64408db-4565-55b8-a4ba-d39f18cae4df"
+diamondUuid: "473b501b-ca72-8898-9fd0-ab4b0b6306eb"
+uuid: "d331d0b5-399b-8311-bb4b-35fdbd982363"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c5b27640-13cf-8622-938b-4b3c4b668e88"
+  computationUuid: "d8cad0d2-b5ba-88e1-a62e-fe899edb87de"
   stages:
     - stage: path
       stageUuid: "ca41d23f-1abf-8611-8846-3885ab6453b5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cfe84937-9d1f-8612-969e-dcee6790d741"
     - stage: horo
-      stageUuid: "7cab2f15-df96-80d2-b157-5952cef1fa39"
+      stageUuid: "3a63e046-39c6-8da0-96ac-ebcb6e51cb82"
     - stage: seal
       stageUuid: "c5fd9022-4e87-870c-8a09-6fee057f2e1b"
     - stage: uuid
-      stageUuid: "55740558-bc52-85eb-8590-8a878a7f5a4c"
+      stageUuid: "e2949acd-a0b4-8399-810d-207a00d6d978"
 version: 2
 ---
 # flexibility

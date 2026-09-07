@@ -2,10 +2,10 @@
 name: hooks
 description: "Use when reasoning about the users collection's Payload hooks — before/after change and validate logic for users."
 atomPath: "users/hooks"
-coordinate: "users/hooks · 3/3 · e8e68ba4"
-contentUuid: "d860589b-a824-5fb8-8630-ec74c0f70946"
-diamondUuid: "cd0e8c84-66e8-85dc-b397-de6709bfae59"
-uuid: "e8e68ba4-1855-86b5-951f-821083cf5de2"
+coordinate: "users/hooks · 3/3 · d092595c"
+contentUuid: "052b7592-383d-5474-a0b9-483b05549e7d"
+diamondUuid: "2df6afd5-8e3a-86e2-a54d-42fea0f815eb"
+uuid: "d092595c-77a2-8f5c-93e5-67eacf253a5e"
 horo: 3
 typography:
   partition: users
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4a24161a-c538-88c4-9079-35330c9f3fb9"
+  computationUuid: "579299b7-58cf-8bc9-8262-4e20b8e8a724"
   stages:
     - stage: path
       stageUuid: "f7d33d66-2d07-88f9-965d-56147c14e2a9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b716b813-f61d-88b5-8fe4-e13f0296072b"
     - stage: horo
-      stageUuid: "f34e4423-cf82-803a-9eab-6af9fbca92da"
+      stageUuid: "803634e5-71c4-8bea-a4b0-3192cfb4c52e"
     - stage: seal
       stageUuid: "c02eab80-7ae1-851b-bb24-63be03135090"
     - stage: uuid
-      stageUuid: "a521b29e-94e6-8184-b87c-ab2bb87599ad"
+      stageUuid: "2270ecec-e384-8fed-8370-b5f2d07bde4b"
 version: 2
 ---
 # users/hooks

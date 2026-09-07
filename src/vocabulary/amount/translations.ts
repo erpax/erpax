@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amount",
-    "uuid": "b5115fb8-7c8c-89bf-9d04-98526c5570c0",
+    "uuid": "75d29231-502f-8c49-8c78-3f470d6bd6b7",
     "words": [
       "amount"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a value is a monetary quantity — invoice total, line price, payment received, account balance. A minor-unit integer + ISO-4217 currency code (never a currency-baked field name). The value-of-trade twin of measure (quantity+unit). Composes with currency to form money.",
-    "uuid": "f553d110-18bd-8af5-9921-ac53d925ebc2",
+    "uuid": "4fcf39e0-c708-8659-9b65-b734fb6ccd36",
     "words": [
       "use",
       "when",

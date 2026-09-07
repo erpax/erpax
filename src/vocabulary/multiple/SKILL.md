@@ -2,11 +2,11 @@
 name: multiple
 description: "Use when reasoning about multiple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/multiple"
-coordinate: "vocabulary/multiple · 5/round · 4dbd01de"
-contentUuid: "b9aa82fd-5260-5058-bf71-ebbaf7ef21bc"
-diamondUuid: "cb11f579-2c8c-8eb1-bb3c-391b651a204f"
-uuid: "4dbd01de-4f00-8479-947b-8f267ec8d151"
-horo: 5
+coordinate: "vocabulary/multiple · 4/weave · e33293d1"
+contentUuid: "6b239465-39d7-5bfc-bf48-af8ffcbba8ca"
+diamondUuid: "01a8c804-5e3a-8aeb-824d-ccd968ab5493"
+uuid: "e33293d1-cfde-88f0-abe4-199584ff6052"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e4361493-1b05-8238-aa64-4018ed941378"
+  computationUuid: "acb3b50c-6405-888b-8600-697d900b20ee"
   stages:
     - stage: path
       stageUuid: "cab35b14-08eb-8e38-895a-14dabae475e7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "59f64e7e-8886-8530-ac65-3ef3798b8a0d"
     - stage: horo
-      stageUuid: "c9c7d2d3-1a6b-8ded-b0ba-ddd74b894074"
+      stageUuid: "09558008-1b77-8672-a4b2-8bb9abb90928"
     - stage: seal
       stageUuid: "d9b47f65-b416-8cca-a075-cbb7c479ba32"
     - stage: uuid
-      stageUuid: "06f31293-4da0-8b35-b1e6-ccaa86c98af3"
+      stageUuid: "77d44e82-d620-8c9b-8a67-6cc1cb537e9a"
 version: 2
 ---
 # multiple

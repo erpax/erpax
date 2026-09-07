@@ -2,11 +2,11 @@
 name: cropped
 description: "Use when reasoning about cropped as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cropped"
-coordinate: "vocabulary/cropped · 2/share · 3dd34536"
-contentUuid: "3ea92532-43d5-5156-9f3d-70f698fb3a60"
-diamondUuid: "4b890e27-885c-8bb1-9751-53397e6654d5"
-uuid: "3dd34536-03b6-82af-b71d-88229469700d"
-horo: 2
+coordinate: "vocabulary/cropped · 4/weave · 13c9cffa"
+contentUuid: "f90012b9-a4c6-59f1-bfd8-819fb0e1b4c9"
+diamondUuid: "fb7dfaa8-248d-848e-9680-ba6aecb91f91"
+uuid: "13c9cffa-45a8-89c9-ae3d-b7da27f2cc59"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "415d00bb-1a57-8d59-bdf2-b1b38ca77722"
+  computationUuid: "5e3a33e3-3069-83f1-905b-065e3f8235ba"
   stages:
     - stage: path
       stageUuid: "f0d2fe71-3309-821b-be38-3613e750ff1b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b11c5f22-f15c-82f0-9fea-35d144ba7fe9"
     - stage: horo
-      stageUuid: "fafd12ac-079a-8a1f-a14e-961b55cfa9d7"
+      stageUuid: "7f33a1da-20d6-81b3-97c5-cd674076f7dd"
     - stage: seal
       stageUuid: "0cc754e1-8319-89b4-8435-276aaf5556f8"
     - stage: uuid
-      stageUuid: "6a028197-a76f-80dc-b482-ba861b634394"
+      stageUuid: "de942c3c-776d-8f18-a23f-06e5c5e52bca"
 version: 2
 ---
 # cropped

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "login",
-    "uuid": "8df453da-1cb4-8039-b378-9ff3897974a5",
+    "uuid": "4725996c-fdb2-83d9-a005-7a6ec4e7b3f1",
     "words": [
       "login"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do.",
-    "uuid": "c6d4c96d-9a57-8a37-bed7-02555e6a3b1e",
+    "uuid": "f606fc4c-11bf-8086-b859-4940985f5760",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: image
 description: Use when reasoning about image — An image of the item. This can be a URL or a fully described ImageObject.
 atomPath: "vocabulary/image"
-coordinate: "vocabulary/image · 1/base · 0a61c439"
-contentUuid: "6e046f3b-571c-5670-8a89-c587b37c3d0e"
-diamondUuid: "f513acc1-f9b3-876e-950b-89a7adf3a3c6"
-uuid: "0a61c439-1795-8373-8586-1204b19d3b9a"
+coordinate: "vocabulary/image · 1/base · c2d2950b"
+contentUuid: "e0577f00-9a50-5f54-8f54-f5bdf0442d0d"
+diamondUuid: "edc32f32-7570-8013-97ce-3f2adb99c935"
+uuid: "c2d2950b-904d-8927-9089-e5f2b53d91de"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "86e8c11b-13db-8821-b3a7-2be690412219"
+  computationUuid: "498d7ad4-07e4-8c2d-97f4-52f8fef80822"
   stages:
     - stage: path
       stageUuid: "4933df4d-acc8-8315-b0e1-7f831b17f206"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f94e479d-8b44-8911-a6d3-a1402c3c5bb2"
     - stage: horo
-      stageUuid: "a956b416-5e0f-8170-8e8d-21b5b0ac72a6"
+      stageUuid: "a546be7d-9c71-8139-8b1c-d2aa5a6e4da8"
     - stage: seal
       stageUuid: "5d3f5ccd-0da5-85bb-b929-39b6ef310289"
     - stage: uuid
-      stageUuid: "6a8efced-6f66-895b-be57-7aeede8ce389"
+      stageUuid: "2fba7609-2631-85eb-acd7-f5c4a249f74b"
 version: 2
 ---
 # image

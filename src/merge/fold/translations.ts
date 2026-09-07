@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fold",
-    "uuid": "456181e4-c8c0-8faf-84a6-098707e46a7e",
+    "uuid": "19a33370-fcff-8ca8-9bf4-df6165dfe43d",
     "words": [
       "fold"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fold — and the folds built on it: , , , and the two roots · .",
-    "uuid": "e8e672ff-5f89-8053-97b1-e64c3cd95579",
+    "uuid": "c8c9cc04-fca4-8642-af12-b78837ea0cdc",
     "words": [
       "use",
       "when",

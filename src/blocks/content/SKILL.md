@@ -2,11 +2,11 @@
 name: content
 description: "Use when reasoning about content — is the definition and renders it, split for the same reason every block is: the shape must be reachable without loading React."
 atomPath: "blocks/content"
-coordinate: "blocks/content · 2/share · 87d06caa"
-contentUuid: "53ed91fb-d2a4-5cd1-a63c-4e94fa9e32ce"
-diamondUuid: "adfaaa03-f54d-8d9f-ad33-b60f8c6ad7ea"
-uuid: "87d06caa-12f9-80cf-941d-2ed3e89f39e6"
-horo: 2
+coordinate: "blocks/content · 8/crest · 148bab41"
+contentUuid: "f990ba07-d589-5ea5-95ba-f22ce022fbdc"
+diamondUuid: "8628e097-f3c2-8156-b797-07bb1cd7ce6f"
+uuid: "148bab41-e56c-826d-aa92-9c3b0daec00c"
+horo: 8
 typography:
   partition: blocks
   bondDegree: 112
@@ -14,7 +14,7 @@ standards:
   - "W3C-HTML5"
 bindings: []
 signatures:
-  computationUuid: "a325fc71-73f4-8ed0-8d17-2a6c6c6acaad"
+  computationUuid: "92683c35-f6b3-8a05-a4ee-7bf9335598e1"
   stages:
     - stage: path
       stageUuid: "d915abfb-6ce8-8fa5-8463-4ffbc0d5a84f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f46efe13-1747-836a-8bea-2f45f19adfa8"
     - stage: horo
-      stageUuid: "4a85b239-63a8-84bf-b0e8-eb9055be2edf"
+      stageUuid: "95dd9aa8-cbfa-8565-9b4b-f582d29350aa"
     - stage: seal
       stageUuid: "61160042-8e99-8b8d-a374-edd566d0ff02"
     - stage: uuid
-      stageUuid: "a8de4d1b-249f-85fb-b175-fe9d2959ed8a"
+      stageUuid: "f09437bd-df72-845e-840a-8041039a619b"
 version: 2
 ---
 # blocks/content — the rich-text block, shape and rendering

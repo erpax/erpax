@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "workload",
-    "uuid": "83d281f3-a479-8643-beb0-1f8979c7ad30",
+    "uuid": "6b5c4f58-68ed-8de0-b383-39de7f1f1ca0",
     "words": [
       "workload"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about workload — Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.",
-    "uuid": "ef342318-f335-8b77-b639-6d6d29478c36",
+    "uuid": "68f1c37b-9264-8732-9b66-5875792574c5",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: distribution
 description: "Use when analyzing data spread — normal/Poisson/exponential distributions, distribution testing (Shapiro-Wilk, Kolmogorov-Smirnov), distribution fitting, distribution-aware statistics (mean vs median), distribution plots/histograms."
 atomPath: "vocabulary/distribution"
-coordinate: "vocabulary/distribution · 8/crest · 7cd8ff02"
-contentUuid: "b983c860-1265-5c37-925b-8fd846c02464"
-diamondUuid: "d6b7eaeb-1e4c-86d6-9666-079d9f46980c"
-uuid: "7cd8ff02-9b2f-8f8b-acac-4df22b85fe5b"
-horo: 8
+coordinate: "vocabulary/distribution · 5/round · 5c0514be"
+contentUuid: "5bbf47eb-3eeb-5f58-9d64-f93222b5371f"
+diamondUuid: "48d0c083-07da-82ed-ba56-0dac477676be"
+uuid: "5c0514be-be91-8616-8696-6643669c8084"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 46
 standards: []
 bindings: []
 signatures:
-  computationUuid: "41278637-4b0c-8728-8272-35fae56db2e3"
+  computationUuid: "3502bebb-aa16-83fd-b7bc-d2085115d710"
   stages:
     - stage: path
       stageUuid: "19e5d8c8-9351-8b0e-9b48-6230274592f5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "672a1e40-ebe4-80d0-a89b-e1a2ae3b59e2"
     - stage: horo
-      stageUuid: "6493e6b4-2e8e-83ab-b1e0-7191de3af6b0"
+      stageUuid: "e712c1b5-072f-83a5-967a-22dfbb535cd5"
     - stage: seal
       stageUuid: "c5b16843-e9b5-8156-a1c5-1c248ec5de87"
     - stage: uuid
-      stageUuid: "45a3a0e9-1d52-8b6c-aa20-7a04d329628c"
+      stageUuid: "3d687801-9c96-88d4-a2e1-32a2479d9765"
 version: 2
 ---
 # distribution

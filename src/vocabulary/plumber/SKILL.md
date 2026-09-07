@@ -2,11 +2,11 @@
 name: plumber
 description: Use when reasoning about plumber — A plumbing service.
 atomPath: "vocabulary/plumber"
-coordinate: "vocabulary/plumber · 2/share · a73b9ce2"
-contentUuid: "79567073-69b3-5d3e-b592-82862f9962aa"
-diamondUuid: "274037b7-fdb7-8ae5-b18c-2fea4cee38ac"
-uuid: "a73b9ce2-389f-8229-95e0-57943b86fa86"
-horo: 2
+coordinate: "vocabulary/plumber · 8/crest · 6dd912c0"
+contentUuid: "3d938aab-2456-5dc6-8a16-b2391c8ba048"
+diamondUuid: "82ae738e-f54e-850c-88e1-8baf2b94ba48"
+uuid: "6dd912c0-3b37-8818-9e84-385eeedddc4e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c8c26a80-cc78-8f32-800c-9e3750f062d5"
+  computationUuid: "edbac523-83b7-8989-9b4c-5f2714449610"
   stages:
     - stage: path
       stageUuid: "52823950-ac28-830d-b7e6-fb2e8d2091d1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bd99a3a8-6e81-814c-9761-e3087e48981e"
     - stage: horo
-      stageUuid: "4b24991d-3476-816e-8fbf-2b3397d8cf0b"
+      stageUuid: "ba157a39-3d04-89a9-9032-de678c7cb445"
     - stage: seal
       stageUuid: "e9b2c840-c632-8299-8c66-f02a573edcad"
     - stage: uuid
-      stageUuid: "af71de28-7646-80e9-82fa-5a6c906a311b"
+      stageUuid: "b644e5a1-8ee3-899e-b2b1-2eb6b13fe95d"
 version: 2
 ---
 # plumber

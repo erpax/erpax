@@ -2,18 +2,18 @@
 name: names
 description: "Use when collapsing each atom's test file to the canonical test.ts — the migrating skill that renames a single <Name>.test.ts to test.ts and flags multi-test folders for sub-atom collision."
 atomPath: "migrate/names"
-coordinate: "migrate/names · 2/share · c61c05c4"
-contentUuid: "4a5fb705-5d71-5f39-9730-d23ff873b977"
-diamondUuid: "156188b1-066b-8c08-963d-e5496411726c"
-uuid: "c61c05c4-685f-8352-8a53-37f1ccd6c5fa"
-horo: 2
+coordinate: "migrate/names · 5/round · d8ce7d2a"
+contentUuid: "49a4b0ca-679a-5a7a-a111-f627cbf7542b"
+diamondUuid: "64273368-9697-8766-ad03-f94031700614"
+uuid: "d8ce7d2a-0421-8cf1-bca0-c8eb25fdae5b"
+horo: 5
 typography:
   partition: migrate
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c53af54c-19a6-8765-8271-386cb784c422"
+  computationUuid: "fb71745c-4a50-8d08-a175-e163469376b4"
   stages:
     - stage: path
       stageUuid: "e6ad76bf-0ae6-8c6d-9d62-4f468d81f200"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3779a7f3-d537-8f54-8a2f-fdc235976ac8"
     - stage: horo
-      stageUuid: "b1e39d7a-8261-8bd3-a287-483da0483246"
+      stageUuid: "37d53939-4e09-83ad-b2c5-a8db2ff7f6ce"
     - stage: seal
       stageUuid: "bc2d3f4a-1321-85f0-b465-02d7dc13706e"
     - stage: uuid
-      stageUuid: "31b0c09b-24ef-8db2-aaf9-d82504caff5f"
+      stageUuid: "3a0664a8-579c-886d-a2e2-42c8031ae35f"
 version: 2
 ---
 # names

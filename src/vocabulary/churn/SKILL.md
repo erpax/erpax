@@ -2,18 +2,18 @@
 name: churn
 description: "Use when measuring customer retention/attrition — monthly/annual churn %, cohort analysis, at-risk indicators, retention drivers."
 atomPath: "vocabulary/churn"
-coordinate: "vocabulary/churn · 8/crest · 4916f900"
-contentUuid: "1b360d22-f5d7-57b5-971d-08ee89f4bd4a"
-diamondUuid: "e36683fe-e93f-80ca-84b0-464f6fdc5bde"
-uuid: "4916f900-a072-867a-965d-90bb6a0a593c"
-horo: 8
+coordinate: "vocabulary/churn · 1/base · 5cfee45f"
+contentUuid: "72257281-a481-52af-bfbb-ff899b976a75"
+diamondUuid: "d9b077c9-fbc6-8d5d-814d-01d080a0ecf0"
+uuid: "5cfee45f-d6c2-853c-a828-421725bd0a9f"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "205d72a3-d762-82e6-80a7-3841da60ccea"
+  computationUuid: "9feed70b-b9d3-81a4-a8cb-b0c0763ecc30"
   stages:
     - stage: path
       stageUuid: "afef8cc3-16d7-84d5-9b62-6064cb290e37"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2c95de05-c7e6-8d68-a14f-eedd228447a3"
     - stage: horo
-      stageUuid: "c88ac9e8-1af8-8175-85c5-b14ae8d36db7"
+      stageUuid: "bce79b57-4b2b-8b40-9d9e-0151f4e4fd80"
     - stage: seal
       stageUuid: "4321b59e-830e-8972-8f2f-5962ef83bc94"
     - stage: uuid
-      stageUuid: "4687d437-8c43-8214-85bf-324a0efe1adb"
+      stageUuid: "0da9420e-15d8-8cc5-a0dd-c42bc2844360"
 version: 2
 ---
 # churn

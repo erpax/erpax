@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "syntax",
-    "uuid": "b2d4b877-b879-8158-888a-cb5bb2158af2",
+    "uuid": "bcd21568-fb0a-8da7-b02c-7f63987ec6f9",
     "words": [
       "syntax"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a gate needs a grammatical fact about source — which comments a file has, which names it binds. Wraps ts.createSourceFile so the answer is the compiler's, not a pattern's: a // inside a string is not a comment, and no regex can tell. The gates derive from here rather than each guessing.",
-    "uuid": "10f47253-d230-8baf-86a9-26e63b0188f5",
+    "uuid": "f20dc1e2-c8d0-87d7-a68c-984690fba510",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: deactivate
 description: "Use when reasoning about deactivate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/deactivate"
-coordinate: "vocabulary/deactivate · 5/round · f53e9508"
-contentUuid: "2d9e593d-be03-5845-a5db-16cd74fda82e"
-diamondUuid: "fda02c65-cc78-8c5e-aad0-905b821f21c9"
-uuid: "f53e9508-f9e9-8128-aa7f-5c333da2ae51"
-horo: 5
+coordinate: "vocabulary/deactivate · 4/weave · 46010b14"
+contentUuid: "b05ca1ba-0167-5be7-95e3-5ab37b7d5c8a"
+diamondUuid: "9bdbc3a4-c007-8182-afc5-45ef31db31cb"
+uuid: "46010b14-35e1-8e6a-99de-af7bb67e01c0"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5c01c440-2b0f-8632-8e2a-8f5f8d505460"
+  computationUuid: "a746e47e-1a1f-8441-9e7b-291d71217155"
   stages:
     - stage: path
       stageUuid: "e4ac80bf-bc4d-82f0-9f18-f07faebca582"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e21a4c65-1274-89a0-b2d3-342d775c5ebb"
     - stage: horo
-      stageUuid: "be8e9263-9fb0-89f3-9e19-ec2160e9d5e2"
+      stageUuid: "39da5c9a-2be3-861f-b314-c77df6e6c49b"
     - stage: seal
       stageUuid: "1ecc86de-99f1-8e78-b747-3ac264fe95b0"
     - stage: uuid
-      stageUuid: "2a86cdce-3498-8e16-bd2f-bccfa00bbd5e"
+      stageUuid: "bd02ff1c-981c-828a-ba46-7f564e2ad5d0"
 version: 2
 ---
 # deactivate

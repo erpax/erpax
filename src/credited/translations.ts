@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "credited",
-    "uuid": "0908d16b-cefa-86da-82c0-4c29039f4057",
+    "uuid": "900aedbf-fd41-8742-a7dc-567938c66785",
     "words": [
       "credited"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \\\"Stefani Germanotta Band\\\", but by Lady Gaga.",
-    "uuid": "75d608a3-a798-86d1-9ac8-7e2a4d567dc0",
+    "uuid": "e75baf0a-21ac-8822-a460-47e33bea4691",
     "words": [
       "use",
       "when",

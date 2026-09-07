@@ -2,11 +2,11 @@
 name: assesses
 description: Use when reasoning about assesses — The item being described is intended to assess the competency or learning outcome defined by the referenced term.
 atomPath: "vocabulary/assesses"
-coordinate: "vocabulary/assesses · 7/descent · f8630e2d"
-contentUuid: "3329e4c2-6780-5a8e-b679-e3310b0edb13"
-diamondUuid: "a7eec024-7864-84e9-a52f-b9164b939936"
-uuid: "f8630e2d-43a5-8404-8875-6e4808657ea2"
-horo: 7
+coordinate: "vocabulary/assesses · 1/base · d96904a7"
+contentUuid: "4e97e239-9f50-5d38-97b8-18d5837b3594"
+diamondUuid: "4c6e8493-333e-8483-9b88-8b76dbe43228"
+uuid: "d96904a7-9458-84b6-ad8c-09deeaec1033"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2158a633-c802-83db-b582-8a153de2938b"
+  computationUuid: "5aca45d3-c6c1-8f64-b971-09f16fbbdaa0"
   stages:
     - stage: path
       stageUuid: "ec9e7188-d8c4-84e8-9c60-e6e80c6a2e37"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5ce2e653-4b5f-8bb1-958e-f100e0ef0696"
     - stage: horo
-      stageUuid: "4f872387-2b34-87b6-ae00-6c9817a5e522"
+      stageUuid: "0b32597f-b079-8812-83e2-8ef77ba72140"
     - stage: seal
       stageUuid: "80fe432c-8425-82bc-99a8-ff0a2494f4b2"
     - stage: uuid
-      stageUuid: "9ff0c9bf-7d8f-82c9-bf39-8ceea05ab6c1"
+      stageUuid: "661c1c0b-45cb-89d1-948c-51c952039dca"
 version: 2
 ---
 # assesses

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reviews",
-    "uuid": "e83ee1d0-4822-8e31-878a-989aa9adcf2a",
+    "uuid": "c70edc16-0d62-86d7-ba4f-e9f6380ca6cb",
     "words": [
       "reviews"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection.",
-    "uuid": "5a0aa459-652a-859d-88e8-b32b6aa949bc",
+    "uuid": "fec9a802-2a21-8afd-a06d-a2c155a3638d",
     "words": [
       "use",
       "when",

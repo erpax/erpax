@@ -2,18 +2,18 @@
 name: cipher
 description: "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries"
 atomPath: "quantum/fold/cipher"
-coordinate: "quantum/fold/cipher · 8/crest · 1c88b19a"
-contentUuid: "3d08fec1-8cc9-5837-8540-cf4de9eb6d72"
-diamondUuid: "60fd3855-e7b4-836b-9841-ffdb526bba7e"
-uuid: "1c88b19a-807c-8c76-a509-649ce2d4345e"
-horo: 8
+coordinate: "quantum/fold/cipher · 4/weave · 8c75979b"
+contentUuid: "34c744a6-33c5-5fff-a53c-3975742432f3"
+diamondUuid: "a6fdce66-12d9-8342-a69a-03027647adbd"
+uuid: "8c75979b-56c3-83e9-9c68-990b3f522d88"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a70333a5-8c37-8166-8a24-855e00fcf8b1"
+  computationUuid: "e744332d-0312-8fea-ba07-df7396563e0f"
   stages:
     - stage: path
       stageUuid: "30b4519c-efbf-8aac-9fa0-63b6d6ca5b12"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c0cbd541-1ba1-8ee8-bf5f-2314528efe5d"
     - stage: horo
-      stageUuid: "466862ab-3acc-88d7-be9a-4d912fda8bab"
+      stageUuid: "993557c7-f463-8411-be3f-e6999df1715f"
     - stage: seal
       stageUuid: "22df6bd3-7788-8985-bfef-a25d6a4d2f16"
     - stage: uuid
-      stageUuid: "6b242cd7-d004-8541-a067-e1a3f774a9e3"
+      stageUuid: "146a2339-a3ed-8611-826a-c662879f5e52"
 quantum:
   superposition:
     - fold
@@ -47,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "a70333a5-8c37-8166-8a24-855e00fcf8b1"
-    contentUuid: "3d08fec1-8cc9-5837-8540-cf4de9eb6d72"
+    computationUuid: "e744332d-0312-8fea-ba07-df7396563e0f"
+    contentUuid: "34c744a6-33c5-5fff-a53c-3975742432f3"
 version: 2
 ---
 # cipher — ciphertext-only receipts, plaintext sealed
@@ -125,4 +125,4 @@ imports @/algebra
 
 Composes: [[seal]] · [[quantum]] · [[law]]
 
-<sub>content-uuid `3d08fec1-8cc9-5837-8540-cf4de9eb6d72` · account `quantum/fold/cipher` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `34c744a6-33c5-5fff-a53c-3975742432f3` · account `quantum/fold/cipher` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "analytics",
-    "uuid": "ad9f2ee8-aa86-84dd-9531-7c4e8ae8bb43",
+    "uuid": "9af35675-956c-8734-9c9c-3b3d1207f7ad",
     "words": [
       "analytics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them.",
-    "uuid": "88097d59-b106-86b6-bb2c-ebf34575c48a",
+    "uuid": "7edcae15-d1d1-8887-8642-47f3da14dab3",
     "words": [
       "use",
       "when",

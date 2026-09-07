@@ -2,11 +2,11 @@
 name: parties
 description: "Use when reasoning about parties — Both are a dated, line-itemised financial document with a status lifecycle, a balance and an aging profile. is that shape, the lifecycle it may walk, and the set both age into."
 atomPath: "types/parties"
-coordinate: "types/parties · 4/weave · c4fa48f1"
-contentUuid: "a000e8d1-f920-5662-bdc7-05fe21cd2984"
-diamondUuid: "58d589aa-091b-8ea2-8a86-eaee96dd3f32"
-uuid: "c4fa48f1-696a-8ca0-878c-7e961a870129"
-horo: 4
+coordinate: "types/parties · 8/crest · 49c6058e"
+contentUuid: "884d362f-f604-59f8-807d-81ec7f333953"
+diamondUuid: "27b24488-e6d6-8aa1-9dca-b445cd49b872"
+uuid: "49c6058e-44e0-8fc5-b1f4-7e0e532f4274"
+horo: 8
 typography:
   partition: types
   bondDegree: 3
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-326 credit-losses-cecl"
 bindings: []
 signatures:
-  computationUuid: "73e2d4ec-9b07-8259-80b5-10df336cb0aa"
+  computationUuid: "f0c5bff1-e78e-8e71-9018-a27325d7b663"
   stages:
     - stage: path
       stageUuid: "aa5f378b-2792-8214-b250-77cb0c0fc060"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "23732026-a418-81f3-8b21-83d64fef9a5a"
     - stage: horo
-      stageUuid: "7714abb8-6ae5-86fe-bc0c-dc3481d4c57d"
+      stageUuid: "091a5ae9-10b0-8f7b-97d9-b567b23b88e7"
     - stage: seal
       stageUuid: "272bdd6b-1396-8938-a035-14d9ed115690"
     - stage: uuid
-      stageUuid: "d6a88998-fb30-8445-828c-8fa123dc95f0"
+      stageUuid: "8568b757-92c9-8df2-a54a-cc8b519ff8b8"
 version: 2
 ---
 # types/parties — a payable and a receivable are the same document seen from opposite sides

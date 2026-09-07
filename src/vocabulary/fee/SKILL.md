@@ -2,11 +2,11 @@
 name: fee
 description: "Use when reasoning about fee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fee"
-coordinate: "vocabulary/fee · 2/share · a4d24fdd"
-contentUuid: "82e6c0fb-237f-593d-b926-64a6a72df4ec"
-diamondUuid: "688baae5-cb4f-8409-8497-81e5c47b5c6d"
-uuid: "a4d24fdd-ff4e-8f70-b6d4-96d4ac155f71"
-horo: 2
+coordinate: "vocabulary/fee · 8/crest · 8a0b8bee"
+contentUuid: "be67c273-9ea6-5a33-bf37-566be05fe231"
+diamondUuid: "a49e25af-1aa2-80c3-b44d-f98d2e9f9ec4"
+uuid: "8a0b8bee-a486-8794-8e3a-0f5873f1676c"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "59c1ffb5-2786-8937-8bc4-42e156773d34"
+  computationUuid: "522b1fce-9472-86fb-9f8b-b1558563ccca"
   stages:
     - stage: path
       stageUuid: "c55e7708-52b6-8396-92f0-c69af297e970"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "03cee0e6-42ef-80cc-b974-b477258011e1"
     - stage: horo
-      stageUuid: "d464406d-a92d-811b-a3df-ac95d230021e"
+      stageUuid: "2650b578-0db2-852d-8797-d5278c4326d6"
     - stage: seal
       stageUuid: "978c9b76-3a71-8289-9ce3-58145d454833"
     - stage: uuid
-      stageUuid: "245a617f-9de6-8859-97d6-1e4f0cd70cb0"
+      stageUuid: "3ed3b247-3469-8da5-97d9-aaf764cf740a"
 version: 2
 ---
 # fee

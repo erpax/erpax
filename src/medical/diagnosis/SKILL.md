@@ -2,11 +2,11 @@
 name: diagnosis
 description: "Use when reasoning about diagnosis as a medical facet of medical — vocabulary pivot to @/diagnosis; nested not duplicated."
 atomPath: "medical/diagnosis"
-coordinate: "medical/diagnosis · 8/crest · afc469ce"
-contentUuid: "2dcda9f6-368d-54d2-8b1a-0ed5d0a1a49a"
-diamondUuid: "150d85ed-b7f5-8ff9-bb17-db8f4bd6d2b8"
-uuid: "afc469ce-ca02-8e65-962e-a7ba1dcfcf2a"
-horo: 8
+coordinate: "medical/diagnosis · 5/round · d0076b97"
+contentUuid: "665c0ffd-1b84-5d29-8dee-8796f941c59a"
+diamondUuid: "f831abdc-d6f2-8ebf-bc3f-aca26952089b"
+uuid: "d0076b97-88d1-8b64-9da7-a822873b7600"
+horo: 5
 typography:
   partition: medical
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c4bd4192-b0ee-832c-b2b9-5171781ea662"
+  computationUuid: "e33a90fe-ac90-800b-ac37-8641d874d0d5"
   stages:
     - stage: path
       stageUuid: "06b6f80c-c801-8672-9f2a-dec06fc4705f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1cc1018c-32d7-8ffe-9ff1-b7fd055a263b"
     - stage: horo
-      stageUuid: "941d7775-909d-8be4-9bf9-593b8cee0696"
+      stageUuid: "a9765aac-6d35-8ef7-be01-d98ef1ff4f75"
     - stage: seal
       stageUuid: "cf849de8-d234-8ccd-aa2d-9998510a120d"
     - stage: uuid
-      stageUuid: "87e72440-5cf9-8a72-89b0-f36c2a0fe2a4"
+      stageUuid: "b48f7ea7-9be4-801f-8fd1-d7faf7efc775"
 version: 2
 ---
 # medical/diagnosis — medical facet

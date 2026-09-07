@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "message",
-    "uuid": "5325b2f1-4a30-8906-bfa5-93bb8837fe3a",
+    "uuid": "7ace8d91-6da8-8026-945c-f4b60411ba9f",
     "words": [
       "message"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about message — Every other atom under blocks/form is a control: it has a name, a label, a value, and a place in the tab order.",
-    "uuid": "5f11a17e-06d1-8bd3-b66b-cd4dd5df4289",
+    "uuid": "52e55178-8815-841d-8a2e-7be2e7e4aee7",
     "words": [
       "use",
       "when",

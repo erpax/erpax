@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "byline",
-    "uuid": "93f4f5de-464f-8d97-bb7d-f661b29e325e",
+    "uuid": "662fa327-980d-824a-9d71-08895355b854",
     "words": [
       "byline"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one byline — the singular model of the bylines collection (the plural store); the credited author line on a published article.",
-    "uuid": "915d6d0e-26ee-8835-a7af-4194dbc0f81f",
+    "uuid": "2cd64cd6-e0ae-8acd-b77d-9256801111da",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: app
 description: "Use when reasoning about erpax as a device of apps — every atom IS a quantum app (a content-uuid identity, entangled links, collapsible by merge); the proof is that every matrix node carries a content-uuid."
 atomPath: "quantum/app"
-coordinate: "quantum/app · 1/base · 56804500"
-contentUuid: "bf3602af-3a67-510c-b04a-df116f1977a0"
-diamondUuid: "00d07f98-2a58-87da-9a35-ccc705a64c43"
-uuid: "56804500-fca7-8de9-8035-98100ef5b35d"
-horo: 1
+coordinate: "quantum/app · 5/round · c055d0be"
+contentUuid: "19efe91e-22c6-5490-a20b-ed1f888f1e98"
+diamondUuid: "fc40c3ce-a701-8a72-bf4c-3e6c1b40de41"
+uuid: "c055d0be-a6b3-8454-9382-1fc49ae4fb7a"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 31
 standards: []
 bindings: []
 signatures:
-  computationUuid: "92ef2abf-44a1-8757-be94-dd971d59d622"
+  computationUuid: "1e0c3c82-50c7-87f3-b917-d5bc9c91ea22"
   stages:
     - stage: path
       stageUuid: "fe18c04e-1781-8b29-bfcf-bea2dca36be0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3362d579-cf88-8fdb-842b-b74f4a1657a2"
     - stage: horo
-      stageUuid: "58b47030-7969-8220-875b-c808645b423a"
+      stageUuid: "b7b2dfe6-a763-8de7-abb1-a8f2d8a4fdb8"
     - stage: seal
       stageUuid: "61e4a2f7-3410-8022-87db-3d8a18be1f5e"
     - stage: uuid
-      stageUuid: "3de624ee-9ca6-8197-b77b-aeaee7eb078d"
+      stageUuid: "a6c9658e-aa78-8c99-9072-2aac5d945721"
 quantum:
   superposition:
     - app
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "92ef2abf-44a1-8757-be94-dd971d59d622"
-    contentUuid: "bf3602af-3a67-510c-b04a-df116f1977a0"
+    computationUuid: "1e0c3c82-50c7-87f3-b917-d5bc9c91ea22"
+    contentUuid: "19efe91e-22c6-5490-a20b-ed1f888f1e98"
 version: 2
 ---
 # quantum/app — every atom is a quantum app
@@ -73,4 +73,4 @@ Matter-twin: `src/quantum/app/index.ts` (`isQuantumApp` · `quantumApps` · `eve
 
 @audit the proof is computed over the live matrix, never hand-asserted
 
-<sub>content-uuid `bf3602af-3a67-510c-b04a-df116f1977a0` · account `quantum/app` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `19efe91e-22c6-5490-a20b-ed1f888f1e98` · account `quantum/app` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

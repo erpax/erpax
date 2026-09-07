@@ -2,11 +2,11 @@
 name: thing
 description: Use when reasoning about thing — The most generic type of item.
 atomPath: thing
-coordinate: "thing · 8/crest · 599a7c9c"
-contentUuid: "2f870d51-227d-5a32-be61-9674b98b9b81"
-diamondUuid: "43354015-f4e1-882d-b116-6af16ed9aed5"
-uuid: "599a7c9c-9217-8226-b2db-3c63d72a073f"
-horo: 8
+coordinate: "thing · 4/weave · cfeeed27"
+contentUuid: "220533cf-087f-5284-971f-98283d18ea77"
+diamondUuid: "fe434fb9-50a9-84ac-9aad-7d8c54da9fb2"
+uuid: "cfeeed27-3609-8daa-bedf-fdbef1a060f8"
+horo: 4
 typography:
   partition: thing
   bondDegree: 710
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c1fa263c-6ecd-8b7e-9999-85cb1ce06564"
+  computationUuid: "0751eb98-374b-8d0f-8b5a-ea39f72bdc8c"
   stages:
     - stage: path
       stageUuid: "e4ab38fd-91c5-83ff-9c25-167beb95ec8b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bc0be038-e28a-8b57-82cd-05d573d20b59"
     - stage: horo
-      stageUuid: "3bd6f3ae-f2e2-8b80-8fe9-61841f7c48e8"
+      stageUuid: "1730158a-9018-81b0-8fb8-2e76e0606270"
     - stage: seal
       stageUuid: "006ad9d4-80ae-8a28-89de-cbaea5d605e3"
     - stage: uuid
-      stageUuid: "546e03b6-1c30-8905-8970-c914676a5849"
+      stageUuid: "1432701e-b657-8980-8592-78939ac2caa2"
 version: 2
 ---
 # thing

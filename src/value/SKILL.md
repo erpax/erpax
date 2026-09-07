@@ -2,18 +2,18 @@
 name: value
 description: "Use when a field carries a numeric or quantified substance — quantity value (paired with unit), exchange rate value, percentage, index. Generic numeric container; pairs with unit (measure), currency, or rate context to form money/quantity/rate."
 atomPath: value
-coordinate: "value · 7/descent · c7860eb2"
-contentUuid: "75b7885e-f091-561e-a4e7-4b2c06e0532a"
-diamondUuid: "c3960f6a-1ee7-86a7-b3ab-d3bc5f6f5174"
-uuid: "c7860eb2-89c2-8972-830b-e1739fd28951"
-horo: 7
+coordinate: "value · 2/share · a76ed412"
+contentUuid: "c20feb04-a919-50e4-9c42-c77eec6980e0"
+diamondUuid: "ae7504e1-8c6f-8a6d-aa11-398de19417a4"
+uuid: "a76ed412-82e9-8587-8f7d-f3801769e125"
+horo: 2
 typography:
   partition: value
   bondDegree: 101
 standards: []
 bindings: []
 signatures:
-  computationUuid: "21d93b98-a7f1-8033-937d-26a6d9f07e41"
+  computationUuid: "833893bf-a52d-8bce-8725-82cadedc9965"
   stages:
     - stage: path
       stageUuid: "9a6fc29d-5fba-8680-adef-93f09d9dc585"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dd92fbac-bfb2-8f20-81b3-4d244f995f54"
     - stage: horo
-      stageUuid: "78ca48d6-4930-8c9f-a0e6-794cffe925c8"
+      stageUuid: "d3ef4287-e375-880d-b6c7-23aa81a04d88"
     - stage: seal
       stageUuid: "bce157f2-a12f-8445-ab00-0dbef1d33094"
     - stage: uuid
-      stageUuid: "2085c07b-4411-8222-94f0-b2e08123bbae"
+      stageUuid: "53ce45e3-95c8-8053-bcaf-2f1394b3f3c0"
 version: 2
 ---
 # value

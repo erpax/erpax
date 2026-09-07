@@ -2,10 +2,10 @@
 name: nail
 description: "Use when reasoning about nail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/nail"
-coordinate: "vocabulary/nail · 4/weave · 89f85722"
-contentUuid: "4845360f-d903-50bf-b27d-6a0ff3735849"
-diamondUuid: "d4cdedee-58cb-82bb-8619-31b4ecc18209"
-uuid: "89f85722-3e85-8aa4-b755-e10e578ab47f"
+coordinate: "vocabulary/nail · 4/weave · 479b0490"
+contentUuid: "9a521417-9522-5848-8c77-33fd32a2d46d"
+diamondUuid: "f879d58a-cc8d-89b5-8dd9-a211519ec9d4"
+uuid: "479b0490-f14c-8af0-8408-128b982aae80"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d5b661a6-d292-88c1-9f0b-3c7eb1cf5816"
+  computationUuid: "6c468d12-f1f1-86de-881b-81790275a938"
   stages:
     - stage: path
       stageUuid: "f39fbe98-759f-8d8e-bd20-92291e3de54f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1dc8f0fc-86c8-86c0-90cc-38c4eea26bb9"
     - stage: horo
-      stageUuid: "f679256e-439b-84b3-82fc-b391d8094dd8"
+      stageUuid: "2af8b92f-43f8-8add-a582-238147e61467"
     - stage: seal
       stageUuid: "fab74491-e474-8fc7-a1c7-dc82dce027b9"
     - stage: uuid
-      stageUuid: "98ff05ca-1795-8455-9bef-5fe40f697e72"
+      stageUuid: "10fcd932-cec2-8f53-a2c0-3c3e3e70e3e0"
 version: 2
 ---
 # nail

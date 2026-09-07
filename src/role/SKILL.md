@@ -2,11 +2,11 @@
 name: role
 description: "Use when reasoning about role — Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a"
 atomPath: role
-coordinate: "role · 1/base · 4c565366"
-contentUuid: "0919dfe5-72e3-57ec-8874-fea34a54cf08"
-diamondUuid: "e2622932-9e2d-845f-8e6e-4ca99d513fb7"
-uuid: "4c565366-7650-8da3-bf72-e35bfe8d4673"
-horo: 1
+coordinate: "role · 8/crest · b36c45af"
+contentUuid: "4d95879d-ebad-572d-a7e7-146587c30674"
+diamondUuid: "e173284c-0c5f-872e-a02e-e883a1e31723"
+uuid: "b36c45af-53a2-82b3-b470-3125949c2d3f"
+horo: 8
 typography:
   partition: role
   bondDegree: 41
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "06aeb5a6-41e8-8891-a6e3-73dde710ce8f"
+  computationUuid: "1703511c-812c-8767-995b-bd02a76fbbff"
   stages:
     - stage: path
       stageUuid: "44cb6f75-f63f-8182-80ee-0c8eaa491acd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d95b886b-020c-8fef-ac48-7471ed97d487"
     - stage: horo
-      stageUuid: "b9864b85-420c-843c-aa63-2ef69f2ee957"
+      stageUuid: "7b56b9a8-0db6-8946-82f4-a068accdd907"
     - stage: seal
       stageUuid: "962102f4-7df2-881e-b09e-7585c853bca8"
     - stage: uuid
-      stageUuid: "8e3b2b24-8ae9-8371-98c9-78ec44bfae73"
+      stageUuid: "f57f2d5b-da39-86e3-a134-aa3df8ad897f"
 version: 2
 ---
 # role

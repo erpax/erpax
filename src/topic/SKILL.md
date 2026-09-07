@@ -2,10 +2,10 @@
 name: topic
 description: "Use when reasoning about topic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: topic
-coordinate: "topic · 4/weave · d2a76fa3"
-contentUuid: "75fbb03b-06d7-567e-8c46-5f8a0a8ce177"
-diamondUuid: "9fd098d0-b214-8fea-b21c-08fb9c05624a"
-uuid: "d2a76fa3-7d8f-84dc-9219-62e67f31915f"
+coordinate: "topic · 4/weave · a4b50c10"
+contentUuid: "7e3a2014-da28-5d7a-a749-f5b5fe8b2c26"
+diamondUuid: "31d85e26-dfbf-87c1-b8dc-954969c52c7f"
+uuid: "a4b50c10-4192-89b0-af92-3819f0841edd"
 horo: 4
 typography:
   partition: topic
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fe1161eb-6bf3-82bf-b8f0-8d40339ad2d6"
+  computationUuid: "3bbb5e36-8b8f-87cb-ad73-7e22398bb87a"
   stages:
     - stage: path
       stageUuid: "c5b1ae42-e6f5-89b0-996f-79007bdd2fc7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd19566a-3fff-8f0c-ac36-7d8ea120dd66"
     - stage: horo
-      stageUuid: "712d4eef-1eab-8fe2-ba4f-f6b6dcfc8086"
+      stageUuid: "abb9d47b-593a-86dd-b2bd-297bb535ab79"
     - stage: seal
       stageUuid: "fb47b680-bcb0-840b-a0fc-b687679802ea"
     - stage: uuid
-      stageUuid: "3713713f-5b9d-8e7b-99bf-f77920868bea"
+      stageUuid: "01d64442-060d-81be-ab7e-b3aec2c55324"
 version: 2
 ---
 # topic

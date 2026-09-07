@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "millennium",
-    "uuid": "83ecac64-8faf-8c27-a462-f922286b9fb3",
+    "uuid": "25456410-2269-8179-aa15-e0e51d69d809",
     "words": [
       "millennium"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the Clay Millennium Problems are offered as a testing ground — the honest register that NAMES the seven, marks six open and one solved (Poincaré, by Perelman), and refuses to solve any. Every entry's `corpusSolves` is the literal false, so the code cannot claim a solution; the corpus tools are lenses to learn through, and the quantum waves CLASSIFY a claimed solution, they do not produce one. HARMONY ≠ TRUTH.",
-    "uuid": "76d094ab-ed87-8a77-8f0f-3c5cb4c84b3c",
+    "uuid": "622da15b-695b-8878-aab3-dd527ebe4baf",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "participation",
-    "uuid": "df15d5f8-c7cb-8bc9-99c3-7197849fa640",
+    "uuid": "82ae29c9-8d89-83cc-b55e-6b51422a51df",
     "words": [
       "participation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about participation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "43528729-8b12-8463-9658-5028ebc3884a",
+    "uuid": "73ed8226-74c4-8dc5-8843-1925004bce2d",
     "words": [
       "use",
       "when",

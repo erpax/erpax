@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "parties",
-    "uuid": "c4fa48f1-696a-8ca0-878c-7e961a870129",
+    "uuid": "49c6058e-44e0-8fc5-b1f4-7e0e532f4274",
     "words": [
       "parties"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about parties — Both are a dated, line-itemised financial document with a status lifecycle, a balance and an aging profile. is that shape, the lifecycle it may walk, and the set both age into.",
-    "uuid": "62c31a88-d288-80c8-b78e-fc883d781ac6",
+    "uuid": "bfcbc868-7d75-8b47-82a1-4f3d18c819f2",
     "words": [
       "use",
       "when",

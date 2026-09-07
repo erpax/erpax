@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "health",
-    "uuid": "78bc5d73-bfee-8f68-9584-0e548029c56b",
+    "uuid": "ad7db779-cb59-8312-b218-9c888dba2185",
     "words": [
       "health"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing healthcare operations — patient records, medical encounters, clinical protocols, health outcomes, treatment plans, medication management, or healthcare provider coordination in government/nonprofit health systems (COFOG 07).",
-    "uuid": "b86f3d38-63d9-8bed-9c75-a0fec0010619",
+    "uuid": "f3d4f915-7f53-837c-b4c4-a641b3f2a154",
     "words": [
       "use",
       "when",

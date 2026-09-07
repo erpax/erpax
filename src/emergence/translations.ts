@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "emergence",
-    "uuid": "21e6dab1-0e2c-8ade-915c-fc869feaaf05",
+    "uuid": "759811e9-c503-8ee5-b6ad-e61808ddbbfb",
     "words": [
       "emergence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a two-fold pair completes to a third in the forge — expand ⊕ collide revealing their synthesis once both poles are present; the trinity emerging, computed from the poles not authored.",
-    "uuid": "70881cf8-3574-8213-ac9c-d3050c16fe29",
+    "uuid": "43379c13-6c6d-839e-9ccf-a54d6933d898",
     "words": [
       "use",
       "when",

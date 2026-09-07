@@ -2,11 +2,11 @@
 name: motel
 description: Use when reasoning about motel — A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.
 atomPath: "vocabulary/motel"
-coordinate: "vocabulary/motel · 5/round · d5d4b277"
-contentUuid: "ae43e5cb-14f9-51b5-9ade-14da1737daf3"
-diamondUuid: "077565e6-e7a1-8364-a552-59e84096f06f"
-uuid: "d5d4b277-dc54-87d2-aca0-ccdbe2e85f80"
-horo: 5
+coordinate: "vocabulary/motel · 2/share · 47e41e6c"
+contentUuid: "63216776-1b55-50eb-96cb-41013ec98138"
+diamondUuid: "4bf23566-1bfa-8038-808d-6bf4f13a62d9"
+uuid: "47e41e6c-5ec2-85cc-85fb-ed17dc1023d6"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b573b38e-00ef-8253-807f-e0b20fca8b17"
+  computationUuid: "9d430194-88fd-8f16-a604-e478cb5136d8"
   stages:
     - stage: path
       stageUuid: "5231b950-2240-83b0-a81d-6546f28e34c8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ae748915-a8dc-8a0d-ab06-e0783c5323eb"
     - stage: horo
-      stageUuid: "edac4ec7-1e54-8d0a-afa4-bc34d1c5b738"
+      stageUuid: "6fb15625-fbf8-8ff1-8d05-504191abbcdd"
     - stage: seal
       stageUuid: "6d887406-9d8a-8220-aceb-e311c4b5bfa4"
     - stage: uuid
-      stageUuid: "78cbdc2b-ae71-842d-8641-c17f58ac52cf"
+      stageUuid: "3a2c8b50-4c42-82db-a4c3-ce015dfb6902"
 version: 2
 ---
 # motel

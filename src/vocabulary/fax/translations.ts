@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fax",
-    "uuid": "c0d8f524-ec47-8dd4-adda-1df62010a16b",
+    "uuid": "2c6c58fe-cfd8-8c80-94a5-15011f1b0808",
     "words": [
       "fax"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fax as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "74c90d31-ce6d-8a0c-9aab-030cfc461e69",
+    "uuid": "4e12853f-4b4b-85ee-99d8-6f0d115247df",
     "words": [
       "use",
       "when",

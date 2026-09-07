@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "packs",
-    "uuid": "16ec5df1-0c83-89b8-bf74-e863f05fda1e",
+    "uuid": "53a769a3-3629-8e06-8685-769f4e33cf70",
     "words": [
       "packs"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling a shipping carton — the dispatch unit packed from a production lot, with mass balance (gross = net + tare), rollup counts, and a derived horo lifecycle. Evolved from 118,716 rows of etrima packs.",
-    "uuid": "9fb397e6-0708-8752-8de0-3b37443a2721",
+    "uuid": "08b86369-8bd8-8419-b58f-1d2400f8f5fe",
     "words": [
       "use",
       "when",

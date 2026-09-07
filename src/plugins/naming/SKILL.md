@@ -2,10 +2,10 @@
 name: naming
 description: "Use when reasoning about naming — names every internal table and column by content-addressing the path it sits at."
 atomPath: "plugins/naming"
-coordinate: "plugins/naming · 7/descent · 0afd56f6"
-contentUuid: "f7f06119-4a31-52de-bae7-9169713d4b27"
-diamondUuid: "31057d55-d742-8801-824c-674ef300c5e4"
-uuid: "0afd56f6-5cfd-8c1c-ac1b-ab57de83f5cd"
+coordinate: "plugins/naming · 7/descent · d823deb6"
+contentUuid: "a4cd1a40-698e-5359-8c0c-47fa92060069"
+diamondUuid: "324ffba9-fec6-82b1-8f6f-e1311d0ad3c2"
+uuid: "d823deb6-92cc-8381-b939-055b18741d9e"
 horo: 7
 typography:
   partition: plugins
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 name-based UUID (the digest source)"
 bindings: []
 signatures:
-  computationUuid: "3f134612-3a34-80b1-8f94-a74e3c319de6"
+  computationUuid: "f8ac8b13-48e4-8cbc-8f85-5a707068f21d"
   stages:
     - stage: path
       stageUuid: "7c9851c8-13c1-8960-b820-0e82dc2accdb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d410f48a-7874-8f3e-b911-94b7d3123086"
     - stage: horo
-      stageUuid: "1cb5826b-af5f-8739-bcb5-03f1207745e7"
+      stageUuid: "bbf2b5b2-7271-8132-acf6-def10cfd7a16"
     - stage: seal
       stageUuid: "348b6822-58a1-860c-af2a-3c412bea5894"
     - stage: uuid
-      stageUuid: "b713cea7-9798-85b1-9bb8-468e1dfa5184"
+      stageUuid: "979d0762-d370-8a1d-b743-88ed683c6dd9"
 version: 2
 ---
 # plugins/naming — a database identifier is derived from its path, never invented

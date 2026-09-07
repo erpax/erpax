@@ -2,18 +2,18 @@
 name: engine
 description: "Use when querying the corpus — the search engine that resolves a query to matching atoms, ranked by closeness; a pure read over the live matrix node set."
 atomPath: "search/engine"
-coordinate: "search/engine · 7/descent · 23770295"
-contentUuid: "5923320a-d586-5f1a-82a8-0eacb68d09b8"
-diamondUuid: "1a98ec83-a025-8e1c-8558-14f3e1ba31d0"
-uuid: "23770295-f076-8b60-ab6e-268f252138de"
-horo: 7
+coordinate: "search/engine · 1/base · ed213699"
+contentUuid: "d52fcddb-94aa-5c14-8e71-8fe020fa2b6b"
+diamondUuid: "cf80c2da-d8a9-80ae-9ecf-ac4c49a2b442"
+uuid: "ed213699-c6db-8f37-a28c-13889479ddd9"
+horo: 1
 typography:
   partition: search
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "91e60c5c-b1e8-85bd-b3dc-026075d859f0"
+  computationUuid: "97568aa7-47b6-8a99-9c30-83e39477fa51"
   stages:
     - stage: path
       stageUuid: "2de9ae2c-9dd8-8d0f-a8ed-ad73b6e37434"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d94683f9-3c95-8be4-aa39-cddb6b46504c"
     - stage: horo
-      stageUuid: "c40c1154-5e66-85e1-a276-ae99c0c90dca"
+      stageUuid: "fdbedadb-ab94-8efa-a701-86eb4fdf2783"
     - stage: seal
       stageUuid: "d8aab1ae-d677-8012-9b4e-d5d9fb607eb5"
     - stage: uuid
-      stageUuid: "daaf4cab-8164-82d5-819b-a58b38fa0caf"
+      stageUuid: "e56b994a-6544-84d2-b1a5-914af68644a8"
 version: 2
 ---
 # search/engine — query the corpus, ranked

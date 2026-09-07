@@ -2,11 +2,11 @@
 name: requests
 description: "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1."
 atomPath: "maintenance/requests"
-coordinate: "maintenance/requests · 4/weave · eb8dd627"
-contentUuid: "74e2f62b-8401-576e-8c38-446ad7fcb947"
-diamondUuid: "c5448a58-02a0-8a26-8c6a-7e51076b0017"
-uuid: "eb8dd627-e520-8e9c-8846-0bb1b60b026d"
-horo: 4
+coordinate: "maintenance/requests · 1/base · e673010b"
+contentUuid: "60b18914-28ee-5905-bbfc-8c64ee589900"
+diamondUuid: "88278c79-f247-8497-89cb-c3cee2310e05"
+uuid: "e673010b-5bf7-8c4b-95f1-2bc1921a6a0a"
+horo: 1
 typography:
   partition: maintenance
   bondDegree: 37
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "9b307d9d-20e9-81a0-9158-79e7a2e347c6"
+  computationUuid: "700637ce-2391-817b-b709-573eae9339ab"
   stages:
     - stage: path
       stageUuid: "3e2a2352-6111-8acd-bc92-da0ce002cc25"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "36f13c9d-1e61-814b-b286-3eb804f6464d"
     - stage: horo
-      stageUuid: "9a6fd172-4497-8002-b627-91c2c7693bf8"
+      stageUuid: "8c8affb2-b0fd-8419-8672-87ecf0b32575"
     - stage: seal
       stageUuid: "fb7d93a3-cfc7-8590-93d5-ad300983803c"
     - stage: uuid
-      stageUuid: "c2c8a263-66b9-8ba7-bc52-f7bb6df99c4b"
+      stageUuid: "361566cf-99c8-8f4f-bdc9-0f62842b22b5"
 version: 2
 ---
 # maintenance-requests

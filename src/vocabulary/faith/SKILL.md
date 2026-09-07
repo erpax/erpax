@@ -2,18 +2,18 @@
 name: faith
 description: "Use when reasoning about the dual of proof in erpax — trust extended WITHOUT the trustless recompute; accepting a source as canonical before verifying its content-uuid. The root of trust-without-verify; dual of proof."
 atomPath: "vocabulary/faith"
-coordinate: "vocabulary/faith · 1/base · 1476aeb0"
-contentUuid: "ca19c232-d6a5-5b78-9570-7e128e4a264b"
-diamondUuid: "ccf12c3c-678f-87dc-b2ef-f6f58c72aa48"
-uuid: "1476aeb0-99da-8c99-a25d-f65071fa9fbb"
-horo: 1
+coordinate: "vocabulary/faith · 4/weave · 327db558"
+contentUuid: "5a78dc27-5f30-5ede-80c0-64aa72a80b22"
+diamondUuid: "921612ed-b258-80af-967e-e2cfbb60e615"
+uuid: "327db558-45b8-8faf-94c5-0c7f25b0cad4"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 47
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5513c1bf-ff59-8fba-b8ea-805adb2c61d5"
+  computationUuid: "93a4bd86-4802-8190-95b9-5575544c7a4f"
   stages:
     - stage: path
       stageUuid: "c257e12a-66be-81d3-b65d-8aa53ea8a961"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0b5b11f4-78be-8b6e-8d0f-0ea8e9fb2bd0"
     - stage: horo
-      stageUuid: "d5fe7af7-33b2-8977-9e75-2923d9ba8983"
+      stageUuid: "744ec0e1-4fc4-85d9-8f67-a6eb1f22a8d9"
     - stage: seal
       stageUuid: "5983806d-a6b9-87eb-bcec-9dab3f5f2bee"
     - stage: uuid
-      stageUuid: "bec207e5-8a25-896c-9d79-435e3db1dc1f"
+      stageUuid: "f59e7a93-3718-8e4a-8486-925f22e8af85"
 version: 2
 ---
 # faith — trust without verify (the dual of proof)

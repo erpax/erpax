@@ -2,18 +2,18 @@
 name: permaculture
 description: "Use when designing a whole farm as a self-sustaining ecosystem — permaculture: Mollison & Holmgren's design system (the three ethics earth-care/people-care/fair-share + 12 principles) and agroecology, arranging crops, animals, water, and structures into closed-loop guilds and zones so the system's outputs feed its own inputs. The design philosophy above the individual operations."
 atomPath: "vocabulary/permaculture"
-coordinate: "vocabulary/permaculture · 2/share · 0d4eb0ff"
-contentUuid: "bdc951e8-cd83-5517-a732-4b4bdd7cb057"
-diamondUuid: "2f901a24-0cbf-854e-a227-9e940537aec3"
-uuid: "0d4eb0ff-dc5e-8ce7-87f7-093a7d0ea25a"
-horo: 2
+coordinate: "vocabulary/permaculture · 8/crest · bcc7c534"
+contentUuid: "d44f4ae0-a23c-5f0c-984b-0c1d5cf492be"
+diamondUuid: "fd9faece-2f80-8e6f-864e-918f566c2ae9"
+uuid: "bcc7c534-db12-8975-987c-e14b844c4f2f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 47
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1f9a7c0d-4270-8789-89e9-e756b20fb1cd"
+  computationUuid: "3a426520-505a-8774-829b-7adcdac2c0e6"
   stages:
     - stage: path
       stageUuid: "bf59f2ca-7eb0-8928-98bc-995fe81d5335"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "349883ba-c225-892f-ad7f-9f01038144bd"
     - stage: horo
-      stageUuid: "fa6049ba-a7ed-8ce9-ae74-44d635f9b5cf"
+      stageUuid: "8f926fd4-668c-855c-9000-b879e6b68869"
     - stage: seal
       stageUuid: "9f03ea79-e759-83f1-85aa-18d4085a893b"
     - stage: uuid
-      stageUuid: "78135730-e11d-8c1e-ab79-620c437d0f40"
+      stageUuid: "b0c4b0b5-130d-8951-b6c7-125dfaadb8df"
 version: 2
 ---
 # permaculture — designing the farm as a self-sustaining ecosystem

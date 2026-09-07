@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "triggered",
-    "uuid": "635a05ca-8178-82fe-a233-9143a5071d4d",
+    "uuid": "00eca16a-ff8b-84e3-8f01-adc14b7377a9",
     "words": [
       "triggered"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \\\"Use when\\\", measured live as coverage = triggered / total over the real tree.",
-    "uuid": "e064e9b4-86da-89f6-ae57-f4adf9b6382a",
+    "uuid": "1a5bc0be-c970-8ace-a50c-2644e5439119",
     "words": [
       "use",
       "when",

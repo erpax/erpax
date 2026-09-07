@@ -2,18 +2,18 @@
 name: education
 description: "Use when managing educational institutions — student enrollment, curriculum delivery, academic assessment, teaching schedules, institutional capacity, or education program outcomes in government/nonprofit schools (COFOG 09)."
 atomPath: education
-coordinate: "education · 1/base · 0a70a5c8"
-contentUuid: "a59d490d-577a-56ea-a53f-2fdce625cbbd"
-diamondUuid: "fec2b97a-246a-8b1c-a126-583262c92dcc"
-uuid: "0a70a5c8-881c-8026-80ad-19a8fba31fbc"
-horo: 1
+coordinate: "education · 5/round · f8c45cce"
+contentUuid: "6f41a408-9e27-5752-b1b6-646833ff555a"
+diamondUuid: "f15934d8-2f70-8576-acdc-ea724f1a94f1"
+uuid: "f8c45cce-833b-8351-bf32-6ee520f43c03"
+horo: 5
 typography:
   partition: education
   bondDegree: 92
 standards: []
 bindings: []
 signatures:
-  computationUuid: "21f22e83-d51f-8ecf-944b-2929b2f6d323"
+  computationUuid: "9f46e331-e7ba-826b-bd70-886e97a02845"
   stages:
     - stage: path
       stageUuid: "d1e9c3fd-f4ef-87b8-aedf-0c42b783dcdf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "37288177-37bb-853a-a4d3-b586250c3cd7"
     - stage: horo
-      stageUuid: "e72c8aa5-d897-85e9-9bfe-fd4a2a9c263d"
+      stageUuid: "ca879daf-7979-8ed6-a60f-064f79b3ba19"
     - stage: seal
       stageUuid: "67642445-2300-847c-9b04-8881ba880938"
     - stage: uuid
-      stageUuid: "1517a527-43d7-812f-8b76-d5beeeea432d"
+      stageUuid: "c4afdfd7-6e41-80d7-8c1b-311e27f8d426"
 version: 2
 ---
 # education — the learning-delivery sector (COFOG 09)

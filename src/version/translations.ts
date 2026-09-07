@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "version",
-    "uuid": "4aba1ddb-4df0-8249-a74b-158e4ab5dc0e",
+    "uuid": "fd992491-5709-80fb-8f83-81276a9f1c74",
     "words": [
       "version"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains.",
-    "uuid": "5d142871-9d08-846d-8899-835b2fddd4e4",
+    "uuid": "73ccc101-475b-8aa0-b106-01f7ec29dae4",
     "words": [
       "use",
       "when",

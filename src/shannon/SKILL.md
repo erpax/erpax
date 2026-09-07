@@ -2,18 +2,18 @@
 name: shannon
 description: "Use when reasoning about information entropy — Shannon's H = −Σ pᵢ·log₂(pᵢ) bits, the expected surprisal of a distribution: the average bits per symbol and the irreducible limit of lossless compression. Zero when one outcome is certain, maximal (log₂ n) when all n outcomes are equally likely. It is the information twin of thermodynamic entropy (same −Σp ln p, different constant) — the bits a message carries and the bits a tamper must reproduce."
 atomPath: shannon
-coordinate: "shannon · 5/round · 7f6bde3e"
-contentUuid: "0db2d759-3a7a-5cf4-9946-67b8ebbd9ed6"
-diamondUuid: "d1694e0d-446b-83ad-b994-0abc1ffa813c"
-uuid: "7f6bde3e-8dc4-887f-9be9-5fd303cdfd7e"
-horo: 5
+coordinate: "shannon · 1/base · e17fb7cf"
+contentUuid: "d06ff548-9a93-53c6-99ab-221f106e2e71"
+diamondUuid: "ac7559b2-1d82-8f13-bfcf-670f9d43d0af"
+uuid: "e17fb7cf-facc-8c6c-bfa5-e080d0483a66"
+horo: 1
 typography:
   partition: shannon
   bondDegree: 26
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2094f48f-8b68-8267-99ff-6d5c236af21d"
+  computationUuid: "bc1d72d7-8cfc-8246-8f16-aee96131b1e7"
   stages:
     - stage: path
       stageUuid: "8d3af83e-d39c-86cc-8dd2-d3194b8877d3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b9c24202-d803-8e0c-a5b5-2b3993e1606f"
     - stage: horo
-      stageUuid: "74905cef-8375-8a47-8871-e4f4d9ec492d"
+      stageUuid: "94212db5-e049-86cc-9975-8f7cc1cb5dfc"
     - stage: seal
       stageUuid: "22af84cd-08a3-8f75-bfa1-e70a361dc23e"
     - stage: uuid
-      stageUuid: "80636ead-4231-8d0e-a54f-b24036df4354"
+      stageUuid: "6dbc0c48-f8b8-85b0-8bb2-dcbca81447aa"
 version: 2
 ---
 # shannon — information entropy (bits per symbol)

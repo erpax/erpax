@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sponsor",
-    "uuid": "6c351b61-e6a4-84ab-973b-52e4754563bd",
+    "uuid": "d5d6d793-254e-89d7-878d-7d5ea1570460",
     "words": [
       "sponsor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sponsor — A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
-    "uuid": "d71144ef-4dcf-8115-8f08-2515c62156ad",
+    "uuid": "c268476b-9755-8370-b1b9-88af2e413913",
     "words": [
       "use",
       "when",

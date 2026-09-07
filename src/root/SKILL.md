@@ -2,18 +2,18 @@
 name: root
 description: "Use when reasoning about the root center — the 1st chakra (Muladhara), index 0 of the seven (root→crown), a standalone projection of the chakra atom whose uuid is computed from the position math and whose colour is rendered from that uuid (not the traditional rainbow red)."
 atomPath: root
-coordinate: "root · 2/share · 5dc81516"
-contentUuid: "3865e89d-8c2a-5378-ab93-60c16fedd448"
-diamondUuid: "d3f3d1ca-5b0d-8edd-a636-5e5ef83c0483"
-uuid: "5dc81516-f10f-8567-844b-2a5443d0c164"
-horo: 2
+coordinate: "root · 4/weave · 79697142"
+contentUuid: "487d4e8a-fdb9-5905-99d0-66754a01c5e5"
+diamondUuid: "d55f68f9-f917-8a81-ba74-391dba7bc390"
+uuid: "79697142-b700-86a2-aff4-0dd9a5f7fd6c"
+horo: 4
 typography:
   partition: root
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ca8dcd06-812d-8683-8068-3727bc76c77c"
+  computationUuid: "9309ab37-5e59-846b-a818-9209d18e3f90"
   stages:
     - stage: path
       stageUuid: "9bab4c78-7e3e-8502-9d84-248517972d12"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c6024b62-fb67-877a-b848-c729e85a2554"
     - stage: horo
-      stageUuid: "5e4701ca-ba28-8178-ab72-859890fcc9ff"
+      stageUuid: "37942666-0412-8fdd-8122-d93dd5091aca"
     - stage: seal
       stageUuid: "fa0e7a7f-3282-86d8-9613-569a22fc7d3c"
     - stage: uuid
-      stageUuid: "71ec2733-f438-88b5-9dfe-d61501e8404a"
+      stageUuid: "5446461a-eb89-8659-b566-55c9c37ec257"
 version: 2
 ---
 # root — the root center (Muladhara)

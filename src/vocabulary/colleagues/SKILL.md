@@ -2,10 +2,10 @@
 name: colleagues
 description: "Use when reasoning about colleagues — The person's colleagues — see colleague (the singular). A dimension of one relation: colleagues is the collection, colleague the unit; the text lives once, in colleague."
 atomPath: "vocabulary/colleagues"
-coordinate: "vocabulary/colleagues · 2/share · b70bcd1b"
-contentUuid: "a79bf53c-9feb-5eab-80b0-804880158e46"
-diamondUuid: "ba728229-8324-8429-80a7-9a163692b2ed"
-uuid: "b70bcd1b-a28a-874d-8fa9-35d449457014"
+coordinate: "vocabulary/colleagues · 2/share · 699a996c"
+contentUuid: "3f70b0c9-597b-5c49-940f-695fa70b827f"
+diamondUuid: "4915c4ea-6164-87fe-ad3f-877c683aafca"
+uuid: "699a996c-05d4-8c2c-933f-5486d35ced4a"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "948819ea-26df-8021-8968-ed40f51e7c5c"
+  computationUuid: "c1b830dc-ecc7-8d1a-afb3-08c3804ddde5"
   stages:
     - stage: path
       stageUuid: "0f567557-37b8-8109-9c54-c04cfc855ec2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "de479746-91b2-8503-93f5-29c1d680863a"
     - stage: horo
-      stageUuid: "49cfcd2d-b0ce-87d8-9f00-7f476e825a7a"
+      stageUuid: "27f36980-c4ae-83e0-b680-3a29758cd194"
     - stage: seal
       stageUuid: "8bae89ec-f51f-8fbf-be07-cd75ca799dd0"
     - stage: uuid
-      stageUuid: "ff672885-af4e-889f-b72d-6b6137b6bf7b"
+      stageUuid: "918a9d42-bc3a-88e4-b23c-e282fb95b47e"
 version: 2
 ---
 # colleagues

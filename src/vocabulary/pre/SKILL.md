@@ -2,10 +2,10 @@
 name: pre
 description: "Use when reasoning about pre as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pre"
-coordinate: "vocabulary/pre · 8/crest · 030e10ed"
-contentUuid: "a1808db8-20e3-549a-a218-4bb96c99d7ac"
-diamondUuid: "72b8b382-22b5-8e5c-bb09-a3723de1860c"
-uuid: "030e10ed-9e9b-856b-bf1b-ee1efe752e2f"
+coordinate: "vocabulary/pre · 8/crest · 60692a56"
+contentUuid: "c26d788c-5919-5c3f-8766-c3ce6b2b82ee"
+diamondUuid: "84826bd1-8429-879c-80bb-de369eaaa1d4"
+uuid: "60692a56-491f-8c76-afd2-3f5f4fd8262c"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ba6e6a3b-1039-8408-8ff1-159a8711639a"
+  computationUuid: "34ad8040-4ac0-814a-98e0-f316697d69fd"
   stages:
     - stage: path
       stageUuid: "beec8f9c-dcd3-8a12-a8f8-84c1012c5b6d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8bd69ee1-a4e2-896a-93c1-1f3b59fe2eed"
     - stage: horo
-      stageUuid: "48af9cb2-3cf8-8b5f-972e-a3e8b2e9e4c8"
+      stageUuid: "9bd5dc2b-d0b3-87f4-b23a-521475f9c39c"
     - stage: seal
       stageUuid: "6ca82dc2-7641-8b70-bdfa-b6748a67d370"
     - stage: uuid
-      stageUuid: "6f9980af-6f05-8528-9b20-a06ebf63eac8"
+      stageUuid: "3c6f4f27-bf60-8cf0-87c0-fb853587ec77"
 version: 2
 ---
 # pre

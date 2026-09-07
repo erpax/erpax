@@ -2,11 +2,11 @@
 name: baked
 description: "Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost."
 atomPath: "convention/baked"
-coordinate: "convention/baked · 4/weave · 9e4fba2c"
-contentUuid: "ebfcfb3e-5f05-5d25-9173-ef98347ed849"
-diamondUuid: "43a1e001-5698-8560-a95a-62f69563dfca"
-uuid: "9e4fba2c-334d-88f9-8591-4ff7e2dd6e7b"
-horo: 4
+coordinate: "convention/baked · 2/share · 739e234b"
+contentUuid: "01a78cf1-c3f1-503d-abfa-19b843426e7c"
+diamondUuid: "e389fbe5-5728-874e-8572-c8cc240ada5c"
+uuid: "739e234b-5327-86d7-8565-c117d434bd14"
+horo: 2
 typography:
   partition: convention
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - one source of truth — a committed derivable is duplicated state that can drift
 bindings: []
 signatures:
-  computationUuid: "3f52c8a9-9954-813b-8883-6118f7206746"
+  computationUuid: "bf44fcc4-cdd8-8eaf-9549-1270268119e7"
   stages:
     - stage: path
       stageUuid: "8db66e94-b952-8139-813f-5fbe931215b7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6b3b890c-f80b-806e-a646-3ef26c689261"
     - stage: horo
-      stageUuid: "2693706c-f718-84b9-bd70-276dc9277c0a"
+      stageUuid: "de556867-2962-8c66-8bfb-d6db7a90b585"
     - stage: seal
       stageUuid: "dad2f737-b056-8f49-9b06-f69749c11353"
     - stage: uuid
-      stageUuid: "a12aaf41-e729-8d36-ba39-7568630d0527"
+      stageUuid: "df6d4b74-042d-8e8f-9c89-57f417bde8eb"
 version: 2
 ---
 # convention/baked — derivable artifacts are regenerated at build, never committed

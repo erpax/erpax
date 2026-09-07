@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bottleneck",
-    "uuid": "ae74f71c-bcab-8954-9904-cf76d242d4e1",
+    "uuid": "63aaa4dc-d2b9-81b1-adfc-5e51ad578924",
     "words": [
       "bottleneck"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when identifying or tracking the limiting factor in a flow — the slowest operation in a sequence, the resource with lowest capacity. The theory-of-constraints node.",
-    "uuid": "31de0772-f847-86ac-8f75-1d9fffd9c94b",
+    "uuid": "37f91aca-f651-8f72-9306-78fd2c55ce93",
     "words": [
       "use",
       "when",

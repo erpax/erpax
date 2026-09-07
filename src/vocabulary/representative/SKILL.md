@@ -2,11 +2,11 @@
 name: representative
 description: "Use when reasoning about representative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/representative"
-coordinate: "vocabulary/representative · 4/weave · 0c528791"
-contentUuid: "4de440a1-9768-5c2f-a3b7-f97cce718639"
-diamondUuid: "ea7fd58b-4393-86c5-94bd-d32ed447dd54"
-uuid: "0c528791-8c82-875f-9b7c-8574c9716f29"
-horo: 4
+coordinate: "vocabulary/representative · 2/share · 0c529b44"
+contentUuid: "303e4806-313d-5383-9ba6-dff02bb1d610"
+diamondUuid: "8cb4c303-f4ba-8830-95f7-3515fc09e96b"
+uuid: "0c529b44-81c9-843f-904a-9c8168ea75af"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ea345e51-d0ab-8ed0-911f-ea6bbdf14682"
+  computationUuid: "76cef632-405c-8946-8232-4ddacedbb7e0"
   stages:
     - stage: path
       stageUuid: "265c41c9-a1cb-8239-9661-1f6b746fe6bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e0f74448-1735-86d1-b5b7-a981a9493715"
     - stage: horo
-      stageUuid: "de3bf7d6-2fcc-8660-81eb-fa54f88aa348"
+      stageUuid: "99b95dfa-b042-88cb-9728-98daa07ff40d"
     - stage: seal
       stageUuid: "01256ba3-7839-8368-9463-c1ea7f312fa7"
     - stage: uuid
-      stageUuid: "811589ee-c61a-84c7-a5dd-a936991ec8d5"
+      stageUuid: "fd72ae8d-2581-8856-b0be-0efc14560d1d"
 version: 2
 ---
 # representative

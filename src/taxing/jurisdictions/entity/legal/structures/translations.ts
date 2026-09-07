@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "structures",
-    "uuid": "7e8bec9d-ef7d-8119-b195-751f4eb2126e",
+    "uuid": "551b92e2-3e15-8c5d-bf3e-173d49f92f10",
     "words": [
       "structures"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings.",
-    "uuid": "e28ad4c5-226a-8eb3-87e0-0f86a9a062c1",
+    "uuid": "965921aa-6f3c-8269-af03-9dc50309f3f9",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "postings",
-    "uuid": "71b3c34e-c862-86b7-9096-95a7ff56e688",
+    "uuid": "e06bd3e5-a8fa-80b8-ab22-ebbf97da53d5",
     "words": [
       "postings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.",
-    "uuid": "554ed552-7ee1-8068-ad48-2a5a690c4f8c",
+    "uuid": "59eb24d3-7af4-8105-a003-c2f9924574b5",
     "words": [
       "use",
       "when",

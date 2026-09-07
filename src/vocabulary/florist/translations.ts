@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "florist",
-    "uuid": "dff50785-72d8-8930-b7de-f2dca5afcb7a",
+    "uuid": "f0f422db-2dbb-85e6-a2ff-f18f001bb1e0",
     "words": [
       "florist"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about florist — A florist.",
-    "uuid": "3c4589ee-0d9f-8557-b08e-a1721a2aafa3",
+    "uuid": "c46580f9-cb83-8176-b14c-9f6cb752d60f",
     "words": [
       "use",
       "when",

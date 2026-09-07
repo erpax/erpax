@@ -2,11 +2,11 @@
 name: nutrition
 description: Use when reasoning about nutrition — Nutrition information about the recipe or menu item.
 atomPath: "vocabulary/nutrition"
-coordinate: "vocabulary/nutrition · 4/weave · 0464e909"
-contentUuid: "f3f2f43f-c837-5c53-b419-babd5c29bfd5"
-diamondUuid: "cb38bb5e-3666-8b9a-b2f3-3d1d2a620d14"
-uuid: "0464e909-e222-8925-933e-dabc99b2a5f7"
-horo: 4
+coordinate: "vocabulary/nutrition · 1/base · 1c4abab5"
+contentUuid: "33f34702-7c48-54b8-a07d-a90cff35c7b7"
+diamondUuid: "e3ef000b-32a6-8324-87c4-b07a393d497c"
+uuid: "1c4abab5-f20a-8f92-aa27-734a178f6181"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "eb9fe9a1-51d2-8474-8c38-ea29a10d30f5"
+  computationUuid: "78952e5d-30f7-85d4-9ef2-7034a95ab254"
   stages:
     - stage: path
       stageUuid: "98896315-cc0b-8454-9a96-6cce8f082c90"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eb60a205-6616-811f-81a5-090938d09737"
     - stage: horo
-      stageUuid: "c7d965b5-ea96-84e3-9377-57dbd1b8cab6"
+      stageUuid: "e8d08160-23a5-8750-9ce5-cd978a6f61b7"
     - stage: seal
       stageUuid: "1d0905da-08b5-8c5b-ae1b-9a127843d8af"
     - stage: uuid
-      stageUuid: "4265fd69-b8ab-8023-a33b-3643732ba66b"
+      stageUuid: "c814aa87-e3d4-8a9e-b1a5-48f0ed020482"
 version: 2
 ---
 # nutrition

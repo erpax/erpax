@@ -2,10 +2,10 @@
 name: advertiser
 description: "Use when reasoning about advertiser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/advertiser"
-coordinate: "vocabulary/advertiser · 5/round · 9e4a931e"
-contentUuid: "67d764ed-4e10-5fc6-8fb3-46ff8215cfd2"
-diamondUuid: "389b1a3c-5d74-8521-b08d-c8738aa55269"
-uuid: "9e4a931e-c41d-8442-8110-67c9b3e0b833"
+coordinate: "vocabulary/advertiser · 5/round · cfd60837"
+contentUuid: "5a9303b1-cf7c-512d-88f8-125f05893dbb"
+diamondUuid: "5fd0c8ca-d228-871c-ad1f-fd2c00674895"
+uuid: "cfd60837-1640-8a08-bf8c-93f82c370f99"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "281d1844-aaa3-8795-8f5a-703aa7ab7fe1"
+  computationUuid: "72855cfa-00df-8b4e-ab9d-0d38e04a2d6a"
   stages:
     - stage: path
       stageUuid: "af10482b-45b4-8f71-9312-a1ff86b59f27"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b61666e5-241b-863a-98ed-01e0d87589c3"
     - stage: horo
-      stageUuid: "5a055cbe-fcb5-87e2-86a8-bbb00efcf69d"
+      stageUuid: "5ffe2c99-4e2b-8169-97c8-2ec4bfc3fa33"
     - stage: seal
       stageUuid: "2ad703dc-e5ae-8bec-9e09-6555eb18af71"
     - stage: uuid
-      stageUuid: "0efd21a9-0f9e-8f19-8004-96ddd873b2dc"
+      stageUuid: "1cd84e54-4518-846b-a908-f4a5e8c8ac72"
 version: 2
 ---
 # advertiser

@@ -2,11 +2,11 @@
 name: arena
 description: "Use when reasoning about arena as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/arena"
-coordinate: "vocabulary/arena · 1/base · c86bd535"
-contentUuid: "40868a81-3554-5152-8086-4ba502c03679"
-diamondUuid: "1be7c1c8-d65a-834e-b19e-480ffab73914"
-uuid: "c86bd535-2d8e-8838-90d5-1bea148845bf"
-horo: 1
+coordinate: "vocabulary/arena · 8/crest · ada4e4ad"
+contentUuid: "8dd2e89d-bd92-5ecc-82df-3ad1ad67f0e7"
+diamondUuid: "4bebf249-b794-862a-b097-bee27faff6cd"
+uuid: "ada4e4ad-3a6e-8f25-ac52-69335d72cff7"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7de79a20-1c39-8dba-ba7d-8ad5dbaff3cf"
+  computationUuid: "892c9b7e-8e12-8ff0-9206-a276d764e70b"
   stages:
     - stage: path
       stageUuid: "3f7ca00a-6fd6-81cb-bffd-79c51f23222e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6699a17d-cbc3-854c-a0b0-b73d3cf0ec75"
     - stage: horo
-      stageUuid: "dc1bd4ab-fad6-8b92-89ec-493b0231b93b"
+      stageUuid: "7713ee61-8d81-82b4-b855-08dfc473ad9c"
     - stage: seal
       stageUuid: "c96fa8e9-8512-841a-917c-d9f28697dcc1"
     - stage: uuid
-      stageUuid: "6ef83649-a68b-8b60-802e-8f5a8d0ce415"
+      stageUuid: "d2e5727f-b3d6-8961-8930-f310ebbddf72"
 version: 2
 ---
 # arena

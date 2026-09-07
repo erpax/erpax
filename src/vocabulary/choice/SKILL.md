@@ -2,18 +2,18 @@
 name: choice
 description: "Use when a buyer selects items up to a value or quantity cap instead of receiving a fixed bundle — the market-style / customizable CSA share (members pick at a table or online to a limit, swap unwanted items), and the generic pick-mix / deli-counter / configure-to-order pattern. The selection model: the inverse of a fixed bundle, trading packing simplicity for member satisfaction."
 atomPath: "vocabulary/choice"
-coordinate: "vocabulary/choice · 5/round · 06f04ddb"
-contentUuid: "c30a3696-f68e-5908-bd1b-69d823b5f874"
-diamondUuid: "7cd7ae8b-ef58-8c90-b4d6-6a5d042edbf3"
-uuid: "06f04ddb-53ed-84e8-8f7c-2eb89b9a9edd"
-horo: 5
+coordinate: "vocabulary/choice · 4/weave · 14a9041b"
+contentUuid: "5953157d-2c23-5e21-ae23-1f4ebed8cb13"
+diamondUuid: "3cc0755a-c39a-8d66-a308-ea844d365b69"
+uuid: "14a9041b-311d-8054-8f8a-43ed7714007c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "43fe2553-a014-8319-b3d8-9509aaa6e210"
+  computationUuid: "c36f4a78-b1bf-89d5-ad30-020fe59118e6"
   stages:
     - stage: path
       stageUuid: "e13f6576-fe5b-8a5b-8664-f7fdf0daab29"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c50c1724-9641-8bc8-a603-995179057c35"
     - stage: horo
-      stageUuid: "ab039895-34eb-8e5f-b4c9-bec916fb2ff3"
+      stageUuid: "69730f19-8325-8a0f-890c-897f985f4ab6"
     - stage: seal
       stageUuid: "c16fb326-e650-8c97-9ed1-aa800341dc74"
     - stage: uuid
-      stageUuid: "79ac1455-6c86-82cb-9a67-1bbeaf614f3a"
+      stageUuid: "27bab0dd-f067-8677-bad4-3d1939fed024"
 version: 2
 ---
 # choice — selecting items up to a cap (the customizable order)

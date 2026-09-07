@@ -2,18 +2,18 @@
 name: realtime
 description: "Use when streaming the projection state as it changes — collapse, sealed update and wave emit per dimension axis, with a snapshot fingerprint so a repeated state is recognisable rather than re-sent. The realtime view of quantum/dimension, nested rather than hyphenated. Run: tsx src/quantum/dimension/realtime/index.ts"
 atomPath: "quantum/dimension/realtime"
-coordinate: "quantum/dimension/realtime · 1/base · 8f9399f4"
-contentUuid: "4e29a775-60a0-5583-8721-316562ef54a9"
-diamondUuid: "45a493bf-54ff-823e-b560-cd0d831e388a"
-uuid: "8f9399f4-07ef-8b46-873a-f2d723df093b"
-horo: 1
+coordinate: "quantum/dimension/realtime · 5/round · 10e9dcee"
+contentUuid: "e689b6d2-a852-5dbc-bbda-cdfd5e59f075"
+diamondUuid: "bd552488-cc75-8ecb-94c2-3fca83daeffd"
+uuid: "10e9dcee-3a54-8998-a972-a0d9a2473d61"
+horo: 5
 typography:
   partition: quantum
-  bondDegree: 69
+  bondDegree: 71
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3719ba57-26de-8d16-a295-f6b943f0c1c8"
+  computationUuid: "214db70f-86c4-8366-9141-6521b8f95769"
   stages:
     - stage: path
       stageUuid: "a100e8e7-fa5e-871d-b417-2f38b1f42aeb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7b256d96-f926-8918-bb85-cb8cd23fd1cc"
     - stage: horo
-      stageUuid: "c8c29e93-3b87-835e-ac0f-532663b9393c"
+      stageUuid: "073c71a5-6dee-84d9-91e9-fbba6169e409"
     - stage: seal
       stageUuid: "707a8e76-9d63-808e-bbbd-73c0f0981a50"
     - stage: uuid
-      stageUuid: "336640e8-245b-8004-843e-4d4f547985e9"
+      stageUuid: "64554c6f-680b-8116-a946-7f2b9ec64bb7"
 quantum:
   superposition:
     - access
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "3719ba57-26de-8d16-a295-f6b943f0c1c8"
-    contentUuid: "4e29a775-60a0-5583-8721-316562ef54a9"
+    computationUuid: "214db70f-86c4-8366-9141-6521b8f95769"
+    contentUuid: "e689b6d2-a852-5dbc-bbda-cdfd5e59f075"
 version: 2
 ---
 # realtime — the projection, watched
@@ -81,4 +81,4 @@ The `.tsx` consumers were missed by a first scan globbing `*.ts`, and surfaced o
 
 Composes: [[quantum]]/dimension · [[quantum]] · [[law]].
 
-<sub>content-uuid `4e29a775-60a0-5583-8721-316562ef54a9` · account `quantum/dimension/realtime` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e689b6d2-a852-5dbc-bbda-cdfd5e59f075` · account `quantum/dimension/realtime` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

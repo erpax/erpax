@@ -2,11 +2,11 @@
 name: tpg
 description: Use when implementing or referencing OECD Transfer Pricing Guidelines.
 atomPath: "oecd/tpg"
-coordinate: "oecd/tpg · 1/base · 22ffe71f"
-contentUuid: "3a3d3b1d-2910-589e-a251-9985be4e037d"
-diamondUuid: "36e9e1c6-d68a-8977-9982-0e71c4234b7c"
-uuid: "22ffe71f-09c9-8c00-a98d-bf78451810a9"
-horo: 1
+coordinate: "oecd/tpg · 5/round · b9ac5297"
+contentUuid: "4d37a589-9bd5-5ea7-997c-8947a2866a68"
+diamondUuid: "3b407c08-c8de-882c-9777-d31c93fd7564"
+uuid: "b9ac5297-7613-808d-b143-8d6a1d80e38a"
+horo: 5
 typography:
   partition: oecd
   bondDegree: 3
@@ -20,7 +20,7 @@ standards:
   - "OECD-Transfer-Pricing"
 bindings: []
 signatures:
-  computationUuid: "63170e06-0215-8bbe-ac91-7845d17563fe"
+  computationUuid: "a908fc54-0060-88d7-bef1-a10fc2fdebba"
   stages:
     - stage: path
       stageUuid: "ac365bb4-d44e-8f5a-9e8e-4cab428c22a7"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "5fcf0b7e-0f65-86a2-8013-7443eace41c0"
     - stage: horo
-      stageUuid: "a7f46055-5417-8e38-a7de-6a2aea29edbb"
+      stageUuid: "b0e9ef16-1dc5-85a7-9ad8-31e77dc0cdb0"
     - stage: seal
       stageUuid: "55d466bd-48ea-856f-9e92-8108ce05ecd3"
     - stage: uuid
-      stageUuid: "df85e7f2-4992-80d8-8171-b4ee24b3f43f"
+      stageUuid: "51afe5c4-6376-8d6d-986e-47c3117d6f1e"
 version: 2
 ---
 # OECD Transfer Pricing Guidelines

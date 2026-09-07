@@ -2,10 +2,10 @@
 name: camt052
 description: "Use when parsing ISO 20022 camt.052 BankToCustomerAccountReport — intraday account report (Rpt), invert dual of camt.053 statement."
 atomPath: camt052
-coordinate: "camt052 · 8/crest · f1b32394"
-contentUuid: "a3f3fd6c-2ea0-5758-8590-d331ccc3d0b1"
-diamondUuid: "2c3715c2-0fdf-8289-b9f0-3633d1eca511"
-uuid: "f1b32394-4477-8c69-922f-46a3e72fbcce"
+coordinate: "camt052 · 8/crest · 9c14bda6"
+contentUuid: "b0dfe3ee-d1e2-5b1a-967a-65c793b838d4"
+diamondUuid: "dd1dce7a-6c6b-858a-a18c-f80957e77eb9"
+uuid: "9c14bda6-c0ba-89f1-9eea-752c26bd0042"
 horo: 8
 typography:
   partition: camt052
@@ -14,7 +14,7 @@ standards:
   - "ISO-20022"
 bindings: []
 signatures:
-  computationUuid: "0fc630ee-deca-899b-8f26-18ba7f1f39d4"
+  computationUuid: "2dc0018c-ab18-8d51-8322-a8d6bd1edaae"
   stages:
     - stage: path
       stageUuid: "486d3b72-8862-8f48-9ee3-32c350841518"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42b756f5-84dd-8f85-8fe8-55afc5402ab9"
     - stage: horo
-      stageUuid: "7ffc21d5-cb0a-81a8-b412-cbe411988af2"
+      stageUuid: "70fced98-35e6-8ebb-b2b9-ef1971d36291"
     - stage: seal
       stageUuid: "95e3a48c-66cf-8edf-a721-42a9937e0052"
     - stage: uuid
-      stageUuid: "747fc43e-3645-8340-8023-b2ed1b5a4083"
+      stageUuid: "6be6b726-f586-895f-a801-5c19ac373b23"
 version: 2
 ---
 # camt.052 — Bank to Customer Account Report

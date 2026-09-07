@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hyphen",
-    "uuid": "4a779cab-8f4c-8d42-a3b9-930f7709fcad",
+    "uuid": "5d6edd66-f091-8dbc-a0b2-0960901b5837",
     "words": [
       "hyphen"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when driving the hyphenated-filename campaign — computes, as a read-only scalpel manifest, which stems can be renamed because the PATH already says the redundant word, and which need a human because more than one word survives. Specifiers are parsed (declarations, re-exports and dynamic import), ops are anchored on whole lines so an import and a re-export of the same module both cut, and a rename whose ops refuse is withheld rather than forced.",
-    "uuid": "1dec8cdc-b719-8828-afd8-605f2e125f0a",
+    "uuid": "49d38098-f831-8df9-86be-ab2b26a52292",
     "words": [
       "use",
       "when",

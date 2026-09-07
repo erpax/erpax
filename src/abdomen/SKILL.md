@@ -2,11 +2,11 @@
 name: abdomen
 description: "Use when reasoning about abdomen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: abdomen
-coordinate: "abdomen · 2/share · e1b78f5c"
-contentUuid: "a83663d2-96b2-5dc1-9835-26ba0bacfe3c"
-diamondUuid: "437479eb-634d-8350-8196-2db5f10511c7"
-uuid: "e1b78f5c-e030-84c7-a81c-7413595ce4cd"
-horo: 2
+coordinate: "abdomen · 8/crest · bfcc8265"
+contentUuid: "59372998-89f3-53d8-a8f2-8e66c55cbfac"
+diamondUuid: "813776b0-55af-88e9-80e2-df5987e791cc"
+uuid: "bfcc8265-ed81-8615-aa9b-1a0b28d44731"
+horo: 8
 typography:
   partition: abdomen
   bondDegree: 21
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "855faaea-f038-84f2-871f-5a39a11d571a"
+  computationUuid: "acc4bacc-4e64-891e-bfa2-74118431b5a4"
   stages:
     - stage: path
       stageUuid: "817a21ac-67d0-87d5-9552-302639a80ad2"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "2af1d888-2a8e-8acd-b853-49a38b9866d4"
     - stage: horo
-      stageUuid: "e8ed01d4-8e03-8350-b0f0-563f4035c22f"
+      stageUuid: "d49bcde9-87cb-8fde-b554-58bf0750f1c3"
     - stage: seal
       stageUuid: "3d3750d3-b366-8e71-aabb-b2ff52a116db"
     - stage: uuid
-      stageUuid: "f1455c1c-2466-89e8-9873-0a09de987135"
+      stageUuid: "909a3595-a3b0-8f35-990a-b7a344aaab6a"
 version: 2
 ---
 # abdomen

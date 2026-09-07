@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "element",
-    "uuid": "36963b9f-4d96-86a7-9531-7fde9099ca03",
+    "uuid": "6e613d2e-132c-8eef-8d9a-8316e62e5012",
     "words": [
       "element"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about an identity element.",
-    "uuid": "e4d7f2b9-957e-8046-bde6-73e08d649511",
+    "uuid": "0f48c699-b0b3-83f2-b6a5-1840e8db4ab9",
     "words": [
       "use",
       "when",

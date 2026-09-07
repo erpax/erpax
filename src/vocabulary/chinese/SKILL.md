@@ -2,11 +2,11 @@
 name: chinese
 description: "Use when reasoning about chinese as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/chinese"
-coordinate: "vocabulary/chinese · 8/crest · a95f5784"
-contentUuid: "b20aaa9d-c5da-541a-a27e-9c04412e788f"
-diamondUuid: "ccc2f6d6-80f7-8e20-b60c-2cb8da1a61aa"
-uuid: "a95f5784-232d-8a65-bdc7-8e04f66637fa"
-horo: 8
+coordinate: "vocabulary/chinese · 5/round · 5f5878e2"
+contentUuid: "40b7ac0f-8e6e-5822-a9a9-7bac188dc112"
+diamondUuid: "b28aff6a-03cf-8b58-adc1-bfdaf264f65e"
+uuid: "5f5878e2-2d37-866c-877a-c7eda5cf082f"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5ebfb885-245f-8821-a71f-739d6d52d409"
+  computationUuid: "e490cca4-e3e4-8641-911a-923b8a11ddb2"
   stages:
     - stage: path
       stageUuid: "5691576e-d8ac-824f-a607-d9271f2172e3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93870355-056b-8edf-a8fc-078093a705e1"
     - stage: horo
-      stageUuid: "9f80b7fc-76be-8fc2-afd6-e7af140bd436"
+      stageUuid: "de22895d-d973-8443-8da2-d95e4fd25972"
     - stage: seal
       stageUuid: "26244844-423b-86b8-9784-8aac94cc88e4"
     - stage: uuid
-      stageUuid: "1cc5197c-193b-8f01-b931-4d9049eadc38"
+      stageUuid: "8f40c29a-64d8-8f35-899b-f3010dc8fb50"
 version: 2
 ---
 # chinese

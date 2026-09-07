@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trailer",
-    "uuid": "d86ea7aa-aa23-86ee-b6f1-b0c8da8c9fc2",
+    "uuid": "30174bce-634e-80c7-bcf4-c8ef4d17f3da",
     "words": [
       "trailer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about trailer — The trailer of a movie or TV/radio series, season, episode, etc.",
-    "uuid": "49490940-c30c-8a43-9fba-8f0179ba3866",
+    "uuid": "669261ab-93bb-81df-8b64-4801715e716c",
     "words": [
       "use",
       "when",

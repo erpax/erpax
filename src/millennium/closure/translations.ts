@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "closure",
-    "uuid": "31bd76c6-ca5f-8466-8cce-167c1871e9ec",
+    "uuid": "9b3adb82-6853-8da5-9701-aac2b7e6be45",
     "words": [
       "closure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
-    "uuid": "965724e0-e1e3-8836-b12e-0879ac6774a3",
+    "uuid": "697d1e2c-2244-8427-8583-7428c1f38298",
     "words": [
       "use",
       "when",

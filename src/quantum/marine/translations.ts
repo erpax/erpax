@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "marine",
-    "uuid": "71d923b7-6007-84ac-ba9c-868cf4082170",
+    "uuid": "f65d0ad2-b6e2-8562-bad3-8cf378911403",
     "words": [
       "marine"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the law of the sea on the quantum scale — maritime jurisdiction as geometry (UNCLOS zones from distance), flag-state governance as the vessel's content-identity, and general average as maritime double-entry; educational, not legal advice.",
-    "uuid": "7599bbea-f7b4-800a-bf1c-94cf9a51f17b",
+    "uuid": "aa0449e8-fb28-884c-9e38-e27d43ccae8a",
     "words": [
       "use",
       "when",

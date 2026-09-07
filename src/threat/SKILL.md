@@ -2,18 +2,18 @@
 name: threat
 description: "Use when reasoning about threat — Quantum threat classification (immediate-retire vs quantum-accelerated)"
 atomPath: threat
-coordinate: "threat · 7/descent · 2a011dc5"
-contentUuid: "176e5b46-8ab1-5bde-9afb-d927055d3078"
-diamondUuid: "4cd80375-7ea8-8a43-9038-282ca7930502"
-uuid: "2a011dc5-f905-8dc5-9870-f64763ad4d7f"
-horo: 7
+coordinate: "threat · 1/base · 86ddf3ff"
+contentUuid: "5cc55a35-ca1c-5d01-8dbe-ec08f3aa56c4"
+diamondUuid: "ee8016ff-f6e6-81ac-81c5-f10ecede883b"
+uuid: "86ddf3ff-784b-8b15-977b-b55e759d648f"
+horo: 1
 typography:
   partition: threat
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "98d5b3e4-44bc-8e78-8da4-5d7bddb2fd00"
+  computationUuid: "39f15f08-2479-8793-b42f-f59c38a0f5d3"
   stages:
     - stage: path
       stageUuid: "aa7397ec-c05e-8b35-bc54-1da76235e563"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ab9d9b48-d283-81ef-ad83-573114150bd8"
     - stage: horo
-      stageUuid: "c1fd2ccb-3d17-84a8-a6cf-087dcecbf81a"
+      stageUuid: "6a6a9b2a-32b5-8c4c-bd73-c712d613cc80"
     - stage: seal
       stageUuid: "6ae09bd0-49d0-856b-a236-aa0581f19a23"
     - stage: uuid
-      stageUuid: "a463abfa-d2bd-8b8f-8c77-ee4bd48f735a"
+      stageUuid: "06c3b7db-e1d7-838f-a061-faa14892e03b"
 version: 2
 ---
 # threat — Honest quantum threat model

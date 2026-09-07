@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "withdrawal",
-    "uuid": "f230d140-375e-8f86-bbd9-07d027a11731",
+    "uuid": "e5945965-9348-8770-9dbd-e637506bbf74",
     "words": [
       "withdrawal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a treated animal's produce cannot yet be sold — the withdrawal period: the mandatory days after a drug/vaccine/treatment before milk/meat/eggs are residue-safe to market. A food-safety embargo that gates saleability (the accountable cannot-sell-yet state); the livestock twin of a quarantine or lock-up period.",
-    "uuid": "2dc86779-89de-8afc-82ec-46a2c1ee9e90",
+    "uuid": "e54a04e7-6195-8f5a-b6b3-1c53fcc74b0d",
     "words": [
       "use",
       "when",

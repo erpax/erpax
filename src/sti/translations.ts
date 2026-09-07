@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sti",
-    "uuid": "09af94ae-a264-8ec0-aaee-d2475a8661df",
+    "uuid": "e141f5c4-2182-8183-9827-c502a5620dcc",
     "words": [
       "sti"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sti — Payload has no class inheritance. The STI analog is **one collections collection + a flat discriminator** (Rails' default) — is the polymorphic-*association* analog, blocks the het",
-    "uuid": "5aaf7abf-e135-8c27-8c0c-11237643d24b",
+    "uuid": "bce169aa-5faf-8805-bea0-917cfaadfde8",
     "words": [
       "use",
       "when",

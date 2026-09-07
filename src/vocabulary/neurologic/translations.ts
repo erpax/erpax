@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "neurologic",
-    "uuid": "ac9b9925-74dc-847d-a242-50ca0e35ce18",
+    "uuid": "586fcf48-33b0-8ad5-b0a9-85476488d887",
     "words": [
       "neurologic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about neurologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "4ac40dff-fbef-8f86-bc64-140073a244c2",
+    "uuid": "bae01296-fef0-82e5-92a5-0e350c10f9db",
     "words": [
       "use",
       "when",

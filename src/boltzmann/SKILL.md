@@ -2,11 +2,11 @@
 name: boltzmann
 description: "Use when reasoning about entropy as microstate-counting — Boltzmann's S = k·ln W: the entropy of a macrostate is the log of W, the number of microstates that look the same (W=1 ⇒ S=0). It is extensive (independent systems' entropies add, since ln turns product into sum) and its Gibbs form S = −k·Σ pᵢ ln pᵢ is maximised, equal to k·ln W, exactly when uniform. The microstate foundation under erpax's reciprocity-entropy; DRY collapse removes configurations so entropy falls."
 atomPath: boltzmann
-coordinate: "boltzmann · 4/weave · c9da893a"
-contentUuid: "0e7bed43-4293-5021-be90-a9f5fde6f356"
-diamondUuid: "182ca82f-03b5-88d2-ab14-4c51dace54a8"
-uuid: "c9da893a-9dfe-8836-8da7-c4a612389902"
-horo: 4
+coordinate: "boltzmann · 2/share · c92f8d51"
+contentUuid: "821281c6-32b8-5b0f-a4f1-f26ef5b00a8e"
+diamondUuid: "2e56e17d-adbb-82ed-a3e2-660e86851a4d"
+uuid: "c92f8d51-ed3d-8b42-93e3-ed3967cb8dc1"
+horo: 2
 typography:
   partition: boltzmann
   bondDegree: 32
@@ -14,7 +14,7 @@ standards:
   - "SI-2019 exact: k_B = 1.380649e-23 J/K"
 bindings: []
 signatures:
-  computationUuid: "56c068b7-7235-85cf-a880-c9d9a27ba8c4"
+  computationUuid: "7ca12286-b6a5-8d28-8cc0-07d297694631"
   stages:
     - stage: path
       stageUuid: "06a804a4-3a98-8118-8517-82dc58d6d677"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9be5f7d9-0225-8c45-8101-8ec2a518415f"
     - stage: horo
-      stageUuid: "f57fcbc8-7fcf-86ad-9a49-c3cde644e1be"
+      stageUuid: "1dc6ce53-2f9c-88e4-92be-5b9ae8481b4a"
     - stage: seal
       stageUuid: "a4d02196-2866-8942-b8e2-e03eae7187f0"
     - stage: uuid
-      stageUuid: "85d606ec-b12b-8b4c-9d4c-84a2118a5ffa"
+      stageUuid: "2e3dc5c9-98a8-84c7-83bf-79a0d24dfaa3"
 version: 2
 ---
 # boltzmann — entropy is counting (S = k·ln W)

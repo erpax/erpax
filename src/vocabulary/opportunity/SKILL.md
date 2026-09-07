@@ -2,18 +2,18 @@
 name: opportunity
 description: Use when modelling one opportunity — the singular model of the opportunities collection (the plural store); a potential deal tracked through a sales pipeline.
 atomPath: "vocabulary/opportunity"
-coordinate: "vocabulary/opportunity · 2/share · 9bca6e3d"
-contentUuid: "fe178cfc-bf8f-5e13-a973-0fdc68487042"
-diamondUuid: "2cfbd95c-5f56-8af4-8ad4-d196e74f8fc7"
-uuid: "9bca6e3d-feb6-8605-914e-df748716d4eb"
-horo: 2
+coordinate: "vocabulary/opportunity · 7/descent · 2eedfcf2"
+contentUuid: "eb885c75-72e0-51b9-bb06-710e6bbc76a8"
+diamondUuid: "71d6d11f-10e4-82d7-af1d-ca646804a434"
+uuid: "2eedfcf2-ffa9-8947-8fd6-aa8d8abc5ca1"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0d608126-f210-831a-821c-d64550c4319d"
+  computationUuid: "057226d4-c2a6-8c57-bae7-22eaa7464fb7"
   stages:
     - stage: path
       stageUuid: "55b09bb4-a26b-81a0-8686-3bd22f932684"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "72e2955a-e909-8390-bf46-e4cc1d2ac871"
     - stage: horo
-      stageUuid: "64955500-e776-8e59-871b-f0a69e887e5a"
+      stageUuid: "5a1f72c0-472c-8750-9a93-500f528552b3"
     - stage: seal
       stageUuid: "79d61cd3-02a8-8101-aa76-fa3783faa6fd"
     - stage: uuid
-      stageUuid: "d4e48578-1bbc-852e-bb6e-15ee907058b0"
+      stageUuid: "c2dbfa0b-2d25-8a50-b89e-a2239d086ca0"
 version: 2
 ---
 # opportunity — the model of one [[opportunities]] row

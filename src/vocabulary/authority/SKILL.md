@@ -2,11 +2,11 @@
 name: authority
 description: "Use when reasoning about authority as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/authority"
-coordinate: "vocabulary/authority · 8/crest · a6cc5f5e"
-contentUuid: "d70ef0f9-707d-584d-b064-e6d4982a468b"
-diamondUuid: "907a3362-0e15-8d09-a4df-8fec39061ed4"
-uuid: "a6cc5f5e-4c5d-8496-8945-abb900587910"
-horo: 8
+coordinate: "vocabulary/authority · 1/base · 66fb312e"
+contentUuid: "febea536-9dd0-57a5-a4bc-ce414a159b17"
+diamondUuid: "b9cfff71-f888-88fa-8953-f64d7077f7e4"
+uuid: "66fb312e-63ba-89fd-8b98-5b0f1b63115f"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "71198260-07c9-8123-8f62-27722201aaf0"
+  computationUuid: "f89eb2ff-ff18-8eb9-999a-06bbef694c7f"
   stages:
     - stage: path
       stageUuid: "3c44d783-a397-8576-a111-1fae72dba70f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dc14d740-7c06-821b-a299-821b012e2409"
     - stage: horo
-      stageUuid: "04dee441-6c3f-8ed5-a241-68b8b3e5a9da"
+      stageUuid: "891c4dff-bdb8-817c-921f-1e71b8d7b3ef"
     - stage: seal
       stageUuid: "06775176-f2d7-80da-af2d-45118236aec3"
     - stage: uuid
-      stageUuid: "fc5075bd-9c10-8ba5-b810-165b6e8ef356"
+      stageUuid: "566db9ea-3738-81dd-8f1a-3ded7884d2ea"
 version: 2
 ---
 # authority

@@ -2,10 +2,10 @@
 name: biometric
 description: "Use when measuring a person's body — biometric is the sharpest device measurement, serving identity (who you are) and health (your state) at once; privacy-by-design demands it stays on the edge, so the raw signal never leaves the device, only a derived uuid or a signed assertion does."
 atomPath: biometric
-coordinate: "biometric · 8/crest · ad5e05e9"
-contentUuid: "77bb8b20-26a9-539e-83cc-d07df5aba304"
-diamondUuid: "ffe6f118-235c-8602-bba2-53f307fdc588"
-uuid: "ad5e05e9-497f-8dac-a88a-f9c76aae1920"
+coordinate: "biometric · 8/crest · 9f50b82a"
+contentUuid: "16fed3e4-89e6-505c-b484-c96a5e18d38b"
+diamondUuid: "5b9635de-f3d7-8322-ab24-9726b0ce9b56"
+uuid: "9f50b82a-25b5-8448-87ef-d2a60ee8cdb7"
 horo: 8
 typography:
   partition: biometric
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d9e87928-3f5d-87e5-9ee6-69eb70ef1bde"
+  computationUuid: "780299df-85c8-87cb-a961-2f112ca1eb5c"
   stages:
     - stage: path
       stageUuid: "952c92af-1f35-8515-937f-07b68429276b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d6d7234c-77f4-8000-b453-238290d9c841"
     - stage: horo
-      stageUuid: "fef81bd4-e085-812e-9404-6d07fbbbe50f"
+      stageUuid: "f67132d8-a57f-84d9-a79e-a6b0059869ba"
     - stage: seal
       stageUuid: "4437c728-cfd5-8da6-a669-22d3a5e19bfd"
     - stage: uuid
-      stageUuid: "c3ebecfc-3bc9-8992-9068-d130528b64a5"
+      stageUuid: "31b1ffc9-126a-83f9-aaba-f00a070d19ed"
 version: 2
 ---
 # biometric — measuring the body (identity ⊕ health)

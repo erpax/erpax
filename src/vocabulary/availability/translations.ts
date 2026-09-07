@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "availability",
-    "uuid": "728d1bcc-112d-86a8-a6d3-432309145597",
+    "uuid": "2bc8dd45-cd4a-8d3c-b646-c78ea726256d",
     "words": [
       "availability"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about availability — The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.",
-    "uuid": "efa7e89a-05a5-832e-8eb7-b58cdcb7835f",
+    "uuid": "d5df01e9-f564-820b-b2db-35b5a7599c79",
     "words": [
       "use",
       "when",

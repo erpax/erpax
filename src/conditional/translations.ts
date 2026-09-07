@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conditional",
-    "uuid": "0ad9d2b1-768f-8dc7-ae16-4b2eaab418ec",
+    "uuid": "31423a24-677a-8a5a-8be9-60acfa5095f5",
     "words": [
       "conditional"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a claim holds only under an unproven hypothesis — given(H).proves(Y) folds the unprovable into a PROVEN implication H ⇒ Y, keeping H disclosed. The honest complement to rules/refutable: an unfalsifiable assertion is a lie; an unprovable hypothesis, named, proves another thing. Run: tsx src/conditional/index.ts",
-    "uuid": "491f21d4-fbc6-8ebe-886c-1354511ba4f2",
+    "uuid": "fb187832-dd9b-8d58-b398-dca5d4326bdd",
     "words": [
       "use",
       "when",

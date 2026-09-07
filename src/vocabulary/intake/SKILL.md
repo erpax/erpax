@@ -2,11 +2,11 @@
 name: intake
 description: "Use when reasoning about intake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/intake"
-coordinate: "vocabulary/intake · 1/base · 03e18fe3"
-contentUuid: "f8c66ee4-b2ef-53f9-96f5-06adbdd949de"
-diamondUuid: "be509b9d-5a7f-893f-b91d-8974b908ee07"
-uuid: "03e18fe3-8aff-86f8-81ab-9ffbf48e83b8"
-horo: 1
+coordinate: "vocabulary/intake · 5/round · 29654441"
+contentUuid: "49218e21-aa6f-5f8f-9317-13557d127080"
+diamondUuid: "a2c0c2c7-3eb4-88d2-9712-6b45cfb8e892"
+uuid: "29654441-a1c7-8455-b9bf-89374fd006f8"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dee87304-3e02-8a22-80b3-47168b03e017"
+  computationUuid: "918c3651-77b8-8616-8d7c-5a6f52333c10"
   stages:
     - stage: path
       stageUuid: "acd1af48-c557-8ac5-b03e-a6896e78b2cb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cab78fc6-711a-8ef7-b245-ed60443bef8f"
     - stage: horo
-      stageUuid: "eb125231-29ec-8f4b-bf90-242edd065690"
+      stageUuid: "d69f7345-1817-8c13-9eee-2769940da311"
     - stage: seal
       stageUuid: "4662de77-a3a8-87bc-bfe0-b123405a5166"
     - stage: uuid
-      stageUuid: "07b7c9a1-7442-82fb-9fcb-f5bd5cf2603f"
+      stageUuid: "3f90f131-d441-828b-80aa-94ab39a08e4e"
 version: 2
 ---
 # intake

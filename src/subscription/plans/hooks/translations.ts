@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "30d3d01f-28a2-88f1-b57b-d8f6363fdfc0",
+    "uuid": "9bbfc9ae-95de-8031-b916-5c68267e5345",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — No plan-specific hook is wired yet. The barrel is here because every collection's hooks live at the same address, and a convention with a hole in it is one every future reader…",
-    "uuid": "1c333409-3b77-8807-9598-edc128c11301",
+    "uuid": "20d0ed4f-5b0b-86e8-aa5f-5afb25726824",
     "words": [
       "use",
       "when",

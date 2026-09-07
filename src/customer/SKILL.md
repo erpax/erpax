@@ -2,10 +2,10 @@
 name: customer
 description: Use when reasoning about customer — Party placing the order or paying the invoice.
 atomPath: customer
-coordinate: "customer · 8/crest · e272fc72"
-contentUuid: "ba924054-9401-5156-8e31-d1041ff76f82"
-diamondUuid: "e8f92df8-0558-8aa7-8f16-64b0932d7986"
-uuid: "e272fc72-eaf1-8e48-a19f-606aac957dac"
+coordinate: "customer · 8/crest · 48295f7b"
+contentUuid: "c949c7fd-6497-5ffa-874c-11fb359c8b47"
+diamondUuid: "39404fef-b67d-8bcf-9ef4-d555e92f6806"
+uuid: "48295f7b-e93d-85e4-a22e-4921186ec3c6"
 horo: 8
 typography:
   partition: customer
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2eadce65-fc38-8e40-8acb-98afb283499e"
+  computationUuid: "d5e23ffa-f797-8cca-ad6f-1c4f651a4731"
   stages:
     - stage: path
       stageUuid: "84ed6cd1-64bf-8614-8bd7-fa3d958a49ee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2ecfebac-117d-86ef-8547-adb680ba0758"
     - stage: horo
-      stageUuid: "8dc9af2e-2b99-8c7d-9c43-43313eb273d0"
+      stageUuid: "acecb2f9-dbb5-86ae-972f-d989225f13ad"
     - stage: seal
       stageUuid: "b1946cc4-2846-869e-a900-aa9a14bb6d71"
     - stage: uuid
-      stageUuid: "d70de6b7-bb55-8362-9650-689e0fb55863"
+      stageUuid: "317545bd-fac4-8949-b318-0f62d9f9ffe7"
 version: 2
 ---
 # customer

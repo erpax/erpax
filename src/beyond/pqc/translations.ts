@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pqc",
-    "uuid": "289c84c6-6679-837f-be44-43516d921952",
+    "uuid": "850d9f12-844a-8f95-875c-7c0122a6fe82",
     "words": [
       "pqc"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain.",
-    "uuid": "733a7e6d-457c-8b5e-8292-c432f6c1a35b",
+    "uuid": "b7d007d1-cfbb-8778-b493-dfef27874fd5",
     "words": [
       "use",
       "when",

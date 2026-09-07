@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quantitative",
-    "uuid": "572e155d-17a0-8aea-bb7d-f084ce2422f0",
+    "uuid": "4643246a-9ef8-8ba5-a4f2-c8cdc561ed97",
     "words": [
       "quantitative"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quantitative — A schema.org component word, collided out of schema.org compounds — fused from QuantitativeValue · QuantitativeValueDistribution (sti · collapse · merge).",
-    "uuid": "a80b0966-bbb8-8b88-848c-838a93d3a887",
+    "uuid": "db8540ce-d80c-8821-8344-93c057457791",
     "words": [
       "use",
       "when",

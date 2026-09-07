@@ -2,11 +2,11 @@
 name: mode
 description: Use when reasoning about mode — reads the operating mode and refuses an operation the mode does not permit; fails closed rather than degrading.
 atomPath: "safety/mode"
-coordinate: "safety/mode · 1/base · fad1413a"
-contentUuid: "dd088f5d-7d37-540d-b8a8-bb1c1a1dc99d"
-diamondUuid: "7a8e423d-829c-8eb3-959f-960822afed63"
-uuid: "fad1413a-6e6c-84f9-aaa9-6323efe69c2b"
-horo: 1
+coordinate: "safety/mode · 5/round · 75e8d8c6"
+contentUuid: "d2d3dfd6-b860-58a9-8cfc-d2cf7ebfc4da"
+diamondUuid: "24e715a9-7486-8784-bd8b-2106eadd8f84"
+uuid: "75e8d8c6-91bc-8ec0-b158-912958aad1cf"
+horo: 5
 typography:
   partition: safety
   bondDegree: 41
@@ -17,7 +17,7 @@ standards:
   - "OWASP-ASVS"
 bindings: []
 signatures:
-  computationUuid: "a416c2b8-cd38-8ac9-a051-ab387933d800"
+  computationUuid: "db6873be-001b-8bc7-b264-51950367ebb4"
   stages:
     - stage: path
       stageUuid: "4eb3cf13-3c1b-8c71-a221-0790cdfb3fb4"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "7d245d13-c5c9-84bb-a291-8ea90fa2157d"
     - stage: horo
-      stageUuid: "e5cc149d-e7e4-82b3-9392-f3f66cc91098"
+      stageUuid: "dd8b8761-99e2-8dc2-ad12-4c3b0582d26f"
     - stage: seal
       stageUuid: "1003986f-0ca2-8bff-a7e2-0b958e6e4363"
     - stage: uuid
-      stageUuid: "99e98ab1-3101-8d99-bad3-019323cc4b28"
+      stageUuid: "1c999616-d2a2-89f4-899c-d01f06a88924"
 version: 2
 ---
 # safety/mode — an agent that can rewrite the guarantee is not bounded by it

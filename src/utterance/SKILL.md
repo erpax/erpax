@@ -2,10 +2,10 @@
 name: utterance
 description: Use when modelling one utterance — the singular model of the utterances collection (the plural store); one spoken or written input in a conversation.
 atomPath: utterance
-coordinate: "utterance · 7/descent · c6a28830"
-contentUuid: "515752cf-881f-57fe-981a-6deb6731e39d"
-diamondUuid: "a6c56884-0012-804a-9e8b-3d6bada47187"
-uuid: "c6a28830-8aea-88f9-80b4-56e671d43c4c"
+coordinate: "utterance · 7/descent · 7de6fd10"
+contentUuid: "587ee96b-3e2a-5b5c-b147-8fb36fdb34db"
+diamondUuid: "18dce15f-940b-8b0b-bfde-c0c82fb4276f"
+uuid: "7de6fd10-c5ac-86ad-87c5-741fcd30c9b7"
 horo: 7
 typography:
   partition: utterance
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b0ad914a-5f32-82bb-b6a3-ebd24e4f3a24"
+  computationUuid: "ea73c8e9-9bbe-82aa-8a02-19c953ef4916"
   stages:
     - stage: path
       stageUuid: "69ae95c5-6d6d-8ff0-bde6-e5a3e019847f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a7b55ea7-260d-8771-b448-daec696aebb0"
     - stage: horo
-      stageUuid: "37b2f79e-83ef-85fe-ba81-45d15c8c8183"
+      stageUuid: "35021a24-7d9b-8a79-bca4-c927573bda15"
     - stage: seal
       stageUuid: "3cdbbd2c-0655-8ff0-890f-351fa747a4b6"
     - stage: uuid
-      stageUuid: "10d78c72-260e-8a3d-abd8-f3d9b703c5fa"
+      stageUuid: "2317efcb-a0b4-8f6b-b4bc-9e147bed61a0"
 version: 2
 ---
 # utterance — the model of one [[utterances]] row

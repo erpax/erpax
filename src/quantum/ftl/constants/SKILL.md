@@ -2,18 +2,18 @@
 name: constants
 description: "Use when reasoning about constants — Quantum FTL constants — paths, endpoints, boundary, defaults"
 atomPath: "quantum/ftl/constants"
-coordinate: "quantum/ftl/constants · 1/base · f803dc71"
-contentUuid: "13d4e7ee-b501-592a-b08e-a18c33278390"
-diamondUuid: "16193714-0833-8315-9358-6e7eb1d7baeb"
-uuid: "f803dc71-e342-8dec-8fc5-c32c48d1ab49"
-horo: 1
+coordinate: "quantum/ftl/constants · 4/weave · fbca05ed"
+contentUuid: "ea0d50ef-d276-5e02-b8e9-856ed525776d"
+diamondUuid: "fe322575-6778-825a-b575-44658a4b95fc"
+uuid: "fbca05ed-d09f-8342-b9da-5f1c7884ec15"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3b919411-b86e-8bc2-8806-4893e6c5b26e"
+  computationUuid: "098ccd0f-7d44-8aef-99cd-c22e7ddc518c"
   stages:
     - stage: path
       stageUuid: "f3ea22df-2737-8bf0-9250-f1251a823179"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ddec64bf-713b-89d2-83fa-df0dce9184a8"
     - stage: horo
-      stageUuid: "f94d75de-f774-860e-a0c9-3041ae875014"
+      stageUuid: "f202febc-fa52-80a4-8ec1-eee44db11823"
     - stage: seal
       stageUuid: "02fb84f4-597e-8032-bf3d-ce6c9c83fe2f"
     - stage: uuid
-      stageUuid: "8b93f9e8-6342-8eed-ba5c-b42a332446e5"
+      stageUuid: "c7da4ae6-87ab-860c-97fb-3857c9a3032c"
 quantum:
   superposition:
     - algebra
@@ -44,8 +44,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "3b919411-b86e-8bc2-8806-4893e6c5b26e"
-    contentUuid: "13d4e7ee-b501-592a-b08e-a18c33278390"
+    computationUuid: "098ccd0f-7d44-8aef-99cd-c22e7ddc518c"
+    contentUuid: "ea0d50ef-d276-5e02-b8e9-856ed525776d"
 version: 2
 ---
 # quantum/ftl/constants
@@ -54,4 +54,4 @@ Quantum FTL constants — paths, endpoints, boundary, defaults.
 
 Composes: [[quantum/ftl]] · [[quantum]].
 
-<sub>content-uuid `13d4e7ee-b501-592a-b08e-a18c33278390` · account `quantum/ftl/constants` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea0d50ef-d276-5e02-b8e9-856ed525776d` · account `quantum/ftl/constants` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

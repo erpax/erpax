@@ -2,11 +2,11 @@
 name: dermatology
 description: "Use when reasoning about dermatology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dermatology"
-coordinate: "vocabulary/dermatology · 2/share · 701e73d3"
-contentUuid: "a815dd8b-43ca-563e-8366-ccbaf7927475"
-diamondUuid: "1cc0e89d-1b4a-8807-a863-6c0964e2928a"
-uuid: "701e73d3-703c-8386-9b24-4e4ddb391c4e"
-horo: 2
+coordinate: "vocabulary/dermatology · 7/descent · e8e21b1a"
+contentUuid: "d574116f-846f-5f80-8967-b361e046f8e7"
+diamondUuid: "bdd537ca-0fb7-8867-bce7-f04f1e962b6e"
+uuid: "e8e21b1a-6750-822a-9be0-093e9a9efc08"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5648eb4d-960c-81d0-b2e5-5f50898159fc"
+  computationUuid: "dab6f74e-4d2b-819f-b2a5-f4e36eb9bd64"
   stages:
     - stage: path
       stageUuid: "018aae52-50b4-8fa1-8e49-7e861026b7ea"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d0e5aa94-5da8-8998-84c1-620d8789c3a7"
     - stage: horo
-      stageUuid: "e91c919d-0187-8060-8752-d2fef6a7353b"
+      stageUuid: "279856b1-5e4f-8747-b064-5afcc7cbf814"
     - stage: seal
       stageUuid: "c54127fb-4337-850a-87d3-f984c9d87756"
     - stage: uuid
-      stageUuid: "caa9deda-ca13-863e-b791-a865f04c23e3"
+      stageUuid: "37edbecf-3bc2-83e2-ac27-c5f8060d484f"
 version: 2
 ---
 # dermatology

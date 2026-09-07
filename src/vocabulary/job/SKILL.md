@@ -2,11 +2,11 @@
 name: job
 description: "Use when reasoning about job as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/job"
-coordinate: "vocabulary/job · 2/share · 45cd7b01"
-contentUuid: "4af4786c-fbc8-55e2-854a-b67af5520c9a"
-diamondUuid: "c5d55922-7d28-89c8-89ef-9926479ae3d7"
-uuid: "45cd7b01-1c53-8ac6-b06d-41cf417788cd"
-horo: 2
+coordinate: "vocabulary/job · 1/base · e3d30190"
+contentUuid: "a523042b-6881-5f00-aeff-7dbae121b24a"
+diamondUuid: "a16af405-5f34-8fe1-87d6-6a9380741c54"
+uuid: "e3d30190-5e9b-8b6f-b52d-917deeae6830"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 54
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3ee780c5-4093-8979-9f32-36c51bbda82a"
+  computationUuid: "c3651a20-206f-8b7a-ae28-846a3d0c1f8d"
   stages:
     - stage: path
       stageUuid: "96691198-958c-82b0-9018-792a19c42435"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "99a13e97-93ae-8f8e-b048-aea275bd7920"
     - stage: horo
-      stageUuid: "eddf472a-288c-8ead-a93b-64f0c05b9c52"
+      stageUuid: "ac5eff2c-b255-8e3e-b207-18070a89f02e"
     - stage: seal
       stageUuid: "761a3db2-554f-849e-860e-acd36f1239a2"
     - stage: uuid
-      stageUuid: "92d3f9bc-f218-86d2-82f0-0d5c96d75dd3"
+      stageUuid: "e923a74a-d9fc-8f35-a6e4-432276ad19a5"
 version: 2
 ---
 # job

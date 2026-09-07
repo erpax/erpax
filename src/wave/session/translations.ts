@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "session",
-    "uuid": "b6a0355a-2891-87eb-820d-d3c1161d2dcd",
+    "uuid": "b2edb6cf-c052-84cf-afdc-8ba4369632b4",
     "words": [
       "session"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when walking a wave plan hop by hop with receipts — opens a session over a plan, emits a uuid-chained receipt per completed wave, and refuses to report ready until every wave is actually done. The actor is folded into the receipt's address, never stored in clear.",
-    "uuid": "2b119421-8567-8a47-a018-dd04d76561d7",
+    "uuid": "11c99e33-c2b8-8f53-8e6a-f40de6034ed5",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: learning
 description: "Use when reasoning about learning as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/learning"
-coordinate: "vocabulary/learning · 4/weave · a6a84c25"
-contentUuid: "a6e9d462-2516-5be4-b40b-31b11c319dae"
-diamondUuid: "149f49ed-8fe9-8049-9744-2b387ea2249c"
-uuid: "a6a84c25-d22e-87f1-a3c0-8031a1582da1"
-horo: 4
+coordinate: "vocabulary/learning · 7/descent · 59f32a24"
+contentUuid: "2dc18900-8fbb-5657-b5ea-df0812c8b8fb"
+diamondUuid: "47304fa1-8717-8ae0-8abf-269f23bc014b"
+uuid: "59f32a24-0194-8283-8766-89ac539f92f8"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "191ba578-835a-8bc8-b837-e1e83ce43304"
+  computationUuid: "ce60a898-ad3d-8190-88ec-dcec6dca0316"
   stages:
     - stage: path
       stageUuid: "7832e106-83be-840d-9f67-48305a21d589"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "61393a89-7b4d-865d-8992-be235003a55e"
     - stage: horo
-      stageUuid: "a8c99079-f075-884d-934d-8794cf31a7ad"
+      stageUuid: "8b9de376-d753-8b8b-8d39-d5713147bb03"
     - stage: seal
       stageUuid: "adf65b2a-0dc4-82ab-94b8-e0fabbbb8efd"
     - stage: uuid
-      stageUuid: "9dcaac0d-74ca-8144-b1f5-aa668de076d2"
+      stageUuid: "9819ebf8-39df-81e0-8b25-d1b8397eef78"
 version: 2
 ---
 # learning

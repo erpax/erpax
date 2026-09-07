@@ -2,11 +2,11 @@
 name: sugar
 description: "Use when reasoning about sugar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sugar
-coordinate: "sugar · 1/base · b2c4a114"
-contentUuid: "9f3d2f40-9c51-539a-9b1c-39aa3268724c"
-diamondUuid: "4dfb086f-a81f-8799-a60d-b49039a69cb4"
-uuid: "b2c4a114-4f82-8777-b339-a1fbed13e521"
-horo: 1
+coordinate: "sugar · 5/round · 127fcdf6"
+contentUuid: "fa0f7073-7dcc-5fc7-bd0e-737973b921c1"
+diamondUuid: "822cff0c-3fd1-896e-ad07-fe467cfbcacf"
+uuid: "127fcdf6-5335-8578-b0d7-6b8493dc9e7f"
+horo: 5
 typography:
   partition: sugar
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c860ce19-2124-8378-8a38-dabea6182938"
+  computationUuid: "19c501e1-0429-8436-a92b-b4426ba3bf65"
   stages:
     - stage: path
       stageUuid: "90665293-9fbc-8673-bb6b-ce21348a053c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e7062b98-d254-87a0-98cc-384bc49bb738"
     - stage: horo
-      stageUuid: "bdd538b5-a6fa-8ff8-8184-eb1a490f15a8"
+      stageUuid: "90eeb93e-6144-8446-a396-4451bc7ea33e"
     - stage: seal
       stageUuid: "b38f558f-88f9-8988-8953-81c56e960698"
     - stage: uuid
-      stageUuid: "d363c5d6-b8ea-873e-83dd-5950ce16c983"
+      stageUuid: "673ff903-3754-85f4-9dd1-000623325f97"
 version: 2
 ---
 # sugar

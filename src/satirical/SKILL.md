@@ -2,11 +2,11 @@
 name: satirical
 description: "Use when reasoning about satirical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: satirical
-coordinate: "satirical · 8/crest · 86173617"
-contentUuid: "16b52663-68b1-551a-b090-950979331fe5"
-diamondUuid: "7b4a9369-a28e-8b92-b285-c3830f75b78a"
-uuid: "86173617-f671-8560-a020-e2155ee2166e"
-horo: 8
+coordinate: "satirical · 2/share · b3fe5ff7"
+contentUuid: "4a445b2a-7ef6-5ccf-aee0-2182fc73c9ec"
+diamondUuid: "c71718d8-fefe-8a66-8ae8-1157686db911"
+uuid: "b3fe5ff7-e271-88ed-878a-f975372fd562"
+horo: 2
 typography:
   partition: satirical
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4d478a81-3dcf-8a66-b144-d675dec0c3f7"
+  computationUuid: "a2ae443d-83bc-846d-8aab-8476333e7886"
   stages:
     - stage: path
       stageUuid: "a4866dfa-47f6-88e4-bbca-2a5604861982"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0199a94d-c712-8231-b423-66f9e3001b10"
     - stage: horo
-      stageUuid: "312608b2-550c-8ca2-9ae5-53bd0d8bf7a6"
+      stageUuid: "a0c62736-c851-8d3e-ae71-b2b5070fae9b"
     - stage: seal
       stageUuid: "0e3db956-798a-832d-b58a-854418a6a05e"
     - stage: uuid
-      stageUuid: "d4ca8d82-2201-8f6f-956a-b1845c4cff28"
+      stageUuid: "c0affca9-4cc4-8b66-9bd8-242abfac0301"
 version: 2
 ---
 # satirical

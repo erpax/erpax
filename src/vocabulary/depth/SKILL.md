@@ -2,11 +2,11 @@
 name: depth
 description: Use when reasoning about depth — The depth of the item.
 atomPath: "vocabulary/depth"
-coordinate: "vocabulary/depth · 4/weave · af76cea8"
-contentUuid: "24aa323b-c78f-515f-9ae6-a3bea54d8cd6"
-diamondUuid: "4778a19d-22f8-80c8-b63c-f1598b40d40b"
-uuid: "af76cea8-93ef-86b1-904b-5ecca903ebf0"
-horo: 4
+coordinate: "vocabulary/depth · 1/base · ce8dc873"
+contentUuid: "362fa241-5c64-5b80-9014-1ef36c4cdbd0"
+diamondUuid: "de7f9203-ed98-830f-b6bd-12a1ba36fbf6"
+uuid: "ce8dc873-d6f2-8b67-9ec8-acb055987669"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f1f63719-8b28-8085-b634-da04a04fc406"
+  computationUuid: "3d29fd6a-93a6-8ea7-b798-8a4f70209d9f"
   stages:
     - stage: path
       stageUuid: "e54b5650-62eb-8827-b960-c27636551ead"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f172c2cd-e92e-8385-816d-6194e5a40d18"
     - stage: horo
-      stageUuid: "0c37f463-a1eb-8ad8-8ed4-9f9b4548608e"
+      stageUuid: "d5c1ffbb-989b-8b88-b567-dcaf1f38a4c3"
     - stage: seal
       stageUuid: "35cd9672-9fad-8b75-9abd-f209301280f8"
     - stage: uuid
-      stageUuid: "5706270d-8a5d-8b86-a8e7-6bc1e0bee394"
+      stageUuid: "25e9e454-4710-8f29-a3d9-ec1f18f36ac6"
 version: 2
 ---
 # depth

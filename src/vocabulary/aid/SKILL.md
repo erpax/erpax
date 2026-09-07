@@ -2,11 +2,11 @@
 name: aid
 description: "Use when reasoning about aid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/aid"
-coordinate: "vocabulary/aid · 4/weave · f26a96e1"
-contentUuid: "aa063dc7-f53d-5bf2-937e-b7c6e44ac321"
-diamondUuid: "7e2c306e-e17d-8ad6-9611-84bb8c01e8f5"
-uuid: "f26a96e1-9257-85d3-ac6f-6a832551ef7b"
-horo: 4
+coordinate: "vocabulary/aid · 5/round · be910256"
+contentUuid: "78423754-c540-5e4c-aeb6-b0bba9ba6bb9"
+diamondUuid: "d8e70228-0c4f-8412-b9d5-8fffe102c3c3"
+uuid: "be910256-fc51-84ba-b9e1-f6fc01785baf"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ee0f055e-7aa2-8827-aebd-5606cfa87efd"
+  computationUuid: "ecbf6864-f560-8484-9575-942c591b611a"
   stages:
     - stage: path
       stageUuid: "4169cf09-d76d-8055-b79c-90a9c44346a7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f1ec262d-7276-8613-9c74-e4a7f97a8d14"
     - stage: horo
-      stageUuid: "87f7fb0b-f22f-8088-87cd-ba853bb8eeb9"
+      stageUuid: "d94b8d1e-e162-882c-847a-e824eda4f832"
     - stage: seal
       stageUuid: "f6012f86-224a-8bde-89e5-1d6f1ffcef13"
     - stage: uuid
-      stageUuid: "cc250cb4-d574-84c9-b94d-f014450b2e9e"
+      stageUuid: "0f05d858-0bdc-894d-b4de-cd8d33ba9eea"
 version: 2
 ---
 # aid

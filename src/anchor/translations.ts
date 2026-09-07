@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "anchor",
-    "uuid": "a0ece1df-2f3a-8f65-9a98-55bc9eab9453",
+    "uuid": "b494c8d3-5d80-8580-a20d-ca37d0df2a21",
     "words": [
       "anchor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts.",
-    "uuid": "6363f29e-15d6-8a9f-894a-291baf74947c",
+    "uuid": "afffddaa-f6f6-8f92-beae-80de26efb2d7",
     "words": [
       "use",
       "when",

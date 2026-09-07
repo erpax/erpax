@@ -2,18 +2,18 @@
 name: bottleneck
 description: "Use when identifying or tracking the limiting factor in a flow — the slowest operation in a sequence, the resource with lowest capacity. The theory-of-constraints node."
 atomPath: "vocabulary/bottleneck"
-coordinate: "vocabulary/bottleneck · 1/base · ae74f71c"
-contentUuid: "b689b6d4-01e2-5b0b-b2e8-c08b5b163e98"
-diamondUuid: "fd14c919-cd68-8d9e-bdef-ad4510c531f3"
-uuid: "ae74f71c-bcab-8954-9904-cf76d242d4e1"
-horo: 1
+coordinate: "vocabulary/bottleneck · 5/round · 63aaa4dc"
+contentUuid: "17579d3b-9dc6-54c7-8f23-fc069bb493e0"
+diamondUuid: "6bba586a-1c1e-8eca-af40-9ce7394bdc60"
+uuid: "63aaa4dc-d2b9-81b1-adfc-5e51ad578924"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 71
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1617d019-ed09-88bb-b748-792451a72b83"
+  computationUuid: "2aec7e9c-ebe2-8d35-84ad-000c39642586"
   stages:
     - stage: path
       stageUuid: "4f616de2-b02d-830c-b05b-9c56c4bc0792"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "42baa341-203d-8fc5-9717-5647f2b3fa46"
     - stage: horo
-      stageUuid: "1adcc197-d259-859e-aa4c-59e78d23a503"
+      stageUuid: "9c146dd2-5ff5-8596-9680-549fa0c3cc84"
     - stage: seal
       stageUuid: "904e1425-be00-8db9-bcdd-4df2fecc3011"
     - stage: uuid
-      stageUuid: "3f60baab-f200-8773-8251-9a1d9dc2bbd9"
+      stageUuid: "a2690ed2-894d-8104-bc05-cfd815b36abc"
 version: 2
 ---
 # bottleneck

@@ -2,10 +2,10 @@
 name: benefits
 description: Use when reasoning about benefits — Description of benefits associated with the job.
 atomPath: "vocabulary/benefits"
-coordinate: "vocabulary/benefits · 1/base · ab49c84d"
-contentUuid: "fc17bdcf-edfe-5f85-ae2e-70a08e658eb5"
-diamondUuid: "ebd82537-0b95-8039-ace6-9b0b6acdf9da"
-uuid: "ab49c84d-d1e6-899b-8b56-369466349009"
+coordinate: "vocabulary/benefits · 1/base · 114afbaa"
+contentUuid: "91570efb-594a-51ef-b818-4507651e7056"
+diamondUuid: "55701794-b53e-8040-aedc-afe6ce7aa042"
+uuid: "114afbaa-3bf3-8e1f-98ac-b447abd654a5"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "97ceaf18-0247-8d6f-9f9a-833a87a7e634"
+  computationUuid: "ce6a77e1-b220-879e-8a8a-05c3ad57c344"
   stages:
     - stage: path
       stageUuid: "8683afd8-15d1-8ae4-8094-85b6131bde44"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "583aa674-060c-8ca4-9225-fdb4029816b9"
     - stage: horo
-      stageUuid: "0c1b852c-ad3e-858b-90f3-11815c4d9c59"
+      stageUuid: "84bfa1da-461a-82b9-a6ea-69d3dd5c25e4"
     - stage: seal
       stageUuid: "15826541-2acc-8d72-a3fe-6dc4d1b2142f"
     - stage: uuid
-      stageUuid: "711ab9cd-1442-86b7-884c-6aeeff1c4ade"
+      stageUuid: "9b83e6c0-4259-8376-b78a-fed9ff65060b"
 version: 2
 ---
 # benefits

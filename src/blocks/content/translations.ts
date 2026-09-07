@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "content",
-    "uuid": "87d06caa-12f9-80cf-941d-2ed3e89f39e6",
+    "uuid": "148bab41-e56c-826d-aa92-9c3b0daec00c",
     "words": [
       "content"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about content — is the definition and renders it, split for the same reason every block is: the shape must be reachable without loading React.",
-    "uuid": "363e7210-948a-810e-97cb-6672e2683545",
+    "uuid": "11c27c07-77d4-857e-982c-e340f44bf0c1",
     "words": [
       "use",
       "when",

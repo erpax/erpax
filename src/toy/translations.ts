@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "toy",
-    "uuid": "0f7f35ba-fb66-83f3-b8ac-aba138ef810e",
+    "uuid": "304cca35-fb27-8fad-8dfe-47ad023287e5",
     "words": [
       "toy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about toy — A schema.org component word, collided out of schema.org compounds — fused from ToyStore (sti · collapse · merge).",
-    "uuid": "0ac37390-f184-81ee-b1c7-520f6cfeb385",
+    "uuid": "b3c07d39-dbac-83a8-89d6-6454dcd97d49",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "admin",
-    "uuid": "2b4f4e6a-566e-804c-a332-b4f7c8d5aa85",
+    "uuid": "a37b2840-0117-8a1c-99b4-626882829d5f",
     "words": [
       "admin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the admin panel must boot by reuse rather than by searching the matrix — adminBootShell / adminBootFtl precompute the boot surface and report an ftl verdict for it. Promoted from a loose sibling because self/improve/tip locates it by FILE PATH, which no import scan can see. Run: tsx src/quantum/ftl/admin/index.ts",
-    "uuid": "f81e7c90-0483-8476-94bc-41705e857615",
+    "uuid": "bbb24655-4f05-8df0-90ed-761de1c2b71e",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: list
 description: "Use when reasoning about list — tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge."
 atomPath: "vocabulary/tag/list"
-coordinate: "vocabulary/tag/list · 4/weave · b8f0a46d"
-contentUuid: "04aa77e6-f17b-5dfd-815b-e29f4bbff4f1"
-diamondUuid: "ae9d2c05-7ea0-873a-9ddb-fdde0bfe37a7"
-uuid: "b8f0a46d-f580-85e8-8fa8-c353d75b5fd9"
+coordinate: "vocabulary/tag/list · 4/weave · a674571e"
+contentUuid: "e3c008f2-da5c-5338-bd0c-5e2e3de70172"
+diamondUuid: "2aad91df-3f61-8879-81db-89b0f3214d33"
+uuid: "a674571e-85d4-81dd-a567-3e117ce03b62"
 horo: 4
 typography:
   partition: vocabulary
@@ -15,7 +15,7 @@ standards:
   - "ISO-25964-1:2011 controlled-vocabulary delimited-entry"
 bindings: []
 signatures:
-  computationUuid: "e9716e83-c980-8ac7-a23b-7862a9be023e"
+  computationUuid: "b2b48d4b-f18c-8dc5-98fc-453f75cfaef2"
   stages:
     - stage: path
       stageUuid: "61dc1163-f8a1-883d-a481-e7e25f14809a"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "11c4108a-8248-8f99-ad97-0a93e11a2028"
     - stage: horo
-      stageUuid: "d88b80cf-539b-802c-b692-00382a98c178"
+      stageUuid: "cb85b1fb-2daf-8b34-bd16-a3f750b9440e"
     - stage: seal
       stageUuid: "6a8d47dd-a09e-8bd7-9d6d-92d1849de76c"
     - stage: uuid
-      stageUuid: "7719244b-984f-8846-8e76-2c38d7f39299"
+      stageUuid: "6d4d0051-a8c5-84cd-9275-50fb6363e009"
 version: 2
 ---
 # vocabulary/tag/list

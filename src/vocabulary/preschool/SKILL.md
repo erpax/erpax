@@ -2,11 +2,11 @@
 name: preschool
 description: Use when reasoning about preschool — A preschool.
 atomPath: "vocabulary/preschool"
-coordinate: "vocabulary/preschool · 7/descent · 144c450f"
-contentUuid: "6209c5fb-dcbe-5a3d-b568-8bc09fe99578"
-diamondUuid: "0726b7f1-8761-85f7-ba00-754399cdc2c4"
-uuid: "144c450f-9277-85b9-83e7-66043f47ea43"
-horo: 7
+coordinate: "vocabulary/preschool · 1/base · ca3c8487"
+contentUuid: "e155f68f-a572-50b4-aaa8-3ea7f22420d5"
+diamondUuid: "dc4e3570-06c6-846c-a205-674ccb3fe473"
+uuid: "ca3c8487-cdf9-8839-b5cf-45157b0ee23b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2678a1b3-f9c0-8dd4-bb9e-82128854cd29"
+  computationUuid: "8ad8e4e1-e654-82a4-afb2-df38bcdde59c"
   stages:
     - stage: path
       stageUuid: "0d1984ce-d3d0-8e6d-98d3-75e683a9f7a9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "64bda070-af33-8ab6-be3c-2f7a1db2cd39"
     - stage: horo
-      stageUuid: "12b4787f-1b22-8114-abf9-9c07a76651d6"
+      stageUuid: "d054ae65-94eb-8f5b-8a7e-246087aa7aea"
     - stage: seal
       stageUuid: "b7b13fd0-f3c9-8fbb-a8e2-1a27e77abd7a"
     - stage: uuid
-      stageUuid: "c8f23461-08e3-8580-bcea-e8c265a3cbf5"
+      stageUuid: "924780f6-d99b-8d74-98e7-74ae598c4f79"
 version: 2
 ---
 # preschool

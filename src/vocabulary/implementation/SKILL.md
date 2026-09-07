@@ -2,11 +2,11 @@
 name: implementation
 description: "Use when reasoning about implementation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/implementation"
-coordinate: "vocabulary/implementation · 2/share · 78954718"
-contentUuid: "0c8600ff-0d4f-5e07-ad1b-5b5932fbffce"
-diamondUuid: "94c5459d-c222-851f-a22e-b13ca0971058"
-uuid: "78954718-0ab9-8082-b715-0de83a79a016"
-horo: 2
+coordinate: "vocabulary/implementation · 5/round · 299b8c20"
+contentUuid: "02b5d053-584b-5e6c-8984-983e2c8e5c6f"
+diamondUuid: "ad3cd8ea-87f3-8113-84a3-14683a5a5957"
+uuid: "299b8c20-5544-8ad4-a23b-7448c037ed35"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4d337021-fea2-81db-86dd-e235664d04b7"
+  computationUuid: "ea024223-7ee0-808e-ae6b-4ffe67f9a0cf"
   stages:
     - stage: path
       stageUuid: "b62758c3-799b-860d-99af-9344cae18502"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aea2b90d-5fac-8742-b276-3f3888210b24"
     - stage: horo
-      stageUuid: "9d8cf7fa-ff4b-821c-bfe7-c36f9e1f20be"
+      stageUuid: "41313106-80a8-8c9e-93a1-3057af8686f1"
     - stage: seal
       stageUuid: "b92c9db2-1bcb-817f-9506-815349b502a8"
     - stage: uuid
-      stageUuid: "9056d7d2-a69e-8ce0-a67a-7ea4fb565f1b"
+      stageUuid: "66d7e18b-a8bf-8f1c-a476-e16c74197c30"
 version: 2
 ---
 # implementation

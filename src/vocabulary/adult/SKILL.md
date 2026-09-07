@@ -2,11 +2,11 @@
 name: adult
 description: "Use when reasoning about adult as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/adult"
-coordinate: "vocabulary/adult · 1/base · 565e7a97"
-contentUuid: "5248eaf4-4447-5898-b988-ff2e363733f4"
-diamondUuid: "fad70aa9-b5af-8219-9a3d-a029f7e89d09"
-uuid: "565e7a97-d3fe-89c6-873d-9295af861ead"
-horo: 1
+coordinate: "vocabulary/adult · 2/share · d9fef33b"
+contentUuid: "932981f2-2c58-55c8-87b2-1d2eed88492c"
+diamondUuid: "352cbddd-d5ce-8891-a122-01ed23696c0a"
+uuid: "d9fef33b-4d27-807b-afb9-461db33cbdbc"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 34
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a8c8e25f-273e-8c84-acdd-077ae71ea4ab"
+  computationUuid: "5645320d-b067-8277-a8b6-18da6451dfad"
   stages:
     - stage: path
       stageUuid: "647100ed-6c7b-89df-8209-7c63d0565d78"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "01e3b544-19ef-8a4c-ad64-0039eef38d46"
     - stage: horo
-      stageUuid: "37c1e23e-6f90-8c43-a55a-f676fd749c25"
+      stageUuid: "7ee4fe55-1bf0-85b1-8179-334791dfaf4e"
     - stage: seal
       stageUuid: "4c9d57c5-0f83-8391-b3c5-b3ae848b6867"
     - stage: uuid
-      stageUuid: "b5d17d4d-ad9d-8488-ba71-f584f62cb2fb"
+      stageUuid: "1ce4c80e-9a42-8528-8aa4-3b8b81df6f70"
 version: 2
 ---
 # adult

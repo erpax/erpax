@@ -2,10 +2,10 @@
 name: results
 description: "Use when reasoning about results as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: results
-coordinate: "results · 5/round · 246b2991"
-contentUuid: "f437c985-8489-5010-8216-11bc849b781a"
-diamondUuid: "144928f6-f23f-85e5-8cea-bf9b33be2e27"
-uuid: "246b2991-de24-8055-b856-1d145ad7584d"
+coordinate: "results · 5/round · b91c41d7"
+contentUuid: "75ef8848-96ee-5b6b-9ef3-8d3f86063d26"
+diamondUuid: "d64bd290-cc36-8827-b848-a1d84647dea1"
+uuid: "b91c41d7-6b11-85b3-9724-d9d9658e64ce"
 horo: 5
 typography:
   partition: results
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "95d40830-efb9-8526-85d3-28c50194cf4e"
+  computationUuid: "49d5ec96-fe0d-8359-8492-be2d5ecdedd2"
   stages:
     - stage: path
       stageUuid: "3350849a-2792-88c6-b44c-d386b11d988a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7df32aac-ce14-8027-a2d6-fae27ab83655"
     - stage: horo
-      stageUuid: "c541cbb4-2830-82fb-95fe-b4c030206b8d"
+      stageUuid: "49744682-a349-8c65-a91d-18ea08630fb0"
     - stage: seal
       stageUuid: "8406edc2-9ad7-8e82-82f3-73d820cdb8ef"
     - stage: uuid
-      stageUuid: "92302fa4-667a-867c-84b2-0aa48f589f3a"
+      stageUuid: "cf9864db-c4cd-850a-9c88-55fbd0058aca"
 version: 2
 ---
 # results

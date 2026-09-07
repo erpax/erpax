@@ -2,11 +2,11 @@
 name: sale
 description: "Use when reasoning about sale — A schema.org component word, collided out of schema.org compounds — fused from SaleEvent (sti · collapse · merge)."
 atomPath: sale
-coordinate: "sale · 8/crest · 5db3cbf0"
-contentUuid: "add0569f-57e0-530e-bc82-79947cadf459"
-diamondUuid: "8dd23a99-3ca8-8eac-890d-fce55902c6d3"
-uuid: "5db3cbf0-c7d5-84e2-ba07-fdd74cbcd2e9"
-horo: 8
+coordinate: "sale · 7/descent · 089e162c"
+contentUuid: "d1cc08df-f19d-5831-903f-31ce857e7c85"
+diamondUuid: "0bc4b2c6-98b9-89fe-9524-1c18d7c29a44"
+uuid: "089e162c-a45e-84ea-9098-82f66bda8f96"
+horo: 7
 typography:
   partition: sale
   bondDegree: 39
@@ -16,7 +16,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9709e74e-5b42-839b-bfe2-3458c4820d79"
+  computationUuid: "191a5cee-8620-8f85-8ba1-d07310b7a334"
   stages:
     - stage: path
       stageUuid: "a0c44437-4331-8715-8266-2f85f60aad8d"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "c1e08784-f71f-8231-a753-7e017f46c340"
     - stage: horo
-      stageUuid: "792739b0-5213-87de-a2f4-871cacab5938"
+      stageUuid: "72091645-0292-83cc-a091-c0d47eccb151"
     - stage: seal
       stageUuid: "27ab2eea-2387-8cbc-b1bf-94a77abb321e"
     - stage: uuid
-      stageUuid: "134d7bb2-f73f-8f04-b3f0-110b9ea89156"
+      stageUuid: "cec28f4b-1f4b-8aa3-b676-186c5756cc05"
 version: 2
 ---
 # sale

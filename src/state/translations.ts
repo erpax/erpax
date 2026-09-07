@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "state",
-    "uuid": "22bafabd-68b2-8c08-9074-2496f0d04746",
+    "uuid": "4f893d81-a40d-81c3-8d56-7b749a5625ec",
     "words": [
       "state"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about state — A state or province of a country.",
-    "uuid": "a198d578-ca6d-877b-a610-28a6102074ee",
+    "uuid": "5cc62058-15b7-8dfd-a014-9fd6c37089c1",
     "words": [
       "use",
       "when",

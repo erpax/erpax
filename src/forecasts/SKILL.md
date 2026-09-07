@@ -2,18 +2,18 @@
 name: forecasts
 description: "Use when forecasting on Earth's cardinal homology tips — phase-locked ±ω steps at 0°·90°·180°·270°, composed with navigation.predictNext; structural forecasts only (not weather); physical datum WGS 84."
 atomPath: forecasts
-coordinate: "forecasts · 8/crest · 86238304"
-contentUuid: "2779ceb9-2e6c-5399-a7ff-f0bdc13d8f69"
-diamondUuid: "046e1bda-8418-8cf5-90ac-4bbadfb95ec6"
-uuid: "86238304-68ae-8d88-ade1-cf5143bf1464"
-horo: 8
+coordinate: "forecasts · 2/share · 4c943ce2"
+contentUuid: "911abdd4-8567-5b2f-ad52-85249ad86b5c"
+diamondUuid: "700582dc-9caa-82dc-8fa5-2c0c5630745c"
+uuid: "4c943ce2-2f12-85f9-b4a4-4c0cd6af88a3"
+horo: 2
 typography:
   partition: forecasts
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e0b93c67-4440-8eea-ab3f-6a6e804c125b"
+  computationUuid: "8330ddf8-d4de-8489-a0d7-9c728f06a505"
   stages:
     - stage: path
       stageUuid: "26c5b5c7-1b4b-8ff0-b062-13ececef6854"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "feefc8f9-3c55-8019-a0cf-61c65489372c"
     - stage: horo
-      stageUuid: "fe5e365d-852f-8051-bb00-2258aa97a10e"
+      stageUuid: "e6e1ac96-adaa-81f2-b17b-955c836399be"
     - stage: seal
       stageUuid: "21ca9dcc-08c3-8fc8-8ddd-28ebfcf3da76"
     - stage: uuid
-      stageUuid: "d2ffe15d-770a-8f8d-9acb-4099ff942a09"
+      stageUuid: "7edf87f1-9172-821f-bbc3-46fa6df78ae7"
 version: 2
 ---
 # forecasts — phase-locked Earth tip forecasts

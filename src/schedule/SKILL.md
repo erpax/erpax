@@ -2,18 +2,18 @@
 name: schedule
 description: "Use when assigning work to calendar slots — resource schedules, shift rosters, project timelines, appointment booking. The time-coordinate commitment."
 atomPath: schedule
-coordinate: "schedule · 5/round · 68d49133"
-contentUuid: "10d84337-1692-5f61-a8d3-9d3b05f2306d"
-diamondUuid: "689144fd-7658-8c6f-acad-7f57cb3308ea"
-uuid: "68d49133-46cd-80f3-b087-3641e65455d0"
-horo: 5
+coordinate: "schedule · 8/crest · 3faf267d"
+contentUuid: "5d2417a8-a630-55c8-90a0-8dcea0538527"
+diamondUuid: "4f7d7597-8317-83cd-a7a8-99e0925cc24d"
+uuid: "3faf267d-b5b6-83cc-a9ea-fcee38135070"
+horo: 8
 typography:
   partition: schedule
   bondDegree: 79
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2024b7ba-76b2-8ea9-a374-3517727623f2"
+  computationUuid: "fff5439b-3088-8976-a0e9-94e428954686"
   stages:
     - stage: path
       stageUuid: "259af7f0-2e78-856a-89aa-7896763108ce"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "413a0365-ee02-8e3d-b919-72b871054848"
     - stage: horo
-      stageUuid: "6954595b-12be-8c61-8afd-4ea68b60d680"
+      stageUuid: "c52ee13c-9c40-8336-9bf6-0e134999e687"
     - stage: seal
       stageUuid: "1bb48b25-5485-8342-8157-3ee8c8db0514"
     - stage: uuid
-      stageUuid: "59e86d6e-7425-87b7-9863-f7d9858b9f7b"
+      stageUuid: "1609a35a-9bab-8662-be9d-4a72e7ab2141"
 version: 2
 ---
 # schedule

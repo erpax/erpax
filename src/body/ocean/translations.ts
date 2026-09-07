@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ocean",
-    "uuid": "230ebe81-5f05-84bb-9a9f-03b00fbeca47",
+    "uuid": "cd602cfe-d8c6-826a-b747-474edb8cb73b",
     "words": [
       "ocean"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ocean as a anatomical part of body — vocabulary pivot to @/ocean; nested not duplicated.",
-    "uuid": "1f35d6a7-3c4b-8243-a939-cc97d91dd85c",
+    "uuid": "78e5d805-5406-82be-b51f-cf2ca111d87d",
     "words": [
       "use",
       "when",

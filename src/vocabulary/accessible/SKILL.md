@@ -2,11 +2,11 @@
 name: accessible
 description: "Use when reasoning about accessible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/accessible"
-coordinate: "vocabulary/accessible · 2/share · c5fc8cdc"
-contentUuid: "dbfd468d-9f8e-506e-ab06-1de4fa4f5c46"
-diamondUuid: "11d92661-762e-87c8-ad27-40f31ecf0052"
-uuid: "c5fc8cdc-a221-87ce-a83a-30792c246d64"
-horo: 2
+coordinate: "vocabulary/accessible · 4/weave · d1647bfa"
+contentUuid: "2775c03f-36b7-564e-88c1-d3581fe47d4b"
+diamondUuid: "a7e0d0bc-6009-831c-8730-6fa721f084ed"
+uuid: "d1647bfa-132b-8b9e-8ab4-d29df87d1782"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a195d138-420e-85ca-90ea-97ffa51a6558"
+  computationUuid: "2cc10835-d0ee-888f-ba9a-38d3bc4471e8"
   stages:
     - stage: path
       stageUuid: "765f4abf-c18d-846a-89ac-5add71826d95"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "767dbde9-400a-8592-a1f5-ff65c637f563"
     - stage: horo
-      stageUuid: "9ddbdf0b-7f6e-8553-a1c9-16225c4a2104"
+      stageUuid: "decbf5de-e943-8f25-9907-de0d0aa5eb0a"
     - stage: seal
       stageUuid: "2ff67a52-30b7-8990-9ed8-e948d0f897ae"
     - stage: uuid
-      stageUuid: "1a8c16bb-8b23-8f02-89e2-192d599c586b"
+      stageUuid: "40fe6b60-28a7-8276-a752-ab97873c7e9f"
 version: 2
 ---
 # accessible

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pagination",
-    "uuid": "2cc65c60-04e4-8ff7-9b36-a526be4ff8ae",
+    "uuid": "848707f9-02b8-8871-bc84-a937f630ae3b",
     "words": [
       "pagination"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about pagination — Any description of pages that is not separated into pageStart and pageEnd; for example, \\\"1-6, 9, 55\\\" or \\\"10-12, 46-49\\\".",
-    "uuid": "815235f9-23a3-8051-981e-3f797d96d002",
+    "uuid": "e0e0c044-5581-8077-974e-ffa53c189263",
     "words": [
       "use",
       "when",

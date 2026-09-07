@@ -2,19 +2,19 @@
 name: uuid
 description: "Use when the seal must pass without Payload — the substrate-independent gate stack (aura, folders, imports, typecheck, readme, boundary, diamond, typography, cloudflare-ai) crossed into one fail-closed verdict."
 atomPath: "confirm/uuid"
-coordinate: "confirm/uuid · 2/share · dcb24c65"
-contentUuid: "f026306a-3d84-5aa2-b002-ba64d317e221"
-diamondUuid: "e534116b-2baa-87ee-9c2c-3ac5559bf53d"
-uuid: "dcb24c65-6ede-80ae-8f79-9ca2ec425222"
-horo: 2
+coordinate: "confirm/uuid · 7/descent · aea62bfd"
+contentUuid: "535d3a52-5562-5ec3-b1f9-65387395eb8c"
+diamondUuid: "4a9691f4-d0eb-8059-827a-1bb42c30a4ce"
+uuid: "aea62bfd-5a06-8f17-8835-8009333c25de"
+horo: 7
 typography:
   partition: confirm
-  bondDegree: 789
+  bondDegree: 791
 standards:
   - "ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable"
 bindings: []
 signatures:
-  computationUuid: "19720836-2e9e-8d99-aea4-c12718a2734a"
+  computationUuid: "9cb9815d-381f-88a6-9f85-5dd48c907b17"
   stages:
     - stage: path
       stageUuid: "880fce06-e124-8e72-864e-f3bf4e80a429"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1c903c2f-0509-8bfc-af05-b4799117eee8"
     - stage: horo
-      stageUuid: "78a5a02b-8eb6-8d1c-a368-d556774ad699"
+      stageUuid: "0b8097e8-51ee-8041-af94-bb7ff571d630"
     - stage: seal
       stageUuid: "943059ea-a848-8bd6-81e9-5ea94efdd7a9"
     - stage: uuid
-      stageUuid: "1f482e66-1c47-8a3b-b05a-03e317fdc0e5"
+      stageUuid: "b308f640-bc7b-8201-8ba1-6a99fc71cf5a"
 version: 2
 ---
 # confirm/uuid — all is passed with uuids, without payload

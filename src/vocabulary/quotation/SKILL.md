@@ -2,11 +2,11 @@
 name: quotation
 description: "Use when reasoning about quotation — A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use isB"
 atomPath: "vocabulary/quotation"
-coordinate: "vocabulary/quotation · 8/crest · 625f08e9"
-contentUuid: "196b210c-2434-5a19-b6b8-f9b65065d3bb"
-diamondUuid: "9f39d3f0-e5e3-88a4-9f05-65cc04ce41cf"
-uuid: "625f08e9-dc98-86c4-814e-bde4357a73e9"
-horo: 8
+coordinate: "vocabulary/quotation · 4/weave · 13612b26"
+contentUuid: "e22627f5-aeff-5f33-82cc-b7710d6a9fa9"
+diamondUuid: "1ef59641-094c-8044-a849-576b5d7a1763"
+uuid: "13612b26-723d-8cce-a263-a04a0d46e86a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9632c57b-dd04-8dca-ad8c-f1edd2c69f84"
+  computationUuid: "b86d8ce9-6d29-8fc1-b628-b4e68a91de8d"
   stages:
     - stage: path
       stageUuid: "576e798a-ade7-8b59-b562-c4f6c8563d26"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d0e788e5-d73e-8d9e-9887-bdddef33e317"
     - stage: horo
-      stageUuid: "541b8745-ce0b-8dcd-bc4a-c6191e7b15d8"
+      stageUuid: "609ca447-0bca-80f8-a753-be2a868c91bf"
     - stage: seal
       stageUuid: "7511e2c0-056a-807b-874c-94126a719ab8"
     - stage: uuid
-      stageUuid: "569a25be-6805-8c7d-b447-b763a2b4e686"
+      stageUuid: "fcc76c11-22a3-8163-96e8-b4737f98ff5d"
 version: 2
 ---
 # quotation

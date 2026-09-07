@@ -2,18 +2,18 @@
 name: github
 description: "Use when reasoning about the git remote as a read API onto the corpus — the same one-word atom tree the filesystem and the mcp gateway expose, served over https (raw paths, the contents API, git clone). The third face of the one corpus; a snapshot, never a separate source."
 atomPath: github
-coordinate: "github · 4/weave · 76a0d211"
-contentUuid: "2b8b6bc6-3f5f-5700-853e-3518f75d0691"
-diamondUuid: "a8b69ebd-daec-8502-885b-4b5a58bb3790"
-uuid: "76a0d211-7d16-8d97-a323-70072b45fc3f"
-horo: 4
+coordinate: "github · 7/descent · 310e572a"
+contentUuid: "cdddba9e-51ee-54ef-bad7-1208d8109681"
+diamondUuid: "a6d0b4a4-0f83-87a2-b88b-a5a445dab973"
+uuid: "310e572a-5b60-8680-9515-600cd0cca84d"
+horo: 7
 typography:
   partition: github
   bondDegree: 57
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4dc933b4-5160-8e0b-a41b-1c6214a8c144"
+  computationUuid: "534cf2b9-5cd0-8be2-b5cf-d85a06be597e"
   stages:
     - stage: path
       stageUuid: "82ee52db-93b6-803c-9cfc-8228a7c6a397"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "abb396f8-f532-88a1-b665-684edafa180e"
     - stage: horo
-      stageUuid: "a2ed8f04-85af-87c4-b3ee-c7aa61507ce9"
+      stageUuid: "8db0d542-d538-8500-9d7e-c190dabd0e8f"
     - stage: seal
       stageUuid: "c2d35af5-91b0-802a-ae1b-91fc60c40b96"
     - stage: uuid
-      stageUuid: "491b99c3-7218-8152-a920-1a9383193549"
+      stageUuid: "887cca3e-92d3-8164-8a6a-331787dc53a0"
 version: 2
 ---
 # github — the repository as a read API

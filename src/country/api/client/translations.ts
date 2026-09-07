@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "client",
-    "uuid": "7d573258-d246-8576-b387-81fd99dd1397",
+    "uuid": "2ca7973c-23c6-8772-8f8f-f5f7c1c198a5",
     "words": [
       "client"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when calling the public, no-auth and key-based official country APIs (VIES, Companies House, KvK, Brønnøysund, INSEE, BG Търговски Регистър, Peppol, EU/OFAC sanctions, БНБ/ECB FX) and resolving them through the EU national→pan-EU fallback chains.",
-    "uuid": "a642f047-6c9e-81f0-9ad3-163f08534b08",
+    "uuid": "3a4adc54-dfc3-828f-8295-fd1fb6e78e61",
     "words": [
       "use",
       "when",

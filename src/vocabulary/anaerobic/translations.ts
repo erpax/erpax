@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "anaerobic",
-    "uuid": "68f1b33c-da7c-8fa9-ad10-b7202318e07d",
+    "uuid": "5c6ad080-80f0-8e13-a491-158c7ae32253",
     "words": [
       "anaerobic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about anaerobic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "80f56a47-510d-8695-8e10-2da2bf2fc0f2",
+    "uuid": "ec35e7ee-10d9-8695-a1d7-061a46e1c5db",
     "words": [
       "use",
       "when",

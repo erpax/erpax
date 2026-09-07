@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "governing",
-    "uuid": "f9944aee-8d33-8dcf-981b-af688342b657",
+    "uuid": "697d4cc5-e672-8625-8f78-46347c5d9acb",
     "words": [
       "governing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when naming the choice of which body of rules controls an agreement — the parent term for the choice-of-law vocabulary.",
-    "uuid": "87b03d8b-cc5e-8820-b387-773ee1087106",
+    "uuid": "e14046f1-933f-826e-b3e8-7ec1b14d9de2",
     "words": [
       "use",
       "when",

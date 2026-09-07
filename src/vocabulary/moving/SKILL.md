@@ -2,11 +2,11 @@
 name: moving
 description: "Use when reasoning about moving as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/moving"
-coordinate: "vocabulary/moving · 1/base · 2afa973e"
-contentUuid: "00b4ef66-fbcd-57e9-9434-683fc12c113a"
-diamondUuid: "63c23336-2d05-8e5e-8446-d5d906ab6a8c"
-uuid: "2afa973e-610b-8d47-8705-bc7798e0f67a"
-horo: 1
+coordinate: "vocabulary/moving · 2/share · f62627aa"
+contentUuid: "246ed783-b434-5d3d-b7a6-59913da765e6"
+diamondUuid: "23f7a659-2843-8ea0-be44-b91635a25d94"
+uuid: "f62627aa-67d2-82e1-888f-39e3aaec0c9d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "65e47d8f-65e1-819d-a977-dd501e6116dd"
+  computationUuid: "0d313b34-5a94-8317-932e-a7abd0872de7"
   stages:
     - stage: path
       stageUuid: "f1bced41-a274-8386-9eda-2126558f14c3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5cf08f97-94aa-84fb-9523-47dfc257481b"
     - stage: horo
-      stageUuid: "5d99918b-309b-8278-b222-a590a1a2285f"
+      stageUuid: "37743a48-1ed9-80d4-8091-995f2034d0e6"
     - stage: seal
       stageUuid: "50bd7900-b181-8bbe-bc6f-d0cfb2074c10"
     - stage: uuid
-      stageUuid: "308e983c-d97c-82b9-99a4-11f46ce31b5d"
+      stageUuid: "588aca9c-3cbb-8398-a502-1cb5d670e013"
 version: 2
 ---
 # moving

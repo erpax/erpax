@@ -2,11 +2,11 @@
 name: collateral
 description: "Use when reasoning about collateral as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/collateral"
-coordinate: "vocabulary/collateral · 4/weave · 34657435"
-contentUuid: "53144a49-d66b-51f0-9aca-20b2bef85ab4"
-diamondUuid: "b42ad294-2cbd-8502-a19a-ab998815af9b"
-uuid: "34657435-379f-8cd5-97bd-cc3fd90fb7fb"
-horo: 4
+coordinate: "vocabulary/collateral · 2/share · 7f4d43f2"
+contentUuid: "1acc3548-a115-5abe-b640-d748e9268f5b"
+diamondUuid: "332b7353-aa66-8410-9656-e1e35121448a"
+uuid: "7f4d43f2-0893-8abd-9a9b-c44246b504fa"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "504b3e45-a2c4-8707-8dd4-fae2ba2d4097"
+  computationUuid: "120e7613-9d95-83c2-bfb7-1e5ba61ef629"
   stages:
     - stage: path
       stageUuid: "c5f90008-4dc4-8634-bb30-9c5a74180d57"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c84f36c6-06d6-88c8-972f-96d81a94e864"
     - stage: horo
-      stageUuid: "f7733dff-9148-8aca-95fa-da02c9524b9a"
+      stageUuid: "c7432568-88a7-86fa-b3da-c1829a5a4ad3"
     - stage: seal
       stageUuid: "37cdd94f-f756-8787-a587-67c8c6e4a100"
     - stage: uuid
-      stageUuid: "c545c81d-d10e-8a5d-97ea-fbe5a3347e90"
+      stageUuid: "d6318dc7-1ab8-8a3c-9268-8196910e052a"
 version: 2
 ---
 # collateral

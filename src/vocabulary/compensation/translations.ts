@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "compensation",
-    "uuid": "e4971643-423c-8603-9f15-cd914b5f0ecc",
+    "uuid": "83164d62-0613-88f3-86dc-5c750f8bf429",
     "words": [
       "compensation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or analyzing an employee's total pay structure — base salary, bonus, incentives, benefits value, equity, deductions. The compensation-concern collecting all economic value flows from employer to worker.",
-    "uuid": "b6779aa5-0907-8d95-8edc-8caf96eeba2e",
+    "uuid": "b83c6d8a-daee-816e-86cb-2a86c7d29f86",
     "words": [
       "use",
       "when",

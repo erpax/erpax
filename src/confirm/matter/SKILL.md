@@ -2,18 +2,18 @@
 name: matter
 description: "Use when confirming a real change rather than the uuid substrate — the payload ⊗ vitepress ⊗ build lane, scoped to the files a turn touched or --full across the corpus."
 atomPath: "confirm/matter"
-coordinate: "confirm/matter · 5/round · 330d3f38"
-contentUuid: "d356131d-06a1-5115-96cf-55c5775e1f85"
-diamondUuid: "f86f2484-349c-8192-8b73-22ebf506f9ea"
-uuid: "330d3f38-7f15-84ef-b2c8-b11f80f86d80"
-horo: 5
+coordinate: "confirm/matter · 4/weave · 826588d6"
+contentUuid: "b16e2209-24ad-5388-8ef7-da57b16aa05e"
+diamondUuid: "ca1060b1-c54f-890d-bfcf-1b70dbed48d4"
+uuid: "826588d6-7f80-89cd-9aa4-7652ad480e5d"
+horo: 4
 typography:
   partition: confirm
   bondDegree: 109
 standards: []
 bindings: []
 signatures:
-  computationUuid: "82cf9a6e-12d7-847c-864f-c89898d43fd9"
+  computationUuid: "d99c2097-2024-855e-8e09-5e39d7a6dfc0"
   stages:
     - stage: path
       stageUuid: "2043f170-53e2-8735-b119-c92da5208b2a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cc08238a-bb1e-87d8-bba6-433ca945f9ff"
     - stage: horo
-      stageUuid: "ae5a5ea9-bd32-87b2-8d96-f085cd893528"
+      stageUuid: "c38393be-02d9-81fb-a5bd-d7e34afb3ca3"
     - stage: seal
       stageUuid: "a372aabd-0f90-84ee-b03e-0220437f71a0"
     - stage: uuid
-      stageUuid: "72ac724f-18d0-88a2-9710-b12f5fe6c086"
+      stageUuid: "7bc57d2e-fd4c-8286-a692-e64c1be8d546"
 version: 2
 ---
 # confirm/matter — the lane that needs the app

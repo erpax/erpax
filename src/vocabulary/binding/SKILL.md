@@ -2,18 +2,18 @@
 name: binding
 description: Use when modelling one binding — the singular model of the bindings collection (the plural store); a configured link between a name and the resource that backs it.
 atomPath: "vocabulary/binding"
-coordinate: "vocabulary/binding · 2/share · 1f971eae"
-contentUuid: "6766f08b-fe60-55d8-b6bd-3dfdbbf39a8d"
-diamondUuid: "c8419c71-3ad3-867c-a876-304a8f7da9a4"
-uuid: "1f971eae-6ed9-84ac-babe-4eb87326920f"
-horo: 2
+coordinate: "vocabulary/binding · 4/weave · 7aa16b86"
+contentUuid: "905319ae-2bf6-5732-949e-399b0fc0ffee"
+diamondUuid: "1749a002-a0b8-8841-a371-830101e22306"
+uuid: "7aa16b86-cb32-8596-84e2-05993769b97f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 14
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2f6b506f-c5ff-8119-99bf-5884479a28bb"
+  computationUuid: "bd2edf39-e401-84b2-ab7c-2edc917e91e0"
   stages:
     - stage: path
       stageUuid: "51ee7863-dd15-83b2-a17c-d667753d4803"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0f1130f1-6615-89fc-bd92-1d4c1bc407bd"
     - stage: horo
-      stageUuid: "43e0d639-20c4-8819-ae47-1318c08f6b5f"
+      stageUuid: "c3146bae-ad7b-8032-a7b0-d1ac4cf3bad4"
     - stage: seal
       stageUuid: "e88fb542-9520-847c-bfbd-1ab58eee7818"
     - stage: uuid
-      stageUuid: "967f2a10-b86a-8902-820e-42156fca8837"
+      stageUuid: "ee7224ea-57d6-8c84-ac5c-a4610a10c72e"
 version: 2
 ---
 # binding — the model of one [[bindings]] row

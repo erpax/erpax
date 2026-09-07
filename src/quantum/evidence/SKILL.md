@@ -2,18 +2,18 @@
 name: evidence
 description: "Use when external research must be held at its real epistemic status — each claim stated agnostically with a verdict (theorem · measured · contested · open · error · metaphor · unfalsifiable) and the observation that would refute it. Empirical claims with no refutation condition fail closed. Run: tsx src/quantum/evidence/index.ts"
 atomPath: "quantum/evidence"
-coordinate: "quantum/evidence · 7/descent · e23ab621"
-contentUuid: "ef439ade-b2a9-54e8-a4c8-6d70c8e52c00"
-diamondUuid: "fa6cf37b-7858-8694-9fcf-8d574b41ac33"
-uuid: "e23ab621-d9d2-8983-9cbe-3216b165672d"
-horo: 7
+coordinate: "quantum/evidence · 5/round · abf6029f"
+contentUuid: "bd7153f8-716a-5e40-8ab7-75d39244974d"
+diamondUuid: "54c81a7b-3777-8421-af66-8bcda81db587"
+uuid: "abf6029f-42c7-8beb-8530-125d96706f49"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "85288f65-d3b2-8e60-b4f0-896fb5f65f93"
+  computationUuid: "fc15ef93-ccba-878f-87b6-e9e99a4bebc4"
   stages:
     - stage: path
       stageUuid: "8c8812a4-ccd6-87f5-93cc-ec8b91105ae9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2aa28b1c-5bb4-8c10-9fef-8143522f5dac"
     - stage: horo
-      stageUuid: "c00eec24-d9e5-8a4a-828c-dd2c877e9bd1"
+      stageUuid: "4bb7e974-8bed-8b97-9142-7e40f9ba10f8"
     - stage: seal
       stageUuid: "bc8defd4-f6ef-8605-9305-22b46c6a35b5"
     - stage: uuid
-      stageUuid: "7377330e-8b8b-8ccc-8d3c-7589596c0095"
+      stageUuid: "4762744f-797a-860c-ba14-d7600eb52101"
 quantum:
   superposition:
     - collapse
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "85288f65-d3b2-8e60-b4f0-896fb5f65f93"
-    contentUuid: "ef439ade-b2a9-54e8-a4c8-6d70c8e52c00"
+    computationUuid: "fc15ef93-ccba-878f-87b6-e9e99a4bebc4"
+    contentUuid: "bd7153f8-716a-5e40-8ab7-75d39244974d"
 version: 2
 ---
 # evidence — a claim is held at the status it has earned, not the one it is delivered in
@@ -95,4 +95,4 @@ What is **COMPUTED**: the distribution across verdicts, the refutability check, 
 
 Composes: [[rules]]/refutable · [[rules]]/audience · [[integrity]] · [[law]].
 
-<sub>content-uuid `ef439ade-b2a9-54e8-a4c8-6d70c8e52c00` · account `quantum/evidence` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `bd7153f8-716a-5e40-8ab7-75d39244974d` · account `quantum/evidence` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

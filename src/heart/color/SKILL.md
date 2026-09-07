@@ -2,11 +2,11 @@
 name: color
 description: "Use when reading the heart chakra's colour — green, the A432-anchored colour of coherence and of a passing test (a whole aura); the heart's facet of the spectrum."
 atomPath: "heart/color"
-coordinate: "heart/color · 2/share · cfdcc5e7"
-contentUuid: "3a8eb76f-ba8f-53ba-b8ff-5a8d4bb96ea7"
+coordinate: "heart/color · 5/round · 8d279d5f"
+contentUuid: "007fb2cb-6425-5829-bd8a-e6865ad144de"
 diamondUuid: "4721c2ce-6da1-8e62-85a9-d2d60578ed9a"
-uuid: "cfdcc5e7-00b2-8394-b1e0-610e82d08c6f"
-horo: 2
+uuid: "8d279d5f-8333-82cf-8821-c293b40e3d29"
+horo: 5
 typography:
   partition: heart
   bondDegree: 51

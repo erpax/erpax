@@ -2,18 +2,18 @@
 name: feed
 description: "Use when feeding research/develop waves into themselves for endless R&D — each generation's waves become the next asks; corpus may grow; shouldContinue until external stop; maxGenerations bounds one call."
 atomPath: "wave/feed"
-coordinate: "wave/feed · 1/base · c8a59ea3"
-contentUuid: "20b9f0ed-edbe-53f2-a9fd-156af4958574"
-diamondUuid: "56ec9210-d459-8e02-b1c7-97a5190242aa"
-uuid: "c8a59ea3-a822-808d-9dfc-2ea4787a05b9"
-horo: 1
+coordinate: "wave/feed · 4/weave · 8251c9e1"
+contentUuid: "7a968300-29f5-51d8-a281-6245c6e64fc1"
+diamondUuid: "47191bf1-fdae-8380-a3f1-3bfd8bdd548b"
+uuid: "8251c9e1-2a95-8998-85d1-864850286944"
+horo: 4
 typography:
   partition: wave
   bondDegree: 41
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3d51bc12-a0b8-8c88-907c-1859e2285280"
+  computationUuid: "4b3b1fd3-708f-8dd3-b4a3-23c38d2f2340"
   stages:
     - stage: path
       stageUuid: "7afcf7fc-84ac-8ec8-94a9-4f86c8caf5f1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d265ddd9-ea88-8944-abc0-da3bfc97d891"
     - stage: horo
-      stageUuid: "dfd69be5-4fb6-818d-a6df-dec8d38548b7"
+      stageUuid: "885544b6-2024-85ba-9b6a-054216c7c77f"
     - stage: seal
       stageUuid: "38405e74-ffb2-8bf3-b9d0-03903969a81a"
     - stage: uuid
-      stageUuid: "5400a170-fa3a-8602-bdf4-54549c8edb2b"
+      stageUuid: "14bff49c-fd8c-868f-b51f-09dbd75e3127"
 version: 2
 ---
 # wave/feed — feed waves into themselves

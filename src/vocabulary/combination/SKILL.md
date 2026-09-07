@@ -2,18 +2,18 @@
 name: combination
 description: Use when modelling one combination — the singular model of the combinations collection (the plural store); a specific grouping of selected options or parts.
 atomPath: "vocabulary/combination"
-coordinate: "vocabulary/combination · 2/share · dcd5955d"
-contentUuid: "944f4358-5c65-519a-9401-bcae99717680"
-diamondUuid: "1d5d826b-e6e6-86f4-9be3-338944043a1f"
-uuid: "dcd5955d-2aee-8cd5-8551-e411e61efff5"
-horo: 2
+coordinate: "vocabulary/combination · 8/crest · e24a111b"
+contentUuid: "c6b20738-63d6-5675-a400-1710ff0caae8"
+diamondUuid: "d0727ef9-943b-8d2e-a6e3-7553c06fa72b"
+uuid: "e24a111b-c6c4-8893-bbe8-0ae3b64e44e0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fdfe6e90-3552-8a18-a2be-2720aedcbd03"
+  computationUuid: "f6a90446-5d73-84ab-8db7-b518c9d68d0d"
   stages:
     - stage: path
       stageUuid: "ec6606d6-d574-88e4-a676-d40a26cd356a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dede7e95-af94-8632-873f-280cc4528175"
     - stage: horo
-      stageUuid: "e51ead68-91a9-81ca-b7f7-8b08cbbbe339"
+      stageUuid: "d46950fc-ca35-80a7-ad36-a882e9328e40"
     - stage: seal
       stageUuid: "1e48b8fb-ecce-8ddd-a0be-70a1d29b0fb0"
     - stage: uuid
-      stageUuid: "6a046b25-475d-8add-a54f-a2d1d95ff0d1"
+      stageUuid: "73fad958-57cf-87b3-a414-b563be46256c"
 version: 2
 ---
 # combination — the model of one [[combinations]] row

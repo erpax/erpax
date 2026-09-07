@@ -2,11 +2,11 @@
 name: rxcui
 description: Use when reasoning about rxcui — The RxCUI drug identifier from RXNORM.
 atomPath: rxcui
-coordinate: "rxcui · 5/round · 6f044524"
-contentUuid: "4a71069d-186a-5304-97c0-8c830f2adebf"
-diamondUuid: "4d53559a-f277-87e6-9fa1-1b4b5df8254e"
-uuid: "6f044524-0775-80ff-ac21-607c9f1dcc27"
-horo: 5
+coordinate: "rxcui · 2/share · 09fcef62"
+contentUuid: "d754366c-6fe4-51b4-951b-6769ddbec754"
+diamondUuid: "6d475bd2-df02-8df5-b9c8-0b83bcf763d6"
+uuid: "09fcef62-d38a-8c97-ac0b-27c051728b4f"
+horo: 2
 typography:
   partition: rxcui
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f1659de5-0dd0-804d-887b-c008d7317496"
+  computationUuid: "5435e1a1-bd2c-80cc-aaad-2cba8a62fb45"
   stages:
     - stage: path
       stageUuid: "ca890f3f-1893-8f65-a0f8-fb71c6a12d2d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cdeefe6f-3aea-825b-b046-5e796af15096"
     - stage: horo
-      stageUuid: "96344165-3594-805a-a57b-9b6c6e443901"
+      stageUuid: "a82b4850-06db-8b67-8016-8a14066fbe2a"
     - stage: seal
       stageUuid: "e8e7ec4e-8641-8971-ad02-f91c54aae396"
     - stage: uuid
-      stageUuid: "7aa3ae1b-bdc2-8897-a9ab-6310f91d1465"
+      stageUuid: "d79b039f-7f1b-816a-a146-850c1b939640"
 version: 2
 ---
 # rxcui

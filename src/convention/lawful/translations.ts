@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lawful",
-    "uuid": "4280c77c-ff9d-8456-bfee-fbd8c29daefe",
+    "uuid": "02feb75a-6d1c-8a09-86a4-57826087dc53",
     "words": [
       "lawful"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether every atom is accountable — the computed convention that each SKILL.md states its own **Law (the invariant), measured live as coverage = lawful / total over the real corpus tree.",
-    "uuid": "c91e22bc-4381-82b1-b496-6141e99adc30",
+    "uuid": "732f43e1-94f0-87eb-ba8d-73d544ef9eb9",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: shares
 description: "Use when computing or disclosing IAS 33 basic and diluted EPS — weighting shares, applying dilutive options/convertibles/IFRS 2 grants, splitting continuing vs discontinued operations, or restating a prior period's EPS. The per-period EPS computation node."
 atomPath: "fiscal/periods/earnings/per/shares"
-coordinate: "fiscal/periods/earnings/per/shares · 7/descent · 6efd038b"
-contentUuid: "9339bb7f-c06a-53f8-a0e1-c80ac15b92f7"
-diamondUuid: "475a5186-cbd9-8331-bbf0-93fa398ccedf"
-uuid: "6efd038b-d7c1-8c87-b4a2-d99e96d1657b"
+coordinate: "fiscal/periods/earnings/per/shares · 7/descent · 34f90caf"
+contentUuid: "9ca4e6d6-0631-524b-8fcd-df0926aacd4e"
+diamondUuid: "7cb18269-5f7b-8f73-9feb-b6caa0b622ba"
+uuid: "34f90caf-23d2-8f43-a215-2b36c1259033"
 horo: 7
 typography:
   partition: fiscal
@@ -28,7 +28,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7ce8e3b1-ce60-80a9-a128-7fcd9e6da676"
+  computationUuid: "db80ab3b-6700-86ef-8e85-0afaa901a6bb"
   stages:
     - stage: path
       stageUuid: "ecae1eb7-5dc8-8b6e-bde7-125d1842b92b"
@@ -39,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "6630307d-8824-818d-8117-53e50ad2d28b"
     - stage: horo
-      stageUuid: "48b445fa-30fc-8a77-9dcc-bdb917c7aaae"
+      stageUuid: "bcb28f2a-5e47-8099-9afd-ce39d2434e57"
     - stage: seal
       stageUuid: "b705a24d-bfd0-8fd0-988b-22ef5cda118c"
     - stage: uuid
-      stageUuid: "7a1ef832-4be8-8d65-aed6-22a3a991a219"
+      stageUuid: "33a7d928-7978-80f3-a1b7-c5a58971472f"
 version: 2
 ---
 # earnings-per-share

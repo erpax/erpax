@@ -2,10 +2,10 @@
 name: theorem
 description: "Use when the question is whether to trust a claim — including the user's, including the agent's. A claim is warranted only by REDUCING to composed base theorems; authority (who said it) is never a step, a cycle is a claim proven by itself, a missing ground is fiction. All is theorem of theorems, and it bottoms out at a base the graph cannot prove — assumed, stated in the open."
 atomPath: theorem
-coordinate: "theorem · 4/weave · 5dc5cf5e"
-contentUuid: "0cd6979f-af46-518c-a4c1-a76abab9de67"
-diamondUuid: "ca6917da-0133-83ed-bd4c-8dbcc8158745"
-uuid: "5dc5cf5e-b44d-8837-bf41-c6dbce5ca85c"
+coordinate: "theorem · 4/weave · d7e3a073"
+contentUuid: "49baecb5-7270-57f0-a90d-724f53620e3e"
+diamondUuid: "09f34de0-ca47-8efb-ad94-8048d0fee697"
+uuid: "d7e3a073-8a2b-86e6-81b1-84656e48970a"
 horo: 4
 typography:
   partition: theorem
@@ -14,7 +14,7 @@ standards:
   - · ISO · a named
 bindings: []
 signatures:
-  computationUuid: "982aa1b2-f70c-85fc-924b-e27048e8eeb2"
+  computationUuid: "78cd0845-30ed-8e37-a0cf-70e746142ec2"
   stages:
     - stage: path
       stageUuid: "f8550006-a6e3-8eac-8726-47987e033262"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fbee5133-0675-8fb5-a462-5a37cec4e9a2"
     - stage: horo
-      stageUuid: "68530278-7efb-8040-ac42-343e42ff2e6a"
+      stageUuid: "6942e765-ca81-8a18-b682-115afdd3d70e"
     - stage: seal
       stageUuid: "49e48c0c-edbb-8a36-88e6-e21073b042d6"
     - stage: uuid
-      stageUuid: "ee7ffd43-621f-83b7-9ae6-94f8dd7a0400"
+      stageUuid: "5577c6aa-4e2b-846b-a45a-bf1a1d2a6cff"
 version: 2
 ---
 # theorem — all is theorem of theorems; authority is never a step

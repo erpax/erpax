@@ -2,11 +2,11 @@
 name: neurologic
 description: "Use when reasoning about neurologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/neurologic"
-coordinate: "vocabulary/neurologic · 8/crest · ac9b9925"
-contentUuid: "1e1e5b34-192f-55e2-b660-93449fb57cf7"
-diamondUuid: "6a416130-daef-856a-97f6-e5c780c13fb5"
-uuid: "ac9b9925-74dc-847d-a242-50ca0e35ce18"
-horo: 8
+coordinate: "vocabulary/neurologic · 4/weave · 586fcf48"
+contentUuid: "d9158446-2a5a-5122-bd89-a20e20c6b430"
+diamondUuid: "ffdf35ce-5395-8aa3-bcbd-eeaab03f2c7a"
+uuid: "586fcf48-33b0-8ad5-b0a9-85476488d887"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a5e1a102-ca5e-8e3b-bcb2-8d87ec13b293"
+  computationUuid: "f86adc17-636c-80bb-9edf-9cd737dbb085"
   stages:
     - stage: path
       stageUuid: "20f86618-f580-81b8-ac81-83650626f511"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0f3ce399-52e1-8b2f-9cca-6741f49cc539"
     - stage: horo
-      stageUuid: "1d750b99-9392-8827-8e29-fb42a78a5739"
+      stageUuid: "15ad98a4-f0d7-8816-bc5a-21746a0c2751"
     - stage: seal
       stageUuid: "998087d3-b9c3-8595-aa1e-9aa68d86b2c3"
     - stage: uuid
-      stageUuid: "556d7f25-fd5d-8406-a3ff-b7b1582a17db"
+      stageUuid: "375f2e5c-a248-81b9-8cf2-055adb321694"
 version: 2
 ---
 # neurologic

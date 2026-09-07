@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fallback",
-    "uuid": "3907d380-5405-800f-9adf-735d90b93102",
+    "uuid": "34d5502b-7625-8f7d-bdc0-5158c2f24272",
     "words": [
       "fallback"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a currency value is missing, blank, or unknown — the blank currency XXX (ISO 4217 §6.5 \\\"No currency\\\") is the identity element of the currency category, so every row, hook, formatter, and conversion resolves cleanly to it instead of crashing.",
-    "uuid": "297f794b-cb0e-85c3-86ce-1f99379d8cc5",
+    "uuid": "3e3e1750-8303-88a1-ae52-a239694828a7",
     "words": [
       "use",
       "when",

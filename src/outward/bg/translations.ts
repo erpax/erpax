@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bg",
-    "uuid": "2ce6c434-e1aa-8dd7-8952-ac15c89ff495",
+    "uuid": "857faeed-e113-8686-bc51-b22f7ea281f0",
     "words": [
       "bg"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bg — Use for the two Bulgarian rails erpax codes against — БНБ daily exchange rates (CODE/REVERSERATE/RATE XML) and Търговски Регистър merchant lookup by дело. Both addresses were dead in production and are now fixed and captured; the contracts pin the euro-era shape, the DD.MM.YYYY fixing date, and the two 200-under-HTML traps that make a working endpoint read as no data.",
-    "uuid": "30f1deb1-2f8c-8e62-9100-bee3d2799797",
+    "uuid": "652caeee-5bbd-8069-9c30-b7f580a8fa0b",
     "words": [
       "use",
       "when",

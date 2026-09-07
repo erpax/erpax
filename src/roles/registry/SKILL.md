@@ -2,11 +2,11 @@
 name: registry
 description: Use when reasoning about registry — binds each role to the standards it answers to and the chain steps it may execute.
 atomPath: "roles/registry"
-coordinate: "roles/registry · 8/crest · 526e2910"
-contentUuid: "09a6c330-aeff-5683-802d-247240a0c990"
-diamondUuid: "1d4479ba-3b0f-8266-bede-e16fcb165fc1"
-uuid: "526e2910-db45-8da7-8f9e-e811056be5b5"
-horo: 8
+coordinate: "roles/registry · 2/share · e38f1163"
+contentUuid: "7607b953-4f63-5de8-a9e9-dc4f52583eec"
+diamondUuid: "d60461c4-faaa-8e81-9dc5-4e7e7740af47"
+uuid: "e38f1163-5728-858f-929f-3ea9103b61d2"
+horo: 2
 typography:
   partition: roles
   bondDegree: 31
@@ -44,7 +44,7 @@ standards:
   - "SOX §404 internal-controls + §302 officer-certifications"
 bindings: []
 signatures:
-  computationUuid: "deda2918-2eed-8506-a8ff-d5e145cc5296"
+  computationUuid: "65cbc158-36f9-8282-acd0-990493ffd9ee"
   stages:
     - stage: path
       stageUuid: "26075980-9fce-8ec4-9e0a-aa832af2995c"
@@ -55,11 +55,11 @@ signatures:
     - stage: links
       stageUuid: "c85cbb49-ebef-896c-b465-0ced7a69792c"
     - stage: horo
-      stageUuid: "aada72a0-c221-8ec2-b1a7-d0363e6e65ac"
+      stageUuid: "5af4a63f-7604-8d4b-b6df-cd98dba6f89b"
     - stage: seal
       stageUuid: "fc9ea01a-31f0-878d-8d0d-de7ab34785cc"
     - stage: uuid
-      stageUuid: "d7a6e14b-27cb-895a-8d8f-552719913e2d"
+      stageUuid: "1c3948e5-8bb0-8dde-aa92-50ed427fba54"
 version: 2
 ---
 # roles/registry — a role is what a person must satisfy, not a label on a user row

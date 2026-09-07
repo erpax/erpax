@@ -2,11 +2,11 @@
 name: contracts
 description: "Use when recording, approving, or recognizing revenue from customer contracts — IFRS-15 §10 master record with transaction price decomposition (fixed, variable, financing), performance obligations, contract combination, amendments, and SOX-gated approval. The canonical revenue-contract collection."
 atomPath: "customers/contracts"
-coordinate: "customers/contracts · 8/crest · f7e9ad4b"
-contentUuid: "ed1425d1-14a6-5197-852e-6b6c15eadca9"
-diamondUuid: "dfac162d-0026-8dc4-9c1e-3c03a9acfb0d"
-uuid: "f7e9ad4b-9489-81eb-8567-0f5df25ef52f"
-horo: 8
+coordinate: "customers/contracts · 4/weave · 0305a368"
+contentUuid: "fdfe5660-2fde-5283-8cf1-d691c868ee5d"
+diamondUuid: "e3106476-868d-8da6-8be1-1d3a7cf2d288"
+uuid: "0305a368-9811-89cb-a27d-c44b2fa62578"
+horo: 4
 typography:
   partition: customers
   bondDegree: 97
@@ -46,7 +46,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "82cfd1f0-f107-8a97-8735-c1b6aedaa874"
+  computationUuid: "1ac32d56-3e60-8730-ab1e-acc31ef65e29"
   stages:
     - stage: path
       stageUuid: "18721974-e2b6-8318-9112-35ae1d2a4a37"
@@ -57,11 +57,11 @@ signatures:
     - stage: links
       stageUuid: "632e0ccd-8050-8be6-b8dd-5f0e7f19abeb"
     - stage: horo
-      stageUuid: "4606eec9-6aad-82ba-9389-ecc80f319717"
+      stageUuid: "d64a143e-eccf-8309-a95b-1b3f31f022ef"
     - stage: seal
       stageUuid: "7e0fc517-0bfd-87e3-b04b-1f133806be6d"
     - stage: uuid
-      stageUuid: "cc215da1-5622-8502-8492-b369c2eb103b"
+      stageUuid: "701b72e3-ea2c-8d2a-8617-f765c04d15df"
 version: 2
 ---
 # contracts

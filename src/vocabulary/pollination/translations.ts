@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pollination",
-    "uuid": "5c86fb4f-6342-898a-ab30-b0fcfe5fcb07",
+    "uuid": "bb60d4cc-fd0d-84f7-96bc-344ff288b103",
     "words": [
       "pollination"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when fruit set depends on pollen transfer — pollination by insects (managed honeybees/bumblebees, wild pollinators), wind, or hand, required by fruiting crops (cucurbits, tomatoes, peppers) to set marketable fruit. A yield prerequisite for fruit/seed crops and an ecosystem service the farm must protect or provide.",
-    "uuid": "9f97fa1c-0a83-8d51-8b27-b2fb70673f85",
+    "uuid": "f591c77f-084a-841b-bc3d-fcc13df500b8",
     "words": [
       "use",
       "when",

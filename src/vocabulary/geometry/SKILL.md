@@ -2,11 +2,11 @@
 name: geometry
 description: "Use when reasoning about geometry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/geometry"
-coordinate: "vocabulary/geometry · 4/weave · dc8bc0b7"
-contentUuid: "0b6df8c1-a8bd-5da5-9065-7995bec7e8ba"
-diamondUuid: "1e22248f-0ef3-80ef-a225-99ea2bf050ed"
-uuid: "dc8bc0b7-b2a6-8fd9-a08a-af878e640549"
-horo: 4
+coordinate: "vocabulary/geometry · 7/descent · 80ece687"
+contentUuid: "42c3b5d6-e771-5451-93b8-1871d61460d6"
+diamondUuid: "e08de0fb-2727-895e-a0d2-fe4455f362a8"
+uuid: "80ece687-de62-8676-a6d5-3d9d8ca0bf45"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 8
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8e81f40-1307-82e4-b9d9-2885aa9da8a2"
+  computationUuid: "31568db1-b57b-81f3-aa15-bfb2e0d1a686"
   stages:
     - stage: path
       stageUuid: "600db828-917f-8e9f-9009-77b6d3833768"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a34006f7-fd66-8f53-af0b-7d3d318ec2ba"
     - stage: horo
-      stageUuid: "8558b17b-e075-8d70-a822-1fdbc598d742"
+      stageUuid: "f0278f5c-eee7-8af3-b38c-f0a946231a61"
     - stage: seal
       stageUuid: "48e08fc5-497e-8e5b-9dd3-7e308df4cae9"
     - stage: uuid
-      stageUuid: "458a4780-d03d-8188-8b3c-528959b1de43"
+      stageUuid: "a99c5f95-efaa-84d8-8b23-c2700dc61d15"
 version: 2
 ---
 # geometry

@@ -2,18 +2,18 @@
 name: license
 description: "Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination."
 atomPath: "vocabulary/license"
-coordinate: "vocabulary/license · 8/crest · 79932c77"
-contentUuid: "306f534c-b62a-56d4-ba2b-1c80adc40083"
-diamondUuid: "8ef2b745-1165-8935-a968-c6871d565c6f"
-uuid: "79932c77-9447-8d8b-8704-c9ad6af58df6"
-horo: 8
+coordinate: "vocabulary/license · 7/descent · 972de535"
+contentUuid: "8082357d-acea-5cbc-8484-540186e92012"
+diamondUuid: "ad15d8d5-4550-8b3e-8996-37e38907de95"
+uuid: "972de535-a025-803d-a526-e00becdf302b"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fb9d47b1-1369-8bae-841d-4bb873cdfc23"
+  computationUuid: "2098645f-de10-8027-af38-3be183beaba9"
   stages:
     - stage: path
       stageUuid: "48b2a27b-8437-8144-95a8-1079e87928a5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9621bea8-b663-8c8c-80af-b9122373271a"
     - stage: horo
-      stageUuid: "8297e998-9bc1-8303-a5e0-d5abb0c6d263"
+      stageUuid: "19c7653f-ba7f-8cfe-87cb-df6c9b947a9c"
     - stage: seal
       stageUuid: "a36d242b-3c92-87c4-bb47-d726d9e2ced5"
     - stage: uuid
-      stageUuid: "1386ac06-a0f4-868c-a5f6-4e4069f3e769"
+      stageUuid: "66b3c1f3-7ca3-8739-b302-2588bff863e1"
 version: 2
 ---
 # license

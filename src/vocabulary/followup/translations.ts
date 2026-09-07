@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "followup",
-    "uuid": "3a8c2f72-b29b-846f-8c34-4b0b73d8efce",
+    "uuid": "d8cd1042-702b-87b0-907d-943ca930e8db",
     "words": [
       "followup"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about followup — Typical or recommended followup care after the procedure is performed.",
-    "uuid": "02d25a05-641e-8f41-a186-eb6b99b1514f",
+    "uuid": "05db3251-0966-817f-8521-3f840bb7fe76",
     "words": [
       "use",
       "when",

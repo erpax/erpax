@@ -2,11 +2,11 @@
 name: margin
 description: "Use when reasoning about accounting/margin — margin analysis — gross margin and contribution calculations."
 atomPath: "accounting/margin"
-coordinate: "accounting/margin · 7/descent · 8b475f62"
-contentUuid: "8f0bf2f4-e1bc-57bc-91cc-7b17525dc4f8"
-diamondUuid: "45c3f9f5-da7f-8341-9912-3e1b59b35128"
-uuid: "8b475f62-4d9d-851b-ab21-bbd2e8148ed8"
-horo: 7
+coordinate: "accounting/margin · 2/share · 14d5fdc5"
+contentUuid: "7e8501e1-0bfa-561d-bb13-0a134cad25d6"
+diamondUuid: "becb4eaa-3184-8f14-b072-45ee8d450bf9"
+uuid: "14d5fdc5-03c4-8fff-a60d-298d5176074a"
+horo: 2
 typography:
   partition: accounting
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "IFRS IAS-2 inventories (cost) + IAS-1 (gross margin presentation)"
 bindings: []
 signatures:
-  computationUuid: "672561dd-b915-8a3b-bea8-c9969c05ab97"
+  computationUuid: "1944e942-a522-8a53-992a-d53803f3b7d5"
   stages:
     - stage: path
       stageUuid: "56bacc30-4cf2-8405-ba81-2b7aa505d64d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4fb46343-4bb8-8447-b841-2ad07b44961d"
     - stage: horo
-      stageUuid: "4d1e55e0-14b7-86fa-814a-4ec049e33d12"
+      stageUuid: "90ccfd7b-9522-878b-8003-4df38d7d2598"
     - stage: seal
       stageUuid: "5dac2587-e67d-855e-a6f5-6281c7c82494"
     - stage: uuid
-      stageUuid: "049145c9-aba6-8e94-8a06-386bb1228eb5"
+      stageUuid: "3bce4a64-920a-8124-a4af-f682ae088e64"
 version: 2
 ---
 # accounting/margin

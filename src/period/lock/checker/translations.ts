@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "checker",
-    "uuid": "7541ec4c-d4b0-83ae-a4f9-5724e7f9325d",
+    "uuid": "aa5ab82e-0193-8d47-a606-9379fd9f2f02",
     "words": [
       "checker"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deciding whether a posting date falls in a locked fiscal period — closed periods refuse new postings (admin override required) but allow reversals and prior-period-adjustments, and an unparseable date fails CLOSED; the SOX §404 control an auditor signs.",
-    "uuid": "b0e07cf2-4f40-88aa-a0a2-716f4eee8189",
+    "uuid": "e61c2b9c-6a96-8175-9f1d-c3bfb01f9062",
     "words": [
       "use",
       "when",

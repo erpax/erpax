@@ -2,18 +2,18 @@
 name: alt
 description: "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable)."
 atomPath: "rules/alt"
-coordinate: "rules/alt · 4/weave · a8822035"
-contentUuid: "c82dfb5c-6c52-564c-b4a5-1266554624b5"
-diamondUuid: "d0af31c5-0b23-8ed1-b25a-68bbc4083b49"
-uuid: "a8822035-297f-8c5c-ac7b-ef46bd8a29ef"
-horo: 4
+coordinate: "rules/alt · 1/base · 6bffc6fa"
+contentUuid: "3a510683-f8e5-5d51-8543-2634ea99bf93"
+diamondUuid: "925cc1de-bbaa-8037-9504-4da412eb4e28"
+uuid: "6bffc6fa-9141-8cce-ac1f-5f25eec17573"
+horo: 1
 typography:
   partition: rules
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6a73690a-ed62-847b-b3f3-fe99c1ed1f5b"
+  computationUuid: "7f9bc0c6-eff1-887c-8262-add492d2a2bb"
   stages:
     - stage: path
       stageUuid: "917fd325-022a-857c-bdf9-7429e21c777f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5fec0a7b-c586-8d04-88bf-0ee9b42d1972"
     - stage: horo
-      stageUuid: "47220077-2c71-87cf-a9e6-bcb10cf90078"
+      stageUuid: "78f4daa5-3ca6-861a-8a2a-d653c78a8a12"
     - stage: seal
       stageUuid: "6b29f18c-bb34-8fc1-bb02-e51587c3d3fa"
     - stage: uuid
-      stageUuid: "0a2a0fd5-7874-80e0-a48d-38ce1eed2c86"
+      stageUuid: "c080bd3d-47d1-821d-8b7e-184dd005f51b"
 version: 2
 ---
 # rules/alt — WCAG 2.2 §1.1.1, and the empty alt that declares an image decorative

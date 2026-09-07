@@ -2,18 +2,18 @@
 name: text
 description: "Use when reasoning about text — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
 atomPath: "blocks/form/text"
-coordinate: "blocks/form/text · 2/share · 0cadb8b2"
-contentUuid: "730ce7f6-62a0-5b9c-9ce1-98d766d4af80"
-diamondUuid: "38404be8-b713-851d-b34b-7f258382fbe4"
-uuid: "0cadb8b2-f88a-8414-aa25-d2f89a190f37"
-horo: 2
+coordinate: "blocks/form/text · 7/descent · 7ef1c7d6"
+contentUuid: "1b297292-bd5f-5a73-b6b6-2819a6d7bb29"
+diamondUuid: "3d8b386b-d66f-864f-ae3f-f6f04ee10c80"
+uuid: "7ef1c7d6-8c7a-89b4-9daf-e70300148a5d"
+horo: 7
 typography:
   partition: blocks
   bondDegree: 69
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a81161fa-ef4f-849c-a544-25780aabcceb"
+  computationUuid: "0b039a97-593a-80c1-9b77-16d872623a55"
   stages:
     - stage: path
       stageUuid: "c36d565a-7ed1-8dff-8649-84a6b4d0bb98"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7d19830c-83b0-8005-8ff1-4b0055b52d24"
     - stage: horo
-      stageUuid: "9af5acc6-5ef3-8a3c-a6c2-da349b1a5bd9"
+      stageUuid: "1d5dc0fb-9d59-82fe-8784-5212aee34e2e"
     - stage: seal
       stageUuid: "9cee9f4d-d847-8e7f-905a-32849119bd60"
     - stage: uuid
-      stageUuid: "5af92da6-34ba-8310-be9a-1f9d52465ec7"
+      stageUuid: "36f656d4-6f50-8cd4-b790-72f73790aa0e"
 version: 2
 ---
 # blocks/form/text — the label names the control, or the control has no name

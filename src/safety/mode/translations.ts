@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mode",
-    "uuid": "fad1413a-6e6c-84f9-aaa9-6323efe69c2b",
+    "uuid": "75e8d8c6-91bc-8ec0-b158-912958aad1cf",
     "words": [
       "mode"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about mode — reads the operating mode and refuses an operation the mode does not permit; fails closed rather than degrading.",
-    "uuid": "f3c0f780-2bac-8063-a911-3076865a9b4d",
+    "uuid": "1ef31c07-3580-8179-8841-e814d0fb4758",
     "words": [
       "use",
       "when",

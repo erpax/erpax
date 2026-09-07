@@ -2,11 +2,11 @@
 name: expert
 description: "Use when reasoning about expert as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/expert"
-coordinate: "vocabulary/expert · 5/round · 70b04589"
-contentUuid: "07915104-a4a6-5b5f-b862-b4467d8ad9d4"
-diamondUuid: "4e6e9178-954c-8cc4-84f8-4be3d864ddd6"
-uuid: "70b04589-47a6-84a4-9e38-0f826821db51"
-horo: 5
+coordinate: "vocabulary/expert · 7/descent · 7be8ef5e"
+contentUuid: "74367db8-0721-5832-8631-6041c987e3bf"
+diamondUuid: "efc8549b-a5ac-84a4-962f-c5b8d0a6fb3b"
+uuid: "7be8ef5e-61c6-830a-8159-a20b51e4d753"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "87fe8f4f-8e1c-8135-924e-e02c27d06ce4"
+  computationUuid: "910e1c41-4468-8b82-b0ba-6caa266e4ef1"
   stages:
     - stage: path
       stageUuid: "92f44b50-1e45-8de7-8e95-61cc69962776"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e39906b9-ef85-8258-b8f5-f1c160156dc2"
     - stage: horo
-      stageUuid: "b34cec84-5579-83cb-977d-03add7e3ff7e"
+      stageUuid: "a7950af9-03f4-866b-bdf3-fe1d781417fe"
     - stage: seal
       stageUuid: "0894a099-7023-86f0-bf0b-117212630952"
     - stage: uuid
-      stageUuid: "a5c80113-8292-8062-a0de-1519b44dc67c"
+      stageUuid: "ae9143f7-3e95-869d-9a17-62d9652f7fba"
 version: 2
 ---
 # expert

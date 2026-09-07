@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "duplicate",
-    "uuid": "bf9b11e3-6840-82c4-bb0a-60c5da61386b",
+    "uuid": "7ef5a5f6-f11e-8dfa-b5bf-0dba8acf55a1",
     "words": [
       "duplicate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about duplicate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "bff635d2-07fc-8bcf-9791-940761202616",
+    "uuid": "1b3ecb56-7faf-84ac-aecc-58f44d2435a4",
     "words": [
       "use",
       "when",

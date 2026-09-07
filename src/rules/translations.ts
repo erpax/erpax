@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rules",
-    "uuid": "7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6",
+    "uuid": "5de30b0f-e66e-8a5e-a63a-0d3dfbd5f507",
     "words": [
       "rules"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tightening or auditing erpax gates — the canonical home for folder, diamond, path, seal, import, and accounting-structure law. Aggregates live-tree violations into rulesOf() and fail-closed assertRulesHold(); tightened axes catch hyphen barrel siblings, stray .ts at atom roots, and corpus modules that must nest as one-word child atoms (accounting/coa · accounting/corpus).",
-    "uuid": "20e924ab-ddd1-8ea8-8bc6-f298aa2690ed",
+    "uuid": "fcb598fd-0ec5-80f9-ac69-8fee8f2990fa",
     "words": [
       "use",
       "when",

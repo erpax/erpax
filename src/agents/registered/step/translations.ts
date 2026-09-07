@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "step",
-    "uuid": "56b5cf6c-7dbc-85ff-8908-c990bec20980",
+    "uuid": "d068795c-7779-8902-af8c-ae9a5ef91759",
     "words": [
       "step"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf…",
-    "uuid": "e52c245a-04de-8560-be17-942678b7795d",
+    "uuid": "163b048e-8eb3-8397-8958-1ac57534bec8",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: oid
 description: "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid)."
 atomPath: "vocabulary/oid"
-coordinate: "vocabulary/oid · 8/crest · b8a8ea06"
-contentUuid: "1d900f45-9c29-5698-8189-c5933f5db98f"
-diamondUuid: "0d5863b5-da3d-8278-9bbd-5a19c95adddc"
-uuid: "b8a8ea06-9bbe-8111-bceb-46e014f3f3d3"
-horo: 8
+coordinate: "vocabulary/oid · 7/descent · b2047169"
+contentUuid: "fef821f1-d764-53f8-af0d-803e2c6c45a1"
+diamondUuid: "247a9661-e9b4-8e7a-ad91-05e6594251d9"
+uuid: "b2047169-0cd3-8508-856f-66ff8ba7d201"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 46
 standards: []
 bindings: []
 signatures:
-  computationUuid: "222c4670-33f3-8981-bee5-13315a02f722"
+  computationUuid: "58658a9a-73c3-8e56-9cda-e666455b93b6"
   stages:
     - stage: path
       stageUuid: "6ca28f66-df71-8c1f-99ed-fde44d457423"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1011ebe2-3de5-847a-86e6-afb8a981af4b"
     - stage: horo
-      stageUuid: "3e9140d5-a5b8-8d65-833f-60eb95c78cf3"
+      stageUuid: "24d60b03-64e6-833a-99a5-456c217204a0"
     - stage: seal
       stageUuid: "8883633b-da2f-876b-80ff-9c99867417d0"
     - stage: uuid
-      stageUuid: "caef234e-cd3b-83eb-94c8-6b59c424c891"
+      stageUuid: "a04ef7a3-bce9-8b59-a0b0-2d4095183cdf"
 version: 2
 ---
 # oid — the uuid on the ISO 2.25 arc

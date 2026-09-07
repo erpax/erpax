@@ -2,11 +2,11 @@
 name: hooks
 description: "Use when reasoning about hooks — books the run when it reaches posted, so the ledger entry is made by the row that caused it rather than by whichever screen happened to save it."
 atomPath: "bank/accounts/payroll/runs/hooks"
-coordinate: "bank/accounts/payroll/runs/hooks · 3/3 · 20e68236"
-contentUuid: "7619bebb-4dd1-5974-806b-3f5b85c85c09"
-diamondUuid: "b2a7463c-839d-8375-af22-88eaf9b387ed"
-uuid: "20e68236-7b13-8670-8e4f-646eff862eaf"
-horo: 3
+coordinate: "bank/accounts/payroll/runs/hooks · 6/6 · a30b6930"
+contentUuid: "041213c9-fbe5-500b-b26a-6750461ebfa5"
+diamondUuid: "6e3b5b86-8213-84a7-9352-29a5c999fd6c"
+uuid: "a30b6930-e2ff-8ef9-80cc-b3b3ea3dfa81"
+horo: 6
 typography:
   partition: bank
   bondDegree: 312
@@ -21,7 +21,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "8d5a5088-3e94-8926-9aac-cc7d03b7a8f6"
+  computationUuid: "c02a089d-c9b7-80a6-93e8-02763cb7331f"
   stages:
     - stage: path
       stageUuid: "31fb1050-191e-8317-8324-d8efb4786271"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "967272c5-d1b4-84f5-b991-d2ec8223a2ec"
     - stage: horo
-      stageUuid: "8a63af3e-60d3-8dd1-a7f6-427e1ec43b92"
+      stageUuid: "44e7b038-6e30-8bc8-86a1-c13a018a4d15"
     - stage: seal
       stageUuid: "4e82c845-d8d2-8548-a941-5413b1ffed23"
     - stage: uuid
-      stageUuid: "208419dc-5940-852e-aa98-da7d3b10afe4"
+      stageUuid: "b7b2c82b-38f8-816f-9cfe-62fbcc0d3cd6"
 version: 2
 ---
 # bank/accounts/payroll/runs/hooks — a payroll run posts its own journal, at the collection

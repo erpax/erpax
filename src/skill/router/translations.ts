@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "router",
-    "uuid": "f939ae91-4fd4-8b43-9370-e0bf7dcb1b08",
+    "uuid": "0c307b70-90a1-8cf1-b0f5-57b244da08f4",
     "words": [
       "router"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about router — Barrel face for skill/router — re-exports the atom public surface at index.",
-    "uuid": "955a1b80-014b-8e35-8d70-9cd7311cb05d",
+    "uuid": "2e35f322-87a9-8c6b-a222-ddc3facacc58",
     "words": [
       "use",
       "when",

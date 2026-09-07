@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "examples",
-    "uuid": "9a639895-0731-8c73-9520-d9eaaa9ab323",
+    "uuid": "5c1ba261-8aba-8148-8d53-25cff412a5d6",
     "words": [
       "examples"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when seeding or referencing a self-contained tenant template — the business-model-agnostic example `TenantConfig`s (course-builder, newsletter, marketplace) and the `getConfigByBusinessModel` / `listExampleConfigs` accessors over them.",
-    "uuid": "0bc319b7-74ee-8995-b950-5ed02ffbb846",
+    "uuid": "d6b262aa-5b96-8763-ad3f-65393cef6149",
     "words": [
       "use",
       "when",

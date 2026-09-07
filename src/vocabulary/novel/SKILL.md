@@ -2,11 +2,11 @@
 name: novel
 description: "Use when reasoning about novel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/novel"
-coordinate: "vocabulary/novel · 5/round · 35e2234d"
-contentUuid: "bbbd5af9-cbe7-5e5f-b0f8-d13a3ea9b8c3"
-diamondUuid: "100674c3-2a10-8ea3-b4c5-0627234c438a"
-uuid: "35e2234d-8e9c-8847-ada2-9ebe4e8465a1"
-horo: 5
+coordinate: "vocabulary/novel · 2/share · f2085c42"
+contentUuid: "b3341373-1684-569a-878a-1a44a6cdab7b"
+diamondUuid: "d837b17e-a5d3-8171-905a-c901782f9a89"
+uuid: "f2085c42-2f34-8871-a541-dbbaa43dbb5e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f2bb6f7e-f9dd-80a1-8d9f-59727c5afb30"
+  computationUuid: "4384ab72-bc86-8feb-8268-ef6273f88524"
   stages:
     - stage: path
       stageUuid: "a4cf5429-c5fb-8feb-bb7e-eeac98c554b6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "879ad3e3-b4be-8cf2-b424-0ffa10c74712"
     - stage: horo
-      stageUuid: "3e3ef25f-5cf2-8fdf-813a-e60f835e40f2"
+      stageUuid: "5c88327d-1355-8b51-810c-114ed4d4bca5"
     - stage: seal
       stageUuid: "00bae562-bdb4-8a1f-be53-6f9a73fd3506"
     - stage: uuid
-      stageUuid: "98e16aa9-ce39-8422-9bca-8748a3139312"
+      stageUuid: "44a952ac-85cb-8cb8-b3f8-ffb2025bf452"
 version: 2
 ---
 # novel

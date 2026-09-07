@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "session",
-    "uuid": "b6a0355a-2891-87eb-820d-d3c1161d2dcd",
+    "uuid": "b2edb6cf-c052-84cf-afdc-8ba4369632b4",
     "words": [
       "session"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about session/chat memory — it must NOT live in ephemeral context. Session memory IS the diamond lattice: save(thought) ⇐ isDiamond; parallel sessions (Cursor, society breath, chat, MCP) converge on ONE lattice via content-uuid merge — same thought ⇒ same diamond ⇒ no collision.",
-    "uuid": "d3200d7c-1134-8c4a-b394-174f39066316",
+    "uuid": "ff39e297-b4d9-8f71-94ea-5b8d39dfbb72",
     "words": [
       "use",
       "when",

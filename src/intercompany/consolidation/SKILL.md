@@ -2,18 +2,18 @@
 name: consolidation
 description: "Use when implementing or referencing Phase B4: Intercompany Fiscal Alignment — Standards & Implementation."
 atomPath: "intercompany/consolidation"
-coordinate: "intercompany/consolidation · 7/descent · b1ee0925"
-contentUuid: "a837a039-cb7a-5775-9e52-e951568057e4"
-diamondUuid: "6e2325a8-86cd-8bac-82aa-dab26e2bea6c"
-uuid: "b1ee0925-decb-8d13-bce7-6841115ed1b4"
-horo: 7
+coordinate: "intercompany/consolidation · 5/round · 6305b8d0"
+contentUuid: "308ce390-d63f-5cc6-b5ce-1a4de93ef4a0"
+diamondUuid: "f86fede3-2572-85c8-824b-b559946a7e4e"
+uuid: "6305b8d0-21b9-8bce-9f98-737fcb760583"
+horo: 5
 typography:
   partition: intercompany
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e1884cdd-898d-8abf-99df-a8e6e7cfdeaa"
+  computationUuid: "5a317e09-6024-8282-acec-7205a91637de"
   stages:
     - stage: path
       stageUuid: "c120d1a3-4bf0-88b6-92be-f98df166b307"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "07800731-a829-8f95-a621-5abcf7ee0e72"
     - stage: horo
-      stageUuid: "6473dfe5-90ad-8e3f-9495-bd166053ffb1"
+      stageUuid: "8d2f7a83-931b-8004-b599-fcb774901833"
     - stage: seal
       stageUuid: "c321f4c8-80b1-809c-8f82-c99e64508dcc"
     - stage: uuid
-      stageUuid: "9110277c-67c7-8784-82b9-15ee8f3728c0"
+      stageUuid: "a298057e-3bc3-81c8-8d22-770f0f24e69d"
 version: 2
 ---
 # Phase B4: Intercompany Fiscal Alignment — Standards & Implementation

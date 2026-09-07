@@ -2,10 +2,10 @@
 name: aura
 description: "Use when reasoning about a folder/path's collective identity in erpax — the content-uuid Merkle hash of all files within (SKILL.md + matter-twin + relations + sub-folders); folders are content-addressed too, so they merge by design."
 atomPath: aura
-coordinate: "aura · 5/round · cc7aefb9"
-contentUuid: "9223b9eb-a1e4-5895-b44e-b5ace8b7d6aa"
-diamondUuid: "8d0dc56f-b204-8ce5-8736-359031a39576"
-uuid: "cc7aefb9-d4d0-8bfc-bb72-a7bcb7e9987c"
+coordinate: "aura · 5/round · e5030296"
+contentUuid: "a17d94ad-2b94-555b-b121-d4e38ef4261a"
+diamondUuid: "370923bd-8f1a-84d5-b407-1e3e184e6e02"
+uuid: "e5030296-5b5a-8708-a2c4-267e369101db"
 horo: 5
 typography:
   partition: aura
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c9e59ee2-dbd9-8ffd-8b25-c1cc83293a48"
+  computationUuid: "8152373b-198f-8659-8aba-e14ad6aafa12"
   stages:
     - stage: path
       stageUuid: "733601aa-e8d6-818c-bf73-e74841172ee8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "407bcf1c-35d0-8e0e-b666-64e2393887a3"
     - stage: horo
-      stageUuid: "e3e40fc9-0f40-8bc6-a1ad-444ed116dfc8"
+      stageUuid: "fb739443-33ef-8bd3-9baf-8cb34d092e6d"
     - stage: seal
       stageUuid: "4e6e8aa6-604c-89a8-bbd3-fd0a5fdc5567"
     - stage: uuid
-      stageUuid: "69dd143f-ec58-8b3a-bce7-012349feb323"
+      stageUuid: "35a9b6d3-e2bb-8f38-94ea-3c3ec1eb341a"
 version: 2
 ---
 # aura

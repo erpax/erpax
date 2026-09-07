@@ -2,11 +2,11 @@
 name: procedure
 description: "Use when reasoning about procedure — A description of the procedure involved in setting up, using, and/or installing the device."
 atomPath: "vocabulary/procedure"
-coordinate: "vocabulary/procedure · 2/share · 6dc75953"
-contentUuid: "293d9095-0b80-5586-b3f1-ccf144497b0e"
-diamondUuid: "63a455d2-0271-806b-8ad8-ef3e6cbdaffa"
-uuid: "6dc75953-bb25-8021-9558-0e05cf9b3d95"
-horo: 2
+coordinate: "vocabulary/procedure · 8/crest · 353e0355"
+contentUuid: "1944d3aa-d80c-5891-a8a9-6077dd4cbe07"
+diamondUuid: "45d56ac9-c953-84b9-858a-c3b1e50f9a8f"
+uuid: "353e0355-5328-873c-8994-9741e82f6b3b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d6c842d2-9ad5-81bc-9ebc-9467e8cdf6d6"
+  computationUuid: "ce6dc3f3-6890-8b60-806a-15459e531be8"
   stages:
     - stage: path
       stageUuid: "aed9f7ab-da53-8b0f-9c20-1e3d1835dd68"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d57fe9f2-2d47-80ee-b98c-a9383af69e09"
     - stage: horo
-      stageUuid: "b04a2cd4-09ad-8c92-ae32-bf9a500f6626"
+      stageUuid: "e52379e7-8378-8a09-8f21-82a2809bb843"
     - stage: seal
       stageUuid: "cb7b2283-bd61-81ed-97f2-2b1207094633"
     - stage: uuid
-      stageUuid: "854f1548-c18d-828e-8c30-9af61ef13f14"
+      stageUuid: "9e55de5a-fba6-8b79-ad50-590c3679061b"
 version: 2
 ---
 # procedure

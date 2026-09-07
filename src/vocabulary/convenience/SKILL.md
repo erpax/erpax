@@ -2,11 +2,11 @@
 name: convenience
 description: "Use when reasoning about convenience as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/convenience"
-coordinate: "vocabulary/convenience · 4/weave · d5008394"
-contentUuid: "76c9bba3-36c1-5be6-8f7a-d1c3f90ebca9"
-diamondUuid: "df11a38f-6366-80bf-b8e0-c1cb560d5abf"
-uuid: "d5008394-7aea-8b45-bc64-74ae2417c685"
-horo: 4
+coordinate: "vocabulary/convenience · 7/descent · abb1c96d"
+contentUuid: "27bcde4c-bfa3-5a45-af95-b82e50c50016"
+diamondUuid: "a7ab6d8e-de20-86e4-a086-da6293263769"
+uuid: "abb1c96d-3843-8316-a2cc-3bc41f2686b8"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b1683acd-fc75-83a2-a565-d9111dbce13e"
+  computationUuid: "53fcf8b8-c931-8709-a291-a01bff7f3823"
   stages:
     - stage: path
       stageUuid: "86d7a247-2bf6-8550-933c-9f319a1ececd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e864fa4e-1c28-8c88-a99d-a1fea3a6ddd4"
     - stage: horo
-      stageUuid: "8eff2ddd-b5b0-8fec-8ca7-b3fd25115cb5"
+      stageUuid: "bb86f680-e620-8ff9-86f1-6f06b33727df"
     - stage: seal
       stageUuid: "e88966ff-cbe3-8ce7-ae9a-0999d8aad8ff"
     - stage: uuid
-      stageUuid: "9a2776af-a42b-89a7-a47d-35d50955a5ab"
+      stageUuid: "c6788940-d1f8-8597-a404-b55a498e23b0"
 version: 2
 ---
 # convenience

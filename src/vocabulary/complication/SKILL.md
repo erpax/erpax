@@ -2,10 +2,10 @@
 name: complication
 description: "Use when reasoning about complication as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/complication"
-coordinate: "vocabulary/complication · 5/round · cba2992b"
-contentUuid: "0812a226-53b7-57cb-82cf-02a2391969ac"
-diamondUuid: "a649c8f5-e68b-8a9a-b103-115d941aa607"
-uuid: "cba2992b-a7ac-8a0f-a51c-ea8500fe7351"
+coordinate: "vocabulary/complication · 5/round · a764f3cb"
+contentUuid: "3cc16ba4-420a-50d5-af4b-bb0f6c0a2067"
+diamondUuid: "6628e4c6-a472-86ad-9bf4-285bf5f33b30"
+uuid: "a764f3cb-1346-88f8-bc43-3b6d138cfc5b"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "68c8f576-892f-8de4-a9b4-936f3ad2bf70"
+  computationUuid: "fb2a2a7b-3996-873b-9d7a-be121a6bd28d"
   stages:
     - stage: path
       stageUuid: "96284a9d-73ef-8392-b00d-0cb639d6bf8f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "09497aac-fb68-8e55-bafe-72be851c5b0e"
     - stage: horo
-      stageUuid: "0b77b397-6fa7-83eb-bf9b-ac36cecebd40"
+      stageUuid: "3b7617c9-f52b-8167-b79f-53dc1ef9d453"
     - stage: seal
       stageUuid: "938a534f-ac0f-8cb7-8e07-9999483fc1a0"
     - stage: uuid
-      stageUuid: "1317bc4d-cab2-841a-a9f6-6fa70fb405ec"
+      stageUuid: "0d2a4c51-b7a1-83aa-9ee4-6aa4b852ef0b"
 version: 2
 ---
 # complication

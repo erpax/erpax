@@ -2,11 +2,11 @@
 name: sponsorship
 description: "Use when reasoning about sponsorship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sponsorship
-coordinate: "sponsorship · 7/descent · 892e3bb1"
-contentUuid: "d6f59f3d-a49f-5613-9114-9520fd5dd7b9"
-diamondUuid: "9e7b6837-c737-8197-9f36-22c3b04e8540"
-uuid: "892e3bb1-1198-8465-bf8f-2704bb90c5ae"
-horo: 7
+coordinate: "sponsorship · 8/crest · 34439140"
+contentUuid: "8e6cc515-a68c-5bdb-a40f-f4c69b7857c3"
+diamondUuid: "6bae21c8-0787-8508-97d3-b2edaf3672b3"
+uuid: "34439140-11e9-8769-9e11-1528c1a0ccc0"
+horo: 8
 typography:
   partition: sponsorship
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "551036f2-37ef-8878-af42-efee2589250f"
+  computationUuid: "807034e1-7368-8a8a-b77e-14618b64e14c"
   stages:
     - stage: path
       stageUuid: "be3191d1-4986-8a38-8d3e-967e09f3aaf0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e217733c-1788-8f4f-a575-193b40610fdb"
     - stage: horo
-      stageUuid: "a71da44b-afc5-8caa-b5e0-a16e50991754"
+      stageUuid: "99eb7225-c601-8ab4-ab97-bd0ff62a8153"
     - stage: seal
       stageUuid: "889b3b93-b3d8-8678-953b-d65c24af88de"
     - stage: uuid
-      stageUuid: "703bf08a-b4d6-85f5-aa62-03185f8f30f1"
+      stageUuid: "0334f35e-2adc-8176-b506-404e6e0ed796"
 version: 2
 ---
 # sponsorship

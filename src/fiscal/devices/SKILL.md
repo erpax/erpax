@@ -2,11 +2,11 @@
 name: devices
 description: "Use when registering or managing СУПТО fiscal hardware — each device carries an 8-digit ФУ number (first УНП segment), per-device currency and VAT tax groups, default operator and terminal for automated sales, and decommission lifecycle per Наредба Н-18. The fiscal-device registry."
 atomPath: "fiscal/devices"
-coordinate: "fiscal/devices · 4/weave · 0f61da22"
-contentUuid: "c74bf0a8-2b61-57a1-98b1-72b4ff871203"
-diamondUuid: "faf1b30f-ae04-8ae5-bd8b-aa537873ea9b"
-uuid: "0f61da22-09ed-8e05-abf2-874b3640edbb"
-horo: 4
+coordinate: "fiscal/devices · 7/descent · cf3a7ca7"
+contentUuid: "320373d6-8d1a-5740-91ed-87cc6a9c6176"
+diamondUuid: "c7819896-6297-8154-9c04-a576d8b5db79"
+uuid: "cf3a7ca7-7a16-81ec-bbfa-620b636fa45f"
+horo: 7
 typography:
   partition: fiscal
   bondDegree: 15
@@ -19,7 +19,7 @@ standards:
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "b569fe39-9ae3-8ec9-a991-3b13b49c45f6"
+  computationUuid: "a9615b4a-151d-8ae6-bf75-d0a462e7abda"
   stages:
     - stage: path
       stageUuid: "a0f624f9-21ab-8551-a545-65c4f6561d83"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "b89cacef-574a-8ad2-b69b-018b42c98951"
     - stage: horo
-      stageUuid: "ccca290c-8e62-8e89-8900-6adb679104a9"
+      stageUuid: "092d2d9a-ce9a-8610-8838-7f7427870fd7"
     - stage: seal
       stageUuid: "e3a2a81d-298e-8044-b3bb-4defee4d814c"
     - stage: uuid
-      stageUuid: "337b3b33-8291-8e34-94d2-83c30b335055"
+      stageUuid: "6ccb948f-c02e-8db1-b6ca-68a7f76d9ecb"
 version: 2
 ---
 # fiscal-devices

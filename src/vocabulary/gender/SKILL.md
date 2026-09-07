@@ -2,11 +2,11 @@
 name: gender
 description: "Use when reasoning about gender — Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings"
 atomPath: "vocabulary/gender"
-coordinate: "vocabulary/gender · 4/weave · 9d7cfbcc"
-contentUuid: "c9318288-672c-5ff5-a41d-955622ea6abe"
-diamondUuid: "b54b7773-6918-8727-9c02-038fd0b38791"
-uuid: "9d7cfbcc-58f8-8b5e-a270-47fbca5a6e39"
-horo: 4
+coordinate: "vocabulary/gender · 2/share · 62618573"
+contentUuid: "4b572df3-17fa-5e19-8986-e11c5e0bbdee"
+diamondUuid: "d9c1dbae-ea81-87e0-b696-eebc316e867d"
+uuid: "62618573-ebae-8631-80d4-fcfec0545d6d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 14
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5f34ebf2-b017-8e69-ae68-0a7d00ecc6ad"
+  computationUuid: "714c9ac5-53dd-8f30-b2fa-0bee4ee977e3"
   stages:
     - stage: path
       stageUuid: "da562aaa-11fe-810d-9e5e-343594741362"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "86a66de4-a549-826c-8ee4-212f75f7e9b6"
     - stage: horo
-      stageUuid: "68ee4dda-20e9-82bd-94ce-0d36f76e8448"
+      stageUuid: "c62452d3-0b1f-8bc0-b1f5-b795e0e1ee11"
     - stage: seal
       stageUuid: "3f82e3b4-ea59-829f-9032-5308bcea908d"
     - stage: uuid
-      stageUuid: "afd63efc-221f-8440-9063-a3c6a73d18f4"
+      stageUuid: "ada2e9a1-d558-8bd3-bb1d-df73baf9a581"
 version: 2
 ---
 # gender

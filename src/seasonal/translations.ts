@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seasonal",
-    "uuid": "08c75a28-cdd3-8d9d-bfce-48d5a569787a",
+    "uuid": "0c20ae30-229f-880a-aa89-6634af02410a",
     "words": [
       "seasonal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about seasonal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "2f1d599d-c708-8f50-8526-c487f7c19231",
+    "uuid": "b45e4587-68ef-8e46-affc-03db346bbf81",
     "words": [
       "use",
       "when",

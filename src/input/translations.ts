@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "input",
-    "uuid": "5cbfcec6-a988-8edb-8ab3-b0ff4834cab9",
+    "uuid": "9fc3f452-e57e-8732-b08e-35a3e60b0d88",
     "words": [
       "input"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the user types anything the system can parse, analyse, or derive — one name-class hook normalises (IBAN, BIC, email, phone, URL), refuses checksum failures with the law named (ISO 13616, ЕГН, ЕИК), and derives the twins (country from IBAN, birthdate from ЕГН) so nothing parseable is ever re-asked.",
-    "uuid": "b7464c51-363e-858c-a070-c6206899da1e",
+    "uuid": "f244d001-9706-85d4-9a44-437117880b54",
     "words": [
       "use",
       "when",

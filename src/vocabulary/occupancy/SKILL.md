@@ -2,11 +2,11 @@
 name: occupancy
 description: "Use when reasoning about occupancy — The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permi"
 atomPath: "vocabulary/occupancy"
-coordinate: "vocabulary/occupancy · 7/descent · b48856eb"
-contentUuid: "8a1ed5e2-247c-5db2-a7bb-49fd293bb413"
-diamondUuid: "1f501b92-b745-8ec5-9454-41cdaa18de28"
-uuid: "b48856eb-5990-831c-ab4b-067d68fe1690"
-horo: 7
+coordinate: "vocabulary/occupancy · 4/weave · 138c4c1e"
+contentUuid: "6912e5a1-f679-5dde-8a93-83e61bd1e0a6"
+diamondUuid: "3911fe1a-0008-8681-aa9f-42a53781181d"
+uuid: "138c4c1e-92fe-8975-9376-d799b488e490"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "08119734-d4b7-896d-9db9-b6f5ea97956f"
+  computationUuid: "ad9391f3-1af2-8394-8fa1-c57d008c45da"
   stages:
     - stage: path
       stageUuid: "cc319b43-d03f-8ed4-813d-e709dbef5177"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0b8fc051-678b-8633-b7d8-fdc269b14fb5"
     - stage: horo
-      stageUuid: "d1ffd8e7-98d4-8cf3-81df-bd179a609cdf"
+      stageUuid: "7e6f5781-cffc-834e-a191-1fe6b4c86e0a"
     - stage: seal
       stageUuid: "b043aaf8-9ab8-8f3d-b30c-1ad719bc3a59"
     - stage: uuid
-      stageUuid: "89dab407-3621-8a2b-bd32-435935389cf1"
+      stageUuid: "08b67885-ccbe-8670-90e4-4347d9fbcc05"
 version: 2
 ---
 # occupancy

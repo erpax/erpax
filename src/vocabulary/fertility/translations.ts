@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fertility",
-    "uuid": "d289a951-5a62-812f-bf78-4048e72e6816",
+    "uuid": "c4473f18-654c-858b-9aa5-b9488d926264",
     "words": [
       "fertility"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when budgeting the soil's nutrient capacity against crop demand — the N-P-K balance where a crop's nitrogen and potassium need (lbs/acre, as N and K₂O oxide forms) scales with its yield; heavy vs light feeders; legumes fixing their own nitrogen (N ≈ 0); the 4R stewardship and soil-test basis. Fertility is a double-entry budget: crop removal debits the soil, application credits it; it must balance like any ledger.",
-    "uuid": "76018f36-ef37-81f6-9264-39623a67c36a",
+    "uuid": "fb7139dc-52d8-8987-a687-0b99a466be10",
     "words": [
       "use",
       "when",

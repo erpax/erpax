@@ -2,11 +2,11 @@
 name: positions
 description: "Use when reasoning about positions — positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards."
 atomPath: "vocabulary/manufacturing/seed/positions"
-coordinate: "vocabulary/manufacturing/seed/positions · 5/round · 5fc2ea4e"
-contentUuid: "407f9bbe-6adc-5944-91da-69368cc72043"
-diamondUuid: "9fe9bbae-ded8-88c9-a668-9481b29a3529"
-uuid: "5fc2ea4e-b109-8a1f-8f42-4dd19354870c"
-horo: 5
+coordinate: "vocabulary/manufacturing/seed/positions · 7/descent · 23751453"
+contentUuid: "b5fe8e24-f0c3-55cc-b9e3-24568ef9388f"
+diamondUuid: "69cf77db-8af4-8e0a-afde-72f0bedf5afe"
+uuid: "23751453-65c8-8d70-bc3e-537683080f12"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 40
@@ -18,7 +18,7 @@ standards:
   - "SFIA 8 responsibility-levels (1..7) — the autonomy axis (positions service)"
 bindings: []
 signatures:
-  computationUuid: "2b80ec5a-d1e8-8765-9a56-6cf76bf7df15"
+  computationUuid: "e4d7fed8-3f79-8174-9af0-89ee7e983c4b"
   stages:
     - stage: path
       stageUuid: "fb8afdb4-2d3f-8763-91fc-92cab99eeca1"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "53f3e15c-696a-8518-bd17-549727ee5832"
     - stage: horo
-      stageUuid: "26d0966d-d752-80d1-ad57-93f7e978a6e7"
+      stageUuid: "e84c521d-d0c0-8f05-b3e3-a27bf9477d4c"
     - stage: seal
       stageUuid: "7d71e038-7b33-85c0-80d4-386e107951a2"
     - stage: uuid
-      stageUuid: "6bf027e7-c2b2-84df-8a6e-05dd890db98c"
+      stageUuid: "96bea761-a475-8abd-a085-30839fb71675"
 version: 2
 ---
 # vocabulary/manufacturing/seed/positions

@@ -2,10 +2,10 @@
 name: discount
 description: "Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow."
 atomPath: "vocabulary/discount"
-coordinate: "vocabulary/discount · 7/descent · f07dc695"
-contentUuid: "2d6cec58-159f-5b62-a48f-fd637b753a4c"
-diamondUuid: "d9a7dca9-856f-8084-93e1-67fce96dd34e"
-uuid: "f07dc695-ada3-8cc9-9bb0-9104d8632002"
+coordinate: "vocabulary/discount · 7/descent · 3ffda7a4"
+contentUuid: "e2a9b38a-101f-5166-aba7-7cf0923f7e8a"
+diamondUuid: "6014b917-2a18-8ead-b3cc-dcf15e22f2bc"
+uuid: "3ffda7a4-8a7f-8b1a-9df1-3ed162e6a0f2"
 horo: 7
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d0e30074-6aae-836e-8fd3-38f9cb0109ad"
+  computationUuid: "35332599-e440-8cfc-b1ca-87d72c89ae1f"
   stages:
     - stage: path
       stageUuid: "92042231-7465-878b-94d1-26428ab42ad3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b091c003-3f94-8b45-8f88-207e4848bc98"
     - stage: horo
-      stageUuid: "564db6cc-be30-8553-b5a0-157a6b617743"
+      stageUuid: "ab2e5594-c6fc-835b-8ed2-06ae871e5e4d"
     - stage: seal
       stageUuid: "bf1cbc8d-6885-8411-a982-cca87ceaed51"
     - stage: uuid
-      stageUuid: "646c589c-dd0a-87a5-be4c-3e2f8cd3fe42"
+      stageUuid: "46c252a1-2685-8a9b-83b7-4bb4622baf74"
 version: 2
 ---
 # discount

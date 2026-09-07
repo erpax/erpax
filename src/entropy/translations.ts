@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "entropy",
-    "uuid": "3363f9b0-005e-8726-99c5-5166e682d526",
+    "uuid": "5e51f454-034d-8527-b198-8b9fc824c3b1",
     "words": [
       "entropy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances — entropy() = 1 − the reciprocal-edge fraction of the uuid-matrix, an audit/aura signal, NOT an input to crackVerdict. It is a DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost via coverageCostLog2); reciprocity=1 does NOT imply coverage=1, so zero entropy does NOT by itself yield infinite cost (the live tree is the counter-example — entropy 0, coverage under 1, cost finite). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor.",
-    "uuid": "42c67000-ef85-8f7f-8005-1e21caee2516",
+    "uuid": "61350622-48b9-8560-96c7-b00b5f792a03",
     "words": [
       "use",
       "when",

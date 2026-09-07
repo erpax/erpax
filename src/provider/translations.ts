@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "provider",
-    "uuid": "da9ab7d6-5ca6-857f-bff5-bb6444e2088e",
+    "uuid": "aff8eafa-15d1-8efc-89b0-71f72bd70ff8",
     "words": [
       "provider"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring the app-wide React context tree — the one place theme, computed-CSS and header-theme providers wrap the frontend. A client provider is imported from its own module, never through a barrel that also exports Node fs matter: the @/css barrel exports computeCssDiamond, and pulling it into the browser chunk 500s the Worker homepage.",
-    "uuid": "03c82996-29cf-8690-8002-dae6abb84303",
+    "uuid": "b06aa7b5-e3c9-8b91-95cd-dd6f4936533f",
     "words": [
       "use",
       "when",

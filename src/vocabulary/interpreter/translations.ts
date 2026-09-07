@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interpreter",
-    "uuid": "a907852a-b1d2-8888-88f3-afabbd6e6a75",
+    "uuid": "900b71f8-f70d-82eb-8bf2-490732d1f4a6",
     "words": [
       "interpreter"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about interpreter — A schema.org component word, collided out of schema.org compounds — fused from claimInterpreter (sti · collapse · merge).",
-    "uuid": "af6d0953-262c-83a1-9d5f-04f7e0ecf28d",
+    "uuid": "53e456ba-dc77-81d7-b752-85516a8f773c",
     "words": [
       "use",
       "when",

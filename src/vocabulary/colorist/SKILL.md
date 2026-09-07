@@ -2,11 +2,11 @@
 name: colorist
 description: Use when reasoning about colorist — The individual who adds color to inked drawings.
 atomPath: "vocabulary/colorist"
-coordinate: "vocabulary/colorist · 2/share · ba84d2cd"
-contentUuid: "4eea9e03-ada5-54f6-bb69-1b808864d019"
-diamondUuid: "5825064b-de68-8de0-86af-2b3897bf92fc"
-uuid: "ba84d2cd-6e56-8347-bec8-5dab36790291"
-horo: 2
+coordinate: "vocabulary/colorist · 4/weave · f65ae3cf"
+contentUuid: "805acf12-31da-5a60-8b9a-4861155cf067"
+diamondUuid: "65c0cf5e-71a8-89e1-b689-b52ac6928610"
+uuid: "f65ae3cf-b9f4-87b6-a84f-e064002f8923"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "18f8a3be-7f8a-81a7-ba50-3927fdd22d52"
+  computationUuid: "96b0f4c7-9103-88ee-b20d-0d6709e8f1c2"
   stages:
     - stage: path
       stageUuid: "77e3c1ff-2eea-8c21-9f0f-ba6c87324e6d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ccd208d0-c79f-8586-95eb-345f524d5fcc"
     - stage: horo
-      stageUuid: "ea7fc3be-fb82-8fa5-a495-0b3bcd2a7b6f"
+      stageUuid: "6d9a57ff-b21b-89f2-a66e-a01f83a0f5be"
     - stage: seal
       stageUuid: "df515426-9387-8501-8625-5fade3e755b4"
     - stage: uuid
-      stageUuid: "93d79b61-b2de-867e-ae04-c519af81fb2c"
+      stageUuid: "53025400-6edd-8b44-9ed2-d4e6ef799208"
 version: 2
 ---
 # colorist

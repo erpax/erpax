@@ -2,11 +2,11 @@
 name: "9110"
 description: Use when implementing or referencing RFC 9110 — HTTP Semantics.
 atomPath: "rfc/9110"
-coordinate: "rfc/9110 · 5/round · 4c894a7b"
-contentUuid: "d7d8bc9f-f669-5583-a692-e65f7d15c23a"
-diamondUuid: "4c4229a5-7ca7-8ae3-9c50-4dd5250e8d06"
-uuid: "4c894a7b-8b03-8639-9663-95eaac9c4527"
-horo: 5
+coordinate: "rfc/9110 · 7/descent · 61426f97"
+contentUuid: "e219f32e-e10c-527a-a62b-92513eb4c082"
+diamondUuid: "f815f763-9079-8955-ba1a-691e549da6c4"
+uuid: "61426f97-89f2-8061-bedf-3cb6a34ac93c"
+horo: 7
 typography:
   partition: rfc
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "9110 §13 caching"
 bindings: []
 signatures:
-  computationUuid: "db38c386-7a79-8170-84a6-051c1653f3d0"
+  computationUuid: "d322e0df-7c05-88da-9a04-0be34ccac8ac"
   stages:
     - stage: path
       stageUuid: "652587c3-909b-8d50-97c1-e295c255f0d9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d5bb3a2f-a566-8f71-9ff0-e94904f6a518"
     - stage: horo
-      stageUuid: "3828b893-eef2-8c0d-8a8e-40323986aabf"
+      stageUuid: "bd552203-9929-8c0d-a5b8-b75b0ee69716"
     - stage: seal
       stageUuid: "71e82787-6e2f-8ec3-ae46-a24621d7aabf"
     - stage: uuid
-      stageUuid: "ce4d9320-1de2-8056-9172-9e099e77b472"
+      stageUuid: "427f31f7-3f13-8b47-af4c-11cdcc916f3c"
 version: 2
 ---
 # RFC 9110 — HTTP Semantics

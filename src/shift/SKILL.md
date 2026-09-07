@@ -2,20 +2,20 @@
 name: shift
 description: "Use when modeling a span of worked time — the per-actor-day labour unit a work order's produced minutes roll up into, and the authority it reads efficiency and wage back down from. The singular of the work-shifts aggregate."
 atomPath: shift
-coordinate: "shift · 8/crest · 93a6c4db"
-contentUuid: "468880de-4604-58dc-b1e7-2b9bc2f55a41"
-diamondUuid: "a90e4eee-4de8-842d-8f92-c64f2d2f8387"
-uuid: "93a6c4db-6e65-86c8-b9ca-33c4ac447c60"
+coordinate: "shift · 8/crest · 6b60d6da"
+contentUuid: "fc4b78d1-6e77-505d-bd48-cb369aa50104"
+diamondUuid: "5350ca42-87ba-83ad-a1d5-2c791be79344"
+uuid: "6b60d6da-6ce3-866a-a0b4-1df2410a934e"
 horo: 8
 typography:
   partition: shift
-  bondDegree: 13
+  bondDegree: 11
 standards:
   - "ISO-22400-2"
   - "ISO-22400-2`"
 bindings: []
 signatures:
-  computationUuid: "d7376fb0-c027-851c-b88d-f06438345f96"
+  computationUuid: "e0811427-3b72-806d-9b43-97293067e1fc"
   stages:
     - stage: path
       stageUuid: "46782318-acdc-83f6-99bb-f59e51d66ef5"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "2b0b106d-12c8-8f6c-a15a-fd1b382f9a58"
     - stage: horo
-      stageUuid: "bb97ac59-caa5-8c5b-a50a-e5cd9d6ac625"
+      stageUuid: "c6449cf5-76d9-8f2b-911d-d7d6e6c89bf6"
     - stage: seal
       stageUuid: "03d0e843-1973-8528-bfd3-afdbcf0fccaf"
     - stage: uuid
-      stageUuid: "7f560ba3-c5f7-8f6c-89e4-b5f01ed69bb5"
+      stageUuid: "4ec732ce-7422-88c5-9fc0-c0847cd8016e"
 version: 2
 ---
 # shift

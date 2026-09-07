@@ -2,11 +2,11 @@
 name: away
 description: "Use when reasoning about away as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/away"
-coordinate: "vocabulary/away · 1/base · 19aa4c20"
-contentUuid: "32393c35-2800-57dc-8996-8a963126bf99"
-diamondUuid: "b4a730a3-227d-8d78-bfec-e72f4d79bd99"
-uuid: "19aa4c20-fad4-8c02-a56c-18f90dbe1686"
-horo: 1
+coordinate: "vocabulary/away · 4/weave · 90b293e6"
+contentUuid: "b54f822a-4b07-565b-ab3e-7d114880aba9"
+diamondUuid: "133587a4-6fda-8752-8765-87e4a6a5c7c4"
+uuid: "90b293e6-a484-85b5-ba83-5df2128d0258"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7fa8effd-e5b6-85c2-89cf-e310729cec94"
+  computationUuid: "fbc8e083-0b74-87db-8780-547796b78aa7"
   stages:
     - stage: path
       stageUuid: "28be7622-aa14-85b0-ae45-8537e4346496"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b4e30ef7-9a9d-8d1a-b161-4fe4a679e9d2"
     - stage: horo
-      stageUuid: "31bf73a2-44f1-8576-a293-788af08cdfff"
+      stageUuid: "427be496-df01-8b5c-a7bb-dc0ef7285ce9"
     - stage: seal
       stageUuid: "209de5d0-12c7-8516-b3ba-1e02b2136642"
     - stage: uuid
-      stageUuid: "92390583-088e-8105-a774-4883b905784a"
+      stageUuid: "e6e9fd00-b9fa-86e1-9c88-55a428c54011"
 version: 2
 ---
 # away

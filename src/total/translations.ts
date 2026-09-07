@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "total",
-    "uuid": "5902a219-8e1a-8b8f-ac6e-e6995b8feec1",
+    "uuid": "231fafdf-08ac-8a3f-8ce3-3a66da6868c4",
     "words": [
       "total"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when summing a dimension — line total, invoice total, account total, cumulative amount. A computed or captured aggregate; often read-only (computed from detail lines or GL balance). Carries amount + currency.",
-    "uuid": "8afff8f2-c493-83f4-9a25-232208fa8add",
+    "uuid": "f548ffc0-93f0-8976-a117-fd1dfb91a1de",
     "words": [
       "use",
       "when",

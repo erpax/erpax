@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cdformat",
-    "uuid": "2b984518-b90b-8528-a845-afa06101fd6e",
+    "uuid": "32262673-b95a-8081-9957-e44cae7b2464",
     "words": [
       "cdformat"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cdformat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "27cbfd39-b455-85c4-a81f-e674e887d588",
+    "uuid": "4994036e-48f0-895b-97c7-19f0f4000470",
     "words": [
       "use",
       "when",

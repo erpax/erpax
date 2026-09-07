@@ -2,10 +2,10 @@
 name: product
 description: "Use when reasoning about product — Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online."
 atomPath: product
-coordinate: "product · 5/round · 0581d204"
-contentUuid: "a582350a-6edb-5695-b7ef-cb27db3a15ee"
-diamondUuid: "e4d1c28a-37a2-80a9-8422-ac1a7115f595"
-uuid: "0581d204-f8e2-8c22-93e0-29fc9c671c20"
+coordinate: "product · 5/round · ae2ecfc8"
+contentUuid: "40e8d652-f97a-5e46-a791-71ead85c7f78"
+diamondUuid: "e15a26e0-6ef1-87f5-90b4-7e6037cfa097"
+uuid: "ae2ecfc8-6f49-868e-b7ee-855d5f4c7c16"
 horo: 5
 typography:
   partition: product
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6d44af22-b6e6-82b8-92e2-153d53ef9b18"
+  computationUuid: "789c7d7a-7523-8da2-8203-01d86d8ac752"
   stages:
     - stage: path
       stageUuid: "b639dce4-3b01-8fb8-ac37-a25953f9fe41"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5db9cc55-7aa6-881d-b4bb-48b9cb8a3581"
     - stage: horo
-      stageUuid: "7939a33d-fe2a-86b5-945d-387315a34b95"
+      stageUuid: "aed01f61-57dd-8dd9-adfa-fc93b51b3bea"
     - stage: seal
       stageUuid: "f4c1f91a-6277-8778-982f-f4b139ddd3a7"
     - stage: uuid
-      stageUuid: "d4c5f856-1624-8aa2-bc6f-2ef041ce7a45"
+      stageUuid: "742ea667-03ac-8e90-b62d-9ae79067c6bd"
 version: 2
 ---
 # product

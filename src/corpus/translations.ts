@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "corpus",
-    "uuid": "a6adbf34-1aba-8c21-8f9b-9ac48998d222",
+    "uuid": "f848f002-ee7e-8f9b-8ebd-2d2a4f4b41e5",
     "words": [
       "corpus"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about corpus — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
-    "uuid": "699e5c97-b51b-8c91-8c86-16b74be87749",
+    "uuid": "0344362c-0967-8510-94d7-274d85f1dd0b",
     "words": [
       "use",
       "when",

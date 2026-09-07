@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nerve",
-    "uuid": "e5f94cea-4060-8773-ae37-d5b7bcf0f1ca",
+    "uuid": "a216ebe1-522a-846d-993e-0dc0d609f128",
     "words": [
       "nerve"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's signal pathway — the nervous organ that fires ALL-OR-NOTHING. The action potential is the gate in flesh: a threshold crossed or not, never partial; idempotent within its refractory window; and leaping node-to-node by saltatory conduction. Three properties of the living nerve are computed and mapped — a structural isomorphism — onto erpax's gate and signal.",
-    "uuid": "21ab81b4-6b8f-8f96-82ab-0fe6b2b399cf",
+    "uuid": "512787b3-f27e-8824-90e1-b460ac1be901",
     "words": [
       "use",
       "when",

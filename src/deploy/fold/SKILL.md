@@ -2,18 +2,18 @@
 name: fold
 description: "Use when a heavy dev/meta leaf must not ship in the Cloudflare Worker — the production module swaps live here as data, and their patterns are re-derived against the tree. A NormalModuleReplacement regex is a CLAIM about a path, and the path moves: when the scalpel renamed the matrix data leaf the pattern kept naming its old stem, nothing failed, and ~4 MiB of corpus matrix shipped until Cloudflare refused the upload at 11.5 MiB gz against a 10 MiB ceiling."
 atomPath: "deploy/fold"
-coordinate: "deploy/fold · 5/round · aba13dbb"
-contentUuid: "fe0949d2-6a96-530f-8ecf-bdef98538fa8"
-diamondUuid: "1ebc3371-887d-8c6c-bd2f-2fc98430970a"
-uuid: "aba13dbb-9ee5-8108-a249-37ab9c87af14"
-horo: 5
+coordinate: "deploy/fold · 1/base · b7350e47"
+contentUuid: "6c391b81-7862-5267-95b6-1d6737915d6d"
+diamondUuid: "0b2dd2e4-1d62-89fc-85d3-3da95341ce7f"
+uuid: "b7350e47-01a1-8fa2-b390-c94a77cd3e9a"
+horo: 1
 typography:
   partition: deploy
   bondDegree: 87
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d175a006-ec57-8811-9de1-cfcbdca6ed0c"
+  computationUuid: "27a32ffe-0ca4-8b00-9d6f-5eae344ab5f4"
   stages:
     - stage: path
       stageUuid: "fcb39dac-361f-8ee3-9f90-2c20b90541f7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "55b85e92-c9d7-856a-9071-e8490e23c1c5"
     - stage: horo
-      stageUuid: "db882fa8-754f-8a51-9948-65ffc969efbf"
+      stageUuid: "d3ce2221-d366-8fe4-a194-e43e18a03289"
     - stage: seal
       stageUuid: "967a5a7e-7eec-8672-95d8-771ce664e03d"
     - stage: uuid
-      stageUuid: "60ae5b4a-df60-808c-af90-ef61581db2ea"
+      stageUuid: "5316118c-319b-8854-83f9-e5f42a042bde"
 version: 2
 ---
 # deploy/fold — a fold that no longer matches is not folding, and says nothing

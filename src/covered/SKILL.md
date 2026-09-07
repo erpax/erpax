@@ -2,11 +2,11 @@
 name: covered
 description: "Use when reasoning about covered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: covered
-coordinate: "covered · 8/crest · eb66766b"
-contentUuid: "150e94a2-227e-57af-a3a0-cbfa27aa140d"
-diamondUuid: "29be4a94-3ff5-8377-ba30-67c7e8cb75a9"
-uuid: "eb66766b-3e33-869a-b07a-b036d4dcb763"
-horo: 8
+coordinate: "covered · 7/descent · 3c613d86"
+contentUuid: "ec8f7f1c-40e2-554c-a3e7-d3e049bd76a9"
+diamondUuid: "ee45acd4-6688-8ced-af81-5b5c39d08772"
+uuid: "3c613d86-8054-83ac-8152-03de4562f4e4"
+horo: 7
 typography:
   partition: covered
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "07211035-77f6-836b-8214-450dc0ed607c"
+  computationUuid: "3818435d-b2c5-80ad-bd11-31c264f6ae78"
   stages:
     - stage: path
       stageUuid: "1693bc75-ccf1-884b-b4b5-ce03df2317ff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "061da26e-51cd-8ce6-ab8b-40ab05ce6e03"
     - stage: horo
-      stageUuid: "996b845a-fc23-8f60-9811-ab3ad614ff47"
+      stageUuid: "0c1e8ad2-4a75-8e4e-87a3-409f2d57e39f"
     - stage: seal
       stageUuid: "21f6b4e3-4016-885a-91c2-afd051762e62"
     - stage: uuid
-      stageUuid: "0be3c90d-7fa1-8174-8ae9-129dd8d5ad29"
+      stageUuid: "eda7d7c8-72e6-89d6-83ee-45009705cce2"
 version: 2
 ---
 # covered

@@ -2,11 +2,11 @@
 name: collect
 description: "Use when porting every atom's SKILL.md into code — the collector that harvests translatable strings into a content-addressed per-folder table and the one canonical catalogue."
 atomPath: "translations/collect"
-coordinate: "translations/collect · 5/round · b7a601a8"
-contentUuid: "2fd76061-9185-50ed-be25-013c382a5077"
-diamondUuid: "d9309eca-b0aa-8052-8a9d-dcd3ef21c22e"
-uuid: "b7a601a8-9e35-85c8-99f5-22aefb9f2823"
-horo: 5
+coordinate: "translations/collect · 7/descent · fe4e596d"
+contentUuid: "85cbb843-74b3-53df-a926-4973c8b21b22"
+diamondUuid: "36f1a221-37d4-8e7d-9e31-73faf12518d9"
+uuid: "fe4e596d-f341-8f49-b184-59fb84cd8adc"
+horo: 7
 typography:
   partition: translations
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "BCP-47 language tags · RFC 9562 §5.8 content-uuid (messaging-uuid)"
 bindings: []
 signatures:
-  computationUuid: "7824c9c4-5fd1-8950-8935-ca21cd7bdc97"
+  computationUuid: "ffe975a9-1cfb-8e2f-b8ce-2e20f0a38f92"
   stages:
     - stage: path
       stageUuid: "5b044412-2eb6-8c78-be3f-ee3691ba4e7f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "041a8edf-0f57-86a0-ae5b-bc6f13116fdc"
     - stage: horo
-      stageUuid: "7d0aaa3c-bf44-8c8f-806a-634be68649db"
+      stageUuid: "f4815df7-8010-8cb8-95af-e36c68affa59"
     - stage: seal
       stageUuid: "27d772bd-fd68-85a3-a361-b3baaf0ed505"
     - stage: uuid
-      stageUuid: "f3a92ba6-ec0d-80df-8e20-fc051bb7d8d9"
+      stageUuid: "cc406e24-c44e-863d-bc47-222f7da54490"
 version: 2
 ---
 # collect

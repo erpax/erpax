@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "signatures",
-    "uuid": "d8059075-b0ea-83ea-ba4b-f54ea29e3e61",
+    "uuid": "48be4baa-cfc0-8923-bfa7-697c0b10012a",
     "words": [
       "signatures"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about signatures — Signed content-uuid — digital signatures fold into the uuid family.",
-    "uuid": "f7e55e85-5b10-85ff-ad33-8f6b7c5e2c08",
+    "uuid": "70503d39-11a4-88cd-a6ee-e8cfeb7c5614",
     "words": [
       "use",
       "when",

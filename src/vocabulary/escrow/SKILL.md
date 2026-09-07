@@ -2,18 +2,18 @@
 name: escrow
 description: "Use when funds are held by a third party (escrow agent) pending satisfaction of contract conditions — separate legal/financial status from held-to-maturity or restricted cash per IAS-7"
 atomPath: "vocabulary/escrow"
-coordinate: "vocabulary/escrow · 7/descent · b379461c"
-contentUuid: "370e9a2f-5ef9-5533-983e-94c70208fcb1"
-diamondUuid: "12c688cf-0078-8afa-82bf-282742ca6bae"
-uuid: "b379461c-243d-85e7-a682-83a33c05c7e5"
-horo: 7
+coordinate: "vocabulary/escrow · 5/round · 05fe59ea"
+contentUuid: "72522812-3216-5ad7-8019-73784fefd0c5"
+diamondUuid: "27e73233-6dbe-854a-83c1-9eb04d3e48c3"
+uuid: "05fe59ea-19a0-89bd-92e6-731ac8ef9dc7"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2322d5b2-1d80-8819-8c1d-798e634d001a"
+  computationUuid: "90be97e6-d70b-8a88-80b5-b27550db2f90"
   stages:
     - stage: path
       stageUuid: "3970cd36-e692-8da9-8434-222c14efc20e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "acfbd348-aea6-8fc8-aa97-5ee8c7657863"
     - stage: horo
-      stageUuid: "fbd195de-57ea-8a23-81fc-d2300d97f88a"
+      stageUuid: "9e3fa2d0-1e79-8d2f-9cb2-a46c07543bb7"
     - stage: seal
       stageUuid: "c3f1ad31-6ea2-85b0-8902-6da6f54cc76b"
     - stage: uuid
-      stageUuid: "bee78e69-8969-8c0b-9159-3a5d380d2ca1"
+      stageUuid: "fda0f423-a98a-8430-89e7-d4836d26248a"
 version: 2
 ---
 # escrow

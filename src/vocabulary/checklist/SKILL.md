@@ -2,18 +2,18 @@
 name: checklist
 description: Use when modelling one checklist — the singular model of the checklists collection (the plural store); an ordered set of items to verify or complete.
 atomPath: "vocabulary/checklist"
-coordinate: "vocabulary/checklist · 5/round · 19278819"
-contentUuid: "9a2a5390-53ec-536f-9275-9d64f5c105f2"
-diamondUuid: "cafcff78-e369-8787-b3a9-d847f45055e2"
-uuid: "19278819-5df1-8f3f-bb31-54a244790c81"
-horo: 5
+coordinate: "vocabulary/checklist · 7/descent · b319731e"
+contentUuid: "e7875a17-0dd8-527e-ac83-bab4fca38c41"
+diamondUuid: "dc4cc078-00b4-8791-aebb-79f63a716651"
+uuid: "b319731e-259d-8dd5-ac3c-b0e56e23f188"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c8680083-447c-81f0-8e3f-147b9a80244c"
+  computationUuid: "51d52af4-0c5e-8bda-8c58-0f8f51087153"
   stages:
     - stage: path
       stageUuid: "3c6eb903-3d90-818d-a65f-93cbddc51957"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3964cd3c-684b-8bb4-a566-171ca1ef6cdd"
     - stage: horo
-      stageUuid: "ae9a9fa0-1668-8b35-89a9-bba72fcb9aed"
+      stageUuid: "54d97406-e9fc-8a28-bcfb-c64cbb89bb29"
     - stage: seal
       stageUuid: "fd502e40-3300-8ea1-b487-0dabd9c161bd"
     - stage: uuid
-      stageUuid: "6f1a1225-e74e-8d7b-90fb-043a11789a4d"
+      stageUuid: "ba8baf34-a555-8e7f-a730-28f5cf7c5cc7"
 version: 2
 ---
 # checklist — the model of one [[checklists]] row

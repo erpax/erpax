@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "integer",
-    "uuid": "4d6b4ae5-24f4-8474-8fdb-421cafcc7b85",
+    "uuid": "3dc9e634-88a1-88c6-8def-ab9fd99b9723",
     "words": [
       "integer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about integer — Data type: Integer.",
-    "uuid": "f793d8fc-efbf-8fda-b4e7-0c3ec73e8e37",
+    "uuid": "8b5b841f-1fbc-876b-a628-280fd923876f",
     "words": [
       "use",
       "when",

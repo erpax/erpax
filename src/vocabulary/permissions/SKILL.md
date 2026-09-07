@@ -2,11 +2,11 @@
 name: permissions
 description: "Use when reasoning about permissions — Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi)."
 atomPath: "vocabulary/permissions"
-coordinate: "vocabulary/permissions · 1/base · 033614eb"
-contentUuid: "7c16e316-6cd1-5a28-a70c-58adf9144421"
-diamondUuid: "1a8e9826-32bd-813b-a050-68b07aef84ca"
-uuid: "033614eb-f02b-8205-9df7-d0a7eaa3742a"
-horo: 1
+coordinate: "vocabulary/permissions · 2/share · 6de6f73d"
+contentUuid: "64954f96-7fd8-515b-b042-ca9d92dbb1f0"
+diamondUuid: "baac84cf-3f77-898f-9b7f-8ebb9eb0ce90"
+uuid: "6de6f73d-fdf4-882c-955a-6da4a0d30d43"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bbc32afb-b52d-81cb-bea0-bcfbe901385d"
+  computationUuid: "317ed143-0944-8709-bf4f-c0a7246f64a1"
   stages:
     - stage: path
       stageUuid: "f2a776dc-60be-807c-833e-78dad41e62b5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b040ca49-a1d1-8264-af7a-b1cc299c2ba2"
     - stage: horo
-      stageUuid: "4af9bc29-8d5c-8f85-9796-928d3495f163"
+      stageUuid: "f4f11ebe-9b7e-88b5-a0c0-597bc51eca4a"
     - stage: seal
       stageUuid: "3d20b7fd-5ca8-892a-acb8-31cbaa5716e1"
     - stage: uuid
-      stageUuid: "fab94cc4-6841-8431-bed4-bf9f6014fe4d"
+      stageUuid: "ad710143-d07c-8816-9eb9-a5d03acdf706"
 version: 2
 ---
 # permissions

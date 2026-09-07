@@ -2,11 +2,11 @@
 name: principal
 description: "Use when code must act without a human — a scoped system identity instead of overrideAccess:true. Payload's Local API defaults to skipping access control, and the corpus did so at 138 sites, now 132; a principal makes the check RUN and pass, because the identity is authorised for its subsystem and nothing else. Five declared principals (seed, hook, job, migration, import), none holding admin, each tenant-bound. Reads exactly like a person to the access layer — a principal needing its own code path would be a second door."
 atomPath: principal
-coordinate: "principal · 8/crest · 1b59f673"
-contentUuid: "1e0fe8da-7a17-58d5-8777-b2cfd567ef51"
-diamondUuid: "4ffd4df2-003e-8b95-b86c-141c02eb19b7"
-uuid: "1b59f673-0fcd-8595-b9d7-5b3d122d3c89"
-horo: 8
+coordinate: "principal · 7/descent · bb6f630b"
+contentUuid: "e1d542e8-13bc-55d9-9618-9248fd94c644"
+diamondUuid: "f04cd863-3b88-8a4f-8785-685270b92dcc"
+uuid: "bb6f630b-f5a7-8f4d-9e61-e1d1ab104943"
+horo: 7
 typography:
   partition: principal
   bondDegree: 15
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC 27001 A.8.2 — privileged access rights"
 bindings: []
 signatures:
-  computationUuid: "9fd9f5da-acf2-8c32-8bb2-cd47bb0c22ef"
+  computationUuid: "6d84df34-3b59-8ac5-95fe-5ba408db75b7"
   stages:
     - stage: path
       stageUuid: "447f0cd8-c477-81ba-b4ac-992aea2ef065"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "e89f09e3-448a-8af9-9c4f-c274dbed7946"
     - stage: horo
-      stageUuid: "1e0f5973-a891-81b4-b322-2d5c23dbc2c5"
+      stageUuid: "2287de4b-1954-89f9-ac01-be3bf7a58f0c"
     - stage: seal
       stageUuid: "aa27c79e-1591-8fe1-8f61-6cde828b74cc"
     - stage: uuid
-      stageUuid: "7e79473d-55eb-85e2-ae64-4990a75f348c"
+      stageUuid: "eb1ffea9-0441-8214-a4aa-b1b371269659"
 version: 2
 ---
 # principal — act as someone, never as no one

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contact",
-    "uuid": "67bde4a3-5da5-82f7-a200-148b6052497a",
+    "uuid": "3e2067ff-f4d1-80e9-8d99-e2940693b30c",
     "words": [
       "contact"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about contact — Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route.",
-    "uuid": "dd6dff9c-d8b1-8089-9649-01660acd0517",
+    "uuid": "6dce99c8-3cd5-8b76-aeac-e7f336ec18d9",
     "words": [
       "use",
       "when",

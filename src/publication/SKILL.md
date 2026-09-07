@@ -2,18 +2,18 @@
 name: publication
 description: "Use when reasoning about publication — Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication"
 atomPath: publication
-coordinate: "publication · 1/base · 88de579a"
-contentUuid: "9620a357-7949-5201-9091-64ad2700cec2"
-diamondUuid: "a650d132-5ffb-8983-8077-18e3d6755ac3"
-uuid: "88de579a-7979-8f95-86d9-035fe6ccf3f3"
-horo: 1
+coordinate: "publication · 5/round · b4b14a1b"
+contentUuid: "150433c1-4f36-5883-80fc-eb7bd1b0ff4a"
+diamondUuid: "d8f78779-e745-8245-92c3-7ee526f7ef49"
+uuid: "b4b14a1b-fe77-88f9-a07b-6496b96cc435"
+horo: 5
 typography:
   partition: publication
   bondDegree: 26
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3a92066c-00b3-82fe-92ee-5a7c7cb533c7"
+  computationUuid: "61599a29-371e-8d15-8a4f-b68103911f26"
   stages:
     - stage: path
       stageUuid: "6d10f55f-5375-818f-a846-37fc7f33e139"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7c4b012e-b06a-85de-a975-6117d7af8413"
     - stage: horo
-      stageUuid: "7dc5fcca-7537-8422-ab0c-02a6b5d4af31"
+      stageUuid: "96233516-bb1c-890b-ae54-9749b84abe51"
     - stage: seal
       stageUuid: "61354a4b-a818-8b89-a7c5-986fa3b55009"
     - stage: uuid
-      stageUuid: "a489eefa-b7aa-80fe-96b6-8beae358cc1d"
+      stageUuid: "6a640f49-bb8a-8576-b85b-6fe8a93f5736"
 version: 2
 ---
 # publication — Quantum System v1.0 peer-verifiable release

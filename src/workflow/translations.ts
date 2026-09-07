@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "workflow",
-    "uuid": "2b0295b0-ea17-8842-8e7f-5ffcac157dde",
+    "uuid": "84dab12f-49a3-846b-a99f-b57b471bdbc5",
     "words": [
       "workflow"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service.",
-    "uuid": "d3c1c241-8e26-8875-8125-62ebaccfad41",
+    "uuid": "6bdd8a73-fef4-8bd8-bf95-4aa6699a533f",
     "words": [
       "use",
       "when",

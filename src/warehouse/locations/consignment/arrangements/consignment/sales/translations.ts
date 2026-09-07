@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sales",
-    "uuid": "14bb8720-e9ac-82e2-b4a6-b65424c94cac",
+    "uuid": "34d0bf89-0377-82d5-a08a-099434f7cf4e",
     "words": [
       "sales"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer — revenue recognition, COGS derecognition, commission calculation, inventory decrement, and GL journal booking. The consignment sale-event collection.",
-    "uuid": "07fd8998-8eae-80a4-9687-1917356ca9b6",
+    "uuid": "9e67bf63-8a9a-8e0d-a8db-2edfdfa2e2df",
     "words": [
       "use",
       "when",

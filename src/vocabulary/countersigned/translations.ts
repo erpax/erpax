@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "countersigned",
-    "uuid": "c783ffca-b1cb-88c7-8762-e58b59a657ed",
+    "uuid": "1833e662-2ef1-82f8-bb32-722e070f552d",
     "words": [
       "countersigned"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about countersigned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "302522f2-7670-8dad-b23d-d8e3d2718c40",
+    "uuid": "fe385b74-213f-8a25-9f90-53578fe4ab90",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "history",
-    "uuid": "e68c1b82-0830-8c20-8974-b4776829f037",
+    "uuid": "1fe6b75f-cafe-83e6-9320-bec56ff68607",
     "words": [
       "history"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about git history as the akashic record's time axis — a content-addressed Merkle DAG of commits the agents read as a knowledge source AND another independent tamper-evidence level (forging the past = rewriting every commit on every clone). Wired in, it increases tamper cost and costs nothing to keep.",
-    "uuid": "dbfb1c6a-a90e-8fc3-903e-c232dc483123",
+    "uuid": "97174481-fecf-8b05-9404-3a53e780fa3a",
     "words": [
       "use",
       "when",

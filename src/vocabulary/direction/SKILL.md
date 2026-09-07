@@ -2,11 +2,11 @@
 name: direction
 description: "Use when reasoning about direction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/direction"
-coordinate: "vocabulary/direction · 7/descent · ac1fb811"
-contentUuid: "f295295e-ad4c-57c4-9bbc-e591b860f237"
-diamondUuid: "eff02883-abdf-878c-b17d-8e0879b3042c"
-uuid: "ac1fb811-d541-834d-9d83-aaf8755901eb"
-horo: 7
+coordinate: "vocabulary/direction · 4/weave · 03aeee38"
+contentUuid: "61807e55-e20e-536b-9d8b-21f3e668bc43"
+diamondUuid: "f7f708ae-0ab0-84f5-91ef-93e494cd7b2b"
+uuid: "03aeee38-ce77-8939-b9fc-b634462624f9"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bfc14786-fd4c-82ce-9ea1-fb6b3216152c"
+  computationUuid: "f195b3ee-2168-82d3-a095-047ea65fbf4b"
   stages:
     - stage: path
       stageUuid: "b7600ed0-e1d8-8c9e-81fb-3f1d0e29f437"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fcdcc0d2-99cd-8291-bb1c-68a9e0bc3a33"
     - stage: horo
-      stageUuid: "b814fa00-1e48-80c1-a2a6-49b09893b005"
+      stageUuid: "064fa14d-914e-8e4a-a95c-0bfbee9b9223"
     - stage: seal
       stageUuid: "e8e891d0-5b56-8788-93b0-76e8869a6b57"
     - stage: uuid
-      stageUuid: "5a92fa2e-5c21-8b12-8409-b3abf83c8c96"
+      stageUuid: "ba50fe84-b456-8f35-a894-02c4993b50a3"
 version: 2
 ---
 # direction

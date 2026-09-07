@@ -2,11 +2,11 @@
 name: experience
 description: "Use when reasoning about experience — A schema.org component word, collided out of schema.org compounds — fused from OccupationalExperienceRequirements · experienceInPlaceOfEducation · experienceRequirements · monthsOf"
 atomPath: "vocabulary/experience"
-coordinate: "vocabulary/experience · 5/round · 4606fc50"
-contentUuid: "d69e2c3f-59ae-5000-8eac-7486cb887d82"
-diamondUuid: "a522ac14-55a8-85eb-a37d-1a6ee8047d9c"
-uuid: "4606fc50-44bb-8616-8530-a429510903b1"
-horo: 5
+coordinate: "vocabulary/experience · 2/share · 002dc017"
+contentUuid: "afd10ba0-94dc-5bdf-9c6e-b92e40346b92"
+diamondUuid: "d814eff4-a78b-8f88-8ebc-afdce7268b5e"
+uuid: "002dc017-5367-8f8b-b415-0d395e1d9adb"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "08ad8031-d161-8107-b308-cb2806e152cd"
+  computationUuid: "ef45af2a-c4e5-808b-af7b-d2ff0cc359e3"
   stages:
     - stage: path
       stageUuid: "69926336-1f74-85ae-9a97-9965ec5531fd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d7773bb0-a172-879a-a4e4-7b2de8a0c43a"
     - stage: horo
-      stageUuid: "115d4dc2-53c0-8dd0-87e0-21e03816e4fa"
+      stageUuid: "8a1106a3-7288-8e6d-b46b-2fed4263ad33"
     - stage: seal
       stageUuid: "fb2e790a-3c06-82d2-bf02-f7f389a92bb3"
     - stage: uuid
-      stageUuid: "a2b8cd6d-734d-8782-bef2-2c3825188c6a"
+      stageUuid: "a8ffc296-b77c-8ae3-a262-e0240d6ecb80"
 version: 2
 ---
 # experience

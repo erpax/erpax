@@ -2,10 +2,10 @@
 name: redirects
 description: "Use when reasoning about redirects — RFC 9110 §13 cached redirects-collection fetcher."
 atomPath: "rfc/9110/get/redirects"
-coordinate: "rfc/9110/get/redirects · 5/round · ec10f46d"
-contentUuid: "057c97de-2e1f-5fbb-880b-61ae3d3195de"
-diamondUuid: "99cef931-edb2-87bb-9095-c1908318a564"
-uuid: "ec10f46d-7f49-8161-bc62-02d2c63ff38a"
+coordinate: "rfc/9110/get/redirects · 5/round · 7caae0be"
+contentUuid: "6d45e8d7-3c68-5e6d-b4a1-37f839709aa1"
+diamondUuid: "ddc45bb2-a2d3-8318-925d-c47a71cc3d8a"
+uuid: "7caae0be-d458-8727-81d6-a06d0841422e"
 horo: 5
 typography:
   partition: rfc
@@ -15,7 +15,7 @@ standards:
   - "9110 §15.4 redirection-3xx"
 bindings: []
 signatures:
-  computationUuid: "d0ad41f5-c269-8a43-8d3d-f10006d1ec75"
+  computationUuid: "3dce5f4b-cf71-83ac-bd10-0a884365dee3"
   stages:
     - stage: path
       stageUuid: "73ff6567-3a53-8721-aeb6-9d5459d0a674"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "d9504936-b7c4-8ffd-8755-ac6c6c6c61f1"
     - stage: horo
-      stageUuid: "6a190b27-10de-804c-9596-8329b0f992e0"
+      stageUuid: "b820f735-b751-8944-9b16-a5bc2c5df5bf"
     - stage: seal
       stageUuid: "f5e082a0-32d8-8ec0-a56c-443e8b5dfe50"
     - stage: uuid
-      stageUuid: "9d716042-3fe9-8769-ac3f-9864d624aeaf"
+      stageUuid: "ba42ddea-037d-8595-b84d-834b96e1fa97"
 version: 2
 ---
 # rfc/9110/get/redirects

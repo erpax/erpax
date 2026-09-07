@@ -2,14 +2,14 @@
 name: "1"
 description: "Use when implementing or referencing ISO 3166-1 — Country codes."
 atomPath: "iso/3166/1"
-coordinate: "iso/3166/1 · 8/crest · 168b250b"
-contentUuid: "3ed01336-653e-55cb-9eda-b0cfb1533b6b"
-diamondUuid: "5d376d29-ebce-887e-b78a-69d4c30b0e4b"
-uuid: "168b250b-1f44-86b7-80c4-672cfe04631a"
-horo: 8
+coordinate: "iso/3166/1 · 4/weave · 88e2c945"
+contentUuid: "85915d2f-6d2b-5844-8241-76f797e92a2c"
+diamondUuid: "ca6f3b2b-9e6a-840f-b672-b687ea6e64b9"
+uuid: "88e2c945-f88e-8384-b431-d959ecf44d4f"
+horo: 4
 typography:
   partition: iso
-  bondDegree: 9
+  bondDegree: 7
 standards:
   - "ISO-3166-1:2020 country-codes"
   - "ISO-3166-1:2020 country-codes`"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "8ab83eb6-ab36-88d4-ae8a-c031c76d9412"
+  computationUuid: "38495cc3-81df-89f7-8de3-33bda3adaee5"
   stages:
     - stage: path
       stageUuid: "ba069499-1393-8460-b924-5f142f4e08f7"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "2377e045-308e-8041-98ca-ead59a3fb939"
     - stage: horo
-      stageUuid: "89373591-e357-84fb-8780-227dd9e4a43b"
+      stageUuid: "3c5a1f22-0d1c-86ea-9925-4f9d070452ce"
     - stage: seal
       stageUuid: "048ee2f8-f984-8257-bf1b-9145195155f0"
     - stage: uuid
-      stageUuid: "ecb55b53-4143-8f0a-a777-7f9e6bcb2de9"
+      stageUuid: "8d9349eb-4507-88e1-8c61-42cc89c89031"
 version: 2
 ---
 # ISO 3166-1 — Country codes

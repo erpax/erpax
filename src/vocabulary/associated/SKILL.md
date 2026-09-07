@@ -2,11 +2,11 @@
 name: associated
 description: "Use when reasoning about associated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/associated"
-coordinate: "vocabulary/associated · 8/crest · a1871643"
-contentUuid: "6be5d913-5c5b-5923-96a0-a33b3f6f377b"
-diamondUuid: "3649eafd-c347-8c2c-8d26-904061f05ed7"
-uuid: "a1871643-cbc7-8bfe-856c-c256547a87f1"
-horo: 8
+coordinate: "vocabulary/associated · 1/base · 84e53e26"
+contentUuid: "bae30128-f90c-5be6-af14-1c64be7a2d4f"
+diamondUuid: "19db4e65-98c1-8f4d-8aab-ca3fe8bc3eb6"
+uuid: "84e53e26-4307-8c84-8ce5-14b7480476ef"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 47
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3ceed161-bc4a-8a1f-8182-75eb451f0316"
+  computationUuid: "9b17b1de-8dd5-8168-bdac-9497d13db179"
   stages:
     - stage: path
       stageUuid: "a1cdea6c-97ae-8b14-963e-50f74dcfc29f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8dc808e3-549c-8d21-bae3-bf0b19f57f3c"
     - stage: horo
-      stageUuid: "2de7390e-4f73-8c89-94b0-eddea88f0d04"
+      stageUuid: "a02747f0-4041-8725-88b7-0f2b6f13cca2"
     - stage: seal
       stageUuid: "1fcc0b2c-9c91-892e-99f9-ac6e4806bff3"
     - stage: uuid
-      stageUuid: "48b1303f-0d40-8181-8aaa-3d871be83e88"
+      stageUuid: "a2ca8784-d32e-8f72-8103-cb78f47166ba"
 version: 2
 ---
 # associated

@@ -2,11 +2,11 @@
 name: corporation
 description: "Use when reasoning about corporation — Organization: A business corporation."
 atomPath: "vocabulary/corporation"
-coordinate: "vocabulary/corporation · 2/share · e3557cf6"
-contentUuid: "a9aeb644-09bd-5382-8497-8003c2c9b654"
-diamondUuid: "c800cf92-d96c-8a06-88b6-9f1e8dcbca10"
-uuid: "e3557cf6-39e0-85d5-bc07-962e8555269d"
-horo: 2
+coordinate: "vocabulary/corporation · 7/descent · 30ded6df"
+contentUuid: "7a96ee6d-db69-5385-863c-1db9772571a8"
+diamondUuid: "d9b0e727-28e4-84b1-a0aa-075c98f776d6"
+uuid: "30ded6df-f8be-8abb-af6e-a503946af665"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a43f9f79-98bd-8668-8025-2a167bbc0bf2"
+  computationUuid: "3984def0-7725-8684-a069-2279cc95b9c7"
   stages:
     - stage: path
       stageUuid: "3044ebc2-cafd-8a4e-85c2-7cd83a2d1433"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cd219ca9-cf31-8194-beae-aef77d00463a"
     - stage: horo
-      stageUuid: "a3ea5323-b3a3-8269-8020-5c649caada83"
+      stageUuid: "0aa9008c-32d5-854e-a5f3-3ba032e1df38"
     - stage: seal
       stageUuid: "f5e7b71f-4c26-83e7-9126-35d964c05940"
     - stage: uuid
-      stageUuid: "1c163fef-a507-8824-bb0b-0d1db0084b1b"
+      stageUuid: "4324a975-1292-86c2-aba1-a50aa4c2b41e"
 version: 2
 ---
 # corporation

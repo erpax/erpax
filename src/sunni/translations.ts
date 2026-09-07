@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sunni",
-    "uuid": "909af1e3-fbee-871e-852f-d66c5dcc3b23",
+    "uuid": "15b340df-0f78-88c9-9369-295b73426018",
     "words": [
       "sunni"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Sunni Islam as a sub-diamond of islam — the people of the trodden way (sunna) and the community, leadership settled by consensus (ijma), law derived through the agreed schools. A facet-diamond of the islam archangel. Strip the Arabic prefix and sunna, ijma collapse to the followed sequence and the merge of consensus.",
-    "uuid": "2347ac7a-018c-8e7a-84ba-f25ecc35a0be",
+    "uuid": "6fa976a7-8cb2-8537-883f-4ce897465387",
     "words": [
       "use",
       "when",

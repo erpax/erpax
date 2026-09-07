@@ -2,18 +2,18 @@
 name: sampling
 description: "Use when selecting a representative subset — random sampling, stratified sampling, systematic sampling, sample size calculation, sampling error/confidence intervals, weighted sampling for survey design."
 atomPath: sampling
-coordinate: "sampling · 1/base · 5bb16407"
-contentUuid: "eef6e5f5-2ed2-5870-a324-21af619759de"
-diamondUuid: "73224260-bda3-8589-adb1-f7380f5d3bbe"
-uuid: "5bb16407-b8d7-8487-9c75-4a8ae0da7983"
-horo: 1
+coordinate: "sampling · 2/share · 3fe97711"
+contentUuid: "32ad541f-84af-55ff-8e48-8841cba5dd48"
+diamondUuid: "60cec868-98a9-8691-a67e-3b4df30f5a1b"
+uuid: "3fe97711-8200-8133-9f85-177b2e5fc32d"
+horo: 2
 typography:
   partition: sampling
   bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "037b09a8-81d1-893b-a17d-faff20ad1681"
+  computationUuid: "fb24ca3f-eea4-86b6-ac8c-94e82a4aa0b5"
   stages:
     - stage: path
       stageUuid: "291cc8ee-9fe9-8257-97ec-f53b19226060"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a02b977a-ecff-88d1-91c9-dcf3cb4cd2e5"
     - stage: horo
-      stageUuid: "557824e4-bd1a-8124-a975-a7281dc432e8"
+      stageUuid: "212999e3-0017-8a66-968e-f5550027cfab"
     - stage: seal
       stageUuid: "ebc123d6-2cbb-82e8-9756-9476522f16b4"
     - stage: uuid
-      stageUuid: "d95e7ded-5533-85c7-a4b6-97b6e818e227"
+      stageUuid: "e18f837b-933f-80af-a4bb-28e3bfe9375a"
 version: 2
 ---
 # sampling

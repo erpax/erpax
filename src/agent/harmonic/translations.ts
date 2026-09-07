@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "harmonic",
-    "uuid": "093e7dfa-191b-838b-9012-306096c6d2d1",
+    "uuid": "301a742e-4663-8613-b2af-567faeae49a0",
     "words": [
       "harmonic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when naming the order an agent acts with or against — the four harmonic moves, the exactly-three disharmonies, and a classifier that refuses to call an unknown move compliant.",
-    "uuid": "a1aba7ab-7fb6-8c08-b8cd-fcfdc24129ca",
+    "uuid": "8e3fa99a-7ab1-884d-be01-1eeee3655917",
     "words": [
       "use",
       "when",

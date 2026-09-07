@@ -2,18 +2,18 @@
 name: all
 description: "Use when reasoning about totality or universality in erpax — \"anything is X\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality."
 atomPath: "vocabulary/all"
-coordinate: "vocabulary/all · 8/crest · b7df49d8"
-contentUuid: "f780fd13-0edc-5455-9a24-9ed408713e64"
-diamondUuid: "1774feb7-104b-82df-a623-1db668d7cffe"
-uuid: "b7df49d8-7e78-8dc0-961f-b5317edb901f"
-horo: 8
+coordinate: "vocabulary/all · 2/share · c852f03c"
+contentUuid: "be370d6d-d916-56fc-9eb8-88a082b5708a"
+diamondUuid: "7183639e-d5f6-8a6d-b329-4d8597dbd3bd"
+uuid: "c852f03c-ea15-878f-a4ec-567374d699fa"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 87
 standards: []
 bindings: []
 signatures:
-  computationUuid: "21a09e63-7b5f-8343-af97-82ea10c30b4c"
+  computationUuid: "b588feee-b9b5-8745-93bf-8ba0c76dc48b"
   stages:
     - stage: path
       stageUuid: "4933a9d8-b552-80de-9a67-3beb1bbdd2ff"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3453fb6b-7492-8be0-b528-dd08270581eb"
     - stage: horo
-      stageUuid: "dd57ec84-682b-89fb-8213-0cec35785f56"
+      stageUuid: "e00b446c-4d41-89c5-b09a-5977915b5425"
     - stage: seal
       stageUuid: "dfe2f5a1-e96c-852f-a7f6-f11dbad6081b"
     - stage: uuid
-      stageUuid: "3c0bfc6a-c907-89c0-a18f-6baec591141a"
+      stageUuid: "3d215773-7352-886f-81c5-fc97a79ba023"
 version: 2
 ---
 # all — totality ("anything is X", every case defined)

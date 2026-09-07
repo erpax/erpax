@@ -2,11 +2,11 @@
 name: promise
 description: "Use when reasoning about promise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/promise"
-coordinate: "vocabulary/promise · 1/base · 7fe346bf"
-contentUuid: "a8c02d45-0e02-577b-a671-f2e50db5c97d"
-diamondUuid: "a5b1bdea-81aa-8714-b010-cb0710fa1e7d"
-uuid: "7fe346bf-b952-89f3-8831-1e3bedb8a661"
-horo: 1
+coordinate: "vocabulary/promise · 5/round · ca093d65"
+contentUuid: "28548113-15f9-57c1-be79-e06a48d87cf5"
+diamondUuid: "dbc0c402-c8fb-8ca9-8c83-7ba88ef34326"
+uuid: "ca093d65-b97a-8170-9945-54e7e0500f94"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dbef2d33-0192-844e-b6ce-de85f3d00b15"
+  computationUuid: "77478ba7-f060-8037-a234-bcd140efd2be"
   stages:
     - stage: path
       stageUuid: "1659ad67-5f04-8205-b509-96d7cdb6d17d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ecef83b2-0ac1-8b97-985d-40f04250301c"
     - stage: horo
-      stageUuid: "671001ac-3211-8c43-8070-ffa56b7ca100"
+      stageUuid: "211c4259-11a9-8043-b063-586f91cd94d1"
     - stage: seal
       stageUuid: "0fc75713-fb30-86d4-98c4-098c7f3a17a2"
     - stage: uuid
-      stageUuid: "09a65dab-a041-8719-ae9c-aa1f1e628857"
+      stageUuid: "cd7e8ba7-bce4-8714-a5ea-ca6ed3a0054f"
 version: 2
 ---
 # promise

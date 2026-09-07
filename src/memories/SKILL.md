@@ -2,11 +2,11 @@
 name: memories
 description: "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice (memory/architecture); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key)."
 atomPath: memories
-coordinate: "memories · 4/weave · 9a48a06c"
-contentUuid: "456aa621-619b-50b7-bb18-65fb3c5009f6"
-diamondUuid: "f7e94533-aae2-8335-899f-2bd102955065"
-uuid: "9a48a06c-f058-83da-8bdd-8642f1a8b575"
-horo: 4
+coordinate: "memories · 7/descent · 41eb5800"
+contentUuid: "432117f0-f3f6-564e-a6f5-6e9d07085db0"
+diamondUuid: "d38c80d3-e621-8f1a-a90e-ee6359987457"
+uuid: "41eb5800-a1df-84fb-b4a8-09e626c87048"
+horo: 7
 typography:
   partition: memories
   bondDegree: 43
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "cd92355f-a139-8b7d-a2d2-95c0c739631e"
+  computationUuid: "cd545967-c8e2-87f4-b0cb-cc7fb2da3da9"
   stages:
     - stage: path
       stageUuid: "3b11dd23-97ee-8f8a-8b73-84908b45483f"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "55282a62-3bd3-883c-beb7-66b3cb2fb893"
     - stage: horo
-      stageUuid: "32adf71b-42ea-81dc-afbb-6256c014b37d"
+      stageUuid: "14712f4b-69c6-8596-aa75-3cfeb63ddbff"
     - stage: seal
       stageUuid: "9ec5b0d7-ac80-8380-a02d-223420724341"
     - stage: uuid
-      stageUuid: "9b1c3146-06c2-8310-8119-41c3c576dee0"
+      stageUuid: "522564b9-f417-8bb8-99a8-5038a3948e2b"
 version: 2
 ---
 # memories

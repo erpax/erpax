@@ -2,11 +2,11 @@
 name: surface
 description: "Use when declaring or auditing the whole cryptographic surface an atom exposes — the judgment guard that makes a silently omitted surface fail the build: every reachable surface (root-signing · channel-keying · storage-at-rest · re-exchange) must be registered sealed (naming the standard AND the test) or open (naming the gap AND the owner), a channel sealed without FIPS 203 ML-KEM is channel-unsealed because harvest-now-decrypt-later reads the transport not the root, and a root sealed by anything but FIPS 205 SLH-DSA or FIPS 204 ML-DSA is root-unsealed because Shor breaks a classical root outright."
 atomPath: "anchor/surface"
-coordinate: "anchor/surface · 8/crest · c9723ecc"
-contentUuid: "269fd0e3-5942-563f-b924-67ec56e89ddd"
-diamondUuid: "1f134072-4fe9-82d7-9609-0ee0aee8acc9"
-uuid: "c9723ecc-1474-836f-8105-1d8feabab2e4"
-horo: 8
+coordinate: "anchor/surface · 7/descent · d29479d3"
+contentUuid: "eb996047-5567-5279-a270-cb01d57f6f45"
+diamondUuid: "018648df-98a6-816d-9930-006206529510"
+uuid: "d29479d3-14d2-80cb-8e52-d064f522bc1c"
+horo: 7
 typography:
   partition: anchor
   bondDegree: 20
@@ -16,7 +16,7 @@ standards:
   - "FIPS 205 (SLH-DSA) — hash-based signature; the primary root, no new assumption"
 bindings: []
 signatures:
-  computationUuid: "8d8586d8-3241-8aaf-9064-0e1d16303b8f"
+  computationUuid: "98988e01-4cc1-8b77-8810-a7d99c4da444"
   stages:
     - stage: path
       stageUuid: "7445b50e-7694-8eac-8c5e-8b0c465ea9b9"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9b106329-658c-8365-a69b-067ef1bd9a3e"
     - stage: horo
-      stageUuid: "edd46ce0-fcc4-8652-a747-39093faeff02"
+      stageUuid: "34bb1a22-27ad-8ef4-9afd-cfab9d6e313b"
     - stage: seal
       stageUuid: "1c3458f6-d0c0-8582-a603-8d5d13a63045"
     - stage: uuid
-      stageUuid: "54ddc38d-c970-88b5-801c-44e2ecb25c13"
+      stageUuid: "2e6a18c0-c25d-8163-adf3-d221dee0cce3"
 version: 2
 ---
 # anchor/surface — a surface you did not declare is a surface you dismissed

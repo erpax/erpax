@@ -2,11 +2,11 @@
 name: candidate
 description: Use when reasoning about candidate — A sub property of object. The candidate subject of this action.
 atomPath: "vocabulary/candidate"
-coordinate: "vocabulary/candidate · 1/base · 9ca75506"
-contentUuid: "179c00d1-df6a-50fa-8125-2ac1cfa487a5"
-diamondUuid: "2d9b8544-fe62-82fc-8af8-b21c4e5f4bc4"
-uuid: "9ca75506-47a8-896f-ac90-41b98ada1801"
-horo: 1
+coordinate: "vocabulary/candidate · 2/share · 785b4b6f"
+contentUuid: "4b0d0bec-913f-5282-9e42-6897183f918d"
+diamondUuid: "70e1a0ba-f7ff-8746-be61-4388e63ebcdd"
+uuid: "785b4b6f-fdde-8c37-9487-3c4a17eabe8c"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9b28ce26-03b8-8851-b69f-a15edd899d4e"
+  computationUuid: "744c69da-d73a-839f-ab9c-e6b74d6ebda6"
   stages:
     - stage: path
       stageUuid: "38045f50-5944-83b0-9b68-46f352aab298"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a068a083-f32d-831c-a3f2-39a46e6d465e"
     - stage: horo
-      stageUuid: "3ce85df3-c29b-85ac-8405-4eefc7f96f9d"
+      stageUuid: "9d661516-154d-8731-813f-3ddcba9bfb2e"
     - stage: seal
       stageUuid: "97e985ba-b578-8244-b535-ffb6f3144d13"
     - stage: uuid
-      stageUuid: "39d9d5e4-44a0-8bf9-928e-91b876e2048f"
+      stageUuid: "e3d7c709-9c72-8ecd-8776-fbc5bf6dd012"
 version: 2
 ---
 # candidate

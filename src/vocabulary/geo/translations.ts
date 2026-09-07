@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "geo",
-    "uuid": "0fcf2738-1250-875d-9bcd-035483243a9e",
+    "uuid": "1eace200-b02f-8c40-978e-a1d568d12602",
     "words": [
       "geo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about geo — The geo coordinates of the place.",
-    "uuid": "322b3684-8565-8e4d-bc45-c30c310d2d98",
+    "uuid": "3060307b-d442-8ca1-9ef7-ec625e4e86b7",
     "words": [
       "use",
       "when",

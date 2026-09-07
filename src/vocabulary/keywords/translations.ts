@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "keywords",
-    "uuid": "2cd8e836-792f-8f5d-a0aa-e54a02d52e29",
+    "uuid": "60301513-6628-8f24-af43-397101882a3e",
     "words": [
       "keywords"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about keywords — Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
-    "uuid": "d1bb1ed8-bc8e-8871-b64e-8ec06b1be827",
+    "uuid": "cb6c61ba-435d-8860-af81-f444d0d9c8cf",
     "words": [
       "use",
       "when",

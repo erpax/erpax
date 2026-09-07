@@ -2,10 +2,10 @@
 name: bitrate
 description: Use when reasoning about bitrate — The bitrate of the media object.
 atomPath: "vocabulary/bitrate"
-coordinate: "vocabulary/bitrate · 2/share · 483ff0c5"
-contentUuid: "b5821463-b64b-5209-940c-e01db395fd1d"
-diamondUuid: "5374d100-1cb8-8ed2-94c8-9d6f9585b22b"
-uuid: "483ff0c5-4be1-859a-971c-7312352e20d3"
+coordinate: "vocabulary/bitrate · 2/share · 04891e6f"
+contentUuid: "cee251a3-33af-5df8-a25d-903bf226819b"
+diamondUuid: "1cd4cecb-9016-80fb-83e3-13f84499aa01"
+uuid: "04891e6f-67de-89be-8b15-2dde92ab2a09"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "181611f4-61ad-8860-960b-af4005b5f146"
+  computationUuid: "5ec56fbb-82fa-83bd-a5c0-b70429ea20ec"
   stages:
     - stage: path
       stageUuid: "297c02b1-9a7e-804a-918e-01e51f4ad9a4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cd859663-92f2-8eed-a4fa-df1c51bff351"
     - stage: horo
-      stageUuid: "db2840c6-4327-8735-a126-875edc556417"
+      stageUuid: "5b72296c-fc4f-89ad-b9f9-e418842eab22"
     - stage: seal
       stageUuid: "b4930928-7b2c-8be4-b90f-3d9683f6a24c"
     - stage: uuid
-      stageUuid: "f24afc93-ef2e-8922-8688-4a7f79e388cb"
+      stageUuid: "e31bbf6f-dcc9-89b0-ad4f-77a3f2cb96b5"
 version: 2
 ---
 # bitrate

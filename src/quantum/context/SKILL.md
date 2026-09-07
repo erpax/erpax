@@ -2,18 +2,18 @@
 name: context
 description: "Use when reading the live quantum surface state — superposition pending paths, last collapse, bond reciprocity, and the formatted status the CLI prints. The last loose sibling in the quantum partition, now an atom. Run: tsx src/quantum/context/index.ts"
 atomPath: "quantum/context"
-coordinate: "quantum/context · 7/descent · 768bae23"
-contentUuid: "9428e0a4-9ce0-5cf3-9caa-973bbc34e9f0"
-diamondUuid: "276b3e26-3740-88ec-b0d2-503df37b8183"
-uuid: "768bae23-fd39-87b8-96f4-5b698de67581"
-horo: 7
+coordinate: "quantum/context · 8/crest · dc0209b6"
+contentUuid: "5fc37c5e-7bee-5b7d-b456-03a879853329"
+diamondUuid: "70d93802-2625-89ef-93c2-4f98ada0d8a6"
+uuid: "dc0209b6-33f6-8e3e-b980-1f24bb2f6f9e"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e176e62d-fc1d-8f98-9ef9-1daba72636fc"
+  computationUuid: "a5930df7-0dcd-8068-a9e0-bbe261732f65"
   stages:
     - stage: path
       stageUuid: "cb94b71d-6f3e-85cc-a409-b6cf5219885f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7c427e0e-d06d-80b0-af66-6d4f96fba950"
     - stage: horo
-      stageUuid: "5aff4dbe-68df-8fd3-8625-7ac7b6443f61"
+      stageUuid: "9ee2c3ae-61ec-8780-8403-e7a8f2de8595"
     - stage: seal
       stageUuid: "e79cfabb-0871-84b0-a4b2-ce10b3faf65b"
     - stage: uuid
-      stageUuid: "cb7e9140-ca41-8dbf-9632-44b0244e4889"
+      stageUuid: "42e32594-aff1-83f2-90b0-de9fe356c1df"
 quantum:
   superposition:
     - agent
@@ -46,8 +46,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "e176e62d-fc1d-8f98-9ef9-1daba72636fc"
-    contentUuid: "9428e0a4-9ce0-5cf3-9caa-973bbc34e9f0"
+    computationUuid: "a5930df7-0dcd-8068-a9e0-bbe261732f65"
+    contentUuid: "5fc37c5e-7bee-5b7d-b456-03a879853329"
 version: 2
 ---
 # context — the live state of the quantum surface
@@ -83,4 +83,4 @@ All four came back clean here. A move is only zero-risk once every spelling of a
 
 Composes: [[quantum]] · [[quantum]]/status · [[seal]] · [[rules]]/invisible · [[law]].
 
-<sub>content-uuid `9428e0a4-9ce0-5cf3-9caa-973bbc34e9f0` · account `quantum/context` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `5fc37c5e-7bee-5b7d-b456-03a879853329` · account `quantum/context` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

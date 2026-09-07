@@ -2,11 +2,11 @@
 name: periods
 description: "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node."
 atomPath: "fiscal/periods/tax/periods"
-coordinate: "fiscal/periods/tax/periods · 7/descent · 4417c677"
-contentUuid: "92df43bb-6ddc-525b-83bc-e6c527f8819b"
-diamondUuid: "fcd6c21f-ee61-8276-aed2-f4f0f8fbdafb"
-uuid: "4417c677-8c1b-861a-8d30-6c912fb02f2d"
-horo: 7
+coordinate: "fiscal/periods/tax/periods · 1/base · 8e78e1fd"
+contentUuid: "92f79922-bc80-59d2-8531-ff5f54601f0e"
+diamondUuid: "845f4eb4-ad9e-80fc-9b88-8d5b3a576bd8"
+uuid: "8e78e1fd-d447-8d4b-84ff-97122c60c2c1"
+horo: 1
 typography:
   partition: fiscal
   bondDegree: 39
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "035e0a67-f8d0-8621-ab53-9dba315bec4c"
+  computationUuid: "e2ae3c21-951e-8697-ad25-0a4a5b7fe640"
   stages:
     - stage: path
       stageUuid: "1f065327-e346-86c8-838a-83be125eb5fc"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "40693600-f29d-86b6-a592-683b1d030126"
     - stage: horo
-      stageUuid: "e56dab19-dc41-81ed-a962-8c10a114d90c"
+      stageUuid: "dc90cd88-fdb6-8391-99f4-2321c7b416e2"
     - stage: seal
       stageUuid: "89401540-14bb-85b7-88eb-2f7ebb7d3a7f"
     - stage: uuid
-      stageUuid: "395b9c41-18e8-86c8-9b2d-c100f498c17b"
+      stageUuid: "007b7d3d-6399-8add-9a9c-eea327b58b96"
 version: 2
 ---
 # tax-periods

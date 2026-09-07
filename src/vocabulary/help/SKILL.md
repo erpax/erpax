@@ -2,11 +2,11 @@
 name: help
 description: "Use when reasoning about help as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/help"
-coordinate: "vocabulary/help · 8/crest · 5726d4c3"
-contentUuid: "694ce8a8-25e3-56c3-b573-6b1dc132dc0a"
-diamondUuid: "5662024f-41fd-8548-9650-b091684fea36"
-uuid: "5726d4c3-6087-8786-9e7f-71fefc3177c5"
-horo: 8
+coordinate: "vocabulary/help · 7/descent · b15202ba"
+contentUuid: "c42243b6-9660-5ecd-b0ec-32921946bc4e"
+diamondUuid: "1006a866-1764-8bd9-9aa6-a16cb70be458"
+uuid: "b15202ba-4498-8015-b013-b02529ed5f45"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e19b3cde-874f-8d36-a87b-c16ba8747931"
+  computationUuid: "d8777e37-a907-83eb-a23c-71b1085e5699"
   stages:
     - stage: path
       stageUuid: "a857f5d8-55b1-8695-bf0e-1e4b78007865"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cf991f0a-f359-8382-80bb-376368c1de21"
     - stage: horo
-      stageUuid: "38e1c700-25d0-8e7f-801a-6c55b22a7920"
+      stageUuid: "d5725834-6982-8ac1-9f55-e5d5ac8edf2f"
     - stage: seal
       stageUuid: "5ad64d29-84d5-84d6-abcf-41993aad91f4"
     - stage: uuid
-      stageUuid: "9923bef2-045f-8b40-9a87-078ddc6708e0"
+      stageUuid: "1cd6c03f-4ac1-8ad3-aff1-916fee7f572b"
 version: 2
 ---
 # help

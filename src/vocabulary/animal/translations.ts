@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "animal",
-    "uuid": "8e4bfe99-33aa-8058-aa3f-24477a13fd83",
+    "uuid": "759b77cb-a1c3-8656-9f32-bb76d941e2b6",
     "words": [
       "animal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the individual living beast is the node — one identified animal carrying its class (cow/heifer/steer/calf), sex, purpose (dairy/meat/breeding), lifecycle stage, ear-tag identity, and biological-asset value. The member of a herd; the row IAS-41 measures and traceability tags.",
-    "uuid": "b862f277-0a88-8180-a3f1-1aee22c36cb5",
+    "uuid": "a5df068f-fd57-89ab-93ab-900058f470e8",
     "words": [
       "use",
       "when",

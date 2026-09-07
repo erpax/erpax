@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "role",
-    "uuid": "4c565366-7650-8da3-bf72-e35bfe8d4673",
+    "uuid": "b36c45af-53a2-82b3-b470-3125949c2d3f",
     "words": [
       "role"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about role — Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a",
-    "uuid": "bd46269c-c708-8728-aecc-8bc69ce7d398",
+    "uuid": "0145e76e-a933-8456-9c96-7c01c9cb50bb",
     "words": [
       "use",
       "when",

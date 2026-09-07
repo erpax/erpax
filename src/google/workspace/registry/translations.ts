@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "registry",
-    "uuid": "4d219a5a-9e5e-8d47-a077-a8808d82b00a",
+    "uuid": "8f0420c2-7813-856d-93dc-be1fd7fe5ee0",
     "words": [
       "registry"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about registry — Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory).",
-    "uuid": "41c76249-419f-8443-9746-c1710e72bcde",
+    "uuid": "7aa3c1e5-b64b-8212-848c-0acd29a0136b",
     "words": [
       "use",
       "when",

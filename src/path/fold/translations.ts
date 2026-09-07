@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fold",
-    "uuid": "456181e4-c8c0-8faf-84a6-098707e46a7e",
+    "uuid": "19a33370-fcff-8ca8-9bf4-df6165dfe43d",
     "words": [
       "fold"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when folding any address surface to the one canonical atom path — pure string work, with none of the 4.2 MB corpus matrix its parent barrel loads for the ring walk.",
-    "uuid": "eda0d7d7-243f-820e-8882-be45f185f0d0",
+    "uuid": "41b1d2f4-9536-8279-b01a-6ee34f4f6b06",
     "words": [
       "use",
       "when",

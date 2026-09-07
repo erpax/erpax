@@ -2,11 +2,11 @@
 name: factor
 description: "Use when reasoning about factor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/factor"
-coordinate: "vocabulary/factor · 4/weave · 10a4a9af"
-contentUuid: "683a9b4b-8f3d-5d0f-8921-f3d94bfcc8c1"
-diamondUuid: "4d977419-65e5-8235-ac70-649b04502d66"
-uuid: "10a4a9af-cda3-8000-beb1-7c399df1e761"
-horo: 4
+coordinate: "vocabulary/factor · 5/round · 2351880d"
+contentUuid: "8c3b5ca8-3534-5631-b0e7-765d895de769"
+diamondUuid: "2d07c8d7-22d1-8ca1-8a3e-8f7fcd837741"
+uuid: "2351880d-7130-8848-a081-0ea773861286"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2c0b4c67-b2df-85ca-a7fc-04a0bc3f5be6"
+  computationUuid: "079f08ac-220e-85a7-9f70-cc95a7a6199d"
   stages:
     - stage: path
       stageUuid: "7c5f694d-bd5f-8ea1-bc76-d6240250f411"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4087c5a4-0ea4-8546-9fc0-43dc1a287fad"
     - stage: horo
-      stageUuid: "056e8caa-7426-8dc0-8dd7-156ed23d2896"
+      stageUuid: "9e4b6462-fafe-8fdf-9180-f29c45164c7c"
     - stage: seal
       stageUuid: "8b094f6d-2931-8591-8d45-9f0bd6ebad77"
     - stage: uuid
-      stageUuid: "11748866-7dfa-8069-9e60-51ff61d7ab60"
+      stageUuid: "59d382b8-a9c4-8cc2-bba0-88c2b9aa23cc"
 version: 2
 ---
 # factor

@@ -2,10 +2,10 @@
 name: sikhism
 description: "Use when reading Sikhism as a diamond of invariant atoms — one being (ek onkar), the divine name remembered, honest work and sharing, grace and the merge with the One. Strip the Punjabi prefix and ik onkar, naam, shabad, mukti collapse to one, name, word, zeropoint — one content-uuid each."
 atomPath: sikhism
-coordinate: "sikhism · 7/descent · 8bde7a4e"
-contentUuid: "6ca3297e-2287-5756-a256-7c22fb685642"
-diamondUuid: "e1693b0b-3872-8612-8130-7a9f557bcdec"
-uuid: "8bde7a4e-8cde-8866-9de2-31282c64a374"
+coordinate: "sikhism · 7/descent · f08db511"
+contentUuid: "da31089a-6cc5-5e2b-9cc4-5cec32dd0d3f"
+diamondUuid: "0aecdc9f-47e1-8a23-b76e-2aae42a3ab6d"
+uuid: "f08db511-8f7c-8f42-9009-4965811333fd"
 horo: 7
 typography:
   partition: sikhism
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c783cc5d-a599-8d56-a345-a6fbe3ba7909"
+  computationUuid: "75eadcea-f271-8d88-aa2a-57609d5999cc"
   stages:
     - stage: path
       stageUuid: "67ed9f7e-3c52-83f0-bfae-04df44531981"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "83b08eb9-84af-8c13-95cc-d955d1b593c0"
     - stage: horo
-      stageUuid: "1faea584-b99e-8cc1-9c58-b8a8a180f392"
+      stageUuid: "e3816b8d-de06-8245-a876-a1084b734a8f"
     - stage: seal
       stageUuid: "3b4cebfe-e090-8a0a-b0a0-31f8f9216c68"
     - stage: uuid
-      stageUuid: "cc645039-a2d2-8339-8682-97414591106a"
+      stageUuid: "b0594027-d3bd-8067-a643-b4fec17e7e44"
 version: 2
 ---
 # sikhism — one being; the name remembered, the bread shared

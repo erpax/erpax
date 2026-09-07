@@ -2,11 +2,11 @@
 name: platonic
 description: "Use when the sphere must be understood as swept, not given — each of the five regular solids has a circumsphere, rotation is an isometry, so a vertex in motion never leaves it, and the orbit fills the sphere. The vertices are the seeds; what rounds them to a sphere is gravity = the fold: the central pull to equal distance. The octahedron's 6 vertices are the 6 globe directions. Rigorous geometry; the corpus mapping is a model."
 atomPath: platonic
-coordinate: "platonic · 8/crest · a8b3bf3e"
-contentUuid: "a33f6862-51ea-5b66-a48e-7250fac43dd3"
-diamondUuid: "13a0122e-f38b-8c9c-b5dc-d7e1e5632855"
-uuid: "a8b3bf3e-42e2-876c-a901-bcf63218ada5"
-horo: 8
+coordinate: "platonic · 7/descent · 36bf4efc"
+contentUuid: "c5ba87a8-d305-5ffc-ad99-dc6ad7b5ee21"
+diamondUuid: "5391cbd1-8baf-8ddd-8c37-234199facad2"
+uuid: "36bf4efc-aa4a-8d17-a28e-0679a83ad244"
+horo: 7
 typography:
   partition: platonic
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - Euclidean solid geometry — the five regular (Platonic) polyhedra and their circumspheres
 bindings: []
 signatures:
-  computationUuid: "5e811034-8933-88f8-8984-9b8bc31d4730"
+  computationUuid: "900379fb-1f36-88fb-a9e4-fa767fed231d"
   stages:
     - stage: path
       stageUuid: "5025b306-6036-8787-99d6-c0c8199de5be"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8d1c3f5a-866a-8ec6-9ba8-f100ce19a97f"
     - stage: horo
-      stageUuid: "c5760b8b-23e8-834d-958a-6ff5073c0f3a"
+      stageUuid: "8ddfd2a0-a3c4-8cdf-ac45-6b431ffbd7a9"
     - stage: seal
       stageUuid: "7d5bbf91-511b-8377-98fd-64d4a8a138c4"
     - stage: uuid
-      stageUuid: "70cc97da-383a-8269-aacf-e89748adb46b"
+      stageUuid: "c83b0c2b-420e-8f9a-8b5b-02c998c04601"
 version: 2
 ---
 # platonic — the sphere is swept, not given

@@ -2,10 +2,10 @@
 name: validator
 description: "Use when posting or reviewing a journal entry — the double-entry gate: every entry has two sides and the sides agree. Enforces a balance tolerance, one side per posting, non-negative amounts; warns (never refuses) on account polarity, because contra-accounts legitimately invert. Read this before trusting the word tolerance: the bound is absolute over float amounts, so the same one-cent gap posts at 50 and is refused at 100."
 atomPath: "double/entry/validator"
-coordinate: "double/entry/validator · 8/crest · f1a547fe"
-contentUuid: "d6703b03-b441-5316-8a03-49414e2d8be2"
-diamondUuid: "a8cae56c-055f-8f7e-854d-a46b9434106f"
-uuid: "f1a547fe-82e2-862b-a6d8-6dd38da216c4"
+coordinate: "double/entry/validator · 8/crest · 7e7f28d7"
+contentUuid: "913cfbe3-79d2-545a-b068-407bd9f3fd51"
+diamondUuid: "7d93d179-0868-86d0-89d8-43f373265f51"
+uuid: "7e7f28d7-62d3-8b6b-9003-aaa53dba6dbe"
 horo: 8
 typography:
   partition: double
@@ -15,7 +15,7 @@ standards:
   - "IAS-1"
 bindings: []
 signatures:
-  computationUuid: "90088c17-dcba-8b2d-94c7-c9b6c5cc76a4"
+  computationUuid: "990ff8b0-4fc2-80d8-b95a-4bdfee56728c"
   stages:
     - stage: path
       stageUuid: "0f4994e7-8e25-80bd-beea-7607c25e1e4c"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "415c0249-7344-89f4-aef2-7067277989e1"
     - stage: horo
-      stageUuid: "92ad1b13-b6e1-8b9a-a2f5-b75552f04c26"
+      stageUuid: "b12fbd9c-a223-8a70-9298-9fb7c2b240f0"
     - stage: seal
       stageUuid: "ae7ff6c4-6c44-8436-a9b9-e51e3dcbc91b"
     - stage: uuid
-      stageUuid: "38340f6a-ea90-8eb9-b0c8-5a789aeee6b6"
+      stageUuid: "30387ab6-f892-88f4-b31f-76f5d01e5f8e"
 version: 2
 ---
 # validator — the law an ERP exists to guarantee

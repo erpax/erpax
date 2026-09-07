@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consolidations",
-    "uuid": "aaf521e3-7edd-8d20-9f40-720061190394",
+    "uuid": "7c4291b9-e694-8f8f-8872-04f7779e0986",
     "words": [
       "consolidations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when running or auditing a multi-entity group consolidation — entity closure readiness, intercompany balance reconciliation, elimination entry preparation, and consolidation workflow per IFRS-10 / IAS-27 / ASC-810. The group-consolidation process collection.",
-    "uuid": "7452c50d-ca2a-8721-92d2-9030291a7198",
+    "uuid": "87c9fd0a-d39b-8fb3-8b0c-c86c8c36b80c",
     "words": [
       "use",
       "when",

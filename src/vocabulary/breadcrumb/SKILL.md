@@ -2,11 +2,11 @@
 name: breadcrumb
 description: Use when reasoning about breadcrumb — A set of links that can help a user understand and navigate a website hierarchy.
 atomPath: "vocabulary/breadcrumb"
-coordinate: "vocabulary/breadcrumb · 2/share · 739efc25"
-contentUuid: "1372924b-3e65-55c7-88d1-677c3e70b32f"
-diamondUuid: "e7e0a01e-6f07-80e2-918f-67c48f029157"
-uuid: "739efc25-92a8-853a-b657-0412453da02d"
-horo: 2
+coordinate: "vocabulary/breadcrumb · 4/weave · daf041e0"
+contentUuid: "02c4c79b-be16-5448-99f5-bc53784b5c5b"
+diamondUuid: "5a2276d8-277f-8ddb-8ce6-4f0347c83293"
+uuid: "daf041e0-4428-8cb3-9444-7738504bb080"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d7c6897c-3a1a-8b22-aac0-5e0b3ed5a789"
+  computationUuid: "097c8a15-9ec1-8362-a2c8-26810d863b09"
   stages:
     - stage: path
       stageUuid: "054d5f3a-8e3d-807a-837c-965884778c45"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5b95513f-1eb2-8311-a2d9-bb5fbeb069c2"
     - stage: horo
-      stageUuid: "ee994619-e451-83c2-a35a-18aa1eab74ab"
+      stageUuid: "cf1dc733-0bb1-88a2-8420-5b283c836ad7"
     - stage: seal
       stageUuid: "ed02497a-b408-8a19-8eba-bc7d68b195af"
     - stage: uuid
-      stageUuid: "91b954e6-3938-861d-ad5e-ed2998561e49"
+      stageUuid: "74798acb-5920-8a58-8536-f0eafa54ebb7"
 version: 2
 ---
 # breadcrumb

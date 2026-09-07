@@ -2,11 +2,11 @@
 name: signatures
 description: "Use when reasoning about signatures — Signed content-uuid — digital signatures fold into the uuid family."
 atomPath: "integrity/signatures"
-coordinate: "integrity/signatures · 7/descent · d8059075"
-contentUuid: "5b7a952c-cb5f-5bf4-be99-3d40fc80bccd"
-diamondUuid: "97c60dfe-982c-8e84-8963-10d755d71f02"
-uuid: "d8059075-b0ea-83ea-ba4b-f54ea29e3e61"
-horo: 7
+coordinate: "integrity/signatures · 2/share · 48be4baa"
+contentUuid: "2a7417fe-12d9-5728-892b-b0f5462199c6"
+diamondUuid: "88f355ec-369b-8412-ba7b-ec8db8b2e6bf"
+uuid: "48be4baa-cfc0-8923-bfa7-697c0b10012a"
+horo: 2
 typography:
   partition: integrity
   bondDegree: 15
@@ -24,7 +24,7 @@ standards:
   - "eIDAS Regulation (EU) 910/2014 §3.12 qualified electronic signature"
 bindings: []
 signatures:
-  computationUuid: "32283ed5-8b40-8feb-8644-9101be283b64"
+  computationUuid: "78fe908d-830c-8d0b-a31a-48539d4a0078"
   stages:
     - stage: path
       stageUuid: "001d4af1-efc3-81e0-bcde-faf9491f6676"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "5e96e3bc-9712-889c-8c83-dc594d99590a"
     - stage: horo
-      stageUuid: "2cf03798-ab0b-8d61-a397-ed654265a571"
+      stageUuid: "b6cb73d7-9c64-8bfd-927a-bb923e3f4e09"
     - stage: seal
       stageUuid: "3e732869-3b45-8b7e-a49d-9bf118fd64f4"
     - stage: uuid
-      stageUuid: "c44cc54a-12b4-88af-a2fb-238eab50df1a"
+      stageUuid: "70b9637a-3e22-891c-a373-2c8b70058c46"
 version: 2
 ---
 # integrity/signatures

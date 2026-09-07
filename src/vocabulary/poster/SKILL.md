@@ -2,11 +2,11 @@
 name: poster
 description: "Use when reasoning about poster — A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something."
 atomPath: "vocabulary/poster"
-coordinate: "vocabulary/poster · 2/share · 64ff45ef"
-contentUuid: "76c329c7-5d39-5dd2-9411-31945d13aa68"
-diamondUuid: "c0ac634e-77a2-8dd9-9cb0-f931d8fed513"
-uuid: "64ff45ef-8275-819b-8769-28c93454e16b"
-horo: 2
+coordinate: "vocabulary/poster · 1/base · 064152fd"
+contentUuid: "af4b3b8c-0b92-521f-bef2-2d5e4dad3680"
+diamondUuid: "db4f9ec3-b212-8d84-b676-6768182dcbb1"
+uuid: "064152fd-bf04-8655-89ba-da42fe2f45ff"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1abe6cb6-3f8b-8955-ba4f-67ff39f68c9b"
+  computationUuid: "a2a085d6-6b86-8f79-9433-72d97e475e3b"
   stages:
     - stage: path
       stageUuid: "8c671fe5-9df8-83e3-8cdc-df09291959c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc39250d-dce4-8c5a-8d6c-dac75ca87c1f"
     - stage: horo
-      stageUuid: "5285aacc-83cf-8663-8e9f-8b942e446430"
+      stageUuid: "33896694-6b84-821b-983e-228cefc785c5"
     - stage: seal
       stageUuid: "6940fa43-e9fd-888c-aa07-675a31464ce4"
     - stage: uuid
-      stageUuid: "a9b11507-e3c5-8ed6-ae74-56b59b779ed2"
+      stageUuid: "77edf166-553a-8974-88df-4a6db0a9d3ea"
 version: 2
 ---
 # poster

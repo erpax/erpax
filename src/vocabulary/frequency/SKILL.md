@@ -2,11 +2,11 @@
 name: frequency
 description: "Use when reasoning about frequency — How often the dose is taken, e.g. 'daily'."
 atomPath: "vocabulary/frequency"
-coordinate: "vocabulary/frequency · 4/weave · c58e145f"
-contentUuid: "eb1532b9-54d9-5876-b6d8-180a75e6e31a"
-diamondUuid: "ec582738-d7e0-81b4-b9a3-86fabe4eadac"
-uuid: "c58e145f-4dc7-85bd-ae12-293ac5335d64"
-horo: 4
+coordinate: "vocabulary/frequency · 1/base · d963461f"
+contentUuid: "18e67d65-86d1-5100-9343-8224d8515536"
+diamondUuid: "9193401c-6743-8918-a463-6e091bd0d5ed"
+uuid: "d963461f-82c0-8d7e-a041-26b32b0b7531"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4e960cf2-10b3-82ed-b218-822b934ee3ca"
+  computationUuid: "86bf05d3-f30b-8c38-885a-632350d6588b"
   stages:
     - stage: path
       stageUuid: "24136bb3-4319-89c9-acd7-5231d6f9b69d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0b79dcc5-d83b-8ac4-a05d-804795cd7117"
     - stage: horo
-      stageUuid: "dfc75e7c-d6c2-8557-b5f4-9e29ae657adf"
+      stageUuid: "48f239b9-5aa9-868c-97f1-e710ee0ce651"
     - stage: seal
       stageUuid: "6fa95ffd-08fa-81c0-a8a9-27361030dfd2"
     - stage: uuid
-      stageUuid: "cc7d348c-2598-8753-baf6-658d932a5c59"
+      stageUuid: "4488b4a7-c435-88ba-a9d9-2e3232de629f"
 version: 2
 ---
 # frequency

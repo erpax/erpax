@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "textarea",
-    "uuid": "01c1255e-7766-8899-8178-17f6e8428538",
+    "uuid": "2d308582-9b4b-8783-aaea-7849ed568517",
     "words": [
       "textarea"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about textarea — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
-    "uuid": "5502c0b7-f506-8cd6-bee8-dd068b354a16",
+    "uuid": "6217aea1-ebb5-8120-92d9-060b87a085e9",
     "words": [
       "use",
       "when",

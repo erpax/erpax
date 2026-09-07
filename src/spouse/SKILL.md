@@ -2,11 +2,11 @@
 name: spouse
 description: "Use when reasoning about spouse — The person's spouse."
 atomPath: spouse
-coordinate: "spouse · 8/crest · 3d9aa6cf"
-contentUuid: "5691c8d2-0607-5cb1-a61e-bffa59a36550"
-diamondUuid: "2abbc3aa-4c22-8b56-a34c-a815fedcb142"
-uuid: "3d9aa6cf-e45b-8bfc-bb9c-ddd92f5fd103"
-horo: 8
+coordinate: "spouse · 5/round · d0e9754c"
+contentUuid: "60daca66-b0c4-5945-a1e6-1d9561cc11f1"
+diamondUuid: "e0cea859-4f5e-8e66-a78c-cc5b605e7b25"
+uuid: "d0e9754c-6eff-8d6b-a485-cb5ce3f1338f"
+horo: 5
 typography:
   partition: spouse
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e24c33bb-b9d9-85d0-b73c-dd88a9173e5f"
+  computationUuid: "59ef3e94-865b-8737-8a80-865675ae3a06"
   stages:
     - stage: path
       stageUuid: "341ada6c-36ff-8235-9369-82e7a6ed39d8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd970307-1f05-8944-9bbb-57534d25522d"
     - stage: horo
-      stageUuid: "05a19b4a-3f7c-8d72-9a0c-a230334c5421"
+      stageUuid: "e29623a3-7480-8f90-88c5-1c357367de64"
     - stage: seal
       stageUuid: "c002d5fc-48ed-8e94-b3b4-2556ff4137c2"
     - stage: uuid
-      stageUuid: "ab376f0d-b861-8c9a-90d1-68839e879a99"
+      stageUuid: "93a6c7b5-4d63-8b5e-8c61-061fb04bf0f8"
 version: 2
 ---
 # spouse

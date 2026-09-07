@@ -2,11 +2,11 @@
 name: laboratory
 description: "Use when reasoning about laboratory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/laboratory"
-coordinate: "vocabulary/laboratory · 2/share · cba8abe8"
-contentUuid: "16fc12ca-1f85-5491-9fb8-8dd6f609163c"
-diamondUuid: "4460ee4e-4b0c-861b-81cb-9fd0351017ef"
-uuid: "cba8abe8-dbeb-84ce-8886-a2f05716a84e"
-horo: 2
+coordinate: "vocabulary/laboratory · 8/crest · 3f714bd8"
+contentUuid: "fa9052cd-021a-5b46-85bb-d409fea72299"
+diamondUuid: "81cf47c3-9fdc-8d17-950f-2003b6e22a72"
+uuid: "3f714bd8-d7b3-8a26-b971-8142525f1503"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "13bf63a2-6118-8dcc-90a7-2567173169fb"
+  computationUuid: "092969c9-209b-81cc-9bd1-42f5a608e2a3"
   stages:
     - stage: path
       stageUuid: "55551264-bbb5-811d-890d-8c5b31e73b9a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c3367cbc-ccc0-860a-b35b-c29387d42fd0"
     - stage: horo
-      stageUuid: "0f422623-f925-8175-b339-c3bb245b6391"
+      stageUuid: "3a7fd096-2b3f-862c-9da1-5e74fdc0168f"
     - stage: seal
       stageUuid: "4c062aea-6ca1-886d-887f-d01d024c0512"
     - stage: uuid
-      stageUuid: "53c34d1a-437d-84de-ac12-291f8b5d2fa8"
+      stageUuid: "a2b57952-8b83-8544-9fe5-391adf6a1467"
 version: 2
 ---
 # laboratory

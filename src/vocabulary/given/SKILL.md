@@ -2,11 +2,11 @@
 name: given
 description: "Use when reasoning about given — A schema.org component word, collided out of schema.org compounds — fused from givenName (sti · collapse · merge)."
 atomPath: "vocabulary/given"
-coordinate: "vocabulary/given · 8/crest · 71e0b944"
-contentUuid: "cac12872-616a-590e-bda8-ae439b3bb764"
-diamondUuid: "a06e59b5-5960-8591-9314-e1d129448669"
-uuid: "71e0b944-7523-8c52-b39e-735eedaabcee"
-horo: 8
+coordinate: "vocabulary/given · 2/share · f128e68c"
+contentUuid: "be531031-12d8-5bbf-9d5a-2b2230a1d55a"
+diamondUuid: "06d125c4-abec-8b96-bb8e-07cf65a146f0"
+uuid: "f128e68c-c359-8f0e-aa4f-497a8a3ae643"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "536da9b6-0e45-8ecc-b6a1-7e1791807052"
+  computationUuid: "a82196dc-9b1d-8df2-a015-997b5f553ae5"
   stages:
     - stage: path
       stageUuid: "045801c4-55df-88f6-919b-2e92da0227b1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "873bdb77-0b88-8b55-a3a3-0ed40fb83139"
     - stage: horo
-      stageUuid: "6e071512-c3ef-8d8f-9015-9861a32c612f"
+      stageUuid: "41a6b293-69eb-8171-9ce6-d0ed5a7c015a"
     - stage: seal
       stageUuid: "39fac5e1-5cb1-8b57-8f8c-b8ff876b7ace"
     - stage: uuid
-      stageUuid: "093149aa-4367-89d3-afc3-84f7f1871a26"
+      stageUuid: "8d27b8e6-1982-84dd-8c19-6311e9d1be17"
 version: 2
 ---
 # given

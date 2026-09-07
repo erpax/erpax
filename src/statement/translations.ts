@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "statement",
-    "uuid": "268b3f52-0e41-802c-808b-aeb81844c7b0",
+    "uuid": "424419fe-c445-8870-80b8-7dd3cf4c722a",
     "words": [
       "statement"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about statement — A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g",
-    "uuid": "169bdfeb-864d-8a58-9c21-6eb93d018a4a",
+    "uuid": "eac339c8-2989-8730-8a73-b0aef94efb2a",
     "words": [
       "use",
       "when",

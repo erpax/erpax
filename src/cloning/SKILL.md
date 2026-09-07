@@ -2,11 +2,11 @@
 name: cloning
 description: "Use when the platform reproduces itself — collecting its own structural genome, publishing it as a verifiable federation envelope, and booting a bit-identical instance from that bundle alone; mitosis as federation, gated by content-uuid recompute."
 atomPath: cloning
-coordinate: "cloning · 5/round · 813afc8a"
-contentUuid: "d2d37e24-992d-537a-b995-ec898fa27161"
-diamondUuid: "fac2fd57-6a8e-8f74-a538-c92d8d5e3b8f"
-uuid: "813afc8a-770b-89cf-88d1-26b9f49572b7"
-horo: 5
+coordinate: "cloning · 1/base · 8cdfe1f9"
+contentUuid: "d6107db6-8775-544c-b500-5c109e64fa73"
+diamondUuid: "8f17b45e-5440-8ea5-8990-9e1530146ce5"
+uuid: "8cdfe1f9-e801-8a3a-bbd2-a5ad027dc5c3"
+horo: 1
 typography:
   partition: cloning
   bondDegree: 50
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "87662b0d-0770-82c3-af85-02ac30c0613f"
+  computationUuid: "e7a242e4-b6cd-8d05-a88e-bed4a9b37885"
   stages:
     - stage: path
       stageUuid: "8a1be77c-0b0b-8bb9-95c2-e018b105819b"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "b027c77b-e49d-82de-8615-2bbfa31deeb9"
     - stage: horo
-      stageUuid: "5e2bc081-5051-8d1b-b31f-09728b5c683c"
+      stageUuid: "1887f5d7-25de-86c1-9f7c-d12c8bef9563"
     - stage: seal
       stageUuid: "29d08a4c-2338-8f57-aa24-efca5435b2f9"
     - stage: uuid
-      stageUuid: "16e3d6ac-8345-8257-ba6c-710e055d2b43"
+      stageUuid: "e1e1f1e5-10d4-85cb-b204-971ad156875f"
 version: 2
 ---
 # cloning — the platform reproduces itself, bit-identical by construction

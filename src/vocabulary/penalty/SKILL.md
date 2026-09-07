@@ -2,11 +2,11 @@
 name: penalty
 description: "Use when reasoning about penalty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/penalty"
-coordinate: "vocabulary/penalty · 8/crest · 0e2523f7"
-contentUuid: "e920b17f-8659-5237-8eb0-bfc73d8f3692"
-diamondUuid: "8f75abb3-9937-8074-ac6c-ab38abcf05f9"
-uuid: "0e2523f7-0771-8130-acc1-56713950ea46"
-horo: 8
+coordinate: "vocabulary/penalty · 5/round · c1df41cf"
+contentUuid: "c49bfd10-e901-59af-b4e9-be17c79f210f"
+diamondUuid: "3895bfee-e0a3-8728-b196-b04562eac7f9"
+uuid: "c1df41cf-e3bc-8d39-a796-4ff049aa0285"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "16d11176-224d-8b57-a2ef-60dbf3dd74a4"
+  computationUuid: "34adfd05-0c7b-8564-b5b6-6887dba5623b"
   stages:
     - stage: path
       stageUuid: "57981a46-b6a7-8c98-8f25-dd9c8b256da9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "805cbeee-7f92-89b8-a365-7550a71fade6"
     - stage: horo
-      stageUuid: "51a38728-7246-8a8e-8207-a178e0d22c24"
+      stageUuid: "60325a98-3a5a-80fa-b609-f34c838b935a"
     - stage: seal
       stageUuid: "64d2c3d6-72c4-8c16-90bd-9bd3ead936e9"
     - stage: uuid
-      stageUuid: "727fe6d0-8d48-8138-b21f-30a57d0b8301"
+      stageUuid: "9f68324b-ddf1-8267-9c85-4613fcaa2ab1"
 version: 2
 ---
 # penalty

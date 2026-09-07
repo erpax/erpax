@@ -2,11 +2,11 @@
 name: ownership
 description: "Use when reasoning about ownership as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ownership"
-coordinate: "vocabulary/ownership · 2/share · dcf593f8"
-contentUuid: "cea911af-60a4-5741-8b0e-8b8c6d79258c"
-diamondUuid: "a2697d3d-7423-82b8-98a7-7a1c7c365672"
-uuid: "dcf593f8-0df7-8993-acaf-563124ce438c"
-horo: 2
+coordinate: "vocabulary/ownership · 4/weave · 9c57e305"
+contentUuid: "aed38453-7d46-5b63-ae8b-49fac405d019"
+diamondUuid: "3b45f315-c54c-8c4e-943d-c04d780bab0d"
+uuid: "9c57e305-d0b9-8e4e-8700-d191fcc42a83"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b854389b-7e79-8592-b83c-b724303072b5"
+  computationUuid: "c3f5af3c-8444-8bb7-84f4-619d21efa697"
   stages:
     - stage: path
       stageUuid: "13b758dc-7269-8a55-b120-86ab092ea431"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "95528bef-4644-8d72-a42b-0ec7b7391dfb"
     - stage: horo
-      stageUuid: "90750738-a351-891b-af7d-e3ba78d99cef"
+      stageUuid: "6228c47b-7c28-8789-aca3-77d6d592f213"
     - stage: seal
       stageUuid: "66419f74-e378-8cf0-9fb5-bd8bb8528c46"
     - stage: uuid
-      stageUuid: "5a717c56-b9ce-8601-9e5b-c4af0867f886"
+      stageUuid: "84a676ec-ae00-8115-b9b5-d0a08ed5b70d"
 version: 2
 ---
 # ownership

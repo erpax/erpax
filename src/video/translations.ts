@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "video",
-    "uuid": "d6a570a5-38f0-8e27-9fc2-244dc6d374c6",
+    "uuid": "f6f8d0fe-a694-891a-a943-f1d73d45a1ad",
     "words": [
       "video"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about video — An embedded video object.",
-    "uuid": "09de8ac3-3d8e-8bdc-97a6-5d22a21f56c5",
+    "uuid": "34889c5e-61d0-8214-8224-e0a89006b862",
     "words": [
       "use",
       "when",

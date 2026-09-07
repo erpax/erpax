@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "runbook",
-    "uuid": "fa66f1ea-647f-89c9-9594-415ea8bbc3ae",
+    "uuid": "dc85448f-03c4-885a-8489-29e6e6665e8e",
     "words": [
       "runbook"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook.",
-    "uuid": "20889ac0-fe02-8b50-a1b6-d717f0e97876",
+    "uuid": "b99aa9bf-0a60-8a10-8a05-9909facd0943",
     "words": [
       "use",
       "when",

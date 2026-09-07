@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "search",
-    "uuid": "c2ce7fc4-f1f4-8beb-80d8-935152a0fabc",
+    "uuid": "900caa29-9df3-8734-b7bf-94420fef21d3",
     "words": [
       "search"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about search — Identification answers a typed identifier. Anything else routes here: runs a tenant-scoped query across the collections in scope, ORing over the text fields reports for each, and…",
-    "uuid": "cc0c708e-3501-8273-814e-e6ea8335b8af",
+    "uuid": "ac74c0a3-ef17-8abd-a8af-bf2168d2c4db",
     "words": [
       "use",
       "when",

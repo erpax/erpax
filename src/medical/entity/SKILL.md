@@ -2,10 +2,10 @@
 name: entity
 description: "Use when reasoning about entity as a medical facet of medical — vocabulary pivot to @/entity; nested not duplicated."
 atomPath: "medical/entity"
-coordinate: "medical/entity · 7/descent · 3512350a"
-contentUuid: "2b1f8ae2-0352-5e02-9bb9-6b9c5511ee3c"
-diamondUuid: "998027a4-a035-802e-9165-5b8aa84d80f7"
-uuid: "3512350a-5860-801a-b886-2dc0ce134a2e"
+coordinate: "medical/entity · 7/descent · 618089c1"
+contentUuid: "65b9dfa5-9b37-5858-81ce-b8754d718743"
+diamondUuid: "ce30b4e1-a7be-8270-8f02-0d825013c8d7"
+uuid: "618089c1-fc6f-8821-9e90-aa76f46f2e74"
 horo: 7
 typography:
   partition: medical
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c287d547-86c6-89b9-a9a6-04561a0a4df0"
+  computationUuid: "d9f31be6-d8ee-8caa-b5e2-56e38596232a"
   stages:
     - stage: path
       stageUuid: "1bf0d1e3-8d05-8afd-87e2-688015149c82"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "067c5209-a30b-8e92-b63f-be964deff7a9"
     - stage: horo
-      stageUuid: "bf2ac671-e382-873e-93db-284dbd138ae2"
+      stageUuid: "0c9b319a-c267-8fc7-bc78-b3fa21938c38"
     - stage: seal
       stageUuid: "6a25af79-1a8e-8098-aafe-ffcf3af1bd83"
     - stage: uuid
-      stageUuid: "3349ebef-9011-889a-8874-a128b3457d4f"
+      stageUuid: "b45af022-4d95-88e9-8b82-8fbb2acfb1a8"
 version: 2
 ---
 # medical/entity — medical facet

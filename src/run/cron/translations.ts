@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cron",
-    "uuid": "89223858-0750-8e91-837e-d17a30951347",
+    "uuid": "b9322d9b-f1ba-8b62-9d23-582fbfa63d90",
     "words": [
       "cron"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a Cloudflare cron trigger must actually reach the Payload jobs sweep — runScheduledJobs POSTs to /api/payload-jobs/run with the Bearer token derived from PAYLOAD_SECRET. The logic lives here rather than in worker.ts because that file imports a build artifact and cannot be loaded in a test. Refuses rather than calling unauthenticated when the secret is unset, refuses rather than reaching the public internet when the service binding is missing, and reports a non-2xx — a cron that fails quietly is the defect it closes.",
-    "uuid": "d58950e8-b66e-80a7-bb8d-0443426bdfba",
+    "uuid": "9d45e179-218a-803d-8fdc-ec2fe7b4aa54",
     "words": [
       "use",
       "when",

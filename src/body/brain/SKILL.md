@@ -2,11 +2,11 @@
 name: brain
 description: "Use when reasoning about the brain as an organ of body — pivot to canonical @/brain; zero duplication."
 atomPath: "body/brain"
-coordinate: "body/brain · 1/base · 0d3bcb98"
-contentUuid: "0b48dadf-d63d-527c-9880-74e14650357e"
-diamondUuid: "375597af-9882-845e-9d9b-2a7ff582ac26"
-uuid: "0d3bcb98-43c3-8787-9bbf-851531d5982f"
-horo: 1
+coordinate: "body/brain · 4/weave · 53eff7bd"
+contentUuid: "8ab7a34e-d0fb-58ca-bdca-96fad0837a20"
+diamondUuid: "bfc698fe-e541-8e7f-b3f3-b58010600e96"
+uuid: "53eff7bd-67ee-8fa4-bd15-b4d52c95ea44"
+horo: 4
 typography:
   partition: body
   bondDegree: 34
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a21e8bed-d7a3-85f9-b7f1-d7a48e09f5f8"
+  computationUuid: "9d9a3fbd-78f4-8ba3-91bb-1565bbcfb964"
   stages:
     - stage: path
       stageUuid: "5aae0708-eba8-806d-aa11-c3233d5b2fb2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b1b2040f-7611-83ec-9e2c-9d11542ae424"
     - stage: horo
-      stageUuid: "288582a4-4bde-883a-869b-1eab2a5cb0b4"
+      stageUuid: "16ec87cd-c7c2-8b3e-ab93-7ed9981860b1"
     - stage: seal
       stageUuid: "c3f2b1be-c968-8ed1-bc4c-e23acc646db1"
     - stage: uuid
-      stageUuid: "a2b532ad-d835-8c11-b5ef-72f1de28706b"
+      stageUuid: "5a195d1d-27fe-8db5-8de6-26d2eccaa449"
 version: 2
 ---
 # body/brain — organ facet

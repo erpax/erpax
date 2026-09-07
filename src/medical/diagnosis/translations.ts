@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diagnosis",
-    "uuid": "afc469ce-ca02-8e65-962e-a7ba1dcfcf2a",
+    "uuid": "d0076b97-88d1-8b64-9da7-a822873b7600",
     "words": [
       "diagnosis"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about diagnosis as a medical facet of medical — vocabulary pivot to @/diagnosis; nested not duplicated.",
-    "uuid": "65af41ee-c3f5-89e7-8c2d-cea0d3851584",
+    "uuid": "46f94d03-b954-837d-b422-11c3888f121b",
     "words": [
       "use",
       "when",

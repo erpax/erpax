@@ -2,11 +2,11 @@
 name: hooks
 description: "Use when reasoning about hooks — No plan-specific hook is wired yet. The barrel is here because every collection's hooks live at the same address, and a convention with a hole in it is one every future reader…"
 atomPath: "subscription/plans/hooks"
-coordinate: "subscription/plans/hooks · 3/3 · cad19847"
-contentUuid: "54f741c6-0261-57a7-9b5f-6f454db78c01"
-diamondUuid: "80ae2b41-485e-80dd-90aa-eea91e534e6b"
-uuid: "cad19847-3424-89c0-b83b-8a9d24ef4a2a"
-horo: 3
+coordinate: "subscription/plans/hooks · 9/unity · 2a06901a"
+contentUuid: "16f50833-9d39-5ff8-909d-a3aff02e7404"
+diamondUuid: "74417f14-5817-8d03-ae54-aaf45b786544"
+uuid: "2a06901a-c437-8d25-ab96-b0e6092e7e58"
+horo: 9
 typography:
   partition: subscription
   bondDegree: 312
@@ -15,7 +15,7 @@ standards:
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
 bindings: []
 signatures:
-  computationUuid: "33aca153-13b3-8f84-92c6-aa61044cc125"
+  computationUuid: "090fd92a-267c-8861-be63-2598ae403f9f"
   stages:
     - stage: path
       stageUuid: "33895840-e9fe-8f47-b470-4cb6cee325f5"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8c62b455-009a-836c-89bc-a72c4cb2c56e"
     - stage: horo
-      stageUuid: "835a4c43-ef05-83c7-a8f9-bc4d92bd8797"
+      stageUuid: "a226d9f4-edd6-8d1f-b74d-77bde4d0978e"
     - stage: seal
       stageUuid: "d00ca6f2-b08d-8978-ac01-9f98ccf90eed"
     - stage: uuid
-      stageUuid: "c9c864d9-1ea8-833f-99a7-771875958baf"
+      stageUuid: "56647da9-492e-8c85-bdf2-4918614e1727"
 version: 2
 ---
 # subscription/plans/hooks — the folder exists so the convention holds before the hooks do

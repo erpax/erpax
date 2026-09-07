@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "audit",
-    "uuid": "22aaf6b2-b761-8f84-bf10-c049a9289d72",
+    "uuid": "0d7d8c38-7d10-81e7-b6c4-8d14f941cf4b",
     "words": [
       "audit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing compliance/evidence metadata — audit fields (createdBy, createdAt, updatedBy, updatedAt, deletedAt), audit trail events, audit evidence, audit finding. Standard immutable history; drives IFRS/SOX compliance. Often shared across all collections via auditFields() helper.",
-    "uuid": "ee81e7e4-8f34-81f2-a2ee-64af3e195979",
+    "uuid": "cfeb545f-a55e-8d7d-bc8c-a988413e208b",
     "words": [
       "use",
       "when",

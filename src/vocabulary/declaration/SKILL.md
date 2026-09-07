@@ -2,18 +2,18 @@
 name: declaration
 description: Use when modelling one declaration — the singular model of the declarations collection (the plural store); a formal statement filed with an authority.
 atomPath: "vocabulary/declaration"
-coordinate: "vocabulary/declaration · 2/share · 1438a89d"
-contentUuid: "79de6016-47f5-5401-bf98-67d571bc2dfb"
-diamondUuid: "f53ed917-23bc-8f94-9647-dd9036d560a4"
-uuid: "1438a89d-ed0b-8dc0-b951-e1c324488f9e"
-horo: 2
+coordinate: "vocabulary/declaration · 5/round · 911f2445"
+contentUuid: "32c77f60-dcb9-5a04-8e84-07001c931d96"
+diamondUuid: "aab6259b-0869-86c8-a54a-fd37fe38dc5d"
+uuid: "911f2445-0ed1-87d6-bd1e-79a776d466d9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c0eb7fda-de02-86ca-989b-5c80682e95cb"
+  computationUuid: "384a49bc-98db-8b03-b88c-2caf2dadb48f"
   stages:
     - stage: path
       stageUuid: "feaf5466-d3ea-8db8-9321-2244e04fc9db"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "73a19ca3-953d-8390-b69b-dada83ce19c1"
     - stage: horo
-      stageUuid: "b657453f-c6b2-8a48-8bac-4bdfdecc0d65"
+      stageUuid: "39cdaa80-e57f-88e5-9bcd-b0394525350c"
     - stage: seal
       stageUuid: "71ba3e39-d6cf-8cbe-b5e0-85acf6a6d8aa"
     - stage: uuid
-      stageUuid: "4600c5f7-1b3d-8729-8100-922189996f54"
+      stageUuid: "1d5146e3-c7ea-82fa-9628-696da1940242"
 version: 2
 ---
 # declaration — the model of one [[declarations]] row

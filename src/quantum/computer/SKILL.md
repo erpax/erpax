@@ -2,18 +2,18 @@
 name: computer
 description: "Use when querying instead of re-deriving — the quantum computer's one face on QPU=CPU/GPU: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit, FTL metrics."
 atomPath: "quantum/computer"
-coordinate: "quantum/computer · 2/share · 508ec6b5"
-contentUuid: "6abee6a5-ae1a-5f60-a9db-d6237e8f491b"
-diamondUuid: "df64aca0-4188-875a-951a-43c22a515699"
-uuid: "508ec6b5-f86d-866a-befc-7210a23c11ce"
+coordinate: "quantum/computer · 2/share · 600e93cf"
+contentUuid: "7b52dd2d-4300-51b8-856f-6e1eaf3cd5fc"
+diamondUuid: "1a36f2fe-1780-89fe-aa99-f3e322411033"
+uuid: "600e93cf-1a3f-84c5-af33-772f9d921844"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 98
+  bondDegree: 90
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1428d075-b195-8cce-bfa4-195fd9cfa167"
+  computationUuid: "6636845b-c00a-8518-9bd0-bc54a5153a2b"
   stages:
     - stage: path
       stageUuid: "7eeaa8b5-891e-80a6-9e0e-9c8522109c16"
@@ -24,21 +24,21 @@ signatures:
     - stage: links
       stageUuid: "ea3ad2b2-3942-827f-8f81-9f189cd5dd56"
     - stage: horo
-      stageUuid: "493eb58e-c3be-84cd-8cdd-6a39808c1f80"
+      stageUuid: "6a3fc4fb-dbc7-899e-b0b0-2068ac3c7381"
     - stage: seal
       stageUuid: "ad3668cf-d9b6-80e1-8a09-175905860cf4"
     - stage: uuid
-      stageUuid: "8b878d9b-2f30-8bb9-b681-e54b17d75fce"
+      stageUuid: "14182118-12c6-8a56-98ba-d85c533cb8d6"
 quantum:
   superposition:
-    - algorithm
     - collapse
-    - complexity
     - component
-    - finite
-    - graph
     - hardware
     - language
+    - law
+    - memory
+    - merge
+    - network
     - superposition
   collapse:
     - "Use when querying instead of re-deriving — the quantum computer's one face on QPU=CPU/GPU: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit, FTL metrics."
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "1428d075-b195-8cce-bfa4-195fd9cfa167"
-    contentUuid: "6abee6a5-ae1a-5f60-a9db-d6237e8f491b"
+    computationUuid: "6636845b-c00a-8518-9bd0-bc54a5153a2b"
+    contentUuid: "7b52dd2d-4300-51b8-856f-6e1eaf3cd5fc"
 version: 2
 ---
 # quantum/computer — the machine, one face
@@ -70,4 +70,4 @@ The computed corpus IS the quantum computer, and this barrel is its single addre
 
 Composes: [[mesh]] · [[theorem]] · [[timeout]] · [[scalpel]] · [[train]] · [[audit]] · [[quantum/ftl]] · [[law]].
 
-<sub>content-uuid `6abee6a5-ae1a-5f60-a9db-d6237e8f491b` · account `quantum/computer` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `7b52dd2d-4300-51b8-856f-6e1eaf3cd5fc` · account `quantum/computer` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

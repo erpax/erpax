@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "translator",
-    "uuid": "23a11f36-5cc0-816a-b144-1af777bd3c13",
+    "uuid": "1a58cf98-6184-8e3e-826d-41c5e64087be",
     "words": [
       "translator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about translator — Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
-    "uuid": "bcfcd999-0156-851f-8e26-665a0c9b6a29",
+    "uuid": "bff7a44c-b1f2-8992-9750-79d054d721a4",
     "words": [
       "use",
       "when",

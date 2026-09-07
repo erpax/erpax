@@ -2,11 +2,11 @@
 name: head
 description: "Use when reasoning about head as an anatomical part of body — vocabulary pivot to @/head; nested not duplicated."
 atomPath: "body/head"
-coordinate: "body/head · 1/base · 4c2ac46f"
-contentUuid: "b7131885-6eff-57b6-a197-04f7db8f720d"
-diamondUuid: "8aa87b6b-a9f1-80be-aa07-8ecbab3615f9"
-uuid: "4c2ac46f-a500-843f-b348-a2da72b28666"
-horo: 1
+coordinate: "body/head · 4/weave · e7c5302c"
+contentUuid: "cf1d1d3a-d938-5223-993a-36979b242453"
+diamondUuid: "583662eb-9d41-8f0b-80a5-11ae9c49424c"
+uuid: "e7c5302c-9d0a-8e5d-a97d-dfc3f4fd150a"
+horo: 4
 typography:
   partition: body
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8046672b-e037-8652-bf8e-6f0f3348f3ef"
+  computationUuid: "43eeb4c4-8614-8b02-ad6f-40c6208a89d7"
   stages:
     - stage: path
       stageUuid: "c1455f50-708d-8c58-b07b-d3b3265e32f8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cac326be-eb76-8eb0-b8e5-7bb8e889ab7b"
     - stage: horo
-      stageUuid: "8fb0f063-ce8e-84c2-b4aa-6e3669ca6567"
+      stageUuid: "bad4faac-6e8c-864d-872f-03eaa22c7179"
     - stage: seal
       stageUuid: "41b9085c-cf58-887e-8e7d-25076c15af01"
     - stage: uuid
-      stageUuid: "7ad410f1-994e-8eea-8566-2782f58c399b"
+      stageUuid: "be8e1e12-72b1-89d4-b245-255057a3cea6"
 version: 2
 ---
 # body/head — anatomical part

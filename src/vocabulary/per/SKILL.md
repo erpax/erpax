@@ -2,11 +2,11 @@
 name: per
 description: "Use when reasoning about per as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/per"
-coordinate: "vocabulary/per · 8/crest · ea9972c1"
-contentUuid: "3d1019cd-3e57-5c9d-86e6-28255451e421"
-diamondUuid: "9c512269-738d-874d-b544-a27945e81786"
-uuid: "ea9972c1-7652-838b-8cc8-224c7a75532f"
-horo: 8
+coordinate: "vocabulary/per · 7/descent · 076678bc"
+contentUuid: "c2770e21-597c-5802-a9d8-3f47caa1424c"
+diamondUuid: "556115c2-4bb5-8482-abf6-622082f9f893"
+uuid: "076678bc-cc2e-8e16-9ded-77478beff75e"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f5f5c6c4-570a-8a2d-b5c2-3616d5c94235"
+  computationUuid: "6fb22a67-67d0-86a6-a421-46b34e805021"
   stages:
     - stage: path
       stageUuid: "fc8456f3-10ba-81f5-bca6-30296fb751fd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d36dd301-b363-83bf-b822-404a4340c5c8"
     - stage: horo
-      stageUuid: "20155d1a-2e29-868d-bc81-1c672f253da0"
+      stageUuid: "8819dc24-e720-82ba-b78c-d46aa8f1cc10"
     - stage: seal
       stageUuid: "f4d9cf7d-51e3-8c88-9bf5-ce2f1457bdc6"
     - stage: uuid
-      stageUuid: "205ee9f0-9f12-8cad-8586-968baec42a30"
+      stageUuid: "39ce7374-8dbd-8676-83cd-7e224d6e7afa"
 version: 2
 ---
 # per

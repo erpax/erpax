@@ -2,11 +2,11 @@
 name: inflow
 description: "Use when reasoning about inflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/inflow"
-coordinate: "vocabulary/inflow · 5/round · 6c1734b4"
-contentUuid: "574a91cb-76a8-566f-8d3e-62c4abb8ba91"
-diamondUuid: "fe6d7396-07a3-89c3-98c2-bb032b37f95f"
-uuid: "6c1734b4-fd17-8f5b-baa2-d721019877a6"
-horo: 5
+coordinate: "vocabulary/inflow · 7/descent · 9b4063c8"
+contentUuid: "4fbdd4d2-11af-57dc-b418-60e56777f6c7"
+diamondUuid: "558e3418-d11a-85ee-82b0-78bb87b766a9"
+uuid: "9b4063c8-0dc4-87f5-90c7-514b3f3a570e"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e89f819f-2aaf-8f8d-b1c2-8feb79344d6a"
+  computationUuid: "fd262eef-d124-8fc4-a923-d4ba957f78e1"
   stages:
     - stage: path
       stageUuid: "39edd95f-79b7-8d6d-919b-773b252e42a8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "774b1459-d1f6-8552-a732-867d4764d5d6"
     - stage: horo
-      stageUuid: "4f77a244-1994-84cc-a445-17fe76be39c8"
+      stageUuid: "a79a8e41-31da-8dbd-8b17-c13a343ce78a"
     - stage: seal
       stageUuid: "93251a9e-4907-87b9-8042-902c005f1ec1"
     - stage: uuid
-      stageUuid: "67d5653a-0e25-8b23-9778-68fd13d0bdfc"
+      stageUuid: "d3e8f33e-c5a5-88dc-add6-66a78343f5f0"
 version: 2
 ---
 # inflow

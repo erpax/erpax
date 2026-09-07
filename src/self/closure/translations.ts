@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "closure",
-    "uuid": "31bd76c6-ca5f-8466-8cce-167c1871e9ec",
+    "uuid": "9b3adb82-6853-8da5-9701-aac2b7e6be45",
     "words": [
       "closure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an external dependency must fall back to erpax ITSELF — every external role (payment-provider, signing, notification, search, federation) has a registered internal provider that completes the operation when the external call fails (Conservation Law 53, withInternalFallback). The dependency graph terminates at erpax; everything falls back to the self.",
-    "uuid": "e62c37ac-1ddb-86ac-8831-3346bc50cb49",
+    "uuid": "ddc7acb2-c5fe-817a-8b47-a6572bb2df42",
     "words": [
       "use",
       "when",

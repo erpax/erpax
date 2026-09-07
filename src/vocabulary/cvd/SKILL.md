@@ -2,10 +2,10 @@
 name: cvd
 description: "Use when reasoning about cvd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cvd"
-coordinate: "vocabulary/cvd · 7/descent · 869a1e3b"
-contentUuid: "a7057d7e-175a-5048-99cd-eb1ecc1301d6"
-diamondUuid: "a9e16322-8d2f-8ec5-89da-fd8f74a30401"
-uuid: "869a1e3b-ef5b-8785-82e8-0ac07333251a"
+coordinate: "vocabulary/cvd · 7/descent · 7cb72780"
+contentUuid: "51348834-5df8-57fa-8baa-3cc0b8bd9ac3"
+diamondUuid: "e4896c00-069a-8d2a-a1a9-988225f73081"
+uuid: "7cb72780-dafa-8f65-801c-9c04b4da3600"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ce69da7f-80cb-8843-8b2b-f95d23930017"
+  computationUuid: "27c1fb10-0a3d-8e42-b0dc-5fef0b6fec13"
   stages:
     - stage: path
       stageUuid: "0aa62d30-34dd-8889-927d-2d8750d10f5a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "72482e12-05eb-8955-8749-f221c1064748"
     - stage: horo
-      stageUuid: "862ff44e-9998-81e1-801e-f0c08228161f"
+      stageUuid: "60cc21e6-3476-861a-a296-2f112a8af8f8"
     - stage: seal
       stageUuid: "e3442a6a-12cf-85fe-aca9-3a54d200ddee"
     - stage: uuid
-      stageUuid: "8e9d419b-7926-8361-9428-dd64936e976b"
+      stageUuid: "78f5fbd6-310a-83bd-94f9-64a05726c254"
 version: 2
 ---
 # cvd

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "threat",
-    "uuid": "2a011dc5-f905-8dc5-9870-f64763ad4d7f",
+    "uuid": "86ddf3ff-784b-8b15-977b-b55e759d648f",
     "words": [
       "threat"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about threat — Quantum threat classification (immediate-retire vs quantum-accelerated)",
-    "uuid": "700ae664-6175-8934-8192-10adc9221f09",
+    "uuid": "b7c865cb-0044-81c4-a7db-02f2ab2d6e58",
     "words": [
       "use",
       "when",

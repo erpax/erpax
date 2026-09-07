@@ -2,18 +2,18 @@
 name: lichen
 description: "Use when one 'organism' is really a committee — a lichen is a fungus plus a photosynthetic partner (and often a yeast) living as a single composite body, the textbook case that the INDIVIDUAL is a question, not a given. Symbiosis incarnate; the natural twin of erpax's actor-merge (one identity, many partners)."
 atomPath: "vocabulary/lichen"
-coordinate: "vocabulary/lichen · 8/crest · a94ac797"
-contentUuid: "d5bf285d-7866-53db-8bc9-cdc5681d0e5f"
-diamondUuid: "a98e4279-4813-893c-b5ee-8fb71ddae214"
-uuid: "a94ac797-8409-8657-92bf-af94b4f0db59"
-horo: 8
+coordinate: "vocabulary/lichen · 4/weave · 50b53228"
+contentUuid: "f9bc767f-e9cb-5556-946e-e019d773ba7d"
+diamondUuid: "a2b50593-4b81-85b6-9f11-aaed62c26dc1"
+uuid: "50b53228-5d5e-8da5-9815-09a5c94650b0"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 28
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a701892a-584f-80e9-92f1-a604f130b2c6"
+  computationUuid: "56923453-ba45-89b9-8d94-c91c7332890c"
   stages:
     - stage: path
       stageUuid: "ab13c8df-d487-852f-adc4-944f2ad7ebe4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fb6617d6-7561-8532-9cef-1b1d6c5ecb23"
     - stage: horo
-      stageUuid: "84205883-cfbd-80ff-9067-2cbbbae72bf8"
+      stageUuid: "bfffd68b-812d-8375-9598-3730c6b1b8c8"
     - stage: seal
       stageUuid: "955b0efe-2079-8b0a-81c2-776123403868"
     - stage: uuid
-      stageUuid: "09a142d0-ec2d-8711-8350-94532a3b9050"
+      stageUuid: "946ff8b4-1f4a-8b4c-90db-838b4b02e48e"
 version: 2
 ---
 # lichen — the composite individual (the question of the one and the many)

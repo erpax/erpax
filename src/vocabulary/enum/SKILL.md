@@ -2,11 +2,11 @@
 name: enum
 description: "Use when reasoning about enum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/enum"
-coordinate: "vocabulary/enum · 5/round · bb7d5906"
-contentUuid: "f76afad0-38ad-56be-ab04-5db398a5f1e7"
-diamondUuid: "46f3bfad-1f6e-84b8-a115-8de88cc0de32"
-uuid: "bb7d5906-e8ba-88a0-b529-23f469b9d0f9"
-horo: 5
+coordinate: "vocabulary/enum · 1/base · 0ded1fa9"
+contentUuid: "9e8f485c-56cd-5cf7-be21-b5ba506d41d4"
+diamondUuid: "323517d0-8be7-8879-afd9-c3c6f7ad311f"
+uuid: "0ded1fa9-2163-8f93-95b2-11e49b8fe626"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "429fdc57-a3db-8b54-aa11-b0bf5234cadb"
+  computationUuid: "6234eb9a-13c7-87b3-a29b-53ba0bd41eec"
   stages:
     - stage: path
       stageUuid: "ca641694-9cc5-8365-8d2d-f28108ddb3cc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e5abffc5-663b-8cb7-a3cf-58d047ac452e"
     - stage: horo
-      stageUuid: "a714dd01-82a2-88cf-91b3-ba85d107fe8f"
+      stageUuid: "9c203b7a-d165-83f5-9fd9-47c985108945"
     - stage: seal
       stageUuid: "2a931aed-7ae4-8a62-ad16-b4df754590fc"
     - stage: uuid
-      stageUuid: "5bbf01d8-1663-83ef-ae19-0e969eaad45a"
+      stageUuid: "a7fa6149-fcdb-80dc-bb28-835685926cb6"
 version: 2
 ---
 # enum
