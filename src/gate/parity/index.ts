@@ -14,8 +14,19 @@ export interface GateSurface {
   readonly file: string
 }
 
-/** The two surfaces besides `pnpm check` itself. DECLARED — a new one is invisible until named. */
-export const GATE_SURFACES: readonly GateSurface[] = [
+/**
+ * The two surfaces besides `pnpm check` itself. DECLARED — a new one is invisible until named.
+ *
+ * NOT EXPORTED. It cannot be derived: discovering "files that mention the gate" answers a different
+ * question — it finds `cloudflare.yml` and misses `.husky/pre-push`, moving the drift 31 -> 32. The
+ * list is a JUDGEMENT about which surfaces must agree with the authority, and judgements are
+ * declared. But an exported data literal is seal-debt the constants audit counts, and this was the
+ * one crack this session added (786 -> 787), so the judgement stays and the export goes.
+ *
+ * Its consumer asserts through the public face, and its test declares its OWN expectation — which
+ * is stronger than importing this list and comparing it to itself ([[rules]]/mirror).
+ */
+const GATE_SURFACES: readonly GateSurface[] = [
   { name: 'pre-push', file: '.husky/pre-push' },
   { name: 'ci', file: '.github/workflows/ci.yml' },
 ]

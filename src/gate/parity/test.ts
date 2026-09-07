@@ -1,6 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import { GATE_LANES } from '@/cli/gate'
-import { GATE_SURFACES, driftCount, executableText, laneGaps } from '@/gate/parity'
+import { driftCount, executableText, laneGaps } from '@/gate/parity'
+
+/** The surfaces this corpus requires to agree with the gate authority. */
+const EXPECTED_SURFACES: readonly string[] = ['pre-push', 'ci']
 
 describe('gate/parity — the definitions of "the gate" must be one', () => {
   // The header of .husky/pre-push says "Same checks as `pnpm run check`" and names lint, tsc and
@@ -18,7 +21,10 @@ describe('gate/parity — the definitions of "the gate" must be one', () => {
 
   it('every gap names a real lane and at least one real surface', () => {
     const lanes = new Set(GATE_LANES.map(([l]) => l))
-    const surfaces = new Set(GATE_SURFACES.map((s) => s.name))
+    // DECLARED HERE, not imported. Importing the implementation's own list and asserting the
+    // implementation agrees with it is a tautology ([[rules]]/mirror); naming the surfaces the
+    // corpus expects means a surface silently added or dropped turns this red.
+    const surfaces = new Set(EXPECTED_SURFACES)
     for (const g of laneGaps(process.cwd())) {
       expect(lanes.has(g.lane)).toBe(true)
       expect(g.missingFrom.length).toBeGreaterThan(0)
@@ -31,6 +37,6 @@ describe('gate/parity — the definitions of "the gate" must be one', () => {
   it('the drift is bounded by lanes x surfaces and is measured, not asserted', () => {
     const n = driftCount(process.cwd())
     expect(n).toBeGreaterThanOrEqual(0)
-    expect(n).toBeLessThanOrEqual(GATE_LANES.length * GATE_SURFACES.length)
+    expect(n).toBeLessThanOrEqual(GATE_LANES.length * EXPECTED_SURFACES.length)
   })
 })
