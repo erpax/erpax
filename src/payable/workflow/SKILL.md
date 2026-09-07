@@ -1,15 +1,15 @@
 ---
 name: workflow
-description: Use when reasoning about workflow — .
+description: "Use when reasoning about workflow — A bill moves through a fixed set of states, and only along edges the graph allows."
 atomPath: "payable/workflow"
 coordinate: "payable/workflow · 4/weave · 485cdcb9"
-contentUuid: "98dd85c6-e21c-5e64-a664-4327d01acd45"
+contentUuid: "a946ab3e-5d8f-5c7c-97d3-fbf478cb5db3"
 diamondUuid: "6fc83313-d0ea-8a42-b12d-fb5dcd4773cd"
 uuid: "485cdcb9-712e-8c74-a331-80d055642500"
 horo: 4
 typography:
   partition: payable
-  bondDegree: 79
+  bondDegree: 73
 standards:
   - "EN-16931:2017 invoice-lifecycle"
   - "IFRS IAS-37 provisions-contingent-liabilities"
@@ -37,7 +37,9 @@ version: 2
 ---
 # payable/workflow — the bill lifecycle as a directed graph, not a free-text field
 
-`draft → received → approved → scheduled → partial | paid | disputed`.
+A bill moves through a fixed set of states, and only along edges the graph allows.
+
+`draft → received → approved → scheduled → partial | paid | disputed`
 
 A status field with no transition rule is a text box that happens to hold words. As a graph, a
 transition either exists or it does not, and "approved" cannot be reached without passing the step

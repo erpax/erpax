@@ -1,15 +1,15 @@
 ---
 name: workflow
-description: Use when reasoning about workflow — .
+description: "Use when reasoning about workflow — An invoice moves through a fixed set of states, and only along edges the graph allows."
 atomPath: "receivable/workflow"
 coordinate: "receivable/workflow · 5/round · 921c40ff"
-contentUuid: "3cfb65bd-27ce-5d6e-b78c-12c14f5ece91"
+contentUuid: "fbdeadf0-c73c-5285-b81f-37a19cde6c95"
 diamondUuid: "f299ba35-f078-8628-9396-4a509b1663f8"
 uuid: "921c40ff-1f75-8e30-99b9-61dfeecb1a2f"
 horo: 5
 typography:
   partition: receivable
-  bondDegree: 79
+  bondDegree: 73
 standards:
   - "EN-16931:2017 invoice-lifecycle"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
@@ -38,7 +38,9 @@ version: 2
 ---
 # receivable/workflow — the invoice lifecycle as a directed graph
 
-`draft → issued → partial | paid | overdue | written_off`.
+An invoice moves through a fixed set of states, and only along edges the graph allows.
+
+`draft → issued → partial | paid | overdue | written_off`
 
 The mirror of [[payable]]/workflow, and deliberately not the same graph: an invoice becomes live on
 ISSUE and stays live through its grace period, where a bill becomes live on APPROVAL. Folding the

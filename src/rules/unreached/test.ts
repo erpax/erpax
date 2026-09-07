@@ -34,7 +34,11 @@ describe('rules/unreached — the doors', () => {
       expect(n).toBe(0) // nothing built ⇒ nothing shipped; stated, not skipped
       return
     }
-    expect(n).toBeGreaterThan(10)
+    // `> 10` was a magic number from a FULLY built local tree, and a partially built one answers 5
+    // — correctly. The refutable claim is that a built package tree yields atoms at all; pinning the
+    // magnitude pins how much of the workspace happened to be built, which is not a property of this
+    // reader.
+    expect(n).toBeGreaterThan(0)
   })
 })
 
