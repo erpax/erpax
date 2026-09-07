@@ -2,10 +2,10 @@
 name: tech
 description: "Use when reasoning about tech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tech
-coordinate: "tech · 4/weave · b956f28f"
-contentUuid: "5aa90951-ed38-57ac-b93a-cca79d4aea40"
-diamondUuid: "e5300166-3b99-811a-8c53-b73602fe6534"
-uuid: "b956f28f-59da-870d-96d5-05557fc401b2"
+coordinate: "tech · 4/weave · 87666546"
+contentUuid: "490e5ef6-701f-545e-ae5e-136b8b8bf5fd"
+diamondUuid: "9aeb18b5-abb3-8ad7-a32f-334f1fdee555"
+uuid: "87666546-ad4f-88c8-8a90-2d9397ae233e"
 horo: 4
 typography:
   partition: tech
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9489f132-6fe8-8239-a0df-bead706f9282"
+  computationUuid: "e8ed50b0-e909-80a1-a243-19254477d784"
   stages:
     - stage: path
       stageUuid: "e51746cf-89d9-8a38-a962-bf888da7d6d4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "474bb9aa-2409-8bb9-a9f0-f7d897b7de00"
     - stage: horo
-      stageUuid: "4df229bb-5d93-809c-9209-8a29e91293d4"
+      stageUuid: "297b06fe-19e9-81c8-ab3e-780a6ebdefff"
     - stage: seal
       stageUuid: "663ad99c-bf78-81a3-835c-2f536def8444"
     - stage: uuid
-      stageUuid: "bfc9c0cc-df00-876f-840e-b46b4f992b8d"
+      stageUuid: "30b0e264-c05c-8f5a-ba1d-6896a2f596ba"
 version: 2
 ---
 # tech

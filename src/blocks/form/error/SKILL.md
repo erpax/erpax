@@ -2,10 +2,10 @@
 name: error
 description: "Use when reasoning about error — A field that rejects input and explains nothing is a dead end: the user knows the form will not submit and has no way to learn what to change."
 atomPath: "blocks/form/error"
-coordinate: "blocks/form/error · 2/share · 0bcb06df"
-contentUuid: "4ef7574b-59ab-57c9-b9d2-1a780798bae9"
-diamondUuid: "1a551d00-d55e-8688-b89c-d8625d3a6e43"
-uuid: "0bcb06df-60be-8679-afd0-d91d6da6ac05"
+coordinate: "blocks/form/error · 2/share · 31fb5a17"
+contentUuid: "f6ca5b72-2087-514f-a868-f1371e59176a"
+diamondUuid: "5fef96be-cb18-8f9c-9ca2-1446dc42884b"
+uuid: "31fb5a17-9055-83dd-8093-9e97034dfb18"
 horo: 2
 typography:
   partition: blocks
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "29408152-e896-8b47-95c9-c1b1d7d37bde"
+  computationUuid: "c70de588-f591-8fa0-b9f1-8d8362741b0b"
   stages:
     - stage: path
       stageUuid: "b0e59c5f-8be9-8270-970b-f7f510c61889"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "eb8e9812-53c0-8551-a2c1-0d7656bb602e"
     - stage: horo
-      stageUuid: "64bdafd7-679a-8842-9690-3f89d41bcf35"
+      stageUuid: "83fceecf-efdf-8b36-bc59-137022452cdd"
     - stage: seal
       stageUuid: "1755b9b5-0126-8971-90c8-138368685c91"
     - stage: uuid
-      stageUuid: "a12ef319-386c-87ab-bc5b-1d76c49acb88"
+      stageUuid: "8743de13-cd3a-84ac-b034-0e92bd910919"
 version: 2
 ---
 # blocks/form/error — an invalid field always says why

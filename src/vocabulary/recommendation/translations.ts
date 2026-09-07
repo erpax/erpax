@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recommendation",
-    "uuid": "7217e2b7-1e7d-8392-a8c3-bba91f1b8809",
+    "uuid": "63aa69a0-53b2-8795-9a1b-ac027e825a3c",
     "words": [
       "recommendation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about recommendation — Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concre",
-    "uuid": "411779bb-b09e-84a5-b916-bbbae26a129e",
+    "uuid": "cb3e8b75-fb4c-8530-921a-b021351f28a1",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: frontmatter
 description: "Use when reasoning about frontmatter — skill/frontmatter — pre-push gate for SKILL.md frontmatter & atom-naming law."
 atomPath: "skill/frontmatter"
-coordinate: "skill/frontmatter · 5/round · 3748abc1"
-contentUuid: "164ff6c6-e20a-5cda-aec6-2385b702aaf0"
-diamondUuid: "10ddd283-8546-843f-8afa-a11f1b70b999"
-uuid: "3748abc1-a931-870c-af08-fa08b8537ab9"
-horo: 5
+coordinate: "skill/frontmatter · 8/crest · 5e82fcdc"
+contentUuid: "bf65182d-da88-5916-8afa-0de49d0d14d4"
+diamondUuid: "d6919800-e326-8ef4-acaa-acef69cfe02c"
+uuid: "5e82fcdc-bf92-8043-a689-39630a434275"
+horo: 8
 typography:
   partition: skill
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "ISO 19011:2018 §6.4 audit-evidence (the gate is the immune system)"
 bindings: []
 signatures:
-  computationUuid: "519fb3aa-0b7b-810d-8fdd-9741df9e79ec"
+  computationUuid: "ae107185-dd24-8a61-b690-471fce626fba"
   stages:
     - stage: path
       stageUuid: "74151031-d596-83ec-9f7a-c6f651c4c4b0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "74bf20aa-ab6e-8104-8724-d37ab365a92a"
     - stage: horo
-      stageUuid: "1fe766b1-d64a-855c-a0cd-f9ad507d0f5b"
+      stageUuid: "5f34f738-fbd0-874a-9140-a5a5c0e57ae5"
     - stage: seal
       stageUuid: "b5c134ac-a69b-8639-80b8-d993b6d7dc14"
     - stage: uuid
-      stageUuid: "c2f4afe4-bedc-88f4-9efe-19e5eccbb239"
+      stageUuid: "1721acbd-c2e5-8ee7-995d-83c4f7ad26e8"
 version: 2
 ---
 # skill/frontmatter

@@ -2,19 +2,19 @@
 name: parity
 description: "Use when reasoning about parity — runs — **18 lanes**, the authority. Two other files claim to run the gate and each was written by hand:"
 atomPath: "gate/parity"
-coordinate: "gate/parity · 1/base · ea9d2355"
-contentUuid: "3adfbef5-ea0f-5dfc-96ca-06e11e3918d0"
-diamondUuid: "119c5faa-8ae4-8081-9c1e-10fb4c0ca0a8"
-uuid: "ea9d2355-8da2-8efd-b591-bbf4a5e0d28d"
-horo: 1
+coordinate: "gate/parity · 4/weave · a72f85c3"
+contentUuid: "99a19812-a56a-5f01-a9a0-f8ae2e32830b"
+diamondUuid: "f637af2e-c2be-837c-9f74-d47773273698"
+uuid: "a72f85c3-8a26-8bc9-9c57-1528db952331"
+horo: 4
 typography:
   partition: gate
-  bondDegree: 10
+  bondDegree: 12
 standards:
   - "ISO/IEC 25010:2023 §5.6 maintainability — one truth, one address"
 bindings: []
 signatures:
-  computationUuid: "3e36e5a7-44ce-8263-95f2-c742a15783f7"
+  computationUuid: "d0eb6594-ffdf-8e6e-ad22-4e247313f57f"
   stages:
     - stage: path
       stageUuid: "2263c180-81f0-8b90-b718-06cb329fcaa4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9e510444-d7da-8e0a-9964-f5dbeb59ff6c"
     - stage: horo
-      stageUuid: "d375e1a3-7e32-82a8-82ea-9bac9ddf2e77"
+      stageUuid: "fa98f060-4833-8341-920d-7c54d5cca719"
     - stage: seal
       stageUuid: "fbea4f49-eb33-8b57-810c-35cee8ba86be"
     - stage: uuid
-      stageUuid: "c13fdefb-1dce-83ce-bd0f-c4e2b760dc2f"
+      stageUuid: "e054099b-59aa-845b-9216-849a537f0f9c"
 version: 2
 ---
 # gate/parity — three definitions of one gate, and only one of them is the gate

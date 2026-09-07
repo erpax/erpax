@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "automate",
-    "uuid": "2ec2f4f4-910f-8dbc-b1f3-0503031f1fd2",
+    "uuid": "48205c79-9c14-80e5-971c-ec4ea2107b42",
     "words": [
       "automate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about automate — Quantum automation primitives for iterative problem-solving loops",
-    "uuid": "3ae778ba-89a6-8f4f-a76f-efc9b5132784",
+    "uuid": "59bdf145-23c3-8be7-b265-1e4355a3f9eb",
     "words": [
       "use",
       "when",

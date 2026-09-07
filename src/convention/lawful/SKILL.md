@@ -2,11 +2,11 @@
 name: lawful
 description: "Use when checking whether every atom is accountable — the computed convention that each SKILL.md states its own **Law (the invariant), measured live as coverage = lawful / total over the real corpus tree."
 atomPath: "convention/lawful"
-coordinate: "convention/lawful · 5/round · dd7c1b6a"
-contentUuid: "0582fba5-0178-53ca-b389-3cca2af8a9b2"
-diamondUuid: "6330ee02-5b1f-8f8c-8319-47f8f8aee47b"
-uuid: "dd7c1b6a-b678-8afd-aee0-ac265f2b2375"
-horo: 5
+coordinate: "convention/lawful · 1/base · 0c82c378"
+contentUuid: "06af4dbb-350e-5c28-813d-f27052f970eb"
+diamondUuid: "7c1e812f-2ffa-818d-af79-e714a771e6a6"
+uuid: "0c82c378-042b-848d-af33-db5e2969db95"
+horo: 1
 typography:
   partition: convention
   bondDegree: 34
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dd5dfe1a-5b5b-86aa-8d69-2bfc39442d2b"
+  computationUuid: "e585dd4c-1418-80e2-a6b1-ec7e730c516d"
   stages:
     - stage: path
       stageUuid: "25037c3e-b998-8eb2-bb18-657119de0d9d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7c37a422-781a-8982-abb0-dffb02c7b74e"
     - stage: horo
-      stageUuid: "8a795ec9-5a97-8dbb-abff-a0b807ac0d7a"
+      stageUuid: "e1976c93-c7fb-8457-b0ef-0cdf32447f5c"
     - stage: seal
       stageUuid: "0c265969-1b21-8725-a20b-7a4867437662"
     - stage: uuid
-      stageUuid: "4c4ebb54-7f94-8e4c-89c9-7e7f7d584f22"
+      stageUuid: "e54c7e07-76bc-8f1a-b520-1902ec916e09"
 version: 2
 ---
 # convention/lawful — every SKILL.md states its **Law (the invariant)

@@ -2,11 +2,11 @@
 name: prevention
 description: "Use when reasoning about prevention as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prevention"
-coordinate: "vocabulary/prevention · 5/round · 163825ef"
-contentUuid: "0cac6bbf-b450-5bd4-90df-f8daa4b7bd9c"
-diamondUuid: "2f1e650f-30e6-843e-8601-02047f1abf14"
-uuid: "163825ef-688e-8ca6-9d04-734aca50df26"
-horo: 5
+coordinate: "vocabulary/prevention · 7/descent · e49d4b37"
+contentUuid: "ec9bb1fb-5a38-5a4b-8300-fd6f595f7c4c"
+diamondUuid: "ca63e6ed-91ed-84a7-82bc-71f4d1d3ceaa"
+uuid: "e49d4b37-b9fe-8c70-8504-fa9adacb41db"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 36
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "346b479d-5536-83d9-9291-5c5fb14bc3e6"
+  computationUuid: "93ee255e-c1e9-81e1-aa85-f74522f82921"
   stages:
     - stage: path
       stageUuid: "40ff5af5-aea7-8507-837d-af3ed7d5d337"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1931de9c-a6cb-89ec-8630-4e6192c7fb1a"
     - stage: horo
-      stageUuid: "d670e821-c278-80b9-bfc9-0f0c78a680d3"
+      stageUuid: "16b3fb87-55fe-8c5e-9d95-839d3d8c5521"
     - stage: seal
       stageUuid: "aa81657c-8f11-874f-bfa8-af7fdf2bdc3a"
     - stage: uuid
-      stageUuid: "b8f11433-3724-898a-af10-34ca449dc1ef"
+      stageUuid: "79dee306-03c9-804f-aa7f-32b2f1c55d77"
 version: 2
 ---
 # prevention

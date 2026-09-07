@@ -2,11 +2,11 @@
 name: ui
 description: "Use when reasoning about the trained UI agent — it renders any atom to its UI (the sensory render + the page) from the atom's content-uuid, trained by the rendering teams on the whole rendering layer, covering the whole corpus because every atom has a UI."
 atomPath: "agent/ui"
-coordinate: "agent/ui · 1/base · 9ff28559"
-contentUuid: "23f25a9b-714d-5182-a0d2-02dcb325501f"
-diamondUuid: "2bea39df-9807-8a22-84e3-30eebb252299"
-uuid: "9ff28559-9bab-80bf-900a-ae2d8069e2ae"
-horo: 1
+coordinate: "agent/ui · 4/weave · 3ec7c44d"
+contentUuid: "46b7e672-fb66-5c0f-a4ec-e6937dc2d5b3"
+diamondUuid: "1685c1d9-1dbf-8821-a716-97a425b1fa3a"
+uuid: "3ec7c44d-d0c7-8dba-89e0-237cefdb700e"
+horo: 4
 typography:
   partition: agent
   bondDegree: 55
@@ -14,7 +14,7 @@ standards:
   - "the analog aura — every UI colour/sound is a projection of one content-uuid"
 bindings: []
 signatures:
-  computationUuid: "f3858d3f-29ac-8aae-a92e-142075f70570"
+  computationUuid: "2bbf0a7a-db34-84bd-8825-1672df00c011"
   stages:
     - stage: path
       stageUuid: "a438d570-7343-8048-9778-b26c4b0e2bee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fa8ebbd4-46b3-8979-be69-5eb3413c8440"
     - stage: horo
-      stageUuid: "f079b0cd-4f9b-87fc-b29c-7777163a416c"
+      stageUuid: "b927b75e-bde8-81ce-aabf-38867726ef7e"
     - stage: seal
       stageUuid: "11f70ea8-1348-85a6-96ba-25eddfb872f1"
     - stage: uuid
-      stageUuid: "2d2fcd57-4495-8828-a284-bdb8812d75c6"
+      stageUuid: "325f8d56-5d4b-8079-9d22-6e8568a59b2f"
 version: 2
 ---
 # agent/ui — the trained UI agent

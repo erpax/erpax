@@ -2,11 +2,11 @@
 name: accounts
 description: "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node."
 atomPath: "gl/accounts"
-coordinate: "gl/accounts · 8/crest · cfc432dd"
-contentUuid: "5900e666-a718-575c-8222-22ecfb532748"
-diamondUuid: "962d87ba-2bfe-85c9-a479-7c079b682cda"
-uuid: "cfc432dd-d2f9-8152-abd3-3779c4bf41d3"
-horo: 8
+coordinate: "gl/accounts · 4/weave · d6019da6"
+contentUuid: "13abecd7-32f5-5bb6-b665-48314bca8f84"
+diamondUuid: "3c3f886e-8264-8265-9fe1-6351d5919c0f"
+uuid: "d6019da6-2d81-8f91-8a27-dc7004128d34"
+horo: 4
 typography:
   partition: gl
   bondDegree: 44
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "00fe35e2-8fd3-84dc-865b-605b26f8dc19"
+  computationUuid: "0ffc22d5-ac7d-8e11-bb53-bd5df09e71c6"
   stages:
     - stage: path
       stageUuid: "7e314456-172a-833b-b65a-622e1b2c9fdd"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "59b67049-d5e8-85d7-b83e-466ce45a4141"
     - stage: horo
-      stageUuid: "ecef93b1-5092-8017-9fe1-8e3be8f03554"
+      stageUuid: "3881f5b7-3d62-8ad0-94f2-6da14ed7f450"
     - stage: seal
       stageUuid: "b050fb19-2afc-8106-aefa-e3b6157620fe"
     - stage: uuid
-      stageUuid: "d9b5acff-2478-8bb1-b123-def7776aa751"
+      stageUuid: "122fe7c3-25db-89eb-b2dc-ea4d626862d2"
 version: 2
 ---
 # gl-accounts

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cache",
-    "uuid": "57fe258c-70bb-8ca0-873b-991a7de0da26",
+    "uuid": "2ee39368-98eb-8716-8754-4474ec799274",
     "words": [
       "cache"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when optimizing repeated access — cache invalidation strategies, cache-aside vs write-through, TTL/expiry, cache coherency, memoization, query result caching, distributed cache semantics (Cloudflare KV, Redis).",
-    "uuid": "6fd936f1-d57b-8b58-81b6-fae5fc297289",
+    "uuid": "0bf81932-399e-869b-9aaa-b3c89987b784",
     "words": [
       "use",
       "when",

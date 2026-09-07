@@ -2,10 +2,10 @@
 name: registry
 description: "Use when reasoning about registry — binds every gated capability to the tiers that include it. and answer from that one place, and marks what no tier may remove."
 atomPath: "feature/registry"
-coordinate: "feature/registry · 8/crest · af746a17"
-contentUuid: "c93a643e-2584-5ac8-a5dc-4377e8380da7"
-diamondUuid: "bb9ca2db-8071-87c7-951b-436b117c586d"
-uuid: "af746a17-d81e-8b4b-aa69-c72be9ae7067"
+coordinate: "feature/registry · 8/crest · d4bbeb7a"
+contentUuid: "0f4d00a8-c327-59e6-b10b-fc3e7d78ddbd"
+diamondUuid: "e627148d-7d27-8402-9f7c-33fe87627be6"
+uuid: "d4bbeb7a-a475-8206-b2bd-41efc8d2ae1d"
 horo: 8
 typography:
   partition: feature
@@ -152,7 +152,7 @@ standards:
   - "rfc-5545"
 bindings: []
 signatures:
-  computationUuid: "a201354a-888d-815e-968c-175443d640ea"
+  computationUuid: "929ba8a4-d1b1-8402-8f65-f4f881563b85"
   stages:
     - stage: path
       stageUuid: "81b4ec20-135d-82b4-adf7-11d8d3ed6674"
@@ -163,11 +163,11 @@ signatures:
     - stage: links
       stageUuid: "a3672a90-90ce-84ef-9394-c87586476045"
     - stage: horo
-      stageUuid: "bb008b45-1548-83e6-a60c-31672c44086e"
+      stageUuid: "9369b525-370b-8109-ab56-f3f5f775eeeb"
     - stage: seal
       stageUuid: "351e1471-b8cf-8796-a28d-c59b5276a8e7"
     - stage: uuid
-      stageUuid: "008709ff-5a02-8d89-a24b-a3ca83467091"
+      stageUuid: "e887f7f4-960e-8c50-b9b1-55bbf675e550"
 version: 2
 ---
 # feature/registry — what a tier includes is one table, or it is many disagreeing answers

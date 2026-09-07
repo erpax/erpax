@@ -2,11 +2,11 @@
 name: items
 description: "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items."
 atomPath: "pack/items"
-coordinate: "pack/items · 8/crest · ccb30f74"
-contentUuid: "6697f664-7479-529a-b18d-2c9b06d4b338"
-diamondUuid: "72aeebdf-b60e-819e-8369-4c3d6ec381aa"
-uuid: "ccb30f74-2184-8fd8-bba7-463f8f7cb009"
-horo: 8
+coordinate: "pack/items · 2/share · f7565430"
+contentUuid: "4d683048-085d-5596-8c89-ce70156b359d"
+diamondUuid: "dfeacf70-cd80-841c-8b9e-00f7e3729582"
+uuid: "f7565430-d212-8d96-99af-379dcb183a34"
+horo: 2
 typography:
   partition: pack
   bondDegree: 116
@@ -18,7 +18,7 @@ standards:
   - "UN/CEFACT Rec20 mass (gram) per-unit"
 bindings: []
 signatures:
-  computationUuid: "ec9c3e2d-19f2-807e-a989-fc9e6d308a17"
+  computationUuid: "deafe2bc-d3f7-8184-a2f0-d637139055f2"
   stages:
     - stage: path
       stageUuid: "2d61d636-2b0d-8b4f-8144-c1aba7d389c3"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "50602e12-e6fd-85b5-9c91-c75c7ad1a730"
     - stage: horo
-      stageUuid: "2c8f22a0-8c7e-8dad-aac4-cc9336f0564d"
+      stageUuid: "99749b29-f3b9-87da-a364-859eed48dc16"
     - stage: seal
       stageUuid: "3a93a549-a764-85bc-be3f-cd3d1e70751b"
     - stage: uuid
-      stageUuid: "69d9d3d2-8978-8968-8d1d-51662e54fb51"
+      stageUuid: "b1d706f0-9de8-8b35-9c0b-6498f435d623"
 version: 2
 ---
 # pack/items — the pack line

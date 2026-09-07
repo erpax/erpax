@@ -2,11 +2,11 @@
 name: cargo
 description: "Use when reasoning about cargo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cargo"
-coordinate: "vocabulary/cargo · 4/weave · bb0557ef"
-contentUuid: "449bd4c5-b5d3-5fd6-a4f3-17969a69b9a2"
-diamondUuid: "95c5ac77-9b8b-8f3c-831d-4f3f37eb23bd"
-uuid: "bb0557ef-0497-8b25-956f-442c6d6aa911"
-horo: 4
+coordinate: "vocabulary/cargo · 7/descent · 79f6ca5b"
+contentUuid: "5c4d6aa2-f668-5bf8-a928-f0fd7eefa73e"
+diamondUuid: "ea4d282e-1f46-86e4-83fa-85da0df41957"
+uuid: "79f6ca5b-346b-8e8d-b26a-1d5be1197b0f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8f1911b9-9fe2-833e-9e30-d92aa96a15d4"
+  computationUuid: "e99c15d8-976b-8801-b899-708ee3a8734d"
   stages:
     - stage: path
       stageUuid: "ca4f8b46-e41f-8c45-9da0-0e7ba13e34b1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7f5d0f27-db48-8a9d-8104-ea899fc341f2"
     - stage: horo
-      stageUuid: "8ea7751a-8527-88b2-8cad-c5ea6799e6f6"
+      stageUuid: "1c306b7c-c41b-8ed5-ba7d-b522abd0cdf7"
     - stage: seal
       stageUuid: "4fd033b9-d102-80ed-936b-1e1dbf9a7287"
     - stage: uuid
-      stageUuid: "751b638d-e4f0-801b-908a-cf4a4db53984"
+      stageUuid: "67c575ec-70d9-834b-a3ad-0c315f0431c5"
 version: 2
 ---
 # cargo

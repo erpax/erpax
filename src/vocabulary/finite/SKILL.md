@@ -2,11 +2,11 @@
 name: finite
 description: "Use when reasoning about finite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/finite"
-coordinate: "vocabulary/finite · 5/round · 8747b54f"
-contentUuid: "e93b5f5d-33fd-50fe-af62-0ae236d63c22"
-diamondUuid: "40073dfd-366f-85ed-91da-5a6daee23962"
-uuid: "8747b54f-0f9d-83da-9544-9343420da5e9"
-horo: 5
+coordinate: "vocabulary/finite · 1/base · 504e3b1f"
+contentUuid: "8ac47538-6b98-521c-a34c-b508b528a853"
+diamondUuid: "1cc29e65-f2be-8bdb-a87b-f6d271afa09f"
+uuid: "504e3b1f-a8e7-84c0-a72c-71fe7a8d1272"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "156a6803-a58d-8b5d-a9f0-18ded7a70b67"
+  computationUuid: "b30320ce-ddf8-8985-b559-ecb67b379cb3"
   stages:
     - stage: path
       stageUuid: "047b2bdf-ad2b-8ba6-921e-2d4ebd0b3b60"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "17722ba4-a44c-8a6c-8c0c-b9579b2f2e0a"
     - stage: horo
-      stageUuid: "4a4fb5ab-3c32-85e0-b31a-44446ac928cc"
+      stageUuid: "bdc7c468-8ab3-89b1-941a-3bdab5dd8a8b"
     - stage: seal
       stageUuid: "381ffc09-8f5c-84ae-8def-faed56457d1d"
     - stage: uuid
-      stageUuid: "4487a980-cecd-8566-b7eb-184902af74bf"
+      stageUuid: "60df5d9a-39e4-8e81-8c6c-80d5bef9fff7"
 version: 2
 ---
 # finite

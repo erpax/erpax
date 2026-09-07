@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "network",
-    "uuid": "b7aeaa4f-cf21-8b46-874a-febb53b95323",
+    "uuid": "20b38894-7674-8b60-b85a-877d576849a0",
     "words": [
       "network"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about network as a part of computer — vocabulary pivot to @/network; nested not duplicated.",
-    "uuid": "f5b842a4-7310-87d0-be2f-3136a01fd8e0",
+    "uuid": "9878c876-c229-8ee1-a431-005aa8d69f07",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transcript",
-    "uuid": "39bd6995-6d22-8499-8130-42b5d71bca4c",
+    "uuid": "ed257f51-3479-8337-99eb-dd0beac47ae5",
     "words": [
       "transcript"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when spoken content must be read rather than watched — captions parsed into locatable segments. Handles WebVTT and SubRip alike, decides the format from the bytes rather than a filename, strips inline markup as presentation, and SKIPS a malformed cue instead of guessing a timestamp. mentions() returns a term with the moment attached, which is a pointer to go listen, never a finding: a transcript is what was said, not what is true, and auto-generated captions carry transcription error.",
-    "uuid": "6d6c8edd-a2e3-831b-9f88-2e831b8e9032",
+    "uuid": "8231b746-7e84-8c6a-916c-234765a40122",
     "words": [
       "use",
       "when",

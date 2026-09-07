@@ -2,11 +2,11 @@
 name: newspaper
 description: "Use when reasoning about newspaper — A publication containing information about varied topics that are pertinent to general information, a geographic area, or a specific subject matter (i.e. business, culture, educati"
 atomPath: "vocabulary/newspaper"
-coordinate: "vocabulary/newspaper · 7/descent · da74a306"
-contentUuid: "7a75e37c-b933-54aa-a543-91fdeeea2378"
-diamondUuid: "c6e4c3bd-d7c3-89f3-8ee7-dad62decfe80"
-uuid: "da74a306-395d-84a9-bdd9-7dd3b3c3a171"
-horo: 7
+coordinate: "vocabulary/newspaper · 2/share · b3ccdd0e"
+contentUuid: "4ad016fb-8b98-5e37-88eb-adc4914faa73"
+diamondUuid: "2894cfb3-338c-8eda-b6dd-44def42f62a1"
+uuid: "b3ccdd0e-af23-8e20-9c0f-ca1a46df57c8"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7490b395-991c-8775-9f3c-59be9d030adf"
+  computationUuid: "7ef5ec84-1ce2-848b-b58c-703426e618d5"
   stages:
     - stage: path
       stageUuid: "d62172db-f6be-83e0-954c-a746b4d85e3b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "84ea1121-2b7c-8ba0-8422-5b8533123789"
     - stage: horo
-      stageUuid: "44de2bd3-c028-8648-ab03-1563484093c6"
+      stageUuid: "9314c98e-2fe1-8b6c-ac2e-b8a36fbaec82"
     - stage: seal
       stageUuid: "224270a7-5049-8626-b79f-a46faf251b33"
     - stage: uuid
-      stageUuid: "f89b3a33-9704-82c8-8ed6-e1ff81abc29f"
+      stageUuid: "719fefcb-bf10-8eca-b8eb-14a4976b86f4"
 version: 2
 ---
 # newspaper

@@ -2,11 +2,11 @@
 name: barcode
 description: "Use when reasoning about barcode — An image of a visual machine-readable code such as a barcode or QR code."
 atomPath: "vocabulary/barcode"
-coordinate: "vocabulary/barcode · 5/round · c44f6c1b"
-contentUuid: "64c890b6-a184-598a-9f8d-1c61dbfed618"
-diamondUuid: "8ece561e-b7c7-8e35-b559-87f01d3ad9f5"
-uuid: "c44f6c1b-c461-802c-9ca1-701af476d358"
-horo: 5
+coordinate: "vocabulary/barcode · 4/weave · db0f7cd0"
+contentUuid: "66ba3047-913e-51ab-92d1-495db213db1c"
+diamondUuid: "6a4ad1c9-a3ff-82b7-ab11-75535476e1c1"
+uuid: "db0f7cd0-bfd0-8151-94ef-424aaff4ca49"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b10477e2-af31-8010-9e1a-7822a8f087ca"
+  computationUuid: "54042abd-9fc6-81eb-b26f-5833d0e5c968"
   stages:
     - stage: path
       stageUuid: "33170fd3-79f1-86f8-a81a-c9e5f9ea6159"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e28a6a3-67d2-88d1-b643-e43c5375b10b"
     - stage: horo
-      stageUuid: "2e329980-aed3-8a90-8bc3-7cd0769b7fad"
+      stageUuid: "5837dff1-9416-8b0b-a17a-6b7a9bca188a"
     - stage: seal
       stageUuid: "05c82b5a-e6d7-84ab-b872-6438a51f4d3c"
     - stage: uuid
-      stageUuid: "8fd41a52-dc89-8166-8daa-c2cba57f6a1b"
+      stageUuid: "f935eac9-b9b2-8ce1-974c-f0ff09cc22b5"
 version: 2
 ---
 # barcode

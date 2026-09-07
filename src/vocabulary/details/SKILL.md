@@ -2,11 +2,11 @@
 name: details
 description: "Use when reasoning about details as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/details"
-coordinate: "vocabulary/details · 7/descent · e00ef9ae"
-contentUuid: "51f48165-d5b0-517c-84d5-2f432795061b"
-diamondUuid: "12d38bbf-6a94-8fbb-8e4a-456ee936d23c"
-uuid: "e00ef9ae-a259-86f6-a2d3-c445c51d661a"
-horo: 7
+coordinate: "vocabulary/details · 5/round · 70174498"
+contentUuid: "44f5d137-8fd2-5c9e-abec-5d9860ad91b2"
+diamondUuid: "ecf889d1-aabc-8a46-9526-5330faa56d17"
+uuid: "70174498-8614-82e6-a407-23c25420a311"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 40
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ae90e69d-dde4-8c7f-96f7-ab8a7714eaaa"
+  computationUuid: "9628ffa8-29c6-85bf-9bc2-051156800934"
   stages:
     - stage: path
       stageUuid: "ff0362bf-345a-8667-b3d7-acdb73918fcc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "56f7a216-ef2c-8d9c-92d9-1ff969f93eba"
     - stage: horo
-      stageUuid: "322618fc-c8d7-8513-81c4-61c0bfefdac6"
+      stageUuid: "7b9c835f-a584-8339-8ea6-1f179c38b4a4"
     - stage: seal
       stageUuid: "9f986292-29e8-8457-a8c9-ef4df2cde22d"
     - stage: uuid
-      stageUuid: "9ec80da9-15e7-8602-878c-952f62b991ba"
+      stageUuid: "b82e402d-8043-821b-94f5-5699682e9fda"
 version: 2
 ---
 # details

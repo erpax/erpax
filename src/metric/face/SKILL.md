@@ -2,18 +2,18 @@
 name: face
 description: "Use when reasoning about face — Every number in this session reached its reader as a sentence. *\"48 blind probes\"*, *\"1.6× slower cached\"*, *\"237 dead pointers\"* — each true when written, none checkable by the…"
 atomPath: "metric/face"
-coordinate: "metric/face · 7/descent · 36f27a2e"
-contentUuid: "02d71fae-e0a3-5947-9f18-4197adee4c1d"
-diamondUuid: "5b2d9606-ddd4-8a97-9915-f7be7b5b5530"
-uuid: "36f27a2e-e026-8908-b457-2cb4c57df999"
-horo: 7
+coordinate: "metric/face · 1/base · d086a1fe"
+contentUuid: "97e1fbc1-3ff1-51df-93b8-5d8faeca26be"
+diamondUuid: "6660c8e3-cab4-8e6b-9d66-3b8c22b675f6"
+uuid: "d086a1fe-e5fe-8af2-9d82-7dc4427cd953"
+horo: 1
 typography:
   partition: metric
   bondDegree: 23
 standards: []
 bindings: []
 signatures:
-  computationUuid: "692ddb9f-0307-834d-a586-7ec85b2e4634"
+  computationUuid: "857deed7-323a-8100-8f0e-e23de321e6b1"
   stages:
     - stage: path
       stageUuid: "b9248015-850c-8f4a-a5c3-ba3c1291cc5f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dac891c6-8565-827d-b446-62550727e47c"
     - stage: horo
-      stageUuid: "dc2834a2-67ee-8da4-8812-8060d59b16c8"
+      stageUuid: "1d7081ab-dfb9-8e51-b750-f21a30e7dcb8"
     - stage: seal
       stageUuid: "9eeaf933-1f22-8f0b-b00a-188d7c88ade9"
     - stage: uuid
-      stageUuid: "25aaaf35-0b07-8a38-821e-4c37f5dbae7c"
+      stageUuid: "2017341a-4bcd-8c18-a46e-088ebbb94682"
 version: 2
 ---
 # metric/face — a figure travels with the command that recomputes it, or it travels as prose

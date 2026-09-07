@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "release",
-    "uuid": "8fda28f7-d83c-8635-85ef-857487460e32",
+    "uuid": "7ccc91d5-597b-801c-87ca-1f972390bbc1",
     "words": [
       "release"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about release — The album this is a release of.",
-    "uuid": "44209432-d9c5-8e33-afee-de15eb0acb58",
+    "uuid": "978cdb4a-ae78-81b8-bd08-addee70f1f3c",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: outlier
 description: "Use when detecting or handling statistical anomalies — outlier detection methods (z-score, IQR, isolation-forest), treatment (trim, robust stats, flag, investigate), impact on metrics and reporting."
 atomPath: "vocabulary/outlier"
-coordinate: "vocabulary/outlier · 2/share · f5d928f7"
-contentUuid: "67cfefda-70b3-51c7-8ec4-67bbe67ae909"
-diamondUuid: "68882b4b-cee9-826a-acb2-9f3e20adf5a4"
-uuid: "f5d928f7-87cb-871c-8df5-c2635c4e8d65"
-horo: 2
+coordinate: "vocabulary/outlier · 7/descent · b7adf699"
+contentUuid: "9f66c9ff-499d-53b8-a758-a850f77f6e05"
+diamondUuid: "dd4b9e35-3fe4-8fcb-8e88-4a8dd01b1213"
+uuid: "b7adf699-3c17-8de5-9ba2-95a3ed091524"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e561c6ad-b6d1-87ac-a7df-d5e3ed592ad7"
+  computationUuid: "e2168898-ee42-83bf-96ff-244a10ed01fb"
   stages:
     - stage: path
       stageUuid: "07b94342-5531-8b68-800a-ef35fa99e1b6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "337a2b77-4759-8a85-87fb-030ada7be9c1"
     - stage: horo
-      stageUuid: "d81097f1-59d1-8906-9d6d-1ef899ab33a6"
+      stageUuid: "7d02157c-b092-8236-8d92-7ff01c73f26a"
     - stage: seal
       stageUuid: "208dec56-8419-82d5-b1b2-67c66337a138"
     - stage: uuid
-      stageUuid: "e762e3a4-3467-8ae5-b717-f63643a7bb3f"
+      stageUuid: "d50503d9-3031-8510-beb2-8f0a28dbcc39"
 version: 2
 ---
 # outlier

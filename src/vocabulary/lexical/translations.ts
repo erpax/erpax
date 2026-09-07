@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lexical",
-    "uuid": "dc2cd900-3f0e-8c47-9cc9-2b12cb9759b1",
+    "uuid": "21cc59f8-9525-8183-a227-5d4163eab4f4",
     "words": [
       "lexical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lexical — is erpax's **rich-text** substrate: the Payload Lexical editor (config ), a structured JSON **node-tree** — not an opaque string. Two consequences make it central:",
-    "uuid": "a1f8934c-4d67-86f3-bbaa-66a2e8dc8e7b",
+    "uuid": "c4b3a509-b402-8ab8-8f0d-8f4866b010f5",
     "words": [
       "use",
       "when",

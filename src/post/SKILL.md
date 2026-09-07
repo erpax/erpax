@@ -2,11 +2,11 @@
 name: post
 description: "Use when reasoning about post as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: post
-coordinate: "post · 5/round · ed59d1dd"
-contentUuid: "9d5dae74-59d7-5cff-bfc8-ed21944e0caa"
-diamondUuid: "26b7e03d-8e4f-8608-97b4-e818b2ee8b5d"
-uuid: "ed59d1dd-bb88-8e4a-9efc-ccff88a379c1"
-horo: 5
+coordinate: "post · 1/base · 7d3ca5f3"
+contentUuid: "512eb641-9f1d-5159-a5e4-51de53ebfb7e"
+diamondUuid: "4cde5280-f1cc-8ee1-92bf-0e9ed24b27f9"
+uuid: "7d3ca5f3-dd0d-802d-b4e1-72f196a76011"
+horo: 1
 typography:
   partition: post
   bondDegree: 38
@@ -16,7 +16,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5eab59f8-a7b4-85b3-a2c8-fa35da766e69"
+  computationUuid: "1b1af69f-975e-827f-84df-5bd674b5fe09"
   stages:
     - stage: path
       stageUuid: "68b46ccf-8e11-8ada-988c-7cda11c1155c"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "b8124bba-3cc0-8b56-8f8d-5d808d501800"
     - stage: horo
-      stageUuid: "80e8987b-23ec-828a-8c59-341ab91812b9"
+      stageUuid: "5fc8b21c-6230-82c5-a4b8-5579e090be47"
     - stage: seal
       stageUuid: "da55a60c-6833-84f8-bcac-cbee01d92541"
     - stage: uuid
-      stageUuid: "f2f2c7e9-75e9-8ba4-93d2-a95733475cde"
+      stageUuid: "4df7e25c-58a2-8cea-b590-baced5168b25"
 version: 2
 ---
 # post

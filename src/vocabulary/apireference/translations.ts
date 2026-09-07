@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "apireference",
-    "uuid": "15e3b6c0-304a-89a2-9e53-eacb702b558a",
+    "uuid": "6dcaf906-2d0e-8778-863d-c509f811f9d9",
     "words": [
       "apireference"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about apireference as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "d0ed6dfd-89ae-88b2-b196-c79ce26a0d7e",
+    "uuid": "b0d6ea44-a9d5-8d27-940b-7ee8bb0b7e6b",
     "words": [
       "use",
       "when",

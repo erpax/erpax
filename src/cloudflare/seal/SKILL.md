@@ -2,11 +2,11 @@
 name: seal
 description: "Use when reasoning about seal — Cloudflare config sealing — content-uuid identity, decrypt only on proof."
 atomPath: "cloudflare/seal"
-coordinate: "cloudflare/seal · 5/round · feac852a"
-contentUuid: "6f806bea-68a4-523d-ace1-bd943f852823"
-diamondUuid: "46377122-0d73-839f-8887-edaa98e2cb5f"
-uuid: "feac852a-82d9-8ea6-a7f6-61e71cb92433"
-horo: 5
+coordinate: "cloudflare/seal · 4/weave · 8372dfd9"
+contentUuid: "b20eb849-42e4-56eb-a97d-40a98134de87"
+diamondUuid: "cd5adb04-ba90-8be3-97b4-3fef13a5ec22"
+uuid: "8372dfd9-e28e-8b2c-9d07-a24979489802"
+horo: 4
 typography:
   partition: cloudflare
   bondDegree: 194
@@ -19,7 +19,7 @@ standards:
   - "NIST-SP-800-63"
 bindings: []
 signatures:
-  computationUuid: "ddcbc4d3-b8e9-811f-b1e1-2625b50a9d1d"
+  computationUuid: "c1465aa7-8bd3-8f1c-8883-40dd60923b86"
   stages:
     - stage: path
       stageUuid: "26f371ef-55d0-8581-96d2-135e6cf9f2b1"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "5a8ca987-6a1d-86d6-bc5a-094a55f32779"
     - stage: horo
-      stageUuid: "9ab28a4d-135a-84f7-b3ba-0914c6180912"
+      stageUuid: "cc6eb065-505b-8d7c-b67d-31728a3ef4c1"
     - stage: seal
       stageUuid: "d4c9ff48-5412-8de0-9043-e84815909481"
     - stage: uuid
-      stageUuid: "cb149284-f607-8141-b2b1-7d90ce78b882"
+      stageUuid: "a4fbf485-5855-8d81-b8b2-040ca93a8fc5"
 version: 2
 ---
 # cloudflare/seal

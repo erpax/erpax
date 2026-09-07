@@ -2,11 +2,11 @@
 name: modified
 description: "Use when reasoning about modified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/modified"
-coordinate: "vocabulary/modified · 8/crest · 0bf34c56"
-contentUuid: "ae5a6e78-b87c-5461-b8d8-e22d934020df"
-diamondUuid: "85df46cc-e51e-8216-a8bd-3c553ee5a809"
-uuid: "0bf34c56-a199-8b0a-9de4-fe4f92dcb15f"
-horo: 8
+coordinate: "vocabulary/modified · 4/weave · 9ac6232c"
+contentUuid: "99d078ec-de36-5894-9ee6-c527c354feb0"
+diamondUuid: "eb4b927a-5c9d-85e1-add3-28b29d140d2b"
+uuid: "9ac6232c-1e09-865d-868a-2fecfd5e5f66"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fd7d1e5d-8fc5-8b4d-b2c9-3753685ddcfd"
+  computationUuid: "479410f3-cb46-8485-bb52-344fd05d43ec"
   stages:
     - stage: path
       stageUuid: "6b985f3b-451c-8c5b-bb99-9a5e178e07e8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "33ff8d69-489e-875d-b997-68d53e9fdd7c"
     - stage: horo
-      stageUuid: "7e5e6756-b479-8568-9869-c9d63b39664b"
+      stageUuid: "eec7afec-1676-8b96-b867-f5b3ec91f0f5"
     - stage: seal
       stageUuid: "3054e5b0-ce22-809e-85eb-eae99f301901"
     - stage: uuid
-      stageUuid: "e0cafe12-811c-8a46-9be5-234113d7ff01"
+      stageUuid: "d5ed8d9f-fbd4-8ed0-aaf1-acee080f54fc"
 version: 2
 ---
 # modified

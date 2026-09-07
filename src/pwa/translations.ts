@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pwa",
-    "uuid": "fe0c9681-ef85-8c77-8f52-a8a59329fbe6",
+    "uuid": "dcd93aff-813f-80e8-9297-2d1387dde8ce",
     "words": [
       "pwa"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem.",
-    "uuid": "03599c09-77f8-801e-ad77-2947a5d08640",
+    "uuid": "a5182761-695b-8ea6-adb8-59264b8f7dcd",
     "words": [
       "use",
       "when",

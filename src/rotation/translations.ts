@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rotation",
-    "uuid": "441e3ecb-7639-8212-97f3-3c31426b5a31",
+    "uuid": "c9a6ad4d-57b5-8b91-ab30-c495e8f6154d",
     "words": [
       "rotation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when planning the multi-year non-repetition of a crop family in the same ground — crop rotation breaks pest/disease cycles and balances nutrient draw by never returning a family to a bed sooner than ~3–4 years. The rule/constraint over the planting sequence (distinct from the bare sequence): grouped by botanical family, alternating heavy feeders, legumes, and roots.",
-    "uuid": "3e2f7e3b-f94a-8206-aa09-d9561bb10442",
+    "uuid": "46893038-2ea6-8e55-9bbf-9f562c73dd6c",
     "words": [
       "use",
       "when",

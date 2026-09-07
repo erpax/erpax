@@ -2,18 +2,18 @@
 name: harmonic
 description: "Use when naming the order an agent acts with or against — the four harmonic moves, the exactly-three disharmonies, and a classifier that refuses to call an unknown move compliant."
 atomPath: "agent/harmonic"
-coordinate: "agent/harmonic · 7/descent · 78684b45"
-contentUuid: "9b17c586-de8d-5ff5-b0b9-f9b4e164c302"
-diamondUuid: "6f01e4ed-cadc-8e94-a071-52d0ff5ed083"
-uuid: "78684b45-b0db-8f6f-9355-d0be0a6414ed"
-horo: 7
+coordinate: "agent/harmonic · 4/weave · a7e12e32"
+contentUuid: "a724a3b6-fc30-539b-a4f8-734bcc5685d1"
+diamondUuid: "87ad34e6-047a-8bd1-bef3-c876ff6d03c5"
+uuid: "a7e12e32-651d-8e31-8f62-00526bf0d532"
+horo: 4
 typography:
   partition: agent
   bondDegree: 10
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f2cad698-7dff-893b-9052-cb1c76c327c4"
+  computationUuid: "09997955-83f1-8e76-9aa3-151f1ad4b94f"
   stages:
     - stage: path
       stageUuid: "10fb491d-67e6-8ef0-89bc-5ceedc5a7932"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "13a9283c-8341-8f7d-ad9f-4ac7fc326397"
     - stage: horo
-      stageUuid: "81c5c5a5-229e-830d-8211-0591e7f981b8"
+      stageUuid: "5e405512-acd1-8214-bcb2-4ee5eb89cdec"
     - stage: seal
       stageUuid: "b5868661-398c-8a2e-b7c6-96a13039779d"
     - stage: uuid
-      stageUuid: "fd176c1e-0623-82e5-bb8f-b00385e27184"
+      stageUuid: "2c5114ec-a202-81dd-801f-e862ac9342d5"
 version: 2
 ---
 # agent/harmonic — the thing being fought

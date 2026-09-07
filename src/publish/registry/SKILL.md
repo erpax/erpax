@@ -2,18 +2,18 @@
 name: registry
 description: "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand."
 atomPath: "publish/registry"
-coordinate: "publish/registry · 8/crest · e3d5e86c"
-contentUuid: "503eef0b-2c4a-528f-9d0f-3481056767a2"
-diamondUuid: "8dc53ba8-aa5d-830b-9968-fa86e32fb3a8"
-uuid: "e3d5e86c-0045-82c2-a0ed-b2c854c795b3"
-horo: 8
+coordinate: "publish/registry · 1/base · f58874db"
+contentUuid: "e7e1f05e-9ee7-5888-a585-6cb577802baa"
+diamondUuid: "4a23d288-e02e-84a6-a772-622d5053816c"
+uuid: "f58874db-d08c-8606-887e-d5d6db4c8690"
+horo: 1
 typography:
   partition: publish
   bondDegree: 31
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4ec332cf-7a1a-8aae-b867-fca8927e3b1c"
+  computationUuid: "875b1b4b-fca7-8bcb-86d4-608f70128d86"
   stages:
     - stage: path
       stageUuid: "542922c7-c750-81b2-9242-05c58d21cd2e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "99823e35-b2ac-8da2-9602-21c5091e6c27"
     - stage: horo
-      stageUuid: "e243bcb6-28f8-8b31-b240-c46db2fab2e3"
+      stageUuid: "7c1bd72c-cdfb-8a50-b06e-8a1d0750caad"
     - stage: seal
       stageUuid: "d9a623f8-387f-8a2e-ab6f-7ba909dca05c"
     - stage: uuid
-      stageUuid: "d9c24907-6198-8cf2-8f72-6f33e7dc979d"
+      stageUuid: "f6956bd0-ed7d-876a-927c-08f0c3ba098e"
 version: 2
 ---
 # publish/registry — a result is publishable only with all three legs

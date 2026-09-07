@@ -2,11 +2,11 @@
 name: borrower
 description: Use when reasoning about borrower — A sub property of participant. The person that borrows the object being lent.
 atomPath: "vocabulary/borrower"
-coordinate: "vocabulary/borrower · 4/weave · 3cdb1811"
-contentUuid: "c92046b5-4c4f-58b2-8b28-5d5a389caf96"
-diamondUuid: "ce2da1bc-8714-88ed-ac4c-5b329ba5e714"
-uuid: "3cdb1811-064a-843e-8a7d-9b57aedb88fc"
-horo: 4
+coordinate: "vocabulary/borrower · 7/descent · d70f5a2e"
+contentUuid: "a5416cbc-79c4-5832-b3fd-679c0d6d2b9c"
+diamondUuid: "02fb3228-3ba1-88d2-b3b2-a9c6b5450912"
+uuid: "d70f5a2e-0138-84eb-a8a9-a661fef99eb3"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "afcdf530-4ac5-8f8d-ad25-cf236509b2be"
+  computationUuid: "0f66da92-c737-8870-94c7-c6251aa3f7ca"
   stages:
     - stage: path
       stageUuid: "5995e588-9127-8818-985d-dbed66dee9b1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0ade55d2-b2fd-86e8-9a4b-0a2be66ce9c2"
     - stage: horo
-      stageUuid: "5ede7372-425d-8a31-b67d-160c351ee6a2"
+      stageUuid: "41d2e462-282e-849e-a77f-b16044781262"
     - stage: seal
       stageUuid: "5caf0e90-b9c6-8f71-8d4d-6cef6a0e15dc"
     - stage: uuid
-      stageUuid: "43debfcb-b191-8e57-b52b-695d6067e9cd"
+      stageUuid: "0dc81f73-9abf-8731-a16a-cdbdbde6e59d"
 version: 2
 ---
 # borrower

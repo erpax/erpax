@@ -2,11 +2,11 @@
 name: latitude
 description: Use when reasoning about latitude — The latitude of a location. For example (WGS 84).
 atomPath: "vocabulary/latitude"
-coordinate: "vocabulary/latitude · 4/weave · 3920cbda"
-contentUuid: "3a61fb74-95ec-57c4-aee6-376c54f5c771"
-diamondUuid: "75185265-f835-83c1-8763-a31fd1cdefcc"
-uuid: "3920cbda-b5cf-8d09-b521-2a517786eb85"
-horo: 4
+coordinate: "vocabulary/latitude · 8/crest · d0f25cb5"
+contentUuid: "48010294-d267-5739-9fb5-e60d3902a883"
+diamondUuid: "c8d41cb2-68cf-8912-9d1b-5d658acbf8f7"
+uuid: "d0f25cb5-4a50-8203-9c18-26fbd370af2a"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3dc1a66b-ea92-810c-9539-1bf316c83c94"
+  computationUuid: "e5bb6fd4-59e9-897b-87c9-2ce33ac44e6b"
   stages:
     - stage: path
       stageUuid: "5df4cba9-0ec3-86c0-88bb-8f9c4721d7a0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "972676ef-fa36-8b86-8420-0e238b9b0e54"
     - stage: horo
-      stageUuid: "d3f7bb14-e157-8c51-9d22-a2fa9e311a8c"
+      stageUuid: "cfd4d915-5a1c-8a3d-8c84-62c420419484"
     - stage: seal
       stageUuid: "a58e469c-edac-8e14-b9d8-7f4719539880"
     - stage: uuid
-      stageUuid: "f03cc511-c139-8936-afce-e7cb5cdec1ea"
+      stageUuid: "e1e22039-88a8-8b6e-bdbb-de61927b36da"
 version: 2
 ---
 # latitude

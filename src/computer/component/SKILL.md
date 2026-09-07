@@ -2,11 +2,11 @@
 name: component
 description: "Use when reasoning about component as a part of computer — pivot to canonical @/component; nested not duplicated."
 atomPath: "computer/component"
-coordinate: "computer/component · 7/descent · b9a5e213"
-contentUuid: "367e1b63-35e1-54e0-8f3b-e1c2cd8de8ef"
-diamondUuid: "39540af7-2061-8c7c-9158-c58c989a8458"
-uuid: "b9a5e213-66aa-8617-ae1b-da3a2a454fbf"
-horo: 7
+coordinate: "computer/component · 5/round · 14c759d7"
+contentUuid: "136b918a-a1dd-50ce-a0d8-1672ce57369c"
+diamondUuid: "eb700407-7ccb-8f0c-bf24-2ba89fcbaaad"
+uuid: "14c759d7-fae8-8fe1-acbc-9ab302df6ace"
+horo: 5
 typography:
   partition: computer
   bondDegree: 70
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2fb84f33-ccc4-8749-911b-6d7915bbbbd4"
+  computationUuid: "543c766a-3e99-859e-9061-f5610ecd1d1b"
   stages:
     - stage: path
       stageUuid: "67fce97b-4fba-881c-b01b-b32a4ca732fe"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "64dfe4ed-ded7-82db-8948-41c2cf6ae200"
     - stage: horo
-      stageUuid: "bdfaf648-904d-8a51-9264-16604c8d41eb"
+      stageUuid: "2cf9c5a2-730f-87a1-abf7-9ef17c344ea1"
     - stage: seal
       stageUuid: "e9168104-8407-8571-b218-bc4c51220fcd"
     - stage: uuid
-      stageUuid: "c0158399-2e18-87d9-bf89-bda5f8f71ef3"
+      stageUuid: "cad3cc29-092b-86c0-bd6d-15a763f27586"
 version: 2
 ---
 # computer/component — renders atoms on screen

@@ -2,11 +2,11 @@
 name: federation
 description: "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics."
 atomPath: federation
-coordinate: "federation · 5/round · 1b06b92a"
-contentUuid: "9637d07c-b56e-5d12-8ef6-2d131ec53fdd"
-diamondUuid: "fdb2de64-0be0-8f1b-a2f2-c0c5c63c3824"
-uuid: "1b06b92a-28f0-8e97-a64e-36eb413dc53e"
-horo: 5
+coordinate: "federation · 7/descent · c32b46bb"
+contentUuid: "4455e292-602c-522b-8b78-3d3570ff473e"
+diamondUuid: "4b05a6bb-b798-8b8c-a89c-337a2b437446"
+uuid: "c32b46bb-a87d-893b-8499-95d129be5e8c"
+horo: 7
 typography:
   partition: federation
   bondDegree: 57
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "022cf563-6743-8722-af78-5b0d1a3ed25c"
+  computationUuid: "81b28a6b-9c52-801b-bba2-eede60cdcc3d"
   stages:
     - stage: path
       stageUuid: "7f9947bd-55cd-81c7-b4fe-3a1431596330"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "73c3b056-6c5d-856b-be2e-f199cb01267b"
     - stage: horo
-      stageUuid: "34f261b2-fd71-8829-98a0-c0df92443cf2"
+      stageUuid: "2409477d-3e3f-8451-b90e-a153d968d508"
     - stage: seal
       stageUuid: "2fe15827-bba1-882c-be1c-7cd6235582fe"
     - stage: uuid
-      stageUuid: "bedc14f9-7712-8b95-a070-5e83570ed9c0"
+      stageUuid: "e0d4248b-a7e4-8bcd-a341-3bd1700151f9"
 version: 2
 ---
 # federation

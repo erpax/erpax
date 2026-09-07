@@ -2,11 +2,11 @@
 name: logo
 description: Use when reasoning about logo — An associated logo.
 atomPath: logo
-coordinate: "logo · 8/crest · 796a7d50"
-contentUuid: "291acfc6-736f-555a-9d76-951dd8ed4ded"
-diamondUuid: "42d8d2de-24d8-8d29-8a26-f3bbaada3bbd"
-uuid: "796a7d50-5c8f-840a-b0f1-be35a44f773e"
-horo: 8
+coordinate: "logo · 5/round · 3e37b0d0"
+contentUuid: "c525c1ba-68d3-5de5-981c-85c6d3d295fe"
+diamondUuid: "8955fbd6-192d-8539-87b8-a6f897dd670b"
+uuid: "3e37b0d0-8b4c-8c6f-aeba-a3065e1a45a2"
+horo: 5
 typography:
   partition: logo
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d2be099f-4c4f-8d2e-b638-b2046150859c"
+  computationUuid: "24e5df9f-02d6-8e8a-a3b1-05a149715450"
   stages:
     - stage: path
       stageUuid: "effe14e2-3ab2-889b-b1dc-07344edf12c2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0080a901-fd56-844a-9682-ea9b4f5732a6"
     - stage: horo
-      stageUuid: "ae51135b-07c4-8a94-bca0-8816c956471c"
+      stageUuid: "cc6c41f9-8c72-8571-b640-ed1a7fd5333d"
     - stage: seal
       stageUuid: "f4d7e509-1ac3-8b97-be08-79ff40ea42d2"
     - stage: uuid
-      stageUuid: "887736eb-b2f3-88f1-a26b-82aad0010b61"
+      stageUuid: "8b67614c-57a8-87fd-9e22-7044edfe1526"
 version: 2
 ---
 # logo

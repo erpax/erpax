@@ -2,11 +2,11 @@
 name: increment
 description: "Use when reasoning about increment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/increment"
-coordinate: "vocabulary/increment · 4/weave · 654f018d"
-contentUuid: "a34ef8c0-ba12-596b-9711-f29d0b32f642"
-diamondUuid: "7239ce8d-f3dc-88e7-97e6-610d12a61ef9"
-uuid: "654f018d-fc28-8d15-a088-9322497ad947"
-horo: 4
+coordinate: "vocabulary/increment · 8/crest · e045c85c"
+contentUuid: "501b7cd1-7356-59ca-9e4c-fefbd4c17318"
+diamondUuid: "a02d5177-a596-8ab8-8356-935f62da3266"
+uuid: "e045c85c-459d-8579-9db8-99b8fe88b2d4"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "874bfc75-9344-82a9-8fc8-90c0132197a6"
+  computationUuid: "afb8edee-f551-8b60-9be0-e4db28124408"
   stages:
     - stage: path
       stageUuid: "b144e97f-f5d2-8c9d-af50-8bec4bad892b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f67264a2-302d-8a15-87e0-10a11b75216e"
     - stage: horo
-      stageUuid: "e75817ab-3349-86e0-8e52-14ac005e6986"
+      stageUuid: "c123d322-2cbf-8e15-b284-9273a037c0a9"
     - stage: seal
       stageUuid: "e763ddab-0f24-8079-ad49-40a4d5ee15a8"
     - stage: uuid
-      stageUuid: "d35083dc-2aa4-8a67-a59a-309976d387b2"
+      stageUuid: "5cd792ea-f487-8e55-b1e3-3a7a9f6cb10c"
 version: 2
 ---
 # increment

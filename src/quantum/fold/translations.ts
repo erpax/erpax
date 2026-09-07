@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fold",
-    "uuid": "51f6663f-80e3-8e85-8b56-4c24d057bc22",
+    "uuid": "3372d168-86c1-8dd4-8296-49a44fafc5e6",
     "words": [
       "fold"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fold — Double fold is mandatory for quantum mentality: word ⊗ digit; 2D documents present both sheets until seal.",
-    "uuid": "398db1aa-0cb1-8de2-83f1-6e79c22cd217",
+    "uuid": "5c4a1dc1-dc43-8092-935c-f56e36addf93",
     "words": [
       "use",
       "when",

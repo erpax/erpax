@@ -2,11 +2,11 @@
 name: cemetery
 description: Use when reasoning about cemetery — A graveyard.
 atomPath: "vocabulary/cemetery"
-coordinate: "vocabulary/cemetery · 5/round · b820b7d3"
-contentUuid: "022a40aa-7d22-5fd9-b9fe-15f31e62557a"
-diamondUuid: "20d1de75-4c5b-8d5c-a101-ebc3dd6d27c6"
-uuid: "b820b7d3-db27-83d8-b2a6-1c26781be904"
-horo: 5
+coordinate: "vocabulary/cemetery · 7/descent · 028bc050"
+contentUuid: "606b88f5-f49f-5820-8f87-0fab5afc0554"
+diamondUuid: "3c664e74-c4ac-8b4c-aa89-5a323149739b"
+uuid: "028bc050-9835-89e8-be33-6710ba304c03"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "07ae888e-0af8-8cdc-b043-5f5b6c8d00de"
+  computationUuid: "1332081f-921a-8b84-ae2a-5d9b34d90e12"
   stages:
     - stage: path
       stageUuid: "609ef092-b730-83a0-87fb-1c8db677378b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "89368d06-4935-8d56-84d2-c69542969244"
     - stage: horo
-      stageUuid: "57a8cdfd-d6a9-8bfb-bd97-891642493e92"
+      stageUuid: "b40ca99c-4021-8351-9939-7aa3cf6f588e"
     - stage: seal
       stageUuid: "333a48cf-aa8a-8007-b38f-74341399f18e"
     - stage: uuid
-      stageUuid: "a3fe5bb6-19dc-8414-b7a0-87c54b043b7b"
+      stageUuid: "bb20f47d-fcf5-8b74-bfef-149d8690f77d"
 version: 2
 ---
 # cemetery

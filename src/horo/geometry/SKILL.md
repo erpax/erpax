@@ -2,18 +2,18 @@
 name: geometry
 description: "Use when generating visual representations, sequences, and spatial mechanics from the horo ring — loops (circles, lemniscates), breath sequences, turning numbers, corner limits, carry closures, and state validation."
 atomPath: "horo/geometry"
-coordinate: "horo/geometry · 8/crest · eb93d81c"
-contentUuid: "43390d9a-6c9a-582d-992b-ffb4eb51704d"
-diamondUuid: "a81a9f5e-e79b-8c04-9311-3f1750172ad7"
-uuid: "eb93d81c-6458-82b8-9bdd-165b5a0cc705"
-horo: 8
+coordinate: "horo/geometry · 2/share · 334ce91f"
+contentUuid: "0a331a09-eecf-5ca0-98ef-cdb86e3b8c4b"
+diamondUuid: "207b6ae5-8ec1-8f27-86e2-a62de013f3bc"
+uuid: "334ce91f-bc82-87eb-a48a-a7953b571c7a"
+horo: 2
 typography:
   partition: horo
   bondDegree: 8
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8b417c44-3690-8528-9c21-ea850765bdec"
+  computationUuid: "c4e48900-1674-8293-93d9-438d340424ca"
   stages:
     - stage: path
       stageUuid: "660bcd1e-652e-8972-b6ad-e2924b58b078"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "835a4a2e-4b30-87b2-9b7b-f3fa7e885d81"
     - stage: horo
-      stageUuid: "c64d9cc1-ba31-8dc6-81f6-af76e1289595"
+      stageUuid: "e368e4ec-d2f0-85a0-bc68-ef1b357306c9"
     - stage: seal
       stageUuid: "55c60c27-93f9-88b3-970d-7d5d3573e5e0"
     - stage: uuid
-      stageUuid: "f37c943f-beb2-8851-b37d-748a03120ae2"
+      stageUuid: "21b4f019-6277-8169-ae4c-9adfd9f45011"
 version: 2
 ---
 # horo/geometry

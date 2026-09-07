@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "config",
-    "uuid": "a5323354-5e9d-8314-b3c1-af2a93abdb68",
+    "uuid": "57971dd9-1e07-8873-9924-e2dbf0e0b9e0",
     "words": [
       "config"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about config — The Payload field configuration for a page hero: , , , .",
-    "uuid": "7c25ca6c-a843-8c07-a819-dd531715d0d9",
+    "uuid": "6b5fe241-6336-8e3f-bb0a-e09ab0c74a64",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: navel
 description: "Use when reasoning about the solar plexus center (Manipura) — index 2 of the seven centers, a standalone projection of the chakra ring whose colour is rendered from a uuid computed from the position math, with the traditional fire-of-identity role named only as cultural overlay, never claimed."
 atomPath: navel
-coordinate: "navel · 4/weave · a51afc91"
-contentUuid: "a3373208-e4c2-5899-b16a-850dc915683d"
-diamondUuid: "efc02ba3-27f9-8751-9640-d6f37b104c4f"
-uuid: "a51afc91-52c8-85fa-88aa-f929b1b3c97a"
+coordinate: "navel · 4/weave · 407eea52"
+contentUuid: "d1c960df-7b3f-5d0d-a287-0f07358afb2c"
+diamondUuid: "169dead6-c66c-80e0-9571-65df08ed7414"
+uuid: "407eea52-cb32-875f-8d94-be4e14e03d35"
 horo: 4
 typography:
   partition: navel
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "90a7e163-03e1-8e1c-ab2d-7fb3011c2287"
+  computationUuid: "1344121b-e360-85d1-99e2-555d976ac91e"
   stages:
     - stage: path
       stageUuid: "dbd783ef-20fb-8e93-8f4c-6db6d7ea7b0e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "380a11cd-fe0b-8728-a5e1-0fd693ee4018"
     - stage: horo
-      stageUuid: "0130bc97-5ce0-84b2-9a42-ffd459b439d2"
+      stageUuid: "c5f38247-ea98-8955-981a-2f249b5748e9"
     - stage: seal
       stageUuid: "d5e497d0-e200-8cb0-9617-518af08e42f5"
     - stage: uuid
-      stageUuid: "cdc6f02a-5108-81d7-b7a0-b6e4128c2b25"
+      stageUuid: "09a156c4-58f2-89a6-bf3d-f4db3eaefd3e"
 version: 2
 ---
 # navel — the solar plexus center (Manipura)

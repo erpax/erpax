@@ -2,11 +2,11 @@
 name: incentive
 description: "Use when reasoning about incentive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/incentive"
-coordinate: "vocabulary/incentive · 8/crest · 0e545d00"
-contentUuid: "f827b792-a013-53e9-8a1a-3a2d28f5816f"
-diamondUuid: "2f41a1f3-2e43-8863-a018-fa13c08e3582"
-uuid: "0e545d00-dee5-8ffd-8e66-f115aa11035d"
-horo: 8
+coordinate: "vocabulary/incentive · 5/round · a8f5920c"
+contentUuid: "62c20875-612e-5a1a-8465-74a9a1ad21c4"
+diamondUuid: "165c2740-d10f-83e9-a4a4-cc817b77b800"
+uuid: "a8f5920c-0749-8d13-b0ae-6407dd36ba76"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 36
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7128173a-7280-8707-af78-b4b99075ebfa"
+  computationUuid: "11897195-0ba5-8fa8-8443-aa6d4a257b23"
   stages:
     - stage: path
       stageUuid: "305c5316-aa34-8223-8cf7-6708ffac638a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f81ddcf7-3130-8808-8bb3-3faa1ae71a54"
     - stage: horo
-      stageUuid: "0b831de9-b31f-8319-ad81-bac3408d28f9"
+      stageUuid: "2f270ed5-c05e-8b2d-b4ce-27f85e4b5e81"
     - stage: seal
       stageUuid: "f4d65b9a-3a47-847c-ae23-8a94203494b2"
     - stage: uuid
-      stageUuid: "55da6f03-8f88-8727-a98f-985e343b3daa"
+      stageUuid: "0320845c-2bfb-8fa0-8db5-d1043b725a26"
 version: 2
 ---
 # incentive

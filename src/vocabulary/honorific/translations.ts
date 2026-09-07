@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "honorific",
-    "uuid": "5874cd2d-4dec-8b0a-80b9-b4f555085d17",
+    "uuid": "e6c56b17-a308-8756-ae90-39f00ebdc1a5",
     "words": [
       "honorific"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about honorific as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "60f792c8-1183-8b57-8eea-22da5bf7e4bb",
+    "uuid": "cd05ec7b-c8aa-8c66-a2ac-68d9a732f3a6",
     "words": [
       "use",
       "when",

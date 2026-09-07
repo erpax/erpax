@@ -2,11 +2,11 @@
 name: exam
 description: "Use when reasoning about exam as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/exam"
-coordinate: "vocabulary/exam · 4/weave · 69a6443e"
-contentUuid: "5ceeda68-9a63-503c-95e9-a176af66da51"
-diamondUuid: "ff0fd697-04aa-8781-bae5-92349485313c"
-uuid: "69a6443e-dd48-8180-8c02-243b25db06ac"
-horo: 4
+coordinate: "vocabulary/exam · 1/base · 3e0b1055"
+contentUuid: "8df2c299-43f3-52a5-8af6-5dac9ee6ba97"
+diamondUuid: "de0f4376-a805-81e9-b835-c1702e398ed3"
+uuid: "3e0b1055-4408-8006-8ab0-35e5ad81a187"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8dec2c4c-2ec7-88ff-bccd-103b4bb3b416"
+  computationUuid: "2804a29c-2a01-8ffa-8db1-b8de83ff1efc"
   stages:
     - stage: path
       stageUuid: "0190e7c3-daca-877c-b7ac-ad101b5afc7c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "295cee2f-fbac-8f36-bc13-89f311dd881c"
     - stage: horo
-      stageUuid: "3360bce0-fca8-8f84-a286-67b4ff247816"
+      stageUuid: "ac2fbff9-922a-867e-8027-c0ada0fc732a"
     - stage: seal
       stageUuid: "933f3923-4ac2-8b98-b22d-10f56aff9b05"
     - stage: uuid
-      stageUuid: "293719b7-039c-8b2d-b02f-3cb4b777e3fc"
+      stageUuid: "b1758d14-b671-82fa-a306-e6612496a4b7"
 version: 2
 ---
 # exam

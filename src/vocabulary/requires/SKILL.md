@@ -2,11 +2,11 @@
 name: requires
 description: "Use when reasoning about requires as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/requires"
-coordinate: "vocabulary/requires · 1/base · 8aa685ca"
-contentUuid: "10a07069-79df-51e7-8006-6e83181f0048"
-diamondUuid: "df1b7d71-9520-8b33-867d-a12cce7b5832"
-uuid: "8aa685ca-1998-873d-9adf-1458a6d0c1a2"
-horo: 1
+coordinate: "vocabulary/requires · 8/crest · 4df2eb00"
+contentUuid: "a2b8d1f9-0517-5972-9c04-a767deb018bf"
+diamondUuid: "5e8dc932-3f74-8033-b15c-d7e6dbdea26d"
+uuid: "4df2eb00-a7c3-8382-b93c-317f24c251a4"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cf25d45c-c458-8ed7-a597-8e2fa1f00b72"
+  computationUuid: "4cd517eb-cfd2-8815-84c1-a37f1e406a50"
   stages:
     - stage: path
       stageUuid: "665de86c-8b01-8432-b7db-215c6cea3f78"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b1d71ccc-9462-8140-aa71-aa4e0d2f3ce3"
     - stage: horo
-      stageUuid: "da87a4a4-ee82-8e1c-8ada-42b872e8e6f7"
+      stageUuid: "8709b587-6e8f-80c0-ba25-52a835c322a4"
     - stage: seal
       stageUuid: "99e31fce-aea0-8e50-b610-f48b0f607a37"
     - stage: uuid
-      stageUuid: "220a621e-5b01-8e3f-aced-f5f5e84a7ac8"
+      stageUuid: "9850ad40-563d-8109-93fe-b81fb40929a1"
 version: 2
 ---
 # requires

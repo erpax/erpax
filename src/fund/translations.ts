@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fund",
-    "uuid": "c9c251eb-6ce3-88b6-ac37-a197794e1bf6",
+    "uuid": "16554cfe-08c9-889c-99fd-2218f0aaa1ef",
     "words": [
       "fund"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fund — erpax booked government grants correctly under IAS 20 — 31 fields, clawback provisions, the funded asset, the granting authority.",
-    "uuid": "cadcc27c-c75f-8f0e-9296-f845efb78e0a",
+    "uuid": "ab81578c-d2a0-8378-8b5d-d65b0842e899",
     "words": [
       "use",
       "when",

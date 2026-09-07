@@ -2,10 +2,10 @@
 name: sha256
 description: "Use when reasoning about sha256 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sha256
-coordinate: "sha256 · 8/crest · 78f51cb3"
-contentUuid: "0d39d5e2-b958-58ff-9fea-0d38b7fe931a"
-diamondUuid: "a7d2e5f1-8425-8655-b9d2-981356e2b3c6"
-uuid: "78f51cb3-04e8-8e99-8a59-3022203247a6"
+coordinate: "sha256 · 8/crest · ade19e2c"
+contentUuid: "87bdaa67-55d1-5fae-aba9-a715b785ee57"
+diamondUuid: "837e894e-acf1-8a99-aff6-c0ebeef5f31e"
+uuid: "ade19e2c-5b3b-8f60-b635-97d9d217b4b0"
 horo: 8
 typography:
   partition: sha256
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1ef8314f-f3bf-8e16-a0fb-e90c11a716ed"
+  computationUuid: "ec99d7c0-5526-88e6-824e-d8935408cede"
   stages:
     - stage: path
       stageUuid: "bd9154ff-ea81-81f4-a2b2-e3ffbea3c52c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0b8d0378-a301-8897-9f6e-4b3e1098fc35"
     - stage: horo
-      stageUuid: "bb845a75-1ca0-8936-a5bd-69f5502d865c"
+      stageUuid: "02c5ab65-d8b3-8c65-9066-a0146e055867"
     - stage: seal
       stageUuid: "1e603779-b897-823f-9ddf-f8b54ea24ffc"
     - stage: uuid
-      stageUuid: "ca4a9370-c618-8962-8682-1a91598854c3"
+      stageUuid: "e8bffddd-35ed-80d4-b963-a3d9867b58a0"
 version: 2
 ---
 # sha256

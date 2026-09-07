@@ -2,11 +2,11 @@
 name: reported
 description: "Use when reasoning about reported as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reported"
-coordinate: "vocabulary/reported · 8/crest · ffe2775e"
-contentUuid: "1928db8f-2218-5b42-835c-028495bf3f22"
-diamondUuid: "fbac738b-4c6a-8f89-890f-9fd4ee43b821"
-uuid: "ffe2775e-9500-89f5-8671-38031ddf589a"
-horo: 8
+coordinate: "vocabulary/reported · 5/round · 7ea0d950"
+contentUuid: "abb7ab17-9797-5519-97c5-859bf2e3380a"
+diamondUuid: "e54f3d48-cde7-8e83-bfe4-f00a26c8ec31"
+uuid: "7ea0d950-1aa2-8277-8377-024485d350d1"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b4464a25-13d9-80ab-97c7-865eb7c63950"
+  computationUuid: "27fad0f9-c177-858c-90fa-1c31ca50bc57"
   stages:
     - stage: path
       stageUuid: "22194dc6-9bc8-86d9-a66b-ed76fb2cc1b7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "91e91730-6881-8bee-b543-1e5c0a0d4b0d"
     - stage: horo
-      stageUuid: "90de6998-31f0-8782-91fd-716c6e424d3e"
+      stageUuid: "a7c6101e-fe51-8e9a-9025-c5eb028507ad"
     - stage: seal
       stageUuid: "bb6a5c0b-7fc1-8fb7-a5aa-7e4de399e7b5"
     - stage: uuid
-      stageUuid: "43ca2576-bbea-8a90-a602-1b129f51e3df"
+      stageUuid: "eae10f23-8851-8aa8-8c94-2804ea35ed03"
 version: 2
 ---
 # reported

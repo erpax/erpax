@@ -2,18 +2,18 @@
 name: manifest
 description: "Use when a change touches many files at once — a mass edit carries a scalpel manifest naming the reason for every cut, or it is a blind sweep and is refused. Measures the DOOR rather than the discipline, because the scalpel already makes this class of damage impossible (unique-match-or-refuse, reasonless ops refused, collisions named, a red batch restored to the byte) and it changed nothing while it stayed optional: in one session, hand-rolled sweeps spliced an import into a doc comment, left 3,184 SKILL.md half-written, and reverted the work a keep-list was written to preserve."
 atomPath: "rules/manifest"
-coordinate: "rules/manifest · 1/base · 54c40767"
-contentUuid: "154e8c4f-d959-5dae-bc33-795908529b22"
-diamondUuid: "5417c1e6-bf2d-8e9b-98df-736107443d1c"
-uuid: "54c40767-d8b8-83df-83a8-3ee4ed32a604"
-horo: 1
+coordinate: "rules/manifest · 2/share · 719d8cd1"
+contentUuid: "a0da1640-eb3d-5a3f-933a-7318536a54ea"
+diamondUuid: "165e582c-a107-876d-91b5-6ac6da19dc9b"
+uuid: "719d8cd1-975d-8481-a8e9-4a0dedf2b533"
+horo: 2
 typography:
   partition: rules
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "27ab3e00-045c-8417-9b43-c2574c53087c"
+  computationUuid: "29545d7c-6d8f-837d-961b-c6eb35f4c7e1"
   stages:
     - stage: path
       stageUuid: "a0f99ff4-10de-8b97-b0eb-db0fbcd4355c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "473c3f86-fd0b-8a73-b1a7-4973ea99b2d8"
     - stage: horo
-      stageUuid: "2a9f279a-94d3-872b-a6c7-6cdab4f5ce38"
+      stageUuid: "31b7de69-9795-87e0-b900-53986fb7b2d9"
     - stage: seal
       stageUuid: "b1ef9b8c-5ec3-8f7a-a2a2-ffd202ceaf8c"
     - stage: uuid
-      stageUuid: "461bc186-8135-8a45-a69f-351acd4eea61"
+      stageUuid: "3d2ab07b-02d6-8c54-bd2e-ca396f423804"
 version: 2
 ---
 # rules/manifest — a mass edit without a manifest is a sweep

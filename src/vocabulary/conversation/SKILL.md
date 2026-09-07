@@ -2,11 +2,11 @@
 name: conversation
 description: Use when reasoning about conversation — One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.
 atomPath: "vocabulary/conversation"
-coordinate: "vocabulary/conversation · 7/descent · d797c02a"
-contentUuid: "f5d3ac50-ed1f-57a2-a2d5-37c65ac272fb"
-diamondUuid: "85fe8cc5-295c-833c-b5c0-ba4faaa4d6b4"
-uuid: "d797c02a-d07e-8167-ad19-6ab12d880bf7"
-horo: 7
+coordinate: "vocabulary/conversation · 4/weave · 4c1fd4f2"
+contentUuid: "6c5d5a54-3af8-5f49-a438-806625e7020a"
+diamondUuid: "8d105b27-cbb8-827c-96d7-9fa71ac6d475"
+uuid: "4c1fd4f2-c485-824b-91b4-3392d425e29a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a9c9fdbd-c728-8776-b736-2fdc2c29e79f"
+  computationUuid: "d94bf13a-7b5f-8df6-a044-f5093840c173"
   stages:
     - stage: path
       stageUuid: "d240f4f9-b6b1-830c-8858-3a040af52448"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3b17224d-3d7c-853f-90ba-72a37ddc3e5f"
     - stage: horo
-      stageUuid: "f2bc2f6d-ea1d-890e-a819-580377d47257"
+      stageUuid: "365592ee-01a7-8d22-8bd4-0f21a376b112"
     - stage: seal
       stageUuid: "ce4ab2f7-da93-8206-aafc-e51ed6cdbcf4"
     - stage: uuid
-      stageUuid: "e8ae1675-bfb1-8841-b2a1-fe8c0c8aa683"
+      stageUuid: "30f854c1-391b-86a4-9ad8-8a56fef5e2fd"
 version: 2
 ---
 # conversation

@@ -2,11 +2,11 @@
 name: error
 description: Use when reasoning about error — Representation of an Error.
 atomPath: error
-coordinate: "error · 4/weave · 029a55b0"
-contentUuid: "1a0562b0-65c9-5257-bea3-d11ff1b8803f"
-diamondUuid: "946964df-bbf4-8c34-a365-2722d62b8e07"
-uuid: "029a55b0-18b3-812b-911d-bcdb69fa523a"
-horo: 4
+coordinate: "error · 2/share · 79b27dd5"
+contentUuid: "a17ad3e4-5895-54ba-ac83-b6e376eec41a"
+diamondUuid: "eb149f12-7052-8312-9b3b-a0b7580027dc"
+uuid: "79b27dd5-29c4-86e8-b4bf-3d47af6ff846"
+horo: 2
 typography:
   partition: error
   bondDegree: 17
@@ -22,7 +22,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bbc03a90-2c71-80fa-96a4-e8419f545802"
+  computationUuid: "a2dc57bd-a17f-80a4-962d-7e6945c21d49"
   stages:
     - stage: path
       stageUuid: "059b2d4e-0017-857e-9938-cc8fe5dd15b0"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "8fd5bc9e-5d1e-8e2e-85db-6016aa13106c"
     - stage: horo
-      stageUuid: "745a8f51-7c94-80d5-855b-8726d665135a"
+      stageUuid: "f82e86c7-0ec8-8696-b5e2-487c84554148"
     - stage: seal
       stageUuid: "a55ad6c7-2921-8ee5-a94b-b166b8a36dea"
     - stage: uuid
-      stageUuid: "a222c7c8-3af2-8763-9e02-f16475292b86"
+      stageUuid: "10b1adee-b61d-8007-b076-2c1e9af4ec97"
 version: 2
 ---
 # error

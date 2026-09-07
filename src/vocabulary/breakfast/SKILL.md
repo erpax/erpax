@@ -2,11 +2,11 @@
 name: breakfast
 description: "Use when reasoning about breakfast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/breakfast"
-coordinate: "vocabulary/breakfast · 2/share · aa368fa2"
-contentUuid: "bb04cecf-d9ce-55e3-bca7-78099ec6886c"
-diamondUuid: "12b58aa5-5e80-8f39-b915-799840b5aa9b"
-uuid: "aa368fa2-a140-800f-995f-cd0a27a49373"
-horo: 2
+coordinate: "vocabulary/breakfast · 7/descent · 69e67124"
+contentUuid: "366f3b1f-dddd-598a-adba-2c47795daa6e"
+diamondUuid: "99b08a9a-3203-8d98-8004-42efe30b55b6"
+uuid: "69e67124-4237-8fd0-b0ac-42ce61b0988b"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a2d3ae0d-f970-8d48-9577-da1d725d8f7e"
+  computationUuid: "3f820264-0b00-8a83-84bc-085917de3f53"
   stages:
     - stage: path
       stageUuid: "ad69de83-1ead-809b-9a86-1d6f23000983"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9d17bb45-401b-8c73-9f0d-25265d5bd60c"
     - stage: horo
-      stageUuid: "f5379f7a-a1f3-8896-bc37-fed14ed05bb0"
+      stageUuid: "34663129-a198-8d49-852b-8b5298183b43"
     - stage: seal
       stageUuid: "ffa919b5-0e2b-8054-82ee-553b33fdbcc0"
     - stage: uuid
-      stageUuid: "7410112c-fe61-820c-a23f-7a80962718eb"
+      stageUuid: "4b6fc35c-c6cc-8c5d-9f57-e7ed26586cb4"
 version: 2
 ---
 # breakfast

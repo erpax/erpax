@@ -2,11 +2,11 @@
 name: taxonomic
 description: "Use when reasoning about taxonomic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: taxonomic
-coordinate: "taxonomic · 1/base · c8010a96"
-contentUuid: "19a2fee2-442f-57fc-b824-c8dcf0170a98"
-diamondUuid: "64699deb-93dd-8803-93d0-bfcc4c26077a"
-uuid: "c8010a96-f29a-85ce-ac71-9ae9fff70553"
-horo: 1
+coordinate: "taxonomic · 8/crest · 137214ab"
+contentUuid: "555f71a3-1744-5073-863e-e5d15eb4480b"
+diamondUuid: "78b4c894-c00a-8521-b627-49d1c2a9bd92"
+uuid: "137214ab-40e0-8411-8644-de5fd38e35b1"
+horo: 8
 typography:
   partition: taxonomic
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aee94b1c-a29a-855e-ac93-988b1bb0e97d"
+  computationUuid: "c0ac5e81-5e7a-8081-ae87-712270fc0def"
   stages:
     - stage: path
       stageUuid: "226d0948-addc-8f85-90fc-ea5065a6d794"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "939a783f-91c6-8344-91f6-32c362a9da20"
     - stage: horo
-      stageUuid: "0921e134-eac0-8032-8dc6-89b88300d5b5"
+      stageUuid: "3d737239-75b0-868c-82d2-42781041310e"
     - stage: seal
       stageUuid: "9e321e15-0b18-8d5e-b34a-162ca64b3a60"
     - stage: uuid
-      stageUuid: "cf193c82-7d40-82f6-8939-a13ef94a01a3"
+      stageUuid: "7492ec9f-8517-812f-9067-bad7a862c252"
 version: 2
 ---
 # taxonomic

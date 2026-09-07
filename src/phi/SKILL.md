@@ -2,11 +2,11 @@
 name: phi
 description: "Use when φ must be read as the self-address constant — the number that is its own fold, computed not stored. Where pi is a finite seed unfolding to an infinite tail, φ is the fixed point: x = 1 + 1/x, the value the fold returns unchanged. Iterate the fold from any seed and it converges to φ; Fibonacci ratios sharpen toward it at every step. The arithmetic instance of concept.self.address."
 atomPath: phi
-coordinate: "phi · 4/weave · 0ac68f36"
-contentUuid: "dde37639-278e-53c3-b5e0-5e6001cc2c6d"
-diamondUuid: "01241a62-ef2a-88b0-b551-ee75c8969a7c"
-uuid: "0ac68f36-97bd-8464-af38-57a5c3a8accb"
-horo: 4
+coordinate: "phi · 5/round · 4eb52211"
+contentUuid: "f5117d84-0dba-5aec-928a-aa32798ae215"
+diamondUuid: "2d360396-3356-85e7-88a9-0258fb600493"
+uuid: "4eb52211-119a-84a8-937e-8f0b05e71342"
+horo: 5
 typography:
   partition: phi
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - the golden ratio φ — the positive root of x² = x + 1
 bindings: []
 signatures:
-  computationUuid: "79a947a2-42c2-8b27-9379-a6cf63fdceb2"
+  computationUuid: "2ffe1cea-7fcc-82b6-8694-5fe99dc67600"
   stages:
     - stage: path
       stageUuid: "e4382af3-f251-8065-a842-810151a5bb2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9d24fd5d-19f5-8734-bf33-d0c5a4c86932"
     - stage: horo
-      stageUuid: "84eb4ad5-1d6f-8a78-9f96-58eaf10a76de"
+      stageUuid: "50217bb7-cfbd-842e-8999-c8f92ba204c5"
     - stage: seal
       stageUuid: "d96f1edd-81cc-8584-b442-d5e40e1400d7"
     - stage: uuid
-      stageUuid: "be51be3b-045c-8250-806f-952f21b28e69"
+      stageUuid: "54f8d58c-ffee-82b8-bd22-06e9f26c110d"
 version: 2
 ---
 # phi — the number that is its own fold

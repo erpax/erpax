@@ -2,11 +2,11 @@
 name: lymphatic
 description: "Use when reasoning about lymphatic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lymphatic"
-coordinate: "vocabulary/lymphatic · 8/crest · cf3d5bed"
-contentUuid: "02948b98-4678-5d27-a851-c5bd37a6e250"
-diamondUuid: "b9cc2c88-c774-84d1-8dc4-0e7c4464ebf5"
-uuid: "cf3d5bed-cc4a-8e6d-9ed6-375ff6135e91"
-horo: 8
+coordinate: "vocabulary/lymphatic · 2/share · 9fa5a146"
+contentUuid: "c920466a-9f76-5bb5-ac37-a20f3235a0a1"
+diamondUuid: "5612f0b1-1d53-8136-aa16-c79c07381626"
+uuid: "9fa5a146-6e08-863c-b8c0-3e1061d62b6c"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a8983f84-6c4a-8ac0-9843-7c614c3a9cde"
+  computationUuid: "26d3aacf-f081-888f-b227-0e3d9d7fe1f4"
   stages:
     - stage: path
       stageUuid: "cb36657c-5126-8cae-ac67-3d48178d1bd6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6659fb84-2b9d-8c45-aa88-37fd0ef4dab0"
     - stage: horo
-      stageUuid: "3973311e-6389-8365-b986-42310dd35d7c"
+      stageUuid: "3007cf18-1ef4-87c8-bb52-2de376197b36"
     - stage: seal
       stageUuid: "d7f7de89-c51b-8f29-bb87-6f17a325e55d"
     - stage: uuid
-      stageUuid: "198c03d2-4757-8a99-981b-c6ff03112fe0"
+      stageUuid: "ae7c8813-f7f5-8ea3-b4b0-baa19b79188f"
 version: 2
 ---
 # lymphatic

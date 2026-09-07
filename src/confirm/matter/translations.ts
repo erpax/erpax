@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "matter",
-    "uuid": "9c8583b6-b614-8d7f-b467-ba6dc8f97428",
+    "uuid": "52f1c8ba-ad09-8bd4-98a2-86787a99ef1f",
     "words": [
       "matter"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when confirming a real change rather than the uuid substrate — the payload ⊗ vitepress ⊗ build lane, scoped to the files a turn touched or --full across the corpus.",
-    "uuid": "60fe9ced-0e1d-80f8-bc7e-6efb4c8c2f16",
+    "uuid": "168c1753-591f-8ec3-82b1-392130aa5c7b",
     "words": [
       "use",
       "when",

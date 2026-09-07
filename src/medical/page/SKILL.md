@@ -2,11 +2,11 @@
 name: page
 description: "Use when reasoning about page as a medical facet of medical — vocabulary pivot to @/page; nested not duplicated."
 atomPath: "medical/page"
-coordinate: "medical/page · 5/round · 95a568b8"
-contentUuid: "a1d1f6d9-777a-5995-ab3f-f5a2c9dcafbf"
-diamondUuid: "4a48bc5b-486a-8ba0-ac39-413dcae80908"
-uuid: "95a568b8-bd20-8bfd-9848-2196632d1d64"
-horo: 5
+coordinate: "medical/page · 2/share · b93ade0e"
+contentUuid: "0e78f60b-46e9-50b8-b63f-64facca34049"
+diamondUuid: "297bb3a3-4050-898c-ac97-eff4b3cae484"
+uuid: "b93ade0e-a163-83aa-ad87-846434d16f77"
+horo: 2
 typography:
   partition: medical
   bondDegree: 141
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0bc1961b-bbb0-8d6e-99b3-f9d16573cbe7"
+  computationUuid: "81275c80-1e10-855f-a540-367b1994bf8c"
   stages:
     - stage: path
       stageUuid: "727eabfb-a911-80d8-b8da-06ec72570a13"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "46f7dabd-886a-8345-9923-bb9c3fda0298"
     - stage: horo
-      stageUuid: "232ba709-ecbb-8b4a-921d-80e20cb10faf"
+      stageUuid: "65c8c89d-7495-8f57-9fd0-56874681cbcb"
     - stage: seal
       stageUuid: "9528709b-b979-8568-bfe2-45e728f30a98"
     - stage: uuid
-      stageUuid: "beac3297-c97d-8a10-8b6a-4b6036078237"
+      stageUuid: "4b750280-d1da-817d-a11c-7e4be910add2"
 version: 2
 ---
 # medical/page — medical facet

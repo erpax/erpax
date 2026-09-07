@@ -2,10 +2,10 @@
 name: wholesale
 description: "Use when reasoning about wholesale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: wholesale
-coordinate: "wholesale · 2/share · e93766ce"
-contentUuid: "87c34d72-aed5-578d-b4af-e4fca4d8b208"
-diamondUuid: "f65e4666-096f-80ae-821d-60d1d2f49fb2"
-uuid: "e93766ce-1f1c-80ff-ac16-b81404c66b3e"
+coordinate: "wholesale · 2/share · 29bb6465"
+contentUuid: "1afd0793-e718-5ce2-b553-232c2244b840"
+diamondUuid: "c6f681ac-62f3-8edb-a063-dcb107eea7c9"
+uuid: "29bb6465-fe44-88d0-82dd-016ab1f11eac"
 horo: 2
 typography:
   partition: wholesale
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1ddcee5b-384b-8772-bead-d0844f1ea871"
+  computationUuid: "242cc6b9-006a-8c43-90bd-92295a9891d8"
   stages:
     - stage: path
       stageUuid: "58ab07f4-12e2-8390-bd62-f7798c9061a5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "931db4e8-9844-838a-8f7f-c58dcc7b9625"
     - stage: horo
-      stageUuid: "e567ecd3-f667-8d47-98b5-6bdef76a80f8"
+      stageUuid: "e7bd0a01-f153-8339-b355-8b043c806cf2"
     - stage: seal
       stageUuid: "7bb92342-68e7-8570-8320-2ffe931809aa"
     - stage: uuid
-      stageUuid: "6514a54c-4641-8f1c-b828-37f2ca3d2d0a"
+      stageUuid: "16af4146-f192-8c9a-889b-33d89689878d"
 version: 2
 ---
 # wholesale

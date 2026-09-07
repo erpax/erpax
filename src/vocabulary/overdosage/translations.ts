@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "overdosage",
-    "uuid": "a98aff95-5609-8fb6-8638-7ce776a0d6d8",
+    "uuid": "99eba766-50cc-8409-9fbb-b50798f41d63",
     "words": [
       "overdosage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about overdosage — Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.",
-    "uuid": "5146a13f-f800-831c-b20b-3b8a9c7782af",
+    "uuid": "628a5578-23f7-82b1-9fe7-2be8dfd12b45",
     "words": [
       "use",
       "when",

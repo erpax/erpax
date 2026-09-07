@@ -2,11 +2,11 @@
 name: bakery
 description: Use when reasoning about bakery — A bakery.
 atomPath: "vocabulary/bakery"
-coordinate: "vocabulary/bakery · 1/base · 3e2ee854"
-contentUuid: "0c8fdf2a-0f74-50b8-991e-543434b73fa4"
-diamondUuid: "ab770d77-822c-8d03-ad47-f689a4b55847"
-uuid: "3e2ee854-31b7-801e-8648-2961c896d3ed"
-horo: 1
+coordinate: "vocabulary/bakery · 5/round · 75263b80"
+contentUuid: "32e66915-5094-58b7-b2ea-a415f578e421"
+diamondUuid: "69c17708-ba08-806b-a27c-e7c8caa36d6c"
+uuid: "75263b80-a135-8733-85d9-01f3f20fdd7b"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "70ee7a0d-dd93-8ee9-89cd-dd10ec553539"
+  computationUuid: "bdcf4ba0-9d4c-897f-aada-5a6b432cb2dc"
   stages:
     - stage: path
       stageUuid: "3087402e-d7d1-892d-88f7-e3dc9999ddf1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3c6b072f-8155-8f9d-a0d0-e505a3ae7c3e"
     - stage: horo
-      stageUuid: "12393735-69e7-8d8c-a9cd-498eecd17c44"
+      stageUuid: "9284e8c7-f7d4-8be0-bf73-144915a4569f"
     - stage: seal
       stageUuid: "6611bcf1-bef7-8f0f-8f75-70a1f972ad4f"
     - stage: uuid
-      stageUuid: "9318866e-2bc9-8ccd-928e-6e466e8943ab"
+      stageUuid: "f6f6e5dd-e297-8682-8a29-7d0dbbaeb578"
 version: 2
 ---
 # bakery

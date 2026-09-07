@@ -2,18 +2,18 @@
 name: components
 description: "Use when building or debugging the erpax React UI — server-component-first Next.js App Router views, Lexical/Payload block renderers, admin panels, dashboards, widgets, and shared primitives — the society's FACE, the rendered surface where matter meets the eye."
 atomPath: "vocabulary/components"
-coordinate: "vocabulary/components · 7/descent · b6e801bc"
-contentUuid: "f5dcced8-1a0e-574c-b08b-233c0a6dfd1c"
-diamondUuid: "54642768-2b07-84b0-aeba-09b31146e9db"
-uuid: "b6e801bc-8d06-8a75-a28a-e1d2524b3f84"
-horo: 7
+coordinate: "vocabulary/components · 1/base · ea4c1d83"
+contentUuid: "dc9b13ad-5a6c-5168-8ebd-0d8eb2b06f5a"
+diamondUuid: "ded752fb-f246-8754-8e4a-a93c52a7dbd4"
+uuid: "ea4c1d83-3861-88f5-97af-5ca5a6cc4e65"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 36
 standards: []
 bindings: []
 signatures:
-  computationUuid: "dd16e4ca-fd53-8b71-ba7b-de031616f080"
+  computationUuid: "f42763c9-2358-897a-9a06-5728f2fa1643"
   stages:
     - stage: path
       stageUuid: "3c13ab03-94be-8703-acd3-9b39b2a94b38"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4fa8c4da-6762-8de2-9673-676da5a0a55c"
     - stage: horo
-      stageUuid: "d303ba0c-6d7f-80b5-86d6-c8836f5d4428"
+      stageUuid: "f7ab7ac2-d4e2-8a8d-9801-b8210de72a6c"
     - stage: seal
       stageUuid: "cfdb073d-ebc5-8ca4-a865-58bca7c71359"
     - stage: uuid
-      stageUuid: "28de0722-5a38-8bbe-b9f1-3241f96da313"
+      stageUuid: "e5b6a966-ec08-88e6-ad90-fa12a9c8efaf"
 version: 2
 ---
 # components — the rendered face of the society

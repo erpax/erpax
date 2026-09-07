@@ -2,10 +2,10 @@
 name: consideration
 description: "Use when reasoning about consideration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/consideration"
-coordinate: "vocabulary/consideration · 2/share · de2d0bb3"
-contentUuid: "6edcfd71-d96c-5b5b-83f4-15c484dea08a"
-diamondUuid: "12899e5a-f6e3-8070-9077-2f94339d8a48"
-uuid: "de2d0bb3-fa69-8ca2-9b35-9522b32af594"
+coordinate: "vocabulary/consideration · 2/share · 29587100"
+contentUuid: "327e23b4-d523-50c0-acae-7415a215f736"
+diamondUuid: "5df6be6f-ca58-8066-8bad-7df951a61261"
+uuid: "29587100-bf39-8fc2-a579-f2dd915377d6"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "009950f4-c565-8924-a1aa-d5355731e7d6"
+  computationUuid: "16773a41-61d4-8d32-9360-6f39fe5670cf"
   stages:
     - stage: path
       stageUuid: "e89f9ad3-96bd-8414-a7df-f81bec5fd721"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6b6889d7-2f99-8358-b8c8-a987667ebd68"
     - stage: horo
-      stageUuid: "99fc41d2-80aa-83c7-a0b7-851e1dde89d5"
+      stageUuid: "453bbbff-cad7-8eb9-98a3-7ea72b7dfcc4"
     - stage: seal
       stageUuid: "b2cabd35-63ff-84ce-875c-bf5bb991a1ab"
     - stage: uuid
-      stageUuid: "fa34bfdf-ffe0-845e-afcb-cc41023afca7"
+      stageUuid: "bbf2dc84-3f59-8b8b-bec3-b12f90904b44"
 version: 2
 ---
 # consideration

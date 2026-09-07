@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "image",
-    "uuid": "046bc44b-226e-8d70-8dfd-06cea7a99d3e",
+    "uuid": "c4a9e95a-7d79-8782-aa74-415081d1c649",
     "words": [
       "image"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about image — An image of the item. This can be a URL or a fully described ImageObject.",
-    "uuid": "dadb3636-01e5-836d-a779-55bb74b84a36",
+    "uuid": "bb033ce9-a42a-88d2-a888-11308c66d60b",
     "words": [
       "use",
       "when",

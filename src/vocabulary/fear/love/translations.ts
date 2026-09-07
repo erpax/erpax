@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "love",
-    "uuid": "28acc14b-3d91-80f1-b2ab-4fa02aeb6580",
+    "uuid": "61a1c344-e3f3-8243-81eb-bd8d53a4cfe9",
     "words": [
       "love"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the destroy-over-create arrow — fear corrupting love, entropy winning, a gap opening; the reverse direction of the love and fear duality and the mirror of love/fear.",
-    "uuid": "a55fd665-7d93-838a-b0b6-2715da6d2fd8",
+    "uuid": "f0932d7f-f72c-806a-8547-d02fc22c2256",
     "words": [
       "use",
       "when",

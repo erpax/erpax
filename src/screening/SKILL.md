@@ -2,11 +2,11 @@
 name: screening
 description: "Use when reasoning about screening as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: screening
-coordinate: "screening · 7/descent · a4711348"
-contentUuid: "a83f027c-b350-572a-a3b5-85a3b28c7b69"
-diamondUuid: "5fef39cf-0907-8fe3-9579-7c401db60c2d"
-uuid: "a4711348-b64f-8f95-80ac-9117bd072160"
-horo: 7
+coordinate: "screening · 1/base · 8b8f3bf8"
+contentUuid: "8c324ea9-dd40-506f-a3ca-5ce9b19115f6"
+diamondUuid: "4d1ff8e5-070c-8b11-bdc6-14932cdd31b7"
+uuid: "8b8f3bf8-7409-84a8-979d-57238029ce6b"
+horo: 1
 typography:
   partition: screening
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6912ffd0-3fab-848e-b261-82f26bad1fc2"
+  computationUuid: "b48a6266-3433-86bb-94e4-e2c70eaafeb5"
   stages:
     - stage: path
       stageUuid: "ee87110d-55d7-84a6-ab8c-9de6aa91bb2b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b0af7b73-e1ce-8f34-8557-37f1ad083746"
     - stage: horo
-      stageUuid: "0b4161de-f0e1-898a-afcf-ca5908c6f2e4"
+      stageUuid: "bf847e30-f5ef-8b56-83d0-cd18a5c50af2"
     - stage: seal
       stageUuid: "50107697-2e98-895f-a370-a3ae539a58ee"
     - stage: uuid
-      stageUuid: "475a7232-75ca-8c95-9473-cfedc74c9267"
+      stageUuid: "952da141-d5dc-82de-938d-c419214f5d77"
 version: 2
 ---
 # screening

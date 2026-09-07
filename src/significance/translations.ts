@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "significance",
-    "uuid": "91bb3456-36a9-80af-a159-03dece549f79",
+    "uuid": "66a97564-fb26-8da1-af07-1a4535a02f26",
     "words": [
       "significance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about significance — The significance associated with the superficial anatomy; as an example, how characteristics of the superficial anatomy can suggest underlying medical conditions or courses of trea",
-    "uuid": "159244ef-922b-83fc-99f3-6a0e2a85d8d4",
+    "uuid": "aad7225f-9ab6-8e7e-9557-3ef415d332e4",
     "words": [
       "use",
       "when",

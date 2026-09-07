@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "e4fc88c1-89b2-8966-9399-c6401ad09715",
+    "uuid": "8788d0ca-2310-8d07-a47e-1438d1643e13",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical EN 16931 semantic data model — types only.",
-    "uuid": "5af4fca4-4914-8cef-af3e-2168dcbff247",
+    "uuid": "849cc00d-baa3-80aa-8c9b-ee6f5d7d5b5f",
     "words": [
       "use",
       "when",

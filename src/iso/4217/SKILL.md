@@ -2,11 +2,11 @@
 name: "4217"
 description: Use when implementing or referencing ISO 4217 — Currency codes.
 atomPath: "iso/4217"
-coordinate: "iso/4217 · 5/round · 33254232"
-contentUuid: "d19913ba-e478-5828-8cff-01e93691ed3b"
-diamondUuid: "6a1ea37e-8413-893f-b8b4-b074191dfd63"
-uuid: "33254232-f255-87c9-b122-b430fbba41f9"
-horo: 5
+coordinate: "iso/4217 · 1/base · f946d875"
+contentUuid: "28fb81bd-3535-51b1-b6a4-5cc5e970d556"
+diamondUuid: "6e42a589-df91-88d0-84ab-dfccc2d8b90a"
+uuid: "f946d875-ad22-844f-819a-2e9581ef5cbc"
+horo: 1
 typography:
   partition: iso
   bondDegree: 12
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "9d1b998d-b172-8319-b65f-dfc84a4b3836"
+  computationUuid: "7de81dba-056f-83dd-b890-fce3ea476747"
   stages:
     - stage: path
       stageUuid: "1ded1e96-a440-8951-bc68-f288d1882273"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "671df09a-3c14-8ecc-a3fa-39212ddfcb15"
     - stage: horo
-      stageUuid: "2c4f9f74-40d6-892b-b796-d2a207171818"
+      stageUuid: "f385df52-10de-8bbc-82d4-89a257980665"
     - stage: seal
       stageUuid: "4eae90c8-c393-8f52-90c8-2d40995217c4"
     - stage: uuid
-      stageUuid: "f2d04b3d-1380-8d8d-8d91-7d2bf45590d5"
+      stageUuid: "92df4a26-d72c-8bab-966f-1f822512c334"
 version: 2
 ---
 # ISO 4217 — Currency codes

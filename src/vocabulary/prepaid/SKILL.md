@@ -2,18 +2,18 @@
 name: prepaid
 description: "Use when reasoning about prepaid — Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period"
 atomPath: "vocabulary/prepaid"
-coordinate: "vocabulary/prepaid · 1/base · 06cd26f8"
-contentUuid: "056cfcd2-9ae4-50f1-a9d1-fb37b8107689"
-diamondUuid: "775ee3f7-5617-898a-a045-7f6250774c2f"
-uuid: "06cd26f8-01d4-89d4-8760-ed350a574abb"
-horo: 1
+coordinate: "vocabulary/prepaid · 5/round · e3b32c56"
+contentUuid: "802465b3-6f0f-5ec6-89df-e871902585fc"
+diamondUuid: "ba7d970c-1da1-85a9-b72e-1eeaa93b41b7"
+uuid: "e3b32c56-bf84-8ac3-8afd-f045229fcd79"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 28
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fe5b89ab-584b-8b45-9946-0387f4342858"
+  computationUuid: "ea04016f-82bb-8d64-8547-a6af627e960c"
   stages:
     - stage: path
       stageUuid: "8b909b3a-bc7f-8339-8155-7a1f50eb7b8a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "aedf76c3-1015-82a3-b4e3-8ce0b4a3af1d"
     - stage: horo
-      stageUuid: "53236847-7048-860d-a3d1-8d290008dbe1"
+      stageUuid: "8c643b91-97d7-8bbf-9d40-f9edd7c383de"
     - stage: seal
       stageUuid: "04b25a46-3e5e-8561-bcaf-e1ef8f77c3cb"
     - stage: uuid
-      stageUuid: "79b185c5-7606-8d03-9f89-cdc5d119e25e"
+      stageUuid: "c2845fd2-e432-856d-ac4e-961193117070"
 version: 2
 ---
 # prepaid

@@ -2,10 +2,10 @@
 name: sections
 description: "Use when reasoning about sections as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sections
-coordinate: "sections · 7/descent · ab43627f"
-contentUuid: "ac2b41ee-05a7-5cbb-8098-91d22784b5b8"
-diamondUuid: "6e7e2efa-773b-85e7-bfb8-340a6153e2a6"
-uuid: "ab43627f-1554-85ad-a421-d9a8fd8dfabe"
+coordinate: "sections · 7/descent · fcbbcaf8"
+contentUuid: "67f7ae19-8029-5793-be48-ec86ce3c8e32"
+diamondUuid: "3fc4ec66-071f-861a-8611-c0a9c22715e0"
+uuid: "fcbbcaf8-51cd-853f-9988-c38e603aff22"
 horo: 7
 typography:
   partition: sections
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5b3d85fe-f882-81b1-b87f-4d8d30e891d6"
+  computationUuid: "f32a6008-e784-82c8-a844-8d96305f7782"
   stages:
     - stage: path
       stageUuid: "b5f6d73e-9994-87f6-aa94-1eb5ceaafb6f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5bbd9d66-cd41-8d95-9f23-e5f2147e922a"
     - stage: horo
-      stageUuid: "f28bd4d3-d937-80d1-9b21-b936bdff876d"
+      stageUuid: "0a894167-b10d-8a0f-8a79-c4856ee2b8f5"
     - stage: seal
       stageUuid: "67434ed7-84ab-8cca-af66-a8796b67b88e"
     - stage: uuid
-      stageUuid: "e983c1a6-9c4b-8f4b-9c04-e49ad18a193e"
+      stageUuid: "79cd2fd9-983b-87d9-8a22-55863bb7a83b"
 version: 2
 ---
 # sections

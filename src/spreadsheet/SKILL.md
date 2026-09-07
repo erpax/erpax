@@ -2,11 +2,11 @@
 name: spreadsheet
 description: "Use when reasoning about spreadsheet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: spreadsheet
-coordinate: "spreadsheet · 4/weave · 263d45dd"
-contentUuid: "076f6450-a8d3-5ef5-9692-c282e6735e78"
-diamondUuid: "fa009330-0c1b-8111-b682-c9ed3c3c0664"
-uuid: "263d45dd-2cde-8fb4-9d81-ec45065daee0"
-horo: 4
+coordinate: "spreadsheet · 7/descent · 7ba3deae"
+contentUuid: "5e56358b-3879-5e2a-b5fd-9db70c54e698"
+diamondUuid: "211cb0d5-ca1d-82b8-88d3-36a21c72b1a8"
+uuid: "7ba3deae-e5b4-8c00-9564-588d2a8fea54"
+horo: 7
 typography:
   partition: spreadsheet
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "09804b3d-48a9-8657-8cc9-0e4e6f470cc8"
+  computationUuid: "9fa008c1-c70f-84df-b6a3-43c5f3765616"
   stages:
     - stage: path
       stageUuid: "7bef9a06-5648-8894-90c1-3e75c754953c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ec5ebbca-ec3e-823e-b12f-e417fe4f442e"
     - stage: horo
-      stageUuid: "ae008c27-f1ec-8b3b-9ecd-cab5fddb8209"
+      stageUuid: "645fef98-7e3b-875f-9206-d2372ca96ef1"
     - stage: seal
       stageUuid: "73ffb0ae-5f0c-82db-84a0-80ecf17ec501"
     - stage: uuid
-      stageUuid: "0da0e749-d050-88df-a30d-b9f0a1547f8d"
+      stageUuid: "8d75c739-f0bf-8fd3-9404-99c56d164b16"
 version: 2
 ---
 # spreadsheet

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "account",
-    "uuid": "2e359712-6bc2-87d3-a83d-73f8695653f5",
+    "uuid": "d51b9ef9-3802-86de-8d48-28e068b66f44",
     "words": [
       "account"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom.",
-    "uuid": "19bbd05b-7256-89d8-889a-332e9ea3b07a",
+    "uuid": "304ac845-c28d-8eaf-98aa-93ff16e938d5",
     "words": [
       "use",
       "when",

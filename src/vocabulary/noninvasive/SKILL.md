@@ -2,11 +2,11 @@
 name: noninvasive
 description: "Use when reasoning about noninvasive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/noninvasive"
-coordinate: "vocabulary/noninvasive · 1/base · 82acdbf7"
-contentUuid: "19fa76a4-02dd-576d-81c3-4f23d7e1a80e"
-diamondUuid: "bf0fec81-149c-88d4-a4a2-2408b5820e6c"
-uuid: "82acdbf7-5909-8a25-95be-8afd6dec37f7"
-horo: 1
+coordinate: "vocabulary/noninvasive · 7/descent · 9309c3eb"
+contentUuid: "1de0d7f2-1e78-5a93-88db-62e97de79fad"
+diamondUuid: "bf4f00d0-eabb-8cf1-86a4-2d34003f18b7"
+uuid: "9309c3eb-8cb7-89d8-a076-67c93f33cff5"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "98df9111-4ecb-8e17-bda4-c0c0b94098df"
+  computationUuid: "df725407-a469-8b2c-9e81-d1d2d024cb3b"
   stages:
     - stage: path
       stageUuid: "ff988a31-dde4-87ac-9199-f05d8d20a56d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e14429d9-9db9-86b9-beb2-722236fc495a"
     - stage: horo
-      stageUuid: "da83d7e1-1b0e-84c1-a44b-09a63f2d4d68"
+      stageUuid: "b823302a-a09e-8f20-9645-1baeac0b47c3"
     - stage: seal
       stageUuid: "396155e8-03be-8c59-9cae-13f4b877f8f5"
     - stage: uuid
-      stageUuid: "dd4cd16b-dea2-81f9-add2-c633bfee5e8b"
+      stageUuid: "615e610c-3638-81f2-86b6-724820c215b9"
 version: 2
 ---
 # noninvasive

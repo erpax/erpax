@@ -2,11 +2,11 @@
 name: engineering
 description: "Use when an engineering standard (ISO/IEC 25010 quality model) must move from cited to enforced — maps each quality concern to the erpax gate that enforces it, and names the cited-but-ungated concerns as the solutions to reverse-engineer next."
 atomPath: engineering
-coordinate: "engineering · 1/base · dbbc781e"
-contentUuid: "caa76ea3-f53a-526f-a9b3-7b5a9359a31b"
-diamondUuid: "ba6f0e82-1108-8b51-a0ca-388c2c3e230f"
-uuid: "dbbc781e-9ab9-8abe-8cb8-eb890f8ce1dc"
-horo: 1
+coordinate: "engineering · 2/share · 6fb3d9b2"
+contentUuid: "c502a3a5-e346-53de-84e7-49297f0630e4"
+diamondUuid: "281a0785-5264-8fed-9a12-9c95c767d838"
+uuid: "6fb3d9b2-1ef1-83ee-baa1-4eb8773c0735"
+horo: 2
 typography:
   partition: engineering
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5 — product quality model (functional suitability … maintainability)"
 bindings: []
 signatures:
-  computationUuid: "75dcfd5d-bbdd-8e72-ba49-9cb397f7a49f"
+  computationUuid: "0a896f21-bf3e-805f-b6e3-696527f936c6"
   stages:
     - stage: path
       stageUuid: "95807699-b9b4-8136-b8f6-132233e1c55d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e442d965-f220-886c-a479-1b634244ea44"
     - stage: horo
-      stageUuid: "1d98cdd4-9d7e-8043-86ce-a812d4e5756e"
+      stageUuid: "9b599882-3f9b-8edc-9817-06a5f7a4b49b"
     - stage: seal
       stageUuid: "6d10faea-e4f7-8985-a9db-cf1037b733bb"
     - stage: uuid
-      stageUuid: "af1b65d2-c1a8-877c-a2b3-df34f4111370"
+      stageUuid: "a031cbdc-4698-899c-b9ae-31353372b898"
 version: 2
 ---
 # engineering — reverse-engineer the standards into the gates that enforce them

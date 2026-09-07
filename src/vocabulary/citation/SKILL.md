@@ -2,11 +2,11 @@
 name: citation
 description: "Use when reasoning about citation — A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
 atomPath: "vocabulary/citation"
-coordinate: "vocabulary/citation · 8/crest · 16c32e81"
-contentUuid: "8ad84832-47ef-53e5-9aba-b5dbe14f0252"
-diamondUuid: "42933047-962c-8f9b-b979-1b034a975c30"
-uuid: "16c32e81-47af-8252-83f5-fa0c569d8604"
-horo: 8
+coordinate: "vocabulary/citation · 4/weave · 6fd455fd"
+contentUuid: "2cebbd48-3cbe-507b-bbb8-b43f68e654a6"
+diamondUuid: "1c5e12ad-08d9-8e85-8b5a-9416eeaf269e"
+uuid: "6fd455fd-f6de-8449-83bb-78988ac4d41c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e1cd8012-f443-8e87-978f-bcc793b18380"
+  computationUuid: "4dcc1c32-7f87-87cc-8ba1-ab9563a7a020"
   stages:
     - stage: path
       stageUuid: "fad45c2c-96ac-82da-aa1f-c7c37af22c70"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc9082a5-15a0-8ee7-a702-12c2d5910ed3"
     - stage: horo
-      stageUuid: "f745791d-f47e-801e-87cf-55aa72cd733b"
+      stageUuid: "7b7ce1c7-3299-8978-af55-50dc7fd4e699"
     - stage: seal
       stageUuid: "059c8477-76b2-8fd4-84c6-5e2de33bb9db"
     - stage: uuid
-      stageUuid: "442aafe2-ba20-85fb-b718-d51cb4a4768c"
+      stageUuid: "a9a56f51-6f29-8d5b-8772-4874e2a87ce7"
 version: 2
 ---
 # citation

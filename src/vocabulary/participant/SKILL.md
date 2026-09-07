@@ -2,11 +2,11 @@
 name: participant
 description: "Use when reasoning about participant — Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*."
 atomPath: "vocabulary/participant"
-coordinate: "vocabulary/participant · 4/weave · b03088e2"
-contentUuid: "00f0a132-0644-5fb0-aa93-4d4bd65d565b"
-diamondUuid: "5c8f3d73-bee7-8c4e-b564-0fa6ffb8fe60"
-uuid: "b03088e2-1915-8c54-a656-acba32e0ef2d"
-horo: 4
+coordinate: "vocabulary/participant · 5/round · 52eff7d3"
+contentUuid: "8b9251b9-e260-50c0-bcd6-e2cb3673a11f"
+diamondUuid: "8253b8b1-49bd-8cbb-9e77-594a3a883dc3"
+uuid: "52eff7d3-ed7f-8787-a909-547288b674ce"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f3763836-0110-8811-96e4-0d89d26d0f6e"
+  computationUuid: "cf3b5436-84a5-8220-a946-119b435b5579"
   stages:
     - stage: path
       stageUuid: "ff904cc7-e9ee-889e-9bc2-1c413aed8526"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1b537842-35f3-84b7-9903-ec1178cec6be"
     - stage: horo
-      stageUuid: "e5f33d6a-14f9-8326-817c-64611137d5e6"
+      stageUuid: "a3535a69-a3d7-8d1b-af1f-36796f8c478a"
     - stage: seal
       stageUuid: "22da8782-425b-87a8-b3b7-5eef5c12b158"
     - stage: uuid
-      stageUuid: "f8ca867a-4d16-8e35-b693-b91c418282f9"
+      stageUuid: "bf63d5b4-975a-8c87-b051-779598942dc5"
 version: 2
 ---
 # participant

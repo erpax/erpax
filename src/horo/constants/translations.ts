@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "constants",
-    "uuid": "f93749eb-679f-81a9-bf3f-f990ef12ecdf",
+    "uuid": "2a55663a-6942-8082-91b2-7dbf8abde805",
     "words": [
       "constants"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when referencing the horo ring's static definition — the seven positions, measure names, type guards, and mathematical constants that define the state ring's fixed structure.",
-    "uuid": "79eeb76e-92da-8794-abdf-5761b43a8db6",
+    "uuid": "51563733-b2e1-8bd2-8206-2ef6986c3c9a",
     "words": [
       "use",
       "when",

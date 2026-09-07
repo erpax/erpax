@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "based",
-    "uuid": "10b4e305-36f5-8c66-9bbe-35eb2d77eef3",
+    "uuid": "d3c2e8b9-ba2f-849d-96ad-6767ae976994",
     "words": [
       "based"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about based — A resource from which this work is derived or from which it is a modification or adaptation.",
-    "uuid": "eb93a7c8-416f-8dc5-a62f-eb89f206e2b6",
+    "uuid": "1cf813a3-f5f8-8c8b-99e9-8f13b447c004",
     "words": [
       "use",
       "when",

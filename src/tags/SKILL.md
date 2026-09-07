@@ -2,11 +2,11 @@
 name: tags
 description: "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine."
 atomPath: tags
-coordinate: "tags · 1/base · 11ab6acf"
-contentUuid: "858d9f9e-0999-592d-af1f-e6a969f451e4"
-diamondUuid: "e40cb614-5e4e-8741-9dc2-c76ea48fed43"
-uuid: "11ab6acf-61e1-8c5e-8179-95f01ee311e2"
-horo: 1
+coordinate: "tags · 5/round · cff2d08f"
+contentUuid: "e77e41e0-f376-5e5d-ba1b-56d6510896d7"
+diamondUuid: "4e9bd0ff-0736-83b0-a376-60845c4a9b5f"
+uuid: "cff2d08f-683f-8bdb-90dd-900ad738013d"
+horo: 5
 typography:
   partition: tags
   bondDegree: 48
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "222b07b5-343a-809f-ac91-867d9c731b86"
+  computationUuid: "0c8682cb-837f-85da-b650-eae76393e646"
   stages:
     - stage: path
       stageUuid: "e95df052-9841-8ff0-8bc2-652b80f2398c"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "acef3454-eeed-86c4-8db4-e32cd9be5392"
     - stage: horo
-      stageUuid: "a7066e78-49c1-8b70-9ec4-abe76078987b"
+      stageUuid: "37ea6a18-c535-8bd6-aded-bec73298bdf2"
     - stage: seal
       stageUuid: "878fcf5a-870b-8e55-b6e6-0d80fc9fdbf4"
     - stage: uuid
-      stageUuid: "91ffccc1-e06a-8bd5-a56a-e2dbea4267fd"
+      stageUuid: "b1b027bd-f45c-8fb6-b5d8-aeadb99cb35c"
 version: 2
 ---
 # tags

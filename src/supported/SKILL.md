@@ -2,11 +2,11 @@
 name: supported
 description: "Use when reasoning about supported as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: supported
-coordinate: "supported · 7/descent · f5adc32a"
-contentUuid: "5041acd4-a534-5e63-a9d9-d4fddc4b3f2d"
-diamondUuid: "189c9618-ae19-83dd-984f-4c2ebc715c5c"
-uuid: "f5adc32a-a588-8f1d-b5e8-1c144fd740f1"
-horo: 7
+coordinate: "supported · 1/base · e784c8d4"
+contentUuid: "52d2cb73-331e-51c3-8d6b-679d03e0b730"
+diamondUuid: "a92c7127-44d2-8252-b6d5-9f4dc224771d"
+uuid: "e784c8d4-77b9-8026-9d9f-e26a911933ac"
+horo: 1
 typography:
   partition: supported
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "48dd757c-01c7-88a7-960e-64e88fd457d1"
+  computationUuid: "9d741980-cdc0-872f-b3a7-fc6b27766943"
   stages:
     - stage: path
       stageUuid: "cc59f964-8cbc-8987-b34c-2a4fb0439978"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d31cd8d0-57d2-8954-92fe-85c6d1dbc1d4"
     - stage: horo
-      stageUuid: "585d2d34-7264-8ac7-b70e-409b83bd01d2"
+      stageUuid: "8aa2bdb8-5a97-8706-ba0e-61cbc53466dd"
     - stage: seal
       stageUuid: "414871a8-d15d-81fc-af4d-4aa1761c1aee"
     - stage: uuid
-      stageUuid: "44269963-1da7-8e6b-9264-f5e452dd7d45"
+      stageUuid: "b701555c-8a4c-8321-8949-7dbbdacf50d3"
 version: 2
 ---
 # supported

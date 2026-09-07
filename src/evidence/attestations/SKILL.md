@@ -2,11 +2,11 @@
 name: attestations
 description: "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index."
 atomPath: "evidence/attestations"
-coordinate: "evidence/attestations · 1/base · f1db5aaa"
-contentUuid: "e15cbe5d-8dfd-5158-9d67-819f9127eec5"
-diamondUuid: "e8d94504-b145-8ea0-a866-1ebcb69cbae6"
-uuid: "f1db5aaa-c799-85ef-a725-2c64ec86ee2a"
-horo: 1
+coordinate: "evidence/attestations · 2/share · 1871674b"
+contentUuid: "c1df046f-c3fb-5125-8dc1-abe38c73c8f5"
+diamondUuid: "d86e5aff-4915-8ff1-a351-1d81fb50e474"
+uuid: "1871674b-3adf-89f5-81d2-6b0d03fc11fe"
+horo: 2
 typography:
   partition: evidence
   bondDegree: 30
@@ -39,7 +39,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "84f3c51f-d98a-8ae3-9711-3a9a02e21c77"
+  computationUuid: "eb2a172b-60d0-8f43-bb86-c5ffb0398e87"
   stages:
     - stage: path
       stageUuid: "43386994-5954-8894-b558-2260f4ccd0bf"
@@ -50,11 +50,11 @@ signatures:
     - stage: links
       stageUuid: "381cbbbd-e2b8-81a4-b808-d6315db084a3"
     - stage: horo
-      stageUuid: "8d712fd1-3941-8bc9-b0d7-97e352d1beae"
+      stageUuid: "bc9d3da2-0a21-8246-9c66-4bab3e8b07c4"
     - stage: seal
       stageUuid: "b7704ba9-8e21-81da-9621-ec7912b5db22"
     - stage: uuid
-      stageUuid: "eb99c483-64dd-89fa-8dcf-fa5c1bba9206"
+      stageUuid: "458720da-0754-8c84-ba7e-c0758c165a87"
 version: 2
 ---
 # evidence-attestations

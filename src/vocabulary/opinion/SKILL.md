@@ -2,11 +2,11 @@
 name: opinion
 description: "Use when reasoning about opinion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/opinion"
-coordinate: "vocabulary/opinion · 4/weave · 4b784303"
-contentUuid: "687fc377-804e-5c8f-b268-9fd029a877fc"
-diamondUuid: "d6c82a4e-e0a7-8a95-a002-bedd34afaf89"
-uuid: "4b784303-eb17-882a-8bf1-d4b30d789047"
-horo: 4
+coordinate: "vocabulary/opinion · 8/crest · 08d97ee2"
+contentUuid: "03a8aeb7-cebb-5212-8e5f-da8754ffd266"
+diamondUuid: "0d8e4bbf-c143-802a-b478-77f64c393aaa"
+uuid: "08d97ee2-30f6-8e08-8935-74172d460e18"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8f89b261-845a-89b2-af12-60ad00e51eaf"
+  computationUuid: "94808496-ea1d-8843-96da-8cbdea1f6f9a"
   stages:
     - stage: path
       stageUuid: "9b29b3e9-9895-8df6-b31b-8d2bd17a4f4d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8258af35-e2b8-8c4c-a068-24304f67cf15"
     - stage: horo
-      stageUuid: "9a20cb15-7f5f-80c2-8a6a-7ba6f31db6c1"
+      stageUuid: "737c5836-b48d-837e-9399-e8606fa3676e"
     - stage: seal
       stageUuid: "12300071-7d23-80d0-9613-88d68d12d674"
     - stage: uuid
-      stageUuid: "22387b97-08d2-8f07-a56c-d0cbbc2ab6ab"
+      stageUuid: "ec71e5f6-f0b1-8bcd-9867-a5b14ac4bb06"
 version: 2
 ---
 # opinion

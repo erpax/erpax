@@ -2,11 +2,11 @@
 name: contact
 description: "Use when reasoning about contact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/contact"
-coordinate: "vocabulary/contact · 4/weave · e4fd6230"
-contentUuid: "efe64017-69e2-5e64-b28c-b240630cebd2"
-diamondUuid: "3e7525fc-0bfb-8c38-afda-0374175cc941"
-uuid: "e4fd6230-a07c-8df0-b348-208d75c159ad"
-horo: 4
+coordinate: "vocabulary/contact · 2/share · 20c4a4b5"
+contentUuid: "709e46ce-cf65-57bb-a922-2fc59dc89764"
+diamondUuid: "ff2d31bf-79dd-8d26-a8f3-4e1b16cc0acd"
+uuid: "20c4a4b5-f186-8bfc-9611-4af049f6c18d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 31
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "704f6a3c-dfd3-823c-9add-1fdd8a3f15f4"
+  computationUuid: "342eb4b0-e44b-80c1-a5ee-0a53f1235b72"
   stages:
     - stage: path
       stageUuid: "8b0188ab-7b69-860f-944d-934e3e37d624"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4f79c8d5-b04e-8e7c-9f76-712a9544db0c"
     - stage: horo
-      stageUuid: "196cbbea-7c84-8aee-8910-7561bf62d9a2"
+      stageUuid: "fee002cf-8b71-8c5d-8e27-c35229eca0f0"
     - stage: seal
       stageUuid: "f8181365-9054-8e12-8ccd-f7eed0bbccc4"
     - stage: uuid
-      stageUuid: "2eb8fe59-2042-8e9e-95c9-267b994a420e"
+      stageUuid: "1c1ebf0f-9c14-8285-80cc-d282721cfacd"
 version: 2
 ---
 # contact

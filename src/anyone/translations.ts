@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "anyone",
-    "uuid": "5b2b2df3-0d5f-8dbb-9d97-0afdd4c4715d",
+    "uuid": "edc350ee-9737-8320-87c2-6267c4a160f2",
     "words": [
       "anyone"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when granting deliberate public/unauthenticated read on a Payload collection or field — the access predicate that always grants, documenting the intentional public-read decision as part of the access-control regime.",
-    "uuid": "83aa8e72-7261-8925-af82-367ffa156075",
+    "uuid": "7babeee3-b5c7-8819-bde6-00f0b93aa32f",
     "words": [
       "use",
       "when",

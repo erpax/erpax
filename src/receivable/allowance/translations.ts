@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "allowance",
-    "uuid": "49574e2a-c3e2-8baf-ad1e-a27eb7a75d09",
+    "uuid": "3e03fbd5-3b4e-853f-8778-5a2613bd3bc8",
     "words": [
       "allowance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about allowance — The allowance for doubtful accounts as an IFRS 9 §5.5 expected-credit-loss estimate driven by the aging buckets: each bucket carries a loss rate, and the allowance is their…",
-    "uuid": "21c4ca70-c58c-8c49-a742-f18d93fb104b",
+    "uuid": "5da30aaf-0ad4-818c-bc38-a4aae984fbdf",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "yield",
-    "uuid": "00f9eaf7-5687-8e9f-be92-fbe36808fdf9",
+    "uuid": "8569f69a-0658-88af-a7b5-da1ea294044b",
     "words": [
       "yield"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a bound resource is converted to output at a realized rate — crop yield (output per unit land: lbs/acre, kg/decare) and its inverse, the land a demanded quantity requires. Yield is the bidirectional conversion factor between a resource and its product (area × yield = output; output ÷ yield = area); inverted through unit weight it gives row-length per saleable unit — the number that turns a demand plan into a planting plan.",
-    "uuid": "f28ddd19-f606-8a8f-bd18-e38c4d184712",
+    "uuid": "2335f273-f14f-87f8-b2c3-ba6176c3d633",
     "words": [
       "use",
       "when",

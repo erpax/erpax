@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "development",
-    "uuid": "6426ce22-f023-8459-9f51-3d572935efcd",
+    "uuid": "cbe6f455-cb06-8f1e-8133-1373b1f319f1",
     "words": [
       "development"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when planning what to build next — a feasibility-ranked roadmap of capabilities driven by the self-building loop; nextMove picks the highest-feasibility development for the society to advance.",
-    "uuid": "868bbf65-9352-8563-a921-ef73c36d7a0a",
+    "uuid": "036f67af-1ce9-83f8-ad1d-87481f82dc69",
     "words": [
       "use",
       "when",

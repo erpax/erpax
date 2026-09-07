@@ -2,11 +2,11 @@
 name: checkin
 description: "Use when reasoning about checkin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/checkin"
-coordinate: "vocabulary/checkin · 4/weave · adfa16d3"
-contentUuid: "c7244a48-55c0-5e75-9f67-699eb7ce3d5e"
-diamondUuid: "7428dbd0-7307-87de-a7fe-a247d073f327"
-uuid: "adfa16d3-609f-8dc9-a30a-e3ad6b357151"
-horo: 4
+coordinate: "vocabulary/checkin · 2/share · 18004000"
+contentUuid: "f44fa071-501f-55dc-83ed-537b18080092"
+diamondUuid: "80044484-a1db-82ca-8ecb-71bf35435802"
+uuid: "18004000-7a8d-85a5-8a9a-5349461f86f1"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fe60cc8b-a169-84d9-9369-c7ed07eff956"
+  computationUuid: "0ba2ce0c-5b39-804b-8be8-8c589b5e3924"
   stages:
     - stage: path
       stageUuid: "02bde80c-de43-83d1-8e2d-c4beef40b74d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4873e0c3-db77-8d36-8516-cb86b5232d81"
     - stage: horo
-      stageUuid: "bcaedd50-6dc7-850e-a04c-36689c0bcab9"
+      stageUuid: "dd6a6b06-ff42-8840-8bab-3d14305eeadc"
     - stage: seal
       stageUuid: "ce34050b-f642-8c38-ade6-5e35c286ecca"
     - stage: uuid
-      stageUuid: "12c08fe9-e46a-8d86-8b51-4ce5e1563961"
+      stageUuid: "ea31855d-4c2d-8888-8dc4-09371f3ce435"
 version: 2
 ---
 # checkin

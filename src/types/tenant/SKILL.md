@@ -2,11 +2,11 @@
 name: tenant
 description: "Use when reasoning about tenant — carries what differs between instances: , the it reports under, and its . The request types — create, update, batch — are the only shapes the management API accepts."
 atomPath: "types/tenant"
-coordinate: "types/tenant · 7/descent · a620fe45"
-contentUuid: "78e23144-cdbc-5be5-9164-f117e35df043"
-diamondUuid: "badd8ddc-5890-83f6-b4f6-14b514c3e36e"
-uuid: "a620fe45-d4f7-8e3d-9ea3-7a2fef5cc17b"
-horo: 7
+coordinate: "types/tenant · 2/share · f913d2c8"
+contentUuid: "034cbd1f-95ab-5a2f-a23a-506d9481ec67"
+diamondUuid: "c5547105-4ee6-807f-9f55-6b36fd91a79d"
+uuid: "f913d2c8-b173-87ec-ae12-5b43946dff00"
+horo: 2
 typography:
   partition: types
   bondDegree: 59
@@ -26,7 +26,7 @@ standards:
   - "US-GAAP ASC-105 generally-accepted-accounting-principles"
 bindings: []
 signatures:
-  computationUuid: "b160b956-cee1-82a0-910c-873a143c59e7"
+  computationUuid: "63a4d676-f0fa-84a6-a90e-5d9f30e64999"
   stages:
     - stage: path
       stageUuid: "797ea17b-b9ef-8935-b5e2-7bd64f77109a"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "d35ea554-f47c-8238-8b23-d9b3b0dfd6b9"
     - stage: horo
-      stageUuid: "4914cfc5-fb42-8469-91ca-436231527168"
+      stageUuid: "4352fe3d-af37-8f8b-86d9-cf3372956bc1"
     - stage: seal
       stageUuid: "5565db82-d0bb-8361-a0a6-3569152bd3f5"
     - stage: uuid
-      stageUuid: "d9fca66c-bd45-8182-8edb-51cc592215f4"
+      stageUuid: "9c366818-4032-8436-8d3d-02723f378584"
 version: 2
 ---
 # types/tenant — the configuration that makes one instance a distinct business

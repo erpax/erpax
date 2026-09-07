@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "box",
-    "uuid": "d34af53a-f49b-8105-bb7b-7bac8c6a85aa",
+    "uuid": "49c8faf7-af9b-8890-8893-c33404f4371e",
     "words": [
       "box"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about box — A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separa",
-    "uuid": "bbfae17c-5a9a-8b3e-83e3-d80802d37456",
+    "uuid": "7f135ed3-25f1-8f17-83a8-ecb765a19e05",
     "words": [
       "use",
       "when",

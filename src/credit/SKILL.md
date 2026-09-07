@@ -2,11 +2,11 @@
 name: credit
 description: "Use when reasoning about credit — A schema.org component word, collided out of schema.org compounds — fused from BankOrCreditUnion · CreditCard · LoanOrCredit · creditText (sti · collapse · merge)."
 atomPath: credit
-coordinate: "credit · 8/crest · 64c6163f"
-contentUuid: "a1c99381-9f79-524a-bd77-e3ac612a2831"
-diamondUuid: "9505e6f9-6e09-8cf5-b019-fee5cddecfd6"
-uuid: "64c6163f-ce78-8d01-b7ce-8444ff2867c7"
-horo: 8
+coordinate: "credit · 1/base · 096eec89"
+contentUuid: "b3771fff-f1b2-5b70-a10b-520fb3ba99ca"
+diamondUuid: "b69417a5-aaca-8652-8be5-9695dbcba22f"
+uuid: "096eec89-b7ee-8889-bd12-941d5c8a9165"
+horo: 1
 typography:
   partition: credit
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "324de098-b421-8f78-a6c0-27e474744b34"
+  computationUuid: "94bad7ce-7832-8f03-a3ad-1ee50d3364ff"
   stages:
     - stage: path
       stageUuid: "936ca247-cb16-89fb-a97f-5c78d68e7a01"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "17cb5db0-3725-8d42-8916-c6c427adaba4"
     - stage: horo
-      stageUuid: "b1ec710b-b0fd-85e6-b90a-2a4fc1f7c9f1"
+      stageUuid: "156e422b-8859-89bd-8c59-bcf2f67c9cff"
     - stage: seal
       stageUuid: "e69049da-a8ee-8884-bcb5-6743994eee19"
     - stage: uuid
-      stageUuid: "0d57bc79-8a8b-89c0-bc19-b682711e33d2"
+      stageUuid: "105a9374-6b58-89d8-9378-f2f33371099a"
 version: 2
 ---
 # credit

@@ -2,11 +2,11 @@
 name: concatenate
 description: "Use when building a completely autonomous workflow from command·question·answer atoms — the free monoid of steps, run as command then gate then computed-answer-on-NO until every gate is YES (zero entropy), no human in the loop."
 atomPath: "workflow/concatenate"
-coordinate: "workflow/concatenate · 4/weave · daec3393"
-contentUuid: "c54335ef-034a-5e1d-b607-d30eb4041f39"
-diamondUuid: "73ae95ab-40c5-841a-ab39-dce03494c6e4"
-uuid: "daec3393-67e3-81d5-b599-9099517ae9cb"
-horo: 4
+coordinate: "workflow/concatenate · 2/share · b1165554"
+contentUuid: "72674a2c-ae1f-5616-8ac8-a4a373df500e"
+diamondUuid: "7ff31f5c-2a74-86a6-bdb8-dd5a7d2e69d9"
+uuid: "b1165554-3b8a-8565-82e6-349a1490ca88"
+horo: 2
 typography:
   partition: workflow
   bondDegree: 74
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC-19510"
 bindings: []
 signatures:
-  computationUuid: "ef75e02f-e989-8701-88b9-d02d48c28a97"
+  computationUuid: "ad9ba90f-a498-8e60-b1c2-407705ac21a3"
   stages:
     - stage: path
       stageUuid: "d5367a3e-ff14-831b-a8e8-89b629ea2592"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "9b76ec74-712c-8c1e-bc59-3be6bea7ec2b"
     - stage: horo
-      stageUuid: "7da75b93-cb3d-8daf-b808-9965b35541d9"
+      stageUuid: "cf3bc084-2973-8c51-be3d-1ca7b8dfb09c"
     - stage: seal
       stageUuid: "049ca325-c4ba-8cec-b081-e199a8c02344"
     - stage: uuid
-      stageUuid: "23f4b1e0-59ec-8c2c-b42a-84cc4493c726"
+      stageUuid: "fa643652-218d-89c3-af15-3b04ab1e4e9a"
 version: 2
 ---
 # workflow/concatenate — command·question·answer → autonomous workflows

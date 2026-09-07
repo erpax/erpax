@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "asin",
-    "uuid": "75e7b7f4-1fab-8e92-8c71-91c22ac35785",
+    "uuid": "a6070e6a-ade4-8734-b422-3c6b726b1c79",
     "words": [
       "asin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about asin — An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazo",
-    "uuid": "9dc0e831-73a2-8c4a-ae85-70d41e56516c",
+    "uuid": "0da932c4-d052-8f54-aa41-8135acd7109f",
     "words": [
       "use",
       "when",

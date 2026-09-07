@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sikhism",
-    "uuid": "c349b4e0-6876-809d-b910-55f06c8bae7e",
+    "uuid": "d8b24d53-66bf-8fbd-adab-1095875cc88e",
     "words": [
       "sikhism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Sikhism as a diamond of invariant atoms — one being (ek onkar), the divine name remembered, honest work and sharing, grace and the merge with the One. Strip the Punjabi prefix and ik onkar, naam, shabad, mukti collapse to one, name, word, zeropoint — one content-uuid each.",
-    "uuid": "2e859395-69c8-83ed-a65f-8c1ddcb91e38",
+    "uuid": "3dd7a0fd-c42d-8f23-a9a6-4816ba16892b",
     "words": [
       "use",
       "when",

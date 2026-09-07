@@ -2,11 +2,11 @@
 name: prose
 description: "Use when checking that technical prose cites real code — a SKILL naming a function nothing defines is a citation leading nowhere, and it is worse than a dead path because it reads as true. Wired into confirm, it refuses the claim at the write, so an agent must edit CODE rather than write a sentence about code it has not written. Only SKILLs beside an index.ts are judged; a lexicon atom is prose by design. Run: tsx src/rules/prose/index.ts"
 atomPath: "rules/prose"
-coordinate: "rules/prose · 4/weave · 8622105d"
-contentUuid: "44ddb17b-1c51-5291-932d-4ecd307e4881"
-diamondUuid: "ac624fa0-aeab-8988-a183-3d88fc82242c"
-uuid: "8622105d-a7e9-85e6-b03f-0eeaad2b5207"
-horo: 4
+coordinate: "rules/prose · 5/round · 4a6fec5a"
+contentUuid: "bef54259-4271-50eb-a6cf-9b103b69056b"
+diamondUuid: "f8101828-aaed-8223-ae63-51ff66eb5697"
+uuid: "4a6fec5a-54ae-83c7-98a0-a1f0e4eb5266"
+horo: 5
 typography:
   partition: rules
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "ISO-19011:2018 §6.4 — audit evidence: the citation must lead to the evidence"
 bindings: []
 signatures:
-  computationUuid: "4c64b43b-0a1b-8906-bede-dad3e186693b"
+  computationUuid: "14671f2b-f163-8cf0-889f-7020aa8abbd6"
   stages:
     - stage: path
       stageUuid: "f8534db1-7562-8dbd-b805-382acad13b19"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f1fb843d-87d2-8a04-b418-1e2b597d26ce"
     - stage: horo
-      stageUuid: "23ddd92d-2dea-8374-86c5-9040d33f5f14"
+      stageUuid: "c78f84eb-c16e-8d40-909b-7b0ad722d283"
     - stage: seal
       stageUuid: "294186cc-53ce-8a34-8af7-0dc71da3824b"
     - stage: uuid
-      stageUuid: "dda63bbe-5974-8673-ab5b-0da2ee7a4c0b"
+      stageUuid: "2abded4d-9f59-827b-8745-8927874ee57d"
 version: 2
 ---
 # prose — write the code, or stop claiming it

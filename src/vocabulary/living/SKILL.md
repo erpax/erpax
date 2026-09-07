@@ -2,11 +2,11 @@
 name: living
 description: "Use when reasoning about living as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/living"
-coordinate: "vocabulary/living · 2/share · a57e221e"
-contentUuid: "78b28666-26da-5373-8acd-2b8233961c4e"
-diamondUuid: "58dc7cba-4fdd-8bf6-b883-e2a9b1a43d37"
-uuid: "a57e221e-4f31-8169-93f8-a75e45036107"
-horo: 2
+coordinate: "vocabulary/living · 4/weave · d726512c"
+contentUuid: "5c5ae93d-cbf1-5f0e-9850-37714d6b3dc6"
+diamondUuid: "53ee161c-e5e3-8a4b-9bdc-4c3365bfbb2e"
+uuid: "d726512c-1f23-8781-8e72-2f073e036d0a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8d3f4a00-ec64-8559-ac14-203d39b271ef"
+  computationUuid: "aecc5071-b70b-857a-b5f6-df246e4a2776"
   stages:
     - stage: path
       stageUuid: "d2a73cc1-3332-8cab-a054-45c978e6781c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc5cd4a8-dcc9-82bb-8ae0-bc978d639b3d"
     - stage: horo
-      stageUuid: "de3ef98b-acd5-8b0f-84eb-6074949ac1e5"
+      stageUuid: "89f05a21-edec-8f30-87b5-6152b8e86bb5"
     - stage: seal
       stageUuid: "342d8117-0eee-8417-8fa5-3a7a33ac5e4c"
     - stage: uuid
-      stageUuid: "f4be7754-645a-828c-bc25-76dc7b9afe53"
+      stageUuid: "1641c70d-a1a5-8960-a4c2-4ed123c5ba91"
 version: 2
 ---
 # living

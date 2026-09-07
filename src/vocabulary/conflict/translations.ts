@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conflict",
-    "uuid": "46cd1576-836f-8e3d-9393-d5e8fe09e843",
+    "uuid": "c4f9aaf2-72bb-8474-a4d4-87c8f0705be2",
     "words": [
       "conflict"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about conflict — Before a matter opens, the firm must prove there is no **conflict**: the proposed party (client) must not be adverse to a party the firm already serves. Strip the prefix and this i",
-    "uuid": "b378f586-f398-8716-82ab-cd14114f9302",
+    "uuid": "78f77970-175c-88fb-981c-527e4d005287",
     "words": [
       "use",
       "when",

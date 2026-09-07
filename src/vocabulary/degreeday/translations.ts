@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "degreeday",
-    "uuid": "c4158f5a-54f9-80e6-a16d-3c754e274631",
+    "uuid": "dac72c62-6fcf-87cc-a156-8996f96acf46",
     "words": [
       "degreeday"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when crop development is predicted from accumulated heat rather than the calendar — growing degree days (GDD = (Tmax+Tmin)/2 − Tbase, capped) measure the heat a crop banks toward maturity, so a warm spring advances harvest and a cool one delays it. The heat-unit clock that makes a fixed-week calendar drift; pairs with frost and evapotranspiration.",
-    "uuid": "8c984336-eb90-89dd-b1f6-53638bd3ba73",
+    "uuid": "259f8566-8d24-8a33-bea6-7544ce8b899f",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "provision",
-    "uuid": "67c285fa-583f-851d-abd6-37a3ebd7132d",
+    "uuid": "123e3709-e2b2-8c9a-a6bf-9977be8d3c5a",
     "words": [
       "provision"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37",
-    "uuid": "4006ef92-22c7-80d9-bc2f-ddea327d0749",
+    "uuid": "5c2e2145-2406-8db5-96e9-8cd48a268983",
     "words": [
       "use",
       "when",

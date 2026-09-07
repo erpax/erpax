@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sku",
-    "uuid": "7d1f6876-37ac-8a6a-8b63-47f160d285e1",
+    "uuid": "89321891-5582-89fe-beeb-32160201c834",
     "words": [
       "sku"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sku — The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
-    "uuid": "5270a58e-6b94-8ac5-834c-5b719de5256b",
+    "uuid": "d1524c36-c36f-8ce5-98a1-a43dd82a4acd",
     "words": [
       "use",
       "when",

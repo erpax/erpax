@@ -2,11 +2,11 @@
 name: passed
 description: "Use when reasoning about passed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/passed"
-coordinate: "vocabulary/passed · 1/base · 3bf850e3"
-contentUuid: "54781f1c-7e26-5adf-a6de-6fd89cb35277"
-diamondUuid: "2da9df9f-4d77-8512-a512-55fba507745f"
-uuid: "3bf850e3-e224-89ad-b122-1c557556b409"
-horo: 1
+coordinate: "vocabulary/passed · 7/descent · 60a933bf"
+contentUuid: "e4f5d5be-82e4-5424-8620-86d9345a1bb7"
+diamondUuid: "19319ac7-5c92-8acf-8a8d-6d6dc96fc8e9"
+uuid: "60a933bf-f0c6-830c-bb8b-9d58dcc7925a"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c2ecdc27-4d62-8215-bbd5-adbf51b386ae"
+  computationUuid: "ebccd62c-8839-85cd-b3b7-ddc35085f6f3"
   stages:
     - stage: path
       stageUuid: "a3da81cf-69f7-89b1-8f27-b5e3663d9bb7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3b36fe14-e076-8509-a434-22a30ec22ef3"
     - stage: horo
-      stageUuid: "a74ec897-99b4-8172-ae1d-d2bc85842387"
+      stageUuid: "d5bf87d1-a85a-8315-88df-70cdab3987b3"
     - stage: seal
       stageUuid: "7a61c9b4-df52-8c09-9785-402ad9f15ad9"
     - stage: uuid
-      stageUuid: "304c192e-2af6-86f4-b6f8-82be40a7cce8"
+      stageUuid: "248beb8e-d62e-8155-9ae7-8866efe5c0e8"
 version: 2
 ---
 # passed

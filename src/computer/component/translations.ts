@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "component",
-    "uuid": "52527e57-f990-832b-b6ce-6bc3938f36d1",
+    "uuid": "55d5707a-de54-8cda-afec-38843584b324",
     "words": [
       "component"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about component as a part of computer — pivot to canonical @/component; nested not duplicated.",
-    "uuid": "6305b0f5-7af3-855c-88f1-0614f35b0cba",
+    "uuid": "f1d23d72-a0f5-8b2c-80c6-b6fbd795e904",
     "words": [
       "use",
       "when",

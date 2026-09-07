@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nav",
-    "uuid": "3cbb830d-9bde-84d8-a851-455dc0ffd987",
+    "uuid": "ff1d59ff-2290-82fb-b9ca-3cc7c89f3901",
     "words": [
       "nav"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about nav — A magnifying glass is a picture. To a screen reader, a link containing only a picture has an accessible name of *the empty string* — announced as \\\"link\\\", with nothing to say where…",
-    "uuid": "eb3aefb5-8487-8339-a01e-553d18989b8d",
+    "uuid": "d043ccac-f201-88f1-8917-81321ab525ef",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: demand
 description: "Use when reasoning about demand — A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. Fo"
 atomPath: "vocabulary/demand"
-coordinate: "vocabulary/demand · 2/share · cd63ade7"
-contentUuid: "0ec6eef3-7f8d-57ea-89ff-a6ce48e979e4"
-diamondUuid: "bdf3c148-f77a-88ba-af66-bb52a6f36502"
-uuid: "cd63ade7-382b-8226-8e63-474753a97853"
+coordinate: "vocabulary/demand · 2/share · 9ecb804f"
+contentUuid: "f5b99c2a-d266-533e-829e-8366dea17f1c"
+diamondUuid: "a29bc2a1-bd84-8ffe-b67a-f661264ff916"
+uuid: "9ecb804f-13ce-873c-ad8a-6078536fcc92"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "49d12ece-9f92-8803-a90c-efafca5ffb12"
+  computationUuid: "ec4b91af-4890-8caf-9cc3-3c3de72c3d0f"
   stages:
     - stage: path
       stageUuid: "f6650339-3056-8b35-99ee-6a4246cc8ae2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7f7511a7-40de-8195-a53c-91d942dd7e43"
     - stage: horo
-      stageUuid: "05664aa6-9655-8f6b-8ae5-fb452e9e4027"
+      stageUuid: "e943ec26-685f-85a7-8cf8-ccf839c16cd2"
     - stage: seal
       stageUuid: "1c57f883-cb2d-8c2f-a94b-e1e7ae926d8b"
     - stage: uuid
-      stageUuid: "32ac7aa1-85ed-8d31-bd41-187655670d26"
+      stageUuid: "d162fa62-b184-85e9-8a8e-24e2e1023fb7"
 version: 2
 ---
 # demand

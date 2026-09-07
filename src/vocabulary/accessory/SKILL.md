@@ -2,11 +2,11 @@
 name: accessory
 description: "Use when reasoning about accessory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/accessory"
-coordinate: "vocabulary/accessory · 1/base · 1d91733c"
-contentUuid: "f895f3bf-d849-5bb7-89d8-f801f6a51571"
-diamondUuid: "3a38bc63-8da2-8a9e-b06b-b2de552b62b2"
-uuid: "1d91733c-a405-8ff8-b253-e57347a64087"
-horo: 1
+coordinate: "vocabulary/accessory · 7/descent · 46a6f250"
+contentUuid: "7bcf8c9b-9473-5b5e-b50f-9406b5896271"
+diamondUuid: "3b43f2bb-9748-8c6e-ab5d-7ec047ec0ad1"
+uuid: "46a6f250-d7c2-8a96-b8d8-0d0e8c662f13"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b968715a-9194-89b6-9a62-9396e019824d"
+  computationUuid: "1746dc8e-9eb9-81db-bb57-612d30bde0fe"
   stages:
     - stage: path
       stageUuid: "a925899e-37e9-8cc6-9fbd-34d60d1f1990"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63dfbee9-2f04-8a72-9159-0c3b5656855d"
     - stage: horo
-      stageUuid: "485ce25e-0464-8607-8b5a-d91998575308"
+      stageUuid: "d78649b7-1b87-8920-baf4-61b38962e30b"
     - stage: seal
       stageUuid: "af1f68c3-1ad3-828c-babc-4b9d5fccb015"
     - stage: uuid
-      stageUuid: "1a2fe7ac-f3b1-832c-a125-2c62243a0909"
+      stageUuid: "751e0693-0a87-8ad6-9032-0efa2f624aad"
 version: 2
 ---
 # accessory

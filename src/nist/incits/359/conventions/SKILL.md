@@ -2,11 +2,11 @@
 name: conventions
 description: "Use when reasoning about conventions — Unix-style **rwx** vocabulary aligned with how Payload enforces access: every check still runs through collection `access` and the auth stack — this file only names operations and optional bit patterns so requirements ('tenant group rw-, world r--') map cleanly to product language."
 atomPath: "nist/incits/359/conventions"
-coordinate: "nist/incits/359/conventions · 7/descent · 0690b207"
-contentUuid: "8c00cce9-15c6-55e2-af53-5f89c02b5da8"
-diamondUuid: "113d60eb-de7f-8cba-b249-8d593ab80fa7"
-uuid: "0690b207-4374-8e11-be02-4681ee28306e"
-horo: 7
+coordinate: "nist/incits/359/conventions · 1/base · 21113105"
+contentUuid: "8c92aa02-1597-51b9-bd66-98e48c5c5020"
+diamondUuid: "998e87f8-bfe4-89e2-b23a-a4c01dbede5d"
+uuid: "21113105-7670-83e1-bc8e-22f619af85d1"
+horo: 1
 typography:
   partition: nist
   bondDegree: 6
@@ -16,7 +16,7 @@ standards:
   - "POSIX-1.2017 §1.6.1.1 file-mode-bits naming-source"
 bindings: []
 signatures:
-  computationUuid: "2812ac4d-e087-8793-a207-fade769cf2f7"
+  computationUuid: "9ba68757-3d1f-8f36-a349-24d749e61095"
   stages:
     - stage: path
       stageUuid: "a5e14b57-6d46-8933-b1a6-01072928cd1a"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "d4567a32-a0f5-8836-b5a4-a220a0aaf297"
     - stage: horo
-      stageUuid: "112dd19c-9454-8d57-8aff-b496b0e60391"
+      stageUuid: "8a7cf7bd-f6be-86eb-977a-6b7257ee7d99"
     - stage: seal
       stageUuid: "74bb7fb8-1a34-8e78-b05c-ae3ed6837ea0"
     - stage: uuid
-      stageUuid: "cac48054-452e-8c36-a6b9-4dd956ff5355"
+      stageUuid: "6f38e6c1-d641-8194-a35c-c7a92abe8efc"
 version: 2
 ---
 # nist/incits/359/conventions

@@ -2,11 +2,11 @@
 name: sea
 description: "Use when reasoning about sea as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sea
-coordinate: "sea · 2/share · 062f42f9"
-contentUuid: "4a87c006-0a78-500b-ba2f-d62ff0787f64"
-diamondUuid: "ecc23361-415a-8460-9a92-3f65eeb796ce"
-uuid: "062f42f9-31ac-884c-96e0-2f1ee0a81e85"
-horo: 2
+coordinate: "sea · 1/base · 79104c34"
+contentUuid: "df5da9f2-59fd-5f55-9a0b-1e5e3a905ed7"
+diamondUuid: "c671d9a4-1c1c-8aea-82b1-975d5cfc4c11"
+uuid: "79104c34-84aa-8f9d-a262-904a195afdf3"
+horo: 1
 typography:
   partition: sea
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "19264a03-41ff-8dc5-9c63-0911db9ba895"
+  computationUuid: "3dc6ca2f-9362-8386-b377-7201a1882eb7"
   stages:
     - stage: path
       stageUuid: "83472638-113d-8237-8f34-f08b39aa638e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "43a7c8dd-eb4d-8714-a3d8-4249fe6aacff"
     - stage: horo
-      stageUuid: "52595913-15c9-8d83-be8c-19c41f2fdc9d"
+      stageUuid: "99a96ef3-c6ce-8d11-9116-a1e9bc790479"
     - stage: seal
       stageUuid: "25142c94-b859-8533-831a-ca718c2c7acd"
     - stage: uuid
-      stageUuid: "697c7dfb-5637-8cb0-9992-3986d4ed7a79"
+      stageUuid: "c41223ca-439e-8daa-92be-937fe46b3870"
 version: 2
 ---
 # sea

@@ -2,11 +2,11 @@
 name: hardcover
 description: "Use when reasoning about hardcover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hardcover"
-coordinate: "vocabulary/hardcover · 7/descent · eab5b18d"
-contentUuid: "fd598bec-dbc9-5ce0-9788-fde6685eaa0c"
-diamondUuid: "a397542d-3e28-8bde-b938-c277f3df1fc8"
-uuid: "eab5b18d-34f6-8bb2-94f4-e2ff02b357b3"
-horo: 7
+coordinate: "vocabulary/hardcover · 1/base · ade708ce"
+contentUuid: "281c4d6d-0b1e-5e5c-9b73-0068f57b6443"
+diamondUuid: "7758ecd6-b83d-83fd-ad33-a676d5b5d61d"
+uuid: "ade708ce-4889-87cc-b6c7-2b15f8216571"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d35c8e59-2e8c-8fe0-a2a1-f64788124834"
+  computationUuid: "7c05320f-a927-84d8-b854-0b33c4dab206"
   stages:
     - stage: path
       stageUuid: "262abf6e-a79d-852f-9fa9-f602c2e6d029"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "225700d0-5aa9-86b0-b39e-54559050227f"
     - stage: horo
-      stageUuid: "7c8c0ec9-6565-81d9-9ac0-1d3046e6ab2a"
+      stageUuid: "59fea7d7-95e8-8c71-97b2-658a20f6e221"
     - stage: seal
       stageUuid: "3b30d870-d511-8dba-a0eb-768a3e624ba6"
     - stage: uuid
-      stageUuid: "6762a85a-69fd-8543-a576-27c4d2f72a2d"
+      stageUuid: "3ab3b4e3-66d6-8599-8169-007bd719eb3a"
 version: 2
 ---
 # hardcover

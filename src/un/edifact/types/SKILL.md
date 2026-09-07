@@ -2,11 +2,11 @@
 name: types
 description: "Use when reasoning about types — Canonical UN/EDIFACT message types — semantic structure only."
 atomPath: "un/edifact/types"
-coordinate: "un/edifact/types · 5/round · 2e651178"
-contentUuid: "d7fb2c1a-76ec-5acb-a143-e1841374643b"
-diamondUuid: "e93896a2-187b-845d-a05e-aaae8d2f4938"
-uuid: "2e651178-2fa8-8195-be48-686598abd2a6"
-horo: 5
+coordinate: "un/edifact/types · 7/descent · 6701d905"
+contentUuid: "3d091ca8-1b9f-55e7-8ef7-073ca8d3cae7"
+diamondUuid: "de9fa1c5-8238-85f9-8626-313b3375945c"
+uuid: "6701d905-7896-85ed-a53e-1b9f41a70a87"
+horo: 7
 typography:
   partition: un
   bondDegree: 85
@@ -36,7 +36,7 @@ standards:
   - "UN-EDIFACT message-types"
 bindings: []
 signatures:
-  computationUuid: "b0d21a82-6982-841b-a805-7873042e97ca"
+  computationUuid: "a7c8a70c-8012-8a0f-bc4f-68477ed699d4"
   stages:
     - stage: path
       stageUuid: "10b076ae-21b4-8214-8d7c-aec4c9a59fa2"
@@ -47,11 +47,11 @@ signatures:
     - stage: links
       stageUuid: "2e856fd6-893e-8366-848b-d4f042ae349d"
     - stage: horo
-      stageUuid: "e9dd72e8-f6fa-8b53-aa2d-b9bda774b147"
+      stageUuid: "bb313c5d-d770-8f5f-98ee-c7138fb610db"
     - stage: seal
       stageUuid: "12411cb2-6550-8cdf-a679-2394c253f00c"
     - stage: uuid
-      stageUuid: "c572f9de-3a4d-8d7a-a1f5-99c1a77cd4eb"
+      stageUuid: "8f0fb376-b4d9-8372-ae2e-84879b5e29b0"
 version: 2
 ---
 # un/edifact/types

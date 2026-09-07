@@ -2,18 +2,18 @@
 name: calculator
 description: "Use when taking the arithmetic mean of a number array anywhere in the corpus — the zero-guarded collapse of the repeated `sum/length` reduce across receivables, payables, and multi-currency analytics, where an empty array yields 0 (never NaN)."
 atomPath: "average/calculator"
-coordinate: "average/calculator · 7/descent · 102f947a"
-contentUuid: "6fa934fe-91bc-57e4-b0a9-04f99e628ff2"
-diamondUuid: "d1059e05-c084-8418-8249-052f4a5e85c8"
-uuid: "102f947a-9f09-831d-b916-f7ba49d488c4"
-horo: 7
+coordinate: "average/calculator · 5/round · 5760cbd3"
+contentUuid: "87f368f2-60a7-58d4-8cf0-5d62a37174d2"
+diamondUuid: "c1c2114e-1a9b-801e-aace-7e7eadbfe447"
+uuid: "5760cbd3-2771-8349-bd12-95c8477e47b2"
+horo: 5
 typography:
   partition: average
   bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0c58e306-d0e0-8b2a-bb32-00a6d378da2d"
+  computationUuid: "cbef68eb-cf2f-889d-bf92-bc6f35a0d0c4"
   stages:
     - stage: path
       stageUuid: "9186c0ad-5e86-86aa-92c7-2d2e72b9a879"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0d7c30cc-2fc0-8ab4-86d7-9b35068a8015"
     - stage: horo
-      stageUuid: "3ead8446-a578-853e-83c9-2aaeb86382f2"
+      stageUuid: "fe34598d-537d-8f72-b994-b93c275cdf51"
     - stage: seal
       stageUuid: "05c242be-bee4-83f0-960f-5baba74b3e04"
     - stage: uuid
-      stageUuid: "28645288-3358-8e51-9569-2795b9912287"
+      stageUuid: "60c63a82-b4d5-84d4-b615-3dcd3817459d"
 version: 2
 ---
 # average/calculator — the arithmetic-mean collapse

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lyricist",
-    "uuid": "f5659e75-6e86-85ce-b423-3cbe3d90f87a",
+    "uuid": "931a9c4e-8293-8f65-adbe-3b21152f3829",
     "words": [
       "lyricist"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lyricist — The person who wrote the words.",
-    "uuid": "bde74925-3841-8510-bf47-9cac6eae709a",
+    "uuid": "30796fdd-a17a-8ad3-a8a2-c96e9203cc0b",
     "words": [
       "use",
       "when",

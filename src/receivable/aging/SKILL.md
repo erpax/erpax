@@ -2,10 +2,10 @@
 name: aging
 description: "Use when reasoning about aging — Wraps party/aging with A/R-shaped output — , . The bucket math is identical to payable/aging; only the naming differs, and the two stay separate so each side names its own…"
 atomPath: "receivable/aging"
-coordinate: "receivable/aging · 1/base · f64f0330"
-contentUuid: "db0b18ff-5307-5605-a174-b44665e33a97"
-diamondUuid: "199f3f73-5c5d-8634-be58-da0d44fd4617"
-uuid: "f64f0330-528e-8933-8584-e3503c70f2a4"
+coordinate: "receivable/aging · 1/base · 7a5e4eb4"
+contentUuid: "8d67b4a5-85c5-5175-a20d-0d8fae789647"
+diamondUuid: "a7c02ada-2baa-8053-8ee6-255a4891e153"
+uuid: "7a5e4eb4-2234-810f-ae00-a54141bd81ed"
 horo: 1
 typography:
   partition: receivable
@@ -17,7 +17,7 @@ standards:
   - "US-GAAP ASC-326 credit-losses-cecl"
 bindings: []
 signatures:
-  computationUuid: "315fe999-34e7-8815-b299-2f2587a0be87"
+  computationUuid: "f114fbd3-55c3-8b5c-91be-5e005ce09278"
   stages:
     - stage: path
       stageUuid: "0a738fd1-139a-8c6d-857d-390badf0b065"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "2ce0062e-2575-86db-966c-91dd05270928"
     - stage: horo
-      stageUuid: "984db96d-fd7e-8388-8018-faf7959f4fc8"
+      stageUuid: "a048e096-e552-8c90-bb28-c1e0c5e6e932"
     - stage: seal
       stageUuid: "5ab51680-ed72-819b-ade3-cb20d7b7ed56"
     - stage: uuid
-      stageUuid: "1e97aef2-1a1f-81b3-9c95-50d6eb906bc3"
+      stageUuid: "d81f98fc-f1dc-8834-a0f4-606136d6019d"
 version: 2
 ---
 # receivable/aging — the A/R side of one bucket calculation

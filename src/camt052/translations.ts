@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "camt052",
-    "uuid": "0994d78b-2903-84b5-8b02-465ee76d6440",
+    "uuid": "e2efdace-e6a9-8287-8e74-7ae9419955c9",
     "words": [
       "camt052"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing ISO 20022 camt.052 BankToCustomerAccountReport — intraday account report (Rpt), invert dual of camt.053 statement.",
-    "uuid": "cadf5bcd-8614-86de-b2d5-877c4ca4cfd0",
+    "uuid": "e7f03e76-5fee-820e-9dc7-3b3545907208",
     "words": [
       "use",
       "when",

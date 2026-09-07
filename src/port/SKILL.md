@@ -2,10 +2,10 @@
 name: port
 description: "Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone."
 atomPath: port
-coordinate: "port · 5/round · 2a8aa68a"
-contentUuid: "12270def-0125-5e4f-90af-e763c8ce482f"
-diamondUuid: "4a74e653-ff74-8985-883a-e5f0f26ffa14"
-uuid: "2a8aa68a-5a73-83b0-ad7d-fdc93424c5de"
+coordinate: "port · 5/round · 5aeeb34f"
+contentUuid: "b4dcf369-347a-5c41-a09a-91d21a05f6b9"
+diamondUuid: "02b462d8-6257-8b49-bdfc-206b5c1cdf48"
+uuid: "5aeeb34f-6f66-8a5a-8fdc-637575bee7ab"
 horo: 5
 typography:
   partition: port
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6220eee5-0d3e-8f94-a8df-237a65d7115d"
+  computationUuid: "5bf2a8b4-d9b3-899d-b280-4b38cde90e64"
   stages:
     - stage: path
       stageUuid: "6106f228-2108-8091-a6d5-498dae0bf453"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b9839360-5346-8ad5-a1d7-1ec209a9709f"
     - stage: horo
-      stageUuid: "b3875ea8-1c71-800b-9e3e-5c6a3c3039b2"
+      stageUuid: "7033d629-b07b-8118-b568-d670d842c26b"
     - stage: seal
       stageUuid: "d1d2bef0-baed-85a1-b0c8-6a518a1d5d9b"
     - stage: uuid
-      stageUuid: "89f1083b-d32e-8e56-b898-6a1621db1d1d"
+      stageUuid: "ea3f8982-20c6-8a6d-bb00-142a59a29aaf"
 version: 2
 ---
 # port — Rails/ActiveAdmin → Payload/Next (same shape, different host)

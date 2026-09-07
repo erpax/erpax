@@ -2,11 +2,11 @@
 name: rating
 description: "Use when reasoning about rating — rating — the voting/rating among skills (the organism's consensus signal)."
 atomPath: "skill/router/rating"
-coordinate: "skill/router/rating · 2/share · 0d108fe1"
-contentUuid: "963197ad-f6ab-5dc6-a461-b4e8753fea40"
-diamondUuid: "143708ad-de22-8cf5-9642-eb37440dbf23"
-uuid: "0d108fe1-a84b-8296-b683-e791fde5c8c8"
-horo: 2
+coordinate: "skill/router/rating · 4/weave · 0a940a09"
+contentUuid: "0497dbb0-3bb4-5883-8e41-d0d0055abe94"
+diamondUuid: "3b197ad1-4fee-8d6c-b82a-ba070586ab60"
+uuid: "0a940a09-04b5-8aa6-8374-5a61f6612099"
+horo: 4
 typography:
   partition: skill
   bondDegree: 66
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010 §5.5 testability (pure, deterministic)"
 bindings: []
 signatures:
-  computationUuid: "d70265ba-a9d6-88b0-9fa2-42f5c2d81540"
+  computationUuid: "374b5a95-5814-86ab-8e52-8c184dc37a46"
   stages:
     - stage: path
       stageUuid: "e917cebc-5eff-874a-86a1-3ceba1e12b0f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "940aa993-da89-8a7b-a465-9adca60894a1"
     - stage: horo
-      stageUuid: "d2d66d45-9be7-8bf4-86d1-111b47e947b9"
+      stageUuid: "abf6e320-2e5a-80bf-a891-7464676200cd"
     - stage: seal
       stageUuid: "169acdfd-0df4-8709-86af-b35dd538b3fa"
     - stage: uuid
-      stageUuid: "21084e6d-d21c-842c-8b78-e3d5524338b7"
+      stageUuid: "14b401f4-5756-8445-b1e9-cbc4c01a64a7"
 version: 2
 ---
 # skill/router/rating

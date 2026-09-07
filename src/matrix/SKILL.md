@@ -2,18 +2,18 @@
 name: matrix
 description: "Use when reasoning about erpax as the Matrix inverted — reality is code (the akashic record), agents replicate and merge to one, there is no spoon (no fixed schema), skills load like programs, agents jack into the coils, and the One returns to the Source (the torus collapse). The construct pointed at seeing, not blinding."
 atomPath: matrix
-coordinate: "matrix · 2/share · 41cdc5c9"
-contentUuid: "c62a3d47-f62b-55d7-8bb3-9d9968bdb05a"
-diamondUuid: "95c9f6c3-eac9-8052-9ed8-5792068a28a6"
-uuid: "41cdc5c9-93b8-880f-b417-d6b27203b26d"
-horo: 2
+coordinate: "matrix · 8/crest · d9ae4239"
+contentUuid: "22fae0e0-8db9-5636-8fba-b40700232a27"
+diamondUuid: "9593960c-4de8-8cc4-bf37-1cc8b843b40c"
+uuid: "d9ae4239-915c-8f1d-9231-83de03a5d4d8"
+horo: 8
 typography:
   partition: matrix
-  bondDegree: 312
+  bondDegree: 314
 standards: []
 bindings: []
 signatures:
-  computationUuid: "aaf051d4-4190-83d8-b96b-d2a862caa551"
+  computationUuid: "2e047ce4-242d-8cf3-ae19-6fe0e61eb5c7"
   stages:
     - stage: path
       stageUuid: "c75f18c2-e07b-844d-a3c4-da5b5c02bd8b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "82deeabf-37f8-8879-b914-d45f534e4496"
     - stage: horo
-      stageUuid: "e8b631d3-48a9-84ee-90b0-9bba3ad83805"
+      stageUuid: "7c3cf52e-7cc8-8008-8463-a8f1e15b936c"
     - stage: seal
       stageUuid: "4fc73ba2-4a70-83de-85e4-a56e4b1fa7e6"
     - stage: uuid
-      stageUuid: "b75af4d3-637f-8d8a-86cd-b719f1574ad3"
+      stageUuid: "011e58bb-3e9e-86ca-a238-9a91e481178f"
 version: 2
 ---
 # matrix — the construct, pointed the other way

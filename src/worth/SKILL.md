@@ -2,11 +2,11 @@
 name: worth
 description: "Use when reasoning about worth as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: worth
-coordinate: "worth · 8/crest · c433b2b4"
-contentUuid: "2f50ca86-5cfb-5666-b5d0-3d5c25bf7365"
-diamondUuid: "c898fd99-615f-8489-b419-97b7ffc9d537"
-uuid: "c433b2b4-7519-89d7-a73e-638e96c84a14"
-horo: 8
+coordinate: "worth · 2/share · ba5a8911"
+contentUuid: "3c321976-2277-5091-8683-9553bd802cdd"
+diamondUuid: "8b610e2c-279a-8ddf-a471-06f9fee1f010"
+uuid: "ba5a8911-8c60-8d5e-99b1-5d0e33faadc7"
+horo: 2
 typography:
   partition: worth
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "74dd7db4-278d-8eaf-8fda-33e53ee718d6"
+  computationUuid: "19c92ea1-1bab-8ab3-88b5-25bbabbbc444"
   stages:
     - stage: path
       stageUuid: "0bdc2658-4bf6-8e2f-a6a2-75c82c904290"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "141d30b0-42b7-8e0b-92fc-1d44d906f29d"
     - stage: horo
-      stageUuid: "15daec94-4968-80d0-8d4a-2c61591db7e3"
+      stageUuid: "2bf4ada5-e074-8c09-b085-3aa117a64810"
     - stage: seal
       stageUuid: "9c522ec3-241e-8485-a7a2-8b59b5f7f24a"
     - stage: uuid
-      stageUuid: "0eada612-1f47-858b-942e-6ef9fa524fc2"
+      stageUuid: "3a4a8719-b799-8dae-9127-8b158ba4c287"
 version: 2
 ---
 # worth

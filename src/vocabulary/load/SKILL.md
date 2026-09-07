@@ -2,11 +2,11 @@
 name: load
 description: "Use when reasoning about load as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/load"
-coordinate: "vocabulary/load · 2/share · b97e7b2e"
-contentUuid: "d97924cc-ecb4-57d0-8380-af7402fc4552"
-diamondUuid: "75b96057-ede3-804d-aa2e-bdac537521cd"
-uuid: "b97e7b2e-1dfe-8f2d-b847-a792a07c459d"
-horo: 2
+coordinate: "vocabulary/load · 7/descent · 1a0ffcba"
+contentUuid: "12169960-78b5-5aeb-a8a7-af2ac340868f"
+diamondUuid: "9aac6eba-eab5-8c86-86bf-6d6beedc0f98"
+uuid: "1a0ffcba-7058-8aee-bbd0-4014b70108a8"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e2964302-2991-8e28-ba79-4d660269b469"
+  computationUuid: "3667f6a2-73a3-85fe-b8a6-e5f0e453c45a"
   stages:
     - stage: path
       stageUuid: "a908f668-f3a0-84cc-ba44-4582d60947ce"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc1fffa5-03b8-80bb-81be-a4f880519c38"
     - stage: horo
-      stageUuid: "7691aa1d-0823-8fc0-9c5f-4a2ffb71b5c2"
+      stageUuid: "330b8b25-8e55-8651-81d4-2d7127d087e9"
     - stage: seal
       stageUuid: "6e4ea90a-734e-870b-9be4-c4a720dd010e"
     - stage: uuid
-      stageUuid: "b9ad8794-ba4f-85de-8807-934b55803032"
+      stageUuid: "ec916b78-c003-8d10-84a3-a0211c1e4855"
 version: 2
 ---
 # load

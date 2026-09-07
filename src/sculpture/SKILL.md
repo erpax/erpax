@@ -2,11 +2,11 @@
 name: sculpture
 description: Use when reasoning about sculpture — A piece of sculpture.
 atomPath: sculpture
-coordinate: "sculpture · 1/base · 066cc28e"
-contentUuid: "3be5d5c8-8da8-54cb-9413-61ab5ff65da4"
-diamondUuid: "99e29046-dca3-8810-b808-e0809e0fae36"
-uuid: "066cc28e-b1ed-8a26-83ef-7545dfed335f"
-horo: 1
+coordinate: "sculpture · 7/descent · d6ba5175"
+contentUuid: "50d1e804-5112-5366-9706-a7dcaba8bafd"
+diamondUuid: "edb9cbc1-f56f-8881-9f89-62c9d6c80618"
+uuid: "d6ba5175-4740-8eac-b951-384b3943b73b"
+horo: 7
 typography:
   partition: sculpture
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7cee07a1-eb55-8584-9872-1c5f3066e8ad"
+  computationUuid: "3ba76951-9a24-8fc3-b896-3f10bb47b259"
   stages:
     - stage: path
       stageUuid: "b07346eb-d2f5-8374-81bf-f67d138e76fd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "266be243-edea-8669-ab79-a104c1785092"
     - stage: horo
-      stageUuid: "e5ece227-fc5a-8183-9408-1a6edefe3b8b"
+      stageUuid: "2c72935f-71e6-8935-aba0-87538273d647"
     - stage: seal
       stageUuid: "89a7bb1d-bc4f-8ad5-a215-cf314921f75d"
     - stage: uuid
-      stageUuid: "da67798e-3b32-85dd-a6e3-05f34404585a"
+      stageUuid: "8bfafb61-8811-8358-b000-6139ea660025"
 version: 2
 ---
 # sculpture

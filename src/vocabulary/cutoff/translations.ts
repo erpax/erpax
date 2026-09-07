@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cutoff",
-    "uuid": "ac49da6c-df09-8f4a-a1ab-9feee1ec4fe4",
+    "uuid": "d8efa286-f3be-8fd5-8cdc-3a0486686175",
     "words": [
       "cutoff"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cutoff as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "2836fcd3-2997-8a7b-9b70-950286c02c42",
+    "uuid": "a33e8751-092a-83ab-a991-374a41312848",
     "words": [
       "use",
       "when",

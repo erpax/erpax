@@ -2,11 +2,11 @@
 name: formulary
 description: "Use when reasoning about formulary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/formulary"
-coordinate: "vocabulary/formulary · 2/share · 0473d86f"
-contentUuid: "1462ece1-42a7-5d1c-9bf7-2438bb1308ae"
-diamondUuid: "517e5de6-1210-85b5-be91-fdee8533e6ba"
-uuid: "0473d86f-556f-87e1-bd41-f706f7c31bed"
-horo: 2
+coordinate: "vocabulary/formulary · 1/base · d610d36a"
+contentUuid: "71fa4592-be82-546e-b7be-f085fd3d040d"
+diamondUuid: "41901d5a-13a3-89a1-9f3e-4d8ad6a509f8"
+uuid: "d610d36a-354e-86d0-b2c1-33f2cb480d9e"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "69e8a1e7-4c4d-8546-a0b5-088fb48b731b"
+  computationUuid: "b9bba5f5-16b3-80b2-8431-67c377c8552c"
   stages:
     - stage: path
       stageUuid: "cf9e7731-9525-80b6-972d-1db6e176d8fc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cffc35d7-a0f0-86ce-9492-a6094f573e62"
     - stage: horo
-      stageUuid: "bb170032-6bc7-8c35-82eb-f2006aa6f743"
+      stageUuid: "2bf060f7-238d-860c-9e1b-ae958b98b380"
     - stage: seal
       stageUuid: "0515aede-c676-83a7-9dc4-08ae36eb6f7e"
     - stage: uuid
-      stageUuid: "bfc3a674-5c66-8a94-b0d2-1b5082469290"
+      stageUuid: "e82d91c4-8de9-8649-a986-8ea7510b79b7"
 version: 2
 ---
 # formulary

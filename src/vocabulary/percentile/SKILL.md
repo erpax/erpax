@@ -2,11 +2,11 @@
 name: percentile
 description: Use when reasoning about percentile — The 10th percentile value.
 atomPath: "vocabulary/percentile"
-coordinate: "vocabulary/percentile · 5/round · b9aae378"
-contentUuid: "c730cec5-8884-5960-9482-28c17cb79976"
-diamondUuid: "a6b6dc04-919e-8183-b325-4a7249f9c6dd"
-uuid: "b9aae378-5985-8500-a028-f2cd4401eab0"
-horo: 5
+coordinate: "vocabulary/percentile · 2/share · f1f1b7c8"
+contentUuid: "d2092c25-3431-5373-ac18-e3dbf98e36ad"
+diamondUuid: "9b24411e-c531-85b3-ac55-9bfe525439d4"
+uuid: "f1f1b7c8-b0a7-8d4a-a752-247e15b2238d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4c1fa61a-3f90-843d-ad19-701681fd3f0b"
+  computationUuid: "f4200f0f-45ef-8fb8-9315-1497fbf91b90"
   stages:
     - stage: path
       stageUuid: "5bc5cdab-955e-867e-a990-023c81113ac5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "adc0a53d-4f97-8807-8d58-110e8fec8759"
     - stage: horo
-      stageUuid: "c0f31e18-72b8-84e9-815b-be10341e20d9"
+      stageUuid: "1ae1e0e5-77a1-829e-a95f-dced6e9b0be0"
     - stage: seal
       stageUuid: "8b3b3763-9b52-822a-946e-88fd9a82fa9b"
     - stage: uuid
-      stageUuid: "815f2e78-ecaf-83c8-aa1b-a9e55cbe4382"
+      stageUuid: "751e94b2-d766-8093-b4e6-d517f57eb40a"
 version: 2
 ---
 # percentile

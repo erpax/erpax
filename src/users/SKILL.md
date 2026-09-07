@@ -2,11 +2,11 @@
 name: users
 description: "Use when managing authenticated actors — employees, agents, customers, authors — their cross-tenant roles, held competencies, per-user locale/display config, email login, and access credentials. The typeless universal actor and identity root."
 atomPath: users
-coordinate: "users · 8/crest · a73adb9b"
-contentUuid: "d957bbda-82a2-5f08-96e8-7728de11ccfb"
-diamondUuid: "0d772199-0597-8900-812a-169db0dc169e"
-uuid: "a73adb9b-11dd-8f4c-9d37-16009af4475c"
-horo: 8
+coordinate: "users · 7/descent · 8d187108"
+contentUuid: "a0bd1826-7d4c-5c7f-ba13-2bd440f89f76"
+diamondUuid: "ecb5b740-28de-8e3b-a609-a40333bcce8e"
+uuid: "8d187108-0f7c-815b-a869-71985199fd80"
+horo: 7
 typography:
   partition: users
   bondDegree: 49
@@ -30,7 +30,7 @@ standards:
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
 signatures:
-  computationUuid: "26d57206-d5be-8721-8a2d-e557381716d2"
+  computationUuid: "cb1c73a4-dfa4-80df-b47c-5c1057245d12"
   stages:
     - stage: path
       stageUuid: "12589957-b73f-8bcb-b034-a2e3043d5eef"
@@ -41,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "54bcc628-71f0-8ed7-ba34-ca31526f04be"
     - stage: horo
-      stageUuid: "9797aa1b-90b4-8528-a984-b555e5aac1e0"
+      stageUuid: "f84788b8-4ad6-818b-8bdb-ede67ed07d34"
     - stage: seal
       stageUuid: "af36f393-0108-8314-85ab-0d24fd9ca813"
     - stage: uuid
-      stageUuid: "7fb1b486-87d9-8363-9f40-1cef18c4b231"
+      stageUuid: "8d433676-8547-8988-b82d-a968ab30c465"
 version: 2
 ---
 # users

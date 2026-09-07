@@ -2,18 +2,18 @@
 name: state
 description: "Use when asking which content-uuids carry each vortex state — the one rodin function that needs the live matrix, kept off the arithmetic that everyone else imports."
 atomPath: "rodin/state"
-coordinate: "rodin/state · 8/crest · c67a7339"
-contentUuid: "afabc934-da87-519f-a34a-b51aff8902b7"
-diamondUuid: "e14f1378-91d7-8583-a7f7-cf9536b478bd"
-uuid: "c67a7339-b585-8a23-a81e-f09d44298c76"
-horo: 8
+coordinate: "rodin/state · 4/weave · 63736e31"
+contentUuid: "f058b6af-09ac-56ae-afa4-8980a52cce4f"
+diamondUuid: "3aa2e421-9e7f-8929-8414-a47f78490ac7"
+uuid: "63736e31-64ce-8bfe-8d94-f378b2d0fc22"
+horo: 4
 typography:
   partition: rodin
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "34689433-0f8a-8962-bdf2-a2cf634c3d9a"
+  computationUuid: "72a4c403-dc04-8a2c-a5fb-73d858fe030e"
   stages:
     - stage: path
       stageUuid: "0723db78-7a39-886e-865e-ca4f0a4cb745"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "16f443bf-69b8-87cb-9b48-5bee20cf88be"
     - stage: horo
-      stageUuid: "15d0d771-5b9d-825c-8d31-746f52412e62"
+      stageUuid: "680c091d-3afc-8e0b-83f2-2e59320e17e3"
     - stage: seal
       stageUuid: "4bbc37b7-6a06-8853-aa6a-85eaa169c905"
     - stage: uuid
-      stageUuid: "62b07452-07e0-83fd-98c7-02e7a0563448"
+      stageUuid: "8872750d-0f48-856d-aa6d-d75e3b175e84"
 version: 2
 ---
 # rodin/state — the question that needs the matrix, and only it

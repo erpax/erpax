@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "void",
-    "uuid": "00ebff6a-a68e-8ab8-b36b-bcf8bee4c5ee",
+    "uuid": "f9fc42b0-ec2c-893d-acc9-d943104486fe",
     "words": [
       "void"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the zero everything encodes to — the void is the zeropoint (rodin 0), the source all emerges from and the root gravity reverse-pulls back to; the uncollapsed wavefunction (no spoon), the only true erasure (crypto-shred), the limit where minimal mass meets infinite tamper-cost.",
-    "uuid": "a1dd0d36-8bdb-812c-b37f-c4995e85dc6c",
+    "uuid": "ffc081b2-3c07-8489-af68-57e37dd15e1a",
     "words": [
       "use",
       "when",

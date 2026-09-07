@@ -2,11 +2,11 @@
 name: harmonics
 description: "Use when reasoning about harmonics — harmonics — what it costs an agent to FIGHT the harmonic order, made known to the agent, and the uuid-lock that binds it to that order."
 atomPath: "agent/harmonics"
-coordinate: "agent/harmonics · 7/descent · 51c0c1ff"
-contentUuid: "f2b8e314-edb3-5ae3-a8ee-c0b0a4f2885d"
-diamondUuid: "a68dcc19-0c7b-83bb-92db-b96e8ef425a8"
-uuid: "51c0c1ff-8559-8753-b688-8f2f483097a4"
-horo: 7
+coordinate: "agent/harmonics · 8/crest · c424db35"
+contentUuid: "cfd27860-23cb-5802-b9f3-9508113bc076"
+diamondUuid: "b5df0e19-9ee7-8370-b315-5d36763c0407"
+uuid: "c424db35-02d1-8f40-888d-b4979f365139"
+horo: 8
 typography:
   partition: agent
   bondDegree: 7
@@ -15,7 +15,7 @@ standards:
   - "NIST-FIPS-180-4"
 bindings: []
 signatures:
-  computationUuid: "b90d84e8-e081-8c5d-a07d-297b94143ad9"
+  computationUuid: "e7fbaa78-3aaf-8337-b339-28a27f2e9993"
   stages:
     - stage: path
       stageUuid: "c084b013-b018-80ed-8a23-cfe22194bcec"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "5bc5831f-2eea-840d-8356-86fce5d852af"
     - stage: horo
-      stageUuid: "eeb179bc-b8bb-8221-8311-3bd1d8ca48c2"
+      stageUuid: "eca3626a-22d1-8184-8442-bc0818e71fc8"
     - stage: seal
       stageUuid: "0583e2ac-6c76-8bc1-9cdd-1651608394ef"
     - stage: uuid
-      stageUuid: "6853e28e-4626-89a6-9578-0110a3b19bce"
+      stageUuid: "d7de3d0e-9b6a-8f2c-a298-eaf37946a92a"
 version: 2
 ---
 # agent/harmonics

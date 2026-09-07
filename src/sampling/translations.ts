@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sampling",
-    "uuid": "022c7049-fb9f-8375-b014-87b37c742ca2",
+    "uuid": "16b35192-f4a6-8e1e-9daf-91b893671bb2",
     "words": [
       "sampling"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when selecting a representative subset — random sampling, stratified sampling, systematic sampling, sample size calculation, sampling error/confidence intervals, weighted sampling for survey design.",
-    "uuid": "de314f43-3135-8853-9fe5-d8dcdb9d1415",
+    "uuid": "e5b1906a-bb75-8050-91b5-f0722aaa02a0",
     "words": [
       "use",
       "when",

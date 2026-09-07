@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reports",
-    "uuid": "c5548fee-598b-8c2e-b4a4-3270d8231bac",
+    "uuid": "43cb8825-4ee3-88b2-afbd-219c0f43e4f8",
     "words": [
       "reports"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when submitting, approving or auditing employee expense claims — per-diem, mileage, airfare, hotel, receipts, multi-step approval chain, reimbursement via payroll or AP — with GL coding, FX conversion, policy-compliance flags and SOX §404 four-eyes enforcement. The employee expense-claim collection.",
-    "uuid": "9d7f1263-c188-88ae-af61-70169ee989e5",
+    "uuid": "70718045-1ef8-8b21-a762-371dab677afe",
     "words": [
       "use",
       "when",

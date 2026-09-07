@@ -2,18 +2,18 @@
 name: cross
 description: "Use when reasoning about cross — reports every with no matching , and reports matter sitting beside a barrel that should be a child atom. computes the move; is what a reader gets."
 atomPath: "index/cross"
-coordinate: "index/cross · 5/round · cd3d3c40"
-contentUuid: "cb3c833c-1f3e-5fbd-adc3-a250fca28cb5"
-diamondUuid: "88f9e72e-f505-8dbc-99ef-5316671e8f85"
-uuid: "cd3d3c40-c1b9-84c6-828a-c519b14b8ba8"
-horo: 5
+coordinate: "index/cross · 1/base · 0492a491"
+contentUuid: "99a123ed-95b2-51ca-aba0-706af201942f"
+diamondUuid: "e168bb01-afe0-802f-9a04-0483c71cd28f"
+uuid: "0492a491-66c1-8a08-b608-def3c54b9504"
+horo: 1
 typography:
   partition: index
   bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fc46c6ed-5c8c-8af3-bc71-18288e901371"
+  computationUuid: "9411e7a4-145e-826a-903f-908998ba6010"
   stages:
     - stage: path
       stageUuid: "1db3eef3-9d04-804a-b0b1-f84c6caa471b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "887eebab-66a8-8501-a2be-0d7d6913eec8"
     - stage: horo
-      stageUuid: "045345a6-9829-8c83-8c5a-97c4bd5db301"
+      stageUuid: "ce40c541-5ebe-8091-94bb-905b60a6e7bc"
     - stage: seal
       stageUuid: "20d88c9e-e88a-8ba8-a596-1eff038383f3"
     - stage: uuid
-      stageUuid: "0d39376a-d42d-81fd-96ae-a2b80e6dc835"
+      stageUuid: "6a9de819-d81b-8d98-9ac4-7b27fb2a0b01"
 version: 2
 ---
 # index/cross — a path is wired both ways, or one direction is a claim nothing checks

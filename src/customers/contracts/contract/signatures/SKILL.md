@@ -2,11 +2,11 @@
 name: signatures
 description: "Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection."
 atomPath: "customers/contracts/contract/signatures"
-coordinate: "customers/contracts/contract/signatures · 4/weave · f895eeb7"
-contentUuid: "aa337b20-5904-5c13-b1f3-39c581d9fc54"
-diamondUuid: "2511b7cc-00a5-838b-9cf6-6dab3997f5fc"
-uuid: "f895eeb7-7d99-8f34-abf6-f5d7d33f0e7e"
-horo: 4
+coordinate: "customers/contracts/contract/signatures · 7/descent · 42664e87"
+contentUuid: "22f244ad-719b-51ac-810d-9e7af2b50f31"
+diamondUuid: "d43aca64-d354-8546-9f8d-2ef627ecff3f"
+uuid: "42664e87-cf03-8185-a54e-9ccf8be5c6cd"
+horo: 7
 typography:
   partition: customers
   bondDegree: 15
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "db163f99-64f7-8401-853a-820c57f473ee"
+  computationUuid: "00794db8-7c3e-8bba-9467-99bb4ff76ad8"
   stages:
     - stage: path
       stageUuid: "00388273-3891-8d95-957c-5a9c6ad6eeef"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "915578ba-ae34-88a7-ac6d-44995cc4e3e9"
     - stage: horo
-      stageUuid: "f56e8066-ddb5-840c-9697-634e87cd027f"
+      stageUuid: "0b1874d3-0a3d-8f9c-8875-1e569028b195"
     - stage: seal
       stageUuid: "573ccec1-dc40-85e4-94b4-2f077c905a57"
     - stage: uuid
-      stageUuid: "eb212e0a-ec89-85af-aa65-5580dc1ca6d3"
+      stageUuid: "7769d6b6-8a09-869d-ab77-1a9c0c6b686e"
 version: 2
 ---
 # contract-signatures

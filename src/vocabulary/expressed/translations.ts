@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expressed",
-    "uuid": "aa12c424-509f-86c7-b74a-08265668c584",
+    "uuid": "2ce8f325-b7b0-8eea-ae49-10f4a9f834f9",
     "words": [
       "expressed"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about expressed — Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
-    "uuid": "eadfcf30-36e5-8ab1-8979-891ede26730e",
+    "uuid": "875505e5-3d4c-89b4-8459-178acd967912",
     "words": [
       "use",
       "when",

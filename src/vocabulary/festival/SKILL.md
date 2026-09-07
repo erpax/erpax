@@ -2,11 +2,11 @@
 name: festival
 description: "Use when reasoning about festival — Event type: Festival."
 atomPath: "vocabulary/festival"
-coordinate: "vocabulary/festival · 2/share · 5bbda88e"
-contentUuid: "28abcc77-c937-5096-8171-92511e026897"
-diamondUuid: "12c61af4-deb1-8aca-a19b-5655c7bb7dec"
-uuid: "5bbda88e-33e7-86e4-9d4b-3d14c7c90ae4"
-horo: 2
+coordinate: "vocabulary/festival · 7/descent · f87856ee"
+contentUuid: "5339ac9e-54c0-59c7-8cdb-0cb24e592d5c"
+diamondUuid: "c0c9e0e3-9126-89d8-bfcd-7ec5b5c6700a"
+uuid: "f87856ee-c487-8da7-8eda-773251c47ca1"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f2143b26-4642-8216-853f-d7c4a7ebcf28"
+  computationUuid: "b05c245d-6e98-83dd-b4f3-8c8026a102a7"
   stages:
     - stage: path
       stageUuid: "5bfef305-d441-8f2d-8eec-17961657687f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "90d0d983-ddcb-8ab1-aaac-7b09b432afb7"
     - stage: horo
-      stageUuid: "1a2c9622-6df4-82bf-b0d2-92efe0bae228"
+      stageUuid: "615115c2-0d0a-8175-8d64-efa586cceb36"
     - stage: seal
       stageUuid: "ede401bd-f1fc-836c-add2-991b84529079"
     - stage: uuid
-      stageUuid: "d3385802-9cd5-8db6-b7aa-7b29b7a27016"
+      stageUuid: "6840a654-fb22-8b62-aff4-b3a27041c7d0"
 version: 2
 ---
 # festival

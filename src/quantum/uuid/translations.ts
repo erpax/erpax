@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "uuid",
-    "uuid": "891d2a76-3c9a-8533-8bf8-f9a304902502",
+    "uuid": "8a61a8ad-3109-865c-8e12-e8db6b2df6d7",
     "words": [
       "uuid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the content-uuid in the quantum frame — the 128-bit address is the collapse of content (a sha-256 measurement of the infinite stream into one settled point); it fuses identity, capability, schema, and a multi-modal projection (color plus sound), and it is the entanglement key that binds the whole corpus into one.",
-    "uuid": "a3ef582f-9539-8a09-b264-41a599bb6456",
+    "uuid": "3e2a7e11-bb9a-8466-81ea-557aaae318c9",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: schedules
 description: "Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node."
 atomPath: "fixed/assets/depreciation/schedules"
-coordinate: "fixed/assets/depreciation/schedules · 1/base · 31687748"
-contentUuid: "4aa10092-1ef8-571a-a230-e3e94b022aa8"
-diamondUuid: "a018c956-6910-831d-bd93-61e72ab2031f"
-uuid: "31687748-32a3-84b5-8b10-40783eca9564"
-horo: 1
+coordinate: "fixed/assets/depreciation/schedules · 2/share · c8c8dd86"
+contentUuid: "cf819761-15cf-54ad-9c70-6fc246fc3e2e"
+diamondUuid: "d329ff59-f854-8bc6-9c19-dc46efebc339"
+uuid: "c8c8dd86-b868-8e85-a504-7f0211e2291b"
+horo: 2
 typography:
   partition: fixed
   bondDegree: 26
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f45839ad-97be-80d1-8c5e-9d932c31a83b"
+  computationUuid: "39ce8ee8-0dd6-8025-8829-4e217adf95b9"
   stages:
     - stage: path
       stageUuid: "dc1ae3b7-dc2e-8a8d-940b-9e57c4f92d39"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "a99ce833-ba58-88d1-b01c-b67a89d68f3a"
     - stage: horo
-      stageUuid: "5c2b554d-696f-88a1-9477-cc6aa6eebfe8"
+      stageUuid: "44b5b741-e6de-88c0-a7c9-697bdfb1b5b4"
     - stage: seal
       stageUuid: "6dd2f3d3-a5af-80e6-8e22-11503fae091b"
     - stage: uuid
-      stageUuid: "725c2281-5ac6-8a47-b585-f8e375b1f2a7"
+      stageUuid: "02b9af88-677c-8d17-bf2b-e54223d178cb"
 version: 2
 ---
 # depreciation-schedules

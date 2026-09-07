@@ -2,11 +2,11 @@
 name: memory
 description: "Use when reasoning about memory as a part of computer — pivot to canonical @/memory/quantum; nested not duplicated."
 atomPath: "computer/memory"
-coordinate: "computer/memory · 5/round · 354d9c69"
-contentUuid: "13968a62-8b38-54fd-bdfd-d9b63a49b72b"
-diamondUuid: "28e25580-2620-8af6-ac03-19f8273bec3c"
-uuid: "354d9c69-5fea-8395-920f-96d2d17b6888"
-horo: 5
+coordinate: "computer/memory · 8/crest · 98d4f942"
+contentUuid: "a73af5cc-e600-568c-a0ef-c77a53025f2c"
+diamondUuid: "ac42e749-734f-82e9-8114-afba46f58b60"
+uuid: "98d4f942-271e-8fd2-af82-4498bf16e73f"
+horo: 8
 typography:
   partition: computer
   bondDegree: 99
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b0d52781-7f79-8261-ade7-0cb99f4d23d9"
+  computationUuid: "0cc3e19b-3e89-84fe-a3f2-2caa78ad3323"
   stages:
     - stage: path
       stageUuid: "3285e7a3-7afc-883c-b040-91e6202537e8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "83dc96d8-59ad-8fc4-9255-7a24db022e3a"
     - stage: horo
-      stageUuid: "e8c5f45f-5256-881b-8aa0-f7edae141e5a"
+      stageUuid: "ea3172b8-4e48-8ede-a21f-6695c8f47475"
     - stage: seal
       stageUuid: "5e53a1d1-cf42-8321-bb55-a014c99fa08b"
     - stage: uuid
-      stageUuid: "a09fd5f9-02e3-8715-9a27-65941b584f5b"
+      stageUuid: "14dfa530-df0e-8a72-81e3-48c0b0c7d400"
 version: 2
 ---
 # computer/memory — holds working state

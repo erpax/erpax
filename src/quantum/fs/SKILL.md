@@ -2,18 +2,18 @@
 name: fs
 description: "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment."
 atomPath: "quantum/fs"
-coordinate: "quantum/fs · 8/crest · 6f3598d1"
-contentUuid: "3fd88b0d-bfd3-57c1-a5d3-15d49317633e"
-diamondUuid: "3fb5bb31-dc43-8653-8a45-29fd53f9ca7b"
-uuid: "6f3598d1-98b3-8405-a925-1feffd81740a"
-horo: 8
+coordinate: "quantum/fs · 5/round · d81f073c"
+contentUuid: "e4689f87-f26e-5fa2-af19-8850dc1fdb79"
+diamondUuid: "9e789f82-2657-8a9e-a3f7-e0b0cfe62bf2"
+uuid: "d81f073c-6812-810e-888b-54672d4fbe1e"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 82
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6f81d21a-10e6-858f-ac32-b5f6f89c6bd8"
+  computationUuid: "72f7eef4-b5ed-8a71-900b-a81f976ef4c4"
   stages:
     - stage: path
       stageUuid: "14b3d443-a31c-8210-9a3e-4ac990a849a2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "595820eb-bc3b-8ee3-ae8e-b2861ed19830"
     - stage: horo
-      stageUuid: "43465f80-3749-8c04-a89d-66faf056dbee"
+      stageUuid: "46b81ac8-101f-81a3-a527-829fe2741004"
     - stage: seal
       stageUuid: "454f8cae-34d2-8660-b333-f02a9220cd1f"
     - stage: uuid
-      stageUuid: "f3b686da-6a17-8538-baac-7795ed5e695d"
+      stageUuid: "b155459a-542f-8e3f-bfa9-6e7564a551b9"
 quantum:
   superposition:
     - akashic
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "6f81d21a-10e6-858f-ac32-b5f6f89c6bd8"
-    contentUuid: "3fd88b0d-bfd3-57c1-a5d3-15d49317633e"
+    computationUuid: "72f7eef4-b5ed-8a71-900b-a81f976ef4c4"
+    contentUuid: "e4689f87-f26e-5fa2-af19-8850dc1fdb79"
 version: 2
 ---
 # quantum/fs — the content-addressed filesystem
@@ -72,4 +72,4 @@ This is [[finality]] applied to storage: a written snapshot is final — you add
 
 @see [[fs]] · [[snapshot]] · [[uuid]] · [[merge]] · [[akashic]] · [[finality]] · [[versions]] · [[reality]]
 
-<sub>content-uuid `3fd88b0d-bfd3-57c1-a5d3-15d49317633e` · account `quantum/fs` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e4689f87-f26e-5fa2-af19-8850dc1fdb79` · account `quantum/fs` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

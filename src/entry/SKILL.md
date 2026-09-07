@@ -2,11 +2,11 @@
 name: entry
 description: "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\"."
 atomPath: entry
-coordinate: "entry · 4/weave · 3f52a296"
-contentUuid: "60047b74-1303-5fd2-a987-621de16c713d"
-diamondUuid: "b3137286-b81c-84f4-8ec1-dcaf1a85dbb0"
-uuid: "3f52a296-3b7e-85d3-ba78-16a2d75fed3d"
-horo: 4
+coordinate: "entry · 1/base · c5e7ce31"
+contentUuid: "db3ea2f2-9f19-5b04-b751-08cc88260229"
+diamondUuid: "731037f0-27fc-87ea-81ae-0d56e253d63b"
+uuid: "c5e7ce31-1d2f-8400-9ded-3f2d4e0f7925"
+horo: 1
 typography:
   partition: entry
   bondDegree: 188
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "46f08c72-8813-8e8f-8666-9a2afc78e301"
+  computationUuid: "15a83bc4-6dd1-8a4d-87ee-2bed342305c5"
   stages:
     - stage: path
       stageUuid: "68fb5705-4683-8f65-8d52-83706909b8c7"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "3bed8497-c085-893a-84bc-bb3bc3902bac"
     - stage: horo
-      stageUuid: "70351236-577e-809d-a16f-18a1fa657d1b"
+      stageUuid: "4bdc90a1-79e2-8780-ab89-4abf3f00f0d1"
     - stage: seal
       stageUuid: "f0a543a8-0236-8428-ac2d-f94a5c49e51f"
     - stage: uuid
-      stageUuid: "cb0de8cb-bf60-8888-8ad2-7f9493db1c6a"
+      stageUuid: "ee6d8296-68d0-878a-a2f8-e8945f6d7fcc"
 version: 2
 ---
 # entry — the universal double-entry (all based on debit/credit)

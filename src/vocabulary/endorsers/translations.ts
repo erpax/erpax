@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "endorsers",
-    "uuid": "00ee2f37-8112-8a9b-bdb5-90be6026d396",
+    "uuid": "1aa930fc-1b8b-8f7a-b55a-82c21e2f5d2a",
     "words": [
       "endorsers"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about endorsers — People or organizations that endorse the plan.",
-    "uuid": "f4d505f9-b7bf-8041-969f-3a25bcdfe7a4",
+    "uuid": "9f11af98-bc79-89d2-8a9f-3589971f374b",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: commerce
 description: "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8)."
 atomPath: commerce
-coordinate: "commerce · 4/weave · 45946e19"
-contentUuid: "1fa62d80-ed17-51d9-babf-5758f3a55039"
-diamondUuid: "1501e7f9-e543-82cd-8c62-29403435650b"
-uuid: "45946e19-b9ec-8402-a829-71a82b79f53e"
+coordinate: "commerce · 4/weave · 9448ca47"
+contentUuid: "d545d419-2ff2-5612-b4c2-f9ee5dfb50b4"
+diamondUuid: "604d210d-0d7c-80dd-bc9d-d2e88456a470"
+uuid: "9448ca47-ea9d-8328-b6d1-f3dd24aaa64e"
 horo: 4
 typography:
   partition: commerce
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ad95990f-557e-8d68-aee6-07ecf2be60b6"
+  computationUuid: "aa06ea33-993b-8f70-8c78-ea587a8f6405"
   stages:
     - stage: path
       stageUuid: "eefc9b09-1e71-8151-a18f-4a4dd3a90971"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "cbe5280e-c6f0-87e1-8254-52e276fb1dd6"
     - stage: horo
-      stageUuid: "9586e865-dc3b-8f01-ad55-e82b0cd5fe68"
+      stageUuid: "3e95c354-fa6a-827a-af5a-9a39e80944f2"
     - stage: seal
       stageUuid: "08b5e11f-2892-8355-a41e-c87291686fa2"
     - stage: uuid
-      stageUuid: "adc3e755-7be2-8373-b3af-afae7ed93008"
+      stageUuid: "2fc89343-2bdb-8f5d-814c-fd57ef055a22"
 version: 2
 ---
 # commerce — the transactional-flow plugin (one party, infinite roles)

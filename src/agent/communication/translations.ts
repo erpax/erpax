@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "communication",
-    "uuid": "d55e9a85-e236-8fff-adf0-f906d57d335f",
+    "uuid": "d4cf1c51-a155-8bd4-b8f3-a4797b8e6bd0",
     "words": [
       "communication"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when agents transfer messages — a directed communication between agent ids, the message a content-uuid; relaying preserves the uuid (no-cloning), so the content is never forged in transit.",
-    "uuid": "27a5c78a-6d24-8a45-8cf5-8f8d77499074",
+    "uuid": "9e060d0c-5874-823e-94ff-8f51a59e01df",
     "words": [
       "use",
       "when",

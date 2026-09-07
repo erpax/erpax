@@ -2,11 +2,11 @@
 name: maxtampercost
 description: "Use when reasoning about max tamper-cost — the weakest-link minimum across all dimensions; alias for analytics/max-tamper-cost lever vocabulary."
 atomPath: "vocabulary/maxtampercost"
-coordinate: "vocabulary/maxtampercost · 5/round · c993f4bb"
-contentUuid: "ec7b25dd-7b9a-5340-b64d-c5c3111ceafb"
-diamondUuid: "7132a8c3-6064-8327-b12f-41b8776c4163"
-uuid: "c993f4bb-0189-8b2b-af82-8bf753736c69"
-horo: 5
+coordinate: "vocabulary/maxtampercost · 4/weave · ebb643a3"
+contentUuid: "a06d0e76-ac22-5ade-aec4-d28ce063e189"
+diamondUuid: "ab7cac06-5b9b-8fc6-bab1-44f13566d7a2"
+uuid: "ebb643a3-6013-88a2-ae54-fdb33426d07e"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 17
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.6 — maintainability: one source, addressable"
 bindings: []
 signatures:
-  computationUuid: "31c41dfd-8794-8719-9ed4-68a2cc2a3294"
+  computationUuid: "01182dd2-0ae9-8766-8894-ae398efc063a"
   stages:
     - stage: path
       stageUuid: "3572019e-6a5c-8a2d-8da2-7f14d46385dd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a8018537-4030-8760-923e-dc1a006b0e05"
     - stage: horo
-      stageUuid: "70c96db9-9e90-8828-bc67-b0111761c820"
+      stageUuid: "22ff2549-99be-8000-aaa8-e47368517a1e"
     - stage: seal
       stageUuid: "fd171fc0-04ee-82dd-ba7e-b92ac3fe1cbc"
     - stage: uuid
-      stageUuid: "97a7312d-23f2-822b-8f4a-558b69cec0e7"
+      stageUuid: "5da002dd-7843-85f2-a6e8-46cce965b05e"
 version: 2
 ---
 # maxtampercost

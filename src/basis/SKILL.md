@@ -2,10 +2,10 @@
 name: basis
 description: "Use when reasoning about basis — Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves"
 atomPath: basis
-coordinate: "basis · 2/share · 286324ce"
-contentUuid: "14de6827-9a54-5b75-a0ff-b267f4a0ba43"
-diamondUuid: "3598ae6f-10e7-8a70-b8b0-80326e683448"
-uuid: "286324ce-15d1-8c27-ac77-ad862580e945"
+coordinate: "basis · 2/share · e6dd0a84"
+contentUuid: "712d678c-6c34-5378-8b9f-669569e7b771"
+diamondUuid: "8b66f1ee-0414-8d5a-84dd-008b931c630d"
+uuid: "e6dd0a84-c460-823e-ad05-cb9da843e8d9"
 horo: 2
 typography:
   partition: basis
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8b786fac-33ac-88df-b680-a23514847d13"
+  computationUuid: "205522a3-5aa5-8f55-bec1-aa7ddf19525c"
   stages:
     - stage: path
       stageUuid: "afa7d0ae-6e47-8866-8365-2b7e0995ac65"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "07ed5d9d-631f-801d-95d9-97745caaeac9"
     - stage: horo
-      stageUuid: "bdcf050d-d88e-8a28-8d6c-3af174583626"
+      stageUuid: "c460f804-2ee1-8532-a1c3-23bff49a09b9"
     - stage: seal
       stageUuid: "115dc73a-bccc-8bad-9ccc-1d2495994417"
     - stage: uuid
-      stageUuid: "a421dd39-bb20-8359-b13b-36f56f73af71"
+      stageUuid: "10ac0800-ee6a-894d-bfbc-3b9a24f3dd35"
 version: 2
 ---
 # basis — The 7 Millennium Problems form a complete basis for quantum computation

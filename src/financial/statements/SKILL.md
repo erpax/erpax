@@ -2,11 +2,11 @@
 name: statements
 description: "Use when generating, certifying, and publishing financial statements — trial balance, balance sheet, income statement, cash flow, equity — under IAS-1 / IFRS-18 (2027+) with SOX §302 preparer-vs-certifier segregation, financial ratios, and multi-format export. The period-end financial-statement collection."
 atomPath: "financial/statements"
-coordinate: "financial/statements · 1/base · e8a8b145"
-contentUuid: "394f183c-f5e8-5489-b944-1a6c4317c03e"
-diamondUuid: "02e3f354-8a96-8685-8150-2eba5b61804d"
-uuid: "e8a8b145-b440-804d-bf22-ef884a2edfd4"
-horo: 1
+coordinate: "financial/statements · 2/share · ff723a26"
+contentUuid: "0e9795cf-0fa7-549b-b5a2-d20190867fa5"
+diamondUuid: "479f113f-7ccc-82d7-ac4c-0216aaa134e8"
+uuid: "ff723a26-6a58-8f0b-9294-9e4c4e0a8ef2"
+horo: 2
 typography:
   partition: financial
   bondDegree: 53
@@ -29,7 +29,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "6c7387cd-8892-88d0-a93d-7190e8b11abd"
+  computationUuid: "f862fa50-5f19-857d-951f-578a09ea6814"
   stages:
     - stage: path
       stageUuid: "a34a2754-da29-8f74-ad0e-2df260a2a760"
@@ -40,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "6925f5ca-c1df-8a3b-b16b-3d8abdd46759"
     - stage: horo
-      stageUuid: "b4d2cfbe-2967-8d24-bb5a-a2f4f9925601"
+      stageUuid: "d14a8686-646e-8366-bce1-28b9b9488529"
     - stage: seal
       stageUuid: "bcf9a2d7-1ece-8100-bb56-4eacf0ef45b6"
     - stage: uuid
-      stageUuid: "7ce6c88c-505d-8aed-8551-6b45911bdba2"
+      stageUuid: "21208278-7c09-8e42-be20-8d00ebb5cc1a"
 version: 2
 ---
 # financial-statements

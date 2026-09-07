@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ai",
-    "uuid": "6e96fc42-3174-880f-a2a3-3e1b993ec428",
+    "uuid": "1b8aa76c-ef8d-821e-afdb-53be7d7d871c",
     "words": [
       "ai"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving agent atoms.",
-    "uuid": "648a0b3c-50d5-8f5d-a79f-d797cfde814c",
+    "uuid": "ba3c032e-4f75-802f-a45c-8bf8f4909289",
     "words": [
       "use",
       "when",

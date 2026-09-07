@@ -2,11 +2,11 @@
 name: legislative
 description: "Use when reasoning about legislative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/legislative"
-coordinate: "vocabulary/legislative · 4/weave · 414e51fd"
-contentUuid: "c7ec0a3d-43ad-514a-96e7-3d169e57bb20"
-diamondUuid: "45b32697-ab36-8377-a622-37c5689277ca"
-uuid: "414e51fd-8459-8a8c-b8d8-552ba78f92ee"
-horo: 4
+coordinate: "vocabulary/legislative · 5/round · ed6ae290"
+contentUuid: "482d2cff-0e2a-5141-a979-31df58dcea69"
+diamondUuid: "c8ac8865-b18b-8a67-a2ae-48114c4bd611"
+uuid: "ed6ae290-4e84-895e-b0cb-0c7dc8844807"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d3bc0d31-2486-8f04-aca8-5ef33b2cf462"
+  computationUuid: "9370df60-1155-8881-b18e-6e06865b9640"
   stages:
     - stage: path
       stageUuid: "8bf05d8e-baa8-80bc-a0ef-52bab32bf5d6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5702af05-f732-830a-9174-bce93e95d856"
     - stage: horo
-      stageUuid: "03ed7e5f-d97f-8139-837d-ab93d0756238"
+      stageUuid: "e97df828-5aa5-8810-980c-2bb69cdf098b"
     - stage: seal
       stageUuid: "12458268-b65e-812c-bd7b-1ed9f845faa4"
     - stage: uuid
-      stageUuid: "1c5986ec-229b-82a3-8160-e22eb52b9e6a"
+      stageUuid: "ae93b05c-4044-8935-9df8-1882d765e8ed"
 version: 2
 ---
 # legislative

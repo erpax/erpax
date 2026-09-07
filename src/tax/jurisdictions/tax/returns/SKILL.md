@@ -2,11 +2,11 @@
 name: returns
 description: "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot)."
 atomPath: "tax/jurisdictions/tax/returns"
-coordinate: "tax/jurisdictions/tax/returns · 7/descent · ee06ed8d"
-contentUuid: "8ce121c4-c7cd-54c3-ba87-997fbc0dd230"
-diamondUuid: "5b153231-0360-822b-8ef4-6c4d33cf42c1"
-uuid: "ee06ed8d-8da8-8702-b612-b2458c307ba4"
-horo: 7
+coordinate: "tax/jurisdictions/tax/returns · 4/weave · 887701ac"
+contentUuid: "21cfb0ff-b43f-5315-a426-78a55a3284ad"
+diamondUuid: "5bca3bf9-2035-86f9-af6c-63478f13ccf0"
+uuid: "887701ac-294a-857c-96e9-8d78add94d9b"
+horo: 4
 typography:
   partition: tax
   bondDegree: 36
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "969e2d4b-73db-83ae-8290-c8815acb75c2"
+  computationUuid: "355678a6-bf6c-89ea-86e7-40dc1e6ba719"
   stages:
     - stage: path
       stageUuid: "a44202f3-a563-85a8-9f00-119842b45928"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "70c2284b-bdd1-8d57-8218-2436c570f114"
     - stage: horo
-      stageUuid: "416533d5-20d2-886c-863f-39b00f1aa281"
+      stageUuid: "85adb10b-b5ac-882b-920f-41158715ec6e"
     - stage: seal
       stageUuid: "1198fef1-b364-81d5-a37b-1bfb85b0ed93"
     - stage: uuid
-      stageUuid: "1d486dc7-f64f-8cdb-b861-9a6d89b79afb"
+      stageUuid: "adc2afb9-e562-87e0-872f-b086e22db02f"
 version: 2
 ---
 # tax-returns

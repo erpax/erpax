@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "basis",
-    "uuid": "e6dd0a84-c460-823e-ad05-cb9da843e8d9",
+    "uuid": "52dbba8f-9155-8f00-acab-abdca48851ac",
     "words": [
       "basis"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about basis — Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves",
-    "uuid": "bd752d71-e245-85a1-93f8-bee1c6fcb844",
+    "uuid": "db8474d2-833a-8d51-96dd-3d00dcf47cc0",
     "words": [
       "use",
       "when",

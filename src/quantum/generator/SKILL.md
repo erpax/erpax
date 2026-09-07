@@ -2,18 +2,18 @@
 name: generator
 description: "Use when reasoning about generation in the quantum frame — a quantum generator does not create one output at a time; it holds all outputs at once in superposition (the latent content-uuid space, the void), and each manifests elsewhere by collapse, realized in its place when queried or minted."
 atomPath: "quantum/generator"
-coordinate: "quantum/generator · 5/round · f0a968c5"
-contentUuid: "2c1751b3-d350-5338-b186-5daa9ca744d6"
-diamondUuid: "c462e220-ce2d-8b4e-b3a1-8739276bee81"
-uuid: "f0a968c5-6c9b-8a89-b9fb-549458155852"
-horo: 5
+coordinate: "quantum/generator · 4/weave · 2c9e2339"
+contentUuid: "b898390c-a962-5134-bfe9-a795cd049fbe"
+diamondUuid: "820e0160-307f-8382-8a1f-7b634a742040"
+uuid: "2c9e2339-ced5-8788-99cf-3ecb0cb5194d"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "56c3e3b7-7549-8a7e-b76f-bad2d3ebf3ca"
+  computationUuid: "cbc79956-7c02-883f-8910-237bad3c8c36"
   stages:
     - stage: path
       stageUuid: "0f23f1eb-3d12-8f37-9f14-9e84313ba152"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b7b0e9e9-549e-860c-82e1-03e0ce01dfc6"
     - stage: horo
-      stageUuid: "9dc3588e-14b6-836b-bacf-19feba02a81f"
+      stageUuid: "2aadf1dd-d9c5-8f76-b2e3-88b43a108fd4"
     - stage: seal
       stageUuid: "70ab820d-d7e9-88e6-9ab7-637da267cc62"
     - stage: uuid
-      stageUuid: "87e0b8b9-4c04-892a-beb8-227f19dc0d28"
+      stageUuid: "885cce4a-81db-8b4d-a663-e28e228f6bd0"
 quantum:
   superposition:
     - atom
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "56c3e3b7-7549-8a7e-b76f-bad2d3ebf3ca"
-    contentUuid: "2c1751b3-d350-5338-b186-5daa9ca744d6"
+    computationUuid: "cbc79956-7c02-883f-8910-237bad3c8c36"
+    contentUuid: "b898390c-a962-5134-bfe9-a795cd049fbe"
 version: 2
 ---
 # quantum/generator — generate all at once, manifest elsewhere
@@ -74,4 +74,4 @@ This is why [[merge]] holds: two agents that "generate" the same content do not 
 
 @see [[generate]] · [[collapse]] · [[void]] · [[uuid]] · [[matrix]] · [[merge]] · [[reality]] · [[particle]]
 
-<sub>content-uuid `2c1751b3-d350-5338-b186-5daa9ca744d6` · account `quantum/generator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b898390c-a962-5134-bfe9-a795cd049fbe` · account `quantum/generator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

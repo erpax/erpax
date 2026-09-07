@@ -2,11 +2,11 @@
 name: preparation
 description: Use when reasoning about preparation — Typical preparation that a patient must undergo before having the procedure performed.
 atomPath: "vocabulary/preparation"
-coordinate: "vocabulary/preparation · 7/descent · a34f62b3"
-contentUuid: "9dd0bf51-c2e1-5a30-8205-4ef3a127ba8f"
-diamondUuid: "337429d6-3b30-8b92-871d-da43a8d9ddba"
-uuid: "a34f62b3-63d2-8da4-8c8a-dec9cd19413b"
-horo: 7
+coordinate: "vocabulary/preparation · 1/base · c8b4af5e"
+contentUuid: "573da61a-b3e3-54f0-8095-34bcb7c29113"
+diamondUuid: "91445733-2aba-8c09-bfa5-1b3027a810b6"
+uuid: "c8b4af5e-41f6-8405-b9f2-f7c9eef407a1"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fab35db7-136e-8cde-9dec-d18b2a5c5626"
+  computationUuid: "290d7e5e-cc34-81ad-9041-267f9c2f73fc"
   stages:
     - stage: path
       stageUuid: "dbc3a8f8-0bf1-8dd2-b3fe-8c2f2463040e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c6e4b98b-9440-8bc7-8e1a-eb2b04ca1149"
     - stage: horo
-      stageUuid: "494a241d-002e-8e13-a748-a0b85cf142c2"
+      stageUuid: "d8c20206-ae96-8ef5-b41b-a8400f2d4de2"
     - stage: seal
       stageUuid: "eb747206-e911-855b-b6fe-32cac3afc6e9"
     - stage: uuid
-      stageUuid: "c97f0e2b-c8cf-85d7-a9ee-7b30edf41cbe"
+      stageUuid: "01b48128-510d-8981-85f0-df2963626253"
 version: 2
 ---
 # preparation

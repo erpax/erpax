@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cycle",
-    "uuid": "69906ebb-d88d-8152-94cd-33db7e6d5e89",
+    "uuid": "dad2ce83-5ffc-8ad3-bafc-c0c9dee6f407",
     "words": [
       "cycle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about splitting water and burning it back — the loop purifies and stores, and cannot generate. Hess's law makes over-unity an identity failure rather than an engineering one, and the model searches the whole efficiency space for a counter-example instead of asserting there is none.",
-    "uuid": "b49d4fbf-adfe-8f7f-bf3c-192ffa97c804",
+    "uuid": "92be32e0-fafb-8d16-8084-229373a79a92",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "metric",
-    "uuid": "9156ca35-ef1e-8618-94af-94a87058bc4c",
+    "uuid": "2b78431b-cd1e-85f6-8aae-135356d92875",
     "words": [
       "metric"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording a periodic quantitative observation — daily/weekly/monthly snapshot of performance (headcount, utilization %, defect rate, cost-per-unit, customer-satisfaction score). The data point.",
-    "uuid": "bce4fb8c-a245-87fd-9413-bfd25a61b145",
+    "uuid": "fb07c447-d555-8c25-96c7-5fb0398cb0a8",
     "words": [
       "use",
       "when",

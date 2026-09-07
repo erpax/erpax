@@ -2,11 +2,11 @@
 name: pitch
 description: "Use when reasoning about pitch — A schema.org component word, collided out of schema.org compounds — fused from CampingPitch (sti · collapse · merge)."
 atomPath: "vocabulary/pitch"
-coordinate: "vocabulary/pitch · 1/base · d366a27e"
-contentUuid: "1cf6acc2-9c8c-5b0e-b541-1c89f77852f4"
-diamondUuid: "d129eb5c-6484-8770-b89b-0fde356cb22e"
-uuid: "d366a27e-9d9a-8f91-b22c-120834e29d13"
-horo: 1
+coordinate: "vocabulary/pitch · 4/weave · 0d459849"
+contentUuid: "664af65e-0ce0-5441-906b-793cea70b341"
+diamondUuid: "dff8833d-9ca8-8b0e-afbd-1402f13ee7d1"
+uuid: "0d459849-263c-8191-a70c-7313d467d0a7"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ccf2c5c3-5783-8917-96a4-fab5d8810f23"
+  computationUuid: "f4a00256-368b-8f2d-ac3d-10f32050ac51"
   stages:
     - stage: path
       stageUuid: "89593aeb-f35f-8d1a-9171-c296ddca9bff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e86c9d5-29fe-83bd-8564-082e80511091"
     - stage: horo
-      stageUuid: "ab93605a-da55-8e58-aa1a-3a7853bced81"
+      stageUuid: "25767885-3893-871d-8349-62de3f2544b5"
     - stage: seal
       stageUuid: "bbaa0f9c-94b2-8290-9b55-5d679bfdde19"
     - stage: uuid
-      stageUuid: "819d0194-c349-8773-8c73-994b65f5af2d"
+      stageUuid: "7b7992ed-1ea8-8818-a566-245ec9484697"
 version: 2
 ---
 # pitch

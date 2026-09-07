@@ -2,18 +2,18 @@
 name: selector
 description: "Use when reasoning about selector — The control that lets a person choose light, dark, or **auto**. Auto is not a synonym for the current system value: choosing it *clears* the stored preference, so the page follows…"
 atomPath: "providers/theme/theme/selector"
-coordinate: "providers/theme/theme/selector · 4/weave · 3231b06d"
-contentUuid: "4dc51f5b-0a79-51e5-8879-9a460b920043"
-diamondUuid: "6fcc2dc1-469d-8508-bb02-34b3b77aa722"
-uuid: "3231b06d-731a-8a8c-977a-af5efea0144d"
-horo: 4
+coordinate: "providers/theme/theme/selector · 5/round · 467770da"
+contentUuid: "f74c2a86-5b99-5c61-a652-9d8a48ca4227"
+diamondUuid: "6a259a13-8b24-868f-855d-396193d6fefa"
+uuid: "467770da-1641-82b4-8505-df5c8605e043"
+horo: 5
 typography:
   partition: providers
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "200a5783-bbcb-8fc9-a518-8c296866fdac"
+  computationUuid: "e5be2903-06ec-8071-8d97-f069d7a8ab2b"
   stages:
     - stage: path
       stageUuid: "06d95ead-6c3a-8002-a364-7d9bdb010a52"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e3964405-7827-8e9b-843b-1e7de474d183"
     - stage: horo
-      stageUuid: "7e244392-10be-8fb0-ba9a-55574efccc3b"
+      stageUuid: "b5af0bd7-9ed1-8eb1-ba5e-c0a0b8a429e1"
     - stage: seal
       stageUuid: "4f86d46a-b7d3-8f17-812b-00caeb67cce6"
     - stage: uuid
-      stageUuid: "80efcbab-1a45-8377-b4a6-f84ea794c25a"
+      stageUuid: "90b44f8b-5445-81b1-869e-dfeec4c1065d"
 version: 2
 ---
 # providers/theme/theme/selector — three options, because "auto" is one of them

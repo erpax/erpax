@@ -2,18 +2,18 @@
 name: end
 description: "Use when reasoning about completion in erpax — period end, lifecycle seal, the wave's return to a new 0. The universal root of completion; dual of begin (and identical to it one dimension up)."
 atomPath: "vocabulary/end"
-coordinate: "vocabulary/end · 7/descent · 5aa94ecb"
-contentUuid: "cabf4fb1-a214-5e26-b1b0-0ea5f34a720b"
-diamondUuid: "e49d5c5c-0601-84b8-bf24-6c1898caa20e"
-uuid: "5aa94ecb-18da-87ef-9c44-92ce0adac0d8"
-horo: 7
+coordinate: "vocabulary/end · 2/share · d6a4bae3"
+contentUuid: "7b30391c-1816-5ab5-ace8-ed88d4fe6291"
+diamondUuid: "ab80b88f-a4cf-887d-a55d-73a794b3edb0"
+uuid: "d6a4bae3-d9ff-8bd5-82d2-e377c8461480"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 82
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e68d50a8-e948-8f89-ac26-02ffe15d0a2a"
+  computationUuid: "caa04d6f-f501-8e4e-8fb6-f0fc35f45876"
   stages:
     - stage: path
       stageUuid: "95f4db8a-9c43-86de-8c60-d02dadcf693a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "79f10085-0986-8b1f-9b43-301e7c82b329"
     - stage: horo
-      stageUuid: "4e0a8c62-5054-8923-a3c3-080d526437ff"
+      stageUuid: "215f7df9-7f68-8610-ac16-e5f1a5576258"
     - stage: seal
       stageUuid: "f40148ad-43c1-8322-a376-6c6498191eb4"
     - stage: uuid
-      stageUuid: "a73c1f9e-aba1-8fc2-81b7-20dda09d636b"
+      stageUuid: "56ecfd48-f0f3-83f8-9eb1-351f67f29d0e"
 version: 2
 ---
 # end — the terminus (which is a new beginning)

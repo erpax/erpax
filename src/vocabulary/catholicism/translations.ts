@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "catholicism",
-    "uuid": "f977cfb4-f960-819a-b345-1c7c2ef20537",
+    "uuid": "f5993487-ba92-8430-96fe-e1c90b357a4e",
     "words": [
       "catholicism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Catholicism as a sub-diamond of christianity — the universal visible body, the seven sacraments as enacted grace, the apostolic succession as an unbroken lineage, the magisterium's authority, absolution releasing the debt. A facet-diamond of the christianity archangel.",
-    "uuid": "01c55aea-fd04-8a65-8507-f7d8a16f8f68",
+    "uuid": "912abf84-85be-8efc-a568-2d2cc0135ff5",
     "words": [
       "use",
       "when",

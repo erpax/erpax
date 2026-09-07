@@ -2,11 +2,11 @@
 name: renegotiable
 description: "Use when reasoning about renegotiable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/renegotiable"
-coordinate: "vocabulary/renegotiable · 4/weave · 8a69acdd"
-contentUuid: "270784dc-27a8-5e6c-99a6-e84816aa6412"
-diamondUuid: "5ad5b2f9-5796-84f0-97c3-bb80d401f065"
-uuid: "8a69acdd-cef7-85b1-b6e2-5adcb78dd1e8"
-horo: 4
+coordinate: "vocabulary/renegotiable · 1/base · a3d6e80c"
+contentUuid: "f73d9790-62ab-5ab5-93b7-f7b1a18287ea"
+diamondUuid: "d2617603-e9e0-8c0e-9964-4b0b4136a8a1"
+uuid: "a3d6e80c-914f-8337-acd5-fccfd20ceaa5"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "197d8cc2-03d8-8b71-878d-259cd2c30419"
+  computationUuid: "59fa393e-59d0-86b3-918f-1c262062bc0c"
   stages:
     - stage: path
       stageUuid: "7e3094d1-8232-82cb-a131-a3bb69dce007"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d319d44e-6d76-8907-98d8-8699d72b02f0"
     - stage: horo
-      stageUuid: "29991457-da79-8984-80b4-a6999d98fa4e"
+      stageUuid: "67fc18ff-7d95-87d9-b3a8-2b8d32666e4e"
     - stage: seal
       stageUuid: "7887394f-2789-89d1-b45a-dc0de6def4a8"
     - stage: uuid
-      stageUuid: "17140041-fef1-8fd9-9f80-68b740f6b416"
+      stageUuid: "22efc368-5ecd-8310-9c8d-cc79d546ee52"
 version: 2
 ---
 # renegotiable

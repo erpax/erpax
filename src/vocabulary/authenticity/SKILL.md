@@ -2,11 +2,11 @@
 name: authenticity
 description: "Use when reasoning about authenticity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/authenticity"
-coordinate: "vocabulary/authenticity · 1/base · f223fb21"
-contentUuid: "9f444447-ea5a-5b32-adf9-4b33955fb372"
-diamondUuid: "05377ed0-690f-8394-87e7-8f8b8cd02e2c"
-uuid: "f223fb21-023f-87b9-8a1f-52672d2ee314"
-horo: 1
+coordinate: "vocabulary/authenticity · 2/share · 269738cc"
+contentUuid: "f527ded3-65c3-580e-a914-effc0830a2e4"
+diamondUuid: "2605fe73-0262-843b-9ef7-9497df177789"
+uuid: "269738cc-b060-8859-b24d-8d3dd85e3238"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0fd1f886-b96f-870e-bff4-3c60ac73cf03"
+  computationUuid: "7abba5f8-4572-8282-b4f8-a15144e1785f"
   stages:
     - stage: path
       stageUuid: "57af4706-fc40-8ce6-aa85-2e6244df522d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4973455c-d15a-83ba-8847-c340710ea434"
     - stage: horo
-      stageUuid: "081aa2f9-82c6-88a7-b1b1-da8b6fd3b4d0"
+      stageUuid: "93647292-def9-8fea-be5d-1a341908a015"
     - stage: seal
       stageUuid: "273ea9f1-8ace-8fe9-8a00-48c768cdc7d0"
     - stage: uuid
-      stageUuid: "e039b1fd-4a59-8158-aba1-a543776c1a8f"
+      stageUuid: "11e52b92-eefe-800f-97e3-e987e64334c9"
 version: 2
 ---
 # authenticity

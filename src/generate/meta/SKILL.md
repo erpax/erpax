@@ -2,11 +2,11 @@
 name: meta
 description: "Use when reasoning about meta — builds the Next.js — title, description, Open Graph image — from the Payload document being rendered."
 atomPath: "generate/meta"
-coordinate: "generate/meta · 2/share · 051c82c6"
-contentUuid: "8f5f224a-85db-5215-a005-ee6f85f8254d"
-diamondUuid: "fa459d16-fdae-86d0-a005-8b0e8e490456"
-uuid: "051c82c6-35dc-85bd-a4c3-d5a98122c1a2"
-horo: 2
+coordinate: "generate/meta · 7/descent · f4b4ea83"
+contentUuid: "835b05a3-c4ad-54a5-93e2-4cb87411c003"
+diamondUuid: "91065e0f-24a9-8e34-a6cf-918006f29f37"
+uuid: "f4b4ea83-461d-88c6-a918-f43ae82a5996"
+horo: 7
 typography:
   partition: generate
   bondDegree: 3
@@ -18,7 +18,7 @@ standards:
   - "W3C-HTML5 §4.2.5 meta-element"
 bindings: []
 signatures:
-  computationUuid: "169329f6-5717-8293-a9d3-fa4cdcfeb6d2"
+  computationUuid: "d5822f06-5ca0-825d-a9ad-d3a70726b31d"
   stages:
     - stage: path
       stageUuid: "707d489c-52d4-853a-856d-53dd15883d1b"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "fdc267fe-91ff-8137-ae64-5fd2633b48ae"
     - stage: horo
-      stageUuid: "a512580a-cf6c-8a22-b7b7-6738f4b507ba"
+      stageUuid: "2cf6aa01-4a35-80a8-8fee-330e7e43e5c6"
     - stage: seal
       stageUuid: "385817c8-d290-887a-bf7f-54c86a21d8f5"
     - stage: uuid
-      stageUuid: "8176bc76-4fd5-8d1a-bcb1-8dd39bf31add"
+      stageUuid: "848a47a7-142b-8e73-9dde-3dcf78a42174"
 version: 2
 ---
 # generate/meta — a page's metadata is derived from the document, never typed twice

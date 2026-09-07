@@ -2,11 +2,11 @@
 name: path
 description: "Use when normalizing addresses across every surface — fs, url, github, mcp, api, and http all collapse to one canonical atom path; the merge point where external APIs entangle with erpax in all quantum dimensions."
 atomPath: path
-coordinate: "path · 1/base · a248c679"
-contentUuid: "75d0d2aa-30cc-5475-9d49-d9cf176913aa"
-diamondUuid: "402110be-d6cc-8637-bc8c-0b97963049e8"
-uuid: "a248c679-8b71-8e0c-b868-e8817cab7112"
-horo: 1
+coordinate: "path · 4/weave · ce16956e"
+contentUuid: "310ceca5-aa34-5f00-8f64-4a81d6590959"
+diamondUuid: "6c308b28-c94d-8a8f-a28a-c215ca543fec"
+uuid: "ce16956e-89bf-824b-8a75-1ee92b3e3c15"
+horo: 4
 typography:
   partition: path
   bondDegree: 177
@@ -18,7 +18,7 @@ bindings:
   - "r2_buckets/NEXT_INC_CACHE_R2_BUCKET"
   - "r2_buckets/R2"
 signatures:
-  computationUuid: "06795baf-4288-84cf-b6bb-026e27179899"
+  computationUuid: "622c8e71-ff2f-8a1b-a83c-34a67e4c48bc"
   stages:
     - stage: path
       stageUuid: "702b9111-e70d-8fe7-bd92-35925a245571"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "aa946392-de93-8642-9ad7-b909e78b7740"
     - stage: horo
-      stageUuid: "ab2af16a-a319-84f5-b664-57768cf55665"
+      stageUuid: "0e0c014a-ff10-86f2-abbf-26bf6a7c7f26"
     - stage: seal
       stageUuid: "483c3953-6066-8789-bf80-9934c1047eef"
     - stage: uuid
-      stageUuid: "aaf5d512-e858-8212-bb92-417cfe5e6172"
+      stageUuid: "73a8d9d8-2bcb-8a15-b59a-25d636587f96"
 version: 2
 ---
 # path — all meet computationally in THE path

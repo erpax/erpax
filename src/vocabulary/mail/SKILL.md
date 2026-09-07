@@ -2,11 +2,11 @@
 name: mail
 description: "Use when reasoning about mail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mail"
-coordinate: "vocabulary/mail · 4/weave · 30d4e6f1"
-contentUuid: "d8b656a6-e70f-5df3-b04f-da33fe0c180f"
-diamondUuid: "dba0a83e-3490-8a87-b680-5b4e094d4e69"
-uuid: "30d4e6f1-752d-856f-a6d5-cd8d0082df31"
-horo: 4
+coordinate: "vocabulary/mail · 7/descent · 13f3b92d"
+contentUuid: "10c83265-1e0b-5d45-a22c-ff37a5378664"
+diamondUuid: "50611464-4a85-8bb3-ac45-d2b51ca442ae"
+uuid: "13f3b92d-610e-825a-a13d-d5158c474e80"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "96e202f8-d6e2-81e6-be7f-0ca5f76bde4e"
+  computationUuid: "b656857c-7d16-8ccd-9aab-157f54eccff4"
   stages:
     - stage: path
       stageUuid: "c96e716a-fa70-839c-83eb-6fedec8e4ecc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f4967411-0ff4-88cf-9f13-b4ab75357617"
     - stage: horo
-      stageUuid: "2ed4df36-bc04-8200-ac33-b5ec72d2cf16"
+      stageUuid: "83ff8ef2-0542-84f4-9465-adc947f32048"
     - stage: seal
       stageUuid: "1267c945-83af-8e03-b931-bacc1899ad96"
     - stage: uuid
-      stageUuid: "600bed3a-a1a0-8ffd-ace8-94a2103c7319"
+      stageUuid: "a21d52a6-c394-8405-884c-05339bfdcdac"
 version: 2
 ---
 # mail

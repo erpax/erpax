@@ -2,18 +2,18 @@
 name: type
 description: "Use when categorizing an entity into a taxonomic class — customer type (company/individual), transaction type (sale/purchase), account type (asset/liability/equity). A select field carrying domain-specific enums; often paired with status for state-machine workflows."
 atomPath: type
-coordinate: "type · 7/descent · fd420e49"
-contentUuid: "5996cfa8-a666-5331-bffe-65b8871f2ae1"
-diamondUuid: "70533011-6b27-88bf-afec-98dddbfce165"
-uuid: "fd420e49-82b8-86ec-b116-421a48c45948"
-horo: 7
+coordinate: "type · 4/weave · 9ac40052"
+contentUuid: "76057b33-3de2-5d58-8b39-4be6c25f7323"
+diamondUuid: "49e46d4c-6a1c-89af-834b-29f486e5049e"
+uuid: "9ac40052-6ef2-8a20-bf72-f660c6551ff7"
+horo: 4
 typography:
   partition: type
   bondDegree: 279
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bdb8d4f2-f171-87e1-b0eb-5f6ab975387b"
+  computationUuid: "5f172221-e00b-857f-bdca-8aba86c9336c"
   stages:
     - stage: path
       stageUuid: "d059d0bc-37de-837f-9e44-cbd4b54af293"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "16657dc4-49cd-8c30-bcb9-2286be97e0ff"
     - stage: horo
-      stageUuid: "f353871b-022a-8f6b-a45c-c0eeaf197c5b"
+      stageUuid: "d9a15613-b924-88a7-ba9a-77cda0dec36b"
     - stage: seal
       stageUuid: "19da2939-3f63-8a86-89c5-64146d5f3806"
     - stage: uuid
-      stageUuid: "a08b0090-d690-8dc5-9264-9ef0daa5c0b5"
+      stageUuid: "63c167c0-5431-8964-ac1f-423d8c1d0012"
 version: 2
 ---
 # type

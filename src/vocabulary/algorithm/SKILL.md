@@ -2,11 +2,11 @@
 name: algorithm
 description: Use when reasoning about algorithm — The algorithm or rules to follow to compute the score.
 atomPath: "vocabulary/algorithm"
-coordinate: "vocabulary/algorithm · 1/base · fa7b1323"
-contentUuid: "74c4c322-737b-54d3-8967-2e5af5a03599"
-diamondUuid: "36c66217-9105-84f0-b756-843eadd19e94"
-uuid: "fa7b1323-7d1d-8227-8c18-8a466a3ce399"
-horo: 1
+coordinate: "vocabulary/algorithm · 8/crest · 27a68d18"
+contentUuid: "e0b98720-d85d-5357-b9f5-e84be7954874"
+diamondUuid: "c52ad534-3f1d-8559-a9bc-6ca37f8fa06d"
+uuid: "27a68d18-cac1-8856-a0e4-875ac9f6f4c4"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8072e10c-e6f1-8694-8854-3d0c5c0fd3b2"
+  computationUuid: "8d84208c-f52c-8302-8656-e7840155abac"
   stages:
     - stage: path
       stageUuid: "c330ab29-c066-83eb-8da6-ad3ef9ccc787"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c9bba3ef-3067-889b-95d3-1ede4717dd34"
     - stage: horo
-      stageUuid: "6a9e2a3e-40dd-8fcd-aa5d-978261fe51f0"
+      stageUuid: "42f87288-960b-859c-b9e6-05ab2653746d"
     - stage: seal
       stageUuid: "10b60691-7971-8bae-b445-ca9d5a1c830b"
     - stage: uuid
-      stageUuid: "ee9f26cb-aef5-8ddf-a5c7-50c4042a7b66"
+      stageUuid: "ebd8e002-d738-828c-83a7-2448ed911835"
 version: 2
 ---
 # algorithm

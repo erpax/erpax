@@ -2,11 +2,11 @@
 name: named
 description: "Use when reasoning about how an atom is addressed — the convention that every SKILL.md frontmatter name equals its folder leaf word (the name IS the path), measured live as coverage = matching / total over the real corpus tree."
 atomPath: "convention/named"
-coordinate: "convention/named · 5/round · 3de2d42b"
-contentUuid: "63b92bd8-958c-5ba8-88df-5f7d6f403e67"
-diamondUuid: "76fc324d-1b8c-8a11-99d6-63ed7d9f4cb5"
-uuid: "3de2d42b-18b1-8d98-8f86-3b9a24b8242f"
-horo: 5
+coordinate: "convention/named · 8/crest · 9c2c634f"
+contentUuid: "e566fbec-27b0-503e-a1a5-e273a9708792"
+diamondUuid: "f083956d-e380-8767-81c5-d60aa19185cd"
+uuid: "9c2c634f-3c34-86fc-818d-1af6e3a9cc55"
+horo: 8
 typography:
   partition: convention
   bondDegree: 36
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9bfe7293-bf3e-8ec9-af8d-6644dec0dd22"
+  computationUuid: "9ec13f3e-c2b8-8dd0-b4e3-adbe26970928"
   stages:
     - stage: path
       stageUuid: "2a80a10f-dd23-8d7b-9477-2c7ca12044b9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2e5d4db3-9fd5-8316-aada-a6fda667a953"
     - stage: horo
-      stageUuid: "a1537043-512b-8d6f-a83d-62618320b328"
+      stageUuid: "0c43817b-22a8-814f-95f1-3f93627a29c8"
     - stage: seal
       stageUuid: "47367ae6-ff50-85a1-a42f-49e926fe7cf3"
     - stage: uuid
-      stageUuid: "9cbfd587-5768-8f7b-a853-4d5c25cb3737"
+      stageUuid: "9f9d9494-7bf3-86ba-9682-78f29c550b08"
 version: 2
 ---
 # convention/named — the name is the path

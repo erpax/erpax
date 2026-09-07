@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "communication",
-    "uuid": "d55e9a85-e236-8fff-adf0-f906d57d335f",
+    "uuid": "d4cf1c51-a155-8bd4-b8f3-a4797b8e6bd0",
     "words": [
       "communication"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about communication on the quantum level — a message is a content-uuid (no-cloning, so a forged message has a different uuid), the channel is entanglement, and a received message is intact iff its uuid matches the original.",
-    "uuid": "1e4c4352-82ff-880f-9839-dab8e173e2eb",
+    "uuid": "9cd22cb0-d1e3-87ee-8f16-a7fe6e5380ed",
     "words": [
       "use",
       "when",

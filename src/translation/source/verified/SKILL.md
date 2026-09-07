@@ -2,11 +2,11 @@
 name: verified
 description: "Use when you need the sense-verified translation seed and its computed renderings — only the concept→Qid judgment is stored (58 unambiguous concept atoms, each admitted because a candidate's description sense-matched the atom's meaning); the per-locale labels are a computed projection of each Qid, sealed content-addressed in the gitignored cache. Theorems replace hardcoded values: the seed is data, the renderings are a read. Nothing fabricated; unsure senses stay gaps."
 atomPath: "translation/source/verified"
-coordinate: "translation/source/verified · 4/weave · 7ed180ab"
-contentUuid: "8f1a3239-d1da-54d1-a7b2-34bc192108ae"
-diamondUuid: "d00a48f3-1ebe-8e26-9cb4-97291a4eb982"
-uuid: "7ed180ab-4926-89fe-bde6-82d796dff8d9"
-horo: 4
+coordinate: "translation/source/verified · 5/round · 66a03a42"
+contentUuid: "11bc0e9d-df24-5a57-b7b5-92be13d509cb"
+diamondUuid: "a5d2a51f-97ac-8910-8d1d-ddc9b971f48c"
+uuid: "66a03a42-c56f-8364-87a9-aac760557751"
+horo: 5
 typography:
   partition: translation
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "Wikidata (CC0) · Wikimedia MediaWiki API · BCP-47 locale tags · RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "660aa3b9-ff4c-8c4d-b7d8-9402b2275abb"
+  computationUuid: "91388b1a-ff1e-8a28-a3b7-f8caabcea254"
   stages:
     - stage: path
       stageUuid: "3b872430-984f-8879-a285-fdc86e1662b7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "db6df6ef-f1ee-8a2a-be90-c366acc9afae"
     - stage: horo
-      stageUuid: "6a424d67-b14d-8446-87c0-f6b683738098"
+      stageUuid: "1744d54f-147d-89b3-9906-9ab77acc24da"
     - stage: seal
       stageUuid: "d33e06a6-fa58-8448-bfb3-5c72f4c6f5c5"
     - stage: uuid
-      stageUuid: "fd2d8b51-55fa-8348-b81c-834b5bebf286"
+      stageUuid: "230cca35-9460-8ca2-b0fa-f67dd18b077c"
 version: 2
 ---
 # verified — the seed is stored, the renderings are computed

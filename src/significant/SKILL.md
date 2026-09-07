@@ -2,11 +2,11 @@
 name: significant
 description: "Use when reasoning about significant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: significant
-coordinate: "significant · 5/round · ac1e76ed"
-contentUuid: "fe0b1c3a-96cd-5484-9273-4023e6d2dc6f"
-diamondUuid: "5b0fb78c-a8d1-8928-b0f0-58a5d7378357"
-uuid: "ac1e76ed-7257-84e8-bda4-d764fcc74181"
-horo: 5
+coordinate: "significant · 2/share · 0ea9a73e"
+contentUuid: "75665ed2-998f-56dd-a831-a79b35b722a9"
+diamondUuid: "b117bede-2e3c-8b32-8aef-cbff3bc06b0f"
+uuid: "0ea9a73e-a0b6-8c1e-b433-ff972341e264"
+horo: 2
 typography:
   partition: significant
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0782478a-a049-8d91-854c-006b3c0bdc46"
+  computationUuid: "9660a661-77a9-80f3-b65d-70b2d77b0646"
   stages:
     - stage: path
       stageUuid: "c46fb2cc-bc4d-82fd-800e-6d36fa13cceb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6f0feaba-cbd5-8cee-a4ec-462012b5648f"
     - stage: horo
-      stageUuid: "d1b97f6a-3315-8577-b445-538a2410b462"
+      stageUuid: "67a2abed-948d-84b6-b079-ce68ce13971b"
     - stage: seal
       stageUuid: "f32567ec-9491-8ecf-9bf4-effbf8b6d997"
     - stage: uuid
-      stageUuid: "7db98e88-889e-8d6c-9be6-0ae93fdb1260"
+      stageUuid: "15607fdf-5586-8350-bfab-54c384190aae"
 version: 2
 ---
 # significant

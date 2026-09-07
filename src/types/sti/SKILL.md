@@ -2,11 +2,11 @@
 name: sti
 description: "Use when reasoning about sti — names the column, and describe the union, and , and narrow a row to its subtype without a cast."
 atomPath: "types/sti"
-coordinate: "types/sti · 2/share · 856ef0ea"
-contentUuid: "4f9d3fbb-af6d-5c5d-a6cf-bf1f4c4a0629"
-diamondUuid: "c53de466-c19d-8479-8e00-385274fb3fce"
-uuid: "856ef0ea-8eee-8e54-9559-e711873c18c1"
-horo: 2
+coordinate: "types/sti · 1/base · 7643663e"
+contentUuid: "94d88961-cb82-516d-979f-f2024772bc3b"
+diamondUuid: "51ae5a46-9715-8e29-8ab5-ba8891ea26dc"
+uuid: "7643663e-6c24-8358-bb92-8e0088c7a664"
+horo: 1
 typography:
   partition: types
   bondDegree: 4064
@@ -15,7 +15,7 @@ standards:
   - "ECMA-262 ECMAScript-2024 baseline"
 bindings: []
 signatures:
-  computationUuid: "302af557-cf19-85a6-bc96-3cea145742a5"
+  computationUuid: "96d24d6f-d3c3-8e28-aa82-704323924950"
   stages:
     - stage: path
       stageUuid: "65f9d276-ea64-81b7-9f28-743f46e638f4"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "455d9d87-a8af-8efc-8427-60a341b8d201"
     - stage: horo
-      stageUuid: "31d55b15-e0b7-8e5a-941f-76bae29f6361"
+      stageUuid: "a34ab25a-dd28-87f6-8bba-e8cca679cb27"
     - stage: seal
       stageUuid: "d6c145e8-b6d0-84ed-87ce-a13d635c7b6a"
     - stage: uuid
-      stageUuid: "7dde0926-d49f-8a64-b15e-618fc7ecc705"
+      stageUuid: "cb8d1d0e-4a4a-8695-9ea8-451874af9c72"
 version: 2
 ---
 # types/sti — one table, one discriminator, many subtypes — narrowed rather than cast

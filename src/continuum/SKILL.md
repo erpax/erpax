@@ -2,18 +2,18 @@
 name: continuum
 description: "Use when reasoning about continuum — Cantor Continuum Hypothesis via basis decomposition - set theory"
 atomPath: continuum
-coordinate: "continuum · 8/crest · bc9e244f"
-contentUuid: "db1bc43d-e682-5aca-befd-873987814e01"
-diamondUuid: "adba27e5-f794-8824-b271-03e2a72fe799"
-uuid: "bc9e244f-6d37-870a-8509-2aac6bd10d2a"
-horo: 8
+coordinate: "continuum · 4/weave · 411a681d"
+contentUuid: "a9d4a72d-0296-5964-b0f7-108baf94b9ff"
+diamondUuid: "b4e8822d-41c7-82e1-a2cf-0573f7682dcb"
+uuid: "411a681d-d2b2-838e-bdee-9fe263b06115"
+horo: 4
 typography:
   partition: continuum
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7f1a31b6-b9c4-8260-b8da-ceb8ba9d1c91"
+  computationUuid: "88f30a79-a6b2-803e-976e-fad0d9bc0af6"
   stages:
     - stage: path
       stageUuid: "c7b469cb-7849-8eec-b667-0864694f5559"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0f4e7c4d-4470-8161-9442-f0edd076cb24"
     - stage: horo
-      stageUuid: "71a50377-81d4-8711-9ada-4ea3a3187f6f"
+      stageUuid: "83e9cb3b-e088-879d-9c6b-c92d1fcf12ed"
     - stage: seal
       stageUuid: "fa850f69-1ff3-8eed-b769-8c628356d3e6"
     - stage: uuid
-      stageUuid: "ad0fc215-2219-8bb2-a154-ababa53546c1"
+      stageUuid: "2f9ac9a8-a09f-86ff-bf44-2a05067f85c6"
 version: 2
 ---
 # continuum — Cantor Continuum Hypothesis via basis decomposition

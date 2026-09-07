@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lower",
-    "uuid": "50defe20-94e2-8fc0-af55-9f68b330deef",
+    "uuid": "06cdfa47-0475-8c99-ac8f-2ee45acde45f",
     "words": [
       "lower"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lower as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "6d4e21b6-ddf3-8fd5-9e5a-6ae7fb41b105",
+    "uuid": "e17dc3a1-3b2a-824b-bb5e-82d4f8db3b18",
     "words": [
       "use",
       "when",

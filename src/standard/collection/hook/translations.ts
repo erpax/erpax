@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hook",
-    "uuid": "20df54dc-a2d3-8fdb-acd3-48a0b6012c25",
+    "uuid": "463f1b49-922f-892f-8f5b-fb72e9efaf9b",
     "words": [
       "hook"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hook — Every accountable collection needs the same three things: its tenant filled in before validation, its author recorded on change, and its audit entry written after.",
-    "uuid": "0570c80b-77a1-8f4c-989c-468da450d3ae",
+    "uuid": "5dfb3b29-d1da-8b81-b6ad-3d48ec538a77",
     "words": [
       "use",
       "when",

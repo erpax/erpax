@@ -2,11 +2,11 @@
 name: nav
 description: "Use when reasoning about nav — lays the dashboard out on a fixed grid and moves across it, wrapping at every boundary via : moving left from the first column arrives at the last, and up from the first row…"
 atomPath: "dashboard/nav"
-coordinate: "dashboard/nav · 4/weave · 08c083f7"
-contentUuid: "2ede5d5b-1a09-5f94-a6c7-7a268a696c55"
-diamondUuid: "bde36025-44cc-8f45-a601-9786e91f0e4b"
-uuid: "08c083f7-3519-829d-a789-63168187bc0c"
-horo: 4
+coordinate: "dashboard/nav · 7/descent · 3cbb830d"
+contentUuid: "978b65f0-ff72-5842-b99d-c557ff55ff30"
+diamondUuid: "20c05895-ef0a-8366-b779-2c0307f0aec6"
+uuid: "3cbb830d-9bde-84d8-a851-455dc0ffd987"
+horo: 7
 typography:
   partition: dashboard
   bondDegree: 7
@@ -17,7 +17,7 @@ standards:
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "9d89af39-1938-80d9-a26f-a4f2d86a6ff8"
+  computationUuid: "45ac257c-67d2-8bea-a1b1-908968148c65"
   stages:
     - stage: path
       stageUuid: "3af63687-afd7-8100-8aaf-401b99f8e78e"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "7541e756-4e17-8c3e-b451-57f33988dd1c"
     - stage: horo
-      stageUuid: "13cfd6cf-30d4-8674-905c-47452e6a988f"
+      stageUuid: "de630b02-9ed6-89b1-bcdb-5ed9bd956a29"
     - stage: seal
       stageUuid: "d8ff621d-fd0f-8cc2-b06b-01bbf5a5528a"
     - stage: uuid
-      stageUuid: "b046a284-0395-842e-abc6-6b9d3f7e26c4"
+      stageUuid: "7a0ff4b1-1872-80a7-bfcd-883ec3fe074a"
 version: 2
 ---
 # dashboard/nav — the navigation is a torus, so no cell is an edge

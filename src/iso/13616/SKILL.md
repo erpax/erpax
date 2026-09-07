@@ -2,10 +2,10 @@
 name: "13616"
 description: Use when implementing or referencing ISO 13616 — IBAN.
 atomPath: "iso/13616"
-coordinate: "iso/13616 · 2/share · 8da26d3b"
-contentUuid: "cba59062-bb58-535b-b518-fae820b37c69"
-diamondUuid: "97e7b038-a0ac-8c58-96e1-6976a45b65d6"
-uuid: "8da26d3b-dddc-8a0b-b5c0-0f7f74ae058c"
+coordinate: "iso/13616 · 2/share · 2011bde2"
+contentUuid: "a280f70a-3b95-5656-a590-2b1440790c87"
+diamondUuid: "26a2499f-af92-8b31-92a6-298643f75389"
+uuid: "2011bde2-ebfe-81eb-a6df-a2d00e0e131a"
 horo: 2
 typography:
   partition: iso
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3c131ad3-8b19-869a-92dc-f36f144e0716"
+  computationUuid: "d27a30de-0052-8819-a1a1-7ce2cc2e59b1"
   stages:
     - stage: path
       stageUuid: "a6497596-f432-84f5-b0c0-f2f977696194"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "81287d2a-68b0-8d79-ba49-af87203f25b6"
     - stage: horo
-      stageUuid: "1b48a0c8-9614-8648-95cd-a552b258af35"
+      stageUuid: "21046b62-0eeb-8b82-982e-b4c30af523da"
     - stage: seal
       stageUuid: "2bd5b69b-6e79-861a-b3f2-811e7836ae1d"
     - stage: uuid
-      stageUuid: "92a0df0e-8128-8eed-bdc1-e6f8fb359ca1"
+      stageUuid: "581b9698-6f73-8346-9f17-9269d51fc5a2"
 version: 2
 ---
 # ISO 13616 — IBAN

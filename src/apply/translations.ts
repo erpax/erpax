@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "apply",
-    "uuid": "043ca3bb-c84e-83a6-8a83-0c169261bef5",
+    "uuid": "e96260d0-e0e9-8832-856e-ea7e6e7d2a09",
     "words": [
       "apply"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about apply — A schema.org component word, collided out of schema.org compounds — fused from ApplyAction · directApply (sti · collapse · merge).",
-    "uuid": "410ed335-5321-84a4-a35f-344da16d84ce",
+    "uuid": "181fa7a7-50ba-8118-ac7c-4f42d3eafdb3",
     "words": [
       "use",
       "when",

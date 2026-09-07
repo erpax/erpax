@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "collections",
-    "uuid": "79909499-1330-889c-88b4-4081c7acf0e6",
+    "uuid": "a101c70f-3d38-85a3-8156-68689dc3aaa6",
     "words": [
       "collections"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or debugging a Payload Collection or Global config — slug, fields, admin options, access, hooks, auth, upload, versions/drafts, timestamps, labels, default sort, or registering it in the config.",
-    "uuid": "1d31bc5e-3262-8fbe-b388-23f0468db6ab",
+    "uuid": "eb68f42f-1cf0-81fb-8308-25f5d2fb5877",
     "words": [
       "use",
       "when",

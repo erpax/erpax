@@ -2,11 +2,11 @@
 name: eye
 description: "Use when reasoning about eye as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/eye"
-coordinate: "vocabulary/eye · 1/base · d5d6314f"
-contentUuid: "381dfee1-bd2d-50c2-b443-25857a24801f"
-diamondUuid: "b6239043-b173-8ed5-b183-eabced4fa800"
-uuid: "d5d6314f-f9ee-88d2-892e-78c3e2bd7203"
-horo: 1
+coordinate: "vocabulary/eye · 5/round · 86d02fff"
+contentUuid: "a21bb4f1-309f-5b5b-a2f2-de65058d44ab"
+diamondUuid: "c082cc5e-ef73-8b51-a7e0-f2a046bdf5b5"
+uuid: "86d02fff-388d-8c28-be0c-eeaa81f577cb"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f195e8f3-7324-80cc-adf7-0f215a158a3f"
+  computationUuid: "34a39c0c-cf4c-864c-b452-44ffea14b93a"
   stages:
     - stage: path
       stageUuid: "56c9624c-8ae3-81b0-9841-3329a406dc3c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f8c5369a-7f89-8a38-a0f2-3664f0b97f7e"
     - stage: horo
-      stageUuid: "5eaeb124-3f67-8f2c-9cee-ffb6220573d3"
+      stageUuid: "511e2ce5-e3ae-805b-b808-07388a494bea"
     - stage: seal
       stageUuid: "d4a5a215-5d56-8596-99b6-8e7fa62463d8"
     - stage: uuid
-      stageUuid: "f59e5ae2-67bf-8d38-a98d-af530b20ab08"
+      stageUuid: "e9546697-8201-8b5c-8ae9-3b4bdc81f2ee"
 version: 2
 ---
 # eye

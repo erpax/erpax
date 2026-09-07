@@ -2,10 +2,10 @@
 name: nerve
 description: "Use when reasoning about erpax's signal pathway — the nervous organ that fires ALL-OR-NOTHING. The action potential is the gate in flesh: a threshold crossed or not, never partial; idempotent within its refractory window; and leaping node-to-node by saltatory conduction. Three properties of the living nerve are computed and mapped — a structural isomorphism — onto erpax's gate and signal."
 atomPath: nerve
-coordinate: "nerve · 7/descent · ec3d44e7"
-contentUuid: "4e74569d-5f1b-574c-9ae2-269a0ac333b6"
-diamondUuid: "5121f9b6-6a4a-8966-b9d6-ecf1569df926"
-uuid: "ec3d44e7-c6b0-8570-9029-6f832a83dbee"
+coordinate: "nerve · 7/descent · 86207d41"
+contentUuid: "ae6c96c8-4609-508d-ac15-ed7e255ad7ee"
+diamondUuid: "5f4c577f-d581-8dcc-8055-671a1c739e50"
+uuid: "86207d41-1e8d-821d-839b-224da1c35e73"
 horo: 7
 typography:
   partition: nerve
@@ -15,7 +15,7 @@ standards:
   - "Hodgkin–Huxley action potential · resting ≈−70 mV, threshold ≈−55 mV, spike ≈+40 mV, refractory ~2 ms, saltatory up to ≈120 m/s"
 bindings: []
 signatures:
-  computationUuid: "5aa1427d-9f3c-8578-b167-ac299ba039b6"
+  computationUuid: "9ca37b3b-4392-8687-b145-5d54dde6f11e"
   stages:
     - stage: path
       stageUuid: "a95ca7a3-ff2f-84e8-8ad9-b0120e5233c5"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "94746510-e24f-81d0-8340-d53f02466756"
     - stage: horo
-      stageUuid: "889bbfee-09b6-84b1-9d17-d23082b9d9e0"
+      stageUuid: "2c820c83-d907-8905-833e-fd0ded958035"
     - stage: seal
       stageUuid: "c12c8ff0-61dc-8f9c-964c-f0151d594f37"
     - stage: uuid
-      stageUuid: "c88e5dda-1121-8b8b-8858-39c3c5fddcdd"
+      stageUuid: "1b035fd5-444e-8b47-ad96-d0274048dd2e"
 version: 2
 ---
 # nerve — the all-or-nothing signal (the gate)

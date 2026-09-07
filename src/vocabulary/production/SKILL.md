@@ -2,11 +2,11 @@
 name: production
 description: "Use when reasoning about production as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/production"
-coordinate: "vocabulary/production · 8/crest · ae97e314"
-contentUuid: "3be6fc45-9054-5e75-8d18-c22d06268647"
-diamondUuid: "5044ba06-78a5-8c35-a21f-67278281d6c3"
-uuid: "ae97e314-78b4-8eca-af63-03c1e0c26a1f"
-horo: 8
+coordinate: "vocabulary/production · 7/descent · 3b612623"
+contentUuid: "e3b78957-046c-5a5b-9968-7ccac8403b4a"
+diamondUuid: "fca3f00c-5e44-8b94-854b-218a37866673"
+uuid: "3b612623-9dd4-834d-9f34-4a155b1e2de2"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0e92f112-bcae-89b4-9676-7f4148296179"
+  computationUuid: "e39072ec-0bc7-8c27-b03f-845b10b29a36"
   stages:
     - stage: path
       stageUuid: "9a07009d-ae28-8a35-b4d6-312d03320535"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a05e0e96-cda5-855f-aa85-1c892f444c28"
     - stage: horo
-      stageUuid: "ae47e2ed-b0b4-8029-bdd7-5fa47eb1201a"
+      stageUuid: "0e6fb0e3-dbed-8bc3-8f66-d136731d57ff"
     - stage: seal
       stageUuid: "1a96f9b6-b557-8869-8cd3-045473c6b5db"
     - stage: uuid
-      stageUuid: "a10c29fa-dfd1-8cf9-bfd8-10b5500a71e1"
+      stageUuid: "0dc94028-e8f0-81bb-a0cf-4307914c6361"
 version: 2
 ---
 # production

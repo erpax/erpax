@@ -2,10 +2,10 @@
 name: repayment
 description: "Use when reasoning about repayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/repayment"
-coordinate: "vocabulary/repayment · 1/base · a871a515"
-contentUuid: "8cb46c95-c520-5b7d-be13-a6b75e2b26b5"
-diamondUuid: "de868716-17f2-816f-8716-ef199b3bd9e9"
-uuid: "a871a515-f9a7-8b44-ab50-32446ca6b40d"
+coordinate: "vocabulary/repayment · 1/base · 2a003abd"
+contentUuid: "6a0dd46c-10be-5a5c-b9f9-513263f68459"
+diamondUuid: "5705089d-b7a8-8c20-ae59-c4b3d2004ba3"
+uuid: "2a003abd-b347-8c6e-a947-278ddf9125e4"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "475dd8f3-57d6-8011-b712-65634461a6d3"
+  computationUuid: "16741879-519f-8497-bb02-33d7edeb7520"
   stages:
     - stage: path
       stageUuid: "325a2bff-f93c-85ab-b03e-f2d42f7d8917"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2dd18531-317d-814a-a058-57fd2d424c5f"
     - stage: horo
-      stageUuid: "297a9680-ba3e-8a13-91d7-6bdb6a52d770"
+      stageUuid: "7e2adee6-05ee-8b8f-8ad6-59d4891dac47"
     - stage: seal
       stageUuid: "5ff8f3f7-8216-8050-8f7c-116c075d099c"
     - stage: uuid
-      stageUuid: "7d7efbda-f2f8-81c7-9a18-6691780a010b"
+      stageUuid: "b9f77adf-db7d-8d40-a8db-066c98b85ff5"
 version: 2
 ---
 # repayment

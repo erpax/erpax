@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "skin",
-    "uuid": "f3d86342-fabd-850f-93ed-a9af07ceaa3b",
+    "uuid": "f779e0b8-53ac-8678-9c03-32f4c994626b",
     "words": [
       "skin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the skin as an organ of body — pivot to canonical @/skin; zero duplication.",
-    "uuid": "3489ec1a-8076-8f66-986c-dd044f5f4fc5",
+    "uuid": "c00b9c49-9a4d-883b-adad-ef71c64e2ddb",
     "words": [
       "use",
       "when",

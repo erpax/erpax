@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "allocations",
-    "uuid": "5506cb51-55fd-8fe8-a744-00ad7398989e",
+    "uuid": "026f5271-c570-8bff-a492-25fa7a8a6713",
     "words": [
       "allocations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.",
-    "uuid": "0f3f1283-339d-856e-91e6-b8b8a402f76b",
+    "uuid": "a2e693c4-568e-86f1-95ad-db7a1d80736b",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: threshold
 description: "Use when reasoning about threshold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: threshold
-coordinate: "threshold · 4/weave · e6ff0c02"
-contentUuid: "8624e73e-e5d8-5059-a492-abfaa0a2f38a"
-diamondUuid: "d91aecba-f90b-830a-8dfc-a48feb688edf"
-uuid: "e6ff0c02-5723-8aa7-81f0-1cafe901a3c9"
-horo: 4
+coordinate: "threshold · 1/base · 3a6e6157"
+contentUuid: "c0c831e2-df0b-5591-b1b5-acf9de039818"
+diamondUuid: "d18a3751-e277-8a6d-a3fe-e47bd6a03f69"
+uuid: "3a6e6157-76ab-8e09-8c7b-d412244103e1"
+horo: 1
 typography:
   partition: threshold
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cd6456ac-8248-8eb7-a138-322a37c90f7b"
+  computationUuid: "336c6dfa-5b7e-84be-8548-4a9f51fc1ac0"
   stages:
     - stage: path
       stageUuid: "d7f57736-b234-84f6-bab3-efcab2480c48"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4ddd132a-5889-86d8-a069-49fe6b9c0e27"
     - stage: horo
-      stageUuid: "b0db2e3b-5786-84cf-86ec-b97c8c230d8b"
+      stageUuid: "7b57084c-261d-8688-8fbf-8ca3c6d1bc44"
     - stage: seal
       stageUuid: "d8cfe50b-0b4c-8fa0-9402-00dc667aa660"
     - stage: uuid
-      stageUuid: "fdc135cb-157b-8295-8722-9446c8bcde76"
+      stageUuid: "36041061-8ad8-84e6-829c-685d707bafb7"
 version: 2
 ---
 # threshold

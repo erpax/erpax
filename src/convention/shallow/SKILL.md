@@ -2,11 +2,11 @@
 name: shallow
 description: "Use when reasoning about import discipline — an import must reach an atom's index (the one public door), not a deep internal file past the seal; this names the convention, measures the corpus's live shallowness, and is enforced by the import lint (a ratchet on the non-index count, so shallowness can only get tighter)."
 atomPath: "convention/shallow"
-coordinate: "convention/shallow · 7/descent · 61f37c5f"
-contentUuid: "f5012001-02da-53d7-a4df-8d3a2c0a021c"
-diamondUuid: "c33c997b-5123-8af1-a640-92e9c878ffea"
-uuid: "61f37c5f-4644-85ec-8f5d-d5c83e41f45a"
-horo: 7
+coordinate: "convention/shallow · 4/weave · ef977f06"
+contentUuid: "9533b003-7c89-50cb-bc93-740d4094f20e"
+diamondUuid: "1afa63b5-cd38-82c9-86c8-74518d26f2d7"
+uuid: "ef977f06-3565-828a-ba60-fd70061c5f5d"
+horo: 4
 typography:
   partition: convention
   bondDegree: 16
@@ -15,7 +15,7 @@ standards:
   - "the import graph is the config — the public face is index.ts only (shallow, never deep)"
 bindings: []
 signatures:
-  computationUuid: "4490a627-d451-8d43-861a-7afc7d2b5b3e"
+  computationUuid: "af954003-9c0f-834c-bcc8-49ed588ddc2e"
   stages:
     - stage: path
       stageUuid: "b809a38c-8b5b-873a-be5f-a515d158c88e"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "bcb3fcdf-7716-89c4-92b2-825adfb60837"
     - stage: horo
-      stageUuid: "a243689b-4d40-8243-9a35-047f570a3564"
+      stageUuid: "5746613c-e6cb-8955-898e-f4602e5f8314"
     - stage: seal
       stageUuid: "2f5156ef-115f-8824-b7bc-f6b8d4ecbccc"
     - stage: uuid
-      stageUuid: "25dc7b06-ec78-86e8-b785-5698518e6d15"
+      stageUuid: "ced8fd57-4aa0-8ffa-877e-39d81174feb8"
 version: 2
 ---
 # convention/shallow — import the index, not a deep file

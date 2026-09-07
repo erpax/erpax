@@ -2,10 +2,10 @@
 name: endocrine
 description: "Use when reasoning about endocrine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/endocrine"
-coordinate: "vocabulary/endocrine · 7/descent · d4f3fc96"
-contentUuid: "813d3924-fa80-5da8-9040-24f0142bd066"
-diamondUuid: "839852da-6792-82fd-a0f4-54d279470adf"
-uuid: "d4f3fc96-3913-805c-9685-259d5e2073e3"
+coordinate: "vocabulary/endocrine · 7/descent · f60b972b"
+contentUuid: "1133c0de-99f7-5d8d-87f6-928848ed9ab1"
+diamondUuid: "a0e43876-c82e-8379-90fd-85cfd7f95eb1"
+uuid: "f60b972b-369a-881a-bd63-886d91476a14"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "234b176d-1bd9-8ef1-aad9-b1990c313893"
+  computationUuid: "b91de200-2674-8dca-8967-264a1a844688"
   stages:
     - stage: path
       stageUuid: "c679a183-174a-8d43-a271-bb34fb729767"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "31f128b7-2059-8a90-b320-9a4bc29f066c"
     - stage: horo
-      stageUuid: "c7e530d7-185f-857f-bf69-53823d4a2c1c"
+      stageUuid: "f0fcfe9d-d3fc-86b9-94e0-7d5b610797b4"
     - stage: seal
       stageUuid: "d966ca99-dae9-8587-b2fe-f2b5fcf20455"
     - stage: uuid
-      stageUuid: "2d0e9a41-5c79-828f-b7a1-c743450ab115"
+      stageUuid: "398b85ac-30fc-8d14-8aa6-57ce79054aaf"
 version: 2
 ---
 # endocrine

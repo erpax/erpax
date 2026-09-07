@@ -2,10 +2,10 @@
 name: jurisdictions
 description: "Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection."
 atomPath: "taxing/jurisdictions"
-coordinate: "taxing/jurisdictions · 1/base · d2eee94e"
-contentUuid: "df588fc1-5cbf-562e-8d05-ce1ffff70c7e"
-diamondUuid: "32834ee6-32f1-8ccd-a991-62c7f6730fbf"
-uuid: "d2eee94e-3810-89da-b95c-7302474be975"
+coordinate: "taxing/jurisdictions · 1/base · 535666a1"
+contentUuid: "f8b98d50-24d3-5bd1-bc9a-ba77057fbc93"
+diamondUuid: "2495b432-a4ad-86ee-ae10-e9446a13d052"
+uuid: "535666a1-bb03-861d-b2ca-48bdb8519607"
 horo: 1
 typography:
   partition: taxing
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4450a6fc-35dc-8970-9136-fde52d74f5c4"
+  computationUuid: "f0faddfb-2e61-8630-aa3e-a0bdb8d60807"
   stages:
     - stage: path
       stageUuid: "601de279-fc37-8f90-8b0b-b9c5affca0a3"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "8f53fcb6-edc0-886f-b8b3-8ad8d821b678"
     - stage: horo
-      stageUuid: "d1bfee89-5c2a-8aea-8593-1de08e2a8d78"
+      stageUuid: "3e0c2d44-e283-8ef9-844a-95e416fd814a"
     - stage: seal
       stageUuid: "43be8a2c-e9e2-893f-8b4a-f5d728781f18"
     - stage: uuid
-      stageUuid: "1c311dab-48c9-8194-b77b-ca95ebd521cc"
+      stageUuid: "00f911e0-90df-82f9-a2a6-9ec16c25a5dd"
 version: 2
 ---
 # taxing-jurisdictions

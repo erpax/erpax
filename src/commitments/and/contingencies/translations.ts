@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contingencies",
-    "uuid": "20fff3db-fa02-80cd-bd3e-a85ff18ff6e8",
+    "uuid": "3a7df0b6-2278-8110-a735-562e833af2c9",
     "words": [
       "contingencies"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.",
-    "uuid": "0f4ae9f3-c7ae-8602-8da1-ccd66091690e",
+    "uuid": "157e1dec-091f-8c4f-a702-16f2609f6eef",
     "words": [
       "use",
       "when",

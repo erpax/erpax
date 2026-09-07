@@ -2,11 +2,11 @@
 name: "8601"
 description: Use when implementing or referencing ISO 8601 — Date and time.
 atomPath: "iso/8601"
-coordinate: "iso/8601 · 8/crest · b740f26a"
-contentUuid: "07594b93-42dd-5cc8-86c6-aa192f912ba4"
-diamondUuid: "b547fcb5-e427-8cf7-9b71-be140e8ef723"
-uuid: "b740f26a-5291-8efe-8ab5-5ee6d76601fe"
-horo: 8
+coordinate: "iso/8601 · 4/weave · 80ec5257"
+contentUuid: "041d72f0-0946-5f02-9240-659cc844e976"
+diamondUuid: "2ce77af2-c84a-8856-9d3e-61834f213ea6"
+uuid: "80ec5257-7c59-88b7-9f43-1a0b14471982"
+horo: 4
 typography:
   partition: iso
   bondDegree: 6
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3e62c204-7510-8d34-b295-184bf9f0f0ba"
+  computationUuid: "8f768a49-459d-8a07-844a-010e537ca870"
   stages:
     - stage: path
       stageUuid: "3263fbde-a5c5-8435-a949-818219b105ec"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "ba4a131b-3b97-827d-bc0c-c0dc36312eb8"
     - stage: horo
-      stageUuid: "04ea7b36-f992-8e20-ae75-921fa8bff6bd"
+      stageUuid: "85c20ae7-b637-865c-a166-314e2e0739d7"
     - stage: seal
       stageUuid: "be019c25-a32d-815a-b012-85538434834b"
     - stage: uuid
-      stageUuid: "a5009f63-4675-8712-8058-925ef530a347"
+      stageUuid: "6e9a58b0-c901-8484-bccb-5b9f53c78bf0"
 version: 2
 ---
 # ISO 8601 — Date and time

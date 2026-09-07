@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "image",
-    "uuid": "046bc44b-226e-8d70-8dfd-06cea7a99d3e",
+    "uuid": "c4a9e95a-7d79-8782-aa74-415081d1c649",
     "words": [
       "image"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a content-uuid needs a visual — its deterministic identity sigil (and animation). One more projection of the self-decoding uuid, beside color (the wave), signal (colour+sound), translation (meaning). uuidImage renders a mandala whose colours, radii and angles ARE the uuid's bytes; uuidAnimation adds byte-seeded SMIL rotation. Same uuid ⇒ same image — the visual IS the address. Honest: this renders the address, not the meaning; semantic text-to-image is a generative model (the seed).",
-    "uuid": "d254b2e3-649b-8fdb-8c4c-e2738de0ba64",
+    "uuid": "2d532b1c-f5e2-87b1-a5e8-a1c1de00ab15",
     "words": [
       "use",
       "when",

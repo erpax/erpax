@@ -2,10 +2,10 @@
 name: finite
 description: "Use when modeling finite-state machines — seal check FSM linking seal guardians to automata theory under computer."
 atomPath: "computer/finite"
-coordinate: "computer/finite · 1/base · 16d6556b"
-contentUuid: "283d6be2-5085-51b1-8584-fa3af0ca401b"
-diamondUuid: "cc1c2677-34bd-8964-94bb-35b9e1e2f025"
-uuid: "16d6556b-a301-8dfa-962a-651a2bd6096a"
+coordinate: "computer/finite · 1/base · 46307f8e"
+contentUuid: "be7d0112-eacc-5935-89d7-0a10e495c011"
+diamondUuid: "e3268fa8-0f15-8173-9f6e-e341230ff8d0"
+uuid: "46307f8e-ed5f-852c-800e-fc92a566278e"
 horo: 1
 typography:
   partition: computer
@@ -14,7 +14,7 @@ standards:
   - "finite-state machine (deterministic transitions)"
 bindings: []
 signatures:
-  computationUuid: "febee877-8515-8a1f-84cf-20562255bcbc"
+  computationUuid: "40e63237-a71a-8d76-a864-c1c6498d17cd"
   stages:
     - stage: path
       stageUuid: "cedfbeda-5183-8114-a719-2b79812c47de"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4c13ba0c-eb17-86ab-8238-59d141dad66a"
     - stage: horo
-      stageUuid: "338f00d2-c7df-8f23-a2af-b83b99ce03df"
+      stageUuid: "3f3d197f-f9fc-87eb-97d5-5d4f92e92438"
     - stage: seal
       stageUuid: "914679fb-d19a-8c77-81dd-4ca7dda4eb5a"
     - stage: uuid
-      stageUuid: "1b469729-fdf1-8fb3-a9db-3023543d244d"
+      stageUuid: "303300bd-29a2-8bdf-935b-0d2a947aa5c7"
 version: 2
 ---
 # computer/finite — finite-state automata

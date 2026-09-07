@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "risk",
-    "uuid": "67acea8c-cdfe-805e-8541-a64e1da762c4",
+    "uuid": "8c8d9f9d-2a56-8220-b4a6-481d4116a4fd",
     "words": [
       "risk"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about risk as a medical facet of medical — vocabulary pivot to @/risk; nested not duplicated.",
-    "uuid": "f92e5703-c4db-83fd-b799-1638f2c39afb",
+    "uuid": "684ba86f-bcda-820d-9a31-019c0ef51fce",
     "words": [
       "use",
       "when",

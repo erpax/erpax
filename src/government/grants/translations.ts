@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "grants",
-    "uuid": "222a26b6-c309-856b-bccf-0f3dfda4e635",
+    "uuid": "dc2d9a9f-a6c2-8c7b-abce-8f3a54df956b",
     "words": [
       "grants"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
-    "uuid": "55f2ca4b-f9ff-8d98-9a7a-ec1c92c6b7ba",
+    "uuid": "2925549e-bdc7-80de-8383-65e5a56c9c3e",
     "words": [
       "use",
       "when",

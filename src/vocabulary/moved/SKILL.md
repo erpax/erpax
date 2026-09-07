@@ -2,11 +2,11 @@
 name: moved
 description: "Use when reasoning about moved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/moved"
-coordinate: "vocabulary/moved · 7/descent · 01776e5e"
-contentUuid: "56b4340f-baa1-55a6-aeee-ee9f604f84db"
-diamondUuid: "870bc6a8-145b-8fd6-8931-2d09b70738ab"
-uuid: "01776e5e-f2d2-80ac-bafb-04fecf877f5c"
-horo: 7
+coordinate: "vocabulary/moved · 1/base · de0b81b3"
+contentUuid: "98ac65d6-b95f-5609-9b21-4158c53a021d"
+diamondUuid: "19b421d9-0ed7-82d2-91d8-298309fb6c92"
+uuid: "de0b81b3-2097-83d8-8c5e-8ba410cd673c"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "47ca01a4-438f-8a1a-b7fb-fef7c2d2b59e"
+  computationUuid: "ec2fb3d8-af2f-8fd7-b0d0-3ef6b7aa413d"
   stages:
     - stage: path
       stageUuid: "a37920c7-b3e2-8e46-a9b8-c139bbe1d97a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d63deb92-fdbf-8735-b86d-b250a4b671ea"
     - stage: horo
-      stageUuid: "119ffa6e-333b-8ab7-8ec7-48f4363cf003"
+      stageUuid: "79108120-9ebf-8fe7-bc0f-b57f011d3385"
     - stage: seal
       stageUuid: "7e6c43d1-089b-8d24-b5fd-29e6eecbe645"
     - stage: uuid
-      stageUuid: "d128808b-b57f-8745-921b-3bd6447aceec"
+      stageUuid: "9992445f-99e6-8296-b626-438eca160432"
 version: 2
 ---
 # moved

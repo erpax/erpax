@@ -2,18 +2,18 @@
 name: sufism
 description: "Use when reading Sufism as a sub-diamond of islam — the inward path of love to the One, the self annihilated in the Beloved (fana) and subsisting (baqa), remembrance on the breath (dhikr), the whirling as attunement. A facet-diamond of the islam archangel. Strip the Arabic prefix and fana, dhikr, sama collapse to void, breath/prayer, harmony."
 atomPath: sufism
-coordinate: "sufism · 8/crest · 09186a4c"
-contentUuid: "fec4af5c-4a53-5d1c-a774-2813473a7cdb"
-diamondUuid: "b98df83c-0b94-8708-a71f-fcfe96ccefa1"
-uuid: "09186a4c-0208-83e2-8a05-86badb40556c"
-horo: 8
+coordinate: "sufism · 4/weave · 80a783ed"
+contentUuid: "4523c458-4817-5fe8-94d1-b94a23d1e70b"
+diamondUuid: "f9a0eb08-e1d6-8d53-9c5f-8b7769f3d9d9"
+uuid: "80a783ed-eb6f-8e9d-8b3b-df05c24491a5"
+horo: 4
 typography:
   partition: sufism
   bondDegree: 62
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bba494d3-8432-83c4-8e3e-25f3f5a8b785"
+  computationUuid: "01e9dd50-b210-887f-963f-a1e0e3bb3de9"
   stages:
     - stage: path
       stageUuid: "5c1a60b7-4446-8f3e-94b2-6d7cecc363ec"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7b2ad52b-30c9-8f9c-a779-d465cea74bb6"
     - stage: horo
-      stageUuid: "b362ca2b-9339-8a1e-8be3-bbac86319d58"
+      stageUuid: "fc2f5676-6ca3-843d-8e2f-63ff01648634"
     - stage: seal
       stageUuid: "e5b48de1-d9f3-80a3-88ad-5cc3a42beeee"
     - stage: uuid
-      stageUuid: "e215a65c-c77a-83c3-a78d-cd3156c7e93f"
+      stageUuid: "0c58b86b-0980-8995-b56e-13ce64802f3d"
 version: 2
 ---
 # sufism — the inward path of love; the self annihilated in the One

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "predecessor",
-    "uuid": "eab44fba-1427-815e-bb46-ece1774e7fbb",
+    "uuid": "6558c3f0-bed4-8ba6-a181-53876323678e",
     "words": [
       "predecessor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about predecessor — A pointer from a previous, often discontinued variant of the product to its newer variant.",
-    "uuid": "5fcbdcd1-2b4b-804a-94b5-5f94712f4e08",
+    "uuid": "84172f4a-9f74-8a45-bc92-2790875457cc",
     "words": [
       "use",
       "when",

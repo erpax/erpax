@@ -2,18 +2,18 @@
 name: repetition
 description: Use when modelling one repetition — the singular model of the repetitions collection (the plural store); one repeated occurrence within a counted set.
 atomPath: "vocabulary/repetition"
-coordinate: "vocabulary/repetition · 8/crest · 3c5a5a48"
-contentUuid: "ae4ab291-b3a4-55e9-bab5-06e6cb8605f5"
-diamondUuid: "f5b8cf9b-2ff6-89ae-83ba-08032ec28587"
-uuid: "3c5a5a48-f496-89a7-bcf7-923365ef6bc2"
-horo: 8
+coordinate: "vocabulary/repetition · 5/round · 2bdc15f9"
+contentUuid: "1751b59a-0d4b-5932-9aae-951597b4f89b"
+diamondUuid: "61d39da1-e890-8bb6-8dd7-bdeb5357e844"
+uuid: "2bdc15f9-0e02-825c-87d5-9ae56eca3330"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "974d21ff-7251-8e2a-91e8-5a3ecff1ba9d"
+  computationUuid: "5827fe55-d9a2-8d76-b509-86f1a5e335aa"
   stages:
     - stage: path
       stageUuid: "0c933ea1-7eaa-8326-9b08-fcc2baefe308"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "197386ef-6db1-849a-9acd-885efe863490"
     - stage: horo
-      stageUuid: "96cf7eaf-ace8-8a5d-ae3a-7cb74e5ed7a1"
+      stageUuid: "d4dd5001-9419-8e31-8482-8d4319dff401"
     - stage: seal
       stageUuid: "96e6b493-9477-89aa-b46c-cf2bccd85e6f"
     - stage: uuid
-      stageUuid: "4800f2f4-150a-8d40-aa12-397f9ae09b5d"
+      stageUuid: "5b432e94-4e79-8227-9db3-1172513da163"
 version: 2
 ---
 # repetition — the model of one [[repetitions]] row

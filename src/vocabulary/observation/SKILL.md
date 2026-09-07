@@ -2,11 +2,11 @@
 name: observation
 description: "Use when reasoning about observation — Instances of the class Observation are used to specify observations about an entity at a particular time. The principal properties of an Observation are observationAbout, measuredP"
 atomPath: "vocabulary/observation"
-coordinate: "vocabulary/observation · 1/base · 4ab9737c"
-contentUuid: "fc3c2a41-e0f7-5246-824f-5ea21a5c31e0"
-diamondUuid: "13d88bff-fd6e-893e-b988-28f2a8d56bae"
-uuid: "4ab9737c-bfa3-8f2f-ba82-b996fa2fa6e2"
-horo: 1
+coordinate: "vocabulary/observation · 8/crest · 854e97a0"
+contentUuid: "033e7128-17bd-5085-9f91-a3a862b98181"
+diamondUuid: "9716d222-fd9d-8390-8a4a-bdb535fe7931"
+uuid: "854e97a0-9a33-8ef8-af03-708b7bfa2ab2"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f291b204-650f-8d30-a020-b3a7ca8e0793"
+  computationUuid: "8de45542-b724-8041-9838-4ef1c7b31d3c"
   stages:
     - stage: path
       stageUuid: "2267ec5b-8745-8e15-b86f-e3bc1f5466f8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8a4ec7ce-3c76-8357-99d1-9f864b87016a"
     - stage: horo
-      stageUuid: "1058b087-7dd8-853f-9be8-d383eb2ef8f8"
+      stageUuid: "486d07ff-8a29-8f60-a701-b8e45ff9654c"
     - stage: seal
       stageUuid: "6558ffde-c567-888e-829e-2af4ed62e8f3"
     - stage: uuid
-      stageUuid: "59e0751d-04c1-84b6-98dc-47bfd426d8ed"
+      stageUuid: "d101f23b-fcb6-8937-8ad9-61effbed5236"
 version: 2
 ---
 # observation

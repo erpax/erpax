@@ -2,11 +2,11 @@
 name: anbi
 description: "Use when reasoning about anbi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/anbi"
-coordinate: "vocabulary/anbi · 5/round · a359fdd1"
-contentUuid: "8fb35dc1-eb92-58ff-8d90-9080a2d006f2"
-diamondUuid: "158e3811-66aa-8337-9ae6-f578f7a2e660"
-uuid: "a359fdd1-0826-8986-a628-6aed56ba14e9"
-horo: 5
+coordinate: "vocabulary/anbi · 8/crest · c2fcc473"
+contentUuid: "52d1203d-d96a-506b-abf6-188e0ffda739"
+diamondUuid: "b8f3f257-a03b-89c1-8100-77d9ba1a9915"
+uuid: "c2fcc473-f30c-8cb0-b3a5-6f26529dbc0b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "38d88467-e6bb-81ff-aae1-89df9a2f25d2"
+  computationUuid: "0d3ef3a3-ee31-8025-9845-8f6c912b18d4"
   stages:
     - stage: path
       stageUuid: "7279f555-33bd-8929-ad96-3d97da958b3d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6d2e677b-e2d3-83cf-9969-fa75383b1082"
     - stage: horo
-      stageUuid: "344f71cb-b3a5-8c35-ab58-d72dcd1fd18d"
+      stageUuid: "5a5d9a65-4281-8881-9837-6e0227fe9f48"
     - stage: seal
       stageUuid: "87ac16d0-f6a1-8f81-aef0-124aa4c1b8eb"
     - stage: uuid
-      stageUuid: "7d74a01c-d036-84b8-bc09-93be0af8115f"
+      stageUuid: "cf98f2bd-7745-84b3-a487-dc65435b48d9"
 version: 2
 ---
 # anbi

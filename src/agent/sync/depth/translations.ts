@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "depth",
-    "uuid": "bedb9080-cd7a-8e07-aab6-6f5cc1ed9029",
+    "uuid": "77dd16d6-91ce-8c1b-9d09-2c4a1dace563",
     "words": [
       "depth"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a module needs the broadcast cascade guard without inheriting the sync subtree — MAX_BROADCAST_DEPTH and withinBroadcastDepth live here alone, in a module with ZERO imports. That property is the whole atom: the constant used to sit in chat-broadcast.ts, deep inside the corpus's largest import tangle, so any atom wanting one integer paid for @/ai/industry, @/agent, effect-processor, context and payload-chat. A constant that depends on nothing must be reachable without depending on anything.",
-    "uuid": "4ab97d3d-7c71-8fe9-b202-07c3fed3d6a7",
+    "uuid": "72bf5754-5dd9-8e72-9d9b-f4594ed63b4e",
     "words": [
       "use",
       "when",

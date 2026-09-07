@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "names",
-    "uuid": "bb3d9dc1-4898-87e1-ae30-6894162d9562",
+    "uuid": "2f74b11e-64c0-876f-9cee-9a5c0eb9e31b",
     "words": [
       "names"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when collapsing each atom's test file to the canonical test.ts — the migrating skill that renames a single <Name>.test.ts to test.ts and flags multi-test folders for sub-atom collision.",
-    "uuid": "19cbfd29-7008-862f-9cf4-f945c7e376ba",
+    "uuid": "28cdd84a-95d0-8a94-9dee-29016c64ddf9",
     "words": [
       "use",
       "when",

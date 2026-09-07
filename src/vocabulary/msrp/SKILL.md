@@ -2,11 +2,11 @@
 name: msrp
 description: "Use when reasoning about msrp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/msrp"
-coordinate: "vocabulary/msrp · 4/weave · 244b4ed5"
-contentUuid: "441e1c9f-9c85-5ed7-a9a5-36458a445dc4"
-diamondUuid: "d6a88712-58d8-86fe-8335-a1700df7d7bf"
-uuid: "244b4ed5-b123-8b94-a879-f26e85f560ce"
-horo: 4
+coordinate: "vocabulary/msrp · 2/share · fdf748d0"
+contentUuid: "e12c95a6-77cd-560a-9ab3-7448ca8a53cd"
+diamondUuid: "54685790-f100-8564-93e4-f4c1adc6a3a3"
+uuid: "fdf748d0-a735-8b54-a39f-dc44a560d42f"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "57cdeac9-e6e4-8db2-8de1-240f4ce6219f"
+  computationUuid: "6b40a56e-5867-89a3-8677-4114269af00f"
   stages:
     - stage: path
       stageUuid: "8b6add41-7af4-875e-a1ab-303d26177738"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7bcdbe31-4973-85c7-9280-cfdc5760a772"
     - stage: horo
-      stageUuid: "81563e39-56c8-820e-97f0-df69f630c958"
+      stageUuid: "bf13575f-8e75-84dd-acc0-2160f17ee186"
     - stage: seal
       stageUuid: "09805982-279e-8983-ba3a-e565cbdbcb7f"
     - stage: uuid
-      stageUuid: "300a44bc-3987-89cf-9214-cdcc99c7ccfd"
+      stageUuid: "87df1ffd-81b6-8c89-b3c1-f5fdef5fc71a"
 version: 2
 ---
 # msrp

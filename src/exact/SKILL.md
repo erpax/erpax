@@ -2,18 +2,18 @@
 name: exact
 description: "Use when reasoning about exact — Exact rational arithmetic for confidence, no decimal approximations"
 atomPath: exact
-coordinate: "exact · 2/share · bf683d0c"
-contentUuid: "c6286474-3c2e-5f35-9d8d-0c4abb97fdab"
-diamondUuid: "5a20449e-b67b-8a28-a8ff-bbc81e8b4562"
-uuid: "bf683d0c-645d-80a5-8a5e-a2df1ff53531"
-horo: 2
+coordinate: "exact · 5/round · efdffd41"
+contentUuid: "fef53d9c-cab1-5154-ac75-5556747c4ed7"
+diamondUuid: "d6218503-2e45-86a5-b38b-4be5d9293a80"
+uuid: "efdffd41-bb21-86a1-875c-e2ffc67422ae"
+horo: 5
 typography:
   partition: exact
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6784b26c-637a-8ec5-a99a-20f601cf3309"
+  computationUuid: "967b2a6b-c4c8-8f7b-9b2c-10b89bb33e3c"
   stages:
     - stage: path
       stageUuid: "cd938b04-5117-8e6c-82a4-8642d2a5d25b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "94c56d58-8a47-8c1b-8e67-540e60293ceb"
     - stage: horo
-      stageUuid: "d217e7fd-a05f-8d97-aedc-b0ca98a79d4c"
+      stageUuid: "4b433099-45bf-8d33-87e1-b20baf8be1dc"
     - stage: seal
       stageUuid: "7d4453f0-d7fd-825a-9564-3ea5aec06181"
     - stage: uuid
-      stageUuid: "43ad1153-ef97-8c2e-949c-482505a12838"
+      stageUuid: "cdaf7b1c-d9b6-8a87-a39e-75b490512931"
 version: 2
 ---
 # exact — replace floating-point confidence with exact rationals

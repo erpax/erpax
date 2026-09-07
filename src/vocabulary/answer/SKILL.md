@@ -2,11 +2,11 @@
 name: answer
 description: "Use when reasoning about answer — An answer offered to a question; perhaps correct, perhaps opinionated or wrong."
 atomPath: "vocabulary/answer"
-coordinate: "vocabulary/answer · 4/weave · 404951cc"
-contentUuid: "378def3b-e0a5-50d2-8aed-78b70d79e9f6"
-diamondUuid: "a83f8634-8c37-8a9f-957a-b23b6db8a905"
-uuid: "404951cc-f8da-8d4a-8c23-4ab6390aaa85"
-horo: 4
+coordinate: "vocabulary/answer · 1/base · b53e9173"
+contentUuid: "bd581742-3259-56b6-b3c7-d6449f37066e"
+diamondUuid: "ef4ddce6-f238-89d5-ae8a-c7ba5f2e7dcf"
+uuid: "b53e9173-6d2f-82a8-9781-5d1cfc6ace70"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 40
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "37443d7e-0402-8ff0-9019-cbeda4d74e43"
+  computationUuid: "e23fe304-fcc8-8ed2-985e-62376b6be71b"
   stages:
     - stage: path
       stageUuid: "bdf4acff-b323-8044-b5b6-51083ff1c266"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "40031949-9ac5-83c4-bdb5-8971250c0eff"
     - stage: horo
-      stageUuid: "c0191726-aa6a-8ae7-a0a1-cb327e76313a"
+      stageUuid: "ff7449b9-eb9c-885f-b06f-da5c46b176e7"
     - stage: seal
       stageUuid: "8a098dc1-15aa-8580-bf4a-612477b0e585"
     - stage: uuid
-      stageUuid: "e6bd4023-7b32-80bc-b63d-5457e6021b82"
+      stageUuid: "ca869e88-a2c5-8e9b-9245-4d7a2e6e7dcf"
 version: 2
 ---
 # answer

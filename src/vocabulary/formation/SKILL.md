@@ -2,11 +2,11 @@
 name: formation
 description: "Use when reasoning about formation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/formation"
-coordinate: "vocabulary/formation · 2/share · 2e5e34f0"
-contentUuid: "9993a050-ba20-5213-b0e7-d2110de2eef5"
-diamondUuid: "a74d18f7-2042-8510-93c1-db31be5a0e68"
-uuid: "2e5e34f0-246b-8e35-8f13-8dd36ab0bed5"
-horo: 2
+coordinate: "vocabulary/formation · 1/base · 20a30d11"
+contentUuid: "b604834c-cbd3-5b8c-b970-5cff0511629f"
+diamondUuid: "c6421549-d3a5-86c6-acb1-a503330a6ade"
+uuid: "20a30d11-3867-8b32-949d-9b1e362bf67c"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "de2d7208-0137-807b-a169-5904ce6f9cb2"
+  computationUuid: "91004a58-36f8-8ae3-8654-2953e9c1f271"
   stages:
     - stage: path
       stageUuid: "c9b3bff2-eb03-8a25-bad8-d6e2aec3c38b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "55398e45-4ced-8230-888f-e779e27d4e4d"
     - stage: horo
-      stageUuid: "6a62e3e5-e32a-859b-ab83-f0be578b590f"
+      stageUuid: "c728ae24-c8fc-894f-b3fa-689115050348"
     - stage: seal
       stageUuid: "e9f1f935-04bf-8096-8f16-b1985ead4e5a"
     - stage: uuid
-      stageUuid: "e94d1cc4-29e1-808c-8592-1fe5c999aaa5"
+      stageUuid: "b9dae64c-ead8-84e0-b741-c8ce23d4806b"
 version: 2
 ---
 # formation

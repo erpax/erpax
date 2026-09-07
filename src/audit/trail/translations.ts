@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trail",
-    "uuid": "db22adcd-adcb-8077-ac70-099b7ddd753e",
+    "uuid": "e69fe13f-c842-8c19-a855-bdf738e79b2e",
     "words": [
       "trail"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about trail — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
-    "uuid": "57d98926-288f-814e-b128-92ca078ba348",
+    "uuid": "26888d28-634d-8065-8f5b-c0e99da69403",
     "words": [
       "use",
       "when",

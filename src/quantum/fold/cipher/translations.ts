@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cipher",
-    "uuid": "c19173da-c783-8377-afd4-97cf63be0dc9",
+    "uuid": "a4742688-25fa-8229-974b-15c71e11f289",
     "words": [
       "cipher"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries",
-    "uuid": "e39a9519-7f49-89da-878f-173294ce2b5a",
+    "uuid": "8530fa74-2c40-89d3-8d01-7d3fa589b8a5",
     "words": [
       "use",
       "when",

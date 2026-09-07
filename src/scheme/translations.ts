@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scheme",
-    "uuid": "85cad372-e54e-832d-b7ee-2a843226b639",
+    "uuid": "5eff1fec-87ee-84fa-a835-ead4ca3a64a3",
     "words": [
       "scheme"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about scheme — A schema.org component word, collided out of schema.org compounds — fused from FundingScheme (sti · collapse · merge).",
-    "uuid": "5e6a1d4d-b37f-8287-a31b-74b71ed0a8f2",
+    "uuid": "0db9b1df-18fe-8583-aafb-aadef908b8eb",
     "words": [
       "use",
       "when",

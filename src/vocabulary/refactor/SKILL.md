@@ -2,18 +2,18 @@
 name: refactor
 description: "Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts."
 atomPath: "vocabulary/refactor"
-coordinate: "vocabulary/refactor · 8/crest · 51bdb97e"
-contentUuid: "d7375831-c22c-585f-8b5d-b61edc3c0a40"
-diamondUuid: "b5b7df08-02f4-8b22-ac4e-cc6510064525"
-uuid: "51bdb97e-f1cd-8e68-86b7-05c5b38b5e37"
-horo: 8
+coordinate: "vocabulary/refactor · 7/descent · 3e1ea9cc"
+contentUuid: "7e8a995e-b7bc-5ca0-8465-56ccead0f42e"
+diamondUuid: "a833ca2f-aaff-8b5e-b028-acce5509ffd2"
+uuid: "3e1ea9cc-d5b6-8551-8eed-48ce88409d58"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 57
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cf0830ba-64a7-857a-a937-0eacba602051"
+  computationUuid: "fcb56b1f-91d3-8236-ad8a-5bef922b72a3"
   stages:
     - stage: path
       stageUuid: "5be79153-cde6-8110-bddb-e7080d7a5046"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0c1eb3b5-aa32-8ee2-93a0-04a76d62579f"
     - stage: horo
-      stageUuid: "15d9cc93-c73d-8e67-a09a-b8288462a07c"
+      stageUuid: "9f0e850b-388a-8e8b-82bf-ce27ed0ecf0e"
     - stage: seal
       stageUuid: "f73641ca-1415-8520-aa8d-5aa8fc11d920"
     - stage: uuid
-      stageUuid: "8c1c5a51-4e77-8516-b01f-e3068d278207"
+      stageUuid: "dda054e3-0623-86a2-b097-34ac4be75b14"
 version: 2
 ---
 # refactor — reshape the corpus toward the law

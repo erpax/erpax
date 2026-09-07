@@ -2,11 +2,11 @@
 name: write
 description: "Use when reasoning about write — A schema.org component word, collided out of schema.org compounds — fused from WriteAction (sti · collapse · merge)."
 atomPath: write
-coordinate: "write · 4/weave · 507af5b6"
-contentUuid: "72318ea2-2dbf-5eb3-828e-c3b51e734c71"
-diamondUuid: "5ee01f46-081f-8f53-936c-740324438b0a"
-uuid: "507af5b6-dc4e-8b2d-b24f-d17fc704e8cb"
-horo: 4
+coordinate: "write · 2/share · 2f985d43"
+contentUuid: "2bf6eb55-8e96-551b-aeec-fad7814f28fc"
+diamondUuid: "42c716a3-f921-8b40-bb3b-ad852811be2a"
+uuid: "2f985d43-4da1-870a-b4e3-175c1c0a2641"
+horo: 2
 typography:
   partition: write
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d8f7e137-8858-8c58-a56c-89104c18985c"
+  computationUuid: "398cac4f-0fb8-858b-b673-03d8f024fe10"
   stages:
     - stage: path
       stageUuid: "c090273a-07ae-8e4d-922c-72f1693168c2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1988b034-7357-8785-aa1a-a0ae0177746a"
     - stage: horo
-      stageUuid: "26eb7b91-ab43-8f53-a49e-3b67e33f31b1"
+      stageUuid: "580a7311-5ad1-8f8d-8040-e8d9cfbcdd71"
     - stage: seal
       stageUuid: "f0abdb14-d5be-8944-b31a-491e103d1b4b"
     - stage: uuid
-      stageUuid: "2c93ca51-4577-8ecc-833e-915c5a8ecb91"
+      stageUuid: "86b750d8-7bb2-804d-9233-35e5bf4e436a"
 version: 2
 ---
 # write

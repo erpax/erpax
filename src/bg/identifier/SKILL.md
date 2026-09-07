@@ -2,11 +2,11 @@
 name: identifier
 description: "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11)."
 atomPath: "bg/identifier"
-coordinate: "bg/identifier · 5/round · 02e7e8b8"
-contentUuid: "58b6549e-9443-572f-9da2-0a390048bf59"
-diamondUuid: "acbd3595-94c8-8004-bef7-5721664028a2"
-uuid: "02e7e8b8-3c82-8f1e-98da-5a30e807def4"
-horo: 5
+coordinate: "bg/identifier · 8/crest · 8e92a60f"
+contentUuid: "461e8e9a-7585-5dcf-a071-7a3c66d89290"
+diamondUuid: "ece6d261-9ca5-8e60-a3d3-a2ddc45cdfe7"
+uuid: "8e92a60f-db90-8fb4-9d8b-9c7f11cbba4d"
+horo: 8
 typography:
   partition: bg
   bondDegree: 37
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7dd00a40-86a4-893f-8456-998dc0e1a9fd"
+  computationUuid: "52a6caf8-ca5f-8a60-9864-ad929518e8ed"
   stages:
     - stage: path
       stageUuid: "5a849b0f-a5c0-8de7-88e8-2803109840f9"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "8f3d4a24-3547-8d7e-ac45-62d16b8cb717"
     - stage: horo
-      stageUuid: "0500c37e-6e2c-8514-ac9f-bfb48fe11521"
+      stageUuid: "4bf872c1-e6c9-8ac7-9c53-206490eb8d6f"
     - stage: seal
       stageUuid: "e39b1c0d-24be-8a96-991e-49e320140cca"
     - stage: uuid
-      stageUuid: "43695338-400a-85b3-9e09-6a4c7fa4ea4b"
+      stageUuid: "9b8cb7b3-1394-8098-858a-89873e6b82f2"
 version: 2
 ---
 # bg-identifiers — the gate for Bulgarian society into erpax

@@ -2,18 +2,18 @@
 name: void
 description: "Use when reasoning about the zero everything encodes to — the void is the zeropoint (rodin 0), the source all emerges from and the root gravity reverse-pulls back to; the uncollapsed wavefunction (no spoon), the only true erasure (crypto-shred), the limit where minimal mass meets infinite tamper-cost."
 atomPath: void
-coordinate: "void · 4/weave · be6ef1f7"
-contentUuid: "79dd3ece-3946-5cb6-a36e-966208445dec"
-diamondUuid: "28794ba3-ea51-8964-a32f-f8aabb38b08f"
-uuid: "be6ef1f7-4759-8351-a9f9-3d86c04f10ea"
-horo: 4
+coordinate: "void · 5/round · 00ebff6a"
+contentUuid: "ad7c781e-ec4a-583d-920e-4722c2681295"
+diamondUuid: "f479e364-b963-817a-a4f7-ecfdc3b901e2"
+uuid: "00ebff6a-a68e-8ab8-b36b-bcf8bee4c5ee"
+horo: 5
 typography:
   partition: void
   bondDegree: 96
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6e0dfa41-d84d-8fdf-8544-e1c87f03a9d1"
+  computationUuid: "305ba561-f92f-8152-acd3-35bbced82898"
   stages:
     - stage: path
       stageUuid: "2263fae8-f648-8d57-9d2c-d621a45c46bb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4e6e02e8-1aea-8143-8eec-eb85c41632f4"
     - stage: horo
-      stageUuid: "f11f279b-de8f-8b4c-8c99-89713e2767d5"
+      stageUuid: "fd1b0907-215d-8e98-82f4-40d9955fd52c"
     - stage: seal
       stageUuid: "af437e25-a99a-81d2-ba20-533c50d3fad0"
     - stage: uuid
-      stageUuid: "b4a6babd-9c47-836a-8715-8902b66007b4"
+      stageUuid: "eb27a255-39b2-87cf-a80c-dcf845628989"
 version: 2
 ---
 # void — the zero (encode all to the void)

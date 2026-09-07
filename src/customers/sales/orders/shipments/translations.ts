@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shipments",
-    "uuid": "ba7449ca-bd71-8a44-8bad-868050163fee",
+    "uuid": "a2f2684a-b073-8486-9f40-0abd950a327d",
     "words": [
       "shipments"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when dispatching goods against a sales order — recording carrier, tracking number and URL, line items shipped, ship-from/to addresses, and progressing through picked → packed → shipped → delivered states. The fulfillment and carrier-tracking collection per EN-16931 §BG-13.",
-    "uuid": "1a4db569-34e5-8976-af53-d866f4a0b24a",
+    "uuid": "b198a180-8392-82be-b7d1-c3b9190296da",
     "words": [
       "use",
       "when",

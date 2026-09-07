@@ -2,11 +2,11 @@
 name: meal
 description: "Use when reasoning about meal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/meal"
-coordinate: "vocabulary/meal · 4/weave · 94fb056f"
-contentUuid: "4143f7a2-0e1a-5ba6-a3d7-7902f077dc3e"
-diamondUuid: "b959291d-aa1c-83f5-ac07-5fa0a20c697c"
-uuid: "94fb056f-022c-8bd4-b8d7-6a4a67e39611"
-horo: 4
+coordinate: "vocabulary/meal · 7/descent · f5bc0749"
+contentUuid: "b797ed60-6ca1-5d73-9e44-45a25bc548a0"
+diamondUuid: "55b0d56e-950d-8a40-aec3-27d2b70f494b"
+uuid: "f5bc0749-e6c7-80ab-8ac6-84b4902689f4"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "38821b6a-acaf-8bb4-a465-604a39fa41cb"
+  computationUuid: "79858d95-02a1-8503-932e-dd85dbd9ff0e"
   stages:
     - stage: path
       stageUuid: "196f4a74-23a4-8e00-9731-a57c683ac79f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a38af990-fa5c-87bb-be6f-5196dce51281"
     - stage: horo
-      stageUuid: "602cf4f8-2bd8-83c2-87e3-3508baafd8df"
+      stageUuid: "b403e771-9abd-8cc0-b4ea-90be3da12e95"
     - stage: seal
       stageUuid: "ef751c44-c100-8200-80c9-47489025fa67"
     - stage: uuid
-      stageUuid: "af6046d6-a5cc-8ec9-bad9-9a4d563d3c32"
+      stageUuid: "57cbd2f7-75eb-87fb-b186-c6ad698ce0c2"
 version: 2
 ---
 # meal

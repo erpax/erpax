@@ -2,18 +2,18 @@
 name: execute
 description: Use when reasoning about execute — Execute the recursive system and publish live results
 atomPath: execute
-coordinate: "execute · 5/round · 068cd243"
-contentUuid: "c7586a8d-c048-5299-a2cb-08bb86c10b68"
-diamondUuid: "a5d94b52-652a-8c84-98cd-c340cbb0d854"
-uuid: "068cd243-4146-89c3-aabf-93004bc32d3e"
-horo: 5
+coordinate: "execute · 7/descent · 1808e01f"
+contentUuid: "73a5b165-0493-5196-b89d-d32d2fa6b55b"
+diamondUuid: "55af1277-2bb7-80f3-8d5e-33eb5165d215"
+uuid: "1808e01f-e397-8d6a-86f8-5e7d85c78b60"
+horo: 7
 typography:
   partition: execute
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e613a02f-c0c0-867c-8d9f-6cef99384cba"
+  computationUuid: "30592512-4077-8f82-a4db-1b366a4ed368"
   stages:
     - stage: path
       stageUuid: "27fb1557-f424-85c8-9e0b-71cc9bee9ebd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "943b3c44-1596-83d6-a399-38a27b803904"
     - stage: horo
-      stageUuid: "d1253bbb-afa7-8795-932b-360ea2c96d27"
+      stageUuid: "6376486a-e8f2-86ed-9c7a-0a1265cb5fd9"
     - stage: seal
       stageUuid: "a1a82594-cb6a-8982-acc0-33b948919400"
     - stage: uuid
-      stageUuid: "67a9f591-cafe-80bd-ab63-45e6836623a7"
+      stageUuid: "b9466f2d-9320-800c-bda9-c6b339d5485f"
 version: 2
 ---
 # execute — Run the system and watch it compute

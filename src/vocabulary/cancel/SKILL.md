@@ -2,10 +2,10 @@
 name: cancel
 description: "Use when reasoning about cancel — A schema.org component word, collided out of schema.org compounds — fused from CancelAction (sti · collapse · merge)."
 atomPath: "vocabulary/cancel"
-coordinate: "vocabulary/cancel · 8/crest · a5df0f01"
-contentUuid: "c45e55a4-f6a1-5fb1-ad2f-c362dacd5ad6"
-diamondUuid: "802d99ba-7d59-81cd-aeb3-36e2e3829258"
-uuid: "a5df0f01-71aa-88d0-b5f2-d243156b2131"
+coordinate: "vocabulary/cancel · 8/crest · af688c00"
+contentUuid: "14c7b94d-2711-5974-baba-2fd9c5993351"
+diamondUuid: "4d439ef1-bead-8302-b09d-db0adca855ae"
+uuid: "af688c00-89d6-8c94-8e56-58f323bca5c8"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4f3c9e61-9909-85fe-8113-3d252888139e"
+  computationUuid: "c7faa324-0efe-87db-a5ff-c0aaa4a8ae82"
   stages:
     - stage: path
       stageUuid: "1047a27a-8c38-8d00-878f-64e847664075"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f932521c-6113-8780-9a00-125cf7ca9556"
     - stage: horo
-      stageUuid: "0c5d2b8a-e391-833e-84dd-1eb23dcad19f"
+      stageUuid: "74eb4494-3228-8305-b524-49de1ec68a88"
     - stage: seal
       stageUuid: "0b5fe3b9-e3f3-8474-ba56-f531ac8409dd"
     - stage: uuid
-      stageUuid: "461b1d78-8afc-8a69-9b1d-de5dd4a83e4f"
+      stageUuid: "d5772dae-3a63-82f2-84cb-aaf133ea35cd"
 version: 2
 ---
 # cancel

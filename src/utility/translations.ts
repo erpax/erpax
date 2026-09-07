@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "utility",
-    "uuid": "a89fcc13-4d43-883f-9703-6b3e993c5e63",
+    "uuid": "b8e9223a-28d0-8697-b1f5-b0c98296908b",
     "words": [
       "utility"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when dividing by anything that could be zero — pick the policy by what the zero MEANS (throw for money, collapse to 0 for an undefined ratio, coerce to 1 for an unset divisor) so ∞ or NaN never enters an account.",
-    "uuid": "5fa6fed2-d60e-81fd-b8bc-c777c21ff8f2",
+    "uuid": "b935cfb7-6790-89e4-9026-ba6a22145320",
     "words": [
       "use",
       "when",

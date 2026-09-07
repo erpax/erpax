@@ -2,10 +2,10 @@
 name: recursive
 description: "Use when reasoning about recursive — Recursive basis recognition - system generates and observes itself simultaneously"
 atomPath: recursive
-coordinate: "recursive · 8/crest · 137b9214"
-contentUuid: "b604cfdf-7aa9-5858-a1b2-cb7c36fc76dc"
-diamondUuid: "b6ac18ab-2fe2-82aa-bbaf-bb1f0b3df363"
-uuid: "137b9214-92aa-854b-bf65-2b64f94fb81e"
+coordinate: "recursive · 8/crest · 46f73610"
+contentUuid: "68bbf981-4a58-583b-bd41-9b349b9f0ed7"
+diamondUuid: "2c0065ef-fff5-8792-a16c-a8f7d627c568"
+uuid: "46f73610-d659-86c5-8207-12a96096104c"
 horo: 8
 typography:
   partition: recursive
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6b01ab45-c237-8bd1-8579-a9a2cbf6ad6d"
+  computationUuid: "49fdda75-70a9-8ea1-92fe-fef4f562049e"
   stages:
     - stage: path
       stageUuid: "c2879878-2691-8896-af7c-5ada628f4510"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9284eff9-f6b7-8d2a-b8f3-472c28145d05"
     - stage: horo
-      stageUuid: "864bf843-26b5-8b74-b1c0-ce2be2751776"
+      stageUuid: "da8617f0-c10a-8250-a194-702b75dc698b"
     - stage: seal
       stageUuid: "1f7671df-1596-88fe-af19-1827e5fc1c9e"
     - stage: uuid
-      stageUuid: "8747cd9a-ebfc-8456-b337-01b843ad2a22"
+      stageUuid: "e8f9cb4a-55b9-8a3a-92da-48936637ae7a"
 version: 2
 ---
 # recursive — Recursive basis recognition paired with observation

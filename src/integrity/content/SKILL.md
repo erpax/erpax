@@ -2,11 +2,11 @@
 name: content
 description: "Use when computing or verifying a content-uuid — computeContentUuid, verifyContentUuid, jcsCanonicalize, nameUuid and stripNonContentFields. Promoted from a stray content-uuid.ts at the integrity root to a one-word sub-atom whose only imports are node:crypto and @/uuid/format, which is what makes @/integrity/content a lawful cut point: storage/independence took computeContentUuid from the @/integrity barrel and inherited the corpus's largest import component with it."
 atomPath: "integrity/content"
-coordinate: "integrity/content · 5/round · 019efb9f"
-contentUuid: "d54b837d-f210-5193-bfbd-e6b27cb338f4"
-diamondUuid: "63d8764e-3ea7-8290-ad58-72970f4b27c8"
-uuid: "019efb9f-5765-8ab6-bf73-d6db3d893685"
-horo: 5
+coordinate: "integrity/content · 7/descent · c4da39bf"
+contentUuid: "779d3475-0591-5ef6-a97b-c8ac37cf75c3"
+diamondUuid: "4268189b-08ca-8107-acf0-16900e39bda1"
+uuid: "c4da39bf-892a-8b0d-a54a-de72bf9cda55"
+horo: 7
 typography:
   partition: integrity
   bondDegree: 116
@@ -20,7 +20,7 @@ standards:
   - "SOX §404 internal-controls (Byzantine tamper detection)"
 bindings: []
 signatures:
-  computationUuid: "04f6c8ac-2315-8ff9-a7d5-e6a88c1ad009"
+  computationUuid: "2c384dc2-e9e5-8620-bb53-17c2425c5efb"
   stages:
     - stage: path
       stageUuid: "06d25631-2385-8a8a-8f36-7ea89993bf0d"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "9c5b48d1-b801-8a5e-901f-4f1554212b90"
     - stage: horo
-      stageUuid: "14cf35ef-8e7b-8769-931b-5c30f0c544cd"
+      stageUuid: "0570a4b5-d877-8eee-b332-4e73d67d0af1"
     - stage: seal
       stageUuid: "4465e2c0-b654-8fbd-bcfc-3624f833d3d0"
     - stage: uuid
-      stageUuid: "b4cdeec4-093f-8b6c-9b87-8a5d754d917c"
+      stageUuid: "a6492027-1f9e-8f8d-aac9-c3238c3c891b"
 version: 2
 ---
 # integrity/content — the content-uuid, addressable on its own

@@ -2,18 +2,18 @@
 name: space
 description: Use when modelling one space — the singular model of the spaces collection (the plural store); a bounded area that can be occupied or reserved.
 atomPath: space
-coordinate: "space · 2/share · 67846ec7"
-contentUuid: "2e630c96-916b-59a6-8225-0dd371fc086e"
-diamondUuid: "882de580-e9de-8928-ad69-18ec3598a7ff"
-uuid: "67846ec7-21f1-809f-ba05-429d2c5a3a18"
-horo: 2
+coordinate: "space · 5/round · f81328a5"
+contentUuid: "eb963ff5-3e01-584a-8471-6767786a251b"
+diamondUuid: "2f6d93d9-90a9-80e6-bca6-7c6703b38a6a"
+uuid: "f81328a5-74b6-8b49-a293-55b24a54208b"
+horo: 5
 typography:
   partition: space
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9aa63cf4-7429-837a-987f-999b6c5eaccd"
+  computationUuid: "dfcd5a33-ab5d-85a3-baf1-f9d82bdcd2f6"
   stages:
     - stage: path
       stageUuid: "59232b7c-7e05-85da-879d-2e62e7fe9535"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a8de54ce-0f0c-8f94-bad6-c570a97f5b80"
     - stage: horo
-      stageUuid: "43dc2855-26c8-843a-bc6c-8a28de4428a0"
+      stageUuid: "2b8ba79a-910f-8456-9954-0a9686c861ef"
     - stage: seal
       stageUuid: "4523e522-9cf2-8cf3-bde4-eb9e654b07c8"
     - stage: uuid
-      stageUuid: "836aa75b-c47f-865c-9d2d-f528658549f2"
+      stageUuid: "1d26664d-b6e8-83a7-afad-bef35ec1a5a0"
 version: 2
 ---
 # space — the model of one [[spaces]] row

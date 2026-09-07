@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scouting",
-    "uuid": "a704fed7-2f97-84b8-8d09-56f718854acb",
+    "uuid": "925c786a-6338-8c0a-8ae3-af9f2f11efb0",
     "words": [
       "scouting"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when monitoring fields for pest, disease, and crop status — scouting is the systematic field-walk that drives integrated pest management (IPM): observe, identify, count against an economic threshold, then act (cultural/biological/mechanical/chemical) only when damage cost exceeds control cost. The monitoring backbone; turns pest control from calendar-spray into measured decision.",
-    "uuid": "bf569738-90ae-8463-a562-5312f7d1ae29",
+    "uuid": "3c59f949-c437-8da7-ac97-04fd71a5322b",
     "words": [
       "use",
       "when",

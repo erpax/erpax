@@ -2,10 +2,10 @@
 name: notifications
 description: "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection."
 atomPath: "legal/entities/compliance/deadlines/compliance/notifications"
-coordinate: "legal/entities/compliance/deadlines/compliance/notifications · 7/descent · 76975ed4"
-contentUuid: "b37cdd22-96bb-55e2-ad65-1171cfdd3315"
-diamondUuid: "854a0745-12cc-8ca6-993f-02ce2844fa91"
-uuid: "76975ed4-dbdb-823e-bd8a-2ea890d44a24"
+coordinate: "legal/entities/compliance/deadlines/compliance/notifications · 7/descent · 119640ae"
+contentUuid: "b09f41f5-46bb-5388-b16d-585df82079fb"
+diamondUuid: "c66cc649-5cdf-8ae3-99a8-627f86d54bda"
+uuid: "119640ae-71d8-88c4-84b0-973602c85261"
 horo: 7
 typography:
   partition: legal
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "28e8493c-b54c-8e7b-bee0-1938adcc2e9e"
+  computationUuid: "362824f2-53b8-84f8-8f5e-b77a8e19318c"
   stages:
     - stage: path
       stageUuid: "32a71354-b624-8b99-873b-bd8553e6f18b"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "c979f220-3234-8ef1-88e3-61d42a8d8932"
     - stage: horo
-      stageUuid: "7a663fbd-6f33-8092-ad58-fcb8bf50deee"
+      stageUuid: "f845c2f2-bd8e-8e10-b2c2-d5e298e6a983"
     - stage: seal
       stageUuid: "7aae8859-8c2d-8722-a139-79b2309e5307"
     - stage: uuid
-      stageUuid: "72162cf8-b1d5-86a1-b702-6fb77873c2af"
+      stageUuid: "25cb8065-8dec-828d-ac15-73f0d5ee2467"
 version: 2
 ---
 # compliance-notifications

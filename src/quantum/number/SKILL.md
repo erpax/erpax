@@ -2,18 +2,18 @@
 name: number
 description: "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line."
 atomPath: "quantum/number"
-coordinate: "quantum/number · 2/share · 86769e27"
-contentUuid: "14ee3ae1-0fcd-5768-9b16-ee9ac4186b81"
-diamondUuid: "9f0a1db0-5b72-855b-89b3-b13b59881a49"
-uuid: "86769e27-8ffb-8c23-aea3-7d236a49d24d"
-horo: 2
+coordinate: "quantum/number · 7/descent · 003745ba"
+contentUuid: "099fc083-49ee-56e0-9801-f265c6b93ea6"
+diamondUuid: "eca3cdd7-2d22-850a-9e86-a95f8448f80d"
+uuid: "003745ba-955b-8cee-897c-9c53ee29d336"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 226
 standards: []
 bindings: []
 signatures:
-  computationUuid: "20bd9643-7cdc-8e7e-b6bb-ba3f7442993b"
+  computationUuid: "8ac226df-eac0-889b-8b00-dff84fe3de8f"
   stages:
     - stage: path
       stageUuid: "a4a59051-7c91-876b-903c-230d3d88aa79"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "62c55f1c-81b8-896d-8db1-6a0eb81a5138"
     - stage: horo
-      stageUuid: "298184df-e30f-892e-9d59-4951df17afff"
+      stageUuid: "56b67ff1-aaaf-80e4-b21b-1370a971aaae"
     - stage: seal
       stageUuid: "3f75ddee-1316-896d-acab-5906cb3d38b3"
     - stage: uuid
-      stageUuid: "0b0a7639-442d-878f-86bb-afe47e9a936e"
+      stageUuid: "4226233b-c134-8df1-a30a-d2590e148dca"
 quantum:
   superposition:
     - accommodation
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "20bd9643-7cdc-8e7e-b6bb-ba3f7442993b"
-    contentUuid: "14ee3ae1-0fcd-5768-9b16-ee9ac4186b81"
+    computationUuid: "8ac226df-eac0-889b-8b00-dff84fe3de8f"
+    contentUuid: "099fc083-49ee-56e0-9801-f265c6b93ea6"
 version: 2
 ---
 # quantum/number — the digit-stream behind the dot
@@ -77,4 +77,4 @@ The (conjectured) **normality** of π — every [[digit]] equally often — *is*
 
 @see [[number]] · [[digit]] · [[stream]] · [[linearity]] · [[finality]] · [[sequence]] · [[breath]] · [[harmony]]
 
-<sub>content-uuid `14ee3ae1-0fcd-5768-9b16-ee9ac4186b81` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `099fc083-49ee-56e0-9801-f265c6b93ea6` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

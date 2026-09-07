@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "machine",
-    "uuid": "59ff856a-fd75-81d1-902c-84bd05d8cbf4",
+    "uuid": "13c7e0d1-1f77-8f95-b70f-cb245f0e578a",
     "words": [
       "machine"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling shop-floor equipment mined from the upstream source of truth (etrima, 20 years of garment manufacturing) — the machine node of the production-traceability spine. Every machine carries a three-rate spread (pay ≤ cost ≤ price per hour) that is double-entry economics on the floor: machineRate decomposes a machine-hour into revenue = cost + margin and cost = pay + overhead. A machine runs a work/phase for a lot variant during a shift; fields are the real etrima columns, never invented.",
-    "uuid": "37816562-74ff-8694-b726-6cf0ccf2c9dc",
+    "uuid": "605ad54c-5865-842a-9003-7746df4aec12",
     "words": [
       "use",
       "when",

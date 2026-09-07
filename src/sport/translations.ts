@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sport",
-    "uuid": "28556144-4f6a-882a-b3a1-ad46bbaf3845",
+    "uuid": "8ffd43e8-6da2-8a48-a052-8ac0961a9391",
     "words": [
       "sport"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sport — A type of sport (e.g. Baseball).",
-    "uuid": "08e86c92-b31a-854e-88ca-736ebe66e6c3",
+    "uuid": "bf813b3e-7aec-84d5-b41b-db1bc248d6f2",
     "words": [
       "use",
       "when",

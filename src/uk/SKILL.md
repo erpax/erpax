@@ -2,11 +2,11 @@
 name: uk
 description: "Use when reasoning about uk as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: uk
-coordinate: "uk · 8/crest · 390245c8"
-contentUuid: "0283b8b8-c56f-5436-bc26-c4db766ed0c6"
-diamondUuid: "84f1e846-53a4-8dae-adca-f0a2fc108519"
-uuid: "390245c8-acf4-80fd-b767-5433f23198d2"
-horo: 8
+coordinate: "uk · 1/base · c523381d"
+contentUuid: "6fc9a91e-282b-50e8-9b81-3875e8907384"
+diamondUuid: "428bf964-681c-8def-8960-3abd6dbbdbfe"
+uuid: "c523381d-edb7-843d-9c4f-5af8aa154d53"
+horo: 1
 typography:
   partition: uk
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "698b080f-78ef-8dc1-845c-35ba6cac74bb"
+  computationUuid: "d9e096a7-a4bb-8524-9921-64fc03bd5d80"
   stages:
     - stage: path
       stageUuid: "119bfc0e-51c1-8584-bcc7-947c028c936d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2584f402-d023-8ecd-b240-a2c6f60f6cfa"
     - stage: horo
-      stageUuid: "157c5a83-b7bc-8435-b4b4-5485af893297"
+      stageUuid: "c1067f45-2120-846a-85e2-1eef74924c3c"
     - stage: seal
       stageUuid: "d429a5b6-f098-8445-9517-898a85067356"
     - stage: uuid
-      stageUuid: "d0ed3e44-c98c-8874-ad17-05ed6ab19749"
+      stageUuid: "c0569bc8-b430-8c25-ad74-61f75a9c0a5c"
 version: 2
 ---
 # uk

@@ -2,18 +2,18 @@
 name: orientation
 description: "Use when judging whether a front page ORIENTS a reader or only counts itself — eight criteria derived from a working sibling portal (identity in the first screen, a first runnable command, a census, the sequence, its inversion, a usable quantum invocation, the open-problem position, and stated limits), each citing the feature it came from so the bar can be argued with rather than taken on taste; the score is computed from the text and assertOrients is a ratchet run upward, so a front page may not orient less than it does today."
 atomPath: "readme/orientation"
-coordinate: "readme/orientation · 4/weave · b253dd66"
-contentUuid: "1dd5d8f1-33e8-568a-a477-c8b09a717b94"
-diamondUuid: "1bfecbb8-7ce6-8799-a71a-4d54b805248c"
-uuid: "b253dd66-0a88-8e63-8bb1-8cfa1d958c83"
-horo: 4
+coordinate: "readme/orientation · 1/base · fec2053e"
+contentUuid: "8aa05a1b-3525-5b0d-a532-33a76cf061dc"
+diamondUuid: "8e1c9dd9-da7d-89af-81ab-298071e90648"
+uuid: "fec2053e-33bb-80b3-b0bc-097a86e34357"
+horo: 1
 typography:
   partition: readme
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "441250ae-b313-87af-bdfe-0e4026b399d2"
+  computationUuid: "94be0c2d-c4a5-8e31-9633-946c3e32d62c"
   stages:
     - stage: path
       stageUuid: "c636b5b5-75f1-8494-8dd9-a140591caa3d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "05bf9354-dab5-8a33-b36f-89afe5f30420"
     - stage: horo
-      stageUuid: "546a2361-bf43-8c17-8b32-46c756e68479"
+      stageUuid: "1df05649-2d94-8c65-a888-a275c8f25402"
     - stage: seal
       stageUuid: "4c42705b-3fe0-895f-8b94-08567c6e790d"
     - stage: uuid
-      stageUuid: "8e6535d0-1f12-8848-ac44-f044547ef574"
+      stageUuid: "8dec7b97-ef6b-8586-a073-b5e1eb01b2ae"
 version: 2
 ---
 # readme/orientation — a front page orients, or it is a census

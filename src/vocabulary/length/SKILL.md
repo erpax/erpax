@@ -2,11 +2,11 @@
 name: length
 description: "Use when reasoning about length as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/length"
-coordinate: "vocabulary/length · 1/base · ba3023ae"
-contentUuid: "93b6e0cd-305a-53eb-a0e7-55afc484612e"
-diamondUuid: "d2032c8a-4921-8c1d-aa83-a7fd42c60996"
-uuid: "ba3023ae-0327-8e15-807a-9bbaa6544085"
-horo: 1
+coordinate: "vocabulary/length · 4/weave · 5347cbd2"
+contentUuid: "ac6e354a-1ddf-5370-9fdf-8e74fa7e622d"
+diamondUuid: "aa46759d-c461-8151-b627-412935738d1c"
+uuid: "5347cbd2-be3f-82ff-8c51-df319f5e0dde"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "27801a73-f3cb-8885-9917-03b4a40309fe"
+  computationUuid: "68ba822e-1671-8160-9311-5d83f207120c"
   stages:
     - stage: path
       stageUuid: "2e440b7e-e7c6-8f38-a49d-e5ea8eb55691"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1c7b6dae-7177-8e2c-a79d-0fa992a614d1"
     - stage: horo
-      stageUuid: "ad751185-f99e-8638-b51d-ec126a913b78"
+      stageUuid: "772f1812-fe0c-8f11-a91b-9a6cde8f7963"
     - stage: seal
       stageUuid: "55b46678-f19a-8d36-a329-216126a00f49"
     - stage: uuid
-      stageUuid: "4d7e70e5-6881-8db0-810a-46785fce0708"
+      stageUuid: "6eba7cd5-26d3-8dc1-8359-1805c79492f2"
 version: 2
 ---
 # length

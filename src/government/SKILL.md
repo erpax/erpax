@@ -2,11 +2,11 @@
 name: government
 description: "Use when reasoning about government as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: government
-coordinate: "government · 5/round · c2ff2a3b"
-contentUuid: "2ebfe670-f1d4-54f6-abde-b937123ab5fb"
-diamondUuid: "cf37ab7f-a7e4-8577-a35b-d5c3181bda75"
-uuid: "c2ff2a3b-c5aa-8211-964a-675e1f074854"
-horo: 5
+coordinate: "government · 8/crest · 8be52b48"
+contentUuid: "4d9903a6-93d4-599f-b44f-dfe96d8870f7"
+diamondUuid: "e92cbcd9-d522-84e8-866c-6f4ebd0f7d9d"
+uuid: "8be52b48-26f9-82f9-9484-80023cb1b0dd"
+horo: 8
 typography:
   partition: government
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7fbdfabb-76f3-8c58-b567-b08b0901dc2e"
+  computationUuid: "ec68e95b-3f85-8619-906d-835d0e18c307"
   stages:
     - stage: path
       stageUuid: "f740c9d2-b0ef-8efa-b433-25d1f29f4a39"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "56112917-4392-8cd3-91ff-821348acd702"
     - stage: horo
-      stageUuid: "5e671101-97e0-89f7-ac3d-4ad8f01f156b"
+      stageUuid: "c0f01baa-622b-86fb-84b4-23c488e41459"
     - stage: seal
       stageUuid: "d82a57c7-ca4f-8111-9299-cf2015be4cd4"
     - stage: uuid
-      stageUuid: "37fb1d4b-d25e-8dda-a901-787ffe76ca18"
+      stageUuid: "edaceb24-a2bd-85d4-8561-2ccff1963272"
 version: 2
 ---
 # government

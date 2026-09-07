@@ -2,11 +2,11 @@
 name: templates
 description: "Use when reasoning about templates — Industry templates — curated per-(country × industry) opening books."
 atomPath: "seeds/template/templates"
-coordinate: "seeds/template/templates · 5/round · 959d7611"
-contentUuid: "57ac92b0-5ac6-5d09-9db8-ec5d7fa40aba"
-diamondUuid: "438de0c7-1cdf-808f-a6c7-a8a69b3dc1e8"
-uuid: "959d7611-9828-8e95-b179-577287ef22e2"
-horo: 5
+coordinate: "seeds/template/templates · 7/descent · 1fb5b73c"
+contentUuid: "40bca82b-fb95-5133-9cc6-56747bf3a111"
+diamondUuid: "415bb005-fb2c-8948-87bc-c04f2c0e0e56"
+uuid: "1fb5b73c-9e98-8523-ad13-d99f6933485d"
+horo: 7
 typography:
   partition: seeds
   bondDegree: 8
@@ -22,7 +22,7 @@ standards:
   - "US-GAAP ASC-606"
 bindings: []
 signatures:
-  computationUuid: "3b9b844b-fce1-86bc-aa4b-638106873ffa"
+  computationUuid: "c4287b13-42c7-81f5-a6cb-d5ff2df45214"
   stages:
     - stage: path
       stageUuid: "69f034ce-5cb4-8c41-8457-49e51a1153aa"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "a440a542-5929-8353-9a0c-5a93fb66edc0"
     - stage: horo
-      stageUuid: "0eed7a06-1066-8507-aedb-b161c848af23"
+      stageUuid: "8ba810e3-3118-89b3-8d58-2b1ab270e69d"
     - stage: seal
       stageUuid: "d4f68ba2-f5ef-8580-82a7-65366c5bd468"
     - stage: uuid
-      stageUuid: "406f6ed1-17ad-8e13-aa4a-260bf26eeb45"
+      stageUuid: "bf28355e-8f24-8cb6-9ac6-f4e7a97f60a9"
 version: 2
 ---
 # seeds/template/templates

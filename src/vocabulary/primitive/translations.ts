@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "primitive",
-    "uuid": "b4502d9b-2bc6-8733-9e99-73eebc93a897",
+    "uuid": "91c0f6cc-1d0c-8d00-a218-a24a7ebebd03",
     "words": [
       "primitive"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the smallest frontend diamond — the irreducible UI vertex below the component (a design token, a raw input, a pixel-level element). What the atom is to the corpus, the primitive is to the UI: one content-uuid, one render, complete and sealed; components compose primitives, blocks compose components.",
-    "uuid": "0af69080-6ed7-8cfb-8875-8be7bf96e90b",
+    "uuid": "fab48500-1af5-8175-8ed0-00eadcf0c84a",
     "words": [
       "use",
       "when",

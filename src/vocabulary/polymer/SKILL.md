@@ -2,11 +2,11 @@
 name: polymer
 description: "Use when reasoning about polymer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/polymer"
-coordinate: "vocabulary/polymer · 7/descent · 987fbb25"
-contentUuid: "6a95db8a-aed8-50c0-82f3-23be5fc37f50"
-diamondUuid: "a5a9cfaf-48cd-8f98-91d5-3c3eb4595de9"
-uuid: "987fbb25-aa13-81a9-981e-8696cd529562"
-horo: 7
+coordinate: "vocabulary/polymer · 2/share · 4d68ca17"
+contentUuid: "5b20b3b8-8124-52f0-97c9-f03079bdcc61"
+diamondUuid: "5e1089fa-0004-8c71-8fb5-ed998f0a69b8"
+uuid: "4d68ca17-b76e-8e57-978b-83914731657a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d6943bd8-e56f-8b15-a429-091561fcc464"
+  computationUuid: "3f67d03e-ad30-8650-9219-fb16b5f1919a"
   stages:
     - stage: path
       stageUuid: "9bd2e250-0f57-8633-b4bf-8ef79e074bc1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2b1c4d67-5e92-8d53-82c9-5334590c9c31"
     - stage: horo
-      stageUuid: "2c746302-a724-8e9a-a1fc-46239dea67ea"
+      stageUuid: "083d097f-f2fa-824c-801d-5d236fda4a3b"
     - stage: seal
       stageUuid: "c12d474f-640e-8ba5-adfa-ca33685b122e"
     - stage: uuid
-      stageUuid: "9cf7595c-db83-8973-b8be-7ea3108aca90"
+      stageUuid: "55ffc001-2145-820e-8e58-01859aefb5fa"
 version: 2
 ---
 # polymer

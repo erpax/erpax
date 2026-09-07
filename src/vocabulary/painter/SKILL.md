@@ -2,11 +2,11 @@
 name: painter
 description: "Use when reasoning about painter — A schema.org component word, collided out of schema.org compounds — fused from HousePainter (sti · collapse · merge)."
 atomPath: "vocabulary/painter"
-coordinate: "vocabulary/painter · 5/round · c594ef47"
-contentUuid: "2c18b61c-8fa7-51a3-93ed-5878d636b5c5"
-diamondUuid: "0d107313-947c-8eef-ab7c-9fe3f5d80792"
-uuid: "c594ef47-78c9-8cd9-bca5-38bc7de0e250"
-horo: 5
+coordinate: "vocabulary/painter · 2/share · 482b8f4e"
+contentUuid: "63f9f785-15b0-5285-834d-c48e61628c78"
+diamondUuid: "83924cab-6c45-8c93-a2fb-356497668c86"
+uuid: "482b8f4e-34eb-8a30-8b9d-1a4a8ac0faee"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b0a9352a-2bfb-8507-8866-f01a26be96e7"
+  computationUuid: "e62726ae-4d44-8b49-97cf-ec91f9430372"
   stages:
     - stage: path
       stageUuid: "9ea617d7-29e9-8035-b3e0-77ea2d0d6fae"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "414c5b90-80d8-8f44-8bcb-7bf561d0ee0d"
     - stage: horo
-      stageUuid: "b12d739d-5a65-8d05-8bf9-fd9c6213ae48"
+      stageUuid: "6140720f-adbb-80b3-bcbc-a72d2f7d3eee"
     - stage: seal
       stageUuid: "2debfbc5-abf1-897f-92fd-2cad1dad45d6"
     - stage: uuid
-      stageUuid: "38a3500a-a306-8343-9581-811731b4e879"
+      stageUuid: "ef1221d6-d85c-8827-a3d2-bf8765ef2f5b"
 version: 2
 ---
 # painter

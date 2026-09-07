@@ -2,11 +2,11 @@
 name: leg
 description: "Use when reasoning about leg as an anatomical part of body — vocabulary pivot to @/leg; nested not duplicated."
 atomPath: "body/leg"
-coordinate: "body/leg · 7/descent · 062b10cf"
-contentUuid: "556dd7be-a61d-5667-8842-6d15ddda20fa"
-diamondUuid: "cff89f18-2f8f-80c0-96b9-732111bccf4d"
-uuid: "062b10cf-d482-88b8-9368-eb4525c90b8a"
-horo: 7
+coordinate: "body/leg · 5/round · e4fc6057"
+contentUuid: "29519fd8-9a58-5d02-a8ea-be3a96a2d680"
+diamondUuid: "94ea7a34-c086-866c-b741-388de49bf8b7"
+uuid: "e4fc6057-56fc-8cfa-a1ec-69f9eac03cc5"
+horo: 5
 typography:
   partition: body
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "04ffb488-a9a4-828a-b1df-116485df3924"
+  computationUuid: "4f7308ae-145c-8f26-93a3-9283ffc02a7b"
   stages:
     - stage: path
       stageUuid: "2b184cd4-4586-863a-aa68-0cad8983e1f9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "77ceac4a-24a4-83a6-93ce-3be26b9c1e22"
     - stage: horo
-      stageUuid: "760c141a-5123-8c1b-aa58-702fc6184920"
+      stageUuid: "fc5d3e73-5ea5-81a3-a30a-30c3e414b787"
     - stage: seal
       stageUuid: "c73c4280-1e59-8565-8037-6e0e57c0424d"
     - stage: uuid
-      stageUuid: "7c4707d4-b2d0-8853-9dae-e37b7de6d1d7"
+      stageUuid: "7567e9d0-6da4-8581-8566-03b8f96b916e"
 version: 2
 ---
 # body/leg — anatomical part

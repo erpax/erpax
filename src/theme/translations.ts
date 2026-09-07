@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "theme",
-    "uuid": "4399df8d-c7cc-8749-88d6-c58653a17b14",
+    "uuid": "40db10c2-6129-8500-8d61-89dfe4a06a08",
     "words": [
       "theme"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious.",
-    "uuid": "19d5c7c5-f759-829a-b755-6d8b5566a247",
+    "uuid": "bfc32b60-de29-851a-9235-913be3349e86",
     "words": [
       "use",
       "when",

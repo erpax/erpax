@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "opportunity",
-    "uuid": "67622b0d-db06-8f4b-8e4e-c776d88bc9b8",
+    "uuid": "ec58f01d-3a4c-8e45-92ef-623c1467b555",
     "words": [
       "opportunity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one opportunity — the singular model of the opportunities collection (the plural store); a potential deal tracked through a sales pipeline.",
-    "uuid": "98b77ffe-9849-8cd2-97ab-c524de8b5d14",
+    "uuid": "344addcc-e7bc-89f7-89d2-456f93419201",
     "words": [
       "use",
       "when",

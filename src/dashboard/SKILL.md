@@ -2,11 +2,11 @@
 name: dashboard
 description: "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions."
 atomPath: dashboard
-coordinate: "dashboard · 5/round · c0ba5d5c"
-contentUuid: "e5e24835-7467-52e4-8483-6d2384732999"
-diamondUuid: "7f27f34f-3470-8167-9a64-8ee5505cb6d4"
-uuid: "c0ba5d5c-92a4-8fe0-8ae5-e1f9804c42f6"
-horo: 5
+coordinate: "dashboard · 8/crest · 556130d8"
+contentUuid: "73d320f8-c304-58f4-b27c-c1b6232b3f55"
+diamondUuid: "4a12008c-40ce-8c28-a3cd-bddccce9ac41"
+uuid: "556130d8-5df0-8356-b355-f58a71f7a1dd"
+horo: 8
 typography:
   partition: dashboard
   bondDegree: 46
@@ -23,7 +23,7 @@ standards:
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "af4af582-2363-83e9-9f90-cb1f35912ec4"
+  computationUuid: "9f734c01-699b-870d-b0c3-77d31e8d055a"
   stages:
     - stage: path
       stageUuid: "deb8c079-da08-8019-9459-9f3a08003bb9"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "857c3683-4dab-8201-b18b-5b0df077442b"
     - stage: horo
-      stageUuid: "40db5a6f-09d2-813d-a3c1-10591ba3ee7d"
+      stageUuid: "c3a66788-c6dd-8a58-9f80-18edae70a902"
     - stage: seal
       stageUuid: "6a638cb4-aab4-8b1d-a1a8-f30d233345fa"
     - stage: uuid
-      stageUuid: "2da7ea70-a528-8aca-97e5-19776dab856e"
+      stageUuid: "695f5126-f971-8bbf-848d-6cca39e642a0"
 version: 2
 ---
 # dashboard — each model's computed admin view (under [[before]])

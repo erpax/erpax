@@ -2,11 +2,11 @@
 name: home
 description: "Use when reasoning about home — A schema.org component word, collided out of schema.org compounds — fused from HomeAndConstructionBusiness · HomeGoodsStore · homeLocation · homeTeam (sti · collapse · merge)."
 atomPath: "vocabulary/home"
-coordinate: "vocabulary/home · 4/weave · 905a822f"
-contentUuid: "3aac9ac6-d5e2-5176-a2e6-6b1a5a3e1be8"
-diamondUuid: "e8aa50f5-525d-8153-91ca-3be19148292d"
-uuid: "905a822f-c41d-8fe5-990f-31d992314fb6"
-horo: 4
+coordinate: "vocabulary/home · 5/round · 8fcdc0ff"
+contentUuid: "784da238-3c3a-5750-957a-665864d43d5b"
+diamondUuid: "be7f3542-6c3e-8509-b374-78f5d0926bf2"
+uuid: "8fcdc0ff-7a5a-8235-8339-e03a06214f3f"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2efaa2f2-f624-81b3-8661-ca6fc13281b9"
+  computationUuid: "5e3cf708-2a8e-89a5-a4c3-54198fc87089"
   stages:
     - stage: path
       stageUuid: "a007c44e-0e5e-83f1-ac79-ce198c84c56a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "08c90099-c353-815c-a7a9-ccf3659ac18b"
     - stage: horo
-      stageUuid: "44e92505-53ce-853b-8aeb-e34c89ab8d6f"
+      stageUuid: "310789ce-7713-817a-9914-f218f13b26dc"
     - stage: seal
       stageUuid: "69c9625d-a05d-84de-9e89-a9c690d5452c"
     - stage: uuid
-      stageUuid: "35f98bbf-c6c3-89b3-abe2-098fac5f49a1"
+      stageUuid: "c3926e45-eb36-8419-a56a-1d27184186ed"
 version: 2
 ---
 # home

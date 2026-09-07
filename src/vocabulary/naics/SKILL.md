@@ -2,11 +2,11 @@
 name: naics
 description: Use when reasoning about naics — The North American Industry Classification System (NAICS) code for a particular organization or business person.
 atomPath: "vocabulary/naics"
-coordinate: "vocabulary/naics · 1/base · 059b3d47"
-contentUuid: "808231f7-c6fb-53e2-a263-4f37c257dc1f"
-diamondUuid: "7ed6f7a0-2100-80c5-82d6-ca14a5864484"
-uuid: "059b3d47-cdd5-8c20-b859-bd00f9f69bac"
-horo: 1
+coordinate: "vocabulary/naics · 4/weave · 9298043d"
+contentUuid: "674214e1-19d1-5e3a-8572-6eb37b789f3f"
+diamondUuid: "90733393-6c1e-873e-8608-544420e383e4"
+uuid: "9298043d-da8a-8981-8ff4-12d9ee7e27fe"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "92cef23e-4f40-8262-99e5-7f33607911da"
+  computationUuid: "39752d86-e920-8fc8-9555-a78b8ea8eac7"
   stages:
     - stage: path
       stageUuid: "25b46f15-f74e-8b0f-bbca-f5d6a35e1585"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f4c4f287-b19f-8fc4-be8e-c130370f89e3"
     - stage: horo
-      stageUuid: "c7f7673f-c34e-8292-bb3e-25aa204ea262"
+      stageUuid: "bfacfa4a-0016-8155-86fe-d5a81968b009"
     - stage: seal
       stageUuid: "edd6e96c-d2e0-8120-8a9d-9f4711b6c219"
     - stage: uuid
-      stageUuid: "eb321691-716c-8d7f-bd52-868bc44597d5"
+      stageUuid: "d2a601f8-d8ed-8281-b11f-f05ed20b7c92"
 version: 2
 ---
 # naics

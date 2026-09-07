@@ -2,11 +2,11 @@
 name: team
 description: "Use when agents must cover a gap together — a team's competence is the UNION of its members' skills, shared into every member, while each keeps its distinct purpose."
 atomPath: "agent/team"
-coordinate: "agent/team · 2/share · 5ed91fb7"
-contentUuid: "258f30ad-55ef-50da-b5b7-b8e8d12be01e"
-diamondUuid: "6ee5c311-d560-8c63-89e8-7be802576fc6"
-uuid: "5ed91fb7-e94d-8d41-a252-901b7ba2c822"
-horo: 2
+coordinate: "agent/team · 5/round · 619346ac"
+contentUuid: "999050a7-9be5-5ee5-b5e6-66bdea0fad25"
+diamondUuid: "63e91e20-38c4-82bb-86bc-4dbcd34fed30"
+uuid: "619346ac-cb8a-8286-8cbe-937e0524dc12"
+horo: 5
 typography:
   partition: agent
   bondDegree: 142
@@ -15,7 +15,7 @@ standards:
   - "RFC-9562"
 bindings: []
 signatures:
-  computationUuid: "024adebc-3128-82f1-962f-361bcb0c35de"
+  computationUuid: "de9bc2fc-49e2-8669-b158-2e7a908b9b77"
   stages:
     - stage: path
       stageUuid: "ac37f334-07c7-83c1-95b4-2966ade89aa4"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "cf716d60-9c59-87f2-9d25-d4b78c9eb216"
     - stage: horo
-      stageUuid: "13a35951-2467-84e7-96ae-ae67dcfc882b"
+      stageUuid: "a3b862b1-2815-85e7-8f10-8d4cf6c5e0fc"
     - stage: seal
       stageUuid: "c20ea09e-e81c-8a5f-bae0-4201a53397eb"
     - stage: uuid
-      stageUuid: "68df57ea-7cf7-8bbe-9c6d-84e82447cdaf"
+      stageUuid: "33b34a73-5900-8af9-b7e6-170d9d3149f6"
 version: 2
 ---
 # agent/team — competence is the union, purpose stays many

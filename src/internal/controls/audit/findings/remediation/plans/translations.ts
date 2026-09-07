@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plans",
-    "uuid": "4f2afbb2-f5bf-85d0-97da-e518f0f3e7cf",
+    "uuid": "33bfe9bf-d59a-8aa7-bb43-a37278893f61",
     "words": [
       "plans"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when planning or tracking remediation of an audit finding or compliance gap — design/process/system/training/policy action steps with owner, target date, priority, budget, risk-of-delay, approval chain; COSO-2013 deficiency-remediation and SOX §404 control lifecycle. The remediation-plans improvement collection.",
-    "uuid": "18766416-fbc7-8ebe-8217-a61fc03c2d61",
+    "uuid": "1267d6cc-0926-85ba-8492-c4fdf2755147",
     "words": [
       "use",
       "when",

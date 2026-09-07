@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gene",
-    "uuid": "d08ed67e-f441-8756-877b-96cb7e98f5ac",
+    "uuid": "7384e5dd-ee15-809e-b446-5785c77efb24",
     "words": [
       "gene"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about gene — A discrete unit of inheritance which affects one or more biological traits (Source: https://en.wikipedia.org/wiki/Gene). Examples include FOXP2 (Forkhead box protein P2), SCARNA21",
-    "uuid": "d47cac20-f3eb-8073-b2c2-ea7d78353d64",
+    "uuid": "ed2a0c80-ab69-8824-afcd-77d24bde6daa",
     "words": [
       "use",
       "when",

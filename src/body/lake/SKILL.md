@@ -2,11 +2,11 @@
 name: lake
 description: "Use when reasoning about lake as a anatomical part of body — vocabulary pivot to @/lake; nested not duplicated."
 atomPath: "body/lake"
-coordinate: "body/lake · 8/crest · 57682f24"
-contentUuid: "e919c5d8-2083-5fac-b983-9acd83d1f4bd"
-diamondUuid: "98b6ef7d-9fb5-8261-9d07-4890ead02f42"
-uuid: "57682f24-3dda-8b98-9e33-4a100799f5a5"
-horo: 8
+coordinate: "body/lake · 7/descent · fb3436a0"
+contentUuid: "45bf8778-fa6e-53b2-8aa6-b19ab1a8e1d2"
+diamondUuid: "52b01061-feb8-87b1-baf2-6f1481fbc576"
+uuid: "fb3436a0-c8cd-8f24-88cc-fb111210466f"
+horo: 7
 typography:
   partition: body
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "931e3129-039a-88e5-862c-45f85e5a0a7a"
+  computationUuid: "d02e4a0f-8baf-86cd-aff6-73aa3de3e0a8"
   stages:
     - stage: path
       stageUuid: "f63e9059-d419-8405-9455-7b00c8eaf06e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e0beeee1-d452-8b80-9565-6d982f55941d"
     - stage: horo
-      stageUuid: "372911ef-a7b6-80ec-bb64-51b3a497f876"
+      stageUuid: "328e65af-17a6-840b-8f77-afba7dc99a32"
     - stage: seal
       stageUuid: "ac530bef-86f1-80ce-9fd6-e110c7701818"
     - stage: uuid
-      stageUuid: "665fadee-fb5a-89c1-87a9-e59dea8d2087"
+      stageUuid: "caef3d72-22dc-8656-a572-215156b8f8f9"
 version: 2
 ---
 # body/lake — anatomical part

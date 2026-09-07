@@ -2,11 +2,11 @@
 name: expressed
 description: "Use when reasoning about expressed — Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system."
 atomPath: "vocabulary/expressed"
-coordinate: "vocabulary/expressed · 2/share · 733d6733"
-contentUuid: "7f37b43e-0094-517c-92a0-44a4ce7d72db"
-diamondUuid: "f26e8a89-b637-87c0-8910-53d5ba2e8b25"
-uuid: "733d6733-20fc-8d88-85fb-a558d6872dd1"
-horo: 2
+coordinate: "vocabulary/expressed · 4/weave · aa12c424"
+contentUuid: "5c6ad059-f180-5842-81ba-5705b17be3d5"
+diamondUuid: "6b12694b-f8c9-85f1-b8ff-ead6f6998614"
+uuid: "aa12c424-509f-86c7-b74a-08265668c584"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bd42fa66-0046-839c-937b-f36a398ddec2"
+  computationUuid: "8af5b81e-a10a-83c7-9063-40a5be573fdc"
   stages:
     - stage: path
       stageUuid: "a4613eb4-934b-85d4-82cc-cc699d6b2cb2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9d9e8d93-1ad4-82e1-a398-8083684b34c2"
     - stage: horo
-      stageUuid: "51364ae8-cf69-8c82-83d0-04725d1be5a5"
+      stageUuid: "40d66f82-652f-8724-96aa-f6b90b43d421"
     - stage: seal
       stageUuid: "9e4e4832-8e21-8a29-928e-4957901f3984"
     - stage: uuid
-      stageUuid: "863362f1-451c-858d-aca1-33488b146bd8"
+      stageUuid: "cf5ed67d-ed96-8d2e-8af9-24959cbecb0a"
 version: 2
 ---
 # expressed

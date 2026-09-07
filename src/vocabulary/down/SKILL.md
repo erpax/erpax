@@ -2,11 +2,11 @@
 name: down
 description: "Use when reasoning about down as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/down"
-coordinate: "vocabulary/down · 4/weave · b2fc8a87"
-contentUuid: "a5fcd0da-08c3-50cb-a464-7ff163f3d30c"
-diamondUuid: "7008b815-d72f-8c88-a1dc-b00fe345c423"
-uuid: "b2fc8a87-3fe3-809e-a876-8c2e877915e6"
-horo: 4
+coordinate: "vocabulary/down · 7/descent · b8d8fa75"
+contentUuid: "d925d877-6848-58c6-9fc7-cb9c90eec8bb"
+diamondUuid: "6a3ac282-1a9e-8bd7-9ec2-fc4f197fa014"
+uuid: "b8d8fa75-c8be-877c-99dd-d70d204a40cc"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2ca0d361-7b09-808c-a373-5e451a6f493b"
+  computationUuid: "238e9642-8793-871d-b2fc-f6d9f0808ca0"
   stages:
     - stage: path
       stageUuid: "626cee99-ab9a-8ded-b5e2-752e88d599e9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "761be62b-305e-87a1-84eb-ba4cf776871b"
     - stage: horo
-      stageUuid: "7b327632-2932-8124-a24a-d81bfe8455de"
+      stageUuid: "6c15ae2c-8d4f-87ee-bab8-7d9949d88d1b"
     - stage: seal
       stageUuid: "9f6b168a-89b0-85ab-9f02-2ae962228d24"
     - stage: uuid
-      stageUuid: "f36fb75d-b5e4-8544-bbed-65ce46ec94ef"
+      stageUuid: "6fddf3d8-d0a7-8e0a-b107-f5fdfffe3671"
 version: 2
 ---
 # down

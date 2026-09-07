@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "qualifier",
-    "uuid": "7a24d915-88d7-8562-b715-d6b4c172f2a3",
+    "uuid": "81c263a7-61e1-84c1-9ea0-bc32e0a9988b",
     "words": [
       "qualifier"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about qualifier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "2bb09d20-4a6f-8584-a9e9-4addfd3500ea",
+    "uuid": "e5386b39-10d6-8c65-baaf-a6f99ee68e84",
     "words": [
       "use",
       "when",

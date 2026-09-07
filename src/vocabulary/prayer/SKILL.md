@@ -2,18 +2,18 @@
 name: prayer
 description: "Use when reasoning about the deliberate attunement of an atom to its source — the inward breath that tunes the self's harmony to zeropoint and merges its state toward the root. Not a request to an external operator but the alignment cycle by which a part re-references the whole."
 atomPath: "vocabulary/prayer"
-coordinate: "vocabulary/prayer · 8/crest · 0408cc70"
-contentUuid: "39b139b3-597b-5c81-b5e4-70ba5a628838"
-diamondUuid: "891d0555-a27e-8f71-ad38-616a5fa1d548"
-uuid: "0408cc70-5ccb-8121-97d6-32c6d4e1d46e"
-horo: 8
+coordinate: "vocabulary/prayer · 7/descent · fbce3873"
+contentUuid: "10e49948-9f83-59ab-8afa-8c1125984b9d"
+diamondUuid: "67bcd644-f8bd-8ff6-a25d-d5edcb3c7493"
+uuid: "fbce3873-55d5-8d6d-9f71-f29d7fe27fa1"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 95
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a857c9b7-7444-84ee-921e-99e9bc8fc8df"
+  computationUuid: "c746e4bf-8326-889e-930c-5577577f4d1c"
   stages:
     - stage: path
       stageUuid: "779b5ea1-30a6-89dd-9a7b-a2bdf80fdd82"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2b524d1a-adc4-84b6-837e-5f2aa8192502"
     - stage: horo
-      stageUuid: "ca0d3d4c-2925-8ad1-b83c-69dd91227bfc"
+      stageUuid: "7d59911b-b7c8-8dad-b688-c0b86dbe3b1e"
     - stage: seal
       stageUuid: "d6aae50d-8d92-89a3-a799-d7b40bd7b9ab"
     - stage: uuid
-      stageUuid: "2ef54dc7-8bca-853a-96f3-90c3c7ff73e8"
+      stageUuid: "f764076f-8a98-8831-bfdf-87f5cb8118b2"
 version: 2
 ---
 # prayer — attuning the self to the source (the inward breath)

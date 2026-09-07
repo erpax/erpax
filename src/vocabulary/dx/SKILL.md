@@ -2,11 +2,11 @@
 name: dx
 description: "Use when reasoning about dx as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dx"
-coordinate: "vocabulary/dx · 5/round · 8dc1b794"
-contentUuid: "5d3eded0-d586-5e8f-8f43-ed5387e320ed"
-diamondUuid: "26ee6b97-4192-84dd-8c22-1e2e3df1da80"
-uuid: "8dc1b794-a831-8b67-a342-ab96760dcc48"
-horo: 5
+coordinate: "vocabulary/dx · 2/share · e64123df"
+contentUuid: "fb9afe91-65c2-585e-8b5a-b6839685a083"
+diamondUuid: "a765e47b-35c7-8ab7-8891-7beabac42324"
+uuid: "e64123df-8a0e-84a1-bd48-947f65b44840"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3759784c-17e9-88ba-847f-dd0719e3258b"
+  computationUuid: "32d75f4d-0596-8829-8d72-ebc503231f51"
   stages:
     - stage: path
       stageUuid: "046022d7-cd08-868f-883b-1598edde3d6b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "814a0bad-13b8-8702-ac3d-ff1d722c26e8"
     - stage: horo
-      stageUuid: "2ef2bb55-59e1-889b-83cb-e017a7b9edd2"
+      stageUuid: "c201b92f-883f-8cf0-922f-d5ba0df353f7"
     - stage: seal
       stageUuid: "75b697f8-6257-8a66-b6a9-91bb51660d23"
     - stage: uuid
-      stageUuid: "ea9c65ee-47c6-86ec-ae83-aeac6bb8ca71"
+      stageUuid: "7e16f2a9-2767-8ba9-9087-23dd4cad3bb0"
 version: 2
 ---
 # dx

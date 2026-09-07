@@ -2,10 +2,10 @@
 name: disability
 description: "Use when reasoning about disability as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/disability"
-coordinate: "vocabulary/disability · 4/weave · ffe4102f"
-contentUuid: "714fc86f-9ac1-5d5d-a7e2-eba251b6d022"
-diamondUuid: "b8e8b8d3-4887-84fd-9b7d-6d5f2c15a54c"
-uuid: "ffe4102f-53c2-8da9-a63d-f86f16367978"
+coordinate: "vocabulary/disability · 4/weave · 5dd5655d"
+contentUuid: "ef5a9cba-e3fc-5a22-a434-afa659d1fc82"
+diamondUuid: "db2a79b6-6e99-8390-9e99-2a3694cb243e"
+uuid: "5dd5655d-01bb-807f-84ed-9fd3048cc6fc"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bbb45a01-2a7e-87ca-b5c5-e8f944ca0f6d"
+  computationUuid: "eab452fe-4848-80e3-882b-c242cd75d960"
   stages:
     - stage: path
       stageUuid: "c9985e90-a2ee-83c9-99b8-c37677cfcced"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2636d0b4-6626-82ed-b3a5-9ed77830f1b1"
     - stage: horo
-      stageUuid: "45326d8b-ab3e-80ca-8a6c-67cc562ff38e"
+      stageUuid: "26222602-6791-8288-9520-eba4813bff94"
     - stage: seal
       stageUuid: "3030e4f9-1605-8b33-be60-7a2e8b7b4c66"
     - stage: uuid
-      stageUuid: "be106ec5-5579-802f-8746-44cf66f5fbe8"
+      stageUuid: "d93f41fb-dcde-8d5f-aacd-be1afc7c6497"
 version: 2
 ---
 # disability

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "factory",
-    "uuid": "aa2ee5e7-978b-8025-b43b-3e965433ef2d",
+    "uuid": "93881c09-8d3c-83e6-98d3-19ba99dd5fbc",
     "words": [
       "factory"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating Payload collections from declarative metadata — createAccountingCollection injects audit fields, tamper-proof uuid, horo state ring, standards citations, and chain-event hooks so collection files carry only domain intent.",
-    "uuid": "87b75556-fdf2-8a4c-a12b-ede2bed8bc09",
+    "uuid": "5d2b0e13-27e9-8ba6-aad1-b7b0617ed7ec",
     "words": [
       "use",
       "when",

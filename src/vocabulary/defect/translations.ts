@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "defect",
-    "uuid": "228b7857-e665-8396-8c81-a51b879a135d",
+    "uuid": "048382c9-9c91-82d0-a62e-69609da8f2a4",
     "words": [
       "defect"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when logging product/service quality problems — manufacturing defects, software bugs, rework triggers, quality inspections results. The non-conformance record.",
-    "uuid": "f3c577ba-5745-82ff-9a75-7f050458b640",
+    "uuid": "fba0dcd2-5b6f-83d6-8f61-6a0b3636ee00",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: overflow
 description: "Use when reasoning about overflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/overflow"
-coordinate: "vocabulary/overflow · 8/crest · 6fabf790"
-contentUuid: "a71124c0-4790-527e-93fe-a53a19124749"
-diamondUuid: "24d808c9-a8a8-85e4-950a-f6ae2d5ecf08"
-uuid: "6fabf790-ba5b-859f-8cc7-5383bfae0114"
+coordinate: "vocabulary/overflow · 8/crest · ca017f2a"
+contentUuid: "107dd0c2-0868-50f4-b999-20f8a4f02a51"
+diamondUuid: "2b134025-e6ca-84e3-9006-948efb2b0ab2"
+uuid: "ca017f2a-626f-88ed-b5fc-3f1039d97f44"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "62e40a67-45bb-8843-a9cc-4f86e880f90a"
+  computationUuid: "c97ff2df-d597-881f-a306-f10fab4eb141"
   stages:
     - stage: path
       stageUuid: "63173b71-d779-82a5-872d-c87a37286630"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "079ed79e-ddb0-8266-8c50-655e9b1eda03"
     - stage: horo
-      stageUuid: "e23e3fdf-bba8-8074-8df2-826a9a988377"
+      stageUuid: "724cefbe-43f3-80af-acab-864b0da5add1"
     - stage: seal
       stageUuid: "3e4ba6b6-9b4a-8c77-a500-cd1c0643d460"
     - stage: uuid
-      stageUuid: "42dd1f62-6e0d-8bac-8342-57bef00f3abe"
+      stageUuid: "03224ea0-ad84-8d0d-9f53-00b9edffcff8"
 version: 2
 ---
 # overflow

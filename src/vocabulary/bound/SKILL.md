@@ -2,11 +2,11 @@
 name: bound
 description: "Use when reasoning about bound as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bound"
-coordinate: "vocabulary/bound · 4/weave · 14572e9c"
-contentUuid: "92d789be-1da9-5f85-a204-5ede600db9af"
-diamondUuid: "7356d514-e11d-8d3f-be96-be692b842a33"
-uuid: "14572e9c-511b-8f00-9201-edb65eaf67d0"
-horo: 4
+coordinate: "vocabulary/bound · 7/descent · d6cb88ef"
+contentUuid: "b5c8866c-5b29-56b3-89f6-d79d8a14fba9"
+diamondUuid: "c548b7a7-3db8-8022-ad10-0bd5acf95af5"
+uuid: "d6cb88ef-360a-8f68-8f9a-9aa7a6ba2770"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "eab1554e-2082-83df-adbf-e3eb1af0673f"
+  computationUuid: "da1ea9d1-72af-8475-8462-735b3fc27258"
   stages:
     - stage: path
       stageUuid: "3335f09a-707f-845d-a95b-cefb7a8da9fb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "88e08401-1369-8883-9095-70000af63bfc"
     - stage: horo
-      stageUuid: "cd4e488b-ce0a-8bef-8f53-6f9645edd6ea"
+      stageUuid: "eed816c2-abe7-8f7d-b137-0b59e7d3c14f"
     - stage: seal
       stageUuid: "e51a9e2e-a46d-87e6-9f61-1543c58e3912"
     - stage: uuid
-      stageUuid: "51e09645-6fd4-8798-9820-8e9ab88c8da9"
+      stageUuid: "88ba8b36-1027-8aaa-94b3-ab40ad12a08b"
 version: 2
 ---
 # bound

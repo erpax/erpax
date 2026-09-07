@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "standards",
-    "uuid": "7d4b4280-1799-892d-a5af-fbed438199ea",
+    "uuid": "cb8bebd5-8e5e-881f-b33e-86e0ea8a56c1",
     "words": [
       "standards"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.",
-    "uuid": "7c836f70-d658-806e-b30c-926e7e91cb6c",
+    "uuid": "ebf683e4-0430-83bc-ad6f-b8bbb4cb74b0",
     "words": [
       "use",
       "when",

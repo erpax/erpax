@@ -2,10 +2,10 @@
 name: action
 description: Use when reasoning about action — An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of th
 atomPath: action
-coordinate: "action · 5/round · 5134de2c"
-contentUuid: "ddec2ba3-ca00-57b6-adc8-2beaf155cf92"
-diamondUuid: "04364193-8a56-8001-83af-3537fb86ed4d"
-uuid: "5134de2c-5c63-813b-92ae-ffe28521b0ca"
+coordinate: "action · 5/round · 287f6cd1"
+contentUuid: "d9fb14ab-aa76-5c16-ad73-dc54cc4ac9c4"
+diamondUuid: "fe84d4cb-5515-8110-9f80-d330f211fd6c"
+uuid: "287f6cd1-4ee7-8cd6-89df-bea630acc2f8"
 horo: 5
 typography:
   partition: action
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ba2b3c5a-da32-8b7a-9d1b-6e28b9ffc5bb"
+  computationUuid: "405191a8-740c-8ae2-89d2-695d14b094b2"
   stages:
     - stage: path
       stageUuid: "caf3a11c-acd8-86eb-9005-03eea17fd592"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "5351623d-b4b3-8b8f-8ab0-c22690b6d130"
     - stage: horo
-      stageUuid: "36c89f44-781f-89ac-8f0f-ab891ac200e3"
+      stageUuid: "5c3bd3fb-387c-8f2a-9f98-d8df2dec60e9"
     - stage: seal
       stageUuid: "040bdf68-a1b1-8669-9054-d863bcec2b0d"
     - stage: uuid
-      stageUuid: "71ab2016-632c-89ce-9508-ec7d4859cb97"
+      stageUuid: "f5987532-caea-8e08-ab0f-61747ff6f380"
 version: 2
 ---
 # action

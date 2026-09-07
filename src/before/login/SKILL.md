@@ -2,11 +2,11 @@
 name: login
 description: "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do."
 atomPath: "before/login"
-coordinate: "before/login · 7/descent · 7d2a7f67"
-contentUuid: "18658031-1519-5731-8820-4cbc9eb3c5f5"
-diamondUuid: "c23b2c5e-d795-8d82-bce2-5d1a6e2ecb48"
-uuid: "7d2a7f67-cc13-8e19-a369-745a4382dfed"
-horo: 7
+coordinate: "before/login · 8/crest · 3463f512"
+contentUuid: "193b5de2-2373-5cd3-98bc-36952f519187"
+diamondUuid: "07d43df1-ae96-8d78-b557-acaf5c49a788"
+uuid: "3463f512-12c1-8e78-b12a-503e6913760d"
+horo: 8
 typography:
   partition: before
   bondDegree: 17
@@ -18,7 +18,7 @@ standards:
   - "WCAG-2.1 §3.3.1 error-identification"
 bindings: []
 signatures:
-  computationUuid: "82aea569-5528-8bbe-b0a1-cd748f140b26"
+  computationUuid: "39977ca8-e5ee-8a91-b8e5-62585cf32201"
   stages:
     - stage: path
       stageUuid: "674ae6de-17da-8f5d-87f4-d4c212c5dad8"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "70d98cd7-1102-80d0-84b5-0db8f295bf59"
     - stage: horo
-      stageUuid: "b1af09dc-895b-8b65-86a4-a7e38d7dac50"
+      stageUuid: "8582d6fe-94e2-8ac0-a541-e767faa788c9"
     - stage: seal
       stageUuid: "9cba435e-ef74-8691-9754-a5b103e058b2"
     - stage: uuid
-      stageUuid: "1d33784b-2889-8ed3-9b28-004532455e98"
+      stageUuid: "81f63764-5a89-8889-a933-569875bfd438"
 version: 2
 ---
 # before/login — what the login page says before anyone types

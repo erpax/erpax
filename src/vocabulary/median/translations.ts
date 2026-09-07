@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "median",
-    "uuid": "fc69f584-3bab-8e3f-b856-5319d4dc77c3",
+    "uuid": "2c1fe37a-6044-8a0f-a9b5-0c3c802f49ab",
     "words": [
       "median"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about median — The median value.",
-    "uuid": "fdb59fbb-82c0-89e2-b3b6-e5606760e5ef",
+    "uuid": "d6f33ab8-8eac-812d-b5e3-2ee2654fd8bb",
     "words": [
       "use",
       "when",

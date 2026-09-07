@@ -2,11 +2,11 @@
 name: subject
 description: Use when reasoning about subject — A CreativeWork or Event about this Thing.
 atomPath: subject
-coordinate: "subject · 5/round · 319bb230"
-contentUuid: "98715301-d521-5d11-955a-3845105331b2"
-diamondUuid: "78c887ab-de01-8434-b31a-8198ca9d1d50"
-uuid: "319bb230-97f5-84ee-ab24-16f2771bffe5"
-horo: 5
+coordinate: "subject · 1/base · c6e888c8"
+contentUuid: "6bdc63a5-5c1b-5d66-9099-19f9dbbfac97"
+diamondUuid: "e2c46b48-d180-852d-b464-61ec417cbdd1"
+uuid: "c6e888c8-a502-843c-83da-fbd73e766b41"
+horo: 1
 typography:
   partition: subject
   bondDegree: 13
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8228f39e-14d4-8b50-ba60-02a81a74d66f"
+  computationUuid: "5d7e9dc0-79d0-82c5-8984-f4f03f502259"
   stages:
     - stage: path
       stageUuid: "52814410-8082-88c3-9f32-ba69f2f32aed"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "826c41ed-a319-87b8-b47a-07f73da37d45"
     - stage: horo
-      stageUuid: "3510b23f-9772-8db9-9a54-2aa823979e61"
+      stageUuid: "3aba969c-f2b4-82a7-badc-2b80fcdccb44"
     - stage: seal
       stageUuid: "e71f9b5b-f416-8623-9c8b-7568395dd45d"
     - stage: uuid
-      stageUuid: "c7bc413e-7bc7-8c5d-b2a5-feb3a998f1d8"
+      stageUuid: "41e3a47c-6b97-805b-875f-740704375c05"
 version: 2
 ---
 # subject

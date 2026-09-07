@@ -2,11 +2,11 @@
 name: suggested
 description: "Use when reasoning about suggested as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: suggested
-coordinate: "suggested · 4/weave · bbfa6ff7"
-contentUuid: "3cc40304-0b02-54b9-afc9-05e0d8da9b8a"
-diamondUuid: "13cccf23-88b8-8215-a589-e488ce7fac0c"
-uuid: "bbfa6ff7-a355-8f26-90ce-15714f841fec"
-horo: 4
+coordinate: "suggested · 8/crest · 1effe922"
+contentUuid: "6ba7aa6d-f7d4-59bf-b962-4eee5d228dba"
+diamondUuid: "aabeac26-3747-80c3-b7c9-2665d52ebbd7"
+uuid: "1effe922-df22-809d-b231-6a0e75ab73d3"
+horo: 8
 typography:
   partition: suggested
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4b0203cc-9e56-865f-8b6b-92f5a084198b"
+  computationUuid: "a9dbb586-ed33-84cd-bcd4-07697e7fa3d9"
   stages:
     - stage: path
       stageUuid: "f2bd5ff9-7b2f-8d85-b27a-d44f487604f2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "14caca28-5e9d-8589-9373-2d99d354d0b7"
     - stage: horo
-      stageUuid: "47496b3f-98fd-8213-864e-1e80ddc3110c"
+      stageUuid: "83e7ca79-4cda-8578-879f-44e816227025"
     - stage: seal
       stageUuid: "c64ec027-191c-8f92-b9ad-699c779c204c"
     - stage: uuid
-      stageUuid: "54b24ec7-3616-8e51-ae7e-dd9dc2d7d9cd"
+      stageUuid: "8fc5f810-d41e-8cd5-8771-52dfded1d8a9"
 version: 2
 ---
 # suggested

@@ -2,11 +2,11 @@
 name: pawn
 description: "Use when reasoning about pawn as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pawn"
-coordinate: "vocabulary/pawn · 7/descent · 203c9d77"
-contentUuid: "7eecea58-411d-5438-9e06-97737682f7ae"
-diamondUuid: "fbb37b85-f929-8dc4-af0b-e4e0f82a13a6"
-uuid: "203c9d77-d61c-8cca-8aaf-563eab33ecc5"
-horo: 7
+coordinate: "vocabulary/pawn · 2/share · e5c1b0d6"
+contentUuid: "dd136a12-d560-5530-a4cb-65bf8e7c32e6"
+diamondUuid: "cd97d5d5-d732-8e76-a62f-46aa9ca81f6f"
+uuid: "e5c1b0d6-a14e-8672-a29a-f3d8514cb543"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4d66c455-78f9-8ecd-9aca-a723c1c59765"
+  computationUuid: "f3b7dc7d-a20a-8f52-bb82-16398d6783c4"
   stages:
     - stage: path
       stageUuid: "ee6f9291-6aea-8167-9e41-e4243b06da4c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ffc2f4d0-b343-885f-90d0-3635f595349c"
     - stage: horo
-      stageUuid: "11f7a93b-8a9c-8a32-b4fa-8955776d45e6"
+      stageUuid: "860309e0-0323-8fed-bed6-6f5ea27ab0cb"
     - stage: seal
       stageUuid: "593a31fc-c2cf-8395-a8a0-2a5964e1dc69"
     - stage: uuid
-      stageUuid: "28b823d0-e4ad-8924-bd25-f7b20976504b"
+      stageUuid: "4fa22933-4a23-8732-ba33-135fc1739773"
 version: 2
 ---
 # pawn

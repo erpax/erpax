@@ -2,19 +2,19 @@
 name: matrix
 description: "Use when asking who is adjacent to whom — the corpus graph as nodes and edges, addressed rather than searched. neighborsOf and backlinksOf resolve an atom's outgoing and incoming edges through an adjacency index built once at module load; they previously scanned all 37,854 edges per call, which made a corpus-wide pass O(atoms × edges) and unfinishable. Edges are {f,t} INDICES, not names — a filter on .from/.to returns zero for every atom, which is how two false measurements were once confirmed."
 atomPath: "uuid/matrix"
-coordinate: "uuid/matrix · 1/base · 65259343"
-contentUuid: "d0872077-94c1-5fa8-88b0-8fc3e68f6815"
-diamondUuid: "b1284048-52c3-83aa-be86-bea7acddab3d"
-uuid: "65259343-2c34-8c75-bfbd-966bc22f2998"
-horo: 1
+coordinate: "uuid/matrix · 8/crest · bba56bfc"
+contentUuid: "8c9d6111-f876-524f-8100-002f789eb7ce"
+diamondUuid: "95938f4e-d7b3-8a6c-a753-562202163a2b"
+uuid: "bba56bfc-2ec6-88ab-aebe-ed5103a705ce"
+horo: 8
 typography:
   partition: uuid
-  bondDegree: 312
+  bondDegree: 314
 standards:
   - "RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant"
 bindings: []
 signatures:
-  computationUuid: "083c6138-f3cb-87c0-879a-e597b382b490"
+  computationUuid: "452dce62-6f7d-8877-a134-1cc3b3b5cc5b"
   stages:
     - stage: path
       stageUuid: "9a9fd94d-795c-8891-880b-cf6973b21317"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1f9766b0-87d0-8c20-9f0f-f2e03ede9f1b"
     - stage: horo
-      stageUuid: "a7c13ad1-c11b-8588-9788-eacbdac8c231"
+      stageUuid: "317dfc7a-a7f9-8135-91a1-115b2d33ecf4"
     - stage: seal
       stageUuid: "c9ea2822-05d1-8048-929c-c61f66067620"
     - stage: uuid
-      stageUuid: "c6eb839c-a82f-89c7-a5bd-09a50ff57bd4"
+      stageUuid: "1998587f-82e7-8a5b-9d48-33235304cd51"
 version: 2
 ---
 # uuid/matrix — adjacency by address, not by search

@@ -2,11 +2,11 @@
 name: discusses
 description: Use when reasoning about discusses — Specifies the CreativeWork associated with the UserComment.
 atomPath: "vocabulary/discusses"
-coordinate: "vocabulary/discusses · 5/round · 40e81cd6"
-contentUuid: "a53dffb0-b9f9-5c65-ae33-80a2b0a0c51f"
-diamondUuid: "d4e2f7cb-6ba2-8c6c-b361-c33138d9b326"
-uuid: "40e81cd6-e9ee-8da1-bba1-9a7b3591389b"
-horo: 5
+coordinate: "vocabulary/discusses · 1/base · 1ac82223"
+contentUuid: "41f024d5-f042-5546-a410-b4ff6e736b3b"
+diamondUuid: "ef786b5b-2070-8f74-99af-43bc46ce33f9"
+uuid: "1ac82223-bb07-82e6-a324-73daae1e1382"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "856bbba2-cfd2-851c-a990-8e6b008fec31"
+  computationUuid: "eab41ebc-793d-85b7-9e9a-ee7d6798a084"
   stages:
     - stage: path
       stageUuid: "4c00d9b3-2eca-8b83-8db1-a0b9f7daef6d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3a128e68-42b3-8b81-b41c-fe3346fc7c5a"
     - stage: horo
-      stageUuid: "9e061900-b184-872e-b637-80f954199cd3"
+      stageUuid: "dfe0aa35-a28a-8d9b-883f-e1b8b1cac613"
     - stage: seal
       stageUuid: "1349d8b2-5799-829b-a3c6-8cedb37b3ed1"
     - stage: uuid
-      stageUuid: "90aa5e8e-5c7e-8089-af37-8e11b6e0aabc"
+      stageUuid: "a3361b4d-6c04-8601-a5ed-964984931275"
 version: 2
 ---
 # discusses

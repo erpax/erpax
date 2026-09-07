@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "class",
-    "uuid": "6ef4b369-f35c-8e2d-be0f-0521dcd4503f",
+    "uuid": "5d4bade6-7df6-8d53-b9f0-727e9f8623f6",
     "words": [
       "class"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about class — merges Tailwind class lists so a later utility wins over an earlier one — for the conditional shapes, for the conflict resolution. Six modules use it.",
-    "uuid": "09a3e519-544a-86aa-87ef-dbe7ced31a71",
+    "uuid": "f42646c7-18f3-8202-8209-ad59dd3dc584",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: double
 description: "Use when reasoning about double as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: double
-coordinate: "double · 8/crest · 11be958e"
-contentUuid: "a9590048-e21e-5ecb-b3e4-0905dde23dc0"
-diamondUuid: "73b8e708-9aca-8cfb-a8b7-c3109be1d591"
-uuid: "11be958e-66e5-86ef-978a-7fdd44c86a10"
-horo: 8
+coordinate: "double · 5/round · 0ea29232"
+contentUuid: "a29419e8-1ed2-5f8f-a994-8444cc2ce7fd"
+diamondUuid: "223108b9-6a2a-83b1-b5de-739f8e9d8805"
+uuid: "0ea29232-94d2-8486-83cf-eace2929dd04"
+horo: 5
 typography:
   partition: double
   bondDegree: 18
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2558fe88-425d-8a64-85e1-830c6c7557dd"
+  computationUuid: "3116624b-5535-85a3-922a-a33d6892a727"
   stages:
     - stage: path
       stageUuid: "4d78d11c-7cac-8d55-854d-a4cfe7e3bf0c"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "4dceb81e-e18e-879c-b712-957f00bad2ff"
     - stage: horo
-      stageUuid: "f83afcd5-c8d7-80fc-bf66-a9834138a2e2"
+      stageUuid: "cb9f3cd5-1462-83c3-b1b7-048ecd45193e"
     - stage: seal
       stageUuid: "9304290c-c6eb-8196-8aa4-221db1717c79"
     - stage: uuid
-      stageUuid: "2b072672-a9fe-874f-be2e-3c28c20ce726"
+      stageUuid: "3f75c911-526c-8320-ae1b-855bcbb8d742"
 version: 2
 ---
 # double

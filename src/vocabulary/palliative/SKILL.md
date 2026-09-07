@@ -2,11 +2,11 @@
 name: palliative
 description: "Use when reasoning about palliative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/palliative"
-coordinate: "vocabulary/palliative · 8/crest · 0df50a7e"
-contentUuid: "3b80bd75-8c1f-52e1-a9be-2a15cd74c311"
-diamondUuid: "79de2512-d3b5-89ce-9841-265fb6ce6aa8"
-uuid: "0df50a7e-b30b-8356-b67a-461f60f9df3b"
-horo: 8
+coordinate: "vocabulary/palliative · 4/weave · 8b47ca6d"
+contentUuid: "2ad905a7-2b3c-5170-8b52-f3fb8f26e8c5"
+diamondUuid: "6db6e9c7-9525-810a-aa9f-eaf1481ad2ee"
+uuid: "8b47ca6d-b6f4-81a1-94e0-5e02a0dfa69a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "07204dfb-1ce1-8bc1-883c-2d3b05cf0e81"
+  computationUuid: "1c9294da-074a-8189-b931-612c1e265d8b"
   stages:
     - stage: path
       stageUuid: "ab5508d4-f16d-8693-a3c6-f3a0371d8782"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4858b6f1-1edc-8def-a583-55437cfe8c3c"
     - stage: horo
-      stageUuid: "3f3550b2-595e-8bfb-8086-6c2521d39e3c"
+      stageUuid: "d367cc0b-6849-8ca8-ab5d-4fb2b0cc7f3f"
     - stage: seal
       stageUuid: "d981173e-8e6d-87c7-893b-540f135b3936"
     - stage: uuid
-      stageUuid: "ea3294c0-dfe6-8ac7-9347-9390cf250511"
+      stageUuid: "6cdb3700-5742-8aa8-a6af-b99a33fb50e1"
 version: 2
 ---
 # palliative

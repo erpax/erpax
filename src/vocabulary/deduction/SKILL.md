@@ -2,18 +2,18 @@
 name: deduction
 description: "Use when reasoning about deduction — Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-ta"
 atomPath: "vocabulary/deduction"
-coordinate: "vocabulary/deduction · 4/weave · fc5a1103"
-contentUuid: "7c38c2f9-779d-55c0-b70c-2acf9a1582d2"
-diamondUuid: "5aceac24-394e-8273-9e41-c463ba1e47ec"
-uuid: "fc5a1103-5846-8f48-8d51-4b308670c1a3"
-horo: 4
+coordinate: "vocabulary/deduction · 5/round · f22fe6d2"
+contentUuid: "c1d5d2b0-b3be-5b35-af32-ba72032af27c"
+diamondUuid: "656caa60-820c-84cf-aaa4-9b142327f049"
+uuid: "f22fe6d2-0160-812e-ae20-77efb971505a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "500bbc79-d2d6-87d1-8571-e6246024dd1e"
+  computationUuid: "9ddf087f-3ff1-86a9-85a9-521f8552e9c0"
   stages:
     - stage: path
       stageUuid: "46d5638b-dbf0-800c-952e-bc9f23157d99"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "319c24dc-eca6-8948-882c-bb5337db4a69"
     - stage: horo
-      stageUuid: "f5701471-7e3b-8039-a4f5-b4f469034045"
+      stageUuid: "77cc7c83-ddb0-866c-b9f4-dd279eb3320d"
     - stage: seal
       stageUuid: "f8942133-5046-8ae1-9970-5283ccc5ec1d"
     - stage: uuid
-      stageUuid: "622ebda0-58b7-8c88-8eb9-06df20b2f157"
+      stageUuid: "e357088b-6ec4-8c40-8053-f6c1ea89fa62"
 version: 2
 ---
 # deduction

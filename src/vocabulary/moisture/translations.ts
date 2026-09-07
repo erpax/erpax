@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "moisture",
-    "uuid": "1e286dc5-1749-83c6-bb14-9dbd63bbb054",
+    "uuid": "943e277a-c21b-8dcb-aca5-3524d4e42366",
     "words": [
       "moisture"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling soil water as a managed reservoir — the plant-available water held between field capacity (after drainage) and the permanent wilting point, the slice irrigation refills and evapotranspiration drains. A capacity reservoir on the water axis, the twin of the soil's nutrient budget.",
-    "uuid": "605dec49-a30e-8bcc-a52c-8a8b9914e070",
+    "uuid": "66a45a74-9abe-8949-975f-022291510f9d",
     "words": [
       "use",
       "when",

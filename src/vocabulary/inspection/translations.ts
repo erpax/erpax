@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inspection",
-    "uuid": "aff76dc0-3082-8ff5-97eb-be63aecc5d4a",
+    "uuid": "e5d5e685-fd9e-8fed-ba7f-d509cb47ff8f",
     "words": [
       "inspection"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one inspection — the singular model of the inspections collection (the plural store); a recorded examination against a standard.",
-    "uuid": "3ddc664c-81b3-8b0d-8a64-9cf5843ba0e4",
+    "uuid": "19c94895-529e-8993-9b73-87df0fd9a680",
     "words": [
       "use",
       "when",

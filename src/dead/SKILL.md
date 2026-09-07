@@ -2,11 +2,11 @@
 name: dead
 description: "Use when checking the corpus for dead weight without re-deriving it by hand — deadScripts lists non-TS scripts (.mjs/.js) that nothing references (invokers live in package.json, hooks, imports). A file is live iff something names it; else it is entropy. The partner skill: the reference graph is a fact src already holds, handed back as one call, so keeping healthy is a READ not a grep-assembled pass."
 atomPath: dead
-coordinate: "dead · 5/round · ad935825"
-contentUuid: "981c7b5f-0cd0-570b-8478-18c0dc7e0c64"
-diamondUuid: "38feaf42-7230-8720-8b26-2ef7e7afcc56"
-uuid: "ad935825-8632-8c8d-8a04-3ff542d3ef3d"
-horo: 5
+coordinate: "dead · 8/crest · 6ac55cd3"
+contentUuid: "c28304e8-c670-5b6e-85a6-f273960da2f8"
+diamondUuid: "29ef2180-86d8-8324-a731-a493484cd195"
+uuid: "6ac55cd3-48a3-87e3-b499-491cb549cf5f"
+horo: 8
 typography:
   partition: dead
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "the reference graph — a file is live iff something invokes/imports it; else it is entropy"
 bindings: []
 signatures:
-  computationUuid: "736847e4-8ac9-8c1b-a11a-a542758c1667"
+  computationUuid: "9d0f8a87-01b1-8f78-84cf-ab1b0d4b435d"
   stages:
     - stage: path
       stageUuid: "3e65e07c-169b-8f54-b970-da3627c19096"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2607ce8c-3195-89ba-8a2e-43f8b0b38d64"
     - stage: horo
-      stageUuid: "31a47c08-a50b-87b3-bc9e-d818eab520e8"
+      stageUuid: "c712bde9-a91d-8534-8283-1563b944d2ca"
     - stage: seal
       stageUuid: "334b6fb9-b848-8386-93ad-4537d1ef9b93"
     - stage: uuid
-      stageUuid: "8013246c-190a-8bb4-a478-8a24a3726f5c"
+      stageUuid: "de506ef7-971e-8807-88d3-2d7727786e75"
 version: 2
 ---
 # dead — the corpus names its own dead weight

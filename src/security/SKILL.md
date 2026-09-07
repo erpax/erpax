@@ -2,10 +2,10 @@
 name: security
 description: "Use when reasoning about security as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: security
-coordinate: "security · 5/round · e02b5786"
-contentUuid: "ca20512c-1d03-5323-9edc-8328f4ee15b0"
-diamondUuid: "309a4f99-1381-89a2-8795-1cf4071bec10"
-uuid: "e02b5786-a9c6-81d3-bcc0-a2d0d9a35f15"
+coordinate: "security · 5/round · b5b4c1e7"
+contentUuid: "56174dbb-47e0-582c-b880-8df4e6e1ab9c"
+diamondUuid: "fd1a46d3-acc7-85cc-8162-037b5f502576"
+uuid: "b5b4c1e7-d67d-8295-b842-3568b1f20a70"
 horo: 5
 typography:
   partition: security
@@ -16,7 +16,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7b5e7856-2ef2-8ea0-ad96-bed3eca225f9"
+  computationUuid: "31336d86-f9df-8f5b-9383-da316dab8e23"
   stages:
     - stage: path
       stageUuid: "3e99381c-b686-8895-b988-fcba256d6361"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "05c43415-960f-83c5-93d4-ea52eef16e99"
     - stage: horo
-      stageUuid: "2fad3ad8-926d-881b-8f5b-615797f6649e"
+      stageUuid: "29d04212-8fa2-87a7-a9b2-2f7b3d359359"
     - stage: seal
       stageUuid: "d7cb1cf5-e4c1-87b5-9717-a955b795120b"
     - stage: uuid
-      stageUuid: "1b80a7da-4036-80ce-a282-c259e577ede6"
+      stageUuid: "3a93c1ad-cd5e-817d-bc8e-ab524e5933e0"
 version: 2
 ---
 # security

@@ -2,11 +2,11 @@
 name: gene
 description: "Use when reasoning about gene — A discrete unit of inheritance which affects one or more biological traits (Source: https://en.wikipedia.org/wiki/Gene). Examples include FOXP2 (Forkhead box protein P2), SCARNA21"
 atomPath: "vocabulary/gene"
-coordinate: "vocabulary/gene · 2/share · 96faaecd"
-contentUuid: "107616e9-a64f-57a7-b6cf-5c277f321116"
-diamondUuid: "5390fc36-d20c-80e6-a005-4d3eac440cca"
-uuid: "96faaecd-32b8-8727-8ec7-10bb3cccbc80"
-horo: 2
+coordinate: "vocabulary/gene · 1/base · d08ed67e"
+contentUuid: "b86fdc62-c822-5869-81d9-14e3d4407233"
+diamondUuid: "1ab14c21-1438-8655-bef5-237b5d770518"
+uuid: "d08ed67e-f441-8756-877b-96cb7e98f5ac"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6959db9d-98ca-8507-98e7-1f8878b9ad37"
+  computationUuid: "d2f3081b-7faa-88bf-85f8-4ba246e956b3"
   stages:
     - stage: path
       stageUuid: "d16bed12-ff14-8225-9ce1-d5a5ffa9f013"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aee4dacf-dbc5-8c0f-8dcc-c9ceeef79e51"
     - stage: horo
-      stageUuid: "e1bfeca7-b4ff-8ae1-945d-524972feda16"
+      stageUuid: "5c5d9940-4f58-8ba5-83c6-c1c5f50f8b83"
     - stage: seal
       stageUuid: "32a9e441-201f-8e76-a922-1c034fcb0dc6"
     - stage: uuid
-      stageUuid: "59896475-f241-8ea5-85dd-38fdb532d3cf"
+      stageUuid: "529d919c-0eb6-8df8-a9d2-53885ac58dcf"
 version: 2
 ---
 # gene

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reportings",
-    "uuid": "d95576b3-033b-8aff-8c79-e6801c8c98ba",
+    "uuid": "3fa57dc6-69e7-8499-ad64-3e353a526389",
     "words": [
       "reportings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register.",
-    "uuid": "449f7e33-3bdc-80ec-b556-e9afd77ac3d0",
+    "uuid": "ea283d80-c30f-867f-89cb-de3eefa04025",
     "words": [
       "use",
       "when",

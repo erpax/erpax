@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "backlog",
-    "uuid": "ff869d86-9335-8def-b99f-a12b8047e721",
+    "uuid": "b948ee35-527f-8db3-b408-b0dbdccb1624",
     "words": [
       "backlog"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing a prioritized list of pending work — features to build, bugs to fix, support tickets, maintenance requests. The work-capture system.",
-    "uuid": "7eeb4862-4dad-85a6-a7e7-e0ab27a9b7d5",
+    "uuid": "1bfe4e38-c8b4-8860-975b-05546fe68516",
     "words": [
       "use",
       "when",

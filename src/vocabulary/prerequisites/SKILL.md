@@ -2,11 +2,11 @@
 name: prerequisites
 description: "Use when reasoning about prerequisites as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prerequisites"
-coordinate: "vocabulary/prerequisites · 2/share · 6d1ca974"
-contentUuid: "d093c366-41ed-5fcc-9020-05ec8bdff857"
-diamondUuid: "550b7471-d4f8-85c4-937a-aa22e68bc6c1"
-uuid: "6d1ca974-192d-87a8-8c61-c6b75cb06e94"
-horo: 2
+coordinate: "vocabulary/prerequisites · 8/crest · 6f37bb30"
+contentUuid: "b83fa5f9-b1be-5735-9916-10732a919942"
+diamondUuid: "85980477-bbe1-884f-9d64-cc734c8a964c"
+uuid: "6f37bb30-f6e9-8a39-bca4-96211d1121f6"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d867028c-a1bb-8312-bb70-62b24356753d"
+  computationUuid: "46a6d5d4-34c4-8698-a8e5-53570f931377"
   stages:
     - stage: path
       stageUuid: "f4368482-ef5e-8d43-80eb-e588558fbb67"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ff8c2666-074a-82b8-92fb-ddf00566f25a"
     - stage: horo
-      stageUuid: "34026906-541e-8891-b929-2387aba9c9c5"
+      stageUuid: "0e909087-0437-8d3f-98f0-db90f1808fbb"
     - stage: seal
       stageUuid: "fabe58fa-51ae-8bb9-a3ce-0d8acbba760a"
     - stage: uuid
-      stageUuid: "ffeccac3-34d0-84c3-af9f-48b6d2d54845"
+      stageUuid: "ecec454d-fde0-81aa-ab03-23330a4dc16a"
 version: 2
 ---
 # prerequisites

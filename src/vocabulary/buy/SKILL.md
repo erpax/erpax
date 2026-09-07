@@ -2,11 +2,11 @@
 name: buy
 description: "Use when reasoning about buy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/buy"
-coordinate: "vocabulary/buy · 7/descent · aabe3eb2"
-contentUuid: "d602708e-af0e-548b-b16d-74a6e585d5ed"
-diamondUuid: "b4581ff3-6352-822c-aed2-0c1c331768c2"
-uuid: "aabe3eb2-2ed9-85b5-bb9c-166e642fdaed"
-horo: 7
+coordinate: "vocabulary/buy · 2/share · 3fd379ca"
+contentUuid: "02a85f0a-13b8-5eb7-b734-282eaaa6a5e3"
+diamondUuid: "3160d72e-55f3-8eec-bb30-8b88c638bf61"
+uuid: "3fd379ca-9cc3-8801-b7eb-b97a43f85d87"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c82c394c-d2fe-844f-a29f-fe434e465f4a"
+  computationUuid: "e6adfe92-1841-837f-96a5-f308e90c7c89"
   stages:
     - stage: path
       stageUuid: "08334df3-3f1b-8732-a464-c4c100d32f3e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e53892ad-a201-8fb9-af89-83710601a429"
     - stage: horo
-      stageUuid: "306ad08d-01fb-83b3-bd92-011ffad3e978"
+      stageUuid: "388fac51-fc34-8391-842f-05df51c3656c"
     - stage: seal
       stageUuid: "9bc6e8f1-7f39-874a-922a-63f3c8de4438"
     - stage: uuid
-      stageUuid: "10f6195f-1c16-87e6-a8a0-c44fcc23883e"
+      stageUuid: "1de289e2-6ccc-8c6c-ac2a-bd16a9570d45"
 version: 2
 ---
 # buy

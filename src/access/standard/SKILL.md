@@ -2,11 +2,11 @@
 name: standard
 description: "Use when the Payload API's access must derive from and be gated by its legal surface — the strictest tier a collection's standards demand, and the endpoints that fall below it."
 atomPath: "access/standard"
-coordinate: "access/standard · 9/unity · bb2df5c5"
-contentUuid: "58749f08-3898-52c2-acc5-ac195a7cd76b"
-diamondUuid: "69ee7cdb-5c8a-83f7-8dfd-112e12f6fe0e"
-uuid: "bb2df5c5-b0e3-8a83-8bd0-a0b346dae51b"
-horo: 9
+coordinate: "access/standard · 6/6 · 8577e0cb"
+contentUuid: "8976ac94-d254-5123-81cf-e1b7c2499438"
+diamondUuid: "48e569cb-f551-8056-85eb-b97cb66cbcf0"
+uuid: "8577e0cb-aa9e-889a-bcb8-2b1da747c3fb"
+horo: 6
 typography:
   partition: access
   bondDegree: 567
@@ -33,7 +33,7 @@ standards:
   - "SOX:2002 §404 internal-controls — you cannot post to a closed period"
 bindings: []
 signatures:
-  computationUuid: "e8fc6e4e-d2ad-8140-b590-7b63c3811d0a"
+  computationUuid: "775a3af7-a0ca-8eb1-b3d0-ab6c7ee9d870"
   stages:
     - stage: path
       stageUuid: "5bb5aee6-276c-82c9-94ac-83e3349361cb"
@@ -44,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "8f95aa80-74bf-8c3d-9a60-aab99e8165fa"
     - stage: horo
-      stageUuid: "5418b525-70b7-8bd2-8ee2-2303deb0d53f"
+      stageUuid: "360064af-0944-8845-b138-5027e316a961"
     - stage: seal
       stageUuid: "6d3b6308-0ee5-8196-a23b-c1128ce4f9a2"
     - stage: uuid
-      stageUuid: "f80eff8f-cec0-89f0-8884-5dbfb516b989"
+      stageUuid: "34191d42-ea3c-8f11-9ccd-753f374dbe82"
 version: 2
 ---
 # access/standard — the API access derived from its law

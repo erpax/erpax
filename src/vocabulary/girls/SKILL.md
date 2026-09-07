@@ -2,11 +2,11 @@
 name: girls
 description: "Use when reasoning about girls as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/girls"
-coordinate: "vocabulary/girls · 4/weave · a3b7d2ec"
-contentUuid: "827caf87-5611-5efa-8175-40a6838e49b2"
-diamondUuid: "c7cd52c9-20d4-85df-9254-f940754cf970"
-uuid: "a3b7d2ec-a18f-82c4-a959-39459803b4ed"
-horo: 4
+coordinate: "vocabulary/girls · 1/base · 758d268a"
+contentUuid: "b8d6342d-b620-5170-83a7-b5f2c39495c1"
+diamondUuid: "c7271271-90be-8e16-8a70-b9e69c0735f2"
+uuid: "758d268a-6e69-897c-9ee5-d61e07677a15"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "09cf4315-7e92-8656-bdda-3cd86c831a19"
+  computationUuid: "26f69c88-4353-8147-bf1b-f68bdabc3a90"
   stages:
     - stage: path
       stageUuid: "9a09e8f1-54df-83f6-a492-7ad2785d0d08"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "224abb9b-b867-871c-8009-6533bcceb01a"
     - stage: horo
-      stageUuid: "5e6af72c-444d-870e-97e0-f8228d445ee4"
+      stageUuid: "ce6f7912-0b06-8528-87c5-7ae777f50462"
     - stage: seal
       stageUuid: "cab0b2f4-44a7-8e24-9619-f5e3e46f74f1"
     - stage: uuid
-      stageUuid: "34447aee-5132-8c42-ad83-c353553ed3d9"
+      stageUuid: "5c7ee6d9-e2de-80d2-8930-89fa8fc36a34"
 version: 2
 ---
 # girls

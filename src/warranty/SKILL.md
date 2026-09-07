@@ -2,18 +2,18 @@
 name: warranty
 description: "Use when a party makes a binding representation or guarantee about a fact/condition — express (stated) vs. implied (statutory), scope, duration, remedy (repair/replace/indemnify), breach consequences."
 atomPath: warranty
-coordinate: "warranty · 8/crest · fb5ff632"
-contentUuid: "6bc0bf8a-0146-5bdf-846a-1e8dd0ad833e"
-diamondUuid: "93d7a55a-e81f-887c-a164-e0ac8a4be714"
-uuid: "fb5ff632-6daa-841e-9d9c-a9ff4f7ab43a"
-horo: 8
+coordinate: "warranty · 5/round · b8d3452d"
+contentUuid: "3ac97120-0a6a-579c-b975-09a89b4913c2"
+diamondUuid: "cf5cd11b-57a3-840c-bc79-37b209530f23"
+uuid: "b8d3452d-135c-8d82-8fb9-31a55c4d57a4"
+horo: 5
 typography:
   partition: warranty
   bondDegree: 25
 standards: []
 bindings: []
 signatures:
-  computationUuid: "089dae37-662d-84b8-8bd7-49f4abb45562"
+  computationUuid: "2e2b6992-2f47-801d-8a7c-b0c942171e33"
   stages:
     - stage: path
       stageUuid: "5c9e63da-5345-858e-9f17-fa6f8eb8bd75"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "10db552e-9979-86ef-8f58-1fdbae3f6817"
     - stage: horo
-      stageUuid: "65f2df56-b965-8975-85ef-c4c60fc0b984"
+      stageUuid: "228c0aea-abcc-8783-8cc3-00cdb5ec9e00"
     - stage: seal
       stageUuid: "0bd84176-df13-80fd-9ecb-caf920a2e8ae"
     - stage: uuid
-      stageUuid: "f19f5d82-dac5-8a8e-bdcd-8d528888a450"
+      stageUuid: "73cbf173-e5a3-8b47-a23e-a9f1870b43ec"
 version: 2
 ---
 # warranty

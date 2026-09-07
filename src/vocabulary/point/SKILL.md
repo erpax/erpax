@@ -2,11 +2,11 @@
 name: point
 description: "Use when reasoning about point as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/point"
-coordinate: "vocabulary/point · 8/crest · 2362ae1e"
-contentUuid: "b4b97314-c134-5360-9a1d-cd929fd82c3d"
-diamondUuid: "22fc2757-b282-8f42-ba2c-81f12ca2d317"
-uuid: "2362ae1e-a4ef-8d4d-b792-d8336dc494d2"
-horo: 8
+coordinate: "vocabulary/point · 2/share · 607d4d00"
+contentUuid: "760f5c1e-36d5-530e-b309-918adcfc1e0a"
+diamondUuid: "f887b30f-4d5f-8f2b-bcfd-c4f006a4aba5"
+uuid: "607d4d00-f672-8c88-bc86-276f7c9b5567"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8dc50f49-7cef-81bf-bca8-ebff970773f0"
+  computationUuid: "28fbc554-8981-804f-b29d-db55c997f373"
   stages:
     - stage: path
       stageUuid: "0e9849db-2d0f-89bd-88b2-6b08415e576d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4d549163-ed54-8aeb-8ca6-1b5fb1563ddc"
     - stage: horo
-      stageUuid: "41e2e988-5093-8beb-a834-967576158fab"
+      stageUuid: "67681f93-1ed8-8e61-9641-6198fdae23dd"
     - stage: seal
       stageUuid: "e856df1f-ac13-89bb-9509-5f85f69a037d"
     - stage: uuid
-      stageUuid: "53158e14-d1fe-8af2-83b1-24911ec04057"
+      stageUuid: "b2cb73a7-a82a-8954-991f-ab00d97097b4"
 version: 2
 ---
 # point

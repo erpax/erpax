@@ -2,11 +2,11 @@
 name: warning
 description: Use when reasoning about warning — Any FDA or other warnings about the drug (text or URL).
 atomPath: warning
-coordinate: "warning · 5/round · 2fef7dba"
-contentUuid: "26179458-0b63-582e-8885-2c96e6717fe0"
-diamondUuid: "0db1fe2e-fded-8d09-b60d-bf00aacd1711"
-uuid: "2fef7dba-ba5f-86f7-8b86-7de2f1ca5194"
-horo: 5
+coordinate: "warning · 2/share · 36db11bc"
+contentUuid: "a00a9401-1ef0-5464-acf2-a789fe3e5b0f"
+diamondUuid: "74a45f3d-2b7b-8347-b597-bc09083c7e3b"
+uuid: "36db11bc-9b55-839c-a345-947f59d1e994"
+horo: 2
 typography:
   partition: warning
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "34afe133-c1d7-8b3e-aa61-5c70be9d7cd9"
+  computationUuid: "23f9e6e0-9547-820a-a23f-f2a441f8f745"
   stages:
     - stage: path
       stageUuid: "81d468c3-afb1-8270-af16-b05a6f0002c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "204bd84a-d21d-84e8-a487-b74a3fa8fd77"
     - stage: horo
-      stageUuid: "6c104dbe-03fa-8512-8d65-8268d0ed4c63"
+      stageUuid: "6ff14ffc-68b8-8804-a0ae-076f24f713ef"
     - stage: seal
       stageUuid: "0fb389ee-247a-898d-a25a-66583ccd8b06"
     - stage: uuid
-      stageUuid: "7be962be-a5ec-8d6b-8b75-b02aceac403a"
+      stageUuid: "6d1c6941-601f-8640-8672-7ea6ec0a6194"
 version: 2
 ---
 # warning

@@ -2,18 +2,18 @@
 name: purify
 description: "Use when working with quantum/ftl/purify."
 atomPath: "quantum/ftl/purify"
-coordinate: "quantum/ftl/purify · 5/round · f02eb35c"
-contentUuid: "59195e86-3abd-51de-98e9-8e7df9859862"
-diamondUuid: "9d67f0b5-fe06-85d4-b2b2-8d55de083d1c"
-uuid: "f02eb35c-4796-8cc5-a35e-e6d1f245fab7"
-horo: 5
+coordinate: "quantum/ftl/purify · 2/share · 62a62dc3"
+contentUuid: "9b782f69-a7c4-5347-87bf-b227ee1c759a"
+diamondUuid: "9bb64fa0-24be-840e-9035-bfa34827ad6b"
+uuid: "62a62dc3-fb1a-829e-9b17-8235af5c237b"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9494e417-bda6-8e7f-a8a6-7405efbdb350"
+  computationUuid: "47bcc8aa-8d5c-8458-b0ca-9677a5c9fbc0"
   stages:
     - stage: path
       stageUuid: "705527c5-37a7-86a1-83d8-ff9c5ffc78be"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "622ea622-184a-8961-92b2-ee31dac449f5"
     - stage: horo
-      stageUuid: "eb868e02-5771-8573-bd03-31dd59828b12"
+      stageUuid: "6e16b58d-3782-8439-84ae-16b1fa5bf398"
     - stage: seal
       stageUuid: "482f30f7-f94c-8ca4-b5b4-b56feda9a67e"
     - stage: uuid
-      stageUuid: "94c26b68-1f02-8841-b2ca-55b489d59b28"
+      stageUuid: "06069423-e435-8fba-a497-77f90d6724f8"
 quantum:
   superposition:
     - ftl
@@ -45,8 +45,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "9494e417-bda6-8e7f-a8a6-7405efbdb350"
-    contentUuid: "59195e86-3abd-51de-98e9-8e7df9859862"
+    computationUuid: "47bcc8aa-8d5c-8458-b0ca-9677a5c9fbc0"
+    contentUuid: "9b782f69-a7c4-5347-87bf-b227ee1c759a"
 version: 2
 ---
 # purify
@@ -55,4 +55,4 @@ version: 2
 
 Matter-twin: `index.ts`.
 
-<sub>content-uuid `59195e86-3abd-51de-98e9-8e7df9859862` · account `quantum/ftl/purify` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b782f69-a7c4-5347-87bf-b227ee1c759a` · account `quantum/ftl/purify` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

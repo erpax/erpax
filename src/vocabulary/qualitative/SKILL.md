@@ -2,11 +2,11 @@
 name: qualitative
 description: "Use when reasoning about qualitative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/qualitative"
-coordinate: "vocabulary/qualitative · 2/share · 45f56030"
-contentUuid: "fadc016a-ab5b-5bfe-9eb8-9eb65c05666e"
-diamondUuid: "d6d9d65e-978d-816f-b559-c7831bf9fe7e"
-uuid: "45f56030-45eb-8281-8a38-d944c07621de"
-horo: 2
+coordinate: "vocabulary/qualitative · 8/crest · 1bdd5ef8"
+contentUuid: "9f5894ac-00d1-5c99-8d3b-a45eadbe1f35"
+diamondUuid: "e97c5806-f551-80d8-be24-49829d2b1351"
+uuid: "1bdd5ef8-c86c-818f-910e-a60efbfaf5ac"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8b16c4a-fb73-88e3-9539-a6ac08ab5bcf"
+  computationUuid: "26d6c396-2368-8f3e-ab61-dca0f0ac020d"
   stages:
     - stage: path
       stageUuid: "ae637f02-8fd1-87ee-b59a-ff0ef7f426c6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6fa1d975-da80-8bac-804c-4992d8272db4"
     - stage: horo
-      stageUuid: "33b5150b-a99c-831d-bb68-7a981f920542"
+      stageUuid: "5d833e02-c769-8e9c-bc85-32ad04b23d0e"
     - stage: seal
       stageUuid: "d03833e2-cb05-817f-bcc9-449063229532"
     - stage: uuid
-      stageUuid: "4f6ae130-10e1-82b3-a7c8-6de93e8e68bf"
+      stageUuid: "2a4628d1-96a8-8eaa-a4ea-65f6db5083e1"
 version: 2
 ---
 # qualitative

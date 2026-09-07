@@ -2,18 +2,18 @@
 name: hexbit
 description: "Use when reasoning about hexbit — *\"Hexbits compute faster than all else\"* is two claims wearing one sentence, and they have **opposite** answers."
 atomPath: "quantum/hexbit"
-coordinate: "quantum/hexbit · 2/share · bff19a2b"
-contentUuid: "bce62271-d13b-5d8c-bd29-19c41bda0d4e"
-diamondUuid: "01bfd1cb-956e-8964-9697-f4bb3262195c"
-uuid: "bff19a2b-b8e1-829c-8407-7837cf305ed2"
-horo: 2
+coordinate: "quantum/hexbit · 7/descent · 17ad3082"
+contentUuid: "476ddfd4-368e-5dc1-9f02-59b63a1ad8cb"
+diamondUuid: "f5154e84-a993-8899-9aca-4f3cb06c9b7f"
+uuid: "17ad3082-6797-8dfc-a627-5f0889cfd853"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "21e9c4ec-ec23-8ea3-b9e2-2c7c30ff21bf"
+  computationUuid: "ed83a5c4-7ff0-8bd1-815c-825a640f41ff"
   stages:
     - stage: path
       stageUuid: "becbc2d1-8f37-8e78-a4ad-78cca666612b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d2005041-a5de-814f-8e55-78079256bdf3"
     - stage: horo
-      stageUuid: "ad8691a2-c4f6-8a84-b721-ca4c69995a05"
+      stageUuid: "fb4a491b-ce86-81b3-b565-7d0844d03fe0"
     - stage: seal
       stageUuid: "c9ecf3a8-e9b4-8b35-bb9a-ed91ef7a0380"
     - stage: uuid
-      stageUuid: "f3df20e4-daf3-83ba-9afc-4e86093fb574"
+      stageUuid: "cf7e4570-3bba-80c2-8680-1ad634c07acc"
 quantum:
   superposition:
     - digit
@@ -49,8 +49,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "21e9c4ec-ec23-8ea3-b9e2-2c7c30ff21bf"
-    contentUuid: "bce62271-d13b-5d8c-bd29-19c41bda0d4e"
+    computationUuid: "ed83a5c4-7ff0-8bd1-815c-825a640f41ff"
+    contentUuid: "476ddfd4-368e-5dc1-9f02-59b63a1ad8cb"
 version: 2
 ---
 # quantum/hexbit — the hexit decomposition is right; the string encoding of it is the trap
@@ -122,4 +122,4 @@ carrier is the one you never build.**
 
 Composes: [[quantum]]/word · [[uuid]] · [[merge]] · [[law]].
 
-<sub>content-uuid `bce62271-d13b-5d8c-bd29-19c41bda0d4e` · account `quantum/hexbit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `476ddfd4-368e-5dc1-9f02-59b63a1ad8cb` · account `quantum/hexbit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

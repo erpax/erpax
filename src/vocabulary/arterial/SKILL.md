@@ -2,10 +2,10 @@
 name: arterial
 description: "Use when reasoning about arterial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/arterial"
-coordinate: "vocabulary/arterial · 8/crest · 960d1956"
-contentUuid: "bece1734-7237-561d-8753-fef32c510728"
-diamondUuid: "eb92c0e0-1c84-8920-ba0b-0a79bcb0996f"
-uuid: "960d1956-7988-8c6c-8a85-fc6128f18778"
+coordinate: "vocabulary/arterial · 8/crest · d1962cd4"
+contentUuid: "7953be5a-298d-53c8-a201-7e197c1df8e7"
+diamondUuid: "e3359d6b-b616-8579-b27d-788f93c373ac"
+uuid: "d1962cd4-e40a-862a-91b2-916c9a9f4eef"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c59c1516-5edd-8717-838d-c6eb631965fb"
+  computationUuid: "2887a65f-bff2-8b35-9601-0281bbb533d4"
   stages:
     - stage: path
       stageUuid: "7710e7ca-472a-80e6-939d-3345a24b5b23"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2759f094-c55a-8484-aea3-3dd628471d63"
     - stage: horo
-      stageUuid: "c51c8d3f-e23b-8507-812c-42f5f4194921"
+      stageUuid: "671cbdc0-3ece-80f9-b58d-1ccf67edaa86"
     - stage: seal
       stageUuid: "ea364658-112b-8a02-b13a-ca7b8449069b"
     - stage: uuid
-      stageUuid: "19309f88-87cf-85a2-969c-af30b9b9c1a7"
+      stageUuid: "576926b5-781a-8c2c-b45b-bb88acabf5c9"
 version: 2
 ---
 # arterial

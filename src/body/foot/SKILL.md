@@ -2,11 +2,11 @@
 name: foot
 description: "Use when reasoning about foot as an anatomical part of body — vocabulary pivot to @/foot; nested not duplicated."
 atomPath: "body/foot"
-coordinate: "body/foot · 4/weave · 1f9ae9e3"
-contentUuid: "9fbea0c4-3878-5d7d-87f9-e34e53e241d7"
-diamondUuid: "d194ddc5-c87f-8b9d-bd60-cfce1bc75700"
-uuid: "1f9ae9e3-ea36-859e-a879-1be83ea4a250"
-horo: 4
+coordinate: "body/foot · 7/descent · aca1f3b4"
+contentUuid: "2fff15ed-ca97-51d1-a6fd-3e6676499bb9"
+diamondUuid: "3bd55878-a6b5-8a72-b1f9-ef54ad28d51c"
+uuid: "aca1f3b4-babb-880b-b46e-324049f3b11b"
+horo: 7
 typography:
   partition: body
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1141e976-31b6-834b-bd86-94334514555a"
+  computationUuid: "25af241e-c3d8-8bc9-9ba8-daf337cd66f6"
   stages:
     - stage: path
       stageUuid: "e1754f70-826e-88d3-b314-aeab2ac9966f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c009a5af-8375-8bd9-b45c-e4ea27d07d37"
     - stage: horo
-      stageUuid: "14d84412-28ce-85b9-9fb7-dea0c821309d"
+      stageUuid: "1c0ed9a4-64fc-831f-b46f-d80d4193acad"
     - stage: seal
       stageUuid: "470078fc-cd18-899e-8124-c54e9ff1b789"
     - stage: uuid
-      stageUuid: "57ef0d83-6fd9-8a37-ae9c-8b9987d59763"
+      stageUuid: "dbcc914b-10fc-8d6d-ab57-b7b52fa91bbd"
 version: 2
 ---
 # body/foot — anatomical part

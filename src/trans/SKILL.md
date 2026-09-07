@@ -2,10 +2,10 @@
 name: trans
 description: "Use when reasoning about trans as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: trans
-coordinate: "trans · 1/base · 87cff802"
-contentUuid: "dd8a4997-2a29-5277-98c3-f681472439a5"
-diamondUuid: "9a8501c7-5d70-81de-9d7d-6d529bfe5643"
-uuid: "87cff802-ac3a-842a-8f51-596f39d2fe21"
+coordinate: "trans · 1/base · b5bc99e8"
+contentUuid: "3afaad57-5b73-57e1-9ecf-00551df770c4"
+diamondUuid: "0990ed1a-cff1-8cf6-a508-4daf33ac0a52"
+uuid: "b5bc99e8-9054-85e6-96fa-e519c40dcb55"
 horo: 1
 typography:
   partition: trans
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9d71060b-b137-878e-ba2b-9948e6d092e8"
+  computationUuid: "a6b2289d-8469-8c52-9d39-3d9a17c6f935"
   stages:
     - stage: path
       stageUuid: "84f7a673-a9f4-8dc5-9cbe-18e492c0112a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "de021f14-332a-8b1d-a40c-140d824da4b0"
     - stage: horo
-      stageUuid: "48ce07eb-977b-81ec-981b-f4fa92cca0cc"
+      stageUuid: "4c7aead1-c73c-81fe-9943-d72036d3b71d"
     - stage: seal
       stageUuid: "7babf9aa-05b9-8443-9b7d-8946b2474e66"
     - stage: uuid
-      stageUuid: "f03795a7-f8a0-8688-9fd3-5828ee07f013"
+      stageUuid: "08e045e9-d8d5-8401-8e14-f3b03388285e"
 version: 2
 ---
 # trans

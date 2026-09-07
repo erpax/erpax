@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "self",
-    "uuid": "81d125cd-def2-886c-908d-ad089c9e5590",
+    "uuid": "37307fb9-5715-8b87-9551-6a326f19e64f",
     "words": [
       "self"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\"all agents are one erpax\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
-    "uuid": "9a3ae862-0375-82c5-b3ae-b80e57786698",
+    "uuid": "2e53ca07-9840-8736-a6f6-3b1ecd234e9f",
     "words": [
       "use",
       "when",

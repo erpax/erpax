@@ -2,11 +2,11 @@
 name: held
 description: "Use when reasoning about held as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: held
-coordinate: "held · 1/base · 73b7ecef"
-contentUuid: "b196a5ea-0083-5987-a4a5-d69c89dae80a"
-diamondUuid: "bca3e009-3cd0-886e-83cf-52c01549dd94"
-uuid: "73b7ecef-7cf4-8007-88d3-323b03a70f75"
-horo: 1
+coordinate: "held · 2/share · 07f9be53"
+contentUuid: "31b57091-a244-5a86-a296-41b81be21c51"
+diamondUuid: "5a501466-a439-8d95-a783-acf02e5a867d"
+uuid: "07f9be53-d3f0-8ecb-ad8d-684f86b844af"
+horo: 2
 typography:
   partition: held
   bondDegree: 18
@@ -17,7 +17,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "07d99108-700d-84d6-9e30-757565996aba"
+  computationUuid: "e5fb0fcd-558b-8f3c-a0f9-7fb5fa15c3f6"
   stages:
     - stage: path
       stageUuid: "8589aba4-6303-86de-b225-bc344a81d470"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "1767ce65-55ce-8ba9-ac7b-0a4e7f99d6bc"
     - stage: horo
-      stageUuid: "7d56a6c6-4c39-84fa-ac6b-c672178b1621"
+      stageUuid: "074d1e6c-73cc-83ec-a10a-3640e8750504"
     - stage: seal
       stageUuid: "08992d11-27ed-8e88-bb64-7f321da24bcd"
     - stage: uuid
-      stageUuid: "7c12e6b1-5a0a-8217-ad7a-63712cbbeef9"
+      stageUuid: "7b3b53f1-f2f2-83d8-9619-785af0356e0a"
 version: 2
 ---
 # held

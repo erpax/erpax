@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stage",
-    "uuid": "8f6cb5d6-469a-8938-9c9c-7aa5e3db1d01",
+    "uuid": "8c36e5d7-c63e-8deb-86ff-02b1327e1e0a",
     "words": [
       "stage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about stage — The stage of the condition, if applicable.",
-    "uuid": "aa818683-f230-8676-bde5-a77f30587b43",
+    "uuid": "82210397-0c26-8f34-b113-e482fe9eaadd",
     "words": [
       "use",
       "when",

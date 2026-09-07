@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "entries",
-    "uuid": "e8ec2d06-fbb3-820f-87fd-d2d50fa54370",
+    "uuid": "3203bd4a-31b9-8a0a-9a30-958be0721497",
     "words": [
       "entries"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when logging daily employee work time — regular hours, overtime, night shifts, PTO, sick and parental leave — with kind-based GL allocation, billable-rate project costing, approval workflow, and payroll-run linkage for IAS-19 variable pay. The daily time-entry collection.",
-    "uuid": "e4546380-b11a-8fe1-b7da-901e7dd33851",
+    "uuid": "87cd5b36-25a0-8762-96e2-1110cfb5c320",
     "words": [
       "use",
       "when",

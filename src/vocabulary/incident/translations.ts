@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "incident",
-    "uuid": "7359eb99-c6ce-8892-a222-f71d44ee5805",
+    "uuid": "c7eb0fa8-8d26-8724-8f54-75cf2fb38d13",
     "words": [
       "incident"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when logging unplanned downtime, service interruptions, production stops, or safety events — the adverse event log with root-cause, impact, resolution, and prevention tracking.",
-    "uuid": "11321241-f81c-8fb4-901e-6330896ad022",
+    "uuid": "bdb39a70-c0e4-8dbc-aa3d-ed771f1429a7",
     "words": [
       "use",
       "when",

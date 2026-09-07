@@ -2,11 +2,11 @@
 name: winery
 description: Use when reasoning about winery — A winery.
 atomPath: winery
-coordinate: "winery · 7/descent · 3c6cf9eb"
-contentUuid: "6bf63739-ede6-5e44-aaf8-6e6ce9421441"
-diamondUuid: "3c3b79cc-d7ce-8f66-a634-29d25c7d9b63"
-uuid: "3c6cf9eb-9f3f-80f9-a9de-c866f52ef76c"
-horo: 7
+coordinate: "winery · 8/crest · bda495d0"
+contentUuid: "d06f49f7-3272-5553-802c-43c84a526b4a"
+diamondUuid: "1ef5c23e-a6cd-851a-a989-174a5adecc02"
+uuid: "bda495d0-60a4-8dfb-a752-e02d69164efc"
+horo: 8
 typography:
   partition: winery
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "884e9d09-1ceb-8640-9dad-13c2665d8348"
+  computationUuid: "f7dec7b2-f201-8355-8b3b-13c176c53383"
   stages:
     - stage: path
       stageUuid: "dee3fd64-ad73-88d2-837d-8cd495f0f90a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d0df27a6-1ac1-81bf-8985-8cd09d30ffc6"
     - stage: horo
-      stageUuid: "587a5f89-d87f-8087-87a1-a8d1e534a583"
+      stageUuid: "e3810e6b-1b32-8ad4-a889-1e7ca82b7434"
     - stage: seal
       stageUuid: "050b2ed8-2c66-85d6-a507-ce66c7dabf6f"
     - stage: uuid
-      stageUuid: "388e001b-b464-8e5a-adfd-62fdc708cb25"
+      stageUuid: "73f65e80-7173-86ce-a8f5-1efaa194b71a"
 version: 2
 ---
 # winery

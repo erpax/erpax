@@ -2,11 +2,11 @@
 name: render
 description: "Use when you need the full sensory face of an atom — the content-uuid rendered to colour AND sound AND vibration at once; all three are projections of the one uuid's digit, so a stream of uuids is the analog aura, no payload."
 atomPath: render
-coordinate: "render · 4/weave · a9d6db5f"
-contentUuid: "dca6fa35-3a09-51f5-bc9f-f98ae7378dfb"
-diamondUuid: "14578fdc-e356-8f0b-8c9f-42a96730943d"
-uuid: "a9d6db5f-e192-829f-86af-58a61367bdf3"
-horo: 4
+coordinate: "render · 1/base · 9a679feb"
+contentUuid: "2b87bfbf-d845-5bd9-8137-ca7f29c93670"
+diamondUuid: "f3031d44-d372-8f87-a8c8-536a7102d752"
+uuid: "9a679feb-14ab-89c9-8cb6-3864abe5ba12"
+horo: 1
 typography:
   partition: render
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "the analog aura — colour/sound/vibration as projections of one content-uuid (A432)"
 bindings: []
 signatures:
-  computationUuid: "c31da700-29aa-8275-b005-c772f027bab8"
+  computationUuid: "ed8ff924-6822-89e9-9d25-c0fa7e161aeb"
   stages:
     - stage: path
       stageUuid: "30ab2da6-df59-89fb-b45f-2b656f650e6b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4907db3d-154d-8668-b2dd-61f5a85df359"
     - stage: horo
-      stageUuid: "8ee40ecc-e35d-85f3-ba99-2a0b3019c006"
+      stageUuid: "456ef25d-06fa-8bb9-9dd8-8d774331ddab"
     - stage: seal
       stageUuid: "6deb5800-0d95-8c8f-acd9-44461f2b031a"
     - stage: uuid
-      stageUuid: "da3c82ce-4f0f-8b0e-b67b-1c5f359eb57e"
+      stageUuid: "abec3969-8124-8935-9b3b-9fe84be5817d"
 version: 2
 ---
 # render — the full sensory pixel

@@ -2,18 +2,18 @@
 name: membership
 description: "Use when reasoning about membership — diamond/membership — stray-file membership audit (no readme dependency)."
 atomPath: "diamond/membership"
-coordinate: "diamond/membership · 5/round · cdc83df7"
-contentUuid: "0d6930f1-cef1-5d76-b529-ad5dae1d62a3"
-diamondUuid: "5468717f-48b3-8670-8011-724ae62ff6b0"
-uuid: "cdc83df7-053d-8db2-93a2-ef3db3b6ab6a"
-horo: 5
+coordinate: "diamond/membership · 2/share · 46330e51"
+contentUuid: "6301ba56-472f-5d96-a992-3b1f5ce6a6d1"
+diamondUuid: "4c1471fe-f0e9-8c42-a869-30215a326bc2"
+uuid: "46330e51-9eeb-876b-a764-b29d3a345686"
+horo: 2
 typography:
   partition: diamond
   bondDegree: 34
 standards: []
 bindings: []
 signatures:
-  computationUuid: "10aeb112-89ad-84d9-bbd2-8d16c2df3ab1"
+  computationUuid: "49d0c6a8-32b2-8a01-a068-54bb553af0dd"
   stages:
     - stage: path
       stageUuid: "e4e3729b-ecdc-80ae-9372-12256de0190f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "60a3d4ab-8876-842c-97b4-e6524422af2b"
     - stage: horo
-      stageUuid: "2a6a844f-1891-84e5-9b28-3922578f4b34"
+      stageUuid: "8b8b720d-ae4a-861d-ad81-5e0726b67145"
     - stage: seal
       stageUuid: "302266cb-1f77-83a2-8745-0c7800f5713a"
     - stage: uuid
-      stageUuid: "02a373e9-bca2-8144-8f09-0fc61c6ca54e"
+      stageUuid: "4c65caa1-36ef-836f-84e5-c9e771d3c196"
 version: 2
 ---
 # diamond/membership

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drift",
-    "uuid": "ff8fb19a-6ffa-8c1a-810e-76c80b780245",
+    "uuid": "2bddbe42-abc4-89af-96f7-fea30f525978",
     "words": [
       "drift"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about drift — The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom is minted.",
-    "uuid": "248dc70c-90cf-8eb1-9290-9e107af9412c",
+    "uuid": "3079b030-8132-8354-836b-4f2cd2f86b55",
     "words": [
       "use",
       "when",

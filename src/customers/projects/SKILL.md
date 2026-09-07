@@ -2,11 +2,11 @@
 name: projects
 description: "Use when tracking a customer-facing deliverable under IFRS-15 §35 over-time recognition — accumulating costs (labour via time-entries, materials via purchase-orders), measuring cost-to-cost or milestone progress, managing budget vs EAC, and closing WIP to revenue per the contract's recognition method. The IFRS-15 project anchor collection."
 atomPath: "customers/projects"
-coordinate: "customers/projects · 1/base · 197aea38"
-contentUuid: "41b3b253-afc4-51ee-ab73-f3732c16a32e"
-diamondUuid: "6c0d8346-dbd6-8810-a92d-9fcd931517a8"
-uuid: "197aea38-a342-8246-8be3-b3e33ceb2fc0"
-horo: 1
+coordinate: "customers/projects · 7/descent · e39b43ce"
+contentUuid: "8451860e-fb07-5726-b309-a96c438492bb"
+diamondUuid: "6a17ff2c-8e06-8792-a2ca-b7f0e604bd15"
+uuid: "e39b43ce-4600-8c0c-9ccb-fda1b6643a78"
+horo: 7
 typography:
   partition: customers
   bondDegree: 19
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "9977f5e8-ff80-8806-b144-a69e1ae1eae3"
+  computationUuid: "0d5e5020-807c-816f-8f78-07c1b6138d4a"
   stages:
     - stage: path
       stageUuid: "5d5ee3e0-c0be-8ea3-b60d-a627bc1643bf"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "1aa8cd02-d30d-84f8-8c1e-e3555174548b"
     - stage: horo
-      stageUuid: "8fecadc3-0894-864d-a579-1b5a27aac4fc"
+      stageUuid: "22e67ee4-e211-8b25-a64e-a549f494b1b2"
     - stage: seal
       stageUuid: "3ebe8d7a-121a-869e-8ebd-f8862ddb6ef5"
     - stage: uuid
-      stageUuid: "91b6c247-0291-835b-b041-a5a455a13240"
+      stageUuid: "9098c4a2-0d21-81c8-9eb1-f16301788bd0"
 version: 2
 ---
 # projects

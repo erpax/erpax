@@ -2,11 +2,11 @@
 name: park
 description: Use when reasoning about park — A park.
 atomPath: "vocabulary/park"
-coordinate: "vocabulary/park · 1/base · bc1a6aa5"
-contentUuid: "838a10ab-eed9-5855-97f0-d3cba3c32847"
-diamondUuid: "835cde12-6436-8e5d-859f-0ac32e3edc39"
-uuid: "bc1a6aa5-e8b8-8389-83ba-c784238b5da6"
-horo: 1
+coordinate: "vocabulary/park · 5/round · e70f2f79"
+contentUuid: "bd4cda34-4ee0-519c-81c9-c0336650a14c"
+diamondUuid: "38213ee8-4736-8002-a14d-b3bae9c35995"
+uuid: "e70f2f79-0bd6-83a5-8c3c-623aab072d33"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9436a046-abe7-86ce-8fae-75b804a46f38"
+  computationUuid: "cdf001a1-d44e-842f-8665-c2f0b568d012"
   stages:
     - stage: path
       stageUuid: "601bd229-2367-8570-90d0-d04d4743d865"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0912f389-74e7-8879-a9b5-4bab25e07ee3"
     - stage: horo
-      stageUuid: "bbd96bba-9c15-857a-b8de-ab44d2b41319"
+      stageUuid: "e794c54f-30fe-811b-87fe-d4bda80d8c9c"
     - stage: seal
       stageUuid: "9a285e01-5881-82e9-9249-3ca32fb6cd2b"
     - stage: uuid
-      stageUuid: "77616ab5-be39-8004-9502-d1d524093d04"
+      stageUuid: "e93a65aa-7fd0-8cd4-8e23-97cfabeda10c"
 version: 2
 ---
 # park

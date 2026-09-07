@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dashboard",
-    "uuid": "556130d8-5df0-8356-b355-f58a71f7a1dd",
+    "uuid": "a85f51d5-7c3d-88dd-b839-c0faa6b3b1b3",
     "words": [
       "dashboard"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions.",
-    "uuid": "0764246b-03da-84be-96d9-a3718a7bdc5c",
+    "uuid": "ab960a55-8394-8eac-a6b7-e2194780b479",
     "words": [
       "use",
       "when",

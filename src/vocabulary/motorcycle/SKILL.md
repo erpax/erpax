@@ -2,11 +2,11 @@
 name: motorcycle
 description: "Use when reasoning about motorcycle — A motorcycle or motorbike is a single-track, two-wheeled motor vehicle."
 atomPath: "vocabulary/motorcycle"
-coordinate: "vocabulary/motorcycle · 5/round · 7b61f836"
-contentUuid: "0dfd66ca-eb1f-5aa8-804b-b07c9c80563f"
-diamondUuid: "182a17c2-8779-8779-988d-5b1813c430b8"
-uuid: "7b61f836-e170-8e1d-95c8-4a21d1286e14"
-horo: 5
+coordinate: "vocabulary/motorcycle · 7/descent · f8b3f19f"
+contentUuid: "ebb2b414-e3e8-5e9b-8c3b-fca5713d4e79"
+diamondUuid: "2a9ed512-6240-8e92-92a4-0ea536d630c0"
+uuid: "f8b3f19f-d16a-881f-a9bc-5c827e298cef"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "91a96205-0b94-86c8-8adb-5389bde46fd1"
+  computationUuid: "ff2df13d-2cb1-8fdd-b0a4-494f2f79f208"
   stages:
     - stage: path
       stageUuid: "78a653ed-9db3-8b96-8d3e-929fd290eada"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8879ed74-b58a-8dc1-a26c-5c10e9817825"
     - stage: horo
-      stageUuid: "227e45ee-ed44-83de-9e08-3406389a9162"
+      stageUuid: "68d3194d-b835-8e1c-b48d-a2474deefd2c"
     - stage: seal
       stageUuid: "339f3661-c465-8207-9b1f-68e509882db9"
     - stage: uuid
-      stageUuid: "eac06fc5-73df-807b-ae54-2145a01b12ff"
+      stageUuid: "035f53b6-3c21-87c5-a4e9-1bf8a5452900"
 version: 2
 ---
 # motorcycle

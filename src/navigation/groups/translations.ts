@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "groups",
-    "uuid": "76d3779f-8a7f-8586-a295-2a4a01443082",
+    "uuid": "438d6a68-5b3c-8610-acf8-78d931812047",
     "words": [
       "groups"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about groups — names the one-word parents that root vocabulary nests under, and derives each atom's admin group from its path prefix. decides membership.",
-    "uuid": "e64b79c6-de00-8bb5-b07c-3f9b91a2b8ff",
+    "uuid": "f8270ecb-5cfb-8354-867d-3e615ef93460",
     "words": [
       "use",
       "when",

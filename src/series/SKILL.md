@@ -2,11 +2,11 @@
 name: series
 description: "Use when reasoning about series — A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries."
 atomPath: series
-coordinate: "series · 5/round · 1494577d"
-contentUuid: "ba360b66-d9d9-5313-999b-f9428158a961"
-diamondUuid: "435fd119-6929-82e1-9218-a75fbb3ee0fe"
-uuid: "1494577d-b28c-854f-95da-9760d97ce7b7"
-horo: 5
+coordinate: "series · 7/descent · 41a6f129"
+contentUuid: "04c4e345-6898-5458-8c01-2b98010f6aec"
+diamondUuid: "cd051034-2e35-8f8d-a558-4abd52e05164"
+uuid: "41a6f129-7bd1-86f7-9abc-2a5383b7b50c"
+horo: 7
 typography:
   partition: series
   bondDegree: 58
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a254d65d-d708-8401-b028-d4ce0f5096f7"
+  computationUuid: "da1081d9-d7e6-8cca-b670-e76ebbe88f45"
   stages:
     - stage: path
       stageUuid: "47af4832-fe26-839a-a2c9-1d97974b0f39"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ff7d8a65-7ce2-808b-9a51-1bf0f57285e1"
     - stage: horo
-      stageUuid: "653093c9-dd36-8e6d-803e-ad9007176157"
+      stageUuid: "716840f6-cc14-833a-81a2-2022f453ee09"
     - stage: seal
       stageUuid: "39c286cc-efce-8265-8b11-0fbbe572b49d"
     - stage: uuid
-      stageUuid: "d271b7b3-5209-8429-825e-e0ed48a0eb73"
+      stageUuid: "aa136cc4-6786-8e23-9d00-936f7686f488"
 version: 2
 ---
 # series

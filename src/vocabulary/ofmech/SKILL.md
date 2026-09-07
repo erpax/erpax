@@ -2,10 +2,10 @@
 name: ofmech
 description: "Use when reasoning about ofmech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ofmech"
-coordinate: "vocabulary/ofmech · 4/weave · f93303e2"
-contentUuid: "090c8691-5f21-5687-8ea6-d41d91a446b9"
-diamondUuid: "dd728596-0c46-8616-9714-8eb997b87b70"
-uuid: "f93303e2-f938-8291-89cd-72a8296c324a"
+coordinate: "vocabulary/ofmech · 4/weave · da913236"
+contentUuid: "444ab2cb-a118-523e-9217-378e5206dfbe"
+diamondUuid: "2af4be32-1575-8f1c-8dd2-9370d771cc05"
+uuid: "da913236-7a28-88a4-9c12-fd0094d2f901"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e33e1014-4f71-88a8-b479-069da04dd0cc"
+  computationUuid: "83767056-f4b7-8d77-8684-f8cd854f1ecd"
   stages:
     - stage: path
       stageUuid: "68819a05-4ac2-80bd-8be9-773d2ffb86e2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7e322d5f-5f5a-8974-afde-f9fd5a0fee60"
     - stage: horo
-      stageUuid: "fd98ae7b-a7ad-8383-aaa9-3eb49b88cd10"
+      stageUuid: "96456e51-1164-804d-98f8-1d2e0d000beb"
     - stage: seal
       stageUuid: "e10086d0-97e2-87c7-a8c3-66f9a3502a04"
     - stage: uuid
-      stageUuid: "9aaad317-1ea9-843d-bf7f-97855041d93d"
+      stageUuid: "cc7d2d7e-39d0-835e-be1e-2803e2ce6e70"
 version: 2
 ---
 # ofmech

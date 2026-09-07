@@ -2,10 +2,10 @@
 name: accommodation
 description: "Use when reasoning about accommodation — An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a"
 atomPath: accommodation
-coordinate: "accommodation · 1/base · 13ec6c28"
-contentUuid: "ef469032-5373-5a21-b98f-e6b97662a773"
-diamondUuid: "d225d80d-a40c-8b98-bde8-d09ba1e96f87"
-uuid: "13ec6c28-ba8a-8484-9b51-bfabc1df0245"
+coordinate: "accommodation · 1/base · b8ee72fc"
+contentUuid: "5376439d-6ea6-5d60-9162-b9ab32396078"
+diamondUuid: "3f471a95-e32c-82b3-8fa7-406a190fb1fd"
+uuid: "b8ee72fc-3bc3-8708-aa9e-5b5e0fc2ae79"
 horo: 1
 typography:
   partition: accommodation
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "58788a3d-b19a-842b-b355-6d3de9942390"
+  computationUuid: "dc706b40-e3e2-8e41-b915-3a34b353c951"
   stages:
     - stage: path
       stageUuid: "ce2244ed-9a80-8faf-a632-0bf40a781806"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8ae9abac-dcf7-8bf5-b974-abc689e825cf"
     - stage: horo
-      stageUuid: "3eb4a1e6-e351-8785-991e-b5f1e4240b38"
+      stageUuid: "45c9d1c6-fc08-8e40-8174-704109c297d5"
     - stage: seal
       stageUuid: "8e584459-1f5f-8118-acf8-1b04804942b3"
     - stage: uuid
-      stageUuid: "02c2febb-10cc-8f86-bebd-6a2f81f59e0f"
+      stageUuid: "9709e116-b3bf-8096-b157-1468e3c5cb73"
 version: 2
 ---
 # accommodation

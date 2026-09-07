@@ -2,10 +2,10 @@
 name: license
 description: "Use when reasoning about license — ONE licence, every path: **CC-BY-NC-ND-4.0**, or commercial via the contact below."
 atomPath: "algebra/license"
-coordinate: "algebra/license · 7/descent · 490caf69"
-contentUuid: "4ed7c85f-7c5b-500e-a9c7-2c9a04abeebc"
-diamondUuid: "78356d0b-2537-8d69-9d78-b84abae438fb"
-uuid: "490caf69-518e-8aeb-89d4-af6917ab54bc"
+coordinate: "algebra/license · 7/descent · fbe4723a"
+contentUuid: "2d74deca-ce64-5ac6-8bf5-3fe022238cf7"
+diamondUuid: "8e89689c-08a0-83f3-8e7e-f5e029a291c7"
+uuid: "fbe4723a-6432-8d34-94f8-672db2b90332"
 horo: 7
 typography:
   partition: algebra
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1cf85802-6291-8e07-b0db-4692eeef56d2"
+  computationUuid: "b295a15e-c9f4-8109-a047-4c1af0f468b2"
   stages:
     - stage: path
       stageUuid: "36254883-1d38-8b8b-8c58-cb19bc751607"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3910d019-69b7-8d0c-bbcc-8fcf279a2241"
     - stage: horo
-      stageUuid: "fb673ae1-e52e-83e3-8c9a-46e10f8043ff"
+      stageUuid: "1f56d0ea-4fc7-8960-9aa4-dc1b7b14f7f3"
     - stage: seal
       stageUuid: "dd868db1-62d8-8fd6-9f27-9f0aa9764ca1"
     - stage: uuid
-      stageUuid: "d4579f22-6925-8eb8-983e-cd75e92f76eb"
+      stageUuid: "cd0a500d-73f2-835f-9d41-1b0641dbfa2b"
 version: 2
 ---
 # algebra/license — the licence facts are read from the file the world reads

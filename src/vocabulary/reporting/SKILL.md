@@ -2,10 +2,10 @@
 name: reporting
 description: "Use when reasoning about reporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reporting"
-coordinate: "vocabulary/reporting · 1/base · 956a1b29"
-contentUuid: "24db1923-cad0-58ae-a251-edee74d79034"
-diamondUuid: "a445874f-46f8-84f4-b708-d72eeca435f6"
-uuid: "956a1b29-b80c-8591-8f98-a1269719e33a"
+coordinate: "vocabulary/reporting · 1/base · 67e88438"
+contentUuid: "6e1a7b28-0662-5919-b4bf-e589a7fbeeb3"
+diamondUuid: "d79a7221-250e-885f-b2f7-134198befc1b"
+uuid: "67e88438-7750-8017-86d8-4c922d2e623a"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5e379f30-0a23-823f-b32d-874267fb7011"
+  computationUuid: "7637f1e5-e4e7-8860-b5fb-d48b0e2d8966"
   stages:
     - stage: path
       stageUuid: "771f5ff4-fc3a-8b06-a632-258f453014ce"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32203466-d69c-88aa-85a7-53eb5293271c"
     - stage: horo
-      stageUuid: "32ee78dc-fe85-89d5-a21a-a9c3aece9eac"
+      stageUuid: "8d163405-4d3e-839a-993b-15fd476409e4"
     - stage: seal
       stageUuid: "6f47e3c0-119a-8c24-a5c4-abfe058bf2a8"
     - stage: uuid
-      stageUuid: "a9b5c91f-5721-8346-9b47-c0911ef78877"
+      stageUuid: "f0d70f8a-18b1-88e9-b81e-de0cdbc4f80a"
 version: 2
 ---
 # reporting

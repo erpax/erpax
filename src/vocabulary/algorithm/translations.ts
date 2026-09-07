@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "algorithm",
-    "uuid": "1a8d481e-40b3-8714-8991-cac62b6a6bfd",
+    "uuid": "4da7a844-9821-8a42-be82-02b30880c77c",
     "words": [
       "algorithm"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about algorithm — The algorithm or rules to follow to compute the score.",
-    "uuid": "1ee3d047-2253-8555-80bf-3bd688dcd8ee",
+    "uuid": "d0e1555b-4624-86bd-9656-5c318bb4a5c9",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: camt054
 description: "Use when parsing ISO 20022 camt.054 BankToCustomerDebitCreditNotification — credit/debit advice notifications."
 atomPath: camt054
-coordinate: "camt054 · 2/share · e1b0406b"
-contentUuid: "69c451d9-8d09-58d9-ac6b-19dc3c5e2edc"
-diamondUuid: "ff41e1ae-6ee6-8b2e-b943-85cc6a7dd097"
-uuid: "e1b0406b-7e97-808d-b451-26946c3b6bc4"
-horo: 2
+coordinate: "camt054 · 4/weave · ee5f3855"
+contentUuid: "6b36887a-c586-542e-80d9-c67ec53529e2"
+diamondUuid: "2accf499-cd46-8c5c-98af-0ca855ae0f8a"
+uuid: "ee5f3855-330e-8d6d-9847-2243a5e48af8"
+horo: 4
 typography:
   partition: camt054
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "31c4b333-6a8a-8c05-94ed-fa7bb295b0eb"
+  computationUuid: "f3578576-96d3-852a-8eff-4ffaef4bc60e"
   stages:
     - stage: path
       stageUuid: "293f30b8-f57e-887e-9f2f-d74e55a98c2e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4bf5d85a-cba7-837c-aa01-842e9c581d46"
     - stage: horo
-      stageUuid: "9306bbd6-0167-8dd2-8415-815cae07ad3e"
+      stageUuid: "29d09067-8b04-8903-9e0b-051235567133"
     - stage: seal
       stageUuid: "82910eac-ae1a-8b5d-aa73-eddbcb2f8864"
     - stage: uuid
-      stageUuid: "3c221738-b405-810c-8490-4abbd2ade681"
+      stageUuid: "30f72a66-d721-8679-b825-66f23ecce95d"
 version: 2
 ---
 # camt.054 — Bank to Customer Debit Credit Notification

@@ -2,11 +2,11 @@
 name: chat
 description: "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history)."
 atomPath: "quantum/chat"
-coordinate: "quantum/chat · 5/round · 9c944f3a"
-contentUuid: "ddd076d7-21d2-5d70-b8d5-e05d25e7dd8d"
-diamondUuid: "cbd9ca3b-f9c2-8b1b-8f30-a58410417e16"
-uuid: "9c944f3a-aa6a-8ce5-b55a-e9d3a9ec2128"
-horo: 5
+coordinate: "quantum/chat · 1/base · e88848ce"
+contentUuid: "ca61dd98-218f-55be-a9dd-72d70b36396f"
+diamondUuid: "a2612bf4-2671-83aa-9b07-989908233f7c"
+uuid: "e88848ce-07e2-8c66-a10f-9e8cd8a4b2d3"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 161
@@ -14,7 +14,7 @@ standards:
   - "merkle hash-chain; RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "f1a2e3a1-d139-8732-b2da-158751c7dfc1"
+  computationUuid: "797799a2-a2b1-8ecb-be87-b9e6d9edbec4"
   stages:
     - stage: path
       stageUuid: "76e0ed3e-a2c5-8289-9bcf-b44560eaf1c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1e86ded6-c843-8e79-bf3c-262b18a4e468"
     - stage: horo
-      stageUuid: "e0e2b1b5-dd0b-8c3e-af85-a8dd0c29e18a"
+      stageUuid: "cb4ee142-c0eb-88ec-a34e-830713dfd66f"
     - stage: seal
       stageUuid: "19ba7de4-e9f9-8794-a527-1f93d7eff152"
     - stage: uuid
-      stageUuid: "d1538a32-a0b5-883a-aa54-b2a07d18f4cf"
+      stageUuid: "19e7bdc1-acea-85c4-ae90-95ad340b73dc"
 quantum:
   superposition:
     - agent
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f1a2e3a1-d139-8732-b2da-158751c7dfc1"
-    contentUuid: "ddd076d7-21d2-5d70-b8d5-e05d25e7dd8d"
+    computationUuid: "797799a2-a2b1-8ecb-be87-b9e6d9edbec4"
+    contentUuid: "ca61dd98-218f-55be-a9dd-72d70b36396f"
 version: 2
 ---
 # quantum/chat — the thread as a merkle chain
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/chat/index.ts` (`threadUuid` · `appended` · `compose
 
 @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `ddd076d7-21d2-5d70-b8d5-e05d25e7dd8d` · account `quantum/chat` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ca61dd98-218f-55be-a9dd-72d70b36396f` · account `quantum/chat` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "superseded",
-    "uuid": "bd657e11-b640-8b70-9027-b8f3891cbeec",
+    "uuid": "4b304976-26e8-8f68-aa57-cfcce63f7c01",
     "words": [
       "superseded"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about superseded — Relates a term (i.e. a property, class or enumeration) to one that supersedes it.",
-    "uuid": "1a4939d0-a864-8e43-9e9e-0d6a1b81ff8e",
+    "uuid": "d54fa345-37a9-8c0d-9de7-ad40058842da",
     "words": [
       "use",
       "when",

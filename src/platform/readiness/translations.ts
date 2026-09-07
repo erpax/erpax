@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "readiness",
-    "uuid": "bc7189b5-7f1b-8c94-9cf7-eb4689e6fbd3",
+    "uuid": "d19a3f38-3a8c-8b19-bd4c-097f11a6cc0b",
     "words": [
       "readiness"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about readiness — enumerates the live MCP tool surface and groups it; folds that into a single manifest a reader can act on.",
-    "uuid": "278ac4af-a572-8e0d-9738-b9b59c1c5a0d",
+    "uuid": "fdf64d07-0076-840e-80b3-2a2d720162b1",
     "words": [
       "use",
       "when",

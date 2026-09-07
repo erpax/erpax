@@ -2,18 +2,18 @@
 name: unraised
 description: "Use when a declared failure kind is never raised — a `…Kind` union member that nothing in src ever constructs is a check that cannot fire, so its claim defaults to TRUE by omission. Parsed via ts.createSourceFile, never matched. Run: tsx src/rules/unraised/index.ts"
 atomPath: "rules/unraised"
-coordinate: "rules/unraised · 7/descent · 0a402db4"
-contentUuid: "3c4fbdcd-5d5f-5621-ba6b-6a03c4077569"
-diamondUuid: "d6326e27-cdd7-8033-bd65-42b5e20ec8b3"
-uuid: "0a402db4-cb13-8235-a81d-b65697fd3a3b"
-horo: 7
+coordinate: "rules/unraised · 2/share · 6f48434e"
+contentUuid: "4bb6cfa4-3b0a-581c-b236-e25b1047ffcc"
+diamondUuid: "768ab0c1-38be-8898-895a-315e64b57d63"
+uuid: "6f48434e-6dad-8440-bf22-2bbf104641a9"
+horo: 2
 typography:
   partition: rules
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "242804c7-6042-8e35-84ae-c24985ab90a0"
+  computationUuid: "f2e68987-3f62-85cb-a257-a18447b9e8bf"
   stages:
     - stage: path
       stageUuid: "b60dad88-5945-832b-8446-10ee08a57e87"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0ccf65af-137b-84a7-87d9-c0c3da62d6e6"
     - stage: horo
-      stageUuid: "da86f24a-dfe0-84f5-b728-ef8c26e4344c"
+      stageUuid: "bc128b7c-3deb-8fe7-8ffd-bcb493da2f6c"
     - stage: seal
       stageUuid: "2706b24c-7df7-8886-9bad-5a455e692e99"
     - stage: uuid
-      stageUuid: "b787752f-1aa7-8029-81ad-a7dbab885da3"
+      stageUuid: "770e9762-4f56-82cf-846c-ec410cdf6df2"
 version: 2
 ---
 # unraised — a case that is never raised is a check that cannot fire

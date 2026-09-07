@@ -2,11 +2,11 @@
 name: awarded
 description: "Use when reasoning about awarded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: awarded
-coordinate: "awarded · 5/round · 77fcb5ff"
-contentUuid: "0659c7e6-7931-5783-b0ec-c3a2ed7bbfac"
-diamondUuid: "2c012edc-f1d7-8615-a665-6e4259dc673d"
-uuid: "77fcb5ff-3949-8c3d-9f43-fc2ecb4f028d"
-horo: 5
+coordinate: "awarded · 1/base · f18b9b36"
+contentUuid: "eb5179f6-fddf-589f-b085-0e93d63bb141"
+diamondUuid: "3c8571b7-12e2-8e39-bc1e-2cc70e89a087"
+uuid: "f18b9b36-3e02-819c-b6df-59e02b49fc76"
+horo: 1
 typography:
   partition: awarded
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1d02d042-61f4-814b-88d3-d6d929cce3f9"
+  computationUuid: "dcbd4192-436a-8e25-b3a2-4dac16286920"
   stages:
     - stage: path
       stageUuid: "c54c72cc-ee68-894b-82ad-9a2f09961b3f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "74995f4b-990d-8b62-8535-4d67767fb71d"
     - stage: horo
-      stageUuid: "acfd8cbc-2df1-8616-a1a6-8587b8aa80e4"
+      stageUuid: "94e25806-376b-832b-8934-f14bc195a9fc"
     - stage: seal
       stageUuid: "d26b4f22-7f5a-86ed-92ee-23b727759197"
     - stage: uuid
-      stageUuid: "ab6560c2-4da6-88cb-940f-345a6251e881"
+      stageUuid: "41093720-4b84-8814-937e-156e06fd7bc3"
 version: 2
 ---
 # awarded

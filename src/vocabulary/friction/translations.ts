@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "friction",
-    "uuid": "78379224-e971-85cc-b116-ef9873f4ad21",
+    "uuid": "b2569872-ae0a-8159-ad8c-709a3248202d",
     "words": [
       "friction"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the cost-to-act atom of a market — the total effort plus price between wanting and having. 'Convenient' means low friction; it is the lever convenience and engineering play. Coupled to status with opposite sign (the effort is often the signal), so lowering it decays exclusivity — sequence the two, do not try to maximise both.",
-    "uuid": "c63452cf-65c0-8687-98dc-b99983c0a5d1",
+    "uuid": "92a9fb6e-432d-84c4-89de-d8cd230a66ab",
     "words": [
       "use",
       "when",

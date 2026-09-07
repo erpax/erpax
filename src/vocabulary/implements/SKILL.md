@@ -2,11 +2,11 @@
 name: implements
 description: "Use when reasoning about implements as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/implements"
-coordinate: "vocabulary/implements · 7/descent · 2e54ec21"
-contentUuid: "c0062019-976c-528e-bcca-b6fde45eb6e1"
-diamondUuid: "f9375438-c478-887f-a683-a1c2745e17ab"
-uuid: "2e54ec21-cc50-8038-8f4d-f9b8e62100c3"
-horo: 7
+coordinate: "vocabulary/implements · 1/base · 79f317b2"
+contentUuid: "003855d8-1cf0-5ff3-8dc7-6eb9dbdca8ed"
+diamondUuid: "d7bd29e3-9849-836b-a60b-38451587b8bd"
+uuid: "79f317b2-8bdd-89ad-850e-02b2b276d56b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c7133c51-4f91-838a-87fc-a224a449ae44"
+  computationUuid: "2b7ea7d7-aa3c-8c1b-a153-68b3c3790250"
   stages:
     - stage: path
       stageUuid: "b8e7f67e-d5ca-8f10-85fc-92511275dcec"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "743926dd-e2b5-82ba-9b5f-ccae6f75f3b3"
     - stage: horo
-      stageUuid: "efded6d1-738f-8d0e-aab5-76d7415657eb"
+      stageUuid: "25f83bda-5264-8322-9acb-a9613d6f933c"
     - stage: seal
       stageUuid: "2824a042-6716-8df1-a4d2-4a950d78ded8"
     - stage: uuid
-      stageUuid: "fdbb488f-e3d4-83b9-97ad-36e1f3924a01"
+      stageUuid: "66a33d8f-26b2-8bf5-8d24-8b02c5fb0e71"
 version: 2
 ---
 # implements

@@ -2,11 +2,11 @@
 name: similar
 description: "Use when reasoning about similar — A pointer to another, functionally similar product (or multiple products)."
 atomPath: similar
-coordinate: "similar · 5/round · b1bc20ef"
-contentUuid: "c26f67ca-69ca-52fc-b7f0-394fdeb63eb5"
-diamondUuid: "d0fed188-528f-8dc1-818d-7abdbdbc3f4f"
-uuid: "b1bc20ef-c7b9-8578-8872-6417007bf6a2"
-horo: 5
+coordinate: "similar · 1/base · 10d6f11b"
+contentUuid: "69333b42-033e-504c-89b6-b79e9c5752c4"
+diamondUuid: "d9a5b8f3-3032-8935-8bd5-a48ae8331754"
+uuid: "10d6f11b-6351-8ea2-a8ec-391e11e88cee"
+horo: 1
 typography:
   partition: similar
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6736cc5b-3332-8c86-ad9e-451eabd10bb0"
+  computationUuid: "780107ed-df11-81f8-87a3-da3503112765"
   stages:
     - stage: path
       stageUuid: "d2d932e2-0ff4-86e4-9729-4f84d3067caa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5429bd85-6e64-85e6-8d3e-ac0366984a47"
     - stage: horo
-      stageUuid: "15fec068-6ef9-8816-b808-42f60bccb06d"
+      stageUuid: "60b00edd-c173-81c8-a1dc-a1df3a984adf"
     - stage: seal
       stageUuid: "33105b8d-7158-8270-962c-3c55d9623b06"
     - stage: uuid
-      stageUuid: "82260c20-56d2-8215-a939-fdc27cc0d038"
+      stageUuid: "77ba6fcd-ed68-8ba3-b5b0-74bfe05b8729"
 version: 2
 ---
 # similar

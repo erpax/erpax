@@ -2,11 +2,11 @@
 name: protocol
 description: Use when implementing or referencing GHG Protocol.
 atomPath: "ghg/protocol"
-coordinate: "ghg/protocol · 4/weave · f8f73530"
-contentUuid: "1f2c0d8d-69f5-5f07-9bf9-e920cb305002"
-diamondUuid: "ba16bedd-06d6-89dc-ba26-3c7dd33805ae"
-uuid: "f8f73530-639e-8b5d-8669-eff94e3f3116"
-horo: 4
+coordinate: "ghg/protocol · 5/round · de297709"
+contentUuid: "24dda159-1da2-533e-9c93-58ddbf207d4b"
+diamondUuid: "41b96391-adfd-81c9-9cf8-782b1410185c"
+uuid: "de297709-c251-86af-982d-cdb3c15e101e"
+horo: 5
 typography:
   partition: ghg
   bondDegree: 3
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ec5462dc-daf9-8aa5-9cf3-b1f6e1db1071"
+  computationUuid: "a415749e-4335-886b-976d-856926005cfa"
   stages:
     - stage: path
       stageUuid: "51418229-28d4-8f7d-86b9-e02843439ce5"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "65a987b0-a2e8-85eb-b09d-41fdefa6d607"
     - stage: horo
-      stageUuid: "7d0c32b5-e8c7-8861-b705-e062d807833b"
+      stageUuid: "910cb11b-abf0-85d7-aa97-a1002fa591a8"
     - stage: seal
       stageUuid: "83431ce0-8794-8b40-b0d7-1b1e74168d7f"
     - stage: uuid
-      stageUuid: "00bb0046-13aa-8f08-8c4e-c54d890756bb"
+      stageUuid: "ab6fbb62-1c13-8ea3-866e-681ee4ec9f42"
 version: 2
 ---
 # GHG Protocol

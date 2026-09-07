@@ -2,18 +2,18 @@
 name: violation
 description: "Use when asking what ONE violation is — the singular model beside the plural store: the severity order, whether a finding clears a floor, and the identity that makes the same finding twice one row."
 atomPath: "monitor/violation"
-coordinate: "monitor/violation · 4/weave · 71412048"
-contentUuid: "41291b4a-f4df-50ed-a1bf-946f95ef7466"
-diamondUuid: "77208600-d6ef-831e-8e6e-7f7cb99eac44"
-uuid: "71412048-3ef6-8bef-88ff-ee5ff4ef48d7"
-horo: 4
+coordinate: "monitor/violation · 8/crest · 6e0bf52a"
+contentUuid: "f549ff67-06b0-5a47-82e5-507ef002bced"
+diamondUuid: "cec84a03-7a82-8dc2-b726-420ac182f2cd"
+uuid: "6e0bf52a-2f31-8814-adea-d370c7ff97ae"
+horo: 8
 typography:
   partition: monitor
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "05fc8de8-c01b-81e3-beb7-9869b64d0791"
+  computationUuid: "d1105c54-a3a5-896f-bdad-64a8dfc18efa"
   stages:
     - stage: path
       stageUuid: "63b81404-75e2-8bd2-b46d-433d4467b969"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "56590b03-c9d3-8449-a469-0deebc072b69"
     - stage: horo
-      stageUuid: "90e9c45c-15b7-8390-99f1-f42d9352058d"
+      stageUuid: "e93c1600-8367-8501-aea3-741da6a1b3f2"
     - stage: seal
       stageUuid: "1c36c58f-6050-8b25-b30a-d51fe5cba507"
     - stage: uuid
-      stageUuid: "234a36f2-1aa4-8810-9874-cd4a53f1495a"
+      stageUuid: "246cd6c7-3c28-861f-ac4e-46c11ead4972"
 version: 2
 ---
 # monitor/violation — a store needs a type

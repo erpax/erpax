@@ -2,10 +2,10 @@
 name: algorithmically
 description: "Use when reasoning about algorithmically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/algorithmically"
-coordinate: "vocabulary/algorithmically · 5/round · c4f4b2ee"
-contentUuid: "8f806d1c-de85-52a3-8731-198c2a324187"
-diamondUuid: "3006726a-dfd6-8312-aff9-68ca1ee498c5"
-uuid: "c4f4b2ee-8f8d-8600-bcdb-e078bddb6bc9"
+coordinate: "vocabulary/algorithmically · 5/round · 2a6f3d65"
+contentUuid: "7c9e4331-ddbb-5319-8b27-9b19b0863070"
+diamondUuid: "25d084d9-d440-82d5-b7a1-e0465e971df0"
+uuid: "2a6f3d65-4eeb-860d-b601-ef7abc32916d"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b4410280-749f-830d-9c97-159f13abb7aa"
+  computationUuid: "d383d73d-901d-8819-b3f2-e858523e6e1f"
   stages:
     - stage: path
       stageUuid: "df5277db-8742-8a96-942c-bf0bc1a11872"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bc9229fe-4a44-85ac-84da-c1d583059f0b"
     - stage: horo
-      stageUuid: "e8a6c3ac-98f7-8990-845d-bd330caa87be"
+      stageUuid: "fceaf39e-3f4e-822a-af29-0facc72cef60"
     - stage: seal
       stageUuid: "033ca247-7a58-80a5-a396-d71df3da40e7"
     - stage: uuid
-      stageUuid: "635b232a-0b1f-8526-9ad7-6fda4477d7b1"
+      stageUuid: "4e9cc413-a0d5-8e1f-a333-63b70c61070a"
 version: 2
 ---
 # algorithmically

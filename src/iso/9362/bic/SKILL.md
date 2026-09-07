@@ -2,11 +2,11 @@
 name: bic
 description: "Use when reasoning about bic — ISO 9362 BIC / SWIFT validator."
 atomPath: "iso/9362/bic"
-coordinate: "iso/9362/bic · 4/weave · 7d9fc118"
-contentUuid: "a4121e48-04ea-5815-a605-48fe43e16f4c"
-diamondUuid: "96c817fb-ab41-8ca3-be64-9c60a035b748"
-uuid: "7d9fc118-bba9-86aa-baf4-3e83004fa1a2"
-horo: 4
+coordinate: "iso/9362/bic · 1/base · ecfdcd45"
+contentUuid: "589a85bd-c8d5-5e6c-bb67-8ea40ec31f9d"
+diamondUuid: "54510233-7a05-82d7-9d76-8b6f603924cb"
+uuid: "ecfdcd45-f52f-84e1-b327-268b4c88617a"
+horo: 1
 typography:
   partition: iso
   bondDegree: 6
@@ -15,7 +15,7 @@ standards:
   - "ISO-9362:2022 §6 structure"
 bindings: []
 signatures:
-  computationUuid: "ea41a141-57a0-830e-af6d-4e27a9762f01"
+  computationUuid: "a1356628-fee8-809f-8b58-80c1e65af28d"
   stages:
     - stage: path
       stageUuid: "2271e1ec-7ea8-853d-956b-ab423115cf56"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "334833db-7c5c-8c55-aa16-4d20abe20a27"
     - stage: horo
-      stageUuid: "3c5d09e3-55a1-8a6e-87e7-62ee7a1b312d"
+      stageUuid: "673b7746-6aa8-8fa8-bf08-9b0c69a0a7b8"
     - stage: seal
       stageUuid: "80bd28de-b239-8f9c-898a-11a549d7196a"
     - stage: uuid
-      stageUuid: "7c1229f1-9190-8d2d-8a73-4f4d8cf3829f"
+      stageUuid: "b5396cb0-c5af-8a29-90cd-4c8e1268379e"
 version: 2
 ---
 # iso/9362/bic

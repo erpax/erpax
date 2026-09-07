@@ -2,11 +2,11 @@
 name: mode
 description: "Use when reasoning about mode as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mode"
-coordinate: "vocabulary/mode · 2/share · 4ff5d7be"
-contentUuid: "cc145fe5-fd03-5cb7-8e16-3b1b95d34fc4"
-diamondUuid: "77927857-db16-8196-8335-1a46cb9bd98b"
-uuid: "4ff5d7be-3061-8fac-aff9-ae511f611ffe"
-horo: 2
+coordinate: "vocabulary/mode · 7/descent · 819b642d"
+contentUuid: "f45f8d5b-99cb-507a-9f45-6b2a64c28e8a"
+diamondUuid: "e7399991-cf64-8b73-b272-d3753160a5e2"
+uuid: "819b642d-5bc9-881f-a5cc-5acdc2ecb8a6"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 41
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "34d52121-b0b7-8d7b-9b1c-f42e98940e1f"
+  computationUuid: "eb2d3313-1608-8fc5-8d80-92deef8ae18e"
   stages:
     - stage: path
       stageUuid: "c4f32f2b-0b73-85b1-96a3-ebd3147e3412"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dafd1ab4-cc82-8959-aa7b-8480cbddabef"
     - stage: horo
-      stageUuid: "442dea67-f1a0-8560-a6b8-42a6d0568cc6"
+      stageUuid: "69ee7854-d439-89d4-89cf-03b58d951aad"
     - stage: seal
       stageUuid: "f15f7faf-3314-8e02-802b-030f72036ca8"
     - stage: uuid
-      stageUuid: "845bf3eb-0202-8866-b2ca-07fd9a8d149f"
+      stageUuid: "d23ab7af-a42a-8ecf-a079-38eadd849010"
 version: 2
 ---
 # mode

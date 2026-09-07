@@ -2,10 +2,10 @@
 name: vocabulary
 description: "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution."
 atomPath: vocabulary
-coordinate: "vocabulary · 2/share · ed5a7a22"
-contentUuid: "e45def98-ff1b-5c72-b31f-66656f824db8"
-diamondUuid: "40d02f10-1ff7-8b4b-8368-1345a62c7f80"
-uuid: "ed5a7a22-6441-86e3-9bd7-ab4ec1c0b83c"
+coordinate: "vocabulary · 2/share · c5db9e5d"
+contentUuid: "e2312e66-2cfd-5d0d-bb9a-e2503ec328c4"
+diamondUuid: "5a6bcef8-28ed-8133-8564-0c15a3476742"
+uuid: "c5db9e5d-24f7-87c6-8582-0308e71fdd25"
 horo: 2
 typography:
   partition: vocabulary
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c38d99b7-56ba-85f5-ac89-b05b2f55c71e"
+  computationUuid: "0e80ab9f-9ed5-8720-ba36-4a6c577341bf"
   stages:
     - stage: path
       stageUuid: "f0b18baa-02eb-8261-9d44-76631e7d803a"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "10d0c2b3-2ee1-87ff-aaca-e0b41f10aeaa"
     - stage: horo
-      stageUuid: "3183eee8-caa2-872d-b5c2-5383deb29663"
+      stageUuid: "7992f14e-998b-866c-86f1-be70b23d486b"
     - stage: seal
       stageUuid: "4be331e8-7e4f-8b97-9a90-6ff86604bad3"
     - stage: uuid
-      stageUuid: "fd27820b-1a20-8c5c-b527-3aee5ba036d3"
+      stageUuid: "ade0ea3c-d6fc-81a6-a4a4-67d102060fa4"
 version: 2
 ---
 # vocabulary — words only from the shared scheme

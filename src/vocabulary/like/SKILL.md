@@ -2,11 +2,11 @@
 name: like
 description: "Use when reasoning about like as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/like"
-coordinate: "vocabulary/like · 4/weave · 7b286609"
-contentUuid: "8a02ba96-1295-557f-b851-8e45460f9f81"
-diamondUuid: "ef06779a-7ae0-8958-bc50-f18147dc895a"
-uuid: "7b286609-2b50-8c0a-a36d-8df405332b19"
-horo: 4
+coordinate: "vocabulary/like · 7/descent · 37ee6a11"
+contentUuid: "95bd12fd-02d7-5acc-815f-433247e9cc59"
+diamondUuid: "1d8a36f0-29a9-8d4a-9669-3e2dee2957fc"
+uuid: "37ee6a11-f0b5-8b83-be09-b5e2d77a0f27"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aae0ced7-5df9-8b57-bf34-cd0af09d6407"
+  computationUuid: "7deae141-a7da-8bdf-9802-929939042e03"
   stages:
     - stage: path
       stageUuid: "61cbe026-832b-8d40-bb70-8985a086f9c7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "114907c3-1c35-869b-89c1-f07be8860373"
     - stage: horo
-      stageUuid: "1a995471-a871-82b8-b941-a55b89f81330"
+      stageUuid: "6f12703e-5b07-8ec3-ac55-f1beca424505"
     - stage: seal
       stageUuid: "95a8a5e3-6a42-8d92-9676-580c7172ef66"
     - stage: uuid
-      stageUuid: "a73c5241-cc9c-86b1-99ed-fa3e728c4c18"
+      stageUuid: "cf2ac45a-6deb-8da7-ab2b-32ab6c5edc29"
 version: 2
 ---
 # like

@@ -2,11 +2,11 @@
 name: fingerprint
 description: "Use when reasoning about fingerprint — normalises a statement and addresses it, so the same query issued from two places is recognisably one query. records the execution against that address."
 atomPath: "query/fingerprint"
-coordinate: "query/fingerprint · 4/weave · 17cb1e5f"
-contentUuid: "1eabdfc3-22fd-5811-a027-4a422544fd53"
-diamondUuid: "32fca2b7-6b11-8813-93ff-46cdecc228c0"
-uuid: "17cb1e5f-ceae-8009-8a79-f72b7ba4c818"
-horo: 4
+coordinate: "query/fingerprint · 8/crest · 3f4e6951"
+contentUuid: "aba89853-4c9a-5a7e-a9c3-4481d0bdf5dd"
+diamondUuid: "3537179a-82f0-8cc1-94f5-c6231ea9585a"
+uuid: "3f4e6951-ae4a-8566-ac0b-c20fc71b0cff"
+horo: 8
 typography:
   partition: query
   bondDegree: 11
@@ -17,7 +17,7 @@ standards:
   - "RFC-8785"
 bindings: []
 signatures:
-  computationUuid: "c69a4c67-1015-8aec-a3dc-69433b32c8d4"
+  computationUuid: "ab30bec7-4733-8d3b-a012-0ec6bc13fc88"
   stages:
     - stage: path
       stageUuid: "f5837ce1-5f15-8e7f-92bc-c08244d20dd1"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "60e9e977-95ef-878e-ad51-d972502c7b39"
     - stage: horo
-      stageUuid: "29cc1896-3c3e-8297-8e28-c00db7145fd1"
+      stageUuid: "94b97c88-963f-8838-957d-b1792b3399ed"
     - stage: seal
       stageUuid: "35bed41c-13d4-8598-a181-f9e9cf6be72f"
     - stage: uuid
-      stageUuid: "3fa38cfb-1dc8-8838-9080-f6a139dbff4a"
+      stageUuid: "f48fdcef-bf67-8bd3-9a2c-c189002beabc"
 version: 2
 ---
 # query/fingerprint — every SQL string has an address, so a query is a thing you can talk about

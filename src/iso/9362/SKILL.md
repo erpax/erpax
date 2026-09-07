@@ -2,11 +2,11 @@
 name: "9362"
 description: "Use when implementing or referencing ISO 9362 — BIC / SWIFT."
 atomPath: "iso/9362"
-coordinate: "iso/9362 · 5/round · 62a3cfe6"
-contentUuid: "427164f0-99e3-59c4-8673-912c9dd7a3bf"
-diamondUuid: "bd15049b-3030-8614-ae2d-6748062c7400"
-uuid: "62a3cfe6-288b-8c01-bd61-1ea8f5c505a2"
-horo: 5
+coordinate: "iso/9362 · 8/crest · 85489c63"
+contentUuid: "92774639-4e06-58c8-9bff-f8d3ce7d3b0f"
+diamondUuid: "dc881b9e-77f9-87e9-adf6-6e8b631feb1a"
+uuid: "85489c63-bbf9-8acc-827d-fe82762db364"
+horo: 8
 typography:
   partition: iso
   bondDegree: 9
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2a122bd6-7131-89b6-853c-24271aeebfee"
+  computationUuid: "fb42e74f-b15e-8a6e-a7ec-abc6d780a50a"
   stages:
     - stage: path
       stageUuid: "2bc99238-ebe1-815f-af4a-4a6666814891"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "ba60cf8d-f3e9-8940-80e1-31d903bbddb2"
     - stage: horo
-      stageUuid: "557cca69-c0c6-8e47-97e6-cfbdeeb78246"
+      stageUuid: "25e32b5d-4571-8dac-ae2a-413110f023ca"
     - stage: seal
       stageUuid: "c88be5a4-d92a-8b3e-b7b6-03d3db302d08"
     - stage: uuid
-      stageUuid: "c5286e6e-f61e-89e1-b497-84a8c1a84024"
+      stageUuid: "24faa4c0-c57a-88ba-8854-166fb186e562"
 version: 2
 ---
 # ISO 9362 — BIC / SWIFT

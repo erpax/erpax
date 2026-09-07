@@ -2,11 +2,11 @@
 name: reports
 description: "Use when submitting, approving or auditing employee expense claims — per-diem, mileage, airfare, hotel, receipts, multi-step approval chain, reimbursement via payroll or AP — with GL coding, FX conversion, policy-compliance flags and SOX §404 four-eyes enforcement. The employee expense-claim collection."
 atomPath: "employees/expense/reports"
-coordinate: "employees/expense/reports · 8/crest · d0c31c8d"
-contentUuid: "8383a212-a002-58b5-afd3-7e7f4a8d7824"
-diamondUuid: "3a5f6881-16fd-856b-a213-68f32c80e094"
-uuid: "d0c31c8d-4429-87ee-9bea-89dccc0e5dbe"
-horo: 8
+coordinate: "employees/expense/reports · 5/round · 0c0d344f"
+contentUuid: "99b8d2b4-e424-56a5-ba80-eeae1ff1b53b"
+diamondUuid: "f1b21bc8-1647-81a2-be17-b922672ac1c3"
+uuid: "0c0d344f-4c02-8335-a13b-cbe550183130"
+horo: 5
 typography:
   partition: employees
   bondDegree: 28
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b5b0fdcc-0525-8c20-a459-06e7bb1ad097"
+  computationUuid: "ed300724-049e-82e2-ae19-da81d8ae78bf"
   stages:
     - stage: path
       stageUuid: "403f2ee9-d470-8577-b33a-d3122cc50e6c"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "fecec840-64b4-8347-9416-8487f4720f4b"
     - stage: horo
-      stageUuid: "780084e4-8839-8f5a-8ff9-a02af2be708b"
+      stageUuid: "3b8e3e83-ad9a-89bc-a9e2-d6247eae8a23"
     - stage: seal
       stageUuid: "df5ad4cd-b7c3-81ec-9236-07c88fafff88"
     - stage: uuid
-      stageUuid: "573ae2f7-4038-8d48-8703-a9ec9a89efc6"
+      stageUuid: "e4c45d87-e966-8957-b1bc-aeddfc49c723"
 version: 2
 ---
 # expense-reports

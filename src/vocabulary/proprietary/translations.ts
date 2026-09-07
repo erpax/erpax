@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "proprietary",
-    "uuid": "ef7a01e5-a819-8b03-9788-77155d08afda",
+    "uuid": "531bfde2-107d-8fba-b7db-8b45c28bc16e",
     "words": [
       "proprietary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about proprietary — True if this item's name is a proprietary/brand name (vs. generic name).",
-    "uuid": "920a09ca-c502-86f5-a90e-3d4871b0dc1d",
+    "uuid": "5ac16873-6c4f-81f3-9a1a-08d0f75f98f5",
     "words": [
       "use",
       "when",

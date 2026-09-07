@@ -2,11 +2,11 @@
 name: nl
 description: "Use when reasoning about nl as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/nl"
-coordinate: "vocabulary/nl · 5/round · 2fdc797c"
-contentUuid: "19e19453-e577-5228-aa16-3a5a4bb396f7"
-diamondUuid: "8bffab23-6d53-87ec-9ed0-6bf3d74574c9"
-uuid: "2fdc797c-12c4-880a-a053-a115d7589322"
-horo: 5
+coordinate: "vocabulary/nl · 8/crest · 207769d9"
+contentUuid: "ed1b27a7-af55-526f-b274-e3e32ac0325e"
+diamondUuid: "c9493ffb-5e1f-8655-826c-d75d7c9791a2"
+uuid: "207769d9-7ed7-8de2-a355-6971820f81aa"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "987474dc-f2e1-8956-9291-c37c5654bb05"
+  computationUuid: "acfb711e-7066-8c67-86ef-05a4493ffbf2"
   stages:
     - stage: path
       stageUuid: "467a9bc1-a150-8a08-8f54-ff11743ac54a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a2db8ce1-4f87-8693-bd65-1ba2938ce82a"
     - stage: horo
-      stageUuid: "fac46396-329d-863a-83ff-062583eb597d"
+      stageUuid: "884f8745-8260-8302-95ef-f99e35106904"
     - stage: seal
       stageUuid: "e3388ee9-90bd-8832-a147-3656d5b996da"
     - stage: uuid
-      stageUuid: "9c5e405c-2dcf-8b78-89f8-300524f9013b"
+      stageUuid: "12bfe7de-28ad-833d-b4e4-dbf7727a3f12"
 version: 2
 ---
 # nl

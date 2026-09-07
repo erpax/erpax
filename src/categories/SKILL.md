@@ -2,11 +2,11 @@
 name: categories
 description: "Use when building or browsing hierarchical content or product taxonomies — title, URL slug (per-tenant unique), parent relationship, breadcrumb trail — for posts, catalogue products, or any schema.org DefinedTerm classification. The tenant-scoped category taxonomy node."
 atomPath: categories
-coordinate: "categories · 8/crest · b32a3574"
-contentUuid: "7cc47472-c45e-5e36-b6e6-6290c4d27fa2"
-diamondUuid: "d65dbf44-80ba-8d13-8006-d32c279280e1"
-uuid: "b32a3574-11a7-861f-80c4-3352e9fca5d1"
-horo: 8
+coordinate: "categories · 1/base · b22dc535"
+contentUuid: "1bf6c75e-04b9-51d5-9112-0488c01792ba"
+diamondUuid: "048b8ca4-8948-84df-8d7d-5ec67520687d"
+uuid: "b22dc535-d065-8c16-a8af-a41b37cad685"
+horo: 1
 typography:
   partition: categories
   bondDegree: 4
@@ -17,7 +17,7 @@ standards:
   - "schema.org DefinedTerm taxonomic-term"
 bindings: []
 signatures:
-  computationUuid: "3fef1c21-a4ca-817a-a08a-05cd95effc85"
+  computationUuid: "0fbf68eb-6865-844c-ac95-e612b0b0914b"
   stages:
     - stage: path
       stageUuid: "c2c4ccde-15a0-80b9-8d74-b22aba18e1f2"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "7dc65476-1349-8559-b4f1-1058292cdb75"
     - stage: horo
-      stageUuid: "bfc2fd99-d14a-86f2-bd7e-5adaf4779ec4"
+      stageUuid: "994b433c-993c-8e2a-b241-05092c114cf5"
     - stage: seal
       stageUuid: "c9671a3f-0a39-88e0-89a4-948f463aec3f"
     - stage: uuid
-      stageUuid: "85331245-6e92-8c1d-b236-6686ad6cebd6"
+      stageUuid: "7a77d04b-854b-80da-8e35-5c67d5cf499d"
 version: 2
 ---
 # categories

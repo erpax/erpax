@@ -2,11 +2,11 @@
 name: course
 description: "Use when reasoning about course — A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through di"
 atomPath: "vocabulary/course"
-coordinate: "vocabulary/course · 2/share · f9b64806"
-contentUuid: "07d62251-655b-5ea2-8a68-4bf643b08fe4"
-diamondUuid: "8010504f-bbe2-8c6d-9221-454a83d9de92"
-uuid: "f9b64806-96bb-89a3-abd9-591f8b79b7dc"
-horo: 2
+coordinate: "vocabulary/course · 4/weave · 7a6c63a7"
+contentUuid: "1639a7cf-9271-5693-ab42-9ce7d6796d47"
+diamondUuid: "3cf01eff-576d-8da0-893a-ef9ad31f007e"
+uuid: "7a6c63a7-a237-8911-8a6f-ba3f267d0313"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 39
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "788a81c9-632d-86ca-baa6-5aa8de30c08a"
+  computationUuid: "01536a3b-07d7-855c-b9ab-426619c20ba3"
   stages:
     - stage: path
       stageUuid: "ab2e95c8-b807-8143-b129-8df6aabfb5f0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2ab742b8-620a-879f-9aa4-01e8af2b1845"
     - stage: horo
-      stageUuid: "6b4b794b-f1a0-85c9-a797-320f5bbfdd3d"
+      stageUuid: "fe132011-74bd-8d03-9b0f-a444df4dfe16"
     - stage: seal
       stageUuid: "62b19e87-6cb2-8b46-98bc-38d05fd98baa"
     - stage: uuid
-      stageUuid: "ce546a02-c9a0-8ea6-bca9-3185ebe190d9"
+      stageUuid: "41662ad7-058b-8d68-8b45-97e11b6b1d08"
 version: 2
 ---
 # course

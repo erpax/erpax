@@ -2,11 +2,11 @@
 name: translation
 description: "Use when porting a translatable message into code — the model (type + defineTranslation) of one content-addressed, per-locale translation entry that the translations collector emits into every folder."
 atomPath: translation
-coordinate: "translation · 8/crest · 29c69b14"
-contentUuid: "79d71805-7f88-5e7f-826c-12c628c6a4a4"
-diamondUuid: "6f64a348-5a6c-867e-800b-2a682200e1b0"
-uuid: "29c69b14-2745-8869-aae5-c51414baaf19"
-horo: 8
+coordinate: "translation · 7/descent · fccafcc1"
+contentUuid: "51e2e837-cdc1-55e3-92ba-c6b9b7336a05"
+diamondUuid: "47357064-886f-8b10-a91f-8e973b53fde2"
+uuid: "fccafcc1-6f60-8557-b47a-0bbab63365b3"
+horo: 7
 typography:
   partition: translation
   bondDegree: 54
@@ -17,7 +17,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "32460e4f-9049-89c3-a75b-32331e50ec1c"
+  computationUuid: "f8b0af27-6e91-8058-b3ff-3455f57de8bc"
   stages:
     - stage: path
       stageUuid: "048b3559-afd6-848d-b817-f378c3501ff4"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "788ed000-f297-88b6-92cf-3d4ca5e315fa"
     - stage: horo
-      stageUuid: "9044fcf2-8470-8cd9-ad29-65f3c49d44eb"
+      stageUuid: "1ee0a952-d919-86c4-a677-8930dee0318d"
     - stage: seal
       stageUuid: "a31c948f-36dd-8053-a1be-56d348dbe35e"
     - stage: uuid
-      stageUuid: "29edc3f0-21b3-812a-972b-bce8d781bf44"
+      stageUuid: "0967e94d-8896-8e6e-a8ff-c217281ff3cf"
 version: 2
 ---
 # translation

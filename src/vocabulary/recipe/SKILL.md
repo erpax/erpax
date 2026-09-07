@@ -2,10 +2,10 @@
 name: recipe
 description: "Use when reasoning about recipe — A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail."
 atomPath: "vocabulary/recipe"
-coordinate: "vocabulary/recipe · 1/base · 8b3c0bbc"
-contentUuid: "bc5e6b03-75af-57ea-b29e-82d0c2256875"
-diamondUuid: "aa7f44ca-9f61-852d-a6f7-912be40749c5"
-uuid: "8b3c0bbc-c421-8938-9675-6d49542325f3"
+coordinate: "vocabulary/recipe · 1/base · ddb5744c"
+contentUuid: "783895d2-fdb1-50d9-9213-29acc1182e1b"
+diamondUuid: "dde4211f-d2f3-8568-ad81-69596357d2a0"
+uuid: "ddb5744c-65b8-842f-adcb-85791a4fa1f8"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cdff1a4c-8496-8462-bb9c-c6f4748c5c55"
+  computationUuid: "f5882bda-be3f-88d9-b544-d983217b7ca0"
   stages:
     - stage: path
       stageUuid: "67a8f2b7-dd06-82eb-8f34-411dc7bd3b5d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2f161531-a0cc-8cb4-8c94-9ebd627d4b7f"
     - stage: horo
-      stageUuid: "09f99874-afae-83ed-be9a-a9f5c0da0896"
+      stageUuid: "095596d1-f0c4-81a2-9936-4e0bccd48420"
     - stage: seal
       stageUuid: "67150327-62a4-84e0-8664-6813903bef94"
     - stage: uuid
-      stageUuid: "e4e8a025-74b4-8964-b74f-d41177775888"
+      stageUuid: "026713fd-8484-8e16-9004-7e513a1fbf44"
 version: 2
 ---
 # recipe

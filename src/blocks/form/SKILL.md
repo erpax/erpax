@@ -2,10 +2,10 @@
 name: form
 description: "Use when reasoning about form — A CMS form is data: an editor picks field types, and something must turn each stored into a component. is that map, and it is the whole of this atom's authority."
 atomPath: "blocks/form"
-coordinate: "blocks/form · 7/descent · e57a45d7"
-contentUuid: "ecf5040b-914f-5879-9506-7993b1070524"
-diamondUuid: "6048d281-cfd3-8bb0-9621-e4e39f8a6701"
-uuid: "e57a45d7-9106-8ec6-a07c-e08b009e7ce5"
+coordinate: "blocks/form · 7/descent · 6bd9e956"
+contentUuid: "7a3a376a-8633-5d24-acad-b8cb20ce8d27"
+diamondUuid: "65d9f60a-7a23-8175-8419-46b889fed66b"
+uuid: "6bd9e956-f21a-80a2-92be-e0c2b14ecd8b"
 horo: 7
 typography:
   partition: blocks
@@ -17,7 +17,7 @@ standards:
   - "W3C-WAI-ARIA-1.2"
 bindings: []
 signatures:
-  computationUuid: "fb9fefbe-80c7-848d-a43a-af5c5cacc8d4"
+  computationUuid: "77ebf156-e3b3-89ea-8952-5641b7b56917"
   stages:
     - stage: path
       stageUuid: "f1522255-6ff1-8056-b4f4-f198d16a8ba5"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "3a327889-46d3-8f67-aee9-1679e759ccbb"
     - stage: horo
-      stageUuid: "cc05021e-e00b-89b2-b0e2-8d69ac10e026"
+      stageUuid: "cdc573fb-ea25-8d60-8650-41d3f4252d13"
     - stage: seal
       stageUuid: "11f2fa17-de73-8595-9601-06f9cb27723f"
     - stage: uuid
-      stageUuid: "041ac61e-fbf8-8f8c-a574-75a75bc9038f"
+      stageUuid: "92898cac-dba4-8eb1-8659-7d67a017bb3a"
 version: 2
 ---
 # blocks/form — nine field types, and the registry that decides which one an editor gets

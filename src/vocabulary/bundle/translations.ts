@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bundle",
-    "uuid": "9ba2d32d-c0bd-804c-baf5-2825f6d1c678",
+    "uuid": "3ac4dccc-8d76-82ca-8ff4-fe38715166cc",
     "words": [
       "bundle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when packaging multiple items for joint sale — bundle composition, bundle pricing (vs. component sum), discount rules for bundles.",
-    "uuid": "b818c5d4-ebc5-8e7e-807e-c0e01f2049aa",
+    "uuid": "67264817-7074-8332-983b-a1dffe06f363",
     "words": [
       "use",
       "when",

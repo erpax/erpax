@@ -2,11 +2,11 @@
 name: client
 description: "Use when reasoning about client — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: "country/client"
-coordinate: "country/client · 8/crest · 9696d780"
-contentUuid: "cbdd308b-d36b-5499-b73c-89e99555da94"
-diamondUuid: "316bd234-1e5c-8b89-b350-6d6337bc4869"
-uuid: "9696d780-046a-8df8-b46e-f8eaabdb6b28"
-horo: 8
+coordinate: "country/client · 5/round · 992dd18d"
+contentUuid: "1c1f53b8-2138-5d6d-afee-071c9f007f21"
+diamondUuid: "3340e6bc-33ef-8ee4-ad85-bc8606ff6056"
+uuid: "992dd18d-ad56-8968-810b-e69fd2dab5f3"
+horo: 5
 typography:
   partition: country
   bondDegree: 6
@@ -31,7 +31,7 @@ standards:
   - "W3C-HTML5"
 bindings: []
 signatures:
-  computationUuid: "0238967a-a4fd-8a21-adef-934ad4f17618"
+  computationUuid: "defd8cb6-3581-8c4b-a6df-1083481604ee"
   stages:
     - stage: path
       stageUuid: "497ec9ef-d9f4-890c-b5e6-5b5e67df2721"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "8e12d5ca-1a03-837b-b237-214e9ebcf32c"
     - stage: horo
-      stageUuid: "24ee4052-f951-82f2-b939-9f305b2108f8"
+      stageUuid: "38fe5d83-0a77-8e01-9657-d478ad2c7c71"
     - stage: seal
       stageUuid: "954ade90-8e9a-8509-9dce-c1f00a3664d3"
     - stage: uuid
-      stageUuid: "3bb33f59-8920-8e70-b4cf-5278f0c3ab9b"
+      stageUuid: "a7afcb3d-76c5-85b5-be12-606f692ce821"
 version: 2
 ---
 # client

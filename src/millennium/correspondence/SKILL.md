@@ -2,10 +2,10 @@
 name: correspondence
 description: "Use when asked whether string theory or quantum computation bears on the Millennium Problems, or whether any of it strengthens cryptography. A physical duality can PREDICT a statement that mathematics then proves — mirror symmetry is the genuine instance — but a correspondence never proves the problem it corresponds to, so every row carries the precise gap that remains beside what is really established. bearsOnSecurity is false in every row, declared per row rather than waved away: hardness rests on module-LWE, factoring, discrete logs and hash preimage resistance, and no result here constrains any of them."
 atomPath: "millennium/correspondence"
-coordinate: "millennium/correspondence · 7/descent · b206eee4"
-contentUuid: "406f77a6-f7b3-5100-8a77-c2648b4dfaa0"
-diamondUuid: "ad37cca4-4af4-83ec-9c47-8958fd594a4a"
-uuid: "b206eee4-3980-896a-abaf-9d78b359a1ee"
+coordinate: "millennium/correspondence · 7/descent · 25f0d402"
+contentUuid: "1784374a-4f2e-59a2-97a7-1a23fa25fa51"
+diamondUuid: "a9910bd4-903c-833c-87a3-a2ebbf1e410b"
+uuid: "25f0d402-cfff-8149-87b0-5fe4c0cd6032"
 horo: 7
 typography:
   partition: millennium
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "f6caadd5-10ed-8e19-98f5-62d599892dae"
+  computationUuid: "78a224dc-b434-8402-bc34-195dc2955d6f"
   stages:
     - stage: path
       stageUuid: "6b842b5c-c0d8-8f7a-8349-13a15db100ff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "942c7bc3-56bc-8790-953c-2ae30a7c2f6b"
     - stage: horo
-      stageUuid: "ad525eb9-0fbe-801f-9bc9-8895ffe42256"
+      stageUuid: "b2573b37-8862-8c43-8164-768b5386f016"
     - stage: seal
       stageUuid: "9f13dd7b-9fcc-8525-88fc-568d02bd66c5"
     - stage: uuid
-      stageUuid: "3bfcac38-127a-818b-94b5-744446d7e02a"
+      stageUuid: "b7cf6a5b-1ae4-8392-9907-f1a040c9c82e"
 version: 2
 ---
 # millennium/correspondence — physics predicts; mathematics proves

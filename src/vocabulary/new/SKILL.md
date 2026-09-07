@@ -2,11 +2,11 @@
 name: new
 description: "Use when reasoning about new as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/new"
-coordinate: "vocabulary/new · 5/round · a99e0c75"
-contentUuid: "fe5643ac-144c-5eef-a34a-885d29ecd051"
-diamondUuid: "d0b5ad44-5d9a-8300-ab7f-67d0e472eeef"
-uuid: "a99e0c75-562a-85b5-9495-c7ab4ea469c7"
-horo: 5
+coordinate: "vocabulary/new · 4/weave · 59168a95"
+contentUuid: "78d24a68-7709-571a-9f06-4c91b9900cd4"
+diamondUuid: "1fbc0b86-ab83-87fc-991f-783fd9f2f1e9"
+uuid: "59168a95-8117-84b6-9ab5-9f2e7812ce5a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2622ca23-2b60-893c-a9e0-a588a8b30b02"
+  computationUuid: "7e20e5ec-e595-8b2d-932e-c10220c1ca23"
   stages:
     - stage: path
       stageUuid: "8b25f000-3714-8110-a49f-ac450c9c84c1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b29b5685-5943-840d-a70d-7bb6a0afc6f0"
     - stage: horo
-      stageUuid: "c2d043e5-c767-82da-a493-ffebf2de2f66"
+      stageUuid: "951f2e8c-b009-8c55-b916-a299ac6df15d"
     - stage: seal
       stageUuid: "dfadc9f8-5481-87ba-90f8-0afa4442541e"
     - stage: uuid
-      stageUuid: "269f650a-a8b3-8169-9427-9d649200fe2a"
+      stageUuid: "cb77c2e3-7bed-82a8-90d3-e1c433dd334f"
 version: 2
 ---
 # new

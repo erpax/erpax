@@ -2,18 +2,18 @@
 name: commission
 description: Use when modelling one commission — the singular model of the commissions collection (the plural store); earned compensation tied to a sale or transaction.
 atomPath: "vocabulary/commission"
-coordinate: "vocabulary/commission · 8/crest · ed21aceb"
-contentUuid: "14358182-fd7d-5fa0-b570-a22f59626c0e"
-diamondUuid: "4a396d2c-e15c-8dff-b32f-607349023965"
-uuid: "ed21aceb-bc39-8ebe-aae3-2af153ba50c6"
-horo: 8
+coordinate: "vocabulary/commission · 7/descent · 80e6a0e4"
+contentUuid: "fd800caa-e01a-5572-80b4-c1b2262083af"
+diamondUuid: "5cfd53c0-ec12-8b39-ba61-877a9f27a8d4"
+uuid: "80e6a0e4-6e63-8090-b4d7-3b7660cf407c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5256a04b-826b-8348-a64f-f5501a97524b"
+  computationUuid: "2bc16eb7-ac6e-8017-a935-54fe010801a4"
   stages:
     - stage: path
       stageUuid: "fc4e6035-0c71-8c95-88bc-fa272ea1bba2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "400722c1-57b1-885d-a648-161ddbbbab25"
     - stage: horo
-      stageUuid: "4a2908c6-fe3a-8d43-bee9-290677093d07"
+      stageUuid: "33b410b4-71f6-87d7-b7ae-93601bc8146e"
     - stage: seal
       stageUuid: "503597a2-3a8f-88ec-a221-8988b05f0e1a"
     - stage: uuid
-      stageUuid: "29d6fd27-82e3-848a-a0e1-fab4ebd8cc99"
+      stageUuid: "a9c7b539-2bd2-8ad6-aaf6-dbb0272af449"
 version: 2
 ---
 # commission — the model of one [[commissions]] row

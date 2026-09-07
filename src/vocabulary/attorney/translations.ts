@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attorney",
-    "uuid": "3730b1da-09e5-8603-b024-5bf6d1d47afc",
+    "uuid": "26b62239-da4a-8bba-9752-6ad44f55d5d2",
     "words": [
       "attorney"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about attorney — Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous.",
-    "uuid": "a9e9add0-940b-8557-b7c9-405b26059e38",
+    "uuid": "0246388d-ad77-869d-a4ea-b1258d0bfc04",
     "words": [
       "use",
       "when",

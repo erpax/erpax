@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gated",
-    "uuid": "91d868d6-430f-8cb9-982d-9e76a1e9ecbe",
+    "uuid": "ee8b5837-08bd-8093-a13a-f66bcb9cb72e",
     "words": [
       "gated"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about gated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "1888d339-4442-8458-b0b2-b3bc8999293d",
+    "uuid": "baad98f9-d914-86d8-a3b4-e50a211c46cb",
     "words": [
       "use",
       "when",

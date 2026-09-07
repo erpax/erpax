@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transactions",
-    "uuid": "25fcf454-7aaf-84c0-8f88-40f47539850b",
+    "uuid": "3155cc62-30b8-8cab-805e-e750ca9e4f1e",
     "words": [
       "transactions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines — each line is a first-class row with externalId, bookingDate, valueDate, amount, creditDebitIndicator, currency, booking status, bank transaction code, counterparty IBAN/BIC, remittance info, and matchStatus against journal entries. The per-line reconciliation-evidence collection.",
-    "uuid": "7eb44fff-d35e-848a-bcbe-6e17c0c40cba",
+    "uuid": "9458f5fb-21b8-8aec-8272-7f02faaa6a66",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "utterance",
-    "uuid": "cf92823e-8737-83cb-b0e3-5b255b94998f",
+    "uuid": "f9bf0a45-dbb7-8f2d-818d-0608a39f3e4b",
     "words": [
       "utterance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one utterance — the singular model of the utterances collection (the plural store); one spoken or written input in a conversation.",
-    "uuid": "d0bb074c-432a-8ef2-83a7-38436a200d72",
+    "uuid": "e7cf1548-01ff-8d34-8545-104f63358231",
     "words": [
       "use",
       "when",

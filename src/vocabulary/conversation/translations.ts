@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conversation",
-    "uuid": "4c1fd4f2-c485-824b-91b4-3392d425e29a",
+    "uuid": "062f14c9-f031-87ba-b70f-b408149c3db3",
     "words": [
       "conversation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about conversation — One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.",
-    "uuid": "a2678125-e909-8727-8141-9e8f515863b0",
+    "uuid": "c15e485d-c963-8efe-b124-9833827cadfb",
     "words": [
       "use",
       "when",

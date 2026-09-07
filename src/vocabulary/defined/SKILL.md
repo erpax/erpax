@@ -2,10 +2,10 @@
 name: defined
 description: "Use when reasoning about defined as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/defined"
-coordinate: "vocabulary/defined · 1/base · 0d7a641b"
-contentUuid: "232fa20d-3b8b-507f-8f4d-e7a5ed44be55"
-diamondUuid: "26cc85c2-b023-84a2-8dba-39bcdede744a"
-uuid: "0d7a641b-64de-8177-bede-e8fd8a16543d"
+coordinate: "vocabulary/defined · 1/base · 14f31d6e"
+contentUuid: "a979fbf6-48ef-5614-9814-203640698c9d"
+diamondUuid: "14b7764b-785f-8833-9813-b5da0c019b25"
+uuid: "14f31d6e-c35b-8b1c-b486-3c5dc503abd1"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2bcc9827-6976-8a62-bfd8-e6966eb1019f"
+  computationUuid: "063ac4e9-8640-85a6-9686-badf78602b85"
   stages:
     - stage: path
       stageUuid: "b042a04c-621c-8143-aa67-ed7eaa15f17e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f69cbe91-c86c-882e-8b28-c7e74ed8c2f1"
     - stage: horo
-      stageUuid: "3cfea7b5-d3c7-8751-a47b-4a2b8d58a909"
+      stageUuid: "6782109c-2ff4-8ada-bbc7-db32d257b337"
     - stage: seal
       stageUuid: "aa66d3ac-4de8-863d-bb51-b63f6553f60b"
     - stage: uuid
-      stageUuid: "177f848a-5dfd-8613-b020-4b7b9eeb8c73"
+      stageUuid: "a02590d1-c40c-8441-8fed-c2b577fd5be0"
 version: 2
 ---
 # defined

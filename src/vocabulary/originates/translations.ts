@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "originates",
-    "uuid": "1e1a92eb-908a-81b6-9390-0cbf5b7461c5",
+    "uuid": "08b7825e-27d6-8f05-91c8-dadfc965da7a",
     "words": [
       "originates"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about originates — The vasculature the lymphatic structure originates, or afferents, from.",
-    "uuid": "5bddbf6c-4ca1-8833-94c8-9462a465c5b7",
+    "uuid": "4b452e9d-6cd8-8e84-8255-d7d5c9f87ef6",
     "words": [
       "use",
       "when",

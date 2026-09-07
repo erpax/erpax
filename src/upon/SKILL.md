@@ -2,11 +2,11 @@
 name: upon
 description: "Use when reasoning about upon as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: upon
-coordinate: "upon · 8/crest · d417a04d"
-contentUuid: "f6ea3c29-65e2-58da-bb38-5ad9c2de1cb2"
-diamondUuid: "c99eaf25-4e57-80fe-b160-14295f6fc702"
-uuid: "d417a04d-514d-8a9b-8573-65ca6b40f551"
-horo: 8
+coordinate: "upon · 1/base · 6c03881b"
+contentUuid: "32278449-47a5-50f1-8306-28976c4d1207"
+diamondUuid: "4230ba38-8e2d-8d32-9a7e-b5991afff3ad"
+uuid: "6c03881b-9ca7-889f-a8fb-cb43fbe8e169"
+horo: 1
 typography:
   partition: upon
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "82490cd2-0846-8447-b832-8c44ca71739a"
+  computationUuid: "dad0222e-01c6-8e4c-82f6-f86762f97d96"
   stages:
     - stage: path
       stageUuid: "54e6a8c6-b86f-8ff2-9adf-a47304a27daa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4c9e12b3-6b53-8144-b610-5a1bcaed217f"
     - stage: horo
-      stageUuid: "d306c28b-a73d-8926-9077-26c157eed242"
+      stageUuid: "5a5cc909-6a72-8935-9d38-8c9275d0f756"
     - stage: seal
       stageUuid: "d2923c67-06ba-87df-969a-9c4a836e8967"
     - stage: uuid
-      stageUuid: "974766b1-7908-83a7-bbb3-88877e35d857"
+      stageUuid: "c7b91272-0846-8622-9c5a-91930e335adf"
 version: 2
 ---
 # upon

@@ -2,11 +2,11 @@
 name: house
 description: "Use when reasoning about house — A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see http://en.wikipedi"
 atomPath: "vocabulary/house"
-coordinate: "vocabulary/house · 2/share · 20d102fc"
-contentUuid: "ab1fbc2e-78cd-5464-a8c1-0372580b0d2a"
-diamondUuid: "6649ba10-8b9c-86cf-bf4f-52358c74c635"
-uuid: "20d102fc-c917-84ed-a091-d5ad39c7f705"
-horo: 2
+coordinate: "vocabulary/house · 7/descent · b025e170"
+contentUuid: "078f1e2b-a673-5f13-ad74-5e5c8e1a761a"
+diamondUuid: "06be007a-14e8-8404-9a15-07da424a6d8c"
+uuid: "b025e170-ab6e-82ed-8525-ce56928d3544"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "56cee8bf-4dcc-8b07-ab0c-2de9f99b9b56"
+  computationUuid: "99db0134-d518-86a5-a880-37db7d62f5e6"
   stages:
     - stage: path
       stageUuid: "d0edc912-d027-8cef-9a5f-03b76b26cd38"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fdf47c43-a993-8ed1-aa2e-217aebfc34ec"
     - stage: horo
-      stageUuid: "699adfa5-b74d-866f-b41b-59a6da3c9f24"
+      stageUuid: "b715006f-c76b-8262-8874-076b27151311"
     - stage: seal
       stageUuid: "18a611bd-47e2-85e6-8120-dc6466f0708b"
     - stage: uuid
-      stageUuid: "d683c09c-5f4f-8e4b-9d43-553b2470808d"
+      stageUuid: "1677bcdf-bc85-8608-a318-1c5a391214c7"
 version: 2
 ---
 # house

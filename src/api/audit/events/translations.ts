@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "events",
-    "uuid": "824c09c9-2f5f-82d9-924e-b80f79eb8982",
+    "uuid": "a8124404-5b77-8ac2-b9ca-11902d043d77",
     "words": [
       "events"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or querying every outbound external-API call (FX rate, VAT validation, sanctions screening, e-invoicing discovery, business registry, mTLS filing) — one row per call, kind-bucketed, country-scoped, source-attributed, result + error captured; SOX §404 / ISO 19011 evidence of every external system contacted. The external-API audit-trail collection.",
-    "uuid": "7433fdac-33d3-8fe3-a539-a41ebead3092",
+    "uuid": "d7dbf8af-1a5c-8de4-af82-dc5c178f4a0f",
     "words": [
       "use",
       "when",

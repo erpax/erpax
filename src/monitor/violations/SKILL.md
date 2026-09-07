@@ -2,10 +2,10 @@
 name: violations
 description: "Use when monitoring all erpax gate violations in realtime — folder law, rules:check, diamond strays, gap eb, finishedIdeaCrossed, import/boundary, path-follow, entanglement, logic-concentration."
 atomPath: "monitor/violations"
-coordinate: "monitor/violations · 4/weave · 18de5576"
-contentUuid: "36967205-a46c-5fc4-a852-be68042eb254"
-diamondUuid: "c9aa90e3-4c4d-8518-aef1-c67c537927ba"
-uuid: "18de5576-b47f-8769-af11-018582d56695"
+coordinate: "monitor/violations · 4/weave · e1786641"
+contentUuid: "a510c6d2-b4a1-5258-a6f2-6ebbeb2db8c8"
+diamondUuid: "afe4414f-552d-89a8-aa53-0468bfd8c27a"
+uuid: "e1786641-2469-8403-8c80-c3a1675fe298"
 horo: 4
 typography:
   partition: monitor
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bbff49d8-a0ac-8e2c-a4d2-9cfb7885d34a"
+  computationUuid: "737d185c-b33f-8c1c-92a4-4305a3514f15"
   stages:
     - stage: path
       stageUuid: "340e2891-69d7-8662-a3b6-86ec1c2e52b6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "60386374-1ee3-8269-8fb1-55184c446f03"
     - stage: horo
-      stageUuid: "e064dba7-c8af-8de7-adf8-5eba60188d0a"
+      stageUuid: "23a855b2-c8a6-8106-b1bc-283f9700b84a"
     - stage: seal
       stageUuid: "fb019706-77c5-8c5b-8d1b-c49a6a2e6386"
     - stage: uuid
-      stageUuid: "e92aa644-8e60-8611-ac70-cae6dc4c98f6"
+      stageUuid: "24b75b9a-b7ec-8599-bec5-6980290f3a85"
 version: 2
 ---
 # monitor/violations — realtime corpus violation monitor
