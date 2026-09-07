@@ -2,11 +2,11 @@
 name: browser
 description: "Use when reasoning about browser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/browser"
-coordinate: "vocabulary/browser · 2/share · ec09e806"
-contentUuid: "83fcc19a-e474-591e-8dc1-3721b3d7936b"
-diamondUuid: "74bfb3ae-4bce-8b45-a78e-178470d7b2a9"
-uuid: "ec09e806-436f-8322-833e-140ad1080d30"
-horo: 2
+coordinate: "vocabulary/browser · 8/crest · dd09239d"
+contentUuid: "797416e1-5942-58c9-bbdd-0a5921ba0a07"
+diamondUuid: "fce04fac-6044-81cd-97ea-ad16e6e22a0b"
+uuid: "dd09239d-4ed5-86d3-a7c8-7b0cebb9c20d"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b9cff266-7d19-88a5-9e0f-41690557da39"
+  computationUuid: "942107f7-6a86-823e-a668-96c3dceae071"
   stages:
     - stage: path
       stageUuid: "538b9d1a-f232-8e06-b120-64e24ad29550"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a61b386f-4b36-8625-9790-757843ab383e"
     - stage: horo
-      stageUuid: "13a8abd7-f50f-8cb0-8fb1-f80c6ef69f2a"
+      stageUuid: "6c55a307-6e6b-83d3-8897-8ac67f2129f0"
     - stage: seal
       stageUuid: "fb1b2f0f-a20a-8114-89f6-f0f5f8a1ee4d"
     - stage: uuid
-      stageUuid: "93b19e18-3670-8f84-944d-5ae480502e7f"
+      stageUuid: "a029909e-b249-8d81-85d8-afb18d4b5bb3"
 version: 2
 ---
 # browser

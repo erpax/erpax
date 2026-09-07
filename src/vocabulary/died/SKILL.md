@@ -2,11 +2,11 @@
 name: died
 description: "Use when reasoning about died as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/died"
-coordinate: "vocabulary/died · 5/round · 230b62fd"
-contentUuid: "d80fe622-4f54-50e4-a1ce-297b67c1304e"
-diamondUuid: "f501239c-301a-8ea1-974f-f97d05e80b04"
-uuid: "230b62fd-e3e7-8e09-8f3c-d721eef93a91"
-horo: 5
+coordinate: "vocabulary/died · 1/base · 31472ac0"
+contentUuid: "e6932244-9241-5ebd-ba5e-1dded4617b22"
+diamondUuid: "98c927bf-1595-81b0-947a-11545749c522"
+uuid: "31472ac0-58ae-8f29-8c52-b37b2efc0703"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e8f4e98c-0838-8232-ac62-41e75aa74dd6"
+  computationUuid: "68292afa-9f57-8eaf-9539-4faa5dfd264a"
   stages:
     - stage: path
       stageUuid: "8d98285c-aed0-83d4-99ad-1785a5923c5b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aa65671e-d5ae-84fc-b196-22f0c02d6163"
     - stage: horo
-      stageUuid: "b563b1b3-60a4-87f6-8899-06ba848dbd42"
+      stageUuid: "19f87e9a-5237-8465-b090-2d9c58da8659"
     - stage: seal
       stageUuid: "ea44db4a-b4e1-8062-afff-f8dbda887136"
     - stage: uuid
-      stageUuid: "0f6de98e-ffda-893f-a087-466d4cc14605"
+      stageUuid: "c07518d0-a73c-8845-935a-3ceee2f13550"
 version: 2
 ---
 # died

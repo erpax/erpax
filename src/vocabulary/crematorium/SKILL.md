@@ -2,11 +2,11 @@
 name: crematorium
 description: Use when reasoning about crematorium — A crematorium.
 atomPath: "vocabulary/crematorium"
-coordinate: "vocabulary/crematorium · 2/share · 117dbb20"
-contentUuid: "80d2d529-9dbf-5ed0-adb1-654b2cc84ba8"
-diamondUuid: "51d74fda-a09d-8d12-8a8e-1d1ebbf2b52d"
-uuid: "117dbb20-884c-817c-8daa-8ff3510b34fe"
-horo: 2
+coordinate: "vocabulary/crematorium · 5/round · e42f4d07"
+contentUuid: "3b40578a-9dd8-5190-ab9f-ece5cb6f2cbe"
+diamondUuid: "1f115842-12b3-8376-86f3-84a59c88db34"
+uuid: "e42f4d07-1a63-8690-a312-ccf09bac9a8d"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "908e0402-41bc-8b84-964b-6329ef338103"
+  computationUuid: "f7d71703-9b9a-8809-b904-406d345fa98c"
   stages:
     - stage: path
       stageUuid: "dd9dd905-54d7-8489-870a-14ce4ab70d63"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "31b78aec-1cc6-8018-8be7-5a39c462f9fc"
     - stage: horo
-      stageUuid: "b6a20b69-65b8-89eb-b9ea-053125121776"
+      stageUuid: "744b3b51-dd6d-8afe-8e3f-9231edbd87e0"
     - stage: seal
       stageUuid: "bf6a16c7-5e06-805c-a017-dc78e6a241ed"
     - stage: uuid
-      stageUuid: "cf1901a5-4656-8aec-b537-eda206cb396f"
+      stageUuid: "069c1563-7030-8a0b-a341-4d0c124d4ba4"
 version: 2
 ---
 # crematorium

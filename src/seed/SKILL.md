@@ -2,14 +2,14 @@
 name: seed
 description: "Use when seeding a tenant's opening chart-of-accounts + compliance posture from a (country × industry) template — INDUSTRY_TEMPLATES, the BG-NSS statutory chart, resolveTenantCompliance/getCuratedComplianceCountries. Derives every country fact from country-context; nothing is re-typed."
 atomPath: seed
-coordinate: "seed · 5/round · 653d2bec"
-contentUuid: "0aa7f603-a28c-5531-8f7d-5ad4dcd92bb7"
-diamondUuid: "92be63c3-bfcb-80c7-bf3b-2f7bbef2beed"
-uuid: "653d2bec-aa46-8046-b71e-859572e89178"
-horo: 5
+coordinate: "seed · 8/crest · dbfea805"
+contentUuid: "b33527d9-bc94-5983-bb70-5643bfc23f11"
+diamondUuid: "25d8fc2f-1b0c-8421-95d4-c1fff703d953"
+uuid: "dbfea805-a7a5-8374-b865-fb7c53b51f91"
+horo: 8
 typography:
   partition: seed
-  bondDegree: 82
+  bondDegree: 116
 standards:
   - "9110 http-semantics seed-endpoint"
   - "BCP-47 language-tag locale-bundled-fixtures"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "540cb6c7-d825-8936-bfde-df91bab53a2c"
+  computationUuid: "6968097f-8d6b-8aea-8a10-4ad9759679e6"
   stages:
     - stage: path
       stageUuid: "05e41cf0-e2fd-8003-93b3-15cc1f45e459"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "cf94fea8-60f0-8f42-8bd3-26c4eaadc2a9"
     - stage: horo
-      stageUuid: "831610f3-69b3-8c4f-9248-c967159a4ff2"
+      stageUuid: "15ba1e36-068f-8a69-b2a5-9dc84af896c0"
     - stage: seal
       stageUuid: "8951bdad-8502-86d6-97f2-3e0d7e26b647"
     - stage: uuid
-      stageUuid: "027b3a07-525a-80fa-aca0-adc362f230f3"
+      stageUuid: "7fc8d922-ce76-8310-b405-75a90610f65d"
 version: 2
 ---
 # seed — the (country × industry) opening-books template

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "parity",
-    "uuid": "13b21b92-0ae0-821b-82ff-8da4daf950c2",
+    "uuid": "065e079b-a341-8326-97fa-cbca561df7db",
     "words": [
       "parity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about parity — runs — **18 lanes**, the authority. Two other files claim to run the gate and each was written by hand:",
-    "uuid": "040d3f91-34f1-8642-a26b-1ce7df263561",
+    "uuid": "e7838b00-7c2b-8da8-bb61-9332a3fc8621",
     "words": [
       "use",
       "when",

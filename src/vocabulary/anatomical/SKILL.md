@@ -2,11 +2,11 @@
 name: anatomical
 description: "Use when reasoning about anatomical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/anatomical"
-coordinate: "vocabulary/anatomical · 4/weave · dd4be4b5"
-contentUuid: "5b86596e-87f1-5318-8137-426cfdf1bb90"
-diamondUuid: "9d6b87d9-3211-8650-a5f3-edd76958cbf2"
-uuid: "dd4be4b5-e04d-8e93-8db9-56835850856b"
-horo: 4
+coordinate: "vocabulary/anatomical · 1/base · f20e455e"
+contentUuid: "718f9de8-aa68-5202-8acb-ca08bfa616fa"
+diamondUuid: "37037ceb-bfff-8cad-abc3-3abcf8ab4980"
+uuid: "f20e455e-81d2-8711-b095-2734e39282a3"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "91bc5536-086a-8ac2-b3a6-75045142886a"
+  computationUuid: "6bb1f5f9-7cbe-832b-81c3-fb36ed426df7"
   stages:
     - stage: path
       stageUuid: "3913a65a-0c16-8203-bc08-05f1da5c1f2d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "81bc1e8f-7dfc-8956-9a81-a8423c95179e"
     - stage: horo
-      stageUuid: "cee32be2-0076-8d01-aa1c-43f02f26e289"
+      stageUuid: "b4f34d84-36ce-8405-b5a6-c4ad28df41c5"
     - stage: seal
       stageUuid: "fad99ff2-c784-87d9-9560-c96e4e04c9b4"
     - stage: uuid
-      stageUuid: "04cdc01d-1572-8cc6-8e0c-690faafc1db1"
+      stageUuid: "0321e514-0d8c-8e6f-8f9d-88b63767086d"
 version: 2
 ---
 # anatomical

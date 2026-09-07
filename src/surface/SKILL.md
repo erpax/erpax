@@ -2,11 +2,11 @@
 name: surface
 description: "Use when reasoning about surface — A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc."
 atomPath: surface
-coordinate: "surface · 2/share · 0e680a94"
-contentUuid: "9ddbb062-cd13-5a6f-a505-c267e67e1efe"
-diamondUuid: "6c361f91-2ce1-8fb7-aa5f-e2cdeb271ede"
-uuid: "0e680a94-e7c3-85cb-8a79-b5fcb727badd"
-horo: 2
+coordinate: "surface · 4/weave · 10340868"
+contentUuid: "00745bb2-5b3a-5bd4-88f7-ed3ad8b3a40b"
+diamondUuid: "57c27550-f406-80a3-b6e2-a52576f55113"
+uuid: "10340868-e568-846c-a450-253ce4a62024"
+horo: 4
 typography:
   partition: surface
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "37335fac-a313-8388-b3c8-b3f090e8cd01"
+  computationUuid: "a8e5c11c-355b-8be5-9a14-2afa1825b58c"
   stages:
     - stage: path
       stageUuid: "c1bbf2a4-a7c9-8723-bf38-307fad8eac3f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "618cdced-7bd2-8aeb-bde4-cb29fc6e8585"
     - stage: horo
-      stageUuid: "319fa31b-d380-8dbe-9b1c-912e6bdd8c2e"
+      stageUuid: "20d7838c-ebd1-8bcc-bd0d-ffb75ee74c97"
     - stage: seal
       stageUuid: "f304273a-d165-8cd2-b2bd-10cb7150f360"
     - stage: uuid
-      stageUuid: "3fc3f667-7898-83e5-b875-7789d04a4d18"
+      stageUuid: "d8c9eeab-78c4-8e56-af3f-4b60cb0b8a65"
 version: 2
 ---
 # surface

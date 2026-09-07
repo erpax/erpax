@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "misconceptions",
-    "uuid": "697d58b0-c2eb-8e57-ba85-08ac0e63078c",
+    "uuid": "47fba00c-0a70-857f-a995-f7857d5def03",
     "words": [
       "misconceptions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about misconceptions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "150aaa10-d40f-8a1c-92e2-dcf4cdcca2b0",
+    "uuid": "c94e83fa-9425-8926-8e3d-38220c1b8b2f",
     "words": [
       "use",
       "when",

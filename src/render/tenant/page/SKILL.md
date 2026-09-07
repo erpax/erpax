@@ -2,18 +2,18 @@
 name: page
 description: "Use when reasoning about page — A public tenant page is a hero followed by its layout blocks, inside an . That is the whole atom, and its value is that it exists **once**: the same composition served from the…"
 atomPath: "render/tenant/page"
-coordinate: "render/tenant/page · 1/base · 06815068"
-contentUuid: "6bca12db-625a-54b8-96b2-8da10e974710"
-diamondUuid: "5619c30a-33aa-8ffa-a973-b8b77a4b5abe"
-uuid: "06815068-c98b-890a-a20a-6756f22a16ff"
-horo: 1
+coordinate: "render/tenant/page · 5/round · ecbff5b9"
+contentUuid: "62ef19ca-ecac-5972-9006-6acddfd9e8b3"
+diamondUuid: "3faa4dea-a5d2-8182-8721-f04c82b443da"
+uuid: "ecbff5b9-e43f-87d1-b9b4-7d9aa8d1690f"
+horo: 5
 typography:
   partition: render
   bondDegree: 141
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1f5914f8-3a08-8d04-a76b-0ffdbd8975bb"
+  computationUuid: "e8221118-6752-8a5c-968d-304dfb1b45d2"
   stages:
     - stage: path
       stageUuid: "32c98eb3-94b3-87b2-9a35-5d9f93f29ff9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "16314bbc-fc9e-8e6c-8843-6ca028d68404"
     - stage: horo
-      stageUuid: "be31aa17-ead7-81ec-97d0-92e487744636"
+      stageUuid: "dc0cc24e-c9cb-8ed7-917e-04f4891fb058"
     - stage: seal
       stageUuid: "6fef39a2-e9c5-8195-b29c-157cb937f4c7"
     - stage: uuid
-      stageUuid: "ec6fe08a-efb9-8e6e-bb8f-af1831a48383"
+      stageUuid: "c511a4ae-1bf6-8178-9e9b-7d7d28b10292"
 version: 2
 ---
 # render/tenant/page — one composition, so a tenant page is the same page everywhere

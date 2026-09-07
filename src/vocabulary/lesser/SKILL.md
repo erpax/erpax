@@ -2,10 +2,10 @@
 name: lesser
 description: Use when reasoning about lesser — This ordering relation for qualitative values indicates that the subject is lesser than the object.
 atomPath: "vocabulary/lesser"
-coordinate: "vocabulary/lesser · 2/share · 6d0c67bd"
-contentUuid: "05d1815e-2bb9-51ba-bf28-ff39b4161574"
-diamondUuid: "50ba8271-00a2-8f3f-a7e3-b237fe2cad9d"
-uuid: "6d0c67bd-f904-8a29-835a-1c75331f3fbb"
+coordinate: "vocabulary/lesser · 2/share · ca24f9f6"
+contentUuid: "bf1c8504-2989-5802-9659-1e84061751f7"
+diamondUuid: "26fc3106-efcf-8cbd-9cd0-1b5e6ba2909e"
+uuid: "ca24f9f6-bc68-8b45-ae37-57b31daf4db0"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d762cb37-c3f7-8a97-9426-051da6dc3045"
+  computationUuid: "24957657-397d-8bce-b54f-f3c0ad523ad4"
   stages:
     - stage: path
       stageUuid: "5683028d-8906-81b4-b7cb-9c3f3ff2564c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fb480c5e-8419-89c4-8d7f-a8efcf8fb1cb"
     - stage: horo
-      stageUuid: "b04c2fc4-09b9-88da-9ac2-ef6e6fdc7f89"
+      stageUuid: "80e26158-965b-88dc-bc9a-92886977aeec"
     - stage: seal
       stageUuid: "578a5622-022e-8223-80a9-50838776d5f0"
     - stage: uuid
-      stageUuid: "2fe3afb6-cdab-898b-b919-e006ec4af9c6"
+      stageUuid: "13f97816-02a5-8891-9e74-9c2b32d56050"
 version: 2
 ---
 # lesser

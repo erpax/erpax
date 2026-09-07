@@ -2,11 +2,11 @@
 name: scale
 description: "Use when reasoning about scale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scale
-coordinate: "scale · 7/descent · 0b89efd1"
-contentUuid: "dcfbdc3e-8cc8-55db-aa04-5477d2650a60"
-diamondUuid: "e3d4b275-6faa-8a40-b45a-449a7189c694"
-uuid: "0b89efd1-61eb-8459-8e9d-67b5a2e4ceb2"
-horo: 7
+coordinate: "scale · 1/base · 6c4ad2bc"
+contentUuid: "6fc7d5c3-902e-5695-a2fd-4ecd3820444f"
+diamondUuid: "ed91c7a9-866f-80cf-b9ae-6f3aa4b16d5b"
+uuid: "6c4ad2bc-9366-8c5e-9020-126bf46ba9f0"
+horo: 1
 typography:
   partition: scale
   bondDegree: 34
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "26ad686d-3226-8a4e-901e-8af1c19b2f65"
+  computationUuid: "c6284ce5-067f-80d5-b361-19f6bbbcaba9"
   stages:
     - stage: path
       stageUuid: "5ab47e3b-26fc-8f91-95a0-9230eb92450c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6ae3b0ca-3649-8f65-9590-31890b0127ea"
     - stage: horo
-      stageUuid: "3d6eee23-8b39-8e2b-b429-265fd8b77995"
+      stageUuid: "df61daf1-6349-89d3-af2e-63a50094f33e"
     - stage: seal
       stageUuid: "30446be8-f468-80d8-a42f-fcaea324e997"
     - stage: uuid
-      stageUuid: "952c8ee7-d437-891f-b71d-9ac2cb44bf1c"
+      stageUuid: "d8380904-c503-8ca3-a0a2-523a9d55b8bc"
 version: 2
 ---
 # scale

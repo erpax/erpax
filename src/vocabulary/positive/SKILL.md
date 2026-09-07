@@ -2,11 +2,11 @@
 name: positive
 description: "Use when reasoning about positive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/positive"
-coordinate: "vocabulary/positive · 8/crest · eb43424e"
-contentUuid: "8e204400-a278-54bb-b10d-d71412efb21d"
-diamondUuid: "4327fbe4-4721-8820-903f-2ca6710c15e5"
-uuid: "eb43424e-7472-83ee-a0dd-ea69b87a742a"
-horo: 8
+coordinate: "vocabulary/positive · 1/base · 7dcad135"
+contentUuid: "3260a909-7ca8-5d12-9cab-9930120fc051"
+diamondUuid: "0eab0640-d259-8e32-85e1-eb76352cea04"
+uuid: "7dcad135-3134-8305-bd15-a1f7122666ea"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "965b4f73-a381-85c4-8dc9-69d0c8be9fb1"
+  computationUuid: "ebe9becf-ac12-8a9b-81b5-0957ad5af933"
   stages:
     - stage: path
       stageUuid: "de35e0bb-78a4-855a-be4e-29f9648dac61"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3a705463-5a41-86ce-aa1f-278a381532ba"
     - stage: horo
-      stageUuid: "6f4fb721-352c-8697-acb6-ad40dfef09f0"
+      stageUuid: "14fcdcc3-85ee-80e5-9c5f-5f73fade47e6"
     - stage: seal
       stageUuid: "f687284a-a3e5-8ee9-ba23-58e293d8e50d"
     - stage: uuid
-      stageUuid: "60684695-5611-87f2-aec4-fad20242511a"
+      stageUuid: "367fec02-e7e7-8ddb-8824-e66f1effe261"
 version: 2
 ---
 # positive

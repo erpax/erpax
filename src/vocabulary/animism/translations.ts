@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "animism",
-    "uuid": "8386f542-645b-817a-b281-bf8e57cc1182",
+    "uuid": "93022cea-960e-8a27-9f81-c5dbaba6453a",
     "words": [
       "animism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading animism as a diamond of invariant atoms — the primal reading that the world is alive, every thing carrying spirit (anima). Maps exactly to erpax: every atom is alive, carrying its content-uuid and projecting signal (colour and sound), the sacred dwelling in every part. Strip the prefix and anima collapses to breath; the spirits-in-things to the sacred in every atom.",
-    "uuid": "cfe216f2-fff1-886c-abd8-b3cf030139a5",
+    "uuid": "fe720ede-3f7f-8e54-b555-a659fc434619",
     "words": [
       "use",
       "when",

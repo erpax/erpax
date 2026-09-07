@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gaps",
-    "uuid": "19636957-4abf-899f-8684-7f4bf8a4ede4",
+    "uuid": "e8cb06bf-97ce-8164-acc7-14923a951e37",
     "words": [
       "gaps"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when scanning the corpus's own accounting for entropy gaps — waveAccountingGapViolations walks the README model in OOM-safe horo waves; fixGapsOnP0 applies P0 fixes. Corpus SELF-accounting dev tooling, nested off the mountable @erpax/accounting face.",
-    "uuid": "6fc8d54c-c254-875e-b5de-dd9fe7c25fc5",
+    "uuid": "ba3a23f1-82cd-8815-b1bc-e17088548ac4",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: forum
 description: "Use when reasoning about forum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/forum"
-coordinate: "vocabulary/forum · 4/weave · da6c20fe"
-contentUuid: "57287f05-fc70-5dca-8f24-77671dd07bf0"
-diamondUuid: "3f62f277-7b5f-8e64-88fc-b503ca0c113a"
-uuid: "da6c20fe-69d9-8d98-bc37-693543a880d5"
-horo: 4
+coordinate: "vocabulary/forum · 1/base · ac307a3e"
+contentUuid: "2644e62b-756c-5a19-bc6b-1139b918ef55"
+diamondUuid: "810d3566-ff1e-8b3a-bbd4-d8bdd4928c0c"
+uuid: "ac307a3e-f94b-818d-b924-d3e499c02c35"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d9c020fb-9150-88f4-af78-919e2595f234"
+  computationUuid: "808b00e8-ecf1-8746-b818-6c0983ffa8d9"
   stages:
     - stage: path
       stageUuid: "a266b21a-61b1-893d-aa6d-2d466683f786"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3ddb29cc-d525-8333-b6f3-3c3b2ee32338"
     - stage: horo
-      stageUuid: "ae796015-e452-80dd-b4f7-7c21d1e1dd64"
+      stageUuid: "968e9aa4-c817-8816-a085-c519aaea313c"
     - stage: seal
       stageUuid: "a9a88a28-a150-81c1-909d-09887d48b2bb"
     - stage: uuid
-      stageUuid: "691e74d2-be87-889c-9586-f8329b84ae9d"
+      stageUuid: "04aecf46-9064-8ea6-bbcb-6ad152e0493d"
 version: 2
 ---
 # forum

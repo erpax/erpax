@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "surprisal",
-    "uuid": "994585aa-dd4e-899b-ac6b-224ddba48b88",
+    "uuid": "ac4d50c2-8ad2-8d23-8620-acc4227a1178",
     "words": [
       "surprisal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the information of one event — surprisal I(p) = −log₂(p) bits. A certain event (p=1) carries zero bits; a rare event carries many. It is the bit-cost of a specific outcome, and in erpax the bit-cost of a specific forgery: forging a thing of probability p under the wired graph costs −log₂(p) bits. Additive for independent events (I(p·q)=I(p)+I(q)), so improbabilities stack like uuid-chained dimensions; expected surprisal is Shannon entropy.",
-    "uuid": "f9936ae0-7506-8e4d-a3cf-02effd9a363f",
+    "uuid": "4695b99e-de7d-8dad-b053-2ed742484844",
     "words": [
       "use",
       "when",

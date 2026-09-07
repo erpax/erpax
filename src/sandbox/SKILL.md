@@ -2,14 +2,14 @@
 name: sandbox
 description: "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on."
 atomPath: sandbox
-coordinate: "sandbox · 2/share · bf197f48"
-contentUuid: "7fc870e4-d9a9-5518-9df4-b316114a0b9a"
-diamondUuid: "ec1208c4-24e8-8940-b6e6-babac3362487"
-uuid: "bf197f48-22a4-8bef-936e-1644c9dbe758"
-horo: 2
+coordinate: "sandbox · 7/descent · 215bf823"
+contentUuid: "c2b17242-3e16-5030-b9bd-f0c270107536"
+diamondUuid: "6b2f24db-c746-8758-a573-a18bd2cf3f4f"
+uuid: "215bf823-b476-8808-a241-9b4591f00dd6"
+horo: 7
 typography:
   partition: sandbox
-  bondDegree: 64
+  bondDegree: 82
 standards:
   - "NIST SP-800-162 ABAC (capability-scoped authorization)"
   - "NIST SP-800-162 ABAC (capability-scoped authorization)`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b0140f29-8bed-8527-9fcc-eaacd5553065"
+  computationUuid: "e092a3c0-e4cb-8d78-bccf-37dca4c3655e"
   stages:
     - stage: path
       stageUuid: "5f4d1904-144d-859d-8226-20252d2ad276"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "8fc9587c-5cbb-878d-b513-aa9e1bd08608"
     - stage: horo
-      stageUuid: "4ec4d88e-9245-8c02-82c0-67d06c91ea60"
+      stageUuid: "2512f480-7122-8c11-afd8-3b6761fd80da"
     - stage: seal
       stageUuid: "496330d1-17cd-8f0d-9e13-29f5bd554ef9"
     - stage: uuid
-      stageUuid: "d1e88b40-d05a-8c3e-94f5-9e011e08b05a"
+      stageUuid: "ea05d090-5052-809c-9a5f-883bd2d1b50f"
 version: 2
 ---
 # sandbox — running untrusted tools, encoded natively (no external trust layer)

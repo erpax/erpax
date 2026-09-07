@@ -2,11 +2,11 @@
 name: hand
 description: "Use when reasoning about hand as an anatomical part of body — vocabulary pivot to @/hand; nested not duplicated."
 atomPath: "body/hand"
-coordinate: "body/hand · 4/weave · a879e87a"
-contentUuid: "fa1dc6fa-a037-5560-8870-0d5d40550e6a"
-diamondUuid: "14f696fa-f939-8e07-b85b-02f066e5440b"
-uuid: "a879e87a-72c2-85d4-beea-5fd0f523816c"
-horo: 4
+coordinate: "body/hand · 7/descent · 6b92ae47"
+contentUuid: "5a74d5c7-8258-581d-a949-a08d67ffbdb6"
+diamondUuid: "f91be21f-7ffd-83c7-801a-522ccbc09e73"
+uuid: "6b92ae47-a9de-8278-b50b-4aa991bd165a"
+horo: 7
 typography:
   partition: body
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a50d994a-bc76-8789-bbca-43e9533d33a0"
+  computationUuid: "abd8caab-3553-8da3-86bb-5a0debff8e80"
   stages:
     - stage: path
       stageUuid: "b8de6383-dcf0-8ea5-af8c-01060ab42c25"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "46d38c69-f2d8-849c-8916-17b32f6a3385"
     - stage: horo
-      stageUuid: "8ae46bf6-43f3-81dd-a261-885eb5c660d3"
+      stageUuid: "6d17c01a-6c0b-8fc5-b336-a4429d2a6552"
     - stage: seal
       stageUuid: "d0ff5639-e895-8b18-a0ab-831c2f7f0aa1"
     - stage: uuid
-      stageUuid: "7fe2b4dc-ef13-8da1-928e-aea91676e42d"
+      stageUuid: "9e463b7b-166b-8e78-beaa-35117fb047bb"
 version: 2
 ---
 # body/hand — anatomical part

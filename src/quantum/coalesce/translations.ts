@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coalesce",
-    "uuid": "aefd24fe-fdb8-8b25-97bb-257fe6ad91ce",
+    "uuid": "7c445a89-c674-87e1-b273-b05e27552c21",
     "words": [
       "coalesce"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when many API requests must be served without many API calls — content-addressed single-flight collapses identical concurrent work onto ONE upstream call and bounds how much runs at once. Emits MEASURED answers/tokens for amortize, which is what makes the FTL claim refutable. Run: tsx src/quantum/coalesce/index.ts",
-    "uuid": "e18f0db6-65f4-8b7b-a1ef-910e1d3e24f6",
+    "uuid": "bddb610d-bddd-8266-947d-43f4c803cc24",
     "words": [
       "use",
       "when",

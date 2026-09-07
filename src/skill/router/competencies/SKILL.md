@@ -2,11 +2,11 @@
 name: competencies
 description: "Use when reasoning about competencies — competencies — the actor-capability taxonomy COMPUTED from the skill corpus."
 atomPath: "skill/router/competencies"
-coordinate: "skill/router/competencies · 7/descent · 208b4427"
-contentUuid: "89b5281b-3e3b-5d8f-a544-d6b197818382"
-diamondUuid: "8a5b3caf-4e71-83eb-82ac-889fdd29e62c"
-uuid: "208b4427-d8d8-8ac1-8f4d-d5503810d240"
-horo: 7
+coordinate: "skill/router/competencies · 5/round · c65e7be3"
+contentUuid: "fae44f03-248d-5e35-b360-4d4e660ec3e5"
+diamondUuid: "e7afe141-f4ef-834e-bcf8-428fffd29f3b"
+uuid: "c65e7be3-8aed-8138-889b-491e03271766"
+horo: 5
 typography:
   partition: skill
   bondDegree: 44
@@ -17,7 +17,7 @@ standards:
   - "SFIA 8 responsibility-levels 1..7 (held vs required; gap = required − held)"
 bindings: []
 signatures:
-  computationUuid: "14fe5a91-e5b0-8b05-9a09-5047f2b8c0ad"
+  computationUuid: "f6dac5af-891c-8364-9f81-9f0339d423f8"
   stages:
     - stage: path
       stageUuid: "fb4d7687-4d5c-8cc9-ac21-e7bc67248325"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "0a740cea-813c-80d9-a8b9-8582f75e133f"
     - stage: horo
-      stageUuid: "96a0675a-5087-8002-b4ef-957351b686fd"
+      stageUuid: "7636d8c1-8700-8474-9c85-eb7ceb1de3ae"
     - stage: seal
       stageUuid: "6ed53dbc-42e3-80ee-8b86-7e348e4bfed8"
     - stage: uuid
-      stageUuid: "31ef713c-0102-84f9-a3c2-0c14b0b55d61"
+      stageUuid: "9d7db050-3d1a-8c4a-a354-8a1b621a190d"
 version: 2
 ---
 # skill/router/competencies

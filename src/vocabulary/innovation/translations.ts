@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "innovation",
-    "uuid": "f6cbd54d-23c8-8f9e-a603-9e463cb7f584",
+    "uuid": "37029385-1b86-81bf-9678-7da6aee0d308",
     "words": [
       "innovation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about innovation — **Innovation is driven by tested and proven ideas.** A new wire (Cloudflare AI bindings, path surfaces, seal gates) must:",
-    "uuid": "9bcb9ab7-3da7-80d7-a214-4260c02cb524",
+    "uuid": "e40164ad-d3e4-8cc4-bf0f-19a18235409b",
     "words": [
       "use",
       "when",

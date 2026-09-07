@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "country",
-    "uuid": "3f91b1f3-6b4a-8097-90ec-dfa5c573f785",
+    "uuid": "0a2b8598-63c7-80e6-bf1b-277ac402e305",
     "words": [
       "country"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about country — The control is the ordinary Radix combobox (blocks/form/select): a whose only accessible name is the bound to its .",
-    "uuid": "b5e76f21-0727-86da-8059-93fd356c29c6",
+    "uuid": "7385f248-12b7-8477-a481-537f901d61f4",
     "words": [
       "use",
       "when",

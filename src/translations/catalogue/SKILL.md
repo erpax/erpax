@@ -2,18 +2,18 @@
 name: catalogue
 description: "Use when reading the one canonical content-addressed index of every atom's ported SKILL.md — the mass the collector emits and the coverage guard verifies."
 atomPath: "translations/catalogue"
-coordinate: "translations/catalogue · 1/base · 88c5d4b4"
-contentUuid: "689de42e-d9f3-51a9-bd7d-370dd409d1c3"
-diamondUuid: "807cd2f4-cd79-8b85-aa6d-d63ce9c9acf1"
-uuid: "88c5d4b4-9e7a-848c-9b7a-9454b0054168"
-horo: 1
+coordinate: "translations/catalogue · 8/crest · 46806b4f"
+contentUuid: "01045995-7b57-5a6d-9d0b-cb5d3589ce9f"
+diamondUuid: "9a0e741b-3020-8994-b19a-8b95265dfc1b"
+uuid: "46806b4f-739d-83a8-8a59-2dd208f392ef"
+horo: 8
 typography:
   partition: translations
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "11842290-0679-8016-8aa8-2680799cda3b"
+  computationUuid: "57a6dd6f-6d22-81e3-a8ca-6cd96dd1deb5"
   stages:
     - stage: path
       stageUuid: "df0fd65f-e280-88d6-8572-097bffb5242b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f0abd3d5-8b37-8770-9c25-0912dccbce90"
     - stage: horo
-      stageUuid: "8c7b563b-6857-840e-842b-a94b7ff0a9dc"
+      stageUuid: "d12af634-f611-80cc-81cd-4a7a4830ffd7"
     - stage: seal
       stageUuid: "4b3d3f05-e5a0-8950-8f5d-728d9cd46bfc"
     - stage: uuid
-      stageUuid: "7cdea2f8-c8c0-808b-826f-701d003c9453"
+      stageUuid: "1dd4a8f1-a527-8576-82af-13ef7edae826"
 version: 2
 ---
 # catalogue

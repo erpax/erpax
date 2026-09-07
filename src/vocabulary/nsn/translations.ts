@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nsn",
-    "uuid": "4b99a9bd-408e-8402-9e82-4fa6289edd95",
+    "uuid": "b2e86417-c082-8cc5-aa14-488e31cab3f0",
     "words": [
       "nsn"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about nsn — Indicates the NATO stock number (nsn) of a Product.",
-    "uuid": "bd5961ff-f226-89d2-978a-511090f0533f",
+    "uuid": "a291997e-f844-8994-a32b-e8397114b5d8",
     "words": [
       "use",
       "when",

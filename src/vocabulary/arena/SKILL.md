@@ -2,11 +2,11 @@
 name: arena
 description: "Use when reasoning about arena as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/arena"
-coordinate: "vocabulary/arena · 5/round · a9bf7738"
-contentUuid: "9b2c88b7-fdde-59f2-bef0-7ba2d43bb895"
-diamondUuid: "7f705425-6142-8863-be55-6c83ed36ccd6"
-uuid: "a9bf7738-f99e-8996-af74-ae7c810065f9"
-horo: 5
+coordinate: "vocabulary/arena · 8/crest · fa5c3080"
+contentUuid: "46136b54-355d-5332-939f-789ffc4f7598"
+diamondUuid: "9b18cd54-b75b-80db-9621-95a4d07a1a7e"
+uuid: "fa5c3080-5efe-8dd8-96a7-d3d3d8314d9f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bc080c38-9e94-86de-93a1-f81cce83f244"
+  computationUuid: "f241d500-3190-81ab-b8c8-d7bb41964ec2"
   stages:
     - stage: path
       stageUuid: "3f7ca00a-6fd6-81cb-bffd-79c51f23222e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6699a17d-cbc3-854c-a0b0-b73d3cf0ec75"
     - stage: horo
-      stageUuid: "f506e3ff-940b-866e-8399-2fa5c2e84b3b"
+      stageUuid: "f7ecbf38-935c-85b2-a3b9-0e1dad6d6f81"
     - stage: seal
       stageUuid: "c96fa8e9-8512-841a-917c-d9f28697dcc1"
     - stage: uuid
-      stageUuid: "79763d16-7590-8d8c-829c-c330e86a0af5"
+      stageUuid: "3c117ae8-7619-8a8c-a570-2755e07e8259"
 version: 2
 ---
 # arena

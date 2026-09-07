@@ -32,7 +32,22 @@ const walk = (dir) => {
   }
   return out
 }
-const stripCode = (t) => t.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
+/**
+ * Drop the frontmatter BEFORE stripping code.
+ *
+ * Two defects, one cause. `stripCode`'s inline-code rule pairs backticks left to right, so a
+ * SINGLE unpaired backtick in the derived frontmatter pairs with the FIRST backtick in the body
+ * and deletes everything between — links included. `pivot` and `shift` came out of the collider
+ * with ZERO edges each (out:0 in:0) while their bodies plainly carry nine [[links]] between them;
+ * `shift` opens line 40 with `(actor, day)`, which is where its span was swallowed.
+ *
+ * And the frontmatter should never have been a link source anyway: `bondDegree` is written INTO
+ * the frontmatter and computed FROM this graph, so counting links inside it closes a loop between
+ * the artefact and its own input.
+ */
+const stripFrontmatter = (t) => t.replace(/^---\n[\s\S]*?\n---\n?/, '')
+const stripCode = (t) =>
+  stripFrontmatter(t).replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
 const LINK_RE = /\[\[([A-Za-z][A-Za-z0-9/-]*)(?:\|[^\]]*)?\]\]/g
 
 // ── uuid + horo math ──

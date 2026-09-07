@@ -2,11 +2,11 @@
 name: definitive
 description: "Use when reasoning about definitive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/definitive"
-coordinate: "vocabulary/definitive · 1/base · 637c12e3"
-contentUuid: "4ea2ae68-d0c6-55ea-9a25-472c1a50f02b"
-diamondUuid: "b215d041-d1d3-8846-8854-6200da8e3d34"
-uuid: "637c12e3-4c3f-8e04-bd46-a4a833c29fa0"
-horo: 1
+coordinate: "vocabulary/definitive · 2/share · 8ab4ed6d"
+contentUuid: "80200451-59f9-538e-bdc7-e9d1ede39368"
+diamondUuid: "12a22bc0-65f9-83db-a4f4-bbeeaed15c1e"
+uuid: "8ab4ed6d-7a9f-8bbd-a555-71c8826f4e54"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4fe5a255-e94b-8614-8e89-b5600fe21ec2"
+  computationUuid: "f48142fc-2c1c-8b4d-9661-2eb796621a90"
   stages:
     - stage: path
       stageUuid: "c2f452c7-5b57-8e78-9fd8-1055799f23b2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "da8662ef-7f0e-8b1d-bf45-916fb4d7a41b"
     - stage: horo
-      stageUuid: "fed4038f-e953-8a50-a797-57bc0f09236b"
+      stageUuid: "ff5d2955-befd-8342-b02f-e09b3d1f9fb1"
     - stage: seal
       stageUuid: "1261c42a-e545-836e-ab09-0f61980a22a8"
     - stage: uuid
-      stageUuid: "3bb35a64-d95a-816d-ad8e-fe3f9166f3ad"
+      stageUuid: "25ab65f7-828e-8d20-ba1c-7ae16dc51eb3"
 version: 2
 ---
 # definitive

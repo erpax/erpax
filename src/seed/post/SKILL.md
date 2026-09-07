@@ -2,10 +2,10 @@
 name: post
 description: "Use when reasoning about post — Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples."
 atomPath: "seed/post"
-coordinate: "seed/post · 5/round · 75761a8c"
-contentUuid: "936bfed5-3141-5e31-a312-e6623e905ea6"
-diamondUuid: "945aafab-d08b-85e4-9069-d5a76733d2a7"
-uuid: "75761a8c-a0f5-8cba-b048-73a691a161ad"
+coordinate: "seed/post · 5/round · 36313c7e"
+contentUuid: "c52be0a6-8a01-5a41-af83-f6ed2c2ddce4"
+diamondUuid: "5e48ca1c-2d33-88b0-ac74-04990eda9474"
+uuid: "36313c7e-9c16-8663-8a41-bcbac3ebb43e"
 horo: 5
 typography:
   partition: seed
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ecd42e38-27f3-8170-9609-46402fe2948c"
+  computationUuid: "b1057d57-c6e9-826a-8232-db53bc4baebc"
   stages:
     - stage: path
       stageUuid: "51d54f25-8f10-832d-866c-5497063ce77f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fdfecc58-0226-804a-8d45-5fa4879f897e"
     - stage: horo
-      stageUuid: "da6f7ebe-76ce-8ce0-82e8-3d9da393c762"
+      stageUuid: "70cf44c7-1f67-8f8c-83dd-b0af8a5a821d"
     - stage: seal
       stageUuid: "06bb8293-72d4-81c8-80b6-487dce2c1ea2"
     - stage: uuid
-      stageUuid: "99b230df-38d9-8d9d-bb9f-30e0861d3ccf"
+      stageUuid: "37c4c369-9f9d-8081-adc9-0889af0d6647"
 version: 2
 ---
 # post

@@ -2,14 +2,14 @@
 name: receipt
 description: "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof."
 atomPath: receipt
-coordinate: "receipt · 4/weave · 0e2e8286"
-contentUuid: "d85a4856-9570-549f-aefe-00b0d4891aab"
-diamondUuid: "db0a2297-deff-808c-94db-42d16b9fe0de"
-uuid: "0e2e8286-74b3-8302-a72d-9340f6b99d87"
-horo: 4
+coordinate: "receipt · 1/base · a6e6af03"
+contentUuid: "720bf01c-b82a-5bec-8369-0c510e944359"
+diamondUuid: "5535f4bf-b2f7-813c-8f40-7c6579d14763"
+uuid: "a6e6af03-1f17-8d73-a93e-93682b2e1f7a"
+horo: 1
 typography:
   partition: receipt
-  bondDegree: 116
+  bondDegree: 118
 standards:
   - "NIST FIPS 180-4 SHA-256 (the chain + content hash)"
   - "NIST FIPS 180-4 SHA-256 (the chain + content hash)`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "deee0dd5-1f43-8735-a17c-39aba787e860"
+  computationUuid: "d9594ece-5a9c-8413-bcf4-57c7344f1e03"
   stages:
     - stage: path
       stageUuid: "cc04b1dd-4046-8298-8ca3-851b589e3a1e"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "55a3e16a-f012-8c23-a8ce-1ed45e07edb3"
     - stage: horo
-      stageUuid: "3cae0c9f-705c-8e9f-93d9-1db2ee3dca30"
+      stageUuid: "98ab6027-9706-802e-8fea-4c2bd7dba263"
     - stage: seal
       stageUuid: "e574e02d-5a5b-820d-9947-9a350d7b26bb"
     - stage: uuid
-      stageUuid: "453062d2-60c9-80cf-8f0c-ed14ffafdcb8"
+      stageUuid: "8f50485b-82c5-8a44-80a5-dc6dde69b838"
 version: 2
 ---
 # receipt — the governance receipt IS a uuid (wire all through uuid)

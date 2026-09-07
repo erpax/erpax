@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "codes",
-    "uuid": "c64cb618-d6ab-8a2f-aba1-7622969df441",
+    "uuid": "627079bd-d9f0-8c86-96a3-ce0f10e3c46f",
     "words": [
       "codes"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or resolving tax rates — VAT, GST, sales, withholding, income, excise or customs codes with rate percent, UN/CEFACT-5305 category, jurisdiction link, reverse-charge eligibility, recoverability, effective date range and default GL accounts. The per-tenant tax-rate master collection.",
-    "uuid": "f86569ca-661d-83a3-9c48-c54b225011d4",
+    "uuid": "231e4a98-00c4-8997-ae97-8a080b9dd915",
     "words": [
       "use",
       "when",

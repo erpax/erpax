@@ -2,10 +2,10 @@
 name: coding
 description: "Use when reasoning about coding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/coding"
-coordinate: "vocabulary/coding · 2/share · e2c4f0c3"
-contentUuid: "8c11c983-e8c6-5fa0-9077-2cdf9c99f951"
-diamondUuid: "4902c3da-95dc-8905-a134-4589d659d26e"
-uuid: "e2c4f0c3-93dc-8fe9-b7e9-9f9e0f0da420"
+coordinate: "vocabulary/coding · 2/share · 235ae78e"
+contentUuid: "e0b93796-99b4-5896-a708-770eb4c5e616"
+diamondUuid: "5accf6f0-e22c-80ed-b9fa-2671d440ef82"
+uuid: "235ae78e-4fdc-8f9a-9a52-fc3c281fc955"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "22a2c521-9a4b-8cc1-a50c-c7e9b1b4d417"
+  computationUuid: "68def52e-b15d-8453-898b-d022c43c07cf"
   stages:
     - stage: path
       stageUuid: "862b72ed-b8f4-84e7-ae55-63850882aaee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a65575ac-51fd-83b2-976d-2adf98db028d"
     - stage: horo
-      stageUuid: "043c86ba-6dc6-8bdb-af57-251d245b30d7"
+      stageUuid: "0cf9432a-4503-8ce4-a3c9-608c4b90bfc6"
     - stage: seal
       stageUuid: "1dbd6d32-382a-8333-8045-efb3f5ecce58"
     - stage: uuid
-      stageUuid: "7e9888c2-0a90-8c12-b1dd-f183e7e8a149"
+      stageUuid: "a23b3f0c-63bd-819a-8902-0de9929797f8"
 version: 2
 ---
 # coding

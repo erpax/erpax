@@ -2,11 +2,11 @@
 name: dateline
 description: Use when reasoning about dateline — A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placen
 atomPath: "vocabulary/dateline"
-coordinate: "vocabulary/dateline · 5/round · 28bbd75b"
-contentUuid: "ddd28fd8-b97a-55d8-937f-194526e65886"
-diamondUuid: "a8941a76-79dc-8cd8-a5f6-8d1a29e99877"
-uuid: "28bbd75b-7c0a-8054-8f97-9d6cb1f2e8e2"
-horo: 5
+coordinate: "vocabulary/dateline · 4/weave · fbe4fadd"
+contentUuid: "a4934ff9-7335-5c6b-b23a-232ca493d166"
+diamondUuid: "2e3a4e27-8778-8433-b170-7845011cadbb"
+uuid: "fbe4fadd-b2f2-8675-9b45-43af5c22d146"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "82a544a5-8199-8efc-81c8-c69ffaeb4baa"
+  computationUuid: "e5c78981-c876-89c0-885d-2f7eb053a196"
   stages:
     - stage: path
       stageUuid: "4091aa47-1690-8f5a-9395-f832abf7eb31"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5c4ae848-1154-8ad6-bc03-ef52f133354f"
     - stage: horo
-      stageUuid: "14d4abb2-6636-8027-8290-67801c39b59b"
+      stageUuid: "e8c07ab7-e421-8beb-b86c-3903827e0598"
     - stage: seal
       stageUuid: "5664863a-eaa7-874d-abdb-000c66ac52dc"
     - stage: uuid
-      stageUuid: "7309316e-2691-8171-aa14-43081c06e60a"
+      stageUuid: "90372031-c220-8f9f-913b-ff81e7335b03"
 version: 2
 ---
 # dateline

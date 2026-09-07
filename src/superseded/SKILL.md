@@ -2,11 +2,11 @@
 name: superseded
 description: "Use when reasoning about superseded — Relates a term (i.e. a property, class or enumeration) to one that supersedes it."
 atomPath: superseded
-coordinate: "superseded · 5/round · 414647f2"
-contentUuid: "2c11cd06-e051-5524-9677-e5c76675583b"
-diamondUuid: "b57e6afb-ee50-8214-bf2d-e1fa1a964964"
-uuid: "414647f2-eccc-8abf-ade9-fcd96a67b63c"
-horo: 5
+coordinate: "superseded · 1/base · 5e41fcbb"
+contentUuid: "8ee5f389-8b18-5b48-ba6d-2683c578c031"
+diamondUuid: "6b6383a7-924c-8ac2-933f-289876bc3cee"
+uuid: "5e41fcbb-cab3-8806-9393-a582946145dc"
+horo: 1
 typography:
   partition: superseded
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8375e161-94ac-8933-932c-792e2e361d72"
+  computationUuid: "ae25665e-2c4f-8364-9665-ae2e15b7d6b3"
   stages:
     - stage: path
       stageUuid: "a1961915-30a3-8113-8871-4f06d6bf97b5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eefb28cf-1bba-80b0-9fab-1c07195dfd92"
     - stage: horo
-      stageUuid: "a2d9d0ef-b3c6-84d9-9ad3-01e85d2ad5a3"
+      stageUuid: "0fadf4bb-afe3-8255-83fc-8787f15577cd"
     - stage: seal
       stageUuid: "29bd5801-2a22-84bc-b02b-8ba93f6e5a1b"
     - stage: uuid
-      stageUuid: "a4d65278-27b3-8d69-b7cf-ded742b48a3e"
+      stageUuid: "3abb3e95-0cb2-8209-8328-40ca5868b744"
 version: 2
 ---
 # superseded

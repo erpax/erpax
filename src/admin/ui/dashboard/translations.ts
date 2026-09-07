@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dashboard",
-    "uuid": "13944dc5-1760-8535-a3a1-4cd84e59cd8f",
+    "uuid": "f33da588-61d1-8b90-93a1-2475632fe1b4",
     "words": [
       "dashboard"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dashboard — Two panels: the quantum view and the entropy rollup. Both read computed figures rather than stored ones, so the dashboard cannot disagree with the gate — it is the same…",
-    "uuid": "c29f9704-ccf8-8ef5-9a59-ef3b99bc8d37",
+    "uuid": "7074be75-1f6b-8caf-b796-789a4ee76a20",
     "words": [
       "use",
       "when",

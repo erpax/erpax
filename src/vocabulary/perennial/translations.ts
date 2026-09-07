@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "perennial",
-    "uuid": "d38177ae-bdd3-8e06-b5ed-6076117dec2f",
+    "uuid": "dcf072d4-78ca-89f6-8a5e-8f8752c71b49",
     "words": [
       "perennial"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a crop lives and bears across many years — the multi-year woody crop (orchard, vineyard, cane): established once, ramping over years, bearing for decades, then renewed. Its productive plant is a depreciating fixed asset (IAS-16 bearer plant); only its growing produce is IAS-41. The antonym of the annual crop — renewal replaces rotation, yield ramps rather than resets.",
-    "uuid": "675bc68d-b940-82e4-abae-77b3a2056b9d",
+    "uuid": "2bb2e055-67e7-89e9-bd2f-2231fbac2b43",
     "words": [
       "use",
       "when",

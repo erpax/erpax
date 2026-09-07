@@ -2,11 +2,11 @@
 name: syntax
 description: "Use when a gate needs a grammatical fact about source — which comments a file has, which names it binds. Wraps ts.createSourceFile so the answer is the compiler's, not a pattern's: a // inside a string is not a comment, and no regex can tell. The gates derive from here rather than each guessing."
 atomPath: syntax
-coordinate: "syntax · 2/share · d7664dd8"
-contentUuid: "25b53598-7676-5668-9944-3cf30a7f285f"
-diamondUuid: "9c0c8af5-3460-82c2-8b3e-059278e8bb54"
-uuid: "d7664dd8-1e42-8423-8df4-bf60a1b72f57"
-horo: 2
+coordinate: "syntax · 4/weave · 837f799d"
+contentUuid: "a9a4d07c-04da-5cbd-bbdc-4ef9684fce5c"
+diamondUuid: "4b2247b0-268c-8f91-98dc-d1623416d438"
+uuid: "837f799d-64f3-8ef0-86b7-87ccee0fb236"
+horo: 4
 typography:
   partition: syntax
   bondDegree: 83
@@ -15,7 +15,7 @@ standards:
   - "ECMA-262 · TypeScript grammar (via ts.createSourceFile — the compiler's own scanner)"
 bindings: []
 signatures:
-  computationUuid: "172e2672-52ba-83f3-8af5-0e4aaff1dbea"
+  computationUuid: "eb64fbc2-172d-8c37-8bc4-566573c44828"
   stages:
     - stage: path
       stageUuid: "4b4d0139-9d23-8983-a3ea-2d9d370fd2c2"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "3b32e7bd-af1d-89c0-a93b-0d907c6afce7"
     - stage: horo
-      stageUuid: "6d284cf4-7565-8bed-985c-d58a2e9c5c01"
+      stageUuid: "a46d3530-c711-88cf-a4bf-4969502060f8"
     - stage: seal
       stageUuid: "d5396447-1bf8-8f79-be83-ddaa72e7739e"
     - stage: uuid
-      stageUuid: "5114710f-36d6-8549-860d-21f62413e178"
+      stageUuid: "eda404bc-f0cc-8f2d-8fdb-2a036d7ba344"
 version: 2
 ---
 # syntax — you cannot trust something that is not a theorem

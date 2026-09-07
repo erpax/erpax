@@ -2,11 +2,11 @@
 name: esr
 description: "Use when implementing or referencing EU CSRD / ESRS."
 atomPath: "eu/csrd/esr"
-coordinate: "eu/csrd/esr · 8/crest · 07867860"
-contentUuid: "d04d07ab-017c-5736-93c3-b6d0d3da7d7d"
-diamondUuid: "a2c7727e-b3bd-8327-ac40-0c0ea943a7b6"
-uuid: "07867860-235e-825c-b54c-e057e339a0a1"
-horo: 8
+coordinate: "eu/csrd/esr · 1/base · 0723d77b"
+contentUuid: "4763743a-a9b4-5ea8-8855-6fa7f1b37ba6"
+diamondUuid: "f492f56c-2ab8-8fc0-99fb-86c57642b5d5"
+uuid: "0723d77b-a79e-8d07-9ff1-4f7744e957cf"
+horo: 1
 typography:
   partition: eu
   bondDegree: 3
@@ -29,7 +29,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "177c59d3-9eb8-85f0-8b74-b0b33e81c2fc"
+  computationUuid: "62394c6c-eea4-80ac-91f2-6a5f410db7ad"
   stages:
     - stage: path
       stageUuid: "e6056358-8cad-8193-8493-c825482cccd1"
@@ -40,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "4267e412-ff7f-8754-9245-dd613a80f621"
     - stage: horo
-      stageUuid: "3e2db346-dfd4-8352-bfd9-5f58ecc50f7d"
+      stageUuid: "51abb69b-7153-8d75-9004-ca4ae394ddad"
     - stage: seal
       stageUuid: "210aa53f-c755-8108-87c5-bc1bec2afc4c"
     - stage: uuid
-      stageUuid: "3571af50-bfa5-8210-a4e3-78ed564de9d5"
+      stageUuid: "13c6a6e2-4223-8a5e-8563-fbd93869c118"
 version: 2
 ---
 # EU CSRD / ESRS

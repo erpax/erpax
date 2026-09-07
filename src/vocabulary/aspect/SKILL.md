@@ -2,11 +2,11 @@
 name: aspect
 description: "Use when reasoning about aspect — An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc."
 atomPath: "vocabulary/aspect"
-coordinate: "vocabulary/aspect · 5/round · 8e55275c"
-contentUuid: "55114d53-603b-5b0f-bdf7-2329439f9bc1"
-diamondUuid: "92b07f94-d798-85c9-a77a-a4dfbcd147fa"
-uuid: "8e55275c-67b1-8b55-b037-387cf9f16e94"
-horo: 5
+coordinate: "vocabulary/aspect · 1/base · 035d8570"
+contentUuid: "dbfc7af2-09e7-5f5c-b033-60a84b72d601"
+diamondUuid: "1a31d16b-741b-817a-b167-f17278f0bc40"
+uuid: "035d8570-eb5c-8a51-b94c-303d65ba5791"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "68744c24-ae90-80d1-a712-bbeb5bd7e1f2"
+  computationUuid: "ec1ba599-d875-8cb8-8a88-1502e81ffab4"
   stages:
     - stage: path
       stageUuid: "8b96dafc-817c-8d55-8446-41391b60ab9d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "880c69c4-e110-87c8-9320-c50650055f80"
     - stage: horo
-      stageUuid: "4d657012-34cc-863a-a32d-7f41ca4c7edf"
+      stageUuid: "5a8bf449-f338-85d9-a0a3-64604c933f6f"
     - stage: seal
       stageUuid: "064592da-884c-8368-aba1-97428d2ac471"
     - stage: uuid
-      stageUuid: "13b4f927-5434-8147-8c34-ad1b2885479d"
+      stageUuid: "977d77a1-987b-8771-b7cf-0b610f8a7f94"
 version: 2
 ---
 # aspect

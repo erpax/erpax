@@ -2,18 +2,18 @@
 name: decoherence
 description: "Use when reasoning about decoherence — how a quantum superposition becomes classical. Coupled to an environment, off-diagonal coherences decay as e^(−t/τ): a pure superposition becomes a classical mixture, the von Neumann entropy rising 0 → ln2 (irreversible). It is measurement without a measurer — the environment is the measurer, the record it leaves is the proof/receipt. Fast: τ shrinks with coupled dimensions, which is why the wired corpus is classical and definite, never observed in superposition."
 atomPath: decoherence
-coordinate: "decoherence · 2/share · 383286c4"
-contentUuid: "829fa9e5-303c-5715-b2a3-28cce0c16676"
-diamondUuid: "ae6cba8f-79d3-8b85-becc-47df1c3e83ad"
-uuid: "383286c4-8635-8a1c-9db6-f398c415e02f"
-horo: 2
+coordinate: "decoherence · 5/round · bb192a15"
+contentUuid: "6acfd166-03f9-50fc-b3a4-0690dc5c8b71"
+diamondUuid: "0e9e5b07-ec69-868f-b58d-58d5debaa07c"
+uuid: "bb192a15-9ebf-81e3-9c44-7d25007c03f6"
+horo: 5
 typography:
   partition: decoherence
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "27ac623c-b69a-8576-981e-12b447d20ab6"
+  computationUuid: "015581f6-0601-83e8-b8a7-5f0326b6dbb2"
   stages:
     - stage: path
       stageUuid: "a5b95133-8d15-8b29-b1d3-9b0e2c612c98"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ffaa5a9b-57b8-8ec4-ab43-2106c3d61280"
     - stage: horo
-      stageUuid: "4ab1d786-cd5a-841b-abe3-3e8270625ff1"
+      stageUuid: "d6e27b95-1228-848f-9762-6d77c36c9d73"
     - stage: seal
       stageUuid: "9ea311e7-62fa-8abb-a2ac-c07b6bb90011"
     - stage: uuid
-      stageUuid: "4604ec2a-5ff4-8984-9c5a-a26a38710f57"
+      stageUuid: "5d64ee5c-d04c-8681-9023-f392c1769a69"
 version: 2
 ---
 # decoherence — why the wired corpus is classical

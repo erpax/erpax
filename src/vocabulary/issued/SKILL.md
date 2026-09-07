@@ -2,11 +2,11 @@
 name: issued
 description: "Use when reasoning about issued — The organization issuing the item, for example a Permit, Ticket, or Certification."
 atomPath: "vocabulary/issued"
-coordinate: "vocabulary/issued · 5/round · 3742e349"
-contentUuid: "cb061e38-042e-5ed9-b7c7-7223bad53179"
-diamondUuid: "10cb5ba3-a64e-848b-9bc4-ed8af2e6c792"
-uuid: "3742e349-abd5-8fac-8c8a-0a6dbdb3248e"
-horo: 5
+coordinate: "vocabulary/issued · 1/base · fe08e9ab"
+contentUuid: "b604eac3-244d-5744-99b6-474af1ea7493"
+diamondUuid: "90d4e3b1-f07f-8fb6-9c4c-e3e167839075"
+uuid: "fe08e9ab-3696-8c06-afc2-3867f7aee865"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "33f34094-107e-820b-ad3b-de634c6f8ec9"
+  computationUuid: "4f51b820-4ef1-8c1b-80d3-1db45168f320"
   stages:
     - stage: path
       stageUuid: "16cda204-3f94-8ccd-9649-5c0a20c841c1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "526661b1-0461-84c6-bf31-75b222afc08f"
     - stage: horo
-      stageUuid: "92a846db-2c37-8816-9c54-1c5e4c6225b3"
+      stageUuid: "4563c306-fd29-8712-bc72-925992199aaa"
     - stage: seal
       stageUuid: "d5505976-19e8-8873-af02-b50f6cc71624"
     - stage: uuid
-      stageUuid: "f9577fa8-ee9a-8d5e-ab6e-2a86f10a99d5"
+      stageUuid: "c96b9b11-b6b3-8f89-9b2e-224522f0a334"
 version: 2
 ---
 # issued

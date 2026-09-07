@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trust",
-    "uuid": "9ca84e5f-9c0e-8b1b-8429-762b2eac7d98",
+    "uuid": "f60ea615-c397-83a7-9c79-da2006ac6862",
     "words": [
       "trust"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about trust — A **trust** (IOLTA) account holds client money the firm may not touch except to bill against fees already earned. Strip the prefix and it is a segregated sub-account on the one acc",
-    "uuid": "affe9b5e-bcf8-8496-bc15-96504779a3c9",
+    "uuid": "4e3b3925-a1e8-844a-9544-e7bb8bc1ae74",
     "words": [
       "use",
       "when",

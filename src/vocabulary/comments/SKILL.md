@@ -2,11 +2,11 @@
 name: comments
 description: "Use when reasoning about comments as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/comments"
-coordinate: "vocabulary/comments · 7/descent · 6a03f90c"
-contentUuid: "b6f81b2c-be63-507d-95f1-e3b181b9f384"
-diamondUuid: "5faadea6-4b70-8a25-ab61-d666424b4862"
-uuid: "6a03f90c-9774-897b-9552-bc917826706d"
-horo: 7
+coordinate: "vocabulary/comments · 8/crest · 8f20e664"
+contentUuid: "e574ba20-3d61-52f8-b38c-82537fea9433"
+diamondUuid: "a4049ada-9b81-83ba-902b-c660c682af43"
+uuid: "8f20e664-d11b-8812-b329-6b30e0b8fb90"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "075d0607-b82d-837b-81eb-b4c4e664b5e6"
+  computationUuid: "8dda71e6-1ad3-8384-b583-3019b1fd650a"
   stages:
     - stage: path
       stageUuid: "ede76326-cd2a-8a1a-a1c1-cde888ec5241"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "16398b3b-8e4d-8d95-8e4a-8937310dd510"
     - stage: horo
-      stageUuid: "e9d30438-450c-82a9-938d-d392b231bfcb"
+      stageUuid: "10929773-d9c7-86c1-bee5-891ece9a6630"
     - stage: seal
       stageUuid: "73b4537f-e248-843e-9ed8-1da1c75532ef"
     - stage: uuid
-      stageUuid: "898d62d8-8284-8c48-8726-8324e184fe80"
+      stageUuid: "8142d3e4-d43e-8233-9aeb-58855f15c67f"
 version: 2
 ---
 # comments

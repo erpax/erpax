@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "teleportation",
-    "uuid": "e9d676d8-12e4-878e-8cfb-c342260c7aeb",
+    "uuid": "daaf832e-cae7-8fd1-8dd5-60650a836dea",
     "words": [
       "teleportation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quantum teleportation on the matrix — a meaning is reconstructed at the receiver from its content-uuid plus the shared entangled binding, the carrier never travels (only the classical content-address does), and the received message carries the same identity (uuid) it was addressed by.",
-    "uuid": "ef1f2279-bd69-8851-aefa-4cfbff8264d6",
+    "uuid": "e48cc43b-0c14-8c53-a804-91a782f62fae",
     "words": [
       "use",
       "when",

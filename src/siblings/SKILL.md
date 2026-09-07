@@ -2,11 +2,11 @@
 name: siblings
 description: "Use when reasoning about siblings — The person's siblings — see sibling (the singular). A dimension of one relation: siblings is the collection, sibling the unit; the text lives once, in sibling."
 atomPath: siblings
-coordinate: "siblings · 2/share · 0d077ac6"
-contentUuid: "6527e23c-4d2d-574e-b93c-00c241cb7731"
-diamondUuid: "12fe3485-7653-8081-9d49-f219c3827c1c"
-uuid: "0d077ac6-13cb-8496-b979-4019ad31b07a"
-horo: 2
+coordinate: "siblings · 8/crest · c56ad3ad"
+contentUuid: "b50c1e41-9815-57a5-afbc-984bcabca9c3"
+diamondUuid: "c209328f-2139-87c9-a2b5-0082082b79f4"
+uuid: "c56ad3ad-1119-8a96-aee6-9e12f1d16ddf"
+horo: 8
 typography:
   partition: siblings
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "99781559-5441-80d5-8296-e56b2b8ba206"
+  computationUuid: "5f89ef90-dbab-8f41-9a31-bafea61a9ac6"
   stages:
     - stage: path
       stageUuid: "6bc62f7a-3c6a-8ff3-8dcc-d409d42a107a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0b63cb87-423f-8119-aa5c-8d7442e0a77b"
     - stage: horo
-      stageUuid: "c63fcf1f-b2a8-8d70-ad30-2be64d3bf4e1"
+      stageUuid: "411ad12a-08bf-89f8-8fe8-2c9942862ded"
     - stage: seal
       stageUuid: "12755796-1825-8952-8767-181389918517"
     - stage: uuid
-      stageUuid: "914a6f75-3795-8890-8752-d665446fe7c1"
+      stageUuid: "d9d3513a-4070-8a50-a689-7a0ec6c1d67c"
 version: 2
 ---
 # siblings

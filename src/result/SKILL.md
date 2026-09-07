@@ -2,11 +2,11 @@
 name: result
 description: "Use when reasoning about result — The result produced in the action. E.g. John wrote *a book*."
 atomPath: result
-coordinate: "result · 7/descent · b2577b82"
-contentUuid: "87ff1616-7acd-5242-8e5a-afad539c45c9"
-diamondUuid: "b6fe4e74-a7a8-8dc7-9664-cb741d7be0c1"
-uuid: "b2577b82-6321-84c5-a285-3f9268924fa6"
-horo: 7
+coordinate: "result · 4/weave · 2774b6aa"
+contentUuid: "158f40cc-69e6-592b-9d49-464584ae0132"
+diamondUuid: "68be3249-0e5d-84da-b516-6532fcba7fab"
+uuid: "2774b6aa-b529-82eb-8295-d8bb81e213e4"
+horo: 4
 typography:
   partition: result
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "57e076b4-5b48-8cb7-8efe-55ed88e27a80"
+  computationUuid: "a8275864-4552-8ebb-917a-0b7d8d28e665"
   stages:
     - stage: path
       stageUuid: "c8de8a20-2028-8122-9fab-b257f5f12d8a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ad64bfed-ecc2-81b4-9efd-4724e4df441a"
     - stage: horo
-      stageUuid: "8e444bd9-2afc-81dc-8823-d308a70537e5"
+      stageUuid: "5facc8b8-8476-8a4b-9209-84ee19862888"
     - stage: seal
       stageUuid: "679318fc-f523-8d7f-8898-3f244f06f159"
     - stage: uuid
-      stageUuid: "02d8990a-6316-8d0b-b330-d160cf06683d"
+      stageUuid: "46429786-9c0b-87cf-b058-d88d81bb35f6"
 version: 2
 ---
 # result

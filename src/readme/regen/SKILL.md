@@ -2,18 +2,18 @@
 name: regen
 description: "Use when reasoning about regen — readme/regen — focused computed-face regen (avoids full-corpus `pnpm readme` OOM)."
 atomPath: "readme/regen"
-coordinate: "readme/regen · 2/share · a841c60e"
-contentUuid: "9733e401-3c21-5111-b965-77b6883159d6"
-diamondUuid: "baf2acaa-4e4d-8c22-87c2-5ade5f43c4a0"
-uuid: "a841c60e-df57-821c-94c0-713f46470342"
-horo: 2
+coordinate: "readme/regen · 5/round · 1b3642b8"
+contentUuid: "bb8640a7-3ab7-53b0-aa86-fe45077e1171"
+diamondUuid: "860e18cb-426e-892f-a119-a5e7d38d28fb"
+uuid: "1b3642b8-fd9a-84b3-903a-34de77225bae"
+horo: 5
 typography:
   partition: readme
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "92910003-f8b5-8a7e-b9eb-3c13325acf3d"
+  computationUuid: "a111c9e2-05cc-892e-8b2b-04e996ae7374"
   stages:
     - stage: path
       stageUuid: "ded8701a-add8-8fc9-a12b-51b87e792940"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5a0c6e63-2ecf-88ca-a449-31592f64ad8b"
     - stage: horo
-      stageUuid: "e05d5921-c703-81fa-84de-a9155057ca7f"
+      stageUuid: "ea7d7565-6aee-874c-a863-c268b1adbe62"
     - stage: seal
       stageUuid: "04693ade-b394-8fb7-8da4-5a11a59dc922"
     - stage: uuid
-      stageUuid: "a66c73f1-8a20-8154-a357-9d6dba5adba9"
+      stageUuid: "063bbb80-f1ce-8699-939f-f171aae3813e"
 version: 2
 ---
 # readme/regen

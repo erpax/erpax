@@ -2,18 +2,18 @@
 name: approval
 description: "Use when reasoning about approval — apply/approval — package.json-derived agent work approval matrix."
 atomPath: "apply/approval"
-coordinate: "apply/approval · 7/descent · 24175419"
-contentUuid: "d332e34e-46b3-568b-9f14-388132f1ec2a"
-diamondUuid: "9df678a8-c2e8-8078-845a-62987d07f18c"
-uuid: "24175419-8859-829a-8baa-db477e3c398d"
-horo: 7
+coordinate: "apply/approval · 2/share · de525f9b"
+contentUuid: "eb4f7f25-4c8e-540d-9eae-71ce743ec1a7"
+diamondUuid: "1fd6fa9d-0fde-8b7e-a9eb-5762aeae9d52"
+uuid: "de525f9b-729a-819f-bbe5-2716dfcb2650"
+horo: 2
 typography:
   partition: apply
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "065f70a3-fb87-862a-a48e-9d2d23777f98"
+  computationUuid: "ef75ca98-8e7e-8fd6-a880-dd145a2d23cc"
   stages:
     - stage: path
       stageUuid: "32bf4ac3-201e-8eed-8642-5098da5505db"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "90df9a92-6e0f-8dd1-aa42-d9d855454224"
     - stage: horo
-      stageUuid: "d5a660d8-7109-872e-ae0f-1cc29c170d47"
+      stageUuid: "3e83d73f-1704-8422-8fd0-605f7b9342f2"
     - stage: seal
       stageUuid: "2d25ee3c-71fc-8ce8-84e3-34cc900c7914"
     - stage: uuid
-      stageUuid: "a81d0ed6-861a-8827-8131-0f636491eab8"
+      stageUuid: "b6bcacbe-2e6a-875d-8415-90bff94c3a85"
 version: 2
 ---
 # apply/approval

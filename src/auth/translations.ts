@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "auth",
-    "uuid": "a99762cd-351a-853b-b589-6c6f92d7d9da",
+    "uuid": "db17c078-9633-89f0-82b9-176e5f6d37c3",
     "words": [
       "auth"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts.",
-    "uuid": "5f75a732-6153-8c8e-b860-c3457e1526cc",
+    "uuid": "0e6a5677-dad0-8a20-87ca-fbddf17b0170",
     "words": [
       "use",
       "when",

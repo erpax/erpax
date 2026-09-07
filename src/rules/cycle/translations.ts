@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cycle",
-    "uuid": "4388046b-1e1e-858a-969c-96532c2ec34b",
+    "uuid": "36f996e2-8813-81fb-8830-70a5557801e9",
     "words": [
       "cycle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a module reads a binding that does not exist yet — 'Cannot access X before initialization'. Reports the strongly connected components of the runtime import graph: sets of files that can all reach each other, where initialisation order is decided by accident. Type imports are not edges. Run: tsx src/rules/cycle/index.ts",
-    "uuid": "c7a58be6-fa85-801d-8cc7-3f12c48f7591",
+    "uuid": "d7ecd7eb-199a-8816-b771-af020b8f1cb9",
     "words": [
       "use",
       "when",

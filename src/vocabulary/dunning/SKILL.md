@@ -2,18 +2,18 @@
 name: dunning
 description: "Use when automating payment retry and collections — dunning-cycles exist but dunning as the parent concept (policy, rule, retry schedule, messaging) does not."
 atomPath: "vocabulary/dunning"
-coordinate: "vocabulary/dunning · 7/descent · a4a7aa5a"
-contentUuid: "d1905b71-45f6-5864-8f48-61ecfba9e7e2"
-diamondUuid: "ac53ccf5-87bc-8dd6-9b26-ce47e56aced9"
-uuid: "a4a7aa5a-4835-8478-9def-6f01e3461d50"
-horo: 7
+coordinate: "vocabulary/dunning · 8/crest · 79efc5ff"
+contentUuid: "ae7282cb-6cb8-59ba-949f-32492efb5351"
+diamondUuid: "285de7d7-9b19-8ed1-84ab-cc449912f57e"
+uuid: "79efc5ff-9582-86e0-9d51-613f20f11c27"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 22
+  bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1baa212f-f7bb-8d24-80cc-24a13be530c0"
+  computationUuid: "79c85bd3-9876-8206-8201-950ac5c88aeb"
   stages:
     - stage: path
       stageUuid: "978bb3b8-3746-810f-8853-48c0473145c7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8aa0f33c-c0bb-8f1b-a06e-014b1712cc61"
     - stage: horo
-      stageUuid: "8aa772e0-f728-8e9b-a399-96a03feca22f"
+      stageUuid: "e4fa878d-d13b-824e-8c5d-12261f2ea434"
     - stage: seal
       stageUuid: "d1654a78-16bb-828a-b928-c28936cf74db"
     - stage: uuid
-      stageUuid: "984d8570-a17d-84e1-bccd-e5876f9c6019"
+      stageUuid: "1c235085-2a4f-8737-adf0-b27daf345f41"
 version: 2
 ---
 # dunning

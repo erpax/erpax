@@ -2,18 +2,18 @@
 name: copy
 description: "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…"
 atomPath: "rules/copy"
-coordinate: "rules/copy · 8/crest · 79d74809"
-contentUuid: "3d6dd941-4185-538b-af5d-a17ad487573b"
-diamondUuid: "83052180-63da-86e2-8070-e4bc3a19539e"
-uuid: "79d74809-ae5a-8af3-9016-17809b96ec69"
-horo: 8
+coordinate: "rules/copy · 4/weave · f47c2c2f"
+contentUuid: "49194c3e-d7e4-53fa-b47d-4ecc68b74cf0"
+diamondUuid: "c9399661-420a-8def-bed1-bc3ce2e9a058"
+uuid: "f47c2c2f-1394-85ce-96e0-4568e9e17cec"
+horo: 4
 typography:
   partition: rules
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "dcc75f25-c8eb-8810-a201-3b18c8db9f95"
+  computationUuid: "00e09858-d84c-8646-ad44-273ca9f50bbc"
   stages:
     - stage: path
       stageUuid: "d82d2c62-1ae9-86e1-bad6-7da93650e4b2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b47695fc-779e-865c-8e71-aa4982d3d90e"
     - stage: horo
-      stageUuid: "822a566a-03e6-84bf-b3a5-51d6672fc008"
+      stageUuid: "68a7b1f3-70e2-8b77-ab3f-18c9b7dbc247"
     - stage: seal
       stageUuid: "756a028c-a9e5-86e1-93d5-ccfcd14a267e"
     - stage: uuid
-      stageUuid: "2f7631a1-201e-85ef-82db-1aaa031cad1a"
+      stageUuid: "d28177fe-895a-8f69-b7c8-aeb2d897a611"
 version: 2
 ---
 # rules/copy — one truth at two addresses, found by content-addressing the body
@@ -51,7 +51,7 @@ sharing an address are the same implementation, whatever their names.
 | --- | ---: |
 | bodies at two or more addresses | 44 |
 | **copies beyond the first** | **56** |
-| largest | `onChainStep` — 111 nodes, **11 identical copies** across the registered agents |
+| largest | `onChainStep` — 111 AST nodes, **11 identical copies** across the registered agents |
 
 Identifiers are deliberately **not** normalised. Erasing names would find "duplicates" that differ in
 what they operate on, and a report whose noise floor sits above its signal is one nobody reads — the
@@ -64,7 +64,7 @@ many honest functions share, and every such pair would bury the ones that matter
 
 Two of the top ten findings were written by the session that built it:
 
-- `visit` — 136 nodes, copied from `rules/collapse` into `fund` rather than reused. The payload-types
+- `visit` — 136 AST nodes, copied from `rules/collapse` into `fund` rather than reused. The payload-types
   parser, duplicated by the agent who had read the original an hour earlier.
 - `time` — 87 nodes, twice inside `quantum/hexbit`, because two benchmarks each grew their own
   median-timing helper.

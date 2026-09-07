@@ -2,18 +2,18 @@
 name: goodwill
 description: "Use when reasoning about goodwill — Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs"
 atomPath: "vocabulary/goodwill"
-coordinate: "vocabulary/goodwill · 7/descent · 28c0234c"
-contentUuid: "10de821b-5458-5e24-8929-6c36f5f58e5a"
-diamondUuid: "d0a3c411-3637-8bc8-b06e-6300a43168e0"
-uuid: "28c0234c-a097-8717-a2ae-2409b2d8f4ab"
-horo: 7
+coordinate: "vocabulary/goodwill · 5/round · c8d2aa5e"
+contentUuid: "7c616a36-8dc9-50bf-9dda-7d7eef4588c4"
+diamondUuid: "ca61f6b8-f28e-8021-83da-aae6702728df"
+uuid: "c8d2aa5e-c162-813e-b293-dde570a48d51"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "34b666cb-06d8-8bc2-84c2-d9186c2357ca"
+  computationUuid: "626e3955-9141-8bd4-807b-f141a0766ee9"
   stages:
     - stage: path
       stageUuid: "2cab5121-efb6-85fa-890e-91fa71d49214"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6d392859-fb87-86c2-8cb6-ae17d3ec1b43"
     - stage: horo
-      stageUuid: "df1262b7-44af-8e51-83b4-a2264aacb5ce"
+      stageUuid: "7661e233-0d0a-8bc5-8d79-049820aedd55"
     - stage: seal
       stageUuid: "573b86af-a64c-8e22-91c5-da5fe45745e8"
     - stage: uuid
-      stageUuid: "fe798af6-9049-8615-ac65-96695d4e8d75"
+      stageUuid: "479b6b61-bb45-8dd7-b660-461436c94407"
 version: 2
 ---
 # goodwill

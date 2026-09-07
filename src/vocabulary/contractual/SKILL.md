@@ -2,10 +2,10 @@
 name: contractual
 description: "Use when reasoning about contractual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/contractual"
-coordinate: "vocabulary/contractual · 7/descent · 8cee049c"
-contentUuid: "f17f4627-0e1f-52e1-94cd-54bef3bb5e73"
-diamondUuid: "8f6763cd-df51-8245-891b-2e3217caf933"
-uuid: "8cee049c-0d63-8dd7-a015-7d9d3d96d6c0"
+coordinate: "vocabulary/contractual · 7/descent · 5cff5c8f"
+contentUuid: "47492f74-83d9-56ab-9248-4f42a3dd46a4"
+diamondUuid: "74a1d017-e4e7-8f51-a788-663500d799e4"
+uuid: "5cff5c8f-132a-87a8-917a-a3d41b05f151"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4c167e11-599f-8f9b-88a0-d30924d027d6"
+  computationUuid: "265ba520-d091-8071-9fa2-d07700990e0b"
   stages:
     - stage: path
       stageUuid: "e8744b95-6621-8a28-aa4f-f0adfe0e1575"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd796200-aad6-80b6-8416-eef015dc62a9"
     - stage: horo
-      stageUuid: "e6e66ebc-096e-841b-969e-359d3f897207"
+      stageUuid: "e6dac96d-f8f8-8c30-9303-2f3ba2253c26"
     - stage: seal
       stageUuid: "96376d3e-a0a4-85e5-93f7-bea97e114266"
     - stage: uuid
-      stageUuid: "0a276733-3efb-85f7-b891-06932e7c07b8"
+      stageUuid: "9ca9412e-ccb9-807b-a3d9-c96228c9c2cf"
 version: 2
 ---
 # contractual

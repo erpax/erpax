@@ -2,19 +2,19 @@
 name: receipt
 description: "Use when issuing the fiscal receipt for a sale — the document Наредба Н-18 requires, carrying the УНП, the device number and the amounts a НАП inspector reads."
 atomPath: "sale/fiscal/receipt"
-coordinate: "sale/fiscal/receipt · 5/round · bc815abf"
-contentUuid: "18d39e64-0027-5e95-926e-6c38d14897cd"
-diamondUuid: "0b6f04c7-d058-87ba-a955-a532ffee0b82"
-uuid: "bc815abf-d9df-8072-9cc3-057f12d64e1a"
-horo: 5
+coordinate: "sale/fiscal/receipt · 8/crest · d6b13184"
+contentUuid: "629b7882-38be-52a9-8733-2d27eb8c82a6"
+diamondUuid: "3797de9b-46fd-8130-a438-6d27e43c6848"
+uuid: "d6b13184-ccd5-83ff-87c3-9b11ece5b89f"
+horo: 8
 typography:
   partition: sale
-  bondDegree: 116
+  bondDegree: 118
 standards:
   - "BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt"
 bindings: []
 signatures:
-  computationUuid: "9f10438c-87f9-8e00-bf69-a21bbe0019ca"
+  computationUuid: "5aa301f6-d912-8959-b82c-64f9b6bd7c4c"
   stages:
     - stage: path
       stageUuid: "4602b357-ad67-8406-9f6b-c797abe08b09"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc58f2ec-0677-85a7-a1a5-ffd6ab24e250"
     - stage: horo
-      stageUuid: "5ae70362-1af3-8c70-a8d6-b8baf4f31484"
+      stageUuid: "6f76efce-a68e-81fa-84d1-39eaa24f65b4"
     - stage: seal
       stageUuid: "28eb48ea-d987-84b1-885d-70f1226e35f0"
     - stage: uuid
-      stageUuid: "dceb9e0d-d6f7-80da-a164-2a42e70dfdc0"
+      stageUuid: "ac2cf088-6c9e-8d31-9863-14938b655da1"
 version: 2
 ---
 # receipt

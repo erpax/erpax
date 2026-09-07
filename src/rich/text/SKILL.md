@@ -2,11 +2,11 @@
 name: text
 description: "Use when reasoning about text — Lexical's serialized state becomes a React tree here. Most of that is the library's own default converters; what this atom decides is the small part the library cannot know."
 atomPath: "rich/text"
-coordinate: "rich/text · 7/descent · b18f6655"
-contentUuid: "6e599b97-2849-51b8-8533-28ad184169ef"
-diamondUuid: "479f1aa2-8da9-8a86-a73d-4773ddf8b59f"
-uuid: "b18f6655-24a0-8a3c-9947-78882419f050"
-horo: 7
+coordinate: "rich/text · 1/base · 960c0e5a"
+contentUuid: "22c67cdb-9f3c-584f-8e45-2097292c7d1f"
+diamondUuid: "6c3c88e4-d29c-8673-a8b3-61c7f4723d95"
+uuid: "960c0e5a-1940-8346-9e52-5fd6b6ddb1a9"
+horo: 1
 typography:
   partition: rich
   bondDegree: 69
@@ -18,7 +18,7 @@ standards:
   - schema.org HTMLRichText
 bindings: []
 signatures:
-  computationUuid: "8f39f681-debd-8f83-acc1-dc77d59227f3"
+  computationUuid: "3b0be7f7-7169-8305-a878-3aa45d5b040a"
   stages:
     - stage: path
       stageUuid: "aa5c74f2-fbbc-832b-a0d1-67870ec0d87d"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "3f7af5c3-ce25-8b68-86f6-6d10c3a66a8a"
     - stage: horo
-      stageUuid: "1c6fe99d-447c-8734-a075-4add9c451e50"
+      stageUuid: "224833e6-eb2e-86d7-9855-1ca428374f2a"
     - stage: seal
       stageUuid: "f5c48d9a-e85a-82a1-a5cc-53e32a497726"
     - stage: uuid
-      stageUuid: "022f0fe2-5d81-874b-bac8-81f5dd1cbbe6"
+      stageUuid: "d2521529-4ed0-8bc7-94d0-d71f09dd7310"
 version: 2
 ---
 # rich/text — an internal link is a route, never a stored URL

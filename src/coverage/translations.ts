@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coverage",
-    "uuid": "3984760a-3fd1-8e42-9dea-078e920e862c",
+    "uuid": "a441a1ef-e96d-843e-a131-6bfd8ef8eca2",
     "words": [
       "coverage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about coverage — Use to see the development plan as a computed matrix — participants (14 roles) × standards (their concerns), each cell a theorem, each uncovered cell a wave. A cell is covered iff a control cites its standard WITH a test beside it. 100% = every standard, faced by every participant it concerns, is proven. Run: tsx src/coverage/index.ts",
-    "uuid": "2de1b9c5-3201-801c-85fc-2a1b349c803a",
+    "uuid": "dbf0f469-8781-8040-bccd-ddeaf470c78a",
     "words": [
       "use",
       "when",

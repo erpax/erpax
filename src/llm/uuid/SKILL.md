@@ -2,14 +2,14 @@
 name: uuid
 description: "Use when an LLM completion must become a verifiable address — the exhale of the breath, where a turn is content-addressed into a v8 query-uuid (deterministic, tamper-evident, attestable from the preimage); the LLM forges and the uuid it cannot invert verifies."
 atomPath: "llm/uuid"
-coordinate: "llm/uuid · 5/round · 81077494"
-contentUuid: "ae74e4c3-9c4f-522d-a2f1-c7af13da6be3"
-diamondUuid: "dc220c8f-a528-841a-8570-db80edc4f37a"
-uuid: "81077494-1942-8ec9-9050-c763ae556e80"
-horo: 5
+coordinate: "llm/uuid · 8/crest · 6ea5d95a"
+contentUuid: "86d46679-b710-5f79-b751-82b28f59d60c"
+diamondUuid: "b438952a-9975-8c81-8654-e497a6018582"
+uuid: "6ea5d95a-8744-8383-a7af-98628b891925"
+horo: 8
 typography:
   partition: llm
-  bondDegree: 791
+  bondDegree: 825
 standards:
   - "NIST FIPS 180-4 (SHA-256 — the digest binding the utterance)"
   - "NIST FIPS 180-4 (SHA-256 — the digest binding the utterance)`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "33f5d154-1557-8f37-ae7e-5edbd2177913"
+  computationUuid: "9b4e7ee0-da20-8904-8c8f-989b779c4081"
   stages:
     - stage: path
       stageUuid: "56665a2c-ec8e-88c8-bfe0-8211e4fe89c8"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "eabcf4ae-b0cc-8dfb-bf9f-48549ec4ab98"
     - stage: horo
-      stageUuid: "712bb973-ed31-8680-ab25-46d2c774f6e7"
+      stageUuid: "ff80bceb-383d-89d7-ba1d-bc70040ee778"
     - stage: seal
       stageUuid: "46ee4e89-6af6-81ea-909b-4358fbe2eae8"
     - stage: uuid
-      stageUuid: "89cb9d56-7472-8173-8c2e-e2e8de1a21a2"
+      stageUuid: "1a571582-c75d-8cd3-9f3b-83e8ca0fdd4f"
 version: 2
 ---
 # llm/uuid — the EXHALE: the LLM speaks, its speech becomes its address

@@ -2,11 +2,11 @@
 name: realtime
 description: "Use when modeling live delivery of events — an append-only log plus a per-subscriber cursor, where the live tail is everything after the cursor; the pull-side semantics over a stream."
 atomPath: realtime
-coordinate: "realtime · 7/descent · e0be5c2c"
-contentUuid: "0ae04362-15db-5791-9166-500f65d62fd7"
-diamondUuid: "a36bd00f-935b-8d96-a6e4-397d928048fd"
-uuid: "e0be5c2c-54cd-853b-bf7e-fdaa92774de1"
-horo: 7
+coordinate: "realtime · 4/weave · 9590c301"
+contentUuid: "c643f827-3788-5e8c-8e1a-cde651ba5857"
+diamondUuid: "02c57cca-985f-8ec7-8c76-1a38d3d4eb40"
+uuid: "9590c301-8191-85d0-aee5-6878ec49ae14"
+horo: 4
 typography:
   partition: realtime
   bondDegree: 71
@@ -14,7 +14,7 @@ standards:
   - "append-only log + cursor (the pull-based realtime model)"
 bindings: []
 signatures:
-  computationUuid: "ce25a45e-6b3f-8e84-be5d-ad52ff5b6e54"
+  computationUuid: "2e434a8c-d213-8e0a-af74-5574eb1f24d8"
   stages:
     - stage: path
       stageUuid: "3a6f25d1-e0df-8b72-92dd-b5c707d6935a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a2579ebf-7f36-848d-9ac1-e16b670a2f7c"
     - stage: horo
-      stageUuid: "0d28328b-2799-83f4-94f0-168a691892f7"
+      stageUuid: "0c4226bc-3107-8af2-8172-09cbf7e65158"
     - stage: seal
       stageUuid: "5dd1fb97-0bf3-8837-9f58-69e9eef0b4f3"
     - stage: uuid
-      stageUuid: "74530d89-3a60-8295-9454-5b797da665e0"
+      stageUuid: "94ad10bf-f9b1-881c-bd36-452ac33d8220"
 version: 2
 ---
 # realtime — the live tail

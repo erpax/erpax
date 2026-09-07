@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "meta",
-    "uuid": "b51ade0c-7115-8ca9-adf9-99f4e362506d",
+    "uuid": "0db98c9d-9ae8-8cef-a094-602e484b974e",
     "words": [
       "meta"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about meta — builds the Next.js — title, description, Open Graph image — from the Payload document being rendered.",
-    "uuid": "5317ad6f-9772-8a60-8bd3-f9f54dfc7edd",
+    "uuid": "8364997d-2df3-80ac-8d15-9d1bc19c6365",
     "words": [
       "use",
       "when",

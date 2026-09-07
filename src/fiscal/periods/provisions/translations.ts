@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "provisions",
-    "uuid": "4bbdb7bf-7446-8e47-a255-ce5e20e54c57",
+    "uuid": "c2090228-ac18-86e6-8725-9bb8a28ea970",
     "words": [
       "provisions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register.",
-    "uuid": "0087f11f-41eb-8329-b1aa-adb382ab2854",
+    "uuid": "f7dd3919-f343-800e-8c78-8057c7033908",
     "words": [
       "use",
       "when",

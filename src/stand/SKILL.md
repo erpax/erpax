@@ -2,11 +2,11 @@
 name: stand
 description: "Use when reasoning about stand as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: stand
-coordinate: "stand · 1/base · cb6868bc"
-contentUuid: "fc58d124-afc6-5f31-82ce-a74ad6a4d4df"
-diamondUuid: "58286ec4-03d2-802b-8d59-627c425cce6c"
-uuid: "cb6868bc-8810-811d-97fc-69f95f6d7ba1"
-horo: 1
+coordinate: "stand · 5/round · 7bb7fd8f"
+contentUuid: "14a33a8b-003b-505c-878a-b20c1af1dce2"
+diamondUuid: "5ec9dacf-6867-8cfd-bbec-a44db7008e5e"
+uuid: "7bb7fd8f-2a47-8134-b244-06f209c035a9"
+horo: 5
 typography:
   partition: stand
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d2cfe546-e294-8d34-a6be-5862c18f7f80"
+  computationUuid: "69dbd782-3db5-8204-80aa-03f9c2dc2203"
   stages:
     - stage: path
       stageUuid: "c9cf5246-f7a7-81b5-91aa-9c8f4ad92154"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "508a27b1-d70b-8575-8355-2bd5abb47479"
     - stage: horo
-      stageUuid: "8589f728-bb91-8f4c-bceb-f6f7acd3ceab"
+      stageUuid: "254c3a4b-71cb-862c-b957-893573e91f85"
     - stage: seal
       stageUuid: "b42d26c2-8917-8fe1-964b-6d69939ba7bf"
     - stage: uuid
-      stageUuid: "96bd87cc-1a54-8da8-8794-b83c6ec46a4a"
+      stageUuid: "b6624306-abb9-8105-843f-b271e834b917"
 version: 2
 ---
 # stand

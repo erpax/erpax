@@ -2,11 +2,11 @@
 name: contractor
 description: "Use when reasoning about contractor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/contractor"
-coordinate: "vocabulary/contractor · 8/crest · a35d7dbd"
-contentUuid: "9369d6e4-6d02-55f7-822f-2ab528e399de"
-diamondUuid: "da265d66-23a7-8342-906d-b922e1999cb4"
-uuid: "a35d7dbd-22b4-838e-854e-4c30dd909bad"
-horo: 8
+coordinate: "vocabulary/contractor · 5/round · 3766c0a6"
+contentUuid: "f4eadecc-f601-57d0-903a-0dae2b083be7"
+diamondUuid: "293917e2-0112-8306-a5d6-3b9bfa4c752c"
+uuid: "3766c0a6-01dd-8e36-8fa6-af4f88006c95"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dd12b365-3c50-8992-b95e-a23eb7dc6c5f"
+  computationUuid: "964168ba-d4b1-8d2e-b1ee-525e6dbb66f0"
   stages:
     - stage: path
       stageUuid: "d3c1b383-1699-8464-8c16-4780e5fe1f0c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e5b1192e-1b84-8361-b9e0-be46f4862712"
     - stage: horo
-      stageUuid: "9c169feb-646d-87ae-b083-f2325a12d052"
+      stageUuid: "40139cd8-dd31-8338-969b-b5eaa578c7b0"
     - stage: seal
       stageUuid: "b5246846-7e75-815c-81f9-98ef2bc1ac62"
     - stage: uuid
-      stageUuid: "94c2a16f-5fd5-8a22-9550-3a498e2af35e"
+      stageUuid: "1b5ee15f-3a8f-8d14-9878-53d7592c03aa"
 version: 2
 ---
 # contractor

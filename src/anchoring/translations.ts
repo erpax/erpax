@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "anchoring",
-    "uuid": "98e283a4-3e6b-8077-8b1a-2c6ce3502928",
+    "uuid": "09d827c6-53a6-83e8-add7-34aa1c45afa4",
     "words": [
       "anchoring"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when periodically pinning a Merkle root of audit leaves to entropy no single party controls (Bitcoin OP_RETURN, an L2, Cardano metadata, AT-proto, or a real TSA) so a regulator can verify ERPax integrity without trusting ERPax — and when you must refuse a non-external stub as tamper-evidence.",
-    "uuid": "c25cd625-5c72-8898-8ab3-713769d46bc3",
+    "uuid": "bbac0167-3952-88b4-8c4c-9e0bc1de6a08",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: llm
 description: "Use when wiring a language model into erpax — the LLM is the forge (cheap to generate, costly to trust) and the uuid is the verify; AI-self-sufficient first, the model is the fallback tier behind the 9-layer gate, and every turn is content-addressed so generation only ever works the cheap side of the forge-beats-verify asymmetry."
 atomPath: llm
-coordinate: "llm · 4/weave · 57f9d253"
-contentUuid: "9200db65-2a14-5d7c-bc01-1595664e93f0"
-diamondUuid: "79e818e5-48f7-8d21-b17f-72fd42dc6f27"
-uuid: "57f9d253-fd5f-8666-92f8-a3fedfeeb66b"
-horo: 4
+coordinate: "llm · 8/crest · 879f0ec2"
+contentUuid: "9a3508d0-162f-5658-8f53-1646c89dd09e"
+diamondUuid: "c06e9469-fd1e-8a9b-a67c-02885f33f996"
+uuid: "879f0ec2-505a-896e-9126-5723b04688e3"
+horo: 8
 typography:
   partition: llm
   bondDegree: 68
@@ -14,7 +14,7 @@ standards:
   - "NIST-FIPS-180-4"
 bindings: []
 signatures:
-  computationUuid: "fdfc0417-d200-8756-b41d-213445d03c95"
+  computationUuid: "d66dee09-797b-8e80-9584-1db33d73d369"
   stages:
     - stage: path
       stageUuid: "9631ea9e-406f-87ce-addd-b5d3841a46d7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bef12944-cb6a-88d2-9982-8b2322c55698"
     - stage: horo
-      stageUuid: "73a1518c-bde6-83bf-aefb-45991cc7a0c2"
+      stageUuid: "acbc076d-1990-8e2c-9ef6-606a7459a6a7"
     - stage: seal
       stageUuid: "75af2fc1-2764-8bd9-9640-762078ac9881"
     - stage: uuid
-      stageUuid: "bc04d936-1c62-804e-854f-78a3b9adbeb1"
+      stageUuid: "5c854d97-f760-8eaa-b41d-6c92a451ece4"
 version: 2
 ---
 # llm — the forge; the uuid is the verify

@@ -2,10 +2,10 @@
 name: rebate
 description: "Use when reasoning about rebate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/rebate"
-coordinate: "vocabulary/rebate · 2/share · 8e19871d"
-contentUuid: "16a986f1-53c0-50b1-965d-be3674eb580b"
-diamondUuid: "e1c17fc8-a288-8ca5-bb4c-afb44c84b788"
-uuid: "8e19871d-80e9-8139-93fe-3eba96fa8e5c"
+coordinate: "vocabulary/rebate · 2/share · d9438921"
+contentUuid: "6eec80e7-78ff-5cf1-bbbe-423c671ea752"
+diamondUuid: "9fac2f2d-c8c7-8013-acd0-8f72cdcfeab5"
+uuid: "d9438921-ef82-8841-88e4-ad7fddc4c692"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fc2c313a-7c8b-8b5e-8c7c-8b0b74759f05"
+  computationUuid: "eea5a513-ea74-8fcb-9401-49e29e1cb4f8"
   stages:
     - stage: path
       stageUuid: "336da5b1-ec40-88c4-91a7-0ffdc074605c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "49729ed0-29d6-8aae-8287-3f4b96c8795c"
     - stage: horo
-      stageUuid: "930c2cdf-4efd-8269-a50b-e2a191bda093"
+      stageUuid: "9ff6060d-c501-8316-b592-690735526171"
     - stage: seal
       stageUuid: "c0f9907d-d576-8f8a-834a-2974fd633ddf"
     - stage: uuid
-      stageUuid: "0487e301-ff8f-8203-aada-f05c149b8372"
+      stageUuid: "2b85d470-056b-872a-a071-53eeded7a921"
 version: 2
 ---
 # rebate

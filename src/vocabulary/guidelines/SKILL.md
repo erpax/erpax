@@ -2,11 +2,11 @@
 name: guidelines
 description: "Use when reasoning about guidelines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/guidelines"
-coordinate: "vocabulary/guidelines · 4/weave · ca29df05"
-contentUuid: "fd9a5d0a-661c-5a2c-972e-aaa2465f6214"
-diamondUuid: "aeef7f4d-d35b-8cea-9d3f-84f59a8a500b"
-uuid: "ca29df05-c122-8b63-872e-d2051a85f833"
-horo: 4
+coordinate: "vocabulary/guidelines · 7/descent · a7263786"
+contentUuid: "f270c6aa-04ef-55bd-9250-deaebe19cd9e"
+diamondUuid: "a65ade91-a821-8973-ac7d-1f0c9c73d45b"
+uuid: "a7263786-d9dd-83a1-b7b2-e29be815bd84"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1da5e9da-b407-8dbe-aabe-8a4baaf81bae"
+  computationUuid: "cf978195-cba0-8d0f-b876-a1e3a63e0413"
   stages:
     - stage: path
       stageUuid: "65ded602-5c13-8a45-89bb-40f44bfeda52"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "651a1afb-daf0-88eb-a9e3-24eecccd6e6a"
     - stage: horo
-      stageUuid: "41128e88-bfc4-84b5-98aa-edf3e8aaa98c"
+      stageUuid: "8f9eb66d-6e3e-84a2-b84c-0ebdb65fe9c9"
     - stage: seal
       stageUuid: "775497b1-3c7d-81a4-916b-4a4a3f173e8f"
     - stage: uuid
-      stageUuid: "62659c19-fa1c-89e4-a066-2a52c982f5eb"
+      stageUuid: "ec2a709d-ad0c-837e-a98f-a1f17d85804e"
 version: 2
 ---
 # guidelines

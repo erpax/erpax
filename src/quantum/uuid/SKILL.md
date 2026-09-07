@@ -2,19 +2,19 @@
 name: uuid
 description: "Use when reasoning about the content-uuid in the quantum frame — the 128-bit address is the collapse of content (a sha-256 measurement of the infinite stream into one settled point); it fuses identity, capability, schema, and a multi-modal projection (color plus sound), and it is the entanglement key that binds the whole corpus into one."
 atomPath: "quantum/uuid"
-coordinate: "quantum/uuid · 8/crest · 7a010d5f"
-contentUuid: "81dd616d-9e14-5faf-8d02-57244dcfbe99"
-diamondUuid: "cdd13448-d1c9-8a5a-a618-251f7a2e2459"
-uuid: "7a010d5f-0b4a-8a84-9126-9e048438750f"
-horo: 8
+coordinate: "quantum/uuid · 5/round · 726fd630"
+contentUuid: "36ab9cb8-5e06-5c31-8810-4197f98a92c7"
+diamondUuid: "a39fb873-861d-89f9-8389-039d90bf437b"
+uuid: "726fd630-b74b-8f1c-82e9-bc21a5d6777d"
+horo: 5
 typography:
   partition: quantum
-  bondDegree: 791
+  bondDegree: 825
 standards:
   - "RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "84c25192-02c2-87a6-b7b7-b1063ad10915"
+  computationUuid: "90065e6d-ba82-85a8-b2db-228d77966165"
   stages:
     - stage: path
       stageUuid: "f07af087-f161-8df7-83aa-761b91b668bc"
@@ -25,21 +25,21 @@ signatures:
     - stage: links
       stageUuid: "8062e18f-cd82-87ac-ad03-e7d2fb55f68d"
     - stage: horo
-      stageUuid: "aa4570a0-765a-8b60-8483-828a2861ef1f"
+      stageUuid: "adccb3f6-43f2-8595-87f8-035710b7e986"
     - stage: seal
       stageUuid: "a7b816c3-9b29-8f74-8bd1-8a2f1d97cecc"
     - stage: uuid
-      stageUuid: "e35fa669-2db8-8734-a6a7-22dd4fca1f81"
+      stageUuid: "e569dc6b-5efe-89bd-8675-b557cf8ff12f"
 quantum:
   superposition:
     - access
     - accounting
     - addressed
+    - agent
     - akashic
     - all
     - analog
     - anchor
-    - angel
     - superposition
   collapse:
     - "Use when reasoning about the content-uuid in the quantum frame — the 128-bit address is the collapse of content (a sha-256 measurement of the infinite stream into one settled point); it fuses identity, capability, schema, and a multi-modal projection (color plus sound), and it is the entanglement key that binds the whole corpus into one."
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "84c25192-02c2-87a6-b7b7-b1063ad10915"
-    contentUuid: "81dd616d-9e14-5faf-8d02-57244dcfbe99"
+    computationUuid: "90065e6d-ba82-85a8-b2db-228d77966165"
+    contentUuid: "36ab9cb8-5e06-5c31-8810-4197f98a92c7"
 version: 2
 ---
 # quantum/uuid — the collapse that is the address
@@ -87,4 +87,4 @@ It is *at all quantum scales* because the address is [[fractal]]: the identical 
 
 @see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · [[finality]] · [[signal]] · [[realtime]] · [[memory]] · [[generate]] · [[snapshot]] · [[akashic]] · [[fractal]] · [[holographic]] · [[confirm]] · [[payload]] · [[seal]]
 
-<sub>content-uuid `81dd616d-9e14-5faf-8d02-57244dcfbe99` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `36ab9cb8-5e06-5c31-8810-4197f98a92c7` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

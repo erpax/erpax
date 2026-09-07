@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "period",
-    "uuid": "5ffe20d4-1953-8c77-9908-b07310555eac",
+    "uuid": "14598080-8b72-8095-b8e3-4f6a3756add9",
     "words": [
       "period"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning.",
-    "uuid": "3682deac-5eb9-8cc2-bcf7-3328f543e777",
+    "uuid": "adeba44e-bc08-8b13-b263-9c3f27dd7d11",
     "words": [
       "use",
       "when",

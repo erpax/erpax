@@ -2,21 +2,21 @@
 name: entropy
 description: "Use when reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances — entropy() = 1 − the reciprocal-edge fraction of the uuid-matrix, an audit/aura signal, NOT an input to crackVerdict. It is a DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost via coverageCostLog2); reciprocity=1 does NOT imply coverage=1, so zero entropy does NOT by itself yield infinite cost (the live tree is the counter-example — entropy 0, coverage under 1, cost finite). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor."
 atomPath: entropy
-coordinate: "entropy · 7/descent · 6301d43c"
-contentUuid: "57992ffe-604a-5633-ab30-8154399ae949"
-diamondUuid: "4bd8c644-4a4a-87b1-851a-83416295f12a"
-uuid: "6301d43c-2279-8bb0-96ef-b4d86a0cf2a5"
-horo: 7
+coordinate: "entropy · 1/base · c7abf450"
+contentUuid: "dcdde222-7585-5bff-971b-e15d3b4861d8"
+diamondUuid: "3dfe1fa1-7560-897d-a44e-06da40024e19"
+uuid: "c7abf450-e913-8244-a5e1-59a3001f99d6"
+horo: 1
 typography:
   partition: entropy
-  bondDegree: 303
+  bondDegree: 315
 standards:
   - "CoE-108+"
   - "NIST-SP-800-108"
   - "NIST-SP-800-57"
 bindings: []
 signatures:
-  computationUuid: "0a33937a-01ef-8520-b63b-2e825fc5ccc4"
+  computationUuid: "6be1a261-13da-89d9-834c-e570302aa979"
   stages:
     - stage: path
       stageUuid: "0efe9321-e9d9-88cf-b054-2bbe0937a2f6"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "84b37278-4747-813f-bcd3-41c55c04a53c"
     - stage: horo
-      stageUuid: "8e9e86a8-bd39-887e-825e-20832d03c8c8"
+      stageUuid: "0137cfff-2e13-806a-ace0-ede7064d7e8d"
     - stage: seal
       stageUuid: "e4713d70-378f-8e73-b358-b4d0581e4959"
     - stage: uuid
-      stageUuid: "5943afda-7659-881e-b5aa-27ac622018af"
+      stageUuid: "db4e68c2-fcd3-8a86-b72a-503fba9cda36"
 version: 2
 ---
 # entropy — the matrix-reciprocity slack the whole ledger balances

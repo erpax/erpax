@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "isbn",
-    "uuid": "ff8d79f0-ed7d-8969-9e7a-51ddd2a8bd08",
+    "uuid": "d3951261-8b1d-8a3b-88f7-5b16ceef5393",
     "words": [
       "isbn"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about isbn — The ISBN of the book.",
-    "uuid": "e364d13c-9772-800f-b067-5b1ec19b4d92",
+    "uuid": "987062d7-10b3-88be-8b44-b5a6e05e7515",
     "words": [
       "use",
       "when",

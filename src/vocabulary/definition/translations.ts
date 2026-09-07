@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "definition",
-    "uuid": "1ce29adf-de52-8792-9097-118fa83b84ad",
+    "uuid": "a0d7cb4b-581c-88ad-b3e9-0a63532df98f",
     "words": [
       "definition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one definition — the singular model of the definitions collection (the plural store); the precise meaning assigned to a term.",
-    "uuid": "54363f39-b0da-8e25-b31d-ff08c019aa1f",
+    "uuid": "7595f406-d4f3-89f5-8b87-e668a8410512",
     "words": [
       "use",
       "when",

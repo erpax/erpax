@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "milestones",
-    "uuid": "673720e7-b835-8087-bab2-18023f34150e",
+    "uuid": "e8a21eb3-6b97-8c12-9c25-d06a4220e290",
     "words": [
       "milestones"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project.",
-    "uuid": "01e0e3e9-3643-8847-ac89-c20541b56148",
+    "uuid": "a2359c19-3462-8551-bb29-4e272ce75906",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: interval
 description: "Use when reasoning about interval as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/interval"
-coordinate: "vocabulary/interval · 7/descent · cbf29a26"
-contentUuid: "d852ecdb-af63-5fa8-93c0-08df109d3f95"
-diamondUuid: "bb966afd-f944-8c7a-a365-b510b87a7a46"
-uuid: "cbf29a26-dde4-88a4-8f23-ebf839c635cd"
-horo: 7
+coordinate: "vocabulary/interval · 2/share · e4ef883c"
+contentUuid: "a7b38e45-0656-51ca-870e-60321061dd70"
+diamondUuid: "f53e4b35-8088-880b-94d2-02657cf39176"
+uuid: "e4ef883c-596f-8e47-a52a-feccee3d02cb"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "16754bbc-7fc9-8a95-99dd-ed5e30f574fe"
+  computationUuid: "3e29f6bf-62ba-85fe-9fdd-008c7fde934b"
   stages:
     - stage: path
       stageUuid: "1c0f63c7-3bf6-8566-b307-cdeac2dab9fa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6e744a44-5daa-86a1-9951-a88c2f6f8004"
     - stage: horo
-      stageUuid: "ddc67866-e4b5-8afa-b084-748c07a57981"
+      stageUuid: "5b217773-6568-8b3e-be68-bec2aa3adbde"
     - stage: seal
       stageUuid: "497d72ab-52e4-87d2-bb35-91e9e39f0001"
     - stage: uuid
-      stageUuid: "b34507a6-3930-86f8-8bf7-2f3072fab318"
+      stageUuid: "e34a7736-1b6b-8c57-9e6d-842dfbc5fc0e"
 version: 2
 ---
 # interval

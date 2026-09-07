@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "build",
-    "uuid": "00963f08-ac56-8f66-b5df-d0ff3c08e2fe",
+    "uuid": "267cfc74-3807-89f7-9e62-36bdc4a46afd",
     "words": [
       "build"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the skill router index or installed catalogue must emit — buildSkillIndex and buildInstalledCatalogue compile the corpus for fs-less Workers.",
-    "uuid": "c49d5ef8-ddd5-8f6d-bf01-49524980b186",
+    "uuid": "8ec2f40b-c8a7-87e7-95f6-76003a59941c",
     "words": [
       "use",
       "when",

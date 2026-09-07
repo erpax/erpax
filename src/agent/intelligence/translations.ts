@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "intelligence",
-    "uuid": "a209bafe-3800-844a-bb28-2f7398ba40f5",
+    "uuid": "fd0d69fc-38ad-8964-82a2-12ac1cf48c94",
     "words": [
       "intelligence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about intelligence — Self-improving agent intelligence via measure, fold, seal, and balance cycles.",
-    "uuid": "9e928b6d-2edc-8ba6-bcac-a2b6ebf716a2",
+    "uuid": "71ff46c1-2ac6-80b5-8004-dca1671d2b54",
     "words": [
       "use",
       "when",

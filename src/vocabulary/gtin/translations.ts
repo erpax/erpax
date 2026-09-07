@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gtin",
-    "uuid": "29119ce8-3c20-805a-a583-026accd8b713",
+    "uuid": "d5a4b92f-5b48-8254-9aa4-ada8bc1bd448",
     "words": [
       "gtin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about gtin — A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, whi",
-    "uuid": "ba48dfd6-74a8-84a4-aa10-abc8482eabb5",
+    "uuid": "f701a04d-021c-8a05-ba6b-a83a64ad3122",
     "words": [
       "use",
       "when",

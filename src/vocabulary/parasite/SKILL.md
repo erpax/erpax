@@ -2,11 +2,11 @@
 name: parasite
 description: "Use when reasoning about parasite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/parasite"
-coordinate: "vocabulary/parasite · 8/crest · c4529a52"
-contentUuid: "2300eb89-90a0-5846-80a5-ccd78621b566"
-diamondUuid: "61f4f3ca-d5ee-89f6-837f-2f69620e06d1"
-uuid: "c4529a52-76ce-89fd-978d-8f30f448ed2b"
-horo: 8
+coordinate: "vocabulary/parasite · 4/weave · 85372da3"
+contentUuid: "effa0b10-3f7e-5606-85ef-2a83346e6327"
+diamondUuid: "b5c79cdc-c1d3-8f18-afcc-b849dfbbb32d"
+uuid: "85372da3-f9da-8046-88f7-e7cb6a73115e"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a2122c63-1d49-80b0-a22f-4b3c9e3684b3"
+  computationUuid: "801d2a8e-f292-818d-9100-21f277e9e384"
   stages:
     - stage: path
       stageUuid: "703c34a8-87e4-8ad7-93a6-4bfabf8f9c74"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6174087f-847d-85ad-8f5c-b9d43428aaef"
     - stage: horo
-      stageUuid: "2f91c2d2-b0cb-8b12-b62a-b62a85268acd"
+      stageUuid: "71008bf6-9cf5-8f79-a3e2-3a216b6eaa62"
     - stage: seal
       stageUuid: "69d3c024-7df4-8e5f-8188-69c5cd9e334c"
     - stage: uuid
-      stageUuid: "a25e9982-de27-808f-ac0f-97cfe5bbccd3"
+      stageUuid: "f8286533-4702-8f9a-8ed6-ee6c6a61fe42"
 version: 2
 ---
 # parasite

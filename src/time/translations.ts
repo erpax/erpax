@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "time",
-    "uuid": "bdbc2b1f-fb80-8308-8a05-5f9e4a38da59",
+    "uuid": "609aa38b-65ab-82a3-8687-c6b62248b2c3",
     "words": [
       "time"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking hours/minutes — labor hours, shift duration, production runtime per unit, throughput per time unit. A duration (number + time unit HUR/H87 code) or clock time. Pairs with rate (wage per hour, throughput per hour) in manufacturing/labor.",
-    "uuid": "a3783116-8781-8f40-a450-550e05b81815",
+    "uuid": "1a668c8c-26a0-819b-a307-311a5f611e4b",
     "words": [
       "use",
       "when",

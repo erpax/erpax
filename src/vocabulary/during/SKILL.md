@@ -2,11 +2,11 @@
 name: during
 description: "Use when reasoning about during — A schema.org component word, collided out of schema.org compounds — fused from duringMedia (sti · collapse · merge)."
 atomPath: "vocabulary/during"
-coordinate: "vocabulary/during · 7/descent · 052cb689"
-contentUuid: "8cf497a8-bb6b-5b7d-9fba-37b203bde4bc"
-diamondUuid: "9ab4d9f1-34ad-8a18-b60c-a627ace291ee"
-uuid: "052cb689-0b43-8bdd-a004-92455e1e548d"
-horo: 7
+coordinate: "vocabulary/during · 4/weave · 14fa6450"
+contentUuid: "04b58087-a324-5606-9942-fc5f3ae026ef"
+diamondUuid: "3ec828ff-1351-8226-bbb6-5222a9c6a289"
+uuid: "14fa6450-dc7d-8f8a-9574-6a85c8dbb95c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a9cba53e-2d82-87e3-b7a1-e9ee83cec721"
+  computationUuid: "80d39094-b897-8782-8639-f19058ac22a6"
   stages:
     - stage: path
       stageUuid: "46e63273-2746-88cd-b404-f459f7e80963"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "62c36220-d62b-8333-a031-fe6704969c4c"
     - stage: horo
-      stageUuid: "d1b09564-051a-8718-87d4-ba4872991ab2"
+      stageUuid: "d67333d7-0980-8a6a-9d30-5b631dcd7d5d"
     - stage: seal
       stageUuid: "86b504e2-98b1-8bd7-8c16-44ee87939c26"
     - stage: uuid
-      stageUuid: "8fc34722-34fd-8928-b9cf-9dc64878b0cf"
+      stageUuid: "d3533579-030d-89f7-8549-aefefea82f5a"
 version: 2
 ---
 # during

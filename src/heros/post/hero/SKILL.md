@@ -2,18 +2,18 @@
 name: hero
 description: "Use when reasoning about hero — A post's header: categories, the title as the page's , the byline, the publication date, and the cover image."
 atomPath: "heros/post/hero"
-coordinate: "heros/post/hero · 5/round · 9df03de7"
-contentUuid: "11c47893-3269-5f0d-bf46-924bf3d58a3b"
-diamondUuid: "4493837b-d3d5-86c3-ae12-2eed32aad3f3"
-uuid: "9df03de7-57d2-8053-b813-a16c6861560b"
-horo: 5
+coordinate: "heros/post/hero · 7/descent · af369e1b"
+contentUuid: "5fcf9ced-ae33-51e3-ae53-8b4a597b6a55"
+diamondUuid: "bfa12d27-7c2b-8878-be5e-8e721ad16aee"
+uuid: "af369e1b-4bdf-80d7-9f77-34e169fed5f0"
+horo: 7
 typography:
   partition: heros
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "816c7484-a772-8a25-b65c-589d102dfb80"
+  computationUuid: "01d4a1e3-1dda-85a9-a7fa-afbf9896f554"
   stages:
     - stage: path
       stageUuid: "0a689572-6b14-82e6-a8f0-769efb5a14de"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5c5c9b35-73f2-8151-940d-78f35e2e6453"
     - stage: horo
-      stageUuid: "80341cf2-556d-81d5-ae4f-74c001fc4cdc"
+      stageUuid: "34be6672-915b-8f33-9a97-767e4bbbe52b"
     - stage: seal
       stageUuid: "6e2fefee-a8a9-8bd9-991f-6ef15bd283af"
     - stage: uuid
-      stageUuid: "11ff2afe-4ad9-8ef0-8ebc-201b456854a8"
+      stageUuid: "a23f3818-6f9e-8a61-8b4e-1cc6618a3587"
 version: 2
 ---
 # heros/post/hero — the date is machine-readable, and the byline is absent when there is none

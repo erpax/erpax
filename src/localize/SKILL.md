@@ -2,14 +2,14 @@
 name: localize
 description: "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts."
 atomPath: localize
-coordinate: "localize · 4/weave · f5f4aa3e"
-contentUuid: "f0f1eb13-edda-5a19-baa3-e37ed360dc6e"
-diamondUuid: "257f3472-c791-8405-99a5-7d95044c4151"
-uuid: "f5f4aa3e-00aa-878c-9b04-3e4c75de18c0"
-horo: 4
+coordinate: "localize · 5/round · 2cf0b484"
+contentUuid: "e59b5275-16fe-5600-b803-4464843838cc"
+diamondUuid: "a9b735de-4011-855b-93a5-c4038d90c40f"
+uuid: "2cf0b484-a676-81b9-9122-ec6abafa8eac"
+horo: 5
 typography:
   partition: localize
-  bondDegree: 75
+  bondDegree: 115
 standards:
   - "4647` (RFC 4647, Sept 2006, \"Matching of Language Tags\"; current as of 2026). Governs"
   - "4647` alongside `@rfc 5646` wherever this skill does matching (it covers the behavior RFC 5646 does not)."
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d95ed9ff-880b-858f-8bda-9a13b32fe6e1"
+  computationUuid: "4299ee72-3077-8b4d-9d95-2f2a6902e5bd"
   stages:
     - stage: path
       stageUuid: "2a33b115-eb41-89e9-a3b7-4aeb5c1c1125"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "96f4fa51-5545-84ac-8215-827873ba297f"
     - stage: horo
-      stageUuid: "c231bae3-15b7-8c13-a1fc-e7aa2da78c98"
+      stageUuid: "ca1f6292-55a5-89a7-be8b-3494ea7d6f5c"
     - stage: seal
       stageUuid: "ab167e4a-044f-8271-bb4c-9d9cd41c765b"
     - stage: uuid
-      stageUuid: "a2f29401-e9ef-84e3-bf74-e286abca3260"
+      stageUuid: "33c24240-cbd1-8e2e-b9a6-1e972905dfb7"
 version: 2
 ---
 # localize — localization as the tamper-cost ⊕ proof fusion

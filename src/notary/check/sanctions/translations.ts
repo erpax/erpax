@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sanctions",
-    "uuid": "80ffab44-e0d2-81e6-a40b-ba977363213d",
+    "uuid": "ec2341ff-63c5-8448-bf13-fc35c94c32de",
     "words": [
       "sanctions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when screening a party against the EU consolidated financial sanctions list — the first REAL wired notary check. Resolves the current list through the OpenSanctions eu_fsf dataset index (authoritative source: the European Commission FSF endpoint, public token), normalises and matches the name, and returns clear vs escalate. A ProviderAdapter for notary/check; Worker-deployable; honest boundary — screening is a review signal not adjudication, data is CC-BY-NC, production ingests periodically.",
-    "uuid": "54f593cb-45be-8ad7-aa8c-b96a1248c0c8",
+    "uuid": "4caa400e-8aac-8aa0-b734-7e0c6068518b",
     "words": [
       "use",
       "when",

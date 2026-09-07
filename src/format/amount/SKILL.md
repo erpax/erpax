@@ -2,18 +2,18 @@
 name: amount
 description: "Use when reasoning about amount — renders integer cents as a fixed-two-decimal string; adds the code. Peppol UBL, ISO 20022, EDIFACT and SAF-T all need that wire form, and four serializers each doing it themselves…"
 atomPath: "format/amount"
-coordinate: "format/amount · 8/crest · f18f5e43"
-contentUuid: "57dd2a2d-9b07-5362-9064-4f49eeca560c"
-diamondUuid: "148ce38d-75da-8901-8d01-e6af5ae91dd5"
-uuid: "f18f5e43-97a1-895e-ad34-0fe0c1276679"
-horo: 8
+coordinate: "format/amount · 1/base · 4854d741"
+contentUuid: "1c5b4975-3ba8-536f-9a62-d21f08bcc2f8"
+diamondUuid: "41c62bbb-6175-8faf-993d-b283f2916520"
+uuid: "4854d741-1039-8b5b-bc33-586eaa486862"
+horo: 1
 typography:
   partition: format
-  bondDegree: 65
+  bondDegree: 67
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a8a0a6f5-b727-8152-9573-ae57af31c506"
+  computationUuid: "3e4311ca-524c-8d4f-9047-0f8bc117a2e4"
   stages:
     - stage: path
       stageUuid: "ebb76345-ef3e-8e5d-9a3e-3932d4168019"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fa583cf7-af18-825f-85e2-cf5aff8c2073"
     - stage: horo
-      stageUuid: "d5d06bfd-0844-827a-9cf6-0e0aabeebd5e"
+      stageUuid: "dacb0fcc-82e2-88f1-8c18-a95f4932de32"
     - stage: seal
       stageUuid: "6b128f60-4f8c-8301-875d-512d2cb31218"
     - stage: uuid
-      stageUuid: "38cea36f-a6f7-860d-b8e0-30d526a4b836"
+      stageUuid: "c7d9ec84-9f91-8ee1-aade-5921206fca22"
 version: 2
 ---
 # format/amount — money is integer cents in the system and a decimal string on the wire, converted in ONE place

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "artform",
-    "uuid": "2b455bdc-063f-8a17-afc9-f5006bbd7668",
+    "uuid": "22e5bba7-1056-8b03-8a5c-ca8c1651566c",
     "words": [
       "artform"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about artform — e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc.",
-    "uuid": "8f024069-5c71-8e8c-bbf4-3e253c9a1aae",
+    "uuid": "60a2b0fe-3c47-8b76-a7a2-e4d1601b7ad2",
     "words": [
       "use",
       "when",

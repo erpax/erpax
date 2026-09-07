@@ -2,11 +2,11 @@
 name: guideline
 description: "Use when reasoning about guideline as a medical facet of medical — vocabulary pivot to @/guideline; nested not duplicated."
 atomPath: "medical/guideline"
-coordinate: "medical/guideline · 2/share · 1f554712"
-contentUuid: "2a1a7faf-8556-5d00-b3db-2f90b45f7366"
-diamondUuid: "b89a5c9b-f3bc-82b0-8d2e-bb4c00e53f0f"
-uuid: "1f554712-fa8e-8644-b9fb-44f71f0e65ab"
-horo: 2
+coordinate: "medical/guideline · 8/crest · 5006ee45"
+contentUuid: "5b4072af-8bd1-538a-add9-8dfd4b885a41"
+diamondUuid: "d10e9ab5-6a59-87b2-a0f3-48005581c10c"
+uuid: "5006ee45-2fe5-87a1-aebb-07860bcc99a0"
+horo: 8
 typography:
   partition: medical
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "60f75e40-2abe-8f9d-a859-e443c2d162d6"
+  computationUuid: "ec294e71-6e4b-89f6-8566-ed3298723997"
   stages:
     - stage: path
       stageUuid: "dda31240-99d8-83b0-bc65-7f7259e1281c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dea3ee15-0dce-8bd6-b790-87c6b7193edd"
     - stage: horo
-      stageUuid: "e1ebc4e4-7d87-8a47-95ca-da771405c2a3"
+      stageUuid: "fe530c78-af4e-8df6-9fc8-5e2bb410147c"
     - stage: seal
       stageUuid: "e05c8691-90ee-890c-8b93-020d7b00a780"
     - stage: uuid
-      stageUuid: "ef041edc-d9c1-8ba1-b30e-fa178cf1414e"
+      stageUuid: "50cfeb4f-de05-82ca-a4ba-fcfe6a36f1ab"
 version: 2
 ---
 # medical/guideline — medical facet

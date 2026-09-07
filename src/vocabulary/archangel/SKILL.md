@@ -2,10 +2,10 @@
 name: archangel
 description: "Use when reasoning about the principal angel that governs a whole domain of the lattice — arch- meaning chief/ruling. Not one bounded move (an angel) but the enduring governor that holds a region's order and shapes how its atoms bind: the architect at domain scale. The society's archangels are its religions and traditions, each composing the invariant atoms into a social order, bound by religion into one college."
 atomPath: "vocabulary/archangel"
-coordinate: "vocabulary/archangel · 2/share · 23e1e456"
-contentUuid: "04b41849-2511-5a7c-9631-91a58144ed77"
-diamondUuid: "47d2f6e0-17ec-8195-b2aa-9de895d7c610"
-uuid: "23e1e456-60e1-8956-8522-c34daee0c278"
+coordinate: "vocabulary/archangel · 2/share · ac2e664f"
+contentUuid: "53fc95b1-c91d-5028-a676-1d0e09ed9dfa"
+diamondUuid: "dc49a2eb-2669-8e61-91dc-a81a1c68b22b"
+uuid: "ac2e664f-654d-8965-9011-c9b881f4564d"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bce29ce7-d693-8698-bd43-0ca35930b42e"
+  computationUuid: "4ad1577e-4175-86e0-93df-5100daf3f5be"
   stages:
     - stage: path
       stageUuid: "1259138e-e628-84f7-ba15-b1613cd9eef9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "68343043-948f-8a68-be13-daf576e4a783"
     - stage: horo
-      stageUuid: "9d0a586b-0b80-8413-ad25-cbe49f8d3f8c"
+      stageUuid: "58220c4a-4a90-8d56-8d45-b2727d5b6bc8"
     - stage: seal
       stageUuid: "12493cd9-1fc9-87a5-be78-3a73dbe2b9d1"
     - stage: uuid
-      stageUuid: "d417fc5f-1103-88ba-86ba-a338ae5da4cd"
+      stageUuid: "6b5b719b-065e-80cd-92b0-6d12b891508f"
 version: 2
 ---
 # archangel — the principal angel that governs a domain

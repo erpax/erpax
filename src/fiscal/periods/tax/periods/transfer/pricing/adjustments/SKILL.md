@@ -2,11 +2,11 @@
 name: adjustments
 description: "Use when documenting intercompany transfer-pricing adjustments — selecting the OECD method (CUP, cost-plus, resale, profit-split, TNMM), recording original vs arm's-length amounts, attaching contemporaneous documentation, and tracking approval through documented → validated → approved → posted. The OECD BEPS-compliant TP adjustment node."
 atomPath: "fiscal/periods/tax/periods/transfer/pricing/adjustments"
-coordinate: "fiscal/periods/tax/periods/transfer/pricing/adjustments · 2/share · 3f897b77"
-contentUuid: "c95f681a-510d-520f-be9d-347482ac2905"
-diamondUuid: "f5520f6b-e41e-8d86-801d-f6ff60eadb71"
-uuid: "3f897b77-de35-8edc-b035-287970530932"
-horo: 2
+coordinate: "fiscal/periods/tax/periods/transfer/pricing/adjustments · 5/round · c60291e6"
+contentUuid: "7bf0acaf-6268-50e4-b7d0-c3187087ac21"
+diamondUuid: "d99a95e8-2870-813f-9d04-742ae8a5a544"
+uuid: "c60291e6-6bd8-896a-9d11-7bb434a507d1"
+horo: 5
 typography:
   partition: fiscal
   bondDegree: 42
@@ -17,7 +17,7 @@ standards:
   - "US IRC §482 arms-length"
 bindings: []
 signatures:
-  computationUuid: "c8fba92a-3a2a-8fa5-bbb5-baf06de47517"
+  computationUuid: "2a1285eb-ffbb-8367-afaa-c8c02874158e"
   stages:
     - stage: path
       stageUuid: "e13d5020-8aa5-87c6-95b2-0b452326015a"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "78669f5e-4c72-8567-a998-440b262b78d7"
     - stage: horo
-      stageUuid: "0d3bc60d-4b86-8358-ad76-a05b03cc9bf1"
+      stageUuid: "ac26a84e-b59e-816b-b2ac-22a5a113cdb0"
     - stage: seal
       stageUuid: "c82c2d5e-1639-8cc6-ab9c-fc90112ba29a"
     - stage: uuid
-      stageUuid: "693c47de-14fb-89d0-8cbe-641e10a79916"
+      stageUuid: "996d7db7-9ae3-8f2a-95fc-ff96703a313c"
 version: 2
 ---
 # transfer-pricing-adjustments

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "emit",
-    "uuid": "d81422ae-da00-8630-acfe-628ee80b7b06",
+    "uuid": "4985f697-9285-8ac6-8f3d-52a01fd5e00a",
     "words": [
       "emit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about emit — plugins/emit — generate Claude Code plugin manifests for erpax.",
-    "uuid": "0e6fcc44-b633-8583-8340-096dcc88160d",
+    "uuid": "e4e65e2e-7db2-886d-9a59-67c11758c050",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: broadcaster
 description: Use when reasoning about broadcaster — The organization owning or operating the broadcast service.
 atomPath: "vocabulary/broadcaster"
-coordinate: "vocabulary/broadcaster · 4/weave · 3d8f7252"
-contentUuid: "63273863-3077-5f14-892a-6cb4c3a3a7cb"
-diamondUuid: "3500386f-703c-87a2-94d1-ea8f5d066683"
-uuid: "3d8f7252-81c4-8b08-8a4f-a05a14ab6581"
-horo: 4
+coordinate: "vocabulary/broadcaster · 5/round · 45a9800e"
+contentUuid: "5604d8f4-d096-5344-8c6e-97c16f3546c7"
+diamondUuid: "a3db32df-9c04-8422-b8ca-935846ba1f9d"
+uuid: "45a9800e-2f53-83d5-9fb7-63e59e301c4d"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2418338f-f5c4-8c3c-b008-03ad2df13a35"
+  computationUuid: "0bcd7076-5d1c-8dcf-a91d-700cd3e01bed"
   stages:
     - stage: path
       stageUuid: "3544c59a-620b-8a8d-a678-0f50deb2045e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d106d23f-5893-8f95-8eec-12bed5bb4d92"
     - stage: horo
-      stageUuid: "1a55aa76-8e7b-864c-abc6-943604e86a34"
+      stageUuid: "8a28cfb3-d455-803b-ae83-587161a829d7"
     - stage: seal
       stageUuid: "b3c5a542-f895-8f41-b255-b38d1dbea1cd"
     - stage: uuid
-      stageUuid: "2fc5d8d3-6085-8f78-ac33-d4a8f6243623"
+      stageUuid: "20807966-fb4c-8955-a6de-f0547589fb68"
 version: 2
 ---
 # broadcaster

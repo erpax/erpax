@@ -2,11 +2,11 @@
 name: sourced
 description: Use when reasoning about sourced — The neurological pathway that originates the neurons.
 atomPath: sourced
-coordinate: "sourced · 2/share · ed3223d2"
-contentUuid: "02f91168-484f-52a5-a757-4b9dbd3205e6"
-diamondUuid: "9795addf-8ba9-824a-9b50-01c5947908b5"
-uuid: "ed3223d2-6261-8df4-847c-4822188b49af"
-horo: 2
+coordinate: "sourced · 1/base · c7f3b09b"
+contentUuid: "ab4aa0b8-baea-589c-b9cc-5f622c6a796d"
+diamondUuid: "8cc1cbe1-9d1a-8359-9e2e-f61ce9e61729"
+uuid: "c7f3b09b-d938-8cc1-9e38-7743ffe3624d"
+horo: 1
 typography:
   partition: sourced
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ec4fe775-c695-8fed-96d2-43ba1d81ff18"
+  computationUuid: "b10f1a6a-b18a-83d0-b85f-88aeead2e23a"
   stages:
     - stage: path
       stageUuid: "dc605167-7d55-88de-b6ad-a6ea14d6bcda"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5160fc35-0cb9-8494-9dfd-0d93ebb0b5ce"
     - stage: horo
-      stageUuid: "45c9518a-62a8-820a-9690-9584e552cef5"
+      stageUuid: "e226db50-00ed-842f-b0aa-149a9f85ea67"
     - stage: seal
       stageUuid: "ae54a2de-9a94-8fdf-afea-5a5bdc65d3b2"
     - stage: uuid
-      stageUuid: "e849dd3a-f971-8c7b-bb2e-c9f77fe8f423"
+      stageUuid: "fe6f769f-acd9-8543-91a8-ea09b0a885e8"
 version: 2
 ---
 # sourced

@@ -2,11 +2,11 @@
 name: marine
 description: "Use when reasoning about the law of the sea on the quantum scale — maritime jurisdiction as geometry (UNCLOS zones from distance), flag-state governance as the vessel's content-identity, and general average as maritime double-entry; educational, not legal advice."
 atomPath: "quantum/marine"
-coordinate: "quantum/marine · 5/round · 5ff16fbe"
-contentUuid: "fc84e2e2-f18b-5136-b593-f6c210567984"
-diamondUuid: "bf5644eb-275f-846d-b08e-4c49055488c8"
-uuid: "5ff16fbe-190e-8555-afde-95438efc09e7"
-horo: 5
+coordinate: "quantum/marine · 1/base · 6821c057"
+contentUuid: "85067956-c237-5642-a5ce-e7b64ab75d7c"
+diamondUuid: "07faf3c4-456c-807e-ac66-f1a412906834"
+uuid: "6821c057-7e00-864c-bc13-129be210c9ed"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "UNCLOS (1982) Arts. 3·33·57·86·92; the York-Antwerp general-average principle"
 bindings: []
 signatures:
-  computationUuid: "902c8997-db27-84cd-b876-f54a4a991164"
+  computationUuid: "1081f2aa-0e82-8ec0-9be6-6d7b4d997f7e"
   stages:
     - stage: path
       stageUuid: "08ca1fa5-f3cc-81ec-8041-a6d17cf30cab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ac5c39b3-ff11-88c1-8ee3-11e09c5b6f31"
     - stage: horo
-      stageUuid: "d977ae2a-454a-84d6-86d9-56ae981dd79a"
+      stageUuid: "4c635cef-5e91-8b1f-92bb-b333c0e75b7f"
     - stage: seal
       stageUuid: "b62b0911-135e-8eba-b654-8a2b486277e5"
     - stage: uuid
-      stageUuid: "775df340-cdc4-80c5-8faf-c7d4cedecc75"
+      stageUuid: "8742fd4a-3744-8cff-90ac-3c4b534d1834"
 quantum:
   superposition:
     - accounting
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "902c8997-db27-84cd-b876-f54a4a991164"
-    contentUuid: "fc84e2e2-f18b-5136-b593-f6c210567984"
+    computationUuid: "1081f2aa-0e82-8ec0-9be6-6d7b4d997f7e"
+    contentUuid: "85067956-c237-5642-a5ce-e7b64ab75d7c"
 version: 2
 ---
 # quantum/marine — the law of the sea, encoded in math
@@ -82,4 +82,4 @@ Matter-twin: `src/quantum/marine/index.ts` (`zoneOf` · `jurisdiction` · `gener
 @audit zones computed from distance, general average proportional to value — never asserted
 @standard UNCLOS (1982) Arts. 3·33·57·86·92; the York-Antwerp general-average principle
 
-<sub>content-uuid `fc84e2e2-f18b-5136-b593-f6c210567984` · account `quantum/marine` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `85067956-c237-5642-a5ce-e7b64ab75d7c` · account `quantum/marine` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

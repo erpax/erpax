@@ -2,18 +2,18 @@
 name: immutability
 description: "Use when reasoning about whether a posted GL posting can be altered — the beforeChange hook that seals a row once postedDate is set, allowing an admin edit only with a documented override. Read this before assuming postings are immutable: the hook is correct, tested, and attached to NO collection, and gl-postings lacks the override fields it requires."
 atomPath: "enforce/posting/immutability"
-coordinate: "enforce/posting/immutability · 4/weave · db08f8e3"
-contentUuid: "3db16963-fb91-54ba-8876-c3b4ff94385d"
-diamondUuid: "2bafb32c-89f7-89cc-8894-e73bdf876f10"
-uuid: "db08f8e3-e7e7-8c66-bce0-fd43c42e6979"
-horo: 4
+coordinate: "enforce/posting/immutability · 8/crest · 8310b100"
+contentUuid: "0fb6c8cc-e412-5ac5-a2a6-452175212490"
+diamondUuid: "966dc75a-300a-8a82-89dc-4cf745903303"
+uuid: "8310b100-c161-81ff-9373-8eda147f6579"
+horo: 8
 typography:
   partition: enforce
   bondDegree: 16
 standards: []
 bindings: []
 signatures:
-  computationUuid: "885ef7d1-f334-85da-96e4-1589ee41732a"
+  computationUuid: "833f7bd0-4078-84e2-96e4-e4e01d51563a"
   stages:
     - stage: path
       stageUuid: "5c27898d-870f-8413-b4a1-cefb393a0de5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b01135af-b421-801b-84a1-4172c3437f56"
     - stage: horo
-      stageUuid: "a88c80e9-ba35-82d8-98db-c6704a0f0abe"
+      stageUuid: "68c55249-16f3-8ae1-9339-e7badaa5d055"
     - stage: seal
       stageUuid: "e0eed64e-cd94-85b2-be39-9ba4a2eac4b5"
     - stage: uuid
-      stageUuid: "30cb7fe3-b16a-851c-95a0-ba167bc422ab"
+      stageUuid: "8d4e76e9-f1f1-8c28-b04a-a2fdc69cb343"
 version: 2
 ---
 # immutability — the control was written, tested, and guarded nothing; it is attached now

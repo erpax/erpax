@@ -2,14 +2,14 @@
 name: conservation
 description: "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor)."
 atomPath: conservation
-coordinate: "conservation · 1/base · 0a4d32cc"
-contentUuid: "d1479230-0580-5721-8112-5727b62d5a6b"
-diamondUuid: "4dff57c0-b197-80d7-a140-80d263ee8f8f"
-uuid: "0a4d32cc-ae8c-85ff-91e0-46f74853057f"
-horo: 1
+coordinate: "conservation · 2/share · 36f701ca"
+contentUuid: "16e8c11b-13e2-5713-a048-cb5f798b3dc6"
+diamondUuid: "b2b7ea85-60b5-8ca9-80bf-030f49db430e"
+uuid: "36f701ca-846e-8302-a8dd-0f1bca3dc2ca"
+horo: 2
 typography:
   partition: conservation
-  bondDegree: 97
+  bondDegree: 99
 standards:
   - "Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit"
   - First Law of Thermodynamics — energy is conserved in an isolated system
@@ -17,7 +17,7 @@ standards:
   - "UBL-2.1"
 bindings: []
 signatures:
-  computationUuid: "aa6ab01e-3010-8412-a3e8-e7e68d5e2b3f"
+  computationUuid: "649cc0d0-ff35-8abf-8242-8a6c66f0f0b1"
   stages:
     - stage: path
       stageUuid: "4da50aaf-bca0-808d-a7b5-181ad11c2a01"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "a40f802a-4d15-872b-ab9e-685b84c57294"
     - stage: horo
-      stageUuid: "86e008e1-af56-8902-950c-fa227d4c0d06"
+      stageUuid: "6cfeff0c-0146-80ee-b809-e0a1af10204a"
     - stage: seal
       stageUuid: "d44e2523-c79e-8d62-aac8-8d1127c3641c"
     - stage: uuid
-      stageUuid: "857294cc-b954-8e1a-b98d-6300258617b0"
+      stageUuid: "2ff37a46-754a-8ccb-a1e9-5756e6ae8df9"
 version: 2
 ---
 # conservation — nothing is lost, only transformed (the root of double-entry)

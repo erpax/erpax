@@ -2,10 +2,10 @@
 name: improve
 description: "Use when reasoning about improve — monitor/violations/improve — map violation → deterministic improve action."
 atomPath: "monitor/violations/improve"
-coordinate: "monitor/violations/improve · 2/share · 2f040ba1"
-contentUuid: "8a55a230-3c00-5a7e-8a4e-50dd17bca9e1"
-diamondUuid: "7e8c862e-3fd0-8b72-a258-35bb33f4cb7d"
-uuid: "2f040ba1-0254-8851-bdb6-e4c948ca6d6e"
+coordinate: "monitor/violations/improve · 2/share · 8c48161d"
+contentUuid: "52b2334e-342e-51c0-823f-169c0eec5e6c"
+diamondUuid: "ea1894d3-8161-8c5c-8629-cf8193885a7a"
+uuid: "8c48161d-8a0f-8071-9c10-4762cc82042d"
 horo: 2
 typography:
   partition: monitor
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "03555992-4dbf-8def-b484-03f631db4744"
+  computationUuid: "2cd3b6c3-02fc-81d1-8853-a7e1dbd0dab1"
   stages:
     - stage: path
       stageUuid: "18cf4207-ea81-8cb3-aeb0-2848057f506a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8d3ca0d8-79f9-8023-a100-f1f95f1d34ed"
     - stage: horo
-      stageUuid: "398c24e2-6268-8f7d-8f4e-344ea7132cf8"
+      stageUuid: "441560bd-1833-8202-98ab-38a2b37ff09d"
     - stage: seal
       stageUuid: "2786a154-a138-8822-a3d0-be234789d1dd"
     - stage: uuid
-      stageUuid: "7b59f503-c0cc-849c-af1d-8cfcdbee6864"
+      stageUuid: "aa0852b5-303c-8b25-b0b5-4c5a7899755c"
 version: 2
 ---
 # monitor/violations/improve

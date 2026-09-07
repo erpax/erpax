@@ -2,19 +2,19 @@
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
 atomPath: sparsity
-coordinate: "sparsity · 7/descent · 8fe97d29"
-contentUuid: "d59d3152-51e5-559c-b1de-cc170012f434"
-diamondUuid: "b8800bbc-45f5-8f25-8ca6-ea8bb0351a9c"
-uuid: "8fe97d29-70cd-8de3-809b-7f000547b542"
-horo: 7
+coordinate: "sparsity · 4/weave · 4c6f0f6c"
+contentUuid: "f1901cfa-1a3c-5e73-8678-bcb758d6b45b"
+diamondUuid: "dd7d3e2a-6659-8996-a85a-b47226af0006"
+uuid: "4c6f0f6c-5ad7-8a49-ad72-ec5f4e6f9283"
+horo: 4
 typography:
   partition: sparsity
-  bondDegree: 79
+  bondDegree: 81
 standards:
   - "ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation"
 bindings: []
 signatures:
-  computationUuid: "f20d99ed-8ec0-8f3a-aa10-a7c854f71e02"
+  computationUuid: "e16edd85-d43e-8437-9713-bba3d9012bdd"
   stages:
     - stage: path
       stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3598cef6-cb85-8eae-83ac-0a1bcfd60fcf"
     - stage: horo
-      stageUuid: "75dcfb72-1179-84d0-9569-626556a21cfa"
+      stageUuid: "3865af49-fc50-8a1e-ae17-f6286e5d062f"
     - stage: seal
       stageUuid: "05ff4ba5-f389-8961-93c4-317fa21cc0d4"
     - stage: uuid
-      stageUuid: "0731d746-ce72-8737-b854-d1e1533b71f4"
+      stageUuid: "58465181-e940-8b1c-88f9-9d692365cb51"
 version: 2
 ---
 # sparsity — the active fraction (few of many, alive at once)

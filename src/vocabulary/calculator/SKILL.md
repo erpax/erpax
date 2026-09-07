@@ -2,11 +2,11 @@
 name: calculator
 description: "Use when reasoning about calculator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/calculator"
-coordinate: "vocabulary/calculator · 5/round · f1e7547b"
-contentUuid: "842e5a15-7854-53f1-8093-f5330f00fa29"
-diamondUuid: "677cfd11-ab8b-8faf-9f63-9ccf3d2f6a88"
-uuid: "f1e7547b-d920-8a99-9b22-947ae41b8b9f"
-horo: 5
+coordinate: "vocabulary/calculator · 1/base · d164f4c3"
+contentUuid: "f16e5dae-7868-5c41-b1ac-15143ebb0a63"
+diamondUuid: "6fcc5c57-43dd-819e-b326-c7107a9d09eb"
+uuid: "d164f4c3-2541-84f8-941b-ed56f0f9c9ae"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fe37d20c-f271-8487-a5aa-ac72e0a3785d"
+  computationUuid: "0024c1a4-b481-84c6-8af6-1887a4eb9096"
   stages:
     - stage: path
       stageUuid: "f00b4bf2-d69a-89af-a358-f33f5141ed28"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b76c998-6e4e-8e5f-81e0-bda3b3ecdfea"
     - stage: horo
-      stageUuid: "561b9283-beb4-8083-ac28-14a49ed7daa7"
+      stageUuid: "9ab31c55-4363-8a62-ab8f-eb52592adbcb"
     - stage: seal
       stageUuid: "3dda87f3-3b89-8038-85ed-b0d4d3e7e5d4"
     - stage: uuid
-      stageUuid: "0cfbee6d-a460-8a8a-b657-96bd9b9db478"
+      stageUuid: "1b2cda77-2e29-87ce-819f-33a055225ad0"
 version: 2
 ---
 # calculator

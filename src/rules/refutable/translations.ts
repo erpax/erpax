@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "refutable",
-    "uuid": "dfb7e830-02e4-808a-b31d-6c5d0b4caf5b",
+    "uuid": "e3971a53-d3f7-8821-86b7-d8efa982c2cd",
     "words": [
       "refutable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that the corpus's claims can be contradicted — an @invariant is a proposition asserted in prose, and one with no test beside it is unfalsifiable: it reads as true forever and nothing will ever say no. A lie is not found by checking truth (fiction and truth read identically); it is found by demanding refutability, because an unrefutable claim is the only place a lie is safe. Run: tsx src/rules/refutable/index.ts",
-    "uuid": "7e755d37-0c8a-8ffa-af8c-34898a317bd5",
+    "uuid": "10d688f2-4fd4-841b-b9f1-d29b602b6647",
     "words": [
       "use",
       "when",

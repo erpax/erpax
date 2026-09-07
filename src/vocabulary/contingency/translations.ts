@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contingency",
-    "uuid": "d72a6c45-eb73-8b67-8a31-1602e96d1dc8",
+    "uuid": "1563650f-a92b-897f-b178-e67496e0c5f8",
     "words": [
       "contingency"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one contingency — the singular model of the contingencies collection (the plural store); a possible obligation that depends on an uncertain future event.",
-    "uuid": "a2151aa5-ebfa-8e18-bda7-e627fdca590e",
+    "uuid": "f27603f1-4e2e-86b5-909a-84d5190342d4",
     "words": [
       "use",
       "when",

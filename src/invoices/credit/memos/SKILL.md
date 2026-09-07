@@ -2,11 +2,11 @@
 name: memos
 description: "Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection."
 atomPath: "invoices/credit/memos"
-coordinate: "invoices/credit/memos · 8/crest · dfba9896"
-contentUuid: "84877453-594f-53fd-ace8-96f1b608e8a9"
-diamondUuid: "b21d8e0f-dfa9-82d9-aee8-20757bc28cd5"
-uuid: "dfba9896-b833-8506-8721-db3650904e29"
-horo: 8
+coordinate: "invoices/credit/memos · 4/weave · e8d44529"
+contentUuid: "f81c1552-9f17-5b48-81b0-a9b6b9ca208f"
+diamondUuid: "3af4f446-2677-85ac-a285-1d088f3db037"
+uuid: "e8d44529-e788-8b12-b01b-556b6937cbd4"
+horo: 4
 typography:
   partition: invoices
   bondDegree: 22
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "016a79cd-db0b-84bf-91bd-fcc9a1674d85"
+  computationUuid: "5b8914a1-6569-8c33-94f9-c0232e327fcb"
   stages:
     - stage: path
       stageUuid: "10aa267b-48ee-8085-8027-5403424717c1"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "5d3e1112-88c1-88ff-be5e-814c34cc42d6"
     - stage: horo
-      stageUuid: "da1a75b4-8d06-8cea-9fed-6c7df0c545cd"
+      stageUuid: "26fe3acd-cfb7-8833-a181-b07c5b8137a5"
     - stage: seal
       stageUuid: "7a8d4577-a184-8ccb-9196-6b68a8daa14f"
     - stage: uuid
-      stageUuid: "989b2938-85cc-847b-9b84-68de48306cf0"
+      stageUuid: "408a94f5-fd17-893a-838b-122f59388a50"
 version: 2
 ---
 # credit-memos

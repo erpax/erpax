@@ -2,11 +2,11 @@
 name: main
 description: "Use when reasoning about main as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/main"
-coordinate: "vocabulary/main · 7/descent · 9c258058"
-contentUuid: "517ab81f-a192-56ed-ac5d-6d1c81e9adc0"
-diamondUuid: "110284a6-5936-84a4-bdef-71ac61a3df4e"
-uuid: "9c258058-52e6-816b-83ed-c216f260eba4"
-horo: 7
+coordinate: "vocabulary/main · 5/round · 3c7b40e9"
+contentUuid: "ceb267ce-d9ef-5115-aec2-b74a1a773107"
+diamondUuid: "0af5e0b9-326d-8489-b516-49deaa3c5e01"
+uuid: "3c7b40e9-25be-844f-8d70-bbf5079f1ede"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4d004183-da47-8bdb-8c5e-b908f6330e00"
+  computationUuid: "c5154ed5-c618-8498-bd3f-7d1a623a8ba9"
   stages:
     - stage: path
       stageUuid: "588ae9d9-ee2d-8baa-968d-053c9af59f44"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b5b0bf64-759b-8c58-91ec-fd96725f9cda"
     - stage: horo
-      stageUuid: "a23d4845-1686-8613-af60-a5a4243c2618"
+      stageUuid: "7d414b61-694a-877a-a197-41fdf92005a4"
     - stage: seal
       stageUuid: "90affcb3-2d5c-8a02-9fb8-b8b4072ae181"
     - stage: uuid
-      stageUuid: "a310a0de-7896-8967-b9b9-c431424b518d"
+      stageUuid: "3954545a-1032-81e3-b2e4-e60ba105c304"
 version: 2
 ---
 # main

@@ -2,18 +2,18 @@
 name: fingerprint
 description: "Use when a whole-corpus derivation (rules snapshot, readme graph, corpus context) is computed by many callers — corpusFingerprint + memoByFingerprint reuse the one scan across siblings, the compute-tier of learn-by-shared-experience and the buildable AI-bill lever."
 atomPath: "cache/fingerprint"
-coordinate: "cache/fingerprint · 1/base · 633f3c96"
-contentUuid: "d3bc6c2e-020d-5101-9ac4-cf4a266400ff"
-diamondUuid: "f5380f1e-ac68-8072-aad8-8575403d082b"
-uuid: "633f3c96-37b4-8cb6-ae71-a0cb83abb118"
-horo: 1
+coordinate: "cache/fingerprint · 5/round · e795e3ea"
+contentUuid: "c236a305-2895-53c1-b4e1-a114a23f9c74"
+diamondUuid: "b36db398-3f58-8fd8-bf00-06c7ad6ebb9c"
+uuid: "e795e3ea-b959-8ff9-8fce-8f299014aaf1"
+horo: 5
 typography:
   partition: cache
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a33dee7e-4a31-817d-8d44-283d4c5a6f95"
+  computationUuid: "7839b529-9195-8247-a972-e86100b50f64"
   stages:
     - stage: path
       stageUuid: "9330f767-034a-8e89-98a5-6408dacef4a6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a7c43aa0-7f93-8744-874e-30078f10f86d"
     - stage: horo
-      stageUuid: "f5bdaee0-1864-8e57-8c22-879cb8913680"
+      stageUuid: "be2dd939-0424-889b-878a-7fddf347c906"
     - stage: seal
       stageUuid: "228b64f1-3fd2-845e-85b6-dffa239fdd32"
     - stage: uuid
-      stageUuid: "88c729cd-7578-87ce-bbdf-df921f2d607e"
+      stageUuid: "67603614-349f-8617-b033-c258ca289105"
 version: 2
 ---
 # cache/fingerprint — reuse the whole-corpus scan, never re-derive it

@@ -2,18 +2,18 @@
 name: impact
 description: "Use when reasoning about impact — The full-bleed hero. It also **darkens the header on mount** — the hero paints white text over its own dark field, and the header sits on top of it, so a header left in its light…"
 atomPath: "heros/high/impact"
-coordinate: "heros/high/impact · 8/crest · 038d81b4"
-contentUuid: "6c5f05da-9f95-587e-ad0f-450bf44d9f13"
-diamondUuid: "5b2b8bd0-3898-8093-92cc-05c76f6c868f"
-uuid: "038d81b4-f9c6-83f7-a8c5-82d26fea2b8c"
-horo: 8
+coordinate: "heros/high/impact · 5/round · 0ab4e729"
+contentUuid: "a8138fbc-e975-5690-8325-f7e06ef0797d"
+diamondUuid: "4d9694d6-9fbf-8a7a-8def-85976f681bf8"
+uuid: "0ab4e729-66c3-8dbc-b091-c2a65a789f87"
+horo: 5
 typography:
   partition: heros
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d9fe38cd-7101-86ac-a72a-6041f954e5a3"
+  computationUuid: "ade86c21-fdf7-8d44-a075-663ff027ced9"
   stages:
     - stage: path
       stageUuid: "b6d027c5-93f3-8ca7-bc9a-4f0467a0f760"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f97d0d84-45aa-8a75-a402-014fcf6d7164"
     - stage: horo
-      stageUuid: "f17c0049-904b-815b-a964-35a1d17b9080"
+      stageUuid: "681f3f45-6682-8ecd-8029-afee1d24af5c"
     - stage: seal
       stageUuid: "eaf792de-f497-8292-b52e-922c0e72fbbe"
     - stage: uuid
-      stageUuid: "6e9c33f7-e5c2-84ce-9c06-a5fc292e90cb"
+      stageUuid: "e641aa02-a16e-8204-b788-506503dda001"
 version: 2
 ---
 # heros/high/impact — a set of links is a LIST, and an empty set is no list at all

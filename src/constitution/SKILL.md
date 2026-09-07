@@ -2,14 +2,14 @@
 name: constitution
 description: "Use when reasoning about the entrenched foundation, or when judging whether a proposed change may ship — two rules at the root (no expectation: claim no result you have not computed; no judgment: reject nothing you have not measured, discernment by test kept), the nine laws that are their lemmas (duality · legality · honest boundaries · balance · service · conservation · reciprocity · reproducibility · regeneration), and the seven supreme articles saying what a majority may amend versus what is perpetual; every predicate computed, fails closed, and heads every agent prompt."
 atomPath: constitution
-coordinate: "constitution · 5/round · 2f4b7f79"
-contentUuid: "7b9c827f-e3c6-52ac-82c9-aad4457b179b"
-diamondUuid: "50b54a04-93f5-80ab-828f-ffa9460e2ed1"
-uuid: "2f4b7f79-9461-8a76-aa20-beeff1a8195b"
-horo: 5
+coordinate: "constitution · 8/crest · a9831c46"
+contentUuid: "73c3e169-f131-5aa9-b3cb-90e447d1cb5f"
+diamondUuid: "39f63912-2f41-8def-89df-c10e9f51d65e"
+uuid: "a9831c46-1829-84ac-9f0d-f784dd1e3e04"
+horo: 8
 typography:
   partition: constitution
-  bondDegree: 61
+  bondDegree: 81
 standards:
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose"
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "808164e6-eac2-8040-910c-b411ddf63bbf"
+  computationUuid: "a59c43f8-51c1-85ea-8d0b-83fe8a195610"
   stages:
     - stage: path
       stageUuid: "210a2855-2ef2-8f53-8a65-93ebae61b5f1"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "f884e2b1-1a03-8756-95d8-fa23f5d26198"
     - stage: horo
-      stageUuid: "75cdae52-4e01-86a7-88ad-a004b9d00907"
+      stageUuid: "375d5154-294a-85cf-b215-7cc090775cc2"
     - stage: seal
       stageUuid: "79d6cdcb-5abc-8ea1-af80-6c8ad39015bf"
     - stage: uuid
-      stageUuid: "6ca75f46-57a9-8d4c-802c-7f9ac33aaa09"
+      stageUuid: "c2c828bf-957c-866d-9732-c8454f682ab2"
 version: 2
 ---
 # constitution — the 0 of the sequence, the supreme law erpax derives from

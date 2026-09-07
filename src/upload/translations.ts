@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "upload",
-    "uuid": "1e67c50a-ad0b-8089-942c-3e727526123b",
+    "uuid": "b415a4a5-de18-8f3b-9fea-4e4778bdc349",
     "words": [
       "upload"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when configuring a Payload upload collection or debugging file handling — image sizes/crop/focal point, mime/file-size limits, storage adapters (R2/S3), static serving, or securing uploaded files.",
-    "uuid": "aae295bc-8924-8755-ab6a-479353a6fb09",
+    "uuid": "5d383885-150b-8da8-b01d-fad95644e7d4",
     "words": [
       "use",
       "when",

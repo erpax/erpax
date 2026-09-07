@@ -2,10 +2,10 @@
 name: male
 description: "Use when reasoning about male as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/male"
-coordinate: "vocabulary/male · 8/crest · b3f27891"
-contentUuid: "35b6f371-a9ef-5c79-9258-dcd66d7e6799"
-diamondUuid: "ad1fd862-5783-8746-a719-d16a5ee50d89"
-uuid: "b3f27891-8f05-8e38-9b9a-86bbc6ba72b1"
+coordinate: "vocabulary/male · 8/crest · 46f9586d"
+contentUuid: "2551d81d-bba6-5f92-88fd-2f49ddc84bd8"
+diamondUuid: "80a9b14b-3e15-8a32-9e43-b4287c8a8b87"
+uuid: "46f9586d-a648-8ba5-955c-3685fdb13bc8"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "873ef5ac-43fc-8a16-8574-5cf8b1b25863"
+  computationUuid: "84ad2bcb-1d29-8eb5-b94d-46dc4966ff20"
   stages:
     - stage: path
       stageUuid: "0b549d86-409c-8538-bf95-567ee859c06c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "20ba7c19-053c-8468-b27f-8512a1ac1977"
     - stage: horo
-      stageUuid: "1f48a262-1a46-88af-9064-fa8366311f64"
+      stageUuid: "c36639d9-20ce-8cbd-9c96-0b2bbee51a51"
     - stage: seal
       stageUuid: "ae6adde0-4fbd-832a-8230-0683667f5b10"
     - stage: uuid
-      stageUuid: "fbe7ae4f-b3ed-8790-9568-ebb6bf5a2157"
+      stageUuid: "65a040fb-66f3-8b4e-a7ca-81f25f93ab99"
 version: 2
 ---
 # male

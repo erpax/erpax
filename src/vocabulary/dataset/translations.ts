@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dataset",
-    "uuid": "d6fed9f4-00b6-831b-b497-031757a68350",
+    "uuid": "59dedccb-2b8c-8e56-bf9b-1b00f0c7b201",
     "words": [
       "dataset"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dataset — A body of structured information describing some topic(s) of interest.",
-    "uuid": "f4c0574d-8a43-8a08-ae95-f73cb9f950c0",
+    "uuid": "28121e45-646a-85fe-8f76-da1bb43f449d",
     "words": [
       "use",
       "when",

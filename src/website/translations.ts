@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "website",
-    "uuid": "9a2ffa25-e14c-8d1f-995b-76fd45d34d23",
+    "uuid": "a3efa4d5-adff-8236-ae6d-d02b2f8d40a6",
     "words": [
       "website"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society must be SEEN, heard, and felt — auto-seeding Payload's pages from the spec corpus, the e2e multimedia walkthroughs, and federation peers; the perceptible outward face of the content-addressed record.",
-    "uuid": "4e632a11-6ea0-878b-9f43-2315262114cb",
+    "uuid": "80629113-3097-89d7-946e-7dc97ec741db",
     "words": [
       "use",
       "when",

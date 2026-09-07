@@ -2,11 +2,11 @@
 name: leisure
 description: "Use when reasoning about leisure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/leisure"
-coordinate: "vocabulary/leisure · 2/share · 83550a65"
-contentUuid: "10a73649-6299-5414-bb03-1a8c57dbb19b"
-diamondUuid: "f733efd4-9fa8-8d44-90ea-240da1c27b6f"
-uuid: "83550a65-73db-841d-a4ba-78dc2dad2b52"
-horo: 2
+coordinate: "vocabulary/leisure · 7/descent · f5de3748"
+contentUuid: "218b938f-a8fb-5c93-b011-5f362d4153bc"
+diamondUuid: "6ff3c6c2-293a-8811-b419-535b7502c740"
+uuid: "f5de3748-e324-8272-82dc-d6edb9f60f98"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7cd10f4e-b7b7-80b2-8173-dfc62a1858be"
+  computationUuid: "1fb02a59-cf88-875a-bf18-35e14ea902a6"
   stages:
     - stage: path
       stageUuid: "c53782ab-fca2-8367-9e77-dfcc625b4619"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e55b3291-c3f3-8880-a74a-8eb3f856cd0f"
     - stage: horo
-      stageUuid: "cb810c1b-6866-860f-9e1d-55772f9a0d8d"
+      stageUuid: "3a980a6a-891d-8553-a99c-96bad1b6faf0"
     - stage: seal
       stageUuid: "38caced4-9093-81cb-be87-76b330c90a04"
     - stage: uuid
-      stageUuid: "72421fea-ff1f-8d03-8a26-d2a1eebfe1d9"
+      stageUuid: "fdb87810-5b3a-80c2-826f-aa2e0c5c8b4c"
 version: 2
 ---
 # leisure

@@ -2,18 +2,18 @@
 name: css
 description: "Use when a stylesheet is imported, stubbed, or reasoned about in build or typegen — CSS is the form facet of the styling/visual dimension (glyph ⊕ style), a complete diamond atom: each file content-addressed and sealed; Node must recognize .css as a valid diamond surface, never ERR_UNKNOWN_FILE_EXTENSION off-ring escape."
 atomPath: css
-coordinate: "css · 8/crest · ab57b312"
-contentUuid: "79841fd1-2a7e-51d5-8baf-3f672b107b66"
-diamondUuid: "b279c918-fbdc-8c3c-9003-5eff967bff1d"
-uuid: "ab57b312-6f4b-85b2-8929-8eb5a501fc5e"
-horo: 8
+coordinate: "css · 4/weave · 67938225"
+contentUuid: "daf287eb-3354-56e3-bd75-e1262197a219"
+diamondUuid: "68b5ec07-e5f9-81fc-b7be-308c70a65190"
+uuid: "67938225-3b8d-81cd-abf1-d04057041d4d"
+horo: 4
 typography:
   partition: css
   bondDegree: 59
 standards: []
 bindings: []
 signatures:
-  computationUuid: "47c13e43-42d7-8433-9593-a55cb13d900b"
+  computationUuid: "5008732d-c934-8fbf-bf73-e89e785ff816"
   stages:
     - stage: path
       stageUuid: "c84b68a7-f352-88aa-bacb-a0c834de568c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8f5c87a9-f1b4-8d89-ac21-7b7528baed7a"
     - stage: horo
-      stageUuid: "40a62eba-0e3d-843c-9779-78507c78645d"
+      stageUuid: "8f3b490f-d3d9-8d4a-8aef-63383aeb2e1c"
     - stage: seal
       stageUuid: "d67e65d6-3536-8509-a221-4d4cf5586dd5"
     - stage: uuid
-      stageUuid: "caf9da0b-d1bc-80fa-a458-596c7dbf280f"
+      stageUuid: "79d33da8-dad7-82de-830c-253592678d41"
 version: 2
 ---
 # css — the styling diamond (glyph ⊕ style)

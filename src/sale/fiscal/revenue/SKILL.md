@@ -2,11 +2,11 @@
 name: revenue
 description: "Use when recognising the revenue of a fiscalised sale — turns a closed sale into the accounting fact, and reverses it through the reverse path rather than deleting anything."
 atomPath: "sale/fiscal/revenue"
-coordinate: "sale/fiscal/revenue · 7/descent · 8fe679fe"
-contentUuid: "6f5d40be-0a24-5f3a-bf62-57aee6a246a9"
-diamondUuid: "ef601fa2-ed44-886b-a558-873501350a56"
-uuid: "8fe679fe-bd00-8864-b236-dbc06ee4f3c7"
-horo: 7
+coordinate: "sale/fiscal/revenue · 1/base · 77a25df2"
+contentUuid: "dbda1a74-6e25-52da-a27d-7d249d725341"
+diamondUuid: "3c9cf585-7492-89be-802b-66922bada91a"
+uuid: "77a25df2-6e73-8958-beca-b79f30bfc922"
+horo: 1
 typography:
   partition: sale
   bondDegree: 42
@@ -15,7 +15,7 @@ standards:
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
 bindings: []
 signatures:
-  computationUuid: "0d1bee71-77d1-8ccf-9cf0-be49340c7711"
+  computationUuid: "538f274f-d3f0-838b-9c9b-981607d9b9d4"
   stages:
     - stage: path
       stageUuid: "61acffc3-b56a-8e09-a4ee-0523ced75356"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "170599cd-229a-8427-92ef-ca9f4afbec78"
     - stage: horo
-      stageUuid: "b4f42f5f-d4d8-8bd8-bc92-28e085354905"
+      stageUuid: "47e33b07-be2b-8c4e-96d4-e308275c80ac"
     - stage: seal
       stageUuid: "62910cc0-15a0-81a3-af76-92a6194d83f2"
     - stage: uuid
-      stageUuid: "d98bb232-0c98-8a37-8395-b48e284fdb29"
+      stageUuid: "9fbf4ff7-e2e8-8c5d-a125-ee25d77f5be1"
 version: 2
 ---
 # revenue

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "platonic",
-    "uuid": "a7795aeb-17d8-8eb2-a882-8d7ab7e4f4a6",
+    "uuid": "1a203707-7959-8531-9f22-afdd23fe1cec",
     "words": [
       "platonic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the sphere must be understood as swept, not given — each of the five regular solids has a circumsphere, rotation is an isometry, so a vertex in motion never leaves it, and the orbit fills the sphere. The vertices are the seeds; what rounds them to a sphere is gravity = the fold: the central pull to equal distance. The octahedron's 6 vertices are the 6 globe directions. Rigorous geometry; the corpus mapping is a model.",
-    "uuid": "f2ef550e-c2ff-8e96-944e-0fe08cdbebf6",
+    "uuid": "57724d3b-ee8c-89c8-997f-52350d4b1f51",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: consultant
 description: "Use when reasoning about the trained quantum consultant — it covers every aspect of life the corpus holds, is trained by coordinated brainstorming (diverge into perspectives, converge to one), and consults at infinite ROI; the breadth of the knowledge is the breadth of the consultant."
 atomPath: "quantum/consultant"
-coordinate: "quantum/consultant · 5/round · cba96d3a"
-contentUuid: "48cc80dc-b0e9-55f3-9dc7-abf1011d6088"
-diamondUuid: "4f4fa466-76a0-8844-b27a-de32856373a1"
-uuid: "cba96d3a-e11a-8ba0-81fa-bc771c96cce0"
-horo: 5
+coordinate: "quantum/consultant · 8/crest · 07982944"
+contentUuid: "8ec7588a-c515-562d-a59f-08d3fafb17a7"
+diamondUuid: "d8a90cea-e85f-89f7-81c6-97f40cb07d17"
+uuid: "07982944-2587-8b7b-a553-bdf36e13c802"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "coordinated divergence ⊕ convergence (the brainstorm method); non-rivalrous consulting economics"
 bindings: []
 signatures:
-  computationUuid: "8eef60f8-8d7c-8745-a101-53ab708b865a"
+  computationUuid: "a73b544b-468f-8cd5-aad5-3b7081c70367"
   stages:
     - stage: path
       stageUuid: "33979f3c-f689-80f3-908c-5bab50ac43c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a77d9d19-6f28-8fb1-9e79-bf0aa53f40ff"
     - stage: horo
-      stageUuid: "913fd87d-3cb2-8bad-93c5-d79991c56e69"
+      stageUuid: "0e75d84e-f8d0-8f87-9c3b-85a2ac6b13eb"
     - stage: seal
       stageUuid: "040c4cd8-c729-8463-acb2-d3d23c1f491f"
     - stage: uuid
-      stageUuid: "cca614cd-2529-835c-8120-cb99285a7421"
+      stageUuid: "76314847-7e73-89b4-8361-dd748a8e7c34"
 quantum:
   superposition:
     - akashic
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "8eef60f8-8d7c-8745-a101-53ab708b865a"
-    contentUuid: "48cc80dc-b0e9-55f3-9dc7-abf1011d6088"
+    computationUuid: "a73b544b-468f-8cd5-aad5-3b7081c70367"
+    contentUuid: "8ec7588a-c515-562d-a59f-08d3fafb17a7"
 version: 2
 ---
 # quantum/consultant — covers all aspects of life
@@ -81,4 +81,4 @@ Matter-twin: `src/quantum/consultant/index.ts` (`aspects` · `covers` · `covera
 @audit aspects + coverage read live from the corpus; the consultation ROI from quantum/consulting, never asserted
 @standard coordinated divergence ⊕ convergence (the brainstorm method); non-rivalrous consulting economics
 
-<sub>content-uuid `48cc80dc-b0e9-55f3-9dc7-abf1011d6088` · account `quantum/consultant` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `8ec7588a-c515-562d-a59f-08d3fafb17a7` · account `quantum/consultant` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

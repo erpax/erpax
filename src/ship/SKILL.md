@@ -2,11 +2,11 @@
 name: ship
 description: "Use when reasoning about ship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: ship
-coordinate: "ship · 5/round · a1e0547b"
-contentUuid: "106b26b6-a48d-5639-9570-7e79df14b573"
-diamondUuid: "bf0f7ef7-3998-817a-8d68-fc3779212778"
-uuid: "a1e0547b-857b-8ba0-88bc-4e9bfa06fd78"
-horo: 5
+coordinate: "ship · 4/weave · d8bf6162"
+contentUuid: "f8e81188-b08c-559a-ab4f-5d336d5144f5"
+diamondUuid: "d41ae78e-614f-8720-918b-eed20497df8f"
+uuid: "d8bf6162-f126-8d74-8a16-800731594473"
+horo: 4
 typography:
   partition: ship
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "97d07195-3e11-8db7-a232-e0436d3972a2"
+  computationUuid: "4049d399-eefc-82fe-953c-648fa9a2e01a"
   stages:
     - stage: path
       stageUuid: "000eb44a-0326-8933-b784-6a790c180f38"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1aefad24-4cd4-8be7-9fe7-bb6336f8d194"
     - stage: horo
-      stageUuid: "1a4599ba-abea-8073-acd7-6f854434e4c6"
+      stageUuid: "2e53da14-90a0-81f4-979d-17d84ae2bbc5"
     - stage: seal
       stageUuid: "f5e3f668-2505-836f-b0da-a62b194e5cf1"
     - stage: uuid
-      stageUuid: "90a3ec69-e9a2-8a44-aaca-b59a49065dac"
+      stageUuid: "5b9b6c26-fb5c-8ac6-8016-5e10e7c69488"
 version: 2
 ---
 # ship

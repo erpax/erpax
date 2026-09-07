@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "anchor",
-    "uuid": "42e9a275-f21e-898d-9cee-45196640e7cf",
+    "uuid": "a184e9d1-27a9-89a3-9c9a-a9f933038659",
     "words": [
       "anchor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a memory, note or doc OUTSIDE the corpus points at something inside it — anchorOf computes the target's content-uuid so the pointer can prove it is still current, and verifyAnchor reads fresh · moved · gone. A name says WHERE and rots silently; a content-address says WHAT and is derived. Run: tsx src/memory/anchor/index.ts <path…>",
-    "uuid": "e3a472dc-0b2e-8ab6-aef2-64a07e8e2b51",
+    "uuid": "efce6219-1dc8-8ba5-b68c-6f89844864ea",
     "words": [
       "use",
       "when",

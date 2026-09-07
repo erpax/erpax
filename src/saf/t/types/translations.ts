@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "8d289eab-d08d-82b9-af64-326205903e77",
+    "uuid": "5aa65b86-5ec5-899c-a398-008211ae27c7",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical OECD SAF-T 2.0 types — audit-file projection.",
-    "uuid": "ef77bc47-083e-82d7-aa6e-658bd786f4c9",
+    "uuid": "3853cd1b-1f1a-8934-a6c1-f2966168503e",
     "words": [
       "use",
       "when",

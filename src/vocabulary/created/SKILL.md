@@ -2,11 +2,11 @@
 name: created
 description: "Use when reasoning about created as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/created"
-coordinate: "vocabulary/created · 4/weave · d7607e4a"
-contentUuid: "ae4a98e5-7f02-58ef-ad9a-fed8b0a5a248"
-diamondUuid: "f1566983-c28c-847c-a488-e033fd8ce678"
-uuid: "d7607e4a-cd89-8edc-91ac-8475ac7657ca"
-horo: 4
+coordinate: "vocabulary/created · 8/crest · 9edcb7fe"
+contentUuid: "d04f8e98-2d95-5a88-a1a7-ef1e6ca8d987"
+diamondUuid: "aff69123-51f5-8968-a347-0cd925ed8a52"
+uuid: "9edcb7fe-d851-8ee9-89fa-ee143a8889a8"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2d15800a-d23f-810f-96b0-cbaf5c0e9b8f"
+  computationUuid: "10aa4578-1d17-8ab6-b63a-06f1ff1f6635"
   stages:
     - stage: path
       stageUuid: "ebe224d8-a6e1-8409-b670-7bbbe4285893"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "55900c0a-3205-8afd-92c6-dacda20f7485"
     - stage: horo
-      stageUuid: "d902d3ac-6cd3-8a1b-bfae-f001053453f9"
+      stageUuid: "685fd66b-e473-81ca-aaab-7233feb920dc"
     - stage: seal
       stageUuid: "80b4ed42-b8ba-86f7-bc2a-606ff33c5ff9"
     - stage: uuid
-      stageUuid: "3fc2519c-d87f-8a6a-9e02-52820951a841"
+      stageUuid: "c4668044-849f-8ddd-806f-be0e992469c8"
 version: 2
 ---
 # created

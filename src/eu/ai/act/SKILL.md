@@ -2,14 +2,14 @@
 name: act
 description: Use when implementing or referencing EU AI Act 2024.
 atomPath: "eu/ai/act"
-coordinate: "eu/ai/act · 5/round · ba50cd8e"
-contentUuid: "55dea908-cdfa-5869-8611-d06ae3cf4e9a"
-diamondUuid: "f87f6bb0-d0ef-8aca-be15-244ca5d8be52"
-uuid: "ba50cd8e-0436-8cb3-be98-986a4c07e523"
-horo: 5
+coordinate: "eu/ai/act · 8/crest · 6eb9b8bc"
+contentUuid: "c958aea6-4692-5419-a251-f72cd18c085b"
+diamondUuid: "594387ee-9b25-84fa-969d-21c7e806778e"
+uuid: "6eb9b8bc-5492-8c14-b923-4c66cd778466"
+horo: 8
 typography:
   partition: eu
-  bondDegree: 10
+  bondDegree: 12
 standards:
   - "EU AI Act 2024 Regulation (EU) 2024/1689"
   - "EU-AI-Act"
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "44c765b5-8d29-8514-864f-af5f730135c7"
+  computationUuid: "461c02af-c0d2-8368-901f-99229675c94d"
   stages:
     - stage: path
       stageUuid: "2527075a-ba61-851f-9aab-85c9f5c8a6c6"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "cb11344a-8c39-87e8-92b8-d213230c2a09"
     - stage: horo
-      stageUuid: "000079b9-3391-844d-bace-1f5f556b42d5"
+      stageUuid: "fe47d31e-7dad-8bc4-9896-9cd2fae55b86"
     - stage: seal
       stageUuid: "1bef13ee-de70-8a4e-96e1-480b2a009186"
     - stage: uuid
-      stageUuid: "593924ba-ed0d-8cc0-946f-4a1678c88f7f"
+      stageUuid: "f60e93af-a189-8615-a185-55e02e5cb3d7"
 version: 2
 ---
 # EU AI Act 2024

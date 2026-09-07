@@ -2,11 +2,11 @@
 name: instance
 description: "Use when reasoning about instance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/instance"
-coordinate: "vocabulary/instance · 8/crest · 51d56d73"
-contentUuid: "56ae3cdf-ae74-5950-a1bc-eac7c7b9a02d"
-diamondUuid: "cbfac2ff-5177-8be0-891d-43f4625c6d8c"
-uuid: "51d56d73-bf33-859e-8f96-0b08aa015f12"
-horo: 8
+coordinate: "vocabulary/instance · 7/descent · 3e7d18fa"
+contentUuid: "cae8a232-0ba2-5195-a25b-da50ff155ed0"
+diamondUuid: "3beeb324-0366-8405-8947-27df37124c0d"
+uuid: "3e7d18fa-857c-8cd9-8c68-8d876df2343a"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9f73e3ae-4efa-847e-88d7-25b2b1e8530c"
+  computationUuid: "91efe0ab-b686-8616-bdc9-d8c5db7ec7ee"
   stages:
     - stage: path
       stageUuid: "3cb3215c-81ed-8202-95d3-7326f3fa75f0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9ace2eb9-3d1e-8995-94e8-e9b538c810dd"
     - stage: horo
-      stageUuid: "7bf0c6a2-14ac-898d-90f0-2d1e9c669af2"
+      stageUuid: "04c87050-00c1-8c4a-be55-c4e3d34a741b"
     - stage: seal
       stageUuid: "dbf9db10-94b9-8389-8350-3fba2c27f7a9"
     - stage: uuid
-      stageUuid: "26665b41-817a-8987-8516-986bc8dc2fcf"
+      stageUuid: "91b81e81-f132-8d39-a9fa-2152d5e8a5ed"
 version: 2
 ---
 # instance

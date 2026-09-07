@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "orphism",
-    "uuid": "9376d7f5-7c7f-8eac-9d76-25d6e58b99d8",
+    "uuid": "5b7ed87c-a082-85cd-a2bf-e1bc88e77d81",
     "words": [
       "orphism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Orphism as a diamond of invariant atoms — the Greek mystery tradition of the divine soul fallen into the body, bound to the wheel of births, purified to escape and return to the source; Orpheus' music charming even death. Strip the prefix and the soul collapses to self, the wheel to the cycle, the ascent to the return to zeropoint.",
-    "uuid": "ae768a88-f90d-87aa-ad08-3ba4d805feb3",
+    "uuid": "69977f49-f4b9-8c8c-8ab2-a5ad6d1a9685",
     "words": [
       "use",
       "when",

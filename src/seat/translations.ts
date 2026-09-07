@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seat",
-    "uuid": "0150c01d-da28-814a-b20a-83da80fe2506",
+    "uuid": "797692f9-a42d-8030-827e-b20af51be1be",
     "words": [
       "seat"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about seat — Used to describe a seat, such as a reserved seat in an event reservation.",
-    "uuid": "090b64d9-ecdc-8f6a-99bf-fa7832290d01",
+    "uuid": "e35f2213-b94c-8a62-b826-a7b4446944e3",
     "words": [
       "use",
       "when",

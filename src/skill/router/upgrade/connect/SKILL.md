@@ -2,18 +2,18 @@
 name: connect
 description: "Use when materialising or verifying SKILL.md frontmatter against live corpus state — build the upgrade context, fold atomPath/diamond/coordinate/bonds/neighbours into one connected frontmatter block, and verify drift. The connect/materialise/verify flow of the skill-upgrade hub."
 atomPath: "skill/router/upgrade/connect"
-coordinate: "skill/router/upgrade/connect · 2/share · 48d43b6d"
-contentUuid: "76b7b7c0-b9bb-5496-b984-f17ea2bbafe2"
-diamondUuid: "c300e8bc-45b4-85f4-95ac-9700e8c7efe0"
-uuid: "48d43b6d-6693-8b4d-b021-8d81e160d39b"
-horo: 2
+coordinate: "skill/router/upgrade/connect · 1/base · 885a46aa"
+contentUuid: "678a5458-a2d5-502c-87cf-2d65c9cbc168"
+diamondUuid: "a1022f51-987a-804b-aeb7-ae0fadb5dde9"
+uuid: "885a46aa-7bb0-8a75-908c-70c201e6ab28"
+horo: 1
 typography:
   partition: skill
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1fb7a10d-52cb-8334-8106-da6505af45ea"
+  computationUuid: "9fbc2158-a29a-839c-93bd-a8f88c5122f3"
   stages:
     - stage: path
       stageUuid: "bc680cfe-7f79-879b-ba0a-a793b389f836"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9c06adcd-17cb-8752-9ada-556a30ae32d8"
     - stage: horo
-      stageUuid: "2644e193-01f5-89af-956d-1b2d865bcaad"
+      stageUuid: "f5759289-3291-89ba-be7a-d533867b358e"
     - stage: seal
       stageUuid: "9a4e2c95-9035-8964-9c18-2f95a43f0829"
     - stage: uuid
-      stageUuid: "066b3199-aa30-8dce-b433-ce83956584ba"
+      stageUuid: "c91dd10c-363d-88d8-80e1-869719236131"
 version: 2
 ---
 # skill/router/upgrade/connect

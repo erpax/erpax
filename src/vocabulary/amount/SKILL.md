@@ -2,18 +2,18 @@
 name: amount
 description: "Use when a value is a monetary quantity — invoice total, line price, payment received, account balance. A minor-unit integer + ISO-4217 currency code (never a currency-baked field name). The value-of-trade twin of measure (quantity+unit). Composes with currency to form money."
 atomPath: "vocabulary/amount"
-coordinate: "vocabulary/amount · 8/crest · 72fe8b77"
-contentUuid: "44410abb-2dfe-50b7-ad6c-54a0c8ef245c"
-diamondUuid: "0e371c3f-77b0-8e27-99c6-43053860e418"
-uuid: "72fe8b77-8cad-8579-bf8d-f92ceacc6db0"
-horo: 8
+coordinate: "vocabulary/amount · 2/share · 884737c6"
+contentUuid: "55f55321-f0f3-50a2-8d10-c24614953f7f"
+diamondUuid: "174e5d25-a4c4-8cff-9208-4bbf144487f6"
+uuid: "884737c6-04ae-8eda-ad8f-7d19b635ecee"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 65
+  bondDegree: 67
 standards: []
 bindings: []
 signatures:
-  computationUuid: "290b827d-b709-8d65-b240-0bf28ade9349"
+  computationUuid: "3675a31e-4863-8698-a96a-9e35e272d5c4"
   stages:
     - stage: path
       stageUuid: "803dfcf8-107d-8e63-b016-4085edcfa670"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7981ef3d-e34e-8ac4-b2bc-d97a67e4d40f"
     - stage: horo
-      stageUuid: "070c8456-257d-8bc1-82d9-699f2ffd1e3f"
+      stageUuid: "5fcbb177-bc9d-8667-be08-ac62d1e9c267"
     - stage: seal
       stageUuid: "6bd5ff59-f5a7-8a7a-aa46-a76d7dbbf573"
     - stage: uuid
-      stageUuid: "d855162f-0872-8a00-8394-1f70fcb6bc1f"
+      stageUuid: "d42b1335-667b-8542-9162-cb193cea1b62"
 version: 2
 ---
 # amount

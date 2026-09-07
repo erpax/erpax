@@ -2,14 +2,14 @@
 name: connections
 description: "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub."
 atomPath: connections
-coordinate: "connections · 8/crest · 8d0c2491"
-contentUuid: "4636b8dc-cd71-55ce-8822-2da96e1278eb"
-diamondUuid: "1ce40fcd-bfc0-8e41-a077-d182299a8122"
-uuid: "8d0c2491-ca40-8566-ba03-d10a807b6d56"
-horo: 8
+coordinate: "connections · 4/weave · 925b2906"
+contentUuid: "d6815cbb-ca24-51ae-be8a-c4f9555ca871"
+diamondUuid: "a6df91e4-6cb5-8a27-9189-2265335f3270"
+uuid: "925b2906-6473-87eb-b057-30d819ed0d2f"
+horo: 4
 typography:
   partition: connections
-  bondDegree: 58
+  bondDegree: 60
 standards:
   - "GDPR Art 17 right-to-erasure Art 21 right-to-object (mute/block)"
   - "ISO 20022 financial-business-party-relationships"
@@ -29,7 +29,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c4959f5d-d5f1-8930-bfed-360f61946859"
+  computationUuid: "a187e055-63c5-81bb-8503-7808a890e44d"
   stages:
     - stage: path
       stageUuid: "365eb881-b33e-8c12-89d2-bdf9ef21f8a5"
@@ -40,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "a21e8a6e-a416-83cd-a3c5-13ff1f3ac16e"
     - stage: horo
-      stageUuid: "1ef19d54-dc5b-8a2c-b10a-5cae403f7da6"
+      stageUuid: "02692341-00c1-8f62-8d7d-4513c9acf2bf"
     - stage: seal
       stageUuid: "ab2bba1f-7fc3-8880-ad82-bb3733c93443"
     - stage: uuid
-      stageUuid: "c9785432-b767-8381-b97a-0cf080d4ccf5"
+      stageUuid: "1ca3ba15-633b-8453-aed1-22e8de2be038"
 version: 2
 ---
 # connections

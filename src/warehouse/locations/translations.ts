@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "locations",
-    "uuid": "106bb060-8d7b-82b8-b955-66f9ed89a5dd",
+    "uuid": "55077e29-a786-8a24-aca3-d86dfc5ba006",
     "words": [
       "locations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering or querying physical or logical inventory locations — warehouses, 3PL, retail, bonded, virtual/drop-ship — with bins, GL account defaults, and IAS 2 / ASC 330 cost-flow segregation. The inventory location master for stock tracking and SOX §404 inventory controls.",
-    "uuid": "8c143829-44d3-8d9d-8a15-f56d290534b2",
+    "uuid": "d3add34c-3581-8fdb-9c71-a33d7038e05a",
     "words": [
       "use",
       "when",

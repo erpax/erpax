@@ -2,18 +2,18 @@
 name: improve
 description: "Use when reasoning about the corpus improving itself with NO external tool — the development-time twin of self/closure's Law 53. Every stage of the improvement loop (leftover · rosetta · decide · publish · think) is a local atom; selfImproves proves the external-tool count is zero and loopResolves proves the loop is real matter on disk, not fabricated prose."
 atomPath: "self/improve"
-coordinate: "self/improve · 1/base · 9ec70c68"
-contentUuid: "3ac77658-8157-5e24-8ba9-841f59e9b351"
-diamondUuid: "8fba8cee-9087-86f4-86a3-b8d97315b3b5"
-uuid: "9ec70c68-a1b3-8e1b-ae53-46726d8ca559"
-horo: 1
+coordinate: "self/improve · 2/share · a265db6b"
+contentUuid: "f9974c70-ea21-5307-a31c-7d37b7e041aa"
+diamondUuid: "c1bb7c69-85d5-8ac1-8ab2-8d36aecd0a91"
+uuid: "a265db6b-0429-8ab6-8f45-cbf0793b9e52"
+horo: 2
 typography:
   partition: self
   bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b9c7be10-687b-8d4b-b5aa-ca57bed79ef9"
+  computationUuid: "66cd4d9e-413c-8b7e-9896-c012cdbea5da"
   stages:
     - stage: path
       stageUuid: "ef6959ec-23b7-8f68-85aa-586b4be5302e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0f8ff962-5608-81c3-92b2-321aca424a99"
     - stage: horo
-      stageUuid: "f0883839-740c-8e6e-a3cb-81e4a2decc90"
+      stageUuid: "20798556-98e2-86f4-8d66-5ba889598651"
     - stage: seal
       stageUuid: "849700c0-4916-8ca7-a447-74b0b1b0b226"
     - stage: uuid
-      stageUuid: "03cfc7d1-23fe-895b-b21d-878ff43fcdc8"
+      stageUuid: "9ecc2c43-d19a-8446-a675-4026bfb6dd95"
 version: 2
 ---
 # self/improve — the corpus improves itself with no external tool

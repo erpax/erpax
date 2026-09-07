@@ -2,11 +2,11 @@
 name: exported
 description: "Use when reasoning about an atom's PRODUCER obligation — every symbol consumed across atoms is re-exported from that atom's index (its one public face), so a deep importer can collapse to @/x; the producer-side dual of the importer conventions import and shallow, measured live as the index-reachable fraction of cross-atom symbols, enforced by the same import ratchet so it can only tighten toward coverage one (tamper-cost to infinity)."
 atomPath: "convention/exported"
-coordinate: "convention/exported · 8/crest · d251dc11"
-contentUuid: "2217412c-3636-5fd6-ae50-7eb49791e1cc"
-diamondUuid: "42ff51a3-d8de-8344-9f49-c5554f8cede4"
-uuid: "d251dc11-43d9-82a3-a72e-f7c6ec116de6"
-horo: 8
+coordinate: "convention/exported · 1/base · 4b5a4f29"
+contentUuid: "a3de6692-7e6c-5091-bc10-90af8caf4a72"
+diamondUuid: "b3016bdb-3dbb-8161-aadb-e87245d70890"
+uuid: "4b5a4f29-c66c-8f4c-8673-2eef4166fc97"
+horo: 1
 typography:
   partition: convention
   bondDegree: 40
@@ -15,7 +15,7 @@ standards:
   - "an atom's only public face is its index.ts; what it exports through it IS its contract"
 bindings: []
 signatures:
-  computationUuid: "a671241b-8ab7-8c0f-bb30-18cfe7004cc6"
+  computationUuid: "c99424d4-ed4f-8e91-b54a-4ab2216c0cdf"
   stages:
     - stage: path
       stageUuid: "77c95ee2-19bc-82fc-9940-94c9abac2904"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "7cec3dda-27e0-8298-a864-05352078c31d"
     - stage: horo
-      stageUuid: "ed427ff4-d71f-8aa9-9266-9b9fa8c671a1"
+      stageUuid: "4f468337-6866-85b3-a89b-9c5114541268"
     - stage: seal
       stageUuid: "be8dcfa7-1828-8a43-afbd-57bb03195779"
     - stage: uuid
-      stageUuid: "bbebdd20-7bba-8d52-b4f7-e8ecca60644f"
+      stageUuid: "2be2b9d7-b06a-8523-b57f-1cc7ae30109e"
 version: 2
 ---
 # convention/exported — every cross-atom symbol is re-exported from the atom's index

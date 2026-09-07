@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tenant",
-    "uuid": "a08d37ba-7596-8e9c-92f6-0bec818a3191",
+    "uuid": "5ba7b705-ae77-8213-bf0f-ef1c998de692",
     "words": [
       "tenant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when auto-populating the multi-tenant tenant field from the request user before validation — a beforeValidate hook that copies req.user.tenants[0].tenant onto the incoming data for tenant isolation.",
-    "uuid": "b027d5f6-ce77-8733-b8cd-9152e5e1bbdb",
+    "uuid": "203b8f52-7f7d-86b5-bde1-603ebe81e15f",
     "words": [
       "use",
       "when",

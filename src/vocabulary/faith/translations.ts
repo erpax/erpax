@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "faith",
-    "uuid": "89245b38-060b-8abb-aea4-66feb3387124",
+    "uuid": "06025174-4b88-8de9-babf-54bced4ff51a",
     "words": [
       "faith"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the dual of proof in erpax — trust extended WITHOUT the trustless recompute; accepting a source as canonical before verifying its content-uuid. The root of trust-without-verify; dual of proof.",
-    "uuid": "618f7015-5dd4-81f0-a749-452eaacd01f3",
+    "uuid": "10d30379-f387-885c-8611-a575b413bfb2",
     "words": [
       "use",
       "when",

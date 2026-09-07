@@ -2,11 +2,11 @@
 name: misconceptions
 description: "Use when reasoning about misconceptions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/misconceptions"
-coordinate: "vocabulary/misconceptions · 2/share · 4c36f4e2"
-contentUuid: "60b3f172-ae45-50a0-93b5-d56abe42ad9f"
-diamondUuid: "6687ceed-6c91-8242-828d-b0c18eaea267"
-uuid: "4c36f4e2-8af9-88ed-8767-7dd14e35a898"
-horo: 2
+coordinate: "vocabulary/misconceptions · 8/crest · 697d58b0"
+contentUuid: "e805d68b-242f-5128-9ba7-62d2846b7329"
+diamondUuid: "4cb2c379-5488-8c5e-8a50-09ac7650be2b"
+uuid: "697d58b0-c2eb-8e57-ba85-08ac0e63078c"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fa6b6798-e661-8f8c-892f-762140cf95b7"
+  computationUuid: "f4a410d3-2bb2-8560-b8e7-db3a653350c9"
   stages:
     - stage: path
       stageUuid: "d282cd20-38cf-8754-8038-57c3b12bed04"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3f791919-4f31-8060-b183-bb3a5ccbacdf"
     - stage: horo
-      stageUuid: "f98dc30e-ea4d-836b-bbc4-1acc33f3473d"
+      stageUuid: "5b35cbec-64b8-8ece-a438-68c6c77b9de0"
     - stage: seal
       stageUuid: "50affdd4-8b06-8c1c-a588-832d313a504d"
     - stage: uuid
-      stageUuid: "5be4f6e5-ffb0-8164-8c71-7a5b009b7a10"
+      stageUuid: "638b8725-1cb6-8ab4-b94c-3be3443e783f"
 version: 2
 ---
 # misconceptions

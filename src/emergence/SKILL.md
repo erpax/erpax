@@ -2,11 +2,11 @@
 name: emergence
 description: "Use when a two-fold pair completes to a third in the forge — expand ⊕ collide revealing their synthesis once both poles are present; the trinity emerging, computed from the poles not authored."
 atomPath: emergence
-coordinate: "emergence · 1/base · 1d51a491"
-contentUuid: "6065a71c-8542-5c7e-924a-d1238d7bece6"
-diamondUuid: "a20e03e2-ab08-8e56-8204-978292e81f33"
-uuid: "1d51a491-13df-8e8e-8a2e-ad34c25b0374"
-horo: 1
+coordinate: "emergence · 4/weave · e85a0f23"
+contentUuid: "8382b70e-929e-595a-9e56-9df307cbe120"
+diamondUuid: "95806463-30a9-8daa-8ca3-d3d4480d30d3"
+uuid: "e85a0f23-bba6-825e-a8c5-31767d5fcb66"
+horo: 4
 typography:
   partition: emergence
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "the third is computed from the poles — horo composeSteps ⊕ uuid merge, never asserted"
 bindings: []
 signatures:
-  computationUuid: "162ceec0-c3a5-826b-939a-e1ce07b99714"
+  computationUuid: "9b472f4b-f5ee-8724-8b87-b3ad0c39c933"
   stages:
     - stage: path
       stageUuid: "2e95b39b-c1fc-8c46-9e48-bf8aaa239f6d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "05f59d91-a42f-8f8e-bfac-ec4a98f32e77"
     - stage: horo
-      stageUuid: "8297bead-e0ed-8202-9462-dcdda26b0d45"
+      stageUuid: "ba89b642-de69-854a-8a8e-00ae5a81e61f"
     - stage: seal
       stageUuid: "a709acc6-8bda-8cd3-ba72-cd411557120d"
     - stage: uuid
-      stageUuid: "eede1319-bf8d-82c2-8669-cb729eb24533"
+      stageUuid: "fd2d2288-36f0-82d2-85d5-7fcafe15d69a"
 version: 2
 ---
 # emergence — the third revealed

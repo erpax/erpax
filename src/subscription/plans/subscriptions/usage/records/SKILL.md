@@ -2,11 +2,11 @@
 name: records
 description: "Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection."
 atomPath: "subscription/plans/subscriptions/usage/records"
-coordinate: "subscription/plans/subscriptions/usage/records · 2/share · f539114d"
-contentUuid: "5e5a5f0c-41f3-5d86-97d4-c47f224a2fdd"
-diamondUuid: "f7d0ad88-57a9-831b-a4da-01fd5166fa9b"
-uuid: "f539114d-274d-8862-a4ac-6848a6f0d12a"
-horo: 2
+coordinate: "subscription/plans/subscriptions/usage/records · 1/base · fbd8aebd"
+contentUuid: "05bc9af3-2671-55fc-a9d7-d45b0bdda176"
+diamondUuid: "aeadffb6-6de6-8c52-9655-db9b20637294"
+uuid: "fbd8aebd-208f-8526-af10-61f25235a42f"
+horo: 1
 typography:
   partition: subscription
   bondDegree: 30
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "14584933-3a2a-8767-b89d-c47ff992a214"
+  computationUuid: "30169dcd-8b06-8492-af6e-665e0260b0a9"
   stages:
     - stage: path
       stageUuid: "cf3b91a5-47b0-84b2-9675-33dfc3046663"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "9e648e2b-6596-84c8-9297-1ee5b8195c53"
     - stage: horo
-      stageUuid: "d2be4d35-3c0f-89b5-844a-ff99367c92b8"
+      stageUuid: "bf0881d8-2f31-80b6-a549-3818e8ccf749"
     - stage: seal
       stageUuid: "94afd476-fb5e-8c5f-a064-15e7f4cda506"
     - stage: uuid
-      stageUuid: "0b4b6ba4-c639-8230-b945-df08ebdb2558"
+      stageUuid: "95524073-434c-8419-bb76-a142ee798562"
 version: 2
 ---
 # usage-records

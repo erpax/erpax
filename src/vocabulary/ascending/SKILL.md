@@ -2,11 +2,11 @@
 name: ascending
 description: "Use when reasoning about ascending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ascending"
-coordinate: "vocabulary/ascending · 8/crest · d4d6a75e"
-contentUuid: "ded86906-931c-5b51-b586-881058e706d1"
-diamondUuid: "05a2f726-2eaa-866c-bec4-a8d7d134f0c7"
-uuid: "d4d6a75e-d35d-84cf-b7b9-024750e498f4"
-horo: 8
+coordinate: "vocabulary/ascending · 5/round · 7f3b7764"
+contentUuid: "b9cb4c9d-fe78-5dd7-ba66-406db4c81147"
+diamondUuid: "f0a2d644-820f-853f-9a9c-117ea2fee1c0"
+uuid: "7f3b7764-e695-88b7-8d8d-e8312988e91d"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ce4d52bc-ccb0-80b8-b41c-e316d6484113"
+  computationUuid: "614ae607-efb9-8df3-a2fd-f7a6517f4c68"
   stages:
     - stage: path
       stageUuid: "4c8b0608-2e92-87e2-953c-15d5d1cf85f1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3ba00e30-2009-8c55-a617-3b67da995ee2"
     - stage: horo
-      stageUuid: "533bc1d3-4e05-8da3-b355-91de991f820f"
+      stageUuid: "a08b9796-435b-8a22-9f99-f748df5592ab"
     - stage: seal
       stageUuid: "00dc8d1f-89eb-8318-a711-e9a9ec54be7d"
     - stage: uuid
-      stageUuid: "28dd8922-7de8-8c4e-969a-5cb4165ba74d"
+      stageUuid: "c0239db3-9165-8968-81b1-3d5fe16ca2f0"
 version: 2
 ---
 # ascending

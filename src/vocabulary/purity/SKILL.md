@@ -2,18 +2,18 @@
 name: purity
 description: "Use when reasoning about purity as the fully-sealed / zero-impurity state that maximises tamper-cost in EVERY dimension — purity = zero entropy = every gate green = no escape. A single impurity (an unsealed cross, an off-ring state, a dangling link, a hallucination) is a 0-bit weakest-link path that collapses the cost; purity removes every weakest link, so the floor is maximal along all paths and all dimensions. The conjugate of hallucination; the generalisation of import-purity, file-purity, and md-purity into one law."
 atomPath: "vocabulary/purity"
-coordinate: "vocabulary/purity · 1/base · 4b7180fe"
-contentUuid: "1da39eeb-71a3-51c9-a0d2-c22fc68d5f36"
-diamondUuid: "1a01f697-4602-82a2-b45a-b364ee1451db"
-uuid: "4b7180fe-cd5c-831a-985b-3165852ac4ba"
-horo: 1
+coordinate: "vocabulary/purity · 8/crest · 0b7730f1"
+contentUuid: "a42987fe-f8b6-5b07-a2ee-15a89fcd5807"
+diamondUuid: "fe876faa-1b88-8eaf-9903-7bfd0135cc54"
+uuid: "0b7730f1-0f12-8768-b54c-0a41d48902f9"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 129
+  bondDegree: 133
 standards: []
 bindings: []
 signatures:
-  computationUuid: "aeb1ac1a-6431-8839-9644-c20e09ae1aff"
+  computationUuid: "51473eb7-fa9d-8cdf-9276-dcc484b116b1"
   stages:
     - stage: path
       stageUuid: "2f0d4358-7f92-8346-a454-35cfd19130c7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e075d9d5-8ca1-84e1-8c50-dde3c063d4c1"
     - stage: horo
-      stageUuid: "eb9f49f4-a8ef-80ea-86bb-c8304b53fff1"
+      stageUuid: "31d17cbd-973f-8ed4-8f93-15e79743492f"
     - stage: seal
       stageUuid: "b98d1cd1-ada9-88cc-91d2-4cdb5ea0ced5"
     - stage: uuid
-      stageUuid: "b94e367f-ecea-80da-a308-bdfb32e362fa"
+      stageUuid: "cd47607c-1c9a-8bae-b04a-6e49c9d92a91"
 version: 2
 ---
 # purity — fully sealed, zero impurity, max tamper-cost in every dimension

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "witness",
-    "uuid": "6aead0a8-e3f9-8c44-bdf2-83de1f3f8d74",
+    "uuid": "c3b494c7-f7bd-8cbb-b29f-a9be0f7e8a36",
     "words": [
       "witness"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a test derives over the whole corpus and hangs — the bounded-witness helper: sample a large domain (bounded-witness) or take the whole when it is small (finite-complete), replacing every ad-hoc slice.",
-    "uuid": "eb3dab17-c65c-8b34-ad7e-9cf0ddc73a03",
+    "uuid": "cba7852e-9124-885a-a166-1544242173fa",
     "words": [
       "use",
       "when",

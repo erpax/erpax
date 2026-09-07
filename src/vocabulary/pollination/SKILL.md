@@ -2,18 +2,18 @@
 name: pollination
 description: "Use when fruit set depends on pollen transfer — pollination by insects (managed honeybees/bumblebees, wild pollinators), wind, or hand, required by fruiting crops (cucurbits, tomatoes, peppers) to set marketable fruit. A yield prerequisite for fruit/seed crops and an ecosystem service the farm must protect or provide."
 atomPath: "vocabulary/pollination"
-coordinate: "vocabulary/pollination · 2/share · 34f94e92"
-contentUuid: "24b6fd39-f942-5fc0-b74c-f0bff35b345b"
-diamondUuid: "f49bec73-2f5b-8c33-9eef-bed6159abbc3"
-uuid: "34f94e92-2d46-829d-994c-5066a4ba5dfe"
-horo: 2
+coordinate: "vocabulary/pollination · 5/round · 2bb898eb"
+contentUuid: "1cf6ce28-0dd2-58a2-8066-98849334ebbf"
+diamondUuid: "04cd5e7a-2200-8d4f-926b-9d780f0725de"
+uuid: "2bb898eb-0392-8907-a830-235d0e764082"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "78fa733d-f042-80b8-901c-f38b13204952"
+  computationUuid: "03745999-dfab-8cd1-a1e4-212053f19eb0"
   stages:
     - stage: path
       stageUuid: "b1e5603e-3121-8cf6-a5e4-fd84d447c465"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2ac15b03-6f2c-82d9-befa-f2da02e4978b"
     - stage: horo
-      stageUuid: "c26779f4-94b4-8004-ae79-32bbfc1f513d"
+      stageUuid: "a18af450-de38-8c28-a5af-9e33615364f6"
     - stage: seal
       stageUuid: "0d20dc3f-eca5-85ae-abb8-3bfa66dc0b95"
     - stage: uuid
-      stageUuid: "a0119816-0996-8841-a960-42a52a4c3a42"
+      stageUuid: "6c13ab45-44f5-8245-89b6-5d55f2b013e7"
 version: 2
 ---
 # pollination — pollen transfer that sets the fruit

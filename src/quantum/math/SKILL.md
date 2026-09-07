@@ -2,11 +2,11 @@
 name: math
 description: "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet."
 atomPath: "quantum/math"
-coordinate: "quantum/math · 5/round · fa82c116"
-contentUuid: "71f21060-262d-57c1-b800-1556bac7920f"
-diamondUuid: "dc96612b-9dfd-8413-9a46-8b866055e09c"
-uuid: "fa82c116-8bc7-8419-b9d3-cb053beac8e0"
-horo: 5
+coordinate: "quantum/math · 2/share · d27c7391"
+contentUuid: "35378432-b6ae-579e-8aee-e79ef218976f"
+diamondUuid: "d864dea4-f42c-8fd0-b077-10ec3de278fb"
+uuid: "d27c7391-2fce-8afb-8290-e56f8a09f9e9"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 75
@@ -15,7 +15,7 @@ standards:
   - "the digital-root / mod-9 group (rodin); RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "99187a67-fc3d-8dca-8866-7e156b3e2b0d"
+  computationUuid: "39929773-b3aa-89c5-8fde-331cf30526af"
   stages:
     - stage: path
       stageUuid: "5bc6ae7c-6c7e-8c97-94a8-db4549cf817f"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "4118442c-2bd4-8c2f-8843-dba56d1ee12a"
     - stage: horo
-      stageUuid: "2f7fe65c-6cdf-8b8a-b03c-5645f6123ee8"
+      stageUuid: "f7cbf7b3-f498-88a5-98a8-3f008a234209"
     - stage: seal
       stageUuid: "cfd04559-36cc-88f3-bb85-afbb65263841"
     - stage: uuid
-      stageUuid: "49ea1511-312e-8a03-ac0c-7f6e58373bab"
+      stageUuid: "d6a4fb10-950c-8f86-9a59-473ada2597dd"
 quantum:
   superposition:
     - calculation
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "99187a67-fc3d-8dca-8866-7e156b3e2b0d"
-    contentUuid: "71f21060-262d-57c1-b800-1556bac7920f"
+    computationUuid: "39929773-b3aa-89c5-8fde-331cf30526af"
+    contentUuid: "35378432-b6ae-579e-8aee-e79ef218976f"
 version: 2
 ---
 # quantum/math — math on the uuid/matrix substrate
@@ -74,4 +74,4 @@ Matter-twin: `src/quantum/math/index.ts` (`root` · `uuidDigit` · `closedUnderA
 
 @standard the digital-root / mod-9 group (rodin); RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `71f21060-262d-57c1-b800-1556bac7920f` · account `quantum/math` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `35378432-b6ae-579e-8aee-e79ef218976f` · account `quantum/math` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

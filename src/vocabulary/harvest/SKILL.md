@@ -2,18 +2,18 @@
 name: harvest
 description: "Use when modelling the gathering of matured output from a growth process — the IAS-41 transformation event where a biological asset becomes inventory, and the per-week harvest window (the produce calendar) over which a crop yields. Harvest is the realization point: value created by living growth crosses into sellable stock; the window is non-uniform — a 1 in the calendar marks presence, not constant volume."
 atomPath: "vocabulary/harvest"
-coordinate: "vocabulary/harvest · 2/share · 23ca22a3"
-contentUuid: "30d277e8-61de-50f6-b886-97790e9699d9"
-diamondUuid: "b4bd3de9-4a84-8d11-9abc-98437db394d6"
-uuid: "23ca22a3-952c-82dd-bc50-0ee89217df13"
-horo: 2
+coordinate: "vocabulary/harvest · 1/base · 45bf5285"
+contentUuid: "096d3201-6c0e-55ad-a58c-df1bd36d22a6"
+diamondUuid: "96ce705e-7a7e-8fe8-ac81-b075a4feeea5"
+uuid: "45bf5285-64d5-87cd-9f35-94e75920f608"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 101
+  bondDegree: 103
 standards: []
 bindings: []
 signatures:
-  computationUuid: "63e59db0-0153-85ba-aa03-44366d33368b"
+  computationUuid: "e31fe81e-fd44-84a9-a195-4e0ad71974af"
   stages:
     - stage: path
       stageUuid: "9f1f2fad-d288-8aa1-a4f9-c4e121468e1a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d779cede-6b7b-8931-82e2-02898b95ac76"
     - stage: horo
-      stageUuid: "6e6c1f7e-a39e-827e-b250-4043fb4ec42a"
+      stageUuid: "bb85a016-0fc8-8b5a-8b8c-5a0357b9e513"
     - stage: seal
       stageUuid: "d31cc2c0-5e50-87f4-a091-cc49a3fd5223"
     - stage: uuid
-      stageUuid: "ee34429d-2c00-8f4c-8a06-b5fb82b5da1a"
+      stageUuid: "162757fd-38c4-82db-a698-6d7b505ddc08"
 version: 2
 ---
 # harvest — the gathering event, and the window over which a crop yields

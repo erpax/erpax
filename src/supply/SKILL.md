@@ -2,11 +2,11 @@
 name: supply
 description: "Use when reasoning about supply — A sub-property of instrument. A supply consumed when performing instructions or a direction."
 atomPath: supply
-coordinate: "supply · 7/descent · 9b7f6359"
-contentUuid: "9d3e2b9c-e1a8-54fe-a8f7-feb1aec4be55"
-diamondUuid: "72703f10-089f-86e3-a570-1365b7a294f9"
-uuid: "9b7f6359-6bab-8340-b1ab-854d132f0c03"
-horo: 7
+coordinate: "supply · 4/weave · f6c164bc"
+contentUuid: "06908263-226b-52b7-b2a3-8126b15a3e66"
+diamondUuid: "95cdba8d-7c0d-8179-aba2-4925a6d56275"
+uuid: "f6c164bc-8544-8bb2-9fba-9621fdae4fa5"
+horo: 4
 typography:
   partition: supply
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2cba1786-ad81-8a1e-9d98-84e50205e7bc"
+  computationUuid: "c3c8f88c-dd52-8e2f-9338-ba57eb29fd15"
   stages:
     - stage: path
       stageUuid: "715a22d3-0248-8b4e-a77a-d0295bdb3a27"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd70ba93-c2ee-8774-bb79-8126339a6641"
     - stage: horo
-      stageUuid: "1bc9bd63-2684-88fb-8ee7-f8480a246369"
+      stageUuid: "da77ef37-42d9-8d43-ae49-6290d221555e"
     - stage: seal
       stageUuid: "d697f872-10ef-8b85-b192-42b7b7097d52"
     - stage: uuid
-      stageUuid: "28d44c18-2d91-8bc1-b399-aaeab8804193"
+      stageUuid: "01041c8f-f6b9-8dfe-8cf5-ec1941ee9571"
 version: 2
 ---
 # supply

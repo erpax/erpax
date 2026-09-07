@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sla",
-    "uuid": "5aa76b9f-fd19-8e7b-94a5-23c531d39baa",
+    "uuid": "3463e5e2-facc-837e-812b-79d3346073a4",
     "words": [
       "sla"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining response/resolution guarantees on issues/tickets — SLA definition, breach detection, escalation, customer-impact metric.",
-    "uuid": "c22c7c57-6c12-8dee-9bb5-80ed3eea6628",
+    "uuid": "2b1df26c-ad0c-8555-b388-a57bb3dbd8ea",
     "words": [
       "use",
       "when",

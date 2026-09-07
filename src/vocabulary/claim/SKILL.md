@@ -2,11 +2,11 @@
 name: claim
 description: "Use when reasoning about claim — A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text proper"
 atomPath: "vocabulary/claim"
-coordinate: "vocabulary/claim · 8/crest · ca6b2ebd"
-contentUuid: "d5e34cd0-8eff-598d-8e43-64b816f6b3a4"
-diamondUuid: "75d2149e-6c6c-842e-8685-1c5ffc583903"
-uuid: "ca6b2ebd-8061-817c-b102-2e45e5736302"
-horo: 8
+coordinate: "vocabulary/claim · 2/share · 8978c191"
+contentUuid: "501142f4-ad96-5901-b5c5-39cac586c764"
+diamondUuid: "13499d80-5a20-8f90-bfad-532a2feeff0d"
+uuid: "8978c191-4b5f-8dac-ae8c-51a0b398db7a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 42
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4f72a9d9-8fb9-86ef-846e-f225d967f747"
+  computationUuid: "0334f753-39ad-860a-8a01-9c6de3c42c19"
   stages:
     - stage: path
       stageUuid: "59a6fb6b-fc59-8264-b9c8-65421b75765e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d9af3594-2c29-8560-8f06-b52803778ed2"
     - stage: horo
-      stageUuid: "57ae42a3-18bc-8ebb-8af5-82890fae7b29"
+      stageUuid: "063211c5-5a8a-8d61-98e5-752fb681514a"
     - stage: seal
       stageUuid: "ab312b43-cfb3-8b1f-a141-2c0e61614bb8"
     - stage: uuid
-      stageUuid: "2e317fa5-fd3a-827d-8b8a-ba277c01c851"
+      stageUuid: "9d1bca68-c255-8a6b-9b7d-acbec8044fe6"
 version: 2
 ---
 # claim

@@ -2,11 +2,11 @@
 name: radio
 description: "Use when reasoning about radio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/radio"
-coordinate: "vocabulary/radio · 1/base · 798dedce"
-contentUuid: "4cf70fd8-0056-5e2a-b1dc-c0e0141f0eb5"
-diamondUuid: "629865cf-7b8b-87d9-b97d-f0c24c627bda"
-uuid: "798dedce-cd51-8420-9e52-2266880b751d"
-horo: 1
+coordinate: "vocabulary/radio · 4/weave · b127d109"
+contentUuid: "a7a6caf3-5cb6-59fd-8dbb-443eaeed44e9"
+diamondUuid: "dd575837-f103-8582-9924-71a670f392f4"
+uuid: "b127d109-9505-88cc-85ea-93f721afad38"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 51
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2a872d13-f56c-8952-b539-fdca3f568e24"
+  computationUuid: "ca5876ae-369b-8ed9-933f-3b4274ab52bb"
   stages:
     - stage: path
       stageUuid: "8f13456f-195d-882e-8961-befd707283cd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d450fd35-bb01-8ff0-86ce-a9ad941e7c16"
     - stage: horo
-      stageUuid: "829769b7-233d-867b-b856-3417592f44ab"
+      stageUuid: "171eec86-d22a-8266-83aa-f2cc91e62436"
     - stage: seal
       stageUuid: "9d1300c7-8327-8661-a3da-41755ab9a666"
     - stage: uuid
-      stageUuid: "c2035086-825b-8634-b294-d9c31c36015b"
+      stageUuid: "63b2517e-fa52-8a68-a21b-b3ed447fb9bd"
 version: 2
 ---
 # radio

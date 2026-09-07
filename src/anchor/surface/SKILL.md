@@ -2,10 +2,10 @@
 name: surface
 description: "Use when declaring or auditing the whole cryptographic surface an atom exposes — the judgment guard that makes a silently omitted surface fail the build: every reachable surface (root-signing · channel-keying · storage-at-rest · re-exchange) must be registered sealed (naming the standard AND the test) or open (naming the gap AND the owner), a channel sealed without FIPS 203 ML-KEM is channel-unsealed because harvest-now-decrypt-later reads the transport not the root, and a root sealed by anything but FIPS 205 SLH-DSA or FIPS 204 ML-DSA is root-unsealed because Shor breaks a classical root outright."
 atomPath: "anchor/surface"
-coordinate: "anchor/surface · 2/share · e4a83f88"
-contentUuid: "6f5f839a-8519-5ece-b3ca-a0b26d08ff23"
-diamondUuid: "3a98a0e7-9805-8a21-b35a-274d8528d7d7"
-uuid: "e4a83f88-d4c3-8866-bcd4-37a5df55003b"
+coordinate: "anchor/surface · 2/share · 67c2a200"
+contentUuid: "a0092826-afd1-5725-a874-705bf59f9873"
+diamondUuid: "24acdf76-a31f-8968-b037-8a28860abad5"
+uuid: "67c2a200-a827-8669-8925-a283e6a72717"
 horo: 2
 typography:
   partition: anchor
@@ -16,7 +16,7 @@ standards:
   - "FIPS 205 (SLH-DSA) — hash-based signature; the primary root, no new assumption"
 bindings: []
 signatures:
-  computationUuid: "603704f9-b406-8d99-8364-c602a1843feb"
+  computationUuid: "483c8789-0d98-87e1-b799-876ab353f60b"
   stages:
     - stage: path
       stageUuid: "7445b50e-7694-8eac-8c5e-8b0c465ea9b9"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9b106329-658c-8365-a69b-067ef1bd9a3e"
     - stage: horo
-      stageUuid: "dcf4b14c-b4c2-822f-af01-7c953095c8e2"
+      stageUuid: "78397ce0-1c6c-811c-8fb7-ba5aecb4c840"
     - stage: seal
       stageUuid: "1c3458f6-d0c0-8582-a603-8d5d13a63045"
     - stage: uuid
-      stageUuid: "65faa80d-49d7-8e4f-8a0c-704ca3a9ead4"
+      stageUuid: "c26d3ab6-746b-833f-85f4-f3e8859ae88f"
 version: 2
 ---
 # anchor/surface — a surface you did not declare is a surface you dismissed

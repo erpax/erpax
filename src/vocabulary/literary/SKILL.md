@@ -2,11 +2,11 @@
 name: literary
 description: "Use when reasoning about literary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/literary"
-coordinate: "vocabulary/literary · 5/round · 30aa47c4"
-contentUuid: "3ffb23e9-e04e-50ea-8c9a-8d76d2683e5d"
-diamondUuid: "cb49ee77-ca67-8e51-92b0-85804a04147a"
-uuid: "30aa47c4-f66c-8545-9bec-90d1e1c66e27"
-horo: 5
+coordinate: "vocabulary/literary · 7/descent · f78cb08d"
+contentUuid: "f49f27a3-51d0-5eb7-ba62-319cd60a7c36"
+diamondUuid: "0c38469a-4a11-81cc-9d8a-b5895e7b346e"
+uuid: "f78cb08d-6226-877a-a6f6-3541ced5f0d0"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "962fa8e2-5cbf-8e43-8772-396ed0b27e56"
+  computationUuid: "192df696-d38a-877c-aae2-516a6f30b964"
   stages:
     - stage: path
       stageUuid: "f56b57dc-8ab3-811d-99b6-b6990b48063b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "281740bf-da20-8fb5-b0f6-dc3bb3c745a1"
     - stage: horo
-      stageUuid: "6d79100e-03d5-856b-85cf-5eed4a0569ad"
+      stageUuid: "a376348e-fe39-8112-86d4-932e642a5dde"
     - stage: seal
       stageUuid: "bcdb2d52-4f9b-8505-b0b0-f47f7711ed97"
     - stage: uuid
-      stageUuid: "2fd09c45-66d9-8ad2-9e54-2b85a3429210"
+      stageUuid: "ac723b82-2ed8-8e1c-87da-8c211cc1a6f2"
 version: 2
 ---
 # literary

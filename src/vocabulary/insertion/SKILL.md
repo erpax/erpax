@@ -2,11 +2,11 @@
 name: insertion
 description: "Use when reasoning about insertion — The place of attachment of a muscle, or what the muscle moves."
 atomPath: "vocabulary/insertion"
-coordinate: "vocabulary/insertion · 1/base · 8600a294"
-contentUuid: "1205446e-8252-577d-8c24-7de48abdf1af"
-diamondUuid: "31803c70-5635-8d23-8b55-5cc4453727c3"
-uuid: "8600a294-d974-84e3-a4a4-2693a4391175"
-horo: 1
+coordinate: "vocabulary/insertion · 5/round · 496499a0"
+contentUuid: "ab30c3aa-05d2-5559-a7de-068d348bcf55"
+diamondUuid: "1abd67d3-38b6-812d-b77c-b9652ad0a740"
+uuid: "496499a0-c117-8bc9-a758-1001c4a9df11"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d950b3c1-6791-81ef-8b20-69b03ee12218"
+  computationUuid: "6c6197f9-29e3-873b-b2bc-6e3a8a7efaa1"
   stages:
     - stage: path
       stageUuid: "b9816e93-2990-8488-a752-bcf79c99f580"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "94793c2e-bd14-8a0d-8e61-10eff454fec3"
     - stage: horo
-      stageUuid: "ff5c05b4-ab6b-88b6-922d-86aa14b0278c"
+      stageUuid: "93b11649-c71d-8816-87e1-b9a32a74f789"
     - stage: seal
       stageUuid: "431ef06d-9624-80ab-9623-7cba8d3b6c60"
     - stage: uuid
-      stageUuid: "70b320e8-5d42-8739-a5fc-6ea0548a05c7"
+      stageUuid: "cbbccde8-dfde-8b20-86d6-967645857a94"
 version: 2
 ---
 # insertion

@@ -2,11 +2,11 @@
 name: specified
 description: "Use when reasoning about specified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: specified
-coordinate: "specified · 2/share · f5c9bbcb"
-contentUuid: "3e14c776-71e5-589b-b4b6-730cf13756ba"
-diamondUuid: "f401fdaf-6bf0-8bee-8160-8125724f4416"
-uuid: "f5c9bbcb-6c3d-85cf-b500-1d30a42cfa58"
-horo: 2
+coordinate: "specified · 5/round · 6da1da31"
+contentUuid: "f8d1bdbc-4314-5f93-8251-d1956ca97092"
+diamondUuid: "5b208dda-d08c-8d0a-a967-52cc38163a15"
+uuid: "6da1da31-debb-842b-9212-856ff7b20637"
+horo: 5
 typography:
   partition: specified
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fcf28bb0-3c1e-8e0a-96dd-d61b96b12a58"
+  computationUuid: "b92be4b2-b7d8-8e98-bced-7c7ff82267f7"
   stages:
     - stage: path
       stageUuid: "b8534d85-3726-81eb-9939-3a7a1944bca1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "48a08551-1e7f-8f25-89c6-485d1b645306"
     - stage: horo
-      stageUuid: "07914713-b51b-844d-9964-734976ac0fef"
+      stageUuid: "038b5ef3-8250-8572-8027-18c110f73b0f"
     - stage: seal
       stageUuid: "35fbe2cf-e81a-8755-827a-aa9d6dbea95b"
     - stage: uuid
-      stageUuid: "4ede516b-cc79-8c9d-ae06-18cf40651432"
+      stageUuid: "ba035864-1c06-8997-9227-b5e2c76fd8c5"
 version: 2
 ---
 # specified

@@ -2,11 +2,11 @@
 name: control
 description: "Use when reasoning about control as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/control"
-coordinate: "vocabulary/control · 1/base · 8436dc19"
-contentUuid: "46c19c98-2033-5591-b646-696cb46c94fe"
-diamondUuid: "ec2980a2-4f91-8865-a8af-8474ddefa41e"
-uuid: "8436dc19-e923-80b5-a5fc-782037bf8cd1"
-horo: 1
+coordinate: "vocabulary/control · 7/descent · e4225479"
+contentUuid: "3794da6f-8628-5d81-aad3-af8354de4498"
+diamondUuid: "71a23add-200a-8d48-b980-99ffbb41ec83"
+uuid: "e4225479-0a7a-8bf4-8be2-76c7de41f21f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6f15977b-c690-8cac-96e8-5e13672a9da8"
+  computationUuid: "391a3248-2663-8335-bd24-c4d172da0417"
   stages:
     - stage: path
       stageUuid: "f57eb7c5-4962-8975-98bf-5fe28a6da9f4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0739fae1-fdc6-8f70-b1a0-08415ecf3af5"
     - stage: horo
-      stageUuid: "02b83dfb-18ea-8269-ba58-0be6d73ddafb"
+      stageUuid: "c6ccc245-0527-8530-a17b-81e142d0113a"
     - stage: seal
       stageUuid: "52a2d1fa-595c-8bee-a6d8-c10e84aefe34"
     - stage: uuid
-      stageUuid: "0470e119-1f56-8f04-969e-183ad04db56f"
+      stageUuid: "b4b117ce-eaa7-8faf-9f8a-73cb39c44f02"
 version: 2
 ---
 # control

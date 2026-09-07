@@ -2,18 +2,18 @@
 name: dimension
 description: "Use when projecting the corpus across its quantum dimensions — the dimension identities, plugin surface and coverage results the realtime child streams from. Promoted from a loose sibling; the hyphenated realtime half nests as a child atom rather than a second root file. Run: tsx src/quantum/dimension/index.ts"
 atomPath: "quantum/dimension"
-coordinate: "quantum/dimension · 8/crest · 1b73b0ed"
-contentUuid: "b7b0f896-bd2e-53df-a78c-5081983a4274"
-diamondUuid: "ac014a25-818b-814f-bca0-eed0a66a5b20"
-uuid: "1b73b0ed-c288-80e2-ac20-7e1b50cfee2a"
-horo: 8
+coordinate: "quantum/dimension · 4/weave · 115ad4e2"
+contentUuid: "5096d66d-d7af-5832-98c2-c537b90c8794"
+diamondUuid: "c28e7eb8-0516-8018-9177-24c4a613d1ba"
+uuid: "115ad4e2-634a-829a-bf76-6c70c6271c78"
+horo: 4
 typography:
   partition: quantum
-  bondDegree: 196
+  bondDegree: 198
 standards: []
 bindings: []
 signatures:
-  computationUuid: "980bec55-00c7-85d5-bc3a-3b4abb7fcffc"
+  computationUuid: "18c1523c-b20c-87fe-8891-bab565f01a6b"
   stages:
     - stage: path
       stageUuid: "f7ccccaf-c59f-8e7e-9780-63a5a94ba155"
@@ -24,21 +24,21 @@ signatures:
     - stage: links
       stageUuid: "3102cb2a-93ee-8edf-8bc9-76cf302f6ca1"
     - stage: horo
-      stageUuid: "3dcb1f0e-513f-8445-9932-04ceda153dea"
+      stageUuid: "70ebe902-f8c1-847c-89a3-d7fee0ca2939"
     - stage: seal
       stageUuid: "ece88ba2-ff8c-878e-bf3d-c6c665cf5ea1"
     - stage: uuid
-      stageUuid: "a9109fa8-1ec6-8244-9d37-f7c19194fe94"
+      stageUuid: "ea256b9f-f5d4-8a4f-a2b3-7b4f385d7564"
 quantum:
   superposition:
     - age
     - aggregation
     - all
+    - analytics
     - angel
     - api
     - collapse
     - colleagues
-    - compass
     - superposition
   collapse:
     - "Use when projecting the corpus across its quantum dimensions — the dimension identities, plugin surface and coverage results the realtime child streams from. Promoted from a loose sibling; the hyphenated realtime half nests as a child atom rather than a second root file. Run: tsx src/quantum/dimension/index.ts"
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "980bec55-00c7-85d5-bc3a-3b4abb7fcffc"
-    contentUuid: "b7b0f896-bd2e-53df-a78c-5081983a4274"
+    computationUuid: "18c1523c-b20c-87fe-8891-bab565f01a6b"
+    contentUuid: "5096d66d-d7af-5832-98c2-c537b90c8794"
 version: 2
 ---
 # dimension — the projection axes, held as one atom
@@ -76,4 +76,4 @@ So the specifiers were repointed with the move, in the same diff, and the whole 
 
 Composes: [[quantum]] · [[quantum]]/dimension/realtime · [[rules]]/invisible · [[law]].
 
-<sub>content-uuid `b7b0f896-bd2e-53df-a78c-5081983a4274` · account `quantum/dimension` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `5096d66d-d7af-5832-98c2-c537b90c8794` · account `quantum/dimension` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

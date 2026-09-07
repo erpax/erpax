@@ -2,11 +2,11 @@
 name: accounts
 description: "Use when managing bank account master data — IBAN (ISO-13616 mod-97 validated), BIC, account name, purpose (operating/payroll/tax/reserve/FX), GL cash account link, currency, country auto-derived from IBAN; separate from statement transactions. The cash-account master collection."
 atomPath: "bank/accounts"
-coordinate: "bank/accounts · 5/round · 6c03f107"
-contentUuid: "771f5fc0-157c-5351-ba3f-22d541e5fc16"
-diamondUuid: "147966d7-4a57-8f95-b2ab-26733490a7c7"
-uuid: "6c03f107-f915-8d81-ad74-6ea93fdcb29f"
-horo: 5
+coordinate: "bank/accounts · 7/descent · 7611d111"
+contentUuid: "969999a0-a51b-515b-a3e3-0a4b3f92a0cc"
+diamondUuid: "da2f542f-a9c1-820f-85fb-518235af09f1"
+uuid: "7611d111-ce40-82d2-a7d1-a99689d11622"
+horo: 7
 typography:
   partition: bank
   bondDegree: 44
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "216bd963-4dc2-8306-91ab-635714012fa2"
+  computationUuid: "f1d02cd6-895a-8383-a370-6620620b81d2"
   stages:
     - stage: path
       stageUuid: "60b94686-1fac-88a8-a05f-29a6cb9baafb"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "1550b6cd-8401-8c89-ac53-91016a54c928"
     - stage: horo
-      stageUuid: "aef4cfcf-76bf-800d-9732-4f7417fffea3"
+      stageUuid: "cce6edc3-9d61-8675-8eef-ccb521a14d11"
     - stage: seal
       stageUuid: "fcf888b0-1283-88af-8dae-8956a4e2219d"
     - stage: uuid
-      stageUuid: "47d52341-4ba3-825c-b3bf-54fb97482441"
+      stageUuid: "6c2fb2b7-c477-851c-9542-8d848f2fe2cb"
 version: 2
 ---
 # bank-accounts

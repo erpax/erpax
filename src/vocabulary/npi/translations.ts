@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "npi",
-    "uuid": "05f79597-a3b9-8b60-9242-bd57b1130f00",
+    "uuid": "8f8f054f-8ebb-8c5e-ac37-e8019899f007",
     "words": [
       "npi"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about npi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "835f0baf-d20a-8202-93fb-be0408137426",
+    "uuid": "acf6c153-acbc-8e52-989b-ac1e888ca410",
     "words": [
       "use",
       "when",

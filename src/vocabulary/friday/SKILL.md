@@ -2,10 +2,10 @@
 name: friday
 description: "Use when reasoning about friday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/friday"
-coordinate: "vocabulary/friday · 2/share · 3c5ae3d6"
-contentUuid: "cf8b5022-6bd5-5f73-9378-b4fcfb07ff48"
-diamondUuid: "ad0436c5-e5a5-89e5-ad23-a7445adc47e8"
-uuid: "3c5ae3d6-51d9-89c5-92d1-4a9ffa063ff1"
+coordinate: "vocabulary/friday · 2/share · 42643852"
+contentUuid: "f5b86437-38c9-5f54-9f5f-5e29f2ec9414"
+diamondUuid: "d92eccda-d68a-84da-9147-699453bfef56"
+uuid: "42643852-8f8d-865a-a5d7-edd0c23a9200"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8de8b91a-9aef-8c69-bcd9-88907a7cca22"
+  computationUuid: "bc1a97c3-2ef4-8e42-8e15-339398a76f1a"
   stages:
     - stage: path
       stageUuid: "e687a993-47e2-8204-8f41-89165a622031"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d22977e2-1e26-85d4-9880-900909156253"
     - stage: horo
-      stageUuid: "7f6172fb-98be-8728-a648-22da03c0c189"
+      stageUuid: "d47599e3-0905-85c4-920d-16a663674a92"
     - stage: seal
       stageUuid: "4d84c5b0-5647-867f-9023-7fca1d11abf0"
     - stage: uuid
-      stageUuid: "543ce7c1-7b20-8e7c-acc5-74a9440a16fd"
+      stageUuid: "e34edcdd-5004-8f51-b707-e3a57631953f"
 version: 2
 ---
 # friday

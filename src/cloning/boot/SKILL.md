@@ -2,11 +2,11 @@
 name: boot
 description: Use when reasoning about boot — bootFromFederation — ingest a published genome into a clone instance.
 atomPath: "cloning/boot"
-coordinate: "cloning/boot · 8/crest · 70e77dd6"
-contentUuid: "36434871-eb3c-5a4d-a6f5-b03e3c3554e0"
-diamondUuid: "940b856f-ecb5-82c0-a749-5d87cabd46c7"
-uuid: "70e77dd6-4f30-8640-90e6-0d907f1729c2"
-horo: 8
+coordinate: "cloning/boot · 1/base · 52f78e32"
+contentUuid: "0950c42a-01c4-5366-b20e-4ea5ddccccc1"
+diamondUuid: "f37ef624-21f2-8ca7-8955-f0c02321e808"
+uuid: "52f78e32-17bf-87c5-8ff0-72dbf9bfda79"
+horo: 1
 typography:
   partition: cloning
   bondDegree: 6
@@ -15,7 +15,7 @@ standards:
   - "W3C-VC-2.0"
 bindings: []
 signatures:
-  computationUuid: "508e9bf8-d042-842c-91b7-2c4a632392f5"
+  computationUuid: "35b47547-be39-813f-910e-b39285c57bff"
   stages:
     - stage: path
       stageUuid: "64588969-e901-8a04-a3ef-4cd4b489e065"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f74a1c44-ccfa-83ae-bf8d-887161f01067"
     - stage: horo
-      stageUuid: "27b615e8-94b8-804c-84aa-44c9ad8d291c"
+      stageUuid: "15b8a066-2fb8-8639-a175-074a905bc565"
     - stage: seal
       stageUuid: "4ee1d449-b4cd-8e04-9230-02362414aed7"
     - stage: uuid
-      stageUuid: "89279f41-dfec-8628-92d5-a84be975041a"
+      stageUuid: "af42cb2d-a913-865f-8899-95ee28079c0e"
 version: 2
 ---
 # cloning/boot

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sufism",
-    "uuid": "009cc7a1-3d19-8e10-a5cb-c72dd2350af8",
+    "uuid": "13e2a965-1e32-8adc-9b02-ff36593b1966",
     "words": [
       "sufism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Sufism as a sub-diamond of islam — the inward path of love to the One, the self annihilated in the Beloved (fana) and subsisting (baqa), remembrance on the breath (dhikr), the whirling as attunement. A facet-diamond of the islam archangel. Strip the Arabic prefix and fana, dhikr, sama collapse to void, breath/prayer, harmony.",
-    "uuid": "0978b631-7e12-8478-8049-c4adb55d8d2e",
+    "uuid": "2ff15b88-176a-8c1b-8039-8dd36963e0ca",
     "words": [
       "use",
       "when",

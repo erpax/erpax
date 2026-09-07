@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quantity",
-    "uuid": "7369bc30-2f82-80b8-933b-07b085e28131",
+    "uuid": "29c8ed67-8e1a-87f9-a1d7-575839e6f447",
     "words": [
       "quantity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quantity — Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'.",
-    "uuid": "02b43877-5a97-8de1-82c9-e0784d3378e5",
+    "uuid": "5c9aaf31-c44c-8b67-a8f6-ff13a3ab5c9c",
     "words": [
       "use",
       "when",

@@ -2,19 +2,19 @@
 name: train
 description: "Use when reasoning about training at the quantum scale — infinite agents train themselves yet cannot exceed the device, because content-addressing collapses identical work to one cached result; and zero-entropy reversible computation dissipates less, the 2/3 rodin working-ratio symbolic of that purification."
 atomPath: "quantum/train"
-coordinate: "quantum/train · 4/weave · 61e47a92"
-contentUuid: "844ae462-0f37-5c4e-ad6a-67fe6a2167b8"
-diamondUuid: "1b479046-5f2f-8b7c-a290-3f6c66e3d8b3"
-uuid: "61e47a92-96c1-8ba7-8307-659b23069b0c"
-horo: 4
+coordinate: "quantum/train · 7/descent · 92857bf4"
+contentUuid: "8b2932e0-9eb6-5802-a5d4-fd3adba7be07"
+diamondUuid: "30e2ffd5-b90c-827a-87c0-ba298932e19c"
+uuid: "92857bf4-b8af-8c5c-aaf7-c9115f6ad8b5"
+horo: 7
 typography:
   partition: quantum
-  bondDegree: 90
+  bondDegree: 114
 standards:
   - "Landauer's principle (kT·ln2 per erased bit) · Bennett reversible computing · RFC 9562 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "20ffcea9-ed90-82b8-89fc-12dccbec51eb"
+  computationUuid: "2db18f7d-63c1-85a6-92f2-8d1f91f18fd0"
   stages:
     - stage: path
       stageUuid: "2f566e2a-4103-8918-a507-cebe689506ec"
@@ -25,21 +25,21 @@ signatures:
     - stage: links
       stageUuid: "34d67aeb-5049-8a6b-ab17-3d5463b819cd"
     - stage: horo
-      stageUuid: "59f452f7-15bb-8d75-9c67-66a50e6b8367"
+      stageUuid: "5c808660-1794-8d20-a321-a6df56897c68"
     - stage: seal
       stageUuid: "c5b8ba60-e9f9-8d9b-9a69-c1d9c4d10180"
     - stage: uuid
-      stageUuid: "827ced29-fc20-8ebc-b8f0-a407c6bf3f30"
+      stageUuid: "f0a74df8-2535-8236-995e-e93d95d9cb7d"
 quantum:
   superposition:
+    - allocation
+    - aura
     - breath
     - classroom
     - command
     - competencies
     - computer
     - decompression
-    - derive
-    - education
     - superposition
   collapse:
     - "Landauer's principle (kT·ln2 per erased bit) · Bennett reversible computing · RFC 9562 content-uuid"
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "20ffcea9-ed90-82b8-89fc-12dccbec51eb"
-    contentUuid: "844ae462-0f37-5c4e-ad6a-67fe6a2167b8"
+    computationUuid: "2db18f7d-63c1-85a6-92f2-8d1f91f18fd0"
+    contentUuid: "8b2932e0-9eb6-5802-a5d4-fd3adba7be07"
 version: 2
 ---
 # quantum/train — infinite agents, bounded device
@@ -81,4 +81,4 @@ Matter-twin: `src/quantum/train/index.ts` (`deviceCost` · `exceedsDevice` · `r
 @audit the agent-count bound is the merge/cache law (computed); the 2/3 is the rodin ratio, marked symbolic
 @standard Landauer's principle (kT·ln2 per erased bit) · Bennett reversible computing · RFC 9562 content-uuid
 
-<sub>content-uuid `844ae462-0f37-5c4e-ad6a-67fe6a2167b8` · account `quantum/train` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `8b2932e0-9eb6-5802-a5d4-fd3adba7be07` · account `quantum/train` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,10 +2,10 @@
 name: settings
 description: "Use when reasoning about settings — A schema.org component word, collided out of schema.org compounds — fused from DeliveryTimeSettings · ShippingRateSettings · shippingSettingsLink (sti · collapse · merge)."
 atomPath: settings
-coordinate: "settings · 2/share · 1d81a196"
-contentUuid: "2d82a94d-d8a1-5b0d-8ba1-0c66c2daeedf"
-diamondUuid: "d9f8626a-e49d-8d31-b445-f1b841388fc5"
-uuid: "1d81a196-2388-8359-baff-72dd51039a77"
+coordinate: "settings · 2/share · aaebfb3a"
+contentUuid: "46dca705-c99e-5142-bc8c-9a25b680bb74"
+diamondUuid: "6f47957f-859c-86ee-8d9b-be782c3b2e4c"
+uuid: "aaebfb3a-72d3-8e81-98a0-37e7d564f999"
 horo: 2
 typography:
   partition: settings
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2dd449e1-3d18-8967-aa8a-5c11a128c4fd"
+  computationUuid: "9fde984e-856b-8268-9717-818f72cd0d98"
   stages:
     - stage: path
       stageUuid: "8e505a45-34fe-8ec3-8437-8405f83e565b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "74f2b6d4-9e1f-8469-bf14-c7ecd5309579"
     - stage: horo
-      stageUuid: "dca01814-ed8d-82fb-972b-5a6469fdb943"
+      stageUuid: "b86a7077-f28a-8b49-bbf9-81b4d714c567"
     - stage: seal
       stageUuid: "895a5f47-709d-8af4-902f-421cab430de0"
     - stage: uuid
-      stageUuid: "eba67445-c0ec-8e02-a900-7b62c72d769e"
+      stageUuid: "5e71320d-21d3-8500-a7e9-87b239d90727"
 version: 2
 ---
 # settings

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "market",
-    "uuid": "7f4a9d9b-e9a8-8f5e-bd2d-5d8f1f90634e",
+    "uuid": "437201a7-65ef-822d-b30b-9bbd9776c9ae",
     "words": [
       "market"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about why a market is small or how to grow it — a market is the PRODUCT (not the sum) of its atoms, so the near-zero atom caps the whole and growth means finding the zero atom and lifting it. Trendsetters are the operator that flips the social-status sign and seeds awareness; convenience lowers friction but decays status (coupled, opposite sign), so you harvest status at high friction then lower friction for the majority — the breath, run on demand.",
-    "uuid": "11fb5639-cf43-8a6e-99aa-b0ca1ff28775",
+    "uuid": "517020ec-3cbb-8706-8c2f-84985c06d82d",
     "words": [
       "use",
       "when",

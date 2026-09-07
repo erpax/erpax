@@ -2,14 +2,14 @@
 name: sustainability
 description: "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun."
 atomPath: sustainability
-coordinate: "sustainability · 5/round · 1130fae3"
-contentUuid: "c3fb7caf-fac0-5584-b10f-71717e230351"
-diamondUuid: "641f3aa3-7516-8cd6-8f01-885515d1d44e"
-uuid: "1130fae3-e15b-8074-8777-b529a25252ed"
-horo: 5
+coordinate: "sustainability · 2/share · 8e91b7a1"
+contentUuid: "18461eca-0b27-5371-a4a3-c6a5ff01bba8"
+diamondUuid: "fe1f993f-a7c6-898b-84b9-5383653aff31"
+uuid: "8e91b7a1-05a7-82c9-9808-df7b201c5f4e"
+horo: 2
 typography:
   partition: sustainability
-  bondDegree: 57
+  bondDegree: 59
 standards:
   - "Brundtland Report, Our Common Future (1987) — canonical sustainability definition"
   - "Prigogine dissipative structures (Nobel Chemistry, 1977) — order by dissipation"
@@ -17,7 +17,7 @@ standards:
   - "Verhulst logistic growth (1838) — carrying capacity K; dN/dt = r·N·(1 − N/K)"
 bindings: []
 signatures:
-  computationUuid: "759f8a78-a1f5-809a-b6d7-4ff8170830e5"
+  computationUuid: "8a44a995-d388-8fda-b073-c4bb47ac5cf4"
   stages:
     - stage: path
       stageUuid: "7cd3828b-98c7-8439-94d5-f70532b839dd"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "866e2423-9478-8bf4-b251-37b84fe17594"
     - stage: horo
-      stageUuid: "2d4f10ee-e8a0-8be7-a4f5-f3f2db9826eb"
+      stageUuid: "f47bd524-3e77-80d2-9db9-e24003f71734"
     - stage: seal
       stageUuid: "9a12eb0d-1887-8c17-ae65-432337d86945"
     - stage: uuid
-      stageUuid: "ab63e48e-b8cd-895f-bfb7-88f5dfd38a59"
+      stageUuid: "f7c09c4c-7964-8976-bd92-3cddcc398608"
 version: 2
 ---
 # sustainability — endures because each cycle nets zero (the closed loop)

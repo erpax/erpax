@@ -2,11 +2,11 @@
 name: element
 description: "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full)."
 atomPath: element
-coordinate: "element · 4/weave · 73e60073"
-contentUuid: "7f9fdf9a-57f2-5e60-9ff1-5e5f91957eb8"
-diamondUuid: "9166ac13-6202-853d-88f7-2af5263ae438"
-uuid: "73e60073-ee24-873d-ad57-5362ebbc4b35"
-horo: 4
+coordinate: "element · 2/share · 7061dc85"
+contentUuid: "9e42f2cb-f19c-592e-9fd2-701b4a2d6a0b"
+diamondUuid: "a334f1c2-2fe3-8b23-a4c6-a0aa8bed0a66"
+uuid: "7061dc85-0d30-8d8e-a34f-087e620b4583"
+horo: 2
 typography:
   partition: element
   bondDegree: 77
@@ -15,7 +15,7 @@ standards:
   - Lewis octet rule (duet for period 1) — stability = a full outer shell
 bindings: []
 signatures:
-  computationUuid: "f984b4c1-0d28-8157-bf7a-0b2b0e7c5634"
+  computationUuid: "56d1f37a-f1f3-830e-a2a6-be90d0955548"
   stages:
     - stage: path
       stageUuid: "c7b1e524-2727-8656-a6ac-10e671c569bd"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f69333e5-0f24-841d-bb4d-32057cdb2750"
     - stage: horo
-      stageUuid: "398048f6-478e-8c70-9c31-6e26c9926c51"
+      stageUuid: "74b6102b-6f0f-8200-be47-5e9080acc574"
     - stage: seal
       stageUuid: "a62028a3-9a7c-8fdd-845a-959440dc626f"
     - stage: uuid
-      stageUuid: "705c1675-4a36-86a6-9dbc-cdbbec37cee9"
+      stageUuid: "630cfa5e-7068-823e-b5af-4eb6ddf495ce"
 version: 2
 ---
 # element — the periodic matrix as a logic of composition (the corpus is a molecule)

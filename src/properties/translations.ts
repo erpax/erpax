@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "properties",
-    "uuid": "8e34ab29-fc7b-88c9-acae-9c9e6a1ed376",
+    "uuid": "ea52d13a-07b4-84ce-85ef-c4fd712bc54c",
     "words": [
       "properties"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering or querying the real-estate portfolio — owned, leased (IFRS-16 ROU), managed, or sublet buildings, sites, and land parcels — with area measurements (IPMS), occupancy, EPC energy rating, BIM reference, and links to spaces, fixed-assets, and leases. The IWMS property master collection.",
-    "uuid": "18ef5e19-91d0-864b-be75-cce47d2b2834",
+    "uuid": "8d1d2644-b499-8ffb-9ea8-a0cf500f5cf0",
     "words": [
       "use",
       "when",

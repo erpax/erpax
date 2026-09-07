@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "manufacturer",
-    "uuid": "9779895d-8452-89cb-bcc0-b8c493900d2a",
+    "uuid": "f07da166-86d0-8ada-abf3-f7e12ba67b74",
     "words": [
       "manufacturer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about manufacturer — The manufacturer of the product.",
-    "uuid": "79f20420-be7c-8fd5-8e06-36b4ebe7464b",
+    "uuid": "d3d1a290-2507-873a-823a-cfc92716888a",
     "words": [
       "use",
       "when",

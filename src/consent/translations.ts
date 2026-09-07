@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consent",
-    "uuid": "debe798f-2d6c-8888-a0b7-082ff8805bf0",
+    "uuid": "0ebbfeff-ac11-8677-adf4-7e819fab7475",
     "words": [
       "consent"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions.",
-    "uuid": "27281a4b-9f00-8555-9def-4cc3c2549ade",
+    "uuid": "399b6171-9e6a-886c-bf4f-5cbf9f9b157e",
     "words": [
       "use",
       "when",

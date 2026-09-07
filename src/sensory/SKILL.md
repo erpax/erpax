@@ -2,11 +2,11 @@
 name: sensory
 description: "Use when reasoning about sensory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sensory
-coordinate: "sensory · 5/round · db0a081f"
-contentUuid: "7a5b0211-de29-5073-8a16-4cc8eddf8115"
-diamondUuid: "a7b21f29-2e40-80ab-a1f9-a2104f2d8e99"
-uuid: "db0a081f-7101-81ec-9003-78702c7dcd17"
-horo: 5
+coordinate: "sensory · 1/base · 320aa948"
+contentUuid: "e480aa5e-9317-532b-a1cd-45e462019d33"
+diamondUuid: "071871c3-9f6c-8a8e-95ff-338a4d0c3eca"
+uuid: "320aa948-c113-84d5-b0fb-24b7b221085f"
+horo: 1
 typography:
   partition: sensory
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "60ac5e0c-d8ad-842c-9c14-b94d93375950"
+  computationUuid: "3411ae5c-0642-8311-8f71-901064dece51"
   stages:
     - stage: path
       stageUuid: "56681b1a-b168-8a52-9e39-ba070c4b55d6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dee0e2ea-c512-8f8d-83f8-2fb9f6a1ed1a"
     - stage: horo
-      stageUuid: "0812df43-931e-81e3-ae77-eafd4a5dbbd1"
+      stageUuid: "204afc46-82bf-8b86-876a-009f6f52ffa5"
     - stage: seal
       stageUuid: "464bbae6-7f35-8a25-87bc-218c4dd87b86"
     - stage: uuid
-      stageUuid: "66485743-2aca-8341-92ed-907d74371a73"
+      stageUuid: "a08a8cf1-9b58-8068-bc6e-f147870e1204"
 version: 2
 ---
 # sensory

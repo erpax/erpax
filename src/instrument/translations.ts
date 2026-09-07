@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "instrument",
-    "uuid": "76ae33b3-43aa-8c7e-a1bf-df2a7ee045c8",
+    "uuid": "b6d6977b-3afd-86fe-be1b-a0796234bd70",
     "words": [
       "instrument"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about instrument — Use before taking any measurement of this corpus — which tool answers which question, and how each one lies. Every wrong number here was a wrong instrument, or a right one trusted past its limit: a name-grep over a minified bundle, a lint report contradicted by the compiler, a web fetch returning a model's rendering, a count copied from a stale document. The pattern is that the wrong instrument does not error, it answers. instrumentFor names the settling tool; assertInstrument fails closed on a known-wrong pairing; an unregistered question passes, because pretending the register were complete would be the same error.",
-    "uuid": "f87312f9-1522-8f38-9be7-355a8383ce23",
+    "uuid": "d8294cac-eb26-86f6-b7df-5a9e5a72ea3e",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "exact",
-    "uuid": "5fa6fce3-5c9b-87b3-8cb1-fe901d447c33",
+    "uuid": "2084a532-c7f5-8916-9399-aa22285f1005",
     "words": [
       "exact"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about exact — Exact rational arithmetic for confidence, no decimal approximations",
-    "uuid": "f6943a56-6d48-8756-a018-53257ae2a829",
+    "uuid": "b860fc54-4e50-8622-863a-fcf43894c31a",
     "words": [
       "use",
       "when",

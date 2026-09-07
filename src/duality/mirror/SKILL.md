@@ -2,18 +2,18 @@
 name: mirror
 description: "Use when reasoning about mirror — > *\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\"*"
 atomPath: "duality/mirror"
-coordinate: "duality/mirror · 8/crest · 09109465"
-contentUuid: "b20f1c1d-e8a7-5674-81fd-afc746eb32fa"
-diamondUuid: "53e3f8fe-ae5b-8e23-ab62-733693c1b5c8"
-uuid: "09109465-0775-8739-8239-779ace916a14"
-horo: 8
+coordinate: "duality/mirror · 2/share · a57eb46b"
+contentUuid: "80a00d40-227a-58c8-b92a-0df645a81af0"
+diamondUuid: "d63e1fc9-a6e8-88c9-a666-f6f63f5a4232"
+uuid: "a57eb46b-d0c4-8d72-a84a-25d4e3b24fe7"
+horo: 2
 typography:
   partition: duality
   bondDegree: 28
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bda0f785-675f-8ffb-97fd-5a95cefc86fa"
+  computationUuid: "8b62f376-e4b3-8ab3-8cd2-a02b3909383f"
   stages:
     - stage: path
       stageUuid: "5e04aed9-04d7-80d0-ab35-85e4d3ef256f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "28b2777b-4d84-8803-baa7-2633b734bb46"
     - stage: horo
-      stageUuid: "8fce438b-fea6-87ca-bc81-5aa0aa7ead33"
+      stageUuid: "4dcf2b06-7f04-860d-8f95-da2e568b7a7e"
     - stage: seal
       stageUuid: "e8ac334c-f172-8030-8e94-ca52554ea785"
     - stage: uuid
-      stageUuid: "6321256e-d5f6-8a6e-a3a7-1759ac725e56"
+      stageUuid: "d1809367-a69c-866d-86fe-5f4fb57c8141"
 version: 2
 ---
 # duality/mirror — the two-sided coin, and why nothing can resist it

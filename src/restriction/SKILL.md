@@ -2,18 +2,18 @@
 name: restriction
 description: "Use when a contract imposes use restrictions — field of use, geographic restriction, customer type restriction, sublicense prohibition, derivative-work restrictions."
 atomPath: restriction
-coordinate: "restriction · 2/share · 6c8ec853"
-contentUuid: "5a99304c-b735-5063-a4e2-3c353c8da7d9"
-diamondUuid: "d2f43258-d1dd-8be6-b8c6-964c871963a9"
-uuid: "6c8ec853-e902-883c-a9a5-891786bae4bf"
-horo: 2
+coordinate: "restriction · 1/base · 5ba77aee"
+contentUuid: "d04065bf-2678-5eec-a662-4565c0c5efbb"
+diamondUuid: "0d44459f-64f1-8d60-949d-0d8bb1e260af"
+uuid: "5ba77aee-4fef-8e1c-9be0-f368c43f7ad3"
+horo: 1
 typography:
   partition: restriction
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2ce5444a-e831-87f4-9f5c-a909351c2852"
+  computationUuid: "e435b7a1-24b4-86fa-926c-c00c44d6befd"
   stages:
     - stage: path
       stageUuid: "5d63a0ad-6ccc-8eb6-b757-557595cd73f9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4fc1111d-61a7-8e25-8a5c-f6b4eb1c227f"
     - stage: horo
-      stageUuid: "1782d88d-47d1-82b6-b705-e7a38fd17f76"
+      stageUuid: "e8abcec9-49c1-8b10-ac70-ef7393d53107"
     - stage: seal
       stageUuid: "0c2e3467-c9a8-8556-bed5-aceb6586c4fe"
     - stage: uuid
-      stageUuid: "94aa1b89-558f-8d03-93eb-e26e8fc16a1d"
+      stageUuid: "77b1c4b3-6067-8231-916d-7f1fa0e8df82"
 version: 2
 ---
 # restriction

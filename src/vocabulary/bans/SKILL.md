@@ -2,11 +2,11 @@
 name: bans
 description: "Use when reasoning about bans as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bans"
-coordinate: "vocabulary/bans · 8/crest · 8af3b9e3"
-contentUuid: "5bf421fc-2d70-5de0-a3fd-d4d09417639a"
-diamondUuid: "798a40ac-fb0d-8da4-ac35-97e0049aad0b"
-uuid: "8af3b9e3-d510-8fdc-ae89-75d9447cc6fd"
-horo: 8
+coordinate: "vocabulary/bans · 1/base · 664ca4bd"
+contentUuid: "fe622d8b-0e82-5c67-87bb-5ae9360ca225"
+diamondUuid: "57553aa4-845c-88bc-ba52-bfcb014c1f12"
+uuid: "664ca4bd-ca08-8187-9aac-2e6fcc509559"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4944359b-e66d-8ceb-84ef-8a9efe96b4eb"
+  computationUuid: "46829b00-249d-8063-a0bc-629b8a1c3901"
   stages:
     - stage: path
       stageUuid: "9d592c61-c53b-8334-ae0f-ab80bc4a8f24"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eaa41ec1-791e-8c86-92be-ce99fe6ef8ea"
     - stage: horo
-      stageUuid: "6e3c0f16-57b7-849e-8989-e89f9e2176f0"
+      stageUuid: "584d8789-b1e1-80a8-8457-c28eebf76193"
     - stage: seal
       stageUuid: "f9319158-8fd3-8a14-a60e-46cce75ca200"
     - stage: uuid
-      stageUuid: "ddcc892e-caf1-8bb8-8d3b-1896bcad1084"
+      stageUuid: "94868a39-a732-8532-b786-0bfbda6b496d"
 version: 2
 ---
 # bans

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reporting",
-    "uuid": "87dd24ae-bfda-8b37-89d1-35d3d63cce18",
+    "uuid": "76e1a58a-ba94-87b1-8ad8-f58fd2019ba8",
     "words": [
       "reporting"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing Phase B6: Audit & Compliance Reporting.",
-    "uuid": "3996a87a-9a17-8579-b233-3077d35abcd3",
+    "uuid": "642e6fcf-8617-8eb6-a464-15db58783be9",
     "words": [
       "use",
       "when",

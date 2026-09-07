@@ -2,11 +2,11 @@
 name: height
 description: Use when reasoning about height — The height of the item.
 atomPath: "vocabulary/height"
-coordinate: "vocabulary/height · 5/round · d126d860"
-contentUuid: "52f0c1ba-2691-541e-8d6f-30878ef0b14e"
-diamondUuid: "0aa249b0-4dc1-8222-8bae-961d772b4322"
-uuid: "d126d860-ad98-8a0f-bca2-0dc53db4241b"
-horo: 5
+coordinate: "vocabulary/height · 7/descent · 4ef9dfbd"
+contentUuid: "f0ef994e-adda-5e7e-bb90-53d53ae3133e"
+diamondUuid: "e0e14c78-cb3e-81f0-884e-bfa30316e497"
+uuid: "4ef9dfbd-8176-8b4d-a755-8879a7b966e9"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "810cdb7a-96ca-88cc-9ece-79982850117b"
+  computationUuid: "7f007500-4299-8ab4-8005-a32a65d219de"
   stages:
     - stage: path
       stageUuid: "aafbc442-b6f7-834a-ade4-bdb549a8bfe8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d5118f3e-974a-8caa-812c-b79f188a2e99"
     - stage: horo
-      stageUuid: "a67a004e-b969-844b-b26f-d413ab90238b"
+      stageUuid: "de400603-a6c8-8373-8d24-543c085054b9"
     - stage: seal
       stageUuid: "405ddec7-22f7-89b5-8f29-d3fe527f7114"
     - stage: uuid
-      stageUuid: "9c8a8016-b8fc-8e5c-8285-5f084d91c499"
+      stageUuid: "2fe1470d-3891-82db-9aba-c82c149b21ee"
 version: 2
 ---
 # height

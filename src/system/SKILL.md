@@ -2,11 +2,11 @@
 name: system
 description: "Use when reasoning about system as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: system
-coordinate: "system · 5/round · 560d1c56"
-contentUuid: "b6db72c7-3ccb-5299-b764-6501ce280135"
-diamondUuid: "c6afc6c6-1196-8bf6-b84a-8dab99c6f1c7"
-uuid: "560d1c56-cfdf-84fb-a26c-0ecf5ea44539"
-horo: 5
+coordinate: "system · 4/weave · 66ffc6b5"
+contentUuid: "d6cdee80-a62a-55da-bb9b-8c78b29b5aa6"
+diamondUuid: "ee05d80a-32ef-851d-96a8-d508fdb66e24"
+uuid: "66ffc6b5-44d3-8e00-8202-55d9e6e5e5cf"
+horo: 4
 typography:
   partition: system
   bondDegree: 49
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0d6e334b-640e-8b9f-bd72-d64e0b234c95"
+  computationUuid: "d5e75751-67b6-8c3d-861f-375705f4226a"
   stages:
     - stage: path
       stageUuid: "58c0005a-c29e-8ac0-a3dc-376adc611b10"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e7493c36-af5f-8e13-9c0d-6131fc5b9b81"
     - stage: horo
-      stageUuid: "12f15a19-d89a-8d5c-b7fa-a24ebd14f93b"
+      stageUuid: "4d0b98e6-1052-827f-b8dc-bc50a0202c44"
     - stage: seal
       stageUuid: "4eeb515a-1e24-8309-819d-801231d12486"
     - stage: uuid
-      stageUuid: "6c36f854-54a8-8207-9e95-f253d77089ad"
+      stageUuid: "1b272579-bde5-8524-83b6-fc7163c9c579"
 version: 2
 ---
 # system

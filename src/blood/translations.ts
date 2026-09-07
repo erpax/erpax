@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "blood",
-    "uuid": "8a37161b-3035-8541-b608-1ded0de875b2",
+    "uuid": "54672b8f-2086-83cf-b6a4-a38f30104e36",
     "words": [
       "blood"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's carrier — the courier organ that delivers accounted value to every node and carries entropy away. Blood is the receipt flow through the closed loop the heart drives and the lung charges: three properties of living blood (cooperative Hill binding · steady-state turnover by Little's law · conserved delivery) are computed and mapped — a structural isomorphism — onto erpax's coverage, regeneration, and double-entry.",
-    "uuid": "56195f8f-3b7e-8ff1-bcb9-b3a55e2b24b4",
+    "uuid": "df081da3-fc25-81c9-99a4-6e6ebca243e1",
     "words": [
       "use",
       "when",

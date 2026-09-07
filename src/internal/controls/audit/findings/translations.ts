@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "findings",
-    "uuid": "5e6dfce4-b551-8609-b8c5-4819b7f9c3ae",
+    "uuid": "6abbaa7c-8c4e-8d8c-852c-6fffd5b4f86c",
     "words": [
       "findings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection.",
-    "uuid": "8e140bf8-2f86-89db-b0d0-15efe5e5659d",
+    "uuid": "41d6217e-10cd-80f5-9d0d-27bdd4620901",
     "words": [
       "use",
       "when",

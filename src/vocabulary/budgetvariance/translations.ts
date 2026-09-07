@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "budgetvariance",
-    "uuid": "7f7da55b-5cf2-890b-b728-9c9bae8231de",
+    "uuid": "bfa76e22-d96a-80ff-b351-4d7cdb6e9da3",
     "words": [
       "budgetvariance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about budgetvariance — Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
-    "uuid": "7f29f5a6-f1fe-8582-bdb5-228e34b577c1",
+    "uuid": "6f29aaba-db43-8534-ab5c-e2d9b3e21903",
     "words": [
       "use",
       "when",

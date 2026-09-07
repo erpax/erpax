@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "brow",
-    "uuid": "6cfb898a-1ca1-89a1-bddd-77f12eb1f919",
+    "uuid": "c6e907f4-079d-8592-abe5-ccca07d226fc",
     "words": [
       "brow"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the sixth center — the third eye (Ajna), index 5 of the seven; a standalone projection of the chakra atom whose note and uuid are computed from the position math and whose colour is rendered from that uuid, never the reverse.",
-    "uuid": "ec6225e7-244d-8593-aafd-08192531f16b",
+    "uuid": "9652b497-2c88-88b3-bd21-99a918ab468b",
     "words": [
       "use",
       "when",

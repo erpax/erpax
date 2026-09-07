@@ -2,11 +2,11 @@
 name: electronics
 description: "Use when reasoning about electronics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/electronics"
-coordinate: "vocabulary/electronics · 8/crest · 6d142d26"
-contentUuid: "858921b6-1ef6-504c-a6b2-594360051d1f"
-diamondUuid: "f5f7687c-9f7d-832a-b215-43a692236501"
-uuid: "6d142d26-7964-8a0a-a717-69cbd778273e"
-horo: 8
+coordinate: "vocabulary/electronics · 5/round · c672de78"
+contentUuid: "8afa8228-8fa1-5007-8b7a-87cdee493f9d"
+diamondUuid: "d3cc3a0f-f07f-845b-b494-f897c3df9dbf"
+uuid: "c672de78-b6eb-8df7-a3ce-d8f0de68a2a7"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3600bdca-9e35-866b-91fb-63f640cb3722"
+  computationUuid: "cf8d6efc-e078-8956-a382-ee5a5e83fecb"
   stages:
     - stage: path
       stageUuid: "624bad0d-b1bc-8466-ac9c-9687dca2b9b2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "871150b0-39e6-85dd-aa8a-80d866ad65dd"
     - stage: horo
-      stageUuid: "61d45816-7c5e-8b4c-92a5-cea0135b4479"
+      stageUuid: "77a17d5f-fc9c-8d62-bcab-bec04d17c2eb"
     - stage: seal
       stageUuid: "333c3cb2-74a3-8e1a-844d-13fd2478afbf"
     - stage: uuid
-      stageUuid: "c52871d9-da6e-857e-98e9-bab488f5a8b9"
+      stageUuid: "6a1c8f90-43ef-8a49-bb64-acd49d565476"
 version: 2
 ---
 # electronics

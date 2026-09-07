@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pathophysiology",
-    "uuid": "7352ce88-5fc7-8fb1-ad8c-a635925d749c",
+    "uuid": "2adc491e-aa4a-892b-9667-bfd8396eaabf",
     "words": [
       "pathophysiology"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about pathophysiology — Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
-    "uuid": "0d047efb-fcbc-8690-affe-9b74d1d833af",
+    "uuid": "10049c16-dcfa-8b02-ba62-6707bfd9015c",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: surgery
 description: "Use when reasoning about surgery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: surgery
-coordinate: "surgery · 5/round · 08b9b4e8"
-contentUuid: "a732ff31-afa4-50e0-b16f-500991df1a6f"
-diamondUuid: "6b5e2261-096f-859f-b9e8-8518280517c6"
-uuid: "08b9b4e8-c9b7-8829-8c3e-9516303d4756"
-horo: 5
+coordinate: "surgery · 1/base · 65df56ea"
+contentUuid: "743ab459-b198-5167-b649-68dc58fa8517"
+diamondUuid: "050b3019-03f1-82d6-bbb9-4ee3e693d9b4"
+uuid: "65df56ea-2bce-80a2-ad7f-faf2527ed849"
+horo: 1
 typography:
   partition: surgery
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4244c450-f3ec-874f-bafa-aa3ea4ac5323"
+  computationUuid: "e5c3d1d8-44a0-8ef1-9ea7-72d3568693e6"
   stages:
     - stage: path
       stageUuid: "8119ae0c-ccbf-8527-bff6-78feee1f88b7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2966537e-bd61-80ff-b4bc-7e00221a5d1b"
     - stage: horo
-      stageUuid: "e9b61269-3785-80db-9cfc-a46037d429b4"
+      stageUuid: "f247fc3e-4788-8374-b335-d797238e3b64"
     - stage: seal
       stageUuid: "4b268501-34f2-877e-88c0-664b341ad1c9"
     - stage: uuid
-      stageUuid: "83686efd-69ce-88b1-8733-983cefe0a213"
+      stageUuid: "bfade4f9-f44e-87c5-a4d4-f7be9c027129"
 version: 2
 ---
 # surgery

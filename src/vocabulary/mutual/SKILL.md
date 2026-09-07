@@ -2,11 +2,11 @@
 name: mutual
 description: "Use when reasoning about mutual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mutual"
-coordinate: "vocabulary/mutual · 1/base · b436ce26"
-contentUuid: "b3ad5e7d-9896-58d5-beaa-29a3beb9e0c9"
-diamondUuid: "12e03f0a-3a09-8ffa-a0fd-217f36c606d5"
-uuid: "b436ce26-7121-85f0-850a-25517e143585"
-horo: 1
+coordinate: "vocabulary/mutual · 5/round · 3c55fba2"
+contentUuid: "37e4fa1c-7cf3-5ab6-a7f7-2b59148ba36f"
+diamondUuid: "d6ad0003-5959-8218-b534-f8cc960ff4b0"
+uuid: "3c55fba2-b727-8dd8-ba11-b5b10a1b97c9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "40e3cfc5-9550-8fb1-aafc-01eeb838f431"
+  computationUuid: "ae428fb0-e6bb-8698-85c9-aa938f46ce53"
   stages:
     - stage: path
       stageUuid: "8b8cc648-e452-8ba7-a30c-2fe930a84b10"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "46e2095a-6883-8f5f-99aa-3b5ef5698ed3"
     - stage: horo
-      stageUuid: "db140267-0899-8c45-923d-d16200aabe31"
+      stageUuid: "9dcb98c2-7681-8b70-bd26-edab23f3ac01"
     - stage: seal
       stageUuid: "d0f1c4f7-4f99-8801-92ad-9518924c7733"
     - stage: uuid
-      stageUuid: "9783b361-36ed-88b2-9dec-6fa214b5f0df"
+      stageUuid: "10bb7acd-1936-8181-a1c6-94117c880440"
 version: 2
 ---
 # mutual

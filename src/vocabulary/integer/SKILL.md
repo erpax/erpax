@@ -2,11 +2,11 @@
 name: integer
 description: "Use when reasoning about integer — Data type: Integer."
 atomPath: "vocabulary/integer"
-coordinate: "vocabulary/integer · 5/round · f7c77a76"
-contentUuid: "90155fa9-eff7-5a37-ba8d-cc14fc74a810"
-diamondUuid: "54d3bff2-0c18-8963-ad2f-efc55b64b8d2"
-uuid: "f7c77a76-da56-818d-9f7d-f807daa905fa"
-horo: 5
+coordinate: "vocabulary/integer · 1/base · 8ab93ef8"
+contentUuid: "cb56613b-b356-5ce4-b1b2-14606ad0e326"
+diamondUuid: "c485dcd6-f114-8d30-9bc5-27adbb9bc487"
+uuid: "8ab93ef8-71e9-890f-bc64-126c55ecd626"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fad048a1-0d7d-86f2-8e92-4576c0c4ed3c"
+  computationUuid: "1f128c58-6a0d-8ffd-b8c8-e93e58f47dde"
   stages:
     - stage: path
       stageUuid: "6904e04e-5c19-8d5e-8b8e-646ee4104e62"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c0d80480-663d-85e4-8f29-4efa9725f0c2"
     - stage: horo
-      stageUuid: "4827b3dd-8466-8dc1-96d7-e4d930d4b363"
+      stageUuid: "2bbc5d04-b52f-805c-b302-b7d646829da0"
     - stage: seal
       stageUuid: "6c800541-cf12-8070-a64c-ca9788033149"
     - stage: uuid
-      stageUuid: "fea2d497-7154-84be-9ac4-0c001d0b566a"
+      stageUuid: "04287b5a-68b0-8042-93b4-b1f6d258fed8"
 version: 2
 ---
 # integer

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prospect",
-    "uuid": "5c45886a-07e2-8090-9631-9c19c8d564cc",
+    "uuid": "7390660e-4c18-8172-9803-2b54c7dee822",
     "words": [
       "prospect"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when early-stage contact hasn't yet qualified as a lead — prospect→lead→opportunity progression in CRM. A party in discovery/research phase before qualification.",
-    "uuid": "14e014f2-4255-8f60-b931-24de939182c3",
+    "uuid": "e063cdd8-6e4a-81fe-9e0e-d3a3e67e7208",
     "words": [
       "use",
       "when",

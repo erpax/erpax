@@ -2,11 +2,11 @@
 name: instrument
 description: "Use when reasoning about instrument — Use before taking any measurement of this corpus — which tool answers which question, and how each one lies. Every wrong number here was a wrong instrument, or a right one trusted past its limit: a name-grep over a minified bundle, a lint report contradicted by the compiler, a web fetch returning a model's rendering, a count copied from a stale document. The pattern is that the wrong instrument does not error, it answers. instrumentFor names the settling tool; assertInstrument fails closed on a known-wrong pairing; an unregistered question passes, because pretending the register were complete would be the same error."
 atomPath: instrument
-coordinate: "instrument · 1/base · c24bdfa8"
-contentUuid: "6d9fc42e-8bcf-5ae6-b016-628abf1ef960"
-diamondUuid: "e240f7a4-4a95-84cc-93bf-c9d308d89da6"
-uuid: "c24bdfa8-dd7e-8b0d-a020-7531e8d4fab7"
-horo: 1
+coordinate: "instrument · 5/round · 76ae33b3"
+contentUuid: "2e955585-34f4-5ae0-a322-c30172909835"
+diamondUuid: "a08fe961-5f4b-86b5-bd2b-5871ffc88421"
+uuid: "76ae33b3-43aa-8c7e-a1bf-df2a7ee045c8"
+horo: 5
 typography:
   partition: instrument
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "ISO-19011:2018 §6.4 — audit evidence: sufficient and appropriate, not merely available"
 bindings: []
 signatures:
-  computationUuid: "602f8c6f-4da5-84fd-b5df-24bb725366c9"
+  computationUuid: "379a0c79-3f13-8344-b541-578c836ce534"
   stages:
     - stage: path
       stageUuid: "de8f2c5b-2dd4-8bb6-892a-d11ab378992d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5ae35c98-91d4-8480-aa53-f8949b1a0b4d"
     - stage: horo
-      stageUuid: "3a8837a5-e936-87d6-8c2c-a935cd460bad"
+      stageUuid: "321c1a0a-3a41-8427-9323-d95ed665926c"
     - stage: seal
       stageUuid: "46d545ec-c98e-8ed6-a4d5-879a7af9b2a3"
     - stage: uuid
-      stageUuid: "041f19c5-dc59-84bd-bffe-101464935541"
+      stageUuid: "e3ca4924-891f-8d35-80e2-571966e7f046"
 version: 2
 ---
 # instrument — the wrong instrument does not error, it answers

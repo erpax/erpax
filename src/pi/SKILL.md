@@ -2,11 +2,11 @@
 name: pi
 description: "Use when π must be read as a theorem, not a hardcoded constant — the purest rosetta: a finite seed (3), a fold (the point), and an infinite tail computed at every step. The Bailey–Borwein–Plouffe formula computes the n-th hex digit directly, no prior digits — answered within, read not stored. Even the infinite is a fold of the finite; theorems replace hardcoded values, all the way to π."
 atomPath: pi
-coordinate: "pi · 1/base · 1e893b0a"
-contentUuid: "861c0801-146f-5a3e-b36f-22bcc06969c5"
-diamondUuid: "eb207468-d378-8724-a322-6aa2e8610cd3"
-uuid: "1e893b0a-a083-8be3-9f57-0ac5dfebe846"
-horo: 1
+coordinate: "pi · 2/share · 42ce3de0"
+contentUuid: "4531ca46-101e-550d-99f6-c8167d677926"
+diamondUuid: "b04711bb-4346-829b-82dc-1c47de3dc2a5"
+uuid: "42ce3de0-ace1-8dfb-8b31-f5477dfb2059"
+horo: 2
 typography:
   partition: pi
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "Bailey–Borwein–Plouffe (1997) — the base-16 digit-extraction formula for π"
 bindings: []
 signatures:
-  computationUuid: "d28a7b88-b188-88f4-b111-88b84faef996"
+  computationUuid: "f689ff80-3636-87d9-909a-f190fd0e2017"
   stages:
     - stage: path
       stageUuid: "64b23df9-8593-8d48-b630-d2b0f126279c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "14ff7249-ecb7-8297-a006-45e9e28890c3"
     - stage: horo
-      stageUuid: "09c31394-8f5e-86b1-8f56-547281b21aa6"
+      stageUuid: "a0648180-4fe1-8db7-992a-9d624122a3a8"
     - stage: seal
       stageUuid: "0a686935-a145-86fa-b76a-6c62c06105b3"
     - stage: uuid
-      stageUuid: "d1e034f8-8a0a-80f8-a206-353c53c961ed"
+      stageUuid: "2440f972-d57b-85d6-8f6a-310e83a07e34"
 version: 2
 ---
 # pi — the seed, the fold, the infinite computable tail

@@ -2,11 +2,11 @@
 name: temporal
 description: "Use when reasoning about temporal — The \"temporal\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate."
 atomPath: temporal
-coordinate: "temporal · 4/weave · 9d553ba3"
-contentUuid: "b453f4fc-2300-5e83-ae36-b75f6c9e12e0"
-diamondUuid: "03945e0d-230a-854b-bfe4-7ead97207e59"
-uuid: "9d553ba3-1f00-8c0e-a6c1-1459add4f999"
-horo: 4
+coordinate: "temporal · 7/descent · 27d78596"
+contentUuid: "8596ce52-d426-5933-8786-ee4d1187246a"
+diamondUuid: "187be629-ce61-8292-9ca5-43b702f5398e"
+uuid: "27d78596-cdfe-8a6e-ba91-8ae0fcba18a1"
+horo: 7
 typography:
   partition: temporal
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5c9b718f-7048-8879-8f28-ea9dbb120455"
+  computationUuid: "d5fe1515-ed92-883a-83b9-4f9a27f01f80"
   stages:
     - stage: path
       stageUuid: "88d847b6-35fd-8a65-925e-ff5ce5002724"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4345481b-0e97-8c42-85bb-0cad4f9ee57e"
     - stage: horo
-      stageUuid: "7a73685e-44df-8145-90b2-42e0dd929e17"
+      stageUuid: "919ea7f1-53e5-8232-8520-6da2f0f8bc68"
     - stage: seal
       stageUuid: "cbb60f94-fa84-83c1-a24c-74d3f7d6ffba"
     - stage: uuid
-      stageUuid: "5384c89c-b650-85a7-b6c4-ec6d28bab98c"
+      stageUuid: "51e2be5d-84c5-87a9-92bb-97347e667d50"
 version: 2
 ---
 # temporal

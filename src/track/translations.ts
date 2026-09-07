@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "track",
-    "uuid": "2ae20e1e-c5ae-8c97-ba11-e8e3cd6c6ddb",
+    "uuid": "bbd79ad3-bbe1-8788-9eb6-99c6c31f14ef",
     "words": [
       "track"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about track — A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
-    "uuid": "a31b7189-0869-8615-a778-5aea7d538b50",
+    "uuid": "7c1ad1af-5cd9-8c20-9bb3-49fc94574a21",
     "words": [
       "use",
       "when",

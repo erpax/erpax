@@ -2,18 +2,18 @@
 name: step
 description: "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf…"
 atomPath: "agents/registered/step"
-coordinate: "agents/registered/step · 5/round · 5cb7dd88"
-contentUuid: "76b1c456-0eea-51cb-b404-c923aa8c82df"
-diamondUuid: "32c26e30-1551-8093-9efe-fcb4839c6f86"
-uuid: "5cb7dd88-4855-884e-b03c-825c16473ee7"
-horo: 5
+coordinate: "agents/registered/step · 7/descent · fce3aa7e"
+contentUuid: "3e42f6a2-fbd8-57cf-a858-b9b1bdab6c57"
+diamondUuid: "dddfa0b1-b128-86eb-a55a-bacaf1207260"
+uuid: "fce3aa7e-07cf-8880-8c86-9397ce282e95"
+horo: 7
 typography:
   partition: agents
   bondDegree: 39
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ec5a7147-2940-8fac-b551-20a9fc99bb77"
+  computationUuid: "878d8c16-dd90-8031-8477-a085f5be9804"
   stages:
     - stage: path
       stageUuid: "4d362222-6461-8c15-88c9-9d3578877ef8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c162b245-e650-882c-91d0-172a7cbf85c2"
     - stage: horo
-      stageUuid: "55bb6b92-83fe-8b18-86a3-392d5b09b34f"
+      stageUuid: "448abbd5-57aa-8a17-822e-a494412b2fde"
     - stage: seal
       stageUuid: "1387f692-affa-8a05-8b44-68ef9d47f26f"
     - stage: uuid
-      stageUuid: "c85e6563-692a-8d07-939f-5d6a4d36f6ae"
+      stageUuid: "fc3eb8fb-7cfd-8d0e-94cb-5b018e1c9311"
 version: 2
 ---
 # agents/registered/step — one chain-step handler, where eleven agents each had their own
@@ -37,7 +37,7 @@ Every registered domain agent answered a chain step the same way: read `collecti
 `action=…` out of the step's note, claim the step only if the agent owns that collection, and
 return one audit leaf naming what it handled.
 
-**Eleven agents wrote that out.** 111 nodes each, byte-identical, addressed to one hash by
+**Eleven agents wrote that out.** 111 AST nodes each, byte-identical, addressed to one hash by
 [[rules]]/copy. Eleven copies are one implementation and ten decoys: a change to the note format,
 the ownership check or the leaf shape had to be made eleven times, and nothing would have said which
 copy was missed. That is the shape [[rules]] names — *while one law is stated in eleven private

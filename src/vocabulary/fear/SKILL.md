@@ -2,10 +2,10 @@
 name: fear
 description: "Use when reasoning about the destroy pole of any erpax duality — fear is the archangelic move that RAISES entropy (it breaks, forgets, forges, opens a gap), the credit whose matching debit is love; the thermodynamic floor fear charges is Landauer's kT ln2 per bit destroyed."
 atomPath: "vocabulary/fear"
-coordinate: "vocabulary/fear · 5/round · 2d587252"
-contentUuid: "f5f15cbb-46ac-5d75-82a5-de47882ae9e8"
-diamondUuid: "08b111c3-103b-8cbd-934c-88a2d3b1ae42"
-uuid: "2d587252-a530-87f9-949c-4940f672fbe5"
+coordinate: "vocabulary/fear · 5/round · 09728fb2"
+contentUuid: "6a9b9f3d-3d21-5e57-9d55-1e482c466c3b"
+diamondUuid: "b31068ce-0017-8635-9835-cd30ceac7660"
+uuid: "09728fb2-139a-89ba-a68b-cbea7a52b526"
 horo: 5
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d491999d-46e8-846d-81a9-58658af826d2"
+  computationUuid: "54ebe819-9aaf-88b7-bc57-c7f91bf9050d"
   stages:
     - stage: path
       stageUuid: "8cd044d5-5129-8c5d-9e49-14b46e16a718"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "224a4397-e61f-89e8-afaa-4a0f129d7dc6"
     - stage: horo
-      stageUuid: "f9534fad-8df0-8496-acfa-0a58241310fe"
+      stageUuid: "d1ab696a-dec8-8044-864b-350d5ba443e2"
     - stage: seal
       stageUuid: "bcb94f40-17fa-8b77-b271-96e6678a3bd9"
     - stage: uuid
-      stageUuid: "fcc4ca05-3a15-829b-8bce-af84a52aa3d4"
+      stageUuid: "0337b9ba-ac20-820c-b6b8-a037d0ff3aa0"
 version: 2
 ---
 # fear — the destroy pole (+entropy)

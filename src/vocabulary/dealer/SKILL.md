@@ -2,11 +2,11 @@
 name: dealer
 description: "Use when reasoning about dealer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dealer"
-coordinate: "vocabulary/dealer · 4/weave · 600ed973"
-contentUuid: "b4da2258-d967-5364-9a09-fcb4ce310070"
-diamondUuid: "3aa78e4f-57ab-8639-b526-95672d4ce4d0"
-uuid: "600ed973-53c9-8f7a-94d4-bd875d807d03"
-horo: 4
+coordinate: "vocabulary/dealer · 5/round · f1290248"
+contentUuid: "d3d5b7de-c7f9-5513-85c3-742765e616fb"
+diamondUuid: "2bf626fb-5332-85a4-843e-d3f697dabcc4"
+uuid: "f1290248-7137-81e3-b4af-d9a80e1a3c2b"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5a291b5f-1ed6-82da-bc0d-b8160388441e"
+  computationUuid: "e356ae02-17fa-8750-8aa3-224c030e1fa3"
   stages:
     - stage: path
       stageUuid: "a462a8ee-f067-8056-a14b-f24599cee03f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "df7b50f6-48b3-81d7-a487-dcd61de3b342"
     - stage: horo
-      stageUuid: "501a4f47-fc59-8bb7-bb3e-acaa00aaac25"
+      stageUuid: "8da78f78-cfda-8047-8222-8426b1b2a209"
     - stage: seal
       stageUuid: "82558aac-fb71-8bc9-884a-7db42480b973"
     - stage: uuid
-      stageUuid: "192ae932-2fe4-89fd-a31a-e9966ca092a0"
+      stageUuid: "ba1a6eb2-f496-83d2-af69-30476b46f33a"
 version: 2
 ---
 # dealer

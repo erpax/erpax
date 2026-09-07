@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "compost",
-    "uuid": "8b3ff7f2-ca84-8ad7-a88c-ad064a63a547",
+    "uuid": "7eb85ba2-3988-8a0f-83ae-4deca67adccf",
     "words": [
       "compost"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when organic residues are decomposed into a soil amendment — compost and manure as the organic-matter/microbial input that rebuilds soil rather than just feeding the crop. The literal entropy→soil recycling node: spent residue, decomposed, credited back to the soil's capacity (the regenerative balance).",
-    "uuid": "67d8d54c-f6b8-870d-acab-8d33d9d75822",
+    "uuid": "ca507a3b-2b56-82fb-9a65-e3846e6bcb00",
     "words": [
       "use",
       "when",

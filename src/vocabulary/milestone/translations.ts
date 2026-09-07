@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "milestone",
-    "uuid": "fe457b9c-c9df-8df6-9b8d-ccbc0b347a14",
+    "uuid": "95d19ac0-e864-8323-8803-27e7f90e9e58",
     "words": [
       "milestone"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one milestone — the singular model of the milestones collection (the plural store); a marked checkpoint in a plan or project.",
-    "uuid": "38eeab38-4a3a-85b7-bfca-d9db5337c922",
+    "uuid": "f155cff5-eb89-8288-b34b-783be033ee83",
     "words": [
       "use",
       "when",

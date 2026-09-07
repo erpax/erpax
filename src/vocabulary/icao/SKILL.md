@@ -2,11 +2,11 @@
 name: icao
 description: "Use when reasoning about icao as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/icao"
-coordinate: "vocabulary/icao · 7/descent · fff30508"
-contentUuid: "0f9d95ad-3619-5196-94c0-853d8415ba7a"
-diamondUuid: "83e627a5-ffe6-84f8-a2f6-4fa7774dbbc4"
-uuid: "fff30508-39bf-8c64-8782-5a9b73fac46a"
-horo: 7
+coordinate: "vocabulary/icao · 4/weave · fdb86cca"
+contentUuid: "021c3ad0-48c2-5a6d-b8fc-a56cd5e7f5b1"
+diamondUuid: "50f49b17-40d4-874d-b955-04eeda75188e"
+uuid: "fdb86cca-8f6c-879c-882c-2228a9d4d8d0"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ea44aadf-94c6-8f91-aa5a-d4e82952857e"
+  computationUuid: "b93ad67a-200f-849c-8f57-d87c538c27a8"
   stages:
     - stage: path
       stageUuid: "88b2ddc8-459a-8e3f-9f3c-d8d70eb977a1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2ef44a56-22df-888a-9684-6730bda19d8c"
     - stage: horo
-      stageUuid: "ac804cb8-751b-81c3-b33e-6248e977c208"
+      stageUuid: "0df147e1-12f7-8e40-a7c0-bf70e62aeb6b"
     - stage: seal
       stageUuid: "1511f85c-558a-86fb-85f8-621878eb7526"
     - stage: uuid
-      stageUuid: "e502fe1e-9a50-8345-808d-de9626f5616f"
+      stageUuid: "09492fc4-a4e5-8f65-9117-05e2011c9caa"
 version: 2
 ---
 # icao

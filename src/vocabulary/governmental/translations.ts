@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "governmental",
-    "uuid": "cb8cb2e3-dc42-819d-bcf9-53b3cc10dccb",
+    "uuid": "18582b02-1448-8a38-96e8-e573e50c1f39",
     "words": [
       "governmental"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about governmental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "bb3c6165-45e4-84b8-aa35-4e284f59fff0",
+    "uuid": "472ff858-3e2f-8db2-9dcf-5a2e3dbabcbd",
     "words": [
       "use",
       "when",

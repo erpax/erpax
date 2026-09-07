@@ -2,11 +2,11 @@
 name: camt053
 description: "Use when parsing ISO 20022 camt.053 BankToCustomerStatement — end-of-day account statement (Stmt)."
 atomPath: camt053
-coordinate: "camt053 · 2/share · 7442b4b9"
-contentUuid: "4d96e7aa-d129-5cf7-9735-f19a317aab38"
-diamondUuid: "e195c9af-b535-8543-9694-86aefb395739"
-uuid: "7442b4b9-7630-8b3b-b44f-4b19f8db2cc8"
-horo: 2
+coordinate: "camt053 · 8/crest · e44045ee"
+contentUuid: "90f47e4b-8ec2-50f0-9296-e192555bba27"
+diamondUuid: "6bdc3e75-d8ee-8aa4-9025-0d73fc25e677"
+uuid: "e44045ee-0d00-898a-ac87-7a375b7e9455"
+horo: 8
 typography:
   partition: camt053
   bondDegree: 16
@@ -18,7 +18,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "18d9452b-5cca-8433-a77b-02aba16d4c4b"
+  computationUuid: "9af575f0-b035-827a-aa74-410744074fbb"
   stages:
     - stage: path
       stageUuid: "5ebd5857-6e9f-8f2b-9a3a-e547c6d91274"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "900a5f05-5ac4-8bf2-b50e-758fdf72c8af"
     - stage: horo
-      stageUuid: "b4294f1d-85cd-8b8a-a851-1229519d51c8"
+      stageUuid: "0ac16fcc-9e9c-8842-bc8f-b7f6d5030c1c"
     - stage: seal
       stageUuid: "5226153f-ae43-80a6-ba7b-17792384e0b7"
     - stage: uuid
-      stageUuid: "743edce9-3fee-8fad-ac0d-69cec04eb7c2"
+      stageUuid: "8bfc0942-a8ed-8e12-9b91-0ed1d4224e81"
 version: 2
 ---
 # camt.053 — Bank to Customer Statement

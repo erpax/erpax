@@ -2,11 +2,11 @@
 name: invoice
 description: Use when reasoning about invoice — A statement of the money due for goods or services; a bill.
 atomPath: "vocabulary/invoice"
-coordinate: "vocabulary/invoice · 7/descent · 7b420725"
-contentUuid: "fef82824-0294-5b8e-889c-1ddb384eff51"
-diamondUuid: "a8b3ad49-3f01-87fc-bc16-7244096208c7"
-uuid: "7b420725-614b-8058-8526-2ed3c270a952"
-horo: 7
+coordinate: "vocabulary/invoice · 5/round · 7c146438"
+contentUuid: "ef08d540-1615-5a67-ba7c-5573e1452021"
+diamondUuid: "da97074c-069a-8deb-a93e-67ab225d8750"
+uuid: "7c146438-0c82-8614-a6a7-b1be14485eb9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "87ba47ed-0231-8a3a-aaf5-a054371f58fb"
+  computationUuid: "a5ccf7da-afc5-8f8b-86f0-d24941e14a23"
   stages:
     - stage: path
       stageUuid: "8d32add3-1afc-80b2-a526-8163ddf35d91"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7f1bdd57-5f4e-8313-9d3a-f1b2e916a965"
     - stage: horo
-      stageUuid: "7e5c191e-2156-86bf-9fbc-2439d6f24354"
+      stageUuid: "d161275d-5fd4-86d9-b8eb-60c060086394"
     - stage: seal
       stageUuid: "61565bec-d169-8383-9211-ea1256f23a18"
     - stage: uuid
-      stageUuid: "33650313-5157-85c5-89bf-852d40fdb87a"
+      stageUuid: "5a453819-2000-8bbc-8af9-04decee5c99f"
 version: 2
 ---
 # invoice

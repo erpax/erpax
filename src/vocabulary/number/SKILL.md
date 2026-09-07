@@ -2,18 +2,18 @@
 name: number
 description: "Use when a document needs a human-readable sequential number — invoice/order/protocol numbering per scope. The NumberConcern/InvoiceNumberingConcern field + sequence hook; the number is the human handle, the content-uuid the machine identity."
 atomPath: "vocabulary/number"
-coordinate: "vocabulary/number · 4/weave · 88606f40"
-contentUuid: "446c2cb3-8962-5c16-8fa3-3befd4e3a1d8"
-diamondUuid: "43b07a7c-bdab-8082-a5bf-a9d3705665e0"
-uuid: "88606f40-0e9c-84d3-b9fb-78ced5be4073"
-horo: 4
+coordinate: "vocabulary/number · 2/share · 617dbd2e"
+contentUuid: "45a60ad7-94e7-5796-a68b-231c57aaceed"
+diamondUuid: "c020682b-042e-8b40-ad8e-c99966900a8a"
+uuid: "617dbd2e-0b40-865c-a5e7-f121b21b0b9d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 226
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7c348bdf-e0a4-8a96-857e-34b2fba27f71"
+  computationUuid: "bfda8c00-c594-8165-bccc-fa3fbd01450f"
   stages:
     - stage: path
       stageUuid: "985f61b8-f44f-84ac-a2b1-78259da14eda"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b218939a-d405-8112-a937-234e96f8aee1"
     - stage: horo
-      stageUuid: "6fa965cb-6fd4-8409-bb85-daa139388c99"
+      stageUuid: "4aee7829-2db3-8632-81af-f7201aae6103"
     - stage: seal
       stageUuid: "7f26b15d-bb51-8bdc-9d12-59740257cb37"
     - stage: uuid
-      stageUuid: "c7f4c76c-76fd-8a83-b602-433836e9ebb2"
+      stageUuid: "d0f08691-dcb2-80b5-8281-f3f11aba98ec"
 version: 2
 ---
 # number — the human document handle (the uuid stays the machine identity)

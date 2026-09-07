@@ -2,11 +2,11 @@
 name: principles
 description: "Use when reasoning about principles as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/principles"
-coordinate: "vocabulary/principles · 4/weave · 4996c6f5"
-contentUuid: "bb53f70a-d80e-521a-9b56-3ef5b9d87c49"
-diamondUuid: "6071b3c4-a774-8e81-ad3e-c153067cf9cc"
-uuid: "4996c6f5-9b37-8324-b33b-3c7862e2d9d0"
-horo: 4
+coordinate: "vocabulary/principles · 2/share · ec9cb779"
+contentUuid: "a45d97ef-f025-54e3-8e11-27d6af77e23a"
+diamondUuid: "99af3c60-f6a8-8f33-9e20-a850877a445f"
+uuid: "ec9cb779-0b56-8ff0-9ad7-19232e54be74"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a43420f5-7541-8134-833d-2342fbdb4239"
+  computationUuid: "f5ea6ec2-9c2f-83d9-8833-045083bd1ede"
   stages:
     - stage: path
       stageUuid: "ebc5dde8-361b-870e-b65c-6531f7f4b3d0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93d93fc0-f6de-85ce-9d21-fef320a9c9f9"
     - stage: horo
-      stageUuid: "57ef56e8-7ebe-86ae-8581-d4561203aaa1"
+      stageUuid: "f754d06e-1e82-8528-94e1-bab776867bfc"
     - stage: seal
       stageUuid: "d403bff3-2be3-8fac-b2ea-4477bd691d4c"
     - stage: uuid
-      stageUuid: "23f34309-f191-8770-9a40-fcca71c0ba75"
+      stageUuid: "a679a1aa-4e09-86ec-bbfd-be45252ed719"
 version: 2
 ---
 # principles

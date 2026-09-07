@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expense",
-    "uuid": "a53906f9-3b21-881d-918c-d5b6cdb46b6f",
+    "uuid": "52cba11f-1a0f-825e-a2d4-2a2fa2fc11e0",
     "words": [
       "expense"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about expense — A schema.org component word, collided out of schema.org compounds — fused from IncentiveQualifiedExpenseType · qualifiedExpense (sti · collapse · merge).",
-    "uuid": "66e8e795-7156-8df4-98c8-f3562919cb54",
+    "uuid": "a605aa61-57ea-8320-87d8-cf0f95493811",
     "words": [
       "use",
       "when",

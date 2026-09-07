@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "training",
-    "uuid": "4a101172-458e-856f-b17f-b8fc677dc0a5",
+    "uuid": "7905c3dd-4be2-8334-816c-3319e04542f8",
     "words": [
       "training"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about training — hr.training — the HrAgent's auto-train capability as a PURE transform.",
-    "uuid": "4033c45c-ed82-88d7-8a85-8c0e8d2d0a36",
+    "uuid": "de481a5b-902c-8aa0-8790-d8903edb1df3",
     "words": [
       "use",
       "when",

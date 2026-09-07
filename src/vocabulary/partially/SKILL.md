@@ -2,10 +2,10 @@
 name: partially
 description: "Use when reasoning about partially as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/partially"
-coordinate: "vocabulary/partially · 4/weave · 4d656e0d"
-contentUuid: "c57aa10b-0b76-5393-8807-eaaff6fbf8eb"
-diamondUuid: "6f4ff264-9d0e-88ff-858b-be434e10ecce"
-uuid: "4d656e0d-69c9-8867-a53a-bc2af7d728df"
+coordinate: "vocabulary/partially · 4/weave · 453ef02c"
+contentUuid: "82e51d32-b195-5f81-9418-c44a8d8e1726"
+diamondUuid: "cfdd1c7a-97c5-81f8-87a5-cf108afd7bb7"
+uuid: "453ef02c-dbab-8ba4-aa11-570e3a332439"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0f0a11b1-8347-82e1-b941-0414419c55d7"
+  computationUuid: "8f0ea7c3-9eea-8d14-867c-078fe9eea397"
   stages:
     - stage: path
       stageUuid: "b0f16b1c-b43d-80b2-86b7-af9516b99682"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "741258a2-9855-85b5-80c4-524044f7ad76"
     - stage: horo
-      stageUuid: "99e05532-cadb-8348-9431-a0041d921204"
+      stageUuid: "57b437a2-ea7f-8b34-9b3b-73cd82048494"
     - stage: seal
       stageUuid: "246037e6-1c2c-86d3-ad8e-5c23d8cea521"
     - stage: uuid
-      stageUuid: "44486ce7-adc3-8b96-8788-e024c8d0cb1e"
+      stageUuid: "c9583650-7521-8009-a8f5-cecbd545ffbf"
 version: 2
 ---
 # partially

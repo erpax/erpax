@@ -2,18 +2,18 @@
 name: livestock
 description: "Use when modelling animals raised for produce — the non-crop living-production domain: a herd of animals (cattle/sheep/swine/poultry) measured as biological assets (IAS-41), yielding milk/meat/wool/eggs at harvest, fed on grazed pasture or fodder, bred and health-managed. The animal twin of crop; agriculture's other half."
 atomPath: "vocabulary/livestock"
-coordinate: "vocabulary/livestock · 7/descent · e5b50157"
-contentUuid: "0b02df0e-7df3-5925-8a59-714efa42977d"
-diamondUuid: "9d5db2a1-e0ec-8249-b440-cb3a44b157f2"
-uuid: "e5b50157-c611-8daf-b781-57c3023da21c"
-horo: 7
+coordinate: "vocabulary/livestock · 5/round · ae808129"
+contentUuid: "431c5a85-35e9-5a74-a885-ea2c8e833406"
+diamondUuid: "57cb1799-d473-8dc5-947f-871d507e8027"
+uuid: "ae808129-58ca-8c2a-8c0b-5fb6772ad3c1"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 83
+  bondDegree: 85
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fb4fb1cc-a096-84ff-933e-9a7e595f1be5"
+  computationUuid: "aec3c7a9-4690-8027-8f24-90a16a8bc8ff"
   stages:
     - stage: path
       stageUuid: "4fd6b01d-e6d5-8d2b-8fe5-a218107a31ec"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "26de9eb7-b18b-840a-9f63-1a07d43947b9"
     - stage: horo
-      stageUuid: "9c9aca5c-6b9a-8ad9-8d4b-538989ef01cc"
+      stageUuid: "50d502db-6756-8eb4-b31b-8bea774a8bb7"
     - stage: seal
       stageUuid: "fc074838-06c6-875c-ad22-b1aab2b45db2"
     - stage: uuid
-      stageUuid: "dffe305e-5cbb-8561-bf8e-fdd65c86cb53"
+      stageUuid: "f2ae19be-ac1c-82b1-ac14-4f910105fb15"
 version: 2
 ---
 # livestock — animals raised for produce; the non-crop living-production domain

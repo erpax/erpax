@@ -2,14 +2,14 @@
 name: decompression
 description: "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity)."
 atomPath: decompression
-coordinate: "decompression · 8/crest · fbfba954"
-contentUuid: "5dfa386d-c20f-5812-af56-fdeb0146ca4c"
-diamondUuid: "d6caa409-9413-8258-ba46-d71164f2ff89"
-uuid: "fbfba954-18af-85fc-9da5-3698d7b65887"
-horo: 8
+coordinate: "decompression · 2/share · fadd8692"
+contentUuid: "dd2157e3-59d6-5cfe-9b9f-e6d4f5719d90"
+diamondUuid: "079ab0f1-ad3a-854e-9cd0-946b3fbca351"
+uuid: "fadd8692-f46c-88b8-9b6b-d46d64485f7a"
+horo: 2
 typography:
   partition: decompression
-  bondDegree: 137
+  bondDegree: 141
 standards:
   - "Bühlmann ZH-L16 — 16 compartments, gradient-factor / M-value theory"
   - "Haldane half-time model (idealised compartments double 5·10·20·40)"
@@ -18,7 +18,7 @@ standards:
   - "UBL-2.1"
 bindings: []
 signatures:
-  computationUuid: "88206abf-1bdf-8c72-96e2-91ddee25a881"
+  computationUuid: "ed009d17-8734-835e-a8e5-8bd9ab14e2dc"
   stages:
     - stage: path
       stageUuid: "3f4cb9b3-3893-8d1c-9684-0dedc4988a2e"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "2b114773-9a04-8872-ba87-e7d4b3b3daef"
     - stage: horo
-      stageUuid: "3ff897fe-8508-80a0-aa33-01a717814236"
+      stageUuid: "a34e43c8-6dfb-81a2-a875-b89610423359"
     - stage: seal
       stageUuid: "061b3594-ad8f-8e62-9b87-1c3fd1720310"
     - stage: uuid
-      stageUuid: "7018fa54-21ef-8827-ad42-11e737604b86"
+      stageUuid: "2f170b00-5ca3-8539-8223-2c4423a73c6b"
 version: 2
 ---
 # decompression — the dive IS the erpax ledger (one extreme sport, three aspects)

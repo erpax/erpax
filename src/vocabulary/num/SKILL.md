@@ -2,11 +2,11 @@
 name: num
 description: "Use when reasoning about num as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/num"
-coordinate: "vocabulary/num · 8/crest · 08cc7f3c"
-contentUuid: "0ddd1025-9791-58b1-9fff-45e58a14e3ff"
-diamondUuid: "bc47523f-8be1-8697-9788-a739b49d28b7"
-uuid: "08cc7f3c-cee3-8cb8-a545-7c27427346d1"
-horo: 8
+coordinate: "vocabulary/num · 2/share · 3c8991f4"
+contentUuid: "09b6d933-e4f7-59b9-b647-a376c5f18de8"
+diamondUuid: "bdb4b643-281a-8d7f-b423-fa715eaf88f8"
+uuid: "3c8991f4-5679-82a2-8d71-de7eea130d28"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 83
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a4246ce2-f806-89e0-8cfc-d92c3d93f243"
+  computationUuid: "f37fa107-efd7-8287-96b4-eb2908e487fd"
   stages:
     - stage: path
       stageUuid: "905d95be-579a-8e7b-9ca8-20e483e3e458"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6b997708-cc92-8aca-a930-2ad9be017dda"
     - stage: horo
-      stageUuid: "bb8a8023-45db-834c-a4bb-3208cd453adb"
+      stageUuid: "e185215b-71f9-82e7-865e-c4f8e6d2cc53"
     - stage: seal
       stageUuid: "1fcc0fa4-1bb8-8a5d-b74a-ab81a54009ac"
     - stage: uuid
-      stageUuid: "f00d7aae-2863-89b2-8332-e6af5ebdc306"
+      stageUuid: "6da6f15a-c672-806f-9ab2-0854fbb795af"
 version: 2
 ---
 # num

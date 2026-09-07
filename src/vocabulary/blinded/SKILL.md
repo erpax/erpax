@@ -2,11 +2,11 @@
 name: blinded
 description: "Use when reasoning about blinded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/blinded"
-coordinate: "vocabulary/blinded · 4/weave · c6b9fe20"
-contentUuid: "b8a7a410-9f0c-5253-93c7-0dcc4e3ac134"
-diamondUuid: "d561a9ec-c005-8b7a-a079-38efe9a5cd28"
-uuid: "c6b9fe20-cc5a-8927-84f1-a5a016c5ba82"
-horo: 4
+coordinate: "vocabulary/blinded · 2/share · 9267ffb2"
+contentUuid: "51bd0005-4df4-5510-bd5e-bfb839cdb725"
+diamondUuid: "c86efba7-27e7-8c02-bad3-38fc96dd2541"
+uuid: "9267ffb2-e5ae-81e6-b98e-4960cc3114c8"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d47f3577-9903-8b20-9c6c-530d76f3e332"
+  computationUuid: "26e964ab-04af-8b04-a439-ae65306367eb"
   stages:
     - stage: path
       stageUuid: "2b9e3dd6-54a2-8a1f-8b5a-9a81c168df39"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f6b1cf20-f756-8c4b-87da-e6182e0680dc"
     - stage: horo
-      stageUuid: "ae0126f7-26b4-8922-bb53-7134bbcef2f4"
+      stageUuid: "4e5a5dfb-999a-844a-a25b-f4b9ee553f7c"
     - stage: seal
       stageUuid: "2bb1902e-b1d0-8d85-bccc-5ac73194eda7"
     - stage: uuid
-      stageUuid: "5cb97308-2329-835c-b880-a1340860afef"
+      stageUuid: "5931730b-5402-8da4-9dcb-7ff4d7d481bf"
 version: 2
 ---
 # blinded

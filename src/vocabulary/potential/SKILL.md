@@ -2,11 +2,11 @@
 name: potential
 description: "Use when reasoning about potential as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/potential"
-coordinate: "vocabulary/potential · 4/weave · 7f02da04"
-contentUuid: "f972b538-bcf9-51bd-b695-59750b0aec9c"
-diamondUuid: "de363179-7d3d-8dea-8395-ef7eeb7f580d"
-uuid: "7f02da04-8a96-857b-9f09-b1641b7c5d2c"
-horo: 4
+coordinate: "vocabulary/potential · 1/base · ae7bc804"
+contentUuid: "e827fc15-b45b-5bba-95d7-b42c103dc0f3"
+diamondUuid: "a9e50064-772a-8867-b9b5-d631e6b6aee4"
+uuid: "ae7bc804-c2d3-86f1-a5ba-38dd6300c062"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9579de39-4818-83e7-93a6-e0787e17e83d"
+  computationUuid: "4087da43-ca26-84a5-af90-517062fa787f"
   stages:
     - stage: path
       stageUuid: "47e7437c-6455-8ae6-94a1-e14ff2b6a588"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4e92f98c-9b5d-822f-9377-964070a6a111"
     - stage: horo
-      stageUuid: "22b67050-c37d-8a00-b2ec-b4da5dffa62b"
+      stageUuid: "35dc45b5-712b-8962-80f5-9b984336c37f"
     - stage: seal
       stageUuid: "2bdc9d8d-63b9-8938-a9cb-556dc34e271e"
     - stage: uuid
-      stageUuid: "5437a4ed-8662-8b3d-8a63-37ebefaeb022"
+      stageUuid: "bda96d93-3e13-819e-ba63-c1a34492cd11"
 version: 2
 ---
 # potential

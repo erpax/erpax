@@ -2,11 +2,11 @@
 name: grantee
 description: "Use when reasoning about grantee — The person, organization, contact point, or audience that has been granted this permission."
 atomPath: "vocabulary/grantee"
-coordinate: "vocabulary/grantee · 1/base · a084e2da"
-contentUuid: "f6a0d22b-8c22-593f-931e-47d30a2f741c"
-diamondUuid: "637a52f5-702e-86d7-a0a2-8eef22426ef4"
-uuid: "a084e2da-30b4-82a4-81b5-1c114f246612"
-horo: 1
+coordinate: "vocabulary/grantee · 7/descent · bbde6296"
+contentUuid: "a04aca8f-c78a-59ad-9179-ad45b9ce8f28"
+diamondUuid: "f9f2bfab-834b-8682-8ba0-1e8cad4c5045"
+uuid: "bbde6296-68e5-8a78-bd8c-c75a4bde7ef1"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b6632d5a-3c8e-8adb-837b-0d757e6dfbe4"
+  computationUuid: "17c7ff99-0f49-8fd3-bd96-ead575120efc"
   stages:
     - stage: path
       stageUuid: "1b05a753-22bf-8cff-9d8d-f94b2123a69f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7d77121a-eb39-8765-8369-37d303596152"
     - stage: horo
-      stageUuid: "69f6fbb8-8923-8292-bd63-b753198214bc"
+      stageUuid: "20b2100f-6fcd-8567-9258-330c9dcfdcc0"
     - stage: seal
       stageUuid: "6b41c3dc-a49f-87d5-a56b-2193e27d9658"
     - stage: uuid
-      stageUuid: "2d82f32a-efb4-87a3-a10b-9cb0f4be6567"
+      stageUuid: "9029fabb-31d5-88c9-b00e-a56fcbb36a3a"
 version: 2
 ---
 # grantee

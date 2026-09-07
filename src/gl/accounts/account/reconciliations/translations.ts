@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reconciliations",
-    "uuid": "433e8867-4e4a-8e3f-afdb-de19462cbf98",
+    "uuid": "7fe0ec05-7629-8e95-a44e-33d568bfcab3",
     "words": [
       "reconciliations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.",
-    "uuid": "e9c32e17-672f-8fc2-a823-703b60ec42b0",
+    "uuid": "75f66161-1c52-80c8-b53e-a3f55d8bcddc",
     "words": [
       "use",
       "when",

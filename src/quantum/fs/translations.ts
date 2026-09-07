@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fs",
-    "uuid": "5524c65e-37a6-83f3-a205-c15b7f9bdd67",
+    "uuid": "675e8f56-20ea-8c74-8fc7-d92861440e1f",
     "words": [
       "fs"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment.",
-    "uuid": "5618cc38-9ed4-820f-ad9f-27438e3ab7d9",
+    "uuid": "4e61bdef-904d-878f-9889-37838274f95e",
     "words": [
       "use",
       "when",

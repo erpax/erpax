@@ -2,11 +2,11 @@
 name: playground
 description: Use when reasoning about playground — A playground.
 atomPath: "vocabulary/playground"
-coordinate: "vocabulary/playground · 4/weave · c1cafda4"
-contentUuid: "7f7d2e03-a14b-5354-88e0-c7fe9affd38b"
-diamondUuid: "9dc6cb56-03f3-8802-b6f4-b26f32e28fcc"
-uuid: "c1cafda4-3e6b-89cd-b37a-05f5d16f9466"
-horo: 4
+coordinate: "vocabulary/playground · 7/descent · 97fc12ec"
+contentUuid: "046646b8-6cab-5ee0-8127-f23afd0f6b58"
+diamondUuid: "4f3159e8-06ad-8964-b163-72048fc45bf3"
+uuid: "97fc12ec-a379-8bbb-87bb-45efbb4232c6"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "73c349e0-f388-8324-979c-fe0d44719fff"
+  computationUuid: "c161543c-4413-817a-9297-5404e64540df"
   stages:
     - stage: path
       stageUuid: "21026f47-5741-855a-920d-b2080d64a10b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d1d0157d-2e7e-8105-a475-c8c27264e9a2"
     - stage: horo
-      stageUuid: "940e26c1-dead-82f3-b683-0ca16df349e9"
+      stageUuid: "e0e83776-c839-8b21-86ec-94bc17bd46ab"
     - stage: seal
       stageUuid: "68939394-a93e-8175-b9eb-abea641c111e"
     - stage: uuid
-      stageUuid: "ba0217d7-c0fb-8d10-b5d8-d87fd2cc8422"
+      stageUuid: "f0579af7-8041-8c83-8a55-9b171cf51400"
 version: 2
 ---
 # playground

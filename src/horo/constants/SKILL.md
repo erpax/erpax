@@ -2,18 +2,18 @@
 name: constants
 description: "Use when referencing the horo ring's static definition — the seven positions, measure names, type guards, and mathematical constants that define the state ring's fixed structure."
 atomPath: "horo/constants"
-coordinate: "horo/constants · 1/base · 55cca712"
-contentUuid: "f2291da7-3a9f-5666-99ce-4fd0cb917eb4"
-diamondUuid: "060148ee-958a-8fa4-befb-041ddb69eedf"
-uuid: "55cca712-046e-87fd-bee8-61c0644ce556"
-horo: 1
+coordinate: "horo/constants · 7/descent · ded10dc3"
+contentUuid: "2eaba7b4-1592-5557-aa0d-7fb2da7d3130"
+diamondUuid: "c6219112-143d-8f6f-869f-8f0f68f966ee"
+uuid: "ded10dc3-3ec4-8fbd-8e53-64abea943b16"
+horo: 7
 typography:
   partition: horo
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "dd56e4a3-0f91-88e5-8c09-ee8f30277195"
+  computationUuid: "c13230bb-1ae9-8558-a09d-fe7c2a413225"
   stages:
     - stage: path
       stageUuid: "f13ee3e1-0397-89e7-946f-9c9d941d6f99"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b37b91f7-bead-85b1-ac07-8ac516587cfb"
     - stage: horo
-      stageUuid: "30c79a7b-751a-83c0-8c59-25e6d1d49b51"
+      stageUuid: "251cd25e-891f-8f83-87a6-84dd13de5774"
     - stage: seal
       stageUuid: "3003204e-0b16-87ef-91c1-b257c1363770"
     - stage: uuid
-      stageUuid: "511969ed-8079-8393-94fb-6833325a904f"
+      stageUuid: "1c97f158-762d-89bf-b464-04e03be23066"
 version: 2
 ---
 # horo/constants

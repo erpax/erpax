@@ -2,11 +2,11 @@
 name: closures
 description: "Use when reasoning about closures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/closures"
-coordinate: "vocabulary/closures · 2/share · 96e94747"
-contentUuid: "983db6aa-c5a3-5c93-95c8-ba5650beb860"
-diamondUuid: "5b125d90-85ae-84ff-ae3f-00bee95df408"
-uuid: "96e94747-2158-8b29-b323-d98c71c68451"
-horo: 2
+coordinate: "vocabulary/closures · 5/round · 2c8e6ce9"
+contentUuid: "5979fcc9-e134-54ac-a166-d6c08ff819b1"
+diamondUuid: "39a97bac-3893-8d74-b85e-67b91a562007"
+uuid: "2c8e6ce9-c25a-8eea-a10c-e6155117302a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "69b265d1-7500-8009-80cc-7113efb5b625"
+  computationUuid: "08200de8-2a0c-8d37-b81b-2c6297c2dd14"
   stages:
     - stage: path
       stageUuid: "b5246da2-7455-85da-9748-ad19f26efbc3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9999781e-0573-8a5d-8fb3-e49d2e64c0c1"
     - stage: horo
-      stageUuid: "af45d004-0d0c-86c6-83fd-a8c4e31326f5"
+      stageUuid: "83a7748d-aa5a-8169-b349-f80ec88e0e75"
     - stage: seal
       stageUuid: "850d33b6-8af2-832d-9427-1561644815b0"
     - stage: uuid
-      stageUuid: "c524fc85-00b0-8b20-897e-32f911021284"
+      stageUuid: "9ea2dd2b-616e-8349-8b8c-337f52f0b3a2"
 version: 2
 ---
 # closures

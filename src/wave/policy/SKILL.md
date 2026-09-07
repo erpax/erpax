@@ -2,18 +2,18 @@
 name: policy
 description: "Use when deriving the max-work/max-tamper policy that bounds a wave schedule — units per wave, wave depth, and the tamper-cost floor a plan must clear. The policy is the single place those ceilings are decided, so a schedule never hardcodes its own limits."
 atomPath: "wave/policy"
-coordinate: "wave/policy · 1/base · 3a125e1f"
-contentUuid: "a9410db1-c524-5310-a792-cd05b34c2cde"
-diamondUuid: "748f2193-781a-8648-b7a8-b3b6fb24e195"
-uuid: "3a125e1f-418d-8452-8493-a5a474a22b28"
-horo: 1
+coordinate: "wave/policy · 5/round · 5017ac95"
+contentUuid: "6ec37eb2-76e5-512a-8bee-c3402d963f0c"
+diamondUuid: "65728f45-826e-8f8c-8fb4-d9fc3ff9c14b"
+uuid: "5017ac95-0cf7-8b70-a3b0-28511d5e1c74"
+horo: 5
 typography:
   partition: wave
   bondDegree: 114
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0141869c-baec-8f58-8e28-1580b3157be5"
+  computationUuid: "2c995abd-4f01-8661-8ce9-68d224c7d88c"
   stages:
     - stage: path
       stageUuid: "c0ac5bbf-73c3-8085-9be1-35a275e5cb6e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e4598762-fcdd-87df-9418-dc24fd3b1603"
     - stage: horo
-      stageUuid: "1e1f8622-aa62-845e-a9a5-c166ad301e59"
+      stageUuid: "d9e0044e-079f-86fb-a141-6963b1217ff0"
     - stage: seal
       stageUuid: "b1b38bb1-1ada-8958-80d2-6935b1ce0730"
     - stage: uuid
-      stageUuid: "acf30ba3-9cf5-8950-95ac-c3ee4dedbd72"
+      stageUuid: "6ca067fb-92d6-8780-91f1-2a9f00b7d9ec"
 version: 2
 ---
 # wave/policy — the ceilings, decided once

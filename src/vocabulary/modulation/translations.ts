@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "modulation",
-    "uuid": "4689999e-f718-8295-b755-8ca419218b42",
+    "uuid": "21b5b974-a972-816c-a01e-c342477de4b8",
     "words": [
       "modulation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about modulation — A schema.org component word, collided out of schema.org compounds — fused from broadcastSignalModulation (sti · collapse · merge).",
-    "uuid": "64f5bc9c-d9d8-8aa9-aba5-732e81f03483",
+    "uuid": "43110205-20c7-8039-bc07-f357a71afe90",
     "words": [
       "use",
       "when",

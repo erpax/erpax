@@ -2,10 +2,10 @@
 name: study
 description: "Use when reasoning about study as a medical facet of medical — vocabulary pivot to @/study; nested not duplicated."
 atomPath: "medical/study"
-coordinate: "medical/study · 1/base · 57b3c81e"
-contentUuid: "6bbb8e8e-001e-5475-89ed-582e68736579"
-diamondUuid: "3b2b07f2-cef8-87c9-8eec-18df95875ba5"
-uuid: "57b3c81e-079c-831a-8027-5efaef9c66c0"
+coordinate: "medical/study · 1/base · b330adb8"
+contentUuid: "e61186c2-e9e1-5d85-bfce-9c4aa4055161"
+diamondUuid: "15a7c305-6186-84c5-a26a-132770b9faee"
+uuid: "b330adb8-427c-8fae-ba75-6bce9e7ed5b8"
 horo: 1
 typography:
   partition: medical
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "51813ef2-9926-8d6a-bf57-f111fb252344"
+  computationUuid: "f6effbbe-258a-8913-a6c8-909712b58fa5"
   stages:
     - stage: path
       stageUuid: "83002b36-8858-8b17-bf15-f9abc7f86134"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "621ae0bd-0004-8d31-b7d8-4d590221b18c"
     - stage: horo
-      stageUuid: "bcbb7c01-14e9-8050-a400-7438fb448ec4"
+      stageUuid: "3fe3bb8d-bfe9-8623-b33d-187220bdb95e"
     - stage: seal
       stageUuid: "038e8ae4-abed-8ef0-bcef-7dc51fd1905d"
     - stage: uuid
-      stageUuid: "c18d3d7e-8ec8-8303-9daa-0028278f3fd7"
+      stageUuid: "0d60af33-2eaf-80b1-90da-522e3e30ed2b"
 version: 2
 ---
 # medical/study — medical facet

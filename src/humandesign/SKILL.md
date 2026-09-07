@@ -2,11 +2,11 @@
 name: humandesign
 description: "Use when mapping Human Design onto erpax — its real combinatorics (64 gates = 2^6 I Ching hexagrams, 6 lines, 9 centers, 12 profiles) sent to the math, with the divination layer named as convention and never claimed."
 atomPath: humandesign
-coordinate: "humandesign · 4/weave · 37297423"
-contentUuid: "d94ba438-c587-57e6-a35c-b9830a86d48d"
-diamondUuid: "8647e1b4-579c-811c-801c-8397726170d5"
-uuid: "37297423-32e8-8b72-81e0-41babe5d6748"
-horo: 4
+coordinate: "humandesign · 8/crest · 6306d805"
+contentUuid: "9e55a814-0d9e-5c5f-ab59-b43f51fb925f"
+diamondUuid: "4e125b0c-acfc-8c97-8a47-57b0d148a806"
+uuid: "6306d805-5f19-8933-8c69-9754518f3045"
+horo: 8
 typography:
   partition: humandesign
   bondDegree: 24
@@ -15,7 +15,7 @@ standards:
   - "the I Ching hexagram structure (public domain); Human Design (Ra Uru Hu, 1987) as named convention"
 bindings: []
 signatures:
-  computationUuid: "6088d5a6-208a-8195-88f1-3bdea79b97a8"
+  computationUuid: "2b7af1d1-8467-8578-8185-f8ed3441dfa8"
   stages:
     - stage: path
       stageUuid: "fdb6c3a0-488c-868f-a330-a2bdf00d8806"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "b62be555-6cf7-8ad3-8dfe-f74c515aa414"
     - stage: horo
-      stageUuid: "448ca612-6834-887f-933e-86be313bea37"
+      stageUuid: "0eb6a00a-38b4-853f-8cdf-287c5fe8395f"
     - stage: seal
       stageUuid: "e76246e4-face-87c7-8f89-bb7129bf81db"
     - stage: uuid
-      stageUuid: "8dafb33a-e9e7-8284-947a-9261fd9ff246"
+      stageUuid: "f37e0612-9b58-897d-8eb5-5bd15e16e137"
 version: 2
 ---
 # humandesign — Human Design, sent to the math

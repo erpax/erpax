@@ -2,11 +2,11 @@
 name: draw
 description: "Use when reasoning about draw as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/draw"
-coordinate: "vocabulary/draw · 1/base · 7278b66f"
-contentUuid: "00117b5b-b365-5e1e-9469-b6da075d8d1d"
-diamondUuid: "9130f3a9-fc44-8cf5-8168-516387ba769f"
-uuid: "7278b66f-53c6-84b3-af1f-112542101053"
-horo: 1
+coordinate: "vocabulary/draw · 8/crest · 47f5481c"
+contentUuid: "cec84f19-241a-510c-a0f2-022ccce7e313"
+diamondUuid: "8d8281d5-c52d-8b84-bb90-862bafa0962c"
+uuid: "47f5481c-69ec-8dea-ad3f-65cdebdb0f02"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "85b3ebd5-4a8f-8ba8-8d78-8a3ddfc1aed1"
+  computationUuid: "41a80554-6a0a-83fa-94bb-4138f8ccbf2b"
   stages:
     - stage: path
       stageUuid: "a0997cb6-d3b0-8cf3-ad80-60f71df6594d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b7bb3ab6-d5d8-8f0b-8812-78d7be4cab44"
     - stage: horo
-      stageUuid: "cb6dae69-3903-81bc-bae6-8a6e70574dfb"
+      stageUuid: "f4482407-25ad-84ba-af90-aa6d3a706f48"
     - stage: seal
       stageUuid: "ad39bf0b-04b4-83c9-9531-d7fce3e4e5cc"
     - stage: uuid
-      stageUuid: "cd6e4754-5dce-8d9b-afe5-badf7c5b107b"
+      stageUuid: "4d1c3c39-2e7f-81fa-8861-12e412c25900"
 version: 2
 ---
 # draw

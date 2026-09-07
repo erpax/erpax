@@ -2,11 +2,11 @@
 name: derive
 description: "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus."
 atomPath: derive
-coordinate: "derive · 1/base · 46a52d62"
-contentUuid: "5eb91852-b4b3-5dc0-9887-f5cae01808bc"
-diamondUuid: "86df231e-3352-861b-915f-a4e842246cc6"
-uuid: "46a52d62-30d9-87e0-aa7c-bd82774fc344"
-horo: 1
+coordinate: "derive · 8/crest · 0c5e4db5"
+contentUuid: "bd52ebd6-28b2-5e93-81b0-0870514e5281"
+diamondUuid: "68715e1a-d78a-8abe-a6ce-6070c5025f11"
+uuid: "0c5e4db5-96d0-816c-a148-9b461e22ce4a"
+horo: 8
 typography:
   partition: derive
   bondDegree: 64
@@ -14,7 +14,7 @@ standards:
   - "ISO-13616-1"
 bindings: []
 signatures:
-  computationUuid: "0e58e708-29f2-8557-8e58-c272cbd9fdb4"
+  computationUuid: "38692873-b315-84b3-8c8c-76defef22718"
   stages:
     - stage: path
       stageUuid: "12ed8dd3-cae6-8fb2-8d3c-1a6ab258fd6d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ca96d1a7-ebe7-8915-8394-12a4408741da"
     - stage: horo
-      stageUuid: "28af3fb6-2c8b-8ebc-be2f-02ed89aa1cda"
+      stageUuid: "2a1e2a67-064f-8d18-9c7f-27d0af09df81"
     - stage: seal
       stageUuid: "1dba28a3-76c3-8284-abe7-0c489299a772"
     - stage: uuid
-      stageUuid: "e0afcbfd-d52c-826d-991f-c4d136e8bd6e"
+      stageUuid: "0054b874-97f3-8a4a-bf02-5893be4a1177"
 version: 2
 ---
 # derive — skills derived from user content (the corpus grows from what users write)

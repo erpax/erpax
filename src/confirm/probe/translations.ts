@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "probe",
-    "uuid": "3d2c4726-d62d-87b0-a553-3600a22e1c4b",
+    "uuid": "0ec55eb6-2352-8b52-b34f-cbfa966c396f",
     "words": [
       "probe"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when gateTypecheck needs a compile-load target — the minimal uuid-substrate probe, deliberately importing nothing that imports it back.",
-    "uuid": "4c24b1fd-3ae7-8d53-be73-5a0748cd99c7",
+    "uuid": "c3554a3b-8c28-884b-9408-57f46cad2e07",
     "words": [
       "use",
       "when",

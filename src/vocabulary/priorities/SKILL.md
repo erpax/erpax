@@ -2,11 +2,11 @@
 name: priorities
 description: "Use when reasoning about priorities as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/priorities"
-coordinate: "vocabulary/priorities · 8/crest · 25d8b736"
-contentUuid: "cfdfcc72-da1e-5792-90ee-d6d0d1c85176"
-diamondUuid: "a3d70b7e-27c4-8200-a559-594559be8e85"
-uuid: "25d8b736-030f-86f4-b0c2-0871a951633b"
-horo: 8
+coordinate: "vocabulary/priorities · 4/weave · 747978c7"
+contentUuid: "0764d1e6-1110-59de-aa22-23b79ca56577"
+diamondUuid: "4b525b3a-55fe-82e9-84b2-0d63af34cd12"
+uuid: "747978c7-3025-81dc-9e72-2499fc6bfded"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a1b3ffd4-5a44-8fd2-b8bf-59c07c90b5ad"
+  computationUuid: "fc637e94-78b3-83f3-9c35-a482af9a120c"
   stages:
     - stage: path
       stageUuid: "a6dae383-bec8-83b2-a06c-988f586e4547"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "833d9bc5-d5c3-8bbf-ba6a-076948fe718f"
     - stage: horo
-      stageUuid: "cc6f44f1-ba19-8624-9f67-0a2ad9ee2fa1"
+      stageUuid: "9f3a9c20-701f-8292-9530-8eca36779c4f"
     - stage: seal
       stageUuid: "e88cfb56-d7f9-84d8-bc47-0fa6349fefe7"
     - stage: uuid
-      stageUuid: "21167cdc-ab1d-8f57-b0ae-c3abb4bce002"
+      stageUuid: "f441eda1-a04b-8902-9f94-dd6569041b5d"
 version: 2
 ---
 # priorities

@@ -2,11 +2,11 @@
 name: prescription
 description: "Use when reasoning about prescription as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prescription"
-coordinate: "vocabulary/prescription · 8/crest · dd817f22"
-contentUuid: "254f383a-4dca-549a-8db8-2d1fb0395ac7"
-diamondUuid: "b9b9049f-5859-83c4-b708-3947e8e88c31"
-uuid: "dd817f22-4078-8eb4-9985-2f6f8cc8c008"
-horo: 8
+coordinate: "vocabulary/prescription · 4/weave · fd16ef1a"
+contentUuid: "24f4d852-43a4-5d2b-8a48-5dec4bfd6815"
+diamondUuid: "7a49cbca-cdad-81a6-aed2-03621bbf731b"
+uuid: "fd16ef1a-fcb5-80de-8c45-d9118c869bff"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f4d646a3-efb7-8968-a6cb-1605d69f00b4"
+  computationUuid: "d1d1bb6b-7923-81a3-9505-90c875fd457a"
   stages:
     - stage: path
       stageUuid: "d4740959-f4f9-8d49-ad43-5302338f6ea4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c0d724d0-17d0-8f16-8386-cf7809f1f979"
     - stage: horo
-      stageUuid: "f4345f12-e91f-81da-948d-c728470bdec4"
+      stageUuid: "053c41f3-abaf-81fd-9e39-97b60c481786"
     - stage: seal
       stageUuid: "1f97b61c-21c3-844d-bc23-463bc6670993"
     - stage: uuid
-      stageUuid: "7b549f8f-bbbb-8240-a70b-023d4711b555"
+      stageUuid: "c1e56906-9933-8087-b2ce-64431f69e81d"
 version: 2
 ---
 # prescription

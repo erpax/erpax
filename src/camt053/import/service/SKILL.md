@@ -2,11 +2,11 @@
 name: service
 description: Use when parsing camt.053 statement import parser.
 atomPath: "camt053/import/service"
-coordinate: "camt053/import/service · 4/weave · 2a377315"
-contentUuid: "092a230c-004c-5cde-80ee-e8d0c5f9c2a4"
-diamondUuid: "f43536dd-8274-8dfc-a162-25cb85c39de7"
-uuid: "2a377315-0320-8362-83b5-20d063132b82"
-horo: 4
+coordinate: "camt053/import/service · 8/crest · 3c340e2a"
+contentUuid: "2afeba6c-5c6b-5bcc-92d9-3c897bf72867"
+diamondUuid: "7c9ee286-1c61-845e-be11-41382058c843"
+uuid: "3c340e2a-24a8-8a86-ab28-7b029315e08f"
+horo: 8
 typography:
   partition: camt053
   bondDegree: 183
@@ -23,7 +23,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "dca3e8f3-96b1-85f0-a226-9def681b78d9"
+  computationUuid: "c0e88546-62c7-8f1d-bc0e-1f98fe9942de"
   stages:
     - stage: path
       stageUuid: "4c24a404-42de-8137-b751-ccd6b7b9e78e"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "053bf6be-2438-8df2-a3f5-2b84cb4d771f"
     - stage: horo
-      stageUuid: "85849f91-9c54-8d34-8e73-ecb872a79b2a"
+      stageUuid: "5891e5f2-16b0-8e87-993d-826f51aba26b"
     - stage: seal
       stageUuid: "1b98bbda-f9ef-81fa-8811-6aad62f08b89"
     - stage: uuid
-      stageUuid: "b338f987-9d78-8978-bc74-f9fef8573d07"
+      stageUuid: "ea545397-fbfe-85be-9e01-304244be2b05"
 version: 2
 ---
 # service — camt.053 statement import parser

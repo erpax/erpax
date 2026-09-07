@@ -2,11 +2,11 @@
 name: commences
 description: "Use when reasoning about commences as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/commences"
-coordinate: "vocabulary/commences · 2/share · 7f625886"
-contentUuid: "2a75575f-c507-54e1-9686-aceb5f5400c4"
-diamondUuid: "f4c09a76-b061-85e5-8ea6-2f3d28f919de"
-uuid: "7f625886-8007-89fe-8e3d-49960c24de00"
-horo: 2
+coordinate: "vocabulary/commences · 8/crest · 2a3a73f1"
+contentUuid: "189c8273-11ac-5bca-8523-b66b78cde483"
+diamondUuid: "e982dd8d-c535-88e5-85ef-9f0f0f9143a5"
+uuid: "2a3a73f1-bb34-8aaa-9b56-7c49ab865a6f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "25712ec2-3a5e-853c-a98a-e626e9f84ddd"
+  computationUuid: "5a2034b1-5ae2-89e9-a0f0-53bf934fa501"
   stages:
     - stage: path
       stageUuid: "601a8a52-5bc8-88fd-9bce-e68da783abaf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5efd1f8a-f503-8ed8-aec3-07b668fceae9"
     - stage: horo
-      stageUuid: "52c2aebf-a0b2-8b59-ac7e-fb8aa797daed"
+      stageUuid: "e0b81712-9979-8dde-a55b-5216526c82d0"
     - stage: seal
       stageUuid: "d45f3bdf-14ad-8664-9afb-e66a95188a58"
     - stage: uuid
-      stageUuid: "b4208548-f4ce-840c-8d8b-99f1672504ed"
+      stageUuid: "3ea9ad0f-3841-85e2-a2b9-514c4cb20d37"
 version: 2
 ---
 # commences

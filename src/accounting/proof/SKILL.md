@@ -2,14 +2,14 @@
 name: proof
 description: "Use when reasoning about proof — Use to see the corpus accounting itself in realtime — every claim (@invariant · @standard · @compliance · @audit) is a DEBIT, every proof (a test beside it) the CREDIT, and the ledger balances iff all is proven. The residual is the unproven surface, computed at read. Run: tsx src/accounting/proof/index.ts"
 atomPath: "accounting/proof"
-coordinate: "accounting/proof · 1/base · 8fea7f81"
-contentUuid: "48f2aa85-b606-5d48-af66-d5774f9574fb"
-diamondUuid: "3c9fc689-0444-81be-ade7-e7149463f8ca"
-uuid: "8fea7f81-a4d3-8053-ae7d-4567c89cb301"
-horo: 1
+coordinate: "accounting/proof · 2/share · 33d415fa"
+contentUuid: "8fc39e18-4d34-5b79-b70f-6b24c761130d"
+diamondUuid: "97fbe24d-4394-8e91-ae0e-eb04b2d9dd1f"
+uuid: "33d415fa-c2c3-8909-ab3e-172413082c63"
+horo: 2
 typography:
   partition: accounting
-  bondDegree: 588
+  bondDegree: 634
 standards:
   - IAS 1 — a balanced set of accounts; every debit has its credit
   - "IAS-1"
@@ -20,7 +20,7 @@ standards:
   - "· @compliance · @audit) is a DEBIT, every proof (a test beside it) the CREDIT, and the ledger balances iff all is proven. The residual is the unproven surface, computed at read. Run: tsx src/accounting/proof/index.ts\""
 bindings: []
 signatures:
-  computationUuid: "11613d20-a819-868e-b258-1f36e6a59cbe"
+  computationUuid: "810852fe-881c-81a4-8ff4-2e3f5dc80f4b"
   stages:
     - stage: path
       stageUuid: "2ce85a5a-7225-8570-b871-756a01b64294"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "0a343537-e0eb-891f-9ff6-6b03367d66cb"
     - stage: horo
-      stageUuid: "24a10f4a-25e6-8260-aa35-de480869488c"
+      stageUuid: "27ec4321-407e-8c7d-8a56-9055c0830fc9"
     - stage: seal
       stageUuid: "26af9697-41e9-87b9-b519-a4c6a6a4a644"
     - stage: uuid
-      stageUuid: "eccffa74-5f00-834e-88b5-fd45c24ee4be"
+      stageUuid: "541cef1d-98d2-8296-bca8-85cd6b1deaf8"
 version: 2
 ---
 # proof — realtime double-entry of what the corpus CLAIMS against what it PROVES

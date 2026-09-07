@@ -2,18 +2,18 @@
 name: chat
 description: "Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms."
 atomPath: "vocabulary/chat"
-coordinate: "vocabulary/chat · 1/base · 37579a71"
-contentUuid: "f01e4f0e-fa00-53c9-9a1b-7633c1c7c353"
-diamondUuid: "916467e6-61d5-87f9-97be-5caf416f83e8"
-uuid: "37579a71-dbad-8a62-ae7a-dcf10cba29cd"
-horo: 1
+coordinate: "vocabulary/chat · 7/descent · 86b6bafd"
+contentUuid: "dda9e29f-34e9-58a6-9747-b97c287e0512"
+diamondUuid: "591e119c-bf4f-8cda-9b96-c1f5bc8ed3bd"
+uuid: "86b6bafd-0baf-80c2-9cd4-581f3c27e2b3"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 157
+  bondDegree: 161
 standards: []
 bindings: []
 signatures:
-  computationUuid: "63f12746-c887-8534-b386-c85d8630b7dd"
+  computationUuid: "9c1184df-6191-8b18-b36f-8cd83ab5690d"
   stages:
     - stage: path
       stageUuid: "7ba2edbc-857e-82ba-8869-21a1f495a562"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "20e4062b-1124-8d6b-a46e-97138d20d4c2"
     - stage: horo
-      stageUuid: "20a54c9d-b5ba-89b7-9a91-543fdaa90f32"
+      stageUuid: "8528bb9e-3945-8903-9168-d597e15b0702"
     - stage: seal
       stageUuid: "b3954cb7-74cf-8824-92e1-d155e38674f2"
     - stage: uuid
-      stageUuid: "f2003527-9e05-8b4c-9f15-89cd4f3f1c68"
+      stageUuid: "6d6d0e11-d6b7-8e20-aa32-fa1062de1e8d"
 version: 2
 ---
 # chat

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recycle",
-    "uuid": "dbc2ca97-6f3c-8886-b343-5b536dce4b91",
+    "uuid": "97b8bf3f-8e72-8ab6-b65b-03bdcfffc363",
     "words": [
       "recycle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the corpus's digital waste — the orphan grains (atoms bound to nothing) that are disconnected thoughts, the unreported gap; recycle reconnects them to a genuine relative or returns them to the void, and never fabricates a link.",
-    "uuid": "48dd3f1c-baab-8b43-bfd5-1c304a0efa38",
+    "uuid": "0000f9ec-9cbb-8330-95c6-e8f00bc37e03",
     "words": [
       "use",
       "when",

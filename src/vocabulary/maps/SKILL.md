@@ -2,11 +2,11 @@
 name: maps
 description: Use when reasoning about maps — A URL to a map of the place.
 atomPath: "vocabulary/maps"
-coordinate: "vocabulary/maps · 2/share · 9c5d9370"
-contentUuid: "72ab1d97-0a07-57a6-a6d3-ab174be86961"
-diamondUuid: "a5d70409-9032-80b1-b0f8-59ee46d87360"
-uuid: "9c5d9370-20d2-8b41-b929-bbb6d3cbf747"
-horo: 2
+coordinate: "vocabulary/maps · 1/base · 6e1ac67e"
+contentUuid: "9566665b-3b25-5a08-a2af-09d0584aef11"
+diamondUuid: "0276864b-95bf-895a-9e8f-d2cef31b9542"
+uuid: "6e1ac67e-273f-8491-90d6-1ead50481628"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "44b0b53e-59e7-8856-a7d3-f3673e41cde0"
+  computationUuid: "c70adfeb-95c2-840f-808f-152d4f136681"
   stages:
     - stage: path
       stageUuid: "1120edfe-3c23-8d99-ad33-3b10eefab334"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fb81ae2c-ee1b-859c-9198-2a6c14ecdce5"
     - stage: horo
-      stageUuid: "7e0f9a9e-f951-85ec-abd4-a158edacda3f"
+      stageUuid: "0902e5e2-d397-82c6-b9a4-3d9ea8f0782b"
     - stage: seal
       stageUuid: "e17c10d6-0bc4-8f3e-8c2c-d66c2de679b8"
     - stage: uuid
-      stageUuid: "4f63d984-1a1b-8ca8-90e7-e01f4bc779bc"
+      stageUuid: "d4afe959-cc05-82f4-9b18-e1686288956a"
 version: 2
 ---
 # maps

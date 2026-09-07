@@ -2,14 +2,14 @@
 name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
-coordinate: "standards · 1/base · cf729095"
-contentUuid: "3d6aad4b-cc64-515a-afb6-2baf5ba000c6"
-diamondUuid: "3328ba20-0dc5-8fba-90b5-41e8d53b4c0c"
-uuid: "cf729095-fb39-8b96-b13c-e30272988a37"
-horo: 1
+coordinate: "standards · 7/descent · 992b1c28"
+contentUuid: "d20401d5-eac6-5c83-bda0-39e6dcfc4a09"
+diamondUuid: "ba7fe6e9-56d4-8f96-8d26-fa854f5769c7"
+uuid: "992b1c28-8a31-8a56-8731-31732adcf6c3"
+horo: 7
 typography:
   partition: standards
-  bondDegree: 176
+  bondDegree: 188
 standards:
   - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)"
   - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)`"
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "93392b8e-3cce-8ea4-ac32-90e7367f1d64"
+  computationUuid: "bee84f61-b68b-8d4d-ae9f-2c1dbee3b274"
   stages:
     - stage: path
       stageUuid: "e4d21269-1c37-8fe4-85da-1900af3645f0"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "0daa572c-fc73-8775-bf00-7b0c6a3238f8"
     - stage: horo
-      stageUuid: "6ee22656-3662-8329-908a-f40423fb7de7"
+      stageUuid: "428e2073-5241-8971-b0c4-b226cc6ba37b"
     - stage: seal
       stageUuid: "47197e8b-0e61-8144-80ca-7730bd2eb282"
     - stage: uuid
-      stageUuid: "d1dace29-d852-851e-b95e-59c6f28dba58"
+      stageUuid: "d2d45b64-1d37-81cf-a646-b28a9689a084"
 version: 2
 ---
 # standards

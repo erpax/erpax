@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "biofield",
-    "uuid": "6df9960e-c5f0-811e-a232-f69d0b7455f0",
+    "uuid": "6206da82-5bc2-88f0-aebc-bd8a951c89f2",
     "words": [
       "biofield"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura.",
-    "uuid": "d9665bc8-cd4a-8c72-9c17-62c0454cc513",
+    "uuid": "a87c48bd-0ce2-813d-b274-f7da17cf0f1d",
     "words": [
       "use",
       "when",

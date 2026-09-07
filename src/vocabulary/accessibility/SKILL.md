@@ -2,10 +2,10 @@
 name: accessibility
 description: "Use when designing for inclusive experiences — WCAG 2.1/3.0 compliance, color contrast, keyboard navigation, screen-reader support, semantic HTML, alt-text. The capability for all users regardless of disability."
 atomPath: "vocabulary/accessibility"
-coordinate: "vocabulary/accessibility · 1/base · abc40143"
-contentUuid: "c69e75c1-68ed-5d44-8fc0-dcdf39d6fe54"
-diamondUuid: "0c6af4ad-f6e8-8f9d-8a33-d1a7253feb88"
-uuid: "abc40143-a2e9-8fbb-8e75-34d53dc9b155"
+coordinate: "vocabulary/accessibility · 1/base · 1ce254e5"
+contentUuid: "d12c5816-011f-52bf-b5a3-859690829741"
+diamondUuid: "0246d0a1-597a-8721-a327-72057bd67ca1"
+uuid: "1ce254e5-541e-8462-b631-f62283cc5e27"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f21a3a23-e6ed-874b-a911-5208a8e75152"
+  computationUuid: "064dd692-1eab-8551-a424-b5bb1c10732e"
   stages:
     - stage: path
       stageUuid: "9249cf75-923b-86a8-8953-5c201226a5a9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "729109bd-78cb-81bb-9ae3-7221a2ce65d6"
     - stage: horo
-      stageUuid: "f1b7f957-0828-8f16-a34e-cbe0691e3078"
+      stageUuid: "b2da0544-02b0-890a-98fc-7455a5b3d1fa"
     - stage: seal
       stageUuid: "1996f5ba-5274-8164-87be-f6b05ac57700"
     - stage: uuid
-      stageUuid: "9386034b-b90e-8a24-9938-628c0377efad"
+      stageUuid: "1b6a8034-2738-8c8c-a6c6-514bdc3264b1"
 version: 2
 ---
 # accessibility

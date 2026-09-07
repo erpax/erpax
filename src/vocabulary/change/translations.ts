@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "change",
-    "uuid": "190a33f2-27ee-85d2-af06-541ef37621d3",
+    "uuid": "fc5cbe1a-e366-80d5-9896-419b6eb560c9",
     "words": [
       "change"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one change — the singular model of the changes collection (the plural store); a recorded modification to a controlled record or system.",
-    "uuid": "c7d0d4c0-a29b-82da-bfcc-e57f0120deeb",
+    "uuid": "1d10aba3-980c-8e2c-81b4-e6e40feea579",
     "words": [
       "use",
       "when",

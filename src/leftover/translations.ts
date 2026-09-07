@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "leftover",
-    "uuid": "0baad4ed-3035-80d0-b241-07382b33cafd",
+    "uuid": "e6468c51-d324-8155-97c5-ffb3fd45437f",
     "words": [
       "leftover"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the fold's residual — the bits that did not fold into trinities of theorems. Leftovers attract by field (one proof settles the cluster), pull a seed from beyond to complete what the corpus cannot derive, and the irreducible residue powers the next research. Composes accounting/proof, gravity, and think.",
-    "uuid": "d466fe94-69e0-84a0-b8a1-91aa90cb681e",
+    "uuid": "ab5cdd21-5f22-8fc2-a24f-21fca32403ce",
     "words": [
       "use",
       "when",

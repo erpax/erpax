@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "customers",
-    "uuid": "58d31e6d-e271-8ff8-8a8e-3a12833521b7",
+    "uuid": "61ee108a-2c15-8c3d-a700-092cb6b2e0fd",
     "words": [
       "customers"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating or querying the sale-side party master — customer identity, LEI, IBAN, VAT classification, credit limit, payment terms, accounts-receivable exposure, and GDPR consent. The EN-16931 buyer party collection.",
-    "uuid": "714b1cf2-898d-8e33-9b0f-60a24a7fb674",
+    "uuid": "1e30fc9a-61e6-8af7-b03e-76ef07c65e52",
     "words": [
       "use",
       "when",

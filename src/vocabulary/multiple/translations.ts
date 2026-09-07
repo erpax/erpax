@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "multiple",
-    "uuid": "0598a4c8-5586-84e3-a91c-45db3f7b41b9",
+    "uuid": "1c46f44e-b525-8c8d-b083-c0ba63531c29",
     "words": [
       "multiple"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about multiple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "62f025eb-5085-8852-ac17-92da7911d739",
+    "uuid": "2073ad21-e0db-8f46-a148-5dd838060177",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: reconciliations
 description: "Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection."
 atomPath: "bank/accounts/bank/reconciliations"
-coordinate: "bank/accounts/bank/reconciliations · 4/weave · bad011c5"
-contentUuid: "6760fc25-dd4a-52ba-910e-26c55185fca6"
-diamondUuid: "90515a3d-a9f4-8190-8f6b-b35176f3e0ed"
-uuid: "bad011c5-9a28-84bf-bd08-e5f9908f3243"
-horo: 4
+coordinate: "bank/accounts/bank/reconciliations · 5/round · 433e8867"
+contentUuid: "ca4a617b-e0f6-55e6-b7f1-e767fa17f011"
+diamondUuid: "d4463f05-db72-85e9-a3dc-f93fed754a34"
+uuid: "433e8867-4e4a-8e3f-afdb-de19462cbf98"
+horo: 5
 typography:
   partition: bank
   bondDegree: 25
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c5663b56-801b-8af5-b17b-f6b25a28d127"
+  computationUuid: "41567bce-6bff-823b-b0b9-3dc0369ca442"
   stages:
     - stage: path
       stageUuid: "f0214203-4284-876e-aecf-8ccfee1cdcbb"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "201bee56-8968-8237-87d3-1762516e142f"
     - stage: horo
-      stageUuid: "91bd5f40-2646-87cc-839b-39c2162036d3"
+      stageUuid: "dc090dea-d663-83de-8d91-d91e85adba42"
     - stage: seal
       stageUuid: "283527df-8d07-87e6-9bdd-3cddc021cd9f"
     - stage: uuid
-      stageUuid: "e966cdfc-6ceb-8fc4-9cb1-d2944ed22582"
+      stageUuid: "7c2a477f-c746-89b5-a4d9-2ec2c71c4e3b"
 version: 2
 ---
 # bank-reconciliations

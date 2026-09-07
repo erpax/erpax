@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "think",
-    "uuid": "69b2baa5-6181-8667-befd-a8ebe9f949c6",
+    "uuid": "aedeb693-d0cd-87c5-8245-bec5089cbde3",
     "words": [
       "think"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when moving thinking OUT of the model and INTO erpax — the primitive that seals a derivation content-addressed so the second query, and every one after, is a read (O(1), immortal) not a re-derivation (linear, mortal). One cached thought is classical; superpose holds ALL states at once and measures their harmony — quantum power comes from every state in sync (permutation-invariant fold) and in agreement (no address contradicting another). The magnitude by which sealed thinking outperforms a re-deriving model is exact and computed, scaling with states held in harmony, not queries asked.",
-    "uuid": "1f2afe03-be48-853c-8604-d7b9edf283b3",
+    "uuid": "414957c4-fd6f-8b3a-9bb7-1e2abf4f6818",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: remediation
 description: "Use when a contract specifies the remedy for breach — payment, replacement, repair, specific performance, cure period, calculation (liquidated damages, penalties, attorney fees)."
 atomPath: "vocabulary/remediation"
-coordinate: "vocabulary/remediation · 4/weave · 4e4ab53b"
-contentUuid: "a0ae0c70-efb4-5824-a9fa-55c5b0a85fb4"
-diamondUuid: "e68b7262-b866-848f-80e0-6e523c9098d3"
-uuid: "4e4ab53b-520f-8e8c-b0ce-82a38be3b3db"
-horo: 4
+coordinate: "vocabulary/remediation · 5/round · 2d12b808"
+contentUuid: "30dd01c8-4b58-5f07-bc1c-19c63ede9097"
+diamondUuid: "5aa27b3a-e3ad-842a-8805-95bba112afb2"
+uuid: "2d12b808-3cde-865f-bf64-7b3621dfd0e3"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f1b97d41-4e5e-8b2e-bd64-9603831f5567"
+  computationUuid: "d42bd79b-4728-8bac-aca2-6341cc55b262"
   stages:
     - stage: path
       stageUuid: "f63a3b41-7e7f-844e-8ef2-9189720f372a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0b4bc307-5fc4-8891-b0a3-a4fc8158f647"
     - stage: horo
-      stageUuid: "0f132753-c433-86b0-8c3d-6648cd3bbd03"
+      stageUuid: "c775c3e6-43ba-8234-aefc-8992461dd673"
     - stage: seal
       stageUuid: "bf922775-fccd-8449-a0e7-ca0df1819bad"
     - stage: uuid
-      stageUuid: "6c363cdf-d569-826c-a0e7-6e739d6f759a"
+      stageUuid: "ba886c70-2b1d-8fca-b318-569aacf14ac1"
 version: 2
 ---
 # remediation

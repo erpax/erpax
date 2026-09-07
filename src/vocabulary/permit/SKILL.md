@@ -2,11 +2,11 @@
 name: permit
 description: "Use when reasoning about permit — A permit issued by an organization, e.g. a parking pass."
 atomPath: "vocabulary/permit"
-coordinate: "vocabulary/permit · 2/share · 08bc0578"
-contentUuid: "74c2b60a-e16a-5700-8541-2c8f07a16188"
-diamondUuid: "92c2e753-b701-8cd3-9ca2-86507ce4d2c4"
-uuid: "08bc0578-a620-801e-bc39-ea1fd543dbc7"
-horo: 2
+coordinate: "vocabulary/permit · 4/weave · a8c9e27b"
+contentUuid: "b6a04c8a-18d7-5cc9-a9bf-2cecf08e0de2"
+diamondUuid: "f58fde57-2517-8a38-bc4a-891e9f11198c"
+uuid: "a8c9e27b-4e7e-82d3-aac9-c083e79ec60e"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 13
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b208522a-a933-8025-976b-5cf0d1b719f3"
+  computationUuid: "cb3ba083-e234-87c9-b5b8-9ba8930a5fec"
   stages:
     - stage: path
       stageUuid: "4ee8c474-4630-8b4e-9cea-85e1d93da31d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "98885d68-1bb7-861f-929b-91004ddb0c90"
     - stage: horo
-      stageUuid: "512efdea-1718-841c-b951-ca228a1cb934"
+      stageUuid: "acfc813d-1fa5-847f-bdd2-a28d347e9db7"
     - stage: seal
       stageUuid: "63c53afb-5bf5-8d8d-8e7f-bc05c0b6b582"
     - stage: uuid
-      stageUuid: "67e868b3-5ae6-8aac-b4c4-ffb6aa6c5314"
+      stageUuid: "2c095547-ee5f-8661-99f4-a7dd7ea46ba1"
 version: 2
 ---
 # permit

@@ -2,11 +2,11 @@
 name: not
 description: "Use when reasoning about not as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/not"
-coordinate: "vocabulary/not · 8/crest · ba19e1b2"
-contentUuid: "02f14924-2cdb-5f23-a35f-d440108a993f"
-diamondUuid: "5cbf9586-a34f-85cd-8adb-e4c92adeab35"
-uuid: "ba19e1b2-e0ef-8510-9816-d4262be02f8b"
-horo: 8
+coordinate: "vocabulary/not · 1/base · 574619ad"
+contentUuid: "5d85ffd7-4e66-549a-9243-12f680119bee"
+diamondUuid: "f92aa524-f004-8483-8fa9-95dc1d3e64f1"
+uuid: "574619ad-9114-89e7-be73-e49ddb061887"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "368810a1-0772-8c00-bcc8-5f79cab568f4"
+  computationUuid: "f882bd3e-4d20-82ae-ab8e-1ad4c9752135"
   stages:
     - stage: path
       stageUuid: "e702204e-f9de-88c5-901a-35495b7ff7e1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3eb2779b-b7cf-8751-86d7-287aca0506c3"
     - stage: horo
-      stageUuid: "2ca6237a-f61b-8845-b5a6-0775c5095160"
+      stageUuid: "3a9ccbba-4b47-8bea-a36f-79d73e44293b"
     - stage: seal
       stageUuid: "140c8225-9243-86a3-bab0-156b2f1f4114"
     - stage: uuid
-      stageUuid: "cff51933-101c-84ae-bf39-cb4ef91a15ac"
+      stageUuid: "282f685e-1b32-8eeb-8fb1-d41e9de14b0d"
 version: 2
 ---
 # not

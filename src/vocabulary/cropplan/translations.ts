@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cropplan",
-    "uuid": "f47a739d-08b0-83df-886f-0546f542787b",
+    "uuid": "4de1d718-6d51-8f42-9579-eab77ba6e50c",
     "words": [
       "cropplan"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when converting a sales/yield goal into what to grow, how much, when, and where — the crop plan (the what/how-much: quantities, seed, beds) and its spatial twin the field plan/map (the where: each succession assigned to a bed/block). The master planning document of a market farm; the backward demand→land calculation made concrete and recorded.",
-    "uuid": "7df63962-847c-84c0-bf52-28452070a0f3",
+    "uuid": "b1b493d7-da8f-870c-a0cb-aa86e3a2cf02",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: close
 description: "Use when reasoning about the forbidding boundary state in erpax — fiscal period locked, document sealed, shift/stream finished, month-end close. The universal root of the closed state; dual of open."
 atomPath: "vocabulary/close"
-coordinate: "vocabulary/close · 7/descent · b15bb7ec"
-contentUuid: "cde9aee5-8632-5694-9c24-896d0daa76a2"
-diamondUuid: "e96662b1-7713-886d-8d5c-a9ec3f108f42"
-uuid: "b15bb7ec-aeb9-8ab9-80e7-fd8fa71cef7a"
+coordinate: "vocabulary/close · 7/descent · 4181cdbb"
+contentUuid: "f9bdd311-8afd-5a4e-8b2a-93e0915e7a9a"
+diamondUuid: "6cc3a341-fef2-8acf-943f-2142b51f67aa"
+uuid: "4181cdbb-02df-8337-9125-f6a34a4cacfe"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 100
+  bondDegree: 112
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c27206c0-5fc1-817b-811a-3c500f2d38d9"
+  computationUuid: "3aa124be-2b82-8703-9040-d604fa6daad8"
   stages:
     - stage: path
       stageUuid: "0dfd16cc-f70d-8fa4-992b-0b57aac4224e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5876a7a7-6ced-8d35-bfab-7fd7594a9dd1"
     - stage: horo
-      stageUuid: "4ad20cae-b3e5-82b0-94ed-bb10b649cf07"
+      stageUuid: "0e41edb1-0271-879e-957b-f5092f41ace4"
     - stage: seal
       stageUuid: "2c25687a-cc6d-8527-ab7b-ec3a9d00f7c8"
     - stage: uuid
-      stageUuid: "57e99a9b-1508-8ef8-813f-4c26da60b471"
+      stageUuid: "6fcb4e18-168d-8e74-9681-63a94007d063"
 version: 2
 ---
 # close — the forbidding state (locked · sealed)

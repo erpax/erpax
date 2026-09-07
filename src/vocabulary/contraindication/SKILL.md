@@ -2,11 +2,11 @@
 name: contraindication
 description: Use when reasoning about contraindication — A contraindication for this therapy.
 atomPath: "vocabulary/contraindication"
-coordinate: "vocabulary/contraindication · 8/crest · ba873c11"
-contentUuid: "94288708-08ee-574b-a0b9-a0fefaa5e607"
-diamondUuid: "02f983d5-4801-8c94-aad0-d7c6c001d0f8"
-uuid: "ba873c11-dded-892f-a3f2-2209fb3c8ea8"
-horo: 8
+coordinate: "vocabulary/contraindication · 4/weave · 183f92ed"
+contentUuid: "eac1da61-e034-538a-b94d-b9dfb5c7a019"
+diamondUuid: "60d01d1b-3914-8b73-8655-3d8f95052b75"
+uuid: "183f92ed-f611-8ac3-91a0-b66f6befcb2d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e0783a0-53ab-8819-97f4-039fb0695815"
+  computationUuid: "3fb8b1e4-73dc-844d-a0af-0c540e21f04e"
   stages:
     - stage: path
       stageUuid: "cf99ee26-a16d-819b-bef4-a6d74d39f08d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f7b5caaf-36be-8796-8daf-91a9ff8e037b"
     - stage: horo
-      stageUuid: "74eeb583-4e43-84b5-acf6-a0da20d50c24"
+      stageUuid: "ebe90e33-d00a-8a75-8639-725f9d22a86c"
     - stage: seal
       stageUuid: "9ded7e69-d647-897c-ab69-02aab3403145"
     - stage: uuid
-      stageUuid: "55f9ff72-9f64-8359-9a6e-9728212633e1"
+      stageUuid: "8244b1c9-a1f8-8bea-b7ba-49324d9c48e0"
 version: 2
 ---
 # contraindication

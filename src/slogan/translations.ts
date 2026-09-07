@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "slogan",
-    "uuid": "90e9961f-3379-8e6e-b9a0-c5cb06c1ed8b",
+    "uuid": "9d0150ff-ebb5-8704-bda9-52c12a2d77a6",
     "words": [
       "slogan"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about slogan — A slogan or motto associated with the item.",
-    "uuid": "84b05a8e-b95e-8809-928d-fd76ea3b4014",
+    "uuid": "d426feb3-8da4-8ea9-9a62-2929de8b16ce",
     "words": [
       "use",
       "when",

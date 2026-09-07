@@ -2,11 +2,11 @@
 name: state
 description: Use when reasoning about state — A state or province of a country.
 atomPath: state
-coordinate: "state · 1/base · 4560ea58"
-contentUuid: "276bffc1-93e1-53fd-85db-396461ca5500"
-diamondUuid: "fd89951e-9ea2-806c-83d7-b213e2bb0317"
-uuid: "4560ea58-fb8d-8910-93d5-f411acab3f29"
-horo: 1
+coordinate: "state · 7/descent · d828749f"
+contentUuid: "dee06364-1440-5079-9e85-704ad786b094"
+diamondUuid: "63f7a884-29c5-8220-9cb7-9d337d6598c9"
+uuid: "d828749f-0708-844e-991a-88d1c0a47557"
+horo: 7
 typography:
   partition: state
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "466ef6da-4476-8655-8fa9-97fdac8a133c"
+  computationUuid: "e8777d98-0079-842d-b940-35a75440d734"
   stages:
     - stage: path
       stageUuid: "dba426dd-a5c2-8e7a-b7d9-0df5f20946c6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b6471910-63f7-8c44-bbe2-e1d4a2905e39"
     - stage: horo
-      stageUuid: "70ca643a-94fd-8dd2-bbe3-71eb41c19336"
+      stageUuid: "4276ea86-cdf7-8e77-b555-9cbcef03eb32"
     - stage: seal
       stageUuid: "1af754ce-b9bc-81b8-98ac-01afb8caffc4"
     - stage: uuid
-      stageUuid: "714d0022-b93d-8d9d-8f77-640bb973dc3a"
+      stageUuid: "b80578d0-6b18-87e0-bce1-eaa69dd2ea77"
 version: 2
 ---
 # state

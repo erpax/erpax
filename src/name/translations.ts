@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "name",
-    "uuid": "88c6a783-d154-86f4-ae16-c2862bf988b5",
+    "uuid": "4ee53e04-56ca-8615-baf0-ce58e7cf1f66",
     "words": [
       "name"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when identifying an entity with a human-readable label — customer name, product name, account name, journal name. Text identifier for humans; machine identity is via content-uuid. Never a duplicate field per naming convention (one name per entity scope).",
-    "uuid": "ea783c54-4361-80e7-93eb-cf065be77142",
+    "uuid": "dd0c5592-2294-829f-90c7-3f37f15eb905",
     "words": [
       "use",
       "when",

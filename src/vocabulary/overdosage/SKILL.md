@@ -2,11 +2,11 @@
 name: overdosage
 description: "Use when reasoning about overdosage — Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response."
 atomPath: "vocabulary/overdosage"
-coordinate: "vocabulary/overdosage · 8/crest · 651ff84a"
-contentUuid: "7fd84f8e-5f85-5772-92b1-1e7b90f9ab06"
-diamondUuid: "c5198222-b8b4-81d8-9d85-156b185e29bd"
-uuid: "651ff84a-2519-8538-8231-6ab3bb278b5f"
-horo: 8
+coordinate: "vocabulary/overdosage · 7/descent · b9869ac8"
+contentUuid: "34f40486-8d89-5a2e-bd31-41e8c6483836"
+diamondUuid: "cfe22866-26da-8e37-bfdd-5b16b977cbee"
+uuid: "b9869ac8-4acc-88c0-b02c-6cf57df4c825"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5faa9eb3-e4de-80c3-a91d-2e8409b5fab3"
+  computationUuid: "30b1de45-b956-8798-98cc-a9a2595cdcfc"
   stages:
     - stage: path
       stageUuid: "9f0a946e-75b4-84d6-9b4e-20c6160e5ffe"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7ff69af0-e2be-8b04-b062-e6618401319d"
     - stage: horo
-      stageUuid: "29a49c9f-f4b1-86c1-9655-f7c692dca7cd"
+      stageUuid: "32ea4d68-f502-8845-aa07-8a33cab548d6"
     - stage: seal
       stageUuid: "7573bb78-5e8e-8529-bb3b-c782c4034160"
     - stage: uuid
-      stageUuid: "47f4384b-8553-8743-951d-64a68fb4d646"
+      stageUuid: "265cc9bf-1c59-8c91-84bc-471ff46fb0a6"
 version: 2
 ---
 # overdosage

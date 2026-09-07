@@ -2,10 +2,10 @@
 name: single
 description: "Use when reasoning about single as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: single
-coordinate: "single · 5/round · 3568f438"
-contentUuid: "deea6a80-b7bf-598e-8ba0-38f9b87c4c44"
-diamondUuid: "132e019a-3566-84eb-99b8-290863cebc85"
-uuid: "3568f438-752e-843e-bbfa-4205f35800b6"
+coordinate: "single · 5/round · 494ef069"
+contentUuid: "02f1d502-a9e5-5ab2-b75f-2b3eb8e1e9d0"
+diamondUuid: "3ff247d1-d162-838f-9713-0e0a578ee968"
+uuid: "494ef069-1b8d-8bf3-a733-fa56424f0b5b"
 horo: 5
 typography:
   partition: single
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "666e9113-d9cc-8566-993f-ccfd1fe359dd"
+  computationUuid: "e2248d1b-4b7b-8433-9b7c-ccc2d8999e46"
   stages:
     - stage: path
       stageUuid: "3e4e9382-de3c-8f9f-b895-c165c6f5074f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ef3a4fe7-67a1-8742-a052-b9f4c638c3c0"
     - stage: horo
-      stageUuid: "5285123a-f9f8-876a-a40c-1271eec70dd1"
+      stageUuid: "4a9dfdd4-d345-81e8-afa6-347c0516a401"
     - stage: seal
       stageUuid: "5afcd5f4-640a-893e-b2bd-2309c751678c"
     - stage: uuid
-      stageUuid: "62d85062-1a4c-873e-8544-79e884815720"
+      stageUuid: "afccdf7e-42ff-8bcc-9a6e-bc47280e85f3"
 version: 2
 ---
 # single

@@ -2,11 +2,11 @@
 name: holidays
 description: "Use when reasoning about holidays as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/holidays"
-coordinate: "vocabulary/holidays · 5/round · 50173afb"
-contentUuid: "4940ab61-6334-5389-ac99-cb920262e4ac"
-diamondUuid: "fffe9987-7abf-8484-a780-7521dcf1ac6a"
-uuid: "50173afb-b271-8d1f-a7e6-3143c4aa15d8"
-horo: 5
+coordinate: "vocabulary/holidays · 1/base · 5e1332a2"
+contentUuid: "7fdaaa2c-437f-5257-acc0-3e59f269f10e"
+diamondUuid: "6f078fd3-1bb2-8ad6-a1ca-74a2f76eba9e"
+uuid: "5e1332a2-8a4a-84d9-9e05-942f9f517d11"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0ea82ec9-5f60-8d3b-b728-1e470e0a34ae"
+  computationUuid: "48db52dc-3116-8905-ae03-dfc243d0154e"
   stages:
     - stage: path
       stageUuid: "4d3c5763-3aa4-8b2d-b054-23f8d575ea4e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ccc315ba-9cc1-8efe-81dd-88acec3a4f01"
     - stage: horo
-      stageUuid: "38b12213-daa9-8815-b480-471007e10d09"
+      stageUuid: "e032a1f3-6a0f-8978-938a-63e2c5d386e8"
     - stage: seal
       stageUuid: "1f0f6873-de67-88ee-aed0-a046aaf05d47"
     - stage: uuid
-      stageUuid: "9af6cec5-8f1d-80e9-8a85-469ea87abb86"
+      stageUuid: "d808e193-03cb-8e94-bdc0-f8b720688b45"
 version: 2
 ---
 # holidays

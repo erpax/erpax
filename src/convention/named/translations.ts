@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "named",
-    "uuid": "66e64526-f44c-8131-b5ed-9c6c527af5a2",
+    "uuid": "fe1df622-9596-80b6-bb87-95c37f53c27d",
     "words": [
       "named"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about how an atom is addressed — the convention that every SKILL.md frontmatter name equals its folder leaf word (the name IS the path), measured live as coverage = matching / total over the real corpus tree.",
-    "uuid": "34475c3c-35c3-8f90-bc70-855ad815f731",
+    "uuid": "dd0aebc9-739f-8a0e-b74e-e3cce42d1d09",
     "words": [
       "use",
       "when",

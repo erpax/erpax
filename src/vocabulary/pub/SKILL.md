@@ -2,10 +2,10 @@
 name: pub
 description: "Use when reasoning about pub as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pub"
-coordinate: "vocabulary/pub · 5/round · 8a269d1a"
-contentUuid: "b351279b-9b76-58bf-9f04-7eef74917ffc"
-diamondUuid: "4bb2395d-f198-8bde-87da-d9943d440103"
-uuid: "8a269d1a-a408-8637-840c-0b09b6f223f0"
+coordinate: "vocabulary/pub · 5/round · 592e3311"
+contentUuid: "ce46e76c-ee7d-5353-b6d0-03518fb9c3ff"
+diamondUuid: "8f65e4a6-5ac8-8520-82ff-4dc2eb2ef8b9"
+uuid: "592e3311-4a7e-8fce-a685-fe3863ca20c3"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0771a4e3-7a51-8b18-b76a-97183467e31e"
+  computationUuid: "4a8cc661-3e56-802d-b641-5e76d31e47f8"
   stages:
     - stage: path
       stageUuid: "824fb4c4-ebc2-8187-8fd7-6e10249dbcd3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8a382a88-810e-87c6-94e4-5a4e7dbddc0e"
     - stage: horo
-      stageUuid: "eb1fe8f3-9432-8875-b1f1-72793cd94563"
+      stageUuid: "7fe6ec36-0753-8a7d-b80c-9da7204e86c3"
     - stage: seal
       stageUuid: "3a07dc77-3c54-82c7-842b-afcce186b3ce"
     - stage: uuid
-      stageUuid: "8fb2004c-c1b8-8ec0-bc44-f8eb0efc8ac3"
+      stageUuid: "2efcd007-e324-828f-8330-1a9713fb306b"
 version: 2
 ---
 # pub

@@ -2,11 +2,11 @@
 name: opens
 description: Use when reasoning about opens — The opening hour of the place or service on the given day(s) of the week.
 atomPath: "vocabulary/opens"
-coordinate: "vocabulary/opens · 2/share · 7342f977"
-contentUuid: "45c4213e-2d19-56e9-be66-dec69a4fc21d"
-diamondUuid: "b2e46ca6-4b34-8a9f-ae45-e9251ac8b6a0"
-uuid: "7342f977-37b4-851d-8d92-45724756ef13"
-horo: 2
+coordinate: "vocabulary/opens · 1/base · 6c58907b"
+contentUuid: "5c66cf35-5c98-5c8a-942d-b585021947b7"
+diamondUuid: "7c5aa877-99c2-8564-b6cb-d03bc9aeab33"
+uuid: "6c58907b-f536-83c1-b109-ee4d7af08d88"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "46150752-7c4b-878a-a6d6-55f2a3d0073a"
+  computationUuid: "2f87390b-ee69-8649-b2c0-8f7c61074abd"
   stages:
     - stage: path
       stageUuid: "16f93b56-240b-83b4-a839-8f5e20ec51b5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "84b0e877-ac0a-8392-9ba5-b252c33955de"
     - stage: horo
-      stageUuid: "6aaa02b9-d447-8e3a-ac8b-54a61ad8309d"
+      stageUuid: "2c8feb1c-96d6-8e6e-b3fe-58b8334b65d3"
     - stage: seal
       stageUuid: "bfec737b-97d8-853e-afa3-f1a9131e5f28"
     - stage: uuid
-      stageUuid: "80c0283a-a48b-873b-a316-60985ecf79b2"
+      stageUuid: "c86a216d-13ff-8e21-84de-92a7dcd0fcfc"
 version: 2
 ---
 # opens

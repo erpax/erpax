@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "alt",
-    "uuid": "16434037-6517-8d6d-8485-48a2a030408b",
+    "uuid": "413b4ada-44eb-8d0b-9a7b-b6b08d625236",
     "words": [
       "alt"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable).",
-    "uuid": "1843ed22-b5bb-81e0-afea-8542c1f9f7f6",
+    "uuid": "24de0bb5-37dd-823c-8d84-a331c5770f0b",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: match
 description: "Use when pairing supply with demand — a schema.org Offer seeking a Demand (or the reverse) across the corpus and harvested pages. Vectorize proposes K candidates by meaning; pure constraints (GTIN identity, quantity overlap, price floor, currency, delivery area) dispose, and every rejection names its reason. Feeds ai/embed-document + ai/semantic-search; scoring itself is pure."
 atomPath: match
-coordinate: "match · 8/crest · 522bbcdd"
-contentUuid: "c25564f0-8249-5dd0-a5cf-16209e6a38dc"
-diamondUuid: "46851d8f-321d-8760-a63a-426cb4635004"
-uuid: "522bbcdd-4d0e-823e-85a1-2a41c8822259"
-horo: 8
+coordinate: "match · 4/weave · aa1a2aba"
+contentUuid: "91c77f17-c45c-5b41-86dc-639d87277b7d"
+diamondUuid: "a3a64c0c-12c6-8f0e-90dc-e74c2fc7a586"
+uuid: "aa1a2aba-9577-8f18-bd8e-aae7415f078c"
+horo: 4
 typography:
   partition: match
   bondDegree: 24
@@ -16,7 +16,7 @@ standards:
   - "schema.org Offer / Demand / PriceSpecification / QuantitativeValue"
 bindings: []
 signatures:
-  computationUuid: "f831deba-666d-89fb-8e91-fb511daf5bb4"
+  computationUuid: "dbe22c88-f594-8ee2-9bf2-f16140c83381"
   stages:
     - stage: path
       stageUuid: "56a63e8c-962c-8ebc-b681-3669a5540868"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "6930d975-3476-8300-858d-541f35f82f00"
     - stage: horo
-      stageUuid: "e2a3316f-12da-85d9-9438-9ce3be37ee4f"
+      stageUuid: "f1808221-ba73-8e7f-acff-692254766f20"
     - stage: seal
       stageUuid: "2a0c9c7a-54ae-8240-83aa-f63a43143af8"
     - stage: uuid
-      stageUuid: "c94809c6-a711-8025-9a88-190eee8a11d9"
+      stageUuid: "c3e684e6-9eee-89b5-bc6f-3ec3c6da7ccd"
 version: 2
 ---
 # match — Vectorize proposes, the constraints dispose

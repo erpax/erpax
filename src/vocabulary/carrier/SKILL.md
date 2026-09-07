@@ -2,10 +2,10 @@
 name: carrier
 description: "Use when reasoning about carrier — 'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights."
 atomPath: "vocabulary/carrier"
-coordinate: "vocabulary/carrier · 8/crest · 1d080b5d"
-contentUuid: "157e0e93-6b5a-5e0b-9dda-12e0d27f49e6"
-diamondUuid: "085645d3-1543-89b2-95c7-bd3291a64ec8"
-uuid: "1d080b5d-d5d4-80f1-9f6f-b8b8cd25ce7c"
+coordinate: "vocabulary/carrier · 8/crest · 6684b7e5"
+contentUuid: "8e216551-f7e4-57ed-a354-dd86cbe92396"
+diamondUuid: "751ce86f-384d-8426-bd13-680b9456c840"
+uuid: "6684b7e5-3c2a-8e90-8aa2-62bdfb167895"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "563047b2-4a9c-8c71-8fa4-b3d34c72bcd5"
+  computationUuid: "99e3f22e-f6e3-8af6-97ab-a998a34a1abb"
   stages:
     - stage: path
       stageUuid: "5f68fe70-0292-8461-9caa-3bac6a97fbd0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0b76a5a1-aea0-8439-8565-5aedb0bfb28e"
     - stage: horo
-      stageUuid: "7c6ba502-1ad9-859f-b437-f0ed50da9e38"
+      stageUuid: "0a2f6006-4b20-8981-8635-914d1fa0cadc"
     - stage: seal
       stageUuid: "04b0d0f0-89f8-88da-a4b8-84f74a3afbb7"
     - stage: uuid
-      stageUuid: "ce2a6d91-7308-8327-ba5b-69c67a3031e5"
+      stageUuid: "50b8f942-88cf-86df-a1bb-acf1c030fdce"
 version: 2
 ---
 # carrier

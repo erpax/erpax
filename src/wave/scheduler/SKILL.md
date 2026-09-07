@@ -2,18 +2,18 @@
 name: scheduler
 description: "Use when scheduling corpus paths into balanced waves — turns the max-work/max-tamper policy into concrete wave-schedule options (unit ceiling, items per wave derived from wave depth, weight function) and walks the live path set into a self-balancing plan."
 atomPath: "wave/scheduler"
-coordinate: "wave/scheduler · 8/crest · 9404f181"
-contentUuid: "6f8d030b-d930-5dbd-842f-f334cb06d61c"
-diamondUuid: "b10c1e5d-6a82-853a-9407-01e54531e125"
-uuid: "9404f181-6a62-8b5c-9459-167e30b1f67a"
-horo: 8
+coordinate: "wave/scheduler · 4/weave · 924e3ad2"
+contentUuid: "3ea33ae7-5d5f-5a79-8983-989873f493ff"
+diamondUuid: "235c092a-f281-81ae-b8a4-bb912958caa4"
+uuid: "924e3ad2-965c-8473-8c49-935ad42380da"
+horo: 4
 typography:
   partition: wave
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7373789e-12a2-8939-9212-62a72ed864bd"
+  computationUuid: "74c6f95a-a55f-87e5-bb42-9ba73b61b88e"
   stages:
     - stage: path
       stageUuid: "8f8fb6aa-2abf-8113-9b4e-b3cf4526bf1d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9f113210-de3e-8baf-b632-b34e2bdc0ddd"
     - stage: horo
-      stageUuid: "9b645380-f900-8c87-b6de-08c01d4c214f"
+      stageUuid: "946a97b9-a9e8-89cb-916c-30aaa98335ba"
     - stage: seal
       stageUuid: "6f6a8131-82fb-8781-91db-d1f633e88d91"
     - stage: uuid
-      stageUuid: "9aedfeff-afbd-826d-aac7-0ee5d6cc1d0b"
+      stageUuid: "fda274f1-a030-8d3d-aefe-003eec5f1b85"
 version: 2
 ---
 # wave/scheduler — policy becomes a schedule

@@ -2,18 +2,18 @@
 name: concentration
 description: "Use when reasoning about concentration — rules/concentration — detect logic concentrated in hub index.ts vs child atoms."
 atomPath: "rules/concentration"
-coordinate: "rules/concentration · 5/round · 1db0b3fa"
-contentUuid: "719e0da8-35c6-5222-b96c-fbf6191efc9d"
-diamondUuid: "465180b1-abbe-8bcc-bf78-a47cdc15eb39"
-uuid: "1db0b3fa-0aa9-881c-b25f-1fee8d6763c9"
-horo: 5
+coordinate: "rules/concentration · 2/share · da313885"
+contentUuid: "63f3a924-b140-5b56-9c71-d690f701ba89"
+diamondUuid: "ded11880-685f-8fa2-960c-cfe3da147836"
+uuid: "da313885-26c2-86ae-91be-1b2c2863f9ef"
+horo: 2
 typography:
   partition: rules
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6bf56348-56c1-8f93-af3b-14a18bed5557"
+  computationUuid: "d3cbaa56-51a9-85fe-9292-863f81410a75"
   stages:
     - stage: path
       stageUuid: "8a6a78fa-3672-8f09-8a60-da63119801c2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cdfe2c0e-f9e7-8d1c-b6c9-c86091fddae4"
     - stage: horo
-      stageUuid: "fcf268bb-d8b7-80e7-81e7-a5be47d8d76a"
+      stageUuid: "3aeaaf75-1311-8944-8f87-91c4a8636d45"
     - stage: seal
       stageUuid: "74e02c0e-fdbd-82fd-ba22-c99303019b4b"
     - stage: uuid
-      stageUuid: "f058a400-37b3-8725-9554-338579fcc7ca"
+      stageUuid: "cc9f1be8-014c-813f-9ece-34da2ab23d81"
 version: 2
 ---
 # rules/concentration

@@ -2,14 +2,14 @@
 name: cases
 description: "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket."
 atomPath: cases
-coordinate: "cases · 4/weave · 36f16892"
-contentUuid: "8e82ea24-0ca3-5f93-abea-cdfbf3edfc82"
-diamondUuid: "1aa1fc10-5408-889f-837c-7aa0b198d01b"
-uuid: "36f16892-0eab-828d-b2cd-85438bcaff06"
+coordinate: "cases · 4/weave · 6a43bb52"
+contentUuid: "3ab59649-cdc6-5601-a736-e9c1f95ede3c"
+diamondUuid: "4093877b-a5f8-8c33-9557-3230dca5fc63"
+uuid: "6a43bb52-1a04-8bec-b771-246413123d77"
 horo: 4
 typography:
   partition: cases
-  bondDegree: 36
+  bondDegree: 68
 standards:
   - "ISA-500"
   - "ISO-19011:2018 ISA-500 evidence chain-of-custody append-only"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "464b52fe-37a8-808d-9aa4-7e032e722e55"
+  computationUuid: "50f6a001-548c-8c11-8fcd-1dd5d554dd2a"
   stages:
     - stage: path
       stageUuid: "d0e42baa-d4ec-8283-a35c-b360e4d912c4"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "24f1e324-8ddf-8168-acbe-355419742d98"
     - stage: horo
-      stageUuid: "3319f7f8-be4c-806f-b589-8a9f8fda085c"
+      stageUuid: "a1ce7fba-c2e4-8cb0-8af7-a7eab5aa241d"
     - stage: seal
       stageUuid: "7239fbbd-1522-87a8-af0c-a83b363fa2ad"
     - stage: uuid
-      stageUuid: "cff40852-e3fa-8e28-946f-7021f298811a"
+      stageUuid: "d5cc07aa-68ec-8d68-a661-b779d06e62b2"
 version: 2
 ---
 # Cases

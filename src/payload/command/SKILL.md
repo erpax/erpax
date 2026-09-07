@@ -2,11 +2,11 @@
 name: command
 description: "Use when reasoning about the Payload CLI command set folded into the corpus — each command a name (name equals path equals uuid), the set folding to one root by the merge, with both-sides inverse pairs encoded (migrate up and down, fresh and reset) and generators forward-only."
 atomPath: "payload/command"
-coordinate: "payload/command · 1/base · c56c8bca"
-contentUuid: "acaa5dfb-ceeb-55bf-9017-94a1941b981f"
-diamondUuid: "5f83ac50-332c-8f8b-8621-421dcb435340"
-uuid: "c56c8bca-e812-8795-863e-4db259da3648"
-horo: 1
+coordinate: "payload/command · 5/round · 35f548fb"
+contentUuid: "b0a9becf-486f-502d-a6a4-cd82daf5d52b"
+diamondUuid: "38614e61-6e53-810d-91bc-a09cfdbbf8d3"
+uuid: "35f548fb-33c6-8428-a967-b7f9df169660"
+horo: 5
 typography:
   partition: payload
   bondDegree: 62
@@ -14,7 +14,7 @@ standards:
   - "the Payload CLI (generate / migrate / jobs / run) · double-entry (every reversible command has its inverse)"
 bindings: []
 signatures:
-  computationUuid: "13624b25-2e21-8e0f-a6be-f62cb85fcf3e"
+  computationUuid: "7182a39c-f2c7-8715-a135-fc0d6514375b"
   stages:
     - stage: path
       stageUuid: "e70726ce-9100-8683-a469-cb57a1beec52"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7a296942-2da5-8720-9b28-2997e7a9a345"
     - stage: horo
-      stageUuid: "cbabbd30-74dd-80cd-b54b-da37cec406dd"
+      stageUuid: "fc1ce251-ad4d-8366-9cf9-a071d981f03a"
     - stage: seal
       stageUuid: "026bea90-4792-8188-a0c7-cc79ca1d26f0"
     - stage: uuid
-      stageUuid: "642889fb-03b5-8e6d-923c-a32b36f2772a"
+      stageUuid: "40aaab62-87c5-8623-974b-990a35f6e8cb"
 version: 2
 ---
 # payload/command — the CLI command set, folded

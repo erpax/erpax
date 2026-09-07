@@ -2,10 +2,10 @@
 name: encodes
 description: "Use when reasoning about encodes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/encodes"
-coordinate: "vocabulary/encodes · 5/round · 3b35a8a9"
-contentUuid: "06828367-a7af-5015-b93c-6f1faf0744e1"
-diamondUuid: "2ff37738-267c-85b8-b736-6fba876bbfad"
-uuid: "3b35a8a9-7afe-8f54-9401-b7eb9ef0f4f6"
+coordinate: "vocabulary/encodes · 5/round · 428cd064"
+contentUuid: "e789892e-b5ed-53cc-b071-ec17cf34bfb8"
+diamondUuid: "4e0ee060-2e5e-8518-b843-4923104a5006"
+uuid: "428cd064-4a79-849b-b55d-7c3cd3dc166c"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7efd9d87-294a-8383-8e52-e4d446596ae5"
+  computationUuid: "a8ae68cf-7b57-8704-b996-b956377cdd5c"
   stages:
     - stage: path
       stageUuid: "3525717a-21fb-889a-8de2-64bac16466a6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fe9c5882-abb6-88c2-8770-3ac68a3c21c4"
     - stage: horo
-      stageUuid: "24418b39-ae01-8a0c-94d5-df88a9edb4f3"
+      stageUuid: "b41e1b54-ea50-8d5d-babe-0aa8fec1f002"
     - stage: seal
       stageUuid: "7c2c2c6a-d6c7-83d9-b4d7-9a842301be83"
     - stage: uuid
-      stageUuid: "50ff00a8-e6d6-8216-88b4-9dc5bacb3842"
+      stageUuid: "6530230d-a958-8bbd-bbe1-4be335aedcd8"
 version: 2
 ---
 # encodes

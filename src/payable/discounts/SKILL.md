@@ -2,11 +2,11 @@
 name: discounts
 description: "Use when reasoning about discounts — \"2/10 Net 30\" — 2% off if paid within 10 days, otherwise the full balance at 30."
 atomPath: "payable/discounts"
-coordinate: "payable/discounts · 7/descent · 8f241f43"
-contentUuid: "78ba4e58-d4ec-5aa7-9d49-f195353fb1cf"
-diamondUuid: "93878d37-f092-829d-9ec0-50d5a614b8ae"
-uuid: "8f241f43-889e-860b-b782-3978f1eda167"
-horo: 7
+coordinate: "payable/discounts · 1/base · df8d0cdd"
+contentUuid: "4edb5bff-1e5e-5051-a224-925e8abbd173"
+diamondUuid: "d96b6f0a-0fcd-875e-82ff-ccfadf18c44c"
+uuid: "df8d0cdd-2496-8a93-a76a-4c260d89734a"
+horo: 1
 typography:
   partition: payable
   bondDegree: 9
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-705 cost-of-sales-and-services discount-recognition"
 bindings: []
 signatures:
-  computationUuid: "106c5d81-5ac3-8a8d-ac06-3a62fa403d44"
+  computationUuid: "630cfa0a-5630-8f34-9cac-589dbc2d99dc"
   stages:
     - stage: path
       stageUuid: "32d7178d-9ca7-8808-9ad5-66765215517c"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "6eca2f8e-08c2-84ff-a2f0-f85d2c9610f4"
     - stage: horo
-      stageUuid: "149e4536-bb1d-8c9a-9069-9f76db33c14a"
+      stageUuid: "f24acf8e-edde-89ac-9b09-deddfd0f8aa7"
     - stage: seal
       stageUuid: "768356e4-0bcd-8f03-af4d-13aa1be07b18"
     - stage: uuid
-      stageUuid: "53f3e427-7d72-8963-870e-a8574986eee0"
+      stageUuid: "19a2f88b-3899-8873-a191-71c16123aef3"
 version: 2
 ---
 # payable/discounts — the early-payment discount, priced as an annual rate

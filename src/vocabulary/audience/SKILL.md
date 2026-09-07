@@ -2,11 +2,11 @@
 name: audience
 description: "Use when reasoning about audience — Intended audience for an item, i.e. the group for whom the item was created."
 atomPath: "vocabulary/audience"
-coordinate: "vocabulary/audience · 8/crest · 9f27fe4a"
-contentUuid: "dd31cf00-e97d-5fd5-8e92-6e247495fcee"
-diamondUuid: "85c05539-e6f8-88ea-a4be-2505f0e1a2f9"
-uuid: "9f27fe4a-2958-8b7b-bb99-c1ef7808fc1c"
-horo: 8
+coordinate: "vocabulary/audience · 7/descent · 09be04c0"
+contentUuid: "b6f0e045-d32b-52a5-aae1-c7370f7e6c1b"
+diamondUuid: "e13d7a9a-b67a-83c1-bc5b-77160c32ddeb"
+uuid: "09be04c0-d03e-80ca-9899-46d10afba2e4"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "22d1b495-d9ac-8a42-a96e-9bbfddd22552"
+  computationUuid: "eb0b4824-dd96-89b3-8cb0-f12801408582"
   stages:
     - stage: path
       stageUuid: "7460fac9-470c-846e-8561-b2c8161d4095"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "edde0fec-ae21-826c-9146-cda1a6ea355d"
     - stage: horo
-      stageUuid: "b1ee9ccc-a168-80c7-b340-40987700c789"
+      stageUuid: "6e8881d2-aaea-8e36-a411-aa5f407eb09a"
     - stage: seal
       stageUuid: "9ca94249-d736-8397-adfc-d84a07cdfd08"
     - stage: uuid
-      stageUuid: "386ee4cc-77c7-8e73-91d0-a6e61b4199df"
+      stageUuid: "2ce32cef-9784-8a40-8698-0927c650a19c"
 version: 2
 ---
 # audience

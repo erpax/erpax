@@ -2,11 +2,11 @@
 name: document
 description: Use when reasoning about document — RFC 9110 §13 cached document fetcher (single doc by collection + slug).
 atomPath: "rfc/9110/get/document"
-coordinate: "rfc/9110/get/document · 8/crest · 58b5a41d"
-contentUuid: "562faad7-9cdf-5a5a-a2c6-8e00a4270dc5"
-diamondUuid: "2d2049d4-3e97-8bc9-b20c-00581fff8723"
-uuid: "58b5a41d-1f2c-8665-ab38-12137f86cac4"
-horo: 8
+coordinate: "rfc/9110/get/document · 7/descent · b0486b7d"
+contentUuid: "7172aaed-bf44-5306-8c55-fedf920edaa1"
+diamondUuid: "c34c45d3-1893-87ee-9cbb-88ed3f19f433"
+uuid: "b0486b7d-38cd-82ea-83b1-fa050d858dad"
+horo: 7
 typography:
   partition: rfc
   bondDegree: 56
@@ -15,7 +15,7 @@ standards:
   - "9111 http-caching"
 bindings: []
 signatures:
-  computationUuid: "72d22a20-9aed-83ff-bd3d-d801b459f9e1"
+  computationUuid: "da1bd672-767c-897b-b701-983106fd29ca"
   stages:
     - stage: path
       stageUuid: "49209e35-3f88-820e-aa12-ac75952dd069"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "d216f962-a5f5-8982-91fd-ccb45d21fb3a"
     - stage: horo
-      stageUuid: "903581bb-0ec6-8809-8cd2-b98e1fe5493d"
+      stageUuid: "2f888f72-a140-8d7a-a6d8-fa46134fb390"
     - stage: seal
       stageUuid: "4d89e859-f778-8caf-b691-c730df740b8a"
     - stage: uuid
-      stageUuid: "d48bdaca-9111-884b-a332-61d351314286"
+      stageUuid: "313019ab-7b13-8051-ac50-ea581c346776"
 version: 2
 ---
 # rfc/9110/get/document

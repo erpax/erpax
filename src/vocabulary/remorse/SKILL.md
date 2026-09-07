@@ -2,11 +2,11 @@
 name: remorse
 description: "Use when reasoning about remorse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/remorse"
-coordinate: "vocabulary/remorse · 7/descent · ab2e4324"
-contentUuid: "044f509c-2a2d-5db0-80a5-abdaa479465f"
-diamondUuid: "048e7967-174e-8ca3-a864-b128cf581a1c"
-uuid: "ab2e4324-fefb-8887-8ff8-59ab4fb85e42"
-horo: 7
+coordinate: "vocabulary/remorse · 4/weave · 30c9d403"
+contentUuid: "9cd540aa-4cd4-537b-bcea-6b2834c97d0f"
+diamondUuid: "62eec95e-ddf1-8117-9733-0da4f14b8c83"
+uuid: "30c9d403-58ea-8415-952f-3c10c9808248"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 38
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1939f2e7-7910-82ec-8be3-3c8883acffe0"
+  computationUuid: "dee7a433-174d-88d7-a7df-08fb646b3cec"
   stages:
     - stage: path
       stageUuid: "e457960f-020f-8e83-9013-03e6426e6c83"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a5c7520c-87b1-8090-b3e8-0d85c9748df6"
     - stage: horo
-      stageUuid: "27975b79-912f-84f5-8624-2c6fedb06df0"
+      stageUuid: "0b59c1d7-840d-86a8-978e-2785f5fc2948"
     - stage: seal
       stageUuid: "5463e153-0a82-8ab6-b9ed-ddfb4b918740"
     - stage: uuid
-      stageUuid: "2056aecd-2003-8e91-921e-35053e0ee10e"
+      stageUuid: "eb5964e1-06db-817c-9ac7-dcbc76cb8729"
 version: 2
 ---
 # remorse

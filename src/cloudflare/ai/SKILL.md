@@ -2,14 +2,14 @@
 name: ai
 description: "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving agent atoms."
 atomPath: "cloudflare/ai"
-coordinate: "cloudflare/ai · 2/share · d8681b9a"
-contentUuid: "54e69858-ed9c-5ce2-8c52-7a95cc7b93e1"
-diamondUuid: "ccb728e3-6971-863f-843e-deff7684fd3a"
-uuid: "d8681b9a-9c96-8af6-9098-09f25aa7936d"
-horo: 2
+coordinate: "cloudflare/ai · 4/weave · f72e8f58"
+contentUuid: "9c0856fe-1301-5eee-af4a-b2aa803337b9"
+diamondUuid: "7efa5345-f07d-85c0-8259-3ae815d15872"
+uuid: "f72e8f58-b5a2-8390-81f0-d2bc9485e939"
+horo: 4
 typography:
   partition: cloudflare
-  bondDegree: 36
+  bondDegree: 40
 standards: []
 bindings:
   - "ai/AI"
@@ -22,7 +22,7 @@ bindings:
   - "send_email/EMAIL_SENDER"
   - "vectorize/VECTORIZE_DOCS"
 signatures:
-  computationUuid: "e2df827e-e8b2-8a80-9da8-583d7207de10"
+  computationUuid: "f4c257cb-2406-8b75-9a40-c15baa9b3cf0"
   stages:
     - stage: path
       stageUuid: "f52b7600-5340-89b9-b22c-2a6ff9c5456b"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "5a49d9c4-b501-809e-ad18-8f83176837ca"
     - stage: horo
-      stageUuid: "8304700f-9a4f-8f2b-b2fd-bb6a92fb2d11"
+      stageUuid: "c56c8852-a307-879a-be50-ee65b1b6a880"
     - stage: seal
       stageUuid: "b474c803-f39f-811e-abeb-2ba164275e05"
     - stage: uuid
-      stageUuid: "6d779551-98c8-8735-b9ba-9c6d2a2b872a"
+      stageUuid: "1c22d225-462e-8585-b6a6-515ea70a3338"
 version: 2
 ---
 # ai — Cloudflare Workers AI bindings as diamonds

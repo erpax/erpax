@@ -2,11 +2,11 @@
 name: replay
 description: "Use when an auditor demands \"show me how this number was computed and reproduce it\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
 atomPath: "beyond/replay"
-coordinate: "beyond/replay · 4/weave · 9e4b1ba9"
-contentUuid: "57192731-1002-5154-87a8-0d88cf24e4d6"
-diamondUuid: "92cdc4a1-0313-8ed1-bad1-0fcefc90618f"
-uuid: "9e4b1ba9-4189-83f0-ad61-e44cb3f0790a"
-horo: 4
+coordinate: "beyond/replay · 8/crest · 0f8bfd13"
+contentUuid: "70a0b1d0-9465-5570-ba01-8f1998214350"
+diamondUuid: "d0a1c46b-cd06-8de2-bbf8-b63c033f4761"
+uuid: "0f8bfd13-7b86-8cb5-a5e0-913542078455"
+horo: 8
 typography:
   partition: beyond
   bondDegree: 15
@@ -16,7 +16,7 @@ standards:
   - "ISRS 4400 agreed-upon-procedures (replay verification)"
 bindings: []
 signatures:
-  computationUuid: "28e072cc-facb-825b-880c-121341380263"
+  computationUuid: "7aa540d5-3650-8c38-84e4-982da03f53ef"
   stages:
     - stage: path
       stageUuid: "0e8f4b83-e98b-86c0-9791-fd654ffb1f6a"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9c02f772-ec16-8c68-9ebe-a5864966711a"
     - stage: horo
-      stageUuid: "512081fe-942e-80d6-8e78-a971a845aaa4"
+      stageUuid: "b1a908a8-0fda-8b78-a8ef-47f931424db5"
     - stage: seal
       stageUuid: "ba68b3a6-541c-8315-ad69-11f6f6119425"
     - stage: uuid
-      stageUuid: "ba58da64-ab14-84f2-9982-081d3f6be3ff"
+      stageUuid: "f12869f8-7edc-8c0b-94bd-acdb824f85b9"
 version: 2
 ---
 # beyond/replay — deterministic replay (byte-identical re-computation)

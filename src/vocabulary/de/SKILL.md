@@ -2,11 +2,11 @@
 name: de
 description: "Use when reasoning about de as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/de"
-coordinate: "vocabulary/de · 2/share · 562cf6e0"
-contentUuid: "c95bdd9d-b68c-56a6-8283-7069958ebe51"
-diamondUuid: "e3ee992c-1bcb-847b-a166-aa241086d78e"
-uuid: "562cf6e0-9b2d-8fc0-a4a4-2633cfe96f9a"
-horo: 2
+coordinate: "vocabulary/de · 1/base · 58c92c2d"
+contentUuid: "eda0173e-1750-59ed-ad57-f60813a35514"
+diamondUuid: "b6451ae1-6362-891c-9e54-9ce769873546"
+uuid: "58c92c2d-53e0-8230-9a43-4a1771c63371"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3bbd4be3-8c30-8ef3-9a7a-bcce06dc7e62"
+  computationUuid: "4cb0cec6-5900-8aff-8b2d-0265d3cb9da5"
   stages:
     - stage: path
       stageUuid: "cc765a64-9985-89ed-8610-0267ff28d6f6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "802d0a7a-ca14-8997-93f6-4a9fc174c197"
     - stage: horo
-      stageUuid: "ad616c9f-5594-8f84-94dd-162d921d6903"
+      stageUuid: "d2c153b3-d2f7-8e2f-9705-37c31dfa6335"
     - stage: seal
       stageUuid: "5bc8ceaa-c93c-82b3-9292-d5b9a44835d9"
     - stage: uuid
-      stageUuid: "5a865fdd-cd7e-83e6-aee9-2e985107936e"
+      stageUuid: "f4b40ffe-8dec-8a30-bc3b-0a9082b34eb6"
 version: 2
 ---
 # de

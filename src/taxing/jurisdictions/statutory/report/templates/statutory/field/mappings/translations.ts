@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mappings",
-    "uuid": "6269ce0e-5ed1-830e-8442-b1e386a0ff55",
+    "uuid": "744fa54d-8ded-8ff8-a1bc-7a4eec25826c",
     "words": [
       "mappings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring source collection fields to statutory report template slots — mapping field names, types, transformations, and validation rules for SAF-T/XBRL/EN-16931 filings. The field-level mapping node for statutory report templates.",
-    "uuid": "b005460e-6bf2-8e2a-90aa-940edd85a7f1",
+    "uuid": "da299e4c-7cb1-831d-bc83-1c69e9c6fcba",
     "words": [
       "use",
       "when",

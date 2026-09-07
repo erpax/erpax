@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "resolution",
-    "uuid": "be4fe238-4e6d-8860-bb1c-32fa6a5f9d76",
+    "uuid": "9def9392-7bd5-8e04-8eab-994a9ff13c19",
     "words": [
       "resolution"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when closing or resolving a ticket, issue, or complaint — root-cause analysis, solution implementation, confirmation, closure. The endpoint of a support lifecycle.",
-    "uuid": "dcf345ee-e6a2-85f5-88e1-2884361000e2",
+    "uuid": "a4a1ea04-25a5-8512-8158-c7baf07a95ec",
     "words": [
       "use",
       "when",

@@ -2,21 +2,21 @@
 name: confirm
 description: "Use when reasoning about confirm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: confirm
-coordinate: "confirm · 1/base · ccb61fd1"
-contentUuid: "3e979ebd-00fa-5566-a27e-e99b25249a5e"
-diamondUuid: "89f17c46-93ab-88a6-b52e-ac3dcfd40400"
-uuid: "ccb61fd1-79b5-80f0-b97c-8a05f52e49d8"
-horo: 1
+coordinate: "confirm · 2/share · 1a0b9e24"
+contentUuid: "ea3149c4-c255-5574-b2de-fcdc558546fb"
+diamondUuid: "ff45bcf1-bb04-8486-9036-96ad18716708"
+uuid: "1a0b9e24-7a37-8905-a39c-c15a9c5b9b7f"
+horo: 2
 typography:
   partition: confirm
-  bondDegree: 125
+  bondDegree: 143
 standards:
   - "ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable`"
   - "schema.org — the type vocabulary, collided to single words"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5b200743-bded-88a5-9a7d-94ea7605db42"
+  computationUuid: "10be007a-2c38-85ed-9609-18bec9f15dcf"
   stages:
     - stage: path
       stageUuid: "564f6275-089f-8a94-9dc8-9c7bae657f65"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "3b86b408-3d3b-80b8-ba21-81fa8867a0e0"
     - stage: horo
-      stageUuid: "6892db7c-5dc5-8b67-9627-34e6003afcad"
+      stageUuid: "f552e025-fb5d-8562-9b1d-14f8c4c8c9ec"
     - stage: seal
       stageUuid: "20290cb7-4e92-8c07-b5f7-019cfb0cd1a2"
     - stage: uuid
-      stageUuid: "3a74283b-c97d-8b2a-8978-e0e4fd619a71"
+      stageUuid: "5441d7a4-030d-8fc9-9bcc-3e80a4c74c6e"
 version: 2
 ---
 # confirm

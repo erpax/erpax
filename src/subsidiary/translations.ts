@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "subsidiary",
-    "uuid": "2a8bf2e3-41cf-85d9-a39b-d703812df2bc",
+    "uuid": "2166278a-2440-8796-9e45-dcffc5a4bcfd",
     "words": [
       "subsidiary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about subsidiary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "3e5c0063-8768-855b-bd77-b6a5b45ce897",
+    "uuid": "e8880a47-10d3-8eec-8632-cec028958e7c",
     "words": [
       "use",
       "when",

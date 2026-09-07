@@ -2,18 +2,18 @@
 name: decide
 description: "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary."
 atomPath: decide
-coordinate: "decide · 1/base · 41a99d52"
-contentUuid: "b88b6cb0-1512-5857-b403-fde11828bad0"
-diamondUuid: "19b21de0-c42f-8018-8466-e5498315cfbb"
-uuid: "41a99d52-6fbc-8018-8fcd-f08bfb982dcd"
-horo: 1
+coordinate: "decide · 8/crest · 93331702"
+contentUuid: "aad4588d-e28d-58d4-ba75-fa7127e26ffc"
+diamondUuid: "99d19433-f96f-8696-997d-7f987a3944f3"
+uuid: "93331702-520b-88cd-8094-cdc2aa070012"
+horo: 8
 typography:
   partition: decide
   bondDegree: 75
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a830a685-4346-8d56-9787-bdc9f7219fa2"
+  computationUuid: "f2594e8c-8674-84bd-b054-2505dcb229ee"
   stages:
     - stage: path
       stageUuid: "e30bdc24-cda7-8b6c-b830-b96a3a530e7b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "15472826-9719-8d8e-8f47-76d5796100cc"
     - stage: horo
-      stageUuid: "b63f9ad9-fee1-86fc-b802-180ef38b4548"
+      stageUuid: "fc3d6785-dac8-8e23-bf27-b82f5ee7d885"
     - stage: seal
       stageUuid: "71809d7e-cb14-892b-bc6d-d05fa2ad062e"
     - stage: uuid
-      stageUuid: "3d84da12-d696-835e-bb2b-055691c48a77"
+      stageUuid: "13036361-1d1e-8ae2-a9cc-a057cad61a86"
 version: 2
 ---
 # decide — the society's composed decision (correct · harmonic · efficient)

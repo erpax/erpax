@@ -2,21 +2,21 @@
 name: merge
 description: "Use when reasoning about merge — merge — union the installed Claude domain-skill catalogue INTO the erpax atom corpus, content-addressed, with no coordination (the merge law as code)."
 atomPath: "skill/router/merge"
-coordinate: "skill/router/merge · 4/weave · 57b8f72d"
-contentUuid: "5595e2b2-4bfa-5f6b-a642-e97b334f873e"
-diamondUuid: "721be328-6882-878b-93bf-917991aa6b42"
-uuid: "57b8f72d-c1b1-8a84-b6ea-92ff216d5b05"
-horo: 4
+coordinate: "skill/router/merge · 1/base · 490de4c6"
+contentUuid: "868dc1be-560c-5a0c-9018-067ea9709faf"
+diamondUuid: "1a28f937-1af3-805e-b50c-5b4c33b8e32d"
+uuid: "490de4c6-0d3d-8cae-a92d-cb56bc796355"
+horo: 1
 typography:
   partition: skill
-  bondDegree: 5244
+  bondDegree: 5332
 standards:
   - ESCO
   - "ESCO/SFIA — installed skills enter the same competency taxonomy"
   - SFIA
 bindings: []
 signatures:
-  computationUuid: "cacd362a-e1b9-818e-8b8f-ac88101d4809"
+  computationUuid: "32b12150-5599-898d-91eb-5d6f4100134c"
   stages:
     - stage: path
       stageUuid: "4cf09456-9310-8d3c-9e22-51e226fd71f4"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "c9decd27-8534-88e4-b2d9-71c36a4ee6f0"
     - stage: horo
-      stageUuid: "f378756b-aba3-8124-941c-6e26034873c7"
+      stageUuid: "46722850-762b-8167-9d80-fc449c5abdbf"
     - stage: seal
       stageUuid: "4f205e03-5318-8e3b-8c6e-c46da0aa8213"
     - stage: uuid
-      stageUuid: "065eb28c-a29e-835d-b51e-d29f4422aded"
+      stageUuid: "bd686e60-e153-89c5-a4ce-8e9243ab0d20"
 version: 2
 ---
 # skill/router/merge

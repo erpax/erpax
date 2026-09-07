@@ -2,11 +2,11 @@
 name: vital
 description: "Use when reasoning about vital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: vital
-coordinate: "vital · 1/base · bb4a70cc"
-contentUuid: "b77bd84a-5c89-57e5-ba57-e0ab5dd1875e"
-diamondUuid: "37b21018-4bf8-8833-9c24-b32d6a8958b6"
-uuid: "bb4a70cc-2ebe-8cce-8abe-9b5e5025afba"
-horo: 1
+coordinate: "vital · 8/crest · ee63ebec"
+contentUuid: "192add88-1a90-5806-be5f-6ca8786a1583"
+diamondUuid: "d969af4e-ff01-8d23-aa80-62b055d06a8a"
+uuid: "ee63ebec-bdb0-829b-85df-4ce31a15f4bb"
+horo: 8
 typography:
   partition: vital
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d493fe48-3737-8257-9a7d-2da273501c15"
+  computationUuid: "5273e41b-8794-818c-b753-bbe45108069f"
   stages:
     - stage: path
       stageUuid: "d6b95085-8941-80d0-b41b-d267888bc3d8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f9fcb439-3872-8f38-883d-617e7a0041a9"
     - stage: horo
-      stageUuid: "86d41aab-3e77-8412-bd4d-2d06af55c941"
+      stageUuid: "de772342-4470-8e7b-90f6-cd8affa8ccc0"
     - stage: seal
       stageUuid: "a34b291e-4cc7-89c5-8901-ebdb6891d56f"
     - stage: uuid
-      stageUuid: "53aa0ee9-3d28-873b-8164-12b1447a5a33"
+      stageUuid: "8265b80d-3379-876c-9f02-b8f900cadad1"
 version: 2
 ---
 # vital

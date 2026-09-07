@@ -2,10 +2,10 @@
 name: line
 description: "Use when reasoning about line — A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space."
 atomPath: "vocabulary/line"
-coordinate: "vocabulary/line · 5/round · 1ca5ffc2"
-contentUuid: "8fd407d2-f856-5a08-8d53-00d81edd5747"
-diamondUuid: "57a415e2-42a0-8964-ac10-e784b2617b3a"
-uuid: "1ca5ffc2-5a17-8c53-9661-3309afbf6dbd"
+coordinate: "vocabulary/line · 5/round · c01e4930"
+contentUuid: "a666cf40-576a-5ddb-ad82-a366282ed7a6"
+diamondUuid: "9fd94d8c-db2c-8499-bf7a-8c3d4c3b5bc9"
+uuid: "c01e4930-a476-85d2-93ab-20a61eae8b38"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1690d575-6f55-8070-b998-6f731c62762e"
+  computationUuid: "35025157-f69a-8bb3-b641-73139b5db711"
   stages:
     - stage: path
       stageUuid: "28ef1fa7-02db-89a6-936d-04e35758512c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "549063fa-6161-8d09-80d5-d087ffc7f19b"
     - stage: horo
-      stageUuid: "56358b00-7f6e-811b-ad5d-7345afb3ec57"
+      stageUuid: "70e5db5a-f841-84b2-a13a-5e3d0e7dd8de"
     - stage: seal
       stageUuid: "f3d9c70f-5f1e-8ca8-a18e-c6f30509788c"
     - stage: uuid
-      stageUuid: "67366564-4cd4-898e-b56f-3ca59f75420b"
+      stageUuid: "e343db4e-2624-8e32-ad55-3d5afc0e81f1"
 version: 2
 ---
 # line

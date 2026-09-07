@@ -2,18 +2,18 @@
 name: request
 description: Use when modelling one request — the singular model of the requests collection (the plural store); a submitted ask for an action or resource.
 atomPath: "vocabulary/request"
-coordinate: "vocabulary/request · 8/crest · 6c8c724d"
-contentUuid: "b1b8448a-d8d3-5f4c-88ef-eeafed163445"
-diamondUuid: "dd6a212b-e2ce-82cb-bc4e-37a00699b4a4"
-uuid: "6c8c724d-40d9-802b-b0ed-c9edb79a22c8"
-horo: 8
+coordinate: "vocabulary/request · 1/base · e8e94adb"
+contentUuid: "3fbd6cd3-1ebe-5d56-b146-ff83fb5a56af"
+diamondUuid: "2b802064-8e68-835d-b598-77db81d03304"
+uuid: "e8e94adb-7942-8131-9210-5d269e0d8d60"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cd658bc4-1b58-8f65-8d0e-d9b300efd248"
+  computationUuid: "d4af4dc4-3eb4-8fc6-959a-b01ee371680a"
   stages:
     - stage: path
       stageUuid: "793b9a88-e7ac-8386-b23c-e905a0d4708c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "84a4694a-324f-8bcc-bf6e-8c79dd336837"
     - stage: horo
-      stageUuid: "6027c687-8863-864b-8430-79c270d10080"
+      stageUuid: "5cc40690-139d-8852-b9d0-b9f7170f5f62"
     - stage: seal
       stageUuid: "ac251dc0-5305-8fe6-826f-63b068563ace"
     - stage: uuid
-      stageUuid: "3e1b8eab-28ec-8b97-9061-482fed1ad0ed"
+      stageUuid: "57284acf-2715-8fd2-8bed-13a4048e600b"
 version: 2
 ---
 # request — the model of one [[requests]] row

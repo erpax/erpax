@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lesser",
-    "uuid": "ca24f9f6-bc68-8b45-ae37-57b31daf4db0",
+    "uuid": "88880c1b-999b-8f43-8d12-ddd60c7c7fdc",
     "words": [
       "lesser"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lesser — This ordering relation for qualitative values indicates that the subject is lesser than the object.",
-    "uuid": "829a07dd-e717-89dc-b041-bb6e5b1a036f",
+    "uuid": "8a18a4d3-ece4-89d7-ab10-b98fc9b98c5f",
     "words": [
       "use",
       "when",

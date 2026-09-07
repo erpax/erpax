@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "generate",
-    "uuid": "6f880f03-d7b8-8a62-9a01-7b83d948ad6e",
+    "uuid": "ce124c6e-dd65-8d42-b2f2-33eb8d4542c0",
     "words": [
       "generate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-    "uuid": "7eaa001e-b977-80ac-9bb8-2059a4547203",
+    "uuid": "0150ae03-918a-82f0-a5a3-59ae0817bf7f",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: xpath
 description: "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\"."
 atomPath: xpath
-coordinate: "xpath · 1/base · be6a59c3"
-contentUuid: "25bb1497-ffb8-5218-9900-0f47916a63e1"
-diamondUuid: "4e3908b3-b1ac-8d74-b0cf-7583bf177238"
-uuid: "be6a59c3-1aa5-8bea-a9e9-2b90556e5deb"
-horo: 1
+coordinate: "xpath · 2/share · 472192e7"
+contentUuid: "7698f034-6501-57e2-9cec-c042c4afd9a9"
+diamondUuid: "b6ea4149-bf53-8e22-838d-fdc5a5f8bb59"
+uuid: "472192e7-1b80-85c1-8340-2d6e0cc135c9"
+horo: 2
 typography:
   partition: xpath
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f36aed8f-585f-8841-b267-78b527292a46"
+  computationUuid: "36b3251f-36d7-8fc9-86f3-c3cab0934a31"
   stages:
     - stage: path
       stageUuid: "489da6f5-adff-8762-ad1a-c2e63a7294ca"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bf2ddef5-0503-8655-b4ad-a44318d1ea3d"
     - stage: horo
-      stageUuid: "44fb79fc-1f55-82bc-9571-cb035df63a67"
+      stageUuid: "30ead5bd-2578-8fa7-b8fe-88074f8255cc"
     - stage: seal
       stageUuid: "82050cf9-c2d3-8819-b8d1-b1339779f0c7"
     - stage: uuid
-      stageUuid: "f6fc9eb7-9561-8945-a729-f23205e43e8b"
+      stageUuid: "896f0f69-a4fc-80d9-8220-2597d02d1f14"
 version: 2
 ---
 # xpath

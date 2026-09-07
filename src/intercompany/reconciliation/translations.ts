@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reconciliation",
-    "uuid": "3e9c9e9c-2b57-8e2f-bda5-6f985fc1defa",
+    "uuid": "a8d7e505-53f4-8efa-bd89-2d600af7d1a6",
     "words": [
       "reconciliation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reconciling intercompany payable/receivable balances for multi-entity period close — the 'payable = receivable, net' invariant is the conservation algebra (netFlow = 0) at entity scale, proven at 0 and at scale, refutable on any break.",
-    "uuid": "b48a2f61-92d4-8f33-b9e0-13c62052363b",
+    "uuid": "c7832e45-6638-8be9-9549-089cac193017",
     "words": [
       "use",
       "when",

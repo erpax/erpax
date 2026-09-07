@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "immutability",
-    "uuid": "da865d2b-593b-8cb6-aa27-77aee4326f62",
+    "uuid": "21e705d1-2485-8376-bb54-92154c64e62a",
     "words": [
       "immutability"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about whether a posted GL posting can be altered — the beforeChange hook that seals a row once postedDate is set, allowing an admin edit only with a documented override. Read this before assuming postings are immutable: the hook is correct, tested, and attached to NO collection, and gl-postings lacks the override fields it requires.",
-    "uuid": "a503da28-4bb8-8718-bdd9-60e0879e3a3e",
+    "uuid": "dd41f561-4b91-8c0d-941a-94e90318b5c7",
     "words": [
       "use",
       "when",

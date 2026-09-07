@@ -2,11 +2,11 @@
 name: repeat
 description: "Use when reasoning about repeat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/repeat"
-coordinate: "vocabulary/repeat · 8/crest · 8b6cf7b8"
-contentUuid: "a54da563-ba4f-536e-b417-70ad807d93a0"
-diamondUuid: "857ab186-9a62-8233-8a58-01fe9af3148f"
-uuid: "8b6cf7b8-77c9-8771-a1ab-d952da52409c"
-horo: 8
+coordinate: "vocabulary/repeat · 2/share · 3c703167"
+contentUuid: "94fac252-e8e7-5710-817e-e99ce66353c9"
+diamondUuid: "740550ae-247d-8267-8ff3-98df6c2bf38b"
+uuid: "3c703167-5e66-828d-b9e4-788f3192220f"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4baed111-3c8d-8039-b9f5-135d88052ea8"
+  computationUuid: "ddf8e183-5509-8bbc-9944-f0004858c788"
   stages:
     - stage: path
       stageUuid: "6af16b30-89e1-8675-836e-c3473ae2efa8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "02b9e573-022f-82ca-a732-52717f24bac7"
     - stage: horo
-      stageUuid: "b579dc8e-931f-8465-9a9f-895baf2181fd"
+      stageUuid: "363c27ed-3172-845e-9dda-d84af55ee757"
     - stage: seal
       stageUuid: "84bac524-7d66-8f06-8f6b-8c084a3d440d"
     - stage: uuid
-      stageUuid: "d181d6a9-888e-8dcf-9553-47f67113317d"
+      stageUuid: "58f35c32-1648-89db-ae4f-9fc8911672c8"
 version: 2
 ---
 # repeat

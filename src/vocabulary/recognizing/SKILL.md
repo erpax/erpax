@@ -2,11 +2,11 @@
 name: recognizing
 description: "Use when reasoning about recognizing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/recognizing"
-coordinate: "vocabulary/recognizing · 2/share · 81ec44ec"
-contentUuid: "f5dc4827-ae43-5da9-91cc-0efba4b4bbe2"
-diamondUuid: "bbe16b60-5f30-80ac-a7f9-899865d9c8fd"
-uuid: "81ec44ec-b88e-8f42-9791-1ff507320a00"
-horo: 2
+coordinate: "vocabulary/recognizing · 7/descent · 7ff2cc53"
+contentUuid: "b9666e2a-820a-5da8-9cfa-f8795ca5348f"
+diamondUuid: "7eca18a9-9ec0-82a3-950e-395fef08e1b7"
+uuid: "7ff2cc53-8b30-8c56-b9ba-2be2663fabf5"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "80fd76db-4db4-80eb-b968-4b4140f8ed6a"
+  computationUuid: "50bd82c9-64d6-81dd-85c1-884123a5b529"
   stages:
     - stage: path
       stageUuid: "5272387e-7bad-8d4f-8001-5cb1e96a8eeb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd9cdb63-b517-8817-895e-aee44d658231"
     - stage: horo
-      stageUuid: "03adf257-d46a-83ec-a432-3dd382532143"
+      stageUuid: "27a92b0f-35a7-862c-883c-1278ebcedbf6"
     - stage: seal
       stageUuid: "b7df76e9-512e-818b-bf52-30b3bb2efe4e"
     - stage: uuid
-      stageUuid: "c5a5cefe-8014-8873-8080-11693a2679af"
+      stageUuid: "ceb33080-6d5b-8ea5-afab-78783863ef87"
 version: 2
 ---
 # recognizing

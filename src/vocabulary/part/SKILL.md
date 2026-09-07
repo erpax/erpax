@@ -2,18 +2,18 @@
 name: part
 description: "Use when reasoning about membership in erpax — a field of a collection, a line of an entry, a component of a BOM, a plugin of erpax. The universal root of membership; dual of whole."
 atomPath: "vocabulary/part"
-coordinate: "vocabulary/part · 5/round · 26450bdd"
-contentUuid: "08e26b25-852c-5c0f-9c87-cc658800f27e"
-diamondUuid: "725407d4-7552-85ba-aca2-0af745fefb8c"
-uuid: "26450bdd-4b18-8b0a-94b4-32f6fecec404"
-horo: 5
+coordinate: "vocabulary/part · 8/crest · 9dfca090"
+contentUuid: "f60c9d02-ebbb-5fe8-9d25-9d99afcf3392"
+diamondUuid: "cf6f9b37-11d5-886f-a77d-ba3a8862db4d"
+uuid: "9dfca090-437b-8a1d-8a59-0a66f60d23b2"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 169
+  bondDegree: 171
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8d4d0a0e-3d19-8b3a-89ff-7f86852dbaf7"
+  computationUuid: "872b1f84-7252-8e3c-976e-0c39b669fda1"
   stages:
     - stage: path
       stageUuid: "f11e3448-0488-8adf-9d49-16cc4ece58b4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "89c6949e-b096-88e1-a647-d182f4144c59"
     - stage: horo
-      stageUuid: "28281871-700c-80a5-9dbd-e79414f2e974"
+      stageUuid: "6307c58a-d8b3-8aa1-a51a-a58e3be27074"
     - stage: seal
       stageUuid: "69a7fd7b-3914-8146-97ed-91cd5014903f"
     - stage: uuid
-      stageUuid: "ec7463ae-950f-85f8-81cc-9e11c80b50d3"
+      stageUuid: "ce991882-82e4-8fd5-8c39-be13fcf1357f"
 version: 2
 ---
 # part — the member (of a whole)

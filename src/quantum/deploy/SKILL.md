@@ -2,18 +2,18 @@
 name: deploy
 description: "Use when shipping erpax to the edge — deployment is the collapse of the codebase into live reality (the model becomes real on main); gate-pass then build a content-addressed artifact, migrate D1, push the Worker, a release is finality one-way with rollback to a prior snapshot."
 atomPath: "quantum/deploy"
-coordinate: "quantum/deploy · 8/crest · d6ae0cb5"
-contentUuid: "4159aa0b-b50f-5c81-a53d-af9bf8a3b0c2"
-diamondUuid: "0f2cd131-286b-8d0d-b12c-c2ef9d015e7d"
-uuid: "d6ae0cb5-073e-87c7-b6a7-d8ebecc5f9ff"
-horo: 8
+coordinate: "quantum/deploy · 1/base · b6ce156e"
+contentUuid: "210451f3-b758-575d-ba87-39f20579764e"
+diamondUuid: "a4917431-9012-867a-8587-f021e6d2cc71"
+uuid: "b6ce156e-ab78-8e91-bdc5-ccf4954dcdc8"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 99
 standards: []
 bindings: []
 signatures:
-  computationUuid: "62feea43-5ad7-867f-ac66-15317f93a4bb"
+  computationUuid: "16931ea1-35ac-80b1-93e5-02f6278bf7d4"
   stages:
     - stage: path
       stageUuid: "f71dbc48-d27e-84cb-a6c1-3cc9514088f7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "991636b0-04eb-8002-98fc-ff5c67b7c419"
     - stage: horo
-      stageUuid: "10c84187-de6b-854f-9301-2b555d06a7b9"
+      stageUuid: "afb15207-6b95-8fdd-949f-4a88c4529bd9"
     - stage: seal
       stageUuid: "dc12700c-1968-87c8-b7e5-0b79a8241c8c"
     - stage: uuid
-      stageUuid: "ed4312f6-8b67-87a7-ac04-3586bec79c25"
+      stageUuid: "ec0a4207-760c-82a6-866f-6de7df586cd9"
 quantum:
   superposition:
     - backup
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "62feea43-5ad7-867f-ac66-15317f93a4bb"
-    contentUuid: "4159aa0b-b50f-5c81-a53d-af9bf8a3b0c2"
+    computationUuid: "16931ea1-35ac-80b1-93e5-02f6278bf7d4"
+    contentUuid: "210451f3-b758-575d-ba87-39f20579764e"
 version: 2
 ---
 # quantum/deploy — the collapse into reality
@@ -83,4 +83,4 @@ A deploy is a [[measurement]]: the superposed branch becomes the one running wor
 
 @see [[deploy]] · [[reality]] · [[gate]] · [[migrate]] · [[bindings]] · [[snapshot]] · [[finality]] · [[payload]] · [[worker]] · [[quantum/serverless]] · [[cloudflare]]
 
-<sub>content-uuid `4159aa0b-b50f-5c81-a53d-af9bf8a3b0c2` · account `quantum/deploy` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `210451f3-b758-575d-ba87-39f20579764e` · account `quantum/deploy` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

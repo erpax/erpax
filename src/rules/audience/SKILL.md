@@ -2,11 +2,11 @@
 name: audience
 description: "Use when asking what each USER is being told that nothing can contradict — projects every unproven @invariant and confessed stub onto the reader it is addressed to (director, auditor, compliance-officer, accountant …), because a claim citing SOX §302 is addressed to whoever signs it. The readers are computed from the config; the role→standard map is declared in the open. Run: tsx src/rules/audience/index.ts"
 atomPath: "rules/audience"
-coordinate: "rules/audience · 4/weave · 88d1e21d"
-contentUuid: "930efdba-e739-5676-a974-888af345bf3f"
-diamondUuid: "e74ec5e8-1505-8b29-a14e-501b8a504d17"
-uuid: "88d1e21d-ca7b-80aa-9b47-6225752a962f"
-horo: 4
+coordinate: "rules/audience · 5/round · 52458135"
+contentUuid: "47220f84-6fc8-5a98-b690-5fa0d05196ed"
+diamondUuid: "94918fa6-4141-81ee-a1a6-c7f8df71c2eb"
+uuid: "52458135-56bf-8916-a1a6-a0c6da1d956f"
+horo: 5
 typography:
   partition: rules
   bondDegree: 45
@@ -19,7 +19,7 @@ standards:
   - "SOX:2002` |"
 bindings: []
 signatures:
-  computationUuid: "6bbe6fbd-a8a5-89d4-be02-21472ab0aa0a"
+  computationUuid: "a177aa69-153c-851e-806d-e36dfc59528d"
   stages:
     - stage: path
       stageUuid: "c15f663a-8843-86b7-a89f-6103b524c012"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "ebdde74c-2663-855e-8471-4b992c48612a"
     - stage: horo
-      stageUuid: "45e3d87f-c6de-8b98-a346-bbb592a8ed40"
+      stageUuid: "7beac8ba-1c22-8aa7-8e13-0829d22bbedb"
     - stage: seal
       stageUuid: "a17dc696-7ed4-8f76-8828-90f4e6554b85"
     - stage: uuid
-      stageUuid: "cfc98bc7-f663-8ebf-a8b4-0d6a6d46411f"
+      stageUuid: "0907a24a-6a26-80a7-827b-ce7951fe111f"
 version: 2
 ---
 # audience — a claim is addressed to someone

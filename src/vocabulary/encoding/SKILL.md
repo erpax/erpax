@@ -2,11 +2,11 @@
 name: encoding
 description: Use when reasoning about encoding — A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.
 atomPath: "vocabulary/encoding"
-coordinate: "vocabulary/encoding · 7/descent · 89ee31c3"
-contentUuid: "9da7109d-f713-5b14-bb08-b3f31a68e74e"
-diamondUuid: "d01b2a61-22b9-8224-8b62-7989c5f6de43"
-uuid: "89ee31c3-628e-891b-8b8e-a5df66927aae"
-horo: 7
+coordinate: "vocabulary/encoding · 8/crest · 7d80c0fc"
+contentUuid: "4be5457a-c946-5ac3-8346-6b34119d7589"
+diamondUuid: "e04036a0-1da5-82a5-a321-9d9923df7f57"
+uuid: "7d80c0fc-05e3-828f-827b-d3f11161f139"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 10
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3be3718f-aa6c-8de3-a667-ac7aa19d8df1"
+  computationUuid: "5119dbec-f5c5-895d-b9d5-18b5b83f14fb"
   stages:
     - stage: path
       stageUuid: "b460fb58-9e40-8684-bd3d-7e935eaa2cae"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ff2ac691-88b1-8865-abf6-5a701a667a6f"
     - stage: horo
-      stageUuid: "c1fdc8d4-369e-8092-975b-32d7e4e3395a"
+      stageUuid: "cf9a52a0-c567-8fd4-8d44-7f2cc1d4f013"
     - stage: seal
       stageUuid: "d9a9a299-b12b-8457-8b9a-c4ecac6c53b6"
     - stage: uuid
-      stageUuid: "b4d051e4-05aa-86c7-9d5d-66434bee8693"
+      stageUuid: "5195855b-ca75-87a8-af1d-21f0f93e339e"
 version: 2
 ---
 # encoding

@@ -2,11 +2,11 @@
 name: lung
 description: "Use when reasoning about erpax's gas-exchange surface — the respiratory organ where it BREATHES. The breath atom names it: 'the chat is the lung-tissue where agents coordinate.' The society inhales gaps and exhales gate-green atoms across a vast, thin, fractal surface; three properties of the living lung (Fick's-law gas exchange · 23-generation fractal surface · the closed tidal cycle) are computed and mapped — a structural isomorphism — onto erpax's breath/wave loop."
 atomPath: lung
-coordinate: "lung · 8/crest · c8437455"
-contentUuid: "691f1002-d701-50bf-8438-5a7e1b648248"
-diamondUuid: "aa8fc365-6644-8c7a-b17c-76cf04ac9abe"
-uuid: "c8437455-b3fb-8c03-9a97-440bdc48c04a"
-horo: 8
+coordinate: "lung · 7/descent · 71896c5b"
+contentUuid: "1987fcb2-ef71-533e-bf0e-e216ac03b3ed"
+diamondUuid: "9d3900d2-1833-877c-b152-32eb950da835"
+uuid: "71896c5b-72c5-8b3a-a8ab-49170efa3fc1"
+horo: 7
 typography:
   partition: lung
   bondDegree: 37
@@ -15,7 +15,7 @@ standards:
   - "West, Respiratory Physiology (Fick's law) · Weibel, the 23-generation lung tree"
 bindings: []
 signatures:
-  computationUuid: "b1604b84-5c34-8da7-ae1e-7ec2faa11491"
+  computationUuid: "ee94e790-82f0-85e4-8ac9-89db7b0a89b0"
   stages:
     - stage: path
       stageUuid: "6bbe47c9-0ddf-84bd-80f9-13783cb2528e"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "924a6b55-51ca-8d78-93af-ef33f11327fa"
     - stage: horo
-      stageUuid: "a914ac15-047f-82cb-bf80-5b113817f9f2"
+      stageUuid: "9c81c3ef-525a-891c-b56f-bb7d048dc0f1"
     - stage: seal
       stageUuid: "acf93ef4-1ec0-86b2-b769-439cd20626ce"
     - stage: uuid
-      stageUuid: "717b6cb2-42ab-87cd-95fc-2a0ae06e0ce6"
+      stageUuid: "fab3b9ea-2424-84d1-a2cb-e420e2120db3"
 version: 2
 ---
 # lung — the gas-exchange surface (the breath organ)

@@ -2,11 +2,11 @@
 name: server
 description: "Use when reasoning about server as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: server
-coordinate: "server · 1/base · 628c7b8c"
-contentUuid: "ff56e0cc-06ea-5eb1-a46a-038b1bf55a14"
-diamondUuid: "6728885b-870c-8b7c-a999-cdd0f568945f"
-uuid: "628c7b8c-4829-8bc1-b90d-28f7bc38fb90"
-horo: 1
+coordinate: "server · 5/round · d548f3d9"
+contentUuid: "2dd01725-f35a-554f-8225-430d26ea49c8"
+diamondUuid: "ab223f43-8eb8-845f-ac74-a5dfbb04b831"
+uuid: "d548f3d9-771c-8062-a8be-44d2bb3337d6"
+horo: 5
 typography:
   partition: server
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c01ac067-de4b-8aca-9d54-dceb4c85832a"
+  computationUuid: "c3957cc4-eb1d-80b2-928d-f1caa3763d98"
   stages:
     - stage: path
       stageUuid: "bb507fd1-daaa-8c1e-94d7-02e4c7326a18"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f42f8c2f-0c22-8d30-8998-edc821a0118c"
     - stage: horo
-      stageUuid: "d174407a-3baa-8fde-8bbf-f64a413763f6"
+      stageUuid: "d71b3b32-2ee6-8e85-889d-73d44591f3e9"
     - stage: seal
       stageUuid: "4335d7f1-b8b1-8890-b3de-a57e6ea60e64"
     - stage: uuid
-      stageUuid: "3f14d97f-b009-8c2f-a216-d97618aab22f"
+      stageUuid: "773e836e-c26a-871f-85a0-af277e9ea80c"
 version: 2
 ---
 # server

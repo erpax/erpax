@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coa",
-    "uuid": "98fe8a56-9191-851f-8e6c-097e267f655c",
+    "uuid": "4a759e9f-c541-81d9-b23b-8cffd0091b4b",
     "words": [
       "coa"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting/coa — chart of accounts — path IS the account code; accountCodeOf folds atom paths to GL codes.",
-    "uuid": "84814045-d3d0-86eb-88cd-8f9ba058ef78",
+    "uuid": "47af9a5b-2842-8ede-906e-496bea28b5e0",
     "words": [
       "use",
       "when",

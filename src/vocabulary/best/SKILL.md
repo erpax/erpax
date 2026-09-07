@@ -2,10 +2,10 @@
 name: best
 description: "Use when reasoning about best as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/best"
-coordinate: "vocabulary/best · 7/descent · 84f45b7b"
-contentUuid: "e8cdf921-fbf5-504e-9d41-22067d6b0aa8"
-diamondUuid: "b515c4ba-7736-8c81-bee7-8fd9905ad6f3"
-uuid: "84f45b7b-8b9a-8ba5-99db-7c6af9d7bd4c"
+coordinate: "vocabulary/best · 7/descent · 15a5a6e6"
+contentUuid: "92520984-ef63-5669-8cf7-4a3569247937"
+diamondUuid: "9b59c02e-770d-89b6-94fe-6663e9ec91bf"
+uuid: "15a5a6e6-37ab-85d3-a954-51c34a154b49"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f2c6f11a-17cf-80af-b1be-7d52ac1a74f0"
+  computationUuid: "3bded2e2-54c7-8af6-95da-79ed6d3808f1"
   stages:
     - stage: path
       stageUuid: "1ef7ac10-1e9f-8f0b-aeb4-9cac5c359310"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6917a26b-c6a4-80ed-8701-c856bf295bc8"
     - stage: horo
-      stageUuid: "a9ceaec1-dec7-8b6b-839b-23894c568795"
+      stageUuid: "795bbd66-244c-893c-920c-51752a876b68"
     - stage: seal
       stageUuid: "35e3dc83-a9fd-8360-b9ae-a8f5696034a6"
     - stage: uuid
-      stageUuid: "5bb6b98a-d803-8a32-9032-4faba6b181be"
+      stageUuid: "0a3952b4-1acc-834c-9864-a94b7385f255"
 version: 2
 ---
 # best

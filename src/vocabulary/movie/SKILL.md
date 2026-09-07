@@ -2,10 +2,10 @@
 name: movie
 description: Use when reasoning about movie — A movie.
 atomPath: "vocabulary/movie"
-coordinate: "vocabulary/movie · 8/crest · c1c7e261"
-contentUuid: "5849be81-abb3-5eb3-a1ef-fb3d5a81f88e"
-diamondUuid: "89476b0e-36d4-88ff-8643-19ce92567071"
-uuid: "c1c7e261-b837-8c01-9e90-0335fe740e56"
+coordinate: "vocabulary/movie · 8/crest · f691212c"
+contentUuid: "77b22050-dc90-565b-8261-c90b66967300"
+diamondUuid: "337e0e4e-e91a-859a-8972-93c7fa34fc02"
+uuid: "f691212c-0a31-835d-ad03-fa659bee5862"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f6420736-73b7-821f-8dca-f9ad0b252bec"
+  computationUuid: "20679a80-e2b7-8ff2-9b67-cee6b378a2db"
   stages:
     - stage: path
       stageUuid: "c8cf6734-c9a2-85f9-a465-d438f658de2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7e667eb1-df77-8e5f-95f9-608777f648b5"
     - stage: horo
-      stageUuid: "bd66f85d-c7d9-8cd4-a0f2-2eed0ab26ecd"
+      stageUuid: "b34c13d3-9b1e-8416-9cd3-23322ece171e"
     - stage: seal
       stageUuid: "7306fad2-0994-8f08-b463-065511aad211"
     - stage: uuid
-      stageUuid: "1f936911-0e40-8c3f-995a-bf97df7659d9"
+      stageUuid: "12b757f3-bc1d-8f25-a3a5-345548bd597b"
 version: 2
 ---
 # movie

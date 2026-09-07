@@ -2,11 +2,11 @@
 name: front
 description: "Use when reasoning about front as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/front"
-coordinate: "vocabulary/front · 2/share · 8730cb0f"
-contentUuid: "b82fdb2b-ded1-530e-ab5a-d6741423b7cc"
-diamondUuid: "588fd374-7365-8fe8-b48c-edb9ee21fa1a"
-uuid: "8730cb0f-78d2-8e75-9e11-f87d30b5ca54"
-horo: 2
+coordinate: "vocabulary/front · 5/round · cec21ee2"
+contentUuid: "eb6b26aa-68a3-581e-a761-d06b7619efaa"
+diamondUuid: "8774417b-34a5-8fc4-90cb-de7a2e0e70f7"
+uuid: "cec21ee2-4598-8c9b-a95a-ce49e48ba957"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fe644fec-f815-8d7a-ac49-f026bc239837"
+  computationUuid: "b31e678a-ce15-841f-ba6d-aee94b3c4acd"
   stages:
     - stage: path
       stageUuid: "0fccdb9d-9a62-8ed5-a44e-eebfd32b935e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "20adaa1c-7d4f-8e68-a16f-6e297388345f"
     - stage: horo
-      stageUuid: "24695413-80c4-8f5b-9623-bc5d650ce122"
+      stageUuid: "a874bebb-bf92-8c38-8084-be1363a13653"
     - stage: seal
       stageUuid: "0e3116c1-da7a-8c1c-b2c4-d6592c8d98de"
     - stage: uuid
-      stageUuid: "c6197b0b-014c-8964-88a9-10a4663fc26f"
+      stageUuid: "aa981ffc-842d-848e-a413-112e65c8e570"
 version: 2
 ---
 # front

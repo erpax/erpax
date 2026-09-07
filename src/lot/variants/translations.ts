@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "variants",
-    "uuid": "c1439024-2e27-87a8-958b-41a3a9378f5e",
+    "uuid": "f5a0a84a-aecf-8273-acad-9ec61422160b",
     "words": [
       "variants"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling a lot's per-variant line — the size/colour option breakdown whose total IS the sum of its options (100% data-verified), monotonic through the ordered→delivered funnel.",
-    "uuid": "29fd641d-5ff2-845f-a19b-24033c1bbe65",
+    "uuid": "0e851b90-4c75-8af0-a4f4-2257337cf2f1",
     "words": [
       "use",
       "when",

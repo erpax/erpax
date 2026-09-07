@@ -2,18 +2,18 @@
 name: gap
 description: "Use when turning the corpus's own structural debt into runnable waves — dead references, stray .ts and unraised kinds grouped by the CLASS they share and ordered biggest-first, so one fix pattern covers a wave. Feeds chat at tokens=0 via wave/feed. Run: tsx src/wave/gap/index.ts"
 atomPath: "wave/gap"
-coordinate: "wave/gap · 5/round · a1eb92ec"
-contentUuid: "6eb60a18-bdbc-53a0-a863-3663c2b76830"
-diamondUuid: "97763f16-d745-87e1-9bda-d70f41f0cc24"
-uuid: "a1eb92ec-c87b-8aae-b3cf-8e319b4f3586"
-horo: 5
+coordinate: "wave/gap · 4/weave · 3656c33d"
+contentUuid: "64ef6e9f-3aa3-5c04-bd86-0e1fe5003e0a"
+diamondUuid: "9a494a54-d40f-880a-9b7b-42b04cfc27f2"
+uuid: "3656c33d-f8f7-8e57-82a8-d0b596ffb521"
+horo: 4
 typography:
   partition: wave
-  bondDegree: 20
+  bondDegree: 36
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0e456076-df8e-82f9-a69a-1388fd9bb8db"
+  computationUuid: "90fe1e9d-136a-8bdb-aca7-ee6885b6c13c"
   stages:
     - stage: path
       stageUuid: "0ef694e8-e01b-8969-9155-146d71f24478"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9a3fb4b1-4d55-8e85-907a-9d1559b12b41"
     - stage: horo
-      stageUuid: "c114426d-a586-85ba-8a59-e7a5e6dbe606"
+      stageUuid: "f6afe90a-8c00-8970-b567-2af9284a2eee"
     - stage: seal
       stageUuid: "f916be34-7a15-82de-b6c5-84372c1950c7"
     - stage: uuid
-      stageUuid: "32e52e02-2974-8e8f-ac41-74dc7f77a93a"
+      stageUuid: "27700e5c-217b-8f65-842b-5f2810f9ec61"
 version: 2
 ---
 # gap — the corpus's own debt, grouped into waves

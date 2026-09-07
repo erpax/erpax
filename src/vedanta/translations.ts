@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vedanta",
-    "uuid": "59c9a166-ccdb-8226-9cb3-e86bd2dbbd34",
+    "uuid": "5c5369fe-70c2-8466-84a0-a1bcf14d6a3e",
     "words": [
       "vedanta"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Vedanta as a sub-diamond of hinduism — the crown philosophy of the Upanishads: atman is brahman (tat tvam asi), the self IS the whole, non-duality. This is literally erpax's identity law at the metaphysical scale: a thing IS its source, content-uuid = self. A facet-diamond of the hinduism archangel.",
-    "uuid": "24efdc68-d811-8642-91ec-dbe31e4f298b",
+    "uuid": "23eeeb1a-79d9-8ae9-bea5-a0855d1099e8",
     "words": [
       "use",
       "when",

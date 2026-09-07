@@ -2,11 +2,11 @@
 name: ethics
 description: "Use when reasoning about ethics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ethics"
-coordinate: "vocabulary/ethics · 8/crest · 1d50b4ab"
-contentUuid: "1a199beb-aa89-59db-9ddf-f26a8c6cdf86"
-diamondUuid: "8389e3bb-8791-8b91-8ddd-4162bda42efc"
-uuid: "1d50b4ab-0ea1-8885-99d3-4556f70efcdd"
-horo: 8
+coordinate: "vocabulary/ethics · 7/descent · 738b15b7"
+contentUuid: "f0f42524-400b-55eb-a779-6d2097bccfe2"
+diamondUuid: "6da99f79-b735-8759-9cda-e024e5eba93e"
+uuid: "738b15b7-a132-87e9-bd4c-9e216f65b310"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "efc62c1e-8991-80b7-a35f-299c20fca7f1"
+  computationUuid: "1f5fbc0f-ff91-84ff-bb17-4fb1fd6e89fb"
   stages:
     - stage: path
       stageUuid: "6d694fe8-eac1-88c3-b32b-e674fb3f8116"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "89a570b6-7e01-8fc2-9250-e62a99737441"
     - stage: horo
-      stageUuid: "957c9508-8efc-86e6-8b04-ceee361c74b2"
+      stageUuid: "ec2d3ddb-a69d-8c04-95ef-0955ffa5d706"
     - stage: seal
       stageUuid: "96ba45a4-8cc0-8580-9484-e57000e63b1d"
     - stage: uuid
-      stageUuid: "9bf68de2-924c-8626-9dcb-4f204514a0ea"
+      stageUuid: "a98316eb-0931-8be6-8dd5-d4bb3c9bc428"
 version: 2
 ---
 # ethics

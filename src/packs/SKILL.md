@@ -2,11 +2,11 @@
 name: packs
 description: "Use when modeling a shipping carton — the dispatch unit packed from a production lot, with mass balance (gross = net + tare), rollup counts, and a derived horo lifecycle. Evolved from 118,716 rows of etrima packs."
 atomPath: packs
-coordinate: "packs · 5/round · 32c91821"
-contentUuid: "e7c60076-dcdc-5571-9b5f-17b0415aaa0b"
-diamondUuid: "f790ee16-eca1-8c0c-b582-5708f326e891"
-uuid: "32c91821-03b6-8b8d-b6de-10331f6b3c7b"
-horo: 5
+coordinate: "packs · 7/descent · 78335286"
+contentUuid: "23bf1647-9543-5b78-85ac-8eb9baafd4c6"
+diamondUuid: "ad681a59-1d7c-8b6a-8a37-d504b5ff1279"
+uuid: "78335286-abff-8572-9897-a2f6e8ba6bcc"
+horo: 7
 typography:
   partition: packs
   bondDegree: 43
@@ -19,7 +19,7 @@ standards:
   - "UN/CEFACT Rec20 weight (kilogram) · volume (cubic-metre)"
 bindings: []
 signatures:
-  computationUuid: "8b535b29-0c04-8c81-bd31-67117a3bb117"
+  computationUuid: "bbc77878-0d38-85b3-bfd0-a6a2688162c3"
   stages:
     - stage: path
       stageUuid: "e5c22266-1d75-8e8a-ae9f-8e06e46a4dab"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "896a9210-1def-89cf-bb7b-7c74522adde1"
     - stage: horo
-      stageUuid: "2abf3dae-cb08-87fb-8fb4-25897ceff241"
+      stageUuid: "10a12bf6-e954-8993-a6f8-cfe83e112319"
     - stage: seal
       stageUuid: "1a697082-17a7-82cc-a5d1-173cd83ee2f6"
     - stage: uuid
-      stageUuid: "062a48c3-3a1c-84bd-8051-8f3795984797"
+      stageUuid: "b4244415-6249-80aa-923f-28d5d5e66cc0"
 version: 2
 ---
 # packs — the dispatch carton

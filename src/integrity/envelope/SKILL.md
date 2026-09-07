@@ -2,11 +2,11 @@
 name: envelope
 description: "Use when reasoning about envelope — Envelope encryption keyed by content-uuid — the at-rest companion to `SignedUuid<T>`."
 atomPath: "integrity/envelope"
-coordinate: "integrity/envelope · 2/share · 58ee0383"
-contentUuid: "79146b16-c739-5aec-b7b2-1df71f2c78ed"
-diamondUuid: "926bc1d3-c62f-8cf3-b498-414a4910792f"
-uuid: "58ee0383-66e8-849d-8102-6121ae6debd7"
-horo: 2
+coordinate: "integrity/envelope · 5/round · 02791d00"
+contentUuid: "867bedd3-b679-5bb9-84bf-d5c923d0681b"
+diamondUuid: "ba864cf9-5160-8b11-a668-1ded083581ea"
+uuid: "02791d00-2e8c-8832-afeb-25bc887414ce"
+horo: 5
 typography:
   partition: integrity
   bondDegree: 6
@@ -25,7 +25,7 @@ standards:
   - RFC 5869 HKDF
 bindings: []
 signatures:
-  computationUuid: "f2580ab1-b9e0-8b0f-b02e-f343990bf3ef"
+  computationUuid: "a33b0c86-7941-8f5a-b5e5-0454b7e2b8b8"
   stages:
     - stage: path
       stageUuid: "4a63ddd1-032a-8967-ba90-8c37316625a6"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "8996c9f7-4639-8dad-b11a-1afbdb080596"
     - stage: horo
-      stageUuid: "ec5004a2-3da3-8222-856a-78e8c1a1c5e0"
+      stageUuid: "297769c0-bbca-8406-82f0-a375e86d27da"
     - stage: seal
       stageUuid: "415ba01a-7608-84cc-8ec6-821bca8b7c51"
     - stage: uuid
-      stageUuid: "30053f48-c13f-88cb-9ecd-4b92cf5e51c7"
+      stageUuid: "88176173-cec8-88c3-b771-9fa9d4cdf545"
 version: 2
 ---
 # integrity/envelope

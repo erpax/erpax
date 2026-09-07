@@ -2,18 +2,18 @@
 name: society
 description: "Use when reasoning about erpax as a social-engineering platform in the civic sense — society run on the quantum substrate (content-uuid, double-entry, tamper-evident) so coordination is legible and accountable, not covert; the quantum twin of society."
 atomPath: "quantum/society"
-coordinate: "quantum/society · 4/weave · fdff6297"
-contentUuid: "846133c9-976a-5c0f-92de-292b508cb372"
-diamondUuid: "a96a2d4a-5e0e-80a5-b2a8-bb26c8e50ddd"
-uuid: "fdff6297-0c31-8ad1-91b1-b4142dc923e0"
-horo: 4
+coordinate: "quantum/society · 2/share · 16ba1b24"
+contentUuid: "2c9ff056-8e5a-5b83-8a44-8a4c176228f8"
+diamondUuid: "e2c893ad-9684-89ec-b550-711e64d09c7b"
+uuid: "16ba1b24-87e1-8fe9-a11f-50454e1aa867"
+horo: 2
 typography:
   partition: quantum
-  bondDegree: 414
+  bondDegree: 448
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d4b52a82-61c1-8d8e-8f6c-bb7efa8a3948"
+  computationUuid: "2d82538f-0e99-8418-a097-59977f0288e0"
   stages:
     - stage: path
       stageUuid: "ed316fbe-1033-8754-b9a1-a5ea11b8a400"
@@ -24,21 +24,21 @@ signatures:
     - stage: links
       stageUuid: "34c0904e-4eef-89c3-8fa8-f3396936ffca"
     - stage: horo
-      stageUuid: "d2850e40-b056-80a1-a25b-f8719e702f9f"
+      stageUuid: "747d3777-e597-87c3-8b0e-938a2f873309"
     - stage: seal
       stageUuid: "62a8d7e5-377e-8b99-9ab3-145ad3e860ca"
     - stage: uuid
-      stageUuid: "19bf705d-17fb-868a-bfd2-cbfe5bc2aad3"
+      stageUuid: "0ce5a874-2ebb-8637-86a9-72006187a6ec"
 quantum:
   superposition:
     - access
     - accounting
     - age
+    - agent
     - akashic
     - angel
     - animism
     - archangel
-    - architect
     - superposition
   collapse:
     - "Use when reasoning about erpax as a social-engineering platform in the civic sense — society run on the quantum substrate (content-uuid, double-entry, tamper-evident) so coordination is legible and accountable, not covert; the quantum twin of society."
@@ -57,8 +57,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d4b52a82-61c1-8d8e-8f6c-bb7efa8a3948"
-    contentUuid: "846133c9-976a-5c0f-92de-292b508cb372"
+    computationUuid: "2d82538f-0e99-8418-a097-59977f0288e0"
+    contentUuid: "2c9ff056-8e5a-5b83-8a44-8a4c176228f8"
 version: 2
 ---
 # quantum/society — quantum civics
@@ -69,4 +69,4 @@ The quantum twin of [[society]]: every social fact — [[identity]], vote, value
 
 **Law — [[law]]: every social fact — identity, vote, value, consensus, role — is content-uuid'd, double-entry-balanced, and tamper-evident, so social order can only be lowered reversibly and by consent: legible, proof-carried, accountable. The same governance and market levers that could manipulate are pointed at detecting manipulation (forged consensus, sybil identity, manufactured value); coordination here is a trust ledger, never a phishing kit — never fear.**
 
-<sub>content-uuid `846133c9-976a-5c0f-92de-292b508cb372` · account `quantum/society` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `2c9ff056-8e5a-5b83-8a44-8a4c176228f8` · account `quantum/society` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

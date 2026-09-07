@@ -2,10 +2,10 @@
 name: lines
 description: "Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection."
 atomPath: "invoices/invoice/lines"
-coordinate: "invoices/invoice/lines · 4/weave · 7f9e2bd0"
-contentUuid: "c9f0c2fa-7207-5612-9f32-6c364f2e573d"
-diamondUuid: "a1c4685a-9bdf-83d9-a303-7a9373b321fb"
-uuid: "7f9e2bd0-b57d-8424-ad5b-a20c77a4cc65"
+coordinate: "invoices/invoice/lines · 4/weave · db525245"
+contentUuid: "a4a5265a-40b4-53c2-a60a-097d5196c9b0"
+diamondUuid: "1f336b80-5402-8c16-b428-cf213a7067be"
+uuid: "db525245-2e9d-8e70-ac7d-cb704c0f9331"
 horo: 4
 typography:
   partition: invoices
@@ -44,7 +44,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d3f8aa0b-8660-854c-a28a-97badc9ce192"
+  computationUuid: "9eb50f3e-dc42-8651-9811-fedc5443477e"
   stages:
     - stage: path
       stageUuid: "71bec5e8-d878-8778-a6c2-4fe8313a729b"
@@ -55,11 +55,11 @@ signatures:
     - stage: links
       stageUuid: "778097c8-933d-84d7-9b7c-ee4dbe9c52de"
     - stage: horo
-      stageUuid: "aeb66996-fb34-85e7-b836-bf84ee17bf59"
+      stageUuid: "bdab423e-696e-8275-974f-07bf30bc7bec"
     - stage: seal
       stageUuid: "53302f78-1023-89b7-94ab-a0334a54f5ed"
     - stage: uuid
-      stageUuid: "ea99e9d7-9e9e-87ec-ba79-7a083117c296"
+      stageUuid: "c9afb377-098e-8c71-8fdc-03d009f7bdcc"
 version: 2
 ---
 # invoice-lines

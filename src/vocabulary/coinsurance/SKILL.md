@@ -2,11 +2,11 @@
 name: coinsurance
 description: "Use when reasoning about coinsurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/coinsurance"
-coordinate: "vocabulary/coinsurance · 4/weave · 13cb54e6"
-contentUuid: "7cc7adb5-744a-567b-ad30-eff7f684d6ef"
-diamondUuid: "25d22465-efb6-8dfe-be99-51f012bbbf3b"
-uuid: "13cb54e6-a16c-886f-90c7-e82617299ea7"
-horo: 4
+coordinate: "vocabulary/coinsurance · 2/share · 65cc4f9d"
+contentUuid: "83456a33-369a-5830-975f-d29b26a728cb"
+diamondUuid: "c07f1515-090c-893f-9a0d-217ea7cad476"
+uuid: "65cc4f9d-f8ca-8911-a32f-257a1f312667"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d1bcf9d7-5c06-8dfd-ba5e-2123a92d9435"
+  computationUuid: "259c588b-bbbc-8145-8f25-a1de6d687364"
   stages:
     - stage: path
       stageUuid: "0a9a068b-85df-808d-b9bb-0ecf42c258bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8fb7c6c5-d490-8b79-b19d-4b33fcfb9ad9"
     - stage: horo
-      stageUuid: "8d4ba47b-ce86-8051-baea-45d8e08e9f3a"
+      stageUuid: "aa2d2ee8-59e3-8a3c-b6bf-fe0db5af5474"
     - stage: seal
       stageUuid: "7b9d1a1b-749e-86d2-a712-c1b4957973ce"
     - stage: uuid
-      stageUuid: "cbdc00b7-d4b7-8542-88c7-fac8ae6ed716"
+      stageUuid: "2933fa10-32ee-8239-bb6f-c7323c666e9b"
 version: 2
 ---
 # coinsurance

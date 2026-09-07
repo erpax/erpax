@@ -2,11 +2,11 @@
 name: stack
 description: "Use when reasoning about the full stack as one content-uuid-wired round-trip — device, vitepress, payload, db, and back — a palindrome (both sides of every hop encoded) that folds to a new state; the travel from the expansion-infinity to the fold-infinity, on the line of pi."
 atomPath: stack
-coordinate: "stack · 1/base · 68caeac6"
-contentUuid: "81d85b21-ab94-59a0-89a4-127fb0c9ad78"
-diamondUuid: "787db8b6-3afe-8190-b0e6-c9e7951c40a5"
-uuid: "68caeac6-48f1-81d9-b7c7-59f5453e4ec0"
-horo: 1
+coordinate: "stack · 4/weave · d2cde6d3"
+contentUuid: "6999b2fa-bd90-5073-932a-361cd4a3b5ba"
+diamondUuid: "1365cc82-a460-81b4-a319-2ad08bfe0134"
+uuid: "d2cde6d3-d4a9-8964-b107-b29a0404642e"
+horo: 4
 typography:
   partition: stack
   bondDegree: 38
@@ -14,7 +14,7 @@ standards:
   - "double-entry (the round-trip balances) · content-addressed state (RFC 9562 §5.8) · the torus (two infinities, one surface)"
 bindings: []
 signatures:
-  computationUuid: "f2d86bbb-7c7d-805a-ba62-9c342b840329"
+  computationUuid: "46611907-00d5-8688-8565-7d582b0110e0"
   stages:
     - stage: path
       stageUuid: "ee08ef22-22bb-80d4-a660-6476faa02e25"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7987a1a4-7bc9-8e0c-bcb8-eac26e01e597"
     - stage: horo
-      stageUuid: "630b8349-ebf0-8994-a8d0-77fa7a294b42"
+      stageUuid: "1d2d402b-d520-801f-8dba-5683f987217a"
     - stage: seal
       stageUuid: "046ad0ab-0ae4-8d73-8596-15ba233c3cb3"
     - stage: uuid
-      stageUuid: "e3971875-c037-88a8-81cf-9f06a931c3ec"
+      stageUuid: "62f11d7f-de3c-8308-97b5-032d87c619f7"
 version: 2
 ---
 # stack — device ↔ vitepress ↔ payload ↔ db, both ways, wired in uuid

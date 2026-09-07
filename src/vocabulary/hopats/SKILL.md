@@ -2,11 +2,11 @@
 name: hopats
 description: "Use when reasoning about hopats as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hopats"
-coordinate: "vocabulary/hopats · 4/weave · bd886f1c"
-contentUuid: "e36b74a0-882b-5c84-8aba-9625269c8a64"
-diamondUuid: "1bfe6fb7-7db9-8a4b-90e5-3cd80556364f"
-uuid: "bd886f1c-2e39-831f-b28b-c60343d1df0e"
-horo: 4
+coordinate: "vocabulary/hopats · 7/descent · d1191a31"
+contentUuid: "9eab6a59-7184-5448-91e6-05bb6dd950b5"
+diamondUuid: "1a825d04-589c-88e6-a841-2c17c77081a7"
+uuid: "d1191a31-e8a9-8ffb-a077-76859e82f36b"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "540591bb-e855-803b-89e0-9da1ca85bc71"
+  computationUuid: "f6123223-cc7c-88c5-9230-0da21b560477"
   stages:
     - stage: path
       stageUuid: "c42889e6-d019-87cb-bc2f-26a8ad350d66"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "00338467-d83a-8f06-b318-4b96e93ad490"
     - stage: horo
-      stageUuid: "2921e673-71e5-8574-a4f8-96542da70bec"
+      stageUuid: "f91e6dbb-c9e2-8e03-83ef-f6e7b28705b7"
     - stage: seal
       stageUuid: "ecfdb635-d0ca-80a4-9f2e-3286202621a9"
     - stage: uuid
-      stageUuid: "8cea757d-c18e-8a4f-8170-e752cb7f5ee2"
+      stageUuid: "cc52ad68-4a20-8c50-808d-74c7d606ab2d"
 version: 2
 ---
 # hopats

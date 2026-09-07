@@ -2,14 +2,14 @@
 name: plugins
 description: "Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin."
 atomPath: plugins
-coordinate: "plugins · 8/crest · 7726774c"
-contentUuid: "41ca2628-8946-5e0b-929a-dd66fec3c42d"
-diamondUuid: "d945846e-0a86-852a-a50c-4c19e1aa3632"
-uuid: "7726774c-53bb-8f38-a5b5-a344bbcdc2dd"
+coordinate: "plugins · 8/crest · e9bd772f"
+contentUuid: "dca63cc6-7cc2-5f4d-85b3-97346c9e3ebe"
+diamondUuid: "1cb7aa0f-13b2-8d2c-a280-0f4bbe58e0bf"
+uuid: "e9bd772f-aa3c-8396-8d59-53c79dc78e60"
 horo: 8
 typography:
   partition: plugins
-  bondDegree: 96
+  bondDegree: 98
 standards:
   - "ISO-27002"
   - "ISO/IEC-27002:2022"
@@ -17,7 +17,7 @@ standards:
   - "RFC-4122"
 bindings: []
 signatures:
-  computationUuid: "83a44662-7d43-8273-898e-33b3c7c5d224"
+  computationUuid: "ee336bc7-3419-8871-972e-c3914768a4cf"
   stages:
     - stage: path
       stageUuid: "36f5dd4b-cef3-821c-8b1d-d3102c7119df"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "5b1fb269-5afa-8e3b-b4ed-1d15fcde949b"
     - stage: horo
-      stageUuid: "ba40c23c-d609-8333-8012-6ff00233fa89"
+      stageUuid: "d6a75d66-8768-8746-9502-b1f446dc5f16"
     - stage: seal
       stageUuid: "4e1ca507-8ff5-8446-b361-2b3557eed9eb"
     - stage: uuid
-      stageUuid: "1a6e790c-f5ad-8b5c-a960-f23993a51e36"
+      stageUuid: "d32628c8-dbeb-8f8d-b868-e8d3dcc5b925"
 version: 2
 ---
 # plugins — Payload plugins (config in → config out)

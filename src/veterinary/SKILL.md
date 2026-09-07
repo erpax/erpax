@@ -2,11 +2,11 @@
 name: veterinary
 description: "Use when reasoning about veterinary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: veterinary
-coordinate: "veterinary · 5/round · 9dd2020b"
-contentUuid: "e19ed770-4a51-5ffb-a2d3-1df36b291fea"
-diamondUuid: "9b4d5217-2dfb-834c-8bef-fe663506ee37"
-uuid: "9dd2020b-feb2-841a-85ff-3be0f2544ede"
-horo: 5
+coordinate: "veterinary · 1/base · d126d141"
+contentUuid: "fd861cbb-937d-510d-88e0-389a348bba7b"
+diamondUuid: "d355fa60-c1ae-845a-b33b-03257cbf7d09"
+uuid: "d126d141-ad87-858e-a6e3-9874ce4678a7"
+horo: 1
 typography:
   partition: veterinary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f9d2f968-b0b2-8147-96d6-26f04347271b"
+  computationUuid: "b91ce441-efea-840e-9f4e-a871c65070f7"
   stages:
     - stage: path
       stageUuid: "55e71d51-fd5e-88a3-8880-ba7fbe98f258"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "48c2a08f-93f8-8a2c-ac0b-e67fcf3a39a7"
     - stage: horo
-      stageUuid: "6ac56d9b-a40c-8768-8e6a-002440a94957"
+      stageUuid: "e76af508-1397-864d-ae82-3cde308ba46b"
     - stage: seal
       stageUuid: "54da2586-7761-877d-ad72-6b984bd85b1b"
     - stage: uuid
-      stageUuid: "f739e3bb-d776-8106-8ae1-9c52c186a473"
+      stageUuid: "45f69b85-0b59-893d-8561-316bf412b0de"
 version: 2
 ---
 # veterinary

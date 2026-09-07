@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "apartment",
-    "uuid": "e2c6f7cc-d14c-8aa5-8ae1-a1ce36d1089b",
+    "uuid": "211acc93-be6d-8b8a-9d3d-5322ef55e8e0",
     "words": [
       "apartment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about apartment — An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source:",
-    "uuid": "6b8438a8-250c-8a86-9aa1-1a9464e74b2a",
+    "uuid": "593cc206-4888-855b-9fc0-aada9f011f32",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quote",
-    "uuid": "5a2a5763-af9c-851a-9fa0-6ab873fc601d",
+    "uuid": "e79a3999-1adb-8dc9-b59e-5eda9fa61689",
     "words": [
       "quote"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quote as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "c60a2e7c-56c8-8cce-8413-78490f1d7750",
+    "uuid": "179bbf07-31b1-85e0-a3fc-1c2d3bea3438",
     "words": [
       "use",
       "when",

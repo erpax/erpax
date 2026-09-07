@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clip",
-    "uuid": "56edc5d3-3f70-895a-b1f9-3a11085c922c",
+    "uuid": "1bfd7423-92cf-85ac-9ba7-d0ff31b8a686",
     "words": [
       "clip"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about clip — A short TV or radio program or a segment/part of a program.",
-    "uuid": "392ac56b-afef-83bc-a56a-e01117086229",
+    "uuid": "4dbf1eb0-f15b-8e64-93f9-2ca01345c769",
     "words": [
       "use",
       "when",

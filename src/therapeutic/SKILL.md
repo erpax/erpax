@@ -2,11 +2,11 @@
 name: therapeutic
 description: "Use when reasoning about therapeutic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: therapeutic
-coordinate: "therapeutic · 4/weave · 40c94f36"
-contentUuid: "c628ffd2-f9cd-5f51-acfe-34e42719a79c"
-diamondUuid: "407c8c08-eed3-84ee-82dd-4ae8695b7712"
-uuid: "40c94f36-6b2f-8d91-880c-8f45c9b5cb97"
-horo: 4
+coordinate: "therapeutic · 1/base · e226cd58"
+contentUuid: "d2050e11-e54a-5982-9566-4934feb29b69"
+diamondUuid: "50296f4b-c251-8d71-8d61-26da9bb2ff24"
+uuid: "e226cd58-afb8-8310-ae1a-102661f163d6"
+horo: 1
 typography:
   partition: therapeutic
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a2ecf75b-e13a-8695-aabe-af5200e9df44"
+  computationUuid: "ae8c143f-0eef-8dc0-bdfb-c127c2262ef3"
   stages:
     - stage: path
       stageUuid: "ac818c5e-1cd7-8dcd-890e-24aa85bcb4ca"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "deb8cbdf-2655-87bd-a253-08c52c80f145"
     - stage: horo
-      stageUuid: "d0acd58a-331e-8f47-987e-9c9be71e1b9c"
+      stageUuid: "f118627d-576e-864c-886e-3aecd4e76918"
     - stage: seal
       stageUuid: "cfea09c6-7f98-8e6b-8960-3f9ecc2e048c"
     - stage: uuid
-      stageUuid: "b76e0e27-afcc-8c97-b9cd-e4daa8446464"
+      stageUuid: "839c8595-f401-8773-85d2-f6d8af2d91a0"
 version: 2
 ---
 # therapeutic

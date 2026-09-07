@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "crisis",
-    "uuid": "ad321543-b83d-814d-bd26-bd521ca16d65",
+    "uuid": "446bca29-5292-895e-828b-34a0489c953b",
     "words": [
       "crisis"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath.",
-    "uuid": "313d9114-6feb-89fb-b45e-213e9516fdab",
+    "uuid": "0b6de3e2-8a39-8fb0-b4b5-abbdd4659521",
     "words": [
       "use",
       "when",

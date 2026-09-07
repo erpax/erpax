@@ -2,21 +2,21 @@
 name: search
 description: "Use when reasoning about search — Identification answers a typed identifier. Anything else routes here: runs a tenant-scoped query across the collections in scope, ORing over the text fields reports for each, and…"
 atomPath: "multi/search"
-coordinate: "multi/search · 1/base · 7aa1f2df"
-contentUuid: "9d444a6e-33ec-55b2-9a44-acf151040e91"
-diamondUuid: "abfd96c4-8f05-81af-9cfd-ebf8ff2c2c6d"
-uuid: "7aa1f2df-1075-857f-807d-88d81bbe6215"
-horo: 1
+coordinate: "multi/search · 8/crest · db004fed"
+contentUuid: "54c3dba1-135e-5785-aa67-e1d94f7e307d"
+diamondUuid: "ff0acf04-8221-8e08-9a71-f10c3cd723eb"
+uuid: "db004fed-8f9f-8908-97bc-2e0c0fb5bf9d"
+horo: 8
 typography:
   partition: multi
-  bondDegree: 48
+  bondDegree: 50
 standards:
   - "ISO/IEC 25010:2023 §5.3 operability (one input → many sources)"
   - MCP
   - "Schema.org Action — search-action (Slice YYYYYY presents these MCP-callable)"
 bindings: []
 signatures:
-  computationUuid: "4488c616-d8df-8ee2-b3bf-4e4f12b00dd9"
+  computationUuid: "5f8e20c4-f003-8d7c-b413-c5c627a35b66"
   stages:
     - stage: path
       stageUuid: "f4b4987e-c9ce-873b-b411-0ef6957928aa"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "38dd8f71-4554-88c7-9402-8d43963f70c5"
     - stage: horo
-      stageUuid: "328d5e9a-966e-8fa0-9d6b-845c07ae1c3b"
+      stageUuid: "b5372c00-66a7-8b7a-9580-650909d990f3"
     - stage: seal
       stageUuid: "d5973c2f-94e0-8e1e-9ad6-97b06bd8e69c"
     - stage: uuid
-      stageUuid: "1e217460-b52f-816e-b2cb-49a172b8dc7b"
+      stageUuid: "ae5db530-fef3-8f66-9b4c-4ecef573ff52"
 version: 2
 ---
 # multi/search — when the query is not an identifier, it is a search across everything

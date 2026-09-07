@@ -2,11 +2,11 @@
 name: thumbnail
 description: Use when reasoning about thumbnail — Thumbnail image for an image or video.
 atomPath: thumbnail
-coordinate: "thumbnail · 5/round · 440f044c"
-contentUuid: "2fe51aa7-59a0-53cc-b3f5-2d9aabb6a3c1"
-diamondUuid: "0f53f7a6-1a22-8d75-ab90-cbf000b368cc"
-uuid: "440f044c-9107-892e-9d8f-75114ffac0b2"
-horo: 5
+coordinate: "thumbnail · 2/share · 51da942b"
+contentUuid: "8641960f-a88d-59b2-82d1-4bdb61601c16"
+diamondUuid: "e9d42ff2-337e-82ba-97bf-07d6de56a49d"
+uuid: "51da942b-70f5-8a4b-bc4f-cae045a7457f"
+horo: 2
 typography:
   partition: thumbnail
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0ea88b28-1cc7-8f55-9cf3-6fb054642a21"
+  computationUuid: "5ac27452-ec81-888b-b481-5e86961b64a7"
   stages:
     - stage: path
       stageUuid: "7d747433-241f-871c-863b-a3fc014bb699"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2fc6ff67-365e-8811-ac45-b9f53b468caa"
     - stage: horo
-      stageUuid: "31bb17f1-7c85-8a7e-9318-575716526137"
+      stageUuid: "acd817ce-f963-8e2e-b19c-a9d9c51ebc77"
     - stage: seal
       stageUuid: "df080367-8953-8e48-b63e-5990bebba05b"
     - stage: uuid
-      stageUuid: "e912b9ee-912f-8699-80b4-074032ff7452"
+      stageUuid: "e81a414d-7e7f-896b-baa0-cf38bf7cbb88"
 version: 2
 ---
 # thumbnail
