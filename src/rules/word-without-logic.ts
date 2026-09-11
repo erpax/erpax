@@ -26,6 +26,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 const here = (p: string): boolean => existsSync(p)
 const read = (p: string): string => readFileSync(p, 'utf8')
 import { join } from 'node:path'
+import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { listAtomPaths } from './tightened-scans'
 
 const SRC = 'src'
@@ -379,14 +380,27 @@ const violationReason = (kind: WordWithoutLogicKind, uc: UseCaseVerdict): string
   }
 }
 
-/** Scan all atoms — literary offenders ranked by prose mass then importer deficit. */
+/**
+ * Scan all atoms — literary offenders ranked by prose mass then importer deficit.
+ *
+ * The header's A/B holds: a FILE cache loses, because each file is read once per scan. But the scan
+ * itself ran more than once — `caseOf` twice per atom inside one call, and the whole audit at least
+ * twice per registry run (live-counts, rules/compute). A CPU profile put 53.8s of the registry's
+ * 87.8s of filesystem time here. So memoise the AUDIT on the tree fingerprint, and compute each
+ * atom's case once.
+ */
 export function wordWithoutLogicViolations(cwd: string = process.cwd()): WordWithoutLogicAudit {
+  return memoByFingerprintOnDisk('rules-word-without-logic', cwd, () => computeWordWithoutLogic(cwd))
+}
+
+function computeWordWithoutLogic(cwd: string): WordWithoutLogicAudit {
   const importIndex = buildImportIndex(cwd)
   const atoms = listAtomPaths(cwd).filter((p) => p !== '.')
+  const cases = new Map(atoms.map((p) => [p, caseOf(p, cwd, importIndex)] as const))
   const violations: WordWithoutLogicViolation[] = []
 
   for (const atomPath of atoms) {
-    const uc = caseOf(atomPath, cwd, importIndex)
+    const uc = cases.get(atomPath)!
     const kind = classifyKind(uc, atomDir(atomPath, cwd))
     if (!kind) continue
     violations.push({
@@ -411,7 +425,7 @@ export function wordWithoutLogicViolations(cwd: string = process.cwd()): WordWit
   )
 
   const withUseCase = atoms.filter((p) => {
-    const uc = caseOf(p, cwd, importIndex)
+    const uc = cases.get(p)!
     return !uc.isLiterary && (uc.useCase !== null || uc.hasLogic)
   }).length
 

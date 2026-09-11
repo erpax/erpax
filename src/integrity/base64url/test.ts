@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { b64urlDecode, b64urlEncode } from '@/integrity/base64url'
+import { assertRfc4648Vectors, b64urlDecode, b64urlEncode } from '@/integrity/base64url'
 
 const bytes = (...n: number[]): Uint8Array => new Uint8Array(n)
 
@@ -16,6 +16,13 @@ describe('integrity/base64url — RFC 4648 §5', () => {
     const s = b64urlEncode(bytes(0xfb, 0xff, 0xbf, 0xfe))
     expect(s).not.toMatch(/[+/=]/)
     expect([...b64urlDecode(s)]).toEqual([0xfb, 0xff, 0xbf, 0xfe])
+  })
+
+  // The standard's own answers, not a round-trip: a swapped alphabet round-trips perfectly and is wrong.
+  it('matches RFC 4648 §10 vectors (unpadded) and the URL-safe pair, in both directions', () => {
+    expect(() => assertRfc4648Vectors()).not.toThrow()
+    expect(b64urlEncode(new TextEncoder().encode('foobar'))).toBe('Zm9vYmFy')
+    expect(b64urlEncode(bytes(0xfb, 0xff))).toBe('-_8')
   })
 
   it('decodes a padded input too, so a caller need not strip first', () => {

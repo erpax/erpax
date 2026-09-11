@@ -73,3 +73,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const covered = GATE_LANES.length - gaps.filter((g) => g.missingFrom.length === GATE_SURFACES.length).length
   console.log(`\n  every surface runs ${GATE_LANES.length - gaps.length} of ${GATE_LANES.length}; at least one runs ${covered}`)
 }
+
+/** @index-cross.foldback child=gate/parity parent=gate — this cross folds back into its parent. */
