@@ -1,6 +1,4 @@
 import { describe, it, expect } from 'vitest'
-import { existsSync } from 'node:fs'
-import { join } from 'node:path'
 import {
   harmonyOfBookIndex,
   isHarmonicIndex,
@@ -27,9 +25,6 @@ describe('book — book-of-books index harmony', () => {
   // timeout on a CI runner while passing locally.
   const harmony = harmonyOfBookIndex()
   const index = computeBookIndex()
-  /** Generated faces (README.md) are gitignored and absent in CI — a fold candidate is DERIVED
-   *  from them (readmeAgentTouched), so the count is 0 there BY CONSTRUCTION, not by defect. */
-  const facesPresent = existsSync(join(process.cwd(), 'src', 'law', 'README.md'))
   it('indexVolumes lists top-level volumes excluding vocabulary hub', { timeout: 120_000 }, () => {
     const volumes = indexVolumes()
     expect(volumes.length).toBeGreaterThan(100)
@@ -44,8 +39,10 @@ describe('book — book-of-books index harmony', () => {
     expect(h.metrics.volumeCount).toBe(indexVolumes().length)
     expect(h.topHubs.length).toBeGreaterThan(10)
     expect(h.topHubs[0]!.bond).toBeGreaterThanOrEqual(h.topHubs[1]!.bond)
-    if (facesPresent) expect(h.foldCandidates).toBeGreaterThan(0)
-    else expect(h.foldCandidates).toBe(0) // no faces ⇒ nothing to fold, and that is the shape CI runs
+    // Fold candidates come through planVocabularyFold → wordWithoutLogicViolations, which reads the
+    // tracked SKILL.md — so the count is the same on a working tree and a clean checkout (396 on both,
+    // 2026-09-11). This branched on README.md and pinned 0 for CI: the old blind spot, asserted.
+    expect(h.foldCandidates).toBeGreaterThan(0)
   })
 
   it('isHarmonicIndex matches harmonyOfBookIndex verdict', { timeout: 120_000 }, () => {
