@@ -17,6 +17,7 @@ import { linksOf } from '@/typography/links'
 import { ROOT_PIVOTS, type NavHub } from '@/navigation/groups'
 import { type DiamondModel } from '@/diamond'
 import { finishedIdeaCrossed } from '@/seal'
+import { schemaCollision } from '@/readme/compute'
 
 const ONE_WORD = /^[a-z][a-z0-9]*$/
 
@@ -353,7 +354,11 @@ const wordAtomFinishedCrossed = (
   const hit = cache.get(atomPath)
   if (hit) return hit
   const model = wordAtomSkeletonModel(atomPath, cwd)
-  const verdict = finishedIdeaCrossed(model, { cwd })
+  // The seal exempts a collided schema.org word from the deployment charge only when the caller
+  // says which leaves are schema words. readme/compute and accounting/gaps say so; this law did not,
+  // so one atom read crossed in the readme and uncrossed here. Static import: compute's closure
+  // never reaches this module, so the answer cannot depend on load order.
+  const verdict = finishedIdeaCrossed(model, { cwd, isSchemaWord: (leaf) => schemaCollision(cwd).words.has(leaf) })
   cache.set(atomPath, verdict)
   return verdict
 }

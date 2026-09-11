@@ -4,7 +4,6 @@ import { randomBytes } from 'node:crypto'
 import { tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
 import {
-  LEAK_SHARE,
   PACKED_WORKER_DIR,
   PRODUCTION_FOLDS,
   WORKER_LIMIT_BYTES,
@@ -191,7 +190,7 @@ describe('deploy/fold — the bundle is read for each fold, not only the config'
 
   it('fails when the server output carries the target, and names the fold that leaked', () => {
     const root = repo(`export default{fetch(){}};${inlined}`)
-    expect(foldReadings(root, undefined, [fixture])[0]?.share).toBe(1)
+    expect(foldReadings(root, undefined, [fixture])[0]).toMatchObject({ share: 1, leaked: true })
     expect(() => assertNoFoldLeaks(root, undefined, [fixture])).toThrow(/leaked: src\/fixture\/generated\.ts — \d+\/\d+ of its literal pairs/)
   })
 
@@ -223,7 +222,7 @@ describe('deploy/fold — the bundle is read for each fold, not only the config'
     // modules: 56% of a 64-literal sample (2026-09-11). Scattered and reordered, they are not the leaf.
     const scattered = entries.flat().reverse().map((s) => `${JSON.stringify(s)};/*${' '.repeat(1000)}*/`).join('')
     const root = repo(`export default{fetch(){}};${scattered}`)
-    expect(foldReadings(root, undefined, [fixture])[0]?.share).toBeLessThan(LEAK_SHARE)
+    expect(foldReadings(root, undefined, [fixture])[0]?.leaked).toBe(false)
     expect(() => assertNoFoldLeaks(root, undefined, [fixture])).not.toThrow()
   })
 
@@ -241,7 +240,7 @@ describe('deploy/fold — the bundle is read for each fold, not only the config'
     () => {
       const readings = assertNoFoldLeaks()
       expect(readings.map((r) => r.target)).toEqual(PRODUCTION_FOLDS.filter((f) => f.side === 'both').map((f) => f.target))
-      expect(readings.every((r) => r.share < LEAK_SHARE)).toBe(true)
+      expect(readings.filter((r) => r.leaked)).toEqual([])
     },
     60_000,
   )

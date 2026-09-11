@@ -104,10 +104,10 @@ their targets legitimately run on the server; the admin browser bundle is not re
 
 **Honest boundary.** This proves each pattern **matches real matter**, never that the
 matter is **dead on a request path** — a fold swapping out something the Worker actually
-needs breaks at runtime, and only a human decides which leaf is dev/meta. `workerBudget`
-sums the gzip of each module while wrangler compresses the packed script **once**, so it
-is an approximation of that number and not that number: it exists to catch a megabyte
-before a ten-minute round trip to a `10027`, not to predict the upload to the byte. And
+needs breaks at runtime, and only a human decides which leaf is dev/meta. `foldWeight`
+gzips each target on its own while wrangler compresses the packed script **once**, so what
+a fold keeps out is an approximation in Cloudflare's units, not the upload's own delta;
+`workerBudget` gzips the packed script itself, which is the number Cloudflare judges. And
 it judges the src-path folds only — a package-name alias (`typescript`, `next/og`) is not
 renamed by the folder law and is left where it is.
 

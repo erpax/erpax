@@ -241,7 +241,7 @@ const PAIR_SAMPLE = 64
 /** Fewer pairs than this cannot say whether a target shipped. */
 const PAIR_MIN = 8
 /** Share of a fold's pairs found in order at which its content is in the bundle — measured 0 folded, ≥ 0.92 leaked. */
-export const LEAK_SHARE = 0.5
+const LEAK_SHARE = 0.5
 
 type LiteralPair = readonly [string, string]
 
@@ -265,7 +265,7 @@ const fingerprintOf = (cwd: string, fold: Fold): LiteralPair[] => {
     if (b.at - a.end <= PAIR_GAP && a.text !== b.text) pairs.push([a.text, b.text])
   }
   if (pairs.length <= PAIR_SAMPLE) return pairs
-  return Array.from({ length: PAIR_SAMPLE }, (_, i) => pairs[Math.floor((i * pairs.length) / PAIR_SAMPLE)]!)
+  return Array.from({ length: PAIR_SAMPLE }, (_, i) => pairs[((i * pairs.length) / PAIR_SAMPLE) | 0]!)
 }
 
 /** A literal as a bundle may spell it: raw, or with non-ASCII as `\uXXXX` — esbuild's default when wrangler packs. */
@@ -299,6 +299,8 @@ export interface FoldReading {
   readonly present: number
   /** present / sampled — 0 when the fold held. */
   readonly share: number
+  /** The share reached LEAK_SHARE: this fold's content is in the bundle. */
+  readonly leaked: boolean
 }
 
 /** How much of each server fold's content the bundle carries. A `client` fold's target legitimately runs on the server. */
@@ -313,7 +315,8 @@ export function foldReadings(
     .map((f) => {
       const pairs = fingerprintOf(cwd, f)
       const present = pairs.filter((p) => inOrder(text, p)).length
-      return { target: f.target, sampled: pairs.length, present, share: pairs.length ? present / pairs.length : 0 }
+      const share = pairs.length ? present / pairs.length : 0
+      return { target: f.target, sampled: pairs.length, present, share, leaked: share >= LEAK_SHARE }
     })
 }
 
@@ -325,7 +328,7 @@ export function assertNoFoldLeaks(
 ): FoldReading[] {
   if (!existsSync(join(cwd, bundle))) throw new Error(`deploy/fold — no server bundle at ${bundle} to read`)
   const readings = foldReadings(cwd, bundle, folds)
-  const bad = readings.filter((r) => r.share >= LEAK_SHARE || r.sampled < PAIR_MIN)
+  const bad = readings.filter((r) => r.leaked || r.sampled < PAIR_MIN)
   if (bad.length === 0) return readings
   const lines = bad.map((r) =>
     r.sampled < PAIR_MIN
