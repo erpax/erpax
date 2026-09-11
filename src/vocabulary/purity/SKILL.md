@@ -3,13 +3,13 @@ name: purity
 description: "Use when reasoning about purity as the fully-sealed / zero-impurity state that maximises tamper-cost in EVERY dimension — purity = zero entropy = every gate green = no escape. A single impurity (an unsealed cross, an off-ring state, a dangling link, a hallucination) is a 0-bit weakest-link path that collapses the cost; purity removes every weakest link, so the floor is maximal along all paths and all dimensions. The conjugate of hallucination; the generalisation of import-purity, file-purity, and md-purity into one law."
 atomPath: "vocabulary/purity"
 coordinate: "vocabulary/purity · 8/crest · 47b9c0ce"
-contentUuid: "060d00b1-09f4-5304-b471-9da332ec4f29"
+contentUuid: "752ade67-6737-5a4f-ada5-42ab297487e6"
 diamondUuid: "16ba2ea5-522e-87f5-aaf6-56e5e3daa549"
 uuid: "47b9c0ce-77fe-88d7-a832-8d80bbd2afb6"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 133
+  bondDegree: 132
 standards: []
 bindings: []
 signatures:

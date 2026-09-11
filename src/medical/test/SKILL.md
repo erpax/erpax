@@ -3,13 +3,13 @@ name: test
 description: "Use when reasoning about test as a medical facet of medical — vocabulary pivot to @/test; nested not duplicated."
 atomPath: "medical/test"
 coordinate: "medical/test · 2/share · 151151ee"
-contentUuid: "7d49c387-f071-5e1c-a85c-d09fbdda4295"
+contentUuid: "6fd694d6-47cf-56ab-bf35-f9de52480c71"
 diamondUuid: "4845c76d-d792-8c95-babd-8d8f59173bc8"
 uuid: "151151ee-7456-8195-aa59-e63aa73e154d"
 horo: 2
 typography:
   partition: medical
-  bondDegree: 102
+  bondDegree: 99
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

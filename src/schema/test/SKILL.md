@@ -3,13 +3,13 @@ name: test
 description: "Use when proving or tightening the unbreakable-matrix gate — the test that pulls all entropy as food for agents and leaves purity for the skills, so no agent can record uncollidable data or break the content-uuid matrix."
 atomPath: "schema/test"
 coordinate: "schema/test · 8/crest · 50f3525e"
-contentUuid: "a38f6043-286d-5e08-85ce-44dbc234f0f8"
+contentUuid: "40e70c5c-f8d9-547c-adfd-5e3d77165a13"
 diamondUuid: "4aa48886-f5fa-8d12-92c5-6acaf6170f41"
 uuid: "50f3525e-352a-8446-a194-3f7129762e77"
 horo: 8
 typography:
   partition: schema
-  bondDegree: 102
+  bondDegree: 99
 standards:
   - "ISO/IEC 25010:2023 quality-model (integrity, modularity)"
   - "ISO/IEC 25010:2023 quality-model (integrity, modularity)`"
