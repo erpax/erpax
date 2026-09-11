@@ -41,7 +41,14 @@ const NEXT_PUBLIC_SERVER_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    /** Webpack otherwise defaults to ~CPU-count workers for page-data collection and overwhelms Miniflare D1. */
+    /**
+     * Webpack otherwise defaults to ~CPU-count workers for page-data collection and overwhelms Miniflare D1.
+     * Measured 2026-09-12, static generation is 10.1 of CI's 13 build minutes (run 34655866129) and both
+     * ways to widen it were refuted locally: cpus 4 died in page-data collection — each worker starts its
+     * own workerd on the same local D1 file, `SQLITE_BUSY (SQLITE_BUSY_RECOVERY)` on /pages-sitemap.xml;
+     * staticGenerationMaxConcurrency 8 ran clean but SLOWER, 17.6 min against 15.9 — the render is
+     * CPU-bound on one core while workerd idles, so interleaving pages in one thread only adds overhead.
+     */
     cpus: 1,
     /** Local Wrangler/Miniflare D1 can SQLITE_BUSY when many workers hit the DB during prerender. */
     staticGenerationRetryCount: 5,
