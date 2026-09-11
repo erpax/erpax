@@ -2,11 +2,11 @@
 name: chats
 description: "Use when reasoning about the agent-society room native to Payload — the per-tenant content-addressed event bus where each row is an ErpaxEvent envelope an agent published; the queryable, auditable akashic chat history that replaces the external chat.erpax.com Durable Object. Distinct from messages (user-to-user mail). The agent-bus collection."
 atomPath: chats
-coordinate: "chats · 2/share · 21795720"
-contentUuid: "2f201e30-9cf3-51af-81c3-1a69e6d2b29d"
-diamondUuid: "22b3c943-855b-8647-a5d0-3091e6c8d47f"
-uuid: "21795720-b7cb-8e6d-afe8-811b6e543ae8"
-horo: 2
+coordinate: "chats · 1/base · 13809108"
+contentUuid: "e538ac18-569e-51de-9cdc-c30425479666"
+diamondUuid: "3a414ae8-e606-84b9-80dd-3e01cedf87fe"
+uuid: "13809108-7b7d-81e2-befb-0ae9944f0511"
+horo: 1
 typography:
   partition: chats
   bondDegree: 22
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e022b05d-3ced-816d-b845-6f319cc75abb"
+  computationUuid: "769d94cc-b337-8ac8-a8b5-8c560db7eca9"
   stages:
     - stage: path
       stageUuid: "edda5832-20f2-824b-872d-a9901d545e16"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "ccbead8a-ea17-8a6b-9fda-16fbbe067dcd"
     - stage: horo
-      stageUuid: "c1de3366-95bb-8335-b046-b423319264db"
+      stageUuid: "81a10e40-aac6-8cd7-93f1-1351366c4042"
     - stage: seal
       stageUuid: "9abbdb64-e077-839d-a9a0-90668d99ed36"
     - stage: uuid
-      stageUuid: "b16300fc-b24d-83d5-8804-d2dfc9fe6b6a"
+      stageUuid: "ee8ea15e-4614-8514-aaf5-a96de2a8c2d5"
 version: 2
 ---
 # chat

@@ -2,11 +2,11 @@
 name: mobile
 description: "Use when reasoning about mobile as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mobile"
-coordinate: "vocabulary/mobile · 8/crest · 78b6a8a8"
-contentUuid: "776df971-f087-5399-a54c-f2cb7b4c5860"
-diamondUuid: "0e145097-2c38-846c-8855-c89dc62c3f25"
-uuid: "78b6a8a8-c050-8934-a2a1-4d16707870ee"
-horo: 8
+coordinate: "vocabulary/mobile · 4/weave · f325f90c"
+contentUuid: "8d305733-cbc9-5f48-a43e-37d0731dbee6"
+diamondUuid: "1e1e72cd-db5d-8000-97af-d1a7cfd2c9ba"
+uuid: "f325f90c-e6d2-8364-858a-d1dc8eb18d6c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5fe5938d-9b82-852e-80aa-04b2cf184b3e"
+  computationUuid: "bc4eab19-ab1a-85f9-a7e9-f12e0d603bb5"
   stages:
     - stage: path
       stageUuid: "c7b6e7e8-0db2-8ed5-9a65-25247af7b623"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "67015004-659a-84c6-ae12-3edf27e77050"
     - stage: horo
-      stageUuid: "03d61ea8-3722-8e1d-928c-301bf19416e2"
+      stageUuid: "68be7359-34fb-8c4a-a51b-af4f3014caf6"
     - stage: seal
       stageUuid: "f9fbc1f0-faf1-8ad3-a017-bde4744cf65b"
     - stage: uuid
-      stageUuid: "9393018b-cc88-8d8f-8c23-c8e7a597b0aa"
+      stageUuid: "e45320d2-9d03-8146-be02-9db11f821c01"
 version: 2
 ---
 # mobile

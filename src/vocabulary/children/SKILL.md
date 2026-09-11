@@ -2,11 +2,11 @@
 name: children
 description: Use when reasoning about children — A child of the person.
 atomPath: "vocabulary/children"
-coordinate: "vocabulary/children · 4/weave · 88fbabef"
-contentUuid: "41433856-a352-5a29-afcd-b21224393f59"
-diamondUuid: "b9420173-c53d-810d-b1b8-05aafc6b6d0f"
-uuid: "88fbabef-4ffb-8b51-8908-8b179b020f66"
-horo: 4
+coordinate: "vocabulary/children · 8/crest · 46eee57f"
+contentUuid: "872e1f5d-ebfb-58b0-9297-d388e212bdec"
+diamondUuid: "73149ed2-cfb3-859e-b54b-ca83f83bba60"
+uuid: "46eee57f-f5eb-808a-9d69-6855b79ef6e1"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "320a1abe-557f-8e98-9e10-5f7dbc31a99b"
+  computationUuid: "aa66addd-502f-8d26-bd45-0947e48597d7"
   stages:
     - stage: path
       stageUuid: "82636664-7091-846c-b992-551ec60ed419"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f29913cc-9a17-8561-b556-4ebb93f058f0"
     - stage: horo
-      stageUuid: "03a3ade4-721d-8d6e-b728-4d337d4a91a3"
+      stageUuid: "26cce30d-95d7-888c-9a3f-2654d39f3708"
     - stage: seal
       stageUuid: "0a5b63e7-570e-8fe1-809e-e6504c64732b"
     - stage: uuid
-      stageUuid: "46b5943d-3c43-8fa2-a39e-366d54cf60e6"
+      stageUuid: "41cbdf34-e59a-80ad-99aa-a4ff5983e020"
 version: 2
 ---
 # children

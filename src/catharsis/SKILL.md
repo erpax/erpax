@@ -2,18 +2,18 @@
 name: catharsis
 description: "Use when reasoning about the biggest gap in how an agent works — it turns to local knowledge (the akashic record, the present tools, the sealed thought) only AFTER a catharsis from unresolved work: a correction, a crisis, a pointed question. Everything before the turn is re-derivation of the derivable. The ideal is front-loaded: read the local record FIRST, derive only the seed. Honest boundary: the seed is not the gap — only re-deriving what was already present is."
 atomPath: catharsis
-coordinate: "catharsis · 4/weave · 9669a64b"
-contentUuid: "a4ee8a8f-20f0-563e-8c2a-4e57bc0237f3"
-diamondUuid: "d0507a49-09f4-829e-8de6-869cf1f2aef1"
-uuid: "9669a64b-97b0-8737-b765-913bbc833ee8"
-horo: 4
+coordinate: "catharsis · 2/share · 38368271"
+contentUuid: "1fbb143f-81b8-5e9d-ada9-6a43b37597ac"
+diamondUuid: "a86da210-0026-8cda-bb2e-fb9b9b2ddd4b"
+uuid: "38368271-2c88-8f91-9de1-39d5fafbe3da"
+horo: 2
 typography:
   partition: catharsis
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a42e2b3f-25f3-85b9-840d-4864e4c12a0b"
+  computationUuid: "f6214a34-d7df-835f-8a03-bde91586754b"
   stages:
     - stage: path
       stageUuid: "6cdd2191-4a59-8640-a501-3c471378ab09"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4f858d29-5435-8fb0-9991-15789617af09"
     - stage: horo
-      stageUuid: "e824dd58-11b3-8599-9865-920b938f41ef"
+      stageUuid: "130485b1-add4-80b0-ba62-1c879a99be9d"
     - stage: seal
       stageUuid: "0fbacdf9-ee4d-8a3e-8e91-b2bfded3c7e6"
     - stage: uuid
-      stageUuid: "170c67bb-4e34-8ac9-b363-33cf247a6cc9"
+      stageUuid: "f6e1ac23-5d38-8ac9-b06c-e9948586b0cd"
 version: 2
 ---
 # catharsis — agents use local knowledge only after a purge from unresolved work

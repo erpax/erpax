@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "endorser",
-    "uuid": "4501c029-ba9d-8687-8c04-83a01e94475b",
+    "uuid": "b982deab-0ab6-8313-bee0-5f1f90c21b3f",
     "words": [
       "endorser"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one endorser — the singular model of the endorsers collection (the plural store); a party who signs over or backs an instrument.",
-    "uuid": "05c4675c-56e9-824a-8699-da9ea42c9bef",
+    "uuid": "fe591ccb-5033-855d-912c-63616af5a5f0",
     "words": [
       "use",
       "when",

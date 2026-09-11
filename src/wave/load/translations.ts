@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "load",
-    "uuid": "303f7888-4010-8323-9fca-14f83ac0d001",
+    "uuid": "c642e409-3589-8941-bcf4-3086071461b4",
     "words": [
       "load"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when partitioning work into balanced waves — self-balancing load distribution across the seven horo phases, weighted by comparable units, with the lane-cost and tamper-cost arithmetic the scheduler and session build on.",
-    "uuid": "69c82a56-390e-852c-9544-a517a805342a",
+    "uuid": "39e9599d-fccb-88b1-aaf3-93e9c1028ece",
     "words": [
       "use",
       "when",

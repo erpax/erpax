@@ -2,10 +2,10 @@
 name: propagation
 description: "Use when raising transplants before the field — the greenhouse/nursery schedule of sowing into trays of cells (plugs) sized to deliver seedlings on their field date, plus hardening-off before transplant. The controlled-start stage upstream of transplanting; flats/cells/plugs are its containers, sized back from the transplant date."
 atomPath: "vocabulary/propagation"
-coordinate: "vocabulary/propagation · 8/crest · c59820d8"
-contentUuid: "2fa854fa-c58c-57fc-94de-81b840652ac7"
-diamondUuid: "c55a3b5b-99cd-8853-bec1-2c8fae5e694d"
-uuid: "c59820d8-04da-89b6-8786-a61abd679fc5"
+coordinate: "vocabulary/propagation · 8/crest · bef0a1af"
+contentUuid: "d9d534b8-f061-5cf6-b8f6-41e5c7dcf3fd"
+diamondUuid: "f1473d09-9d03-8b9a-a3a3-b2531aabbba4"
+uuid: "bef0a1af-91d7-8c5c-96c4-eae55da7c2ac"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "abd71c60-51f6-8d74-b133-b52a83ea2009"
+  computationUuid: "634dbceb-8fb3-80b6-8db2-c5c3f507035c"
   stages:
     - stage: path
       stageUuid: "6dd4d97a-b4d7-8189-9c58-5c5f984d961d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e88df352-509c-8a6e-9809-bab17157f272"
     - stage: horo
-      stageUuid: "3dcb09d1-2c98-8e40-8414-d688fa8a5e6d"
+      stageUuid: "9e4354bd-2738-8fb6-b1cd-4116706ed9c7"
     - stage: seal
       stageUuid: "13e573c6-c505-871b-87fd-b042d92e2a9b"
     - stage: uuid
-      stageUuid: "a7255f7f-9033-8a8d-9cd5-3898d1de8bf0"
+      stageUuid: "20a4e56b-6a5c-8294-a246-ea3584f8d987"
 version: 2
 ---
 # propagation — raising transplants before the field

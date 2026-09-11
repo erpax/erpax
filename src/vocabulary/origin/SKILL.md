@@ -2,10 +2,10 @@
 name: origin
 description: "Use when reasoning about origin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/origin"
-coordinate: "vocabulary/origin · 4/weave · 7bc85d5b"
-contentUuid: "41e96f88-9ed7-5cda-b58b-2f74866897a1"
-diamondUuid: "e74cf2ed-4f33-84a9-8378-92ab21f887f6"
-uuid: "7bc85d5b-d22c-82bc-9f20-1fcf2552bbea"
+coordinate: "vocabulary/origin · 4/weave · 5ef50c06"
+contentUuid: "17c79b0a-cd5a-5ab3-957b-0f7fe08d9b70"
+diamondUuid: "d8507ae1-d8c5-8b30-b52a-e2b68ed51396"
+uuid: "5ef50c06-36ae-85fd-809c-4e79bc2d45e8"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "22c37ee5-7e6b-82e2-aa0b-b9965da1a560"
+  computationUuid: "48fded9c-21fc-82b5-898a-6eb90adfdb90"
   stages:
     - stage: path
       stageUuid: "92561b4e-0821-8703-9107-793bde870a94"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9ea20e26-46cc-8c95-aa0c-e62bcd95d702"
     - stage: horo
-      stageUuid: "552a4004-8271-8292-8bc4-0f3be419e1ea"
+      stageUuid: "903d0d29-f1bb-8301-b774-f7ec613cd40e"
     - stage: seal
       stageUuid: "2325d577-e97c-848c-b305-588ec977dce2"
     - stage: uuid
-      stageUuid: "f0ee39cc-faa7-8030-ba7e-3e06a53b61fc"
+      stageUuid: "90f7a126-021e-8948-9354-7ff72c19b0b5"
 version: 2
 ---
 # origin

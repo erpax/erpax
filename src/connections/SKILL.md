@@ -2,11 +2,11 @@
 name: connections
 description: "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub."
 atomPath: connections
-coordinate: "connections · 7/descent · 00fc3f03"
-contentUuid: "a0d4fc16-ee26-57b7-a753-368c92023c46"
-diamondUuid: "99c1deb0-22d4-8ee4-b382-dd0c4be9b64a"
-uuid: "00fc3f03-54d2-83ea-806b-32a54b9ccf59"
-horo: 7
+coordinate: "connections · 2/share · a0c24bcf"
+contentUuid: "6911ed6c-55ec-56db-ad84-5d0be95f8d20"
+diamondUuid: "e55ce3e3-6896-8e29-922f-b3cc51ab95f4"
+uuid: "a0c24bcf-177d-8a66-a94f-9fdb51a91a07"
+horo: 2
 typography:
   partition: connections
   bondDegree: 60
@@ -29,7 +29,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "11240bc7-b4af-865a-ad92-0e390de1a289"
+  computationUuid: "f9a712f1-223f-8ac2-948a-8cc06b4a0885"
   stages:
     - stage: path
       stageUuid: "365eb881-b33e-8c12-89d2-bdf9ef21f8a5"
@@ -40,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "a21e8a6e-a416-83cd-a3c5-13ff1f3ac16e"
     - stage: horo
-      stageUuid: "d9fc1d76-30c6-886c-9227-6328cfdcfc95"
+      stageUuid: "915e106f-51d6-88b4-bf0a-2419f31538f5"
     - stage: seal
       stageUuid: "ab2bba1f-7fc3-8880-ad82-bb3733c93443"
     - stage: uuid
-      stageUuid: "0099fcdd-8030-8f3e-a516-9816523d43d8"
+      stageUuid: "3ba3ed07-b94c-8dba-84b8-100d477b301a"
 version: 2
 ---
 # connections

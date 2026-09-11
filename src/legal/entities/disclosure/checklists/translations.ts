@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "checklists",
-    "uuid": "c757fd18-ee58-8647-ad7a-1c5de161aca2",
+    "uuid": "c0c5e00a-0fde-8a89-a06f-08a96c209847",
     "words": [
       "checklists"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when preparing or auditing financial-statement disclosure completeness — IFRS/SEC/compliance-framework checklist items, applicability assessment, evidence attachment, and preparer/reviewer sign-off per IFRS IAS-1 / SEC Regulation S-K / ISO-19011. The disclosure-checklist sign-off collection.",
-    "uuid": "880e3cb6-2e16-8f37-85ff-b7bc28c07b94",
+    "uuid": "ea90cd6d-6d20-811b-97d1-c8357b4cf854",
     "words": [
       "use",
       "when",

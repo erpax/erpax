@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "breastfeeding",
-    "uuid": "01416794-ac6f-8785-97ed-82193497ef28",
+    "uuid": "bb449132-57d4-8fa4-bd97-ff64d79324ae",
     "words": [
       "breastfeeding"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about breastfeeding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "146a21d6-ecfc-878a-bf1c-0df80243803a",
+    "uuid": "5ee1e6ec-9486-8c1a-87ea-498937759e61",
     "words": [
       "use",
       "when",

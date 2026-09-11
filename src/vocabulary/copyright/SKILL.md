@@ -2,11 +2,11 @@
 name: copyright
 description: "Use when reasoning about copyright as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/copyright"
-coordinate: "vocabulary/copyright · 7/descent · 0556abfd"
-contentUuid: "bc59635a-467a-5215-9eb3-b4326f0a8584"
-diamondUuid: "6e97af1c-de4b-86ef-867c-498d49c9d8ce"
-uuid: "0556abfd-329c-8640-b612-16b8a0074b4b"
-horo: 7
+coordinate: "vocabulary/copyright · 1/base · 63c7ad83"
+contentUuid: "ae04bb70-9bb0-5b84-9867-4cf106d96881"
+diamondUuid: "24922d30-b5b4-89d0-af74-375ab01497c2"
+uuid: "63c7ad83-bb93-8e4c-9288-eebae4f37176"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a1bf4bcb-b3d5-824c-bece-1d4d89e2abd9"
+  computationUuid: "092a88f1-b022-8d58-869e-34bb3a74df0c"
   stages:
     - stage: path
       stageUuid: "a1906be7-4032-8709-86ae-d405bec91919"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "538b6794-ce27-8b27-a5fd-b87397ca12df"
     - stage: horo
-      stageUuid: "8b4a2759-c8af-89cb-9e3c-6d484eadf3fd"
+      stageUuid: "7dcd96ec-ad8e-89bb-93c7-5f2515f5a2c9"
     - stage: seal
       stageUuid: "7185ca9b-f83f-8b20-b396-6607d834af83"
     - stage: uuid
-      stageUuid: "b3891f06-e758-8f64-9197-581af8eafb6a"
+      stageUuid: "d5a4c346-ad3a-8a8c-a393-bce12777cb14"
 version: 2
 ---
 # copyright

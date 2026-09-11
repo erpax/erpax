@@ -2,11 +2,11 @@
 name: service
 description: "Use when parsing camt.054 debit-credit notification import parser."
 atomPath: "camt054/import/service"
-coordinate: "camt054/import/service · 5/round · ee7bfc35"
-contentUuid: "33bac7d0-514f-5b20-aacc-9351dd58632a"
-diamondUuid: "58d43315-5413-843e-9c9a-e0221310ddbb"
-uuid: "ee7bfc35-c876-8a5a-9f06-b706b53b5960"
-horo: 5
+coordinate: "camt054/import/service · 2/share · 17b6bc64"
+contentUuid: "45e988e9-3129-525a-8e6b-b723c158ef49"
+diamondUuid: "e085b531-2fea-8867-b661-44bdb710ad39"
+uuid: "17b6bc64-fb64-85ae-82bf-4eb1e5b1c997"
+horo: 2
 typography:
   partition: camt054
   bondDegree: 183
@@ -15,7 +15,7 @@ standards:
   - "ISO-20022 camt.054 bank-to-customer-debit-credit-notification"
 bindings: []
 signatures:
-  computationUuid: "3af3c697-e8f2-8963-b72d-e4e6c8f339f2"
+  computationUuid: "51062121-c17e-86e6-ad37-37510c5fb235"
   stages:
     - stage: path
       stageUuid: "dd8393b9-67b5-8774-ab1d-29dfb4295c47"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "c0e83f59-c17c-8629-850f-2ebad5d6ba21"
     - stage: horo
-      stageUuid: "10869916-8e55-846b-b14a-8e2a1219440e"
+      stageUuid: "d44b288b-1734-8f56-9499-feca68d21dc2"
     - stage: seal
       stageUuid: "11ad73e0-e99f-8255-b3df-7970458c8003"
     - stage: uuid
-      stageUuid: "1a82093a-2fd3-8fc9-abbc-7f5b896cf108"
+      stageUuid: "4cdf2112-5749-8f1c-a615-96a5333cef2d"
 version: 2
 ---
 # service — camt.054 debit-credit notification import parser

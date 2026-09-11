@@ -2,11 +2,11 @@
 name: seo
 description: "Use when ensuring every atom carries comprehensive marketing and SEO — title, meta description, keywords, canonical, and schema.org JSON-LD — computed from the atom and verified by a forcing-function test, then displayed directly in vitepress."
 atomPath: seo
-coordinate: "seo · 5/round · d759345f"
-contentUuid: "b899ca02-cfb2-5b19-a5d2-205132f8c846"
-diamondUuid: "6889ac1f-01ec-81eb-aca9-2d231ec2ed37"
-uuid: "d759345f-f209-8dc8-a14d-6efef2614a5f"
-horo: 5
+coordinate: "seo · 1/base · e92376e6"
+contentUuid: "a29d15d2-cabb-54b1-b907-4c16f15fe9d6"
+diamondUuid: "98dc63d2-872a-8622-bb38-942887240a92"
+uuid: "e92376e6-90f7-8541-ba14-1e310f0394cc"
+horo: 1
 typography:
   partition: seo
   bondDegree: 26
@@ -15,7 +15,7 @@ standards:
   - "W3C-JSON-LD-1.1"
 bindings: []
 signatures:
-  computationUuid: "97ae03e8-3655-86da-8834-196456661cb0"
+  computationUuid: "be49f36c-63a5-8f36-bb6b-2fe91954a985"
   stages:
     - stage: path
       stageUuid: "ab8e9c71-6d7c-81e7-9f22-21dc4b50e125"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "e6b8750a-92a6-8d3a-8087-8693b235394e"
     - stage: horo
-      stageUuid: "dbe0df06-3bdc-84d5-917e-42096eb57a9b"
+      stageUuid: "fddde785-9a0a-8bb2-9066-c1ea83141da4"
     - stage: seal
       stageUuid: "d33af907-cb20-84f6-b051-46f30450f017"
     - stage: uuid
-      stageUuid: "f2f14e41-05be-8a74-914c-39183f1715c6"
+      stageUuid: "a0c5750d-e00e-8e8b-acc2-a0f79b6e802a"
 version: 2
 ---
 # seo — the projection, tested and displayed

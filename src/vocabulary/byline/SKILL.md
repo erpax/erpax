@@ -2,18 +2,18 @@
 name: byline
 description: Use when modelling one byline — the singular model of the bylines collection (the plural store); the credited author line on a published article.
 atomPath: "vocabulary/byline"
-coordinate: "vocabulary/byline · 1/base · 8cb0e196"
-contentUuid: "c930cc42-0ea7-5589-a4d0-a755f36e7acf"
-diamondUuid: "0130eb0b-bd3f-8392-95ba-361c86c46800"
-uuid: "8cb0e196-5559-8e1d-96b0-adfca7d60dff"
-horo: 1
+coordinate: "vocabulary/byline · 4/weave · 347d7380"
+contentUuid: "1d7184fa-f4c0-5659-9341-946a57f151e2"
+diamondUuid: "cf456d77-11af-85f1-840b-0df19eac7fe4"
+uuid: "347d7380-21db-87cc-a800-367123213664"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9a353dd1-7485-8a00-9b47-17c12223af6e"
+  computationUuid: "5cffc790-67e7-8196-a39e-9546f0c405c8"
   stages:
     - stage: path
       stageUuid: "f8941131-fffc-8b8f-ad90-fdcf0f24bfbd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fb0708ca-b035-89b2-963f-eea8f2d1ec08"
     - stage: horo
-      stageUuid: "6cd26221-efbe-8dac-845b-9e9f70bafdfc"
+      stageUuid: "cf77a125-232b-8315-abbb-989bb58332a0"
     - stage: seal
       stageUuid: "db9a533d-b10a-8df9-af98-313892f1a024"
     - stage: uuid
-      stageUuid: "8495ddce-6278-8fa6-ac33-3a58bedb81e1"
+      stageUuid: "0ee05cac-7059-8d4e-9017-3e20ec55bd76"
 version: 2
 ---
 # byline — the model of one [[bylines]] row

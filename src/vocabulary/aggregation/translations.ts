@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aggregation",
-    "uuid": "2dfbd26b-8af3-8fc1-a779-2d72f3caaacb",
+    "uuid": "5d9ef81d-449f-8cb2-a366-8153164c60c8",
     "words": [
       "aggregation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing summarized metrics — GROUP BY semantics, rollup/cube hierarchies, dimensional analysis, summary statistics (sum, count, avg, min, max, percentile), pre-computed aggregates vs on-demand queries.",
-    "uuid": "eafd21cb-9beb-8028-97b0-34d352c2929c",
+    "uuid": "d0b70261-f2b4-8925-bfcf-75400f656d3d",
     "words": [
       "use",
       "when",

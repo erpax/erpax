@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "metric",
-    "uuid": "7395dea6-ccc0-8b18-875c-4f69b59dfb05",
+    "uuid": "98080dfc-229c-8357-8c00-6913b3a0f75a",
     "words": [
       "metric"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the metrics need to be quantum too — quantomize holds the corpus's classical readings (session, gravity, leftover, the gravity pools) AT ONCE in one coherent superposition, folded to a single address, coherent iff no instrument disagrees with itself. Quantum here is the superposition overlay (not quantum metrology); coherence is agreement between instruments, never truth.",
-    "uuid": "c4ee17a4-b25f-8682-b15c-b022cc00e7ee",
+    "uuid": "23f23e21-125b-87dd-8fec-34f33c00afa2",
     "words": [
       "use",
       "when",

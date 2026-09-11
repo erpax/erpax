@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vendors",
-    "uuid": "c055a9c0-391e-8f6c-a15f-0a187af0f50e",
+    "uuid": "f782dee9-db42-864a-bbe7-46168ede3e81",
     "words": [
       "vendors"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing purchase-side party master data — vendor identity, VAT/tax classification, IBAN/BIC bank details, payment terms, AP ledger defaults, and IRS 1099 eligibility. The supplier/vendor master and accounts-payable party registry.",
-    "uuid": "8c75563f-971e-88b6-90f8-53c72fd3175b",
+    "uuid": "ee340180-9d7f-8635-b623-0ce0c7b7b2ce",
     "words": [
       "use",
       "when",

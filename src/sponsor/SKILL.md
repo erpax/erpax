@@ -2,11 +2,11 @@
 name: sponsor
 description: "Use when reasoning about sponsor — A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event."
 atomPath: sponsor
-coordinate: "sponsor · 2/share · 3270e4c5"
-contentUuid: "8d801878-2fbd-5e27-b090-08b7509f33cf"
-diamondUuid: "6d7f73bf-22e1-8c80-a1ce-b898ef1f0f65"
-uuid: "3270e4c5-ebe6-829a-a240-7c6d0039cfcc"
-horo: 2
+coordinate: "sponsor · 5/round · bf716de0"
+contentUuid: "84e9b1b2-0b26-5145-93d9-740388738319"
+diamondUuid: "bbfca8d7-293b-835e-8cb0-22495e53d121"
+uuid: "bf716de0-8171-8e21-a4fd-bd80b8924fbe"
+horo: 5
 typography:
   partition: sponsor
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5ccdc268-b016-892f-9879-07b0ab77ebfd"
+  computationUuid: "050b7fbb-95b9-8309-b715-5649b9033c47"
   stages:
     - stage: path
       stageUuid: "95da03de-d358-8fea-bc88-9123f1b86c54"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6e1464f5-46a5-8bff-adab-cfcd2d87e299"
     - stage: horo
-      stageUuid: "2efcde21-16b7-8b4a-8560-66102fa3a9c7"
+      stageUuid: "6547d990-d2d4-85f8-ae96-5f3bb1126d1c"
     - stage: seal
       stageUuid: "ed54ab16-3256-8064-ad1e-b671109e2be6"
     - stage: uuid
-      stageUuid: "2c8f7350-0e85-8d0c-8d09-b151530ff3d2"
+      stageUuid: "8d4dcfbc-4420-86e9-83c3-ed33eeba3e5b"
 version: 2
 ---
 # sponsor

@@ -2,11 +2,11 @@
 name: share
 description: Use when reasoning about uuid sharing — exposing a uuid across boundaries.
 atomPath: "uuid/share"
-coordinate: "uuid/share · 8/crest · 6966253c"
-contentUuid: "9089fa23-e652-5335-82bb-4d6e058c0b9a"
-diamondUuid: "58c1e2b9-a32e-81ea-aa8e-2913331d8ec5"
-uuid: "6966253c-237f-8c41-97b4-d98ca8b135f4"
-horo: 8
+coordinate: "uuid/share · 7/descent · 6f202fcd"
+contentUuid: "8cff4973-28e3-5b98-94dd-4d62329641d8"
+diamondUuid: "5c286532-b0d8-8330-bf8b-cf6861f3d1a4"
+uuid: "6f202fcd-f413-80ec-b6b2-a293b92ddf56"
+horo: 7
 typography:
   partition: uuid
   bondDegree: 102
@@ -19,7 +19,7 @@ standards:
   - eIDAS §3 (sealed grants)
 bindings: []
 signatures:
-  computationUuid: "ae9a3311-5bbf-8a98-8dc9-0da77ad2c833"
+  computationUuid: "081d5df0-5060-8df9-820f-fbee355777c5"
   stages:
     - stage: path
       stageUuid: "77d09678-95c7-8847-be23-cc9d12ec9850"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "fb41916b-300a-8c37-84eb-875f37532479"
     - stage: horo
-      stageUuid: "6ed66032-94b3-8caa-8550-db616f4f2557"
+      stageUuid: "bed04767-3414-8112-a3e2-7b9e0019a078"
     - stage: seal
       stageUuid: "cd3188bc-5638-82ac-8daf-89301679f253"
     - stage: uuid
-      stageUuid: "02157de9-6e3d-867c-957e-be91390e9426"
+      stageUuid: "cae63309-3a1b-8cff-b147-df107eca47ce"
 version: 2
 ---
 # uuid/share

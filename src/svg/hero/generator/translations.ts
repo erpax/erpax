@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "generator",
-    "uuid": "a0503660-f3c8-80dc-a927-f4c2956a5af0",
+    "uuid": "68ac8e66-143b-8e3c-9666-9e207847e37e",
     "words": [
       "generator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about generator — A hero image per product, synthesised rather than commissioned: a 1600×900 SVG built from primitive paths and , with no font file, no raster asset and no image library.",
-    "uuid": "1bb47505-9c49-897b-b838-15146b964ce1",
+    "uuid": "1ce5137b-1a2f-882f-a385-e0310a274fe9",
     "words": [
       "use",
       "when",

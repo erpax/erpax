@@ -2,18 +2,18 @@
 name: cmyk
 description: "Use when reasoning about color/signal from sequence position in erpax — the four print primaries ARE the first four rodin digits {0=K, 3=C, 6=M, 9=Y}; color comes from the slot, the C↔M polarity gap is closed by Y at 9 and anchored by K at 0. The signal model under links/tags/admin hue. Nested under rodin."
 atomPath: "rodin/cmyk"
-coordinate: "rodin/cmyk · 4/weave · 4fcafd0b"
-contentUuid: "1c7aa296-2122-5dec-8b49-eb14f56856dc"
-diamondUuid: "15655e96-25f1-8849-a685-bae080574a54"
-uuid: "4fcafd0b-1de1-8c20-90ab-73c06ac04027"
-horo: 4
+coordinate: "rodin/cmyk · 5/round · a4b02a6f"
+contentUuid: "81c79599-dfb6-5c56-abb5-c764d83bb163"
+diamondUuid: "a8a0f528-b117-8081-b913-804eac313d65"
+uuid: "a4b02a6f-2f68-8e55-ab1c-ea2a31014198"
+horo: 5
 typography:
   partition: rodin
   bondDegree: 82
 standards: []
 bindings: []
 signatures:
-  computationUuid: "88e525a1-573b-8d40-a1ce-e6e19253e952"
+  computationUuid: "7703a4ce-e855-8ac1-8638-7a81488663f4"
   stages:
     - stage: path
       stageUuid: "44e9fde9-ad35-8c46-b850-0680d8da2a8d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "81b5c1f8-723f-84ee-80a0-d0e5b68e28d2"
     - stage: horo
-      stageUuid: "87783156-0a71-818f-9fff-f17364c558e4"
+      stageUuid: "3e6c021c-381e-8221-b246-b94e9b3e772f"
     - stage: seal
       stageUuid: "d3718c06-185f-8362-931c-c510e5f71ebf"
     - stage: uuid
-      stageUuid: "7e3d743a-8d5a-8bc8-9ab8-6b8cac4fda2c"
+      stageUuid: "9421b883-0561-8157-a35e-a284c15755b3"
 version: 2
 ---
 # cmyk — color from position (the gamut is {0,3,6,9})

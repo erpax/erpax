@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "round",
-    "uuid": "a70f4c5c-d057-84ba-a840-d3ac73ff016e",
+    "uuid": "556d9d48-2354-8617-abf4-d7ab41d57617",
     "words": [
       "round"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the sixth position of the horo state ring — digit 5, \\\"the ring breathes\\\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo.",
-    "uuid": "6263c1a6-ddbc-84e7-8e3d-023671c787c1",
+    "uuid": "0f4e9218-71a5-80ba-9f43-06568c9a9970",
     "words": [
       "use",
       "when",

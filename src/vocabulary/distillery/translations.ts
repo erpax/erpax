@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "distillery",
-    "uuid": "c0021dab-bac0-82b6-b660-6211ec699bd0",
+    "uuid": "8a7b03cd-ed11-84c9-a5de-db891eb47ff5",
     "words": [
       "distillery"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about distillery — A distillery.",
-    "uuid": "dbe45ddc-99e5-820f-ba7d-4fec8269787d",
+    "uuid": "94c0f3ac-71bf-8479-b40d-bce9b5424ea7",
     "words": [
       "use",
       "when",

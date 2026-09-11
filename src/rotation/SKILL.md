@@ -2,18 +2,18 @@
 name: rotation
 description: "Use when planning the multi-year non-repetition of a crop family in the same ground — crop rotation breaks pest/disease cycles and balances nutrient draw by never returning a family to a bed sooner than ~3–4 years. The rule/constraint over the planting sequence (distinct from the bare sequence): grouped by botanical family, alternating heavy feeders, legumes, and roots."
 atomPath: rotation
-coordinate: "rotation · 2/share · 6b446351"
-contentUuid: "46da02df-b350-5a1d-a6bd-7dfceef3c703"
-diamondUuid: "327998c2-544a-8aaa-abef-17c20bf38abd"
-uuid: "6b446351-e559-8cf2-a0a8-1f84bf26cd79"
-horo: 2
+coordinate: "rotation · 5/round · 775b5524"
+contentUuid: "64c6bdd1-37f5-59e8-a9d0-e61bcb604b94"
+diamondUuid: "722faa7d-099f-8310-8dab-f3c0562af71d"
+uuid: "775b5524-ad77-84ad-9db3-fbe5629769cd"
+horo: 5
 typography:
   partition: rotation
   bondDegree: 70
 standards: []
 bindings: []
 signatures:
-  computationUuid: "193e2bc9-e774-8941-aee4-6e8f184f6898"
+  computationUuid: "03b869f0-b52b-84d2-9fcc-b2df0cb48d18"
   stages:
     - stage: path
       stageUuid: "d64a2026-51c1-89d4-9ee7-e3848de8ceb9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3433989b-d196-8ea9-8f9c-19dcb8be7d6f"
     - stage: horo
-      stageUuid: "1b6e7a8c-de2a-84ab-86d5-9cc51b26f128"
+      stageUuid: "88aacad5-dbc0-85c5-9221-cca02900d227"
     - stage: seal
       stageUuid: "b2f93fae-e86c-8b30-95b5-879039594c64"
     - stage: uuid
-      stageUuid: "1fad1be1-3b80-8be0-a76e-3982fdfdfa7b"
+      stageUuid: "703b5dab-96c4-8191-99f2-09ae11fe0b1e"
 version: 2
 ---
 # rotation — the multi-year non-repeat of a crop family in one bed

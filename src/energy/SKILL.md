@@ -2,10 +2,10 @@
 name: energy
 description: "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'."
 atomPath: energy
-coordinate: "energy · 7/descent · 588d2830"
-contentUuid: "764897aa-25da-5f3b-8f18-5fc22583b2ec"
-diamondUuid: "f964d6ef-7d15-8449-8ee5-bbbe32dc8bc3"
-uuid: "588d2830-61db-8e3e-bb4f-f9e9a8d9354b"
+coordinate: "energy · 7/descent · ad49f773"
+contentUuid: "b5f0a196-5530-5995-802f-ebc65fb8b837"
+diamondUuid: "48e999d9-e379-8620-837c-da8b005f1246"
+uuid: "ad49f773-f142-8158-9d3a-fbf1e34769f6"
 horo: 7
 typography:
   partition: energy
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b7515182-125b-81d0-873d-cba8e00e4af8"
+  computationUuid: "0e9bfedc-61ce-872a-a9d0-8ba7418093e4"
   stages:
     - stage: path
       stageUuid: "0ce98992-3572-8ba8-b572-63bc01ddd69d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aeee91f1-94e8-83c7-9b5c-359f0caa1fc6"
     - stage: horo
-      stageUuid: "37d4f748-ac88-8d8a-91d3-44d515d661d8"
+      stageUuid: "0d4603eb-e9d0-83d0-abc0-6e8f0caa45f8"
     - stage: seal
       stageUuid: "e1b14f1b-f0a5-88b3-a221-68915859f827"
     - stage: uuid
-      stageUuid: "c898b15f-b7d3-8f01-ab25-88ba44994487"
+      stageUuid: "2384c03d-5c68-8895-b5b7-abb18ba1ef88"
 version: 2
 ---
 # energy

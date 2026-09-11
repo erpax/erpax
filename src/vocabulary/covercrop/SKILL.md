@@ -2,18 +2,18 @@
 name: covercrop
 description: "Use when a crop is grown to protect and build the soil rather than to harvest — cover crops / green manures: catch crops scavenging residual N, nurse crops sheltering a main crop, legumes fixing nitrogen vs grasses building biomass, then termination (mow/crimp/winterkill/incorporate) before the cash crop. The off-season twin of crop; soil capital, not sales."
 atomPath: "vocabulary/covercrop"
-coordinate: "vocabulary/covercrop · 4/weave · 51161965"
-contentUuid: "230d1d4b-faeb-5c36-9e92-d32a0392be5d"
-diamondUuid: "a3e76e46-d9cd-8746-b712-b0bbbf888aab"
-uuid: "51161965-3f2e-8368-a5ca-7ac1ef8cbdb1"
-horo: 4
+coordinate: "vocabulary/covercrop · 1/base · fbe5262f"
+contentUuid: "c271afc5-e690-5b7f-9e18-a2183541844a"
+diamondUuid: "6cb5202b-9d4a-8f49-bc4a-839b32271dfd"
+uuid: "fbe5262f-297e-8a56-88e5-76ebd4e9ee6d"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 53
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fd244a7b-e60b-8f63-8b28-330871dadab2"
+  computationUuid: "c62c1883-17f7-80d7-a1bc-1007bc24176c"
   stages:
     - stage: path
       stageUuid: "bd6825ed-a82f-8388-9617-d66494af0fd6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f51efe68-3fb3-849d-8faf-ade90e9d7da7"
     - stage: horo
-      stageUuid: "c737d3f3-118f-862a-ac55-8d759813fc30"
+      stageUuid: "6cdc08dc-8f3b-8a26-8690-0e5a2d07a926"
     - stage: seal
       stageUuid: "2cbe9f21-b235-8a53-b88c-6a7200bfffe3"
     - stage: uuid
-      stageUuid: "17159cd0-b2d5-8314-bac2-c3ad72352851"
+      stageUuid: "264ca594-cb93-8034-9ffd-c83adcf185ff"
 version: 2
 ---
 # covercrop — a crop grown for the soil, not the harvest

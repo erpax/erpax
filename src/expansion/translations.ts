@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expansion",
-    "uuid": "02cb4b79-2673-83e2-aaee-e8c7ffec1292",
+    "uuid": "96cca884-981c-8cad-8742-6700b19625e9",
     "words": [
       "expansion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about expansion — HKDF-SHA256 key derivation replacing Rodin doubling",
-    "uuid": "b7197580-6492-887f-af2e-484e47c6f355",
+    "uuid": "b92930fa-be1d-8749-a917-06c7117051ff",
     "words": [
       "use",
       "when",

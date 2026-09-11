@@ -2,11 +2,11 @@
 name: association
 description: "Use when reasoning about association as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/association"
-coordinate: "vocabulary/association · 1/base · b1d8f2f3"
-contentUuid: "c842df93-1e32-5643-8463-c9ab7a8be15c"
-diamondUuid: "fee026be-60c0-833a-8f86-e0805208cea4"
-uuid: "b1d8f2f3-66b9-8439-adff-0d0fd25c0810"
-horo: 1
+coordinate: "vocabulary/association · 4/weave · ba821cff"
+contentUuid: "df2bac7b-4667-52be-b81f-4d2a92afd48f"
+diamondUuid: "f4bd8cd5-b7c6-8308-83a3-3c22a2ba5259"
+uuid: "ba821cff-09c7-817c-898a-768630a985cf"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7cbfd6c9-cf29-82c5-9ee5-e5e175af7b96"
+  computationUuid: "b697c6c2-1925-885e-b173-b3c491fed0b2"
   stages:
     - stage: path
       stageUuid: "f4d81c64-5b72-84e6-b310-1e97e275327d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "09b523a7-6d6f-8a3a-8ea6-9d21621dfee7"
     - stage: horo
-      stageUuid: "e066b1a4-12fe-8b70-80ac-bbd2f127a1e0"
+      stageUuid: "5f0639c9-6e19-8916-a29c-857af8ef1c58"
     - stage: seal
       stageUuid: "392efa87-9c9e-869b-aec4-793837fd9432"
     - stage: uuid
-      stageUuid: "3d81df06-3fa4-84bc-b168-8635d81c1577"
+      stageUuid: "345bee4b-f59d-8cb6-be50-a6f274ff8c3f"
 version: 2
 ---
 # association

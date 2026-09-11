@@ -2,11 +2,11 @@
 name: insert
 description: "Use when reasoning about insert as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/insert"
-coordinate: "vocabulary/insert · 8/crest · 4eeace6c"
-contentUuid: "06d40cab-aa9b-56be-9d53-14f129e3d1fa"
-diamondUuid: "7a055178-77fc-816e-a913-5e5bfcc5960d"
-uuid: "4eeace6c-74c1-8534-b328-69e54582785d"
-horo: 8
+coordinate: "vocabulary/insert · 7/descent · b6f624fd"
+contentUuid: "e9c49352-be47-5865-9cee-a49c396b4ef1"
+diamondUuid: "440e44d6-049e-8292-b05e-99af47cfddc2"
+uuid: "b6f624fd-46f2-8a9d-996e-6f66514155c7"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "caa730a1-ba04-8d93-9d0c-8eb53296320d"
+  computationUuid: "cfd44b06-12ad-868f-8348-8e0a19872351"
   stages:
     - stage: path
       stageUuid: "588e6e6f-275a-814d-b664-ffb18d237c2d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "53c86181-33b8-8e4b-ab7a-697d06580840"
     - stage: horo
-      stageUuid: "d2f6869b-52e0-8b63-bcd1-9016e264edb5"
+      stageUuid: "3ad5c538-42ef-8129-868c-de11e0190740"
     - stage: seal
       stageUuid: "72f88b31-0531-8d67-a915-6244836f3ee5"
     - stage: uuid
-      stageUuid: "93088d27-b42e-8e5f-9da9-815036485ef8"
+      stageUuid: "05ee839d-71be-8af0-ae3f-7fddefbf665e"
 version: 2
 ---
 # insert

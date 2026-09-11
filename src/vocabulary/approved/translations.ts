@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "approved",
-    "uuid": "3a8cf603-2822-8dc8-ab36-b700b5f1036b",
+    "uuid": "e4c53e0e-48c3-8ab4-bcbb-ce994cc643e6",
     "words": [
       "approved"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value.",
-    "uuid": "ef3c7802-18fc-8280-ad52-fb45af797d32",
+    "uuid": "a018d25c-ef02-83dc-9dd8-0ab5927f8f86",
     "words": [
       "use",
       "when",

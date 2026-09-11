@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "befriend",
-    "uuid": "e3c4de2e-08de-8c9a-b423-a8ed7f45e010",
+    "uuid": "e550aff1-d90f-8c39-a20c-ceae7ba58ad1",
     "words": [
       "befriend"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about befriend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "35fe6667-049c-85d5-b254-a7c04782c710",
+    "uuid": "6e0d1818-86e7-8ec6-bfad-6438429423f0",
     "words": [
       "use",
       "when",

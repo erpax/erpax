@@ -2,11 +2,11 @@
 name: reservation
 description: "Use when reasoning about reservation — Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails"
 atomPath: "vocabulary/reservation"
-coordinate: "vocabulary/reservation · 5/round · f2fc9095"
-contentUuid: "b93ce30b-d86f-5c6a-8094-0a02a47b0bca"
-diamondUuid: "eadb0509-bc85-8a45-8349-51865a41d80d"
-uuid: "f2fc9095-a221-8223-aec4-38d5fc65281c"
-horo: 5
+coordinate: "vocabulary/reservation · 7/descent · f3fc9d13"
+contentUuid: "a82fe66f-7bab-5add-b98c-1e55ea9f67ef"
+diamondUuid: "e0d8e754-f01d-8908-a0f9-17fd79dbb72a"
+uuid: "f3fc9d13-b791-82c9-9790-ba8f8a030e43"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 62
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ac404471-6e57-89c3-acde-cc58cba30273"
+  computationUuid: "04736fb6-3279-8ab5-8fc5-ad7802ac2552"
   stages:
     - stage: path
       stageUuid: "9f52e93a-9e6c-89fa-becd-3d63fbf7d60e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "17ce8ae8-7dc9-8937-8848-ac15d2c8facf"
     - stage: horo
-      stageUuid: "2a848f06-edde-8de3-84e6-ec81178f6b07"
+      stageUuid: "e2bbc866-9024-840d-996a-b16e9babaee7"
     - stage: seal
       stageUuid: "7dadd38e-1cc7-8203-b962-d32c0f94ff04"
     - stage: uuid
-      stageUuid: "4ef48bc0-9cff-8add-939a-a53e23d52acd"
+      stageUuid: "8d1ac59a-42f9-8163-958d-b895580ef844"
 version: 2
 ---
 # reservation

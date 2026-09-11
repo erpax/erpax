@@ -2,11 +2,11 @@
 name: publication
 description: Use when reasoning about publication — A publication event associated with the item.
 atomPath: "vocabulary/publication"
-coordinate: "vocabulary/publication · 4/weave · 5c3751d6"
-contentUuid: "3268b295-1de4-5c61-b07d-f5120f6e7a9b"
-diamondUuid: "ef08dd5d-2994-87d1-9773-7c9162e1b38f"
-uuid: "5c3751d6-59a4-8924-a03e-fc09cbdbfd3a"
-horo: 4
+coordinate: "vocabulary/publication · 1/base · 9b61218e"
+contentUuid: "41c9965d-98d4-5998-97bd-e046dd95bc07"
+diamondUuid: "68bd9114-eb8b-85f2-8432-f8a5b68bf548"
+uuid: "9b61218e-fb85-8ffd-9a07-2d937e31f3d4"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cb8e72d6-bc80-8453-a557-cc11bfef1a08"
+  computationUuid: "26df6bb2-a003-835f-96e9-a56a5d876175"
   stages:
     - stage: path
       stageUuid: "504352a9-6049-8418-9d04-de44048e1ef0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7c4b012e-b06a-85de-a975-6117d7af8413"
     - stage: horo
-      stageUuid: "06554dc6-bfc9-865f-be86-8cae75ce3f5f"
+      stageUuid: "49516b73-0855-8189-b874-1d1b2a568af8"
     - stage: seal
       stageUuid: "61354a4b-a818-8b89-a7c5-986fa3b55009"
     - stage: uuid
-      stageUuid: "cb76c6c7-ca24-8fb7-ba8a-962dc17cc4ea"
+      stageUuid: "82376804-b196-8f3a-8cb7-e57da6e69533"
 version: 2
 ---
 # publication

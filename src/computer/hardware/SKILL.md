@@ -2,11 +2,11 @@
 name: hardware
 description: "Use when reasoning about hardware as a part of computer — vocabulary pivot to @/hardware; nested not duplicated."
 atomPath: "computer/hardware"
-coordinate: "computer/hardware · 4/weave · df891dc0"
-contentUuid: "9164cbac-ea0c-504e-9a75-f8583ac11580"
-diamondUuid: "91b7433e-e8ee-81d4-bbaa-44eb66cc54ce"
-uuid: "df891dc0-c321-8817-863c-2b5c13565b6f"
-horo: 4
+coordinate: "computer/hardware · 2/share · ab2e552f"
+contentUuid: "df7f7309-1188-5bd7-9ad4-bfeb6a883263"
+diamondUuid: "fc7c2a47-5de4-810e-9abf-35f41fefc647"
+uuid: "ab2e552f-3b3e-846c-9f0d-e8ac79e9fb2a"
+horo: 2
 typography:
   partition: computer
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ede3d0bb-7ebf-8e21-b8d2-867030f778fa"
+  computationUuid: "9b33d72b-e877-8d1c-9ddb-989776ef4d13"
   stages:
     - stage: path
       stageUuid: "3ee65197-1d75-8e7e-b462-385388a3c21b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "28dc6d77-936c-8d1b-b9a1-86e0053057ab"
     - stage: horo
-      stageUuid: "c97e7185-d688-86a6-afe7-bf46a44cedbd"
+      stageUuid: "d6e3d361-e4c4-83b4-bbfc-ec8a7d4dd05e"
     - stage: seal
       stageUuid: "43a297dd-fd8b-88db-990f-a56ff02df75a"
     - stage: uuid
-      stageUuid: "4038c9dd-a02e-811e-b611-c960a75e3d93"
+      stageUuid: "8796f086-e049-84e9-a573-269d49ebec05"
 version: 2
 ---
 # computer/hardware — physical machine facet

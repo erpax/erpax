@@ -2,11 +2,11 @@
 name: reports
 description: "Use when reasoning about accounting/reports — financial reports service — trial balance, statements, aging."
 atomPath: "accounting/reports"
-coordinate: "accounting/reports · 2/share · 39fff538"
-contentUuid: "704030ee-8e65-5262-878d-06fad78f8e75"
-diamondUuid: "a72988b3-bee7-8e81-a590-639acf4fce08"
-uuid: "39fff538-e8a9-81a2-8d22-342873829bed"
-horo: 2
+coordinate: "accounting/reports · 7/descent · 706e8e58"
+contentUuid: "f9c051d2-8c03-5146-a536-cd067bb166a0"
+diamondUuid: "84da1a80-4e61-861a-9f01-14f1bf083027"
+uuid: "706e8e58-4a8c-86ec-9498-08dc83c756e2"
+horo: 7
 typography:
   partition: accounting
   bondDegree: 28
@@ -31,7 +31,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b7612842-277b-8385-b791-2a38cbc6e6a1"
+  computationUuid: "dc2f720c-c0e5-8045-a5c5-f238e97ff6e6"
   stages:
     - stage: path
       stageUuid: "135444ee-e49d-83f7-84c5-0cc89b6cc448"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "670ff470-50c0-850a-b6d1-f8940c1ff21b"
     - stage: horo
-      stageUuid: "c6d48f78-9694-8e43-a4e6-fead522c5c49"
+      stageUuid: "b75f9c3e-1f38-8d30-9962-164408330498"
     - stage: seal
       stageUuid: "27b62e8c-a3ee-883c-bd9a-03c80268317d"
     - stage: uuid
-      stageUuid: "039bca7e-9922-892a-8995-eb4d0c4b1f7e"
+      stageUuid: "427a3270-02fa-803f-b5a0-07bc080c6723"
 version: 2
 ---
 # accounting/reports

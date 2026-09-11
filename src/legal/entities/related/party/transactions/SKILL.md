@@ -2,11 +2,11 @@
 name: transactions
 description: "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register."
 atomPath: "legal/entities/related/party/transactions"
-coordinate: "legal/entities/related/party/transactions · 2/share · a21bd50b"
-contentUuid: "186a0e93-5ab4-50a5-ba61-08d56f1b63c0"
-diamondUuid: "98e12589-7b73-875a-bb93-d93c1d438899"
-uuid: "a21bd50b-fe15-8044-89b5-6f5af436f838"
-horo: 2
+coordinate: "legal/entities/related/party/transactions · 4/weave · 697f1176"
+contentUuid: "b2d5d0f5-0875-557b-a959-559c35ca520c"
+diamondUuid: "3f875087-242f-82dc-b201-5870e852323e"
+uuid: "697f1176-61e6-870f-9970-94ec9c4a402d"
+horo: 4
 typography:
   partition: legal
   bondDegree: 54
@@ -15,7 +15,7 @@ standards:
   - "US-GAAP ASC-850 related-party-disclosures"
 bindings: []
 signatures:
-  computationUuid: "e84e15dd-a6e9-8317-bff2-567aad5f7f6d"
+  computationUuid: "abd03366-fc99-8b5e-9142-863810c3835c"
   stages:
     - stage: path
       stageUuid: "ffca0fe6-40fd-8223-91a1-59977a5d78e8"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "3fe4ec39-c8e7-874b-81af-1bf4efa02973"
     - stage: horo
-      stageUuid: "381b3db2-bcce-8468-9a56-89af97069dca"
+      stageUuid: "dddd7b92-b52c-8307-8f77-26189ed06a65"
     - stage: seal
       stageUuid: "05695998-7e01-8912-be2f-5109317f4a59"
     - stage: uuid
-      stageUuid: "e3f520a7-cff5-8387-9c33-182c92f9c441"
+      stageUuid: "a296a256-990a-8b1b-aca6-1026daddd444"
 version: 2
 ---
 # related-party-transactions

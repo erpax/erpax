@@ -2,10 +2,10 @@
 name: rescheduled
 description: "Use when reasoning about rescheduled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/rescheduled"
-coordinate: "vocabulary/rescheduled · 8/crest · 9ca0d339"
-contentUuid: "ef5fa0f5-1e75-51ce-8b35-a463bbc51c98"
-diamondUuid: "1dd7c864-5267-8cb8-a411-885e6bb3607b"
-uuid: "9ca0d339-8e83-871e-b1f5-8ad09a09e472"
+coordinate: "vocabulary/rescheduled · 8/crest · 328cd5dd"
+contentUuid: "f8d003f5-8101-5f9d-842c-be8271e9e28f"
+diamondUuid: "9a44e3ae-8a87-82fe-a793-57c94aaa95f8"
+uuid: "328cd5dd-b471-8d5c-9cfc-67934d5c715b"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b877b7d8-0d22-87ed-81ba-9f1cac13863a"
+  computationUuid: "3bad2708-ca3c-89d7-9e8c-d9c3a384636e"
   stages:
     - stage: path
       stageUuid: "54693de6-937c-8618-89dc-292298981548"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cf33f92f-64ba-8c7b-8ca0-c06db8853ff1"
     - stage: horo
-      stageUuid: "b3388a31-c26a-8d21-a727-aaf449d26a26"
+      stageUuid: "5aed856e-56cc-8ac9-bb6f-5bebd3a8877c"
     - stage: seal
       stageUuid: "6b431c4d-980c-89ac-9ed7-962acc72558d"
     - stage: uuid
-      stageUuid: "f5dbb94f-53ab-833f-84ca-3cad3f1b173d"
+      stageUuid: "1967f9e0-4407-8ec8-9df5-12f2e1c4fe47"
 version: 2
 ---
 # rescheduled

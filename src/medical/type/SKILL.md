@@ -2,11 +2,11 @@
 name: type
 description: "Use when reasoning about type as a medical facet of medical — vocabulary pivot to @/type; nested not duplicated."
 atomPath: "medical/type"
-coordinate: "medical/type · 1/base · 70cdb95b"
-contentUuid: "f929f6c2-6697-5b39-9183-e779873901fa"
-diamondUuid: "1ba59efa-2be8-83fd-9541-583c3b5dcf8c"
-uuid: "70cdb95b-26c9-8e3a-b6c3-b3add2a549e9"
-horo: 1
+coordinate: "medical/type · 4/weave · c0299945"
+contentUuid: "e07c5952-8a54-55ce-8d94-2c3d586d1be1"
+diamondUuid: "6db22528-2425-85a9-bd7e-3a1f78249baa"
+uuid: "c0299945-f3dc-86ce-ada4-e6f0b3ca1fff"
+horo: 4
 typography:
   partition: medical
   bondDegree: 279
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3908621f-60ec-86b1-b610-d2d2c146ebe6"
+  computationUuid: "88bd940a-8a9d-8ca9-b9fb-401a52b4f8bb"
   stages:
     - stage: path
       stageUuid: "bd776134-3565-88dd-8869-321c9f9a7a61"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f921c8f7-521e-8630-b9fb-f583c4473385"
     - stage: horo
-      stageUuid: "abb99981-2640-8699-9186-12d5d20c3ac3"
+      stageUuid: "3fc1f000-720c-8712-a741-f56ef2839620"
     - stage: seal
       stageUuid: "6e96d128-7d4a-8476-9254-03b30ed89cc0"
     - stage: uuid
-      stageUuid: "4806b901-12dd-8661-9b76-5cec75482f6b"
+      stageUuid: "e5a554b1-1552-8335-af18-b1f92380c009"
 version: 2
 ---
 # medical/type — medical facet

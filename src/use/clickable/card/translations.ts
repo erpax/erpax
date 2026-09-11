@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "card",
-    "uuid": "01984e7c-ee1f-8f8c-9183-54fa4832dacd",
+    "uuid": "3b426d30-7c8e-8b99-82a0-01aea6410b9b",
     "words": [
       "card"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about card — Making a card clickable is easy and usually wrong. Wrapping the card in an swallows every nested link.",
-    "uuid": "4f9cf61f-f263-8ddc-9dbe-76fcf482c2eb",
+    "uuid": "63ad6148-14cd-8036-8294-1c31d14bda1c",
     "words": [
       "use",
       "when",

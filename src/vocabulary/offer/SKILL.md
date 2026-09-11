@@ -2,11 +2,11 @@
 name: offer
 description: "Use when reasoning about offer — An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the in"
 atomPath: "vocabulary/offer"
-coordinate: "vocabulary/offer · 4/weave · e58bae44"
-contentUuid: "11f34282-3d3f-5c0e-bde9-447bf10f32f8"
-diamondUuid: "48da80fb-3e4f-834a-a959-23c32491156d"
-uuid: "e58bae44-a845-8ea8-a139-154377e341e4"
-horo: 4
+coordinate: "vocabulary/offer · 1/base · 262fbfc9"
+contentUuid: "9f6f6939-90c0-51ed-913f-9cc00e5e7867"
+diamondUuid: "29c48b77-a8e2-8718-a0e5-5d1b32983e53"
+uuid: "262fbfc9-e2ca-825f-9c2a-b762c8898842"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 60
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0507d3e8-416d-82d1-a714-926d4bbc786f"
+  computationUuid: "4d3d7782-5ba8-88aa-a5ba-5f31291285a6"
   stages:
     - stage: path
       stageUuid: "ad782c4e-ca00-85da-909b-350504b6a3f4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1e1a0b3f-83e0-8aa3-91cc-2c4b0601e072"
     - stage: horo
-      stageUuid: "1b596da5-da15-83e4-a0fc-0b3b22fa5bd8"
+      stageUuid: "fd06de8b-2ef9-8a01-b06f-ff167be1e379"
     - stage: seal
       stageUuid: "b722e646-1077-802b-809d-99172c6a7546"
     - stage: uuid
-      stageUuid: "6a27cb69-d0c1-80b1-b850-2eebde7b9c32"
+      stageUuid: "e476cffe-1e87-8743-9ae3-8980f805c3c4"
 version: 2
 ---
 # offer

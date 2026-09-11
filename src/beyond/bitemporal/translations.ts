@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bitemporal",
-    "uuid": "556bf690-1c2f-81b3-ac15-7d58c0254093",
+    "uuid": "a3f0e1b0-22fa-8f5a-8c56-08220d1e8ef6",
     "words": [
       "bitemporal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when querying a row AS OF two clocks at once — system-time (when the value was recorded) crossed with valid-time (when it was true in the world) — under SQL:2011 temporal tables; isHistoricalQuery gates whether a request looks back in time, asOf is the pending temporal-table read.",
-    "uuid": "65752e14-04c2-8996-adce-3170eee5cdb9",
+    "uuid": "2c706193-ad82-87a6-96d7-ae1f458f92b4",
     "words": [
       "use",
       "when",

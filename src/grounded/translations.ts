@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "grounded",
-    "uuid": "a2460be7-d3af-88e9-b397-2f403abf5458",
+    "uuid": "4bfbd1f6-2004-8175-96b3-f03f747f8c34",
     "words": [
       "grounded"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that a trust computation sources only from sealed content — erpax's tamper-cost (coverageCostLog2 ← collider ← convention) is priced on 6 conventions that scan process.cwd()/src, the mutable unsealed working tree, so the forge-cost reduces to an unverified directory listing; reads git-HEAD-sealed blobs (SHA-addressed) and returns the grounded fraction (11/17), pricing its own provenance into the cost.",
-    "uuid": "5fa483dd-91c4-8225-ba04-d69839cec767",
+    "uuid": "f1c97655-8723-8ee4-beac-999c7d64dc49",
     "words": [
       "use",
       "when",

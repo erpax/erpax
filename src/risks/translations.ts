@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "risks",
-    "uuid": "f5884620-e46b-8b80-a997-d1e917aed607",
+    "uuid": "8b797a86-a5b9-8b86-bb3b-55a9099d7257",
     "words": [
       "risks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about risks — Specific physiologic risks associated to the diet plan.",
-    "uuid": "874a7946-0c6c-8a82-814e-0675382346c1",
+    "uuid": "98e08706-8686-8957-9d0d-0a7f6c95a0dd",
     "words": [
       "use",
       "when",

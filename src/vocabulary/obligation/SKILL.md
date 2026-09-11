@@ -2,18 +2,18 @@
 name: obligation
 description: Use when modelling one obligation — the singular model of the obligations collection (the plural store); a duty to transfer value or perform under an arrangement.
 atomPath: "vocabulary/obligation"
-coordinate: "vocabulary/obligation · 5/round · eb002c64"
-contentUuid: "03cb3bca-3456-5a0a-a0bf-63eda2efcfd2"
-diamondUuid: "e2def576-3ba3-8088-b419-326c9be3aea6"
-uuid: "eb002c64-2991-85b1-a4c5-843ece341128"
-horo: 5
+coordinate: "vocabulary/obligation · 7/descent · e310eb22"
+contentUuid: "fa4d9018-3d23-5503-a6b1-4b3da44dcc02"
+diamondUuid: "5ad56162-7df2-8782-9c4a-a72c1388667a"
+uuid: "e310eb22-4d17-86ea-95a0-ba66265b9e5a"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f1499ae5-e44e-8342-99e1-67ed34ca41a5"
+  computationUuid: "898040f4-e527-8af4-8423-ed77e839e363"
   stages:
     - stage: path
       stageUuid: "a9159e97-1131-8a9b-b2c3-4ec129ef935e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d1601856-7249-836a-b8b9-1fe7c89c9b65"
     - stage: horo
-      stageUuid: "fa83e6e4-af63-83fa-a429-94eab2051135"
+      stageUuid: "649aa831-28b9-8ddd-80d9-fb55475bfaea"
     - stage: seal
       stageUuid: "67ed8fcf-06d1-8bc7-92d9-03991084e9f5"
     - stage: uuid
-      stageUuid: "1e8feb05-befa-84f0-a9dd-afe71a2631d9"
+      stageUuid: "7f5b493c-985d-8ad8-9092-9b4b71e20878"
 version: 2
 ---
 # obligation — the model of one [[obligations]] row

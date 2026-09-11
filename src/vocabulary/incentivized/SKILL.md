@@ -2,11 +2,11 @@
 name: incentivized
 description: "Use when reasoning about incentivized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/incentivized"
-coordinate: "vocabulary/incentivized · 1/base · 692325b1"
-contentUuid: "f0e4ad84-1307-5b0f-8d48-25c9fec77c7a"
-diamondUuid: "27e7b748-88c7-8633-a4ad-a7d9488e5c6b"
-uuid: "692325b1-5caa-8b39-a4fa-aa098a474a34"
-horo: 1
+coordinate: "vocabulary/incentivized · 2/share · cf4cc76d"
+contentUuid: "0eadf628-23a2-5d40-bca4-868c2ed4a612"
+diamondUuid: "915ba00a-f404-8101-9533-d8e4c8d654f6"
+uuid: "cf4cc76d-3ae8-89f6-89b3-9698fd6d5e21"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9f3a2fca-11ff-8d45-81a8-11a830f5a8ca"
+  computationUuid: "82258d5f-573b-847f-a237-8edd61dec810"
   stages:
     - stage: path
       stageUuid: "e9b399e9-a45f-85e5-af3d-43e1a9af242a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0bef55aa-0788-873c-af98-d050b7e6c400"
     - stage: horo
-      stageUuid: "7b49f334-d604-8dd0-9a7e-04ebcb5d15d7"
+      stageUuid: "dfc291b7-2f61-805a-8f65-cf531a1a1c67"
     - stage: seal
       stageUuid: "37e28ef6-ab5a-8c73-832c-eaeb85a2643c"
     - stage: uuid
-      stageUuid: "ee9d9bb7-214d-833c-a466-7a7f20ef2cc9"
+      stageUuid: "f91515f6-3f2d-82fb-9590-807ffdb44bdd"
 version: 2
 ---
 # incentivized

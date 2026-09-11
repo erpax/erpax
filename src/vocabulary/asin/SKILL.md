@@ -2,11 +2,11 @@
 name: asin
 description: "Use when reasoning about asin — An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazo"
 atomPath: "vocabulary/asin"
-coordinate: "vocabulary/asin · 5/round · ad557d99"
-contentUuid: "094a5a1e-2b71-559b-82bb-9ae175d10d20"
-diamondUuid: "e413a6de-eaa8-87bc-81dc-841a105d7bb9"
-uuid: "ad557d99-874a-8c3b-9225-46454a64155c"
-horo: 5
+coordinate: "vocabulary/asin · 2/share · c9f7f951"
+contentUuid: "a590185a-c653-5d57-a28b-cbbc98df75f6"
+diamondUuid: "603a47b2-2e18-8fc2-9775-d71675d14e5d"
+uuid: "c9f7f951-0366-8e9f-8041-07b6cb83f8d9"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7127c111-5bb3-8a3b-8ca6-e90bd3c7eae0"
+  computationUuid: "ed21d64f-2e4c-8d4f-b54e-14aa55fe1c7d"
   stages:
     - stage: path
       stageUuid: "01db45f0-065f-80b4-b1f8-16eb41a3cbff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cad9604b-c9a9-842c-a4d4-2234f9011232"
     - stage: horo
-      stageUuid: "b1187e5e-8d18-830e-9251-bb7085186b30"
+      stageUuid: "be51d7f1-27b6-87c0-8ed9-78cf9fdafe64"
     - stage: seal
       stageUuid: "209dcd8c-4cf8-8c26-bcbc-baaa858b35f1"
     - stage: uuid
-      stageUuid: "8d3da9bb-28f5-882c-87f6-5627552cdaea"
+      stageUuid: "a022d35f-8c39-81f1-8da5-912ac156160d"
 version: 2
 ---
 # asin

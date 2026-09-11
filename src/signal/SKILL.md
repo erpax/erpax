@@ -2,11 +2,11 @@
 name: signal
 description: "Use when a horo position or any uuid must become perceivable — colour, sound, realtime motion — derived from the address itself with zero per-item design; identity IS its render, drift is visible."
 atomPath: signal
-coordinate: "signal · 7/descent · a49e0e6a"
-contentUuid: "1667a6d7-8f4c-560f-a24d-e7ddccb0b1e8"
-diamondUuid: "e78e676d-c720-827d-aec1-90770f36e7db"
-uuid: "a49e0e6a-f030-8ada-97ce-061625944018"
-horo: 7
+coordinate: "signal · 4/weave · ccb9691d"
+contentUuid: "fcc8ca67-dbfe-5f32-b390-79336bca7afa"
+diamondUuid: "097409a5-4c24-82ba-ae9d-8070759d2a3e"
+uuid: "ccb9691d-abc5-8863-82a8-1ecd927315c5"
+horo: 4
 typography:
   partition: signal
   bondDegree: 187
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "03db5d12-b3e6-841a-b79b-ce1ebec143c0"
+  computationUuid: "39716c00-8dae-8376-b12d-659d8dcbbcb7"
   stages:
     - stage: path
       stageUuid: "a1e6660d-940d-8654-a992-825266ec712d"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "f743c78d-8fcb-8c23-910e-aa472ade1d1e"
     - stage: horo
-      stageUuid: "0b30005b-8d39-8d15-9a48-f4e85cf87ede"
+      stageUuid: "04c0fbdf-bb04-8569-a9b3-c416eadfcbf7"
     - stage: seal
       stageUuid: "4b045eaf-a4c9-8ef6-a0a9-72b111e3ee00"
     - stage: uuid
-      stageUuid: "bd9d6ebc-a068-8661-944d-574fee003539"
+      stageUuid: "065166ff-6bb7-87e9-8be2-2445a1b4e263"
 version: 2
 ---
 # signal — identity rendered as colour · sound · motion

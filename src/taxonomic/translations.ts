@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "taxonomic",
-    "uuid": "e887988b-c93e-87d1-a0ab-b2e5a2d143c2",
+    "uuid": "e65f6310-02e3-8878-8119-c1c0776759e0",
     "words": [
       "taxonomic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about taxonomic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "8c0a5974-c197-8bac-8901-d214f584425a",
+    "uuid": "7414e70c-fb0f-852b-9e15-543afc46dcf9",
     "words": [
       "use",
       "when",

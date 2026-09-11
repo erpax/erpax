@@ -2,10 +2,10 @@
 name: calculation
 description: Use when modelling one calculation — the singular model of the calculations collection (the plural store); a computed numeric result derived from inputs.
 atomPath: "vocabulary/calculation"
-coordinate: "vocabulary/calculation · 8/crest · 3cc121e1"
-contentUuid: "6d69a7d2-6039-5262-b9d0-59d0816ef638"
-diamondUuid: "13f9ddfa-4149-8d2f-94ba-2f5f4c561aa1"
-uuid: "3cc121e1-f52d-8a7d-8f17-2e76f43a4bd4"
+coordinate: "vocabulary/calculation · 8/crest · 1a369cf5"
+contentUuid: "02376288-409d-5a30-9560-9295d1e731b6"
+diamondUuid: "2ceec46b-5de2-8cc0-9916-bcad59525b6e"
+uuid: "1a369cf5-3731-8146-ae58-7cfde6526626"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e4a505b3-043f-87e0-bbf9-4a8bb915c8c2"
+  computationUuid: "ac72eb53-2931-898a-9547-a4820a479197"
   stages:
     - stage: path
       stageUuid: "9d855f43-b6cd-8f22-aba1-cf16222fca59"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "55efa895-6d5a-86c2-9109-c0cb67155148"
     - stage: horo
-      stageUuid: "8684df33-b365-8ea8-bda3-96e6feddf986"
+      stageUuid: "0318a003-6bbc-8bb8-aff9-5348c7c944eb"
     - stage: seal
       stageUuid: "83f324f1-c3b4-8561-b088-dba90f051d28"
     - stage: uuid
-      stageUuid: "087272e3-3074-8110-a39a-2ddb97934682"
+      stageUuid: "bdeb1086-15a6-8b4c-8279-3cf228cbe64f"
 version: 2
 ---
 # calculation — the model of one [[calculations]] row

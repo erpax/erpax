@@ -2,11 +2,11 @@
 name: obligations
 description: "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection."
 atomPath: "customers/contracts/performance/obligations"
-coordinate: "customers/contracts/performance/obligations · 1/base · 80d308a1"
-contentUuid: "8e05f05f-61c6-56da-9318-63f98a2aff44"
-diamondUuid: "f07ef074-35e1-8350-8e5b-2c927bfa68c9"
-uuid: "80d308a1-b150-85d0-b3a2-7a7c8686ef9e"
-horo: 1
+coordinate: "customers/contracts/performance/obligations · 5/round · 3a636a54"
+contentUuid: "45d6ef60-7e78-5a0f-be59-378df1b26489"
+diamondUuid: "2eb2c308-4b5e-8f46-b82e-e16472e02fd2"
+uuid: "3a636a54-835d-8cac-9d6b-a7fa759fcc97"
+horo: 5
 typography:
   partition: customers
   bondDegree: 28
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "77c0dbc7-16f8-868e-a41a-1f173e925643"
+  computationUuid: "4d0f37fd-4ebe-847f-94ba-6d8e801e0060"
   stages:
     - stage: path
       stageUuid: "fc62e037-117b-8f30-b5d8-f0d29725b571"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "f57ced79-e4e8-8742-acc5-a4b95f239144"
     - stage: horo
-      stageUuid: "aadc72ff-05ac-8374-a034-7dcd0ff2fed7"
+      stageUuid: "5b21a996-f40b-8e82-adf0-da10821c6a99"
     - stage: seal
       stageUuid: "545c13c8-0931-85dd-9f7c-b290e53396c4"
     - stage: uuid
-      stageUuid: "c091c53a-60e5-8bac-9597-1581fbc0dc79"
+      stageUuid: "0ff1a436-164e-89e0-b4af-eed27fb3c813"
 version: 2
 ---
 # performance-obligations

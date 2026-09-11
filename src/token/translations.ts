@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "token",
-    "uuid": "15ef5045-a3a9-86da-a770-5c1fcb2d2e4f",
+    "uuid": "6ae04b7d-663a-8cd1-b2e7-0bafcc7d108b",
     "words": [
       "token"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining design primitives — a design token is a named, semantic design decision (color, font-size, spacing, motion) reused across components. The granular unit of design consistency.",
-    "uuid": "24a73f5d-8c23-8d5e-a99e-be06ae8b8c36",
+    "uuid": "723130b8-5ee3-8e10-b6d4-1d76f0f5ba6f",
     "words": [
       "use",
       "when",

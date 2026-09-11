@@ -2,11 +2,11 @@
 name: default
 description: "Use when reasoning about defaults — nothing defines a default; the default is by architecture, derived from the content-uuid and the path, never a hardcoded fallback, because a defined default is an assumption and an assumption is entropy."
 atomPath: default
-coordinate: "default · 8/crest · 922523db"
-contentUuid: "b887a0b4-9a79-5d43-aaca-393d7cacca88"
-diamondUuid: "9a430363-f351-8b27-a0ee-7e47b8851e4b"
-uuid: "922523db-a2c0-8340-b3d9-2f7bc9b1fb96"
-horo: 8
+coordinate: "default · 7/descent · fdb4c306"
+contentUuid: "1a790531-f731-56e3-95da-865c18a1846c"
+diamondUuid: "2a334b86-63ad-858f-bb2d-6f0eb5fe4673"
+uuid: "fdb4c306-e4b2-8619-b911-979d190d8499"
+horo: 7
 typography:
   partition: default
   bondDegree: 22
@@ -17,7 +17,7 @@ standards:
   - "computed-not-hardcoded · content-addressed identity (RFC 9562) · no free parameters (zero entropy)"
 bindings: []
 signatures:
-  computationUuid: "f83ecaab-5837-8ac8-a32d-3c326092d380"
+  computationUuid: "ba22a343-fddf-80ea-b494-9677a211302f"
   stages:
     - stage: path
       stageUuid: "c340c85e-5b4c-8efd-806f-2eb2ee73fe77"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "861efd06-c433-808b-a5b2-faab459d1aad"
     - stage: horo
-      stageUuid: "b6fd8234-4940-82ee-a702-e74d1d8428fa"
+      stageUuid: "ef6b02b7-30b8-80ce-9953-4eb06bb99dcb"
     - stage: seal
       stageUuid: "70a802ce-0bc7-815e-8057-94a24ced5629"
     - stage: uuid
-      stageUuid: "f19a840e-23f0-89ee-a7ce-b1494b0f72c5"
+      stageUuid: "c57dd597-36ec-8a34-99b7-1c9c807f7232"
 version: 2
 ---
 # default — nothing defines a default; the default is by architecture

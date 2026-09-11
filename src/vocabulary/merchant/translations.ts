@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "merchant",
-    "uuid": "1ab4fba2-d716-8534-967f-8605b07c38e1",
+    "uuid": "001f3048-f928-8c76-bf10-8d35b5b23dda",
     "words": [
       "merchant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about merchant — 'merchant' is an out-dated term for 'seller'.",
-    "uuid": "968d7a15-2c79-82f6-a4d3-38f4f26ae602",
+    "uuid": "9b2b78b9-8cad-8ce3-8606-6352c4d15edb",
     "words": [
       "use",
       "when",

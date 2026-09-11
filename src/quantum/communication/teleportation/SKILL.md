@@ -2,11 +2,11 @@
 name: teleportation
 description: "Use when reasoning about quantum teleportation on the matrix — a meaning is reconstructed at the receiver from its content-uuid plus the shared entangled binding, the carrier never travels (only the classical content-address does), and the received message carries the same identity (uuid) it was addressed by."
 atomPath: "quantum/communication/teleportation"
-coordinate: "quantum/communication/teleportation · 2/share · 9fad6d38"
-contentUuid: "07b25a30-6ffd-57c9-b472-6f7e670309bb"
-diamondUuid: "29213a13-8b7f-8107-845b-2db6a465b050"
-uuid: "9fad6d38-f1eb-825d-86ca-964dc6a8eb65"
-horo: 2
+coordinate: "quantum/communication/teleportation · 1/base · b9622e77"
+contentUuid: "169c0a78-3d9c-5bbe-a28d-00068a2f6ea5"
+diamondUuid: "1e8fdfaf-2b9d-8f30-9e2f-7e169149fbe3"
+uuid: "b9622e77-953d-8ad7-9be8-542685e9bcec"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "quantum teleportation (Bennett et al. 1993); RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "bddf7f52-a6c4-8847-ba88-76b7cad59bed"
+  computationUuid: "ebc1af9a-6c82-8018-8d4e-22a32e881e34"
   stages:
     - stage: path
       stageUuid: "c0e88b14-de81-82a8-9e02-8d9ba57198e5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1148f649-e63b-84f6-bd6c-946f99029fe1"
     - stage: horo
-      stageUuid: "4e2cffdc-d41e-8222-b75a-18afef182366"
+      stageUuid: "0dd5740b-8c2b-8c17-86a5-f2b381461bf3"
     - stage: seal
       stageUuid: "57c731cd-a039-89d8-ae21-81e22e3a45b6"
     - stage: uuid
-      stageUuid: "be264aef-eccf-8420-b314-b6596878f192"
+      stageUuid: "3f21228b-ae11-8087-b59a-141f311ff649"
 quantum:
   superposition:
     - communication
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "bddf7f52-a6c4-8847-ba88-76b7cad59bed"
-    contentUuid: "07b25a30-6ffd-57c9-b472-6f7e670309bb"
+    computationUuid: "ebc1af9a-6c82-8018-8d4e-22a32e881e34"
+    contentUuid: "169c0a78-3d9c-5bbe-a28d-00068a2f6ea5"
 version: 2
 ---
 # quantum/communication/teleportation — identity reconstructed over the entangled channel
@@ -66,4 +66,4 @@ Matter-twin: `src/quantum/communication/teleportation/index.ts` (`teleport` · `
 
 @standard quantum teleportation (Bennett et al. 1993); RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `07b25a30-6ffd-57c9-b472-6f7e670309bb` · account `quantum/communication/teleportation` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `169c0a78-3d9c-5bbe-a28d-00068a2f6ea5` · account `quantum/communication/teleportation` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

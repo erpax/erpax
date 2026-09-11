@@ -2,11 +2,11 @@
 name: inventories
 description: "Use when tracking per-SKU on-hand inventory balance at a consignee location — shipments in, sales out, returns, cycle-count reconciliation, IAS-2 §6 balance-sheet ownership retained by consignor, valuation method, and GL account mapping. The consignment per-SKU running-balance collection."
 atomPath: "warehouse/locations/consignment/arrangements/consignment/inventories"
-coordinate: "warehouse/locations/consignment/arrangements/consignment/inventories · 1/base · 1a8e4900"
-contentUuid: "f93a6645-d75c-5167-83f3-50fa3485693c"
-diamondUuid: "54474e4d-f397-88bf-b76a-1d43cfdc9109"
-uuid: "1a8e4900-8391-8d36-b5cd-a0d189004b7f"
-horo: 1
+coordinate: "warehouse/locations/consignment/arrangements/consignment/inventories · 2/share · b08ff95f"
+contentUuid: "c9bcb58b-5012-521b-9a62-6aa1afd8d00f"
+diamondUuid: "f1626969-ef6d-81fd-a7d0-c6660e1cb582"
+uuid: "b08ff95f-97ad-813b-80f8-ad9749a1a486"
+horo: 2
 typography:
   partition: warehouse
   bondDegree: 32
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b1b08557-7d67-8038-b136-c98150929e0d"
+  computationUuid: "fe680a94-a7e0-8828-8bbd-46df75b6dd99"
   stages:
     - stage: path
       stageUuid: "68d8a9b7-112c-8daa-b4d8-8fcf66151625"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "f527bdb7-8286-8844-be69-b5c234cd391e"
     - stage: horo
-      stageUuid: "c810fe75-6235-8584-8d65-9840a2902b3a"
+      stageUuid: "507f09b0-a443-845a-9d6e-d46d50225728"
     - stage: seal
       stageUuid: "3e475b3c-5740-808e-8070-9c31ac16f091"
     - stage: uuid
-      stageUuid: "9c3bc78f-7609-8fe1-8312-e2c86b620234"
+      stageUuid: "46020a18-6cc5-806e-af45-a9ae946121f3"
 version: 2
 ---
 # consignment-inventory

@@ -2,11 +2,11 @@
 name: has
 description: "Use when reasoning about has as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/has"
-coordinate: "vocabulary/has · 1/base · 06db1d0a"
-contentUuid: "39f986d0-7472-513a-899c-3f1216ea3bce"
-diamondUuid: "d1798b7e-b32b-88a3-b36a-67d32e771f43"
-uuid: "06db1d0a-6ec9-8038-84d4-26ee855dd122"
-horo: 1
+coordinate: "vocabulary/has · 4/weave · 7f6012ca"
+contentUuid: "cc8e3c14-9670-5ab5-aa0d-053145858738"
+diamondUuid: "cd729c4c-de30-8e9e-9fd6-d23cccd9f1fb"
+uuid: "7f6012ca-d16f-8d19-a009-2985d83e82a4"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 225
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6701d87a-9ea1-8905-9a09-30f1dde7ad0e"
+  computationUuid: "39d4672f-2669-8756-802a-3bc00770ca86"
   stages:
     - stage: path
       stageUuid: "196af7c1-994f-8d48-9a66-fb11316ac694"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a914f07a-c76c-870a-89a0-73e00291dfb6"
     - stage: horo
-      stageUuid: "63448458-f1a4-864a-9c53-dbd0f80c2819"
+      stageUuid: "d3746729-cfaf-85d8-b6f7-d9da99a654bd"
     - stage: seal
       stageUuid: "aa532905-29ad-8a3d-9ba7-58ce263c06b1"
     - stage: uuid
-      stageUuid: "55577fd2-dd65-85a4-90c7-8ef943fc7814"
+      stageUuid: "f1fbe319-0c2e-862e-8beb-32d66c9c6fe1"
 version: 2
 ---
 # has

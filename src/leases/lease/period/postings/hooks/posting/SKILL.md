@@ -2,11 +2,11 @@
 name: posting
 description: "Use when reasoning about posting — Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry."
 atomPath: "leases/lease/period/postings/hooks/posting"
-coordinate: "leases/lease/period/postings/hooks/posting · 4/weave · e3b5d82a"
-contentUuid: "1dc03f45-9a74-5e08-a65e-5a45c7e3e02a"
-diamondUuid: "22fd8a3e-1c5c-8cd8-b001-303904b1a2ce"
-uuid: "e3b5d82a-a41d-8d97-a98e-60a6ebd0d4d1"
-horo: 4
+coordinate: "leases/lease/period/postings/hooks/posting · 2/share · 3e44932a"
+contentUuid: "ec5e92ca-28b2-5a92-8d9c-a06d4ca8e054"
+diamondUuid: "e372871a-8e4a-80f0-b4b3-7152dcf36c58"
+uuid: "3e44932a-e3b5-8826-b66d-1caf3f367e0d"
+horo: 2
 typography:
   partition: leases
   bondDegree: 44
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-842-20-35 lessee-subsequent-measurement"
 bindings: []
 signatures:
-  computationUuid: "aeebd77e-9112-8a9d-b4af-56d3fa45d4d7"
+  computationUuid: "c9161b80-f02c-81dc-8659-9a2749205668"
   stages:
     - stage: path
       stageUuid: "d80242ea-d08b-83fe-857f-871c3e68d8ed"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "d4ae867e-afff-82ab-bc39-b8c2049cb363"
     - stage: horo
-      stageUuid: "ea5786f4-4ed0-8117-8d9e-3693ca881fdd"
+      stageUuid: "cfd5c4c6-b98a-80c2-8ba3-76269a018a25"
     - stage: seal
       stageUuid: "149cfdd5-3848-8a79-94e4-b7f76802e6a6"
     - stage: uuid
-      stageUuid: "1457f6b3-9680-8520-a157-e63c5d55cb43"
+      stageUuid: "50f75169-afe3-8b64-8cf6-605a8130483b"
 version: 2
 ---
 # leases/lease/period/postings/hooks/posting

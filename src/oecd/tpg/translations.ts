@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tpg",
-    "uuid": "cf256147-5fd9-8473-9c7b-27316c8e5c81",
+    "uuid": "9b9525b4-7f1b-828d-b52e-7771057110ca",
     "words": [
       "tpg"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing OECD Transfer Pricing Guidelines.",
-    "uuid": "80d0c221-45e1-833c-982a-1b3f8f61a3c8",
+    "uuid": "341b54b8-a646-8cc2-bcab-284dd5fdbc86",
     "words": [
       "use",
       "when",

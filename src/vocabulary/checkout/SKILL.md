@@ -2,11 +2,11 @@
 name: checkout
 description: "Use when reasoning about checkout as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/checkout"
-coordinate: "vocabulary/checkout · 5/round · fcc27bb1"
-contentUuid: "069f3e63-3d65-582a-9c6c-8d0e48737a2f"
-diamondUuid: "ab91e3fd-8d94-8613-91eb-d33214abddcc"
-uuid: "fcc27bb1-453a-8246-99f3-2c58c9a1eb7b"
-horo: 5
+coordinate: "vocabulary/checkout · 4/weave · fe3b90b7"
+contentUuid: "c728f9cc-f5e0-5828-9808-20a020e6da13"
+diamondUuid: "2913ab7b-8edc-8fa5-a80e-1846e40cb6da"
+uuid: "fe3b90b7-8dba-8abe-8bbe-73eb7f795523"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d359afec-049f-8c8a-bf9e-00d1bf8e207d"
+  computationUuid: "37683d60-df47-8df3-aa23-f19d071fea71"
   stages:
     - stage: path
       stageUuid: "ca847255-4f75-8d50-a62f-f5f249ffc04f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "281a153a-3496-87a6-a1c1-5a82927d1ee9"
     - stage: horo
-      stageUuid: "64243a88-6878-8b35-8f8e-d2db161259c1"
+      stageUuid: "2d0a040d-c77a-8868-94a2-fc5467888e3f"
     - stage: seal
       stageUuid: "9d02930d-bbc9-8635-be2a-cb2e07d354c6"
     - stage: uuid
-      stageUuid: "152d2b55-e80e-84d1-95f3-8d453bcd6ca9"
+      stageUuid: "e1ae7999-7330-8353-b03b-1f32e2acd049"
 version: 2
 ---
 # checkout

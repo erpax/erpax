@@ -2,18 +2,18 @@
 name: hook
 description: Use when modelling one hook — the singular model of the hooks collection (the plural store); a lifecycle gateway where logic runs on a record event.
 atomPath: "vocabulary/hook"
-coordinate: "vocabulary/hook · 7/descent · 3fb9ef72"
-contentUuid: "c206aeae-bfe0-5293-a891-2e6e097fe0e4"
-diamondUuid: "6600c04e-e8d8-83fb-af0d-c98d032d89ff"
-uuid: "3fb9ef72-97b8-8038-a497-af70abc071e0"
-horo: 7
+coordinate: "vocabulary/hook · 1/base · a38ba825"
+contentUuid: "db3ea677-0956-53dd-bf55-8fb886226aa9"
+diamondUuid: "3c9bc9e3-c37e-84a9-9d0b-486dfb5ba36e"
+uuid: "a38ba825-ca9a-8e65-98a8-be77fabd1159"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6b493da4-007d-89de-886f-58fb6ca1edcf"
+  computationUuid: "d456700e-ff07-89d7-b5d6-879008f366d1"
   stages:
     - stage: path
       stageUuid: "4664f217-4485-874f-885e-5f75d5089e1f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c8effbd0-ba42-8c7f-a3ea-d339b276a63f"
     - stage: horo
-      stageUuid: "4b50d3d5-40e2-879a-9b12-147e0f4b0f23"
+      stageUuid: "9aee9d67-d0d0-838c-8fa8-efb18506451f"
     - stage: seal
       stageUuid: "ed06fb86-7f1c-80e3-b6fc-d63671eb50ac"
     - stage: uuid
-      stageUuid: "684e92d5-e475-8a56-8b37-0eb06b3124c5"
+      stageUuid: "ddaf2f95-dfcd-8436-82b4-ae3e90a18f3a"
 version: 2
 ---
 # hook — the model of one [[hooks]] row

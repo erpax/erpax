@@ -2,11 +2,11 @@
 name: establishment
 description: "Use when reasoning about establishment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/establishment"
-coordinate: "vocabulary/establishment · 8/crest · 4df6ce9f"
-contentUuid: "0c7c0693-02b5-58d1-ba96-f657b91e02e9"
-diamondUuid: "540ebba6-e2be-88ce-a310-4a18b000b6e6"
-uuid: "4df6ce9f-86b9-8f7c-b866-ee3f997b5468"
-horo: 8
+coordinate: "vocabulary/establishment · 2/share · 152b90ec"
+contentUuid: "084dfc51-178e-5a8d-a3de-aedf4c2e45cc"
+diamondUuid: "5e3f71d3-2706-82b7-9058-7d513c4cd78a"
+uuid: "152b90ec-8ef3-83da-bdb4-374e92a21a39"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b6637fb0-c3d2-857a-8da8-a00f00390d14"
+  computationUuid: "35e1db23-ef8f-8f3f-947e-78492f8490c5"
   stages:
     - stage: path
       stageUuid: "641d5564-dac1-8d5e-b8e2-e95b5a5c880f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "52193da2-1ceb-8bf4-9a7e-f99a09bdb71d"
     - stage: horo
-      stageUuid: "14016d6b-5bf5-8caf-8921-bac9592834de"
+      stageUuid: "ff5f1a13-3d77-83c7-9869-e6d1b8d64d63"
     - stage: seal
       stageUuid: "ad7ec13f-4b7f-861b-8bc3-fe40f05ce8b1"
     - stage: uuid
-      stageUuid: "bd57507e-fc50-8000-8343-a24da176915a"
+      stageUuid: "3942f109-788a-85c6-944f-8025280a3a21"
 version: 2
 ---
 # establishment

@@ -2,11 +2,11 @@
 name: getting
 description: "Use when reasoning about getting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/getting"
-coordinate: "vocabulary/getting · 4/weave · 76ae9573"
-contentUuid: "bd80860a-d423-515f-ab2c-4fa47ad9c129"
-diamondUuid: "f58a6229-2037-8d16-9848-83f961970766"
-uuid: "76ae9573-0543-8ef2-bc61-5a7300c4ca2e"
-horo: 4
+coordinate: "vocabulary/getting · 2/share · 6b85da95"
+contentUuid: "4d92dab4-7944-5b10-84bd-c6fbc87d90c6"
+diamondUuid: "f0c7b1be-75d1-8752-8562-3496e5b4fa0f"
+uuid: "6b85da95-729e-8cc1-9ed7-24f79787c94c"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "62509f71-b4e9-8f9a-a596-11f3e42eb6c1"
+  computationUuid: "afff5752-31a7-8957-a1d2-73d33bda8914"
   stages:
     - stage: path
       stageUuid: "e69a191f-b49c-8c65-bafa-52b0a861d4c8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5053b4cd-6330-87a1-9f73-55c5158f6112"
     - stage: horo
-      stageUuid: "96f017e5-ee77-87f5-8ce0-ea6f66c241bd"
+      stageUuid: "d93f7fb0-bb82-8efd-b258-3e964892d378"
     - stage: seal
       stageUuid: "7add155b-5796-8a53-ad67-d6a01a3c4e1e"
     - stage: uuid
-      stageUuid: "cafffc91-e82d-8adf-aa86-e724eb551289"
+      stageUuid: "d4a9010e-fed7-87b6-95e4-b8dcefc9b631"
 version: 2
 ---
 # getting

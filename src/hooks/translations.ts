@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "b10ef60c-7350-85c1-aecf-90ceaa41ea4c",
+    "uuid": "4601eb82-984c-856d-9da4-e9b9679a1982",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \\\"my hook didn't run / ran at the wrong time\\\".",
-    "uuid": "0f839e57-3432-81e5-9a69-ea767cc424c1",
+    "uuid": "32cd2487-2742-8b10-b3c4-113a087f4083",
     "words": [
       "use",
       "when",

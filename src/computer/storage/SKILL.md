@@ -2,11 +2,11 @@
 name: storage
 description: "Use when reasoning about storage as a part of computer — vocabulary pivot to @/storage; nested not duplicated."
 atomPath: "computer/storage"
-coordinate: "computer/storage · 7/descent · 8776bd42"
-contentUuid: "09d0e947-64b8-5998-b225-53bdf365bc69"
-diamondUuid: "8de53ecc-4540-8d4f-bcfc-e10002e38ec3"
-uuid: "8776bd42-28e0-8ab0-9daa-5e80a535aa9f"
-horo: 7
+coordinate: "computer/storage · 5/round · b927eab0"
+contentUuid: "d04ad57a-0e55-56b2-876f-9327268b23dd"
+diamondUuid: "8e73ec9a-eb7b-8db7-9f7e-0d443b8909c1"
+uuid: "b927eab0-7de0-820e-9ec5-f591429a4429"
+horo: 5
 typography:
   partition: computer
   bondDegree: 36
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3abd2bf9-66c1-891d-b6e4-4608bb4762cf"
+  computationUuid: "ad0af191-c24e-83cb-b5a3-ef60ee0d22f8"
   stages:
     - stage: path
       stageUuid: "69dac02f-584d-8876-94c6-3b1c64db9319"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a0d04b01-3305-8dee-880a-af79003bd7d4"
     - stage: horo
-      stageUuid: "0d94c566-8c02-831c-aef6-3f66e9403e1f"
+      stageUuid: "67c03e61-c12a-8c4d-9ca8-00de1a3bdc4f"
     - stage: seal
       stageUuid: "5a82b980-73d2-8fca-abad-ca28f1c21c80"
     - stage: uuid
-      stageUuid: "0dee53a2-8df5-8a1c-9bca-525776a34fd8"
+      stageUuid: "02f1eb67-9677-8082-a6bc-dfc1fc26cc34"
 version: 2
 ---
 # computer/storage — persists bytes

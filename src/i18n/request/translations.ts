@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "request",
-    "uuid": "be9a87f7-c59c-8d6d-a89a-64edbd711d49",
+    "uuid": "2293a8b3-ea28-84da-b5b6-a94982136ba2",
     "words": [
       "request"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the i18n request — locale and message resolution.",
-    "uuid": "b6babb8f-fedb-8dee-a5d4-b4c69f865685",
+    "uuid": "88331b43-4040-8552-b4fd-155934b0f2ef",
     "words": [
       "use",
       "when",

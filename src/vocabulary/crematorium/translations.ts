@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "crematorium",
-    "uuid": "11cda79e-9edd-88ea-aab5-5d3d7be46d69",
+    "uuid": "b18f8ea8-ace1-877b-a911-384f84aa8b4d",
     "words": [
       "crematorium"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about crematorium — A crematorium.",
-    "uuid": "3af9d995-98a7-8b60-8ee0-0ee1fb2b6c36",
+    "uuid": "eaa60a17-b406-8129-82e5-2dc4f99eeefa",
     "words": [
       "use",
       "when",

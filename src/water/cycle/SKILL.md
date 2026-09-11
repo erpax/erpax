@@ -2,11 +2,11 @@
 name: cycle
 description: "Use when reasoning about splitting water and burning it back — the loop purifies and stores, and cannot generate. Hess's law makes over-unity an identity failure rather than an engineering one, and the model searches the whole efficiency space for a counter-example instead of asserting there is none."
 atomPath: "water/cycle"
-coordinate: "water/cycle · 2/share · abf62a15"
-contentUuid: "28c0fa79-454f-551b-8e2a-bbd183624180"
-diamondUuid: "a5398cb7-5b1f-8005-b624-d7ec0c1a5faa"
-uuid: "abf62a15-a83c-8669-b7b8-a89a72c57a50"
-horo: 2
+coordinate: "water/cycle · 1/base · 5efdf412"
+contentUuid: "d36d7d6f-1d38-5692-9358-7c6c18f049c7"
+diamondUuid: "cfeb979d-b789-8551-aa74-73ab3028b458"
+uuid: "5efdf412-9c8c-84c5-b79f-81a22b55e7ea"
+horo: 1
 typography:
   partition: water
   bondDegree: 58
@@ -14,7 +14,7 @@ standards:
   - "NIST — ΔH°f H2O(l) = −285.83 kJ/mol · H2O(g) = −241.83 kJ/mol"
 bindings: []
 signatures:
-  computationUuid: "9d947f4d-e065-8225-87de-49d642e07862"
+  computationUuid: "06ebe21c-fcd8-8e15-9955-12f5b7ee59a5"
   stages:
     - stage: path
       stageUuid: "ba345d46-28f1-8a7d-b76d-3d3136988a51"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "86b81460-6543-8ee5-8bc7-0b894229743d"
     - stage: horo
-      stageUuid: "17567cbd-c332-8a40-a67a-0fb4b7ecb7bf"
+      stageUuid: "50d15a9e-a913-8b11-8a14-b74924d79487"
     - stage: seal
       stageUuid: "f6988894-73ed-835a-90e8-9006dd932988"
     - stage: uuid
-      stageUuid: "69146eb6-4b90-838b-8134-ba03f4a26581"
+      stageUuid: "44fe1601-58ad-8b85-ab91-7bff1ece5615"
 version: 2
 ---
 # cycle — the loop purifies and stores; it cannot generate

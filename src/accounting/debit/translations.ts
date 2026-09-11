@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "debit",
-    "uuid": "a6b8561e-d38a-814c-96b3-88e48f5e4b72",
+    "uuid": "2cffb7a8-a1dd-8ac1-8b14-10abdf4a4226",
     "words": [
       "debit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting/debit — debit/credit logic — double-entry validation and journal lines.",
-    "uuid": "4c3415f0-4a78-87e0-86a3-ee1321a5f22e",
+    "uuid": "9305949f-ddad-83ee-8364-a2ad79782f8f",
     "words": [
       "use",
       "when",

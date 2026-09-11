@@ -2,11 +2,11 @@
 name: originates
 description: "Use when reasoning about originates — The vasculature the lymphatic structure originates, or afferents, from."
 atomPath: "vocabulary/originates"
-coordinate: "vocabulary/originates · 8/crest · a6511624"
-contentUuid: "dbf23fd6-c84e-5d5b-a7b9-1a0bab466a43"
-diamondUuid: "0da3ec1e-7328-8ba6-a295-e8b238bb19ee"
-uuid: "a6511624-5c12-8538-97c0-28f3b904decc"
-horo: 8
+coordinate: "vocabulary/originates · 4/weave · 2697aa2d"
+contentUuid: "e563e560-b71a-54c8-b089-e3fccbacd954"
+diamondUuid: "5a54883d-5879-8906-b013-60d148c4475c"
+uuid: "2697aa2d-d9b5-8e9f-92d2-1d8533537fa6"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "be5c7bb2-ac6a-84c6-8331-6a7b7744a13a"
+  computationUuid: "ca48301b-bdb3-83da-a2fe-32e23f376d49"
   stages:
     - stage: path
       stageUuid: "e936187f-860f-82fb-9b68-46e48456448f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6cf52303-bef9-8871-9cc7-92d15818c29e"
     - stage: horo
-      stageUuid: "19d089cf-3a19-834f-9514-512380d91099"
+      stageUuid: "5b6ce0e6-736e-82d6-b328-2dfc15a21b37"
     - stage: seal
       stageUuid: "1363fa86-2493-8a36-a11f-03d3eb3e2207"
     - stage: uuid
-      stageUuid: "dca3583e-a00b-85d6-bd36-6edf091ebcf2"
+      stageUuid: "584c76c1-887b-8add-9612-44300708658a"
 version: 2
 ---
 # originates

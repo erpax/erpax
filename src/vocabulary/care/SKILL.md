@@ -2,11 +2,11 @@
 name: care
 description: "Use when reasoning about care as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/care"
-coordinate: "vocabulary/care · 4/weave · 88db1841"
-contentUuid: "d3d87766-2907-5f15-9e62-92c719c13fb0"
-diamondUuid: "839c1e0b-85fd-88d6-973b-3c4402eab962"
-uuid: "88db1841-b765-8478-8a00-7a692f4744af"
-horo: 4
+coordinate: "vocabulary/care · 8/crest · e06aa627"
+contentUuid: "3984239f-7ef9-5871-86e1-ddfc2095c3e7"
+diamondUuid: "24525215-caf5-8ed9-819f-76d044b8804c"
+uuid: "e06aa627-d61b-8c72-9664-7679a11fb37b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fb9d824e-5e19-8922-98bf-0177e18e1026"
+  computationUuid: "6c72100b-d6b4-8677-b2e8-7f78c5a6c58b"
   stages:
     - stage: path
       stageUuid: "7384da91-1b77-8b22-8d61-8fc44548ee79"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7a36146f-5fd4-82fe-88c2-dcc84e5c7662"
     - stage: horo
-      stageUuid: "56f001d6-0ee9-8ffc-8eb2-45d5f3f7a592"
+      stageUuid: "4b5ee437-eeda-89f8-bb34-2c0012391998"
     - stage: seal
       stageUuid: "0a748971-2bfc-8ca3-aa40-e7201409ffe3"
     - stage: uuid
-      stageUuid: "25f202de-c062-8475-ac69-cad9bc49b4ed"
+      stageUuid: "b8b1ec50-a2a6-8bed-990a-1da127583cf7"
 version: 2
 ---
 # care

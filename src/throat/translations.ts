@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "throat",
-    "uuid": "6a4554dc-ddeb-8d6c-97ca-afdd5412900a",
+    "uuid": "10816dde-e176-83ea-a73d-3c961c9046a1",
     "words": [
       "throat"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when projecting the throat center (Vishuddha) — index 4 of the seven chakras that ARE the seven horo positions — a standalone projection of chakra whose note and uuid are computed from the position math and whose colour is rendered from the uuid, never the traditional rainbow.",
-    "uuid": "d8891582-b59b-8dd2-886f-a549e1f6aefe",
+    "uuid": "e8c0f976-152c-8de1-b9cc-e47639273ff9",
     "words": [
       "use",
       "when",

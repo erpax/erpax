@@ -2,11 +2,11 @@
 name: endorsee
 description: "Use when reasoning about endorsee — A sub property of participant. The person/organization being supported."
 atomPath: "vocabulary/endorsee"
-coordinate: "vocabulary/endorsee · 4/weave · 26695ea9"
-contentUuid: "c3447763-90a7-5fcb-86c4-dbeeb9faa841"
-diamondUuid: "1e7439fb-8050-8004-b39e-53d77fc87e1e"
-uuid: "26695ea9-2cf5-8809-86cf-eb0eb5b39222"
-horo: 4
+coordinate: "vocabulary/endorsee · 5/round · 1a174e94"
+contentUuid: "96d008cd-0dc6-5591-a09c-ed458f4698d3"
+diamondUuid: "8268acd4-00f9-8723-b9a5-7c5478af1586"
+uuid: "1a174e94-7058-8f45-a27c-cfffd0b4af35"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "56ebe938-376e-88aa-baaf-e19ade77ffda"
+  computationUuid: "4f5a1fbb-28df-80ca-a301-0d3c7b2e4441"
   stages:
     - stage: path
       stageUuid: "cf03de27-fb7f-8e24-a051-c5661c9e7e5e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4ea08a28-1d09-8a49-a3f2-fe5f8de8295f"
     - stage: horo
-      stageUuid: "d99dc35e-bb27-809c-8983-6feb9e055d47"
+      stageUuid: "ddc53f5d-6054-8d9f-957a-74ae27fb47eb"
     - stage: seal
       stageUuid: "5739b1ea-5752-8613-a8c9-874f70cd1eac"
     - stage: uuid
-      stageUuid: "29a62bcf-5783-8453-a131-58e066fceb38"
+      stageUuid: "1f3515f8-96ab-83c1-b690-223cc972c153"
 version: 2
 ---
 # endorsee

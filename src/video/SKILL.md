@@ -2,11 +2,11 @@
 name: video
 description: Use when reasoning about video — An embedded video object.
 atomPath: video
-coordinate: "video · 1/base · 6e699601"
-contentUuid: "9337da7b-52fa-58a1-9cc3-086a64042ce8"
-diamondUuid: "7e031f2f-78ea-84b5-9dfe-910786c61b90"
-uuid: "6e699601-e228-824b-9c16-e3d6ff9678d1"
-horo: 1
+coordinate: "video · 5/round · 07cd0146"
+contentUuid: "7555c0f3-8b35-5368-aab8-27df2bf5e122"
+diamondUuid: "e1e45e8f-60ec-8435-be15-33f81613a299"
+uuid: "07cd0146-4c12-8bad-9637-d83bdcb3b742"
+horo: 5
 typography:
   partition: video
   bondDegree: 47
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5f0415d7-4a6c-85b8-b6a8-3d30db2145ac"
+  computationUuid: "6b8d626a-0b96-83bd-9d69-82a736f2685b"
   stages:
     - stage: path
       stageUuid: "1fd7914b-f70c-8dc1-a3cd-678803e5a1c1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ea7c12e7-fa6f-8c3e-a64a-8b3d95d80fd8"
     - stage: horo
-      stageUuid: "5c949902-a179-8625-95d7-dfb79f2ec822"
+      stageUuid: "9f4f662e-93b9-8d1c-aa92-8ca07b9dfa2d"
     - stage: seal
       stageUuid: "f242a238-7a9c-8eec-bd3e-ab6e18f3f923"
     - stage: uuid
-      stageUuid: "8ea4e47f-8b39-8608-b843-b076fe8d0578"
+      stageUuid: "bed4e2c9-48f1-852a-9f33-566cef0d3803"
 version: 2
 ---
 # video

@@ -2,18 +2,18 @@
 name: status
 description: "Use when tracking a document's or entity's state — draft, approved, rejected, closed, pending, active, inactive. A select field carrying workflow-state enums. Drives UI rendering (e.g., locked periods are closed; draft documents are mutable). Common default: 'draft'."
 atomPath: status
-coordinate: "status · 8/crest · 1ab83d62"
-contentUuid: "5b0bcb56-a68b-5351-8a5d-7c1f6a126b73"
-diamondUuid: "b2bc4c03-80e4-8926-b460-2c0c7bf678e6"
-uuid: "1ab83d62-f156-854c-ae33-30af2a968f85"
-horo: 8
+coordinate: "status · 4/weave · cddecff7"
+contentUuid: "a8d25825-2e57-5dd3-a0be-fea6f91ea51a"
+diamondUuid: "c1347673-ffad-86b8-9a3e-c957e929882b"
+uuid: "cddecff7-dd0d-8fee-8820-d9beddfd8875"
+horo: 4
 typography:
   partition: status
   bondDegree: 107
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a56bd14e-c62a-8bfe-849d-bfba1dd55d65"
+  computationUuid: "12aa7e87-7914-8148-8b83-3f225652b7df"
   stages:
     - stage: path
       stageUuid: "49a1e297-a7e1-8e23-ba3f-17ea6ee99175"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e8a19222-65bb-8144-9e56-2884e05524e6"
     - stage: horo
-      stageUuid: "0b9bab60-25da-8ec2-93c0-f4b87a3ba490"
+      stageUuid: "afc4e356-367f-8f66-9af6-774c8523f642"
     - stage: seal
       stageUuid: "f262d609-dcbd-8cea-901e-0d2e8208c09b"
     - stage: uuid
-      stageUuid: "25b9a3ec-c632-837c-80f0-f204cf1d5cac"
+      stageUuid: "7ac00d91-3795-82c7-8656-4af25b546aee"
 version: 2
 ---
 # status

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rate",
-    "uuid": "cbdcd18d-5f03-8812-b0ce-c723de27d069",
+    "uuid": "40bf6bdf-e755-8f1a-921a-233399e64e04",
     "words": [
       "rate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a value is a ratio of two dimensions pinned at a point in time — exchange rate, VAT/tax rate, interest rate, unit price (currency per quantity), wage (currency per hour), throughput/capacity (quantity per hour), run-time-per-unit. The RateConcern; a rate is value-per-unit, pinned at a point; blanks route to the no-op identity (cascade-resolved), never a magic literal.",
-    "uuid": "990cb3a1-8f93-8446-941f-6c81501e428a",
+    "uuid": "41eefc3f-b936-8da2-8dd3-e1b6d5f106b9",
     "words": [
       "use",
       "when",

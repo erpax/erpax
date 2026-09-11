@@ -2,10 +2,10 @@
 name: landlord
 description: Use when reasoning about landlord — A sub property of participant. The owner of the real estate property.
 atomPath: "vocabulary/landlord"
-coordinate: "vocabulary/landlord · 2/share · 1cde42de"
-contentUuid: "032deeec-758f-57eb-8dfe-ce5fcab3b903"
-diamondUuid: "eb59e88e-20d1-820a-a884-dc77a7de8058"
-uuid: "1cde42de-4ad5-839c-8922-1b4c572ab3ad"
+coordinate: "vocabulary/landlord · 2/share · 6eb9eb9e"
+contentUuid: "9ddc40e8-5612-54b5-9068-3876274d187f"
+diamondUuid: "e2dac6b0-00b9-8433-913b-60690dad3359"
+uuid: "6eb9eb9e-3468-8ce0-8ecc-c90f402a519c"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "12230caa-4775-8e2d-9c5b-3c311a95fe7e"
+  computationUuid: "8d20c2b3-f8de-8732-bc40-2832508f7ba3"
   stages:
     - stage: path
       stageUuid: "23d387f8-e9de-8cfc-9dd7-f4545da0e669"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c2484b1b-f1d2-8d82-bf57-afc4f82848f6"
     - stage: horo
-      stageUuid: "97deec6e-f906-8c71-95c4-79311966ebde"
+      stageUuid: "42bbd1de-0c41-8937-b4af-a56eb0351d25"
     - stage: seal
       stageUuid: "e78b974d-c536-8d02-82a4-d21283874d61"
     - stage: uuid
-      stageUuid: "47df7107-0a4b-8bb1-95cb-95f15f1c9286"
+      stageUuid: "23329868-6205-8e7e-a5b1-8878ef5de8e1"
 version: 2
 ---
 # landlord

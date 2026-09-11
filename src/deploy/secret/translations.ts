@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "secret",
-    "uuid": "ab64fd11-088c-895c-b4cb-4a910da703f9",
+    "uuid": "85b429cd-0a8d-8940-9b89-a069736c7c26",
     "words": [
       "secret"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a workflow references a secret the repository does not hold — the lane dies on its first step, and this says so before the push instead of inside a run someone has to open.",
-    "uuid": "dddd55bd-9236-8f62-9aee-c0b23ce3f33c",
+    "uuid": "71c1620f-dccf-8a87-861f-b62153f7ecbe",
     "words": [
       "use",
       "when",

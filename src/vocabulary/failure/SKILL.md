@@ -2,10 +2,10 @@
 name: failure
 description: Use when modelling one failure — the singular model of the failures collection (the plural store); a recorded instance of something not meeting its requirement.
 atomPath: "vocabulary/failure"
-coordinate: "vocabulary/failure · 8/crest · e5b5b7f5"
-contentUuid: "b2b8df7a-9cb1-5cda-93b0-67b51f84f1cf"
-diamondUuid: "62ae5faa-cf26-8529-80d3-a40402ce54e0"
-uuid: "e5b5b7f5-4f9e-80f6-a4f9-9029de590d62"
+coordinate: "vocabulary/failure · 8/crest · 60f79530"
+contentUuid: "fe40d820-d2da-5f72-95ee-f0ae70f64f87"
+diamondUuid: "b738008f-e6c1-807c-a5a1-664cf11d783e"
+uuid: "60f79530-749c-8f4c-b3f3-6c2aa5b2892c"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f76b4656-801d-8b61-b7a6-e40159cac220"
+  computationUuid: "6167e6bb-040e-8c07-9d7d-2fb7d1690a6f"
   stages:
     - stage: path
       stageUuid: "5f7a6a51-efa1-86c3-bf0a-57335d3c32d5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9fcabef0-002c-8bf1-b28e-eec3755e306c"
     - stage: horo
-      stageUuid: "4aa78efd-5845-8fc1-acd6-dc294c53ab5a"
+      stageUuid: "ea72e06b-c376-8bab-af84-e9b730f0dad0"
     - stage: seal
       stageUuid: "2edaf33e-825e-8c6c-a066-030206828bb3"
     - stage: uuid
-      stageUuid: "cf0a5c9d-7ab0-8814-b935-7e64bf1140d8"
+      stageUuid: "e91ee1e9-162f-83bc-99ae-dff300e303e3"
 version: 2
 ---
 # failure — the model of one [[failures]] row

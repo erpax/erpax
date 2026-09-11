@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "constitution",
-    "uuid": "e20d9bd6-f71c-8e8e-a5f5-08d8acce39f0",
+    "uuid": "e6539c65-c267-8727-aa09-091f4c5a43bd",
     "words": [
       "constitution"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the entrenched foundation, or when judging whether a proposed change may ship — two rules at the root (no expectation: claim no result you have not computed; no judgment: reject nothing you have not measured, discernment by test kept), the nine laws that are their lemmas (duality · legality · honest boundaries · balance · service · conservation · reciprocity · reproducibility · regeneration), and the seven supreme articles saying what a majority may amend versus what is perpetual; every predicate computed, fails closed, and heads every agent prompt.",
-    "uuid": "52f2b655-addd-8292-bcb9-13d377aca1a8",
+    "uuid": "dc470057-ac07-8bd0-8106-ddd68c9e2a22",
     "words": [
       "use",
       "when",

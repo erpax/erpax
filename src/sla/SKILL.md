@@ -2,18 +2,18 @@
 name: sla
 description: "Use when defining response/resolution guarantees on issues/tickets — SLA definition, breach detection, escalation, customer-impact metric."
 atomPath: sla
-coordinate: "sla · 4/weave · 702f7b3b"
-contentUuid: "d40fb226-b232-57d0-b314-2f9ed5ffa3f6"
-diamondUuid: "d31119cf-e857-868b-817b-b31d42a42cc7"
-uuid: "702f7b3b-f2ee-8011-afd4-7bc73a7cc659"
-horo: 4
+coordinate: "sla · 1/base · 6901e50a"
+contentUuid: "58ee36cc-dd55-5cb6-b444-6df8dd9a403a"
+diamondUuid: "aadbb5d2-6c6b-8866-bfc7-33e34e393c4a"
+uuid: "6901e50a-2c6a-8f20-a5f4-3cb81678bed9"
+horo: 1
 typography:
   partition: sla
   bondDegree: 31
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2a39fb22-da01-8f1a-9dec-838ef03e2718"
+  computationUuid: "b786727a-0ba3-8230-b5dd-a0361a02c701"
   stages:
     - stage: path
       stageUuid: "5b1084ba-fd4e-8c50-ba77-2b9833aeda3c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3120227f-b0d7-875e-976b-a3674377c034"
     - stage: horo
-      stageUuid: "e1fc9c4e-34c0-8f9d-ade6-bb36bf995f22"
+      stageUuid: "e08d5775-923b-8e9c-820e-402914ed1353"
     - stage: seal
       stageUuid: "5d32bb14-71a9-8b94-a131-4ee6daffb9e8"
     - stage: uuid
-      stageUuid: "763b2b39-d7ab-8157-a364-cd50d722c1a9"
+      stageUuid: "753604b6-da69-8f86-9f9f-d777e62c2978"
 version: 2
 ---
 # sla

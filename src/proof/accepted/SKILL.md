@@ -2,18 +2,18 @@
 name: accepted
 description: "Use when reasoning about accepted — erpax carries Lean under . **Nothing ran it** — no CI lane, no npm script, no import. Asked, the kernel answers:"
 atomPath: "proof/accepted"
-coordinate: "proof/accepted · 8/crest · 707aa27d"
-contentUuid: "81831d56-218b-54ff-9e99-2428bd8f7233"
-diamondUuid: "18ef8b79-a4b7-87d7-90a0-2a5cbc2f612a"
-uuid: "707aa27d-4047-80e0-9ec1-aa74efb626ef"
-horo: 8
+coordinate: "proof/accepted · 4/weave · 05325224"
+contentUuid: "70a007fc-5bcb-513a-a7ef-518bc8a9692a"
+diamondUuid: "11ca2a09-f550-89b0-9ee0-e1ceb1fe9466"
+uuid: "05325224-d1ae-84d3-ab95-1037c0bd3c6b"
+horo: 4
 typography:
   partition: proof
   bondDegree: 34
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1c27c5c2-d186-8f7f-88e7-0e30f5baad78"
+  computationUuid: "1e225b6f-952d-8423-95fc-f27ad7491153"
   stages:
     - stage: path
       stageUuid: "00eab6e1-8f8e-86a6-8217-2f2f56cd3d5f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1c67d0bb-f3ca-8253-bd7e-f26e44f4ee8f"
     - stage: horo
-      stageUuid: "5863e02c-e82c-8669-b8de-ab5ddd5719b9"
+      stageUuid: "624c82b4-8817-8c1d-939e-1a17e3a48033"
     - stage: seal
       stageUuid: "27d3eea6-ec59-81cc-8d02-c10fabfe105b"
     - stage: uuid
-      stageUuid: "a0a980c3-aade-8d6b-8c35-1d37b0566c69"
+      stageUuid: "abbed0b4-47f1-898b-929f-cec87fbcc637"
 version: 2
 ---
 # proof/accepted — four of five `.lean` files in a directory named `verify` are not proofs

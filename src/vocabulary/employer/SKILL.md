@@ -2,11 +2,11 @@
 name: employer
 description: "Use when reasoning about employer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/employer"
-coordinate: "vocabulary/employer · 2/share · 6aa9fc4e"
-contentUuid: "cc4cd703-49c2-5137-b9bf-d75bf01531ee"
-diamondUuid: "55cf94db-9182-8320-bace-b2f120ebb343"
-uuid: "6aa9fc4e-9a5f-8d8f-be3e-fea4e707791e"
-horo: 2
+coordinate: "vocabulary/employer · 7/descent · b1c22843"
+contentUuid: "53bc092d-b868-5413-9439-d05acee41d4d"
+diamondUuid: "7ee95340-9abd-8b39-8247-5bd2d3bd2f59"
+uuid: "b1c22843-0726-8684-99f7-b9823b60700f"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "96cfedeb-c9a9-8635-9ce5-a356df812b61"
+  computationUuid: "9bed9a1a-564d-836a-85ea-0f8843dee59c"
   stages:
     - stage: path
       stageUuid: "350afaa3-e98b-8c39-a5c4-88eeecbdbaa0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4883a843-c094-8ebf-a347-bbdd6bf1d235"
     - stage: horo
-      stageUuid: "482934cb-7595-845f-a304-2cf090c6d1f8"
+      stageUuid: "b4f77ff6-7fc1-8943-b37c-4036f85ee3dc"
     - stage: seal
       stageUuid: "571d5bd3-3f28-8d43-b809-aaf4aef8a17b"
     - stage: uuid
-      stageUuid: "48a656c0-74be-82df-b535-7d69b15451ab"
+      stageUuid: "79ae1a11-a7c6-8ff8-96a0-b52e9642b5bb"
 version: 2
 ---
 # employer

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "endpoints",
-    "uuid": "a595ef22-b97b-8207-9ff7-98a498c03a82",
+    "uuid": "720dbe1f-2a34-8a21-a484-02230347c334",
     "words": [
       "endpoints"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when adding or debugging a custom HTTP route that does work outside a collection's CRUD — the `/next/seed` demo-data loader that clears and repopulates a fresh tenant with example pages, posts, media, and the erpax product-marketing pages — endpoints is the society's custom-route organ (currently one organ-scoped seed handler, not the per-collection structural seed).",
-    "uuid": "1880f7a5-741a-8764-b541-e1e071c8bb9f",
+    "uuid": "dda5de8b-5b63-88ff-beab-8e360265255f",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: patients
 description: "Use when reasoning about patients — A schema.org component word, collided out of schema.org compounds — fused from isAcceptingNewPatients (sti · collapse · merge)."
 atomPath: "vocabulary/patients"
-coordinate: "vocabulary/patients · 7/descent · 20b2e630"
-contentUuid: "95b3519c-3c07-5269-b294-89062233c893"
-diamondUuid: "66c748ea-b7c1-8788-a756-f6612f0268a9"
-uuid: "20b2e630-0c2c-89e5-be9a-c2ad48505d70"
+coordinate: "vocabulary/patients · 7/descent · dd680135"
+contentUuid: "54439684-96f6-5a2f-923c-c47bd6912e07"
+diamondUuid: "5c810032-5a30-85a2-a2f7-6175859af263"
+uuid: "dd680135-6c42-8440-ac71-caefd7fd6368"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0303b1a7-15fa-8f1e-a3c1-fd09266bcb83"
+  computationUuid: "0b174667-d780-8059-b929-bdc00ff6df31"
   stages:
     - stage: path
       stageUuid: "77d5de12-404d-8529-b157-651dfebab373"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8fea5819-cce8-85e7-be4f-858792725966"
     - stage: horo
-      stageUuid: "e7e0d197-6ee7-880b-afbd-2d398930bc6d"
+      stageUuid: "909222af-bd5a-8fde-99b7-15b88b3742ee"
     - stage: seal
       stageUuid: "05422e3d-d26a-85dd-8f01-50f2b1b45609"
     - stage: uuid
-      stageUuid: "0a8d8601-0f20-883c-b708-8396e01abb55"
+      stageUuid: "f7f7aa57-87ed-8fb5-b768-dff2e3289de8"
 version: 2
 ---
 # patients

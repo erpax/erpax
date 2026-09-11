@@ -2,18 +2,18 @@
 name: satisfaction
 description: "Use when measuring employee/customer contentment — survey scores, NPS, CSAT, engagement indices. The scalar metric of sentiment toward work, leadership, culture, or service."
 atomPath: satisfaction
-coordinate: "satisfaction · 1/base · 7e648acb"
-contentUuid: "7254529c-86ec-53d6-bcbe-2af8a0214f87"
-diamondUuid: "645f536d-19a2-848d-b2dd-086918658a87"
-uuid: "7e648acb-5db3-847f-9570-e8a7e18c0340"
-horo: 1
+coordinate: "satisfaction · 4/weave · 18912fa9"
+contentUuid: "e6678908-9f56-54b1-afa1-326f553b3d93"
+diamondUuid: "3d7cb4f1-4e79-8d79-b33d-3fed4d84ef3e"
+uuid: "18912fa9-5b67-8c45-8d54-7896bc9d9933"
+horo: 4
 typography:
   partition: satisfaction
   bondDegree: 25
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3d469f5e-c56d-8491-875d-2d76bbf6701e"
+  computationUuid: "c81e126f-c29b-82aa-a2d0-7941afd6d13b"
   stages:
     - stage: path
       stageUuid: "568b17d7-6ecb-8ba5-8acd-3c86235eda2f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f08eb388-0e55-8855-af38-007a57c6d0ad"
     - stage: horo
-      stageUuid: "5b49d9d0-c8a5-89ef-99ba-b313c6335a4c"
+      stageUuid: "4b0171b8-cf15-865f-937c-d56118ac493f"
     - stage: seal
       stageUuid: "03f1ed26-8ccf-8dc3-9d0f-fd4ec9bb45c8"
     - stage: uuid
-      stageUuid: "fa1305cb-772f-804d-b1ee-aa4af9fb62c6"
+      stageUuid: "0c48d1b1-2aea-8e74-bdf8-6b0d717189bf"
 version: 2
 ---
 # satisfaction

@@ -2,11 +2,11 @@
 name: payment
 description: "Use when reasoning about payment — The payment child of the tenant-aware Stripe stack. What is held here is a reference to a method Stripe holds, never the instrument itself — the tokenisation boundary is what…"
 atomPath: "ecommerce/stripe/payment"
-coordinate: "ecommerce/stripe/payment · 2/share · a8d7d056"
-contentUuid: "1b5a09ce-e2f7-50ef-a426-cc90d7617ae6"
-diamondUuid: "8d9952a2-6e8c-8856-8e45-b8b04f8726da"
-uuid: "a8d7d056-378b-8d5b-926b-6d4042695fd8"
-horo: 2
+coordinate: "ecommerce/stripe/payment · 7/descent · 0c7ed5f0"
+contentUuid: "607274e6-4226-5d46-b608-3df642227312"
+diamondUuid: "b669414e-c072-895a-89a6-3a553de80f68"
+uuid: "0c7ed5f0-2022-80be-80e4-cd21e4cdb9c7"
+horo: 7
 typography:
   partition: ecommerce
   bondDegree: 78
@@ -17,7 +17,7 @@ standards:
   - "PSD2 EU-2015/2366 strong-customer-authentication"
 bindings: []
 signatures:
-  computationUuid: "9201d071-8911-8d34-924c-33d1f83f2cb9"
+  computationUuid: "9905abd6-f9e7-82d0-885a-f927a930ff55"
   stages:
     - stage: path
       stageUuid: "423a1da3-20f2-8fc0-a56c-b7151ef15a87"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "fa712286-0b72-8bdb-994e-1b657aa067e3"
     - stage: horo
-      stageUuid: "0b3286ab-e979-8a29-acfe-d1605138de46"
+      stageUuid: "37e6deb1-7ad4-8436-95a5-4071fa1ed3f1"
     - stage: seal
       stageUuid: "ea481889-e6a8-85b9-835a-081ab97bbc21"
     - stage: uuid
-      stageUuid: "7cc126b7-492a-827c-97b5-30449cc1c6fa"
+      stageUuid: "d84c01fb-fd24-8c37-bccd-1d348108b020"
 version: 2
 ---
 # ecommerce/stripe/payment — a tenant's payment method is stored encrypted or it is not stored

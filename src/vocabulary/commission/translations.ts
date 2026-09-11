@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "commission",
-    "uuid": "3d593f05-eb23-8a2f-81ae-32bf58d8606b",
+    "uuid": "e48a0643-aa14-8b43-a817-88b91a8dd4c5",
     "words": [
       "commission"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one commission — the singular model of the commissions collection (the plural store); earned compensation tied to a sale or transaction.",
-    "uuid": "983b2bc3-4886-8573-b2e9-d98c89346921",
+    "uuid": "0c53a590-d413-8f5b-9bef-499a590dd1a9",
     "words": [
       "use",
       "when",

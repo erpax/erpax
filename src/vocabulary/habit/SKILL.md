@@ -2,18 +2,18 @@
 name: habit
 description: "Use when reasoning about the repetition atom that turns a sale into a market — the loop that makes one transaction many. Without habit a launch spikes and dies; with it, awareness and proof compound. The atom retention and churn measure, and the catch the market needs when the trendsetter's status fades."
 atomPath: "vocabulary/habit"
-coordinate: "vocabulary/habit · 8/crest · 2dfba3a5"
-contentUuid: "b1eaef61-62e5-51f5-bdcd-2b068d754416"
-diamondUuid: "7cf8399c-15bd-8b68-abba-14b056737f63"
-uuid: "2dfba3a5-9eca-819a-9b6b-686702137cae"
-horo: 8
+coordinate: "vocabulary/habit · 1/base · 7f586c85"
+contentUuid: "960734cb-e202-57d9-adfe-487f8605cf10"
+diamondUuid: "892f2f56-5d5d-8a1e-8734-60f32c37176e"
+uuid: "7f586c85-f85e-8712-a509-40a9fdecde0d"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 44
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3b5b5edc-78fa-83bc-bb8b-54750c15ba0a"
+  computationUuid: "072db809-451c-85a1-8297-02bb1117f838"
   stages:
     - stage: path
       stageUuid: "4d648210-1123-805a-ae3f-6f6acafa7714"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "467f2412-d3fd-8e8d-a508-707c92323a54"
     - stage: horo
-      stageUuid: "ef035dad-b03d-81cf-b388-3cc80560490b"
+      stageUuid: "913c54b3-1f31-8521-949e-7531668dd57a"
     - stage: seal
       stageUuid: "bae3e688-c14b-88e1-936c-ee8fc935eda0"
     - stage: uuid
-      stageUuid: "1beec478-2546-8746-b3e0-fee452edc6af"
+      stageUuid: "c452dbeb-e664-86eb-b1fc-7d9743d6ea35"
 version: 2
 ---
 # habit — repetition; what turns a sale into a market

@@ -2,10 +2,10 @@
 name: official
 description: "Use when reasoning about official as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/official"
-coordinate: "vocabulary/official · 8/crest · 75bf7bde"
-contentUuid: "cc654155-c506-58c6-971a-1587cb0a8283"
-diamondUuid: "2de7bb66-6a2b-87f3-a2ce-b86a7f411361"
-uuid: "75bf7bde-0f7f-810d-b62c-5d7a7da1dc3f"
+coordinate: "vocabulary/official · 8/crest · b130189f"
+contentUuid: "2e9a3dc2-09ff-5df8-8b91-9d2ddd59daf2"
+diamondUuid: "d9ab3c8a-9b02-8ba4-85fd-a5cc4066b62b"
+uuid: "b130189f-77c7-812c-94bd-028dfad0bb91"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "518455bd-c3f8-8e43-bcbc-760eeb154d48"
+  computationUuid: "2fb4f8e5-988f-84e9-b1b0-265aa883bd1c"
   stages:
     - stage: path
       stageUuid: "0d9b3614-30e2-8971-8d42-cb3c0cf94564"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "44a887a9-7df1-89d1-a628-6e1dbf796761"
     - stage: horo
-      stageUuid: "9d198e28-abaf-8fad-b259-e50c833deb9f"
+      stageUuid: "00ab0683-9d3d-857a-b22d-735d6ab2f31b"
     - stage: seal
       stageUuid: "61842595-d927-81c7-8ccc-f1b89ed849f8"
     - stage: uuid
-      stageUuid: "f4016d2a-5a62-8c0f-8f3c-2896c8f4fba4"
+      stageUuid: "aa096fd2-59da-8d5d-8599-b648c79c225b"
 version: 2
 ---
 # official

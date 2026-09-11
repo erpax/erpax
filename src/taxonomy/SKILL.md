@@ -2,18 +2,18 @@
 name: taxonomy
 description: "Use when classifying entities into a ranked hierarchy — the family→genus→species→cultivar ladder for crops, and the generic ranked-classification engine for any LOD @type tree. A node's type is its rank-chain; traits inherit down the ranks (the fractal parent-chain), so taxonomy is the dimension atom applied to kind."
 atomPath: taxonomy
-coordinate: "taxonomy · 8/crest · 566092b6"
-contentUuid: "374e6180-affc-56f8-bfab-7187b5dd8bec"
-diamondUuid: "8eb16f45-fe60-8faa-80e3-f2d1162575b0"
-uuid: "566092b6-74c1-861d-9d9c-b56008391e2e"
-horo: 8
+coordinate: "taxonomy · 4/weave · 9483e2ca"
+contentUuid: "38980fc2-e170-5000-93be-f0c6b9465aa0"
+diamondUuid: "bed32cbd-b2e4-8743-9cb4-77c9b57787b4"
+uuid: "9483e2ca-1d40-8063-8c30-22c584eb904f"
+horo: 4
 typography:
   partition: taxonomy
   bondDegree: 50
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4b066ba3-5b9a-8148-95eb-fc275d164fc2"
+  computationUuid: "e35edd28-2871-8aea-bca3-27fdbe066614"
   stages:
     - stage: path
       stageUuid: "3b73f3b7-0cf5-8cda-a064-4db5fe2f4ad0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5daffa8e-1703-840e-a9e7-670dd02f672a"
     - stage: horo
-      stageUuid: "e5a09150-3d2b-81ad-828e-84e4d48cc489"
+      stageUuid: "e9412275-2124-8095-939c-6ba04ca9f3b5"
     - stage: seal
       stageUuid: "4dace892-8e45-8eea-8244-66e0c89953d3"
     - stage: uuid
-      stageUuid: "b177b583-f90b-8fba-bb06-241c268793e6"
+      stageUuid: "1577de0b-a9e8-82ab-bfd0-2d7a6764f9b2"
 version: 2
 ---
 # taxonomy — the ranked classification ladder

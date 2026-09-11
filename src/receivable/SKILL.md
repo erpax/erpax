@@ -2,10 +2,10 @@
 name: receivable
 description: "Use when reasoning about receivable — The A/R field factories: the shapes an invoice carries — invoice number, status, due date, payment terms, A/R analysis. (the type module) is a set of these; this atom is the one."
 atomPath: receivable
-coordinate: "receivable · 5/round · e8a2b778"
-contentUuid: "1de64a97-8151-575d-a0b0-cc0366ff4d2d"
-diamondUuid: "9060ab09-cdc3-88e3-9a24-52e1cb1ce3ba"
-uuid: "e8a2b778-b269-8973-9036-dca4996371ca"
+coordinate: "receivable · 5/round · be5552e8"
+contentUuid: "4d601884-98d6-5ac5-b371-e6201cf37995"
+diamondUuid: "eff02f10-e675-8e5d-88ae-5bd574433932"
+uuid: "be5552e8-24cf-8b43-aa40-9a4dc9ac0724"
 horo: 5
 typography:
   partition: receivable
@@ -17,7 +17,7 @@ standards:
   - "ISO-8601-1:2019 date-time"
 bindings: []
 signatures:
-  computationUuid: "868fe7ed-dce4-8a0b-9af5-033e5c7fc81d"
+  computationUuid: "c6ea6e80-a1b1-8081-9b5d-8fa6a46548a0"
   stages:
     - stage: path
       stageUuid: "d8e62f61-381d-8beb-9a59-584ab2d247eb"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "e03af6f5-6a08-8d25-8ccb-ab83f8cf1654"
     - stage: horo
-      stageUuid: "bc73c1d1-77a1-8467-98f0-cd69e3af4b8a"
+      stageUuid: "b8c4d3e0-fe6f-84c5-a3a1-fadab53df764"
     - stage: seal
       stageUuid: "58afe757-2573-8837-8f00-e5be28d00a50"
     - stage: uuid
-      stageUuid: "c828f30e-7f41-80fc-8379-69f2adfa008f"
+      stageUuid: "6ca08ccf-3e5c-85bd-8a33-cdaf870d592a"
 version: 2
 ---
 # receivable — the singular the `receivables` collection is a set of

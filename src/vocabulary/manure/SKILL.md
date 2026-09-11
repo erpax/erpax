@@ -2,18 +2,18 @@
 name: manure
 description: "Use when the animal byproduct cycles back to the soil — manure (excreta) as the nutrient output that closes the livestock→soil fertility loop, applied or deposited by grazing; the nutrient-management plan balances it to the land. The waste-to-fertility recycling node, the livestock twin of compost."
 atomPath: "vocabulary/manure"
-coordinate: "vocabulary/manure · 2/share · 6bf80c2a"
-contentUuid: "0268aaeb-ca7a-57b3-a88f-ca6a0b63798a"
-diamondUuid: "a5941c84-f74b-88cf-b4af-6507e37ab094"
-uuid: "6bf80c2a-29ba-8634-ae05-836624e186e8"
-horo: 2
+coordinate: "vocabulary/manure · 1/base · 41f240e8"
+contentUuid: "2fdda3be-5c17-5b8a-979b-4e7f5e47894f"
+diamondUuid: "8855fda9-655b-8b5a-b72a-d62f0d51241f"
+uuid: "41f240e8-a39e-83d5-ab69-616c64ccb5a0"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 41
 standards: []
 bindings: []
 signatures:
-  computationUuid: "793e3ddd-7432-8517-b0b1-0cafe7828176"
+  computationUuid: "7e884bf4-5a9f-8081-9cb4-df3e0e5a358c"
   stages:
     - stage: path
       stageUuid: "e1c2d195-0fd4-806d-af8f-5dce4fcd8fa5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "99465b67-a1cb-837e-b2be-f079b6ad428f"
     - stage: horo
-      stageUuid: "3e00aef4-3636-8c10-afbd-7103175f5577"
+      stageUuid: "3a023f2c-ae4e-89f0-9c77-d724de3b708d"
     - stage: seal
       stageUuid: "a2d6005e-1753-81a4-8121-3d5239c18ad6"
     - stage: uuid
-      stageUuid: "43629eb6-f3c8-835b-ada7-ba7a781d7d2c"
+      stageUuid: "4781934f-8943-80ae-8be5-ada9e937343c"
 version: 2
 ---
 # manure — the animal byproduct that feeds the soil

@@ -2,11 +2,11 @@
 name: distinguishing
 description: "Use when reasoning about distinguishing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/distinguishing"
-coordinate: "vocabulary/distinguishing · 8/crest · 529f437d"
-contentUuid: "94746004-0704-565a-80a4-5420977e7552"
-diamondUuid: "a9863e9b-3f38-879e-a1f7-9741e4e1ea0a"
-uuid: "529f437d-215c-815c-ae91-38d5fe51b8df"
-horo: 8
+coordinate: "vocabulary/distinguishing · 5/round · e43e40f0"
+contentUuid: "66dcaa69-4df1-50d1-a2ee-20f86a641e5e"
+diamondUuid: "3b46b3ea-3455-8c88-b12c-1b0b357e4062"
+uuid: "e43e40f0-153d-8616-b9dd-93207d535b17"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "00fd63ce-4f98-8089-84c6-a2b633308992"
+  computationUuid: "4a7448d1-dd08-8751-911b-d19ef602d60b"
   stages:
     - stage: path
       stageUuid: "f7f214be-74a1-8ef8-a554-5892e23d464d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b6426f64-a112-86e9-a4ea-153fff7a3927"
     - stage: horo
-      stageUuid: "ade26c85-701f-896c-b0b1-16e08cfe1466"
+      stageUuid: "296cd0ac-9093-8fa9-9906-01d79e9ee4d9"
     - stage: seal
       stageUuid: "da87af0b-6783-82d4-b08f-f15889645617"
     - stage: uuid
-      stageUuid: "f1fc4084-72b3-85cf-81f0-d46923d8a2ba"
+      stageUuid: "d96acc7a-9563-8944-88ec-9d6e207904db"
 version: 2
 ---
 # distinguishing

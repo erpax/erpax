@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calculate",
-    "uuid": "b9a12a24-3d23-8fb1-936d-5e392717ed48",
+    "uuid": "cbe93dc2-d87f-8ce7-8e6c-c5831c66c731",
     "words": [
       "calculate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about calculate — is the computation atom: ceccec/erpax's ~25 are **form-objects** (ActiveModel, ) — validate inputs → compute a standards-cited formula → format; **no persistence, no collection**.",
-    "uuid": "2eaad8a3-397d-8d17-9885-81b5d8ecfe11",
+    "uuid": "edb4ded2-3d4e-8168-aa19-a2bc56e0b912",
     "words": [
       "use",
       "when",

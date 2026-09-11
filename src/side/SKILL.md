@@ -2,11 +2,11 @@
 name: side
 description: "Use when reasoning about side as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: side
-coordinate: "side · 5/round · d5197d38"
-contentUuid: "2dd7009c-32c4-597a-93de-15145fa58557"
-diamondUuid: "9816e9a0-a0f6-8bb5-9d9a-5df1436e57cd"
-uuid: "d5197d38-448e-8502-98e5-a620a9381adf"
-horo: 5
+coordinate: "side · 7/descent · 1fdce514"
+contentUuid: "9884bd02-594f-51ce-8c32-a6058e58559d"
+diamondUuid: "14b65612-df1d-877f-9ea3-6e161ca595dd"
+uuid: "1fdce514-7bcf-8278-9400-e47e0e1596c7"
+horo: 7
 typography:
   partition: side
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "762fe7f5-c556-8fee-9c91-ab30c73dd0c5"
+  computationUuid: "b6bf89e0-da55-8eac-bfc4-7ccd64603623"
   stages:
     - stage: path
       stageUuid: "06d9f91a-d5b1-8a7e-a6ed-82347b6c323f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3ffc591a-0649-809e-bca0-587774f38d00"
     - stage: horo
-      stageUuid: "2d5513ab-d6df-8987-a8d7-b0ac8e2cdb67"
+      stageUuid: "a3d47eb6-c76a-8be1-9859-2454d6ffd9b6"
     - stage: seal
       stageUuid: "09522416-3ecd-8976-aef2-353e52289699"
     - stage: uuid
-      stageUuid: "999e6db3-1a95-8b3c-ad1b-7356ffeb1f96"
+      stageUuid: "df33413a-02cd-83fb-8d96-b13801c74e52"
 version: 2
 ---
 # side

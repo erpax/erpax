@@ -2,11 +2,11 @@
 name: postings
 description: "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection."
 atomPath: "leases/lease/period/postings"
-coordinate: "leases/lease/period/postings · 4/weave · d0cc1dae"
-contentUuid: "73202a27-ef51-51a7-8a50-6a2910d95e53"
-diamondUuid: "d2effe4b-9f0d-8686-bc64-f7007d7a28a6"
-uuid: "d0cc1dae-8835-834e-aca9-45c2d7ab218a"
-horo: 4
+coordinate: "leases/lease/period/postings · 7/descent · 8976fb6b"
+contentUuid: "e1eba801-78b2-5c2e-b229-e79f1e4fb6a6"
+diamondUuid: "ad05a987-8ba1-842b-ae24-7342d647ffe0"
+uuid: "8976fb6b-1ec4-896e-adb9-4d8bcdc62186"
+horo: 7
 typography:
   partition: leases
   bondDegree: 28
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "14b2a772-efaa-8454-8eed-40545dfc1b44"
+  computationUuid: "3a44337c-373b-828d-855a-ef2865be879c"
   stages:
     - stage: path
       stageUuid: "4408dd1b-bdf1-89da-b23f-91b2dc4bdef9"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "e0c03198-972f-81dc-8bba-69dc93458546"
     - stage: horo
-      stageUuid: "94bb629a-4435-896a-b28a-27ce0750eac6"
+      stageUuid: "d21525cd-ce4e-8142-b4bb-f252368a785a"
     - stage: seal
       stageUuid: "77588975-fa0f-8bfb-8982-da2b147a433d"
     - stage: uuid
-      stageUuid: "89c9a48f-80ab-8039-9cac-658e13d8fda3"
+      stageUuid: "7bdf93b8-1c89-88b3-990e-04732ddf5e20"
 version: 2
 ---
 # lease-period-postings

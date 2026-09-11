@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sealed",
-    "uuid": "b7f1723a-85f6-8472-a569-b1070bffecb7",
+    "uuid": "2ebfedab-bd44-8080-b9aa-06d06947930f",
     "words": [
       "sealed"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about error handling as an entropy leak — a swallowed or defaulted catch hides the truth so entropy escapes; the corpus is sealed only when errors propagate, and coverage measures the fraction of catches that do not leak.",
-    "uuid": "6807b0ed-9581-8bcf-bcba-20bb8c46e8e0",
+    "uuid": "6d1a18ec-d81a-8f27-b51a-893ac5945708",
     "words": [
       "use",
       "when",

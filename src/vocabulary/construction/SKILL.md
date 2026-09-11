@@ -2,11 +2,11 @@
 name: construction
 description: "Use when reasoning about construction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/construction"
-coordinate: "vocabulary/construction · 4/weave · 0689985a"
-contentUuid: "5f7bbfdf-41cb-5dc7-86b1-01703c09475b"
-diamondUuid: "c6ee781b-ec18-8bd0-abd8-9dc8374bcc0e"
-uuid: "0689985a-b282-843f-93cc-1bdd4c7fd684"
-horo: 4
+coordinate: "vocabulary/construction · 2/share · c6b904c2"
+contentUuid: "d56e1d71-411b-5659-a20e-7d9f55620dc9"
+diamondUuid: "b59febc6-19c6-842f-9b97-73c7478ab395"
+uuid: "c6b904c2-8d64-8f72-b69d-46bff58fdd5f"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4dbac714-7c6e-8560-aadc-e3bfd02e8e14"
+  computationUuid: "fa120d4d-8d29-8ab6-8b2d-599a07008d21"
   stages:
     - stage: path
       stageUuid: "6e9ef784-4154-87cb-939c-28e98ec4aa3c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fda464c6-6f4f-850c-b19a-5f5e1b75ceaa"
     - stage: horo
-      stageUuid: "835b69eb-6503-8f7f-b327-654e68b1fedb"
+      stageUuid: "c334fb00-18fa-8bfc-8ab5-f49a853281b2"
     - stage: seal
       stageUuid: "b1d87504-b7fe-8229-8451-e5deab0d435d"
     - stage: uuid
-      stageUuid: "e088b1df-37be-8a6d-893c-305adb34cbba"
+      stageUuid: "ea9538ff-7564-8f82-bf4d-eb9958edd8ee"
 version: 2
 ---
 # construction

@@ -2,11 +2,11 @@
 name: quest
 description: "Use when reasoning about quest — The task that a player-controlled character, or group of characters may complete in order to gain a reward."
 atomPath: "vocabulary/quest"
-coordinate: "vocabulary/quest · 8/crest · 863b1db5"
-contentUuid: "24d5ca79-6781-5fd1-885e-43f0a02bff32"
-diamondUuid: "9e561d5b-f1d7-8539-96ad-324526c7c8d7"
-uuid: "863b1db5-829d-8a52-9556-41596cc02145"
-horo: 8
+coordinate: "vocabulary/quest · 1/base · 2a4c616a"
+contentUuid: "3bfbc0c5-8b1f-527a-934c-8bad57e24c3f"
+diamondUuid: "b4619026-34a7-813b-9dc8-939129bc4757"
+uuid: "2a4c616a-3ae0-8c07-a907-1124b68c9520"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6c39d2ec-a12d-8c79-b2df-1becfa8821b6"
+  computationUuid: "5a8aed84-bdcf-81e5-8ca8-3d41dc023751"
   stages:
     - stage: path
       stageUuid: "51575c16-309c-8f58-b492-7f59f68e7fc3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1ec9c9fb-892d-8e24-8c47-4afe2eb2dca7"
     - stage: horo
-      stageUuid: "d40af797-2ef2-84af-850d-d3a714783848"
+      stageUuid: "72519ec2-6d39-8896-ab98-69ddc562fad0"
     - stage: seal
       stageUuid: "98d1c1c2-74b8-8769-b2be-c585a199892a"
     - stage: uuid
-      stageUuid: "f5ef7486-466c-8cd9-87df-c1c8a5d62b37"
+      stageUuid: "7c62f4cc-8f20-8f14-9e19-d302e2496938"
 version: 2
 ---
 # quest

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "continent",
-    "uuid": "9257e632-f52d-803f-8a22-0b85d4303512",
+    "uuid": "84b222a7-be02-82fb-9c64-32a83ab2296e",
     "words": [
       "continent"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about continent — One of the continents (for example, Europe or Africa).",
-    "uuid": "9811586d-0235-86bb-bc66-cc13f7406f30",
+    "uuid": "1edd9b76-bc86-85cd-9d1c-a397098fbf73",
     "words": [
       "use",
       "when",

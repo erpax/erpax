@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "journal",
-    "uuid": "74649c98-cc6b-8d27-8e21-8b93e54cc20a",
+    "uuid": "e917cb5d-f616-8943-9384-d787f4889628",
     "words": [
       "journal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries.",
-    "uuid": "83765e25-71d2-8a6d-b69d-82685af5c393",
+    "uuid": "9ecdd4d4-a000-8bac-800e-f444ad68673f",
     "words": [
       "use",
       "when",

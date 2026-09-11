@@ -2,11 +2,11 @@
 name: adjustment
 description: "Use when reasoning about adjustment — Period-End Adjustment Posting Hook — fires GL on status → 'posted'."
 atomPath: "gl/accounts/period/end/adjustments/hooks/adjustment"
-coordinate: "gl/accounts/period/end/adjustments/hooks/adjustment · 2/share · 9b0768f3"
-contentUuid: "3afe3d16-cae4-5ed7-aead-7e321add3470"
-diamondUuid: "f1e36779-a532-8fd6-b2f7-a148269c5d6c"
-uuid: "9b0768f3-9980-8c9c-bc5a-79d893feeb82"
-horo: 2
+coordinate: "gl/accounts/period/end/adjustments/hooks/adjustment · 7/descent · 182a6653"
+contentUuid: "2d0aabd1-375a-53f2-b92a-cae424df96e5"
+diamondUuid: "af13b9d5-9fcd-8c98-b3ff-148a504ba44f"
+uuid: "182a6653-bc55-8ce7-9080-a3975453050d"
+horo: 7
 typography:
   partition: gl
   bondDegree: 14
@@ -19,7 +19,7 @@ standards:
   - "US-GAAP ASC-250 accounting-changes-and-error-corrections"
 bindings: []
 signatures:
-  computationUuid: "b8063409-3dec-8d7d-83c8-0697462d3d66"
+  computationUuid: "377ff70e-c331-8601-b913-3d635faf7dcc"
   stages:
     - stage: path
       stageUuid: "eb5fff7e-6bd6-84b5-9820-99a371ba6be7"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "ed91276a-000b-8b62-9923-4019d2fd13c3"
     - stage: horo
-      stageUuid: "188f67ea-2727-846d-9d49-62dde1e8aaa2"
+      stageUuid: "144a57fc-69c4-822a-adb5-934e9a5672cc"
     - stage: seal
       stageUuid: "9e553d3f-1029-88f0-bf21-f9fa0676722f"
     - stage: uuid
-      stageUuid: "1141051c-7a69-8e11-a3fb-2e18e5b98e58"
+      stageUuid: "a41067a3-1c50-86bb-89c8-fc02b8064db9"
 version: 2
 ---
 # gl/accounts/period/end/adjustments/hooks/adjustment

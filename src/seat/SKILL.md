@@ -2,10 +2,10 @@
 name: seat
 description: "Use when reasoning about seat — Used to describe a seat, such as a reserved seat in an event reservation."
 atomPath: seat
-coordinate: "seat · 4/weave · 9ffba804"
-contentUuid: "9e5bc3e5-3a61-51f6-87cf-bc34b61ac8b9"
-diamondUuid: "24595ecd-dfa1-83a5-b47d-be0d9f6150fb"
-uuid: "9ffba804-d066-8a18-8258-e1ff27a36787"
+coordinate: "seat · 4/weave · 37928bff"
+contentUuid: "81f4424f-ad9a-56e1-b3cd-c733ad6eadce"
+diamondUuid: "64ea2276-96b6-816b-92b1-0232c110ccbf"
+uuid: "37928bff-21b2-8022-95e4-08724e6d9634"
 horo: 4
 typography:
   partition: seat
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5d9a296f-658b-810e-85e6-80576f92984f"
+  computationUuid: "b987b317-9022-8eac-aad2-ae9e8b0732a7"
   stages:
     - stage: path
       stageUuid: "d1bb7e40-377f-829e-b97d-36d20e705c42"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9323f7f4-14df-8091-90c9-4071a2d81e11"
     - stage: horo
-      stageUuid: "721afedb-8e5f-89b5-8b07-4c2fa32c95f9"
+      stageUuid: "5d165aa6-f872-8699-8e7c-8b90904fc7ed"
     - stage: seal
       stageUuid: "fe5addce-364c-888f-9ccf-2a99e6adadab"
     - stage: uuid
-      stageUuid: "fe9e906b-eb60-8640-8a8b-36269ea2be01"
+      stageUuid: "13e4a079-51c0-87e9-a11b-36c6962e9b63"
 version: 2
 ---
 # seat

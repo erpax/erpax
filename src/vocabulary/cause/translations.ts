@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cause",
-    "uuid": "c0476304-ebe5-88e8-987e-9c12ed653aeb",
+    "uuid": "ba575820-57ff-8f1d-9551-962bfb56fc25",
     "words": [
       "cause"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cause — The cause of a medical condition.",
-    "uuid": "8eddb669-2298-82d6-9e58-a66307667d6b",
+    "uuid": "0d550b70-07cd-8841-b666-cea6c23dc0c3",
     "words": [
       "use",
       "when",

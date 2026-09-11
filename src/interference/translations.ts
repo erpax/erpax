@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interference",
-    "uuid": "b8fd9f2d-7aa5-8a5e-afb1-4c4c53534e3d",
+    "uuid": "5a12798e-85cf-83c3-b673-008214887c7e",
     "words": [
       "interference"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about interference — two wave amplitudes combine by phase, not classical sum: I = a1² + a2² + 2·a1·a2·cos(φ), constructive (in phase) reinforcing to (a1+a2)², destructive (out of phase) cancelling to (a1−a2)². The cross term is the quantum part that draws the double-slit fringes; averaged over a period it vanishes, so energy is conserved — interference redistributes intensity, never creates it. In erpax in-phase link-paths reinforce (gravity deepens), out-of-phase cancel.",
-    "uuid": "dbd5f315-f59f-8b25-b7e6-8023e9a52d61",
+    "uuid": "4a0c3908-c53e-830a-9f7c-ed594605ee19",
     "words": [
       "use",
       "when",

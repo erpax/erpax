@@ -2,11 +2,11 @@
 name: taggings
 description: "Use when attaching, querying or removing label-context associations across any collection — polymorphic (tag × taggable × context × tagger) join where context is a free string enabling unlimited label-sets with zero schema change. The polymorphic tagging-join collection; content-uuid makes each (tag, target, context, tagger) tuple automatically unique."
 atomPath: "tags/taggings"
-coordinate: "tags/taggings · 8/crest · c9fbe508"
-contentUuid: "3dc165b8-1b2f-5f7a-bd7f-2413f0775f55"
-diamondUuid: "d793c5f5-a6a9-86af-b42a-9af250c81888"
-uuid: "c9fbe508-8cf9-8eb6-82f6-c0623a866116"
-horo: 8
+coordinate: "tags/taggings · 4/weave · bd04ef79"
+contentUuid: "f06debc8-5fee-503b-98f2-324513b95b1f"
+diamondUuid: "545f0869-5848-8e07-a105-171563342388"
+uuid: "bd04ef79-78c3-8f8e-b259-19906be11e7f"
+horo: 4
 typography:
   partition: tags
   bondDegree: 15
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c72676d7-b841-8c37-9e99-8def32fe5e44"
+  computationUuid: "ba1203d8-69b6-81b8-b5b3-38b3fe47cbc1"
   stages:
     - stage: path
       stageUuid: "bff41ad9-b953-81c7-a2d9-ebf26bae32b4"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "5bdb8868-00ed-83c7-a8fd-96e177514f82"
     - stage: horo
-      stageUuid: "b26c5545-f67f-80df-9c89-6a3fdbe49f8f"
+      stageUuid: "5ae02766-d6eb-8dc3-ba2f-b7c361240d66"
     - stage: seal
       stageUuid: "2f68d6c0-39cd-838e-9cb1-b766c879a749"
     - stage: uuid
-      stageUuid: "65bcc886-c21e-8b9d-9655-4d9b4781243a"
+      stageUuid: "401aca56-ee68-8118-a0aa-a1f7b705f74c"
 version: 2
 ---
 # taggings

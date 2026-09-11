@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "education",
-    "uuid": "7fd7de60-c361-8a80-8aed-5c6a34c89047",
+    "uuid": "b2ad4683-9cda-86ac-8b4a-612ecb1976c8",
     "words": [
       "education"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing educational institutions — student enrollment, curriculum delivery, academic assessment, teaching schedules, institutional capacity, or education program outcomes in government/nonprofit schools (COFOG 09).",
-    "uuid": "9817f96b-ae78-84b2-9ef9-1e2178ac162a",
+    "uuid": "3936a98b-44c5-831c-a0a7-9bcebcf2b5b2",
     "words": [
       "use",
       "when",

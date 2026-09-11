@@ -2,10 +2,10 @@
 name: provider
 description: "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…"
 atomPath: "self/closure/provider"
-coordinate: "self/closure/provider · 4/weave · 56794b67"
-contentUuid: "399c344e-4fac-5adf-9979-1b6fc218e1dc"
-diamondUuid: "d853b0a7-8398-8e6c-956b-2272113258db"
-uuid: "56794b67-8b29-8441-aba1-e6b39009b57f"
+coordinate: "self/closure/provider · 4/weave · bbb499a8"
+contentUuid: "0884e92f-3e81-54e0-9425-6e951c6b778b"
+diamondUuid: "7eda2bae-68a7-8cf8-a283-b72a693a0940"
+uuid: "bbb499a8-f07c-853b-adee-4e0a3d072aff"
 horo: 4
 typography:
   partition: self
@@ -16,7 +16,7 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "b441c7af-f3b8-810e-8efc-c4e00cfc2faf"
+  computationUuid: "ecea1a12-3157-831a-a85a-668f73518ddd"
   stages:
     - stage: path
       stageUuid: "e1de80df-d8c6-8fde-ba0e-5939f36db404"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "94ee3acd-0268-8b4e-a609-da04d086dd46"
     - stage: horo
-      stageUuid: "19e567bf-f62f-8595-acc3-1c90815790b4"
+      stageUuid: "532c5574-db41-8870-b2db-e55fbeb4ad90"
     - stage: seal
       stageUuid: "764050b8-09db-8c3a-94cd-028384057fed"
     - stage: uuid
-      stageUuid: "cac1ecbf-832d-8fa3-a04e-ff11ed437281"
+      stageUuid: "d2d8f17f-5f52-8756-80d4-d3ff7ff096d1"
 version: 2
 ---
 # self/closure/provider — importing the barrel IS the registration

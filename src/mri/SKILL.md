@@ -2,10 +2,10 @@
 name: mri
 description: "Use when reasoning about mri as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: mri
-coordinate: "mri · 2/share · ff0cc3c7"
-contentUuid: "24da59d6-2958-5153-ba45-f7076678f070"
-diamondUuid: "c02e6b84-0d63-86b2-a1e7-f7a09127bf4c"
-uuid: "ff0cc3c7-4927-8749-bb5a-077ce5531ae6"
+coordinate: "mri · 2/share · d7f0113d"
+contentUuid: "68ad36bd-4041-545a-8513-f23264cb8369"
+diamondUuid: "a69bffbe-29a8-873f-bf8c-0f05e8ce02c4"
+uuid: "d7f0113d-7012-8626-86ca-e61f8f015f8e"
 horo: 2
 typography:
   partition: mri
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d9d4a552-b689-8070-9286-2f44e5fa2e0e"
+  computationUuid: "d3c326bd-f62f-80c0-ba96-035241e33c4a"
   stages:
     - stage: path
       stageUuid: "0a12bd6e-e9e7-879b-8582-d56a86e81a45"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f1abe0d9-ca83-8d25-936b-30af1ad72b85"
     - stage: horo
-      stageUuid: "a71b817f-2f54-8fa2-87bc-d38aa3c03a23"
+      stageUuid: "75e089ff-44e3-8c39-90cf-30af48ed4c59"
     - stage: seal
       stageUuid: "1ee6a7b3-ebad-895b-954a-1f9cb7ad4be0"
     - stage: uuid
-      stageUuid: "444d5d3d-9345-8af4-be0a-36f6a9de28e5"
+      stageUuid: "8f7cecea-5139-83fa-89cd-db3b6cb49336"
 version: 2
 ---
 # mri

@@ -2,11 +2,11 @@
 name: fmradio
 description: "Use when reasoning about fmradio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fmradio"
-coordinate: "vocabulary/fmradio · 1/base · 9ab39869"
-contentUuid: "555e70e9-d629-5c83-ada8-5704882c8784"
-diamondUuid: "b9c4a070-c28d-823b-b6d9-31707c0cf64b"
-uuid: "9ab39869-1957-8333-9cf4-e0f78b606a70"
-horo: 1
+coordinate: "vocabulary/fmradio · 4/weave · 0ebc29d4"
+contentUuid: "ea9e644c-bbb4-58b6-9550-7c39c42dece8"
+diamondUuid: "5a9b37ef-dfa6-8710-8fb9-e6ef9176d7c2"
+uuid: "0ebc29d4-7c17-836d-b302-a0903531d83d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "497f3159-298a-8235-bc33-42bf5438e04e"
+  computationUuid: "d61e86a6-e5b0-8f95-9a9b-428b57307d8c"
   stages:
     - stage: path
       stageUuid: "60bfd056-301f-866d-9402-1455485ed72a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b78b64c0-9f42-8f1b-a0b1-1601f19abdef"
     - stage: horo
-      stageUuid: "7ee7003d-c653-83cb-b50a-f8b3d32156fc"
+      stageUuid: "fa51c0ac-816b-842f-be0c-46691e982ffb"
     - stage: seal
       stageUuid: "2cac8693-6fcc-84aa-9182-384598567f5c"
     - stage: uuid
-      stageUuid: "c987f0f6-cfa3-8d20-a4e9-4b469e439ef9"
+      stageUuid: "e6062282-9659-8f53-9c6e-792cac743440"
 version: 2
 ---
 # fmradio

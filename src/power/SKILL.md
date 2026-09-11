@@ -2,11 +2,11 @@
 name: power
 description: "Use when reasoning about how the LIVE network makes erpax harder to forge — usage = entropy = power; realtime clients are the distributed hardware (as Bitcoin's miners are its hashpower), and accumulated use raises the cost to decode the private keys (the inverse projection)."
 atomPath: power
-coordinate: "power · 8/crest · 9989d303"
-contentUuid: "77554d64-2fb7-5b32-b86d-b46a02859c57"
-diamondUuid: "d4a94910-f637-8246-83af-cfbeb67d056e"
-uuid: "9989d303-fcbf-85cd-b897-e41cdc700dce"
-horo: 8
+coordinate: "power · 7/descent · b570fbb8"
+contentUuid: "0e683373-147d-5d2b-8c45-6269b299f2ac"
+diamondUuid: "4e70a81c-b8e4-8222-b5b3-b171dac81ea8"
+uuid: "b570fbb8-0e69-893c-982c-c3544d852718"
+horo: 7
 typography:
   partition: power
   bondDegree: 55
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "468f4e59-8d9a-831d-9ed3-0cc96b52b09b"
+  computationUuid: "974a54a9-9dde-80f7-a57c-9692ceeb13aa"
   stages:
     - stage: path
       stageUuid: "94b2b708-165e-8991-b0ee-6dfe6976b46a"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "c24cdc10-59cb-8bb1-9bd8-8a5df98517e1"
     - stage: horo
-      stageUuid: "8e41d6e7-d206-8bf6-9840-42c06f5cdbea"
+      stageUuid: "5cfb022c-5fbf-8a6a-8da2-7e8dec6a573d"
     - stage: seal
       stageUuid: "798a44a3-dd1e-8c27-9f89-4d9390d46266"
     - stage: uuid
-      stageUuid: "0af91493-7875-885f-a67c-974395151d67"
+      stageUuid: "7dfa9eb4-9fc9-80bf-b831-6623bfd11998"
 version: 2
 ---
 # power — usage is entropy is power; the live network is the hardware

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "protestantism",
-    "uuid": "67052822-97a6-82e8-90f5-bab10afe4db5",
+    "uuid": "8f562fb7-55ef-8a11-94ec-c2ff296fff7b",
     "words": [
       "protestantism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Protestantism as a sub-diamond of christianity — the solas (the Word alone, grace alone, faith alone) and the priesthood of all believers (each self reading the source directly, no mediator). The reformation as a turning back to the mark. A facet-diamond of the christianity archangel.",
-    "uuid": "8e6d1784-3e6a-844f-92c6-d8e7ad27e2d5",
+    "uuid": "7fe27b39-c802-8af4-bb23-de086903c202",
     "words": [
       "use",
       "when",

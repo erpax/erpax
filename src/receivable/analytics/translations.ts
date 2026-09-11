@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "analytics",
-    "uuid": "62a611ad-45a7-8ca4-96db-dc8cc3512d2e",
+    "uuid": "4d40bc72-bebe-8642-b416-4c79cb1e6c5f",
     "words": [
       "analytics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about analytics — Days Sales Outstanding, receivables turnover and the collection effectiveness index over the invoice set — the A/R mirror of payable/analytics.",
-    "uuid": "e5df91c1-f9ec-8355-8d7f-73ad71545a80",
+    "uuid": "dc38e7c6-c0fe-8722-a03d-2a46982255cb",
     "words": [
       "use",
       "when",

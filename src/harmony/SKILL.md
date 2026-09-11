@@ -2,11 +2,11 @@
 name: harmony
 description: "Use when checking whether an interval — or a whole band of horo positions — is consonant. The seven positions ARE the diatonic scale (just intonation over the A432 anchor); harmony is the smallness of the ratio (Tenney height). The harmony-check the horo state-bands need. Matter-twin harmony/index.ts."
 atomPath: harmony
-coordinate: "harmony · 4/weave · 1af82584"
-contentUuid: "d811573c-ad80-5644-a9c3-2975a4934d7f"
-diamondUuid: "59f84595-7ce5-863e-8398-729b7d1e4524"
-uuid: "1af82584-1275-843b-be45-72cd18404ffc"
-horo: 4
+coordinate: "harmony · 8/crest · cbfb2e9c"
+contentUuid: "ae6760c4-8351-53bf-8c75-a152938b349a"
+diamondUuid: "7313eb8f-fb95-8dd6-927f-ffedfa8c2699"
+uuid: "cbfb2e9c-25c1-8cf9-bc03-1b88e842bbe5"
+horo: 8
 typography:
   partition: harmony
   bondDegree: 211
@@ -14,7 +14,7 @@ standards:
   - "just intonation (5-limit) — the perfect (1:1, 2:1, 3:2, 4:3) and"
 bindings: []
 signatures:
-  computationUuid: "dc29c408-dbfc-8085-9dcf-636306c588ac"
+  computationUuid: "7ac40164-1458-8915-a327-5ba50a248eae"
   stages:
     - stage: path
       stageUuid: "a3475376-b251-8de8-998e-68bac6c1bc30"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7efc59a6-a676-84b0-838c-3abbeb756174"
     - stage: horo
-      stageUuid: "ce5e89cb-c61e-88c3-bcfe-d976c6def23b"
+      stageUuid: "c90674f8-7685-8c19-b927-e289b854679d"
     - stage: seal
       stageUuid: "c0116a4c-ee7b-8ab0-ab43-34a225b20b75"
     - stage: uuid
-      stageUuid: "7a1dc6fa-9588-8214-b703-62401580796e"
+      stageUuid: "7158ad4e-f5c2-84a4-9fed-a9c316f0e6c8"
 version: 2
 ---
 # harmony — consonance over A432

@@ -2,11 +2,11 @@
 name: business
 description: "Use when reasoning about business as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: business
-coordinate: "business · 4/weave · 104ed0a7"
-contentUuid: "f8ec9143-ad10-5351-9662-da03682ee020"
-diamondUuid: "6ad2a671-2d35-8ede-89fe-e93fd4b67c24"
-uuid: "104ed0a7-5277-8a4c-8f59-7678cad252e0"
-horo: 4
+coordinate: "business · 5/round · c1c38b21"
+contentUuid: "847c2193-b216-5b3b-94f7-d6635c2957d2"
+diamondUuid: "5ca5e10a-be5e-85e7-8948-f773919d836f"
+uuid: "c1c38b21-716d-8ef2-b566-08f72dd2ee28"
+horo: 5
 typography:
   partition: business
   bondDegree: 91
@@ -17,7 +17,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "be75a1b9-f4e8-89a7-abaa-bee73f29a9a1"
+  computationUuid: "86f7b859-f30d-8d73-903d-bd987697247d"
   stages:
     - stage: path
       stageUuid: "e068e9e6-5ad2-8891-bc0e-117d3a7eabd3"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "266b391e-0116-890b-8513-4faf7a575a75"
     - stage: horo
-      stageUuid: "9d9b1af7-0b85-802f-9a49-06de4e14be51"
+      stageUuid: "e75fe09e-1256-8cc8-9b7f-d0621a365a6e"
     - stage: seal
       stageUuid: "787ad0b4-e7ba-801e-ac6e-ae252e242b05"
     - stage: uuid
-      stageUuid: "4f044045-c4bc-80af-adae-87ac5df2811c"
+      stageUuid: "a2aaab35-e628-822e-b76c-ccd3999c31d8"
 version: 2
 ---
 # business

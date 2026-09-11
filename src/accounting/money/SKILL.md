@@ -2,11 +2,11 @@
 name: money
 description: "Use when reasoning about accounting/money — money fields — Payload money type fixes and currency handling."
 atomPath: "accounting/money"
-coordinate: "accounting/money · 5/round · 89f36568"
-contentUuid: "f4bedac6-694b-5401-b146-9113408c5866"
-diamondUuid: "88a37686-1d69-8557-8599-fe2aa1a2e430"
-uuid: "89f36568-2f0d-842e-974f-b03cebc043a6"
-horo: 5
+coordinate: "accounting/money · 7/descent · 0ea82d27"
+contentUuid: "82bb93c3-1da1-535f-b85f-14b95009ae93"
+diamondUuid: "94c3267b-59b9-8581-b358-338d9b233b36"
+uuid: "0ea82d27-5b3f-8a22-b420-8d98920a5dda"
+horo: 7
 typography:
   partition: accounting
   bondDegree: 45
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "22f8a6f4-1f31-8773-9ba5-e9fba1efbdf3"
+  computationUuid: "590bd856-0396-81ac-8e9e-734ab3dc27b3"
   stages:
     - stage: path
       stageUuid: "7e882c4d-e6c8-8956-b1a4-ad503db0e0da"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "889af43b-374e-8b97-9fc7-dc9b75a59587"
     - stage: horo
-      stageUuid: "110c0c1a-9e2f-8b61-9fdf-07624373c0a1"
+      stageUuid: "e25b2a36-e258-889e-b3fd-6724b5ee6df5"
     - stage: seal
       stageUuid: "2f184d52-34f5-8b5c-bd59-5fbe5c22504e"
     - stage: uuid
-      stageUuid: "29586d52-4f77-8b66-813f-e193c45345dd"
+      stageUuid: "36ab8bfd-7ea9-8a08-b1ce-acc5d639a59b"
 version: 2
 ---
 # accounting/money

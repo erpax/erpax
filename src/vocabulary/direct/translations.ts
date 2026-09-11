@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "direct",
-    "uuid": "8b51b03c-472e-8e3e-8577-358eb8b2916b",
+    "uuid": "c85498a2-bc15-831a-8e55-579c22839f99",
     "words": [
       "direct"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about direct as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "bbab8d6b-44aa-8fe2-a685-a53e44d6afc3",
+    "uuid": "bb5d98f4-0a7b-8ccd-afb5-7e1dd9db877e",
     "words": [
       "use",
       "when",

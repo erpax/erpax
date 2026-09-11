@@ -2,11 +2,11 @@
 name: physicians
 description: "Use when reasoning about physicians as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/physicians"
-coordinate: "vocabulary/physicians · 8/crest · 61098324"
-contentUuid: "0a462043-6448-53bc-812f-3c49b557f67c"
-diamondUuid: "ddd79cba-f0a9-85d9-8fb7-492e297eee68"
-uuid: "61098324-81bd-8c55-a39d-ae5afface0d0"
-horo: 8
+coordinate: "vocabulary/physicians · 5/round · 2d57935b"
+contentUuid: "28c728da-3ab0-54c2-8e55-fd59562b538f"
+diamondUuid: "ccb7d1dc-407c-8750-99ba-632f6dcf5886"
+uuid: "2d57935b-ab46-8c72-9ce9-b50a44450a99"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7bad1442-f3e5-8e6b-8aee-3371ab907db5"
+  computationUuid: "27183cea-872e-8998-964b-ad448db4d8ab"
   stages:
     - stage: path
       stageUuid: "c57f6fbc-39d4-85a2-b09f-07500add67f7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "24df7a01-dea2-82cb-ae3a-9a666e14bc50"
     - stage: horo
-      stageUuid: "c3c19f3f-511f-80c8-8c48-cfff9fc05c72"
+      stageUuid: "45971b32-c26f-810d-8916-b87e20475d60"
     - stage: seal
       stageUuid: "ff322bdd-5dce-8095-8cea-65c4783f3b9d"
     - stage: uuid
-      stageUuid: "9b772e68-2701-8996-909c-effa9fbc81d0"
+      stageUuid: "8410f97f-4dd8-8924-a9ee-166061688ce7"
 version: 2
 ---
 # physicians

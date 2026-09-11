@@ -2,11 +2,11 @@
 name: prescribing
 description: "Use when reasoning about prescribing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prescribing"
-coordinate: "vocabulary/prescribing · 2/share · 7126f3c8"
-contentUuid: "7fe947ab-6322-5594-a084-85b24579870c"
-diamondUuid: "b55e9aaa-b9a6-8387-916f-aef31bd6dcb4"
-uuid: "7126f3c8-dabd-884d-a0d2-9c831488d448"
-horo: 2
+coordinate: "vocabulary/prescribing · 5/round · d05a3937"
+contentUuid: "cd27b42a-d066-5230-b9c1-9f6c1d1e7ffa"
+diamondUuid: "1272e500-e4f9-8440-b9ff-9882c0573aa9"
+uuid: "d05a3937-998b-8c17-b98e-62d1a61bd4ff"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e8bc5f3-e024-8729-89e0-f31cd3ec9ac3"
+  computationUuid: "bc846d90-c93f-8041-a583-37ff1dc34483"
   stages:
     - stage: path
       stageUuid: "264d9b15-4d75-875b-948b-0006ec112eb3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9443fbaa-3d3c-855d-bf0e-e8b819d04756"
     - stage: horo
-      stageUuid: "b7d3717b-c91b-8ccd-b5d2-9fd8df18ccd8"
+      stageUuid: "1c962809-3ca3-88ff-afe2-d8cbb4ec9856"
     - stage: seal
       stageUuid: "b5a5ccd9-6a63-8fdf-8f2a-5ffd35726046"
     - stage: uuid
-      stageUuid: "d593094a-cabf-827f-9501-0fb3b35bf378"
+      stageUuid: "95645fda-6a56-8ed8-8bc5-440bdc4dac03"
 version: 2
 ---
 # prescribing

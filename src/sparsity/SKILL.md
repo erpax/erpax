@@ -2,11 +2,11 @@
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
 atomPath: sparsity
-coordinate: "sparsity · 8/crest · a45da430"
-contentUuid: "f00d4fb7-5707-53d7-8340-f519e85baecb"
-diamondUuid: "beb3ef3a-0761-868a-bae3-d78a994c86b0"
-uuid: "a45da430-948b-817f-aa13-e6e685345b7c"
-horo: 8
+coordinate: "sparsity · 4/weave · 98aa99b4"
+contentUuid: "c63e17ec-0a94-595c-8605-90e10f3d205c"
+diamondUuid: "6c60ceeb-c5c5-84c4-b245-1ac9c7aade21"
+uuid: "98aa99b4-0adb-8189-8c58-d2647ba017c0"
+horo: 4
 typography:
   partition: sparsity
   bondDegree: 81
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation"
 bindings: []
 signatures:
-  computationUuid: "0a744a3c-968d-8f28-b858-3e892702d24e"
+  computationUuid: "1c220345-dd3c-8965-b9cd-74d8d878955d"
   stages:
     - stage: path
       stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3598cef6-cb85-8eae-83ac-0a1bcfd60fcf"
     - stage: horo
-      stageUuid: "82d9f7aa-2fdc-8c50-bb33-d414fd9ade7e"
+      stageUuid: "b264acc6-0c90-83dd-9c7e-127bc20359e7"
     - stage: seal
       stageUuid: "05ff4ba5-f389-8961-93c4-317fa21cc0d4"
     - stage: uuid
-      stageUuid: "c9cb1d42-6740-84c1-9535-7f8d05f33cf6"
+      stageUuid: "25431e7f-ff35-8ab1-945c-0b494b565baa"
 version: 2
 ---
 # sparsity — the active fraction (few of many, alive at once)

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "arm",
-    "uuid": "2c143d98-be7d-8a1d-9bba-b75f337efb42",
+    "uuid": "5cdac428-f987-8a90-9fc8-1e2df4846fde",
     "words": [
       "arm"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about arm as an anatomical part of body — vocabulary pivot to @/arm; nested not duplicated.",
-    "uuid": "77cd7596-ffbf-83bc-b012-72bb5a3777d1",
+    "uuid": "b95e9b1b-fb35-8530-8cca-fec923b9ffeb",
     "words": [
       "use",
       "when",

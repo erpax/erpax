@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "double",
-    "uuid": "9a3f865f-0887-857e-9486-c5929e95874d",
+    "uuid": "7d0788b8-39c3-893b-916a-55b0b441f643",
     "words": [
       "double"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about double as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "adb3be83-d928-8d55-b7f2-89502c8f192c",
+    "uuid": "45d660bf-fb4b-8ced-939c-6d76d0374f8b",
     "words": [
       "use",
       "when",

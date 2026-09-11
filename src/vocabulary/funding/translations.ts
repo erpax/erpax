@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "funding",
-    "uuid": "e3066859-d126-862c-b0b7-94d50bc78bd9",
+    "uuid": "10cbe4bd-206f-8b91-97ed-03347cf41f72",
     "words": [
       "funding"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about funding — A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo.",
-    "uuid": "7cf00dce-f598-846f-949b-f1026a462a8e",
+    "uuid": "4b16e537-cc95-8878-aab4-d0cf36e1b78e",
     "words": [
       "use",
       "when",

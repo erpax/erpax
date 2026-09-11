@@ -2,11 +2,11 @@
 name: http
 description: "Use when reasoning about http as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/http"
-coordinate: "vocabulary/http · 5/round · d8c3a11c"
-contentUuid: "1d939fb2-bcba-5bde-85c1-ffb728638f87"
-diamondUuid: "a6a9530d-b795-8253-bc03-2dc6865d0346"
-uuid: "d8c3a11c-77c8-8cc6-a9b7-09ddc6e7dbda"
-horo: 5
+coordinate: "vocabulary/http · 1/base · ff6c68ae"
+contentUuid: "95c2fcb4-aab4-50b3-809e-0ed1eceff61e"
+diamondUuid: "370788aa-9f1a-85d1-a9f1-2fed1a5791eb"
+uuid: "ff6c68ae-d6d3-8e90-b07f-6e9263dc71a5"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c496c3ce-94f7-89cd-973e-ff6795d9b22d"
+  computationUuid: "a8cd36e0-b301-8b73-b94f-5c46aa61e91b"
   stages:
     - stage: path
       stageUuid: "5be54743-bb5b-8acc-9acb-1c044ef023d6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b168c442-9912-8e2c-8c56-eba099f7029b"
     - stage: horo
-      stageUuid: "2e1ef989-4364-8f9d-b819-4303e8e7c742"
+      stageUuid: "75e2245f-8c70-8339-bcd9-1527e04a20d5"
     - stage: seal
       stageUuid: "0ad0cca9-a1fa-8102-b37f-f749fd2872c6"
     - stage: uuid
-      stageUuid: "d69608e1-d99a-8fd6-aee4-bc72d041d2d3"
+      stageUuid: "293e58f9-eef6-8797-8842-94e8d21f365d"
 version: 2
 ---
 # http

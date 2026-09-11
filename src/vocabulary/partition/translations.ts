@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "partition",
-    "uuid": "ab63d53f-7c70-850d-a6ae-dec350162d47",
+    "uuid": "08b5946a-4ba1-80a7-b136-27a49b66a768",
     "words": [
       "partition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when dividing data for performance or governance — table partitioning (by range/hash/list), partition pruning, partition management (add/drop/compress), partitioning strategy for horizontal scaling.",
-    "uuid": "c47be18e-adfb-8134-9205-a21166b77dea",
+    "uuid": "d308fc68-c2fc-80a3-b196-86f67fa684aa",
     "words": [
       "use",
       "when",

@@ -46,6 +46,7 @@ const walk = (dir) => {
  * the artefact and its own input.
  */
 const stripFrontmatter = (t) => t.replace(/^---\n[\s\S]*?\n---\n?/, '')
+const stripQuantumFooter = (t) => t.replace(/\n*<sub>content-uuid\s+`[0-9a-f-]{36}`[\s\S]*?<\/sub>\s*$/i, '').trimEnd()
 const stripCode = (t) =>
   stripFrontmatter(t).replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
 const LINK_RE = /\[\[([A-Za-z][A-Za-z0-9/-]*)(?:\|[^\]]*)?\]\]/g
@@ -101,7 +102,11 @@ for (const f of files) {
   corpusBytes += content.length
   const path = atomPathOf(f)
   const leaf = norm(basename(dirname(f)))
-  const uuid = toUuid(content)
+  // The BODY, never the whole file: the frontmatter records this uuid, and sha256 of a file that
+  // contains its own hash has no fixpoint — every push re-drew all 3,581 uuids and ~2,900 horos.
+  // The trailing content-uuid stamp is derived too (upgrade/quantum `stripQuantumFooter`, the same
+  // pattern): left in, 94 stamped atoms kept the fold moving one hop removed — 405 files a pass.
+  const uuid = toUuid(stripQuantumFooter(stripFrontmatter(content.toString('utf8'))))
   const dim = dimOf(relative(ROOT, f))
   const pos = positionOf(leaf, dim, uuid)
   pathIdx.set(path, nodes.length)

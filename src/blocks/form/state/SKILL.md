@@ -2,18 +2,18 @@
 name: state
 description: "Use when reasoning about state — The control is the ordinary Radix combobox (blocks/form/select), named only by its bound label."
 atomPath: "blocks/form/state"
-coordinate: "blocks/form/state · 1/base · d9cf72f0"
-contentUuid: "bf8cbe0d-ff42-572a-a9d8-23ce579bd7c3"
-diamondUuid: "d23801be-8a03-8d1d-9206-7c3d0c32b2a1"
-uuid: "d9cf72f0-9629-828f-bc99-bd13557fbe69"
-horo: 1
+coordinate: "blocks/form/state · 4/weave · 353c7e87"
+contentUuid: "c9e6acbb-095d-53e5-853c-c4bc358cfc7c"
+diamondUuid: "4a4762e9-4450-818b-ad33-d90a97dc3a3b"
+uuid: "353c7e87-3891-8009-abcc-140ce040fdac"
+horo: 4
 typography:
   partition: blocks
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e6f2d31d-068d-8ca5-a597-e117521ce77d"
+  computationUuid: "e2031826-1410-8502-91f7-f5674ba046f8"
   stages:
     - stage: path
       stageUuid: "b0ba0211-77f5-84e4-8a8e-fd25c42b3dc1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5e49189d-6bb6-8304-9c44-05e0662648bb"
     - stage: horo
-      stageUuid: "a4341b1c-5786-8292-9914-ffc2313455b7"
+      stageUuid: "cd1b5853-9694-88ce-9f17-6cdda926184e"
     - stage: seal
       stageUuid: "b11527bb-18b8-825a-b77d-ac46533251ce"
     - stage: uuid
-      stageUuid: "6e058b17-633d-8e57-8364-b09e02351f2a"
+      stageUuid: "5cc31faf-3fdb-8eca-8296-0f8960f852e8"
 version: 2
 ---
 # blocks/form/state — 50 subdivision codes, and the two-letter shape they must keep

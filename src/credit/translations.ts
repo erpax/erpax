@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "credit",
-    "uuid": "b10468cd-0cf1-8916-b05b-f6cf9639ea59",
+    "uuid": "4ef3930d-c956-837f-aac8-66146b56cb7a",
     "words": [
       "credit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about credit — A schema.org component word, collided out of schema.org compounds — fused from BankOrCreditUnion · CreditCard · LoanOrCredit · creditText (sti · collapse · merge).",
-    "uuid": "95a92c71-8db8-8876-af42-ec3c5b208f79",
+    "uuid": "be40f7b0-1d2b-8f60-abfd-5b1ceffae28e",
     "words": [
       "use",
       "when",

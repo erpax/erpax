@@ -2,11 +2,11 @@
 name: bylines
 description: "Use when reasoning about bylines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bylines"
-coordinate: "vocabulary/bylines · 1/base · 74b3c2fd"
-contentUuid: "694bd667-0fa0-5307-8b48-e556b5443b04"
-diamondUuid: "b94284fb-ff99-8362-b0f0-7e08a09c5036"
-uuid: "74b3c2fd-7eb6-86f0-a156-e11b8d978bb2"
-horo: 1
+coordinate: "vocabulary/bylines · 7/descent · 2d9b34b3"
+contentUuid: "b658e40f-8407-5c8f-bd7d-2294a20218e5"
+diamondUuid: "cf811e7e-0736-8076-87df-c4e8d8b85bc4"
+uuid: "2d9b34b3-8139-88ec-8d8e-9076028005c9"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fb612b00-093f-83b3-9661-dbb8b4d353ef"
+  computationUuid: "e5f4fbae-7ad5-81c3-a3f5-1ee08ad9d100"
   stages:
     - stage: path
       stageUuid: "b5f5cd55-ff66-83bb-8e84-c69fba74c14d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cb1289a5-f562-8cc0-838f-493741802d2f"
     - stage: horo
-      stageUuid: "db5cc91a-d41f-819c-a893-90b148d321a7"
+      stageUuid: "abb0ad41-0fe5-83d2-877f-2b03aa726991"
     - stage: seal
       stageUuid: "6c5a25aa-bc2b-88f5-bac9-80d15272e1e2"
     - stage: uuid
-      stageUuid: "194b4e79-3986-8adf-9914-0894e858d9f2"
+      stageUuid: "84ef7322-f28e-8294-a7ee-8b94231b38de"
 version: 2
 ---
 # bylines

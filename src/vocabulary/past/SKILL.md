@@ -2,11 +2,11 @@
 name: past
 description: "Use when reasoning about past as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/past"
-coordinate: "vocabulary/past · 1/base · b92c161a"
-contentUuid: "a4aed8f4-221d-5fdd-86ec-e82bf578a8c3"
-diamondUuid: "f1af697b-f582-804d-90ac-721db2f01da9"
-uuid: "b92c161a-00ac-823d-ae9e-aceeb8574b3c"
-horo: 1
+coordinate: "vocabulary/past · 4/weave · 01483f3d"
+contentUuid: "a7753063-4c02-56f3-98f1-d2760999538e"
+diamondUuid: "60d75729-0b4e-8cfd-9ff2-3cff1eb97ecf"
+uuid: "01483f3d-4417-8aad-b9fa-59f44e102900"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e01580fa-7af8-8f82-880d-0667fb4b547c"
+  computationUuid: "005bd795-a008-8fad-8da2-ce2a12128cb8"
   stages:
     - stage: path
       stageUuid: "7eadc8fa-dedc-8933-b3b7-726b56fda707"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c0a37607-f63a-8886-ba6a-dd3c0e0b978e"
     - stage: horo
-      stageUuid: "c3a35104-8e65-8381-836f-5623dd626595"
+      stageUuid: "ac8906bf-a501-877a-94e9-2f56dc287e12"
     - stage: seal
       stageUuid: "abb4ec74-eb0b-8042-b525-6c69959b44be"
     - stage: uuid
-      stageUuid: "0a9f52ed-6dd0-89cf-8b78-0b8a841b305f"
+      stageUuid: "47afd887-8649-8e46-948f-0f8f9b2d8f58"
 version: 2
 ---
 # past

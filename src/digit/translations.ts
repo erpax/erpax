@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "digit",
-    "uuid": "e22909d1-93b7-8a82-a2a5-06cf829aeb61",
+    "uuid": "aa8df92b-37e5-8a12-ba10-15f3f9595f61",
     "words": [
       "digit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when addressing an atom in digit-space — the dual of word — its horo sequence position and the digital-root of its content-uuid, the trace that completes the aura into a tamper-evident trinity.",
-    "uuid": "37cfe248-fca8-85d9-8c4b-7ad06c84bc84",
+    "uuid": "2972d002-8af8-8634-ad09-02cec954a506",
     "words": [
       "use",
       "when",

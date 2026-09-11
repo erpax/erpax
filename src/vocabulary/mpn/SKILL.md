@@ -2,11 +2,11 @@
 name: mpn
 description: "Use when reasoning about mpn — The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers."
 atomPath: "vocabulary/mpn"
-coordinate: "vocabulary/mpn · 8/crest · e19eed9a"
-contentUuid: "5d3d8907-df4b-556d-851b-1cbc7ab4082f"
-diamondUuid: "cf408b03-ae56-800b-a5ab-0bb10fe82202"
-uuid: "e19eed9a-26c3-8bb2-957a-7af82c7c6183"
-horo: 8
+coordinate: "vocabulary/mpn · 5/round · c191d5d8"
+contentUuid: "4b76abd1-694d-5ef6-a953-1766ad97dc7e"
+diamondUuid: "8990d89d-8e57-8a10-aa64-99b303ea21e4"
+uuid: "c191d5d8-94c5-8d87-8051-ac4ec7ec51e4"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f31b0653-aa52-8608-995e-b7e38c10b803"
+  computationUuid: "f69edb1a-e8a9-8224-8ccd-9432c1be1be6"
   stages:
     - stage: path
       stageUuid: "fbd8d555-e8af-8ff2-b5b9-9e3b4c88690e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a41d5ef4-eef7-848a-951f-f23b6f346d2a"
     - stage: horo
-      stageUuid: "23705d45-0d49-833a-95e6-057d6451c7f1"
+      stageUuid: "316deeda-d621-80b3-8ab2-e4cff1ce8556"
     - stage: seal
       stageUuid: "b912dec0-1287-898d-b29b-8173e21f6af9"
     - stage: uuid
-      stageUuid: "71006a35-8931-87d8-b343-91abb6f94f97"
+      stageUuid: "8f10fd8a-57dc-8174-aba9-ab0f4a6277b0"
 version: 2
 ---
 # mpn

@@ -2,18 +2,18 @@
 name: maturity
 description: "Use when deciding a crop is ready to harvest — days-to-maturity (DTM, the scheduling constant from sow/transplant to first pick), the maturity index (color, firmness, size, °Brix sugar) that signals harvest readiness, and the harvest window before over-maturity. Harvest maturity (pick-point) differs from eating ripeness; DTM lengthens as daylight wanes."
 atomPath: "vocabulary/maturity"
-coordinate: "vocabulary/maturity · 1/base · e70b771d"
-contentUuid: "ae4c8c50-8557-56a2-946a-82475520776d"
-diamondUuid: "1c863973-3efe-84d5-8980-5697c9e14c59"
-uuid: "e70b771d-93bc-82fa-beca-c375f7aa3468"
-horo: 1
+coordinate: "vocabulary/maturity · 8/crest · e625c8fd"
+contentUuid: "38b274f9-23e4-53e8-b9f4-8bd2c99900f9"
+diamondUuid: "54ac2bd2-f8db-89e0-a105-ad0adaaf90cf"
+uuid: "e625c8fd-d66b-8f30-a67f-4ff069a80c5e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 61
 standards: []
 bindings: []
 signatures:
-  computationUuid: "825e2021-41e2-8c86-9dcd-efd11bf3f5e5"
+  computationUuid: "9d0a8f1f-0fdc-89e0-ae3d-dedfe188122a"
   stages:
     - stage: path
       stageUuid: "448c4738-a1af-80c2-b978-c2cc84b1f8eb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7affcfb4-3538-8673-85b2-0cab69690c0b"
     - stage: horo
-      stageUuid: "d0accfe8-e05a-8e77-98a5-cef943be4065"
+      stageUuid: "353e5374-8bb2-8238-8f09-d6680dca5079"
     - stage: seal
       stageUuid: "66ef16de-e936-86c6-8759-4d9ca26660ee"
     - stage: uuid
-      stageUuid: "ef761fd6-7f97-8bbf-80ab-995f3cad1261"
+      stageUuid: "f6e25d4b-de71-85ec-b684-db47d37384aa"
 version: 2
 ---
 # maturity — when the crop is ready (the harvest-readiness signal)

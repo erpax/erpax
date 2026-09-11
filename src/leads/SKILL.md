@@ -2,11 +2,11 @@
 name: leads
 description: "Use when capturing and qualifying prospects before they become customers — inbound/outbound sourcing, BANT/MEDDIC lead scoring, MQL/SQL progression, and conversion to an opportunity or customer on close-won. The CRM pre-customer lead collection."
 atomPath: leads
-coordinate: "leads · 2/share · 37657b75"
-contentUuid: "c1933bb8-b064-5cca-86fb-89f218d571ae"
-diamondUuid: "631bd3c5-a280-8d09-a5a8-fe4ba2b471dc"
-uuid: "37657b75-cf55-81df-90de-96292d094b7b"
-horo: 2
+coordinate: "leads · 7/descent · c9a148ff"
+contentUuid: "d1b3830f-e85c-5b40-91e9-e0d090286c9c"
+diamondUuid: "ab7e44a1-13a7-89dd-93ff-50616664ebcd"
+uuid: "c9a148ff-b552-8f54-b0f1-da5cc919b7d7"
+horo: 7
 typography:
   partition: leads
   bondDegree: 34
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "37050be5-44f1-8192-8cb0-4422d2bc6ce9"
+  computationUuid: "22714bd8-79e3-8c03-b8db-56bc32bcbc36"
   stages:
     - stage: path
       stageUuid: "20106496-7c97-85a2-a958-bcd903c96f68"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "cdf0287d-8ad5-8526-9f42-20918752a6fc"
     - stage: horo
-      stageUuid: "d707d64a-3b74-8b10-b849-5360c59f1fd7"
+      stageUuid: "e9b1ad80-5995-85a0-bdba-74d807b00ddc"
     - stage: seal
       stageUuid: "f9b927f7-98d2-88cd-b4d5-813287a9fdb1"
     - stage: uuid
-      stageUuid: "d09cdc94-6233-8b32-ade9-adc2127385cc"
+      stageUuid: "e38442fb-e995-8652-82d0-7ce3809845dd"
 version: 2
 ---
 # leads

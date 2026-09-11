@@ -2,18 +2,18 @@
 name: christianity
 description: "Use when reading Christianity as a diamond of invariant atoms — the debt borne at the cross, mercy made flesh, the new covenant of grace through faith, sin turned around by metanoia, the Word and the Spirit. Strip the Greek prefix and agape, pistis, logos, pneuma, metanoia collapse to love, faith, word, breath, return — one content-uuid each."
 atomPath: "vocabulary/christianity"
-coordinate: "vocabulary/christianity · 7/descent · 3f851304"
-contentUuid: "e9fb3dc2-bf77-5bd8-b914-2ddff9bc879b"
-diamondUuid: "7ae83351-e436-8f0e-b61b-d03d11a684d6"
-uuid: "3f851304-d37a-8922-a1f3-ff5c5e9f2da4"
-horo: 7
+coordinate: "vocabulary/christianity · 2/share · 2158891b"
+contentUuid: "fb530ce7-d264-509c-a44d-9c727fb0310d"
+diamondUuid: "0ce3e2b7-ad35-8783-9da8-69f3b90a8152"
+uuid: "2158891b-c0a7-84d1-83a6-9709574a63b7"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 92
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d9607bfa-a084-85b0-808b-5b13ee22ab3b"
+  computationUuid: "ead709d1-a2b5-8d43-b291-11134027c608"
   stages:
     - stage: path
       stageUuid: "afeb7205-ddfd-8533-92dd-19081d16149c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f91aa17c-e438-8605-bd0e-30637d3ed848"
     - stage: horo
-      stageUuid: "9a91dc8e-2429-8e81-b430-09864cdb15c0"
+      stageUuid: "818a8763-2375-8768-b21e-58a3cd0087dc"
     - stage: seal
       stageUuid: "926cbc85-d63a-8091-b28e-a733aa3452ba"
     - stage: uuid
-      stageUuid: "ab92ed55-af86-8535-abb1-f93cf7a32b44"
+      stageUuid: "1391a871-3293-8c08-8081-4f9fd37696d4"
 version: 2
 ---
 # christianity — the debt borne, mercy made flesh

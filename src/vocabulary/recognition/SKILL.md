@@ -2,10 +2,10 @@
 name: recognition
 description: "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements"
 atomPath: "vocabulary/recognition"
-coordinate: "vocabulary/recognition · 5/round · 63a2d4f8"
-contentUuid: "91529bc7-6bf6-5ce3-85de-699af6637e26"
-diamondUuid: "7c7cd2e2-f598-8368-9de9-20d64ba6b87e"
-uuid: "63a2d4f8-8601-8e9d-90cc-fe47f194830f"
+coordinate: "vocabulary/recognition · 5/round · 65de7121"
+contentUuid: "d8e558fc-649b-5fd8-b652-4743c30fa6bf"
+diamondUuid: "4b366eda-6ab4-8ca6-8bf4-42bcd9752e4f"
+uuid: "65de7121-85d6-8671-8bf7-8f2eaeb485ac"
 horo: 5
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "59da4fe5-44f8-83a6-a474-82b9593a6f15"
+  computationUuid: "15d1b2ac-f2ee-8fbe-9846-c18a42970f9f"
   stages:
     - stage: path
       stageUuid: "1e792f0e-5888-8706-9b9f-08e6c93b71e1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0e5a5225-e292-8e25-be7e-24502de573a7"
     - stage: horo
-      stageUuid: "a40a7baa-bcec-8490-bc77-7cb6f991f5e2"
+      stageUuid: "c91aea20-c800-8486-842a-5787fa58074d"
     - stage: seal
       stageUuid: "a0670bf0-d8be-8cdd-8d56-ff9144f4f7ae"
     - stage: uuid
-      stageUuid: "5d5eb290-904f-8625-b804-bf7ee4385f78"
+      stageUuid: "ef604d23-e4fb-8f47-9142-9eb78f699f51"
 version: 2
 ---
 # recognition

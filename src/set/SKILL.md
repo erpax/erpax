@@ -2,11 +2,11 @@
 name: set
 description: "Use when reasoning about set as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: set
-coordinate: "set · 2/share · b49df35d"
-contentUuid: "bcc6131d-88b2-5d20-bfd3-85168537b582"
-diamondUuid: "2a3b10ab-0a5a-8055-99f8-39cf0230a585"
-uuid: "b49df35d-9f23-893d-a637-f8971ab45fdf"
-horo: 2
+coordinate: "set · 8/crest · 2dee5823"
+contentUuid: "e696dbde-b5e2-5ed0-9092-e33e47b2c4fe"
+diamondUuid: "996c3463-ef74-82e8-8f25-cbb8e4dce27f"
+uuid: "2dee5823-fb42-8854-a800-4b283000241f"
+horo: 8
 typography:
   partition: set
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "689f27b1-444b-884a-897b-0e0acc0a6ae6"
+  computationUuid: "19f278ab-0b91-8510-a6e6-078efac0d571"
   stages:
     - stage: path
       stageUuid: "97c1aab6-a8ff-8b6c-88c5-e10166f6b73c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32000a15-bf66-8c06-b123-441fb87e9467"
     - stage: horo
-      stageUuid: "31659b28-f2d7-8029-a222-8a53a238f8fc"
+      stageUuid: "b49f3da1-d711-8525-86a4-d70b952a40cb"
     - stage: seal
       stageUuid: "6da8a292-faa0-833e-8ae9-ca6afcd06622"
     - stage: uuid
-      stageUuid: "9ce4a721-772d-8cdc-9a8d-0327e927f48c"
+      stageUuid: "81ac8ccb-8a32-8d99-a997-f105edc73ecb"
 version: 2
 ---
 # set

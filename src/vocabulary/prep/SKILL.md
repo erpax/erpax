@@ -2,11 +2,11 @@
 name: prep
 description: "Use when reasoning about prep as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prep"
-coordinate: "vocabulary/prep · 8/crest · 4e6eec8b"
-contentUuid: "adb3c8e2-d476-5cfc-ba2a-c1d1d555c1e1"
-diamondUuid: "b69a0e37-d37b-82c1-b093-dd7f05746be4"
-uuid: "4e6eec8b-dcd8-8ae6-892f-6c7648a4b400"
-horo: 8
+coordinate: "vocabulary/prep · 5/round · 3844e056"
+contentUuid: "9bda45ba-48c2-5ca6-b387-da787a7c9374"
+diamondUuid: "c38e8297-c068-80d8-b0e1-40e09b4fc5bb"
+uuid: "3844e056-35ce-8823-a68d-8a944c17317a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d166b90f-7187-80df-852e-3902418c748b"
+  computationUuid: "b5041056-9e3a-86c9-9fc8-3d4a4a441fd8"
   stages:
     - stage: path
       stageUuid: "8ff7c628-ccc0-878d-92e2-9761f2197a3e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7d1bd560-1c32-8fde-9af9-f7c8b5a835c3"
     - stage: horo
-      stageUuid: "3bb7dca9-bb36-8645-a2fd-d93763a06dd1"
+      stageUuid: "b39f91c6-4d48-8003-822f-a2493cea656b"
     - stage: seal
       stageUuid: "1d65d4cb-7301-8146-9eed-39f105cfe938"
     - stage: uuid
-      stageUuid: "af0e5a48-2306-8e56-8c4e-2102b9338fca"
+      stageUuid: "6cd3dd75-b776-8afa-a213-b0c5b499c2e9"
 version: 2
 ---
 # prep

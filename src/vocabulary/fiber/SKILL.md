@@ -2,11 +2,11 @@
 name: fiber
 description: "Use when reasoning about fiber as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fiber"
-coordinate: "vocabulary/fiber · 7/descent · af6830a2"
-contentUuid: "c104617f-de47-5d54-b3d9-b66d1f94e2eb"
-diamondUuid: "e4d42bb0-c798-8415-a99b-e0d1cb3f81b0"
-uuid: "af6830a2-1ee9-854c-8122-e8d32bda394b"
-horo: 7
+coordinate: "vocabulary/fiber · 5/round · d6f80c1b"
+contentUuid: "630cb0c2-9161-54c5-b7e5-c44fc940350c"
+diamondUuid: "a62133ae-8567-8e2a-87ed-459fea6b843b"
+uuid: "d6f80c1b-604a-82c5-b755-cd9add738a78"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "398fef06-a471-8e2c-a519-811970e402ce"
+  computationUuid: "e7c89970-6a32-8691-a6ad-f377cefe7cbf"
   stages:
     - stage: path
       stageUuid: "36092bc7-ce67-8eee-a0ad-4988d44b7e7a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "be047877-e4da-88ed-b53f-62a722b47011"
     - stage: horo
-      stageUuid: "b1a1f1f1-41ff-8e7e-84fe-2fb0bbf993fa"
+      stageUuid: "536682c8-b83a-8297-9a60-e6b634f1dfbd"
     - stage: seal
       stageUuid: "fa9a0238-435e-823e-9120-f110ac14b36f"
     - stage: uuid
-      stageUuid: "71a5e2a6-8d94-8c86-8d84-30fce1a84066"
+      stageUuid: "7cb50d9b-3263-8bdd-9595-575dafa66078"
 version: 2
 ---
 # fiber

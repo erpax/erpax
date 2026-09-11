@@ -2,18 +2,18 @@
 name: empirical
 description: "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as source, dissolve the row-level specifics into the akashic DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming."
 atomPath: "vocabulary/empirical"
-coordinate: "vocabulary/empirical · 2/share · daecc1fb"
-contentUuid: "49a1f234-ce42-5240-a07a-db9dc50396bc"
-diamondUuid: "a6fb1ce2-f0d4-808f-b975-d3c9b3f970da"
-uuid: "daecc1fb-4e0d-821d-93f8-235e63832d58"
-horo: 2
+coordinate: "vocabulary/empirical · 4/weave · 356e992e"
+contentUuid: "b2b723c3-8d77-5c3e-aeaf-13612806c593"
+diamondUuid: "b48d8c88-6b95-8f15-b6fa-d5fa60cc88c1"
+uuid: "356e992e-21f2-83c8-8fe2-6bc5eebf5b85"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 46
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2c22cd2c-1951-81f1-b0cb-4baa4f82c660"
+  computationUuid: "0e7edb4a-367e-81f9-a812-1bdf578d737e"
   stages:
     - stage: path
       stageUuid: "96533b46-fe27-860d-b20d-bf6c1d68ac50"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "eef3c1cb-1aa8-87b0-8765-ee851173463d"
     - stage: horo
-      stageUuid: "78f8294d-37f9-8a94-aa9a-fa4a6498eca5"
+      stageUuid: "6076c2f3-6d4a-8248-b9d6-757b2a9797ef"
     - stage: seal
       stageUuid: "33a52fb9-fd43-8709-a6a0-ac984b518029"
     - stage: uuid
-      stageUuid: "7fc4eda3-5df8-8b69-8bf4-e28309ba58e1"
+      stageUuid: "7ca30ca7-a40b-888f-8a53-ca9915b27174"
 version: 2
 ---
 # empirical — derived from the data, not invented

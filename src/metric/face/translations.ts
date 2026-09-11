@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "face",
-    "uuid": "5cae55b7-b669-86fb-befd-46eff00c3fdf",
+    "uuid": "b57d5c95-5900-874d-a7e4-35a2b1dd4951",
     "words": [
       "face"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about face — Every number in this session reached its reader as a sentence. *\\\"48 blind probes\\\"*, *\\\"1.6× slower cached\\\"*, *\\\"237 dead pointers\\\"* — each true when written, none checkable by the…",
-    "uuid": "128a40db-2850-8a84-9e50-d7b1b357d1fd",
+    "uuid": "99112659-08f2-8dff-85ed-398835be8aa5",
     "words": [
       "use",
       "when",

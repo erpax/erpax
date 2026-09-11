@@ -2,11 +2,11 @@
 name: discussion
 description: "Use when reasoning about discussion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/discussion"
-coordinate: "vocabulary/discussion · 8/crest · b9b1c5e7"
-contentUuid: "4b9e43f5-1e1f-5e0a-9757-d88efb6acfbc"
-diamondUuid: "b72822fc-7db0-8e12-9ec3-67c48aa25ed6"
-uuid: "b9b1c5e7-0b99-8130-9f36-6c3b90a6f696"
-horo: 8
+coordinate: "vocabulary/discussion · 4/weave · a3538b23"
+contentUuid: "23f1833e-1a24-5dda-b751-d970cf5f5ea6"
+diamondUuid: "6b83d864-fcc4-82a1-b07e-208a8beea2ed"
+uuid: "a3538b23-bd6f-811f-9039-3f5376a1f515"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "444ab51b-8303-8279-a5f3-9badd8bd7aed"
+  computationUuid: "299e78a4-b300-8d58-b5bb-6d99113c2a6e"
   stages:
     - stage: path
       stageUuid: "86a818f1-04f9-871f-95c2-1ec0a641b1c2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e0c9d2b9-c549-8351-9b2d-21f641f015a2"
     - stage: horo
-      stageUuid: "4fd7bd67-c46a-8bf3-82a8-2c25f5aaa5cf"
+      stageUuid: "f04773b7-f2e9-8ea6-ad94-f80f0bdc1691"
     - stage: seal
       stageUuid: "5e51d1f5-e05b-8022-a838-02edf2cba998"
     - stage: uuid
-      stageUuid: "1512a95e-90e0-8161-b161-16e04d215293"
+      stageUuid: "83cf1427-918e-8ad7-bd8b-1f76186c3704"
 version: 2
 ---
 # discussion

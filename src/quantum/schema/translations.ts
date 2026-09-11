@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "schema",
-    "uuid": "bfef0b7b-b1c1-84ac-8d21-d5d1dd239459",
+    "uuid": "96d8c1ea-4c9e-8df9-9fc2-5168bb2d2893",
     "words": [
       "schema"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about schema identity and drift on the matrix — a schema as the content-uuid of its canonical form, so identical schemas merge and any change yields a new uuid forcing re-verification by architecture.",
-    "uuid": "194fa46e-4eae-84ca-a6d2-2e914d51ca6d",
+    "uuid": "dc4f4410-6d67-8972-b2ec-a8c2944f8c25",
     "words": [
       "use",
       "when",

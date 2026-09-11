@@ -2,11 +2,11 @@
 name: discover
 description: "Use when reasoning about discover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/discover"
-coordinate: "vocabulary/discover · 2/share · 466c22d8"
-contentUuid: "5d4e8f9a-6e35-552e-ba82-b91a97e1575f"
-diamondUuid: "87e030a0-8a0f-860a-9050-e879f1950603"
-uuid: "466c22d8-5111-80ff-ae08-50509a69f12c"
-horo: 2
+coordinate: "vocabulary/discover · 7/descent · 723ed4ef"
+contentUuid: "c205c2ec-a5a9-588f-af32-be405105a2ae"
+diamondUuid: "e1a99933-19b3-8eca-86b7-6a319d4302c9"
+uuid: "723ed4ef-cdab-8875-bbcd-41747eda4fce"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9e0ae362-a439-88a7-a5bf-c2b25208d8f8"
+  computationUuid: "03c5451b-6e35-8677-b2f8-aa56b4739a97"
   stages:
     - stage: path
       stageUuid: "adbadc36-bd00-8442-b306-69dbf43dcc41"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c3c7d7af-4258-8e79-b39f-edb6a8237a0e"
     - stage: horo
-      stageUuid: "f0549f19-b380-863c-99a9-89b6d580cacb"
+      stageUuid: "27a5cf90-d2fc-8a4d-a29f-b5d2586a4caf"
     - stage: seal
       stageUuid: "7289028e-357c-833f-9ed3-e23f385ec6fe"
     - stage: uuid
-      stageUuid: "55cf6f04-89fd-8fed-b172-9daa32f603a0"
+      stageUuid: "c52ec4a2-ac78-8385-890e-b22885354220"
 version: 2
 ---
 # discover

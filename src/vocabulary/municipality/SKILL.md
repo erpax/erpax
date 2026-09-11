@@ -2,11 +2,11 @@
 name: municipality
 description: "Use when reasoning about municipality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/municipality"
-coordinate: "vocabulary/municipality · 2/share · d07a4f49"
-contentUuid: "2eeea04f-796a-5e61-b13d-ac8f7ce3c899"
-diamondUuid: "d09c5adf-084a-8684-9d31-11e32da4573b"
-uuid: "d07a4f49-33d9-8622-a4c7-044436f7ec49"
-horo: 2
+coordinate: "vocabulary/municipality · 8/crest · affb9559"
+contentUuid: "3b305b07-e54a-5c6b-b2cf-672855eaba87"
+diamondUuid: "f6252885-3462-8403-8d93-12692651e608"
+uuid: "affb9559-8f8a-89e5-af4d-32cc69951454"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a37de1d5-b26d-8abc-a111-5c8f2d9f9688"
+  computationUuid: "e6f08ba4-d32c-8631-8d5d-2c7a4d52ed83"
   stages:
     - stage: path
       stageUuid: "c44d00ef-e8bc-8733-b30e-27b02f5026b4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ec21d3ec-35c2-8643-9ed7-9490469c7360"
     - stage: horo
-      stageUuid: "9323d6d0-2541-8e82-8d1c-3f5e2d92945d"
+      stageUuid: "3b5cb31e-df7f-8f70-b7b0-37ea692ace65"
     - stage: seal
       stageUuid: "57a6a921-5ac5-89e4-9243-7282b1bf4f49"
     - stage: uuid
-      stageUuid: "a0c98d22-f7d5-807f-b4eb-7828fc93a181"
+      stageUuid: "700e14b0-2cc7-8d21-9780-b9c45f50adc7"
 version: 2
 ---
 # municipality

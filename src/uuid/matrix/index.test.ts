@@ -10,7 +10,11 @@
  * linear prev-only chain).
  * @see ./index.ts, ./matrix.generated.ts, ./collide.mjs
  */
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
+import { stripFrontmatter } from '@/aura'
+import { stripQuantumFooter } from '@/skill/router/upgrade/quantum'
 import { HORO_DIGITS } from '@/horo'
 import {
   nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest,
@@ -20,6 +24,30 @@ import {
   UUID_MATRIX_NODES, UUID_MATRIX_EDGES, UUID_MATRIX_ROOT,
   entanglementOf,
 } from '@/uuid/matrix'
+
+describe('uuid-matrix: a node hashes its SKILL.md body, never the frontmatter that records it', () => {
+  // The frontmatter carries this uuid. Hashing the whole file made uuid = sha256(a file containing
+  // uuid) — no fixpoint, so every push re-drew all 3,581 uuids and ~2,900 horo positions.
+  // The address is ONE composition — frontmatter and stamp both stripped — applied to every atom,
+  // stamped or not (the stamp strip also trims the trailing newline, so asserting half of it fails).
+  it('the address equals the hash of the body and differs from the hash of the whole file', () => {
+    const text = readFileSync(join(process.cwd(), 'src/access/SKILL.md'), 'utf8')
+    const uuid = nodeOf('access')?.uuid
+    expect(uuid).toBe(toUuid(Buffer.from(stripQuantumFooter(stripFrontmatter(text)), 'utf8')))
+    expect(toUuid(Buffer.from(text, 'utf8'))).not.toBe(uuid)
+  })
+
+  // The trailing content-uuid stamp is derived as well — left in the hash, the 94 stamped atoms kept
+  // the fold moving one hop removed (405 files on the pass after the frontmatter fix).
+  it('a stamped atom hashes its body without the content-uuid stamp', () => {
+    const text = readFileSync(join(process.cwd(), 'src/quantum/budget/SKILL.md'), 'utf8')
+    const body = stripFrontmatter(text)
+    expect(body).toMatch(/<sub>content-uuid `[0-9a-f-]{36}`/)
+    const uuid = nodeOf('quantum/budget')?.uuid
+    expect(uuid).toBe(toUuid(Buffer.from(stripQuantumFooter(body), 'utf8')))
+    expect(toUuid(Buffer.from(body, 'utf8'))).not.toBe(uuid)
+  })
+})
 
 describe('uuid-matrix: the corpus is queryable as a content-addressed matrix', () => {
   it('nodeOf resolves any link spelling to a node with a v8 content-uuid', () => {

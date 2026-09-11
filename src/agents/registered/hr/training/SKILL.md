@@ -2,11 +2,11 @@
 name: training
 description: "Use when reasoning about training — hr.training — the HrAgent's auto-train capability as a PURE transform."
 atomPath: "agents/registered/hr/training"
-coordinate: "agents/registered/hr/training · 5/round · 0ad61e42"
-contentUuid: "2c2ed920-0937-51a4-bb27-41d9d6cdf680"
-diamondUuid: "7f3dcb22-d397-8db7-ab31-a5b9a8734166"
-uuid: "0ad61e42-d83d-8adf-a2a0-6d6c45306dfa"
-horo: 5
+coordinate: "agents/registered/hr/training · 1/base · 60f10060"
+contentUuid: "1a3163d4-9028-5db8-b789-820ea4280748"
+diamondUuid: "59c8990e-fc03-896e-82a8-428197b1395d"
+uuid: "60f10060-23b4-8bd6-88de-d74ced1bbd03"
+horo: 1
 typography:
   partition: agents
   bondDegree: 32
@@ -15,7 +15,7 @@ standards:
   - "SFIA 8 responsibility-levels (the level → M-value depth)"
 bindings: []
 signatures:
-  computationUuid: "92f158bf-2398-8712-9895-c513f310c546"
+  computationUuid: "657c0c4f-e5f4-8aa4-a582-98ae22fafb6a"
   stages:
     - stage: path
       stageUuid: "763749a7-aed3-88f0-a48b-4ec0f70416dd"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "d9585631-5fc1-8da5-9483-5ff872514695"
     - stage: horo
-      stageUuid: "f0404622-dd38-8c71-8ca1-2b48c9716409"
+      stageUuid: "e377902c-58a3-8249-9e3c-167d6be20b35"
     - stage: seal
       stageUuid: "13b3ad96-2ff9-8e36-a0c6-01bee52744a6"
     - stage: uuid
-      stageUuid: "1b29108e-3545-8396-a274-c33d4ff9c454"
+      stageUuid: "9f5d155f-aecd-841f-b8ce-0740862c36db"
 version: 2
 ---
 # agents/registered/hr/training

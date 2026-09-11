@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "abstract",
-    "uuid": "81d415d8-1a85-8f55-a2e5-56f034db800b",
+    "uuid": "c85d1ff3-4191-86e2-a156-3e6ca051a44f",
     "words": [
       "abstract"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about abstract — An abstract is a short description that summarizes a CreativeWork.",
-    "uuid": "0fa69804-285b-8d6b-9372-8b08d781bfac",
+    "uuid": "18e82f9f-bec7-863f-9161-37fad66636e8",
     "words": [
       "use",
       "when",

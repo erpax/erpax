@@ -103,7 +103,8 @@ const parseYamlSubList = (fm: string, parent: string, key: string): string[] => 
     .sort()
 }
 
-const stripQuantumFooter = (body: string): string =>
+/** The trailing content-uuid stamp is DERIVED — `collide.mjs` strips the same pattern before hashing. */
+export const stripQuantumFooter = (body: string): string =>
   body.replace(/\n*<sub>content-uuid\s+`[0-9a-f-]{36}`[\s\S]*?<\/sub>\s*$/i, '').trimEnd()
 
 const lawsOf = (body: string): string[] => {

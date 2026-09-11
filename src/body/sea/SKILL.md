@@ -2,11 +2,11 @@
 name: sea
 description: "Use when reasoning about sea as a anatomical part of body — vocabulary pivot to @/sea; nested not duplicated."
 atomPath: "body/sea"
-coordinate: "body/sea · 2/share · 6712e70c"
-contentUuid: "5bbd82a5-2bad-5500-bee7-1ce2c4f5f46a"
-diamondUuid: "dc1cd426-2a71-8c13-8de3-d6f06ff20849"
-uuid: "6712e70c-31fc-8806-89be-c2e96bdad69d"
-horo: 2
+coordinate: "body/sea · 4/weave · 1c9c6e77"
+contentUuid: "d0bf09f4-e9f4-5992-9351-62b126486d7a"
+diamondUuid: "cea0d00d-e566-8ee4-9bf1-3c803b765f0d"
+uuid: "1c9c6e77-1f9c-8974-8145-f261d648a18b"
+horo: 4
 typography:
   partition: body
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9c2f9a08-65a0-89ca-9617-8aabe1342d98"
+  computationUuid: "3084264c-19d3-8149-9bc5-92c67e778540"
   stages:
     - stage: path
       stageUuid: "22384afc-2911-893f-8af1-c6e8fcbe95a4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9d11d96c-e164-8629-bf92-54f5ed8371a6"
     - stage: horo
-      stageUuid: "5061e689-82cc-8737-beaf-153d7aff4d77"
+      stageUuid: "9a4cdb22-a323-86c7-a6e1-f33fd22951d2"
     - stage: seal
       stageUuid: "e42a4c49-8502-8947-86f9-5048e20f0d81"
     - stage: uuid
-      stageUuid: "dc8bc96d-2c02-8c87-8966-53f2e65aa941"
+      stageUuid: "23af8b20-afb2-85f7-9d1d-d00fcbb5bdad"
 version: 2
 ---
 # body/sea — anatomical part

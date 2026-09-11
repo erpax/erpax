@@ -2,18 +2,18 @@
 name: hooks
 description: "Use when reasoning about hooks — refuses a second grant of a role a user already holds. Without it the same role accumulates rows, and every count of \"who has this\" is wrong by however many times someone clicked."
 atomPath: "roles/user/roles/hooks"
-coordinate: "roles/user/roles/hooks · 3/3 · e687bcec"
-contentUuid: "075da3c4-eadc-5b33-a809-00089fe3d9d1"
-diamondUuid: "36de0180-4475-86bd-be2d-78b43609612a"
-uuid: "e687bcec-d689-8da1-9382-57bf8eb7d251"
-horo: 3
+coordinate: "roles/user/roles/hooks · 6/6 · 48498ec7"
+contentUuid: "cc6ca95f-4bc3-5846-9e63-512a8f314e80"
+diamondUuid: "0c99dad5-3edc-8e1a-9c70-feecab389fe6"
+uuid: "48498ec7-65a1-8d36-85b8-5c4163e05cce"
+horo: 6
 typography:
   partition: roles
   bondDegree: 348
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3fe26620-4d2f-8f5e-9797-3e207a85a72a"
+  computationUuid: "4ca755f7-2e32-8874-8d47-a61e9f65fd0e"
   stages:
     - stage: path
       stageUuid: "2675a9a8-3423-8ade-af8a-64c9e003c524"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ce2271b1-8d48-8935-9845-ba7d19a37f3b"
     - stage: horo
-      stageUuid: "af6fc2f7-8d1e-81cb-ae81-6688fa80647c"
+      stageUuid: "2b8afefe-3a89-8304-b22c-934b82b57824"
     - stage: seal
       stageUuid: "85aff987-a385-81e1-87fb-008e5d8359fd"
     - stage: uuid
-      stageUuid: "1bb5f8dd-d1d5-8b6f-ae00-747b67d12feb"
+      stageUuid: "890c8137-55bd-8e42-ab49-083d427efea4"
 version: 2
 ---
 # roles/user/roles/hooks — a role is assigned once, and the hook is what makes "once" true

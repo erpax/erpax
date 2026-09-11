@@ -2,11 +2,11 @@
 name: split
 description: "Use when a secret must survive losing shares — m-of-n reconstruction over GF(256), built locally with no dependency. Any m of n pieces rebuild the secret and the subset chosen is irrelevant; fewer than m reveal nothing, and that is DECIDED rather than argued: reachableSecrets enumerates all 256 candidate bytes and shows the held shares are consistent with every one. Refuses x = 0 (the secret's own coordinate), duplicate coordinates (singular interpolation), a threshold outside 2 ≤ m ≤ n ≤ 255, and a short coefficient vector, which is a lower threshold in disguise."
 atomPath: "entropy/threshold/split"
-coordinate: "entropy/threshold/split · 4/weave · e98b0cd7"
-contentUuid: "48bd53f6-c25d-5876-8f38-2c68e4123a5c"
-diamondUuid: "c67a6bec-f3ec-8415-9534-1641e8521349"
-uuid: "e98b0cd7-eba5-867d-99e8-35630df29907"
-horo: 4
+coordinate: "entropy/threshold/split · 7/descent · 71a5682f"
+contentUuid: "5ecf54bb-4d45-5233-93d3-9975dad114bf"
+diamondUuid: "6369c01b-222c-8cde-8db9-da94f1c3950a"
+uuid: "71a5682f-4535-8a46-9b29-36faeec8f578"
+horo: 7
 typography:
   partition: entropy
   bondDegree: 9
@@ -16,7 +16,7 @@ standards:
   - "NIST-SP-800-57"
 bindings: []
 signatures:
-  computationUuid: "bb8c2b73-f81f-8593-90a4-2c77f398fbb8"
+  computationUuid: "15d4d6e3-a15d-8a80-89b8-00bf918c11e2"
   stages:
     - stage: path
       stageUuid: "248cb119-2736-8bfb-87d2-09dbfbaa7db2"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "aacf3860-0f3d-8b46-a201-eca789cb368d"
     - stage: horo
-      stageUuid: "a3b7b3ba-ccfe-86be-a88f-a5beb07bc6e8"
+      stageUuid: "84ebcea2-a2e2-8ea5-9c44-3b2b42c1ffd1"
     - stage: seal
       stageUuid: "7761ed4c-8e8c-866a-abee-e998bff8aaf1"
     - stage: uuid
-      stageUuid: "5f26a6dc-003a-8d96-8ac9-6c7273d955f0"
+      stageUuid: "4a6e6259-8c12-877e-8b60-ae199a4a1130"
 version: 2
 ---
 # entropy/threshold/split — m-of-n, decided rather than argued

@@ -2,11 +2,11 @@
 name: statements
 description: "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection."
 atomPath: "gl/accounts/bank/statements"
-coordinate: "gl/accounts/bank/statements · 1/base · 680f92d3"
-contentUuid: "c5e79c37-5636-5a6a-b7a2-cf4ca31945cc"
-diamondUuid: "594713c0-9531-87b4-96c0-95e4112a438f"
-uuid: "680f92d3-86e3-8930-8f74-82b65280635a"
-horo: 1
+coordinate: "gl/accounts/bank/statements · 7/descent · dbe17683"
+contentUuid: "1c50b8a0-32bc-5f9a-bbeb-083b46d736cc"
+diamondUuid: "52ea2d93-4426-8ccc-a2fa-990ab8f055ef"
+uuid: "dbe17683-a26f-85b5-94b3-faf37d84b4dd"
+horo: 7
 typography:
   partition: gl
   bondDegree: 53
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2edde053-6a28-8455-a666-7d36cb89b4aa"
+  computationUuid: "3f023c56-71b7-878f-94b5-1ecee11c9bfe"
   stages:
     - stage: path
       stageUuid: "6d118f30-67d4-8f95-a572-fe9bfdd7ab3e"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "00b34f27-e857-898d-afb5-f65130d311d9"
     - stage: horo
-      stageUuid: "b8f6088f-6997-88b2-b7f0-21b38b4c312f"
+      stageUuid: "ea0a8b70-a143-85bb-b519-beeeee90a123"
     - stage: seal
       stageUuid: "7519ed5d-8015-8786-8592-2a84e63cca62"
     - stage: uuid
-      stageUuid: "d853eb80-8dbb-8855-90f2-11d1f4994085"
+      stageUuid: "814cc1c0-90a3-8451-a89a-25e1b13aa5ec"
 version: 2
 ---
 # bank-statements

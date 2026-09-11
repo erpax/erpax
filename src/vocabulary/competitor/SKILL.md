@@ -2,11 +2,11 @@
 name: competitor
 description: Use when reasoning about competitor — A competitor in a sports event.
 atomPath: "vocabulary/competitor"
-coordinate: "vocabulary/competitor · 5/round · 1682bcf9"
-contentUuid: "848030ed-142d-5305-af98-7bf3bf6a8338"
-diamondUuid: "5210e1fa-53c7-80c3-979e-4082144fdc33"
-uuid: "1682bcf9-f080-8885-811a-ba0610113b20"
-horo: 5
+coordinate: "vocabulary/competitor · 7/descent · 164efed0"
+contentUuid: "f7c47256-c4c1-52a4-818f-ea76d38d8960"
+diamondUuid: "cba31c48-0737-89e6-bd95-0dd6f0609c98"
+uuid: "164efed0-e0ea-8145-952a-0cc3bbf8c956"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bfdae213-0d3a-85c9-b82a-71c28c899dcc"
+  computationUuid: "28c5dc69-2a1d-866e-b46b-8096df497583"
   stages:
     - stage: path
       stageUuid: "3b10730c-dd53-8a3f-b336-0e54bb6da977"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc253ab8-48d7-8acb-95d5-3c887117017a"
     - stage: horo
-      stageUuid: "a2719198-f860-8487-99b1-db6e965a7399"
+      stageUuid: "02d9735f-297d-874e-811f-d0d0b9c45c36"
     - stage: seal
       stageUuid: "58202eeb-0c48-8f7f-bf80-766c650ecc42"
     - stage: uuid
-      stageUuid: "a6ba5b94-475b-8201-a160-d0fcf8c42bf7"
+      stageUuid: "0bfa1e03-ba70-89ea-876d-48619dbcc378"
 version: 2
 ---
 # competitor

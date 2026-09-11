@@ -2,10 +2,10 @@
 name: "14289"
 description: "Use when implementing or referencing `src/iso/14289/index.ts`."
 atomPath: "iso/14289"
-coordinate: "iso/14289 · 5/round · 0c3b6f21"
-contentUuid: "1f22845c-207f-5a3a-8b63-dea521b98e6d"
-diamondUuid: "435463f7-835b-8221-8ebd-732de20f4b84"
-uuid: "0c3b6f21-b483-8aae-b9f7-3c64cb05227f"
+coordinate: "iso/14289 · 5/round · fbedc5ba"
+contentUuid: "ed7a3dbc-ded7-5d3e-a926-201efb8f0af8"
+diamondUuid: "d74cc328-e560-80bf-a520-7a676996c066"
+uuid: "fbedc5ba-aeb5-8627-acb0-2d8709b07178"
 horo: 5
 typography:
   partition: iso
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f00b61ab-7ecb-8194-ae49-80149810cb9a"
+  computationUuid: "37c0b618-df11-84b1-bda9-dfb4a5802385"
   stages:
     - stage: path
       stageUuid: "ade7180e-e88a-8375-b539-315c4eced8fc"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "9aa5f936-b430-84bc-86ca-d9cb70137cd7"
     - stage: horo
-      stageUuid: "bd9c9490-0280-8edb-a836-48d29a7c1fec"
+      stageUuid: "309c5489-ced3-8585-9c11-79c658da4fa7"
     - stage: seal
       stageUuid: "285faf1b-6819-888b-8888-01e62002f7be"
     - stage: uuid
-      stageUuid: "3f528342-9a8a-8453-a62c-0981cdc01ed1"
+      stageUuid: "a4827626-a0a6-8b33-8109-ad489f307c11"
 version: 2
 ---
 # `src/iso/14289/index.ts`

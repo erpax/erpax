@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing IFRS 15 / ASC 606 — Revenue from Contracts with Customers.",
-    "uuid": "5fd70c4b-c9e6-8d3c-b13c-3f0c08d17898",
+    "uuid": "6bf471d1-be55-8f7b-8a2a-67ead6efb5b5",
     "words": [
       "use",
       "when",

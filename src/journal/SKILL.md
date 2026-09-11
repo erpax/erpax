@@ -2,11 +2,11 @@
 name: journal
 description: Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries.
 atomPath: journal
-coordinate: "journal · 7/descent · 1cf574c5"
-contentUuid: "84300aa8-7b6f-5414-adf3-587cf89e3d02"
-diamondUuid: "9db35200-e9f5-8d59-8319-e78f6f826dbb"
-uuid: "1cf574c5-9258-8c4f-a5f2-deb7ff6962d1"
-horo: 7
+coordinate: "journal · 8/crest · e917cb5d"
+contentUuid: "c348c212-9ab0-53a6-91f4-c7b19bc59b9e"
+diamondUuid: "fa5f431e-0a0a-8846-9064-1e55dcbdeca1"
+uuid: "e917cb5d-f616-8943-9384-d787f4889628"
+horo: 8
 typography:
   partition: journal
   bondDegree: 12
@@ -16,7 +16,7 @@ standards:
   - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "1ede74da-badd-840b-a715-f3ecd5443943"
+  computationUuid: "f88f6a3d-72d4-8955-9b6a-00614f8b7071"
   stages:
     - stage: path
       stageUuid: "33c93eb0-813f-8b38-8044-062ba60ced27"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "718412fa-d731-85a7-8937-3be1d6907430"
     - stage: horo
-      stageUuid: "54c9de28-465b-8e0e-bc4b-324c0057f080"
+      stageUuid: "975f5618-d375-8249-874d-a54341d0bfd2"
     - stage: seal
       stageUuid: "f6131edc-b373-889f-94d1-2f42e8a25388"
     - stage: uuid
-      stageUuid: "84269364-4681-8079-af49-a89457b4b3a7"
+      stageUuid: "e29ebe41-ae7d-87a9-bb46-d6f2ec8d540d"
 version: 2
 ---
 # journal — the model of one [[journals]] row

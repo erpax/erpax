@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nullability",
-    "uuid": "01834f16-0818-80db-81f4-be6babdd2c28",
+    "uuid": "373f5f90-9ede-8260-98fd-aa84634518de",
     "words": [
       "nullability"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deciding NULL semantics — nullable vs NOT NULL fields, NULL handling in queries (IS NULL, COALESCE, NVL), NULL in aggregates (SUM ignores NULL), NULL propagation in calculations, three-valued logic.",
-    "uuid": "8dcfd07a-9074-84b3-8dfb-962463ce10cc",
+    "uuid": "ba1059a8-40f3-8a98-8ad2-d85927bbcb71",
     "words": [
       "use",
       "when",

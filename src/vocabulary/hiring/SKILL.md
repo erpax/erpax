@@ -2,10 +2,10 @@
 name: hiring
 description: "Use when reasoning about hiring as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hiring"
-coordinate: "vocabulary/hiring · 5/round · 1c1a31e3"
-contentUuid: "1e4bfe03-d53a-5468-907f-086b619320ce"
-diamondUuid: "26758e80-8de2-8dc2-b34a-6f26ef2a0387"
-uuid: "1c1a31e3-d10b-8590-aaa8-e35a1fd006d8"
+coordinate: "vocabulary/hiring · 5/round · 0cf76200"
+contentUuid: "f9e483bd-760f-5069-9505-521d4689788f"
+diamondUuid: "e4609c96-868d-8563-ba04-38ddde53fd2b"
+uuid: "0cf76200-e980-834d-a3e5-0c2c62c2473e"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "01108820-2f9a-8183-9794-794eeb9f7516"
+  computationUuid: "73985b27-443e-8776-89b0-4ddab5a40550"
   stages:
     - stage: path
       stageUuid: "d7ab7050-3bca-8ff6-a95b-ed0d9ac1e93f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "738e417c-d9cb-8474-9e63-686e55e1cdd0"
     - stage: horo
-      stageUuid: "a6372231-53b4-8b82-bd31-43153a2c0b0a"
+      stageUuid: "81a3c2d1-4b9b-83a1-9509-5e48a0836e55"
     - stage: seal
       stageUuid: "d6cbe6e6-17e2-8101-a2e2-6652f92d340f"
     - stage: uuid
-      stageUuid: "febed1c5-ec79-8636-b764-a3a748a43067"
+      stageUuid: "daa683c8-cf22-88cd-9194-f29e8cee2c75"
 version: 2
 ---
 # hiring

@@ -2,18 +2,18 @@
 name: ratchet
 description: "Use when computing or lowering a gate ceiling — the Landauer×horo ceiling math and the DOWN-only recompute that emits the sealed snapshot. The emitted artifact is OUTPUT ONLY and is never a hand-edited gate input."
 atomPath: "law/folder/ratchet"
-coordinate: "law/folder/ratchet · 2/share · a4f7b5d1"
-contentUuid: "b1550650-11d0-5429-b42e-24c8cf6a3d8e"
-diamondUuid: "da2f682a-f5b0-88f5-ace1-8379a84a8e9f"
-uuid: "a4f7b5d1-9d78-8c2f-8e5b-4cae5350d2e2"
-horo: 2
+coordinate: "law/folder/ratchet · 7/descent · 61f010bb"
+contentUuid: "1b8c9c27-2e67-5bd5-9344-87422f408b5a"
+diamondUuid: "90332b16-9940-83e0-9e1f-7410913db9fb"
+uuid: "61f010bb-6386-8cab-bc9a-395be9ce8a1f"
+horo: 7
 typography:
   partition: law
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c568bec1-ed98-887c-b7fb-69b67d383217"
+  computationUuid: "84578fe6-94de-8fe8-a412-a484bac7b21b"
   stages:
     - stage: path
       stageUuid: "a7312531-7e86-85f0-b310-b272ec9176e8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "192e355d-e0fd-8e44-938a-58ae68bdbb12"
     - stage: horo
-      stageUuid: "fad29bf6-b95a-8657-96f7-215681e027cb"
+      stageUuid: "43603cf6-0859-8826-b7f9-1292f44d2ae6"
     - stage: seal
       stageUuid: "a34f2707-3c4d-85d6-98c4-847b4706caa9"
     - stage: uuid
-      stageUuid: "90fa46a1-46e4-8ca6-b990-45df22e5410d"
+      stageUuid: "03110119-5c32-84de-92a6-de07ef472708"
 version: 2
 ---
 # ratchet

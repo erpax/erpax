@@ -2,10 +2,10 @@
 name: group
 description: Use when reasoning about a group of links.
 atomPath: "link/group"
-coordinate: "link/group · 5/round · 4b69d237"
-contentUuid: "d35672cd-f7e9-5d2c-9cfd-2ba8e39f6cb6"
-diamondUuid: "4f9e719f-4f02-8e97-9922-89192c634d7e"
-uuid: "4b69d237-aad6-8ed4-b303-1b74a7b9358a"
+coordinate: "link/group · 5/round · ad7543de"
+contentUuid: "edec8102-385d-53ed-b3a0-9eb4bbc09580"
+diamondUuid: "a0784103-bfd5-8ee2-9aa6-8e00291d0763"
+uuid: "ad7543de-67c7-8090-9032-0b94dfc5ba05"
 horo: 5
 typography:
   partition: link
@@ -16,7 +16,7 @@ standards:
   - "WCAG-2.1 §2.4.4 link-purpose-in-context"
 bindings: []
 signatures:
-  computationUuid: "fee7296c-4da8-8712-ac8f-6d3761188acd"
+  computationUuid: "2ef9b957-8983-8fcf-8c81-3ef8b5c5b022"
   stages:
     - stage: path
       stageUuid: "edc6cbce-2ff1-8a8e-8fae-9d1365d21d78"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "48d6020a-a204-88d4-9d0c-452cdb970c2a"
     - stage: horo
-      stageUuid: "7600cdf9-1c96-8fdf-a3c9-95c4868ef0c5"
+      stageUuid: "9be1eef4-f46c-883b-864c-fa4dc6b6622f"
     - stage: seal
       stageUuid: "ef4a11b6-c9b3-8b86-914a-9b9aa7e613e5"
     - stage: uuid
-      stageUuid: "c08c06c8-52c4-83d3-8043-c8c590c3fc40"
+      stageUuid: "5bad2322-ee7f-8b8f-a84c-50cc8834423d"
 version: 2
 ---
 # link/group

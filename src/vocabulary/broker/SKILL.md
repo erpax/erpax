@@ -2,11 +2,11 @@
 name: broker
 description: Use when reasoning about broker — An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. I
 atomPath: "vocabulary/broker"
-coordinate: "vocabulary/broker · 4/weave · 25cd1e4a"
-contentUuid: "64d5eea8-5d18-55f8-a0b8-186b185799cd"
-diamondUuid: "09fe7189-7279-8731-8674-964de93c935d"
-uuid: "25cd1e4a-19fa-8874-9d9e-5d83d065d752"
-horo: 4
+coordinate: "vocabulary/broker · 1/base · 6a40f8ee"
+contentUuid: "ee1bb04e-f59f-5253-a248-9ca756a27c6d"
+diamondUuid: "3ee01429-383f-8df8-8815-6fefb34bc6a8"
+uuid: "6a40f8ee-145f-8516-98cc-d19ba8e900d7"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a8b79642-17d1-80f5-a5a8-de645cab1591"
+  computationUuid: "a00824c2-6e05-8675-89f3-16779cf9b654"
   stages:
     - stage: path
       stageUuid: "1e668809-6b76-8683-b498-a11556dba394"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2b9fd492-ff86-8e58-906c-5f7baec51cd7"
     - stage: horo
-      stageUuid: "58f42059-8f5d-8b93-916b-d4f1b457a1ce"
+      stageUuid: "a4156dc7-a702-8358-9de0-b001cfd3335e"
     - stage: seal
       stageUuid: "34229e33-96d2-8ed2-ac7c-06aafd01dab2"
     - stage: uuid
-      stageUuid: "26895671-d070-851a-8e75-52eef41e8c8b"
+      stageUuid: "85aec3c7-0451-8c3f-a4e5-b6c726104abe"
 version: 2
 ---
 # broker

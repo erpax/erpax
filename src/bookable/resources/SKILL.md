@@ -2,10 +2,10 @@
 name: resources
 description: "Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings."
 atomPath: "bookable/resources"
-coordinate: "bookable/resources · 5/round · a8d5e261"
-contentUuid: "09f4f737-22e2-5a94-8a3c-3a2d5f283879"
-diamondUuid: "a37f8e0c-f8a9-82f8-ac2d-891a2b196917"
-uuid: "a8d5e261-79a4-859b-ac77-d92de1f43991"
+coordinate: "bookable/resources · 5/round · 1429c8f1"
+contentUuid: "0b4bc3aa-f635-5129-b030-424c827c4a7d"
+diamondUuid: "9bd43017-65e8-8dc2-8f78-05c9485a311b"
+uuid: "1429c8f1-f91d-8760-bdc2-608c2e2e215c"
 horo: 5
 typography:
   partition: bookable
@@ -36,7 +36,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "65ddfdfa-d812-841d-99d7-d9a539c434f9"
+  computationUuid: "8737d678-3c2d-8e48-b2ad-7d7a84703a16"
   stages:
     - stage: path
       stageUuid: "f77a0aee-62e8-8424-bbc2-50584a8581f8"
@@ -47,11 +47,11 @@ signatures:
     - stage: links
       stageUuid: "653f04e6-f340-8b45-92d9-1d0b91b2231a"
     - stage: horo
-      stageUuid: "d85a77d3-6692-890e-83d4-8d9839584979"
+      stageUuid: "7a402dbf-7749-81b7-954c-8b31f55f25a7"
     - stage: seal
       stageUuid: "6b3a345e-3bb1-8a14-951f-f8e3d62d9855"
     - stage: uuid
-      stageUuid: "7081abe4-58be-83f7-b371-7562df0017e9"
+      stageUuid: "7726a11b-348a-89bb-b8e1-6acf9580c9a4"
 version: 2
 ---
 # bookable-resources

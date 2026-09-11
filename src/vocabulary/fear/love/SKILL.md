@@ -2,18 +2,18 @@
 name: love
 description: "Use when reasoning about the destroy-over-create arrow — fear corrupting love, entropy winning, a gap opening; the reverse direction of the love and fear duality and the mirror of love/fear."
 atomPath: "vocabulary/fear/love"
-coordinate: "vocabulary/fear/love · 5/round · 9d68ffff"
-contentUuid: "3404117b-55da-5065-9846-19117fd15ba0"
-diamondUuid: "41bb6d5b-7de6-8289-9ac0-f1a8d7aaa4f8"
-uuid: "9d68ffff-9dac-808b-88cf-64b4c87c8a31"
-horo: 5
+coordinate: "vocabulary/fear/love · 1/base · 4117d4cd"
+contentUuid: "04b1bcbf-a00e-551a-9f6f-8756a141508f"
+diamondUuid: "ff3badf5-ecf2-8bd4-a56a-a66b9392536a"
+uuid: "4117d4cd-7fed-88ab-86a2-799c67dbee25"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 103
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bbec84ea-8d3a-89aa-8e1a-3deb5fb4d78c"
+  computationUuid: "0cb91d8a-2e93-8f01-b6e9-4925de633fa5"
   stages:
     - stage: path
       stageUuid: "0af6e11b-10b2-895d-9d2a-d4d4332942c7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1668e59c-84a8-814e-9bb2-960ac3b9389d"
     - stage: horo
-      stageUuid: "47c6b936-6664-8c0e-865b-0df0579f7433"
+      stageUuid: "62b9bd15-6a7e-8c50-843c-ef4439cbff9e"
     - stage: seal
       stageUuid: "dab655e5-0432-8a26-b10f-ea15c2f1b70c"
     - stage: uuid
-      stageUuid: "2db4c7b5-63d6-88fb-b7eb-99fbf2c82d63"
+      stageUuid: "6cec45d6-298d-81f2-8fc0-de999fa3f7c0"
 version: 2
 ---
 # fear/love — fear over love (the +entropy arrow)

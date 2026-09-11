@@ -2,11 +2,11 @@
 name: presentation
 description: "Use when reasoning about presentation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/presentation"
-coordinate: "vocabulary/presentation · 1/base · aff82d41"
-contentUuid: "39e71dfb-7c9b-52c8-83ac-c52c46b332a9"
-diamondUuid: "36c915bc-0fc1-8072-97fa-c692a3483425"
-uuid: "aff82d41-eb13-87d1-b383-d5ac83af55e1"
-horo: 1
+coordinate: "vocabulary/presentation · 5/round · 144638f0"
+contentUuid: "6d3e80dc-b102-57de-8a88-c936a93042e1"
+diamondUuid: "06394505-b880-854a-9a66-82e3545f5793"
+uuid: "144638f0-16b4-870b-a264-12db2b432286"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0b34bea4-8d5e-8fe6-9cb2-8516ac79066b"
+  computationUuid: "1e64daa5-6156-8f34-b6af-a64c504433b2"
   stages:
     - stage: path
       stageUuid: "276397e1-0ebe-8431-b3de-eba18eefe7f9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ce003d42-0841-844a-a599-f962d422ea87"
     - stage: horo
-      stageUuid: "c24a118f-b3ab-869d-ba51-3d29a45abbdb"
+      stageUuid: "11afcd62-6e11-8976-b8c2-61df12f1085e"
     - stage: seal
       stageUuid: "85bf44b9-1ca5-844c-b537-a324f8c9b18e"
     - stage: uuid
-      stageUuid: "9924d42a-223e-8e8a-90fc-9f797736ea3d"
+      stageUuid: "b2b7724e-6faa-8ecf-bbe5-e8cb66eb68ca"
 version: 2
 ---
 # presentation

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "declaration",
-    "uuid": "4e0060f5-fa07-8497-9520-0cb6cf3f32ea",
+    "uuid": "5ed890a2-fc65-891c-948d-13b94e168c19",
     "words": [
       "declaration"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one declaration — the singular model of the declarations collection (the plural store); a formal statement filed with an authority.",
-    "uuid": "5ecdba3b-5c35-8b7a-b3b6-4bd5be78bb2b",
+    "uuid": "ea852465-cf5a-8ceb-b8bd-b04e82394eec",
     "words": [
       "use",
       "when",

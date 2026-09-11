@@ -2,18 +2,18 @@
 name: wellbeing
 description: "Use when measuring or reasoning about quality of life — качество на живот — the emergent outcome of a society, a composite over sociological dimensions (material · health · social · psychological · environmental). Like a market it is capped by its weakest dimension, but unlike a pure product it is partly compensatory with non-compensatory capability floors below which no surplus elsewhere restores the whole. The dependent variable erpax exists to raise; read capabilities, not income."
 atomPath: wellbeing
-coordinate: "wellbeing · 2/share · d33495b4"
-contentUuid: "14bde017-8bb2-5191-81e5-2e5594a5d96a"
-diamondUuid: "69c5634b-c8e6-8b2b-9d9f-2681f4e02844"
-uuid: "d33495b4-53b1-8ae6-9bf1-454d707f739f"
-horo: 2
+coordinate: "wellbeing · 8/crest · 4ed95e09"
+contentUuid: "28d0ab03-f54f-5019-a5b4-e620346ce002"
+diamondUuid: "dc86bb7b-c2e8-812d-826a-7678daa75be1"
+uuid: "4ed95e09-decc-8f15-bfc9-9a524f11f415"
+horo: 8
 typography:
   partition: wellbeing
   bondDegree: 63
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8302ee22-ee71-8bc0-ab99-65ca4d908152"
+  computationUuid: "47984d1a-823d-84c9-b48b-6b90176de0e7"
   stages:
     - stage: path
       stageUuid: "1a4fbb65-5179-8888-b2f3-d8fbc8e8efb1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "250e5381-e561-823e-8cc9-6a80fa3aefe3"
     - stage: horo
-      stageUuid: "777b3d87-4b13-880e-90dd-66328b711b76"
+      stageUuid: "d400054c-36f8-852c-bfe5-9c8ccfc31542"
     - stage: seal
       stageUuid: "e809905b-5892-80e5-b130-1724b12af84d"
     - stage: uuid
-      stageUuid: "44f0eb56-8a62-8853-83c4-5e959e21c02d"
+      stageUuid: "52209780-8765-81b1-b63f-8115cf89f90f"
 version: 2
 ---
 # wellbeing — quality of life, the composite a society is measured by (качество на живот)

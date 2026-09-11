@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "event",
-    "uuid": "ddcd85bd-3e64-8103-ba6c-d70f5557646d",
+    "uuid": "819b3dfa-a314-865b-a49f-2016f154a25b",
     "words": [
       "event"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a sale closes and the rest of the system must learn about it — emits the sale:closed domain event exactly once on the transition, keyed by the content-uuid so a federation peer reconciles by content rather than by local row id.",
-    "uuid": "db555739-55d5-8fda-8c95-f02b1b3df21b",
+    "uuid": "afce05a4-cbd9-8759-b2ef-9629eec401cb",
     "words": [
       "use",
       "when",

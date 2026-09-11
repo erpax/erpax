@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mirror",
-    "uuid": "c6308d7b-2e2a-8706-9e27-b4a0ce06d33e",
+    "uuid": "0458e084-6795-8498-b5d7-a66dd3bd6717",
     "words": [
       "mirror"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a path read both ways — left→right and right→left are different paths (different words, different folders) yet carry the same value, because the path's digital root (the sum of its word-digits) is direction-invariant; the horo as path, max value the same on both sides for words and digits.",
-    "uuid": "2280ca1a-c944-8728-b00e-12317d141060",
+    "uuid": "1f40148f-af57-8caa-8331-bc8072b14af8",
     "words": [
       "use",
       "when",

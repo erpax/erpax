@@ -2,11 +2,11 @@
 name: ultrasound
 description: "Use when reasoning about ultrasound as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: ultrasound
-coordinate: "ultrasound · 2/share · 950683b9"
-contentUuid: "984c03d5-7b8a-5071-b68a-16aa195f1544"
-diamondUuid: "4e1f5523-b2ca-8512-8c0b-801df527cc56"
-uuid: "950683b9-0a31-889b-8301-2bf9629da1aa"
-horo: 2
+coordinate: "ultrasound · 8/crest · 622a1882"
+contentUuid: "4fe4afdb-8c56-52a8-a8ad-ba3e8f1318b3"
+diamondUuid: "d17c95e7-840a-8110-bd1c-1f249c7e799a"
+uuid: "622a1882-4aa8-8043-8285-f565924d1cbc"
+horo: 8
 typography:
   partition: ultrasound
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b6a056fc-80e5-8ec9-a6e4-1d4e5fcf1144"
+  computationUuid: "d883d9c8-6bd5-8b37-ba9d-07fc1ab4e7b2"
   stages:
     - stage: path
       stageUuid: "a5d8da9e-5396-85c0-8a0c-2b540cc4b0b5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a5360499-20c7-8777-ae0d-56fc4e82f9ab"
     - stage: horo
-      stageUuid: "6fa44da2-2785-8d14-947e-9048ab66b090"
+      stageUuid: "63047c96-2c4a-878c-a1f9-c122f31ffd5c"
     - stage: seal
       stageUuid: "89580391-68eb-8b0f-aa54-b3c4d9fb9d06"
     - stage: uuid
-      stageUuid: "2ee03998-18a9-87ac-8abf-61175b3141f8"
+      stageUuid: "1a22292d-7425-890c-877c-2c83133647c4"
 version: 2
 ---
 # ultrasound

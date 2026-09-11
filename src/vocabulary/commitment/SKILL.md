@@ -2,18 +2,18 @@
 name: commitment
 description: Use when modelling one commitment — the singular model of the commitments collection (the plural store); a binding promise to perform or provide.
 atomPath: "vocabulary/commitment"
-coordinate: "vocabulary/commitment · 5/round · 199599f7"
-contentUuid: "87e16591-932f-5d86-b4f9-4026e6795a1c"
-diamondUuid: "aaf0dce4-843e-8bf4-ae5b-cbf0955d91c5"
-uuid: "199599f7-e7d1-81b2-bd88-48ef5e5aff51"
-horo: 5
+coordinate: "vocabulary/commitment · 8/crest · 7571b1d9"
+contentUuid: "63da4370-245b-5175-b8ae-f9fa44eab689"
+diamondUuid: "9301c521-812d-8615-b149-ece2b099e758"
+uuid: "7571b1d9-3e06-89a3-9eb6-be2a0bc8514f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "784cb1e3-4a82-8d68-95ce-c9fa12ec82ac"
+  computationUuid: "ca3c5193-b740-830e-8231-507cc3f4d478"
   stages:
     - stage: path
       stageUuid: "13a832c1-7d1e-898c-bce7-034453a4f264"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f751f8d2-d2a9-81cb-aff7-4f0e016163d9"
     - stage: horo
-      stageUuid: "7ccea20d-8726-8fcc-863f-0abb82f921f4"
+      stageUuid: "cc110305-e5b3-8bee-9aff-8bae637d4b50"
     - stage: seal
       stageUuid: "33315156-0778-864d-bb7b-5be34dca776e"
     - stage: uuid
-      stageUuid: "151bd66d-3dc4-89d1-89ff-cd286fe44bb3"
+      stageUuid: "fafe67e7-3f24-83a9-ba99-1c9c01cc3b7c"
 version: 2
 ---
 # commitment — the model of one [[commitments]] row

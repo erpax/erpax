@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nav",
-    "uuid": "a2e2efdc-26c6-8977-8e71-b612e627ee12",
+    "uuid": "2856d48f-73ed-8f97-b731-06191b8b85a4",
     "words": [
       "nav"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about nav — lays the dashboard out on a fixed grid and moves across it, wrapping at every boundary via : moving left from the first column arrives at the last, and up from the first row…",
-    "uuid": "c80810e1-5afd-82c7-9586-1beb5fab25a3",
+    "uuid": "23702334-3315-8765-8f59-2f0a56b1ba9d",
     "words": [
       "use",
       "when",

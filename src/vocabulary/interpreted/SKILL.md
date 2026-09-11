@@ -2,11 +2,11 @@
 name: interpreted
 description: "Use when reasoning about interpreted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/interpreted"
-coordinate: "vocabulary/interpreted · 5/round · 841f9e1a"
-contentUuid: "f855b0cb-be61-5d06-a92d-acbd7e017615"
-diamondUuid: "8d93422c-2314-86c2-a21e-315cdd6ea0ed"
-uuid: "841f9e1a-464d-8827-956d-687ce2bceb0d"
-horo: 5
+coordinate: "vocabulary/interpreted · 7/descent · a5d68c48"
+contentUuid: "1113e8e0-318c-5dc9-9132-f332fb53b591"
+diamondUuid: "04c96a10-ec6d-8b11-8d52-da180cab8e1a"
+uuid: "a5d68c48-dea3-808f-8f27-10a812c0ed1a"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9b17c827-f9b1-8b01-8015-65fc202fce33"
+  computationUuid: "b213e367-1263-8189-aeb4-3712d6a944d2"
   stages:
     - stage: path
       stageUuid: "94bfba9f-2c04-8619-a19f-fcc8b54e0876"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "72cabf3e-1557-87af-a481-5e18860d63a9"
     - stage: horo
-      stageUuid: "17482438-cc0b-8f81-ad66-cab6dd52a030"
+      stageUuid: "bc0b23fb-c225-8e34-9393-3894f14ce477"
     - stage: seal
       stageUuid: "931e006c-5475-893d-a045-e3ac18d69d61"
     - stage: uuid
-      stageUuid: "418275dc-0e5b-863b-b7a9-0a9ffd253176"
+      stageUuid: "d6976182-06f0-8cd1-ba42-6c3d3d52fe2f"
 version: 2
 ---
 # interpreted

@@ -2,11 +2,11 @@
 name: sourced
 description: "Use when an atom is written or reviewed — the convention is that every atom cites the external standard it realises with an @standard marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree."
 atomPath: "convention/sourced"
-coordinate: "convention/sourced · 2/share · 9612a3ff"
-contentUuid: "716c8b2f-50cb-5df6-992d-cd94c19d4d12"
-diamondUuid: "80609448-fc32-87d3-84fa-795b47a49b6b"
-uuid: "9612a3ff-e507-86b7-82ff-f2ce6be89399"
-horo: 2
+coordinate: "convention/sourced · 8/crest · 2a024a5c"
+contentUuid: "0874ccb7-4094-5cc0-8a7c-15609d42b515"
+diamondUuid: "3c026cf2-3c8f-8d22-a1dd-868766260edd"
+uuid: "2a024a5c-1c55-8cb9-b557-3b2038de78a4"
+horo: 8
 typography:
   partition: convention
   bondDegree: 12
@@ -19,7 +19,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "55db6cf0-7b20-87a6-93aa-4850d7127e87"
+  computationUuid: "b6341d7d-d7ab-889a-b1be-4451f1f45a89"
   stages:
     - stage: path
       stageUuid: "85fdf454-21fb-83b0-a747-be6ab8a21e49"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "08765c90-6dac-8a6c-8794-7520677a9850"
     - stage: horo
-      stageUuid: "63c2567e-e049-8e31-94cd-cb6030f874ae"
+      stageUuid: "1666ea75-ffd5-865e-86bc-acbfabf2037e"
     - stage: seal
       stageUuid: "ad3a3655-3fa7-8ee3-9806-3ee22e2e410c"
     - stage: uuid
-      stageUuid: "630494fb-2c7a-8b5d-8ecd-866924609141"
+      stageUuid: "d72da3db-df3c-87eb-bb7a-1655aaf14d30"
 version: 2
 ---
 # convention/sourced — every atom cites its @standard

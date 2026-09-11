@@ -2,11 +2,11 @@
 name: centers
 description: "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection."
 atomPath: "work/centers"
-coordinate: "work/centers · 5/round · e23fb3f0"
-contentUuid: "d41496e7-4dab-5f6d-898c-261de34f13bb"
-diamondUuid: "db0fee1f-aeeb-857a-b1b8-f30e885c354a"
-uuid: "e23fb3f0-b3ab-8951-bbb6-866bc7314459"
-horo: 5
+coordinate: "work/centers · 8/crest · 577ea1b6"
+contentUuid: "47d0946b-ea33-5c56-ab1d-f2474d712eb2"
+diamondUuid: "0adfb999-4272-8a35-a638-a09c036ab7ff"
+uuid: "577ea1b6-081d-8dc9-aacb-07d00b19c898"
+horo: 8
 typography:
   partition: work
   bondDegree: 48
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "50aa604c-d847-8a20-8656-2d21b165753e"
+  computationUuid: "054cfa4d-0f04-8ecb-82dd-ba13d38fd8c1"
   stages:
     - stage: path
       stageUuid: "6eb6acff-21e6-8f82-bdff-d2c45930309f"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "b1351332-1a0a-85f1-a9b3-72760b6d81ba"
     - stage: horo
-      stageUuid: "8f9bc06d-d075-8b8e-bdc7-8f51a56e3476"
+      stageUuid: "d6013150-1e7d-8e68-b749-0cefa2bd58e3"
     - stage: seal
       stageUuid: "d0079fdd-3344-8e78-8940-b4f921b51b69"
     - stage: uuid
-      stageUuid: "407bdefa-afc7-878d-b609-03c846c1b4ec"
+      stageUuid: "f77c8287-e58b-818f-a661-b762d46028c9"
 version: 2
 ---
 # work-centers

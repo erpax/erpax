@@ -2,11 +2,11 @@
 name: adjustments
 description: "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection."
 atomPath: "gl/accounts/period/end/adjustments"
-coordinate: "gl/accounts/period/end/adjustments · 8/crest · 62f79a13"
-contentUuid: "e92358b5-23c1-54ce-952d-fe098f25d04b"
-diamondUuid: "8f527277-e72a-8f8c-a788-83ccb76c8394"
-uuid: "62f79a13-222e-850b-a0ac-5db6cd9dfe5a"
-horo: 8
+coordinate: "gl/accounts/period/end/adjustments · 1/base · 0b5f25ce"
+contentUuid: "4cabc741-aa3a-5058-81d2-dc320c2f3f52"
+diamondUuid: "73e84d0d-35b0-8c54-ba54-d9ef64e238dd"
+uuid: "0b5f25ce-5f4d-8c03-8c73-2444584a87b4"
+horo: 1
 typography:
   partition: gl
   bondDegree: 42
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ada38564-38d5-81a0-b6ff-b8c15f11ac4f"
+  computationUuid: "49da0244-a034-8eed-8936-2db888b6661b"
   stages:
     - stage: path
       stageUuid: "85d4671a-1d9c-8734-80e6-f340dbb31d53"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "339d4042-9243-88d4-8f46-fe23a36a3ae1"
     - stage: horo
-      stageUuid: "f894e6fe-bd54-80eb-af4a-b858d51d07ee"
+      stageUuid: "4544ef27-524c-86d7-ae98-8b3d9ddd59a5"
     - stage: seal
       stageUuid: "6ec68967-5307-8fa5-ae43-92ff6f95e25b"
     - stage: uuid
-      stageUuid: "20536f58-5b18-8e62-82ea-6a658fb45879"
+      stageUuid: "992390cd-671a-8389-bbe4-3050fca6cf2f"
 version: 2
 ---
 # period-end-adjustments

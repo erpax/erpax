@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "matrix",
-    "uuid": "6d4e7708-4b4c-8277-911b-01a8abdd8311",
+    "uuid": "288bcbfe-0d6d-898c-89ea-b46164190534",
     "words": [
       "matrix"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking who is adjacent to whom — the corpus graph as nodes and edges, addressed rather than searched. neighborsOf and backlinksOf resolve an atom's outgoing and incoming edges through an adjacency index built once at module load; they previously scanned all 37,854 edges per call, which made a corpus-wide pass O(atoms × edges) and unfinishable. Edges are {f,t} INDICES, not names — a filter on .from/.to returns zero for every atom, which is how two false measurements were once confirmed.",
-    "uuid": "65793374-a571-836b-b920-067f00fb4deb",
+    "uuid": "01efed99-f87a-83b1-a24c-bb707a7e99cf",
     "words": [
       "use",
       "when",

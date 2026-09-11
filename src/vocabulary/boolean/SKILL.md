@@ -2,10 +2,10 @@
 name: boolean
 description: "Use when reasoning about boolean — Boolean: True or False."
 atomPath: "vocabulary/boolean"
-coordinate: "vocabulary/boolean · 4/weave · 9a699101"
-contentUuid: "f0cc256b-ba6e-5f3c-93d4-c0c74bbc68f1"
-diamondUuid: "85389ade-d45a-84b4-9b17-3934748e3240"
-uuid: "9a699101-46b1-865e-b3a3-f1a58f45d9a5"
+coordinate: "vocabulary/boolean · 4/weave · 9b0e3041"
+contentUuid: "1185427d-1095-51b3-a6ba-236cc57d1b0e"
+diamondUuid: "af3a87e4-3638-8831-86a4-67e7de5608ae"
+uuid: "9b0e3041-f0bf-85ba-9b6b-ca85d16c006c"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "64694c61-e96c-888c-8829-b34b3d8bb78a"
+  computationUuid: "43e65308-238c-891f-a3d5-84c91a4ef18b"
   stages:
     - stage: path
       stageUuid: "a6af2483-4cd9-86d1-89b7-f8511d629ad7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cb839cab-c616-85f5-a9ee-fce6254ebd25"
     - stage: horo
-      stageUuid: "128a05e0-f96f-8c4a-b213-11c061346936"
+      stageUuid: "a1ec3e99-01a4-8c89-a01e-02a599778adb"
     - stage: seal
       stageUuid: "5e69155f-cded-8225-836b-fd782ac173bb"
     - stage: uuid
-      stageUuid: "0ba11a92-97a8-888b-a813-669176522838"
+      stageUuid: "b4a276ac-32e4-8860-a24d-68cd9426c8c6"
 version: 2
 ---
 # boolean

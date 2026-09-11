@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drift",
-    "uuid": "80ea7524-77f4-8987-852f-3bafc3dc9c95",
+    "uuid": "e26136c3-3579-8fe2-ab47-fdc347bc89fd",
     "words": [
       "drift"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that the agent memory index still matches its files — MEMORY.md is the load surface, so a memory absent from it is written but never loaded, and an index line with no file is a citation leading nowhere. Fails closed on both directions; zero is a theorem, not a ratchet.",
-    "uuid": "ab32df2a-bd2a-836f-ab77-6411872215db",
+    "uuid": "3b2d6a45-bea8-8639-aca1-2deac8ef2a76",
     "words": [
       "use",
       "when",

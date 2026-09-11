@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "octave",
-    "uuid": "539fe623-b0e2-869c-b293-5ed74221245e",
+    "uuid": "d8d9a58e-7325-896c-ac2c-f3c77791cef0",
     "words": [
       "octave"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \\\"next octave\\\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
-    "uuid": "edcc445f-1f9c-8940-b913-f72bbff269bd",
+    "uuid": "23a6e925-e167-88ad-93d4-04e33117adcf",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: infectious
 description: "Use when reasoning about infectious as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/infectious"
-coordinate: "vocabulary/infectious · 5/round · 3f1a7219"
-contentUuid: "de939947-6497-5991-bad6-b1309779ff95"
-diamondUuid: "76affb1c-1df8-848a-90cf-832491574172"
-uuid: "3f1a7219-9062-8283-afb9-795c61165bb1"
-horo: 5
+coordinate: "vocabulary/infectious · 8/crest · c5a79d96"
+contentUuid: "8f22c05a-8a04-504e-8b7a-d1a95855a0c0"
+diamondUuid: "364f5883-935b-8092-8603-1bf232df7474"
+uuid: "c5a79d96-68f1-8001-a8db-e950870127e9"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4ba83769-e041-8c6b-b232-316d43caf730"
+  computationUuid: "1a5c9a6d-c8b2-8903-8e67-008926b9bbe5"
   stages:
     - stage: path
       stageUuid: "e985ea37-b668-8e40-b6b0-f977f15bf3fd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42fb4fb0-51cf-8bd1-b62e-ddf6a0b8c63c"
     - stage: horo
-      stageUuid: "1e245912-8e96-89b2-b29e-7678553f4d02"
+      stageUuid: "a503826f-ec79-83df-86d0-7cf66a980017"
     - stage: seal
       stageUuid: "f9b00844-dd9d-8e50-b6d0-489714d4f3db"
     - stage: uuid
-      stageUuid: "7e993a4a-d3f7-8b67-98f0-19c434adb0ad"
+      stageUuid: "837c0a39-7553-81a7-aaf8-66af5f31beca"
 version: 2
 ---
 # infectious

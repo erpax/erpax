@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "truth",
-    "uuid": "0beda4f0-19b3-8827-8068-473fc5377cb0",
+    "uuid": "53809ed8-bfb0-8743-ad79-97705f039e64",
     "words": [
       "truth"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enforcing that @standard / @compliance banners are true rather than decoration — the computed required-witness lint that fails a cited concept with no field and an enforcement claim with no guard.",
-    "uuid": "be76ce98-505c-878b-96c2-75f5ad020424",
+    "uuid": "f6c3e8b1-351f-818d-aaa9-462a49aeeb79",
     "words": [
       "use",
       "when",

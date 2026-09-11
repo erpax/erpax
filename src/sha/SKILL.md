@@ -2,11 +2,11 @@
 name: sha
 description: "Use when reasoning about sha — The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'."
 atomPath: sha
-coordinate: "sha · 5/round · 32cc78cb"
-contentUuid: "d993e97b-8f30-5e7d-b715-34449cf0673e"
-diamondUuid: "857c55f7-7f6b-845f-aa12-1f87d819c18a"
-uuid: "32cc78cb-bc69-8610-8f41-fdea9ea10188"
-horo: 5
+coordinate: "sha · 1/base · de3c5f82"
+contentUuid: "5b6414c3-9c04-5fe5-a6a8-c0d2e9ed8306"
+diamondUuid: "4add2601-9faa-87fc-98f9-b3073f3e45a8"
+uuid: "de3c5f82-ab06-8bd9-9f5b-473567844300"
+horo: 1
 typography:
   partition: sha
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "425bc9ef-adb8-8b83-aaf2-a00b5900385d"
+  computationUuid: "df364145-2d02-8374-9fa7-2b5bf7b3f0f4"
   stages:
     - stage: path
       stageUuid: "02dcaf06-8210-85e5-a0d1-0d937949b8c5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6abd9dbd-af1c-8f4a-92fe-1621a290205b"
     - stage: horo
-      stageUuid: "6fdc3a23-2326-8d46-b0ea-867a70662680"
+      stageUuid: "eca8c991-2579-8171-8642-0667be0e22dc"
     - stage: seal
       stageUuid: "c55fa1a0-938e-84c6-95d1-53176c75220c"
     - stage: uuid
-      stageUuid: "f01a747f-ed7d-8cb7-ab9d-b3a5af942ff4"
+      stageUuid: "93dcc0c6-8f55-81f8-9617-a4b4136514c0"
 version: 2
 ---
 # sha

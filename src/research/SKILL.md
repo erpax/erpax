@@ -2,10 +2,10 @@
 name: research
 description: "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app."
 atomPath: research
-coordinate: "research · 2/share · 3d149d24"
-contentUuid: "45a2bade-0a9c-5e2e-b3b9-d30a360f018d"
-diamondUuid: "52a9f867-28cb-8b35-8c48-d87d0c4ea3a5"
-uuid: "3d149d24-8100-86f4-af8d-c3d81679e2b0"
+coordinate: "research · 2/share · 343ee9b0"
+contentUuid: "70a2cc3b-8119-51e7-8fcd-1f80268b8443"
+diamondUuid: "0c7e0f3f-4dd1-82e5-a3a2-03ac26e86c9b"
+uuid: "343ee9b0-2b34-80a6-8b89-9c1f1a853360"
 horo: 2
 typography:
   partition: research
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1fddc5bf-a4ff-8fcb-9af4-d48d47f70ec3"
+  computationUuid: "6ad185e2-9d27-823f-944c-4ca4800e0e03"
   stages:
     - stage: path
       stageUuid: "d5e611d0-3580-885e-9460-323d1ac7546c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7f83db2c-9611-8a18-bf1f-468d0c589d68"
     - stage: horo
-      stageUuid: "878e7470-bebd-870f-9818-9b443ecc6987"
+      stageUuid: "345471c2-836f-8f58-8cf7-577cb8c8097f"
     - stage: seal
       stageUuid: "6dc013d8-c929-8d11-83c1-26bb5948e6e0"
     - stage: uuid
-      stageUuid: "933d4808-15c3-868e-a7b2-3d8792f77836"
+      stageUuid: "6ec6f2d4-aaac-8081-b98a-d0d12f476877"
 version: 2
 ---
 # research — entropy in, tamper-cost + zero-entropy out

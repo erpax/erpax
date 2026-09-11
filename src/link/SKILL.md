@@ -2,11 +2,11 @@
 name: link
 description: "Use when reasoning about link as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: link
-coordinate: "link · 4/weave · 16f3a76b"
-contentUuid: "88b339c8-4fce-5271-80a4-8f9bdf03be25"
-diamondUuid: "39be74d9-b6d2-8732-be54-b2b5f02cebbf"
-uuid: "16f3a76b-8dd4-8797-89a4-1441b236d2cc"
-horo: 4
+coordinate: "link · 1/base · a1bbefdb"
+contentUuid: "8913598e-b447-54e5-a424-05df673365d0"
+diamondUuid: "f1ed0580-d35c-861c-a6ae-d8ab911401dd"
+uuid: "a1bbefdb-67a6-8f44-9802-849da1de02a6"
+horo: 1
 typography:
   partition: link
   bondDegree: 161
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c256d40b-3c4d-8d75-98f7-038da52c41f1"
+  computationUuid: "223d4dce-e819-83ee-9c78-bf46f946b21b"
   stages:
     - stage: path
       stageUuid: "a744f835-8302-80cb-b2e4-3c768daf1cf6"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "6ce58aa4-f85b-8046-b6e5-0115898b5cd6"
     - stage: horo
-      stageUuid: "e5f1ebd4-9c4c-8012-a902-27ced8ae87c8"
+      stageUuid: "c63e12fd-9dd4-8ebc-a05b-ac3260adf386"
     - stage: seal
       stageUuid: "b41bcc44-afa2-84dd-a8f5-d9e84cbeb8d9"
     - stage: uuid
-      stageUuid: "c0bd3f07-6746-8b79-9560-19c0456ea70d"
+      stageUuid: "9ef0d9f5-0d0a-8ed8-87f7-af58c194b2de"
 version: 2
 ---
 # link

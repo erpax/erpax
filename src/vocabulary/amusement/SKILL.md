@@ -2,11 +2,11 @@
 name: amusement
 description: "Use when reasoning about amusement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/amusement"
-coordinate: "vocabulary/amusement · 2/share · 6a7963c6"
-contentUuid: "7844b72b-5a1e-5247-912e-4f851f386883"
-diamondUuid: "7b4c96a4-3c95-8ff7-ba80-c2c70a968357"
-uuid: "6a7963c6-29f5-8005-bae2-20f128a39486"
-horo: 2
+coordinate: "vocabulary/amusement · 7/descent · 9369682d"
+contentUuid: "e14a8802-c64c-5fd1-9b44-fb2b0cee0abb"
+diamondUuid: "346645aa-5ef5-873c-9d77-681bd59e552e"
+uuid: "9369682d-09ba-8e96-a791-49c610cb71e5"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "43f71207-9f70-80e3-a4d5-56c78f3f8533"
+  computationUuid: "716c1c29-248f-8ffa-a54e-afa13b3431a3"
   stages:
     - stage: path
       stageUuid: "f40926ea-577e-80d5-b24e-dd7f583bb643"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e33f18d7-2d1b-84d6-885f-0660fb4d034b"
     - stage: horo
-      stageUuid: "2a56e2c6-f9e3-89a2-ae3c-2875478cecf6"
+      stageUuid: "237beadb-4ba2-8bf6-933c-4b48bc17ee40"
     - stage: seal
       stageUuid: "dd6c75eb-3a7f-89cd-8235-a4b24cb3440c"
     - stage: uuid
-      stageUuid: "37137457-8fb5-83b3-90b5-59563f134ebc"
+      stageUuid: "f0cddadc-96dc-8bae-9d81-c6367ab9034e"
 version: 2
 ---
 # amusement

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "equilibrium",
-    "uuid": "5ff66ba2-3929-8f46-a062-7e4bed83cce6",
+    "uuid": "83e4cdef-238c-8ad2-8215-5d60437b4b14",
     "words": [
       "equilibrium"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about equilibrium as detailed balance — every forward transition exactly matched by its reverse (rate(i→j)·pᵢ = rate(j→i)·pⱼ), no net flow, entropy maximal and stationary. It is the thermodynamic twin of erpax's symmetric-merge binding: the collider reciprocates every forward link a→b with b→a, so the matrix sits at detailed balance (reciprocity = 1, directed-link entropy = 0). The balance the engine relaxes toward, where the temperature Boltzmann distribution makes every rate-pair cancel.",
-    "uuid": "42031d33-fa36-89ab-b716-dc02bfd338d7",
+    "uuid": "1b9496fb-1fa2-8e4a-a95b-891e6d448824",
     "words": [
       "use",
       "when",

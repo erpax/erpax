@@ -2,11 +2,11 @@
 name: markup
 description: "Use when reasoning about markup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/markup"
-coordinate: "vocabulary/markup · 2/share · afd3172d"
-contentUuid: "be8b92ac-1ed6-546c-9fb3-be4e60e6d76e"
-diamondUuid: "15b7e9ad-e91e-8ff1-bfaa-198fa1e10957"
-uuid: "afd3172d-af98-8d43-a18a-0b68f80b1a35"
-horo: 2
+coordinate: "vocabulary/markup · 1/base · e4d24df7"
+contentUuid: "f1660d8a-b8b0-5bc1-88b5-eeb33925869c"
+diamondUuid: "be03e7db-7ed6-8b6c-a067-7e4a1e492b8f"
+uuid: "e4d24df7-4f8d-8d26-acfa-f3794a38b9e4"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "283f6066-aecc-8719-b934-b3ea0a4a031e"
+  computationUuid: "9cfb4966-e1fe-86ea-a2ea-f881f08d80fa"
   stages:
     - stage: path
       stageUuid: "184b5461-e56a-8075-a06f-1b0dcd0ac3a2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "53e148f4-2fec-8c38-8a85-56a2787ece4b"
     - stage: horo
-      stageUuid: "2ddfc8c6-0859-8676-859d-e1d67aff92b6"
+      stageUuid: "5fb3e511-51f4-8ad3-a015-ebf2093ad0dd"
     - stage: seal
       stageUuid: "92dba8b8-8157-8274-ac12-b7eb494d316f"
     - stage: uuid
-      stageUuid: "ed433d24-c85d-828b-88b9-e692dea78063"
+      stageUuid: "8434a72f-a993-8a6a-9bc7-c038fa64d781"
 version: 2
 ---
 # markup

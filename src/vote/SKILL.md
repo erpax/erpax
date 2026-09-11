@@ -2,11 +2,11 @@
 name: vote
 description: "Use when reasoning about vote — A schema.org component word, collided out of schema.org compounds — fused from VoteAction (sti · collapse · merge)."
 atomPath: vote
-coordinate: "vote · 5/round · cc3f979c"
-contentUuid: "e9ca33cf-2e5b-5ec1-88af-63208cc2fe84"
-diamondUuid: "0855d3f5-c360-8788-a8ae-004ee2d962ac"
-uuid: "cc3f979c-ea70-8173-8996-1ebbc220e110"
-horo: 5
+coordinate: "vote · 2/share · 47319cd5"
+contentUuid: "3fe50007-55b0-5037-bda9-31a033b48fd0"
+diamondUuid: "3c928788-581b-8e88-b940-01e6ebd81888"
+uuid: "47319cd5-4757-8123-988e-3498d670358f"
+horo: 2
 typography:
   partition: vote
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d8295fe6-1331-81bf-a906-7b0be9716cb4"
+  computationUuid: "160f5b4b-6f6f-80be-9bac-3d4220f02721"
   stages:
     - stage: path
       stageUuid: "85a3ee47-33e6-81ef-ae19-e9a58efce508"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd2ecb55-41ab-8418-9bfc-8ba18f48d973"
     - stage: horo
-      stageUuid: "e5698c1e-9506-87f5-85d7-209e621c0b15"
+      stageUuid: "69ed0482-b79c-8ca9-bc73-ac5035da6f55"
     - stage: seal
       stageUuid: "2e1fc053-d5d4-83fa-8e7a-3f48465c25fe"
     - stage: uuid
-      stageUuid: "386fca64-1d06-8615-a6b0-08ed60bf0fbe"
+      stageUuid: "58648e69-dc66-8efc-8d2d-b845cd2edfd7"
 version: 2
 ---
 # vote

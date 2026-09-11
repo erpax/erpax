@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gtin14",
-    "uuid": "040f41d3-e926-88d7-973a-a4b984418749",
+    "uuid": "dd3ac464-cde8-8770-a411-347d6bc9bfa5",
     "words": [
       "gtin14"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about gtin14 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "6c0e14f4-95b5-8001-9b9e-7542b36e0f85",
+    "uuid": "37202440-81e2-8e64-9734-e2424b45f60d",
     "words": [
       "use",
       "when",

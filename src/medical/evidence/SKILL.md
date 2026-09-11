@@ -2,11 +2,11 @@
 name: evidence
 description: "Use when reasoning about evidence as a medical facet of medical — vocabulary pivot to @/evidence; nested not duplicated."
 atomPath: "medical/evidence"
-coordinate: "medical/evidence · 7/descent · 12c5a3dc"
-contentUuid: "3456ac94-6120-57f3-af15-33bccf19a6b0"
-diamondUuid: "e42024fc-239d-8a2a-b986-8a8ba4c64663"
-uuid: "12c5a3dc-cb8a-8259-8739-3727596093be"
-horo: 7
+coordinate: "medical/evidence · 5/round · 57a7f30b"
+contentUuid: "d38bfaa8-07df-54c1-88e8-330c6c980605"
+diamondUuid: "1c82b937-816f-87a9-a1aa-e164834e0e2d"
+uuid: "57a7f30b-bdb9-8116-89fd-6ec839cd1874"
+horo: 5
 typography:
   partition: medical
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9ca101bb-f3f8-839d-a239-93cabe84b59f"
+  computationUuid: "5d2c0470-38af-8bdb-b333-b087315b4d34"
   stages:
     - stage: path
       stageUuid: "8eba8fc1-2e93-8177-bd71-e214da2c8d4a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "234d54c2-0669-8b8f-ba10-52efa2852c5d"
     - stage: horo
-      stageUuid: "ebd23fa9-084e-8e1e-9e79-f431d088d16d"
+      stageUuid: "68389a4c-fd6e-8037-80fe-69e0af40d89e"
     - stage: seal
       stageUuid: "de170d4e-0f9a-8ee4-ba3d-cd11eb879716"
     - stage: uuid
-      stageUuid: "04207517-9193-8714-8f68-edb7248900a5"
+      stageUuid: "e184cfc2-bd9e-8bd7-902e-8699cbe6525f"
 version: 2
 ---
 # medical/evidence — medical facet

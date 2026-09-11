@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "equity",
-    "uuid": "31844a13-d4b5-8f38-9b1a-1260dab2314d",
+    "uuid": "6ae9ead3-26f3-8b79-b709-76e57db6d2e3",
     "words": [
       "equity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about equity in double-entry accounting — the owners' residual claim after liabilities; the credit side that pairs with asset debits in the accounting equation.",
-    "uuid": "5ec467fa-d1c2-8351-bb1f-801e14c23bd8",
+    "uuid": "db323b05-9f3f-83fe-8efe-a52e2804935f",
     "words": [
       "use",
       "when",

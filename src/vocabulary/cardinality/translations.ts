@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cardinality",
-    "uuid": "2c00541c-9188-81a6-9b97-4d30c3b5afab",
+    "uuid": "063f768b-b01b-8a15-a7ff-d6065c688f12",
     "words": [
       "cardinality"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality.",
-    "uuid": "03264d7f-55c5-8ed6-b776-72666f1c9fe4",
+    "uuid": "f1873f32-244e-8e39-8250-2cbc445b58f5",
     "words": [
       "use",
       "when",

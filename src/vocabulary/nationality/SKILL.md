@@ -2,11 +2,11 @@
 name: nationality
 description: Use when reasoning about nationality — Nationality of the person.
 atomPath: "vocabulary/nationality"
-coordinate: "vocabulary/nationality · 1/base · 8370ffff"
-contentUuid: "5520b6d8-3d5c-58ba-826d-4037cf696bee"
-diamondUuid: "0d4af305-f9ed-875b-bd7b-72a0bf454fa2"
-uuid: "8370ffff-9f24-881a-af88-373120cf612f"
-horo: 1
+coordinate: "vocabulary/nationality · 7/descent · f94cf090"
+contentUuid: "20e73b29-d7fb-57fe-aa94-c325cba3d4ce"
+diamondUuid: "ef94df39-ea9d-87e4-9e03-da5d89e8a71c"
+uuid: "f94cf090-70f2-80b4-bcb2-faa0cc96c059"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "01d7e28e-038f-8b1b-bf8f-dcbcad8ffbe1"
+  computationUuid: "ba17022a-1a6b-806c-8af2-c4d167a2be56"
   stages:
     - stage: path
       stageUuid: "4f84ea95-d5e1-8153-ae8f-13e1b007ded3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1dbb7d72-6678-83d0-8808-289df338d18f"
     - stage: horo
-      stageUuid: "02a95049-74c9-81a3-9efa-441868089400"
+      stageUuid: "ddbcc45d-4252-8b30-9ae1-ff8428aa5fb6"
     - stage: seal
       stageUuid: "5d4d9eb2-4b44-8b41-8ae9-07b39808ca84"
     - stage: uuid
-      stageUuid: "aa973bed-7733-8e06-9bc9-8569634be25a"
+      stageUuid: "288caf37-1066-8930-9872-3551c4e913c1"
 version: 2
 ---
 # nationality

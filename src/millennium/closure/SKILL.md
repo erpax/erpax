@@ -2,11 +2,11 @@
 name: closure
 description: "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be."
 atomPath: "millennium/closure"
-coordinate: "millennium/closure · 5/round · e135d41d"
-contentUuid: "8a1b59b6-5e9e-59b1-a63e-a3cab963bcce"
-diamondUuid: "c3eb8704-33b6-8aaf-b3da-649564a170f9"
-uuid: "e135d41d-3808-83c3-ba0f-5ca13bee3c55"
-horo: 5
+coordinate: "millennium/closure · 7/descent · 4d848bfa"
+contentUuid: "9b6cc2cd-22ac-5480-a64d-c078451bc86e"
+diamondUuid: "fe46f562-be70-89a4-b1ce-2093a304434e"
+uuid: "4d848bfa-4af1-82fa-be45-bda07fdb1cd5"
+horo: 7
 typography:
   partition: millennium
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "54a3262a-88aa-8dca-9729-3d169de02dfb"
+  computationUuid: "9d7fa5e8-a631-850e-ae7c-496e38715d25"
   stages:
     - stage: path
       stageUuid: "b31ca6c7-4636-8dca-8171-d81aaf0d7974"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a510ca2b-57f9-8445-9f78-579945e953cb"
     - stage: horo
-      stageUuid: "29a94ddd-a44a-8056-ba1a-08cd9a91d8bc"
+      stageUuid: "aa35612f-63f4-8185-9355-3ddc0986a50a"
     - stage: seal
       stageUuid: "7f0d1059-d741-82f5-86bd-33cb655bd9a2"
     - stage: uuid
-      stageUuid: "7a40cfda-5017-8eda-ab35-ca4aaf38ec54"
+      stageUuid: "c12bca72-f995-8ab3-9c14-856082ee92cd"
 version: 2
 ---
 # millennium/closure — the decidable half, computed

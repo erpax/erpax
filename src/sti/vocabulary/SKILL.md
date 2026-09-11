@@ -2,11 +2,11 @@
 name: vocabulary
 description: Use when reasoning about the sti vocabulary — its allowed terms.
 atomPath: "sti/vocabulary"
-coordinate: "sti/vocabulary · 2/share · f00cd2e2"
-contentUuid: "3ee700a7-6f8c-5a19-b19b-d32311beb439"
-diamondUuid: "41125770-03a8-8d47-8770-67be7d56b2a0"
-uuid: "f00cd2e2-b4cb-8cfd-b702-4ff6de033703"
-horo: 2
+coordinate: "sti/vocabulary · 7/descent · c48cdb14"
+contentUuid: "a04841c6-5462-5b0a-be7f-eee4db2803b9"
+diamondUuid: "b9575723-d9a8-8868-9693-9051066984c1"
+uuid: "c48cdb14-dbea-88e7-8fe6-5a8923638e55"
+horo: 7
 typography:
   partition: sti
   bondDegree: 0
@@ -14,7 +14,7 @@ standards:
   - "schema.org (the universal type vocabulary, collided to single words)"
 bindings: []
 signatures:
-  computationUuid: "3174f4b1-4197-8433-a16b-024ccfe5f8b6"
+  computationUuid: "26394272-7000-866a-a18d-caad7d411ad6"
   stages:
     - stage: path
       stageUuid: "05ce5b2c-3802-81eb-95db-575c768805ee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7e2ab567-4475-8b7e-8179-3bc294fa1b58"
     - stage: horo
-      stageUuid: "e9710df7-cb46-8fb7-89ed-5b4a7e46fd2f"
+      stageUuid: "53fd4f9d-1a23-850c-a949-f9a0b1e3a4ba"
     - stage: seal
       stageUuid: "06fbd534-606f-8d33-abfc-ea40bc60f276"
     - stage: uuid
-      stageUuid: "905d6b67-d113-80d2-ab0b-0437bf6ca04e"
+      stageUuid: "fc9cb42b-8cc3-8167-babc-a3d3ace5b6ee"
 version: 2
 ---
 # sti/vocabulary

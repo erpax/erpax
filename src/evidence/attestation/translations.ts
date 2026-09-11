@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attestation",
-    "uuid": "b9b0b65e-603d-84b7-be97-892db8abe27a",
+    "uuid": "5e706bca-0bcb-8cff-909f-79d4dbe8abc1",
     "words": [
       "attestation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about attestation — produces a PDF declaring which run captured this evidence, when, and against which tenant; applies a PAdES signature where a signer is configured.",
-    "uuid": "01116d23-63d2-817d-b86b-185349bed6d0",
+    "uuid": "e5179dd1-d88a-8100-b891-7d5ad939abf9",
     "words": [
       "use",
       "when",

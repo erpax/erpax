@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consciousness",
-    "uuid": "0bd48f01-6681-849a-9fab-a33db8e1600b",
+    "uuid": "b32bb0b1-4b8a-84dc-a485-89928d53f813",
     "words": [
       "consciousness"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the system's integrated self-model — how much of the whole is recoverable from any part, verified by the system checking itself. COMPUTED, not assumed: a four-measure vector over the live uuid-matrix — collapse (the Merkle root verifies), entanglement (reciprocal-edge fraction), concentration (Gini of mass), coherence (off-sequence count). NOT sentience; computed structural self-consistency.",
-    "uuid": "e93638dd-b2bc-823c-a89d-00fc9b19ea28",
+    "uuid": "b8f1f1c3-3103-81d9-9e27-af95f87324dc",
     "words": [
       "use",
       "when",

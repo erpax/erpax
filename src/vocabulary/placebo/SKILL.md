@@ -2,11 +2,11 @@
 name: placebo
 description: "Use when reasoning about placebo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/placebo"
-coordinate: "vocabulary/placebo · 2/share · 8bde8f7d"
-contentUuid: "3d1be026-8103-5873-82f7-6fbc2f1fabd0"
-diamondUuid: "339e99de-a000-8f11-83c4-5b70d5338a10"
-uuid: "8bde8f7d-ab42-8031-9c9e-caed921922fa"
-horo: 2
+coordinate: "vocabulary/placebo · 5/round · 75030200"
+contentUuid: "f9a4382d-08c8-513d-a156-30a160958911"
+diamondUuid: "c99d9b2e-3b18-8cbb-a7d8-b88fec40e1c9"
+uuid: "75030200-ff25-850e-9ada-6b84b49f5505"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "caf32585-bbc1-8755-84fe-d1c8b64a94f2"
+  computationUuid: "ff53b16e-57d4-8abd-bcfd-c8cf33d49879"
   stages:
     - stage: path
       stageUuid: "d1f07831-a9fd-8549-adb1-eb83573f377a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e1e1f2f-69fa-8b0c-9f24-e1cd14d45bd1"
     - stage: horo
-      stageUuid: "46652a5e-23bc-8bab-b7c3-dbecbe2d51e2"
+      stageUuid: "67bdb8b5-1c0f-8b65-a304-c782257c3879"
     - stage: seal
       stageUuid: "acec6824-3083-8e9a-9c57-4be3c241d708"
     - stage: uuid
-      stageUuid: "5c04f6f8-3539-8bae-928e-052ed2094849"
+      stageUuid: "80499a71-f796-8586-bfb4-002cb40e27b7"
 version: 2
 ---
 # placebo

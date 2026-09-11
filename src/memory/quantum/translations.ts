@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quantum",
-    "uuid": "005d8929-4d21-8a6f-9da4-a44336b0c3c1",
+    "uuid": "48edb92b-a097-8bb5-b904-10e7fb861c36",
     "words": [
       "quantum"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about memory read from the quantum ring — the other diagonal of the memory-quantum cross. One node at two names with quantum/memory: this path re-points to the canonical rather than restating it, the merge law at path scale, so the four crossed paths fuse into one seal.",
-    "uuid": "5b97d8c2-831f-83c9-a1c4-3793f6581a5a",
+    "uuid": "cbca9475-2037-8f85-b243-f73406fc88a8",
     "words": [
       "use",
       "when",

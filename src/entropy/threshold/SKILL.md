@@ -2,11 +2,11 @@
 name: threshold
 description: "Use when composing multiple keys — n keys are strong only when they are n independent draws. n keys from one seed carry ONE seed's entropy; breaking it breaks all n. assertIndependentSources rejects any two shares sharing an admitted source address, which is what converts n masks on one seed into n independent secrets. Folding and entanglement diffuse admitted entropy and raise forge-cost but add ZERO, and a claim otherwise is refused as an over-claim. m-of-n reconstruction is a compass, not shipped."
 atomPath: "entropy/threshold"
-coordinate: "entropy/threshold · 2/share · 5a79e0b5"
-contentUuid: "bf8d8774-0028-5a9b-8c58-dfe763cd9bc2"
-diamondUuid: "2c8fe7fa-5994-8e02-8548-f55d3b0ea6c8"
-uuid: "5a79e0b5-d4fa-82a7-b404-96da68e83bd9"
-horo: 2
+coordinate: "entropy/threshold · 7/descent · 803a24b2"
+contentUuid: "644a7668-42db-57e8-9d04-96030b3ff4a5"
+diamondUuid: "15dc2a49-b393-8dd2-b2b1-fdc1d9cc94cb"
+uuid: "803a24b2-667f-82c8-9914-47ee59c0aace"
+horo: 7
 typography:
   partition: entropy
   bondDegree: 23
@@ -16,7 +16,7 @@ standards:
   - "NIST-SP-800-57"
 bindings: []
 signatures:
-  computationUuid: "ca83d8fc-546d-83c6-a8f4-77e26d3fd9b7"
+  computationUuid: "65b4e95c-2315-8b3d-a151-23e1080011e4"
   stages:
     - stage: path
       stageUuid: "b57d8cc0-106c-8d3d-af83-a2b14da75492"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "c107dd85-c3ef-8900-b9ce-accaf666369d"
     - stage: horo
-      stageUuid: "722a1153-94c8-8a76-90df-fa6a8014da92"
+      stageUuid: "666239da-a050-841a-8a19-f6f25168e178"
     - stage: seal
       stageUuid: "fa4b3f39-a65e-8ad6-81d4-6867b74199b7"
     - stage: uuid
-      stageUuid: "08dd2477-4171-8375-8d21-ef0ee126fa84"
+      stageUuid: "76166441-258c-8356-a70a-b3462b294a1d"
 version: 2
 ---
 # entropy/threshold — n keys are strong only when they are n independent draws

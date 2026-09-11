@@ -2,11 +2,11 @@
 name: transport
 description: "Use when reasoning about transport as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: transport
-coordinate: "transport · 4/weave · 0c58af15"
-contentUuid: "6d7203dc-80a2-5526-aff3-aec17d8cc9ed"
-diamondUuid: "ac965346-c986-8aeb-b425-b8c63a53f417"
-uuid: "0c58af15-5d3a-86b7-acc0-955997919452"
-horo: 4
+coordinate: "transport · 8/crest · 805dc115"
+contentUuid: "cd095193-bc9b-5437-b294-9a2e6334ce0a"
+diamondUuid: "691996dc-7d18-8f17-9b2b-068211a9f879"
+uuid: "805dc115-dea2-8b1d-894c-f04c990a9d3f"
+horo: 8
 typography:
   partition: transport
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9eec10d3-87b2-8116-a23c-194f019610c8"
+  computationUuid: "31c77517-3ed7-8338-9d1c-ff87a6846cde"
   stages:
     - stage: path
       stageUuid: "0df9790f-5253-89c4-abe6-b249e8ccbb26"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "905dce83-8a02-8dea-bc88-80831f1191e6"
     - stage: horo
-      stageUuid: "08d293d7-b07e-8b51-a25e-7245cc8afa94"
+      stageUuid: "df0cdd97-5a81-8478-b198-c7b945819131"
     - stage: seal
       stageUuid: "a6ab049c-ef56-8675-a933-e6d53583a07d"
     - stage: uuid
-      stageUuid: "987a466a-47e1-82c0-ab4f-b5c6abed3f98"
+      stageUuid: "d07549d1-0367-8462-b7ec-bbf2088172e3"
 version: 2
 ---
 # transport

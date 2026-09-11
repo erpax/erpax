@@ -2,11 +2,11 @@
 name: typography
 description: "Use when measuring or rendering the vitepress typographic feature-set of a SKILL.md page — headings, code, links, tables, containers, math; coverage is the fraction of features used."
 atomPath: typography
-coordinate: "typography · 8/crest · a542eb4e"
-contentUuid: "5d2205c9-8342-568b-80ef-83576e1b8057"
-diamondUuid: "f77cb7b1-da53-86d3-820a-fd5de98d259f"
-uuid: "a542eb4e-ea10-8aa9-83c8-f7d2fc8e6de3"
-horo: 8
+coordinate: "typography · 7/descent · b2968edd"
+contentUuid: "8f63065f-854e-52f3-931a-0dd507c288dc"
+diamondUuid: "356c0e4f-4dd7-857f-89d1-afb1a3450242"
+uuid: "b2968edd-7709-8c39-88ac-5b8e08d9185e"
+horo: 7
 typography:
   partition: typography
   bondDegree: 146
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5ab15854-b53c-8d1f-a915-7edc3308c6ea"
+  computationUuid: "dbfd4a88-c2a2-829b-a962-31b68a605660"
   stages:
     - stage: path
       stageUuid: "4dcf14cd-0c9d-86d4-9878-229fa4a8ff9b"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "26bab8a3-7ffc-8cd1-8669-3e9c66f56a50"
     - stage: horo
-      stageUuid: "f3e49521-3904-8c5a-be82-2be00f45f30a"
+      stageUuid: "3ee17ebc-130c-8b29-a331-5e060e6120c0"
     - stage: seal
       stageUuid: "8c3b3cc7-1fdd-894e-9f04-69bdf784f616"
     - stage: uuid
-      stageUuid: "5c2df48e-fb5e-8aba-b929-5acadd14aef6"
+      stageUuid: "1bd5db70-ef38-862f-8e5a-98c3204833d2"
 version: 2
 ---
 # typography — the rendered feature-set

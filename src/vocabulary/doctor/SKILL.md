@@ -2,10 +2,10 @@
 name: doctor
 description: "Use when reasoning about doctor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/doctor"
-coordinate: "vocabulary/doctor · 7/descent · b91e6cc5"
-contentUuid: "a4dfab8d-6900-5662-9ebf-0af0bc858c6f"
-diamondUuid: "a70cfcf4-e333-8cae-8dad-b48c337fcb0e"
-uuid: "b91e6cc5-decb-87c9-94b5-5d2983f4b29b"
+coordinate: "vocabulary/doctor · 7/descent · 75111cd9"
+contentUuid: "d53b1eba-87f0-592d-b5d4-85ff58e94ac2"
+diamondUuid: "beeb6c5d-478d-890a-92f8-87f3b36231ef"
+uuid: "75111cd9-2882-8145-8b20-4d7eaec0510e"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7bbeeaf1-edee-83e0-886d-6ca8d6338448"
+  computationUuid: "1918b200-7b75-824a-8cf6-d5275ab7e945"
   stages:
     - stage: path
       stageUuid: "ed9eda27-29de-8c41-8e3d-87dc2531d788"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "39cb6367-01ae-87e2-a5c9-d9ed70972da4"
     - stage: horo
-      stageUuid: "cace1e4f-b0e4-8db2-831b-59c209695794"
+      stageUuid: "b342bd1a-9c57-8d7a-b451-586347c2af6c"
     - stage: seal
       stageUuid: "0020baff-64b0-80a7-a8ec-f61a63e11407"
     - stage: uuid
-      stageUuid: "5dc85e83-00d7-87ff-8adb-e25e05387564"
+      stageUuid: "f7ddd563-f0db-8f5a-a692-1e5f17276582"
 version: 2
 ---
 # doctor

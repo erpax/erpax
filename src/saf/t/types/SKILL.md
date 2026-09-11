@@ -2,11 +2,11 @@
 name: types
 description: "Use when reasoning about types — Canonical OECD SAF-T 2.0 types — audit-file projection."
 atomPath: "saf/t/types"
-coordinate: "saf/t/types · 2/share · 64985c23"
-contentUuid: "696f90fc-62e1-5658-8e10-15aae3679b3e"
-diamondUuid: "9812d013-b7f8-8e01-b570-9af3f3cf2333"
-uuid: "64985c23-945f-89be-a2a2-23b594d7cb8e"
-horo: 2
+coordinate: "saf/t/types · 4/weave · a16acde6"
+contentUuid: "edbd8ae0-1ee6-59cb-8c80-06d4f955b0f3"
+diamondUuid: "e4142a51-ebe6-860d-98ab-70d909f99c25"
+uuid: "a16acde6-e810-809d-86d8-09ec066f9d5e"
+horo: 4
 typography:
   partition: saf
   bondDegree: 85
@@ -43,7 +43,7 @@ standards:
   - "US-GAAP ASC-205 presentation"
 bindings: []
 signatures:
-  computationUuid: "cb38108c-8e6b-8c2e-af31-20eb21ac141c"
+  computationUuid: "acf184c6-0583-8eb1-957b-f7d6f2a28a98"
   stages:
     - stage: path
       stageUuid: "6f1f3ea2-cb4f-843b-ae1e-af9f07bb0405"
@@ -54,11 +54,11 @@ signatures:
     - stage: links
       stageUuid: "28ee921c-fb7d-8019-8159-e57abfabab09"
     - stage: horo
-      stageUuid: "ea0f63c9-bb10-85df-af97-46bf16d15d57"
+      stageUuid: "d0436181-2452-8dea-b5b8-de9a04be1a67"
     - stage: seal
       stageUuid: "33c44681-bb8c-81cf-86f3-c452305b5acb"
     - stage: uuid
-      stageUuid: "d7c65d1e-e222-88b5-a957-3cd1bbefc492"
+      stageUuid: "7cf3f9f1-b4de-8f76-86dd-36c72a6b5f98"
 version: 2
 ---
 # saf/t/types

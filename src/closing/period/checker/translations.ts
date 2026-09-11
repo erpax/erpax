@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "checker",
-    "uuid": "7c2c2914-59e3-81ba-808f-44a5b6b11b45",
+    "uuid": "7c0c114a-b960-8d60-a05e-ded0419dc073",
     "words": [
       "checker"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when validating whether a fiscal period may be closed — pure, no-mutation checks that the period is in range and not already closed, that the closing entries balance, that a state transition is legal, and that reversals can post to the next period.",
-    "uuid": "bada8184-1516-8a8f-9b14-1d0e5c8679be",
+    "uuid": "e38716d7-abb9-8fbe-99ba-b3f03925d9f1",
     "words": [
       "use",
       "when",

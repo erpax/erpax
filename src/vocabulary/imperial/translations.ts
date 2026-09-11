@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "imperial",
-    "uuid": "9d371d5a-344a-8a99-b619-793fc2483a31",
+    "uuid": "1d07c2a7-7a05-8cee-a108-ffe5169eb80a",
     "words": [
       "imperial"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about imperial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "63c087a4-1bc6-8f0e-8865-4077f911dfbd",
+    "uuid": "692f5e11-ae43-8cf7-ae8c-f56ee6d8652b",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: typical
 description: "Use when reasoning about typical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: typical
-coordinate: "typical · 1/base · 072182b6"
-contentUuid: "561a06ad-ba96-577c-93c0-68764bcf99c8"
-diamondUuid: "133590a5-7e3e-8324-9297-c7ca27c61bc1"
-uuid: "072182b6-e150-84f7-8fc8-14278a467e58"
-horo: 1
+coordinate: "typical · 7/descent · 67cfca7b"
+contentUuid: "816ba2c5-c019-592b-b527-65827ee80811"
+diamondUuid: "07f74663-8d1e-890c-89aa-7f835bc311d5"
+uuid: "67cfca7b-5ba5-8894-af45-9d9b97e63181"
+horo: 7
 typography:
   partition: typical
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1a92402f-40d2-8454-b184-0ec9d9282433"
+  computationUuid: "1fa4a771-1272-8bbd-8e6e-c3a512d52027"
   stages:
     - stage: path
       stageUuid: "9e6d783b-2f38-8a05-862f-bdebe37f78b4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1f8432fd-cf16-8e17-a34b-61140a4e1deb"
     - stage: horo
-      stageUuid: "492c4b09-d0c6-800b-9ab7-b5cc0c35bfb2"
+      stageUuid: "56000fb7-f528-844e-9fea-ff4f5ed7cbcd"
     - stage: seal
       stageUuid: "3b1731b0-1609-84af-bfc3-d600278070dd"
     - stage: uuid
-      stageUuid: "a2b4cb59-7040-86d8-8ef7-9a9020a19599"
+      stageUuid: "72fa815c-1431-8273-857c-6815e379f981"
 version: 2
 ---
 # typical

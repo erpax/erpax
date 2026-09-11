@@ -2,11 +2,11 @@
 name: limited
 description: "Use when reasoning about limited as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/limited"
-coordinate: "vocabulary/limited · 1/base · f7b9c950"
-contentUuid: "4a32c12f-2135-5b32-afe0-3b553c5e69ac"
-diamondUuid: "4b056b7f-4254-8190-9a87-b595fed68b0b"
-uuid: "f7b9c950-f0ed-8bf9-91c5-d789ddc885ae"
-horo: 1
+coordinate: "vocabulary/limited · 5/round · 42f916de"
+contentUuid: "546e4c04-f842-5fb1-8f10-21f9572da737"
+diamondUuid: "98354a17-1e06-8c3d-a139-2ab82fe43469"
+uuid: "42f916de-e75d-833f-9d96-adf14a6b7983"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3a26ea94-9e2d-8cc7-8097-28ea6f001ba5"
+  computationUuid: "10956ee2-cd74-8855-89ce-fa82d434a842"
   stages:
     - stage: path
       stageUuid: "d6e07f33-9731-86fd-9902-e572236d006f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c57d5c77-0239-8486-a2bd-9418d6060dff"
     - stage: horo
-      stageUuid: "39d1ff00-5442-8baa-8334-75003a4f1b18"
+      stageUuid: "c35d782c-a201-8e30-95b0-09f5a04f3dff"
     - stage: seal
       stageUuid: "b2dbe43c-dc6d-870c-a204-c8fcc6d70495"
     - stage: uuid
-      stageUuid: "83e05ad2-8751-8bf7-9420-3504a17497cf"
+      stageUuid: "2e76445e-22cd-8dee-bfbc-c07e05e7ef8d"
 version: 2
 ---
 # limited

@@ -2,11 +2,11 @@
 name: next
 description: "Use when reasoning about next as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/next"
-coordinate: "vocabulary/next · 2/share · f21aa50e"
-contentUuid: "ba06e6d0-d710-58a7-8a19-23ef90e9fd9b"
-diamondUuid: "dd75369b-9f41-80bb-aa66-03c3ba183e94"
-uuid: "f21aa50e-f5f8-8a54-99ac-5581733bae5e"
-horo: 2
+coordinate: "vocabulary/next · 8/crest · 03c4bd3e"
+contentUuid: "a576ad1f-011a-5c92-b0c8-7a85d76d490d"
+diamondUuid: "0448566d-002b-85c9-8474-0e953e5cc19a"
+uuid: "03c4bd3e-99d8-845f-8a55-ae2013de9c75"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7211487f-bf1a-83aa-a771-28b2f67418b4"
+  computationUuid: "e28f695e-2182-8424-8398-ecf616dcb8dd"
   stages:
     - stage: path
       stageUuid: "26e50cf4-f9ff-8383-a12c-90a90fc067e8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8e269c33-af89-8b1a-ab9e-1095386eb89e"
     - stage: horo
-      stageUuid: "0caa9bab-78db-86bf-91d7-08adb50f8e43"
+      stageUuid: "4b6439e9-d894-8384-8900-c626f23f8f68"
     - stage: seal
       stageUuid: "adbe245c-ecda-828a-92d5-7b0cbf86b911"
     - stage: uuid
-      stageUuid: "b9487675-bed8-8200-abc8-af428c985c41"
+      stageUuid: "d78c745d-0b25-8cb3-ab39-231458687283"
 version: 2
 ---
 # next

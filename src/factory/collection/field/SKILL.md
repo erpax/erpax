@@ -2,18 +2,18 @@
 name: field
 description: "Use when a collection needs a derived value or a relation rather than a question — a calculated number hidden from the admin, GL accounts as relations to gl-accounts, and a line-item array that refuses to be empty."
 atomPath: "factory/collection/field"
-coordinate: "factory/collection/field · 8/crest · a838379e"
-contentUuid: "9df57522-20dd-50f2-9a58-5f6b8ef29d34"
-diamondUuid: "b1d27928-2d7c-8f9e-a8f5-b88b0cf86f56"
-uuid: "a838379e-82f0-8e45-ae70-b570e592e849"
-horo: 8
+coordinate: "factory/collection/field · 2/share · f3080d57"
+contentUuid: "5c9e894e-987b-5e17-a770-0651179dc614"
+diamondUuid: "9cb82186-5369-855b-a1c1-3366597e9404"
+uuid: "f3080d57-3b02-803e-9263-60b877df39cb"
+horo: 2
 typography:
   partition: factory
   bondDegree: 358
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1579d69d-0fb7-8727-9e1c-46483169ba1c"
+  computationUuid: "2fb6b62b-c42d-80eb-8fd6-3dba3a6b2123"
   stages:
     - stage: path
       stageUuid: "eef919dd-b89b-8ede-825c-d225594cba9b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3031e3c8-d46c-89b0-b096-fde0892181c9"
     - stage: horo
-      stageUuid: "2c8d2dde-40e6-897a-8611-0be782729d66"
+      stageUuid: "b8b0326c-529c-8278-b9d5-9c10d755cdc7"
     - stage: seal
       stageUuid: "5aecf2a6-ca43-8ccf-9f39-8fb005555088"
     - stage: uuid
-      stageUuid: "eeecf453-b509-8301-9da5-37b676474923"
+      stageUuid: "c2ea0a4d-5d68-8baf-99f2-2d771c5f97da"
 version: 2
 ---
 # factory/collection/field — the asks a collection should never make

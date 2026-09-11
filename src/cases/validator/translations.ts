@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "validator",
-    "uuid": "4aa71326-b7b4-8dfe-b62f-3cad5c8d2b80",
+    "uuid": "8635aa32-6d02-8f40-b401-47faed68c61d",
     "words": [
       "validator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about validator — Case balance law—charge and defence must balance into judgment before sealing",
-    "uuid": "e1ba949b-8017-85e5-8e8d-40ac5ebbe6f9",
+    "uuid": "1cfe49da-d22c-809d-8e12-54f3e4026bfb",
     "words": [
       "use",
       "when",

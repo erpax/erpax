@@ -2,11 +2,11 @@
 name: subcellular
 description: "Use when reasoning about subcellular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: subcellular
-coordinate: "subcellular · 5/round · c42995a1"
-contentUuid: "75f07714-b808-510b-aaac-6f84bd0bf954"
-diamondUuid: "f6ea3485-c4bf-8cf0-89c7-bd70b86fad3c"
-uuid: "c42995a1-e4a9-865e-a641-d550d192d212"
-horo: 5
+coordinate: "subcellular · 7/descent · 2c833384"
+contentUuid: "468d07ef-ebaa-5bc0-bb0b-d199749b6ded"
+diamondUuid: "6431424d-4b01-88c2-9314-57611adc3b4a"
+uuid: "2c833384-d522-855e-b96d-6e48274c2d06"
+horo: 7
 typography:
   partition: subcellular
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "246d8a54-b066-8fa6-a4fd-716cbbcc2690"
+  computationUuid: "aeb13eb0-f393-8192-a3eb-717bde1ec486"
   stages:
     - stage: path
       stageUuid: "e039208f-4bc0-8144-bc00-fc75d672b85a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d08ba17e-c5db-8ace-be2d-24a4ac3fa053"
     - stage: horo
-      stageUuid: "592d976f-313c-830c-b8a5-647551c96965"
+      stageUuid: "61caa050-352f-8cc0-bdf6-dc1b383f9176"
     - stage: seal
       stageUuid: "9c79b262-efe2-89cc-b6ed-24cdcc39bd59"
     - stage: uuid
-      stageUuid: "dfce0f86-601a-874f-96b9-02c6987661e6"
+      stageUuid: "8f5355ee-b8e8-8890-bf0d-0515b0ee211f"
 version: 2
 ---
 # subcellular

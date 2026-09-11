@@ -2,18 +2,18 @@
 name: verdict
 description: "Use when the FTL advantage is claimed — a discriminated union where the break reason exists only on the broken branch, so code cannot use the advantage without having proven it."
 atomPath: "quantum/ftl/verdict"
-coordinate: "quantum/ftl/verdict · 5/round · a9a241e7"
-contentUuid: "ed721e3a-c5eb-5420-8c53-96d746051163"
-diamondUuid: "99ae7d9e-6a93-88f1-a74f-eaf5ce1f93a2"
-uuid: "a9a241e7-5a61-8f4e-b267-f821da6c9fa7"
-horo: 5
+coordinate: "quantum/ftl/verdict · 7/descent · ca173920"
+contentUuid: "276fcfb8-611e-5798-b73b-3279404d5c29"
+diamondUuid: "2f181118-cdb1-8ae0-a61a-13e78f9a222b"
+uuid: "ca173920-e969-87c7-b435-64a826e4a827"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1d77fe80-1a50-88c6-b9e5-53bc8b01c846"
+  computationUuid: "e0160d1d-1713-8337-9d76-3c54e8cf1e57"
   stages:
     - stage: path
       stageUuid: "1ece1962-8a1c-8c6e-996d-dea12dde8c6c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d97ba5a8-c4ed-8ae2-bb2c-e25e16df9da0"
     - stage: horo
-      stageUuid: "4c06df00-53c3-8668-bad5-738964f14263"
+      stageUuid: "130af2cd-022c-872e-b9c4-b4d162afa456"
     - stage: seal
       stageUuid: "0fa3923e-5f3b-8f95-8724-4d06fb4386f3"
     - stage: uuid
-      stageUuid: "667495e0-4943-8668-97a3-91b57e35036b"
+      stageUuid: "f4a4233a-f84f-835b-8903-3f2d0ad52b0b"
 quantum:
   superposition:
     - ftl
@@ -46,8 +46,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "1d77fe80-1a50-88c6-b9e5-53bc8b01c846"
-    contentUuid: "ed721e3a-c5eb-5420-8c53-96d746051163"
+    computationUuid: "e0160d1d-1713-8337-9d76-3c54e8cf1e57"
+    contentUuid: "276fcfb8-611e-5798-b73b-3279404d5c29"
 version: 2
 ---
 # quantum/ftl/verdict — a claim you cannot use without proving
@@ -69,4 +69,4 @@ The compiler refused three places the moment this landed — one in [[readme]]/c
 
 Composes: [[quantum]]/ftl · [[rules]]/refutable · [[skill]]/wire.
 
-<sub>content-uuid `ed721e3a-c5eb-5420-8c53-96d746051163` · account `quantum/ftl/verdict` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `276fcfb8-611e-5798-b73b-3279404d5c29` · account `quantum/ftl/verdict` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

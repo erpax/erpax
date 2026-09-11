@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iban",
-    "uuid": "08af47ec-b4eb-84e4-b7a6-86f7017a8cf5",
+    "uuid": "0425fe2e-32e0-854a-82ca-8cdb0bf71d31",
     "words": [
       "iban"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about iban — ISO 13616 IBAN validator with ISO 7064 mod-97 checksum.",
-    "uuid": "be6fd642-9e4d-8c14-b279-5e01216064f0",
+    "uuid": "0d88b914-db38-8b1e-b17f-e0d75a404e06",
     "words": [
       "use",
       "when",

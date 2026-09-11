@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "task",
-    "uuid": "6196b62f-73f5-827d-86e5-e4c0a3eab3ae",
+    "uuid": "91f342c0-6867-82fc-b896-4ad433e2ea99",
     "words": [
       "task"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one task — the singular model of the tasks collection (the plural store); a unit of work to be completed by an actor.",
-    "uuid": "34eec3f0-2e99-858a-ba8e-a3d281bc69a8",
+    "uuid": "cff5511b-2200-836a-ab03-53ec2204bde2",
     "words": [
       "use",
       "when",

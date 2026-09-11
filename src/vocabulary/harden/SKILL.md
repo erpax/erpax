@@ -2,18 +2,18 @@
 name: harden
 description: "Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections."
 atomPath: "vocabulary/harden"
-coordinate: "vocabulary/harden · 4/weave · 675c7421"
-contentUuid: "8443876e-77b6-5b17-8915-d4893e63cd6f"
-diamondUuid: "a7787606-fd99-8ed1-985c-1c5a4cda8144"
-uuid: "675c7421-168b-8d72-b93c-42e2cecd0bc5"
-horo: 4
+coordinate: "vocabulary/harden · 2/share · f9921166"
+contentUuid: "821a5317-280a-5a59-916d-4fd59cd0cdba"
+diamondUuid: "2a0c5cb4-6afe-828f-85c2-b20d2509fd9a"
+uuid: "f9921166-be7d-895f-b867-fca21b37b9f0"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "44a9e323-9a52-8cb4-853a-f94ba8c2385b"
+  computationUuid: "baa10032-fdfe-8561-8441-b596ef03caf4"
   stages:
     - stage: path
       stageUuid: "3f142df3-78d8-8c74-9b20-b552667b4a9e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "485e568a-f49d-863e-a2c8-b27538d15d6f"
     - stage: horo
-      stageUuid: "7d6409b5-88b7-84a0-b6df-95747cade2ac"
+      stageUuid: "5493fd8a-dcf7-8314-81aa-386c308b3723"
     - stage: seal
       stageUuid: "7b592565-1281-8ec6-925e-10eaf6602eaa"
     - stage: uuid
-      stageUuid: "7df293af-b7c8-869c-81a8-d4363a24604e"
+      stageUuid: "f9bce24d-6418-8bc9-8a9b-a2a986887358"
 version: 2
 ---
 # harden — Payload anti-abuse & security config

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "minutes",
-    "uuid": "d5c25b69-2292-8555-b5c7-bdd082be7178",
+    "uuid": "56c99242-b1f4-88ef-94c6-e3d12640a23a",
     "words": [
       "minutes"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection.",
-    "uuid": "d03ba749-ebb8-80c8-8549-31adb6569506",
+    "uuid": "eeddd7c6-4339-8c3c-a884-424f94561e12",
     "words": [
       "use",
       "when",

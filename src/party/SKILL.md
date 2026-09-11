@@ -2,11 +2,11 @@
 name: party
 description: "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides."
 atomPath: party
-coordinate: "party · 2/share · a066db75"
-contentUuid: "a208b416-fee5-5931-aa67-5c2a54b43447"
-diamondUuid: "18a5531a-cd65-8584-abff-12a9674a6779"
-uuid: "a066db75-1bc5-8c5b-8f4d-e5bd231206f9"
-horo: 2
+coordinate: "party · 1/base · 2fb1166d"
+contentUuid: "7e9f2826-5771-5ae0-a056-816a33d61052"
+diamondUuid: "7e4596db-08dd-84b5-b100-a44952407dc6"
+uuid: "2fb1166d-0bf1-8635-892d-25dcc812cc1f"
+horo: 1
 typography:
   partition: party
   bondDegree: 134
@@ -19,7 +19,7 @@ standards:
   - "ISO/IEC-27002:2022`"
 bindings: []
 signatures:
-  computationUuid: "ef52c630-139e-80e4-9aac-fe18553c85d8"
+  computationUuid: "afa1a385-768c-8a81-82eb-f3731f9c21f0"
   stages:
     - stage: path
       stageUuid: "0ef76c9e-8206-8572-a3b4-828ca52c220a"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "9ef1cca1-940f-8581-8829-f81b2299a139"
     - stage: horo
-      stageUuid: "6edab183-cb70-89f6-908f-02d50e78c6ff"
+      stageUuid: "72ba4455-ea70-804f-9965-6a3f3cc31f72"
     - stage: seal
       stageUuid: "9ab5dcde-f654-8f13-b628-e78032c820a3"
     - stage: uuid
-      stageUuid: "1bd1ffcd-accb-85be-9edb-d2060d8a6b5b"
+      stageUuid: "361e235c-4b1e-8372-8f9f-11d431ec03cc"
 version: 2
 ---
 # party — one party, infinite roles; two sides of the same debt

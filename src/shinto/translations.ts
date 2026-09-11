@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shinto",
-    "uuid": "a4215e9f-b730-8dbe-9a1d-ea8c3a945d1c",
+    "uuid": "6eb5e490-17ba-868a-9335-c419b8f4ca5a",
     "words": [
       "shinto"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Shinto as a diamond of invariant atoms — the way of the kami, the sacred dwelling in every place and thing, purity restored by washing, the rite renewed on the turning cycle. Strip the Japanese prefix and kami, matsuri, harae collapse to sacred, ritual, the profane cleansed — one content-uuid each.",
-    "uuid": "810269e1-a9dc-858f-b63e-e0f11f5e5534",
+    "uuid": "9f811daf-3352-81cc-9e52-fccf127f71a1",
     "words": [
       "use",
       "when",

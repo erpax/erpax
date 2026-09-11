@@ -2,11 +2,11 @@
 name: donate
 description: "Use when reasoning about donate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/donate"
-coordinate: "vocabulary/donate · 1/base · a456dfc4"
-contentUuid: "7a5227f2-99f0-5f1d-984a-77760283e3f9"
-diamondUuid: "6ad999c8-e4fb-851d-8f62-d00784bfaea2"
-uuid: "a456dfc4-0492-8307-8e6f-2ae91cbe76db"
-horo: 1
+coordinate: "vocabulary/donate · 5/round · 1a3a7215"
+contentUuid: "cd5a0c97-83bc-530d-aa14-15bd6277aa6b"
+diamondUuid: "143cc144-cbb5-8573-8503-72e4a0277d14"
+uuid: "1a3a7215-16a9-8f20-beff-e05ab1660620"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "36748853-0c11-8227-a011-9439bfa211b0"
+  computationUuid: "e0f846b3-fab6-84ec-9f5f-fb996b96d71a"
   stages:
     - stage: path
       stageUuid: "4b34bb97-c131-898c-bb73-ff9cd41ab8b1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f2426d21-9ca7-8e68-bce7-28c3380555eb"
     - stage: horo
-      stageUuid: "ae627e25-05de-895e-a61b-474b8c403dbc"
+      stageUuid: "28fe9bda-d631-84b0-a08d-6ce84828a9a7"
     - stage: seal
       stageUuid: "ad95dae7-e7c7-83ff-a3b3-bcc974458691"
     - stage: uuid
-      stageUuid: "58019bb3-1ab7-84ec-b7ab-a777e903d8f5"
+      stageUuid: "c491798c-153a-88f3-8579-b0ce0b20a6f0"
 version: 2
 ---
 # donate

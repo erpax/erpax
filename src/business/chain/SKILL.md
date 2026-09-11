@@ -2,11 +2,11 @@
 name: chain
 description: "Use when you need the canonical business-chain barrel — the 15+ registered (collection, action, emitted-event) workflows that map to published process standards (SOX P2P, IFRS-15 over-time, IFRS-16 lease cycle), each encoded ONCE with its Socratic check, plus the runner, context, and producer auto-wiring."
 atomPath: "business/chain"
-coordinate: "business/chain · 8/crest · 3a6408fb"
-contentUuid: "39011e84-a558-5e1a-8747-0d703cda0617"
-diamondUuid: "8d3b3636-c63b-8cde-b006-9ecfe3d8daa6"
-uuid: "3a6408fb-cca1-89de-ad88-0b3a3da56f8b"
-horo: 8
+coordinate: "business/chain · 4/weave · a639c924"
+contentUuid: "d89940d9-a54c-578f-beb7-7bfab35bea6a"
+diamondUuid: "81a56dfe-9398-8d72-889c-a52e0e11ae98"
+uuid: "a639c924-9729-83ee-babf-638b3847c23d"
+horo: 4
 typography:
   partition: business
   bondDegree: 18
@@ -16,7 +16,7 @@ standards:
   - "ISO/IEC-19510"
 bindings: []
 signatures:
-  computationUuid: "143b26b6-1040-8259-a347-55db4db975cf"
+  computationUuid: "256ac5d3-8545-8483-bbf4-8fe521b11ce2"
   stages:
     - stage: path
       stageUuid: "c75c6731-fc46-88c6-a72b-192d427d070e"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "a0c4983a-fbf3-8e98-ba4c-9afcefdb1713"
     - stage: horo
-      stageUuid: "b8ac8a74-953a-8806-887e-ffbdb75340c6"
+      stageUuid: "3b73d239-7a7d-8a91-83ae-f7115b2abdd0"
     - stage: seal
       stageUuid: "968c052a-5594-8275-8783-d3a271721866"
     - stage: uuid
-      stageUuid: "0adb980a-df10-832c-bd88-66a421b1a86d"
+      stageUuid: "9b687920-17c0-8f3c-9ea2-fa2968e79c3c"
 version: 2
 ---
 # business/chain — canonical business-chain barrel

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "artist",
-    "uuid": "eac9aec7-0e5a-8584-b638-d082481633a5",
+    "uuid": "de22c543-fb99-8bef-99ad-3b239cfd32b9",
     "words": [
       "artist"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about artist — The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints.",
-    "uuid": "671f4f64-af6b-8e1a-8eb9-44077831cc19",
+    "uuid": "f1cdcd1d-846b-8d24-8f83-11ea2e76e565",
     "words": [
       "use",
       "when",

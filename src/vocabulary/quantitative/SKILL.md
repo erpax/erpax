@@ -2,11 +2,11 @@
 name: quantitative
 description: "Use when reasoning about quantitative — A schema.org component word, collided out of schema.org compounds — fused from QuantitativeValue · QuantitativeValueDistribution (sti · collapse · merge)."
 atomPath: "vocabulary/quantitative"
-coordinate: "vocabulary/quantitative · 1/base · 1ec633c0"
-contentUuid: "0e963366-f826-5252-a414-d708830885b2"
-diamondUuid: "a461c1ed-f2f6-8ea9-81df-e5e04ec7aa25"
-uuid: "1ec633c0-077c-86b0-b856-3e6707c7a3c0"
-horo: 1
+coordinate: "vocabulary/quantitative · 2/share · 8ecd20f6"
+contentUuid: "12761b45-c7a8-5373-a84d-4c3a70617b42"
+diamondUuid: "7f3c48db-8158-8e57-938c-610d414f37e1"
+uuid: "8ecd20f6-9c9f-8955-b832-8e0c9c8936d8"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ab7dd321-e413-8c00-85a4-58eac6080d45"
+  computationUuid: "65363c39-ca0c-8b31-b3e3-ff3765f842f3"
   stages:
     - stage: path
       stageUuid: "1735f6a1-33f1-8a58-a61c-29ae18f03907"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1d228f08-3f9b-808d-b337-b14bb37bc5e1"
     - stage: horo
-      stageUuid: "538e8526-73ae-8e43-b3cf-1e90fa0ba2ec"
+      stageUuid: "36d1b12b-809e-892c-b658-7f69d8f66938"
     - stage: seal
       stageUuid: "cfa54b0e-8e07-874e-aef4-05095b696862"
     - stage: uuid
-      stageUuid: "11e26554-466d-8eeb-960f-9c67efe132f2"
+      stageUuid: "f204ceac-ec85-8a6f-a4f8-a3330476cc8b"
 version: 2
 ---
 # quantitative

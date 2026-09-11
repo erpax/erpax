@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "worst",
-    "uuid": "47e72aaf-df6c-8eb4-902d-fc005cd334c3",
+    "uuid": "4f9b9289-17c5-8819-9704-116c7613fb5f",
     "words": [
       "worst"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about worst as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "70e237bd-a939-85c3-b0b1-ec2cd36960d2",
+    "uuid": "c4851419-4c53-8223-9fae-26ef8647b6a2",
     "words": [
       "use",
       "when",

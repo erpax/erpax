@@ -2,11 +2,11 @@
 name: film
 description: "Use when reasoning about film as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/film"
-coordinate: "vocabulary/film · 4/weave · 1bb80946"
-contentUuid: "84653b89-c8c3-5ac3-af09-6905e9b33b58"
-diamondUuid: "289e888c-2a1d-855f-90cd-e9d974167f94"
-uuid: "1bb80946-d5e0-8efd-8b42-ced9360233a1"
-horo: 4
+coordinate: "vocabulary/film · 1/base · f821985e"
+contentUuid: "462b9615-3ad8-5032-81fb-e975bc81e944"
+diamondUuid: "c8934d7f-a87a-8233-9fbd-41615570ed12"
+uuid: "f821985e-cfbe-86af-8c0a-744bca8ff178"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e817f1c-ce16-85a3-a47d-8092140811c9"
+  computationUuid: "9a8b94a2-cb91-8711-b430-67b1bc9a4bad"
   stages:
     - stage: path
       stageUuid: "769d5e81-725a-8aed-a7eb-41b2651ce7ff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2631b531-eab7-85b7-92e7-6f86b48ec747"
     - stage: horo
-      stageUuid: "0ede0097-d6b6-81d3-a948-4f8889ac50d5"
+      stageUuid: "c8490c6e-b6fb-8b2a-8523-b8c339f9a55d"
     - stage: seal
       stageUuid: "b7f9fb21-42ac-818f-aca6-ea9a49e700ac"
     - stage: uuid
-      stageUuid: "ccae48f7-c7a2-8b81-bc00-48bf4757ab33"
+      stageUuid: "35369085-32ea-8fbe-ae90-df21cff05da5"
 version: 2
 ---
 # film

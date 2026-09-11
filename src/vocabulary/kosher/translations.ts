@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "kosher",
-    "uuid": "bbdbb461-0472-8dea-a71e-a7feff129162",
+    "uuid": "3ed7c407-9574-8592-8268-fa400c055ff5",
     "words": [
       "kosher"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about kosher as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "846d0d35-d1f7-8ea2-8dfe-b080de5699ac",
+    "uuid": "5bce5cee-fa7c-8bf6-a273-4a8eda4bbc62",
     "words": [
       "use",
       "when",

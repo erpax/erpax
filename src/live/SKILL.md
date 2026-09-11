@@ -2,11 +2,11 @@
 name: live
 description: "Use when reasoning about live as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: live
-coordinate: "live · 1/base · 7de5efd7"
-contentUuid: "4b426a4e-e884-5c64-a668-a1dcf08bd5d4"
-diamondUuid: "94dabad9-18db-8152-8171-73d2578ee1ac"
-uuid: "7de5efd7-304b-8bd1-9602-7b7551f90bc4"
-horo: 1
+coordinate: "live · 5/round · cc45aa3d"
+contentUuid: "bfafe93d-1d0e-5e7b-b727-e9a7f89015e4"
+diamondUuid: "ec958d73-3b48-8cc9-9205-adfcb2ab72ee"
+uuid: "cc45aa3d-9bb8-8cc3-8d2e-a10ae6db9ccc"
+horo: 5
 typography:
   partition: live
   bondDegree: 38
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "15f29fab-a0ac-89ef-ac59-a40c99455e47"
+  computationUuid: "0654c33c-74a2-8386-b271-fd5642ebb2c1"
   stages:
     - stage: path
       stageUuid: "24ade51b-1490-8efd-be01-2d5b44a254c9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "517bcf4d-bd91-82eb-aeb0-ef7f1a055e80"
     - stage: horo
-      stageUuid: "9a8af339-d552-8412-9f64-cb6d0f3cedb2"
+      stageUuid: "05e9d840-a97b-8fe7-8b2d-e3bc702b181b"
     - stage: seal
       stageUuid: "e59d9b06-3ecf-8d2a-aff1-3bd158734b23"
     - stage: uuid
-      stageUuid: "aa8819c7-45ae-835d-95ec-8c120e5fbd62"
+      stageUuid: "4198fdca-8137-84e1-9cde-4bcdd835228b"
 version: 2
 ---
 # live

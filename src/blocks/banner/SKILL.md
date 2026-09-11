@@ -2,11 +2,11 @@
 name: banner
 description: Use when reasoning about banner — is the Payload definition and renders it. They are separate exports because typegen and the server config need the shape without dragging React into a context that cannot run it…
 atomPath: "blocks/banner"
-coordinate: "blocks/banner · 7/descent · 4514dcec"
-contentUuid: "cc20d1e6-2f47-5680-9db9-246836769cf6"
-diamondUuid: "bfb41250-91cf-8b4a-982f-a8a7fdcd950a"
-uuid: "4514dcec-8fdf-82e7-8da5-e43efa13586b"
-horo: 7
+coordinate: "blocks/banner · 5/round · d16f72fd"
+contentUuid: "72ea3c30-af7f-51f7-8057-872120815882"
+diamondUuid: "bb5678a2-8a77-86d1-b2c3-29e66ebad38a"
+uuid: "d16f72fd-733c-8b19-8b39-3740ed841a1b"
+horo: 5
 typography:
   partition: blocks
   bondDegree: 6
@@ -15,7 +15,7 @@ standards:
   - "W3C-WAI-ARIA-1.2"
 bindings: []
 signatures:
-  computationUuid: "dc853714-378c-86b1-88a4-9069d432d67f"
+  computationUuid: "37d498d1-f788-8a98-bc29-ad1446b56bb2"
   stages:
     - stage: path
       stageUuid: "4f4e9ac7-3535-8f5a-9302-2135be1ee4a9"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "9d2d75c1-2100-8be6-9f95-d9aca457ed29"
     - stage: horo
-      stageUuid: "d18b0575-c8c9-8636-b451-0271be112ece"
+      stageUuid: "aa2c2674-a6f3-8d5e-9241-b3fa39a44f35"
     - stage: seal
       stageUuid: "412cc769-15fa-8a4b-814d-70b0d8880f32"
     - stage: uuid
-      stageUuid: "256330f4-d8f7-8332-b42c-9dac3b7d5d0b"
+      stageUuid: "7d430ad2-ccd4-8a0a-82a2-df650c7809dd"
 version: 2
 ---
 # blocks/banner — the block's shape and the block's rendering, named separately

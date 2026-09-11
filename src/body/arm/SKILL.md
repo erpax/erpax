@@ -2,11 +2,11 @@
 name: arm
 description: "Use when reasoning about arm as an anatomical part of body — vocabulary pivot to @/arm; nested not duplicated."
 atomPath: "body/arm"
-coordinate: "body/arm · 4/weave · af64238d"
-contentUuid: "49f43365-b54e-5e39-a41b-3432a97a74d5"
-diamondUuid: "ed75b2ba-ed0b-8ee7-8b9f-87c8d175beee"
-uuid: "af64238d-deab-8d1a-b480-45adbb2fe0ef"
-horo: 4
+coordinate: "body/arm · 8/crest · 5cdac428"
+contentUuid: "bf11ed0c-f438-5471-95f9-a4d7b89861c8"
+diamondUuid: "cdbafcfb-b434-8421-94ae-6975706872b7"
+uuid: "5cdac428-f987-8a90-9fc8-1e2df4846fde"
+horo: 8
 typography:
   partition: body
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "89bff94c-2a5a-8d4e-aa3c-0bdc02775260"
+  computationUuid: "db58047c-eafe-80c0-9aa5-7aa2864f3605"
   stages:
     - stage: path
       stageUuid: "ccc7df98-0451-86b2-90b3-809fa7d04927"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a5bf2e10-0e22-8b5a-b45c-163d5f63033b"
     - stage: horo
-      stageUuid: "cf42d3a5-1e9d-8259-b191-b60b893c9944"
+      stageUuid: "a44d5cec-18c5-8d92-8ce5-b20ae2506c00"
     - stage: seal
       stageUuid: "e27d31fe-b00c-8a86-9036-e2f0bef5c893"
     - stage: uuid
-      stageUuid: "1cb5adbe-8d22-888d-b9f5-fddada51ff56"
+      stageUuid: "a28604ec-d673-8ad9-a963-1a856ffa6db0"
 version: 2
 ---
 # body/arm — anatomical part

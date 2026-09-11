@@ -2,11 +2,11 @@
 name: fold
 description: "Use when counting the folding — how the whole corpus collapses to one Merkle root and in how many folds; N atoms reach the root in ceil(log2 N) folds by N−1 merges (12 for the corpus), and the orthogonal digital-root fold collapses every count to its rodin digit."
 atomPath: fold
-coordinate: "fold · 2/share · 1ee4cea7"
-contentUuid: "eabac84f-7879-5fcf-81ee-0be0dd862daf"
-diamondUuid: "ab878866-d213-8a27-9518-84d2d24a63b4"
-uuid: "1ee4cea7-2cd3-8a0f-a8bf-b360c6b0487e"
-horo: 2
+coordinate: "fold · 5/round · 89264062"
+contentUuid: "1f01b9d9-8612-546d-8414-6bae74f5e3c7"
+diamondUuid: "77fcbd6d-db91-8f51-afd5-8b268d6e692e"
+uuid: "89264062-b949-83f0-93a6-947b6e01eb95"
+horo: 5
 typography:
   partition: fold
   bondDegree: 89
@@ -15,7 +15,7 @@ standards:
   - "the Merkle binary fold (depth ⌈log2 N⌉) · the base-10 digital root (the rodin reduction)"
 bindings: []
 signatures:
-  computationUuid: "9a748f40-d8f0-8811-a3c2-ee9b7f787742"
+  computationUuid: "12a566f2-20da-8534-b1ac-db68a708092c"
   stages:
     - stage: path
       stageUuid: "37834c64-da0b-8010-85d6-f62831a39992"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "07ebed05-1d09-8888-b658-756a2c994136"
     - stage: horo
-      stageUuid: "2a9d1a0c-e5ee-81a8-95f2-5341fcc83132"
+      stageUuid: "4680a94b-7056-8040-b7d3-422c3608b5cb"
     - stage: seal
       stageUuid: "432ca860-c728-8001-a70b-ce3e78142f27"
     - stage: uuid
-      stageUuid: "f41f35e1-0787-8e80-a888-e0b9ef36b9ea"
+      stageUuid: "23f54b6f-1209-846a-9307-28d2ed352405"
 version: 2
 ---
 # fold — the math of the folding

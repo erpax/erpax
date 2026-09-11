@@ -2,11 +2,11 @@
 name: relationship
 description: "Use when reasoning about relationship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/relationship"
-coordinate: "vocabulary/relationship · 1/base · ea23fe6c"
-contentUuid: "9866ad9b-06e6-5175-90dc-a774edc8a827"
-diamondUuid: "bb6a0ef5-4aa3-8aab-ae6d-ca78b1724926"
-uuid: "ea23fe6c-c7ac-8880-9f13-dc72dd90cec9"
-horo: 1
+coordinate: "vocabulary/relationship · 8/crest · 061dfd79"
+contentUuid: "fa6b67ed-b86e-55a4-b009-436662f12956"
+diamondUuid: "7f349f87-5d2e-876f-90da-77c18192794d"
+uuid: "061dfd79-f9e0-8721-8e2c-9bcefcfd5368"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a9fc6664-e7a9-835d-b834-f659ac9cf34b"
+  computationUuid: "2899c40c-c5b6-8321-93ee-5c9e81113189"
   stages:
     - stage: path
       stageUuid: "4c96f690-a83a-8e65-90e0-98e3d74ddbce"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2f1bf4c2-dd89-8734-9a3d-c536ea3c94be"
     - stage: horo
-      stageUuid: "c210063a-50b7-8c37-83c9-3adcaf004601"
+      stageUuid: "fe822e66-f01e-8786-b2af-89082b0330d8"
     - stage: seal
       stageUuid: "2f76c15f-0cfe-8ca9-80da-d1bdfe4894b3"
     - stage: uuid
-      stageUuid: "4692e967-3457-86ac-bc68-aeec2cc07bad"
+      stageUuid: "614b83fe-f347-8ac7-b580-555ad5f5bd5a"
 version: 2
 ---
 # relationship

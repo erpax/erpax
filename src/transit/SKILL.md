@@ -2,11 +2,11 @@
 name: transit
 description: "Use when reasoning about transit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: transit
-coordinate: "transit · 4/weave · 7b73307c"
-contentUuid: "c95b6c60-55ac-50a0-9db4-ba54bd9ceb8f"
-diamondUuid: "aba3612f-cbf3-8264-9b49-8422f72b41e5"
-uuid: "7b73307c-4f55-812d-9375-bc0ac5cd6b05"
-horo: 4
+coordinate: "transit · 2/share · cecd667c"
+contentUuid: "f9c266ea-4173-5858-ade6-616d91dc461b"
+diamondUuid: "3fa60c6b-d933-82e1-afe1-6eb14af4a4c0"
+uuid: "cecd667c-5712-8fe2-b0de-f803e8cb74ba"
+horo: 2
 typography:
   partition: transit
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4b1a0507-a13b-8bdd-b5c6-b5822aa99062"
+  computationUuid: "382b1453-3635-890b-ad99-1f77eba44f8c"
   stages:
     - stage: path
       stageUuid: "9f3ed539-445a-8850-b2fc-73f88755a329"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2bd51a2c-8071-8a68-8130-702f6e5ec394"
     - stage: horo
-      stageUuid: "a51f345d-0607-86fb-9651-e797b48831a7"
+      stageUuid: "6557d134-5fa9-80bd-94d0-7228c7e97637"
     - stage: seal
       stageUuid: "e41fba29-0911-8fc7-93bb-9c8589afbceb"
     - stage: uuid
-      stageUuid: "1e01eed5-7b5f-8511-b5e9-b99b92aed9bd"
+      stageUuid: "b5726e7e-c82b-8dba-8fac-21871b6aef27"
 version: 2
 ---
 # transit

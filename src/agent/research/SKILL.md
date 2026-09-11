@@ -2,11 +2,11 @@
 name: research
 description: "Use when registering an agent R&D society as tenant users with assigned roles, coordinating findings over the chat bus, and gating each finding behind tamper-evident tenant-admin approval — the actor-merge made operational (an agent IS a user)."
 atomPath: "agent/research"
-coordinate: "agent/research · 8/crest · a30cbcdc"
-contentUuid: "36c8df3e-cc93-5f75-8b90-159a989f8d2f"
-diamondUuid: "77f2ecc8-a017-80a3-b70b-f683d79ed3f2"
-uuid: "a30cbcdc-88e4-8697-b592-7242b2c2c856"
-horo: 8
+coordinate: "agent/research · 2/share · 3f90294e"
+contentUuid: "b8228be6-cc41-58a9-8563-fd475688042a"
+diamondUuid: "2f3df555-a8b0-867b-98dc-12ea8989fb22"
+uuid: "3f90294e-d5d7-84ba-8fc3-ff1cd6806a08"
+horo: 2
 typography:
   partition: agent
   bondDegree: 160
@@ -15,7 +15,7 @@ standards:
   - "RFC-9562"
 bindings: []
 signatures:
-  computationUuid: "ad37d8bc-b487-83ab-a98e-037021e0e54e"
+  computationUuid: "65a56f1d-c9df-83d3-9eac-e29f740c3b33"
   stages:
     - stage: path
       stageUuid: "e0999009-6b6a-86b9-9558-c23da22b26e6"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "bb3db05e-a70f-8d10-adb1-a07e7f11d3e8"
     - stage: horo
-      stageUuid: "e3d18f3e-5199-8668-8a80-9a228a90ab2e"
+      stageUuid: "619a6b0f-0a85-86e3-a427-c35950a94e4d"
     - stage: seal
       stageUuid: "aa55bc1a-29ca-8235-9bd2-a8ab52e92957"
     - stage: uuid
-      stageUuid: "37c3e134-4ba1-8654-8ca4-e9227fa9b24a"
+      stageUuid: "d3cb2566-a097-820e-895a-9d335437dd8e"
 version: 2
 ---
 # agent/research — the R&D society (an agent IS a user)

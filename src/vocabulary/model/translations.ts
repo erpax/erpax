@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "model",
-    "uuid": "70b68c62-9037-8ea5-9241-6fe7c837c44e",
+    "uuid": "92a1134b-f2db-8c07-8c24-3ff7ba504a11",
     "words": [
       "model"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about model — A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats c",
-    "uuid": "304e46fa-b8a2-8864-9218-45f5c9740f09",
+    "uuid": "de7f4b59-1484-8742-a732-47bd144a5ab2",
     "words": [
       "use",
       "when",

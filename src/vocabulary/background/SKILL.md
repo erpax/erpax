@@ -2,11 +2,11 @@
 name: background
 description: "Use when reasoning about background — A schema.org component word, collided out of schema.org compounds — fused from BackgroundNewsArticle (sti · collapse · merge)."
 atomPath: "vocabulary/background"
-coordinate: "vocabulary/background · 1/base · b0c359f2"
-contentUuid: "2378d6e7-bc46-524a-ae76-c6a368c0606c"
-diamondUuid: "62953889-58cd-8ca0-b297-2eb61cb9ddd8"
-uuid: "b0c359f2-4da0-8a71-9961-097b81aaa027"
-horo: 1
+coordinate: "vocabulary/background · 2/share · c2409ea6"
+contentUuid: "bb386c15-c74b-59e4-b788-efb6b101571f"
+diamondUuid: "58b773a3-ab62-8359-aa15-33f43eb50363"
+uuid: "c2409ea6-800d-8cc5-bd7f-52c89f917162"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cd7fcc9d-f20b-8c7f-9b6e-343bafff7dae"
+  computationUuid: "46be975f-d767-804a-9580-ce2af89802f0"
   stages:
     - stage: path
       stageUuid: "72fc3a49-b3bd-8344-a995-8318f3df8d89"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0df2fb59-42da-8590-a86b-c9eb6956bd44"
     - stage: horo
-      stageUuid: "d51fcb10-c8a8-8012-a54a-ba35a941b664"
+      stageUuid: "c0864715-bcd6-86f3-85c5-63bf3602685a"
     - stage: seal
       stageUuid: "8e099ea5-1fa5-8497-9c97-ca0a7f39645e"
     - stage: uuid
-      stageUuid: "1260f0cb-4772-8956-bc79-7c413372f865"
+      stageUuid: "f8ddcd9b-f1c3-8a9f-82b5-9f2567788695"
 version: 2
 ---
 # background

@@ -2,11 +2,11 @@
 name: debit
 description: "Use when reasoning about debit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/debit"
-coordinate: "vocabulary/debit · 5/round · ce427f4d"
-contentUuid: "163c0d53-d25c-58fb-aac4-c5fa8881a99b"
-diamondUuid: "8e7f072b-3a0f-8678-a071-5e421d7e9f7b"
-uuid: "ce427f4d-4ba2-86ce-a85c-e0afdcefa03e"
-horo: 5
+coordinate: "vocabulary/debit · 1/base · 4bef9290"
+contentUuid: "bb1f46d1-fd44-5555-81d3-5a2bd3cc5866"
+diamondUuid: "2cb8e738-fbe7-8a88-b4d8-8260813b41b6"
+uuid: "4bef9290-c1e7-8426-81a6-34db3b9b7367"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 47
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f277dc72-fb68-8207-9d59-cdc64785a7cc"
+  computationUuid: "87d32b5b-b26e-82ed-820b-531413037a76"
   stages:
     - stage: path
       stageUuid: "43151d5f-5f35-838e-b9cf-3e715a873e3f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2e899679-704e-819b-9260-a54eca487ed3"
     - stage: horo
-      stageUuid: "49e30265-828e-8dfe-b478-0dc90971e180"
+      stageUuid: "43cbcd6a-c316-851b-b611-1d240725c484"
     - stage: seal
       stageUuid: "9c674584-e0e5-8930-9668-2a1d184e3e29"
     - stage: uuid
-      stageUuid: "f52553bf-0427-8147-8a26-0a1f2da3eb9a"
+      stageUuid: "4558540f-f48d-8ff8-94f1-fdfe64323db7"
 version: 2
 ---
 # debit

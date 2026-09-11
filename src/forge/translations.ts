@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "forge",
-    "uuid": "80411d62-fd74-87bc-9183-11ecdfdb7ec0",
+    "uuid": "78a88eab-782d-8ab3-897b-82aa4d1ebb32",
     "words": [
       "forge"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about WHERE atoms are made one — the forge is the collider that takes every node and every link and folds them, by content-collision, into a single root. Heat is borrowed disorder; the hammer is merge; the anvil is the horo ring; what leaves the forge is one tamper-evident whole. forge() reports the forge state (node count, edge count, the root) computed live from the matrix.",
-    "uuid": "f39e9389-7776-8233-b9b2-d571bfc1aded",
+    "uuid": "bcddddf8-4106-8cf4-b2da-47f3b846c4cd",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "decentralization",
-    "uuid": "1603083a-bddf-88ae-ad05-013b62dc967c",
+    "uuid": "ed689f7a-c102-8c36-8918-f021d465b3da",
     "words": [
       "decentralization"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when order must arise with NO central controller — a global pattern as the fixed point of LOCAL rules (stigmergy, emergence, flocking), robust because redundant and diverse (no single point of failure), measured by concentration (the Nakamoto coefficient). In erpax, content-uuid merge IS stigmergy — each peer recomputes the id from the content, no coordinator; order emerges from content-addressing, not from a center.",
-    "uuid": "e49fd7c0-e35d-87c3-bdda-3961fa793cca",
+    "uuid": "5dcb9853-3c80-80de-a3d7-68d9cda5adf5",
     "words": [
       "use",
       "when",

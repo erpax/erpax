@@ -2,11 +2,11 @@
 name: colour
 description: "Use when reasoning about colour as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/colour"
-coordinate: "vocabulary/colour · 8/crest · 260c907b"
-contentUuid: "53be40fe-18d4-5823-8fd2-61221c454b37"
-diamondUuid: "a5a12fcb-2036-8461-b6f2-eb672d1a6f7a"
-uuid: "260c907b-8eb5-8352-a3c3-dec29d5570c8"
-horo: 8
+coordinate: "vocabulary/colour · 5/round · dacc4069"
+contentUuid: "ff0650a5-df46-5889-9ff6-ac8f690bc907"
+diamondUuid: "bf5707ea-b2af-888b-aec8-5dfe07ea1d9d"
+uuid: "dacc4069-8ec1-8641-b9f8-ab9c23b9877b"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f9cbbd48-e9be-8514-8ad3-2ab18fc8cb33"
+  computationUuid: "d8fa080b-5c63-82dd-ac08-6518d23cc853"
   stages:
     - stage: path
       stageUuid: "433e7e93-0bfd-8b10-a80a-b9f6dba3ca6b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4703346c-bcd2-806d-88f1-1ba0435983d2"
     - stage: horo
-      stageUuid: "a0354761-ab63-829c-b727-074022d21e3f"
+      stageUuid: "b3c0f42c-349a-818a-898e-f20c2eb589fc"
     - stage: seal
       stageUuid: "694b5995-231a-8593-85eb-10270ca3ee6e"
     - stage: uuid
-      stageUuid: "78bc01c5-a9f8-8a3b-9f5e-7452309ee603"
+      stageUuid: "66bd2907-9371-8f62-8c5b-d5a50b00be45"
 version: 2
 ---
 # colour

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "memory",
-    "uuid": "5baab18a-e5fb-8792-abfd-c4c14e68296d",
+    "uuid": "bcbb1df1-57f3-81f6-9601-cc99d90df37b",
     "words": [
       "memory"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about memory in the quantum frame — the content-address IS the memory manager, running live at every scale: collapse is allocation, dedup is free, collection is regeneration. Memory optimization is autosave: persist at the point of collapse and there is nothing to garbage-collect, because the unsaved is regenerable from its uuid.",
-    "uuid": "453b7100-2e25-8915-849e-422b1f8a5c32",
+    "uuid": "e2616aea-d71b-8d44-893c-3c0a529e60e9",
     "words": [
       "use",
       "when",

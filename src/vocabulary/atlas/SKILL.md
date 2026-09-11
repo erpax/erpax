@@ -2,11 +2,11 @@
 name: atlas
 description: "Use when reasoning about atlas — A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject."
 atomPath: "vocabulary/atlas"
-coordinate: "vocabulary/atlas · 7/descent · 7e20a371"
-contentUuid: "dc81fddd-7ee1-596d-95f9-7d24af0688ed"
-diamondUuid: "167e07cb-56d0-8cc5-bc0d-1d09c68923c8"
-uuid: "7e20a371-c116-8b3f-a7f2-9a8be49a3e5f"
-horo: 7
+coordinate: "vocabulary/atlas · 2/share · 5905b1d3"
+contentUuid: "29fcfc3e-f2a4-5390-9c25-d59522858b30"
+diamondUuid: "dc0059a1-2e2a-8fe4-b28b-b9e4c2a471dc"
+uuid: "5905b1d3-5ea9-82f4-bc91-c05ba3075cce"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff4f9a1f-896e-8d81-b25a-ffdbf7aab26d"
+  computationUuid: "807de2e8-dfe6-8e06-91ba-722bc9562041"
   stages:
     - stage: path
       stageUuid: "eb998088-31f7-8d1b-9cf3-bd7b6e95e31f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dbf9818f-0fff-8042-8380-3a917ecdcb1f"
     - stage: horo
-      stageUuid: "f6a4b50e-b7c8-82b9-81a0-91e0e1cf2f24"
+      stageUuid: "d19cd847-c94a-85a4-aa6c-7cd3b9e7e170"
     - stage: seal
       stageUuid: "c5e594d3-f281-87a1-8a47-d4537ad60301"
     - stage: uuid
-      stageUuid: "658667a5-4a64-86f2-922f-835a64eaff9b"
+      stageUuid: "83aeb5ae-ace7-8906-958e-f1b97bdc7395"
 version: 2
 ---
 # atlas

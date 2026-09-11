@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coverage",
-    "uuid": "d3ba0457-473b-876a-bc76-6f42a80987f3",
+    "uuid": "9df09ad7-bf9c-86d6-87a6-cd52222b9cfb",
     "words": [
       "coverage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking which external rails erpax can PROVE it speaks. 178 catalogued rails (97 country/bank + 81 trading); a rail declaring clientImplemented is a promise erpax parses its answers, and a promise with no contract check is a claim nothing can contradict. Ratchets the claimed-but-unproven count down; never counts catalogue-only rails as covered.",
-    "uuid": "929cd057-82c5-881d-a851-19ce580a24cd",
+    "uuid": "b7b8ea8e-2242-8052-b7f2-0b1998e5235d",
     "words": [
       "use",
       "when",

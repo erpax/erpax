@@ -2,10 +2,10 @@
 name: messages
 description: "Use when sending or querying internal addressed messages between users — subject/body, priority (high/normal/low), multi-recipient addressing, threaded replies via parentMessage, optional attachment to invoices/customers/vendors/orders, and read-at tracking. The internal user-to-user messaging collection."
 atomPath: messages
-coordinate: "messages · 7/descent · 75135cd0"
-contentUuid: "4a3e2ea8-0088-5aff-980a-f300f64dd8ce"
-diamondUuid: "21ba4087-337f-8802-aab2-df0536b7e3ab"
-uuid: "75135cd0-f04f-8859-a863-f531dfff511c"
+coordinate: "messages · 7/descent · 11ca70f5"
+contentUuid: "f29e08b8-abf4-5a97-ab71-3d008657c9be"
+diamondUuid: "6757209a-c798-852f-bd86-30660a20d668"
+uuid: "11ca70f5-918c-80ef-82a1-fb28703315aa"
 horo: 7
 typography:
   partition: messages
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "52dcc085-689a-87bb-b669-2cda97c6daee"
+  computationUuid: "a2adc4fa-1e58-8002-b0db-e3592401f722"
   stages:
     - stage: path
       stageUuid: "7dcb5e4e-8eba-8ae3-be38-2ff774a0d95d"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "4e80a849-7615-806b-a10a-9292af7364bb"
     - stage: horo
-      stageUuid: "d0254e4b-fd4d-8fa7-8cd5-ccd0f5eab7d4"
+      stageUuid: "ed205282-268d-8e1c-89c1-4367fcc72327"
     - stage: seal
       stageUuid: "e9039ea4-d0ed-8786-8fed-317fd0bf9e30"
     - stage: uuid
-      stageUuid: "6b16c533-285a-863d-abd8-fa9bb10f7b82"
+      stageUuid: "50f1d1e2-748b-8251-bbab-54635cf1aa97"
 version: 2
 ---
 # messages

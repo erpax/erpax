@@ -2,11 +2,11 @@
 name: bridge
 description: Use when reasoning about bridge — A bridge.
 atomPath: "vocabulary/bridge"
-coordinate: "vocabulary/bridge · 1/base · cf4dbe08"
-contentUuid: "b7534ba2-9387-5442-adf1-0e649bc0d309"
-diamondUuid: "274a5a56-1cd4-8619-94ad-9caec28066b4"
-uuid: "cf4dbe08-4bb8-82b1-89f8-56de5e01ee20"
-horo: 1
+coordinate: "vocabulary/bridge · 2/share · 8cc1a3be"
+contentUuid: "9fbab12c-f89e-591e-b0ad-8d9c058fbf0a"
+diamondUuid: "a5b2be66-ddc9-8f12-bd22-b1f31ea31014"
+uuid: "8cc1a3be-997f-852f-b3c4-9b412139d4a6"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f65736bc-f6f3-8562-87ae-5aac43f6d937"
+  computationUuid: "a37ae0df-0602-8cd1-bf16-129e40f41fa4"
   stages:
     - stage: path
       stageUuid: "3f659a07-bbc9-8ff3-bd23-ec044b84c7a7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2970b1a0-6d4b-8b3f-9d8e-f98c647273ba"
     - stage: horo
-      stageUuid: "d1fac256-0bd3-8102-807d-b1ca722c39d6"
+      stageUuid: "d8ea3618-82a3-89bc-a484-3ba0be8b8c91"
     - stage: seal
       stageUuid: "29794fc0-2168-85d7-961d-640426b91555"
     - stage: uuid
-      stageUuid: "c9727bda-a195-86be-b9d0-0f5caf487e38"
+      stageUuid: "ddc4f834-8d98-8507-9cd5-15213b653064"
 version: 2
 ---
 # bridge

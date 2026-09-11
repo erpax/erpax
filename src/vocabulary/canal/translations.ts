@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "canal",
-    "uuid": "25d4e95a-e7c8-80a9-87c5-e0ce9b142118",
+    "uuid": "5419c970-274a-8aca-9337-286464f68e49",
     "words": [
       "canal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about canal — A canal, like the Panama Canal.",
-    "uuid": "2698a87b-07b8-85ee-9792-c31e0a46448e",
+    "uuid": "4056e6fa-ebf1-864d-80f4-bf6394bfe668",
     "words": [
       "use",
       "when",

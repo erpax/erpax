@@ -2,10 +2,10 @@
 name: occurrence
 description: "Use when reasoning about occurrence as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/occurrence"
-coordinate: "vocabulary/occurrence · 4/weave · 9c734e9a"
-contentUuid: "16cfbcc2-57c2-5ba5-8569-a4d83ab49b6a"
-diamondUuid: "79adba10-710e-88c4-b9e7-1cbc145820e8"
-uuid: "9c734e9a-f61d-8a27-98fe-7d62237f5426"
+coordinate: "vocabulary/occurrence · 4/weave · 13138a22"
+contentUuid: "44aa986a-8dbc-5b4b-a4b2-62cfe682373c"
+diamondUuid: "b44dc219-3578-8ef3-852c-fbe16e84fd41"
+uuid: "13138a22-346b-89bc-9309-5fcabe46caf7"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9cf0806b-5d6c-8cb0-a82c-059c23fcf9df"
+  computationUuid: "2a0ad7b0-aa46-85bc-aa69-ca60505259dc"
   stages:
     - stage: path
       stageUuid: "ba50824f-e21d-8608-955a-0ff890024d6a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b0024179-d25e-80ae-bf33-c8de9497febd"
     - stage: horo
-      stageUuid: "2297bf75-5727-848b-b4ea-162c5850731a"
+      stageUuid: "a5453d2e-8b65-8af7-80c2-e36887e6f1e9"
     - stage: seal
       stageUuid: "6d1bc765-f8dd-8c4d-a0b2-d55b46adc1a0"
     - stage: uuid
-      stageUuid: "aded9502-4393-8016-a3b0-76159c312e63"
+      stageUuid: "f5c187ec-ef63-8e88-b75b-3d505cf218a2"
 version: 2
 ---
 # occurrence

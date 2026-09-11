@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "enum",
-    "uuid": "ece2070c-f3d9-8d4d-933a-0facd23ebeda",
+    "uuid": "99013323-3980-8d45-9714-9e9bfdb075ff",
     "words": [
       "enum"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about enum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "9c47eae8-0f04-87e8-8042-dd2d233375fd",
+    "uuid": "b389083b-0d04-85f9-a094-e04611aff87f",
     "words": [
       "use",
       "when",

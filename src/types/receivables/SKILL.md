@@ -2,11 +2,11 @@
 name: receivables
 description: "Use when reasoning about receivables — , , and are the A/R side of the same party document; buckets it and carries the expected-credit-loss figure IFRS 9 requires, which is the part a receivable cannot honestly omit."
 atomPath: "types/receivables"
-coordinate: "types/receivables · 2/share · 643ab2f7"
-contentUuid: "b9caf6b2-6213-5a65-a654-4bfd4dce892f"
-diamondUuid: "e47936ab-eeb5-8677-9531-31dff01299d5"
-uuid: "643ab2f7-8bf8-890c-9a8a-abcc6290b596"
-horo: 2
+coordinate: "types/receivables · 8/crest · b9c85c0d"
+contentUuid: "c647084b-e93c-5c73-bb29-2ab9d07c5126"
+diamondUuid: "f25dd4fc-3067-8eed-8c3f-5d0172eebbaf"
+uuid: "b9c85c0d-4f3b-8f97-bffa-f470b46dfbf0"
+horo: 8
 typography:
   partition: types
   bondDegree: 3
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-310 ASC-326 ASC-606"
 bindings: []
 signatures:
-  computationUuid: "a39a1098-9db5-8453-8f73-026be95f0474"
+  computationUuid: "e4140771-f9a7-87e8-b434-5624c81ca816"
   stages:
     - stage: path
       stageUuid: "18a8ed94-852b-80a6-acca-7d490b60d5ff"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "4ad31c49-3f79-8e36-8e9e-8e3b61b11ef2"
     - stage: horo
-      stageUuid: "715d9217-d024-8706-9ca8-95050816ed6e"
+      stageUuid: "619767c2-03e9-88e6-9500-5f632314565a"
     - stage: seal
       stageUuid: "64b495e8-b198-8aff-a525-a3b076769568"
     - stage: uuid
-      stageUuid: "14f584e3-e50f-88fa-9d8b-775e953edc55"
+      stageUuid: "506cd669-fe6a-85ea-b4fc-f0d0a4d850e9"
 version: 2
 ---
 # types/receivables — what is owed to the business, and the allowance that admits some will not arrive

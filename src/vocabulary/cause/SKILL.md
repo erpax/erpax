@@ -2,11 +2,11 @@
 name: cause
 description: Use when reasoning about cause — The cause of a medical condition.
 atomPath: "vocabulary/cause"
-coordinate: "vocabulary/cause · 4/weave · 8a43f45f"
-contentUuid: "8de81229-3f0c-54d7-9446-1be7327d6a67"
-diamondUuid: "2feca893-504c-8205-b47a-4dbded3724e3"
-uuid: "8a43f45f-9e78-8642-b7dc-de30f5dee75d"
-horo: 4
+coordinate: "vocabulary/cause · 7/descent · aaf78290"
+contentUuid: "8a0d95c7-02f4-5c3d-9b00-92da2454fd2d"
+diamondUuid: "e2882be6-174a-8ebb-ab42-a2a999460626"
+uuid: "aaf78290-4699-8638-807b-3264b6f29f3a"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "50c13f71-39ec-8f8f-a19f-77e1ff0f06f7"
+  computationUuid: "40e81e0c-55d1-8eec-9ccf-5a5618aeec4b"
   stages:
     - stage: path
       stageUuid: "d056ba78-565c-8b6d-89db-b2fbe8d5a700"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ff187318-3e67-82ce-a55c-487122a6f8bb"
     - stage: horo
-      stageUuid: "7fc59e05-8c7b-8e4b-97be-29292f09f5c0"
+      stageUuid: "4e2de159-9f83-8ac4-a394-579f66d526f9"
     - stage: seal
       stageUuid: "e8f61d0c-96a6-8bf5-bc2c-90fdadf07a5f"
     - stage: uuid
-      stageUuid: "4526d57c-5fad-8469-94e8-2cd033afdce1"
+      stageUuid: "e7e2d986-6493-887a-a304-863d0d084e58"
 version: 2
 ---
 # cause

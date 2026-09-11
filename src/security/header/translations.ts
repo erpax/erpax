@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "header",
-    "uuid": "bd0da912-b9c8-8dea-b54b-f6a973bcc399",
+    "uuid": "6c5e61aa-b8f5-8388-93d2-db1a02639ed3",
     "words": [
       "header"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing `_security-headers/` — Composite HTTP security-headers module.",
-    "uuid": "4f66b519-7f21-83ce-8734-aa1765a0ba2a",
+    "uuid": "c3113d6a-5016-8bdf-bbf8-067fe4dba3b0",
     "words": [
       "use",
       "when",

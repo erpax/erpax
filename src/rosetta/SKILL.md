@@ -2,10 +2,10 @@
 name: rosetta
 description: "Use when the gated commit/push must be achieved BY THE ROSETTA — every folder is an agent (a form·code·proof trinity that declares its @standard banners and either proves them or not), and the security/standards lanes for publish are DERIVED from that incidence, never hand-typed. The moving rosetta: poles come from what the folders declare, so a new atom joins a lane with no edit."
 atomPath: rosetta
-coordinate: "rosetta · 1/base · 9a024a26"
-contentUuid: "10180ca6-4823-5444-bf28-68afdf7a64e0"
-diamondUuid: "08c5b4f4-f6f5-8f5f-b8e8-8d32553b1ab2"
-uuid: "9a024a26-65de-8ff0-a3a9-5ff602dae477"
+coordinate: "rosetta · 1/base · a0132983"
+contentUuid: "07032923-2002-5798-90fa-53d2f89153bb"
+diamondUuid: "ab42c34d-96b2-8eb7-affe-c4aebe9810c0"
+uuid: "a0132983-d6fe-837f-a767-5f3b23dcd92b"
 horo: 1
 typography:
   partition: rosetta
@@ -16,7 +16,7 @@ standards:
   - standards
 bindings: []
 signatures:
-  computationUuid: "2f42dc17-cbed-86f2-b8e6-6a3fac1b7b89"
+  computationUuid: "1b7e4a22-7e4a-8ced-b93e-3c8cccf210e7"
   stages:
     - stage: path
       stageUuid: "9f5765ef-bb65-86d3-acea-db61bce02c08"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "4166093c-41a3-8831-9691-c20c5baedd89"
     - stage: horo
-      stageUuid: "a9dd4aab-859a-80de-b3ee-75a74cb01363"
+      stageUuid: "15896496-727c-8a12-bb3c-63cc45b64cf1"
     - stage: seal
       stageUuid: "7e98d8f5-6eac-887b-861d-9e3570425308"
     - stage: uuid
-      stageUuid: "8057ca8d-99fe-85e5-9873-01f11d968fa7"
+      stageUuid: "ec821bab-277e-806d-a887-21531c2343ad"
 version: 2
 ---
 # rosetta — every folder is an agent; the lanes are derived, not typed

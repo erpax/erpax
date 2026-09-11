@@ -2,11 +2,11 @@
 name: sandbox
 description: "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on."
 atomPath: sandbox
-coordinate: "sandbox · 5/round · 1dc7d0a8"
-contentUuid: "5f546819-4ae6-50b4-95ac-3aac9e00761c"
-diamondUuid: "61b44816-fc90-8288-a04b-3852b2709940"
-uuid: "1dc7d0a8-c539-8322-8867-6e2a196cf04e"
-horo: 5
+coordinate: "sandbox · 1/base · b9027958"
+contentUuid: "776729d9-987a-5936-bf3d-b20afaa44117"
+diamondUuid: "6fbc5887-5b57-8431-ab1b-a29ad729d7ef"
+uuid: "b9027958-4ce9-8278-89a6-b514e8f193b1"
+horo: 1
 typography:
   partition: sandbox
   bondDegree: 82
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "89ae111b-dc9e-88ed-80d4-1b2877cf2210"
+  computationUuid: "d84bc7a1-d66c-82e5-9824-dc12ff813175"
   stages:
     - stage: path
       stageUuid: "5f4d1904-144d-859d-8226-20252d2ad276"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "03ec28a6-9039-872a-bf72-75d8459f08b7"
     - stage: horo
-      stageUuid: "9eccc55b-899d-8e1b-8ec5-b7dadacc2ee1"
+      stageUuid: "43cb2640-9883-822d-93f7-c2fd8e9ee8be"
     - stage: seal
       stageUuid: "496330d1-17cd-8f0d-9e13-29f5bd554ef9"
     - stage: uuid
-      stageUuid: "30b2e5be-60b8-863f-9271-c2ae788f577e"
+      stageUuid: "45009c1a-2d4f-89d4-b825-be71ec16b03f"
 version: 2
 ---
 # sandbox — running untrusted tools, encoded natively (no external trust layer)

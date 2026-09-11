@@ -2,11 +2,11 @@
 name: obstetric
 description: "Use when reasoning about obstetric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/obstetric"
-coordinate: "vocabulary/obstetric · 5/round · 19d0c62e"
-contentUuid: "908241a4-4f56-5376-a338-c1418d792e12"
-diamondUuid: "b7d3afd8-2473-84ae-864a-2e2ff61c300c"
-uuid: "19d0c62e-be96-8e1a-9b40-326b8f159e6e"
-horo: 5
+coordinate: "vocabulary/obstetric · 1/base · 910e3668"
+contentUuid: "0855a742-8abc-58d5-a47e-c65271425233"
+diamondUuid: "d867cd19-d117-8cb6-9628-c10035641af4"
+uuid: "910e3668-1927-8162-bd40-dcc1df56f841"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "046f73dc-ef35-80bc-8e9a-0445b3d23ca0"
+  computationUuid: "2954be60-c09a-8a9e-ae47-9494ccd22033"
   stages:
     - stage: path
       stageUuid: "384987fe-ac72-86e7-aada-9c85e66eaa5a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "55c1529c-e79c-8fa9-ab56-fb838155f442"
     - stage: horo
-      stageUuid: "4611a40c-a756-8398-a1f5-ce00a4d0d9a2"
+      stageUuid: "dd9dec7d-2afd-80e3-a43b-45db072aba79"
     - stage: seal
       stageUuid: "6230e860-b11c-899e-aea0-7987b246e62b"
     - stage: uuid
-      stageUuid: "93dfd6c7-b3e7-8233-a99e-5546171c6057"
+      stageUuid: "375ac261-9a03-840c-9af6-79fb93683ba0"
 version: 2
 ---
 # obstetric

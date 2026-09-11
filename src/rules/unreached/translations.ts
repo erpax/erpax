@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unreached",
-    "uuid": "fb3df7de-b681-81c1-b9eb-cb58334e5481",
+    "uuid": "896e7d4b-8dd7-86d2-8a21-086f010219ee",
     "words": [
       "unreached"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…",
-    "uuid": "d0108090-b502-836a-84cc-633035d2670c",
+    "uuid": "f9a15113-496c-87e8-a402-47fe86c1ff8f",
     "words": [
       "use",
       "when",

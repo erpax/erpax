@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "capacity",
-    "uuid": "3a1fb4f7-e10b-8439-9f26-11b714748921",
+    "uuid": "fa8be869-2f10-816f-8652-abb7dbb0ca93",
     "words": [
       "capacity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when planning, tracking, or optimizing resource capacity — workforce availability, machine utilization, warehouse/facility space, or bottleneck detection per work-center/shift/period. The binding constraint in operations.",
-    "uuid": "24e04bdd-539b-8294-a0a4-73a22da63fa7",
+    "uuid": "87971d4c-0677-8b81-8be1-0d5247e2e9b6",
     "words": [
       "use",
       "when",

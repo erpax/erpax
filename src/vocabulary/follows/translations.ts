@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "follows",
-    "uuid": "d7d86eac-f2cd-808e-b0f4-2a9559c2000c",
+    "uuid": "29ae6547-fe5f-89a6-9be1-3ce3cd46c154",
     "words": [
       "follows"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about follows — The most generic uni-directional social relation.",
-    "uuid": "20dca213-f198-8055-a12c-6868503659ed",
+    "uuid": "01c8cc40-459c-8ac9-998a-901c0784bffa",
     "words": [
       "use",
       "when",

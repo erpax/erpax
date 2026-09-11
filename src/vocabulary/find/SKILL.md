@@ -2,11 +2,11 @@
 name: find
 description: "Use when reasoning about find as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/find"
-coordinate: "vocabulary/find · 1/base · 0ab2a27a"
-contentUuid: "3e494779-c761-58ce-b44b-861f67bbd0f7"
-diamondUuid: "7882dc00-12fc-88d1-a96e-f42aceabd365"
-uuid: "0ab2a27a-0d96-8227-8304-150a1ab6de76"
-horo: 1
+coordinate: "vocabulary/find · 4/weave · 1a26ffa4"
+contentUuid: "0c16e247-f4f2-5622-b635-ba80901058a1"
+diamondUuid: "e1287fc0-0925-8ee5-b133-8357d3ce11ec"
+uuid: "1a26ffa4-ed3c-8d63-bf41-7afcf411360b"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6c2e1954-ecea-8a1f-8616-dcb42f566cc5"
+  computationUuid: "68b3754a-58bc-8a62-8922-cd01b1c12331"
   stages:
     - stage: path
       stageUuid: "69209b03-5676-8216-825e-7dbe1a58b64c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "12b13583-dbef-8e3e-b240-2689023fcfe4"
     - stage: horo
-      stageUuid: "78973d89-6ade-8c1b-900a-a2c6ae286999"
+      stageUuid: "8dd74214-9260-8938-8767-3e326d9bff72"
     - stage: seal
       stageUuid: "8b9a2c79-9898-8e71-b678-8057f2d514b0"
     - stage: uuid
-      stageUuid: "7134d3c7-16cb-85dd-b0b7-3c8fcb93d987"
+      stageUuid: "1a65cd82-b442-8060-b340-ef5cdbb651ac"
 version: 2
 ---
 # find

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "article",
-    "uuid": "74b68acc-a8fe-882c-a9f4-7b5c84dfdf81",
+    "uuid": "ffda1f73-b1f8-8f56-bef4-34481e24cd34",
     "words": [
       "article"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about article — An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also",
-    "uuid": "055f2e29-4fdb-8d72-a015-b45729c6af63",
+    "uuid": "46b5437c-6064-8e7d-b260-67c18cf092a3",
     "words": [
       "use",
       "when",

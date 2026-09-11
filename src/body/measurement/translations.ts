@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "measurement",
-    "uuid": "5269d0ed-b069-8509-963f-c2128e8f0202",
+    "uuid": "49475cfa-705c-8dbc-999e-d268a3c9d242",
     "words": [
       "measurement"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about measurement as a anatomical part of body — vocabulary pivot to @/measurement; nested not duplicated.",
-    "uuid": "e607e878-2e0d-84d2-bcce-28f301f421ae",
+    "uuid": "b4a44178-d009-8c33-9ef0-9a8d968e17dd",
     "words": [
       "use",
       "when",

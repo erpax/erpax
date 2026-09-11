@@ -2,11 +2,11 @@
 name: pos
 description: "Use when reasoning about pos as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pos"
-coordinate: "vocabulary/pos · 7/descent · a9035865"
-contentUuid: "cac5c1e0-dc4a-5f93-91fb-45ca3f6d26f3"
-diamondUuid: "65aa76b2-56cc-87b8-88f8-4abab9885eac"
-uuid: "a9035865-1ddc-848a-9017-fa5972c8f662"
-horo: 7
+coordinate: "vocabulary/pos · 8/crest · f3958d95"
+contentUuid: "74d00041-1375-5275-ab03-4488ea5e87e3"
+diamondUuid: "9ede33b9-00ae-81dd-8177-5bfcf47d4546"
+uuid: "f3958d95-270d-87de-be20-5af50de15bc0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ee2a03be-ee16-8edf-a095-d5b4d0912687"
+  computationUuid: "05af89a1-9b3b-8d2d-bafb-dc7b2d131506"
   stages:
     - stage: path
       stageUuid: "5043822d-453d-82e3-9a93-1c7a89a4e90a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3966a786-3e31-8599-a786-aff8335ff083"
     - stage: horo
-      stageUuid: "f5d299e5-7e82-80d6-8c0e-8b43332d87be"
+      stageUuid: "6bb439dd-d061-8629-847b-bd941e0a6bfe"
     - stage: seal
       stageUuid: "107f18a1-a294-82cf-af3d-d7a7b02285c7"
     - stage: uuid
-      stageUuid: "524bf63e-3163-860f-af43-c654bcb530bc"
+      stageUuid: "f35f5fcf-a0d7-8f74-8cc2-ae4a251c2fb7"
 version: 2
 ---
 # pos

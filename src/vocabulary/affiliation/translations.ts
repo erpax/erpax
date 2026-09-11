@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "affiliation",
-    "uuid": "784971a5-6260-8a93-a94f-0058b3392ec4",
+    "uuid": "39407bb1-6f23-8d1d-9b36-3c94f71dabd5",
     "words": [
       "affiliation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about affiliation — An organization that this person is affiliated with. For example, a school/university, a club, or a team.",
-    "uuid": "ee2f61c3-71b6-8006-820e-c1669f99bba1",
+    "uuid": "fb5a637a-a977-85f5-be09-3b8f40071db3",
     "words": [
       "use",
       "when",

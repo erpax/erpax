@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "design",
-    "uuid": "af6593ae-89e1-8b8e-a208-dc3918f0a15d",
+    "uuid": "892556a9-76c7-8fb0-a34a-dfd022dbd799",
     "words": [
       "design"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining the visual and interaction form of an experience — wireframes, prototypes, design reviews, design systems, accessibility, user research insights applied to form.",
-    "uuid": "5bf3346d-9db4-80f8-9186-22d3eb549ad6",
+    "uuid": "78725803-f6e0-8284-a756-dba44a03a61e",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "base",
-    "uuid": "e809f316-72b6-8c8f-9dda-865f0dab18b8",
+    "uuid": "21c1a918-3b91-8a7f-8137-13ffcf94092f",
     "words": [
       "base"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a collection is declared — createAccountingCollection takes declarative metadata (emits, horoStates, access, audit) and wires every cross-cutting concern, so a collection says what it IS and never how it is plumbed.",
-    "uuid": "fff7a951-ada4-85c8-8c62-0b4d3db6412e",
+    "uuid": "cdda4660-d77a-873a-b849-09865201d7a8",
     "words": [
       "use",
       "when",

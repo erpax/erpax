@@ -2,10 +2,10 @@
 name: attribute
 description: "Use when reasoning about attribute as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/attribute"
-coordinate: "vocabulary/attribute · 4/weave · 6df217d9"
-contentUuid: "47674318-7806-501a-983b-65cb03f2a162"
-diamondUuid: "80c6bdac-50ed-83e0-89af-b4f1545876c1"
-uuid: "6df217d9-a47e-8105-8633-1aa418f71f02"
+coordinate: "vocabulary/attribute · 4/weave · 08923d8f"
+contentUuid: "644d079a-7e59-58e7-bcb4-5418c2f91c1c"
+diamondUuid: "8c7d614e-27f7-89a0-83b1-b64e770da4b8"
+uuid: "08923d8f-dff4-8595-90f0-9a0870ae39ac"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aec63954-237e-8413-a18b-90c4b988c951"
+  computationUuid: "2beadac8-c1d2-8d23-9e0e-1cf9ea100c63"
   stages:
     - stage: path
       stageUuid: "f14943aa-5d9a-8de7-96c4-4d60ab206541"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "213980b0-db4b-8ad4-8f70-c7fab92b5364"
     - stage: horo
-      stageUuid: "08c1e191-417d-8336-a982-172ae6fc3590"
+      stageUuid: "06ec6c04-3db2-8224-bcf2-22ce4a4cb0f4"
     - stage: seal
       stageUuid: "fc684143-b0aa-8336-ad52-6610696e11f4"
     - stage: uuid
-      stageUuid: "e54f1e11-738d-87c5-9e16-eb63602849a6"
+      stageUuid: "a035e4da-7334-87b4-be56-083fd1230fa4"
 version: 2
 ---
 # attribute

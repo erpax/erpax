@@ -2,18 +2,18 @@
 name: coordinate
 description: "Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity."
 atomPath: "vocabulary/coordinate"
-coordinate: "vocabulary/coordinate · 4/weave · f79bce17"
-contentUuid: "7992c9b3-5d58-5ff0-a0d4-ea7685a1b7f9"
-diamondUuid: "a5434ef9-ab5a-85d9-9f12-a8db990cf120"
-uuid: "f79bce17-3c1b-8b8f-b230-553f46a3af1a"
-horo: 4
+coordinate: "vocabulary/coordinate · 8/crest · e47a6d83"
+contentUuid: "5cdcb8a4-401b-526c-94eb-c64202ceae18"
+diamondUuid: "9e31065d-84d6-88df-a091-be4181836f88"
+uuid: "e47a6d83-178e-8d40-90e1-b272a126bf38"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 92
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8e87d0da-2713-8c04-9c90-2a7001e2d0f4"
+  computationUuid: "62ad285e-d96f-8ee9-92f5-a8ecca789862"
   stages:
     - stage: path
       stageUuid: "cd630dd9-ebe9-8fec-af89-809dce788348"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fb152941-0d46-85d1-ac9e-8fea2441ddbd"
     - stage: horo
-      stageUuid: "af54d174-49ca-8a8c-b33d-ffe20ab755c7"
+      stageUuid: "7f0f3ba1-870e-8b4c-8c2a-78bc5052fe23"
     - stage: seal
       stageUuid: "40a35bd6-9ae0-87e4-9f9b-bd34e2d04f54"
     - stage: uuid
-      stageUuid: "17d840ec-7029-815b-8087-2d2d9155a376"
+      stageUuid: "dc6185fd-f252-83f0-aee3-87c45ade8282"
 version: 2
 ---
 # coordinate — the uuid is the coordinate system

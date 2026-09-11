@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "increment",
-    "uuid": "a0932624-55d2-8bc8-95d6-52483bd7d6d2",
+    "uuid": "3963ef09-0033-84cf-9677-0192569bed48",
     "words": [
       "increment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about increment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "a73c55c6-a183-8125-88e5-2870a7952328",
+    "uuid": "83a6c431-6dae-839c-b9cd-44c382152a9e",
     "words": [
       "use",
       "when",

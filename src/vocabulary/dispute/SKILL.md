@@ -2,10 +2,10 @@
 name: dispute
 description: "Use when naming a disagreement between parties that a contract or forum must settle — the parent term, including the mechanism that settles it."
 atomPath: "vocabulary/dispute"
-coordinate: "vocabulary/dispute · 2/share · e877fcdf"
-contentUuid: "bcffe683-e843-5009-8b28-5902645f805d"
-diamondUuid: "0986ca74-b48a-866d-8e4f-1e858b792a76"
-uuid: "e877fcdf-b251-8c3f-8301-c056821d4f1b"
+coordinate: "vocabulary/dispute · 2/share · f0e8f5db"
+contentUuid: "8596043a-f87d-573b-8b2c-48c275546885"
+diamondUuid: "10530d0a-cb73-8e6a-8e59-bbb4c61b99bf"
+uuid: "f0e8f5db-e761-8ade-b118-251f80ee4e0a"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e375d379-f82d-81d6-9d61-aae2c0fae158"
+  computationUuid: "6108b8e0-c330-8410-9b7e-92f922d5d88f"
   stages:
     - stage: path
       stageUuid: "3eff1826-06fc-872a-b9a9-7d2a17a3d2ec"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7fbddad8-d627-8a0f-b4fb-93548503ca02"
     - stage: horo
-      stageUuid: "d90493cc-814d-89bf-8fd9-9673f1c25894"
+      stageUuid: "55f4466c-2762-8205-af3d-fdc4bbff7b7e"
     - stage: seal
       stageUuid: "061bab34-15da-8be3-94d3-34b07e7090ae"
     - stage: uuid
-      stageUuid: "60736835-db23-8fb3-b1b8-dff94eb41d7e"
+      stageUuid: "76d4e618-6278-8254-bd92-c730576a52fb"
 version: 2
 ---
 # dispute

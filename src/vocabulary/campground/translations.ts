@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "campground",
-    "uuid": "37f16c4b-26a5-836f-95e3-ccca3daed3ff",
+    "uuid": "f6b3e033-5a99-872f-9605-112bda68e5af",
     "words": [
       "campground"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about campground — A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is",
-    "uuid": "b155a2f8-c8ab-8c56-91b6-cb6b3f39d3b7",
+    "uuid": "3f91f07d-f989-80a8-81fe-a03b316296ff",
     "words": [
       "use",
       "when",

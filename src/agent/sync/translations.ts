@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sync",
-    "uuid": "0164ce58-5695-8dcb-b136-bcde50c231dd",
+    "uuid": "c670862b-4a96-82c0-b860-1589d35a3792",
     "words": [
       "sync"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens.",
-    "uuid": "c7dcd128-614b-8ac3-9092-14810d3bf6a1",
+    "uuid": "a9413f7f-5996-8d04-a59e-ff64e176f305",
     "words": [
       "use",
       "when",

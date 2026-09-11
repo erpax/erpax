@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gate",
-    "uuid": "9231345a-9a99-81f6-95f0-047b5ad42154",
+    "uuid": "c1befecc-3f83-88f1-829b-2138de66a19c",
     "words": [
       "gate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring the outward contracts into CI, pre-push or the release workflow — runs all twelve OFFLINE contracts (EU four, BG two, world six) plus the coverage ratchet and the contracted-endpoint resolve check, fail-closed. Offline by construction: it imports only the frozen-capture functions, so a correct erpax can never fail its release because an authority is rebooting.",
-    "uuid": "1b204760-48be-8818-8fa4-9ecf6b10725b",
+    "uuid": "34d6efd4-8298-829a-89d3-b4b679fe05a1",
     "words": [
       "use",
       "when",

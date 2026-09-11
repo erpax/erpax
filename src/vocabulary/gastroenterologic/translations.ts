@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gastroenterologic",
-    "uuid": "30706eee-e87e-83f6-947a-a21393ca782d",
+    "uuid": "4bb10791-76da-81fb-8f67-7ea79c15ff79",
     "words": [
       "gastroenterologic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about gastroenterologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "d8114a65-1485-83d8-85c5-32cbd9353027",
+    "uuid": "f54f5dab-0691-875f-8f81-513cf02c632f",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: bathrooms
 description: "Use when reasoning about bathrooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bathrooms"
-coordinate: "vocabulary/bathrooms · 1/base · 698e3755"
-contentUuid: "c198558a-face-5935-aeca-c477dda2b956"
-diamondUuid: "e3795f42-2eea-8e80-93a1-6f3d1ca2fb0a"
-uuid: "698e3755-9366-8571-9390-e405dd381c6b"
+coordinate: "vocabulary/bathrooms · 1/base · b2975db5"
+contentUuid: "72d5fe8a-7d2f-5cfc-98ec-557b5c5f1957"
+diamondUuid: "009089e9-97d4-8712-82c0-8c88d56eedc9"
+uuid: "b2975db5-f195-8b63-9990-6d2438af4e5e"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9ea236a7-0df3-8a44-ba19-c1baae5508bd"
+  computationUuid: "122f8a2c-e801-807f-8e6c-196f48128cca"
   stages:
     - stage: path
       stageUuid: "cc1604df-7959-899c-b769-206409ec2841"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3098cb3b-661c-8f73-9010-7b16d60b314f"
     - stage: horo
-      stageUuid: "2be89569-f853-82af-8072-2b744990f647"
+      stageUuid: "0bc6fae0-ab6f-88e5-9b69-7ee3e1f9b511"
     - stage: seal
       stageUuid: "624cd20a-c1d0-8f53-9a34-c2a07ffdd106"
     - stage: uuid
-      stageUuid: "d86b6a67-4d67-8471-8bd2-825712c607de"
+      stageUuid: "6a09d720-1b24-8432-9710-8867ca873310"
 version: 2
 ---
 # bathrooms

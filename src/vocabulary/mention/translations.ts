@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mention",
-    "uuid": "fe40b098-2ea5-850a-8697-e860c3d7790f",
+    "uuid": "eaffba3a-0dcf-8e81-ad19-d93b73078b29",
     "words": [
       "mention"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one mention — the singular model of the mentions collection (the plural store); a reference to an actor within a piece of content.",
-    "uuid": "d7e22218-5550-8c4b-ae58-2f857c54711b",
+    "uuid": "54c667fe-7a07-8f9d-9234-649bd541fc44",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: access
 description: "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit."
 atomPath: "security/remote/access"
-coordinate: "security/remote/access · 6/6 · 7a19214b"
-contentUuid: "f5b33fb0-d413-5497-bfb1-572c6ddfcaf5"
-diamondUuid: "c57e7941-4617-8f44-968e-966b325c1393"
-uuid: "7a19214b-b0e9-88ae-b323-4f0c5f23bc48"
-horo: 6
+coordinate: "security/remote/access · 3/3 · 3033ee79"
+contentUuid: "17793ca9-e260-52dd-9377-34a2d9950439"
+diamondUuid: "42129167-8edc-891e-bccc-427b79fbbd34"
+uuid: "3033ee79-ae8f-8572-97f6-a4ab0a6ac18b"
+horo: 3
 typography:
   partition: security
   bondDegree: 436
@@ -15,7 +15,7 @@ standards:
   - "NIST-SP-800-162"
 bindings: []
 signatures:
-  computationUuid: "dedf2150-6369-8f2b-8506-bc2ad4bd179f"
+  computationUuid: "fc6e4e9c-0bcb-8d0a-977f-8d32ae525222"
   stages:
     - stage: path
       stageUuid: "cef53b55-378a-85f0-a121-73d0c2db3cf3"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "666c9002-5a4e-8933-aa2e-cc9aa8ed9694"
     - stage: horo
-      stageUuid: "365fb5bb-0cfe-84a9-b0a9-a6fe45679ae8"
+      stageUuid: "dc2eebe3-9f76-870c-8f81-05d9583b0e0b"
     - stage: seal
       stageUuid: "344ae025-fbfe-8eae-98e9-66766085d4e7"
     - stage: uuid
-      stageUuid: "11ad52f0-3d3f-89b4-a318-3dfbf5e35e9a"
+      stageUuid: "ccba588c-5aba-809e-ab2f-5167a731a87d"
 version: 2
 ---
 # remote-access — proving a vendor's trust-model gaps with erpax (under [[security]])

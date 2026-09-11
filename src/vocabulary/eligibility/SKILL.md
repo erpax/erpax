@@ -2,11 +2,11 @@
 name: eligibility
 description: "Use when reasoning about eligibility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/eligibility"
-coordinate: "vocabulary/eligibility · 7/descent · cfaee6d0"
-contentUuid: "9ce2d3c3-9992-5428-b121-dbce892d0383"
-diamondUuid: "2b2172b1-993e-8e13-a3fa-e24dba7e3f2c"
-uuid: "cfaee6d0-355f-851e-a552-d7efe0dbf565"
-horo: 7
+coordinate: "vocabulary/eligibility · 1/base · 254d6f48"
+contentUuid: "1abcdf1e-cdb0-58f5-98f5-da51e7c26d7c"
+diamondUuid: "a1518fab-165c-8030-8386-799572bfe70c"
+uuid: "254d6f48-5086-8d8d-8210-d592a08fded3"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "eae888a9-23f3-8d61-9f9a-3e2541f35a15"
+  computationUuid: "bde8fa31-de4d-87b4-88cd-1c23d4f30f30"
   stages:
     - stage: path
       stageUuid: "ef1c3705-d331-8f8c-9a44-7586bb6d6e48"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9f2842a2-8049-843c-89c3-21da6d3ea952"
     - stage: horo
-      stageUuid: "c3d659c2-f3cc-8910-b802-bce97551a95e"
+      stageUuid: "ed640b8f-1fc7-8654-aa5f-f4b3f574e935"
     - stage: seal
       stageUuid: "2af30555-9f31-86f2-8d97-47455750793c"
     - stage: uuid
-      stageUuid: "9526db8e-f67b-8f67-9e2c-24a9bf5203ef"
+      stageUuid: "f62d0724-f688-8c82-991c-0cd9955e9750"
 version: 2
 ---
 # eligibility

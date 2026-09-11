@@ -2,11 +2,11 @@
 name: reconciliation
 description: "Use when closing a multi-currency period — verify each currency's closed revenues equal its closed expenses within tolerance, revalue non-reporting currencies at the period-end rate for unrealized gain/loss, and fold it all into one reporting currency with a chain-linked audit leaf."
 atomPath: "currency/reconciliation"
-coordinate: "currency/reconciliation · 8/crest · 9cd4a063"
-contentUuid: "225df8d9-086d-55fb-826a-9e656d5278a6"
-diamondUuid: "99cd4f23-ba62-80a6-a304-f373432f4d40"
-uuid: "9cd4a063-fde5-878b-a198-eb2802a0910b"
-horo: 8
+coordinate: "currency/reconciliation · 5/round · 0a8d3feb"
+contentUuid: "1099ea13-7974-5b89-95e0-16ca1e25dc17"
+diamondUuid: "fe890564-b94d-80c2-8fa8-bae86163e418"
+uuid: "0a8d3feb-adc8-8859-bcd5-2602f7004252"
+horo: 5
 typography:
   partition: currency
   bondDegree: 35
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1b335d62-2d44-8968-b2d9-9c93d6c4a354"
+  computationUuid: "4da042a6-5478-8a83-a3bb-8dbc68f4fa23"
   stages:
     - stage: path
       stageUuid: "624214ed-b26b-84f2-815c-83c436116027"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "1ca7ac81-3366-85de-aea3-dc234e0f5336"
     - stage: horo
-      stageUuid: "4e6d2f82-9776-8990-bcc2-308edb815cda"
+      stageUuid: "9bc26d1d-94d6-8fde-ae8e-4ba4f541a33a"
     - stage: seal
       stageUuid: "ccc10216-324f-8fc0-a4f2-25e47449a463"
     - stage: uuid
-      stageUuid: "c4b704e4-6311-8dac-93e8-99f34fd23241"
+      stageUuid: "2be8dda8-6143-8737-b61e-48eb95bb87cd"
 version: 2
 ---
 # currency/reconciliation — multi-currency period closing

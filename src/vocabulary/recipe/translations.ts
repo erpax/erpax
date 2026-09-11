@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recipe",
-    "uuid": "7008fa23-1207-87d4-b9b8-4f62c9118e05",
+    "uuid": "557d3b8d-08f8-87d6-b22f-b19fe9f69d63",
     "words": [
       "recipe"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about recipe — A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail.",
-    "uuid": "16703ed9-939e-8596-bf8b-3e4eeadaa648",
+    "uuid": "af99e9c1-4a76-87eb-93e7-c6e9aa35ab94",
     "words": [
       "use",
       "when",

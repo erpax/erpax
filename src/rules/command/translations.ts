@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "command",
-    "uuid": "b70b4e6a-a418-84f7-a53e-ebf744964e69",
+    "uuid": "1320ddbe-0c6e-8e63-9e2f-3a6c8f5af842",
     "words": [
       "command"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed.",
-    "uuid": "bfe7bcf0-28c8-899e-b2ce-4778e5322786",
+    "uuid": "c74cbd84-3886-8e05-82d2-bbe8a65ba29a",
     "words": [
       "use",
       "when",

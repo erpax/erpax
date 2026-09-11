@@ -2,18 +2,18 @@
 name: complete
 description: "Use when reasoning about complete — Completeness is **required**, and it is not what a single listing reports."
 atomPath: "publish/complete"
-coordinate: "publish/complete · 7/descent · 34243b67"
-contentUuid: "016663b9-a968-57bd-86b3-b53cd0847e0c"
-diamondUuid: "1c939521-1cea-8b25-9626-c24a32a37215"
-uuid: "34243b67-67b3-8805-80fa-07ef4ae3bf15"
-horo: 7
+coordinate: "publish/complete · 2/share · 49f023ad"
+contentUuid: "f2f5e775-a750-5c41-ba1b-05621abafca8"
+diamondUuid: "58832ade-776c-8162-bb08-d0d930d0a5c5"
+uuid: "49f023ad-4db2-8f67-bcfa-d5c80c4f9b2a"
+horo: 2
 typography:
   partition: publish
   bondDegree: 59
 standards: []
 bindings: []
 signatures:
-  computationUuid: "601e451d-042d-8c20-87e7-e596376b100e"
+  computationUuid: "66cc845e-e9b4-8328-a43e-a64cff65f9f7"
   stages:
     - stage: path
       stageUuid: "21ccd664-10e2-8551-aa8b-783e5202a61b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "910d8657-f7b1-87a0-a149-3b842f4c37ad"
     - stage: horo
-      stageUuid: "353b67ee-10e4-81d5-b0a6-9928d00c6dac"
+      stageUuid: "a19ee12e-efaf-84b0-ae84-de06a98a23f0"
     - stage: seal
       stageUuid: "ee37418f-58c8-8749-a6b7-43d61d2c0852"
     - stage: uuid
-      stageUuid: "f9cb7bf6-9723-8ab2-9e1b-dc6c4fe698c0"
+      stageUuid: "726d23b2-127a-8af3-84df-f3fcba5b8071"
 version: 2
 ---
 # publish/complete — a count is not a census; compare members, never totals

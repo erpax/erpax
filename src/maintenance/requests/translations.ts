@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "requests",
-    "uuid": "d85802e5-6720-824d-a00c-432953dd0cd2",
+    "uuid": "39fb5b02-3f63-82e2-bf3f-ade6081772c6",
     "words": [
       "requests"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.",
-    "uuid": "24475bca-e386-8d65-8a62-ad03ef99d6a6",
+    "uuid": "10a3068e-e8ff-8d1a-9ad2-0cd3ba03dc49",
     "words": [
       "use",
       "when",

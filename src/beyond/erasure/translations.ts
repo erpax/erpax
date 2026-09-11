@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "erasure",
-    "uuid": "3bd06529-214b-8263-bddf-c32cceddf8ee",
+    "uuid": "85289fb7-3972-89f2-80da-99b4350caa11",
     "words": [
       "erasure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erasure — Deleting a posted row breaks the ledger it belongs to. Crypto-shredding keeps the record and destroys the ability to read it: encrypts, decrypts while the key lives, and drops the…",
-    "uuid": "12aefa74-6a7b-8e03-b456-d60a78fe732b",
+    "uuid": "e3b4cd4f-c05d-8b47-8833-c38f61098021",
     "words": [
       "use",
       "when",

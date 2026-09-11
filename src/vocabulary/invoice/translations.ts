@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "invoice",
-    "uuid": "d816fb86-8d82-880f-83c7-db2d82351da3",
+    "uuid": "5763a6ab-9c5c-8db0-a360-0f99ddb27607",
     "words": [
       "invoice"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about invoice — A statement of the money due for goods or services; a bill.",
-    "uuid": "73805bf9-e193-80c7-a866-1f1d12a132b5",
+    "uuid": "4ccb9be2-1ec4-83ea-be7c-b3995c60ff05",
     "words": [
       "use",
       "when",

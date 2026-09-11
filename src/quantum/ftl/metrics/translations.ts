@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "metrics",
-    "uuid": "00656f2e-fa30-8737-8a0a-bccfba9482d8",
+    "uuid": "89f55484-9bda-8f10-814f-df0ce2db3e67",
     "words": [
       "metrics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations",
-    "uuid": "22d5ed59-4a70-8fb3-930f-01c973bf3a9b",
+    "uuid": "e0302c72-ce08-8b66-aa61-23cae0b31a72",
     "words": [
       "use",
       "when",

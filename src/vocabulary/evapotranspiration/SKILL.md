@@ -2,18 +2,18 @@
 name: evapotranspiration
 description: "Use when quantifying crop water demand — evapotranspiration (ET) = soil evaporation + plant transpiration, the daily withdrawal from the soil-moisture reservoir that drives irrigation scheduling. The debit side of the water budget; reference ET × crop coefficient gives the crop's actual draw."
 atomPath: "vocabulary/evapotranspiration"
-coordinate: "vocabulary/evapotranspiration · 1/base · 5445c068"
-contentUuid: "9e059f42-3ea0-5f7a-b98e-977c1cd729ab"
-diamondUuid: "9dd5492d-40b4-8640-9e6b-120e39a722d0"
-uuid: "5445c068-c41b-8155-9f89-4843db9d11c8"
-horo: 1
+coordinate: "vocabulary/evapotranspiration · 8/crest · 7a614f07"
+contentUuid: "fa90b9e8-03d7-57a0-bbf8-14554836e5a4"
+diamondUuid: "b898557b-5d4a-894b-b21e-9ea3731610fa"
+uuid: "7a614f07-78ca-886d-84e9-bb8412deeed5"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f8522bdb-9041-8d93-a16a-392574b69bfc"
+  computationUuid: "c20a67c5-667d-8877-b4ac-7f60b73bc5bb"
   stages:
     - stage: path
       stageUuid: "a1d03fb7-0b18-8937-911f-aac9f4e6d011"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c6117d8c-420a-8a3b-a4e1-81db97dd4513"
     - stage: horo
-      stageUuid: "235c1f1e-12eb-87de-840c-54efc8e9dc04"
+      stageUuid: "c66c3af6-6fe0-87a0-972a-4396a861ca4c"
     - stage: seal
       stageUuid: "d5d6ddf4-9104-8dc7-ab97-378d1f606d33"
     - stage: uuid
-      stageUuid: "03b6ed37-f7ba-8ba6-ad9e-f9661b714699"
+      stageUuid: "7ce3e545-ce1b-8317-b63c-f3a9ce249df2"
 version: 2
 ---
 # evapotranspiration — the crop's water demand (the budget's debit)

@@ -2,11 +2,11 @@
 name: depart
 description: "Use when reasoning about depart as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/depart"
-coordinate: "vocabulary/depart · 5/round · 2fb9ab59"
-contentUuid: "663599ca-1a3f-5335-b1c1-012297dd1b36"
-diamondUuid: "f3490a0e-5a20-8f7c-8341-aaef4652eb2c"
-uuid: "2fb9ab59-beac-88c6-a664-8a81370cfd16"
-horo: 5
+coordinate: "vocabulary/depart · 4/weave · f36563b6"
+contentUuid: "37cb92d3-9223-57d0-9383-bb41c0e9feaf"
+diamondUuid: "8552e81f-0e92-8948-97f7-5844c743d5e0"
+uuid: "f36563b6-fbe2-80b7-aeae-350da215bf21"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b9018758-9ab0-88d4-a6df-87088c1c9f99"
+  computationUuid: "1828043f-532e-8e74-8b4d-fe305d620503"
   stages:
     - stage: path
       stageUuid: "c6956e0f-6a7f-8014-b4ee-d31b86a30692"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b8b65a44-b207-8e0a-8b0b-b5bbda865d52"
     - stage: horo
-      stageUuid: "2e2b2ce4-dbe5-8895-8f4c-bb08785352f8"
+      stageUuid: "8b4e102c-7efb-8847-92db-41ede5c13066"
     - stage: seal
       stageUuid: "3837404d-673e-8981-9c6d-decb6e1b24b5"
     - stage: uuid
-      stageUuid: "816a14a9-cc6d-86b3-b86e-1ad6ba1a1618"
+      stageUuid: "9561a919-61f3-8cad-bca3-449db408eb11"
 version: 2
 ---
 # depart

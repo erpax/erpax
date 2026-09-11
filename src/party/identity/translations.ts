@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "identity",
-    "uuid": "f8a06c66-970d-8929-9958-140fc1c4783d",
+    "uuid": "2ad03253-ece6-82c5-b648-bcf49e1271e4",
     "words": [
       "identity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deciding whether two party records are the same legal person — partyUuid folds (country + taxId) to one content-address, so a company recorded as both a customer and a vendor collides by construction. The role is never part of the address. Refuses a party with no tax registration rather than folding on a name.",
-    "uuid": "a7ea270c-ceb6-888c-8799-b8e015f7f206",
+    "uuid": "94b186ef-6696-8306-b98d-cde6e6f9ed7d",
     "words": [
       "use",
       "when",

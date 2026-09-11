@@ -2,10 +2,10 @@
 name: mandates
 description: "Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register."
 atomPath: "media/sepa/mandates"
-coordinate: "media/sepa/mandates · 1/base · 1ffe5888"
-contentUuid: "458cf3c8-75bc-5bfc-99b5-5b8c9eeec5db"
-diamondUuid: "6216e00c-9ed5-86b4-8f30-d1bee55abd39"
-uuid: "1ffe5888-6cb9-8396-90bf-d6d03b9788f4"
+coordinate: "media/sepa/mandates · 1/base · b98f246d"
+contentUuid: "180a4127-92c9-50a4-b2c7-9b636aea00ea"
+diamondUuid: "c31e2910-9a50-8059-9ba6-ec8b737ed630"
+uuid: "b98f246d-7676-8c41-ad4d-250c618bcbee"
 horo: 1
 typography:
   partition: media
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a3f5714f-42bb-855d-bb49-74254e8b3dd4"
+  computationUuid: "b13c81ac-be76-840a-b314-544eb75262d7"
   stages:
     - stage: path
       stageUuid: "2d8ed2c6-c904-862e-9179-375a89532ffa"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "df826c80-5d83-856d-b715-d789cbed1856"
     - stage: horo
-      stageUuid: "0d753037-4292-8959-95cb-0e771e08a0b4"
+      stageUuid: "42f035f5-4516-8b1f-ad11-14d7910cb665"
     - stage: seal
       stageUuid: "a7a20b80-2a12-8364-94c6-3c4ffa0a4dd1"
     - stage: uuid
-      stageUuid: "9ebb89f6-36f6-8cca-a437-38c0824ee154"
+      stageUuid: "d2952e01-453c-8e31-bd7b-0172732ad629"
 version: 2
 ---
 # sepa-mandates

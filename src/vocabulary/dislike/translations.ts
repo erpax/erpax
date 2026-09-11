@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dislike",
-    "uuid": "7e8950fe-85e5-880f-b6cf-459529208897",
+    "uuid": "f653002b-4246-8231-aacd-47fed680ad94",
     "words": [
       "dislike"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dislike — A schema.org component word, collided out of schema.org compounds — fused from DislikeAction (sti · collapse · merge).",
-    "uuid": "b84c4919-b2af-8818-a1d2-1f24157ed185",
+    "uuid": "ec3cc3fb-30bf-8736-a3bf-6ffc3cb8ef0e",
     "words": [
       "use",
       "when",

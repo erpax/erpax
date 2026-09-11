@@ -2,11 +2,11 @@
 name: provides
 description: "Use when reasoning about provides as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/provides"
-coordinate: "vocabulary/provides · 8/crest · fb22ec09"
-contentUuid: "662c0d50-701e-5f94-9bcd-9b8d0e18ed07"
-diamondUuid: "6db944ca-0225-8db2-9930-1a9225f15a87"
-uuid: "fb22ec09-a96b-8375-96c6-c892d0b9fe14"
-horo: 8
+coordinate: "vocabulary/provides · 4/weave · 60c49b3e"
+contentUuid: "b24c3586-3a56-52c3-ad07-516da98716c0"
+diamondUuid: "757e4b3d-0161-8bba-af29-47e02e083db6"
+uuid: "60c49b3e-b47e-8d84-b0f2-0abea3dea712"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2d1d596e-061e-84dd-a895-8436f9261caf"
+  computationUuid: "8a6bd220-bbd6-81e0-a9ff-3f74c1a7b662"
   stages:
     - stage: path
       stageUuid: "78da6160-5c43-8be4-9d0d-d0befddfe54c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b8edf002-b819-803b-9b46-09bc6e9a3146"
     - stage: horo
-      stageUuid: "d97dae1e-d72c-8a21-a078-9c5c860d353e"
+      stageUuid: "6d618d2e-8937-8195-96a4-7a8f5e499830"
     - stage: seal
       stageUuid: "1b7e316d-5bbd-895e-986b-b31630c17f22"
     - stage: uuid
-      stageUuid: "015ab476-e2ff-82b1-b80c-027ae1e456f9"
+      stageUuid: "d6bf4160-e8f6-8f81-8254-a87d4cb60aa6"
 version: 2
 ---
 # provides

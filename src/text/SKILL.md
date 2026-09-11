@@ -2,11 +2,11 @@
 name: text
 description: "Use when parsing or persisting prose — text decomposes into word ⊕ digit tokens, each a content-addressed diamond; parse walks text, save folds tokens into a typography-style root without one-folder-per-word sprawl."
 atomPath: text
-coordinate: "text · 1/base · c1118f84"
-contentUuid: "27213e83-628b-53ee-9a38-5bf743737ef9"
-diamondUuid: "2fed185a-7562-86c0-a1d4-d1f8f7d3283e"
-uuid: "c1118f84-b7c8-8257-ba56-d30e3e33318c"
-horo: 1
+coordinate: "text · 4/weave · 25eceb63"
+contentUuid: "fb485ceb-6a11-554b-a247-cf68e6887a4e"
+diamondUuid: "23b07f23-fc07-8fbe-b769-561ac4f5bbf4"
+uuid: "25eceb63-c500-89d6-a72e-ae97fb23b502"
+horo: 4
 typography:
   partition: text
   bondDegree: 69
@@ -15,7 +15,7 @@ standards:
   - "RFC-8785"
 bindings: []
 signatures:
-  computationUuid: "ada4b9ae-206d-80dd-8757-87acf3cfc7e3"
+  computationUuid: "d216a771-f369-8ec0-bd2e-9db9bf7bcb4e"
   stages:
     - stage: path
       stageUuid: "5929976f-0e1a-839c-b523-c18068d40fc2"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "205d247b-8eef-8d14-b20b-df06f8c7a983"
     - stage: horo
-      stageUuid: "bf43878f-824e-8973-bab2-b0edb8c3ef4c"
+      stageUuid: "798f42ca-14ea-8389-ac5c-b5a663dec22d"
     - stage: seal
       stageUuid: "8ce9b919-77fe-8068-9447-588efebdafbb"
     - stage: uuid
-      stageUuid: "1447e45c-8185-84c1-a033-41a885ba82cb"
+      stageUuid: "ab3ea34c-9620-88e3-bb98-da1041427f27"
 version: 2
 ---
 # text — words ⊕ digits

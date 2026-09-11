@@ -2,18 +2,18 @@
 name: asset
 description: Use when modelling one asset — the singular model of the assets collection (the plural store); a resource the organization owns or controls that carries economic value.
 atomPath: "vocabulary/asset"
-coordinate: "vocabulary/asset · 1/base · b55a81cb"
-contentUuid: "11bfba43-da9d-52d3-bc93-0bc31b7ff329"
-diamondUuid: "4a349040-d6e6-8f90-a5f2-5f1776fa254a"
-uuid: "b55a81cb-331c-8f3a-b62b-74b1d3fb6d9e"
-horo: 1
+coordinate: "vocabulary/asset · 5/round · e4c81d55"
+contentUuid: "e803c1bc-a9a0-55f2-bf4c-7973c820bdd3"
+diamondUuid: "50f3d892-8f0d-8816-b368-873105eab29c"
+uuid: "e4c81d55-3344-82ea-ae36-8e37a9248745"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "441bf553-c944-89be-aa59-2ed4040c06e0"
+  computationUuid: "afa36fb6-892f-873f-bcb3-793bb6f84fac"
   stages:
     - stage: path
       stageUuid: "7e0cea3d-4858-8b6f-aed9-444ebda5cf32"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ec990b0b-0972-8d9e-a2b0-0e95094052d8"
     - stage: horo
-      stageUuid: "ed6ab0b0-6045-8e39-939e-796ff5158681"
+      stageUuid: "65201f04-de87-8df4-b1bb-711a4b9673b2"
     - stage: seal
       stageUuid: "4d12d9a9-c5d8-847d-bf2f-b75401298173"
     - stage: uuid
-      stageUuid: "3177cd0c-1617-8bc7-bc8e-3334feaf89bd"
+      stageUuid: "7cd519aa-084c-85ab-92e8-87e891dbd1ce"
 version: 2
 ---
 # asset — the model of one [[assets]] row

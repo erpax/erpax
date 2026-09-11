@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cancel",
-    "uuid": "e9db2cce-8dbe-8979-bd23-cca66b861ebb",
+    "uuid": "a8bf2e80-db23-8d24-87d6-e5b6cbae323f",
     "words": [
       "cancel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cancel — A schema.org component word, collided out of schema.org compounds — fused from CancelAction (sti · collapse · merge).",
-    "uuid": "ddf6decd-52f3-8934-a363-2e831e70ab3e",
+    "uuid": "bf25d739-4fa2-880e-a168-ee17c8c401a2",
     "words": [
       "use",
       "when",

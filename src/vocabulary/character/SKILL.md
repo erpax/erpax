@@ -2,11 +2,11 @@
 name: character
 description: Use when reasoning about character — Fictional person connected with a creative work.
 atomPath: "vocabulary/character"
-coordinate: "vocabulary/character · 8/crest · 48350e70"
-contentUuid: "7764b50a-0921-55d0-b385-abb7c96c865a"
-diamondUuid: "7242daaf-869a-8348-a539-8098da8312f7"
-uuid: "48350e70-f913-82d6-a972-4ded41f742c7"
-horo: 8
+coordinate: "vocabulary/character · 5/round · e9eebaa4"
+contentUuid: "5b58ca42-1020-5ecd-9a1d-1e967274075f"
+diamondUuid: "4aab0a34-1b8c-81f9-9031-deda023d6771"
+uuid: "e9eebaa4-57f0-8d73-a741-16cc5c229ea9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 14
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "38da8433-6deb-8bce-9b1a-0b4bd282e0ce"
+  computationUuid: "7c33e76e-718e-8180-bef2-674df943212d"
   stages:
     - stage: path
       stageUuid: "165d962f-3c9d-890f-8716-83bc63b52a4b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "60922afb-eee3-8e29-a5b2-d9dabbe5d016"
     - stage: horo
-      stageUuid: "e25760ac-531c-8f57-b12e-60a5d4bbbcb2"
+      stageUuid: "f5c12686-566b-8723-a6d1-dbb54d6cc190"
     - stage: seal
       stageUuid: "683997df-3624-84c3-9abe-127c4473f5a5"
     - stage: uuid
-      stageUuid: "2b674376-ad0d-848b-823c-046f657cd371"
+      stageUuid: "8f7e7894-5ffb-80a4-8ab3-c7ed5f757bc0"
 version: 2
 ---
 # character

@@ -2,11 +2,11 @@
 name: median
 description: Use when reasoning about median — The median value.
 atomPath: "vocabulary/median"
-coordinate: "vocabulary/median · 8/crest · 1952fc1b"
-contentUuid: "53a9e0b8-5a76-50ef-9304-ab2f62653b29"
-diamondUuid: "a5a06088-ccf6-8968-b0af-08815542e8a2"
-uuid: "1952fc1b-de1f-89a2-acbe-2c257ab653f5"
-horo: 8
+coordinate: "vocabulary/median · 7/descent · ec2a631b"
+contentUuid: "4fe3f043-8726-5e7b-b6ac-eff37b3fcbcd"
+diamondUuid: "cdd412e0-302a-8a66-bf0a-81bcd050da4d"
+uuid: "ec2a631b-7205-8a8d-b0a8-3da97096e4ac"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c7a5c6f1-c8de-80af-bb60-c72874900d76"
+  computationUuid: "6203c0cb-e98e-8d58-a59f-6597774f2ed8"
   stages:
     - stage: path
       stageUuid: "c1e5b11e-a3b7-832b-a504-9f95da19a80e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "674a0400-a34d-8452-b564-97b178ca9fc2"
     - stage: horo
-      stageUuid: "2ced5a9f-9bb5-83f1-9c69-6f775f950789"
+      stageUuid: "e510cd59-092c-8ef3-8813-12d7d07c6b37"
     - stage: seal
       stageUuid: "406276c9-3494-8898-892e-a1f02cbfde7d"
     - stage: uuid
-      stageUuid: "58b944b1-6a1c-8aac-8d00-7ef29293f1f5"
+      stageUuid: "c23ec2da-2c64-88bf-96ee-47fc126e05b4"
 version: 2
 ---
 # median

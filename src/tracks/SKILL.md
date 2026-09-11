@@ -2,11 +2,11 @@
 name: tracks
 description: "Use when reasoning about tracks — A music recording (track)&#x2014;usually a single song."
 atomPath: tracks
-coordinate: "tracks · 2/share · 2deffc83"
-contentUuid: "e929fd2b-d7c3-5953-a2f7-ba47a179f826"
-diamondUuid: "3ce16480-e4b5-8345-91f8-a742ba9c4bb2"
-uuid: "2deffc83-63d4-8a73-a866-0c838fa4acd4"
-horo: 2
+coordinate: "tracks · 5/round · 667b792e"
+contentUuid: "837023d2-9137-5489-b036-5c7acd9188bb"
+diamondUuid: "b21f531b-af64-8deb-b930-3cc9aa157658"
+uuid: "667b792e-6a7e-8061-839f-790403050728"
+horo: 5
 typography:
   partition: tracks
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4919c6a3-24ea-87ad-bbab-b3b9c6c89da9"
+  computationUuid: "35759948-2d2c-8a4b-b3ed-39fd69f11d6e"
   stages:
     - stage: path
       stageUuid: "a75bdaad-95b1-8bef-b5f4-1449c684e135"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ffe3249b-f983-8d31-92c7-b8b059ddcc86"
     - stage: horo
-      stageUuid: "2dd932d8-3c48-824b-bb8a-c9e7f13a99c8"
+      stageUuid: "3938f2ff-726b-8410-93db-0a76d587f6e3"
     - stage: seal
       stageUuid: "44851658-054b-8b7e-a1ab-7dac7b25368e"
     - stage: uuid
-      stageUuid: "cf82ad1c-7d21-88b5-8393-42feea9fa8a2"
+      stageUuid: "fe1915fc-1282-83d6-8fc0-6d0d7a14776e"
 version: 2
 ---
 # tracks

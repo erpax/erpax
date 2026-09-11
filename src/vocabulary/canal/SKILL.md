@@ -2,10 +2,10 @@
 name: canal
 description: "Use when reasoning about canal — A canal, like the Panama Canal."
 atomPath: "vocabulary/canal"
-coordinate: "vocabulary/canal · 4/weave · 79426d08"
-contentUuid: "b17d0ba0-7c49-55cd-a023-2ea67cb825d7"
-diamondUuid: "ea1def3e-3bcd-8d90-80a8-8d25974a0366"
-uuid: "79426d08-dcdd-8a40-bd10-2a24b317e335"
+coordinate: "vocabulary/canal · 4/weave · 5419c970"
+contentUuid: "0a7f1a63-3da4-54d5-aef6-309133a97050"
+diamondUuid: "1438fa9c-f368-8f04-9d2d-4310b7356b92"
+uuid: "5419c970-274a-8aca-9337-286464f68e49"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4c612b70-cd9c-8142-8fa9-8df9a24fe4a1"
+  computationUuid: "51aa45f1-a3ce-820d-80f2-5c8b8f32b6f4"
   stages:
     - stage: path
       stageUuid: "07972cfa-bd58-8987-8b91-82d147ddb8cb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "48a33840-33b8-805e-a5f9-347e09b41b4a"
     - stage: horo
-      stageUuid: "5b41eef6-58f8-84a5-b57e-fda590e56182"
+      stageUuid: "23b3e41d-09bb-8bc5-9b6e-b85ff4182557"
     - stage: seal
       stageUuid: "e7c408fa-7793-8d56-a364-d20309f6e228"
     - stage: uuid
-      stageUuid: "70890369-a78a-8878-a74b-aa6069147fcb"
+      stageUuid: "0de5cfad-1b79-82c4-ba18-ffcc9814c6bf"
 version: 2
 ---
 # canal

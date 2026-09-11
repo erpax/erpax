@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "security",
-    "uuid": "f772bdef-c3bf-898d-a998-060ca5d96da4",
+    "uuid": "2b3a5315-15fb-8f84-b5b4-1f9b16164630",
     "words": [
       "security"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about security — Parse allowlist and security monitor for agent inputs (fail closed).",
-    "uuid": "093e9391-79c9-8364-8c35-0d1c343d78f3",
+    "uuid": "a9b066fa-d372-8a93-9100-9ec1b44d59c5",
     "words": [
       "use",
       "when",

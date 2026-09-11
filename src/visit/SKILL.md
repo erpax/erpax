@@ -2,18 +2,18 @@
 name: visit
 description: Use when modelling one visit — the singular model of the visits collection (the plural store); one recorded instance of an actor attending a place or service.
 atomPath: visit
-coordinate: "visit · 2/share · fa755e34"
-contentUuid: "6ef73ce1-e9fd-55bf-ae69-1b023dab74e8"
-diamondUuid: "21fd69d7-3c47-8b47-971e-03bd491a833b"
-uuid: "fa755e34-fcc7-86f7-a439-e1ee3d110b67"
-horo: 2
+coordinate: "visit · 7/descent · 44ed46f0"
+contentUuid: "52bd7c91-cd6c-5cae-a9bb-f375c1259833"
+diamondUuid: "8e41ea36-9996-8607-8a45-07e8d25669d9"
+uuid: "44ed46f0-130d-8093-979a-fd3ef2b09426"
+horo: 7
 typography:
   partition: visit
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4e37757a-c4e9-8471-8b6e-c391d1a00b5a"
+  computationUuid: "6b9560b7-1c64-8b32-8b04-64f84b009b72"
   stages:
     - stage: path
       stageUuid: "a4e2f38f-5249-8216-b662-e95d4f8941a2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0746de2c-49b6-853e-8976-d5f8d9b4a170"
     - stage: horo
-      stageUuid: "40c23974-b9b8-8cf7-bb71-5956477a8c2d"
+      stageUuid: "f0da0d5c-707b-84d8-a57d-27239f291a76"
     - stage: seal
       stageUuid: "5482a539-1485-8414-bdc6-3715c4285704"
     - stage: uuid
-      stageUuid: "59a6e24c-eaba-87f7-9f57-733fe9954440"
+      stageUuid: "7b4674a9-e35d-8a71-8515-7ac094fc5a6c"
 version: 2
 ---
 # visit — the model of one [[visits]] row

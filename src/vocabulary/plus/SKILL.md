@@ -2,11 +2,11 @@
 name: plus
 description: "Use when reasoning about plus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/plus"
-coordinate: "vocabulary/plus · 1/base · df2829d0"
-contentUuid: "7df3212a-a1c0-575c-9fb7-366383c58398"
-diamondUuid: "03015a51-d851-88d0-b6eb-b66e74444bcc"
-uuid: "df2829d0-7f2f-8dcd-ba21-26beccb74b4b"
-horo: 1
+coordinate: "vocabulary/plus · 8/crest · 86737f9a"
+contentUuid: "4489b80c-052e-57d5-9c3c-77a85173d6bc"
+diamondUuid: "3975af26-9db5-89c3-a287-00d4116e9d9d"
+uuid: "86737f9a-9a9d-8b42-91fe-bb9f0063ef2e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "40923719-d530-8892-a3c5-ce498845daa9"
+  computationUuid: "42eb6542-dfb7-823b-9cf5-08369a998382"
   stages:
     - stage: path
       stageUuid: "14b6f415-aee3-8242-81f9-d6b7b4174432"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8a0a4b61-6824-8d1e-aef9-dd109875140a"
     - stage: horo
-      stageUuid: "b52ef40c-3cad-8a9c-b1ff-9ee2cfefb8c6"
+      stageUuid: "a9d10a2c-3a56-84bb-96d3-7f0ac6915251"
     - stage: seal
       stageUuid: "b989dae0-9e28-87f0-b4ae-a5aae2ef52df"
     - stage: uuid
-      stageUuid: "783bcc43-9b31-8ad3-9923-925d97e20b06"
+      stageUuid: "9fb9bb19-4367-857d-b414-015f56c541a0"
 version: 2
 ---
 # plus

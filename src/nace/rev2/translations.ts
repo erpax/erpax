@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rev2",
-    "uuid": "ec7d1f47-7b85-8a97-85e5-73a9a9e4d21c",
+    "uuid": "49df3a51-cd85-8b79-aaca-30600e223abe",
     "words": [
       "rev2"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing NACE Rev. 2.",
-    "uuid": "8bae6782-59fc-8e84-ae6a-d56aadd6c312",
+    "uuid": "e1d103cc-0092-8d3c-a29b-e9af1418ab9a",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: tool
 description: "Use when assembling the MCP tool surface from per-area builders — each area file is self-contained (own I18N, zod schemas, handlers) and exports one buildXxxTools factory whose tools all carry the erpax.<area>.* name prefix."
 atomPath: "agents/mcp/tool"
-coordinate: "agents/mcp/tool · 7/descent · 3e9d66c9"
-contentUuid: "23966634-8332-5da3-9d85-ccdf511793a7"
-diamondUuid: "4cf60ccc-298b-8810-8d30-b909b578dad7"
-uuid: "3e9d66c9-397b-88ea-8752-f10f711f701b"
-horo: 7
+coordinate: "agents/mcp/tool · 1/base · 355216f5"
+contentUuid: "e07bc04c-7897-5866-a2ff-12faa33dfb19"
+diamondUuid: "919f49eb-9202-82fa-9196-6e8556272c39"
+uuid: "355216f5-ef71-8bf7-b236-9a725cb549fc"
+horo: 1
 typography:
   partition: agents
   bondDegree: 15
@@ -27,7 +27,7 @@ standards:
   - "W3C-WAI-ARIA-1.2"
 bindings: []
 signatures:
-  computationUuid: "0185ef63-7c23-8cfd-b103-aef86c85aa58"
+  computationUuid: "036b1326-517e-86b4-8e75-769b832c5719"
   stages:
     - stage: path
       stageUuid: "b866a4db-1f18-8e65-956d-42e06a042283"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "2f008068-8152-8d7b-abf8-95d91bf8e480"
     - stage: horo
-      stageUuid: "e922376d-38a5-8f2f-80f5-701b3871df2b"
+      stageUuid: "8f437ea8-b9f4-8db6-9c3e-8d30433c414a"
     - stage: seal
       stageUuid: "6651468a-d227-8dbc-9aa5-d39e7d68f9ad"
     - stage: uuid
-      stageUuid: "e8cecee9-06fa-8412-8512-9901e055328c"
+      stageUuid: "80655b4e-1089-8ff3-8005-e040faa78830"
 version: 2
 ---
 # agents/mcp/tool — the per-area MCP tool barrel

@@ -2,11 +2,11 @@
 name: allocations
 description: "Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection."
 atomPath: "invoices/payments/payment/allocations"
-coordinate: "invoices/payments/payment/allocations · 1/base · 6505af02"
-contentUuid: "2f96d87e-7c4a-50b3-906e-242fe5ebe45e"
-diamondUuid: "3081ed4a-649f-8bf4-8f21-1e032c306892"
-uuid: "6505af02-42d3-8329-a2b9-7befeb760525"
-horo: 1
+coordinate: "invoices/payments/payment/allocations · 7/descent · 9b4c9e68"
+contentUuid: "5bcc799f-40d5-57b1-8662-1e59ee4bbbd8"
+diamondUuid: "26aa4787-485e-8db8-8f62-c889e0f19059"
+uuid: "9b4c9e68-bb4f-85e1-a2de-66261f3dbcf3"
+horo: 7
 typography:
   partition: invoices
   bondDegree: 24
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "02d10285-244c-8a42-904f-57353a9a2db5"
+  computationUuid: "e951e5a0-ae99-84bc-8c66-f8531e7f3070"
   stages:
     - stage: path
       stageUuid: "afa4fdff-f704-8618-ba97-f8c67d700810"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "dfcd4f10-6150-867a-ae23-412b463648e1"
     - stage: horo
-      stageUuid: "920ede94-8c66-89cf-b746-02200599030d"
+      stageUuid: "abeb6938-1f70-86fa-aefa-78f757ce8caa"
     - stage: seal
       stageUuid: "1fc506f9-24ec-80f4-908e-d39550882e02"
     - stage: uuid
-      stageUuid: "9e237d08-86ab-82b0-be4b-0ea26b5a6f85"
+      stageUuid: "57879507-0163-8683-b46c-11f75a29f404"
 version: 2
 ---
 # payment-allocations

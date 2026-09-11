@@ -2,18 +2,18 @@
 name: session
 description: "Use when reasoning about session/chat memory — it must NOT live in ephemeral context. Session memory IS the diamond lattice: save(thought) ⇐ isDiamond; parallel sessions (Cursor, society breath, chat, MCP) converge on ONE lattice via content-uuid merge — same thought ⇒ same diamond ⇒ no collision."
 atomPath: "memory/session"
-coordinate: "memory/session · 7/descent · b6052202"
-contentUuid: "399d95f3-fb52-57e8-b423-ba8f34993e37"
-diamondUuid: "889a9d11-c670-8bea-a66e-d2aa1310d61c"
-uuid: "b6052202-ea91-8c48-967f-39c200f94893"
-horo: 7
+coordinate: "memory/session · 5/round · 7856444e"
+contentUuid: "504bfb8d-233c-537a-86f2-5ab0a5ca255a"
+diamondUuid: "876aff22-4ede-81f8-adbc-605a40177bd8"
+uuid: "7856444e-5cdd-8310-a01f-da559e1d14b2"
+horo: 5
 typography:
   partition: memory
   bondDegree: 54
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c80cee98-48be-8f80-bc44-c2ce1f8bc09c"
+  computationUuid: "b0a50f9e-b9f1-8c72-873e-1fc666d9c8f1"
   stages:
     - stage: path
       stageUuid: "15c8d8d5-2f12-8a42-af92-6a4b5e0d7d6e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "74070105-dade-8403-b4eb-9534f3176fae"
     - stage: horo
-      stageUuid: "d171ff1c-7696-86c4-80de-48eb91845c71"
+      stageUuid: "c1eb9dba-b516-88d3-88b4-2708fd032619"
     - stage: seal
       stageUuid: "2b2059d8-4538-82d0-a489-55264255ccb3"
     - stage: uuid
-      stageUuid: "cd829412-8e03-8876-a7c2-b26f857cbfb7"
+      stageUuid: "ae703c5d-6a9b-8118-a04c-b033cf2f3d51"
 version: 2
 ---
 # memory/session — session memory is the diamond lattice

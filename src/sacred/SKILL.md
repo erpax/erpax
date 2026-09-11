@@ -2,10 +2,10 @@
 name: sacred
 description: "Use when auditing anything before acting on it — the verified-true: content-uuid recomputes, the books balance, the lineage traces to a real source. The set-apart canonical form that passes verification AND validation; dual of profane; run at every scale before every act."
 atomPath: sacred
-coordinate: "sacred · 4/weave · 4de05b7c"
-contentUuid: "029c5df6-89a0-56f5-bd3d-4f8533d1bf3c"
-diamondUuid: "ecc6f731-fd6d-8d08-af42-18d6c0af8914"
-uuid: "4de05b7c-740a-8872-b993-9d67a210011f"
+coordinate: "sacred · 4/weave · 0f3a56e3"
+contentUuid: "13339f04-4596-56ff-b339-3e296b54986c"
+diamondUuid: "316723f6-7118-8699-b9ec-608da32315a9"
+uuid: "0f3a56e3-d616-8221-b752-8c7b2c37bad2"
 horo: 4
 typography:
   partition: sacred
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "87f23e07-fe65-8df4-957c-c6627d748057"
+  computationUuid: "40eeb0c3-f8d8-8608-a117-32631a35691c"
   stages:
     - stage: path
       stageUuid: "67a81ceb-d25d-8628-b125-add75027819e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5307833b-b63c-8741-9449-8755c60332e7"
     - stage: horo
-      stageUuid: "71a8a2c0-ec8d-8194-bee1-f6ff6b84af72"
+      stageUuid: "25ae2a2a-ef79-8eaa-aa08-5f7a20308b23"
     - stage: seal
       stageUuid: "e3c80830-da10-85c8-aef3-ddf9a4798e84"
     - stage: uuid
-      stageUuid: "d8117162-f7c6-8b8d-bb84-f50092c0561d"
+      stageUuid: "e1120e3d-40d9-80cc-9af0-9356dac0dcac"
 version: 2
 ---
 # sacred — the verified-true (audit before act)

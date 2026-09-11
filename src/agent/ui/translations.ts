@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ui",
-    "uuid": "c389e7d4-7469-882e-af6e-8eacb6035d2a",
+    "uuid": "82cba339-2a15-8b6c-a959-da4461c68b28",
     "words": [
       "ui"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the trained UI agent — it renders any atom to its UI (the sensory render + the page) from the atom's content-uuid, trained by the rendering teams on the whole rendering layer, covering the whole corpus because every atom has a UI.",
-    "uuid": "ec17f629-5e97-84bd-811f-756fc9513a94",
+    "uuid": "7c094888-7b4b-8f0c-a02c-76766211165e",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: similarity
 description: "Use when reasoning about similarity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: similarity
-coordinate: "similarity · 4/weave · 905373aa"
-contentUuid: "8c382ffd-1c0b-56fa-972b-88192cdf0385"
-diamondUuid: "209a47fb-b5f8-87e7-8f2a-bcf5a5ca5dde"
-uuid: "905373aa-b9b8-8978-9ff5-f3153b4f0d5b"
-horo: 4
+coordinate: "similarity · 7/descent · 986257c7"
+contentUuid: "96f0ea7d-007e-5631-bfea-9bff2be018a2"
+diamondUuid: "f5e829d5-cac9-8857-9e8d-b78a9c9fafc0"
+uuid: "986257c7-30bf-8c00-9f8e-364b1444a70c"
+horo: 7
 typography:
   partition: similarity
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "53b24282-68a1-8922-a80d-d6f53a217304"
+  computationUuid: "f9009012-2511-8459-bca8-616b853eba54"
   stages:
     - stage: path
       stageUuid: "8d9fc094-e88a-85fb-a2e5-aa240447ff4a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d69e56a3-7e56-8178-a293-393f521544d5"
     - stage: horo
-      stageUuid: "15713cfd-c193-8185-aa20-418dc6827fff"
+      stageUuid: "b2df4313-6e30-80ae-9a8b-f6f0998daf11"
     - stage: seal
       stageUuid: "33a9b1a0-81af-84d3-b939-0f5024afc356"
     - stage: uuid
-      stageUuid: "d1c87f59-0624-8211-ba6b-c2aea96a2370"
+      stageUuid: "41d34474-393d-8ab3-b600-0dcbe0feb9e4"
 version: 2
 ---
 # similarity

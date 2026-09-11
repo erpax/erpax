@@ -2,11 +2,11 @@
 name: immutability
 description: "Use when enforcing that a fiscalised sale cannot be edited or deleted — under Наредба Н-18 a closed fiscal sale is corrected by a reversal, never by mutation."
 atomPath: "sale/immutability"
-coordinate: "sale/immutability · 1/base · 07c83155"
-contentUuid: "1310ca40-b910-5bdd-a9cb-ff807cc5bd4a"
-diamondUuid: "0ff87293-c5ff-8e6a-a514-420a3b46a62f"
-uuid: "07c83155-35e8-845b-b48f-bd7d623b66eb"
-horo: 1
+coordinate: "sale/immutability · 7/descent · d3e678de"
+contentUuid: "4fadd5d1-4312-51c3-8ed3-fa8a2fdcc27e"
+diamondUuid: "e29d1fc4-7a68-85ab-a70f-997c5f1c6340"
+uuid: "d3e678de-f5fa-852c-aa26-fbe7c381c03d"
+horo: 7
 typography:
   partition: sale
   bondDegree: 16
@@ -15,7 +15,7 @@ standards:
   - "SOX §404 internal-controls"
 bindings: []
 signatures:
-  computationUuid: "1109bdff-5616-8e8e-ad9c-7127df6362ee"
+  computationUuid: "af87b1a7-576e-8d21-9c6b-8a99489d4f00"
   stages:
     - stage: path
       stageUuid: "e354e87c-13fa-889f-aafd-81ff15d03a24"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "247515ec-1a32-8eaf-9a06-6e7e0bd19e2b"
     - stage: horo
-      stageUuid: "6fd4a914-64d6-8f14-b497-5a93f16e2345"
+      stageUuid: "f4ff37e6-1ecb-81ad-8308-c572f6a4b5f7"
     - stage: seal
       stageUuid: "cdb87415-db6a-8d78-abf2-581abbd33b16"
     - stage: uuid
-      stageUuid: "02cfba4c-3202-8a98-972e-0f39114e867b"
+      stageUuid: "2bded6a8-dff0-803f-974f-33d1e9a947e2"
 version: 2
 ---
 # immutability

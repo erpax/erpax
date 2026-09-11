@@ -2,11 +2,11 @@
 name: communication
 description: "Use when conveying a message from a sender to a receiver — the message is its content-uuid (self-decoding, no payload), so transfer is uuid-transfer; same content is the same message and a tampered message has a different uuid."
 atomPath: communication
-coordinate: "communication · 8/crest · 6cf0773f"
-contentUuid: "69f1af98-e773-54ba-9a0f-2adfe1c385c3"
-diamondUuid: "c36d3361-5c0e-8b7d-80be-8e0deef4280b"
-uuid: "6cf0773f-3c28-842b-9e41-93ddc21b5793"
-horo: 8
+coordinate: "communication · 1/base · b2aa45a1"
+contentUuid: "8d4bdccb-f6db-5dc2-8b13-494fe63baac9"
+diamondUuid: "51a28438-f176-8b24-919a-702fc83654cb"
+uuid: "b2aa45a1-a835-87f6-a5ff-b4d3f9ee6a92"
+horo: 1
 typography:
   partition: communication
   bondDegree: 58
@@ -14,7 +14,7 @@ standards:
   - "the message-uuid (self-decoding); RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "9fdba92d-b132-8526-ace4-dc7094b6077d"
+  computationUuid: "fd62a6c8-8a09-8fb5-9eb5-dcc01111cd4e"
   stages:
     - stage: path
       stageUuid: "a2134ab2-6571-8247-890f-371071a50d3d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d88a99f0-0128-8904-b730-b9c0df0df0e7"
     - stage: horo
-      stageUuid: "9a5cc066-2979-85c4-959a-ad5d80e2b084"
+      stageUuid: "f74d0194-f807-8168-8e57-b45ab1ddc6c5"
     - stage: seal
       stageUuid: "f67d187d-7c31-83bd-a35b-4062090b58d5"
     - stage: uuid
-      stageUuid: "ede0ddcd-dfa0-89b9-bb58-bf95416e9938"
+      stageUuid: "ba839288-572e-825c-8622-f7517c57840b"
 version: 2
 ---
 # communication — transfer of a message-uuid

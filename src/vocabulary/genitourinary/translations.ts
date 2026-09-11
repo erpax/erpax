@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "genitourinary",
-    "uuid": "fce94b53-cf23-887f-9948-ba03de75175e",
+    "uuid": "3e56fd12-cbdc-8fb6-aad1-5582b51996e0",
     "words": [
       "genitourinary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about genitourinary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "c6a02fce-7f82-8663-acff-e88f316fa7b7",
+    "uuid": "e9fc25dd-71e2-8467-9ac7-304d23a91e7a",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: first
 description: "Use when reasoning about first as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/first"
-coordinate: "vocabulary/first · 4/weave · 1e6cb612"
-contentUuid: "6470de96-5d3e-5b94-be5c-41ce62a19def"
-diamondUuid: "1cdb7425-45aa-8a25-b3ea-80e62d473f97"
-uuid: "1e6cb612-4731-816d-a85a-38ad0fc56cfb"
-horo: 4
+coordinate: "vocabulary/first · 7/descent · b433603b"
+contentUuid: "ff988144-ad2a-5df1-8d48-29f1282b35f6"
+diamondUuid: "0a7d8e83-cf69-8bf4-9fa4-6096da80c7c0"
+uuid: "b433603b-1ae6-825e-8b68-49a66614eec6"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5d49f19a-44c2-8486-ad8a-52eefe26dd20"
+  computationUuid: "319fb565-e3da-8055-9d56-93500fcdb16d"
   stages:
     - stage: path
       stageUuid: "ae8408d7-dd6d-8a6c-b447-7ead58e712ef"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d7c6fef4-8f01-8292-9d8c-ff23b38a00a9"
     - stage: horo
-      stageUuid: "d17b49e0-b509-82f2-acfe-3058681d72b1"
+      stageUuid: "c62c0821-2e92-8b31-b442-a646f240702f"
     - stage: seal
       stageUuid: "7eea1b4d-c8fb-8c87-bb93-9ad281b6329f"
     - stage: uuid
-      stageUuid: "0b120493-acd2-820a-900c-f382e822033f"
+      stageUuid: "6293f950-e1ad-8877-a652-bba80e724022"
 version: 2
 ---
 # first

@@ -2,10 +2,10 @@
 name: quota
 description: "Use when setting or tracking rep/team/territory sales targets — period quota, attainment %, variance to goal; often linked to compensation."
 atomPath: "vocabulary/quota"
-coordinate: "vocabulary/quota · 8/crest · 767dcfda"
-contentUuid: "dadce89e-31b9-517a-96d4-650693f52fc9"
-diamondUuid: "4869ed20-2ea0-8cdd-b34a-3c8f1db631b0"
-uuid: "767dcfda-d6cd-8840-8665-986bf713ecc0"
+coordinate: "vocabulary/quota · 8/crest · 0a832d72"
+contentUuid: "45ab8fd7-938f-5538-a12a-6e99b6b4f091"
+diamondUuid: "d4b54f45-6de5-8443-821d-9db3a735e1f8"
+uuid: "0a832d72-89f2-8b4a-bea9-adfe0bc8d6c6"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "58b38104-cdd7-81c1-b243-f3ce3bc403d8"
+  computationUuid: "55ca3e61-25a3-81e9-b0ab-b45ef995b9ee"
   stages:
     - stage: path
       stageUuid: "6c194ebf-5ac8-8917-9753-dc14ca1902e4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2315f0ce-a3ef-8ebc-ac97-205c8b078db2"
     - stage: horo
-      stageUuid: "66edcb40-9deb-8801-b7b3-45ba4d067fdd"
+      stageUuid: "4e1fd6ef-62d5-8a61-97aa-dc27c22cd55c"
     - stage: seal
       stageUuid: "45a9e530-0416-8a34-bcfd-453b266db07b"
     - stage: uuid
-      stageUuid: "1c4573e0-5d8b-82e2-be2a-4392746e5bf6"
+      stageUuid: "8d158990-399c-818a-8d96-21d6abc950ee"
 version: 2
 ---
 # quota

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "barrier",
-    "uuid": "5f92476f-7bea-87a0-8950-0cfc60ed8379",
+    "uuid": "8d1c65dc-a12c-847d-807e-ddafe4dac561",
     "words": [
       "barrier"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quantum tunnelling — a particle penetrating a potential barrier it classically cannot surmount (E < V0), the wave decaying exponentially inside so transmission T ≈ e^(−2κa) leaks out. (The word tunnel is taken — it is agriculture's season-extension structure; this is the physics.) In erpax the barrier IS tamper-cost: the work to tunnel through (forge) is −log2(T) = 2κa/ln2 bits, exponentially large in the barrier, yet never quite infinite — the residual forge-probability is the design limit.",
-    "uuid": "47c11c65-cb17-82c4-ace2-bdc0b057efa7",
+    "uuid": "c2588d44-a730-8aaf-b1f9-bb7b6399a124",
     "words": [
       "use",
       "when",

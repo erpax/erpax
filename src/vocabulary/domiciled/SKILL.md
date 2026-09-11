@@ -2,11 +2,11 @@
 name: domiciled
 description: "Use when reasoning about domiciled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/domiciled"
-coordinate: "vocabulary/domiciled · 7/descent · 65936dd2"
-contentUuid: "69638c56-3ebd-5c10-bb8e-11d8d1d3bd4e"
-diamondUuid: "658aed6a-a6fe-8882-a75e-48408bfc7c91"
-uuid: "65936dd2-577a-85f0-9d38-923065dce621"
-horo: 7
+coordinate: "vocabulary/domiciled · 2/share · e9c92cc1"
+contentUuid: "a854d776-26b9-5d68-8104-e128a26edee6"
+diamondUuid: "b0dbbed3-f861-853a-9691-441c1b27cf55"
+uuid: "e9c92cc1-c146-852a-9ce2-084230da12fc"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aa4c56b0-1065-8f26-8083-dbb6beb44b31"
+  computationUuid: "a2cad50e-7638-8cca-a06d-78ccc1bd2ead"
   stages:
     - stage: path
       stageUuid: "2a86a0ee-5162-8b54-b493-52263b6e3f8d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bd7e8472-4fd0-80b3-804a-662827e944e8"
     - stage: horo
-      stageUuid: "c3b8b11b-db9d-8e4e-8353-ead5e8f68ac5"
+      stageUuid: "b43c1488-670a-834e-8ee9-9c35aea62941"
     - stage: seal
       stageUuid: "5f7ab114-3654-8115-a4fe-ac0ac5b055ff"
     - stage: uuid
-      stageUuid: "61a27874-1abc-8a48-9eb4-ee9a2c091639"
+      stageUuid: "bef1ed6d-d021-8017-8934-4633b0a0a8e2"
 version: 2
 ---
 # domiciled

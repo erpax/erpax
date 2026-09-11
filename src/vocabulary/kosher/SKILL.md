@@ -2,10 +2,10 @@
 name: kosher
 description: "Use when reasoning about kosher as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/kosher"
-coordinate: "vocabulary/kosher · 8/crest · e2c3cd8e"
-contentUuid: "a59b1154-8f58-5b0c-9ab9-91a4c33e2e3d"
-diamondUuid: "d55a49f3-28de-8535-94fc-b5342dda0931"
-uuid: "e2c3cd8e-b72e-86f8-b1bd-f58c59788dd3"
+coordinate: "vocabulary/kosher · 8/crest · 3ed7c407"
+contentUuid: "184ac78b-6741-57f5-9faf-3d63ddad5c96"
+diamondUuid: "9efd2d44-9f2d-858f-b310-50a89ddf5bf5"
+uuid: "3ed7c407-9574-8592-8268-fa400c055ff5"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a4456350-8245-8f7f-a49e-6b78d9c139a8"
+  computationUuid: "7c03b6e5-9c27-8ccf-99bf-920e0e210910"
   stages:
     - stage: path
       stageUuid: "e454efb3-1c4c-8611-93aa-5155586bf968"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b913bc7e-a439-810a-a1e1-ad59a1b22749"
     - stage: horo
-      stageUuid: "c3d9bcec-6b6f-846f-9c82-55717df5a0e7"
+      stageUuid: "76ee266c-3710-86bc-b97d-ad03cfb930ac"
     - stage: seal
       stageUuid: "160f8527-a566-8567-8cf6-047ffa531878"
     - stage: uuid
-      stageUuid: "c4ecd6ca-6dfc-8155-a1f5-d5dc1309fbc1"
+      stageUuid: "1f4da944-892c-8972-9527-c9b7fcc7d2d6"
 version: 2
 ---
 # kosher

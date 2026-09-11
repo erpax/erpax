@@ -2,10 +2,10 @@
 name: "16"
 description: "Use when implementing or referencing IFRS 16 / ASC 842 — Leases."
 atomPath: "ifrs/16"
-coordinate: "ifrs/16 · 4/weave · ebe15714"
-contentUuid: "b1aef180-0cc6-51f1-8e25-a5ca5809700e"
-diamondUuid: "1435196e-9ff6-82cc-a44b-974b604f4da9"
-uuid: "ebe15714-fc7f-8ef2-9184-9a08de66366f"
+coordinate: "ifrs/16 · 4/weave · e422a847"
+contentUuid: "edcfff98-5c79-507b-be67-a971125f33dc"
+diamondUuid: "1c77db9c-c88e-8073-9e0d-7b331daa04dd"
+uuid: "e422a847-df3c-85c3-96d1-c4e583bfa165"
 horo: 4
 typography:
   partition: ifrs
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f628df8a-6c0b-85fd-ab37-943297bfbbd1"
+  computationUuid: "9e2848c6-0da1-8d3b-9c85-e9c73b7976fd"
   stages:
     - stage: path
       stageUuid: "ee6b2a65-3f6f-8d24-96d4-001ede700d7e"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "c0e35031-1255-86b6-8042-a2cb3f379f98"
     - stage: horo
-      stageUuid: "c360631a-832f-8c8e-b256-6a9438816350"
+      stageUuid: "8c812b46-842b-8b3c-98b7-fb90f67c717a"
     - stage: seal
       stageUuid: "25a8b629-5593-8310-8a41-90429c4a99e3"
     - stage: uuid
-      stageUuid: "95abc091-0f75-8439-a177-517796cde58d"
+      stageUuid: "832937bc-6011-8f96-9998-e737e9780498"
 version: 2
 ---
 # IFRS 16 / ASC 842 — Leases

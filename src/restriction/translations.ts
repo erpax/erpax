@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "restriction",
-    "uuid": "34ef3810-f798-8e3a-9461-29ad8c3a6272",
+    "uuid": "aa857c8e-cd79-8212-916a-796321b608dd",
     "words": [
       "restriction"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract imposes use restrictions — field of use, geographic restriction, customer type restriction, sublicense prohibition, derivative-work restrictions.",
-    "uuid": "29e4b7d8-4bd2-8d70-9ff9-b408d23331ae",
+    "uuid": "b67d04f4-ab5f-815c-bbad-7729cfa305e1",
     "words": [
       "use",
       "when",

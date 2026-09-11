@@ -2,10 +2,10 @@
 name: utility
 description: "Use when dividing by anything that could be zero — pick the policy by what the zero MEANS (throw for money, collapse to 0 for an undefined ratio, coerce to 1 for an unset divisor) so ∞ or NaN never enters an account."
 atomPath: utility
-coordinate: "utility · 5/round · cb455aae"
-contentUuid: "7dd3e394-1f06-54af-8e3e-c84f6a1d9dee"
-diamondUuid: "8b444d4d-7cc3-8634-8553-1af273467f92"
-uuid: "cb455aae-f30a-8344-8b81-18dd387c9aae"
+coordinate: "utility · 5/round · 139700dd"
+contentUuid: "afbb41a8-0830-56e4-8e11-d22e4398e791"
+diamondUuid: "8096ef68-c528-842d-b328-08208521f8dc"
+uuid: "139700dd-e7d1-842b-9de5-62135def813f"
 horo: 5
 typography:
   partition: utility
@@ -14,7 +14,7 @@ standards:
   - "IEEE-754"
 bindings: []
 signatures:
-  computationUuid: "764970b3-96db-863e-a8dc-c0afe315c9ed"
+  computationUuid: "a919bc50-2612-8e76-86ff-fa9ba990d27d"
   stages:
     - stage: path
       stageUuid: "3bd7aaa3-8111-88cb-a65d-18ce8b4fe6ba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2fc1f84a-a345-8352-9056-1745bc6f7680"
     - stage: horo
-      stageUuid: "24759f42-a3e4-837b-9490-422607d253f4"
+      stageUuid: "6017822f-203d-832d-869f-8763352655a2"
     - stage: seal
       stageUuid: "1ba2fdce-af5f-8292-b3ea-afe1aa151de9"
     - stage: uuid
-      stageUuid: "8089d5c4-f738-8dc1-ab1f-55ead56da76d"
+      stageUuid: "c9dfc2c1-a4e8-8a37-a6d3-03bc8726a755"
 version: 2
 ---
 # utility — the operational guard organ (no naked zero)

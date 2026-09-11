@@ -2,11 +2,11 @@
 name: producer
 description: "Use when reasoning about producer — The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.)."
 atomPath: "vocabulary/producer"
-coordinate: "vocabulary/producer · 1/base · 6822ff63"
-contentUuid: "1d3e657b-2228-50a0-b0e7-04475c380788"
-diamondUuid: "44f844ff-9ba4-8642-a152-6bfe45927442"
-uuid: "6822ff63-f2b2-8d92-b6ef-8c86a07a0b2d"
-horo: 1
+coordinate: "vocabulary/producer · 5/round · e14de82e"
+contentUuid: "ee87218c-8ff0-5ffd-a80f-ef4525a8c9ba"
+diamondUuid: "82949a5a-9287-8936-8817-637aeeb3dbc6"
+uuid: "e14de82e-96fa-8005-94e0-5e78ad734987"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "909a75c9-4f13-80d8-8167-d0fa953bf2c3"
+  computationUuid: "73cf27af-4f65-8927-b1a5-95cf590566cb"
   stages:
     - stage: path
       stageUuid: "c4851fd4-9f6f-8a4c-a570-ba4e8c084f75"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d4cbead3-19c3-8839-9e4f-c77ccb0fe6ce"
     - stage: horo
-      stageUuid: "a7ecb9e8-677f-8feb-b68b-6f84f2316d16"
+      stageUuid: "cbbd0b7d-88bd-8e7c-b966-6dcbb06e8a73"
     - stage: seal
       stageUuid: "ad0d354c-e5e5-8ab2-9387-641e898d3757"
     - stage: uuid
-      stageUuid: "cb34ce24-6adb-86a9-afe3-8e8ced731edb"
+      stageUuid: "2a38e438-5742-8c04-b5ba-cb4105e539d0"
 version: 2
 ---
 # producer

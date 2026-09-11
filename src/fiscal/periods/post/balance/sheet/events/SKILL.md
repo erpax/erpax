@@ -2,11 +2,11 @@
 name: events
 description: "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register."
 atomPath: "fiscal/periods/post/balance/sheet/events"
-coordinate: "fiscal/periods/post/balance/sheet/events · 8/crest · f004cca2"
-contentUuid: "a4f8f303-1ab2-5651-a822-b69030796015"
-diamondUuid: "6f5f50f0-0ce6-820c-b18d-dd9772f9b240"
-uuid: "f004cca2-54f7-861b-933d-b821bd3d514d"
-horo: 8
+coordinate: "fiscal/periods/post/balance/sheet/events · 1/base · 0a6963e7"
+contentUuid: "6b34fa11-2233-5c85-b4c3-2e60ca9d90c3"
+diamondUuid: "07e31bde-6694-859b-b4d3-eb56ae1a623a"
+uuid: "0a6963e7-b5a2-8eda-906d-ede3917a766c"
+horo: 1
 typography:
   partition: fiscal
   bondDegree: 54
@@ -30,7 +30,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "eab4cee8-18cf-80e4-8296-43394e47cda1"
+  computationUuid: "ce77cf43-edb9-8041-acaa-f2fefbde50de"
   stages:
     - stage: path
       stageUuid: "964d4449-27a0-8d89-b610-89182a6308d7"
@@ -41,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "65a749e6-e55d-83a8-a836-ade198ea369c"
     - stage: horo
-      stageUuid: "b09ff3cb-5c8c-8bb8-9342-011abf9e0c61"
+      stageUuid: "df37cf69-b473-8783-9856-769c930b7a94"
     - stage: seal
       stageUuid: "681d3668-84ad-8b00-9cdf-9cb2ebd7e95e"
     - stage: uuid
-      stageUuid: "0543d398-d950-8a86-8fc0-c5f3b0ffbbce"
+      stageUuid: "e7379a18-d072-86de-83e7-55292d474915"
 version: 2
 ---
 # post-balance-sheet-events

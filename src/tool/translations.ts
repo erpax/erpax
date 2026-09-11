@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tool",
-    "uuid": "89574cdd-05a1-89b7-aa85-359b8406a59d",
+    "uuid": "7a72b285-e116-8dd1-af03-0f292259ecc5",
     "words": [
       "tool"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about tool — A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.",
-    "uuid": "355532ee-1272-84b0-b469-14592deb5165",
+    "uuid": "63b44063-3562-81f4-90ff-7fd771431786",
     "words": [
       "use",
       "when",

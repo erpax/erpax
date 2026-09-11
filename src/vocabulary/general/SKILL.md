@@ -2,11 +2,11 @@
 name: general
 description: "Use when reasoning about general as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/general"
-coordinate: "vocabulary/general · 4/weave · 7fc22906"
-contentUuid: "7695a8f9-8b01-5715-a753-a638279f280d"
-diamondUuid: "ff104ed9-179f-894e-b69f-07906c586c12"
-uuid: "7fc22906-2de5-89ae-b684-c919aa8d763c"
-horo: 4
+coordinate: "vocabulary/general · 1/base · 2e0a6213"
+contentUuid: "dc1bb229-e03d-5aa6-be6e-fef6a41d4eee"
+diamondUuid: "69dcc97b-dc0a-8be1-bbae-b45c606989a1"
+uuid: "2e0a6213-810b-8e3e-86b5-559d91682cc7"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4326b92a-6b61-87d9-8bed-8108b965305e"
+  computationUuid: "1c40f00b-13a9-8046-8416-d8a63b377fda"
   stages:
     - stage: path
       stageUuid: "2221aa4a-a9cc-8774-9cb2-f659bf49aa4f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a8f83358-2b6b-8674-8a01-71d3b8a45393"
     - stage: horo
-      stageUuid: "c1432076-b538-8b29-8be7-e5971bf6a8fd"
+      stageUuid: "5eeca1b0-ef98-8941-ac94-727306d0c21c"
     - stage: seal
       stageUuid: "0b8e8459-af89-86c2-86eb-a91502f12087"
     - stage: uuid
-      stageUuid: "c08d207b-51e2-8af6-9573-4773034cff5b"
+      stageUuid: "bfaeb2bc-5e76-868e-9b89-bff9204afb03"
 version: 2
 ---
 # general

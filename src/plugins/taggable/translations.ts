@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "taggable",
-    "uuid": "9b464578-93a8-8599-8f8a-9e3e2864ca98",
+    "uuid": "434330b8-1e1d-8473-89e2-097b64b1b9d4",
     "words": [
       "taggable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about taggable — makes every record taggable without adding a relationship per collection: the tag references the record's **content-uuid**, so one edge type reaches everything.",
-    "uuid": "b0205f57-4d68-8c7b-82e3-64a0646e8fc6",
+    "uuid": "191579b6-8fb4-8b3b-a553-17681e068efa",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: airline
 description: Use when reasoning about airline — An organization that provides flights for passengers.
 atomPath: "vocabulary/airline"
-coordinate: "vocabulary/airline · 5/round · 7a60d590"
-contentUuid: "767ebf4e-1414-59ed-9135-832aefd7621e"
-diamondUuid: "419b0854-8bae-84c1-97c7-0356e1cebe36"
-uuid: "7a60d590-a2c6-88dc-ae91-f4826f0d851a"
-horo: 5
+coordinate: "vocabulary/airline · 7/descent · d3587711"
+contentUuid: "f5d0bf3a-20cb-5731-856b-5a0d1bad000f"
+diamondUuid: "3375c535-bd6c-876e-8c00-687e3c8b1dfe"
+uuid: "d3587711-7a45-88d5-810c-7f09e75f244c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "028bd21d-b189-894a-a356-fa7fa315de79"
+  computationUuid: "925949ce-2b7b-8964-b724-f002d82c9fa9"
   stages:
     - stage: path
       stageUuid: "5a503883-275c-8bcb-9cf3-0ce9083b5603"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bb743314-6c18-8324-91ab-f2b3be7bad60"
     - stage: horo
-      stageUuid: "a2e72b3e-bcd2-8c3b-9c01-3be915466286"
+      stageUuid: "03dfe9dd-5fe2-81bd-8f6b-7700df221c63"
     - stage: seal
       stageUuid: "30ef3006-e167-81a6-9f05-22830e9efc7f"
     - stage: uuid
-      stageUuid: "edfc2d19-c502-88bb-9880-1207d69ca24f"
+      stageUuid: "a052dca7-73a3-8d39-bc4d-f1c1914ef6a3"
 version: 2
 ---
 # airline

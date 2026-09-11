@@ -2,11 +2,11 @@
 name: hooks
 description: "Use when reasoning about hooks — derives the header's amounts from the lines whenever a line changes, and moves the stock the line commits. normalises the line before either runs."
 atomPath: "invoices/invoice/lines/hooks"
-coordinate: "invoices/invoice/lines/hooks · 3/3 · ebb3c57b"
-contentUuid: "fd81f866-abf2-56b3-892a-4848f35efb9e"
-diamondUuid: "8d725455-ad97-8dbe-81e9-32daafee7f63"
-uuid: "ebb3c57b-3617-8b23-8b03-ac4dc9b17ba3"
-horo: 3
+coordinate: "invoices/invoice/lines/hooks · 9/unity · 1e4362f1"
+contentUuid: "212591a5-299b-531c-a25f-3ff1a397f8d3"
+diamondUuid: "837a6e65-752a-82cb-9388-1c9074983371"
+uuid: "1e4362f1-da48-810e-a414-5da36e3264e3"
+horo: 9
 typography:
   partition: invoices
   bondDegree: 348
@@ -14,7 +14,7 @@ standards:
   - "US-GAAP"
 bindings: []
 signatures:
-  computationUuid: "c46f4ccd-b4f6-81ed-9fe0-7e88a12c3a1f"
+  computationUuid: "7740d400-da4f-8f9d-a50c-34e7bebba32a"
   stages:
     - stage: path
       stageUuid: "653de0d4-0706-86c6-967b-67d276782ac3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "98a0e0a5-3bda-81f1-be36-11b2d8cf26f7"
     - stage: horo
-      stageUuid: "c4e5a650-d8ac-8c58-9e4e-70bfe88e90c2"
+      stageUuid: "c8bfa5d1-21cb-83bc-b8dd-fe9737616452"
     - stage: seal
       stageUuid: "401412b2-ddfb-8e25-ad58-9836680b4769"
     - stage: uuid
-      stageUuid: "84a4fc77-84e9-898a-b119-96acfe776d3b"
+      stageUuid: "5dd266ab-7e32-87a4-93fe-3dc975bd78ff"
 version: 2
 ---
 # invoices/invoice/lines/hooks — a total is recomputed from the lines, never accepted from the caller

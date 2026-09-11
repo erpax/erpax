@@ -2,11 +2,11 @@
 name: readme
 description: "Use when the repository README is generated, verified, or reasoned about — the README is a diamond (a content-addressed projection of the live tree, regenerable with zero entropy, drift fails closed) and its typography IS the diamond projected (facets = the closed horo ring laid out in measure-walk order, so reading the README is reading the crystal). Derived from the tree (matrix · fs walk · package.json), never hand-typed."
 atomPath: readme
-coordinate: "readme · 2/share · abd8e99e"
-contentUuid: "8c73f7bd-9dc8-5750-9532-7906d45c4a74"
-diamondUuid: "80687acd-6d30-8c1d-97d7-7eb17f641a06"
-uuid: "abd8e99e-656c-8e7c-9c53-698f1e896965"
-horo: 2
+coordinate: "readme · 7/descent · 1aef4db2"
+contentUuid: "9c057686-f4c7-5549-ba66-b4e39d4be9e6"
+diamondUuid: "7574ae42-e879-8b61-839d-8246621586c2"
+uuid: "1aef4db2-4989-8210-9513-6774831e3fe3"
+horo: 7
 typography:
   partition: readme
   bondDegree: 145
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "665ef23e-591d-8e1d-9152-c5a780e0cbbf"
+  computationUuid: "d7589bbb-4265-89ab-b129-533d4afbb29f"
   stages:
     - stage: path
       stageUuid: "dc681a92-56b1-8f59-b232-67e611a4affd"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "c332faea-643b-8893-bc36-f71877aebdd8"
     - stage: horo
-      stageUuid: "ae2a9186-06e9-8986-86d5-c09eadf63f9d"
+      stageUuid: "d52e1796-e655-8f48-9201-0f3c514c53ae"
     - stage: seal
       stageUuid: "164c37b8-34fa-8582-861b-07bd004fd6ce"
     - stage: uuid
-      stageUuid: "fc2f3ab2-a3ae-853c-8b76-d20c1bb21e32"
+      stageUuid: "1ce83b16-5147-8738-b2c4-37302a5d40f3"
 version: 2
 ---
 # readme — the README is a diamond; its typography is the diamond projected (under [[self/generate]] · outward coil)

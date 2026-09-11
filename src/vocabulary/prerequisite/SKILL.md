@@ -2,10 +2,10 @@
 name: prerequisite
 description: Use when modelling one prerequisite — the singular model of the prerequisites collection (the plural store); a condition that must hold before something may proceed.
 atomPath: "vocabulary/prerequisite"
-coordinate: "vocabulary/prerequisite · 1/base · 7f285639"
-contentUuid: "b7a67ecf-fbbf-5247-85ff-de2672e5faf7"
-diamondUuid: "e30bc69b-3a6a-8dcb-9576-2fc769bcaf29"
-uuid: "7f285639-cbaf-873d-b98f-5f009c8a5de2"
+coordinate: "vocabulary/prerequisite · 1/base · 6bfe2c0b"
+contentUuid: "c875b669-e2bb-57d8-81dd-ba63e115f76e"
+diamondUuid: "011bc3c1-a592-8148-af0a-63bef4a08f7d"
+uuid: "6bfe2c0b-b0ff-82da-863a-aff7aff20537"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4e2743e6-5efe-8a34-9613-46491eb049c7"
+  computationUuid: "092f117e-9e4b-8122-a631-c2c6a208fcbf"
   stages:
     - stage: path
       stageUuid: "6883f3e0-2d73-86bb-acde-daccb09fe071"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "77d6cca6-4c21-86a5-b202-d61fca1ec179"
     - stage: horo
-      stageUuid: "2d806927-3846-8447-81d8-6fcaf84e421e"
+      stageUuid: "1028bc26-65e0-859a-a783-981d7991000e"
     - stage: seal
       stageUuid: "e322b4ae-5a4c-88fa-88b9-a1a1553046f8"
     - stage: uuid
-      stageUuid: "39923e43-c217-8328-bc92-fb1fc8e78dd4"
+      stageUuid: "d23f4c2e-305b-854e-acf9-f951f676e838"
 version: 2
 ---
 # prerequisite — the model of one [[prerequisites]] row

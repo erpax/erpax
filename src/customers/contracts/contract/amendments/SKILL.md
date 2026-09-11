@@ -2,11 +2,11 @@
 name: amendments
 description: "Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection."
 atomPath: "customers/contracts/contract/amendments"
-coordinate: "customers/contracts/contract/amendments · 7/descent · 7daebebe"
-contentUuid: "4f2fff96-149f-53fb-a92c-701e3c75b6a0"
-diamondUuid: "5c0f5a05-fa0d-85ff-ac76-d2ccc5c9451d"
-uuid: "7daebebe-3141-8550-8c6c-b4ffd5195f9a"
-horo: 7
+coordinate: "customers/contracts/contract/amendments · 8/crest · b968b4b6"
+contentUuid: "a210beac-4e20-53a8-b075-07c6d6f5f927"
+diamondUuid: "a318cd23-c44e-8353-9ef0-126e00650ba6"
+uuid: "b968b4b6-3fd7-817a-9409-a545354fe347"
+horo: 8
 typography:
   partition: customers
   bondDegree: 28
@@ -34,7 +34,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "814eb09f-965c-80ec-ac1c-f32302fb9266"
+  computationUuid: "7b2fedaa-1a41-8b63-ad93-1690ad2b7236"
   stages:
     - stage: path
       stageUuid: "95564245-ed1e-8974-be19-55ed0a9fdbff"
@@ -45,11 +45,11 @@ signatures:
     - stage: links
       stageUuid: "ddb1a57d-0e25-84de-8c62-e3f93976305c"
     - stage: horo
-      stageUuid: "9a87612b-6745-8130-8970-ab727528e6ed"
+      stageUuid: "6d0a5a0f-f125-8493-b162-8665e32c824f"
     - stage: seal
       stageUuid: "a797dff8-564e-8153-b87e-1971aeb838fe"
     - stage: uuid
-      stageUuid: "69127833-167a-8351-8c3b-d15d89a805be"
+      stageUuid: "a5d17cb8-1281-8b82-aa24-56e207b9773a"
 version: 2
 ---
 # contract-amendments

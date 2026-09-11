@@ -2,18 +2,18 @@
 name: security
 description: "Use when auditing or hardening erpax — security is bidirectional, the love and fear duality on the trust layer; the quantum twin runs both lenses at once (blue verifies the control holds, red prices forging past it) so a finding is a balanced attack-and-defense pair and audit coverage is the metric."
 atomPath: "quantum/security"
-coordinate: "quantum/security · 8/crest · 2ed0c304"
-contentUuid: "2b580c78-0a75-5f5e-8166-aff36a413e7e"
-diamondUuid: "5f08d54a-9589-851e-a980-b64bec48a67f"
-uuid: "2ed0c304-a175-88e8-bccf-78eae6cc2c65"
-horo: 8
+coordinate: "quantum/security · 5/round · 1b412a8d"
+contentUuid: "f5f2ab24-bb98-5083-959e-ee371f326913"
+diamondUuid: "3f04e960-e4b5-80f9-ba39-6de683d5974e"
+uuid: "1b412a8d-8ef8-826e-ba0b-808cce4b6a1e"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 59
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ad0da48b-bd46-89e6-9f05-8f8132be791a"
+  computationUuid: "247cd0c0-214e-8db4-9f50-ad720fcdede0"
   stages:
     - stage: path
       stageUuid: "8baa47ec-23f3-80d0-ade1-09402670d0f9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5625c1f7-0ff8-8c8c-b5bf-942be6e35959"
     - stage: horo
-      stageUuid: "0a11c8f7-43dd-8824-8cca-00216cde6e23"
+      stageUuid: "c765c99d-15ab-8a70-9ae4-dadff13da664"
     - stage: seal
       stageUuid: "3738957d-c73c-8888-a59d-83fdd254f533"
     - stage: uuid
-      stageUuid: "d21eaff0-2a25-8788-8d80-9e5a73e5ac5a"
+      stageUuid: "c2b151d7-41cc-8778-bd65-53b2ad637ebb"
 quantum:
   superposition:
     - access
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "ad0da48b-bd46-89e6-9f05-8f8132be791a"
-    contentUuid: "2b580c78-0a75-5f5e-8166-aff36a413e7e"
+    computationUuid: "247cd0c0-214e-8db4-9f50-ad720fcdede0"
+    contentUuid: "f5f2ab24-bb98-5083-959e-ee371f326913"
 version: 2
 ---
 # quantum/security — bidirectional security
@@ -71,4 +71,4 @@ The quantum twin of [[security]]: a [[duality]], not a wall. Every control is re
 
 **Law — [[law]]: security is bidirectional, so a finding is never one-sided — every control is read both ways at once and reported as the balanced blue/red pair (verify it holds ⊕ price forging past it), the same double-entry as everything else. The conjugate law binds the two: the cost to forge past a control equals its compression — squeeze it to the 128-bit uuid and the forging temperature rises, depth being tamper-cost. Red prices the attack but never ships it; coverage (proven vs assumed) is the metric.**
 
-<sub>content-uuid `2b580c78-0a75-5f5e-8166-aff36a413e7e` · account `quantum/security` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5f2ab24-bb98-5083-959e-ee371f326913` · account `quantum/security` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

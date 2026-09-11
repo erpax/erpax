@@ -2,11 +2,11 @@
 name: field
 description: "Use when reasoning about field — builds the field: an internal choice resolves against a collection, an external one takes a URI, and decides how it renders without changing what it means. is that closed set."
 atomPath: "link/field"
-coordinate: "link/field · 5/round · 49e83cf7"
-contentUuid: "2ec848f4-0d19-5b35-a27c-9a7e26b65138"
-diamondUuid: "dc48c4d1-10c8-8d94-94c0-d82ed84954fb"
-uuid: "49e83cf7-810e-8829-ab80-64caeeb5e118"
-horo: 5
+coordinate: "link/field · 4/weave · 6bb8c080"
+contentUuid: "772e34fe-21a7-5e00-abc1-c321556469f1"
+diamondUuid: "f2cf19cb-2092-82fe-b267-7878b53c5a6c"
+uuid: "6bb8c080-f3f6-8b95-85de-b020a428c63d"
+horo: 4
 typography:
   partition: link
   bondDegree: 358
@@ -18,7 +18,7 @@ standards:
   - "WCAG-2.1 §2.4.4 link-purpose-in-context"
 bindings: []
 signatures:
-  computationUuid: "c72771a3-a218-88d7-92c8-9a897f306c35"
+  computationUuid: "f4db6ac4-f963-83b1-83f7-125de77ef879"
   stages:
     - stage: path
       stageUuid: "955f5aab-a7a6-8004-a46d-f35968ee7647"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "dbbdb86d-9d04-833f-bea4-20aa359fc11a"
     - stage: horo
-      stageUuid: "5db67fa0-6fcb-8319-bdfc-c905a7476c07"
+      stageUuid: "d6a27eb8-d652-8268-8206-d19746d5a0a2"
     - stage: seal
       stageUuid: "305fbaf8-7932-8718-80b1-6988144530e5"
     - stage: uuid
-      stageUuid: "1ce29702-5b41-8ca8-a52b-276409cc2d77"
+      stageUuid: "bfc33aef-a099-85ef-8b64-3f2693e93f0e"
 version: 2
 ---
 # link/field — one field for an internal reference or an external URL

@@ -2,11 +2,11 @@
 name: standards
 description: "Use when reasoning about standards — Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats."
 atomPath: "export/standards"
-coordinate: "export/standards · 7/descent · 7d198059"
-contentUuid: "001bb0c2-fb95-58a3-ad75-a862d231329d"
-diamondUuid: "e5e80a63-723d-8e30-87c4-de50a5aded74"
-uuid: "7d198059-4d0d-87e7-a14c-a7171c2e7c38"
-horo: 7
+coordinate: "export/standards · 1/base · 6ccc4e97"
+contentUuid: "dcc3a875-81ca-5849-9d24-a8e8136f3336"
+diamondUuid: "272c3aac-1064-820f-a5d0-7ce247109b92"
+uuid: "6ccc4e97-ee44-8dd0-9cbc-b9ff78f86e7a"
+horo: 1
 typography:
   partition: export
   bondDegree: 188
@@ -17,7 +17,7 @@ standards:
   - "UBL-2.1"
 bindings: []
 signatures:
-  computationUuid: "34b3c444-efd8-8592-96d7-071824b65f0f"
+  computationUuid: "8f6d647b-146e-8229-b45f-81f6e3a87b4d"
   stages:
     - stage: path
       stageUuid: "8a0518ae-85f1-8a5d-baa1-ceacfabaf1aa"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "71e9efa0-a62b-8400-a491-04ebf936615c"
     - stage: horo
-      stageUuid: "4d1efce7-ac75-81bc-9ed7-cd71e81fee27"
+      stageUuid: "a0b09d8e-bd91-8de9-b1a9-85214739d4d5"
     - stage: seal
       stageUuid: "fd1f8123-3dc2-8e30-a1d1-a787cff61c09"
     - stage: uuid
-      stageUuid: "35395878-2b73-82d6-982a-16cf85e1178f"
+      stageUuid: "e5513815-4e49-82aa-bd1b-07efcaa68480"
 version: 2
 ---
 # standards

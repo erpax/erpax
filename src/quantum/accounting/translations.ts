@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accounting",
-    "uuid": "07245d60-fae0-865f-ac95-a37aa9d0c025",
+    "uuid": "47e13977-113b-809a-9f64-2d26ba33df3a",
     "words": [
       "accounting"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting on the quantum level — double-entry that balances entropy (karma), inheriting down the uuid parent chain where the parent_id is the DNA; the universal ledger's quantum facet.",
-    "uuid": "348c52ed-bd15-8089-8abc-b4d5daccb83b",
+    "uuid": "0177ca85-2558-8c00-851b-ee55c35caa1c",
     "words": [
       "use",
       "when",

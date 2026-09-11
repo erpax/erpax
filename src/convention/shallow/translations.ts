@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shallow",
-    "uuid": "e77cdedf-14be-8407-b7b7-de06c1c64506",
+    "uuid": "390902b3-4472-895a-9952-14ffb48d42b9",
     "words": [
       "shallow"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about import discipline — an import must reach an atom's index (the one public door), not a deep internal file past the seal; this names the convention, measures the corpus's live shallowness, and is enforced by the import lint (a ratchet on the non-index count, so shallowness can only get tighter).",
-    "uuid": "6ee24004-6253-842c-917e-f7a4cf4418ba",
+    "uuid": "bc8f3c4f-8807-8160-81bd-c3230ffafd3c",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: cases
 description: "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket."
 atomPath: cases
-coordinate: "cases · 1/base · 35bd3e94"
-contentUuid: "d525e901-d77f-59f3-b94a-aa07e7e6425c"
-diamondUuid: "0739ac4d-c795-8b8e-905f-f6bdb644c125"
-uuid: "35bd3e94-b0ef-8d19-b4b8-6ac9c5961a53"
-horo: 1
+coordinate: "cases · 2/share · dfbeedbc"
+contentUuid: "153d92ef-e375-5062-98ea-01547f7cd755"
+diamondUuid: "76275016-1b29-845a-a66d-630d75930dbb"
+uuid: "dfbeedbc-70c9-8dec-b003-badb8af912d0"
+horo: 2
 typography:
   partition: cases
   bondDegree: 68
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "6655da08-0a8b-8ca7-89e3-c97ddd61fb4e"
+  computationUuid: "b1d93e0c-57d6-8d8c-9c5c-4969eef9c7dc"
   stages:
     - stage: path
       stageUuid: "d0e42baa-d4ec-8283-a35c-b360e4d912c4"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "f2e1ceac-3575-8c83-a0ed-a7f7a934cea1"
     - stage: horo
-      stageUuid: "d52e1e49-e396-8032-b722-b9482d458772"
+      stageUuid: "b1ef879f-5bbc-8a3b-aa2b-04644834e80a"
     - stage: seal
       stageUuid: "7239fbbd-1522-87a8-af0c-a83b363fa2ad"
     - stage: uuid
-      stageUuid: "525fffdd-a216-8798-9e1a-7adf69cdc400"
+      stageUuid: "a554ad3a-3783-8b56-a29d-7be1db71d8c2"
 version: 2
 ---
 # Cases

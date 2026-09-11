@@ -2,10 +2,10 @@
 name: applicant
 description: "Use when reasoning about applicant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/applicant"
-coordinate: "vocabulary/applicant · 1/base · 445f9866"
-contentUuid: "07df30d5-4b11-5547-9dd6-9907253c2b16"
-diamondUuid: "32c56ea5-0207-8288-b946-d00f5c193ce5"
-uuid: "445f9866-064c-8aa2-a3da-71f69b5ad5eb"
+coordinate: "vocabulary/applicant · 1/base · b682ac77"
+contentUuid: "36f7e030-be96-58ef-8a34-3dda27e9c06d"
+diamondUuid: "5beb62f6-5266-8ce9-bbd0-debc2d756abb"
+uuid: "b682ac77-6c39-8cae-8189-a9ac4a7dcafa"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "24de1e97-9bb9-85a2-8c34-b1daf3613fde"
+  computationUuid: "c8d8154d-4043-8e77-8cb7-0df0843969b5"
   stages:
     - stage: path
       stageUuid: "f60c61e2-2262-8de6-9ed5-73868d0a0e97"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "486f7645-9c8b-8dd8-b1e2-d08f142cb361"
     - stage: horo
-      stageUuid: "f4b3dd79-06f0-8834-a6d6-d160ef4948fd"
+      stageUuid: "92ac3ac5-bb4d-8463-becf-f8c27c606ef7"
     - stage: seal
       stageUuid: "dd1a4a90-c672-8318-b9bb-7e947061c2b7"
     - stage: uuid
-      stageUuid: "7d1c852d-fa77-8b10-a32b-838944966525"
+      stageUuid: "227cd9fa-fb47-852b-9126-d796c0a8743c"
 version: 2
 ---
 # applicant

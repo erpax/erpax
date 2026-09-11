@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "biomechnical",
-    "uuid": "8cc60e57-64a3-8e33-9e00-8daaf375d2f1",
+    "uuid": "2d2bbc0f-fe5f-8c78-b959-57c940579e7c",
     "words": [
       "biomechnical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about biomechnical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "b5b6cc0b-b249-8ea3-9701-225bf02d4091",
+    "uuid": "c6e9539c-1742-8f5b-ac0e-b8206279567e",
     "words": [
       "use",
       "when",

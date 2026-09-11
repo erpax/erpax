@@ -2,11 +2,11 @@
 name: checker
 description: "Use when validating whether a fiscal period may be closed — pure, no-mutation checks that the period is in range and not already closed, that the closing entries balance, that a state transition is legal, and that reversals can post to the next period."
 atomPath: "closing/period/checker"
-coordinate: "closing/period/checker · 7/descent · ed250a37"
-contentUuid: "0701b277-451b-5587-81ee-06a72be63607"
-diamondUuid: "a1d7da4c-c5c2-8403-af62-b31a9d86f2f3"
-uuid: "ed250a37-cdc3-839b-80f2-4beee48f36f7"
-horo: 7
+coordinate: "closing/period/checker · 4/weave · 7c0c114a"
+contentUuid: "85078dd4-b66b-5ab0-8842-b30b0e5c537b"
+diamondUuid: "38121a5e-2f3a-8834-9614-672acff6174c"
+uuid: "7c0c114a-b960-8d60-a05e-ded0419dc073"
+horo: 4
 typography:
   partition: closing
   bondDegree: 18
@@ -19,7 +19,7 @@ standards:
   - "SAF-T:3.0.2 — period coding, regulatory audit trail"
 bindings: []
 signatures:
-  computationUuid: "e0b87fb1-f3d0-83a2-9306-008287acc430"
+  computationUuid: "72c162a3-5e32-8e58-9e1d-be1ce8c8283b"
   stages:
     - stage: path
       stageUuid: "94f10a92-0816-8970-b835-d582c9282449"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "19e54426-efe7-867a-8e8c-cfa9eb4b4c68"
     - stage: horo
-      stageUuid: "08a81952-f3da-8f69-9d7c-699d629537fc"
+      stageUuid: "bf34e692-16fc-8d07-814a-be0431cfc111"
     - stage: seal
       stageUuid: "c6f0a215-5657-802d-8c81-a32ba9cb9cdf"
     - stage: uuid
-      stageUuid: "2de9ed5d-93e4-81d5-8c93-ea5611c4e67a"
+      stageUuid: "b947fd1c-179e-8eaf-b415-72012df3b819"
 version: 2
 ---
 # closing/period/checker — the period-closing gate

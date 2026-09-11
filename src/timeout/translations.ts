@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "timeout",
-    "uuid": "4a79937e-0948-8d32-a629-745c9ed901d8",
+    "uuid": "d4754f59-66b5-8fc6-85b4-6ddd246d3979",
     "words": [
       "timeout"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when bounding any command's wall time — the reasonable timeout is computed from measured samples onto the 1·2·3·5-minute ladder, never guessed.",
-    "uuid": "71786404-95cc-8695-9d21-f58c79b01f95",
+    "uuid": "870d02e3-342c-85ec-864e-39c2e48abe42",
     "words": [
       "use",
       "when",
