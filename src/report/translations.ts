@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a document (balance sheet, SAF-T, VAT return, audit file) must be produced — a report is a standards×format×data superposition collapsed on request, computed not hand-templated, and legislation floors it stricter than any standard.",
-    "uuid": "a84db1fc-1c24-88a3-8cc5-5fb0008dd36c",
+    "uuid": "085d00ab-bd04-8a2d-b56d-7a2adb327c4e",
     "words": [
       "use",
       "when",

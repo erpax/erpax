@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the Payload API's access must derive from and be gated by its legal surface — the strictest tier a collection's standards demand, and the endpoints that fall below it.",
-    "uuid": "7a0548aa-cfe2-892f-8568-78db4b0ec8f9",
+    "uuid": "f4785cc6-a36b-8b2e-9973-68f3ce5a0337",
     "words": [
       "use",
       "when",
