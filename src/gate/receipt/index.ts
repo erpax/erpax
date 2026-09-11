@@ -114,6 +114,10 @@ export const CORPUS_WIDE_SUITES: ReadonlySet<string> = new Set([
   'src/uuid/matrix/index.test.ts',
   'src/aura/test.ts',
   'src/gate/parity/test.ts',
+  // word-incomplete-diamond, every ratchet axis, host-math: a stale receipt hid 1557 > 1556 for two commits.
+  'src/law/folder/word.test.ts',
+  'src/law/folder/baseline/test.ts',
+  'src/algebra/test.ts',
 ])
 
 /** Closure — plus, for a corpus-wide suite, the fold of everything its scan can see. */
