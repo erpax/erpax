@@ -54,6 +54,15 @@ code nothing tested.
 **production schema migrated for a Worker that never shipped** — schema ahead of code,
 and nothing to roll it back. Build first: a compile failure now costs nothing.
 
+## Weigh what will ship, before production is touched
+
+A Turbopack build bundled every production fold — **23.4 MB gz** against Cloudflare's
+**10 MiB** ceiling — while [[deploy]]/fold read green, because nothing between the build and
+the upload packed the Worker or read it. The deploy job now runs `wrangler deploy --dry-run`
+and `pnpm erpax deploy fold` after the build and **before the migration**: a Worker that
+cannot ship is refused while production is still untouched. Matched on what the step runs,
+and the pack must come before the weigh, or the weigh reads no bundle.
+
 ## Gates in front, smoke behind
 
 The contract gate and boot gate are deterministic — they cannot flake on someone

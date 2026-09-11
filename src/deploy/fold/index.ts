@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readFileSync, statSync } from 'node:fs'
 import { gzipSync } from 'node:zlib'
 import { join } from 'node:path'
 
@@ -14,7 +14,8 @@ import { join } from 'node:path'
  * refused the upload — a default-ALLOW by omission, the [[rules]]/unraised shape.
  *
  * So the patterns live HERE, beside the matter they must match, and `staleFolds`
- * re-derives that claim from the filesystem on every test run.
+ * re-derives that claim from the filesystem on every test run. The claim is not the
+ * fact: `assertNoFoldLeaks` reads the packed bundle for each fold's own content.
  */
 
 export interface Fold {
@@ -154,11 +155,15 @@ export function assertFoldsHold(cwd: string = process.cwd()): void {
  */
 export const WORKER_LIMIT_BYTES = 10 * 1024 * 1024
 
-/** Where `wrangler deploy --dry-run --outdir` puts the exact bundle it would upload. */
+/** Where `wrangler deploy --dry-run --outdir` puts the exact bundle it would upload; its parent is the OpenNext build. */
 export const PACKED_WORKER_DIR = '.open-next/packed'
 
 export interface WorkerBudget {
+  /** An OpenNext build is on disk — from then on the pack is required, never optional. */
+  readonly built: boolean
   readonly packed: boolean
+  /** The pack is older than the build beside it: it weighs a Worker that will not ship. */
+  readonly stale: boolean
   readonly bytes: number
   readonly gzip: number
   readonly limit: number
@@ -174,21 +179,23 @@ export interface WorkerBudget {
  * wrangler packs every module into ONE `worker.js` and gzips that file — so this reads
  * that same file and gzips it, rather than summing the parts. Measured against a real
  * dry-run: wrangler reported `9021.85 KiB` gz and this reads 9021.86 KiB, a 12-byte
- * difference in gzip settings.
- *
- * HONEST BOUNDARY: it weighs what is on disk. A stale pack weighs a stale Worker, which
- * is why the wrangler dry-run pack runs immediately before it. The sourcemap
- * beside it is not uploaded and is not counted.
+ * difference in gzip settings. The sourcemap beside it is not uploaded and is not counted.
  */
 export function workerBudget(cwd: string = process.cwd(), dir: string = PACKED_WORKER_DIR): WorkerBudget {
+  const build = join(cwd, dir, '..')
+  const built = existsSync(build)
   const packed = join(cwd, dir, 'worker.js')
   if (!existsSync(packed)) {
-    return { packed: false, bytes: 0, gzip: 0, limit: WORKER_LIMIT_BYTES, fits: true, headroom: WORKER_LIMIT_BYTES, share: 0 }
+    return { built, packed: false, stale: false, bytes: 0, gzip: 0, limit: WORKER_LIMIT_BYTES, fits: true, headroom: WORKER_LIMIT_BYTES, share: 0 }
   }
+  const entry = join(build, 'worker.js')
+  const stale = existsSync(entry) && statSync(packed).mtimeMs < statSync(entry).mtimeMs
   const buf = readFileSync(packed)
   const gzip = gzipSync(buf).byteLength
   return {
+    built,
     packed: true,
+    stale,
     bytes: buf.byteLength,
     gzip,
     limit: WORKER_LIMIT_BYTES,
@@ -199,14 +206,21 @@ export function workerBudget(cwd: string = process.cwd(), dir: string = PACKED_W
 }
 
 /**
- * Fails closed on a packed Worker Cloudflare would refuse. Skips when nothing is packed —
- * a missing artifact is not a green one, and the caller says which of the two it has
- * (`workerBudget().packed`). Approaching the ceiling is a WARNING, never a failure: the
- * ceiling is Cloudflare's, and a gate that invents a tighter one blocks honest work.
+ * Fails closed on a packed Worker Cloudflare would refuse — and on a build nobody weighed.
+ * It skips only when there is no OpenNext build at all: a build with no pack, or with a pack
+ * older than itself, is refused, because nothing weighed is not a Worker that fits.
+ * Approaching the ceiling is a WARNING, never a failure: the ceiling is Cloudflare's.
  */
 export function assertWorkerFitsBudget(cwd: string = process.cwd(), dir: string = PACKED_WORKER_DIR): void {
   const b = workerBudget(cwd, dir)
-  if (!b.packed) return
+  const pack = `wrangler deploy --dry-run --outdir ${dir}`
+  if (!b.packed) {
+    if (!b.built) return
+    throw new Error(`deploy/fold — an OpenNext build is on disk and nothing is packed, so nothing was weighed.\n  pack it: ${pack}`)
+  }
+  if (b.stale) {
+    throw new Error(`deploy/fold — the pack in ${dir} is older than the build beside it; it weighs a Worker that will not ship.\n  re-pack: ${pack}`)
+  }
   const kib = (n: number) => `${(n / 1024).toFixed(1)} KiB`
   if (!b.fits) {
     throw new Error(
@@ -216,27 +230,131 @@ export function assertWorkerFitsBudget(cwd: string = process.cwd(), dir: string 
   }
 }
 
+/** A quoted literal of 24–160 characters; shorter ones are shared vocabulary, longer ones rare. */
+const LITERAL = /'((?:[^'\\\n]|\\.){24,160})'|"((?:[^"\\\n]|\\.){24,160})"|`((?:[^`\\$]|\\.){24,160})`/g
+/** An atom path is the corpus's shared vocabulary: any sorted path list puts the same two side by side. */
+const PATH = /^[\w.@-]+(?:\/[\w.@-]+)+$/
+/** Two literals this close in the source form a pair; the bundle must hold both within PAIR_WINDOW. */
+const PAIR_GAP = 240
+const PAIR_WINDOW = 480
+const PAIR_SAMPLE = 64
+/** Fewer pairs than this cannot say whether a target shipped. */
+const PAIR_MIN = 8
+/** Share of a fold's pairs found in order at which its content is in the bundle — measured 0 folded, ≥ 0.92 leaked. */
+export const LEAK_SHARE = 0.5
+
+type LiteralPair = readonly [string, string]
+
+/**
+ * Consecutive literals of a fold's target that its stub does not carry, sampled evenly. Pairs, never
+ * lone strings: a lone description legitimately recurs in the Worker through other modules, while two
+ * in their source order a few hundred bytes apart are the target's own text. See ./SKILL.md.
+ */
+const fingerprintOf = (cwd: string, fold: Fold): LiteralPair[] => {
+  const target = resourceOf(cwd, fold.target)
+  const stubPath = resourceOf(cwd, fold.stub)
+  if (!existsSync(target)) return []
+  const stub = existsSync(stubPath) ? readFileSync(stubPath, 'utf8') : ''
+  const literals = [...readFileSync(target, 'utf8').matchAll(LITERAL)]
+    .map((m) => ({ text: m[1] ?? m[2] ?? m[3] ?? '', at: m.index ?? 0, end: (m.index ?? 0) + m[0].length }))
+    .filter((l) => !l.text.includes('\\') && !PATH.test(l.text) && !stub.includes(l.text))
+  const pairs: LiteralPair[] = []
+  for (let i = 1; i < literals.length; i++) {
+    const a = literals[i - 1]!
+    const b = literals[i]!
+    if (b.at - a.end <= PAIR_GAP && a.text !== b.text) pairs.push([a.text, b.text])
+  }
+  if (pairs.length <= PAIR_SAMPLE) return pairs
+  return Array.from({ length: PAIR_SAMPLE }, (_, i) => pairs[Math.floor((i * pairs.length) / PAIR_SAMPLE)]!)
+}
+
+/** A literal as a bundle may spell it: raw, or with non-ASCII as `\uXXXX` — esbuild's default when wrangler packs. */
+const spellings = (s: string): string[] => {
+  const escaped = (upper: boolean): string =>
+    s.replace(/[^\x00-\x7f]/g, (c) => {
+      const hex = c.charCodeAt(0).toString(16).padStart(4, '0')
+      return `\\u${upper ? hex.toUpperCase() : hex}`
+    })
+  return [...new Set([s, escaped(true), escaped(false)])]
+}
+
+/** `b` follows some occurrence of `a` within the window, in any spelling the bundle uses. */
+const inOrder = (bundle: string, [a, b]: LiteralPair): boolean => {
+  const later = spellings(b)
+  return spellings(a).some((sa) =>
+    later.some((sb) => {
+      for (let i = bundle.indexOf(sa); i >= 0; i = bundle.indexOf(sa, i + 1)) {
+        const j = bundle.indexOf(sb, i + sa.length)
+        if (j < 0) return false
+        if (j - i <= PAIR_WINDOW) return true
+      }
+      return false
+    }),
+  )
+}
+
+export interface FoldReading {
+  readonly target: string
+  readonly sampled: number
+  readonly present: number
+  /** present / sampled — 0 when the fold held. */
+  readonly share: number
+}
+
+/** How much of each server fold's content the bundle carries. A `client` fold's target legitimately runs on the server. */
+export function foldReadings(
+  cwd: string = process.cwd(),
+  bundle: string = join(PACKED_WORKER_DIR, 'worker.js'),
+  folds: readonly Fold[] = PRODUCTION_FOLDS,
+): FoldReading[] {
+  const text = readFileSync(join(cwd, bundle), 'utf8')
+  return folds
+    .filter((f) => f.side === 'both')
+    .map((f) => {
+      const pairs = fingerprintOf(cwd, f)
+      const present = pairs.filter((p) => inOrder(text, p)).length
+      return { target: f.target, sampled: pairs.length, present, share: pairs.length ? present / pairs.length : 0 }
+    })
+}
+
+/** Fails closed on a fold whose content is in the bundle, naming it — and on a target too plain to fingerprint. */
+export function assertNoFoldLeaks(
+  cwd: string = process.cwd(),
+  bundle: string = join(PACKED_WORKER_DIR, 'worker.js'),
+  folds: readonly Fold[] = PRODUCTION_FOLDS,
+): FoldReading[] {
+  if (!existsSync(join(cwd, bundle))) throw new Error(`deploy/fold — no server bundle at ${bundle} to read`)
+  const readings = foldReadings(cwd, bundle, folds)
+  const bad = readings.filter((r) => r.share >= LEAK_SHARE || r.sampled < PAIR_MIN)
+  if (bad.length === 0) return readings
+  const lines = bad.map((r) =>
+    r.sampled < PAIR_MIN
+      ? `  unfingerprinted: ${r.target} — ${r.sampled} literal pair(s), under ${PAIR_MIN}; nothing can say whether it shipped`
+      : `  leaked: ${r.target} — ${r.present}/${r.sampled} of its literal pairs are in ${bundle}`,
+  )
+  throw new Error(`deploy/fold — ${bad.length} fold(s) not held by the bundle:\n${lines.join('\n')}`)
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const kib = (n: number) => `${(n / 1024).toFixed(1)} KiB`
   try {
     assertFoldsHold()
     const weight = foldWeight()
     const held = weight.reduce((n, w) => n + w.gzip, 0)
-    console.log(`✓ deploy/fold — ${PRODUCTION_FOLDS.length} folds hold, keeping ${kib(held)} gz out of the bundle`)
+    console.log(`✓ deploy/fold — ${PRODUCTION_FOLDS.length} fold patterns match their matter, ${kib(held)} gz of it`)
     for (const w of weight) console.log(`  ${kib(w.gzip).padStart(11)} gz  ${w.target}`)
     const b = workerBudget()
-    if (!b.packed) {
-      console.log(`  (nothing packed to weigh — run \`wrangler deploy --dry-run --outdir ${PACKED_WORKER_DIR}\` after an OpenNext build)`)
+    assertWorkerFitsBudget()
+    if (!b.built) {
+      console.log('  no OpenNext build on disk — the patterns are all there is to check; build and pack, and the bundle is read')
     } else {
-      assertWorkerFitsBudget()
-      console.log(
-        `✓ worker ${kib(b.gzip)} gz of the ${kib(b.limit)} ceiling — ${(b.share * 100).toFixed(1)}% used, ${kib(b.headroom)} spare`,
-      )
-      // 90% of the ceiling: the next heavy leaf is the one that crosses it. Spelled here, once,
-      // where it is read — an exported constant with a single caller is seal-debt, not a law.
-      if (b.share >= 0.9) {
-        console.warn(`! ${(b.share * 100).toFixed(1)}% of the ceiling — the next heavy leaf is the one that crosses it`)
-      }
+      console.log(`✓ worker ${kib(b.gzip)} gz of the ${kib(b.limit)} ceiling — ${(b.share * 100).toFixed(1)}% used, ${kib(b.headroom)} spare`)
+      // 90% of the ceiling: the next heavy leaf is the one that crosses it.
+      if (b.share >= 0.9) console.warn(`! ${(b.share * 100).toFixed(1)}% of the ceiling — the next heavy leaf is the one that crosses it`)
+      const bundle = join(PACKED_WORKER_DIR, 'worker.js')
+      const readings = assertNoFoldLeaks(process.cwd(), bundle)
+      console.log(`✓ bundle — no server fold's content in ${bundle}`)
+      for (const r of readings) console.log(`  ${`${r.present}/${r.sampled}`.padStart(11)} pairs  ${r.target}`)
     }
   } catch (e) {
     console.error((e as Error).message)

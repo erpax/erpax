@@ -106,6 +106,22 @@ export function pipelineViolations(cwd: string = process.cwd()): PipelineViolati
   if (smoke >= 0 && deployStep >= 0 && smoke < deployStep) {
     out.push({ workflow: file, law: 'smoke-after-deploy', reason: 'the UI smoke runs before the deploy it is meant to test' })
   }
+
+  // 7. PACK AND WEIGH BEFORE ANYTHING IRREVERSIBLE. A Turbopack build shipped every production
+  //    fold, 23.4 MB gz against a 10 MiB ceiling, while the config check read green — nothing packed
+  //    or read the Worker before it deployed. Matched on what the step RUNS; the fraction orders
+  //    commands inside one step.
+  const runAt = (re: RegExp): number => {
+    const s = steps.find((x) => re.test(x.run))
+    return s ? s.index + s.run.search(re) / (s.run.length + 1) : -1
+  }
+  const weigh = runAt(/erpax deploy fold/)
+  const pack = runAt(/wrangler deploy --dry-run/)
+  const law = 'weigh-before-migrate'
+  if (weigh < 0) out.push({ workflow: file, law, reason: 'no step runs `erpax deploy fold` — the Worker ships unweighed' })
+  else if (pack < 0 || pack > weigh) out.push({ workflow: file, law, reason: 'the weigh runs before anything is packed — it reads no bundle' })
+  else if (build >= 0 && weigh < build) out.push({ workflow: file, law, reason: 'the weigh runs before the build it should read' })
+  else if (migrate >= 0 && weigh > migrate) out.push({ workflow: file, law, reason: `the weigh runs after "${steps[migrate]!.name}" — production is migrated for a Worker not yet known to fit` })
   return out
 }
 

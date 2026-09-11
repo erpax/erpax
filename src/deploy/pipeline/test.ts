@@ -70,6 +70,31 @@ describe('deploy/pipeline — each law CATCHES its own reordering', () => {
     const d = repo((y) => y.replace(/      - name: Boot gate[\s\S]*?tsx src\/run\/load\/index\.ts\n\n/, ''))
     expect(pipelineViolations(d).some((v) => v.law === 'boot-gate-first')).toBe(true)
   })
+
+  describe('weigh-before-migrate: the Worker is packed and read before production is touched', () => {
+    const weigh = /      - name: Weigh the packed Worker[\s\S]*?pnpm erpax deploy fold\n\n/
+    const caught = (d: string): boolean => pipelineViolations(d).some((v) => v.law === 'weigh-before-migrate')
+
+    it('the live workflow carries the step — the pattern this law is broken with is real', () => {
+      expect(readFileSync(join(process.cwd(), '.github', 'workflows', 'cloudflare.yml'), 'utf8')).toMatch(weigh)
+    })
+
+    it('catches a deploy with no weigh at all — the state the 23.4 MB Turbopack Worker reached upload in', () => {
+      expect(caught(repo((y) => y.replace(weigh, '')))).toBe(true)
+    })
+
+    it('catches a weigh moved after the migration', () => {
+      const d = repo((y) => {
+        const step = y.match(weigh)![0]
+        return y.replace(weigh, '').replace('      - name: Deploy\n', `${step}      - name: Deploy\n`)
+      })
+      expect(caught(d)).toBe(true)
+    })
+
+    it('catches a weigh with nothing packed for it to read', () => {
+      expect(caught(repo((y) => y.replace(/ *pnpm exec wrangler deploy --dry-run[^\n]*\n/, '')))).toBe(true)
+    })
+  })
 })
 
 describe('deploy/pipeline — the release refuses a mismatched tag', () => {

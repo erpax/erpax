@@ -97,6 +97,16 @@ jobs:
       - name: Build (OpenNext → Workers, lean next build)
         run: pnpm exec opennextjs-cloudflare build
 
+      # PACK AND WEIGH BEFORE ANYTHING IRREVERSIBLE. A Turbopack build bundled every production
+      # fold — 23.4 MB gz against the 10 MiB ceiling — while the config check read green. Pack
+      # exactly what wrangler would upload, then read it: the ceiling, and each fold's own content
+      # in the server bundle (src/deploy/fold). Before the migration, so a Worker that cannot ship
+      # never leaves production migrated for it.
+      - name: Weigh the packed Worker (folds + 10 MiB ceiling)
+        run: |
+          pnpm exec wrangler deploy --dry-run --outdir .open-next/packed
+          pnpm erpax deploy fold
+
       - name: Migrate remote D1
         run: pnpm erpax deploy db
 

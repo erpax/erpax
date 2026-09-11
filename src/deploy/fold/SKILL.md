@@ -64,16 +64,43 @@ long as nobody weighed the artifact.
 - **`workerBudget` / `assertWorkerFitsBudget`** — the packed artifact against the paid
   `10 MiB` compressed ceiling. Nothing weighed the Worker before; the first measurement
   was the API error. It reads the bundle a wrangler dry-run pack writes and gzips that one file,
-  which is why it agrees with wrangler to 12 bytes.
+  which is why it agrees with wrangler to 12 bytes. **Once an OpenNext build is on disk the pack
+  is required**: no pack, or a pack older than the build, fails. It used to print *nothing packed*
+  and exit 0 — nothing weighed reading as a Worker that fits.
+- **`foldReadings` / `assertNoFoldLeaks`** — the bundle itself, read for each server fold's own
+  content. Everything above checks the **config**, and the config held while a Turbopack build
+  shipped all four server folds: next.config's patterns still matched their files, and only the
+  webpack path applies them. `deploy/fold` printed *8 folds hold* over a 23.4 MB gz Worker.
 
-  It is deliberately **NOT** on the deploy chain. Putting it there made the builder bundle
-  the Worker twice — a `--dry-run` pack and then the upload — doubling peak memory and disk
-  in an environment nothing here can measure. A gate is worth a fast local answer, never a
-  second failure mode on the path it is supposed to protect. Run it beside a build:
-  `pnpm erpax deploy fold`.
+  The fingerprint is **pairs** of consecutive string literals from the target, absent from its
+  stub, and a pair counts only when both strings sit in the bundle in source order, a few hundred
+  bytes apart. Three versions were measured and refused before it:
+
+  | tried | refuted by |
+  | --- | --- |
+  | an exported name | the stub exports the same name — `UUID_MATRIX_NODES` is in the correctly folded Worker twice |
+  | lone literals | 56% of the atom catalogue's are in the folded Worker, through other modules |
+  | pairs of printable-ASCII literals | the pack escapes non-ASCII as `\uXXXX`, which dropped 805 of the catalogue's 1,136 literals; the 14 pairs left were mostly atom paths, and 5 matched a sorted path list elsewhere |
+
+  So a pair skips atom paths (shared vocabulary), and each string is looked for raw and escaped.
+  Measured 2026-09-11 on the folded webpack Worker, pairs present: matrix 0/64, translations 0/64,
+  tool-defs 0/64, atom catalogue 0/64. The same targets minified by esbuild with its ASCII charset:
+  59–64 of 64. `LEAK_SHARE` sits at half, between the two. A target with too few pairs to say
+  anything fails as *unfingerprinted* — unverifiable is not held.
+
+  It runs on the CI deploy lane: `cloudflare.yml` packs with `wrangler deploy --dry-run` and runs
+  `pnpm erpax deploy fold` between the build and the D1 migration, and [[deploy]]/pipeline refuses
+  any other order. It stays **out** of open-next's `buildCommand`, where it made Cloudflare's builder
+  bundle the Worker twice in an environment nothing here can measure.
 
 `next.config` imports `PRODUCTION_FOLDS` and drives the swaps from it, so the patterns
 have **one home** — the registry the test re-derives, never a second copy in a config.
+
+**Honest boundary of the bundle read.** It proves a server fold's **text** is absent, never that
+nothing heavy shipped — a leak through a module no fold names is caught only by the ceiling. The
+translations catalogue carries the atom catalogue's descriptions, so a translations leak names
+both folds: that text is in the bundle either way. And it reads `client` folds not at all, since
+their targets legitimately run on the server; the admin browser bundle is not read.
 
 **Honest boundary.** This proves each pattern **matches real matter**, never that the
 matter is **dead on a request path** — a fold swapping out something the Worker actually
