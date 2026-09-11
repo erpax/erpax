@@ -3,7 +3,7 @@ import { join, relative } from 'node:path'
 import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { computeDiamond, deploymentFaces } from '@/diamond'
 import { importsOf } from '@/rules/cycle'
-import { buildReadmeCorpusFrozenInputs, schemaCollision } from '@/readme/compute'
+import { frozenCorpusInputs, schemaCollision } from '@/readme/compute'
 
 /**
  * rules/unreached — an atom of code that nothing reaches, from any entry the corpus has.
@@ -89,7 +89,7 @@ export function shippedAtoms(cwd: string = process.cwd()): ReadonlySet<string> {
  */
 export function facedAtoms(cwd: string = process.cwd()): ReadonlySet<string> {
   const faced = memoByFingerprintOnDisk('rules-unreached-faced-atoms', cwd, () => {
-    const { graph, ctx } = buildReadmeCorpusFrozenInputs(cwd)
+    const { graph, ctx } = frozenCorpusInputs(cwd)
     const src = join(cwd, 'src')
     const out: string[] = []
     const walk = (dir: string): void => {

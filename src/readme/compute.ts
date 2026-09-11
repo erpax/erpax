@@ -698,7 +698,7 @@ export function buildReadmeCorpusFrozenInputs(
 
 /** One frozen build per process per tree fingerprint (graph and ledger are not JSON, so in-process),
  *  shared by readers that need only a model instead of each paying the ~39s build. */
-const frozenCorpusInputs = (cwd: string): ReadmeCorpusFrozenInputs =>
+export const frozenCorpusInputs = (cwd: string): ReadmeCorpusFrozenInputs =>
   memoByFingerprint('readme-frozen-inputs', cwd, () => buildReadmeCorpusFrozenInputs(cwd))
 
 /** Is an atom sealed — computed from its folder model, the very field its README prints. Gates read

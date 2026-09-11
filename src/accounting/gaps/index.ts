@@ -6,7 +6,7 @@ import { join } from 'node:path'
 import { bypassMathViolations } from '@/law/folder/ratchet/compute'
 import { atomPathHasLedgerHook } from '@/path'
 import {
-  buildReadmeCorpusFrozenInputs,
+  frozenCorpusInputs,
   deriveFolderModel,
   listAtomPaths,
   schemaCollision,
@@ -127,7 +127,7 @@ const topGapPaths = (impurities: readonly WaveAccountingImpurity[], limit: numbe
 export function accountingGapsInWaves(cwd = process.cwd(), opts: GapsInWavesOpts = {}): GapsInWavesVerdict {
   const maxWaves = opts.maxWaves ?? Number.POSITIVE_INFINITY
   const topPerWave = opts.topPerWave ?? 20
-  const { graph, ctx } = buildReadmeCorpusFrozenInputs(cwd)
+  const { graph, ctx } = frozenCorpusInputs(cwd)
   const policy = maxWorkTamperPolicy()
   const globalBypass = bypassMathViolations(cwd)
   const cache = new Map<string, FolderReadmeModel>()
@@ -171,7 +171,7 @@ export function accountingGapsInWaves(cwd = process.cwd(), opts: GapsInWavesOpts
 }
 
 export function p0AccountingStatus(cwd: string, derive?: (p: string) => FolderReadmeModel): P0AccountingStatus {
-  const modelOf = derive ?? (() => { const f = buildReadmeCorpusFrozenInputs(cwd); return (p: string) => deriveFolderModel(p, cwd, f.ctx, f.graph) })()
+  const modelOf = derive ?? (() => { const f = frozenCorpusInputs(cwd); return (p: string) => deriveFolderModel(p, cwd, f.ctx, f.graph) })()
   const parent = modelOf(P0_ACCOUNTING_ROOT)
   return { parentSealed: parent.sealed, parentNetEb: parent.entropy.netEntropyEb, leaves: P0_ACCOUNTING_LEAVES.map((path) => { const m = modelOf(path); return { path, sealed: m.sealed, netEb: m.entropy.netEntropyEb, gapEb: m.entropy.totalGapEb } }) }
 }
@@ -251,7 +251,7 @@ const isSchemaWord = (leaf: string, cwd: string): boolean => schemaCollision(cwd
  * vocabulary.
  */
 export function gapComposition(cwd = process.cwd()): GapComposition {
-  const frozen = buildReadmeCorpusFrozenInputs(cwd)
+  const frozen = frozenCorpusInputs(cwd)
   const rows = new Map<string, { rows: number; eb: number }>()
   const missingCode: string[] = []
   let gapPaths = 0
