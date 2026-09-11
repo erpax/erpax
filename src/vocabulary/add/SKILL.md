@@ -2,10 +2,10 @@
 name: add
 description: Use when reasoning about add — An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).
 atomPath: "vocabulary/add"
-coordinate: "vocabulary/add · 8/crest · 0426e26d"
-contentUuid: "a9e0757b-f039-5a01-b300-09001b142c4c"
-diamondUuid: "49e68826-c411-8c53-864f-23aeb9a48c3a"
-uuid: "0426e26d-9aa6-879a-8d2b-0e4d6995702c"
+coordinate: "vocabulary/add · 8/crest · cf85d2c9"
+contentUuid: "95b77e20-42e1-505f-a757-0d9113aa33f3"
+diamondUuid: "a51e5b6e-a93a-879a-8311-2aba8160f2fa"
+uuid: "cf85d2c9-113b-8667-be88-51aafeee7f53"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "64da93ec-1e94-8c3f-bd06-be6d859a9582"
+  computationUuid: "1fe94a69-1430-8624-9e53-2cc3d4742657"
   stages:
     - stage: path
       stageUuid: "5b2fae6f-1b91-8d6d-8895-d4caa53d4fd0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9e0b5afb-d22d-8c3c-9b12-1002b96c453c"
     - stage: horo
-      stageUuid: "a0e367cd-71a2-8c35-89fe-10a1d8892efe"
+      stageUuid: "4161e4ee-c33b-8f45-8587-0d768afffdaf"
     - stage: seal
       stageUuid: "03cd8676-9d8e-8169-be77-bf1ca1e33492"
     - stage: uuid
-      stageUuid: "7459b7b8-6eb0-86d2-98e5-67d2faba65e9"
+      stageUuid: "229cfe49-7877-8879-98ce-229a4820b178"
 version: 2
 ---
 # add

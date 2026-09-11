@@ -2,11 +2,11 @@
 name: halal
 description: "Use when reasoning about halal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/halal"
-coordinate: "vocabulary/halal · 5/round · 77c5a5d1"
-contentUuid: "3953f097-897d-5c52-85bb-aa6a77d552fc"
-diamondUuid: "fbf56a8b-d172-8c11-94d1-d2e180ae1d27"
-uuid: "77c5a5d1-fbbb-8e46-9375-79adf8406eaf"
-horo: 5
+coordinate: "vocabulary/halal · 8/crest · 5aafa964"
+contentUuid: "92b92b84-952e-585a-8978-b24f160f2ba3"
+diamondUuid: "07ea2ced-6c52-805d-9cb2-5ba62fda12b6"
+uuid: "5aafa964-179c-8dea-b4b6-d928c7645e9f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ddd0a8a6-c2e2-8623-b801-bbfd814dfae6"
+  computationUuid: "8f351f55-b317-8fd1-8fa3-7cb68d557860"
   stages:
     - stage: path
       stageUuid: "0e3f828e-82e2-8f9e-a6fb-f352e1f77ee6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1c1b1de0-0324-8492-a5bd-d30dbba1432e"
     - stage: horo
-      stageUuid: "35f7ca83-1cca-87f5-b6df-551637508226"
+      stageUuid: "86a26ea4-44e8-8abf-847c-24b717ef63ba"
     - stage: seal
       stageUuid: "e5097052-48c7-8d0f-bb59-3dee64952034"
     - stage: uuid
-      stageUuid: "5fce5443-6cda-8224-b913-6742ea791fea"
+      stageUuid: "a8f20c57-bcbe-8941-9a06-7ad468a424ea"
 version: 2
 ---
 # halal

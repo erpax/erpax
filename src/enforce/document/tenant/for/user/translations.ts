@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "user",
-    "uuid": "693c818b-3e19-8d91-82a8-587406b20bce",
+    "uuid": "88891b92-58ea-8817-a1c0-15f692749748",
     "words": [
       "user"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about user — scopes what a user can *read* and *update*. What it does not reliably reject is a **create that names another tenant**: the document does not exist yet, so there is no existing…",
-    "uuid": "27d1ab04-db2e-8f92-b4b1-8cc88d971ad9",
+    "uuid": "46c2f5b5-8ebc-8598-ba7f-29604fc756c1",
     "words": [
       "use",
       "when",

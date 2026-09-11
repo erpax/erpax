@@ -2,11 +2,11 @@
 name: tributary
 description: Use when reasoning about tributary — The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.
 atomPath: tributary
-coordinate: "tributary · 8/crest · 706ca1d2"
-contentUuid: "10a6fcac-cd62-5074-a41f-dfb99f5e6f48"
-diamondUuid: "0b75cce7-d180-819e-a152-24c31997426f"
-uuid: "706ca1d2-e583-8c2e-ac17-ea0bb4eae6fe"
-horo: 8
+coordinate: "tributary · 4/weave · 6e2976b6"
+contentUuid: "ad5284a2-d533-5c31-9423-bd2cf54562f6"
+diamondUuid: "1b772020-47b7-807d-af5a-22d1d24dafae"
+uuid: "6e2976b6-1ed1-8748-a0b9-c5570bfa55f2"
+horo: 4
 typography:
   partition: tributary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "089a0611-923f-8b68-b03b-9b72ebe3bcc5"
+  computationUuid: "25d3c2d9-9339-8368-a5ac-79ada6a6b604"
   stages:
     - stage: path
       stageUuid: "ac76f764-529d-84af-a27b-324dd2e8a003"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7815f2e8-519b-8aad-8316-42c59b819ab3"
     - stage: horo
-      stageUuid: "ed776e70-c3c3-82c5-938a-93f03b18dcc0"
+      stageUuid: "d78e90de-bdb4-8017-87a8-c4be770c999f"
     - stage: seal
       stageUuid: "569ab65f-c917-8a91-afc9-98251c13df8a"
     - stage: uuid
-      stageUuid: "fe8c7e51-257e-8970-9c90-c5d1973abad7"
+      stageUuid: "63181b87-a439-84e1-a988-ac6f5faa13c4"
 version: 2
 ---
 # tributary

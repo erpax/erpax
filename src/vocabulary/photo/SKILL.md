@@ -2,10 +2,10 @@
 name: photo
 description: Use when reasoning about photo — A photograph of this place.
 atomPath: "vocabulary/photo"
-coordinate: "vocabulary/photo · 8/crest · ecb282e9"
-contentUuid: "7d278181-d7c0-5956-a9c8-a2cecd3ce3d2"
-diamondUuid: "9cdcb38d-b7cb-8fa8-9022-20342a93a30e"
-uuid: "ecb282e9-949c-84b5-86a9-8b32dab700f8"
+coordinate: "vocabulary/photo · 8/crest · 7b83b6db"
+contentUuid: "ea45edff-d2a5-5af4-95f4-a35674f02945"
+diamondUuid: "75e71f74-7210-8852-bede-07441db42e4d"
+uuid: "7b83b6db-690e-88f0-be91-3833c05c4085"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d3af0030-d3bb-86c3-ae47-141606e32335"
+  computationUuid: "6e2eaed5-2b17-851f-8d26-1efd75fe662b"
   stages:
     - stage: path
       stageUuid: "83e2643c-53cc-8322-a636-ac5279fdd9d9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bb77ad8f-2874-8046-b9b9-292570c55afa"
     - stage: horo
-      stageUuid: "a76cf61d-ac9e-8ccb-a40e-0816a505a21b"
+      stageUuid: "a02b936a-5bd6-8b07-a132-15478f85508d"
     - stage: seal
       stageUuid: "e4ba1fd5-63c5-85c1-bb0d-2213d74ee443"
     - stage: uuid
-      stageUuid: "5d323e2f-1065-82d6-9bec-fb9abbdfe41d"
+      stageUuid: "e492bfbe-1c8e-84b5-a43b-8de3ecb3b461"
 version: 2
 ---
 # photo

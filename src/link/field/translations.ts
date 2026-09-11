@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "field",
-    "uuid": "5dde2bea-e790-87ec-b94f-ead4989001e5",
+    "uuid": "387d8012-cb50-8d5f-a91f-1df83c89956f",
     "words": [
       "field"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about field — builds the field: an internal choice resolves against a collection, an external one takes a URI, and decides how it renders without changing what it means. is that closed set.",
-    "uuid": "67733e3b-97b1-8c00-ba3b-182d05115bed",
+    "uuid": "fb471030-0033-8d5b-9c6d-f368a6d84dde",
     "words": [
       "use",
       "when",

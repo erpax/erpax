@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "context",
-    "uuid": "dd2ae101-69b4-8e93-8a11-fee6988f3baa",
+    "uuid": "26065015-31b9-88a9-9ea2-7bcdb22c72fd",
     "words": [
       "context"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when any code needs to branch on country — resolve a single canonical CountryContext from any signal (explicit, IBAN, address, tenant, house default) instead of reading the profile, specifics, and API registries directly.",
-    "uuid": "8d7c9269-2b94-8e99-9b70-27692d21ebbd",
+    "uuid": "201861e4-4af1-83b8-8441-10790ec2ea66",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cultivation",
-    "uuid": "992f0bb9-6ca2-834d-b9ad-cda49a1df70d",
+    "uuid": "dbb7e7a0-b58c-8471-9e1f-61a5f00a3223",
     "words": [
       "cultivation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when weeds are controlled mechanically among a standing crop — shallow soil-stirring (hoeing, wheel hoe, tine weeder) and thermal (flame weeding). Distinct from tillage (which opens bare ground): cultivation works between the rows of a growing crop, timed to the white-thread weed stage. Many shallow, well-timed passes are the low-cost alternative to herbicide.",
-    "uuid": "3db3c575-a437-8a8d-b805-3ae41366accf",
+    "uuid": "0580a64a-700d-8a5c-9107-565d77e2a2e1",
     "words": [
       "use",
       "when",

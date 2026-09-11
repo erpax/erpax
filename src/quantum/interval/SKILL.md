@@ -2,10 +2,10 @@
 name: interval
 description: "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs."
 atomPath: "quantum/interval"
-coordinate: "quantum/interval · 4/weave · 147bacd2"
-contentUuid: "57f69929-f4ce-599c-985a-e75fc5277ecb"
-diamondUuid: "085fc56e-1454-8700-8e69-aa5ea21c1b5d"
-uuid: "147bacd2-64d1-887f-a708-6f3c95835d40"
+coordinate: "quantum/interval · 4/weave · 1d4f25b6"
+contentUuid: "c75d9beb-6b9c-5dc8-a434-445d09175ce1"
+diamondUuid: "c7b0d9f8-5d51-8fe5-be2b-18c8f2e8cb94"
+uuid: "1d4f25b6-1f65-83fe-9c36-7977f3184c7b"
 horo: 4
 typography:
   partition: quantum
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e59944b6-d92f-8e4a-9a17-4aaed06d6750"
+  computationUuid: "e62f7fba-f002-8b09-9694-e2ebd3d819fc"
   stages:
     - stage: path
       stageUuid: "c140b5f2-b1bc-8b06-9204-9bf10f085b71"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "afd6a590-43c8-8363-abd3-e5fd5bb78f4e"
     - stage: horo
-      stageUuid: "5e2534e0-0076-8cbf-a8c5-eb4d68b2227a"
+      stageUuid: "53ac24c3-b910-8fdb-bee0-e741a3b2db7e"
     - stage: seal
       stageUuid: "98adf98f-b215-8aab-bd18-eee8f1c9ce34"
     - stage: uuid
-      stageUuid: "7455c0d8-f433-8dcc-bd5c-092fd325beab"
+      stageUuid: "4ad88703-493e-86e0-b2c4-12d7dcdf9545"
 quantum:
   superposition:
     - dataset
@@ -47,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "e59944b6-d92f-8e4a-9a17-4aaed06d6750"
-    contentUuid: "57f69929-f4ce-599c-985a-e75fc5277ecb"
+    computationUuid: "e62f7fba-f002-8b09-9694-e2ebd3d819fc"
+    contentUuid: "c75d9beb-6b9c-5dc8-a434-445d09175ce1"
 version: 2
 ---
 # quantum/interval — the light cone is not a matter of opinion, and that is what a ledger seals on
@@ -94,4 +94,4 @@ A `theorem` verdict **names** a Lean theorem, and `phenomena()` **reads the file
 
 Composes: [[quantum]] · [[merge]] · [[rules]]/prose · [[law]].
 
-<sub>content-uuid `57f69929-f4ce-599c-985a-e75fc5277ecb` · account `quantum/interval` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `c75d9beb-6b9c-5dc8-a434-445d09175ce1` · account `quantum/interval` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,18 +2,18 @@
 name: fs
 description: "Use when reasoning about the filesystem as erpax sees it — the tree of paths to content where the path IS the address and the leaf word IS the atom; the matter the corpus lives on, and the thing whose every state is a snapshot."
 atomPath: "vocabulary/fs"
-coordinate: "vocabulary/fs · 4/weave · 24ad40a2"
-contentUuid: "d6d457b2-6b76-5d0e-93fa-77d356717708"
-diamondUuid: "383651d9-3d22-8996-9a74-07aa18d17f4f"
-uuid: "24ad40a2-0fd2-8668-88f2-2e1f0bd7564d"
-horo: 4
+coordinate: "vocabulary/fs · 8/crest · f3dec317"
+contentUuid: "4d915df0-e4e0-5a69-943a-efc6938a5402"
+diamondUuid: "7db776b2-e701-8231-a264-bd1d4c195387"
+uuid: "f3dec317-5d6a-8ebb-bc17-583d33053191"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 82
 standards: []
 bindings: []
 signatures:
-  computationUuid: "58daab85-9c3d-8a72-9ccd-6933956d51dc"
+  computationUuid: "96375d8b-d43f-89ea-935d-c27a7e12f8ae"
   stages:
     - stage: path
       stageUuid: "34f2404a-04d4-8368-b3e7-0e4a54b1e7de"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d6b7bb1d-5685-8783-b3b0-5ce7fe79d1e7"
     - stage: horo
-      stageUuid: "83d8a4a2-dbd1-8459-b016-20de1d9c9a25"
+      stageUuid: "312f44a8-fa71-830a-a584-da8a2f337a6e"
     - stage: seal
       stageUuid: "5532a6f6-5c00-8bbd-8698-5b51343e6c9e"
     - stage: uuid
-      stageUuid: "3d249c47-1fd5-8b15-8310-0fa0debf92ed"
+      stageUuid: "39e9102c-94d8-89be-af73-12bafa067042"
 version: 2
 ---
 # fs — the tree of paths to content

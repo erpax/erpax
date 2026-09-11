@@ -2,11 +2,11 @@
 name: posting
 description: "Use when a GL posting needs its fiscal period — the beforeValidate hook that READS the period from fiscal-calendars, enforces the period lock (open · locked · archived, per SOX §404), denormalises the calendar row onto the posting, and chains its audit leaf. Read this before wiring it: until now it invented the period from the calendar year and hardcoded quarters, and enforced no lock at all."
 atomPath: "validate/fiscal/period/posting"
-coordinate: "validate/fiscal/period/posting · 8/crest · 21d457be"
-contentUuid: "29a21338-18d0-567a-b771-72ba1b12221c"
-diamondUuid: "801cbaac-d1a9-851d-a5e7-45fd43ad7914"
-uuid: "21d457be-8537-8721-8a87-eab90dbc21e3"
-horo: 8
+coordinate: "validate/fiscal/period/posting · 2/share · cebc65ec"
+contentUuid: "f7eb9e01-d516-55f4-9a62-1985830eecf2"
+diamondUuid: "bafc208c-8537-85b9-8fec-29ffb3f410b0"
+uuid: "cebc65ec-378d-8a7a-bc1a-c58b0542b0db"
+horo: 2
 typography:
   partition: validate
   bondDegree: 44
@@ -19,7 +19,7 @@ standards:
   - "SOX:2002 (period-lock enforcement, access control)"
 bindings: []
 signatures:
-  computationUuid: "1ba4c907-b63e-85c4-8408-413c11bce2a0"
+  computationUuid: "030e051f-f211-8aee-8ee1-d13fb3ca282d"
   stages:
     - stage: path
       stageUuid: "c686c79d-f169-8ca2-b02c-9dcef726485a"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "4286890a-ccd1-8f30-bb6e-bffab850002c"
     - stage: horo
-      stageUuid: "e898d6a6-c071-8b12-9a72-6a0384831059"
+      stageUuid: "b851912b-38f3-8f08-8826-e8d5c9befee4"
     - stage: seal
       stageUuid: "b955785b-d445-8654-9a55-bdd462cfcdaf"
     - stage: uuid
-      stageUuid: "8c3281c7-8bdc-8b0d-b7f5-46b64f4ba346"
+      stageUuid: "995be984-ae75-84ba-941d-fe16b0e87e43"
 version: 2
 ---
 # posting — the period is READ, never invented

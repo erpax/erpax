@@ -2,11 +2,11 @@
 name: observational
 description: "Use when reasoning about observational as a medical facet of medical — vocabulary pivot to @/observational; nested not duplicated."
 atomPath: "medical/observational"
-coordinate: "medical/observational · 8/crest · 2f3f4567"
-contentUuid: "af907185-5924-57d2-88b3-21e23f438dc2"
-diamondUuid: "c4f8a4d8-4cf0-8d8c-ace2-152fa4b5a95d"
-uuid: "2f3f4567-47c5-81a5-8100-eb708784e14b"
-horo: 8
+coordinate: "medical/observational · 1/base · ec2e4cf2"
+contentUuid: "54ece539-b008-5b6e-96eb-b94ad1ab2a02"
+diamondUuid: "be4bd63f-9ff8-8f96-933c-b4081042a6cb"
+uuid: "ec2e4cf2-1bed-8422-a02c-752f7687f461"
+horo: 1
 typography:
   partition: medical
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "73b0c607-188b-8502-be4e-988ad3a59109"
+  computationUuid: "20f79e0b-100d-8159-aabc-4a308c08e05f"
   stages:
     - stage: path
       stageUuid: "846135cf-2ad1-84bd-b3c4-4ac5f084d1ae"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fccedcf2-1b47-8d89-b1f7-8aedde6174eb"
     - stage: horo
-      stageUuid: "85c2f79e-24a5-8bd5-a088-b1690d33c453"
+      stageUuid: "2f991317-ac8f-88b4-8812-aac93b35c978"
     - stage: seal
       stageUuid: "2808abae-580c-8b3a-8853-8e373bee5fd6"
     - stage: uuid
-      stageUuid: "c76ec637-6eb3-876c-a2f0-8bf5c197f7cd"
+      stageUuid: "f0d3e0ce-0631-8cd2-a485-0c6fdbff7bd0"
 version: 2
 ---
 # medical/observational — medical facet

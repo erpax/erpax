@@ -2,10 +2,10 @@
 name: mandate
 description: "Use when reasoning about mandate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mandate"
-coordinate: "vocabulary/mandate · 1/base · 7613c200"
-contentUuid: "c9176e00-50cf-5b9e-bfa4-619f0c7443ad"
-diamondUuid: "27acb253-d715-811f-95d4-f85d75d144c2"
-uuid: "7613c200-4cbf-86d4-b899-7aeed76b6920"
+coordinate: "vocabulary/mandate · 1/base · 23cb2f8c"
+contentUuid: "b186ce9f-a4bd-5933-aea4-31529cf02ee5"
+diamondUuid: "2afdfe48-4f22-802a-90c2-38e1db70fae0"
+uuid: "23cb2f8c-a919-8723-81a8-d099747f6f47"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "44bfb71c-945f-81d2-8b2e-b25c4e944205"
+  computationUuid: "786d7f6b-280f-8843-a7bf-3214b075dd4c"
   stages:
     - stage: path
       stageUuid: "86515b3b-29e1-87c2-92bc-400df98614c7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d955b9be-1e23-8fe9-a2ce-6be7087765bb"
     - stage: horo
-      stageUuid: "dd69f4d8-1c96-8b3a-9203-5975cedef2d3"
+      stageUuid: "5dfd3461-4129-8471-ab6d-ac0e07d4a81f"
     - stage: seal
       stageUuid: "de47e7ac-5b19-86d2-92d0-8d7f7fffd6da"
     - stage: uuid
-      stageUuid: "7a212e38-2cd8-8181-86ac-bfe447cf59ac"
+      stageUuid: "09440ac9-6434-8438-8dd6-f2ab1b9ec50d"
 version: 2
 ---
 # mandate

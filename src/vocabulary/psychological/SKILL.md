@@ -2,10 +2,10 @@
 name: psychological
 description: "Use when reasoning about psychological — A schema.org component word, collided out of schema.org compounds — fused from PsychologicalTreatment (sti · collapse · merge)."
 atomPath: "vocabulary/psychological"
-coordinate: "vocabulary/psychological · 1/base · 54123e99"
-contentUuid: "1ed3d402-0c49-52e2-93b9-91bbefbf3d87"
-diamondUuid: "06da7598-81bb-800f-8631-4bb3f579945f"
-uuid: "54123e99-34cf-8bbc-90cd-84b09a9e4ecc"
+coordinate: "vocabulary/psychological · 1/base · 707e23df"
+contentUuid: "5a4c6e36-a423-5d3b-a6d0-b661ce41ba92"
+diamondUuid: "2201b9d2-feac-8137-b762-77f25f716baf"
+uuid: "707e23df-8550-85cd-b3dc-70f7c3b4471d"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "218c4acb-fc4b-8597-a952-9022571c1d8d"
+  computationUuid: "7d30dc1f-d27a-8183-9431-e6144c258bc3"
   stages:
     - stage: path
       stageUuid: "4ee43783-284b-899f-87b6-6e91cc15a53e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7539ce94-799e-8256-91f6-a40fd032a455"
     - stage: horo
-      stageUuid: "57e775f8-6f58-8ad1-8672-28ae84a695d8"
+      stageUuid: "5440f611-0543-88b3-a69f-ad1261db4629"
     - stage: seal
       stageUuid: "ab543e09-155c-8e5b-8aa9-f22460d32524"
     - stage: uuid
-      stageUuid: "b21b94b3-4037-8420-85d5-1d5cbe28a8fd"
+      stageUuid: "a7775a7c-3af0-81f1-aecf-eb103b93afe1"
 version: 2
 ---
 # psychological

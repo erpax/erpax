@@ -2,18 +2,18 @@
 name: pasture
 description: "Use when modelling the managed forage land livestock graze — pasture (improved/tame forage) and rangeland (native), divided into paddocks for rotational grazing. The grazing land-unit; the livestock counterpart of a crop field, its productivity a fertility/capacity measure."
 atomPath: "vocabulary/pasture"
-coordinate: "vocabulary/pasture · 7/descent · 198b677d"
-contentUuid: "dbdac620-88ad-53e4-b043-e2a361f558e5"
-diamondUuid: "081881bb-636f-867b-885a-869e51725034"
-uuid: "198b677d-19cc-845c-a66b-d129a551a10b"
-horo: 7
+coordinate: "vocabulary/pasture · 5/round · 5eb5f4b3"
+contentUuid: "e59a099a-5f59-58eb-9842-2a2210dda23d"
+diamondUuid: "aa35c958-21b1-8d6f-8a4d-64e6a8ba21c8"
+uuid: "5eb5f4b3-7014-8cbd-8f19-cd8af1c5f336"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 42
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b9121f62-f618-8c87-b928-7b6202c1e89c"
+  computationUuid: "3f71b7c7-ea27-8201-95ca-6742e1a3f88f"
   stages:
     - stage: path
       stageUuid: "881865bd-2ccf-8151-8ef0-e067d0668a2c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3b141022-61b3-8ac8-9855-c5581e22b189"
     - stage: horo
-      stageUuid: "0c2aec92-5e05-8d76-9dba-425b72fa32ff"
+      stageUuid: "861e2f47-b63f-8bd8-b081-76c51cd63fc2"
     - stage: seal
       stageUuid: "d9e4f636-827b-82eb-9dbe-45878257f4a8"
     - stage: uuid
-      stageUuid: "1f918ac2-ef72-8453-bb45-9bc87fff8255"
+      stageUuid: "0faedcf3-9935-880f-a818-314e0ef3bd78"
 version: 2
 ---
 # pasture — the managed forage land livestock graze

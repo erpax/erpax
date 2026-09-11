@@ -2,18 +2,18 @@
 name: collapse
 description: "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards."
 atomPath: collapse
-coordinate: "collapse · 5/round · 80092e97"
-contentUuid: "a51988ac-ac3f-5d38-9f33-3a2eabd2af69"
-diamondUuid: "25a22d7c-0de0-853b-b705-0e05364d7a04"
-uuid: "80092e97-7a44-82f9-b641-39533a9d409e"
-horo: 5
+coordinate: "collapse · 2/share · 07ffc16e"
+contentUuid: "3d76dc12-9ee7-5d5c-80df-71298ed24975"
+diamondUuid: "7e8e53cc-7526-81f1-b62f-d36a6d9f4739"
+uuid: "07ffc16e-3b19-8e37-9867-1c9f24642378"
+horo: 2
 typography:
   partition: collapse
   bondDegree: 4331
 standards: []
 bindings: []
 signatures:
-  computationUuid: "262cf27f-c890-8a8d-8072-0bb4dfb05d31"
+  computationUuid: "3269adcd-1bae-8493-bb36-a32ebfad406a"
   stages:
     - stage: path
       stageUuid: "9be25188-a050-872d-aec8-83384bf64eeb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bf6b7f8e-ee2d-8da1-b2d9-559557ab695f"
     - stage: horo
-      stageUuid: "3414b6b3-5b52-853f-a05e-891e1941e66d"
+      stageUuid: "83b3e03b-956b-8f3e-974c-71df8ba13d08"
     - stage: seal
       stageUuid: "82531e37-b9b3-8317-91fb-35818811d257"
     - stage: uuid
-      stageUuid: "078323be-f939-8049-9e49-972ed58ed0ea"
+      stageUuid: "eb57e312-b42b-80e3-a159-d80e3f1e9799"
 version: 2
 ---
 # collapse — the phase transition to a denser, generative core

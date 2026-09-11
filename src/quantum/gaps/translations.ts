@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gaps",
-    "uuid": "7a0bd32d-6e66-83e8-b251-65393bdf706c",
+    "uuid": "a1db4b2c-1b86-8fee-8dde-d0d74ff37b68",
     "words": [
       "gaps"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asked to fill the gaps in quantum mechanics — the honest toolbox that NAMES the open gaps (measurement problem, Born rule, preferred basis, quantum gravity, interpretation) and refuses to fill them. Every gap's `fills` is the literal false, so the code cannot claim a solution; the corpus tools are shown as lenses to learn through, never fillings. HARMONY ≠ TRUTH.",
-    "uuid": "4ab2d0a5-2a52-8eca-88d5-5cce85a16540",
+    "uuid": "8b9546a1-4cd8-89be-b028-c2ed702ac163",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: ayurvedic
 description: "Use when reasoning about ayurvedic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ayurvedic"
-coordinate: "vocabulary/ayurvedic · 1/base · a440277e"
-contentUuid: "9650a6c1-27cc-5101-9eaa-d908cc54b186"
-diamondUuid: "c0f5f1c6-ae98-8f3e-89c0-e9e7a54309d4"
-uuid: "a440277e-b9f9-8cf9-a1aa-e266682cc869"
-horo: 1
+coordinate: "vocabulary/ayurvedic · 8/crest · 92567741"
+contentUuid: "216de8f6-d554-5491-922d-c785fe1d74b5"
+diamondUuid: "7a156b54-d2f5-8715-a0b7-6e45bfd78de8"
+uuid: "92567741-2022-8194-8656-3ed48d4b1dbf"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c693c995-0efb-8f02-8217-88c5d8c68649"
+  computationUuid: "69dabaf0-e2ab-8e06-bd3b-6d44c99eca03"
   stages:
     - stage: path
       stageUuid: "95bb3992-3d49-826b-a466-599559b6d3fd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d98f392f-cf26-83c1-95fc-3220825d1ad3"
     - stage: horo
-      stageUuid: "a62a03b8-dabb-8afb-aaa0-d77625b4840b"
+      stageUuid: "ca4e7cc6-7941-8688-8b65-58e2fee1cd86"
     - stage: seal
       stageUuid: "ad3e5999-e1fd-8eea-9c14-dac5cc7af0ef"
     - stage: uuid
-      stageUuid: "e19cc1b8-858f-803a-a266-646446b85949"
+      stageUuid: "e802d2f6-aa01-89dc-9eba-abb5816c5b4d"
 version: 2
 ---
 # ayurvedic

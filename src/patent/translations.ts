@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "patent",
-    "uuid": "71292f1c-4bee-8f89-893e-192e8e61627e",
+    "uuid": "725944c2-597d-8a15-a23f-af21db865747",
     "words": [
       "patent"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when challenging an over-broad or illegally granted patent — encode the claim as a content-digest and test it on three computable grounds (prior art via anchored anteriority, obviousness via merge identity, abstract-math via §101); defensive only, not legal advice.",
-    "uuid": "68848263-2ba3-8817-bd3e-3fc22351ee38",
+    "uuid": "368fb312-8c57-84b3-bda6-98b789305e6c",
     "words": [
       "use",
       "when",

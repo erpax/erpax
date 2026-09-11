@@ -2,11 +2,11 @@
 name: interacting
 description: "Use when reasoning about interacting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/interacting"
-coordinate: "vocabulary/interacting · 1/base · c78c7f8a"
-contentUuid: "cb4a7c41-ad50-5668-9cd3-ba3da41f445f"
-diamondUuid: "34fe48a1-631b-8edd-9457-5dfc2cc9cd3b"
-uuid: "c78c7f8a-9f79-8fa6-a40f-4a0beef21ef1"
-horo: 1
+coordinate: "vocabulary/interacting · 5/round · 69c460e6"
+contentUuid: "b52af57b-0309-5622-9dc0-b4fbe24c5cf9"
+diamondUuid: "31c4d55a-875d-8f80-b1d5-d725efb9c7c8"
+uuid: "69c460e6-1de0-8b66-b3cf-4083b5f3b499"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0e7cf2b6-a2cb-8e40-9688-9fd1243e1be8"
+  computationUuid: "faebb4fe-56c9-8c55-a012-ccf80ad1bbdd"
   stages:
     - stage: path
       stageUuid: "f1e5a674-19ef-88a4-a044-efa8c9a1cf18"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c6762eb9-eba0-8f90-a105-8a100e7fd6e8"
     - stage: horo
-      stageUuid: "b9655057-1b25-8aa2-a65b-42109e213a98"
+      stageUuid: "41aa9e7e-7e48-8f0d-ac63-be85fc15d2d8"
     - stage: seal
       stageUuid: "b8b6459e-2eb1-8f26-bb4b-e156b96b366c"
     - stage: uuid
-      stageUuid: "41e8fa1f-1d98-8d1a-9f15-9168c3e45c2d"
+      stageUuid: "12a454ef-2a4c-8a90-9917-b6e58dd9ca05"
 version: 2
 ---
 # interacting

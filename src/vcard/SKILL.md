@@ -2,10 +2,10 @@
 name: vcard
 description: "Use when reasoning about vcard as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: vcard
-coordinate: "vcard · 7/descent · 99d7cc8f"
-contentUuid: "b6ad01f3-54db-5365-8f93-ad67e53877d9"
-diamondUuid: "3c4f7153-4608-8590-80ed-fd72777d4497"
-uuid: "99d7cc8f-de04-893b-b23d-cf9a00f382b4"
+coordinate: "vcard · 7/descent · c835c58e"
+contentUuid: "96efc6d5-4192-5049-a1cd-8d9aee1376b3"
+diamondUuid: "ae4035e9-0775-83b7-b31c-84ca01037cdd"
+uuid: "c835c58e-0472-80cc-afdb-5f1b361d834a"
 horo: 7
 typography:
   partition: vcard
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2c10366e-c66a-8cd4-aed3-a2ee8b707530"
+  computationUuid: "c7018171-1eab-816a-9702-986080b3f340"
   stages:
     - stage: path
       stageUuid: "fe010be3-dc38-8131-bf06-5ae88fc14478"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ee5c1b3b-74f0-89da-9677-986be2e9a329"
     - stage: horo
-      stageUuid: "2fa0d44e-4e0f-8eaa-a894-9fd01d2beba9"
+      stageUuid: "0355a004-6c38-8361-a255-68bb388ead1c"
     - stage: seal
       stageUuid: "b23db251-dea8-8cbf-b585-3dd54da58912"
     - stage: uuid
-      stageUuid: "51584d0e-fa90-8737-ae6c-0254341e8fed"
+      stageUuid: "defca151-69d3-8cf9-8319-6510e326d57f"
 version: 2
 ---
 # vcard

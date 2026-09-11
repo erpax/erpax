@@ -2,18 +2,18 @@
 name: consent
 description: "Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions."
 atomPath: consent
-coordinate: "consent · 7/descent · 32b855e8"
-contentUuid: "41f4b093-5d71-582c-b84b-15409fbde3dc"
-diamondUuid: "c10ff6e1-d970-8669-9aea-cf835d1ac345"
-uuid: "32b855e8-0d3b-8f52-8979-634db1715f23"
-horo: 7
+coordinate: "consent · 1/base · 66ac9b96"
+contentUuid: "dd92ca0d-fc87-58a4-962f-3dd1611df5f7"
+diamondUuid: "46a4e012-9c61-8b33-a000-c98d701fbc12"
+uuid: "66ac9b96-61fb-85fd-9330-dd265f9c2212"
+horo: 1
 typography:
   partition: consent
   bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "179e3d80-966f-8caa-bbfa-a5a594d8877b"
+  computationUuid: "5e7dc056-7ef2-8f38-ada3-46298ea868d1"
   stages:
     - stage: path
       stageUuid: "a5193824-78c2-85c2-a1fc-ee1757d8b955"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3434fdcb-1d97-8dc3-9d56-68a2cd0a82b7"
     - stage: horo
-      stageUuid: "8dbd8173-8ab7-8eb7-a6e3-01c2f155f0d0"
+      stageUuid: "84b24513-ce57-8953-adb0-c8ed07629358"
     - stage: seal
       stageUuid: "6dd005cf-a812-856d-a856-961e0c517710"
     - stage: uuid
-      stageUuid: "160e68a4-982b-8829-90af-215bba2bd712"
+      stageUuid: "1aa7e6d4-53d7-822d-b9d1-27abfac78a2f"
 version: 2
 ---
 # consent

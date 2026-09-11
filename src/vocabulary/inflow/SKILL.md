@@ -2,10 +2,10 @@
 name: inflow
 description: "Use when reasoning about inflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/inflow"
-coordinate: "vocabulary/inflow · 2/share · 4c688ec8"
-contentUuid: "34c3d1c8-2a09-508a-aeeb-f1b3670178a8"
-diamondUuid: "84dd91cb-c9b9-8d0d-a113-c6355a2f75a4"
-uuid: "4c688ec8-4ebc-81c4-9d97-c21712a6b667"
+coordinate: "vocabulary/inflow · 2/share · af475f25"
+contentUuid: "23c65596-1573-594c-9e3f-5e9ebb314fd8"
+diamondUuid: "43b87585-e025-8366-9152-a490222774cd"
+uuid: "af475f25-7a7a-876a-81b2-4b551d82e6d6"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "005591e1-1ca3-8d04-b27b-f8191014ee3e"
+  computationUuid: "1189567a-188b-8c45-9843-abcd773a3044"
   stages:
     - stage: path
       stageUuid: "39edd95f-79b7-8d6d-919b-773b252e42a8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "774b1459-d1f6-8552-a732-867d4764d5d6"
     - stage: horo
-      stageUuid: "34d63ca7-a94e-8230-aed1-e8e5d8739b0b"
+      stageUuid: "504a899a-b14b-8da3-b27b-edc68ecffaf9"
     - stage: seal
       stageUuid: "93251a9e-4907-87b9-8042-902c005f1ec1"
     - stage: uuid
-      stageUuid: "af6d3815-3c77-81aa-9b7a-56757a21b878"
+      stageUuid: "c2b19949-a4a1-856c-9937-1e0e4796576a"
 version: 2
 ---
 # inflow

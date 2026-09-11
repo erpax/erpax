@@ -2,11 +2,11 @@
 name: tenant
 description: "Use when modelling one tenant — the singular model of the tenants collection (the plural store); one isolated organization within the multi-tenant platform."
 atomPath: tenant
-coordinate: "tenant · 2/share · 21482bed"
-contentUuid: "64cbe735-aa44-554f-a2cb-01640b97a70d"
-diamondUuid: "abbc5546-6c2f-813f-9c83-7a91e5c3a785"
-uuid: "21482bed-b02d-8940-90d9-3271de425b19"
-horo: 2
+coordinate: "tenant · 5/round · d7b37787"
+contentUuid: "21198bd1-b919-5967-8962-8f3bbebdbcd6"
+diamondUuid: "49049980-124b-8b81-9abe-ebbf23f160bf"
+uuid: "d7b37787-457d-84d9-b053-315eeba4812c"
+horo: 5
 typography:
   partition: tenant
   bondDegree: 59
@@ -25,7 +25,7 @@ standards:
   - "WCO-HS"
 bindings: []
 signatures:
-  computationUuid: "ce6a3ff3-823f-8c93-aac7-705c52c14d9c"
+  computationUuid: "0cd80408-4f57-8199-a349-311e197ce2f0"
   stages:
     - stage: path
       stageUuid: "4c66b572-895c-8d84-8cc0-8c422684b9ec"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "788083c4-73e6-8e46-a522-f7b66f2af46e"
     - stage: horo
-      stageUuid: "f79545da-0809-8747-abad-ccc02a455602"
+      stageUuid: "1072dee2-95ef-846f-a972-d7ec3d5d80c8"
     - stage: seal
       stageUuid: "a585d6d1-00f2-8320-b8d0-873fd546a546"
     - stage: uuid
-      stageUuid: "eee037d0-e841-816e-bd13-b76329bb8cff"
+      stageUuid: "ba9ee4fb-83be-806c-9a02-6b698b4deae4"
 version: 2
 ---
 # tenant — the model of one [[tenants]] row

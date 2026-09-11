@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hedge",
-    "uuid": "620d766f-646d-8afd-8a41-04dd5a59bbf9",
+    "uuid": "afdf06fd-9142-8c89-96b6-28751272f5dc",
     "words": [
       "hedge"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market",
-    "uuid": "18b1cd81-fd27-86ae-b353-8237909c225a",
+    "uuid": "41859803-8835-866e-8029-23449439e9c4",
     "words": [
       "use",
       "when",

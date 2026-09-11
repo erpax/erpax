@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reverse",
-    "uuid": "ec544fc3-f9d3-8236-ba9c-8b8247901501",
+    "uuid": "7e32dac7-ca10-8abb-be84-cd95f492ff10",
     "words": [
       "reverse"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the self REVERSES — the descent: the reverse coil (×5) radiates the dense core back out and, as double-entry, swaps debit↔credit to correct a post (self-applied reverse at forward-coil position 7/descent). The outward turning to return.",
-    "uuid": "0e10aa6f-082e-85cc-a1a6-5042406543d8",
+    "uuid": "8b3edf7e-8220-84ce-a861-fcf1c2613e78",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: movements
 description: "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption."
 atomPath: "items/inventory/movements"
-coordinate: "items/inventory/movements · 8/crest · 09434937"
-contentUuid: "5b033d70-34d5-5672-b819-46cd17926be2"
-diamondUuid: "41302be3-2651-8ab6-b1f8-0811df5ca25b"
-uuid: "09434937-135f-847c-979a-2d5280b66091"
-horo: 8
+coordinate: "items/inventory/movements · 4/weave · 770a9a93"
+contentUuid: "759f81fa-ac5a-514c-944f-11c74652450a"
+diamondUuid: "7ecc8fab-6429-8ec9-b8a3-5c8b95fb268c"
+uuid: "770a9a93-eb83-8d70-b3ed-bdf28e5aecc8"
+horo: 4
 typography:
   partition: items
   bondDegree: 32
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "af1ee547-81cf-86e5-8842-a0382fa65e10"
+  computationUuid: "6f175933-95ac-88f1-9c29-15d3b8c72b15"
   stages:
     - stage: path
       stageUuid: "9d9b856b-a92d-8cb8-8238-a6c274078938"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "d0b3c040-bb58-8c01-846b-10ef355df92b"
     - stage: horo
-      stageUuid: "1b2d56e6-b3be-8d9a-83d8-89ae55ea5f01"
+      stageUuid: "c10994f1-3fd6-8f3a-bfa5-faa3064111c8"
     - stage: seal
       stageUuid: "af6eec69-3941-8be1-af17-cc9607733e93"
     - stage: uuid
-      stageUuid: "587f3487-9b1e-8375-abe7-92c300f9e05b"
+      stageUuid: "92a4f924-efd2-8cf7-9a28-99c3db01e48a"
 version: 2
 ---
 # inventory-movements

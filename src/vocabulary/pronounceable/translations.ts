@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pronounceable",
-    "uuid": "36d44225-f636-888b-b91a-e10df7a769ab",
+    "uuid": "1c1ba1ad-a5a6-8ea3-b23e-231e7897e888",
     "words": [
       "pronounceable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about pronounceable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "bddefe5e-537e-806b-a6ed-8b43c4831490",
+    "uuid": "1a177469-8fb3-87f0-a809-0a42fa116b7d",
     "words": [
       "use",
       "when",

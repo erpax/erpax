@@ -2,18 +2,18 @@
 name: fold
 description: "Use when reasoning about fold — and the folds built on it: , , , and the two roots · ."
 atomPath: "merge/fold"
-coordinate: "merge/fold · 7/descent · e9fdbcd3"
-contentUuid: "54933e37-0b8f-51ca-bdbd-68c07e256e14"
-diamondUuid: "03ee1951-6a16-8cff-853d-ea4d265e9f6b"
-uuid: "e9fdbcd3-e0d0-8dfd-b9ff-2b1861d050fb"
-horo: 7
+coordinate: "merge/fold · 4/weave · ffd3bb97"
+contentUuid: "b2118bdf-0baf-5913-bc08-f3612eb4c8e4"
+diamondUuid: "2e9bae62-2526-8dfe-83f1-ac2ae9e63616"
+uuid: "ffd3bb97-557e-8a63-8234-11286a80b0ed"
+horo: 4
 typography:
   partition: merge
   bondDegree: 89
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4f1c9d0f-515f-8ae4-85cf-1a0a15aa3948"
+  computationUuid: "0754bb8a-9c7f-83f6-b3bc-8c1150ebad96"
   stages:
     - stage: path
       stageUuid: "50cc8bfc-ca34-8b25-b9ba-3f609344d023"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "76227e6e-cea1-8a1b-b691-df8189cc4568"
     - stage: horo
-      stageUuid: "9c9ee7e3-428d-88bb-a7b2-e53be1e464e5"
+      stageUuid: "f8f987a7-a586-8507-ac97-d82fdc5460a2"
     - stage: seal
       stageUuid: "5b8bf088-b326-8401-8256-02af39e5fe70"
     - stage: uuid
-      stageUuid: "896cdc42-34b4-86da-8b8f-1def5c2824ac"
+      stageUuid: "90d68a26-ee8f-874f-b1fb-88832e0d557e"
 version: 2
 ---
 # merge/fold — the primitive, extracted so the barrel can re-export instead of concentrate

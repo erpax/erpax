@@ -2,11 +2,11 @@
 name: transfer
 description: "Use when reasoning about transfer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: transfer
-coordinate: "transfer · 2/share · 3572c33b"
-contentUuid: "f100f4fe-6b16-5341-afbd-51b62859d6e8"
-diamondUuid: "2a0cda38-3743-85d2-94ce-6db0fb78145d"
-uuid: "3572c33b-237c-8b9a-9937-c8f6c95fee0a"
-horo: 2
+coordinate: "transfer · 7/descent · 0f7f3fd0"
+contentUuid: "3fb9691e-71ed-518e-8a47-69c21c78b5f3"
+diamondUuid: "ac949c3a-2baf-809f-9d19-78034f46941b"
+uuid: "0f7f3fd0-5baf-8b03-8839-ac86f191bf4b"
+horo: 7
 typography:
   partition: transfer
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7deb39ff-cc48-8f7b-9c19-2320a7b680e3"
+  computationUuid: "9c123d5d-1b41-84e0-924b-bc0e32ffa442"
   stages:
     - stage: path
       stageUuid: "0e7d17aa-9e1e-8e9a-a77c-a1f0591f6205"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "156f3ed2-b82e-85cc-b097-79f82d9f3196"
     - stage: horo
-      stageUuid: "78628160-08da-8741-9597-f91cc617c565"
+      stageUuid: "8b4bb1af-eb51-8cbf-b015-20451528e3ed"
     - stage: seal
       stageUuid: "e78c662e-6bac-8ab4-b014-466fccc54b72"
     - stage: uuid
-      stageUuid: "35f4a8ae-0932-8caa-9378-5789988a0582"
+      stageUuid: "567d7d6c-9f84-825c-aab8-95c7c3ec29b1"
 version: 2
 ---
 # transfer

@@ -2,11 +2,11 @@
 name: products
 description: "Use when reasoning about products as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/products"
-coordinate: "vocabulary/products · 2/share · 181df705"
-contentUuid: "cf378198-fe24-5f20-8d61-1aaaf7553827"
-diamondUuid: "e12fb9f5-542b-835f-892b-cf07475df460"
-uuid: "181df705-7f4b-894f-bcc1-3b6035e1c933"
-horo: 2
+coordinate: "vocabulary/products · 1/base · d39e7548"
+contentUuid: "e8c013b0-3133-5032-bd46-0d1c69f06b1b"
+diamondUuid: "42a19b79-479a-8614-87e5-53018007cbb9"
+uuid: "d39e7548-76c0-8bb2-aa09-10dbdbd9419c"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6aa6d611-1a7a-8aee-8740-03c8c7513ce5"
+  computationUuid: "c41c70cf-ee24-879e-ba1c-f7fd24c74a8c"
   stages:
     - stage: path
       stageUuid: "4f1db9f3-07df-8315-8d37-60d19c894ebc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5fc892d1-8da1-8a43-b159-5e0c35494439"
     - stage: horo
-      stageUuid: "25f99cc1-849a-8c44-a04b-c1c4c32cb2ba"
+      stageUuid: "6a9678e2-1533-8a16-8c2f-5458c5f5f010"
     - stage: seal
       stageUuid: "a4245421-2ce5-85f2-a109-93d74b66cf64"
     - stage: uuid
-      stageUuid: "af34ae67-f63c-8c59-a439-f1287226dd07"
+      stageUuid: "775b31fb-7262-82f2-9e89-4c0364be4d28"
 version: 2
 ---
 # products

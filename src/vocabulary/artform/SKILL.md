@@ -2,11 +2,11 @@
 name: artform
 description: "Use when reasoning about artform — e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc."
 atomPath: "vocabulary/artform"
-coordinate: "vocabulary/artform · 2/share · c5b46e36"
-contentUuid: "7c924d48-e0dc-54b8-8cfb-c6b0511a2564"
-diamondUuid: "3592971e-60e8-83fb-bb62-3361aeab6131"
-uuid: "c5b46e36-4720-8dbd-b812-7aedb16d9fcd"
-horo: 2
+coordinate: "vocabulary/artform · 7/descent · a17621cd"
+contentUuid: "e80fe8cf-9248-5f74-aaed-4cb29ad47373"
+diamondUuid: "fda91509-515e-8f62-87cf-29204a9c9c56"
+uuid: "a17621cd-ca63-8f45-8f38-57535f03e55a"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2b9ba31a-24b2-8bad-8a5e-2eaaee45064d"
+  computationUuid: "8a287a96-e614-8c1b-9749-b6d35fc60d22"
   stages:
     - stage: path
       stageUuid: "edac0fb2-bd6f-8a78-92ed-d08cc42dd441"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cb49fdf5-1d2f-8282-b764-259259185188"
     - stage: horo
-      stageUuid: "89771453-cbea-85cc-8da8-92b77c3e921d"
+      stageUuid: "5065f128-ade2-870c-8165-dec59236ddd5"
     - stage: seal
       stageUuid: "2318894b-8dea-8a05-82e0-f4b5f83e67a3"
     - stage: uuid
-      stageUuid: "73b31d3c-a4f3-8390-92d3-44e695540d84"
+      stageUuid: "385089da-36b7-8c2d-ae3d-b8e3ed577f45"
 version: 2
 ---
 # artform

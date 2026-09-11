@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lock",
-    "uuid": "ed70e42c-36c1-8ff2-900b-53abaed66df9",
+    "uuid": "2501ee47-2329-81f6-817a-f2fad2fdc674",
     "words": [
       "lock"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lock — is the hook wired into every GL-posting collection: it reads the document's posting date, finds the fiscal period containing it, and throws when that period's status is .",
-    "uuid": "6325a5d5-38c3-870f-91bf-998230a98adc",
+    "uuid": "7f19b762-b678-8346-a07a-c80c40cbe104",
     "words": [
       "use",
       "when",

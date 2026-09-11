@@ -2,11 +2,11 @@
 name: safety
 description: "Use when reasoning about safety as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: safety
-coordinate: "safety · 1/base · d8772b8e"
-contentUuid: "184f91ae-fe94-59bc-a5c6-4bcb493f9d29"
-diamondUuid: "a0dbd6ff-b1c6-83fc-a03a-cb791f927d7c"
-uuid: "d8772b8e-79e3-83f4-b47f-4b961eea18f7"
-horo: 1
+coordinate: "safety · 4/weave · 6416d351"
+contentUuid: "68056c69-8cc6-5133-9252-f7e567967b05"
+diamondUuid: "5a8c48cd-bcfb-8e44-b29f-84b75628284b"
+uuid: "6416d351-e6b8-8a9b-bbd1-1e383f650bf6"
+horo: 4
 typography:
   partition: safety
   bondDegree: 19
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "69a15c50-6f84-8d6c-b9be-3c4b1d0b8b38"
+  computationUuid: "d72cb19a-4892-802b-87ce-49ae10fbda54"
   stages:
     - stage: path
       stageUuid: "69ec21f7-a9ae-83ab-a80e-4242bc806819"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "dc748c8c-03fa-892b-bcde-add5e0a12149"
     - stage: horo
-      stageUuid: "48c20c74-6784-8e37-a3ac-27f223a6ce34"
+      stageUuid: "4d747934-a2c6-816c-9cef-bba44d712088"
     - stage: seal
       stageUuid: "da9d88b4-bce7-8667-809d-cdb6ad86bf30"
     - stage: uuid
-      stageUuid: "2f36b1d9-a280-8233-ad85-ed245e1150b6"
+      stageUuid: "10ea4671-6d30-8e85-b1f0-abbad15f833c"
 version: 2
 ---
 # safety

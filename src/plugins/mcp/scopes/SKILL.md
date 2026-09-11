@@ -2,11 +2,11 @@
 name: scopes
 description: "Use when collapsing MCP api-key capability columns to a compact deny-list — the matrix→cross collapse for @payloadcms/plugin-mcp at erpax scale (D1 100-col cap); virtual afterRead repopulates the handler's read shape default-open, narrowed by scopes.deny."
 atomPath: "plugins/mcp/scopes"
-coordinate: "plugins/mcp/scopes · 1/base · f5f85a55"
-contentUuid: "93640c91-88ca-595c-851f-7b810fc07dfc"
-diamondUuid: "29b3c61d-64aa-8ba6-b9b9-af4cb5d62c8b"
-uuid: "f5f85a55-1cfe-809b-8891-d49522b5afcf"
-horo: 1
+coordinate: "plugins/mcp/scopes · 5/round · a1201bdb"
+contentUuid: "7f6a66bf-4c7f-5b6e-bd35-b64380bd27e2"
+diamondUuid: "fc1cf40a-b861-819d-b223-f32b02907a1f"
+uuid: "a1201bdb-0de4-80a5-aa0f-0b52395ce4ff"
+horo: 5
 typography:
   partition: plugins
   bondDegree: 15
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0b76d595-3229-82a3-bf4a-34e2ae174f0a"
+  computationUuid: "d01d0e28-9ab9-8ef1-9d94-fd9a3c2b1a50"
   stages:
     - stage: path
       stageUuid: "2c4511fc-bedf-88aa-b121-9c7462a2e571"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "5e17a84f-eafc-8935-b877-296d3d195364"
     - stage: horo
-      stageUuid: "750de5d0-9008-8659-a46b-2812ca2e1cfe"
+      stageUuid: "800371c3-28dc-8ccc-bcb9-e9f9d7937799"
     - stage: seal
       stageUuid: "5b3af09a-ba11-83bd-ab97-3e7165dbe3f9"
     - stage: uuid
-      stageUuid: "01e0bde4-5d3f-8da0-80d5-b9205b19ddcf"
+      stageUuid: "c7f71753-7feb-8b79-a7e9-e8a8b20b80cf"
 version: 2
 ---
 # scopes — MCP api-key capability collapse

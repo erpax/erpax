@@ -2,11 +2,11 @@
 name: language
 description: "Use when reasoning about language — Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previousl"
 atomPath: "vocabulary/language"
-coordinate: "vocabulary/language · 2/share · 09472570"
-contentUuid: "ded1369a-be91-5423-8472-dfcd3a3d4886"
-diamondUuid: "1b233b1d-0c53-88b6-b383-7f5e7f11d424"
-uuid: "09472570-2d47-886d-9e69-dd66f74c3884"
-horo: 2
+coordinate: "vocabulary/language · 8/crest · 07059ea3"
+contentUuid: "ccccd0f9-6b59-5865-901b-df18296528ac"
+diamondUuid: "3bbcf1d2-45a3-83b8-8bbd-2f670d573c86"
+uuid: "07059ea3-0b33-8d1a-9350-25ed740a07bb"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "578818d0-0558-8446-ae38-178ac188ba0f"
+  computationUuid: "1f4eea82-a943-8875-9b38-55cf1d909fae"
   stages:
     - stage: path
       stageUuid: "b8d8de5e-0042-82d0-ae6e-3f68e4e47888"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "684ae30b-f216-86d2-a6a8-6020964a9b41"
     - stage: horo
-      stageUuid: "3c6c7b2a-364a-87bf-911f-2430e7c2bad3"
+      stageUuid: "8de18dc7-44e6-8883-a274-0ea041eeff78"
     - stage: seal
       stageUuid: "32cf0082-a69d-8064-a867-6502ad6e1699"
     - stage: uuid
-      stageUuid: "c6a43e69-ef4c-8f9b-8b91-df5e02642032"
+      stageUuid: "097683f4-d105-83ec-b512-4556e25aca06"
 version: 2
 ---
 # language

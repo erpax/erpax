@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "void",
-    "uuid": "c04b3f4a-f82a-8750-9012-3df7400ba732",
+    "uuid": "26888a20-421a-89d7-93df-a6fa6260403a",
     "words": [
       "void"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the void: an empty pool, 265 bytes, written by a module that imports only node:fs and node:path.",
-    "uuid": "668eb1a6-21d9-88b9-9cdd-351af8d16676",
+    "uuid": "6ce80230-59be-81bd-ae72-8a2578faf4c8",
     "words": [
       "use",
       "when",

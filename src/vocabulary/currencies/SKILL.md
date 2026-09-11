@@ -2,10 +2,10 @@
 name: currencies
 description: "Use when reasoning about currencies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/currencies"
-coordinate: "vocabulary/currencies · 4/weave · e2b85294"
-contentUuid: "986fc49f-3fb2-582c-8a46-1247f81b290b"
-diamondUuid: "0c5b27bc-493e-8fa4-9106-22d3b13fe7b5"
-uuid: "e2b85294-ca31-8b58-9405-420f84ff3dda"
+coordinate: "vocabulary/currencies · 4/weave · e1f6f44f"
+contentUuid: "dbfbdfea-1e20-5d55-9af7-c248979499f5"
+diamondUuid: "6d061a52-cee2-8da8-a992-49196a9ca558"
+uuid: "e1f6f44f-bd8a-8eb4-b60f-7c7713171d2e"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "62a725ae-ac32-83a0-83d9-21582d7dc5a5"
+  computationUuid: "963e557f-c029-8b3e-be0f-dc9ade2c5576"
   stages:
     - stage: path
       stageUuid: "9f35c0ec-c4e3-80d2-848d-4dfda2b0c62a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "327cc44d-2a40-890b-bbce-9e048b53053b"
     - stage: horo
-      stageUuid: "53346a6b-7047-85c5-be24-e66e538aa80b"
+      stageUuid: "13a4ac35-e920-81d6-ba57-4b795a01ea5e"
     - stage: seal
       stageUuid: "1be1a7b5-eafc-8ccc-b74d-a3e2da245383"
     - stage: uuid
-      stageUuid: "c1da25af-8f75-88af-86fa-7a946522a9b9"
+      stageUuid: "8984301d-9b82-8330-a948-f6ff8b655141"
 version: 2
 ---
 # currencies

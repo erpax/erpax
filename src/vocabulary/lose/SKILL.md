@@ -2,11 +2,11 @@
 name: lose
 description: "Use when reasoning about lose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lose"
-coordinate: "vocabulary/lose · 4/weave · 1e6d73fd"
-contentUuid: "8a4ab79d-346d-523f-bc8c-ca4b8b0baa71"
-diamondUuid: "c3699639-6f1d-8420-8e7c-2522fd811650"
-uuid: "1e6d73fd-e063-86b8-86c1-f2c984ad6c23"
-horo: 4
+coordinate: "vocabulary/lose · 1/base · 0fdc7e57"
+contentUuid: "33beada0-b4c0-5d0c-9f38-7e758b2f3e7b"
+diamondUuid: "13299f8f-f67e-83ec-bc0f-6fe3ef1234a8"
+uuid: "0fdc7e57-1dd8-81ab-879d-bfafbbb39f86"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7c1355ad-c51c-8e53-bbc1-57f94dbad108"
+  computationUuid: "b68c8708-8050-8938-87e6-355aa63b1c5c"
   stages:
     - stage: path
       stageUuid: "4690e2b5-d01c-8a63-bae5-c5d4fe8194d1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6b8c6bc0-729e-89b8-b8ca-bfcf6fcffa85"
     - stage: horo
-      stageUuid: "bfc57dc5-9cb9-8226-a4f2-db3ff7003381"
+      stageUuid: "6ce4151a-1201-8bf3-bb79-4a3454aae12c"
     - stage: seal
       stageUuid: "810038ce-1d8e-8cb0-b91f-43fae1bbe440"
     - stage: uuid
-      stageUuid: "225ef469-5d73-8282-b89f-8e6e254a5bc3"
+      stageUuid: "35902b4a-b3cc-8a17-8e0f-480f272ad8e2"
 version: 2
 ---
 # lose

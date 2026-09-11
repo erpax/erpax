@@ -2,11 +2,11 @@
 name: period
 description: "Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning."
 atomPath: period
-coordinate: "period · 5/round · fb59979b"
-contentUuid: "df89cd92-fd2c-5331-bd47-0763aabcdef0"
-diamondUuid: "fd4fa117-08bb-8a31-982e-88e431f442fd"
-uuid: "fb59979b-0237-803c-a001-1a284489d1b7"
-horo: 5
+coordinate: "period · 2/share · 8e6d8ec8"
+contentUuid: "07806f71-dd97-54c6-bd66-dc17a01a56b8"
+diamondUuid: "bf5fbb71-c3ae-86fa-939c-7a0c42e8b3b5"
+uuid: "8e6d8ec8-3417-8251-be1a-acec38b43b69"
+horo: 2
 typography:
   partition: period
   bondDegree: 57
@@ -21,7 +21,7 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "888ec96e-7c97-8242-a0c2-89db60aea090"
+  computationUuid: "4c174440-2c4c-80ec-9ba1-616a619ac799"
   stages:
     - stage: path
       stageUuid: "b55a4ed0-f8bd-8f54-b239-ea0b09de9d96"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "87905c94-e4e4-88e5-b7c2-e063de24aed5"
     - stage: horo
-      stageUuid: "1b05b8f0-0f88-800e-b8f0-5052616fd7fd"
+      stageUuid: "cc019b5e-a80c-8218-9fd5-7fdc2ef6d8ee"
     - stage: seal
       stageUuid: "a0b2da05-da31-8437-a71a-5519275a744f"
     - stage: uuid
-      stageUuid: "b078b281-4b5f-89e1-aca4-6972020f0f40"
+      stageUuid: "235be795-72db-82dc-a78d-ce4cfbab1621"
 version: 2
 ---
 # period

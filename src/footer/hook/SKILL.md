@@ -2,18 +2,18 @@
 name: hook
 description: "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale."
 atomPath: "footer/hook"
-coordinate: "footer/hook · 2/share · 463f1b49"
-contentUuid: "179c4b14-5e32-5408-b1e9-b70de1d97b29"
-diamondUuid: "f5fbcff5-5bc2-84b9-a5c7-26da3379860f"
-uuid: "463f1b49-922f-892f-8f5b-fb72e9efaf9b"
-horo: 2
+coordinate: "footer/hook · 8/crest · 249a55ab"
+contentUuid: "80910589-f476-5236-9f31-45a32c959a53"
+diamondUuid: "3444256c-5ca9-8e32-ad71-99cc7113c9ef"
+uuid: "249a55ab-5158-8b63-9857-c66baa4f82cf"
+horo: 8
 typography:
   partition: footer
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "712308cf-88f7-822f-a177-7922d7dbb264"
+  computationUuid: "f4ec4be4-da75-8f23-aedd-e5d9304205c1"
   stages:
     - stage: path
       stageUuid: "31ea9c68-15bf-8b97-9624-74429b09432f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "85e5d32a-d8a3-88d9-b310-1c9b4d498d5a"
     - stage: horo
-      stageUuid: "e1269c9f-1432-8486-821a-bc848aab081c"
+      stageUuid: "b26b49f9-5365-8907-88a0-02bd72b3e7e1"
     - stage: seal
       stageUuid: "14b5eeda-a694-88a1-b0f6-d19f68986147"
     - stage: uuid
-      stageUuid: "ef0df592-f35b-82a4-964a-fc48aad054bf"
+      stageUuid: "43522f09-1d45-81cc-95d3-5a4f48ee5b47"
 version: 2
 ---
 # footer/hook — editing the footer invalidates the pages that render it

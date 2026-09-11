@@ -2,11 +2,11 @@
 name: due
 description: "Use when reasoning about due as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/due"
-coordinate: "vocabulary/due · 8/crest · 0498795d"
-contentUuid: "e19b2788-1654-526f-8e94-0163d8b62752"
-diamondUuid: "60029b5f-783c-81c6-ba21-d7073b3a9727"
-uuid: "0498795d-abd4-89cd-b209-99306f2af782"
-horo: 8
+coordinate: "vocabulary/due · 4/weave · 0bc201e2"
+contentUuid: "edfa58ba-8489-5ccb-a34f-73950b90c363"
+diamondUuid: "6561a906-4232-8b60-919c-384152f35971"
+uuid: "0bc201e2-a191-86f9-9599-ddc6d28ac749"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ec5fc8a1-578c-8ca3-87a0-1bf13e8caaf5"
+  computationUuid: "d8a6ba71-cbc0-824f-aa80-e246982b871a"
   stages:
     - stage: path
       stageUuid: "dc560b8c-3688-8e4d-b3c8-da03550489cd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4f3dc25b-3e02-88cf-ab16-02c678c9a8fa"
     - stage: horo
-      stageUuid: "707e2077-1dc6-8bd5-9349-fb691acd0a48"
+      stageUuid: "1b22a40c-76bb-83f4-b822-b69831361465"
     - stage: seal
       stageUuid: "03452610-2d35-8ec5-bfd5-514598af62a8"
     - stage: uuid
-      stageUuid: "cc6a7ba0-e33a-8768-9c06-9f3fe5ea62f8"
+      stageUuid: "098c12b4-941d-84c1-aea5-98b0cc41398f"
 version: 2
 ---
 # due

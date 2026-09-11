@@ -2,11 +2,11 @@
 name: assets
 description: "Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection."
 atomPath: "biological/assets"
-coordinate: "biological/assets · 7/descent · 30ee51e4"
-contentUuid: "4ccc62fd-939b-57a6-a819-074493d814d0"
-diamondUuid: "040bf68b-7a4c-87c6-a31c-57d374da8369"
-uuid: "30ee51e4-f4fc-8e48-91d8-364bec4e0b62"
-horo: 7
+coordinate: "biological/assets · 1/base · 28e300f8"
+contentUuid: "d6319420-9942-54a1-8892-80cd0f70ae96"
+diamondUuid: "6f0bef24-de0f-8c04-9c7e-47bf48d5b355"
+uuid: "28e300f8-ea04-83bc-9410-7d8a4dad82a7"
+horo: 1
 typography:
   partition: biological
   bondDegree: 120
@@ -35,7 +35,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "126d04f3-0846-89a0-a5c3-e882f3a6edee"
+  computationUuid: "403c3fd9-cbc3-8a96-8f09-bbe9902383f9"
   stages:
     - stage: path
       stageUuid: "78a30e64-5ab4-848b-8d59-1078f20f0656"
@@ -46,11 +46,11 @@ signatures:
     - stage: links
       stageUuid: "e5c5ea89-6960-8184-b985-28d0dec16a26"
     - stage: horo
-      stageUuid: "deca7508-a281-881a-a474-09930c5d0556"
+      stageUuid: "03ed81be-03df-8755-81db-2646e8dca4c6"
     - stage: seal
       stageUuid: "3db92f29-073f-82ee-9982-e9e81fa80aad"
     - stage: uuid
-      stageUuid: "d36e3a1c-79d6-804a-849e-b6729dd35593"
+      stageUuid: "242cbdf0-34cd-8e73-ba03-38e7a2e407ff"
 version: 2
 ---
 # biological-assets

@@ -2,10 +2,10 @@
 name: steps
 description: "Use when reasoning about steps — A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed 'steps'; 'step' is preferred)."
 atomPath: steps
-coordinate: "steps · 1/base · 736cc40e"
-contentUuid: "a2945b31-16c2-5aa8-a9fc-c843ed215d2e"
-diamondUuid: "2ba7c072-bd90-8d76-81af-1fd2b23f1f65"
-uuid: "736cc40e-b929-8045-9823-42ba8b35e3aa"
+coordinate: "steps · 1/base · ae287f66"
+contentUuid: "f9c62824-ee06-5a4f-a8d3-5704db58082c"
+diamondUuid: "c101e245-9df8-8d0d-b950-3c383d36423d"
+uuid: "ae287f66-7c5d-8509-a4f8-3d838e4e5f1f"
 horo: 1
 typography:
   partition: steps
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "83f2c1e2-0b6e-8fef-8609-f27bedf28ed8"
+  computationUuid: "e3f0a364-7f21-8eb2-bb75-97d35f25a2f0"
   stages:
     - stage: path
       stageUuid: "a4159604-a4f0-843a-b97f-baa756256330"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "08a3e698-d26f-8107-ab41-dab7204474b3"
     - stage: horo
-      stageUuid: "f72576ad-eeef-8b5b-9ffa-b242e608bf80"
+      stageUuid: "be5a31d4-65b4-8efe-829a-3e1927c39631"
     - stage: seal
       stageUuid: "00d9dc63-1b74-8e38-bb87-a5097bf0eef6"
     - stage: uuid
-      stageUuid: "b3f3a36b-94a2-84c9-8f95-235a6187d340"
+      stageUuid: "77c09b8a-476e-86da-aa50-7178024f9673"
 version: 2
 ---
 # steps

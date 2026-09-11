@@ -2,18 +2,18 @@
 name: scion
 description: "Use when modelling the fruiting cultivar grafted onto a rootstock — the scion determines the variety/clone (the produce identity, a taxonomy rank). The aerial half of the grafted perennial plant, paired with the rootstock via a graft."
 atomPath: scion
-coordinate: "scion · 1/base · 5e06cb13"
-contentUuid: "9596e27d-c037-5781-84d2-28eadfdbe675"
-diamondUuid: "7337a86a-d2bf-8d86-a9ac-356e5eb1b399"
-uuid: "5e06cb13-9d70-87fb-ac50-e5a71423f5e5"
-horo: 1
+coordinate: "scion · 5/round · abbdadf4"
+contentUuid: "997733fe-0001-56f9-9822-1c44f0fdb9f9"
+diamondUuid: "a7eee4fc-75fa-8964-8f54-5e31c9b05e60"
+uuid: "abbdadf4-4f75-80aa-af7c-269e9d945ab8"
+horo: 5
 typography:
   partition: scion
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "38a0a3cf-8f88-8fb2-bb14-4c086b720788"
+  computationUuid: "fcffe98b-6cd4-8ea0-b2b0-f3c895da15d7"
   stages:
     - stage: path
       stageUuid: "85ca1cff-904f-8785-9d06-d221c5507f39"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2c03a827-e6d0-8f65-966e-5fcf344d2aa3"
     - stage: horo
-      stageUuid: "72ae874f-2dad-87a6-881e-b5e8d372d5f4"
+      stageUuid: "7c687b25-0718-8a75-8b86-a08fb50cd879"
     - stage: seal
       stageUuid: "c498953e-9703-8c73-abf9-05fa94bb9739"
     - stage: uuid
-      stageUuid: "e07ccfa3-9cd7-8ee3-a289-1f468ffd2755"
+      stageUuid: "cb7d93e6-ffd2-8516-b650-15c994580099"
 version: 2
 ---
 # scion — the fruiting cultivar grafted onto a rootstock

@@ -2,18 +2,18 @@
 name: metric
 description: "Use when recording a periodic quantitative observation — daily/weekly/monthly snapshot of performance (headcount, utilization %, defect rate, cost-per-unit, customer-satisfaction score). The data point."
 atomPath: "vocabulary/metric"
-coordinate: "vocabulary/metric · 2/share · ac8c8ffb"
-contentUuid: "8707facb-d99d-5352-827b-77ff6aab30e7"
-diamondUuid: "dbdc55f5-2ebc-8796-b629-6a644ff9eba9"
-uuid: "ac8c8ffb-8b13-8403-a4fc-0f80459bcc6d"
-horo: 2
+coordinate: "vocabulary/metric · 8/crest · aa182197"
+contentUuid: "50a060ae-749e-5056-90bd-01fa53da9618"
+diamondUuid: "485b4af0-567a-899d-a39c-d47136915803"
+uuid: "aa182197-6cb1-8bb0-8057-44c26cf9266d"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 57
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3e8f9f7e-bc59-86e9-917e-da42b877c7e6"
+  computationUuid: "a0c0dcad-ccce-8337-a8f0-35bd540ddb80"
   stages:
     - stage: path
       stageUuid: "c910d55b-72c8-8019-a887-862f5f746d1b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5f36684c-e643-84eb-bfa5-dca4a78fe6f9"
     - stage: horo
-      stageUuid: "9012a3cf-b27d-8fd9-a01c-cd5cfe6efd9f"
+      stageUuid: "3b766966-20e3-8dda-9aa2-be4afbf3baed"
     - stage: seal
       stageUuid: "e5e9c6cc-587d-8e46-8bd9-f3575c86a9af"
     - stage: uuid
-      stageUuid: "9ee3c5d2-6142-839e-9067-d45b065f89dd"
+      stageUuid: "4e46c1dc-19e7-8c8a-b1cb-0b91c5aaf1ed"
 version: 2
 ---
 # metric

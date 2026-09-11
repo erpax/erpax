@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "phonetic",
-    "uuid": "3a3c7e5b-c90e-8d37-a0f9-c7878e95e995",
+    "uuid": "feb488d1-34db-84a2-bf7f-c919d70ffe41",
     "words": [
       "phonetic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about phonetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "e406c1fc-cc41-8cae-92d8-5f828efd4074",
+    "uuid": "2051727a-5d24-83ef-a888-f425d584294f",
     "words": [
       "use",
       "when",

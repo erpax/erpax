@@ -2,11 +2,11 @@
 name: correspondence
 description: "Use when asked whether string theory or quantum computation bears on the Millennium Problems, or whether any of it strengthens cryptography. A physical duality can PREDICT a statement that mathematics then proves — mirror symmetry is the genuine instance — but a correspondence never proves the problem it corresponds to, so every row carries the precise gap that remains beside what is really established. bearsOnSecurity is false in every row, declared per row rather than waved away: hardness rests on module-LWE, factoring, discrete logs and hash preimage resistance, and no result here constrains any of them."
 atomPath: "millennium/correspondence"
-coordinate: "millennium/correspondence · 4/weave · cda82692"
-contentUuid: "be4bb819-5c6b-5f87-84ba-331267cfaf8a"
-diamondUuid: "a04a6c0c-2246-8197-a004-02059b600da9"
-uuid: "cda82692-e461-804e-84e8-204812121953"
-horo: 4
+coordinate: "millennium/correspondence · 2/share · bea0698f"
+contentUuid: "fea8e75e-2934-5cb5-b1bd-0563a5ec89e7"
+diamondUuid: "1c26f34f-34ea-897f-b5da-554e3eea4b27"
+uuid: "bea0698f-44e2-820a-b59e-682feb998207"
+horo: 2
 typography:
   partition: millennium
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "7a8b7e8f-ea50-86eb-9043-3cbcd89417b2"
+  computationUuid: "9977e176-7b2f-88e0-8987-465bb947c843"
   stages:
     - stage: path
       stageUuid: "6b842b5c-c0d8-8f7a-8349-13a15db100ff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "942c7bc3-56bc-8790-953c-2ae30a7c2f6b"
     - stage: horo
-      stageUuid: "a78135c9-c934-8d1d-be2c-7cf619c21730"
+      stageUuid: "0a91f3c3-6b4c-8680-8dc3-aea1145baea3"
     - stage: seal
       stageUuid: "9f13dd7b-9fcc-8525-88fc-568d02bd66c5"
     - stage: uuid
-      stageUuid: "ca2f002e-ff99-83c9-8531-f0cec1d7e09c"
+      stageUuid: "2515d03a-334e-89ff-9b5c-9698b28c1ed3"
 version: 2
 ---
 # millennium/correspondence — physics predicts; mathematics proves

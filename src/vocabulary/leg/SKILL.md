@@ -2,11 +2,11 @@
 name: leg
 description: "Use when reasoning about leg as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/leg"
-coordinate: "vocabulary/leg · 8/crest · a9bcfc4f"
-contentUuid: "d86f8158-bd00-586f-b7b0-497fd905447d"
-diamondUuid: "3a4807e3-9b0b-8b47-b617-ac9114736fd6"
-uuid: "a9bcfc4f-4698-89a7-9ed5-3e815a6c851a"
-horo: 8
+coordinate: "vocabulary/leg · 7/descent · ac421358"
+contentUuid: "70a28cfd-cd50-5f64-9725-54b2ce496a98"
+diamondUuid: "2b4d5d4c-4681-8fa8-b6b5-bd16068ddccc"
+uuid: "ac421358-9355-87b8-80ce-302505124ada"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2ccc238d-3075-8f7b-8d9d-4b6833336e2f"
+  computationUuid: "e0076d25-dfda-8399-ad7a-60a81581ba10"
   stages:
     - stage: path
       stageUuid: "61123926-7bcd-8bf7-a09a-7f289572a5ab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8622c72a-3d82-8a80-93ab-ad9f7ca4c26f"
     - stage: horo
-      stageUuid: "86e19bb4-a3d8-84da-8c9c-a8f284e565d0"
+      stageUuid: "ebf6ecd6-575c-8914-9478-a3c99ed1d30a"
     - stage: seal
       stageUuid: "5d3eec7c-132f-8119-8f9b-a07834089551"
     - stage: uuid
-      stageUuid: "f237133f-495b-86d8-8ee3-efede7a15630"
+      stageUuid: "2015ea53-7d26-866d-b28c-6836f13966e7"
 version: 2
 ---
 # leg

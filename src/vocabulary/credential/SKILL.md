@@ -2,11 +2,11 @@
 name: credential
 description: Use when reasoning about credential — A credential is a certificate that is used to verify the identity of a person or entity.
 atomPath: "vocabulary/credential"
-coordinate: "vocabulary/credential · 2/share · ee8a3b5a"
-contentUuid: "3d2e74f3-334e-5684-9e44-3751f2bf93ed"
-diamondUuid: "4fc2bffa-5290-83f8-97ad-ffcb94568c5d"
-uuid: "ee8a3b5a-b95e-8a37-b4ac-c76377bd2b43"
-horo: 2
+coordinate: "vocabulary/credential · 7/descent · 8115f110"
+contentUuid: "a5145721-6df1-5495-b989-d12c0dd9cada"
+diamondUuid: "e02efc2d-0964-849f-b36c-11fce1ff4f92"
+uuid: "8115f110-9397-8e6d-b7e3-6a9e8ebff849"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b49e4136-5f85-88fc-8472-eae212ff826d"
+  computationUuid: "8c73e760-5364-8a12-bbdf-3c383abf8ef1"
   stages:
     - stage: path
       stageUuid: "c4252a43-75f8-862f-8c73-4468e961bba3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5eddad53-5b36-8abc-b397-4a609b2b3788"
     - stage: horo
-      stageUuid: "8ceeaff7-cd7b-8e0b-a232-fbcd3bb56bbb"
+      stageUuid: "f00e43bc-4e75-8d65-adc8-f507975867f5"
     - stage: seal
       stageUuid: "0031e5cd-707a-84c1-9171-301a6a4a8c57"
     - stage: uuid
-      stageUuid: "9325627f-62f3-8437-afd5-973865ce609b"
+      stageUuid: "3a209d20-b881-8f79-8406-7bba8a9f139d"
 version: 2
 ---
 # credential

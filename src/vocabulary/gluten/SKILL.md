@@ -2,11 +2,11 @@
 name: gluten
 description: "Use when reasoning about gluten as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gluten"
-coordinate: "vocabulary/gluten · 2/share · 47acb7be"
-contentUuid: "f58bebd9-3d53-5063-b29f-a183a6be3b38"
-diamondUuid: "8be71298-eba5-89ff-b84d-0536b8e7b5c2"
-uuid: "47acb7be-c260-8aab-86f9-5cad25a094eb"
-horo: 2
+coordinate: "vocabulary/gluten · 4/weave · 11b398f7"
+contentUuid: "97f45ad9-f400-581a-81c6-912b6e9b4fea"
+diamondUuid: "fa077a94-5a4e-8936-ae26-bb43fb81672c"
+uuid: "11b398f7-9fee-8917-ac38-e14b1a8c9664"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4f1302f7-051f-80ca-a2df-7a2fe1ba2074"
+  computationUuid: "8e926a0d-440d-8f6d-b8af-300d9e65b24e"
   stages:
     - stage: path
       stageUuid: "7f8e88b2-1367-8957-b829-e016a783407d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ce244d05-a0dc-8490-8a55-499f6879f31a"
     - stage: horo
-      stageUuid: "2608dc6a-2df5-8567-9e95-64f8c558d142"
+      stageUuid: "88510650-fa0f-8d9f-9f41-fc7639b7a209"
     - stage: seal
       stageUuid: "f7578b38-7b17-8eab-a3f5-d1e11e297a44"
     - stage: uuid
-      stageUuid: "4c982392-1aaa-86c9-8d0e-52840f1cafa3"
+      stageUuid: "3cb7fb2b-0064-8d9f-bbd2-e36538e2c9d7"
 version: 2
 ---
 # gluten

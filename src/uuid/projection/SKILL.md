@@ -2,10 +2,10 @@
 name: projection
 description: "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time."
 atomPath: "uuid/projection"
-coordinate: "uuid/projection · 8/crest · 0dc3d439"
-contentUuid: "7fb82971-5e29-5a72-9986-b76fa5c6624e"
-diamondUuid: "9025caff-f9d9-8b86-beea-8a900f008e3b"
-uuid: "0dc3d439-f071-8a48-8568-8bf63f4468c2"
+coordinate: "uuid/projection · 8/crest · e959f9aa"
+contentUuid: "a8d90a9b-cc06-5b90-b2a1-e635ea5b2a10"
+diamondUuid: "854d6d9e-3c93-849b-aae8-486a28d3c095"
+uuid: "e959f9aa-9705-882d-92ba-6539a6d77747"
 horo: 8
 typography:
   partition: uuid
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a2afbce4-48a0-80ea-a611-a079e7268df8"
+  computationUuid: "cdb7777f-f436-892f-ae35-6b2be4751ab5"
   stages:
     - stage: path
       stageUuid: "ab1a67b6-5f8b-8120-b6d8-f2186cc21de3"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "0a9b733b-5d09-8f39-ac71-bc3eda121248"
     - stage: horo
-      stageUuid: "1ae03aa8-9f71-8798-af40-bba22ba59b4d"
+      stageUuid: "e717ac68-1113-8395-9014-a1a73572df09"
     - stage: seal
       stageUuid: "24b0f730-6d39-8814-a4a3-99c1e3954ca0"
     - stage: uuid
-      stageUuid: "5ff22c4a-f446-8f8e-ba64-f976119159e0"
+      stageUuid: "d3b32d84-6c18-84f2-bb0f-ccd171d5c4f1"
 version: 2
 ---
 # projection — the uuid singularity (content → uuid → search · locale · version · css)

@@ -2,11 +2,11 @@
 name: change
 description: "Use when a fiscal period config is amended — the beforeChange hook that validates the amended config and chains its audit leaf. Read the gap before relying on it: it does NOT regenerate the calendar and does NOT write a snapshot, though its banner claimed both, and fiscal-calendars is written by a seed and nothing else."
 atomPath: "update/fiscal/calendar/on/period/change"
-coordinate: "update/fiscal/calendar/on/period/change · 5/round · 4b1e584e"
-contentUuid: "f1698c38-1ee2-5a94-a83f-f0601fe7c3a7"
-diamondUuid: "1b0a7593-631a-87ef-bbad-35da1463173f"
-uuid: "4b1e584e-71c2-8b13-80d9-5a9035394d33"
-horo: 5
+coordinate: "update/fiscal/calendar/on/period/change · 1/base · f4527cb6"
+contentUuid: "fadf366a-0a79-59c0-aa3d-6e4280a07ebf"
+diamondUuid: "435cf36a-3a66-8643-a84f-2cf69e232336"
+uuid: "f4527cb6-0ff2-8416-bcc2-5e38bc6fd810"
+horo: 1
 typography:
   partition: update
   bondDegree: 18
@@ -18,7 +18,7 @@ standards:
   - "SOX:2002 (change log, access control evidence)"
 bindings: []
 signatures:
-  computationUuid: "4f565387-706d-83e8-bdbc-5a6f6b94d31e"
+  computationUuid: "fe21bb7a-d316-81dd-973c-64059f5913ad"
   stages:
     - stage: path
       stageUuid: "3d6c7ac4-9b6f-8d98-8b5a-33e26873ed7c"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "02994d9a-d474-86a2-8f19-229d15a2e6c0"
     - stage: horo
-      stageUuid: "849be9e6-5f68-8a48-b8f1-30689f10182e"
+      stageUuid: "2f052b97-af8f-8d84-8eb6-39b4d61191d9"
     - stage: seal
       stageUuid: "e5c45c41-1f37-84db-930b-c9da1b5745cb"
     - stage: uuid
-      stageUuid: "179912b7-8485-80ea-87b7-ced66db7f736"
+      stageUuid: "258213f8-0af9-8180-96cf-bd9ad2206ebc"
 version: 2
 ---
 # change — it validates and stamps, and the banner claimed a workflow

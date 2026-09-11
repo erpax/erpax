@@ -2,11 +2,11 @@
 name: version
 description: "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains."
 atomPath: version
-coordinate: "version · 7/descent · 821cedad"
-contentUuid: "066505af-c632-5f5e-aef3-8f37ee3e3e12"
-diamondUuid: "5e37b440-50fc-8f24-b2d7-bd0bd5e2b060"
-uuid: "821cedad-dcc7-8771-87da-0b2a4158a1b3"
-horo: 7
+coordinate: "version · 8/crest · 649742ab"
+contentUuid: "6fec4213-ef2d-5009-b9ed-11bd7fab3ca8"
+diamondUuid: "109b5232-d1b2-80c0-81d8-377d08aa8876"
+uuid: "649742ab-2e0d-8096-b1f8-88cbefbd6d3d"
+horo: 8
 typography:
   partition: version
   bondDegree: 34
@@ -14,7 +14,7 @@ standards:
   - "SemVer 2.0.0 — `MAJOR.MINOR.PATCH+<build-metadata>` (the corpus-uuid is build metadata)"
 bindings: []
 signatures:
-  computationUuid: "da097106-93e6-8a57-8b5e-11d8c6b08ecb"
+  computationUuid: "81fb7f39-8bed-839b-bd40-55edec0c1f1b"
   stages:
     - stage: path
       stageUuid: "9c83e18c-d9d6-8b68-9b89-c50efd44da71"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "936bc092-ba94-8973-8f2c-6fcf3f464d2d"
     - stage: horo
-      stageUuid: "3fcd9e5e-ec85-8f1a-8e6b-18fbb66aafc4"
+      stageUuid: "693d6e47-60c1-86bf-a1b6-3b62f4e50980"
     - stage: seal
       stageUuid: "ecef50cc-ea68-89e0-a27b-ebeefed02324"
     - stage: uuid
-      stageUuid: "d42b045b-39d7-87e5-8271-a71c704b94c9"
+      stageUuid: "13d8e069-a86e-8eb7-859d-6afcf858265f"
 version: 2
 ---
 # version — the corpus-derived, content-addressed version

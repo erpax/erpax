@@ -2,11 +2,11 @@
 name: decentralization
 description: "Use when order must arise with NO central controller — a global pattern as the fixed point of LOCAL rules (stigmergy, emergence, flocking), robust because redundant and diverse (no single point of failure), measured by concentration (the Nakamoto coefficient). In erpax, content-uuid merge IS stigmergy — each peer recomputes the id from the content, no coordinator; order emerges from content-addressing, not from a center."
 atomPath: decentralization
-coordinate: "decentralization · 7/descent · d5181f14"
-contentUuid: "6aee8d41-7b85-5658-ba70-87f4ed05f4a8"
-diamondUuid: "1b84fa93-8257-8024-95ce-0d61440baceb"
-uuid: "d5181f14-8527-87fc-adbc-2e3c2d378676"
-horo: 7
+coordinate: "decentralization · 8/crest · f8d23373"
+contentUuid: "3cad8be2-3e5f-5c5e-862a-8866d2c863ba"
+diamondUuid: "e70aca8f-1b28-861d-910d-ea8e075b3272"
+uuid: "f8d23373-0104-8456-9adc-ae2371d946ab"
+horo: 8
 typography:
   partition: decentralization
   bondDegree: 46
@@ -18,7 +18,7 @@ standards:
   - "Nakamoto coefficient (Srinivasan & Lee, 2017)"
 bindings: []
 signatures:
-  computationUuid: "2243bfe0-d63f-8bfa-968d-cfcbc43ad9c9"
+  computationUuid: "c0da1e48-f955-84a7-8759-a3d0aa208737"
   stages:
     - stage: path
       stageUuid: "3d860fac-0654-8c74-a381-3ab1b7ae96b4"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "a54d2060-c84a-8be4-a815-bc11f1c578d7"
     - stage: horo
-      stageUuid: "6f1f7f94-be9c-80d7-9eb5-7f02796bd0c5"
+      stageUuid: "16d648f8-d8b9-89c8-8a95-21758b7642e4"
     - stage: seal
       stageUuid: "c278298b-a345-839c-8847-f2b404e7e826"
     - stage: uuid
-      stageUuid: "fa982fe9-7fdd-89c2-be49-4e849f89f4b8"
+      stageUuid: "5efc7bda-8f93-878d-8ed7-1caec5e853f2"
 version: 2
 ---
 # decentralization — global order from local rules, no controller

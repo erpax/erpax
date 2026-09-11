@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "query",
-    "uuid": "b9739d4a-5679-8379-93fc-0943df60e988",
+    "uuid": "8c18ac1e-b000-834c-b9d5-bccd3ae08818",
     "words": [
       "query"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about query — A sub property of instrument. The query used on this action.",
-    "uuid": "c2222555-9fac-8198-acdc-06b6777ef7cc",
+    "uuid": "7cf6aadd-d3e0-81e9-a4e4-e64b9d4da898",
     "words": [
       "use",
       "when",

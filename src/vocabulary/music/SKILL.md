@@ -2,11 +2,11 @@
 name: music
 description: Use when reasoning about music — The composer of the soundtrack.
 atomPath: "vocabulary/music"
-coordinate: "vocabulary/music · 5/round · 0123bcc7"
-contentUuid: "eb457169-f99b-5c82-809a-f66ee73b9e4f"
-diamondUuid: "276c21bc-647b-8b9a-8f91-6219389969ba"
-uuid: "0123bcc7-4af8-8551-9fbf-cdcd0b464c1f"
-horo: 5
+coordinate: "vocabulary/music · 7/descent · 59fea4b3"
+contentUuid: "303a8cbb-cb3b-5126-9861-137e67983c70"
+diamondUuid: "a632132e-0962-8fc4-afea-2d953f268679"
+uuid: "59fea4b3-8fd1-8e69-9e49-fa9fb52e9efa"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 92
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8f9d1fe5-09c1-8fef-91af-fe64d4733d75"
+  computationUuid: "938213d2-0e21-84ac-9f2b-ec805ac35768"
   stages:
     - stage: path
       stageUuid: "283276d7-c396-83c1-972b-a6bc50ddff53"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "73cf43fe-128b-8373-91bc-34021dc2ecf5"
     - stage: horo
-      stageUuid: "3c606e9e-60f4-8b21-b53b-8ef47d1808ef"
+      stageUuid: "67477043-0d6c-87b8-8026-cfd68a7524ed"
     - stage: seal
       stageUuid: "8a7f1dd4-520a-8fd7-ba97-a81f24e00beb"
     - stage: uuid
-      stageUuid: "0dcf4423-b206-8934-9d04-b32cc7758b26"
+      stageUuid: "47042e99-f984-8d96-aff4-99dfd9a485e7"
 version: 2
 ---
 # music

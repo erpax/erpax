@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "commissions",
-    "uuid": "1a890409-69e1-87b1-8176-0ae812f8e17c",
+    "uuid": "87e01de5-84dd-84ba-8293-b91c3cba5e01",
     "words": [
       "commissions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
-    "uuid": "7c50c686-30e8-8bd2-b673-4186c33a0eac",
+    "uuid": "a026c22d-9dcc-8a70-926b-1341cfdb7a18",
     "words": [
       "use",
       "when",

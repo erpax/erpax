@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "keyword",
-    "uuid": "e6b210f4-38ac-8630-bb60-aef3a40c9b83",
+    "uuid": "cb1a87c4-4cc3-8572-a30e-a8c267a34ecd",
     "words": [
       "keyword"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one keyword — the singular model of the keywords collection (the plural store); a salient term used to index or retrieve content.",
-    "uuid": "62606a7e-a8c1-81b8-a944-682ace5b72e3",
+    "uuid": "632ae03b-7680-84d6-8b6c-841fa6b7539c",
     "words": [
       "use",
       "when",

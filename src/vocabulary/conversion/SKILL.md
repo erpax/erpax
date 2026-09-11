@@ -2,18 +2,18 @@
 name: conversion
 description: "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic."
 atomPath: "vocabulary/conversion"
-coordinate: "vocabulary/conversion · 4/weave · 6c13bddb"
-contentUuid: "26b9f70d-26bf-56c5-9a5a-801c56950379"
-diamondUuid: "04f9b7ef-76db-85c0-accd-86d9b6c5b338"
-uuid: "6c13bddb-4fb1-8bf0-ab90-effe0c4fb18a"
-horo: 4
+coordinate: "vocabulary/conversion · 5/round · f5bcb471"
+contentUuid: "f2138382-41c2-5b94-8769-ffbafc44a56f"
+diamondUuid: "a47cd183-c9b6-8bef-9801-802981a7e1ff"
+uuid: "f5bcb471-0a7c-8eaf-80b3-5c7835828365"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 81
 standards: []
 bindings: []
 signatures:
-  computationUuid: "13e70ea2-4744-86eb-9244-98c7448f52e4"
+  computationUuid: "fa06a5a9-9bfc-82f3-a9c7-cb6941340e5f"
   stages:
     - stage: path
       stageUuid: "959c2df7-b6c4-8982-b04a-d48b9c0272a9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ab280a77-ec3b-8077-8eb9-a37ef301ba79"
     - stage: horo
-      stageUuid: "b34947d4-0d09-8f79-b6f1-46a9c6615c8d"
+      stageUuid: "ba4c0fab-c2d0-8a15-a30c-71437b477def"
     - stage: seal
       stageUuid: "0f5591f0-1d3a-8e5d-89e3-878da7353aa2"
     - stage: uuid
-      stageUuid: "4f96dde0-d17f-8419-84dc-44168d3e078a"
+      stageUuid: "010de4bc-0414-89a3-aaed-e8dd94972b41"
 version: 2
 ---
 # conversion — re-expressing a quantity on another basis, automatically and accounted

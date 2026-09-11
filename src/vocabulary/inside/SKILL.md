@@ -2,11 +2,11 @@
 name: inside
 description: "Use when reasoning about inside as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/inside"
-coordinate: "vocabulary/inside · 1/base · c46df987"
-contentUuid: "64f436e6-8509-5a29-81d2-cf80ae2fb595"
-diamondUuid: "c04f3505-4c80-8a97-96c2-6e563d4a7511"
-uuid: "c46df987-4d97-8fcc-96b1-826bdcf279df"
-horo: 1
+coordinate: "vocabulary/inside · 4/weave · c1cd6c49"
+contentUuid: "ee8fb966-7629-569f-89a5-c04eee81e4b9"
+diamondUuid: "a172fed5-f457-845f-b79d-06a48f3501c7"
+uuid: "c1cd6c49-86f5-8ebd-83d1-e1f4b2bfb5c0"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e9f7ecff-11ce-8eef-b18a-ce25c39bcac3"
+  computationUuid: "621b2f2e-4b67-8ec5-ba94-db6806c3cf4e"
   stages:
     - stage: path
       stageUuid: "ce0ee572-715b-8aea-8a81-dec486ba0ca1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c9f985c0-1323-8b61-a6c4-3976689526f4"
     - stage: horo
-      stageUuid: "3fa47b4d-718a-86f7-8f3d-d7f373b3052f"
+      stageUuid: "8d7fdf7f-a2cc-8211-adb4-3f5703e68ade"
     - stage: seal
       stageUuid: "ace31945-06b8-8e15-8a5b-97b3f1771bf9"
     - stage: uuid
-      stageUuid: "db40d557-9811-80c7-b59f-230ff0d33f44"
+      stageUuid: "6aa81518-2900-84d8-8cd4-0be036af4387"
 version: 2
 ---
 # inside

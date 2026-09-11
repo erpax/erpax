@@ -2,11 +2,11 @@
 name: door
 description: "Use when reasoning about door as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/door"
-coordinate: "vocabulary/door · 5/round · 4cd91f97"
-contentUuid: "c08b6df7-3683-506c-9a24-14307399181f"
-diamondUuid: "095712f1-464a-80f7-b09c-c7e7eb361dba"
-uuid: "4cd91f97-daaa-86b4-aa8d-a67c7867c284"
-horo: 5
+coordinate: "vocabulary/door · 8/crest · 73aa4277"
+contentUuid: "64ebc715-a23d-50f5-b2c3-22278171ae8f"
+diamondUuid: "fe622359-c3fa-8288-9506-c2bb028b794f"
+uuid: "73aa4277-df03-8828-a2bc-74df0a1b077e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3d94040d-ddc5-86ab-a5b0-864bdc987345"
+  computationUuid: "15a54949-be4e-827d-aeeb-75d64ec5cede"
   stages:
     - stage: path
       stageUuid: "b7acecad-89b9-806b-ae4e-b22dfe54be42"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "89f7732f-7b3d-8e54-b0a8-7fe5d779da15"
     - stage: horo
-      stageUuid: "38131892-0f09-804c-bf95-290a5a89e6b5"
+      stageUuid: "75c5cc59-3233-8825-80fd-f8eef4ac27db"
     - stage: seal
       stageUuid: "31927868-7045-87e5-9e64-5bdc98e7eb1a"
     - stage: uuid
-      stageUuid: "57265f25-eb23-8add-bb61-b347bf613536"
+      stageUuid: "daf54f05-172b-87ac-bc88-c9537dcee7ed"
 version: 2
 ---
 # door

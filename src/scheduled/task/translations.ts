@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "task",
-    "uuid": "36b098b5-b52e-89b9-a598-1dd68e125683",
+    "uuid": "6196b62f-73f5-827d-86e5-e4c0a3eab3ae",
     "words": [
       "task"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about task — The barrel binds the registry, the runner and the task types. A scheduled action declared here is enumerable: something can ask what runs, when, and what evidence it leaves.",
-    "uuid": "a050454f-fadd-8116-8c07-0b2639d791b5",
+    "uuid": "424378a3-3408-8486-b130-cb0868a0e81e",
     "words": [
       "use",
       "when",

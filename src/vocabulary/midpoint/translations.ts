@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "midpoint",
-    "uuid": "f8dde833-bbea-8616-8df0-49a235872a0a",
+    "uuid": "ab3d996c-2bcc-85d6-a43c-ad8c880d80ea",
     "words": [
       "midpoint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about midpoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "6f58bd76-26ca-8cb9-bac1-6f028f439bec",
+    "uuid": "7ea05abe-b1ba-8b87-bd73-accbf9b6ad98",
     "words": [
       "use",
       "when",

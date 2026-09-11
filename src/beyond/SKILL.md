@@ -2,11 +2,11 @@
 name: beyond
 description: "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22."
 atomPath: beyond
-coordinate: "beyond · 5/round · c1533536"
-contentUuid: "6f56ea0e-be63-57cf-b561-1f9367411c67"
-diamondUuid: "a766fa5e-7471-8586-a7fb-e428d1a3c382"
-uuid: "c1533536-8017-88a6-843b-5b6975378078"
-horo: 5
+coordinate: "beyond · 1/base · 2edcf5b8"
+contentUuid: "e134f41e-14e9-56e1-af9b-76aed39043d0"
+diamondUuid: "821c08d3-06a0-8b8f-9485-497eb92ef74d"
+uuid: "2edcf5b8-eb9c-8847-9f2c-8b836b83276f"
+horo: 1
 typography:
   partition: beyond
   bondDegree: 75
@@ -31,7 +31,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "503a1eb2-9776-80e2-99df-409790f89bf4"
+  computationUuid: "f3863d78-896d-8062-bb19-b5b5f1f813c3"
   stages:
     - stage: path
       stageUuid: "177106db-95e3-8019-9888-f1a8dc3d6d6e"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "7e15f3bc-8645-88c5-bd44-5e4c30af3433"
     - stage: horo
-      stageUuid: "faf6a6ca-120a-88f1-9d45-716078c7bc7c"
+      stageUuid: "d28335ec-ffe3-8853-9bca-1992936e6884"
     - stage: seal
       stageUuid: "6aafea1c-f43b-8b51-b722-94c499cb719e"
     - stage: uuid
-      stageUuid: "fbde3847-0c92-831c-9a26-99ae39b0eb14"
+      stageUuid: "64231400-37d2-8569-84d7-21d916e2578f"
 version: 2
 ---
 # beyond — 11 next-horizon conservation primitives (Laws 11–22)

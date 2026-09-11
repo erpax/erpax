@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "component",
-    "uuid": "c35b493b-dbe6-8bd4-a74c-752addf87744",
+    "uuid": "ef73de9e-157d-81f1-a59f-7f5dec0b0e34",
     "words": [
       "component"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining a reusable UI building block — button, card, modal, form field, input. The atomic UI element with consistent design, behavior, and accessibility.",
-    "uuid": "f9c3d294-0cf5-88ca-8a89-513fcf0e9fdf",
+    "uuid": "6c9e52a0-45d2-8b5d-b8d4-9f7a83f8d9a9",
     "words": [
       "use",
       "when",

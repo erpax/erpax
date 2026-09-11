@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "zoroastrianism",
-    "uuid": "af70230f-6cef-8f70-86dc-f3abf1ebdddb",
+    "uuid": "9cbc66d7-2bfc-82b3-844d-c2c4ee1a19f0",
     "words": [
       "zoroastrianism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Zoroastrianism as a diamond of invariant atoms — the cosmic contest of truth/order (asha) against the lie (druj), the sacred fire as witness, good thoughts-words-deeds, the final renovation as return to perfected zero. The source of erpax's angel/archangel polarity (Spenta Mainyu vs Angra Mainyu). Strip the Avestan prefix and asha, druj, frashokereti collapse to order/law, profane, zeropoint.",
-    "uuid": "f5db7c3a-3d81-81a3-bcf6-276b7b42e858",
+    "uuid": "bce2d141-55fb-8cef-8a6c-6b5e8b2f0146",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: complex
 description: "Use when reasoning about complex as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/complex"
-coordinate: "vocabulary/complex · 8/crest · 936e8ac3"
-contentUuid: "57489ff1-e8c0-5140-8703-05c6f1306f0e"
-diamondUuid: "50d699fe-a2c3-8e64-a5e1-65601c8625be"
-uuid: "936e8ac3-2cbb-8bd1-8a10-d3e4e8281af7"
-horo: 8
+coordinate: "vocabulary/complex · 7/descent · 6d17158e"
+contentUuid: "235bd693-8b01-570b-8f0d-8334c7cd4ddb"
+diamondUuid: "054f7013-5710-8b10-bb83-d7336e2807b3"
+uuid: "6d17158e-4a74-8396-b5f0-9c937a03eb02"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "45606039-e4f1-8854-8d4c-6ca7100710aa"
+  computationUuid: "d34271d3-3d38-846b-8c49-5b941877f5a2"
   stages:
     - stage: path
       stageUuid: "c7360e88-024c-87d3-ab46-be9d33a4cfee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "82510c7a-f7fe-8a83-b1d4-1df436d14e4b"
     - stage: horo
-      stageUuid: "07e4c7e8-19a8-8ae4-93ae-500c2532fcff"
+      stageUuid: "626b18ba-e708-8d23-a260-b5cf2d516725"
     - stage: seal
       stageUuid: "38f38e61-3c6e-81c3-847a-a3bd62567987"
     - stage: uuid
-      stageUuid: "40e9ae66-5ded-8b85-b7aa-b178ef42a7ee"
+      stageUuid: "f7d10ade-b754-8f17-9f31-214d7ccd2e23"
 version: 2
 ---
 # complex

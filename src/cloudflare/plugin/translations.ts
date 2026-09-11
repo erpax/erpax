@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plugin",
-    "uuid": "8a11ffc8-b021-8d97-96ac-2f48b36f1e45",
+    "uuid": "bc3763c7-6d64-8ae8-874c-b1130fff2b75",
     "words": [
       "plugin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a plugin needs a narrowed Cloudflare access surface — the typed PluginAccess<K> face plus its helper, so a plugin receives only the bindings it declares.",
-    "uuid": "ea90dffa-39db-8327-9b4f-80c1b3296f32",
+    "uuid": "7b443627-d84a-8e60-a998-939f924157f5",
     "words": [
       "use",
       "when",

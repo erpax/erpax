@@ -2,11 +2,11 @@
 name: organize
 description: "Use when reasoning about organize as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/organize"
-coordinate: "vocabulary/organize · 5/round · e6335681"
-contentUuid: "074fa91d-a838-580c-aab4-9d3b8584e6d6"
-diamondUuid: "8db213e2-7057-8ec2-8580-9cf3cfa872ca"
-uuid: "e6335681-0ec4-8a88-8749-41841814567a"
-horo: 5
+coordinate: "vocabulary/organize · 7/descent · 68029c63"
+contentUuid: "a5202254-7d2a-57a2-be71-078515b11972"
+diamondUuid: "e9a7aa18-c6ef-8daf-a9a7-e21ceea6c546"
+uuid: "68029c63-4096-80bf-b530-ca57dcb10853"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "476124f5-bf24-8d21-b011-1c30b348521c"
+  computationUuid: "1775f5fb-3741-8752-b57d-bf3177e7528e"
   stages:
     - stage: path
       stageUuid: "8cd87680-d45f-8857-a22e-9d2b6d3c89d0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "45eda243-fc91-87ef-8312-2768b1bae607"
     - stage: horo
-      stageUuid: "a158aad7-e7e5-827a-849a-b98328ef64a3"
+      stageUuid: "5102e40e-9525-88ba-bde6-4aa31e68d4ba"
     - stage: seal
       stageUuid: "a5ae50ca-0b9b-8121-9038-211ef3d31ae4"
     - stage: uuid
-      stageUuid: "9f1fade6-a778-8e83-b4d7-2472b57d4ec7"
+      stageUuid: "333c0aea-4f7f-8a3a-b3ee-bf40a1c25b8a"
 version: 2
 ---
 # organize

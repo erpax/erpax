@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fusion",
-    "uuid": "7f26a0cf-567d-8c3d-8af0-50cedeb2e72f",
+    "uuid": "10431c17-50b9-81f8-b274-121628e443af",
     "words": [
       "fusion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the fusion of a dual torus — the quantum cross, where two tori (the two infinities, 1/0 the double torus) merge at the centre into one; fusing to full coverage is the infinite seal, and src/quantum/cross re-exports this as one identity.",
-    "uuid": "6dafd2de-158c-8be7-90be-af4c8be1cf48",
+    "uuid": "86770d5c-2fa4-8226-a2ce-35154a0e8210",
     "words": [
       "use",
       "when",

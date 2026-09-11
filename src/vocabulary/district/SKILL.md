@@ -2,11 +2,11 @@
 name: district
 description: "Use when reasoning about district as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/district"
-coordinate: "vocabulary/district · 8/crest · 67b9f271"
-contentUuid: "2f3032a7-cdba-5cbb-ba6b-c0e9ffecfb1c"
-diamondUuid: "6160a2bf-2906-8954-94f0-db1f7295cefe"
-uuid: "67b9f271-c04b-8ceb-a99e-9230f5f575f8"
-horo: 8
+coordinate: "vocabulary/district · 1/base · f5432d56"
+contentUuid: "3b91acbf-8c31-577a-a4ab-401a102195de"
+diamondUuid: "f4199cad-e2e4-8b51-a864-8027bf968789"
+uuid: "f5432d56-b232-8a81-82c2-af4a94372282"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2dea2738-61ed-8ee6-b918-a241b89893d7"
+  computationUuid: "0ade1f43-48ca-83a3-afcf-20780a5caf60"
   stages:
     - stage: path
       stageUuid: "cd68594e-c3b7-84f8-8d86-1afd5da4aff8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "00d54c90-ae2a-89cf-9673-da1b3e42c31a"
     - stage: horo
-      stageUuid: "23eaaabb-5a8b-8b6e-9522-c6757f3792d5"
+      stageUuid: "9d8f6026-125d-86d5-a439-c8323eb19229"
     - stage: seal
       stageUuid: "889e55ca-ce7a-871f-8d13-6a7fa05e63a5"
     - stage: uuid
-      stageUuid: "fe5ec113-0f43-881e-b589-1aa8afcf57b5"
+      stageUuid: "518512fe-97e3-8261-8c40-99e290ec4e24"
 version: 2
 ---
 # district

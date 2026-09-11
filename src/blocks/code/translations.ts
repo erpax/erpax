@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "code",
-    "uuid": "c3614164-9c5d-83f1-8d7f-80d8dd9d7cae",
+    "uuid": "a70a9968-61cd-86bf-9d64-4ef00d35eebf",
     "words": [
       "code"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about code — exports (the Payload block) and exports (the React component). One barrel cannot offer both under one name, so the client is here.",
-    "uuid": "64464677-3a49-8211-a4a8-131724b4ed82",
+    "uuid": "e83bbe6b-fc98-867a-8b18-3786c8dd3cb7",
     "words": [
       "use",
       "when",

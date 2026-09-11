@@ -2,11 +2,11 @@
 name: interior
 description: "Use when reasoning about interior as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/interior"
-coordinate: "vocabulary/interior · 4/weave · 91ec7d55"
-contentUuid: "eab0eba4-8a0e-5202-8d77-08960f7d0605"
-diamondUuid: "03e5f35f-365f-804f-be9a-3052a0b9fd39"
-uuid: "91ec7d55-d991-8f67-8fc3-3a093e3b9ef9"
-horo: 4
+coordinate: "vocabulary/interior · 1/base · 29c4529f"
+contentUuid: "213604a4-0a85-573b-bcab-670a7d85109b"
+diamondUuid: "c0402ede-b65a-8334-b587-663a56ef4dd3"
+uuid: "29c4529f-32e1-81f8-ba27-e8b0912fcf34"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2dcf58bb-087a-8509-a1ce-f13786b787c0"
+  computationUuid: "f4033bf5-2b66-8445-9cc4-03057fff78b2"
   stages:
     - stage: path
       stageUuid: "23015430-9f59-8553-94af-14a26134c86d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cb0d7f72-b375-8b43-92cf-9461378560c9"
     - stage: horo
-      stageUuid: "cf0c1c9d-3a37-8fb5-98e9-64dc91ed3986"
+      stageUuid: "859ade60-0970-8e21-beda-c28a26ef932c"
     - stage: seal
       stageUuid: "57d183bc-75ff-82ca-8391-e4b59116b58b"
     - stage: uuid
-      stageUuid: "59845eec-750a-862b-ad14-3a2f7246cb68"
+      stageUuid: "ad7ba35a-b410-81f5-911b-feac75473cba"
 version: 2
 ---
 # interior

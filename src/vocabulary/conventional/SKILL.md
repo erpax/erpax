@@ -2,11 +2,11 @@
 name: conventional
 description: "Use when reasoning about conventional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/conventional"
-coordinate: "vocabulary/conventional · 2/share · d0fad9a1"
-contentUuid: "484185f1-a6bd-58a2-8b3b-cdfbf02f8649"
-diamondUuid: "439d2e89-1acd-8532-8bb9-f693622324ef"
-uuid: "d0fad9a1-16bd-836c-a33d-3ee5e2a48157"
-horo: 2
+coordinate: "vocabulary/conventional · 8/crest · 384cc3a2"
+contentUuid: "08010b36-b22a-5be0-ad85-b151af56c694"
+diamondUuid: "aa2058fe-5326-8c4a-9a81-638ff0b0315d"
+uuid: "384cc3a2-0edd-84d4-b866-4fb0ae6e3b0d"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "df9d377b-5b5e-8fae-8824-a66a3a374565"
+  computationUuid: "322b8d72-878d-8f2d-aa24-61fad86843f6"
   stages:
     - stage: path
       stageUuid: "9e249f8e-7f6d-8719-b6e6-e5d113cf7a1e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6836b516-aebe-88cb-bf70-49fede5e87cb"
     - stage: horo
-      stageUuid: "7762d7b7-f6db-8502-8776-10c37b8a6d24"
+      stageUuid: "e24b64d5-69fe-8913-8272-e4c99e93b812"
     - stage: seal
       stageUuid: "791111ef-a308-8a1f-833c-ea1d0e40e603"
     - stage: uuid
-      stageUuid: "e32e386c-b781-897e-a83f-f56b9a1907fa"
+      stageUuid: "0195caeb-0d58-84c6-a114-2aeebcbb6948"
 version: 2
 ---
 # conventional

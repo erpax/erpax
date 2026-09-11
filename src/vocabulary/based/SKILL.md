@@ -2,11 +2,11 @@
 name: based
 description: Use when reasoning about based — A resource from which this work is derived or from which it is a modification or adaptation.
 atomPath: "vocabulary/based"
-coordinate: "vocabulary/based · 8/crest · d3c2e8b9"
-contentUuid: "3f08c6eb-c8a9-5c87-84dd-d3d24e595043"
-diamondUuid: "2b65c4a3-840a-88cf-ba27-0ed5fdd1d831"
-uuid: "d3c2e8b9-ba2f-849d-96ad-6767ae976994"
-horo: 8
+coordinate: "vocabulary/based · 5/round · ee448e2d"
+contentUuid: "6c3ebd5d-d388-598b-a7b9-672439e7440d"
+diamondUuid: "45be21c6-84ab-81f5-81d6-3237c12c7897"
+uuid: "ee448e2d-9f10-85ff-b495-f22d9e013d21"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e40d5be1-7697-81cf-ac5b-91e64d4edbe1"
+  computationUuid: "ebbb3d06-6269-829a-a9cc-275a17705f66"
   stages:
     - stage: path
       stageUuid: "dd39b065-345c-8616-b960-101a13589ba7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d6c6ab88-997e-8a07-a8b3-b46c5d3f4edd"
     - stage: horo
-      stageUuid: "77399b75-9cb9-8833-93d9-bf02bdfd8921"
+      stageUuid: "09ed1189-62e1-888b-a017-a7c69ac830e5"
     - stage: seal
       stageUuid: "0e0929e3-95f7-808a-860d-05d72ecf7ae9"
     - stage: uuid
-      stageUuid: "42cadf78-dada-844e-8682-34c2612338be"
+      stageUuid: "21bd6219-cf36-85f7-b644-d87097d5e73c"
 version: 2
 ---
 # based

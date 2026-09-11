@@ -2,11 +2,11 @@
 name: acceleration
 description: "Use when reasoning about acceleration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: acceleration
-coordinate: "acceleration · 7/descent · 241721b5"
-contentUuid: "49d292e8-ef82-53b6-a34c-d419d335fe31"
-diamondUuid: "11d80459-8982-810d-b3ee-49e1ec7a69bd"
-uuid: "241721b5-e3f1-887d-b91e-a88280adfaa4"
-horo: 7
+coordinate: "acceleration · 4/weave · 875d6aac"
+contentUuid: "c249a08a-4ea6-54e9-abed-09236e70a7a3"
+diamondUuid: "75ddd978-530a-8d46-9f3c-22409b40aabc"
+uuid: "875d6aac-fc89-80fa-91f8-aba660ed53c1"
+horo: 4
 typography:
   partition: acceleration
   bondDegree: 15
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0805f19d-be1d-8e87-8821-3ed8353e1e14"
+  computationUuid: "400d4d38-837c-84b5-84fc-de6e59658167"
   stages:
     - stage: path
       stageUuid: "f4f59074-8eef-8da1-b99a-c5a82d021a75"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "2aa8abcb-e2c9-8e08-acd5-27b61b09431e"
     - stage: horo
-      stageUuid: "a27e5029-818e-8dac-ac71-1e682a37942e"
+      stageUuid: "73e6a605-0cf9-8a73-857c-a0e4525cf277"
     - stage: seal
       stageUuid: "44c89cd4-7db9-8142-9d07-ede0c86198df"
     - stage: uuid
-      stageUuid: "f811a7a9-10a1-8f21-bb96-990da355cd24"
+      stageUuid: "70ea3411-1595-8cb2-9c90-a93ac1fdd4f0"
 version: 2
 ---
 # acceleration

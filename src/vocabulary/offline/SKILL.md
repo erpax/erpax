@@ -2,11 +2,11 @@
 name: offline
 description: "Use when reasoning about offline as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/offline"
-coordinate: "vocabulary/offline · 5/round · 1c5dca58"
-contentUuid: "01cb300c-0f3a-5870-a121-09839810f98d"
-diamondUuid: "d8de71b9-a5fe-80a5-bced-2350a4dd0962"
-uuid: "1c5dca58-1666-8f86-a83c-5ec9727ad64a"
-horo: 5
+coordinate: "vocabulary/offline · 1/base · b398b998"
+contentUuid: "445b2529-4d96-5c28-8fa3-815e67782dd6"
+diamondUuid: "1e1a9a80-312c-8442-8ff5-30ffeb5fe6ec"
+uuid: "b398b998-dcff-8c90-932b-5ca4e5d84bfd"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "809406d7-7cdd-8f48-a0b3-10212f3d7fd8"
+  computationUuid: "ca03295e-c5a0-896d-8dfa-17a90c429fcf"
   stages:
     - stage: path
       stageUuid: "65849fc8-db74-844e-b428-a743575733dd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6544fc0c-00cd-8bdc-b53b-1e52db3261cd"
     - stage: horo
-      stageUuid: "29fe68cf-966c-88e9-80c6-96a1a7816e45"
+      stageUuid: "e28c73ed-61bb-8591-9f02-04fcabf671f2"
     - stage: seal
       stageUuid: "fdfc5690-01ff-8cfd-ba74-aa85621b5184"
     - stage: uuid
-      stageUuid: "fd6c7022-b209-8810-9d55-afef7eab868b"
+      stageUuid: "5fafeef8-5577-8b61-83ed-89812d0b707f"
 version: 2
 ---
 # offline

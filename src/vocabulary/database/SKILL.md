@@ -2,10 +2,10 @@
 name: database
 description: "Use when configuring the Payload database adapter or working with migrations/schema — choosing sqlite/d1/postgres/mongo, running migrate / migrate:create / migrate:down, dev push, transactions, indexes, defaultIDType, or fixing schema/enum/table-name errors."
 atomPath: "vocabulary/database"
-coordinate: "vocabulary/database · 2/share · 1b7adc7a"
-contentUuid: "e88fc2f6-8ac6-522d-bab8-1fe3dad72f07"
-diamondUuid: "600976bc-ecac-8bcd-ad88-9cddea9b040f"
-uuid: "1b7adc7a-64f3-8527-a8e1-28cbb7a67b29"
+coordinate: "vocabulary/database · 2/share · 1ed6d67a"
+contentUuid: "f95e1a29-c296-5cb7-b69e-27161f2378fd"
+diamondUuid: "f3987f8f-acd1-8728-8131-6980a1639fe5"
+uuid: "1ed6d67a-4a81-809f-9ab3-2dfde745a18f"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "acd5c9a4-52d2-8355-9edd-41c246d3b406"
+  computationUuid: "dd5943dc-cb9d-8e40-ac61-3b124583a223"
   stages:
     - stage: path
       stageUuid: "3b97cf25-ecaf-8580-99e3-0b887f2f8aaa"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2650e1fc-dad0-8ca1-acb1-981f42e62da8"
     - stage: horo
-      stageUuid: "a707ce26-8783-8872-b663-b995440ef9d2"
+      stageUuid: "0ffe1308-9cf1-8f07-b0e2-d17777eae3bf"
     - stage: seal
       stageUuid: "a5ca82de-686e-80d7-a253-0a2c3f0b490b"
     - stage: uuid
-      stageUuid: "9c1d234e-38e6-86e4-800c-10ca27650308"
+      stageUuid: "90df0467-73e5-8cec-a1a7-03c6c80acbe9"
 version: 2
 ---
 # database — adapter, migrations, schema (position 4 of the material cycle)

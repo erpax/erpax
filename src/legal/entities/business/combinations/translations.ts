@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "combinations",
-    "uuid": "882911e5-03e4-8a3e-af2e-68ea95c21014",
+    "uuid": "c0727db1-3751-836c-b545-0f0433f044c9",
     "words": [
       "combinations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
-    "uuid": "180ff2a5-b003-8db6-a269-11af7441ae45",
+    "uuid": "30c081ba-34b8-8be6-b258-aaf30aaee562",
     "words": [
       "use",
       "when",

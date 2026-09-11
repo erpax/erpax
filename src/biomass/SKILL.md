@@ -2,11 +2,11 @@
 name: biomass
 description: "Use when a living stock is valued by its total mass, not per-individual — standing biomass (kg) is the IAS-41 fair-value unit for an aquaculture stock, a forest stand, or a bee colony's strength: mass × forward price − costs-to-sell. Its growth rate is biological transformation. The non-individuated living-asset measure, shared across aquaculture/forestry/apiculture."
 atomPath: biomass
-coordinate: "biomass · 4/weave · 7c0d1f15"
-contentUuid: "b6a33c3c-b912-5622-b9ac-fcbf17c738bb"
-diamondUuid: "6493e376-0a2a-8ef4-b33b-a8b8ae3a5561"
-uuid: "7c0d1f15-5286-8a1c-aa3f-3ef639eb51d7"
-horo: 4
+coordinate: "biomass · 1/base · f09c8697"
+contentUuid: "ad3c488c-9f1e-5798-9972-35392c0ac6a7"
+diamondUuid: "16ad6f07-3ca0-850f-9fe1-aaebeb3b691b"
+uuid: "f09c8697-e9ef-8cb0-8e04-f7748cdb475e"
+horo: 1
 typography:
   partition: biomass
   bondDegree: 61
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "cb9d2990-6c8c-861e-9993-87f9daef9bac"
+  computationUuid: "13e36a95-18ad-81bb-bab2-d86295112842"
   stages:
     - stage: path
       stageUuid: "89f60642-c0ca-8467-b5aa-e02a0fd16eca"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "efb65edd-8e10-8fda-8399-a85bc27baeef"
     - stage: horo
-      stageUuid: "3b29b127-c423-8819-84e4-16e8a43d54f3"
+      stageUuid: "c6291014-5926-866c-80a3-e121913d0a2e"
     - stage: seal
       stageUuid: "da4bd91a-383c-84fa-a2c2-f4d1fc1bd47e"
     - stage: uuid
-      stageUuid: "1aa03320-8429-88cf-80cb-258fa0f97d69"
+      stageUuid: "32adc36f-64a5-85b7-889b-d394fd713c46"
 version: 2
 ---
 # biomass — the living mass of a stock; the fair-value unit of non-individuated life

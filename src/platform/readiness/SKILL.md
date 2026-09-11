@@ -2,11 +2,11 @@
 name: readiness
 description: Use when reasoning about readiness — enumerates the live MCP tool surface and groups it; folds that into a single manifest a reader can act on.
 atomPath: "platform/readiness"
-coordinate: "platform/readiness · 5/round · d19a3f38"
-contentUuid: "5a811011-6e85-5ff4-b62c-fdadbed41d0c"
-diamondUuid: "d617066c-2ab3-854c-988a-18cf56fe27cb"
-uuid: "d19a3f38-3a8c-8b19-bd4c-097f11a6cc0b"
-horo: 5
+coordinate: "platform/readiness · 2/share · c146c50a"
+contentUuid: "b295cfde-dd0d-5df9-b434-86be0696fcda"
+diamondUuid: "faa4ebd7-bea4-896a-9b8d-f0799c71e025"
+uuid: "c146c50a-59f4-8011-a7aa-247f11640470"
+horo: 2
 typography:
   partition: platform
   bondDegree: 3
@@ -17,7 +17,7 @@ standards:
   - "W3C-JSON-LD-1.1"
 bindings: []
 signatures:
-  computationUuid: "2989052c-527f-89a3-8837-2dacbd434d3b"
+  computationUuid: "c0c6e0da-d723-8a83-9779-32ec7ae77467"
   stages:
     - stage: path
       stageUuid: "e4a45e99-28b2-82fb-8ec4-f128dcf885cc"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "cb3b1d4e-4443-892f-865b-2cce5b6e7b34"
     - stage: horo
-      stageUuid: "fe9f8957-b4a5-8a6b-b661-b403362665af"
+      stageUuid: "5cd3902d-b87a-8bd8-97b7-abf136cc0b83"
     - stage: seal
       stageUuid: "70a6c505-69d4-881f-96dc-6cf313c739da"
     - stage: uuid
-      stageUuid: "41b3e8f9-74cb-8483-814c-4d241e5f9863"
+      stageUuid: "c5f64324-fc1f-8160-b873-ba366c20d590"
 version: 2
 ---
 # platform/readiness — one survey answers "is this shippable", instead of eighty slices each claiming it

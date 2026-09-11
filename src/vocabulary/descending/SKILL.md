@@ -2,11 +2,11 @@
 name: descending
 description: "Use when reasoning about descending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/descending"
-coordinate: "vocabulary/descending · 8/crest · 58f181f8"
-contentUuid: "3c8ac56a-c15e-5f4e-ad30-87d82f0dfc8e"
-diamondUuid: "97af0fbe-af87-865d-a3f7-bca2803b2b87"
-uuid: "58f181f8-374e-809c-ade2-9145751de24f"
-horo: 8
+coordinate: "vocabulary/descending · 2/share · f861b51b"
+contentUuid: "8bfd1fdb-0b57-50f5-aae1-f7acef759cc6"
+diamondUuid: "b39b2442-5fc8-8f8a-bca5-0ebb2961fb89"
+uuid: "f861b51b-c517-800d-aa08-30cfce93f16a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9bf18eab-0b0a-8dac-9a5e-4a7940b18c86"
+  computationUuid: "a0a67bef-c8f3-8c8e-aaf1-e0dd3112f663"
   stages:
     - stage: path
       stageUuid: "8fc11583-0a1b-804f-9597-6434bcf3e505"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d9698c04-7006-891f-a257-444f86456c2d"
     - stage: horo
-      stageUuid: "86356a83-0298-89e5-b083-8fea429af9fa"
+      stageUuid: "b23ff649-16a3-8244-99ce-baa9188a2bf2"
     - stage: seal
       stageUuid: "0d421833-033c-8525-ba4b-11ff0f50a486"
     - stage: uuid
-      stageUuid: "3b945a76-73f5-83d8-9452-d8af82d079ba"
+      stageUuid: "6ac9354e-939c-89f0-a4aa-a9c083a67437"
 version: 2
 ---
 # descending

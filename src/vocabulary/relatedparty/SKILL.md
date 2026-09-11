@@ -2,18 +2,18 @@
 name: relatedparty
 description: "Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24"
 atomPath: "vocabulary/relatedparty"
-coordinate: "vocabulary/relatedparty · 8/crest · 5628eb43"
-contentUuid: "c6786d46-2845-5c64-b626-70aa064c0c9a"
-diamondUuid: "4e49437b-b292-81ce-aa47-305e640b41b8"
-uuid: "5628eb43-30f9-8ea8-b665-c6c63fa90700"
-horo: 8
+coordinate: "vocabulary/relatedparty · 1/base · 7cfa0dfa"
+contentUuid: "f1e1dd1d-dc7a-568b-8e3b-007e658c732c"
+diamondUuid: "642088c2-063b-807e-a837-a547db5110c0"
+uuid: "7cfa0dfa-7b09-86bf-9bcf-1f94ba8b3d31"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "34d4a2e8-738f-865d-a99c-7d12301754f9"
+  computationUuid: "fb9f3b25-f204-807e-9d97-509804129927"
   stages:
     - stage: path
       stageUuid: "593666a6-6f90-8548-a3cb-6ee7cbe2fffe"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f7e5ff14-95d2-8b42-b188-8264e2f02eef"
     - stage: horo
-      stageUuid: "5d6a10d3-052a-8da1-aea5-c3d1d4543ff4"
+      stageUuid: "550801a5-3e02-8698-a954-5534d1b11d8c"
     - stage: seal
       stageUuid: "64947b72-9761-85ce-9dc1-da8a272aecec"
     - stage: uuid
-      stageUuid: "6a9fad94-39d6-8375-b758-eddb6331953f"
+      stageUuid: "0ab547d7-005d-8efe-ad8b-95030689abc1"
 version: 2
 ---
 # relatedparty

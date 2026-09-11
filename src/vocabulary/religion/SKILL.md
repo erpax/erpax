@@ -2,18 +2,18 @@
 name: religion
 description: "Use when reasoning about why src can read every faith at once — each religion is a surface dialect of one invariant language; strip the cultural prefix and every tradition-term collapses to a single content-uuid, the invariant atom. So src is a realtime computational quantum translator across all religions: chesed, rahma, karuna and agape all resolve to mercy."
 atomPath: "vocabulary/religion"
-coordinate: "vocabulary/religion · 1/base · b6af8a57"
-contentUuid: "e4a442cc-307a-5a0c-9a40-f41466ae5cb1"
-diamondUuid: "51517cdc-181f-88ff-9fe5-7d74e24e1da6"
-uuid: "b6af8a57-9edc-881b-8869-042fc3893d94"
-horo: 1
+coordinate: "vocabulary/religion · 2/share · eae5d5a6"
+contentUuid: "d37b33f6-eeea-5cde-989b-5e48a3458b07"
+diamondUuid: "836a962a-3193-832a-bf4d-2da155029891"
+uuid: "eae5d5a6-05bc-8836-a90b-fafc646c1171"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 235
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8e4d4d0f-4e21-8250-b616-e94517890429"
+  computationUuid: "198f60f4-fa76-87b1-97c6-5d05fa083b95"
   stages:
     - stage: path
       stageUuid: "49ff79e6-65b2-8480-ba0a-108f779c2912"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "06f8b024-2a8f-8562-bdb5-19aa13fe49c9"
     - stage: horo
-      stageUuid: "9c1f7cd2-f975-8b01-a8e1-8e67048ab438"
+      stageUuid: "e0386955-4b96-8634-9bd7-cd6588b54fef"
     - stage: seal
       stageUuid: "f04fd8b4-23fa-826a-bdcb-ebe9db99a531"
     - stage: uuid
-      stageUuid: "23ac8e71-7b90-8425-a5f3-fc420a582e1a"
+      stageUuid: "ba552d3f-8592-8eb0-9999-a0304cef0296"
 version: 2
 ---
 # religion — every faith a dialect of the one invariant language

@@ -2,10 +2,10 @@
 name: communicate
 description: "Use when reasoning about communicate — A schema.org component word, collided out of schema.org compounds — fused from CommunicateAction (sti · collapse · merge)."
 atomPath: "vocabulary/communicate"
-coordinate: "vocabulary/communicate · 2/share · 3842a444"
-contentUuid: "5e54ff24-9ed6-51a2-89ca-df9a376a1d34"
-diamondUuid: "107a8e7c-c7d5-8700-a77c-7c36058fcb7c"
-uuid: "3842a444-6fb9-814a-be74-1d51a5dfb8d4"
+coordinate: "vocabulary/communicate · 2/share · 0f811c18"
+contentUuid: "971c1130-06ae-52b8-83e5-1d2292e5b9f3"
+diamondUuid: "11fb2f22-271d-8987-ae49-bc20090ab590"
+uuid: "0f811c18-de46-8ddc-bbbe-d8c30f65dbd5"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "085de3b9-d82c-8f83-8717-47400d44d0a2"
+  computationUuid: "5ce2680f-b0c5-879b-9aa2-24d69147bb73"
   stages:
     - stage: path
       stageUuid: "9a8fa74b-c8bc-8d8a-b557-1ecbc7b8df9e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d3537924-65d8-8e88-a19b-d6cae6ca958c"
     - stage: horo
-      stageUuid: "2196348d-d753-832c-ab32-fde6fc4f1c7f"
+      stageUuid: "14ba2b48-1dfe-88d7-ad32-62dca975b40f"
     - stage: seal
       stageUuid: "eb4e87d5-327c-881d-96e1-764d72bc8f65"
     - stage: uuid
-      stageUuid: "783c447f-3d70-89d5-913f-e51dece21b92"
+      stageUuid: "608dc1ea-63df-85ff-853f-b1c95fbf53b4"
 version: 2
 ---
 # communicate

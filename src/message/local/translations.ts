@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "local",
-    "uuid": "5a5d8ade-4bbe-87c3-adf5-92f0801d34eb",
+    "uuid": "143b0a19-3837-8e7e-83d3-02117b734b59",
     "words": [
       "local"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about which safeguards a local-only message fabric can and cannot avoid — the send gate binds to EFFECT (one off-machine consumer makes the first local write the outward send), the injection boundary binds to CHANNEL (message content is data on any wire), and the content verdict binds to DECODED MEANING (invariant under glagolitic, cipher, or a quantum superposition of encodings — fails closed over branches).",
-    "uuid": "92acaf9e-7cd8-8ca7-a3de-c5b692488c4f",
+    "uuid": "c3a2cc93-e451-8862-b826-0c5a80d7eb44",
     "words": [
       "use",
       "when",

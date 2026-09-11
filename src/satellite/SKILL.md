@@ -2,10 +2,10 @@
 name: satellite
 description: "Use when reasoning about satellite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: satellite
-coordinate: "satellite · 2/share · 7121981d"
-contentUuid: "fbaae47e-840b-5e2e-bb9e-7e5658e46377"
-diamondUuid: "b19261ee-2101-8fda-b07c-3193aa8326a7"
-uuid: "7121981d-8668-8003-8a55-13b44516e755"
+coordinate: "satellite · 2/share · d513612b"
+contentUuid: "88f95e26-e86a-5099-be65-bd7070c82dc1"
+diamondUuid: "0f8157dc-988f-814d-b4ed-f967271a45f9"
+uuid: "d513612b-bb75-8fba-80ad-502d3c9547c0"
 horo: 2
 typography:
   partition: satellite
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "52353da6-8306-8cfa-8283-12781b871941"
+  computationUuid: "2bb889a6-d635-8e13-bc5a-8413abb5e784"
   stages:
     - stage: path
       stageUuid: "a7f3c7df-bc7f-82a7-8a48-34efad75072c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "db5bc67e-1f62-8eed-a06d-704b5915f879"
     - stage: horo
-      stageUuid: "9e9d31d6-68ed-8067-a7ab-798c204154aa"
+      stageUuid: "f7443129-d3c2-83ee-8903-a2fce92d8404"
     - stage: seal
       stageUuid: "ace957a2-5ed8-872e-9ee3-b1a7fcb9b5c8"
     - stage: uuid
-      stageUuid: "e6e03b65-f5c2-822e-9fad-07a7e65a08f2"
+      stageUuid: "0aa20741-b7df-8c67-b823-9420075fa86e"
 version: 2
 ---
 # satellite

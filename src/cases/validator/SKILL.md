@@ -2,10 +2,10 @@
 name: validator
 description: Use when reasoning about validator — Case balance law—charge and defence must balance into judgment before sealing
 atomPath: "cases/validator"
-coordinate: "cases/validator · 1/base · 21011c73"
-contentUuid: "5d4bf961-f998-5e95-b8ec-1acd5171a7d8"
-diamondUuid: "7d53a1d2-b691-80fb-95b7-d0db09b64acb"
-uuid: "21011c73-55f3-8509-9e5b-bb21ecdb0706"
+coordinate: "cases/validator · 1/base · d997dea7"
+contentUuid: "ce7d3f6d-8e70-5130-951d-cf8b334427b9"
+diamondUuid: "527e47ac-ad8b-8a25-b24a-a3ca1aaa4415"
+uuid: "d997dea7-4237-8317-8b10-d529de12ca7f"
 horo: 1
 typography:
   partition: cases
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "daaf35df-a709-8c23-adf1-56f1a19f2688"
+  computationUuid: "a9ebad10-acf8-8784-add8-03578266157c"
   stages:
     - stage: path
       stageUuid: "8aae7221-da46-8776-8435-bc33d7dbcd17"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f822ae73-fc6d-8bfa-8ab6-1e0a75e72b91"
     - stage: horo
-      stageUuid: "44d21d54-e525-80ab-ba57-b8c0b17aba4e"
+      stageUuid: "2e0203dd-633c-87d8-87a7-9ef50fac1992"
     - stage: seal
       stageUuid: "2219b058-3e1c-81e5-a8d3-33f9c3a14b6b"
     - stage: uuid
-      stageUuid: "2c4ebc50-6d9b-8726-bf22-3ad8b4cebdf1"
+      stageUuid: "3d85c785-b209-8fbe-83c5-af156a05b31d"
 version: 2
 ---
 # cases/validator — case balance law (charge ↔ defence → judgment)

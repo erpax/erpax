@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing ISO 3166-2 — Country subdivisions.",
-    "uuid": "40c58ce4-f298-8897-bf57-8afaefaac528",
+    "uuid": "850e4b1a-e125-8e25-8630-c742d769e3f9",
     "words": [
       "use",
       "when",

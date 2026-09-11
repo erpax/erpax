@@ -2,11 +2,11 @@
 name: college
 description: "Use when reasoning about college as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/college"
-coordinate: "vocabulary/college · 1/base · df36a03f"
-contentUuid: "86ce9301-628d-5a96-a811-afdc0bd1595c"
-diamondUuid: "4c4e1d81-e606-857d-8583-41063e1e2ca5"
-uuid: "df36a03f-fc15-89c2-af42-6a1ecf5cbc00"
-horo: 1
+coordinate: "vocabulary/college · 2/share · 0870f630"
+contentUuid: "a6550e03-2fad-5650-891f-97ab8f102168"
+diamondUuid: "dc73b5fe-98de-83ec-a7e5-5e4735ab74a5"
+uuid: "0870f630-a9a4-8c9f-b3d9-5b59e5afa6dd"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a20a19b7-81e9-8895-856d-dd5fe00f6680"
+  computationUuid: "de06354c-c759-8a16-b7ed-0b38abcaf275"
   stages:
     - stage: path
       stageUuid: "350c70d8-a03e-810f-95b1-07ab98ec31f1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "da45bb71-b81e-8e79-a379-05f5aa2a60a6"
     - stage: horo
-      stageUuid: "3d82341a-14d9-8d0f-acc4-bb8238625422"
+      stageUuid: "459d592c-da22-8c65-8403-a6c1352302d8"
     - stage: seal
       stageUuid: "c9d5ffdc-8ab2-8a33-9292-178fe2c0c52c"
     - stage: uuid
-      stageUuid: "b14d7dea-1312-81c3-9ef9-10d898767a0b"
+      stageUuid: "e592d136-bc18-8823-85b1-1440c3cf2123"
 version: 2
 ---
 # college

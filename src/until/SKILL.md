@@ -2,11 +2,11 @@
 name: until
 description: "Use when reasoning about until as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: until
-coordinate: "until · 8/crest · 246e031b"
-contentUuid: "4a8e2f5a-fb8b-5dfc-8160-2bed1f06fd48"
-diamondUuid: "79f42de6-90c9-8a5a-b529-71772d60a268"
-uuid: "246e031b-8a5c-8a43-b7be-7b9c105d3047"
-horo: 8
+coordinate: "until · 2/share · 4f77efbf"
+contentUuid: "b9c272b2-79be-55fb-97eb-7b962ac303fe"
+diamondUuid: "adb4a8b9-eeea-8015-b4c5-e1cb3b77aa67"
+uuid: "4f77efbf-eca5-8437-9632-7c8158fc5a20"
+horo: 2
 typography:
   partition: until
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a6262fd3-c1a9-8d3f-ac68-a70c4422a05c"
+  computationUuid: "ad3e68f6-ed56-8500-bee4-ea613bf99a91"
   stages:
     - stage: path
       stageUuid: "7686cb74-6fa8-8a92-beec-3e446d3c38ac"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f5ce77c7-5715-830d-b8fe-48d7a416dc1d"
     - stage: horo
-      stageUuid: "6a2dfafb-0dbe-8b9d-b65a-7f72701f1db0"
+      stageUuid: "b7b6da7d-b5c6-86f0-9368-6d3511e56bf1"
     - stage: seal
       stageUuid: "2aafeddd-3d38-8cd8-ab50-f1bebf167fe9"
     - stage: uuid
-      stageUuid: "521e7cfe-af72-844e-9056-fc10a7cdd1bf"
+      stageUuid: "842aee29-bd78-84ab-b4e7-2ea7bc806bdc"
 version: 2
 ---
 # until

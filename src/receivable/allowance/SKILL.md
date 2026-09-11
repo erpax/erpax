@@ -2,11 +2,11 @@
 name: allowance
 description: "Use when reasoning about allowance — The allowance for doubtful accounts as an IFRS 9 §5.5 expected-credit-loss estimate driven by the aging buckets: each bucket carries a loss rate, and the allowance is their…"
 atomPath: "receivable/allowance"
-coordinate: "receivable/allowance · 4/weave · 3e03fbd5"
-contentUuid: "fb221270-59ef-5597-92e0-5ca2d2cd962c"
-diamondUuid: "7cdfae31-2711-8433-8b9d-2a2ec2069db0"
-uuid: "3e03fbd5-3b4e-853f-8778-5a2613bd3bc8"
-horo: 4
+coordinate: "receivable/allowance · 5/round · ae6abd3d"
+contentUuid: "c0a43699-e603-5045-bf7a-67de08df5d40"
+diamondUuid: "f3f28f25-1324-836c-bae9-51285d305107"
+uuid: "ae6abd3d-ac79-80bc-961b-fcace94e5f37"
+horo: 5
 typography:
   partition: receivable
   bondDegree: 9
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-326 §20 current-expected-credit-loss"
 bindings: []
 signatures:
-  computationUuid: "032a98c2-964e-84de-bd93-52428678434d"
+  computationUuid: "ae6b9a45-f4a6-87f7-ba3a-fed6afaddcb0"
   stages:
     - stage: path
       stageUuid: "f949d3e1-4701-8717-ab23-83f809b76abc"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "ae62d7f1-14d7-821f-9561-ec2b922dc5bc"
     - stage: horo
-      stageUuid: "f724b228-b0ef-8472-a1f0-4233a781b32d"
+      stageUuid: "ed0b3b21-4da0-8e0f-9c4f-69093983d584"
     - stage: seal
       stageUuid: "4e79e307-9d68-8c84-b2bc-f725429d29df"
     - stage: uuid
-      stageUuid: "c5771b43-55c3-8e2e-81a1-d509f5aafc9d"
+      stageUuid: "1fbf74f0-21c8-89c8-a782-f7524650309f"
 version: 2
 ---
 # receivable/allowance — expected credit loss, estimated from the aging buckets

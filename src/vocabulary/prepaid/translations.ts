@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prepaid",
-    "uuid": "22712c44-b76b-80da-8cd1-00a4d40b7813",
+    "uuid": "fb4734ad-4c85-833e-ab27-b014e0a43917",
     "words": [
       "prepaid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about prepaid — Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period",
-    "uuid": "9d4dad52-86c4-8774-9675-1f81a24a4505",
+    "uuid": "0b6c4763-70ce-89cf-a06c-b4e0ebda6751",
     "words": [
       "use",
       "when",

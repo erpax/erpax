@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amendments",
-    "uuid": "7daebebe-3141-8550-8c6c-b4ffd5195f9a",
+    "uuid": "eb1b5583-d3b9-81b4-946b-569c1d4342d2",
     "words": [
       "amendments"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection.",
-    "uuid": "b2674680-259d-8cef-8009-21d064263eef",
+    "uuid": "9d31d0fe-2f73-882a-8d31-c7a5f1b724d7",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: justice
 description: "Use when managing judicial/law-enforcement operations — case management, court proceedings, legal evidence, offence/violation records, or police/prosecution coordination in public order (COFOG 03 sub-function)."
 atomPath: "vocabulary/justice"
-coordinate: "vocabulary/justice · 2/share · 5a74a82d"
-contentUuid: "dda962dc-8526-5086-95a6-7678ddf7ef1c"
-diamondUuid: "2a8f31aa-4daf-8c69-b7e2-4ced1b2a7cd6"
-uuid: "5a74a82d-49b3-8aec-99eb-1e61bcb225a8"
+coordinate: "vocabulary/justice · 2/share · 3a325fd1"
+contentUuid: "59311cd9-f970-5710-b96a-8ea904b73a87"
+diamondUuid: "954c0021-d649-8fce-b8d2-07b9bbbbf88c"
+uuid: "3a325fd1-c743-830e-b781-cd1f628b909d"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8a424207-328f-89a5-840f-7e41d2b01dce"
+  computationUuid: "d6313d06-26bf-8a7a-b750-52c2d79e7082"
   stages:
     - stage: path
       stageUuid: "7b22f61a-19fa-82ee-862f-5bda40ff9020"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bd8763eb-b6d2-848a-bc28-03978e48cf00"
     - stage: horo
-      stageUuid: "3090decb-8a6f-8def-9fee-6ec003ab5e97"
+      stageUuid: "5839b0c9-7ebd-8be3-addc-a08fadd86f28"
     - stage: seal
       stageUuid: "359a09f2-25f0-85d6-adb2-2f4e8dece010"
     - stage: uuid
-      stageUuid: "ac7a3c50-a62d-8917-bae4-b4cfdce2e5aa"
+      stageUuid: "d2bfd6e9-4d81-8f36-8cbd-dcd34d21724f"
 version: 2
 ---
 # justice

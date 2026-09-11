@@ -2,10 +2,10 @@
 name: specialty
 description: "Use when reasoning about specialty as a medical facet of medical — vocabulary pivot to @/specialty; nested not duplicated."
 atomPath: "medical/specialty"
-coordinate: "medical/specialty · 1/base · a9516482"
-contentUuid: "a3192dfb-9f93-590a-8054-341e096cf045"
-diamondUuid: "f62f6d74-aab8-8360-9d5b-59d18db56a7f"
-uuid: "a9516482-e74b-8654-a9fd-a5ba571babbc"
+coordinate: "medical/specialty · 1/base · c8828756"
+contentUuid: "3e203683-5af9-5e4f-b3b1-5cf8f3f05008"
+diamondUuid: "c566347c-5ab8-8576-b601-c954f58eb3e4"
+uuid: "c8828756-d6b2-80b6-805f-196b31f9c7eb"
 horo: 1
 typography:
   partition: medical
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fb42dd0d-4b85-8aff-be7e-81a0dacbb1be"
+  computationUuid: "6c840c66-f5e7-8ef3-8dc5-ca5a41d4269b"
   stages:
     - stage: path
       stageUuid: "2d8628ba-097b-8a07-bcb6-da575090945a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e63b7cc0-8182-8eb1-9071-87c009f595b2"
     - stage: horo
-      stageUuid: "f7274be5-bf08-82c8-89be-818c08eba26e"
+      stageUuid: "7f8f36a0-5312-8247-9523-caea7f14a374"
     - stage: seal
       stageUuid: "ab84ab3d-ee9d-86de-b7a4-7ad85af30ea7"
     - stage: uuid
-      stageUuid: "cd4797c2-83b0-8a63-b5dc-d06ed436206e"
+      stageUuid: "cd7bbdb0-671c-851e-b9bb-fbc82c1d91fa"
 version: 2
 ---
 # medical/specialty — medical facet

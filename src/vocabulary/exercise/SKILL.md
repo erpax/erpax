@@ -2,11 +2,11 @@
 name: exercise
 description: "Use when reasoning about exercise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/exercise"
-coordinate: "vocabulary/exercise · 8/crest · 0b3909e6"
-contentUuid: "b042bdf6-aaf1-5185-882d-e573d0db0fb8"
-diamondUuid: "47728bf4-676d-8eb1-9bc2-9baa730cd94b"
-uuid: "0b3909e6-1851-8100-8fda-074c36d33b32"
-horo: 8
+coordinate: "vocabulary/exercise · 2/share · 33d7402a"
+contentUuid: "0c80f7db-a32e-5f76-b8af-7f44c2fc6597"
+diamondUuid: "cf8c7b62-c3b3-8c0e-9d77-0e841271d706"
+uuid: "33d7402a-013d-8c87-bd48-c13fe0e7eab4"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 41
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "272dc443-f2a7-8c9a-8ade-bbcf5d85a85a"
+  computationUuid: "0ac43fa3-e308-8bd9-8703-d43e8f8ec413"
   stages:
     - stage: path
       stageUuid: "fdac0f7b-d5d2-83a5-a4df-49d5e51780bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "29748272-4325-82c6-a531-f25f1d15061a"
     - stage: horo
-      stageUuid: "cb9453bf-f2f2-8868-91f7-e0b8e1d7419e"
+      stageUuid: "3695aa4d-2da4-86e5-a1b7-d3f1a0a4f236"
     - stage: seal
       stageUuid: "64be30f7-7b39-8fec-9fad-ba534fa409b9"
     - stage: uuid
-      stageUuid: "d3666b26-d9d5-8d0e-97d2-695e17a53497"
+      stageUuid: "dfec499f-1469-86c1-bda4-d5003aad1bdc"
 version: 2
 ---
 # exercise

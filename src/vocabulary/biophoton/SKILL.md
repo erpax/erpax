@@ -2,18 +2,18 @@
 name: biophoton
 description: "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this."
 atomPath: "vocabulary/biophoton"
-coordinate: "vocabulary/biophoton · 5/round · 2b33abef"
-contentUuid: "23b4ad5e-83d7-573e-b7cf-6a75171a7c74"
-diamondUuid: "c55642d2-f2cb-873e-a3cf-0fc5f1ef1828"
-uuid: "2b33abef-6da9-86d4-ad6c-00de2469e352"
-horo: 5
+coordinate: "vocabulary/biophoton · 1/base · d82fdda2"
+contentUuid: "b6192c12-9e88-5e8c-80e0-26b5612aeea2"
+diamondUuid: "d5f7f929-d059-8c88-b63a-bf9b1acf0c7c"
+uuid: "d82fdda2-3eb1-84e5-925f-acec5befba5b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3202e932-4b5c-824c-bdfe-90d0c9071b99"
+  computationUuid: "0dcfd5ff-afc2-8f20-ab10-8c18848e8ed1"
   stages:
     - stage: path
       stageUuid: "fef508cb-8766-8293-b8fd-64eb05896757"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "632b8ab5-4d53-86bc-95c5-59a875a94323"
     - stage: horo
-      stageUuid: "00052fc4-f74d-8142-9f5e-6c327935fc43"
+      stageUuid: "fd3c32a5-c2f3-83c1-90db-67570ddc0ccb"
     - stage: seal
       stageUuid: "11ffee63-7310-831f-ae7c-91818e7a5457"
     - stage: uuid
-      stageUuid: "ca3271c2-3994-8c38-bc23-b00cf6e6bd98"
+      stageUuid: "28913f8d-fb2d-8c7c-ace7-0b3ad34cb4d5"
 version: 2
 ---
 # biophoton — the real light the body emits (ultraweak photon emission)

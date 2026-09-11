@@ -2,18 +2,18 @@
 name: account
 description: "Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom."
 atomPath: "vocabulary/account"
-coordinate: "vocabulary/account · 5/round · d51b9ef9"
-contentUuid: "93cfdbff-09ed-55ca-8461-7afa93e7a65b"
-diamondUuid: "aa00e3d4-c220-8c44-a93f-52f1b7f634d9"
-uuid: "d51b9ef9-3802-86de-8d48-28e068b66f44"
-horo: 5
+coordinate: "vocabulary/account · 1/base · 274c762d"
+contentUuid: "8c24658e-4e19-5472-a165-aa4dc210ceb9"
+diamondUuid: "8875c0b0-88df-8fbb-a11b-a50f6cc69ead"
+uuid: "274c762d-c1c3-8926-9e0a-9a7b26e498ba"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 46
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d927c1e6-4aea-8cc9-8ab4-be736d18d6d2"
+  computationUuid: "c438323b-75a3-841c-8dde-db885018541c"
   stages:
     - stage: path
       stageUuid: "26a014d3-93c7-8a7f-b892-6b93abb4d3b4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "36e7b178-662a-8927-8c12-fef8a338c3f3"
     - stage: horo
-      stageUuid: "0f883e79-1efd-8895-9cab-0d98f8b998f1"
+      stageUuid: "f29bb5e9-e1eb-81a3-a1b2-26ece32362bd"
     - stage: seal
       stageUuid: "35c846d2-7d52-8141-aeb4-aa3d34ee7b08"
     - stage: uuid
-      stageUuid: "16f85646-3912-8b57-b262-c82313f1c093"
+      stageUuid: "8fc7ea11-ab78-8a10-a4f0-6f087200d207"
 version: 2
 ---
 # account

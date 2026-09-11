@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "start",
-    "uuid": "e356437d-7dd3-866e-97e1-51335c56b061",
+    "uuid": "86ee31b5-e806-8966-b111-2029a70905df",
     "words": [
       "start"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a date-range or period begins — contract start date, employment start date, fiscal period start, promotion period start. Pairs with end (or duration, or another date atom) to define a temporal span. ISO-8601 datetime.",
-    "uuid": "8ab030ae-b91e-8679-aaf0-e3dfcef97bbd",
+    "uuid": "1b3e02ae-2bc2-8d23-8481-bbc991e471b4",
     "words": [
       "use",
       "when",

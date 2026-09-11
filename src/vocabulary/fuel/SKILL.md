@@ -2,11 +2,11 @@
 name: fuel
 description: "Use when reasoning about fuel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fuel"
-coordinate: "vocabulary/fuel · 2/share · 7acf0b0d"
-contentUuid: "70faf3e8-3c95-541c-8764-f77647d487d2"
-diamondUuid: "55dcaaf3-3f8f-8af1-b0ce-a11ce81a9589"
-uuid: "7acf0b0d-a53d-815e-b503-801654d0d663"
-horo: 2
+coordinate: "vocabulary/fuel · 8/crest · 1171db63"
+contentUuid: "bd9772ce-e087-5384-aae4-5968cd6f63e6"
+diamondUuid: "3beba908-fc95-8980-bb16-be453b33b15d"
+uuid: "1171db63-96ba-8631-96ae-fb8610cf19c5"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d46cb0ee-3faf-8008-993e-e40ecbbd2c33"
+  computationUuid: "bd2d9a82-6ffc-8b68-8f1b-0914fe65796d"
   stages:
     - stage: path
       stageUuid: "4d3a1232-cf7e-8a6b-8efa-c2c6e546764c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5888045e-7a6d-84ee-86f5-c62ec9c53e4f"
     - stage: horo
-      stageUuid: "c1bafc27-38cb-8ee7-a7b8-30f9d2c5b58b"
+      stageUuid: "3f6a5692-a230-82b5-8eb0-6642ac981ea2"
     - stage: seal
       stageUuid: "5523ca2b-6bb3-84e9-976a-1d02d194eb01"
     - stage: uuid
-      stageUuid: "2e5f204a-9ffe-8c3c-b737-b48ab1156122"
+      stageUuid: "8fef809d-478e-8803-beb3-a8dc2bf91ac2"
 version: 2
 ---
 # fuel

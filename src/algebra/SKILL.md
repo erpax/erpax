@@ -2,18 +2,18 @@
 name: algebra
 description: "Use when reducing the corpus's theorems to their only substance — all theorems are algebra: a carrier set and a closed operation. The theorem draws the movie (its orbit); algebras compose into products (theorem of theorems); the fold is a magma (the merkabas folding into themselves and each other). The overlay — torus, tetrahedron, mind — is named and stripped; the picture was never the theorem."
 atomPath: algebra
-coordinate: "algebra · 5/round · 76209460"
-contentUuid: "6860c5fb-99c3-52a5-8bcc-4de7cfe8a1c3"
-diamondUuid: "de8ee494-bb0c-84d6-8d6a-08b2d2e3be5a"
-uuid: "76209460-a5f4-8adb-9ab1-a85a666fa724"
-horo: 5
+coordinate: "algebra · 1/base · e45a1d0c"
+contentUuid: "1e9b8f0c-44bf-5f5e-bc8a-dbc39092a304"
+diamondUuid: "81272903-59a3-88f9-b3a0-3565ee3d8ea7"
+uuid: "e45a1d0c-bf08-84d5-956e-f2188f202a65"
+horo: 1
 typography:
   partition: algebra
   bondDegree: 66
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ab2e1788-b390-832a-a19a-93b263bce04c"
+  computationUuid: "8474d7c5-20fe-8f8f-bebc-2872a17ce907"
   stages:
     - stage: path
       stageUuid: "25e3d5e5-a6d7-84fa-a393-8e29b106eda2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "98f92503-b9ec-87f9-9b0a-617e524d85e2"
     - stage: horo
-      stageUuid: "19b16559-e5fe-84b1-924c-56a10fefadf0"
+      stageUuid: "886d7a7f-50d9-824e-bd0e-30114f42a180"
     - stage: seal
       stageUuid: "0f350592-32ce-8e8e-b1be-312b6ecd6d66"
     - stage: uuid
-      stageUuid: "5a778ce4-6d07-8b73-8f62-f5c1f5acd4f7"
+      stageUuid: "abcc6a6a-f27d-8684-b46f-d02445882aad"
 version: 2
 ---
 # algebra — all theorems are algebra only; the theorems draw the movie

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "queue",
-    "uuid": "9aa064c3-1cfc-8a82-8ce9-69c15c32d862",
+    "uuid": "abd7caf4-1304-814a-94a3-28c317b4eae5",
     "words": [
       "queue"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a declared Cloudflare queue consumer must actually reach a handler — consumeQueueBatch runs the payload jobs sweep (the queue message is a nudge; the database holds the work) and acks the whole batch on a green sweep, retries the whole batch otherwise, so max_retries moves a misconfigured batch to erpax-dlq where it is visible. Found because wrangler deploy FAILS CLOSED on a consumer with no queue() export — code 11001 — the deploy-blocking form of an unraised case.",
-    "uuid": "463d5b58-db2d-87ff-a5f8-96226887c081",
+    "uuid": "e6a18141-9c22-8629-bd96-9a068ecc536b",
     "words": [
       "use",
       "when",

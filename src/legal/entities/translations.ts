@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "entities",
-    "uuid": "03097da4-fc05-809d-9f6e-dbfd33f2bad0",
+    "uuid": "51b737ac-c764-85aa-b23c-3761344af296",
     "words": [
       "entities"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants.",
-    "uuid": "17fd8a91-dda8-8a42-a4c2-540e8f3d61fc",
+    "uuid": "35a7cdc5-91c6-8210-9954-517a8857fe9c",
     "words": [
       "use",
       "when",

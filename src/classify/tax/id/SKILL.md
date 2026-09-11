@@ -2,10 +2,10 @@
 name: id
 description: "Use when a tax-ID needs a normalised type-label stamped onto the document — a beforeChange hook that matches the raw number against the per-country regex registry so downstream code branches on a label, not a free-form match."
 atomPath: "classify/tax/id"
-coordinate: "classify/tax/id · 7/descent · 6c833a65"
-contentUuid: "e1493b6c-35e4-5373-ac83-42b1c0d6b37f"
-diamondUuid: "c9139b20-62e0-87eb-b5f1-fc82a75ace58"
-uuid: "6c833a65-b7ed-8d85-a16d-5b085344d29c"
+coordinate: "classify/tax/id · 7/descent · 2d492c9e"
+contentUuid: "0fe85173-a5c9-5205-a77c-0811f4858327"
+diamondUuid: "aa90afb9-396f-852d-bb90-164de99dace8"
+uuid: "2d492c9e-4727-8bee-a6e7-4052d9465e8b"
 horo: 7
 typography:
   partition: classify
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "02d12113-db04-800c-b743-ee83f01c4654"
+  computationUuid: "99c56420-062d-8575-9adf-bdfe756d4eb1"
   stages:
     - stage: path
       stageUuid: "24c533f5-84e8-8f9d-83c9-1063160e5331"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "eab96a84-5895-8ffe-8c99-ba2efb002bf7"
     - stage: horo
-      stageUuid: "6b2b1650-9cfc-8a42-b869-0dee8ee3efd6"
+      stageUuid: "bea32c3f-eda5-8402-aa67-c9dca6140a46"
     - stage: seal
       stageUuid: "265c4b61-2379-844c-9b22-925e14afcb7c"
     - stage: uuid
-      stageUuid: "40f9f781-d3d3-8c57-8ef1-76e12a5beb30"
+      stageUuid: "de621597-bafa-8f77-a85c-961a9c089369"
 version: 2
 ---
 # classify/tax/id — stamp the tax-ID's type-label

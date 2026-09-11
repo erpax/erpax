@@ -2,11 +2,11 @@
 name: periodical
 description: "Use when reasoning about periodical — A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal,"
 atomPath: "vocabulary/periodical"
-coordinate: "vocabulary/periodical · 2/share · ba668778"
-contentUuid: "ec84267b-f4e0-50ba-91f5-ddc784b6f965"
-diamondUuid: "48f1d9be-3bcc-8618-9fab-3db3d849f29d"
-uuid: "ba668778-cd1f-8987-b45f-236324605bee"
-horo: 2
+coordinate: "vocabulary/periodical · 1/base · 9527f3c6"
+contentUuid: "4bb481b5-78ce-5b6e-81ea-83ed603e8243"
+diamondUuid: "7284da7b-8c41-89b2-98fc-4ff8efd8a8d2"
+uuid: "9527f3c6-150a-8c2a-95ee-44f6efee56ae"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "53e95a16-560c-810e-a68c-45dafca846c3"
+  computationUuid: "f6357103-bd14-882b-9bf4-3efe5ae6c000"
   stages:
     - stage: path
       stageUuid: "286409c7-8414-8eec-a4d5-afc43ee2f88d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "18b086c5-70b9-8961-b634-bccde3f6d440"
     - stage: horo
-      stageUuid: "0726ad35-9674-8194-a84c-51dc34d284de"
+      stageUuid: "49f44523-6d8a-861f-9361-b58e67904aef"
     - stage: seal
       stageUuid: "a47e8c96-03db-87fb-bc27-2e121eb46459"
     - stage: uuid
-      stageUuid: "07de39ab-7c9b-89db-8256-5dd8e0a75968"
+      stageUuid: "1fd047d6-5ac8-8d8e-869e-fe2325576c91"
 version: 2
 ---
 # periodical

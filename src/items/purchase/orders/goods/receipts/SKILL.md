@@ -2,10 +2,10 @@
 name: receipts
 description: "Use when confirming vendor goods arrival — receipt number, purchase order link, received-at date, line quantities, and GL accrual (debit inventory/credit AP) per IAS-2 §10, with revenue timing deferred to the FOB point per IFRS-15 §38-42. The second leg of the SOX three-way match that separates inventory accrual from revenue recognition."
 atomPath: "items/purchase/orders/goods/receipts"
-coordinate: "items/purchase/orders/goods/receipts · 5/round · 6b2ac3a2"
-contentUuid: "6fd81bfc-0cac-5d0f-b303-3d697a56e003"
-diamondUuid: "1f0f757d-3ded-8b7e-889f-dc2d91b847c7"
-uuid: "6b2ac3a2-a460-8183-9397-1dbc7ddd493d"
+coordinate: "items/purchase/orders/goods/receipts · 5/round · 129e3738"
+contentUuid: "0c85308b-f670-50a3-a0fd-6b4fde1eb207"
+diamondUuid: "ecfdf611-ff4c-82db-8f50-bd310275e003"
+uuid: "129e3738-f646-8f73-9548-d11dc2591987"
 horo: 5
 typography:
   partition: items
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e521549b-8f24-8d53-b0d2-13ae0d733b37"
+  computationUuid: "580e3879-57ab-8472-9651-a14a298387c5"
   stages:
     - stage: path
       stageUuid: "0dab4d6c-f8c4-8dd3-873e-4fa630c0ad97"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "77d4caf5-883c-891a-abdb-8f533d764c5f"
     - stage: horo
-      stageUuid: "75ad9d6a-1b68-824c-81ec-21aa4f6f2212"
+      stageUuid: "27284a8b-511d-85ea-b9e6-fe7f24580d05"
     - stage: seal
       stageUuid: "ba660399-fbfd-8d9d-bbe8-2f44cff5e4be"
     - stage: uuid
-      stageUuid: "a338dc8c-3516-8b8e-9367-5ca209871ee8"
+      stageUuid: "4f1fee51-b312-8366-9c81-11348f0a84ce"
 version: 2
 ---
 # goods-receipts

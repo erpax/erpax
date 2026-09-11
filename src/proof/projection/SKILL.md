@@ -2,10 +2,10 @@
 name: projection
 description: "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle."
 atomPath: "proof/projection"
-coordinate: "proof/projection · 1/base · c3c94d12"
-contentUuid: "f26fecd0-034c-5771-b502-60b42b64e195"
-diamondUuid: "68f17cae-f7b0-8723-a4d2-bef7e7385dda"
-uuid: "c3c94d12-f7fb-820f-91d4-62c35ee7787b"
+coordinate: "proof/projection · 1/base · 5abda064"
+contentUuid: "56d9c46a-acff-53a2-8d5d-2df5064a4504"
+diamondUuid: "b189b243-ff46-8ce4-9411-0aa54b198ed2"
+uuid: "5abda064-bd0c-8b16-a97d-f269b7f274e9"
 horo: 1
 typography:
   partition: proof
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "44d7dea8-7472-86ea-83f7-8377fc429833"
+  computationUuid: "6e75bd92-89e5-8c41-bf99-e406b9ed0119"
   stages:
     - stage: path
       stageUuid: "d6eb7272-a5f9-853e-9fd6-6ad1e3123267"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "39217772-f251-879a-8a2e-f9a452dd05ab"
     - stage: horo
-      stageUuid: "9823b765-1898-8b34-bb32-c260bc7f1c5b"
+      stageUuid: "cc23eb8a-bbcf-8414-97e5-8242d92eaa80"
     - stage: seal
       stageUuid: "764fb305-a825-8f36-96a5-f6e76104c2a9"
     - stage: uuid
-      stageUuid: "4e8b547e-992f-84fd-be8a-a43e03c254ca"
+      stageUuid: "181e69f0-f66d-837f-82cd-9e19bbc9131f"
 version: 2
 ---
 # proof-projection — the bounded-infinity organ

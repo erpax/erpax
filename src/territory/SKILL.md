@@ -2,18 +2,18 @@
 name: territory
 description: "Use when organizing sales coverage — geographic or account-based territory, assignment to rep, quota per territory, coverage/overlap rules."
 atomPath: territory
-coordinate: "territory · 8/crest · b1eb1fff"
-contentUuid: "52360e0f-f34b-50b5-9de5-c9adf9824fe0"
-diamondUuid: "2fa1b3c1-4d6c-8755-b076-9626888f1aa9"
-uuid: "b1eb1fff-bcde-8d65-bb5a-95013ad25aca"
-horo: 8
+coordinate: "territory · 1/base · adb0c76d"
+contentUuid: "3f851408-a3ee-5e57-a553-76e85fb6fcfd"
+diamondUuid: "d7f5fdcc-207d-8bac-adbb-9abbc3722df4"
+uuid: "adb0c76d-b177-8f30-937e-0babd6fc1085"
+horo: 1
 typography:
   partition: territory
   bondDegree: 20
 standards: []
 bindings: []
 signatures:
-  computationUuid: "93402f78-054f-8ed0-9eb4-1e551be8a52b"
+  computationUuid: "d5f06bbf-cef9-8eaa-966d-15e128cf783a"
   stages:
     - stage: path
       stageUuid: "64dc0f99-0971-8715-8112-321aa1007132"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "faf54579-7448-8c3b-9057-596a05f6febd"
     - stage: horo
-      stageUuid: "c2c62190-5493-811c-aceb-d441e0c43029"
+      stageUuid: "0bd267ba-368e-83a4-a2d0-8387e111ffce"
     - stage: seal
       stageUuid: "f17c8212-6717-87b8-a7a3-fdd5d44a5dee"
     - stage: uuid
-      stageUuid: "8509d370-4378-8593-b552-eb4dadecff33"
+      stageUuid: "7fea69a8-1432-87ea-b89b-87a41cc64800"
 version: 2
 ---
 # territory

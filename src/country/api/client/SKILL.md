@@ -2,11 +2,11 @@
 name: client
 description: "Use when calling the public, no-auth and key-based official country APIs (VIES, Companies House, KvK, Brønnøysund, INSEE, BG Търговски Регистър, Peppol, EU/OFAC sanctions, БНБ/ECB FX) and resolving them through the EU national→pan-EU fallback chains."
 atomPath: "country/api/client"
-coordinate: "country/api/client · 1/base · b7e09400"
-contentUuid: "592906ee-8222-5128-b5b7-15fb3a0ba4b9"
-diamondUuid: "f1abd335-13dd-8a9a-b097-f1e019fd2e22"
-uuid: "b7e09400-b157-834c-9265-cdb78d517ba6"
-horo: 1
+coordinate: "country/api/client · 7/descent · 8386d3e8"
+contentUuid: "4a95f184-7ff7-5165-89fd-18eed73ab721"
+diamondUuid: "faced9af-1866-8f43-88ac-8065b8cefb23"
+uuid: "8386d3e8-5827-86c1-827b-50df59332676"
+horo: 7
 typography:
   partition: country
   bondDegree: 6
@@ -43,7 +43,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b9d5a5b4-6328-84a9-bc64-dff66ae07354"
+  computationUuid: "e4951ea2-cd0c-8b48-b9ee-961f85f76312"
   stages:
     - stage: path
       stageUuid: "d3ce08b3-da50-8d31-af4c-395defbcd0df"
@@ -54,11 +54,11 @@ signatures:
     - stage: links
       stageUuid: "7183e0a6-e1bc-88e1-81ef-5f9e4b6d4cad"
     - stage: horo
-      stageUuid: "b5a404d3-5e53-8903-9207-2afb6683a749"
+      stageUuid: "894c9078-9993-8a85-979d-cc2c931babf6"
     - stage: seal
       stageUuid: "b1dd545d-c932-83dd-aa52-717e10865115"
     - stage: uuid
-      stageUuid: "b78ffba4-ad46-8c8d-b181-679b127318e8"
+      stageUuid: "ddca6a04-2e18-88d6-a2bc-ea2f1dcfa849"
 version: 2
 ---
 # country/api/client — official country API clients (one file per auth pattern)

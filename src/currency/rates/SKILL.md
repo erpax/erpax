@@ -2,11 +2,11 @@
 name: rates
 description: "Use when storing or querying FX exchange rates for multi-currency translation — from/to currency pair, rate date, source (ECB/bank API/manual), bid/ask/mid, inverse auto-calc, per IAS-21 and ASC-830. The FX rate master collection."
 atomPath: "currency/rates"
-coordinate: "currency/rates · 1/base · 485932ff"
-contentUuid: "6be45a45-5d31-5e6a-8e71-a821eb53713c"
-diamondUuid: "59326c2b-896c-87c4-8593-0fd3992e86da"
-uuid: "485932ff-73c7-83bf-8668-479a3043a7fd"
-horo: 1
+coordinate: "currency/rates · 7/descent · 0bfb7aa3"
+contentUuid: "157c27d3-933f-58ef-91fc-36a4d3ecfb60"
+diamondUuid: "30212c83-55b1-85d9-964e-c4301f1a52c4"
+uuid: "0bfb7aa3-91fe-8e57-94ff-1e2ef236fed4"
+horo: 7
 typography:
   partition: currency
   bondDegree: 24
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f0dad237-4a73-8cf6-8df1-682113cef943"
+  computationUuid: "32cc32f2-aad6-899e-bf06-f6c393e8bcc3"
   stages:
     - stage: path
       stageUuid: "f97d9c10-aa76-8e9a-9bce-62c8c2102e5f"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "8b588d80-b1e1-8583-84e9-7dd3a5a3e4cf"
     - stage: horo
-      stageUuid: "ffe94ba8-0a72-83c7-80ce-a06dba64cce1"
+      stageUuid: "a3169002-efbb-8310-bb46-4ae3a8e88c07"
     - stage: seal
       stageUuid: "376cb7a6-1e50-82a0-9ced-531168a3e0b0"
     - stage: uuid
-      stageUuid: "0382f55e-7372-8980-96d7-a9db30e25d0f"
+      stageUuid: "976cc137-5adf-85c7-bedd-0f44eaced407"
 version: 2
 ---
 # currency-rates

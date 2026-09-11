@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "active",
-    "uuid": "3e936206-42a6-8843-8d5d-6801ed37e7ac",
+    "uuid": "1970cd62-732a-8b5b-9693-1ce2fb9b3db7",
     "words": [
       "active"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an entity can be active or inactive — archived customers, disabled accounts, deactivated users. Boolean or select (active/inactive); toggle switches lifecycle state without deletion. Antonym of status when status carries workflow states.",
-    "uuid": "baac3a9e-320d-8aa7-9ff9-da096ba28800",
+    "uuid": "d6227d87-f388-8e5c-a24f-3e623f9a8bb3",
     "words": [
       "use",
       "when",

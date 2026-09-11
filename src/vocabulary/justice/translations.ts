@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "justice",
-    "uuid": "3a325fd1-c743-830e-b781-cd1f628b909d",
+    "uuid": "0a5c528a-e12a-868c-9203-4f69c1405ff6",
     "words": [
       "justice"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing judicial/law-enforcement operations — case management, court proceedings, legal evidence, offence/violation records, or police/prosecution coordination in public order (COFOG 03 sub-function).",
-    "uuid": "5af0971e-255c-88a9-80b5-e34ff8e51104",
+    "uuid": "1df7092a-abd2-8c5f-be20-f8ca05955b16",
     "words": [
       "use",
       "when",

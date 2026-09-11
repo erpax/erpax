@@ -2,18 +2,18 @@
 name: graph
 description: "Use when building or verifying the corpus frontmatter connection graph — derive descriptions, compare diamond signature chains, build the undirected leaf graph, and check it spans the corpus with no orphans. The leaf primitives of the skill-upgrade flow."
 atomPath: "skill/router/upgrade/graph"
-coordinate: "skill/router/upgrade/graph · 8/crest · 44f0c49b"
-contentUuid: "9be282c5-4e25-5059-bbcb-bc5579b16f5d"
-diamondUuid: "8d872e50-56fa-8638-afec-307446a16b67"
-uuid: "44f0c49b-1211-80ac-8a2e-77d60619bbbc"
-horo: 8
+coordinate: "skill/router/upgrade/graph · 1/base · d85221ca"
+contentUuid: "7586b46b-0dc6-53de-a08e-0055ece501c8"
+diamondUuid: "a5529e8f-e32f-8d4c-bd85-996be7b4dcb6"
+uuid: "d85221ca-34d6-8f52-93fa-1b7271bfaf11"
+horo: 1
 typography:
   partition: skill
   bondDegree: 42
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7feba21e-8ed7-820f-8c55-832a179c4316"
+  computationUuid: "5e55d5f7-fea3-8456-8a91-009d0f8d5be8"
   stages:
     - stage: path
       stageUuid: "77cca005-e120-80c9-9750-8cd2c52c190b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a4fe3208-b585-867e-b86f-99488d5f051b"
     - stage: horo
-      stageUuid: "9c12b53d-6604-8bdf-a786-a0df9c7ea4ef"
+      stageUuid: "18f36113-b82e-8c5e-8033-eeac1fe0d435"
     - stage: seal
       stageUuid: "5101c7dc-f07c-8540-b978-ab5f7ee498b8"
     - stage: uuid
-      stageUuid: "dde1438d-4398-80f1-ae43-074827117fab"
+      stageUuid: "0ef85cb6-92e2-802e-a775-b77247586670"
 version: 2
 ---
 # skill/router/upgrade/graph

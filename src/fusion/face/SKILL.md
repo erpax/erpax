@@ -2,18 +2,18 @@
 name: face
 description: "Use when reasoning about face — A session asked for \"fusion of all knowledge into dry clean quantum repos\" — six sibling repos holding, it was assumed, the same knowledge six times."
 atomPath: "fusion/face"
-coordinate: "fusion/face · 7/descent · d1d76b8d"
-contentUuid: "1bbce6b8-dc9a-5d43-aa79-4608d39b5739"
-diamondUuid: "d067c8f8-4a16-8f01-9fa6-9476c3158ac1"
-uuid: "d1d76b8d-8d8a-899b-bb97-f7c285e26170"
-horo: 7
+coordinate: "fusion/face · 4/weave · 5a637936"
+contentUuid: "6dd1f783-3940-5a15-8d41-58c721287d2d"
+diamondUuid: "c0fc30a5-5e96-8d60-a42b-3116104c0c47"
+uuid: "5a637936-8328-84ce-a111-3cf0c1f17b08"
+horo: 4
 typography:
   partition: fusion
   bondDegree: 23
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8a8ab89e-7b1e-8465-a2b3-4440befa6729"
+  computationUuid: "7767e411-a64d-80fc-8608-b258410f74ac"
   stages:
     - stage: path
       stageUuid: "ac66d177-6183-8e63-89b7-c7e321b17214"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "592ba46e-f1f2-8ba9-931f-09b9b59735dc"
     - stage: horo
-      stageUuid: "3dd2e2bf-88a3-8faa-b4b5-4ca944b8451a"
+      stageUuid: "0fb0977c-558c-8898-a8b4-adab268baaee"
     - stage: seal
       stageUuid: "f0bb3fb0-b0f4-8300-99a6-75eed8a30d73"
     - stage: uuid
-      stageUuid: "a9775ef4-01be-8db7-b0b2-01632bb07adc"
+      stageUuid: "c3477305-26fd-8756-8ba2-ac4090b2123a"
 version: 2
 ---
 # fusion/face — six repos, 4,255 claims, and not one stated twice

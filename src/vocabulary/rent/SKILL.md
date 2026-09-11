@@ -2,11 +2,11 @@
 name: rent
 description: "Use when reasoning about rent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/rent"
-coordinate: "vocabulary/rent · 7/descent · 2a4bfc43"
-contentUuid: "1c001f1f-47a9-564d-9440-0cfa8af94b0f"
-diamondUuid: "444dc235-4a7c-840e-8d2c-64c2a805de12"
-uuid: "2a4bfc43-28a8-81f8-ad88-75da919fd215"
-horo: 7
+coordinate: "vocabulary/rent · 1/base · 1d189010"
+contentUuid: "cb955512-1d2f-5d55-b742-a23654c16041"
+diamondUuid: "664f3974-5667-826b-a0f5-a5f6222337d6"
+uuid: "1d189010-96b7-857a-9243-ed4ba665501f"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "957bd6ed-47fb-8a25-85be-01d4a55d97e2"
+  computationUuid: "74af7ed4-86b5-85fa-b9af-1bbe6c316896"
   stages:
     - stage: path
       stageUuid: "0f505946-9738-8650-8ca2-301664e055af"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e805d009-c3e1-860a-b55a-b199a83a2ef2"
     - stage: horo
-      stageUuid: "70f0ca38-ea5a-8e3d-9d30-9d502b4610a4"
+      stageUuid: "ea83b4bc-2788-8c8e-8c40-7f847be000d7"
     - stage: seal
       stageUuid: "257299f6-e533-8b64-bf1b-cd844ef332be"
     - stage: uuid
-      stageUuid: "c3ac34ac-750e-86e0-b5c7-4a73c06def12"
+      stageUuid: "ac076485-7630-835a-bbda-e6e96c4549ef"
 version: 2
 ---
 # rent

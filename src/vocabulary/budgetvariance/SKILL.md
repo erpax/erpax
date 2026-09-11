@@ -2,18 +2,18 @@
 name: budgetvariance
 description: "Use when reasoning about budgetvariance — Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan"
 atomPath: "vocabulary/budgetvariance"
-coordinate: "vocabulary/budgetvariance · 2/share · aca6ccea"
-contentUuid: "537179c9-e24d-5dfb-b85c-e3a6ade703a2"
-diamondUuid: "8a10ace5-9ef2-87f3-9315-091191dc8810"
-uuid: "aca6ccea-d6ef-86de-92ce-e4ef84473cfa"
-horo: 2
+coordinate: "vocabulary/budgetvariance · 7/descent · 3dab59b7"
+contentUuid: "6b1ac675-15a8-559e-944f-542173095d74"
+diamondUuid: "2b62fc81-090c-8082-b039-da24b0ccb07e"
+uuid: "3dab59b7-cfcb-8473-a744-1b7b7906d0cd"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 28
 standards: []
 bindings: []
 signatures:
-  computationUuid: "28c674fd-9cab-8d95-8a3e-069c615a34b2"
+  computationUuid: "f100c9c9-2bcb-8551-8ba8-c9ffaeec7ba2"
   stages:
     - stage: path
       stageUuid: "9305e59b-15ba-8128-bcad-194bcfb483d1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f1722d1d-a567-8a2d-afc4-2793785291b0"
     - stage: horo
-      stageUuid: "cf51d63b-6c63-812e-a479-99265470ba90"
+      stageUuid: "a0ef22e7-bcaf-8e7c-8215-ba6d971c199c"
     - stage: seal
       stageUuid: "9bcdc4b9-13e2-887b-920b-ec5921f4216c"
     - stage: uuid
-      stageUuid: "20ad274d-e9d8-8040-b6c5-4f6423920fdc"
+      stageUuid: "13ac8baa-d3bd-809e-bb03-22b0a4bdb3f7"
 version: 2
 ---
 # budgetvariance

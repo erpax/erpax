@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "practices",
-    "uuid": "2ad8d56d-1c50-8570-a5f1-75fc40d5e0c2",
+    "uuid": "b746e774-4e20-88ec-9283-85228fe97757",
     "words": [
       "practices"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about practices — A MedicalOrganization where the IndividualPhysician practices.",
-    "uuid": "b06d7817-3eaa-855d-b109-75e93290ab0d",
+    "uuid": "de5e3fd0-6a26-8db0-a3f5-7d72b413e4f8",
     "words": [
       "use",
       "when",

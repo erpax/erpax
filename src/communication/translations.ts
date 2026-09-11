@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "communication",
-    "uuid": "6cf0773f-3c28-842b-9e41-93ddc21b5793",
+    "uuid": "10a2b3d7-5567-8907-8c8e-f48bfacd310f",
     "words": [
       "communication"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when conveying a message from a sender to a receiver — the message is its content-uuid (self-decoding, no payload), so transfer is uuid-transfer; same content is the same message and a tampered message has a different uuid.",
-    "uuid": "046bfd7e-1f0d-87d5-9334-c81e96cb8461",
+    "uuid": "838e40bb-0ba1-8551-b0ea-e52376d81e4b",
     "words": [
       "use",
       "when",

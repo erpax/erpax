@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bone",
-    "uuid": "c12634f1-82c2-8a6a-8eb5-7b6813a3df11",
+    "uuid": "139d3c96-5850-8fb5-a47a-98a4fad3a2a0",
     "words": [
       "bone"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bone — Rigid connective tissue that comprises up the skeletal structure of the human body.",
-    "uuid": "58191533-7f84-88a1-a520-7a2bc1ac9ded",
+    "uuid": "8ce7adcf-c1c1-8b3e-9d26-389dc0493037",
     "words": [
       "use",
       "when",

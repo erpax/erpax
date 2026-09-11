@@ -2,11 +2,11 @@
 name: en13402
 description: "Use when reasoning about en13402 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/en13402"
-coordinate: "vocabulary/en13402 · 4/weave · 71839bff"
-contentUuid: "72808724-73fa-58b3-9244-fc438e88f5a7"
-diamondUuid: "6fc64ffd-e7de-8e88-8373-dcf1ae284e9f"
-uuid: "71839bff-53e7-8f24-a912-145cf1ad17ed"
-horo: 4
+coordinate: "vocabulary/en13402 · 5/round · 3f0c07bb"
+contentUuid: "03a0f603-1f1a-5729-9f87-3cf371de969a"
+diamondUuid: "4b1cdbe2-3023-8687-b2c8-f5f7de03adbf"
+uuid: "3f0c07bb-b58f-8f90-829a-b4524ce92830"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "25f16c3f-2541-85f8-b0a7-91437e054fce"
+  computationUuid: "32b1b16d-3a45-8011-9abd-6f8998de09af"
   stages:
     - stage: path
       stageUuid: "7eeceb89-c598-8072-9010-a0c9f5d80dd3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "720aaa0a-c7ae-8663-994d-bb8d1a6a7263"
     - stage: horo
-      stageUuid: "deaeb60a-ae2f-8b43-99a0-18f82c4a3765"
+      stageUuid: "0ce7297e-51f9-830e-9244-0c9bdf98962c"
     - stage: seal
       stageUuid: "ef169818-5d26-8245-bbcd-fa1e84c44ad4"
     - stage: uuid
-      stageUuid: "ff2390e8-feb5-8d88-8720-4dd5bbb0d285"
+      stageUuid: "47baff88-3adf-826f-b862-6c53e6292238"
 version: 2
 ---
 # en13402

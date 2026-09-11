@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "digit",
-    "uuid": "b07c09b4-2fd8-810c-a22d-91a6667593d2",
+    "uuid": "e22909d1-93b7-8a82-a2a5-06cf829aeb61",
     "words": [
       "digit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when storing numeric or realtime data the way words are stored — one folder per digit (0-9), crosslinked exactly like the word atoms; the numeric corpus is the twin of the word corpus, the word and digit duality, and a stream of digits is realtime data addressed by position.",
-    "uuid": "f3466f26-3946-8cf6-985c-e8407a88530d",
+    "uuid": "df36e2c9-b109-8a1d-8c7b-667d8ce0bc51",
     "words": [
       "use",
       "when",

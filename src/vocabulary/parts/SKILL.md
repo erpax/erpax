@@ -2,11 +2,11 @@
 name: parts
 description: "Use when reasoning about parts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/parts"
-coordinate: "vocabulary/parts · 4/weave · f0d2fe93"
-contentUuid: "e2642ce4-509a-5ace-aa90-b14f7a04e7fd"
-diamondUuid: "63edf2b1-2bd9-8e94-a069-183d54765acf"
-uuid: "f0d2fe93-5b74-8a03-9f1e-836a42d005e4"
-horo: 4
+coordinate: "vocabulary/parts · 8/crest · 6d041a89"
+contentUuid: "475aa2c2-21ab-58e1-ace7-460241891428"
+diamondUuid: "cd61cee3-e6f6-8ed3-98e4-4124a07638ce"
+uuid: "6d041a89-99c8-8d26-810a-d25c8f432945"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "04527f20-48be-8dbe-aa89-2c250ef06312"
+  computationUuid: "303174a5-8f3b-8a74-a42c-ed590a197018"
   stages:
     - stage: path
       stageUuid: "5a98ec1a-26e0-80c0-9efe-98c6ed309784"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c1ade5fe-0448-85b4-829e-3763bedac406"
     - stage: horo
-      stageUuid: "3a9a0234-ef61-8b00-9c52-8465427061e3"
+      stageUuid: "d5934a05-2f6e-81b3-8717-1b83e5dca88a"
     - stage: seal
       stageUuid: "2dda1014-9314-8718-b09a-bdae2ab9758c"
     - stage: uuid
-      stageUuid: "885695e1-2e8f-8fa5-9502-f81fc4ba5a2e"
+      stageUuid: "cfd44414-0997-8c57-9b31-8c206ffeefba"
 version: 2
 ---
 # parts

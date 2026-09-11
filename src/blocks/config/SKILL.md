@@ -2,10 +2,10 @@
 name: config
 description: "Use when reasoning about config — Payload's typegen and the server config both need every block's shape. Importing the block COMPONENTS to get them drags React into a context that cannot run it."
 atomPath: "blocks/config"
-coordinate: "blocks/config · 3/3 · cce513ee"
-contentUuid: "d8b6b5ef-3878-5df5-b72e-0a68abe2bb1d"
-diamondUuid: "c950c1d6-3b6b-88d2-a9f9-5116584bc4db"
-uuid: "cce513ee-c38c-86aa-a700-f76dc197d929"
+coordinate: "blocks/config · 3/3 · 35957a9c"
+contentUuid: "cf193575-61f3-524d-9796-25414307e7d1"
+diamondUuid: "bc3f3995-9d03-81a5-a324-a4ae35fd5893"
+uuid: "35957a9c-b7fb-8e81-8168-5f47074bca28"
 horo: 3
 typography:
   partition: blocks
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "459be5b1-0bac-8260-894d-65b78dcd9c66"
+  computationUuid: "190ff6ee-9242-81cc-82e8-792b792da1e2"
   stages:
     - stage: path
       stageUuid: "e41192cd-5585-80f2-84f6-84a45829107a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "de1eb53a-2d61-8b04-b1dc-de03583aa1e7"
     - stage: horo
-      stageUuid: "b9cd5b4e-f53c-8978-a89b-d15de532f72b"
+      stageUuid: "58791e03-13a0-8d66-8465-dfcd9e7ee488"
     - stage: seal
       stageUuid: "b195b1be-32dc-8e4c-8049-f650908ae903"
     - stage: uuid
-      stageUuid: "0d4d0371-229e-89f2-9488-10d7e4df8eaa"
+      stageUuid: "5a9b431d-1b66-8ae2-8620-7373f9bba7e2"
 version: 2
 ---
 # blocks/config — the block definitions, with no React in the import graph

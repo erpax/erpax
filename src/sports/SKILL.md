@@ -2,10 +2,10 @@
 name: sports
 description: "Use when reasoning about sports as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sports
-coordinate: "sports · 5/round · f482199a"
-contentUuid: "426f6ee4-1a73-56f3-b9be-2f6a69c1d243"
-diamondUuid: "46662fc7-c3b7-80fd-8289-7d94597cfcbd"
-uuid: "f482199a-a8c0-8c2b-a349-a115f69c2dea"
+coordinate: "sports · 5/round · 22ad9016"
+contentUuid: "197d03b0-bc95-5d36-8c26-78095b38e4e1"
+diamondUuid: "be6bd4bb-13b6-8a89-904f-6aa85b9d8867"
+uuid: "22ad9016-b15a-838b-a1c8-03bbfc8226fe"
 horo: 5
 typography:
   partition: sports
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "378fc3b8-9a4e-872f-ba3d-4dd8886202d7"
+  computationUuid: "9d1930ba-5711-8aec-aa8b-962e7ff42b02"
   stages:
     - stage: path
       stageUuid: "f3cdd218-7484-84fb-89c2-03da8deaf705"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d8191dae-c2b7-8071-a61d-6b7abce1d51a"
     - stage: horo
-      stageUuid: "a538499c-a230-8d02-a0a4-315900f6d714"
+      stageUuid: "88f2f7db-6c78-87b5-bd55-7cedae2aabf7"
     - stage: seal
       stageUuid: "cde526b5-9598-8eed-a197-d04a0f3420d9"
     - stage: uuid
-      stageUuid: "18a8053f-54c0-852f-b18f-88f5d06dfb6e"
+      stageUuid: "2da80b76-d5d7-8318-a2e9-94683cfc8b2f"
 version: 2
 ---
 # sports

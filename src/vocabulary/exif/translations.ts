@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "exif",
-    "uuid": "5e47d358-169c-8632-bf45-70484ca46ae6",
+    "uuid": "2393929f-b251-815f-9d6d-f55bf72c243e",
     "words": [
       "exif"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about exif as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "db74ce88-a0fc-8008-9b1b-be0864c45f56",
+    "uuid": "727e5445-ae58-87e7-86c0-a68ff6c5a99a",
     "words": [
       "use",
       "when",

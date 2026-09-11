@@ -2,10 +2,10 @@
 name: directors
 description: "Use when reasoning about directors — A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip."
 atomPath: "vocabulary/directors"
-coordinate: "vocabulary/directors · 1/base · f32ea8f6"
-contentUuid: "46f34b0e-a9dd-5820-99de-49542c6a6465"
-diamondUuid: "7f98bef7-e580-822e-9dbe-3ad9f9fed644"
-uuid: "f32ea8f6-be00-8d9c-92ed-146924c4b2b8"
+coordinate: "vocabulary/directors · 1/base · 0353e0ce"
+contentUuid: "761e39dd-693c-5f5e-9f7b-63178fd32170"
+diamondUuid: "e27c1fec-61ff-825d-81a0-b34c46f37e86"
+uuid: "0353e0ce-0101-8891-a86f-bafed5f65c31"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8a03992-0904-868e-9644-b71fc9abf7ff"
+  computationUuid: "accf1c9a-7eb8-8062-b7c0-7a42b5b8a126"
   stages:
     - stage: path
       stageUuid: "79ef0427-7cc9-81e9-a2ec-5e094558d653"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "498c4d16-385c-84c9-8801-83d4a808fcaa"
     - stage: horo
-      stageUuid: "5850c8fe-16a7-8761-aebd-31ed589747cf"
+      stageUuid: "eab76cde-39aa-89f0-a3b0-0b9c893def0c"
     - stage: seal
       stageUuid: "b56b70cb-0c73-8c70-96e2-0353f82ff2cf"
     - stage: uuid
-      stageUuid: "007eea70-2ac6-8717-8c3a-ed54423aec31"
+      stageUuid: "a6fbb11e-d29a-8578-bbb7-1b6469c6e601"
 version: 2
 ---
 # directors

@@ -2,18 +2,18 @@
 name: emit
 description: "Use when reasoning about emit — vocabulary/emit — compute the SHARED VOCABULARY and emit words.ts."
 atomPath: "vocabulary/emit"
-coordinate: "vocabulary/emit · 7/descent · f2a4ca51"
-contentUuid: "76a01a2b-48a1-574b-9eae-1a5bdeb3f9ef"
-diamondUuid: "77c2bf33-a083-86ca-aee7-dd156e3652a9"
-uuid: "f2a4ca51-2bf7-8b74-a5c9-066c084d1f7c"
-horo: 7
+coordinate: "vocabulary/emit · 1/base · 8ddc7ace"
+contentUuid: "d3e6c41d-b948-5070-91ac-c7854f8dc952"
+diamondUuid: "3f951fdd-4088-8e3d-a09f-14b4fd563ea9"
+uuid: "8ddc7ace-f1e7-8d49-bf65-562ebd2ca8c8"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 8
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a9b1bfef-5aed-89e1-842a-789abc05dc73"
+  computationUuid: "021513af-7480-8a96-9b13-9e60f11d5706"
   stages:
     - stage: path
       stageUuid: "1519f135-494c-85e1-a071-6418d2b8177f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a691b24c-9718-8dd1-8d7e-b783c7ff4cb8"
     - stage: horo
-      stageUuid: "60a51712-484e-8f3e-991f-d3a94781b29b"
+      stageUuid: "b49b01fe-ea70-8aa7-9bc9-bc49e3da4d8b"
     - stage: seal
       stageUuid: "7aace390-d381-8afa-96d4-9bca64751076"
     - stage: uuid
-      stageUuid: "5f3bc61d-7385-87a1-bfc9-3aca52fe8a34"
+      stageUuid: "7fabe536-9273-84d0-bc2b-2587702d512f"
 version: 2
 ---
 # vocabulary/emit

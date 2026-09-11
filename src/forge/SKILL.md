@@ -2,11 +2,11 @@
 name: forge
 description: "Use when reasoning about WHERE atoms are made one — the forge is the collider that takes every node and every link and folds them, by content-collision, into a single root. Heat is borrowed disorder; the hammer is merge; the anvil is the horo ring; what leaves the forge is one tamper-evident whole. forge() reports the forge state (node count, edge count, the root) computed live from the matrix."
 atomPath: forge
-coordinate: "forge · 7/descent · 57fb8a55"
-contentUuid: "5f9c90b1-a83a-5894-b5c5-f3ed62f95e90"
-diamondUuid: "3fc83cf2-8c43-8284-bfa1-113f80ba413f"
-uuid: "57fb8a55-befc-8b81-a8cc-bfe50cac9e17"
-horo: 7
+coordinate: "forge · 8/crest · c86ca574"
+contentUuid: "d5af501a-c73f-59e0-b0a7-ed4f1bc70d64"
+diamondUuid: "0a3e3d51-a108-8fc1-b9e1-1cd4b29fe8cc"
+uuid: "c86ca574-d094-8ef0-9508-bb65f2224d0e"
+horo: 8
 typography:
   partition: forge
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 (uuidv8 content-uuid) + the horo digital-root ring — the forge measures, never mints."
 bindings: []
 signatures:
-  computationUuid: "eeea96cc-8822-8a74-8678-153d765e4beb"
+  computationUuid: "e91681a5-8e0e-833d-83ca-f4dcc0caf771"
   stages:
     - stage: path
       stageUuid: "08271e59-f1cd-8ab3-bcc0-c4d3cd832619"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f0888939-07ec-8476-b35b-7fe5b6df9814"
     - stage: horo
-      stageUuid: "1f719fb3-a359-8daf-a6f1-a1b57f4bdc99"
+      stageUuid: "0fbdc76b-786d-8312-bca3-4ca2052e0a0e"
     - stage: seal
       stageUuid: "f6e4b2bf-a399-88b9-8e7c-c81134abf1d0"
     - stage: uuid
-      stageUuid: "df16a67e-75fd-83e5-8fc4-a966e213bbf0"
+      stageUuid: "0f3cbac7-eddf-8dbc-8659-c31bab93f563"
 version: 2
 ---
 # forge — the place atoms collide into one

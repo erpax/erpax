@@ -2,11 +2,11 @@
 name: smoking
 description: "Use when reasoning about smoking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: smoking
-coordinate: "smoking · 4/weave · 7386fa04"
-contentUuid: "75f704e2-50cf-5772-9647-efa4033ad873"
-diamondUuid: "17a76f77-5035-8b84-8a18-ec096c4160d5"
-uuid: "7386fa04-80cb-8007-a23a-fa8a1f8a6daf"
-horo: 4
+coordinate: "smoking · 1/base · 640dc760"
+contentUuid: "f2eb255e-3c1a-5616-8615-6aad17dada5b"
+diamondUuid: "ae13eeb3-3d5d-8467-9652-17efb80de3f0"
+uuid: "640dc760-1e99-8b08-8156-f5d70dfcab1d"
+horo: 1
 typography:
   partition: smoking
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "63a29c16-9351-8788-9475-8a5425aabe43"
+  computationUuid: "54d7b21d-4465-8d45-8e56-5f7d0d7c229e"
   stages:
     - stage: path
       stageUuid: "772656bd-c404-83b9-8342-b3ae2f620e80"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bbdfc567-e298-8d70-9960-9b945789336c"
     - stage: horo
-      stageUuid: "c904a058-d844-8f51-904d-0264630ad40e"
+      stageUuid: "dec05db9-9181-8b3b-8a0d-8ff9e0aeb2a9"
     - stage: seal
       stageUuid: "8a819148-5765-8611-84db-eb5dc61e92d1"
     - stage: uuid
-      stageUuid: "27e08ae7-a9fa-8ed6-b939-638d51d92920"
+      stageUuid: "feef6c81-8bd5-87c1-aeb4-e93918388b25"
 version: 2
 ---
 # smoking

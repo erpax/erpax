@@ -2,11 +2,11 @@
 name: laser
 description: "Use when reasoning about laser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/laser"
-coordinate: "vocabulary/laser · 2/share · 89629c06"
-contentUuid: "f97a4faf-f750-5999-88f9-9a8af32cf154"
-diamondUuid: "8be34f7f-f27d-8fc0-8860-befaa9bab74d"
-uuid: "89629c06-e1fe-86f5-80a1-a0a24f5fcf70"
-horo: 2
+coordinate: "vocabulary/laser · 4/weave · 894db8b6"
+contentUuid: "906333e5-56b7-5d0d-b510-51c7a40957c3"
+diamondUuid: "41f7b2b2-ab62-861a-b810-d2f7d7736a9a"
+uuid: "894db8b6-be06-8e28-83ad-860ef7497266"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "50e8cbb0-8348-87c9-94ff-7098de24585e"
+  computationUuid: "53b83730-f2c1-82a7-9f0b-0a7fb7329ae1"
   stages:
     - stage: path
       stageUuid: "83889f83-ab1f-8a5e-996f-819f2c9a0018"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2cce1cf6-a508-837b-9c4c-912a845c5b81"
     - stage: horo
-      stageUuid: "be51d672-0052-8d5b-a227-fdf4de490cdc"
+      stageUuid: "8d722c4b-33d1-8a92-906c-ecae8ff9bade"
     - stage: seal
       stageUuid: "136a698f-5828-8624-9160-3ddba63142f7"
     - stage: uuid
-      stageUuid: "36161c74-2dc7-8d67-b809-4a6d67e75ec2"
+      stageUuid: "a4c4bcc9-3ab3-872c-9b95-e258f3f14dc9"
 version: 2
 ---
 # laser

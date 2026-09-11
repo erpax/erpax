@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "offer",
-    "uuid": "e58bae44-a845-8ea8-a139-154377e341e4",
+    "uuid": "9309eb6f-12e2-8b49-8c3f-35d2f7efea9e",
     "words": [
       "offer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about offer — An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the in",
-    "uuid": "a8bcd272-5b2f-85cd-aa8c-7918eba289c8",
+    "uuid": "cf20c4c6-a723-85f9-be7c-c66f388333ba",
     "words": [
       "use",
       "when",

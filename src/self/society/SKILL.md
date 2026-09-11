@@ -2,18 +2,18 @@
 name: society
 description: "Use when the self SHARES itself as many — the agent society reads its own akashic record and advances one gate-verified step (self-applied society at forward-coil position 2/share). The self distributed as the agent society."
 atomPath: "self/society"
-coordinate: "self/society · 5/round · 71b3a1cf"
-contentUuid: "df6a5b5b-91e0-53c3-b311-9592899d0895"
-diamondUuid: "7030295f-0f0e-8ac5-93e1-a74edf07394f"
-uuid: "71b3a1cf-6704-8ae7-9239-83548eda052a"
-horo: 5
+coordinate: "self/society · 8/crest · 48ae7068"
+contentUuid: "c265496a-26cf-546b-a5ba-ab0cf7f0e091"
+diamondUuid: "4727729f-bc90-85d2-a9f7-5e41808bd729"
+uuid: "48ae7068-f671-8822-b0cd-0aea680bd6b0"
+horo: 8
 typography:
   partition: self
   bondDegree: 448
 standards: []
 bindings: []
 signatures:
-  computationUuid: "457fa215-2237-8987-aa01-bf37bfd1b7d0"
+  computationUuid: "be22ec98-bea3-81e0-bc74-24f4b925727e"
   stages:
     - stage: path
       stageUuid: "9feabf4c-789e-8668-b377-bf08b41530a6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e05a1f00-9a0c-88a8-8389-b8782339d222"
     - stage: horo
-      stageUuid: "6306b592-d633-854d-9247-13f3d83ae778"
+      stageUuid: "9b3c5492-8383-8559-a860-9dfeebfd07e4"
     - stage: seal
       stageUuid: "c203cdf4-f77f-8195-b934-5b7808a37ac8"
     - stage: uuid
-      stageUuid: "432e6452-beae-8f8b-b246-b7e5898e687a"
+      stageUuid: "f5136c12-77e8-87d8-97ee-9fab211bbad9"
 version: 2
 ---
 # self-society — the self shared as many (under [[self]] · outward coil · 2·share)

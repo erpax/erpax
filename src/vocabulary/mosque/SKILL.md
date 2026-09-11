@@ -2,11 +2,11 @@
 name: mosque
 description: Use when reasoning about mosque — A mosque.
 atomPath: "vocabulary/mosque"
-coordinate: "vocabulary/mosque · 1/base · 178e27e9"
-contentUuid: "2a4d37a8-bde9-5d62-b3bb-410f3ccea80a"
-diamondUuid: "d80db022-f152-8372-bf97-bef20e3dea41"
-uuid: "178e27e9-3348-8aad-9806-097b4f389921"
-horo: 1
+coordinate: "vocabulary/mosque · 5/round · 78eb2e17"
+contentUuid: "0601b32c-7807-51fa-ad0e-c64dc750dc63"
+diamondUuid: "91699e60-90f7-86f5-836f-002ad00f16cc"
+uuid: "78eb2e17-2d69-82a4-8bd9-e769653af6d4"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "75af9dfb-513a-8d1a-97b0-15feffbc3445"
+  computationUuid: "9cd8b571-d9cc-87a6-8e92-f2ba19ff7c3b"
   stages:
     - stage: path
       stageUuid: "dfdfd78c-1b2b-8ba3-8d30-8e65f690dd5c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8229a228-a1fa-8418-8c78-752626a827ba"
     - stage: horo
-      stageUuid: "0ff70905-308f-8004-bec3-a6711dddcb10"
+      stageUuid: "9f98f058-e9fd-86ba-be4d-0674c2b7ac29"
     - stage: seal
       stageUuid: "cf59dda1-4b65-8f2c-bb43-6d096b58e73e"
     - stage: uuid
-      stageUuid: "d49bfef2-e1b4-8cb9-8fdc-3ff0387771fd"
+      stageUuid: "908c341b-7465-8505-a8ef-f4c77a2c3b0c"
 version: 2
 ---
 # mosque

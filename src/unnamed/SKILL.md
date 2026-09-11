@@ -2,11 +2,11 @@
 name: unnamed
 description: "Use when reasoning about unnamed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: unnamed
-coordinate: "unnamed · 1/base · 38f9fa7d"
-contentUuid: "8ab747cc-ced8-5c22-a1a0-4b7b8ef71164"
-diamondUuid: "732a9703-81a6-8b40-bfbd-e1c16fe5f4d7"
-uuid: "38f9fa7d-6f28-80a7-9899-4e22795166f7"
-horo: 1
+coordinate: "unnamed · 8/crest · aad69669"
+contentUuid: "4111f140-0d31-5a02-9c5b-d6842e41c19f"
+diamondUuid: "cf32a799-681f-8f19-86d4-f9b45adf1b21"
+uuid: "aad69669-9960-87f1-95f4-c162c7120f8b"
+horo: 8
 typography:
   partition: unnamed
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "648fdab8-9746-85ca-8a5f-3292993cbeaa"
+  computationUuid: "4731cc66-8c53-8bac-ba7e-4127b862062b"
   stages:
     - stage: path
       stageUuid: "b46ccc16-297d-84cd-980f-102c84d7b123"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d548fc9f-a544-851b-bc18-c5dc38394349"
     - stage: horo
-      stageUuid: "0d1e644a-5fb2-8757-b465-ff2fd1de0b76"
+      stageUuid: "3dff040b-5358-88f8-94ed-30f295dd4c1b"
     - stage: seal
       stageUuid: "44736ced-227f-8fde-b64a-73690db91354"
     - stage: uuid
-      stageUuid: "df923cc3-7486-8a68-8186-1dbb22963302"
+      stageUuid: "158c9808-b533-8204-8c19-61fa5c5a43bf"
 version: 2
 ---
 # unnamed

@@ -2,10 +2,10 @@
 name: panel
 description: "Use when reasoning about panel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/panel"
-coordinate: "vocabulary/panel · 7/descent · 0655e58d"
-contentUuid: "a4d5353c-cd2b-5685-bbfd-cdcd483061a6"
-diamondUuid: "41fab090-02cf-86d0-a3b8-617df3c657bf"
-uuid: "0655e58d-6be1-859a-9138-db1b7417ff1b"
+coordinate: "vocabulary/panel · 7/descent · e6389b86"
+contentUuid: "5e53b7a8-9953-5e18-82dd-5b9cfb6bcd0e"
+diamondUuid: "7cc908d1-3084-83cc-a752-42f7242bb9b3"
+uuid: "e6389b86-91eb-8e84-984a-41b9561eea4f"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8677951d-59f6-8960-9c29-afb1ddf56e4e"
+  computationUuid: "ec02a0d1-e715-8d28-8c94-ccea7ce978f6"
   stages:
     - stage: path
       stageUuid: "2b5fa2c1-62d4-8a91-a561-cae0bf8aeaff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "224082b7-b66b-87fa-97fe-c12f966fcc77"
     - stage: horo
-      stageUuid: "95e4299a-01d8-81c3-ab5d-c4ee991d0817"
+      stageUuid: "86779745-a029-8782-80c3-c2ab00bb24dc"
     - stage: seal
       stageUuid: "d79d340c-f9eb-852a-9657-b4b3f5fbdc94"
     - stage: uuid
-      stageUuid: "a63565e1-afbb-8fc3-a14d-09c913ba9fa8"
+      stageUuid: "7badaa29-7ce8-8d96-857f-b7a146c97ff3"
 version: 2
 ---
 # panel

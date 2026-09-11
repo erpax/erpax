@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "retention",
-    "uuid": "f2ae8719-2d9b-85f7-8988-ffc16866ac17",
+    "uuid": "ea0e6245-c583-82f5-b8be-6b548f30ad18",
     "words": [
       "retention"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designing/measuring strategies to keep existing customers — loyalty programs, engagement triggers, win-back campaigns, at-risk indicators.",
-    "uuid": "bab7283f-3de1-8a06-9695-8a42a7c3196b",
+    "uuid": "ca0a2361-8a78-8f3b-9a3c-f0327011d0f0",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: effective
 description: "Use when reasoning about effective as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/effective"
-coordinate: "vocabulary/effective · 5/round · fb416303"
-contentUuid: "10034587-0fab-5eac-be54-640cb817698e"
-diamondUuid: "8971969c-79fe-84dd-8f87-a1e3da495eef"
-uuid: "fb416303-8bc9-837d-8243-f4d38c6d214f"
+coordinate: "vocabulary/effective · 5/round · 142bfa92"
+contentUuid: "5664e124-f3be-503b-a378-86454ae2dcd9"
+diamondUuid: "4c33cbb1-ad3e-825d-96a4-9f2a0278f6ed"
+uuid: "142bfa92-7b9f-858c-b00d-7cf826edab60"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1c092c2d-6aaa-8a7b-ad43-8cadbd90ea26"
+  computationUuid: "f25fcdd9-1775-8a18-aaf8-1c6779a7d779"
   stages:
     - stage: path
       stageUuid: "63c9b27f-eefe-8307-9706-226edc2b62ee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "94589ea9-3be9-82dd-a2c0-8ae4b149d2c4"
     - stage: horo
-      stageUuid: "9df77596-2afd-86fc-ab65-6adb7a671dbf"
+      stageUuid: "1d86fafc-0a87-88a9-8d51-2a7b8660004c"
     - stage: seal
       stageUuid: "7df1b9ae-98ce-8f96-9784-b043e16c12a4"
     - stage: uuid
-      stageUuid: "ef2aca20-2a92-84a6-8d93-ae1141be9d60"
+      stageUuid: "5e01aa51-98c7-8971-b50f-c2628eb14caa"
 version: 2
 ---
 # effective

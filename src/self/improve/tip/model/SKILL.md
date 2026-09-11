@@ -2,18 +2,18 @@
 name: model
 description: "Use when the tip loop needs its vocabulary — the gap kinds, the admin-TTFB thresholds, the shapes an audit and a trinity tip take, and the three patterns that separate a precise tip from a vague one."
 atomPath: "self/improve/tip/model"
-coordinate: "self/improve/tip/model · 7/descent · a004d63a"
-contentUuid: "5b0c3a55-2a04-5a05-b1ee-52d1ffba0d3c"
-diamondUuid: "d66a9e7f-8b5a-89bd-aac7-eab695c20733"
-uuid: "a004d63a-6939-88a5-a9ad-7e1018ac4cad"
-horo: 7
+coordinate: "self/improve/tip/model · 1/base · 0566698c"
+contentUuid: "8ee059b8-3735-5066-89d4-34567fa1d38b"
+diamondUuid: "76475b70-3684-8122-b803-149e6568cb4f"
+uuid: "0566698c-71e8-8daa-92ca-83995e392b02"
+horo: 1
 typography:
   partition: self
   bondDegree: 32
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d1fa1d93-8f67-85f6-870f-a52693f4c8c8"
+  computationUuid: "d0e858a7-b875-8d4a-be21-bf8c454ccc42"
   stages:
     - stage: path
       stageUuid: "479074b2-13f9-8ffb-9077-02b8c55c03ff"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "76305d51-a676-82ff-818d-ba2a9024d03d"
     - stage: horo
-      stageUuid: "4b40511b-b75f-8813-bbd8-62f623bf0ae9"
+      stageUuid: "ebdf3d58-0c92-80b5-8f5b-8ec5b6cf1b40"
     - stage: seal
       stageUuid: "325a5dfd-333e-8cd4-8d45-f698012e29d9"
     - stage: uuid
-      stageUuid: "70fb0f58-b9e8-8959-968a-650d20018f12"
+      stageUuid: "29f07c04-a653-88a6-9749-26a9030dce5d"
 version: 2
 ---
 # self/improve/tip/model — what a gap is, and what makes a tip precise

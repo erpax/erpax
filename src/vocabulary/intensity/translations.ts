@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "intensity",
-    "uuid": "32276dae-04d1-8905-893d-5e8119d94573",
+    "uuid": "b32de840-f435-87a3-aa3e-ffb979218884",
     "words": [
       "intensity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about intensity — Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
-    "uuid": "063bf1ce-0762-8d8d-9142-c18f6fd0ee1e",
+    "uuid": "43153527-ac08-8fd8-a74c-914bb3f51a93",
     "words": [
       "use",
       "when",

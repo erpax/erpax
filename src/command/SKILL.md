@@ -2,10 +2,10 @@
 name: command
 description: "Use when classifying or executing the imperative-verb role of an autonomous workflow — the atom a loop runs as a step's command, paired with a question gate and a computed answer; the C-set of corpus verbs."
 atomPath: command
-coordinate: "command · 2/share · 5bcf467f"
-contentUuid: "a66e767f-2a34-5a2b-9105-1b88b8de115d"
-diamondUuid: "4a58adfc-9c3f-87f8-a54c-45d2adfd85fd"
-uuid: "5bcf467f-dd39-8137-9c39-f564e5441918"
+coordinate: "command · 2/share · 6274059e"
+contentUuid: "1987805f-e874-552b-9e25-af7a11d4703a"
+diamondUuid: "7602226b-3278-8061-94d4-b58f1fa75276"
+uuid: "6274059e-048b-838f-a622-a7310a2edfba"
 horo: 2
 typography:
   partition: command
@@ -14,7 +14,7 @@ standards:
   - "schema.org Action — the imperative move (here, the workflow step's verb)"
 bindings: []
 signatures:
-  computationUuid: "9e0b1855-fb07-819f-a42d-d0dba9b377ba"
+  computationUuid: "e40da167-256b-889a-b610-d4f3d3ae430e"
   stages:
     - stage: path
       stageUuid: "86b7c25f-ffa4-82bb-87d5-ef2bece45476"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e41bc50-7a1e-817e-a6c2-34cb8b78e58f"
     - stage: horo
-      stageUuid: "1ea853e1-993a-892f-8a9f-3ee5ad23c9cf"
+      stageUuid: "1deadc07-94f2-8537-a360-36c4885b7d45"
     - stage: seal
       stageUuid: "a9791b38-3e93-82ad-bba5-f68e835de0e1"
     - stage: uuid
-      stageUuid: "251182db-d95f-8092-b58c-228f52597426"
+      stageUuid: "41ffb8d7-5365-8dd7-8a7f-f7e6d070f594"
 version: 2
 ---
 # command — the imperative verb an autonomous workflow executes

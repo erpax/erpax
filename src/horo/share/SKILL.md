@@ -2,18 +2,18 @@
 name: share
 description: "Use when reasoning about a portion of a whole allocated to a member who joins — horo position 2 (digit 2, the first doubling: one becomes two, the whole splits, value allocated). Its domain instance is a proportional, contingent claim on a pooled whole under shared risk: the CSA share (prepaid box of whatever the farm harvests), equity share, profit share — the inverse of a fixed order."
 atomPath: "horo/share"
-coordinate: "horo/share · 2/share · 51fecb84"
-contentUuid: "4764bdea-ae9f-570f-b4cc-5015ba97d61a"
-diamondUuid: "a60cceac-3c9a-80d0-b2f4-ff47cf6e74bb"
-uuid: "51fecb84-cc1f-8e47-abab-004eda11659b"
-horo: 2
+coordinate: "horo/share · 1/base · ce28bd58"
+contentUuid: "8a2f7d11-78b4-51f4-ae34-8abbef541fe5"
+diamondUuid: "7ae5965f-0d95-88eb-809e-9c4fd8533d4f"
+uuid: "ce28bd58-d0a8-804a-813e-873df8588d3f"
+horo: 1
 typography:
   partition: horo
   bondDegree: 102
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6e632999-8d42-8c64-95e0-28d723bd4455"
+  computationUuid: "cb1c5576-e868-8b6d-a035-aee6961effe1"
   stages:
     - stage: path
       stageUuid: "342dad34-4df1-8ac5-a0c9-166a472e3f65"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "29a75327-1d79-8567-b856-29d00b08529c"
     - stage: horo
-      stageUuid: "f5941e5a-29e5-83bd-8213-63fe3a5a5fdb"
+      stageUuid: "00c2f617-e63e-8517-8bd2-77e6fa3659b5"
     - stage: seal
       stageUuid: "835c8bbe-ee81-83ff-b3b7-2f64eafff525"
     - stage: uuid
-      stageUuid: "71e6d6db-dc0c-826c-8a21-cc5ff49072f2"
+      stageUuid: "60bdb34d-5e20-8fd0-a96b-d9ec24cf9768"
 version: 2
 ---
 # share — horo position 2: the whole splits, a member joins, a portion is allocated

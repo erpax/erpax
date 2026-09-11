@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "theme",
-    "uuid": "49cde4ae-d5a6-89da-9ddb-234e0c6435c3",
+    "uuid": "a5f409b4-21e5-80e0-922a-35c4facc8ce6",
     "words": [
       "theme"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about theme — A theme applied by React is applied *after* hydration, and hydration happens after first paint.",
-    "uuid": "ee3e7b5b-880d-8191-b582-2c018629da05",
+    "uuid": "1f22d4f7-fdb6-8ca6-9bf2-fdf5053e0ff1",
     "words": [
       "use",
       "when",

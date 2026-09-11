@@ -2,11 +2,11 @@
 name: test
 description: "Use when proving or tightening the unbreakable-matrix gate — the test that pulls all entropy as food for agents and leaves purity for the skills, so no agent can record uncollidable data or break the content-uuid matrix."
 atomPath: "schema/test"
-coordinate: "schema/test · 2/share · 5372e0ea"
-contentUuid: "05e1e154-9ac0-5570-87e1-ea05a78b78ba"
-diamondUuid: "9247f2d5-bcc9-8033-a08d-56922f7bc9fa"
-uuid: "5372e0ea-8db2-890c-a299-6c9755bfc953"
-horo: 2
+coordinate: "schema/test · 1/base · cdb34071"
+contentUuid: "fc10d185-88da-5deb-8857-28af11eed67d"
+diamondUuid: "ca6d5bb7-07df-8383-917b-210777afef1e"
+uuid: "cdb34071-e422-8ece-8875-e197864b873a"
+horo: 1
 typography:
   partition: schema
   bondDegree: 102
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a870ba03-7ffb-867d-a9f2-4ea62171a325"
+  computationUuid: "4dc43a52-e016-87bc-9028-121da35b2c8c"
   stages:
     - stage: path
       stageUuid: "de8fb821-5ac3-8d57-87ca-b2ce615750f0"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "0956328f-f695-87eb-9e0c-cae8ad328ddd"
     - stage: horo
-      stageUuid: "489ef04a-a71f-8880-887b-84986f4e296b"
+      stageUuid: "400496b3-6b0f-8ea1-8125-6f440cca187e"
     - stage: seal
       stageUuid: "debba1ce-9817-8b93-b249-524d61e12067"
     - stage: uuid
-      stageUuid: "0ae585d6-f11e-8fdf-8d81-deb6a06f950e"
+      stageUuid: "fcf4a38e-4c55-822c-b1fc-834e4b8c016c"
 version: 2
 ---
 # test — the gate that makes the matrix unbreakable

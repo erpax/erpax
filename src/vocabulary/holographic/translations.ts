@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "holographic",
-    "uuid": "4b382302-0f1b-8134-bdcf-771f575b0e17",
+    "uuid": "48c6f86a-240e-8780-bff6-56a15c8f43f1",
     "words": [
       "holographic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the whole is recoverable from any part — content-uuid encodes the whole, the akashic record regenerates it, each folder/skill loads its own subgraph, each agent is the whole erpax. The whole-in-every-part law; the content-twin of fractal (same form at every scale). Forget the corpus; regenerate from a part.",
-    "uuid": "bd7f9442-aedb-8aec-895d-f28f23cb1c1b",
+    "uuid": "ee249119-bbd4-805c-8378-ceb3fe37e31a",
     "words": [
       "use",
       "when",

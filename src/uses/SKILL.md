@@ -2,11 +2,11 @@
 name: uses
 description: "Use when reasoning about uses as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: uses
-coordinate: "uses · 7/descent · 05a8d4df"
-contentUuid: "292dbf47-723b-5c6e-a548-e9cbda1c037c"
-diamondUuid: "65b37c14-9396-8723-b98d-645c18541ca0"
-uuid: "05a8d4df-50ce-83df-a0a6-3602076468ef"
-horo: 7
+coordinate: "uses · 1/base · 14edc25d"
+contentUuid: "5e12a45d-89a1-58db-a9f7-51fa2d9f82f5"
+diamondUuid: "6d7619c8-7676-82f1-88a5-de91b32f5efb"
+uuid: "14edc25d-8b49-8b31-b210-e869f51df057"
+horo: 1
 typography:
   partition: uses
   bondDegree: 31
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f4598542-9d85-81d0-8a7e-a00d61f87ac6"
+  computationUuid: "fbe6d86c-ab83-8830-9c30-bf010e499edd"
   stages:
     - stage: path
       stageUuid: "4cc49863-3a9f-801f-b387-1ba297028acd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b8ad0cb3-633d-8776-8c11-1dacadf31fb9"
     - stage: horo
-      stageUuid: "c14b14f5-7dc7-844c-a333-db57ff613db2"
+      stageUuid: "f34576a6-869f-87be-9e4f-573fdcfd5e79"
     - stage: seal
       stageUuid: "a21c1e0f-e55a-87a5-adad-b6e18846da90"
     - stage: uuid
-      stageUuid: "2006d9f1-e248-8010-8564-d2dc929fd9f1"
+      stageUuid: "3eabf6ff-2992-818a-a544-7fb716c4e29d"
 version: 2
 ---
 # uses

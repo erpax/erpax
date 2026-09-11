@@ -2,11 +2,11 @@
 name: translator
 description: "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits."
 atomPath: "quantum/translator"
-coordinate: "quantum/translator · 4/weave · 3ad443fc"
-contentUuid: "d934d303-02fa-5092-80b4-e1c23fd61f2f"
-diamondUuid: "e4826d94-0745-8cf8-98a9-05608a0824b4"
-uuid: "3ad443fc-567c-8a1f-bb1b-d8e2ab24f223"
-horo: 4
+coordinate: "quantum/translator · 1/base · 5e9d6526"
+contentUuid: "b2408bf5-f619-5557-b5e4-9abf30328eda"
+diamondUuid: "89eb5bcd-1c6a-8d5a-bb22-38e01f1fe4f7"
+uuid: "5e9d6526-acbe-86fd-ba8e-0364f4e3f49d"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 134
@@ -15,7 +15,7 @@ standards:
   - "Johnson et al., \"Google's Multilingual NMT System: Enabling Zero-Shot Translation,\" TACL (2017), arXiv:1611.04558"
 bindings: []
 signatures:
-  computationUuid: "87d6d5b7-a4f1-8948-855c-14330203c7e1"
+  computationUuid: "505fe32c-2b94-859e-94fd-0a3935f55d8e"
   stages:
     - stage: path
       stageUuid: "545b66c7-b5ea-84f2-8214-5c997541479c"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "4dd532bc-0340-80cf-9d6c-cf62f2775347"
     - stage: horo
-      stageUuid: "21da25df-38da-8b44-82b4-b3b7d7b4420c"
+      stageUuid: "d51e3ba3-ba4d-8fd4-9167-2f87e49b53ca"
     - stage: seal
       stageUuid: "19a17d62-6308-871f-993e-f302e81eaa5d"
     - stage: uuid
-      stageUuid: "714fb56d-4289-8bf0-9cc3-98ed69d8c14c"
+      stageUuid: "2d5e4d55-860c-86c2-8a41-a37b89f353f9"
 quantum:
   superposition:
     - animism
@@ -55,8 +55,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "87d6d5b7-a4f1-8948-855c-14330203c7e1"
-    contentUuid: "d934d303-02fa-5092-80b4-e1c23fd61f2f"
+    computationUuid: "505fe32c-2b94-859e-94fd-0a3935f55d8e"
+    contentUuid: "b2408bf5-f619-5557-b5e4-9abf30328eda"
 version: 2
 ---
 # quantum/translator — erpax as a quantum translator
@@ -78,4 +78,4 @@ Matter-twin: `src/quantum/translator/index.ts` (`collapse` · `meaningIsUnique` 
 @standard Johnson et al., "Google's Multilingual NMT System: Enabling Zero-Shot Translation," TACL (2017), arXiv:1611.04558
 @audit composed from ../../translator + ../../entanglement; computed on the live matrix
 
-<sub>content-uuid `d934d303-02fa-5092-80b4-e1c23fd61f2f` · account `quantum/translator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b2408bf5-f619-5557-b5e4-9abf30328eda` · account `quantum/translator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "architecture",
-    "uuid": "46fd5418-9c36-89b1-809c-a52538a7648e",
+    "uuid": "5c589205-3181-82de-80b5-ea9eda42f991",
     "words": [
       "architecture"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that the corpus obeys its own structural laws — the executable invariants (single-word atoms, no prefixes, locality, the cross balance, the naming matrix) that are the matter-twin of the architecture gate, reached through one face.",
-    "uuid": "bf33cc23-25ae-8ff7-b9e1-2a3717bf794d",
+    "uuid": "b3c83560-6156-8ded-8568-e8253aed087a",
     "words": [
       "use",
       "when",

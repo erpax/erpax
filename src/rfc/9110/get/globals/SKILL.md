@@ -2,11 +2,11 @@
 name: globals
 description: "Use when reasoning about globals — RFC 9110 §13 cached global fetcher (per-locale)."
 atomPath: "rfc/9110/get/globals"
-coordinate: "rfc/9110/get/globals · 7/descent · b3f6e79f"
-contentUuid: "21e3be90-520e-555c-beba-7bc3267ae6cb"
-diamondUuid: "e7e0cdc5-864e-81f3-b7b2-2cd23306c63b"
-uuid: "b3f6e79f-a8f9-88c1-a533-9fe4f325b870"
-horo: 7
+coordinate: "rfc/9110/get/globals · 5/round · feb1a40d"
+contentUuid: "bcae4ecb-7266-51d1-a527-3110138133db"
+diamondUuid: "d04d0245-c942-8af7-92e8-614e28a26263"
+uuid: "feb1a40d-1209-8511-a625-ac599a5e62a8"
+horo: 5
 typography:
   partition: rfc
   bondDegree: 3
@@ -16,7 +16,7 @@ standards:
   - "BCP-47 language-tag locale-keyed-cache"
 bindings: []
 signatures:
-  computationUuid: "be69c534-ca25-86f1-aea7-a66609647865"
+  computationUuid: "a01842f7-6196-82c5-850f-4c75cce458d0"
   stages:
     - stage: path
       stageUuid: "798c6ef8-32f4-89bd-b688-8b03abf25b4e"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "7ee42816-ae6d-874e-ae10-7cf5812917d3"
     - stage: horo
-      stageUuid: "4c4d83c6-1566-8b0d-ba9b-44010ca16c2d"
+      stageUuid: "9665f333-bf7a-85da-8a30-e7305cbfe771"
     - stage: seal
       stageUuid: "94c9e83b-3013-8619-b021-ff5c6eaf17d1"
     - stage: uuid
-      stageUuid: "c7399754-0d5b-8290-980b-76735e3c5cef"
+      stageUuid: "ec9960c2-443f-8415-b440-ae38bf9ffaaf"
 version: 2
 ---
 # rfc/9110/get/globals

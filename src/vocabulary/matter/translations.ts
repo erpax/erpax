@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "matter",
-    "uuid": "ebf6364e-c7b0-8250-a7de-19fef63fd94a",
+    "uuid": "058b8ca1-3357-8509-a0ad-563f9190ddeb",
     "words": [
       "matter"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about matter — Strip the prefix *legal* and a **matter** is the universal professional-services engagement: a party (the client) retains the firm to do work, the work is staffed by positions and",
-    "uuid": "981694b7-4df8-8a9d-8f53-4221a47c227c",
+    "uuid": "517dcb32-5daf-8ec0-b9b8-4464887fe1f1",
     "words": [
       "use",
       "when",

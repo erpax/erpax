@@ -2,18 +2,18 @@
 name: cipher
 description: "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries"
 atomPath: "quantum/fold/cipher"
-coordinate: "quantum/fold/cipher · 4/weave · a4742688"
-contentUuid: "ab0a0705-43c9-58fb-b123-b85376e01d58"
-diamondUuid: "da129f3a-3a3c-8a43-ad93-e0a96d4ceb1a"
-uuid: "a4742688-25fa-8229-974b-15c71e11f289"
-horo: 4
+coordinate: "quantum/fold/cipher · 7/descent · 951d556e"
+contentUuid: "922ef01e-0006-581c-baef-1202f831da8d"
+diamondUuid: "9083ce82-90f5-8bd2-80a2-338169de57d2"
+uuid: "951d556e-1be4-85b5-8e0d-cc7d9923649c"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4691e345-b508-8c78-ba8e-a3e24793cfca"
+  computationUuid: "5a8a5784-a355-856d-866c-203b2cfbfae8"
   stages:
     - stage: path
       stageUuid: "30b4519c-efbf-8aac-9fa0-63b6d6ca5b12"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c0cbd541-1ba1-8ee8-bf5f-2314528efe5d"
     - stage: horo
-      stageUuid: "e08d64bd-3303-81f3-b34c-5e6e0bb3ca5b"
+      stageUuid: "562cc3f9-c627-85ed-8953-c5eb52346809"
     - stage: seal
       stageUuid: "22df6bd3-7788-8985-bfef-a25d6a4d2f16"
     - stage: uuid
-      stageUuid: "75d5e25b-03cf-8030-a4b7-12593d0bfbe2"
+      stageUuid: "d3bf2c6e-7cc6-8251-8c0e-1308000b6fd1"
 quantum:
   superposition:
     - fold
@@ -47,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "4691e345-b508-8c78-ba8e-a3e24793cfca"
-    contentUuid: "ab0a0705-43c9-58fb-b123-b85376e01d58"
+    computationUuid: "5a8a5784-a355-856d-866c-203b2cfbfae8"
+    contentUuid: "922ef01e-0006-581c-baef-1202f831da8d"
 version: 2
 ---
 # cipher — ciphertext-only receipts, plaintext sealed
@@ -125,4 +125,4 @@ imports @/algebra
 
 Composes: [[seal]] · [[quantum]] · [[law]]
 
-<sub>content-uuid `ab0a0705-43c9-58fb-b123-b85376e01d58` · account `quantum/fold/cipher` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `922ef01e-0006-581c-baef-1202f831da8d` · account `quantum/fold/cipher` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

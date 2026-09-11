@@ -2,18 +2,18 @@
 name: receipt
 description: "Use when an agent must publish its own error record — the ledger every atom carries except the thing that writes them. Computes honesty (claims that held / claims made), efficiency (delivered / delivered+rework), self-caught defects, and lapses repeated after acknowledgement; withoutCorpus gives the counterfactual (what ships when the gates are stripped), trainingRules turns each correction into an imperative naming the instrument that already existed, and compareAgents refuses to call one row a comparison. Harness is tracked apart from model, and any harness can emit a receipt — the shape is plain data."
 atomPath: "agent/receipt"
-coordinate: "agent/receipt · 1/base · 18f5542f"
-contentUuid: "9c4c3f08-07cd-5145-99b5-1fc884bdeff3"
-diamondUuid: "e8d1b4e8-1b69-8e92-8b16-d2f753baa1e6"
-uuid: "18f5542f-920f-8534-93d1-31d5a0092f52"
-horo: 1
+coordinate: "agent/receipt · 7/descent · 6743332a"
+contentUuid: "056d3314-28c5-5b33-a33d-09e682253746"
+diamondUuid: "0a469a2d-8d7a-8157-977d-46d1bf9a3ca6"
+uuid: "6743332a-479d-8af4-8265-073044a3e226"
+horo: 7
 typography:
   partition: agent
   bondDegree: 118
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c48eb889-f957-890b-8f45-6374ee520ac6"
+  computationUuid: "3539f59c-adf0-8270-96dd-f677810f6ac1"
   stages:
     - stage: path
       stageUuid: "4abe2be3-15b1-86a5-8a0d-6e56706b249f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3749b154-6aa7-8a31-b27b-06f3e7a8a402"
     - stage: horo
-      stageUuid: "7e59ee79-1179-8b57-a160-dbf4f2666323"
+      stageUuid: "a955bdfd-962a-8256-854a-5dd2719f1914"
     - stage: seal
       stageUuid: "96fe2f58-2990-8e5e-b62a-8f5c825b423c"
     - stage: uuid
-      stageUuid: "3d743513-afc9-8390-a9e9-fdce1174cad1"
+      stageUuid: "cd13206e-177f-84d9-9606-3aaa8db9c201"
 version: 2
 ---
 # agent/receipt — an agent publishes its own error record, or its output is unaudited

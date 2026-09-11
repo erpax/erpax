@@ -2,10 +2,10 @@
 name: zeropoint
 description: "Use when reasoning about the criterion that decides what is canonical — zero entropy wins: of all forms of a thing, the LOWEST-entropy one (most ordered, DRY, integer, content-addressed) is the truth. The source erpax descends from (ceccec/zeropoint-node, the a432/vortex prior art): irrationality collapses to integer resonance (rodin digital-root, the horo ring), sprawl collapses to the uuid singularity, duplicates merge to one. The 0 everything radiates from and returns to."
 atomPath: zeropoint
-coordinate: "zeropoint · 9/unity · 2ca0cdaa"
-contentUuid: "0a01122e-1940-5f10-ad63-1ac5ad6f330f"
-diamondUuid: "26b2c623-a584-8f30-91be-ddb29715afb1"
-uuid: "2ca0cdaa-6238-8ca6-b549-0a9e7b010dde"
+coordinate: "zeropoint · 9/unity · 19158f78"
+contentUuid: "ed217a3f-8d87-5e2d-a2c8-29d04b97fcf3"
+diamondUuid: "62137d60-2657-80c8-be08-4b082bc61227"
+uuid: "19158f78-c4c1-8aba-93a1-b0f54222237f"
 horo: 9
 typography:
   partition: zeropoint
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cab54615-3542-8cbc-b00c-b98953db5689"
+  computationUuid: "288921f9-8071-8f4c-83e9-d86e9dcef922"
   stages:
     - stage: path
       stageUuid: "4a319e8f-63c1-893b-85d8-f703c42a61e4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3b117688-034d-8027-847b-720375e92b85"
     - stage: horo
-      stageUuid: "d51616d0-c84a-872f-ba5e-8340c5fc6f33"
+      stageUuid: "423ae1e7-7dbb-8011-94b0-9d4d5edc701d"
     - stage: seal
       stageUuid: "7ccdd684-03aa-88eb-bb22-72355b3c61d7"
     - stage: uuid
-      stageUuid: "4a2cb800-73fb-8760-a404-0a83d64cf09f"
+      stageUuid: "545647b5-ffc5-8a01-809f-e5272ea3d697"
 version: 2
 ---
 # zeropoint — the zero-entropy source (zero entropy wins)

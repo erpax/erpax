@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amendment",
-    "uuid": "f2666bf3-680d-8ae7-b45a-f7b8974d13c4",
+    "uuid": "89f1c2ea-8597-821d-a8fa-47d3d50beb2b",
     "words": [
       "amendment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract is modified — amendment date, amendments previous (chain of amendments), amendment terms, amendments effect on prior terms, signature requirement.",
-    "uuid": "59a2be2b-7180-8f56-8ad2-b9030875682e",
+    "uuid": "86428494-71fa-8061-9729-31a5ac1a10d3",
     "words": [
       "use",
       "when",

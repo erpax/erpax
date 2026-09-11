@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "related",
-    "uuid": "73f27ec9-79bc-817f-920b-574c945f8a0a",
+    "uuid": "b6c6e241-3bff-8f7d-90f3-a46f35a51328",
     "words": [
       "related"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about related — A pointer to another, somehow related product (or multiple products).",
-    "uuid": "39cd9364-0478-80ce-bc31-36990f45dddf",
+    "uuid": "671b059d-d523-89a1-9879-3753f178a6e7",
     "words": [
       "use",
       "when",

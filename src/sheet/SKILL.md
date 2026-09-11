@@ -2,10 +2,10 @@
 name: sheet
 description: "Use when reasoning about sheet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sheet
-coordinate: "sheet · 1/base · ccbce6c2"
-contentUuid: "4097cb39-bf07-571d-b72f-4972f8e4a618"
-diamondUuid: "64f6dcf9-87d2-8878-ba8d-adbd2fa095b8"
-uuid: "ccbce6c2-d691-8274-a407-5be6de00b4bb"
+coordinate: "sheet · 1/base · 7b93e670"
+contentUuid: "25f5832e-09a4-5c63-b3a4-3716bd388277"
+diamondUuid: "480c5875-5241-8897-b131-c599a37526b2"
+uuid: "7b93e670-33b4-85b6-99ba-487ca2a61a89"
 horo: 1
 typography:
   partition: sheet
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "929b2b73-6681-8189-a9f7-f54ed06394ef"
+  computationUuid: "f97f519b-905c-8858-badc-8d4be53dfabe"
   stages:
     - stage: path
       stageUuid: "89c470aa-99c2-8c78-9fa0-3776f096fdeb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "69652c2b-90eb-8011-a03f-e790045fbb9e"
     - stage: horo
-      stageUuid: "7b7a13fa-0b08-8bc8-90eb-4c3e5e115ee7"
+      stageUuid: "ccaaeba0-2ea4-820c-8052-c2a4753b0f77"
     - stage: seal
       stageUuid: "b76d1095-2a6c-8667-842d-f07101f43707"
     - stage: uuid
-      stageUuid: "a6705ad9-00a5-8227-82fd-e10a095e17a5"
+      stageUuid: "a58a45b9-40b9-8102-89fe-184feaac3359"
 version: 2
 ---
 # sheet

@@ -2,18 +2,18 @@
 name: mcp
 description: "Use when reasoning about the MCP gateway in the quantum frame — one door exposing the whole trinity (payload data tools plus vitepress skill tools), the surface generated all-at-once from the corpus, every call by the actor-merge agent access-gated, quantum-compressed, and receipt-logged from the inside."
 atomPath: "quantum/mcp"
-coordinate: "quantum/mcp · 5/round · abbaa6d0"
-contentUuid: "d50bc0b0-9c8e-536a-91ac-6426049f53f4"
-diamondUuid: "16534578-99a4-8e81-9277-7441c1215aae"
-uuid: "abbaa6d0-cf71-81b6-ad4f-501e621007f2"
-horo: 5
+coordinate: "quantum/mcp · 1/base · 37073be4"
+contentUuid: "daa8c387-7ae8-5b09-a505-fde6435b1717"
+diamondUuid: "6690bd60-530f-8f66-9a1b-35a46d557a51"
+uuid: "37073be4-e772-8440-bf67-2a3fd1ee25f9"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 113
 standards: []
 bindings: []
 signatures:
-  computationUuid: "127e5b0d-e0a4-859a-a43e-bbc34224644e"
+  computationUuid: "b2084aba-9beb-860f-a385-e47c6374c294"
   stages:
     - stage: path
       stageUuid: "de2579a6-a1cd-835d-b455-31bd82356d78"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8f5c1adf-cfbd-8168-860a-63b8df5c840c"
     - stage: horo
-      stageUuid: "96a58df3-fd86-87b6-9f20-8c1354c53145"
+      stageUuid: "ffb501e8-993a-88ed-a232-d0f8d1c1e7bd"
     - stage: seal
       stageUuid: "70985e50-980b-8532-b34a-b81924242651"
     - stage: uuid
-      stageUuid: "ce756407-74bd-83be-b52b-0e5e2fed0036"
+      stageUuid: "b8c9e0ac-7cba-887d-b2f6-c75d92e3aa11"
 quantum:
   superposition:
     - access
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "127e5b0d-e0a4-859a-a43e-bbc34224644e"
-    contentUuid: "d50bc0b0-9c8e-536a-91ac-6426049f53f4"
+    computationUuid: "b2084aba-9beb-860f-a385-e47c6374c294"
+    contentUuid: "daa8c387-7ae8-5b09-a505-fde6435b1717"
 version: 2
 ---
 # quantum/mcp — the trinity as one tool surface
@@ -76,4 +76,4 @@ The surface is a **projection of the corpus**, generated all-at-once ([[quantum/
 
 @see [[mcp]] · [[payload]] · [[vitepress]] · [[skills]] · [[agent]] · [[access]] · [[sandbox]] · [[receipt]] · [[quantum/log]] · [[quantum/request]]
 
-<sub>content-uuid `d50bc0b0-9c8e-536a-91ac-6426049f53f4` · account `quantum/mcp` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `daa8c387-7ae8-5b09-a505-fde6435b1717` · account `quantum/mcp` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

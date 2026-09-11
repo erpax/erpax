@@ -2,10 +2,10 @@
 name: tax
 description: "Use when a value bears VAT/GST/sales/withholding tax — a rate on a taxable base, UN/CEFACT 5305 category codes, EN-16931 VAT breakdown, inclusive/exclusive pricing, exemption, reverse-charge, the tax point. The TaxConcern; tax is a cascade-resolved rate on a base, one engine feeding receipt+total+SAF-T, never a baked literal."
 atomPath: tax
-coordinate: "tax · 4/weave · 8a58552f"
-contentUuid: "18320f88-b2b6-5ec3-9cc4-00b0a92772c4"
-diamondUuid: "51781f31-e5d6-8676-86d4-15807c394301"
-uuid: "8a58552f-f3d9-8577-8ea1-31ebf33e0f05"
+coordinate: "tax · 4/weave · 0f98afed"
+contentUuid: "913e16a6-63b2-5a6a-8dbb-56982b3751fc"
+diamondUuid: "ef961367-4ace-84de-be46-f3d7132fee74"
+uuid: "0f98afed-9a72-8ef7-a4f0-1e7d28882ec1"
 horo: 4
 typography:
   partition: tax
@@ -23,7 +23,7 @@ standards:
   - "US-GAAP"
 bindings: []
 signatures:
-  computationUuid: "c17e35e1-f7f6-8c42-830e-2523625aa170"
+  computationUuid: "646b6744-64da-89cf-b92b-6fe6f7026cff"
   stages:
     - stage: path
       stageUuid: "e08a6457-43c3-8a62-946c-60d67ee39f11"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "763b94e7-8acb-8acb-bf1c-3610931d2dba"
     - stage: horo
-      stageUuid: "88a57f94-2416-8cc6-a6c5-698e53616ff6"
+      stageUuid: "8d01de86-9f25-86d1-97fd-43557f399ff6"
     - stage: seal
       stageUuid: "8d8efd0c-1d47-84d5-9bf3-96eff1cd0830"
     - stage: uuid
-      stageUuid: "ed93a47e-f173-8466-89f8-5c68996245f1"
+      stageUuid: "d3cacade-66e1-8590-969c-cc959b3c4a6d"
 version: 2
 ---
 # tax — a levy is a rate on a taxable base, categorized by a standard code

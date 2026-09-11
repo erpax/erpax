@@ -2,11 +2,11 @@
 name: gap
 description: "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing)."
 atomPath: "competency/gap"
-coordinate: "competency/gap · 8/crest · 80111fef"
-contentUuid: "88b54f17-4331-5e80-9b27-5d40a1c1758d"
-diamondUuid: "d39aedf3-9384-83bb-a80d-41490d411db4"
-uuid: "80111fef-66ae-8abb-9b89-2063fcecd17b"
-horo: 8
+coordinate: "competency/gap · 5/round · 2f9fe02e"
+contentUuid: "3a4d25a3-fcff-51c1-8b37-7508d2b5d358"
+diamondUuid: "dec59599-c360-8e0e-b704-d14e52a8bfeb"
+uuid: "2f9fe02e-1a07-8424-a77d-a0086c3dde55"
+horo: 5
 typography:
   partition: competency
   bondDegree: 36
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "36b60e53-3c87-8c89-8534-7213a0713af3"
+  computationUuid: "7844285e-ec60-8073-a299-2c4cfab7cb94"
   stages:
     - stage: path
       stageUuid: "12f44faa-9fa9-86c8-b8ef-e5b572270824"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "cc0562f0-ef6f-8515-b8c1-55271297625c"
     - stage: horo
-      stageUuid: "dc68df20-0bf1-8ca1-bf6b-30726d764a06"
+      stageUuid: "19a169d9-9099-80c2-b86c-1b64cb2a6be2"
     - stage: seal
       stageUuid: "bc69c28b-e57f-804a-bb90-fd2577c02d6a"
     - stage: uuid
-      stageUuid: "7fa6263d-10d0-8fbd-88d3-8f23d52a0c70"
+      stageUuid: "29259eef-4652-8f0d-8cd3-3effcb350935"
 version: 2
 ---
 # competency-gap — required − held, on the shared scale

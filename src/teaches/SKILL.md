@@ -2,11 +2,11 @@
 name: teaches
 description: Use when reasoning about teaches — The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.
 atomPath: teaches
-coordinate: "teaches · 5/round · aabf2fa1"
-contentUuid: "1e0c110b-4089-557d-928a-0e8e74e4ea43"
-diamondUuid: "567b529b-99dc-89a4-9ee8-fc017d2686d7"
-uuid: "aabf2fa1-6e93-83b3-a203-f4333187aa11"
-horo: 5
+coordinate: "teaches · 7/descent · 7f136c3f"
+contentUuid: "c684620a-5879-5f4c-82f3-9f157fc499ec"
+diamondUuid: "0b57a889-de36-8738-a655-69d5babc873d"
+uuid: "7f136c3f-6ba4-8779-9a0b-2c79423da04f"
+horo: 7
 typography:
   partition: teaches
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bbc8c1de-ba88-8374-a6cf-61745495403b"
+  computationUuid: "368cb7d3-8706-83c5-a6c1-f71f9628c03c"
   stages:
     - stage: path
       stageUuid: "9790d032-2f18-8b05-8743-b33b9b47cc38"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eb87d190-2f64-8788-b2a6-75a01e4e0f7c"
     - stage: horo
-      stageUuid: "71a318d0-3909-80c8-a91e-659222866fa3"
+      stageUuid: "f97c8ced-7577-88fc-bf10-19ec68a9316b"
     - stage: seal
       stageUuid: "c248d03c-df6f-8ba8-ae0f-c948eb9c0d98"
     - stage: uuid
-      stageUuid: "45a24ce8-6b20-8957-9992-3b6186b14452"
+      stageUuid: "21a11692-6c73-83a3-a9a6-88b2872bd8f1"
 version: 2
 ---
 # teaches

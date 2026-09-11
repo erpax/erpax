@@ -2,11 +2,11 @@
 name: real
 description: "Use when reasoning about real as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/real"
-coordinate: "vocabulary/real · 1/base · 1b46755a"
-contentUuid: "a789ff05-9052-5718-a432-ce4220dec8a1"
-diamondUuid: "c14c4592-3ead-8691-a3bd-c32879731307"
-uuid: "1b46755a-2c72-8cf1-8365-9b7d1e320029"
-horo: 1
+coordinate: "vocabulary/real · 5/round · b83440bd"
+contentUuid: "ca80fc9b-2a11-5df1-becc-235aec527eb4"
+diamondUuid: "6caa69f3-d1ed-8d64-9ef8-b2bb2590b310"
+uuid: "b83440bd-f1cb-8bb6-bc4e-a19478462d17"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "94f82aa5-3fae-8076-b5c1-0b172df1a5da"
+  computationUuid: "2dda8bd5-355c-8273-a8fe-bc3176bf08c9"
   stages:
     - stage: path
       stageUuid: "a7b663dc-b6f6-8df7-8586-fd673eb06f55"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6c690c1b-b542-8fd0-a5d4-19a8be2b01ec"
     - stage: horo
-      stageUuid: "473d7d21-70a9-8dce-833b-98739584012e"
+      stageUuid: "bd3c7cd8-3029-8ffb-ae0d-fe13bb5bda32"
     - stage: seal
       stageUuid: "323a0e94-c67f-8e9e-bd3f-b29ee126f311"
     - stage: uuid
-      stageUuid: "b0d04962-0e59-8e93-8953-f5ed1182ba04"
+      stageUuid: "17dd0433-7d51-8cc7-b5c9-a50bb7d84d71"
 version: 2
 ---
 # real

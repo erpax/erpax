@@ -2,11 +2,11 @@
 name: decompression
 description: "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity)."
 atomPath: decompression
-coordinate: "decompression · 7/descent · 04aa3174"
-contentUuid: "6701a350-4246-546e-8179-c92233585e4e"
-diamondUuid: "ec06cc96-204b-8d53-8f5d-d49898cffb8e"
-uuid: "04aa3174-dc86-85fd-9ad6-420deafa9de1"
-horo: 7
+coordinate: "decompression · 4/weave · d9113b9f"
+contentUuid: "01149ad1-3162-5a65-a291-b943db368272"
+diamondUuid: "5740c0b2-d779-875d-9084-bc27de391aff"
+uuid: "d9113b9f-638c-868e-9aee-69c8e63e44ea"
+horo: 4
 typography:
   partition: decompression
   bondDegree: 141
@@ -18,7 +18,7 @@ standards:
   - "UBL-2.1"
 bindings: []
 signatures:
-  computationUuid: "8638d7fe-42f0-89d6-b08e-e16015e68382"
+  computationUuid: "ce8c1eca-eaef-8efb-8d21-4eac1883674a"
   stages:
     - stage: path
       stageUuid: "3f4cb9b3-3893-8d1c-9684-0dedc4988a2e"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "2b114773-9a04-8872-ba87-e7d4b3b3daef"
     - stage: horo
-      stageUuid: "767f91f7-35cc-812c-9cd4-39cd349a0dab"
+      stageUuid: "68cf1264-06f5-8314-87f2-dfbf49cfd57e"
     - stage: seal
       stageUuid: "061b3594-ad8f-8e62-9b87-1c3fd1720310"
     - stage: uuid
-      stageUuid: "712bd4bd-08de-8cfa-8f2c-dc710d52068e"
+      stageUuid: "37fd6276-51f1-8fc2-9db0-144240a42f86"
 version: 2
 ---
 # decompression — the dive IS the erpax ledger (one extreme sport, three aspects)

@@ -2,11 +2,11 @@
 name: shred
 description: "Use when reconciling GDPR erasure with content-addressing — a content-uuid is f(content) and the chain needs the row, so you cannot delete. Crypto-shred = encrypt erasable fields per subject, and erasure = destroy the key (not the row). The row+uuid persist (chain/tamper-evidence intact), the plaintext is unrecoverable. Matter-twin shred/index.ts."
 atomPath: shred
-coordinate: "shred · 4/weave · 6044ee15"
-contentUuid: "74ba9a3f-3473-57a1-9f0c-875bed520cde"
-diamondUuid: "41314195-527b-8f59-845c-75a149c5c4dd"
-uuid: "6044ee15-3240-84d4-bfbe-6e941cbd1364"
-horo: 4
+coordinate: "shred · 2/share · 7e87d571"
+contentUuid: "a1580c29-94bc-5998-8c24-33c28618f85e"
+diamondUuid: "243eed00-bfd9-87dc-a2e1-4f143b8f7faf"
+uuid: "7e87d571-3aef-860b-bb19-35adfd03ce4c"
+horo: 2
 typography:
   partition: shred
   bondDegree: 43
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fdb9ffad-7e78-8d2c-8cfd-79177127c818"
+  computationUuid: "f9d8cfb3-21e1-8928-afb7-0efd020ca3a6"
   stages:
     - stage: path
       stageUuid: "398f15aa-e355-871e-8460-26a85d01aaeb"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "402c223d-a295-8d2d-9290-eaaaf12454bf"
     - stage: horo
-      stageUuid: "a9be2055-356f-87a5-bcb7-2f9e47192e86"
+      stageUuid: "67b2cd98-7d39-84e9-b915-60cacc786f52"
     - stage: seal
       stageUuid: "5c0109b8-0d9c-8ac0-b71d-6226a0911dc6"
     - stage: uuid
-      stageUuid: "0bdd3ee7-ee39-8a91-9296-0f90d7326882"
+      stageUuid: "46dfa8ec-5ab6-8202-857c-7c3a55ff66fd"
 version: 2
 ---
 # shred — erase the content, never the record

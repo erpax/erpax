@@ -2,11 +2,11 @@
 name: examples
 description: "Use when seeding or referencing a self-contained tenant template — the business-model-agnostic example `TenantConfig`s (course-builder, newsletter, marketplace) and the `getConfigByBusinessModel` / `listExampleConfigs` accessors over them."
 atomPath: "config/examples"
-coordinate: "config/examples · 9/unity · a0552448"
-contentUuid: "5b28744c-073b-5b55-92cf-ff3547cf41e3"
-diamondUuid: "667c50c4-6c47-85f0-a7c2-65c844ec0911"
-uuid: "a0552448-ce89-854f-a664-b77220ae072e"
-horo: 9
+coordinate: "config/examples · 6/6 · af2514a9"
+contentUuid: "94ee42b0-f125-5308-8026-36495a18d4cb"
+diamondUuid: "e198238f-93d1-813a-b386-56c03bb945be"
+uuid: "af2514a9-57d6-8491-a052-30ed44837a6d"
+horo: 6
 typography:
   partition: config
   bondDegree: 9
@@ -19,7 +19,7 @@ standards:
   - "ISO-4217:2015 currency-codes"
 bindings: []
 signatures:
-  computationUuid: "2a25fdd5-5bdb-852a-b206-432d6cae0997"
+  computationUuid: "35d7028d-ebfc-8341-a8e1-c9841dabc577"
   stages:
     - stage: path
       stageUuid: "6ed26be1-495e-8373-b7ba-52573f0457da"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "373c7a9c-b072-85bb-8484-e2cd834b0717"
     - stage: horo
-      stageUuid: "f157362a-de52-8ea0-8439-e868cc1da5b2"
+      stageUuid: "e420ad3c-2e26-8ab5-ab32-ecbff837140d"
     - stage: seal
       stageUuid: "f03d2605-b169-8723-80fc-2c01bfc14b48"
     - stage: uuid
-      stageUuid: "a3b092e7-823e-8fc6-9934-ea715869384c"
+      stageUuid: "78c0342f-efaf-88b5-bee7-4f6b97834cbe"
 version: 2
 ---
 # config/examples — self-contained tenant templates

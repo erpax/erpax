@@ -2,11 +2,11 @@
 name: shoe
 description: "Use when reasoning about shoe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: shoe
-coordinate: "shoe · 5/round · 42582f71"
-contentUuid: "05ce8c6a-ab45-540b-a11d-4fda25404b17"
-diamondUuid: "e8870ecd-1618-860f-ad09-b58213249af2"
-uuid: "42582f71-6736-802b-937a-b9b06d43f4a7"
-horo: 5
+coordinate: "shoe · 2/share · 2d0e5dcf"
+contentUuid: "cdd6109a-8b27-5b5d-965d-0a1bbc27dc65"
+diamondUuid: "6e839208-21dc-8323-9f45-2686677af375"
+uuid: "2d0e5dcf-4abb-8041-a3e9-4f788babac85"
+horo: 2
 typography:
   partition: shoe
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0513298e-eb01-89c8-b99c-8eb0bfa6092a"
+  computationUuid: "e4cf090c-b9ab-86f7-982c-60a7d80c7276"
   stages:
     - stage: path
       stageUuid: "e6e217a8-3ada-8e03-9493-3c70a80e7b72"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7010d2d4-89c5-870e-b837-3f968d009d57"
     - stage: horo
-      stageUuid: "8998c6ef-cb13-8980-b5aa-b3f8513abfe2"
+      stageUuid: "98cf62ea-f353-8a9f-a60e-28cd7b7cb4ca"
     - stage: seal
       stageUuid: "6d35a6ec-a5df-887c-a37f-2e81b4aa247d"
     - stage: uuid
-      stageUuid: "9d8c3c74-aca7-858f-b6e6-a236871a4050"
+      stageUuid: "c772b90e-5208-845e-9102-a53a5807835a"
 version: 2
 ---
 # shoe

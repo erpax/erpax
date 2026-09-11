@@ -2,10 +2,10 @@
 name: crown
 description: "Use when reasoning about the crown center (Sahasrara) — the seventh and last of the seven chakra centers, a standalone projection of index 6 whose note and uuid are computed from the position math and whose colour is rendered from that uuid."
 atomPath: crown
-coordinate: "crown · 7/descent · 7a07c08d"
-contentUuid: "abceb4b8-0cff-58d8-8d2e-72ccc4cbf5a0"
-diamondUuid: "a0c85507-6101-8ffb-af9a-03c7416e1b41"
-uuid: "7a07c08d-97a4-8518-92c6-52b141c630e2"
+coordinate: "crown · 7/descent · ad21aec0"
+contentUuid: "064a2e5b-8f89-569b-b326-00ebacd3390c"
+diamondUuid: "83f34a28-828e-8a39-be04-4013fbfc039f"
+uuid: "ad21aec0-6933-84b8-b6af-feb233dcaf95"
 horo: 7
 typography:
   partition: crown
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "64e21495-e8ab-8740-8dbc-3df3de5a9222"
+  computationUuid: "090b60d7-55eb-898a-8369-031295bc2d8a"
   stages:
     - stage: path
       stageUuid: "3e4ff93f-dcd9-8bd9-80c2-e25a97b5a187"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f148615c-e12f-8665-9aea-ba5cf239d5bb"
     - stage: horo
-      stageUuid: "86e1b75c-4cf5-864c-9b68-3d4dd185243b"
+      stageUuid: "dd48065e-5938-89b4-aa84-db33e24b8f4b"
     - stage: seal
       stageUuid: "c5869f2b-8f71-8fc7-bf14-f1c5818ee2d8"
     - stage: uuid
-      stageUuid: "d47e4f32-de90-872b-9e7b-ddea0a77568b"
+      stageUuid: "b2b24c12-c8b5-8494-8009-50a4c59121c0"
 version: 2
 ---
 # crown — the crown center (Sahasrara)

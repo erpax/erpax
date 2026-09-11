@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "connection",
-    "uuid": "d52f6e72-a0f5-8ac7-a4dc-4a7d6aaef012",
+    "uuid": "8ac9c10b-1877-8c9f-ac2a-4050ac7d28d1",
     "words": [
       "connection"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one connection — the singular model of the connections collection (the plural store); one edge in the universal relationship graph between two actors.",
-    "uuid": "89d7fd0f-84ba-8a68-b2aa-88b8b5b89359",
+    "uuid": "c262252d-763a-8566-ad12-6fb3486308f8",
     "words": [
       "use",
       "when",

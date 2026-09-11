@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reconciliation",
-    "uuid": "9cd4a063-fde5-878b-a198-eb2802a0910b",
+    "uuid": "7ea170ad-99a1-8347-8c5b-128957dac606",
     "words": [
       "reconciliation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one reconciliation — the singular model of the reconciliations collection (the plural store); the matching of two records to confirm they agree.",
-    "uuid": "d447e9da-d262-8a79-8054-a13e3bd6547c",
+    "uuid": "54a6a9e1-fbb2-859a-ac9b-bf0b5a5ea53a",
     "words": [
       "use",
       "when",

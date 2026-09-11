@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "metadata",
-    "uuid": "7def74d4-e1a5-8d4d-8649-d9ef9fbacad4",
+    "uuid": "bf755b65-a54e-827f-9c0c-528b5fae38cd",
     "words": [
       "metadata"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag.",
-    "uuid": "a4992c2e-178a-8281-b0d7-4537e92a158e",
+    "uuid": "d6d4285f-c522-8ada-91e3-debf3c29c3ab",
     "words": [
       "use",
       "when",

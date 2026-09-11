@@ -2,10 +2,10 @@
 name: discern
 description: "Use when a public claim must be provable rather than asserted — every claim is typed as a verdict (property + the test that exercises it) or a compass (property + what would close it + who owns that). A verdict whose test is absent fails; a verdict whose run returns no evidence of what it exercised, or what would break it, fails as a tautology under a heading. An undeclared public surface throws: silence is never a claim of safety. integrity() is passing verdicts over total claims, hand-set nowhere."
 atomPath: "convention/discern"
-coordinate: "convention/discern · 2/share · a3f16b05"
-contentUuid: "bf5f696c-ed23-583a-863d-56fed119d43d"
-diamondUuid: "2a63185a-59d5-80f6-9220-775fe4eaa3ed"
-uuid: "a3f16b05-25e8-8f66-b666-e941050808ba"
+coordinate: "convention/discern · 2/share · 33a4d692"
+contentUuid: "263ecef5-ff48-5fdc-82b7-0e262212d268"
+diamondUuid: "71d60799-218c-8dc3-a076-e00875275c66"
+uuid: "33a4d692-4f2a-86b0-9baa-333b353bb7ef"
 horo: 2
 typography:
   partition: convention
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.5 — testability: a claim that cannot be exercised cannot be met"
 bindings: []
 signatures:
-  computationUuid: "1cb4faf6-dc13-87a6-9a92-ee468f75b949"
+  computationUuid: "581413cf-d76e-8358-9112-3e1a2d355e3d"
   stages:
     - stage: path
       stageUuid: "4795a0c5-4000-860e-8830-16e40fcc9b76"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "d8f2a417-81e7-8ced-bc23-5e87b2537aac"
     - stage: horo
-      stageUuid: "92d2d4c1-8343-8863-8ed0-9227533e18ff"
+      stageUuid: "b4008ceb-1e50-8b03-89d3-0b2a15464ef0"
     - stage: seal
       stageUuid: "3756238b-a4b4-8c8f-905b-3138adddc437"
     - stage: uuid
-      stageUuid: "7c3ed041-ea00-88bf-9e94-e3538755153b"
+      stageUuid: "53434d1a-996c-8dae-ac1a-a4dad99a32a9"
 version: 2
 ---
 # convention/discern — a claim is a verdict or a compass, and nothing else

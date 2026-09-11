@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unfolded",
-    "uuid": "91f56bb8-098a-8a39-93f1-ac08da4f2a6e",
+    "uuid": "3083f86e-61f1-8e5f-bc78-330cf18bd69c",
     "words": [
       "unfolded"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that an export earns its place — a symbol with no caller is dead, and one with exactly one caller is un-folded (inline it, delete it, or make it reused). Counts real call sites only: an import or re-export NAMES a symbol without USING it, so counting it hides genuine single-use. Candidates, never a purge list — erpax ships as @erpax/* packages, so an export may be the public face with no in-repo caller. Run: tsx src/rules/unfolded/index.ts",
-    "uuid": "3f75682a-b805-861b-8075-5a48f5a5bc1d",
+    "uuid": "8763ddd5-c88d-809b-ae9b-a537d3f9918d",
     "words": [
       "use",
       "when",

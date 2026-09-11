@@ -2,18 +2,18 @@
 name: scorecard
 description: Use when modelling one scorecard — the singular model of the scorecards collection (the plural store); a structured summary of metrics against targets.
 atomPath: scorecard
-coordinate: "scorecard · 8/crest · 34984639"
-contentUuid: "1cb91238-a014-5368-b3de-564663625c34"
-diamondUuid: "7ba24eae-680d-896d-85bc-a3925a9c85c3"
-uuid: "34984639-241e-8b66-aa0f-d379fe49edcc"
-horo: 8
+coordinate: "scorecard · 1/base · 5b7cc0bf"
+contentUuid: "a7dbc25c-7097-57a4-a851-2e7a5837a61e"
+diamondUuid: "183ae072-36ed-8968-aca5-b76acf5d9104"
+uuid: "5b7cc0bf-f271-8bc9-89e8-e06f5970d402"
+horo: 1
 typography:
   partition: scorecard
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "11a91112-050b-8f07-987d-cd57ea1ebd53"
+  computationUuid: "883898e5-9a01-8268-84c0-6f68c7bccf69"
   stages:
     - stage: path
       stageUuid: "4d42dd9d-d6c4-870d-9c0f-9ca3b8d009a8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cb541b24-0d9b-885f-a6cb-f483f43a057d"
     - stage: horo
-      stageUuid: "3171e493-6307-8333-b1c1-1f04e808a857"
+      stageUuid: "3f2e821d-fa7e-877c-9fd1-3b6c5fab23d1"
     - stage: seal
       stageUuid: "012b8361-5ded-8b03-acdf-e097ef26c99b"
     - stage: uuid
-      stageUuid: "9c2afa4f-ae5a-8ad0-8bd9-a2c13dd41c9c"
+      stageUuid: "3db31b27-db89-8087-816b-1f900353faa4"
 version: 2
 ---
 # scorecard — the model of one [[scorecards]] row

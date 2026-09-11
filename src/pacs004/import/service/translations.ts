@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "service",
-    "uuid": "5cdc9443-d4ba-8411-884b-901781c43834",
+    "uuid": "8ebb9aed-4638-8be7-a010-d1fbc43b3fe5",
     "words": [
       "service"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing pacs.004 payment-return import parser.",
-    "uuid": "f54624a8-7927-8ce1-9b9f-0120cf634cea",
+    "uuid": "b398effd-4877-816a-91d4-3e8fa5078496",
     "words": [
       "use",
       "when",

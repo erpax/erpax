@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reconciliations",
-    "uuid": "69b971bd-71e8-8104-a8dc-f371c4fc12d6",
+    "uuid": "56952975-0921-8f86-8cdc-c74a61ed51c9",
     "words": [
       "reconciliations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection.",
-    "uuid": "b3591b42-5ca8-8bb7-89c0-d3cede4ff2e4",
+    "uuid": "3f6bd200-3fba-85ac-abf9-b84f3f0806ae",
     "words": [
       "use",
       "when",

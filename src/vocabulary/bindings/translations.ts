@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bindings",
-    "uuid": "25d5303f-9ba9-8ab6-9b57-2c93dd6fb1a4",
+    "uuid": "ba4b5040-da8c-8fe1-acdb-0339770f0938",
     "words": [
       "bindings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\"works in config but fails at runtime\\\" (e.g. \\\"no such Durable Object class is exported from the worker\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
-    "uuid": "7a91c4ea-c9bd-8ff8-9645-bbb62e80f41c",
+    "uuid": "e16f5d31-a781-8187-8ea8-19b2469f53bd",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: vitepress
 description: "Use when reasoning about the form coil — VitePress renders each atom's SKILL.md as its spoken form (docs, frontmatter, the wiki-link graph) and is the speech-gate twin of the Payload matter, bound by content-uuid."
 atomPath: vitepress
-coordinate: "vitepress · 8/crest · 81b34f20"
-contentUuid: "0a4f362f-09f8-5d1b-9044-8ff70a15dee5"
-diamondUuid: "4cf35c81-8525-84f0-b0f2-6f06e4be5b22"
-uuid: "81b34f20-119b-8071-9b04-22a4e67a9898"
-horo: 8
+coordinate: "vitepress · 1/base · 8433006b"
+contentUuid: "626b151f-5799-5421-95a4-0a91a5b9f8c6"
+diamondUuid: "54dbb90b-7f15-8464-b3f9-937ae12b6470"
+uuid: "8433006b-dd56-820e-badd-e6fbe169b96a"
+horo: 1
 typography:
   partition: vitepress
   bondDegree: 79
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a4693944-2122-884a-b206-18e37fbf0188"
+  computationUuid: "42d9f323-f115-872d-ad84-9b4efa539823"
   stages:
     - stage: path
       stageUuid: "89ebc30b-ab03-8d12-9c97-cc806805e76c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "04c2ca24-4692-864b-bc57-4c1b331e7acf"
     - stage: horo
-      stageUuid: "5db2b40f-0bd8-8854-9d66-1304e7f07824"
+      stageUuid: "06db61de-1dc7-8d36-acda-c80765ef3f46"
     - stage: seal
       stageUuid: "84f3767b-9c79-83c3-a4be-4e02277b60f2"
     - stage: uuid
-      stageUuid: "6579299d-2456-87ec-8254-bc73438eb27c"
+      stageUuid: "d3650db5-1101-802a-b239-c4770d450a30"
 version: 2
 ---
 # vitepress — the form coil

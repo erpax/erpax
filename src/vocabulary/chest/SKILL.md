@@ -2,11 +2,11 @@
 name: chest
 description: "Use when reasoning about chest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/chest"
-coordinate: "vocabulary/chest · 2/share · b83c97ae"
-contentUuid: "3e447b41-3dba-57cc-acc6-377501a9aed0"
-diamondUuid: "5e317e22-bbf7-8f5a-8938-c665b494eafe"
-uuid: "b83c97ae-2043-8e22-97aa-ad92c1defa66"
-horo: 2
+coordinate: "vocabulary/chest · 7/descent · d81e1c9b"
+contentUuid: "3f3cca1d-eecd-5493-804d-cee15cd563b0"
+diamondUuid: "ed04e53a-90fc-8d6b-93a8-20a24916554d"
+uuid: "d81e1c9b-c6c5-8d23-a971-a29bc5222e7e"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0c1ae739-674f-872c-88c9-ab0fbb7cf9ff"
+  computationUuid: "2b61b197-8333-8c3d-b4d7-978171561c49"
   stages:
     - stage: path
       stageUuid: "194fbb9b-051e-8f4b-afa0-d2a215d75813"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "82a7c86a-c393-878c-a951-8b6d2cde5a63"
     - stage: horo
-      stageUuid: "b04e3dea-b09a-8726-a80b-764c442e82df"
+      stageUuid: "1ad37e89-952b-8871-9598-81357110071a"
     - stage: seal
       stageUuid: "e467f133-6ec1-8579-8dc9-be4c649f5fb5"
     - stage: uuid
-      stageUuid: "eeeb6228-12cf-8011-a10f-cec5c73c5bf7"
+      stageUuid: "ba838071-a4ad-838a-bd63-832afc81571e"
 version: 2
 ---
 # chest

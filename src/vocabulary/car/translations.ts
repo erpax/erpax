@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "car",
-    "uuid": "96da60a3-0fe3-859a-ba01-a07bc383d2cf",
+    "uuid": "2a57b9d8-6edd-8b97-b6d1-381acf2413cd",
     "words": [
       "car"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about car — A car is a wheeled, self-powered motor vehicle used for transportation.",
-    "uuid": "a846b012-6e7f-8976-b1d4-ec8f485df092",
+    "uuid": "6b90cc72-90f5-8bf5-a9ca-21396b9120de",
     "words": [
       "use",
       "when",

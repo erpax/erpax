@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "actions",
-    "uuid": "69950670-c5b4-80e8-8151-709469fe0ada",
+    "uuid": "7d15f288-4017-88dd-b3c9-1363b4b1d6bc",
     "words": [
       "actions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording formal board-level decisions for a legal entity — resolutions, policy approvals, risk assessments, control enhancements, attestations, vote tallies, and related internal controls. The SOX §404 corporate-governance board-action register.",
-    "uuid": "e55cca3a-7556-8ce7-91cd-ea202386c9ff",
+    "uuid": "087d4c59-ead5-8c8d-bda8-c94c42e08c94",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: dance
 description: "Use when reasoning about dance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dance"
-coordinate: "vocabulary/dance · 5/round · f70d59dd"
-contentUuid: "1bb7e7c4-73b7-5fd9-8fc8-b367e4fbfafa"
-diamondUuid: "41763dfc-2401-8c2e-a227-1dae8b80c5b8"
-uuid: "f70d59dd-6ed0-8bca-b5ab-9233e5be8d1f"
-horo: 5
+coordinate: "vocabulary/dance · 8/crest · bf6231fb"
+contentUuid: "36a8d4d8-7e0f-58c1-8eeb-b004c8bb5f6e"
+diamondUuid: "2ab90fac-4ce1-8927-a1f5-75e4794b8975"
+uuid: "bf6231fb-087e-8927-893d-9d59a318b568"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5ee763e8-764b-8885-8c37-df0b5215141b"
+  computationUuid: "cf0aad72-2a97-8038-960e-3c475c1bf1e3"
   stages:
     - stage: path
       stageUuid: "989f2d9c-5b19-8302-a3b6-1b32fa125088"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "557ce304-2a0b-8aad-a82d-fd3a980c7329"
     - stage: horo
-      stageUuid: "57ee1830-6289-840d-adc6-36ca747b1b52"
+      stageUuid: "10bd72de-3647-892c-b6ac-c73959a6daf1"
     - stage: seal
       stageUuid: "b968ce11-c843-8f32-8200-49236ab03b14"
     - stage: uuid
-      stageUuid: "b060df6c-a6a1-8a9f-b761-025a23b3a9ce"
+      stageUuid: "52b4388b-fa99-8663-b5e0-7c1dd8a761a9"
 version: 2
 ---
 # dance

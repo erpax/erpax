@@ -2,11 +2,11 @@
 name: icfrs
 description: "Use when performing or documenting management's SOX §404(a) assessment of internal controls over financial reporting — COSO-2013 framework evaluation across control environment, risk assessment, control activities, information, and monitoring per SOX §404(a) / COSO-2013 / PCAOB AS 2201. The management ICFR assessment collection."
 atomPath: "legal/entities/management/assessment/icfrs"
-coordinate: "legal/entities/management/assessment/icfrs · 1/base · 0574b569"
-contentUuid: "c1fc57c8-379c-5ca8-9e93-8e7d6ff9cec7"
-diamondUuid: "f69582d8-34f0-8320-b2bb-e48ff5709673"
-uuid: "0574b569-5336-828f-9752-44014a0b3ee4"
-horo: 1
+coordinate: "legal/entities/management/assessment/icfrs · 7/descent · b3d794ca"
+contentUuid: "3fa0e89c-5200-5806-93ce-3e344f8ca7e7"
+diamondUuid: "ca0a6903-ada8-8e06-99d7-0990c402e2b4"
+uuid: "b3d794ca-08f5-8cca-99e6-81c2dfb62177"
+horo: 7
 typography:
   partition: legal
   bondDegree: 3
@@ -18,7 +18,7 @@ standards:
   - "SOX §404(a) management-assessment-ICFR"
 bindings: []
 signatures:
-  computationUuid: "a40d2477-a745-8910-ab23-52d462e8e2ed"
+  computationUuid: "a4c92fb4-c934-8846-8351-28d71da41f09"
   stages:
     - stage: path
       stageUuid: "7c8e0d1e-ca0e-875f-ac0e-687960934de5"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "b4421f6d-6578-8100-ae4c-a33cc3a3435c"
     - stage: horo
-      stageUuid: "5d6f97bf-1179-83c5-935f-7cb2818b7e67"
+      stageUuid: "1ef9d6e1-b348-83eb-87f5-4c5dd60c87c7"
     - stage: seal
       stageUuid: "886c995a-2bf3-889c-89f4-c65f5be836d4"
     - stage: uuid
-      stageUuid: "9a5e22b9-bc56-89df-b602-3aacb0542113"
+      stageUuid: "61f334b9-a854-814d-9c78-88b7ef756855"
 version: 2
 ---
 # management-assessment-icfr

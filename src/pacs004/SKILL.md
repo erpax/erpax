@@ -2,18 +2,18 @@
 name: pacs004
 description: Use when parsing ISO 20022 pacs.004 PaymentReturn — return of a previous credit transfer.
 atomPath: pacs004
-coordinate: "pacs004 · 2/share · c35f28ba"
-contentUuid: "89863838-cd0e-5c38-94e4-b800e74068b0"
-diamondUuid: "025eeda2-dec5-8a55-8d16-7d2fad22a5d0"
-uuid: "c35f28ba-cea4-85c3-a842-3848421cd48d"
-horo: 2
+coordinate: "pacs004 · 5/round · ec50d5c7"
+contentUuid: "8ee389c2-ef11-5583-aef4-ff8f7a40a2eb"
+diamondUuid: "df263f8f-179e-8ae2-9f7e-33b9ac98ab37"
+uuid: "ec50d5c7-ee36-83ce-9258-11b0cf0db89d"
+horo: 5
 typography:
   partition: pacs004
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d2307e0e-ce76-8cae-8a0a-8833c364d108"
+  computationUuid: "cfb734f4-a04f-8a3e-acd8-000c42001b10"
   stages:
     - stage: path
       stageUuid: "135402b2-0854-8718-8ba8-cdcf79b6e462"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c3a25830-6e6d-88f3-a3c5-5bd4fe9c3d0c"
     - stage: horo
-      stageUuid: "c19f66d9-63e3-86de-b29d-240c9d0445b2"
+      stageUuid: "84d82792-7019-81bb-a3f7-2937304cae47"
     - stage: seal
       stageUuid: "4584d8fd-bb5a-855d-a6bc-e0e339e05d63"
     - stage: uuid
-      stageUuid: "e22ddb0b-b166-8269-b9c8-c8556a2aa51f"
+      stageUuid: "2f061b01-9fd8-840c-8997-fe8c1d18c7aa"
 version: 2
 ---
 # pacs.004 — Payment Return

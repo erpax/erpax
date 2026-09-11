@@ -2,18 +2,18 @@
 name: governing
 description: "Use when naming the choice of which body of rules controls an agreement — the parent term for the choice-of-law vocabulary."
 atomPath: "vocabulary/governing"
-coordinate: "vocabulary/governing · 8/crest · 790f7d95"
-contentUuid: "b9e19f89-b5f7-5ef9-b3f5-65e1ed32c468"
-diamondUuid: "ee339a41-404b-890d-86ad-4e23ddcd6796"
-uuid: "790f7d95-5c0a-826d-9b56-b456e864a9d4"
-horo: 8
+coordinate: "vocabulary/governing · 4/weave · af2de90d"
+contentUuid: "e91d2a66-3b6d-5978-aeb7-82efb5d20e4a"
+diamondUuid: "5d35b996-e6ee-814b-972e-723c87647078"
+uuid: "af2de90d-c4c4-864b-a721-a1d2415c90a9"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 8
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2b956604-695f-8c9e-9e1c-7377e8174e47"
+  computationUuid: "01a38d05-e418-87ab-9f22-de7066a06abc"
   stages:
     - stage: path
       stageUuid: "0c808bac-7612-8628-b9d3-9c94102b36e1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f9d46a92-cd0f-89a2-9ea7-b033e5969610"
     - stage: horo
-      stageUuid: "0966da7e-bc77-8f93-b904-64d371e50258"
+      stageUuid: "285df2b1-d3dc-8f37-baf9-cfa8348cf2b0"
     - stage: seal
       stageUuid: "30fad75c-ef4d-838e-9d2f-8a322a05c8e0"
     - stage: uuid
-      stageUuid: "a33f40aa-573a-8aa4-b56b-7cb9804a2716"
+      stageUuid: "79bc4373-03b7-8683-81cf-1e339776d804"
 version: 2
 ---
 # governing

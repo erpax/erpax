@@ -2,11 +2,11 @@
 name: chem
 description: "Use when reasoning about chem as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/chem"
-coordinate: "vocabulary/chem · 5/round · ef280743"
-contentUuid: "f9abc662-3891-556e-acf7-b30e58214ebc"
-diamondUuid: "7e9f4f03-52d1-8eec-8af6-9d4c1e210e22"
-uuid: "ef280743-8cf5-8eb7-aeba-d5495f10e0d3"
-horo: 5
+coordinate: "vocabulary/chem · 1/base · dec21e06"
+contentUuid: "26bd94ee-2084-54d7-806f-f3bf90ec4e00"
+diamondUuid: "08ea62e7-a1ec-8134-9e31-f9b8d529ba17"
+uuid: "dec21e06-5f7f-81bf-82b9-2638e673ea4c"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 43
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4fa095da-2c65-8065-9c3f-241a85ec49f6"
+  computationUuid: "4a83bf7b-e761-81ea-a040-84c59b936354"
   stages:
     - stage: path
       stageUuid: "3ef56192-601c-887b-b3b5-0aa45c229159"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "17cd905b-d871-8efe-945a-0c6bef619ff5"
     - stage: horo
-      stageUuid: "3b6e6196-d410-8a26-9c0c-d763f0df8152"
+      stageUuid: "70d2f219-81f7-8af7-9adc-2d95547c3115"
     - stage: seal
       stageUuid: "d4c3e565-3808-8b66-87fa-ecad38a74436"
     - stage: uuid
-      stageUuid: "99ba1821-a656-8c86-bf6a-468a7d10fdde"
+      stageUuid: "62b5d12a-1178-84af-a3a7-26ccba485411"
 version: 2
 ---
 # chem

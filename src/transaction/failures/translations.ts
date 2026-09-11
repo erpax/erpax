@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "failures",
-    "uuid": "a155a770-fd8c-87ea-9632-ba2322031ef0",
+    "uuid": "f40b9fb7-7942-8ba8-8c09-aa41f82bdd0a",
     "words": [
       "failures"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing, retrying, or auditing failed transactions — payment retries, e-invoice rejections, bank-import errors, GL-post failures — with retry count, error payload, escalation status, and SOX §404 disposition evidence. The active operator error-queue and failure-audit trail.",
-    "uuid": "7e9a5348-cc68-8526-9047-1086a7fdf345",
+    "uuid": "0b78faeb-88fa-8482-8b3a-e91b7cc99481",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "xpath",
-    "uuid": "ef534888-0894-817b-8ada-d7337db62ff4",
+    "uuid": "732644e2-0ad9-8637-9777-5a36c5c558a3",
     "words": [
       "xpath"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\"Web page element\\\".",
-    "uuid": "e07117f2-25f3-8061-a568-54c0efc48047",
+    "uuid": "8b4c3993-b4f6-8d3c-b2b0-af24d76d5162",
     "words": [
       "use",
       "when",

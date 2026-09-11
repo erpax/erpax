@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calculator",
-    "uuid": "061d5ac1-a20d-87c3-88cb-a83033d0360f",
+    "uuid": "fac4da75-d1ab-84bd-8ab4-0ce7fbf102b9",
     "words": [
       "calculator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about calculator as a medical facet of medical — vocabulary pivot to @/calculator; nested not duplicated.",
-    "uuid": "b89b1440-0159-8497-b8ce-ffc3eaa82173",
+    "uuid": "3253a3a0-b10e-86d7-bf99-2e6db0c8107b",
     "words": [
       "use",
       "when",

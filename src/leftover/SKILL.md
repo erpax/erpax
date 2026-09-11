@@ -2,11 +2,11 @@
 name: leftover
 description: "Use when reasoning about the fold's residual — the bits that did not fold into trinities of theorems. Leftovers attract by field (one proof settles the cluster), pull a seed from beyond to complete what the corpus cannot derive, and the irreducible residue powers the next research. Composes accounting/proof, gravity, and think."
 atomPath: leftover
-coordinate: "leftover · 5/round · e1f1d6ef"
-contentUuid: "ca2250ec-d364-51e0-8f8a-90528b672623"
-diamondUuid: "92eb480e-c360-8f08-be16-13159dd36f39"
-uuid: "e1f1d6ef-f500-801c-9acd-61f1a64c2bdf"
-horo: 5
+coordinate: "leftover · 4/weave · 683b20a0"
+contentUuid: "2e19b744-00ab-5f9d-959b-78443cf77699"
+diamondUuid: "a02a98b8-af71-8410-86d7-9c5fb4d64fcd"
+uuid: "683b20a0-bd47-81f0-a030-0341f3287ab9"
+horo: 4
 typography:
   partition: leftover
   bondDegree: 49
@@ -15,7 +15,7 @@ standards:
   - "src/app/(api)/api/subscriptions/create/route.ts:9:4   @compliance"
 bindings: []
 signatures:
-  computationUuid: "c424ab7e-8b81-899b-ab26-ce3aa7ac390a"
+  computationUuid: "37a69068-590d-8832-b7a4-145bdab7b374"
   stages:
     - stage: path
       stageUuid: "c8f20437-a19d-8ee9-bf3e-3fbde1997aac"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "5a4d9215-e24d-85ee-b6a8-723069b8f67e"
     - stage: horo
-      stageUuid: "f160ff81-16ce-87b8-a36c-efdea9091276"
+      stageUuid: "a27f5924-d1f5-8c0e-9a37-7c9f3adf4877"
     - stage: seal
       stageUuid: "d7f4c92d-2e26-85d2-afe0-b584398dd5ec"
     - stage: uuid
-      stageUuid: "9419b69f-d7b5-8779-a2ed-cf6e1071e72a"
+      stageUuid: "1d1a89bc-c546-8fce-a11d-4d220c35ee1c"
 version: 2
 ---
 # leftover — the fold's residual attracts, pulls from beyond, and powers the next pass

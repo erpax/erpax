@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reduction",
-    "uuid": "8a72bb54-f1a4-86a6-b2aa-10820ee9e907",
+    "uuid": "3d997433-cc68-8e51-9ef6-008fecb5d800",
     "words": [
       "reduction"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when constructing a Clay attempt rather than asserting one — the tools between theorem's reduce verdict and duel's door: proposeReduction measures a candidate against the graph WITHOUT editing it, reductionFrontier names the exact links still ungrounded (the fix list reduce only implied), problemFrontiers gives all seven as work items, jointReduction builds the 'solved at once' claim and reports that its frontier is all seven because no reduction between any two is known, and roundFromReduction bridges a FULLY GROUNDED reduction into a duel round — nothing here can set corpusSolves, which stays the literal false.",
-    "uuid": "c0d99e89-5943-8e6e-8fcb-78573d913c3f",
+    "uuid": "be27c178-1937-8bca-b69f-40f81d575ee8",
     "words": [
       "use",
       "when",

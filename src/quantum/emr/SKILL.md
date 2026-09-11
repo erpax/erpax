@@ -2,18 +2,18 @@
 name: emr
 description: "Use when reasoning about the electronic medical record as a quantum snapshot chain — a patient's health state captured as content-addressed, immutable, append-only encounters and observations, nesting layer after layer, never erased so the full history stays reversible and tamper-evident."
 atomPath: "quantum/emr"
-coordinate: "quantum/emr · 1/base · 694940a3"
-contentUuid: "3ce02208-cd60-5d96-aa57-8623f90d07b7"
-diamondUuid: "0b29e3ed-5f26-8687-b6ea-712048a8b138"
-uuid: "694940a3-cbe9-87a2-8a22-d010e0384177"
-horo: 1
+coordinate: "quantum/emr · 8/crest · 5b069e6b"
+contentUuid: "2d9cf2be-dda3-5653-b453-ae2e69bdd2d6"
+diamondUuid: "a5e14b4a-e3fa-8d54-a1b5-dc474b0d812d"
+uuid: "5b069e6b-b7b7-84da-b240-cf0951f4ffa1"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 60
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ff80f3fd-ccb8-8a7a-a0e1-f2b9c00d4c42"
+  computationUuid: "7f2cbfaf-a466-8aee-af85-e45833948d90"
   stages:
     - stage: path
       stageUuid: "ec99e960-190c-8ced-a8a5-5b79cc1f7f0b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cd2643b8-830f-872f-bc15-ce402a7c81fc"
     - stage: horo
-      stageUuid: "6f158a1b-2229-8310-88fa-fcc35d2da785"
+      stageUuid: "cbb04a8d-1024-845f-a990-165848f8caf7"
     - stage: seal
       stageUuid: "c4596230-70d3-8c75-a5a2-332349f60434"
     - stage: uuid
-      stageUuid: "e155ba94-b60a-84dc-bc3b-bd4e53d6b0f5"
+      stageUuid: "ffde4a67-f585-8865-af32-0b9f2f38e6c5"
 quantum:
   superposition:
     - akashic
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: true
     speechResults: false
-    computationUuid: "ff80f3fd-ccb8-8a7a-a0e1-f2b9c00d4c42"
-    contentUuid: "3ce02208-cd60-5d96-aa57-8623f90d07b7"
+    computationUuid: "7f2cbfaf-a466-8aee-af85-e45833948d90"
+    contentUuid: "2d9cf2be-dda3-5653-b453-ae2e69bdd2d6"
 version: 2
 ---
 # quantum/emr — the health-state snapshot chain
@@ -76,4 +76,4 @@ The layers nest: the [[record]] is a snapshot of encounters, each a snapshot of 
 
 @see [[patient]] · [[health]] · [[observation]] · [[vital]] · [[analog]] · [[record]] · [[snapshot]] · [[uuid]] · [[finality]] · [[akashic]]
 
-<sub>content-uuid `3ce02208-cd60-5d96-aa57-8623f90d07b7` · account `quantum/emr` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `2d9cf2be-dda3-5653-b453-ae2e69bdd2d6` · account `quantum/emr` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

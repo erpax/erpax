@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coincidence",
-    "uuid": "c237f428-d486-828e-bc0a-c753f046ab3b",
+    "uuid": "012e406d-75a4-8204-b5f7-b6407efd52b0",
     "words": [
       "coincidence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a research program claims its numbers match physical constants (Haramein's holographic work, the 3·6·9 / vortex literature) and asks whether that confirms it. The tool separates a THEOREM (an exact identity in a closed algebraic system) from a COINCIDENCE (a within-tolerance match, possibly fitted) — and refuses the leap from either to 'recompute all science', because a match is necessary but never sufficient.",
-    "uuid": "4cd9a8f0-08f6-8ed6-b8b9-1c5b7d5fa1cf",
+    "uuid": "c9f25f86-e3b4-83dc-a626-51df7a431616",
     "words": [
       "use",
       "when",

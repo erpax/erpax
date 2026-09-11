@@ -2,11 +2,11 @@
 name: am
 description: "Use when reasoning about am as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/am"
-coordinate: "vocabulary/am · 2/share · c3550d6a"
-contentUuid: "646043b0-5542-5672-b26a-2172734514dd"
-diamondUuid: "39422740-2d99-8212-add4-1439a829bd27"
-uuid: "c3550d6a-9696-8b13-9ba1-8f413eeb89e2"
-horo: 2
+coordinate: "vocabulary/am · 4/weave · 17223324"
+contentUuid: "d1f0f48e-9ee3-519b-96b4-f103bf4d9b54"
+diamondUuid: "3f2123cc-ff0f-803d-b928-8116568145cf"
+uuid: "17223324-d726-8511-a9f5-2619dceabece"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "93c449e3-d4a4-8f9a-9d85-f4db8fe243c1"
+  computationUuid: "6bc1864a-cc9e-8e90-9737-c3d51f5cc3db"
   stages:
     - stage: path
       stageUuid: "bdac8900-d178-89f0-bb0f-6fcd56398e27"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cfb7f073-ae67-8233-9afa-35324df8c1bf"
     - stage: horo
-      stageUuid: "d371b0dd-660d-8c9e-8f87-19ccdcfc1e9d"
+      stageUuid: "eb093023-26bb-852b-b8fa-eb0a7b5107b4"
     - stage: seal
       stageUuid: "8c3426b9-69dd-818d-8fe9-b09bd96a9fec"
     - stage: uuid
-      stageUuid: "ddf73f46-da2c-8a5e-b0e6-ce412f0452ed"
+      stageUuid: "27280b48-beab-814c-a1ff-28a5e66c7c2c"
 version: 2
 ---
 # am

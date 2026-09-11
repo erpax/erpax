@@ -2,11 +2,11 @@
 name: minutes
 description: "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection."
 atomPath: "legal/entities/audit/committees/audit/committee/minutes"
-coordinate: "legal/entities/audit/committees/audit/committee/minutes · 4/weave · 8e741aef"
-contentUuid: "0c7b0753-b18c-5d15-8e02-fa933130869b"
-diamondUuid: "7bc0c2fc-0d88-86d9-b894-5b697bb71064"
-uuid: "8e741aef-72a1-88d9-9e3b-48f7b272d7ee"
-horo: 4
+coordinate: "legal/entities/audit/committees/audit/committee/minutes · 5/round · 23369d03"
+contentUuid: "1984dc2e-83fa-5814-8ce4-5cca3c78c412"
+diamondUuid: "419b711f-ffde-8df7-b0e9-6f76cf2395c2"
+uuid: "23369d03-88f0-86ad-8555-fff24cdfb184"
+horo: 5
 typography:
   partition: legal
   bondDegree: 6
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e6170794-1c08-87cd-90e5-913fc15c37dd"
+  computationUuid: "dbadb334-f8ad-8dab-ab15-f07b56c95beb"
   stages:
     - stage: path
       stageUuid: "2dcc24ba-d36e-89ac-ac1d-52c1a9ddce7f"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "718b344a-616a-8b7f-bfbe-970fadde8efc"
     - stage: horo
-      stageUuid: "b17e1c6f-d255-888f-b5d2-f005158f8cce"
+      stageUuid: "58f2eb00-52ca-88ba-b7c9-160728515266"
     - stage: seal
       stageUuid: "ef407894-7f90-83ba-a7c2-c01cbfe55747"
     - stage: uuid
-      stageUuid: "4da919ed-3e04-88d1-8943-ddf43acdf426"
+      stageUuid: "47453598-6ede-888c-adbb-0ffaa0753cf4"
 version: 2
 ---
 # audit-committee-minutes

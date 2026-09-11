@@ -2,11 +2,11 @@
 name: move
 description: "Use when reasoning about move — A schema.org component word, collided out of schema.org compounds — fused from MoveAction (sti · collapse · merge)."
 atomPath: "vocabulary/move"
-coordinate: "vocabulary/move · 1/base · 2d873ec4"
-contentUuid: "ccee3602-9e6f-5514-8fc9-8e2ee9cf58ae"
-diamondUuid: "254b95e2-da56-8067-824b-79fd5828b098"
-uuid: "2d873ec4-c5f1-8143-93b5-d50da300e255"
-horo: 1
+coordinate: "vocabulary/move · 8/crest · be9f0be8"
+contentUuid: "4d30fd42-1a10-5d53-a81b-4bf56744946f"
+diamondUuid: "330fea88-a586-89c6-b4e3-d3985a5fdfba"
+uuid: "be9f0be8-6abc-80f5-8246-953402534945"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "270801bb-9634-8bfb-8fb3-e2f372224c08"
+  computationUuid: "c8b49dec-a668-8451-8c79-28ee6e8475b3"
   stages:
     - stage: path
       stageUuid: "502a73b9-ff8f-87d2-ad5b-dd954cc98730"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "64b40774-6685-8f23-993d-2f0f34730338"
     - stage: horo
-      stageUuid: "771711cb-6c95-862e-9b89-4bbad1200628"
+      stageUuid: "f6eaa8a3-f742-872f-ae9b-de2fcc5f521b"
     - stage: seal
       stageUuid: "694de0b1-078c-8ee5-8c1d-b07e6a21878b"
     - stage: uuid
-      stageUuid: "e0991401-8ef9-8cc3-bcea-2864b143abb6"
+      stageUuid: "d81f6274-7daa-8cb5-8e86-2180a2ba40c0"
 version: 2
 ---
 # move

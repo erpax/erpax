@@ -2,11 +2,11 @@
 name: facility
 description: "Use when reasoning about facility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/facility"
-coordinate: "vocabulary/facility · 4/weave · 29d3a4c7"
-contentUuid: "6830e995-3722-58f4-8fa3-8b21157d99a8"
-diamondUuid: "c14b375e-bc51-8db4-a6b3-50b38fd0184d"
-uuid: "29d3a4c7-a86b-8fd0-b472-cafb4a438d00"
-horo: 4
+coordinate: "vocabulary/facility · 1/base · 0ab00ecc"
+contentUuid: "5286d076-16d4-503d-aba4-b9a550989214"
+diamondUuid: "7b6bb404-72da-8a6c-8bfb-252cba075618"
+uuid: "0ab00ecc-a775-8c3e-886b-7ae821a4143c"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 34
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a4fd778e-4e5c-8734-a381-aa2b566f932c"
+  computationUuid: "dd8db0e2-2c21-8474-9a26-85113147ec5b"
   stages:
     - stage: path
       stageUuid: "e041b618-c5ec-83f0-beea-cf74b49330f4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aed95525-a82a-8884-a4ea-e722fd90bd73"
     - stage: horo
-      stageUuid: "79dc0003-eb3a-86e8-80ba-66d6a41ddea3"
+      stageUuid: "542b20a9-94a6-8419-87b7-3c81838e2b31"
     - stage: seal
       stageUuid: "452bed04-eb8d-8fed-bb15-822005674c08"
     - stage: uuid
-      stageUuid: "bad46bce-6c59-8e14-85ef-f6a411dd7e96"
+      stageUuid: "df672768-cbd6-84c4-b7dc-b7cb4e2caa8d"
 version: 2
 ---
 # facility

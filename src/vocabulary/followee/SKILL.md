@@ -2,11 +2,11 @@
 name: followee
 description: Use when reasoning about followee — A sub property of object. The person or organization being followed.
 atomPath: "vocabulary/followee"
-coordinate: "vocabulary/followee · 1/base · eff0ae20"
-contentUuid: "fd149351-3fd0-5424-b41a-fcfe1cd715de"
-diamondUuid: "0aac80a8-d319-8685-85ef-8376ad12be8d"
-uuid: "eff0ae20-04c7-8395-852f-d3eb9278d543"
-horo: 1
+coordinate: "vocabulary/followee · 7/descent · 54ebf3ff"
+contentUuid: "1c30f365-5cdb-571e-9b1c-51de89b3212b"
+diamondUuid: "63cf4458-334f-83b9-abff-2287483cb18a"
+uuid: "54ebf3ff-0573-8c09-94b3-544082923510"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "eb434111-a219-81ab-8d71-ad4d8075cfab"
+  computationUuid: "e8fbdc08-90b0-8490-bbb5-af3ee9093c48"
   stages:
     - stage: path
       stageUuid: "e51dc7a1-9222-80e9-a3e6-3f51ae6d6761"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9346002a-8baa-82b3-a7e6-489f219a4cf5"
     - stage: horo
-      stageUuid: "602e07a5-0797-8af6-b468-8b86b970bf8f"
+      stageUuid: "edb5784c-0f59-89cb-94cd-0a6c7d1e7fb4"
     - stage: seal
       stageUuid: "d9ec455c-0afc-8fcb-8096-ff093b88fbc2"
     - stage: uuid
-      stageUuid: "2c73cfde-50ed-8b2e-af5f-ec5f87b4f873"
+      stageUuid: "ed4a4a0d-9c81-8c74-a28b-98acf3ec3876"
 version: 2
 ---
 # followee

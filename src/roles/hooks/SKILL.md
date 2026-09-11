@@ -2,10 +2,10 @@
 name: hooks
 description: "Use when reasoning about the roles collection's Payload hooks — before/after change and validate logic for roles."
 atomPath: "roles/hooks"
-coordinate: "roles/hooks · 3/3 · 5d7ee91e"
-contentUuid: "0dc4b946-a2f8-5785-aa9b-a7e174e6d2e9"
-diamondUuid: "57d9cddd-b8d7-8967-8d75-4cba521d3909"
-uuid: "5d7ee91e-54c2-81be-80cc-a8276676c00a"
+coordinate: "roles/hooks · 3/3 · 0168e151"
+contentUuid: "fccef389-eacb-56cc-8b01-cc030ee93d9c"
+diamondUuid: "3f38c7a9-1f61-8d32-b71a-88ac1574a611"
+uuid: "0168e151-1c26-8181-809d-ad80dcfb9857"
 horo: 3
 typography:
   partition: roles
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fa944a80-e6c1-856f-8d7f-462e5246437f"
+  computationUuid: "8d23c9d5-7a4c-8c14-87db-357fbaac97ee"
   stages:
     - stage: path
       stageUuid: "02839d9a-f1cd-893b-bc43-fec8d475051c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fe296c2a-5f4f-8d03-9f6e-8d7f582fb17f"
     - stage: horo
-      stageUuid: "4f8ef0f4-8dfc-83d8-9587-049139001f30"
+      stageUuid: "bf7e25aa-f45f-88a7-9e4a-f94b62db0615"
     - stage: seal
       stageUuid: "e6fd3947-39ef-8c34-95c6-693670d23337"
     - stage: uuid
-      stageUuid: "e0461d3a-3db4-8720-9562-8c2664f75543"
+      stageUuid: "526cb270-ff14-8d15-8e04-9965e3186914"
 version: 2
 ---
 # roles/hooks

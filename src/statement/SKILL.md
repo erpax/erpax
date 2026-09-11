@@ -2,11 +2,11 @@
 name: statement
 description: "Use when reasoning about statement — A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g"
 atomPath: statement
-coordinate: "statement · 5/round · 94650949"
-contentUuid: "132554bc-27eb-59eb-a3a9-759c2a9f2bf7"
-diamondUuid: "abd141be-213d-8f45-a008-3cb31536cc11"
-uuid: "94650949-77dd-87f5-af03-0aea563eb6e0"
-horo: 5
+coordinate: "statement · 8/crest · 1bad3f5b"
+contentUuid: "f0d8c09b-71d6-5bb7-b4b1-0f18432f86a3"
+diamondUuid: "ca1300a9-7eed-8000-87bd-8034d0c04ca9"
+uuid: "1bad3f5b-8d23-893e-a7a8-51cc4a608c30"
+horo: 8
 typography:
   partition: statement
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ff19296f-d3c1-842c-9a5b-be38b1c2d37a"
+  computationUuid: "fbc3cb0a-16a1-8bc8-94f5-a6f4433a35a5"
   stages:
     - stage: path
       stageUuid: "3278c8c5-bfd0-8b73-b5c6-553d494e6583"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a8ec3652-8e19-845c-8227-47c45d6bb4ee"
     - stage: horo
-      stageUuid: "8f62e862-a56a-8534-a3fa-3603b8ef372a"
+      stageUuid: "6262c6e3-2698-8ef1-bccc-00917e684d14"
     - stage: seal
       stageUuid: "d88e5b96-a507-82c6-a6ba-50d06959366b"
     - stage: uuid
-      stageUuid: "b6021514-e157-8eee-ac96-582d4f333c80"
+      stageUuid: "cf557f93-f600-8548-ace9-12b9abe11682"
 version: 2
 ---
 # statement

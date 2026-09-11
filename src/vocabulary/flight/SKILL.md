@@ -2,10 +2,10 @@
 name: flight
 description: Use when reasoning about flight — An airline flight.
 atomPath: "vocabulary/flight"
-coordinate: "vocabulary/flight · 2/share · bce8c7f3"
-contentUuid: "f42bb3de-231a-5455-9fff-5b991358d787"
-diamondUuid: "d38013b1-a7f9-84fc-bd81-403b47f9811d"
-uuid: "bce8c7f3-943b-8462-9738-ab06126f99b2"
+coordinate: "vocabulary/flight · 2/share · 8244486a"
+contentUuid: "c494b80f-2d62-5b01-8c5e-e322947f6b65"
+diamondUuid: "579c5f05-b18b-8f75-8974-787f666e985a"
+uuid: "8244486a-24de-8f18-bf07-0f0b5a025307"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4b08f63e-a696-8cd1-904f-59ac35786e09"
+  computationUuid: "4a98d4ea-34d0-814d-9a64-089b231a37c9"
   stages:
     - stage: path
       stageUuid: "c9592d64-ae1b-8b40-bf67-f110baa42ee0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "35b859ff-e4f9-88d8-88cf-92aa66e9b60f"
     - stage: horo
-      stageUuid: "efba98f8-f496-82cb-aeea-0f1385a34826"
+      stageUuid: "15c3b97c-56b2-8976-a7a1-abac81ea8bae"
     - stage: seal
       stageUuid: "5e628fc9-fa14-8014-b15e-3a5da84dbad5"
     - stage: uuid
-      stageUuid: "fd7e8e8f-95fe-8b52-a8e3-755fd2de2dcc"
+      stageUuid: "6d038738-33e5-855f-abdf-2e45e6c85aad"
 version: 2
 ---
 # flight

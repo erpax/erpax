@@ -2,11 +2,11 @@
 name: import
 description: "Use when reasoning about quantum computed import — barrel entanglement derived from each file's live import/wikilink set, never hand-annotated; deep paths are escapes that collapse to @/x."
 atomPath: "quantum/import"
-coordinate: "quantum/import · 5/round · c28c937f"
-contentUuid: "a9b63d45-78be-53e6-854f-34c22f023eaf"
-diamondUuid: "ccbd978e-371f-8af3-a56f-0f2fe0525dee"
-uuid: "c28c937f-0f14-8fbc-a7c2-481e9c399815"
-horo: 5
+coordinate: "quantum/import · 4/weave · f674e7e4"
+contentUuid: "d85d427a-6d2e-543c-ab62-79b945469ac9"
+diamondUuid: "f294ba5c-09ec-813e-9991-02d811b4ab15"
+uuid: "f674e7e4-1b1b-8f68-8e35-218afb10e48f"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 42
@@ -14,7 +14,7 @@ standards:
   - the import graph is the config — barrels are the only public faces
 bindings: []
 signatures:
-  computationUuid: "4a43b69d-8c25-8deb-a71f-8b5e52c6af8c"
+  computationUuid: "ad52c022-d754-8ada-9a52-a43a5a6d5913"
   stages:
     - stage: path
       stageUuid: "a3cf8055-9cf4-8ed4-8537-61238f0800fd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1fecd6c9-6520-841a-b1be-2d88a5b3abf5"
     - stage: horo
-      stageUuid: "1d4ec9da-fa21-825f-8b1c-538f791f3c4f"
+      stageUuid: "0a7fa625-0254-8bd6-bc8a-3ec63f372559"
     - stage: seal
       stageUuid: "71e7a4b7-c645-85ca-bdf0-400ffa8928a6"
     - stage: uuid
-      stageUuid: "10b34f35-6e7c-87d5-b1c8-a6604bf34d0d"
+      stageUuid: "949873ad-3213-816d-946c-639e7ddae078"
 quantum:
   superposition:
     - cost
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "4a43b69d-8c25-8deb-a71f-8b5e52c6af8c"
-    contentUuid: "a9b63d45-78be-53e6-854f-34c22f023eaf"
+    computationUuid: "ad52c022-d754-8ada-9a52-a43a5a6d5913"
+    contentUuid: "d85d427a-6d2e-543c-ab62-79b945469ac9"
 version: 2
 ---
 # quantum/import — quantum **computed** import
@@ -73,4 +73,4 @@ Composes [[quantum/boundary]] · [[convention]]/import · [[tamper]]/import · [
 @audit import set = parseTsImports / parseSkillImports — computed live
 @standard the import graph is the config — barrels are the only public faces
 
-<sub>content-uuid `a9b63d45-78be-53e6-854f-34c22f023eaf` · account `quantum/import` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `d85d427a-6d2e-543c-ab62-79b945469ac9` · account `quantum/import` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

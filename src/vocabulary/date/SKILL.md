@@ -2,18 +2,18 @@
 name: date
 description: "Use when a document carries a temporal point — invoice date, transaction date, period-end date, expiry date, created-at, effective-at. An ISO-8601 datetime pinned at a point in time (the UTC timestamp + timezone context via versions). The temporal positioning twin of period."
 atomPath: "vocabulary/date"
-coordinate: "vocabulary/date · 7/descent · dc61d34b"
-contentUuid: "0c4caee2-4ba3-5ec2-824e-9c27d2daa3ca"
-diamondUuid: "302ae5f5-4d97-8f53-b20f-080eb830a882"
-uuid: "dc61d34b-015e-8cfb-9adf-1c3808c8cacc"
-horo: 7
+coordinate: "vocabulary/date · 5/round · 99d623fc"
+contentUuid: "1a3982d2-7209-5417-b299-e18110d662d7"
+diamondUuid: "4dbbc63f-5565-80bd-bd81-a8b390e2553c"
+uuid: "99d623fc-108d-8a46-9fc8-5032d37cde10"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 118
 standards: []
 bindings: []
 signatures:
-  computationUuid: "867e21f7-d2e7-88e1-bb36-72d5c4714b22"
+  computationUuid: "fee7a473-c9e6-8bfb-a217-aaef9378f613"
   stages:
     - stage: path
       stageUuid: "9a7c6771-dac1-81c6-8efb-e6353854c55e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "44b68593-6323-8d42-a1d1-c4f0312c14ef"
     - stage: horo
-      stageUuid: "a5415832-2aa1-886f-92a6-f0827b5274cd"
+      stageUuid: "528ae78b-3da2-8267-9cd0-f823770222d3"
     - stage: seal
       stageUuid: "c637e1f0-a44e-85a7-bc87-b662ad54ea8d"
     - stage: uuid
-      stageUuid: "595ddde8-efe9-8996-9781-fab96c39fb30"
+      stageUuid: "b6592b91-e0b4-82d1-8810-e7ef64cadaae"
 version: 2
 ---
 # date

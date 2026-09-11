@@ -2,11 +2,11 @@
 name: duplicate
 description: "Use when reasoning about duplicate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/duplicate"
-coordinate: "vocabulary/duplicate · 1/base · 01a0db2c"
-contentUuid: "cd7cf3ba-2379-52e0-9c66-08ce8f729218"
-diamondUuid: "36b2f941-7b53-8dcd-b6c2-ff07a5366167"
-uuid: "01a0db2c-d36a-8eea-9a89-fdab249773e6"
-horo: 1
+coordinate: "vocabulary/duplicate · 2/share · 39251738"
+contentUuid: "9a0d2723-ed82-5c22-95ac-5c0b9946fd0d"
+diamondUuid: "401db914-e5aa-8300-9715-03d9b68d9434"
+uuid: "39251738-251b-86aa-bee9-fcc3e0f567e8"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "693bb184-f0ea-87e6-8fc3-f51839bb199f"
+  computationUuid: "56024457-f4e7-8875-91b1-b62b09ee2073"
   stages:
     - stage: path
       stageUuid: "b883bd6b-d5b6-881e-89ab-c735b491f3a4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4093ce31-cfed-8080-b1e4-c84483f54e73"
     - stage: horo
-      stageUuid: "fb22758e-fd6a-8297-bdd6-205e4f78e1ae"
+      stageUuid: "67a4c914-b4a3-8901-9dca-4507fba21f13"
     - stage: seal
       stageUuid: "1725634b-ae74-81f6-ae01-b0434702243e"
     - stage: uuid
-      stageUuid: "1577e194-7e75-8f60-89cd-3d7de21c7ad4"
+      stageUuid: "6d42ef10-f0e2-8d13-814e-3f858baf11c1"
 version: 2
 ---
 # duplicate

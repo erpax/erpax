@@ -2,11 +2,11 @@
 name: how
 description: Use when reasoning about how — Instructions that explain how to achieve a result by performing a sequence of steps.
 atomPath: "vocabulary/how"
-coordinate: "vocabulary/how · 7/descent · c21eea5a"
-contentUuid: "2b6d5995-0a42-57f1-870c-4560fc52ea2c"
-diamondUuid: "ca3499e9-44a0-8d9f-8011-e4522dacbee3"
-uuid: "c21eea5a-67b1-823c-a10c-b238576f2ca7"
-horo: 7
+coordinate: "vocabulary/how · 1/base · 95d1f7b2"
+contentUuid: "11df539e-e83f-5f9c-948a-03cf2ba40339"
+diamondUuid: "c97cf78f-20e3-819e-8723-8943fbab7e0d"
+uuid: "95d1f7b2-2505-8f13-87c1-12ac7aa491e0"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "765b5bd1-049e-844c-9b6a-393d691f71e7"
+  computationUuid: "31b4cde5-3baa-83a1-afc2-3145291f8b35"
   stages:
     - stage: path
       stageUuid: "5dfea3c1-5085-83c8-817f-6003d19cb5f8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "226e11ce-ed42-82fe-b4ee-52a535f3c78a"
     - stage: horo
-      stageUuid: "c8b28841-664d-8de1-920b-fb78037c51ef"
+      stageUuid: "74498095-2db7-82ca-ba23-5e57f6ee1347"
     - stage: seal
       stageUuid: "ff9ee946-d807-8c8e-8ac0-24c7ea120326"
     - stage: uuid
-      stageUuid: "8061ef7a-6826-8e65-98b9-8f6e2a01e465"
+      stageUuid: "a244db2f-f45e-8f6f-9eea-7f6405bf4f37"
 version: 2
 ---
 # how

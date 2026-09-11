@@ -2,18 +2,18 @@
 name: indemnity
 description: "Use when one party agrees to compensate another for loss/liability arising from specified events — indemnifier, indemnitee, indemnified party, trigger (third-party claims, breach, negligence), scope, caps, procedure."
 atomPath: "vocabulary/indemnity"
-coordinate: "vocabulary/indemnity · 2/share · 681412b0"
-contentUuid: "ec649c4d-728f-53aa-ae48-ad08fff7e934"
-diamondUuid: "886ff15b-ab33-8368-af64-822b64a8cbbd"
-uuid: "681412b0-e478-8533-801c-64002943cad9"
-horo: 2
+coordinate: "vocabulary/indemnity · 4/weave · 47236915"
+contentUuid: "fb284ff9-6827-5392-b069-09dcfa699e12"
+diamondUuid: "339de2e6-aa20-8edc-9855-42e6893092bf"
+uuid: "47236915-c421-84e6-bfc0-a10224e35282"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 22
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4ebbc200-b5e1-8251-a808-468cfc9146ea"
+  computationUuid: "f86e12f9-d895-89c6-964f-53b620e41a1a"
   stages:
     - stage: path
       stageUuid: "0209187a-63d0-8558-8b01-7ff96252448f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c982f55f-ddff-8409-b9aa-ef66a541c5f8"
     - stage: horo
-      stageUuid: "ec250f91-2deb-89dd-b4f1-32f915dcb73a"
+      stageUuid: "ca8c3dd1-ca95-87c4-b0bc-8a0b8cdd47bb"
     - stage: seal
       stageUuid: "045a9d2b-b524-898d-b1da-d7ee1c280b84"
     - stage: uuid
-      stageUuid: "1e60c319-b165-82a3-8bf3-be3b7d1fc9ea"
+      stageUuid: "a5476e61-8c8a-8f2a-b1f1-b9039a6f9be1"
 version: 2
 ---
 # indemnity

@@ -2,11 +2,11 @@
 name: social
 description: "Use when reasoning about social as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: social
-coordinate: "social · 8/crest · 8e4e2ec2"
-contentUuid: "be7c609f-c404-5b3c-9063-d817f2692c67"
-diamondUuid: "a5185e57-0687-8ca4-9762-180cdbfcfecb"
-uuid: "8e4e2ec2-53c3-8e92-a892-9539a44f381e"
-horo: 8
+coordinate: "social · 2/share · 92c3ca3a"
+contentUuid: "e5deb4de-a20c-58b6-ba8e-c533fcb39bf6"
+diamondUuid: "a2498eea-bb29-8bf7-bde7-6916f2aa5c34"
+uuid: "92c3ca3a-9447-80b0-b780-003d5c90c38a"
+horo: 2
 typography:
   partition: social
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "45764d63-cc78-884a-93c0-cbc83724f479"
+  computationUuid: "ee6c9d36-35f6-8ebe-a210-536a92e2d6c4"
   stages:
     - stage: path
       stageUuid: "60179ff0-b3d2-81c9-a334-3e328dd6e5f9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "112fc286-0354-8132-934d-7341851d31c7"
     - stage: horo
-      stageUuid: "a31377a0-2d93-8caf-822a-12edfca49de8"
+      stageUuid: "ea5b8814-b580-813b-8f43-e36c3103d1ad"
     - stage: seal
       stageUuid: "c37df172-d403-8c23-bc74-26294acba39f"
     - stage: uuid
-      stageUuid: "66467011-d9ca-8ebc-9274-f95091eacae9"
+      stageUuid: "dc93e351-ec0c-8191-bf76-75f237696608"
 version: 2
 ---
 # social

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "policy",
-    "uuid": "541f18d7-174f-8692-bb58-f2345367e4d5",
+    "uuid": "f05ba7f8-27e0-8f5d-932b-f05fd4752b01",
     "words": [
       "policy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deriving the max-work/max-tamper policy that bounds a wave schedule — units per wave, wave depth, and the tamper-cost floor a plan must clear. The policy is the single place those ceilings are decided, so a schedule never hardcodes its own limits.",
-    "uuid": "2e7e4913-7726-835f-b05d-6f3c302ec0d8",
+    "uuid": "203c07a7-d06c-8dce-8a2a-42477c132d21",
     "words": [
       "use",
       "when",

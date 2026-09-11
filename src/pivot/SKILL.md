@@ -2,11 +2,11 @@
 name: pivot
 description: "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for readme."
 atomPath: pivot
-coordinate: "pivot · 7/descent · b58dd821"
-contentUuid: "d5376bc9-afef-58f0-8066-76bf4935e3b7"
-diamondUuid: "4eaa0518-975c-8ef4-9991-a7ed440007ba"
-uuid: "b58dd821-e671-853d-a40b-b5a4380861a5"
-horo: 7
+coordinate: "pivot · 8/crest · 86093b12"
+contentUuid: "08c8fcee-da95-5e08-b4e1-4bf8904def82"
+diamondUuid: "f1b63278-a236-8f1c-b5a3-0a11314eeed5"
+uuid: "86093b12-9270-8886-9efd-146a465d9bf8"
+horo: 8
 typography:
   partition: pivot
   bondDegree: 29
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ff6507f6-c6fe-88cf-a713-a36638d97256"
+  computationUuid: "095e43a2-ac72-8709-b326-6a7140c8d204"
   stages:
     - stage: path
       stageUuid: "673469fc-07e9-8993-85b6-5728bb6601fd"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "af06716f-50d6-84b8-a7b7-066fee33cf39"
     - stage: horo
-      stageUuid: "26615da2-3043-836c-a475-5fc61dcad4dc"
+      stageUuid: "e5a83cdd-6a92-8c7b-9411-525ed20beb6d"
     - stage: seal
       stageUuid: "f3cc23a7-9393-851c-ba88-683634c29e9f"
     - stage: uuid
-      stageUuid: "a7c9209b-8eaf-85a3-ba8a-2a46365f4cb2"
+      stageUuid: "3b1c48df-223a-8427-8020-a87c05d115a0"
 version: 2
 ---
 # pivot — cross-tab state statistics for README models

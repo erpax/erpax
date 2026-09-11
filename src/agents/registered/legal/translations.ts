@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "legal",
-    "uuid": "abf4b04a-c0b1-8f8d-addd-fad1b351d220",
+    "uuid": "01577e92-8eee-8b0f-b188-74806d26d58e",
     "words": [
       "legal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about legal — Use for the legal agent and its conflict-of-interest check — the matter-side agent plus the guard that must run before it acts.",
-    "uuid": "5dc9c8ef-00cb-8760-a42d-c7584b080004",
+    "uuid": "63c6cc31-8279-8d67-95c0-86b83ee51220",
     "words": [
       "use",
       "when",

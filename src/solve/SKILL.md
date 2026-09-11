@@ -2,11 +2,11 @@
 name: solve
 description: "Use when reasoning about solve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: solve
-coordinate: "solve · 4/weave · 672f8c99"
-contentUuid: "bd666e8c-7f92-591b-8b4a-3b6a585a12de"
-diamondUuid: "4aaa6022-9e2d-817d-8a78-192c83b377c0"
-uuid: "672f8c99-64d0-85c0-a5d0-f760f57441f4"
-horo: 4
+coordinate: "solve · 2/share · 5c89edb0"
+contentUuid: "3d1b1aaa-daef-558c-9572-f6360c1666ae"
+diamondUuid: "90725016-a350-85dd-8412-fec06b7ef9fb"
+uuid: "5c89edb0-fa47-86c1-a79d-55fcc0049593"
+horo: 2
 typography:
   partition: solve
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b8599239-1057-8f8d-bf79-6a2a73106816"
+  computationUuid: "97bbf838-4c46-8ee1-a9f4-2e35223d2b10"
   stages:
     - stage: path
       stageUuid: "9794dd42-9120-8216-950d-ead7a9a8a88c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "76ca4178-5866-8f8e-8ade-b45a878a2e12"
     - stage: horo
-      stageUuid: "fa4b2624-1f54-8c86-a71a-78f26398cb8f"
+      stageUuid: "d8743b98-67c8-8068-ac77-b9d696b2a212"
     - stage: seal
       stageUuid: "625b6d8b-c9d1-8a8d-9485-b771a11916d5"
     - stage: uuid
-      stageUuid: "f55b03b0-4302-8380-a5b2-a5c55e37e742"
+      stageUuid: "b99fecf2-0c77-8b0a-a6a0-2193576ce349"
 version: 2
 ---
 # solve

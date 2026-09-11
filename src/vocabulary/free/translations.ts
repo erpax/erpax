@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "free",
-    "uuid": "365df44a-68c4-8123-9fb6-2b37ccdd05b9",
+    "uuid": "e000a7d1-9d07-8121-8702-3d1a2016135c",
     "words": [
       "free"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about free — A flag to signal that the item, event, or place is accessible for free.",
-    "uuid": "80f243c8-32ee-83d5-8481-78b568b45493",
+    "uuid": "81289516-1da8-85fd-a4cb-bb4e09e7b6c2",
     "words": [
       "use",
       "when",

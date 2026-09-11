@@ -2,11 +2,11 @@
 name: "5305"
 description: "Use when implementing or referencing UN/CEFACT 5305 — Duty / Tax / Fee Category Code."
 atomPath: "un/cefact/5305"
-coordinate: "un/cefact/5305 · 5/round · ee4dcd01"
-contentUuid: "835f5851-5628-55b1-a827-549062ddf943"
-diamondUuid: "c710fa56-c0ad-82a6-97e6-fcddbf8a05a0"
-uuid: "ee4dcd01-0394-8487-bc29-58de3507c25b"
-horo: 5
+coordinate: "un/cefact/5305 · 2/share · 122ea022"
+contentUuid: "79e32fe7-6024-55ac-96ca-7ed83a837839"
+diamondUuid: "373f8fab-9603-83c1-bba6-cd8baa8e0108"
+uuid: "122ea022-5961-8d88-a2be-8af4c5c953a5"
+horo: 2
 typography:
   partition: un
   bondDegree: 6
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e765658b-26f6-8165-ad07-c7c57f8c6da2"
+  computationUuid: "a274cf43-ea2d-8f71-9305-9a4a11baa34f"
   stages:
     - stage: path
       stageUuid: "6164a2b6-457f-8f8f-a8c7-c4a5eb0eb8cb"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "fa109c91-aa7f-86ef-8df7-58dd65ee0f53"
     - stage: horo
-      stageUuid: "af6b2003-ea00-8b7c-a77b-63a800b158f9"
+      stageUuid: "e6bb1fc1-cb61-834d-95cb-f59730bc5def"
     - stage: seal
       stageUuid: "2dbaffc4-77cd-8dfa-91b5-9f0541269636"
     - stage: uuid
-      stageUuid: "49d91f3b-d488-8572-9162-f038eda57e12"
+      stageUuid: "b3f3c51f-f27d-89ca-9119-4cfc2cd79e1a"
 version: 2
 ---
 # UN/CEFACT 5305 — Duty / Tax / Fee Category Code

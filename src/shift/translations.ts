@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shift",
-    "uuid": "7dccc79b-6f2f-8461-8d27-5da0e878bc99",
+    "uuid": "ef1ae43e-9792-8e99-8fea-4cdeecdc9260",
     "words": [
       "shift"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling a span of worked time — the per-actor-day labour unit a work order's produced minutes roll up into, and the authority it reads efficiency and wage back down from. The singular of the work-shifts aggregate.",
-    "uuid": "43f6032b-3215-80ba-b79f-4509552b467c",
+    "uuid": "b378ae02-3985-849f-8e91-4048be6d09c4",
     "words": [
       "use",
       "when",

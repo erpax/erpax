@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "majeure",
-    "uuid": "1acdcab4-3055-8d2a-9178-b877c5ad8a07",
+    "uuid": "6082be9e-4e26-8ede-aa28-500f5feca157",
     "words": [
       "majeure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing).",
-    "uuid": "b924e50a-57a3-8090-aac7-725009be0b5c",
+    "uuid": "80834a9d-c0c6-8836-bdc4-ddf6c09dfd78",
     "words": [
       "use",
       "when",

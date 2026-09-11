@@ -2,10 +2,10 @@
 name: confirmation
 description: "Use when reasoning about confirmation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/confirmation"
-coordinate: "vocabulary/confirmation · 4/weave · db62f33d"
-contentUuid: "acdcb249-0755-5f14-88eb-58667270d9db"
-diamondUuid: "09101259-876e-83dd-9056-7f44cf300453"
-uuid: "db62f33d-a009-8993-8410-0b10cd3ade9e"
+coordinate: "vocabulary/confirmation · 4/weave · 317a131d"
+contentUuid: "8ef1a7a4-3c84-58cb-b869-c12ba5e1cede"
+diamondUuid: "b156efc5-e877-8de9-a9e3-99b5501dd34f"
+uuid: "317a131d-5e35-8b36-bad4-09c2191fad71"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "de3ff76d-f00a-8718-a46c-4c0d8008f4cc"
+  computationUuid: "6290c42a-1986-827f-8f90-91ad1a96309b"
   stages:
     - stage: path
       stageUuid: "1f9b3ed0-2bc9-830a-8af1-bf5c82244e0a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "58e8899b-8277-8c69-8924-37a639fc0ff7"
     - stage: horo
-      stageUuid: "d472c2a8-0f52-8725-ae6f-4af07ace2f99"
+      stageUuid: "5c892204-04cf-855d-bade-e85791f4a898"
     - stage: seal
       stageUuid: "5538d87d-b588-8746-b7d7-ea0e5c71a405"
     - stage: uuid
-      stageUuid: "29f49d51-5b26-85e3-b8f2-6c6f95aa4ded"
+      stageUuid: "386c0942-a328-82e4-af1b-1887a772ba4a"
 version: 2
 ---
 # confirmation

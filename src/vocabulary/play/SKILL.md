@@ -2,11 +2,11 @@
 name: play
 description: "Use when reasoning about play — A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would"
 atomPath: "vocabulary/play"
-coordinate: "vocabulary/play · 5/round · 17ce7cb1"
-contentUuid: "53666f1c-2f7f-5d90-b1c7-7b475e041a46"
-diamondUuid: "5f456039-6a5f-88b0-b580-9b65f9a40092"
-uuid: "17ce7cb1-8219-80f4-8bed-f3f0195fde45"
-horo: 5
+coordinate: "vocabulary/play · 8/crest · 61544f1b"
+contentUuid: "5e76f06b-747b-51a1-a4c7-7d3f0bd9dbaf"
+diamondUuid: "0d61e028-6e08-8413-b70e-207a7d6a7f1c"
+uuid: "61544f1b-da97-8d30-8fe1-a68a421f0f7e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b73b8bed-45bd-8db9-9867-7783460dfb21"
+  computationUuid: "505f5722-6082-81ea-95a0-11a42e533af1"
   stages:
     - stage: path
       stageUuid: "d24057fc-ca64-88f3-96df-d3139dfabf2b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6ac17572-8769-88d2-b4e5-56802f016047"
     - stage: horo
-      stageUuid: "19deaed0-8f39-80f4-8053-f32908f97dd8"
+      stageUuid: "689893a3-2e34-82fa-81af-af3a95ecd52b"
     - stage: seal
       stageUuid: "bf7f3010-d01f-8af1-9e70-867cd4ce5058"
     - stage: uuid
-      stageUuid: "a789ddde-6d61-866e-bc48-4875cbc28e07"
+      stageUuid: "dae5590e-5662-8a32-bbca-3dbccecc2823"
 version: 2
 ---
 # play

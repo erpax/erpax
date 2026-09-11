@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "redirects",
-    "uuid": "15dc98d0-76fd-8cfa-8086-249e4da77fe3",
+    "uuid": "a748b1b2-9830-8c4c-af63-3362afcef254",
     "words": [
       "redirects"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \\\"not assignable to CollectionSlug\\\" (the plugin isn't registered).",
-    "uuid": "fc7736a9-2aa8-863e-966e-30ffa895ef1f",
+    "uuid": "76fcac67-e41f-802c-b1c4-0b979ead07e0",
     "words": [
       "use",
       "when",

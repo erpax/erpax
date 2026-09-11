@@ -2,10 +2,10 @@
 name: location
 description: "Use when reasoning about location as a anatomical part of body — vocabulary pivot to @/location; nested not duplicated."
 atomPath: "body/location"
-coordinate: "body/location · 1/base · 7cd23258"
-contentUuid: "b7b7e6cf-4ab1-50c4-9980-ff4120615aef"
-diamondUuid: "451bdf57-fd3e-8421-8c64-7da8f3c11b76"
-uuid: "7cd23258-6d53-8ec8-91c2-a9eb859d5497"
+coordinate: "body/location · 1/base · de387e0a"
+contentUuid: "5b702796-632c-59e7-b7c2-b2d4f60692d5"
+diamondUuid: "d11b33d5-7d62-80ee-85a4-16716bfb3e64"
+uuid: "de387e0a-f8a3-8775-b400-c5357cb2a79a"
 horo: 1
 typography:
   partition: body
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2086585e-057e-8a0d-970e-c1def45ff4b0"
+  computationUuid: "db3ba8af-a55c-84d1-b029-ee551f2229a7"
   stages:
     - stage: path
       stageUuid: "50f4b786-823b-8cd5-a456-79797c7829bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "696a4ec5-ed6c-885d-9ff4-bf8f457fc2bb"
     - stage: horo
-      stageUuid: "1f397d93-36f6-8aa8-a5ea-4d6613c31f5c"
+      stageUuid: "abcebaa6-9d54-89b1-aaf9-5a6e900f1196"
     - stage: seal
       stageUuid: "cf2efc0a-f729-84f8-ba85-9f2eab73a132"
     - stage: uuid
-      stageUuid: "4f58285d-ef31-8fc1-ac45-618f892efa27"
+      stageUuid: "3f5f2d13-ca37-8e37-bef3-f9d80cf6c219"
 version: 2
 ---
 # body/location — anatomical part

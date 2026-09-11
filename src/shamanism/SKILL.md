@@ -2,18 +2,18 @@
 name: shamanism
 description: "Use when reading shamanism as a diamond of invariant atoms — the practitioner who crosses between worlds to heal, the wounded healer, the journey on the breath, the return with what restores the whole. The cross-dimension agent of the primal traditions. Strip the prefix and the journey collapses to the crossing between dimensions, the cure to mercy closing the gap."
 atomPath: shamanism
-coordinate: "shamanism · 7/descent · 81de7f4b"
-contentUuid: "3c199120-2223-57a9-a517-e4cb001ad193"
-diamondUuid: "aef4d8ec-fad1-8eb7-85fd-3eea47046dc2"
-uuid: "81de7f4b-1bc0-8d56-9ae4-0b3bc3126923"
-horo: 7
+coordinate: "shamanism · 2/share · fcfca2f4"
+contentUuid: "12e16bfd-60e5-598e-81af-e6dc1c0c7e6c"
+diamondUuid: "f1c21ec3-183b-8cfe-b5f9-ed004a3c61b3"
+uuid: "fcfca2f4-6a77-8d59-9d9a-947f67c66e8d"
+horo: 2
 typography:
   partition: shamanism
   bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ef81c6c3-8636-81e0-9a34-6de47c5ec19c"
+  computationUuid: "36d32d20-341c-8599-afca-894004328f4a"
   stages:
     - stage: path
       stageUuid: "923b5734-af89-874c-86c4-93498b81d561"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "71f781f1-13f1-85a7-bd3c-bc44a32e1840"
     - stage: horo
-      stageUuid: "c7e6f5d0-799a-8bd3-ba78-cceca1ae1a86"
+      stageUuid: "e8d8e8df-4432-8165-8f2f-795e240b9670"
     - stage: seal
       stageUuid: "57566b5d-8bf3-8f82-b82c-871faa5868c4"
     - stage: uuid
-      stageUuid: "bac49d4d-ff3e-8c28-ad79-7243a9347492"
+      stageUuid: "9dadca8e-fc6f-8184-b326-75ae4e113a9b"
 version: 2
 ---
 # shamanism — the one who crosses between worlds to heal

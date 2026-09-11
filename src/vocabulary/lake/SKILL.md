@@ -2,11 +2,11 @@
 name: lake
 description: "Use when reasoning about lake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lake"
-coordinate: "vocabulary/lake · 5/round · 61ef5b32"
-contentUuid: "c411ffdf-a114-51b8-b9b0-34e23f249298"
-diamondUuid: "63003e02-cce2-815b-aef5-aa81575c85db"
-uuid: "61ef5b32-5516-8a74-a645-ab02ea1cdcd7"
-horo: 5
+coordinate: "vocabulary/lake · 8/crest · 2b44fc07"
+contentUuid: "5a812cd6-8520-59bc-99a9-09e1338e1efb"
+diamondUuid: "7c32c195-1b29-8c71-a614-443d26422cec"
+uuid: "2b44fc07-64cb-8df2-a8a3-ea9d1162da76"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c608112e-0222-8e48-8832-4f0132c79629"
+  computationUuid: "92232c77-d411-8ea9-8b22-5b5c59343342"
   stages:
     - stage: path
       stageUuid: "f3358450-b438-865e-9a00-287287f64c4b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e133fcbc-928d-8784-9704-3c13641421d5"
     - stage: horo
-      stageUuid: "2f708a4e-071c-8bc4-92cc-ff93bf184eb8"
+      stageUuid: "e023a203-d381-8668-bc46-6389ccef0e5e"
     - stage: seal
       stageUuid: "52d29a36-fa10-8042-a824-554f8d2a8b3c"
     - stage: uuid
-      stageUuid: "5b71977f-e8e8-80df-80fe-8ea0ffdcef03"
+      stageUuid: "3a8e7d8f-8498-8061-807f-48c77920768a"
 version: 2
 ---
 # lake

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "context",
-    "uuid": "dd2ae101-69b4-8e93-8a11-fee6988f3baa",
+    "uuid": "26065015-31b9-88a9-9ea2-7bcdb22c72fd",
     "words": [
       "context"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about context — createAgentContext — the ONE place an AgentContext is assembled.",
-    "uuid": "4f29e407-30f2-81e5-85c2-b691ad8374df",
+    "uuid": "d660e7b2-4fd7-8eaa-9a9b-9be0c020eb47",
     "words": [
       "use",
       "when",

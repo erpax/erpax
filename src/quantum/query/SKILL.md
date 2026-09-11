@@ -2,11 +2,11 @@
 name: query
 description: "Use when caching or deduping queries by identity — a normalized query string hashes to a content-uuid, so the same query shares one identity and a change invalidates by content-address."
 atomPath: "quantum/query"
-coordinate: "quantum/query · 8/crest · 7de9ee32"
-contentUuid: "86b88b29-a37e-5b28-85ee-1d85be4d1f48"
-diamondUuid: "79efd81f-37e2-828c-8dca-200da27e8bbe"
-uuid: "7de9ee32-6890-8876-ba8d-a0a0c0df27b8"
-horo: 8
+coordinate: "quantum/query · 5/round · 0a281c20"
+contentUuid: "7e21a6a2-449f-5893-af61-5e2fcd8a7fd1"
+diamondUuid: "edeb2d0a-c9c0-86e1-bde3-ade15168d253"
+uuid: "0a281c20-6950-881c-9a44-635913e75612"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid (the query cache key)"
 bindings: []
 signatures:
-  computationUuid: "163ff0ae-bedc-8128-b9ce-c91ae66022a2"
+  computationUuid: "7e3fdfa8-fedc-89c0-9957-610f1f03b711"
   stages:
     - stage: path
       stageUuid: "0c84584d-2b45-867f-aa29-37ccff0fbacd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "092d754e-7f25-8c4a-b5bd-6871334429c2"
     - stage: horo
-      stageUuid: "b7cf2773-ea34-8848-a11e-cb411e41aa75"
+      stageUuid: "cec2f65a-aec8-8026-8eda-7c069d496e3d"
     - stage: seal
       stageUuid: "885faca4-5922-838b-865e-6e78c21e45ea"
     - stage: uuid
-      stageUuid: "f7a75013-c1fe-8071-896c-6a4d25662c56"
+      stageUuid: "b49da1e6-28b0-8bbd-a89c-9d2be6840eea"
 quantum:
   superposition:
     - engine
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "163ff0ae-bedc-8128-b9ce-c91ae66022a2"
-    contentUuid: "86b88b29-a37e-5b28-85ee-1d85be4d1f48"
+    computationUuid: "7e3fdfa8-fedc-89c0-9957-610f1f03b711"
+    contentUuid: "7e21a6a2-449f-5893-af61-5e2fcd8a7fd1"
 version: 2
 ---
 # quantum/query — a query as a content-uuid
@@ -65,4 +65,4 @@ Matter-twin: `src/quantum/query/index.ts` (`queryUuid` · `sameQuery`). Composes
 
 @standard RFC 9562 §5.8 content-uuid (the query cache key)
 
-<sub>content-uuid `86b88b29-a37e-5b28-85ee-1d85be4d1f48` · account `quantum/query` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `7e21a6a2-449f-5893-af61-5e2fcd8a7fd1` · account `quantum/query` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

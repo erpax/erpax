@@ -2,11 +2,11 @@
 name: seed
 description: "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three."
 atomPath: "vocabulary/manufacturing/seed"
-coordinate: "vocabulary/manufacturing/seed · 4/weave · 6d24d248"
-contentUuid: "1c4898de-2b36-515a-b4ab-000a847551fb"
-diamondUuid: "2484ffb0-0802-8058-a1d5-18dad6d3c5dc"
-uuid: "6d24d248-dc7f-817f-b128-5ae6ad768254"
-horo: 4
+coordinate: "vocabulary/manufacturing/seed · 2/share · e54a008b"
+contentUuid: "0583816d-4309-5f9d-a0ab-17b76db3b4df"
+diamondUuid: "6fc4076e-d785-84a4-a71a-c86a9f451cf7"
+uuid: "e54a008b-69b9-8e17-8b9b-fd43515ec42d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 116
@@ -18,7 +18,7 @@ standards:
   - "UN-CEFACT"
 bindings: []
 signatures:
-  computationUuid: "aff6c8aa-560c-8492-8f5c-b93a98977adf"
+  computationUuid: "e5682d64-c95e-8aec-aaf5-51a4ea9dfc39"
   stages:
     - stage: path
       stageUuid: "be6630ff-724a-862d-a37c-8e498b4fb80c"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "e71b5aa7-209a-831f-b005-823bf4916c22"
     - stage: horo
-      stageUuid: "266fadd5-e2b1-83f0-921e-3b901c1a6cd0"
+      stageUuid: "341829c8-3b63-871c-aa05-b1d36b66b7e5"
     - stage: seal
       stageUuid: "1b02239f-c957-8c8b-8e35-9feeaebe2f7c"
     - stage: uuid
-      stageUuid: "4300853b-8f00-8072-aabc-47f429da0581"
+      stageUuid: "17b7da3c-b55b-80ad-8ff7-7927ad0dda76"
 version: 2
 ---
 # vocabulary/manufacturing/seed — the manufacturing vocabulary, seeded from three children

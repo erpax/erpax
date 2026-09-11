@@ -2,11 +2,11 @@
 name: temple
 description: "Use when reasoning about temple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: temple
-coordinate: "temple · 7/descent · ea2f502c"
-contentUuid: "1f545216-ee01-5797-a451-625263b02d9e"
-diamondUuid: "fd5d140c-5441-8543-adb5-447edd739fa5"
-uuid: "ea2f502c-d889-8560-b503-be7664a826e5"
-horo: 7
+coordinate: "temple · 1/base · 6fc3d1a3"
+contentUuid: "5eb15286-a56c-54b7-bc13-755d51403692"
+diamondUuid: "f0a9931e-c2ff-8465-9771-2cb0d8fd9749"
+uuid: "6fc3d1a3-6626-8db5-9266-8b9eb81986a8"
+horo: 1
 typography:
   partition: temple
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4e1fa7e1-f88d-8719-95ce-db6005e84736"
+  computationUuid: "8a8b83fc-8362-877e-97df-f6d368c6d336"
   stages:
     - stage: path
       stageUuid: "85dda65e-8ad0-84e3-968b-192ae4e9264d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "706810ae-87d9-8d22-8345-c96d60fe643d"
     - stage: horo
-      stageUuid: "13fac43c-507c-83a0-acd7-184f1798453e"
+      stageUuid: "6b5f0e89-6419-8132-ad5a-5a9a6799c1a8"
     - stage: seal
       stageUuid: "13ae202f-b679-8d88-abd8-ef1b5600843e"
     - stage: uuid
-      stageUuid: "02bbc7e8-05c3-8b9e-9d42-ed4d8ab5f054"
+      stageUuid: "87b79ee0-5ea6-85e3-b670-6a8a43997299"
 version: 2
 ---
 # temple

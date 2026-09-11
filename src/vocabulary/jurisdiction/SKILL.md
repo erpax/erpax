@@ -2,18 +2,18 @@
 name: jurisdiction
 description: "Use when a contract or matter specifies the governing law and venue — choice of law (which country/state), exclusive vs. non-exclusive forum, dispute resolution (courts, arbitration, mediation)."
 atomPath: "vocabulary/jurisdiction"
-coordinate: "vocabulary/jurisdiction · 1/base · 6c864ff7"
-contentUuid: "9ac8c6f2-3d58-50eb-a51c-1d1d851afbe9"
-diamondUuid: "99d42bba-d3df-8714-9a19-09202cd7bc94"
-uuid: "6c864ff7-14b7-8581-95a1-dcb87cf82a35"
-horo: 1
+coordinate: "vocabulary/jurisdiction · 2/share · e5c38997"
+contentUuid: "91c6a551-bfcb-5c14-8406-6df83511135b"
+diamondUuid: "fc321421-b28d-893a-8ef2-8032a1f36581"
+uuid: "e5c38997-9f53-8082-9e18-44d3a229c5fa"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "81b03971-c6c7-87a5-88ae-312033c7764f"
+  computationUuid: "4d806539-8544-8800-9e79-f64a7c963446"
   stages:
     - stage: path
       stageUuid: "879a696f-20db-840b-b7d4-f5a50596c5ba"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "160feb8b-92ec-8777-b963-c25971925fe6"
     - stage: horo
-      stageUuid: "4394c4f0-3af3-8c2e-be84-fd2b12ad4fbf"
+      stageUuid: "3b29645f-efc9-8337-a92b-f70c45276db9"
     - stage: seal
       stageUuid: "ba1db331-0265-8e72-a7e5-8a3eac7da993"
     - stage: uuid
-      stageUuid: "9cae6fcf-f37e-8444-ae0f-9c05a2341b9b"
+      stageUuid: "8861d3fd-aec6-8660-a968-4397a741e36a"
 version: 2
 ---
 # jurisdiction

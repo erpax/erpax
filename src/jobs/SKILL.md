@@ -2,11 +2,11 @@
 name: jobs
 description: "Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing."
 atomPath: jobs
-coordinate: "jobs · 5/round · 7d71c9aa"
-contentUuid: "b821053c-c271-55c2-8ae8-6868b68832d5"
-diamondUuid: "9b4ba3e7-9bbd-82f8-999e-fcb793d81085"
-uuid: "7d71c9aa-8f1f-8043-ae2a-c528835138ca"
-horo: 5
+coordinate: "jobs · 1/base · a00998ca"
+contentUuid: "0ce42bb7-74bb-56f1-82ef-1a8b5cede2de"
+diamondUuid: "e16b940f-6fd0-88c3-81e1-16901f4cf707"
+uuid: "a00998ca-c538-80d5-ad7a-626d5090f1f4"
+horo: 1
 typography:
   partition: jobs
   bondDegree: 49
@@ -14,7 +14,7 @@ standards:
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "79541c7e-df40-8111-bc1f-50ecb516ca3a"
+  computationUuid: "44e59d24-ff84-8b50-8a00-38a9032687d9"
   stages:
     - stage: path
       stageUuid: "2219ff37-c700-8086-99fd-8affa98b0a2b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e5de92d1-2a09-89d8-9376-144538b7fc48"
     - stage: horo
-      stageUuid: "37c01f83-2b22-8a6d-a9f2-54600c6f8e38"
+      stageUuid: "16065a63-1fca-895d-a176-c1486c66efa0"
     - stage: seal
       stageUuid: "ef2274f9-5edb-88de-9f9c-457dcb9e8a76"
     - stage: uuid
-      stageUuid: "863f9d80-4316-8e00-80ff-b05623e05c64"
+      stageUuid: "220a77e7-84b9-8e6b-a71a-6a3ee2c5a5af"
 version: 2
 ---
 # jobs — the jobs queue (background work)

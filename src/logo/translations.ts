@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "logo",
-    "uuid": "740ef6e3-c317-86e5-b5c8-c6bcbfab527f",
+    "uuid": "69201404-2d49-8497-bae6-2e99ade540e3",
     "words": [
       "logo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about logo — An associated logo.",
-    "uuid": "c5bb6cfa-9ba3-8128-943e-b5f8a342968d",
+    "uuid": "3572a0d4-8dfe-81ef-8852-02e55d97f037",
     "words": [
       "use",
       "when",

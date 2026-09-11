@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pyramid",
-    "uuid": "b357e086-42bd-86ae-9d52-a8fe4e9b0515",
+    "uuid": "51d55483-bf7c-87c6-b816-eb96eef433f5",
     "words": [
       "pyramid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the fold as a solid — the cross is a pyramid's net (a square base with four triangular faces folded flat; fold them up and they meet at one apex). A wide base of leaves rises pairwise, each merge(a,b) one cross, to a single apex that is the seal. The notary is built on this: its protocol root is an apex over act-seals, an inclusion proof is the path up one edge, and tamper-evidence is that no ground course can change without the apex moving. Composes merge's fold; adds the geometry (base·apex·height·faces·courses) and the tamper law.",
-    "uuid": "d7868216-6904-85f6-8f29-9d66d89b4874",
+    "uuid": "2155c1f6-67e3-8cdc-9d53-25d89a1163c3",
     "words": [
       "use",
       "when",

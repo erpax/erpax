@@ -2,10 +2,10 @@
 name: beneficiary
 description: "Use when reasoning about beneficiary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/beneficiary"
-coordinate: "vocabulary/beneficiary · 5/round · 6a924b7b"
-contentUuid: "62529513-953c-55e7-83b2-95f13a3e83fc"
-diamondUuid: "7d183ef3-3355-8f30-a3cf-c4ca8d923f3f"
-uuid: "6a924b7b-c0a4-89d2-9499-e0ed082cf903"
+coordinate: "vocabulary/beneficiary · 5/round · a815368c"
+contentUuid: "bc434251-61c7-5aef-afc6-1ed230ac1148"
+diamondUuid: "721538bc-452e-8678-aed1-5d867e6e2fe3"
+uuid: "a815368c-3e14-83ad-add7-392aaec94842"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d7ee8923-f080-8d2b-8651-7062ba7c37d0"
+  computationUuid: "6fb398cb-3c54-8b5d-8cad-1ae1de35f683"
   stages:
     - stage: path
       stageUuid: "35aa0b02-9da9-8c23-97d7-9928e59f54d0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eea711e3-a1be-824a-8c56-1756d6ff65c2"
     - stage: horo
-      stageUuid: "97a8ba3a-2554-850a-b1f6-087febcd11ee"
+      stageUuid: "5a68ffb1-68c6-8aaa-952c-80ecf21da70d"
     - stage: seal
       stageUuid: "4f743d4a-a086-8730-a380-3f4af163edd9"
     - stage: uuid
-      stageUuid: "11766d06-ec24-8b33-8c5e-1a3dbec4de35"
+      stageUuid: "22565616-5134-899b-ab18-d3bf565a21df"
 version: 2
 ---
 # beneficiary

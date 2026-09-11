@@ -2,11 +2,11 @@
 name: refund
 description: "Use when reasoning about refund as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/refund"
-coordinate: "vocabulary/refund · 2/share · 85ea15e8"
-contentUuid: "a3e99e55-a5d4-5867-859b-7fc1638b8c5b"
-diamondUuid: "dc758c63-b852-82b7-9b7b-bc8139cd67b3"
-uuid: "85ea15e8-07fe-8b59-8242-cf4e3b0a4327"
-horo: 2
+coordinate: "vocabulary/refund · 8/crest · cddccddb"
+contentUuid: "8718a799-a725-5fa0-86de-f7eb8860cb1f"
+diamondUuid: "821da973-a476-8095-8468-43926c6b6175"
+uuid: "cddccddb-c93f-8884-9053-50a48d23361b"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "79965dfc-6e6f-8813-abf9-ab41d60557c8"
+  computationUuid: "dc829bfb-c256-8626-9fe7-390b1d6b46a4"
   stages:
     - stage: path
       stageUuid: "5cf38c0a-d025-8890-83b5-63b697ab9037"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3739b9ef-4413-8943-a8a0-d8c23c77b956"
     - stage: horo
-      stageUuid: "e8eb44ad-d1d0-804d-afd4-1fe8b89d5793"
+      stageUuid: "924c9d0b-6f21-8052-bd78-3db566efe528"
     - stage: seal
       stageUuid: "b5d223e5-635d-86dd-8a96-33b48bd883ad"
     - stage: uuid
-      stageUuid: "67179f73-752d-8762-8bf5-20cee03e1805"
+      stageUuid: "4ce0523e-1c9f-8dda-a45a-5d4eff131b8e"
 version: 2
 ---
 # refund

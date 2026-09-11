@@ -2,11 +2,11 @@
 name: clearance
 description: "Use when reasoning about clearance — A schema.org component word, collided out of schema.org compounds — fused from securityClearanceRequirement (sti · collapse · merge)."
 atomPath: "vocabulary/clearance"
-coordinate: "vocabulary/clearance · 7/descent · 54f89a71"
-contentUuid: "996f6185-4124-5f31-8500-0143f224d103"
-diamondUuid: "3a873c51-5427-892f-9a6c-8da22c16c052"
-uuid: "54f89a71-8f07-85a2-bff0-db771b33d9b0"
-horo: 7
+coordinate: "vocabulary/clearance · 5/round · 03c9c707"
+contentUuid: "cf08585c-8877-5c63-a680-9ac70e32de8c"
+diamondUuid: "d76bbf0b-247c-8cf1-b5a1-4ba9c41574be"
+uuid: "03c9c707-e0f8-85f5-854b-60c3c259c213"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "55861ba2-d9f1-8fb1-86ff-92a6345ea3db"
+  computationUuid: "4f77a3f3-ecf2-86ab-a61d-492796b5c4e6"
   stages:
     - stage: path
       stageUuid: "bbbdffba-8ca1-8040-83b4-54fe6e5ff757"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93b55102-b391-86c4-83d0-5edc360b0343"
     - stage: horo
-      stageUuid: "8b971e7e-51f8-8393-9125-7a69e8c4a2ff"
+      stageUuid: "6283d77d-a5d8-87f7-9b8b-d2572e4c76d5"
     - stage: seal
       stageUuid: "7971e7ed-00a4-8198-9d31-a07c735a0758"
     - stage: uuid
-      stageUuid: "252c1bdd-5608-8b13-bf22-975fb9f7622e"
+      stageUuid: "464eb885-80df-8692-ad52-3a6318d8a8b9"
 version: 2
 ---
 # clearance

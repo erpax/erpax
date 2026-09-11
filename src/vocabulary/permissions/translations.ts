@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "permissions",
-    "uuid": "40ca2cd8-b8e2-81af-bd0b-e5393aeafacf",
+    "uuid": "53597e9e-fd48-8aca-bc11-a0274623aa0c",
     "words": [
       "permissions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about permissions — Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
-    "uuid": "a0ce2358-5ae4-8070-9834-639000be3540",
+    "uuid": "7b2d64da-170b-83c4-a6fc-2307bdd33430",
     "words": [
       "use",
       "when",

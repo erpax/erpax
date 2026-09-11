@@ -2,18 +2,18 @@
 name: partition
 description: "Use when dividing data for performance or governance — table partitioning (by range/hash/list), partition pruning, partition management (add/drop/compress), partitioning strategy for horizontal scaling."
 atomPath: "vocabulary/partition"
-coordinate: "vocabulary/partition · 2/share · e404cdf0"
-contentUuid: "213a8436-0922-56a7-a064-32a3f5f38a7d"
-diamondUuid: "d4d1f45b-71f0-8cea-a73d-e3408f425eb2"
-uuid: "e404cdf0-0b27-8e44-aaf2-1a1c3d8344d8"
-horo: 2
+coordinate: "vocabulary/partition · 8/crest · bfaaa2ad"
+contentUuid: "cd30db08-7576-5266-994f-001bce91d018"
+diamondUuid: "6d27c29a-dbef-888f-bb19-0cc09b1b6487"
+uuid: "bfaaa2ad-5f7e-8a3e-9d16-89ad54c8f2c7"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "920202d5-7ffb-8827-9608-0cd116ce668d"
+  computationUuid: "fcae7bac-1d62-8071-8c24-bb525c5155d0"
   stages:
     - stage: path
       stageUuid: "de42580b-03c4-82eb-a170-847ff7c29f4c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7005ea87-259a-8711-8265-8e1a8e3aa9e3"
     - stage: horo
-      stageUuid: "dac5cd33-f04e-80d7-b1f4-9290e358913b"
+      stageUuid: "01d396ad-b448-85ff-a711-88aad5c0fe57"
     - stage: seal
       stageUuid: "eccdd077-911d-80b9-bd60-e05462d8cafa"
     - stage: uuid
-      stageUuid: "6e82f858-95ba-8c8f-8b07-42d540dd0420"
+      stageUuid: "1d0a9634-9c81-83a9-a779-86997deffabb"
 version: 2
 ---
 # partition

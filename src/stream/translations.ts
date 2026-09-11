@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stream",
-    "uuid": "2da3950b-fd8f-8355-982c-3d34792465d1",
+    "uuid": "7091cc99-f6ab-8787-889f-70d4aa125f63",
     "words": [
       "stream"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain.",
-    "uuid": "971b3086-edfe-8058-858f-1f4db81741a8",
+    "uuid": "1ae323f3-0472-8dda-bc11-912d5e81a718",
     "words": [
       "use",
       "when",

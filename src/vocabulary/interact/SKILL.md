@@ -2,11 +2,11 @@
 name: interact
 description: "Use when reasoning about interact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/interact"
-coordinate: "vocabulary/interact · 7/descent · 9a7d2ab5"
-contentUuid: "66c610e1-3217-59c1-845b-491dc0adfd7c"
-diamondUuid: "97adaa47-0dba-8587-bd7e-6c9fe4065540"
-uuid: "9a7d2ab5-fab1-8d1d-a476-e7b947e037f5"
-horo: 7
+coordinate: "vocabulary/interact · 1/base · a89a10ce"
+contentUuid: "c043fa4e-4ef2-5704-8a79-b276a6a3cdab"
+diamondUuid: "b4b6b1b1-1776-8f38-855b-1767f86d1cd3"
+uuid: "a89a10ce-eecc-8a3a-8996-82c179b33ecc"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c23efe60-bb88-8fb7-a8ef-a4bb915092e4"
+  computationUuid: "e566cccd-f7b1-861e-860a-33ed62783fd7"
   stages:
     - stage: path
       stageUuid: "19de7fb4-fc41-84a8-bf1b-bc1412d03f10"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3ecf19af-1edb-8f4d-abba-373a9fff2a1a"
     - stage: horo
-      stageUuid: "dacfd8ac-a9cb-8400-80c7-6320fbda50a5"
+      stageUuid: "8bc58f7c-b1b2-8e06-877e-04703c1ad049"
     - stage: seal
       stageUuid: "828ea5ed-52bb-8209-a7fe-d05d72393551"
     - stage: uuid
-      stageUuid: "7efd60dd-fa85-8b2c-900e-776e71aa4620"
+      stageUuid: "a8a14ac0-c994-8ce2-a432-dc0fd3fae4b7"
 version: 2
 ---
 # interact

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "face",
-    "uuid": "b0255e56-55a7-8473-bac3-09c69cb3d78b",
+    "uuid": "5cae55b7-b669-86fb-befd-46eff00c3fdf",
     "words": [
       "face"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a command must exist without anyone remembering to register it — the CLI surface derived from the tree instead of transcribed into a table. An atom is a command exactly when its index.ts carries a CLI guard, and that is read from the grammar so a guard quoted in a comment or a string cannot masquerade as one. Descriptions come from each atom's own SKILL.md, an unambiguous leaf resolves like a search hit, and an ambiguous one is refused with its candidates named. Explicit registry entries always win.",
-    "uuid": "20d17a55-276c-8777-b5e7-02a99759247e",
+    "uuid": "f144f4ad-e386-8b77-bd32-76dfdb4de88a",
     "words": [
       "use",
       "when",

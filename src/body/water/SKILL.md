@@ -2,11 +2,11 @@
 name: water
 description: "Use when reasoning about water as a anatomical part of body — vocabulary pivot to @/water; nested not duplicated."
 atomPath: "body/water"
-coordinate: "body/water · 5/round · 7732ba56"
-contentUuid: "2c3cab0f-a6ab-515c-a874-e29fa19c222c"
-diamondUuid: "b0b11fab-daca-8ccd-8d65-d5a18524ef27"
-uuid: "7732ba56-7d28-8510-a506-f2cb330976a6"
-horo: 5
+coordinate: "body/water · 8/crest · 7ff5e2a2"
+contentUuid: "d2e6b6c8-eda1-515a-86f8-a2c0786f07d3"
+diamondUuid: "6bdaf48b-dea1-8797-9dec-b69520628dfb"
+uuid: "7ff5e2a2-c754-8a54-99ad-0247ca5c19ae"
+horo: 8
 typography:
   partition: body
   bondDegree: 57
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "95667a87-a73a-8471-81bb-7446e9fdb8f9"
+  computationUuid: "bd55346d-b97a-8140-94bd-e6646b94b9c2"
   stages:
     - stage: path
       stageUuid: "1aa1b4de-738c-81b7-a7e1-e9f9be17779b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a7e85969-8f92-887d-a65d-98fc39572150"
     - stage: horo
-      stageUuid: "419a6e74-f956-80ba-bf15-1763585039c9"
+      stageUuid: "5a0596f9-b8b4-822d-82e2-aad343c3f365"
     - stage: seal
       stageUuid: "795fb864-02b4-8326-bb54-293bf1bf5ffc"
     - stage: uuid
-      stageUuid: "8a09fdad-47b8-8723-a859-cfb48970957a"
+      stageUuid: "5ad30d1f-3270-8d8a-aeac-be81e513f27d"
 version: 2
 ---
 # body/water — anatomical part

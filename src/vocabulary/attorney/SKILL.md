@@ -2,11 +2,11 @@
 name: attorney
 description: "Use when reasoning about attorney — Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous."
 atomPath: "vocabulary/attorney"
-coordinate: "vocabulary/attorney · 4/weave · 26b62239"
-contentUuid: "a881f662-649d-5689-a319-b6a90fc2862e"
-diamondUuid: "193b11b3-6d0c-8631-ac72-a5d297616631"
-uuid: "26b62239-da4a-8bba-9752-6ad44f55d5d2"
-horo: 4
+coordinate: "vocabulary/attorney · 5/round · 72f1d9d7"
+contentUuid: "2a97d9c4-75ee-5eba-b465-b6476f71a565"
+diamondUuid: "fadcf739-b120-8e90-b550-86b4fda40052"
+uuid: "72f1d9d7-c80b-8eb9-ae4d-a9bbb180a224"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4d3ca03e-232e-8682-8189-aa0efccf8e16"
+  computationUuid: "2a496515-c17d-83aa-8c2b-9376609bee28"
   stages:
     - stage: path
       stageUuid: "16c98cd9-7738-80fb-89b0-9c1e6507af7c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a960157d-2bcb-890e-b531-4de34548d230"
     - stage: horo
-      stageUuid: "5d6e171f-1534-86ca-9680-96259e910bb3"
+      stageUuid: "1b72e9dd-ba08-8d1f-9f24-12b61a2201a2"
     - stage: seal
       stageUuid: "676474bc-ec90-88a4-a6b9-b788960c36d3"
     - stage: uuid
-      stageUuid: "75201b73-d81c-864d-9620-0ea79696dadd"
+      stageUuid: "2e5868b7-c342-877e-ad94-f43fc327c08c"
 version: 2
 ---
 # attorney

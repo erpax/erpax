@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vendor",
-    "uuid": "d4b4edb0-6afc-82ff-826b-bff01a6e0a15",
+    "uuid": "29f9600d-2e48-8781-afdc-62ca74e44283",
     "words": [
       "vendor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about vendor — 'vendor' is an earlier term for 'seller'.",
-    "uuid": "682331dc-8b74-830d-ba37-42d3be51182c",
+    "uuid": "4cc39147-30e1-8adc-8ac6-4a25e2f96b0f",
     "words": [
       "use",
       "when",

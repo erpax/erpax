@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "anbi",
-    "uuid": "08f67081-f0e0-8e39-9081-d6d84e253160",
+    "uuid": "d59f0e15-216f-8cff-b8eb-657a8bf13e36",
     "words": [
       "anbi"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about anbi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "66aef76c-9c9a-8c94-a4b9-e0ad60dd055a",
+    "uuid": "9376f301-93a8-86b6-a985-54bc53740eda",
     "words": [
       "use",
       "when",

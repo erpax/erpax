@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "speech",
-    "uuid": "c114adc8-b154-880c-a914-1e5e3e04c473",
+    "uuid": "3a820077-9c06-80e1-823f-3e222aab00e0",
     "words": [
       "speech"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when speech must be computed from sealed coordinates — pitch · phonemes · duration derived from content-uuid · horo · path; never hand-authored audio text. User alias: speach.",
-    "uuid": "f124f8e8-9364-8a49-a812-e8c6c362c864",
+    "uuid": "06ec9b92-03d8-82de-9fc7-2b35c54fa08b",
     "words": [
       "use",
       "when",

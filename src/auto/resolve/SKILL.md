@@ -2,18 +2,18 @@
 name: resolve
 description: "Use when deciding which folder-shape gaps an archangel can auto-resolve — a trinity gap folds iff its matter (index.ts) already exists, so the antimatter (SKILL.md) and the proof (test.ts) derive from the code; missing matter or a malformed name needs a builder, not a fold. Computed from the live tree."
 atomPath: "auto/resolve"
-coordinate: "auto/resolve · 2/share · 0645961b"
-contentUuid: "33c1c5df-346a-5da2-9e9f-41b1d7f4a596"
-diamondUuid: "dad25fa1-c150-8c15-a6a6-6c33336dcf96"
-uuid: "0645961b-838a-86d1-9da8-34f823ace58c"
-horo: 2
+coordinate: "auto/resolve · 7/descent · d3b0afdd"
+contentUuid: "7cecb41e-966f-5235-aa17-f6d61efee005"
+diamondUuid: "a01dc0a1-b516-8921-93d6-bd263272cc72"
+uuid: "d3b0afdd-bf02-8074-a04c-ea4ee523a7f1"
+horo: 7
 typography:
   partition: auto
   bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5fd55ef8-5080-8fbc-8d1a-242d23971641"
+  computationUuid: "a4d50a4c-fae3-84b1-9ede-deefd0c83578"
   stages:
     - stage: path
       stageUuid: "3f04bf3a-599d-8d34-ae2d-0666ccc807af"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "635f6e1d-7d5a-889f-a990-d840b7efbab2"
     - stage: horo
-      stageUuid: "d2e9d59a-b768-87bb-8af4-4bf4b7e7171b"
+      stageUuid: "bbfb3efd-dc67-88f1-80b9-b98c759c874e"
     - stage: seal
       stageUuid: "fbc8fd69-4c1f-8e27-bfa1-46d5d9de7cb2"
     - stage: uuid
-      stageUuid: "2600d973-7944-8c25-9030-8812f1f7c935"
+      stageUuid: "adef84ba-5d4f-8ff0-a4e4-16ef97dc4940"
 version: 2
 ---
 # auto/resolve — the self-describing fold (architect = archangel)

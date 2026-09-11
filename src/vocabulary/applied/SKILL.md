@@ -2,11 +2,11 @@
 name: applied
 description: "Use when reasoning about applied as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/applied"
-coordinate: "vocabulary/applied · 8/crest · 3533aa2a"
-contentUuid: "a65a9126-b2dd-5512-b548-57571d624c28"
-diamondUuid: "ccc78ce5-167d-8450-9670-d9df7bbdc2cf"
-uuid: "3533aa2a-c177-8fe5-b7a6-ca7de6dda5c3"
-horo: 8
+coordinate: "vocabulary/applied · 2/share · 6bee45de"
+contentUuid: "d780f148-0680-5e59-94d3-0c85720095e5"
+diamondUuid: "aa2fb230-d3c1-8613-b7d9-edb9c15a6a42"
+uuid: "6bee45de-b76e-8a95-a377-9d25d7276a3d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "faa36e0c-04ec-86df-9708-63cb6402e37a"
+  computationUuid: "4b377abd-c39c-8a39-b3a1-c91db4b72e40"
   stages:
     - stage: path
       stageUuid: "d16374c6-d795-8503-93b7-24373ba5b129"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c2598d05-5434-865b-bef5-085c9e4f2550"
     - stage: horo
-      stageUuid: "0de2fa58-38c5-80bb-9608-95d416daf936"
+      stageUuid: "b69a270d-b303-8683-a702-56e4e3d3369a"
     - stage: seal
       stageUuid: "fddb6223-7309-8d1f-9151-e65353e0f80f"
     - stage: uuid
-      stageUuid: "2425f8ca-b2ff-8295-a6a8-509d0aae3157"
+      stageUuid: "ef6b9662-263f-8bcf-b280-1a0b85e34adc"
 version: 2
 ---
 # applied

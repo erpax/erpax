@@ -2,18 +2,18 @@
 name: skills
 description: "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid so the whole carries zero entropy and infinite tamper-cost. Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library."
 atomPath: skills
-coordinate: "skills · 4/weave · 5e180adc"
-contentUuid: "fe9d6b08-2c49-5f2c-8b16-e28124137f4b"
-diamondUuid: "afef47f6-0c0e-8ac3-b1fb-f21ebe6601e3"
-uuid: "5e180adc-1181-8890-b266-46814b058803"
-horo: 4
+coordinate: "skills · 2/share · 5623af84"
+contentUuid: "ef6f1e58-9715-58b6-86bb-78387591993c"
+diamondUuid: "4ccc66d8-3b3d-8981-9340-17a4124b5d8b"
+uuid: "5623af84-b70b-8870-8094-4a30d4f63b52"
+horo: 2
 typography:
   partition: skills
   bondDegree: 156
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b86f9910-6e70-8200-bf33-7e342228ac44"
+  computationUuid: "6080b2c5-df0a-8d49-aa95-a5324563b70d"
   stages:
     - stage: path
       stageUuid: "c7d3ddff-c8fb-87b3-b9b0-215a8ba1538d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "954bc6ae-01c5-8fe2-9c98-cc6b352ab174"
     - stage: horo
-      stageUuid: "a0874162-d3ef-86b7-97c1-eb10a4382cb4"
+      stageUuid: "3c1b3606-9a88-86b7-88ed-d1fcbece8bf4"
     - stage: seal
       stageUuid: "2a9b5094-3a75-878d-891c-829cdf4648b6"
     - stage: uuid
-      stageUuid: "26b87d2e-625f-8542-a1ec-104110064a27"
+      stageUuid: "976ee82d-3e27-8c01-9f69-66196e367d13"
 version: 2
 ---
 # skills — erpax, the periodic table of skill atoms

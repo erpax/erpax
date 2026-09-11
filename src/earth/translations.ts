@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "earth",
-    "uuid": "46a1ed10-de70-8f95-8f34-bb9cd3c394e3",
+    "uuid": "8c13c3df-00aa-83d4-a68e-5eb2fce33e04",
     "words": [
       "earth"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when realising Earth by computing poles as a pyramid — N·E·S·W tips at 0°·90°·180°·270° with ±ω, zenith/nadir dual apexes, genus-2 χ=−2 H₁=ℤ⁴, bothEarths merkaba shells; physical datum stays WGS 84.",
-    "uuid": "8b7da041-5e5f-8652-a3c0-5cb6e99dfc02",
+    "uuid": "e686786b-c52f-8546-87e9-992afbe9cb60",
     "words": [
       "use",
       "when",

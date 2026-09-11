@@ -2,11 +2,11 @@
 name: performers
 description: "Use when reasoning about performers — The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor."
 atomPath: "vocabulary/performers"
-coordinate: "vocabulary/performers · 1/base · 57fe4574"
-contentUuid: "aaab0154-79a7-5285-9b43-d4cf8cccc0b5"
-diamondUuid: "969b8015-80d3-8f5a-8de9-55904dd474b1"
-uuid: "57fe4574-90dc-8973-ae67-2cd226975d6d"
-horo: 1
+coordinate: "vocabulary/performers · 5/round · 5b442092"
+contentUuid: "c2d066a8-460e-5957-94ad-f2f98a7a3783"
+diamondUuid: "14e62386-b2c0-89f8-964f-c198ac3ba74e"
+uuid: "5b442092-1aeb-811b-bfc8-a60fb6964c53"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1dd2a21d-3893-803b-bd79-79e42ca2c768"
+  computationUuid: "b7b56848-7e13-826b-8ff8-5700d2cf42cf"
   stages:
     - stage: path
       stageUuid: "86a0fef5-2b93-8844-88f8-2d7817cc48d3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d9c9539c-b692-815c-912c-4eade168d3b9"
     - stage: horo
-      stageUuid: "602b9f1d-287b-8295-9059-71c289a5b2ed"
+      stageUuid: "1a12b338-e913-8833-90ef-2a2c95a6552c"
     - stage: seal
       stageUuid: "651233d6-687f-8494-afa1-0092241870d2"
     - stage: uuid
-      stageUuid: "d616d65b-4bf5-8191-bdcb-ecee2b914c02"
+      stageUuid: "329e3cfd-c2d0-82ed-b572-10028d3eae43"
 version: 2
 ---
 # performers

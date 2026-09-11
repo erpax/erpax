@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "season",
-    "uuid": "e0e03e54-9529-8bc8-9b98-07dd76c9e24a",
+    "uuid": "66b6a70b-0932-8b4a-9bdb-0bc2c547df2f",
     "words": [
       "season"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when output is bounded by a recurring climate window in the annual cycle — the growing/harvest season set by the frost-free period, the cool- vs warm-season crop split, and heat accumulation (growing degree days) rather than the calendar. The season is the time-axis bottleneck of agriculture: land × season caps how much can be grown; it is regional and probabilistic, never a copied calendar.",
-    "uuid": "f0ccbd02-aaa9-82e0-a4c6-641935f292d4",
+    "uuid": "3c54720a-fea4-8c91-aed6-3de61d499196",
     "words": [
       "use",
       "when",

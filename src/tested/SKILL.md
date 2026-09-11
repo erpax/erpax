@@ -2,11 +2,11 @@
 name: tested
 description: "Use when reasoning about tested as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tested
-coordinate: "tested · 4/weave · d3c991bb"
-contentUuid: "9fc5cfbf-7942-5497-99be-c9c4a8c6310d"
-diamondUuid: "1dea0b22-dc0b-8c83-9280-0c94a4c3d341"
-uuid: "d3c991bb-be50-8d4e-b6dc-1bab421cefe0"
-horo: 4
+coordinate: "tested · 1/base · d8ce2cf4"
+contentUuid: "747c58b3-7640-51f1-9581-81c4cf2cc787"
+diamondUuid: "90c239aa-5a22-8992-aded-092d41d76a0f"
+uuid: "d8ce2cf4-d53e-80a3-8564-6514b8d677cd"
+horo: 1
 typography:
   partition: tested
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ec3ba31c-3e1f-8b2c-a90e-7f1cb1686b09"
+  computationUuid: "bfaafc5f-bb55-878b-87b2-8a997b870db6"
   stages:
     - stage: path
       stageUuid: "9361ec5a-8ca1-8ec5-8cf6-f718d1b3d4c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f72390ab-cbff-83ee-a428-594820a99bab"
     - stage: horo
-      stageUuid: "071f24ea-c4bf-8b6c-85f8-77d673b8b69c"
+      stageUuid: "9cee8278-1e6f-82de-b136-dc0f7caa70a9"
     - stage: seal
       stageUuid: "3ee3b026-2f8c-8226-a25f-b54f0a662e28"
     - stage: uuid
-      stageUuid: "24485764-82e0-8243-9c8d-08800c081a7f"
+      stageUuid: "5a51b467-701d-8f88-9c45-c3ddcd360cfa"
 version: 2
 ---
 # tested

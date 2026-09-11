@@ -2,11 +2,11 @@
 name: push
 description: "Use when a sealed tree should land by itself — the stop-hook body that runs the full seal, then commits and pushes, detached and lock-guarded, and touches nothing when the seal is red."
 atomPath: "confirm/push"
-coordinate: "confirm/push · 5/round · a8ae269a"
-contentUuid: "c166fa07-b27b-5aaa-a6e1-3110b45be0b2"
-diamondUuid: "93611ca7-2a03-8d3a-85c5-f04dcfa48674"
-uuid: "a8ae269a-4e94-8154-a757-25c76dc3ad21"
-horo: 5
+coordinate: "confirm/push · 8/crest · bf537010"
+contentUuid: "f5b6055e-1953-50a7-bbdd-ab821c2fac1c"
+diamondUuid: "14e1813b-3519-830e-a8c6-09ae6b16e6ef"
+uuid: "bf537010-d1ff-8dd5-93c8-1c45d6130c20"
+horo: 8
 typography:
   partition: confirm
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "ISO-19011:2018 audit-trail self-heal-visible-in-git-log"
 bindings: []
 signatures:
-  computationUuid: "ac6b412c-7cb2-8995-8f37-5812e7a1256e"
+  computationUuid: "5b0744e5-a733-8ae2-aa0c-432c21f5a3fc"
   stages:
     - stage: path
       stageUuid: "4eee8a73-e6ba-8e8a-8752-45eed9f6ce45"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cfba91b0-d1f1-8b9c-99d3-e710bdcbf5a2"
     - stage: horo
-      stageUuid: "f4cc718b-b7f6-8d16-8262-c662f83a5402"
+      stageUuid: "ebbe669f-e01b-8fc7-a88a-5b6beb379b0a"
     - stage: seal
       stageUuid: "dbc69dbd-904e-8f6c-9bf6-5ed9dddf9b2f"
     - stage: uuid
-      stageUuid: "0bd518d1-89bb-8aa4-81e1-66b434d41ae8"
+      stageUuid: "ebfa8136-61f3-81be-9ee2-f8b5e34ea54a"
 version: 2
 ---
 # confirm/push — a green seal lands itself

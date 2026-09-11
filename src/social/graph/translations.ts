@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "graph",
-    "uuid": "4d8ecf76-7b40-8d1f-8546-74f68122a153",
+    "uuid": "19ec6ecc-8a84-850d-aa57-08cff9cd6277",
     "words": [
       "graph"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about graph — holds directed edges. asks whether the opposite edge exists, and derives the relation: two mutual follows ARE a friendship, and nothing writes a \\\"friends\\\" row to say so.",
-    "uuid": "d6eb2c77-e07e-8168-a449-636ae74b71b3",
+    "uuid": "877bbda0-8086-82d7-aff3-fa1c8215282d",
     "words": [
       "use",
       "when",

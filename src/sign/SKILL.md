@@ -2,11 +2,11 @@
 name: sign
 description: "Use when reasoning about sign as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sign
-coordinate: "sign · 7/descent · c72ccfbd"
-contentUuid: "b8542edb-0f88-5e84-bc7c-530cc4742a97"
-diamondUuid: "032fd9cd-d116-8a07-a4d9-b97636c63f72"
-uuid: "c72ccfbd-db3a-86a6-8869-f44c1a8be4de"
-horo: 7
+coordinate: "sign · 8/crest · 1d8ca7bf"
+contentUuid: "6fb3306c-9562-5d10-9e39-4dc958541e6e"
+diamondUuid: "18bf263c-73a4-86cd-a5d1-d02db3ef74b1"
+uuid: "1d8ca7bf-bc07-8087-aeb3-8550ad2b7e72"
+horo: 8
 typography:
   partition: sign
   bondDegree: 43
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a0edce8b-7940-8d2e-983c-386bb39f67d1"
+  computationUuid: "56532c06-e883-82c8-b406-1cc32bd5f6b2"
   stages:
     - stage: path
       stageUuid: "f5b26de8-c462-8f50-b284-e1b00d05645f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b78eceab-5cb6-8af1-ba0a-1dd3dc93d31b"
     - stage: horo
-      stageUuid: "afcb50ba-5505-882b-a2c1-eab46018a86e"
+      stageUuid: "9e63d168-d6c6-87fb-94d1-53ce0cdae732"
     - stage: seal
       stageUuid: "1d969368-fee8-8087-a2ac-848e74fffbef"
     - stage: uuid
-      stageUuid: "394597c0-0f2d-825b-a31b-09adf50fde8b"
+      stageUuid: "5e2f3d35-3166-8217-a002-77d9cffb90ca"
 version: 2
 ---
 # sign

@@ -2,11 +2,11 @@
 name: corpus
 description: "Use when reasoning about corpus — Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner."
 atomPath: "convention/discern/corpus"
-coordinate: "convention/discern/corpus · 7/descent · 532f88fe"
-contentUuid: "43597922-bd22-52ae-a856-c23b04406204"
-diamondUuid: "038ef189-b9a7-8349-870a-d9ba2d21b73e"
-uuid: "532f88fe-0646-8c79-b7ba-03642c2be39b"
-horo: 7
+coordinate: "convention/discern/corpus · 1/base · 9fc28f53"
+contentUuid: "252c79df-0aa6-547f-b97c-b5c3b6168a04"
+diamondUuid: "33d383b5-43e5-81f1-9851-74771d69890d"
+uuid: "9fc28f53-72a2-8a60-9ef6-fd95b1fef62c"
+horo: 1
 typography:
   partition: convention
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.5 — testability: a claim is measured or it is not made"
 bindings: []
 signatures:
-  computationUuid: "912ea2f2-39db-85c3-b578-6d931b58901f"
+  computationUuid: "3b06672d-8143-8206-ba9d-fc1272991d32"
   stages:
     - stage: path
       stageUuid: "10228e1a-fc74-8120-aa25-b9a0ecfd4f25"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8be8a083-5acd-856b-98c2-8968e03ff446"
     - stage: horo
-      stageUuid: "c6efaab8-b41e-8a11-aff4-a096513ed96f"
+      stageUuid: "c12fc49c-f0ce-89b5-9478-f383d83b41a2"
     - stage: seal
       stageUuid: "923d4526-dc40-8266-bcf1-ffbe2565cece"
     - stage: uuid
-      stageUuid: "a50dd3c9-81c8-8548-a09c-e25634509054"
+      stageUuid: "40a44e77-ace5-89d0-8862-604de2a7016a"
 version: 2
 ---
 # convention/discern/corpus — every security claim, as one number

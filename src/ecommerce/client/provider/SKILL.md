@@ -2,18 +2,18 @@
 name: provider
 description: "Use when reasoning about provider — The browser half of the ecommerce plugin. Two values decide what it can do, and both may be absent: the tenant's Stripe publishable key and the server URL."
 atomPath: "ecommerce/client/provider"
-coordinate: "ecommerce/client/provider · 1/base · 11f37d20"
-contentUuid: "2bf7cb9d-1190-5650-8e35-8b854d5d6f37"
-diamondUuid: "a59c35de-d3f0-8f2e-9d89-fa2b0bb62c36"
-uuid: "11f37d20-7062-8899-9f10-bc8de2139069"
-horo: 1
+coordinate: "ecommerce/client/provider · 8/crest · 1e0c88be"
+contentUuid: "94951fbc-5c46-5e9c-ab1b-90480300077e"
+diamondUuid: "76cf0085-7451-8342-be82-ae03a081ba28"
+uuid: "1e0c88be-d547-8f95-8575-943c43600ba1"
+horo: 8
 typography:
   partition: ecommerce
   bondDegree: 25
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d9fe10f8-2eb7-81f2-98de-25736483533c"
+  computationUuid: "8fa060fc-69bd-8ad1-b2cd-30eb1af0c4a6"
   stages:
     - stage: path
       stageUuid: "00bd36e9-92df-828d-b972-212d2ce52941"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ec781212-bbc6-8ee8-a87e-7b7facce1822"
     - stage: horo
-      stageUuid: "9eb89391-cb5a-8593-8440-f97c3b11a5aa"
+      stageUuid: "9c523bee-37df-809d-a5c6-aa5c8fc090c0"
     - stage: seal
       stageUuid: "62e858cd-be21-8e52-af1a-5a394d7f9245"
     - stage: uuid
-      stageUuid: "350e3ce0-fb89-822e-85a5-5b369c91f47e"
+      stageUuid: "7172be6e-5fd2-85bc-ae1e-5892177e5b95"
 version: 2
 ---
 # ecommerce/client/provider — no publishable key means no payment method, not a broken one

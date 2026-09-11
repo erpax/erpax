@@ -2,11 +2,11 @@
 name: drains
 description: Use when reasoning about drains — The vasculature that the vein drains into.
 atomPath: "vocabulary/drains"
-coordinate: "vocabulary/drains · 1/base · efe05635"
-contentUuid: "ee09ba5c-8531-5d36-8568-a40fb8023105"
-diamondUuid: "3794ff9e-7300-80a6-85c9-1d51e21f82fd"
-uuid: "efe05635-a590-8f84-ad9f-488eb0b5ae11"
-horo: 1
+coordinate: "vocabulary/drains · 7/descent · 5437521e"
+contentUuid: "fdb4975f-6aa1-54c7-992a-80950c662bc0"
+diamondUuid: "efab6a04-bff1-8f31-9a9c-eb2dacddfaa7"
+uuid: "5437521e-dc15-8aaf-97e3-b6d32762083b"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "74fb052d-0f1d-862b-be40-615305ba5529"
+  computationUuid: "b9d34a82-60c3-86dc-a80c-ef2e04cda041"
   stages:
     - stage: path
       stageUuid: "511e0887-a032-8453-869f-7e64210bda13"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6cb94a8e-e2e7-8686-9961-239cf9686fa3"
     - stage: horo
-      stageUuid: "4dc9c198-2cf3-8851-8ed7-26d680b70304"
+      stageUuid: "0869af84-5cd1-8021-bd13-cf3a8f478496"
     - stage: seal
       stageUuid: "6882c33d-9ad7-86a5-bd88-d9f291fd7f3e"
     - stage: uuid
-      stageUuid: "5d0a45d3-f77e-8523-ae84-385c0ff09081"
+      stageUuid: "a53ebe68-54f2-8e31-b71b-919b0db1c8eb"
 version: 2
 ---
 # drains

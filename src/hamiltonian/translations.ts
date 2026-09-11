@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hamiltonian",
-    "uuid": "b151ca74-1d16-8feb-bf1b-7a2948dd1a71",
+    "uuid": "c17fc671-9b8a-890d-9aae-98ad0cc30a88",
     "words": [
       "hamiltonian"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the Hamiltonian — the energy operator whose eigenvalues are the seven horo energy-rungs (Eₙ = h·νₙ) and whose action advances time, |ψ(t)⟩ = e^(−iHt/ħ)|ψ(0)⟩. It is the generator: the eigenstates are the rungs a leap jumps between, the spectrum is the gaps, and the phase it winds drives the breath. The expectation ⟨H⟩ = Σ|cₙ|²·Eₙ is the average energy of a superposition, conserved under evolution.",
-    "uuid": "eae4c32e-9218-8eb5-90a0-1b24b3cb7e01",
+    "uuid": "cd4f9809-87eb-8ead-b8f9-a292d7503f26",
     "words": [
       "use",
       "when",

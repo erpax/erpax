@@ -2,11 +2,11 @@
 name: lifestyle
 description: "Use when reasoning about lifestyle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lifestyle"
-coordinate: "vocabulary/lifestyle · 7/descent · e3be8c5c"
-contentUuid: "39346419-6e7a-52c4-b8d4-54075726c39f"
-diamondUuid: "65d6ddf5-b501-81ba-ac90-6202b2375d53"
-uuid: "e3be8c5c-e977-8904-8397-4e550b06a73f"
-horo: 7
+coordinate: "vocabulary/lifestyle · 8/crest · 0010f938"
+contentUuid: "98693476-8930-5e96-a749-cb8019f96f98"
+diamondUuid: "2e5df605-dc50-81ae-98d6-3c76d508b2d8"
+uuid: "0010f938-6914-8207-ac80-e7a9993b3113"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e6f4589a-2c97-8a18-856b-8b4980df589a"
+  computationUuid: "01c367c2-e443-8a10-a443-c1f3a2ace4e4"
   stages:
     - stage: path
       stageUuid: "d08c7b56-4523-8c6a-aa30-14b6bb2bb215"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1f4ae631-35d5-88fb-b462-b4227f673ced"
     - stage: horo
-      stageUuid: "49caadf4-74a0-86ea-bcd6-99e1c9220e93"
+      stageUuid: "9831cdfc-e21b-8908-9399-b80688e4ebd8"
     - stage: seal
       stageUuid: "d8129a2e-5b47-814f-a9cc-ddedd7f062c2"
     - stage: uuid
-      stageUuid: "897c08f8-0445-86fe-a6f2-f21757e3e333"
+      stageUuid: "4bcb1982-89c7-8a1d-88bc-0cbcec0709eb"
 version: 2
 ---
 # lifestyle

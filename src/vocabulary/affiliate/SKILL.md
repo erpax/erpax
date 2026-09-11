@@ -2,11 +2,11 @@
 name: affiliate
 description: "Use when reasoning about affiliate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/affiliate"
-coordinate: "vocabulary/affiliate · 5/round · dae11b50"
-contentUuid: "d12a516f-38f1-5dc8-8384-d1301376a41a"
-diamondUuid: "5fa0f79e-1aca-8c02-887b-a770d8b0ea89"
-uuid: "dae11b50-11c6-8121-b12f-049be7cdde5f"
-horo: 5
+coordinate: "vocabulary/affiliate · 1/base · c4d9bc62"
+contentUuid: "11cd54ee-a52c-50d9-8dd2-97ff2f962517"
+diamondUuid: "a97998f8-1232-899b-b2d2-21a5d9286a53"
+uuid: "c4d9bc62-38d2-8443-97f1-285096d24531"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d8e4234d-0552-8ce6-9313-0c0ae8da023a"
+  computationUuid: "90aa9ec8-bc07-84c6-be60-8f4480a7bfbd"
   stages:
     - stage: path
       stageUuid: "5e167968-0eea-8fe5-b88f-dc0b2b0227c7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b12a6d77-3438-89f5-bc3e-d28e9151f921"
     - stage: horo
-      stageUuid: "9bd6df26-af00-81c5-948a-702156f2a6b4"
+      stageUuid: "14b2ecc4-ad9e-8601-94ed-fac5d2a4e880"
     - stage: seal
       stageUuid: "8a21510b-3441-8a01-b68e-80de47c26b0c"
     - stage: uuid
-      stageUuid: "ef93c42c-3537-8ab2-900e-a36f7c17ec7b"
+      stageUuid: "c52516d1-361c-85b4-8d31-6a89e9404f08"
 version: 2
 ---
 # affiliate

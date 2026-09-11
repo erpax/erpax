@@ -2,11 +2,11 @@
 name: no
 description: "Use when reasoning about no as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/no"
-coordinate: "vocabulary/no · 2/share · 797d08fc"
-contentUuid: "cbb6dc97-4992-595b-93d5-ae6a44e56160"
-diamondUuid: "857a018c-05e9-8778-aaee-8ae0784d039d"
-uuid: "797d08fc-b3e7-8e98-8143-2847cf3f8894"
-horo: 2
+coordinate: "vocabulary/no · 7/descent · 791be8ba"
+contentUuid: "c3f52543-9ef0-5ea5-b6ab-8356ccac4f49"
+diamondUuid: "8d929597-78cb-8d9f-83ab-31f6440a5f58"
+uuid: "791be8ba-a456-85b1-990f-c6d2abab7a4c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2c0e8026-640c-8a10-ade7-89cd9a306d10"
+  computationUuid: "7a664e11-cbcd-83be-afa3-1fda4888682e"
   stages:
     - stage: path
       stageUuid: "8dfa4e51-6c02-861a-a92c-f52c47b9374d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a5203a1f-87a8-83c9-bd46-ab8abdcc237a"
     - stage: horo
-      stageUuid: "0a8b47ca-64dd-84e5-8a67-4ec31596e268"
+      stageUuid: "00678dd1-df0c-8065-9ef1-b13f2b1b5dc4"
     - stage: seal
       stageUuid: "1cdb0a95-fcd0-8993-82a4-f6111e8e5147"
     - stage: uuid
-      stageUuid: "ce37330d-caf5-873b-af8c-d022d7272dfe"
+      stageUuid: "727744d4-50d9-859c-9d54-d86dd1f81b50"
 version: 2
 ---
 # no

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amount",
-    "uuid": "ba84c5c2-2c75-87de-bbd1-2f7fdfb8fc8e",
+    "uuid": "e8683ab8-2d3d-8609-a028-55e33723f024",
     "words": [
       "amount"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about amount — renders integer cents as a fixed-two-decimal string; adds the code. Peppol UBL, ISO 20022, EDIFACT and SAF-T all need that wire form, and four serializers each doing it themselves…",
-    "uuid": "ce47a33f-510c-8fd1-9fe9-e4907d03812f",
+    "uuid": "7180e2e5-af34-8618-9a84-6a1e6625f6bc",
     "words": [
       "use",
       "when",

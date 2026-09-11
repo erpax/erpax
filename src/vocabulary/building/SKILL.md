@@ -2,11 +2,11 @@
 name: building
 description: "Use when reasoning about building as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/building"
-coordinate: "vocabulary/building · 4/weave · 5031aa90"
-contentUuid: "96edd524-a109-5f78-b89c-49984bd26454"
-diamondUuid: "b463396f-abde-8bb9-a4ac-1528a2f09c96"
-uuid: "5031aa90-a646-8316-8f26-bb8c7f95c3b1"
-horo: 4
+coordinate: "vocabulary/building · 2/share · 8b5c4ec0"
+contentUuid: "d64b6ec5-9122-5604-9064-fcc834cdafda"
+diamondUuid: "24a8c30b-cf86-843a-b7c2-4a901360ca6d"
+uuid: "8b5c4ec0-dc3b-8f4b-a9f0-3bfa7ab7168e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0b398eed-5740-8b9e-be07-1b59f8235c15"
+  computationUuid: "416a3225-45b4-8063-bba1-46e45cb5ce15"
   stages:
     - stage: path
       stageUuid: "e3e50b7c-4475-8dda-855e-f6d344ffd1e6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "492d2d22-f5f7-8414-bfd6-cd28abc81954"
     - stage: horo
-      stageUuid: "591300ff-e686-8b0d-9b90-d8490f8f6e59"
+      stageUuid: "98ac767d-bd09-8d01-864e-e9b24fd64a89"
     - stage: seal
       stageUuid: "42f31fd1-540a-8f97-9b9f-b143d25b2c44"
     - stage: uuid
-      stageUuid: "9988c9d8-fb94-8551-b15d-17f61d39b6ba"
+      stageUuid: "bc283b2c-132f-8290-97a9-e1cb4d6dbf45"
 version: 2
 ---
 # building

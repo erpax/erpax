@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cache",
-    "uuid": "e3613a82-cd89-8813-88f2-3e781ff7bb15",
+    "uuid": "c466ab30-5ebd-8a0b-8499-2506a326926b",
     "words": [
       "cache"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cache — Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches.",
-    "uuid": "01414b02-0ee9-8156-b516-73c57036f319",
+    "uuid": "7c6e7c25-750f-8f4e-b2b4-f287a1f4ed39",
     "words": [
       "use",
       "when",

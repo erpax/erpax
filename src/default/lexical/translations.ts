@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lexical",
-    "uuid": "edcd61c0-d64f-81b6-9fc2-82ce6ba4150b",
+    "uuid": "d1d11ae2-1f85-8453-a950-bc5973f1e14a",
     "words": [
       "lexical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lexical — is the base rich-text feature set every editable field shares, including the link validation rules: an internal reference resolves against a collection, an external one must be a…",
-    "uuid": "8941decb-f3d7-8389-8d9d-dc3d80ef3317",
+    "uuid": "df552870-219e-8bc2-99ee-a42a1104d83e",
     "words": [
       "use",
       "when",

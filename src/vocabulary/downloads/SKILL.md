@@ -2,10 +2,10 @@
 name: downloads
 description: "Use when reasoning about downloads as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/downloads"
-coordinate: "vocabulary/downloads · 8/crest · 8abfbbbc"
-contentUuid: "dd890875-7590-575d-8167-4e54151b68b3"
-diamondUuid: "911c4da4-7cae-8fe8-815d-c3341e835ad8"
-uuid: "8abfbbbc-3070-8b5d-8205-dc777f1b9271"
+coordinate: "vocabulary/downloads · 8/crest · 7192d894"
+contentUuid: "be284004-9e65-5cd0-97d9-a4a82a1726d3"
+diamondUuid: "765feac9-32c9-8375-aef1-b86a56a3f3ff"
+uuid: "7192d894-614f-8a3c-8146-bcfbc3773eda"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9803c3dd-a14f-8b81-88b3-e7a50335465b"
+  computationUuid: "7aa1fd01-782b-8418-8d08-52ec32f0fa59"
   stages:
     - stage: path
       stageUuid: "5a31cb74-269e-831b-81af-a6b3bfc0ad23"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4e124a54-090c-8efe-8a1c-91101892c195"
     - stage: horo
-      stageUuid: "81607fb3-2c8e-8909-8349-40d8b39646aa"
+      stageUuid: "88f456f0-408e-8e68-8cc8-6d4464d2258b"
     - stage: seal
       stageUuid: "d61748ad-a255-8b15-93e6-750b042df109"
     - stage: uuid
-      stageUuid: "f7e20f05-9c03-898a-803e-84e99e730e4c"
+      stageUuid: "643952b9-af35-81fe-85dd-0166de216523"
 version: 2
 ---
 # downloads

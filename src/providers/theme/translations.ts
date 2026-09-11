@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "theme",
-    "uuid": "49cde4ae-d5a6-89da-9ddb-234e0c6435c3",
+    "uuid": "a5f409b4-21e5-80e0-922a-35c4facc8ce6",
     "words": [
       "theme"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about theme — Three states, not two. A theme can be **light**, **dark**, or **unset** — and unset does not mean a default was chosen, it means *follow the operating system*.",
-    "uuid": "79b4460a-c719-8a99-ae76-2c40c987d62a",
+    "uuid": "a8980953-6578-8dfc-bc74-4e77b8f04fd1",
     "words": [
       "use",
       "when",

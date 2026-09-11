@@ -2,10 +2,10 @@
 name: damaged
 description: "Use when reasoning about damaged as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/damaged"
-coordinate: "vocabulary/damaged · 8/crest · 837085c4"
-contentUuid: "082183b0-bcb8-56b7-9cb3-de347b5a9129"
-diamondUuid: "805c578f-0487-8659-bcaf-b089e3678ec5"
-uuid: "837085c4-6752-8ac3-89e5-71d4299bc9a5"
+coordinate: "vocabulary/damaged · 8/crest · 45d1a4db"
+contentUuid: "2415216d-43cb-5940-9eec-f5fe1127f9e9"
+diamondUuid: "dc444b02-283e-81f6-9d61-6edd0ba21b62"
+uuid: "45d1a4db-1f92-8d96-a166-a4b1c96aaef9"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "84ba2fd4-fcab-84df-8f3e-1b569015d20b"
+  computationUuid: "da032c64-564b-87c5-aee1-bd61b4ba9c35"
   stages:
     - stage: path
       stageUuid: "556a5c8c-fc07-8108-bc36-4ca1033f8c2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3a471bf1-88b7-8dd0-bc5a-56b24c7aeacf"
     - stage: horo
-      stageUuid: "0b36bc11-b96c-84f7-97e2-0440091ec990"
+      stageUuid: "c17aba94-97b0-8f23-97a6-0a20ddd7f60e"
     - stage: seal
       stageUuid: "a5988575-8730-8b37-a60a-3413dae3fff8"
     - stage: uuid
-      stageUuid: "a5229aaf-e958-8ac7-8214-3358b41d6954"
+      stageUuid: "4569da2f-cf83-8041-ac6c-effba820623a"
 version: 2
 ---
 # damaged

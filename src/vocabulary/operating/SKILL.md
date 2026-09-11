@@ -2,10 +2,10 @@
 name: operating
 description: "Use when reasoning about operating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/operating"
-coordinate: "vocabulary/operating · 1/base · 95a2c9f3"
-contentUuid: "3bb5edaf-eb2f-5bc9-8e36-57dccb57ca38"
-diamondUuid: "d33ba6ba-7a24-82aa-a79f-f747ebef6c50"
-uuid: "95a2c9f3-55fb-8bf4-90c5-53c72eabb735"
+coordinate: "vocabulary/operating · 1/base · d3da8d00"
+contentUuid: "57ef12a5-1baf-54af-b539-3acd3ae58440"
+diamondUuid: "a93d7b80-9a69-8982-ab56-500b47435250"
+uuid: "d3da8d00-19be-85d0-bfee-4523ee7ef623"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5bba159a-dd28-822e-8eb7-ea15212a240d"
+  computationUuid: "a75741eb-c320-8f01-9f0e-6319b16f61d4"
   stages:
     - stage: path
       stageUuid: "94ae2c05-1a0f-8f02-be7c-cf9898bf110c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b43005aa-2343-8a7f-8c3d-0e8c1b60f042"
     - stage: horo
-      stageUuid: "22d8948a-abfc-8fa4-8bf1-ecea887f5a98"
+      stageUuid: "587df18b-b43e-88d3-b34a-6ed602305677"
     - stage: seal
       stageUuid: "c2aeba6f-a2be-8a06-8e82-c88add1f50c7"
     - stage: uuid
-      stageUuid: "28fab1cc-3c80-8913-80c9-99a574e5cfcf"
+      stageUuid: "c517b1a9-ab77-817e-93e6-a8f14636ccb9"
 version: 2
 ---
 # operating

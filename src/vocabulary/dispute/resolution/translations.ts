@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "resolution",
-    "uuid": "708eacf2-91b6-839e-8a44-a7442cca8da5",
+    "uuid": "0da6936e-0143-8312-88e4-a20e25525488",
     "words": [
       "resolution"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration).",
-    "uuid": "ad7d1fbe-7185-812d-9125-91e2d9145efe",
+    "uuid": "8ec1dde0-3741-8d3f-9b57-2adc52c14adb",
     "words": [
       "use",
       "when",

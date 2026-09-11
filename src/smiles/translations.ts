@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "smiles",
-    "uuid": "a7d77905-268b-818d-b636-73fe0fa7bb06",
+    "uuid": "bac07644-4738-8bf7-b2c9-52bb9fc242be",
     "words": [
       "smiles"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about smiles — A specification in form of a line notation for describing the structure of chemical species using short ASCII strings. Double bond stereochemistry \\ indicators may need to be escap",
-    "uuid": "4417ff92-6900-8d5a-8fb1-007767caaddc",
+    "uuid": "4034bd3b-561b-88ae-9a89-1838a9570787",
     "words": [
       "use",
       "when",

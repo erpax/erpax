@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reverse",
-    "uuid": "ec544fc3-f9d3-8236-ba9c-8b8247901501",
+    "uuid": "7e32dac7-ca10-8abb-be84-cd95f492ff10",
     "words": [
       "reverse"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when correcting a fiscalised sale — issues the reversing entry that Наредба Н-18 requires, because a fiscal sale is never deleted and both entries remain visible.",
-    "uuid": "f87b1c56-fc42-8b71-a2aa-d3adf81304b0",
+    "uuid": "e4fb4c55-5e5b-87a3-ab96-277eadc27adb",
     "words": [
       "use",
       "when",

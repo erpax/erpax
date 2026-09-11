@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mercy",
-    "uuid": "dc9ab644-912e-8164-99dc-39408aabfd33",
+    "uuid": "8ead7ddc-a443-8a32-bc2f-cc884defa8ce",
     "words": [
       "mercy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the voluntary release of a debt that is genuinely owed — the creditor zeroing a real debit on the books, never a forged balance. The dual of karma: karma is the debt read down the lineage, mercy is the debt cancelled at the source. Distinct from grace (unearned credit) — mercy is earned punishment withheld.",
-    "uuid": "5ce19fee-eaa8-8054-a018-f5a162615439",
+    "uuid": "b30d6c60-476d-8195-b672-9fa28029f42c",
     "words": [
       "use",
       "when",

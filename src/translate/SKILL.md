@@ -2,11 +2,11 @@
 name: translate
 description: "Use when computing i18n keys and humanizing them into default labels for the translations dropdown — the computed-default + DB-override pattern (DB value > humanized default > raw key). Also enforces the strict singular-model / plural-collection matrix (translation ↔ translations), itself a tamper-cost dimension."
 atomPath: translate
-coordinate: "translate · 8/crest · 4e9e63ed"
-contentUuid: "1bb59569-7cf2-5594-9f65-c507b32ff876"
-diamondUuid: "4e810d15-d889-8a3d-aee9-40ce07fcd17b"
-uuid: "4e9e63ed-cbbe-8b45-95ae-ccafd4500d49"
-horo: 8
+coordinate: "translate · 1/base · 0735977e"
+contentUuid: "8ab903dd-f099-5d56-9b68-7e8daf8c9ae2"
+diamondUuid: "cb3f4462-11cd-8d87-9435-87766b0dd237"
+uuid: "0735977e-45cc-8ffb-a1ea-b539bd946129"
+horo: 1
 typography:
   partition: translate
   bondDegree: 61
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "76e173fa-3f01-80ea-9d20-7d88298d0190"
+  computationUuid: "19f0f682-3361-8a2b-ae1b-4b291ee95d41"
   stages:
     - stage: path
       stageUuid: "631af55b-9a03-8124-b824-dadaac785f46"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "6f4ee42a-9438-8bae-87cf-5dd7fd58323c"
     - stage: horo
-      stageUuid: "a9ec51b3-e509-85fe-92c4-4c204d82a243"
+      stageUuid: "6994c52f-894a-8006-91f5-2315138478cf"
     - stage: seal
       stageUuid: "4ff0cb0e-9a30-8621-866d-a1c18bb7ea98"
     - stage: uuid
-      stageUuid: "a4c101b5-f213-855c-b55b-f816f6e7afe0"
+      stageUuid: "ca43e2fe-d37c-818d-bddb-f0b156ad9709"
 version: 2
 ---
 # translate — compute + humanize keys; enforce the singular/plural matrix (under [[localize]])

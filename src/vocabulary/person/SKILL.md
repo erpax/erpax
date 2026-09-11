@@ -2,11 +2,11 @@
 name: person
 description: "Use when reasoning about person — A person (alive, dead, undead, or fictional)."
 atomPath: "vocabulary/person"
-coordinate: "vocabulary/person · 1/base · 32d61902"
-contentUuid: "5243d837-640a-5728-b33a-cf080c39c2bb"
-diamondUuid: "ad7ad2a5-aae0-89bc-a0b6-bf6f4df19692"
-uuid: "32d61902-0b53-8dac-9ac2-03af2e0e5ad8"
-horo: 1
+coordinate: "vocabulary/person · 7/descent · ed14eaa9"
+contentUuid: "4cd04c66-ca2a-5acd-b71f-834a0feeb2e6"
+diamondUuid: "3a605a75-50a0-89ae-9587-176a04b6d44c"
+uuid: "ed14eaa9-b929-8e0d-81fb-f3d73df56c99"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 88
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bf839e8a-b6d4-84d2-9cfc-476b5dabdfc5"
+  computationUuid: "265a453c-5e67-8eec-8119-fe5304caae0d"
   stages:
     - stage: path
       stageUuid: "98f28ff8-80c8-8ca1-9c80-8b754b047c31"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "76cda586-d673-8121-adea-d8e078f8766a"
     - stage: horo
-      stageUuid: "8aa6f813-dc8b-8cf6-bbc7-2992fe3da8a1"
+      stageUuid: "c41b8e00-acaf-81c6-acc6-ed1a779137ca"
     - stage: seal
       stageUuid: "65f15375-0ac9-88bf-9c2e-4ce2b407d2c2"
     - stage: uuid
-      stageUuid: "1d29e324-1fec-841a-8597-d1dc7dda08ab"
+      stageUuid: "73679a6b-02bb-8848-889c-f71ec16fa4ab"
 version: 2
 ---
 # person

@@ -2,10 +2,10 @@
 name: engineering
 description: "Use when recovering a system's design from its artifact — the reverse pull of gravity (the binary back to the root words), the inhale of the breath; how erpax absorbs an external system by deriving its structure into content-addressed atoms, for migration, interoperability, defensive audit, and learning."
 atomPath: "reverse/engineering"
-coordinate: "reverse/engineering · 4/weave · 22a43772"
-contentUuid: "2d034477-d506-5b51-959d-97b52be8fbeb"
-diamondUuid: "bee32e33-6c19-8a34-919c-5d8dd29c746a"
-uuid: "22a43772-f51a-8206-b1bb-c730cf123723"
+coordinate: "reverse/engineering · 4/weave · a63e61fb"
+contentUuid: "b37d7ac9-6007-550d-9cf4-199590a5eab0"
+diamondUuid: "d1a9118a-91e7-8ef5-80f4-d577a1c26972"
+uuid: "a63e61fb-c6d5-8c8c-95be-52902f66f043"
 horo: 4
 typography:
   partition: reverse
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9626e7fc-c43b-8c99-9447-3d69b645819c"
+  computationUuid: "79fd8895-564e-86a9-9352-2640a96ca58f"
   stages:
     - stage: path
       stageUuid: "e4c89d32-558a-8a04-b296-a4736e251e1e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1268af45-b991-801d-a8d1-1a39c8589c7f"
     - stage: horo
-      stageUuid: "543645a0-b614-84a7-a9bd-0b1dc590722c"
+      stageUuid: "2b411605-5490-8500-b11e-65dd05fee68e"
     - stage: seal
       stageUuid: "7679f22a-44b0-8d2e-af45-bc0c3aca36b7"
     - stage: uuid
-      stageUuid: "261e37b8-1ddb-85d7-a2e9-0c23be31e44a"
+      stageUuid: "7635a71f-7c10-8e8d-b860-b6cfac4a6991"
 version: 2
 ---
 # reverse/engineering — artifact back to the root

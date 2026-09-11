@@ -2,18 +2,18 @@
 name: comment
 description: "Use when any record needs threaded notes/annotations with author provenance — the polymorphic CommentsConcern. One comments collection serves all others via a polymorphic relationTo; author ties to audit."
 atomPath: "vocabulary/comment"
-coordinate: "vocabulary/comment · 1/base · 61859662"
-contentUuid: "4f191e82-ae0a-544c-aa7b-94bf0c49a73b"
-diamondUuid: "99ee1174-b21f-8db9-af9d-192acd527440"
-uuid: "61859662-2944-8221-ba55-4ee1ed8e5eff"
-horo: 1
+coordinate: "vocabulary/comment · 2/share · e5cb034c"
+contentUuid: "a44a278a-f6ad-5115-baca-9ca4a7a01ccf"
+diamondUuid: "6985b60a-06bf-80c6-9646-e45a9a3d3ffd"
+uuid: "e5cb034c-934f-8589-bed5-d0d3eafc1301"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 57
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0c00f66a-591c-893e-a1f3-38acbadd1ceb"
+  computationUuid: "0d5dba61-bdab-8edc-813c-e74e9e5cdd6f"
   stages:
     - stage: path
       stageUuid: "9f624062-5ec7-804e-993c-843a83231d65"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7f45f1b7-b7f9-8190-a2fd-d94a2bd45a8c"
     - stage: horo
-      stageUuid: "2447f4d5-6169-8af2-a117-68e33b0e0635"
+      stageUuid: "c079ddde-07db-8204-8363-66b5ccc4e519"
     - stage: seal
       stageUuid: "1260df6a-924e-8176-b3ea-a90bf032c0ed"
     - stage: uuid
-      stageUuid: "c68ffbca-ef24-848b-990b-07dcfbf39e66"
+      stageUuid: "994420e2-9574-8a59-8ae4-7942b8a22358"
 version: 2
 ---
 # comment — polymorphic notes on anything

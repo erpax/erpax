@@ -2,11 +2,11 @@
 name: angle
 description: "Use when the fold must be read as a rotation — the doubling map ×2 (the fold's generator) acts on the six units of (ℤ/9ℤ)* as an exact 60° rotation, because that group is cyclic of order 6. One fold = 60°; opposition (×8 ≡ −1) = 180° = three folds; the axis {3,6,9} is off the orbit. This is the angle the flat computations missed. Rigorous group theory; the hue/torus mapping is the model layer."
 atomPath: angle
-coordinate: "angle · 8/crest · b5376664"
-contentUuid: "8a57b790-d86c-563a-9fb2-145fd1ceb6d0"
-diamondUuid: "2f230026-4589-8cc6-8375-056079e02970"
-uuid: "b5376664-dcdf-86da-9c99-ceafa9dfe983"
-horo: 8
+coordinate: "angle · 1/base · e1df34dc"
+contentUuid: "54db4ce5-4e3e-5014-bd49-95ecea3a0e13"
+diamondUuid: "841e1a8e-4111-8ea8-8846-8a7d8b6d805d"
+uuid: "e1df34dc-5a25-8891-981c-71e509cad72a"
+horo: 1
 typography:
   partition: angle
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "group theory — (Z/9Z)"
 bindings: []
 signatures:
-  computationUuid: "73553fda-8c20-8dc2-9176-052d7341a7ab"
+  computationUuid: "50b79831-b347-8ce2-aba9-2a84c9a2d7c7"
   stages:
     - stage: path
       stageUuid: "a4328d87-5769-8cc9-a092-9bf75b3eab50"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b7f54763-a3e2-800e-b4f1-e731f8cf5b94"
     - stage: horo
-      stageUuid: "e2dc671f-f1e0-8c40-9dcc-d35e34f87afd"
+      stageUuid: "8feb14c7-a310-8b0e-9d98-75af126e27a8"
     - stage: seal
       stageUuid: "f60d0a81-bd03-85f1-ad23-1b679fb10263"
     - stage: uuid
-      stageUuid: "a8ff6bf3-1da4-811d-bc61-e9f25af86611"
+      stageUuid: "174753e0-8d02-8297-9740-834e50f4b7df"
 version: 2
 ---
 # angle — the fold turns 60°

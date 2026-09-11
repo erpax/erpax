@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recursive",
-    "uuid": "ff6a3da0-4c6f-86a3-a641-e1af6b4cd280",
+    "uuid": "4543ea6e-3f09-81e0-8a4b-0fb6c412f630",
     "words": [
       "recursive"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about recursive — Recursive basis recognition - system generates and observes itself simultaneously",
-    "uuid": "eab33193-3a4d-83ff-be7a-277d28ecd4ad",
+    "uuid": "e394cca0-6d48-8c2c-a92c-e7901b39d0c0",
     "words": [
       "use",
       "when",

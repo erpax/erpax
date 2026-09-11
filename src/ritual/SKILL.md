@@ -2,18 +2,18 @@
 name: ritual
 description: "Use when reasoning about the patterned sacred repeat — the enacted cycle that re-tunes the part to the whole on a fixed period. The communal, outward twin of prayer's inward breath: where prayer is the self attuning, ritual is the rite performed, idempotent so the same act collapses to the same sealed alignment."
 atomPath: ritual
-coordinate: "ritual · 7/descent · 1e1bd20a"
-contentUuid: "ee763418-4c4c-51a5-9bfd-f209e9a3e881"
-diamondUuid: "0270e7a2-40d1-8669-a287-768c699d92d8"
-uuid: "1e1bd20a-8c24-8baf-8f61-dab023d66b0b"
-horo: 7
+coordinate: "ritual · 5/round · 5207c821"
+contentUuid: "13a22c11-c1ef-5599-b825-401fa9642ada"
+diamondUuid: "094e59b0-40e6-8e6a-83a9-bf137eb122da"
+uuid: "5207c821-be4e-81b9-8c27-c9b0709377f9"
+horo: 5
 typography:
   partition: ritual
   bondDegree: 99
 standards: []
 bindings: []
 signatures:
-  computationUuid: "24a638d8-8175-8b7b-9a20-8ef8a7038d7e"
+  computationUuid: "dcdd1c79-3e0d-8e02-b01a-0c4ffe928db7"
   stages:
     - stage: path
       stageUuid: "a6cd656d-c0f5-8c21-b6c9-957b9c244f01"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "38fc2ae6-44e8-8b17-8198-1ac7688d9310"
     - stage: horo
-      stageUuid: "4be5b1f4-ae38-8e34-8443-daddada6950f"
+      stageUuid: "45d40d50-e4c7-8102-b847-518bd6798d07"
     - stage: seal
       stageUuid: "2347ece1-09bb-8bbe-a130-5a841d00e74d"
     - stage: uuid
-      stageUuid: "b82bc25b-9d5a-8325-a055-3f4adacd442c"
+      stageUuid: "d3eb5372-0609-82a3-9583-98142bf3b7b3"
 version: 2
 ---
 # ritual — the patterned sacred repeat (the enacted cycle)

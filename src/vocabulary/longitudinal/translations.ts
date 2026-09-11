@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "longitudinal",
-    "uuid": "ad91b812-6036-8ba0-956d-5bb977d2ee97",
+    "uuid": "c85b5d64-ee18-873b-808c-84bd4d17b2e7",
     "words": [
       "longitudinal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about longitudinal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "e8c0214c-05f1-893d-8014-0971e62f2997",
+    "uuid": "0c8e35a6-ec9c-827e-b142-bb183472a60f",
     "words": [
       "use",
       "when",

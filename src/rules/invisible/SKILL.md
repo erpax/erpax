@@ -2,11 +2,11 @@
 name: invisible
 description: "Use when matter lives at a path that cannot be addressed — a folder whose name is not one lowercase word has no lawful path, so no content-uuid, so no matrix node, so the fold never deduplicates it. This is NOT the alphanumeric-name axis restated: that counts NAMES and reads as cosmetic; this counts MATTER the corpus cannot see, which is where a second implementation grows unnoticed. Run: tsx src/rules/invisible/index.ts"
 atomPath: "rules/invisible"
-coordinate: "rules/invisible · 1/base · 265940f5"
-contentUuid: "77815327-e8d8-5cd0-945a-99366dc20f05"
-diamondUuid: "285c9a84-e7d8-86fa-98ef-e47506736a1d"
-uuid: "265940f5-2dea-8967-afe1-8e9373536a8c"
-horo: 1
+coordinate: "rules/invisible · 4/weave · fa57a9ea"
+contentUuid: "ea4afb1f-c502-5b2c-bb14-b7dba84f788f"
+diamondUuid: "ca967a72-421f-8ba7-bbe2-b381ac666ff6"
+uuid: "fa57a9ea-8b7c-8604-9266-66df0629b02d"
+horo: 4
 typography:
   partition: rules
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.6 maintainability — one source, addressable"
 bindings: []
 signatures:
-  computationUuid: "64f3c7ac-8068-8bf7-96c8-106b9a7491cd"
+  computationUuid: "75e7cf23-be22-8f74-b4b7-01946a53c38f"
   stages:
     - stage: path
       stageUuid: "ecc36d2f-56e5-8528-b84d-22b7535d918d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1ddf1daa-6e28-877d-ab8b-3f4af2d89603"
     - stage: horo
-      stageUuid: "c3045aeb-fc7a-81b4-9410-ac55aadc5e0e"
+      stageUuid: "8ffd8975-6c5b-88fc-bf90-9c12b7af2743"
     - stage: seal
       stageUuid: "20544ce3-8c16-86e6-95d2-585e70847def"
     - stage: uuid
-      stageUuid: "340a6824-245b-8896-a777-28ec5d5173a9"
+      stageUuid: "d618848b-86f4-8c12-b1c5-99f1b40d8579"
 version: 2
 ---
 # invisible — if the path does not match the name, the quantum breaks

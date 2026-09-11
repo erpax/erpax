@@ -2,11 +2,11 @@
 name: electrician
 description: Use when reasoning about electrician — An electrician.
 atomPath: "vocabulary/electrician"
-coordinate: "vocabulary/electrician · 8/crest · d9121458"
-contentUuid: "5a6bbefb-b87f-545d-bdb2-be1f7fb966a0"
-diamondUuid: "cc153161-651f-8c3d-a92f-2f913899a6d4"
-uuid: "d9121458-d870-8ef3-af4b-025488baea8f"
-horo: 8
+coordinate: "vocabulary/electrician · 2/share · 85cebe3e"
+contentUuid: "58f7c543-4149-52c2-9a40-c758f6bc72ed"
+diamondUuid: "d979515d-44f7-829a-b29c-2b601574e8e6"
+uuid: "85cebe3e-edba-8fd7-b8d8-dc9816e272f9"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1995260d-04d2-8fc6-a3a2-97cab7a0c745"
+  computationUuid: "c5efc360-c6a2-8f3b-bbb0-d7577d1e1aa9"
   stages:
     - stage: path
       stageUuid: "470cafe3-9c81-856a-ac3f-eb63a7f80fa0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f9eff2db-1592-827d-b0cc-d64882c0ed59"
     - stage: horo
-      stageUuid: "7071b358-146c-85fb-9541-ef7de148973f"
+      stageUuid: "405bf2c7-615b-8f43-86e0-c65cb7b1b824"
     - stage: seal
       stageUuid: "3d2e1445-4c47-8fe0-b5cc-ad4854809f37"
     - stage: uuid
-      stageUuid: "82d3c665-97e7-8e3f-a764-d12cf9625a72"
+      stageUuid: "6292f6d8-1676-8275-bb9e-9a1c08d30988"
 version: 2
 ---
 # electrician

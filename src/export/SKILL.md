@@ -2,11 +2,11 @@
 name: export
 description: "Use when reasoning about export — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: export
-coordinate: "export · 4/weave · 23648ded"
-contentUuid: "78ba28f1-2e61-566a-8688-bdd53047488e"
-diamondUuid: "b9321882-52c4-8b4f-b443-7fce2783f0b0"
-uuid: "23648ded-2a08-8151-a9d6-907ba8c6aa53"
-horo: 4
+coordinate: "export · 1/base · 176aeb0f"
+contentUuid: "3b544b73-e0b6-5b5b-b32b-10ff6cabf899"
+diamondUuid: "338d0b4a-29a0-85f5-b20c-2f0626b065ac"
+uuid: "176aeb0f-7973-8590-8281-afe0571568ec"
+horo: 1
 typography:
   partition: export
   bondDegree: 12
@@ -22,7 +22,7 @@ standards:
   - "UBL-2.1"
 bindings: []
 signatures:
-  computationUuid: "5f7beda7-d6c7-8e86-a29e-227e96a5091f"
+  computationUuid: "ad170059-c4d6-8fa9-8ed5-3cc5868ae800"
   stages:
     - stage: path
       stageUuid: "176593bd-77ff-86f8-9041-dde4a8769734"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "dc5fc203-e4a0-8384-9e5d-ab7773cdfbd0"
     - stage: horo
-      stageUuid: "d6247282-6ca2-8df8-abd3-986ddf83fb88"
+      stageUuid: "f2dc2c51-9a33-8b37-bf94-b362ef030128"
     - stage: seal
       stageUuid: "c58ed18d-8ff1-8e88-9581-9ad72050ca56"
     - stage: uuid
-      stageUuid: "fca7605f-520d-89de-909d-ed69b16f2ca3"
+      stageUuid: "b58ce1b4-d8df-8175-88c0-bafb8b187d22"
 version: 2
 ---
 # export

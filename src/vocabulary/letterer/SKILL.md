@@ -2,11 +2,11 @@
 name: letterer
 description: "Use when reasoning about letterer — The individual who adds lettering, including speech balloons and sound effects, to artwork."
 atomPath: "vocabulary/letterer"
-coordinate: "vocabulary/letterer · 8/crest · 99cbcc3d"
-contentUuid: "22e3ce44-b9f8-50f1-b598-326c392ca6ad"
-diamondUuid: "0022ebbd-b06d-8260-8d40-c49926fb8bf1"
-uuid: "99cbcc3d-a5ca-8318-b897-b9005457db38"
-horo: 8
+coordinate: "vocabulary/letterer · 4/weave · be66f0ff"
+contentUuid: "581df050-9ae4-5462-8c1f-506b020cee8d"
+diamondUuid: "366d98e3-9093-891b-86d5-697e9c243404"
+uuid: "be66f0ff-8949-83ba-aa98-b49fc4213282"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "623e79a5-54e4-8be3-a79b-15aa48d9d226"
+  computationUuid: "bf8d39d8-3377-8648-8619-a6914a90cc69"
   stages:
     - stage: path
       stageUuid: "ae67d3c0-8f47-852b-8358-926784a095b9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "af2a265f-1238-8015-a409-407ff23d423e"
     - stage: horo
-      stageUuid: "179a256e-3c13-8891-ba2d-4e441b8783f5"
+      stageUuid: "25601454-6b2a-801b-94ee-d0a8a1bde4e5"
     - stage: seal
       stageUuid: "9b788668-f519-8e6e-a675-1028c65435d3"
     - stage: uuid
-      stageUuid: "54512033-8d16-8003-9791-d84755d7f5d9"
+      stageUuid: "e2c9c007-9fdf-8d25-95d7-93e2662a246f"
 version: 2
 ---
 # letterer

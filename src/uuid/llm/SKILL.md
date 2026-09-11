@@ -2,11 +2,11 @@
 name: llm
 description: "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload."
 atomPath: "uuid/llm"
-coordinate: "uuid/llm · 7/descent · 07fe5c04"
-contentUuid: "0e89ac39-6870-5417-bb08-ea7788a4caae"
-diamondUuid: "1aec7e8d-4165-89db-b576-67e5d84dd21b"
-uuid: "07fe5c04-a458-8266-9ccc-b0931a66c779"
-horo: 7
+coordinate: "uuid/llm · 1/base · b6325c69"
+contentUuid: "f7726f51-7924-5591-844d-b6cb4b5aaf17"
+diamondUuid: "b424f045-6369-8fbe-99fe-b5f66f990c26"
+uuid: "b6325c69-d2b1-886d-b6d1-3783c7dec00b"
+horo: 1
 typography:
   partition: uuid
   bondDegree: 68
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fcb6c3d2-11c6-8b50-90fd-0c828e24ad6e"
+  computationUuid: "fd858ee2-4356-8e9b-b077-78860107dbcb"
   stages:
     - stage: path
       stageUuid: "3306117f-5959-818c-879b-07997b414fc3"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "6755e222-b024-8769-9485-722ecf10c062"
     - stage: horo
-      stageUuid: "3f0a95a3-31fd-8adc-9144-cc9247c46c03"
+      stageUuid: "dae936e8-3801-8c8f-b5b0-475249063ee5"
     - stage: seal
       stageUuid: "e9913d41-a98b-8880-b7e7-2c1fa344e943"
     - stage: uuid
-      stageUuid: "f598fe8b-74f7-8a4c-90c2-f1ce2efce15b"
+      stageUuid: "8ce3d5ee-7b0d-8303-a0bd-b16dd2cdb80d"
 version: 2
 ---
 # uuid/llm — the INHALE: a uuid IS the prompt

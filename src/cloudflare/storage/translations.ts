@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "storage",
-    "uuid": "7ae4d8f4-b37e-8603-8870-e405eeba337f",
+    "uuid": "50bb4cef-ac6a-8f87-99e8-e21c931a1184",
     "words": [
       "storage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about storage — Tenant-scoped KV, R2, Vectorize, and Durable Object mediators",
-    "uuid": "f387b4e7-176c-8a34-9711-71981b8832a8",
+    "uuid": "7ee40fa7-0e1d-81b1-80df-acec3d6ac4ca",
     "words": [
       "use",
       "when",

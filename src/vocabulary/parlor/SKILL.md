@@ -2,11 +2,11 @@
 name: parlor
 description: "Use when reasoning about parlor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/parlor"
-coordinate: "vocabulary/parlor · 2/share · babaef63"
-contentUuid: "86e3fae9-b221-5140-bcfa-659fd2d25ecc"
-diamondUuid: "db3cf909-c7a7-8ae9-bf31-45d4bb0eb9e7"
-uuid: "babaef63-7efa-8c30-9177-2de7a0bc73e2"
-horo: 2
+coordinate: "vocabulary/parlor · 5/round · 049d64cf"
+contentUuid: "33b4eb27-1070-5017-a870-27c7d645b11e"
+diamondUuid: "39248263-a29c-85a7-923d-d278eb803f04"
+uuid: "049d64cf-ed72-85bc-9f6c-7010328a08c2"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6e429fba-7982-878b-a1df-1bc13e918926"
+  computationUuid: "5ce9acb4-04ff-843c-870b-ec9888c98880"
   stages:
     - stage: path
       stageUuid: "6fd208d2-fe57-8157-9ebb-ff6662f3add3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b54cc80-3e83-8836-a78d-0b1abf424a10"
     - stage: horo
-      stageUuid: "0dada9f3-ba1e-8ad4-a29c-95690a8e693d"
+      stageUuid: "2f2930c6-76d9-8d14-91c9-1d963cec9555"
     - stage: seal
       stageUuid: "453a930c-3252-83be-9a75-519ac4e5291c"
     - stage: uuid
-      stageUuid: "5626346f-7c6a-8a6d-92b9-63e0ded69c28"
+      stageUuid: "eeb364c9-08b9-8295-8eb3-809b25771a67"
 version: 2
 ---
 # parlor

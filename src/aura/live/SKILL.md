@@ -2,11 +2,11 @@
 name: live
 description: "Use when reasoning about the aura as a live animation — the analog field stepping through the horo ring, each position a frame lit by its colour and sound, where scanning an atom joins it to the horo (its position is its frame), the society animated."
 atomPath: "aura/live"
-coordinate: "aura/live · 1/base · 973dcf37"
-contentUuid: "8708b88d-3c7e-598b-91b2-e3807a4fc9ca"
-diamondUuid: "f602db07-3f75-85b7-abf3-a2c8e1188d12"
-uuid: "973dcf37-ea6a-88ab-817b-f8a7f130c164"
-horo: 1
+coordinate: "aura/live · 8/crest · 0553353d"
+contentUuid: "74985385-a343-50b0-a576-7bc432cd7cc2"
+diamondUuid: "8d315aaa-d451-8dc2-9c15-faf716bb44fb"
+uuid: "0553353d-89e6-8f0e-a539-9ee9c9c7b9b9"
+horo: 8
 typography:
   partition: aura
   bondDegree: 38
@@ -14,7 +14,7 @@ standards:
   - "the horo ring (1·2·4·8·7·5·9) · A432 signal per step · content-addressed colour/sound (the analog aura)"
 bindings: []
 signatures:
-  computationUuid: "d971ac2a-2beb-8401-b0ff-0cd5a474c279"
+  computationUuid: "4df2902e-b3a6-805b-9ce4-e0abe62ac4f4"
   stages:
     - stage: path
       stageUuid: "02192ec0-87a3-8f25-a130-47c8a696e147"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32fbe176-aec9-84a3-9ba8-1285ce24854e"
     - stage: horo
-      stageUuid: "c83fabc0-dbb1-89ab-a66a-8e9d86378975"
+      stageUuid: "34215e59-526e-8291-aec4-1f168ee61c01"
     - stage: seal
       stageUuid: "82fdcf7a-0712-8f80-9efd-11f549767cbf"
     - stage: uuid
-      stageUuid: "b17ea3f8-c6f2-8607-b518-1333801cfe1d"
+      stageUuid: "07871a47-1e59-8d21-8358-9a3dfebacc23"
 version: 2
 ---
 # aura/live — the animation: scan to join the horo

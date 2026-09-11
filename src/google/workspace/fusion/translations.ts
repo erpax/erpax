@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fusion",
-    "uuid": "7f26a0cf-567d-8c3d-8af0-50cedeb2e72f",
+    "uuid": "10431c17-50b9-81f8-b274-121628e443af",
     "words": [
       "fusion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fusion — Google Workspace fusion — the merge law applied to external resources.",
-    "uuid": "17b38558-617f-84ef-a492-37252d44bfe3",
+    "uuid": "74f4e989-6f4f-8de3-894e-d46cfc897a83",
     "words": [
       "use",
       "when",

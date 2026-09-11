@@ -2,11 +2,11 @@
 name: outcome
 description: "Use when reasoning about outcome as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/outcome"
-coordinate: "vocabulary/outcome · 5/round · f8fd04bf"
-contentUuid: "7f018dd8-776f-5368-b57f-ff227227df68"
-diamondUuid: "37a794af-8011-851c-9e9a-3dd0fa381eea"
-uuid: "f8fd04bf-d5b8-88f0-8eaf-8b33064b4a88"
-horo: 5
+coordinate: "vocabulary/outcome · 8/crest · 25aa97ae"
+contentUuid: "2a4e7bf9-0fc0-5646-849b-ca7944671bba"
+diamondUuid: "3610b965-6823-89aa-a8a4-4ae320fefbed"
+uuid: "25aa97ae-9c6a-8db1-9e6b-1a9bcb4462e0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "af2a1d2a-ecc0-8c44-8974-b33303136490"
+  computationUuid: "245effce-e938-80e2-890a-96207f88fa73"
   stages:
     - stage: path
       stageUuid: "e1bd99db-3a7d-8cfa-bba8-8cdb12c0af92"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "17c656b6-6bda-8a7e-9950-79df7ba395ae"
     - stage: horo
-      stageUuid: "3034deb9-c9b2-8317-bf8b-9ff26fdc404a"
+      stageUuid: "03a319c0-07ca-8997-9a7f-28dc62c1636d"
     - stage: seal
       stageUuid: "a3a30776-c9ee-816b-957e-e4e3f6af11bb"
     - stage: uuid
-      stageUuid: "fda9e161-e325-88bb-9186-aebc5418bb0f"
+      stageUuid: "a18123a0-8117-81e9-95d0-582ec22b000c"
 version: 2
 ---
 # outcome

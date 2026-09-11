@@ -2,10 +2,10 @@
 name: failures
 description: "Use when capturing, retrying, or auditing failed transactions — payment retries, e-invoice rejections, bank-import errors, GL-post failures — with retry count, error payload, escalation status, and SOX §404 disposition evidence. The active operator error-queue and failure-audit trail."
 atomPath: "transaction/failures"
-coordinate: "transaction/failures · 5/round · 048e35fe"
-contentUuid: "d764fab9-1ae7-5163-8065-879cee692795"
-diamondUuid: "ecd946af-b995-8c46-ba63-5e2077fc38ba"
-uuid: "048e35fe-394d-8d73-8018-af0e058714d1"
+coordinate: "transaction/failures · 5/round · a155a770"
+contentUuid: "54ee1d85-3355-577a-a3d2-b4a7c21fad7f"
+diamondUuid: "de2a8186-ef4a-88f6-a3bb-481b51ef0936"
+uuid: "a155a770-fd8c-87ea-9632-ba2322031ef0"
 horo: 5
 typography:
   partition: transaction
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4db79d01-885f-8580-92ff-f64a39bf116d"
+  computationUuid: "e27faeb3-e230-8100-8591-d9165e4480f1"
   stages:
     - stage: path
       stageUuid: "ea3765e6-99c3-82c9-86b2-84b37bc53e86"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "73dc0222-02c3-82b4-8d58-e3ad1ef724cd"
     - stage: horo
-      stageUuid: "3bd1ecaf-ea80-88bf-9912-d9acf32f71c6"
+      stageUuid: "5fcb1327-2a74-8362-a2f0-3c6657497e70"
     - stage: seal
       stageUuid: "137850dc-a305-8ff1-ab4a-60612b60bd37"
     - stage: uuid
-      stageUuid: "b549e642-60df-8565-8667-760a5f64bfa9"
+      stageUuid: "2d7bcc26-2181-8207-94ea-c9861c9b778d"
 version: 2
 ---
 # transaction-failures

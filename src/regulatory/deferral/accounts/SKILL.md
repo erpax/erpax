@@ -2,11 +2,11 @@
 name: accounts
 description: "Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register."
 atomPath: "regulatory/deferral/accounts"
-coordinate: "regulatory/deferral/accounts · 2/share · a21bf81b"
-contentUuid: "d9caa420-19f2-5de2-8507-3e69e456bd9a"
-diamondUuid: "e5078964-df98-88fd-8403-9f6359c4d010"
-uuid: "a21bf81b-6d7c-8e58-aa05-fb79b8da9b88"
-horo: 2
+coordinate: "regulatory/deferral/accounts · 4/weave · d25dbd5d"
+contentUuid: "b2577d57-17b7-5b92-a8ca-a66ec633b6cb"
+diamondUuid: "59f89345-3a22-8e81-bfbf-f0447e7d0681"
+uuid: "d25dbd5d-4f12-8451-b816-788652025598"
+horo: 4
 typography:
   partition: regulatory
   bondDegree: 44
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "cbf88ec9-bf14-8a82-83ea-bcc2f7411e6a"
+  computationUuid: "701d7234-4816-87dd-9dce-40692419f9d4"
   stages:
     - stage: path
       stageUuid: "564ada6f-8086-8a40-9e0d-0c7230759692"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "596849f5-095a-83d7-8315-f2b23e4905e8"
     - stage: horo
-      stageUuid: "85b77d45-57b1-8d13-89e5-60b5dfc7de82"
+      stageUuid: "9624c9d9-d7c2-8de9-9f54-2a7a85eeb4d0"
     - stage: seal
       stageUuid: "647cf490-f714-831f-b976-c8c98a57ba6c"
     - stage: uuid
-      stageUuid: "79ee4a58-390f-8393-aea0-24bd52231833"
+      stageUuid: "123c971c-76da-84ac-a080-14b1f6456fc2"
 version: 2
 ---
 # regulatory-deferral-accounts

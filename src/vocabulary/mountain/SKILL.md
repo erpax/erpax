@@ -2,11 +2,11 @@
 name: mountain
 description: "Use when reasoning about mountain — A mountain, like Mount Whitney or Mount Everest."
 atomPath: "vocabulary/mountain"
-coordinate: "vocabulary/mountain · 7/descent · bb91745a"
-contentUuid: "ccd1fd67-5a81-58e7-8d2a-36eba220e8cd"
-diamondUuid: "b51a4e6c-6986-8c81-8c7d-c85390dad791"
-uuid: "bb91745a-ee92-858a-80b7-6a2a970b6a28"
-horo: 7
+coordinate: "vocabulary/mountain · 2/share · 9313485d"
+contentUuid: "77812564-baec-55ff-b8d9-3e93f7f53201"
+diamondUuid: "3fcde414-d4c3-895a-b237-3ba869a53df1"
+uuid: "9313485d-ce53-84c8-b0dd-b81b9183ad92"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "19c19947-4262-8203-8cd8-f2e83aa2f2aa"
+  computationUuid: "b9d1a66a-a66e-89e3-96be-41496e185430"
   stages:
     - stage: path
       stageUuid: "530aaca4-d054-85ad-ac6f-96451749e4ea"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d4039266-ca83-808a-9e57-c4c115330899"
     - stage: horo
-      stageUuid: "0dab79a2-3776-86bc-8e03-ba35e519ef88"
+      stageUuid: "f6cfa4ce-4e46-80bc-9196-b31b2d58f7bf"
     - stage: seal
       stageUuid: "564d9277-c8aa-8fb4-b257-6f93e94a2a0c"
     - stage: uuid
-      stageUuid: "cf2f7381-4769-8bee-9fa3-b98229318e14"
+      stageUuid: "5e1ee57e-67c1-8422-86a7-e0dfa038bb42"
 version: 2
 ---
 # mountain

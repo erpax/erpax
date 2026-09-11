@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "propose",
-    "uuid": "2cf9e709-6068-8443-a56d-8836122f9b10",
+    "uuid": "debe30c1-f12e-8c10-8d7a-604cca4ada00",
     "words": [
       "propose"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing weave proposals deterministically — for each orphan atom, the highest-mass atom whose text mentions it (a true co-occurrence, never invented), feeding the weave with no trained agent.",
-    "uuid": "2f7d7b68-f612-8852-9306-4ae24677e502",
+    "uuid": "edf28129-886f-897d-a825-d211b561e5f9",
     "words": [
       "use",
       "when",

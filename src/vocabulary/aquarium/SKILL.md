@@ -2,11 +2,11 @@
 name: aquarium
 description: Use when reasoning about aquarium — Aquarium.
 atomPath: "vocabulary/aquarium"
-coordinate: "vocabulary/aquarium · 1/base · 8f0b9074"
-contentUuid: "8a6ae377-0f08-5e3a-b1a5-044f1a8a01e2"
-diamondUuid: "6633d3ef-1d76-83da-bc64-613bfbe6e480"
-uuid: "8f0b9074-1db9-84c6-82fd-27f16ebd97ef"
-horo: 1
+coordinate: "vocabulary/aquarium · 7/descent · d938e8e4"
+contentUuid: "2abda714-378b-5ea2-bb7f-72c7fe669b44"
+diamondUuid: "e082c43e-a02f-8369-8c4f-61064b242f1c"
+uuid: "d938e8e4-967c-858d-b24c-944aa5346af0"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ee888281-6a70-8560-a82d-cfff9206605a"
+  computationUuid: "ac753bb6-8598-88a0-a1af-c99dbb0e69dc"
   stages:
     - stage: path
       stageUuid: "03dceee0-dc7c-8e50-bc13-14ec3b263b49"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4c9582b0-e667-89f3-a0e7-e6f444d05e93"
     - stage: horo
-      stageUuid: "c7b71d65-c50d-8d24-9fb8-e9461e06dde9"
+      stageUuid: "b30028c8-2d60-8fe9-a98e-98d83146bfe7"
     - stage: seal
       stageUuid: "c259cde8-7aa4-82fa-a528-9f6b90c0abc0"
     - stage: uuid
-      stageUuid: "90b14ce6-a947-8bba-8890-9e56b2b78022"
+      stageUuid: "756a06d8-e989-8366-a9b2-51710f1daf41"
 version: 2
 ---
 # aquarium

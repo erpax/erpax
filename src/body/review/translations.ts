@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "review",
-    "uuid": "1f215bd3-f071-8bc7-95d1-405f15ac22eb",
+    "uuid": "507d30ac-f8b3-8a4e-877c-70890d4f77ea",
     "words": [
       "review"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about review as a anatomical part of body — vocabulary pivot to @/review; nested not duplicated.",
-    "uuid": "0789b5f2-1b85-8f70-a76d-215c92410af5",
+    "uuid": "642158fe-128d-8bdf-998d-f739211724c8",
     "words": [
       "use",
       "when",

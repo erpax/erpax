@@ -2,11 +2,11 @@
 name: trailer
 description: "Use when reasoning about trailer — The trailer of a movie or TV/radio series, season, episode, etc."
 atomPath: trailer
-coordinate: "trailer · 1/base · e407f4a6"
-contentUuid: "cbe31ab3-5dad-5486-baae-244bb36333a6"
-diamondUuid: "e6912d6e-61b0-83bd-ac68-d35cce98658a"
-uuid: "e407f4a6-a085-8063-9eea-0d28cf73103e"
-horo: 1
+coordinate: "trailer · 4/weave · 841b8244"
+contentUuid: "d33a1a2e-5ba3-57a2-9b71-514a9112edb4"
+diamondUuid: "330478b7-65e6-80cf-ad5c-7ff1e921b8ad"
+uuid: "841b8244-cc1c-83fb-9cfa-ab849d22d66b"
+horo: 4
 typography:
   partition: trailer
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1ab170c6-12fc-8bc4-ab0e-42e99c0059ed"
+  computationUuid: "27499427-07b8-8f97-aef2-8af90ed615d7"
   stages:
     - stage: path
       stageUuid: "9315e25b-b95d-8152-b064-7e4e7ecde354"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a4be8aae-bcc8-8c59-8a48-0ecc3aaa19f9"
     - stage: horo
-      stageUuid: "a12c0989-5797-877e-b915-34a2acf76cdb"
+      stageUuid: "87860d3c-36e2-8038-8f9f-6f78ff53337e"
     - stage: seal
       stageUuid: "67174f27-5fa1-8a2d-b596-3e5b327838ce"
     - stage: uuid
-      stageUuid: "aad65620-e2d8-881a-9cea-80847cbce8eb"
+      stageUuid: "d455706c-e76a-8986-94a2-30ff047064dc"
 version: 2
 ---
 # trailer

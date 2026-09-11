@@ -2,10 +2,10 @@
 name: entanglement
 description: "Use when grounding the corpus link-field in the physics of quantum entanglement — EPR/Bell correlation, no-cloning, monogamy (CKW), and ER=EPR; the reciprocal, monogamous binding computed on the matrix."
 atomPath: "quantum/entanglement"
-coordinate: "quantum/entanglement · 4/weave · 00b6f0e0"
-contentUuid: "0e540561-be90-5a2f-aeee-5e3f04cc33e8"
+coordinate: "quantum/entanglement · 4/weave · e7ac8d26"
+contentUuid: "2443a870-855d-5d43-bf0e-ecacd571f528"
 diamondUuid: "acc4f997-71e1-808f-bfd6-7894305ce177"
-uuid: "00b6f0e0-0391-8559-9aad-919db06e38df"
+uuid: "e7ac8d26-d16c-8839-8742-660ac5b2ed4f"
 horo: 4
 typography:
   partition: quantum
@@ -56,7 +56,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "a4efe1e5-2b70-8dc1-b843-6ed03d4d5e49"
-    contentUuid: "0e540561-be90-5a2f-aeee-5e3f04cc33e8"
+    contentUuid: "2443a870-855d-5d43-bf0e-ecacd571f528"
 version: 2
 ---
 # quantum/entanglement — the physics the link-field is grounded in
@@ -82,4 +82,4 @@ Matter-twin: `src/quantum/entanglement/index.ts` (`isMaximallyEntangled` · `rep
 @standard ER=EPR — Maldacena & Susskind (2013); monogamy — Coffman–Kundu–Wootters, PRA 61 052306 (2000)
 @audit computed on the live matrix via ../../entanglement; never hand-asserted
 
-<sub>content-uuid `0e540561-be90-5a2f-aeee-5e3f04cc33e8` · account `quantum/entanglement` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `2443a870-855d-5d43-bf0e-ecacd571f528` · account `quantum/entanglement` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "percutaneous",
-    "uuid": "aca02c5a-9209-870e-b331-55e2bc7e512e",
+    "uuid": "0ebca1de-2ec9-887a-bc81-b7fa83e3de6d",
     "words": [
       "percutaneous"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about percutaneous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "947dfda5-e00e-84e9-b3f2-de3c74b9a115",
+    "uuid": "e2fbf205-115c-8d11-b044-5dc4fc08e7df",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sector",
-    "uuid": "96e9e45d-18ff-8415-8a2d-7d933e93fe8a",
+    "uuid": "9b415937-796f-83ec-8c16-26411278bf0a",
     "words": [
       "sector"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one sector — the singular model of the sectors collection (the plural store); a broad division of economic activity.",
-    "uuid": "d4b46fe6-4e99-8bb0-b93c-01a163ef6870",
+    "uuid": "08f74197-8c3b-8ceb-8681-356c669e5218",
     "words": [
       "use",
       "when",

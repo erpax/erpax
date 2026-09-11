@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "engineering",
-    "uuid": "23d18b0f-ca7b-8078-9069-ca8435a0db2c",
+    "uuid": "ccaa7bc5-2301-808e-b058-168cbf13d9dd",
     "words": [
       "engineering"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an engineering standard (ISO/IEC 25010 quality model) must move from cited to enforced — maps each quality concern to the erpax gate that enforces it, and names the cited-but-ungated concerns as the solutions to reverse-engineer next.",
-    "uuid": "cfdda818-f3e4-8bc3-b653-c14fe6f2f5c4",
+    "uuid": "5c2131dc-f8e9-89ef-a409-f3776cd05676",
     "words": [
       "use",
       "when",

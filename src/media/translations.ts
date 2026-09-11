@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "media",
-    "uuid": "7cbe2831-226f-87a6-83c4-36e45db55f73",
+    "uuid": "38e913c1-6c5a-8856-aad7-1b58516aa6e8",
     "words": [
       "media"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when uploading or retrieving files — images, video, documents — stored in Cloudflare R2 with multi-size image variants (thumbnail/square/small/medium/large/xlarge/og), alt text, captions, and GDPR-safe filenames. The tenant-scoped media upload collection.",
-    "uuid": "286a44af-4423-8b7f-8ade-929dab3443bc",
+    "uuid": "66f2df7e-d90e-8336-ad07-4365a0a26742",
     "words": [
       "use",
       "when",

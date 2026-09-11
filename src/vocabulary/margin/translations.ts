@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "margin",
-    "uuid": "1f468d53-8404-8a48-b4f1-33c33f92a4b1",
+    "uuid": "5f40989a-078c-8e36-985f-13052da23ab4",
     "words": [
       "margin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about margin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "c972eebb-e6df-88c5-8692-ae58c00ec9bc",
+    "uuid": "28a4a756-7308-80bb-8f0d-7b11fc6c8fb4",
     "words": [
       "use",
       "when",

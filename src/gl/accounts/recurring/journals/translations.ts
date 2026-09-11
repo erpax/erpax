@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "journals",
-    "uuid": "9cfc36df-1675-89c3-91ef-1b492324052f",
+    "uuid": "37fe1392-e7db-80bc-8d9f-c88ce55f9ebf",
     "words": [
       "journals"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
-    "uuid": "9f68821a-9bb0-8552-85cd-5cdb8d3618fe",
+    "uuid": "b41916eb-dc6c-82b2-9b81-3376af0e89cd",
     "words": [
       "use",
       "when",

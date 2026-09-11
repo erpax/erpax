@@ -2,18 +2,18 @@
 name: corpus
 description: "Use when reasoning about accounting/corpus — corpus self-accounting — eb (entropy-bit) currency and path posting units."
 atomPath: "accounting/corpus"
-coordinate: "accounting/corpus · 2/share · a680575d"
-contentUuid: "28de5f81-f378-528a-954b-979b6a1e5655"
-diamondUuid: "ddda29f1-e2be-8dc6-b9f8-7962ee9f3ae3"
-uuid: "a680575d-95e3-89d4-a1a7-01b948accae0"
-horo: 2
+coordinate: "accounting/corpus · 4/weave · 6b7a5c9e"
+contentUuid: "5634b240-d0fe-5e3a-a2d6-851cb95ac13a"
+diamondUuid: "a631ba66-3405-8b46-b6d4-c328e5a870f9"
+uuid: "6b7a5c9e-68d2-824e-bb11-282b40a884f0"
+horo: 4
 typography:
   partition: accounting
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d9de66c7-2f06-8fef-8180-1022215f70f6"
+  computationUuid: "3f634a8c-7628-8cbc-a8fa-c1f594fbb849"
   stages:
     - stage: path
       stageUuid: "f5dd64dd-2178-8746-9a7d-256b396850eb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "035fd584-eb22-82cd-a9e6-5d782488d274"
     - stage: horo
-      stageUuid: "796a982e-e72c-81d5-8a76-3997157008b8"
+      stageUuid: "5b53e92b-ba54-8bb7-b336-d5414e735aea"
     - stage: seal
       stageUuid: "742bf591-4181-85ee-bac9-115ad4d643e3"
     - stage: uuid
-      stageUuid: "49e22cfe-212d-8cbf-8399-2719505767f7"
+      stageUuid: "048f12a4-8ad3-8868-89fb-50be6956924f"
 version: 2
 ---
 # accounting/corpus

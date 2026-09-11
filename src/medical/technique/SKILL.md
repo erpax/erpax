@@ -2,11 +2,11 @@
 name: technique
 description: "Use when reasoning about technique as a medical facet of medical — vocabulary pivot to @/technique; nested not duplicated."
 atomPath: "medical/technique"
-coordinate: "medical/technique · 8/crest · 90a1f732"
-contentUuid: "16b0cfb7-c540-54cb-90f1-f86221b84443"
-diamondUuid: "c1552bdb-3056-835f-859d-5f6e210fcaef"
-uuid: "90a1f732-5321-87aa-b53b-4d16619337fa"
-horo: 8
+coordinate: "medical/technique · 2/share · d4fe28e9"
+contentUuid: "8d382cec-0693-5a88-a3f1-1cd63ce68967"
+diamondUuid: "8771cdf0-8d02-87fd-9d3d-f586b538d876"
+uuid: "d4fe28e9-d995-87c8-9eee-fe6bc4296a77"
+horo: 2
 typography:
   partition: medical
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4e799490-7858-88d6-b903-205b922f40e5"
+  computationUuid: "5d16e066-6b2a-89b5-883d-b639b2c39781"
   stages:
     - stage: path
       stageUuid: "14ca9c92-669b-8bff-81b3-ee2cc3bacae7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f121309b-9f15-8a0a-ac28-ffa74627f961"
     - stage: horo
-      stageUuid: "40634367-11f0-8f17-96f9-f6dd3b3184b7"
+      stageUuid: "6eefe455-e0d4-84c3-a173-8cab42af3a16"
     - stage: seal
       stageUuid: "238be6a5-f3ac-8d5b-9db6-c293795e1d8b"
     - stage: uuid
-      stageUuid: "0e58a269-c5bc-8f66-a419-abe23d7911b6"
+      stageUuid: "32d815d9-292c-8b5a-befe-81a7197bbc35"
 version: 2
 ---
 # medical/technique — medical facet

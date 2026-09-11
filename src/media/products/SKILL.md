@@ -2,11 +2,11 @@
 name: products
 description: "Use when reasoning about products — is the Payload definition: the product's fields, its access rules, and the hooks beside it that manage the images a product carries."
 atomPath: "media/products"
-coordinate: "media/products · 8/crest · b193b92c"
-contentUuid: "4dbfa47e-5da9-5f50-8a9f-e2573f73909f"
-diamondUuid: "40c01672-9d90-863c-b228-464f7ebde3ce"
-uuid: "b193b92c-419b-8bc2-b2f1-1b024447b555"
-horo: 8
+coordinate: "media/products · 4/weave · 4b1840d5"
+contentUuid: "8dfa601f-6180-55ae-b318-ff10ec2ca40a"
+diamondUuid: "b4d15644-6001-8bcb-b72a-fd2b477f267a"
+uuid: "4b1840d5-0d77-8c4d-b2a0-6ec61908ac4c"
+horo: 4
 typography:
   partition: media
   bondDegree: 11
@@ -23,7 +23,7 @@ standards:
   - schema.org Product
 bindings: []
 signatures:
-  computationUuid: "cd58083d-44c1-87f0-9a5e-2b69ea83b8a7"
+  computationUuid: "7c87b842-ceca-8525-82c5-3dadd5d69778"
   stages:
     - stage: path
       stageUuid: "6d17f7b4-092c-8431-8a26-2c3b210994ac"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "e991132e-e6cd-8d03-b6a1-e8eff8fc5f12"
     - stage: horo
-      stageUuid: "e459bc43-5f0d-86c8-b5ff-b717563a48a4"
+      stageUuid: "276123d4-f649-8bbe-b49d-4a231f748e0d"
     - stage: seal
       stageUuid: "93c9b436-4103-893b-8ae2-a729e632da26"
     - stage: uuid
-      stageUuid: "a07b388e-a3ab-8543-a12c-9ed59309b703"
+      stageUuid: "2289126f-14e1-8ead-87fd-fb8c4a13b685"
 version: 2
 ---
 # media/products — the storefront's product collection, with its media handled at the collection

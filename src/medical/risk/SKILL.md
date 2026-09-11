@@ -2,11 +2,11 @@
 name: risk
 description: "Use when reasoning about risk as a medical facet of medical — vocabulary pivot to @/risk; nested not duplicated."
 atomPath: "medical/risk"
-coordinate: "medical/risk · 7/descent · 2a7f419f"
-contentUuid: "e0318da0-4fb9-5e4f-958f-89bbd0bf9689"
-diamondUuid: "6de0626f-0291-8a47-ad4d-099152e86a8b"
-uuid: "2a7f419f-38ba-8aa0-a071-89c473f99b8e"
-horo: 7
+coordinate: "medical/risk · 5/round · 4f565705"
+contentUuid: "23655ab9-144e-5590-80fd-5ee2c9382545"
+diamondUuid: "062e777a-ce8a-83b1-b04e-865efe32fc3e"
+uuid: "4f565705-830c-893b-9153-fe34d5c6179d"
+horo: 5
 typography:
   partition: medical
   bondDegree: 62
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "29b1ccd0-0b4a-8c54-b9ac-a84228adabe2"
+  computationUuid: "1a236fd1-54f7-85d1-94c0-6b8e7d593c64"
   stages:
     - stage: path
       stageUuid: "041c17d0-2ccd-8724-a5ca-5989aff344e5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9ff60b24-eab8-8862-a6eb-12961db8d879"
     - stage: horo
-      stageUuid: "19360a64-59de-8694-bb97-420c3e89b38b"
+      stageUuid: "23cc4b25-22c7-8ceb-925d-fe52dd6a8e88"
     - stage: seal
       stageUuid: "271f20b3-6d77-8f23-b252-dbaa1654c2c5"
     - stage: uuid
-      stageUuid: "431794ca-6740-8afd-8410-64d73976847c"
+      stageUuid: "dc621415-a30e-826b-9f33-f263b8ec2801"
 version: 2
 ---
 # medical/risk — medical facet

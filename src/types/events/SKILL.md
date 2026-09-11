@@ -2,11 +2,11 @@
 name: events
 description: Use when reasoning about event type definitions — the event shapes the corpus emits.
 atomPath: "types/events"
-coordinate: "types/events · 4/weave · 200375d4"
-contentUuid: "1dcabf04-3476-5d79-8801-228b45f7366c"
-diamondUuid: "fc117eca-fba1-8cd8-8910-c2b009031d0c"
-uuid: "200375d4-e04f-82d8-aa94-e5ad38b86750"
-horo: 4
+coordinate: "types/events · 1/base · 003b2b77"
+contentUuid: "62724be5-4e88-5913-9eea-7c6f5e16f8aa"
+diamondUuid: "6c9d8cb9-0e12-8650-8a17-81a45985c988"
+uuid: "003b2b77-1683-8fe8-8973-f967859fde59"
+horo: 1
 typography:
   partition: types
   bondDegree: 54
@@ -45,7 +45,7 @@ standards:
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
 bindings: []
 signatures:
-  computationUuid: "ca9abfc1-80d9-8f4f-8f20-44e7f740b6e7"
+  computationUuid: "f543d87c-29ab-88db-ae4a-22c8215f9318"
   stages:
     - stage: path
       stageUuid: "68001bc0-13c3-8551-bd04-0b6d7812eab7"
@@ -56,11 +56,11 @@ signatures:
     - stage: links
       stageUuid: "9e9d1254-87ab-873e-9d71-733d84e6dac2"
     - stage: horo
-      stageUuid: "f7ab6fc2-53b2-892b-9401-eda70e6ebd52"
+      stageUuid: "4cee3582-0cc6-8741-8df1-cf35e4992bec"
     - stage: seal
       stageUuid: "e027376c-d1ec-8395-8be3-1f52e3a57cc7"
     - stage: uuid
-      stageUuid: "7b148be6-d78c-8e6c-a36b-f2ab7de8bd62"
+      stageUuid: "5b2cbc4c-874f-8e8b-90cb-f532eeae1e5d"
 version: 2
 ---
 # types/events

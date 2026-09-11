@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prepend",
-    "uuid": "4ef77c13-34ec-86fb-b207-809e3a313b45",
+    "uuid": "4b9ff6ff-4aa0-8d66-b5c0-ea972ac21a0f",
     "words": [
       "prepend"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about prepend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "0657c317-b934-8e14-a952-c845702006e1",
+    "uuid": "0a6ecd95-213a-8319-a6db-6fb38d74b7b0",
     "words": [
       "use",
       "when",

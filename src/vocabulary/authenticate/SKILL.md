@@ -2,11 +2,11 @@
 name: authenticate
 description: "Use when reasoning about authenticate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/authenticate"
-coordinate: "vocabulary/authenticate · 4/weave · 548ccd28"
-contentUuid: "7784bda0-5589-5956-a1c2-305db270e596"
-diamondUuid: "90e87dee-35ea-8e3c-8d59-8c4af2570c77"
-uuid: "548ccd28-4ac0-8daa-b8ef-2d077b9bef58"
-horo: 4
+coordinate: "vocabulary/authenticate · 8/crest · d88b36e7"
+contentUuid: "dc115f59-9a0d-5bc5-826f-08b9a3e396f1"
+diamondUuid: "73e58911-0c7e-8859-a2e1-efdfa3653636"
+uuid: "d88b36e7-319c-8275-8c07-fd008492945f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ae9cc8ae-a928-8037-a82d-6dfc49b6e813"
+  computationUuid: "8ac4670d-288c-800d-8182-565c4e548392"
   stages:
     - stage: path
       stageUuid: "32f2bdb5-a576-8ef4-a261-ec65c6b560f2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b33e4bbf-2b54-8f84-acbb-a884908748ee"
     - stage: horo
-      stageUuid: "b88e3f0b-7f8e-8503-9fc7-0bf311783829"
+      stageUuid: "6497164f-fdc9-8090-9c11-fe3c48e1dd12"
     - stage: seal
       stageUuid: "e1003d05-835b-8a40-a6a6-2815f31d6176"
     - stage: uuid
-      stageUuid: "db88b03a-3a96-8ff4-a515-5f158696f002"
+      stageUuid: "59c3776d-4982-82d1-9ab4-2fed1ca2767e"
 version: 2
 ---
 # authenticate

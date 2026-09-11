@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "allocation",
-    "uuid": "c7a9a529-b9f5-8c00-ad5b-aedb9fddc5df",
+    "uuid": "66852195-be6f-8216-8a41-878b98d0fca8",
     "words": [
       "allocation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining how value/pay is distributed among contributors — reward for work, splitting a fixed pot, mechanism design. Reward is a pure function of verified time leveraged; the rate scale is harmonic; the pot is conserved.",
-    "uuid": "001e5d1d-2a70-8372-8d00-109d8b364247",
+    "uuid": "ce1c5d89-b1c7-806b-950c-6c25f21c055c",
     "words": [
       "use",
       "when",

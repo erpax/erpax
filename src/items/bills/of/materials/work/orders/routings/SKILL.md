@@ -2,10 +2,10 @@
 name: routings
 description: "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM."
 atomPath: "items/bills/of/materials/work/orders/routings"
-coordinate: "items/bills/of/materials/work/orders/routings · 8/crest · 4a59e456"
-contentUuid: "acc0a38f-3e4e-5cf0-9526-059b7938b14c"
-diamondUuid: "8090b0bc-1190-8898-84f3-fac9a1bd5c39"
-uuid: "4a59e456-45f5-83dc-a791-5733337c3b3d"
+coordinate: "items/bills/of/materials/work/orders/routings · 8/crest · ecc90982"
+contentUuid: "66611a4b-9d17-58b7-b660-b7edbcfbbf23"
+diamondUuid: "83d0193c-8215-8283-85ea-60b855d60266"
+uuid: "ecc90982-38dc-8419-b3e0-889fc9e69b26"
 horo: 8
 typography:
   partition: items
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "82e86e94-84b1-8e7c-b2d3-a9d9d004599f"
+  computationUuid: "a536ea34-01a9-8edd-b29f-4d41d36787e1"
   stages:
     - stage: path
       stageUuid: "e7aed141-56a1-89f4-9156-1aefa4fd0d81"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "60c3e473-1804-8214-92b0-fed10bdf7755"
     - stage: horo
-      stageUuid: "b3f3e0e7-875b-86eb-9d12-6915b9fa0812"
+      stageUuid: "37290214-a145-83dc-becd-4984ad1fc6c9"
     - stage: seal
       stageUuid: "bcbf5cea-67b1-88b8-8632-28d36bc262c9"
     - stage: uuid
-      stageUuid: "277885fe-e4e8-8d74-9e3b-34a0d784d729"
+      stageUuid: "160da80f-e640-85e0-a9fc-dae259932299"
 version: 2
 ---
 # routings

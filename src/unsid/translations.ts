@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unsid",
-    "uuid": "981279e7-bc72-8e5c-8ac3-892632a0a01e",
+    "uuid": "522f8a16-3fa7-8db1-b7a2-6562032a9968",
     "words": [
       "unsid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about unsid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "b50d7b5b-8acc-81b8-b2d1-f6cb8515e964",
+    "uuid": "417cea09-7744-8ea3-a34b-d7abe6317d3d",
     "words": [
       "use",
       "when",

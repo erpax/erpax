@@ -2,10 +2,10 @@
 name: husky
 description: "Use when reasoning about husky as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/husky"
-coordinate: "vocabulary/husky · 4/weave · 11e35cc1"
-contentUuid: "fca14cc8-bb75-59d6-821d-ef41499a9422"
-diamondUuid: "54a287cf-def1-8568-a5a9-e34a79493d5c"
-uuid: "11e35cc1-8383-8294-ade0-7fca53febec2"
+coordinate: "vocabulary/husky · 4/weave · f41d0b33"
+contentUuid: "9cbfec90-ab0e-5a3c-b59b-51448393d732"
+diamondUuid: "e644f4f9-78af-8d55-b68a-3f0c75b38f76"
+uuid: "f41d0b33-2eb8-85e5-8a64-56e1c438788c"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0190e68d-8e73-85f8-bf20-0b46c2cd4e88"
+  computationUuid: "cfafeb0d-f079-80aa-8a83-4c0227c7cc2f"
   stages:
     - stage: path
       stageUuid: "1bb33fd7-0a9a-8657-97d3-8560f122c40c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "31697f6e-eadc-8624-a1f2-4cc1575b7725"
     - stage: horo
-      stageUuid: "3ab7cbfd-2870-8d00-ad3c-040a3ce9e56d"
+      stageUuid: "d3759b38-2178-876a-b94a-874c6bf4d831"
     - stage: seal
       stageUuid: "6b876179-69de-85a5-87a9-5650fd4d3094"
     - stage: uuid
-      stageUuid: "23201f37-b966-8e70-be32-ec6c7859accc"
+      stageUuid: "a44e6192-cebc-8ee9-a51c-393f10489f27"
 version: 2
 ---
 # husky

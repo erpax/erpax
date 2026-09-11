@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quest",
-    "uuid": "863b1db5-829d-8a52-9556-41596cc02145",
+    "uuid": "ba213f66-aaab-83a3-8bd2-be5758d903c8",
     "words": [
       "quest"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quest — The task that a player-controlled character, or group of characters may complete in order to gain a reward.",
-    "uuid": "d33abd12-d6f2-8311-bc01-3a419a665649",
+    "uuid": "f653c3c7-0b4d-827b-ae74-c3a655292ae4",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: vocabulary
 description: "Use when reasoning about the vocabulary as the meaning singularity — every atom's words ground in the shared vocabulary, so it has infinite gravity and pulls all atoms into one shared meaning-space."
 atomPath: "quantum/vocabulary"
-coordinate: "quantum/vocabulary · 2/share · 5f25f234"
-contentUuid: "87305798-bdad-5f16-8049-975bffa30b3d"
-diamondUuid: "013752e1-6509-89f0-b672-2cae75355fa1"
-uuid: "5f25f234-8bbf-831b-9de6-76a64d9c77bc"
-horo: 2
+coordinate: "quantum/vocabulary · 7/descent · 8892f354"
+contentUuid: "0fe26b04-cf6b-5e87-9ed9-891a2d2223a5"
+diamondUuid: "d6fb3c2d-8a3e-8512-8828-161e18825c70"
+uuid: "8892f354-fb64-8120-a9d4-a904dfd02008"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 74
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5df49beb-ef14-8b68-b40c-cdbb0ea15576"
+  computationUuid: "a07f4b3c-eac8-8765-a0cc-892c8627f680"
   stages:
     - stage: path
       stageUuid: "69d5d59f-a293-8d42-97cf-3f22a579001b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "091c8815-4fc3-88ad-b0c8-2cd3dc44465d"
     - stage: horo
-      stageUuid: "2df3094d-6934-8f36-8643-244bcb2f84b3"
+      stageUuid: "b12fd4b6-fbb5-85f3-8827-6d8ce5ee257f"
     - stage: seal
       stageUuid: "7ddac279-5f3c-89b3-8f3a-9d4893ea49b9"
     - stage: uuid
-      stageUuid: "0f3c206b-ea52-8952-bb29-a5b209280460"
+      stageUuid: "793266ac-8a6e-8804-813c-15e7710aa79c"
 quantum:
   superposition:
     - atom
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "5df49beb-ef14-8b68-b40c-cdbb0ea15576"
-    contentUuid: "87305798-bdad-5f16-8049-975bffa30b3d"
+    computationUuid: "a07f4b3c-eac8-8765-a0cc-892c8627f680"
+    contentUuid: "0fe26b04-cf6b-5e87-9ed9-891a2d2223a5"
 version: 2
 ---
 # quantum/vocabulary — the meaning singularity (infinite gravity)
@@ -68,4 +68,4 @@ Matter-twin: `src/quantum/vocabulary/index.ts` (`INFINITE_GRAVITY` · `pulls` ·
 
 @audit the pull is computed over the live matrix + vocabulary; never hand-asserted
 
-<sub>content-uuid `87305798-bdad-5f16-8049-975bffa30b3d` · account `quantum/vocabulary` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `0fe26b04-cf6b-5e87-9ed9-891a2d2223a5` · account `quantum/vocabulary` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

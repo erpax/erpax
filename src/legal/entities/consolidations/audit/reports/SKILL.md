@@ -2,11 +2,11 @@
 name: reports
 description: "Use when generating or tracking immutable audit reports and regulatory filings — SAF-T 3.0.2 audit files, jurisdiction-specific tax filings, transfer-pricing documentation packages, and cross-jurisdiction optimization analysis per ISA-700 / SOX §404. The audit-report generation and submission collection."
 atomPath: "legal/entities/consolidations/audit/reports"
-coordinate: "legal/entities/consolidations/audit/reports · 7/descent · 645f3397"
-contentUuid: "1772ad85-ba41-5f75-9d1f-ead58c55ed91"
-diamondUuid: "dd2d07e3-206e-8e52-9a43-e38fce52cab8"
-uuid: "645f3397-321e-857d-94b5-f9bcadfa8cbe"
-horo: 7
+coordinate: "legal/entities/consolidations/audit/reports · 4/weave · 829e80ce"
+contentUuid: "616b8d12-e489-5dbf-a777-6ffccc3a221a"
+diamondUuid: "7dcd3668-e6f2-897f-b278-5d0af01dcfe0"
+uuid: "829e80ce-265c-8894-aa35-36125a7b6a80"
+horo: 4
 typography:
   partition: legal
   bondDegree: 28
@@ -15,7 +15,7 @@ standards:
   - "SOX §404 internal-controls"
 bindings: []
 signatures:
-  computationUuid: "830d710b-db30-8d76-8104-cb72800a12d9"
+  computationUuid: "040cdbb1-4624-8117-aba0-33f4a920f8ea"
   stages:
     - stage: path
       stageUuid: "f737bd84-3a71-8275-ba40-d77605bda028"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "fd1ba99b-81d1-8376-a1e3-4c76dfe97fa5"
     - stage: horo
-      stageUuid: "484a12e7-4d64-8c3c-bf07-6e6be97bb9da"
+      stageUuid: "3d380b73-42c6-8d5c-88b1-cd9085d25e19"
     - stage: seal
       stageUuid: "95207687-9e45-8668-a4ea-e1bacb94eb6e"
     - stage: uuid
-      stageUuid: "592321e2-1e98-80ad-bec7-e21b543eddff"
+      stageUuid: "9b1dff1c-6501-8cb7-b34e-42fbf28206b4"
 version: 2
 ---
 # audit-reports

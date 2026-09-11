@@ -2,11 +2,11 @@
 name: hindu
 description: "Use when reasoning about hindu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hindu"
-coordinate: "vocabulary/hindu · 4/weave · 1bfa6c70"
-contentUuid: "320097d2-c8a6-5fb3-98a1-e1fff2b56bd2"
-diamondUuid: "30f27191-4665-86ca-8a39-3f6e2fc4db04"
-uuid: "1bfa6c70-8fa9-8f2d-b691-0fd03f690ae3"
-horo: 4
+coordinate: "vocabulary/hindu · 7/descent · a1e9dc26"
+contentUuid: "8fcd2685-73a1-5c72-ba8a-1a6222fb4a7c"
+diamondUuid: "a5e5dc79-a564-8d9e-93a7-bf383ebb75c9"
+uuid: "a1e9dc26-4474-8d9e-8581-f2fdc15caec5"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d4036587-54fc-8a43-b9d8-d83335ed3ce8"
+  computationUuid: "35e06431-dfdf-8c45-b3bb-2ab87e664b71"
   stages:
     - stage: path
       stageUuid: "7c035a74-639b-8925-bf8d-52cbc34b9dfb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "04db1fcb-9355-8dbb-b61d-d63f56367566"
     - stage: horo
-      stageUuid: "43a8dd86-dc40-81cc-9c53-eb0de8299de7"
+      stageUuid: "2785919b-1f59-825f-9051-2c1a5888bb30"
     - stage: seal
       stageUuid: "df8738c0-7dcc-80ae-b501-cac42c59341b"
     - stage: uuid
-      stageUuid: "15a2bafd-4183-835d-8d8c-e287c3323c69"
+      stageUuid: "465f020e-0481-8b1d-ab45-95ccd9378b3e"
 version: 2
 ---
 # hindu

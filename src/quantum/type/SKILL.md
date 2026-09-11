@@ -2,10 +2,10 @@
 name: type
 description: "Use when reasoning about type identity on the matrix — a type as the content-uuid of its structural shape, so type-equality is uuid-equality (structural typing by content-addressing) and identical types merge."
 atomPath: "quantum/type"
-coordinate: "quantum/type · 8/crest · 8425c56b"
-contentUuid: "2fbd8ed6-cf59-5433-8c16-ba9e62efca77"
-diamondUuid: "0b3426a5-a66f-8243-bd64-376fcf8536a2"
-uuid: "8425c56b-9695-8ace-b5e4-e8ffb6d64192"
+coordinate: "quantum/type · 8/crest · b26ac376"
+contentUuid: "3ab96187-13a5-5e1e-bc32-84e37e75d68f"
+diamondUuid: "63da5065-0217-86a4-8684-aebd6d400ada"
+uuid: "b26ac376-6cb0-8392-bbdf-2759532918cd"
 horo: 8
 typography:
   partition: quantum
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "4154eace-a14a-8c93-a368-b7813de935fb"
+  computationUuid: "a417e15f-a6c8-88dd-95b1-b941512eab0b"
   stages:
     - stage: path
       stageUuid: "cff75413-7577-838a-86c5-e0febb781568"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1627ecd5-ca7c-8964-9a3f-4f701a0bd3f7"
     - stage: horo
-      stageUuid: "eb88275c-02bc-8ad4-a4e0-77e26df05603"
+      stageUuid: "1658f17b-add4-878f-8ad8-ce754d3b3799"
     - stage: seal
       stageUuid: "03a36eba-cd9e-8fda-af1e-6d1d333eaa77"
     - stage: uuid
-      stageUuid: "d36a3995-c575-8a92-a9ac-3f81d532e9d0"
+      stageUuid: "c46f34d5-5662-83a6-a4e0-a78ab8130659"
 quantum:
   superposition:
     - action
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "4154eace-a14a-8c93-a368-b7813de935fb"
-    contentUuid: "2fbd8ed6-cf59-5433-8c16-ba9e62efca77"
+    computationUuid: "a417e15f-a6c8-88dd-95b1-b941512eab0b"
+    contentUuid: "3ab96187-13a5-5e1e-bc32-84e37e75d68f"
 version: 2
 ---
 # quantum/type — type identity as a content-uuid
@@ -69,4 +69,4 @@ Matter-twin: `src/quantum/type/index.ts` (`typeUuid` · `sameType`). Composes [[
 
 @standard RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `2fbd8ed6-cf59-5433-8c16-ba9e62efca77` · account `quantum/type` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `3ab96187-13a5-5e1e-bc32-84e37e75d68f` · account `quantum/type` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

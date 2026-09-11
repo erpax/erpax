@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "events",
-    "uuid": "dfe176e0-eee6-8a86-81d8-80959f5098ed",
+    "uuid": "a6f4f37d-505e-88b8-a2d4-3cac20430d0c",
     "words": [
       "events"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
-    "uuid": "f272203d-1b2a-83db-910f-9957f4a15c17",
+    "uuid": "70520445-75fb-86b1-b33d-cbb17bf729b0",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "line",
-    "uuid": "73846054-30bb-8af6-aeb5-5c96ae8ab95e",
+    "uuid": "cb2a0336-de15-8879-be78-e5abaae6bfda",
     "words": [
       "line"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about line — A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
-    "uuid": "47f32242-2f53-86de-91a6-42d521b849ef",
+    "uuid": "26f7cb39-25bd-8bcf-bedb-9b66b3e0349f",
     "words": [
       "use",
       "when",

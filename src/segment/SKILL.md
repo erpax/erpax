@@ -2,18 +2,18 @@
 name: segment
 description: "Use when identifying and reporting operating segments per IFRS-8 — revenue/expense/asset/liability grouping for disclosure and management reporting; distinct from cost-center dimension"
 atomPath: segment
-coordinate: "segment · 4/weave · 910d07eb"
-contentUuid: "6ca6edad-d207-51a0-8575-bc11a30678ad"
-diamondUuid: "bb38b2b2-1962-8f02-ab62-dd8e19505d18"
-uuid: "910d07eb-976a-8730-9bcf-9dacda533204"
-horo: 4
+coordinate: "segment · 5/round · 29c37efa"
+contentUuid: "ba7fb8ed-2adc-5f85-896a-0770527794e2"
+diamondUuid: "629ba353-742e-8b00-8e14-a0cd73e134af"
+uuid: "29c37efa-695f-8923-a722-bbe4b8100aaf"
+horo: 5
 typography:
   partition: segment
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cdb00daa-4490-8faa-ad27-09bda1f3038b"
+  computationUuid: "fb2fe53c-fa1f-85ed-93c1-1af43c268060"
   stages:
     - stage: path
       stageUuid: "5fe44f3b-679a-8478-b2f1-f818def80af0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c711f04b-5046-8486-8a68-e0b7288733e7"
     - stage: horo
-      stageUuid: "3f60056b-3cf7-8fea-a25f-f894e3e68579"
+      stageUuid: "5a046c46-1c7d-89e0-80dd-76d33d54ad0f"
     - stage: seal
       stageUuid: "d516b4f6-8cc4-8118-8e7f-b978af04a2a1"
     - stage: uuid
-      stageUuid: "bf9c1258-6b4b-8375-9491-a935659fd5dc"
+      stageUuid: "3685dbef-ca21-82d9-90a6-f2c5bd49b8af"
 version: 2
 ---
 # segment

@@ -2,10 +2,10 @@
 name: ingest
 description: "Use when pulling external records into the mesh idempotently — each record is content-addressed (a uuid), so re-fetching unchanged data is a no-op and only new or changed records are upserted. planIngest splits a batch into upsert vs skip against the already-seen uuids, deduping within the batch too. The fetch and the DB write are runtime boundaries; the idempotency plan is native and tested. Serves the Google Workspace sync and any external source."
 atomPath: ingest
-coordinate: "ingest · 2/share · d810e573"
-contentUuid: "29492526-e6bb-5fe2-a21f-35775f6cecae"
-diamondUuid: "29dd5d5a-9b23-837c-a8b0-831cf1935ed0"
-uuid: "d810e573-d4e7-8faf-9fd7-972093d33908"
+coordinate: "ingest · 2/share · 75255c15"
+contentUuid: "4df0d1b0-69ac-5a6f-9c90-d542ecf3ca58"
+diamondUuid: "571adf0a-81eb-825c-8b2c-6e3b81c4948f"
+uuid: "75255c15-5ecd-8ecf-911c-c2a25a6e72f1"
 horo: 2
 typography:
   partition: ingest
@@ -14,7 +14,7 @@ standards:
   - "idempotent upsert by content-address (re-runnable, no cursor needed)"
 bindings: []
 signatures:
-  computationUuid: "4e51710e-3014-84ed-9d5d-1c41a579b88d"
+  computationUuid: "e5392ea8-621a-8dac-af76-178a175846fb"
   stages:
     - stage: path
       stageUuid: "94b52b4d-9c52-8546-a22e-719a78a015e7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8f2de1f1-f119-8a74-a3b2-11050edba2d0"
     - stage: horo
-      stageUuid: "71798f5a-b735-858b-b48b-f5570e861149"
+      stageUuid: "c8259097-e335-889b-918d-80e96fcb403c"
     - stage: seal
       stageUuid: "8595da88-2979-8540-8aae-229af871b5fd"
     - stage: uuid
-      stageUuid: "14cace44-086b-8a6e-877c-37392f63edc2"
+      stageUuid: "e8515953-842c-844d-b947-ad465dc05e76"
 version: 2
 ---
 # ingest — idempotent, content-addressed ingest (re-fetch is a no-op)

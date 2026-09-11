@@ -2,11 +2,11 @@
 name: pixel
 description: "Use when reasoning about rendering — a pixel is an atom made visible, the content-uuid rendered to a colour (from its digit on the A432 ring); the atom and the pixel are one identity at two scales, so a component is an atom rendered and VitePress is the corpus rendered."
 atomPath: pixel
-coordinate: "pixel · 8/crest · 45a6ac14"
-contentUuid: "ec6ca315-afa3-5ef9-b302-682baceb467b"
-diamondUuid: "5bf685a2-4d30-8dfb-81a2-ea0fe9e54386"
-uuid: "45a6ac14-f43d-8d70-aca2-b1ccb243337d"
-horo: 8
+coordinate: "pixel · 7/descent · cb923925"
+contentUuid: "37bf2b82-6bb0-52d6-bec0-781364c7eb99"
+diamondUuid: "f005224a-fa4c-80cf-9e6a-62df2cb5fc5b"
+uuid: "cb923925-fb7a-8168-be06-7a7e04b14f5d"
+horo: 7
 typography:
   partition: pixel
   bondDegree: 57
@@ -14,7 +14,7 @@ standards:
   - "the analog aura — colour/sound/vibration as projections of one content-uuid"
 bindings: []
 signatures:
-  computationUuid: "4414491f-b981-871f-bd9b-46c3bb80a9e8"
+  computationUuid: "b3246c01-c94c-8255-b71c-0dbc7ac82081"
   stages:
     - stage: path
       stageUuid: "72173011-3aba-8be6-9d87-1225d12b9448"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "086f763a-3801-84da-a798-622a49f11b06"
     - stage: horo
-      stageUuid: "8b5494d7-d97d-8fc7-b5cc-007b3e4934bc"
+      stageUuid: "69c62cf1-70a3-871c-9b52-6aa51a323da3"
     - stage: seal
       stageUuid: "9e4c3f42-6155-8a10-8aaf-66a1f6c5fc88"
     - stage: uuid
-      stageUuid: "c15dc7d2-c9c1-8677-a59f-b6863520d1a2"
+      stageUuid: "315a6257-3f89-81c7-b4de-9556f6bd891d"
 version: 2
 ---
 # pixel — the atom, rendered

@@ -2,11 +2,11 @@
 name: unsid
 description: "Use when reasoning about unsid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: unsid
-coordinate: "unsid · 5/round · ca6b0699"
-contentUuid: "86db2afb-d643-5ffb-b2f9-d8229684fb9a"
-diamondUuid: "1b1cef87-09c3-8938-add8-2a0edd3b288c"
-uuid: "ca6b0699-6eda-803e-bf56-3a52a0c716c3"
-horo: 5
+coordinate: "unsid · 7/descent · 981279e7"
+contentUuid: "1885849e-a10e-5700-a1ef-c0f518c25478"
+diamondUuid: "b3989089-b230-870d-ac16-e9615e47c39a"
+uuid: "981279e7-bc72-8e5c-8ac3-892632a0a01e"
+horo: 7
 typography:
   partition: unsid
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7a578012-ed9e-8ddc-b1ad-b244c57031a0"
+  computationUuid: "a6b5ef7a-d172-82d4-a3ef-aeffdcf3155f"
   stages:
     - stage: path
       stageUuid: "333a8a22-d4fb-8787-982d-647d9117fb50"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "454619c1-fed9-8528-854c-171a44e62fdb"
     - stage: horo
-      stageUuid: "cfd02f0e-afa7-8bd0-a701-7978e03dd213"
+      stageUuid: "c921c0e8-ff56-8602-8816-54a37665c9ab"
     - stage: seal
       stageUuid: "89e9853e-64da-829e-ab75-c3bcee59a6d2"
     - stage: uuid
-      stageUuid: "2d9138aa-a6d2-854d-8eba-7a2df0e11f8f"
+      stageUuid: "770af21f-a01c-8ca4-bcbb-97b2a156e233"
 version: 2
 ---
 # unsid

@@ -2,11 +2,11 @@
 name: occ
 description: "Use when reasoning about occ as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/occ"
-coordinate: "vocabulary/occ · 2/share · 1180839d"
-contentUuid: "b78dc70b-b685-5310-b49d-b1faeefc0c26"
-diamondUuid: "512e8cdd-53cd-8079-83ae-5122c293e9b0"
-uuid: "1180839d-d36c-82bf-82db-1c4c7c639efe"
-horo: 2
+coordinate: "vocabulary/occ · 5/round · 13dc3843"
+contentUuid: "8bbb0706-0e25-53df-8192-3b6a58427cf4"
+diamondUuid: "f77015bf-7411-8709-95c2-157ccd8f7adb"
+uuid: "13dc3843-ac2e-8bc1-acf9-526e0404821c"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6c49a775-0521-8ff4-b20e-a1a654875a5d"
+  computationUuid: "938d5467-fe6d-840b-a895-e40f80d7eae4"
   stages:
     - stage: path
       stageUuid: "7470d195-dd25-80ba-924b-670ca0020526"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "19c857a9-ac2c-8fc9-9148-68ee6abfe6f7"
     - stage: horo
-      stageUuid: "dfe7e5ec-cfb8-88bb-86e4-fbc650be9894"
+      stageUuid: "d31e8a5e-15e0-84e9-87ed-f1dec80d0bf4"
     - stage: seal
       stageUuid: "02d09953-cc47-8985-bb24-3cc58ee35493"
     - stage: uuid
-      stageUuid: "d173f59e-ea07-89d4-86e3-e8c64cdbb949"
+      stageUuid: "132e251b-f9e7-82ef-b4e0-1225ca05f694"
 version: 2
 ---
 # occ

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "order",
-    "uuid": "2eac5bd7-3310-824d-b863-e0eb7b2727b6",
+    "uuid": "3de8d410-5551-8c43-8927-a3059a97a818",
     "words": [
       "order"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about order — erpax folds content-uuids to a root in two different ways, and both are correct for what they answer:",
-    "uuid": "88b48ae4-6dd8-8813-b1c3-8761a037522d",
+    "uuid": "2730ea33-172c-844c-90fa-7f6ef6a77a30",
     "words": [
       "use",
       "when",

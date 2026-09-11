@@ -2,11 +2,11 @@
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
 atomPath: sparsity
-coordinate: "sparsity · 1/base · ff8d7ec7"
-contentUuid: "7253ee17-f886-5360-b171-2e35ad3b9865"
-diamondUuid: "8c536383-5cd2-8b0e-b49e-15f30b7ea09c"
-uuid: "ff8d7ec7-64e6-82fd-989f-a8553f886380"
-horo: 1
+coordinate: "sparsity · 8/crest · a45da430"
+contentUuid: "f00d4fb7-5707-53d7-8340-f519e85baecb"
+diamondUuid: "beb3ef3a-0761-868a-bae3-d78a994c86b0"
+uuid: "a45da430-948b-817f-aa13-e6e685345b7c"
+horo: 8
 typography:
   partition: sparsity
   bondDegree: 81
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation"
 bindings: []
 signatures:
-  computationUuid: "abea4afe-e723-83ed-97cd-46e06cd09671"
+  computationUuid: "0a744a3c-968d-8f28-b858-3e892702d24e"
   stages:
     - stage: path
       stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3598cef6-cb85-8eae-83ac-0a1bcfd60fcf"
     - stage: horo
-      stageUuid: "2c7ca615-21e7-8318-b32d-b61a6e110fb6"
+      stageUuid: "82d9f7aa-2fdc-8c50-bb33-d414fd9ade7e"
     - stage: seal
       stageUuid: "05ff4ba5-f389-8961-93c4-317fa21cc0d4"
     - stage: uuid
-      stageUuid: "efeb152b-238c-83da-aadf-a110d7cebe8b"
+      stageUuid: "c9cb1d42-6740-84c1-9535-7f8d05f33cf6"
 version: 2
 ---
 # sparsity — the active fraction (few of many, alive at once)

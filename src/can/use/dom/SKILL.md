@@ -2,18 +2,18 @@
 name: dom
 description: "Use when code must branch on whether a real browser DOM is available — a default boolean that is true only when window, window.document and document.createElement all exist, guarding browser-only work on the server or in non-DOM runtimes."
 atomPath: "can/use/dom"
-coordinate: "can/use/dom · 8/crest · f0b0e659"
-contentUuid: "f4bad444-067e-59a9-bbe9-d72f2e1acc5b"
-diamondUuid: "d07182a2-f83f-8937-8ac2-4ecf5804122c"
-uuid: "f0b0e659-dd3f-83a7-9494-bdc4f3705927"
-horo: 8
+coordinate: "can/use/dom · 5/round · ac5bfa28"
+contentUuid: "90f958c7-2b58-5d49-9bd4-249203918e55"
+diamondUuid: "a709ee12-d4f4-811c-8de2-2be2c9a2c814"
+uuid: "ac5bfa28-c6cb-8b11-920a-9ae2edc352ef"
+horo: 5
 typography:
   partition: can
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "68659f53-ed1e-817e-be16-40ec96d573ff"
+  computationUuid: "641bf410-2a5c-81f2-acc3-0080d7f924db"
   stages:
     - stage: path
       stageUuid: "d11783ef-9d3c-8511-b6c8-17852c6fe8ed"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a7fb584c-519f-8a61-9090-170bc604ba67"
     - stage: horo
-      stageUuid: "d889dbbb-18a0-8cba-90dc-4dcd1984db7f"
+      stageUuid: "422953c5-c4ad-866b-a430-14ac07dc582a"
     - stage: seal
       stageUuid: "d825b003-5a69-8c00-bf54-bec9e89fe535"
     - stage: uuid
-      stageUuid: "90d64615-3640-8163-aa19-543cef11ca60"
+      stageUuid: "3f454110-866b-899a-9356-6a0b65fad347"
 version: 2
 ---
 # can/use/dom — is a real DOM present

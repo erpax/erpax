@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coil",
-    "uuid": "46a0fcc8-6669-8f44-af90-7f9501945ba2",
+    "uuid": "1d3a1ce0-b2c8-8ed1-8e86-c64ad1560b80",
     "words": [
       "coil"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex.",
-    "uuid": "681d8dae-9fdf-890f-b003-f57e161f2c3a",
+    "uuid": "c9b56bad-67f6-87e5-a6f7-6712abdf883e",
     "words": [
       "use",
       "when",

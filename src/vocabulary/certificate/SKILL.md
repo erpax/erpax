@@ -2,10 +2,10 @@
 name: certificate
 description: "Use when reasoning about certificate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/certificate"
-coordinate: "vocabulary/certificate · 8/crest · c712666f"
-contentUuid: "61ce1cbd-a43a-569e-a86b-d8aa19f037df"
-diamondUuid: "14df40a0-009f-8cb1-8fdb-f876f13be8c9"
-uuid: "c712666f-78cd-8ef6-b77f-5c8053bed039"
+coordinate: "vocabulary/certificate · 8/crest · 21dd6000"
+contentUuid: "d103a36a-31bb-5257-8282-d8048f9b6182"
+diamondUuid: "34ad0203-5963-86ec-bc21-36adab215edc"
+uuid: "21dd6000-45c6-82d5-8424-42f11400b484"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ebd53f46-681f-8d13-a1c7-87820d5598df"
+  computationUuid: "14b7bb3b-aa48-8d00-8427-f5c135ef21ee"
   stages:
     - stage: path
       stageUuid: "b84960b4-ed3d-89c5-9bb8-3cb2531ed224"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "86638387-d559-884a-a2a2-3a0d98f7eec1"
     - stage: horo
-      stageUuid: "72453482-c850-8398-9011-57ac5cfa4b7a"
+      stageUuid: "0011264a-4062-8636-a4d9-24494530613f"
     - stage: seal
       stageUuid: "a53a1326-49e4-83f2-b456-08529aca0532"
     - stage: uuid
-      stageUuid: "0aa42962-63be-8d8c-bf06-be02587168e0"
+      stageUuid: "dce2da42-0bf1-8d36-a076-b735d38cfd1a"
 version: 2
 ---
 # certificate

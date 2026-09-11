@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "group",
-    "uuid": "4b69d237-aad6-8ed4-b303-1b74a7b9358a",
+    "uuid": "6ac8b9b9-d856-8902-88f8-d523b7140c4e",
     "words": [
       "group"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a group of links.",
-    "uuid": "0cc0a8d6-a810-88e7-9b16-7beda84738af",
+    "uuid": "3e73eeba-14fb-8a0a-94ad-e62a3240292c",
     "words": [
       "use",
       "when",

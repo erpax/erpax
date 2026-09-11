@@ -2,18 +2,18 @@
 name: apiculture
 description: "Use when keeping bee colonies for produce and pollination — the colony (queen + workers) as a biological asset (the hive housing is IAS-16 equipment); honey and wax are harvested produce, the colony is also rented as a pollination service; brood is its growth, swarming its propagation, colony loss its mortality, the nectar flow its season. A living-production domain anchor and the pollination link to crops."
 atomPath: "vocabulary/apiculture"
-coordinate: "vocabulary/apiculture · 4/weave · 570b8919"
-contentUuid: "f40909cf-4d6a-5571-a406-aebd29c4891d"
-diamondUuid: "e4157c76-7ce6-8464-abb2-3338d0cc1353"
-uuid: "570b8919-cbb4-86e2-9951-fdca5578acf9"
-horo: 4
+coordinate: "vocabulary/apiculture · 2/share · b850e58c"
+contentUuid: "2ffc6e8f-b8da-59bd-b536-abd0f708d995"
+diamondUuid: "cf5864a4-5ec9-8288-bdec-5e7c6a3e2048"
+uuid: "b850e58c-a884-8311-a98a-081ec9d033ad"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 47
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ebf3cd6a-b827-8277-9dd7-ff0c034dc904"
+  computationUuid: "20925bab-92f3-8e87-b510-37204cdd0066"
   stages:
     - stage: path
       stageUuid: "f780942a-673e-8785-9b23-017b3a329d41"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9a688bc7-e850-8780-8567-61e59fa1836b"
     - stage: horo
-      stageUuid: "0d44d6b6-5d1b-820b-b084-443abb12a447"
+      stageUuid: "ea13bec0-9bf7-8153-835a-b82948bc4213"
     - stage: seal
       stageUuid: "3edb6e2e-7797-8dfa-ac40-bf84a0621726"
     - stage: uuid
-      stageUuid: "af28c333-4212-8b5c-995a-59faaf737c7b"
+      stageUuid: "0e06c5aa-5878-858b-811a-d75adf7df972"
 version: 2
 ---
 # apiculture — beekeeping for produce and pollination

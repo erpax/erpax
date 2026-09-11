@@ -2,11 +2,11 @@
 name: conference
 description: "Use when reasoning about conference as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/conference"
-coordinate: "vocabulary/conference · 7/descent · 0b1ec8f1"
-contentUuid: "80118aa0-c128-5678-8e27-84afac8fdcca"
-diamondUuid: "ad8d8d37-1a29-80de-8216-6b38b2bb0060"
-uuid: "0b1ec8f1-62ee-82b4-9fc5-12e4f6bae8a6"
-horo: 7
+coordinate: "vocabulary/conference · 8/crest · b467327a"
+contentUuid: "9ae0c6a1-c2f2-5d80-bee4-398b6ae128a5"
+diamondUuid: "8c981adc-8679-8edf-bf50-0c913a11d456"
+uuid: "b467327a-64f0-83c8-b432-08830b6ac94a"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "587c5267-99a3-80a9-a153-a78892dd1f01"
+  computationUuid: "818c7f20-cf02-8636-b746-1939fdad0803"
   stages:
     - stage: path
       stageUuid: "61779ac0-501d-805f-ad94-6dc46320e0d5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "513c42e3-ce84-8d17-a47a-006da0346366"
     - stage: horo
-      stageUuid: "59b0fece-8799-8aab-a539-a4bad6dcd4a8"
+      stageUuid: "7199c435-b787-8ce7-9a3e-aeba80bd27ae"
     - stage: seal
       stageUuid: "ae378a65-f70a-819d-b80a-25bd77c7d1e1"
     - stage: uuid
-      stageUuid: "b3fe283b-866e-8d73-a57b-f573deb8edc7"
+      stageUuid: "384dda5a-df9b-80c2-b917-6e07bfc9a30f"
 version: 2
 ---
 # conference

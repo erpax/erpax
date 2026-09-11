@@ -2,11 +2,11 @@
 name: encodings
 description: Use when reasoning about encodings — A media object that encodes this CreativeWork.
 atomPath: "vocabulary/encodings"
-coordinate: "vocabulary/encodings · 5/round · eeb73739"
-contentUuid: "5b9687d3-a6f8-57fc-b890-b3dbcc783f8e"
-diamondUuid: "2b9abd7a-e933-8b4d-aa3b-6ecf754f679a"
-uuid: "eeb73739-f44c-8db0-a2bc-277ab099b900"
-horo: 5
+coordinate: "vocabulary/encodings · 8/crest · 85be6b4b"
+contentUuid: "b1c66d9c-ae98-5531-a412-b2279916b089"
+diamondUuid: "4adf0ae4-e190-8a63-b5b2-bb7749e49fec"
+uuid: "85be6b4b-c791-8bc8-886d-8b08a28a974e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9ec0f910-084f-812d-abe6-dc5b5cd7236a"
+  computationUuid: "2bd53352-adb2-827e-b2d2-195b56adbeff"
   stages:
     - stage: path
       stageUuid: "ebd0371e-82a7-80a3-92c4-68decab21459"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a7b10507-dc71-87b3-96d0-6ebf7a3e4f15"
     - stage: horo
-      stageUuid: "0754a760-12b5-885a-8b32-1a2487c38cd3"
+      stageUuid: "95335244-d220-8dfc-8e19-18209d6430fc"
     - stage: seal
       stageUuid: "53cd9dad-ae12-8717-848c-0061e185c61f"
     - stage: uuid
-      stageUuid: "f15e2892-d4de-87be-aba7-f9a405f98cce"
+      stageUuid: "c51f52ad-1439-8a26-9ef6-cb6c9ecc3a2d"
 version: 2
 ---
 # encodings
