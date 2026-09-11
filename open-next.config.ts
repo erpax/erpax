@@ -39,6 +39,14 @@ export default {
   // `pnpm build` re-runs wrangler types + payload generate:types + importmap + sitemap.
   // Those artefacts are committed; CI `payload verify-types` is the freshness gate.
   // Deploy wall-clock is dominated by Next + Worker pack — keep only that here.
+  //
+  // WEBPACK, not Turbopack: the 8 PRODUCTION_FOLDS (uuid matrix, translations catalogue, atom
+  // catalogue, tool-defs …) are applied only by the webpack path in next.config, which matches the
+  // RESOLVED path. Turbopack's resolveAlias matches the import REQUEST by prefix, and the fold targets
+  // are imported relatively — `./generated` is also algebra/license, `./catalogue` is also
+  // standards (a runtime consumer) — so they cannot be ported without stubbing live data. Measured
+  // 2026-09-11: the Turbopack deploy build packed to 23.4 MB gz against Cloudflare's 10 MiB ceiling,
+  // with the matrix bundled three times. The live 09-02 Worker was a webpack build.
   buildCommand:
-    'node scripts/ensure-mcp-patch.mjs && node scripts/ensure-image-size-patch.mjs && pnpm build:next && node scripts/stub-bundle-leaves.mjs',
+    'node scripts/ensure-mcp-patch.mjs && node scripts/ensure-image-size-patch.mjs && pnpm build:next:webpack && node scripts/stub-bundle-leaves.mjs',
 }
