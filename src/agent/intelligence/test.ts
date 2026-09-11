@@ -33,7 +33,11 @@ describe('agent/intelligence', () => {
     resetMonitorForTests()
   })
 
-  it('quantumIntelligenceOf is a pure number', () => {
+  // EXPLICIT TIMEOUT — this is the file's first call into linearGaps, so it pays the cold corpus scan.
+  // Since b85cd04fb0 the readme-seal-break walk COMPUTES each seal (one frozen corpus build + a
+  // folder model per atom) instead of reading gitignored README faces — which, absent in CI, made the
+  // walk never start and cost nothing. The work is now real; it overran the 60s default on a CI runner.
+  it('quantumIntelligenceOf is a pure number', { timeout: 180_000 }, () => {
     const n = quantumIntelligenceOf('agent')
     expect(typeof n).toBe('number')
     expect(n).toBeGreaterThanOrEqual(0)
