@@ -33,6 +33,7 @@ import { pathWireViolations } from '@/index/cross'
 import { boundaryDigest } from '@/quantum/boundary'
 import { nonIndexImports } from '@/tamper/import'
 import { recordSampleMs, samplesMsOf, timeoutForLabel, timeoutOf } from '@/timeout'
+import { needsPayload } from '@/test'
 
 interface LocalLane {
   readonly horo: number
@@ -187,8 +188,13 @@ export function runTestWaves(args: readonly string[] = []): number {
   // times out any batch size; batch size only caps aggregate load, and 12 sealed green under
   // isolate:false before the hang. Kept at 12 as honest headroom (fewer passes, same total).
   const BATCH = 12
-  for (let b = 0; b * BATCH < plan.changed.length; b++) {
-    const batch = plan.changed.slice(b * BATCH, (b + 1) * BATCH)
+  // A batch pays the Payload boot (62s mean in run 34650881558) only when it holds an integration
+  // suite, and path order put one in 45 of 51 batches. Unit suites first, then integration: the same
+  // suites in fewer boots, and the cheap batches seal their receipts before a heavy one can go red.
+  const heavy = new Set(plan.changed.filter((s) => needsPayload(s, cwd)))
+  const ordered = [...plan.changed.filter((s) => !heavy.has(s)), ...plan.changed.filter((s) => heavy.has(s))]
+  for (let b = 0; b * BATCH < ordered.length; b++) {
+    const batch = ordered.slice(b * BATCH, (b + 1) * BATCH)
     const label = 'test:wave'
     // a BATCH is up to 25 commands sharing one spawn — the single-command ladder does not bound it.
     // Its bound is batch-history through the same ladder math scaled to the batch (min 15 min on a

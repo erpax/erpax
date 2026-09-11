@@ -1,7 +1,8 @@
 import { defineConfig, configDefaults } from 'vitest/config'
 import react from '@vitejs/plugin-react'
-import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { readdirSync, statSync } from 'node:fs'
 import { join, relative, sep } from 'node:path'
+import { needsPayload } from './src/test/index'
 
 /**
  * Vitest Configuration — pure/payload PROJECT SPLIT.
@@ -26,10 +27,6 @@ import { join, relative, sep } from 'node:path'
 // ── Classify suites by whether they touch the Payload runtime ────────────────
 const ROOT = process.cwd()
 const TEST_RE = /(^|[/\\])(test|.*\.test)\.tsx?$/
-/** A suite needs the Payload boot if it references the runtime (broad — err toward integration so a
- *  real integration suite is never starved of its DB; a pure suite mis-flagged only runs slower). */
-const NEEDS_PAYLOAD =
-  /getPayload|req\.payload|from ['"]payload['"]|@\/payload\b|createLocalReq|loginAsTestUser|@\/collections\b|initTestPayload|initPayload|\.db\(\)|payloadInstance|getTestPayload|bootTestPayload|bootVerdict|currentLoader|runAllInvariants|buildConfig|payload\.config|BasePayload/
 const walk = (dir: string, acc: string[] = []): string[] => {
   let entries: string[]
   try {
@@ -49,31 +46,11 @@ const walk = (dir: string, acc: string[] = []): string[] => {
 // version manifest + build reproducibility). A suite outside the runner's globs is a check
 // that cannot fire ([[rules]]/unraised), so the release gate is discovered here too.
 const allSuites = [...walk(join(ROOT, 'src')), ...walk(join(ROOT, 'packages'))]
-/** Does a suite touch the Payload runtime — directly, or through its OWN atom's code? A suite imports
- *  local helpers (`./index` → bootVerdict, runAllInvariants) that boot Payload without the test file
- *  ever naming it, so the shallow scan misses them. Read the suite PLUS every sibling `.ts` in its
- *  directory (the atom's own matter) — cheap, and it catches the atoms that boot via their index. */
-const dirNeedsPayload = (suiteRel: string): boolean => {
-  const dir = join(ROOT, suiteRel.slice(0, suiteRel.lastIndexOf('/')))
-  let sibs: string[]
-  try {
-    sibs = readdirSync(dir)
-  } catch {
-    return true
-  }
-  for (const e of sibs) {
-    if (!e.endsWith('.ts') && !e.endsWith('.tsx')) continue
-    try {
-      if (NEEDS_PAYLOAD.test(readFileSync(join(dir, e), 'utf8'))) return true
-    } catch {
-      return true
-    }
-  }
-  return false
-}
+// Which suites touch the Payload runtime is decided by `needsPayload` in src/test — the same answer
+// `erpax test waves` groups its batches by, so the routing here and the grouping there cannot drift.
 const integration: string[] = []
 const unit: string[] = []
-for (const s of allSuites) (dirNeedsPayload(s) ? integration : unit).push(s)
+for (const s of allSuites) (needsPayload(s, ROOT) ? integration : unit).push(s)
 
 const shared = {
   environment: 'node' as const,
