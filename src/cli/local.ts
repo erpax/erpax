@@ -375,8 +375,11 @@ export function runLocal(): number {
   return allOk ? 0 : 1
 }
 
-/** The build receipt's key in the same store the suites use — one store, one theorem. */
-const BUILD_RECEIPT = 'gate:build:next'
+/**
+ * The build receipt's key in the same store the suites use — one store, one theorem. It names the
+ * bundler: a receipt sealed by a Turbopack build must never cite a webpack one green.
+ */
+const BUILD_RECEIPT = 'gate:build:next:webpack'
 
 /**
  * `erpax test build` — the production build as a CITED verdict.
@@ -389,6 +392,10 @@ const BUILD_RECEIPT = 'gate:build:next'
  *
  * Computing the address costs 1.2s against a 345s build.
  *
+ * It builds with WEBPACK, the bundler open-next's buildCommand ships. It kept running `build:next`
+ * (Turbopack) after 07a1e27fa4 moved the deploy to webpack: 796s of CI's critical path proving a
+ * bundle that no longer shipped — and blind to the one path that applies PRODUCTION_FOLDS.
+ *
  * `--all` voids the receipt, exactly as it does for the waves.
  */
 export function runBuildGate(args: readonly string[] = []): number {
@@ -400,7 +407,7 @@ export function runBuildGate(args: readonly string[] = []): number {
   }
   console.log(`build — ${hash} is not sealed; compiling`)
   const started = Date.now()
-  const r = spawnSync('pnpm build:next', {
+  const r = spawnSync('pnpm build:next:webpack', {
     shell: true,
     stdio: 'inherit',
     cwd,
