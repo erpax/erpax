@@ -3,8 +3,8 @@ name: unreached
 description: "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…"
 atomPath: "rules/unreached"
 coordinate: "rules/unreached · 5/round · 896e7d4b"
-contentUuid: "236b3f37-43a3-5f57-a290-8f7bcfca85ad"
-diamondUuid: "11c1b7b0-3eb6-80b6-9abb-197dd144a741"
+contentUuid: "eab55cab-22af-5ad6-bb0f-f9ad93c556ee"
+diamondUuid: "f5bb6c81-305b-8313-a234-8644da3021cb"
 uuid: "896e7d4b-8dd7-86d2-8a21-086f010219ee"
 horo: 5
 typography:
@@ -13,14 +13,14 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7bca4840-8f30-8a6f-ac93-c0d773ef071f"
+  computationUuid: "00de3f23-45fb-801e-9a23-b28d3b63d055"
   stages:
     - stage: path
       stageUuid: "9d6e22fb-5a8a-815c-9c16-f9d20f2c1b0f"
     - stage: trinity
       stageUuid: "94fec9b5-6dd9-8ee2-936a-2dcca248a85a"
     - stage: boundary
-      stageUuid: "c2f14361-3c18-8a97-b2fd-a9560be78039"
+      stageUuid: "430527c5-8c0a-89a1-be7b-fbe5809d8075"
     - stage: links
       stageUuid: "c9a1d74f-eb07-8a80-9b1d-bde46f15ed60"
     - stage: horo
@@ -28,7 +28,7 @@ signatures:
     - stage: seal
       stageUuid: "7e48da22-6c40-8767-9cf0-31bb90b04753"
     - stage: uuid
-      stageUuid: "577f0aa6-e657-8b29-89b4-73d03f2816bb"
+      stageUuid: "396e320e-113f-827f-b7a8-58eadfd18fa1"
 version: 2
 ---
 # rules/unreached — 80 atoms of code that nothing reaches, from any entry this corpus has
