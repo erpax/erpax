@@ -14,7 +14,7 @@ overrides:
   # advisory names is a different transitive instance, so the key is range-scoped.
   form-data: ^4.0.6
   ws: ^8.21.0
-  js-yaml: ^4.3.0
+  js-yaml: ^4.3.2
   hono: ^4.13.5
   immutable: ^4.3.9
   fast-uri: ^3.1.6
