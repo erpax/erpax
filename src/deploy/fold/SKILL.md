@@ -102,6 +102,11 @@ translations catalogue carries the atom catalogue's descriptions, so a translati
 both folds: that text is in the bundle either way. And it reads `client` folds not at all, since
 their targets legitimately run on the server; the admin browser bundle is not read.
 
+The CI weigh step has **never executed** as of 2026-09-12: every deploy run since it landed stopped at
+*Require Cloudflare secrets*, before the build. What stands is the local proof — the real pack weighed
+at 9,053 KiB gz with every server fold 0/64, and each real target leaked into it refused by name — and
+the fixtures and pipeline law that hold its order. The first deploy with secrets is its first run.
+
 **Honest boundary.** This proves each pattern **matches real matter**, never that the
 matter is **dead on a request path** — a fold swapping out something the Worker actually
 needs breaks at runtime, and only a human decides which leaf is dev/meta. `foldWeight`
