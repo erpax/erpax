@@ -15,12 +15,9 @@ describe('rules/unreached — the doors', () => {
     expect(reachedFrom(['src/no/such/entry.ts'], process.cwd()).size).toBe(0)
   })
 
-  // The SECOND door that cannot answer in a clone. `shippedAtoms` reads `packages/*/dist/types` —
-  // BUILD OUTPUT, gitignored like the LLM.md faces below. Where the packages have not been built the
-  // set is empty, which is the honest answer to "what does this repo ship" when nothing is built.
-  //
-  // Two of this axis's five doors therefore read artefacts a fresh checkout does not have. That is
-  // the finding, not the assertion: in CI the axis is inert, and inert reads as green.
+  // The one door left that reads BUILD OUTPUT. `shippedAtoms` reads `packages/*/dist/types`, gitignored;
+  // where nothing is built the set is empty. That errs toward CHARGING a shipped atom, never toward
+  // hiding one — a false positive a reader sees, not a green that cannot fire.
   it('shippedAtoms reads the published package trees, when they are built', () => {
     const n = shippedAtoms(process.cwd()).size
     if (!existsSync(join(process.cwd(), 'packages'))) {
@@ -43,27 +40,15 @@ describe('rules/unreached — the doors', () => {
 })
 
 /**
- * These assert facts about THIS corpus, and they can only hold where the computed faces exist.
- *
- * `hasDeploymentFace` reads each atom's LLM.md, and LLM.md is GITIGNORED (.gitignore: src/**\/LLM.md)
- * — regenerated on demand, never committed. In a fresh clone there is no face to read, so the door
- * returns "no claim, do not charge" for every atom and the list is EMPTY. That is the correct
- * reading of absent evidence, and it means this axis measures nothing in CI: it reports zero
- * unreached atoms and passes, which is a gate that cannot fire.
- *
- * The test says so rather than asserting a membership that a clone cannot satisfy. Naming the
- * condition is the point — a suite that quietly passes on an empty list is the same silence one
- * layer up.
+ * Facts about THIS corpus — and now they hold in any checkout. The deployment door used to parse
+ * each atom's gitignored LLM.md, so a clean clone read "no claim" for every atom, the list was empty,
+ * and the axis counted 0 in CI by construction. The face is computed now, so these assert membership
+ * unconditionally.
  */
 describe('rules/unreached — the live corpus', () => {
   const live = unreachedAtoms(process.cwd())
-  const facesPresent = existsSync(join(process.cwd(), 'src', 'rules', 'unreached', 'LLM.md'))
 
   it('names atoms that survived every door, with a reason a reader need not re-derive', () => {
-    if (!facesPresent) {
-      expect(live.length).toBe(0) // no faces ⇒ no claim ⇒ nothing charged; stated, not skipped
-      return
-    }
     expect(live.length).toBeGreaterThan(0)
     for (const a of live.slice(0, 20)) expect(a.reason).toContain('not shipped')
   })
@@ -76,9 +61,7 @@ describe('rules/unreached — the live corpus', () => {
   })
 
   it('does name the admin components nothing references', () => {
-    if (!facesPresent) return
-    const paths = live.map((a) => a.atomPath)
-    expect(paths).toContain('admin/ui/cells')
+    expect(live.map((a) => a.atomPath)).toContain('admin/ui/cells')
   })
 
   it('never names a vocabulary word — its barrel exists only to name the word', () => {
@@ -92,73 +75,69 @@ describe('rules/unreached — the live corpus', () => {
   })
 })
 
+/** Plant an atom: SKILL.md + index.ts, and optionally a (derived, gitignored) LLM.md face. */
+const plant = (root: string, path: string, index: string, llm?: string): void => {
+  mkdirSync(join(root, 'src', path), { recursive: true })
+  writeFileSync(join(root, 'src', path, 'SKILL.md'), `# ${path}\n`)
+  writeFileSync(join(root, 'src', path, 'index.ts'), index)
+  if (llm !== undefined) writeFileSync(join(root, 'src', path, 'LLM.md'), `faces worker·plugin·pwa ${llm}\n`)
+}
+
+const inFixture = (build: (root: string) => void, check: (charged: string[]) => void): void => {
+  const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+  try {
+    build(root)
+    check(unreachedAtoms(root).map((a) => a.atomPath))
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+}
+
 describe('rules/unreached — a fixture with no packages and no gate', () => {
   it('names an atom with code that nothing imports', () => {
-    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
-    try {
-      mkdirSync(join(root, 'src', 'lonely'), { recursive: true })
-      writeFileSync(join(root, 'src', 'lonely', 'SKILL.md'), '# lonely\n')
-      writeFileSync(join(root, 'src', 'lonely', 'index.ts'), 'export const x = 1\n')
-      writeFileSync(join(root, 'src', 'lonely', 'LLM.md'), 'faces worker·plugin·pwa `0`·`0`·`0`\n')
-      expect(unreachedAtoms(root).map((a) => a.atomPath)).toContain('lonely')
-    } finally {
-      rmSync(root, { recursive: true, force: true })
-    }
+    inFixture(
+      (root) => plant(root, 'lonely', 'export const x = 1\n'),
+      (charged) => expect(charged).toContain('lonely'),
+    )
   })
 
-  it('does NOT name it once its LLM face reports a deployment face', () => {
-    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
-    try {
-      mkdirSync(join(root, 'src', 'lonely'), { recursive: true })
-      writeFileSync(join(root, 'src', 'lonely', 'SKILL.md'), '# lonely\n')
-      writeFileSync(join(root, 'src', 'lonely', 'index.ts'), 'export const x = 1\n')
-      writeFileSync(join(root, 'src', 'lonely', 'LLM.md'), 'faces worker·plugin·pwa `1`·`0`·`0`\n')
-      expect(unreachedAtoms(root).map((a) => a.atomPath)).not.toContain('lonely')
-    } finally {
-      rmSync(root, { recursive: true, force: true })
-    }
+  // `cloudflare/…` is a worker face by `deploymentFaces`' own path rule — a real input, not a label.
+  it('does NOT name an atom that carries a deployment face', () => {
+    inFixture(
+      (root) => plant(root, 'cloudflare/lonely', 'export const x = 1\n'),
+      (charged) => expect(charged).not.toContain('cloudflare/lonely'),
+    )
   })
 
-  // Absence of evidence is not evidence: an atom with no computed face makes no claim, so it is not
-  // charged on the strength of a file that was never generated.
-  it('does not charge an atom whose face was never computed', () => {
-    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
-    try {
-      mkdirSync(join(root, 'src', 'lonely'), { recursive: true })
-      writeFileSync(join(root, 'src', 'lonely', 'SKILL.md'), '# lonely\n')
-      writeFileSync(join(root, 'src', 'lonely', 'index.ts'), 'export const x = 1\n')
-      expect(unreachedAtoms(root).map((a) => a.atomPath)).not.toContain('lonely')
-    } finally {
-      rmSync(root, { recursive: true, force: true })
-    }
+  // The regression. A derived LLM.md is present on a working tree and absent in CI; it must not
+  // decide the verdict in either direction, or the axis answers differently per machine.
+  it('a planted LLM.md face decides nothing — the face is computed, never read', () => {
+    inFixture(
+      (root) => {
+        plant(root, 'lonely', 'export const x = 1\n', '`1`·`0`·`0`')
+        plant(root, 'cloudflare/worker', 'export const y = 1\n', '`0`·`0`·`0`')
+      },
+      (charged) => {
+        expect(charged).toContain('lonely')
+        expect(charged).not.toContain('cloudflare/worker')
+      },
+    )
   })
 
   // The door was checked per-atom and never PROPAGATED: an atom whose only door is "a deployed
   // atom imports it" was charged as unreached. Both halves are planted here — the importer carries
-  // a face and passes, and the imported atom carries a 0·0·0 face and must pass THROUGH it.
+  // a face and passes, and the imported atom has none and must pass THROUGH it.
   it('an atom a deployed atom imports is reached, and one nothing imports is still charged', () => {
-    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
-    try {
-      mkdirSync(join(root, 'src', 'shipped'), { recursive: true })
-      writeFileSync(join(root, 'src', 'shipped', 'SKILL.md'), '# shipped\n')
-      writeFileSync(join(root, 'src', 'shipped', 'index.ts'), "export { helper } from '@/helper'\n")
-      writeFileSync(join(root, 'src', 'shipped', 'LLM.md'), 'faces worker·plugin·pwa `1`·`0`·`0`\n')
-
-      mkdirSync(join(root, 'src', 'helper'), { recursive: true })
-      writeFileSync(join(root, 'src', 'helper', 'SKILL.md'), '# helper\n')
-      writeFileSync(join(root, 'src', 'helper', 'index.ts'), 'export const helper = 1\n')
-      writeFileSync(join(root, 'src', 'helper', 'LLM.md'), 'faces worker·plugin·pwa `0`·`0`·`0`\n')
-
-      mkdirSync(join(root, 'src', 'orphan'), { recursive: true })
-      writeFileSync(join(root, 'src', 'orphan', 'SKILL.md'), '# orphan\n')
-      writeFileSync(join(root, 'src', 'orphan', 'index.ts'), 'export const orphan = 1\n')
-      writeFileSync(join(root, 'src', 'orphan', 'LLM.md'), 'faces worker·plugin·pwa `0`·`0`·`0`\n')
-
-      const charged = unreachedAtoms(root).map((a) => a.atomPath)
-      expect(charged).not.toContain('helper')
-      expect(charged).toContain('orphan')
-    } finally {
-      rmSync(root, { recursive: true, force: true })
-    }
+    inFixture(
+      (root) => {
+        plant(root, 'cloudflare/shipped', "export { helper } from '@/helper'\n")
+        plant(root, 'helper', 'export const helper = 1\n')
+        plant(root, 'orphan', 'export const orphan = 1\n')
+      },
+      (charged) => {
+        expect(charged).not.toContain('helper')
+        expect(charged).toContain('orphan')
+      },
+    )
   })
 })

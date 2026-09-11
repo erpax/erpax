@@ -1,7 +1,9 @@
-import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
+import { computeDiamond, deploymentFaces } from '@/diamond'
 import { importsOf } from '@/rules/cycle'
-import { schemaCollision } from '@/readme/compute'
+import { buildReadmeCorpusFrozenInputs, schemaCollision } from '@/readme/compute'
 
 /**
  * rules/unreached — an atom of code that nothing reaches, from any entry the corpus has.
@@ -79,17 +81,48 @@ export function shippedAtoms(cwd: string = process.cwd()): ReadonlySet<string> {
   return out
 }
 
-/** Does this atom's LLM face report a deployment face (worker · plugin · pwa)? */
-const hasDeploymentFace = (dir: string): boolean => {
-  let text = ''
-  try {
-    text = readFileSync(join(dir, 'LLM.md'), 'utf8')
-  } catch {
-    return true // no face computed ⇒ nothing to claim; do not charge on absence of evidence
-  }
-  const m = /faces worker·plugin·pwa `?(\d)`?·`?(\d)`?·`?(\d)`?/.exec(text)
-  if (m === null) return true
-  return m[1] !== '0' || m[2] !== '0' || m[3] !== '0'
+/**
+ * SKILL-bearing atoms with a deployment face (worker · plugin · pwa), computed by the same
+ * `deploymentFaces` the LLM face prints, over one frozen corpus context. It used to PARSE that
+ * face — gitignored, so a clean checkout had none, every atom read "no claim", and this axis
+ * counted 0 in CI by construction. Memoised on the tree fingerprint.
+ */
+export function facedAtoms(cwd: string = process.cwd()): ReadonlySet<string> {
+  const faced = memoByFingerprintOnDisk('rules-unreached-faced-atoms', cwd, () => {
+    const { graph, ctx } = buildReadmeCorpusFrozenInputs(cwd)
+    const src = join(cwd, 'src')
+    const out: string[] = []
+    const walk = (dir: string): void => {
+      let entries: import('node:fs').Dirent[]
+      try {
+        entries = readdirSync(dir, { withFileTypes: true })
+      } catch {
+        return
+      }
+      for (const e of entries) {
+        if (!e.isDirectory() || e.name.startsWith('.') || e.name === 'node_modules') continue
+        const d = join(dir, e.name)
+        if (existsSync(join(d, 'SKILL.md'))) {
+          const path = relative(src, d)
+          const model = computeDiamond({ kind: 'path', path, cwd, graph, ctx }).model
+          const f = deploymentFaces(model as Parameters<typeof deploymentFaces>[0])
+          if (f.worker || f.plugin || f.pwa) out.push(path)
+        }
+        walk(d)
+      }
+    }
+    walk(src)
+    return out.sort()
+  })
+  return new Set(faced)
+}
+
+/** The deployment door. A directory with no SKILL.md is not an atom and never had a face — it stays
+ *  a reach seed, exactly as before. */
+const deploymentDoor = (cwd: string): ((dir: string) => boolean) => {
+  const src = join(cwd, 'src')
+  const faced = facedAtoms(cwd)
+  return (dir) => !existsSync(join(dir, 'SKILL.md')) || faced.has(relative(src, dir))
 }
 
 /**
@@ -117,7 +150,7 @@ const hasDeploymentFace = (dir: string): boolean => {
  * the question rather than a loosening of the answer ([[rules]]/domain: a law reaches exactly the
  * cases its checker opens).
  */
-function deployedEntries(cwd: string): string[] {
+function deployedEntries(cwd: string, deployed: (dir: string) => boolean): string[] {
   const src = join(cwd, 'src')
   const out: string[] = []
   const walk = (dir: string): void => {
@@ -130,7 +163,7 @@ function deployedEntries(cwd: string): string[] {
     for (const e of entries) {
       if (!e.isDirectory() || e.name.startsWith('.') || e.name === 'node_modules') continue
       const d = join(dir, e.name)
-      if (hasDeploymentFace(d)) {
+      if (deployed(d)) {
         for (const n of ['index.ts', 'index.tsx']) {
           const f = join(d, n)
           if (existsSync(f)) out.push(relative(cwd, f))
@@ -145,7 +178,8 @@ function deployedEntries(cwd: string): string[] {
 
 export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
   const src = join(cwd, 'src')
-  const tooling = reachedFrom([...TOOLING_ENTRIES, ...deployedEntries(cwd)], cwd)
+  const deployed = deploymentDoor(cwd)
+  const tooling = reachedFrom([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed)], cwd)
   const shipped = shippedAtoms(cwd)
   const words = schemaCollision(cwd).words
   const out: UnreachedAtom[] = []
@@ -163,7 +197,7 @@ export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
       if (existsSync(join(p, 'SKILL.md')) && hasCode) {
         const atomPath = relative(src, p)
         const leaf = atomPath.slice(atomPath.lastIndexOf('/') + 1)
-        if (!hasDeploymentFace(p) && !tooling.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf)) {
+        if (!deployed(p) && !tooling.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf)) {
           out.push({ atomPath, reason: 'no deployment face · not reached from the gate or CLI · not shipped · not a vocabulary word' })
         }
       }
