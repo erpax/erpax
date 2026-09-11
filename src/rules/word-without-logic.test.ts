@@ -18,15 +18,14 @@ describe('rules/word-without-logic — fixtures', () => {
 
   beforeAll(() => {
     mkdirSync(join(src, 'prose-heavy'), { recursive: true })
+    // The prose weight lives in SKILL.md — the tracked form. README.md and diamond.json are
+    // gitignored faces derived from it, present on a working tree and absent in CI.
     writeFileSync(
       join(src, 'prose-heavy/SKILL.md'),
-      '---\nname: prose-heavy\n---\n\nThis atom implements compute and derive behavior for the corpus gate.\n',
+      '---\nname: prose-heavy\n---\n\n' +
+        Array.from({ length: PROSE_HEAVY_README_WORDS + 20 }, (_, i) => `word${i}`).join(' ') +
+        '\n',
     )
-    writeFileSync(
-      join(src, 'prose-heavy/README.md'),
-      Array.from({ length: PROSE_HEAVY_README_WORDS + 20 }, (_, i) => `word${i}`).join(' '),
-    )
-    writeFileSync(join(src, 'prose-heavy/diamond.json'), '{}')
 
     mkdirSync(join(src, 'orphan-export'), { recursive: true })
     writeFileSync(join(src, 'orphan-export/SKILL.md'), '---\nname: orphan-export\n---\n\nRe-export face.\n')
@@ -87,6 +86,28 @@ describe('rules/word-without-logic — fixtures', () => {
     expect(caseOf('with-logic', fixtureRoot, index).isLiterary).toBe(false)
     expect(caseOf('vocab-exception', fixtureRoot, index).isLiterary).toBe(false)
     expect(caseOf('importer', fixtureRoot, index).importerCount).toBeGreaterThan(0)
+  })
+
+  // Derived faces are gitignored: a working tree carries ~3,500 of them and a CI checkout none.
+  // Read as evidence, they made this axis count 440 locally and 27 in CI — a verdict that depends
+  // on which machine asks. Planting both faces must not move a single verdict.
+  it('a derived README.md or diamond.json does not change any verdict', () => {
+    const before = buildImportIndex(fixtureRoot)
+    const atoms = ['prose-heavy', 'orphan-export', 'with-logic', 'importer', 'consumer'] as const
+    const verdicts = atoms.map((a) => caseOf(a, fixtureRoot, before))
+    for (const a of atoms) {
+      writeFileSync(join(src, a, 'README.md'), Array.from({ length: 900 }, (_, i) => `face${i}`).join(' '))
+      writeFileSync(join(src, a, 'diamond.json'), '{}')
+    }
+    try {
+      const after = buildImportIndex(fixtureRoot)
+      expect(atoms.map((a) => caseOf(a, fixtureRoot, after))).toEqual(verdicts)
+    } finally {
+      for (const a of atoms) {
+        rmSync(join(src, a, 'README.md'), { force: true })
+        rmSync(join(src, a, 'diamond.json'), { force: true })
+      }
+    }
   })
 
   it('wordWithoutLogicViolations ranks literary fixtures', () => {

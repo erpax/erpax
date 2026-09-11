@@ -82,8 +82,10 @@ const isDir = (p: string): boolean => {
 
 const atomDir = (atomPath: string, cwd: string): string => join(cwd, SRC, atomPath)
 
-const countReadmeWords = (dir: string): number => {
-  const readme = join(dir, 'README.md')
+// SKILL.md, the tracked form — never README.md or diamond.json: those are gitignored faces derived
+// from it, so reading them made this axis 440 on a working tree and 27 on a clean CI checkout.
+const countProseWords = (dir: string): number => {
+  const readme = join(dir, 'SKILL.md')
   if (!here(readme)) return 0
   return read(readme).split(/\s+/).filter(Boolean).length
 }
@@ -288,7 +290,7 @@ export function caseOf(
   const hasIndex = indexPath !== null
   const childCode = hasChildCodeAtoms(dir)
   const loc = indexPath ? countLinesOfCode(indexPath) : 0
-  const readmeWords = countReadmeWords(dir)
+  const readmeWords = countProseWords(dir)
   const hasTests = proofIn(dir) !== null
   // An atom under the `vocabulary/` namespace IS the corpus's declared vocabulary — prose by design
   // (the same class rules/prose exempts as a lexicon). It need not repeat `vocabularyException: true`
@@ -329,7 +331,7 @@ export function caseOf(
   const orphanExport =
     hasIndex && !hasLogic && !childCode && importerCount === 0 && !hasTests
   const formOnly =
-    !hasIndex && !childCode && (existsSync(join(dir, 'README.md')) || existsSync(join(dir, 'diamond.json')))
+    !hasIndex && !childCode && existsSync(join(dir, 'SKILL.md'))
   const noImporters =
     (trivialStub || behaviorProse) && importerCount === 0 && !hasTests && !childCode
 
@@ -354,7 +356,7 @@ const classifyKind = (uc: UseCaseVerdict, dir: string): WordWithoutLogicKind | n
   if (uc.vocabularyException || !uc.isLiterary) return null
   if (hasChildCodeAtoms(dir)) return null
   const hasIndex = existsSync(join(dir, 'index.ts'))
-  if (!hasIndex && (uc.readmeWords > 0 || existsSync(join(dir, 'diamond.json')))) return 'form-only'
+  if (!hasIndex && uc.readmeWords > 0) return 'form-only'
   if (hasIndex && !uc.hasLogic && uc.importerCount === 0) return 'orphan-export'
   if (uc.readmeWords >= PROSE_HEAVY_README_WORDS && uc.linesOfCode === 0) return 'prose-heavy'
   if (skillReferencesBehavior(dir) && uc.importerCount === 0 && !uc.hasTests) return 'no-importers'
