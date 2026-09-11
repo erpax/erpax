@@ -192,9 +192,22 @@ export function runTestWaves(args: readonly string[] = []): number {
   // suite, and path order put one in 45 of 51 batches. Unit suites first, then integration: the same
   // suites in fewer boots, and the cheap batches seal their receipts before a heavy one can go red.
   const heavy = new Set(plan.changed.filter((s) => needsPayload(s, cwd)))
-  const ordered = [...plan.changed.filter((s) => !heavy.has(s)), ...plan.changed.filter((s) => heavy.has(s))]
-  for (let b = 0; b * BATCH < ordered.length; b++) {
-    const batch = ordered.slice(b * BATCH, (b + 1) * BATCH)
+  // Integration batches are sized to the timeout, not to the unit cap: each one pays the boot, so
+  // fewer is cheaper while it stays inside half the 900s floor. Measured in run 34650881558 — worst
+  // boot 174s, integration suite p95 13.8s — the largest batch with 174 + 13.8·x ≤ 450 is x = 20
+  // (exact enumeration, qpu.uuidna.com optimise receipt 18af403c-a476-8fae-92a0-8724d20694da).
+  const INTEGRATION_BATCH = 20
+  const chunk = (list: readonly string[], size: number): string[][] => {
+    const out: string[][] = []
+    for (let i = 0; i < list.length; i += size) out.push(list.slice(i, i + size))
+    return out
+  }
+  const batches = [
+    ...chunk(plan.changed.filter((s) => !heavy.has(s)), BATCH),
+    ...chunk(plan.changed.filter((s) => heavy.has(s)), INTEGRATION_BATCH),
+  ]
+  for (let b = 0; b < batches.length; b++) {
+    const batch = batches[b]!
     const label = 'test:wave'
     // a BATCH is up to 25 commands sharing one spawn — the single-command ladder does not bound it.
     // Its bound is batch-history through the same ladder math scaled to the batch (min 15 min on a
