@@ -17,6 +17,7 @@ import { wordTokenUuid } from '@/word'
 import { interact64, combineArchitectures, architectureMask } from '@/quantum/word'
 import { commentSites } from '@/syntax'
 import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
+import { atomSealedOf } from '@/readme/compute'
 
 /**
  * CODE with comment ranges blanked — a doc comment that WRITES the ring literal
@@ -573,10 +574,6 @@ const gapDigitFold = (atomPath: string): bigint => {
   const n = nodeOf(atomPath) ?? nodeOf(leaf)
   return n ? uuidFold64(n.uuid) & architectureMask() : 0n
 }
-const isSealedReadme = (cwd: string, atomPath: string): boolean => {
-  const readme = join(cwd, GAP_SRC, atomPath, 'README.md')
-  return existsSync(readme) && /\[\[seal\]\] `1`/.test(readFileSync(readme, 'utf8'))
-}
 export function entanglementScore(atomPath: string, other?: string): bigint {
   const base = interact64(gapWordFold(atomPath), gapDigitFold(atomPath))
   return other ? interact64(base, interact64(gapWordFold(other), gapDigitFold(other))) : base
@@ -708,6 +705,9 @@ const trinityIncompleteGaps = (cwd: string): LinearGap[] => {
 const readmeSealBreakGaps = (cwd: string): LinearGap[] => {
   const out: LinearGap[] = []
   const src = join(cwd, GAP_SRC)
+  // Computed, never read from README.md: that face is gitignored, so a clean checkout sealed no
+  // volume, the walk never started, and this counted 0 in CI by construction.
+  const sealed = atomSealedOf(cwd)
   const walk = (atomPath: string, dir: string) => {
     let entries: string[]
     try {
@@ -721,8 +721,8 @@ const readmeSealBreakGaps = (cwd: string): LinearGap[] => {
       if (!gapIsDir(p)) continue
       const child = `${atomPath}/${e}`
       if (
-        (existsSync(join(p, 'README.md')) || existsSync(join(p, 'index.ts'))) &&
-        !isSealedReadme(cwd, child)
+        (existsSync(join(p, 'SKILL.md')) || existsSync(join(p, 'index.ts'))) &&
+        !sealed(child)
       )
         out.push({
           kind: 'readme-seal-break',
@@ -735,7 +735,7 @@ const readmeSealBreakGaps = (cwd: string): LinearGap[] => {
     }
   }
   for (const vol of indexVolumes(cwd))
-    if (isSealedReadme(cwd, vol)) walk(vol, join(src, vol))
+    if (sealed(vol)) walk(vol, join(src, vol))
   return out
 }
 const orphanReexportGaps = (cwd: string): LinearGap[] =>

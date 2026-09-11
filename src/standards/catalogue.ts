@@ -2008,7 +2008,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 195,
+    "count": 196,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -4300,7 +4300,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/payable/analytics.service.ts",
+        "path": "src/payable/analytics/index.ts",
         "section": ""
       },
       {
@@ -4386,7 +4386,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/payable/analytics.service.ts",
+        "path": "src/payable/analytics/index.ts",
         "section": ""
       },
       {
@@ -7469,7 +7469,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 160,
+    "count": 159,
     "modules": [
       {
         "path": "src/agent/SKILL.md",

@@ -696,6 +696,20 @@ export function buildReadmeCorpusFrozenInputs(
   return { graph, ctx, at, entropyRender }
 }
 
+/** One frozen build per process per tree fingerprint (graph and ledger are not JSON, so in-process),
+ *  shared by readers that need only a model instead of each paying the ~39s build. */
+const frozenCorpusInputs = (cwd: string): ReadmeCorpusFrozenInputs =>
+  memoByFingerprint('readme-frozen-inputs', cwd, () => buildReadmeCorpusFrozenInputs(cwd))
+
+/** Is an atom sealed — computed from its folder model, the very field its README prints. Gates read
+ *  this, never the README: that face is gitignored, a clean checkout has none, and a regex over it
+ *  counted 0 seal breaks in CI by construction. A FACTORY: resolve the frozen inputs once per walk —
+ *  resolving per atom re-walked the tree for the fingerprint each time (1,703 calls, 326s). */
+export function atomSealedOf(cwd: string): (atomPath: string) => boolean {
+  const { graph, ctx } = frozenCorpusInputs(cwd)
+  return (atomPath) => deriveFolderModel(atomPath, cwd, ctx, graph).sealed
+}
+
 /** Render root README from wave inputs — reuse frozen graph + receipt chain. */
 export function renderRootReadmeInWaves(
   cwd: string = process.cwd(),
