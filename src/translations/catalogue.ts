@@ -20281,7 +20281,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when running the deterministic, idempotent consistency transforms that close code-consistency gaps (chain producer backfill, emits upgrade, e2e + shadcn scaffolds, localized flags) — the appliers the `erpax.consistency.applyAll` MCP tool and the ConsistencyAgent cron dispatch to.",
-        "uuid": "2f56c6b8-6dfb-8167-b60b-14f6bfaf372c",
+        "uuid": "16779852-092c-880d-91b0-11f4432472f4",
         "words": [
           "use",
           "when",
@@ -45173,7 +45173,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing.",
-        "uuid": "46e70805-381c-888b-ac95-255ad21d9528",
+        "uuid": "bbe86ebe-5d18-8c8f-bbbe-6f2678256d01",
         "words": [
           "use",
           "when",
@@ -77423,7 +77423,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "cron",
-        "uuid": "a9e36668-3aa9-8f36-bcaa-629e47bf0bac",
+        "uuid": "8657124a-e006-8607-a611-3590e763973b",
         "words": [
           "cron"
         ],
@@ -77433,8 +77433,8 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when a Cloudflare cron trigger must actually reach the Payload jobs sweep — runScheduledJobs POSTs to /api/payload-jobs/run with the Bearer token derived from PAYLOAD_SECRET. The logic lives here rather than in worker.ts because that file imports a build artifact and cannot be loaded in a test. Refuses rather than calling unauthenticated when the secret is unset, refuses rather than reaching the public internet when the service binding is missing, and reports a non-2xx — a cron that fails quietly is the defect it closes.",
-        "uuid": "4b76bf90-4dc9-8e72-b9b5-c484fcf5d165",
+        "source": "Use when a Cloudflare cron trigger must actually reach the Payload jobs sweep — runScheduledJobs GETs /api/payload-jobs/run (Payload serves it as GET; a POST is a 404) with the Bearer token derived from PAYLOAD_SECRET. The logic lives here rather than in worker.ts because that file imports a build artifact and cannot be loaded in a test. Refuses rather than calling unauthenticated when the secret is unset, refuses rather than reaching the public internet when the service binding is missing, and reports a non-2xx — a cron that fails quietly is the defect it closes.",
+        "uuid": "295604d4-e7e1-8394-8c8e-589e313de070",
         "words": [
           "use",
           "when",
@@ -77450,12 +77450,20 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "jobs",
           "sweep",
           "runscheduledjobs",
-          "posts",
-          "to",
+          "gets",
           "api",
           "payload",
           "jobs",
           "run",
+          "payload",
+          "serves",
+          "it",
+          "as",
+          "get",
+          "a",
+          "post",
+          "is",
+          "a",
           "with",
           "the",
           "bearer",
@@ -77527,7 +77535,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "closes"
         ],
         "values": {
-          "en": "Use when a Cloudflare cron trigger must actually reach the Payload jobs sweep — runScheduledJobs POSTs to /api/payload-jobs/run with the Bearer token derived from PAYLOAD_SECRET. The logic lives here rather than in worker.ts because that file imports a build artifact and cannot be loaded in a test. Refuses rather than calling unauthenticated when the secret is unset, refuses rather than reaching the public internet when the service binding is missing, and reports a non-2xx — a cron that fails quietly is the defect it closes."
+          "en": "Use when a Cloudflare cron trigger must actually reach the Payload jobs sweep — runScheduledJobs GETs /api/payload-jobs/run (Payload serves it as GET; a POST is a 404) with the Bearer token derived from PAYLOAD_SECRET. The logic lives here rather than in worker.ts because that file imports a build artifact and cannot be loaded in a test. Refuses rather than calling unauthenticated when the secret is unset, refuses rather than reaching the public internet when the service binding is missing, and reports a non-2xx — a cron that fails quietly is the defect it closes."
         }
       }
     ]
@@ -122683,7 +122691,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\"works in config but fails at runtime\\\" (e.g. \\\"no such Durable Object class is exported from the worker\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
-        "uuid": "5fc16b61-8166-83e2-8e5e-8587c914fe45",
+        "uuid": "86371086-df2f-812f-aa45-3b71eea68d80",
         "words": [
           "use",
           "when",
