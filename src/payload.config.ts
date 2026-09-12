@@ -598,6 +598,9 @@ export default buildConfig({
        */
       {
         slug: 'bg-bnb-rates-sync',
+        // Queued by the */15 sweep's /run once a day. Any task schedule turns on jobs.scheduling, which
+        // needs the payload_jobs_stats table and payload_jobs.meta — applied to prod D1 2026-09-12.
+        schedule: [{ cron: '0 1 * * *', queue: 'default' }],
         handler: async ({ req }: { req: PayloadRequest }) => {
           const { processBnbRatesSync } = await import('@/jobs/bnb/rates/sync')
           const result = await processBnbRatesSync(req.payload)

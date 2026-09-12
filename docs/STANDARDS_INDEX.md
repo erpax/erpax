@@ -2125,7 +2125,7 @@ src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-tes
 src/payload.config.ts:576:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
 src/payload.config.ts:594:       * @standard ISO-3166-1:2020 BG country-code
 src/payload.config.ts:595:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:614:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:617:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/payment/methods/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/payment/methods/index.ts:15: * @standard ISO-13616-1:2020 iban bank-account-reference
 src/payment/methods/index.ts:16: * @standard ISO-9362:2022 bic bank-routing
@@ -6071,7 +6071,7 @@ src/payable/workflow/index.ts:13: * @audit ISO-19011:2018 audit-trail state-tran
 src/payload.config.multi-tenant-admin.test.ts:14: * @audit ISO-19011:2018 audit-trail
 src/payload.config.ts:577:       * @audit ISO-19011:2018 audit-trail dunning-cycle
 src/payload.config.ts:597:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:615:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:618:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload/command/index.ts:10: * @audit the command list is the installed CLI's; each uuid and the fold are computed
 src/payment/methods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/peppol/bis/3/types/index.ts:13: * @audit ISO-19011:2018 audit-trail
