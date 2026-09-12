@@ -53,10 +53,17 @@ export async function runScheduledJobs(env: CronEnv, log: (m: string) => void = 
     log('[cron] WORKER_SELF_REFERENCE is not bound — the jobs sweep cannot be dispatched')
     return { ran: false, reason: 'no-binding' }
   }
+  // GET, never POST: Payload registers this endpoint as `method: 'get', path: '/run'`
+  // (payload/dist/queues/endpoints/run.js — "GET instead of POST to allow it to be used in a Vercel
+  // Cron"). A POST matches no endpoint, and the live Worker answered every sweep with 404 until
+  // 2026-09-12 — the cron fired, authenticated, and ran nothing.
   const res = await env.WORKER_SELF_REFERENCE.fetch(JOBS_RUN_URL, {
-    method: 'POST',
-    headers: { authorization: `Bearer ${secret}`, 'content-type': 'application/json' },
+    method: 'GET',
+    headers: { authorization: `Bearer ${secret}` },
   })
-  if (!res.ok) log(`[cron] payload-jobs/run responded ${res.status} ${res.statusText}`)
+  // Read the body: an unread response leaves the self-request "canceled", and Payload's message says
+  // why a non-2xx happened.
+  const body = await res.text().catch(() => '')
+  if (!res.ok) log(`[cron] payload-jobs/run responded ${res.status} ${res.statusText} ${body.slice(0, 200)}`)
   return { ran: true, status: res.status, ok: res.ok }
 }

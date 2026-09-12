@@ -5,17 +5,19 @@ import { deriveSecretFrom, internalSecretPurpose } from '@/nist/sp/800/108'
 import { type CronEnv, JOBS_RUN_URL, runScheduledJobs } from './index'
 
 const MASTER = 'a-test-master-secret'
-const ok = (status = 200) => ({ ok: status < 400, status, statusText: 'x' }) as Response
+const ok = (status = 200, body = '') => ({ ok: status < 400, status, statusText: 'x', text: async () => body }) as Response
 const binding = (res: Response) => ({ fetch: vi.fn().mockResolvedValue(res) })
 
 describe('run/cron — the sweep that had no handler', () => {
-  it('POSTs with the SAME token the endpoint derives — not a second construction', async () => {
+  it('GETs with the SAME token the endpoint derives — not a second construction', async () => {
     const self = binding(ok())
     const out = await runScheduledJobs({ PAYLOAD_SECRET: MASTER, WORKER_SELF_REFERENCE: self } as CronEnv)
     expect(out).toEqual({ ran: true, status: 200, ok: true })
     const [url, init] = self.fetch.mock.calls[0]!
     expect(url).toBe(JOBS_RUN_URL)
-    expect(init.method).toBe('POST')
+    // Payload registers the run endpoint as GET; a POST is a 404, which is what production answered
+    // on every sweep until 2026-09-12.
+    expect(init.method).toBe('GET')
     // jobs.access.run compares against exactly this — if the two derivations ever diverged, the
     // cron would 401 on a schedule and nobody would be watching
     expect(init.headers.authorization).toBe(`Bearer ${deriveSecretFrom(MASTER, internalSecretPurpose.cron)}`)

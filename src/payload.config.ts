@@ -566,7 +566,7 @@ export default buildConfig({
        * (was orphaned before — see CHANGELOG `[Unreleased]` Slice YY).
        *
        * Reachable via:
-       *   • Cloudflare Workers: `POST /api/payload-jobs/run` + a wrangler
+       *   • Cloudflare Workers: `GET /api/payload-jobs/run` + a wrangler
        *     `[[triggers]]` cron entry (recommended for the actual deploy).
        *   • Long-lived Node: `PAYLOAD_JOB_AUTORUN=true` + the `autoRun`
        *     block below; runs every 5 minutes from the default queue.

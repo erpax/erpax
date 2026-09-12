@@ -1,6 +1,6 @@
 ---
 name: cron
-description: "Use when a Cloudflare cron trigger must actually reach the Payload jobs sweep — runScheduledJobs POSTs to /api/payload-jobs/run with the Bearer token derived from PAYLOAD_SECRET. The logic lives here rather than in worker.ts because that file imports a build artifact and cannot be loaded in a test. Refuses rather than calling unauthenticated when the secret is unset, refuses rather than reaching the public internet when the service binding is missing, and reports a non-2xx — a cron that fails quietly is the defect it closes."
+description: "Use when a Cloudflare cron trigger must actually reach the Payload jobs sweep — runScheduledJobs GETs /api/payload-jobs/run (Payload serves it as GET; a POST is a 404) with the Bearer token derived from PAYLOAD_SECRET. The logic lives here rather than in worker.ts because that file imports a build artifact and cannot be loaded in a test. Refuses rather than calling unauthenticated when the secret is unset, refuses rather than reaching the public internet when the service binding is missing, and reports a non-2xx — a cron that fails quietly is the defect it closes."
 atomPath: "run/cron"
 coordinate: "run/cron · 8/crest · a9e36668"
 contentUuid: "3d9b2c83-cddb-5e7c-96a0-ff936bb9a6f8"
@@ -65,7 +65,11 @@ Confirmed in the bundled output, not assumed: `wrangler deploy --dry-run` emits 
 
 The token is the **same construction** the endpoint checks (`jobs.access.run`). A Worker gets its secrets in `env`, never `process.env`, so this calls the explicit-master form of the derivation rather than re-deriving the HMAC — two derivations that can drift is how an internal token stops matching the endpoint that validates it, silently, on a schedule.
 
-**Honest boundary.** This proves the trigger **reaches a handler and authenticates**. It does not prove the sweep *succeeds* — what the jobs do once invoked is theirs. And the five declared queue **consumers** still have no `queue()` handler; that is the same class of defect and is not closed here.
+## The handler that answered 404
+
+Wiring the handler was half the fix. It POSTed, and Payload registers the run endpoint as `method: 'get', path: '/run'` (`payload/dist/queues/endpoints/run.js`, "GET instead of POST to allow it to be used in a Vercel Cron"), so a POST matches no endpoint. Measured on the live Worker 2026-09-12 with `wrangler tail`: the `*/15` trigger fired (`outcome ok`, 9 ms), the self-request came back `404 Not Found`, and it ended `canceled` because nothing read its body. Every sweep since the handler landed ran nothing. It now sends GET and reads the body; the unit test pins the method, which it previously pinned wrong.
+
+**Honest boundary.** This proves the trigger reaches the endpoint with the right method and token — not that the sweep *does* anything. `/run` executes jobs already in the queue, and queues scheduled tasks only when `jobs.scheduling` is configured; no task here declares a `schedule`, so `dunning-cycle` and `bg-bnb-rates-sync` still run only if something else enqueues them. Whether dunning should run on its own is a product decision, not a cron fix. The live Worker keeps answering 404 until it is redeployed.
 
 **Law — [[law]]: a declared trigger must reach a handler. The platform does not warn when it does not, so the absence is invisible until someone notices the job never ran.**
 
