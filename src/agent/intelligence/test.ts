@@ -33,14 +33,25 @@ describe('agent/intelligence', () => {
     resetMonitorForTests()
   })
 
-  // EXPLICIT TIMEOUT — this is the file's first call into linearGaps, so it pays the cold corpus scan.
-  // Since b85cd04fb0 the readme-seal-break walk COMPUTES each seal (one frozen corpus build + a
-  // folder model per atom) instead of reading gitignored README faces — which, absent in CI, made the
-  // walk never start and cost nothing. The work is now real; it overran the 60s default on a CI runner.
-  it('quantumIntelligenceOf is a pure number', { timeout: 180_000 }, () => {
-    const n = quantumIntelligenceOf('agent')
-    expect(typeof n).toBe('number')
-    expect(n).toBeGreaterThanOrEqual(0)
+  // HERMETIC, like every other test in this file. This one ran linearGaps against the REAL corpus for a
+  // typeof check: 96s on a CI runner once b85cd04fb0 made the readme-seal-break walk compute each seal,
+  // and the 60s default killed shard 7 three pushes running. A 180s timeout was the wrong remedy (raise
+  // the stack); the function already takes a cwd. On a fixture the claim is also refutable: a
+  // trinity-incomplete child under the scope makes the number positive, a clean scope makes it zero.
+  it('quantumIntelligenceOf is a pure number — gaps under the scope count, a clean scope is zero', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-intel-qi-'))
+    try {
+      mkdirSync(join(cwd, 'src', 'agent', 'gap'), { recursive: true })
+      writeFileSync(join(cwd, 'src', 'agent', 'index.ts'), 'export const a = 1\n')
+      writeFileSync(join(cwd, 'src', 'agent', 'gap', 'index.ts'), 'export const g = 1\n')
+      const n = quantumIntelligenceOf('agent', cwd)
+      expect(typeof n).toBe('number')
+      expect(n).toBeGreaterThan(0)
+      // a scope with no gap under it folds to zero — the number measures the gaps, not the scope name
+      expect(quantumIntelligenceOf('elsewhere', cwd)).toBe(0)
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
   })
 
   it('learnSciencesOnTheWay maps science to modules', () => {
