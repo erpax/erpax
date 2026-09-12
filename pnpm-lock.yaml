@@ -14,6 +14,7 @@ overrides:
   form-data: ^4.0.6
   ws: ^8.21.0
   js-yaml: ^4.3.2
+  csv-parse@<7.0.2: ^7.0.2
   hono: ^4.13.5
   immutable: ^4.3.9
   fast-uri: ^3.1.6
@@ -275,7 +276,7 @@ importers:
         version: 0.185.1
       uuid:
         specifier: latest
-        version: 14.0.1
+        version: 14.0.2
       vaul:
         specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -4535,8 +4536,8 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  csv-parse@5.6.0:
-    resolution: {integrity: sha512-l3nz3euub2QMg5ouu5U09Ew9Wf6/wQ8I++ch1loQ0ljmzhmfZYrH9fflS22i/PQEvsPvxCwxgz5q7UB8K1JO4Q==}
+  csv-parse@7.0.2:
+    resolution: {integrity: sha512-uKZghv9UmPkMVLYy//KZ9HFAIJsl7wkhoEdIL0+rhuSY9pZQlhaeGEDPIe+/w7eh81MOql8Q/9+inAGWG6ZHYA==}
 
   csv-stringify@6.5.2:
     resolution: {integrity: sha512-RFPahj0sXcmUyjrObAK+DOWtMvMIFV328n4qZJhgX3x2RqkQgOTU2mCUmiFR0CzM6AzChlRSUErjiJeEt8BaQA==}
@@ -5164,6 +5165,7 @@ packages:
   eslint@9.22.0:
     resolution: {integrity: sha512-9V/QURhsRN40xuHXWjV64yvrzMjcz7ZyNoF2jJFmy9j/SLk0u1OLSZgXi28MrXjymnjEGSR80WCdab3RGMDveQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -7635,8 +7637,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  uuid@14.0.1:
-    resolution: {integrity: sha512-6ZxzVpzDXDa3bJWaHilVayA+BH/1zmxCJoVgvmqJnid/gPoKHxUrS/aC/T6LGQtNHT+XHG9fXPJB4d+IrU30Ew==}
+  uuid@14.0.2:
+    resolution: {integrity: sha512-xZe/16rV4aa+HGSOCiY2YeLT1OybRLrrkL/Rqaq7p7GMVXjFh+6wN4oMYgjFmnSnhY8t6Xpdl2l9qmnHYuMHwQ==}
     hasBin: true
 
   vary@1.1.2:
@@ -9988,7 +9990,7 @@ snapshots:
       payload: 4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3)
       prompts: 2.4.2
       to-snake-case: 1.0.0
-      uuid: 14.0.1
+      uuid: 14.0.2
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -10029,7 +10031,7 @@ snapshots:
       payload: 4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3)
       prompts: 2.4.2
       to-snake-case: 1.0.0
-      uuid: 14.0.1
+      uuid: 14.0.2
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -10134,7 +10136,7 @@ snapshots:
       payload: 4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3)
       qs-esm: 8.0.1
       sass: 1.77.4
-      uuid: 14.0.1
+      uuid: 14.0.2
     transitivePeerDependencies:
       - '@types/react'
       - monaco-editor
@@ -10192,7 +10194,7 @@ snapshots:
       '@faceless-ui/modal': 3.0.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@payloadcms/translations': 4.0.0-internal.38b7f1d
       '@payloadcms/ui': 4.0.0-internal.38b7f1d(@types/react@19.2.18)(monaco-editor@0.55.1)(next@16.3.4(@babel/core@7.29.7)(@playwright/test@1.62.1)(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@5.9.3)
-      csv-parse: 5.6.0
+      csv-parse: 7.0.2
       csv-stringify: 6.5.2
       payload: 4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3)
       qs-esm: 8.0.1
@@ -10290,7 +10292,7 @@ snapshots:
       react-dom: 19.2.8(react@19.2.8)
       react-error-boundary: 4.1.2(react@19.2.8)
       ts-essentials: 10.0.3(typescript@5.9.3)
-      uuid: 14.0.1
+      uuid: 14.0.2
     transitivePeerDependencies:
       - '@types/react'
       - bufferutil
@@ -10358,7 +10360,7 @@ snapshots:
       sonner: 1.7.4(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       ts-essentials: 10.0.3(typescript@5.9.3)
       use-context-selector: 2.0.0(react@19.2.8)(scheduler@0.25.0)
-      uuid: 14.0.1
+      uuid: 14.0.2
     transitivePeerDependencies:
       - '@types/react'
       - monaco-editor
@@ -12757,7 +12759,7 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  csv-parse@5.6.0: {}
+  csv-parse@7.0.2: {}
 
   csv-stringify@6.5.2: {}
 
@@ -15111,7 +15113,7 @@ snapshots:
       ts-essentials: 10.0.3(typescript@5.9.3)
       tsx: 4.21.0
       undici: 7.29.0
-      uuid: 14.0.1
+      uuid: 14.0.2
       ws: 8.21.0
     transitivePeerDependencies:
       - bufferutil
@@ -16285,7 +16287,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  uuid@14.0.1: {}
+  uuid@14.0.2: {}
 
   vary@1.1.2: {}
 

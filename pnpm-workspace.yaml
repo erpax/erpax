@@ -15,6 +15,16 @@ overrides:
   form-data: ^4.0.6
   ws: ^8.21.0
   js-yaml: ^4.3.2
+  # GHSA-8cw4-87c7-c6xx (Dependabot #91): prototype replacement via the columns path, patched
+  # in 7.0.2. This file once refused it as crossing two majors; that refusal was written without
+  # reading the changelog. Read: csv-parse 6.0.0's breaks are option renames (relax,
+  # skip_records_with_error, group_columns_by_name …) and 7.0.0 declares none. The sole consumer,
+  # @payloadcms/plugin-import-export's parseCSV, passes bom/cast/columns/skip_empty_lines/trim —
+  # none renamed — and was exercised against 7.0.2 (2026-09-12): casts, quoted commas and a
+  # __proto__ header all parse, and the row's prototype stays Object.prototype. Range-scoped so it
+  # can only lift the vulnerable instance (pnpm why: exactly one, transitive) and never moves a
+  # direct dependency.
+  'csv-parse@<7.0.2': ^7.0.2
   hono: ^4.13.5
   immutable: ^4.3.9
   fast-uri: ^3.1.6
@@ -39,8 +49,6 @@ overrides:
   nanoid@3: ^3.3.18
   # Dependabot 2026-09 (GHSA-x5fp-wj9c-mxmx, GHSA-4mjr-xmp4-gh2g qs): array-limit bypass and
   # isBuffer DoS, patched >=6.16.0; range-scoped to major 6 (the transitive instance is 6.15.3).
-  # NOT remediated: csv-parse (GHSA-8cw4-87c7-c6xx) — its only fix is 7.0.2 and the sole consumer,
-  # @payloadcms/plugin-import-export, pins major 5; crossing two majors is this file's own refusal.
   qs@6: ^6.16.0
 
 allowBuilds:
