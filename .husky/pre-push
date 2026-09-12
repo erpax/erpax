@@ -39,6 +39,26 @@ export PATH="$PWD/node_modules/.bin:$PATH"
 export NODE_OPTIONS=--no-deprecation
 set -e
 
+# ── 0. Release tags carry a manifest that addresses the tree ─────────
+# publish-packages.yml fires on `v*` and refuses when packages/released.json is behind the
+# corpus (scripts/release-corpus.mjs --check). That gate sat only in CI, so 7 of 10 release
+# pushes went red AFTER the tag was public: tagged first, --write never committed. The check
+# is 0.19s, so it belongs here, before the tag leaves the machine. git hands the refs being
+# pushed on stdin; only a corpus release tag pays it — package tags (algebra-v*, erpax-v*)
+# are versioned by packages/release.mjs, not by this manifest. Guarded on a non-tty stdin:
+# a human running the hook by hand has no refs to read and must not block on the terminal.
+if [ ! -t 0 ]; then
+while read -r _local_ref _local_sha remote_ref _remote_sha; do
+  case "$remote_ref" in
+    refs/tags/v[0-9]*)
+      node scripts/release-corpus.mjs --check || {
+        echo "✖ $remote_ref: packages/released.json does not address this corpus — run: node scripts/release-corpus.mjs --write, commit, then tag"
+        exit 1
+      } ;;
+  esac
+done
+fi
+
 # ── 1. Auto-heal regenerable artefacts FIRST ─────────────────────────
 # Runs unconditionally. Commits the heal so the rest of the gate sees a
 # clean tree. Handles: docs/STANDARDS_INDEX.md, src/payload-types.ts,
