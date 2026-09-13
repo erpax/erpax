@@ -3524,6 +3524,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§5.4"
       },
       {
+        "path": "src/arrival/index.ts",
+        "section": "§6.4"
+      },
+      {
         "path": "src/audit/SKILL.md",
         "section": ""
       },
@@ -3546,10 +3550,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/audit/trail/write-audit-event.ts",
         "section": "§6.4.6"
-      },
-      {
-        "path": "src/base/accounting/field/index.ts",
-        "section": ""
       }
     ]
   },

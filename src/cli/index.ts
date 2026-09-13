@@ -1,6 +1,7 @@
 /**
  * cli — minimal operational surface: `pnpm erpax <domain> [action] [args…]`
  */
+import { spawnSync } from 'node:child_process'
 import { runDoctor } from './doctor'
 import { runBuildGate, runLintSrc, runLocal, runTestWaves, runTypecheckWaves, runVerifyTypes } from './local'
 import { printHelp, printUnknownHint, suggestNearestAction } from './help'
@@ -190,6 +191,15 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
   if (rawDomain === 'approve') {
     if (action === 'packages') return runGatePackages(rest)
     return runPayloadApproval()
+  }
+
+  // land pushes through the pre-push hook — the same `git push` a person runs unladdered — and bounds its own
+  // push rounds and its forge wait. Through runShell, the ladder killed the wrapper at five minutes mid-push
+  // and the child kept pushing, unseen (2026-09-13). The command itself stays in the registry: one source.
+  if (rawDomain === 'land' && !action) {
+    const land = resolveAction('land')
+    if (!land) return 1
+    return spawnSync([land.cmd, ...rest.map((a) => JSON.stringify(a))].join(' '), { shell: true, stdio: 'inherit' }).status ?? 1
   }
 
   const legacy = resolveLegacyColon(rawDomain, action)

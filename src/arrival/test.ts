@@ -9,7 +9,7 @@ import {
   runRowOf,
   type CheckRow,
   type RunRow,
-} from '@/land'
+} from '@/arrival'
 
 const SHA = '7fdb5c226aa11223344556677889900aabbccdde'
 const OTHER = '0000000011112222333344445555666677778888'
@@ -21,7 +21,7 @@ const row = (workflowName: string, status: string, conclusion: string | null, he
   event,
 })
 
-describe('land — the verdict, its laws pinned (ported from uuidna)', () => {
+describe('arrival — the verdict, its laws pinned (ported from uuidna)', () => {
   // A poll is always faster than a queue, so the first answer is almost always "no runs yet".
   it('no run for the sha is UNMEASURED, never a pass', () => {
     const v = pushVerdict(SHA, [])
@@ -86,7 +86,7 @@ describe('land — the verdict, its laws pinned (ported from uuidna)', () => {
   })
 })
 
-describe('land — the check surface', () => {
+describe('arrival — the check surface', () => {
   const ci: RunRow = { ...row('CI', 'completed', 'success'), databaseId: 900 }
   const chk = (name: string, conclusion: string | null, appSlug = 'github-actions', runId: number | null = 900, status = 'completed'): CheckRow => ({
     name,
@@ -127,7 +127,7 @@ describe('land — the check surface', () => {
 
 // THE REAL ROWS. erpax d5ffea88c7, 2026-09-12, as `gh api --jq` answered them: every job of the CI push run
 // green, the hook green — and a foreign Cloudflare build red that appears in no workflow list.
-describe('land — erpax d5ffea88c7, replayed from the forge', () => {
+describe('arrival — erpax d5ffea88c7, replayed from the forge', () => {
   const E = 'd5ffea88c7e4b8ade4a69c66ee2238576ae8b28b'
   const runsOut = [
     { name: 'Scheduled', head_sha: E, status: 'completed', conclusion: 'success', event: 'dynamic', id: 34723112119 },
@@ -172,7 +172,7 @@ describe('land — erpax d5ffea88c7, replayed from the forge', () => {
   })
 })
 
-describe('land — reading the forge', () => {
+describe('arrival — reading the forge', () => {
   it('a run row with no event is refused, never defaulted', () => {
     expect(() => runRowOf({ name: 'CI', head_sha: SHA, status: 'completed', conclusion: 'success' })).toThrow(/carries no `event`/)
   })
@@ -208,7 +208,7 @@ describe('land — reading the forge', () => {
   })
 })
 
-describe('land — the taught cure', () => {
+describe('arrival — the taught cure', () => {
   it('behind the shared tree is recognised in both of git’s spellings', () => {
     expect(cureFor(' ! [rejected]        main -> main (fetch first)')?.name).toBe('behind the shared tree')
     expect(cureFor(' ! [rejected]        main -> main (non-fast-forward)')?.name).toBe('behind the shared tree')

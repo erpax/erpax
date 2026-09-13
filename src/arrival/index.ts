@@ -1,6 +1,6 @@
 /**
- * land — push main, then ask the forge what it did with the commit. A landing is complete when the forge
- * agrees, not when the remote moved.
+ * arrival — push main, then ask the forge what it did with the commit. A push has arrived when the forge
+ * agrees, not when the remote moved. The lane that runs it keeps uuidna's name: `pnpm erpax land`.
  *
  * THE BLIND SIDE, measured 2026-09-12 on d5ffea88c7: the pre-push hook green, CI green on every job of the
  * push run, and on the same commit two red checks nobody saw — `Workers Builds: erpax` (a git-connected
@@ -75,7 +75,9 @@ export interface Exemption {
   readonly why: string
 }
 
-export const NEED_NOT_JUDGE: Readonly<Record<string, Exemption>> = {
+// Module-private: only pushVerdict reads it. An EXPORTED static is seal-debt to the constants audit, and
+// nothing outside this atom consumed it.
+const NEED_NOT_JUDGE: Readonly<Record<string, Exemption>> = {
   'Analyze (actions)': { kind: 'late', why: 'CodeQL default setup; runs under its own event and routinely settles after CI' },
   'Analyze (javascript-typescript)': { kind: 'late', why: 'CodeQL default setup; same run, same lateness' },
 }
@@ -279,7 +281,8 @@ export interface Cure {
   readonly cmd: string
 }
 
-export const CURES: readonly Cure[] = [
+// Module-private for the same reason: cureFor is the face, the table is its body.
+const CURES: readonly Cure[] = [
   // Git spells "behind" two ways, and a cure matching one misses the case that fires. It INTEGRATES, never
   // forces: a merge that conflicts aborts itself and leaves the tree exactly as it was found.
   {
@@ -320,9 +323,10 @@ function forgeRows(slug: string, sha: string): { runs: RunRow[]; checks: CheckRo
   }
 }
 
-// Bounded polling: CI settles in about thirteen minutes. The bound is the honesty — patience never becomes a
-// verdict, and a run slower than it reports STILL RUNNING.
-const ROUNDS = 60
+// Bounded polling INSIDE the CLI ladder (1 · 2 · 3 · 5 minutes, never block-wait): six rounds ride out the
+// seconds in which the forge has not indexed the push yet, and no more. CI takes about thirteen minutes; a run
+// still going is re-asked later, never waited for, and patience never becomes a verdict.
+const ROUNDS = 6
 const PAUSE_S = 20
 
 function judge(slug: string, sha: string, wait: boolean): PushVerdict {
@@ -346,10 +350,13 @@ function report(v: PushVerdict): number {
   for (const f of v.failing) console.error(`    FAILED  ${f}`)
   for (const p of v.pending) console.error(`    RUNNING ${p}`)
   for (const g of v.rosterGaps) console.error(`    DECIDE  ${g}`)
+  // The advice follows the state: a failure is read and cured on top; anything else is asked again.
   console.error(
-    v.measured
+    v.failing.length
       ? '    FIX read the failing run (gh run view <id> --log-failed) and land the cure on top — the commit is public.'
-      : `    FIX nothing has judged ${v.sha.slice(0, 9)} yet; ask again: pnpm erpax land verdict ${v.sha.slice(0, 9)}`,
+      : !v.settled
+        ? `    FIX still running, not failed; wait for it: pnpm erpax land verdict ${v.sha.slice(0, 9)} --wait`
+        : `    FIX nothing has judged ${v.sha.slice(0, 9)} yet; ask again: pnpm erpax land verdict ${v.sha.slice(0, 9)}`,
   )
   return 1
 }
@@ -401,9 +408,9 @@ function landMain(): number {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  // exitCode, never exit(): on macOS a pipe is written asynchronously, and exit() drops what is still
-  // buffered. The first live landing (2026-09-13) lost its own final verdict that way — a check that
-  // cannot be read is indistinguishable from one that did not run.
+  // exitCode, never exit(): exit() can drop output still buffered in a pipe. The first live landing's missing
+  // verdict (2026-09-13) was NOT that: the CLI ladder killed its wrapper at five minutes and this process
+  // kept pushing, unseen — which is why the push lane is dispatched outside the ladder.
   const args = process.argv.slice(2)
   if (args.includes('--push')) process.exitCode = landMain()
   else {

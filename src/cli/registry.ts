@@ -111,12 +111,12 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   },
   land: {
     default: {
-      desc: 'Push main through the hook, cure a taught denial, then wait for the forge verdict on that sha',
-      cmd: `${TSX} src/land/index.ts --push`,
+      desc: 'Push main through the hook, cure a taught denial, then ask the forge for that sha (re-ask, never wait)',
+      cmd: `${TSX} src/arrival/index.ts --push`,
     },
     verdict: {
-      desc: 'Forge verdict for a pushed sha (default HEAD) — silence is UNMEASURED; --wait polls until settled',
-      cmd: `${TSX} src/land/index.ts`,
+      desc: 'Forge verdict for a pushed sha (default HEAD) — silence is UNMEASURED; --wait rides out indexing (≤2 min)',
+      cmd: `${TSX} src/arrival/index.ts`,
     },
   },
   monitor: {

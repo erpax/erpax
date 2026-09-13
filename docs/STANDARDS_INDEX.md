@@ -364,6 +364,7 @@ src/architecture/invariant/types.ts:27: * @standard ISO/IEC 25010:2023 functiona
 src/archival/index.ts:10: * @standard Filecoin storage proofs (Spacegap / Spacetime)
 src/archival/index.ts:8: * @standard W3C IPFS CID v1 — sha-256 maps to ERPax content-uuid
 src/archival/index.ts:9: * @standard Arweave Pay-Once-Store-Forever
+src/arrival/index.ts:19: * @standard ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none
 src/artery/index.ts:23: * @standard Frank's Windkessel model; aortic elastic storage smooths cardiac output
 src/audit/agent/index.ts:29: * @standard ISO-19011:2018 §6.4 — audit evidence: a finding traces to objective evidence
 src/audit/compliance/reporting/index.ts:13: * @standard SAF-T:3.0.2 Standard Audit File (Tax)
@@ -1821,7 +1822,6 @@ src/journal/entries/rounding/adjustments/index.ts:10: * @standard ISO-4217:2015 
 src/journal/entries/rounding/adjustments/index.ts:11: * @standard ISO-8601-1:2019 date-time adjustment-date
 src/journal/entry/service/index.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
 src/journal/entry/service/index.ts:13: * @standard ISO-4217:2015 currency-codes
-src/land/index.ts:19: * @standard ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none
 src/law/folder/index.ts:41: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability
 src/leads/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/leads/index.ts:12: * @standard ISO-3166-1:2020 country-codes
