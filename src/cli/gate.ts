@@ -1,8 +1,8 @@
 /**
  * cli/gate — authoritative CI/pre-push gate lanes (confirm:full ⊇ gate).
  */
-import { spawnSync } from 'node:child_process'
 import { recordSampleMs, samplesMsOf, timeoutOf } from '@/timeout'
+import { spawnGroupSync } from '@/timeout/group'
 import { inventoryGateWarnings } from '@/agent/inventory'
 import {
   formatPackageApprovalMatrix,
@@ -103,7 +103,9 @@ export function runShell(cmd: string, passthrough: readonly string[] = [], heart
   // number is recorded so whoever takes it starts from a measurement rather than a hunch — and the
   // instrument that settles it is the three-point stamp (spawn→entry, imports, work) reported by
   // the child itself, never inferred from the outside.
-  const r = spawnSync(full, { shell: true, stdio: 'inherit', cwd: process.cwd(), timeout: bound.ms, killSignal: 'SIGKILL' })
+  // The whole group, not only the shell: spawnSync's own timeout signalled the shell alone, and the command
+  // under it kept running as an orphan (2026-09-13 — a timed-out lane finished a git push nobody saw).
+  const r = spawnGroupSync(full, { stdio: 'inherit', cwd: process.cwd(), timeout: bound.ms })
   stop()
   if (r.signal) {
     console.error(`\n✗ timed out at ${bound.minutes}min (computed rung) — a command past the ladder is split, never the ceiling raised`)

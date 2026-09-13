@@ -1,9 +1,9 @@
 /**
  * cli/rules-check — rules gate with failure summary (top axes + fix commands).
  */
-import { spawnSync } from 'node:child_process'
 import { assertRulesHold } from '@/rules'
 import { timeoutOf } from '@/timeout'
+import { spawnGroupSync } from '@/timeout/group'
 
 const TSX = 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx'
 
@@ -64,13 +64,11 @@ export function formatRulesFailureSummary(axes: readonly FailedAxis[]): string {
 }
 
 export function runRulesCheck(cwd: string = process.cwd()): number {
-  const r = spawnSync(`${TSX} src/rules/index.ts --check`, {
-    shell: true,
+  const r = spawnGroupSync(`${TSX} src/rules/index.ts --check`, {
     stdio: 'inherit',
     cwd,
     // no samples yet ⇒ the standing rung-3 cap (@/timeout); a slower ratchet earns its rung from evidence
     timeout: timeoutOf().ms,
-    killSignal: 'SIGKILL',
   })
   const code = r.status ?? 1
   if (code !== 0) {

@@ -6,6 +6,7 @@ import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import { timeoutForLabel } from '@/timeout'
+import { spawnGroupSync } from '@/timeout/group'
 
 export const PAYLOAD_NODE_OPTIONS =
   '--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs --import=tsx/esm'
@@ -47,14 +48,14 @@ function runPayloadArgs(
   // Bounded by the computed ladder (@/timeout): unbounded, this spawn waited FOREVER on a
   // D1 lock when a test host held the database — doctor hung at 0% CPU past every rung.
   const bound = timeoutForLabel(`payload:${args[0] ?? 'cmd'}`)
-  const r = spawnSync('pnpm', ['exec', 'payload', ...args], {
+  // The whole group on the bound, not only pnpm: a held D1 lock left the payload process running past it.
+  const r = spawnGroupSync(['pnpm', 'exec', 'payload', ...args].map((a) => JSON.stringify(a)).join(' '), {
     cwd,
     env: { ...process.env, NODE_OPTIONS: nodeOptions },
     encoding: 'utf8',
     maxBuffer: 64 * 1024 * 1024,
     stdio: ['ignore', 'pipe', 'pipe'],
     timeout: bound.ms,
-    killSignal: 'SIGKILL',
   })
   if (r.signal) {
     return { code: 1, output: `payload ${args.join(' ')} timed out at ${bound.minutes}min (computed rung) — likely a held database lock` }

@@ -2123,10 +2123,10 @@ src/payload.config.multi-tenant-admin.test.ts:9: * @standard NIST INCITS-359-201
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:576:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:594:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:595:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:617:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:575:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:593:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:594:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:616:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/payment/methods/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/payment/methods/index.ts:15: * @standard ISO-13616-1:2020 iban bank-account-reference
 src/payment/methods/index.ts:16: * @standard ISO-9362:2022 bic bank-routing
@@ -2862,6 +2862,7 @@ src/testing/test/setup/index.ts:6: * @standard ISO/IEC/IEEE-29119-3:2021 test-do
 src/testing/witness/index.ts:13: * @standard ISO/IEC 25010:2023 §5.5 testability — a bounded witness is exhaustively checkable
 src/text/index.ts:13: * @standard RFC 8785 JCS + RFC 9562 §5.8 content-uuid
 src/think/index.ts:27: * @standard content-addressed memoization — the thought's address is the fold of its key ([[merge]])
+src/timeout/group/index.ts:19: * @standard ISO/IEC 25010:2023 §5.6 maintainability — a stopped operation leaves no work running
 src/topology/torus.ts:49: * @standard Topology — torus / closed manifold (Hatcher 2002)
 src/topology/torus.ts:50: * @standard ISO/IEC 25010:2023 §5.2 performance — resource envelope
 src/topology/torus.ts:51: * @standard ISO/IEC 30134 — KPIs for resource efficiency
@@ -4742,9 +4743,9 @@ src/payable/discounts/index.ts:13: * @accounting US-GAAP ASC-705 cost-of-sales-a
 src/payable/index.ts:7: * @accounting US-GAAP ASC-405 liabilities
 src/payable/workflow/index.ts:11: * @accounting IFRS IAS-37 provisions-contingent-liabilities
 src/payable/workflow/index.ts:12: * @accounting US-GAAP ASC-405 liabilities
-src/payload.config.ts:574:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:575:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:596:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:573:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:574:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:595:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/period/end/adjustment/service/index.ts:24: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/period/end/adjustment/service/index.ts:25: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/period/end/adjustment/service/index.ts:26: * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
@@ -6070,9 +6071,9 @@ src/path/record.ts:12: * @audit pure; never silent mutation of ledger entries
 src/payable/aging/index.ts:13: * @audit ISO-19011:2018 audit-trail
 src/payable/workflow/index.ts:13: * @audit ISO-19011:2018 audit-trail state-transitions
 src/payload.config.multi-tenant-admin.test.ts:14: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:577:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:597:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:618:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:576:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:596:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:617:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload/command/index.ts:10: * @audit the command list is the installed CLI's; each uuid and the fold are computed
 src/payment/methods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/peppol/bis/3/types/index.ts:13: * @audit ISO-19011:2018 audit-trail

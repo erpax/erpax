@@ -33,6 +33,7 @@ import { pathWireViolations } from '@/index/cross'
 import { boundaryDigest } from '@/quantum/boundary'
 import { nonIndexImports } from '@/tamper/import'
 import { recordSampleMs, samplesMsOf, timeoutForLabel, timeoutOf } from '@/timeout'
+import { spawnGroupSync } from '@/timeout/group'
 import { needsPayload } from '@/test'
 
 interface LocalLane {
@@ -102,7 +103,7 @@ const changedFiles = (): string[] => {
 
 const shellLane = (label: string, cmd: string): { ok: boolean; note: string } => {
   const bound = timeoutForLabel(label)
-  const r = spawnSync(cmd, { shell: true, stdio: 'pipe', timeout: bound.ms, killSignal: 'SIGKILL' })
+  const r = spawnGroupSync(cmd, { stdio: 'pipe', timeout: bound.ms })
   if (r.signal) return { ok: false, note: `timed out at ${bound.minutes}min (computed rung)` }
   const ok = r.status === 0
   const err = (r.stderr?.toString() ?? '') + (r.stdout?.toString() ?? '')
@@ -223,14 +224,12 @@ export function runTestWaves(args: readonly string[] = []): number {
       .join(' ')
       .replace(/\s+/g, ' ')
       .trim()
-    const r = spawnSync(
+    const r = spawnGroupSync(
       `./node_modules/.bin/vitest run --config ./vitest.config.mts ${batch.map((f) => JSON.stringify(f)).join(' ')}`,
       {
-        shell: true,
         stdio: 'inherit',
         cwd,
         timeout: bound.ms,
-        killSignal: 'SIGKILL',
         env: {
           ...process.env,
           NODE_OPTIONS: nodeOpts,
@@ -292,13 +291,11 @@ export function runTypecheckWaves(args: readonly string[] = []): number {
     // The heap is the SIBLING LANE's, not node's default. `erpax lint typecheck-all` has carried
     // --max-old-space-size=8000 all along; this path carried nothing, so tsc got ~4GB, exhausted it
     // ("Mark-Compact 4078.4 (4101.3) … allocation failure"), and V8 killed the process.
-    const r = spawnSync(`./node_modules/.bin/tsc --noEmit -p ${w.project}`, {
-      shell: true,
+    const r = spawnGroupSync(`./node_modules/.bin/tsc --noEmit -p ${w.project}`, {
       stdio: 'inherit',
       cwd,
       env: { ...process.env, NODE_OPTIONS: '--no-deprecation --max-old-space-size=8000' },
       timeout: bound.ms,
-      killSignal: 'SIGKILL',
     })
     if (r.signal) {
       // A signal is not a clock. spawnSync reports one for a timeout AND for a process V8 killed on
