@@ -188,9 +188,9 @@ export function pushVerdict(sha: string, rows: readonly RunRow[], checks: readon
     (ntp.length ? ` — and NOT this push: ${ntp.join(', ')}` : '') +
     (rosterGaps.length ? ` — UNROSTERED: ${rosterGaps.join('; ')}` : '')
   const why = pd.length
-    ? `still running for ${short}: ${pd.join(', ')}${aside2}`
+    ? `still running for ${short}: ${pd.join(', ')} (${checkPassed} check(s) passed)${aside2}`
     : f.length
-      ? `FAILED for ${short}: ${f.join(', ')}${aside2}`
+      ? `FAILED for ${short}: ${f.join(', ')} (${checkPassed} check(s) passed)${aside2}`
       : !sawCheck
         ? `UNMEASURED: every check on ${short} is exempt or belongs to another event${aside2}`
         : !meas
