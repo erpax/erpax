@@ -3453,7 +3453,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 99,
+    "count": 100,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -9871,7 +9871,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Decentralized Identifiers",
     "uuid": "23ae3478-a989-847b-889c-313d841dc631",
     "color": "hsl(134 72% 38%)",
-    "count": 9,
+    "count": 10,
     "modules": [
       {
         "path": "src/agents/mcp/tool/governance.ts",
@@ -9888,6 +9888,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/identification/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/land/index.ts",
+        "section": "§6.4"
       },
       {
         "path": "src/tenant/roles/profile/country.ts",

@@ -1821,6 +1821,7 @@ src/journal/entries/rounding/adjustments/index.ts:10: * @standard ISO-4217:2015 
 src/journal/entries/rounding/adjustments/index.ts:11: * @standard ISO-8601-1:2019 date-time adjustment-date
 src/journal/entry/service/index.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
 src/journal/entry/service/index.ts:13: * @standard ISO-4217:2015 currency-codes
+src/land/index.ts:19: * @standard ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none
 src/law/folder/index.ts:41: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability
 src/leads/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/leads/index.ts:12: * @standard ISO-3166-1:2020 country-codes

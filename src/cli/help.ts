@@ -37,6 +37,7 @@ export const DOMAIN_META: Record<string, DomainMeta> = {
   seeds: { summary: 'Spec seed coverage', example: 'pnpm erpax seeds coverage' },
   path: { summary: 'Path hooks registry emit', example: 'pnpm erpax path hooks' },
   gate: { summary: 'Full CI gate (standards · lint · test)', example: 'pnpm check' },
+  land: { summary: 'Push, then wait for the forge verdict (post-push)', example: 'pnpm erpax land verdict HEAD' },
   doctor: { summary: 'Quick repo health snapshot', example: 'pnpm erpax doctor' },
   tip: { summary: 'Emit next self-dev tip (audit→trinity)', example: 'pnpm erpax tip' },
   aliases: { summary: 'Legacy pnpm script → erpax map', example: 'pnpm erpax aliases' },

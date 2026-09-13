@@ -109,6 +109,16 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     ratchet: { desc: 'Emit law/folder ratchet.generated.ts', cmd: `${TSX} src/law/folder/emit-ratchet.ts` },
     accounting: { desc: 'Accounting structure rules only', cmd: `${TSX} src/rules/index.ts --accounting-only` },
   },
+  land: {
+    default: {
+      desc: 'Push main through the hook, cure a taught denial, then wait for the forge verdict on that sha',
+      cmd: `${TSX} src/land/index.ts --push`,
+    },
+    verdict: {
+      desc: 'Forge verdict for a pushed sha (default HEAD) — silence is UNMEASURED; --wait polls until settled',
+      cmd: `${TSX} src/land/index.ts`,
+    },
+  },
   monitor: {
     default: { desc: 'Watch violations loop', cmd: `${TSX} src/monitor/violations/index.ts --watch` },
     violations: { desc: 'Watch violations', cmd: `${TSX} src/monitor/violations/index.ts --watch` },
