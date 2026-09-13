@@ -2,11 +2,11 @@
 name: arrival
 description: "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so the land lane pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, ask) · pnpm erpax land verdict <sha>"
 atomPath: arrival
-coordinate: "arrival · 4/weave · d88a973c"
-contentUuid: "3a778a3f-0f36-5653-ac1e-86bbf9ba18f0"
+coordinate: "arrival · 1/base · e725b030"
+contentUuid: "c497c9ca-72f0-5d18-9a4a-97e49154de10"
 diamondUuid: "449fb74d-aa7e-8b6c-bca4-1dc518255e32"
-uuid: "d88a973c-eafb-889c-bf5d-cc80be74c71d"
-horo: 4
+uuid: "e725b030-a10a-82bc-9da0-cfc5ef2f990d"
+horo: 1
 typography:
   partition: arrival
   bondDegree: 58

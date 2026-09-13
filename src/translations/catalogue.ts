@@ -6459,7 +6459,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "arrival",
-        "uuid": "d88a973c-eafb-889c-bf5d-cc80be74c71d",
+        "uuid": "e725b030-a10a-82bc-9da0-cfc5ef2f990d",
         "words": [
           "arrival"
         ],
@@ -45150,7 +45150,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when confirming vendor goods arrival — receipt number, purchase order link, received-at date, line quantities, and GL accrual (debit inventory/credit AP) per IAS-2 §10, with revenue timing deferred to the FOB point per IFRS-15 §38-42. The second leg of the SOX three-way match that separates inventory accrual from revenue recognition.",
-        "uuid": "65373b68-1895-8721-9b4f-777c891aab6e",
+        "uuid": "8ef3974e-1b25-809b-80aa-28367714f382",
         "words": [
           "use",
           "when",
@@ -118291,7 +118291,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "arrival",
-        "uuid": "d88a973c-eafb-889c-bf5d-cc80be74c71d",
+        "uuid": "e725b030-a10a-82bc-9da0-cfc5ef2f990d",
         "words": [
           "arrival"
         ],
@@ -118302,7 +118302,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about arrival as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-        "uuid": "4b1c84c6-d7db-8513-ad33-038bf3bf8045",
+        "uuid": "8a43ca54-9834-80a1-acf8-a6351233dd2c",
         "words": [
           "use",
           "when",
