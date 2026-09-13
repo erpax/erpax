@@ -1,8 +1,8 @@
 # Standards citation index (generated)
 
 > **Generated.** Do not edit by hand. Regenerate with
-> `pnpm standards:write-index`. CI verifies this file is fresh via
-> `pnpm standards:verify-index`.
+> `bash scripts/standards-citation-index.sh --write-index`. CI verifies this file is fresh via
+> `bash scripts/standards-citation-index.sh --verify-index`.
 >
 > Source of truth: the JSDoc banners in code. This file is the
 > materialised output of `bash scripts/standards-citation-index.sh`.

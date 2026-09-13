@@ -19,8 +19,8 @@
 #
 # Why: commits with --no-verify (sandbox, rebase, cherry-pick, amend)
 # bypass the pre-commit auto-regen hook. Without this self-heal, devs
-# would have to: (a) push, (b) see gate fail, (c) run `pnpm
-# standards:write-index`, (d) commit, (e) push again. With it, the
+# would have to: (a) push, (b) see gate fail, (c) run `bash
+# scripts/standards-citation-index.sh --write-index`, (d) commit, (e) push again. With it, the
 # gate self-heals + the push goes through on the first try.
 #
 # Bypass: git push --no-verify

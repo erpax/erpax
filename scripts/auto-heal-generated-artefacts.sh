@@ -5,7 +5,7 @@
 # artefact (the index of @standard citations, the Payload types file,
 # the admin importmap), this script regenerates it AND commits the
 # diff as a self-heal commit, so the push can proceed without forcing
-# the user to manually run `pnpm standards:write-index && git commit`.
+# the user to manually run `bash scripts/standards-citation-index.sh --write-index && git commit`.
 #
 # Contract (must hold for every artefact this script handles):
 #

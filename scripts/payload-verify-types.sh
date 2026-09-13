@@ -5,7 +5,7 @@
 # Payload importmap), stash the committed version, regenerate from the live
 # source, diff. Exit non-zero if any drifted — i.e. the dev forgot to
 # commit a regenerated artefact after changing the source of truth. Same
-# shape as `pnpm standards:verify-index`.
+# shape as `bash scripts/standards-citation-index.sh --verify-index`.
 #
 # Run from repo root: `bash scripts/payload-verify-types.sh`
 #

@@ -178,7 +178,7 @@ case "$mode" in
   --write-index)
     # Materialise the full index into docs/STANDARDS_INDEX.md.
     # CI runs --verify-index to enforce the committed file matches a fresh
-    # generation; contributors regenerate via `pnpm standards:write-index`.
+    # generation; contributors regenerate via `bash scripts/standards-citation-index.sh --write-index`.
     out="docs/STANDARDS_INDEX.md"
     mkdir -p "$(dirname "$out")"
     {
@@ -186,8 +186,8 @@ case "$mode" in
 # Standards citation index (generated)
 
 > **Generated.** Do not edit by hand. Regenerate with
-> `pnpm standards:write-index`. CI verifies this file is fresh via
-> `pnpm standards:verify-index`.
+> `bash scripts/standards-citation-index.sh --write-index`. CI verifies this file is fresh via
+> `bash scripts/standards-citation-index.sh --verify-index`.
 >
 > Source of truth: the JSDoc banners in code. This file is the
 > materialised output of `bash scripts/standards-citation-index.sh`.
@@ -210,8 +210,8 @@ HEADER
 # Standards citation index (generated)
 
 > **Generated.** Do not edit by hand. Regenerate with
-> `pnpm standards:write-index`. CI verifies this file is fresh via
-> `pnpm standards:verify-index`.
+> `bash scripts/standards-citation-index.sh --write-index`. CI verifies this file is fresh via
+> `bash scripts/standards-citation-index.sh --verify-index`.
 >
 > Source of truth: the JSDoc banners in code. This file is the
 > materialised output of `bash scripts/standards-citation-index.sh`.
@@ -221,11 +221,11 @@ HEADER
       done
     } > "$tmp"
     if [ ! -f "$out" ]; then
-      echo "ERROR: ${out} does not exist. Run: pnpm standards:write-index"
+      echo "ERROR: ${out} does not exist. Run: bash scripts/standards-citation-index.sh --write-index"
       exit 1
     fi
     if ! diff -q "$tmp" "$out" >/dev/null 2>&1; then
-      echo "ERROR: ${out} is stale. Run: pnpm standards:write-index"
+      echo "ERROR: ${out} is stale. Run: bash scripts/standards-citation-index.sh --write-index"
       echo
       echo "First 40 lines of diff:"
       diff -u "$out" "$tmp" | head -40
