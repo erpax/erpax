@@ -401,9 +401,14 @@ function landMain(): number {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
+  // exitCode, never exit(): on macOS a pipe is written asynchronously, and exit() drops what is still
+  // buffered. The first live landing (2026-09-13) lost its own final verdict that way — a check that
+  // cannot be read is indistinguishable from one that did not run.
   const args = process.argv.slice(2)
-  if (args.includes('--push')) process.exit(landMain())
-  const ref = args.find((a) => !a.startsWith('--')) ?? 'HEAD'
-  const sha = sh(`git rev-parse ${JSON.stringify(ref)}`).trim()
-  process.exit(report(judge(slugOf(), sha, args.includes('--wait'))))
+  if (args.includes('--push')) process.exitCode = landMain()
+  else {
+    const ref = args.find((a) => !a.startsWith('--')) ?? 'HEAD'
+    const sha = sh(`git rev-parse ${JSON.stringify(ref)}`).trim()
+    process.exitCode = report(judge(slugOf(), sha, args.includes('--wait')))
+  }
 }
