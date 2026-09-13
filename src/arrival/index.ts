@@ -67,7 +67,8 @@ export interface PushVerdict {
 /**
  * Why a check need not judge a push. `late`: its ABSENCE must not block, but its failure still does.
  * `meaningless`: it can never succeed, so even its failure is ignored — honoured for a foreign app only.
- * DECLARED in the open, because no theorem derives it.
+ * DECLARED in the open, because no theorem derives it. `Workers Builds: erpax` is deliberately absent: it
+ * is a production build path that fails in zero seconds, and disconnecting or fixing it is a human decision.
  */
 export interface Exemption {
   readonly kind: 'late' | 'meaningless'
@@ -79,11 +80,6 @@ export interface Exemption {
 const NEED_NOT_JUDGE: Readonly<Record<string, Exemption>> = {
   'Analyze (actions)': { kind: 'late', why: 'CodeQL default setup; runs under its own event and routinely settles after CI' },
   'Analyze (javascript-typescript)': { kind: 'late', why: 'CodeQL default setup; same run, same lateness' },
-  // DECIDED 2026-09-13 (owner: "decide leanly"), measured: the git-connected Cloudflare build posts "in progress"
-  // and then a 0-second failure on every commit it touches (d5ffea88c7, 395202f8a, b1bc76b03 …) while GitHub CI —
-  // the full suite — is green. CI is the core verdict; this build is its mirror and cannot judge. It stays named
-  // in every verdict, and if it ever PASSES its entry reports itself stale.
-  'Workers Builds: erpax': { kind: 'meaningless', why: 'git-connected Cloudflare build; fails in 0 s on every commit, so it never judges the code' },
 }
 
 // A skipped or cancelled run is NOT a failure and NOT a success: it did not judge.
@@ -153,9 +149,7 @@ export function pushVerdict(sha: string, rows: readonly RunRow[], checks: readon
       const foreign = c.runId === null && c.appSlug !== 'github-actions'
       // an exempt FIRST-PARTY check that failed falls through and is judged: exemption covers lateness, not fault
       if (foreign || !isFailure(c.status, c.conclusion)) {
-        // an exemption for a check that can never succeed is paperwork the day it succeeds: say so
-        const stale = exemption.kind === 'meaningless' && PASSED.has(concluded(c.conclusion))
-        notJudging.push(`${c.name} (${c.conclusion ?? c.status}${stale ? ' — it PASSED, so its exemption is stale: remove it' : ''})`)
+        notJudging.push(`${c.name} (${c.conclusion ?? c.status})`)
         continue
       }
     }
