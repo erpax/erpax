@@ -106,6 +106,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "architecture/invariant",
   "archival",
   "argument",
+  "arrival",
   "artery",
   "atom",
   "atom/address",
@@ -712,7 +713,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "journal/entries/rounding/adjustments",
   "journal/entry/service",
   "karma",
-  "land",
   "law",
   "law/folder",
   "law/folder/baseline",
@@ -1870,6 +1870,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "argument": [
     "argument"
+  ],
+  "arrival": [
+    "arrival"
   ],
   "artery": [
     "artery"
@@ -4070,9 +4073,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "karma": [
     "karma"
-  ],
-  "land": [
-    "land"
   ],
   "law": [
     "law"

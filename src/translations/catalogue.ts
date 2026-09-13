@@ -6453,6 +6453,131 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "arrival",
+    "path": "arrival",
+    "translations": [
+      {
+        "key": "name",
+        "source": "arrival",
+        "uuid": "2df9b138-ce98-8ad7-ad50-910bbf9d7e62",
+        "words": [
+          "arrival"
+        ],
+        "values": {
+          "en": "arrival"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so the land lane pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, ask) · pnpm erpax land verdict <sha>",
+        "uuid": "d36f941b-c296-8b02-bf39-60d8ba336556",
+        "words": [
+          "use",
+          "when",
+          "a",
+          "push",
+          "must",
+          "be",
+          "judged",
+          "where",
+          "it",
+          "lands",
+          "the",
+          "pre",
+          "push",
+          "hook",
+          "runs",
+          "before",
+          "the",
+          "push",
+          "and",
+          "cannot",
+          "see",
+          "a",
+          "workflow",
+          "that",
+          "fails",
+          "after",
+          "it",
+          "so",
+          "the",
+          "land",
+          "lane",
+          "pushes",
+          "main",
+          "and",
+          "then",
+          "asks",
+          "the",
+          "forge",
+          "for",
+          "every",
+          "workflow",
+          "run",
+          "and",
+          "check",
+          "run",
+          "on",
+          "that",
+          "exact",
+          "sha",
+          "silence",
+          "is",
+          "unmeasured",
+          "and",
+          "never",
+          "a",
+          "pass",
+          "only",
+          "a",
+          "push",
+          "judges",
+          "a",
+          "push",
+          "a",
+          "cancelled",
+          "scan",
+          "is",
+          "not",
+          "a",
+          "clean",
+          "scan",
+          "and",
+          "an",
+          "unrostered",
+          "foreign",
+          "check",
+          "is",
+          "judged",
+          "and",
+          "named",
+          "ported",
+          "from",
+          "uuidna",
+          "s",
+          "post",
+          "push",
+          "arm",
+          "run",
+          "pnpm",
+          "erpax",
+          "land",
+          "push",
+          "cure",
+          "ask",
+          "pnpm",
+          "erpax",
+          "land",
+          "verdict",
+          "sha"
+        ],
+        "values": {
+          "en": "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so the land lane pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, ask) · pnpm erpax land verdict <sha>"
+        }
+      }
+    ]
+  },
+  {
     "atom": "artery",
     "path": "artery",
     "translations": [
@@ -19650,7 +19775,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a sealed tree should land by itself — the stop-hook body that runs the full seal, then commits and pushes, detached and lock-guarded, and touches nothing when the seal is red.",
-        "uuid": "819b8328-e02d-8ca0-a02b-8947e8ec6203",
+        "uuid": "1df7f17c-9816-855c-a15b-4e3ad0eb9eda",
         "words": [
           "use",
           "when",
@@ -34671,7 +34796,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing capitalized PP&E — registering assets (land, buildings, equipment, vehicles, software, intangibles), configuring depreciation method and useful life, computing depreciable base and book value, tracking disposals and maintenance, mapping GL accounts for asset/accumulated-depreciation/expense lines. The IAS-16 asset-master node.",
-        "uuid": "320110b3-6619-8198-9151-f8b4ba43a042",
+        "uuid": "32c1acbe-d66c-80d9-b675-dac3be4b78d0",
         "words": [
           "use",
           "when",
@@ -45025,7 +45150,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when confirming vendor goods arrival — receipt number, purchase order link, received-at date, line quantities, and GL accrual (debit inventory/credit AP) per IAS-2 §10, with revenue timing deferred to the FOB point per IFRS-15 §38-42. The second leg of the SOX three-way match that separates inventory accrual from revenue recognition.",
-        "uuid": "8cefd8a4-355e-8a8b-a1cc-e70ace640fab",
+        "uuid": "de27922e-2a7c-8194-860d-94ce0c823bd4",
         "words": [
           "use",
           "when",
@@ -45648,129 +45773,6 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when scoring moral weight as entropy — creating order is good karma, destroying it (waste) is bad; every move is a balanced double-entry (order debited, entropy credited), and karma is the running net of order created over destroyed."
-        }
-      }
-    ]
-  },
-  {
-    "atom": "land",
-    "path": "land",
-    "translations": [
-      {
-        "key": "name",
-        "source": "land",
-        "uuid": "79a47b9c-49d7-85ee-947b-aceade434434",
-        "words": [
-          "land"
-        ],
-        "values": {
-          "en": "land"
-        }
-      },
-      {
-        "key": "description",
-        "source": "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so land pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, wait) · pnpm erpax land verdict <sha>",
-        "uuid": "6b1f600c-6d9b-8107-819c-0edf39b45792",
-        "words": [
-          "use",
-          "when",
-          "a",
-          "push",
-          "must",
-          "be",
-          "judged",
-          "where",
-          "it",
-          "lands",
-          "the",
-          "pre",
-          "push",
-          "hook",
-          "runs",
-          "before",
-          "the",
-          "push",
-          "and",
-          "cannot",
-          "see",
-          "a",
-          "workflow",
-          "that",
-          "fails",
-          "after",
-          "it",
-          "so",
-          "land",
-          "pushes",
-          "main",
-          "and",
-          "then",
-          "asks",
-          "the",
-          "forge",
-          "for",
-          "every",
-          "workflow",
-          "run",
-          "and",
-          "check",
-          "run",
-          "on",
-          "that",
-          "exact",
-          "sha",
-          "silence",
-          "is",
-          "unmeasured",
-          "and",
-          "never",
-          "a",
-          "pass",
-          "only",
-          "a",
-          "push",
-          "judges",
-          "a",
-          "push",
-          "a",
-          "cancelled",
-          "scan",
-          "is",
-          "not",
-          "a",
-          "clean",
-          "scan",
-          "and",
-          "an",
-          "unrostered",
-          "foreign",
-          "check",
-          "is",
-          "judged",
-          "and",
-          "named",
-          "ported",
-          "from",
-          "uuidna",
-          "s",
-          "post",
-          "push",
-          "arm",
-          "run",
-          "pnpm",
-          "erpax",
-          "land",
-          "push",
-          "cure",
-          "wait",
-          "pnpm",
-          "erpax",
-          "land",
-          "verdict",
-          "sha"
-        ],
-        "values": {
-          "en": "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so land pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, wait) · pnpm erpax land verdict <sha>"
         }
       }
     ]
@@ -62119,7 +62121,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or querying the real-estate portfolio — owned, leased (IFRS-16 ROU), managed, or sublet buildings, sites, and land parcels — with area measurements (IPMS), occupancy, EPC energy rating, BIM reference, and links to spaces, fixed-assets, and leases. The IWMS property master collection.",
-        "uuid": "69975959-1b2f-80a1-9ffb-bd97701886ea",
+        "uuid": "41aea8a3-f927-8dd1-9810-a4470f663ef5",
         "words": [
           "use",
           "when",
@@ -62190,7 +62192,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
-        "uuid": "f18d77a1-d5fc-885c-85bc-4e47514cab9b",
+        "uuid": "f01fa455-94e4-88b2-b73e-206b5d4be302",
         "words": [
           "use",
           "when",
@@ -81456,7 +81458,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when output is bounded by a recurring climate window in the annual cycle — the growing/harvest season set by the frost-free period, the cool- vs warm-season crop split, and heat accumulation (growing degree days) rather than the calendar. The season is the time-axis bottleneck of agriculture: land × season caps how much can be grown; it is regional and probabilistic, never a copied calendar.",
-        "uuid": "6d29005c-d317-8d4d-824a-1faa8d1265c7",
+        "uuid": "292f767c-afcf-8286-a325-16b78e86e468",
         "words": [
           "use",
           "when",
@@ -100253,7 +100255,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the place gives the produce its character and price — terroir: the area-specific soil, climate, topography, and practice that make a product distinctive (OIV). Expressed legally as the appellation / AVA / PDO (a certification over a delimited territory); the perennial/viticulture twin of provenance and a land-value premium.",
-        "uuid": "8d8e2f67-60fd-899d-851b-df4de58589db",
+        "uuid": "3443e2ea-5a9c-8f9c-9c9a-8da085944d28",
         "words": [
           "use",
           "when",
@@ -105981,7 +105983,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a structure or cover extends the growing season — the family from floating row cover → low tunnel → caterpillar tunnel → high tunnel/hoophouse → greenhouse, scaled by size, that buffers frost and adds weeks at each end of the season. Season extension as built capacity; the structure that widens the climate window land×season otherwise caps.",
-        "uuid": "de72412c-c086-8be1-aab7-00092771a683",
+        "uuid": "52e64493-b812-8cb6-ab58-40cc791e57ad",
         "words": [
           "use",
           "when",
@@ -110743,7 +110745,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about vehicle — A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.",
-        "uuid": "73b6758f-ea31-8ded-bb40-35bde01bf5fb",
+        "uuid": "b0504ec8-f217-8995-8fdd-e2a7b587463c",
         "words": [
           "use",
           "when",
@@ -114468,7 +114470,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry.",
-        "uuid": "be42f3c0-1992-84bc-99e8-468f77664ed4",
+        "uuid": "af36124b-e947-8c94-8529-cefba0bd413b",
         "words": [
           "use",
           "when",
@@ -118189,7 +118191,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "arrival",
-        "uuid": "d7187684-2295-8cfe-9c9d-f5aef408b1ef",
+        "uuid": "2df9b138-ce98-8ad7-ad50-910bbf9d7e62",
         "words": [
           "arrival"
         ],
@@ -118200,7 +118202,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about arrival as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-        "uuid": "a13ce637-20c3-8d59-8028-7f94992bb276",
+        "uuid": "c9448de6-62d4-8437-963c-b2fd10a641ab",
         "words": [
           "use",
           "when",
@@ -138390,7 +138392,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a cultivated plant type as the agricultural SKU — the produce-catalogue row carrying its sale unit (1 bunch, 100 g, 1 head), unit price, and the agronomic constants (yield per area, plant spacing, N·K₂O need, plantings & harvests per season) that explode a demand quantity into land, seed, and fertility. The crop is the bill-of-materials line of a farm; its heterogeneous sale unit is why automatic unit conversion is non-negotiable.",
-        "uuid": "256d6e30-bf02-821c-830c-d31b945dbd8c",
+        "uuid": "97d3ea64-5c4c-8f7d-afd2-08f95275967d",
         "words": [
           "use",
           "when",
@@ -138546,7 +138548,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when converting a sales/yield goal into what to grow, how much, when, and where — the crop plan (the what/how-much: quantities, seed, beds) and its spatial twin the field plan/map (the where: each succession assigned to a bed/block). The master planning document of a market farm; the backward demand→land calculation made concrete and recorded.",
-        "uuid": "6b448c22-dd9c-88b3-985b-6576626f71ac",
+        "uuid": "99dc2b17-0229-8492-8532-10b7c2477098",
         "words": [
           "use",
           "when",
@@ -154939,7 +154941,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing standing timber's biological transformation for produce — trees grown in stands as IAS-41 biological assets (standing biomass at fair value; the land separate), on a rotation set by mean annual increment, tended by silviculture (thinning/regeneration), felled to merchantable volume. Carbon stock is the cross-cutting ESG output; FSC/PEFC certification with chain-of-custody.",
-        "uuid": "0ebfbad7-1399-8448-8a73-0f55551e2bd6",
+        "uuid": "6d7e1f66-a28e-874f-b4d7-1d10ad989c28",
         "words": [
           "use",
           "when",
@@ -175270,7 +175272,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the animal byproduct cycles back to the soil — manure (excreta) as the nutrient output that closes the livestock→soil fertility loop, applied or deposited by grazing; the nutrient-management plan balances it to the land. The waste-to-fertility recycling node, the livestock twin of compost.",
-        "uuid": "58d9a4f2-69c2-8450-8d2a-cb7540852db6",
+        "uuid": "860c30ba-8eb5-8f60-bff3-54777a226575",
         "words": [
           "use",
           "when",
@@ -188669,7 +188671,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the managed forage land livestock graze — pasture (improved/tame forage) and rangeland (native), divided into paddocks for rotational grazing. The grazing land-unit; the livestock counterpart of a crop field, its productivity a fertility/capacity measure.",
-        "uuid": "3aebb333-fa99-827c-b0db-f8445fc51213",
+        "uuid": "0ffda5de-78ea-8efb-89ed-daefe0bff364",
         "words": [
           "use",
           "when",
@@ -209393,7 +209395,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a bound resource is converted to output at a realized rate — crop yield (output per unit land: lbs/acre, kg/decare) and its inverse, the land a demanded quantity requires. Yield is the bidirectional conversion factor between a resource and its product (area × yield = output; output ÷ yield = area); inverted through unit weight it gives row-length per saleable unit — the number that turns a demand plan into a planting plan.",
-        "uuid": "4e9c5386-3850-86be-9f50-e5f4bfa5cbcf",
+        "uuid": "9c1782e7-57aa-8fb6-9f24-f4cc9ec92f82",
         "words": [
           "use",
           "when",

@@ -647,6 +647,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "argument"
   },
   {
+    "atom": "arrival",
+    "name": "arrival",
+    "description": "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so the land lane pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, ask) · pnpm erpax land verdict <sha>",
+    "path": "arrival"
+  },
+  {
     "atom": "artery",
     "name": "artery",
     "description": "Use when reasoning about erpax's outbound vessel — the Windkessel organ. The artery carries value away from the heart, its elastic wall storing systolic volume and recoiling in diastole to smooth pulsatile output into steady peripheral flow: the cache/buffer in flesh. Three properties (Windkessel smoothing · elastic recoil · conserved mass balance) are computed and mapped — a structural isomorphism — onto erpax.",
@@ -4413,12 +4419,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "karma",
     "description": "Use when scoring moral weight as entropy — creating order is good karma, destroying it (waste) is bad; every move is a balanced double-entry (order debited, entropy credited), and karma is the running net of order created over destroyed.",
     "path": "karma"
-  },
-  {
-    "atom": "land",
-    "name": "land",
-    "description": "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so land pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, wait) · pnpm erpax land verdict <sha>",
-    "path": "land"
   },
   {
     "atom": "law",

@@ -1,6 +1,37 @@
 ---
 name: arrival
 description: "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so the land lane pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, ask) · pnpm erpax land verdict <sha>"
+atomPath: arrival
+coordinate: "arrival · 5/round · 2df9b138"
+contentUuid: "260652a4-e168-5c4f-9480-592c5424dd69"
+diamondUuid: "44fea1b0-e1ed-80dd-ac1f-7781498cd234"
+uuid: "2df9b138-ce98-8ad7-ad50-910bbf9d7e62"
+horo: 5
+typography:
+  partition: arrival
+  bondDegree: 55
+standards:
+  - "ISO-19011"
+  - "ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none"
+bindings: []
+signatures:
+  computationUuid: "c130dd5b-669b-8af0-b41b-fd83f9a5fa58"
+  stages:
+    - stage: path
+      stageUuid: "7beef556-c379-8fc3-b2a4-db3968264dd7"
+    - stage: trinity
+      stageUuid: "9b555165-f60c-8728-a9fb-119fbd29d18d"
+    - stage: boundary
+      stageUuid: "8908bad8-e3aa-82d8-a8a1-7e80d9162fa4"
+    - stage: links
+      stageUuid: "2de31c23-4de8-855c-9d98-48d2bf72d9a2"
+    - stage: horo
+      stageUuid: "fef87f90-2dd2-8043-8eda-7a7c7d2df75c"
+    - stage: seal
+      stageUuid: "1e5a6d02-20c3-8da0-860f-745e21c832bb"
+    - stage: uuid
+      stageUuid: "0eee3505-d91f-8803-ab40-3f8e1ad6d436"
+version: 2
 ---
 # arrival — a push has arrived when the forge agrees, not when the remote moved
 

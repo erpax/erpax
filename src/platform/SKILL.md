@@ -3,20 +3,20 @@ name: platform
 description: "Use when reasoning about platform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: platform
 coordinate: "platform · 1/base · 1d22d8c9"
-contentUuid: "8385e974-30ea-54ea-b79a-3405da21d697"
-diamondUuid: "9629f2e3-d42a-8e45-b695-8658f754b862"
+contentUuid: "e6895ed0-55aa-54dd-970c-6fb9c77ad8c2"
+diamondUuid: "b90dba3b-dd76-8eed-bb4c-a63dd4adad80"
 uuid: "1d22d8c9-b72f-8ce2-865f-956b8340a66a"
 horo: 1
 typography:
   partition: platform
-  bondDegree: 48
+  bondDegree: 50
 standards:
   - MCP
   - "W3C-JSON-LD-1.1"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dcc1476b-db5f-8554-a527-0f24f947c54c"
+  computationUuid: "3b2a3f4e-e131-85e6-95ed-e265abc0ac74"
   stages:
     - stage: path
       stageUuid: "e36e51c1-b55c-80bb-b6c6-efaef8dfb68a"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "6174e41f-9d03-8e9a-8a4d-46e5d0001e89"
     - stage: horo
-      stageUuid: "bc4c5e76-4431-8719-b3ba-234c8404cf91"
+      stageUuid: "e3468859-dbc0-8eab-8b74-5ba51a69924f"
     - stage: seal
       stageUuid: "b06cd12d-bda0-83b1-b59b-4a8142cfc628"
     - stage: uuid
-      stageUuid: "3351ca77-6d5d-8dd0-95d6-462df9915700"
+      stageUuid: "76eeee59-9dab-8df1-b09d-abdacb8627b5"
 version: 2
 ---
 # platform

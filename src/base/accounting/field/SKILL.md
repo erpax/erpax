@@ -3,7 +3,7 @@ name: field
 description: "Use when a Payload collection needs a shared accounting field — currency, unit-of-measure, measured quantity, status, reference, GL account, country/legal-entity/NACE, audit/timestamp/notes — built from one factory instead of an inlined field literal."
 atomPath: "base/accounting/field"
 coordinate: "base/accounting/field · 8/crest · e356d695"
-contentUuid: "067b6fd3-08a6-5d7c-8f7e-da82d87370c4"
+contentUuid: "922b4b11-edd4-5a35-bec9-469c6ab49fd5"
 diamondUuid: "f109b39a-cd90-8d08-b7b1-3500bc3a27e1"
 uuid: "e356d695-03a3-8e52-9b8f-115274fa597d"
 horo: 8
@@ -17,7 +17,6 @@ standards:
   - "EU-Taxonomy-2020/852"
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "ISO 3166-1:2020 country-codes"
-  - "ISO-19011"
   - "ISO-19011:2018 audit-trail"
   - "ISO-3166-1"
   - "ISO-4217:2015 currency-codes"
