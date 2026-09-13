@@ -152,11 +152,13 @@ describe('arrival — erpax d5ffea88c7, replayed from the forge', () => {
   const runs = jsonLines(runsOut).map(runRowOf)
   const checks = jsonLines(checksOut).map(checkRowOf)
 
-  it('the green hook and green CI do not make a landing — the foreign build is red, judged and named', () => {
+  // DECIDED 2026-09-13: CI is the core verdict; the rostered Cloudflare build is its mirror and cannot judge.
+  it('green CI is a landing — and the rostered Cloudflare build stays named, never hidden', () => {
     const v = pushVerdict(E, runs, checks)
-    expect(v.ok).toBe(false)
-    expect(v.failing).toEqual(['Workers Builds: erpax (failure)'])
-    expect(v.rosterGaps.some((g) => g.startsWith('Workers Builds: erpax'))).toBe(true)
+    expect(v).toMatchObject({ ok: true, measured: true, settled: true })
+    expect(v.notJudging).toContain('Workers Builds: erpax (failure)')
+    expect(v.rosterGaps).toEqual([])
+    expect(v.reason).toMatch(/exempt: .*Workers Builds: erpax \(failure\)/)
   })
 
   it('the deploy, a workflow_run of CI, is reported and not judged as this push', () => {
@@ -165,10 +167,17 @@ describe('arrival — erpax d5ffea88c7, replayed from the forge', () => {
     expect(v.didNotJudge).toEqual(['Playwright UI (skipped)'])
   })
 
-  it('with the foreign build decided away, the same rows are a landing', () => {
-    const v = pushVerdict(E, runs, checks.filter((c) => c.appSlug !== 'cloudflare-workers-and-pages'))
-    expect(v).toMatchObject({ ok: true, measured: true, settled: true })
-    expect(v.reason).toMatch(/3 check\(s\) passed/)
+  it('a foreign build nobody rostered still refuses — the entry is per name, never per app', () => {
+    const renamed = checks.map((c) => (c.appSlug === 'cloudflare-workers-and-pages' ? { ...c, name: 'Workers Builds: erpax-edge' } : c))
+    const v = pushVerdict(E, runs, renamed)
+    expect(v.ok).toBe(false)
+    expect(v.rosterGaps.some((g) => g.startsWith('Workers Builds: erpax-edge'))).toBe(true)
+  })
+
+  it('the rostered build PASSING reports its exemption stale', () => {
+    const passing = checks.map((c) => (c.appSlug === 'cloudflare-workers-and-pages' ? { ...c, conclusion: 'success' } : c))
+    const v = pushVerdict(E, runs, passing)
+    expect(v.notJudging.some((n) => n.includes('its exemption is stale'))).toBe(true)
   })
 })
 

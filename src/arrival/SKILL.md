@@ -72,10 +72,11 @@ Its laws arrived with it, and each is pinned in this atom's test:
 - **An unrostered foreign check is judged normally and named**, so the decision is forced rather than
   defaulted.
 
-`NEED_NOT_JUDGE` is **declared**, in the open, because no theorem derives it. `Workers Builds: erpax` is
-deliberately **not** in it: it is a production build path that fails in zero seconds, and whether to
-disconnect it in the Cloudflare dashboard or to fix it is a human decision. Until someone makes it,
-every landing names it and refuses.
+`NEED_NOT_JUDGE` is **declared**, in the open, because no theorem derives it. `Workers Builds: erpax` is in
+it since 2026-09-13, by the owner's direction to decide leanly: the git-connected Cloudflare build posts a
+0-second failure on every commit while GitHub CI, the full suite, is green. CI is the core verdict and this
+build its mirror, which cannot judge. It stays named in every verdict, and if it ever passes, its entry
+reports itself stale. A foreign check nobody rostered still refuses: the entry is per name, never per app.
 
 ## The push, and the one taught cure
 
