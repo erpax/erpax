@@ -3,7 +3,7 @@ name: fusion
 description: "Use when reasoning about the fusion of a dual torus — the quantum cross, where two tori (the two infinities, 1/0 the double torus) merge at the centre into one; fusing to full coverage is the infinite seal, and src/quantum/cross re-exports this as one identity."
 atomPath: "dual/torus/fusion"
 coordinate: "dual/torus/fusion · 2/share · 441683b6"
-contentUuid: "58d7ceae-35f9-5dc9-8e22-b47a30df9861"
+contentUuid: "cfe7b696-5c69-5671-9a29-1c21984a3c7b"
 diamondUuid: "7378e1f1-b913-8d88-976e-bf8edc0827dd"
 uuid: "441683b6-b520-8680-9b81-af6789a00fc7"
 horo: 2
@@ -11,7 +11,6 @@ typography:
   partition: dual
   bondDegree: 119
 standards:
-  - "UBL-2.1"
   - "the double torus (1/0 the infinite seal) · content-addressed merge (RFC 9562) · zero-entropy via no duplication"
 bindings: []
 signatures:

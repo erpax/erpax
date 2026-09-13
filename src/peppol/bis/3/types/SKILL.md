@@ -3,7 +3,7 @@ name: types
 description: "Use when reasoning about types — Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931."
 atomPath: "peppol/bis/3/types"
 coordinate: "peppol/bis/3/types · 1/base · d58d1580"
-contentUuid: "a5d57030-f12a-5511-927d-0a9fbae4a690"
+contentUuid: "c6268a10-a4a0-5e02-a120-66202c8faaa9"
 diamondUuid: "b085210b-eacc-8e7f-b697-7fcf7cff7f6e"
 uuid: "d58d1580-2f07-8548-b058-d4fe7671be55"
 horo: 1
@@ -24,6 +24,7 @@ standards:
   - "Peppol-BIS-3.0 envelope"
   - "Peppol-BIS-3.0 participant-identifier-scheme"
   - "Peppol-BIS-3.0 profile-id"
+  - "UBL-2.1"
   - "UBL-2.1 universal-business-language"
 bindings: []
 signatures:

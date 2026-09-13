@@ -3,7 +3,7 @@ name: vendors
 description: "Use when managing purchase-side party master data — vendor identity, VAT/tax classification, IBAN/BIC bank details, payment terms, AP ledger defaults, and IRS 1099 eligibility. The supplier/vendor master and accounts-payable party registry."
 atomPath: vendors
 coordinate: "vendors · 4/weave · f782dee9"
-contentUuid: "2bed64f0-676e-54ac-a84e-d54de7ef0474"
+contentUuid: "fc241afb-dde6-5e14-940b-b57a4365888c"
 diamondUuid: "7923d3de-3ea9-8c39-9573-51ec6221df31"
 uuid: "f782dee9-db42-864a-bbe7-46168ede3e81"
 horo: 4
@@ -33,7 +33,6 @@ standards:
   - "ISO-9362:2022 bic`"
   - "US-GAAP ASC-405 liabilities"
   - "US-IRS Form-1099 information-return"
-  - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

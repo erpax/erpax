@@ -3,7 +3,7 @@ name: cases
 description: "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket."
 atomPath: cases
 coordinate: "cases · 2/share · dfbeedbc"
-contentUuid: "153d92ef-e375-5062-98ea-01547f7cd755"
+contentUuid: "44b15c6c-f2d0-5a78-9393-d1d48eef6fcb"
 diamondUuid: "76275016-1b29-845a-a66d-630d75930dbb"
 uuid: "dfbeedbc-70c9-8dec-b003-badb8af912d0"
 horo: 2
@@ -14,7 +14,6 @@ standards:
   - "ISA-500"
   - "ISO-19011:2018 ISA-500 evidence chain-of-custody append-only"
   - "ISO-19011:2018 ISA-500 evidence chain-of-custody append-only`"
-  - "UBL-2.1"
   - "UN-COFOG-03 public-order-and-safety law-courts"
   - "— the instrument reads SKILL.md) -->"
 bindings: []

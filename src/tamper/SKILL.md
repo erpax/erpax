@@ -3,15 +3,14 @@ name: tamper
 description: "Use when reasoning about integrity attacks on the content-uuid store — the cost to forge, collide, or rewrite a record undetected, and why all-directions uuid wiring drives that cost toward infinity."
 atomPath: tamper
 coordinate: "tamper · 1/base · b585ffa7"
-contentUuid: "45b33cf5-fbad-5150-b435-8141dd8f4594"
+contentUuid: "55c6f9fc-730b-5c66-86f5-912aba41ede6"
 diamondUuid: "9ad20daa-cc70-8cf5-9131-7bbaac10c9f0"
 uuid: "b585ffa7-b1d4-80b4-bf1e-bedc7e5077fb"
 horo: 1
 typography:
   partition: tamper
   bondDegree: 290
-standards:
-  - "W3C-PROV-O"
+standards: []
 bindings: []
 signatures:
   computationUuid: "c5cc1561-bf0f-8f8f-829a-a0f625dfc442"

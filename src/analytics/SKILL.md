@@ -3,7 +3,7 @@ name: analytics
 description: "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them."
 atomPath: analytics
 coordinate: "analytics · 7/descent · 4d40bc72"
-contentUuid: "86c92ec2-19a0-55f8-8746-671a3ac82305"
+contentUuid: "77db7061-471e-5088-9b77-9cff7fe28665"
 diamondUuid: "9eae7e0f-27a5-8e66-866e-ede9316fecfb"
 uuid: "4d40bc72-bebe-8642-b416-4c79cb1e6c5f"
 horo: 7
@@ -20,7 +20,6 @@ standards:
   - "ISO/IEC-25010:2023 quality model — a computed read-out across quality aspects`"
   - "ISO/IEC-29119"
   - "NIST-SP-800-63"
-  - "W3C-WAI-ARIA-1.2"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

@@ -3,7 +3,7 @@ name: provider
 description: "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…"
 atomPath: "self/closure/provider"
 coordinate: "self/closure/provider · 4/weave · bbb499a8"
-contentUuid: "0884e92f-3e81-54e0-9425-6e951c6b778b"
+contentUuid: "fb658fe8-3586-5bd2-b4b7-30930264abf8"
 diamondUuid: "7eda2bae-68a7-8cf8-a283-b72a693a0940"
 uuid: "bbb499a8-f07c-853b-adee-4e0a3d072aff"
 horo: 4
@@ -12,7 +12,6 @@ typography:
   bondDegree: 25
 standards:
   - "EU-2002/58"
-  - "W3C-PROV-O"
   - eIDAS
 bindings: []
 signatures:

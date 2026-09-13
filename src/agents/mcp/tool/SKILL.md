@@ -3,7 +3,7 @@ name: tool
 description: "Use when assembling the MCP tool surface from per-area builders — each area file is self-contained (own I18N, zod schemas, handlers) and exports one buildXxxTools factory whose tools all carry the erpax.<area>.* name prefix."
 atomPath: "agents/mcp/tool"
 coordinate: "agents/mcp/tool · 1/base · 355216f5"
-contentUuid: "e07bc04c-7897-5866-a2ff-12faa33dfb19"
+contentUuid: "8df52e49-e672-5358-a142-cf25a0cedc52"
 diamondUuid: "919f49eb-9202-82fa-9196-6e8556272c39"
 uuid: "355216f5-ef71-8bf7-b236-9a725cb549fc"
 horo: 1
@@ -24,7 +24,6 @@ standards:
   - "NIST-SP-800-63"
   - "RFC-9562"
   - "W3C-DID-1.0"
-  - "W3C-WAI-ARIA-1.2"
 bindings: []
 signatures:
   computationUuid: "036b1326-517e-86b4-8e75-769b832c5719"

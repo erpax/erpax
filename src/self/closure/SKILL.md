@@ -3,7 +3,7 @@ name: closure
 description: "Use when an external dependency must fall back to erpax ITSELF — every external role (payment-provider, signing, notification, search, federation) has a registered internal provider that completes the operation when the external call fails (Conservation Law 53, withInternalFallback). The dependency graph terminates at erpax; everything falls back to the self."
 atomPath: "self/closure"
 coordinate: "self/closure · 5/round · 795a2cfc"
-contentUuid: "2dbc1e87-d224-56b6-aa4c-120987093e60"
+contentUuid: "96e5c2af-56b8-5a74-a32e-70da2486fb25"
 diamondUuid: "6894f2b4-2f03-823c-9cb2-2bed260ec8cb"
 uuid: "795a2cfc-9e4f-81aa-96bb-cfe16bed67ec"
 horo: 5
@@ -17,7 +17,6 @@ standards:
   - "ISO-22301:2019"
   - "ISO/IEC 25010:2023 §5.6.2 fault tolerance"
   - "ISO/IEC 25010:2023 §5.6.2 fault tolerance`"
-  - "W3C-PROV-O"
   - eIDAS
   - "— the instrument reads SKILL.md) -->"
 bindings: []

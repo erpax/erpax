@@ -3,7 +3,7 @@ name: shared
 description: "Use when reasoning about shared — One accountable object, two coexisting facets. Every standards rule the codebase declares about money / dates / addresses / common columns lives in one of these shared atoms; highe"
 atomPath: shared
 coordinate: "shared · 2/share · b01c7c9f"
-contentUuid: "2e2a1837-d809-53ec-a50b-ed08dd5763d9"
+contentUuid: "6318c430-2f0c-538b-8a4f-f35dbdbdc167"
 diamondUuid: "159395c3-fc67-8713-85ec-429ac02a116e"
 uuid: "b01c7c9f-81ac-8887-9e84-586cdb5ee32e"
 horo: 2
@@ -43,7 +43,6 @@ standards:
   - "UPU-S42` international-postal-addressing (AddressBlock)"
   - "W3C HTML5 living-standard"
   - "W3C HTML5` address-element / time-element living-standard"
-  - "W3C-PROV-O"
   - "WCAG-2.1 level-AA shared-atom-accessibility"
   - "WCAG-2.1` §1.3.1 info-and-relationships; level-AA shared-atom-accessibility"
 bindings: []

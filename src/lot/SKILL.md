@@ -3,7 +3,7 @@ name: lot
 description: Use when modelling one lot — the singular model of the lots collection (the plural store); a tracked batch of like units produced or handled together.
 atomPath: lot
 coordinate: "lot · 5/round · 59ccc2bc"
-contentUuid: "7ab969fb-466c-52b1-bbba-3db2083f8efa"
+contentUuid: "c143d68c-fb33-5907-ae53-516d0dd5060f"
 diamondUuid: "561294a9-faa9-8e56-a1d1-18736dc92cff"
 uuid: "59ccc2bc-98ac-8e16-8710-d7566bb4518c"
 horo: 5
@@ -13,7 +13,6 @@ typography:
 standards:
   - "ISA-95"
   - "ISO-22400-2"
-  - "UBL-2.1"
 bindings: []
 signatures:
   computationUuid: "ba910000-7906-8ada-af18-543d810fcf2a"

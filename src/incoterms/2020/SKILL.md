@@ -3,7 +3,7 @@ name: "2020"
 description: Use when implementing or referencing INCOTERMS 2020.
 atomPath: "incoterms/2020"
 coordinate: "incoterms/2020 · 5/round · e45ccec4"
-contentUuid: "896b4e81-dc1a-5b89-a6a2-7a0a5aa0a67e"
+contentUuid: "7d05038a-7174-5832-ba9c-11e808a7350b"
 diamondUuid: "a9b9376f-7195-822c-b027-210d82f8bc03"
 uuid: "e45ccec4-0ce0-8a2a-a10b-217d49010398"
 horo: 5
@@ -15,7 +15,6 @@ standards:
   - "INCOTERMS-2020"
   - "ISO 6346 freight-container-code (related)"
   - "ISO 6346 freight-container-code (related)`"
-  - "UBL-2.1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

@@ -3,7 +3,7 @@ name: cost
 description: "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts."
 atomPath: "tamper/cost"
 coordinate: "tamper/cost · 5/round · bb134a09"
-contentUuid: "1db6040a-508e-5631-8d33-52bba08054fe"
+contentUuid: "3bbd3529-cb0a-5e98-a2a7-71fe9e4495b1"
 diamondUuid: "b6e3c798-cfe5-8be9-8c4d-701f4a5c797e"
 uuid: "bb134a09-e76a-8b03-a525-97ca0a5a1ada"
 horo: 5
@@ -19,7 +19,6 @@ standards:
   - "NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)`"
   - "RFC 9562 §8 (UUID security considerations — no trusted-time / no integrity guarantee from the format alone)"
   - "RFC 9562 §8 (UUID security considerations — no trusted-time / no integrity guarantee from the format alone)`"
-  - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

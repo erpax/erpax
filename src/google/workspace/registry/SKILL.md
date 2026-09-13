@@ -3,7 +3,7 @@ name: registry
 description: "Use when reasoning about registry — Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory)."
 atomPath: "google/workspace/registry"
 coordinate: "google/workspace/registry · 5/round · 334f5b8c"
-contentUuid: "8ffe8d91-b73f-5962-a179-3fa43ff5be48"
+contentUuid: "74fb5a2a-fe2d-5626-8ea9-70c996c98637"
 diamondUuid: "4127d064-27a7-8cbf-bb78-47c8a91df742"
 uuid: "334f5b8c-79ee-8480-9d14-782c4faa0ba4"
 horo: 5
@@ -15,7 +15,6 @@ standards:
   - "IETF RFC 6749 OAuth 2.0 authorization-framework"
   - OpenID Connect Core 1.0 (Google as the OIDC provider)
   - "RFC-6749"
-  - "W3C-PROV-O"
 bindings: []
 signatures:
   computationUuid: "c8719a61-4470-8f75-a8db-73a1fea832d8"

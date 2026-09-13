@@ -3,7 +3,7 @@ name: cmspage
 description: "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection."
 atomPath: cmspage
 coordinate: "cmspage · 4/weave · 55dfc9d4"
-contentUuid: "0335dfd8-2b23-52e7-a03c-90fed60c2182"
+contentUuid: "0bca8ad7-ac63-52f3-ab8b-7bfbed882a44"
 diamondUuid: "19ad02f1-b972-8c80-8d4d-ce568249bd2f"
 uuid: "55dfc9d4-0bbb-8365-86a2-d57e732e6722"
 horo: 4
@@ -18,7 +18,6 @@ standards:
   - "ECMA-402 internationalization-api"
   - "NIST-INCITS-359-2012"
   - "RFC-3986"
-  - "UBL-2.1"
   - W3C HTML5 Living Standard
   - "W3C HTML5 Living Standard`"
   - "W3C-HTML5"

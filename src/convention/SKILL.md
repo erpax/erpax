@@ -3,7 +3,7 @@ name: convention
 description: "Use when reasoning about the corpus's conventions as a layer — each convention is a check-atom with a live coverage(); the collider composes them into one tamper-cost, infinite only when every convention is computed clean (zero entropy)."
 atomPath: convention
 coordinate: "convention · 8/crest · 953eb449"
-contentUuid: "e8095a35-d3bb-5b22-9e03-fb0d31f1c8f6"
+contentUuid: "6656855f-cda1-59fb-884b-6f61b02f9409"
 diamondUuid: "756fc016-8a4a-82ad-8cfe-5f083f0007ce"
 uuid: "953eb449-4b82-8482-8522-fcfdac92f707"
 horo: 8
@@ -11,7 +11,6 @@ typography:
   partition: convention
   bondDegree: 87
 standards:
-  - "UBL-2.1"
   - "each convention is computed-not-hardcoded; the collider product (zero entropy ⟺ ∞)"
 bindings: []
 signatures:

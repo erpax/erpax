@@ -3,7 +3,7 @@ name: entries
 description: "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3."
 atomPath: "journal/entries"
 coordinate: "journal/entries · 1/base · 02e507e7"
-contentUuid: "f9d68582-da32-5948-a34f-eee9ea77d9eb"
+contentUuid: "c4f7aeac-6e4c-5533-822c-5c0eda9d260b"
 diamondUuid: "083619de-11ac-8bbb-9fcf-8a2b57d4df8f"
 uuid: "02e507e7-6373-8c14-93ba-7394fb145985"
 horo: 1
@@ -19,7 +19,6 @@ standards:
   - "OECD SAF-T §3 journal-entries"
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-105 generally-accepted-accounting-principles"
-  - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

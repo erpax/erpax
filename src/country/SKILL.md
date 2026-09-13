@@ -3,7 +3,7 @@ name: country
 description: Use when reasoning about country — A country.
 atomPath: country
 coordinate: "country · 8/crest · 19dbeeb0"
-contentUuid: "43b82cd6-a986-5eb3-b886-4144d8f00578"
+contentUuid: "ccbf2e03-67cd-51e8-91f4-bc6f5e6e7aee"
 diamondUuid: "83c8f77c-eff4-8511-9892-ea167f1335a0"
 uuid: "19dbeeb0-fb3a-82c5-b445-a372a47f4b1f"
 horo: 8
@@ -29,7 +29,6 @@ standards:
   - "SAF-T"
   - SEPA
   - "SWIFT-MT"
-  - "UBL-2.1"
   - "UN-CEFACT"
   - "Unicode-CLDR"
   - "W3C-HTML5"

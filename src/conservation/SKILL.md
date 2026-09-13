@@ -3,7 +3,7 @@ name: conservation
 description: "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor)."
 atomPath: conservation
 coordinate: "conservation · 2/share · 5bf71057"
-contentUuid: "3269065d-6707-5626-9408-fe9ad2ed8875"
+contentUuid: "a0230b0f-5100-5a68-8493-00e6bc9ab5e9"
 diamondUuid: "469c24b8-9bcb-895c-aba5-f40d60b4cee3"
 uuid: "5bf71057-6e78-8131-8dcb-8cd1266d983e"
 horo: 2
@@ -14,7 +14,6 @@ standards:
   - "Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit"
   - First Law of Thermodynamics — energy is conserved in an isolated system
   - "Noether's theorem (E. Noether, 1918) — continuous symmetry ⇔ conserved quantity"
-  - "UBL-2.1"
 bindings: []
 signatures:
   computationUuid: "63405d60-f8df-884a-a682-7e18afc2b6bd"

@@ -3,7 +3,7 @@ name: bits
 description: "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them."
 atomPath: "cost/bits"
 coordinate: "cost/bits · 4/weave · 41bd67d1"
-contentUuid: "ece71b05-39fd-5784-9ca1-4cb05743d70a"
+contentUuid: "91ae98fe-2cdf-5a9b-8766-7a66f24fa8f8"
 diamondUuid: "87edcd2a-31ad-84cb-bf81-d0a429e92e89"
 uuid: "41bd67d1-352c-8b40-b271-9b645226127e"
 horo: 4
@@ -19,7 +19,6 @@ standards:
   - "NIST-SP-800-63"
   - RFC 9562 §5.8 (uuidv8) · §4.1 (variant)
   - RFC 9562 §8 — UUID security considerations
-  - "W3C-PROV-O"
 bindings: []
 signatures:
   computationUuid: "62407255-0403-85fd-9f23-87034685fd0c"

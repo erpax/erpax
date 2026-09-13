@@ -3,7 +3,7 @@ name: quotes
 description: "Use when capturing or evaluating vendor RFQ responses — quote lines, pricing, INCOTERMS, lead time, award decision and rationale for OECD BEPS Action 13 and SOX §404 arm's-length evidence. The per-vendor RFQ response and competitive-bid award record."
 atomPath: "vendors/vendor/quotes"
 coordinate: "vendors/vendor/quotes · 7/descent · eebe1b01"
-contentUuid: "68e1f21c-a686-5954-851a-ecc001d95ca0"
+contentUuid: "f8849ebe-c3ff-54d4-b2cf-5b93a8fd84c6"
 diamondUuid: "4a1b1d12-f6e6-8ee9-84fa-59a2819bf683"
 uuid: "eebe1b01-02e9-88d5-81c3-9dd45b50fec0"
 horo: 7
@@ -20,7 +20,6 @@ standards:
   - "ISO-9001"
   - "OECD BEPS Action 13 transfer-pricing-evidence"
   - "SOX §404 internal-controls vendor-selection"
-  - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

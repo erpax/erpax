@@ -3,7 +3,7 @@ name: shallow
 description: "Use when reasoning about import discipline — an import must reach an atom's index (the one public door), not a deep internal file past the seal; this names the convention, measures the corpus's live shallowness, and is enforced by the import lint (a ratchet on the non-index count, so shallowness can only get tighter)."
 atomPath: "convention/shallow"
 coordinate: "convention/shallow · 7/descent · 390902b3"
-contentUuid: "61349565-3d73-538c-8073-ca8bcec3347d"
+contentUuid: "6b640142-9725-52fd-af82-b38359b341ae"
 diamondUuid: "1da41395-3385-893f-a614-448873065a9d"
 uuid: "390902b3-4472-895a-9952-14ffb48d42b9"
 horo: 7
@@ -11,7 +11,6 @@ typography:
   partition: convention
   bondDegree: 16
 standards:
-  - "UBL-2.1"
   - "the import graph is the config — the public face is index.ts only (shallow, never deep)"
 bindings: []
 signatures:

@@ -3,7 +3,7 @@ name: scorecards
 description: "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node."
 atomPath: "vendors/vendor/scorecards"
 coordinate: "vendors/vendor/scorecards · 5/round · 21571c05"
-contentUuid: "61a04879-dd60-5c3b-8208-d6e15b9b217b"
+contentUuid: "d5b8adce-3e10-578c-b5bf-996dbde99226"
 diamondUuid: "47045bc2-9fdb-8ed2-ba06-32db5f233cbb"
 uuid: "21571c05-5c38-8523-86e1-e52b65a0502e"
 horo: 5
@@ -19,7 +19,6 @@ standards:
   - "ISO-8601-1:2019 date-time`"
   - "ISO-9001"
   - "SOX §404 internal-controls vendor-management"
-  - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

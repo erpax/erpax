@@ -3,7 +3,7 @@ name: self
 description: "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \"all agents are one erpax\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
 atomPath: self
 coordinate: "self · 4/weave · 6c1a20b1"
-contentUuid: "47e7dc34-4b8b-5dab-b2c7-abd7ed19e58b"
+contentUuid: "0640bcb5-4e8b-590e-9241-d4416606dd00"
 diamondUuid: "afe07b89-c346-83b3-9cab-fc15274f9d77"
 uuid: "6c1a20b1-b01d-80b3-8413-de4af81f10cd"
 horo: 4
@@ -20,7 +20,6 @@ standards:
   - "ISO-22301:2019"
   - "NIST-SP-800-162"
   - "OWASP-ASVS"
-  - "W3C-PROV-O"
   - eIDAS
 bindings: []
 signatures:

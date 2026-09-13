@@ -3,7 +3,7 @@ name: hooks
 description: "Use when reasoning about the pages collection's Payload hooks — before/after change and validate logic for pages."
 atomPath: "cmspage/hooks"
 coordinate: "cmspage/hooks · 3/3 · 7eea9c5a"
-contentUuid: "b306a49b-c6a7-5dff-93b0-e4617d31abba"
+contentUuid: "63269f00-07eb-5778-9f66-1113467d753b"
 diamondUuid: "c7cd0acb-7ef1-8636-9d6c-51845d8eb062"
 uuid: "7eea9c5a-bc1d-8960-99b9-cf911b3ab34e"
 horo: 3
@@ -12,7 +12,6 @@ typography:
   bondDegree: 348
 standards:
   - "RFC-3986"
-  - "UBL-2.1"
   - "W3C-HTML5"
 bindings: []
 signatures:

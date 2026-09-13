@@ -3,7 +3,7 @@ name: cost
 description: "Use when optimising ANY cost in the society against output — one efficiency law for every cost (ai tokens, money, energy, time, labor, entropy), measured against productivity AND creativity. efficiency = output / cost, where output = productivity (verified, committed, repeatable work) + creativity (novel atoms/solutions, which compound because they're reused). The society and the agent maximise output-per-cost for every kind; competition selects the most efficient, decompression pays for it; waste (spend that produced nothing) drives to 0."
 atomPath: cost
 coordinate: "cost · 4/weave · c2d5249a"
-contentUuid: "a639fa37-9b25-5f0a-b35e-ea8e35c67188"
+contentUuid: "c9935938-4ff6-5067-9e7d-8500c833463b"
 diamondUuid: "66545234-b4ef-87cd-a42b-f70e1973e659"
 uuid: "c2d5249a-1739-8814-b568-031b42d9cde2"
 horo: 4
@@ -17,7 +17,6 @@ standards:
   - "NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2`"
   - "NIST-SP-800-63"
   - "RFC 9562 §8 — UUID security considerations`"
-  - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

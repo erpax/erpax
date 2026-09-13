@@ -3,7 +3,7 @@ name: exported
 description: "Use when reasoning about an atom's PRODUCER obligation — every symbol consumed across atoms is re-exported from that atom's index (its one public face), so a deep importer can collapse to @/x; the producer-side dual of the importer conventions import and shallow, measured live as the index-reachable fraction of cross-atom symbols, enforced by the same import ratchet so it can only tighten toward coverage one (tamper-cost to infinity)."
 atomPath: "convention/exported"
 coordinate: "convention/exported · 4/weave · 18c5ba92"
-contentUuid: "f0b54f34-d152-5f14-8c9a-ba330cbd8cb9"
+contentUuid: "6dcd6811-7eee-5c88-b7c4-a126dca62316"
 diamondUuid: "30d56a16-362f-838d-87b3-8b635c1490b5"
 uuid: "18c5ba92-69d6-8110-9804-13974eb90163"
 horo: 4
@@ -11,7 +11,6 @@ typography:
   partition: convention
   bondDegree: 40
 standards:
-  - "UBL-2.1"
   - "an atom's only public face is its index.ts; what it exports through it IS its contract"
 bindings: []
 signatures:

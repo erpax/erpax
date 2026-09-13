@@ -3,7 +3,7 @@ name: land
 description: "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so land pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, wait) · pnpm erpax land verdict <sha>"
 atomPath: land
 coordinate: "land · 5/round · 79a47b9c"
-contentUuid: "548603ec-66f9-5c85-aebd-1e44be0d1afc"
+contentUuid: "0c1c6352-31c5-584f-b5e3-9e8b07c702f7"
 diamondUuid: "f9734e58-9a13-8f25-bba3-92fafd26a2ca"
 uuid: "79a47b9c-49d7-85ee-947b-aceade434434"
 horo: 5
@@ -12,7 +12,6 @@ typography:
   bondDegree: 13
 standards:
   - "ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none"
-  - "W3C-DID-1.0"
 bindings: []
 signatures:
   computationUuid: "d28cd87e-63f1-8e9f-bb12-a395eb1ebc63"

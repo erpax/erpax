@@ -3,7 +3,7 @@ name: workspace
 description: "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry."
 atomPath: "google/workspace"
 coordinate: "google/workspace · 4/weave · 7d2ee578"
-contentUuid: "1c42806a-98de-5329-95f4-d925ce8a2f64"
+contentUuid: "9becd50a-3ab6-522a-97f0-f7eac086d17f"
 diamondUuid: "0e5e5f11-3447-8aaa-a981-d49810d26a5d"
 uuid: "7d2ee578-3f69-80db-bb00-769afb68e9da"
 horo: 4
@@ -12,8 +12,6 @@ typography:
   bondDegree: 46
 standards:
   - "RFC-6749"
-  - "UBL-2.1"
-  - "W3C-PROV-O"
 bindings: []
 signatures:
   computationUuid: "b03f193a-3eac-8c7c-94be-ee5129bb1b77"

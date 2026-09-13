@@ -3,7 +3,7 @@ name: rosetta
 description: "Use when the gated commit/push must be achieved BY THE ROSETTA — every folder is an agent (a form·code·proof trinity that declares its @standard banners and either proves them or not), and the security/standards lanes for publish are DERIVED from that incidence, never hand-typed. The moving rosetta: poles come from what the folders declare, so a new atom joins a lane with no edit."
 atomPath: rosetta
 coordinate: "rosetta · 1/base · a0132983"
-contentUuid: "07032923-2002-5798-90fa-53d2f89153bb"
+contentUuid: "45c9186e-661c-5be9-99d5-476bc9cca5b4"
 diamondUuid: "ab42c34d-96b2-8eb7-affe-c4aebe9810c0"
 uuid: "a0132983-d6fe-837f-a767-5f3b23dcd92b"
 horo: 1
@@ -11,7 +11,6 @@ typography:
   partition: rosetta
   bondDegree: 47
 standards:
-  - "W3C-PROV-O"
   - "banners and either proves them or not), and the security/standards lanes for publish are DERIVED from that incidence, never hand-typed. The moving rosetta: poles come from what the folders declare, so a new atom joins a lane with no edit.\""
   - standards
 bindings: []

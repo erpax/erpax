@@ -3,7 +3,7 @@ name: entry
 description: "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\"."
 atomPath: entry
 coordinate: "entry · 8/crest · fe37ac89"
-contentUuid: "056f6168-6d80-535f-b562-a50ced7bad5d"
+contentUuid: "b88e1c00-d691-505c-824a-a2ccc2797eb8"
 diamondUuid: "851f8ffe-c166-8b48-bff7-33ae235e2cb9"
 uuid: "fe37ac89-acf7-845c-98f2-6afa1dffc24c"
 horo: 8
@@ -16,7 +16,6 @@ standards:
   - "IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)`"
   - "ISO 20022: debtor/creditor are the two signs of ONE transfer"
   - "ISO 20022: debtor/creditor are the two signs of ONE transfer`"
-  - "UBL-2.1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

@@ -3,7 +3,7 @@ name: reconciliations
 description: "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection."
 atomPath: "gl/accounts/account/reconciliations"
 coordinate: "gl/accounts/account/reconciliations · 1/base · b1ecc095"
-contentUuid: "4f34922d-80de-57df-bdbf-92febea6f18f"
+contentUuid: "547a368d-211c-5d59-83b9-8512ad77163e"
 diamondUuid: "c59c167c-a38c-8ba5-abc1-09cec4b4f79a"
 uuid: "b1ecc095-51f1-8c26-94a4-75af589d6e67"
 horo: 1
@@ -17,7 +17,6 @@ standards:
   - "ISO-8601-1:2019 date-time as-of-date approved-at"
   - "ISO-8601-1:2019 date-time as-of-date approved-at`"
   - "SOX §404 internal-controls reconciliation-sign-off"
-  - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

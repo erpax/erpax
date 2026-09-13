@@ -3,7 +3,7 @@ name: journal
 description: Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries.
 atomPath: journal
 coordinate: "journal · 8/crest · e917cb5d"
-contentUuid: "c348c212-9ab0-53a6-91f4-c7b19bc59b9e"
+contentUuid: "21e3295a-ef33-5df7-b831-3fce4f8895f4"
 diamondUuid: "fa5f431e-0a0a-8846-9064-1e55dcbdeca1"
 uuid: "e917cb5d-f616-8943-9384-d787f4889628"
 horo: 8
@@ -13,7 +13,6 @@ typography:
 standards:
   - "ECMA-262"
   - "IEEE-754"
-  - "W3C-PROV-O"
 bindings: []
 signatures:
   computationUuid: "f88f6a3d-72d4-8955-9b6a-00614f8b7071"

@@ -3,7 +3,7 @@ name: prime
 description: "Use when reasoning about prime — Use for the multiplicative basis — isPrime (deterministic Miller–Rabin, exact not probabilistic) and factor (the decode fold: an integer back to its prime generators). The counterpart to pi's positional basis. Run: tsx src/prime/index.ts <n>"
 atomPath: prime
 coordinate: "prime · 4/weave · 0965f0d6"
-contentUuid: "dc8b8aea-4d56-556c-87a2-c11c2763f4a4"
+contentUuid: "d52354d0-9e4a-5366-9be9-a349db3bf860"
 diamondUuid: "047b895c-8436-8d88-9de3-a0702fa3632d"
 uuid: "0965f0d6-df48-8bc5-ace8-74b2e39f92b5"
 horo: 4
@@ -13,7 +13,6 @@ typography:
 standards:
   - Fundamental Theorem of Arithmetic — unique prime factorisation (Euclid; Gauss)
   - "Shor 1994 — integer factorisation by quantum period-finding (proven, not claimed)"
-  - "W3C-PROV-O"
 bindings: []
 signatures:
   computationUuid: "09e5e1d2-50f2-8056-b2b6-f8b05e19dd57"

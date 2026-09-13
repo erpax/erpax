@@ -3,7 +3,7 @@ name: financial
 description: "Use when reasoning about financial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: financial
 coordinate: "financial · 2/share · 84de3477"
-contentUuid: "66cd63e5-b675-5b71-a815-058420492f8d"
+contentUuid: "041b5424-368c-5176-b6a5-190bbeb18af8"
 diamondUuid: "ed20aed9-7e09-8369-b2b6-a48747c68f00"
 uuid: "84de3477-29f6-8142-9b29-20f7ec185738"
 horo: 2
@@ -12,7 +12,6 @@ typography:
   bondDegree: 32
 standards:
   - "BCP-47"
-  - "W3C-PROV-O"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:

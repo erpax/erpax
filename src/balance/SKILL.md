@@ -3,7 +3,7 @@ name: balance
 description: "Use when reasoning about equilibrium in erpax — Σdebit=Σcredit, trial balance, conservation laws, two sides of a flow at rest. The universal root of equilibrium."
 atomPath: balance
 coordinate: "balance · 2/share · 33aebfcc"
-contentUuid: "56872bec-7bca-5e89-a9a2-6e6b77840360"
+contentUuid: "3bcd6c46-8ccc-5956-ac41-bf89d3808702"
 diamondUuid: "f973d365-9357-8089-a243-02f3eb9d733c"
 uuid: "33aebfcc-6d08-8779-8e7e-da17dc573b3b"
 horo: 2
@@ -11,7 +11,6 @@ typography:
   partition: balance
   bondDegree: 714
 standards:
-  - "UBL-2.1"
   - "double-entry bookkeeping (Pacioli, 1494) — every credit a debit; imbalance is the bug"
 bindings: []
 signatures:

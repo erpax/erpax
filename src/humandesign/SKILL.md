@@ -3,7 +3,7 @@ name: humandesign
 description: "Use when mapping Human Design onto erpax — its real combinatorics (64 gates = 2^6 I Ching hexagrams, 6 lines, 9 centers, 12 profiles) sent to the math, with the divination layer named as convention and never claimed."
 atomPath: humandesign
 coordinate: "humandesign · 4/weave · 0757e180"
-contentUuid: "c6a3e579-78a1-543f-b60e-3891934ccc95"
+contentUuid: "688db22e-a573-56cd-8aad-1493a8c35a88"
 diamondUuid: "f3cb087d-9851-8b60-8e88-663ad5a6ff5c"
 uuid: "0757e180-e9bf-8284-88fe-508bffd25bce"
 horo: 4
@@ -11,7 +11,6 @@ typography:
   partition: humandesign
   bondDegree: 24
 standards:
-  - "UBL-2.1"
   - "the I Ching hexagram structure (public domain); Human Design (Ra Uru Hu, 1987) as named convention"
 bindings: []
 signatures:

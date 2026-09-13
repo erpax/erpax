@@ -3,7 +3,7 @@ name: publish
 description: Use when reasoning about publish — publishSelf — wrap a GenomeBundle in a verifiable federation envelope.
 atomPath: "cloning/publish"
 coordinate: "cloning/publish · 1/base · 93a39890"
-contentUuid: "479e5ace-58ff-54b1-8c0b-c99aa7b0b27b"
+contentUuid: "3ec92ce2-b381-5d0d-911c-d677f61915d5"
 diamondUuid: "b901b1c2-453f-869e-9894-7025c6862838"
 uuid: "93a39890-fef0-8c0f-a13b-0344660eb880"
 horo: 1
@@ -13,7 +13,6 @@ typography:
 standards:
   - "NIST FIPS 204 ML-DSA (when sign fn provided)"
   - W3C Activity Streams 2.0 (federated content envelope)
-  - "W3C-PROV-O"
 bindings: []
 signatures:
   computationUuid: "7d87c253-f00c-88f5-a69e-5681558f17d3"

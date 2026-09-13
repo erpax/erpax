@@ -3,7 +3,7 @@ name: link
 description: "Use when one atom references another in prose — every wikilink must resolve to a real atom, no dead wires; coverage = resolving / total over the live corpus map."
 atomPath: "convention/link"
 coordinate: "convention/link · 2/share · 713af905"
-contentUuid: "6611825d-7323-5b98-8eaa-5cf6776ebff8"
+contentUuid: "0beac6fe-be90-58ef-84c9-bd7f0a0d5da2"
 diamondUuid: "1aed363c-d43b-8a50-9a48-15f7fecea35a"
 uuid: "713af905-6025-809d-be67-7ac048ece059"
 horo: 2
@@ -13,7 +13,6 @@ typography:
 standards:
   - "CommonMark / Obsidian `[[wikilink]]` syntax — resolved by normalized leaf word"
   - "CommonMark / Obsidian double-bracket wikilink syntax — resolved by normalized leaf word against the shared corpus map"
-  - "UBL-2.1"
 bindings: []
 signatures:
   computationUuid: "280c6bf3-e779-85a2-ab0f-869a92427ae1"

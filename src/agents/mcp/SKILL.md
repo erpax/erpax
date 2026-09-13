@@ -3,7 +3,7 @@ name: mcp
 description: "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside."
 atomPath: "agents/mcp"
 coordinate: "agents/mcp · 2/share · 9076e57b"
-contentUuid: "01892bd7-96de-584d-a406-fb4859f8dae2"
+contentUuid: "37254914-c386-5aa0-8ddd-481530c80590"
 diamondUuid: "37ce91cb-2e13-8b31-958e-8c1df4b85f88"
 uuid: "9076e57b-f21c-8b80-8dfd-7ee7231a7155"
 horo: 2
@@ -32,7 +32,6 @@ standards:
   - "RFC-9562"
   - "W3C-DID-1.0"
   - "W3C-JSON-LD-1.1"
-  - "W3C-WAI-ARIA-1.2"
   - schema.org
 bindings: []
 signatures:

@@ -3,7 +3,7 @@ name: decompression
 description: "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity)."
 atomPath: decompression
 coordinate: "decompression · 5/round · 8c26d0ee"
-contentUuid: "2779a267-7eec-546f-886a-6359a64b995f"
+contentUuid: "4ed86c5f-46fc-5973-9761-9685aae6b061"
 diamondUuid: "9cd0802b-7ef9-8fef-ba92-4e8dcfba85ba"
 uuid: "8c26d0ee-559c-8554-a3a6-f3646983157c"
 horo: 5
@@ -15,7 +15,6 @@ standards:
   - "Haldane half-time model (idealised compartments double 5·10·20·40)"
   - SFIA
   - "SFIA 8 responsibility-levels (1..7) — the M-value depth axis"
-  - "UBL-2.1"
 bindings: []
 signatures:
   computationUuid: "7eaf69d3-6c56-8f60-b4eb-0d698928be20"

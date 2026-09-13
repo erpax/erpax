@@ -3,7 +3,7 @@ name: variants
 description: "Use when modeling a lot's per-variant line — the size/colour option breakdown whose total IS the sum of its options (100% data-verified), monotonic through the ordered→delivered funnel."
 atomPath: "lot/variants"
 coordinate: "lot/variants · 2/share · 72068aa1"
-contentUuid: "368c10ba-255e-55ca-8051-0df868be2e77"
+contentUuid: "ba6468ed-d13a-55ea-a346-f6b659d45a05"
 diamondUuid: "72f10876-d804-8f0c-8932-9a048c8d275f"
 uuid: "72068aa1-a04e-825f-950f-73caec8ba263"
 horo: 2
@@ -13,7 +13,6 @@ typography:
 standards:
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 material-lot sublot"
-  - "UBL-2.1"
   - "double-entry — every counter is a balanced number; the variant"
 bindings: []
 signatures:

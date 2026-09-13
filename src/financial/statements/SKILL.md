@@ -3,7 +3,7 @@ name: statements
 description: "Use when generating, certifying, and publishing financial statements — trial balance, balance sheet, income statement, cash flow, equity — under IAS-1 / IFRS-18 (2027+) with SOX §302 preparer-vs-certifier segregation, financial ratios, and multi-format export. The period-end financial-statement collection."
 atomPath: "financial/statements"
 coordinate: "financial/statements · 4/weave · 8a633824"
-contentUuid: "6b1007d2-dce0-5d25-a426-8f3b5fe2c632"
+contentUuid: "33ab2a8f-9f5f-5dc2-b271-e9b68918867b"
 diamondUuid: "96732dff-f132-8c8d-acbe-f54b1e400cc2"
 uuid: "8a633824-f45f-8bff-ab88-5b8bfac8913a"
 horo: 4
@@ -25,7 +25,6 @@ standards:
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-205 presentation-of-financial-statements"
   - "US-GAAP ASC-270 interim-reporting"
-  - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

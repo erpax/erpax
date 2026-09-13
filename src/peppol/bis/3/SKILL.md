@@ -3,7 +3,7 @@ name: "3"
 description: Use when implementing or referencing Peppol BIS Billing 3.0.
 atomPath: "peppol/bis/3"
 coordinate: "peppol/bis/3 · 1/base · e5a89036"
-contentUuid: "85ce999c-d59c-55d8-866c-bd22c4106896"
+contentUuid: "8937138e-3d9f-577b-b36e-a4a1faa0668b"
 diamondUuid: "45861139-e58e-80cc-9b57-9a6ad186ffcc"
 uuid: "e5a89036-44da-8989-9c2a-6ccb910677d0"
 horo: 1
@@ -21,6 +21,7 @@ standards:
   - "Peppol-BIS-3.0 billing line-detail` on InvoiceLines and Invoices. That citation grounds the wire format the EU's e-invoicing network expects. The EN-16931 module (already shipped) covers the semantic model; this module covers the Peppol-specific envelope (CustomizationID + ProfileID + ParticipantIdentifier + EndpointID) so the e-invoice export service can construct a complete Peppol-compliant message without composing types from two modules in user code."
   - "Peppol-BIS-3.0 billing line-detail`."
   - "Peppol-BIS-3.0`."
+  - "UBL-2.1"
   - "UBL-2.1 universal-business-language"
   - "— the instrument reads SKILL.md) -->"
 bindings: []

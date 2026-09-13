@@ -17859,7 +17859,7 @@ export interface Share {
 /**
  * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
  *
- * — diamond-uuid: e160bc59-cf96-8e19-b81b-e302c5a18400
+ * — diamond-uuid: 269f5c3d-7ba0-8dfb-9327-9c38271191f1
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "standards".

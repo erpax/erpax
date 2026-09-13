@@ -3,7 +3,7 @@ name: client
 description: "Use when reasoning about client — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: "country/client"
 coordinate: "country/client · 7/descent · 7790a0f4"
-contentUuid: "4098d52b-56c4-5a8c-ac44-c7aca7f1b04f"
+contentUuid: "75fd85c0-6026-525b-b4f7-eddd219fcd85"
 diamondUuid: "1b9d6aef-c9d8-81b2-a7e6-a59535a52f65"
 uuid: "7790a0f4-d9c6-8f20-a3d5-35fe6aab951a"
 horo: 7
@@ -26,7 +26,6 @@ standards:
   - "RFC-6749"
   - "SAF-T"
   - SEPA
-  - "UBL-2.1"
   - "UN-CEFACT"
   - "W3C-HTML5"
 bindings: []
