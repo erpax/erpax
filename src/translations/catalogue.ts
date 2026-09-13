@@ -19650,7 +19650,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a sealed tree should land by itself — the stop-hook body that runs the full seal, then commits and pushes, detached and lock-guarded, and touches nothing when the seal is red.",
-        "uuid": "958d92cb-bb44-8834-8ef8-300033b99258",
+        "uuid": "819b8328-e02d-8ca0-a02b-8947e8ec6203",
         "words": [
           "use",
           "when",
@@ -34671,7 +34671,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing capitalized PP&E — registering assets (land, buildings, equipment, vehicles, software, intangibles), configuring depreciation method and useful life, computing depreciable base and book value, tracking disposals and maintenance, mapping GL accounts for asset/accumulated-depreciation/expense lines. The IAS-16 asset-master node.",
-        "uuid": "3f3630c1-78cd-8a3d-b8ee-67fe43bae1ee",
+        "uuid": "320110b3-6619-8198-9151-f8b4ba43a042",
         "words": [
           "use",
           "when",
@@ -45659,7 +45659,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "land",
-        "uuid": "64e31fb8-b0bc-8dc7-b1eb-c9f40147f635",
+        "uuid": "79a47b9c-49d7-85ee-947b-aceade434434",
         "words": [
           "land"
         ],
@@ -45670,7 +45670,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so land pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, wait) · pnpm erpax land verdict <sha>",
-        "uuid": "e55efbc1-ed7c-873c-a419-c65603222c61",
+        "uuid": "6b1f600c-6d9b-8107-819c-0edf39b45792",
         "words": [
           "use",
           "when",
@@ -62119,7 +62119,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or querying the real-estate portfolio — owned, leased (IFRS-16 ROU), managed, or sublet buildings, sites, and land parcels — with area measurements (IPMS), occupancy, EPC energy rating, BIM reference, and links to spaces, fixed-assets, and leases. The IWMS property master collection.",
-        "uuid": "3f141a87-be99-800c-9471-826638d2bf38",
+        "uuid": "69975959-1b2f-80a1-9ffb-bd97701886ea",
         "words": [
           "use",
           "when",
@@ -62190,7 +62190,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
-        "uuid": "584f3e0a-8ff3-868b-a166-a4a6f3bc5955",
+        "uuid": "f18d77a1-d5fc-885c-85bc-4e47514cab9b",
         "words": [
           "use",
           "when",
@@ -81456,7 +81456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when output is bounded by a recurring climate window in the annual cycle — the growing/harvest season set by the frost-free period, the cool- vs warm-season crop split, and heat accumulation (growing degree days) rather than the calendar. The season is the time-axis bottleneck of agriculture: land × season caps how much can be grown; it is regional and probabilistic, never a copied calendar.",
-        "uuid": "a1cbb0df-b5d9-8dd2-bb76-f33f676b4ca0",
+        "uuid": "6d29005c-d317-8d4d-824a-1faa8d1265c7",
         "words": [
           "use",
           "when",
@@ -100253,7 +100253,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the place gives the produce its character and price — terroir: the area-specific soil, climate, topography, and practice that make a product distinctive (OIV). Expressed legally as the appellation / AVA / PDO (a certification over a delimited territory); the perennial/viticulture twin of provenance and a land-value premium.",
-        "uuid": "3ae648b0-968a-8324-a368-2dc57be1c491",
+        "uuid": "8d8e2f67-60fd-899d-851b-df4de58589db",
         "words": [
           "use",
           "when",
@@ -105981,7 +105981,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a structure or cover extends the growing season — the family from floating row cover → low tunnel → caterpillar tunnel → high tunnel/hoophouse → greenhouse, scaled by size, that buffers frost and adds weeks at each end of the season. Season extension as built capacity; the structure that widens the climate window land×season otherwise caps.",
-        "uuid": "5ac9ef83-9151-88cb-b5d5-e1dc8bf33226",
+        "uuid": "de72412c-c086-8be1-aab7-00092771a683",
         "words": [
           "use",
           "when",
@@ -110743,7 +110743,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about vehicle — A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.",
-        "uuid": "625a52d0-0020-87d7-ac7a-0bf04f260685",
+        "uuid": "73b6758f-ea31-8ded-bb40-35bde01bf5fb",
         "words": [
           "use",
           "when",
@@ -114468,7 +114468,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry.",
-        "uuid": "e008f47d-639c-85cd-97ed-71220e773c33",
+        "uuid": "be42f3c0-1992-84bc-99e8-468f77664ed4",
         "words": [
           "use",
           "when",
@@ -138390,7 +138390,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a cultivated plant type as the agricultural SKU — the produce-catalogue row carrying its sale unit (1 bunch, 100 g, 1 head), unit price, and the agronomic constants (yield per area, plant spacing, N·K₂O need, plantings & harvests per season) that explode a demand quantity into land, seed, and fertility. The crop is the bill-of-materials line of a farm; its heterogeneous sale unit is why automatic unit conversion is non-negotiable.",
-        "uuid": "9a31de6e-6c85-86a5-8e80-6f1561a0b13f",
+        "uuid": "256d6e30-bf02-821c-830c-d31b945dbd8c",
         "words": [
           "use",
           "when",
@@ -138546,7 +138546,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when converting a sales/yield goal into what to grow, how much, when, and where — the crop plan (the what/how-much: quantities, seed, beds) and its spatial twin the field plan/map (the where: each succession assigned to a bed/block). The master planning document of a market farm; the backward demand→land calculation made concrete and recorded.",
-        "uuid": "0138e69e-8f67-895e-9fec-350d0621b857",
+        "uuid": "6b448c22-dd9c-88b3-985b-6576626f71ac",
         "words": [
           "use",
           "when",
@@ -154939,7 +154939,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing standing timber's biological transformation for produce — trees grown in stands as IAS-41 biological assets (standing biomass at fair value; the land separate), on a rotation set by mean annual increment, tended by silviculture (thinning/regeneration), felled to merchantable volume. Carbon stock is the cross-cutting ESG output; FSC/PEFC certification with chain-of-custody.",
-        "uuid": "0f46d294-c6e6-8e41-bd1f-6d473de3c3a7",
+        "uuid": "0ebfbad7-1399-8448-8a73-0f55551e2bd6",
         "words": [
           "use",
           "when",
@@ -175270,7 +175270,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the animal byproduct cycles back to the soil — manure (excreta) as the nutrient output that closes the livestock→soil fertility loop, applied or deposited by grazing; the nutrient-management plan balances it to the land. The waste-to-fertility recycling node, the livestock twin of compost.",
-        "uuid": "415fa69a-e5c1-8907-927c-e1bac7b2ca81",
+        "uuid": "58d9a4f2-69c2-8450-8d2a-cb7540852db6",
         "words": [
           "use",
           "when",
@@ -188669,7 +188669,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the managed forage land livestock graze — pasture (improved/tame forage) and rangeland (native), divided into paddocks for rotational grazing. The grazing land-unit; the livestock counterpart of a crop field, its productivity a fertility/capacity measure.",
-        "uuid": "4ce657c9-decd-8a60-aa33-3d5d934a3b95",
+        "uuid": "3aebb333-fa99-827c-b0db-f8445fc51213",
         "words": [
           "use",
           "when",
@@ -209393,7 +209393,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a bound resource is converted to output at a realized rate — crop yield (output per unit land: lbs/acre, kg/decare) and its inverse, the land a demanded quantity requires. Yield is the bidirectional conversion factor between a resource and its product (area × yield = output; output ÷ yield = area); inverted through unit weight it gives row-length per saleable unit — the number that turns a demand plan into a planting plan.",
-        "uuid": "82d29df0-dbf3-83e7-9f61-14d37a90456b",
+        "uuid": "4e9c5386-3850-86be-9f50-e5f4bfa5cbcf",
         "words": [
           "use",
           "when",

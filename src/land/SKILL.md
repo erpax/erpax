@@ -2,11 +2,11 @@
 name: land
 description: "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so land pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, wait) · pnpm erpax land verdict <sha>"
 atomPath: land
-coordinate: "land · 4/weave · 64e31fb8"
-contentUuid: "f0c27d47-fd4b-56dd-b765-fe7316c22215"
-diamondUuid: "54482c8c-e812-80ec-902d-21dc2aa444a3"
-uuid: "64e31fb8-b0bc-8dc7-b1eb-c9f40147f635"
-horo: 4
+coordinate: "land · 5/round · 79a47b9c"
+contentUuid: "548603ec-66f9-5c85-aebd-1e44be0d1afc"
+diamondUuid: "f9734e58-9a13-8f25-bba3-92fafd26a2ca"
+uuid: "79a47b9c-49d7-85ee-947b-aceade434434"
+horo: 5
 typography:
   partition: land
   bondDegree: 13
@@ -15,7 +15,7 @@ standards:
   - "W3C-DID-1.0"
 bindings: []
 signatures:
-  computationUuid: "b2df4c20-0a49-851d-8a42-c808d2617cba"
+  computationUuid: "d28cd87e-63f1-8e9f-bb12-a395eb1ebc63"
   stages:
     - stage: path
       stageUuid: "5679d57f-282c-80c1-a0d8-ac17950aecc0"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "89d41a17-12a9-8fd5-a4bf-3a84aab6c344"
     - stage: horo
-      stageUuid: "5cd8f81e-07d2-8942-b9ec-b9913f0634a2"
+      stageUuid: "ab7fed3c-0de7-83f3-a1ce-14b930ede068"
     - stage: seal
       stageUuid: "5cb64369-c5b5-8caa-8055-a4e3afa9c51e"
     - stage: uuid
-      stageUuid: "5852a5a9-84fa-8c40-bf55-780fed902cd8"
+      stageUuid: "5a0e1927-663b-841b-b5e6-1495fcef68c3"
 version: 2
 ---
 # land — a landing is complete when the forge agrees, not when the remote moved

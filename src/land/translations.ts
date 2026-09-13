@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "land",
-    "uuid": "64e31fb8-b0bc-8dc7-b1eb-c9f40147f635",
+    "uuid": "79a47b9c-49d7-85ee-947b-aceade434434",
     "words": [
       "land"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so land pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, wait) · pnpm erpax land verdict <sha>",
-    "uuid": "e55efbc1-ed7c-873c-a419-c65603222c61",
+    "uuid": "6b1f600c-6d9b-8107-819c-0edf39b45792",
     "words": [
       "use",
       "when",
