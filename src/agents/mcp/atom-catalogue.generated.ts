@@ -4415,6 +4415,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "karma"
   },
   {
+    "atom": "land",
+    "name": "land",
+    "description": "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so land pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, wait) · pnpm erpax land verdict <sha>",
+    "path": "land"
+  },
+  {
     "atom": "law",
     "name": "law",
     "description": "Use when reasoning about law — Every directive that shaped erpax, distilled and saved as a skill (your own law: save the commands, don't lose them to the chat). Each law links to the atom it governs — the inboun",

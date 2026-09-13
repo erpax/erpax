@@ -3,13 +3,13 @@ name: cloudflare
 description: "Use when touching Cloudflare — Workers AI first-class, uuid-sealed credentials, binding diamonds for every Wrangler section, path-merge on the 7th surface, mediated binding access fail-closed."
 atomPath: cloudflare
 coordinate: "cloudflare · 8/crest · b000aee9"
-contentUuid: "113f0410-f8af-5874-b63f-cad447ff9da6"
-diamondUuid: "2e8115a1-22dc-8c64-b210-81b274ca43b6"
+contentUuid: "20d508d3-371b-5daa-a923-d711f467fab1"
+diamondUuid: "48a8f02a-a306-875f-ac3b-5c247e4d1adf"
 uuid: "b000aee9-bc06-85dc-ae88-2217893ae9a6"
 horo: 8
 typography:
   partition: cloudflare
-  bondDegree: 116
+  bondDegree: 120
 standards:
   - Cloudflare Workers Runtime API
   - "CoE-108+"
@@ -53,7 +53,7 @@ bindings:
   - "triggers/CRON"
   - "vectorize/VECTORIZE_DOCS"
 signatures:
-  computationUuid: "699fa870-685f-86c6-ac79-956a7496d395"
+  computationUuid: "2299b836-eab3-85ad-9909-c8671dfe14f6"
   stages:
     - stage: path
       stageUuid: "81a381ca-7840-8180-802d-be5f6b8f3f62"
@@ -64,11 +64,11 @@ signatures:
     - stage: links
       stageUuid: "7e8c83d7-1374-8d72-928f-af85aa194e9e"
     - stage: horo
-      stageUuid: "e03b4938-e8fd-8120-bf8f-c1bee1b19dae"
+      stageUuid: "b8b67885-1c28-8fe9-9cd2-1360ebd9f8af"
     - stage: seal
       stageUuid: "92cdc9de-1534-8664-b999-3db6eb5e8535"
     - stage: uuid
-      stageUuid: "fe30c40f-6f28-89ff-b6fc-ef66b40c3373"
+      stageUuid: "d1b644fb-9c27-8043-a770-db75de2ec6b7"
 version: 2
 ---
 # cloudflare — mediated edge, every binding a diamond (AI-first)
