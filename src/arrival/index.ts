@@ -305,6 +305,40 @@ const CURES: readonly Cure[] = [
 
 export const cureFor = (pushOutput: string): Cure | undefined => CURES.find((c) => c.when.test(pushOutput))
 
+// ── release: a green landing, released ─────────────────────────────────────────────────────────────────────
+
+export interface ReleaseFacts {
+  /** the forge verdict on HEAD: CI green AND the Cloudflare build deployed, or not */
+  readonly verdict: PushVerdict
+  /** HEAD equals origin/main: nothing local the forge has not judged, nothing remote not yet fetched */
+  readonly headIsTheVerifiedTip: boolean
+  /** the release planner: the content fold differs from the last release */
+  readonly contentChanged: boolean
+  /** the newest corpus release tag and its UTC day; null before the first */
+  readonly lastRelease: { readonly tag: string; readonly day: string } | null
+  /** today, UTC, YYYY-MM-DD */
+  readonly today: string
+}
+
+export interface ReleaseDecision {
+  readonly release: boolean
+  readonly why: string
+}
+
+/**
+ * releaseDecision(facts) — may this tip be released? Pure; every refusal names itself. ONE RELEASE A UTC DAY is
+ * DECLARED, in the open: each release mints a DOI, a DOI is permanent, and erpax lands many times a day.
+ */
+export function releaseDecision(f: ReleaseFacts): ReleaseDecision {
+  if (!f.verdict.ok) return { release: false, why: `the forge has not agreed — ${f.verdict.reason}` }
+  if (!f.headIsTheVerifiedTip) return { release: false, why: 'HEAD is not origin/main: a release names exactly the commit the forge judged' }
+  if (!f.contentChanged)
+    return { release: false, why: `nothing to release: the content is already released${f.lastRelease ? ` as ${f.lastRelease.tag}` : ''}` }
+  if (f.lastRelease && f.lastRelease.day === f.today)
+    return { release: false, why: `already released today (${f.lastRelease.tag}) — one DOI a day, and a DOI is permanent` }
+  return { release: true, why: 'CI green, deployed, content changed, first release today' }
+}
+
 // ── the runner: the only place the network lives ────────────────────────────────────────────────────────────
 
 const sh = (cmd: string): string =>
@@ -375,7 +409,7 @@ function report(v: PushVerdict): number {
 const slugOf = (): string => repoSlugOf(sh('git remote get-url origin'))
 const PUSH_ROUNDS = 3
 
-function landMain(): number {
+function landMain(extraRefs: readonly string[] = []): number {
   const branch = sh('git rev-parse --abbrev-ref HEAD').trim()
   if (branch !== 'main') {
     console.error(`✗ land — on ${branch}, not main; land pushes main only`)
@@ -383,7 +417,7 @@ function landMain(): number {
   }
   for (let round = 1; round <= PUSH_ROUNDS; round++) {
     console.log(`land — round ${round}/${PUSH_ROUNDS}: push main through the hook …`)
-    const r = spawnSync('git', ['push', 'origin', 'main'], {
+    const r = spawnSync('git', ['push', 'origin', 'main', ...(round === 1 ? extraRefs : [])], {
       encoding: 'utf8',
       stdio: ['inherit', 'pipe', 'pipe'],
       maxBuffer: 64 * 1024 * 1024,
@@ -418,12 +452,56 @@ function landMain(): number {
   return 1
 }
 
+/** The three files a release writes — the version stamp and the manifest, never the content. */
+const RELEASE_FILES = ['package.json', 'CITATION.cff', 'released.json']
+
+function lastCorpusRelease(): { tag: string; day: string } | null {
+  const line = sh("git for-each-ref --sort=-creatordate --count=1 --format='%(refname:short) %(creatordate:iso-strict)' 'refs/tags/v[0-9]*'").trim()
+  if (!line) return null
+  const [tag, when] = line.split(' ')
+  return { tag: tag!, day: new Date(when!).toISOString().slice(0, 10) }
+}
+
+function releaseMain(dryRun: boolean): number {
+  sh('git fetch -q origin main --tags')
+  const head = sh('git rev-parse HEAD').trim()
+  const verdict = judge(slugOf(), head, false)
+  let contentChanged = false
+  try {
+    sh('node scripts/release-corpus.mjs --check') // exits 1 when released.json no longer addresses the corpus
+  } catch {
+    contentChanged = true
+  }
+  const d = releaseDecision({
+    verdict,
+    headIsTheVerifiedTip: head === sh('git rev-parse origin/main').trim(),
+    contentChanged,
+    lastRelease: lastCorpusRelease(),
+    today: new Date().toISOString().slice(0, 10),
+  })
+  if (!d.release) {
+    console.log(`· land release — not now: ${d.why}`)
+    return 0
+  }
+  const tag = sh('node scripts/release-corpus.mjs --tag').trim()
+  if (dryRun) {
+    console.log(`· land release — WOULD release ${tag} (dry run, nothing written): ${d.why}`)
+    return 0
+  }
+  sh('node scripts/release-corpus.mjs --write')
+  sh(`git add ${RELEASE_FILES.join(' ')}`)
+  sh(`git commit -q -m ${JSON.stringify(`release: ${tag} — the forge agreed on ${head.slice(0, 9)} (CI green, deployed)`)} -- ${RELEASE_FILES.join(' ')}`)
+  sh(`git tag ${tag}`)
+  console.log(`✓ land release — ${tag} committed and tagged; pushing main and the tag together …`)
+  return landMain([tag])
+}
 if (import.meta.url === `file://${process.argv[1]}`) {
   // exitCode, never exit(): exit() can drop output still buffered in a pipe. The first live landing's missing
   // verdict (2026-09-13) was NOT that: the CLI ladder killed its wrapper at five minutes and this process
   // kept pushing, unseen — which is why the push lane is dispatched outside the ladder.
   const args = process.argv.slice(2)
   if (args.includes('--push')) process.exitCode = landMain()
+  else if (args.includes('--release')) process.exitCode = releaseMain(args.includes('--dry-run'))
   else {
     const ref = args.find((a) => !a.startsWith('--')) ?? 'HEAD'
     const sha = sh(`git rev-parse ${JSON.stringify(ref)}`).trim()

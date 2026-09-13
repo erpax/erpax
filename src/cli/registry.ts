@@ -118,6 +118,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
       desc: 'Forge verdict for a pushed sha (default HEAD) — silence is UNMEASURED; --wait rides out indexing (≤2 min)',
       cmd: `${TSX} src/arrival/index.ts`,
     },
+    release: {
+      desc: 'Release HEAD when the forge agreed (CI green + deployed), content changed, first today — --dry-run asks',
+      cmd: `${TSX} src/arrival/index.ts --release`,
+    },
   },
   monitor: {
     default: { desc: 'Watch violations loop', cmd: `${TSX} src/monitor/violations/index.ts --watch` },

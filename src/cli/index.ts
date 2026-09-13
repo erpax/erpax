@@ -196,8 +196,8 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
   // land pushes through the pre-push hook — the same `git push` a person runs unladdered — and bounds its own
   // push rounds and its forge wait. Through runShell, the ladder killed the wrapper at five minutes mid-push
   // and the child kept pushing, unseen (2026-09-13). The command itself stays in the registry: one source.
-  if (rawDomain === 'land' && !action) {
-    const land = resolveAction('land')
+  if (rawDomain === 'land' && (!action || action === 'release')) {
+    const land = resolveAction('land', action)
     if (!land) return 1
     return spawnSync([land.cmd, ...rest.map((a) => JSON.stringify(a))].join(' '), { shell: true, stdio: 'inherit' }).status ?? 1
   }

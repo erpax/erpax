@@ -100,6 +100,19 @@ The other is *behind the shared tree*: git spells it two ways — `(fetch first)
 forces**: no `--force`, no `--no-verify`, and a merge that conflicts aborts itself and leaves the tree as
 it was found.
 
+## Release after a green landing
+
+`pnpm erpax land release` releases HEAD when all four hold: the forge agreed (CI green and the Cloudflare
+build deployed), HEAD is exactly `origin/main`, the release planner says the content changed, and no corpus
+release was cut today. It then writes the version, commits the three stamp files by path, tags, and pushes
+main and the tag in one push; the tag fires the publish workflow, whose GitHub Release mints the Zenodo DOI.
+`--dry-run` asks the same question and writes nothing.
+
+One release a UTC day is **declared**: every release mints a DOI, a DOI is permanent, and erpax lands many
+times a day. The release runs from the landing lane because the `main` ruleset lets only organisation admins
+update branches: a workflow's own token cannot push the release commit, and loosening that is a security
+setting, not code.
+
 **Honest boundary.** This proves what the forge **reported** for one sha, never that the workflows test
 the right things — a green verdict over a vacuous suite is still green ([[rules]]/mirror). It judges only
 what arrived: a required check that never posted is invisible to it. Polling is bounded, so a run slower

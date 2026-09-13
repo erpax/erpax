@@ -5,6 +5,7 @@ import {
   isUnknownCommit,
   jsonLines,
   pushVerdict,
+  releaseDecision,
   repoSlugOf,
   runRowOf,
   type CheckRow,
@@ -205,6 +206,45 @@ describe('arrival — reading the forge', () => {
     expect(isUnknownCommit('gh: Not Found (HTTP 404)')).toBe(true)
     expect(isUnknownCommit('gh: authentication required (HTTP 401)')).toBe(false)
     expect(isUnknownCommit('gh: command not found')).toBe(false)
+  })
+})
+
+describe('arrival — release after a green landing', () => {
+  const ok = pushVerdict(SHA, [row('CI', 'completed', 'success')])
+  const base = {
+    verdict: ok,
+    headIsTheVerifiedTip: true,
+    contentChanged: true,
+    lastRelease: { tag: 'v1.0.5', day: '2026-09-05' },
+    today: '2026-09-13',
+  }
+
+  it('releases a tip the forge agreed on, with new content, first today', () => {
+    expect(releaseDecision(base).release).toBe(true)
+  })
+
+  it('refuses while the forge has not agreed — and says what it said', () => {
+    const d = releaseDecision({ ...base, verdict: pushVerdict(SHA, []) })
+    expect(d.release).toBe(false)
+    expect(d.why).toMatch(/forge has not agreed.*UNMEASURED/)
+  })
+
+  it('refuses when HEAD is not the tip the forge judged', () => {
+    expect(releaseDecision({ ...base, headIsTheVerifiedTip: false }).why).toMatch(/HEAD is not origin\/main/)
+  })
+
+  it('refuses when the content is already released', () => {
+    expect(releaseDecision({ ...base, contentChanged: false }).why).toMatch(/already released as v1\.0\.5/)
+  })
+
+  it('refuses a second release the same UTC day — a DOI is permanent', () => {
+    const d = releaseDecision({ ...base, lastRelease: { tag: 'v1.0.6', day: '2026-09-13' } })
+    expect(d.release).toBe(false)
+    expect(d.why).toMatch(/already released today \(v1\.0\.6\)/)
+  })
+
+  it('a first-ever release has no prior day to collide with', () => {
+    expect(releaseDecision({ ...base, lastRelease: null }).release).toBe(true)
   })
 })
 
