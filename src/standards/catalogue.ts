@@ -8510,112 +8510,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "UBL-2.1",
-    "family": "un",
-    "title": "Universal Business Language",
-    "uuid": "91f2143b-c905-8e7e-8b7f-ccc48a2fd117",
-    "color": "hsl(282 75% 49%)",
-    "count": 45,
-    "modules": [
-      {
-        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/balance/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/cases/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/cmspage/hooks/beforeChange.ts",
-        "section": ""
-      },
-      {
-        "path": "src/connections/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/conservation/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/convention/exported/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/convention/import/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/convention/link/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/convention/shallow/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/country/client/bg-pades-signer.ts",
-        "section": ""
-      },
-      {
-        "path": "src/customers/sales/orders/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/decompression/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/dual/torus/fusion/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/entry/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/entry/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/export/standards/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/google/workspace/fusion-transforms.ts",
-        "section": ""
-      },
-      {
-        "path": "src/humandesign/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/incoterms/2020/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/invoices/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/lot/variants/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "ISO-9735",
     "family": "un",
     "title": "UN/EDIFACT syntax rules",
@@ -8755,6 +8649,56 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/vocabulary/manufacturing/seed/standards/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "UBL-2.1",
+    "family": "un",
+    "title": "Universal Business Language",
+    "uuid": "91f2143b-c905-8e7e-8b7f-ccc48a2fd117",
+    "color": "hsl(282 75% 49%)",
+    "count": 11,
+    "modules": [
+      {
+        "path": "src/bulk/op/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/bulk/op/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/connections/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/customers/sales/orders/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/standards/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/invoices/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/peppol/bis/3/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/peppol/bis/3/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/peppol/export/service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/peppol/import/service/index.ts",
         "section": ""
       }
     ]
@@ -9472,112 +9416,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "W3C-PROV-O",
-    "family": "w3c",
-    "title": "Provenance Ontology",
-    "uuid": "aab6453e-ed17-8541-a227-c83eb24632af",
-    "color": "hsl(142 89% 52%)",
-    "count": 28,
-    "modules": [
-      {
-        "path": "src/beyond/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/provenance/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/provenance/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/cloning/genome/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/cloning/publish/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/cost/bits/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/financial/statements/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/financial/statements/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/gl/accounts/account/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/gl/accounts/account/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/google/workspace/registry/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/journal/entries/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/journal/entries/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/prime/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/rosetta/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/self/closure/provider/signing.ts",
-        "section": "§3.11"
-      },
-      {
-        "path": "src/shared/SKILL.md",
-        "section": "§5.15"
-      },
-      {
-        "path": "src/tamper/cost/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/vendors/vendor/quotes/SKILL.md",
-        "section": "§8.4"
-      },
-      {
-        "path": "src/vendors/vendor/quotes/index.ts",
-        "section": "§8.4"
-      },
-      {
-        "path": "src/vendors/vendor/scorecards/SKILL.md",
-        "section": "§8.4"
-      }
-    ]
-  },
-  {
     "id": "ECMA-402",
     "family": "w3c",
     "title": "ECMAScript Internationalization API",
@@ -9871,7 +9709,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Decentralized Identifiers",
     "uuid": "23ae3478-a989-847b-889c-313d841dc631",
     "color": "hsl(134 72% 38%)",
-    "count": 10,
+    "count": 9,
     "modules": [
       {
         "path": "src/agents/mcp/tool/governance.ts",
@@ -9890,10 +9728,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/land/index.ts",
-        "section": "§6.4"
-      },
-      {
         "path": "src/tenant/roles/profile/country.ts",
         "section": ""
       },
@@ -9907,6 +9741,44 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/voting/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "W3C-PROV-O",
+    "family": "w3c",
+    "title": "Provenance Ontology",
+    "uuid": "aab6453e-ed17-8541-a227-c83eb24632af",
+    "color": "hsl(142 89% 52%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/beyond/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/provenance/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/provenance/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cloning/genome/index.ts",
         "section": ""
       }
     ]
@@ -9965,22 +9837,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Accessible Rich Internet Applications",
     "uuid": "a46dba6c-64b6-81af-b328-04d4369fa69b",
     "color": "hsl(333 66% 50%)",
-    "count": 63,
+    "count": 33,
     "modules": [
       {
         "path": "src/admin/bar/index.tsx",
         "section": ""
       },
       {
-        "path": "src/agents/mcp/tool/format.ts",
-        "section": "§5.8"
-      },
-      {
         "path": "src/agents/registered/design.agent.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/test.ts",
         "section": ""
       },
       {
@@ -10061,6 +9925,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/chains/provision/lifecycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/record/to/report/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/resource/booking/cycle/page.tsx",
         "section": ""
       }
     ]

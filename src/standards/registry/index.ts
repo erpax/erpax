@@ -146,7 +146,7 @@ const CURATED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
   // — Trade documents & e-invoicing —
   { id: 'EN-16931', family: 'en', title: 'Semantic model of the electronic invoice', match: '16931' },
   { id: 'Peppol-BIS-3.0', family: 'eu', title: 'Peppol Billing BIS', match: 'Peppol' },
-  { id: 'UBL-2.1', family: 'un', title: 'Universal Business Language', match: 'UBL' },
+  { id: 'UBL-2.1', family: 'un', title: 'Universal Business Language', match: '\\bUBL\\b' },
   { id: 'ISO-9735', family: 'un', title: 'UN/EDIFACT syntax rules', match: 'EDIFACT|9735' },
   { id: 'UN-CEFACT', family: 'un', title: 'UN/CEFACT code lists', match: 'CEFACT' },
   { id: 'UNSPSC', family: 'un', title: 'UN Standard Products & Services Code' },
@@ -177,15 +177,15 @@ const CURATED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
   { id: 'W3C-JSON-LD-1.1', family: 'w3c', title: 'JSON for Linking Data', match: 'JSON-LD' },
   { id: 'schema.org', family: 'w3c', title: 'Linked-data type vocabulary', match: 'schema\\.org' },
   { id: 'W3C-VC-2.0', family: 'w3c', title: 'Verifiable Credentials Data Model', match: 'Verifiable.?Credential' },
-  { id: 'W3C-DID-1.0', family: 'w3c', title: 'Decentralized Identifiers', match: '\\bDID\\b|Decentralized.?Identifier' },
+  { id: 'W3C-DID-1.0', family: 'w3c', title: 'Decentralized Identifiers', match: '\\bdid:[a-z0-9]+:|Decentralized.?Identifier|\\bW3C[- ]DIDs?\\b|\\bDIDs?(?= (?:document|method|resolver|controller|subject|URL|URI|Core)s?\\b)' },
   { id: 'W3C-ActivityPub', family: 'w3c', title: 'Federated server-to-server protocol', match: 'ActivityPub' },
-  { id: 'W3C-PROV-O', family: 'w3c', title: 'Provenance Ontology', match: 'PROV-?O|PROV' },
+  { id: 'W3C-PROV-O', family: 'w3c', title: 'Provenance Ontology', match: '\\bPROV(?:-?O)?\\b' },
   { id: 'ECMA-262', family: 'w3c', title: 'ECMAScript language specification', match: 'ECMA-?262|ECMAScript' },
   { id: 'RFC-7231', family: 'rfc', title: 'HTTP/1.1 semantics', match: '7231' },
 
   // — Accessibility & document formats —
   { id: 'WCAG-2.1', family: 'wcag', title: 'Web Content Accessibility Guidelines', match: 'WCAG' },
-  { id: 'W3C-WAI-ARIA-1.2', family: 'wcag', title: 'Accessible Rich Internet Applications', match: 'WAI-ARIA|ARIA' },
+  { id: 'W3C-WAI-ARIA-1.2', family: 'wcag', title: 'Accessible Rich Internet Applications', match: '\\bWAI-ARIA\\b|\\bARIA\\b' },
   { id: 'ISO-32000', family: 'iso', title: 'PDF — Portable Document Format', match: '32000' },
   { id: 'ISO-19005', family: 'iso', title: 'PDF/A archival format', match: '19005' },
   { id: 'ISO-14289-1', family: 'iso', title: 'PDF/UA universally accessible PDF', match: '14289' },

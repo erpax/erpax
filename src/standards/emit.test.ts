@@ -170,6 +170,34 @@ describe('matcherFor — a compliance catalogue must not over-report coverage', 
     expect(re('EN-16931', 'en').test('@standard EN 16931 §BT-151')).toBe(true)
     expect(re('ISO-27002', 'iso').test('@standard ISO 27002 8.24')).toBe(true)
   })
+
+  // THE FOLD. Every registry pattern compiles case-insensitively, which a bare acronym cannot survive: "UBL"
+  // matched double-entry, "PROV" matched Prover, "ARIA" matched invariant, and \bDID\b matched the word "did".
+  // Measured over 6,097 parsed banner citations: 84 false tags, and 0 real citations lost by the bounded patterns.
+  const reg = (id: string) => matcherFor(STANDARDS_REGISTRY.find((s) => s.id === id)!)
+
+  it('a bare acronym does not match the English words that contain it', () => {
+    expect(reg('UBL-2.1').test('double-entry bookkeeping (Pacioli, 1494) — every credit a debit')).toBe(false)
+    expect(reg('UBL-2.1').test('UN-COFOG-03 public-order-and-safety law-courts')).toBe(false)
+    expect(reg('UBL-2.1').test('ISO-8601-1:2019 date-time published-at')).toBe(false)
+    expect(reg('W3C-PROV-O').test('DeepSeek-Prover-V2 — recursive, kernel-checked invariants')).toBe(false)
+    expect(reg('W3C-PROV-O').test('NIST FIPS 204 ML-DSA (when sign fn provided)')).toBe(false)
+    expect(reg('W3C-WAI-ARIA-1.2').test('RFC 9562 §5.8 uuidv8 + RFC 9562 §4.1 variant')).toBe(false)
+    expect(reg('W3C-WAI-ARIA-1.2').test('ISO/IEC-29119:2022 software testing (computed invariants)')).toBe(false)
+    expect(reg('W3C-DID-1.0').test('ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none')).toBe(false)
+  })
+
+  it('and still matches the citations the corpus actually writes', () => {
+    expect(reg('UBL-2.1').test('UBL 2.1 Invoice')).toBe(true)
+    expect(reg('W3C-PROV-O').test('W3C PROV-O provenance')).toBe(true)
+    expect(reg('W3C-WAI-ARIA-1.2').test('WAI-ARIA 1.2 roles')).toBe(true)
+    expect(reg('W3C-WAI-ARIA-1.2').test('every control carries aria-label')).toBe(true)
+    expect(reg('W3C-DID-1.0').test('W3C DID Core 1.0 + W3C VC Data Model')).toBe(true)
+    expect(reg('W3C-DID-1.0').test('resolves did:web:erpax.com')).toBe(true)
+    expect(reg('W3C-DID-1.0').test('the voter DID document')).toBe(true)
+    // case-folding stays right for rows whose real citations are lowercase or snake case
+    expect(reg('Peppol-BIS-3.0').test('PEPPOL_DIRECTORY lookup')).toBe(true)
+  })
 })
 
 describe('jurisdiction — the tax-residence join', () => {
