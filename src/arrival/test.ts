@@ -215,6 +215,21 @@ describe('arrival — the taught cure', () => {
     expect(cureFor('hint: the tip of your current branch is behind')?.name).toBe('behind the shared tree')
   })
 
+  // The real line the hook printed on 2026-09-13, and the spelling it prints since the remedy was corrected.
+  it('a stale standards index is recognised in the line the hook really prints', () => {
+    expect(cureFor('ERROR: docs/STANDARDS_INDEX.md is stale. Run: pnpm standards:write-index')?.name).toBe('stale standards index')
+    expect(cureFor('ERROR: docs/STANDARDS_INDEX.md is stale. Run: bash scripts/standards-citation-index.sh --write-index')?.name).toBe(
+      'stale standards index',
+    )
+    expect(cureFor('ERROR: docs/STANDARDS_INDEX.md does not exist. Run: …')?.name).toBe('stale standards index')
+  })
+
+  it('the index cure commits only the index, by path', () => {
+    const cmd = cureFor('docs/STANDARDS_INDEX.md is stale')!.cmd
+    expect(cmd).toMatch(/-- docs\/STANDARDS_INDEX\.md$/)
+    expect(cmd).not.toMatch(/git add -A|git add \.|--no-verify|--force/)
+  })
+
   it('a hook denial has no taught cure — it stops for a human', () => {
     expect(cureFor('✖ folder law: 1 violation\nerror: failed to push some refs')).toBeUndefined()
   })

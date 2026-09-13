@@ -283,6 +283,17 @@ export interface Cure {
 
 // Module-private for the same reason: cureFor is the face, the table is its body.
 const CURES: readonly Cure[] = [
+  // The index is derived from the banners, so a stale one is regenerated, never argued with. Taught from the
+  // push it blocked (2026-09-13): the pre-commit hook had stamped it from a working-tree edit never committed.
+  // Keyed on the stable half of the line — the remedy text after "Run:" has changed spelling once already.
+  // Only the index is committed, by path; if nothing changed, the commit fails and a human decides.
+  {
+    name: 'stale standards index',
+    when: /docs\/STANDARDS_INDEX\.md (?:is stale|does not exist)/,
+    cmd:
+      'bash scripts/standards-citation-index.sh --write-index && git add -f docs/STANDARDS_INDEX.md && ' +
+      'git commit -m "chore(standards): regenerate the index — the landing lane\'s taught cure" -- docs/STANDARDS_INDEX.md',
+  },
   // Git spells "behind" two ways, and a cure matching one misses the case that fires. It INTEGRATES, never
   // forces: a merge that conflicts aborts itself and leaves the tree exactly as it was found.
   {

@@ -90,7 +90,12 @@ The push lane runs **outside** the ladder, like the test waves, because its long
 — the same `git push` a person runs unladdered. Its first live run went through the ladder, which killed the
 wrapper at five minutes while the child kept pushing, unseen, and reported nothing (2026-09-13).
 
-The one taught cure is *behind the shared tree*: git spells it two ways — `(fetch first)` and
+Two cures are taught. *Stale standards index* regenerates `docs/STANDARDS_INDEX.md` from the banners and
+commits that one file by path — the index is derived, so a stale one is regenerated, never argued with. It
+was taught from the push it blocked, and keys on the stable half of the hook's line, because the remedy text
+after "Run:" has already changed spelling once.
+
+The other is *behind the shared tree*: git spells it two ways — `(fetch first)` and
 `(non-fast-forward)` — and a cure matching only one misses the case that fires. It **integrates, never
 forces**: no `--force`, no `--no-verify`, and a merge that conflicts aborts itself and leaves the tree as
 it was found.
