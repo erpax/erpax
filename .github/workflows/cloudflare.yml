@@ -1,20 +1,23 @@
-# Cloudflare Workers deploy (OpenNext) — minimum wall-clock.
+# Cloudflare — verify what is live, with no secret on the path.
 #
-# Critical path: secrets gate → install+stub → migrate ∥ playwright cache → lean Next
-# (build:next, no typegen) → OpenNext pack → deploy → UI smoke.
+# NO SECRET SHOULD STOP DEPLOYMENT (owner, 2026-09-13). The Worker is deployed by Cloudflare's git-connected
+# build (`Workers Builds: erpax`): it builds every push inside Cloudflare with the Worker's own stored secret
+# and needs nothing from GitHub. This workflow used to deploy as well — behind CLOUDFLARE_API_TOKEN and
+# PAYLOAD_SECRET — and it never once did: every run failed at its first step because the secrets were absent,
+# while the other path shipped every push. Two deployers racing, one of them blocked by a secret.
 #
-# Types/importmap stay committed; CI `payload verify-types` is the freshness gate.
-# Full 80MB skill emit is local-only (stub here for the 3MB Worker limit).
+# So it no longer deploys. After a green CI it runs the gates that need no secret — the offline contract gate
+# and the Payload boot gate — and smokes the LIVE site. The Worker's 10 MiB ceiling is enforced where the build
+# happens: an oversized Worker fails the Cloudflare build, and `pnpm erpax land verdict` judges that build.
 #
-# Secrets: CLOUDFLARE_API_TOKEN · PAYLOAD_SECRET
-# Vars:    STAGING_URL (default https://erpax.ceci.workers.dev when unset / unparsed)
+# Honest boundary: the smoke checks whatever is live, which Cloudflare may have built from a newer push than
+# the CI run that triggered this job. The landing verdict (src/arrival), not this workflow, ties a deploy to
+# its commit.
 name: Cloudflare
 
 on:
-  # DEPLOY WAITS FOR CI. Both used to trigger on `push: main` independently, so they
-  # RACED: a commit whose tests were failing still deployed, because nothing connected
-  # them. workflow_run fires only when CI has finished, and the guard below refuses
-  # anything but a green conclusion.
+  # After CI, never beside it: workflow_run fires only once CI has finished, and the guard below admits only
+  # a green conclusion.
   workflow_run:
     workflows: ['CI']
     types: [completed]
@@ -25,46 +28,37 @@ concurrency:
   group: cloudflare-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
-  deploy:
-    name: Deploy + UI smoke
+  verify:
+    name: Live verification (no secrets)
     runs-on: ubuntu-latest
-    # Green-only. A manual dispatch is still allowed; a CI run that did not succeed
-    # never reaches the deploy step.
     if: >-
       github.event_name == 'workflow_dispatch' ||
       github.event.workflow_run.conclusion == 'success'
-    timeout-minutes: 45
+    timeout-minutes: 20
     env:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      PAYLOAD_SECRET: ${{ secrets.PAYLOAD_SECRET }}
-      NODE_ENV: production
-      PAYLOAD_BUILD_USE_REMOTE_D1: 'true'
+      LIVE_URL: ${{ vars.STAGING_URL || 'https://erpax.ceci.workers.dev' }}
     steps:
       - uses: actions/checkout@v4
         with:
-          # The exact commit CI verified — NOT whatever main points at now. Without
-          # this, a push landing during the CI run would deploy code nothing tested.
+          # the exact commit CI verified — not whatever main points at now
           ref: ${{ github.event.workflow_run.head_sha || github.ref }}
-
-      # Fail before pnpm install when secrets are missing (saves minutes on every red run).
-      - name: Require Cloudflare secrets
-        run: |
-          missing=
-          [ -n "$CLOUDFLARE_API_TOKEN" ] || missing="$missing CLOUDFLARE_API_TOKEN"
-          [ -n "$PAYLOAD_SECRET" ] || missing="$missing PAYLOAD_SECRET"
-          if [ -n "$missing" ]; then
-            echo "✖ Missing GitHub Actions secrets:$missing"
-            echo "  Repo → Settings → Secrets and variables → Actions"
-            echo "  Add CLOUDFLARE_API_TOKEN (Workers edit) + PAYLOAD_SECRET"
-            exit 1
-          fi
 
       - name: Setup erpax
         uses: ./.github/actions/setup
         with:
           skill-index: stub
           ripgrep: 'false'
+
+      # Both are deterministic and read no secret: they cannot flake on someone else's uptime.
+      - name: Contract gate — erpax parses what the external rails send
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/outward/gate/index.ts
+
+      - name: Boot gate — the Payload config loads
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
 
       - name: Cache Playwright Chromium
         id: pw-cache
@@ -73,7 +67,6 @@ jobs:
           path: ~/.cache/ms-playwright
           key: pw-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-chromium-1.60.0
 
-      # Install browsers before the long OpenNext build (cache hit ≈ free; cold overlaps migrate).
       - name: Install Playwright Chromium
         if: steps.pw-cache.outputs.cache-hit != 'true'
         run: pnpm exec playwright install chromium --with-deps
@@ -82,54 +75,9 @@ jobs:
         if: steps.pw-cache.outputs.cache-hit == 'true'
         run: pnpm exec playwright install chromium
 
-      # The offline half of the outward contracts + the boot gate. Both are
-      # deterministic and cannot flake on someone else's uptime, so they belong in
-      # front of a deploy rather than after it.
-      - name: Contract gate — erpax parses what the external rails send
-        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/outward/gate/index.ts
-
-      - name: Boot gate — the Payload config loads
-        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
-
-      # MIGRATE AFTER THE BUILD COMPILES. This ran first, so a build that failed left
-      # the PRODUCTION database already migrated for a Worker that never shipped —
-      # schema ahead of code, and nothing to roll it back.
-      - name: Build (OpenNext → Workers, lean next build)
-        run: pnpm exec opennextjs-cloudflare build
-
-      # PACK AND WEIGH BEFORE ANYTHING IRREVERSIBLE. A Turbopack build bundled every production
-      # fold — 23.4 MB gz against the 10 MiB ceiling — while the config check read green. Pack
-      # exactly what wrangler would upload, then read it: the ceiling, and each fold's own content
-      # in the server bundle (src/deploy/fold). Before the migration, so a Worker that cannot ship
-      # never leaves production migrated for it.
-      - name: Weigh the packed Worker (folds + 10 MiB ceiling)
-        run: |
-          pnpm exec wrangler deploy --dry-run --outdir .open-next/packed
-          pnpm erpax deploy fold
-
-      - name: Migrate remote D1
-        run: pnpm erpax deploy db
-
-      - name: Deploy
-        id: deploy
-        run: |
-          set -o pipefail
-          pnpm exec opennextjs-cloudflare deploy 2>&1 | tee /tmp/cf-deploy.log
-          if [ -n "${{ vars.STAGING_URL }}" ]; then
-            BASE="${{ vars.STAGING_URL }}"
-          else
-            BASE="$(grep -oE 'https://[a-zA-Z0-9._/-]+\.(workers\.dev|erpax\.[a-z]+)' /tmp/cf-deploy.log | head -1 || true)"
-          fi
-          if [ -z "$BASE" ]; then
-            BASE="https://erpax.ceci.workers.dev"
-            echo "No URL in deploy log — falling back to $BASE"
-          fi
-          echo "base=$BASE" >> "$GITHUB_OUTPUT"
-          echo "UI smoke target: $BASE"
-
-      - name: UI smoke against deployed Worker
+      - name: UI smoke against the live Worker
         env:
-          PLAYWRIGHT_BASE_URL: ${{ steps.deploy.outputs.base }}
+          PLAYWRIGHT_BASE_URL: ${{ env.LIVE_URL }}
           SKIP_E2E_WEBSERVER: '1'
         run: pnpm erpax test e2e-smoke
 
