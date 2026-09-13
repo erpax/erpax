@@ -3,13 +3,13 @@ name: group
 description: Use when reasoning about a group of links.
 atomPath: "link/group"
 coordinate: "link/group · 5/round · ad7543de"
-contentUuid: "edec8102-385d-53ed-b3a0-9eb4bbc09580"
+contentUuid: "9ff8ec36-5e05-5e9e-a1ca-2003fb8a1f54"
 diamondUuid: "a0784103-bfd5-8ee2-9aa6-8e00291d0763"
 uuid: "ad7543de-67c7-8090-9032-0b94dfc5ba05"
 horo: 5
 typography:
   partition: link
-  bondDegree: 45
+  bondDegree: 49
 standards:
   - "3986 uniform-resource-identifier"
   - "W3C HTML5 nav-element"

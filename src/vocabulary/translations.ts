@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution.",
-    "uuid": "3022085a-f0e2-81f4-a7fe-93c4e8ffae18",
+    "uuid": "d0706540-06e3-87a8-ae03-9864525d754f",
     "words": [
       "use",
       "when",

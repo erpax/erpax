@@ -1349,6 +1349,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "threat",
   "throat",
   "timeout",
+  "timeout/group",
   "topology",
   "torus",
   "trading",
@@ -1488,7 +1489,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1481 as const
+export const ATOM_LEDGER_PATH_COUNT = 1482 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -6443,6 +6444,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "timeout": [
     "timeout"
   ],
+  "timeout/group": [
+    "timeout",
+    "timeout/group"
+  ],
   "topology": [
     "topology"
   ],
@@ -6938,4 +6943,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 842 as const
+export const MERGED_NESTED_PATH_COUNT = 843 as const

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing Phase B4: Intercompany Fiscal Alignment — Standards & Implementation.",
-    "uuid": "3daa1784-b858-8026-9da3-d53f81b7484a",
+    "uuid": "137b68f7-3aed-87cc-84fc-ad52c90b2a7b",
     "words": [
       "use",
       "when",

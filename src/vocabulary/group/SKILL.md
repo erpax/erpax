@@ -3,13 +3,13 @@ name: group
 description: "Use when reasoning about group as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/group"
 coordinate: "vocabulary/group · 4/weave · d968286b"
-contentUuid: "500b3b7e-5174-592f-9176-e7230f67fdd5"
+contentUuid: "828d5c12-0f2a-5b2e-9d8a-e955aab81fff"
 diamondUuid: "7b8ea787-6edd-8067-96e3-dc1b154aa720"
 uuid: "d968286b-1138-8ed2-a9ad-03a04cea4b0d"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 45
+  bondDegree: 49
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

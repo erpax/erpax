@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when automating commit and push — the local agent that performs the git action, but ONLY through the computed decision (decide), trained on quantum security (tamper · quantum) and the standards, fail-closed, with a tamper-evident uuid-chained receipt. It pushes because the gates said yes, never because it was told to.",
-    "uuid": "c53b585b-764c-8534-a17b-0459dd20a475",
+    "uuid": "cfee4431-adff-8b68-a256-5c891660e29f",
     "words": [
       "use",
       "when",

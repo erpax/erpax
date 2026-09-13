@@ -9893,6 +9893,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "timeout"
   },
   {
+    "atom": "group",
+    "name": "group",
+    "description": "Use when a laddered command must end as a whole — spawnSync's timeout kills only the shell it started, so the command under it is reparented to init and keeps running. spawnGroupSync runs the command as the leader of its own process group under a tiny supervisor that kills the whole group on timeout or on Ctrl-C, then dies by the same signal, so every verdict that reads r.signal is unchanged.",
+    "path": "timeout/group"
+  },
+  {
     "atom": "timestamp",
     "name": "timestamp",
     "description": "Use when reasoning about timestamp — The instant the event occured.",
