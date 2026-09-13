@@ -108,6 +108,11 @@ release was cut today. It then writes the version, commits the three stamp files
 main and the tag in one push; the tag fires the publish workflow, whose GitHub Release mints the Zenodo DOI.
 `--dry-run` asks the same question and writes nothing.
 
+The decision is not a judgement typed into code. `src/verify/lean/Release.lean` defines it as the
+conjunction of the four facts and proves each refusal — and that the green path does release — by case
+analysis and `decide`, kernel-checked with no axiom. The TypeScript is its twin: the test checks it on all
+sixteen cases and reads the Lean file for every theorem it relies on.
+
 One release a UTC day is **declared**: every release mints a DOI, a DOI is permanent, and erpax lands many
 times a day. The release runs from the landing lane because the `main` ruleset lets only organisation admins
 update branches: a workflow's own token cannot push the release commit, and loosening that is a security

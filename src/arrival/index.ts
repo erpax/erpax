@@ -328,6 +328,11 @@ export interface ReleaseDecision {
 /**
  * releaseDecision(facts) — may this tip be released? Pure; every refusal names itself. ONE RELEASE A UTC DAY is
  * DECLARED, in the open: each release mints a DOI, a DOI is permanent, and erpax lands many times a day.
+ *
+ * THE LEAN TWIN: src/verify/lean/Release.lean defines the decision as the conjunction of the four facts and
+ * proves every refusal below by case analysis and `decide` — kernel-checked, axiom-free. This function is that
+ * conjunction; test.ts checks it on all sixteen cases and READS the Lean file for every theorem it relies on.
+ * @see ../verify/lean/Release.lean
  */
 export function releaseDecision(f: ReleaseFacts): ReleaseDecision {
   if (!f.verdict.ok) return { release: false, why: `the forge has not agreed — ${f.verdict.reason}` }

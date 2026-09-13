@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import {
   checkRowOf,
@@ -245,6 +247,32 @@ describe('arrival — release after a green landing', () => {
 
   it('a first-ever release has no prior day to collide with', () => {
     expect(releaseDecision({ ...base, lastRelease: null }).release).toBe(true)
+  })
+
+  // THE LEAN TWIN. src/verify/lean/Release.lean proves the decision is exactly agreed ∧ tip ∧ changed ∧ ¬today.
+  // The twin is checked against that conjunction on every one of the sixteen cases, and the Lean file — the
+  // arbiter — is READ, so a theorem the twin relies on cannot quietly disappear.
+  it('agrees with the Lean conjunction on all sixteen cases', () => {
+    const lean = (a: boolean, t: boolean, c: boolean, d: boolean): boolean => a && t && c && !d
+    for (const a of [false, true])
+      for (const t of [false, true])
+        for (const c of [false, true])
+          for (const d of [false, true]) {
+            const got = releaseDecision({
+              verdict: a ? ok : pushVerdict(SHA, []),
+              headIsTheVerifiedTip: t,
+              contentChanged: c,
+              lastRelease: d ? { tag: 'v1.0.6', day: '2026-09-13' } : { tag: 'v1.0.5', day: '2026-09-05' },
+              today: '2026-09-13',
+            })
+            expect(got.release, `agreed=${a} tip=${t} changed=${c} releasedToday=${d}`).toBe(lean(a, t, c, d))
+          }
+  })
+
+  it('the Lean file proves every refusal the twin makes', () => {
+    const lean = readFileSync(join(process.cwd(), 'src/verify/lean/Release.lean'), 'utf8')
+    for (const name of ['release_iff','no_release_without_the_forge','no_release_off_the_verified_tip','no_release_of_released_content','one_release_a_day','the_green_path_releases'])
+      expect(lean, `theorem ${name} missing from Release.lean`).toMatch(new RegExp(`^theorem ${name}\\b`, 'm'))
   })
 })
 
