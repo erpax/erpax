@@ -17,7 +17,7 @@ import { exactMax } from '@/algebra'
  */
 import { execSync, spawnSync } from 'node:child_process'
 import { createHash } from 'node:crypto'
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import {
   buildClosureHash,
@@ -494,5 +494,78 @@ export function runLintSrc(args: readonly string[] = []): number {
   }
   sealSuiteReceipt(LINT_RECEIPT, address, cwd)
   console.log(`✓ lint src — clean, sealed at ${address}`)
+  return 0
+}
+
+/** The OpenNext bundle receipt — the same content address as the build, one step further down. */
+const WORKER_RECEIPT = 'gate:deploy:opennext'
+
+/** What a deploy must still DO, given what is already sealed at this content address. */
+export type DeployStep = 'cite' | 'bundle' | 'build'
+
+/**
+ * The deploy plan — pure, so the reuse law is stated once and testable without a 20-minute build.
+ *
+ * `erpax test build` has cited its receipt since it was written, and the DEPLOY ignored it: the
+ * package script ran `opennextjs-cloudflare build` unconditionally, so a deploy re-derived bytes
+ * the same content address had already produced. Measured 2026-09-18: the Next phase is ~18 min of
+ * a ~19 min deploy, and it ran twice for one address in one afternoon.
+ *
+ *   cite    the bundle at this address exists and is sealed — upload it, build nothing
+ *   bundle  the Next output is sealed but the Worker is not — OpenNext packages with --skipNextBuild
+ *   build   the address is not sealed — the full build, exactly as before
+ *
+ * A receipt is only ever a claim about CONTENT; the artefacts must also still be on disk, which is
+ * why presence is an input rather than an assumption.
+ */
+export function deployPlan(f: {
+  readonly force: boolean
+  readonly workerSealed: boolean
+  readonly workerPresent: boolean
+  readonly nextSealed: boolean
+  readonly nextPresent: boolean
+}): DeployStep {
+  if (f.force) return 'build'
+  if (f.workerSealed && f.workerPresent) return 'cite'
+  if (f.nextSealed && f.nextPresent) return 'bundle'
+  return 'build'
+}
+
+/**
+ * `erpax deploy app` — build only what this content address has not built, then ship it TAGGED.
+ *
+ * Every Cloudflare git build deploys untagged, so a live version cannot be traced back to a commit
+ * by looking at it. This names the version with the sha it was built from.
+ */
+export function runDeployApp(args: readonly string[] = []): number {
+  const cwd = process.cwd()
+  const hash = buildClosureHash(cwd)
+  const step = deployPlan({
+    force: args.includes('--all'),
+    workerSealed: suiteReceiptFresh(WORKER_RECEIPT, hash, cwd),
+    workerPresent: existsSync(join(cwd, '.open-next', 'worker.js')),
+    nextSealed: suiteReceiptFresh(BUILD_RECEIPT, hash, cwd),
+    nextPresent: existsSync(join(cwd, '.next')),
+  })
+  const sha = execSync('git rev-parse --short HEAD', { cwd, encoding: 'utf8' }).trim()
+  const started = Date.now()
+
+  if (step !== 'cite') {
+    const skip = step === 'bundle' ? ' --skipNextBuild' : ''
+    console.log(`deploy — ${hash} needs the ${step === 'bundle' ? 'Worker bundle only' : 'full build'}`)
+    const b = spawnSync(`opennextjs-cloudflare build${skip}`, { shell: true, stdio: 'inherit', cwd, env: process.env })
+    if ((b.status ?? 1) !== 0) return b.status ?? 1
+    if (step === 'build') sealSuiteReceipt(BUILD_RECEIPT, hash, cwd)
+    const c = spawnSync('node scripts/cleanup-ui-assets.mjs', { shell: true, stdio: 'inherit', cwd, env: process.env })
+    if ((c.status ?? 1) !== 0) return c.status ?? 1
+    sealSuiteReceipt(WORKER_RECEIPT, hash, cwd)
+  } else {
+    console.log(`✓ deploy — cited at ${hash}: this exact content is already bundled; uploading it`)
+  }
+
+  // One token, never `--tag <v>`: open-next joins unknown flags into an UNQUOTED `sh -c`.
+  const d = spawnSync(`opennextjs-cloudflare deploy --tag=${sha}`, { shell: true, stdio: 'inherit', cwd, env: process.env })
+  if ((d.status ?? 1) !== 0) return d.status ?? 1
+  console.log(`✓ deploy — ${sha} live in ${Math.round((Date.now() - started) / 1000)}s (${step})`)
   return 0
 }

@@ -5,7 +5,7 @@ import { GATE_LANES } from './gate'
 import { CLI_REGISTRY, LEGACY_ALIASES, AURA_SCAN_PATH, resolveAction } from './registry'
 import { suggestNearestDomain, printHelp, DOMAIN_GROUPS } from './help'
 import { exactMaxOf, exactMinOf } from '@/algebra'
-import { shardIndexOf } from './local'
+import { deployPlan, shardIndexOf } from './local'
 import { collectDoctorReport, formatDoctorReport, runDoctorStalls } from './doctor'
 import { topFailedAxes, AXIS_FIX_HINTS, formatRulesFailureSummary } from './rules-check'
 import { runCli } from './index'
@@ -209,5 +209,35 @@ describe('test waves --shard — the roster is partitioned BY ADDRESS', () => {
     for (const s of roster) counts[shardIndexOf(s, 16) - 1]!++
     expect(exactMaxOf(counts)).toBeLessThan(roster.length / 3)
     expect(exactMinOf(counts)).toBeGreaterThan(0)
+  })
+})
+
+// THE DEPLOY FOLD. `erpax test build` has cited its receipt since it was written and the DEPLOY
+// ignored it — so one content address paid for two 18-minute Next builds in one afternoon
+// (2026-09-18). The plan is pure so the law is testable without a 20-minute build behind it.
+describe('cli — the deploy builds only what this address has not built', () => {
+  const sealed = { force: false, workerSealed: true, workerPresent: true, nextSealed: true, nextPresent: true }
+
+  it('cites the bundle when this exact content is already bundled', () => {
+    expect(deployPlan(sealed)).toBe('cite')
+  })
+
+  it('bundles without rebuilding Next when the Next output is sealed and the Worker is not', () => {
+    expect(deployPlan({ ...sealed, workerSealed: false })).toBe('bundle')
+    expect(deployPlan({ ...sealed, workerSealed: true, workerPresent: false })).toBe('bundle')
+  })
+
+  // A receipt is a claim about CONTENT, never about the filesystem. A sealed address whose artefacts
+  // were cleaned away must build, or the deploy would upload what is no longer there.
+  it('a sealed address with nothing on disk builds', () => {
+    expect(deployPlan({ ...sealed, workerPresent: false, nextPresent: false })).toBe('build')
+  })
+
+  it('an unsealed address builds, exactly as before the fold', () => {
+    expect(deployPlan({ ...sealed, workerSealed: false, nextSealed: false })).toBe('build')
+  })
+
+  it('--all voids every receipt, the same escape the waves have', () => {
+    expect(deployPlan({ ...sealed, force: true })).toBe('build')
   })
 })

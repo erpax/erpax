@@ -3,7 +3,7 @@
  */
 import { spawnSync } from 'node:child_process'
 import { runDoctor } from './doctor'
-import { runBuildGate, runLintSrc, runLocal, runTestWaves, runTypecheckWaves, runVerifyTypes } from './local'
+import { runBuildGate, runDeployApp, runLintSrc, runLocal, runTestWaves, runTypecheckWaves, runVerifyTypes } from './local'
 import { printHelp, printUnknownHint, suggestNearestAction } from './help'
 import { runGate, runGatePackages, runPayloadApproval, runShell } from './gate'
 import { runRulesCheck } from './rules-check'
@@ -211,6 +211,7 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
     if (resolved.cmd === '__gate__') return runGate([...acts.slice(1), ...rest])
     if (resolved.cmd === '__gate_packages__') return runGatePackages([...acts.slice(1), ...rest])
     if (resolved.cmd === '__payload_approve__') return runPayloadApproval()
+    if (resolved.cmd === '__deploy_app__') return runDeployApp([...acts.slice(1), ...rest])
     if (resolved.cmd === '__rules_check__') return runRulesCheck()
     return runShell(resolved.cmd, [...acts.slice(1), ...rest], `erpax ${domain}${acts[0] ? ' ' + acts[0] : ''}`)
   }
@@ -230,6 +231,7 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
   if (resolved.cmd === '__gate__') return runGate(rest)
   if (resolved.cmd === '__gate_packages__') return runGatePackages(rest)
   if (resolved.cmd === '__payload_approve__') return runPayloadApproval()
+  if (resolved.cmd === '__deploy_app__') return runDeployApp(rest)
   if (resolved.cmd === '__rules_check__') return runRulesCheck()
   // Every command carries a stable label so it earns its computed rung from its OWN history
   // (samplesMsOf → timeoutOf) and shows a progress heartbeat — the same self-pacing the gate
