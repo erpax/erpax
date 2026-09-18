@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import * as m from '@/uuid/format'
-import { decodeStructured, encodeStructured } from '@/uuid/format'
+import { decodeStructured, encodeStructured, type SlotTag } from '@/uuid/format'
 
 describe('uuid/format', () => {
   it('the atom exports real matter — the stub test asserts existence, the SKILL states the law', () => {
@@ -15,9 +15,9 @@ describe('uuid/format', () => {
 // bits round-trip in BOTH directions. Here the same claims are checked against the real encoder, and the
 // Lean file — the arbiter — is READ, so a theorem the twin relies on cannot quietly disappear.
 describe('uuid/format — the layout is the Lean partition', () => {
-  const grid = (): Array<{ slotTag: number; capabilities: number; schemaVersion: number }> => {
-    const out: Array<{ slotTag: number; capabilities: number; schemaVersion: number }> = []
-    for (const slotTag of [0, 1, 7, 15])
+  const grid = (): Array<{ slotTag: SlotTag; capabilities: number; schemaVersion: number }> => {
+    const out: Array<{ slotTag: SlotTag; capabilities: number; schemaVersion: number }> = []
+    for (const slotTag of [0x0, 0x1, 0x7, 0xf] as const)
       for (const capabilities of [0, 1, 0b10101010, 0xff])
         for (const schemaVersion of [0, 1, 15]) out.push({ slotTag, capabilities, schemaVersion })
     return out
@@ -53,7 +53,7 @@ describe('uuid/format — the layout is the Lean partition', () => {
   // the_decode_loses_nothing — the asymmetric converse, checked where the twin can check it: two contents
   // differing anywhere produce different ids, so no decode collapses two messages onto one word.
   it('the decode loses nothing: a different content is a different id', () => {
-    const base = { slotTag: 3, capabilities: 5, schemaVersion: 2, tenantId: 't1' }
+    const base = { slotTag: 0x3 as SlotTag, capabilities: 5, schemaVersion: 2, tenantId: 't1' }
     const a = encodeStructured({ ...base, content: { a: 1 } })
     const b = encodeStructured({ ...base, content: { a: 2 } })
     expect(a).not.toBe(b)
