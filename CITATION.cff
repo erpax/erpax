@@ -28,7 +28,7 @@ license-url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 contact:
   - email: "license@erpax.com"
     name: "erpax licensing"
-version: 1.0.5
+version: 1.0.6
 keywords:
   - ERP
   - content-addressing
