@@ -126,5 +126,3 @@ export function findAgentsWithoutCapability(agents: ReadonlyArray<DomainAgent>):
 export function listAgentCapabilities(): ReadonlyMap<AgentId, AgentCapability> {
   return CAPABILITIES
 }
-
-export function __resetCapabilities(): void { CAPABILITIES.clear() }

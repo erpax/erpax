@@ -230,11 +230,6 @@ export function citationDecoherence(cwd: string = process.cwd()): {
  */
 const catalogueMemo = new Map<string, { entries: CatalogueEntry[]; totalHits: number; matched: number }>()
 
-/** Forget the catalogue memo — for a caller that changes src and rebuilds in one process. */
-export const clearCatalogueMemo = (): void => {
-  catalogueMemo.clear()
-}
-
 export function buildStandardsCatalogue(cwd: string = process.cwd()): {
   entries: CatalogueEntry[]
   totalHits: number

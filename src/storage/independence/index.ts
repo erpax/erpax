@@ -150,8 +150,6 @@ export function memoryPut(collection: string, obj: Record<string, unknown> & { u
   MEMORY.set(`${collection}:${obj.uuid}`, obj)
 }
 
-export function memoryClear(): void { MEMORY.clear() }
-
 // Auto-register memory backend at module load.
 registerBackend(MEMORY_BACKEND)
 

@@ -110,9 +110,6 @@ export function isClosingWave(w: Wave): boolean {
   return isHoroStep(w.step) && w.step === UNITY
 }
 
-/** The live entropy slack a wave's exhale borrows (the same number quantum/entropy report). */
-export const waveEntropy = (): number => entropy()
-
 /** The dual of `wave` as folded from the corpus — the collide/inhale pole it will later discharge into. */
 export const collideOf = (): string[] => dualOf('wave')
 

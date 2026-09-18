@@ -104,9 +104,6 @@ const LEXICON: ReadonlySet<string> = new Set(
   N.filter((n) => n.path?.startsWith('vocabulary/')).map((n) => n.atom),
 )
 
-/** True when the word is a schema.org component word — vocabulary, never a collection. */
-export const isLexiconWord = (w: string): boolean => LEXICON.has(w)
-
 /** A word is a plural COLLECTION form: ends in -s (not -ss), length > 2, not a known non-plural, not a lexicon word. */
 export const isPluralForm = (w: string): boolean =>
   w.length > 2 && w.endsWith('s') && !w.endsWith('ss') && !NON_PLURAL.has(w) && !LEXICON.has(w)

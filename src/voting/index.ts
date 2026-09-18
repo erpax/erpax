@@ -185,7 +185,6 @@ export function castVote(args: CastVoteArgs): CastVoteResult {
   return { ok: true, vote }
 }
 
-export function getVote(uuid: string): Vote | undefined { return VOTES.get(uuid) }
 export function listVotes(ballotUuid: string): ReadonlyArray<Vote> {
   return [...VOTES.values()].filter((v) => v.ballotUuid === ballotUuid)
 }
@@ -223,10 +222,6 @@ export function computeAggregate(ballotUuid: string, closedAt?: string): VoteAgg
   const aggregate: VoteAggregate = { ...aggBody, uuid }
   AGGREGATES.set(ballotUuid, aggregate)
   return aggregate
-}
-
-export function getAggregate(ballotUuid: string): VoteAggregate | undefined {
-  return AGGREGATES.get(ballotUuid)
 }
 
 export interface AggregateVerification {

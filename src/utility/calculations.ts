@@ -318,17 +318,3 @@ export const calculateROA = (netIncome: number, totalAssets: number): number => 
 export const calculateROE = (netIncome: number, totalEquity: number): number => {
   return totalEquity !== 0 ? (netIncome / totalEquity) * 100 : 0;
 };
-
-/**
- * Calculate current ratio
- */
-export const calculateCurrentRatio = (currentAssets: number, currentLiabilities: number): number => {
-  return calculateRatio(currentAssets, currentLiabilities);
-};
-
-/**
- * Calculate debt-to-equity ratio
- */
-export const calculateDebtToEquity = (totalDebt: number, totalEquity: number): number => {
-  return calculateRatio(totalDebt, totalEquity);
-};

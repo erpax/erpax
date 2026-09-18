@@ -35,10 +35,6 @@ export interface DIDDocument {
 
 const DID_REGISTRY = new Map<string, DIDDocument>()
 
-export function isErpaxDid(did: string): boolean {
-  return DID_RE.test(did)
-}
-
 export function createDid(args: {
   subject: Record<string, unknown>
   publicKeyMultibase: string
