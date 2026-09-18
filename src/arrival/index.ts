@@ -347,6 +347,44 @@ export interface ReleaseDecision {
  * conjunction; test.ts checks it on all sixteen cases and READS the Lean file for every theorem it relies on.
  * @see ../verify/lean/Release.lean
  */
+
+/** What two instruments reading the same commit can jointly say. @see ../verify/lean/Arrival.lean */
+export type Collision = 'agreed' | 'refused' | 'contradicted' | 'notLive'
+
+/**
+ * COLLIDE the forge's verdict with the live Worker, instead of exempting the check that disagrees.
+ *
+ * `Workers Builds: erpax` failed 9 of 12 pushes (2026-09-13 … 09-18) while every other check was
+ * green, twice going red AFTER it had deployed. Unrostering it was the cheap answer and it is
+ * default-ALLOW by omission ([[rules]]/unraised): a check that cannot fire reports green forever,
+ * over exactly the case it exists for. So the contradiction gets a NAME rather than a verdict.
+ *
+ *   agreed        the check passed and this commit is live
+ *   refused       the check failed and this commit is NOT live — one reading, no evidence against it
+ *   contradicted  the check failed and yet this exact commit IS live — two honest instruments, opposite answers
+ *   notLive       the check passed and something else is live — green, simply not shipped here
+ *
+ * A contradiction is not a pass: `agreed` still requires the check. That is the theorem
+ * `live_alone_is_not_agreement`, and it is what stops a hand-deployed Worker from promoting a red build.
+ */
+/**
+ * Does this deployment tag name this commit? The tag is not always the bare sha: a hand deploy may
+ * carry a prefix (`manual-08aecf985`), so the HEX TAIL of the tag is what identifies the commit.
+ * Seven characters is git's own floor for an unambiguous short sha, and anything shorter is refused
+ * rather than matched loosely — a tag that names half a sha names half the commits.
+ */
+export function tagNamesCommit(tag: string | null, sha: string): boolean {
+  if (!tag) return false
+  const hex = /([0-9a-f]{7,40})$/.exec(tag.trim().toLowerCase())?.[1]
+  if (!hex) return false
+  return sha.toLowerCase().startsWith(hex) || hex.startsWith(sha.toLowerCase())
+}
+
+export function collide(checkFailed: boolean, liveIsThis: boolean): Collision {
+  if (checkFailed && liveIsThis) return 'contradicted'
+  if (checkFailed) return 'refused'
+  return liveIsThis ? 'agreed' : 'notLive'
+}
 export function releaseDecision(f: ReleaseFacts): ReleaseDecision {
   if (!f.verdict.ok) return { release: false, why: `the forge has not agreed — ${f.verdict.reason}` }
   if (!f.headIsTheVerifiedTip) return { release: false, why: 'HEAD is not origin/main: a release names exactly the commit the forge judged' }
@@ -370,6 +408,23 @@ function askForge(cmd: string): string | null {
     const msg = [err.stderr, err.message].map((x) => String(x ?? '')).join(' ').trim() || String(e)
     if (isUnknownCommit(msg)) return null
     throw new Error(`land: the forge could not be asked — ${msg.slice(0, 200)}`)
+  }
+}
+
+/**
+ * The tag on the live Worker's newest version — the SECOND instrument the verdict collides with.
+ *
+ * `erpax deploy app` tags every version with the sha it was built from, so a tag that prefixes this
+ * commit means this exact content is serving traffic. Cloudflare's own git builds ship UNTAGGED, so
+ * absence proves nothing and is read as "cannot say", never as "not live".
+ */
+function liveTag(): string | null {
+  try {
+    const out = sh('wrangler deployments list 2>/dev/null | tail -40')
+    const tags = [...out.matchAll(/^\s*Tag:\s*(\S+)/gm)].map((m) => m[1]).filter((t) => t && t !== '-')
+    return tags.length ? (tags[tags.length - 1] as string) : null
+  } catch {
+    return null
   }
 }
 
@@ -414,6 +469,17 @@ function report(v: PushVerdict): number {
   for (const p of v.pending) console.error(`    RUNNING ${p}`)
   for (const g of v.rosterGaps) console.error(`    DECIDE  ${g}`)
   // The advice follows the state: a failure is read and cured on top; anything else is asked again.
+  // COLLIDE rather than exempt: name the contradiction when the condemned commit is the one serving
+  // traffic. It is not promoted to a pass — a_contradiction_never_lands.
+  if (v.failing.length) {
+    const live = liveTag()
+    const state = collide(true, tagNamesCommit(live, v.sha))
+    if (state === 'contradicted')
+      console.error(
+        `    COLLIDE the forge says FAILED, and the live Worker is tagged ${live} — this exact commit is serving traffic.` +
+          ' Two honest instruments disagree; this is CONTRADICTED, which is neither a landing nor a plain refusal.',
+      )
+  }
   console.error(
     v.failing.length
       ? '    FIX read the failing run (gh run view <id> --log-failed) and land the cure on top — the commit is public.'

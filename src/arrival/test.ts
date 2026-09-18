@@ -6,9 +6,11 @@ import {
   cureFor,
   isUnknownCommit,
   jsonLines,
+  collide,
   pushVerdict,
   releaseDecision,
   repoSlugOf,
+  tagNamesCommit,
   runRowOf,
   type CheckRow,
   type RunRow,
@@ -353,5 +355,64 @@ describe('arrival — the verdict is the Lean conjunction', () => {
     const lean = readFileSync(join(process.cwd(), 'src/verify/lean/Arrival.lean'), 'utf8')
     for (const name of ['landed_iff', 'unmeasured_never_lands', 'no_landing_with_a_failure', 'no_landing_while_pending', 'the_green_path_lands'])
       expect(lean, `theorem ${name} missing from Arrival.lean`).toMatch(new RegExp(`^theorem ${name}\\b`, 'm'))
+  })
+})
+
+// THE COLLISION. Unrostering the flaky check was the cheap answer and it is default-ALLOW by
+// omission: an exempt check reports green forever over the case it exists for. So the verdict
+// COLLIDES two instruments and names their disagreement. src/verify/lean/Arrival.lean proves the
+// four states partition the readings, and that a contradiction is neither a landing nor a refusal.
+describe('arrival — colliding the forge with the live Worker', () => {
+  it('agrees only when the check passed AND this commit is live', () => {
+    expect(collide(false, true)).toBe('agreed')
+  })
+
+  it('a failing check with this commit live is CONTRADICTED, never agreed', () => {
+    expect(collide(true, true)).toBe('contradicted')
+  })
+
+  it('a failing check with something else live is a plain refusal', () => {
+    expect(collide(true, false)).toBe('refused')
+  })
+
+  it('green but not shipped here is notLive — green is not the same as deployed', () => {
+    expect(collide(false, false)).toBe('notLive')
+  })
+
+  // live_alone_is_not_agreement: a hand-deployed Worker must never promote a red build.
+  it('live evidence alone never manufactures agreement', () => {
+    expect(collide(true, true)).not.toBe('agreed')
+  })
+
+  it('the Lean file proves every state the twin reports', () => {
+    const lean = readFileSync(join(process.cwd(), 'src/verify/lean/Arrival.lean'), 'utf8')
+    for (const name of ['a_contradiction_never_lands', 'a_contradiction_is_not_a_refusal', 'exactly_one_state', 'live_alone_is_not_agreement'])
+      expect(lean, `theorem ${name} missing from Arrival.lean`).toMatch(new RegExp(`^theorem ${name}\\b`, 'm'))
+  })
+})
+
+// The tag is the JOIN between the two instruments, so a loose match here would invent contradictions
+// and a strict one would miss them. The manual deploy of 2026-09-18 tagged `manual-08aecf985`, which
+// a bare prefix comparison does not match — that miss is what this pins.
+describe('arrival — a deployment tag names a commit', () => {
+  const SHA_FULL = '08aecf985e1122334455667788990011aabbccdd'
+
+  it('matches the bare sha erpax deploy app writes', () => {
+    expect(tagNamesCommit('08aecf985', SHA_FULL)).toBe(true)
+  })
+
+  it('matches a prefixed tag by its hex TAIL — the case the first version missed', () => {
+    expect(tagNamesCommit('manual-08aecf985', SHA_FULL)).toBe(true)
+  })
+
+  it('refuses a different commit, and refuses a tag too short to be unambiguous', () => {
+    expect(tagNamesCommit('deadbeef1', SHA_FULL)).toBe(false)
+    expect(tagNamesCommit('08aecf', SHA_FULL)).toBe(false)
+  })
+
+  // An untagged Cloudflare build proves nothing either way: absence is "cannot say", never "not live".
+  it('no tag is not evidence', () => {
+    expect(tagNamesCommit(null, SHA_FULL)).toBe(false)
+    expect(tagNamesCommit('-', SHA_FULL)).toBe(false)
   })
 })
