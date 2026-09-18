@@ -113,6 +113,11 @@ conjunction of the four facts and proves each refusal — and that the green pat
 analysis and `decide`, kernel-checked with no axiom. The TypeScript is its twin: the test checks it on all
 sixteen cases and reads the Lean file for every theorem it relies on.
 
+The LANDING underneath it is a theorem too. `src/verify/lean/Arrival.lean` defines `landed` as judged ∧ ¬failed
+∧ ¬pending and proves the three refusals plus a green-path control, all five axiom-free — and `Release.lean`
+consumes that landing as its `agreed` fact, so a verdict more generous than the theorem would carry a permanent
+DOI with it. UNMEASURED is the case it exists for: nothing judged the push is not a pass.
+
 One release a UTC day is **declared**: every release mints a DOI, a DOI is permanent, and erpax lands many
 times a day. The release runs from the landing lane because the `main` ruleset lets only organisation admins
 update branches: a workflow's own token cannot push the release commit, and loosening that is a security

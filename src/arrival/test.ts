@@ -308,3 +308,50 @@ describe('arrival — the taught cure', () => {
     expect(cmd).toMatch(/merge --abort/)
   })
 })
+
+// THE LEAN TWIN OF THE LANDING ITSELF. src/verify/lean/Arrival.lean proves the verdict is exactly
+// judged ∧ ¬failed ∧ ¬pending, and Release.lean consumes that landing as its `agreed` fact — so an
+// `ok` more generous than the theorem would carry a permanent DOI with it.
+describe('arrival — the verdict is the Lean conjunction', () => {
+  const ci: RunRow = { ...row('CI', 'completed', 'success'), databaseId: 900 }
+  const one = (name: string, conclusion: string | null, status = 'completed'): CheckRow => ({
+    name,
+    status,
+    conclusion,
+    appSlug: 'github-actions',
+    runId: 900,
+  })
+
+  it('agrees with the Lean conjunction on every reachable case', () => {
+    const lean = (judged: boolean, failed: boolean, pending: boolean): boolean => judged && !failed && !pending
+    for (const judged of [false, true])
+      for (const failed of [false, true])
+        for (const pending of [false, true]) {
+          // judged=false ∧ failed=true is UNREACHABLE here: a failure IS a judgement, so the forge cannot
+          // report one without the other. Lean proves it refuses anyway (no_landing_with_a_failure).
+          if (!judged && failed) continue
+          // A skipped check keeps the CHECK surface engaged in every case, so judged=false is measured there
+          // rather than falling back to the coarser run surface.
+          const checks = [
+            one('Playwright UI', 'skipped'),
+            ...(judged ? [one('Lint', 'success')] : []),
+            ...(failed ? [one('TypeScript', 'failure')] : []),
+            ...(pending ? [one('Production build (lean)', null, 'in_progress')] : []),
+          ]
+          const got = pushVerdict(SHA, [ci], checks)
+          expect(got.ok, `judged=${judged} failed=${failed} pending=${pending}`).toBe(lean(judged, failed, pending))
+        }
+  })
+
+  it('a failure the forge reports is always also a judgement', () => {
+    const v = pushVerdict(SHA, [ci], [one('TypeScript', 'failure')])
+    expect(v.measured).toBe(true)
+    expect(v.ok).toBe(false)
+  })
+
+  it('the Lean file proves every refusal the verdict makes', () => {
+    const lean = readFileSync(join(process.cwd(), 'src/verify/lean/Arrival.lean'), 'utf8')
+    for (const name of ['landed_iff', 'unmeasured_never_lands', 'no_landing_with_a_failure', 'no_landing_while_pending', 'the_green_path_lands'])
+      expect(lean, `theorem ${name} missing from Arrival.lean`).toMatch(new RegExp(`^theorem ${name}\\b`, 'm'))
+  })
+})

@@ -90,6 +90,17 @@ const concluded = (c: string | null): string => c ?? ''
 const isFailure = (status: string, conclusion: string | null): boolean =>
   status === 'completed' && !PASSED.has(concluded(conclusion)) && !DID_NOT_JUDGE.has(concluded(conclusion))
 
+/**
+ * The landing decision itself, the checked twin of `landed` in ../verify/lean/Arrival.lean: a push has landed
+ * exactly when something JUDGED it, nothing FAILED, and nothing of this push is still PENDING. UNMEASURED —
+ * judged = false — is never a pass, and Release.lean consumes this as its `agreed` fact, so a verdict more
+ * generous than the theorem would carry a permanent DOI with it.
+ *
+ * @see ../verify/lean/Arrival.lean — landed_iff, unmeasured_never_lands, no_landing_with_a_failure,
+ *      no_landing_while_pending, the_green_path_lands; all five axiom-free.
+ */
+const landed = (judged: boolean, failed: boolean, pending: boolean): boolean => judged && !failed && !pending
+
 /** pushVerdict(sha, runs, checks) → what the forge says about this commit. Pure: the network is the caller's. */
 export function pushVerdict(sha: string, rows: readonly RunRow[], checks: readonly CheckRow[] = []): PushVerdict {
   // A prefix matches, because everyone types the short sha; below git's own seven-character floor it is refused.
@@ -114,7 +125,7 @@ export function pushVerdict(sha: string, rows: readonly RunRow[], checks: readon
   // A verdict requires a judge: absence-of-failure over a set where nothing judged is not a pass.
   const measured = passed.length > 0 || failing.length > 0
   const settled = mine.length > 0 && pending.length === 0
-  const ok = settled && passed.length > 0 && failing.length === 0
+  const ok = landed(passed.length > 0, failing.length > 0, pending.length > 0)
   const aside =
     (didNotJudge.length ? ` — and did NOT judge: ${didNotJudge.join(', ')}` : '') +
     (notThisPush.length ? ` — and NOT this push: ${notThisPush.join(', ')}` : '')
@@ -200,7 +211,9 @@ export function pushVerdict(sha: string, rows: readonly RunRow[], checks: readon
     sha,
     measured: meas,
     settled: sett,
-    ok: sett && meas && f.length === 0,
+    //  implies a check was seen (nothing can pass or fail unseen), so this is the same predicate as
+    //  — now stated as the Lean conjunction it always was.
+    ok: landed(meas, f.length > 0, pd.length > 0),
     failing: f,
     pending: pd,
     didNotJudge: dj,
