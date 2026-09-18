@@ -6,6 +6,11 @@ abstract: >-
   told three ways (form · code · proof), wired through a single content-uuid.
   Its law is zero entropy ⇒ infinite tamper-cost: a claim is enforced by a gate
   that blocks its violation, never by prose that asks for compliance.
+  The decisions that carry consequences are defined and proved in Lean 4 under src/verify/lean,
+  with the TypeScript as a checked twin — the release decision, the landing verdict and the v8
+  uuid layout. Counted rather than asserted as of v1.0.6 (2026-09-18): 93 theorem declarations,
+  74 accepted by the kernel, 54 of those depending on no axioms at all; 4 are sorry stubs and 15
+  sit in three files that do not compile, and nothing relies on them.
 type: software
 authors:
   - family-names: Rouschev
@@ -36,6 +41,10 @@ keywords:
   - provenance
   - tamper-evidence
   - compliance-as-code
+  - formal verification
+  - Lean 4
+  - machine-checked proof
+  - theorem proving
 
 # PRIOR ART, BY DOMAIN — the published work erpax builds on, not a claim about what is novel
 # in it. A DOI dates a disclosure; it does not adjudicate priority against anyone else's.
