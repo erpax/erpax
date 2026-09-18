@@ -3002,11 +3002,11 @@ src/uuid/chain/index.ts:44: * @standard ISO/IEC 23257-1 blockchain reference arc
 src/uuid/chain/index.ts:45: * @standard ITU-T Y.4810 DLT terminology
 src/uuid/format/coverage.ts:18: * @standard ISO/IEC 27001 Annex A.18.2.3 technical compliance review
 src/uuid/format/coverage.ts:19: * @standard NIST SP 800-53 CM-2 baseline configuration
-src/uuid/format/index.ts:56: * @standard RFC 9562 §5.8 uuidv8 (custom formats)
-src/uuid/format/index.ts:57: * @standard RFC 4122 §4.1.2 variant bits
-src/uuid/format/index.ts:58: * @standard NIST FIPS 180-4 SHA-256 (the truncated digest source)
-src/uuid/format/index.ts:59: * @standard ITU-T X.667 / ISO/IEC 9834-8 (uuid registration)
-src/uuid/format/index.ts:84: * @standard RFC 9562 §5.9 Nil UUID
+src/uuid/format/index.ts:63: * @standard RFC 9562 §5.8 uuidv8 (custom formats)
+src/uuid/format/index.ts:64: * @standard RFC 4122 §4.1.2 variant bits
+src/uuid/format/index.ts:65: * @standard NIST FIPS 180-4 SHA-256 (the truncated digest source)
+src/uuid/format/index.ts:66: * @standard ITU-T X.667 / ISO/IEC 9834-8 (uuid registration)
+src/uuid/format/index.ts:91: * @standard RFC 9562 §5.9 Nil UUID
 src/uuid/governance/index.ts:43: * @standard W3C DID Core 1.0
 src/uuid/governance/index.ts:44: * @standard W3C Verifiable Credentials Data Model 2.0
 src/uuid/governance/index.ts:45: * @standard ISO/IEC TR 23244 blockchain governance
@@ -6340,7 +6340,7 @@ src/uuid/chain/index.ts:46: * @audit Conservation Law 8 + 47 + 55 + 57 + 60
 src/uuid/chain/test.ts:16: * @audit Conservation Law 60 binding-uuid-is-blockchain-leaf
 src/uuid/format/coverage.ts:20: * @audit Conservation Law 61 + 62
 src/uuid/format/index.test.ts:18: * @audit Conservation Law 61 uuid-carries-features
-src/uuid/format/index.ts:60: * @audit Conservation Law 61 uuid-carries-features
+src/uuid/format/index.ts:67: * @audit Conservation Law 61 uuid-carries-features
 src/uuid/governance/index.test.ts:16: * @audit Conservation Law 63 uuid-self-governance
 src/uuid/governance/index.ts:47: * @audit Conservation Law 63 uuid-self-governance
 src/uuid/kv/index.ts:55: * @audit Conservation Law 8 content-addressable integrity

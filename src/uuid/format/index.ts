@@ -25,6 +25,13 @@
  *   bits 78..81   schema version      (4 bits — 16 schema revisions)
  *   bits 82..127  contentDigest_low   (46 bits)
  *
+ * The layout is a THEOREM, not a comment: ../../verify/lean/Uuid.lean proves the four bands partition
+ * all 128 bits (so the program can never be widened over the version or variant bits) and that the
+ * sixteen program bits round-trip in both directions — decode∘encode on fields in range, and
+ * encode∘decode on any word, which is what forbids a decoder that silently masks a bit away.
+ *
+ * @see ../../verify/lean/Uuid.lean
+ *
  * Total content-binding bits: 48 + 12 + 46 = 106 bits of sha-256
  * truncation. Vastly more collision-resistant than ERPax's scale
  * needs (10^9 rows × 10^9 tenants × all-history = ~10^25 distinct
