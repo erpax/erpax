@@ -8,9 +8,10 @@ abstract: >-
   that blocks its violation, never by prose that asks for compliance.
   The decisions that carry consequences are defined and proved in Lean 4 under src/verify/lean,
   with the TypeScript as a checked twin — the release decision, the landing verdict and the v8
-  uuid layout. Counted rather than asserted as of v1.0.6 (2026-09-18): 93 theorem declarations,
-  74 accepted by the kernel, 54 of those depending on no axioms at all; 4 are sorry stubs and 15
-  sit in three files that do not compile, and nothing relies on them.
+  uuid layout. Counted rather than asserted as of 2026-09-19: 105 theorems across 12 files,
+  every one accepted by the kernel and none resting on sorry; 65 depend on no axioms at all. The
+  three files that did not compile were rewritten to state their guarantees about the OPERATIONS
+  that produce the data rather than about arbitrary data, where several were false as written.
 type: software
 authors:
   - family-names: Rouschev
