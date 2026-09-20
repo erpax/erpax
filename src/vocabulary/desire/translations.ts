@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the demand seed of a market — the latent want that precedes any transaction. The one market atom you cannot manufacture exogenously; you reveal or awaken it, never inject it. If desire is the zero atom, no convenience, proof, or trendsetter reaches the market — you redefine the product onto a want that already exists.",
-    "uuid": "6ad735b9-644f-8e46-b779-c8cd454a7da6",
+    "uuid": "99b47c45-78c9-8bc7-b5ab-52b7ebd7854d",
     "words": [
       "use",
       "when",

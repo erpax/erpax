@@ -7415,6 +7415,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/hyphen"
   },
   {
+    "atom": "inject",
+    "name": "inject",
+    "description": "Use when reasoning about inject — **3,597 SKILL.md and 3,595 LLM.md files are loaded into an agent's context**, and LLM.md is *generated* from SKILL.md — so a line written once propagates into every future agent's…",
+    "path": "rules/inject"
+  },
+  {
     "atom": "invisible",
     "name": "invisible",
     "description": "Use when matter lives at a path that cannot be addressed — a folder whose name is not one lowercase word has no lawful path, so no content-uuid, so no matrix node, so the fold never deduplicates it. This is NOT the alphanumeric-name axis restated: that counts NAMES and reads as cosmetic; this counts MATTER the corpus cannot see, which is where a second implementation grows unnoticed. Run: tsx src/rules/invisible/index.ts",

@@ -76970,6 +76970,70 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "inject",
+    "path": "rules/inject",
+    "translations": [
+      {
+        "key": "name",
+        "source": "inject",
+        "uuid": "31a3eaf7-2383-8c6b-8a50-fd9d944d943f",
+        "words": [
+          "inject"
+        ],
+        "values": {
+          "en": "inject"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about inject — **3,597 SKILL.md and 3,595 LLM.md files are loaded into an agent's context**, and LLM.md is *generated* from SKILL.md — so a line written once propagates into every future agent's…",
+        "uuid": "122e88d1-5d37-8917-adea-3627c7bc909b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "inject",
+          "skill",
+          "md",
+          "and",
+          "llm",
+          "md",
+          "files",
+          "are",
+          "loaded",
+          "into",
+          "an",
+          "agent",
+          "s",
+          "context",
+          "and",
+          "llm",
+          "md",
+          "is",
+          "generated",
+          "from",
+          "skill",
+          "md",
+          "so",
+          "a",
+          "line",
+          "written",
+          "once",
+          "propagates",
+          "into",
+          "every",
+          "future",
+          "agent",
+          "s"
+        ],
+        "values": {
+          "en": "Use when reasoning about inject — **3,597 SKILL.md and 3,595 LLM.md files are loaded into an agent's context**, and LLM.md is *generated* from SKILL.md — so a line written once propagates into every future agent's…"
+        }
+      }
+    ]
+  },
+  {
     "atom": "invisible",
     "path": "rules/invisible",
     "translations": [
@@ -143112,7 +143176,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the demand seed of a market — the latent want that precedes any transaction. The one market atom you cannot manufacture exogenously; you reveal or awaken it, never inject it. If desire is the zero atom, no convenience, proof, or trendsetter reaches the market — you redefine the product onto a want that already exists.",
-        "uuid": "6ad735b9-644f-8e46-b779-c8cd454a7da6",
+        "uuid": "99b47c45-78c9-8bc7-b5ab-52b7ebd7854d",
         "words": [
           "use",
           "when",
@@ -210468,4 +210532,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3597
+export const TRANSLATIONS_COUNT = 3598
