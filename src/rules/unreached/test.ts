@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { existsSync, mkdtempSync, mkdirSync, readdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { reachedFrom, shippedAtoms, unreachedAtoms } from './index'
+import { reachedByImport, reachedFrom, shippedAtoms, unreachedAtoms, unreachedStrict } from './index'
 
 describe('rules/unreached — the doors', () => {
   it('reachedFrom walks imports transitively and names every ancestor path', () => {
@@ -139,5 +139,42 @@ describe('rules/unreached — a fixture with no packages and no gate', () => {
         expect(charged).toContain('orphan')
       },
     )
+  })
+})
+
+describe('reachedByImport — a root is not its own door', () => {
+  it('reaches what an entry IMPORTS, and not the entry itself', () => {
+    // src/teller/index.ts imports @/float and @/currency and nothing imports teller from here.
+    const reached = reachedByImport(['src/teller/index.ts'])
+    expect(reached.has('float')).toBe(true)
+    expect(reached.has('currency')).toBe(true)
+    // THE FAIL-OPEN: the looser walk counts the root itself, so an atom is reached by being itself.
+    expect(reached.has('teller')).toBe(false)
+    expect(reachedFrom(['src/teller/index.ts']).has('teller')).toBe(true)
+  })
+
+  it('reports nothing for an entry that does not exist, rather than everything', () => {
+    expect(reachedByImport(['src/nowhere/index.ts']).size).toBe(0)
+  })
+})
+
+describe('unreachedStrict — the census with the self-door shut', () => {
+  it('finds strictly more than the looser census, because the face exempted everything', () => {
+    const loose = unreachedAtoms().length
+    const strict = unreachedStrict().length
+    expect(strict).toBeGreaterThan(loose)
+  })
+
+  it('names an atom that nothing imports, even though it carries a deployment face', () => {
+    // kyc was minted 2026-09-20 with a face and no importer. The looser census called it reached.
+    const strict = new Set(unreachedStrict().map((a) => a.atomPath))
+    const loose = new Set(unreachedAtoms().map((a) => a.atomPath))
+    expect(strict.has('kyc')).toBe(true)
+    expect(loose.has('kyc')).toBe(false)
+  })
+
+  it('does not name an atom that a sibling genuinely imports', () => {
+    const strict = new Set(unreachedStrict().map((a) => a.atomPath))
+    expect(strict.has('float')).toBe(false)
   })
 })

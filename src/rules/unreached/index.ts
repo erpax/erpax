@@ -45,6 +45,90 @@ export function reachedFrom(entries: readonly string[], cwd: string = process.cw
 }
 
 /**
+ * Atom paths reached by traversing at least ONE import edge from an entry.
+ *
+ * THE FAIL-OPEN THIS EXISTS FOR: `reachedFrom` puts its own roots in the result, and the roots
+ * include every faced atom's barrel — so an atom is "reached" BY ITSELF. Measured 2026-09-20:
+ * **3,046 atoms carry a deployment face**, and each one is its own door. `kyc`, minted that day
+ * and imported by nothing, read as reached.
+ *
+ * A false negative in a gate is worse than a false positive, because it reports green over the
+ * exact defect it exists for — the law this corpus learned from [[rules]]/cycle's Tarjan-free DFS,
+ * restated here one gate over.
+ *
+ * So an atom must be reached from SOMEWHERE ELSE. Roots seed the walk and are not themselves
+ * counted; only what an edge leads to is.
+ *
+ * **Honest boundary.** Two unreached atoms that import each other both appear reached — a mutual
+ * loop satisfies "something else imports me" without either being reachable from an entry. That is
+ * the [[rules]]/cycle case and is not resolved here. And an atom reached only dynamically is still
+ * invisible, exactly as it is to the looser walk.
+ */
+export function reachedByImport(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
+  const src = join(cwd, 'src')
+  const roots = entries.map((e) => join(cwd, e)).filter(existsSync)
+  const seen = new Set<string>(roots)
+  const viaEdge = new Set<string>()
+  const queue = [...roots]
+  while (queue.length > 0) {
+    const file = queue.shift() as string
+    for (const next of importsOf(file, cwd)) {
+      viaEdge.add(next)
+      if (seen.has(next)) continue
+      seen.add(next)
+      queue.push(next)
+    }
+  }
+  const atoms = new Set<string>()
+  for (const file of viaEdge) {
+    const rel = relative(src, file)
+    if (rel.startsWith('..')) continue
+    const parts = rel.split('/')
+    for (let i = 1; i < parts.length; i++) atoms.add(parts.slice(0, i).join('/'))
+  }
+  return atoms
+}
+
+/**
+ * The same census as `unreachedAtoms`, with the self-door closed.
+ *
+ * It is exported ALONGSIDE rather than replacing it, because correcting an instrument moves its
+ * number and the ratchet is down-only: restating a ceiling upward is a decision for a person, not
+ * a side effect of a fix ([[rules]]/slack). Run it, read the number, then decide.
+ */
+export function unreachedStrict(cwd: string = process.cwd()): UnreachedAtom[] {
+  const src = join(cwd, 'src')
+  const deployed = deploymentDoor(cwd)
+  const reached = reachedByImport([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed)], cwd)
+  const shipped = shippedAtoms(cwd)
+  const words = schemaCollision(cwd).words
+  const out: UnreachedAtom[] = []
+  const walk = (dir: string): void => {
+    let entries: import('node:fs').Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (!e.isDirectory() || e.name.startsWith('.') || e.name === 'node_modules') continue
+      const d = join(dir, e.name)
+      const hasCode = existsSync(join(d, 'index.ts')) || existsSync(join(d, 'index.tsx'))
+      if (existsSync(join(d, 'SKILL.md')) && hasCode) {
+        const atomPath = relative(src, d)
+        const leaf = atomPath.slice(atomPath.lastIndexOf('/') + 1)
+        if (!reached.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf)) {
+          out.push({ atomPath, reason: 'nothing imports it — the deployment face is its own door, and that door is closed here' })
+        }
+      }
+      walk(d)
+    }
+  }
+  walk(src)
+  return out.sort((a, b) => a.atomPath.localeCompare(b.atomPath))
+}
+
+/**
  * Atom paths that appear inside a published package's `dist/types` tree.
  *
  * This is the exemption [[rules]]/unfolded names: erpax ships as `@erpax/*`, so an atom can be a
