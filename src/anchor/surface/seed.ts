@@ -8,7 +8,7 @@
  * @invariant every row derives from the atom's own declared surface lists — nothing re-typed
  * @see ./index.ts -- ../../seed/row
  */
-import { rowsFrom, seedAddress, type SeedRow } from '@/seed/row'
+import { rowsFrom, type SeedRow } from '@/seed/row'
 
 import { CHANNEL_STANDARD, CHANNEL_SURFACES, REACHABLE_SURFACES, ROOT_STANDARDS } from './index'
 

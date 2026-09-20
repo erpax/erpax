@@ -7,8 +7,7 @@ import { exactMax } from '@/algebra'
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import ts from 'typescript'
 import { join, relative } from 'node:path'
-import { nonIndexImports, resolveBarrel, type ImportViolation } from '@/tamper/import'
-import { exportedNames } from '@/rules/face'
+import { nonIndexImports, type ImportViolation } from '@/tamper/import'
 import { importsOf } from '@/rules/cycle'
 import { wordFold, digitFold } from '@/quantum/fold'
 import { interact64 } from '@/quantum/word'
@@ -530,108 +529,6 @@ export function indexCrossViolationCount(path?: string, cwd: string = process.cw
   return indexCrossAudit(path, cwd).violationCount
 }
 
-const nearestIndexCross = (atomPath: string, cwd: string): string => {
-  const parts = normalize(atomPath).split('/').filter(Boolean)
-  for (let len = parts.length; len >= 1; len--) {
-    const candidate = parts.slice(0, len).join('/')
-    if (existsSync(join(cwd, SRC, candidate, 'index.ts'))) return candidate
-  }
-  return parts[0] ?? atomPath
-}
-
-/**
- * UNIQUE-OR-REFUSE, applied to a barrel.
- *
- * `export * from './child'` is the lawful shape until two siblings export the same
- * word: the parent then stops compiling (TS2308), and `quantum` alone has four such
- * pairs — coverage · atomPath · dedupHolds · queryUuid. Both names are real; deciding
- * which one a barrel offers is a judgement about MEANING, and the scalpel's own law
- * says a cut that cannot be made uniquely is refused rather than forced.
- *
- * The offered set is carried IN MEMORY across the loop. Reading it back from disk each
- * time sees only the parent's committed face, so two siblings added in the same pass
- * collide with each other and nothing notices until tsc — which is exactly what
- * happened on the first run (`body/index.ts`, four names, 314 files to roll back).
- */
-/**
- * A child that reaches a NODE BUILTIN may not be re-exported from a barrel.
- *
- * `export * from './harvest'` on `@/i18n` broke the production build:
- * `UnhandledSchemeError: Reading from "node:fs" is not handled` — harvest reads the
- * filesystem, `@/i18n` is imported by client components, and a barrel re-export drags
- * the whole child into the browser bundle. Nothing about the NAMES says so.
- *
- * The published-package closure was the first consumer I measured and the browser is the
- * second. Both are the same law: a barrel edge is free only where nobody downstream pays
- * for it. Refusing every node-reaching child is conservative — a server-only barrel loses
- * a wire it could have carried — and it cannot break a bundle.
- */
-const reachesNodeBuiltin = (childFile: string, cwd: string): boolean => {
-  const seen = new Set<string>([childFile])
-  const queue = [childFile]
-  let visits = 0
-  while (queue.length > 0 && visits < 300) {
-    const file = queue.shift() as string
-    visits++
-    let text = ''
-    try {
-      text = readFileSync(file, 'utf8')
-    } catch {
-      continue
-    }
-    if (/from\s+['"]node:/.test(text)) return true
-    for (const next of importsOf(file, cwd)) {
-      if (seen.has(next)) continue
-      seen.add(next)
-      queue.push(next)
-    }
-  }
-  return false
-}
-
-/**
- * A barrel edge that closes a LOOP is refused.
- *
- * `export * from './fold'` looked safe — no name collided — and it broke 34 suites with
- * `toUuid is not a function`. The edge closed algebra → fold → merge → algebra, and
- * `merge` calls `toUuid` at module scope, so the binding was read before it existed.
- * That is the TDZ this corpus collapsed its own boot on once ([[rules]]/cycle): a loop
- * decides initialisation order by accident, and nothing about the NAMES reveals it.
- *
- * Edges are PARSED (`importsOf`), never matched, and the walk is bounded — a barrel
- * wiring pass may not cost a full graph traversal per candidate.
- */
-const wouldCloseALoop = (parentAtom: string, childFile: string, cwd: string): boolean => {
-  const parentDir = join(cwd, SRC, parentAtom) + '/'
-  const seen = new Set<string>([childFile])
-  const queue = [childFile]
-  let visits = 0
-  while (queue.length > 0 && visits < 400) {
-    const file = queue.shift() as string
-    visits++
-    for (const next of importsOf(file, cwd)) {
-      if (seen.has(next)) continue
-      if (next.startsWith(parentDir) || next === join(cwd, SRC, parentAtom, 'index.ts')) return true
-      seen.add(next)
-      queue.push(next)
-    }
-  }
-  return false
-}
-
-const faceNames = (file: string): Set<string> => {
-  try {
-    return existsSync(file) ? exportedNames(file) : new Set<string>()
-  } catch {
-    return new Set<string>()
-  }
-}
-
-const childFaceFile = (dir: string, target: string): string => {
-  const asAtom = join(dir, target, 'index.ts')
-  return existsSync(asAtom) ? asAtom : join(dir, `${target}.ts`)
-}
-
 /**
  * Barrels a published package BUNDLES — COMPUTED, not supplied by whoever runs the pass.
  *
@@ -738,40 +635,4 @@ export function isPinnedBarrel(dir: string): boolean {
   }
   visit(source)
   return pinned
-}
-
-const appendReexport = (
-  indexContent: string,
-  target: string,
-  dir: string,
-  offered: Set<string>,
-  atomPath: string,
-  cwd: string,
-  protectedIndexes?: ReadonlySet<string>,
-): string => {
-  const face = `${SRC}/${atomPath}/index.ts`
-  if (protectedIndexes?.has(face)) return indexContent
-  if (packageBundledBarrels(cwd).has(face)) return indexContent
-  if (isPinnedBarrel(dir)) return indexContent
-  if (indexContent.includes(`'./${target}'`)) return indexContent
-  const file = childFaceFile(dir, target)
-  if (!existsSync(file)) return indexContent
-  if (wouldCloseALoop(atomPath, file, cwd)) return indexContent
-  if (reachesNodeBuiltin(file, cwd)) return indexContent
-  const theirs = faceNames(file)
-  if (theirs.size === 0) return indexContent
-  for (const name of theirs) if (offered.has(name)) return indexContent
-  for (const name of theirs) offered.add(name)
-  return `${indexContent.trimEnd()}\n\nexport * from './${target}'\n`
-}
-
-/** The fold-back is a banner, not an export: it collides with nothing and runs nothing. */
-const FOLDBACK_BANNER = '@index-cross.foldback'
-
-const appendFoldback = (indexContent: string, parentPath: string, childPath: string): string => {
-  if (hasFoldback(indexContent, parentPath)) return indexContent
-  return `${indexContent.trimEnd()}
-
-/** ${FOLDBACK_BANNER} child=${childPath} parent=${parentPath} — this cross folds back into its parent. */
-`
 }

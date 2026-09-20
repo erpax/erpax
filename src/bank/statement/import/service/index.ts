@@ -26,7 +26,10 @@ export interface ImportResult {
   transactionsCreated: number;
 }
 
-class BankStatementImportService {
+// EXPORTED DELIBERATELY: the purge cut this clause because nothing calls the class yet, and
+// rules/unfolded says such a list is CANDIDATES, never a purge list. This is the service the
+// UniCredit AIS work feeds — capability waiting to be wired, not litter.
+export class BankStatementImportService {
   /**
    * Import CSV file (standard format)
    * Expected columns: Date, Description, Debit, Credit, Balance

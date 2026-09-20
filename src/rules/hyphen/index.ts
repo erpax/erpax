@@ -33,9 +33,6 @@ import { exactMax } from '@/algebra'
 const SRC = 'src'
 const CODE = /\.(ts|tsx)$/
 const SKIP_DIR = new Set(['node_modules', 'app', 'migrations'])
-/** Machine-written faces — an emitter hardcodes their path, so a rename needs the emitter too. */
-const GENERATED = /\.generated\.tsx?$/i
-
 export interface HyphenRename {
   /** repo-relative, e.g. `src/ai/security.ts` */
   readonly from: string

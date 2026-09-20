@@ -10,7 +10,6 @@
  * @see ../../deploy — ../../gate — ./SKILL.md
  */
 import { DEPLOY, harmonized } from '@/deploy'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** The one true collapse order — gate first, then migrate · build · push. */
 export const collapseOrder = (): readonly string[] => DEPLOY.map((d) => d.step)

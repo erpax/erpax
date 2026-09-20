@@ -104,6 +104,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     drift: { desc: 'Agent-memory index vs files — fails closed on orphans and dead entries', cmd: `${TSX} src/memory/drift/index.ts` },
   },
   rules: {
+    orphans: { desc: 'Symbols a purge orphaned — unused imports and inert declarations; --fix sweeps to a fixpoint', cmd: `${TSX} src/rules/orphan/index.ts` },
     default: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },
     check: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },
     ratchet: { desc: 'Emit law/folder ratchet.generated.ts', cmd: `${TSX} src/law/folder/emit-ratchet.ts` },

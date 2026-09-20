@@ -10,7 +10,6 @@
  * @see ../../society — ../../entry — ./SKILL.md
  */
 import { uuid } from '@/integrity'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 export interface SocialFact {
   readonly kind: string

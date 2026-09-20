@@ -10,7 +10,6 @@
  * @see ../../snapshot — ../fs — ./SKILL.md
  */
 import { uuid } from '@/integrity'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 import { verifyUuidLinkedChain, type UuidLinkedLeaf, buildNextLeaf } from '@/integrity'
 
 /** Content-address one moment's collapsed state. */

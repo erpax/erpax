@@ -1,7 +1,7 @@
 /**
  * readme/assumption — drift + completeness gates for computed README faces.
  */
-import { readFileSync, existsSync } from 'node:fs'
+import { readFileSync,  } from 'node:fs'
 import { join } from 'node:path'
 import { buildReadmeCorpusFrozenInputs, renderRootReadmeInWaves, generateFolderReadme } from './compute'
 export { computeProseLiterals, BANNED_HAND_PROSE } from './assumption-literals'
@@ -9,18 +9,6 @@ export { computeProseLiterals, BANNED_HAND_PROSE } from './assumption-literals'
 export interface AssumptionVerdict { readonly ok: boolean; readonly violations: readonly string[] }
 export interface ReadmeSectionStatus { readonly section: string; readonly present: boolean; readonly empty: boolean }
 export interface ReadmeCompletenessMatrix { readonly kind: 'root' | 'folder'; readonly complete: boolean; readonly sections: readonly ReadmeSectionStatus[] }
-
-const ROOT_SPECS = [
-  ['orient', '## Orient to erpax'],
-  ['qpu', '## quantum computer — physical FTL on QPU=CPU/GPU'],
-  ['diamond', '## the diamond'],
-  ['pivot', '## [[pivot]]'],
-  ['pivot-horo', '| digit | measure | atoms | principal facets |'],
-  ['seal', 'sealed **'],
-  ['bindings', '[[cloudflare]]'],
-  ['standards', '[[standards]]'],
-  ['entropy', '## corpus entropy'],
-] as const
 
 export function readmeAssumptionViolations(readmePath: string, cwd = process.cwd()): AssumptionVerdict {
   let actual = ''

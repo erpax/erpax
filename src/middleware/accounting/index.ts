@@ -7,4 +7,3 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-export * from './tenant-scope';

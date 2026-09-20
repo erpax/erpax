@@ -9,7 +9,7 @@
  * @invariant every row derives from MILLENNIUM — seven rows, none of them asserting a corpus solution
  * @see ./index.ts -- ../seed/row
  */
-import { rowsFrom, seedAddress, type SeedRow } from '@/seed/row'
+import { rowsFrom, type SeedRow } from '@/seed/row'
 
 import { MILLENNIUM } from './index'
 

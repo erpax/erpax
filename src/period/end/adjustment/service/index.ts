@@ -70,7 +70,9 @@ const DEFAULT_CONFIG: PeriodEndConfig = {
   closingDay: 28,
 };
 
-class PeriodEndAdjustmentService {
+// EXPORTED DELIBERATELY: same reading as the statement-import service — unwired domain matter, not
+// dead weight. A period-end close is the reason an ERP exists.
+export class PeriodEndAdjustmentService {
   /**
    * Generate all period-end adjustments
    */

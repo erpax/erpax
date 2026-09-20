@@ -1,17 +1,4 @@
 import { exactMax } from '@/algebra'
-/**
- * quantum/pi — infinite address space; offset cost ~ data length (information conserved).
- *
- * π exits the 128-bit address limit but never the information limit — locating an
- * N-digit string needs ~N digits of offset; bits move into the offset, never vanish.
- *
- *   tsx src/quantum/pi/index.ts
- *
- * @audit offset lower bound is counting argument; normality conjectured not proven
- * @see ../../uuid — ../number — ./SKILL.md
- */
-
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** Lower bound on offset digits to locate a string of N decimal digits in π — ~N. */
 export function piOffsetLowerBound(dataDigits: number): number {

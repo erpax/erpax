@@ -32,7 +32,6 @@ import { HORO_DIGITS, composeSteps, isHoroStep, type HoroStep } from '@/horo'
 import { entropy } from '@/entropy'
 import { toUuid, merge } from '@/uuid/matrix'
 import { TRINITY_FILES } from '@/trinity'
-import { dualOf } from '@/duality'
 import type { WaveBatch } from '../load'
 
 /** The horo position whose composed step is unity — where a wave closes and the collide opens. */

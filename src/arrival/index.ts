@@ -322,6 +322,21 @@ const CURES: readonly Cure[] = [
     when: /\[rejected\][^\n]*\((?:fetch first|non-fast-forward)\)|tip of your current branch is behind/,
     cmd: 'git fetch origin main && { git merge --no-edit origin/main || { git merge --abort; false; }; }',
   },
+  // TAUGHT 2026-09-20 by the push it blocked. A purge of dead exports orphans what they used — the
+  // imports they named and the inert locals they read — and NOTHING sees it except the zero-warning
+  // lint lane: tsc is happy (still well-typed), the unit waves are happy (nothing imports them).
+  // 115 warnings arrived at once, and the cleanup was done BY HAND, file by file, which is how a
+  // cleanup gets skipped on the push that needs it. `rules/orphan --fix` sweeps to a fixpoint —
+  // imports, then the declarations they orphan, then THEIR imports — and REFUSES any declaration
+  // whose initializer is a call, because deleting one changes behaviour. Committed by path; if the
+  // sweep changed nothing, the commit fails and a human decides.
+  {
+    name: 'symbols a purge orphaned',
+    when: /is (?:defined|assigned a value) but never used|ESLint found too many warnings/,
+    cmd:
+      'pnpm erpax rules orphans --fix && git add -u src && ' +
+      'git commit -m "chore(orphan): sweep the symbols a purge orphaned — the landing lane\'s taught cure" -- src',
+  },
 ]
 
 export const cureFor = (pushOutput: string): Cure | undefined => CURES.find((c) => c.when.test(pushOutput))

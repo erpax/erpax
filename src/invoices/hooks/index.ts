@@ -9,7 +9,6 @@
  */
 
 export * from './deriveNumber'
-export * from './encryptSensitiveFields'
 // GL posting hooks (dissolved from the former accounting/hooks slice —
 // invoices carry the `bill` kind, so bill.hook co-locates here too).
 export * from './invoice'

@@ -4,7 +4,7 @@ import { exactRound } from '@/algebra'
  * book/write — complete missing volumes: matter + proof + computed faces.
  * A missing book is form without matter; writing completes the trinity.
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync,  } from 'node:fs'
 import { join } from 'node:path'
 import { P0_ACCOUNTING_LEAVES } from '@/accounting/gaps'
 import { bondRankOf, harmonyOfBookIndex, indexVolumes, normalizePath } from './index'

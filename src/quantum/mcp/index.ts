@@ -1,16 +1,4 @@
-/**
- * quantum/mcp — trinity tool surface: corpus projection, trust-native gate on every call.
- *
- * The door exposes exactly what exists — add an atom or skill and tools manifest with
- * no hand-list. Every call passes access · sandbox · receipt.
- *
- *   tsx src/quantum/mcp/index.ts
- *
- * @audit gate law is pure; tool drift checked via rebuild-from-source in integration
- * @see ../../agents/mcp — ../../access — ./SKILL.md
- */
 
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 /** No MCP call escapes the gate — access · sandbox · receipt in one move. */
 export function mcpCallGated(opts: {
   access: boolean

@@ -118,11 +118,6 @@ export function reconstructSpeechAt(
   return out
 }
 
-function latestSpeechAt(entries: readonly SpeechEntry[]): string | null {
-  if (entries.length === 0) return null
-  return entries.reduce((max, e) => (e.at > max ? e.at : max), entries[0]!.at)
-}
-
 /** One tai-chi chi-cung breath tick with computed speech at the yang pole. */
 export interface ChiCungSpeechFrame {
   readonly tick: number

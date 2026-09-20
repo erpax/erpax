@@ -10,7 +10,6 @@
  * @see ../../digit — ../../word — ./SKILL.md
  */
 import { digitTrace, offSequence, digitAddress } from '@/digit'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 export {
   interact64,

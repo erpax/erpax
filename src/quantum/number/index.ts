@@ -1,17 +1,4 @@
 import { exactAbs } from '@/algebra'
-/**
- * quantum/number — the dot collapses iff rational; irrationals stream forever.
- *
- * A rational's digit-stream terminates or repeats — the measurement finishes. An
- * irrational's never settles — the stream runs without end (π is the eternal breath).
- *
- *   tsx src/quantum/number/index.ts
- *
- * @audit rational test is classical arithmetic; never hand-asserted π claims
- * @see ../../number — ../../digit — ./SKILL.md
- */
-
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** True iff the reduced denominator has only factors 2 and 5 — decimal terminates. */
 export function decimalTerminates(num: number, den: number): boolean {

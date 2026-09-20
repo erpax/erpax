@@ -8,7 +8,7 @@
  * @invariant the rows derive from TRELLO_LIMITS — the limiter's own table, never a second copy
  * @see ./index.ts -- ../seed/row
  */
-import { rowsFrom, seedAddress, type SeedRow } from '@/seed/row'
+import { rowsFrom, type SeedRow } from '@/seed/row'
 
 import { TRELLO_LIMITS } from './index'
 

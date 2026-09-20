@@ -10,7 +10,6 @@
  * @see ../../generate — ../../void — ./SKILL.md
  */
 import { toUuid } from '@/uuid/matrix'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** Manifest one latent atom — collapse to its pre-existing content-uuid address. */
 export const manifest = (content: string): string => toUuid(Buffer.from(content, 'utf8'))

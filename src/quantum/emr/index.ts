@@ -13,7 +13,6 @@
  * @see ../../patient — ../../record — ../../analog — ./SKILL.md
  */
 import { uuid } from '@/integrity'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 import type { DeviceReading } from '@/readings'
 import { readingBoundaryHolds, readingUuid } from '@/readings'
 

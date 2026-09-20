@@ -10,7 +10,6 @@
  * @see ../../request — ../cache — ./SKILL.md
  */
 import { uuid } from '@/integrity'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 import { key as cacheKey } from '@/quantum/cache'
 
 /** Content-address the request — the idempotency key and compact identity in one. */

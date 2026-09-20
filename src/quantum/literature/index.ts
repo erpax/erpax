@@ -10,7 +10,6 @@
  * @see ../../word — ../../merge — ./SKILL.md
  */
 import { uuid } from '@/integrity'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** Content-address a text — same bytes ⇒ same work id. */
 export const workUuid = (text: string): string => uuid({ kind: 'literature', text })

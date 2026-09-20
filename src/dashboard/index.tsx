@@ -1,24 +1,11 @@
 import type React from 'react';
 import type { Payload, PayloadRequest } from 'payload';
-
-import { TrialBalanceWidget, BalanceSheetWidget, IncomeStatementWidget } from '@/widget';
 import { formatCurrency } from '@/format/amount';
-
-import {
-  generateTrialBalance,
-  generateBalanceSheet,
-  generateIncomeStatement,
-} from '@/accounting';
 import {
   resolveDashboard,
   selectDashboard,
-  projectTrialBalance,
-  projectBalanceSheet,
-  projectIncomeStatement,
   type DashboardContext,
-  type DashboardSpec,
   type ResolvedWidget,
-  type AnyWidgetSpec,
 } from '@/dashboard/spec';
 import { DASHBOARD_REGISTRY, DASHBOARDS } from './dashboards';
 import { Card, CardContent, CardHeader, CardTitle } from '@/ui'
@@ -30,7 +17,6 @@ import type {
   AccountLine,
   BalanceSheetData,
   IncomeStatementData,
-  TrialBalanceData,
 } from '@/analytics';
 import { singularOf } from '@/translate';
 
@@ -68,50 +54,6 @@ interface DashboardProps {
   /** Balance-sheet / trial-balance as-of date (defaults to today). */
   readonly asOfDate?: Date;
 }
-
-// ─── The financial statement dashboard — three pure widgets, three
-//     localApi DataSources backed by the existing reports.service. ─────
-
-const balanceSheetWidget: AnyWidgetSpec = {
-  id: 'balance-sheet',
-  Component: BalanceSheetWidget,
-  minCapability: 'read',
-  title: 'Balance Sheet',
-  lane: 'tailwind',
-  source: {
-    kind: 'localApi',
-    load: async (ctx: DashboardContext): Promise<BalanceSheetData> =>
-      projectBalanceSheet(await generateBalanceSheet(ctx.payload, ctx.tenantId, ctx.asOfDate)),
-  },
-};
-
-const incomeStatementWidget: AnyWidgetSpec = {
-  id: 'income-statement',
-  Component: IncomeStatementWidget,
-  minCapability: 'read',
-  title: 'Income Statement',
-  lane: 'tailwind',
-  source: {
-    kind: 'localApi',
-    load: async (ctx: DashboardContext): Promise<IncomeStatementData> =>
-      projectIncomeStatement(
-        await generateIncomeStatement(ctx.payload, ctx.tenantId, ctx.periodStart, ctx.periodEnd),
-      ),
-  },
-};
-
-const trialBalanceWidget: AnyWidgetSpec = {
-  id: 'trial-balance',
-  Component: TrialBalanceWidget,
-  minCapability: 'read',
-  title: 'Trial Balance',
-  lane: 'tailwind',
-  source: {
-    kind: 'localApi',
-    load: async (ctx: DashboardContext): Promise<TrialBalanceData> =>
-      projectTrialBalance(await generateTrialBalance(ctx.payload, ctx.tenantId, ctx.asOfDate)),
-  },
-};
 
 /** Build the loader context from the actor's request + the as-of date. */
 function dashboardContext(req: PayloadRequest, asOfDate: Date): DashboardContext {

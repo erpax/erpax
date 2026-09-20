@@ -10,7 +10,6 @@
  * @see ../../fs — ../../merge — ./SKILL.md
  */
 import { uuid } from '@/integrity'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** Address one immutable filesystem moment — the path names a snapshot, not a mutable file. */
 export const snapshotAddress = (content: unknown): string => uuid(content)

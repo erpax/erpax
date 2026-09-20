@@ -65,7 +65,6 @@ import {
   projectTrialBalance,
   projectBalanceSheet,
   projectIncomeStatement,
-  type AnyWidgetSpec,
   type DashboardContext,
   type DashboardSpec,
   type WidgetSpec,

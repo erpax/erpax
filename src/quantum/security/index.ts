@@ -1,16 +1,4 @@
-/**
- * quantum/security — bidirectional security: blue verify ⊕ red price forging; balanced pair.
- *
- * Every control is read both ways — verify it holds and price forging past it. Red
- * prices the attack but never ships it.
- *
- *   tsx src/quantum/security/index.ts
- *
- * @audit conjugate law modeled as forgeCostLog2 ≥ compression depth
- * @see ../../security — ../../tamper — ./SKILL.md
- */
 
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 export interface SecurityFinding {
   readonly control: string
   readonly blueHolds: boolean

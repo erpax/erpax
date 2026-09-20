@@ -20,7 +20,7 @@ import { exactRound } from '@/algebra'
  * @see src/services/horo (the position ring), src/uuid/format/index.ts (decode)
  */
 
-import { HORO_DIGITS, type HoroStep } from '@/horo'
+import { type HoroStep } from '@/horo'
 
 /** The single anchor — Hz for sound, ms for the color-animation period. */
 export const A432 = 432

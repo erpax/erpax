@@ -11,7 +11,6 @@
  * @see ../../device — ../../measurement — ./SKILL.md
  */
 import { uuid } from '@/integrity'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** Consumer/wearable signals a phone-class device may collapse. */
 export const CONSUMER_SIGNALS = ['rppg', 'hrv', 'accelerometer', 'camera', 'mic'] as const

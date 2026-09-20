@@ -61,7 +61,7 @@
  * @standard ISO 80000-2 — mathematical signs and symbols
  * @see ./SKILL.md -- ../../horo/index.ts -- ../../signal/index.ts -- ../../rodin/phase/index.ts
  */
-import { AFFINE_ORDER, digitalRoot, HORO_DIGITS, inverseOrbit, orbitOf, throughVoid, VOID_PIVOT, type HoroStep } from '@/horo'
+import { AFFINE_ORDER, digitalRoot, inverseOrbit, orbitOf, throughVoid, VOID_PIVOT, type HoroStep } from '@/horo'
 import { signalForStep } from '@/signal'
 
 /** Degrees per step: six positions divide the circle exactly. */

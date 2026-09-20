@@ -25,9 +25,6 @@
  */
 import { execFileSync } from 'node:child_process'
 
-import { postGapOnPath, postSealOnPath } from '@/accounting/coa'
-import type { JournalEntryLine } from '@/accounting'
-
 // ── sealed-source primitives — the ONLY way a trust computation reads matter ────────────────────
 // Every read is from the committed git tree (SHA-addressed = the seal), never the mutable working
 // tree. The path index is read ONCE (`git ls-tree`) and reused for every lookup — a token spent once,

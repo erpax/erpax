@@ -918,12 +918,8 @@ src/csrd/disclosures/index.ts:18: * @standard ISO 14064-1:2018 ghg-quantificatio
 src/csrd/disclosures/index.ts:19: * @standard EU EFRAG ESRS-XBRL taxonomy
 src/css/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/currency/fallback/index.test.ts:19: * @standard ISO 4217 §6.5 "No currency" (XXX numeric 999)
-src/currency/fallback/index.ts:438: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
-src/currency/fallback/index.ts:439: * @standard IAS 21 §38 presentation-currency translation
-src/currency/fallback/index.ts:56: * @standard ISO 4217 §6.5 "No currency" — code XXX, numeric 999
-src/currency/fallback/index.ts:57: * @standard EN 16931 §BG-7 currency-code element (XXX accepted)
-src/currency/fallback/index.ts:58: * @standard ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)
-src/currency/fallback/index.ts:59: * @standard IFRS 1 §IG7 non-monetary items presentation
+src/currency/fallback/index.ts:372: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
+src/currency/fallback/index.ts:373: * @standard IAS 21 §38 presentation-currency translation
 src/currency/fallback/uuid.ts:57: * @standard RFC 9562 §5.8 uuidv8 (the bottom-half hash family)
 src/currency/fallback/uuid.ts:58: * @standard RFC 8785 JCS (the canonicalisation that makes equivalence work)
 src/currency/fallback/uuid.ts:59: * @standard ISO 4217 §6.5 (X-codes — the currency identity layer)
@@ -1009,9 +1005,9 @@ src/dashboard/actions/index.ts:31: * @standard ISO-8601-1:2019 date-time entry-d
 src/dashboard/actions/index.ts:32: * @standard NIST INCITS-359 role-based-access-control
 src/dashboard/dashboards.ts:38: * @standard NIST INCITS-359 role-based-access-control
 src/dashboard/dashboards.ts:39: * @standard ISO-27002 §5.15 access-control + §5.3 segregation-of-duties
-src/dashboard/index.tsx:53: * @standard ECMA-262 ECMAScript-2024 baseline
-src/dashboard/index.tsx:54: * @standard ISO-4217:2015 currency-codes monetary-display
-src/dashboard/index.tsx:55: * @standard NIST INCITS-359 role-based-access-control
+src/dashboard/index.tsx:39: * @standard ECMA-262 ECMAScript-2024 baseline
+src/dashboard/index.tsx:40: * @standard ISO-4217:2015 currency-codes monetary-display
+src/dashboard/index.tsx:41: * @standard NIST INCITS-359 role-based-access-control
 src/dashboard/nav/Nav.tsx:23: * @standard ECMA-262 ECMAScript-2024 baseline
 src/dashboard/nav/Nav.tsx:24: * @standard NIST INCITS-359 role-based-access-control (cells gate via the cross upstream)
 src/dashboard/nav/index.ts:32: * @standard ECMA-262 ECMAScript-2024 baseline
@@ -1313,9 +1309,6 @@ src/generate/meta/index.ts:6: * @standard W3C-HTML5 §4.2.5 meta-element
 src/generate/meta/index.ts:7: * @standard OGP open-graph-protocol-1.0
 src/generate/reversing/entry/index.ts:18: * @standard IAS-34:2023 Interim closing reversals required at period start
 src/generate/reversing/entry/index.ts:19: * @standard SAF-T:3.0.2 Reversal entries must have distinct GL accounts + posting dates
-src/get/enabled/locales/for/tenant/index.ts:5: * @standard BCP-47 language-tag
-src/get/enabled/locales/for/tenant/index.ts:7: * @standard ECMA-402 internationalization-api
-src/get/enabled/locales/for/tenant/index.ts:8: * @standard EU 1958/1 official-languages-of-the-european-union
 src/get/preview/secret/index.ts:5: * @standard NIST SP-800-108 key-derivation-function
 src/get/tenant/from/request/index.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control tenant-scope
 src/get/user/tenant/i/ds/index.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control user-role-assignment
@@ -1518,7 +1511,6 @@ src/invoices/dunning/cycles/index.ts:22: * @standard ISO-4217:2015 currency-code
 src/invoices/hooks/deriveNumber.test.ts:4: * @standard EN-16931:2017 BT-1 invoice-number
 src/invoices/hooks/deriveNumber.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/invoices/hooks/deriveNumber.ts:8: * @standard EN-16931:2017 BT-1 invoice-number
-src/invoices/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/invoices/hooks/gl-hooks-emit-events.test.ts:13: * @standard ISO/IEC-29119:2022 software-testing
 src/invoices/hooks/transition/index.ts:5: * @standard IFRS IAS-1 presentation (a reversal is a transition, never an edit)
 src/invoices/index.ts:51: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
@@ -2709,7 +2701,6 @@ src/standards/registry/index.ts:17: * @standard ISO-19011:2018 audit-evidence (a
 src/standards/registry/index.ts:18: * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
 src/standards/registry/test.ts:7: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
 src/standards/registry/test.ts:8: * @standard ISO-19011:2018 §6.4 audit-evidence (no duplicate identity)
-src/standards/seed.ts:19: * @standard ISO-19011:2018 §6.4 audit-evidence (citingModules = the trail)
 src/standards/test.ts:2: * @standard ISO/IEC-29119:2022 software-testing
 src/sti/schema-org.ts:19: * @standard schema.org (the universal type vocabulary; Thing + subClassOf)
 src/sti/schema-org.ts:20: * @standard JSON-LD 1.1 W3C-REC (the structured-data serialization)
@@ -2717,7 +2708,6 @@ src/sti/vocabulary/index.ts:19: * @standard schema.org (the universal type vocab
 src/storage/independence/index.ts:62: * @standard ISO/IEC 27040:2024 — storage security (data integrity)
 src/storage/independence/index.ts:63: * @standard W3C Verifiable Data Registry conformance (storage layer)
 src/storage/independence/index.ts:64: * @standard RFC 9562 §5.8 + RFC 8785 (content-derived uuids)
-src/storage/redundancy/index.ts:8: * @standard ISO/IEC 9075-2:2016 §4.15.10 (when paired with Law 14 bitemporal)
 src/stream/index.ts:45: * @standard ReactiveX / W3C Streams API (AsyncIterable surface)
 src/stream/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/stream/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering
@@ -3168,10 +3158,6 @@ src/work/shifts/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
 src/workflow/concatenate/index.ts:19: * @standard ISO/IEC 19510:2013 BPMN-2.0 — a free monoid over the workflow step
 src/workflow/definitions/index.ts:15: * @standard ISO/IEC 19510:2013 BPMN-2.0
 src/workflow/definitions/index.ts:16: * @standard ISO-8601-1:2019 date-time
-src/workflow/definitions/seed.ts:14: * @standard OMG BPMN 2.0 business-process-model-and-notation
-src/workflow/definitions/seed.ts:15: * @standard IFRS-15 revenue US-GAAP ASC-606 IAS-19 employee-benefits
-src/workflow/definitions/seed.ts:16: * @standard EN-16931 e-invoicing ISO-20022 payments ISA-95 production
-src/workflow/definitions/seed.ts:17: * @standard ISO-19011 audit ActivityPub social-federation
 src/workflow/definitions/workflow/instances/index.ts:13: * @standard ISO/IEC 19510:2013 BPMN-2.0
 src/workflow/definitions/workflow/instances/index.ts:14: * @standard ISO-8601-1:2019 date-time
 src/workflow/engine/index.ts:13: * @standard OMG BPMN 2.0 process-execution-semantics
@@ -3402,10 +3388,6 @@ src/fetch/remote/file/index.ts:11: * @rfc 3986 uri filename-extraction
 src/fetch/remote/file/index.ts:12: * @rfc 6838 media-type-registration
 src/fetch/remote/file/index.ts:9: * @rfc 9110 http-semantics
 src/generate/meta/index.ts:8: * @rfc 3986 §5.3 reference-resolution
-src/get/enabled/locales/for/tenant/index.ts:6: * @rfc 5646 tags-for-identifying-languages
-src/get/me/user/index.ts:4: * @rfc 6265 cookies session-cookie
-src/get/me/user/index.ts:5: * @rfc 7519 jwt session-token
-src/get/me/user/index.ts:6: * @rfc 5322 internet-message-format email-field
 src/get/media/url/index.ts:11: * @rfc 3986 §2.1 percent-encoding
 src/get/media/url/index.ts:12: * @rfc 3986 §3.4 query-component
 src/get/preview/secret/index.ts:6: * @rfc 5869 hkdf
@@ -3418,7 +3400,6 @@ src/i18n/request/index.ts:10: * @rfc 9110 http-semantics accept-language-fallbac
 src/i18n/request/index.ts:8: * @rfc 5646 tags-for-identifying-languages
 src/i18n/routing/index.ts:8: * @rfc 3986 uniform-resource-identifier locale-path-segment
 src/i18n/routing/index.ts:9: * @rfc 9110 http-semantics
-src/invoices/hooks/encryptSensitiveFields.ts:9: * @rfc 5116 authenticated-encryption-with-associated-data
 src/iso/19011/types/index.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/iso/19011/types/index.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/iso/19011/types/index.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
@@ -3465,9 +3446,6 @@ src/posts/index.ts:35: * @rfc 3986 uri slug-to-url
 src/remote/media/import/index.ts:5: * @rfc 3986 uniform-resource-identifier remote-source
 src/remote/media/import/index.ts:6: * @rfc 6838 mime-type media-type
 src/remote/media/import/index.ts:7: * @rfc 9110 http-semantics fetch
-src/revalidate/redirect/index.ts:4: * @rfc 9110 §15.4 redirection-3xx
-src/revalidate/redirect/index.ts:5: * @rfc 9110 §13 caching
-src/revalidate/redirect/index.ts:6: * @rfc 9111 http-caching
 src/rfc/3986/generate-preview-path.test.ts:5: * @rfc 3986 uniform-resource-identifier
 src/rfc/3986/generate-preview-path.ts:4: * @rfc 3986 uniform-resource-identifier preview-path
 src/rfc/3986/get-url.test.ts:5: * @rfc 3986 uniform-resource-identifier
@@ -3845,7 +3823,6 @@ src/evidence/attestation/index.ts:26: * @compliance SOX §404 internal-controls 
 src/evidence/attestation/index.ts:27: * @compliance EU 910/2014 eidas qualified-electronic-signature
 src/evidence/attestations/index.ts:18: * @compliance SOX §404 internal-controls process-walk-through
 src/evidence/attestations/index.ts:19: * @compliance EU 910/2014 eidas qualified-electronic-signature
-src/factory/auto-populate-tenant.ts:10: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/factory/recompute-parent-aggregates.ts:27: * @compliance SOX §404 internal-controls total-completeness
 src/fair/value/measurements/index.ts:20: * @compliance SOX §404 internal-controls TOM-FV-01 valuation-process
 src/feature/registry/index.ts:32: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -3868,8 +3845,6 @@ src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:25: * @compliance 
 src/fixed/assets/depreciation/schedules/index.ts:14: * @compliance SOX §404 internal-controls
 src/fixed/assets/index.ts:30: * @compliance SOX §404 internal-controls capital-asset-register
 src/fx/transactions/index.ts:20: * @compliance SOX §404 internal-controls fx-control TOM-FX-01
-src/get/me/user/index.ts:10: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
-src/get/me/user/index.ts:11: * @compliance SOC-2 CC6.1 logical-access-controls
 src/get/user/tenant/i/ds/index.ts:8: * @compliance SOX §404 internal-controls
 src/gl/account/resolver/index.ts:28: * @compliance SOX §404 internal-controls per-tenant-coa
 src/gl/accounts/account/reconciliations/index.ts:26: * @compliance SOX §404 internal-controls reconciliation-sign-off
@@ -3907,7 +3882,6 @@ src/invoices/credit/memos/refunds/index.ts:15: * @compliance PCI-DSS-4.0 §3.2 t
 src/invoices/dunning/cycles/index.ts:27: * @compliance SOX §404 internal-controls bad-debt-evidence
 src/invoices/dunning/cycles/index.ts:28: * @compliance GDPR Art.6(1)(f) lawful-basis-legitimate-interest collections
 src/invoices/hooks/bill.ts:21: * @compliance SOX §404 internal-controls
-src/invoices/hooks/encryptSensitiveFields.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
 src/invoices/hooks/gl-hooks-emit-events.test.ts:19: * @compliance SOX §404 internal-controls
 src/invoices/hooks/invoice.ts:25: * @compliance SOX §404 internal-controls
 src/invoices/index.ts:65: * @compliance SOX §404 internal-controls
@@ -4016,9 +3990,6 @@ src/media/sepa/mandates/index.ts:22: * @compliance GDPR Art.6(1)(b) lawful-basis
 src/media/sepa/mandates/index.ts:23: * @compliance EPC130-08 sepa-direct-debit-rulebook
 src/membership/admin/mutate/access/index.ts:22: * @compliance SOC-2 CC6.1 logical-access-controls
 src/messages/index.ts:14: * @compliance GDPR Art 5(1)(e) storage-limitation retention
-src/middleware/accounting/tenant-scope.ts:16: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/middleware/accounting/tenant-scope.ts:17: * @compliance GDPR Art.32 security-of-processing
-src/middleware/accounting/tenant-scope.ts:18: * @compliance SOC-2 CC6.1 logical-access-controls
 src/mineral/resource/assets/index.ts:19: * @compliance SOX §404 internal-controls
 src/nace/rev2/index.ts:12: * @compliance EU CSRD ESRS 2 §80(b) sector-classification
 src/nist/incits/359/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -4378,7 +4349,7 @@ src/customers/sales/orders/shipments/tracking/events/index.ts:16: * @accounting 
 src/dashboard/actions/index.ts:33: * @accounting IFRS double-entry-bookkeeping
 src/dashboard/actions/index.ts:34: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/dashboard/dashboards.ts:40: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/dashboard/index.tsx:56: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/dashboard/index.tsx:42: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/dashboard/spec/projection.ts:15: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/dashboard/spec/projection.ts:16: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/depreciation/service/index.ts:24: * @accounting IFRS IAS-16 §62 depreciation-methods
@@ -5126,8 +5097,6 @@ src/enforce/document/tenant/for/user/index.ts:17: * @security ISO-27002 §8.3 in
 src/enforce/segregation/of/duty/index.ts:9: * @security ISO-27002 §5.4 segregation-of-duties
 src/ensure/unique/slug/within/tenant/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/ensure/unique/slug/within/tenant/index.ts:18: * @security ISO-27002 §5.15 access-control
-src/factory/auto-populate-tenant.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/factory/auto-populate-tenant.ts:8: * @security ISO-27002 § 5.15 access-control
 src/fair/value/measurements/index.ts:21: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/feature/registry/index.ts:28: * @security ISO-27001 A.5.15 access-control
 src/feature/registry/index.ts:29: * @security ISO-27002 §5.15 access-control feature-entitlement
@@ -5144,10 +5113,6 @@ src/fiscal/periods/prior/period/adjustments/index.ts:19: * @security ISO-27001 A
 src/fiscal/periods/provisions/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/fixed/assets/index.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/fx/transactions/index.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/get/enabled/locales/for/tenant/index.ts:9: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/get/me/user/index.ts:7: * @security ISO-27001 A.5.16 identity-management
-src/get/me/user/index.ts:8: * @security ISO-27001 A.5.17 authentication-information
-src/get/me/user/index.ts:9: * @security ISO-27002 §8.5 secure-authentication
 src/get/preview/secret/index.ts:7: * @security ISO-27002 §5.17 authentication-information secret-management
 src/get/tenant/from/request/index.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/get/tenant/from/request/index.ts:8: * @security ISO-27002 §5.15 access-control
@@ -5177,8 +5142,6 @@ src/internal/policies/policy/versions/index.ts:6: * @security ISO-27001 A.5.23 c
 src/invoices/credit/memos/index.ts:26: * @security ISO-27002 §5.4 segregation-of-duties issuer-vs-approver
 src/invoices/dunning/cycles/index.ts:29: * @security ISO-27002 §5.4 segregation-of-duties write-off-approval
 src/invoices/hooks/bill.ts:22: * @security ISO-27002 §5.4 segregation-of-duties
-src/invoices/hooks/encryptSensitiveFields.ts:11: * @security ISO-27002 §8.24 use-of-cryptography
-src/invoices/hooks/encryptSensitiveFields.ts:12: * @security ISO-27001 A.8.24 use-of-cryptography
 src/invoices/invoice/lines/hooks/beforeValidate.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/invoices/payments/hooks/beforeValidate.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/invoices/payments/payment/allocations/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5244,9 +5207,6 @@ src/membership/admin/mutate/access/index.ts:20: * @security ISO-27002 §5.15 acc
 src/membership/admin/mutate/access/index.ts:21: * @security ISO-27002 §5.4 segregation-of-duties
 src/middleware/accounting/index.ts:4: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/middleware/accounting/index.ts:5: * @security ISO-27002 §5.15 access-control
-src/middleware/accounting/tenant-scope.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/middleware/accounting/tenant-scope.ts:14: * @security ISO-27002 §5.15 access-control
-src/middleware/accounting/tenant-scope.ts:15: * @security ISO-27002 §8.3 information-access-restriction
 src/mineral/resource/assets/index.ts:20: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/nist/incits/359/conventions/index.ts:23: * @security ISO-27002 §5.15 access-control
 src/nist/incits/359/conventions/test.ts:7: * @security ISO-27002 §5.15 access-control
@@ -5724,7 +5684,6 @@ src/country/fallback/index.ts:53: * @audit Conservation Law 54 universal-identit
 src/crown/index.ts:11: * @audit note, colour and uuid computed from the position math, never hand-asserted
 src/csrd/disclosures/index.ts:22: * @audit ISAE 3000 limited-assurance (rises to reasonable-assurance under CSRD by 2028)
 src/currency/fallback/index.test.ts:20: * @audit Conservation Law 53 self-referential-closure (currency identity element)
-src/currency/fallback/index.ts:60: * @audit Conservation Law 53 self-referential-closure (currency identity element)
 src/currency/fallback/uuid.ts:60: * @audit Conservation Law 8  content-addressable integrity
 src/currency/fallback/uuid.ts:61: * @audit Conservation Law 47 type-level uuid
 src/currency/fallback/uuid.ts:62: * @audit Conservation Law 53 self-referential-closure (XXX identity)
@@ -5813,7 +5772,6 @@ src/evidence/attestations/index.ts:17: * @audit ISO-19011:2018 audit-trail attes
 src/expand/index.ts:23: * @audit composed from @/entropy + @/uuid/matrix (the live-matrix readings); re-proves nothing
 src/expense/index.ts:14: * @audit entropy read live from @/entropy + @/tamper/import; billed as a balanced double-entry, never asserted
 src/export/standards/service.ts:27: * @audit ISO-19011:2018 audit-trail
-src/factory/auto-populate-tenant.ts:9: * @audit ISO-19011:2018 audit-trail before-validate-hooks
 src/factory/collection/base/index.ts:190: * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections
 src/factory/collection/test.ts:14: * @audit ISO 19011:2018 §6.4.6 — regression-guard for shared-field collision
 src/factory/recompute-parent-aggregates.ts:26: * @audit ISO-19011:2018 audit-trail derived-total-provenance
@@ -6030,12 +5988,10 @@ src/messages/index.ts:13: * @audit ISO-19011:2018 audit-trail message-provenance
 src/meta/automation/index.ts:25: * @audit ISO 19011:2018 §6.4.6 (proposals + their resolution audit-trailed)
 src/metatron/index.ts:21: * @audit counts computed on the live matrix, never hand-asserted
 src/method/index.ts:16: * @audit paths computed from live index.ts exports; never hand-listed
-src/middleware/accounting/tenant-scope.ts:19: * @audit ISO-19011:2018 audit-trail
 src/migrate/quaternary/index.ts:20: * @audit the folder law is computed from the live tree, never hand-maintained
 src/mineral/resource/assets/index.ts:18: * @audit ISO 19011:2018 §6.4.6 audit-evidence-EE-assets
 src/mirror/index.ts:14: * @audit forward/backward are the two word-orders; the value is the digital root of a commutative sum
 src/modal/CreateJournalEntryModal.tsx:13: * @audit ISO-19011:2018 audit-trail journal-entry-creation
-src/monitor/index.ts:4: * @audit vitals mapping delegates to medical/device; violations scan @/monitor/violations
 src/multi/currency/service/index.ts:20: * @audit ISO-19011:2018 audit-trail
 src/multi/search/index.ts:41: * @audit Conservation Law 53 self-referential-closure (this is the internal half)
 src/name/index.ts:11: * @audit uuidOfName is total — defined for ANY name, so every name folds; the identity is computed
@@ -6121,16 +6077,12 @@ src/quantum/log/index.ts:9: * @audit pure functions; never hand-asserted chain c
 src/quantum/marine/index.ts:21: * @audit zones are computed from distance; general average is proportional to value — never asserted
 src/quantum/math/index.ts:14: * @audit composed from @/horo (number root) + @/digit (uuid root); computed
 src/quantum/matrix/index.ts:20: * @audit computed from the live matrix, never hand-asserted
-src/quantum/mcp/index.ts:9: * @audit gate law is pure; tool drift checked via rebuild-from-source in integration
 src/quantum/memory/index.ts:13: * @audit composed from live matrix + architecture lattice; never hand-asserted
-src/quantum/number/index.ts:10: * @audit rational test is classical arithmetic; never hand-asserted π claims
 src/quantum/particle/index.ts:11: * @audit composed from @/particle (uuid) + @/digit (the ring digit); computed
-src/quantum/pi/index.ts:10: * @audit offset lower bound is counting argument; normality conjectured not proven
 src/quantum/reality/index.ts:9: * @audit composed from the live matrix collapse; never hand-asserted
 src/quantum/request/index.ts:9: * @audit request id from @/integrity uuid; cache key from quantum/cache
 src/quantum/research/index.ts:14: * @audit cost = agents × tokens (the run's real spend); value = entropy reduced; the ledger balances
 src/quantum/sanitization/index.ts:11: * @audit boundaries composed from memory/architecture + shred + receipt; never hand-asserted
-src/quantum/security/index.ts:9: * @audit conjugate law modeled as forgeCostLog2 ≥ compression depth
 src/quantum/serverless/index.ts:18: * @audit computed from live wrangler.jsonc + live tree; never hand-asserted
 src/quantum/snapshot/index.ts:9: * @audit chain verify via uuid-linked leaves; never hand-asserted history
 src/quantum/society/index.ts:9: * @audit social fact uuid + balance are pure; never hand-asserted governance
@@ -6143,7 +6095,6 @@ src/query/fingerprint/index.ts:60: * @audit Conservation Law 8  content-addressa
 src/query/fingerprint/index.ts:61: * @audit Conservation Law 47 type uuid (ContentUuid<SqlQuery> is the type-level brand)
 src/query/fingerprint/index.ts:62: * @audit Conservation Law 53 self-referential-closure (cached query result is the search-index fallback)
 src/query/fingerprint/test.ts:20: * @audit Conservation Law 8 + Law 47 (content uuid at the type level)
-src/readings/index.ts:11: * @audit boundary checks delegate to quantum/device; never hand-asserted sensing
 src/readme/entropy.ts:14: * @audit every line derived from folder model + cross impurities — never hand-set
 src/readme/quantum-thinking.ts:8: * @audit pure transform; load reads cached path ledger + live atom facets
 src/reality/index.ts:9: * @audit reality = the live matrix root; computed, never hand-asserted
@@ -6441,7 +6392,7 @@ src/analytics/TrendAnalysisCard.tsx:26: * @quality ISO-25010 functional-suitabil
 src/analytics/types.ts:18: * @quality ISO-25010 maintainability shared-vocabulary
 src/blocks/form/Component.tsx:22: * @quality ISO-25010 usability form-rendering
 src/dashboard/dashboards.ts:41: * @quality ISO-25010 maintainability reusability shared-vocabulary
-src/dashboard/index.tsx:57: * @quality ISO-25010 usability dashboard-presentation
+src/dashboard/index.tsx:43: * @quality ISO-25010 usability dashboard-presentation
 src/dashboard/nav/Nav.tsx:25: * @quality ISO-25010 usability navigability bounded-stable-surface
 src/dashboard/nav/index.ts:33: * @quality ISO-25010 usability navigability bounded-stable-surface
 src/dashboard/spec/index.ts:24: * @quality ISO-25010 maintainability shared-vocabulary reusability

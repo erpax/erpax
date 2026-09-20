@@ -14,7 +14,6 @@ import { realiseSkillsForPath, clearSkillContextCache } from '@/agent/skill-cont
 import { alcapsBaselineViolations } from '@/seal/baseline-debt'
 import { clearRulesCache, rulesOf } from '@/rules'
 import { topConcentrations } from '@/rules/concentration'
-import { scanViolationsRealtime } from '@/monitor/violations'
 import { deriveCorpusAnalytics } from '@/readme/compute'
 import { freeEnergyFromEntropy } from '@/entropy'
 

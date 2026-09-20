@@ -1,9 +1,4 @@
-/**
- * monitor — hospital bedside vitals facet; corpus violation monitor + improve facet.
- *
- * @audit vitals mapping delegates to medical/device; violations scan @/monitor/violations
- */
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
+
 
 export { deviceReadingFromMonitor, wireModalityToEmr } from '@/medical/device'
 

@@ -450,3 +450,25 @@ describe('arrival — an exempt check still says something', () => {
     expect(exemptFailures(['Analyze (actions) (success)', 'X (in_progress)', 'Y (skipped)'])).toEqual([])
   })
 })
+
+// THE THIRD TAUGHT CURE, 2026-09-20. A purge of dead exports orphaned 115 symbols; only the
+// zero-warning lint lane saw them, and the cleanup was done by hand, file by file. A cleanup that
+// needs a person is one that gets skipped on the push that needs it.
+describe('arrival — the cure for what a purge leaves behind', () => {
+  it('recognises the lint lane refusing on orphaned symbols', () => {
+    expect(cureFor("  35:10  warning  'dualOf' is defined but never used.")?.name).toBe('symbols a purge orphaned')
+    expect(cureFor("  19:7  warning  'X' is assigned a value but never used.")?.name).toBe('symbols a purge orphaned')
+    expect(cureFor('ESLint found too many warnings (maximum: 0).')?.name).toBe('symbols a purge orphaned')
+  })
+
+  it('sweeps with --fix and commits src BY PATH, never -a', () => {
+    const cure = cureFor('ESLint found too many warnings (maximum: 0).')
+    expect(cure?.cmd).toContain('rules orphans --fix')
+    expect(cure?.cmd).toContain('git add -u src')
+    expect(cure?.cmd).toMatch(/-- src$/)
+  })
+
+  it('does not fire on an unrelated push denial', () => {
+    expect(cureFor('remote: Permission denied')).toBeUndefined()
+  })
+})

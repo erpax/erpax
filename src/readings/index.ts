@@ -1,17 +1,4 @@
-/**
- * readings — device-collapsed snapshots feeding the analog stream.
- *
- * A reading is where [[quantum/device]] collapses continuous physiology into discrete
- * numbers; each snapshot is content-addressed and append-only, then folded into
- * [[quantum/emr]] as observations and replayed as [[analog]] results ([[vital]] signs,
- * labs, [[biometric]] captures).
- *
- *   tsx src/readings/index.ts
- *
- * @audit boundary checks delegate to quantum/device; never hand-asserted sensing
- * @see ../quantum/device — ../quantum/emr — ../analog — ./SKILL.md
- */
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
+
 import { boundaryCrossHolds, mayReport, readingSnapshotUuid } from '@/quantum/device'
 
 /** Collapsed capture at the device edge — numbers only, raw stream stays local. */

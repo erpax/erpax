@@ -1,4 +1,4 @@
-import { algebraFloatPow, algebraSqrt, exactFloor, exactMax, exactMin } from '@/algebra'
+import { exactFloor, exactMax, exactMin } from '@/algebra'
 
 /**
  * Calculate percentage

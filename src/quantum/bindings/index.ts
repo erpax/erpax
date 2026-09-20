@@ -10,7 +10,6 @@
  * @see ../../cloudflare — ../../bindings — ./SKILL.md
  */
 import { readFileSync } from 'node:fs'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 import { join } from 'node:path'
 import { parseWranglerBindings } from '@/cloudflare'
 

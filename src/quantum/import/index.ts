@@ -18,7 +18,6 @@ export {
 } from '@/quantum/boundary'
 
 import { classifyImports } from '@/quantum/boundary'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** Import law holds when no deep escapes remain — barrels only. */
 export function importLawHolds(specs: readonly string[], root = 'src'): boolean {

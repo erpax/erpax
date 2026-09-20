@@ -22,7 +22,7 @@ import { exactAbs } from '@/algebra'
  * @see ../pyramid · ../navigation · ../quantum · ../globe · ../horo · ../platonic · ../forecasts · ./SKILL.md
  */
 import { foldToRoot, merge } from '@/merge'
-import { pyramid, courses, type Pyramid } from '@/pyramid'
+import { pyramid, type Pyramid } from '@/pyramid'
 import { merkaba, type Merkaba } from '@/navigation'
 import { DOUBLE_TORUS_BITS, doubleTorusCostLog2 } from '@/quantum'
 import { toGeodetic, atPole, type Geodetic } from '@/globe'

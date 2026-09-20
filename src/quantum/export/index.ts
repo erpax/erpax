@@ -18,7 +18,6 @@ export {
 } from '@/quantum/boundary'
 
 import { parseTsExports, boundaryUuid } from '@/quantum/boundary'
-import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** Export boundary flips when any public symbol changes — tamper signal. */
 export function exportBoundaryFlips(
