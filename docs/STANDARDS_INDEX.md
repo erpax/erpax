@@ -2276,6 +2276,8 @@ src/properties/spaces/index.ts:13: * @standard EN-15221-6:2011 facility-manageme
 src/provenance/index.ts:18: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
 src/provenance/index.ts:19: * @standard W3C PROV-DM — provenance as a graph of entities and derivations
 src/provider/index.tsx:6: * @standard W3C CSS-Color-4 color-contrast
+src/publish/zenodo/index.ts:16: * @standard ISO 26324 — DOI: assigned by a registration agency, never computed ([[rules]]/forge)
+src/publish/zenodo/index.ts:17: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
 src/pwa/index.ts:44: * @standard W3C Service Workers (W3C-SW)
 src/pwa/index.ts:45: * @standard W3C Web App Manifest (W3C-WAM)
 src/pwa/index.ts:46: * @standard W3C Push API + W3C Notifications API

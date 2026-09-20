@@ -99,6 +99,17 @@ export function closureHashOf(entryFiles: readonly string[], cwd: string = proce
  * reads the filesystem". See ./SKILL.md.
  */
 export const CORPUS_WIDE_SUITES: ReadonlySet<string> = new Set([
+  // ADDED 2026-09-20, after the same defect the set exists for recurred. Six atoms landed over one
+  // session; the vocabulary gate (ceiling 0, a THEOREM), the standards catalogue, the host-math ban
+  // and the ungated-standards ratchet all went red in CI while every local lane read green. Each of
+  // these scans process.cwd() at runtime, so its import closure never moves when an atom is minted
+  // — which is exactly the condition under which a receipt CITES a suite instead of running it.
+  'src/proof/replaceable/test.ts',
+  'src/standards/emit.test.ts',
+  'src/law/folder/test.ts',
+  'src/vocabulary/test.ts',
+  'src/quantum/vocabulary/test.ts',
+  'src/algebra/test.ts',
   'src/matrix/test.ts',
   'src/rules/test.ts',
   'src/rules/drift/test.ts',

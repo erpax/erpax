@@ -1,7 +1,8 @@
 {
   "upload_type": "software",
   "title": "erpax — a zero-entropy, content-addressed ERP corpus",
-  "description": "<p>erpax is an ERP corpus in which every folder under <code>src/</code> is one irreducible atom told three ways (form &middot; code &middot; proof), wired through a single content-uuid. Its law is <em>zero entropy &rArr; infinite tamper-cost</em>: a claim is enforced by a gate that blocks its violation, never by prose that asks for compliance.</p><p><strong>Machine-checked proof, as of v1.0.6 (2026-09-18).</strong> The decisions that carry consequences are defined in Lean 4 and proved there, with the TypeScript as a checked twin: <code>src/verify/lean/Release.lean</code> &harr; the release decision, <code>Arrival.lean</code> &harr; the landing verdict, <code>Uuid.lean</code> &harr; the v8 uuid layout. Each twin&rsquo;s test reads its <code>.lean</code> file for every theorem name it relies on, so a theorem cannot quietly disappear.</p><p><strong>The inventory, kernel-checked with Lean 4.33.1 and counted rather than asserted:</strong> 105 theorems across 12 files, <strong>every one accepted by the kernel and none resting on <code>sorry</code></strong>. 65 depend on no axioms at all (closed by <code>decide</code> over a stated finite domain); 40 rest on Lean&rsquo;s own <code>propext</code> and <code>Quot.sound</code>, reached through core list and arithmetic lemmas. None uses <code>native_decide</code>, which would trust the compiler instead of the kernel.</p><p><strong>What is proved, and what is not.</strong> Earlier releases carried 15 declarations in three files that did not compile and 4 <code>sorry</code> stubs; those files claimed properties of ARBITRARY data (that any list of loop states rises, that any ledger is append-only) and several were false as written or dischargeable by fabricating a witness. They are now stated about the OPERATIONS that produce the data &mdash; a gated publish, a folded refinement step, a computed convergence &mdash; so each guarantee holds by construction. A theorem proves its DECISION, never the facts it is fed: no proof here makes a red build green, a forged digest verify, or a divergent computation convergent, and none of it claims a Millennium problem is solved.</p><p>Licensed CC-BY-NC-ND-4.0 throughout, with commercial terms available separately.</p>",
+  "description": "<p>erpax is an ERP corpus in which every folder under <code>src/</code> is one irreducible atom told three ways (form &middot; code &middot; proof), wired through a single content-uuid. Its law is <em>zero entropy &rArr; infinite tamper-cost</em>: a claim is enforced by a gate that blocks its violation, never by prose that asks for compliance.</p><p><strong>Machine-checked proof, as of v1.0.6.</strong> The decisions that carry consequences are defined in Lean and proved there, with the TypeScript as a checked twin. Each twin&rsquo;s test reads its <code>.lean</code> file for every theorem name it relies on, so a theorem cannot quietly disappear.</p><p><strong>The inventory, kernel-checked with Lean Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release) and counted rather than asserted:</strong> 177 theorems across 19 files, every one accepted by the kernel and <strong>none resting on <code>sorry</code></strong>. 111 depend on no axioms at all (closed by <code>decide</code> over a stated finite domain); 66 rest on Lean&rsquo;s own <code>propext</code> and <code>Quot.sound</code>. None uses <code>native_decide</code>, which would trust the compiler instead of the kernel. The record is addressed by the content hash of the sources it ran over, <code>db0679856f5bc142</code>, so a stale claim is detectable by construction.</p><p>The corpus holds 3601 content-addressed atoms.</p><p><strong>What is proved, and what is not.</strong> A theorem proves its DECISION, never the facts it is fed: no proof here makes a red build green, a forged digest verify, or a divergent computation convergent, and none of it claims a Millennium problem is solved.</p><p>Licensed CC-BY-NC-ND-4.0 throughout, with commercial terms available separately.</p>",
+  "version": "1.0.6",
   "creators": [
     {
       "name": "Rouschev, Tsvetan",
@@ -26,51 +27,6 @@
     {
       "identifier": "https://github.com/erpax/erpax",
       "relation": "isSupplementTo",
-      "scheme": "url"
-    },
-    {
-      "identifier": "10.5281/zenodo.22237698",
-      "relation": "isVersionOf",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1007/3-540-48184-2_32",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1007/BF00196791",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.17487/RFC6962",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.17487/RFC9562",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.17487/RFC8785",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "https://www.iso.org/standard/78176.html",
-      "relation": "references",
-      "scheme": "url"
-    },
-    {
-      "identifier": "https://www.iso.org/standard/70017.html",
-      "relation": "references",
-      "scheme": "url"
-    },
-    {
-      "identifier": "https://lex.bg/laws/ldoc/2135540645",
-      "relation": "references",
       "scheme": "url"
     }
   ]

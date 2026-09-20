@@ -3467,7 +3467,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 100,
+    "count": 101,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -3573,7 +3573,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Information security management system",
     "uuid": "55e0dd80-ff9d-877e-926f-f0e8e91c9254",
     "color": "hsl(24 66% 46%)",
-    "count": 63,
+    "count": 64,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -3679,7 +3679,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
     "uuid": "1f8df678-adff-8feb-9e78-aaa58e7b0fb4",
     "color": "hsl(157 56% 38%)",
-    "count": 63,
+    "count": 64,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -6007,7 +6007,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Application Security Verification Standard",
     "uuid": "b55af77e-a755-8046-a653-0472364e07e3",
     "color": "hsl(346 57% 44%)",
-    "count": 15,
+    "count": 16,
     "modules": [
       {
         "path": "src/agent/index.ts",
@@ -6039,6 +6039,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/rfc/6585/rate-limit.ts",
+        "section": ""
+      },
+      {
+        "path": "src/rules/inject/index.ts",
         "section": ""
       },
       {
@@ -8876,7 +8880,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "US Corporate Transparency Act 2021 (31 U.S.C. §5336) — beneficial ownership information reporting requirements",
     "uuid": "5a81e3b4-4118-8fd7-ac08-55d897ad1fdc",
     "color": "hsl(129 72% 50%)",
-    "count": 37,
+    "count": 38,
     "modules": [
       {
         "path": "src/architecture/invariant/checks.ts",
