@@ -9371,6 +9371,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "svg/hero/generator"
   },
   {
+    "atom": "swarm",
+    "name": "swarm",
+    "description": "Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.",
+    "path": "swarm"
+  },
+  {
     "atom": "swatch",
     "name": "swatch",
     "description": "Use when reasoning about swatch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
