@@ -1389,6 +1389,7 @@ src/hero/config/index.ts:4: * @standard W3C HTML5 section-element
 src/hero/config/index.ts:5: * @standard schema.org WebPageElement
 src/hero/config/index.ts:6: * @standard WAI-ARIA 1.2 region-landmark-role
 src/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
+src/horo/merkaba/rotation/index.ts:18: * @standard ISO 1151-1 — flight dynamics, body axes and sign conventions
 src/i18n/harvest/index.ts:30: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/i18n/harvest/index.ts:31: * @standard BCP-47 language tags
 src/i18n/index.ts:11: * @standard ECMA-402 internationalization-api
