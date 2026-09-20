@@ -96759,6 +96759,63 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "swarm",
+    "path": "swarm",
+    "translations": [
+      {
+        "key": "name",
+        "source": "swarm",
+        "uuid": "8b6d4242-d722-8922-ac83-8d4438613d3c",
+        "words": [
+          "swarm"
+        ],
+        "values": {
+          "en": "swarm"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.",
+        "uuid": "a74c9286-a558-83e2-ab3e-f4efe8095c86",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "swarm",
+          "a",
+          "hexacopter",
+          "takes",
+          "four",
+          "stick",
+          "numbers",
+          "and",
+          "produces",
+          "six",
+          "motor",
+          "commands",
+          "a",
+          "swarm",
+          "takes",
+          "a",
+          "set",
+          "of",
+          "tasks",
+          "and",
+          "produces",
+          "an",
+          "assignment",
+          "across",
+          "n",
+          "agents"
+        ],
+        "values": {
+          "en": "Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents."
+        }
+      }
+    ]
+  },
+  {
     "atom": "swatch",
     "path": "swatch",
     "translations": [
@@ -210411,4 +210468,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3596
+export const TRANSLATIONS_COUNT = 3597

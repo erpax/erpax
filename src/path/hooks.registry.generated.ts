@@ -1307,6 +1307,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "surprisal",
   "sustainability",
   "svg/hero/generator",
+  "swarm",
   "syntax",
   "syntax/cache",
   "tags",
@@ -1502,7 +1503,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1495 as const
+export const ATOM_LEDGER_PATH_COUNT = 1496 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -6303,6 +6304,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "svg/hero/generator": [
     "svg/hero/generator"
+  ],
+  "swarm": [
+    "swarm"
   ],
   "syntax": [
     "syntax"

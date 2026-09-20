@@ -1,3 +1,37 @@
+---
+name: swarm
+description: Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.
+atomPath: swarm
+coordinate: "swarm · 4/weave · 8b6d4242"
+contentUuid: "2c30ac2a-9206-580d-abf3-c400b67b3fcc"
+diamondUuid: "b4ebad37-c9c7-8476-a41a-8934874a1148"
+uuid: "8b6d4242-d722-8922-ac83-8d4438613d3c"
+horo: 4
+typography:
+  partition: swarm
+  bondDegree: 15
+standards:
+  - "Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan"
+bindings: []
+signatures:
+  computationUuid: "44692b0f-6f85-817b-a24b-f0415976770f"
+  stages:
+    - stage: path
+      stageUuid: "fd00e325-ca88-80a0-a0d6-17cc57f6d28d"
+    - stage: trinity
+      stageUuid: "f50957d6-01b8-8d25-a5a5-6f65d04a02b1"
+    - stage: boundary
+      stageUuid: "8ab5cee8-bf10-8040-ad09-8a84a5256fcb"
+    - stage: links
+      stageUuid: "3dc520e6-7e80-8638-b949-763a178fae05"
+    - stage: horo
+      stageUuid: "ff6c13ca-9151-83dc-9711-d57c4fe779a3"
+    - stage: seal
+      stageUuid: "91a85422-f1cb-8084-b5d4-b07f0c2d05e5"
+    - stage: uuid
+      stageUuid: "a5cdaa8e-b1fd-8ed3-b9f9-5f43bbc21101"
+version: 2
+---
 # swarm — one mixer, one level up: work over agents, and what happens when one dies
 
 A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of
