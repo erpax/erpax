@@ -3,13 +3,13 @@ name: routing
 description: "Use when reasoning about routing — Session routing — improve, append, seal chat sessions"
 atomPath: "quantum/chat/routing"
 coordinate: "quantum/chat/routing · 8/crest · 628dee77"
-contentUuid: "73b219fa-5608-50c8-b46a-8b59a889b816"
+contentUuid: "38cfa2ac-98eb-5f67-9955-946904216d9a"
 diamondUuid: "9f1407dc-a444-8ba8-914e-b5e75d87bb91"
 uuid: "628dee77-eef8-89ae-914e-732b2a1d1dc1"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 29
+  bondDegree: 31
 standards: []
 bindings: []
 signatures:
@@ -51,11 +51,11 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "8711370d-915a-8f89-a0e3-35b882651445"
-    contentUuid: "73b219fa-5608-50c8-b46a-8b59a889b816"
+    contentUuid: "38cfa2ac-98eb-5f67-9955-946904216d9a"
 version: 2
 ---
 # quantum/chat/routing
 
 Session routing for chat — improve, append, and seal chat sessions.
 
-<sub>content-uuid `73b219fa-5608-50c8-b46a-8b59a889b816` · account `quantum/chat/routing` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `38cfa2ac-98eb-5f67-9955-946904216d9a` · account `quantum/chat/routing` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

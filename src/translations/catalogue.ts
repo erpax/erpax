@@ -3786,7 +3786,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about i18n — MCP localization layer — Slice ZZZZZZZZ (2026-05-11).",
-        "uuid": "72a6f6ef-b1d5-89ac-ad9a-2d42a2697f30",
+        "uuid": "b0c4dd35-d2f8-889b-9251-7afa26ae6926",
         "words": [
           "use",
           "when",
@@ -19446,7 +19446,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints.",
-        "uuid": "95c1d751-a5d3-88d6-9006-91d964938284",
+        "uuid": "4193f6a5-cd83-8031-9da6-0a4d6fe76115",
         "words": [
           "use",
           "when",
@@ -19562,7 +19562,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when typing a tenant's agnostic seed configuration — the `TenantConfig` shape (branding, businessModel, subscriptionPlans with feature limits, marketing content, feature flags, localization, stripe) plus the `TranslatedField` / `FeatureLimit` helpers.",
-        "uuid": "9581684f-342a-85c8-ba2a-69851f955fe7",
+        "uuid": "9496884a-0904-8540-9f8a-13f7372c1c67",
         "words": [
           "use",
           "when",
@@ -40311,6 +40311,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "localization",
+    "path": "i18n/localization",
+    "translations": [
+      {
+        "key": "name",
+        "source": "localization",
+        "uuid": "9bf0e368-d691-863e-9707-a256bf03dce4",
+        "words": [
+          "localization"
+        ],
+        "values": {
+          "en": "localization"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about localization — The corpus ships 24 EU official languages plus , , , , and . That list is DECLARED here in the open — no theorem derives which languages a business serves — and everything else…",
+        "uuid": "d8ed3d78-8f1b-8f97-8648-983c553e6291",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "localization",
+          "the",
+          "corpus",
+          "ships",
+          "eu",
+          "official",
+          "languages",
+          "plus",
+          "and",
+          "that",
+          "list",
+          "is",
+          "declared",
+          "here",
+          "in",
+          "the",
+          "open",
+          "no",
+          "theorem",
+          "derives",
+          "which",
+          "languages",
+          "a",
+          "business",
+          "serves",
+          "and",
+          "everything",
+          "else"
+        ],
+        "values": {
+          "en": "Use when reasoning about localization — The corpus ships 24 EU official languages plus , , , , and . That list is DECLARED here in the open — no theorem derives which languages a business serves — and everything else…"
+        }
+      }
+    ]
+  },
+  {
     "atom": "request",
     "path": "i18n/request",
     "translations": [
@@ -40344,6 +40403,71 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about the i18n request — locale and message resolution."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "routing",
+    "path": "i18n/routing",
+    "translations": [
+      {
+        "key": "name",
+        "source": "routing",
+        "uuid": "8dbcd9be-4724-86f6-a859-339d4d22921a",
+        "words": [
+          "routing"
+        ],
+        "values": {
+          "en": "routing"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about routing — is the whole claim. Every URL carries its locale — , — so the language a page renders in is a fact of the address, not a negotiation between a cookie, an header and a pathname…",
+        "uuid": "59e3e8ee-5539-87e4-9296-74973876378e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "routing",
+          "is",
+          "the",
+          "whole",
+          "claim",
+          "every",
+          "url",
+          "carries",
+          "its",
+          "locale",
+          "so",
+          "the",
+          "language",
+          "a",
+          "page",
+          "renders",
+          "in",
+          "is",
+          "a",
+          "fact",
+          "of",
+          "the",
+          "address",
+          "not",
+          "a",
+          "negotiation",
+          "between",
+          "a",
+          "cookie",
+          "an",
+          "header",
+          "and",
+          "a",
+          "pathname"
+        ],
+        "values": {
+          "en": "Use when reasoning about routing — is the whole claim. Every URL carries its locale — , — so the language a page renders in is a fact of the address, not a negotiation between a cookie, an header and a pathname…"
         }
       }
     ]
@@ -48850,7 +48974,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-        "uuid": "d672a583-37c9-8e3f-9d78-b32d2eb73da8",
+        "uuid": "53b387d7-377f-8dc2-a0d9-b335b42284d3",
         "words": [
           "use",
           "when",
@@ -99669,7 +99793,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
-        "uuid": "b044180e-f940-864e-8032-b493167b2faa",
+        "uuid": "252829bb-38b8-8c5e-a72f-cf12d4877929",
         "words": [
           "use",
           "when",
@@ -209713,4 +209837,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3583
+export const TRANSLATIONS_COUNT = 3585

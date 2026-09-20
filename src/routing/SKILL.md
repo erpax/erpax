@@ -3,13 +3,13 @@ name: routing
 description: "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service."
 atomPath: routing
 coordinate: "routing · 8/crest · 8dbcd9be"
-contentUuid: "b807085d-6073-55f4-b0a9-af2f560d5581"
+contentUuid: "707dcec3-924b-593c-8706-452154f7e816"
 diamondUuid: "bfc622ac-5669-8a61-8432-284e39963f40"
 uuid: "8dbcd9be-4724-86f6-a859-339d4d22921a"
 horo: 8
 typography:
   partition: routing
-  bondDegree: 29
+  bondDegree: 31
 standards:
   - "NIST AI RMF (risk-proportionate controls) — map risk → control strength"
   - "NIST AI RMF (risk-proportionate controls) — map risk → control strength`"

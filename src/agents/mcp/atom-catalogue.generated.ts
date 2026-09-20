@@ -3839,10 +3839,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "i18n/harvest"
   },
   {
+    "atom": "localization",
+    "name": "localization",
+    "description": "Use when reasoning about localization — The corpus ships 24 EU official languages plus , , , , and . That list is DECLARED here in the open — no theorem derives which languages a business serves — and everything else…",
+    "path": "i18n/localization"
+  },
+  {
     "atom": "request",
     "name": "request",
     "description": "Use when reasoning about the i18n request — locale and message resolution.",
     "path": "i18n/request"
+  },
+  {
+    "atom": "routing",
+    "name": "routing",
+    "description": "Use when reasoning about routing — is the whole claim. Every URL carries its locale — , — so the language a page renders in is a fact of the address, not a negotiation between a cookie, an header and a pathname…",
+    "path": "i18n/routing"
   },
   {
     "atom": "identification",

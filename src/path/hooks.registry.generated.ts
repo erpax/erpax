@@ -1441,7 +1441,9 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "vocabulary/manufacturing/seed/operations",
   "vocabulary/manufacturing/seed/positions",
   "vocabulary/manufacturing/seed/standards",
+  "vocabulary/marketing",
   "vocabulary/maxtampercost",
+  "vocabulary/tag",
   "vocabulary/tag/list",
   "voting",
   "wallet",
@@ -1489,7 +1491,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1482 as const
+export const ATOM_LEDGER_PATH_COUNT = 1484 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -6777,12 +6779,21 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "vocabulary/manufacturing/seed",
     "vocabulary/manufacturing/seed/standards"
   ],
+  "vocabulary/marketing": [
+    "vocabulary",
+    "vocabulary/marketing"
+  ],
   "vocabulary/maxtampercost": [
     "vocabulary",
     "vocabulary/maxtampercost"
   ],
+  "vocabulary/tag": [
+    "vocabulary",
+    "vocabulary/tag"
+  ],
   "vocabulary/tag/list": [
     "vocabulary",
+    "vocabulary/tag",
     "vocabulary/tag/list"
   ],
   "voting": [
@@ -6943,4 +6954,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 843 as const
+export const MERGED_NESTED_PATH_COUNT = 845 as const
