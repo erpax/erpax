@@ -300,6 +300,15 @@ export interface Cure {
   readonly name: string
   readonly when: RegExp
   readonly cmd: string
+  /**
+   * The cure LANDS the change by another route rather than repairing a condition.
+   *
+   * The other three fix something and let the next round push again. This one cannot: the branch is
+   * protected, and pushing main will be refused however many times it is tried. So the lane runs it
+   * and STOPS — retrying would burn the remaining rounds to reach the same refusal, and report it
+   * as "rounds without a landing" when the landing has in fact begun.
+   */
+  readonly terminal?: boolean
 }
 
 // Module-private for the same reason: cureFor is the face, the table is its body.
@@ -336,6 +345,32 @@ const CURES: readonly Cure[] = [
     cmd:
       'pnpm erpax rules orphans --fix && git add -u src && ' +
       'git commit -m "chore(orphan): sweep the symbols a purge orphaned — the landing lane\'s taught cure" -- src',
+  },
+  // TAUGHT 2026-09-20 by the ruleset that refused this very lane. main went protected — no bypass,
+  // pull request required, six required checks — and the lane's only route was a direct push, so it
+  // burned its rounds and handed to a human on every run. A gate the autonomous path cannot satisfy
+  // makes the path prose ([[rules]]: a law is obeyed when a gate blocks its violation, and a lane
+  // that cannot pass its own gate is a lane nobody will run).
+  //
+  // The lawful route is the one the ruleset names: a branch, a pull request, and the checks. This
+  // cure takes it — branch named for the sha so a re-run finds the same one rather than piling up,
+  // and `|| true` on the PR create so an existing PR is not an error. It does NOT merge: the checks
+  // decide that, and auto-merging on someone's behalf is not this lane's to assume.
+  {
+    name: 'main is protected — land through a pull request',
+    when: /GH013: Repository rule violations|Changes must be made through a pull request/,
+    terminal: true,
+    // Both halves were taught by the first run against a protected main:
+    //   · the LOCAL branch must exist. `gh pr create --fill` computes its title and body from
+    //     `origin/main...<head>`, which is a LOCAL revision — pushing `HEAD:refs/heads/<b>` puts the
+    //     commits on the remote and leaves nothing local to name, so --fill died on an ambiguous
+    //     argument and took the whole cure with it.
+    //   · NO `-u`. On a refspec push it sets the CURRENT branch's upstream to the pushed ref, so the
+    //     first run left local main tracking origin/land/<sha>. A cure that repoints the branch it
+    //     was run from is worse than the refusal it was curing.
+    cmd:
+      'b="land/$(git rev-parse --short HEAD)" && git branch -f "$b" HEAD && git push origin "$b" && ' +
+      '{ gh pr create --base main --head "$b" --fill || gh pr view "$b" --json url --jq .url; }',
   },
 ]
 
@@ -572,9 +607,19 @@ function landMain(extraRefs: readonly string[] = []): number {
     console.log(`· land — taught cure: ${cure.name}`)
     try {
       sh(cure.cmd)
-    } catch {
+    } catch (e) {
+      // The evidence, not just the verdict. `sh` pipes stderr, so a cure that failed used to report
+      // only that it had — and a cure nobody can read is a cure nobody can teach. This session lost
+      // an hour to exactly that shape three times over, in tail(1).
+      const err = e as { stderr?: unknown; stdout?: unknown; message?: unknown }
+      const detail = [err.stderr, err.stdout, err.message].map((x) => String(x ?? '').trim()).filter(Boolean).join('\n')
       console.error(`✗ land — the cure itself failed (${cure.name}); a human decides here.`)
+      if (detail) console.error(detail)
       return 1
+    }
+    if (cure.terminal) {
+      console.log('✓ land — the landing is open on a pull request; the required checks decide it from here.')
+      return 0
     }
   }
   console.error(`✗ land — ${PUSH_ROUNDS} rounds without a landing; a human decides here.`)

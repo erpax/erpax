@@ -472,3 +472,63 @@ describe('arrival — the cure for what a purge leaves behind', () => {
     expect(cureFor('remote: Permission denied')).toBeUndefined()
   })
 })
+
+describe('arrival — the lane knows the route a protected main leaves open', () => {
+  const REFUSAL = [
+    'remote: error: GH013: Repository rule violations found for refs/heads/main.',
+    'remote: - Changes must be made through a pull request.',
+    'remote: - 6 of 6 required status checks are expected.',
+    ' ! [remote rejected]       main -> main (push declined due to repository rule violations)',
+  ].join('\n')
+
+  it('finds a cure for the refusal that had none', () => {
+    const c = cureFor(REFUSAL)
+    expect(c?.name).toBe('main is protected — land through a pull request')
+  })
+
+  it('marks it TERMINAL — retrying a protected push reaches the same refusal', () => {
+    expect(cureFor(REFUSAL)?.terminal).toBe(true)
+  })
+
+  it('opens a branch named for the sha, so a re-run finds it rather than piling up', () => {
+    const cmd = cureFor(REFUSAL)?.cmd ?? ''
+    expect(cmd).toContain('git rev-parse --short HEAD')
+    expect(cmd).toContain('gh pr create --base main')
+  })
+
+  it('does NOT merge — the required checks decide that, not the lane', () => {
+    const cmd = cureFor(REFUSAL)?.cmd ?? ''
+    expect(cmd).not.toContain('pr merge')
+    expect(cmd).not.toContain('--auto')
+  })
+
+  it('leaves the three taught cures firing, and they are not terminal', () => {
+    for (const out of [
+      'docs/STANDARDS_INDEX.md is stale',
+      'tip of your current branch is behind',
+      "'x' is defined but never used",
+    ]) {
+      const c = cureFor(out)
+      expect(c).toBeDefined()
+      expect(c?.terminal).toBeUndefined()
+    }
+  })
+})
+
+describe('arrival — the protected-main cure, as its first live run taught it', () => {
+  const REFUSAL = 'remote: error: GH013: Repository rule violations found for refs/heads/main.'
+
+  it('creates the LOCAL branch — gh pr create --fill resolves a local revision', () => {
+    // Taught 2026-09-20: pushing HEAD:refs/heads/<b> left nothing local to name, and --fill died
+    // on "ambiguous argument 'origin/main...land/<sha>'", taking the whole cure with it.
+    const cmd = cureFor(REFUSAL)?.cmd ?? ''
+    expect(cmd).toContain('git branch -f')
+    expect(cmd).not.toContain('HEAD:refs/heads/')
+  })
+
+  it('never passes -u — on a refspec push it repoints the CURRENT branch upstream', () => {
+    // The first run left local main tracking origin/land/<sha>. A cure that repoints the branch it
+    // was run from is worse than the refusal it was curing.
+    expect(cureFor(REFUSAL)?.cmd ?? '').not.toContain('push -u')
+  })
+})
