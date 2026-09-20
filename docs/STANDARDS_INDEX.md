@@ -1309,6 +1309,9 @@ src/fixed/assets/index.ts:25: * @standard ISO-8601-1:2019 date-time acquisition-
 src/fixpoint/index.ts:27: * @standard Kleene recursion theorem · Tarski fixed-point — a self-map has a fixed point
 src/float/index.ts:21: * @standard ISO 4217 — currency and minor units
 src/float/index.ts:22: * @standard ISA 501 — physical count as audit evidence
+src/floor/index.ts:10: * @standard Bekenstein (1981) · 't Hooft (1993) · Susskind (1995) — the holographic bound
+src/floor/index.ts:11: * @standard CODATA 2022 — Boltzmann constant, Planck length
+src/floor/index.ts:9: * @standard Landauer (1961) · Bérut et al., Nature 483:187 (2012)
 src/footer/config.ts:4: * @standard schema.org WPFooter
 src/footer/config.ts:5: * @standard W3C HTML5 footer-element
 src/footer/config.ts:6: * @standard WAI-ARIA 1.2 contentinfo-landmark-role
