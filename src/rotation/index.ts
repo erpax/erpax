@@ -17,7 +17,7 @@
  *
  * @standard ISO 1151-1 — flight dynamics, body axes and sign conventions
  */
-export const atomPath = 'horo/merkaba/rotation' as const
+export const atomPath = 'rotation' as const
 
 /** Which way a rotor turns seen from above. */
 export type Spin = 'CW' | 'CCW'

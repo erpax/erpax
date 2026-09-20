@@ -1,47 +1,54 @@
----
-name: rotation
-description: "Use when planning the multi-year non-repetition of a crop family in the same ground — crop rotation breaks pest/disease cycles and balances nutrient draw by never returning a family to a bed sooner than ~3–4 years. The rule/constraint over the planting sequence (distinct from the bare sequence): grouped by botanical family, alternating heavy feeders, legumes, and roots."
-atomPath: rotation
-coordinate: "rotation · 5/round · 775b5524"
-contentUuid: "64c6bdd1-37f5-59e8-a9d0-e61bcb604b94"
-diamondUuid: "722faa7d-099f-8310-8dab-f3c0562af71d"
-uuid: "775b5524-ad77-84ad-9db3-fbe5629769cd"
-horo: 5
-typography:
-  partition: rotation
-  bondDegree: 70
-standards: []
-bindings: []
-signatures:
-  computationUuid: "03b869f0-b52b-84d2-9fcc-b2df0cb48d18"
-  stages:
-    - stage: path
-      stageUuid: "d64a2026-51c1-89d4-9ee7-e3848de8ceb9"
-    - stage: trinity
-      stageUuid: "e1554cd8-87c9-8e81-a777-554fa3263c21"
-    - stage: boundary
-      stageUuid: "5e26539a-bffb-82d3-ba55-ff3b0a880cba"
-    - stage: links
-      stageUuid: "3433989b-d196-8ea9-8f9c-19dcb8be7d6f"
-    - stage: horo
-      stageUuid: "88aacad5-dbc0-85c5-9221-cca02900d227"
-    - stage: seal
-      stageUuid: "b2f93fae-e86c-8b30-95b5-879039594c64"
-    - stage: uuid
-      stageUuid: "703b5dab-96c4-8191-99f2-09ae11fe0b1e"
-version: 2
----
-# rotation — the multi-year non-repeat of a crop family in one bed
+# rotation — the hexagram is not a metaphor for a hexacopter, it is one
 
-**crop rotation** is the planned non-repetition of a [[crop]] (or its botanical **[[family]]**) in the same ground across years — the rule that breaks soil-borne pest and disease cycles and balances nutrient draw. The standard heuristic: a family returns to a bed **no sooner than once per 3–4 years** (long enough for its pathogens to decline). It is the multi-year [[sequence]]'s *constraint*, not the bare sequence itself — alternate heavy feeders ([[fertility]]) with **legumes** (which credit nitrogen) and deep-rooted with shallow, so each crop sets up the next.
+A merkaba is two interpenetrating tetrahedra turning opposite ways. Projected along the shared
+axis it is a **hexagram**: two equilateral triangles, offset by 60°.
 
-Rotation is the time-axis [[allocation]] of [[soil]] across [[season]]s: the [[covercrop]] is its soil-building leg; the **[[family]]** grouping is its unit (same family ⇒ shared pests ⇒ must not follow itself). It composes the [[planting]] plan into a multi-year schedule that keeps [[soil]] [[capacity]] and pest pressure in [[balance]].
+A hexacopter has six arms at 60° spacing with spin alternating around the ring. The three
+counter-clockwise motors sit at **30° · 150° · 270°** and the three clockwise ones at
+**90° · 210° · 330°** — two equilateral triangles, interpenetrating, counter-rotating. Computed,
+not asserted: `figure(6)` returns both triads and `isRegular` reads the spacing back out of the
+angles rather than trusting the construction.
+
+## The one thing the geometry buys
+
+**The reaction torques cancel if and only if the rotor count is even.**
+
+| ring | net torque | why it matters |
+| ---: | ---: | --- |
+| 4 · 6 · 8 · 12 | **0** | heading holds with no yaw input |
+| 3 · 5 · 7 · 9 | **±1** | a tricopter needs a tilting tail servo; a pentacopter needs canted motors |
+
+That is a fact about **parity**, not about lift. Each figure is a regular polygon with `n/2`
+vertices — a hexacopter gets two triangles, an octocopter two squares offset by 45°, a quadcopter
+two opposed pairs. The quad's figures are degenerate (two points are not a polygon) and it balances
+anyway, because balance needs only that the spins pair off.
+
+## What this atom is careful not to claim
+
+The parent [[horo]]/merkaba exists to **refuse** an over-claimed symmetry group over the digits —
+ten symbols are not nine, and an exhaustive search found symmetries that never exchange the
+figures. This child makes the weaker claim on purpose: **rotation geometry and torque parity, and
+nothing else.**
+
+There is no claim here about energy, fields, consciousness, or anything a hexagram is said to do.
+The hexagram is the axial projection of a stellated octahedron; a hexacopter's spin classes have
+that shape; their torques cancel because six is even. Each of those is checkable, and together they
+are the whole content.
+
+**Honest boundary.** This models an **idealised ring**: every rotor at the same radius, the same
+thrust, the same torque constant, spinning in a plane. A real airframe has arm-length tolerance,
+motor-to-motor variation, prop wash between arms, and a centre of gravity that is never exactly on
+the axis — so a balanced ring still needs a controller trimming yaw continuously. Cancellation here
+is a property of the **geometry**, never a claim about a built aircraft. And it assumes alternating
+spin: a ring wired with two adjacent motors turning the same way has the right shape and the wrong
+torque, which `netTorque` reports and the shape test does not.
+
+**Law — [[law]]: counter-rotation cancels when the count is even, and never otherwise. The figure
+is what makes the craft hold heading without being told to — and an odd ring cannot be fixed by
+spacing, only by tilting something.**
 
 ## Standards
-- SARE *Crop Rotation on Organic Farms* (the planning procedure, sequencing rules)
-- Coleman *The New Organic Grower*; Iowa State / OSU Extension — rotation by plant family
-- USDA NOP 7 CFR §205.205 — crop-rotation practice standard (organic requirement)
 
-**Law — [[law]]: the multi-year non-repetition of a [[crop]] [[family]] in the same bed (a family returns no sooner than ~3–4 years) — the *constraint* over the planting [[sequence]], not the bare sequence, keeping [[soil]] [[capacity]] and pest pressure in [[balance]].**
+- **ISO 1151-1** — flight dynamics: body axes and sign conventions.
 
-Composes [[agriculture]] · [[crop]] · [[family]] · [[sequence]] · [[planting]] · [[covercrop]] · [[fertility]] · [[soil]] · [[season]] · [[allocation]] · [[capacity]] · [[balance]].
+Composes: [[horo]]/merkaba · [[horo]] · [[law]].

@@ -7,7 +7,7 @@ Two things live here, and the second is the reason the atom exists.
 A hexacopter has six actuators and four axes. A hybrid bus has N sources and one demand. Both are
 the same fold: take a command, distribute it by declared coefficients, respect each actuator's
 limit, and **conserve**. In the mixer conservation appears as a column summing to zero
-([[horo]]/merkaba/rotation); here as `Σ drawn = delivered + losses`.
+([[rotation]]); here as `Σ drawn = delivered + losses`.
 
 A source that cannot deliver is **not silently skipped** — it contributes what it can and the
 `shortfall` is reported. An allocator that reports a demand met when it was not is the typed
@@ -58,4 +58,4 @@ loop to be a source, the arithmetic has already refused it.**
 - **ISO 80000-5** — thermodynamic quantities.
 - **IEC 60050-482** — primary and secondary cells.
 
-Composes: [[float]] · [[horo]]/merkaba/rotation · [[rules]]/refutable · [[law]].
+Composes: [[float]] · [[rotation]] · [[rules]]/refutable · [[law]].

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { balanced, figure, interpenetration, isRegular, netTorque, ring, triad } from '@/horo/merkaba/rotation'
+import { balanced, figure, interpenetration, isRegular, netTorque, ring, triad } from '@/rotation'
 
 describe('rotation — the hexagram is two equilateral triangles, and the hex is the hexagram', () => {
   it('puts six arms at 30, 90, 150, 210, 270, 330 — none on the nose', () => {

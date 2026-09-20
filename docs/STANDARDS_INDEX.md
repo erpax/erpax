@@ -1391,7 +1391,6 @@ src/hero/config/index.ts:4: * @standard W3C HTML5 section-element
 src/hero/config/index.ts:5: * @standard schema.org WebPageElement
 src/hero/config/index.ts:6: * @standard WAI-ARIA 1.2 region-landmark-role
 src/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
-src/horo/merkaba/rotation/index.ts:18: * @standard ISO 1151-1 — flight dynamics, body axes and sign conventions
 src/i18n/harvest/index.ts:30: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/i18n/harvest/index.ts:31: * @standard BCP-47 language tags
 src/i18n/index.ts:11: * @standard ECMA-402 internationalization-api
@@ -2400,6 +2399,7 @@ src/roles/user/roles/hooks/preventDuplicateAssignment.ts:12: * @standard NIST IN
 src/roles/user/roles/index.ts:10: * @standard NIST INCITS-359-2012 role-based-access-control role-assignment
 src/rolify/index.ts:10: * @standard NIST INCITS-359 RBAC (resource-scoped roles)
 src/rolify/index.ts:11: * @standard EN-16931 business-terms (the party roles BG-4 Seller / BG-7 Buyer / BG-10 Payee …)
+src/rotation/index.ts:18: * @standard ISO 1151-1 — flight dynamics, body axes and sign conventions
 src/routing/index.ts:6: * @standard NIST AI RMF (risk-proportionate controls) — map risk → control strength
 src/rules/ask/index.ts:23: * @standard ISO 9241-110:2020 §6.2 — self-descriptiveness / suitability for the task (do not ask what is known)
 src/rules/audience/index.ts:42: * @standard ISO-19011:2018 §6.4 audit-evidence — a citation is read by a person

@@ -4,7 +4,7 @@
  * ALLOCATION IS THE SAME FOLD AS A MOTOR MIXER. A hex has six actuators and four axes; a hybrid
  * bus has N sources and one demand. Both are: take a command, distribute it across actuators by
  * declared coefficients, respect each actuator's limit, and CONSERVE. In the mixer the conservation
- * shows up as a column summing to zero ([[horo]]/merkaba/rotation); here it shows up as
+ * shows up as a column summing to zero ([[rotation]]); here it shows up as
  * Σ drawn = demand + losses. Same law, different units.
  *
  * AND THE LOOP LAW, which is the reason this atom exists rather than just an allocator. A chain of
@@ -126,22 +126,29 @@ export function selfSustaining(stages: readonly Stage[]): boolean {
   return Number.isFinite(g) && g >= 1
 }
 
+/** Which water cycle to read back: the one hardware can build, or the one physics allows. */
+export type CycleKind = 'real' | 'ideal'
+
 /**
- * The water cycle, with its real stage efficiencies.
+ * The water cycle as a chain of stages.
  *
  * Splitting water is endothermic: ΔH = +285.8 kJ/mol for the higher heating value of hydrogen, and
- * burning that hydrogen returns the same 285.8 kJ/mol. So even with perfect hardware the loop gain
- * is exactly 1.0 and there is NOTHING left to do work with — the cycle is closed, not generative.
- * With the best commercial hardware it is roughly a third.
+ * burning that hydrogen returns the same 285.8 kJ/mol. So even at the thermodynamic limit the loop
+ * gain is exactly 1.0 and there is NOTHING left to do work with — the cycle is closed, not
+ * generative. With the best commercial hardware it is roughly a third.
+ *
+ * Returned from a function rather than exported as two constants: a caller modelling their own
+ * plant supplies their own stages, and these are a REFERENCE to argue with, not an API to build on.
  */
-export const WATER_CYCLE: readonly Stage[] = [
-  { name: 'PEM electrolysis — water to hydrogen', efficiency: 0.7 },
-  { name: 'compression and storage', efficiency: 0.9 },
-  { name: 'PEM fuel cell — hydrogen back to water', efficiency: 0.55 },
-]
-
-/** The ideal version: lossless hardware, nothing else changed. Still not generative. */
-export const WATER_CYCLE_IDEAL: readonly Stage[] = [
-  { name: 'electrolysis at the thermodynamic limit', efficiency: 1 },
-  { name: 'recombination at the thermodynamic limit', efficiency: 1 },
-]
+export function referenceCycle(kind: CycleKind): readonly Stage[] {
+  return kind === 'ideal'
+    ? [
+        { name: 'electrolysis at the thermodynamic limit', efficiency: 1 },
+        { name: 'recombination at the thermodynamic limit', efficiency: 1 },
+      ]
+    : [
+        { name: 'PEM electrolysis — water to hydrogen', efficiency: 0.7 },
+        { name: 'compression and storage', efficiency: 0.9 },
+        { name: 'PEM fuel cell — hydrogen back to water', efficiency: 0.55 },
+      ]
+}

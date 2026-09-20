@@ -1,10 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import {
-  WATER_CYCLE,
-  WATER_CYCLE_IDEAL,
   allocate,
   conserves,
   loopGain,
+  referenceCycle,
   selfSustaining,
   type Source,
 } from '@/energy'
@@ -69,22 +68,22 @@ describe('energy — a chain gains the PRODUCT of its stages, so a loop decays',
 
 describe('energy — the water cycle, with the arithmetic shown', () => {
   it('runs at about a third with the best commercial hardware', () => {
-    const g = loopGain(WATER_CYCLE)
+    const g = loopGain(referenceCycle('real'))
     expect(g).toBeCloseTo(0.7 * 0.9 * 0.55, 9)
     expect(g).toBeLessThan(0.35)
-    expect(selfSustaining(WATER_CYCLE)).toBe(false)
+    expect(selfSustaining(referenceCycle('real'))).toBe(false)
   })
 
   it('reaches exactly 1.0 with PERFECT hardware — closed, never generative', () => {
     // Splitting water costs the same 285.8 kJ/mol that burning the hydrogen returns. At the
     // thermodynamic limit the loop breaks even and leaves NOTHING to do work with.
-    expect(loopGain(WATER_CYCLE_IDEAL)).toBe(1)
-    expect(selfSustaining(WATER_CYCLE_IDEAL)).toBe(true)
+    expect(loopGain(referenceCycle('ideal'))).toBe(1)
+    expect(selfSustaining(referenceCycle('ideal'))).toBe(true)
   })
 
   it('cannot power anything: adding ANY load to the ideal loop ends it', () => {
     // A load is a stage with efficiency below 1. One is enough.
-    const withLoad = [...WATER_CYCLE_IDEAL, { name: 'any useful work at all', efficiency: 0.99 }]
+    const withLoad = [...referenceCycle('ideal'), { name: 'any useful work at all', efficiency: 0.99 }]
     expect(selfSustaining(withLoad)).toBe(false)
   })
 })
