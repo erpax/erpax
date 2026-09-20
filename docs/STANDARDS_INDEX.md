@@ -2413,6 +2413,9 @@ src/rules/compatibility/index.ts:17: * @standard ISO/IEC 25010:2023 §5.3 compat
 src/rules/confine/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6.2 — modularity: the whole is confined, not held
 src/rules/cycle/index.ts:34: * @standard ISO/IEC 25010:2023 §5.6.2 modularity
 src/rules/echo/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning
+src/rules/inject/index.ts:25: * @standard CVE-2021-42574 — Trojan Source, bidirectional control characters
+src/rules/inject/index.ts:26: * @standard OWASP LLM01:2025 — prompt injection
+src/rules/inject/index.ts:27: * @standard ISO/IEC 27001 A.8.28 — secure coding
 src/rules/invisible/index.ts:28: * @standard ISO/IEC 25010:2023 §5.6 maintainability — one source, addressable
 src/rules/prose/index.ts:20: * @standard ISO-19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
 src/rules/reference/index.ts:20: * @standard ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence

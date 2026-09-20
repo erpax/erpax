@@ -588,3 +588,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 export * from './slack'
 export * from './unreached'
 export * from './copy'
+// The agent-facing surface is an instruction channel — judged like any other input.
+export * from './inject'
