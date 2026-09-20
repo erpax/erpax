@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vitest'
 import {
   checkRowOf,
   cureFor,
+  exemptFailures,
   isUnknownCommit,
   jsonLines,
   collide,
@@ -157,11 +158,25 @@ describe('arrival — erpax d5ffea88c7, replayed from the forge', () => {
   const runs = jsonLines(runsOut).map(runRowOf)
   const checks = jsonLines(checksOut).map(checkRowOf)
 
-  it('the green hook and green CI do not make a landing — the foreign build is red, judged and named', () => {
+  // POLICY CHANGED 2026-09-20: the owner unrostered `Workers Builds: erpax` after it failed 10 of 14
+  // builds on content every other check passed. This replay pinned the OLD policy — that the foreign
+  // build is judged — and it now pins the new one, including the half that keeps the exemption honest:
+  // the red deployer is still REPORTED, so the evidence survives the decision to stop blocking on it.
+  it('the exempt deployer no longer blocks the landing, and is still named', () => {
     const v = pushVerdict(E, runs, checks)
+    expect(v.ok).toBe(true)
+    expect(v.failing).toEqual([])
+    expect(v.notJudging).toContain('Workers Builds: erpax (failure)')
+    expect(exemptFailures(v.notJudging)).toEqual(['Workers Builds: erpax (failure)'])
+  })
+
+  // An exemption is not a licence for the rest: a FIRST-PARTY failure still refuses, so unrostering one
+  // flaky deployer cannot quietly widen into "red is fine".
+  it('a first-party failure still refuses, exemption or not', () => {
+    const red = [...checks, { name: 'TypeScript', status: 'completed', conclusion: 'failure', appSlug: 'github-actions', runId: 34703497770 }]
+    const v = pushVerdict(E, runs, red)
     expect(v.ok).toBe(false)
-    expect(v.failing).toEqual(['Workers Builds: erpax (failure)'])
-    expect(v.rosterGaps.some((g) => g.startsWith('Workers Builds: erpax'))).toBe(true)
+    expect(v.failing).toContain('TypeScript (failure)')
   })
 
   it('the deploy, a workflow_run of CI, is reported and not judged as this push', () => {
@@ -414,5 +429,24 @@ describe('arrival — a deployment tag names a commit', () => {
   it('no tag is not evidence', () => {
     expect(tagNamesCommit(null, SHA_FULL)).toBe(false)
     expect(tagNamesCommit('-', SHA_FULL)).toBe(false)
+  })
+})
+
+// UNROSTERING, 2026-09-20. The owner exempted `Workers Builds: erpax` after it failed 10 of 14 builds
+// on content every other check passed. An exemption that DROPS the evidence would be the very
+// default-ALLOW rules/unraised names, so the exempt check is still read back and reported.
+describe('arrival — an exempt check still says something', () => {
+  it('reads back the exempt entries that FAILED', () => {
+    expect(exemptFailures(['Workers Builds: erpax (failure)', 'Analyze (actions) (success)'])).toEqual([
+      'Workers Builds: erpax (failure)',
+    ])
+  })
+
+  it('counts every conclusion that is a refusal, not only the word failure', () => {
+    expect(exemptFailures(['A (timed_out)', 'B (action_required)', 'C (startup_failure)'])).toHaveLength(3)
+  })
+
+  it('a passing or still-running exempt check is not a failure', () => {
+    expect(exemptFailures(['Analyze (actions) (success)', 'X (in_progress)', 'Y (skipped)'])).toEqual([])
   })
 })

@@ -71,7 +71,7 @@ export interface PushVerdict {
  * is a production build path that fails in zero seconds, and disconnecting or fixing it is a human decision.
  */
 export interface Exemption {
-  readonly kind: 'late' | 'meaningless'
+  readonly kind: 'late' | 'meaningless' | 'flaky'
   readonly why: string
 }
 
@@ -80,6 +80,14 @@ export interface Exemption {
 const NEED_NOT_JUDGE: Readonly<Record<string, Exemption>> = {
   'Analyze (actions)': { kind: 'late', why: 'CodeQL default setup; runs under its own event and routinely settles after CI' },
   'Analyze (javascript-typescript)': { kind: 'late', why: 'CodeQL default setup; same run, same lateness' },
+  // UNROSTERED BY THE OWNER, 2026-09-20, on the measurement below — not because the check is meaningless.
+  // It is a WORKING deployer: it ships production, and twice it went red AFTER it had already deployed.
+  // 10 failures in 14 builds (2026-09-13 … 09-20) on content that passes every other check, and the same
+  // content has both passed and failed. Its log needs a Workers Builds read token nobody here holds, so the
+  // cause is unknown rather than absolved. Reported always; judged never — and what it was standing in for
+  // (did this commit actually ship?) is now measured directly by the live version tag, which is why the
+  // exemption costs no evidence. Re-roster it the day its log is readable or its failures stop.
+  'Workers Builds: erpax': { kind: 'flaky', why: 'git-connected Cloudflare build: 10 of 14 red on content every other check passes, twice red AFTER deploying; truth measured by the live tag instead' },
 }
 
 // A skipped or cancelled run is NOT a failure and NOT a success: it did not judge.
@@ -348,6 +356,15 @@ export interface ReleaseDecision {
  * @see ../verify/lean/Release.lean
  */
 
+/**
+ * An exempt check still SAYS something, and dropping it from the verdict would drop the evidence with it.
+ * `notJudging` carries each exempt entry as `Name (conclusion)`; this reads back the ones that FAILED, so a
+ * reader learns the deployer refused even though the landing no longer waits on it.
+ */
+export function exemptFailures(notJudging: readonly string[]): string[] {
+  return notJudging.filter((e) => /\((failure|timed_out|action_required|startup_failure)\)$/.test(e))
+}
+
 /** What two instruments reading the same commit can jointly say. @see ../verify/lean/Arrival.lean */
 export type Collision = 'agreed' | 'refused' | 'contradicted' | 'notLive'
 
@@ -460,6 +477,19 @@ function judge(slug: string, sha: string, wait: boolean): PushVerdict {
 }
 
 function report(v: PushVerdict): number {
+  // An EXEMPT failure is reported with the live evidence beside it: the landing no longer waits on the
+  // deployer, so the reader must be told what it said and whether this commit actually shipped.
+  const exemptFailed = exemptFailures(v.notJudging)
+  if (exemptFailed.length) {
+    const live = liveTag()
+    const shipped = tagNamesCommit(live, v.sha)
+    console.error(
+      `    DEPLOYER exempt and RED: ${exemptFailed.join(', ')} — ` +
+        (shipped
+          ? `and yet the live Worker is tagged ${live}: this commit IS serving traffic (CONTRADICTED).`
+          : `and the live Worker is ${live ? `tagged ${live}` : 'untagged'}: this commit is NOT known to be live.`),
+    )
+  }
   if (v.ok) {
     console.log(`✓ land — ${v.reason}`)
     return 0
