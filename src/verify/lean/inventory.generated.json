@@ -1,11 +1,11 @@
 {
   "sealedAt": "2026-09-20",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "e975f9b034bb07b3",
+  "sourcesHash": "bbc8c1e7b8a5ad87",
   "census": {
-    "theorems": 158,
-    "axiomFree": 98,
-    "standardAxioms": 60,
+    "theorems": 169,
+    "axiomFree": 105,
+    "standardAxioms": 64,
     "stubbed": 0
   },
   "files": [
@@ -1027,6 +1027,88 @@
         },
         {
           "theorem": "Order.sequence_root_catches_it",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Path.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Path.empty_is_not_lawful",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.one_segment_is_lawful",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.unaddressable_anywhere_falls",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.depth_join",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.child_is_one_deeper",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.ancestor_addressable",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.ancestor_lawful",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.echo_detects",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.short_paths_never_echo",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.echo_comes_from_the_leaf",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Path.echo_is_inherited",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
