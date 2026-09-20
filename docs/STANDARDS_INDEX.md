@@ -3292,6 +3292,7 @@ tests/helpers/standards-fixtures.ts:25: * @standard UN-EDIFACT D96A invoic
 
 ```text
 src/allow/public/read/tenant/index.ts:8: * @rfc 9110 §13 caching
+src/app/(api)/api/proof/route.ts:18: * @rfc 9110 http-semantics
 src/app/(api)/api/subscriptions/create/route.ts:4: * @rfc 9110 http-semantics
 src/app/(api)/api/webhooks/stripe/route.ts:4: * @rfc 8615 well-known-uri webhook-discovery
 src/app/(api)/api/webhooks/stripe/route.ts:5: * @rfc 9110 http-semantics
@@ -5542,6 +5543,7 @@ src/analytics/test.ts:8: * @audit the report is recomputed from the live matrix,
 src/anchoring/index.ts:30: * @audit Conservation Law 55/62 (tamper cost; the anchor is mandatory external entropy)
 src/anti/corruption/index.ts:22: * @audit ISO-19011:2018 audit-trail integrity-verification
 src/api/audit/events/index.ts:24: * @audit ISO-19011:2018 audit-trail
+src/app/(api)/api/proof/route.ts:19: * @audit ISO-19011:2018 audit-evidence the citation must lead to the evidence
 src/app/(api)/api/subscriptions/create/route.ts:12: * @audit ISO-19011:2018 audit-trail
 src/app/(api)/api/webhooks/stripe/route.ts:12: * @audit ISO-19011:2018 audit-trail
 src/app/(frontend)/next/coherence/route.ts:32: * @audit ISO-19011:2018 reading logged to Analytics Engine (ANALYTICS_AI binding)

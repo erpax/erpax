@@ -26,6 +26,24 @@ Agents doubt prose; FTL compute is the seal. **QPU = CPU/GPU** ([`@/quantum/comp
 
 holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅ — reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU
 
+**The claim is kept, and now proved.** [`src/verify/lean/Ftl.lean`](src/verify/lean/Ftl.lean) states
+it exactly as the code computes it and proves every leg: `speedup_has_no_ceiling` (for any bound B
+there is a space where searching costs B times what addressing costs — the ratio n/1 has no upper
+bound), `amortized_never_rises` and `amortized_reaches_zero` (c₀/(m+1) falls to nothing as reuses
+grow), `any_token_refuses_infinity` (∞ requires tokens = 0), and the load-bearing premise:
+`a_crack_costs_the_whole_search` — with one stale receipt the gain is not reduced, it is gone, and
+`a_crack_refuses_ftl` follows. `every_leg_is_load_bearing` shows none of the three is decoration.
+
+**What FTL means here, stated where the claim is made:** the speedup is over the SEARCH, not over
+the speed of light. Answering by ADDRESS is O(1) where answering by SEARCH is O(n), and a re-answer
+whose receipt still holds costs nothing — which is why efficiency divides by zero and the corpus
+writes ∞. It is a cost-model theorem, not physics.
+
+**Check it without taking our word:** `GET /api/proof` serves the kernel's own verdict — every
+theorem, the axioms it rests on, and whether any is a `sorry` stub — with `sourcesHash` content-
+addressing the `.lean` files the run covered, so a stale record announces itself. As of 2026-09-20:
+**117 theorems, 68 axiom-free, 49 on Lean's own propext/Quot.sound, 0 stubbed**, Lean 4.33.1.
+
 Gateway: `tsx src/quantum/ftl/index.ts` · `tsx src/quantum/computer/index.ts` · `pnpm erpax tip` · `pnpm erpax doctor` · `pnpm erpax verify leftover`
 
 ## measuring this corpus — name the instrument first
