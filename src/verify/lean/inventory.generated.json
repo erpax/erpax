@@ -1,11 +1,11 @@
 {
   "sealedAt": "2026-09-20",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "7cf53d67860ed936",
+  "sourcesHash": "76f5c5cc51755aa0",
   "census": {
-    "theorems": 125,
-    "axiomFree": 75,
-    "standardAxioms": 50,
+    "theorems": 154,
+    "axiomFree": 94,
+    "standardAxioms": 60,
     "stubbed": 0
   },
   "files": [
@@ -137,6 +137,76 @@
         },
         {
           "theorem": "Automate.the_low_path_keeps_running",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Cost.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Cost.forging_costs_more_than_verifying",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.seams_add_in_the_exponent",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.the_content_digest_preimage_is_category_five",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.the_content_digest_collision_is_category_two",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.the_uuid_address_collides_below_category_one",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.two_uuid_seams_are_still_short",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.three_uuid_seams_clear_category_one",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.sha224_collision_is_below_category_one",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.truncation_halves_the_collision_margin",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.the_anchored_chain_holds",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
@@ -414,6 +484,98 @@
         },
         {
           "theorem": "Cross.the_corpus_chain",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Direction.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Direction.forward_reverse",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.reverse_forward",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.up_down",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.left_right",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.left_stays_in_its_byte",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.inverse_is_an_involution",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.within_is_an_involution",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.the_cross_closes",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.every_direction_moves",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.no_direction_is_closed_on_the_message",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.the_message_space_is_one_hundred_six",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.the_message_space_holds_no_fixed_bit",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.spin_round_trips",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
@@ -979,6 +1141,60 @@
             "Quot.sound"
           ],
           "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Stream.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Stream.step_field",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Stream.parse_format",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Stream.a_message_of_separators_survives",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Stream.an_empty_message_round_trips",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Stream.the_head_is_a_uuid",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Stream.five_separators",
+          "axioms": [],
+          "axiomFree": true,
           "stubbed": false
         }
       ]

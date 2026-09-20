@@ -99,7 +99,11 @@ export interface ProofInventory {
   readonly files: readonly { readonly file: string; readonly compiled: boolean; readonly entries: readonly ProofEntry[] }[]
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Run as a script, the emitter runs the kernel and writes the record. It is wrapped in an async
+// IIFE rather than using top-level await: this module is on the atom FACE (`@/verify` re-exports
+// it), and a top-level await makes the whole face untransformable in a CJS context — the barrel
+// added it to more import closures and every tsx entry that reached it died on the transform.
+if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
   const { execFileSync } = await import('node:child_process')
   const { createHash } = await import('node:crypto')
   const { mkdtempSync, readdirSync, readFileSync, writeFileSync } = await import('node:fs')
@@ -160,4 +164,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   writeFileSync(join(process.cwd(), INVENTORY_PATH), `${JSON.stringify(inventory, null, 2)}\n`)
   console.log(`verify/inventory — ${inventory.census.theorems} theorem(s) · ${inventory.census.axiomFree} axiom-free · ${inventory.census.stubbed} stubbed · sources ${inventory.sourcesHash}`)
-}
+})()

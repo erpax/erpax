@@ -58,6 +58,12 @@ export const COLOCATED = [
   'hooks.registry.mjs',
 ] as const
 
+/**
+ * Folder names that may hold flat, single-extension data beside an atom. DECLARED, never
+ * inferred — see isDataDir for why this is name-scoped.
+ */
+export const DATA_DIRS: ReadonlySet<string> = new Set(['lean', 'messages'])
+
 const vocabularyCore = (): ReadonlySet<string> =>
   new Set([TRINITY_FORM, ...COLOCATED, ...COMPUTED_FACES])
 
@@ -172,6 +178,41 @@ export function isCapturedFixturesDir(parentDir: string, name: string): boolean 
   )
 }
 
+/**
+ * A DATA directory: flat, non-empty, one non-TypeScript extension, and no code at all.
+ *
+ * `verify/lean` holds 17 `.lean` sources a kernel compiles; `i18n/messages` holds one JSON
+ * bundle per supported locale. Neither is an atom and neither should become one: making them
+ * atoms charges EVERY data file inside as stray matter, which is 52 charges to silence 2 — the
+ * same cascade [[diamond]]/membership already corrected for path segments and fixtures.
+ *
+ * It is NAME-scoped, exactly like the fixtures allowance and for the reason that one is: data
+ * under an arbitrary name must stay stray, or the gate becomes a place to hide things. DATA_DIRS
+ * is DECLARED in the open so it can be argued with — no theorem derives which folder names a
+ * corpus keeps its data under.
+ *
+ * The content checks are the narrowest shape that admits them. Fails CLOSED: a subdirectory, a mixed
+ * extension, an empty dir, or a single `.ts` file makes it a stray dir again, so this cannot
+ * become a pocket where code accumulates out of the corpus's sight. One generated face is
+ * tolerated beside the data because the emitter writes it there ([[rules]]/drift: the arbiter
+ * lives with what it measures).
+ */
+export function isDataDir(parentDir: string, name: string): boolean {
+  if (!DATA_DIRS.has(name)) return false
+  const dir = join(parentDir, name)
+  const entries = basenames(dir)
+  if (entries.length === 0) return false
+  if (entries.some((e) => isDir(join(dir, e)))) return false
+  if (existsSync(join(dir, TRINITY_FORM))) return false
+  const data = entries.filter((e) => e !== '.gitkeep' && !GENERATED_FACE.test(e) && !/\.generated\.[a-z]+$/i.test(e))
+  if (data.length === 0) return false
+  if (data.some((e) => TSX_EXT.test(e) || /\.tsx?$/i.test(e))) return false
+  const ext = (f: string): string => (f.includes('.') ? f.slice(f.lastIndexOf('.')).toLowerCase() : '')
+  const first = ext(data[0] as string)
+  if (!first) return false
+  return data.every((e) => ext(e) === first)
+}
+
 const isAllowedFile = (name: string, kind: DiamondAtomKind): boolean => {
   if (FORBIDDEN_NAME.test(name)) return false
   if (name.startsWith('.') && name !== '.gitkeep') return false
@@ -204,7 +245,10 @@ export function diamondMembershipViolations(
   for (const e of entries) {
     const p = join(dir, e)
     if (isDir(p)) {
-      const lawful = isChildAtomDir(dir, e) || isCapturedFixturesDir(dir, e) || isPathSegmentDir(dir, e)
+      const lawful = isChildAtomDir(dir, e) ||
+        isCapturedFixturesDir(dir, e) ||
+        isPathSegmentDir(dir, e) ||
+        isDataDir(dir, e)
       if (!lawful) violations.push({ atomPath, file: e + '/', reason: 'stray-dir' })
       continue
     }
