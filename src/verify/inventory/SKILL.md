@@ -3,8 +3,8 @@ name: inventory
 description: "Use when reasoning about inventory — erpax proves its decisions in Lean. Until this atom, the only way to SEE that was to install Lean 4.33.1 and run it — so every reader who did not met the claim as a sentence…"
 atomPath: "verify/inventory"
 coordinate: "verify/inventory · 8/crest · cbcd0e73"
-contentUuid: "922acb97-31ff-5b4c-acd4-dcfce9e717a7"
-diamondUuid: "73ec1b5d-b582-8a39-b719-e1679028ae2b"
+contentUuid: "7733f133-64a5-51fa-8ecc-21e424c0c5f0"
+diamondUuid: "3d282437-baca-81c2-8f82-541758f95e34"
 uuid: "cbcd0e73-652d-853e-bfb2-03093752b61b"
 horo: 8
 typography:
@@ -13,14 +13,14 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "14e47fcc-885f-8f9b-a825-ce3758268565"
+  computationUuid: "ea419b46-f883-861f-8595-fdbd31b286d3"
   stages:
     - stage: path
       stageUuid: "3b81a920-27b4-8b76-bf60-d1ef1a19d40a"
     - stage: trinity
       stageUuid: "1b360d91-d290-876c-9267-2d25c134c6b4"
     - stage: boundary
-      stageUuid: "ba6afd76-a91c-8e3b-8cf8-e11e164bd9d9"
+      stageUuid: "81c73fe0-dfef-88ab-a056-c4cf0f1f4548"
     - stage: links
       stageUuid: "b06dc464-79f9-8a5a-9f79-3459876554ba"
     - stage: horo
@@ -28,7 +28,7 @@ signatures:
     - stage: seal
       stageUuid: "af213eb0-b976-8223-9bd7-86f7fa6b953b"
     - stage: uuid
-      stageUuid: "75362eee-4eaa-8914-b723-ed671c8254c6"
+      stageUuid: "f4c1a898-8261-82b9-96d8-df80381c74c2"
 version: 2
 ---
 # verify/inventory — a proof nobody can reach is prose
