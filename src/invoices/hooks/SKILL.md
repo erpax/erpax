@@ -3,7 +3,7 @@ name: hooks
 description: "Use when reasoning about the invoices collection's Payload hooks — before/after change and validate logic for invoices."
 atomPath: "invoices/hooks"
 coordinate: "invoices/hooks · 9/unity · 501ffc43"
-contentUuid: "df6d6785-f670-5fab-8e16-091c15abaca2"
+contentUuid: "c708ed5f-b54b-5672-b7aa-11fd2923abbd"
 diamondUuid: "eeb7e859-d283-823d-bb87-d6b7f567c59f"
 uuid: "501ffc43-f069-897d-a2de-ca00f4262d9e"
 horo: 9
@@ -12,7 +12,6 @@ typography:
   bondDegree: 348
 standards:
   - "IAS-1"
-  - "NIST-SP-800-38D"
 bindings: []
 signatures:
   computationUuid: "e1f02da7-9906-8c6f-9ab2-e1f129e38152"

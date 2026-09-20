@@ -61,6 +61,23 @@ const EMPIRICAL = [
   'ЗДДС',
   'ЗСч',
   'SOX', // §302 is a natural person's certification — no gate signs it
+  // Physics. No amount of reading src decides whether kT ln2 is the Landauer bound, what the
+  // Boltzmann constant is, or how information scales with a boundary area — these are measured by
+  // the world and cited, never discharged.
+  'Landauer (1961)',
+  'Bekenstein (1981) · \'t Hooft (1993) · Susskind (1995)',
+  'CODATA 2022',
+  // Statutes and intergovernmental texts, the same class as Наредба Н-18 and ЗДДС above: the text
+  // lives elsewhere, a gate can check what this corpus DOES with a threshold but never that the
+  // threshold is the one the directive wrote.
+  'EU 575/2013 (CRR) Art. 392',
+  'EU 575/2013 (CRR) Art. 395',
+  'EU 575/2013 (CRR) Art. 4(1)(39)',
+  'EU 2015/849 (AMLD4)',
+  'EU 2015/849 Art. 33',
+  'EU 2015/847',
+  'FATF Recommendations 10 · 12 · 22',
+  'FATF Recommendation 20',
 ] as const
 
 /** Normalise a standard to its identity: `ISO-19011:2018` and `ISO 19011:2018` are one standard. */

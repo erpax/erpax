@@ -3,8 +3,8 @@ name: rotation
 description: "Use when reasoning about rotation — A merkaba is two interpenetrating tetrahedra turning opposite ways. Projected along the shared axis it is a **hexagram**: two equilateral triangles, offset by 60°."
 atomPath: rotation
 coordinate: "rotation · 1/base · cd4bf784"
-contentUuid: "60d8bd87-d53f-5cc8-b70a-52d93bf2ffb6"
-diamondUuid: "761e0438-b490-85c3-9448-6f2c7a5dfcb6"
+contentUuid: "3ac10230-2b2d-5867-9ebd-82ad544e3144"
+diamondUuid: "e78222fb-774e-8236-8a25-10c4b597779c"
 uuid: "cd4bf784-9dc4-82d7-9c69-f5cd063ffea5"
 horo: 1
 typography:
@@ -14,14 +14,14 @@ standards:
   - "ISO 1151-1 — flight dynamics, body axes and sign conventions"
 bindings: []
 signatures:
-  computationUuid: "e8c422f4-f65b-86b9-ae56-b675e71d96fd"
+  computationUuid: "61b27f30-4bf4-883e-b6a8-16424204a7b9"
   stages:
     - stage: path
       stageUuid: "d64a2026-51c1-89d4-9ee7-e3848de8ceb9"
     - stage: trinity
       stageUuid: "b337af78-36df-8d2d-85f2-e8e3386f7520"
     - stage: boundary
-      stageUuid: "62808197-4e42-8efe-829d-95411689c2c4"
+      stageUuid: "079afe7c-1d59-8df8-984c-abc08765d613"
     - stage: links
       stageUuid: "b7fe222c-9970-82a3-b393-f02633f47b5f"
     - stage: horo
@@ -29,7 +29,7 @@ signatures:
     - stage: seal
       stageUuid: "b2f93fae-e86c-8b30-95b5-879039594c64"
     - stage: uuid
-      stageUuid: "c57ed65d-dda2-8efc-9b5f-52b9400e7474"
+      stageUuid: "500e881a-f87f-8cbc-9b86-08af223013c1"
 version: 2
 ---
 # rotation — the hexagram is not a metaphor for a hexacopter, it is one

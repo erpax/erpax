@@ -14,6 +14,8 @@
  * @standard FATF Recommendation 20 — suspicious transaction reporting
  * @standard EU 2015/847 — information accompanying transfers of funds
  */
+import { exactAbs } from '@/algebra'
+
 export const atomPath = 'aml' as const
 
 /** What the movement obliges: a suspicion report, a threshold declaration, or nothing. */
@@ -40,7 +42,7 @@ export const STRUCTURING_BAND = 0.9
 
 /** Within the band below a threshold, and not over it. */
 export function justBelow(value: number, threshold: number): boolean {
-  const a = Math.abs(value)
+  const a = exactAbs(value)
   return a < threshold && a >= threshold * STRUCTURING_BAND
 }
 
@@ -66,7 +68,7 @@ export function structuring(
       const current = near[j]
       if (first === undefined || current === undefined) continue
       if (current.at - first.at > windowMs) break
-      sum += Math.abs(current.amount)
+      sum += exactAbs(current.amount)
       if (j > i && sum >= threshold) return true
     }
   }
@@ -93,7 +95,7 @@ export function reportOwed(facts: ReportFacts): ReportKind {
   const { movements, threshold } = facts
   if (movements.some((m) => m.sanctioned === true || m.flagged === true)) return 'suspicious'
   if (structuring(movements, threshold, facts.windowMs)) return 'suspicious'
-  if (movements.some((m) => Math.abs(m.amount) >= threshold)) return 'threshold'
+  if (movements.some((m) => exactAbs(m.amount) >= threshold)) return 'threshold'
   return 'none'
 }
 

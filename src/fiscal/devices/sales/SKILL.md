@@ -3,7 +3,7 @@ name: sales
 description: "Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register."
 atomPath: "fiscal/devices/sales"
 coordinate: "fiscal/devices/sales · 4/weave · e0c1b867"
-contentUuid: "85fa93f7-ff3c-5524-9303-0795715fbf4d"
+contentUuid: "ac9e11ce-5239-535d-a273-362975414551"
 diamondUuid: "4056d285-5728-86cb-954f-2044e812ee87"
 uuid: "e0c1b867-f208-861b-be11-93a5dee62ab8"
 horo: 4
@@ -14,8 +14,6 @@ standards:
   - "BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
   - "ISO-19011`"
-  - "ISO-27001"
-  - "ISO/IEC-27001:2022"
   - "ISO/IEC-27001:2022`"
   - "Naredba-N-18"
   - "SOX §404 internal-controls"

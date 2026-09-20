@@ -101,7 +101,23 @@ const nextConfig = {
        * A package that is ALIASED to a stub is not an external: it is bundled, it is 200 bytes,
        * and there is no hashed name for esbuild to fail on.
        */
-      typescript: './.stubs/typescript.js',
+      /*
+       * PRODUCTION ONLY — and the gating is the bug this line used to be.
+       *
+       * The stub exports no `is*` predicates, so every `ts.isImportDeclaration(...)` against it is
+       * `undefined`. This alias was ungated while the webpack twin below is gated on production
+       * (next.config.ts, the NODE_ENV check in the webpack fold), so in `next dev` — which is
+       * Turbopack — the compiler was stubbed in the ONE environment that needs it: the diamond
+       * seal at factory/collection/base runs when NODE_ENV !== 'production', parses the barrel
+       * through @/syntax, and died with "isImportDeclaration is not a function" on every dev
+       * request, once per collection. Playwright's webServer is `pnpm dev`, so the UI job failed
+       * on it continuously.
+       *
+       * The reason the alias exists is a PRODUCTION reason, stated above: Turbopack names an
+       * external by a hash that OpenNext's esbuild pass cannot resolve. Dev has no esbuild pass,
+       * so dev never needed it.
+       */
+      ...(process.env.NODE_ENV === 'production' ? { typescript: './.stubs/typescript.js' } : {}),
       'next/og': './.stubs/next-og.js',
       // drizzle-kit is the MIGRATION toolchain — payload reaches `drizzle-kit/api` behind a lazy
       // require for `migrate:create`, which a Worker never runs. Under webpack it stayed an

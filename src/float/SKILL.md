@@ -2,11 +2,11 @@
 name: float
 description: "Use when reasoning about float — Four institutions, four vocabularies, **one structure**: something opens with a float, signed movements pass through it, and at close somebody **counts it in discrete units**."
 atomPath: float
-coordinate: "float · 1/base · 9cffe9dd"
-contentUuid: "cf6a7e42-ea96-58e1-b0cf-866a8c9f061d"
+coordinate: "float · 7/descent · a840f565"
+contentUuid: "92eb966a-df91-57aa-b7d5-4eac001b077d"
 diamondUuid: "a0b9dab0-7b3c-83d4-90de-9508a669d9b9"
-uuid: "9cffe9dd-dc06-8951-9c10-39faf1121b74"
-horo: 1
+uuid: "a840f565-5668-85a8-93ce-dfaa12810e6e"
+horo: 7
 typography:
   partition: float
   bondDegree: 30
@@ -43,7 +43,7 @@ agrees with the book or it does not, by how much, and in which direction.
 | --- | --- | --- |
 | [[teller]] | euro legal tender | branch tolerance, four-eyes floor |
 | [[casino]] | house chip scale (a parameter — a house has several) | the drop, reported separately |
-| [[armoury]] | `{1}` — items are counted one at a time | tolerance is zero and is **not a dial** |
+| [[armory]] | `{1}` — items are counted one at a time | tolerance is zero and is **not a dial** |
 | [[treasury]] | euro legal tender | the **disposition** of the variance |
 
 Writing that reconciliation four times would be one implementation and three decoys
@@ -86,4 +86,4 @@ wearing a control's name.**
 - **ISO 4217** — currency and minor units.
 - **ISA 501** — physical count as audit evidence.
 
-Composes: [[teller]] · [[casino]] · [[armoury]] · [[treasury]] · [[rules]]/ask · [[rules]]/copy · [[law]].
+Composes: [[teller]] · [[casino]] · [[armory]] · [[treasury]] · [[rules]]/ask · [[rules]]/copy · [[law]].

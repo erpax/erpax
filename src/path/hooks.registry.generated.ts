@@ -107,7 +107,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "architecture/invariant",
   "archival",
   "argument",
-  "armoury",
+  "armory",
   "arrival",
   "artery",
   "atom",
@@ -543,6 +543,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "fixed/assets/depreciation/schedules/hooks",
   "fixpoint",
   "float",
+  "floor",
   "fold",
   "footer",
   "footer/hook",
@@ -1003,6 +1004,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "publish/harvest",
   "publish/paper",
   "publish/registry",
+  "publish/zenodo",
   "pwa",
   "pyramid",
   "quantum",
@@ -1441,6 +1443,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "verification",
   "verify",
   "verify/inventory",
+  "verify/latex",
   "version",
   "versions",
   "versions/cross",
@@ -1504,7 +1507,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1497 as const
+export const ATOM_LEDGER_PATH_COUNT = 1500 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1890,8 +1893,8 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "argument": [
     "argument"
   ],
-  "armoury": [
-    "armoury"
+  "armory": [
+    "armory"
   ],
   "arrival": [
     "arrival"
@@ -3469,6 +3472,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "float": [
     "float"
+  ],
+  "floor": [
+    "floor"
   ],
   "fold": [
     "fold"
@@ -5138,6 +5144,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "publish",
     "publish/registry"
   ],
+  "publish/zenodo": [
+    "publish",
+    "publish/zenodo"
+  ],
   "pwa": [
     "pwa"
   ],
@@ -6783,6 +6793,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "verify",
     "verify/inventory"
   ],
+  "verify/latex": [
+    "verify",
+    "verify/latex"
+  ],
   "version": [
     "version"
   ],
@@ -7009,4 +7023,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 848 as const
+export const MERGED_NESTED_PATH_COUNT = 850 as const

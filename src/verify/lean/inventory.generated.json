@@ -1,11 +1,11 @@
 {
   "sealedAt": "2026-09-20",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "bbc8c1e7b8a5ad87",
+  "sourcesHash": "db0679856f5bc142",
   "census": {
-    "theorems": 169,
-    "axiomFree": 105,
-    "standardAxioms": 64,
+    "theorems": 177,
+    "axiomFree": 111,
+    "standardAxioms": 66,
     "stubbed": 0
   },
   "files": [
@@ -1109,6 +1109,64 @@
         },
         {
           "theorem": "Path.echo_is_inherited",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Planck.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Planck.length_over_time_is_c",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.length_times_mass_is_hbar_over_c",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.length_over_mass_is_g_over_c_squared",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.each_cancels_exactly_what_it_claims",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.the_three_combinations_are_distinct",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.mul_div_cancels",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.div_mul_cancels",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.compton_meets_schwarzschild_at_the_planck_mass",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false

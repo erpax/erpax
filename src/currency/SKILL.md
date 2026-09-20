@@ -3,7 +3,7 @@ name: currency
 description: "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name."
 atomPath: currency
 coordinate: "currency · 4/weave · 3c7b898a"
-contentUuid: "17413306-d182-5bda-b0c0-02fdc3203cc4"
+contentUuid: "301f204b-81a3-5d20-8771-83af9199fb12"
 diamondUuid: "23c5e2f3-eff5-8eca-834f-88683a6e3699"
 uuid: "3c7b898a-f0dc-86ed-a701-b1a1963ded51"
 horo: 4
@@ -11,7 +11,6 @@ typography:
   partition: currency
   bondDegree: 145
 standards:
-  - "EN-16931"
   - "IFRS-9"
   - "ISO-13616-1"
   - "ISO-13616-1`"

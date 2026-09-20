@@ -6,25 +6,25 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "armoury",
-    "uuid": "256d017e-4e17-84e9-b341-2216cb7d39d9",
+    "source": "armory",
+    "uuid": "f707be57-8fd3-8efc-ba61-3f2935873dc4",
     "words": [
-      "armoury"
+      "armory"
     ],
     "values": {
-      "en": "armoury"
+      "en": "armory"
     }
   },
   {
     "key": "description",
-    "source": "Use when reasoning about armoury — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount.",
-    "uuid": "d6dd6874-0a07-8d14-9c3d-63e71bb4c63d",
+    "source": "Use when reasoning about armory — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount.",
+    "uuid": "2c8942b1-1fea-8a68-9416-a6a3c78737b4",
     "words": [
       "use",
       "when",
       "reasoning",
       "about",
-      "armoury",
+      "armory",
       "a",
       "weapon",
       "or",
@@ -47,7 +47,7 @@ export const translations: readonly Translation[] = [
       "headcount"
     ],
     "values": {
-      "en": "Use when reasoning about armoury — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount."
+      "en": "Use when reasoning about armory — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount."
     }
   }
 ]

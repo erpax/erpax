@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "treasury",
-    "uuid": "1a527908-1ced-8173-b7ed-6c20ff168859",
+    "uuid": "ca7cb4b5-abec-80f7-b87f-2a1dccd0148c",
     "words": [
       "treasury"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about treasury — A government cash office reconciles exactly as a bank drawer does, so it mounts float unchanged.",
-    "uuid": "24143cb1-c1e0-8029-8cdd-0c4b21fec2cd",
+    "uuid": "8610d98d-cec7-8dca-b9d6-847cfaa5a3ce",
     "words": [
       "use",
       "when",

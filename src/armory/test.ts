@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ITEMS, outstanding, reconcileArmoury, reportable } from '@/armoury'
+import { ITEMS, outstanding, reconcileArmoury, reportable } from '@/armory'
 
 describe('armoury — items are counted one at a time, and nothing is absorbed', () => {
   it('counts in units of one and refuses any larger unit', () => {

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about casino — A gaming table opens with a chip float, takes and pays through the session, and is counted at close.",
-    "uuid": "060ee386-e9b4-8df9-b4cf-a0179e64784c",
+    "uuid": "4fed39b2-9f08-84d3-a34f-bfbb6a9b1e8d",
     "words": [
       "use",
       "when",

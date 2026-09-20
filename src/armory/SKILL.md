@@ -1,39 +1,41 @@
 ---
-name: armoury
-description: "Use when reasoning about armoury — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount."
-atomPath: armoury
-coordinate: "armoury · 8/crest · 256d017e"
-contentUuid: "c3b3b629-9a02-57f7-993b-3f40087036a3"
-diamondUuid: "d7a7bf7a-10b2-8fff-b137-6f2fdde2c67e"
-uuid: "256d017e-4e17-84e9-b341-2216cb7d39d9"
-horo: 8
+name: armory
+description: "Use when reasoning about armory — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount."
+atomPath: armory
+coordinate: "armory · 5/round · f707be57"
+contentUuid: "e329fe33-b55a-5423-b3a7-620083aabf5a"
+diamondUuid: "3e716500-f46a-82c5-a65c-ce173ddc4246"
+uuid: "f707be57-8fd3-8efc-ba61-3f2935873dc4"
+horo: 5
 typography:
-  partition: armoury
+  partition: armory
   bondDegree: 13
 standards:
   - ISA 501 — physical count as audit evidence
+  - "ISO-27001"
   - "ISO/IEC 27001 A.5.9 — inventory of assets; A.7.9 — assets off-premises"
+  - "ISO/IEC-27001:2022"
 bindings: []
 signatures:
-  computationUuid: "6d3bdfb0-4294-850c-887d-0b64e9b161d7"
+  computationUuid: "825ba482-37a6-83a3-9f3d-cc86522159ab"
   stages:
     - stage: path
-      stageUuid: "ec91cc33-b724-825a-a25e-69fbc14fe5ee"
+      stageUuid: "9062d111-f92f-8439-a7c5-b2cab5d42c3a"
     - stage: trinity
-      stageUuid: "92f64803-deab-81fa-bd72-5ccc6e166a4b"
+      stageUuid: "43516e80-94eb-82bb-bf4d-57d21818d1d7"
     - stage: boundary
-      stageUuid: "c40ac300-8f7e-8a98-be76-ae8605dfd332"
+      stageUuid: "c009481c-36c7-8f5a-965a-046428e62434"
     - stage: links
-      stageUuid: "79c7ce91-b6df-80cd-8618-094094ff63d1"
+      stageUuid: "f513a84e-3a51-8e72-8f3f-1ad91a5c338e"
     - stage: horo
-      stageUuid: "5dd850fc-789c-8c7f-ba50-6b6493bdc378"
+      stageUuid: "07aa4273-1483-855a-8368-e36b259161e6"
     - stage: seal
-      stageUuid: "57b3e34b-7299-8042-95c4-4993df264a28"
+      stageUuid: "e9bdf6e7-9ce7-841a-ae90-e5f115354f28"
     - stage: uuid
-      stageUuid: "488563bb-5b09-825d-a3da-63a851a296f1"
+      stageUuid: "2781f37b-8da9-8f57-bed0-ac7d6ed76003"
 version: 2
 ---
-# armoury — the same control as a cash drawer, with the dial removed
+# armory — the same control as a cash drawer, with the dial removed
 
 A weapon or a round is counted in **items**, so the unit set is `{1}` and the total is a headcount.
 The mount is nearly empty, and that emptiness is the finding: **an armoury ledger and a bank drawer

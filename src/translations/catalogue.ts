@@ -546,7 +546,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the Payload API's access must derive from and be gated by its legal surface — the strictest tier a collection's standards demand, and the endpoints that fall below it.",
-        "uuid": "2d41afed-cfcf-8998-b022-66772834b7d2",
+        "uuid": "9ce2c983-cdfb-85c6-8ec2-a65446d8b993",
         "words": [
           "use",
           "when",
@@ -5243,7 +5243,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when stating what erpax's post-quantum posture actually proves — the anchor surfaces typed by discern into verdicts (what the corpus computes: the manifest gate, the channel and root rules, the pinning, the threat calibration) and compasses (the primitives, because nothing here signs: no PQC implementation is installed). Standards are pinned to their revision because FIPS 203 and 204 carry errata, and a bare citation names a document that differs from the one in force. FIPS 206 and HQC are the honest open rows. Integrity reads 5 of 9 — lower and true.",
-        "uuid": "dc24592c-6632-8c51-b1ab-a950b85a8da8",
+        "uuid": "5e3689f1-ef61-81aa-8934-d5c0f0c72c92",
         "words": [
           "use",
           "when",
@@ -6502,30 +6502,30 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
-    "atom": "armoury",
-    "path": "armoury",
+    "atom": "armory",
+    "path": "armory",
     "translations": [
       {
         "key": "name",
-        "source": "armoury",
-        "uuid": "256d017e-4e17-84e9-b341-2216cb7d39d9",
+        "source": "armory",
+        "uuid": "f707be57-8fd3-8efc-ba61-3f2935873dc4",
         "words": [
-          "armoury"
+          "armory"
         ],
         "values": {
-          "en": "armoury"
+          "en": "armory"
         }
       },
       {
         "key": "description",
-        "source": "Use when reasoning about armoury — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount.",
-        "uuid": "d6dd6874-0a07-8d14-9c3d-63e71bb4c63d",
+        "source": "Use when reasoning about armory — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount.",
+        "uuid": "2c8942b1-1fea-8a68-9416-a6a3c78737b4",
         "words": [
           "use",
           "when",
           "reasoning",
           "about",
-          "armoury",
+          "armory",
           "a",
           "weapon",
           "or",
@@ -6548,7 +6548,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "headcount"
         ],
         "values": {
-          "en": "Use when reasoning about armoury — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount."
+          "en": "Use when reasoning about armory — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount."
         }
       }
     ]
@@ -8777,7 +8777,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when assembling, authorising, exporting, or reconciling an ISO 20022 batch payment — pain.001 AP credit-transfer or pain.008 AR direct-debit; draft → pending-review → approved → exported → submitted → settled lifecycle; SOX §404 preparer-authoriser segregation of duties. The treasury batch-payment initiation collection.",
-        "uuid": "72394f25-d9f8-821f-89f6-e9ee4644e637",
+        "uuid": "3bd8c50d-aba9-85f3-a73b-da3fcc0dfbb6",
         "words": [
           "use",
           "when",
@@ -10031,7 +10031,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a business outcome must ship its own natural-language explanation citing standards, sources and chain steps — autoExplain composes the narrative deterministically with no LLM in the path (preserving replay), isExplanationComplete verifies it is non-trivial.",
-        "uuid": "e56423fe-73c7-89d5-b9ec-ecf0ae3a5a34",
+        "uuid": "1d95e09d-190d-849b-9613-cbe696089f17",
         "words": [
           "use",
           "when",
@@ -14096,7 +14096,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when you need the canonical business-chain barrel — the 15+ registered (collection, action, emitted-event) workflows that map to published process standards (SOX P2P, IFRS-15 over-time, IFRS-16 lease cycle), each encoded ONCE with its Socratic check, plus the runner, context, and producer auto-wiring.",
-        "uuid": "60b1f5f2-f984-8e57-826a-c33d66d94149",
+        "uuid": "31295f61-db14-8c70-886f-2705e12630b2",
         "words": [
           "use",
           "when",
@@ -14977,7 +14977,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about casino — A gaming table opens with a chip float, takes and pays through the session, and is counted at close.",
-        "uuid": "060ee386-e9b4-8df9-b4cf-a0179e64784c",
+        "uuid": "4fed39b2-9f08-84d3-a34f-bfbb6a9b1e8d",
         "words": [
           "use",
           "when",
@@ -16044,7 +16044,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
-        "uuid": "fcd93920-a014-8c50-b8c1-8d570154424b",
+        "uuid": "c3b71a3f-e1b4-81da-b167-ae1b6bfb0c11",
         "words": [
           "use",
           "when",
@@ -17284,7 +17284,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \\\"collapse all to Payload\\\" law; one name across every dimension, drawn from the standards.",
-        "uuid": "513af688-6b1e-8e73-91d8-dd6dad9af213",
+        "uuid": "52d19e6b-4213-8f00-bf3d-607cbf112363",
         "words": [
           "use",
           "when",
@@ -23813,7 +23813,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about coverage — Use to see the development plan as a computed matrix — participants (14 roles) × standards (their concerns), each cell a theorem, each uncovered cell a wave. A cell is covered iff a control cites its standard WITH a test beside it. 100% = every standard, faced by every participant it concerns, is proven. Run: tsx src/coverage/index.ts",
-        "uuid": "6c297026-2c3d-86fd-bd23-c5696366150b",
+        "uuid": "13557881-5393-8aca-ba80-d02996e32576",
         "words": [
           "use",
           "when",
@@ -28716,7 +28716,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when posting or reviewing a journal entry — the double-entry gate: every entry has two sides and the sides agree. Enforces a balance tolerance, one side per posting, non-negative amounts; warns (never refuses) on account polarity, because contra-accounts legitimately invert. Read this before trusting the word tolerance: the bound is absolute over float amounts, so the same one-cent gap posts at 50 and is refused at 100.",
-        "uuid": "ac2c8c64-4c16-85f4-9779-dde51583acf2",
+        "uuid": "87500f3e-39b6-8b9f-9301-a363b55afa3e",
         "words": [
           "use",
           "when",
@@ -33077,7 +33077,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "07532c1d-7afa-8bdd-96cc-9cd6c0ec2765",
+        "uuid": "10dff15f-111f-8241-bec2-934ab7665a69",
         "words": [
           "standards"
         ],
@@ -33088,7 +33088,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about standards — Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats.",
-        "uuid": "d6ebbb91-61ff-8825-bf5b-e16b6a3eda0c",
+        "uuid": "80c35e01-eaa8-8aca-9bb1-8cf37afd3f4e",
         "words": [
           "use",
           "when",
@@ -33148,7 +33148,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating Payload collections from declarative metadata — createAccountingCollection injects audit fields, tamper-proof uuid, horo state ring, standards citations, and chain-event hooks so collection files carry only domain intent.",
-        "uuid": "8584067a-8271-8c01-a2e7-263dc4f8534e",
+        "uuid": "77bbf71a-0221-875d-9991-726d5a55e10a",
         "words": [
           "use",
           "when",
@@ -35215,7 +35215,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "float",
-        "uuid": "9cffe9dd-dc06-8951-9c10-39faf1121b74",
+        "uuid": "a840f565-5668-85a8-93ce-dfaa12810e6e",
         "words": [
           "float"
         ],
@@ -35226,7 +35226,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about float — Four institutions, four vocabularies, **one structure**: something opens with a float, signed movements pass through it, and at close somebody **counts it in discrete units**.",
-        "uuid": "6764d1f8-b9e3-86d5-8dd7-a3ff0782b9c2",
+        "uuid": "04c345d1-b9cb-83fb-91e5-f8de376a7f31",
         "words": [
           "use",
           "when",
@@ -35261,6 +35261,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about float — Four institutions, four vocabularies, **one structure**: something opens with a float, signed movements pass through it, and at close somebody **counts it in discrete units**."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "floor",
+    "path": "floor",
+    "translations": [
+      {
+        "key": "name",
+        "source": "floor",
+        "uuid": "ca455df8-e6ee-8eee-9563-07b7e1bef1d7",
+        "words": [
+          "floor"
+        ],
+        "values": {
+          "en": "floor"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about floor — The corpus's security claims rested on the word **infeasible**, and infeasible is an opinion about hardware.",
+        "uuid": "d8e9c803-2834-8ad2-94cb-562fbf767de7",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "floor",
+          "the",
+          "corpus",
+          "s",
+          "security",
+          "claims",
+          "rested",
+          "on",
+          "the",
+          "word",
+          "infeasible",
+          "and",
+          "infeasible",
+          "is",
+          "an",
+          "opinion",
+          "about",
+          "hardware"
+        ],
+        "values": {
+          "en": "Use when reasoning about floor — The corpus's security claims rested on the word **infeasible**, and infeasible is an opinion about hardware."
         }
       }
     ]
@@ -42364,7 +42413,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing or referencing Phase B4: Intercompany Fiscal Alignment — Standards & Implementation.",
-        "uuid": "137b68f7-3aed-87cc-84fc-ad52c90b2a7b",
+        "uuid": "3716deca-0c78-883d-bdb6-504bd416a965",
         "words": [
           "use",
           "when",
@@ -49926,7 +49975,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling shop-floor equipment mined from the upstream source of truth (etrima, 20 years of garment manufacturing) — the machine node of the production-traceability spine. Every machine carries a three-rate spread (pay ≤ cost ≤ price per hour) that is double-entry economics on the floor: machineRate decomposes a machine-hour into revenue = cost + margin and cost = pay + overhead. A machine runs a work/phase for a lot variant during a shift; fields are the real etrima columns, never invented.",
-        "uuid": "5aa1a4bf-492d-82b4-bead-e7dd0c799ad4",
+        "uuid": "14d9d54c-4e59-8635-b282-12b3b233f2f4",
         "words": [
           "use",
           "when",
@@ -50232,7 +50281,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when pairing supply with demand — a schema.org Offer seeking a Demand (or the reverse) across the corpus and harvested pages. Vectorize proposes K candidates by meaning; pure constraints (GTIN identity, quantity overlap, price floor, currency, delivery area) dispose, and every rejection names its reason. Feeds ai/embed-document + ai/semantic-search; scoring itself is pure.",
-        "uuid": "f1d5b8b5-6122-8b94-8b27-c80a09b9d684",
+        "uuid": "ecdd2bf6-76c4-8240-8e8e-33e67b903283",
         "words": [
           "use",
           "when",
@@ -54022,7 +54071,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when querying the whole ERP as one graph — atoms ⊕ parsed import edges ⊕ standards citations, wave-schedulable; the clause→code trace as a query.",
-        "uuid": "f32cfe91-c3a1-8304-ad01-54b42424e17c",
+        "uuid": "a4f2c3fe-ec7b-878a-b3ff-18375b33b756",
         "words": [
           "use",
           "when",
@@ -55610,7 +55659,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when asking what ONE violation is — the singular model beside the plural store: the severity order, whether a finding clears a floor, and the identity that makes the same finding twice one row.",
-        "uuid": "ef4cde21-b725-8748-8349-48dedd958c20",
+        "uuid": "7cfcc81b-8cda-8eaa-983b-886ece0d9b58",
         "words": [
           "use",
           "when",
@@ -57593,7 +57642,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when erpax depends on an answer it does not own — VIES, ECB rates, the Peppol directory, a standards clause, a harvested page. Fetch once, fold the answer to a content-uuid, and verify the ADDRESS on every later pass instead of re-reading the world. Only a moved address is news; an unreachable boundary keeps its last receipt and is never a failure.",
-        "uuid": "1f65aa5d-b88e-840b-975e-a7f1e249d24e",
+        "uuid": "c119a460-8d36-864f-a67d-9d469c3e8843",
         "words": [
           "use",
           "when",
@@ -63137,7 +63186,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about publication — Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication",
-        "uuid": "33179ce9-3713-8a49-a1e1-81bb32048139",
+        "uuid": "cb6add0c-1502-8e3a-bde6-37a7c0f6b70b",
         "words": [
           "use",
           "when",
@@ -63180,7 +63229,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when automating commit and push — the local agent that performs the git action, but ONLY through the computed decision (decide), trained on quantum security (tamper · quantum) and the standards, fail-closed, with a tamper-evident uuid-chained receipt. It pushes because the gates said yes, never because it was told to.",
-        "uuid": "cfee4431-adff-8b68-a256-5c891660e29f",
+        "uuid": "1f95e5c8-1a27-846b-9eea-e5bf9634e732",
         "words": [
           "use",
           "when",
@@ -63360,7 +63409,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a sealed claim might warrant a publication — emits a lean LaTeX paper and an HONEST prior-art verdict, where an empty Zenodo search is a lead and never a finding.",
-        "uuid": "2953a43f-3af3-8722-95eb-2baa06bee2f1",
+        "uuid": "64f3eb69-b54f-8e75-bc12-64040de26631",
         "words": [
           "use",
           "when",
@@ -63443,6 +63492,45 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "zenodo",
+    "path": "publish/zenodo",
+    "translations": [
+      {
+        "key": "name",
+        "source": "zenodo",
+        "uuid": "cb4b9b32-e225-8dac-8fc1-6bbb07073adf",
+        "words": [
+          "zenodo"
+        ],
+        "values": {
+          "en": "zenodo"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about zenodo — carried hand-typed counts, and they drifted:",
+        "uuid": "a306dfa9-96a5-8a62-b8b2-711da2fffe35",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "zenodo",
+          "carried",
+          "hand",
+          "typed",
+          "counts",
+          "and",
+          "they",
+          "drifted"
+        ],
+        "values": {
+          "en": "Use when reasoning about zenodo — carried hand-typed counts, and they drifted:"
         }
       }
     ]
@@ -71428,7 +71516,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a document (balance sheet, SAF-T, VAT return, audit file) must be produced — a report is a standards×format×data superposition collapsed on request, computed not hand-templated, and legislation floors it stricter than any standard.",
-        "uuid": "61344855-24d8-8ce9-b117-ef6b101df5ac",
+        "uuid": "7064b98b-26e8-829e-a790-90548419b8c6",
         "words": [
           "use",
           "when",
@@ -74607,7 +74695,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about registry — binds each role to the standards it answers to and the chain steps it may execute.",
-        "uuid": "2421483b-0a72-8b6c-8237-da5b2aa4f82b",
+        "uuid": "21b87784-3443-8f24-93d0-13cf16271870",
         "words": [
           "use",
           "when",
@@ -75101,7 +75189,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the gated commit/push must be achieved BY THE ROSETTA — every folder is an agent (a form·code·proof trinity that declares its @standard banners and either proves them or not), and the security/standards lanes for publish are DERIVED from that incidence, never hand-typed. The moving rosetta: poles come from what the folders declare, so a new atom joins a lane with no edit.",
-        "uuid": "e1e72591-0fc0-8d3e-9cf2-46a63f28cdd8",
+        "uuid": "d2c046f8-4d3a-8f55-9653-1d382f5b556e",
         "words": [
           "use",
           "when",
@@ -76817,7 +76905,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist.",
-        "uuid": "9a40171c-7292-8d5a-879a-2645ae8ce1d7",
+        "uuid": "3a7ed7be-6ce2-831c-a055-f86cd0980e98",
         "words": [
           "use",
           "when",
@@ -77569,7 +77657,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the statute→code trace must resolve — the gate that a `src/…` path cited in prose or comments actually exists. The corpus fails closed on dead atom links but left dead FILE-PATH pointers ungated, and they rotted: the Наредба Н-18 law pointed at a standards path long after the matter moved. A citation that leads nowhere is unreviewable (ISO-19011 §6.4), so a legally usable ERP cannot have one. Zero tolerance on the statutory surface; a down-only ratchet elsewhere. Run: tsx src/rules/reference/index.ts",
-        "uuid": "2be2c7e7-a198-8c75-8f97-7b506688e670",
+        "uuid": "eba2b21d-9795-89d7-93da-add357435140",
         "words": [
           "use",
           "when",
@@ -86354,7 +86442,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about shared — One accountable object, two coexisting facets. Every standards rule the codebase declares about money / dates / addresses / common columns lives in one of these shared atoms; highe",
-        "uuid": "a8f261e0-2039-8706-864b-9f66746f6c3b",
+        "uuid": "e3c1ba42-bcea-8ee6-af96-21c5186c1782",
         "words": [
           "use",
           "when",
@@ -88776,7 +88864,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when SKILL.md frontmatter must self-upgrade from live corpus state — connectFrontmatter folds diamond, matrix, typography, standards, bonds, and per-stage signatures into one connected graph.",
-        "uuid": "77d6ea95-c3d8-84c7-8fb9-17ac82a15074",
+        "uuid": "72d9588f-1fef-8e6b-a087-a2d82da5be33",
         "words": [
           "use",
           "when",
@@ -92300,7 +92388,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration.",
-        "uuid": "d31ba141-c0fa-8eb9-a181-5d546aa1bb1e",
+        "uuid": "c9ac63a3-47ec-8e6e-a259-f684f10ecd95",
         "words": [
           "use",
           "when",
@@ -92525,7 +92613,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "07532c1d-7afa-8bdd-96cc-9cd6c0ec2765",
+        "uuid": "10dff15f-111f-8241-bec2-934ab7665a69",
         "words": [
           "standards"
         ],
@@ -92536,7 +92624,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.",
-        "uuid": "f533789d-0fe0-86d9-8f84-fe6be8d3e0a6",
+        "uuid": "eab437bb-8c8d-8854-ab0f-a7f761bbb410",
         "words": [
           "use",
           "when",
@@ -92607,7 +92695,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when standards must chat and improve via architectural reuse — addressIndex O(1), crack non-reuse, free-chat@tokens=0, emit waves. Uses quantum/ftl; path is standards/improve — not a domain ftl path.",
-        "uuid": "22f37afd-ddb3-802e-9351-baa9c7394897",
+        "uuid": "3dd8a4be-75a1-8cc1-8d81-323aa26a202c",
         "words": [
           "use",
           "when",
@@ -92666,7 +92754,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the standards catalogue must be read rather than changed — coverage by schema, UI improvement waves, and O(1) address lookup, each memoized on the catalogue's own content-address.",
-        "uuid": "e99f5ff0-9fa9-8b50-a594-25f4c66540aa",
+        "uuid": "626bf05a-08c9-87a6-b175-e62d06134277",
         "words": [
           "use",
           "when",
@@ -98651,7 +98739,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing or referencing Phase B5: Tax Period Integration — Standards & Implementation.",
-        "uuid": "a55c9453-d948-8d7f-8f6d-07ae648bc159",
+        "uuid": "35cc3d04-f53c-8e8d-bc85-c5eb343636ff",
         "words": [
           "use",
           "when",
@@ -98970,7 +99058,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "07532c1d-7afa-8bdd-96cc-9cd6c0ec2765",
+        "uuid": "10dff15f-111f-8241-bec2-934ab7665a69",
         "words": [
           "standards"
         ],
@@ -99798,7 +99886,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about teller — Everything structural — the derived total, the signed variance, the void-on-illegal-count rule — lives in float, because a chip tray, an armoury and a public till obey the same…",
-        "uuid": "f47233fd-68ca-82a7-868a-79478501afc6",
+        "uuid": "8ab600f8-b224-8d4a-bbf2-18aa698d5597",
         "words": [
           "use",
           "when",
@@ -106018,7 +106106,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "treasury",
-        "uuid": "1a527908-1ced-8173-b7ed-6c20ff168859",
+        "uuid": "ca7cb4b5-abec-80f7-b87f-2a1dccd0148c",
         "words": [
           "treasury"
         ],
@@ -106029,7 +106117,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about treasury — A government cash office reconciles exactly as a bank drawer does, so it mounts float unchanged.",
-        "uuid": "24143cb1-c1e0-8029-8cdd-0c4b21fec2cd",
+        "uuid": "8610d98d-cec7-8dca-b9d6-847cfaa5a3ce",
         "words": [
           "use",
           "when",
@@ -108187,7 +108275,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the Heisenberg uncertainty floor — two conjugate quantities (position⊗momentum, energy⊗time) can never both be sharp, their spreads obey Δa·Δb ≥ ħ/2. It is the wave nature of the state, not a measurement defect. In erpax it is a real design limit: the irreducible slack that can never reach zero, and the natural linewidth that broadens every spectrum line (a leap living only Δt has ΔE ≥ ħ/2Δt).",
-        "uuid": "94ccdf76-c41e-864f-a77f-8a682696cdb1",
+        "uuid": "e790bc94-d168-8293-9d0a-f9d16a68beeb",
         "words": [
           "use",
           "when",
@@ -109944,7 +110032,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them.",
-        "uuid": "eb3f9dad-9c22-8275-92b1-e717b70fe436",
+        "uuid": "824cc17c-1c61-8e2e-a6d0-4449390fe66d",
         "words": [
           "use",
           "when",
@@ -112190,6 +112278,67 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "latex",
+    "path": "verify/latex",
+    "translations": [
+      {
+        "key": "name",
+        "source": "latex",
+        "uuid": "936f489d-d5b0-8051-b0d6-34ec79e61eaa",
+        "words": [
+          "latex"
+        ],
+        "values": {
+          "en": "latex"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about latex — The rendering is generated from verify/inventory, so it cannot drift. What matters is the other direction: **a document may quietly omit** the theorems that carry axioms, or the…",
+        "uuid": "ff11d449-9939-8361-8e13-1615d2528ac0",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "latex",
+          "the",
+          "rendering",
+          "is",
+          "generated",
+          "from",
+          "verify",
+          "inventory",
+          "so",
+          "it",
+          "cannot",
+          "drift",
+          "what",
+          "matters",
+          "is",
+          "the",
+          "other",
+          "direction",
+          "a",
+          "document",
+          "may",
+          "quietly",
+          "omit",
+          "the",
+          "theorems",
+          "that",
+          "carry",
+          "axioms",
+          "or",
+          "the"
+        ],
+        "values": {
+          "en": "Use when reasoning about latex — The rendering is generated from verify/inventory, so it cannot drift. What matters is the other direction: **a document may quietly omit** the theorems that carry axioms, or the…"
+        }
+      }
+    ]
+  },
+  {
     "atom": "version",
     "path": "version",
     "translations": [
@@ -112899,7 +113048,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution.",
-        "uuid": "d0706540-06e3-87a8-ae03-9864525d754f",
+        "uuid": "4fab447c-c149-88db-895b-4ae383a25539",
         "words": [
           "use",
           "when",
@@ -125541,7 +125690,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling.",
-        "uuid": "2f33c5a8-ed42-8831-adf0-611271dac493",
+        "uuid": "26242bfb-f049-8a78-b31b-6d586fef3484",
         "words": [
           "use",
           "when",
@@ -126983,7 +127132,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about calculate — is the computation atom: ceccec/erpax's ~25 are **form-objects** (ActiveModel, ) — validate inputs → compute a standards-cited formula → format; **no persistence, no collection**.",
-        "uuid": "abb9cbcf-58f2-8bcc-be06-dc12b4e97444",
+        "uuid": "44a011b8-fcf5-811e-bdf2-0d5f86e390c3",
         "words": [
           "use",
           "when",
@@ -139158,7 +139307,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath.",
-        "uuid": "c0d07a60-42a5-85d2-990b-ec149da9e1b9",
+        "uuid": "ebfe389a-45a4-802a-beda-824613463d9c",
         "words": [
           "use",
           "when",
@@ -153755,7 +153904,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the destroy pole of any erpax duality — fear is the archangelic move that RAISES entropy (it breaks, forgets, forges, opens a gap), the credit whose matching debit is love; the thermodynamic floor fear charges is Landauer's kT ln2 per bit destroyed.",
-        "uuid": "dbc08f74-bf81-8776-9668-5dbffb9f2ca1",
+        "uuid": "ddcb9424-56af-85a8-accd-73e678781f45",
         "words": [
           "use",
           "when",
@@ -155099,7 +155248,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "float",
-        "uuid": "9cffe9dd-dc06-8951-9c10-39faf1121b74",
+        "uuid": "a840f565-5668-85a8-93ce-dfaa12810e6e",
         "words": [
           "float"
         ],
@@ -155110,7 +155259,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about float — Data type: Floating number.",
-        "uuid": "5073943f-a5af-889d-b747-106f504b697d",
+        "uuid": "bb1f8393-cacc-875f-8a3e-133f34bf7b6d",
         "words": [
           "use",
           "when",
@@ -155135,7 +155284,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "floor",
-        "uuid": "ad8b343e-f5e2-867c-94d5-6ea4cb77ad69",
+        "uuid": "ca455df8-e6ee-8eee-9563-07b7e1bef1d7",
         "words": [
           "floor"
         ],
@@ -155146,7 +155295,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about floor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-        "uuid": "b8d5993b-e9c7-8c57-883c-f0d5ef4f0af8",
+        "uuid": "12deec2a-aa9d-811d-bffe-1f710d24f33e",
         "words": [
           "use",
           "when",
@@ -159697,7 +159846,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.",
-        "uuid": "f909fb36-1eb1-8e04-841d-b596b40605ea",
+        "uuid": "61cb0b0d-95a9-8b2e-a8c6-818e8474aa32",
         "words": [
           "use",
           "when",
@@ -159874,7 +160023,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria.",
-        "uuid": "e50bc244-fe3f-8b20-9a6d-1bd15304d513",
+        "uuid": "25adc16d-a957-8763-8116-d84f5874ba77",
         "words": [
           "use",
           "when",
@@ -175978,7 +176127,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three.",
-        "uuid": "dbff26e4-9746-8bce-97c9-da538a2b47dd",
+        "uuid": "c55a5e30-8fd5-838c-b27a-b231480d1fc7",
         "words": [
           "use",
           "when",
@@ -176027,7 +176176,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
-        "uuid": "3c46a486-c4f7-8f46-bbf0-301f58ed5c84",
+        "uuid": "efe3d585-d386-85c2-a22e-a67efe104161",
         "words": [
           "use",
           "when",
@@ -176080,7 +176229,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about positions — positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards.",
-        "uuid": "ae6a0bb7-af51-8984-8514-d85f48ab1347",
+        "uuid": "c2fe6c4a-1dbf-86f3-856c-83dd834b047e",
         "words": [
           "use",
           "when",
@@ -176118,7 +176267,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "07532c1d-7afa-8bdd-96cc-9cd6c0ec2765",
+        "uuid": "10dff15f-111f-8241-bec2-934ab7665a69",
         "words": [
           "standards"
         ],
@@ -176129,7 +176278,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it).",
-        "uuid": "ac8760b9-6e5c-8bd7-8e04-2284573ee2b5",
+        "uuid": "f3555a9e-4e2b-86dc-b3e1-44f8ab768903",
         "words": [
           "use",
           "when",
@@ -186410,7 +186559,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when produce carries a certified-organic claim — the labeling status under USDA NOP (7 CFR 205) and EU 2018/848: the National List of allowed/prohibited substances, excluded methods (GMO/irradiation/sewage sludge banned), the 36-month transition, and the organic system plan verified by an accredited certifier. A standards-backed status the product carries through the chain.",
-        "uuid": "51d69cd5-8d6d-8e8d-a947-3ee12e090b66",
+        "uuid": "f5fc96be-13d2-8da2-b1a4-f3939e252702",
         "words": [
           "use",
           "when",
@@ -198588,7 +198737,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about purity as the fully-sealed / zero-impurity state that maximises tamper-cost in EVERY dimension — purity = zero entropy = every gate green = no escape. A single impurity (an unsealed cross, an off-ring state, a dangling link, a hallucination) is a 0-bit weakest-link path that collapses the cost; purity removes every weakest link, so the floor is maximal along all paths and all dimensions. The conjugate of hallucination; the generalisation of import-purity, file-purity, and md-purity into one law.",
-        "uuid": "4d6b3b74-9199-844c-b932-30b16937e2d8",
+        "uuid": "d19bb209-1593-8998-95ba-a6465f3b3dac",
         "words": [
           "use",
           "when",
@@ -205523,7 +205672,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor.",
-        "uuid": "c245b847-fe1c-8b41-a3a5-a4b8b5fb70a1",
+        "uuid": "3a91b746-320c-8707-8551-3f1c2627f796",
         "words": [
           "use",
           "when",
@@ -206907,7 +207056,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication",
-        "uuid": "4d4c60c6-4e6d-8187-9a64-1f941a69c385",
+        "uuid": "58eacd1a-5604-81a9-beae-4a90cb8d9fdc",
         "words": [
           "use",
           "when",
@@ -207265,7 +207414,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deriving the max-work/max-tamper policy that bounds a wave schedule — units per wave, wave depth, and the tamper-cost floor a plan must clear. The policy is the single place those ceilings are decided, so a schedule never hardcodes its own limits.",
-        "uuid": "b7df6e5a-bb62-81df-ba07-fe7f86d1d181",
+        "uuid": "5b87bd19-81d9-8dd6-8067-a1f55a7fadfa",
         "words": [
           "use",
           "when",
@@ -208805,7 +208954,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger.",
-        "uuid": "d937b134-7332-8422-a082-53d95fba1427",
+        "uuid": "13239b69-d76b-8127-8b0f-47348b423f0a",
         "words": [
           "use",
           "when",
@@ -210532,4 +210681,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3598
+export const TRANSLATIONS_COUNT = 3601

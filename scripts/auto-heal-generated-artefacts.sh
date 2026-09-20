@@ -108,6 +108,51 @@ if [ "$DRY_RUN" = 0 ]; then
   rm -f /tmp/erpax-matrix.log
 fi
 
+# ── Artefact 5b (AFTER the matrix): the shared vocabulary ────────────
+#
+# src/vocabulary/words.ts is the set of grounded words the corpus USES, derived from the atoms in
+# the matrix crossed with the dictionary, schema.org, standard codes and a declared DOMAIN list. So
+# it drifts the moment an atom is minted — and the gate it feeds has a ceiling of ZERO that is a
+# theorem, not a ratchet. Measured 2026-09-20: six atoms landed over a session and the vocabulary
+# gate went red in CI while every local lane read green, because nobody re-ran the emitter.
+#
+# ORDER: after the matrix, which supplies the atom list it audits.
+if [ "$DRY_RUN" = 0 ]; then
+  if ./node_modules/.bin/tsx src/vocabulary/emit/index.ts --emit >/tmp/erpax-vocab.log 2>&1; then
+    if ! git diff --quiet -- src/vocabulary/words.ts; then
+      echo "auto-heal: shared vocabulary drifted — regenerated"
+      git add src/vocabulary/words.ts 2>/dev/null || true
+      healed+=("shared vocabulary")
+    fi
+  else
+    echo "auto-heal: vocabulary emit FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-vocab.log || true
+  fi
+  rm -f /tmp/erpax-vocab.log
+fi
+
+# ── Artefact 5c: the Zenodo deposit manifest ─────────────────────────
+#
+# .zenodo.json states the kernel census, and it is the document a DOI is minted from. It drifted to
+# 105 theorems across 12 files with 4 sorry stubs while the kernel reported 177 across 19 with none
+# — four numbers, every one wrong, in a permanent citable record. Now computed from
+# src/verify/lean/inventory.generated.json by src/publish/zenodo.
+#
+# Independent of the matrix: it reads the kernel record, not the tree.
+if [ "$DRY_RUN" = 0 ]; then
+  if ./node_modules/.bin/tsx src/publish/zenodo/index.ts >/tmp/erpax-zenodo.log 2>&1; then
+    if ! git diff --quiet -- .zenodo.json; then
+      echo "auto-heal: zenodo manifest drifted — regenerated"
+      git add .zenodo.json 2>/dev/null || true
+      healed+=("zenodo manifest")
+    fi
+  else
+    echo "auto-heal: zenodo emit FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-zenodo.log || true
+  fi
+  rm -f /tmp/erpax-zenodo.log
+fi
+
 # ── Artefact 3: SKILL.md frontmatter ─────────────────────────────────
 #
 # Every SKILL.md carries a computed frontmatter block derived from the atom's own body and its

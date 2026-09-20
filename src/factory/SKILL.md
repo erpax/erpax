@@ -3,7 +3,7 @@ name: factory
 description: "Use when creating Payload collections from declarative metadata — createAccountingCollection injects audit fields, tamper-proof uuid, horo state ring, standards citations, and chain-event hooks so collection files carry only domain intent."
 atomPath: factory
 coordinate: "factory · 4/weave · 7c7c4bd7"
-contentUuid: "f03173b0-dbeb-5107-85c0-39ef4791cd7c"
+contentUuid: "4c6ac0db-1876-5903-8214-6a246304914c"
 diamondUuid: "ab740a40-c177-8d68-9c41-61261f74583e"
 uuid: "7c7c4bd7-6be4-865f-9f6d-aea37efe7f86"
 horo: 4
@@ -11,6 +11,7 @@ typography:
   partition: factory
   bondDegree: 47
 standards:
+  - "EN-16931"
   - "ISA-95"
 bindings: []
 signatures:
