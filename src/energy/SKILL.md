@@ -1,45 +1,61 @@
----
-name: energy
-description: "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'."
-atomPath: energy
-coordinate: "energy · 7/descent · ad49f773"
-contentUuid: "b5f0a196-5530-5995-802f-ebc65fb8b837"
-diamondUuid: "48e999d9-e379-8620-837c-da8b005f1246"
-uuid: "ad49f773-f142-8158-9d3a-fbf1e34769f6"
-horo: 7
-typography:
-  partition: energy
-  bondDegree: 73
-standards:
-  - "schema.org — the type vocabulary, collided to single words"
-bindings: []
-signatures:
-  computationUuid: "0e9bfedc-61ce-872a-a9d0-8ba7418093e4"
-  stages:
-    - stage: path
-      stageUuid: "0ce98992-3572-8ba8-b572-63bc01ddd69d"
-    - stage: trinity
-      stageUuid: "99f31da9-fcee-8346-906c-a628dfed2ad9"
-    - stage: boundary
-      stageUuid: "f2373b92-40f5-816a-ab4e-af532c417af7"
-    - stage: links
-      stageUuid: "aeee91f1-94e8-83c7-9b5c-359f0caa1fc6"
-    - stage: horo
-      stageUuid: "0d4603eb-e9d0-83d0-abc0-6e8f0caa45f8"
-    - stage: seal
-      stageUuid: "e1b14f1b-f0a5-88b3-a221-68915859f827"
-    - stage: uuid
-      stageUuid: "2384c03d-5c68-8895-b5b7-abb18ba1ef88"
-version: 2
----
-# energy
+# energy — allocating across sources, and why a closed loop cannot feed itself
 
-Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.
+Two things live here, and the second is the reason the atom exists.
 
-Entangled with — [[eu]] · [[efficiency]] · [[enumeration]] · [[consumption]] · [[details]] · [[star]] · [[scale]] · [[max]] · [[min]] · [[has]] · [[category]]
+## Allocation is the motor mixer in different units
 
-Attested in schema.org — EUEnergyEfficiencyEnumeration · Energy · EnergyConsumptionDetails · EnergyEfficiencyEnumeration · EnergyStarEnergyEfficiencyEnumeration · energyEfficiencyScaleMax · energyEfficiencyScaleMin · hasEnergyConsumptionDetails · hasEnergyEfficiencyCategory
+A hexacopter has six actuators and four axes. A hybrid bus has N sources and one demand. Both are
+the same fold: take a command, distribute it by declared coefficients, respect each actuator's
+limit, and **conserve**. In the mixer conservation appears as a column summing to zero
+([[horo]]/merkaba/rotation); here as `Σ drawn = delivered + losses`.
 
-**Law — [[law]]: energy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+A source that cannot deliver is **not silently skipped** — it contributes what it can and the
+`shortfall` is reported. An allocator that reports a demand met when it was not is the typed
+closing total one atom over ([[float]]): a number asserted instead of counted.
 
-@standard schema.org — the type vocabulary, collided to single words
+## The loop law
+
+A chain's gain is the **product** of its stage efficiencies. Every real stage is below 1, so a
+closed loop — output fed back as its own input — has gain below 1 and decays. No arrangement
+escapes this, because the bound is multiplicative and every factor is at most 1.
+
+`loopGain` **refuses** a stage claiming more than 100% rather than computing with it, returning
+`NaN`. Multiplying an over-unity claim through a chain produces a number that looks like an answer,
+and a number that looks like an answer is how this fails.
+
+## The water cycle, with the arithmetic shown
+
+| stage | efficiency |
+| --- | ---: |
+| PEM electrolysis — water to hydrogen | 0.70 |
+| compression and storage | 0.90 |
+| PEM fuel cell — hydrogen back to water | 0.55 |
+| **loop gain** | **0.347** |
+
+And the ideal case matters more than the real one. Splitting water costs **ΔH = +285.8 kJ/mol**
+(the higher heating value of hydrogen) and burning that hydrogen back returns **the same
+285.8 kJ/mol**. With thermodynamically perfect hardware the loop gain is **exactly 1.0** — it
+breaks even, and there is **nothing left over to do work with**. A pinned test adds a single load
+stage at 99% efficiency to the ideal loop and asserts it stops: *any* useful output ends it.
+
+That is the whole answer. Water is not a fuel; it is the **ash** of hydrogen. Hydrogen is a
+**carrier** — a way to move energy that came from somewhere else — and a cycle that burns water,
+powered by water, exhausting water is a closed loop being asked to be a source.
+
+**Honest boundary.** Efficiencies here are **declared**, not derived, and real hardware varies with
+load, temperature and age — these are representative figures, not a specification of any product.
+`allocate` is a greedy priority walk, which is optimal for a single demand and is **not** an optimal
+dispatch across multiple demands with ramp limits, degradation cost, or a price signal; that is a
+scheduling problem this atom does not solve. And conservation here is bookkeeping: it proves the
+allocation adds up, never that a source really holds what it declares.
+
+**Law — [[law]]: gain is a product, and a product of factors at most one is at most one. A source
+is a thing energy comes FROM; a loop is a thing energy goes AROUND — and the moment a design asks a
+loop to be a source, the arithmetic has already refused it.**
+
+## Standards
+
+- **ISO 80000-5** — thermodynamic quantities.
+- **IEC 60050-482** — primary and secondary cells.
+
+Composes: [[float]] · [[horo]]/merkaba/rotation · [[rules]]/refutable · [[law]].

@@ -1140,6 +1140,8 @@ src/en/16931/validate.ts:6: * @standard EN-16931:2017+A1:2019 semantic-model-ele
 src/en/16931/validate.ts:7: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/en/16931/validate.ts:8: * @standard UN-CEFACT 1001 document-name-code
 src/en/16931/validate.ts:9: * @standard UN-CEFACT 4461 payment-means
+src/energy/index.ts:21: * @standard ISO 80000-5 — thermodynamics quantities
+src/energy/index.ts:22: * @standard IEC 60050-482 — primary and secondary cells
 src/engineering/index.ts:16: * @standard ISO/IEC 25010:2023 §5 — product quality model (functional suitability … maintainability)
 src/entanglement/index.ts:22: * @standard ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)
 src/entity/types/index.ts:11: * @standard COSO-2013 entity-classification
