@@ -3,7 +3,7 @@ name: workflow
 description: "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service."
 atomPath: workflow
 coordinate: "workflow · 4/weave · 58d66584"
-contentUuid: "1f4ecde3-8370-5299-bbda-bc06d4799020"
+contentUuid: "1a9691fe-6433-5164-bd68-e2c54fcffa62"
 diamondUuid: "0c94a821-8502-80c4-8540-a459a0965c73"
 uuid: "58d66584-a16b-8084-98cb-3b731cc6b04e"
 horo: 4
@@ -11,15 +11,10 @@ typography:
   partition: workflow
   bondDegree: 104
 standards:
-  - "ASC-606"
-  - "IFRS-15"
-  - "ISA-95"
   - "ISO/IEC 19510:2013 BPMN-2.0"
   - "ISO/IEC 19510:2013 BPMN-2.0`"
   - "ISO/IEC-19510"
   - "SOX §404 internal-controls workflow-execution"
-  - "US-GAAP"
-  - "W3C-ActivityPub"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

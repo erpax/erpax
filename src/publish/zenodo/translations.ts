@@ -6,32 +6,35 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "float",
-    "uuid": "a840f565-5668-85a8-93ce-dfaa12810e6e",
+    "source": "zenodo",
+    "uuid": "cb4b9b32-e225-8dac-8fc1-6bbb07073adf",
     "words": [
-      "float"
+      "zenodo"
     ],
     "values": {
-      "en": "float"
+      "en": "zenodo"
     }
   },
   {
     "key": "description",
-    "source": "Use when reasoning about float — Data type: Floating number.",
-    "uuid": "bb1f8393-cacc-875f-8a3e-133f34bf7b6d",
+    "source": "Use when reasoning about zenodo — carried hand-typed counts, and they drifted:",
+    "uuid": "a306dfa9-96a5-8a62-b8b2-711da2fffe35",
     "words": [
       "use",
       "when",
       "reasoning",
       "about",
-      "float",
-      "data",
-      "type",
-      "floating",
-      "number"
+      "zenodo",
+      "carried",
+      "hand",
+      "typed",
+      "counts",
+      "and",
+      "they",
+      "drifted"
     ],
     "values": {
-      "en": "Use when reasoning about float — Data type: Floating number."
+      "en": "Use when reasoning about zenodo — carried hand-typed counts, and they drifted:"
     }
   }
 ]

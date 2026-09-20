@@ -2,11 +2,11 @@
 name: treasury
 description: "Use when reasoning about treasury — A government cash office reconciles exactly as a bank drawer does, so it mounts float unchanged."
 atomPath: treasury
-coordinate: "treasury · 4/weave · 1a527908"
-contentUuid: "a16d76a6-e5ae-5ddb-a81f-9ce35b019be6"
-diamondUuid: "e926f4b0-9bea-8817-af66-261a6eff751a"
-uuid: "1a527908-1ced-8173-b7ed-6c20ff168859"
-horo: 4
+coordinate: "treasury · 5/round · ca7cb4b5"
+contentUuid: "e54e876d-4b36-5783-af92-37b2e60f24af"
+diamondUuid: "f3c3dabc-b4b7-8587-a293-f99495507ecc"
+uuid: "ca7cb4b5-abec-80f7-b87f-2a1dccd0148c"
+horo: 5
 typography:
   partition: treasury
   bondDegree: 10
@@ -16,7 +16,7 @@ standards:
   - ISA 501 — physical count as audit evidence
 bindings: []
 signatures:
-  computationUuid: "3a03fc8f-d575-8f94-9389-00caf391cf7b"
+  computationUuid: "5f9e1bc1-a57c-8525-ac71-811c28e53dd6"
   stages:
     - stage: path
       stageUuid: "c10b5e40-2a9b-84e6-9674-b0d40ae55ce7"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "39bacbb0-daa2-8500-ad92-fea3e84b023e"
     - stage: links
-      stageUuid: "821ae1f8-a730-8c21-bdac-e71ae752fbb8"
+      stageUuid: "97cefde0-bfec-8738-9b4a-66a5f43def8a"
     - stage: horo
-      stageUuid: "74a120e9-8c6a-8b3f-a36d-77e49c28a479"
+      stageUuid: "8b5ad884-e02a-8110-b960-1b0e07a76c89"
     - stage: seal
       stageUuid: "f981df18-6a95-8166-bddf-ae0e3cf25762"
     - stage: uuid
-      stageUuid: "f31441c7-1057-8284-a243-fe2155bff7ac"
+      stageUuid: "85edcfbb-6a3c-8030-9462-8eb47603dbac"
 version: 2
 ---
 # treasury — a public till, where the variance has nowhere to go

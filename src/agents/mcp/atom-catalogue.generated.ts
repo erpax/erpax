@@ -653,10 +653,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "argument"
   },
   {
-    "atom": "armoury",
-    "name": "armoury",
-    "description": "Use when reasoning about armoury — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount.",
-    "path": "armoury"
+    "atom": "armory",
+    "name": "armory",
+    "description": "Use when reasoning about armory — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount.",
+    "path": "armory"
   },
   {
     "atom": "arrival",
@@ -3369,6 +3369,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "float",
     "description": "Use when reasoning about float — Four institutions, four vocabularies, **one structure**: something opens with a float, signed movements pass through it, and at close somebody **counts it in discrete units**.",
     "path": "float"
+  },
+  {
+    "atom": "floor",
+    "name": "floor",
+    "description": "Use when reasoning about floor — The corpus's security claims rested on the word **infeasible**, and infeasible is an opinion about hardware.",
+    "path": "floor"
   },
   {
     "atom": "fold",
@@ -6147,6 +6153,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "registry",
     "description": "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand.",
     "path": "publish/registry"
+  },
+  {
+    "atom": "zenodo",
+    "name": "zenodo",
+    "description": "Use when reasoning about zenodo — carried hand-typed counts, and they drifted:",
+    "path": "publish/zenodo"
   },
   {
     "atom": "pwa",
@@ -10923,6 +10935,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "inventory",
     "description": "Use when reasoning about inventory — erpax proves its decisions in Lean. Until this atom, the only way to SEE that was to install Lean 4.33.1 and run it — so every reader who did not met the claim as a sentence…",
     "path": "verify/inventory"
+  },
+  {
+    "atom": "latex",
+    "name": "latex",
+    "description": "Use when reasoning about latex — The rendering is generated from verify/inventory, so it cannot drift. What matters is the other direction: **a document may quietly omit** the theorems that carry axioms, or the…",
+    "path": "verify/latex"
   },
   {
     "atom": "version",

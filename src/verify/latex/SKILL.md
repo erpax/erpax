@@ -1,3 +1,37 @@
+---
+name: latex
+description: "Use when reasoning about latex — The rendering is generated from verify/inventory, so it cannot drift. What matters is the other direction: **a document may quietly omit** the theorems that carry axioms, or the…"
+atomPath: "verify/latex"
+coordinate: "verify/latex · 7/descent · 936f489d"
+contentUuid: "02e63a51-89ff-5fef-854c-07ecafce2eac"
+diamondUuid: "a978970b-3ce3-89ea-9001-42601e7561c8"
+uuid: "936f489d-d5b0-8051-b0d6-34ec79e61eaa"
+horo: 7
+typography:
+  partition: verify
+  bondDegree: 9
+standards:
+  - "ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence"
+bindings: []
+signatures:
+  computationUuid: "61ffbecb-3746-8cb7-afbc-f0e861c6a656"
+  stages:
+    - stage: path
+      stageUuid: "b3bb17b7-ec82-8c91-8c80-ba220edc4cd3"
+    - stage: trinity
+      stageUuid: "7cfeb55b-fad1-8eb9-a257-f8daf68eac14"
+    - stage: boundary
+      stageUuid: "1533c2b6-7af2-8927-8dfa-7b74563aebc2"
+    - stage: links
+      stageUuid: "01d273e2-f8fb-8ed8-afaa-9ddd390c9ff5"
+    - stage: horo
+      stageUuid: "a785358a-80cb-849b-8e32-a588086cfd7b"
+    - stage: seal
+      stageUuid: "d9e491cb-db69-8d14-9b73-0dc0d6f441e9"
+    - stage: uuid
+      stageUuid: "6ba5d5a6-0f21-8f0a-9b7f-d85f44a95e8f"
+version: 2
+---
 # verify/latex — a document and a kernel record that cannot disagree
 
 The rendering is generated from [[verify]]/inventory, so it cannot drift. What matters is the other

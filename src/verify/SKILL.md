@@ -3,17 +3,17 @@ name: verify
 description: "Use when reasoning about verify — Every other gate in this corpus is a program this corpus wrote, checking a property this corpus chose."
 atomPath: verify
 coordinate: "verify · 8/crest · 0cf34457"
-contentUuid: "ef65eb66-b953-59f2-9966-94729b993223"
-diamondUuid: "8690b3c3-fa21-818d-9131-a4d3117178f7"
+contentUuid: "88db8eb0-a9a3-56fd-91d7-6371e97e7840"
+diamondUuid: "8d5ff28e-7301-84f2-99ab-a33a0e368254"
 uuid: "0cf34457-1d0c-8106-8550-2361f3ee4c1b"
 horo: 8
 typography:
   partition: verify
-  bondDegree: 15
+  bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ce879c9e-058d-8f2f-b4d9-424e8fbea9de"
+  computationUuid: "6dc51278-329c-8ad6-a732-fa5d037a1b40"
   stages:
     - stage: path
       stageUuid: "b8afcb1e-3a7c-81b6-b4a9-1accd540c681"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "47be0201-023a-8c4e-ace3-c2db84b28bec"
     - stage: horo
-      stageUuid: "20074454-31e0-8dff-99e0-be701503f88c"
+      stageUuid: "804cacfe-cd43-8539-bc22-960ec7a61441"
     - stage: seal
       stageUuid: "14c8993c-3716-80ef-9dd7-73ff111a495b"
     - stage: uuid
-      stageUuid: "7f2a3350-cdb1-8702-96c8-f94f1d35b2d7"
+      stageUuid: "7c1bca62-63a0-8ac3-8fc2-e0b1692b87ad"
 version: 2
 ---
 # verify — the kernel is the only reader whose green means anything, and it does not run in a Worker

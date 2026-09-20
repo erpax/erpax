@@ -3,7 +3,7 @@ name: definitions
 description: "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection."
 atomPath: "workflow/definitions"
 coordinate: "workflow/definitions · 2/share · 2baa1150"
-contentUuid: "fc6e290b-180e-5685-bb9c-163bca14ec50"
+contentUuid: "dfa41c22-2b7e-5ea0-948c-6debb8963df9"
 diamondUuid: "80d1cb36-3347-84d3-8b22-948c8f7373f4"
 uuid: "2baa1150-3d06-8fc2-8f5e-4ae306b6d318"
 horo: 2
@@ -11,9 +11,6 @@ typography:
   partition: workflow
   bondDegree: 46
 standards:
-  - "ASC-606"
-  - "IFRS-15"
-  - "ISA-95"
   - "ISO-27002 §5.4 segregation-of-duties"
   - "ISO-8601-1:2019 date-time"
   - "ISO-8601-1:2019 date-time`"
@@ -21,8 +18,6 @@ standards:
   - "ISO/IEC 19510:2013 BPMN-2.0`"
   - "ISO/IEC-19510"
   - "SOX §404 internal-controls multi-step-approval"
-  - "US-GAAP"
-  - "W3C-ActivityPub"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

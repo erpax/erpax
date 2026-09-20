@@ -3,8 +3,8 @@ name: provenance
 description: "Use when reasoning about provenance — Measured 2026-09-20, in the literature a bank would price remediation from:"
 atomPath: provenance
 coordinate: "provenance · 5/round · 6e2fd4e2"
-contentUuid: "1dc4587f-1474-555b-9c60-d589b9ebc46f"
-diamondUuid: "115ba584-b6e3-8a32-ac38-38fc19b2d052"
+contentUuid: "d7e144fa-e924-5a0b-b43d-9b235d762475"
+diamondUuid: "218aa274-9cf5-8232-b564-84e38fee389a"
 uuid: "6e2fd4e2-17a2-85eb-a91c-a29e15768e75"
 horo: 5
 typography:
@@ -13,16 +13,17 @@ typography:
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence"
   - "W3C PROV-DM — provenance as a graph of entities and derivations"
+  - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "76d7238c-e4d5-8415-8963-afc5f96bedfa"
+  computationUuid: "a9847b2a-dacb-8df9-9a3a-3307d4ce195d"
   stages:
     - stage: path
       stageUuid: "4109fefd-11ff-82bd-8061-8a4383a229a4"
     - stage: trinity
       stageUuid: "b6b4e4f2-ef65-8847-8b33-a56a760ffd1b"
     - stage: boundary
-      stageUuid: "e325f2d9-43f4-825b-90f7-d0efa707bd6c"
+      stageUuid: "4a3a3f6f-fddb-8b65-a411-be7d86db3bb3"
     - stage: links
       stageUuid: "245aa63c-c141-8352-a574-f969bee2671a"
     - stage: horo
@@ -30,7 +31,7 @@ signatures:
     - stage: seal
       stageUuid: "ea2d4bd8-1a66-8e29-983d-1ba477901fb6"
     - stage: uuid
-      stageUuid: "38260595-b5b5-8f56-bfab-2b9354be5e9b"
+      stageUuid: "eb60348c-88eb-8ab1-b462-0e4e395cb9d9"
 version: 2
 ---
 # provenance — PROVE·nance: a chain that must be walked, because restatement is not corroboration

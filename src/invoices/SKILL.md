@@ -3,7 +3,7 @@ name: invoices
 description: "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection."
 atomPath: invoices
 coordinate: "invoices · 8/crest · 70a32498"
-contentUuid: "9cbbd12f-5d9c-5a6a-82e3-3d40842d57f6"
+contentUuid: "873b891a-33e8-5aae-bf77-f64bf02a96c0"
 diamondUuid: "5f5c0b64-792a-80da-8829-0faa4b499adb"
 uuid: "70a32498-c740-8a09-8bd2-e4bdd1a926ae"
 horo: 8
@@ -29,7 +29,6 @@ standards:
   - "ISO-8601-1:2019 date-time invoice-date due-date`"
   - "ISO-9362"
   - "ISO-9735"
-  - "NIST-SP-800-38D"
   - "Peppol-BIS-3.0"
   - "Peppol-BIS-3.0 billing electronic-invoicing"
   - "SOX §404 internal-controls"

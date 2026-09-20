@@ -3,7 +3,7 @@ name: scope
 description: "Use when reasoning about scope — Наредба Н-18 чл."
 atomPath: "naredba/n/18/scope"
 coordinate: "naredba/n/18/scope · 8/crest · 595e8daf"
-contentUuid: "6074d807-d68e-5ff9-97b4-271d1a6bace4"
+contentUuid: "e7372430-c4b7-5828-b9a7-fbd2cfa274e8"
 diamondUuid: "6fe7d2fe-65f7-89f6-a69d-41be64b07593"
 uuid: "595e8daf-74fe-8696-b1aa-f8cc857a3f3d"
 horo: 8
@@ -12,7 +12,6 @@ typography:
   bondDegree: 24
 standards:
   - "Naredba-N-18"
-  - ZDDS
 bindings: []
 signatures:
   computationUuid: "e00c6c4b-f01d-8cda-9a53-782dac6269c3"

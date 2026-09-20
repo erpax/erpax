@@ -3,8 +3,8 @@ name: energy
 description: "Use when reasoning about energy — Two things live here, and the second is the reason the atom exists."
 atomPath: energy
 coordinate: "energy · 7/descent · 04feb59c"
-contentUuid: "357e9cd5-c440-5b1e-b1a6-2cb56fa1d297"
-diamondUuid: "c499bdf3-6543-853c-b74c-e260fadb3873"
+contentUuid: "30769578-6101-5b1c-aa35-82cd1d7a4ff2"
+diamondUuid: "e134b480-dee4-8cb9-84d2-47400764c6f3"
 uuid: "04feb59c-68f5-8504-b330-857fe9718ce6"
 horo: 7
 typography:
@@ -15,14 +15,14 @@ standards:
   - "ISO 80000-5 — thermodynamics quantities"
 bindings: []
 signatures:
-  computationUuid: "16626b55-a3d1-8f2f-a92c-deb5af10c4d4"
+  computationUuid: "7149e486-94e3-8acd-8680-f07588c856ae"
   stages:
     - stage: path
       stageUuid: "0ce98992-3572-8ba8-b572-63bc01ddd69d"
     - stage: trinity
       stageUuid: "b934842f-a1a1-8a7d-805c-fe96cb090c25"
     - stage: boundary
-      stageUuid: "27501276-c3b9-8684-a449-451c14017192"
+      stageUuid: "fa2bf25a-9e5b-8e9f-a725-19cb24830325"
     - stage: links
       stageUuid: "3b860b8c-0e6b-8a41-b062-e377d616f26e"
     - stage: horo
@@ -30,7 +30,7 @@ signatures:
     - stage: seal
       stageUuid: "e1b14f1b-f0a5-88b3-a221-68915859f827"
     - stage: uuid
-      stageUuid: "6da3f7fb-b46e-8a2d-b682-7776eff1a078"
+      stageUuid: "d87eb0a2-8fc9-89c1-84d1-534096d0d657"
 version: 2
 ---
 # energy — allocating across sources, and why a closed loop cannot feed itself

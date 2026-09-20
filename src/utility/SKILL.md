@@ -3,15 +3,14 @@ name: utility
 description: "Use when dividing by anything that could be zero — pick the policy by what the zero MEANS (throw for money, collapse to 0 for an undefined ratio, coerce to 1 for an unset divisor) so ∞ or NaN never enters an account."
 atomPath: utility
 coordinate: "utility · 5/round · 139700dd"
-contentUuid: "afbb41a8-0830-56e4-8e11-d22e4398e791"
+contentUuid: "a382fb91-1e35-5a7e-a604-ec5a1a2d8e97"
 diamondUuid: "8096ef68-c528-842d-b328-08208521f8dc"
 uuid: "139700dd-e7d1-842b-9de5-62135def813f"
 horo: 5
 typography:
   partition: utility
   bondDegree: 34
-standards:
-  - "IEEE-754"
+standards: []
 bindings: []
 signatures:
   computationUuid: "a919bc50-2612-8e76-86ff-fa9ba990d27d"

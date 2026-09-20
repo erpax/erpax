@@ -3,7 +3,7 @@ name: inject
 description: "Use when reasoning about inject — **3,597 SKILL.md and 3,595 LLM.md files are loaded into an agent's context**, and LLM.md is *generated* from SKILL.md — so a line written once propagates into every future agent's…"
 atomPath: "rules/inject"
 coordinate: "rules/inject · 7/descent · 31a3eaf7"
-contentUuid: "6d6421a3-fb5f-512f-b3b4-918e4d297927"
+contentUuid: "7af503f9-3431-5289-9422-e74276a84fe0"
 diamondUuid: "ab03766b-2e25-8ccb-b243-02299c99f43a"
 uuid: "31a3eaf7-2383-8c6b-8a50-fd9d944d943f"
 horo: 7
@@ -14,6 +14,7 @@ standards:
   - "CVE-2021-42574 — Trojan Source, bidirectional control characters"
   - "ISO/IEC 27001 A.8.28 — secure coding"
   - "OWASP LLM01:2025 — prompt injection"
+  - "OWASP-ASVS"
 bindings: []
 signatures:
   computationUuid: "30be761c-ae70-8de8-9c58-a13773eec5dc"
