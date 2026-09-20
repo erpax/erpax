@@ -102,5 +102,3 @@ export const ComputedCssProvider: React.FC<ComputedCssProviderProps> = ({
     </ComputedCssContext>
   )
 }
-
-export const useComputedCss = (): ComputedCssContextValue => use(ComputedCssContext)

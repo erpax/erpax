@@ -386,61 +386,16 @@ export const deviceReadingFromBp = (systolic: number, diastolic: number, at: str
 export const deviceReadingFromOximeter = (spo2: number, pulse: number, at: string) =>
   deviceReadingFromModality('oximeter', [spo2, pulse], at)
 
-export const deviceReadingFromThermometer = (celsius: number, at: string) =>
-  deviceReadingFromModality('thermometer', [celsius], at)
-
-export const deviceReadingFromGlucometer = (mgDl: number, at: string) =>
-  deviceReadingFromModality('glucometer', [mgDl], at)
-
-export const deviceReadingFromEcg = (bpm: number, at: string) => deviceReadingFromModality('ecg', [bpm], at)
-
-export const deviceReadingFromHolter = (avgBpm: number, at: string) =>
-  deviceReadingFromModality('holter', [avgBpm], at)
-
-export const deviceReadingFromFetal = (fhr: number, maternalHr: number, at: string) =>
-  deviceReadingFromModality('fetal', [fhr, maternalHr], at)
-
 export const deviceReadingFromXray = (doseMgy: number, at: string) =>
   deviceReadingFromModality('xray', [doseMgy], at)
-
-export const deviceReadingFromCt = (doseMgy: number, at: string) => deviceReadingFromModality('ct', [doseMgy], at)
 
 export const deviceReadingFromMri = (doseMgy: number, at: string) => deviceReadingFromModality('mri', [doseMgy], at)
 
 export const deviceReadingFromUltrasound = (depthCm: number, at: string) =>
   deviceReadingFromModality('ultrasound', [depthCm], at)
 
-export const deviceReadingFromPet = (suv: number, at: string) => deviceReadingFromModality('pet', [suv], at)
-
-export const deviceReadingFromCentrifuge = (rpm: number, at: string) =>
-  deviceReadingFromModality('centrifuge', [rpm], at)
-
-export const deviceReadingFromAnalyzer = (analyte: number, at: string) =>
-  deviceReadingFromModality('analyzer', [analyte], at)
-
 export const deviceReadingFromCassette = (result: number, at: string) =>
   deviceReadingFromModality('cassette', [result], at)
-
-export const deviceReadingFromInfusion = (rateMlH: number, at: string) =>
-  deviceReadingFromModality('infusion', [rateMlH], at)
-
-export const deviceReadingFromVentilator = (tidalMl: number, rate: number, at: string) =>
-  deviceReadingFromModality('ventilator', [tidalMl, rate], at)
-
-export const deviceReadingFromDialysis = (ufRate: number, at: string) =>
-  deviceReadingFromModality('dialysis', [ufRate], at)
-
-export const deviceReadingFromPacemaker = (pacedBpm: number, at: string) =>
-  deviceReadingFromModality('pacemaker', [pacedBpm], at)
-
-export const deviceReadingFromDefibrillator = (joules: number, at: string) =>
-  deviceReadingFromModality('defibrillator', [joules], at)
-
-export const deviceReadingFromCautery = (watts: number, at: string) =>
-  deviceReadingFromModality('cautery', [watts], at)
-
-export const deviceReadingFromLaparoscope = (score: number, at: string) =>
-  deviceReadingFromModality('laparoscope', [score], at)
 
 export const deviceReadingFromAnesthesia = (fio2: number, map: number, at: string) =>
   deviceReadingFromModality('anesthesia', [fio2, map], at)
@@ -449,31 +404,10 @@ export const deviceReadingFromCgm = (mgDl: number, at: string) => deviceReadingF
 
 export const deviceReadingFromWatch = (bpm: number, at: string) => deviceReadingFromModality('watch', [bpm], at)
 
-export const deviceReadingFromCpap = (pressure: number, at: string) =>
-  deviceReadingFromModality('cpap', [pressure], at)
-
-export const deviceReadingFromSpirometer = (fvc: number, fev1: number, at: string) =>
-  deviceReadingFromModality('spirometer', [fvc, fev1], at)
-
-export const deviceReadingFromAudiometer = (thresholdDb: number, at: string) =>
-  deviceReadingFromModality('audiometer', [thresholdDb], at)
-
-export const deviceReadingFromOphthalmoscope = (score: number, at: string) =>
-  deviceReadingFromModality('ophthalmoscope', [score], at)
-
-export const deviceReadingFromOtoscope = (score: number, at: string) =>
-  deviceReadingFromModality('otoscope', [score], at)
-
-export const deviceReadingFromEndoscope = (score: number, at: string) =>
-  deviceReadingFromModality('endoscope', [score], at)
-
 export const deviceReadingFromMonitor = (hr: number, spo2: number, systolic: number, at: string) =>
   deviceReadingFromModality('monitor', [hr, spo2, systolic], at)
 
 export const deviceReadingFromBed = (alarm: number, at: string) => deviceReadingFromModality('bed', [alarm], at)
-
-export const deviceReadingFromIvpump = (rateMlH: number, at: string) =>
-  deviceReadingFromModality('ivpump', [rateMlH], at)
 
 /** Every registered modality produces a boundary-holding reading. */
 export const allModalitiesBoundaryHold = (): boolean =>

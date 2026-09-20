@@ -535,11 +535,3 @@ export function featuresForCollection(slug: string): ReadonlyArray<Feature> {
     f.collections?.includes(slug),
   )
 }
-
-/**
- * Returns true if a collection is "core" (no feature gates) — available
- * on every tier including free.
- */
-export function isCoreCollection(slug: string): boolean {
-  return featuresForCollection(slug).length === 0
-}

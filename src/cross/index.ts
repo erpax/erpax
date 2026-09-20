@@ -192,14 +192,3 @@ export const actorCapabilityResolved = async (req: PayloadRequest): Promise<Acce
   const byName = new Map(res.docs.map((d) => [d.name, d.capability ?? null]))
   return mergeCapabilities(names.map((n) => resolveRoleCapability(n, byName.get(n) ?? null)))
 }
-
-/**
- * crossAccess that resolves capability from the live Role entities (async) — the dynamic twin of
- * `crossAccess` (which uses the seed synchronously). Same lattice decision, runtime-tunable.
- */
-export const crossAccessResolved =
-  (op: CrudOp): Access =>
-  async ({ req }) => {
-    const cap = await actorCapabilityResolved(req)
-    return cap === null ? false : rolesCompatible(cap, roleForOperation(op))
-  }

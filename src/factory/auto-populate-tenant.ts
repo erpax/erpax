@@ -12,25 +12,3 @@
 
 import type { CollectionBeforeValidateHook } from 'payload'
 import { getTenantContext } from '@/plugins/auth/context'
-
-/**
- * Create auto-populate tenant hook for a collection.
- *
- * Derives tenant from `req.user.tenants[0]?.tenant` and sets on document.
- * If user has no tenant, hook throws error (caught by Payload validation).
- *
- * @param collectionSlug Payload collection slug (inferred at compile time)
- * @returns Hook that auto-populates tenant field
- */
-export const createAutoPopulateTenantHook = (): CollectionBeforeValidateHook =>
-  async ({ data, req }) => {
-    if (!req.user || !data) return data
-
-    try {
-      const ctx = getTenantContext(req)
-      return { ...data, tenant: ctx.tenantId }
-    } catch (err) {
-      // getTenantContext throws if user has no tenant
-      throw err
-    }
-  }

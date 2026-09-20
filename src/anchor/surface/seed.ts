@@ -29,5 +29,3 @@ export const surfaceRows = (): readonly SeedRow<{
       sealedBy: CHANNEL_SURFACES.includes(kind) ? [CHANNEL_STANDARD] : kind === 'root-signing' ? ROOT_STANDARDS : [],
     })),
   )
-
-export const surfaceSeedAddress = (): string => seedAddress(surfaceRows())

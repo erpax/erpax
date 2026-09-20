@@ -260,11 +260,3 @@ export function isValidPostalCode(country: string | null | undefined, code: stri
   if (typeof code !== 'string' || code.length === 0) return false
   return fmt.postalCodePattern.test(code.trim())
 }
-
-/**
- * Return the components a country requires the user to provide for a
- * valid address. Useful for marking admin-UI fields as `required`.
- */
-export function requiredAddressFields(country?: string | null): readonly AddressComponent[] {
-  return getAddressFormat(country).required
-}

@@ -162,10 +162,6 @@ export function candidateModels(table: string): string[] {
   return [...out]
 }
 
-/** @deprecated The head noun's canonical singular — kept for callers; prefer `candidateModels`. */
-export const headNoun = (table: string): string =>
-  candidateSingulars(table.split('_').pop() ?? table)[0] ?? table
-
 /** An erpax atom: its path, and whether it carries executable MATTER (index.ts) or is vocabulary only. */
 export interface AtomEntry {
   readonly path: string

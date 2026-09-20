@@ -187,9 +187,6 @@ export const bondRankOf = (atomPath: string): number => {
   return backlinksOf(matrixKey).length + neighborsOf(matrixKey).length
 }
 
-/** Canonical matrix atom key after path resolution — for edge graph queries. */
-export const matrixAtomOf = (key: string): string | undefined => nodeOf(key)?.atom
-
 /**
  * Cross-named architecture address — path · horo/measure · uuid prefix.
  * Violation messages cite this coordinate (digits + bind), not hand labels alone.

@@ -336,40 +336,6 @@ export interface TheoremReceipt {
 const theoremCachePath = (cwd: string): string =>
   nodePath.join(cwd, 'node_modules', '.cache', 'erpax', 'theorems.json')
 
-/**
- * Inhale — the explicit network breath: fetch the portal's MCP tool surface once, content-address
- * each satisfying tool's definition into the local cache. Returns the number of axes satisfied.
- */
-export async function inhaleTheorems(
-  cwd: string = process.cwd(),
-  origin: string = THEOREM_PROVIDER.origin,
-): Promise<number> {
-  const res = await fetch(`${origin}${THEOREM_PROVIDER.mcp}`)
-  if (!res.ok) throw new Error(`theorem provider unreachable: ${res.status} ${origin}`)
-  const surface = (await res.json()) as {
-    server?: { root?: string }
-    result?: { tools?: ReadonlyArray<{ name: string; description?: string }> }
-    tools?: ReadonlyArray<{ name: string; description?: string }>
-  }
-  const tools = new Map((surface.result?.tools ?? surface.tools ?? []).map((t) => [t.name, t]))
-  const root = surface.server?.root ?? null
-  const at = new Date().toISOString()
-  const cache: Record<string, TheoremReceipt> = {}
-  for (const [axis, tool] of Object.entries(THEOREM_PROVIDER.satisfies)) {
-    const def = tools.get(tool)
-    if (!def) continue
-    cache[axis] = {
-      tool,
-      receipt: nodeCrypto.createHash('sha256').update(JSON.stringify({ root, def })).digest('hex'),
-      at,
-    }
-  }
-  const path = theoremCachePath(cwd)
-  nodeFs.mkdirSync(nodePath.dirname(path), { recursive: true })
-  nodeFs.writeFileSync(path, JSON.stringify(cache, null, 2) + '\n')
-  return Object.keys(cache).length
-}
-
 /** Offline face — gates read only the cached receipts (zero-network law). */
 export function theoremReceipts(cwd: string = process.cwd()): Record<string, TheoremReceipt> {
   try {
@@ -377,21 +343,6 @@ export function theoremReceipts(cwd: string = process.cwd()): Record<string, The
   } catch {
     return {}
   }
-}
-
-/** Report — which standards axes are satisfied computationally by cached theorem receipts. */
-export function standardsSatisfiedComputationally(
-  cwd: string = process.cwd(),
-): ReadonlyArray<{ axis: TheoremAxis; tool: string; satisfied: boolean; receipt: string | null }> {
-  const cached = theoremReceipts(cwd)
-  return (Object.entries(THEOREM_PROVIDER.satisfies) as ReadonlyArray<[TheoremAxis, string]>).map(
-    ([axis, tool]) => ({
-      axis,
-      tool,
-      satisfied: cached[axis]?.tool === tool,
-      receipt: cached[axis]?.receipt ?? null,
-    }),
-  )
 }
 
 /** @index-cross.foldback child=standards/registry parent=standards — this cross folds back into its parent. */

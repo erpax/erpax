@@ -338,27 +338,4 @@ export async function getTenantDefaultsFromReq(
   }
 }
 
-/**
- * Just the country for the active tenant. Falls back to the deployment
- * default when no tenant context exists.
- */
-export async function getTenantCountryFromReq(
-  req: Pick<PayloadRequest, 'user' | 'payload'>,
-): Promise<string> {
-  const cfg = await resolveRequestConfig(req)
-  return cfg.country
-}
-
-/**
- * Just the merged {@link CountryContext} bundle (profile + specifics +
- * official APIs + bound helpers). Convenience for call sites that only
- * need the country surface, not the full {@link ResolvedConfig}.
- */
-export async function getCountryContextFromReq(
-  req: Pick<PayloadRequest, 'user' | 'payload'>,
-): Promise<CountryContext> {
-  const cfg = await resolveRequestConfig(req)
-  return cfg.countryContext
-}
-
 /** @index-cross.foldback child=tenant/context parent=tenant — this cross folds back into its parent. */

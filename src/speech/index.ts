@@ -77,12 +77,6 @@ export interface SpeechAnalogResult {
 /** Content-address one speech capture. */
 export const speechEntryUuid = (payload: unknown): string => uuid(payload)
 
-/** Build a lawful speech entry from sealed coordinates. */
-export function speechEntryOf(contentUuid: string, horo: HoroStep, at: string): SpeechEntry {
-  const payload = { contentUuid, horo, at }
-  return { id: speechEntryUuid(payload), contentUuid, horo, at }
-}
-
 const supersededSpeechIds = (entries: readonly SpeechEntry[]): ReadonlySet<string> => {
   const ids = new Set<string>()
   for (const e of entries) {
@@ -127,35 +121,6 @@ export function reconstructSpeechAt(
 function latestSpeechAt(entries: readonly SpeechEntry[]): string | null {
   if (entries.length === 0) return null
   return entries.reduce((max, e) => (e.at > max ? e.at : max), entries[0]!.at)
-}
-
-/**
- * Map append-only speech entries → analog utterance stream (EMR-style timeline).
- * Corrections supersede; `active` reflects the winner at `asOf`.
- */
-export function speechAnalogStream(
-  entries: readonly SpeechEntry[],
-  opts?: { asOf?: string },
-): SpeechAnalogResult[] {
-  const asOf = opts?.asOf ?? latestSpeechAt(entries) ?? ''
-  const active = reconstructSpeechAt(entries, asOf)
-  const superseded = supersededSpeechIds(entries)
-  return [...entries]
-    .sort((a, b) => (a.at < b.at ? -1 : a.at > b.at ? 1 : 0))
-    .map((e) => {
-      const speech = speechFromHoro(e.contentUuid, e.horo)
-      return {
-        entryId: e.id,
-        contentUuid: e.contentUuid,
-        horo: e.horo,
-        pitchHz: speech.pitchHz,
-        phonemes: speech.phonemes,
-        durationMs: speech.durationMs,
-        at: e.at,
-        superseded: superseded.has(e.id),
-        active: active.get(e.contentUuid)?.entryId === e.id,
-      }
-    })
 }
 
 /** One tai-chi chi-cung breath tick with computed speech at the yang pole. */

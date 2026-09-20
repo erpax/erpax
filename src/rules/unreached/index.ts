@@ -208,16 +208,6 @@ export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
   return out.sort((a, b) => a.atomPath.localeCompare(b.atomPath))
 }
 
-/** Fails closed on getting worse. Ratchets down as each atom is wired or dropped. */
-export function assertNoNewUnreached(cwd: string = process.cwd(), ceiling: number): void {
-  const bad = unreachedAtoms(cwd)
-  if (bad.length <= ceiling) return
-  throw new Error(
-    `✖ rules/unreached — ${bad.length} code atom(s) nothing reaches (ceiling ${ceiling}):\n` +
-      bad.slice(0, 20).map((a) => `  ${a.atomPath}`).join('\n'),
-  )
-}
-
 if (import.meta.url === `file://${process.argv[1]}`) {
   const bad = unreachedAtoms()
   console.log(`rules/unreached — ${bad.length} code atom(s) reached by nothing`)

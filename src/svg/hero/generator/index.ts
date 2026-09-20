@@ -106,23 +106,3 @@ export function renderProductHeroSvg(spec: SvgHeroSpec): string {
   <text x="1500" y="820" text-anchor="end" font-family="system-ui, sans-serif" font-size="18" fill="rgba(255,255,255,0.45)">erpax</text>
 </svg>`
 }
-
-/**
- * Convenience — return a `Buffer` ready for Payload `payload.create({collection:'media'})`.
- */
-export function renderProductHeroBuffer(spec: SvgHeroSpec): Buffer {
-  return Buffer.from(renderProductHeroSvg(spec), 'utf-8')
-}
-
-/**
- * Pick a sensible motif for a given product-page slug. Used by the seed
- * so each page gets a visually distinct hero without manual mapping.
- */
-export function defaultMotifFor(slug: string): SvgHeroSpec['motif'] {
-  if (/sub|recurr|saas/.test(slug)) return 'cycle'
-  if (/multi-curr|currency|fx/.test(slug)) return 'coin'
-  if (/multi-tenant|isolation|secur/.test(slug)) return 'shield'
-  if (/intern|country|locale/.test(slug)) return 'globe'
-  if (/report|statement|kpi|ratio/.test(slug)) return 'graph'
-  return 'ledger'
-}

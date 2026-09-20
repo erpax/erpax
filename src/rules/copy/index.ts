@@ -115,17 +115,6 @@ export function copyCount(cwd: string = process.cwd(), minNodes = 40): number {
   return duplicateBodies(cwd, minNodes).reduce((n, g) => n + (g.sites.length - 1), 0)
 }
 
-/** Fails closed on getting worse. */
-export function assertNoNewCopies(cwd: string = process.cwd(), ceiling: number, minNodes = 40): void {
-  const n = copyCount(cwd, minNodes)
-  if (n <= ceiling) return
-  const worst = duplicateBodies(cwd, minNodes).slice(0, 8)
-  throw new Error(
-    `✖ rules/copy — ${n} duplicated body/bodies (ceiling ${ceiling}):\n` +
-      worst.map((g) => `  ${g.nodes} nodes ×${g.sites.length}\n${g.sites.map((s) => `      ${s.file}:${s.line} ${s.name}`).join('\n')}`).join('\n'),
-  )
-}
-
 if (import.meta.url === `file://${process.argv[1]}`) {
   const groups = duplicateBodies()
   console.log(`rules/copy — ${groups.length} body/bodies at 2+ addresses · ${copyCount()} removable`)

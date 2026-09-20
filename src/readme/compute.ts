@@ -431,9 +431,6 @@ export function renderOrientSection(cwd: string = process.cwd()): readonly strin
   return deriveOrientSection(cwd)
 }
 
-/** @deprecated Use renderOrientSection */
-export const renderForAiAssistantsSection = renderOrientSection
-
 /** Render the model to the README markdown — PURE (`model → markdown`), so the typography is testable + stable.
  * Root face is QPU/FTL-first: metrics over catalogs. Source index / papers / thinking stay callable
  * but are not stitched into the default root (pass `sourceIndex` explicitly only when needed).
@@ -1037,14 +1034,6 @@ export function deriveReadmeRootInputsInWaves(
     papers,
     models: allModels,
   }
-}
-
-/** Derive corpus analytics in horo waves — one batch at a time (OOM guard). */
-export function deriveCorpusAnalyticsInWaves(
-  cwd: string = process.cwd(),
-  onWave?: (ordinal: number, itemCount: number) => void,
-): CorpusAnalytics {
-  return deriveReadmeRootInputsInWaves(cwd, onWave).analytics
 }
 
 /** Derive corpus analytics from folder models — no MD/TS paper scan (fast path for deriveModel). */
@@ -2478,10 +2467,6 @@ export function generateFolderReadme(atomPath: string, cwd: string = process.cwd
   return renderFolderReadme(deriveFolderReadme(atomPath, cwd))
 }
 
-export function verifyFolderReadmes(cwd: string = process.cwd()): { ok: boolean; drift: string[] } {
-  return verifyComputedFaces(cwd).readme
-}
-
 /** Agent deployment brief — token-dense projection of DiamondModel for LLM context. */
 export interface LLMBriefModel {
   readonly atomPath: string
@@ -2895,11 +2880,6 @@ export function materializeComputedFacesInWaves(
     onWave?.(wave.ordinal, wave.itemCount, total)
   }
   return total
-}
-
-/** @deprecated Use materializeComputedFaces — writes README.md only. */
-export function materializeFolderReadmes(cwd: string = process.cwd()): number {
-  return materializeComputedFaces(cwd)
 }
 
 /**

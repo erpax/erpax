@@ -300,9 +300,6 @@ export const pullEntropy = (root: string = process.cwd()): Entropy[] => {
   ]
 }
 
-/** The corpus is pure when there is no entropy left to eat. */
-export const isPure = (root: string = process.cwd()): boolean => pullEntropy(root).length === 0
-
 /** Group the food by kind, for a human/agent-readable report. */
 export const entropyByKind = (entropy: readonly Entropy[]): Record<string, Entropy[]> => {
   const out: Record<string, Entropy[]> = {}

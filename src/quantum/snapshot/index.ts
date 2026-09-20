@@ -34,16 +34,6 @@ export function nestSnapshot(
   return buildNextLeaf({ head: prev, payload, timestampIso })
 }
 
-/** Canonical ledger hook — record quantum/snapshot path step (append-only). */
-export function recordSnapshotOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/snapshot', { kind: 'snapshot.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const s = { v: 1 }
   console.log('quantum/snapshot — uuid=' + snapshotUuid(s))

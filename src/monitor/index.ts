@@ -37,13 +37,3 @@ export {
   type ViolationRealtimeEvent,
   type ViolationRealtimeEmitResult,
 } from '@/monitor/violations'
-
-/** Canonical ledger hook — record monitor path step (append-only). */
-export function recordMonitorOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('monitor', { kind: 'monitor.step', payload }, at, prevEntryUuid, seq)
-}

@@ -113,22 +113,6 @@ const trialBalanceWidget: AnyWidgetSpec = {
   },
 };
 
-/**
- * The Read-only Overview composition (the statement core every tier inherits).
- * Higher tiers add action / audit widgets in their own slices; this slice ships
- * the read foundation, gated at `minCapability: 'read'`. It is the legacy
- * three-statement view kept for the MetricCards header math below; the renderer
- * now SELECTS from the capability-keyed `DASHBOARD_REGISTRY` (the seven role
- * dashboards in `@/dashboard/dashboards`) so each tier gets its full composition
- * (admin / sign / write / read / audit), not just this read base.
- */
-export const financialStatementsDashboard: DashboardSpec = {
-  id: 'financial-statements',
-  title: 'Accounting Dashboard',
-  audience: 'read',
-  widgets: [trialBalanceWidget, balanceSheetWidget, incomeStatementWidget],
-};
-
 /** Build the loader context from the actor's request + the as-of date. */
 function dashboardContext(req: PayloadRequest, asOfDate: Date): DashboardContext {
   const ctx = getUserContext(req);

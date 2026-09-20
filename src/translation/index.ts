@@ -68,12 +68,6 @@ export function renderIn(t: Translation, locale: SupportedLocale): string | null
   return locale === defaultLocale ? t.source : null
 }
 
-/** The locales a concept is actually rendered in — the filled faces vs the seed-gaps still to translate. */
-export function renderedLocales(t: Translation): SupportedLocale[] {
-  const keys = new Set<SupportedLocale>([defaultLocale, ...(Object.keys(t.values) as SupportedLocale[])])
-  return [...keys].filter((l) => renderIn(t, l) !== null)
-}
-
 /** Reverse the interlingua: the concept whose rendering in `from` matches `word` — its shared uuid address. */
 export function resolveByWord(
   table: TranslationTable,

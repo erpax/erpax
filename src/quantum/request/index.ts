@@ -32,16 +32,6 @@ export function requestGated(opts: { access: boolean; broker: boolean; receipt: 
 /** Cache dedup uses the same content-address as the request identity. */
 export const cacheDedupKey = (body: unknown): string => cacheKey(JSON.stringify(body))
 
-/** Canonical ledger hook — record quantum/request path step (append-only). */
-export function recordRequestOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/request', { kind: 'request.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const q = { action: 'lookup', hs: '8471' }
   console.log('quantum/request — uuid=' + requestUuid(q) + ' · cached=' + compressedPayload(true, q))

@@ -129,17 +129,6 @@ export const codeField: Field = {
 }
 
 /**
- * Description field pattern
- */
-export const descriptionField: Field = {
-  name: 'description',
-  type: 'textarea',
-  admin: {
-    description: 'Additional details and notes',
-  },
-}
-
-/**
  * Status field with common statuses
  */
 export const statusField = (
@@ -248,69 +237,6 @@ export const debitCreditField: Field = {
   ],
   admin: {
     description: 'Debit or Credit to account',
-  },
-}
-
-/**
- * Invoice status field — standard workflow progression
- */
-export const invoiceStatusField: Field = {
-  name: 'status',
-  type: 'select',
-  required: true,
-  defaultValue: 'draft',
-  options: [
-    { label: 'Draft', value: 'draft' },
-    { label: 'Review', value: 'review' },
-    { label: 'Issued', value: 'issued' },
-    { label: 'Confirmed', value: 'confirmed' },
-    { label: 'Complete', value: 'complete' },
-    { label: 'Cancelled', value: 'cancelled' },
-  ],
-  index: true,
-  admin: {
-    description: 'Invoice workflow status',
-  },
-}
-
-/**
- * Payment status field — standard payment lifecycle
- */
-export const paymentStatusField: Field = {
-  name: 'status',
-  type: 'select',
-  required: true,
-  defaultValue: 'pending',
-  options: [
-    { label: 'Pending', value: 'pending' },
-    { label: 'Authorized', value: 'authorized' },
-    { label: 'Posted', value: 'posted' },
-    { label: 'Completed', value: 'completed' },
-    { label: 'Failed', value: 'failed' },
-    { label: 'Cancelled', value: 'cancelled' },
-  ],
-  index: true,
-  admin: {
-    description: 'Payment processing status',
-  },
-}
-
-/**
- * Statement status field — bank reconciliation workflow
- */
-export const statementStatusField: Field = {
-  name: 'status',
-  type: 'select',
-  required: true,
-  defaultValue: 'pending',
-  options: [
-    { label: 'Pending', value: 'pending' },
-    { label: 'Cleared', value: 'cleared' },
-    { label: 'Reconciled', value: 'reconciled' },
-  ],
-  index: true,
-  admin: {
-    description: 'Bank statement line status',
   },
 }
 

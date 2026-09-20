@@ -494,14 +494,6 @@ export function derivedDomains(cwd: string = process.cwd()): Record<string, CliD
   return derivedCache
 }
 
-/** Every atom path a leaf resolves to — what an ambiguous word would have to choose between. */
-export function leafCandidates(leaf: string, cwd: string = process.cwd()): readonly string[] {
-  return derivedCliFaces(cwd)
-    .map((f) => f.atomPath)
-    .filter((p) => (p.split('/').at(-1) ?? p) === leaf)
-    .sort()
-}
-
 export function resolveAction(domain: string, action?: string): CliAction | undefined {
   const d = CLI_REGISTRY[domain] ?? derivedDomains()[domain]
   if (!d) return undefined
@@ -515,9 +507,4 @@ export function resolveAction(domain: string, action?: string): CliAction | unde
 
 export function listDomains(): string[] {
   return Object.keys(CLI_REGISTRY).sort()
-}
-
-/** Every command that exists — hand-written and derived, the surface a user can actually reach. */
-export function listAllDomains(cwd: string = process.cwd()): string[] {
-  return [...new Set([...Object.keys(CLI_REGISTRY), ...Object.keys(derivedDomains(cwd))])].sort()
 }

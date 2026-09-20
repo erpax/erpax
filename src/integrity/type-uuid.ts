@@ -146,7 +146,6 @@ export function registerType(args: { name: string; descriptor: TypeDescriptor; v
 export function getType(name: string): RegisteredType | undefined { return TYPE_REGISTRY.get(name) }
 export function getTypeByUuid(uuid: string): RegisteredType | undefined { return TYPE_REGISTRY_BY_UUID.get(uuid) }
 export function listTypes(): ReadonlyArray<RegisteredType> { return [...TYPE_REGISTRY.values()] }
-export function clearTypeRegistry(): void { TYPE_REGISTRY.clear(); TYPE_REGISTRY_BY_UUID.clear() }
 
 // ─── Zod ↔ TypeDescriptor adapter ──────────────────────────────────
 

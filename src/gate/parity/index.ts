@@ -58,14 +58,6 @@ export function laneGaps(cwd: string = process.cwd()): LaneGap[] {
 export const driftCount = (cwd: string = process.cwd()): number =>
   laneGaps(cwd).reduce((n, g) => n + g.missingFrom.length, 0)
 
-/** Fails closed when the drift GROWS. The ceiling ratchets down as a surface picks a lane up. */
-export function assertGateParity(cwd: string = process.cwd(), ceiling: number): void {
-  const n = driftCount(cwd)
-  if (n <= ceiling) return
-  const lines = laneGaps(cwd).map((g) => `  ${g.lane.padEnd(14)} not run by ${g.missingFrom.join(' · ')}  (${g.command})`)
-  throw new Error(`✖ gate/parity — ${n} lane(s) the authority defines and a surface does not run (ceiling ${ceiling}):\n${lines.join('\n')}`)
-}
-
 if (import.meta.url === `file://${process.argv[1]}`) {
   const gaps = laneGaps()
   console.log(`gate/parity — ${GATE_LANES.length} lanes · ${driftCount()} unrun (lane, surface) pair(s)\n`)

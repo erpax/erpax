@@ -74,24 +74,6 @@ export async function seedSubscriptionPlans(
 }
 
 /**
- * Delete all subscription plans for cleanup/reset.
- * Useful for testing and resetting tenants.
- */
-export async function deleteAllSubscriptionPlans(payload: Payload): Promise<void> {
-  const allPlans = await payload.find({
-    collection: 'subscription-plans',
-    limit: 1000,
-  })
-
-  for (const plan of allPlans.docs) {
-    await payload.delete({
-      collection: 'subscription-plans',
-      id: plan.id,
-    })
-  }
-}
-
-/**
  * Get or create a subscription plan, creating if not exists.
  * Single-plan helper for simpler operations.
  */

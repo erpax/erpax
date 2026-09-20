@@ -1,24 +1,4 @@
 import { algebraFloatPow, algebraSqrt, exactFloor, exactMax, exactMin } from '@/algebra'
-/**
- * Accounting Calculations — shared math primitives (sum, percentage, etc.).
- *
- * Operate on integer-cents per the project's Money convention; do not
- * introduce floating-point arithmetic for monetary amounts.
- *
- * @standard ISO-4217:2015 currency-codes
- * @standard IEEE-754-2019 binary-floating-point avoid-for-money
- * @accounting IFRS IAS-1 presentation-of-financial-statements
- * @see src/standards/_money/
- * @see docs/STANDARDS.md §4.2
- */
-
-/**
- * Calculate total from items array
- */
-export const calculateArrayTotal = (items: Array<Record<string, unknown>>, fieldName: string): number => {
-  if (!Array.isArray(items)) return 0;
-  return items.reduce((sum, item) => sum + ((item?.[fieldName] as number) || 0), 0);
-};
 
 /**
  * Calculate percentage
@@ -28,38 +8,10 @@ export const calculatePercentage = (value: number, total: number): number => {
 };
 
 /**
- * Calculate variance
- */
-export const calculateVariance = (actual: number, budget: number): number => {
-  return actual - budget;
-};
-
-/**
  * Calculate variance percentage
  */
 export const calculateVariancePercent = (actual: number, budget: number): number => {
   return budget !== 0 ? ((actual - budget) / budget) * 100 : 0;
-};
-
-/**
- * Determine variance type (favorable/unfavorable)
- */
-export const determineVarianceType = (
-  variance: number,
-  accountType?: 'revenue' | 'expense',
-): 'favorable' | 'unfavorable' | 'neutral' => {
-  if (variance === 0) return 'neutral';
-
-  // For revenue: positive variance is favorable
-  // For expense: negative variance is favorable
-  if (accountType === 'revenue') {
-    return variance > 0 ? 'favorable' : 'unfavorable';
-  } else if (accountType === 'expense') {
-    return variance < 0 ? 'favorable' : 'unfavorable';
-  }
-
-  // Default: positive is unfavorable
-  return variance > 0 ? 'unfavorable' : 'favorable';
 };
 
 /**
@@ -234,36 +186,6 @@ export const daysBetween = (
 };
 
 /**
- * Legacy aging-bucket string codes — preserved for back-compat with the
- * AR/AP aging report rendering that consumes the string keys
- * `'current' | '30' | '60' | '90' | '90plus'`. New code should prefer
- * `bucketAgeDays` (typed `AgingBucketKey`).
- *
- * @deprecated Use `bucketAgeDays(daysBetween(date, asOf))`.
- */
-export const calculateAgingBucket = (transactionDate: Date, asOfDate: Date): string => {
-  const diffDays = daysBetween(transactionDate, asOfDate);
-
-  if (diffDays <= 0) return 'current';
-  if (diffDays <= 30) return '30';
-  if (diffDays <= 60) return '60';
-  if (diffDays <= 90) return '90';
-  return '90plus';
-};
-
-/**
- * Calculate trend direction
- */
-export const calculateTrendDirection = (
-  firstValue: number,
-  lastValue: number,
-): 'upward' | 'downward' | 'stable' => {
-  if (lastValue > firstValue * 1.05) return 'upward';
-  if (lastValue < firstValue * 0.95) return 'downward';
-  return 'stable';
-};
-
-/**
  * Calculate trend growth rate
  */
 export const calculateGrowthRate = (
@@ -273,15 +195,6 @@ export const calculateGrowthRate = (
 ): number => {
   if (firstValue === 0 || periods === 0) return 0;
   return ((lastValue - firstValue) / firstValue) / periods;
-};
-
-/**
- * Calculate standard deviation
- */
-export const calculateStandardDeviation = (values: number[], mean: number): number => {
-  if (values.length === 0) return 0;
-  const variance = values.reduce((sum, val) => sum + algebraFloatPow(val - mean, 2), 0) / values.length;
-  return algebraSqrt(variance);
 };
 
 /**
@@ -296,13 +209,6 @@ export const calculateRatio = (numerator: number, denominator: number): number =
  */
 export const calculateGrossProfitMargin = (revenue: number, cogs: number): number => {
   return revenue !== 0 ? ((revenue - cogs) / revenue) * 100 : 0;
-};
-
-/**
- * Calculate net profit margin
- */
-export const calculateNetProfitMargin = (netIncome: number, revenue: number): number => {
-  return revenue !== 0 ? (netIncome / revenue) * 100 : 0;
 };
 
 /**

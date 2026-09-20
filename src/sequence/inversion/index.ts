@@ -184,9 +184,6 @@ export function renderEquilibriumSection(): readonly string[] {
   ]
 }
 
-/** Every horo digit including unity — the ring closes on 9, which is the axis it cannot double into. */
-export const RING_WITH_UNITY: readonly number[] = [...HORO_DIGITS]
-
 /** The digit doubling cannot move — computed, never declared. */
 export function singularity(): number {
   for (let d = 1; d <= 9; d++) if (doubleDigit(d) === d) return d

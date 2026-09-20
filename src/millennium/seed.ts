@@ -18,5 +18,3 @@ export const MILLENNIUM_ATOM_UUID = '25b8305e-6dab-8f45-b18b-905723ef91c9'
 /** The seven problems, derived — name, open/solved, solver, lens, and the perpetual `corpusSolves: false`. */
 export const problemRows = (): readonly SeedRow<(typeof MILLENNIUM)[number]>[] =>
   rowsFrom('millennium', MILLENNIUM_ATOM_UUID, MILLENNIUM)
-
-export const millenniumSeedAddress = (): string => seedAddress(problemRows())

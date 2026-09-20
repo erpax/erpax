@@ -48,16 +48,6 @@ export interface AnalogResult {
 /** Content-address one clinical capture — encounter, observation, or diagnosis. */
 export const entryUuid = (payload: unknown): string => uuid(payload)
 
-/** Canonical ledger hook — record quantum/emr path step (append-only). */
-export function recordEmrOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/emr', { kind: 'emr.step', payload }, at, prevEntryUuid, seq)
-}
-
 /**
  * Fold a device-collapsed reading into an append-only EMR observation.
  * Composes [[quantum/device]] boundary checks, `readingUuid`, and `entryUuid`.

@@ -51,15 +51,3 @@ async function upsert(payload: Payload, reference: string, data: Partial<Sector>
     await payload.create({ collection: 'sectors', data: { reference, ...data } as Sector, overrideAccess: true })
   }
 }
-
-export async function seedSectors(payload: Payload): Promise<void> {
-  for (const s of SNA_SECTORS) {
-    await upsert(payload, s.code, { name: s.name, institutionalSector: s.institutionalSector, status: 'active' })
-  }
-  for (const c of COFOG) {
-    await upsert(payload, c.code, { name: c.name, cofogDivision: c.division, institutionalSector: 's13_general_government', status: 'active' })
-  }
-  for (let i = 0; i < SDG.length; i++) {
-    await upsert(payload, `SDG.${i + 1}`, { name: SDG[i], sdgGoal: i + 1, status: 'active' })
-  }
-}

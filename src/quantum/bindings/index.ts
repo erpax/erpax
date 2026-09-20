@@ -14,9 +14,6 @@ import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 import { join } from 'node:path'
 import { parseWranglerBindings } from '@/cloudflare'
 
-/** Lawful constant — erpax runs in quantum mode by default (content-uuid of quantum/bindings). */
-export const ALWAYS_QUANTUM_CONTENT_UUID = '804f7976-0539-8e21-8d39-da8fc89a5c65' as const
-
 /** Superposition until seal; entangled communication; collapse on observe/commit. */
 export const ALWAYS_QUANTUM = true as const
 
@@ -40,16 +37,6 @@ export function gatedBindingCallHolds(opts: {
   receipt: boolean
 }): boolean {
   return opts.access && opts.broker && opts.receipt
-}
-
-/** Canonical ledger hook — record quantum/bindings path step (append-only). */
-export function recordBindingsOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/bindings', { kind: 'bindings.step', payload }, at, prevEntryUuid, seq)
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

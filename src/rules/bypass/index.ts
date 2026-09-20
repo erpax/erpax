@@ -143,17 +143,6 @@ export function bypassCount(cwd: string = process.cwd()): number {
   return allBypasses(cwd).reduce((n, s) => n + s.bypasses, 0)
 }
 
-/** Ratchet: the corpus-wide bypass count may fall, never rise. */
-export function assertBypassRatchet(cwd: string = process.cwd(), ceiling: number): void {
-  const n = bypassCount(cwd)
-  if (n > ceiling) {
-    throw new Error(
-      `rules/bypass: ${n} access-control bypasses corpus-wide > ceiling ${ceiling} — ` +
-        'a bypass may be migrated to a scoped principal, never added. See src/principal.',
-    )
-  }
-}
-
 /** The violation: a request-reachable bypass in a handler that never authenticated anyone. */
 export function unauthenticatedBypasses(cwd: string = process.cwd()): readonly BypassSite[] {
   return bypassSites(cwd).filter((s) => !s.authenticates)

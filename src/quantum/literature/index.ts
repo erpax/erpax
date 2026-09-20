@@ -23,16 +23,6 @@ export function plagiarismCollision(a: string, b: string): boolean {
   return a !== b && workUuid(a) === workUuid(b)
 }
 
-/** Canonical ledger hook — record quantum/literature path step (append-only). */
-export function recordLiteratureOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/literature', { kind: 'literature.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const t = 'To be or not to be'
   console.log('quantum/literature — workUuid=' + workUuid(t) + ' · sameWork=' + sameWork(t, t))

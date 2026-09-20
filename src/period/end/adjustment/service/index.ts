@@ -598,5 +598,3 @@ class PeriodEndAdjustmentService {
     periodEndAdjustments.clear();
   }
 }
-
-export const periodEndAdjustmentService = new PeriodEndAdjustmentService();

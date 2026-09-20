@@ -440,20 +440,6 @@ export function costVerdict(mesh: Mesh, costMs: ReadonlyMap<string, number>): Co
  */
 export const runtimeMesh = (mesh: Mesh): Mesh => ({ ...mesh, edges: mesh.edges.filter((e) => e.kind !== 'test') })
 
-/**
- * The graph as MODULE INITIALISATION sees it — no test edges, and no edge that exists only because
- * a function body calls `import()`.
- *
- * That is the graph [[rules]]/cycle's headline claim is about: "an import loop makes initialisation
- * order an accident". A deferred import cannot make it an accident, because it does not run then.
- * Reachability still counts them (runtimeMesh keeps them) — the module IS loaded eventually — so the
- * two views answer two different questions instead of one answering both badly.
- */
-export const initMesh = (mesh: Mesh): Mesh => ({
-  ...mesh,
-  edges: mesh.edges.filter((e) => e.kind === 'import'),
-})
-
 export function costRoots(mesh: Mesh, costMs: ReadonlyMap<string, number>): CostRoot[] {
   const acc = new Map<string, { cost: number; atoms: Set<string> }>()
   for (const [atom, ms] of costMs) {

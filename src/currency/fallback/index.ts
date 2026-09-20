@@ -191,13 +191,6 @@ export function formatMoney(
   }
 }
 
-/**
- * The full set of currencies we ship, including XXX. Re-exported for
- * convenience so admin UIs that need to render "every currency
- * including the blank one" can pull a single import.
- */
-export const SUPPORTED_CURRENCIES_INCLUDING_BLANK: ReadonlyArray<string> = SUPPORTED_CURRENCIES
-
 // ─── Slice LLLLLLLLL-cut2 (2026-05-11) ─────────────────────────────
 // Per user 'blank currency exchange rates are computed realtime'. The
 // blank currency is not just "no currency" — it's a placeholder whose
@@ -271,10 +264,6 @@ export const IdentityRateProvider: RealtimeRateProvider = {
 }
 
 let _defaultRateProvider: RealtimeRateProvider = IdentityRateProvider
-
-export function getDefaultRateProvider(): RealtimeRateProvider {
-  return _defaultRateProvider
-}
 
 export function setDefaultRateProvider(p: RealtimeRateProvider): void {
   // Slice RRRRRRRRR-cut1 — guarded escape hatch. Production wires the

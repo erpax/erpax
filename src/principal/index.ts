@@ -76,15 +76,6 @@ const CAPABILITY: Readonly<Record<Subsystem, readonly UserRole[]>> = {
 }
 
 /**
- * DELETE is unreachable for every principal, and that is enforcement rather than convention.
- *
- * The factory gates delete on `tenantAdmin`. No principal holds `admin` or `super-admin`, so no
- * system operation can delete a tenant's rows — not because the map forbids it, but because the
- * access function will refuse. That is the difference between a policy and a comment.
- */
-export const NO_PRINCIPAL_MAY_DELETE = true
-
-/**
  * Which subsystems may WRITE — computed from the capability map against the collections' own write
  * roles, never listed by hand.
  *

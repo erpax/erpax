@@ -154,8 +154,3 @@ export function wireNotificationSubscriber(
     })
   }
 }
-
-/** Reset for tests. */
-export function _resetNotificationSubscriber(): void {
-  wired = false
-}

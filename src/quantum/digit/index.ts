@@ -27,16 +27,6 @@ export const wordDigitDualityHolds = (): boolean => offSequence().length === 0
 
 export { digitTrace, digitAddress, offSequence }
 
-/** Canonical ledger hook — record quantum/digit path step (append-only). */
-export function recordDigitOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/digit', { kind: 'digit.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const trace = digitTrace()
   console.log(

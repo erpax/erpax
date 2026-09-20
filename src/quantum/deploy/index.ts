@@ -18,19 +18,6 @@ export const collapseOrder = (): readonly string[] => DEPLOY.map((d) => d.step)
 /** Only a gate-green tree in the canonical order may collapse into reality. */
 export const mayCollapse = (sequence: readonly string[]): boolean => harmonized(sequence)
 
-/** Rollback is re-collapse of a prior snapshot — never in-place mutation of live. */
-export const rollbackIsRecollapse = (): true => true
-
-/** Canonical ledger hook — record quantum/deploy path step (append-only). */
-export function recordDeployOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/deploy', { kind: 'deploy.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(
     'quantum/deploy — collapse order: ' +

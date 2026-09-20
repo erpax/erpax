@@ -33,16 +33,6 @@ export function reversibleOrderHolds(facts: readonly SocialFact[]): boolean {
   return facts.every(doubleEntryBalanced) && !facts.some((f) => f.kind === 'fear')
 }
 
-/** Canonical ledger hook — record quantum/society path step (append-only). */
-export function recordSocietyOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/society', { kind: 'society.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const vote = { kind: 'vote', payload: { ballot: 'a' }, debit: 1, credit: 1 }
   console.log('quantum/society — uuid=' + socialFactUuid(vote) + ' · balanced=' + doubleEntryBalanced(vote))

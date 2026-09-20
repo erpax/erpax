@@ -32,22 +32,3 @@ async function upsert(payload: Payload, standardId: string, data: Partial<Standa
     await payload.create({ collection: 'standards', data: { standardId, ...data } as Standard, overrideAccess: true })
   }
 }
-
-export async function seedStandards(payload: Payload): Promise<void> {
-  for (const s of STANDARDS_CATALOGUE) {
-    await upsert(payload, s.id, {
-      title: s.title,
-      family: s.family as Standard['family'],
-      status: s.count > 0 ? 'published' : 'proposed',
-      // Federation identity — the canonical content-uuid from the shared
-      // catalogue (uuid({ id, family, title })). The row's own tamper-proof
-      // `uuid` is recomputed by the factory hook over the full row.
-      liveContentUuid: s.uuid,
-      citingModules: s.modules.map((m) => ({
-        modulePath: m.path,
-        banner: 'standard',
-        section: m.section || null,
-      })) as Standard['citingModules'],
-    })
-  }
-}

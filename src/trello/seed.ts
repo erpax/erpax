@@ -25,5 +25,3 @@ export const limitRows = (): readonly SeedRow<{
     TRELLO_ATOM_UUID,
     Object.entries(TRELLO_LIMITS).map(([scope, l]) => ({ scope, capacity: l.capacity, windowMs: l.windowMs })),
   )
-
-export const trelloSeedAddress = (): string => seedAddress(limitRows())

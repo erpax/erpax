@@ -22,7 +22,6 @@ import { freeEnergyFromEntropy } from '@/entropy'
 export const EFFICIENCY_SKILL_PROBE = 'src/rules/index.ts'
 
 export const EFFICIENCY_JSON_REL = join('src', 'apply', 'efficiency.generated.json')
-export const EFFICIENCY_HAND_REL = join('src', 'apply', 'efficiency.json')
 
 /** Pass surfaces that emit efficiency snapshots (4dbb5344 wiring). */
 export type EfficiencyPassId =
@@ -165,27 +164,6 @@ export function measureConcentrationTopScore(cwd: string = process.cwd()): numbe
 /** Surviving ALCAP baseline const exports — seal-debt count. */
 export function measureConstantsCount(cwd: string = process.cwd()): number {
   return alcapsBaselineViolations(cwd).length
-}
-
-/** Live corpus net entropy eb from gap/seal rollup. */
-export function measureCorpusEntropyEb(cwd: string = process.cwd()): number {
-  return deriveCorpusAnalytics(cwd).entropy.netEntropyEb
-}
-
-/** Free energy bits from corpus entropy + violations + tamper work — Landauer derived. */
-export function measureFreeEnergyBits(
-  cwd: string = process.cwd(),
-  opts: { readonly workTamperProduct?: number; readonly violationCount?: number } = {},
-): number {
-  const analytics = deriveCorpusAnalytics(cwd)
-  const violationCount = opts.violationCount ?? measureViolationCount(cwd)
-  const workTamperProduct = opts.workTamperProduct ?? 0
-  return freeEnergyFromEntropy({
-    entropyEb: analytics.entropy.netEntropyEb,
-    violationCount,
-    workTamperProduct,
-    totalSealEb: analytics.entropy.totalSealEb,
-  }).freeEnergyBits
 }
 export function efficiencySnapshot(
   passId: EfficiencyPassId,
@@ -413,9 +391,4 @@ export function renderEfficiencyDelta(
     return `| ${key} | ${p} | ${n} | ${arrow} ${delta} |`
   })
   return [hdr, sep, ...rows].join('\n')
-}
-
-/** Violation count from realtime scan (improve:watch path). */
-export function violationCountFromScan(cwd: string = process.cwd()): number {
-  return scanViolationsRealtime({ cwd, waveSample: true, maxEvents: 500 }).counts.total
 }

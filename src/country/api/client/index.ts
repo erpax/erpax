@@ -134,22 +134,6 @@ export interface BrregProfile {
   registrertIMvaregisteret?: boolean
 }
 
-export async function lookupBrreg(orgNr: string): Promise<ApiResult<BrregProfile>> {
-  try {
-    const r = await fetch(`https://data.brreg.no/enhetsregisteret/api/enheter/${encodeURIComponent(orgNr)}`)
-    if (!r.ok) return err('Brreg', `HTTP ${r.status}`)
-    const j = (await r.json()) as Record<string, unknown>
-    return ok('Brreg', {
-      organisasjonsnummer: orgNr,
-      navn: j.navn as string | undefined,
-      organisasjonsform: ((j.organisasjonsform as Record<string, unknown> | undefined)?.kode as string | undefined),
-      registrertIMvaregisteret: j.registrertIMvaregisteret as boolean | undefined,
-    })
-  } catch (e) {
-    return err('Brreg', String(e))
-  }
-}
-
 // ─── 5. INSEE SIRENE — FR, OAuth2 client-credentials ────────────────────
 
 export interface InseeProfile {
@@ -334,18 +318,6 @@ export async function fetchEuSanctionsXml(): Promise<ApiResult<string>> {
   }
 }
 
-// ─── 9. OFAC SDN — daily XML ─────────────────────────────────────────────
-
-export async function fetchOfacSdnXml(): Promise<ApiResult<string>> {
-  try {
-    const r = await fetch('https://www.treasury.gov/ofac/downloads/sdn.xml')
-    if (!r.ok) return err('OFAC SDN', `HTTP ${r.status}`)
-    return ok('OFAC SDN', await r.text())
-  } catch (e) {
-    return err('OFAC SDN', String(e))
-  }
-}
-
 // ─── 10. NTA Japan — corporate-number lookup, key-based JSON ─────────────
 
 export interface JpHoujinProfile {
@@ -374,21 +346,6 @@ export async function lookupJpHoujinBangou(
     })
   } catch (e) {
     return err('NTA Houjin Bangou', String(e))
-  }
-}
-
-// ─── 11. SEC EDGAR — US public-company facts ─────────────────────────────
-
-export async function lookupSecEdgar(cik: string): Promise<ApiResult<Record<string, unknown>>> {
-  try {
-    const padded = cik.padStart(10, '0')
-    const r = await fetch(`https://data.sec.gov/submissions/CIK${padded}.json`, {
-      headers: { 'User-Agent': 'erpax-country-context-client (compliance@erpax.dev)' },
-    })
-    if (!r.ok) return err('SEC EDGAR', `HTTP ${r.status}`)
-    return ok('SEC EDGAR', (await r.json()) as Record<string, unknown>)
-  } catch (e) {
-    return err('SEC EDGAR', String(e))
   }
 }
 

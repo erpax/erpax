@@ -290,11 +290,6 @@ export function tipGeodetic(pole: EarthPole): Geodetic {
   return toGeodetic(ring, 0.5)
 }
 
-/** Courses of the Earth square pyramid (base → apex) — reuse [[pyramid]].courses. */
-export function earthCourses(seed = 'earth:tips'): string[][] {
-  return courses(homologyTips(seed).map((t) => t.seal))
-}
-
 if (import.meta.url === `file://${process.argv[1]}`) {
   const e = realiseEarth()
   console.log('earth — realised by computing poles as a pyramid (7/7)')

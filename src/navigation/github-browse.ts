@@ -276,15 +276,6 @@ export function applyVocabularyFold(
   return { plan, moved, skipped, dryRun }
 }
 
-export function renderGithubBrowseNote(cwd: string = process.cwd()): string {
-  const { dirs, total } = countSrcTopLevel(cwd)
-  const folded = loadExistingFolded(cwd).length
-  if (total > GITHUB_DIR_LIMIT || folded > 0) {
-    return `GitHub truncates \`src/\` listings above **${GITHUB_DIR_LIMIT}** entries (**${total}** now: **${dirs}** dirs). Literary vocabulary shards under [\`${VOCABULARY_HUB}/\`](src/vocabulary/) (**${folded}** folded) — navigate with \`pnpm erpax doctor\`, the uuid-matrix, and \`pnpm erpax corpus words\`, not the GitHub tree.`
-  }
-  return `\`src/\` has **${total}** top-level entries (under GitHub's **${GITHUB_DIR_LIMIT}** limit) — browse via matrix + \`pnpm erpax doctor\`.`
-}
-
 if (import.meta.url === `file://${process.argv[1]}`) {
   if (process.argv.includes('--inventory') || !process.argv.includes('--apply')) {
     const plan = planVocabularyFold()

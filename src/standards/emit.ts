@@ -200,24 +200,6 @@ export function parsedCitations(cwd: string = process.cwd()): { path: string; va
 }
 
 /**
- * Where the two minds DECOHERE — the regex mind (`scan`, raw text) vs the parser mind (`parsedCitations`,
- * comments only). `onlyRegex` is a banner the regex counted that no comment holds: a string-literal or prose
- * false citation, the exact class a single mind cannot see. The decoherence IS the single-mind error, measured.
- *
- * @invariant a banner that lives only in a string literal appears in `onlyRegex`, never in the agreed set
- */
-export function citationDecoherence(cwd: string = process.cwd()): {
-  onlyRegex: { path: string; value: string }[]
-  agreed: number
-} {
-  const key = (h: { path: string; value: string }): string => h.path + '|' + h.value
-  const parsed = new Set(parsedCitations(cwd).map(key))
-  const regex = scan(cwd)
-  const onlyRegex = regex.filter((h) => !parsed.has(key(h)))
-  return { onlyRegex, agreed: regex.length - onlyRegex.length }
-}
-
-/**
  * Per-process memo for the catalogue build.
  *
  * The build costs ~3s, nearly all of it in `scan` — reading every bannered file under src and

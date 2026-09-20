@@ -139,12 +139,3 @@ export function getSpecialCurrencyKind(code: string): SpecialCurrencyKind {
 export function isSpecialCurrency(code: string): boolean {
   return SPECIAL_CURRENCY_REGISTRY.has(code)
 }
-
-/**
- * Return the full `SpecialCurrencyDef` if registered; null otherwise.
- * Callers branching on `kind` should pull the whole def for the
- * `rateProviderHint`, `decimals`, `displayName` fields too.
- */
-export function getSpecialCurrencyDef(code: string): SpecialCurrencyDef | null {
-  return SPECIAL_CURRENCY_REGISTRY.get(code) ?? null
-}

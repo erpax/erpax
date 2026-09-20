@@ -184,10 +184,6 @@ export function symbolRelatesToPath(symbol: string, atomPath: string): boolean {
     .some((seg) => sym.includes(seg) || seg.includes(sym))
 }
 
-/** Methods whose names do not encode their atom path — informational; not gated. */
-export const orphanMethods = (root: string = SRC): MethodDiamond[] =>
-  scanMethodPaths(root).filter((m) => !symbolRelatesToPath(m.symbol, m.atomPath))
-
 export interface MethodDigest {
   readonly barrels: number
   readonly methods: number

@@ -34,16 +34,6 @@ export function readingBoundaryHolds(reading: DeviceReading): boolean {
 /** Content-address the collapsed snapshot (device edge). */
 export const readingUuid = (reading: DeviceReading): string => readingSnapshotUuid(reading)
 
-/** Canonical ledger hook — record readings path step (append-only). */
-export function recordReadingsOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('readings', { kind: 'readings.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const r: DeviceReading = { signal: 'rppg', numbers: [72], at: '2026-06-08T12:00:00.000Z' }
   console.log(

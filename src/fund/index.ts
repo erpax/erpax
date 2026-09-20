@@ -188,16 +188,6 @@ export function spineComplete(cwd: string = process.cwd()): boolean {
   return fundedSpine(cwd).every((s) => s.served)
 }
 
-/** Fails closed on a stage that cannot carry an award. */
-export function assertFundedSpine(cwd: string = process.cwd(), ceiling: number): void {
-  const broken = fundedSpine(cwd).filter((s) => !s.served)
-  if (broken.length <= ceiling) return
-  throw new Error(
-    `✖ fund — ${broken.length} funded-project stage(s) cannot carry an award (ceiling ${ceiling}):\n` +
-      broken.map((s) => `  ${s.stage.padEnd(8)} ${s.slug.padEnd(20)} ${s.reason}`).join('\n'),
-  )
-}
-
 export interface Blocker {
   readonly kind: 'unreachable-award' | 'required-counterparty'
   readonly slug: string

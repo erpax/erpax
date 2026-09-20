@@ -95,31 +95,6 @@ export function doiOfHarvest(xml: string): string | null {
 export const doiForPurpose = (purpose: 'software' | 'result'): DoiKind =>
   purpose === 'software' ? 'concept' : 'version'
 
-/**
- * Fails closed unless the DOI is a registered record the registry will show you.
- *
- * Both instruments must agree — the REST record and the OAI harvest — because one reading is not
- * a measurement, and the first reading here was a false alarm. @see ./SKILL.md
- */
-export async function assertDoiRegistered(
-  doi: string,
-  { fetcher = defaultFetch, requireVersion = true }: { fetcher?: Fetcher; requireVersion?: boolean } = {},
-): Promise<DoiVerdict> {
-  const v = await resolveDoi(doi, fetcher)
-  if (v.kind === 'unknown' || v.recordId === null) {
-    throw new Error(`✖ publish/harvest — ${doi} is not a record this registry knows`)
-  }
-  if (requireVersion && v.kind === 'concept') {
-    throw new Error(
-      `✖ publish/harvest — ${doi} is a CONCEPT doi: it cites whatever version is newest. Cite ${v.versionDoi} instead, or say you mean all versions`,
-    )
-  }
-  if (v.kind === 'version' && !(await isHarvested(v.recordId, fetcher))) {
-    throw new Error(`✖ publish/harvest — ${doi} resolves but is not in the OAI harvest; two instruments disagree, so neither is trusted`)
-  }
-  return v
-}
-
 if (import.meta.url === `file://${process.argv[1]}`) {
   const doi = process.argv[2] ?? '10.5281/zenodo.22237698'
   const v = await resolveDoi(doi)

@@ -111,14 +111,3 @@ function computeLiveViolationCounts(cwd: string): Readonly<Record<RatchetAxis, n
   }
   return counts
 }
-
-/** Memory law — single-path runners, bounded batches (no full-corpus OOM). */
-export function memoryFootprintHints(): readonly string[] {
-  return [
-    'readme paths — one atom path per process (never 3166-folder waves in CI)',
-    'MAX_HAND_MAINTAINED_PATHS = 30 — hand-maintained scan cap',
-    'MAX_SEAL_BATCH = 30 — linear-gap seal cap',
-    'deriveFolderModel — lazy per path; no all-models array in one runner',
-    'index cross — priority hubs only; rest computed from index.ts barrel',
-  ]
-}

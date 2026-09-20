@@ -153,39 +153,3 @@ export interface WriteMissingBooksResult {
   readonly beforeTrinityPct: number
   readonly afterTrinityPct: number
 }
-
-export async function writeMissingBooks(opts: {
-  readonly cwd?: string
-  readonly max?: number
-  readonly dryRun?: boolean
-} = {}): Promise<WriteMissingBooksResult> {
-  const cwd = opts.cwd ?? process.cwd()
-  const dryRun = opts.dryRun ?? false
-  const before = harmonyOfBookIndex(cwd).metrics.trinityPct
-  const report = missingBooks(cwd, opts.max ?? 40)
-  const written: string[] = []
-  const toSeal: string[] = []
-
-  for (const entry of report.entries) {
-    const dir = join(cwd, SRC, entry.path)
-    if (entry.needsWrite && existsSync(join(dir, 'SKILL.md'))) {
-      if (!dryRun) mkdirSync(dir, { recursive: true })
-      if (!existsSync(join(dir, 'index.ts')) && !dryRun) {
-        writeFileSync(join(dir, 'index.ts'), volumeIndexTs(entry.path), 'utf8')
-      }
-      if (!existsSync(join(dir, 'test.ts')) && !dryRun) {
-        writeFileSync(join(dir, 'test.ts'), volumeTestTs(entry.path), 'utf8')
-      }
-      written.push(entry.path)
-    }
-    if (entry.needsWrite || entry.needsSeal) toSeal.push(entry.path)
-  }
-
-  if (!dryRun && toSeal.length > 0) {
-    const { materializeComputedFacesForPathsStable } = await import('@/readme/compute')
-    materializeComputedFacesForPathsStable(toSeal, cwd)
-  }
-
-  const after = dryRun ? before : harmonyOfBookIndex(cwd).metrics.trinityPct
-  return { written, sealed: toSeal, beforeTrinityPct: before, afterTrinityPct: after }
-}

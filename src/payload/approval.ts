@@ -14,7 +14,6 @@ export const PAYLOAD_NODE_OPTIONS =
 /** migrate:* — load-hook only (tsx/esm breaks node: built-ins e.g. migrate:create) */
 export const PAYLOAD_MIGRATE_NODE_OPTIONS =
   '--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs'
-export const PAYLOAD_MIGRATE_CREATE_CMD = 'pnpm payload:migrate:create'
 
 
 export type PayloadApprovalStep =

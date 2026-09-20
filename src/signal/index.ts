@@ -92,9 +92,6 @@ export function signalForStep(step: HoroStep): Signal {
   }
 }
 
-/** The whole ring as a chord + spectrum, in measure-walk order. */
-export const SIGNAL_RING: ReadonlyArray<Signal> = HORO_DIGITS.map(signalForStep)
-
 // ─── uuid signal — realtime identity from the address itself (ceccec uuidHero twin, 2026-07-15) ───
 //
 // Any uuid → its unique animation state computed from its OWN bytes: hue, spin period,

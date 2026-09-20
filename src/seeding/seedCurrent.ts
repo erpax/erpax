@@ -29,7 +29,3 @@ export async function seedCurrent(_payload: Payload, _tenantName: string): Promi
     message: 'See top-of-file deprecation notice.',
   }
 }
-
-export async function testCurrentSeed(_payload: Payload): Promise<CurrentSeedResult> {
-  return seedCurrent(_payload, 'unused')
-}

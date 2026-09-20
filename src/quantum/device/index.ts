@@ -78,16 +78,6 @@ export function boundaryCrossHolds(payload: {
 /** Each reading is a content-addressed snapshot — final the moment taken. */
 export const readingSnapshotUuid = (reading: unknown): string => uuid(reading)
 
-/** Canonical ledger hook — record quantum/device path step (append-only). */
-export function recordDeviceOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/device', { kind: 'device.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(
     'quantum/device — mayReport(rppg)=' +

@@ -287,13 +287,6 @@ export function extractSecureWave(payload: unknown): SecureWaveEnvelope | null {
   return w as SecureWaveEnvelope
 }
 
-/** Strip the secure wave envelope from payload before persisting event body. */
-export function payloadWithoutSecureWave(payload: unknown): Record<string, unknown> {
-  if (!payload || typeof payload !== 'object') return {}
-  const { [SECURE_WAVE_PAYLOAD_KEY]: _wave, ...rest } = payload as Record<string, unknown>
-  return rest
-}
-
 /**
  * A coordinated [[wave]] rides inside the secure comms envelope — not side-channel.
  * Validates envelope + delegates to `enforceTeamCommsEmit`; optional [[receipt]].

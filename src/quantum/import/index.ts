@@ -25,16 +25,6 @@ export function importLawHolds(specs: readonly string[], root = 'src'): boolean 
   return classifyImports(specs, root).escapes.length === 0
 }
 
-/** Canonical ledger hook — record quantum/import path step (append-only). */
-export function recordImportOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/import', { kind: 'import.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const { barrels, escapes } = classifyImports(['@/digit', '@/no/such/deep/path'])
   console.log('quantum/import — barrels=' + barrels.join(',') + ' · escapes=' + escapes.join(','))

@@ -32,16 +32,6 @@ export function conjugateHolds(compressionBits: number, forgeCostLog2: number): 
   return forgeCostLog2 >= compressionBits
 }
 
-/** Canonical ledger hook — record quantum/security path step (append-only). */
-export function recordSecurityOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/security', { kind: 'security.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const f: SecurityFinding = { control: 'uuid-seal', blueHolds: true, forgeCostLog2: 128 }
   console.log('quantum/security — balanced=' + balancedFinding(f) + ' · conjugate=' + conjugateHolds(128, 128))

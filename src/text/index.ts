@@ -65,9 +65,6 @@ export function parseText(text: string): ParsedToken[] {
   return tokens
 }
 
-/** The computed in-memory diamond index (content-uuid → token). */
-export const savedTokenIndex = (): ReadonlyMap<string, ParsedToken> => tokenIndex
-
 /** Lookup one saved token diamond by its content-uuid. */
 export const getSavedToken = (uuid: string): ParsedToken | undefined => tokenIndex.get(uuid)
 

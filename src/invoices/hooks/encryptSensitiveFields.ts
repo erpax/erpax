@@ -17,21 +17,3 @@ const ENCRYPTED_FIELDS = [
   'stripeInvoiceId',
   'stripePaymentIntentId',
 ]
-
-/**
- * Before create/update: Encrypt Stripe identifiers
- */
-export const encryptInvoiceData: CollectionBeforeChangeHook<Invoice> = async ({
-  data,
-}) => {
-  return encryptFields(data as Record<string, unknown>, ENCRYPTED_FIELDS)
-}
-
-/**
- * After read: Decrypt Stripe identifiers
- */
-export const decryptInvoiceData: CollectionAfterReadHook<Invoice> = async ({
-  doc,
-}) => {
-  return decryptFields(doc as unknown as Record<string, unknown>, ENCRYPTED_FIELDS)
-}

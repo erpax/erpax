@@ -87,61 +87,6 @@ export function viableRenames(cwd: string = process.cwd()): HyphenRename[] {
   return out
 }
 
-/**
- * Cluster renames — the SECOND lawful class, and the last mechanical one.
- *
- * When two or more hyphenated siblings share a leading word, that word names a REAL
- * grouping (`rfc/9110/get-document` · `get-globals` · `get-redirects` → `get/`), so
- * the folder is discovered rather than invented and one authored SKILL covers it.
- *
- * Restricted to FLAT clusters — every member must have exactly one word left after
- * the shared one. A deeper member would need intermediate folders that no measurement
- * justifies, and inventing those is the theatre this atom refuses. Measured on the
- * live corpus: 214 first-level folders are proposable, only 21 are shared at all, and
- * only 7 are flat. That ratio IS the finding — the hyphen campaign is mostly
- * per-file judgement, not a sweep.
- */
-export function clusterRenames(cwd: string = process.cwd()): HyphenRename[] {
-  interface Cell { readonly rest: string; readonly file: string; readonly isTest: boolean; readonly ext: string }
-  const clusters = new Map<string, Cell[]>()
-  for (const file of codeFiles(cwd)) {
-    const base = file.slice(file.lastIndexOf('/') + 1)
-    const isTest = /\.test\.tsx?$/.test(base)
-    const ext = base.endsWith('.tsx') ? '.tsx' : '.ts'
-    const stem = base.replace(/\.test\.tsx?$/, '').replace(/\.tsx?$/, '')
-    if (/^[a-z0-9]+$/.test(stem)) continue
-    // A GENERATED file is written by an emitter to a path assembled from string
-    // fragments (`join(cwd,'src','law','folder','ratchet.generated.ts')`), which no
-    // import rewrite can see — moving it would leave the emitter recreating the old
-    // path and two divergent copies. The emitter must change in the same diff, and
-    // that is a human's call.
-    if (GENERATED.test(base)) continue
-    const dir = file.slice(0, file.lastIndexOf('/'))
-    const segs = new Set(dir.split('/'))
-    const kept = stem.split(/[-.]/).filter((w) => w && !segs.has(w))
-    if (kept.length < 2) continue
-    if (!kept.every((w) => /^[a-z0-9]+$/.test(w))) continue
-    const key = `${dir}/${kept[0]}`
-    // A member with MORE than one surviving word is recorded with an empty rest so the
-    // cluster can be disqualified below — it would need intermediate folders.
-    clusters.set(key, [...(clusters.get(key) ?? []), { rest: kept.length === 2 ? kept[1]! : '', file, isTest, ext }])
-  }
-  const out: HyphenRename[] = []
-  for (const [key, cells] of clusters) {
-    // NEVER half-migrate a cluster. If any sibling sharing this prefix is deep, moving
-    // only the flat ones leaves the rest behind AND mints a folder covering part of a
-    // concept — worse than leaving the whole cluster for a human.
-    if (cells.some((c) => c.rest === '')) continue
-    if (new Set(cells.map((c) => c.rest)).size < 2) continue // one member ⇒ an invented folder
-    for (const c of cells) {
-      const to = `${key}/${c.rest}${c.isTest ? '.test' : ''}${c.ext}`
-      if (to === c.file || existsSync(join(cwd, to))) continue
-      out.push({ from: c.file, to, word: c.rest })
-    }
-  }
-  return out
-}
-
 /** Resolve an import specifier to the repo-relative file it names, or undefined. */
 export function resolveSpec(fromFile: string, spec: string, cwd: string = process.cwd()): string | undefined {
   let base: string

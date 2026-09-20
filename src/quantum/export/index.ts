@@ -31,16 +31,6 @@ export function exportBoundaryFlips(
   return a !== b
 }
 
-/** Canonical ledger hook — record quantum/export path step (append-only). */
-export function recordExportOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/export', { kind: 'export.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const body = 'export const x = 1\nexport function y() {}\n'
   console.log('quantum/export — symbols: ' + parseTsExports(body).join(', '))

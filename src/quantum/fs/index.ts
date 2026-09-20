@@ -22,16 +22,6 @@ export const dedupHolds = (a: unknown, b: unknown): boolean => snapshotAddress(a
 export const neverOverwrite = (prior: unknown, next: unknown): boolean =>
   snapshotAddress(prior) !== snapshotAddress(next) || dedupHolds(prior, next)
 
-/** Canonical ledger hook — record quantum/fs path step (append-only). */
-export function recordFsOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/fs', { kind: 'fs.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   const blob = { path: '/a.txt', bytes: 'hello' }
   console.log('quantum/fs — snapshotAddress=' + snapshotAddress(blob) + ' · dedup=' + dedupHolds(blob, blob))

@@ -26,16 +26,6 @@ export function informationConserved(dataDigits: number, offsetDigits: number): 
 /** Finite uuid ceiling vs infinite stream address — complementary duality. */
 export const FINITE_UUID_BITS = 128
 
-/** Canonical ledger hook — record quantum/pi path step (append-only). */
-export function recordPiOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/pi', { kind: 'pi.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(
     'quantum/pi — offset bound for 100 digits=' +

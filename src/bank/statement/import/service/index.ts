@@ -354,5 +354,3 @@ class BankStatementImportService {
     return new Date(year, month - 1, day);
   }
 }
-
-export const bankStatementImportService = new BankStatementImportService();

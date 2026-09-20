@@ -221,4 +221,3 @@ export async function processInvariantResults(args: {
 }
 
 export function listProposals(): ReadonlyArray<FixProposal> { return PROPOSALS_LOG }
-export function __resetProposalsForTests(): void { PROPOSALS_LOG.length = 0 }

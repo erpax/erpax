@@ -25,16 +25,6 @@ export function projectionMatchesCorpus(liveToolCount: number, corpusToolCount: 
   return liveToolCount === corpusToolCount
 }
 
-/** Canonical ledger hook — record quantum/mcp path step (append-only). */
-export function recordMcpOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/mcp', { kind: 'mcp.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(
     'quantum/mcp — gated=' +

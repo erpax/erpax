@@ -33,16 +33,6 @@ export function irrationalStreamRuns(): true {
   return true
 }
 
-/** Canonical ledger hook — record quantum/number path step (append-only). */
-export function recordNumberOnPath(
-  payload: unknown,
-  at?: string,
-  prevEntryUuid?: string | null,
-  seq?: number,
-): PathCanonicalEntry {
-  return recordPathVisit('quantum/number', { kind: 'number.step', payload }, at, prevEntryUuid, seq)
-}
-
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(
     'quantum/number — 1/2 terminates=' +

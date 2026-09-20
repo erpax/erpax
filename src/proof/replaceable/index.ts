@@ -63,9 +63,6 @@ const EMPIRICAL = [
   'SOX', // §302 is a natural person's certification — no gate signs it
 ] as const
 
-/** The declared list, as a function — an exported constant is seal-debt ([[matrix]]/constants-audit). */
-export const empiricalStandards = (): readonly string[] => EMPIRICAL
-
 /** Normalise a standard to its identity: `ISO-19011:2018` and `ISO 19011:2018` are one standard. */
 export const standardKey = (raw: string): string =>
   raw

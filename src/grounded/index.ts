@@ -180,11 +180,6 @@ export function ungrounded(): readonly string[] {
   return TRUST_INPUTS.filter((c) => !isGrounded(c))
 }
 
-/** The trust-chain convention source paths that MUST be sealed-sourced (repo-relative). */
-export function trustInputPaths(): readonly string[] {
-  return TRUST_INPUTS.map((c) => `src/convention/${c}/index.ts`)
-}
-
 /**
  * Realtime ungrounding test — does this source text read raw, unsealed fs (`process.cwd()`,
  * `readFileSync`, …)? The check the confirm gate runs at the WRITE, so a trust computation can never
@@ -192,18 +187,4 @@ export function trustInputPaths(): readonly string[] {
  */
 export function readsUnsealedSource(sourceText: string): boolean {
   return UNGROUNDED.test(stripComments(sourceText))
-}
-
-/**
- * Post the grounded verdict through the double-entry ledger — every trust token ON the books, in eb.
- * Each ungrounded input is a GAP (Dr its convention path, Cr `entropy`); each grounded input a SEAL
- * (Dr `seal`, Cr its path). Balanced by construction (Σdebit = Σcredit) — no token spent off-ledger,
- * so the trust verdict is not a free-floating number but an accounted, reconcilable entry.
- */
-export function accountGrounded(): readonly JournalEntryLine[] {
-  const un = new Set(ungrounded())
-  return TRUST_INPUTS.flatMap((c) => {
-    const path = `convention/${c}`
-    return un.has(c) ? postGapOnPath(path, 1) : postSealOnPath(path, 1)
-  })
 }

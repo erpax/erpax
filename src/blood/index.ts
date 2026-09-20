@@ -35,8 +35,7 @@ export const hillSaturation = (pO2: number, p50 = 26.6, n = 2.8): number =>
   pO2 ** n / (p50 ** n + pO2 ** n)
 
 export const ARTERIAL_MMHG = 100 // the lung
-export const VENOUS_MMHG = 40 // the tissue
-export const HILL_N = 2.8 // best-fit Hill coefficient (4 sites, partial cooperativity)
+export const VENOUS_MMHG = 40 // best-fit Hill coefficient (4 sites, partial cooperativity)
 
 /**
  * Cooperativity (n≈2.8) lets the carrier load nearly full at the lung AND

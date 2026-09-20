@@ -382,19 +382,6 @@ export const DASHBOARD_REGISTRY: Readonly<Partial<Record<DashboardSpec['audience
   audit: auditorDashboard,
 }
 
-/** The widget atoms, exported for the nav's sub-view cells (the second torus axis). */
-export const DASHBOARD_WIDGETS: readonly AnyWidgetSpec[] = [
-  trialBalanceWidget,
-  balanceSheetWidget,
-  incomeStatementWidget,
-  kpiWidget,
-  ratiosWidget,
-  budgetWidget,
-  costAnalysisWidget,
-  trendAnalysisWidget,
-  auditLogWidget,
-]
-
 // ─── Rosetta corpus projection (2026-07-15) — computed coverage for ALL collections ─
 //
 // One universal component (ShapePanel) + one computed WidgetSpec per registered
@@ -456,9 +443,4 @@ export function shapeWidgetSpec(config: CollectionConfig): WidgetSpec<ShapePanel
       },
     },
   }
-}
-
-/** The computed corpus projection — one spec per collection, coverage 100% by construction. */
-export function corpusShapeWidgets(configs: ReadonlyArray<CollectionConfig>): ReadonlyArray<WidgetSpec<ShapePanelVM>> {
-  return configs.map((c) => shapeWidgetSpec(c))
 }
