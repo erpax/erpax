@@ -2270,6 +2270,8 @@ src/properties/spaces/index.ts:10: * @standard ISO-41001:2018 facility-managemen
 src/properties/spaces/index.ts:11: * @standard ISO-41011:2017 §3.3.5 facility-management space-vocabulary
 src/properties/spaces/index.ts:12: * @standard ISO-19650-1:2018 information-management-using-bim
 src/properties/spaces/index.ts:13: * @standard EN-15221-6:2011 facility-management area-and-space-measurement
+src/provenance/index.ts:18: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
+src/provenance/index.ts:19: * @standard W3C PROV-DM — provenance as a graph of entities and derivations
 src/provider/index.tsx:6: * @standard W3C CSS-Color-4 color-contrast
 src/pwa/index.ts:44: * @standard W3C Service Workers (W3C-SW)
 src/pwa/index.ts:45: * @standard W3C Web App Manifest (W3C-WAM)
