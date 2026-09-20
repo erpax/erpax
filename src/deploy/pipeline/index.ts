@@ -55,74 +55,120 @@ const posOf = (steps: readonly PipelineStep[], re: RegExp): number =>
  * Each one is here because the opposite ordering shipped and had a consequence —
  * not because a checklist suggested it.
  */
-export function pipelineViolations(cwd: string = process.cwd()): PipelineViolation[] {
+/**
+ * THE VERIFY WORKFLOW. cloudflare.yml no longer deploys — the owner's rule, 2026-09-13: no secret
+ * may stop a deployment, so the Worker ships from Cloudflare's own git build and this workflow only
+ * VERIFIES what is live. The deploy-era laws that used to read this file (build-before-migrate,
+ * smoke-after-deploy, weigh-before-migrate) therefore judged a file with no deploy in it, and their
+ * failures said nothing about the path that actually ships. They moved to shipOrderViolations.
+ *
+ * Two of them were also FALSE: the job is named `verify`, and the laws read `jobs.deploy`, so they
+ * were matching an empty object and reporting a missing guard that is present. A law that reads the
+ * wrong key reports the corpus's own shape as a violation.
+ */
+export function verifyWorkflowViolations(cwd: string = process.cwd()): PipelineViolation[] {
   const out: PipelineViolation[] = []
   const file = 'cloudflare.yml'
   const p = wfPath(file, cwd)
   if (!existsSync(p)) return out
-
-  const doc = parse(readFileSync(p, 'utf8')) as {
+  const text = readFileSync(p, 'utf8')
+  const doc = parse(text) as {
     on?: Record<string, unknown>
     jobs?: Record<string, { if?: string; steps?: { name?: string; with?: Record<string, unknown> }[] }>
   }
-  const job = doc.jobs?.deploy
-  const steps = stepsOf(file, 'deploy', cwd)
+  const jobName = Object.keys(doc.jobs ?? {})[0] ?? ''
+  const job = doc.jobs?.[jobName]
+  const steps = stepsOf(file, jobName, cwd)
 
-  // 1. Deploy must WAIT for CI. Both once triggered on `push: main` independently and
-  //    raced — a commit with failing tests still deployed.
   if (!doc.on || !('workflow_run' in doc.on)) {
-    out.push({ workflow: file, law: 'waits-for-ci', reason: 'deploy does not trigger on workflow_run — it races CI instead of following it' })
+    out.push({ workflow: file, law: 'waits-for-ci', reason: 'does not trigger on workflow_run — it races CI instead of following it' })
   }
-
-  // 2. …and only on a GREEN one. Waiting is worthless without checking the verdict.
   if (!/workflow_run\.conclusion\s*==\s*'success'/.test(job?.if ?? '')) {
     out.push({ workflow: file, law: 'green-only', reason: "the job does not require workflow_run.conclusion == 'success'" })
   }
-
-  // 3. Check out the commit CI VERIFIED, not whatever the branch points at now.
-  const checkout = (doc.jobs?.deploy?.steps ?? []).find((s) => JSON.stringify(s).includes('actions/checkout'))
+  const checkout = (job?.steps ?? []).find((s) => JSON.stringify(s).includes('actions/checkout'))
   if (!JSON.stringify(checkout?.with ?? {}).includes('workflow_run.head_sha')) {
-    out.push({ workflow: file, law: 'verified-sha', reason: 'checkout does not pin workflow_run.head_sha — a push during CI would deploy untested code' })
+    out.push({ workflow: file, law: 'verified-sha', reason: 'checkout does not pin workflow_run.head_sha — it would verify a commit CI never judged' })
   }
 
-  // 4. BUILD BEFORE MIGRATE. Migrating first left the PRODUCTION schema ahead of a
-  //    Worker that never shipped, with nothing to roll it back.
-  const build = posOf(steps, /^Build\b/i)
-  const migrate = posOf(steps, /Migrate remote D1/i)
-  if (build >= 0 && migrate >= 0 && migrate < build) {
-    out.push({ workflow: file, law: 'build-before-migrate', reason: `"${steps[migrate]!.name}" runs before "${steps[build]!.name}" — a failed build leaves production migrated` })
-  }
-
-  // 5. The deterministic gates belong IN FRONT of a deploy, not after it.
-  const deployStep = posOf(steps, /^Deploy$/i)
-  for (const [law, re] of [['contract-gate-first', /Contract gate/i], ['boot-gate-first', /Boot gate/i]] as const) {
+  // The deterministic gates run BEFORE the smoke: a red contract or a dead boot explains a red
+  // smoke, and finding that out first is cheaper than reading a browser trace.
+  const smoke = posOf(steps, /smoke/i)
+  for (const [law, re] of [['contract-gate-first', /contract gate/i], ['boot-gate-first', /boot gate/i]] as const) {
     const g = posOf(steps, re)
-    if (g < 0) out.push({ workflow: file, law, reason: `no ${law.replace(/-.*/, '')} gate before deploy` })
-    else if (deployStep >= 0 && g > deployStep) out.push({ workflow: file, law, reason: `"${steps[g]!.name}" runs after the deploy` })
+    if (g < 0) out.push({ workflow: file, law, reason: `no ${law.replace(/-.*/, '')} gate in the verify job` })
+    else if (smoke >= 0 && g > smoke) out.push({ workflow: file, law, reason: `"${steps[g]!.name}" runs after the smoke it should precede` })
   }
 
-  // 6. Smoke AFTER deploy — it tests the deployed Worker, so before is meaningless.
-  const smoke = posOf(steps, /UI smoke/i)
-  if (smoke >= 0 && deployStep >= 0 && smoke < deployStep) {
-    out.push({ workflow: file, law: 'smoke-after-deploy', reason: 'the UI smoke runs before the deploy it is meant to test' })
+  // THE OWNER'S RULE, made a law: this workflow must need no secret. A deploy, a migration or a
+  // secrets reference here is the arrangement that failed every run for weeks while the other path
+  // shipped — two deployers racing, one blocked by an absent secret.
+  if (/secrets\./.test(text)) {
+    out.push({ workflow: file, law: 'no-secret-on-the-path', reason: 'the verify workflow reads a secret — it is meant to need none' })
   }
-
-  // 7. PACK AND WEIGH BEFORE ANYTHING IRREVERSIBLE. A Turbopack build shipped every production
-  //    fold, 23.4 MB gz against a 10 MiB ceiling, while the config check read green — nothing packed
-  //    or read the Worker before it deployed. Matched on what the step RUNS; the fraction orders
-  //    commands inside one step.
-  const runAt = (re: RegExp): number => {
-    const s = steps.find((x) => re.test(x.run))
-    return s ? s.index + s.run.search(re) / (s.run.length + 1) : -1
+  if (steps.some((st) => /opennextjs-cloudflare deploy|payload migrate|wrangler deploy(?! --dry-run)/.test(st.run))) {
+    out.push({ workflow: file, law: 'no-secret-on-the-path', reason: 'the verify workflow deploys or migrates — shipping belongs to the git build and `erpax deploy app`' })
   }
-  const weigh = runAt(/erpax deploy fold/)
-  const pack = runAt(/wrangler deploy --dry-run/)
-  const law = 'weigh-before-migrate'
-  if (weigh < 0) out.push({ workflow: file, law, reason: 'no step runs `erpax deploy fold` — the Worker ships unweighed' })
-  else if (pack < 0 || pack > weigh) out.push({ workflow: file, law, reason: 'the weigh runs before anything is packed — it reads no bundle' })
-  else if (build >= 0 && weigh < build) out.push({ workflow: file, law, reason: 'the weigh runs before the build it should read' })
-  else if (migrate >= 0 && weigh > migrate) out.push({ workflow: file, law, reason: `the weigh runs after "${steps[migrate]!.name}" — production is migrated for a Worker not yet known to fit` })
   return out
+}
+
+/**
+ * THE PATH THAT SHIPS. `erpax deploy app` (src/cli/local.ts) is the only thing in this repo that
+ * uploads a Worker, so the ordering laws are read THERE — from the source, in document order.
+ *
+ * `package.json` used to chain `payload migrate && … && erpax deploy app` with `&&`, which put the
+ * PRODUCTION migration before the build: a failed build left the schema ahead of a Worker that
+ * never shipped. A shell chain has no law — anyone may reorder it and nothing objects — so the
+ * steps moved into the command, where this reads them.
+ */
+export function shipOrderViolations(cwd: string = process.cwd()): PipelineViolation[] {
+  const out: PipelineViolation[] = []
+  const file = 'src/cli/local.ts'
+  const p = join(cwd, file)
+  if (!existsSync(p)) return out
+  const src = readFileSync(p, 'utf8')
+  const fn = src.slice(src.indexOf('export function runDeployApp'))
+  const body = fn.slice(0, fn.indexOf('\n}\n') + 1)
+  if (!body) return out
+
+  const at = (re: RegExp): number => body.search(re)
+  const build = at(/opennextjs-cloudflare build/)
+  const pack = at(/wrangler deploy --dry-run --outdir/)
+  const weigh = at(/deploy\/fold\/index\.ts/)
+  const migrate = at(/MIGRATE_STEPS/)
+  const upload = at(/opennextjs-cloudflare deploy/)
+
+  if (build < 0) out.push({ workflow: file, law: 'build-before-migrate', reason: 'the deploy command never builds a Worker' })
+  else if (migrate >= 0 && migrate < build) {
+    out.push({ workflow: file, law: 'build-before-migrate', reason: 'the production migration runs before the build — a failed build leaves production migrated' })
+  }
+  if (migrate >= 0 && upload >= 0 && migrate > upload) {
+    out.push({ workflow: file, law: 'migrate-before-upload', reason: 'the schema is migrated after the Worker is already serving — the new code meets the old schema' })
+  }
+  // WEIGH BEFORE ANYTHING IRREVERSIBLE — the law that caught the 23.4 MB Turbopack Worker, now read
+  // where the shipping happens instead of in a workflow that no longer ships.
+  if (weigh < 0) out.push({ workflow: file, law: 'weigh-before-migrate', reason: 'nothing weighs the packed Worker — it ships unread against the 10 MiB ceiling' })
+  else if (pack < 0 || pack > weigh) out.push({ workflow: file, law: 'weigh-before-migrate', reason: 'the weigh runs before anything is packed — it reads no bundle' })
+  else if (build >= 0 && weigh < build) out.push({ workflow: file, law: 'weigh-before-migrate', reason: 'the weigh runs before the build it should read' })
+  else if (migrate >= 0 && weigh > migrate) out.push({ workflow: file, law: 'weigh-before-migrate', reason: 'production is migrated for a Worker not yet known to fit' })
+  if (upload < 0) out.push({ workflow: file, law: 'tag-every-deploy', reason: 'the deploy command never uploads' })
+  else if (!/opennextjs-cloudflare deploy --tag=/.test(body)) {
+    out.push({ workflow: file, law: 'tag-every-deploy', reason: 'the upload carries no --tag — a live version could not be traced to its commit' })
+  }
+
+  // The script must ROUTE through the command, or the ordering above is advisory: a `&&` chain in
+  // package.json can reorder the same steps with nothing to object.
+  const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as { scripts?: Record<string, string> }
+  const deployScript = pkg.scripts?.deploy ?? ''
+  if (/payload migrate|opennextjs-cloudflare/.test(deployScript)) {
+    out.push({ workflow: 'package.json', law: 'one-ship-path', reason: '`pnpm deploy` chains the steps itself — reorderable with no law reading it; route through `erpax deploy app`' })
+  }
+  return out
+}
+
+/** Every ordering law, both families. */
+export function pipelineViolations(cwd: string = process.cwd()): PipelineViolation[] {
+  return [...verifyWorkflowViolations(cwd), ...shipOrderViolations(cwd)]
 }
 
 /**

@@ -193,3 +193,201 @@ function cryptoRandomId(): string {
   const c = (globalThis as { crypto?: { randomUUID?: () => string } }).crypto
   return c?.randomUUID?.() ?? seededIdGen(0x51deba4)()
 }
+
+// ─── AIS: the half the corpus claimed and did not have ────────────────────────
+// `clientImplemented: true` stood against ten BG banks while NOTHING here could create a consent,
+// and `fetchAspspAccounts` demands a Consent-ID no code could obtain. The flow could not run end to
+// end, so the registry line was a claim a bank's compliance officer would read as working software
+// ([[rules]]/audience — the catastrophe shape: a claim only the reader who signs can see is false).
+// These three calls close it: consent → balances → transactions.
+
+/** A consent as the ASPSP returns it. `valid` is the ASPSP's own status, never inferred here. */
+export interface AspspConsent {
+  readonly consentId: string
+  readonly status: string
+  /** true only for the ASPSP's own terminal-valid status — never assumed from a 200. */
+  readonly valid: boolean
+  /** Where the PSU must authenticate (SCA). Absent when the ASPSP pre-authorised the consent. */
+  readonly scaRedirect?: string
+}
+
+/**
+ * Create an account-information consent (`POST /v1/consents`).
+ *
+ * The PSU must then authenticate at `scaRedirect` — STRONG CUSTOMER AUTHENTICATION is the PSU's act,
+ * never the TPP's, so this returns the redirect rather than following it. A consent that comes back
+ * `received` is NOT usable; it becomes `valid` only after the PSU completes SCA at the bank.
+ *
+ * @standard Berlin Group NextGenPSD2 v1.3 §5.2.1 consent-request
+ * @compliance EU 2015/2366 §97 strong-customer-authentication
+ */
+export async function createAspspConsent(
+  config: AspspConfig,
+  token: AccessToken,
+  args: {
+    readonly ibans: readonly string[]
+    /** ISO-8601 date the consent expires — the ASPSP caps this (usually 90 days). */
+    readonly validUntil: string
+    /** Accesses per day for unattended (non-PSU-present) reads. */
+    readonly frequencyPerDay?: number
+    /** Where the bank returns the PSU after SCA. */
+    readonly redirectUri?: string
+  },
+): Promise<ApiResult<AspspConsent>> {
+  const access = { accounts: args.ibans.map((iban) => ({ iban })) }
+  try {
+    const r = await fetch(`${config.endpoint}/v1/consents`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token.token}`,
+        'X-Request-ID': cryptoRandomId(),
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        ...(args.redirectUri ? { 'TPP-Redirect-URI': args.redirectUri } : {}),
+        ...(config.extraHeaders ?? {}),
+      },
+      body: JSON.stringify({
+        access,
+        recurringIndicator: true,
+        validUntil: args.validUntil,
+        frequencyPerDay: exactMax(1, args.frequencyPerDay ?? 4),
+        combinedServiceIndicator: false,
+      }),
+    })
+    if (!r.ok) return err(config.name, `consent HTTP ${r.status}`)
+    const json = (await r.json()) as {
+      consentId?: string
+      consentStatus?: string
+      _links?: { scaRedirect?: { href?: string } }
+    }
+    if (!json.consentId) return err(config.name, 'consent response missing consentId')
+    const status = json.consentStatus ?? 'unknown'
+    return ok(config.name, {
+      consentId: json.consentId,
+      status,
+      valid: status === 'valid',
+      scaRedirect: json._links?.scaRedirect?.href,
+    })
+  } catch (e) {
+    return err(config.name, String(e))
+  }
+}
+
+/** One balance as the ASPSP reports it — amounts stay STRINGS until parsed into minor units. */
+export interface AspspBalance {
+  readonly type: string
+  readonly amount: string
+  readonly currency: string
+  readonly referenceDate?: string
+}
+
+/**
+ * Read an account's balances (`GET /v1/accounts/{id}/balances`).
+ *
+ * @standard Berlin Group NextGenPSD2 v1.3 §5.3.1 read-balance
+ */
+export async function fetchAspspBalances(
+  config: AspspConfig,
+  token: AccessToken,
+  consentId: string,
+  resourceId: string,
+): Promise<ApiResult<ReadonlyArray<AspspBalance>>> {
+  try {
+    const r = await fetch(`${config.endpoint}/v1/accounts/${encodeURIComponent(resourceId)}/balances`, {
+      headers: {
+        Authorization: `Bearer ${token.token}`,
+        'Consent-ID': consentId,
+        'X-Request-ID': cryptoRandomId(),
+        Accept: 'application/json',
+        ...(config.extraHeaders ?? {}),
+      },
+    })
+    if (!r.ok) return err(config.name, `balances HTTP ${r.status}`)
+    const json = (await r.json()) as {
+      balances?: { balanceType?: string; balanceAmount?: { amount?: string; currency?: string }; referenceDate?: string }[]
+    }
+    return ok(
+      config.name,
+      (json.balances ?? []).map((b) => ({
+        type: b.balanceType ?? 'unknown',
+        amount: b.balanceAmount?.amount ?? '0',
+        currency: b.balanceAmount?.currency ?? 'BGN',
+        referenceDate: b.referenceDate,
+      })),
+    )
+  } catch (e) {
+    return err(config.name, String(e))
+  }
+}
+
+/** One transaction as the ASPSP reports it. */
+export interface AspspTransaction {
+  readonly transactionId?: string
+  readonly bookingDate?: string
+  readonly valueDate?: string
+  readonly amount: string
+  readonly currency: string
+  readonly remittanceInformation?: string
+  readonly creditorName?: string
+  readonly debtorName?: string
+}
+
+/**
+ * Read an account's transactions (`GET /v1/accounts/{id}/transactions`).
+ *
+ * BOOKED ONLY by default. A pending entry has no booking date and may still vanish; reconciling
+ * against one would match a ledger line to money that never moved.
+ *
+ * @standard Berlin Group NextGenPSD2 v1.3 §5.4.1 read-transaction-list
+ */
+export async function fetchAspspTransactions(
+  config: AspspConfig,
+  token: AccessToken,
+  consentId: string,
+  resourceId: string,
+  args: { readonly dateFrom: string; readonly dateTo?: string; readonly bookingStatus?: 'booked' | 'pending' | 'both' },
+): Promise<ApiResult<ReadonlyArray<AspspTransaction>>> {
+  const q = new URLSearchParams({
+    dateFrom: args.dateFrom,
+    bookingStatus: args.bookingStatus ?? 'booked',
+    ...(args.dateTo ? { dateTo: args.dateTo } : {}),
+  })
+  try {
+    const r = await fetch(`${config.endpoint}/v1/accounts/${encodeURIComponent(resourceId)}/transactions?${q}`, {
+      headers: {
+        Authorization: `Bearer ${token.token}`,
+        'Consent-ID': consentId,
+        'X-Request-ID': cryptoRandomId(),
+        Accept: 'application/json',
+        ...(config.extraHeaders ?? {}),
+      },
+    })
+    if (!r.ok) return err(config.name, `transactions HTTP ${r.status}`)
+    const json = (await r.json()) as {
+      transactions?: { booked?: unknown[]; pending?: unknown[] }
+    }
+    const raw = [...((json.transactions?.booked ?? []) as Record<string, unknown>[]),
+      ...(args.bookingStatus === 'both' || args.bookingStatus === 'pending'
+        ? ((json.transactions?.pending ?? []) as Record<string, unknown>[])
+        : [])]
+    return ok(config.name, raw.map(readTransaction))
+  } catch (e) {
+    return err(config.name, String(e))
+  }
+}
+
+/** Read one Berlin Group transaction object. Shape-tolerant: an absent field is absent, never invented. */
+function readTransaction(t: Record<string, unknown>): AspspTransaction {
+  const amt = (t.transactionAmount ?? {}) as { amount?: string; currency?: string }
+  return {
+    transactionId: typeof t.transactionId === 'string' ? t.transactionId : undefined,
+    bookingDate: typeof t.bookingDate === 'string' ? t.bookingDate : undefined,
+    valueDate: typeof t.valueDate === 'string' ? t.valueDate : undefined,
+    amount: amt.amount ?? '0',
+    currency: amt.currency ?? 'BGN',
+    remittanceInformation:
+      typeof t.remittanceInformationUnstructured === 'string' ? t.remittanceInformationUnstructured : undefined,
+    creditorName: typeof t.creditorName === 'string' ? t.creditorName : undefined,
+    debtorName: typeof t.debtorName === 'string' ? t.debtorName : undefined,
+  }
+}

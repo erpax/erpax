@@ -157,8 +157,13 @@ describe('deploy/fold — the packed artifact is weighed against the paid ceilin
   it('the deploy lane packs into the directory the budget reads — one spelling, two readers', () => {
     // A pack written anywhere else is a pack this gate never weighs: it would refuse the build as
     // unpacked, or worse, weigh a stale one left behind in the old place.
-    const workflow = readFileSync(join(process.cwd(), '.github', 'workflows', 'cloudflare.yml'), 'utf8')
-    expect(workflow).toContain(`wrangler deploy --dry-run --outdir ${PACKED_WORKER_DIR}`)
+    //
+    // REPOINTED: this read cloudflare.yml, which stopped deploying when the owner ruled that no
+    // secret may stop a deployment — and the weigh went with it. The ship path lost its ceiling
+    // check and the test stayed green, because it was asserting about a workflow that no longer
+    // ships. The packer now lives in `erpax deploy app`, so that is what this reads.
+    const shipPath = readFileSync(join(process.cwd(), 'src/cli/local.ts'), 'utf8')
+    expect(shipPath).toContain(`wrangler deploy --dry-run --outdir ${PACKED_WORKER_DIR}`)
     expect(workerBudget(tmp(), PACKED_WORKER_DIR).packed).toBe(false)
   })
 })

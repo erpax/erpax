@@ -2,7 +2,7 @@ import { describe, it, expect, afterAll } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync, readFileSync, cpSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { pipelineViolations, releaseGuards, assertPipelineOrder, stepsOf, testedBeforePublish } from './index'
+import { verifyWorkflowViolations, shipOrderViolations, releaseGuards, assertPipelineOrder, stepsOf, testedBeforePublish } from './index'
 
 /** A temp repo carrying a copy of the real workflows, so each law can be broken in isolation. */
 const dirs: string[] = []
@@ -21,79 +21,103 @@ const repo = (mutate?: (yml: string) => string): string => {
 }
 afterAll(() => dirs.forEach((d) => rmSync(d, { recursive: true, force: true })))
 
-describe('deploy/pipeline — the live pipeline obeys every ordering law', () => {
+/**
+ * A temp repo carrying the SHIP path — `erpax deploy app` lives in src/cli/local.ts, and
+ * package.json must route through it. The deploy-era laws used to read cloudflare.yml; that
+ * workflow stopped deploying when the owner ruled that no secret may stop a deployment, so the
+ * laws that govern shipping now read the command that actually ships.
+ */
+const shipRepo = (mutate?: { local?: (ts: string) => string; pkg?: (json: string) => string }): string => {
+  const d = mkdtempSync(join(tmpdir(), 'erpax-ship-'))
+  mkdirSync(join(d, 'src', 'cli'), { recursive: true })
+  const local = readFileSync(join(process.cwd(), 'src/cli/local.ts'), 'utf8')
+  writeFileSync(join(d, 'src/cli/local.ts'), mutate?.local ? mutate.local(local) : local)
+  const pkg = readFileSync(join(process.cwd(), 'package.json'), 'utf8')
+  writeFileSync(join(d, 'package.json'), mutate?.pkg ? mutate.pkg(pkg) : pkg)
+  dirs.push(d)
+  return d
+}
+
+describe('deploy/pipeline — the verify workflow, which no longer ships', () => {
   it('is clean today', () => {
-    expect(pipelineViolations()).toEqual([])
+    expect(verifyWorkflowViolations()).toEqual([])
     expect(releaseGuards()).toEqual([])
     expect(() => assertPipelineOrder()).not.toThrow()
   })
 
-  it('reads the deploy steps in document order', () => {
-    const names = stepsOf('cloudflare.yml', 'deploy').map((s) => s.name)
-    expect(names.indexOf('Migrate remote D1')).toBeGreaterThan(names.findIndex((n) => /^Build/.test(n)))
-    expect(names.indexOf('Deploy')).toBeGreaterThan(names.indexOf('Migrate remote D1'))
+  it('waits-for-ci: a bare push trigger races CI instead of following it', () => {
+    const d = repo((y) => y.replace(/on:\n(\s+#[^\n]*\n)*\s+workflow_run:[\s\S]*?branches: \[main, master\]/, 'on:\n  push:\n    branches: [main]'))
+    expect(verifyWorkflowViolations(d).some((v) => v.law === 'waits-for-ci')).toBe(true)
+  })
+
+  it('green-only: waiting for CI without reading its verdict is worthless', () => {
+    const d = repo((y) => y.replace(/github\.event\.workflow_run\.conclusion == 'success'/, 'true'))
+    expect(verifyWorkflowViolations(d).some((v) => v.law === 'green-only')).toBe(true)
+  })
+
+  it('verified-sha: verifying HEAD instead of the commit CI judged', () => {
+    const d = repo((y) => y.replace(/ref: [^\n]*head_sha[^\n]*/, 'ref: main'))
+    expect(verifyWorkflowViolations(d).some((v) => v.law === 'verified-sha')).toBe(true)
+  })
+
+  // THE OWNER'S RULE AS A LAW. Every run of the old workflow failed at its first step because two
+  // secrets were absent, while Cloudflare's git build shipped every push — two deployers racing,
+  // one blocked by a secret. A secret reappearing here is that arrangement returning.
+  it('no-secret-on-the-path: a secret reference brings back the deployer that never deployed', () => {
+    const d = repo((y) => `${y}\n      - name: Sneak\n        run: echo "\${{ secrets.CLOUDFLARE_API_TOKEN }}"\n`)
+    expect(verifyWorkflowViolations(d).some((v) => v.law === 'no-secret-on-the-path')).toBe(true)
+  })
+
+  it('no-secret-on-the-path: and so does a deploy step', () => {
+    const d = repo((y) => `${y}\n      - name: Ship it\n        run: opennextjs-cloudflare deploy\n`)
+    expect(verifyWorkflowViolations(d).some((v) => v.law === 'no-secret-on-the-path')).toBe(true)
   })
 })
 
-describe('deploy/pipeline — each law CATCHES its own reordering', () => {
-  it('waits-for-ci: a bare push trigger races CI', () => {
-    // The original defect: ci.yml and cloudflare.yml both fired on push:main, so a
-    // commit with failing tests deployed anyway.
-    const d = repo((y) => y.replace(/  workflow_run:[\s\S]*?branches: \[main, master\]/, '  push:\n    branches: [main, master]'))
-    expect(pipelineViolations(d).some((v) => v.law === 'waits-for-ci')).toBe(true)
+describe('deploy/pipeline — the path that actually ships', () => {
+  it('is clean today', () => {
+    expect(shipOrderViolations()).toEqual([])
   })
 
-  it('green-only: waiting for CI without checking its verdict is worthless', () => {
-    const d = repo((y) => y.replace(/github\.event\.workflow_run\.conclusion == 'success'/, 'true'))
-    expect(pipelineViolations(d).some((v) => v.law === 'green-only')).toBe(true)
-  })
-
-  it('verified-sha: deploying HEAD instead of the tested commit', () => {
-    const d = repo((y) => y.replace(/ref: \$\{\{ github\.event\.workflow_run\.head_sha \|\| github\.ref \}\}/, 'ref: main'))
-    expect(pipelineViolations(d).some((v) => v.law === 'verified-sha')).toBe(true)
-  })
-
-  it('build-before-migrate: a failed build must not leave production migrated', () => {
-    // Swap the two step names — the exact ordering that shipped before today.
-    const d = repo((y) => y.replace('- name: Build (OpenNext → Workers, lean next build)', '- name: ZZ-placeholder')
-      .replace('- name: Migrate remote D1', '- name: Build (OpenNext → Workers, lean next build)')
-      .replace('- name: ZZ-placeholder', '- name: Migrate remote D1'))
-    expect(pipelineViolations(d).some((v) => v.law === 'build-before-migrate')).toBe(true)
-  })
-
-  it('contract-gate-first: a deterministic gate after the deploy protects nothing', () => {
-    const d = repo((y) => y.replace(/      - name: Contract gate[\s\S]*?tsx src\/outward\/gate\/index\.ts\n\n/, ''))
-    expect(pipelineViolations(d).some((v) => v.law === 'contract-gate-first')).toBe(true)
-  })
-
-  it('boot-gate-first: the config must load before anything ships', () => {
-    const d = repo((y) => y.replace(/      - name: Boot gate[\s\S]*?tsx src\/run\/load\/index\.ts\n\n/, ''))
-    expect(pipelineViolations(d).some((v) => v.law === 'boot-gate-first')).toBe(true)
-  })
-
-  describe('weigh-before-migrate: the Worker is packed and read before production is touched', () => {
-    const weigh = /      - name: Weigh the packed Worker[\s\S]*?pnpm erpax deploy fold\n\n/
-    const caught = (d: string): boolean => pipelineViolations(d).some((v) => v.law === 'weigh-before-migrate')
-
-    it('the live workflow carries the step — the pattern this law is broken with is real', () => {
-      expect(readFileSync(join(process.cwd(), '.github', 'workflows', 'cloudflare.yml'), 'utf8')).toMatch(weigh)
+  // THE DEFECT THIS LAW WAS BLIND TO WHILE IT READ THE WORKFLOW: `pnpm deploy` chained
+  // `payload migrate && … && erpax deploy app`, so PRODUCTION D1 was migrated before the Worker
+  // was built. A failed build left the schema ahead of code that never shipped.
+  it('build-before-migrate: catches the migration running before the build', () => {
+    // Plant the ACTUAL defect: move the MIGRATE_STEPS loop ABOVE the build, which is exactly the
+    // order `pnpm deploy` had while the law was reading cloudflare.yml and saw nothing.
+    const d = shipRepo({
+      local: (ts) => {
+        const loop = "  for (const cmd of MIGRATE_STEPS) {\n    const m = spawnSync(cmd, { shell: true, stdio: 'inherit', cwd, env: process.env })\n    if ((m.status ?? 1) !== 0) return m.status ?? 1\n  }\n"
+        if (!ts.includes(loop)) throw new Error('the migrate loop moved — repoint this fixture')
+        return ts.replace(loop, '').replace('  const sha = execSync(', `${loop}  const sha = execSync(`)
+      },
     })
+    expect(shipOrderViolations(d).some((x) => x.law === 'build-before-migrate')).toBe(true)
+  })
 
-    it('catches a deploy with no weigh at all — the state the 23.4 MB Turbopack Worker reached upload in', () => {
-      expect(caught(repo((y) => y.replace(weigh, '')))).toBe(true)
-    })
+  it('weigh-before-migrate: catches a Worker that ships unweighed', () => {
+    const d = shipRepo({ local: (ts) => ts.replace(/src\/deploy\/fold\/index\.ts/, 'src/deploy/nothing.ts') })
+    expect(shipOrderViolations(d).some((x) => x.law === 'weigh-before-migrate')).toBe(true)
+  })
 
-    it('catches a weigh moved after the migration', () => {
-      const d = repo((y) => {
-        const step = y.match(weigh)![0]
-        return y.replace(weigh, '').replace('      - name: Deploy\n', `${step}      - name: Deploy\n`)
-      })
-      expect(caught(d)).toBe(true)
-    })
+  it('weigh-before-migrate: catches a weigh with nothing packed for it to read', () => {
+    const d = shipRepo({ local: (ts) => ts.replace(/wrangler deploy --dry-run --outdir[^']*/, 'echo packed-nothing') })
+    expect(shipOrderViolations(d).some((x) => x.law === 'weigh-before-migrate')).toBe(true)
+  })
 
-    it('catches a weigh with nothing packed for it to read', () => {
-      expect(caught(repo((y) => y.replace(/ *pnpm exec wrangler deploy --dry-run[^\n]*\n/, '')))).toBe(true)
+  // Every Cloudflare git build ships UNTAGGED, which is why no live version could be traced to a
+  // commit until `erpax deploy app` tagged one.
+  it('tag-every-deploy: catches an upload that carries no --tag', () => {
+    const d = shipRepo({ local: (ts) => ts.replace(/opennextjs-cloudflare deploy --tag=\$\{sha\}/, 'opennextjs-cloudflare deploy') })
+    expect(shipOrderViolations(d).some((x) => x.law === 'tag-every-deploy')).toBe(true)
+  })
+
+  // A shell `&&` chain has no law reading it: anyone may reorder the steps and nothing objects.
+  it('one-ship-path: catches package.json chaining the steps itself again', () => {
+    const d = shipRepo({
+      pkg: (j) => j.replace(/"deploy": "[^"]*"/, '"deploy": "payload migrate && opennextjs-cloudflare build && opennextjs-cloudflare deploy"'),
     })
+    expect(shipOrderViolations(d).some((x) => x.law === 'one-ship-path')).toBe(true)
   })
 })
 

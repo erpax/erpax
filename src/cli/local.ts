@@ -497,6 +497,19 @@ export function runLintSrc(args: readonly string[] = []): number {
   return 0
 }
 
+/** The tsx entry a weigh runs through, so the command behaves as a human running it would. */
+const TSX_BIN = 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx' as const
+
+/**
+ * Production schema steps, in the order they must run RELATIVE to the build: after it, before the
+ * upload. Declared here rather than chained in package.json, because a shell `&&` chain has no law
+ * — anyone may reorder it and nothing objects. `deploy/pipeline` reads this list.
+ */
+export const MIGRATE_STEPS: readonly string[] = [
+  'cross-env NODE_ENV=production PAYLOAD_SECRET=ignore NODE_OPTIONS="--no-deprecation --import=tsx/esm --import=./src/css/load-hook.mjs" payload migrate',
+  "wrangler d1 execute D1 --command 'PRAGMA optimize' --remote",
+]
+
 /** The OpenNext bundle receipt — the same content address as the build, one step further down. */
 const WORKER_RECEIPT = 'gate:deploy:opennext'
 
@@ -561,6 +574,27 @@ export function runDeployApp(args: readonly string[] = []): number {
     sealSuiteReceipt(WORKER_RECEIPT, hash, cwd)
   } else {
     console.log(`✓ deploy — cited at ${hash}: this exact content is already bundled; uploading it`)
+  }
+
+  // WEIGH BEFORE ANYTHING IRREVERSIBLE. A Turbopack build once packed 23.4 MB gz against a 10 MiB
+  // ceiling and reached upload because nothing read the bundle first. That weigh lived in
+  // cloudflare.yml; when the workflow stopped deploying, the ship path lost it and nobody noticed —
+  // the law stayed green because it was still reading the workflow that no longer ships.
+  const packed = spawnSync('wrangler deploy --dry-run --outdir .open-next/packed', { shell: true, stdio: 'inherit', cwd, env: process.env })
+  if ((packed.status ?? 1) !== 0) return packed.status ?? 1
+  const weighed = spawnSync(`${TSX_BIN} src/deploy/fold/index.ts`, { shell: true, stdio: 'inherit', cwd, env: process.env })
+  if ((weighed.status ?? 1) !== 0) {
+    console.error('✗ deploy — the packed Worker does not fit the ceiling; nothing was migrated or uploaded')
+    return weighed.status ?? 1
+  }
+
+  // MIGRATE AFTER THE BUILD, BEFORE THE UPLOAD. The package script ran `payload migrate` FIRST, so a
+  // failed build left production D1 migrated with no code to match it — the exact ordering
+  // deploy/pipeline's `build-before-migrate` law forbids, in the one path that actually ships.
+  // The law had been watching cloudflare.yml, which no longer deploys, so nothing saw it.
+  for (const cmd of MIGRATE_STEPS) {
+    const m = spawnSync(cmd, { shell: true, stdio: 'inherit', cwd, env: process.env })
+    if ((m.status ?? 1) !== 0) return m.status ?? 1
   }
 
   // One token, never `--tag <v>`: open-next joins unknown flags into an UNQUOTED `sh -c`.

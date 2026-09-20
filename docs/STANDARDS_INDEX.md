@@ -854,6 +854,9 @@ src/country/client/berlin-group-psd2.ts:148: * @standard Berlin Group NextGenPSD
 src/country/client/berlin-group-psd2.ts:149: * @standard ISO-20022 pain.001.001.09 sepa-credit-transfer-initiation
 src/country/client/berlin-group-psd2.ts:14: * @standard Berlin Group NextGenPSD2 v1.3
 src/country/client/berlin-group-psd2.ts:15: * @standard ISO-20022 pain.001 sepa-credit-transfer
+src/country/client/berlin-group-psd2.ts:221: * @standard Berlin Group NextGenPSD2 v1.3 §5.2.1 consent-request
+src/country/client/berlin-group-psd2.ts:287: * @standard Berlin Group NextGenPSD2 v1.3 §5.3.1 read-balance
+src/country/client/berlin-group-psd2.ts:341: * @standard Berlin Group NextGenPSD2 v1.3 §5.4.1 read-transaction-list
 src/country/client/berlin-group-psd2.ts:69: * @standard rfc-6749 §4.4 client-credentials-grant
 src/country/client/bg-bank-statement-pdf.ts:28: * @standard ISO-3166-1:2020 BG country-code
 src/country/client/bg-bank-statement-pdf.ts:29: * @standard ISO-13616-1:2020 iban BG-22
@@ -3731,6 +3734,7 @@ src/country/api/client/index.ts:725: * @compliance EU 2014/55 b2g-e-invoicing-ma
 src/country/api/index.ts:26: * @compliance EU 2014/55 b2g-e-invoicing portals
 src/country/api/index.ts:27: * @compliance AMLD-5 ubo-registry-access
 src/country/client/berlin-group-psd2.ts:21: * @compliance EU 2015/2366 strong-customer-authentication
+src/country/client/berlin-group-psd2.ts:222: * @compliance EU 2015/2366 §97 strong-customer-authentication
 src/country/client/bg-bank-statement-pdf.ts:35: * @compliance SOX §404 internal-controls fx-revaluation-evidence
 src/country/client/bg-holidays.ts:19: * @compliance Кодекс на труда чл.154 official-holidays
 src/country/client/bg-hybrid-invoice.ts:20: * @compliance EU 2014/55 b2g-e-invoicing-mandate
