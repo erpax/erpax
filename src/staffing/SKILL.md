@@ -1,45 +1,60 @@
----
-name: staffing
-description: "Use when reasoning about staffing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: staffing
-coordinate: "staffing · 8/crest · 1098d102"
-contentUuid: "acb7274e-1efe-53b7-93b1-58d484762013"
-diamondUuid: "bdfcf4cf-573d-8550-a591-6b705fa39026"
-uuid: "1098d102-5228-8879-af74-3d9946600692"
-horo: 8
-typography:
-  partition: staffing
-  bondDegree: 22
-standards:
-  - "schema.org — the type vocabulary, collided to single words"
-bindings: []
-signatures:
-  computationUuid: "89a04692-54d8-8252-a7b6-53fb8c3a1402"
-  stages:
-    - stage: path
-      stageUuid: "e021809f-7038-8884-93a1-2aeb641cae1c"
-    - stage: trinity
-      stageUuid: "5b73a849-896a-8f24-9cb6-36ad7216a060"
-    - stage: boundary
-      stageUuid: "7302d182-34f2-8c4f-9d51-3e101d62aa4b"
-    - stage: links
-      stageUuid: "63fd1912-ad68-8701-83ef-22f4047c2c24"
-    - stage: horo
-      stageUuid: "8fbe84a1-4b41-88e4-bbe9-10b3e99ea4a0"
-    - stage: seal
-      stageUuid: "80b88db1-5335-8ed3-b891-1ea1a852e34f"
-    - stage: uuid
-      stageUuid: "134edd38-c846-8bc3-9e74-fde923764bde"
-version: 2
----
-# staffing
+# staffing — a position is declared once, and everything a bank needs from it is derived
 
-A schema.org component word, collided out of schema.org compounds — fused from diversityStaffingReport ([[sti]] · [[collapse]] · [[merge]]).
+Six atoms already computed the five faces of a position. **Nothing joined them.**
 
-Entangled with — [[diversity]] · [[report]]
+| face | atom |
+| --- | --- |
+| job description | [[position]] — `jobDescription()`, computed, never hand-written |
+| competency shortfall | [[competency]]/gap — required − held |
+| the plan that closes it | [[train]] — `trainingPlan()`, mandatory first |
+| access capability | [[cross]] — the `read < write < sign < admin` lattice |
+| cost | [[allocation]] — `anchor × tier` |
 
-Attested in schema.org — diversityStaffingReport
+So every caller performed the join by hand, which means every caller performed it slightly
+differently and **no gate could see the difference**. A fold nobody performs is not a fold — it is
+six functions and a convention.
 
-**Law — [[law]]: staffing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+## Why this is the [[rules]]/ask law, applied to hiring
 
-@standard schema.org — the type vocabulary, collided to single words
+`ask` measured 847 bare questions across the config and named the cure: *if the law, the tenant,
+the sequence or the clock determines a value, the system computes it and the user **confirms***.
+A position is the purest case. Given the position and the bank's own anchor rate, the title, the
+SFIA responsibility, the hourly and annual cost, the missing competencies, the order training must
+run in, and the capability the role confers are **all determined** — by SFIA, by the ledger, by the
+lattice. **Two inputs. Five faces.** Everything else was never a question.
+
+## The fold decides nothing of its own
+
+Every face is delegated, and the tests assert exactly that: `staff(...).description` must equal
+`jobDescription(...)`, the gap must equal `competencyGap(...)`, the rate must equal
+`positionHourlyRate(...)`. That is the property that makes it safe to put in front of a bank — a
+change to the rate law, the gap maths or the lattice reaches here **without being restated**, which
+is the whole reason the hand-rolled join was dangerous.
+
+It also cross-checks what a hand-rolled join loses: `proficient` must be false exactly when a
+mandatory step remains, and the plan must be empty exactly when every required level is met. Two
+faces that can disagree are two faces someone will one day read separately.
+
+An **empty seat holds nothing** — never everything. `staff()` with no `held` lines returns
+`proficient: false` and a plan the length of the requirement, because the alternative reading (no
+gaps recorded ⇒ nothing missing) is the default-ALLOW-by-omission that [[rules]]/unraised names.
+
+**Honest boundary.** `FTE_HOURS` is **declared** at 1,720 — a contract term, not a derivation; a
+bank on a 35-hour week has a different one, and burying it in a formula would make every annual
+figure a claim nobody could argue with. The annual cost excludes employer on-costs, which are a
+payroll matter and not this one. `unresolvedCompetencies` reports whether a competency route
+**reaches executable matter** — never whether that matter is correct, complete, or fit for a
+regulated bank. And the capability is an **input**: this fold carries it onto the position, it does
+not derive who may hold what.
+
+**Law — [[law]]: declare the position once. A description, a requirement, an access grant and a
+budget that are typed separately will disagree, and the day they disagree nobody will be looking —
+so derive all four from the one declaration, and let them fail together or not at all.**
+
+## Standards
+
+- **SFIA 8** — responsibility levels 1..7.
+- **ESCO v1.2 / ISCO-08** — occupation and competency classification.
+- **NIST INCITS-359** — role-based access control.
+
+Composes: [[position]] · [[competency]]/gap · [[train]] · [[cross]] · [[allocation]] · [[rules]]/ask · [[law]].
