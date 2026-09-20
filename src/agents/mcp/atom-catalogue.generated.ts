@@ -10847,6 +10847,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "verification"
   },
   {
+    "atom": "inventory",
+    "name": "inventory",
+    "description": "Use when reasoning about inventory — erpax proves its decisions in Lean. Until this atom, the only way to SEE that was to install Lean 4.33.1 and run it — so every reader who did not met the claim as a sentence…",
+    "path": "verify/inventory"
+  },
+  {
     "atom": "version",
     "name": "version",
     "description": "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains.",

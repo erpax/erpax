@@ -3,13 +3,13 @@ name: inventory
 description: "Use when reasoning about inventory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/inventory"
 coordinate: "vocabulary/inventory · 1/base · 18b7375c"
-contentUuid: "0d73ae0a-525a-5f69-8991-cbc493fcdd7b"
+contentUuid: "cfc14ece-c8ae-50f7-a012-455532b6e585"
 diamondUuid: "18d88a43-86b6-8552-8a50-ed28692a2a2d"
 uuid: "18b7375c-6bc6-8a81-80aa-12b5095a9191"
 horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 24
+  bondDegree: 27
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

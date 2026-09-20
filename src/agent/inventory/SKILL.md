@@ -3,13 +3,13 @@ name: inventory
 description: "Use when reasoning about agent/inventory — agent inventory scan, emit, and monitor for stale or duplicate agents."
 atomPath: "agent/inventory"
 coordinate: "agent/inventory · 1/base · 0e1b1db8"
-contentUuid: "a47888e4-e3b7-5894-9b63-ceb8bbc132cc"
+contentUuid: "ef926d35-56a8-5a0e-bbf5-78fc17ad5077"
 diamondUuid: "512e73e6-f86f-83f3-a48f-7fc7f486018a"
 uuid: "0e1b1db8-caa2-8d5d-a661-042486e86639"
 horo: 1
 typography:
   partition: agent
-  bondDegree: 24
+  bondDegree: 27
 standards: []
 bindings: []
 signatures:

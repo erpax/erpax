@@ -111495,6 +111495,72 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "inventory",
+    "path": "verify/inventory",
+    "translations": [
+      {
+        "key": "name",
+        "source": "inventory",
+        "uuid": "0e1b1db8-caa2-8d5d-a661-042486e86639",
+        "words": [
+          "inventory"
+        ],
+        "values": {
+          "en": "inventory"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about inventory — erpax proves its decisions in Lean. Until this atom, the only way to SEE that was to install Lean 4.33.1 and run it — so every reader who did not met the claim as a sentence…",
+        "uuid": "dc1f6c22-7087-8eae-b6ed-a7c08d555eef",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "inventory",
+          "erpax",
+          "proves",
+          "its",
+          "decisions",
+          "in",
+          "lean",
+          "until",
+          "this",
+          "atom",
+          "the",
+          "only",
+          "way",
+          "to",
+          "see",
+          "that",
+          "was",
+          "to",
+          "install",
+          "lean",
+          "and",
+          "run",
+          "it",
+          "so",
+          "every",
+          "reader",
+          "who",
+          "did",
+          "not",
+          "met",
+          "the",
+          "claim",
+          "as",
+          "a",
+          "sentence"
+        ],
+        "values": {
+          "en": "Use when reasoning about inventory — erpax proves its decisions in Lean. Until this atom, the only way to SEE that was to install Lean 4.33.1 and run it — so every reader who did not met the claim as a sentence…"
+        }
+      }
+    ]
+  },
+  {
     "atom": "version",
     "path": "version",
     "translations": [
@@ -209837,4 +209903,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3585
+export const TRANSLATIONS_COUNT = 3586

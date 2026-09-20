@@ -19,8 +19,7 @@
  * @audit ISO-19011:2018 audit-evidence the citation must lead to the evidence
  * @see src/verify/inventory/SKILL.md
  */
-import inventory from '@/verify/lean/inventory.generated.json'
-import { proved, type ProofCensus } from '@/verify/inventory'
+import { INVENTORY as inventory, proved, type ProofCensus } from '@/verify/inventory'
 
 export const dynamic = 'force-static'
 

@@ -1428,6 +1428,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "vendors/vendor/quotes",
   "vendors/vendor/scorecards",
   "verification",
+  "verify/inventory",
   "version",
   "versions",
   "versions/cross",
@@ -1491,7 +1492,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1484 as const
+export const ATOM_LEDGER_PATH_COUNT = 1485 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -6727,6 +6728,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "verification": [
     "verification"
+  ],
+  "verify/inventory": [
+    "verify/inventory"
   ],
   "version": [
     "version"

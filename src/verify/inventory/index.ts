@@ -80,6 +80,13 @@ export const proved = (c: ProofCensus): number => c.axiomFree + c.standardAxioms
 // files the run covered, so a record that no longer matches the sources is detectably stale
 // rather than quietly wrong.
 
+/**
+ * The emitted record, re-exported through this atom's FACE. A caller must never reach past the
+ * barrel to the .json ([[convention]]/import): the pre-push ratchet refused exactly that, and it
+ * was right — a deep path is a path free to move, and a JSON file is not an atom.
+ */
+export { default as INVENTORY } from '../lean/inventory.generated.json'
+
 /** Where the emitted record lives — committed, because a Worker cannot regenerate it. */
 export const INVENTORY_PATH = 'src/verify/lean/inventory.generated.json' as const
 

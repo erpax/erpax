@@ -1,3 +1,36 @@
+---
+name: inventory
+description: "Use when reasoning about inventory — erpax proves its decisions in Lean. Until this atom, the only way to SEE that was to install Lean 4.33.1 and run it — so every reader who did not met the claim as a sentence…"
+atomPath: "verify/inventory"
+coordinate: "verify/inventory · 8/crest · cbcd0e73"
+contentUuid: "922acb97-31ff-5b4c-acd4-dcfce9e717a7"
+diamondUuid: "73ec1b5d-b582-8a39-b719-e1679028ae2b"
+uuid: "cbcd0e73-652d-853e-bfb2-03093752b61b"
+horo: 8
+typography:
+  partition: verify
+  bondDegree: 27
+standards: []
+bindings: []
+signatures:
+  computationUuid: "14e47fcc-885f-8f9b-a825-ce3758268565"
+  stages:
+    - stage: path
+      stageUuid: "3b81a920-27b4-8b76-bf60-d1ef1a19d40a"
+    - stage: trinity
+      stageUuid: "1b360d91-d290-876c-9267-2d25c134c6b4"
+    - stage: boundary
+      stageUuid: "ba6afd76-a91c-8e3b-8cf8-e11e164bd9d9"
+    - stage: links
+      stageUuid: "b06dc464-79f9-8a5a-9f79-3459876554ba"
+    - stage: horo
+      stageUuid: "e3a198e6-cc4e-89b4-98e9-6eb9221825ee"
+    - stage: seal
+      stageUuid: "af213eb0-b976-8223-9bd7-86f7fa6b953b"
+    - stage: uuid
+      stageUuid: "75362eee-4eaa-8914-b723-ed671c8254c6"
+version: 2
+---
 # verify/inventory — a proof nobody can reach is prose
 
 erpax proves its decisions in Lean. Until this atom, the only way to SEE that was to install Lean
