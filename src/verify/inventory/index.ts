@@ -95,7 +95,8 @@ export interface ProofInventory {
   readonly lean: string
   readonly sourcesHash: string
   readonly census: ProofCensus
-  readonly files: readonly { readonly file: string; readonly entries: readonly ProofEntry[] }[]
+  /** `compiled: false` means the KERNEL REFUSED the file — never a file with nothing in it. */
+  readonly files: readonly { readonly file: string; readonly compiled: boolean; readonly entries: readonly ProofEntry[] }[]
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -112,15 +113,32 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const hash = createHash('sha256')
   for (const n of names) hash.update(readFileSync(join(dir, `${n}.lean`)))
 
-  // Main imports the others, so it compiles last; every file is compiled before it is probed.
-  const order = [...names.filter((n) => n !== 'Main'), ...names.filter((n) => n === 'Main')]
-  const files: { file: string; entries: ProofEntry[] }[] = []
+  // DEPENDENCY ORDER, read from the files themselves. The first version compiled alphabetically
+  // with Main special-cased, and Cross.lean — which imports Ftl, Release and Uuid — sorted BEFORE
+  // them, so its imports did not exist yet, the kernel refused it, and the record said "0 theorems"
+  // instead of "refused". A special case for one file is a guess about the graph; this reads it.
+  const importsOf = (n: string): string[] =>
+    [...readFileSync(join(dir, `${n}.lean`), 'utf8').matchAll(/^import (\S+)/gm)].map((m) => m[1] as string)
+  const order: string[] = []
+  const seen = new Set<string>()
+  const visit = (n: string, stack: Set<string>): void => {
+    if (seen.has(n) || stack.has(n)) return
+    stack.add(n)
+    for (const dep of importsOf(n)) if (names.includes(dep)) visit(dep, stack)
+    stack.delete(n)
+    seen.add(n)
+    order.push(n)
+  }
+  for (const n of names) visit(n, new Set())
+  const files: { file: string; compiled: boolean; entries: ProofEntry[] }[] = []
+
   for (const n of order) {
     try {
       execFileSync(LEAN, ['-o', join(out, `${n}.olean`), `${n}.lean`], { cwd: dir, env: { ...process.env, LEAN_PATH: out }, stdio: 'pipe' })
     } catch {
-      // A file the kernel REFUSES contributes no theorems — never a silent pass.
-      files.push({ file: `${n}.lean`, entries: [] })
+      // A file the kernel REFUSES is RECORDED as refused. Pushing it with no entries made a
+      // refusal indistinguishable from an empty file — the silent pass this record exists to refuse.
+      files.push({ file: `${n}.lean`, compiled: false, entries: [] })
       continue
     }
     const thms = readFileSync(join(dir, `${n}.lean`), 'utf8').split('\n').filter((l) => l.startsWith('theorem ')).map((l) => l.split(/\s+/)[1] ?? '')
@@ -128,7 +146,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const probe = [`import ${n}`, ...thms.filter(Boolean).map((t) => `#print axioms ${ns ? `${ns}.` : ''}${t}`)].join('\n')
     writeFileSync(join(out, 'probe.lean'), probe)
     const report = execFileSync(LEAN, [join(out, 'probe.lean')], { cwd: dir, env: { ...process.env, LEAN_PATH: out }, encoding: 'utf8' })
-    files.push({ file: `${n}.lean`, entries: parseAxiomReport(report) })
+    files.push({ file: `${n}.lean`, compiled: true, entries: parseAxiomReport(report) })
   }
 
   const entries = files.flatMap((f) => f.entries)

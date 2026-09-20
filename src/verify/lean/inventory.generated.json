@@ -1,16 +1,17 @@
 {
   "sealedAt": "2026-09-20",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "4c848c0fdbada319",
+  "sourcesHash": "7cf53d67860ed936",
   "census": {
-    "theorems": 117,
-    "axiomFree": 68,
-    "standardAxioms": 49,
+    "theorems": 125,
+    "axiomFree": 75,
+    "standardAxioms": 50,
     "stubbed": 0
   },
   "files": [
     {
       "file": "Arrival.lean",
+      "compiled": true,
       "entries": [
         {
           "theorem": "Arrival.landed_iff",
@@ -70,6 +71,7 @@
     },
     {
       "file": "Automate.lean",
+      "compiled": true,
       "entries": [
         {
           "theorem": "Automate.step_never_lowers_confidence",
@@ -142,88 +144,50 @@
       ]
     },
     {
-      "file": "Erpax.lean",
+      "file": "Release.lean",
+      "compiled": true,
       "entries": [
         {
-          "theorem": "Erpax.tamper_changes_a_receipt",
+          "theorem": "Release.release_iff",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
         },
         {
-          "theorem": "Erpax.tamper_propagates",
+          "theorem": "Release.no_release_without_the_forge",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
         },
         {
-          "theorem": "Erpax.verifier_separates",
+          "theorem": "Release.no_release_off_the_verified_tip",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
         },
         {
-          "theorem": "Erpax.order_matters",
+          "theorem": "Release.no_release_of_released_content",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
         },
         {
-          "theorem": "Erpax.ratchet_never_rises",
+          "theorem": "Release.one_release_a_day",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
         },
         {
-          "theorem": "Erpax.ratchet_falls",
+          "theorem": "Release.the_green_path_releases",
           "axioms": [],
           "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Erpax.worse_tree_keeps_the_ceiling",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Erpax.mirror_is_an_involution",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Erpax.mirror_has_no_fixed_point",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Erpax.mirror_parity",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Erpax.readings_agree_when_the_check_ran",
-          "axioms": [
-            "propext"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Erpax.readings_disagree_exactly_when_it_could_not_run",
-          "axioms": [
-            "propext"
-          ],
-          "axiomFree": false,
           "stubbed": false
         }
       ]
     },
     {
       "file": "Ftl.lean",
+      "compiled": true,
       "entries": [
         {
           "theorem": "Ftl.address_never_loses",
@@ -320,7 +284,227 @@
       ]
     },
     {
+      "file": "Uuid.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Uuid.every_bit_has_exactly_one_band",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Uuid.program_never_touches_the_fixed_bits",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Uuid.message_never_touches_the_fixed_bits",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Uuid.the_program_is_sixteen_bits",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Uuid.the_message_is_one_hundred_six_bits",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Uuid.slot_round_trips",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Uuid.capabilities_round_trip",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Uuid.schema_round_trips",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Uuid.the_decode_loses_nothing",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Uuid.the_program_fits",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Cross.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Cross.a_failing_check_stops_the_doi",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cross.unmeasured_stops_the_doi",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cross.a_pending_push_stops_the_doi",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cross.the_green_chain_releases",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cross.a_crack_stops_the_ftl_claim",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cross.the_crack_premise_agrees",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cross.reuse_rests_on_a_stable_address",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cross.the_corpus_chain",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Erpax.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Erpax.tamper_changes_a_receipt",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.tamper_propagates",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.verifier_separates",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.order_matters",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.ratchet_never_rises",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.ratchet_falls",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.worse_tree_keeps_the_ceiling",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.mirror_is_an_involution",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.mirror_has_no_fixed_point",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.mirror_parity",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.readings_agree_when_the_check_ran",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Erpax.readings_disagree_exactly_when_it_could_not_run",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
       "file": "Harmonic.lean",
+      "compiled": true,
       "entries": [
         {
           "theorem": "Harmonic.mirror_is_an_involution",
@@ -397,7 +581,167 @@
       ]
     },
     {
+      "file": "Orchestrate.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Orchestrate.decomposition_is_complete",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Orchestrate.every_task_names_a_given_problem",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Orchestrate.convergence_requires_every_problem_settled",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Orchestrate.an_unsettled_problem_refuses_convergence",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Orchestrate.weak_results_do_not_settle",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Orchestrate.a_strong_result_settles",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Wave.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Wave.append_keeps_every_record",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Wave.append_only_grows",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Wave.publication_bounded",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Wave.append_never_publishes",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Wave.only_publishable_records_get_a_doi",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Wave.the_publishable_record_is_published",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Wave.the_unpublishable_record_is_not",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Wave.low_confidence_is_not_published",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Main.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "MillenniumProof.published_records_are_earned",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "MillenniumProof.convergence_is_earned",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "MillenniumProof.converged_loops_stay_converged",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "MillenniumProof.loops_never_lose_ground",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
       "file": "Mirror.lean",
+      "compiled": true,
       "entries": [
         {
           "theorem": "Duality.Mirror.phi_is_an_involution",
@@ -468,60 +812,8 @@
       ]
     },
     {
-      "file": "Orchestrate.lean",
-      "entries": [
-        {
-          "theorem": "Orchestrate.decomposition_is_complete",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Orchestrate.every_task_names_a_given_problem",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Orchestrate.convergence_requires_every_problem_settled",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Orchestrate.an_unsettled_problem_refuses_convergence",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Orchestrate.weak_results_do_not_settle",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Orchestrate.a_strong_result_settles",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        }
-      ]
-    },
-    {
       "file": "Order.lean",
+      "compiled": true,
       "entries": [
         {
           "theorem": "Order.set_root_is_order_free",
@@ -556,48 +848,8 @@
       ]
     },
     {
-      "file": "Release.lean",
-      "entries": [
-        {
-          "theorem": "Release.release_iff",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Release.no_release_without_the_forge",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Release.no_release_off_the_verified_tip",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Release.no_release_of_released_content",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Release.one_release_a_day",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Release.the_green_path_releases",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        }
-      ]
-    },
-    {
       "file": "Spacetime.lean",
+      "compiled": true,
       "entries": [
         {
           "theorem": "Spacetime.sq_lt",
@@ -725,189 +977,6 @@
             "propext",
             "Classical.choice",
             "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        }
-      ]
-    },
-    {
-      "file": "Uuid.lean",
-      "entries": [
-        {
-          "theorem": "Uuid.every_bit_has_exactly_one_band",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Uuid.program_never_touches_the_fixed_bits",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Uuid.message_never_touches_the_fixed_bits",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Uuid.the_program_is_sixteen_bits",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Uuid.the_message_is_one_hundred_six_bits",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Uuid.slot_round_trips",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Uuid.capabilities_round_trip",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Uuid.schema_round_trips",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Uuid.the_decode_loses_nothing",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Uuid.the_program_fits",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        }
-      ]
-    },
-    {
-      "file": "Wave.lean",
-      "entries": [
-        {
-          "theorem": "Wave.append_keeps_every_record",
-          "axioms": [
-            "propext"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Wave.append_only_grows",
-          "axioms": [
-            "propext"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Wave.publication_bounded",
-          "axioms": [
-            "propext"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Wave.append_never_publishes",
-          "axioms": [
-            "propext"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Wave.only_publishable_records_get_a_doi",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "Wave.the_publishable_record_is_published",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Wave.the_unpublishable_record_is_not",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        },
-        {
-          "theorem": "Wave.low_confidence_is_not_published",
-          "axioms": [],
-          "axiomFree": true,
-          "stubbed": false
-        }
-      ]
-    },
-    {
-      "file": "Main.lean",
-      "entries": [
-        {
-          "theorem": "MillenniumProof.published_records_are_earned",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "MillenniumProof.convergence_is_earned",
-          "axioms": [
-            "propext",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "MillenniumProof.converged_loops_stay_converged",
-          "axioms": [
-            "propext"
-          ],
-          "axiomFree": false,
-          "stubbed": false
-        },
-        {
-          "theorem": "MillenniumProof.loops_never_lose_ground",
-          "axioms": [
-            "propext"
           ],
           "axiomFree": false,
           "stubbed": false
