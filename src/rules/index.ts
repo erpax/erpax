@@ -265,7 +265,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // mirror — an assertion restating a literal its own module assigns ([[rules]]/mirror). 507 at
     // discovery, 55 now: 453 were address claims and became refutable against the filesystem
     // ([[atom]]/address). The residue is what no theorem derives from the tree — an `INDEX` of 5.
-    guardian({ axis: 'mirror', violations: mirroredAssertions(cwd).length, baseline: 55 }),
+    guardian({ axis: 'mirror', violations: mirroredAssertions(cwd).length, baseline: 54 }),
     // forge — a registered identifier (DOI/ORCID/ISBN/IBAN) built from local randomness
     // ([[rules]]/forge). Baseline 0 is a THEOREM, not a ratchet: there is no acceptable number of
     // forged provenance records. Three existed — all in functions that logged "[ZENODO] Publishing"
@@ -289,7 +289,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // agent/budget — the heaviest SKILL face, in bytes ([[quantum]]/budget). Context is RE-SENT, so a
     // byte in an orientation is billed once per turn for the life of the session; the corpus declares
     // a 50,000-byte ceiling that the injecting path never passes through. Ratchets DOWN from 65,117.
-    guardian({ axis: 'skill-face', violations: skillWeights(cwd)[0]?.bytes ?? 0, baseline: 65_117 }),
+    guardian({ axis: 'skill-face', violations: skillWeights(cwd)[0]?.bytes ?? 0, baseline: 64_553 }),
     // durable-object-export — a DO binds only as a NAMED EXPORT of the worker entry
     // ([[cloudflare]]/binding). workerd requires it and the failure is silent: the deploy succeeds,
     // the binding exists, and every call fails at runtime. worker.ts records that a side-effect
@@ -306,7 +306,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // copy — one body at two addresses ([[rules]]/copy). Content-addressed, so same bytes ⇒ same
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
     // written, which is the argument for a gate over a stated law. Ratchets from 44.
-    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 44 }),
+    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 19 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
     // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
     // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.
@@ -315,7 +315,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     guardian({
       axis: 'proof-accepted',
       violations: kernelPath() === null ? 0 : unacceptedProofs(cwd).length,
-      baseline: 4,
+      baseline: 1,
     }),
     // proof-reflexive — a theorem whose two sides are the SAME TEXT ([[proof]]/accepted). This
     // corpus wrote `chain rows 0 = chain rows 0` hours after gating that exact shape in TypeScript
