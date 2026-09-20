@@ -3,13 +3,13 @@ name: eu
 description: "Use when checking whether the pan-EU authorities erpax depends on have moved — VIES (the VAT-validation contract), the ECB currency set, the Peppol directory envelope, and the EU sanctions schema. Each probe asks a STABLE question so a moved address is real news, never the daily churn. CLI lane: erpax outward eu [--write]."
 atomPath: "outward/eu"
 coordinate: "outward/eu · 1/base · 40a3762c"
-contentUuid: "76114f9f-4be8-5fc7-8058-851dbeba1e4e"
+contentUuid: "7aec2f3a-e106-5673-a1fc-202e03289bbf"
 diamondUuid: "13ce4de8-db76-8d1e-a1f1-aed6e876e4a4"
 uuid: "40a3762c-4a7d-8c23-8ebb-8e018802801d"
 horo: 1
 typography:
   partition: outward
-  bondDegree: 37
+  bondDegree: 36
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence"
 bindings: []

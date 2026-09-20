@@ -3,13 +3,13 @@ name: diversity
 description: "Use when reasoning about diversity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: diversity
 coordinate: "diversity · 4/weave · 943f0d4f"
-contentUuid: "f2bd83e1-ec4f-5001-9ae1-e9d31616401a"
+contentUuid: "c2fa665e-48dd-5c5c-bff0-138196ecae45"
 diamondUuid: "ea442a1f-1398-8925-b881-81169c232f44"
 uuid: "943f0d4f-7625-8c38-b288-bbe143ccb0e3"
 horo: 4
 typography:
   partition: diversity
-  bondDegree: 38
+  bondDegree: 37
 standards:
   - Pielou (1966) The Measurement of Diversity in Different Types of Biological Collections
   - Shannon (1948) A Mathematical Theory of Communication — information entropy

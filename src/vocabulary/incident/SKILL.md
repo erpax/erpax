@@ -3,13 +3,13 @@ name: incident
 description: "Use when logging unplanned downtime, service interruptions, production stops, or safety events — the adverse event log with root-cause, impact, resolution, and prevention tracking."
 atomPath: "vocabulary/incident"
 coordinate: "vocabulary/incident · 7/descent · 1b1c897e"
-contentUuid: "3afbb8c2-fb78-5163-8089-75b264c5d1fe"
+contentUuid: "0a1cc9d3-9190-5e5e-a1d4-b03b9ce9c7cb"
 diamondUuid: "00833fb5-c589-8ac6-ad98-252d1d511681"
 uuid: "1b1c897e-61be-87d9-930b-a528fb36ab92"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 25
+  bondDegree: 24
 standards: []
 bindings: []
 signatures:

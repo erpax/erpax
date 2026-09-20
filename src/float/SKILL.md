@@ -1,3 +1,38 @@
+---
+name: float
+description: "Use when reasoning about float — Four institutions, four vocabularies, **one structure**: something opens with a float, signed movements pass through it, and at close somebody **counts it in discrete units**."
+atomPath: float
+coordinate: "float · 1/base · 9cffe9dd"
+contentUuid: "573ffc23-173d-5c07-8baa-ed7bcc28608c"
+diamondUuid: "24520dac-25ca-8d07-81db-ca4d4cf11fcb"
+uuid: "9cffe9dd-dc06-8951-9c10-39faf1121b74"
+horo: 1
+typography:
+  partition: float
+  bondDegree: 27
+standards:
+  - ISA 501 — physical count as audit evidence
+  - ISO 4217 — currency and minor units
+bindings: []
+signatures:
+  computationUuid: "fe13b8a7-e047-8941-a77b-f0156aa0e999"
+  stages:
+    - stage: path
+      stageUuid: "3401c4d4-a486-88d7-8bcd-9fec1e26e0f1"
+    - stage: trinity
+      stageUuid: "1e8614e6-1e0f-887a-9106-e40453e9c093"
+    - stage: boundary
+      stageUuid: "93374673-a93b-8c41-a758-1d72b432f907"
+    - stage: links
+      stageUuid: "5772c4ef-61c5-8df5-a90f-7c44dc74f79a"
+    - stage: horo
+      stageUuid: "d786cca4-15ac-83b2-a021-3e7ab4640cac"
+    - stage: seal
+      stageUuid: "f4233c7b-9f73-8321-8a4a-0a4e07cdb46a"
+    - stage: uuid
+      stageUuid: "ab49d039-02ee-8bf2-a482-0131e728153f"
+version: 2
+---
 # float — a drawer, a chip tray, an armoury and a public till are one control
 
 Four institutions, four vocabularies, **one structure**: something opens with a float, signed

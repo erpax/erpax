@@ -1,3 +1,36 @@
+---
+name: orphan
+description: "Use when reasoning about orphan — Removing a dead export does not remove what it used. The imports it named and the inert locals it read stay, referenced by nothing — and **nothing sees them**."
+atomPath: "rules/orphan"
+coordinate: "rules/orphan · 8/crest · 9efd33c6"
+contentUuid: "058a45d8-54bd-5182-aa1c-2b314f15dda4"
+diamondUuid: "4f130288-a5bb-8859-9c6f-78b238950a84"
+uuid: "9efd33c6-1798-8979-8470-db4030a78ed8"
+horo: 8
+typography:
+  partition: rules
+  bondDegree: 9
+standards: []
+bindings: []
+signatures:
+  computationUuid: "6e157079-f401-8563-8226-62653bf364c1"
+  stages:
+    - stage: path
+      stageUuid: "398d929d-7933-829e-a755-b36215391c81"
+    - stage: trinity
+      stageUuid: "a229b173-66b0-80b9-86a7-aae601b5a99a"
+    - stage: boundary
+      stageUuid: "1bffc2f7-5bc2-8b19-ac2e-f9b668b81949"
+    - stage: links
+      stageUuid: "34d66832-e65a-879c-a588-0d51437b78f3"
+    - stage: horo
+      stageUuid: "93564616-15ff-83a7-84e8-dfecb6426954"
+    - stage: seal
+      stageUuid: "f92fcc89-28c5-89bf-90c3-2e513f0bebe8"
+    - stage: uuid
+      stageUuid: "458cb5c0-2a2e-88b3-9260-df62f6d926d6"
+version: 2
+---
 # rules/orphan — what a purge leaves behind, cut by the tree instead of by hand
 
 Removing a dead export does not remove what it used. The imports it named and the inert locals it

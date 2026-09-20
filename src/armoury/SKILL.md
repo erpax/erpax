@@ -1,3 +1,38 @@
+---
+name: armoury
+description: "Use when reasoning about armoury — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount."
+atomPath: armoury
+coordinate: "armoury · 8/crest · 256d017e"
+contentUuid: "c3b3b629-9a02-57f7-993b-3f40087036a3"
+diamondUuid: "d7a7bf7a-10b2-8fff-b137-6f2fdde2c67e"
+uuid: "256d017e-4e17-84e9-b341-2216cb7d39d9"
+horo: 8
+typography:
+  partition: armoury
+  bondDegree: 13
+standards:
+  - ISA 501 — physical count as audit evidence
+  - "ISO/IEC 27001 A.5.9 — inventory of assets; A.7.9 — assets off-premises"
+bindings: []
+signatures:
+  computationUuid: "6d3bdfb0-4294-850c-887d-0b64e9b161d7"
+  stages:
+    - stage: path
+      stageUuid: "ec91cc33-b724-825a-a25e-69fbc14fe5ee"
+    - stage: trinity
+      stageUuid: "92f64803-deab-81fa-bd72-5ccc6e166a4b"
+    - stage: boundary
+      stageUuid: "c40ac300-8f7e-8a98-be76-ae8605dfd332"
+    - stage: links
+      stageUuid: "79c7ce91-b6df-80cd-8618-094094ff63d1"
+    - stage: horo
+      stageUuid: "5dd850fc-789c-8c7f-ba50-6b6493bdc378"
+    - stage: seal
+      stageUuid: "57b3e34b-7299-8042-95c4-4993df264a28"
+    - stage: uuid
+      stageUuid: "488563bb-5b09-825d-a3da-63a851a296f1"
+version: 2
+---
 # armoury — the same control as a cash drawer, with the dial removed
 
 A weapon or a round is counted in **items**, so the unit set is `{1}` and the total is a headcount.

@@ -3,7 +3,7 @@ name: localization
 description: "Use when reasoning about localization — The corpus ships 24 EU official languages plus , , , , and . That list is DECLARED here in the open — no theorem derives which languages a business serves — and everything else…"
 atomPath: "i18n/localization"
 coordinate: "i18n/localization · 2/share · 9bf0e368"
-contentUuid: "33e2e0f0-bf8c-592e-a02c-a4895fd4f613"
+contentUuid: "4d318ebf-38e3-507e-92d1-940ec54f9ba0"
 diamondUuid: "5370ce78-7d66-8959-a0db-77bc49c0a30d"
 uuid: "9bf0e368-d691-863e-9707-a256bf03dce4"
 horo: 2
@@ -22,7 +22,7 @@ standards:
   - "Unicode-CLDR locale-data"
 bindings: []
 signatures:
-  computationUuid: "dc6da075-2cf4-81df-865a-d48a0f3cf300"
+  computationUuid: "1e073dc1-284a-8b05-8b00-189727686542"
   stages:
     - stage: path
       stageUuid: "6d15eb7d-8d5c-8545-a81e-fd5318a4c926"
@@ -35,7 +35,7 @@ signatures:
     - stage: horo
       stageUuid: "1aa938ba-e0c5-8d9e-8b4e-130596173f7f"
     - stage: seal
-      stageUuid: "23406983-463c-8e1f-899e-36d439ccf648"
+      stageUuid: "fa8e2f17-1c91-8e1d-bd90-916cf92e6442"
     - stage: uuid
       stageUuid: "d77e5c3a-3ba8-8487-be48-ebec8aab7a79"
 version: 2

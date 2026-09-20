@@ -533,6 +533,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "allow/public/read/tenant"
   },
   {
+    "atom": "aml",
+    "name": "aml",
+    "description": "Use when reasoning about aml — Laundering is an offence **a court finds**. A suspicious-activity report is an obligation **a rule triggers**.",
+    "path": "aml"
+  },
+  {
     "atom": "analytics",
     "name": "analytics",
     "description": "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them.",
@@ -645,6 +651,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "argument",
     "description": "Use when measuring an argument's quality — a claim and its critique by the same rule. An argument is INVARIANT if it grounds in evidence/falsifiability/theorem (survives inversion) or FRAGILE if it rests on authority — the person, the consensus, the strangeness of the conclusion (breaks under inversion). Symmetric: lazy debunks fail as badly as the claims they debunk. Anti-fallacy: a fragile critique never makes the claim true.",
     "path": "argument"
+  },
+  {
+    "atom": "armoury",
+    "name": "armoury",
+    "description": "Use when reasoning about armoury — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount.",
+    "path": "armoury"
   },
   {
     "atom": "arrival",
@@ -1497,6 +1509,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "validator",
     "description": "Use when reasoning about validator — Case balance law—charge and defence must balance into judgment before sealing",
     "path": "cases/validator"
+  },
+  {
+    "atom": "casino",
+    "name": "casino",
+    "description": "Use when reasoning about casino — A gaming table opens with a chip float, takes and pays through the session, and is counted at close.",
+    "path": "casino"
   },
   {
     "atom": "cassette",
@@ -2947,7 +2965,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "energy",
     "name": "energy",
-    "description": "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
+    "description": "Use when reasoning about energy — Two things live here, and the second is the reason the atom exists.",
     "path": "energy"
   },
   {
@@ -3345,6 +3363,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "fixpoint",
     "description": "Use when the measurer is inside the system it measures — a self-applied measure either REFUTES itself or is a FIXED POINT, with no third outcome. Proven by throughVoid(5)=5 (the void pivot) and auditAuditors()=[] (the auditor passes its own audit). The paradox resolves computationally, via fixed-point math, not physics.",
     "path": "fixpoint"
+  },
+  {
+    "atom": "float",
+    "name": "float",
+    "description": "Use when reasoning about float — Four institutions, four vocabularies, **one structure**: something opens with a float, signed movements pass through it, and at close somebody **counts it in discrete units**.",
+    "path": "float"
   },
   {
     "atom": "fold",
@@ -3831,6 +3855,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "humandesign",
     "description": "Use when mapping Human Design onto erpax — its real combinatorics (64 gates = 2^6 I Ching hexagrams, 6 lines, 9 centers, 12 profiles) sent to the math, with the divination layer named as convention and never claimed.",
     "path": "humandesign"
+  },
+  {
+    "atom": "i18n",
+    "name": "i18n",
+    "description": "Use when reasoning about i18n — A message bundle per locale is the easy half. The half that rots is the **tag**: , , , are four spellings a human will type and one thing BCP-47 means.",
+    "path": "i18n"
   },
   {
     "atom": "harvest",
@@ -4431,6 +4461,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "karma",
     "description": "Use when scoring moral weight as entropy — creating order is good karma, destroying it (waste) is bad; every move is a balanced double-entry (order debited, entropy credited), and karma is the running net of order created over destroyed.",
     "path": "karma"
+  },
+  {
+    "atom": "kyc",
+    "name": "kyc",
+    "description": "Use when reasoning about kyc — There is a function this atom refuses to contain, and naming the refusal is the point: **nothing here decides whether a customer is laundering money.** That is not decidable, and…",
+    "path": "kyc"
   },
   {
     "atom": "law",
@@ -6041,6 +6077,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "properties/spaces"
   },
   {
+    "atom": "provenance",
+    "name": "provenance",
+    "description": "Use when reasoning about provenance — Measured 2026-09-20, in the literature a bank would price remediation from:",
+    "path": "provenance"
+  },
+  {
     "atom": "provider",
     "name": "provider",
     "description": "Use when wiring the app-wide React context tree — the one place theme, computed-CSS and header-theme providers wrap the frontend. A client provider is imported from its own module, never through a barrel that also exports Node fs matter: the @/css barrel exports computeCssDiamond, and pulling it into the browser chunk 500s the Worker homepage.",
@@ -7051,7 +7093,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "risk",
     "name": "risk",
-    "description": "Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy.",
+    "description": "Use when reasoning about risk — Nothing here predicts a default. Credit risk is a **forecast**, and a function returning one would be a number a bank could point at with nothing behind it — the same refusal kyc…",
     "path": "risk"
   },
   {
@@ -7225,7 +7267,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "rotation",
     "name": "rotation",
-    "description": "Use when planning the multi-year non-repetition of a crop family in the same ground — crop rotation breaks pest/disease cycles and balances nutrient draw by never returning a family to a bed sooner than ~3–4 years. The rule/constraint over the planting sequence (distinct from the bare sequence): grouped by botanical family, alternating heavy feeders, legumes, and roots.",
+    "description": "Use when reasoning about rotation — A merkaba is two interpenetrating tetrahedra turning opposite ways. Projected along the shared axis it is a **hexagram**: two equilateral triangles, offset by 60°.",
     "path": "rotation"
   },
   {
@@ -7389,6 +7431,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "mirror",
     "description": "Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it.",
     "path": "rules/mirror"
+  },
+  {
+    "atom": "orphan",
+    "name": "orphan",
+    "description": "Use when reasoning about orphan — Removing a dead export does not remove what it used. The imports it named and the inert locals it read stay, referenced by nothing — and **nothing sees them**.",
+    "path": "rules/orphan"
   },
   {
     "atom": "probe",
@@ -8833,7 +8881,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "staffing",
     "name": "staffing",
-    "description": "Use when reasoning about staffing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when reasoning about staffing — Six atoms already computed the five faces of a position. **Nothing joined them.**",
     "path": "staffing"
   },
   {
@@ -9613,7 +9661,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "teller",
     "name": "teller",
-    "description": "Use when reasoning about teller as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when reasoning about teller — Everything structural — the derived total, the signed variance, the void-on-illegal-count rule — lives in float, because a chip tray, an armoury and a public till obey the same…",
     "path": "teller"
   },
   {
@@ -10235,6 +10283,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "travel"
   },
   {
+    "atom": "treasury",
+    "name": "treasury",
+    "description": "Use when reasoning about treasury — A government cash office reconciles exactly as a bank drawer does, so it mounts float unchanged.",
+    "path": "treasury"
+  },
+  {
     "atom": "treatment",
     "name": "treatment",
     "description": "Use when reasoning about treatment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -10845,6 +10899,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "verification",
     "description": "Use when proving a claim by content-uuid — the verifier re-derives the uuid and matches; because the token IS the content's identity, any change requires re-verification by architecture (the ACME DNS-01 pattern).",
     "path": "verification"
+  },
+  {
+    "atom": "verify",
+    "name": "verify",
+    "description": "Use when reasoning about verify — Every other gate in this corpus is a program this corpus wrote, checking a property this corpus chose.",
+    "path": "verify"
   },
   {
     "atom": "inventory",

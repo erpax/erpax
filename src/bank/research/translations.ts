@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deep-researching global banking through chat waves at no cost — sealed ISO 20022 · IBAN/BIC · SEPA · PSD2 · SWIFT · AML · reconciliation corpus; emit develop waves for related atoms (pain.002 · camt.054 · leftovers). Uses quantum/ftl; is not the FTL core.",
-    "uuid": "88d725a4-8d89-8ce0-aae4-c9b4a3b198a8",
+    "uuid": "d78838a5-d153-8d53-971f-652cc8e75a9a",
     "words": [
       "use",
       "when",

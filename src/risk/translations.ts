@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "risk",
-    "uuid": "fdc08b76-cdc9-85a7-aed1-da1182f68ec5",
+    "uuid": "fbd9eb2e-831d-88ff-bdef-d0cd4f893583",
     "words": [
       "risk"
     ],
@@ -17,32 +17,49 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy.",
-    "uuid": "fe0819ed-0fac-8bb1-af46-36f7e746e1f3",
+    "source": "Use when reasoning about risk — Nothing here predicts a default. Credit risk is a **forecast**, and a function returning one would be a number a bank could point at with nothing behind it — the same refusal kyc…",
+    "uuid": "6acc4810-cddb-81af-a32e-b686b56d7ad6",
     "words": [
       "use",
       "when",
-      "recording",
-      "operational",
-      "risks",
-      "dependencies",
-      "or",
-      "blocking",
-      "issues",
-      "supplier",
+      "reasoning",
+      "about",
       "risk",
-      "technical",
+      "nothing",
+      "here",
+      "predicts",
+      "a",
+      "default",
+      "credit",
       "risk",
-      "market",
-      "risk",
-      "the",
-      "threat",
+      "is",
+      "a",
+      "forecast",
+      "and",
+      "a",
+      "function",
+      "returning",
+      "one",
+      "would",
+      "be",
+      "a",
+      "number",
+      "a",
+      "bank",
+      "could",
+      "point",
+      "at",
       "with",
-      "mitigation",
-      "strategy"
+      "nothing",
+      "behind",
+      "it",
+      "the",
+      "same",
+      "refusal",
+      "kyc"
     ],
     "values": {
-      "en": "Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy."
+      "en": "Use when reasoning about risk — Nothing here predicts a default. Credit risk is a **forecast**, and a function returning one would be a number a bank could point at with nothing behind it — the same refusal kyc…"
     }
   }
 ]

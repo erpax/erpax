@@ -3,7 +3,7 @@ name: request
 description: Use when reasoning about the i18n request — locale and message resolution.
 atomPath: "i18n/request"
 coordinate: "i18n/request · 8/crest · 2293a8b3"
-contentUuid: "7d9d8a09-a3d0-554a-82d3-bb9d578e6c2c"
+contentUuid: "7146152b-0c28-54e4-87d1-2efccb863116"
 diamondUuid: "60558644-aa80-80e4-b92c-0eb73f178ec6"
 uuid: "2293a8b3-ea28-84da-b5b6-a94982136ba2"
 horo: 8
@@ -19,7 +19,7 @@ standards:
   - "RFC-5646"
 bindings: []
 signatures:
-  computationUuid: "5e700043-bb2d-8a79-b12b-2e2c7da79d14"
+  computationUuid: "6b89ad66-627c-8d8a-be05-d9f4fbf3e440"
   stages:
     - stage: path
       stageUuid: "4fbe213c-27d4-8027-b25f-0050955cf89d"
@@ -32,7 +32,7 @@ signatures:
     - stage: horo
       stageUuid: "2c1e94c7-9165-847d-9ceb-15ba8a926686"
     - stage: seal
-      stageUuid: "191db384-ea6e-8c67-a9d5-deafc0e58c23"
+      stageUuid: "45c2aa0a-a3a1-8b64-8d7b-264aab95c696"
     - stage: uuid
       stageUuid: "d55ee770-9202-84f3-9a20-8e6cab4379cf"
 version: 2

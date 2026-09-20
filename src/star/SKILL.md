@@ -3,13 +3,13 @@ name: star
 description: "Use when reasoning about star as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: star
 coordinate: "star · 7/descent · daa77652"
-contentUuid: "843948da-0f65-5c7f-9273-e7a5cedd7a2a"
+contentUuid: "7d828f48-2dc1-5ca8-9b8f-76737d38110a"
 diamondUuid: "7e2b08f1-c873-8227-a00b-1852dd81b964"
 uuid: "daa77652-7600-8422-8871-8bbd993e4c8b"
 horo: 7
 typography:
   partition: star
-  bondDegree: 50
+  bondDegree: 49
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

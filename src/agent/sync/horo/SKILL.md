@@ -3,13 +3,13 @@ name: horo
 description: "Use when reasoning about horo — horo — a whole tribe (a `team`) joins the society circle."
 atomPath: "agent/sync/horo"
 coordinate: "agent/sync/horo · 5/round · 65cad7fe"
-contentUuid: "addbd13b-23b8-5633-9286-168567bf0524"
-diamondUuid: "863a145c-f009-80d2-9a2d-34aaa0683077"
+contentUuid: "401ef71b-e99b-54d5-82c5-7fb702b6c80b"
+diamondUuid: "c1d0e778-07a5-802d-8b42-ff03f690b38c"
 uuid: "65cad7fe-7ed7-8792-948c-3b736d80dcaa"
 horo: 5
 typography:
   partition: agent
-  bondDegree: 532
+  bondDegree: 535
 standards:
   - "ISO-27001"
   - "ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation (room per tenant)"
@@ -20,7 +20,7 @@ standards:
   - "W3C-ActivityPub"
 bindings: []
 signatures:
-  computationUuid: "b6c837ed-ed3c-8a1a-88df-4489b22decbc"
+  computationUuid: "4bb844ed-5b5b-8291-bdd3-ddb0f4d9d04d"
   stages:
     - stage: path
       stageUuid: "660dd519-c090-8114-a8dd-a7487e5a3445"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "d993a55f-d028-8ec8-acd3-f813f4f8078e"
     - stage: horo
-      stageUuid: "4fec67dc-1532-81ca-bb17-83f40c535928"
+      stageUuid: "16bf5cdc-20c6-81f1-9052-504c55a4d731"
     - stage: seal
       stageUuid: "f4641beb-297e-8371-98b9-982af3ce4628"
     - stage: uuid
-      stageUuid: "7edaad07-25bb-8b97-82f9-5f457d2669d1"
+      stageUuid: "f203baa0-e643-8908-813b-466dff10f04d"
 version: 2
 ---
 # agent/sync/horo

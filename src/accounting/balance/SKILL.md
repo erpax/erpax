@@ -3,17 +3,17 @@ name: balance
 description: Use when reasoning about balance — Debit and credit meet in balance; every fold meets the same law at seal.
 atomPath: "accounting/balance"
 coordinate: "accounting/balance · 5/round · 3ae06e20"
-contentUuid: "11a7d116-4b9c-538c-8bf0-4903b38dbe93"
-diamondUuid: "b7f3b963-bb80-8593-85c2-dd74ca03a371"
+contentUuid: "c20f7f04-6ba3-5608-a0a5-1e3504884bad"
+diamondUuid: "7638f222-cd19-8425-a585-b7c78ecc915f"
 uuid: "3ae06e20-6d02-881e-b09a-c3fb9085a590"
 horo: 5
 typography:
   partition: accounting
-  bondDegree: 714
+  bondDegree: 711
 standards: []
 bindings: []
 signatures:
-  computationUuid: "585c131c-45d2-8378-bc79-2f06f5b995f0"
+  computationUuid: "34816f81-2052-874a-a6cf-14a25d3cb9ad"
   stages:
     - stage: path
       stageUuid: "67d376fa-76d2-86cc-9e6a-91663d7d0d7a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c15f90b8-0277-8fc0-b31a-af8321177416"
     - stage: horo
-      stageUuid: "da3b4b1f-5081-8eb7-b891-7a185e341de9"
+      stageUuid: "4e554c5b-557a-8b0a-b304-4050f62b0b6c"
     - stage: seal
       stageUuid: "d112f573-762f-8a00-a6d2-f7fc0c1514ac"
     - stage: uuid
-      stageUuid: "98bf1e3a-718d-8d56-9855-5ed1fa050f0c"
+      stageUuid: "ea26c7ee-c367-84c9-80ae-e8074af0f1e6"
 version: 2
 ---
 # accounting/balance

@@ -1,3 +1,50 @@
+---
+name: i18n
+description: "Use when reasoning about i18n — A message bundle per locale is the easy half. The half that rots is the **tag**: , , , are four spellings a human will type and one thing BCP-47 means."
+atomPath: i18n
+coordinate: "i18n · 7/descent · f7892520"
+contentUuid: "e908bbf1-c0e7-5581-8945-67c0d1b5d3cf"
+diamondUuid: "a82ea79f-1433-875e-aa01-9fba9e72ef47"
+uuid: "f7892520-6f5a-8536-9188-f03126f61a11"
+horo: 7
+typography:
+  partition: i18n
+  bondDegree: 18
+standards:
+  - "4647 matching-of-language-tags"
+  - "5646 tags-for-identifying-languages"
+  - "8259 json"
+  - "BCP-47 language-tag"
+  - "ECMA-402"
+  - "ECMA-402 internationalization-api"
+  - "EU-1958"
+  - "RFC-3986"
+  - "RFC-5646"
+  - "RFC-7231"
+  - "RFC-8259"
+  - "Unicode-CLDR"
+  - "Unicode-CLDR locale-data"
+  - "W3C Internationalization-Best-Practices"
+bindings: []
+signatures:
+  computationUuid: "2ea33c81-542e-88e5-becb-168ba13be41f"
+  stages:
+    - stage: path
+      stageUuid: "c9d27647-6c4b-80d0-8b9a-a06fd2688259"
+    - stage: trinity
+      stageUuid: "f88e7559-dab2-8ba9-9c12-1863b1aa274c"
+    - stage: boundary
+      stageUuid: "f06db577-f2c1-8c3a-8533-6a3fb3de7cfa"
+    - stage: links
+      stageUuid: "652f2978-9c42-871f-a152-04eb5c88b5a7"
+    - stage: horo
+      stageUuid: "168421b1-ffcb-8afa-a8fc-e0261ab6c26b"
+    - stage: seal
+      stageUuid: "7369c3fb-6c15-8048-9330-941bc61ffedb"
+    - stage: uuid
+      stageUuid: "ad62b0c1-5353-84aa-b165-fc15237edf65"
+version: 2
+---
 # i18n — 35 locales are one bundle, and the locale tag is a standard, not a string
 
 A message bundle per locale is the easy half. The half that rots is the **tag**: `bg`, `bg-BG`,

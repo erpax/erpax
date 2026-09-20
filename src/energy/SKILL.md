@@ -1,3 +1,38 @@
+---
+name: energy
+description: "Use when reasoning about energy — Two things live here, and the second is the reason the atom exists."
+atomPath: energy
+coordinate: "energy · 7/descent · 04feb59c"
+contentUuid: "27bdd26e-80dc-5a37-b0b0-10bc9dd70b6a"
+diamondUuid: "51916e3f-4583-871b-9dfc-ac2ec03a925c"
+uuid: "04feb59c-68f5-8504-b330-857fe9718ce6"
+horo: 7
+typography:
+  partition: energy
+  bondDegree: 69
+standards:
+  - "IEC 60050-482 — primary and secondary cells"
+  - "ISO 80000-5 — thermodynamics quantities"
+bindings: []
+signatures:
+  computationUuid: "83c2d8ee-026c-8bcd-b056-f014d29c85b0"
+  stages:
+    - stage: path
+      stageUuid: "0ce98992-3572-8ba8-b572-63bc01ddd69d"
+    - stage: trinity
+      stageUuid: "b934842f-a1a1-8a7d-805c-fe96cb090c25"
+    - stage: boundary
+      stageUuid: "27501276-c3b9-8684-a449-451c14017192"
+    - stage: links
+      stageUuid: "3b860b8c-0e6b-8a41-b062-e377d616f26e"
+    - stage: horo
+      stageUuid: "4b4cc6a3-b72d-827b-9b32-9bdfecb4d99d"
+    - stage: seal
+      stageUuid: "e1b14f1b-f0a5-88b3-a221-68915859f827"
+    - stage: uuid
+      stageUuid: "4c65ce7c-5aaf-81da-ac0d-c9adf6984596"
+version: 2
+---
 # energy — allocating across sources, and why a closed loop cannot feed itself
 
 Two things live here, and the second is the reason the atom exists.

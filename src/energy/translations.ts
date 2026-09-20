@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "energy",
-    "uuid": "ad49f773-f142-8158-9d3a-fbf1e34769f6",
+    "uuid": "04feb59c-68f5-8504-b330-857fe9718ce6",
     "words": [
       "energy"
     ],
@@ -17,36 +17,30 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
-    "uuid": "94f678ae-1198-86d8-83f9-b80eddc3519c",
+    "source": "Use when reasoning about energy — Two things live here, and the second is the reason the atom exists.",
+    "uuid": "ae957354-e64f-828c-98e1-cbcda67c56bd",
     "words": [
       "use",
       "when",
       "reasoning",
       "about",
       "energy",
-      "properties",
-      "that",
-      "take",
-      "energy",
-      "as",
-      "values",
-      "are",
-      "of",
+      "two",
+      "things",
+      "live",
+      "here",
+      "and",
       "the",
-      "form",
-      "lt",
-      "number",
-      "gt",
-      "lt",
-      "energy",
-      "unit",
-      "of",
-      "measure",
-      "gt"
+      "second",
+      "is",
+      "the",
+      "reason",
+      "the",
+      "atom",
+      "exists"
     ],
     "values": {
-      "en": "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'."
+      "en": "Use when reasoning about energy — Two things live here, and the second is the reason the atom exists."
     }
   }
 ]

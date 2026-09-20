@@ -3,13 +3,13 @@ name: automated
 description: "Use when reasoning about automated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/automated"
 coordinate: "vocabulary/automated · 7/descent · 325a1ac5"
-contentUuid: "817f9f01-c935-578c-b407-ca0ff5659d7e"
+contentUuid: "9099c8b0-40a3-5046-be9b-af0b3d7f9c87"
 diamondUuid: "a5327248-423d-882c-aeb9-f1919a554dc1"
 uuid: "325a1ac5-73ed-8fcc-84ad-c602a3ef5ef5"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 16
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

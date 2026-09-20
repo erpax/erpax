@@ -3,7 +3,7 @@ name: routing
 description: "Use when reasoning about routing — is the whole claim. Every URL carries its locale — , — so the language a page renders in is a fact of the address, not a negotiation between a cookie, an header and a pathname…"
 atomPath: "i18n/routing"
 coordinate: "i18n/routing · 4/weave · c997c791"
-contentUuid: "3e26a5a9-8100-5b72-a0bd-232352e0df04"
+contentUuid: "9f67a072-d4ff-50fe-b4b2-ea8b9bacc134"
 diamondUuid: "fc83425f-88a4-87be-9c2f-58520e2a7453"
 uuid: "c997c791-f8f2-8aec-bb3e-d8e79f9ea704"
 horo: 4
@@ -20,7 +20,7 @@ standards:
   - W3C URL Living Standard
 bindings: []
 signatures:
-  computationUuid: "36b59f91-1514-86d5-a009-3ef0d156475b"
+  computationUuid: "fe64b7ae-3f78-8017-9038-0ef4456fa5e2"
   stages:
     - stage: path
       stageUuid: "bf0235a1-7aaa-866e-8fb1-bcff2ea6730b"
@@ -33,7 +33,7 @@ signatures:
     - stage: horo
       stageUuid: "86e4ae3d-a8c6-89c3-9ca6-0f5b4ca72e96"
     - stage: seal
-      stageUuid: "c22806a5-d489-81b0-9c72-7d0b437060cb"
+      stageUuid: "a0b6063e-6990-8e5a-bde1-1e83b6864419"
     - stage: uuid
       stageUuid: "dab7b4db-cbb6-8902-821a-45a18e1797f1"
 version: 2

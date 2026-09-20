@@ -1,3 +1,38 @@
+---
+name: kyc
+description: "Use when reasoning about kyc — There is a function this atom refuses to contain, and naming the refusal is the point: **nothing here decides whether a customer is laundering money.** That is not decidable, and…"
+atomPath: kyc
+coordinate: "kyc · 5/round · 713ab1da"
+contentUuid: "16ec9dd1-2be6-52fa-9566-fcc53b600083"
+diamondUuid: "baa7b1fa-6000-8d4a-95bd-c0c9d297e133"
+uuid: "713ab1da-92f9-8c43-bf92-7ca805860760"
+horo: 5
+typography:
+  partition: kyc
+  bondDegree: 13
+standards:
+  - "EU 2015/849 (AMLD4) as amended by EU 2018/843 (AMLD5) — customer due diligence"
+  - "FATF Recommendations 10 · 12 · 22 — CDD, politically exposed persons, DNFBPs"
+bindings: []
+signatures:
+  computationUuid: "77c226da-aae4-8b80-8f75-550310f06906"
+  stages:
+    - stage: path
+      stageUuid: "2430b177-8a0e-80e0-8f91-9f3dc2051443"
+    - stage: trinity
+      stageUuid: "d63ae42b-784c-8570-9315-61c356f838c4"
+    - stage: boundary
+      stageUuid: "2ff6ff8d-f1bb-83cf-b34f-ce5ef72dbeac"
+    - stage: links
+      stageUuid: "5234cc32-6553-8bd6-a777-01e25d667fb1"
+    - stage: horo
+      stageUuid: "369cad75-dce7-810b-8edf-4dd31b57dfc4"
+    - stage: seal
+      stageUuid: "4690d932-5152-820f-ba0a-105ed880af65"
+    - stage: uuid
+      stageUuid: "d0e8a401-706e-8b30-8752-db0983c59e91"
+version: 2
+---
 # kyc — the diligence the law requires, never a verdict on the customer
 
 There is a function this atom refuses to contain, and naming the refusal is the point: **nothing

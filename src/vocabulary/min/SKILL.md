@@ -3,13 +3,13 @@ name: min
 description: "Use when reasoning about min as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/min"
 coordinate: "vocabulary/min · 5/round · 96ddc740"
-contentUuid: "6ec286a8-263a-5dcd-af8f-44a2601529df"
+contentUuid: "b6d4682d-75cd-5ae7-95d7-107a1e78889f"
 diamondUuid: "eb783eac-a2b6-80e5-86f4-2b5ab50e8324"
 uuid: "96ddc740-98c7-8320-8f01-0d418e15028a"
 horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 52
+  bondDegree: 51
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

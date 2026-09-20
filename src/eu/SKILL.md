@@ -3,13 +3,13 @@ name: eu
 description: "Use when reasoning about eu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: eu
 coordinate: "eu · 5/round · cbdc854b"
-contentUuid: "b16f8da2-b4ed-5320-912e-0c501fd9ec72"
+contentUuid: "e0dba8da-a854-52ba-b4d3-794731eafe5b"
 diamondUuid: "38603f0c-e059-824c-bf50-a10892f531fa"
 uuid: "cbdc854b-22c8-84cd-a613-76c579fefaf6"
 horo: 5
 typography:
   partition: eu
-  bondDegree: 37
+  bondDegree: 36
 standards:
   - "EU-AI-Act"
   - "EU-CSDDD-2024/1760"

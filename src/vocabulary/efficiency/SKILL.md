@@ -3,13 +3,13 @@ name: efficiency
 description: "Use when reasoning about efficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/efficiency"
 coordinate: "vocabulary/efficiency · 2/share · d0576edf"
-contentUuid: "87d351dd-8748-5183-ac20-081ae1e0392e"
+contentUuid: "8622f6d8-221a-5123-b1b5-a9cbe4f11ed6"
 diamondUuid: "a2cc4629-2d8c-86ef-bb59-81c8d4f38777"
 uuid: "d0576edf-eb8b-8bb0-bf71-5898f51e522d"
 horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 66
+  bondDegree: 65
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

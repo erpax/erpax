@@ -3,13 +3,13 @@ name: max
 description: "Use when reasoning about max as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/max"
 coordinate: "vocabulary/max · 8/crest · b1899e7d"
-contentUuid: "29dac1ed-4d56-5735-8d81-5380cc01cd9b"
+contentUuid: "ab914bfa-143a-59b9-ba42-8baaaab0b85c"
 diamondUuid: "3da3861a-f4ad-8ec1-948f-47fdb614d94f"
 uuid: "b1899e7d-cb32-89b8-9350-1f2aa30971bf"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 52
+  bondDegree: 51
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

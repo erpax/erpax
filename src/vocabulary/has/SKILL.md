@@ -3,13 +3,13 @@ name: has
 description: "Use when reasoning about has as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/has"
 coordinate: "vocabulary/has · 4/weave · 7f6012ca"
-contentUuid: "cc8e3c14-9670-5ab5-aa0d-053145858738"
+contentUuid: "9915ae40-7d02-5109-a273-75b06ebb4c2e"
 diamondUuid: "cd729c4c-de30-8e9e-9fd6-d23cccd9f1fb"
 uuid: "7f6012ca-d16f-8d19-a009-2985d83e82a4"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 225
+  bondDegree: 224
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

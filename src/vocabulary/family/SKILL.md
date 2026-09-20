@@ -3,13 +3,13 @@ name: family
 description: "Use when grouping crops by botanical family — the rank (Brassicaceae, Solanaceae, Cucurbitaceae, Apiaceae, Fabaceae, Asteraceae, Amaranthaceae, Alliaceae, Poaceae) that shares pests, diseases, and nutrient demands, making it the practical unit of crop rotation. The taxonomy rank that carries pest/fertility inheritance; same family ⇒ must not follow itself in a bed."
 atomPath: "vocabulary/family"
 coordinate: "vocabulary/family · 2/share · 46d3c43a"
-contentUuid: "2d639bac-3d49-5559-b842-b8653302353c"
+contentUuid: "7fd7fcf6-c831-5702-9d16-b6718ecd9528"
 diamondUuid: "0af07a67-c6fe-8f3d-b0cd-85af10a4703b"
 uuid: "46d3c43a-ce67-8ac1-ac15-70d351fe5bd4"
 horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 35
+  bondDegree: 34
 standards: []
 bindings: []
 signatures:

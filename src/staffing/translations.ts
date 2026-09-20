@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "staffing",
-    "uuid": "1098d102-5228-8879-af74-3d9946600692",
+    "uuid": "1d6af325-a3c8-84dd-9430-174518f34a89",
     "words": [
       "staffing"
     ],
@@ -17,40 +17,30 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about staffing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "9a11190d-7f06-83bc-91c5-3ec4f4eb7f90",
+    "source": "Use when reasoning about staffing — Six atoms already computed the five faces of a position. **Nothing joined them.**",
+    "uuid": "80035d10-66b4-8405-912c-d369783d0137",
     "words": [
       "use",
       "when",
       "reasoning",
       "about",
       "staffing",
-      "as",
+      "six",
+      "atoms",
+      "already",
+      "computed",
+      "the",
+      "five",
+      "faces",
+      "of",
       "a",
-      "schema",
-      "org",
-      "vocabulary",
-      "word",
-      "the",
-      "single",
-      "word",
-      "collided",
-      "from",
-      "the",
-      "schema",
-      "org",
-      "terms",
-      "that",
-      "contain",
-      "it",
-      "content",
-      "addressed",
-      "into",
-      "the",
-      "corpus"
+      "position",
+      "nothing",
+      "joined",
+      "them"
     ],
     "values": {
-      "en": "Use when reasoning about staffing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+      "en": "Use when reasoning about staffing — Six atoms already computed the five faces of a position. **Nothing joined them.**"
     }
   }
 ]

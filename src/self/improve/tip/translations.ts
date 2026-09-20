@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the loop must say what to do next — the feed scanner that finds real gaps, scores them unblock / (cost × risk), and emits ONE executable trinity tip or refuses as vague.",
-    "uuid": "62666b95-e352-804e-93ea-d1d17694f5fa",
+    "uuid": "78b9e3a8-731e-8c64-98eb-f17564cca090",
     "words": [
       "use",
       "when",

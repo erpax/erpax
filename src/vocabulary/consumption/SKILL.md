@@ -3,13 +3,13 @@ name: consumption
 description: "Use when reasoning about consumption as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/consumption"
 coordinate: "vocabulary/consumption · 2/share · c28dcccd"
-contentUuid: "eeac82c1-e222-50da-bd75-39d707aa61a7"
+contentUuid: "4339aa7f-eae8-5cd6-b6eb-5ae2c9d66bc5"
 diamondUuid: "bd9068f7-50d4-8d9f-afa4-33186cf346d2"
 uuid: "c28dcccd-adfb-84a8-b2d6-bea7e7b631b8"
 horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 28
+  bondDegree: 27
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

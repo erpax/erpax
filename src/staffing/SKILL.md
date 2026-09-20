@@ -1,3 +1,39 @@
+---
+name: staffing
+description: "Use when reasoning about staffing — Six atoms already computed the five faces of a position. **Nothing joined them.**"
+atomPath: staffing
+coordinate: "staffing · 2/share · 1d6af325"
+contentUuid: "6d655c04-a50a-5a0d-a12f-65910020cf8c"
+diamondUuid: "162b2aed-e128-813a-9fb1-d8ffd7c890e6"
+uuid: "1d6af325-a3c8-84dd-9430-174518f34a89"
+horo: 2
+typography:
+  partition: staffing
+  bondDegree: 27
+standards:
+  - "ESCO v1.2 / ISCO-08 — occupation and competency classification"
+  - "NIST INCITS-359 — role-based access control"
+  - SFIA 8 — responsibility levels 1..7
+bindings: []
+signatures:
+  computationUuid: "2d6181db-c403-8542-bcae-d4e70930708f"
+  stages:
+    - stage: path
+      stageUuid: "e021809f-7038-8884-93a1-2aeb641cae1c"
+    - stage: trinity
+      stageUuid: "0d8d6b14-9fd9-861c-a794-9c7f0f212c4b"
+    - stage: boundary
+      stageUuid: "64bbf6f6-145a-8bbd-b757-cd3d6115bbaa"
+    - stage: links
+      stageUuid: "3aa3f958-04f2-8fe3-9298-f120c4e3188c"
+    - stage: horo
+      stageUuid: "d9e07b74-b04e-8998-8bbe-68a3e11a498c"
+    - stage: seal
+      stageUuid: "80b88db1-5335-8ed3-b891-1ea1a852e34f"
+    - stage: uuid
+      stageUuid: "ae4a9a92-3181-834a-8f86-83f76f4c47ed"
+version: 2
+---
 # staffing — a position is declared once, and everything a bank needs from it is derived
 
 Six atoms already computed the five faces of a position. **Nothing joined them.**

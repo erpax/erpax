@@ -3,13 +3,13 @@ name: details
 description: "Use when reasoning about details as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/details"
 coordinate: "vocabulary/details · 7/descent · 88a5fddf"
-contentUuid: "28e01757-335c-5950-9cbe-ba620ffe4ecd"
+contentUuid: "e5042ea0-fb14-554f-a718-2d154dc5543c"
 diamondUuid: "661725cf-4589-8736-a33c-2fb1bd93d347"
 uuid: "88a5fddf-6617-8b19-afb7-e090d576dc97"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 40
+  bondDegree: 39
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

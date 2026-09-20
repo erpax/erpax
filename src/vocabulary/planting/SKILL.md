@@ -3,13 +3,13 @@ name: planting
 description: "Use when output is spread across the season by staggered sequential sowings — succession planting: number of plantings (sowings) and number of harvests (pickings) are the two scheduling levers that replace one glut with a continuous supply. The interval between sowings ≈ one planting's picking window; total seasonal row-length divides evenly across the plantings to size each sowing and its seed order."
 atomPath: "vocabulary/planting"
 coordinate: "vocabulary/planting · 5/round · 85e106a6"
-contentUuid: "abc1819f-0b72-5e12-a6c8-95e674eec64a"
+contentUuid: "0654832e-926b-5df6-9ef1-93b83cb60eff"
 diamondUuid: "36e4da8b-d13f-89f7-a706-e137de6a292d"
 uuid: "85e106a6-423b-8388-a1c9-8e2ec16efada"
 horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 89
+  bondDegree: 88
 standards: []
 bindings: []
 signatures:

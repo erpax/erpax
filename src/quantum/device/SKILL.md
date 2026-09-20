@@ -3,8 +3,8 @@ name: device
 description: "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain."
 atomPath: "quantum/device"
 coordinate: "quantum/device · 2/share · 9d10b1b0"
-contentUuid: "727add7e-a5d2-580b-a790-5442eb3cdcad"
-diamondUuid: "4c477091-acdf-83df-9bc9-a60dffe0154c"
+contentUuid: "3d89e084-b000-5dd7-9591-17effbcceaec"
+diamondUuid: "3b898ed6-caed-81b5-ba27-cb9b23bf554a"
 uuid: "9d10b1b0-7b46-88cc-b928-4546073f2e04"
 horo: 2
 typography:
@@ -13,14 +13,14 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0b7869b4-5e35-81e8-b735-cff347754fef"
+  computationUuid: "e5db601e-37d0-8416-9db9-6cde3d6b581e"
   stages:
     - stage: path
       stageUuid: "225454fc-327d-859d-bf56-45cec052be2b"
     - stage: trinity
       stageUuid: "35163ab6-e6e8-8a91-909b-ecdea549a591"
     - stage: boundary
-      stageUuid: "2fbe82b3-9c40-8b5c-a38a-6372d928e6a8"
+      stageUuid: "51f197ec-9c25-86c4-99da-472d54556b5d"
     - stage: links
       stageUuid: "9c5dce20-b961-8d72-a15b-82c1649fb8df"
     - stage: horo
@@ -28,7 +28,7 @@ signatures:
     - stage: seal
       stageUuid: "cbd3726a-b32c-851f-9de4-8b730f12369a"
     - stage: uuid
-      stageUuid: "3f8db4b1-72d0-867d-bb42-34266844f117"
+      stageUuid: "83627b31-061e-8448-adec-868bdd372c6d"
 quantum:
   superposition:
     - analog
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: true
     speechResults: false
-    computationUuid: "0b7869b4-5e35-81e8-b735-cff347754fef"
-    contentUuid: "727add7e-a5d2-580b-a790-5442eb3cdcad"
+    computationUuid: "e5db601e-37d0-8416-9db9-6cde3d6b581e"
+    contentUuid: "3d89e084-b000-5dd7-9591-17effbcceaec"
 version: 2
 ---
 # quantum/device — the measurement instrument
@@ -75,4 +75,4 @@ Edge law: **capture on the device, compute pure on the Worker** — `getUserMedi
 
 @see [[device]] · [[measurement]] · [[reality]] · [[analog]] · [[sensory]] · [[snapshot]] · [[biometric]] · [[coherence]] · [[finality]]
 
-<sub>content-uuid `727add7e-a5d2-580b-a790-5442eb3cdcad` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d89e084-b000-5dd7-9591-17effbcceaec` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

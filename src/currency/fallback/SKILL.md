@@ -3,7 +3,7 @@ name: fallback
 description: "Use when a currency value is missing, blank, or unknown — the blank currency XXX (ISO 4217 §6.5 \"No currency\") is the identity element of the currency category, so every row, hook, formatter, and conversion resolves cleanly to it instead of crashing."
 atomPath: "currency/fallback"
 coordinate: "currency/fallback · 2/share · 76ff4860"
-contentUuid: "3901b217-e83b-5bd8-8b1f-7453c0624cc9"
+contentUuid: "1b7e2b5b-5992-5b7e-bc69-776248a19865"
 diamondUuid: "cd9fdb9d-086c-85d1-a0a1-14085403e657"
 uuid: "76ff4860-7145-8864-b91b-7140f905ad3e"
 horo: 2
@@ -11,12 +11,9 @@ typography:
   partition: currency
   bondDegree: 24
 standards:
-  - "EN 16931 §BG-7 currency-code element (XXX accepted)"
   - "EN-16931"
   - "IAS 21 §38 presentation-currency translation"
-  - "IFRS 1 §IG7 non-monetary items presentation"
   - "IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)"
-  - ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)
   - "ISO 4217 §6.5 \"No currency\" — code XXX, numeric 999"
   - "RFC-8785"
 bindings: []

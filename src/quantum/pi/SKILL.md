@@ -3,8 +3,8 @@ name: pi
 description: "Use when reasoning about exiting the 128-bit uuid limit — pi is the infinite digit-stream, a universal address space where any data lives at an offset and length; the train you jump into and out of, when wired the static hash becomes a living realtime position. Honest — infinite address, no free compression."
 atomPath: "quantum/pi"
 coordinate: "quantum/pi · 2/share · 3c62cb20"
-contentUuid: "3d4194ee-4d93-5a86-a8aa-e717122f3bf8"
-diamondUuid: "7a4b70b0-659f-8706-bf40-50302dfcee5a"
+contentUuid: "9a2f65fd-f54e-54a2-8fbc-e43ff71c5580"
+diamondUuid: "9fdbc6e6-d764-83d3-b008-71defbdebe5d"
 uuid: "3c62cb20-b5fe-88b1-94a4-8a0f62c8a48d"
 horo: 2
 typography:
@@ -13,14 +13,14 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4bc6ed6d-2500-8e78-a106-3676f22c0434"
+  computationUuid: "b2117029-17fc-8c5f-bb60-b2417d1fab8b"
   stages:
     - stage: path
       stageUuid: "6e968c74-a01e-8135-baf6-9686b490a7f1"
     - stage: trinity
       stageUuid: "790db57e-094a-8e58-b022-cd8f48848fc4"
     - stage: boundary
-      stageUuid: "3331a5aa-e90a-8f94-bd27-3b03656008df"
+      stageUuid: "dcaad37d-e47f-836b-83ef-0b318ff6caf5"
     - stage: links
       stageUuid: "fc61576e-37a5-8a79-a5f2-e8333682a319"
     - stage: horo
@@ -28,7 +28,7 @@ signatures:
     - stage: seal
       stageUuid: "2bba7ff0-60c3-8df6-888a-dfad8a6da1c7"
     - stage: uuid
-      stageUuid: "9507e65a-96d8-859b-bb7c-b458d6c82e49"
+      stageUuid: "91bedf50-ab84-8ae0-bcd7-9ecfab7b0ab7"
 quantum:
   superposition:
     - e
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "4bc6ed6d-2500-8e78-a106-3676f22c0434"
-    contentUuid: "3d4194ee-4d93-5a86-a8aa-e717122f3bf8"
+    computationUuid: "b2117029-17fc-8c5f-bb60-b2417d1fab8b"
+    contentUuid: "9a2f65fd-f54e-54a2-8fbc-e43ff71c5580"
 version: 2
 ---
 # quantum/pi — the train (jump in, jump out)
@@ -75,4 +75,4 @@ The second new duality: **finite ⊕ infinite**. The 128-bit content-[[uuid]] is
 
 @see [[uuid]] · [[quantum/number]] · [[realtime]] · [[stream]] · [[void]] · [[linearity]] · [[finality]] · [[breath]]
 
-<sub>content-uuid `3d4194ee-4d93-5a86-a8aa-e717122f3bf8` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a2f65fd-f54e-54a2-8fbc-e43ff71c5580` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,13 +3,13 @@ name: category
 description: Use when reasoning about category — A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
 atomPath: "vocabulary/category"
 coordinate: "vocabulary/category · 7/descent · 4fdde888"
-contentUuid: "819d1462-f690-5d50-84c2-54a3660e5a11"
+contentUuid: "18fdaf00-0ecd-5a1d-892b-8a3040bddd73"
 diamondUuid: "e1e366f4-236b-8121-ac3e-f52dbc3cd69a"
 uuid: "4fdde888-4a9a-88b3-9e6b-7e3ac77a7acd"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 100
+  bondDegree: 99
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

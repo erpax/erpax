@@ -3,13 +3,13 @@ name: eu
 description: "Use when reasoning about eu — Use for pan-EU authority APIs (VIES VAT validation, EU sanctions, Peppol directory, ECB rates) and the EU member-state registry — BG/DE/ES/FR/IT/NL/PL/PT/RO. The EU slice of the country-authority registry."
 atomPath: "country/api/eu"
 coordinate: "country/api/eu · 8/crest · d5e23444"
-contentUuid: "29d48c60-ec70-5235-8276-d8611d2eea0c"
+contentUuid: "b79a486a-6f68-5a9a-9069-17f290e1b3bb"
 diamondUuid: "aad82bc6-0b30-8473-a642-0f0fc3f8dac5"
 uuid: "d5e23444-d782-8680-bc26-b53f08034ba5"
 horo: 8
 typography:
   partition: country
-  bondDegree: 37
+  bondDegree: 36
 standards:
   - "IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates"
   - "ISO-4217:2015 currency-codes"

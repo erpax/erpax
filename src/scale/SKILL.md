@@ -3,13 +3,13 @@ name: scale
 description: "Use when reasoning about scale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scale
 coordinate: "scale · 2/share · 57c22f2c"
-contentUuid: "6ae1976e-d333-5464-945b-192163a64a38"
+contentUuid: "81305997-d8da-5985-a0d1-5d9f5701e11a"
 diamondUuid: "3c4381b0-f7cc-8c09-a03e-a085ffb1ed3e"
 uuid: "57c22f2c-0abe-84e9-a497-d7733937bd9e"
 horo: 2
 typography:
   partition: scale
-  bondDegree: 34
+  bondDegree: 33
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

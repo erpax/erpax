@@ -3,13 +3,13 @@ name: covercrop
 description: "Use when a crop is grown to protect and build the soil rather than to harvest — cover crops / green manures: catch crops scavenging residual N, nurse crops sheltering a main crop, legumes fixing nitrogen vs grasses building biomass, then termination (mow/crimp/winterkill/incorporate) before the cash crop. The off-season twin of crop; soil capital, not sales."
 atomPath: "vocabulary/covercrop"
 coordinate: "vocabulary/covercrop · 1/base · fbe5262f"
-contentUuid: "c271afc5-e690-5b7f-9e18-a2183541844a"
+contentUuid: "ef2942e8-f756-5c12-93e2-5cbcf13cfb4c"
 diamondUuid: "6cb5202b-9d4a-8f49-bc4a-839b32271dfd"
 uuid: "fbe5262f-297e-8a56-88e5-76ebd4e9ee6d"
 horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 53
+  bondDegree: 52
 standards: []
 bindings: []
 signatures:
