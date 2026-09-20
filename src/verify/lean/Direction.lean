@@ -58,10 +58,21 @@ theorem reverse_forward (_ : Unit) : positions.all (fun i => forward (reverse i)
 /-- up and down undo each other. -/
 theorem up_down (_ : Unit) : positions.all (fun i => down (up i) == i) = true := by decide
 
+/-- and in the other order. Proving one order proves one order: `right ∘ left = id` says left is a
+    RIGHT inverse of right, and a function can have one without the other. The pairs here happen to
+    be bijections, but that is a fact to state, not one to assume from the sibling theorem. -/
+theorem down_up (_ : Unit) : positions.all (fun i => up (down i) == i) = true := by decide
+
 /-- left and right undo each other, and stay inside their byte. -/
 theorem left_right (_ : Unit) : positions.all (fun i => right (left i) == i) = true := by decide
 
+/-- and in the other order. -/
+theorem right_left (_ : Unit) : positions.all (fun i => left (right i) == i) = true := by decide
+
 theorem left_stays_in_its_byte (_ : Unit) : positions.all (fun i => left i / 8 == i / 8) = true := by decide
+
+/-- and so does right — the byte is a wall in both directions, not only the one that was checked. -/
+theorem right_stays_in_its_byte (_ : Unit) : positions.all (fun i => right i / 8 == i / 8) = true := by decide
 
 /-- inverse is an involution: beyond, and back. -/
 theorem inverse_is_an_involution (_ : Unit) : positions.all (fun i => inverse (inverse i) == i) = true := by decide
@@ -129,6 +140,25 @@ def unspin (n i : Nat) : Nat := (i + (106 - n % 106)) % 106
 theorem spin_round_trips (_ : Unit) :
     (List.range 106).all (fun n => (List.range 106).all (fun i => unspin n (spin n i) == i)) = true := by
   decide
+
+/-- and the other order, for the same reason the raw pairs each needed two theorems. -/
+theorem unspin_round_trips (_ : Unit) :
+    (List.range 106).all (fun n => (List.range 106).all (fun i => spin n (unspin n i) == i)) = true := by
+  decide
+
+/- Bijectivity needs no theorem of its own, and the reason is the whole point of the return legs
+   above. A function with a two-sided inverse IS a bijection: `reverse ∘ forward = id` and
+   `forward ∘ reverse = id` together give it for the forward/reverse pair, `up_down` with `down_up`
+   for the vertical one, `left_right` with `right_left` for the horizontal, and an involution is
+   its own two-sided inverse, which covers `inverse` and `within`.
+
+   Before the return legs existed only ONE order was proved for up/down and left/right, and one
+   order is a one-sided inverse — which a non-bijection can have. So the pairs were not known to be
+   bijections until those two theorems were added, and now they are, without a further theorem.
+
+   An explicit `eraseDups` census over 128 positions × 8 directions was written here first and the
+   kernel REFUSED it — maximum recursion depth. That refusal was correct twice over: the check was
+   expensive, and it was redundant. -/
 
 end Direction
 

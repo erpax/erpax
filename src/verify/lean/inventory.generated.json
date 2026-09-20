@@ -1,10 +1,10 @@
 {
   "sealedAt": "2026-09-20",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "76f5c5cc51755aa0",
+  "sourcesHash": "e975f9b034bb07b3",
   "census": {
-    "theorems": 154,
-    "axiomFree": 94,
+    "theorems": 158,
+    "axiomFree": 98,
     "standardAxioms": 60,
     "stubbed": 0
   },
@@ -513,13 +513,31 @@
           "stubbed": false
         },
         {
+          "theorem": "Direction.down_up",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
           "theorem": "Direction.left_right",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
         },
         {
+          "theorem": "Direction.right_left",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
           "theorem": "Direction.left_stays_in_its_byte",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.right_stays_in_its_byte",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
@@ -576,6 +594,12 @@
         },
         {
           "theorem": "Direction.spin_round_trips",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Direction.unspin_round_trips",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
