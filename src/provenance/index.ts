@@ -18,6 +18,8 @@
  * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
  * @standard W3C PROV-DM — provenance as a graph of entities and derivations
  */
+import { exactMinOf } from '@/algebra'
+
 export const atomPath = 'provenance' as const
 
 /**
@@ -115,7 +117,7 @@ export function unwalkableRoots(chain: Chain): readonly Link[] {
 export function ageAt(chain: Chain, now: number): number {
   const rs = roots(chain)
   if (rs.length === 0) return 0
-  return now - Math.min(...rs.map((r) => r.year))
+  return now - exactMinOf([...rs.map((r) => r.year)])
 }
 
 export interface Verdict {
@@ -145,7 +147,7 @@ export function judge(chain: Chain, now: number): Verdict {
     citations: reached.length,
     independentRoots: rs.length,
     unwalkable: bad.map((l) => l.id),
-    rootYear: rs.length === 0 ? null : Math.min(...rs.map((r) => r.year)),
+    rootYear: rs.length === 0 ? null : exactMinOf([...rs.map((r) => r.year)]),
     ageYears: ageAt(chain, now),
     grounded: rs.length > 0 && bad.length === 0,
   }

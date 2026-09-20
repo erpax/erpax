@@ -21,6 +21,8 @@
  * @standard ISO 80000-5 — thermodynamics quantities
  * @standard IEC 60050-482 — primary and secondary cells
  */
+import { exactAbs, exactMax, exactMin } from '@/algebra'
+
 export const atomPath = 'energy' as const
 
 /** Watt-hours. Every quantity here is Wh or W; no mixed units. */
@@ -78,7 +80,7 @@ export function allocate(sources: readonly Source[], demand: number): Allocation
       continue
     }
     const eff = clampEff(s.efficiency)
-    const canDeliver = Math.max(0, Math.min(s.maxPower * eff, remaining))
+    const canDeliver = exactMax(0, exactMin(s.maxPower * eff, remaining))
     const drawn = eff > 0 ? canDeliver / eff : 0
     draws.push({ id: s.id, drawn, delivered: canDeliver })
     delivered += canDeliver
@@ -91,7 +93,7 @@ export function allocate(sources: readonly Source[], demand: number): Allocation
 /** Conservation: everything drawn is either delivered or lost, to within a rounding epsilon. */
 export function conserves(a: Allocation, epsilon = 1e-9): boolean {
   const drawn = a.draws.reduce((s, d) => s + d.drawn, 0)
-  return Math.abs(drawn - (a.delivered + a.losses)) <= epsilon
+  return exactAbs(drawn - (a.delivered + a.losses)) <= epsilon
 }
 
 /** One conversion in a chain: what it is, and what fraction survives it. */

@@ -16,7 +16,7 @@
  */
 import { investigable, reconcile, type Session, type Units, type Verdict } from '@/float'
 
-export const atomPath = 'armoury' as const
+export const atomPath = 'armory' as const
 
 /** Items are counted one at a time. There is no larger unit, and no fractional one. */
 export const ITEMS: Units = [1]

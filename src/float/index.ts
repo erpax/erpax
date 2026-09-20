@@ -21,6 +21,8 @@
  * @standard ISO 4217 — currency and minor units
  * @standard ISA 501 — physical count as audit evidence
  */
+import { exactAbs } from '@/algebra'
+
 export const atomPath = 'float' as const
 
 /** The discrete values this kind of float may be counted in, in minor units. Descending. */
@@ -108,10 +110,10 @@ export function reconcile(session: Session, units: Units): Verdict {
  * count that agrees by accident with the book is still not evidence.
  */
 export function investigable(verdict: Verdict, tolerance = 0): boolean {
-  return verdict.illegal.length > 0 || Math.abs(verdict.variance) > tolerance
+  return verdict.illegal.length > 0 || exactAbs(verdict.variance) > tolerance
 }
 
 /** Four-eyes: a single movement at or above the threshold needs a second authoriser, either way. */
 export function needsDualControl(amount: number, threshold: number): boolean {
-  return Math.abs(amount) >= threshold
+  return exactAbs(amount) >= threshold
 }

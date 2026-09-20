@@ -14,6 +14,8 @@
  *
  * @standard Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan
  */
+import { exactAbs } from '@/algebra'
+
 export const atomPath = 'swarm' as const
 
 /** One worker. `capacity` is in the same unit as a task's weight — seconds, rows, bytes. */
@@ -111,7 +113,7 @@ export function assign(agents: readonly Agent[], tasks: readonly Task[]): Assign
  */
 export function conserves(a: Assignment, epsilon = 1e-9): boolean {
   const unplacedWeight = a.unassigned.reduce((s, t) => s + t.weight, 0)
-  return Math.abs(a.placedWeight + unplacedWeight - a.totalWeight) <= epsilon
+  return exactAbs(a.placedWeight + unplacedWeight - a.totalWeight) <= epsilon
 }
 
 /** Task COUNT conservation, against the list that went in. */

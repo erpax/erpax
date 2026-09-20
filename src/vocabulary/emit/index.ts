@@ -29,6 +29,10 @@ const DOMAIN = new Set([
   'cardinality', 'permaculture', 'mycorrhizae', 'terroir', 'byline', 'bylines', 'forcemajeure',
   'upsell', 'coordinate', 'coordinates', 'cooperative', 'encodings', 'attendee', 'attendees',
   'followup', 'metadata', 'dataset', 'runtime', 'runbook', 'roadmap', 'changelog', 'walkthrough',
+  // Regulator vocabulary, not jargon: KYC is the directive's own name for customer due
+  // diligence (EU 2015/849 Art. 13) and AML names the body of law itself. Neither decomposes into
+  // dictionary roots, and renaming them would make the atoms harder to find, not better grounded.
+  'kyc', 'aml',
 ])
 
 function loadDict(): Set<string> {

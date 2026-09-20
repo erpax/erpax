@@ -17,6 +17,8 @@
  *
  * @standard ISO 1151-1 — flight dynamics, body axes and sign conventions
  */
+import { exactRound } from '@/algebra'
+
 export const atomPath = 'rotation' as const
 
 /** Which way a rotor turns seen from above. */
@@ -65,7 +67,7 @@ export function isRegular(rotors: readonly Rotor[]): boolean {
   for (let i = 0; i < sorted.length; i++) {
     const a = sorted[i] as number
     const b = (sorted[(i + 1) % sorted.length] as number) + (i + 1 === sorted.length ? 360 : 0)
-    gaps.push(Math.round((b - a) * 1000) / 1000)
+    gaps.push(exactRound((b - a) * 1000) / 1000)
   }
   return gaps.every((g) => g === gaps[0])
 }

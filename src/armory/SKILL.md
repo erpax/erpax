@@ -1,14 +1,14 @@
 ---
-name: armoury
-description: "Use when reasoning about armoury — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount."
-atomPath: armoury
-coordinate: "armoury · 8/crest · 256d017e"
+name: armory
+description: "Use when reasoning about armory — A weapon or a round is counted in **items**, so the unit set is and the total is a headcount."
+atomPath: armory
+coordinate: "armory · 8/crest · 256d017e"
 contentUuid: "c3b3b629-9a02-57f7-993b-3f40087036a3"
 diamondUuid: "d7a7bf7a-10b2-8fff-b137-6f2fdde2c67e"
 uuid: "256d017e-4e17-84e9-b341-2216cb7d39d9"
 horo: 8
 typography:
-  partition: armoury
+  partition: armory
   bondDegree: 13
 standards:
   - ISA 501 — physical count as audit evidence
@@ -33,7 +33,7 @@ signatures:
       stageUuid: "488563bb-5b09-825d-a3da-63a851a296f1"
 version: 2
 ---
-# armoury — the same control as a cash drawer, with the dial removed
+# armory — the same control as a cash drawer, with the dial removed
 
 A weapon or a round is counted in **items**, so the unit set is `{1}` and the total is a headcount.
 The mount is nearly empty, and that emptiness is the finding: **an armoury ledger and a bank drawer

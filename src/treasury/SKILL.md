@@ -53,7 +53,7 @@ forward**, and the money has quietly become the office's. There is deliberately 
 meaning *carry forward* and none meaning *silence* — a pinned test asserts that every non-zero
 variance names an action.
 
-Tolerance is zero for the same reason [[armoury]]'s is: there is no one with standing to absorb a
+Tolerance is zero for the same reason [[armory]]'s is: there is no one with standing to absorb a
 difference in public money.
 
 **Honest boundary.** This names what is owed on a counted difference. It does not perform the
@@ -71,4 +71,4 @@ absorb it and no one will have decided anything.**
 - **INTOSAI GOV 9100** — internal control for the public sector.
 - **ISA 501** — physical count as audit evidence.
 
-Composes: [[float]] · [[armoury]] · [[law]].
+Composes: [[float]] · [[armory]] · [[law]].

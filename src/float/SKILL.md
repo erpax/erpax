@@ -43,7 +43,7 @@ agrees with the book or it does not, by how much, and in which direction.
 | --- | --- | --- |
 | [[teller]] | euro legal tender | branch tolerance, four-eyes floor |
 | [[casino]] | house chip scale (a parameter — a house has several) | the drop, reported separately |
-| [[armoury]] | `{1}` — items are counted one at a time | tolerance is zero and is **not a dial** |
+| [[armory]] | `{1}` — items are counted one at a time | tolerance is zero and is **not a dial** |
 | [[treasury]] | euro legal tender | the **disposition** of the variance |
 
 Writing that reconciliation four times would be one implementation and three decoys
@@ -86,4 +86,4 @@ wearing a control's name.**
 - **ISO 4217** — currency and minor units.
 - **ISA 501** — physical count as audit evidence.
 
-Composes: [[teller]] · [[casino]] · [[armoury]] · [[treasury]] · [[rules]]/ask · [[rules]]/copy · [[law]].
+Composes: [[teller]] · [[casino]] · [[armory]] · [[treasury]] · [[rules]]/ask · [[rules]]/copy · [[law]].

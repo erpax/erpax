@@ -366,8 +366,8 @@ src/architecture/invariant/types.ts:27: * @standard ISO/IEC 25010:2023 functiona
 src/archival/index.ts:10: * @standard Filecoin storage proofs (Spacegap / Spacetime)
 src/archival/index.ts:8: * @standard W3C IPFS CID v1 — sha-256 maps to ERPax content-uuid
 src/archival/index.ts:9: * @standard Arweave Pay-Once-Store-Forever
-src/armoury/index.ts:14: * @standard ISA 501 — physical count as audit evidence
-src/armoury/index.ts:15: * @standard ISO/IEC 27001 A.5.9 — inventory of assets; A.7.9 — assets off-premises
+src/armory/index.ts:14: * @standard ISA 501 — physical count as audit evidence
+src/armory/index.ts:15: * @standard ISO/IEC 27001 A.5.9 — inventory of assets; A.7.9 — assets off-premises
 src/arrival/index.ts:19: * @standard ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none
 src/artery/index.ts:23: * @standard Frank's Windkessel model; aortic elastic storage smooths cardiac output
 src/audit/agent/index.ts:29: * @standard ISO-19011:2018 §6.4 — audit evidence: a finding traces to objective evidence
@@ -3089,6 +3089,7 @@ src/vendors/vendor/scorecards/index.ts:10: * @standard ISO 9001:2015 §8.4.1 eva
 src/vendors/vendor/scorecards/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/vendors/vendor/scorecards/index.ts:9: * @standard ISO 9001:2015 §8.4 control-of-externally-provided-processes
 src/verification/index.ts:13: * @standard RFC 8555 §8.4 (ACME DNS-01: the record value is a digest of the key authorization)
+src/verify/latex/index.ts:12: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
 src/version/index.ts:16: * @standard SemVer 2.0.0 — `MAJOR.MINOR.PATCH+<build-metadata>` (the corpus-uuid is build metadata)
 src/versions/cross/index.ts:23: * @standard RFC 9562 §5.8 uuidv8 (the content-addressed version id)
 src/versions/cross/index.ts:24: * @standard RFC 8785 JCS (deterministic content canonicalization)

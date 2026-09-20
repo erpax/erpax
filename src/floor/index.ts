@@ -10,11 +10,13 @@
  * @standard Bekenstein (1981) · 't Hooft (1993) · Susskind (1995) — the holographic bound
  * @standard CODATA 2022 — Boltzmann constant, Planck length
  */
+import { LN2, PI } from '@/algebra'
+
 export const atomPath = 'floor' as const
 
 /** CODATA 2022 values, returned rather than exported as statics. */
 function constants(): { k: number; ln2: number; planckLength: number } {
-  return { k: 1.380649e-23, ln2: Math.LN2, planckLength: 1.616255e-35 }
+  return { k: 1.380649e-23, ln2: LN2, planckLength: 1.616255e-35 }
 }
 
 /** Room temperature in kelvin — the reference this corpus quotes its ladder at. */
@@ -32,7 +34,7 @@ export function landauerJoules(bits: number, kelvin: number = roomKelvin()): num
 /** Floor for exhausting `2^bits` candidates, one erasure each — deliberately an under-statement. */
 export function searchJoules(bits: number, kelvin: number = roomKelvin()): number {
   if (!(bits > 0)) return 0
-  return Math.pow(2, bits) * landauerJoules(1, kelvin)
+  return 2 ** bits * landauerJoules(1, kelvin)
 }
 
 /** Energy scales to read a floor against. DECLARED, order-of-magnitude, in joules. */
@@ -76,7 +78,7 @@ export function searchFloor(bits: number, kelvin: number = roomKelvin()): Floor 
 export function holographicBits(radiusMetres: number): number {
   const { planckLength, ln2 } = constants()
   if (!(radiusMetres > 0)) return 0
-  const area = 4 * Math.PI * radiusMetres * radiusMetres
+  const area = 4 * PI * radiusMetres * radiusMetres
   return area / (4 * planckLength * planckLength * ln2)
 }
 
@@ -84,5 +86,5 @@ export function holographicBits(radiusMetres: number): number {
 export function holographicRadius(bits: number): number {
   const { planckLength, ln2 } = constants()
   if (!(bits > 0)) return 0
-  return Math.sqrt((bits * 4 * planckLength * planckLength * ln2) / (4 * Math.PI))
+  return ((bits * 4 * planckLength * planckLength * ln2) / (4 * PI)) ** 0.5
 }

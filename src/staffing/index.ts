@@ -16,6 +16,7 @@
  * @standard ESCO v1.2 / ISCO-08 — occupation and competency classification
  * @standard NIST INCITS-359 — role-based access control
  */
+import { exactMax } from '@/algebra'
 import { jobDescription, positionHourlyRate, type JobDescription, type Position } from '@/position'
 import { competencyGap, type GapResult, type HeldLine, type RequiredLine } from '@/competency/gap'
 import { isProficient, trainingPlan, type TrainingStep } from '@/train'
@@ -89,7 +90,7 @@ export function staff(args: StaffArgs): StaffedPosition {
     capability: args.capability,
     cost: {
       anchor,
-      tier: Math.max(1, args.position.harmonic),
+      tier: exactMax(1, args.position.harmonic),
       hourly,
       annual: hourly * hours,
       hours,

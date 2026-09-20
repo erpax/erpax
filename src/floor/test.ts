@@ -94,8 +94,8 @@ describe('floor — the holographic bound, which limits STORAGE and not search',
     // Written first as "2^256 fits inside an atom" and REFUTED by the measurement: the whole
     // 256-bit space at one bit per key needs a sphere about 2.6 km across, while the 128-bit
     // space needs 1.4e-16 m, smaller than a proton. Storage is not what separates them.
-    expect(holographicRadius(Math.pow(2, 256))).toBeGreaterThan(1e3)
-    expect(holographicRadius(Math.pow(2, 128))).toBeLessThan(1e-15)
+    expect(holographicRadius(2 ** 256)).toBeGreaterThan(1e3)
+    expect(holographicRadius(2 ** 128)).toBeLessThan(1e-15)
     // Energy is: four rungs apart on the ladder, on the same two exponents.
     expect(searchFloor(128).reach).toBe('industrial')
     expect(searchFloor(256).reach).toBe('beyond-physics')
