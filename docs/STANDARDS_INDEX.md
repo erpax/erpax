@@ -2752,6 +2752,7 @@ src/sustainability/index.ts:16: * @standard Brundtland Report, Our Common Future
 src/sustainability/index.ts:17: * @standard Second Law of Thermodynamics — local order requires entropy export
 src/svg/hero/generator/index.ts:18: * @standard W3C SVG-1.1 scalable-vector-graphics
 src/svg/hero/generator/index.ts:19: * @standard ISO/IEC-29500 office-open-xml media-embedding-target
+src/swarm/index.ts:15: * @standard Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan
 src/syntax/index.ts:23: * @standard ECMA-262 · TypeScript grammar (via ts.createSourceFile — the compiler's own scanner)
 src/tags/index.ts:21: * @standard ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary
 src/tags/index.ts:22: * @standard RFC-4122 §4.3 uuid content-addressed-id
