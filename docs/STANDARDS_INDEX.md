@@ -366,6 +366,8 @@ src/architecture/invariant/types.ts:27: * @standard ISO/IEC 25010:2023 functiona
 src/archival/index.ts:10: * @standard Filecoin storage proofs (Spacegap / Spacetime)
 src/archival/index.ts:8: * @standard W3C IPFS CID v1 — sha-256 maps to ERPax content-uuid
 src/archival/index.ts:9: * @standard Arweave Pay-Once-Store-Forever
+src/armoury/index.ts:14: * @standard ISA 501 — physical count as audit evidence
+src/armoury/index.ts:15: * @standard ISO/IEC 27001 A.5.9 — inventory of assets; A.7.9 — assets off-premises
 src/arrival/index.ts:19: * @standard ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none
 src/artery/index.ts:23: * @standard Frank's Windkessel model; aortic elastic storage smooths cardiac output
 src/audit/agent/index.ts:29: * @standard ISO-19011:2018 §6.4 — audit evidence: a finding traces to objective evidence
@@ -632,6 +634,8 @@ src/carriers/index.ts:13: * @standard IMDG-Code maritime-dangerous-goods
 src/carriers/index.ts:14: * @standard UPU-S10 universal-postal-union shipment-identifier
 src/cases/index.ts:17: * @standard UN-COFOG-03 public-order-and-safety law-courts
 src/cases/index.ts:18: * @standard ISO-19011:2018 ISA-500 evidence chain-of-custody append-only
+src/casino/index.ts:12: * @standard ISO 4217 — currency and minor units
+src/casino/index.ts:13: * @standard ISA 501 — physical count as audit evidence
 src/categories/index.ts:15: * @standard schema.org Category
 src/categories/index.ts:16: * @standard schema.org DefinedTerm taxonomic-term
 src/chains/bulk/import/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
@@ -1301,6 +1305,8 @@ src/fixed/assets/depreciation/schedules/index.ts:9: * @standard ISO-4217:2015 cu
 src/fixed/assets/index.ts:24: * @standard ISO-4217:2015 currency-codes
 src/fixed/assets/index.ts:25: * @standard ISO-8601-1:2019 date-time acquisition-date in-service-date disposal-date
 src/fixpoint/index.ts:27: * @standard Kleene recursion theorem · Tarski fixed-point — a self-map has a fixed point
+src/float/index.ts:21: * @standard ISO 4217 — currency and minor units
+src/float/index.ts:22: * @standard ISA 501 — physical count as audit evidence
 src/footer/config.ts:4: * @standard schema.org WPFooter
 src/footer/config.ts:5: * @standard W3C HTML5 footer-element
 src/footer/config.ts:6: * @standard WAI-ARIA 1.2 contentinfo-landmark-role
@@ -2375,6 +2381,9 @@ src/rfc/9110/get/redirects/test.ts:4: * @standard ISO/IEC-29119:2022 software-te
 src/rich/text/index.tsx:4: * @standard W3C HTML5 Living Standard rich-text-output
 src/rich/text/index.tsx:5: * @standard CommonMark 0.31 markdown-fallback
 src/rich/text/index.tsx:6: * @standard schema.org HTMLRichText
+src/risk/index.ts:14: * @standard EU 575/2013 (CRR) Art. 392 — definition of a large exposure
+src/risk/index.ts:15: * @standard EU 575/2013 (CRR) Art. 395 — limits to large exposures
+src/risk/index.ts:16: * @standard EU 575/2013 (CRR) Art. 4(1)(39) — group of connected clients
 src/rodin/coil/index.ts:21: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
 src/rodin/index.ts:24: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
 src/rodin/phase/index.ts:41: * @standard ISO 80000-2 — mathematical signs and symbols
@@ -2794,6 +2803,9 @@ src/taxing/jurisdictions/statutory/report/templates/statutory/field/mappings/ind
 src/team/comms/index.ts:14: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/team/comms/index.ts:15: * @standard RFC 9562 §5.8 content-uuid event-identity
 src/team/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
+src/teller/index.ts:10: * @standard ECB — euro legal tender denominations
+src/teller/index.ts:11: * @standard ISA 501 — physical count as audit evidence
+src/teller/index.ts:9: * @standard ISO 4217 — EUR, minor units
 src/temperature/index.ts:14: * @standard SI-2019 k_B (via ../boltzmann); Maxwell–Boltzmann statistics
 src/tenant/context/index.ts:37: * @standard ISO-3166-1:2020 country-codes alpha-2 cascade-source
 src/tenant/context/index.ts:38: * @standard ISO-4217:2015 currency-codes alphabetic cascade-source
@@ -2888,6 +2900,9 @@ src/translations/index.ts:38: * @standard W3C HTTP Content-Language (RFC 7231 §
 src/translations/index.ts:39: * @standard BCP-47 language tags
 src/translations/index.ts:40: * @standard EU 1958/1 official-languages-of-the-european-union
 src/translator/index.ts:15: * @standard Johnson et al., "Google's Multilingual NMT System: Enabling Zero-Shot Translation," TACL (2017), arXiv:1611.04558
+src/treasury/index.ts:13: * @standard IPSAS 1 — presentation; IPSAS 2 — cash flow statements
+src/treasury/index.ts:14: * @standard INTOSAI GOV 9100 — internal control for the public sector
+src/treasury/index.ts:15: * @standard ISA 501 — physical count as audit evidence
 src/trello/index.ts:25: * @standard RFC 6749 §1.4 bearer-credential (the token is the whole authority — env-only, never stored)
 src/trello/index.ts:26: * @standard ISO/IEC 25010:2023 §5.7.2 fault-tolerance (a rate-limited burst queues; it does not drop)
 src/trello/plugin/index.ts:27: * @standard ISO/IEC 25010:2023 §5.3 co-existence (erpax shares Trello's namespace without detriment)

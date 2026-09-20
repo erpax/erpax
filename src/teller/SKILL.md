@@ -1,45 +1,35 @@
----
-name: teller
-description: "Use when reasoning about teller as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: teller
-coordinate: "teller · 8/crest · 17106df8"
-contentUuid: "52d36c6f-13ba-56c1-b23d-ead0735e3590"
-diamondUuid: "73ef5169-5fbc-8d66-8270-915d6e7ab008"
-uuid: "17106df8-7ceb-8d72-85d1-9eb0e471d61e"
-horo: 8
-typography:
-  partition: teller
-  bondDegree: 16
-standards:
-  - "schema.org — the type vocabulary, collided to single words"
-bindings: []
-signatures:
-  computationUuid: "35ec0214-42b8-812c-8467-473b2e5e05ad"
-  stages:
-    - stage: path
-      stageUuid: "0d8dd8b3-7a34-841c-888f-805332b5a53a"
-    - stage: trinity
-      stageUuid: "9b7b8213-2c3a-8966-a46d-8f55d16cadba"
-    - stage: boundary
-      stageUuid: "f20542cf-b462-8203-a647-e4d0292f227d"
-    - stage: links
-      stageUuid: "c68d0afb-e71d-8bff-930d-92719431b5ac"
-    - stage: horo
-      stageUuid: "9cedfdad-34b0-83b9-9e7e-c0d9044bd848"
-    - stage: seal
-      stageUuid: "efaa610c-459f-8c7e-b952-0ecabd4cf294"
-    - stage: uuid
-      stageUuid: "b060c23f-69a0-859e-adca-b617b8e614f7"
-version: 2
----
-# teller
+# teller — the branch counter, mounted on [[float]]
 
-A schema.org component word, collided out of schema.org compounds — fused from AutomatedTeller ([[sti]] · [[collapse]] · [[merge]]).
+Everything structural — the derived total, the signed variance, the void-on-illegal-count rule —
+lives in [[float]], because a chip tray, an armoury and a public till obey the same law. What is
+teller's **own** is the unit set the euro issues and the branch's two thresholds.
 
-Entangled with — [[automated]]
+That split is the point: when the reconciliation law changes it changes **once**, and no case can
+drift from it.
 
-Attested in schema.org — AutomatedTeller
+## A preserved name is not a preserved meaning
 
-**Law — [[law]]: teller is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+This atom used to hold the reconciliation itself. Moving it out and re-exporting the names kept
+every caller compiling — and **silently changed one of them**. `needsDualControl(amount)` took the
+branch threshold as a default; the core's version requires it, so every amount compared against
+`undefined` and returned `false`. A four-eyes check answering *no* to everything, with the face
+intact and the build green.
 
-@standard schema.org — the type vocabulary, collided to single words
+A test caught it, and it is exactly the boundary [[rules]]/face states about itself: that gate
+proves a name is still **offered**, never that it still **means** what it did. So `needsDualControl`
+is wrapped here with the branch's default rather than re-exported, and the case is pinned.
+
+**Honest boundary.** A balanced drawer proves the count agrees with the movements recorded. It does
+not prove the movements are complete: a transaction never entered leaves both sides consistent.
+That is what dual control and an independent counter are for, and neither is a function.
+
+**Law — [[law]]: a case mounts the law, it does not restate it. And when matter moves out from
+under a name, check what the name MEANT — the compiler only checks that it still exists.**
+
+## Standards
+
+- **ISO 4217** — EUR, minor units.
+- **ECB** — euro legal tender denominations.
+- **ISA 501** — physical count as audit evidence.
+
+Composes: [[float]] · [[rules]]/face · [[law]].

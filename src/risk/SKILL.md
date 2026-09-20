@@ -1,42 +1,54 @@
----
-name: risk
-description: "Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy."
-atomPath: risk
-coordinate: "risk · 5/round · fdc08b76"
-contentUuid: "63b7736e-d50f-5186-b695-7b79f51a0b17"
-diamondUuid: "05e05310-91a3-81a7-add5-21e731e557ed"
-uuid: "fdc08b76-cdc9-85a7-aed1-da1182f68ec5"
-horo: 5
-typography:
-  partition: risk
-  bondDegree: 62
-standards: []
-bindings: []
-signatures:
-  computationUuid: "119920e2-77b1-8c99-b366-66d566464251"
-  stages:
-    - stage: path
-      stageUuid: "5c07745a-1a0a-8b95-b142-94fb7960898c"
-    - stage: trinity
-      stageUuid: "67be389a-dcd9-8d01-b565-144451ba59ca"
-    - stage: boundary
-      stageUuid: "dd3792c7-1249-891b-af85-3de30cee27ee"
-    - stage: links
-      stageUuid: "fbfc9017-580d-8fc3-adc9-6f4f22c3ce07"
-    - stage: horo
-      stageUuid: "18ef4134-a432-8d0c-9dc5-423e65fc1666"
-    - stage: seal
-      stageUuid: "c39f455c-d760-8792-9f54-72bc110ce582"
-    - stage: uuid
-      stageUuid: "63720367-4e36-8c88-b90e-a2302986ba62"
-version: 2
----
-# risk
+# risk — the one risk question with a decidable answer
 
-Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy.
+Nothing here predicts a default. Credit risk is a **forecast**, and a function returning one would
+be a number a bank could point at with nothing behind it — the same refusal [[kyc]] and [[aml]]
+make, for the same reason.
 
-Composes: [[legal/entities/risk/registers]] · [[incident]] · [[workflow]].
+What the CRR makes decidable is a **ratio**: an exposure against Tier 1 capital, and two thresholds
+written into the regulation.
+
+| | share of Tier 1 | obligation |
+| --- | --- | --- |
+| **large exposure** (Art. 392) | **at or above 10%** | must be **reported** (Art. 394) |
+| **limit** (Art. 395) | **above 25%** | must be **cured** (Art. 396) |
+
+Both edges are exact and both are pinned: large fires **at** the share, a breach only **above** the
+limit — the limit itself is permitted, and an off-by-one there turns a compliant book into a
+reported breach or the reverse.
+
+## The same shape as structuring, one regulation over
+
+A single borrower split across a **group of connected clients** (Art. 4(1)(39)) sits under the
+limit while the real exposure sits over it. That is precisely what [[aml]] measures as structuring
+— value divided to stay under a line — and it is why exposures are **aggregated before they are
+tested**, never after.
+
+The pinned case is the argument: three names at €12m, €9m and €8m against €100m of Tier 1 are each
+comfortably under 25%. Grouped, they are **29% — a breach**. A gate that tests ungrouped exposures
+reports that book as clean.
+
+## Large and breach are separate lists, never one severity field
+
+They are **different obligations**: one is reported, the other is cured. A single field would let a
+reader take one for the other, and the one that gets taken for the lesser is always the one that
+matters.
+
+**Honest boundary.** This computes a ratio against declared thresholds. It does **not** apply the
+CRR's exemptions — intragroup, covered bonds, sovereign and institution exposures each have their
+own treatment (Art. 390 and 400), and none of it is here, so a raw verdict will over-report a book
+that legitimately claims them. It does not value the exposure, apply credit conversion factors to
+off-balance-sheet items, or net collateral. And **grouping is an input**: this aggregates by the
+`group` someone assigned, and a connected client nobody connected is invisible to it — which is the
+failure mode, and it is a human judgement no arithmetic reaches.
+
+**Law — [[law]]: aggregate before you test. A limit applied to the names on the exposures rather
+than to the party behind them measures the filing system, not the risk — and the split that defeats
+it is the same move structuring makes against a reporting threshold.**
 
 ## Standards
-- ISO-31000 (risk management)
-- NIST cybersecurity framework
+
+- **EU 575/2013 (CRR) Art. 392** — definition of a large exposure.
+- **EU 575/2013 (CRR) Art. 395** — limits to large exposures.
+- **EU 575/2013 (CRR) Art. 4(1)(39)** — group of connected clients.
+
+Composes: [[aml]] · [[kyc]] · [[rules]]/refutable · [[law]].
