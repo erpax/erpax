@@ -7469,6 +7469,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/forge"
   },
   {
+    "atom": "hold",
+    "name": "hold",
+    "description": "Use when reasoning about hold — EU 2015/849 **Art. 33(1)** obliges a firm to report promptly and, where possible, to **refrain from carrying out** a transaction it knows or suspects to be related to criminal…",
+    "path": "rules/hold"
+  },
+  {
     "atom": "hyphen",
     "name": "hyphen",
     "description": "Use when driving the hyphenated-filename campaign — computes, as a read-only scalpel manifest, which stems can be renamed because the PATH already says the redundant word, and which need a human because more than one word survives. Specifiers are parsed (declarations, re-exports and dynamic import), ops are anchored on whole lines so an import and a re-export of the same module both cut, and a rename whose ops refuse is withheld rather than forced.",

@@ -27707,7 +27707,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a workflow references a secret the repository does not hold — the lane dies on its first step, and this says so before the push instead of inside a run someone has to open.",
-        "uuid": "71c1620f-dccf-8a87-861f-b62153f7ecbe",
+        "uuid": "9c16d63e-f783-851d-b5ef-92971e67075a",
         "words": [
           "use",
           "when",
@@ -36590,7 +36590,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.",
-        "uuid": "dc75c0fd-9e0f-88f6-92b6-f4d5e6c5293a",
+        "uuid": "ec8fc429-9b37-8e04-8549-e7bfc16cdeb7",
         "words": [
           "use",
           "when",
@@ -77385,6 +77385,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "hold",
+    "path": "rules/hold",
+    "translations": [
+      {
+        "key": "name",
+        "source": "hold",
+        "uuid": "3dc05098-5fbe-89b1-900c-b9f081813702",
+        "words": [
+          "hold"
+        ],
+        "values": {
+          "en": "hold"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about hold — EU 2015/849 **Art. 33(1)** obliges a firm to report promptly and, where possible, to **refrain from carrying out** a transaction it knows or suspects to be related to criminal…",
+        "uuid": "535374df-93c3-807d-b029-5da5f4442a00",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "hold",
+          "eu",
+          "art",
+          "obliges",
+          "a",
+          "firm",
+          "to",
+          "report",
+          "promptly",
+          "and",
+          "where",
+          "possible",
+          "to",
+          "refrain",
+          "from",
+          "carrying",
+          "out",
+          "a",
+          "transaction",
+          "it",
+          "knows",
+          "or",
+          "suspects",
+          "to",
+          "be",
+          "related",
+          "to",
+          "criminal"
+        ],
+        "values": {
+          "en": "Use when reasoning about hold — EU 2015/849 **Art. 33(1)** obliges a firm to report promptly and, where possible, to **refrain from carrying out** a transaction it knows or suspects to be related to criminal…"
+        }
+      }
+    ]
+  },
+  {
     "atom": "hyphen",
     "path": "rules/hyphen",
     "translations": [
@@ -82176,7 +82235,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the whole-corpus green verdict — a seal is the cross of every guardian; it is SEALED only when all guardians hold, fails closed on an empty set, and is exactly what the auto-commit/push waves gate on. The state in which the tree may be saved, committed, and pushed.",
-        "uuid": "fd10cfb9-1e2a-855d-aa76-f5b728c6f949",
+        "uuid": "94a29d07-5b53-881a-97b6-0392e864190f",
         "words": [
           "use",
           "when",
@@ -111984,7 +112043,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's return vessel — the one-way organ. Venous valves enforce unidirectional flow back to the heart (a ratchet, the append-only return), the veins hold ~70% of blood volume (a capacitance reservoir), and with the artery they close the reciprocal loop. Three properties are computed and mapped — a structural isomorphism — onto erpax's append-only chain and reciprocal wiring.",
-        "uuid": "75e1a6af-507c-89cc-95d0-8df045e5fe85",
+        "uuid": "20b77e84-86a4-86c8-9e31-74912fbb5dd3",
         "words": [
           "use",
           "when",
@@ -122211,7 +122270,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the discovery gate of a market — whether people know the thing exists and that it answers a want they hold. The atom marketing produces and trendsetters amplify; distinct from desire (the want) and distribution (the obtaining). If awareness is the zero atom, trendsetters as taste-amplifiers are the right lever.",
-        "uuid": "fd8458c6-d4fe-8dbe-9855-224abe85e185",
+        "uuid": "95afe795-99ba-8473-892b-f763dc77b86f",
         "words": [
           "use",
           "when",
@@ -134597,7 +134656,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute.",
-        "uuid": "2fc8d276-3d07-8b3e-a437-4b8d47cbe9e5",
+        "uuid": "b3aaee99-ec99-8b6b-aa17-f663641aa283",
         "words": [
           "use",
           "when",
@@ -163685,7 +163744,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "hold",
-        "uuid": "b2912ad7-a679-8527-9092-84041fe06eb9",
+        "uuid": "3dc05098-5fbe-89b1-900c-b9f081813702",
         "words": [
           "hold"
         ],
@@ -163696,7 +163755,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about hold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-        "uuid": "a4e17c43-8786-8bb7-998e-533e645f86ec",
+        "uuid": "0f5110a6-df64-8823-91c6-8fee6ac4061a",
         "words": [
           "use",
           "when",
@@ -174971,7 +175030,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one lock — the singular model of the locks collection (the plural store); a hold that prevents change to a record or resource.",
-        "uuid": "35d6e0b3-3a3b-8ca4-aeeb-c57cac547a00",
+        "uuid": "712ab3b8-83f5-8b70-a5fe-d4cd27f04c10",
         "words": [
           "use",
           "when",
@@ -194594,7 +194653,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when handling produce between harvest and sale — the cooling→washing→curing→grading→packing→storage chain that preserves quality: remove field heat fast (precool), wash, cure storage crops, then hold in the cold chain. Postharvest does not improve quality — it only slows the loss; the gap between gross and marketable yield (shrink) is lost here.",
-        "uuid": "ee0334ce-a6d4-8589-be54-49cf7b4ae616",
+        "uuid": "0fb2eaeb-1435-8066-8eb8-50b4d89c5006",
         "words": [
           "use",
           "when",
@@ -195485,7 +195544,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one prerequisite — the singular model of the prerequisites collection (the plural store); a condition that must hold before something may proceed.",
-        "uuid": "ecc20ac1-d751-8194-a4f2-7ddbcbb00bc6",
+        "uuid": "15e58ef5-1a62-80bd-ac0b-ad44987c7647",
         "words": [
           "use",
           "when",
@@ -200958,7 +201017,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when documenting why a state changed — reason for rejection, reason for deletion/archival, reason for payment hold, audit finding reason code. Text or select; audit trail metadata. Captures intent.",
-        "uuid": "79f041fd-ede6-83ad-841e-151d0af035b5",
+        "uuid": "bc42d6fb-b883-8150-8328-1db5af6603b2",
         "words": [
           "use",
           "when",
@@ -210975,4 +211034,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3607
+export const TRANSLATIONS_COUNT = 3608

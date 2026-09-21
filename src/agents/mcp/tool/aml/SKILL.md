@@ -3,17 +3,17 @@ name: aml
 description: "Use when reasoning about aml — classifies a set of movements as **suspicious · threshold · none** (EU 2015/849 Art. 33)."
 atomPath: "agents/mcp/tool/aml"
 coordinate: "agents/mcp/tool/aml · 1/base · d1d9f91c"
-contentUuid: "bddb3834-e469-5006-a4fd-16e7056e13be"
-diamondUuid: "bce129da-60b7-8c9c-a042-30ea144b1f82"
+contentUuid: "8c9b923c-d39d-5810-b875-eb1839a118fc"
+diamondUuid: "6a9e7485-12f9-88f0-917f-e7290676db6a"
 uuid: "d1d9f91c-9318-8ba5-a2fc-3f36127731f1"
 horo: 1
 typography:
   partition: agents
-  bondDegree: 19
+  bondDegree: 22
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1fd96aa2-3560-877f-8898-6495870bdfb1"
+  computationUuid: "fbf74819-145b-8909-9559-17b789fac949"
   stages:
     - stage: path
       stageUuid: "e71144c1-bccc-8c6b-b577-3f0be94e698f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9911cefe-c5b4-868e-a097-6f496de56936"
     - stage: horo
-      stageUuid: "59f128a7-0c3c-8edc-8fb1-e7b42418c996"
+      stageUuid: "fd2e09d4-d006-8eb6-b4d8-357576614e29"
     - stage: seal
       stageUuid: "26de185c-498c-8efa-8e74-5d7ee025c382"
     - stage: uuid
-      stageUuid: "f5da6a5b-2f57-8ccd-8df6-3f9a37362971"
+      stageUuid: "eb451cb0-08b9-89b6-91cc-5aecd11bdbe8"
 version: 2
 ---
 # agents/mcp/tool/aml — whether a report is OWED, never whether money is clean

@@ -1,3 +1,40 @@
+---
+name: hold
+description: "Use when reasoning about hold — EU 2015/849 **Art. 33(1)** obliges a firm to report promptly and, where possible, to **refrain from carrying out** a transaction it knows or suspects to be related to criminal…"
+atomPath: "rules/hold"
+coordinate: "rules/hold · 1/base · 3dc05098"
+contentUuid: "f5abd6f1-fc1b-5ee3-8b0b-b7f25506d3df"
+diamondUuid: "43fd6c5f-4f74-82a5-abc3-d40c070a50f8"
+uuid: "3dc05098-5fbe-89b1-900c-b9f081813702"
+horo: 1
+typography:
+  partition: rules
+  bondDegree: 19
+standards:
+  - "EU 2015/849 Art. 33(1) — refrain from carrying out a SUSPECTED transaction"
+  - "EU-2015/849"
+  - "EU-2015/849` into `src/access/standard/index.ts`. That"
+  - FATF Recommendation 20 — suspicious transaction reporting
+bindings: []
+signatures:
+  computationUuid: "ee36e7be-4083-8624-8e40-15dfb8485c9d"
+  stages:
+    - stage: path
+      stageUuid: "cb031cea-9b9e-881b-bd6c-4d870b3942a9"
+    - stage: trinity
+      stageUuid: "8c24a650-57fd-805d-9e5e-bc3788db10e0"
+    - stage: boundary
+      stageUuid: "1bcf394b-f70f-8c1b-a987-3e72cbd08fc5"
+    - stage: links
+      stageUuid: "de979382-383a-826a-adef-0e7d35f3ae89"
+    - stage: horo
+      stageUuid: "d5c15d12-58b0-881f-89c5-df9dad2fe495"
+    - stage: seal
+      stageUuid: "59057265-459f-807a-a8d6-376ceb574343"
+    - stage: uuid
+      stageUuid: "466aa847-95a4-8835-8603-ca69697a421b"
+version: 2
+---
 # rules/hold — a suspicion verdict may not be consumed without its obligation
 
 EU 2015/849 **Art. 33(1)** obliges a firm to report promptly and, where possible, to **refrain from

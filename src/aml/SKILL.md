@@ -3,13 +3,13 @@ name: aml
 description: "Use when reasoning about aml — Laundering is an offence **a court finds**. A suspicious-activity report is an obligation **a rule triggers**."
 atomPath: aml
 coordinate: "aml · 5/round · 70b313a6"
-contentUuid: "67cb0efb-e8dc-5c31-b875-0e29b9968f90"
-diamondUuid: "edfe6b9c-6a83-8735-8ab3-b9238f884949"
+contentUuid: "e0160b27-8df4-5e38-ba9a-8408f7038ad2"
+diamondUuid: "2b7a43ce-07cb-816c-85ee-5425051cbc64"
 uuid: "70b313a6-6144-8b62-991c-df57351fa75f"
 horo: 5
 typography:
   partition: aml
-  bondDegree: 19
+  bondDegree: 22
 standards:
   - "EU 2015/847 — information accompanying transfers of funds"
   - "EU 2015/849 Art. 33 — report to the FIU promptly, before executing where possible"
@@ -20,7 +20,7 @@ standards:
   - FATF Recommendation 20 — suspicious transaction reporting
 bindings: []
 signatures:
-  computationUuid: "148ee225-e1a8-86ce-9d7c-e0f2d369d3e8"
+  computationUuid: "f3a43c01-b3f5-816c-9c9a-90dc101c540a"
   stages:
     - stage: path
       stageUuid: "deafa163-9dff-8473-b6ae-52d1b1dea555"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "cc33ac22-b65a-8a0d-a769-e1654e70d193"
     - stage: horo
-      stageUuid: "aa7388cc-143c-86da-83dd-cdb2a95c305e"
+      stageUuid: "47ffbc39-354c-816f-a06d-e37c544a34e2"
     - stage: seal
       stageUuid: "b0541308-4487-8f5d-bb37-4292f2061992"
     - stage: uuid
-      stageUuid: "b6013972-975e-8d34-89f4-1fd8e9ea528d"
+      stageUuid: "c7a420ec-0ce3-808e-983e-a9a8d386303e"
 version: 2
 ---
 # aml — whether a report is owed, never whether money was laundered

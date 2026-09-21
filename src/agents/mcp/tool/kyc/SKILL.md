@@ -3,17 +3,17 @@ name: kyc
 description: "Use when reasoning about kyc — answers the one question the directive actually asks: **what level of customer due diligence is owed**, given facts someone else established."
 atomPath: "agents/mcp/tool/kyc"
 coordinate: "agents/mcp/tool/kyc · 4/weave · 266801a8"
-contentUuid: "b1401d0a-b344-5995-8c83-d79d9ed304fd"
-diamondUuid: "7d888229-f32a-850a-b412-fd296fbe1f83"
+contentUuid: "ebc869a0-fab4-5fbf-bf3c-a0017385ab1a"
+diamondUuid: "76455d6a-2cea-8c18-8374-e13e573d7b8d"
 uuid: "266801a8-8a9a-8b67-9647-0c7077310d71"
 horo: 4
 typography:
   partition: agents
-  bondDegree: 19
+  bondDegree: 22
 standards: []
 bindings: []
 signatures:
-  computationUuid: "41b3d676-b43f-80f2-b67c-bb2c87634dbd"
+  computationUuid: "aaee6357-3e3f-89f3-a74d-eb8dcda11b9e"
   stages:
     - stage: path
       stageUuid: "63c2831c-bad2-8108-af2e-72b7b3cbb97c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ee0e2a3e-ab0f-810e-9d7c-a722015d5edd"
     - stage: horo
-      stageUuid: "af16f7ac-b877-8294-ada3-a71f54c7750b"
+      stageUuid: "942ea9fa-98a5-8fbd-9ed9-2357b78b47d7"
     - stage: seal
       stageUuid: "38f92221-c474-84bd-81f5-9f60974efff5"
     - stage: uuid
-      stageUuid: "b94fe391-bc6e-8b87-b6ad-7b7a483a0193"
+      stageUuid: "1ceb7085-09ad-8f2b-a08c-3f72c252c3a7"
 version: 2
 ---
 # agents/mcp/tool/kyc — the diligence LEVEL, not a verdict on a person
