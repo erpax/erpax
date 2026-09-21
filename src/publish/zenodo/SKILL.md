@@ -3,8 +3,8 @@ name: zenodo
 description: "Use when reasoning about zenodo — carried hand-typed counts, and they drifted:"
 atomPath: "publish/zenodo"
 coordinate: "publish/zenodo · 7/descent · cb4b9b32"
-contentUuid: "1bc09f68-b692-540a-9bde-edd1f0b95eaf"
-diamondUuid: "180d2f90-97c2-88fd-b9aa-5251f9ef307f"
+contentUuid: "5b3f2ea3-0489-5d6e-9b91-4ef1a97c6caa"
+diamondUuid: "a7fad758-9c48-8114-88e4-13a2e56fedb2"
 uuid: "cb4b9b32-e225-8dac-8fc1-6bbb07073adf"
 horo: 7
 typography:
@@ -15,14 +15,14 @@ standards:
   - "ISO 26324 — DOI: assigned by a registration agency, never computed ([[rules]]/forge)"
 bindings: []
 signatures:
-  computationUuid: "77ddd5eb-d4c7-8d45-bca5-b61031347237"
+  computationUuid: "766ad226-3923-8267-9457-e2298d9498a7"
   stages:
     - stage: path
       stageUuid: "eb325555-77db-8705-936b-1a5508b1fd39"
     - stage: trinity
       stageUuid: "de716e3c-3e79-8003-bf06-e6e034732ee9"
     - stage: boundary
-      stageUuid: "cf8b67e5-a864-8098-941e-af49db118646"
+      stageUuid: "2d622a05-99ac-8247-acbb-4f500e9649f3"
     - stage: links
       stageUuid: "1ca94798-849b-8b8b-a553-10c2169b18a5"
     - stage: horo
@@ -30,7 +30,7 @@ signatures:
     - stage: seal
       stageUuid: "63163452-cdf3-8fcd-8990-04a41daa3b45"
     - stage: uuid
-      stageUuid: "9134cd50-f48d-85ba-953b-00b1c6662bb7"
+      stageUuid: "50840a0f-1b98-8325-834a-98be9a296e43"
 version: 2
 ---
 # publish/zenodo — the deposit manifest, computed from the record it describes

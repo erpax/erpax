@@ -3,13 +3,13 @@ name: registered
 description: "Use when reasoning about registered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/registered"
 coordinate: "vocabulary/registered · 8/crest · 52ed2351"
-contentUuid: "7da8f548-4ae3-5f29-9b25-3e85fde05825"
+contentUuid: "4b848f29-8b51-577e-8b1e-af2e3aa96408"
 diamondUuid: "8ff94661-f341-8cee-8526-139b2471a721"
 uuid: "52ed2351-2ce7-8320-bacb-55b32c7e9ebd"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 16
+  bondDegree: 20
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

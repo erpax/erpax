@@ -3786,7 +3786,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about i18n — MCP localization layer — Slice ZZZZZZZZ (2026-05-11).",
-        "uuid": "8b532cae-5aa3-8260-9616-9c99a9c06dc6",
+        "uuid": "360e49d4-e7f6-81f2-a386-4fd49c3d4519",
         "words": [
           "use",
           "when",
@@ -19848,7 +19848,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints.",
-        "uuid": "a6db20b4-f47f-83f5-a9b1-75644a3f33c1",
+        "uuid": "e3f454e4-6ee1-8487-9628-605cc59f93b0",
         "words": [
           "use",
           "when",
@@ -19964,7 +19964,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when typing a tenant's agnostic seed configuration — the `TenantConfig` shape (branding, businessModel, subscriptionPlans with feature limits, marketing content, feature flags, localization, stripe) plus the `TranslatedField` / `FeatureLimit` helpers.",
-        "uuid": "9496884a-0904-8540-9f8a-13f7372c1c67",
+        "uuid": "c94babdb-b8fe-80e8-957d-72085040955e",
         "words": [
           "use",
           "when",
@@ -24994,6 +24994,63 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "registered",
+    "path": "currency/registered",
+    "translations": [
+      {
+        "key": "name",
+        "source": "registered",
+        "uuid": "1700fdc3-76ea-8c8c-8915-d57b42aff3b7",
+        "words": [
+          "registered"
+        ],
+        "values": {
+          "en": "registered"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about registered — Every currency code the corpus writes must be a **registered ISO 4217 alpha-3**: the codes in , and every or property whose value is a string literal.",
+        "uuid": "97d91636-3748-83b9-adcf-3dba6fe35acc",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "registered",
+          "every",
+          "currency",
+          "code",
+          "the",
+          "corpus",
+          "writes",
+          "must",
+          "be",
+          "a",
+          "registered",
+          "iso",
+          "alpha",
+          "the",
+          "codes",
+          "in",
+          "and",
+          "every",
+          "or",
+          "property",
+          "whose",
+          "value",
+          "is",
+          "a",
+          "string",
+          "literal"
+        ],
+        "values": {
+          "en": "Use when reasoning about registered — Every currency code the corpus writes must be a **registered ISO 4217 alpha-3**: the codes in , and every or property whose value is a string literal."
+        }
+      }
+    ]
+  },
+  {
     "atom": "customer",
     "path": "customer",
     "translations": [
@@ -27575,7 +27632,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when changing a deploy or release workflow — the ORDER is the law. Deploy must follow a green CI on the commit CI verified, build before migrating production, run the deterministic gates before shipping and the smoke after, and the release must assert tag equals version before publishing.",
-        "uuid": "9837131f-99c1-8af7-9f68-fe1f90a59345",
+        "uuid": "2ae06b13-e727-8de5-8b6b-10bcc48bbad0",
         "words": [
           "use",
           "when",
@@ -28319,7 +28376,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity.",
-        "uuid": "bc39dcd6-c008-8057-afe8-a587901651a4",
+        "uuid": "dc8b9a57-50f4-8b54-86ff-c9aaf35716dc",
         "words": [
           "use",
           "when",
@@ -31785,7 +31842,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a key must be born from randomness you can prove — seed quality is established at the source and across the fleet, never by inspecting the seed. A CSPRNG on a weak seed is indistinguishable from one on a strong seed, so no per-seed statistical test appears here by design. attest is an HMAC under a key only genuine hardware holds; admit refuses a forged tag, a short seed, and the same seed arriving from a second device (the deterministic-RNG fingerprint no single device can see). No key derives from an un-admitted seed.",
-        "uuid": "ced5ab8a-7b07-8fcb-9d03-605327c41451",
+        "uuid": "bac471e6-03aa-8090-818d-1bdcf909b4b6",
         "words": [
           "use",
           "when",
@@ -40792,7 +40849,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about i18n — A message bundle per locale is the easy half. The half that rots is the **tag**: , , , are four spellings a human will type and one thing BCP-47 means.",
-        "uuid": "47935c0a-67dd-889c-a44d-6f1596270a8a",
+        "uuid": "6cb2e35d-e541-82c6-910f-85353e52186d",
         "words": [
           "use",
           "when",
@@ -40879,7 +40936,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "localization",
-        "uuid": "9bf0e368-d691-863e-9707-a256bf03dce4",
+        "uuid": "43199832-0346-869e-98fc-56e83e6ca37e",
         "words": [
           "localization"
         ],
@@ -40890,7 +40947,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about localization — The corpus ships 24 EU official languages plus , , , , and . That list is DECLARED here in the open — no theorem derives which languages a business serves — and everything else…",
-        "uuid": "d8ed3d78-8f1b-8f97-8648-983c553e6291",
+        "uuid": "686decc5-9bff-80d3-ae47-34b88ff0a348",
         "words": [
           "use",
           "when",
@@ -41030,6 +41087,66 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about routing — is the whole claim. Every URL carries its locale — , — so the language a page renders in is a fact of the address, not a negotiation between a cookie, an header and a pathname…"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "tag",
+    "path": "i18n/tag",
+    "translations": [
+      {
+        "key": "name",
+        "source": "tag",
+        "uuid": "1b10328f-5cdb-87ec-b221-80ab5f4e5ce5",
+        "words": [
+          "tag"
+        ],
+        "values": {
+          "en": "tag"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about tag — Every locale tag the corpus writes must be a **well-formed and already-canonical BCP 47 tag**: every entry in , and every or property with a string literal value.",
+        "uuid": "625bedff-eefc-8d28-ad41-0e052f814521",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "tag",
+          "every",
+          "locale",
+          "tag",
+          "the",
+          "corpus",
+          "writes",
+          "must",
+          "be",
+          "a",
+          "well",
+          "formed",
+          "and",
+          "already",
+          "canonical",
+          "bcp",
+          "tag",
+          "every",
+          "entry",
+          "in",
+          "and",
+          "every",
+          "or",
+          "property",
+          "with",
+          "a",
+          "string",
+          "literal",
+          "value"
+        ],
+        "values": {
+          "en": "Use when reasoning about tag — Every locale tag the corpus writes must be a **well-formed and already-canonical BCP 47 tag**: every entry in , and every or property with a string literal value."
         }
       }
     ]
@@ -49598,7 +49715,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-        "uuid": "67fccdfd-8385-86c3-a3f9-788a7671ad18",
+        "uuid": "12cc817d-46e7-8afd-8cb3-e1b3bb827beb",
         "words": [
           "use",
           "when",
@@ -61592,7 +61709,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about taggable — makes every record taggable without adding a relationship per collection: the tag references the record's **content-uuid**, so one edge type reaches everything.",
-        "uuid": "191579b6-8fb4-8b3b-a553-17681e068efa",
+        "uuid": "f6eca667-7c47-8fb2-b735-4f159f96ef80",
         "words": [
           "use",
           "when",
@@ -62669,7 +62786,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle.",
-        "uuid": "49f77ec6-413f-8c98-a4f9-49b90e1c262e",
+        "uuid": "8a78305f-4636-824b-ace1-b354bdda443a",
         "words": [
           "use",
           "when",
@@ -73370,7 +73487,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about cache — Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches.",
-        "uuid": "24ad758d-4093-8768-84b0-5b20de0c4f23",
+        "uuid": "b137a336-e8b3-822d-a793-d0c0de916dc2",
         "words": [
           "use",
           "when",
@@ -97855,7 +97972,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one tagging — the singular model of the taggings collection (the plural store); the act of attaching a tag to a record.",
-        "uuid": "058cd1a1-6c7d-8d74-9e09-3a45bade9a34",
+        "uuid": "345603d4-7f66-8119-b83a-3a4f6f1651d3",
         "words": [
           "use",
           "when",
@@ -97906,7 +98023,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine.",
-        "uuid": "b1bba6f3-aeb6-83d3-b945-554706a6d4e6",
+        "uuid": "438480ca-55ca-843a-8a3c-9af30d733ed7",
         "words": [
           "use",
           "when",
@@ -97972,7 +98089,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when attaching, querying or removing label-context associations across any collection — polymorphic (tag × taggable × context × tagger) join where context is a free string enabling unlimited label-sets with zero schema change. The polymorphic tagging-join collection; content-uuid makes each (tag, target, context, tagger) tuple automatically unique.",
-        "uuid": "6903073b-5c43-8a73-ba96-070347c94694",
+        "uuid": "9cf9b406-f409-8e40-ba34-7bf442a625dc",
         "words": [
           "use",
           "when",
@@ -100656,7 +100773,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
-        "uuid": "252829bb-38b8-8c5e-a72f-cf12d4877929",
+        "uuid": "bbc827d9-126b-8a19-8697-7ad9284a6355",
         "words": [
           "use",
           "when",
@@ -112533,7 +112650,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains.",
-        "uuid": "9988d494-eeac-8f42-9446-3f09c295592c",
+        "uuid": "6ba12cf1-0d9f-82d2-ad22-189325017b88",
         "words": [
           "use",
           "when",
@@ -117780,7 +117897,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the individual living beast is the node — one identified animal carrying its class (cow/heifer/steer/calf), sex, purpose (dairy/meat/breeding), lifecycle stage, ear-tag identity, and biological-asset value. The member of a herd; the row IAS-41 measures and traceability tags.",
-        "uuid": "738edb09-a772-8f2d-81d3-6d3c0f44036e",
+        "uuid": "a1f35b56-26ed-86c6-b266-3237bc0c86f7",
         "words": [
           "use",
           "when",
@@ -121607,7 +121724,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about author — The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent t",
-        "uuid": "2e2d8be9-3af1-88aa-aa9c-c0005aabddcb",
+        "uuid": "34cbc475-d6b8-8608-90a5-c0b79ece727f",
         "words": [
           "use",
           "when",
@@ -178957,7 +179074,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag.",
-        "uuid": "29286258-fc3e-8152-a8e7-e0c138982699",
+        "uuid": "42c4d5df-3f01-8d69-9f6a-aff836142b10",
         "words": [
           "use",
           "when",
@@ -205705,7 +205822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "tag",
-        "uuid": "26a3c3da-08b5-8a09-92cb-5b69155fe353",
+        "uuid": "1b10328f-5cdb-87ec-b221-80ab5f4e5ce5",
         "words": [
           "tag"
         ],
@@ -205716,7 +205833,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \\\"Anything is taggable.\\\"",
-        "uuid": "3603a332-abb6-88a3-b14e-b7c776367882",
+        "uuid": "d3d6eb3b-0c34-86ec-b658-33fd079869b7",
         "words": [
           "use",
           "when",
@@ -205802,7 +205919,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about list — tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge.",
-        "uuid": "5efaba45-7ab6-851f-8a2f-3b5c3a4b7970",
+        "uuid": "644b4ebc-c7dc-8aaf-9d2d-aeabd72e2283",
         "words": [
           "use",
           "when",
@@ -210858,4 +210975,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3605
+export const TRANSLATIONS_COUNT = 3607

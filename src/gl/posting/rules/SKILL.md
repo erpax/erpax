@@ -3,13 +3,13 @@ name: rules
 description: "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection."
 atomPath: "gl/posting/rules"
 coordinate: "gl/posting/rules · 8/crest · 53fac221"
-contentUuid: "de50a1b0-7d06-5302-b666-f1999fcc9061"
-diamondUuid: "84b40b5a-bf1b-84ce-977d-c6279beede03"
+contentUuid: "8c08b162-8152-5783-8539-6543069ae89a"
+diamondUuid: "728b2b57-4370-8b92-a77f-e7b75faa9b55"
 uuid: "53fac221-57ba-8e56-9734-ac97a5abde72"
 horo: 8
 typography:
   partition: gl
-  bondDegree: 967
+  bondDegree: 970
 standards:
   - "IFRS IAS-1 double-entry"
   - "ISO-8601-1:2019 effective-date"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1cdbabd6-5adb-89b8-abf7-0af60373838c"
+  computationUuid: "cccf88dc-1f25-88f0-8120-40ddbef0c3eb"
   stages:
     - stage: path
       stageUuid: "a9a175d9-9908-8ad6-8b6e-e8c0b672260f"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "71687a86-0cb9-8785-a609-f4c0fa8e1976"
     - stage: horo
-      stageUuid: "b24defb6-312a-896d-8709-9442a3f24d0c"
+      stageUuid: "26971be2-5cd2-8fd7-a05b-8668e18213c8"
     - stage: seal
       stageUuid: "c3c84f84-f531-8fdb-8d40-19278075ce4a"
     - stage: uuid
-      stageUuid: "43275be7-f0c7-87f8-8642-d27c8b2c4e4f"
+      stageUuid: "ff11ce35-f120-82bb-ba00-87f03a2452a9"
 version: 2
 ---
 # gl-posting-rules

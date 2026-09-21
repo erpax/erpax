@@ -2453,6 +2453,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "currency/reconciliation"
   },
   {
+    "atom": "registered",
+    "name": "registered",
+    "description": "Use when reasoning about registered — Every currency code the corpus writes must be a **registered ISO 4217 alpha-3**: the codes in , and every or property whose value is a string literal.",
+    "path": "currency/registered"
+  },
+  {
     "atom": "customer",
     "name": "customer",
     "description": "Use when reasoning about customer — Party placing the order or paying the invoice.",
@@ -3921,6 +3927,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "routing",
     "description": "Use when reasoning about routing — is the whole claim. Every URL carries its locale — , — so the language a page renders in is a fact of the address, not a negotiation between a cookie, an header and a pathname…",
     "path": "i18n/routing"
+  },
+  {
+    "atom": "tag",
+    "name": "tag",
+    "description": "Use when reasoning about tag — Every locale tag the corpus writes must be a **well-formed and already-canonical BCP 47 tag**: every entry in , and every or property with a string literal value.",
+    "path": "i18n/tag"
   },
   {
     "atom": "identification",

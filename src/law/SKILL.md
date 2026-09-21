@@ -3,17 +3,17 @@ name: law
 description: "Use when reasoning about law — Every directive that shaped erpax, distilled and saved as a skill (your own law: save the commands, don't lose them to the chat). Each law links to the atom it governs — the inboun"
 atomPath: law
 coordinate: "law · 8/crest · 7555fdc8"
-contentUuid: "aede484b-1c5b-5082-a5c7-588f254a2746"
-diamondUuid: "da7883cb-15bd-8666-be80-ca38cf4525cb"
+contentUuid: "63f5aa65-a239-53ae-9895-e4acbab311b4"
+diamondUuid: "edee68fb-022e-8b08-aaab-af5118d4d96c"
 uuid: "7555fdc8-af72-81c8-9b65-fe2133dcd642"
 horo: 8
 typography:
   partition: law
-  bondDegree: 9548
+  bondDegree: 9554
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a606c779-5800-8c81-86bd-195cf6e8c8f8"
+  computationUuid: "2e4ad0a2-7f52-8b38-a1df-1fb2c85b1c18"
   stages:
     - stage: path
       stageUuid: "574b097b-34e1-8947-81b0-a1a75497bd8a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7221922a-8437-814f-afd9-4fa3af1db72f"
     - stage: horo
-      stageUuid: "2e74140c-260c-8038-8f92-92da1dd36324"
+      stageUuid: "b1bb8caf-deb6-8dfe-9b63-eabd34544622"
     - stage: seal
       stageUuid: "3bdd3604-9737-88c7-a45a-4668a205a003"
     - stage: uuid
-      stageUuid: "e3cd617e-4d2d-8e97-a04e-e910a2749924"
+      stageUuid: "7c1ccafa-093f-8f76-a0a8-630c7fbf1fe0"
 version: 2
 ---
 # law — the user's commands, saved as the canonical laws

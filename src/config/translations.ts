@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints.",
-    "uuid": "a6db20b4-f47f-83f5-a9b1-75644a3f33c1",
+    "uuid": "e3f454e4-6ee1-8487-9628-605cc59f93b0",
     "words": [
       "use",
       "when",

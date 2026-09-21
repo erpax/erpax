@@ -1,3 +1,38 @@
+---
+name: registered
+description: "Use when reasoning about registered — Every currency code the corpus writes must be a **registered ISO 4217 alpha-3**: the codes in , and every or property whose value is a string literal."
+atomPath: "currency/registered"
+coordinate: "currency/registered · 5/round · c573ec90"
+contentUuid: "ddcba760-5c94-55b0-901d-b7e4ff562228"
+diamondUuid: "d33bab0c-64a0-8d2d-a33f-237b0e8ee982"
+uuid: "c573ec90-01f0-8147-8f59-9836c1b35ff7"
+horo: 5
+typography:
+  partition: currency
+  bondDegree: 20
+standards:
+  - ISO 4217 §5 — the code list is maintained by the registration authority
+  - "ISO 4217 — currency codes: the alphabetic code identifies the currency"
+bindings: []
+signatures:
+  computationUuid: "0e6992ce-504d-89ad-960f-1c18af6d9e40"
+  stages:
+    - stage: path
+      stageUuid: "c11acf76-7cd0-8a29-955b-d3d3c25aaa34"
+    - stage: trinity
+      stageUuid: "e8a0b91d-1e64-8b35-87eb-531548736818"
+    - stage: boundary
+      stageUuid: "c8fae0b7-c065-848c-a21d-77ba7f76247f"
+    - stage: links
+      stageUuid: "a1981860-3b27-8da4-82fa-2a012dda6996"
+    - stage: horo
+      stageUuid: "25608abe-3d93-895d-886e-ec61c38f03a2"
+    - stage: seal
+      stageUuid: "bcdc4fef-709a-8c71-ba87-d188bfcb7ca5"
+    - stage: uuid
+      stageUuid: "843cd23e-4737-846c-b222-43fbd44750c4"
+version: 2
+---
 # currency/registered — a code outside the register names no currency
 
 Every currency code the corpus writes must be a **registered ISO 4217 alpha-3**: the codes in

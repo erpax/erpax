@@ -3,17 +3,17 @@ name: accounting
 description: "Use when reasoning about accounting on the quantum level — double-entry that balances entropy (karma), inheriting down the uuid parent chain where the parent_id is the DNA; the universal ledger's quantum facet."
 atomPath: "quantum/accounting"
 coordinate: "quantum/accounting · 4/weave · 4fba7c74"
-contentUuid: "8c8a18de-975a-510b-bdc2-a60434f310ba"
-diamondUuid: "aa1940f7-0a1e-8e3b-b4c6-51bf49ebce0a"
+contentUuid: "96af9723-5fb9-577e-b33f-4ac3ca2b00f5"
+diamondUuid: "93ed6322-be0e-867f-9693-79e5d8e5ff66"
 uuid: "4fba7c74-4d97-8f91-9911-0f1b9daed18f"
 horo: 4
 typography:
   partition: quantum
-  bondDegree: 824
+  bondDegree: 826
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a9aa5cb2-25f0-8a41-ae2c-24d5054cfb43"
+  computationUuid: "8f792627-7ea6-83aa-969d-be0606b0b243"
   stages:
     - stage: path
       stageUuid: "864dffee-010b-8c9c-8c5b-1ff78e2e46ea"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b65259b0-bc7d-8066-8999-e00ad07ad68e"
     - stage: horo
-      stageUuid: "df438a45-39b1-88db-92b7-12ff27714a0d"
+      stageUuid: "7041d23c-75b6-80a7-b8bc-25974009e6b4"
     - stage: seal
       stageUuid: "51d92256-6304-8943-bd33-cc052a28b59c"
     - stage: uuid
-      stageUuid: "f4752a2d-cbbb-828b-8778-6fca19cfbaa5"
+      stageUuid: "3440036d-a3e9-8777-acfd-b58e603de204"
 quantum:
   superposition:
     - account
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "a9aa5cb2-25f0-8a41-ae2c-24d5054cfb43"
-    contentUuid: "8c8a18de-975a-510b-bdc2-a60434f310ba"
+    computationUuid: "8f792627-7ea6-83aa-969d-be0606b0b243"
+    contentUuid: "96af9723-5fb9-577e-b33f-4ac3ca2b00f5"
 version: 2
 ---
 # quantum/accounting — karma double-entry + the DNA chain
@@ -73,4 +73,4 @@ Matter-twin: `src/quantum/accounting/index.ts` (`dnaChain` ← [[dna]] · `karma
 
 @audit composed from @/entry (double-entry) + @/uuid/matrix (the parent chain); computed on the live matrix
 
-<sub>content-uuid `8c8a18de-975a-510b-bdc2-a60434f310ba` · account `quantum/accounting` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `96af9723-5fb9-577e-b33f-4ac3ca2b00f5` · account `quantum/accounting` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

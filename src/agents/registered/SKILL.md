@@ -3,13 +3,13 @@ name: registered
 description: "Use when reasoning about registered — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: "agents/registered"
 coordinate: "agents/registered · 4/weave · 1700fdc3"
-contentUuid: "0ebc957f-bd45-54b3-8c54-1c7221bfa02b"
+contentUuid: "db704e05-ba78-5cad-963c-b1ff34d09054"
 diamondUuid: "436e554d-dc1d-8ff9-a9d1-e2da4c0b2cfb"
 uuid: "1700fdc3-76ea-8c8c-8915-d57b42aff3b7"
 horo: 4
 typography:
   partition: agents
-  bondDegree: 16
+  bondDegree: 20
 standards:
   - "COSO-2013"
   - "EU-2016/679"

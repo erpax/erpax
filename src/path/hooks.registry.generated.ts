@@ -389,6 +389,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "currency/fallback",
   "currency/rates",
   "currency/reconciliation",
+  "currency/registered",
   "customer/segments",
   "customers",
   "customers/contracts",
@@ -624,6 +625,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "i18n/localization",
   "i18n/request",
   "i18n/routing",
+  "i18n/tag",
   "iban",
   "identification",
   "identity",
@@ -1513,7 +1515,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1506 as const
+export const ATOM_LEDGER_PATH_COUNT = 1508 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -2924,6 +2926,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "currency",
     "currency/reconciliation"
   ],
+  "currency/registered": [
+    "currency",
+    "currency/registered"
+  ],
   "customer/segments": [
     "customer/segments"
   ],
@@ -3766,6 +3772,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "i18n/routing": [
     "i18n",
     "i18n/routing"
+  ],
+  "i18n/tag": [
+    "i18n",
+    "i18n/tag"
   ],
   "iban": [
     "iban"
@@ -7058,4 +7068,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 856 as const
+export const MERGED_NESTED_PATH_COUNT = 858 as const
