@@ -14,7 +14,11 @@ import type { AccessRole } from '@/uuid/share'
 
 export const atomPath = 'staffing' as const
 
-/** Hours in a full-time year. See SKILL.md. */
+/**
+ * Hours in a full-time year.
+ *
+ * @standard EU 2003/88 Art. 6 — maximum weekly working time (48h) less statutory leave
+ */
 export const FTE_HOURS = 1720
 
 /** What a position costs, at the anchor the bank supplies. */

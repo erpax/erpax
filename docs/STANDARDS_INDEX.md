@@ -215,6 +215,7 @@ src/allow/public/read/tenant/test.ts:6: * @standard ISO/IEC-29119:2022 software-
 src/aml/index.ts:4: * @standard EU 2015/849 Art. 33 — report to the FIU promptly, before executing where possible
 src/aml/index.ts:5: * @standard FATF Recommendation 20 — suspicious transaction reporting
 src/aml/index.ts:6: * @standard EU 2015/847 — information accompanying transfers of funds
+src/aml/index.ts:81: * @standard EU 2015/849 Art. 33(1) — reporting obligation, no permitted delay
 src/analytics/BudgetVsActualCard.tsx:10: * @standard ECMA-262 ECMAScript-2024 baseline
 src/analytics/BudgetVsActualCard.tsx:11: * @standard ISO-4217:2015 currency-codes monetary-display
 src/analytics/CostAnalysisCard.tsx:10: * @standard ECMA-262 ECMAScript-2024 baseline
@@ -1834,8 +1835,10 @@ src/journal/entries/rounding/adjustments/index.ts:10: * @standard ISO-4217:2015 
 src/journal/entries/rounding/adjustments/index.ts:11: * @standard ISO-8601-1:2019 date-time adjustment-date
 src/journal/entry/service/index.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
 src/journal/entry/service/index.ts:13: * @standard ISO-4217:2015 currency-codes
+src/kyc/index.ts:15: * @standard EU 2015/849 Art. 11 — the amounts at which CDD is triggered
 src/kyc/index.ts:4: * @standard EU 2015/849 (AMLD4) as amended by EU 2018/843 (AMLD5) — customer due diligence
 src/kyc/index.ts:5: * @standard FATF Recommendations 10 · 12 · 22 — CDD, politically exposed persons, DNFBPs
+src/kyc/index.ts:75: * @standard EU 2015/849 Art. 13(1) — customer due diligence measures
 src/law/folder/index.ts:41: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability
 src/leads/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/leads/index.ts:12: * @standard ISO-3166-1:2020 country-codes
@@ -2397,6 +2400,8 @@ src/rfc/9110/get/redirects/test.ts:4: * @standard ISO/IEC-29119:2022 software-te
 src/rich/text/index.tsx:4: * @standard W3C HTML5 Living Standard rich-text-output
 src/rich/text/index.tsx:5: * @standard CommonMark 0.31 markdown-fallback
 src/rich/text/index.tsx:6: * @standard schema.org HTMLRichText
+src/risk/index.ts:13: * @standard EU 575/2013 (CRR) Art. 392 — definition of a large exposure
+src/risk/index.ts:20: * @standard EU 575/2013 (CRR) Art. 395(1) — the large-exposure limit
 src/risk/index.ts:4: * @standard EU 575/2013 (CRR) Art. 392 — definition of a large exposure
 src/risk/index.ts:5: * @standard EU 575/2013 (CRR) Art. 395 — limits to large exposures
 src/risk/index.ts:6: * @standard EU 575/2013 (CRR) Art. 4(1)(39) — group of connected clients
@@ -2711,6 +2716,7 @@ src/spec/generator/types.ts:12: * @standard ISO/IEC 25010:2023 §5 modularity
 src/spec/generator/types.ts:13: * @standard ISO/IEC 12207 software-life-cycle
 src/speech/index.ts:12: * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position
 src/sql/index.ts:9: * @standard SQL SELECT (a minimal subset); deterministic canonicalisation
+src/staffing/index.ts:20: * @standard EU 2003/88 Art. 6 — maximum weekly working time (48h) less statutory leave
 src/staffing/index.ts:4: * @standard SFIA 8 — responsibility levels 1..7
 src/staffing/index.ts:5: * @standard ESCO v1.2 / ISCO-08 — occupation and competency classification
 src/staffing/index.ts:6: * @standard NIST INCITS-359 — role-based access control

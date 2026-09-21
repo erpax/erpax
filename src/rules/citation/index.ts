@@ -13,7 +13,7 @@ import { corpusFiles, textOf } from '@/syntax/cache'
 export const atomPath = 'rules/citation' as const
 
 /** The tags that name an EXTERNAL authority. `@invariant` and `@audit` assert; these cite. */
-export const CITATION_TAGS = ['standard', 'accounting', 'compliance', 'quality', 'security'] as const
+const CITATION_TAGS = ['standard', 'accounting', 'compliance', 'quality', 'security'] as const
 
 /** DECLARED — words that namespace a standard instead of naming one (`BG` alone cites nothing). */
 export const NAMESPACE_WORDS: ReadonlySet<string> = new Set([
@@ -66,6 +66,23 @@ export function citationsIn(file: string, text: string = textOf(file)): Readonly
     }
   }
   return out
+}
+
+/**
+ * Does this comment text cite a real standard? The one question another gate needs to ask.
+ *
+ * [[matrix]] asks it of a constant's own docstring: a statutory threshold is as underivable as a
+ * physical one, and the citation beside it is the evidence that it IS statutory.
+ */
+export function citesStandard(comment: string): boolean {
+  for (const line of comment.split('\n')) {
+    TAG.lastIndex = 0
+    let m: RegExpExecArray | null
+    while ((m = TAG.exec(line)) !== null) {
+      if (citationToken(m[2] ?? '') !== undefined) return true
+    }
+  }
+  return false
 }
 
 /** standard → the atoms that cite it. The corpus's evidence surface, in one pass. */

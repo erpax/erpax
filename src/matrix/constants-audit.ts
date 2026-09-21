@@ -12,12 +12,14 @@
 import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import ts from 'typescript'
+import { citesStandard } from '@/rules/citation'
 
 /** Matrix constants-audit coordinate — lawful vs crack categorization anchor. */
 export const CONSTANTS_AUDIT_COORDINATE = '82bdf99d' as const
 
 export type ConstantCategory =
   | 'lawful-physical'
+  | 'lawful-statutory'
   | 'lawful-binding'
   | 'lawful-code'
   | 'seal-debt'
@@ -195,6 +197,7 @@ const categorize = (
   constName: string,
   initializer: ts.Expression | undefined,
   atomLeaf: string,
+  doc: string = '',
 ): ConstantCategory => {
   if (LAWFUL_PHYSICAL.has(constName)) return 'lawful-physical'
   if (LAWFUL_BINDING_NAMES.has(constName) || LAWFUL_BINDING_RE.test(constName)) return 'lawful-binding'
@@ -206,6 +209,15 @@ const categorize = (
   // No initializer (declare const) or a function/computed expression is CODE — it
   // already computes; it is not a static value a theorem could fold.
   if (!initializer || !isDataLiteral(initializer)) return 'lawful-code'
+  // LAST, so it narrows nothing else: a data literal that CITES A STATUTE is not seal-debt.
+  //
+  // A statutory threshold is as underivable as a physical one, and more so — CRR Art. 395 fixes the
+  // large-exposure limit at 25% because a legislature chose 25%, and "compute it from sealed state"
+  // has no answer. The audit already exempts constants of nature, by a hand-kept NAME list; this
+  // exempts a legal constant by the CITATION beside it, which is evidence rather than membership.
+  // The citation must name a real standard ([[rules]]/citation refuses prose about one), and that
+  // same gate is what keeps it from quietly leaving the corpus afterwards.
+  if (doc !== '' && citesStandard(doc)) return 'lawful-statutory'
   return 'crack'
 }
 
@@ -216,17 +228,33 @@ const atomLeafOf = (relFile: string): string => {
 }
 
 /** Every exported `const` name + its initializer, read from the grammar (not a regex). */
-function exportedConsts(file: string, text: string): ReadonlyArray<{ name: string; init: ts.Expression | undefined }> {
+function exportedConsts(
+  file: string,
+  text: string,
+): ReadonlyArray<{ name: string; init: ts.Expression | undefined; doc: string }> {
   const sf = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true)
-  const out: { name: string; init: ts.Expression | undefined }[] = []
+  const out: { name: string; init: ts.Expression | undefined; doc: string }[] = []
   const visit = (node: ts.Node): void => {
     if (
       ts.isVariableStatement(node) &&
       node.declarationList.flags & ts.NodeFlags.Const &&
       node.modifiers?.some((m) => m.kind === ts.SyntaxKind.ExportKeyword)
     ) {
+      // ONLY the block that is this declaration's own docstring.
+      //
+      // getLeadingCommentRanges at a file's first statement returns the MODULE HEADER, and a header
+      // citing a standard would then exempt the first exported const of every such file — measured:
+      // it made `APP_COLLECTION_SLUGS` lawful out of a header citing SOX §404, which says nothing
+      // about that list. Take the LAST range, and only when nothing but a single line break
+      // separates it from the declaration.
+      const ranges = ts.getLeadingCommentRanges(text, node.getFullStart()) ?? []
+      const own = ranges[ranges.length - 1]
+      const gap = own === undefined ? '' : text.slice(own.end, node.getStart(sf))
+      const doc = own !== undefined && /^\s*\n?\s*$/.test(gap) && !gap.includes('\n\n')
+        ? text.slice(own.pos, own.end)
+        : ''
       for (const decl of node.declarationList.declarations) {
-        if (ts.isIdentifier(decl.name)) out.push({ name: decl.name.text, init: decl.initializer })
+        if (ts.isIdentifier(decl.name)) out.push({ name: decl.name.text, init: decl.initializer, doc })
       }
     }
     ts.forEachChild(node, visit)
@@ -243,6 +271,7 @@ export function auditConstants(cwd: string = process.cwd()): ConstantAuditReport
   const entries: ConstantAuditEntry[] = []
   const byCategory: Record<ConstantCategory, number> = {
     'lawful-physical': 0,
+    'lawful-statutory': 0,
     'lawful-binding': 0,
     'lawful-code': 0,
     'seal-debt': 0,
@@ -255,8 +284,8 @@ export function auditConstants(cwd: string = process.cwd()): ConstantAuditReport
     const content = readFileSync(join(cwd, rel), 'utf8')
     const atomPath = atomPathOf(rel)
     const atomLeaf = atomLeafOf(rel)
-    for (const { name: constName, init } of exportedConsts(rel, content)) {
-      const category = categorize(constName, init, atomLeaf)
+    for (const { name: constName, init, doc } of exportedConsts(rel, content)) {
+      const category = categorize(constName, init, atomLeaf, doc)
       entries.push({ file: rel, atomPath, constName, category })
       byCategory[category]++
       if (category !== 'crack' && category !== 'seal-debt') {

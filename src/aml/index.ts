@@ -75,7 +75,11 @@ export function reportOwed(facts: ReportFacts): ReportKind {
   return 'none'
 }
 
-/** Art. 33(1) — a suspicion report is owed PROMPTLY and, where possible, before the transaction is executed. See SKILL.md. */
+/**
+ * A suspicion report is owed PROMPTLY and, where possible, before the transaction is executed.
+ *
+ * @standard EU 2015/849 Art. 33(1) — reporting obligation, no permitted delay
+ */
 export const SUSPICION_DELAY_MS = 0
 
 /** A suspicion report may not wait for a batch. True when the movement must be held. */

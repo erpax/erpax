@@ -7,10 +7,18 @@
  */
 export const atomPath = 'risk' as const
 
-/** Art. 392 — an exposure at or above this share of Tier 1 capital is a LARGE exposure. */
+/**
+ * An exposure at or above this share of Tier 1 capital is a LARGE exposure.
+ *
+ * @standard EU 575/2013 (CRR) Art. 392 — definition of a large exposure
+ */
 export const LARGE_EXPOSURE_SHARE = 0.1
 
-/** Art. 395(1) — an exposure may not EXCEED this share of Tier 1 capital. */
+/**
+ * An exposure may not EXCEED this share of Tier 1 capital.
+ *
+ * @standard EU 575/2013 (CRR) Art. 395(1) — the large-exposure limit
+ */
 export const EXPOSURE_LIMIT_SHARE = 0.25
 
 /** One exposure, in minor units. `group` names the connected client it belongs to, if any. */

@@ -9,7 +9,11 @@ export const atomPath = 'kyc' as const
 /** Art. 13 standard · Art. 15–17 simplified · Art. 18–24 enhanced. */
 export type DiligenceLevel = 'simplified' | 'standard' | 'enhanced'
 
-/** DECLARED thresholds, in euro. See SKILL.md. */
+/**
+ * DECLARED thresholds, in euro. See SKILL.md.
+ *
+ * @standard EU 2015/849 Art. 11 — the amounts at which CDD is triggered
+ */
 export const THRESHOLD = {
   /** Art. 11(b)(i) — an occasional transaction at or above this triggers CDD. */
   occasionalTransaction: 15000,
@@ -65,7 +69,11 @@ export function diligenceLevel(f: CustomerFacts): DiligenceLevel {
   return 'standard'
 }
 
-/** Art. 13(1) — the evidence each level calls for. DECLARED; a bank may require more, never less. */
+/**
+ * The evidence each level calls for. DECLARED; a bank may require more, never less.
+ *
+ * @standard EU 2015/849 Art. 13(1) — customer due diligence measures
+ */
 export const EVIDENCE: Readonly<Record<DiligenceLevel, readonly string[]>> = {
   simplified: ['identity'],
   standard: ['identity', 'address', 'beneficial-owner', 'purpose'],

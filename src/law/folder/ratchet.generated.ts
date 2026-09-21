@@ -8,7 +8,7 @@
 import type { RatchetAxis } from './baseline-types'
 
 export const RATCHET_GENERATED = {
-  contentUuid: "8d56c835-d7fd-886b-853a-f1b71d0b2c19",
+  contentUuid: "0b9c463c-f425-8c31-a463-1f0fe359f567",
   sealedAt: "2026-09-21",
   axes: {
     "folder-name": 0,
@@ -31,7 +31,7 @@ export const RATCHET_GENERATED = {
     "linear-logic": 4,
     "linear-gap": 22,
     "hand-maintained": 1,
-    "matrix-crack": 786,
+    "matrix-crack": 746,
   },
 } as const satisfies {
   readonly contentUuid: string
