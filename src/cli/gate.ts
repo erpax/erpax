@@ -56,6 +56,11 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // existed. A lane that cannot run guards nothing — it reads as coverage and is silence. Named by
   // its full path, which is unambiguous by construction.
   ['face', 'pnpm erpax rules/face'],
+  // CITATION — the dual of FACE: an atom may never quietly stop CITING an authority. Two purges on
+  // 2026-09-20 deleted module docstrings along with the dead export under them, and the corpus
+  // stopped citing BG ЗПУПС and IFRS 1 entirely — invisible to tsc, to the waves, and to the SKILLs
+  // that still described the rule. Zero is a theorem ([[rules]]/citation).
+  ['citation', 'pnpm erpax rules/citation'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],
   ['lint', 'pnpm erpax lint'],

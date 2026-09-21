@@ -1,5 +1,22 @@
-
-
+/**
+ * Наредба Н-18 чл. 3, ал. 1 — СУПТО fiscalization *scope* by payment method.
+ *
+ * A sale requires a касов бон (УНП + fiscal device, i.e. СУПТО) when it is paid in cash or by a
+ * cash-equivalent (bank/credit card, voucher). Sales settled by any of the enumerated NON-cash
+ * channels are **lawfully outside СУПТО** — no fiscal receipt is required (an invoice/document is
+ * issued instead): deposit into a bank account / credit transfer (банков превод), direct debit
+ * (директен дебит), cash transfer via a payment-service provider (ЗПУПС), and postal money
+ * transfer / наложен платеж via a licensed postal operator, where the courier issues the receipt
+ * that stands in for the касов бон.
+ *
+ * This is the *legal* way to not use СУПТО — by being out of scope, never by circumventing it. The
+ * classifier is conservative: an unknown / blank payment type is treated as IN scope (must
+ * fiscalize), so a sale can never silently fall out of СУПТО by omission.
+ *
+ * @standard BG Наредба-Н-18 §чл.3-ал.1 fiscalization-scope-by-payment
+ * @standard BG ЗДДС §118 fiscal-receipt-obligation
+ * @standard BG ЗПУПС payment-services (PSP transfers)
+ */
 /** Payment methods LAWFULLY OUTSIDE СУПТО (Наредба Н-18 чл. 3, ал. 1). */
 export const SUPTO_EXEMPT_PAYMENT_TYPES = [
   'bank_transfer',

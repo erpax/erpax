@@ -925,8 +925,12 @@ src/csrd/disclosures/index.ts:18: * @standard ISO 14064-1:2018 ghg-quantificatio
 src/csrd/disclosures/index.ts:19: * @standard EU EFRAG ESRS-XBRL taxonomy
 src/css/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/currency/fallback/index.test.ts:19: * @standard ISO 4217 §6.5 "No currency" (XXX numeric 999)
-src/currency/fallback/index.ts:372: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
-src/currency/fallback/index.ts:373: * @standard IAS 21 §38 presentation-currency translation
+src/currency/fallback/index.ts:10: * @standard ISO 4217 §6.5 "No currency" — code XXX, numeric 999
+src/currency/fallback/index.ts:11: * @standard EN 16931 §BG-7 currency-code element (XXX accepted)
+src/currency/fallback/index.ts:12: * @standard ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)
+src/currency/fallback/index.ts:13: * @standard IFRS 1 §IG7 non-monetary items presentation
+src/currency/fallback/index.ts:386: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
+src/currency/fallback/index.ts:387: * @standard IAS 21 §38 presentation-currency translation
 src/currency/fallback/uuid.ts:57: * @standard RFC 9562 §5.8 uuidv8 (the bottom-half hash family)
 src/currency/fallback/uuid.ts:58: * @standard RFC 8785 JCS (the canonicalisation that makes equivalence work)
 src/currency/fallback/uuid.ts:59: * @standard ISO 4217 §6.5 (X-codes — the currency identity layer)
@@ -2017,6 +2021,9 @@ src/nace/rev2/index.ts:11: * @standard NAICS 2022 (US/CA/MX companion)
 src/nace/rev2/index.ts:9: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
 src/naredba/n/18/index.ts:8: * @standard BG Наредба-Н-18 §СУПТО retail-fiscal-regime
 src/naredba/n/18/index.ts:9: * @standard BG ЗДДС §118 fiscal-receipt-obligation
+src/naredba/n/18/scope/index.ts:16: * @standard BG Наредба-Н-18 §чл.3-ал.1 fiscalization-scope-by-payment
+src/naredba/n/18/scope/index.ts:17: * @standard BG ЗДДС §118 fiscal-receipt-obligation
+src/naredba/n/18/scope/index.ts:18: * @standard BG ЗПУПС payment-services (PSP transfers)
 src/naredba/n/18/scope/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
 src/naredba/n/18/scope/test.ts:7: * @standard BG Наредба-Н-18 §чл.3-ал.1
 src/naredba/n/18/unp/index.ts:19: * @standard BG Наредба-Н-18 §СУПТО УНП unique-sales-number
@@ -2413,6 +2420,7 @@ src/rules/audience/index.ts:42: * @standard ISO-19011:2018 §6.4 audit-evidence 
 src/rules/bypass/index.ts:29: * @standard ISO/IEC 27001 A.5.23 — cloud-service tenant isolation
 src/rules/bypass/index.ts:30: * @standard ISO/IEC 25010:2023 §5.4 — security: confidentiality by default
 src/rules/canonical/index.ts:17: * @standard ISO/IEC 25010:2023 §5.5 reusability — use the dependency or drop it
+src/rules/citation/index.ts:4: * @standard ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence
 src/rules/collapse/index.ts:32: * @standard RFC 9562 §5.8 — content-address (same content, same address)
 src/rules/compatibility/index.ts:17: * @standard ISO/IEC 25010:2023 §5.3 compatibility — co-existence with the framework namespace
 src/rules/confine/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6.2 — modularity: the whole is confined, not held
@@ -2954,6 +2962,7 @@ src/types/period/end/index.ts:4: * @standard ISO-8601-1:2019 date-time period
 src/types/receivables/index.ts:4: * @standard EN-16931:2017 §BG-7 buyer
 src/types/receivables/index.ts:5: * @standard ISO-4217:2015 currency-codes
 src/types/receivables/index.ts:6: * @standard ISO-8601-1:2019 date-time invoice-date due-date
+src/types/sti/index.ts:15: * @standard ECMA-262 ECMAScript-2024 baseline
 src/types/tenant/index.ts:10: * @standard ISO-3166-1:2020 country-codes
 src/types/tenant/index.ts:11: * @standard ISO-4217:2015 currency-codes
 src/types/tenant/index.ts:12: * @standard BCP-47 language-tag
@@ -6437,4 +6446,6 @@ src/dashboard/spec/index.ts:24: * @quality ISO-25010 maintainability shared-voca
 src/dashboard/spec/projection.ts:17: * @quality ISO-25010 maintainability shared-vocabulary
 src/discriminator/index.ts:13: * @quality ISO-25010 maintainability single-discriminator-vocabulary
 src/horo/index.ts:24: * @quality ISO-25010 maintainability bounded-stable-state-space
+src/rules/citation/index.ts:5: * @quality ISO-25010:2023 §5.6 maintainability — evidence survives the refactor that moves it
+src/types/sti/index.ts:16: * @quality ISO-25010 maintainability discriminated-subtype-safety
 ```
