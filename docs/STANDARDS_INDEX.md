@@ -212,6 +212,7 @@ src/allocation/index.ts:10: * @standard Hamilton (largest-remainder) apportionme
 src/allocation/index.ts:8: * @standard SFIA 8 responsibility-levels (1..7) — job-type categorisation
 src/allocation/index.ts:9: * @standard ESCO / ISCO-08 competency framework (skill level)
 src/allow/public/read/tenant/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
+src/aml/index.ts:106: * @standard EU 2015/849 Art. 33(1) — report promptly; refrain from executing a SUSPECTED transaction
 src/aml/index.ts:4: * @standard EU 2015/849 Art. 33 — report to the FIU promptly, before executing where possible
 src/aml/index.ts:5: * @standard FATF Recommendation 20 — suspicious transaction reporting
 src/aml/index.ts:6: * @standard EU 2015/847 — information accompanying transfers of funds

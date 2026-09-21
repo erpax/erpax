@@ -1,12 +1,16 @@
 import { describe, expect, it } from 'vitest'
 import {
+  REPORT_KINDS,
   STRUCTURING_BAND,
   STRUCTURING_WINDOW_MS,
+  SUSPICION_DELAY_MS,
+  assertReportingObligationHolds,
   holdBeforeExecuting,
   justBelow,
   reportOwed,
   structuring,
   type Movement,
+  type ReportKind,
 } from '@/aml'
 
 const T = 10000
@@ -81,5 +85,27 @@ describe('aml — what `none` means, stated where it cannot be missed', () => {
     const ordinary: Movement[] = [{ amount: 40, at: at(9) }, { amount: 120, at: at(10) }]
     expect(reportOwed({ movements: ordinary, threshold: T })).toBe('none')
     expect(reportOwed({ movements: [], threshold: T })).toBe('none')
+  })
+})
+
+describe('aml — Art. 33(1) as a fail-closed check', () => {
+  it('holds on the live atom, and the delay is zero', () => {
+    expect(() => assertReportingObligationHolds()).not.toThrow()
+    expect(SUSPICION_DELAY_MS).toBe(0)
+  })
+
+  it('REPORT_KINDS is the whole union — the check is exhaustive, not a sample', () => {
+    const kinds: ReportKind[] = ['suspicious', 'threshold', 'none']
+    expect([...REPORT_KINDS].sort()).toEqual([...kinds].sort())
+  })
+
+  it('a THRESHOLD declaration does not hold the payment — and the gate must not demand it', () => {
+    // Art. 33(1) asks a firm to refrain from carrying out a transaction it SUSPECTS. A threshold
+    // declaration is an obligation to report, not to stop a lawful payment. The first version of
+    // the assert demanded a hold for every reporting kind, which would have encoded a false
+    // statement about the directive into a gate.
+    expect(holdBeforeExecuting('threshold')).toBe(false)
+    expect(holdBeforeExecuting('suspicious')).toBe(true)
+    expect(holdBeforeExecuting('none')).toBe(false)
   })
 })
