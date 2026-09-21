@@ -935,6 +935,8 @@ src/currency/fallback/index.ts:387: * @standard IAS 21 §38 presentation-currenc
 src/currency/fallback/uuid.ts:57: * @standard RFC 9562 §5.8 uuidv8 (the bottom-half hash family)
 src/currency/fallback/uuid.ts:58: * @standard RFC 8785 JCS (the canonicalisation that makes equivalence work)
 src/currency/fallback/uuid.ts:59: * @standard ISO 4217 §6.5 (X-codes — the currency identity layer)
+src/currency/index.ts:32: * @standard ISO 4217 — currency codes: the alphabetic code identifies the currency
+src/currency/index.ts:72: * @standard ISO 4217 §5 — the code list is maintained by the registration authority
 src/currency/rates/index.ts:14: * @standard ISO-4217:2015 currency-codes from-currency to-currency
 src/currency/rates/index.ts:15: * @standard ISO-8601-1:2019 date-time rate-date
 src/currency/reconciliation/index.ts:15: * @standard ISO-4217:2023 (currency codes, decimal places)
@@ -1401,10 +1403,12 @@ src/hero/config/index.ts:6: * @standard WAI-ARIA 1.2 region-landmark-role
 src/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/i18n/harvest/index.ts:30: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/i18n/harvest/index.ts:31: * @standard BCP-47 language tags
-src/i18n/index.ts:11: * @standard ECMA-402 internationalization-api
-src/i18n/index.ts:12: * @standard Unicode-CLDR locale-data
-src/i18n/index.ts:13: * @standard W3C Internationalization-Best-Practices
-src/i18n/index.ts:7: * @standard BCP-47 language-tag
+src/i18n/index.ts:13: * @standard ECMA-402 internationalization-api
+src/i18n/index.ts:14: * @standard Unicode-CLDR locale-data
+src/i18n/index.ts:15: * @standard W3C Internationalization-Best-Practices
+src/i18n/index.ts:186: * @standard BCP 47 (RFC 5646) — tags for identifying languages
+src/i18n/index.ts:233: * @standard BCP 47 (RFC 5646) §2.2.9 — classes of conformance
+src/i18n/index.ts:9: * @standard BCP-47 language-tag
 src/i18n/localization/index.ts:10: * @standard ECMA-402 internationalization-api
 src/i18n/localization/index.ts:11: * @standard Unicode-CLDR locale-data
 src/i18n/localization/index.ts:12: * @standard EU 1958/1 official-languages-of-the-european-union
@@ -3445,9 +3449,9 @@ src/get/media/url/index.ts:11: * @rfc 3986 §2.1 percent-encoding
 src/get/media/url/index.ts:12: * @rfc 3986 §3.4 query-component
 src/get/preview/secret/index.ts:6: * @rfc 5869 hkdf
 src/get/tenant/from/request/index.ts:5: * @rfc 6265 http-state-management cookies
-src/i18n/index.ts:10: * @rfc 8259 json
-src/i18n/index.ts:8: * @rfc 5646 tags-for-identifying-languages
-src/i18n/index.ts:9: * @rfc 4647 matching-of-language-tags
+src/i18n/index.ts:10: * @rfc 5646 tags-for-identifying-languages
+src/i18n/index.ts:11: * @rfc 4647 matching-of-language-tags
+src/i18n/index.ts:12: * @rfc 8259 json
 src/i18n/localization/index.ts:9: * @rfc 5646 tags-for-identifying-languages
 src/i18n/request/index.ts:10: * @rfc 9110 http-semantics accept-language-fallback
 src/i18n/request/index.ts:8: * @rfc 5646 tags-for-identifying-languages
