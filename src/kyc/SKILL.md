@@ -3,7 +3,7 @@ name: kyc
 description: "Use when reasoning about kyc — There is a function this atom refuses to contain, and naming the refusal is the point: **nothing here decides whether a customer is laundering money.** That is not decidable, and…"
 atomPath: kyc
 coordinate: "kyc · 5/round · 713ab1da"
-contentUuid: "f00aecee-5c2e-5e29-9290-8f6f8344dc17"
+contentUuid: "3d62125b-52e8-52e7-9905-da8f0d0793c6"
 diamondUuid: "6d7e1a76-43aa-8ad3-b77a-17b5cd299fc8"
 uuid: "713ab1da-92f9-8c43-bf92-7ca805860760"
 horo: 5
@@ -12,6 +12,8 @@ typography:
   bondDegree: 19
 standards:
   - "EU 2015/849 (AMLD4) as amended by EU 2018/843 (AMLD5) — customer due diligence"
+  - "EU 2015/849 Art. 11 — the amounts at which CDD is triggered"
+  - "EU 2015/849 Art. 13(1) — customer due diligence measures"
   - "EU-2015/849"
   - "EU-2018/843"
   - "FATF Recommendations 10 · 12 · 22 — CDD, politically exposed persons, DNFBPs"

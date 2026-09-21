@@ -3,7 +3,7 @@ name: staffing
 description: "Use when reasoning about staffing — Six atoms already computed the five faces of a position. **Nothing joined them.**"
 atomPath: staffing
 coordinate: "staffing · 2/share · 1d6af325"
-contentUuid: "fb222f80-35d7-55ab-8f92-05bc4c704f85"
+contentUuid: "328cd125-ac8a-5965-8926-43fabf60e4e9"
 diamondUuid: "75140d27-0ce5-8318-9729-5bb2158fbb5a"
 uuid: "1d6af325-a3c8-84dd-9430-174518f34a89"
 horo: 2
@@ -13,6 +13,7 @@ typography:
 standards:
   - ESCO
   - "ESCO v1.2 / ISCO-08 — occupation and competency classification"
+  - "EU 2003/88 Art. 6 — maximum weekly working time (48h) less statutory leave"
   - "NIST INCITS-359 — role-based access control"
   - SFIA
   - SFIA 8 — responsibility levels 1..7

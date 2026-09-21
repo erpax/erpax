@@ -3,7 +3,7 @@ name: risk
 description: "Use when reasoning about risk — Nothing here predicts a default. Credit risk is a **forecast**, and a function returning one would be a number a bank could point at with nothing behind it — the same refusal kyc…"
 atomPath: risk
 coordinate: "risk · 8/crest · fbd9eb2e"
-contentUuid: "0fcc26f9-a605-55ea-8075-3b2bfa6bd227"
+contentUuid: "fbb5e56a-0a00-5545-8a8f-f2b5a9294831"
 diamondUuid: "f3a4f169-bfdf-8dff-8a38-78b1d7cda8a6"
 uuid: "fbd9eb2e-831d-88ff-bdef-d0cd4f893583"
 horo: 8
@@ -13,6 +13,7 @@ typography:
 standards:
   - "EU 575/2013 (CRR) Art. 392 — definition of a large exposure"
   - "EU 575/2013 (CRR) Art. 395 — limits to large exposures"
+  - "EU 575/2013 (CRR) Art. 395(1) — the large-exposure limit"
   - "EU 575/2013 (CRR) Art. 4(1)(39) — group of connected clients"
 bindings: []
 signatures:

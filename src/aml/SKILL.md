@@ -3,7 +3,7 @@ name: aml
 description: "Use when reasoning about aml — Laundering is an offence **a court finds**. A suspicious-activity report is an obligation **a rule triggers**."
 atomPath: aml
 coordinate: "aml · 5/round · 70b313a6"
-contentUuid: "a2186cb1-bc4a-5a6c-ac0d-fb08dd14197e"
+contentUuid: "1bcfa5ff-48e7-5682-8ece-e263f2e0bb16"
 diamondUuid: "edfe6b9c-6a83-8735-8ab3-b9238f884949"
 uuid: "70b313a6-6144-8b62-991c-df57351fa75f"
 horo: 5
@@ -13,6 +13,7 @@ typography:
 standards:
   - "EU 2015/847 — information accompanying transfers of funds"
   - "EU 2015/849 Art. 33 — report to the FIU promptly, before executing where possible"
+  - "EU 2015/849 Art. 33(1) — reporting obligation, no permitted delay"
   - "EU-2015/847"
   - "EU-2015/849"
   - FATF Recommendation 20 — suspicious transaction reporting
