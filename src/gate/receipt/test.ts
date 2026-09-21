@@ -1,8 +1,9 @@
-import { mkdtempSync, mkdirSync, renameSync, rmSync, utimesSync, writeFileSync } from 'node:fs'
+import { mkdtempSync, mkdirSync, readFileSync, renameSync, rmSync, utimesSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
 import {
+  breakEven,
   buildClosureHash,
   lintClosureHash,
   payloadTypesClosureHash,
@@ -14,6 +15,7 @@ import {
   corpusScanFold,
   sealedScan,
   sealScan,
+  worthSealing
 } from '@/gate/receipt'
 
 const tmp = mkdtempSync(join(tmpdir(), 'receipt-'))
@@ -282,5 +284,55 @@ describe('gate/receipt — the lint verdict is its own address', () => {
     const tmp = lintFixture()
     expect(lintClosureHash(tmp)).not.toBe(typecheckClosureHash('tsconfig.json', tmp))
     rmSync(tmp, { recursive: true, force: true })
+  })
+})
+
+describe('gate/receipt — a receipt is worth its address, or it is not', () => {
+  // THE LEAN TWIN. src/verify/lean/Receipt.lean proves the rule; this checks the twin against the
+  // same arithmetic over every small case, and READS the Lean file so a theorem it leans on cannot
+  // quietly disappear.
+  it('agrees with the Lean rule on every address x answer x runs in a small box', () => {
+    const lean = (a: number, b: number, n: number): boolean => n * a + b < n * b
+    for (let a = 0; a <= 6; a++)
+      for (let b = 0; b <= 6; b++)
+        for (let n = 0; n <= 6; n++) {
+          expect(worthSealing(a, b, n), `address=${a} answer=${b} runs=${n}`).toBe(lean(a, b, n))
+        }
+  })
+
+  it('a single run never pays — the address is added to an answer still computed once', () => {
+    for (let a = 0; a <= 8; a++) for (let b = 0; b <= 8; b++) expect(worthSealing(a, b, 1)).toBe(false)
+  })
+
+  it('an address at least as dear as the answer never pays, at any run count', () => {
+    for (let n = 0; n <= 40; n++) expect(worthSealing(1499, 1381, n)).toBe(false)
+    expect(breakEven(1499, 1381)).toBe(0)
+  })
+
+  it('the bundle the corpus actually seals pays from run two', () => {
+    // live-counts.ts measured it: 954ms to fold, 45,950ms to scan.
+    expect(worthSealing(954, 45_950, 1)).toBe(false)
+    expect(worthSealing(954, 45_950, 2)).toBe(true)
+    expect(breakEven(954, 45_950)).toBe(2)
+  })
+
+  it('once sealing pays, more runs keep paying', () => {
+    for (let n = 2; n <= 30; n++) expect(worthSealing(954, 45_950, n)).toBe(true)
+  })
+
+  it('the Lean file proves every rule the twin relies on', () => {
+    const lean = readFileSync(join(process.cwd(), 'src/verify/lean/Receipt.lean'), 'utf8')
+    for (const name of [
+      'one_run_never_pays',
+      'dear_address_never_pays',
+      'word_matter_alone_never_pays',
+      'bundle_pays_from_two',
+      'matrix_crack_pays_from_two',
+      'matrix_crack_break_even',
+      'dear_address_has_no_break_even',
+      'pays_stays_paying',
+    ]) {
+      expect(lean, `theorem ${name} missing from Receipt.lean`).toMatch(new RegExp(`^theorem ${name}\\b`, 'm'))
+    }
   })
 })

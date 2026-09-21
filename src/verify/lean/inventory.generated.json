@@ -1,11 +1,11 @@
 {
   "sealedAt": "2026-09-21",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "4c163ac09bfe52e6",
+  "sourcesHash": "6442691269644096",
   "census": {
-    "theorems": 185,
-    "axiomFree": 119,
-    "standardAxioms": 66,
+    "theorems": 192,
+    "axiomFree": 121,
+    "standardAxioms": 71,
     "stubbed": 0
   },
   "files": [
@@ -1217,6 +1217,67 @@
           "theorem": "Planck.energy_is_built_from_the_three",
           "axioms": [],
           "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Receipt.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Receipt.one_run_never_pays",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Receipt.dear_address_never_pays",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Receipt.word_matter_never_pays",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Receipt.matrix_crack_pays_from_two",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Receipt.matrix_crack_break_even",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Receipt.dear_address_has_no_break_even",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Receipt.pays_stays_paying",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
           "stubbed": false
         }
       ]

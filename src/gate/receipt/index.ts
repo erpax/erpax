@@ -231,6 +231,28 @@ const SCAN_RECEIPTS = 'node_modules/.cache/erpax/scan-receipts.json'
 const SCANNED = /\.(ts|tsx|md|json|mjs)$/
 
 /** Content address of everything a scan can see under `roots` — XOR-folded, so order-invariant; each digest binds the PATH too, so a move moves the fold. */
+/**
+ * Is a receipt worth its address? Twin of `Receipt.worthSealing` (src/verify/lean/Receipt.lean).
+ *
+ * A receipt costs the ADDRESS on every run and saves the ANSWER on all but the first. The corpus
+ * states "VERIFY BEATS RECOMPUTE" unconditionally, and unconditional is wrong: sealed at the
+ * bundle (954ms address, 45,950ms answer) it pays ~30x; sealed at a single cheap axis it never
+ * pays at all. The rule is arithmetic AT THE GRANULARITY ACTUALLY SEALED. See SKILL.md.
+ */
+export const sealedCost = (address: number, answer: number, runs: number): number =>
+  runs * address + answer
+
+/** What the same runs cost with no receipt at all. */
+export const plainCost = (address: number, answer: number, runs: number): number => runs * answer
+
+/** Seal it only when sealing genuinely costs less over `runs`. */
+export const worthSealing = (address: number, answer: number, runs: number): boolean =>
+  sealedCost(address, answer, runs) < plainCost(address, answer, runs)
+
+/** The run count past which sealing pays — 0 when a dear address means it never does. */
+export const breakEven = (address: number, answer: number): number =>
+  answer <= address ? 0 : Math.floor(answer / (answer - address)) + 1
+
 export function corpusScanFold(
   cwd: string = process.cwd(),
   roots: readonly string[] = ['src'],

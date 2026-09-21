@@ -74,6 +74,36 @@ identifier only a registration agency may assign is **received or refused, never
 [[rules]]/forge was built after three functions returned locally-minted DOIs with tests asserting
 their shape.
 
+## It does not mint a CITATION either — and that is the same law
+
+Zenodo runs the **Asclepias Broker** (MIT), which ingests citation data in **Scholix** format from
+NASA ADS, DataCite, Crossref Event Data and Europe PMC. Asked whether a depositor may add a
+citation, the help is flat: *"this is unfortunately not possible."* Citations are **computed by a
+broker and received**, exactly as a DOI is assigned by an agency and received — so a citation count
+written here would be [[rules]]/forge with a different noun. A test asserts the rendered JSON
+carries no citation count, and nothing in the corpus computes one: the `cites` and `citedBy` in
+[[proof]]/register are atoms citing a standard, which is an internal fact and says so.
+
+Citations also **aggregate across all versions** by default, so the concept DOI is what a reader
+should be given; a version DOI narrows the record to one release's citations.
+
+## What it DOES declare — `references`
+
+The deposit named one related identifier (the repository) and declared **no references**, while the
+corpus stood on 92 works it names in its own SKILLs: `Grassé, stigmergy`, `Kolmogorov complexity`,
+`Noether's theorem`, `Prigogine, dissipative structures`, the БУЛСТАТ register law. Ground the
+deposit held and had not claimed — [[rules]]/slack's law, where a claim stated weaker than the
+evidence is unheld ground.
+
+They are exactly [[proof]]/replaceable's **reference bucket**: the citations no gate can ever
+discharge, which is what a reference IS. `splitQueue().references` feeds the manifest directly, so
+the list is computed from the tree and never typed here.
+
+**Verbatim, and deliberately so.** Zenodo suggests author/year/title/publisher/DOI, and
+`references` is free text precisely because not every reference has an identifier. `Grassé,
+stigmergy` has no DOI in this corpus, and inventing one to dress the field would be forgery in the
+same commit that quotes the work.
+
 ## Drift is measured on quantities, not bytes
 
 `drift()` compares the **numbers**, not the file. A human may improve the prose, and a gate that

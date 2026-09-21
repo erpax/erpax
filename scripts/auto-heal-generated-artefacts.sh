@@ -139,11 +139,18 @@ fi
 # src/verify/lean/inventory.generated.json by src/publish/zenodo.
 #
 # Independent of the matrix: it reads the kernel record, not the tree.
+#
+# AND IT MUST CARRY THAT RECORD WITH IT. Measured 2026-09-21: the manifest was regenerated from a
+# WORKING-TREE inventory.generated.json that was never staged, so the commit's .zenodo.json claimed
+# "192 theorems across 20 files" while the commit's own inventory said 185 across 19 — the deposit
+# counted a Lean file that commit does not contain. A derived artefact committed without its input
+# is a permanent record of a tree that never existed, which is the exact drift this artefact
+# exists to prevent. Stage the pair or stage neither.
 if [ "$DRY_RUN" = 0 ]; then
   if ./node_modules/.bin/tsx src/publish/zenodo/index.ts >/tmp/erpax-zenodo.log 2>&1; then
-    if ! git diff --quiet -- .zenodo.json; then
-      echo "auto-heal: zenodo manifest drifted — regenerated"
-      git add .zenodo.json 2>/dev/null || true
+    if ! git diff --quiet -- .zenodo.json src/verify/lean/inventory.generated.json; then
+      echo "auto-heal: zenodo manifest drifted — regenerated with its kernel record"
+      git add .zenodo.json src/verify/lean/inventory.generated.json 2>/dev/null || true
       healed+=("zenodo manifest")
     fi
   else

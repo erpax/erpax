@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { readFileSync } from 'node:fs'
+import { splitQueue } from '@/proof/replaceable'
 import { RATCHET_GENERATED } from '@/law/folder/ratchet.generated'
 import { MANIFEST_PATH, census, description, drift, manifest, render, type Census, type Declared } from '@/publish/zenodo'
 
@@ -9,6 +10,7 @@ const D: Declared = {
   orcid: '0009-0000-7312-9778',
   repo: 'https://github.com/erpax/erpax',
   atoms: 3599,
+  references: ['Grassé, stigmergy', 'Kolmogorov complexity'],
 }
 
 /** The enforcement fields every fixture shares — the deposit counts gates as well as theorems. */
@@ -127,5 +129,26 @@ describe('publish/zenodo — the deposit claims the ENFORCEMENT surface, not onl
 
   it('keeps the boundary: a guardian proves its axis, never that the corpus is correct', () => {
     expect(description(census(), D)).toMatch(/never that the corpus is correct/)
+  })
+})
+
+describe('publish/zenodo — a citation is RECEIVED, and a reference is DECLARED', () => {
+  it('carries the references verbatim — Zenodo\u2019s field is free text by design', () => {
+    const m = manifest(census(), D) as { references?: readonly string[] }
+    expect(m.references).toEqual(['Grassé, stigmergy', 'Kolmogorov complexity'])
+  })
+
+  it('declares no citation COUNT — Asclepias computes those and a depositor may not add them', () => {
+    // support.zenodo.org/help/en-gb/25-citations: "this is unfortunately not possible". A citation
+    // count minted here would be rules/forge with a different noun.
+    const json = JSON.stringify(manifest(census(), D))
+    expect(json).not.toMatch(/"citation_count"|"citations"|"citedBy"/)
+  })
+
+  it('the live deposit declares the corpus\u2019s own reference bucket, and nothing it can gate', () => {
+    const refs = splitQueue(process.cwd()).references.map((r) => r.standard)
+    const obligations = splitQueue(process.cwd()).obligations.map((r) => r.standard)
+    expect(refs.length).toBeGreaterThan(0)
+    for (const o of obligations.slice(0, 20)) expect(refs).not.toContain(o)
   })
 })

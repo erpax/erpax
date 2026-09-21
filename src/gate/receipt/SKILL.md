@@ -53,6 +53,33 @@ The 21-axis corpus scan behind every ratchet cost **45,950 ms**. Folding everyth
 
 **Why this is not an optimisation.** A gate that can be skipped is prose ([[rules]]), and a gate that costs ten minutes *is* skipped — `--no-verify` was found on every push in one session, and three working tools were found disabled. Cost is what turns a law into a suggestion. Minting the address is free and forging one is not, which is the whole economy the corpus runs on ([[uuid]]).
 
+## When it pays, and when it would not — `Receipt.lean`
+
+The 48× above is a fact about **this granularity**, not about receipts. A receipt costs the address
+on *every* run and saves the answer on all but the first, so whether it pays is arithmetic:
+
+| sealed at | address | answer | verdict |
+| --- | ---: | ---: | --- |
+| the whole 21-axis bundle | 954 ms | 45,950 ms | pays from run **2** |
+| `matrix-crack` alone | 1,499 ms | 4,033 ms | pays from run **2** |
+| `word-matter` alone | 1,499 ms | 1,381 ms | **never pays, at any run count** |
+
+`word-matter` answers faster than the address that would guard it. Sealing it alone would cost the
+corpus 1,499 ms to avoid 1,381 ms, forever — and nothing here seals it alone, which is why the
+practice is right even though the slogan is unconditional. The rule is decided **at the granularity
+actually sealed**, and it can go either way on one tree.
+
+`worthSealing` and `breakEven` are the twin of `Receipt.worthSealing` and `Receipt.breakEven`
+(`src/verify/lean/Receipt.lean`, 7 theorems). The kernel proves a receipt never pays on a single
+run, never pays when the address is not cheaper than the answer, and — once it pays — keeps paying.
+`breakEven` is a division rather than an opinion, and returns 0 where no payoff exists instead of
+claiming one. The twin's test checks it against the same arithmetic over a small box and READS the
+`.lean` file, so a theorem it leans on cannot quietly disappear.
+
+**What Lean does not prove: the numbers.** 954 and 45,950 are measurements on this machine, warm,
+on 2026-09-21. A theorem proves its decision, never the facts it is fed — a colder filesystem or a
+larger tree moves both, and only the instrument that took them can say so.
+
 **Honest boundary.** The fold proves the SCANNED SET is byte-identical, never that a scan is deterministic. An axis that reads the clock, the network, or a file outside `roots` can move under a standing fold — so the receipt keys a pure content scan and nothing else, and a lost or unreadable receipt only means the scan runs again. It never means a stale answer: `sealedScan` returns the verdict at THIS fold or `null`, with no notion of "old but probably fine".
 
 ## Five verdicts now, one store
