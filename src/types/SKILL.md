@@ -3,7 +3,7 @@ name: types
 description: "Use when working with Payload's generated TypeScript types — payload-types.ts, generate:types, GeneratedTypes, CollectionSlug, typing Local API results, or fixing stale-type errors after schema changes."
 atomPath: types
 coordinate: "types · 1/base · 74da86a4"
-contentUuid: "0121f98b-26a2-5e6e-a61d-73c79467a745"
+contentUuid: "3daba06a-c257-5134-a8bc-5785fc39e415"
 diamondUuid: "749d43af-1880-8101-9681-ca6a6f3f2772"
 uuid: "74da86a4-89a2-8fee-8fd1-5012f04f9d4e"
 horo: 1
@@ -12,6 +12,7 @@ typography:
   bondDegree: 85
 standards:
   - "CoE-108+"
+  - "ECMA-262"
   - "IAS-2"
   - "IFRS-15"
   - "IFRS-16"

@@ -3,7 +3,7 @@ name: scope
 description: "Use when reasoning about scope — Наредба Н-18 чл."
 atomPath: "naredba/n/18/scope"
 coordinate: "naredba/n/18/scope · 8/crest · 595e8daf"
-contentUuid: "bae90827-37f5-50c6-b3dc-b9e667e7535c"
+contentUuid: "0af46a20-ccf1-53a0-be3e-8fce8bb50eb5"
 diamondUuid: "6fe7d2fe-65f7-89f6-a69d-41be64b07593"
 uuid: "595e8daf-74fe-8696-b1aa-f8cc857a3f3d"
 horo: 8
@@ -15,6 +15,7 @@ standards:
   - "BG ЗПУПС payment-services (PSP transfers)"
   - "BG Наредба-Н-18 §чл.3-ал.1 fiscalization-scope-by-payment"
   - "Naredba-N-18"
+  - ZDDS
 bindings: []
 signatures:
   computationUuid: "e00c6c4b-f01d-8cda-9a53-782dac6269c3"

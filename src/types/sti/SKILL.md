@@ -3,7 +3,7 @@ name: sti
 description: "Use when reasoning about sti — names the column, and describe the union, and , and narrow a row to its subtype without a cast."
 atomPath: "types/sti"
 coordinate: "types/sti · 8/crest · 68ecb508"
-contentUuid: "465b3d45-2300-574d-a389-36a89fd290d3"
+contentUuid: "b91db77c-0b65-5899-aac2-10302c40c521"
 diamondUuid: "9706b770-01ea-8d03-9798-a3ae58a4dbd6"
 uuid: "68ecb508-7db9-8347-b3f4-d38d95923b47"
 horo: 8
@@ -11,6 +11,7 @@ typography:
   partition: types
   bondDegree: 4058
 standards:
+  - "ECMA-262"
   - "ECMA-262 ECMAScript-2024 baseline"
 bindings: []
 signatures:

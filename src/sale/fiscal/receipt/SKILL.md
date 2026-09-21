@@ -3,7 +3,7 @@ name: receipt
 description: "Use when issuing the fiscal receipt for a sale — the document Наредба Н-18 requires, carrying the УНП, the device number and the amounts a НАП inspector reads."
 atomPath: "sale/fiscal/receipt"
 coordinate: "sale/fiscal/receipt · 2/share · 3aca77cf"
-contentUuid: "72eb0a8e-4ec8-5baa-86cc-1544096401c6"
+contentUuid: "6f8143b6-821c-5c51-aa86-901c2940aea4"
 diamondUuid: "7dc23875-f271-891d-a7b9-11dfadc16728"
 uuid: "3aca77cf-780c-8a23-9193-8744173cc5ab"
 horo: 2
@@ -12,7 +12,6 @@ typography:
   bondDegree: 118
 standards:
   - "BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt"
-  - "Naredba-N-18"
 bindings: []
 signatures:
   computationUuid: "06ad63ed-4085-85e0-8292-ca1eb4ab7ba2"
