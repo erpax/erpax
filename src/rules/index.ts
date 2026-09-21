@@ -30,6 +30,7 @@ import { replaceableStandards } from '@/proof/replaceable'
 import { atomListingGaps } from '@/publish/complete'
 import { claimBalance, totalSlack } from '@/rules/slack'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
+import { unheldVerdicts } from '@/rules/hold'
 import { opaqueSources, unreadSurfaces } from '@/rules/domain'
 import { driftCount } from '@/gate/parity'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
@@ -366,6 +367,11 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // ([[rules]]/alt). An empty alt declares an image DECORATIVE, so `alt = fromCms || ''` turns a
     // blank field into a silent claim that the image means nothing. Ratchets from 10.
     guardian({ axis: 'alt', violations: unnamedNonText(cwd).length + emptyNameFallbacks(cwd).length, baseline: 10 }),
+    // hold — EU 2015/849 Art. 33(1): a file that reads the suspicion verdict must name the hold.
+    // Computing a suspicion and executing anyway is the failure the article names, and it is the
+    // reason EU-2015/849 stopped being an ungated mandatory standard — a wall under rules/, never
+    // a banner in the tier map ([[rules]]/hold). Zero is a theorem over a non-empty population.
+    guardian({ axis: 'hold', violations: unheldVerdicts(cwd).length, baseline: 0 }),
     // atom-completeness — three independent listings of what atoms exist must agree on MEMBERS,
     // not merely on totals ([[publish]]/complete). The matrix held 3,466 against a corpus of
     // 3,474 this session and nothing said so. Zero is a theorem.

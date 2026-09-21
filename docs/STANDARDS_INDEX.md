@@ -2438,6 +2438,7 @@ src/rules/compatibility/index.ts:17: * @standard ISO/IEC 25010:2023 §5.3 compat
 src/rules/confine/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6.2 — modularity: the whole is confined, not held
 src/rules/cycle/index.ts:34: * @standard ISO/IEC 25010:2023 §5.6.2 modularity
 src/rules/echo/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning
+src/rules/hold/index.ts:4: * @standard EU 2015/849 Art. 33(1) — refrain from carrying out a SUSPECTED transaction
 src/rules/inject/index.ts:4: * @standard CVE-2021-42574 — Trojan Source, bidirectional control characters
 src/rules/inject/index.ts:5: * @standard OWASP LLM01:2025 — prompt injection
 src/rules/inject/index.ts:6: * @standard ISO/IEC 27001 A.8.28 — secure coding
@@ -4110,6 +4111,7 @@ src/roles/index.ts:16: * @compliance SOX §404 internal-controls
 src/roles/user/roles/hooks/preventDuplicateAssignment.ts:15: * @compliance SOC-2 CC6.3 access-removal
 src/roles/user/roles/hooks/preventDuplicateAssignment.ts:16: * @compliance SOX §404 internal-controls
 src/roles/user/roles/index.ts:15: * @compliance SOC-2 CC6.3 access-removal
+src/rules/hold/index.ts:5: * @compliance FATF Recommendation 20 — suspicious transaction reporting
 src/saf/t/export/service/index.ts:36: * @compliance SOX §404 internal-controls
 src/saf/t/types/index.ts:19: * @compliance SOX §404 internal-controls
 src/sale/immutability/index.ts:15: * @compliance SOX §404 internal-controls
