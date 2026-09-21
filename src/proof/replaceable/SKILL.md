@@ -51,7 +51,7 @@ Doing so immediately found a normalisation defect: `ISO-19011:2018` and `ISO 190
 
 ## The queue, computed
 
-`WCAG 2.2` leads with **29 citing atoms and no gate on any criterion**. Then BCP 47, WHATWG HTML, WAI-ARIA 1.2, ISO 27001 A.5.23, W3C HTML5, ActivityPub. Each line is a theorem not yet written.
+The queue is ordered by what a discharge would buy, and each line is a theorem not yet written. It is not restated here: this paragraph once led with `WCAG 2.2` at 29 citing atoms, and the corpus then DISCHARGED it — the sentence went stale by the tree getting better, which is [[rules]]/drift's law. RECORD (2026-09-21): 254 open, led by `WHATWG HTML`, `ISA 501`, `WAI ARIA 1.2` and `W3C HTML5`.
 
 `EMPIRICAL` is **declared** in the open: a DOI is assigned by a registration agency, an RFC 3161 timestamp is a third party's signature, `SOX §302` is a natural person's certification, and a statute's text is not in this repo. No amount of reading `src` decides them, and a gate is the wrong instrument — pretending otherwise manufactures the false conformance these gates exist to refuse. Adding such a citation is therefore **not** a regression, so the ratchet counts only the replaceable ones; counting statutes would push the corpus toward citing fewer laws rather than gating more of them.
 
@@ -61,7 +61,25 @@ A discharge is measured at the **standard** level, but conformance is per **crit
 
 And a gate in an atom that cites a standard is not proof the gate **checks that standard** — the link is co-location, not entailment. It reports where a citation *could* be answered, and a human reads whether it is.
 
-The `## Standards` section is also not always a standard: `Group theory` and a book citation appear there. That is prose in a slot meant for conformance claims, and it is per-case, not something to normalise away.
+## Two populations, and one of them is undischargeable
+
+The `## Standards` section is not always a standard. `splitQueue` measures it rather than
+normalising it away: of 254 open, **162 are obligations and 92 are references** — `Grassé,
+stigmergy`, `Kolmogorov complexity`, `Noether's theorem`, `Brundtland Report`. Those are the
+provenance of an idea, cited honestly, and no gate will ever discharge a branch of mathematics.
+Counting them as undischarged conformance inflates the debt AND hides the real debt underneath it.
+
+The split changes no ceiling — `replaceableStandards` still reports 254 and the ratchet still
+judges it. `ISSUING_BODIES` and `NAMED_STANDARDS` are DECLARED, and the failure direction that
+matters is **understating obligations**: `ActivityPub`, `eIDAS`, `Linked Data Notifications` and
+`WHOQOL` are real standards carrying no number and sat in the reference bucket until they were
+named. Bulgarian statutes written in prose form — `Кодекс на труда`, `ЗКИР`, the БУЛСТАТ register
+law — are still in the wrong bucket, and that is said here rather than quietly counted as
+literature.
+
+**A bold lead ending in `:` labels a value, never a standard.** `- **Version:** 1.2` was yielding
+the standard `Version:`, and three such labels sat in the corpus's conformance debt — the same
+defect [[standards]]/emit paid for counting prose about banners as banners.
 
 **Law — [[law]]: a standard you cite is an axiom you assume. Discharge it with a gate that fails closed, or say plainly that you assume it — a conformance claim nothing can contradict is the most respectable-looking lie a corpus can tell.**
 

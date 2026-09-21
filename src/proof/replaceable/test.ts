@@ -7,6 +7,8 @@ import {
   assumedStandards,
   citingAtoms,
   replaceableStandards,
+  namesAnObligation,
+  splitQueue,
   standardKey,
 } from '@/proof/replaceable'
 
@@ -90,5 +92,33 @@ describe('proof/replaceable — a cited standard is an axiom until a gate discha
       expect(open[i - 1]!.cites).toBeGreaterThanOrEqual(open[i]!.cites)
     }
     expect(open.every((s) => s.standard === standardKey(s.standard))).toBe(true)
+  })
+})
+
+describe('proof/replaceable — the queue held two populations, and one is undischargeable', () => {
+  it('a bold lead ending in ":" LABELS a value and never cites a standard', () => {
+    const root = tree({ 'a/SKILL.md': skill(['Version:** 1.2 — the deposit version']) })
+    expect(citingAtoms(root)).toEqual([])
+  })
+
+  it('a branch of mathematics is a REFERENCE — no gate will ever discharge it', () => {
+    expect(namesAnObligation('Kolmogorov complexity')).toBe(false)
+    expect(namesAnObligation('Grassé, stigmergy')).toBe(false)
+    expect(namesAnObligation('EN 16931')).toBe(true)
+    expect(namesAnObligation('ISO/IEC 27001 A.5.23')).toBe(true)
+  })
+
+  it('a standard whose citation carries NO number is declared, not guessed', () => {
+    // The failure direction that matters is UNDERSTATING obligations: these are real standards and
+    // they sat in the reference bucket until they were named.
+    expect(namesAnObligation('ActivityPub')).toBe(true)
+    expect(namesAnObligation('eIDAS')).toBe(true)
+  })
+
+  it('the split REPORTS and moves no ceiling — the two buckets are the whole queue', () => {
+    const q = splitQueue(process.cwd())
+    const open = replaceableStandards(process.cwd())
+    expect(q.obligations.length + q.references.length).toBe(open.length)
+    expect(q.references.length).toBeGreaterThan(0)
   })
 })
