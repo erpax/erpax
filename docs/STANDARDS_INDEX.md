@@ -126,10 +126,10 @@ src/agents/mcp/tool-defs.ts:34: * @standard ISO/IEC 25010:2023 §5.3 usability (
 src/agents/mcp/tool-defs.ts:37: * @standard ISO 19011:2018 §6.4.6 (audit-evidence — every tool
 src/agents/mcp/tool-defs.ts:40: * @standard ISO/IEC 27001 §A.9.4.5 (information access restriction
 src/agents/mcp/tool/_guards.test.ts:27: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/agents/mcp/tool/_guards.ts:32: * @standard ISO 27001 A.5.10 access-control-policy
-src/agents/mcp/tool/_guards.ts:33: * @standard ISO 27002 §5.4 segregation-of-duties (per-tenant boundary)
-src/agents/mcp/tool/_guards.ts:34: * @standard NIST SP 800-162 ABAC
-src/agents/mcp/tool/_guards.ts:94: * @standard ISO 27001 A.5.10 access-control-policy
+src/agents/mcp/tool/_guards.ts:36: * @standard ISO 27001 A.5.10 access-control-policy
+src/agents/mcp/tool/_guards.ts:4: * @standard ISO 27001 A.5.10 access-control-policy
+src/agents/mcp/tool/_guards.ts:5: * @standard ISO 27002 §5.4 segregation-of-duties (per-tenant boundary)
+src/agents/mcp/tool/_guards.ts:6: * @standard NIST SP 800-162 ABAC
 src/agents/mcp/tool/batch.ts:19: * @standard MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}
 src/agents/mcp/tool/batch.ts:20: * @standard ISO 19011:2018 §6.4.6 audit-evidence (per-row ok/error summary)
 src/agents/mcp/tool/batch.ts:21: * @standard ISO/IEC 27002 §5.4 segregation-of-duties (admin-gated bulk mutation)
@@ -212,11 +212,11 @@ src/allocation/index.ts:10: * @standard Hamilton (largest-remainder) apportionme
 src/allocation/index.ts:8: * @standard SFIA 8 responsibility-levels (1..7) — job-type categorisation
 src/allocation/index.ts:9: * @standard ESCO / ISCO-08 competency framework (skill level)
 src/allow/public/read/tenant/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
-src/aml/index.ts:106: * @standard EU 2015/849 Art. 33(1) — report promptly; refrain from executing a SUSPECTED transaction
 src/aml/index.ts:4: * @standard EU 2015/849 Art. 33 — report to the FIU promptly, before executing where possible
 src/aml/index.ts:5: * @standard FATF Recommendation 20 — suspicious transaction reporting
 src/aml/index.ts:6: * @standard EU 2015/847 — information accompanying transfers of funds
 src/aml/index.ts:81: * @standard EU 2015/849 Art. 33(1) — reporting obligation, no permitted delay
+src/aml/index.ts:97: * @standard EU 2015/849 Art. 33(1) — report promptly; refrain from executing a SUSPECTED transaction
 src/analytics/BudgetVsActualCard.tsx:10: * @standard ECMA-262 ECMAScript-2024 baseline
 src/analytics/BudgetVsActualCard.tsx:11: * @standard ISO-4217:2015 currency-codes monetary-display
 src/analytics/CostAnalysisCard.tsx:10: * @standard ECMA-262 ECMAScript-2024 baseline
@@ -927,23 +927,24 @@ src/csrd/disclosures/index.ts:18: * @standard ISO 14064-1:2018 ghg-quantificatio
 src/csrd/disclosures/index.ts:19: * @standard EU EFRAG ESRS-XBRL taxonomy
 src/css/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/currency/fallback/index.test.ts:19: * @standard ISO 4217 §6.5 "No currency" (XXX numeric 999)
-src/currency/fallback/index.ts:10: * @standard ISO 4217 §6.5 "No currency" — code XXX, numeric 999
-src/currency/fallback/index.ts:11: * @standard EN 16931 §BG-7 currency-code element (XXX accepted)
-src/currency/fallback/index.ts:12: * @standard ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)
-src/currency/fallback/index.ts:13: * @standard IFRS 1 §IG7 non-monetary items presentation
-src/currency/fallback/index.ts:386: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
-src/currency/fallback/index.ts:387: * @standard IAS 21 §38 presentation-currency translation
+src/currency/fallback/index.ts:381: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
+src/currency/fallback/index.ts:382: * @standard IAS 21 §38 presentation-currency translation
+src/currency/fallback/index.ts:5: * @standard ISO 4217 §6.5 "No currency" — code XXX, numeric 999
+src/currency/fallback/index.ts:6: * @standard EN 16931 §BG-7 currency-code element (XXX accepted)
+src/currency/fallback/index.ts:7: * @standard ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)
+src/currency/fallback/index.ts:8: * @standard IFRS 1 §IG7 non-monetary items presentation
 src/currency/fallback/uuid.ts:57: * @standard RFC 9562 §5.8 uuidv8 (the bottom-half hash family)
 src/currency/fallback/uuid.ts:58: * @standard RFC 8785 JCS (the canonicalisation that makes equivalence work)
 src/currency/fallback/uuid.ts:59: * @standard ISO 4217 §6.5 (X-codes — the currency identity layer)
-src/currency/index.ts:32: * @standard ISO 4217 — currency codes: the alphabetic code identifies the currency
-src/currency/index.ts:72: * @standard ISO 4217 §5 — the code list is maintained by the registration authority
 src/currency/rates/index.ts:14: * @standard ISO-4217:2015 currency-codes from-currency to-currency
 src/currency/rates/index.ts:15: * @standard ISO-8601-1:2019 date-time rate-date
 src/currency/reconciliation/index.ts:15: * @standard ISO-4217:2023 (currency codes, decimal places)
 src/currency/reconciliation/index.ts:16: * @standard IFRS-21:2023 (translation of foreign operations)
 src/currency/reconciliation/index.ts:17: * @standard IFRS-9:2023 (foreign exchange gains/losses)
 src/currency/reconciliation/index.ts:18: * @standard SAF-T:3.0.2 (multi-currency period coding)
+src/currency/registered/index.ts:21: * @standard ISO 4217 — currency codes: the alphabetic code identifies the currency
+src/currency/registered/index.ts:55: * @standard ISO 4217 §5 — the code list is maintained by the registration authority
+src/currency/registered/index.ts:8: * @standard ISO 4217 — currency codes: the alphabetic code identifies the currency
 src/customer/segments/index.ts:9: * @standard ISO-8601-1:2019 date-time
 src/customers/contracts/contract/amendments/index.ts:21: * @standard IFRS IFRS-15 §20 contract-modifications
 src/customers/contracts/contract/amendments/index.ts:22: * @standard IFRS IFRS-15 §10 contract-with-customer
@@ -1404,12 +1405,10 @@ src/hero/config/index.ts:6: * @standard WAI-ARIA 1.2 region-landmark-role
 src/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/i18n/harvest/index.ts:30: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/i18n/harvest/index.ts:31: * @standard BCP-47 language tags
-src/i18n/index.ts:13: * @standard ECMA-402 internationalization-api
-src/i18n/index.ts:14: * @standard Unicode-CLDR locale-data
-src/i18n/index.ts:15: * @standard W3C Internationalization-Best-Practices
-src/i18n/index.ts:186: * @standard BCP 47 (RFC 5646) — tags for identifying languages
-src/i18n/index.ts:233: * @standard BCP 47 (RFC 5646) §2.2.9 — classes of conformance
-src/i18n/index.ts:9: * @standard BCP-47 language-tag
+src/i18n/index.ts:11: * @standard ECMA-402 internationalization-api
+src/i18n/index.ts:12: * @standard Unicode-CLDR locale-data
+src/i18n/index.ts:13: * @standard W3C Internationalization-Best-Practices
+src/i18n/index.ts:7: * @standard BCP-47 language-tag
 src/i18n/localization/index.ts:10: * @standard ECMA-402 internationalization-api
 src/i18n/localization/index.ts:11: * @standard Unicode-CLDR locale-data
 src/i18n/localization/index.ts:12: * @standard EU 1958/1 official-languages-of-the-european-union
@@ -1419,6 +1418,9 @@ src/i18n/request/index.ts:9: * @standard ECMA-402 internationalization-api
 src/i18n/routing/index.ts:10: * @standard W3C URL Living Standard
 src/i18n/routing/index.ts:11: * @standard ECMA-402 internationalization-api
 src/i18n/routing/index.ts:7: * @standard BCP-47 language-tag
+src/i18n/tag/index.ts:15: * @standard BCP 47 (RFC 5646) — tags for identifying languages
+src/i18n/tag/index.ts:4: * @standard BCP 47 (RFC 5646) — tags for identifying languages
+src/i18n/tag/index.ts:57: * @standard BCP 47 (RFC 5646) §2.2.9 — classes of conformance
 src/iban/index.ts:10: * @standard ISO-7064:2003 mod-97-10 check-digits
 src/iban/index.ts:9: * @standard ISO-13616-1:2020 iban
 src/identification/index.ts:41: * @standard RFC 9562 §5.8 uuidv8
@@ -3450,9 +3452,9 @@ src/get/media/url/index.ts:11: * @rfc 3986 §2.1 percent-encoding
 src/get/media/url/index.ts:12: * @rfc 3986 §3.4 query-component
 src/get/preview/secret/index.ts:6: * @rfc 5869 hkdf
 src/get/tenant/from/request/index.ts:5: * @rfc 6265 http-state-management cookies
-src/i18n/index.ts:10: * @rfc 5646 tags-for-identifying-languages
-src/i18n/index.ts:11: * @rfc 4647 matching-of-language-tags
-src/i18n/index.ts:12: * @rfc 8259 json
+src/i18n/index.ts:10: * @rfc 8259 json
+src/i18n/index.ts:8: * @rfc 5646 tags-for-identifying-languages
+src/i18n/index.ts:9: * @rfc 4647 matching-of-language-tags
 src/i18n/localization/index.ts:9: * @rfc 5646 tags-for-identifying-languages
 src/i18n/request/index.ts:10: * @rfc 9110 http-semantics accept-language-fallback
 src/i18n/request/index.ts:8: * @rfc 5646 tags-for-identifying-languages
@@ -5516,7 +5518,7 @@ src/agents/mcp/self-test.ts:35: * @audit ISO 19011:2018 §6.4.6 (every test resu
 src/agents/mcp/standardization.ts:29: * @audit ISO 19011:2018 §6.4.6 (every tool standards-traceable)
 src/agents/mcp/state-mutators.test.ts:20: * @audit ISO 27002 §5.4 segregation-of-duties (pinned scope)
 src/agents/mcp/tool/_guards.test.ts:28: * @audit ISO 19011:2018 §6.4.6 (security-policy regression coverage)
-src/agents/mcp/tool/_guards.ts:35: * @audit Conservation Law 58 uuid-self-protection (tenant-scope branch)
+src/agents/mcp/tool/_guards.ts:7: * @audit Conservation Law 58 uuid-self-protection (tenant-scope branch)
 src/agents/mcp/tool/batch.ts:22: * @audit Conservation Law 4 event-graph-closure (emitOnStatusTransition fires per row)
 src/agents/mcp/tool/chain.ts:15: * @audit Conservation Law 60 binding-uuid-is-blockchain-leaf
 src/agents/mcp/tool/cloudflare/index.ts:9: * @audit Conservation Law 38 mcp-tool-standardization

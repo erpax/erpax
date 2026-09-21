@@ -1,11 +1,6 @@
 /**
- * currency/fallback — the blank currency is a VALUE, never a null.
- *
- * ISO 4217 §6.5 reserves XXX (numeric 999) for "no currency", so a row whose currency is not yet
- * known has a code to carry instead of a hole. It is a standards-defined value end to end: EN 16931
- * §BG-7 accepts XXX in the currency-code element and ISO 20022 pacs.008 accepts it in §Ccy, so a
- * federation peer or external processor already understands it — and bookkeeping tolerates it,
- * because provisional, in-flight and non-monetary entries legitimately carry no currency.
+ * currency/fallback — the blank currency is a VALUE, never a null: XXX, standards-defined end to
+ * end, so a federation peer already understands it. See SKILL.md.
  *
  * @standard ISO 4217 §6.5 "No currency" — code XXX, numeric 999
  * @standard EN 16931 §BG-7 currency-code element (XXX accepted)

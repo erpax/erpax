@@ -1,16 +1,14 @@
 import { describe, expect, it } from 'vitest'
 import {
-  REPORT_KINDS,
   STRUCTURING_BAND,
   STRUCTURING_WINDOW_MS,
   SUSPICION_DELAY_MS,
-  assertReportingObligationHolds,
+  assertSuspicionHolds,
   holdBeforeExecuting,
   justBelow,
   reportOwed,
   structuring,
   type Movement,
-  type ReportKind,
 } from '@/aml'
 
 const T = 10000
@@ -90,13 +88,8 @@ describe('aml — what `none` means, stated where it cannot be missed', () => {
 
 describe('aml — Art. 33(1) as a fail-closed check', () => {
   it('holds on the live atom, and the delay is zero', () => {
-    expect(() => assertReportingObligationHolds()).not.toThrow()
+    expect(() => assertSuspicionHolds()).not.toThrow()
     expect(SUSPICION_DELAY_MS).toBe(0)
-  })
-
-  it('REPORT_KINDS is the whole union — the check is exhaustive, not a sample', () => {
-    const kinds: ReportKind[] = ['suspicious', 'threshold', 'none']
-    expect([...REPORT_KINDS].sort()).toEqual([...kinds].sort())
   })
 
   it('a THRESHOLD declaration does not hold the payment — and the gate must not demand it', () => {

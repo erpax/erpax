@@ -87,25 +87,16 @@ export function holdBeforeExecuting(kind: ReportKind): boolean {
   return kind === 'suspicious'
 }
 
-/** Every kind the union declares — exhaustive, so the check below is a theorem and not a sample. */
-export const REPORT_KINDS: readonly ReportKind[] = ['suspicious', 'threshold', 'none']
+/** The whole union, so the check below is a theorem. PRIVATE — no statute fixes it. See SKILL.md. */
+const REPORT_KINDS: readonly ReportKind[] = ['suspicious', 'threshold', 'none']
 
 /**
- * Art. 33 as a fail-closed check: SUSPICION holds the movement, and the delay is zero.
- *
- * NOT "every report holds". Art. 33(1) asks a firm to refrain from carrying out transactions it
- * knows or SUSPECTS to be related to criminal activity; a threshold declaration is an obligation to
- * REPORT, not to stop a lawful payment. Writing the stronger rule here would have encoded a false
- * statement about the directive into a gate — the shape [[rules]]/audience names, addressed to the
- * officer who signs the return.
- *
- * Exhaustive over `REPORT_KINDS`, so it forbids the two shapes the obligation fails in software: a
- * suspicion that reports and lets the movement execute, and a delay that turns "promptly" into a
- * batch window. See SKILL.md for what it does not claim.
+ * Art. 33 as a fail-closed check: SUSPICION holds the movement, and the delay is zero. NOT "every
+ * report holds" — a threshold declaration obliges a REPORT, never a stop. See SKILL.md.
  *
  * @standard EU 2015/849 Art. 33(1) — report promptly; refrain from executing a SUSPECTED transaction
  */
-export function assertReportingObligationHolds(): void {
+export function assertSuspicionHolds(): void {
   if (SUSPICION_DELAY_MS !== 0) {
     throw new Error(
       `✖ EU 2015/849 Art. 33: a suspicion report may not wait — SUSPICION_DELAY_MS is ${SUSPICION_DELAY_MS}.`,

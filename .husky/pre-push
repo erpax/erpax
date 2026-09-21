@@ -151,6 +151,12 @@ cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" node src/convention/i
 # (e.g. trading-apis) is caught even when trinity improves. No backward-compat sum.
 # Fail-closed: a scan error exits non-zero under `set -e` (cannot-run = did-not-pass).
 tsx src/law/folder/index.ts --check
+# EVIDENCE SURVIVES THE REFACTOR THAT MOVES IT (src/rules/citation). A purge may delete a dead
+# export and take the module docstring above it — that is how BG ЗПУПС and IFRS 1 left the corpus
+# unnoticed. Compares the citation surface against the FORK POINT, so it needs real history, which
+# is exactly why this runs here and not in CI: actions/checkout is shallow and a ring with no base
+# is trivially empty — a green that proves nothing. Fail-closed under `set -e`.
+pnpm erpax rules/citation
 # Skill frontmatter YAML safety — an unquoted description with ": " breaks the docs
 # YAML parse (bit access/sacred). Another step of the one horo gate (who can't dance can't join).
 node scripts/check-skill-frontmatter.mjs

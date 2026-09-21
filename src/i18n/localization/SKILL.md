@@ -59,4 +59,20 @@ it. Whether a given field is really translated is a content question, and no gat
 **Law — [[law]]: the set of locales is declared once and read everywhere. A second list is a second
 source of truth, and the two drift the moment a language is added to one of them.**
 
+## The tag gate
+
+`assertTagsWellFormed` lives here because it judges the list declared here: every tag in
+`supportedLocales`, and every `locale:` property with a string literal value in the corpus, must be
+a **well-formed and already-canonical** BCP 47 tag. `Intl.getCanonicalLocales` is the registry's own
+implementation, so nothing here restates a subtag list that would rot.
+
+Canonical, not merely well-formed: `en-us` parses and names the same locale as `en-US`, and
+accepting both lets one locale exist at two spellings. Zero is a theorem — a tag no registry can
+parse selects no language, and the fallback that hides it is silent.
+
+## Standards
+
+- **BCP 47** (RFC 5646) — tags for identifying languages.
+- **ECMA-402** — `Intl.getCanonicalLocales`, the canonicalisation this gate asks.
+
 Composes: [[i18n]] · [[law]].

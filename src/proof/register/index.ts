@@ -197,18 +197,7 @@ const hasGate = (atomPath: string, cwd: string): boolean => {
  * `atoms` is supplied by the caller (the atom list and each one's citations) so this stays a pure
  * classification — the parsing lives with the papers, where the citation format is defined.
  */
-/**
- * Normalise a standard to its identity — the ONE key this corpus uses for a standard.
- *
- * It lived here as an inline expression AND in [[proof]]/replaceable as `standardKey`, and the two
- * were not the same normalisation: this one kept `ISO-4217` and `ISO 4217` apart, and kept the
- * edition, so a gate citing one spelling could not discharge an atom citing the other. Duplication
- * is camouflage — while one law is stated in two private corners, nothing can show a third place is
- * missing it ([[rules]]/copy). One function, and both readers ask it.
- *
- * Section and gloss go (`ISO 25010 §5.5` and `§5.4` are one standard), hyphens normalise to spaces,
- * and a trailing `:YYYY` edition is dropped: `ISO 4217` and `ISO 4217:2015` are one obligation.
- */
+/** The ONE key this corpus uses for a standard — section, gloss, edition and publisher folded. See SKILL.md. */
 export const standardKey = (raw: string): string =>
   raw
     .split('—')[0]!
@@ -223,13 +212,7 @@ export const standardKey = (raw: string): string =>
     .replace(/^ISO\/IEC\b/, 'ISO')
     .trim()
 
-/**
- * The CLAUSE stays in the key, deliberately.
- *
- * Folding `A.5.23` away would let a gate over cloud-tenant isolation discharge the whole of
- * ISO 27001 — an over-discharge, which is a false green and strictly worse than the over-count it
- * would fix. A section of a standard is a separate obligation; a spelling of its publisher is not.
- */
+/** The CLAUSE stays: folding A.5.23 away would over-discharge the whole of ISO 27001. */
 
 export function standardRegister(
   atoms: readonly { readonly atomPath: string; readonly standards: readonly string[] }[],

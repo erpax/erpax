@@ -1,5 +1,3 @@
-import tsc from 'typescript'
-import { astOf, corpusFiles, textOf } from '@/syntax/cache'
 /**
  * i18n entrypoint — supported locales, message bundle, helpers.
  *
@@ -177,66 +175,5 @@ export function localeRecord(key: string): Record<string, string> {
 
 export default nestedMessages
 
-/**
- * Every locale tag the corpus writes is a WELL-FORMED, CANONICAL BCP 47 tag.
- *
- * Decided by `Intl.getCanonicalLocales` — the runtime's own implementation of the registry, so
- * nothing here restates a subtag list that would rot the day it was written. See SKILL.md.
- *
- * @standard BCP 47 (RFC 5646) — tags for identifying languages
- */
-export function malformedLocaleTags(cwd: string = process.cwd()): readonly string[] {
-  const bad = new Set<string>()
-  for (const tag of supportedLocales) if (!isCanonicalTag(tag)) bad.add(tag)
-  for (const file of corpusFiles(cwd, 'source')) {
-    for (const tag of localeLiteralsIn(file)) if (!isCanonicalTag(tag)) bad.add(tag)
-  }
-  return [...bad].sort()
-}
-
-/**
- * Well-formed AND already canonical.
- *
- * `en-us` is well-formed and names the same locale as `en-US`, so accepting both would let one
- * locale exist at two spellings — the split [[proof]]/register paid for with `ISO/IEC 27001`.
- */
-export function isCanonicalTag(tag: string): boolean {
-  try {
-    return Intl.getCanonicalLocales(tag)[0] === tag
-  } catch {
-    return false
-  }
-}
-
-/** A `locale:` property whose value is a string literal — PARSED, never matched. */
-export function localeLiteralsIn(file: string, text: string = textOf(file)): readonly string[] {
-  const out: string[] = []
-  const visit = (node: tsc.Node): void => {
-    if (
-      tsc.isPropertyAssignment(node) &&
-      tsc.isIdentifier(node.name) &&
-      (node.name.text === 'locale' || node.name.text === 'defaultLocale') &&
-      tsc.isStringLiteral(node.initializer) &&
-      node.initializer.text !== ''
-    ) {
-      out.push(node.initializer.text)
-    }
-    tsc.forEachChild(node, visit)
-  }
-  visit(astOf(file, text))
-  return out
-}
-
-/**
- * Fail closed on a tag no registry can parse. Zero is a THEOREM here, not a ratchet.
- *
- * @standard BCP 47 (RFC 5646) §2.2.9 — classes of conformance
- */
-export function assertLocaleTagsWellFormed(cwd: string = process.cwd()): void {
-  const bad = malformedLocaleTags(cwd)
-  if (bad.length === 0) return
-  throw new Error(
-    `✖ BCP 47: ${bad.length} locale tag(s) are malformed or non-canonical — ${bad.join(', ')}. ` +
-      'A tag no registry can parse selects no language, and the fallback that hides it is silent.',
-  )
-}
+// The BCP 47 gate lives in [[i18n]]/tag and is NOT re-exported here: it scans the corpus through
+// node:fs, and this barrel is in every client bundle.

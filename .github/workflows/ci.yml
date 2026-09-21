@@ -32,8 +32,22 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
+      # fetch-depth: 0 for the CITATION RING below. It compares the evidence surface against the
+      # FORK POINT, and the default shallow checkout has no base to fork from — the ring would come
+      # back empty and report a green that proves nothing. One full-history checkout in one job is
+      # the price of the lane being honest here rather than only in the pre-push hook, which
+      # `--no-verify` can skip.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: ./.github/actions/setup
+
+      # EVIDENCE SURVIVES THE REFACTOR THAT MOVES IT (src/rules/citation). A purge may delete a
+      # dead export and take the module docstring above it — that is how BG ЗПУПС and IFRS 1 left
+      # the corpus unnoticed, with tsc and every unit wave content. Zero is a theorem: there is no
+      # acceptable number of statutes a refactor may quietly stop citing.
+      - name: Citation ring (no standard may leave the evidence surface)
+        run: pnpm erpax rules/citation
 
       # The last lane recomputing from scratch — 95s of a 100s run once the shards, the build and
       # the typecheck learned to cite. `eslint src` reads the same bytes `tsc` does and asks a
