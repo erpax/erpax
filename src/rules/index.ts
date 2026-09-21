@@ -355,10 +355,13 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // in @/merge and order-free in @/fusion, so an importer picking the wrong module gets a
     // different root in silence. Ceiling 1, a rename away from 0.
     guardian({ axis: 'root-collision', violations: rootCollisions(cwd).length, baseline: 1 }),
-    // standards-assumed — a cited standard NOTHING discharges ([[proof]]/replaceable). 219 atoms
-    // cite 265 standards and 22 are gated; each remaining line is a theorem not yet written.
-    // Counts the REPLACEABLE ones only: citing a statute is not a regression.
-    guardian({ axis: 'standards-assumed', violations: replaceableStandards(cwd).length, baseline: 241 }),
+    // standards-assumed — a cited OBLIGATION nothing discharges ([[proof]]/replaceable). Each line
+    // is a theorem not yet written. Citing a statute is not a regression, and neither is citing a
+    // paper: the queue held 90 REFERENCES — Grassé, Kolmogorov, Noether, Brundtland — which no gate
+    // can ever discharge, and counting them pushed toward citing less literature rather than gating
+    // more law. 250 -> 164 is that correction plus four phantoms from a SKILL subsection the
+    // section reader swallowed; the ceiling falls with it, in the commit that earns it.
+    guardian({ axis: 'standards-assumed', violations: replaceableStandards(cwd).length, baseline: 164 }),
     // alt — WCAG 2.2 §1.1.1, the first criterion discharged of the largest assumed standard
     // ([[rules]]/alt). An empty alt declares an image DECORATIVE, so `alt = fromCms || ''` turns a
     // blank field into a silent claim that the image means nothing. Ratchets from 10.

@@ -75,8 +75,8 @@ describe('proof/replaceable — a cited standard is an axiom until a gate discha
   })
 
   it('the live corpus is at or under its ceiling', () => {
-    expect(replaceableStandards(process.cwd()).length).toBeLessThanOrEqual(242)
-    expect(() => assertStandardsGated(process.cwd(), 242)).not.toThrow()
+    expect(replaceableStandards(process.cwd()).length).toBeLessThanOrEqual(164)
+    expect(() => assertStandardsGated(process.cwd(), 164)).not.toThrow()
   })
 
   it('the queue is ORDERED by how much a discharge would buy — never by name', () => {
@@ -115,10 +115,33 @@ describe('proof/replaceable — the queue held two populations, and one is undis
     expect(namesAnObligation('eIDAS')).toBe(true)
   })
 
-  it('the split REPORTS and moves no ceiling — the two buckets are the whole queue', () => {
+  it('the split loses nothing — the two buckets ARE the assumed queue', () => {
+    // This once asserted the sum equalled `replaceableStandards`, which was true while that
+    // function returned the whole queue. The axis now counts OBLIGATIONS, so the sum is checked
+    // against what is actually split: assumed, minus the declared empirical exemptions.
     const q = splitQueue(process.cwd())
-    const open = replaceableStandards(process.cwd())
-    expect(q.obligations.length + q.references.length).toBe(open.length)
+    const assumed = assumedStandards(process.cwd()).filter((s) => !s.empirical)
+    expect(q.obligations.length + q.references.length).toBe(assumed.length)
     expect(q.references.length).toBeGreaterThan(0)
+  })
+
+  it('the axis counts obligations, and a reference can never reach it', () => {
+    const q = splitQueue(process.cwd())
+    expect(replaceableStandards(process.cwd()).length).toBe(q.obligations.length)
+    const axis = new Set(replaceableStandards(process.cwd()).map((s) => s.standard))
+    for (const r of q.references) expect(axis.has(r.standard)).toBe(false)
+  })
+
+  it('a Bulgarian statute written by NAME is an obligation, not literature', () => {
+    // The failure direction that matters is understating obligations, and it bit: these four sat
+    // in the reference bucket until they were declared.
+    for (const statute of [
+      'Bulgarian Labour Code (Кодекс на труда)',
+      'Cadastre & Property Register Act (ЗКИР)',
+      'Bulgarian Commercial Register (Търговски регистър)',
+      'БУЛСТАТ register law (Закон за регистър БУЛСТАТ)',
+    ]) {
+      expect(namesAnObligation(statute), statute).toBe(true)
+    }
   })
 })

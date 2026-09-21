@@ -69,8 +69,18 @@ stigmergy`, `Kolmogorov complexity`, `Noether's theorem`, `Brundtland Report`. T
 provenance of an idea, cited honestly, and no gate will ever discharge a branch of mathematics.
 Counting them as undischarged conformance inflates the debt AND hides the real debt underneath it.
 
-The split changes no ceiling — `replaceableStandards` still reports 254 and the ratchet still
-judges it. `ISSUING_BODIES` and `NAMED_STANDARDS` are DECLARED, and the failure direction that
+**The split now decides the axis.** `replaceableStandards` counts OBLIGATIONS, for the reason
+`EMPIRICAL` is excluded: a gate is the wrong instrument. Counting `Kolmogorov complexity` as
+undischarged conformance pushes the corpus toward citing LESS literature rather than gating more
+law — the argument this atom already makes about statutes. 254 → **164**, and the ceiling fell with
+it in the commit that earned it ([[rules]]/slack).
+
+Two corrections came first, in this order, because moving an axis onto a classification before the
+classification is right would hide debt rather than measure it: four PHANTOMS (a `###` subsection
+inside `## Standards` in [[supto]], whose bullets about how to *write* banners were read as cited
+standards — the section reader stops at the next `##`), and four STATUTES rescued from literature
+(`Кодекс на труда`, `ЗКИР`, `Търговски регистър`, the БУЛСТАТ register law — obligations written by
+name rather than number). `ISSUING_BODIES` and `NAMED_STANDARDS` are DECLARED, and the failure direction that
 matters is **understating obligations**: `ActivityPub`, `eIDAS`, `Linked Data Notifications` and
 `WHOQOL` are real standards carrying no number and sat in the reference bucket until they were
 named. Bulgarian statutes written in prose form — `Кодекс на труда`, `ЗКИР`, the БУЛСТАТ register

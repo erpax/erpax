@@ -129,6 +129,11 @@ export const NAMED_STANDARDS: ReadonlySet<string> = new Set([
   'ActivityPub', 'ActivityStreams', 'eIDAS', 'Linked Data Notifications (LDN)', 'UI Events',
   'GHG Protocol Corporate Standard', 'WHOQOL', 'Venice Commission Rule of Law',
   'Venice Commission Code of Good Practice in Electoral Matters',
+  // Bulgarian statutes, written by name rather than number — obligations, mis-filed until named.
+  'БУЛСТАТ register law (Закон за регистър БУЛСТАТ)',
+  'Bulgarian Labour Code (Кодекс на труда)',
+  'Cadastre & Property Register Act (ЗКИР)',
+  'Bulgarian Commercial Register (Търговски регистър)',
 ])
 
 /** An obligation, or a source an idea came from? No gate discharges a branch of mathematics. */
@@ -146,18 +151,21 @@ export interface QueueSplit {
 }
 
 
-/** The queue, split by what a gate could ever answer. Reports; changes no ceiling. */
+/** The queue, split by what a gate could ever answer. */
 export function splitQueue(cwd: string = process.cwd()): QueueSplit {
-  const open = replaceableStandards(cwd)
+  const open = assumedStandards(cwd).filter((s) => !s.empirical)
   return {
     obligations: open.filter((s) => namesAnObligation(s.standard)),
     references: open.filter((s) => !namesAnObligation(s.standard)),
   }
 }
 
-/** Assumed AND decidable from what the corpus holds — the theorems not yet written. */
+/**
+ * Assumed AND decidable — the theorems not yet written. REFERENCES are excluded for the reason
+ * EMPIRICAL is: a gate is the wrong instrument, and the seam is declared. See SKILL.md.
+ */
 export const replaceableStandards = (cwd: string = process.cwd()): AssumedStandard[] =>
-  assumedStandards(cwd).filter((s) => !s.empirical)
+  [...splitQueue(cwd).obligations]
 
 /**
  * Fails closed on a NEW ungated standard. The ceiling ratchets down as each is discharged.
