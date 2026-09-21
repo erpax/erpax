@@ -3,13 +3,13 @@ name: proof
 description: "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost."
 atomPath: proof
 coordinate: "proof · 8/crest · 6dab567a"
-contentUuid: "4fa3f37d-e61b-5a28-96a6-36afd2bbe93d"
+contentUuid: "01456ad3-fd26-5665-8480-024e6af71ce3"
 diamondUuid: "3a968e7f-36f8-8fbf-a333-8beacbc8dacd"
 uuid: "6dab567a-dd98-8c3b-89bf-e80c48b47794"
 horo: 8
 typography:
   partition: proof
-  bondDegree: 637
+  bondDegree: 638
 standards:
   - "EU-765/2008"
   - "NIST-SP-800-57"

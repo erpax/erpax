@@ -3,13 +3,13 @@ name: proof
 description: "Use when reasoning about proof — Use to see the corpus accounting itself in realtime — every claim (@invariant · @standard · @compliance · @audit) is a DEBIT, every proof (a test beside it) the CREDIT, and the ledger balances iff all is proven. The residual is the unproven surface, computed at read. Run: tsx src/accounting/proof/index.ts"
 atomPath: "accounting/proof"
 coordinate: "accounting/proof · 2/share · 5a9740bf"
-contentUuid: "a28cf235-727b-5595-9bd4-76d6ecbef7b6"
+contentUuid: "8e98cc2a-202e-5e89-a2ce-234df3a9093b"
 diamondUuid: "3e02a2dd-f859-8262-92af-2ed1f8b8c607"
 uuid: "5a9740bf-0a7c-88c1-a1a6-b2ed95689ac5"
 horo: 2
 typography:
   partition: accounting
-  bondDegree: 637
+  bondDegree: 638
 standards:
   - IAS 1 — a balanced set of accounts; every debit has its credit
   - "IAS-1"
