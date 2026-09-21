@@ -413,10 +413,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool"
   },
   {
+    "atom": "aml",
+    "name": "aml",
+    "description": "Use when reasoning about aml — classifies a set of movements as **suspicious · threshold · none** (EU 2015/849 Art. 33).",
+    "path": "agents/mcp/tool/aml"
+  },
+  {
     "atom": "cloudflare",
     "name": "cloudflare",
     "description": "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract.",
     "path": "agents/mcp/tool/cloudflare"
+  },
+  {
+    "atom": "float",
+    "name": "float",
+    "description": "Use when reasoning about float — reconciles a counted float — a bank drawer, a casino tray, an armoury, a public till — against its opening balance and its movements.",
+    "path": "agents/mcp/tool/float"
+  },
+  {
+    "atom": "kyc",
+    "name": "kyc",
+    "description": "Use when reasoning about kyc — answers the one question the directive actually asks: **what level of customer due diligence is owed**, given facts someone else established.",
+    "path": "agents/mcp/tool/kyc"
+  },
+  {
+    "atom": "risk",
+    "name": "risk",
+    "description": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395).",
+    "path": "agents/mcp/tool/risk"
+  },
+  {
+    "atom": "staffing",
+    "name": "staffing",
+    "description": "Use when reasoning about staffing — folds a declared position into everything it already implied: the job description, the competency gap, the training plan **in the order it must run**, the access capability, and…",
+    "path": "agents/mcp/tool/staffing"
   },
   {
     "atom": "registered",
@@ -8255,12 +8285,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "service"
   },
   {
-    "atom": "services",
-    "name": "services",
-    "description": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-    "path": "services"
-  },
-  {
     "atom": "serving",
     "name": "serving",
     "description": "Use when reasoning about serving as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -10719,12 +10743,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "uses",
     "description": "Use when reasoning about uses as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "uses"
-  },
-  {
-    "atom": "utilities",
-    "name": "utilities",
-    "description": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them.",
-    "path": "utilities"
   },
   {
     "atom": "utility",

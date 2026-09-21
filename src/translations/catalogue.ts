@@ -3869,6 +3869,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "aml",
+    "path": "agents/mcp/tool/aml",
+    "translations": [
+      {
+        "key": "name",
+        "source": "aml",
+        "uuid": "70b313a6-6144-8b62-991c-df57351fa75f",
+        "words": [
+          "aml"
+        ],
+        "values": {
+          "en": "aml"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about aml — classifies a set of movements as **suspicious · threshold · none** (EU 2015/849 Art. 33).",
+        "uuid": "42d410a7-586a-88b4-80ea-ec72c0c8cfc8",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "aml",
+          "classifies",
+          "a",
+          "set",
+          "of",
+          "movements",
+          "as",
+          "suspicious",
+          "threshold",
+          "none",
+          "eu",
+          "art"
+        ],
+        "values": {
+          "en": "Use when reasoning about aml — classifies a set of movements as **suspicious · threshold · none** (EU 2015/849 Art. 33)."
+        }
+      }
+    ]
+  },
+  {
     "atom": "cloudflare",
     "path": "agents/mcp/tool/cloudflare",
     "translations": [
@@ -3903,6 +3946,213 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "float",
+    "path": "agents/mcp/tool/float",
+    "translations": [
+      {
+        "key": "name",
+        "source": "float",
+        "uuid": "a840f565-5668-85a8-93ce-dfaa12810e6e",
+        "words": [
+          "float"
+        ],
+        "values": {
+          "en": "float"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about float — reconciles a counted float — a bank drawer, a casino tray, an armoury, a public till — against its opening balance and its movements.",
+        "uuid": "afc53c8c-4b45-83d3-88e8-3539b0b0e1b9",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "float",
+          "reconciles",
+          "a",
+          "counted",
+          "float",
+          "a",
+          "bank",
+          "drawer",
+          "a",
+          "casino",
+          "tray",
+          "an",
+          "armoury",
+          "a",
+          "public",
+          "till",
+          "against",
+          "its",
+          "opening",
+          "balance",
+          "and",
+          "its",
+          "movements"
+        ],
+        "values": {
+          "en": "Use when reasoning about float — reconciles a counted float — a bank drawer, a casino tray, an armoury, a public till — against its opening balance and its movements."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "kyc",
+    "path": "agents/mcp/tool/kyc",
+    "translations": [
+      {
+        "key": "name",
+        "source": "kyc",
+        "uuid": "713ab1da-92f9-8c43-bf92-7ca805860760",
+        "words": [
+          "kyc"
+        ],
+        "values": {
+          "en": "kyc"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about kyc — answers the one question the directive actually asks: **what level of customer due diligence is owed**, given facts someone else established.",
+        "uuid": "d151bd77-6afa-84c5-9f3f-50e6427ba9f7",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "kyc",
+          "answers",
+          "the",
+          "one",
+          "question",
+          "the",
+          "directive",
+          "actually",
+          "asks",
+          "what",
+          "level",
+          "of",
+          "customer",
+          "due",
+          "diligence",
+          "is",
+          "owed",
+          "given",
+          "facts",
+          "someone",
+          "else",
+          "established"
+        ],
+        "values": {
+          "en": "Use when reasoning about kyc — answers the one question the directive actually asks: **what level of customer due diligence is owed**, given facts someone else established."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "risk",
+    "path": "agents/mcp/tool/risk",
+    "translations": [
+      {
+        "key": "name",
+        "source": "risk",
+        "uuid": "fbd9eb2e-831d-88ff-bdef-d0cd4f893583",
+        "words": [
+          "risk"
+        ],
+        "values": {
+          "en": "risk"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395).",
+        "uuid": "85f299cb-ab70-801b-9fdf-e00c48a8b7ba",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "risk",
+          "measures",
+          "large",
+          "exposures",
+          "against",
+          "tier",
+          "capital",
+          "crr",
+          "art"
+        ],
+        "values": {
+          "en": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395)."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "staffing",
+    "path": "agents/mcp/tool/staffing",
+    "translations": [
+      {
+        "key": "name",
+        "source": "staffing",
+        "uuid": "1d6af325-a3c8-84dd-9430-174518f34a89",
+        "words": [
+          "staffing"
+        ],
+        "values": {
+          "en": "staffing"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about staffing — folds a declared position into everything it already implied: the job description, the competency gap, the training plan **in the order it must run**, the access capability, and…",
+        "uuid": "bbd3ad38-c115-830f-8305-91a5432fff6a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "staffing",
+          "folds",
+          "a",
+          "declared",
+          "position",
+          "into",
+          "everything",
+          "it",
+          "already",
+          "implied",
+          "the",
+          "job",
+          "description",
+          "the",
+          "competency",
+          "gap",
+          "the",
+          "training",
+          "plan",
+          "in",
+          "the",
+          "order",
+          "it",
+          "must",
+          "run",
+          "the",
+          "access",
+          "capability",
+          "and"
+        ],
+        "values": {
+          "en": "Use when reasoning about staffing — folds a declared position into everything it already implied: the job description, the competency gap, the training plan **in the order it must run**, the access capability, and…"
         }
       }
     ]
@@ -4233,7 +4483,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel.",
-        "uuid": "10b969d3-9f16-8003-b665-fed8b2045008",
+        "uuid": "e72febbe-da1c-8a37-9b44-bb0330b94f6f",
         "words": [
           "use",
           "when",
@@ -37713,7 +37963,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about registry — Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory).",
-        "uuid": "52869777-618f-863d-93f2-6d754db9a9be",
+        "uuid": "f1b6fc36-6c8f-8f33-8a8f-38f66acddb40",
         "words": [
           "use",
           "when",
@@ -56975,7 +57225,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a notary check needs a qualified electronic signature or a qualified timestamp — the REAL wired eIDAS provider. Resolves the Bulgarian Trusted List from the EU List Of Trusted Lists (LOTL, no country hardcoded), parses the granted qualified services (CA/QC for signature, TSA/QTST for RFC 3161 timestamp), and verifies a named QTSP (BORICA B-Trust / Evrotrust / InfoNotary) holds one. Highest-leverage check: signature+timestamp are on EVERY document type. Honest boundary — verification is public and credential-free; actual issuance needs a QTSP account credential injected at deploy.",
-        "uuid": "1e995958-f8a6-879d-91aa-9e0d1899bad1",
+        "uuid": "6168848a-f6db-88f9-953a-e2393c780f69",
         "words": [
           "use",
           "when",
@@ -62292,7 +62542,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost.",
-        "uuid": "a283e1e4-35fa-8584-924b-29823c4bfae3",
+        "uuid": "5db8c033-1bc4-8924-a721-b543a213df46",
         "words": [
           "use",
           "when",
@@ -71120,7 +71370,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.",
-        "uuid": "4c8e9630-34f4-8d3a-8000-6845694a007a",
+        "uuid": "b41dd731-2557-833f-9304-b9a6e9a25af0",
         "words": [
           "use",
           "when",
@@ -73120,7 +73370,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about cache — Generic Payload CMS caching utilities — wraps `next/cache` `unstable_cache` with tag-keyed invalidation for collection / global fetches.",
-        "uuid": "c53e1431-4f9a-81b1-b9ad-03dc2c977f7a",
+        "uuid": "24ad758d-4093-8768-84b0-5b20de0c4f23",
         "words": [
           "use",
           "when",
@@ -83503,7 +83753,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about seeks — A pointer to products or services sought by the organization or person (demand).",
-        "uuid": "a2a987c3-0b1c-8ba0-875a-bb562cec981a",
+        "uuid": "ea02c052-9d26-8270-97a0-032ee0b7d4bf",
         "words": [
           "use",
           "when",
@@ -84474,7 +84724,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded.",
-        "uuid": "bfd35afa-0b8e-86f1-8e0d-1c8144396fdb",
+        "uuid": "ad26e7c5-41ac-8377-a84f-3b82b12101c6",
         "words": [
           "use",
           "when",
@@ -84906,7 +85156,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about seller — An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider.",
-        "uuid": "06bac952-ab6e-8c3e-991f-935c29717387",
+        "uuid": "bd56b8c3-04c2-8a55-a52f-fcca8a25c989",
         "words": [
           "use",
           "when",
@@ -85798,7 +86048,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about service — A service provided by an organization, e.g. delivery service, print services, etc.",
-        "uuid": "ff626e09-fbe7-8a67-aa25-ac4ed33275eb",
+        "uuid": "4cefd679-3919-80b4-9d2a-031838703e04",
         "words": [
           "use",
           "when",
@@ -85821,76 +86071,6 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about service — A service provided by an organization, e.g. delivery service, print services, etc."
-        }
-      }
-    ]
-  },
-  {
-    "atom": "services",
-    "path": "services",
-    "translations": [
-      {
-        "key": "name",
-        "source": "services",
-        "uuid": "cc918dec-9812-8dda-909e-04e3f312e376",
-        "words": [
-          "services"
-        ],
-        "values": {
-          "en": "services"
-        }
-      },
-      {
-        "key": "description",
-        "source": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-        "uuid": "d79e824f-d19e-874b-9b99-fc47da9df9a0",
-        "words": [
-          "use",
-          "when",
-          "adding",
-          "finding",
-          "or",
-          "debugging",
-          "erpax",
-          "business",
-          "logic",
-          "that",
-          "is",
-          "not",
-          "schema",
-          "pure",
-          "tested",
-          "functions",
-          "content",
-          "uuid",
-          "math",
-          "integrity",
-          "tamper",
-          "cost",
-          "the",
-          "agent",
-          "society",
-          "domain",
-          "export",
-          "import",
-          "the",
-          "society",
-          "s",
-          "organ",
-          "body",
-          "one",
-          "folder",
-          "per",
-          "organ",
-          "called",
-          "by",
-          "the",
-          "collections",
-          "access",
-          "hooks"
-        ],
-        "values": {
-          "en": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks."
         }
       }
     ]
@@ -99600,7 +99780,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society spawns multiple agents that share skills — a team is a set of content-addressed agents whose competence is the UNION of their skills (merge/holographic: a skill one loads, the team has), with distinct purposes preserved. Spawn → share → cover the gap in parallel. Matter-twin services/agent/team.ts.",
-        "uuid": "a946e441-94fa-86e5-9fa6-5991817c29fe",
+        "uuid": "7ef522e0-a816-8ea7-9ac8-8812d71c44dc",
         "words": [
           "use",
           "when",
@@ -110074,73 +110254,6 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about uses as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-        }
-      }
-    ]
-  },
-  {
-    "atom": "utilities",
-    "path": "utilities",
-    "translations": [
-      {
-        "key": "name",
-        "source": "utilities",
-        "uuid": "bfc8cb2e-45c4-80fe-aea8-04773b9858a8",
-        "words": [
-          "utilities"
-        ],
-        "values": {
-          "en": "utilities"
-        }
-      },
-      {
-        "key": "description",
-        "source": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them.",
-        "uuid": "824cc17c-1c61-8e2e-a6d0-4449390fe66d",
-        "words": [
-          "use",
-          "when",
-          "you",
-          "need",
-          "a",
-          "pure",
-          "helper",
-          "a",
-          "payload",
-          "next",
-          "tenant",
-          "glue",
-          "function",
-          "or",
-          "an",
-          "admin",
-          "react",
-          "hook",
-          "and",
-          "it",
-          "does",
-          "not",
-          "implement",
-          "a",
-          "standard",
-          "s",
-          "algorithm",
-          "the",
-          "non",
-          "standards",
-          "helper",
-          "layer",
-          "that",
-          "may",
-          "cite",
-          "standards",
-          "but",
-          "never",
-          "implements",
-          "them"
-        ],
-        "values": {
-          "en": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them."
         }
       }
     ]
@@ -137241,7 +137354,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts.",
-        "uuid": "c1e16d12-128a-81ee-b390-a9e01a733dbf",
+        "uuid": "acd67924-2483-8022-ad0a-2db8cf45df29",
         "words": [
           "use",
           "when",
@@ -142456,7 +142569,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about demand — A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. Fo",
-        "uuid": "e3e75791-4bb0-82bd-9346-6b48474cd9b1",
+        "uuid": "d5abbdc5-262b-8acb-ba09-4baeb216b2fa",
         "words": [
           "use",
           "when",
@@ -160733,7 +160846,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about gtin — A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, whi",
-        "uuid": "cabe08a2-6eda-8ff4-b55e-532f6951ef17",
+        "uuid": "4874129d-915c-80d4-9fa7-0dbdaee5a1f1",
         "words": [
           "use",
           "when",
@@ -161123,7 +161236,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about guide — Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of p",
-        "uuid": "1c856c04-b2ee-8e6b-ab92-a693eb5cdbd0",
+        "uuid": "6cb77025-f53b-8da5-9ae4-9259babc2ffa",
         "words": [
           "use",
           "when",
@@ -169035,7 +169148,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about invoice — A statement of the money due for goods or services; a bill.",
-        "uuid": "4ccb9be2-1ec4-83ea-be7c-b3995c60ff05",
+        "uuid": "8335a02a-a497-8c40-80fc-32a6d711f342",
         "words": [
           "use",
           "when",
@@ -173508,7 +173621,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when mapping the boundary of erpax — what it CAN do (the provable: addressable, balanced, conserved FORM) vs what it CANNOT do from within (truth, judgment, finality, true-erasure, prevention, the subjective — the Gödel boundary). The live finder is services/architecture-invariants; the hard limits are filled by proving the unprovable — supplying the missing 1/3 from OUTSIDE the formalism.",
-        "uuid": "4f8b2d2a-1313-823e-8ed2-e64f9ec57a70",
+        "uuid": "3fd85924-a1c9-88ab-b41b-e07cbe3228a4",
         "words": [
           "use",
           "when",
@@ -177345,7 +177458,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about matter — Strip the prefix *legal* and a **matter** is the universal professional-services engagement: a party (the client) retains the firm to do work, the work is staffed by positions and",
-        "uuid": "9f726675-6383-815a-b0dd-b8a4fc293a1b",
+        "uuid": "1c7c09bd-bee7-8290-8219-52e2c088a4ed",
         "words": [
           "use",
           "when",
@@ -189973,7 +190086,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about patient — A patient is any person recipient of health care services.",
-        "uuid": "ac0bfd35-5c0b-8a81-a1a7-b7e7823a3652",
+        "uuid": "9fb25d2f-6931-86e5-9260-8e21f8d0e072",
         "words": [
           "use",
           "when",
@@ -194989,7 +195102,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about prepaid — Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period",
-        "uuid": "9d25cee9-3ca1-8361-8104-54a541cad885",
+        "uuid": "da6fbde9-dfee-8a8a-9d1a-d4ce6a0e0208",
         "words": [
           "use",
           "when",
@@ -198008,7 +198121,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about provider — The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider m",
-        "uuid": "5c1aa044-6132-8e47-8994-2487b0890000",
+        "uuid": "ea09ae1f-82d8-8fa9-953f-11c1468e721b",
         "words": [
           "use",
           "when",
@@ -201221,7 +201334,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about recommendation — Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concre",
-        "uuid": "07d0004d-d2bb-8fc4-82e8-41606d5b6b3d",
+        "uuid": "2fe58d7c-949b-8d9f-8e61-619bf11cc142",
         "words": [
           "use",
           "when",
@@ -210745,4 +210858,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3602
+export const TRANSLATIONS_COUNT = 3605

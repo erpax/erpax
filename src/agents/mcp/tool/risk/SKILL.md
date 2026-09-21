@@ -1,3 +1,36 @@
+---
+name: risk
+description: "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395)."
+atomPath: "agents/mcp/tool/risk"
+coordinate: "agents/mcp/tool/risk · 4/weave · f5b0ebac"
+contentUuid: "b743832f-3032-5f78-84fe-d56d9daccd5a"
+diamondUuid: "f2e40df9-ec06-8b99-814e-0239b6279cd2"
+uuid: "f5b0ebac-1400-8562-b5ab-f6376a17e0fb"
+horo: 4
+typography:
+  partition: agents
+  bondDegree: 73
+standards: []
+bindings: []
+signatures:
+  computationUuid: "c349697e-895e-8e8a-9e26-4371465aead4"
+  stages:
+    - stage: path
+      stageUuid: "b02c8749-6320-8ea9-8e7a-af0f39d4c5f4"
+    - stage: trinity
+      stageUuid: "1bd72922-4dc5-83d1-bcf4-265dc6e8e511"
+    - stage: boundary
+      stageUuid: "8152a232-1a9e-8f03-bcac-e719f54b2523"
+    - stage: links
+      stageUuid: "3654fc63-2e94-8da0-a03c-ec00e1e2d46a"
+    - stage: horo
+      stageUuid: "80800df7-884b-8a14-b5f0-becdc9302ab1"
+    - stage: seal
+      stageUuid: "02bc03f9-49a9-84e1-b48d-427b173f55b6"
+    - stage: uuid
+      stageUuid: "6d2fcc60-6a83-8f85-9e44-2036817ffe66"
+version: 2
+---
 # agents/mcp/tool/risk — aggregated by connected client BEFORE the limit is tested
 
 `erpax.risk.concentration` measures large exposures against Tier 1 capital (CRR Art. 392/395).

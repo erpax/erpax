@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded.",
-    "uuid": "bfd35afa-0b8e-86f1-8e0d-1c8144396fdb",
+    "uuid": "ad26e7c5-41ac-8377-a84f-3b82b12101c6",
     "words": [
       "use",
       "when",

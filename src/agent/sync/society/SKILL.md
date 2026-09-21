@@ -3,13 +3,13 @@ name: society
 description: "Use when reasoning about society — agent-society — the breath over the agent-sync bus."
 atomPath: "agent/sync/society"
 coordinate: "agent/sync/society · 8/crest · e1bbed45"
-contentUuid: "2d97332e-7c97-53d9-97be-cac4d1b44d0e"
-diamondUuid: "13d0d4ac-4467-8ec5-96c9-b0308de7df89"
+contentUuid: "804cd1ca-e31a-5769-8d9d-10defc316779"
+diamondUuid: "1663e787-3005-8a49-a34e-7c41a1ab9d18"
 uuid: "e1bbed45-2e62-8c1a-b5b1-dc553ee35c9d"
 horo: 8
 typography:
   partition: agent
-  bondDegree: 448
+  bondDegree: 442
 standards:
   - "ISO-27001"
   - "ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation (room per tenant)"
@@ -20,7 +20,7 @@ standards:
   - "W3C-ActivityPub"
 bindings: []
 signatures:
-  computationUuid: "de128671-48c5-84c3-8db4-b62ca76d87af"
+  computationUuid: "8aa5f412-84a9-84e2-b02b-d5e7b3547cfa"
   stages:
     - stage: path
       stageUuid: "ee13706d-10c1-85d2-a60b-5b3788245a78"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "11491ad3-4c0d-8bdd-b0a6-c318f9313917"
     - stage: horo
-      stageUuid: "f969248e-bc42-84c6-9c95-08e17596f443"
+      stageUuid: "9f0bc055-9011-8c6f-a616-4c6a95344b10"
     - stage: seal
       stageUuid: "4309ad44-74c6-8388-bef0-6d2bd5c5988e"
     - stage: uuid
-      stageUuid: "a8f61fd4-dd48-86fe-ab42-0da00847c61c"
+      stageUuid: "ae23903a-77d3-883e-ac9d-f08ad6e279cb"
 version: 2
 ---
 # agent/sync/society

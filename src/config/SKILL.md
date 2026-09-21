@@ -3,13 +3,13 @@ name: config
 description: "Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints."
 atomPath: config
 coordinate: "config · 9/unity · 24282c70"
-contentUuid: "4958fd9c-5760-596f-8381-b8e9d2dbee0f"
-diamondUuid: "09ef0b95-c5e3-88e4-99aa-128e9d83fae2"
+contentUuid: "dc44b4df-1891-5a9f-bb0c-650e9f8fd78c"
+diamondUuid: "28abeb2d-020e-8472-ab2e-6f4034300f39"
 uuid: "24282c70-e804-8fda-a2ff-ce0aa2107911"
 horo: 9
 typography:
   partition: config
-  bondDegree: 171
+  bondDegree: 168
 standards:
   - "BCP-47"
   - "Berlin-Group-PSD2"
@@ -27,7 +27,7 @@ standards:
   - "UPU-S42"
 bindings: []
 signatures:
-  computationUuid: "ba6c2fdd-218f-8d42-ba53-58bb9eff982e"
+  computationUuid: "23253326-4878-8d4b-8272-e2309df18cb9"
   stages:
     - stage: path
       stageUuid: "3ea2c96b-64d2-8e0c-b61e-db0ac10ea1f1"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "6936ccc4-f826-8824-8772-a6ad7df4491f"
     - stage: horo
-      stageUuid: "8a5f470d-d172-8cca-870b-562cad862ee9"
+      stageUuid: "80fb60d7-7d8c-85a5-9f7e-b8bbf293c0fc"
     - stage: seal
       stageUuid: "f41f4f33-00a0-8b7f-be19-5f854aa0a0b5"
     - stage: uuid
-      stageUuid: "3ce256aa-b473-81a4-8c9b-78cd6f71e5d9"
+      stageUuid: "e39338ad-a259-8895-a67c-621a67d6032c"
 version: 2
 ---
 # config — the root Payload config (buildConfig)

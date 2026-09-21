@@ -3,13 +3,13 @@ name: uuid
 description: "Use when choosing which RFC 9562 UUID version fits a case — v8 structured content-uuid (identity+capability+schema+digest fused) as the erpax default, v7 time-ordered for index-local speed, v4 random for unguessable secrets. Harmonise the features and everything collapses INTO the uuid itself — the 128-bit singularity."
 atomPath: uuid
 coordinate: "uuid · 7/descent · e0000049"
-contentUuid: "c73115d1-e142-508c-a9d5-61a2f9268aca"
-diamondUuid: "20df4362-43c4-8663-a43e-1820be57dc0c"
+contentUuid: "c3d13879-62cf-5c40-b278-89be98534891"
+diamondUuid: "daa34846-5e23-87df-9b37-895c95f61785"
 uuid: "e0000049-d851-8ea9-89e6-04b029054d13"
 horo: 7
 typography:
   partition: uuid
-  bondDegree: 825
+  bondDegree: 822
 standards:
   - "ITU-T-X667"
   - "NIST-SP-800-162"
@@ -19,7 +19,7 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "45e64568-056d-8cde-be2c-0711fd8c39c0"
+  computationUuid: "7b1b4e68-4f93-822b-854c-89e011d787ce"
   stages:
     - stage: path
       stageUuid: "c7450bce-8641-80fc-9bb8-d74a484d2469"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "c08da5ba-550f-82f6-8fbb-7b210cc87320"
     - stage: horo
-      stageUuid: "d24a192d-c795-83cc-8216-2986d7b57f90"
+      stageUuid: "797db10e-7972-82eb-8f19-59412dfc64bf"
     - stage: seal
       stageUuid: "92b39ecd-b9b7-8414-a341-ed134a0f4cdc"
     - stage: uuid
-      stageUuid: "d111b3ae-dd50-8bc7-9c86-96dde615943a"
+      stageUuid: "19a9d549-00e9-8eba-bac4-bc3434ee9b0d"
 version: 2
 ---
 # uuid — which version per case; the singularity all collapses into

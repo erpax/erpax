@@ -3,13 +3,13 @@ name: self
 description: "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \"all agents are one erpax\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
 atomPath: self
 coordinate: "self · 4/weave · 6c1a20b1"
-contentUuid: "0640bcb5-4e8b-590e-9241-d4416606dd00"
-diamondUuid: "afe07b89-c346-83b3-9cab-fc15274f9d77"
+contentUuid: "11804f9d-a252-5094-98fd-f9003c6b497d"
+diamondUuid: "b6e22541-80b4-84ae-be78-2e297bbd0a1a"
 uuid: "6c1a20b1-b01d-80b3-8413-de4af81f10cd"
 horo: 4
 typography:
   partition: self
-  bondDegree: 366
+  bondDegree: 363
 standards:
   - "EU-2002/58"
   - "EU-CSRD"
@@ -23,7 +23,7 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "a2301f9e-68c8-8a2d-8c72-757d5bb90441"
+  computationUuid: "1055d809-0694-831a-aadd-58f8b5f40647"
   stages:
     - stage: path
       stageUuid: "d34900ad-931d-807f-9a78-9f3bfbd38395"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "64ff8feb-5e47-8b39-98c0-b871941ff78f"
     - stage: horo
-      stageUuid: "c7b19d14-af5b-8513-a881-895a3d8e43df"
+      stageUuid: "67564c85-7ab8-8591-9bda-59a2b15194ce"
     - stage: seal
       stageUuid: "424e8562-feec-89cd-88c8-ebb287cb4e04"
     - stage: uuid
-      stageUuid: "6b64a703-8392-8269-88a8-aaf76c26d70f"
+      stageUuid: "288d3aea-dcdf-8c3d-a76b-a33219197009"
 version: 2
 ---
 # self — the reach back into the root (0)

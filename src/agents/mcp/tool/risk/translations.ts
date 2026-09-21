@@ -6,38 +6,36 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "patient",
-    "uuid": "823d7cba-ee85-8f15-b7ea-93817d07923d",
+    "source": "risk",
+    "uuid": "fbd9eb2e-831d-88ff-bdef-d0cd4f893583",
     "words": [
-      "patient"
+      "risk"
     ],
     "values": {
-      "en": "patient"
+      "en": "risk"
     }
   },
   {
     "key": "description",
-    "source": "Use when reasoning about patient — A patient is any person recipient of health care services.",
-    "uuid": "9fb25d2f-6931-86e5-9260-8e21f8d0e072",
+    "source": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395).",
+    "uuid": "85f299cb-ab70-801b-9fdf-e00c48a8b7ba",
     "words": [
       "use",
       "when",
       "reasoning",
       "about",
-      "patient",
-      "a",
-      "patient",
-      "is",
-      "any",
-      "person",
-      "recipient",
-      "of",
-      "health",
-      "care",
-      "services"
+      "risk",
+      "measures",
+      "large",
+      "exposures",
+      "against",
+      "tier",
+      "capital",
+      "crr",
+      "art"
     ],
     "values": {
-      "en": "Use when reasoning about patient — A patient is any person recipient of health care services."
+      "en": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395)."
     }
   }
 ]

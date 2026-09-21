@@ -3,18 +3,18 @@ name: uuid
 description: "Use when reasoning about the content-uuid in the quantum frame — the 128-bit address is the collapse of content (a sha-256 measurement of the infinite stream into one settled point); it fuses identity, capability, schema, and a multi-modal projection (color plus sound), and it is the entanglement key that binds the whole corpus into one."
 atomPath: "quantum/uuid"
 coordinate: "quantum/uuid · 4/weave · edafb6a4"
-contentUuid: "6e8053b6-850c-5206-b0f5-e9622c2adb22"
-diamondUuid: "7a852b88-8e2b-8896-9c95-b1d8953c9218"
+contentUuid: "0a20cb2d-4b62-5b12-bfe4-8eeede000315"
+diamondUuid: "32e6164b-915a-81ff-86fe-cb4daccd682e"
 uuid: "edafb6a4-aafd-801a-afb2-3c4cd05aecb0"
 horo: 4
 typography:
   partition: quantum
-  bondDegree: 825
+  bondDegree: 822
 standards:
   - "RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "7cf09c37-8526-8917-99de-4538d643d6f3"
+  computationUuid: "c2e57ae1-88b5-8665-b481-fd5cd23da1ea"
   stages:
     - stage: path
       stageUuid: "f07af087-f161-8df7-83aa-761b91b668bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1418095e-e96e-8de4-8a0a-f2cc9c0f510f"
     - stage: horo
-      stageUuid: "c69788db-bbe2-8dbc-84d3-6dcdfbf33c3c"
+      stageUuid: "f8a7fdfc-344d-8030-9840-a31865f0db63"
     - stage: seal
       stageUuid: "a7b816c3-9b29-8f74-8bd1-8a2f1d97cecc"
     - stage: uuid
-      stageUuid: "f37685f5-19df-8ba3-97c2-c41f65a8f776"
+      stageUuid: "f75889e2-1ab4-827a-9f49-52c6f65e13eb"
 quantum:
   superposition:
     - access
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "7cf09c37-8526-8917-99de-4538d643d6f3"
-    contentUuid: "6e8053b6-850c-5206-b0f5-e9622c2adb22"
+    computationUuid: "c2e57ae1-88b5-8665-b481-fd5cd23da1ea"
+    contentUuid: "0a20cb2d-4b62-5b12-bfe4-8eeede000315"
 version: 2
 ---
 # quantum/uuid — the collapse that is the address
@@ -87,4 +87,4 @@ It is *at all quantum scales* because the address is [[fractal]]: the identical 
 
 @see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · [[finality]] · [[signal]] · [[realtime]] · [[memory]] · [[generate]] · [[snapshot]] · [[akashic]] · [[fractal]] · [[holographic]] · [[confirm]] · [[payload]] · [[seal]]
 
-<sub>content-uuid `6e8053b6-850c-5206-b0f5-e9622c2adb22` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `0a20cb2d-4b62-5b12-bfe4-8eeede000315` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -68,7 +68,12 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "agents/mcp",
   "agents/mcp/i18n",
   "agents/mcp/tool",
+  "agents/mcp/tool/aml",
   "agents/mcp/tool/cloudflare",
+  "agents/mcp/tool/float",
+  "agents/mcp/tool/kyc",
+  "agents/mcp/tool/risk",
+  "agents/mcp/tool/staffing",
   "agents/registered",
   "agents/registered/hr",
   "agents/registered/hr/training",
@@ -1508,7 +1513,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1501 as const
+export const ATOM_LEDGER_PATH_COUNT = 1506 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1755,10 +1760,35 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp",
     "agents/mcp/tool"
   ],
+  "agents/mcp/tool/aml": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/aml"
+  ],
   "agents/mcp/tool/cloudflare": [
     "agents/mcp",
     "agents/mcp/tool",
     "agents/mcp/tool/cloudflare"
+  ],
+  "agents/mcp/tool/float": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/float"
+  ],
+  "agents/mcp/tool/kyc": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/kyc"
+  ],
+  "agents/mcp/tool/risk": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/risk"
+  ],
+  "agents/mcp/tool/staffing": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/staffing"
   ],
   "agents/registered": [
     "agents/registered"
@@ -7028,4 +7058,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 851 as const
+export const MERGED_NESTED_PATH_COUNT = 856 as const

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about provider — The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider m",
-    "uuid": "5c1aa044-6132-8e47-8994-2487b0890000",
+    "uuid": "ea09ae1f-82d8-8fa9-953f-11c1468e721b",
     "words": [
       "use",
       "when",

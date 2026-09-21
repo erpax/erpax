@@ -3,17 +3,17 @@ name: hooks
 description: "Use when reasoning about the products collection's Payload hooks — before/after change and validate logic for products."
 atomPath: "media/products/hooks"
 coordinate: "media/products/hooks · 6/6 · 8591a22b"
-contentUuid: "11ff810e-bbd4-57c3-8e33-0f866b057524"
-diamondUuid: "e499990f-68c3-8641-b1e9-c9ce874a2dca"
+contentUuid: "344ec43a-c6b6-59b6-9b2a-5e29188f0261"
+diamondUuid: "ecaa7476-78eb-8440-a289-eda7ec736de7"
 uuid: "8591a22b-403f-8b25-bcc8-1f56c6d66101"
 horo: 6
 typography:
   partition: media
-  bondDegree: 348
+  bondDegree: 345
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5a87c6aa-a7fb-852a-b086-ad063bd3cdfb"
+  computationUuid: "af074276-0592-8c9c-b35d-ab77cf013a2c"
   stages:
     - stage: path
       stageUuid: "8904ce62-1b19-8eef-a653-6d782091b3a5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "27dcf008-963f-8d47-a718-094480a27710"
     - stage: horo
-      stageUuid: "215c12b3-1e00-8d5b-80d1-1d8fa031c7fc"
+      stageUuid: "a5e62f1b-6b47-8f93-8a9e-66904dc96241"
     - stage: seal
       stageUuid: "81e07ade-5c58-8b41-baf2-42fdee48a09f"
     - stage: uuid
-      stageUuid: "5c7ae9cb-6cbd-8f35-8f27-e0182db62238"
+      stageUuid: "60e5e0a4-1143-8a2b-823d-248f8ac4a594"
 version: 2
 ---
 # media/products/hooks
