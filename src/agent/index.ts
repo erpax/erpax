@@ -529,3 +529,26 @@ export * from './mortality'
 export * from './skill'
 
 export * from './harmonic'
+
+/*
+ * The seven children `@/agent` did not offer.
+ *
+ * index-cross charges a one-way bond when a parent barrel does not re-export a child, and `agent`
+ * carried eleven. Four of those — harmonics, security, sync, team — are FALSE POSITIVES: they are
+ * reached through a re-exported sibling, which `reexportTargets` cannot see because it scans only
+ * the parent's own `index.ts` for `from './<child>'`. Adding those four would raise TS2308
+ * duplicate-export errors against the barrel that already carries them.
+ *
+ * These seven are genuine: nothing in the closure of `@/agent` offers them, so a caller writing
+ * `import { … } from '@/agent'` cannot reach them at all. Verified before adding — none is bundled
+ * by a published package, the barrel is not pinned by a test, all seven are pure `.ts` with no
+ * 'use client' and no .scss, none imports `@/agent` back, and none collides with the 142 names the
+ * barrel already offers.
+ */
+export * from './access'
+export * from './benchmark'
+export * from './chat'
+export * from './communication'
+export * from './receipt'
+export * from './research'
+export * from './ui'
