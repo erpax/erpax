@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
+import { citingAtoms } from '@/proof/replaceable'
 import { atomAddress } from '@/atom/address'
 import { kernelPath } from '@/proof/accepted'
 import {
@@ -10,6 +11,7 @@ import {
   declaredAxioms,
   foreignAxioms,
   formatRegister,
+  spellingVariants,
   standardRegister,
   theoremNames,
   unprovenTheorems,
@@ -114,4 +116,25 @@ describe('proof/register', () => {
     // Anything neither declared here nor shipped by Lean arrived from somewhere, and should be named.
     expect(foreignAxioms(axiomRegister(process.cwd()))).toEqual([])
   }, 300_000)
+})
+
+describe('proof/register — the inconsistency the fold must not delete', () => {
+  it('reports a standard the corpus writes more than one way', () => {
+    const v = spellingVariants([
+      { standards: ['ISO/IEC 27001 A.5.23 — isolation', 'ISO 27001 A.5.23 — tenants', 'RFC 9562 §5.8'] },
+    ])
+    expect(v).toEqual([{ standard: 'ISO 27001 A.5.23', written: ['ISO 27001 A.5.23', 'ISO/IEC 27001 A.5.23'] }])
+  })
+
+  it('one spelling is not a variant — the report names disagreement, never every citation', () => {
+    expect(spellingVariants([{ standards: ['ISO 4217', 'ISO 4217'] }])).toEqual([])
+  })
+
+  it('the live corpus still disagrees with itself, and that is the point of keeping this', () => {
+    // Folding editions and publishers into one key fixed a lost discharge and would have deleted
+    // the finding the duplicate count used to carry. It is carried here instead.
+    const v = spellingVariants(citingAtoms())
+    expect(v.length).toBeGreaterThan(0)
+    expect(v.every((x) => x.written.length > 1)).toBe(true)
+  })
 })

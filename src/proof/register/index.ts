@@ -191,6 +191,40 @@ const hasGate = (atomPath: string, cwd: string): boolean => {
   return false
 }
 
+export interface SpellingVariant {
+  readonly standard: string
+  /** Every raw form the corpus writes for it — two or more, or it is not a variant. */
+  readonly written: readonly string[]
+}
+
+/**
+ * One standard, written more than one way — the inconsistency `standardKey` folds for DISCHARGE.
+ *
+ * The fold is right there: a gate citing `ISO 27001 A.5.23` must discharge an atom citing
+ * `ISO/IEC 27001 A.5.23`, and keying on the spelling cost exactly that. But the corpus's own
+ * citation format really is inconsistent, and that finding used to be visible AS the duplicate
+ * count. Folding it away without putting it somewhere would delete a finding to fix a bug.
+ */
+export function spellingVariants(
+  atoms: readonly { readonly standards: readonly string[] }[],
+): SpellingVariant[] {
+  const byKey = new Map<string, Set<string>>()
+  for (const a of atoms) {
+    for (const raw of a.standards) {
+      const key = standardKey(raw)
+      if (!key) continue
+      const head = raw.split('—')[0]!.split('§')[0]!.trim()
+      const hit = byKey.get(key) ?? new Set<string>()
+      hit.add(head)
+      byKey.set(key, hit)
+    }
+  }
+  return [...byKey]
+    .filter(([, written]) => written.size > 1)
+    .map(([standard, written]) => ({ standard, written: [...written].sort() }))
+    .sort((a, b) => b.written.length - a.written.length || a.standard.localeCompare(b.standard))
+}
+
 /**
  * Every standard this corpus cites, split into what it assumes and what it proves.
  *
