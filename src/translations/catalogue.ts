@@ -62914,7 +62914,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "replaceable",
-        "uuid": "2492696d-6b55-8264-8a08-cf9180531eff",
+        "uuid": "880c0822-0217-8cd9-b2b7-fac781ec967e",
         "words": [
           "replaceable"
         ],
@@ -62925,7 +62925,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…",
-        "uuid": "77e5271d-972f-881f-9458-1df9194066b1",
+        "uuid": "c2d1afe0-7ba0-8d3e-92c5-dc8140f6c1f3",
         "words": [
           "use",
           "when",
@@ -76089,7 +76089,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable).",
-        "uuid": "9780adce-d5d0-8943-a5e1-18c474ac06ae",
+        "uuid": "d97d3490-fdfe-82e0-98ae-df2cead98a2d",
         "words": [
           "use",
           "when",
