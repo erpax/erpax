@@ -14147,7 +14147,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
-        "uuid": "2abb9a3d-9918-8990-ad84-b792ffb0fa79",
+        "uuid": "2f01b287-30ab-8c71-b0c5-85845e2d30c3",
         "words": [
           "use",
           "when",
@@ -16071,7 +16071,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a command must exist without anyone remembering to register it — the CLI surface derived from the tree instead of transcribed into a table. An atom is a command exactly when its index.ts carries a CLI guard, and that is read from the grammar so a guard quoted in a comment or a string cannot masquerade as one. Descriptions come from each atom's own SKILL.md, an unambiguous leaf resolves like a search hit, and an ambiguous one is refused with its candidates named. Explicit registry entries always win.",
-        "uuid": "226b7f04-0785-85b8-b38c-704d9f8e5bed",
+        "uuid": "300f8325-1462-8c74-b8eb-f6af55fda65a",
         "words": [
           "use",
           "when",
@@ -18294,7 +18294,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.",
-        "uuid": "6c888b7d-5f00-8a31-8556-814923e39216",
+        "uuid": "f406a6df-9004-876b-9662-8d0b64c343a4",
         "words": [
           "use",
           "when",
@@ -18702,7 +18702,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference.",
-        "uuid": "bd6b6830-aaab-84ff-af74-8d4657e91d42",
+        "uuid": "78f96340-c15a-8a3b-ac63-fb142e56152f",
         "words": [
           "use",
           "when",
@@ -18768,7 +18768,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.",
-        "uuid": "76d3e335-10a9-8f5e-bdaf-52188b0a0a18",
+        "uuid": "cabfeee3-545b-803c-a918-b9c0184729e8",
         "words": [
           "use",
           "when",
@@ -20923,7 +20923,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register.",
-        "uuid": "6615ec84-6902-8156-8583-621eb773de82",
+        "uuid": "f6054b10-ce0e-82d9-b33a-e2a858b068c1",
         "words": [
           "use",
           "when",
@@ -24602,7 +24602,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.",
-        "uuid": "c24c54f1-f531-899f-a925-0cd87c11cd41",
+        "uuid": "ba047499-5aec-8274-83e7-0f5f1aa401d1",
         "words": [
           "use",
           "when",
@@ -25690,7 +25690,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project.",
-        "uuid": "8865532d-3cd7-84f2-b55d-6754fe43f598",
+        "uuid": "1205d143-a99b-81cb-8033-59c5f3f393e8",
         "words": [
           "use",
           "when",
@@ -25956,7 +25956,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P).",
-        "uuid": "c6ed66bb-a009-8c81-90d2-1462dab8b528",
+        "uuid": "fb901e0b-2368-8634-9e2b-1cb5e73e2efd",
         "words": [
           "use",
           "when",
@@ -26600,7 +26600,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register.",
-        "uuid": "356eea9a-e3d5-894a-83e5-a83245eb35c7",
+        "uuid": "c631c455-6917-8193-bbb7-5fe8778d7bd9",
         "words": [
           "use",
           "when",
@@ -30844,7 +30844,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register.",
-        "uuid": "7a6c00b2-63e6-8d7a-b0c3-b46dcb3030a1",
+        "uuid": "f3e2f83c-c880-8f50-ad9c-8b72318e817d",
         "words": [
           "use",
           "when",
@@ -30968,7 +30968,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
-        "uuid": "af2cd899-46f1-8816-ab06-d5b6704cc970",
+        "uuid": "b388b9ec-aea5-824f-9490-3f11bcff3221",
         "words": [
           "use",
           "when",
@@ -31029,7 +31029,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording employee equity grants — stock options, RSUs, RSAs, PSUs, ESPP, SARs — under IFRS 2, tracking equity-settled vs cash-settled treatment, vesting tranches with service/performance/market conditions, cumulative expense recognition, exercises and forfeitures. The IFRS 2 share-based-payment grant register.",
-        "uuid": "84360df9-f6bd-8e52-8093-6a5e862a3f3f",
+        "uuid": "121ce49a-f3b0-81bd-9588-26b435e76bba",
         "words": [
           "use",
           "when",
@@ -33806,7 +33806,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.",
-        "uuid": "8b2d91d0-a5d4-8b6f-8616-d3976ed74e8d",
+        "uuid": "58acb729-5f5d-8638-8d67-907111248cd8",
         "words": [
           "use",
           "when",
@@ -34454,7 +34454,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register.",
-        "uuid": "4b65788e-67b5-84b2-906c-e6528107c993",
+        "uuid": "3651cbf3-0833-896f-a99a-0ec4948ba04c",
         "words": [
           "use",
           "when",
@@ -34715,7 +34715,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.",
-        "uuid": "bdb4e278-dec5-8c33-9828-72c3d7c5014e",
+        "uuid": "a6d78bf7-29cb-8cc8-8040-7dd2299f51e0",
         "words": [
           "use",
           "when",
@@ -34915,7 +34915,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
-        "uuid": "e007957a-cf7c-84cf-8abb-e92372d1437c",
+        "uuid": "a3a027bc-09f8-895d-96ea-7868dc8064d8",
         "words": [
           "use",
           "when",
@@ -35042,7 +35042,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register.",
-        "uuid": "b13953c9-88c2-8c58-a706-9ae054dce6b9",
+        "uuid": "a63142df-088c-8999-8ac2-b144ebe85b1e",
         "words": [
           "use",
           "when",
@@ -36519,7 +36519,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register.",
-        "uuid": "267a034b-ee20-8cbb-913a-77bf3967b1a0",
+        "uuid": "c645758c-6fc0-8e39-8d36-96ec730af791",
         "words": [
           "use",
           "when",
@@ -37547,7 +37547,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
-        "uuid": "5f4a0856-6df2-8b58-a8f1-ace3296e9fac",
+        "uuid": "5f8fd7d6-20a2-8403-a6c0-52a09c587411",
         "words": [
           "use",
           "when",
@@ -38206,7 +38206,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
-        "uuid": "22643aff-05b1-8b67-b567-693fc793e52f",
+        "uuid": "501c6a1e-9a35-8888-8dac-d34bdbd8a9b9",
         "words": [
           "use",
           "when",
@@ -42156,7 +42156,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about instrument — Use before taking any measurement of this corpus — which tool answers which question, and how each one lies. Every wrong number here was a wrong instrument, or a right one trusted past its limit: a name-grep over a minified bundle, a lint report contradicted by the compiler, a web fetch returning a model's rendering, a count copied from a stale document. The pattern is that the wrong instrument does not error, it answers. instrumentFor names the settling tool; assertInstrument fails closed on a known-wrong pairing; an unregistered question passes, because pretending the register were complete would be the same error.",
-        "uuid": "07d1c287-e8ff-85e6-b145-45f61c195641",
+        "uuid": "1b0cb51c-1542-8a67-afe0-b05276c7b986",
         "words": [
           "use",
           "when",
@@ -42346,7 +42346,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register.",
-        "uuid": "fd725e81-08ed-88c9-9ad2-d6db8626d2b2",
+        "uuid": "0f82be21-aa4e-82b0-8cf4-3ab708ff8296",
         "words": [
           "use",
           "when",
@@ -42984,7 +42984,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or cataloguing internal controls — preventive, detective, corrective, or compensating — across COSO components (environment, risk assessment, control activities, information, monitoring); owner, frequency, review dates, SOX §404 scope. The internal-controls COSO-2013 register.",
-        "uuid": "dc101ffd-dcde-8137-997f-f61e440bd0ec",
+        "uuid": "6002eae8-93f2-851e-8446-b984f82e7a8f",
         "words": [
           "use",
           "when",
@@ -47174,7 +47174,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register.",
-        "uuid": "359382eb-79f9-8f65-bf1e-7f5cb80501a9",
+        "uuid": "96d2217d-74ac-8d2e-b5c7-973c9c5ee4a2",
         "words": [
           "use",
           "when",
@@ -47714,7 +47714,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.",
-        "uuid": "bd36e259-84a7-8345-a54a-0e436c109d9b",
+        "uuid": "8a4fe60f-6af9-8557-b04f-5cb0000c3b87",
         "words": [
           "use",
           "when",
@@ -47774,7 +47774,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording formal board-level decisions for a legal entity — resolutions, policy approvals, risk assessments, control enhancements, attestations, vote tallies, and related internal controls. The SOX §404 corporate-governance board-action register.",
-        "uuid": "21676e6e-c0db-8460-8d21-33a2ddc993f9",
+        "uuid": "c74ad64b-a41b-8ab7-9ac7-18691a8912b7",
         "words": [
           "use",
           "when",
@@ -47833,7 +47833,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
-        "uuid": "9f191d48-9644-89de-b083-2d2307a408ea",
+        "uuid": "d8f50c18-08c9-8771-b23e-cf15273079ea",
         "words": [
           "use",
           "when",
@@ -48277,7 +48277,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection.",
-        "uuid": "8f44f8e7-c93f-8ea5-a97a-22c983618b89",
+        "uuid": "f35b786a-3265-8ba8-9c5f-c125789e7c67",
         "words": [
           "use",
           "when",
@@ -48480,7 +48480,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reconciling paired source-document transactions between two group tenants or legal entities — cash transfers, service charges, goods transfers, loans, capital contributions, and cost allocations that must net to zero on consolidation per IFRS-10 §B86 / ASC-810 / SOX §404. The intercompany paired-document register collection.",
-        "uuid": "20737bad-1678-8e94-81c8-37e298ca40f5",
+        "uuid": "6f5b9aeb-8ffc-8dea-a0e6-cb96274bc248",
         "words": [
           "use",
           "when",
@@ -48748,7 +48748,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when submitting or tracking statutory filings — 10-K/20-F, 10-Q, SOX attestations, annual compliance reports — per legal entity per jurisdiction — filing status, due dates, regulator feedback, and linked audit findings. The regulatory-filing register.",
-        "uuid": "a32ccc93-f36a-8310-99ef-9641393ccde6",
+        "uuid": "3ca38eaa-b49b-8663-acfa-74cef013c643",
         "words": [
           "use",
           "when",
@@ -48809,7 +48809,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register.",
-        "uuid": "e8ccb19d-11ff-8ed0-9483-11e15dbc7b0b",
+        "uuid": "70accbdb-1a76-885b-8a43-6da7b1f71457",
         "words": [
           "use",
           "when",
@@ -48876,7 +48876,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when cataloguing enterprise risks per legal entity — inherent and residual likelihood/impact scoring (COSO/ISO-31000), mitigating internal controls, risk appetite assessment, next-assessment scheduling, linked audit findings. The COSO ERM risk register.",
-        "uuid": "de67a572-8d63-87bd-9a50-8b7dd67c2513",
+        "uuid": "6a7f4325-d374-809e-948e-dde46c810116",
         "words": [
           "use",
           "when",
@@ -48936,7 +48936,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register.",
-        "uuid": "2bc8c542-d531-8cf1-9a1b-8b8d0648cbe9",
+        "uuid": "91bc2077-dd75-8ccc-a9e2-725a4ff47f61",
         "words": [
           "use",
           "when",
@@ -48998,7 +48998,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register.",
-        "uuid": "1df552e3-2d41-835f-be43-542a04ccdbc8",
+        "uuid": "661bca98-cd9f-8e1c-95bd-cd4f2b139735",
         "words": [
           "use",
           "when",
@@ -50449,7 +50449,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.",
-        "uuid": "10a3068e-e8ff-8d1a-9ad2-0cd3ba03dc49",
+        "uuid": "e620951b-5837-8252-8834-9f586a39af57",
         "words": [
           "use",
           "when",
@@ -50520,7 +50520,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
-        "uuid": "6a231f39-9155-88ca-a4f1-b0e3d991d325",
+        "uuid": "08d11935-ca3f-8115-9fc0-56f56078c2e4",
         "words": [
           "use",
           "when",
@@ -50893,7 +50893,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register.",
-        "uuid": "adaa4245-422e-87d9-93fb-6fab192ec44e",
+        "uuid": "eee6bf9e-6d37-813c-ac65-03c6bc1f66eb",
         "words": [
           "use",
           "when",
@@ -51018,7 +51018,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when attaching or retrieving documentary evidence for audit work — PDF documents, bank statements, GL printouts, reconciliations, signed approvals, workpapers — with chain-of-custody log, confidentiality classification, retention schedule, and links to controls, control tests, samples, and findings. The ISA-500/PCAOB-AS-1105 audit-evidence register.",
-        "uuid": "e9551a56-b023-8fca-ac11-ecf235633175",
+        "uuid": "e4cd7f1c-2fd5-87eb-a4ee-631339e8d487",
         "words": [
           "use",
           "when",
@@ -51235,7 +51235,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register.",
-        "uuid": "dbe22284-e678-8158-a59c-35d7e16bf8fa",
+        "uuid": "07290fcd-5b02-857a-8486-fcc059f675f2",
         "words": [
           "use",
           "when",
@@ -55208,7 +55208,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the Clay Millennium Problems are offered as a testing ground — the honest register that NAMES the seven, marks six open and one solved (Poincaré, by Perelman), and refuses to solve any. Every entry's `corpusSolves` is the literal false, so the code cannot claim a solution; the corpus tools are lenses to learn through, and the quantum waves CLASSIFY a claimed solution, they do not produce one. HARMONY ≠ TRUTH.",
-        "uuid": "ecff2db6-f3b9-894c-9a28-5c8497b21242",
+        "uuid": "2c8ac120-5228-8c36-8239-34c13ad6fae9",
         "words": [
           "use",
           "when",
@@ -55685,7 +55685,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
-        "uuid": "07f8806f-d843-8027-af41-ac0460a1ef18",
+        "uuid": "d66e935e-e53c-8e6f-8e58-f79f82502c85",
         "words": [
           "use",
           "when",
@@ -57050,7 +57050,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a fact must be given public faith — recorded in a bound chronological register, timestamped, sealed tamper-evident, and made presumptively authentic. The legal notarial act modelled on erpax primitives: the seal is a content-uuid, the protocol is an append-only hash-chain, authenticity is an inclusion proof; the honest boundary is that real legal force needs a commissioned notary or an eIDAS/RFC-3161 trust service.",
-        "uuid": "52b5c473-9540-809f-b085-ffa4fdc5dede",
+        "uuid": "380d72cf-1fe1-85b3-beff-42c3d4a6b339",
         "words": [
           "use",
           "when",
@@ -57145,7 +57145,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a notary must verify an instrument before sealing it — the per-document-type duty matrix (identity, capacity, title, encumbrance, cadastre, sanctions, tax, spousal consent, company, signature, timestamp, apostille) mapped to the responsible Bulgarian register and the standard it satisfies, with a rosetta coverage audit that surfaces every unwired gap. Provider adapters are contracts; live wiring needs accredited credentials — no endpoint is fabricated, no gap is hidden.",
-        "uuid": "31089e70-b38b-8b30-b681-d90100613fde",
+        "uuid": "38df452d-98a0-8a65-a1cd-7d0768c917ef",
         "words": [
           "use",
           "when",
@@ -57458,7 +57458,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a notary check must confirm a company exists and resolve its registered name/address — the REAL wired provider for registryAgency (Агенция по вписванията). Validates an EIK/ЕИК as a BG VAT number against the EU VIES service, which answers over the national Commercial Register in real time; no credential. Honest boundary — VIES gives existence + name + address; representatives/capital and the Property Register (title/encumbrance) need credentialed RegiX / data-sharing access, refused honestly.",
-        "uuid": "37118c20-b513-8896-9c0f-6eccf614a0db",
+        "uuid": "8b5cdc0d-9530-80a2-8594-9cbaa1c1424a",
         "words": [
           "use",
           "when",
@@ -57913,7 +57913,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing СУПТО operators — assigning or decommissioning the 4-digit codes that form the second segment of every УНП — mapped to a user; audit trail preserved on decommission. The Наредба Н-18 operator register.",
-        "uuid": "53d1f010-5d93-831c-9672-eb463f5963f5",
+        "uuid": "03d4509b-185f-852c-bae8-6fb0aacacf99",
         "words": [
           "use",
           "when",
@@ -59322,7 +59322,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a modern patent claim needs anticipating art — a register of expired grants that are public-domain §102 prior art by construction. Every row's expiry is COMPUTED against the longest term that has ever applied (20 years from filing), never asserted, and the patent number is the citation so a reader checks a row rather than trusting it. Keeps the grant apart from the world: a patent proves a claim was filed, examined and published on a date, never that it works — deployed and undemonstrated are separate fields, and the inference from patented to works is refused.",
-        "uuid": "74789175-2515-8f04-93b2-a7285e2b2edd",
+        "uuid": "b88034c1-a6fb-8d52-b913-7fceee599074",
         "words": [
           "use",
           "when",
@@ -62852,7 +62852,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "register",
-        "uuid": "de5d5cc6-3990-8f62-a342-6c1b5e3ef418",
+        "uuid": "1262a4de-24d0-8b3c-a14c-dd6679ef3e9b",
         "words": [
           "register"
         ],
@@ -62863,7 +62863,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**.",
-        "uuid": "7611917e-46c8-8332-8bc7-5ee3b92736be",
+        "uuid": "fcf8ca1a-9aca-8eff-91ac-cafe6c69091a",
         "words": [
           "use",
           "when",
@@ -63057,7 +63057,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
-        "uuid": "f01fa455-94e4-88b2-b73e-206b5d4be302",
+        "uuid": "b4176b15-5746-8bf5-b34b-23474e644fed",
         "words": [
           "use",
           "when",
@@ -71487,7 +71487,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.",
-        "uuid": "b41dd731-2557-833f-9304-b9a6e9a25af0",
+        "uuid": "485f87f5-ddf8-89c4-ab1a-89bdc374f0f8",
         "words": [
           "use",
           "when",
@@ -98885,7 +98885,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection.",
-        "uuid": "7d221d04-1a26-81e6-a0a3-3e512e74f2d5",
+        "uuid": "8f18a723-d545-8867-abb0-ec563e3ce4f7",
         "words": [
           "use",
           "when",
@@ -202924,7 +202924,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "register",
-        "uuid": "de5d5cc6-3990-8f62-a342-6c1b5e3ef418",
+        "uuid": "1262a4de-24d0-8b3c-a14c-dd6679ef3e9b",
         "words": [
           "register"
         ],
@@ -202935,7 +202935,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about register as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-        "uuid": "1ab129df-3b9c-8aa4-a836-065bc4feefb9",
+        "uuid": "36c09cb8-619b-82a4-8a64-e9b4a0b20df5",
         "words": [
           "use",
           "when",
