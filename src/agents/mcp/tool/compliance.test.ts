@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { buildComplianceTools } from '@/agents/mcp/tool'
+import { buildAmlTools, buildFloatTools, buildKycTools, buildRiskTools, buildStaffingTools } from '@/agents/mcp/tool'
 
-const tools = buildComplianceTools()
+const tools = [...buildKycTools(), ...buildAmlTools(), ...buildRiskTools(), ...buildFloatTools(), ...buildStaffingTools()]
 const byName = new Map(tools.map((t) => [t.name, t]))
 const call = async (name: string, args: Record<string, unknown>): Promise<Record<string, unknown>> => {
   const t = byName.get(name)

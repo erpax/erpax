@@ -6433,6 +6433,7 @@ tests/helpers/standards-fixtures.ts:26: * @audit ISO-19011:2018 audit-trail stan
 
 ```text
 src/admin/TenantFilters.tsx:7: * @quality ISO-25010 usability admin-tooling
+src/agents/mcp/tool/_contract.ts:9: * @quality ISO/IEC 25010:2023 §5.7 modularity — one crossing, not one per area
 src/analytics/FinancialRatiosCard.tsx:11: * @quality ISO-25010 functional-suitability derived-metric
 src/analytics/KPIDashboard.tsx:13: * @quality ISO-25010 functional-suitability derived-metric
 src/analytics/TrendAnalysisCard.tsx:26: * @quality ISO-25010 functional-suitability historical-projection

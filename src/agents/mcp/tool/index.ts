@@ -53,7 +53,14 @@ export { buildFormatTools } from './format'
 // any entity with a uuid can be self-governing without central authority.
 export { buildGovernanceTools } from './governance'
 // The compliance atoms — kyc · aml · risk · float · staffing — which had no surface at all.
-export { buildComplianceTools } from './compliance'
+// Compliance atoms, one area file per namespace — the barrel's own convention above
+// ("each area file matches `erpax.<area>.*`") is what checkMcpBarrelWired enforces, and a single
+// `buildComplianceTools` spanning five prefixes reached none of them.
+export { buildKycTools } from './kyc'
+export { buildAmlTools } from './aml'
+export { buildRiskTools } from './risk'
+export { buildFloatTools } from './float'
+export { buildStaffingTools } from './staffing'
 // Slice AAAAAAAAAA-cut1 (2026-05-11) — errors are first-class uuids.
 // erpax.error.{compute, wrap} surface Conservation Law 64: every error
 // in the platform has a deterministic structured uuid; federation peers

@@ -114,7 +114,11 @@ import {
   buildBatchTools, buildVersionsTools,
   // Measured 2026-09-20: 56 tools on this surface and zero over the compliance atoms. A
   // capability with no surface is indistinguishable from an absent one.
-  buildComplianceTools,
+  buildKycTools,
+  buildAmlTools,
+  buildRiskTools,
+  buildFloatTools,
+  buildStaffingTools,
 } from '@/agents/mcp/tool'
 import { wrapToolsWithTenantGuard } from '@/agents/mcp/tool'
 import { nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest, UUID_MATRIX_NODES } from '@/uuid/matrix'
@@ -1642,7 +1646,9 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   for (const t of buildShareTools()) tools.push(t)
   for (const t of buildFormatTools()) tools.push(t)
   for (const t of buildGovernanceTools()) tools.push(t)
-  for (const t of buildComplianceTools()) tools.push(t)
+  for (const build of [buildKycTools, buildAmlTools, buildRiskTools, buildFloatTools, buildStaffingTools]) {
+    for (const t of build()) tools.push(t)
+  }
   for (const t of buildErrorTools()) tools.push(t)
   // Slice CCCCCCCCC modularization, completed: the erpax.events.* family
   // (list / emit / subscribers / replay) was DRY-collapsed out of the
