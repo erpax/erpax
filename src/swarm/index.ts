@@ -1,16 +1,5 @@
 /**
- * swarm — one mixer, one level up: work spread over agents, and what happens when one dies.
- *
- * THE SHAPE IS THE HEX'S. A hexacopter takes four stick numbers and produces six motor commands; a
- * swarm takes a set of tasks and produces an assignment across N agents. Both respect a per-actuator
- * limit, both CONSERVE, and both must survive losing one actuator — a hex re-mixes onto five motors
- * ([[rotation]]), a swarm re-assigns onto the surviving agents. It is the same fold, and this
- * corpus has now written it five times in five vocabularies, so it is written here once more and
- * pointed at work instead of thrust.
- *
- * THIS REPOSITORY ALREADY RUNS ONE. CI shards its integration tests sixteen ways — "Integration
- * Tests (shard 1/16)" through "(16/16)". That is exactly this problem: partitions of a corpus
- * spread over workers, where one worker dying must not lose a shard.
+ * swarm — one mixer, one level up: work spread over agents, and what happens when one dies. THE SHAPE IS THE HEX'S. See SKILL.md.
  *
  * @standard Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan
  */
@@ -51,18 +40,7 @@ export interface Assignment {
 
 const healthy = (a: Agent): boolean => a.healthy !== false
 
-/**
- * Assign the work.
- *
- * Longest-processing-time first: heaviest task to the least-loaded agent that can still hold it.
- * DETERMINISTIC — ties break on id, so the same input always gives the same assignment. A scheduler
- * that shuffles under a tie makes a failure impossible to reproduce, which is the property you need
- * most on the day it goes wrong.
- *
- * LPT is an APPROXIMATION, not an optimum: Graham's bound is 4/3 − 1/(3m) of the best possible
- * makespan. Optimal partitioning is NP-hard, and a gate claiming optimality here would be a claim
- * nothing could check.
- */
+/** Assign the work. Longest-processing-time first: heaviest task to the least-loaded agent that can still hold it. See SKILL.md. */
 export function assign(agents: readonly Agent[], tasks: readonly Task[]): Assignment {
   const live = agents.filter(healthy)
   const load = new Map<string, Task[]>(live.map((a) => [a.id, []]))
@@ -105,12 +83,7 @@ export function assign(agents: readonly Agent[], tasks: readonly Task[]): Assign
   return { placements, unassigned, totalWeight, placedWeight }
 }
 
-/**
- * Every task is placed or named, and the weights add up. Nothing evaporates between the two.
- *
- * Both halves are load-bearing and neither implies the other: weights can balance while a
- * zero-weight task is lost, and counts can balance while a weight is misread.
- */
+/** Every task is placed or named, and the weights add up. Nothing evaporates between the two. See SKILL.md. */
 export function conserves(a: Assignment, epsilon = 1e-9): boolean {
   const unplacedWeight = a.unassigned.reduce((s, t) => s + t.weight, 0)
   return exactAbs(a.placedWeight + unplacedWeight - a.totalWeight) <= epsilon
@@ -130,22 +103,12 @@ export function coverage(a: Assignment): number {
   return a.totalWeight === 0 ? 1 : a.placedWeight / a.totalWeight
 }
 
-/**
- * The makespan: the busiest agent's load. This is what the swarm's wall-clock actually is — the
- * mean is the number that flatters, and the max is the number you wait for.
- */
+/** The makespan: the busiest agent's load. See SKILL.md. */
 export function makespan(a: Assignment): number {
   return a.placements.reduce((m, p) => (p.load > m ? p.load : m), 0)
 }
 
-/**
- * Re-assign after losing agents.
- *
- * The survivors take the whole load, not just the dead agent's share — re-running the assignment
- * from scratch beats patching it, because moving only the orphaned tasks leaves the survivors
- * unbalanced in a way that compounds with each further loss. A hex does the same: it re-mixes, it
- * does not bolt the missing motor's command onto one neighbour.
- */
+/** Re-assign after losing agents. See SKILL.md. */
 export function redistribute(
   agents: readonly Agent[],
   tasks: readonly Task[],
@@ -158,13 +121,7 @@ export function redistribute(
   )
 }
 
-/**
- * How many agents can be lost before the work no longer fits — the swarm's real redundancy.
- *
- * Computed by asking, never assumed from a headcount: capacity is not uniform, so losing the
- * largest agent is not the same as losing the smallest, and this loses the LARGEST first because
- * that is the worst case a plan has to survive.
- */
+/** How many agents can be lost before the work no longer fits — the swarm's real redundancy. See SKILL.md. */
 export function tolerableLosses(agents: readonly Agent[], tasks: readonly Task[]): number {
   const byCapacity = [...agents].filter(healthy).sort((a, b) => b.capacity - a.capacity)
   let lost = 0

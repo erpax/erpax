@@ -1,15 +1,5 @@
 /**
- * risk — exposure measured against capital, which is the one risk question with a decidable answer.
- *
- * THE LINE, as in [[kyc]] and [[aml]]: nothing here predicts a default. Credit risk is a forecast,
- * and a function returning one would be a number a bank could point at with nothing behind it. What
- * the CRR makes decidable is a RATIO — an exposure against Tier 1 capital — and two thresholds
- * written into the regulation. That is what this computes.
- *
- * THE SAME PATTERN AS STRUCTURING. A single client split across a group of connected clients
- * (Art. 4(1)(39)) sits under the limit while the real exposure sits over it — the identical shape
- * [[aml]] measures as structuring, one regulation over. So exposures are grouped BEFORE they are
- * tested, and testing them ungrouped is the defect.
+ * risk — exposure measured against capital, which is the one risk question with a decidable answer. See SKILL.md.
  *
  * @standard EU 575/2013 (CRR) Art. 392 — definition of a large exposure
  * @standard EU 575/2013 (CRR) Art. 395 — limits to large exposures
@@ -36,10 +26,7 @@ export function counterparty(exposure: Exposure): string {
   return exposure.group ?? exposure.client
 }
 
-/**
- * Aggregate exposures by connected client. This runs BEFORE any threshold test, because a group
- * split across three names is the whole failure the limit exists to prevent.
- */
+/** Aggregate exposures by connected client. See SKILL.md. */
 export function aggregate(exposures: readonly Exposure[]): ReadonlyMap<string, number> {
   const byParty = new Map<string, number>()
   for (const e of exposures) {
@@ -83,13 +70,7 @@ export interface ConcentrationReport {
   readonly largeTotal: number
 }
 
-/**
- * The concentration picture: every counterparty aggregated, rated and ordered.
- *
- * Reports `large` and `breaches` as separate lists rather than one severity field, because they are
- * different obligations — a large exposure must be REPORTED (Art. 394) and a breach must be CURED
- * (Art. 396). A single field would let one be mistaken for the other.
- */
+/** The concentration picture: every counterparty aggregated, rated and ordered. See SKILL.md. */
 export function concentration(exposures: readonly Exposure[], tier1: number): ConcentrationReport {
   const parties: PartyExposure[] = [...aggregate(exposures).entries()]
     .map(([party, amount]) => ({

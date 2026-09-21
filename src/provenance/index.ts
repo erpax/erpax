@@ -1,19 +1,5 @@
 /**
- * provenance — a chain that must be WALKED, because restatement is not corroboration.
- *
- * THE DEFECT THIS ATOM EXISTS FOR, measured 2026-09-20 in the remediation-cost literature: the
- * per-unit cost advantage of phytoremediation over excavation is stated in dozens of papers, several
- * published in 2024, and every one of them traces to the SAME 1997 report — whose own tables cite a
- * vendor's technical summary and a personal communication. Read as a field it looks corroborated.
- * Walked as a graph it is ONE source, thirty years old, unwalkable at its root.
- *
- * That is not a lie anywhere in the chain. Each paper cited honestly. The failure is emergent: N
- * citations of one root read as N sources unless somebody dedupes by ROOT, and nobody does it by
- * hand. [[rules]]/copy names the same shape in code — one truth at many addresses, where the count
- * of addresses is mistaken for evidence.
- *
- * So the two questions here are: what is at the END of the chain, and how many DISTINCT ends are
- * there? Neither is answerable from a citation count, and both are decidable from a graph.
+ * provenance — a chain that must be WALKED, because restatement is not corroboration. See SKILL.md.
  *
  * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
  * @standard W3C PROV-DM — provenance as a graph of entities and derivations
@@ -22,10 +8,7 @@ import { exactMinOf } from '@/algebra'
 
 export const atomPath = 'provenance' as const
 
-/**
- * What a link IS, which decides whether the chain can terminate there. DECLARED, because what
- * counts as a primary source is a judgement about the world and no theorem derives it.
- */
+/** What a link IS, which decides whether the chain can terminate there. See SKILL.md. */
 export type LinkKind =
   /** A measurement, dataset, appropriation or statute — the chain may end here. */
   | 'primary'
@@ -63,12 +46,7 @@ export interface Chain {
 const byId = (links: readonly Link[]): ReadonlyMap<string, Link> =>
   new Map(links.map((l) => [l.id, l]))
 
-/**
- * Every link reachable from the entry points, following citations.
- *
- * Cycles terminate rather than hang: a literature that cites itself in a ring is a real thing and
- * must not take the walker with it.
- */
+/** Every link reachable from the entry points, following citations. See SKILL.md. */
 export function walk(chain: Chain): readonly Link[] {
   const index = byId(chain.links)
   const seen = new Set<string>()
@@ -86,19 +64,12 @@ export function walk(chain: Chain): readonly Link[] {
   return out
 }
 
-/**
- * The ROOTS: reachable links that cite nothing further. These, and only these, are what the claim
- * actually rests on — however many papers sit above them.
- */
+/** The ROOTS: reachable links that cite nothing further. See SKILL.md. */
 export function roots(chain: Chain): readonly Link[] {
   return walk(chain).filter((l) => l.cites.length === 0)
 }
 
-/**
- * How many DISTINCT things the claim rests on.
- *
- * This is the number a citation count is mistaken for. Twenty papers over one root is one.
- */
+/** How many DISTINCT things the claim rests on. This is the number a citation count is mistaken for. Twenty papers over one root is one. */
 export function independentRoots(chain: Chain): number {
   return roots(chain).length
 }
@@ -108,12 +79,7 @@ export function unwalkableRoots(chain: Chain): readonly Link[] {
   return roots(chain).filter((l) => !TERMINAL.has(l.kind))
 }
 
-/**
- * The age of the claim, in years, measured at its OLDEST root rather than its newest citation.
- *
- * A 2024 paper resting on a 1997 table is a 1997 claim wearing a 2024 date, and the newest citation
- * is exactly the number a reader takes for freshness.
- */
+/** The age of the claim, in years, measured at its OLDEST root rather than its newest citation. See SKILL.md. */
 export function ageAt(chain: Chain, now: number): number {
   const rs = roots(chain)
   if (rs.length === 0) return 0
@@ -131,13 +97,7 @@ export interface Verdict {
   readonly grounded: boolean
 }
 
-/**
- * Judge the chain.
- *
- * `grounded` is deliberately weak: it says the claim reaches at least one root a reader can check,
- * never that the root is CORRECT. A primary source can be wrong, and a peer-reviewed measurement
- * can fail to replicate — this closes the case where there is nothing to check at all.
- */
+/** Judge the chain. `grounded` is deliberately weak: it says the claim reaches at least one root a reader can check, never that the root is CORRECT. See SKILL.md. */
 export function judge(chain: Chain, now: number): Verdict {
   const reached = walk(chain)
   const rs = roots(chain)

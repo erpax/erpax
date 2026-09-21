@@ -212,9 +212,9 @@ src/allocation/index.ts:10: * @standard Hamilton (largest-remainder) apportionme
 src/allocation/index.ts:8: * @standard SFIA 8 responsibility-levels (1..7) — job-type categorisation
 src/allocation/index.ts:9: * @standard ESCO / ISCO-08 competency framework (skill level)
 src/allow/public/read/tenant/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
-src/aml/index.ts:13: * @standard EU 2015/849 Art. 33 — report to the FIU promptly, before executing where possible
-src/aml/index.ts:14: * @standard FATF Recommendation 20 — suspicious transaction reporting
-src/aml/index.ts:15: * @standard EU 2015/847 — information accompanying transfers of funds
+src/aml/index.ts:4: * @standard EU 2015/849 Art. 33 — report to the FIU promptly, before executing where possible
+src/aml/index.ts:5: * @standard FATF Recommendation 20 — suspicious transaction reporting
+src/aml/index.ts:6: * @standard EU 2015/847 — information accompanying transfers of funds
 src/analytics/BudgetVsActualCard.tsx:10: * @standard ECMA-262 ECMAScript-2024 baseline
 src/analytics/BudgetVsActualCard.tsx:11: * @standard ISO-4217:2015 currency-codes monetary-display
 src/analytics/CostAnalysisCard.tsx:10: * @standard ECMA-262 ECMAScript-2024 baseline
@@ -1144,8 +1144,8 @@ src/en/16931/validate.ts:6: * @standard EN-16931:2017+A1:2019 semantic-model-ele
 src/en/16931/validate.ts:7: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/en/16931/validate.ts:8: * @standard UN-CEFACT 1001 document-name-code
 src/en/16931/validate.ts:9: * @standard UN-CEFACT 4461 payment-means
-src/energy/index.ts:21: * @standard ISO 80000-5 — thermodynamics quantities
-src/energy/index.ts:22: * @standard IEC 60050-482 — primary and secondary cells
+src/energy/index.ts:4: * @standard ISO 80000-5 — thermodynamics quantities
+src/energy/index.ts:5: * @standard IEC 60050-482 — primary and secondary cells
 src/engineering/index.ts:16: * @standard ISO/IEC 25010:2023 §5 — product quality model (functional suitability … maintainability)
 src/entanglement/index.ts:22: * @standard ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)
 src/entity/types/index.ts:11: * @standard COSO-2013 entity-classification
@@ -1311,8 +1311,8 @@ src/fixed/assets/depreciation/schedules/index.ts:9: * @standard ISO-4217:2015 cu
 src/fixed/assets/index.ts:24: * @standard ISO-4217:2015 currency-codes
 src/fixed/assets/index.ts:25: * @standard ISO-8601-1:2019 date-time acquisition-date in-service-date disposal-date
 src/fixpoint/index.ts:27: * @standard Kleene recursion theorem · Tarski fixed-point — a self-map has a fixed point
-src/float/index.ts:21: * @standard ISO 4217 — currency and minor units
-src/float/index.ts:22: * @standard ISA 501 — physical count as audit evidence
+src/float/index.ts:4: * @standard ISO 4217 — currency and minor units
+src/float/index.ts:5: * @standard ISA 501 — physical count as audit evidence
 src/floor/index.ts:10: * @standard Bekenstein (1981) · 't Hooft (1993) · Susskind (1995) — the holographic bound
 src/floor/index.ts:11: * @standard CODATA 2022 — Boltzmann constant, Planck length
 src/floor/index.ts:9: * @standard Landauer (1961) · Bérut et al., Nature 483:187 (2012)
@@ -1834,8 +1834,8 @@ src/journal/entries/rounding/adjustments/index.ts:10: * @standard ISO-4217:2015 
 src/journal/entries/rounding/adjustments/index.ts:11: * @standard ISO-8601-1:2019 date-time adjustment-date
 src/journal/entry/service/index.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
 src/journal/entry/service/index.ts:13: * @standard ISO-4217:2015 currency-codes
-src/kyc/index.ts:10: * @standard EU 2015/849 (AMLD4) as amended by EU 2018/843 (AMLD5) — customer due diligence
-src/kyc/index.ts:11: * @standard FATF Recommendations 10 · 12 · 22 — CDD, politically exposed persons, DNFBPs
+src/kyc/index.ts:4: * @standard EU 2015/849 (AMLD4) as amended by EU 2018/843 (AMLD5) — customer due diligence
+src/kyc/index.ts:5: * @standard FATF Recommendations 10 · 12 · 22 — CDD, politically exposed persons, DNFBPs
 src/law/folder/index.ts:41: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability
 src/leads/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/leads/index.ts:12: * @standard ISO-3166-1:2020 country-codes
@@ -2280,8 +2280,8 @@ src/properties/spaces/index.ts:10: * @standard ISO-41001:2018 facility-managemen
 src/properties/spaces/index.ts:11: * @standard ISO-41011:2017 §3.3.5 facility-management space-vocabulary
 src/properties/spaces/index.ts:12: * @standard ISO-19650-1:2018 information-management-using-bim
 src/properties/spaces/index.ts:13: * @standard EN-15221-6:2011 facility-management area-and-space-measurement
-src/provenance/index.ts:18: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
-src/provenance/index.ts:19: * @standard W3C PROV-DM — provenance as a graph of entities and derivations
+src/provenance/index.ts:4: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
+src/provenance/index.ts:5: * @standard W3C PROV-DM — provenance as a graph of entities and derivations
 src/provider/index.tsx:6: * @standard W3C CSS-Color-4 color-contrast
 src/publish/zenodo/index.ts:16: * @standard ISO 26324 — DOI: assigned by a registration agency, never computed ([[rules]]/forge)
 src/publish/zenodo/index.ts:17: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
@@ -2397,9 +2397,9 @@ src/rfc/9110/get/redirects/test.ts:4: * @standard ISO/IEC-29119:2022 software-te
 src/rich/text/index.tsx:4: * @standard W3C HTML5 Living Standard rich-text-output
 src/rich/text/index.tsx:5: * @standard CommonMark 0.31 markdown-fallback
 src/rich/text/index.tsx:6: * @standard schema.org HTMLRichText
-src/risk/index.ts:14: * @standard EU 575/2013 (CRR) Art. 392 — definition of a large exposure
-src/risk/index.ts:15: * @standard EU 575/2013 (CRR) Art. 395 — limits to large exposures
-src/risk/index.ts:16: * @standard EU 575/2013 (CRR) Art. 4(1)(39) — group of connected clients
+src/risk/index.ts:4: * @standard EU 575/2013 (CRR) Art. 392 — definition of a large exposure
+src/risk/index.ts:5: * @standard EU 575/2013 (CRR) Art. 395 — limits to large exposures
+src/risk/index.ts:6: * @standard EU 575/2013 (CRR) Art. 4(1)(39) — group of connected clients
 src/rodin/coil/index.ts:21: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
 src/rodin/index.ts:24: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
 src/rodin/phase/index.ts:41: * @standard ISO 80000-2 — mathematical signs and symbols
@@ -2413,7 +2413,7 @@ src/roles/user/roles/hooks/preventDuplicateAssignment.ts:12: * @standard NIST IN
 src/roles/user/roles/index.ts:10: * @standard NIST INCITS-359-2012 role-based-access-control role-assignment
 src/rolify/index.ts:10: * @standard NIST INCITS-359 RBAC (resource-scoped roles)
 src/rolify/index.ts:11: * @standard EN-16931 business-terms (the party roles BG-4 Seller / BG-7 Buyer / BG-10 Payee …)
-src/rotation/index.ts:18: * @standard ISO 1151-1 — flight dynamics, body axes and sign conventions
+src/rotation/index.ts:4: * @standard ISO 1151-1 — flight dynamics, body axes and sign conventions
 src/routing/index.ts:6: * @standard NIST AI RMF (risk-proportionate controls) — map risk → control strength
 src/rules/ask/index.ts:23: * @standard ISO 9241-110:2020 §6.2 — self-descriptiveness / suitability for the task (do not ask what is known)
 src/rules/audience/index.ts:42: * @standard ISO-19011:2018 §6.4 audit-evidence — a citation is read by a person
@@ -2426,9 +2426,9 @@ src/rules/compatibility/index.ts:17: * @standard ISO/IEC 25010:2023 §5.3 compat
 src/rules/confine/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6.2 — modularity: the whole is confined, not held
 src/rules/cycle/index.ts:34: * @standard ISO/IEC 25010:2023 §5.6.2 modularity
 src/rules/echo/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning
-src/rules/inject/index.ts:25: * @standard CVE-2021-42574 — Trojan Source, bidirectional control characters
-src/rules/inject/index.ts:26: * @standard OWASP LLM01:2025 — prompt injection
-src/rules/inject/index.ts:27: * @standard ISO/IEC 27001 A.8.28 — secure coding
+src/rules/inject/index.ts:4: * @standard CVE-2021-42574 — Trojan Source, bidirectional control characters
+src/rules/inject/index.ts:5: * @standard OWASP LLM01:2025 — prompt injection
+src/rules/inject/index.ts:6: * @standard ISO/IEC 27001 A.8.28 — secure coding
 src/rules/invisible/index.ts:28: * @standard ISO/IEC 25010:2023 §5.6 maintainability — one source, addressable
 src/rules/prose/index.ts:20: * @standard ISO-19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
 src/rules/reference/index.ts:20: * @standard ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence
@@ -2711,9 +2711,9 @@ src/spec/generator/types.ts:12: * @standard ISO/IEC 25010:2023 §5 modularity
 src/spec/generator/types.ts:13: * @standard ISO/IEC 12207 software-life-cycle
 src/speech/index.ts:12: * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position
 src/sql/index.ts:9: * @standard SQL SELECT (a minimal subset); deterministic canonicalisation
-src/staffing/index.ts:15: * @standard SFIA 8 — responsibility levels 1..7
-src/staffing/index.ts:16: * @standard ESCO v1.2 / ISCO-08 — occupation and competency classification
-src/staffing/index.ts:17: * @standard NIST INCITS-359 — role-based access control
+src/staffing/index.ts:4: * @standard SFIA 8 — responsibility levels 1..7
+src/staffing/index.ts:5: * @standard ESCO v1.2 / ISCO-08 — occupation and competency classification
+src/staffing/index.ts:6: * @standard NIST INCITS-359 — role-based access control
 src/standard/truth/index.ts:25: * @standard ISO-19011:2018 6.4.6 audit-evidence (a citation needs evidence)
 src/standards/catalogue.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
 src/standards/catalogue.test.ts:8: * @standard ISO/IEC-25010:2023 §5.4 reusability (one join, two frontends)
@@ -2768,7 +2768,7 @@ src/sustainability/index.ts:16: * @standard Brundtland Report, Our Common Future
 src/sustainability/index.ts:17: * @standard Second Law of Thermodynamics — local order requires entropy export
 src/svg/hero/generator/index.ts:18: * @standard W3C SVG-1.1 scalable-vector-graphics
 src/svg/hero/generator/index.ts:19: * @standard ISO/IEC-29500 office-open-xml media-embedding-target
-src/swarm/index.ts:15: * @standard Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan
+src/swarm/index.ts:4: * @standard Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan
 src/syntax/index.ts:23: * @standard ECMA-262 · TypeScript grammar (via ts.createSourceFile — the compiler's own scanner)
 src/tags/index.ts:21: * @standard ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary
 src/tags/index.ts:22: * @standard RFC-4122 §4.3 uuid content-addressed-id
@@ -6433,7 +6433,6 @@ tests/helpers/standards-fixtures.ts:26: * @audit ISO-19011:2018 audit-trail stan
 
 ```text
 src/admin/TenantFilters.tsx:7: * @quality ISO-25010 usability admin-tooling
-src/agents/mcp/tool/_contract.ts:9: * @quality ISO/IEC 25010:2023 §5.7 modularity — one crossing, not one per area
 src/analytics/FinancialRatiosCard.tsx:11: * @quality ISO-25010 functional-suitability derived-metric
 src/analytics/KPIDashboard.tsx:13: * @quality ISO-25010 functional-suitability derived-metric
 src/analytics/TrendAnalysisCard.tsx:26: * @quality ISO-25010 functional-suitability historical-projection

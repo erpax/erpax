@@ -2,14 +2,17 @@
  * MCP tools over [[staffing]] — a declared position folded into the five faces it already implied.
  *
  * Every tool here is a PURE COMPUTATION over arguments the caller supplies: none reads a tenant's
- * rows, so none asserts a tenant ([[_guards]] is for tools that do, and adding it here is theatre).
+ * rows, so none asserts a tenant (`_guards` is for tools that do, and adding it here is theatre).
  * The atom's refusals are restated in each description, because an MCP caller does not read a SKILL.
  *
  * @see /src/staffing/index.ts
  */
 import { z } from 'zod'
-import { json, makeToolI18n, type ErpaxMcpTool, type LocalizedString } from './_contract'
+import { makeToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
+import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 import { staff } from '@/staffing'
+
+const json = (v: unknown) => ({ content: [{ text: JSON.stringify(v, null, 2), type: 'text' as const }] })
 
 const I18N: Record<string, LocalizedString> = {
   position: {

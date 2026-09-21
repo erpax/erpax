@@ -1,14 +1,5 @@
 /**
- * aml — whether a REPORT IS OWED. Never whether money was laundered.
- *
- * That distinction is the whole atom. Laundering is an offence a court finds; a suspicious-activity
- * report is an obligation a rule triggers. The first is not decidable and nothing here claims it —
- * a function named `isLaundering` would be the exact artefact [[rules]]/audience describes: a false
- * statement addressed to the one reader who signs it. The second is decidable from declared
- * thresholds and patterns, and is what a bank is actually fined for missing.
- *
- * So a `none` verdict means NO TRIGGER FIRED. It does not mean the movement is clean, and the
- * boundary below says so where a reader cannot miss it.
+ * aml — whether a REPORT IS OWED. Never whether money was laundered. That distinction is the whole atom. See SKILL.md.
  *
  * @standard EU 2015/849 Art. 33 — report to the FIU promptly, before executing where possible
  * @standard FATF Recommendation 20 — suspicious transaction reporting
@@ -33,11 +24,7 @@ export interface Movement {
   readonly flagged?: boolean
 }
 
-/**
- * How close below a threshold counts as deliberate. DECLARED at 10%: a band, because structuring
- * is defined by INTENT and no number decides intent — this names candidates for a human, which is
- * the same boundary [[rules]]/collapse keeps between what a theorem proves and what a person means.
- */
+/** How close below a threshold counts as deliberate. See SKILL.md. */
 export const STRUCTURING_BAND = 0.9
 
 /** Within the band below a threshold, and not over it. */
@@ -49,11 +36,7 @@ export function justBelow(value: number, threshold: number): boolean {
 /** 24 hours — the window structuring is measured over unless a caller states another. */
 export const STRUCTURING_WINDOW_MS = 24 * 60 * 60 * 1000
 
-/**
- * Two or more movements sitting just below the threshold inside one window, which together clear
- * it. All three conditions are load-bearing: one movement below a threshold is ordinary business;
- * two that do not sum past it are ordinary business; and a pair days apart is not a pattern.
- */
+/** Two or more movements sitting just below the threshold inside one window, which together clear it. See SKILL.md. */
 export function structuring(
   movements: readonly Movement[],
   threshold: number,
@@ -83,14 +66,7 @@ export interface ReportFacts {
   readonly windowMs?: number
 }
 
-/**
- * What is owed.
- *
- * ORDER IS THE LAW: a sanctions hit or a recorded suspicion obliges a SUSPICION report even when
- * the amount is trivial (Art. 33 carries no de-minimis), and structuring is a suspicion rather than
- * a threshold matter precisely because the amounts were kept under the threshold. Only a plain
- * movement at or over the threshold is a threshold declaration.
- */
+/** What is owed. ORDER IS THE LAW: a sanctions hit or a recorded suspicion obliges a SUSPICION report even when the amount is trivial (Art. See SKILL.md. */
 export function reportOwed(facts: ReportFacts): ReportKind {
   const { movements, threshold } = facts
   if (movements.some((m) => m.sanctioned === true || m.flagged === true)) return 'suspicious'
@@ -99,11 +75,7 @@ export function reportOwed(facts: ReportFacts): ReportKind {
   return 'none'
 }
 
-/**
- * Art. 33(1) — a suspicion report is owed PROMPTLY and, where possible, before the transaction is
- * executed. There is no grace period, so this returns 0 rather than a duration: a deadline
- * expressed as hours would invite a queue, and the queue is the violation.
- */
+/** Art. 33(1) — a suspicion report is owed PROMPTLY and, where possible, before the transaction is executed. See SKILL.md. */
 export const SUSPICION_DELAY_MS = 0
 
 /** A suspicion report may not wait for a batch. True when the movement must be held. */

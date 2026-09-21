@@ -1,11 +1,5 @@
 /**
- * kyc — the level of customer due diligence the law REQUIRES, given declared facts.
- *
- * THE LINE THIS ATOM WILL NOT CROSS: it does not decide whether a customer is laundering money.
- * That is not decidable, and a function claiming it would be the most dangerous thing in this
- * corpus — a green verdict a bank could point at. What IS decidable is which diligence level the
- * directive obliges, given facts someone has already established. This computes that and nothing
- * more ([[rules]]/refutable: a claim must be able to fail; this one fails whenever the facts say so).
+ * kyc — the level of customer due diligence the law REQUIRES, given declared facts. See SKILL.md.
  *
  * @standard EU 2015/849 (AMLD4) as amended by EU 2018/843 (AMLD5) — customer due diligence
  * @standard FATF Recommendations 10 · 12 · 22 — CDD, politically exposed persons, DNFBPs
@@ -15,11 +9,7 @@ export const atomPath = 'kyc' as const
 /** Art. 13 standard · Art. 15–17 simplified · Art. 18–24 enhanced. */
 export type DiligenceLevel = 'simplified' | 'standard' | 'enhanced'
 
-/**
- * DECLARED thresholds, in euro. These are facts about the directive, not values derived from
- * anything — they are written here in the open so a member state's stricter floor can be argued
- * with rather than discovered in a hook ([[rules]]/forge: a figure the world assigns is received).
- */
+/** DECLARED thresholds, in euro. See SKILL.md. */
 export const THRESHOLD = {
   /** Art. 11(b)(i) — an occasional transaction at or above this triggers CDD. */
   occasionalTransaction: 15000,
@@ -58,11 +48,7 @@ const overBand = (f: CustomerFacts): boolean => {
   return a >= THRESHOLD.occasionalTransaction
 }
 
-/**
- * Is CDD owed at all? Art. 11: on establishing a relationship, or on an occasional movement in
- * band. A movement below every band with no relationship and no risk factor owes nothing — and
- * saying so is the point: a gate that answers "yes" to everything tells a bank nothing.
- */
+/** Is CDD owed at all? Art. 11: on establishing a relationship, or on an occasional movement in band. See SKILL.md. */
 export function dueDiligenceRequired(f: CustomerFacts): boolean {
   return (
     f.ongoingRelationship === true ||
@@ -72,15 +58,7 @@ export function dueDiligenceRequired(f: CustomerFacts): boolean {
   )
 }
 
-/**
- * The level the directive obliges.
- *
- * ENHANCED DOMINATES. A PEP or a high-risk third country mandates EDD under Art. 18a and 20–23,
- * and no "lower risk" finding may reduce it — simplified diligence is permitted only where no
- * enhanced trigger is present (Art. 15(1)). Encoding that as an ordered check rather than a score
- * is deliberate: a weighted score lets a strong low-risk signal cancel a mandatory trigger, which
- * is exactly the failure a bank is fined for.
- */
+/** The level the directive obliges. ENHANCED DOMINATES. A PEP or a high-risk third country mandates EDD under Art. See SKILL.md. */
 export function diligenceLevel(f: CustomerFacts): DiligenceLevel {
   if (f.politicallyExposed === true || f.highRiskThirdCountry === true) return 'enhanced'
   if (f.lowRiskProduct === true) return 'simplified'
@@ -100,11 +78,7 @@ export function evidenceMissing(level: DiligenceLevel, produced: readonly string
   return EVIDENCE[level].filter((e) => !have.has(e))
 }
 
-/**
- * Is the file complete for the level? Completeness is a property of the SET OF ITEMS, never of
- * their contents — this cannot tell a forged passport from a real one, and must not be read as
- * though it could.
- */
+/** Is the file complete for the level? See SKILL.md. */
 export function identificationComplete(level: DiligenceLevel, produced: readonly string[]): boolean {
   return evidenceMissing(level, produced).length === 0
 }

@@ -1,22 +1,5 @@
 /**
- * float — a stock of value, opened, moved, counted independently, reconciled.
- *
- * A bank teller's drawer, a casino table tray, a bureau's till and a desk's position are the SAME
- * STRUCTURE wearing four vocabularies: something is opened with a float, signed movements pass
- * through it, and at close somebody COUNTS it in discrete units. The count either agrees with the
- * book or it does not, and by how much and in which direction.
- *
- * So the law lives here once and each case mounts it with its own unit set ([[rules]]/copy: one
- * truth at one address; three reconcilers would be one implementation and two decoys).
- *
- * THE CONTROL, and the reason the unit set is not optional: whoever can enter a closing TOTAL can
- * always make the float balance — enter what the book expects and the difference disappears. A
- * count expressed as UNITS cannot do that, because the total is derived from items claimed to be
- * physically present. That is this corpus's computed-not-typed law ([[rules]]/ask) applied to
- * value, and it is the difference between a control and a formality.
- *
- * A "float" here is a stock of value and never a floating-point number — every amount is in MINOR
- * UNITS, because 0.1 + 0.2 is not 0.3 in binary and a till out by a hundredth reports noise.
+ * float — a stock of value, opened, moved, counted independently, reconciled. See SKILL.md.
  *
  * @standard ISO 4217 — currency and minor units
  * @standard ISA 501 — physical count as audit evidence
@@ -31,11 +14,7 @@ export type Units = readonly number[]
 /** How many of each unit are present. A count, never a sum. */
 export type Count = Readonly<Partial<Record<number, number>>>
 
-/**
- * Units the count claims that this float does not deal in, or quantities that are not whole
- * non-negative numbers. Either makes the count unusable as evidence — and a count that is unusable
- * must not silently become a total.
- */
+/** Units the count claims that this float does not deal in, or quantities that are not whole non-negative numbers. See SKILL.md. */
 export function illegalUnits(count: Count, units: Units): readonly number[] {
   const legal = new Set<number>(units)
   return Object.keys(count)
@@ -47,10 +26,7 @@ export function illegalUnits(count: Count, units: Units): readonly number[] {
     .sort((a, b) => b - a)
 }
 
-/**
- * The total the count implies, in minor units. DERIVED — there is deliberately no parameter for a
- * total, because a supplied total is exactly what this atom exists to refuse.
- */
+/** The total the count implies, in minor units. See SKILL.md. */
 export function countTotal(count: Count): number {
   return Object.keys(count).reduce((sum, k) => sum + Number(k) * (count[Number(k)] ?? 0), 0)
 }
@@ -85,13 +61,7 @@ export interface Verdict {
   readonly illegal: readonly number[]
 }
 
-/**
- * Reconcile a session against its unit set.
- *
- * The variance is SIGNED and never an absolute value. An over is not a smaller kind of short: a
- * short may be an error or a loss, while an over means value entered that no movement recorded —
- * the more interesting finding, and the one an absolute value erases.
- */
+/** Reconcile a session against its unit set. The variance is SIGNED and never an absolute value. See SKILL.md. */
 export function reconcile(session: Session, units: Units): Verdict {
   const expected = expectedClose(session)
   const counted = countTotal(session.counted)
@@ -105,10 +75,7 @@ export function reconcile(session: Session, units: Units): Verdict {
   }
 }
 
-/**
- * Does this verdict go to an investigation? An illegal count always does, whatever it totals — a
- * count that agrees by accident with the book is still not evidence.
- */
+/** Does this verdict go to an investigation? See SKILL.md. */
 export function investigable(verdict: Verdict, tolerance = 0): boolean {
   return verdict.illegal.length > 0 || exactAbs(verdict.variance) > tolerance
 }
