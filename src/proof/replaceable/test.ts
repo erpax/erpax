@@ -26,7 +26,20 @@ describe('proof/replaceable — a cited standard is an axiom until a gate discha
   it('folds a separator difference: ISO-19011:2018 and ISO 19011:2018 are ONE standard', () => {
     // they were two keys splitting 44 citations, which understated the corpus's exposure
     expect(standardKey('ISO-19011:2018')).toBe(standardKey('ISO 19011:2018'))
-    expect(standardKey('ISO/IEC 25010:2023 §5.5 — testability')).toBe('ISO/IEC 25010:2023')
+    expect(standardKey('ISO/IEC 25010:2023 §5.5 — testability')).toBe('ISO 25010')
+  })
+
+  it('folds the EDITION and the PUBLISHER — one obligation, however it is spelled', () => {
+    // `ISO 4217` and `ISO 4217:2015` were two undischarged axioms for one register, and
+    // `ISO/IEC 27001 A.5.23` could not be discharged by a gate citing `ISO 27001 A.5.23`.
+    expect(standardKey('ISO 4217:2015')).toBe(standardKey('ISO 4217'))
+    expect(standardKey('ISO/IEC 27001 A.5.23')).toBe(standardKey('ISO 27001 A.5.23'))
+  })
+
+  it('does NOT fold the CLAUSE — an over-discharge is worse than an over-count', () => {
+    // Folding A.5.23 away would let one cloud-isolation gate discharge the whole of ISO 27001.
+    // A section of a standard is a separate obligation; a spelling of its publisher is not.
+    expect(standardKey('ISO 27001 A.5.23')).not.toBe(standardKey('ISO 27001 A.8.28'))
   })
 
   it('an atom exporting a fail-closed assert DISCHARGES what it cites', () => {
@@ -64,9 +77,18 @@ describe('proof/replaceable — a cited standard is an axiom until a gate discha
     expect(() => assertStandardsGated(process.cwd(), 242)).not.toThrow()
   })
 
-  it('WCAG 2.2 is the largest single block of undischarged conformance', () => {
+  it('the queue is ORDERED by how much a discharge would buy — never by name', () => {
+    // This asserted `WCAG 2.2` with 20+ cites, and the corpus then DISCHARGED it: WCAG 2.2 is gone
+    // from the queue entirely and only WCAG 2.1 remains, once. A test that names the current answer
+    // goes red when the tree gets BETTER, which is [[rules]]/drift's law — prose may not restate a
+    // number the corpus computes; state the invariant, and date any record worth keeping.
+    //
+    // RECORD (2026-09-21): the queue leads with `BCP 47` and `ISO 4217`, 7 cites each.
     const open = replaceableStandards(process.cwd())
-    expect(open[0]!.standard).toBe('WCAG 2.2')
-    expect(open[0]!.cites).toBeGreaterThanOrEqual(20)
+    expect(open.length).toBeGreaterThan(0)
+    for (let i = 1; i < open.length; i++) {
+      expect(open[i - 1]!.cites).toBeGreaterThanOrEqual(open[i]!.cites)
+    }
+    expect(open.every((s) => s.standard === standardKey(s.standard))).toBe(true)
   })
 })

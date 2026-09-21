@@ -94,7 +94,7 @@ describe('proof/register', () => {
       ],
       root,
     )
-    const iso = reg.find((r) => r.standard === 'ISO 19011:2018')!
+    const iso = reg.find((r) => r.standard === 'ISO 19011')! // the EDITION is not the identity
     const wcag = reg.find((r) => r.standard === 'WCAG 2.2')!
     expect(iso.dischargedBy).toEqual(['a'])
     expect(wcag.dischargedBy).toEqual([]) // cited, enforced by nothing — an axiom
@@ -107,7 +107,7 @@ describe('proof/register', () => {
       root,
     )
     expect(reg).toHaveLength(1)
-    expect(reg[0]!.standard).toBe('ISO/IEC 25010:2023')
+    expect(reg[0]!.standard).toBe('ISO 25010')
   })
 
   it.runIf(has)('this corpus imports no foreign axiom', () => {

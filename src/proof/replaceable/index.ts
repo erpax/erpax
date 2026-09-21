@@ -1,6 +1,6 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
-import { standardRegister } from '@/proof/register'
+import { standardKey, standardRegister } from '@/proof/register'
 
 /**
  * proof/replaceable — a cited standard is an AXIOM until a gate discharges it.
@@ -80,14 +80,8 @@ const EMPIRICAL = [
   'FATF Recommendation 20',
 ] as const
 
-/** Normalise a standard to its identity: `ISO-19011:2018` and `ISO 19011:2018` are one standard. */
-export const standardKey = (raw: string): string =>
-  raw
-    .split('—')[0]!
-    .split('§')[0]!
-    .replace(/[-‑]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
+/** The one key — defined in [[proof]]/register, re-exported so this atom's face keeps offering it. */
+export { standardKey } from '@/proof/register'
 
 export interface AssumedStandard {
   readonly standard: string
