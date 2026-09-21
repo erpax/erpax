@@ -63553,7 +63553,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about publication — Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication",
-        "uuid": "cb6add0c-1502-8e3a-bde6-37a7c0f6b70b",
+        "uuid": "1aad94f4-eff8-89d9-b7e3-a22be8f62e69",
         "words": [
           "use",
           "when",
@@ -63776,7 +63776,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a sealed claim might warrant a publication — emits a lean LaTeX paper and an HONEST prior-art verdict, where an empty Zenodo search is a lead and never a finding.",
-        "uuid": "64f3eb69-b54f-8e75-bc12-64040de26631",
+        "uuid": "3a7f1e07-175e-815f-b0ee-5d1c18c8ab08",
         "words": [
           "use",
           "when",
@@ -63870,7 +63870,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "zenodo",
-        "uuid": "cb4b9b32-e225-8dac-8fc1-6bbb07073adf",
+        "uuid": "1ce530ef-d4c7-8ffb-83dd-6dd676c0d737",
         "words": [
           "zenodo"
         ],
@@ -63881,7 +63881,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about zenodo — carried hand-typed counts, and they drifted:",
-        "uuid": "a306dfa9-96a5-8a62-b8b2-711da2fffe35",
+        "uuid": "e3cd9d40-3c0d-8fbf-8a07-3daf2dede464",
         "words": [
           "use",
           "when",
@@ -77336,7 +77336,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist.",
-        "uuid": "3a7ed7be-6ce2-831c-a055-f86cd0980e98",
+        "uuid": "746d01a7-c458-8add-897d-9add3f0fe58e",
         "words": [
           "use",
           "when",
@@ -207350,7 +207350,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication",
-        "uuid": "58eacd1a-5604-81a9-beae-4a90cb8d9fdc",
+        "uuid": "70328797-618f-8db6-95d5-8d90c4a45cdc",
         "words": [
           "use",
           "when",

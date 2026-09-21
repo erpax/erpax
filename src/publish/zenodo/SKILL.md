@@ -2,35 +2,35 @@
 name: zenodo
 description: "Use when reasoning about zenodo — carried hand-typed counts, and they drifted:"
 atomPath: "publish/zenodo"
-coordinate: "publish/zenodo · 7/descent · cb4b9b32"
-contentUuid: "5b3f2ea3-0489-5d6e-9b91-4ef1a97c6caa"
-diamondUuid: "a7fad758-9c48-8114-88e4-13a2e56fedb2"
-uuid: "cb4b9b32-e225-8dac-8fc1-6bbb07073adf"
-horo: 7
+coordinate: "publish/zenodo · 1/base · 1ce530ef"
+contentUuid: "e7279a3a-0392-55a7-bbfa-3264da263368"
+diamondUuid: "74daaa89-5ad5-8c85-b1c9-92c92559a62d"
+uuid: "1ce530ef-d4c7-8ffb-83dd-6dd676c0d737"
+horo: 1
 typography:
   partition: publish
-  bondDegree: 9
+  bondDegree: 12
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence"
   - "ISO 26324 — DOI: assigned by a registration agency, never computed ([[rules]]/forge)"
 bindings: []
 signatures:
-  computationUuid: "766ad226-3923-8267-9457-e2298d9498a7"
+  computationUuid: "2c035765-71c1-87d1-aa2c-f1705b6b323d"
   stages:
     - stage: path
       stageUuid: "eb325555-77db-8705-936b-1a5508b1fd39"
     - stage: trinity
       stageUuid: "de716e3c-3e79-8003-bf06-e6e034732ee9"
     - stage: boundary
-      stageUuid: "2d622a05-99ac-8247-acbb-4f500e9649f3"
+      stageUuid: "f3e4f012-0669-8f83-83b5-b4d1fe48a41d"
     - stage: links
-      stageUuid: "1ca94798-849b-8b8b-a553-10c2169b18a5"
+      stageUuid: "0d6f675c-90a7-87af-a55d-d7c3c5c15916"
     - stage: horo
-      stageUuid: "0ea3d9d4-58c3-873e-b4d8-72a07eed5b79"
+      stageUuid: "87bf4bd0-6051-8a3d-81fd-6d93fd697dbb"
     - stage: seal
       stageUuid: "63163452-cdf3-8fcd-8990-04a41daa3b45"
     - stage: uuid
-      stageUuid: "50840a0f-1b98-8325-834a-98be9a296e43"
+      stageUuid: "c737f79b-264b-8469-a275-bb77ec586df2"
 version: 2
 ---
 # publish/zenodo — the deposit manifest, computed from the record it describes
