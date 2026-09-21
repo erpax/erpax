@@ -1,3 +1,37 @@
+---
+name: citation
+description: "Use when reasoning about citation — rules/face closed one door: an atom may never quietly stop **offering a name**. This is the same door on the other wall — an atom may never quietly stop **citing an authority**."
+atomPath: "rules/citation"
+coordinate: "rules/citation · 8/crest · 85f5cf1d"
+contentUuid: "4fe8e7f8-b298-5159-b1a1-ba58e12136f0"
+diamondUuid: "4e667e87-06d2-85d9-90a8-d7aae2aa2a42"
+uuid: "85f5cf1d-e44e-8931-9d97-6316c50a2d88"
+horo: 8
+typography:
+  partition: rules
+  bondDegree: 18
+standards:
+  - "ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence"
+bindings: []
+signatures:
+  computationUuid: "ff8ab835-b056-858a-99f3-78383f58b1dc"
+  stages:
+    - stage: path
+      stageUuid: "1b630626-e8ee-87fb-9c6b-54f0afd192d2"
+    - stage: trinity
+      stageUuid: "1c7f153e-a301-8525-8b0e-e263773a5c55"
+    - stage: boundary
+      stageUuid: "cc307780-f47e-851d-a7db-ec2555815c42"
+    - stage: links
+      stageUuid: "21782fc6-cb18-8a3a-95e9-1a5622130612"
+    - stage: horo
+      stageUuid: "7f11c008-89b0-8cce-a7f9-bc15cc7d12ad"
+    - stage: seal
+      stageUuid: "d6875d48-d7d4-8be4-9290-6473064d0060"
+    - stage: uuid
+      stageUuid: "e8f1df13-a99b-8f43-bf2d-3fb6a7713e7c"
+version: 2
+---
 # rules/citation — a refactor may drop a symbol; it may not drop a statute
 
 [[rules]]/face closed one door: an atom may never quietly stop **offering a name**. This is the

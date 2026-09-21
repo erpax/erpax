@@ -3,13 +3,13 @@ name: standards
 description: "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it)."
 atomPath: "vocabulary/manufacturing/seed/standards"
 coordinate: "vocabulary/manufacturing/seed/standards · 5/round · 524fb31c"
-contentUuid: "a8247471-aa20-5051-9efd-2a340e8c7e19"
-diamondUuid: "8ac68ef1-1057-8ca0-a5fe-1660b2af0833"
+contentUuid: "93f3ec71-5db9-5da8-b75b-b8b9df162585"
+diamondUuid: "d8c8d06c-a071-8678-849a-23406a77d9db"
 uuid: "524fb31c-97a8-8116-a7d1-c770d253b180"
 horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 188
+  bondDegree: 191
 standards:
   - ESCO
   - "EU-VAT-Implementing-Reg-282/2011"
@@ -20,7 +20,7 @@ standards:
   - banners (the reference key).
 bindings: []
 signatures:
-  computationUuid: "4187f873-1c68-8063-9311-f9c4e3d5e21b"
+  computationUuid: "970ee970-7176-8162-b191-01edefff4071"
   stages:
     - stage: path
       stageUuid: "ad405e7a-fe9c-89cc-a068-d2ca3b799528"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "3704fdd5-d8b7-80e5-8229-40ca10fe7123"
     - stage: horo
-      stageUuid: "674ee903-6f91-8b6a-9e3b-3cae4f5461e1"
+      stageUuid: "12fb355d-070c-83b6-81c4-4812621dfc90"
     - stage: seal
       stageUuid: "5ce5f53d-10b0-8c9d-a77e-42776888bf88"
     - stage: uuid
-      stageUuid: "eb6c1848-a687-8dc4-8ead-3d48e4068bec"
+      stageUuid: "2f9b01cf-58fc-8e2f-9303-a1988e5efa7d"
 version: 2
 ---
 # vocabulary/manufacturing/seed/standards

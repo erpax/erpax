@@ -7349,6 +7349,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/canonical"
   },
   {
+    "atom": "citation",
+    "name": "citation",
+    "description": "Use when reasoning about citation — rules/face closed one door: an atom may never quietly stop **offering a name**. This is the same door on the other wall — an atom may never quietly stop **citing an authority**.",
+    "path": "rules/citation"
+  },
+  {
     "atom": "collapse",
     "name": "collapse",
     "description": "Use when asking which collections can honestly become one — content-addresses every booted collection's shape and reports identical tables (0) and provable subsets (4). Read the boundary before acting: fitting is not sameness, and no theorem decides what two tables MEAN. Run: tsx src/rules/collapse/index.ts",
