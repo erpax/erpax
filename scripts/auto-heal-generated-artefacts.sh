@@ -153,6 +153,31 @@ if [ "$DRY_RUN" = 0 ]; then
   rm -f /tmp/erpax-zenodo.log
 fi
 
+# ── Artefact 5d: the standards catalogue ─────────────────────────────
+#
+# THE ARTEFACT THAT SUPERSEDED ANOTHER AND INHERITED NO HEAL. Artefact 1 above removed the
+# docs/STANDARDS_INDEX.md heal on the grounds that the catalogue supersedes it — and never added a
+# heal for the catalogue. So the superseding artefact was the only derived file with no cure.
+#
+# It drifted on 2026-09-21 the moment statutory citations were attached to constants, and
+# `standards/emit — verify passes when catalogue.ts is fresh` turned an integration shard RED. The
+# pre-commit hook regenerates the index it no longer needs and not the catalogue it does.
+#
+# src/standards/emit.ts writes catalogue.ts AND the SKILL index, so both are staged together.
+if [ "$DRY_RUN" = 0 ]; then
+  if ./node_modules/.bin/tsx src/standards/emit.ts >/tmp/erpax-catalogue.log 2>&1; then
+    if ! git diff --quiet -- src/standards/catalogue.ts src/standards/SKILL.md; then
+      echo "auto-heal: standards catalogue drifted — regenerated"
+      git add src/standards/catalogue.ts src/standards/SKILL.md 2>/dev/null || true
+      healed+=("standards catalogue")
+    fi
+  else
+    echo "auto-heal: standards catalogue emit FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-catalogue.log || true
+  fi
+  rm -f /tmp/erpax-catalogue.log
+fi
+
 # ── Artefact 3: SKILL.md frontmatter ─────────────────────────────────
 #
 # Every SKILL.md carries a computed frontmatter block derived from the atom's own body and its

@@ -37,7 +37,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Semantic model of the electronic invoice",
     "uuid": "b293e94d-80cc-82ce-a7c9-7006b79e5bbf",
     "color": "hsl(355 78% 43%)",
-    "count": 127,
+    "count": 128,
     "modules": [
       {
         "path": "src/ai/invoice-ocr.ts",
@@ -88,6 +88,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§BG-23"
       },
       {
+        "path": "src/currency/fallback/index.ts",
+        "section": "§BG-7"
+      },
+      {
         "path": "src/customers/SKILL.md",
         "section": "§BG-7"
       },
@@ -129,10 +133,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/en/16931/validate.ts",
-        "section": ""
-      },
-      {
-        "path": "src/factory/recompute-parent-aggregates.ts",
         "section": ""
       }
     ]
@@ -699,7 +699,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Corporate Sustainability Due Diligence Directive (EU) 2024/1760",
     "uuid": "1d07c6b3-c502-8aa3-8b1b-1198dba57044",
     "color": "hsl(231 78% 49%)",
-    "count": 47,
+    "count": 48,
     "modules": [
       {
         "path": "src/admin/TenantFilters.tsx",
@@ -1136,6 +1136,48 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "EU-2003/88/EC",
+    "family": "eu",
+    "title": "Working Time Directive — Directive 2003/88/EC concerning certain aspects of the organisation of working time",
+    "uuid": "3f7bcc70-7660-80e8-9c02-504d7fb65909",
+    "color": "hsl(51 84% 54%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/iban/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/13616/iban-bg.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/13616/iban/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/13616/iban/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/7064/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/iso/7064/egn-bg.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/7064/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/staffing/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "EU-765/2008",
     "family": "eu",
     "title": "Accreditation and market surveillance / CE marking — Regulation (EC) No 765/2008",
@@ -1228,44 +1270,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "EU-2003/88/EC",
-    "family": "eu",
-    "title": "Working Time Directive — Directive 2003/88/EC concerning certain aspects of the organisation of working time",
-    "uuid": "3f7bcc70-7660-80e8-9c02-504d7fb65909",
-    "color": "hsl(51 84% 54%)",
-    "count": 8,
-    "modules": [
-      {
-        "path": "src/iban/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/13616/iban-bg.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/13616/iban/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/13616/iban/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/7064/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/7064/egn-bg.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/7064/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "ESCO",
     "family": "eu",
     "title": "European Skills/Competences/Occupations",
@@ -1333,6 +1337,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/translations/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2015/849",
+    "family": "eu",
+    "title": "Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing",
+    "uuid": "1dd7398a-4877-8f53-aa8b-2420619a37a1",
+    "color": "hsl(79 77% 56%)",
+    "count": 6,
+    "modules": [
+      {
+        "path": "src/aml/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/kyc/index.ts",
         "section": ""
       }
     ]
@@ -1463,24 +1485,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/notary/check/sanctions/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2015/849",
-    "family": "eu",
-    "title": "Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing",
-    "uuid": "1dd7398a-4877-8f53-aa8b-2420619a37a1",
-    "color": "hsl(79 77% 56%)",
-    "count": 2,
-    "modules": [
-      {
-        "path": "src/aml/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/kyc/index.ts",
         "section": ""
       }
     ]
@@ -3149,7 +3153,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Currency codes",
     "uuid": "2aa02578-47b5-80bf-ad53-a36e04aaccfb",
     "color": "hsl(112 57% 38%)",
-    "count": 311,
+    "count": 315,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -3255,7 +3259,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Universal financial industry message scheme",
     "uuid": "37af5d59-91b7-88a5-9a2e-b9f2b1e525ac",
     "color": "hsl(215 78% 55%)",
-    "count": 132,
+    "count": 133,
     "modules": [
       {
         "path": "src/agents/registered/data.agent.ts",
@@ -3467,7 +3471,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 101,
+    "count": 102,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -5338,7 +5342,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG fiscal-device & SUPTO ordinance",
     "uuid": "6a08f86f-afe0-8049-a445-c03e255093d7",
     "color": "hsl(144 58% 53%)",
-    "count": 42,
+    "count": 43,
     "modules": [
       {
         "path": "src/access/standard/index.ts",
@@ -5371,6 +5375,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/naredba/n/18/index.ts",
         "section": "§СУПТО"
+      },
+      {
+        "path": "src/naredba/n/18/scope/index.ts",
+        "section": "§чл.3-ал.1"
       },
       {
         "path": "src/naredba/n/18/scope/test.ts",
@@ -5431,10 +5439,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/sale/fiscal/context/test.ts",
         "section": "§СУПТО"
-      },
-      {
-        "path": "src/sale/fiscal/receipt/index.ts",
-        "section": "§СУПТО"
       }
     ]
   },
@@ -5444,10 +5448,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG Value Added Tax Act",
     "uuid": "83644ba0-d61a-840d-9821-ea275af4340f",
     "color": "hsl(156 60% 54%)",
-    "count": 3,
+    "count": 4,
     "modules": [
       {
         "path": "src/naredba/n/18/index.ts",
+        "section": "§118"
+      },
+      {
+        "path": "src/naredba/n/18/scope/index.ts",
         "section": "§118"
       },
       {
@@ -8086,6 +8094,52 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "RFC-5646",
+    "family": "rfc",
+    "title": "Tags for Identifying Languages",
+    "uuid": "e02ee373-c4fa-8fb9-ba75-4ee6f9c43f18",
+    "color": "hsl(150 72% 57%)",
+    "count": 14,
+    "modules": [
+      {
+        "path": "src/app/(frontend)/[locale]/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/bcp/47/language-tag.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bcp/47/locale-utils.ts",
+        "section": ""
+      },
+      {
+        "path": "src/i18n/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/i18n/localization/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/i18n/request/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/i18n/tag/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/locale/fallback/index.ts",
+        "section": "§4.1"
+      },
+      {
+        "path": "src/localize/SKILL.md",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "RFC-8259",
     "family": "rfc",
     "title": "The JavaScript Object Notation (JSON) Data Interchange Format",
@@ -8139,48 +8193,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/testing/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "RFC-5646",
-    "family": "rfc",
-    "title": "Tags for Identifying Languages",
-    "uuid": "e02ee373-c4fa-8fb9-ba75-4ee6f9c43f18",
-    "color": "hsl(150 72% 57%)",
-    "count": 11,
-    "modules": [
-      {
-        "path": "src/app/(frontend)/[locale]/layout.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/bcp/47/language-tag.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bcp/47/locale-utils.ts",
-        "section": ""
-      },
-      {
-        "path": "src/i18n/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/i18n/localization/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/i18n/request/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/locale/fallback/index.ts",
-        "section": "§4.1"
-      },
-      {
-        "path": "src/localize/SKILL.md",
         "section": ""
       }
     ]
@@ -9309,7 +9321,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ECMAScript language specification",
     "uuid": "dbd1c6da-73fe-836a-bfb1-1566b9b00b48",
     "color": "hsl(113 78% 40%)",
-    "count": 33,
+    "count": 34,
     "modules": [
       {
         "path": "src/admin/TenantFilters.tsx",
@@ -9396,15 +9408,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/types/sti/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/widget/AccountReconciliationsPanel.tsx",
         "section": ""
       },
       {
         "path": "src/widget/AuditLogWidget.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/widget/BalanceSheetWidget.tsx",
         "section": ""
       }
     ]
