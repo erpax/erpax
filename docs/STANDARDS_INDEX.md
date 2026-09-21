@@ -2759,6 +2759,7 @@ src/sti/vocabulary/index.ts:19: * @standard schema.org (the universal type vocab
 src/storage/independence/index.ts:62: * @standard ISO/IEC 27040:2024 — storage security (data integrity)
 src/storage/independence/index.ts:63: * @standard W3C Verifiable Data Registry conformance (storage layer)
 src/storage/independence/index.ts:64: * @standard RFC 9562 §5.8 + RFC 8785 (content-derived uuids)
+src/storage/redundancy/index.ts:9: * @standard ISO/IEC 9075-2:2016 §4.15.10 — when paired with bitemporal history
 src/stream/index.ts:45: * @standard ReactiveX / W3C Streams API (AsyncIterable surface)
 src/stream/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/stream/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering

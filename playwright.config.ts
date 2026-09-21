@@ -93,8 +93,18 @@ export default defineConfig({
         },
         env: {
           ...process.env,
-          // Same as integration tests: avoid interactive Drizzle push when the DB has drift.
-          PAYLOAD_DEV_PUSH: 'false',
+          // THE ENVIRONMENT DECIDES, and it could not before. This read `PAYLOAD_DEV_PUSH: 'false'`
+          // AFTER spreading process.env, so it overwrote whatever CI set and the lane ran against a
+          // database with no tables — `D1_ERROR: no such table: header`, on the first page opened,
+          // on every pull request. Its comment claimed parity with the integration lane; that lane
+          // sets 'true' and pushes the schema from the live config, so the comment asserted the
+          // opposite of what it did. A claim of parity with a sibling is worth checking against the
+          // sibling ([[rules]]/domain, one lane over).
+          //
+          // Local default stays 'false': an interactive Drizzle push on a drifted dev database
+          // would hang the webServer until its 180s timeout. A CI runner's D1 is fresh, so there is
+          // no drift to prompt about.
+          PAYLOAD_DEV_PUSH: process.env.PAYLOAD_DEV_PUSH ?? 'false',
         },
       },
 })
