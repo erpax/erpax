@@ -183,7 +183,13 @@ jobs:
     timeout-minutes: 45
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
-      PAYLOAD_DEV_PUSH: 'false'
+      # SAME DEFECT AS THE INTEGRATION LANE, ONE JOB OVER. That lane records what happens with
+      # skip-migrate and no-push: "a database with NO TABLES: every suite that actually writes
+      # died on 'no such table: tenants'". This job had 'false' and died on
+      # `D1_ERROR: no such table: header` — the header global, on the first page Playwright opens.
+      # The fix was found once and never propagated, which is rules/domain's law about a LANE
+      # rather than a file class: a cure reaches exactly the surfaces someone carried it to.
+      PAYLOAD_DEV_PUSH: 'true'
       CI: 'true'
     steps:
       - uses: actions/checkout@v4
