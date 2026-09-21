@@ -3,8 +3,8 @@ name: register
 description: "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**."
 atomPath: "proof/register"
 coordinate: "proof/register · 5/round · de5d5cc6"
-contentUuid: "19a50766-3287-5890-8edd-ecb3ef291601"
-diamondUuid: "eab863c8-d863-86ae-ba40-17b9e09387e5"
+contentUuid: "f42f61f7-5114-5fc5-9893-820fcf7772a2"
+diamondUuid: "70a25b0c-e22a-8043-8ee7-2ddb43dd0955"
 uuid: "de5d5cc6-3990-8f62-a342-6c1b5e3ef418"
 horo: 5
 typography:
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1cddfcd0-cc18-872f-ad75-86da5cca2647"
+  computationUuid: "f1037399-0de4-89aa-bc5d-50beecaf1e66"
   stages:
     - stage: path
       stageUuid: "cfc60e6f-7522-8225-a769-4433b06ac0ee"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "ec06f5da-5d87-8fba-8af5-b0abc2125ce2"
     - stage: links
-      stageUuid: "7b0758b1-5189-866c-b9ea-b8b539c0c4a0"
+      stageUuid: "92d300f0-98d8-8363-922e-ce6870221bc9"
     - stage: horo
       stageUuid: "bfa3987b-76c4-873e-8bc6-6ff3732c6476"
     - stage: seal
       stageUuid: "555e4ce7-2af4-8c39-ac13-4331392d1197"
     - stage: uuid
-      stageUuid: "cbab01cb-2ec9-87b4-804c-8644d68cbfc5"
+      stageUuid: "f717e01c-a96a-8aad-91de-f3811423cc04"
 version: 2
 ---
 # proof/register — the axiom index: what every theorem in this corpus actually rests on
@@ -90,9 +90,17 @@ build it.
 PROOF exercises a standard without exposing a gate — every `blocks/form/*` atom checks its WCAG
 label binding in `test.ts` — is counted as *assumed*. The number is therefore a conservative floor
 on what is discharged, and deliberately so: a test is evidence, a gate is enforcement, and only the
-second one stops the next commit. Second, `ISO-19011:2018` and `ISO 19011:2018` are counted as two
-standards because the citations are written both ways; that is a real inconsistency in the corpus's
-own citation format, surfaced here rather than normalised away.
+second one stops the next commit. Second, a standard written more than one way used to be counted
+TWICE, to surface the corpus's own citation inconsistency. That cost a real discharge:
+[[rules]]/bypass gates `ISO/IEC 27001 A.5.23` and could not discharge an atom citing
+`ISO 27001 A.5.23`, because the key kept the publisher. `standardKey` now folds the section, the
+gloss, the edition and the publisher — and the finding did not vanish with it. `spellingVariants`
+reports it directly: **5 standards are written three ways each**, and one of them, `BCP‑47`, uses a
+NON-BREAKING hyphen — a difference no reader can see ([[rules]]/inject's class, in a citation).
+
+The clause deliberately stays in the key: folding `A.5.23` away would let one cloud-isolation gate
+discharge the whole of ISO 27001. An over-discharge is a false green, and strictly worse than the
+over-count it would fix.
 
 ## "Could not ask" is not "rests on nothing"
 
