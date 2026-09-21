@@ -1,10 +1,10 @@
 {
-  "sealedAt": "2026-09-20",
+  "sealedAt": "2026-09-21",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "db0679856f5bc142",
+  "sourcesHash": "4c163ac09bfe52e6",
   "census": {
-    "theorems": 177,
-    "axiomFree": 111,
+    "theorems": 185,
+    "axiomFree": 119,
     "standardAxioms": 66,
     "stubbed": 0
   },
@@ -1167,6 +1167,54 @@
         },
         {
           "theorem": "Planck.compton_meets_schwarzschild_at_the_planck_mass",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.time_times_mass_is_hbar_over_c_squared",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.time_over_mass_is_g_over_c_cubed",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.multiplying_by_mass_always_kills_g",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.dividing_by_mass_always_kills_hbar",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.energy_is_mass_times_c_squared",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.the_three_are_independent",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.independent_means_nonzero",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Planck.energy_is_built_from_the_three",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
