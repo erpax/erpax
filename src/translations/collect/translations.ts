@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when porting every atom's SKILL.md into code — the collector that harvests translatable strings into a content-addressed per-folder table and the one canonical catalogue.",
-    "uuid": "569bc8b9-60f9-8e2c-9f77-8f1ec80a3143",
+    "uuid": "086b6927-2e0d-83fb-8a62-831ec1c980bc",
     "words": [
       "use",
       "when",

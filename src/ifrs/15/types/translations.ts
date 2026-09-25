@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical IFRS 15 / ASC 606 revenue-recognition types — the five-step model + the balance-sheet artefacts it produces.",
-    "uuid": "0669793c-9258-8ab7-897b-9ae45c8e33d1",
+    "uuid": "cdd70b93-ca2d-8b9b-a1dc-f7c2ceccf9ce",
     "words": [
       "use",
       "when",
