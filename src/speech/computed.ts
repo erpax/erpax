@@ -1,4 +1,4 @@
-import { exactMin, exactRound, exactTrunc } from '@/algebra'
+import { exactMin, exactRound, exactTrunc, roundTo } from '@/algebra'
 /**
  * computed — speech derived from diamond state (the color+sound twin of css/computed).
  *
@@ -21,7 +21,7 @@ import { isHoroStep, type HoroStep } from '@/horo'
 import { A432, NOTES, signalForStep } from '@/signal'
 import { horoStepOf as horoStepOfUuid } from '@/uuid/llm'
 
-const round2 = (n: number): number => exactRound(n * 100) / 100
+const round2 = (n: number): number => roundTo(n, 2)
 
 /** User spelling alias — bonds may reference `speach` instead of `speech`. */
 export const SPEACH_ALIAS = 'speach' as const

@@ -8,6 +8,8 @@ import { trinityFlagsOf, sealedFromReadme } from '@/pivot/horo-table'
 import { horoChapterOf as chapterOf } from '@/horo'
 import { harmonyOfBookIndex, indexVolumes, type BookIndexHarmony } from '../harmony-index'
 import { digitalRootOfUuid } from '@/digit'
+/** The word-size mask — one address, in [[quantum]]/word. */
+import { architectureMask } from '@/quantum/word'
 
 
 
@@ -46,7 +48,6 @@ export type BookIndexModel = {
 }
 
 const architectureBits = (): number => 1 << DOUBLING.length
-const architectureMask = (): bigint => (1n << BigInt(architectureBits())) - 1n
 const hexOf = (uuid: string): string => uuid.replace(/[^0-9a-fA-F]/g, '')
 const uuidFold64 = (uuid: string): bigint => {
   const h = hexOf(uuid).slice(0, 16)

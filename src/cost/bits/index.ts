@@ -124,6 +124,7 @@ export const bruteYearsLog2 = (workLog2: number, hashrateLog2: number): number =
 // a memory-bound quantum collision is ≈ D/2 — D/3 is the conservative theoretical floor.
 
 /** Quantum (Grover) second-preimage ≈ 2^(n/2) — the 2nd harmonic (numerically the birthday collision; a distinct threat at the same octave). */
+/** d/2 — the SAME exponent as `birthdayLog2` and a different theorem. See [[rules]]/copy § formulas. */
 export const groverPreimageLog2 = (digestBits: number): number => digestBits / 2
 
 /** Quantum (BHT) collision ≈ 2^(n/3) — the 3rd harmonic, the lowest floor under a quantum adversary with quantum memory. */

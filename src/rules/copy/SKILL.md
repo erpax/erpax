@@ -207,6 +207,55 @@ called in the right place — an alias is trusted, a policy assembled by a facto
 higher-order helper has no `: Access` annotation to find, and the 123 collection access legs whose
 value is not an object literal are outside it.
 
+## Formulas — one formula, one address, and a coincidence is not a copy
+
+`minNodes` hides a whole class: a formula is one expression, far below 40 nodes. Content-addressing
+the **shape** — the expression with parameters normalised to `$0`, `$1` — found 8 groups across 95
+single-expression formulas, and the split is the interesting part.
+
+**Seven were one formula written seven times**, and they are folded:
+
+| shape | written as |
+| --- | --- |
+| `exactRound($0 * 1000) / 1000` | `roundTo3` (accounting/balance) · `ROUND` (accounting/gaps) · `round3` (book/harmony-index) · `roundBits` (entropy) · `roundEb` (readme/entropy) |
+| `exactRound($0 * 100) / 100` | `round2` (signal) · `round2` (speech/computed) |
+| `(1n << BigInt(architectureBits())) - 1n` | `architectureMask` in **both** book/compute and quantum/word |
+
+`roundTo(n, decimals)` now lives once in [[algebra]], beside `exactRound`, and each atom's local name
+points at it — so the call sites did not move and the formula has one address.
+
+### A bare operator is not a formula
+
+`$0 * $1` matched **five** atoms: `standingStock` · `trophicTransfer` · `emissionFromActivity` ·
+`energyJoules` · `consultProfit`. `energyJoules = h·f` and `consultProfit = rate·hours` share
+multiplication and **no physics**. A shape whose every operand is a parameter is refused — the
+expression-level form of the floor `minNodes` gives bodies, and without it this gate's noise sits
+above its signal, which is the failure this corpus has paid for four times.
+
+### Two shapes that coincide, and must NOT be folded
+
+This is the sharper half, and the reason the gate declares rather than sweeps:
+
+| shape | the two theorems |
+| --- | --- |
+| `$0 / 2` | **`birthdayLog2`** counts CLASSICAL collisions in a space of size 2^d; **`groverPreimageLog2`** counts QUANTUM queries for a preimage. One exponent, two derivations, neither implying the other. |
+| `bound() / $0` | **`conjugate`** is Δx·Δp ≥ ℏ/2, **`linewidth`** is ΔE·Δt ≥ ℏ/2 — one inequality read over two conjugate pairs. |
+
+Folding either would erase a real cross-domain fact and, worse, remove the two sides' ability to
+move independently when a model changes: if the quantum floor stopped being d/2, a folded
+`birthdayLog2` would silently follow it. **A cross formula explains a cross-domain problem precisely
+because the two domains meet at the same expression by different routes** — that meeting is the
+content, and it survives only while both names do.
+
+`COINCIDENT_FORMULAS` declares each pair with the reason it is a coincidence, in the open, so the
+exemption is arguable. Registered as the `formula-address` guardian at 0 — a theorem, not a ratchet.
+
+**Honest boundary.** This reads single-expression arrow functions only: a formula in a block body,
+spread over two statements, or folded into a larger function is invisible to it. Shape equality is
+not semantic equality — two formulas can differ in shape and compute the same thing (`d/2` and
+`d*0.5`), which this will never see. And a declared coincidence is a human judgement, which is why
+each one carries its argument rather than just an exemption.
+
 **Law — [[law]]: the same body at two addresses is one implementation and one decoy. Content-address
 every body; where two agree, one of them is unmaintained and nobody knows which.**
 

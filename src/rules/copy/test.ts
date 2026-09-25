@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { copyCount, duplicateBodies, policyAddresses } from './index'
+import { copyCount, duplicateBodies, policyAddresses, formulaAddresses, COINCIDENT_FORMULAS } from './index'
 
 const tree = (files: Record<string, string>): string => {
   const root = mkdtempSync(join(tmpdir(), 'erpax-copy-'))
@@ -208,6 +208,49 @@ describe('accessPolicies — a rule a reviewer must trust has one address', () =
         'export const same: Access = base\n',
     })
     expect(policyAddresses(root)).toEqual([])
+    rmSync(root, { recursive: true, force: true })
+  })
+})
+
+describe('formulaAddresses — one formula, one address, and a coincidence is not a copy', () => {
+  it('the corpus has no unexplained formula duplication', () => {
+    expect(formulaAddresses(process.cwd())).toEqual([])
+  })
+
+  it('a bare operator is NOT a formula — `a*b` says nothing about what it multiplies', () => {
+    // energyJoules = h*f and consultProfit = rate*hours share multiplication and no physics.
+    // Five atoms matched `$0*$1` before this refusal, which is a noise floor above the signal.
+    const root = tree({
+      'a.ts': 'export const energy = (h: number, f: number): number => h * f\n',
+      'b.ts': 'export const profit = (rate: number, hours: number): number => rate * hours\n',
+    })
+    expect(formulaAddresses(root)).toEqual([])
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('one non-parameter operand makes it a formula, and two copies are then a finding', () => {
+    const root = tree({
+      'a.ts': 'export const half = (d: number): number => d / 2\n',
+      'b.ts': 'export const halve = (bits: number): number => bits / 2\n',
+    })
+    const g = formulaAddresses(root)
+    expect(g).toHaveLength(1)
+    expect(g[0]!.map((f) => f.name).sort()).toEqual(['half', 'halve'])
+    expect(g[0]![0]!.shape).toBe('$0/2')
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('a DECLARED coincidence is exempt — folding it would erase a cross-domain fact', () => {
+    // birthdayLog2 and groverPreimageLog2 are both d/2 and neither derives the other
+    const names = COINCIDENT_FORMULAS.flatMap(([a, b]) => [a, b])
+    expect(names).toContain('birthdayLog2')
+    expect(names).toContain('groverPreimageLog2')
+    for (const [, , why] of COINCIDENT_FORMULAS) expect(why.length).toBeGreaterThan(40)
+    const root = tree({
+      'a.ts': 'export const birthdayLog2 = (d: number): number => d / 2\n',
+      'b.ts': 'export const groverPreimageLog2 = (d: number): number => d / 2\n',
+    })
+    expect(formulaAddresses(root)).toEqual([])
     rmSync(root, { recursive: true, force: true })
   })
 })

@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { commentsOf } from '@/syntax'
-import { exactMax, exactRound } from '@/algebra'
+import { exactMax, exactRound, roundTo } from '@/algebra'
 /**
  * entropy -- the FUEL, the disorder the whole ledger balances, COMPUTED live.
  *
@@ -69,7 +69,7 @@ export function orphans(): string[] {
 /** Horo unity — last ring position (close / decade ratio 9/10). */
 export const UNITY_HORO_STEP = HORO_DIGITS[HORO_DIGITS.length - 1]!
 
-const roundBits = (n: number): number => exactRound(n * 1000) / 1000
+const roundBits = (n: number): number => roundTo(n, 3)
 
 /** Corpus entropy S (bits) — gap/seal eb imbalance + violation bits at Landauer floor. */
 export function corpusEntropyBits(entropyEb: number, violationCount: number): number {
