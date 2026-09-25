@@ -3,18 +3,18 @@ name: collections
 description: "Use when defining or debugging a Payload Collection or Global config — slug, fields, admin options, access, hooks, auth, upload, versions/drafts, timestamps, labels, default sort, or registering it in the config."
 atomPath: collections
 coordinate: "collections · 4/weave · e05a7835"
-contentUuid: "61b32418-f380-5040-9508-77b67704f4f8"
-diamondUuid: "baee3bd1-9cb7-893e-8b30-1dce1001e3c6"
+contentUuid: "91475ee8-596a-582c-beea-e3262932f477"
+diamondUuid: "83534a49-42a6-8853-a768-4bd24de62fa3"
 uuid: "e05a7835-9e07-8d06-8ad4-e858c0e07738"
 horo: 4
 typography:
   partition: collections
-  bondDegree: 163
+  bondDegree: 160
 standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "8e2aefbd-d6ce-8cef-a9ec-4c619a5d301c"
+  computationUuid: "eff98311-58f2-8282-89de-a291d723c4da"
   stages:
     - stage: path
       stageUuid: "3cb62e17-5652-85d0-86ad-85104eac1d76"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c3226bd6-c25f-8c41-8453-9104beea033e"
     - stage: horo
-      stageUuid: "ab6f2acf-69e0-847e-b821-649d7db14b4a"
+      stageUuid: "2a751517-6bde-81c2-9564-503bb6e8604b"
     - stage: seal
       stageUuid: "2496d1b0-3e92-88d7-b085-2491c6527c06"
     - stage: uuid
-      stageUuid: "350fcf1f-b1ba-8217-85c3-218282f97d53"
+      stageUuid: "c1ad28f3-deaa-86bb-89b7-46789ac18d53"
 version: 2
 ---
 # collections — Collections & Globals (position 2 of the material cycle)

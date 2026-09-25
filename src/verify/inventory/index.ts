@@ -1,19 +1,4 @@
-/**
- * verify/inventory — the kernel's verdict, turned into something a Worker can serve.
- *
- * THE BLOCK: a proof nobody can reach is prose. The corpus proves its decisions in Lean, and the
- * only way to see that was to have Lean installed and run it — so the claim reached a reader as a
- * sentence, which is exactly what [[rules]]/refutable refuses. A Cloudflare Worker cannot run the
- * kernel: there is no Lean in a Worker, and there never will be.
- *
- * So the kernel runs where it can (a developer, CI) and EMITS what it found; the Worker serves the
- * emission. The honest consequence is stated in the payload itself: the reader is seeing a RECORD
- * of a kernel run, identified by the content hash of the sources it ran over. If the sources move,
- * the hash moves, and the record is stale by construction rather than by trust.
- *
- * Parsing is over `#print axioms` output, the kernel's own words — never over the .lean text, where
- * "no sorry" in a comment reads as a proof ([[rules]]/prose paid for that lesson, twice).
- */
+/** verify/inventory — the kernel's verdict, turned into something a Worker can serve. THE BLOCK: a proof nobody can reach is prose. See SKILL.md. */
 export const atomPath = 'verify/inventory' as const
 
 /** One theorem, as the kernel reported it. */
@@ -26,12 +11,7 @@ export interface ProofEntry {
   readonly stubbed: boolean
 }
 
-/**
- * Parse `#print axioms` output. Two shapes and nothing else:
- *   'X' does not depend on any axioms
- *   'X' depends on axioms: [propext, Quot.sound]
- * A line in neither shape is NOT an entry — an unparsed line must never read as a proof.
- */
+/** Parse `#print axioms` output. See SKILL.md. */
 export function parseAxiomReport(out: string): ProofEntry[] {
   const entries: ProofEntry[] = []
   for (const line of out.split('\n')) {
@@ -80,11 +60,7 @@ export const proved = (c: ProofCensus): number => c.axiomFree + c.standardAxioms
 // files the run covered, so a record that no longer matches the sources is detectably stale
 // rather than quietly wrong.
 
-/**
- * The emitted record, re-exported through this atom's FACE. A caller must never reach past the
- * barrel to the .json ([[convention]]/import): the pre-push ratchet refused exactly that, and it
- * was right — a deep path is a path free to move, and a JSON file is not an atom.
- */
+/** The emitted record, re-exported through this atom's FACE. See SKILL.md. */
 export { default as INVENTORY } from '../lean/inventory.generated.json'
 
 /** Where the emitted record lives — committed, because a Worker cannot regenerate it. */

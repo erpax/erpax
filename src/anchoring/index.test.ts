@@ -92,3 +92,17 @@ describe('anchoring: the leaf commits the FULL 256-bit digest (the collision-gap
     expect(anchorLeaf({ a: 1 }, 't1')).not.toBe(anchorLeaf({ a: 2 }, 't1'))
   })
 })
+
+/** The anchoring docstring states the formula, so there is no output left to go stale. */
+describe('anchoring — the refuted 106-bit uuid is gone from the prose', () => {
+  it('names the formula, not its value', async () => {
+    const { readFileSync } = await import('node:fs')
+    const src = readFileSync(new URL('./index.ts', import.meta.url), 'utf8')
+    expect(src).not.toContain('106-bit')
+    expect(src).not.toContain('2^53')
+    expect(src).toContain('birthdayLog2(ERPAX_DIGEST_BITS)')
+    // and the dissolved services tree is no longer pointed at
+    expect(src).not.toContain('services/tamper-cost')
+    expect(src).not.toContain('services/integrity')
+  })
+})

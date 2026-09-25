@@ -3,7 +3,7 @@ name: platform
 description: "Use when reasoning about platform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: platform
 coordinate: "platform · 1/base · 1d22d8c9"
-contentUuid: "e6895ed0-55aa-54dd-970c-6fb9c77ad8c2"
+contentUuid: "e0cd2eea-de83-53d1-b59b-3b4bccb98f40"
 diamondUuid: "b90dba3b-dd76-8eed-bb4c-a63dd4adad80"
 uuid: "1d22d8c9-b72f-8ce2-865f-956b8340a66a"
 horo: 1
@@ -11,7 +11,6 @@ typography:
   partition: platform
   bondDegree: 50
 standards:
-  - MCP
   - "W3C-JSON-LD-1.1"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

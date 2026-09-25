@@ -1,3 +1,12 @@
+/**
+ * currency/fallback — the blank currency is a VALUE, never a null: XXX, standards-defined end to
+ * end, so a federation peer already understands it. See SKILL.md.
+ *
+ * @standard ISO 4217 §6.5 "No currency" — code XXX, numeric 999
+ * @standard EN 16931 §BG-7 currency-code element (XXX accepted)
+ * @standard ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)
+ * @standard IFRS 1 §IG7 non-monetary items presentation
+ */
 import { exactRound } from '@/algebra'
 import type { Currency } from '@/config/regional/defaults'
 import { CURRENCY_DECIMALS } from '@/config/country/specifics'

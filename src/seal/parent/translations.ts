@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an atom needs the ancestor of a path without inheriting the seal barrel — parentAtomPath and ancestorPaths, in a module with ZERO imports. Three lines of string arithmetic that used to live in @/seal, whose barrel is inside the corpus's import component, so path/ paid for the whole subtree to get one function. @/seal re-exports both, so no existing reader changed.",
-    "uuid": "d4010c00-e949-8b0d-8816-693e59b6fa09",
+    "uuid": "233e9a3d-ddf6-8daf-b8f5-f9bfa033582d",
     "words": [
       "use",
       "when",

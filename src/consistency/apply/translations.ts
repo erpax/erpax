@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when running the deterministic, idempotent consistency transforms that close code-consistency gaps (chain producer backfill, emits upgrade, e2e + shadcn scaffolds, localized flags) — the appliers the `erpax.consistency.applyAll` MCP tool and the ConsistencyAgent cron dispatch to.",
-    "uuid": "16779852-092c-880d-91b0-11f4432472f4",
+    "uuid": "f337f044-bdbc-82d3-b379-f1f0a8822f96",
     "words": [
       "use",
       "when",

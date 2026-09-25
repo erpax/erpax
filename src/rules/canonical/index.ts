@@ -91,23 +91,9 @@ const sourceText = (cwd: string): string => {
 /**
  * Governed packages that are installed but never called — each is dead weight or a re-implementation.
  *
- * A package counts as used when ANY of its own exports is CALLED in hand-written `src/`, or when
- * src imports one of its documented SUBPATHS.
- *
- * Both allowances are corrections, not leniency — the gate reported three unwired packages and two
- * of them were wired:
- *
- *   `multiTenantPlugin<Config>({…})`  a generic call is still a call, and `\bname\s*\(` cannot see
- *                                     past the type arguments. The plugin was fully wired, with a
- *                                     computed collection map and cookie-derived tenant defaults.
- *   `@payloadcms/plugin-seo/fields`   the plugin's OWN documentation offers direct field use as the
- *                                     alternative to calling it ("If you need more flexibility you
- *                                     can insert the fields manually"). `pages` and `posts` take
- *                                     exactly that path.
- *
- * A gate that flags canonical use as a violation teaches people to ignore it. Only
- * `plugin-import-export` was genuinely unwired — installed, documented in two SKILLs as the import
- * route, and never registered, so the Admin had no Imports panel at all.
+ * Used means ANY of the package's own exports is CALLED in hand-written `src/`, or src imports one
+ * of its documented SUBPATHS. Both allowances are corrections the tree forced, not leniency.
+ * See ./SKILL.md § what counts as use.
  */
 export function unwiredPackages(cwd: string = process.cwd()): UnwiredPackage[] {
   const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as {
@@ -146,3 +132,126 @@ if (import.meta.url === 'file://' + process.argv[1]) {
 }
 
 /** @index-cross.foldback child=rules/canonical parent=rules — this cross folds back into its parent. */
+
+/** How far behind the registry an installed package is. See SKILL.md. */
+export interface Currency {
+  readonly pkg: string
+  readonly installed: string
+  /** Newest version by PUBLISH TIME, across every dist-tag including pre-releases. */
+  readonly newest: string
+  readonly newestPublished: string
+  readonly installedPublished: string
+  /** Versions published after the installed one. */
+  readonly behind: number
+  /** False when the registry could not be asked — a verdict was NOT reached. */
+  readonly reachable: boolean
+}
+
+/**
+ * Order a registry's versions by publish TIME, never by semver. See SKILL.md.
+ *
+ * Payload's 4.x line is `4.0.0-internal.<git-hash>`, so semver compares the hashes
+ * alphanumerically — `…fec2230` sorts above `…38b7f1d` for no reason a reader would accept.
+ * A semver-max check would report a confident, meaningless verdict.
+ */
+export function newestByTime(time: Readonly<Record<string, string>>): { version: string; at: string } | undefined {
+  const rows = Object.entries(time)
+    .filter(([v]) => v !== 'created' && v !== 'modified')
+    .map(([v, d]) => ({ version: v, at: d, ms: Date.parse(d) }))
+    .filter((r) => Number.isFinite(r.ms))
+    .sort((a, b) => b.ms - a.ms)
+  const top = rows[0]
+  return top === undefined ? undefined : { version: top.version, at: top.at }
+}
+
+/** Versions of `time` published strictly after `version`. See SKILL.md. */
+export function publishedAfter(time: Readonly<Record<string, string>>, version: string): number {
+  const mine = Date.parse(time[version] ?? '')
+  if (!Number.isFinite(mine)) return 0
+  return Object.entries(time).filter(
+    ([v, d]) => v !== 'created' && v !== 'modified' && Number.isFinite(Date.parse(d)) && Date.parse(d) > mine,
+  ).length
+}
+
+/** Payload's own packages, read from package.json — computed, never a typed list. */
+export function payloadPackages(cwd: string = process.cwd()): string[] {
+  const p = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as {
+    dependencies?: Record<string, string>
+    devDependencies?: Record<string, string>
+  }
+  const all = { ...p.dependencies, ...p.devDependencies }
+  return Object.keys(all)
+    .filter((k) => k === 'payload' || k.startsWith('@payloadcms/'))
+    .sort()
+}
+
+/** The installed version of a package, or undefined when it is not resolvable. */
+export function installedVersion(pkg: string, cwd: string = process.cwd()): string | undefined {
+  const f = join(cwd, 'node_modules', ...pkg.split('/'), 'package.json')
+  if (!existsSync(f)) return undefined
+  try {
+    return (JSON.parse(readFileSync(f, 'utf8')) as { version?: string }).version
+  } catch {
+    return undefined
+  }
+}
+
+/**
+ * How far behind the registry one package is. See SKILL.md.
+ *
+ * `fetchTime` is injected so the check is testable without the network, and an unreachable
+ * registry returns `reachable: false` rather than `behind: 0` — an unasked question reported as a
+ * pass is the defect this corpus keeps naming.
+ */
+export function currencyOf(
+  pkg: string,
+  fetchTime: (pkg: string) => Readonly<Record<string, string>> | undefined,
+  cwd: string = process.cwd(),
+): Currency {
+  const installed = installedVersion(pkg, cwd) ?? ''
+  const time = fetchTime(pkg)
+  const newest = time === undefined ? undefined : newestByTime(time)
+  if (time === undefined || newest === undefined) {
+    return { pkg, installed, newest: '', newestPublished: '', installedPublished: '', behind: 0, reachable: false }
+  }
+  return {
+    pkg,
+    installed,
+    newest: newest.version,
+    newestPublished: newest.at,
+    installedPublished: time[installed] ?? '',
+    behind: publishedAfter(time, installed),
+    reachable: true,
+  }
+}
+
+/** A dependency and how many places import it. */
+export interface Thin {
+  readonly pkg: string
+  readonly sites: number
+}
+
+/** Packages that are NOT the platform — the surface a local solution could in principle replace. */
+const PLATFORM = /^(payload|next|react|react-dom|@payloadcms\/|@opennextjs\/|wrangler|drizzle|@libsql|sharp|graphql)/
+
+/**
+ * Dependencies imported from at most `ceiling` places. See SKILL.md.
+ *
+ * [[rules]]/unfolded's law applied to packages: a dependency used once is un-folded — the cost of
+ * carrying it (a lockfile entry, a supply-chain surface, an upgrade that can restructure under
+ * you) is paid whole for a single call site.
+ */
+export function thinPackages(cwd: string = process.cwd(), ceiling = 2): Thin[] {
+  const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as {
+    dependencies?: Record<string, string>
+  }
+  const deps = Object.keys(pkg.dependencies ?? {}).filter((d) => !PLATFORM.test(d))
+  const src = sourceText(cwd)
+  return deps
+    .map((p) => ({
+      pkg: p,
+      sites: [...src.matchAll(new RegExp(`from ['"]${p.replace(/[/@\-.]/g, (c) => `\\${c}`)}(['"/])`, 'g'))].length,
+    }))
+    .filter((t) => t.sites <= ceiling)
+    .sort((a, b) => a.sites - b.sites || a.pkg.localeCompare(b.pkg))
+}

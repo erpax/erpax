@@ -68,7 +68,13 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "agents/mcp",
   "agents/mcp/i18n",
   "agents/mcp/tool",
+  "agents/mcp/tool/aml",
   "agents/mcp/tool/cloudflare",
+  "agents/mcp/tool/float",
+  "agents/mcp/tool/kyc",
+  "agents/mcp/tool/novelty",
+  "agents/mcp/tool/risk",
+  "agents/mcp/tool/staffing",
   "agents/registered",
   "agents/registered/hr",
   "agents/registered/hr/training",
@@ -319,6 +325,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "confirm/push",
   "confirm/uuid",
   "conformal",
+  "conjecture",
   "connections",
   "consciousness",
   "consent",
@@ -384,6 +391,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "currency/fallback",
   "currency/rates",
   "currency/reconciliation",
+  "currency/registered",
   "customer/segments",
   "customers",
   "customers/contracts",
@@ -619,6 +627,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "i18n/localization",
   "i18n/request",
   "i18n/routing",
+  "i18n/tag",
   "iban",
   "identification",
   "identity",
@@ -918,6 +927,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "outward/coverage",
   "outward/eu",
   "outward/gate",
+  "outward/leads",
   "outward/world",
   "pack",
   "pack/items",
@@ -1002,6 +1012,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "publish",
   "publish/complete",
   "publish/harvest",
+  "publish/live",
   "publish/paper",
   "publish/registry",
   "publish/zenodo",
@@ -1162,6 +1173,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "rules/audience",
   "rules/bypass",
   "rules/canonical",
+  "rules/citation",
   "rules/collapse",
   "rules/command",
   "rules/compatibility",
@@ -1174,6 +1186,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "rules/echo",
   "rules/face",
   "rules/forge",
+  "rules/hold",
   "rules/hyphen",
   "rules/inject",
   "rules/invisible",
@@ -1278,6 +1291,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "skin",
   "social/graph",
   "society",
+  "solvent",
   "sparsity",
   "spec",
   "spec/generator",
@@ -1421,6 +1435,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "uuid/chain",
   "uuid/format",
   "uuid/governance",
+  "uuid/involution",
   "uuid/kv",
   "uuid/llm",
   "uuid/matrix",
@@ -1481,7 +1496,9 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "wave/session",
   "wco/hs",
   "website",
+  "website/marketing",
   "website/seo",
+  "website/shadcn",
   "whole",
   "widget",
   "witness/testing",
@@ -1507,7 +1524,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1500 as const
+export const ATOM_LEDGER_PATH_COUNT = 1517 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1754,10 +1771,40 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp",
     "agents/mcp/tool"
   ],
+  "agents/mcp/tool/aml": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/aml"
+  ],
   "agents/mcp/tool/cloudflare": [
     "agents/mcp",
     "agents/mcp/tool",
     "agents/mcp/tool/cloudflare"
+  ],
+  "agents/mcp/tool/float": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/float"
+  ],
+  "agents/mcp/tool/kyc": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/kyc"
+  ],
+  "agents/mcp/tool/novelty": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/novelty"
+  ],
+  "agents/mcp/tool/risk": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/risk"
+  ],
+  "agents/mcp/tool/staffing": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/staffing"
   ],
   "agents/registered": [
     "agents/registered"
@@ -2658,6 +2705,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "conformal": [
     "conformal"
   ],
+  "conjecture": [
+    "conjecture"
+  ],
   "connections": [
     "connections"
   ],
@@ -2892,6 +2942,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "currency/reconciliation": [
     "currency",
     "currency/reconciliation"
+  ],
+  "currency/registered": [
+    "currency",
+    "currency/registered"
   ],
   "customer/segments": [
     "customer/segments"
@@ -3735,6 +3789,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "i18n/routing": [
     "i18n",
     "i18n/routing"
+  ],
+  "i18n/tag": [
+    "i18n",
+    "i18n/tag"
   ],
   "iban": [
     "iban"
@@ -4848,6 +4906,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "outward",
     "outward/gate"
   ],
+  "outward/leads": [
+    "outward",
+    "outward/leads"
+  ],
   "outward/world": [
     "outward",
     "outward/world"
@@ -5135,6 +5197,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "publish/harvest": [
     "publish",
     "publish/harvest"
+  ],
+  "publish/live": [
+    "publish",
+    "publish/live"
   ],
   "publish/paper": [
     "publish",
@@ -5758,6 +5824,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "rules",
     "rules/canonical"
   ],
+  "rules/citation": [
+    "rules",
+    "rules/citation"
+  ],
   "rules/collapse": [
     "rules",
     "rules/collapse"
@@ -5805,6 +5875,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "rules/forge": [
     "rules",
     "rules/forge"
+  ],
+  "rules/hold": [
+    "rules",
+    "rules/hold"
   ],
   "rules/hyphen": [
     "rules",
@@ -6209,6 +6283,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "society": [
     "society"
+  ],
+  "solvent": [
+    "solvent"
   ],
   "sparsity": [
     "sparsity"
@@ -6719,6 +6796,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "uuid",
     "uuid/governance"
   ],
+  "uuid/involution": [
+    "uuid",
+    "uuid/involution"
+  ],
   "uuid/kv": [
     "uuid",
     "uuid/kv"
@@ -6938,9 +7019,17 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "website": [
     "website"
   ],
+  "website/marketing": [
+    "website",
+    "website/marketing"
+  ],
   "website/seo": [
     "website",
     "website/seo"
+  ],
+  "website/shadcn": [
+    "website",
+    "website/shadcn"
   ],
   "whole": [
     "whole"
@@ -7023,4 +7112,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 850 as const
+export const MERGED_NESTED_PATH_COUNT = 865 as const

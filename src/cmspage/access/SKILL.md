@@ -3,13 +3,13 @@ name: access
 description: "Use when reasoning about the pages collection's access control — who may read, create, update, or delete pages."
 atomPath: "cmspage/access"
 coordinate: "cmspage/access · 6/6 · f313befd"
-contentUuid: "06c2e424-0fe9-56ce-85c2-63ccf3427e13"
+contentUuid: "3f96a066-74ae-5dfc-ac0a-8e5949efee20"
 diamondUuid: "3613c270-a6c1-8af1-bc3b-ebeff58babd8"
 uuid: "f313befd-b457-82e9-83f1-7845adc1a846"
 horo: 6
 typography:
   partition: cmspage
-  bondDegree: 436
+  bondDegree: 441
 standards:
   - "NIST-INCITS-359-2012"
 bindings: []

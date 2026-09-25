@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society turns warfare tactics to peace — reconnaissance, the OODA loop, coordinated formations, and defense-in-depth applied to building harmony and driving entropy to zero, never to destruction.",
-    "uuid": "441108a6-ea9b-8b2f-a2b6-0781033855bc",
+    "uuid": "8c233590-0cc1-885c-8a5b-02e92306b281",
     "words": [
       "use",
       "when",

@@ -3,21 +3,23 @@ name: kyc
 description: "Use when reasoning about kyc — There is a function this atom refuses to contain, and naming the refusal is the point: **nothing here decides whether a customer is laundering money.** That is not decidable, and…"
 atomPath: kyc
 coordinate: "kyc · 5/round · 713ab1da"
-contentUuid: "525810e5-c37c-5b8a-94aa-be4da107ad61"
-diamondUuid: "baa7b1fa-6000-8d4a-95bd-c0c9d297e133"
+contentUuid: "04239371-eb9d-5c24-88c6-7b53c94f7862"
+diamondUuid: "9c843ef5-fa46-8b43-9d6e-1614d04b02f4"
 uuid: "713ab1da-92f9-8c43-bf92-7ca805860760"
 horo: 5
 typography:
   partition: kyc
-  bondDegree: 13
+  bondDegree: 22
 standards:
   - "EU 2015/849 (AMLD4) as amended by EU 2018/843 (AMLD5) — customer due diligence"
+  - "EU 2015/849 Art. 11 — the amounts at which CDD is triggered"
+  - "EU 2015/849 Art. 13(1) — customer due diligence measures"
   - "EU-2015/849"
   - "EU-2018/843"
   - "FATF Recommendations 10 · 12 · 22 — CDD, politically exposed persons, DNFBPs"
 bindings: []
 signatures:
-  computationUuid: "77c226da-aae4-8b80-8f75-550310f06906"
+  computationUuid: "77bf72ff-ca18-8bc8-9600-7b7cdd21ec7c"
   stages:
     - stage: path
       stageUuid: "2430b177-8a0e-80e0-8f91-9f3dc2051443"
@@ -28,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "5234cc32-6553-8bd6-a777-01e25d667fb1"
     - stage: horo
-      stageUuid: "369cad75-dce7-810b-8edf-4dd31b57dfc4"
+      stageUuid: "1e4cffa7-6b2f-8edc-9404-75fe513b7961"
     - stage: seal
       stageUuid: "4690d932-5152-820f-ba0a-105ed880af65"
     - stage: uuid
-      stageUuid: "d0e8a401-706e-8b30-8752-db0983c59e91"
+      stageUuid: "a3e546a2-a05f-890c-b11f-1ed482780c2a"
 version: 2
 ---
 # kyc — the diligence the law requires, never a verdict on the customer

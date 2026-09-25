@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the artery as an organ of body — pivot to canonical @/artery; zero duplication.",
-    "uuid": "4b53ea73-0cea-8189-9b94-e4471ad1b8eb",
+    "uuid": "c0db5e82-bb03-8548-bd31-f24e1e78b4ea",
     "words": [
       "use",
       "when",

@@ -23,6 +23,16 @@ inputs:
     description: 'Upgrade npm globally — trusted publishing (OIDC) needs npm >= 11.5.1'
     required: false
     default: 'false'
+  cache:
+    # A `workflow_run` job runs with repository write scope while checking out the SHA that
+    # TRIGGERED it, so a pnpm cache the triggering workflow wrote is untrusted input here — CodeQL
+    # `actions/cache-poisoning/poisonable-step` flagged every step of cloudflare.yml for exactly
+    # that, 24 alerts, and both Analyze checks are REQUIRED on main. Trusted triggers (push,
+    # pull_request, schedule, tag) keep the cache; a workflow_run caller passes 'false' and pays a
+    # cold install instead of restoring something an untrusted run could have seeded.
+    description: "Restore the pnpm cache — pass 'false' from a workflow_run job"
+    required: false
+    default: 'true'
 
 runs:
   using: composite
@@ -34,7 +44,7 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: '22'
-        cache: pnpm
+        cache: ${{ inputs.cache == 'true' && 'pnpm' || '' }}
         registry-url: ${{ inputs.registry-url }}
 
     - name: Ensure modern npm (trusted publishing needs >= 11.5.1)

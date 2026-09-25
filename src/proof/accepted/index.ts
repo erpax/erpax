@@ -1,6 +1,7 @@
 import { execFileSync } from 'node:child_process'
-import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { existsSync, mkdtempSync, readFileSync, readdirSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
+import { tmpdir } from 'node:os'
 
 /**
  * proof/accepted — a `.lean` file is what the kernel accepts, or it is scaffolding wearing the word.
@@ -16,6 +17,8 @@ export interface KernelVerdict {
   readonly sorries: number
   /** The first error, when rejected — so a reader is not sent to run it themselves. */
   readonly error: string | null
+  /** The kernel could not be ASKED — an import that does not resolve, not a refused proof. */
+  readonly unresolved?: boolean
 }
 
 /** Where a kernel might be. Absence is reported, never treated as a pass. */
@@ -51,15 +54,52 @@ export function leanFiles(cwd: string = process.cwd()): string[] {
  * the source, because a comment saying "no sorry" contains the word — the false positive three
  * sibling repos each paid for separately in one day ([[rules]]/forge learned it too).
  */
+/** The modules a `.lean` file imports, in source order. */
+export function leanImports(source: string): string[] {
+  return [...source.matchAll(/^import\s+([A-Za-z_][\w.]*)/gm)].map((m) => m[1] as string)
+}
+
+/**
+ * Compile a module's imports to `.olean` so the kernel can resolve them.
+ *
+ * Output goes to a TEMP directory, never beside the source: a gate that leaves build
+ * artefacts in the corpus makes the tree dirty by running, and the diamond scan counted
+ * seven of them as stray matter. Cleaning up afterwards can be skipped; compiling
+ * elsewhere cannot. See SKILL.md.
+ */
+function buildDeps(dir: string, out: string, mod: string, lean: string, built: Set<string>): void {
+  if (built.has(mod)) return
+  built.add(mod)
+  const src = join(dir, `${mod}.lean`)
+  if (!existsSync(src)) return // a genuinely missing module — the kernel will say so
+  for (const dep of leanImports(readFileSync(src, 'utf8'))) buildDeps(dir, out, dep, lean, built)
+  try {
+    execFileSync(lean, ['-o', join(out, `${mod}.olean`), `${mod}.lean`], {
+      cwd: dir,
+      env: { ...process.env, LEAN_PATH: out },
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'pipe'],
+      timeout: 120_000,
+    })
+  } catch {
+    // Reported through the FILE that imports it, where the error names it.
+  }
+}
+
 export function kernelVerdict(file: string, cwd: string = process.cwd()): KernelVerdict {
   const lean = kernelPath()
   if (lean === null) throw new Error('✖ no Lean kernel on this machine — a verification gate with no verifier cannot report green')
   const rel = relative(cwd, file)
+  const dir = dirname(file)
+  const built = new Set<string>()
+  const out = mkdtempSync(join(tmpdir(), 'erpax-lean-'))
+  for (const dep of leanImports(readFileSync(file, 'utf8'))) buildDeps(dir, out, dep, lean, built)
   let output = ''
   let accepted = true
   try {
     output = execFileSync(lean, [file.slice(file.lastIndexOf('/') + 1)], {
-      cwd: dirname(file),
+      cwd: dir,
+      env: { ...process.env, LEAN_PATH: out },
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'pipe'],
       timeout: 120_000,
@@ -71,7 +111,9 @@ export function kernelVerdict(file: string, cwd: string = process.cwd()): Kernel
   }
   const sorries = (output.match(/declaration uses ['`]sorry['`]/g) ?? []).length
   const error = accepted ? null : (output.split('\n').find((l) => l.includes('error')) ?? output.split('\n')[0] ?? null)
-  return { file: rel, accepted, sorries, error }
+  // An import the kernel could not find is the harness failing, not the proof.
+  const unresolved = !accepted && /unknown module prefix|unknown package/.test(output)
+  return { file: rel, accepted, sorries, error, unresolved }
 }
 
 export interface ReflexiveTheorem {

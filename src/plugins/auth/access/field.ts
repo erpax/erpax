@@ -15,17 +15,12 @@
 
 import type { FieldAccess } from 'payload'
 
-/**
- * Helper: Check if user has super-admin role.
- *
- * @param user Request user object
- * @returns true if user has 'super-admin' role
- */
-const userIsSuperAdmin = (user: unknown): boolean => {
-  if (!user || typeof user !== 'object') return false
-  const roles = (user as Record<string, unknown>).roles
-  return Array.isArray(roles) && roles.includes('super-admin')
-}
+// ONE super-admin predicate, not two. This file carried a byte-identical copy of the check in
+// ./predicates — and a security test duplicated is a security test that drifts: harden one and the
+// other silently keeps admitting. rules/copy found it by content address, and neither copy closed
+// over anything, so the fold is safe to make ([[rules]]/copy's own boundary: the hash covers the
+// body, never what it reads).
+import { fieldAccess } from '@/is/super/admin'
 
 /**
  * Tenant field access control.
@@ -53,7 +48,7 @@ const userIsSuperAdmin = (user: unknown): boolean => {
  *     }
  *   }
  */
-export const tenantFieldAccess: FieldAccess = ({ req }) => userIsSuperAdmin(req.user)
+export const tenantFieldAccess: FieldAccess = fieldAccess
 
 /**
  * Read-only field access (except for super-admin).
@@ -79,4 +74,4 @@ export const tenantFieldAccess: FieldAccess = ({ req }) => userIsSuperAdmin(req.
  *     }
  *   }
  */
-export const readOnlyExceptSuperAdmin: FieldAccess = ({ req }) => userIsSuperAdmin(req.user)
+export const readOnlyExceptSuperAdmin: FieldAccess = fieldAccess

@@ -139,11 +139,18 @@ fi
 # src/verify/lean/inventory.generated.json by src/publish/zenodo.
 #
 # Independent of the matrix: it reads the kernel record, not the tree.
+#
+# AND IT MUST CARRY THAT RECORD WITH IT. Measured 2026-09-21: the manifest was regenerated from a
+# WORKING-TREE inventory.generated.json that was never staged, so the commit's .zenodo.json claimed
+# "192 theorems across 20 files" while the commit's own inventory said 185 across 19 — the deposit
+# counted a Lean file that commit does not contain. A derived artefact committed without its input
+# is a permanent record of a tree that never existed, which is the exact drift this artefact
+# exists to prevent. Stage the pair or stage neither.
 if [ "$DRY_RUN" = 0 ]; then
   if ./node_modules/.bin/tsx src/publish/zenodo/index.ts >/tmp/erpax-zenodo.log 2>&1; then
-    if ! git diff --quiet -- .zenodo.json; then
-      echo "auto-heal: zenodo manifest drifted — regenerated"
-      git add .zenodo.json 2>/dev/null || true
+    if ! git diff --quiet -- .zenodo.json src/verify/lean/inventory.generated.json; then
+      echo "auto-heal: zenodo manifest drifted — regenerated with its kernel record"
+      git add .zenodo.json src/verify/lean/inventory.generated.json 2>/dev/null || true
       healed+=("zenodo manifest")
     fi
   else
@@ -151,6 +158,31 @@ if [ "$DRY_RUN" = 0 ]; then
     tail -20 /tmp/erpax-zenodo.log || true
   fi
   rm -f /tmp/erpax-zenodo.log
+fi
+
+# ── Artefact 5d: the standards catalogue ─────────────────────────────
+#
+# THE ARTEFACT THAT SUPERSEDED ANOTHER AND INHERITED NO HEAL. Artefact 1 above removed the
+# docs/STANDARDS_INDEX.md heal on the grounds that the catalogue supersedes it — and never added a
+# heal for the catalogue. So the superseding artefact was the only derived file with no cure.
+#
+# It drifted on 2026-09-21 the moment statutory citations were attached to constants, and
+# `standards/emit — verify passes when catalogue.ts is fresh` turned an integration shard RED. The
+# pre-commit hook regenerates the index it no longer needs and not the catalogue it does.
+#
+# src/standards/emit.ts writes catalogue.ts AND the SKILL index, so both are staged together.
+if [ "$DRY_RUN" = 0 ]; then
+  if ./node_modules/.bin/tsx src/standards/emit.ts >/tmp/erpax-catalogue.log 2>&1; then
+    if ! git diff --quiet -- src/standards/catalogue.ts src/standards/SKILL.md; then
+      echo "auto-heal: standards catalogue drifted — regenerated"
+      git add src/standards/catalogue.ts src/standards/SKILL.md 2>/dev/null || true
+      healed+=("standards catalogue")
+    fi
+  else
+    echo "auto-heal: standards catalogue emit FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-catalogue.log || true
+  fi
+  rm -f /tmp/erpax-catalogue.log
 fi
 
 # ── Artefact 3: SKILL.md frontmatter ─────────────────────────────────
@@ -177,13 +209,31 @@ if [ "$DRY_RUN" = 0 ]; then
   if [ "${PAYLOAD_VERIFY_NOCACHE:-0}" != "1" ]; then
     skill_key="$(bash scripts/payload-input-key.sh 2>/dev/null || true)"
   fi
+  # THE HEAL MAY STAGE WHAT IT DIRTIED, NEVER WHAT IT FOUND DIRTY.
+  #
+  # Below used to run `git add 'src/**/SKILL.md'` over every dirty SKILL, so a HAND EDIT open in
+  # the tree was swept into a commit whose message says "pre-push regen". Measured 2026-09-21: a
+  # subsection promoted out of `## Standards` in src/supto — a content change with a reason —
+  # landed inside 52b7eed542 labelled as a regen of four generated artefacts. The change was right
+  # and the RECORD was false, which is the one thing this corpus does not allow: a change carries
+  # its own reason in its own commit.
+  #
+  # The sync writes frontmatter only, so anything already dirty is someone's work. Snapshot the
+  # dirty set first, stage the DIFFERENCE, and name the rest instead of absorbing it — the refusal
+  # shape rules/orphan uses when a sweep would change behaviour.
+  skill_dirty_before="$(git diff --name-only -- 'src/**/SKILL.md' | sort)"
   if [ -n "$skill_key" ] && [ -f "$SKILL_CACHE_DIR/$skill_key" ]; then
     : # settled at this exact tree state — nothing to fold
   elif cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/skill/router/upgrade/index.ts --sync >/tmp/erpax-skill-sync.log 2>&1; then
-    if ! git diff --quiet -- 'src/**/SKILL.md'; then
+    skill_healed="$(comm -13 <(printf '%s\n' "$skill_dirty_before") <(git diff --name-only -- 'src/**/SKILL.md' | sort))"
+    if [ -n "$skill_healed" ]; then
       echo "auto-heal: SKILL.md frontmatter drifted — regenerated"
-      git add 'src/**/SKILL.md' 2>/dev/null || true
+      printf '%s\n' "$skill_healed" | xargs -r git add 2>/dev/null || true
       healed+=("SKILL.md frontmatter")
+    fi
+    if [ -n "$skill_dirty_before" ]; then
+      echo "auto-heal: NOT staging SKILL.md you edited — a regen commit may not carry a reason:"
+      printf '  %s\n' $skill_dirty_before
     fi
     settled_key="$(bash scripts/payload-input-key.sh 2>/dev/null || true)"
     if [ -n "$settled_key" ]; then

@@ -9,7 +9,7 @@
  *
  * The frame ([[entropy]] expands to ∞ inside, [[fold]]s to ∞ outside): the device/[[vitepress]] end
  * is the expansion-∞ — the frontend radiates, and endless entropy is endless tamper-cost; the
- * [[payload]]/db end is the fold-∞ — the dense zero-entropy core, ∞ tamper-cost (the [[torus]]). The
+ * [[payload]]/db end is the fold-∞ — the dense zero-entropy core, with a forge cost the anchor caps (finite; unbounded only as coverage → 1) (the [[torus]]). The
  * round-trip is the travel from ∞ to ∞, on the boundless line of [[pi]] (the infinite address stream).
  *
  *   tsx src/stack/index.ts

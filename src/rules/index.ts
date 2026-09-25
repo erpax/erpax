@@ -19,7 +19,7 @@ import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
 import { durableObjectExportGaps } from '@/cloudflare/binding'
 import { unreachedAtoms } from '@/rules/unreached'
-import { copyCount } from '@/rules/copy'
+import { copiesInTangle, copyCount, policyAddresses, unearnedCopies } from '@/rules/copy'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -30,6 +30,19 @@ import { replaceableStandards } from '@/proof/replaceable'
 import { atomListingGaps } from '@/publish/complete'
 import { claimBalance, totalSlack } from '@/rules/slack'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
+import { unheldVerdicts } from '@/rules/hold'
+import { scanInjection } from '@/rules/inject'
+import { bareImplications } from '@/entropy'
+import { momentShapedUnwired, unrunLaws } from '@/rules/domain'
+import { bareAsks } from '@/rules/ask'
+import { unauthenticatedBypasses } from '@/rules/bypass'
+import { unwiredPackages } from '@/rules/canonical'
+import { plasmaTouches } from '@/rules/confine'
+import { echoes } from '@/rules/echo'
+import { danglingSpecifiers } from '@/rules/hyphen'
+import { invisibleMatter } from '@/rules/invisible'
+import { hollowProofs } from '@/rules/refutable'
+import { unfoldedExports } from '@/rules/unfolded'
 import { opaqueSources, unreadSurfaces } from '@/rules/domain'
 import { driftCount } from '@/gate/parity'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
@@ -306,16 +319,37 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // copy — one body at two addresses ([[rules]]/copy). Content-addressed, so same bytes ⇒ same
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
     // written, which is the argument for a gate over a stated law. Ratchets from 44.
-    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 19 }),
-    // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
-    // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
-    // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.
-    // Skipped where no kernel exists — the ATOM's own assert refuses to pass there, but the registry
-    // must still run on a machine without Lean.
+    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 7 }),
+    // copy-in-tangle — a duplicated body whose two FILES sit in one strongly connected
+    // component ([[rules]]/copy × [[rules]]/cycle, the cross [[conjecture]] ranked second at
+    // 1.11 bits). Worse than either alone: inside a tangle the initialisation order of the two
+    // files is decided by the graph, so the same text runs under conditions neither author
+    // chose. Zero over a NON-EMPTY population — 7 cross-file copies, 13 tangles over 152 files.
+    guardian({ axis: 'copy-in-tangle', violations: copiesInTangle(cwd).length, baseline: 0 }),
+    // unearned-copy — a body duplicated across files where a site's export has ≤1 caller
+    // ([[rules]]/copy × [[rules]]/unfolded). MEASURED, not guessed: conjecture's prose ranking put
+    // this pair nowhere near the top while crossIntersections showed 11 shared files, and its own
+    // top pick (concentration × copy) measured exactly 0. Ratchets from 8.
+    guardian({
+      axis: 'unearned-copy',
+      violations: (() => {
+        const r = unfoldedExports(cwd)
+        return unearnedCopies(new Set([...r.dead, ...r.single].map((e) => e.file)), cwd).length
+      })(),
+      baseline: 4,
+    }),
+    // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carried
+    // `sorry` or did not compile, under a directory named `verify` that nothing ever ran.
+    // AT ZERO: the last two were never rejected proofs at all — the kernel was run with no
+    // LEAN_PATH, so `import Arrival` failed to resolve although Arrival.lean sat beside it, and a
+    // HARNESS failure was reported as a rejection. Both check clean once the imports compile, which
+    // is rules/command's law read the other way: a check that cannot run must not be mistaken for
+    // one that answered, in either direction. Skipped where no kernel exists — the ATOM's own
+    // assert refuses to pass there, but the registry must still run on a machine without Lean.
     guardian({
       axis: 'proof-accepted',
       violations: kernelPath() === null ? 0 : unacceptedProofs(cwd).length,
-      baseline: 1,
+      baseline: 0,
     }),
     // proof-reflexive — a theorem whose two sides are the SAME TEXT ([[proof]]/accepted). This
     // corpus wrote `chain rows 0 = chain rows 0` hours after gating that exact shape in TypeScript
@@ -355,14 +389,58 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // in @/merge and order-free in @/fusion, so an importer picking the wrong module gets a
     // different root in silence. Ceiling 1, a rename away from 0.
     guardian({ axis: 'root-collision', violations: rootCollisions(cwd).length, baseline: 1 }),
-    // standards-assumed — a cited standard NOTHING discharges ([[proof]]/replaceable). 219 atoms
-    // cite 265 standards and 22 are gated; each remaining line is a theorem not yet written.
-    // Counts the REPLACEABLE ones only: citing a statute is not a regression.
-    guardian({ axis: 'standards-assumed', violations: replaceableStandards(cwd).length, baseline: 241 }),
+    // standards-assumed — a cited OBLIGATION nothing discharges ([[proof]]/replaceable). Each line
+    // is a theorem not yet written. Citing a statute is not a regression, and neither is citing a
+    // paper: the queue held 90 REFERENCES — Grassé, Kolmogorov, Noether, Brundtland — which no gate
+    // can ever discharge, and counting them pushed toward citing less literature rather than gating
+    // more law. 250 -> 164 is that correction plus four phantoms from a SKILL subsection the
+    // section reader swallowed; the ceiling falls with it, in the commit that earns it.
+    guardian({ axis: 'standards-assumed', violations: replaceableStandards(cwd).length, baseline: 164 }),
     // alt — WCAG 2.2 §1.1.1, the first criterion discharged of the largest assumed standard
     // ([[rules]]/alt). An empty alt declares an image DECORATIVE, so `alt = fromCms || ''` turns a
     // blank field into a silent claim that the image means nothing. Ratchets from 10.
     guardian({ axis: 'alt', violations: unnamedNonText(cwd).length + emptyNameFallbacks(cwd).length, baseline: 10 }),
+    // hold — EU 2015/849 Art. 33(1): a file that reads the suspicion verdict must name the hold.
+    // Computing a suspicion and executing anyway is the failure the article names, and it is the
+    // reason EU-2015/849 stopped being an ungated mandatory standard — a wall under rules/, never
+    // a banner in the tier map ([[rules]]/hold). Zero is a theorem over a non-empty population.
+    guardian({ axis: 'hold', violations: unheldVerdicts(cwd).length, baseline: 0 }),
+    // inject — a poisoned agent-facing surface ([[rules]]/inject). The law existed and nothing
+    // ran it; it now walks 7,214 files, the generated faces PLUS the entry files an agent loads
+    // first. Zero is a theorem — no hidden character is ever legitimate in prose an agent loads.
+    guardian({ axis: 'inject', violations: scanInjection(cwd).length, baseline: 0 }),
+    // unrun — a law with code that nothing EXECUTES ([[rules]]/domain): the limit case of the
+    // domain axis, silent on every surface at once. Import closure from the four executing
+    // roots. Ratchets down; the horizon is 0, because no law may be unable to fire.
+    guardian({ axis: 'unrun', violations: unrunLaws(cwd).length, baseline: 0 }),
+    // policy-address — an access policy defined at two addresses ([[rules]]/copy § access policies).
+    // Exempt from copy's 40-node floor, which is precisely why it could not see four private
+    // `neverDelete`s and a diverged `adminOnly`. Zero is a theorem: a rule a reviewer must trust
+    // may not be a coin flip between two bodies.
+    guardian({ axis: 'policy-address', violations: policyAddresses(cwd).length, baseline: 0 }),
+    // bare-implication — a sentence asserting 'zero entropy ⇒ infinite cost', which src/law
+    // computes as FALSE in both directions. The predicate existed and its domain was 3 files
+    // while 28 carried the claim ([[rules]]/domain, inside the gate written for it). Zero is a
+    // theorem: no surface may assert an implication the corpus refutes.
+    guardian({ axis: 'bare-implication', violations: bareImplications(cwd).length, baseline: 0 }),
+    // moment-unwired — a law shaped for a DIFF or a lint REPORT, fired at no moment. Not the
+    // same defect: manifest judges a scalpel changeset and orphan reads an ESLint report, so
+    // neither has a tree form and counting them as laws that cannot fire was this axis
+    // over-reaching its own population. Real debt, named with its cure. Ratchets from 2.
+    guardian({ axis: 'moment-unwired', violations: momentShapedUnwired(cwd).length, baseline: 2 }),
+    // The nine laws that were unrun, now wired. Each stated a law, carried a ceiling and had
+    // code nothing called; measured cost is ~11s for all nine, against a push already in the
+    // hundreds. Baselines are the LIVE counts, so each is a down-only ratchet from here — and
+    // three of them already stand well below the figure their own SKILL reports.
+    guardian({ axis: 'bypass', violations: unauthenticatedBypasses(cwd).length, baseline: 0 }),
+    guardian({ axis: 'canonical', violations: unwiredPackages(cwd).length, baseline: 0 }),
+    guardian({ axis: 'confine', violations: plasmaTouches(cwd).length, baseline: 0 }),
+    guardian({ axis: 'invisible', violations: invisibleMatter(cwd).length, baseline: 0 }),
+    guardian({ axis: 'refutable', violations: hollowProofs(cwd).length, baseline: 0 }),
+    guardian({ axis: 'dangling-specifier', violations: danglingSpecifiers(cwd).length, baseline: 0 }),
+    guardian({ axis: 'echo', violations: echoes(cwd).length, baseline: 152 }),
+    guardian({ axis: 'ask', violations: bareAsks(cwd).bare.length, baseline: 786 }),
+    guardian({ axis: 'unfolded', violations: (() => { const r = unfoldedExports(cwd); return r.dead.length + r.single.length })(), baseline: 814 }),
     // atom-completeness — three independent listings of what atoms exist must agree on MEMBERS,
     // not merely on totals ([[publish]]/complete). The matrix held 3,466 against a corpus of
     // 3,474 this session and nothing said so. Zero is a theorem.

@@ -174,3 +174,6 @@ export function localeRecord(key: string): Record<string, string> {
 }
 
 export default nestedMessages
+
+// The BCP 47 gate lives in [[i18n]]/tag and is NOT re-exported here: it scans the corpus through
+// node:fs, and this barrel is in every client bundle.

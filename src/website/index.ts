@@ -243,7 +243,7 @@ export {
   checkMarketingTransparency,
   ERPAX_MARKETING_STRATEGY,
   ERPAX_DEFAULT_VOICE,
-} from './marketing-skills'
+} from './marketing'
 export type {
   MarketingChannel,
   BrandVoice,
@@ -253,6 +253,6 @@ export type {
   BrandVoiceFinding,
   SeoAudit,
   EmailDrip,
-} from './marketing-skills'
-export { SHADCN_SURFACE_MAP, shadcnSurfaceFor, allRequiredShadcnComponents } from './shadcn-components'
-export type { SiteSurface, ShadcnComponentSet } from './shadcn-components'
+} from './marketing'
+export { SHADCN_SURFACE_MAP, shadcnSurfaceFor, allRequiredShadcnComponents } from './shadcn'
+export type { SiteSurface, ShadcnComponentSet } from './shadcn'

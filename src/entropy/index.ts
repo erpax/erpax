@@ -1,3 +1,6 @@
+import { readFileSync, readdirSync } from 'node:fs'
+import { join, relative } from 'node:path'
+import { commentsOf } from '@/syntax'
 import { exactMax, exactRound } from '@/algebra'
 /**
  * entropy -- the FUEL, the disorder the whole ledger balances, COMPUTED live.
@@ -241,4 +244,107 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       (coverage(b) >= 1 ? '∞' : 'finite — the slack') +
       ')',
   )
+}
+
+/**
+ * The bare implication, as ONE definition — see ./SKILL.md § the bare-implication gate.
+ *
+ * An entropy/reciprocity premise within reach of an `infinite … (cost|mass|work)` consequent.
+ */
+const BARE_IMPLICATION =
+  /(zero[\s-]*entropy|reciprocity\s*=\s*1|entropy\s*(\(\))?\s*(===?|⇒|=>|→|implies)).{0,80}?(infinit|∞).{0,40}?(cost|mass|work)/i
+
+/**
+ * Tokens marking the sentence as qualified or negated — the honest framing.
+ *
+ * `\bfinite\b` is word-bounded so it does NOT match inside "in·finite"; without that, every
+ * "infinite cost" sentence would look falsely qualified and the gate could never fire.
+ */
+const IMPLICATION_QUALIFIER =
+  /\bnot\b|does not|cannot|distinct|do not conflate|coverage\s*[=<>]?\s*1|\bfinite\b|counter-?example|only at coverage|≠|is NOT|by itself|anchor/i
+
+/**
+ * The slogan inside quotes, backticks or emphasis is being CITED, not asserted.
+ *
+ * The same refusal [[rules]]/forge and [[rules]]/prose make: a comment quoting a forgery to explain
+ * it is not a forgery, and a marker in a string literal is data. Three sentences in this corpus
+ * quote the slogan in order to refute or formalise it, and flagging those would make the gate
+ * report its own refutation as the defect.
+ */
+const CITES_THE_SLOGAN =
+  /["“”`*]\s*zero[\s-]*entropy[^"“”`*]{0,60}(infinit|∞)[^"“”`*]{0,30}(cost|mass|work)\s*["“”`*]/i
+
+/** A sentence ASSERTING the implication — no local qualifier, and not merely quoting it. */
+export const statesBareImplication = (raw: string): boolean => {
+  const sentence = unlinked(raw)
+  return BARE_IMPLICATION.test(sentence) && !IMPLICATION_QUALIFIER.test(sentence) && !CITES_THE_SLOGAN.test(sentence)
+}
+
+/** Sentence-ish split, so a qualifier must be LOCAL to the implication. */
+const sentencesOf = (text: string): string[] => text.split(/(?<=[.;])\s+|\n+/)
+
+/**
+ * Wikilink brackets removed, so the predicate sees the WORDS.
+ *
+ * Without this the gate reported **0** while `diamond/SKILL.md` asserted
+ * `zero [[entropy]] ⇒ infinite tamper-[[cost]]` in its Law line: `zero[\s-]*entropy` cannot match
+ * `zero [[entropy]]`. [[rules]]/probe — a filter that selects by name cannot see what it does not
+ * name, and what it misses is systematically the thing nobody thought to name.
+ */
+const unlinked = (text: string): string => text.replace(/\[\[([^\]|]+)(\|[^\]]*)?\]\]/g, '$1')
+
+export interface BareClaim {
+  readonly file: string
+  readonly sentence: string
+}
+
+/**
+ * Every hand-maintained sentence in the corpus asserting the bare implication.
+ *
+ * The predicate above was pinned to THREE files (`entropy/SKILL.md`, `entropy/index.ts`,
+ * `law/SKILL.md`) while 24 carried the claim — [[rules]]/domain inside the gate written for it.
+ * Generated faces are excluded because they restate their source; heal the source and regenerate.
+ */
+/**
+ * The three files that DEFINE or REGISTER this check, DECLARED so the exemption is visible.
+ *
+ * The predicate's own fixtures assert that it fires, and the gate registry's comment names the
+ * axis — both are the corpus describing its own defence, which [[rules]]/inject warns is the
+ * failure mode of a broad detector. Narrow on purpose: every other file under `src` is judged,
+ * including `law/` and `entropy/SKILL.md`.
+ */
+const DEFINES_THE_LAW: readonly string[] = [
+  'src/entropy/index.ts',
+  'src/entropy/test.ts',
+  'src/rules/index.ts',
+]
+
+export function bareImplications(cwd: string = process.cwd()): BareClaim[] {
+  const out: BareClaim[] = []
+  const walk = (d: string): void => {
+    for (const e of readdirSync(d, { withFileTypes: true })) {
+      if (e.name.startsWith('.') || e.name === 'node_modules') continue
+      const p = join(d, e.name)
+      if (e.isDirectory()) {
+        walk(p)
+        continue
+      }
+      if (!/\.(md|tsx?)$/.test(e.name)) continue
+      if (/^(LLM|README)\.md$/.test(e.name) || /\.generated\.tsx?$|^(catalogue|translations|payload-types)\./.test(e.name)) continue
+      const rel = relative(cwd, p)
+      if (DEFINES_THE_LAW.includes(rel)) continue
+      // In a `.md` the whole file is prose. In code, prose means COMMENTS: a claim inside a
+      // STRING LITERAL is data — a test fixture handing the predicate a false implication in order
+      // to prove the gate fires is not the corpus asserting it. That false positive fired on
+      // `website/marketing/test.ts`, which is the consumer proving this very law. Parsed, never
+      // matched — the same refusal [[rules]]/forge and [[rules]]/bypass make.
+      const text = readFileSync(p, 'utf8')
+      const prose = e.name.endsWith('.md') ? text : commentsOf(p, text).join('\n')
+      for (const s of sentencesOf(prose)) {
+        if (statesBareImplication(s)) out.push({ file: rel, sentence: s.trim().slice(0, 160) })
+      }
+    }
+  }
+  walk(join(cwd, 'src'))
+  return out
 }

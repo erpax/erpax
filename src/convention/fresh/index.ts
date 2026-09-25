@@ -118,7 +118,7 @@ export const staleRefs = (): StaleRef[] => freshTally().stale
 /**
  * Live freshness coverage in [0,1]: resolving / total. Pure math — `total > 0` by architecture
  * (the corpus carries thousands of `@/` imports), so no fallback is needed or written. coverage = 1
- * ⟺ no stale refs (the import graph is fully grounded; zero stale-wire entropy ⇒ infinite tamper-cost).
+ * ⟺ no stale refs (the import graph is fully grounded; stale-wire coverage = 1 — one leg of the coverage that prices the forge, anchor-capped).
  */
 export function coverage(): number {
   const { resolving, total } = freshTally()

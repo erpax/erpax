@@ -1,33 +1,5 @@
 /**
- * Tenant guards for MCP tool handlers — Slice BBBBBBBBBB-cut3 (2026-05-11).
- *
- * Slice BBBBBBBBBB-cut1 wired six orphaned namespaces (kv / security /
- * share / format / governance / error + integrity-extensions) into the
- * live MCP surface. Those handlers accept a caller-asserted
- * `tenantId: z.string()` parameter without verifying it matches the
- * authenticated request, opening cross-tenant exploits:
- *
- *   - `erpax.share.grant`   — self-grant admin role on any tenant's targets
- *   - `erpax.share.revoke`  — DoS legitimate shares across tenant boundary
- *   - `erpax.audit.writeEvent` — forge chain-linked audit events into another tenant's trail (SOX §404 forgery)
- *   - `erpax.format.encode` — forge structured uuids with TAMPER_PROOF / SEALED capabilities never earned
- *   - `erpax.governance.*`  — declare self-governance for foreign entities
- *   - `erpax.error.*`       — manufacture ErrorUuids that federation peers trust by uuid equality
- *
- * This module provides two guards:
- *
- *   - `assertTenantMatch(args.tenantId, req)` — caller's authenticated
- *     tenant must equal the claimed tenantId. Super-admin bypasses.
- *     Unauthenticated context (no req.user — boot, cron, in-process
- *     agent runtime) is treated as trusted internal context.
- *
- *   - `assertAdminOnTenant(args.tenantId, req)` — additionally requires
- *     an admin role. Used for state-mutating tools.
- *
- * Handlers must call the appropriate guard at the TOP of the body,
- * before any service call. Failure throws — the in-process client
- * surfaces this as a tool error; the over-the-wire MCP layer
- * converts it into an MCP error response.
+ * Tenant guards for MCP tool handlers — Slice BBBBBBBBBB-cut3 (2026-05-11). See SKILL.md.
  *
  * @standard ISO 27001 A.5.10 access-control-policy
  * @standard ISO 27002 §5.4 segregation-of-duties (per-tenant boundary)
@@ -37,14 +9,7 @@
 import type { PayloadRequest } from 'payload'
 import { actorFromRequest, mcpAdminMutateVerdict, mcpTenantVerdict } from '@/access'
 
-/**
- * Assert that the caller's authenticated tenant equals the claimed
- * tenantId. Super-admin bypasses. Internal context (no req.user) is
- * trusted and bypasses.
- *
- * Throws on mismatch — message includes both tenants for audit logs
- * but does NOT include any caller-supplied content (no log injection).
- */
+/** Assert that the caller's authenticated tenant equals the claimed tenantId. Super-admin bypasses. See SKILL.md. */
 export function assertTenantMatch(claimedTenantId: string, req: PayloadRequest): void {
   const v = mcpTenantVerdict(actorFromRequest(req), claimedTenantId)
   if (!v.allowed) {
@@ -52,15 +17,7 @@ export function assertTenantMatch(claimedTenantId: string, req: PayloadRequest):
   }
 }
 
-/**
- * Tenant guard PLUS an admin-role requirement. Used for state-mutating
- * tools that persist rows (share.grant, share.revoke, audit.writeEvent).
- *
- * Bypasses on internal context (no req.user). Super-admin always
- * passes. Otherwise the caller must hold one of: admin, tenant-admin,
- * or auditor (for audit.writeEvent specifically — auditors write
- * audit events as part of their declared surface).
- */
+/** Tenant guard PLUS an admin-role requirement. Used for state-mutating tools that persist rows (share.grant, share.revoke, audit.writeEvent). See SKILL.md. */
 export function assertAdminOnTenant(claimedTenantId: string, req: PayloadRequest): void {
   const v = mcpAdminMutateVerdict(actorFromRequest(req), claimedTenantId)
   if (!v.allowed) {
@@ -74,22 +31,7 @@ function sanitize(s: string): string {
 }
 
 /**
- * Slice IIIIIIIIII (2026-05-11) — wrap an MCP tool array with the
- * tenant + admin guards. Extracted from `buildErpaxMcpTools` so the
- * wrapping policy is unit-testable in isolation.
- *
- * Behaviour:
- *
- *   - Tools whose `parameters` object lacks a `tenantId` key are
- *     returned unchanged.
- *   - Tools whose `name` is in `mutatingTools` get `assertAdminOnTenant`.
- *   - All other tenantId-bearing tools get `assertTenantMatch`.
- *   - Optional `tenantId` (empty string / missing) skips the guard so
- *     each tool's own opt-in policy applies.
- *
- * The wrapped tool preserves `name`, `description`, and `parameters`
- * verbatim — every readiness / standardization invariant sees an
- * unchanged surface.
+ * Slice IIIIIIIIII (2026-05-11) — wrap an MCP tool array with the tenant + admin guards. See SKILL.md.
  *
  * @standard ISO 27001 A.5.10 access-control-policy
  */

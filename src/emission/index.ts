@@ -27,6 +27,8 @@
  * A representative subset is included; the three mandatory anchor values are
  * co2=1, ch4=28, n2o=265 — asserted by the test suite.
  */
+import { solventBalance, type SolventInputs } from '@/solvent'
+
 export const GWP: Readonly<Record<string, number>> = Object.freeze({
   co2: 1,
   ch4: 28,
@@ -69,6 +71,22 @@ export const totalCo2e = (emissions: { gas: string; mass: number }[]): number =>
  */
 export const emissionFromActivity = (activity: number, factor: number): number =>
   activity * factor
+
+/**
+ * Fugitive solvent IS the emission — the activity is the balance's own residual.
+ *
+ * A solvent management plan (EU 2010/75 Annex VII) reports what it could not account
+ * for: purchased minus recovered minus retained. That residual left as vapour, so it
+ * is an emission whose activity data nobody had to meter — the mass balance produced
+ * it. The factor converts the escaped solvent to whatever this inventory counts in.
+ *
+ * A balance that does not conserve emits **nothing here**, rather than a negative
+ * figure that would credit the inventory for an arithmetic error ([[solvent]]).
+ */
+export const fugitiveSolventEmission = (inputs: SolventInputs, factor = 1): number => {
+  const balance = solventBalance(inputs)
+  return balance.conserves ? emissionFromActivity(balance.fugitive, factor) : 0
+}
 
 /**
  * Carbon intensity — CO₂e emitted per unit of output produced.

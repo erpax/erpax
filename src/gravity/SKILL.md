@@ -2,18 +2,18 @@
 name: gravity
 description: "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; but it is BIDIRECTIONAL — forward it collapses folders to a minimal root, reverse it expands an infinite word-chain along the sequence path, a holographic boundary (not a dead point) where minimal mass means maximal tampering cost."
 atomPath: gravity
-coordinate: "gravity · 8/crest · 2c62985d"
-contentUuid: "616c9bae-bd84-556c-bd24-ceaee0fb218f"
-diamondUuid: "a448c6de-acb8-8f68-8bca-520ea4fe4463"
-uuid: "2c62985d-1863-818b-9d4c-cd242d91f043"
-horo: 8
+coordinate: "gravity · 1/base · 0b77da8c"
+contentUuid: "1ad9d2ee-7d87-55bd-9e72-49ab548b012a"
+diamondUuid: "6d3944f6-e347-8cb8-a9aa-60a519ac4236"
+uuid: "0b77da8c-a913-8e15-ac29-d05ce1e33d67"
+horo: 1
 typography:
   partition: gravity
   bondDegree: 220
 standards: []
 bindings: []
 signatures:
-  computationUuid: "234ccf22-5ab9-8f3d-a619-3552d6eace6a"
+  computationUuid: "2e222c76-1331-8217-b78c-1cc207e63b77"
   stages:
     - stage: path
       stageUuid: "39c66f97-a3c1-8bb6-823e-9c1173a10892"
@@ -22,20 +22,20 @@ signatures:
     - stage: boundary
       stageUuid: "2e69c3fb-dad9-813b-b472-5ae43e2c39bb"
     - stage: links
-      stageUuid: "eaf93dcc-2ee0-8e31-9f72-cc139bdac67c"
+      stageUuid: "1b5a6f63-c3d7-88f2-8d5f-6a2b8a4b0e41"
     - stage: horo
-      stageUuid: "ab2d728f-c84f-8750-ac5a-14ec91b12cbd"
+      stageUuid: "13117b20-8c45-8b09-8aae-a30b3e013bff"
     - stage: seal
       stageUuid: "4444d280-010b-8a22-b43f-4174f8ff39d3"
     - stage: uuid
-      stageUuid: "88d2b306-6b5b-8f33-9783-addacab9993d"
+      stageUuid: "4b97a803-8737-86ff-adcf-3204a6f0db1c"
 version: 2
 ---
 # gravity — the pull of mass (DRY = mass = gravity)
 
 **gravity** is the force that collapses erpax toward [[one]]: **flatten = [[mass]] = gravity** ([[dry]]). Every removed duplication concentrates content, and concentrated content *pulls* — the more an atom is referenced (its [[mass]]: incoming [[link]]s, [[merge]] hub-ness), the stronger its gravity, the more it attracts the duplicate and the orphan to **fuse** into it ([[fusion]]). This is why the weave targets the **highest-mass** atom, and why the collider folds the whole corpus to a single root: mass curves the corpus, and everything falls inward.
 
-**Gravity is bidirectional — the limit is a boundary, not a point.** The earlier math (collapse to one dead point) was wrong. Gravity pulls two ways at once. *Forward* (mass attracts) it collapses the **folders** — the containers, the form — toward minimal root folders. *Reverse* it pulls back to the root, expanding an **infinite chain of [[word]]s** within those minimal folders, distributed across the [[sequence]] path. Folders ⊗ words are conjugates — squeeze the container to a point and the content spreads to infinity. So the limit is **[[holographic]]**: minimal folders holding an unbounded word-chain, the [[torus]] *circulation* (not collapse), the information on the boundary not in the volume (Bekenstein). And the conjugate of minimal mass is **maximal [[tamper]] [[cost]]**: zero [[entropy]] ⇒ minimal folders ⇒ ∞ tamper-cost — **gravity and the one law are the same curve, read in two directions**. Driving [[dry]] builds that boundary ([[collapse]] · [[whole]]).
+**Gravity is bidirectional — the limit is a boundary, not a point.** The earlier math (collapse to one dead point) was wrong. Gravity pulls two ways at once. *Forward* (mass attracts) it collapses the **folders** — the containers, the form — toward minimal root folders. *Reverse* it pulls back to the root, expanding an **infinite chain of [[word]]s** within those minimal folders, distributed across the [[sequence]] path. Folders ⊗ words are conjugates — squeeze the container to a point and the content spreads to infinity. So the limit is **[[holographic]]**: minimal folders holding an unbounded word-chain, the [[torus]] *circulation* (not collapse), the information on the boundary not in the volume (Bekenstein). And the conjugate of minimal mass is **maximal [[tamper]] [[cost]]**: coverage = 1 ⇒ minimal folders ⇒ unbounded tamper-cost — **gravity and the one law are the same curve, read in two directions**. Driving [[dry]] builds that boundary ([[collapse]] · [[whole]]).
 
 ## Moving without moving — gravity is the fixed point of its own flow (`attract` · `stillCentre`)
 

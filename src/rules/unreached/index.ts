@@ -299,3 +299,52 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 }
 
 /** @index-cross.foldback child=rules/unreached parent=rules — this cross folds back into its parent. */
+
+/** One unreached atom and how many others wiring it would reach. */
+export interface Leverage {
+  readonly atom: string
+  /** The atom itself plus every unreached atom its barrel pulls in, transitively. */
+  readonly closes: number
+}
+
+/**
+ * What wiring ONE unreached atom would close. See SKILL.md.
+ *
+ * The obvious hypothesis is a chain — reach a root and the rest follow. It is refuted:
+ * 63 of 69 close only themselves.
+ */
+export function atomLeverage(cwd: string = process.cwd()): Leverage[] {
+  const atoms = unreachedAtoms(cwd).map((a) => a.atomPath)
+  const set = new Set(atoms)
+  const barrelOf = (a: string): string => {
+    const ts = join(cwd, 'src', a, 'index.ts')
+    return existsSync(ts) ? ts : join(cwd, 'src', a, 'index.tsx')
+  }
+  const edges = new Map<string, Set<string>>()
+  for (const a of atoms) {
+    const out = new Set<string>()
+    const f = barrelOf(a)
+    if (existsSync(f)) {
+      for (const dep of importsOf(f, cwd)) {
+        const m = /^src\/(.+)\/index\.tsx?$/.exec(dep.slice(cwd.length + 1))
+        const child = m?.[1]
+        if (child !== undefined && child !== a && set.has(child)) out.add(child)
+      }
+    }
+    edges.set(a, out)
+  }
+  const closes = (a: string): number => {
+    const seen = new Set<string>()
+    const stack = [a]
+    while (stack.length > 0) {
+      const x = stack.pop() as string
+      if (seen.has(x)) continue
+      seen.add(x)
+      for (const d of edges.get(x) ?? []) if (!seen.has(d)) stack.push(d)
+    }
+    return seen.size
+  }
+  return atoms
+    .map((atom) => ({ atom, closes: closes(atom) }))
+    .sort((x, y) => y.closes - x.closes || x.atom.localeCompare(y.atom))
+}

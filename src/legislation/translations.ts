@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society makes its own law — enacting an ordinary statute by the polity's vote, repealing one, or reading the legal code; the rule of law as a difference of thresholds, the foundation entrenched against any majority.",
-    "uuid": "6ce45b11-f97a-8f8b-b52f-5173427a8f60",
+    "uuid": "a92b73a1-78d0-8112-a9e1-516b7699b98d",
     "words": [
       "use",
       "when",

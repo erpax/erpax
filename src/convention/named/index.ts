@@ -30,7 +30,7 @@
  * Pure math, no default: total > 0 by architecture (a non-empty tree of SKILL.md by construction)
  * and matching is a subset count (0 ≤ matching ≤ total), so the ratio is in [0,1] with no clamp and
  * no fallback. coverage → 1 ⟺ every atom's name is its path ⟺ aura-gap-0 on the naming axis ⟺
- * zero naming entropy ⇒ infinite tamper-[[cost]]. The only thing that pulls coverage below 1 is a
+ * naming coverage = 1 — one leg of the coverage that prices the forge, anchor-capped. The only thing that pulls coverage below 1 is a
  * name that is not its leaf — precisely what this convention forbids.
  *
  *   tsx src/convention/named/index.ts    # prints total / matching / coverage from the live tree
@@ -84,7 +84,7 @@ export function nameTally(): NameTally {
 /**
  * Live name-is-the-path coverage over the real tree: matching / total, in [0,1] by construction
  * (0 ≤ matching ≤ total, total > 0 by architecture). 1 ⟺ every atom's frontmatter name equals its
- * folder leaf ⟺ the name IS the path, zero naming entropy ⇒ infinite tamper-cost.
+ * folder leaf ⟺ the name IS the path, naming coverage = 1 — one leg of the coverage that prices the forge, anchor-capped.
  */
 export function coverage(): number {
   const { matching, total } = nameTally()

@@ -1,7 +1,7 @@
-import type { Access, CollectionConfig } from 'payload'
+import type { CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
-import { adminOrAccountant, scopedAccess } from '@/auth'
+import { adminOrAccountant, scopedAccess, neverDelete } from '@/auth'
 import { statusField, auditFields } from '@/field'
 
 /**
@@ -17,8 +17,6 @@ import { statusField, auditFields } from '@/field'
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see src/sale/submit-audit-file.ts · src/jobs/audit/index.ts
  */
-const neverDelete: Access = () => false
-
 const AuditSubmissions: CollectionConfig = {
   slug: 'audit-submissions',
   labels: { singular: 'Audit Submission', plural: 'Audit Submissions' },

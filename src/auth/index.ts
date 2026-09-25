@@ -111,6 +111,15 @@ export const adminOrAccountant: Access = async ({ req }) => {
 }
 
 /**
+ * Never delete — the append-only policy, one address for four statutory collections.
+ *
+ * A fiscal sale, a cash receipt, a submitted audit file and a sealed matter are corrected by a
+ * reversing entry (сторно), never by erasure. It was defined privately in each of those four
+ * collections until 2026-09-25; four copies of one policy is four places a future edit can miss.
+ */
+export const neverDelete: Access = () => false
+
+/**
  * Tenant-scoped admin access (admins can manage their own tenant's data)
  * PATTERN: Used for collection management (Addresses, Items, Invoices)
  */

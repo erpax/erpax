@@ -5,6 +5,9 @@ import {
   conserves,
   coverage,
   makespan,
+  lptBound,
+  optimalMakespanFloor,
+  grahamVerdict,
   redistribute,
   tolerableLosses,
   type Agent,
@@ -108,5 +111,69 @@ describe('swarm — redundancy is COMPUTED, never read off a headcount', () => {
     const exact: Agent[] = [{ id: 'a', capacity: 80 }, { id: 'b', capacity: 80 }]
     expect(coverage(assign(exact, shards))).toBe(1)
     expect(tolerableLosses(exact, shards)).toBe(0)
+  })
+})
+
+/**
+ * The cited standard, checked instead of only cited.
+ *
+ * `@standard Graham (1969)` sat in the docstring, the SKILL and the README with no
+ * arithmetic behind it — an axiom proof/replaceable counts as undischarged. The bound
+ * is one exact rational, so there is no reason for it to stay prose.
+ */
+describe('swarm — Graham (1969), computed', () => {
+  it('the bound is the exact rational (4m − 1)/3m', () => {
+    expect(lptBound(1)).toBe(1) // LPT on one machine is optimal
+    expect(lptBound(2)).toBe(7 / 6)
+    expect(lptBound(3)).toBe(11 / 9)
+    expect(lptBound(4)).toBe(15 / 12)
+    // rises toward 4/3 and never reaches it
+    expect(lptBound(1000)).toBeLessThan(4 / 3)
+    expect(lptBound(1000)).toBeGreaterThan(lptBound(999))
+    expect(lptBound(0)).toBe(1) // no machines — nothing to loosen
+  })
+
+  it('the floor is the tighter of the heaviest task and the level split', () => {
+    // level split dominates: 4 tasks of 10 over 2 machines
+    expect(optimalMakespanFloor([1, 2, 3, 4].map((i) => ({ id: `t${i}`, weight: 10 })), 2)).toBe(20)
+    // one heavy task dominates: it runs whole, somewhere
+    expect(
+      optimalMakespanFloor([{ id: 'big', weight: 50 }, { id: 's', weight: 2 }], 4),
+    ).toBe(50)
+    expect(optimalMakespanFloor([], 3)).toBe(0)
+  })
+
+  it('holds on identical machines with every task placed', () => {
+    const agents = [1, 2, 3].map((i) => ({ id: `a${i}`, capacity: 100 }))
+    const tasks = [9, 8, 7, 6, 5, 4, 3, 2, 1].map((w) => ({ id: `t${w}`, weight: w }))
+    const v = grahamVerdict(agents, tasks)
+    expect(v.applies).toBe(true)
+    expect(v.machines).toBe(3)
+    expect(v.floor).toBe(15) // 45 ÷ 3, level
+    expect(v.holds).toBe(true)
+    expect(v.ratio).toBeLessThanOrEqual(v.bound)
+  })
+
+  it('refuses to answer where the theorem does not apply — never holds:false by omission', () => {
+    // heterogeneous capacities: Graham is about identical machines
+    const mixed = grahamVerdict(
+      [{ id: 'big', capacity: 200 }, { id: 'small', capacity: 20 }],
+      [{ id: 't', weight: 10 }],
+    )
+    expect(mixed.applies).toBe(false)
+    expect(mixed.holds).toBe(null)
+    expect(mixed.reason).toContain('identical machines')
+
+    // a refused task: the bound is about a schedule that places everything
+    const refused = grahamVerdict(
+      [{ id: 'a', capacity: 5 }, { id: 'b', capacity: 5 }],
+      [{ id: 'huge', weight: 50 }],
+    )
+    expect(refused.applies).toBe(false)
+    expect(refused.holds).toBe(null)
+    expect(refused.reason).toContain('refused')
+
+    // no agents at all
+    expect(grahamVerdict([], [{ id: 't', weight: 1 }]).holds).toBe(null)
   })
 })

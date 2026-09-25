@@ -18,6 +18,7 @@
  */
 import type { SkillNode } from '../resolve'
 import { norm } from '@/corpus'
+import { leafOf } from '../subgraph'
 
 export interface Rating {
   /** the rated atom (normalized leaf-word). */
@@ -30,10 +31,6 @@ export interface Rating {
   readonly tamperCost: number
 }
 
-const leafOf = (ref: string): string => {
-  const segs = ref.replace(/\/SKILL$/i, '').split('/').filter(Boolean)
-  return segs.length ? segs[segs.length - 1] : ''
-}
 
 /**
  * Map every atom → the SET of distinct atoms that attest to it (link to it via

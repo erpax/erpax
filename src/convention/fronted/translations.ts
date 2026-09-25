@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fronted",
-    "uuid": "74ac0955-f493-89dd-ad09-1acedfaeba6d",
+    "uuid": "dbac928f-7881-8b25-bd26-cdd099b79a63",
     "words": [
       "fronted"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether every atom has a front door — the computed convention that each SKILL.md carries valid name and description frontmatter, measured live as coverage = fronted / total over the real corpus tree.",
-    "uuid": "23d014a3-a51d-8bb0-b0a4-1cd41100e476",
+    "uuid": "8a23cb3c-77d4-85c9-8c0f-c0a11bf4df94",
     "words": [
       "use",
       "when",

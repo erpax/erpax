@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "folded",
-    "uuid": "aaecbce1-a140-8c91-b658-8288b7259383",
+    "uuid": "a31fd9e4-cf9f-81a6-95e6-76a03891c66d",
     "words": [
       "folded"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether every atom folds into the matrix — the computed convention that each SKILL.md atom is a node in the collided uuid-matrix, measured live as coverage = folded / total over the real tree.",
-    "uuid": "9d3cb4c1-98ee-8021-8bc9-a3ed7966a7f3",
+    "uuid": "a36935c2-62a1-8c2c-9e9c-6cd99d7c6784",
     "words": [
       "use",
       "when",

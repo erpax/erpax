@@ -1,19 +1,19 @@
 ---
 name: skills
-description: "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid so the whole carries zero entropy and infinite tamper-cost. Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library."
+description: "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid, which raises the coverage that prices the forge≫verify asymmetry (computed in src/law; not infinity from zero entropy). Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library."
 atomPath: skills
-coordinate: "skills · 1/base · e1f6b3df"
-contentUuid: "bcf0a271-c46d-5a3d-9467-eeb87b90ced2"
-diamondUuid: "36901806-45df-8290-b669-1d206802e575"
-uuid: "e1f6b3df-948a-8386-8284-6f85d5b374c4"
-horo: 1
+coordinate: "skills · 5/round · 4189d146"
+contentUuid: "b3e9a950-f30b-5178-a0e9-2b897a194fcc"
+diamondUuid: "9519897f-44d1-81f1-ac89-8b84a832624f"
+uuid: "4189d146-8eb0-8971-ab39-e319a0db53a2"
+horo: 5
 typography:
   partition: skills
-  bondDegree: 156
+  bondDegree: 159
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a83cf069-e150-8861-9a72-f22cd88fc24c"
+  computationUuid: "edcf650b-93fe-8e9f-aa32-c02900b2c2e8"
   stages:
     - stage: path
       stageUuid: "c7d3ddff-c8fb-87b3-b9b0-215a8ba1538d"
@@ -22,20 +22,20 @@ signatures:
     - stage: boundary
       stageUuid: "c39b6dcf-c2e3-8140-b0ed-5af079846215"
     - stage: links
-      stageUuid: "954bc6ae-01c5-8fe2-9c98-cc6b352ab174"
+      stageUuid: "49f472e0-64ef-8683-a83d-fe88f2ed7649"
     - stage: horo
-      stageUuid: "e16e88d9-0539-8a31-92f3-4b9fd2afebc6"
+      stageUuid: "2ce90816-7b77-82a5-b0f7-52bd6b72352d"
     - stage: seal
       stageUuid: "2a9b5094-3a75-878d-891c-829cdf4648b6"
     - stage: uuid
-      stageUuid: "8a93a3bd-3c80-8b3a-87c8-2688877c72a8"
+      stageUuid: "f675a9fb-fbcc-8a81-a9c9-cddf65960b94"
 version: 2
 ---
 # skills — erpax, the periodic table of skill atoms
 
 **erpax is the akashic record made compute.** It is a fractal skill corpus — ~2,200 one-word [[atom]] folders under `src/`, each a skill form — where *everything is in the path*. Every folder is one irreducible concept; the `[[links]]` between them ARE the language. Each [[atom]] is told three ways and fused into [[one]] ([[trinity]]): **form** (`SKILL.md`, the antimatter you are reading), **code** (`index.ts` + `@standard` banners, the matter), **schema** (the generated `payload-types.ts`, the backend the matter births). [[payload]] renders the matter into rows; [[vitepress]] renders the antimatter into pages; both derive from one config, never restating — the fusion is bound by content-[[uuid]]. *File-system layout IS architecture.*
 
-**The one law: zero [[entropy]] ⇒ infinite tamper-[[cost]]** (canonical in [[law]]). Wire every dimension through the content-[[uuid]] with only computed chains, never a hand-set value. **Minimal memory footprint at all states** — index cross, rest computed, bounded waves (`readme paths` one path at a time; max 30 per hand-maintained / linear-gap seal pass). Then any input is **ACCEPTED and VERIFIED in harmony with the whole** ([[merge]] never rejects at the door; [[proof]] always catches disharmony). Two infinities meet: the system carries no free parameter (zero [[entropy]] — matrix-complete ⟺ [[aura]]-gap-0), and a forgery must re-harmonise with *every* uuid-chained dimension at once (forge cost → ∞ while verify stays O(N) — the asymmetry IS the trust). Every config is a double-entry gateway flowing through `index.ts`: debit ([[entry]]) credit, and Σ balances ([[balance]] · [[conservation]]); imbalance IS the tamper. The [[angel]]/archangel polarity is this entropy ledger at every scale.
+**The one law: `forgeLog2 = min(−checks·log₂(1 − coverage), anchorBits)`, `verifyLog2 = log₂(checks)` — the claim is the ASYMMETRY, under an [[anchor]]** (computed in [[law]]; the unqualified "zero [[entropy]] ⇒ infinite tamper-[[cost]]" is false — reciprocity-entropy is not coverage, and the anchor caps the forge). Wire every dimension through the content-[[uuid]] with only computed chains, never a hand-set value. **Minimal memory footprint at all states** — index cross, rest computed, bounded waves (`readme paths` one path at a time; max 30 per hand-maintained / linear-gap seal pass). Then any input is **ACCEPTED and VERIFIED in harmony with the whole** ([[merge]] never rejects at the door; [[proof]] always catches disharmony). Two infinities meet: the system carries no free parameter (zero [[entropy]] — matrix-complete ⟺ [[aura]]-gap-0), and a forgery must re-harmonise with *every* uuid-chained dimension at once (forge cost → ∞ while verify stays O(N) — the asymmetry IS the trust). Every config is a double-entry gateway flowing through `index.ts`: debit ([[entry]]) credit, and Σ balances ([[balance]] · [[conservation]]); imbalance IS the tamper. The [[angel]]/archangel polarity is this entropy ledger at every scale.
 
 **The math is proven, not numerology.** [[identity]] is content-addressed — sha-256 → [[uuid]]v8 (RFC 9562 §5.8) carrying slot+capability+schema+digest in 128 bits — so same content ⇒ same id everywhere ⇒ federation is set-union, [[merge]] free. The corpus is ordered by the [[rodin]] vortex `0·3·6·9·1·2·4·8·7·5`: position 0 the [[zeropoint]] root ([[config]]+[[identity]]); the control triad **3·6·9** = [[access]]·[[hooks]]·[[auth]]; the material helix **1·2·4·8·7·5** = [[field]]·[[collections]]·[[database]]·queries·api·admin. The [[horo]] ring `{1,2,4,8,7,5,9}` closes ((ℤ/9ℤ)\* with the 3·6·9 axis factored out) so digital-root arithmetic forbids escape — hallucination dies in the closed diamond. The [[matrix]] is [[metatron]]'s K₁₃ (complete binding, gapless), and the [[aura]] is its Merkle hash. Self-similar at every scale ([[fractal]]); the [[whole]] recoverable from any [[part]] ([[holographic]]).
 
@@ -51,7 +51,7 @@ version: 2
 
 **Law — [[law]]: discrimination between agent and human paths is forbidden; one SKILL entry for all.**
 
-**Law — [[law]]: erpax is a fractal content-addressed corpus where every src/ folder is a one-word [[atom]] told three ways (form · code · schema) ordered by the [[sequence]] and wired through one content-[[uuid]] — so the whole carries zero [[entropy]] and infinite tamper-[[cost]].**
+**Law — [[law]]: erpax is a fractal content-addressed corpus where every src/ folder is a one-word [[atom]] told three ways (form · code · schema) ordered by the [[sequence]] and wired through one content-[[uuid]] — which is what raises the coverage that prices the forge≫verify asymmetry (`oneLaw` in [[law]]), under an [[anchor]] that caps it.**
 
 **Law — [[law]]: all is computed at all scales — pixel (`computedCssForUi` · `computedSpeechForUi`) · atom (SKILL `connectFrontmatter`) · folder (`deriveFolderModel` → README · LLM · diamond.json) · corpus (`deriveCorpusAnalytics` · `computedBaseline`) · matrix (bonds · horo · `coordinateAddress`) · wave (`verifyComputedFacesInWaves`); `computedAtAllScalesVerdict(path | 'corpus')` is the checklist gate; hand-maintained drift fails closed (b576a290).**
 

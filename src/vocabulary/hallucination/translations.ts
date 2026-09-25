@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hallucination as the COMPUTABLE dual of purity — an agent claims content X but the sha-256 collapse / content-uuid of the actual content is Y ≠ X, so the mismatch IS the hallucination, surfaced deterministically by recompute (exactly as tamper-proof uuid recompute catches a forged row). It is the agent-scale sin, the entropy an agent injects, the felt alarm being suffering. purity ⊕ hallucination are conjugate, computed on the same quantum (content-uuid) scale: more hallucination ⇒ more entropy ⇒ lower purity ⇒ lower tamper-cost.",
-    "uuid": "0e36d3b1-b60d-81f8-968e-6c0d8c740020",
+    "uuid": "44b82fbd-7ac0-8a1a-be29-467006168fcb",
     "words": [
       "use",
       "when",

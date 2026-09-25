@@ -1,6 +1,6 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
-import { standardRegister } from '@/proof/register'
+import { standardKey, standardRegister } from '@/proof/register'
 
 /**
  * proof/replaceable — a cited standard is an AXIOM until a gate discharges it.
@@ -37,7 +37,11 @@ export function citingAtoms(cwd: string = process.cwd()): CitingAtom[] {
       if (e.name !== 'SKILL.md') continue
       const sec = /\n## Standards\n([\s\S]*?)(?=\n## |\n---|\s*$)/.exec(readFileSync(p, 'utf8'))
       if (!sec) continue
-      const standards = [...sec[1]!.matchAll(/^\s*[-*]\s+\*\*(.+?)\*\*/gm)].map((m) => m[1]!.trim())
+      // A bold lead ending in ':' LABELS a value — `**Version:** 1.2` — and never cites a standard.
+      // Three such labels were sitting in the undischarged queue as if they were conformance debt.
+      const standards = [...sec[1]!.matchAll(/^\s*[-*]\s+\*\*(.+?)\*\*/gm)]
+        .map((m) => m[1]!.trim())
+        .filter((raw) => !raw.endsWith(':'))
       if (standards.length > 0) out.push({ atomPath: relative(join(cwd, 'src'), join(p, '..')), standards })
     }
   }
@@ -80,14 +84,8 @@ const EMPIRICAL = [
   'FATF Recommendation 20',
 ] as const
 
-/** Normalise a standard to its identity: `ISO-19011:2018` and `ISO 19011:2018` are one standard. */
-export const standardKey = (raw: string): string =>
-  raw
-    .split('—')[0]!
-    .split('§')[0]!
-    .replace(/[-‑]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
+/** The one key — defined in [[proof]]/register, re-exported so this atom's face keeps offering it. */
+export { standardKey } from '@/proof/register'
 
 export interface AssumedStandard {
   readonly standard: string
@@ -118,9 +116,74 @@ export function assumedStandards(cwd: string = process.cwd()): AssumedStandard[]
     .sort((a, b) => b.cites - a.cites)
 }
 
-/** Assumed AND decidable from what the corpus holds — the theorems not yet written. */
+/** DECLARED — bodies that ISSUE standards; a key naming one is an obligation. See SKILL.md. */
+export const ISSUING_BODIES: ReadonlySet<string> = new Set([
+  'ISO', 'IEC', 'ISO/IEC', 'EN', 'CEN', 'ETSI', 'RFC', 'BCP', 'W3C', 'WHATWG', 'WAI', 'IETF',
+  'OASIS', 'NIST', 'FIPS', 'ECMA', 'ITU', 'UN', 'UN/CEFACT', 'EU', 'BG', 'US', 'FATF', 'IFRS',
+  'IAS', 'ISA', 'SOX', 'GDPR', 'PCI', 'WCAG', 'SWIFT', 'GS1', 'ILO', 'OECD', 'schema.org',
+  'IUPAC', 'WHO', 'WMO', 'IANA', 'Schema.org',
+])
+
+/** Standards whose common citation carries NO number — the body is the name. DECLARED. */
+export const NAMED_STANDARDS: ReadonlySet<string> = new Set([
+  'ActivityPub', 'ActivityStreams', 'eIDAS', 'Linked Data Notifications (LDN)', 'UI Events',
+  'GHG Protocol Corporate Standard', 'WHOQOL', 'Venice Commission Rule of Law',
+  'Venice Commission Code of Good Practice in Electoral Matters',
+  // Bulgarian statutes, written by name rather than number — obligations, mis-filed until named.
+  'БУЛСТАТ register law (Закон за регистър БУЛСТАТ)',
+  'Bulgarian Labour Code (Кодекс на труда)',
+  'Cadastre & Property Register Act (ЗКИР)',
+  'Bulgarian Commercial Register (Търговски регистър)',
+])
+
+/** Words that make a parenthesised-year citation an INSTRUMENT, not an attribution. DECLARED. */
+export const INSTRUMENT_WORDS: ReadonlySet<string> = new Set([
+  'convention', 'treaty', 'directive', 'regulation', 'act', 'standard', 'protocol',
+  'agreement', 'charter', 'covenant', 'recommendation', 'code', 'ordinance', 'statute',
+])
+
+/** `Author (YYYY)` — a citation whose only digits are a trailing parenthesised year. */
+const ATTRIBUTION_SHAPE = /^[^0-9]+\((1[6-9]|20)\d{2}\)$/
+
+/** A cited paper is not a conformance obligation — the year alone decides nothing. See SKILL.md. */
+export function namesAttribution(standard: string): boolean {
+  const s = standard.trim()
+  if (!ATTRIBUTION_SHAPE.test(s)) return false
+  const words = s.toLowerCase().replace(/[(),.]/g, ' ').split(/\s+/)
+  return !words.some((w) => INSTRUMENT_WORDS.has(w))
+}
+
+/** An obligation, or a source an idea came from? No gate discharges a branch of mathematics. */
+export function namesAnObligation(standard: string): boolean {
+  if (namesAttribution(standard)) return false
+  if (/\d/.test(standard)) return true
+  if (NAMED_STANDARDS.has(standard)) return true
+  const head = standard.split(/[\s/]+/)[0] ?? ''
+  return ISSUING_BODIES.has(head) || ISSUING_BODIES.has(standard)
+}
+
+export interface QueueSplit {
+  readonly obligations: readonly AssumedStandard[]
+  /** Literature, mathematics, idiom — cited honestly, dischargeable by nothing. */
+  readonly references: readonly AssumedStandard[]
+}
+
+
+/** The queue, split by what a gate could ever answer. */
+export function splitQueue(cwd: string = process.cwd()): QueueSplit {
+  const open = assumedStandards(cwd).filter((s) => !s.empirical)
+  return {
+    obligations: open.filter((s) => namesAnObligation(s.standard)),
+    references: open.filter((s) => !namesAnObligation(s.standard)),
+  }
+}
+
+/**
+ * Assumed AND decidable — the theorems not yet written. REFERENCES are excluded for the reason
+ * EMPIRICAL is: a gate is the wrong instrument, and the seam is declared. See SKILL.md.
+ */
 export const replaceableStandards = (cwd: string = process.cwd()): AssumedStandard[] =>
-  assumedStandards(cwd).filter((s) => !s.empirical)
+  [...splitQueue(cwd).obligations]
 
 /**
  * Fails closed on a NEW ungated standard. The ceiling ratchets down as each is discharged.

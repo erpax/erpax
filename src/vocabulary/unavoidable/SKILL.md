@@ -2,18 +2,18 @@
 name: unavoidable
 description: "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor."
 atomPath: "vocabulary/unavoidable"
-coordinate: "vocabulary/unavoidable · 7/descent · 64fe72e2"
-contentUuid: "b579ca13-d284-53b7-bd38-459e5b137f06"
-diamondUuid: "b4f9ac84-ab33-8955-bb15-d365835106c3"
-uuid: "64fe72e2-8da7-8659-a6c8-9d9367bc452f"
-horo: 7
+coordinate: "vocabulary/unavoidable · 4/weave · 1ad7baaf"
+contentUuid: "29e69254-db1e-579b-9a3d-931f8aab7c04"
+diamondUuid: "2cd8137f-e29c-8c86-896b-8344a49be97e"
+uuid: "1ad7baaf-c8e0-8466-945d-a1a3c60e2a17"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 78
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a3f74bbf-24ed-8b12-b116-663496ed8e6e"
+  computationUuid: "a0288070-bc89-88e2-9375-e8df6703a2dc"
   stages:
     - stage: path
       stageUuid: "4cd21f86-acd9-8b1b-ab4e-a3aed890b06f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3554cbf8-bb95-8751-b33b-2f11c963c6d2"
     - stage: horo
-      stageUuid: "6896c5ef-1b9c-8190-a5b6-75225c4dae8a"
+      stageUuid: "f189d4fd-f14e-88ad-bc77-fdb92dbf20fc"
     - stage: seal
       stageUuid: "1b3dfe0b-9ffe-8224-b359-b3d884ccb9b8"
     - stage: uuid
-      stageUuid: "544c6a1e-c07f-8703-b3af-3f287fb9e1e9"
+      stageUuid: "22c2a5dd-1bf6-8650-8c6d-126d431835c7"
 version: 2
 ---
 # unavoidable — every lever forced, because the cost is the minimum
@@ -47,4 +47,4 @@ The levers, each of which must become unavoidable:
 ∞ is a **limit**, not a number: you approach it by driving every coverage axis → 1 and closing every avoidable path, never literally reaching it — the floor never drops below the 256-bit second-preimage. The discipline is one rule applied everywhere: turn each *should* into a gate that fails. ([[law]] · [[proof]].)
 
 ## Standards
-- the erpax main law — zero entropy via uuid-wiring every dimension ⇒ infinite tamper-cost
+- the erpax main law — coverage = 1 via uuid-wiring every dimension ⇒ unbounded tamper-cost

@@ -2,19 +2,19 @@
 name: quantum
 description: "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
 atomPath: quantum
-coordinate: "quantum · 2/share · 48edb92b"
-contentUuid: "327cd8fc-7804-56ac-8ede-f677913752dd"
-diamondUuid: "0a1c4f43-7ad8-84e8-81ee-552a2f72d884"
-uuid: "48edb92b-a097-8bb5-b904-10e7fb861c36"
+coordinate: "quantum · 2/share · 9e596af9"
+contentUuid: "8a31eafd-97e4-538d-9ea3-e2d298500e67"
+diamondUuid: "1d637280-699e-8c33-b0d1-9a179f7d0005"
+uuid: "9e596af9-a908-810f-8e91-c8965bbac921"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 553
+  bondDegree: 550
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "f1013b0f-329d-8337-a489-67c99f1304f2"
+  computationUuid: "839a109e-4231-8b51-8360-389b4bbfe0dc"
   stages:
     - stage: path
       stageUuid: "15c162b9-f68a-81b5-be34-6a93fda387d5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "65883705-cdc4-8c3e-97db-3bdd6bd3558a"
     - stage: horo
-      stageUuid: "8c84a782-3203-8764-85e2-18fba3863958"
+      stageUuid: "85a058ab-febb-8400-8a74-92f4cdb2c304"
     - stage: seal
       stageUuid: "c80781cf-f5a6-814a-a2d6-0b57d9d1e77e"
     - stage: uuid
-      stageUuid: "87da1aa6-bc19-8228-b307-d63ffba254d7"
+      stageUuid: "93aea774-0c14-8517-94db-38c966d90b93"
 quantum:
   superposition:
     - accounting
@@ -51,7 +51,7 @@ quantum:
     - "[[superposition]]"
     - "[[worker]]"
     - "computed from the live matrix, never hand-asserted"
-    - "each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — zero entropy ⇒ infinite [[tamper]]-cost."
+    - "each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — coverage = 1 ⇒ unbounded [[tamper]]-cost, which the anchor caps."
     - "matter-twin:src/quantum/index.ts"
     - "quantum SKILL.md parse/generate runs in the quantum environment — `parseQuantumSkill` extracts law · bonds · collapse triggers · hook-less entangled fields · path account code; `generateQuantumSkill` emits stage signatures · horo · `quantum:` block (superposition | collapse | seal) · content-uuid footer; materialize via `pnpm skill:upgrade` on the quantum partition."
   seal:
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f1013b0f-329d-8337-a489-67c99f1304f2"
-    contentUuid: "327cd8fc-7804-56ac-8ede-f677913752dd"
+    computationUuid: "839a109e-4231-8b51-8360-389b4bbfe0dc"
+    contentUuid: "8a31eafd-97e4-538d-9ea3-e2d298500e67"
 version: 2
 ---
 # quantum
@@ -117,7 +117,7 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 
 @see [[quantum/serverless]] · [[cloudflare]] · [[worker]] · [[superposition]] · [[quantum/deploy]]
 
-**Law — [[law]]: each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — zero entropy ⇒ infinite [[tamper]]-cost.**
+**Law — [[law]]: each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — coverage = 1 ⇒ unbounded [[tamper]]-cost, which the anchor caps.**
 
 **Law — [[law]]: serverless IS the quantum host — Workers bindings superpose, invocations collapse to content-uuid, path+seal+binding entangle, and erpax on Cloudflare IS the existence proof (`proveServerlessQuantum` folds both facets to one uuid).**
 
@@ -134,4 +134,4 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 
-<sub>content-uuid `327cd8fc-7804-56ac-8ede-f677913752dd` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `8a31eafd-97e4-538d-9ea3-e2d298500e67` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

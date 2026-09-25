@@ -119,3 +119,211 @@ describe('horo/arithmetic', () => {
     })
   })
 })
+
+/**
+ * Two reflections, one step apart — and only one is the ring's.
+ *
+ * `throughVoid` pivots on 5 and pairs (3,7) (4,6); `halfTurn` pivots on 9 and pairs
+ * (3,6) (4,5). They are confused because they differ by exactly one unit, and the
+ * difference decides whether the doubling ring survives the reflection.
+ */
+describe('horo/arithmetic — the ring mirror is not the number-line mirror', () => {
+  const ring = (): number[] => {
+    const out: number[] = []
+    for (let x = 1, i = 0; i < 6; i++, x = (x * 2) % 9 || 9) out.push(x)
+    return out
+  }
+
+  it('halfTurn is multiplication by 2³ on every ring element', async () => {
+    const { halfTurn } = await import('@/horo')
+    for (const x of ring()) expect(halfTurn(x)).toBe((x * 8) % 9 || 9)
+  })
+
+  it('halfTurn pivots on 9, the ring zero — throughVoid pivots on 5', async () => {
+    const { halfTurn, throughVoid } = await import('@/horo')
+    expect(halfTurn(9)).toBe(9)
+    expect(throughVoid(5)).toBe(5)
+    expect([1, 2, 3, 4].map((n) => halfTurn(n))).toEqual([8, 7, 6, 5])
+    expect([1, 2, 3, 4].map((n) => throughVoid(n))).toEqual([9, 8, 7, 6])
+  })
+
+  it('and only halfTurn leaves the doubling ring closed', async () => {
+    const { halfTurn, throughVoid } = await import('@/horo')
+    const r = ring()
+    expect(r.every((x) => r.includes(halfTurn(x)))).toBe(true)
+    expect(r.every((x) => r.includes(throughVoid(x)))).toBe(false)
+    // exactly the three that escape: 1↦9, 4↦6, 7↦3
+    expect(r.filter((x) => !r.includes(throughVoid(x)))).toEqual([1, 4, 7])
+  })
+
+  it('the two mirrors differ by one step of the ring', async () => {
+    const { halfTurn, throughVoid } = await import('@/horo')
+    for (let n = 1; n <= 9; n++) {
+      expect(halfTurn(n)).toBe(((((throughVoid(n) - 1) % 9) + 9) % 9) || 9)
+    }
+  })
+
+  it('halfTurn is an involution — three steps of 60° there and back is 360°', async () => {
+    const { halfTurn } = await import('@/horo')
+    for (let n = 1; n <= 9; n++) expect(halfTurn(halfTurn(n))).toBe(n)
+    expect(3 * 60).toBe(180) // half the 6-cycle
+  })
+
+  it('the diagonal touches 4 of 9 — opens at 1, closes at 9, repeats at 9', async () => {
+    const { diagonal } = await import('@/horo')
+    const d = diagonal()
+    expect(d).toEqual([1, 4, 9, 7, 7, 9, 4, 1, 9])
+    expect([...new Set(d)].sort((a, b) => a - b)).toEqual([1, 4, 7, 9])
+    expect(d[0]).toBe(1)
+    expect(d[8]).toBe(9)
+  })
+
+  it('but its residues are a 3-cycle at 120°, never a 4-cycle at 90°', async () => {
+    const { diagonal } = await import('@/horo')
+    const sq = [...new Set(diagonal())].filter((x) => x !== 9)
+    expect(sq).toEqual([1, 4, 7])
+    // closed under multiplication — a real subgroup
+    expect(sq.every((a) => sq.every((b) => sq.includes((a * b) % 9 || 9)))).toBe(true)
+    expect(360 / sq.length).toBe(120)
+    // Lagrange: (Z/9Z)* has order 6, so no subgroup of order 4 exists to carry a 90° step
+    expect(6 % 4).not.toBe(0)
+  })
+})
+
+/**
+ * Only a LINEAR mirror survives casting out nines.
+ *
+ * 8 + 8 = 16, and reflecting its digits (1,6) ↦ (9,4) under throughVoid lands on 4 —
+ * while folding first, dr(16) = 7, and reflecting lands on 3. The digit-wise reflection
+ * and the reflection of the number are different answers, and they differ by exactly
+ * the one unit that separates the two mirrors.
+ */
+describe('horo/arithmetic — the fold keeps the linear mirror and loses the affine one', () => {
+  const dr = (n: number): number => (((n - 1) % 9) + 9) % 9 + 1
+  const digits = (n: number): number[] => String(n).split('').map(Number)
+
+  it('8 + 8 = 16 folds to 7, and the two mirrors disagree on it', async () => {
+    const { throughVoid, halfTurn } = await import('@/horo')
+    expect(dr(8 + 8)).toBe(7)
+    expect(digits(16)).toEqual([1, 6])
+
+    // reflect the DIGITS, then fold
+    expect(digits(16).map(throughVoid)).toEqual([9, 4])
+    expect(dr(9 + 4)).toBe(4)
+    expect(digits(16).map(halfTurn)).toEqual([8, 3])
+    expect(dr(8 + 3)).toBe(2)
+
+    // fold FIRST, then reflect
+    expect(throughVoid(7)).toBe(3) // ≠ 4 — the affine mirror does not survive the fold
+    expect(halfTurn(7)).toBe(2) //   = 2 — the linear one does
+  })
+
+  it('over all 81 pairs: halfTurn always commutes with the fold, throughVoid never', async () => {
+    const { throughVoid, halfTurn } = await import('@/horo')
+    let affineHolds = 0
+    let linearHolds = 0
+    for (let x = 1; x <= 9; x++) {
+      for (let y = 1; y <= 9; y++) {
+        if (dr(throughVoid(x) + throughVoid(y)) === throughVoid(dr(x + y))) affineHolds++
+        if (dr(halfTurn(x) + halfTurn(y)) === halfTurn(dr(x + y))) linearHolds++
+      }
+    }
+    expect(linearHolds).toBe(81)
+    expect(affineHolds).toBe(0)
+  })
+
+  it('and the affine defect is exactly one — the unit the mirrors differ by', async () => {
+    const { throughVoid } = await import('@/horo')
+    for (let x = 1; x <= 9; x++) {
+      for (let y = 1; y <= 9; y++) {
+        const defect = (((dr(throughVoid(x) + throughVoid(y)) - throughVoid(dr(x + y))) % 9) + 9) % 9
+        expect(defect).toBe(1)
+      }
+    }
+  })
+})
+
+/**
+ * The double torus completes the turn — and still has no quarter of it.
+ *
+ * One ring's half-turn is 180°. The 128-bit word is TWO 64-bit rings
+ * (combineArchitectures), so a half-turn on each completes 360° and returns the double
+ * word. What the second ring does not supply is a 4-cycle.
+ */
+describe('horo/arithmetic — the double torus completes 360°', () => {
+  const ring = (): number[] => {
+    const out: number[] = []
+    for (let x = 1, i = 0; i < 6; i++, x = (x * 2) % 9 || 9) out.push(x)
+    return out
+  }
+
+  it('one ring: 6 steps of 60°, and the half-turn is three of them', () => {
+    expect(360 / ring().length).toBe(60)
+    expect(3 * 60).toBe(180)
+    expect(2 * 3 * 60).toBe(360)
+  })
+
+  it('both halves turned twice return the double word, over all 36 pairs', async () => {
+    const { halfTurn } = await import('@/horo')
+    const r = ring()
+    for (const w of r) {
+      for (const d of r) {
+        expect([halfTurn(halfTurn(w)), halfTurn(halfTurn(d))]).toEqual([w, d])
+      }
+    }
+    expect(180 + 180).toBe(360)
+  })
+
+  it('but Z/6 × Z/6 has no element of order 4 — the second ring supplies no 90°', () => {
+    const orders = new Set<number>()
+    for (let a = 0; a < 6; a++) {
+      for (let b = 0; b < 6; b++) {
+        let k = 1
+        while (a * k % 6 !== 0 || b * k % 6 !== 0) k++
+        orders.add(k)
+      }
+    }
+    expect([...orders].sort((x, y) => x - y)).toEqual([1, 2, 3, 6])
+    expect(orders.has(4)).toBe(false) // a quarter-turn has no carrier, on one torus or two
+    expect(orders.has(2)).toBe(true) // the half-turn does
+  })
+})
+
+/**
+ * Two decompositions of 360°, and only one has a carrier.
+ *
+ * `10 × 36` is the DECADE reading — HORO_DECADE is the normalisation divisor, not a cycle.
+ * `6 × 60` is the RING reading. Both are 360; only the second names steps the group can take.
+ */
+describe('horo/arithmetic — the decade divides the turn, the ring walks it', () => {
+  it('both decompositions reach 360', () => {
+    expect(10 * 36).toBe(360)
+    expect(6 * 60).toBe(360)
+    expect(2 * 180).toBe(360)
+  })
+
+  it('but a 36° step needs a 10-cycle, and the double torus has none', () => {
+    const orders = new Set<number>()
+    for (let a = 0; a < 6; a++) {
+      for (let b = 0; b < 6; b++) {
+        let k = 1
+        while (a * k % 6 !== 0 || b * k % 6 !== 0) k++
+        orders.add(k)
+      }
+    }
+    expect(orders.has(10)).toBe(false) // 360/36 — no carrier
+    expect(orders.has(6)).toBe(true) //  360/60 — the ring itself
+    expect(orders.has(2)).toBe(true) //  360/180 — the half-turn
+  })
+
+  it('the decade is a divisor, never a step — horoRatio normalises, it does not walk', async () => {
+    const { horoRatio } = await import('@/horo')
+    const { HORO_DECADE } = await import('@/readme/entropy-unit')
+    expect(horoRatio(8, HORO_DECADE)).toBe(0.8)
+    // ten tenths make the unit, but 10 is not the length of any orbit in (Z/9Z)*
+    const ring = new Set<number>()
+    for (let x = 1, i = 0; i < 20; i++, x = (x * 2) % 9 || 9) ring.add(x)
+    expect(ring.size).toBe(6)
+    expect(ring.size).not.toBe(HORO_DECADE)
+  })
+})

@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost.",
-    "uuid": "61868ea8-df54-83bd-95d0-0fbb9acbd0f8",
+    "source": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; coverage = 1 implies unbounded mass and infinite tamper cost.",
+    "uuid": "f173880d-85cd-8296-90d1-38e7d1f55c74",
     "words": [
       "use",
       "when",
@@ -45,10 +45,9 @@ export const translations: readonly Translation[] = [
       "the",
       "quantum",
       "laws",
-      "zero",
-      "entropy",
+      "coverage",
       "implies",
-      "infinite",
+      "unbounded",
       "mass",
       "and",
       "infinite",
@@ -56,7 +55,7 @@ export const translations: readonly Translation[] = [
       "cost"
     ],
     "values": {
-      "en": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost."
+      "en": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; coverage = 1 implies unbounded mass and infinite tamper cost."
     }
   }
 ]

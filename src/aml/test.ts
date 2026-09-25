@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   STRUCTURING_BAND,
   STRUCTURING_WINDOW_MS,
+  assertSuspicionHolds,
   holdBeforeExecuting,
   justBelow,
   reportOwed,
@@ -81,5 +82,25 @@ describe('aml — what `none` means, stated where it cannot be missed', () => {
     const ordinary: Movement[] = [{ amount: 40, at: at(9) }, { amount: 120, at: at(10) }]
     expect(reportOwed({ movements: ordinary, threshold: T })).toBe('none')
     expect(reportOwed({ movements: [], threshold: T })).toBe('none')
+  })
+})
+
+describe('aml — Art. 33(1) as a fail-closed check', () => {
+  it('holds on the live atom, and the delay is zero', () => {
+    // NOT `expect(SUSPICION_DELAY_MS).toBe(0)` — that restates the literal the module assigns and
+    // cannot fail for any reason a reader cares about ([[rules]]/mirror). The assert above already
+    // carries it: assertSuspicionHolds throws when the delay is non-zero, so a change to the
+    // constant reddens this line rather than travelling with it.
+    expect(() => assertSuspicionHolds()).not.toThrow()
+  })
+
+  it('a THRESHOLD declaration does not hold the payment — and the gate must not demand it', () => {
+    // Art. 33(1) asks a firm to refrain from carrying out a transaction it SUSPECTS. A threshold
+    // declaration is an obligation to report, not to stop a lawful payment. The first version of
+    // the assert demanded a hold for every reporting kind, which would have encoded a false
+    // statement about the directive into a gate.
+    expect(holdBeforeExecuting('threshold')).toBe(false)
+    expect(holdBeforeExecuting('suspicious')).toBe(true)
+    expect(holdBeforeExecuting('none')).toBe(false)
   })
 })

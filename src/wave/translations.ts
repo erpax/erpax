@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication",
-    "uuid": "58eacd1a-5604-81a9-beae-4a90cb8d9fdc",
+    "uuid": "badf66dd-cbf2-85d0-bbbf-a158fa02a4c3",
     "words": [
       "use",
       "when",

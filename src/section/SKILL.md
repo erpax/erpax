@@ -3,13 +3,13 @@ name: section
 description: "Use when reasoning about section as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: section
 coordinate: "section · 5/round · 6f671fef"
-contentUuid: "61ba4a69-b385-5f1c-9c24-9a0e104a1377"
+contentUuid: "9d637a8a-2498-5a18-85de-da4c154d692c"
 diamondUuid: "c356c551-8a36-8e16-a569-75c0089ec899"
 uuid: "6f671fef-1b41-88c8-a49a-cf59a7f299c5"
 horo: 5
 typography:
   partition: section
-  bondDegree: 37
+  bondDegree: 41
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -2,19 +2,20 @@
 name: swarm
 description: Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.
 atomPath: swarm
-coordinate: "swarm · 4/weave · 8b6d4242"
-contentUuid: "dbee71a5-e15e-56eb-9dd7-836505d1735a"
-diamondUuid: "84f59bdb-0af2-8afa-8886-682d29c025f1"
-uuid: "8b6d4242-d722-8922-ac83-8d4438613d3c"
-horo: 4
+coordinate: "swarm · 8/crest · 710eb9f4"
+contentUuid: "1b1e25cd-12ac-5501-aaf0-78ac9d19090b"
+diamondUuid: "404cdbf5-3fad-8815-9a17-f7bec76afa25"
+uuid: "710eb9f4-e01b-8ddf-bd00-30c2e48aa659"
+horo: 8
 typography:
   partition: swarm
-  bondDegree: 15
+  bondDegree: 21
 standards:
   - "Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan"
+  - "Graham (1969)` sat in the docstring, the SKILL and the README with nothing computing it —"
 bindings: []
 signatures:
-  computationUuid: "534713d6-0f2d-85c5-ab4c-891c832516fa"
+  computationUuid: "00a12904-4f83-808e-8705-a8ebb7093cf5"
   stages:
     - stage: path
       stageUuid: "fd00e325-ca88-80a0-a0d6-17cc57f6d28d"
@@ -23,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "2bda39a4-3861-8fd2-aa0b-ca6538ad4a74"
     - stage: links
-      stageUuid: "3dc520e6-7e80-8638-b949-763a178fae05"
+      stageUuid: "0a8826b6-8788-89ee-b60b-c0e350a4e9e8"
     - stage: horo
-      stageUuid: "ff6c13ca-9151-83dc-9711-d57c4fe779a3"
+      stageUuid: "ba254227-00ed-8610-9a17-a044166c9512"
     - stage: seal
       stageUuid: "91a85422-f1cb-8084-b5d4-b07f0c2d05e5"
     - stage: uuid
-      stageUuid: "67e7e82e-e993-8122-8eeb-1279dcccad6c"
+      stageUuid: "8d91d23b-e29a-8b51-9687-c39db26b8f67"
 version: 2
 ---
 # swarm — one mixer, one level up: work over agents, and what happens when one dies
@@ -68,9 +69,27 @@ first because that is the worst case a plan must survive. Four equal runners car
 shards tolerate **two** losses. But a swarm of one 200-unit agent and two 20-unit agents tolerates
 **zero** — a headcount would have said two.
 
-**Honest boundary.** LPT is an **approximation**: Graham's 1969 bound is 4/3 − 1/(3m) of the optimal
-makespan, and optimal partitioning is NP-hard. A function claiming optimality here would be a claim
-nothing could check. Tasks are **indivisible** — splitting one across agents is a different problem
+## The cited bound is now arithmetic, and it refuses where it does not apply
+
+`@standard Graham (1969)` sat in the docstring, the SKILL and the README with nothing computing it —
+an axiom [[proof]]/replaceable counts as undischarged. It is one exact rational, so `lptBound(m)` is
+**(4m − 1) ÷ 3m** in a single division: `lptBound(1)` is exactly 1 (LPT on one machine is optimal)
+and the bound climbs toward 4/3 without reaching it.
+
+`grahamVerdict` then tests the theorem's **hypotheses** before its conclusion. Graham is about
+**identical** machines and a schedule that places every task, and `assign` does neither by default —
+capacities may differ, and a task heavier than every agent is refused. So a mismatch returns
+`applies: false` with a reason and `holds: null`, never a `holds: false` that would read as a
+counterexample to Graham when it is a model mismatch ([[rules]]/unraised).
+
+The measurement is against a **floor** on the optimum — the heavier of the largest single task and
+the level split — because the optimum itself is NP-hard. Since floor ≤ optimum, passing against the
+floor is **sufficient** for Graham's conclusion; failing it is **not** a counterexample, only a loose
+floor. That asymmetry is why `ratio` is reported beside `holds` rather than swallowed by it.
+
+**Honest boundary.** LPT is an **approximation**, and optimal partitioning is NP-hard: `grahamVerdict`
+proves the schedule sits inside the bound relative to a lower bound, never that it is optimal. A
+function claiming optimality here would be a claim nothing could check. Tasks are **indivisible** — splitting one across agents is a different problem
 and is not solved here. Weights are **declared**, so an assignment is exactly as good as the
 estimate feeding it, and a task whose real cost is twice its weight will blow the makespan this
 computes. There is no model of communication cost, data locality, or startup time, so this balances

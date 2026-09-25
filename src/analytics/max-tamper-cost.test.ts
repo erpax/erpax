@@ -78,3 +78,32 @@ describe('analytics/max-tamper-cost — the weakest link (min caps the whole)', 
     expect(both.levers.some((l) => l.lever.includes('impurity'))).toBe(true)
   })
 })
+
+/**
+ * The advice states the FORMULA's output, never a figure someone typed.
+ *
+ * It carried 2^53 and 2^35 — the birthday and BHT floors of a 106-bit uuid. 106 was a typed
+ * constant cost/bits refuted (the real width is 122), so both derived figures were wrong and
+ * survived because nothing contradicted them. Prose that restates a number a constant already
+ * holds is the drift law, one axis over.
+ */
+describe('analytics/max-tamper-cost — the floors are computed, not typed', () => {
+  it('the refuted figures cannot return to the source', async () => {
+    const { readFileSync } = await import('node:fs')
+    const src = readFileSync(new URL('./max-tamper-cost.ts', import.meta.url), 'utf8')
+    expect(src).not.toContain('2^53')
+    expect(src).not.toContain('2^35')
+    expect(src).not.toContain('106-bit')
+    // and the advice interpolates rather than states
+    expect(src).toContain('birthdayLog2(ERPAX_DIGEST_BITS)')
+    expect(src).toContain('bhtCollisionLog2(ERPAX_DIGEST_BITS)')
+  })
+
+  it('and the honest floors follow the width the corpus actually has', async () => {
+    const { ERPAX_DIGEST_BITS, birthdayLog2, bhtCollisionLog2 } = await import('@/cost')
+    const { exactFloor } = await import('@/algebra')
+    expect(ERPAX_DIGEST_BITS).toBe(122)
+    expect(exactFloor(birthdayLog2(ERPAX_DIGEST_BITS))).toBe(61) // was stated as 53
+    expect(exactFloor(bhtCollisionLog2(ERPAX_DIGEST_BITS))).toBe(40) // was stated as 35
+  })
+})

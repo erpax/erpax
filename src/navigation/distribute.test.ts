@@ -1,10 +1,10 @@
+import { pivotSkillMd } from '@/law/folder/word'
 import { algebraLog2 } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import {
   pivotSpecsForHub,
   pivotIndexTs,
   pivotTestTs,
-  pivotSkillMd,
   writePivot,
   applyHubDistribution,
   HUB_WAVE_REGISTRY,

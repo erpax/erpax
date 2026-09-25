@@ -10,6 +10,27 @@
 # and the Payload boot gate — and smokes the LIVE site. The Worker's 10 MiB ceiling is enforced where the build
 # happens: an oversized Worker fails the Cloudflare build, and `pnpm erpax land verdict` judges that build.
 #
+# THE BUILD COMMAND MUST BE `opennextjs-cloudflare build` AND NOTHING BEFORE IT.
+# `open-next.config.ts` already declares its own buildCommand — ensure-mcp-patch · ensure-image-size-patch
+# · `pnpm build:next:webpack` · stub-bundle-leaves — so the packer builds Next itself, with WEBPACK. That
+# choice is load-bearing: the 8 PRODUCTION_FOLDS apply only on the webpack path, and the config records that
+# a Turbopack deploy build packed to 23.4 MB gz against the 10 MiB ceiling with the matrix bundled three
+# times. `pnpm build` uses Turbopack, and its generates are committed artefacts that CI's `payload
+# verify-types` gates — so prefixing `pnpm build` adds a whole second Next build (16.7 min locally for
+# static generation of 1843 pages; CI reports 10.1 of 13 build minutes) for nothing. Two passes is ~30
+# minutes against Workers Builds' 20-minute timeout.
+#   ⚠ ONE SETTING, NOT IN THIS REPO: Cloudflare dashboard → Workers → erpax → Settings → Builds →
+#     Build command = `opennextjs-cloudflare build`. Workers Builds reads the dashboard, not wrangler.jsonc.
+#   ✖ NOT `--skipNextBuild`: it would skip the webpack build and pack whatever `.next` is lying around,
+#     which on a machine that just ran `pnpm build` is the Turbopack output — the 23.4 MB failure above.
+#
+# What was RULED OUT locally, so the clock is what is left: `pnpm build` exits 0;
+# `opennextjs-cloudflare build` exits 0; `wrangler deploy --dry-run` accepts the webpack bundle at
+# 9.00 MiB gzipped under the 10 MiB cap. The 10 GB `.open-next/server-functions` seen locally is local
+# debris — 9.2 GB of accumulated `.next/cache` plus 1.0 GB of `.next/dev` — not something a fresh builder
+# carries. The build LOG itself is behind the dashboard: wrangler 4.118.0 has no `builds` command, so the
+# timeout is the strongest hypothesis the evidence supports, not a line anyone has read.
+#
 # Honest boundary: the smoke checks whatever is live, which Cloudflare may have built from a newer push than
 # the CI run that triggered this job. The landing verdict (src/arrival), not this workflow, ties a deploy to
 # its commit.
@@ -52,6 +73,10 @@ jobs:
         with:
           skill-index: stub
           ripgrep: 'false'
+          # This job is workflow_run: it holds write scope while checking out the triggering SHA, so
+          # restoring a cache that run could have written is poisonable input. A cold install is the
+          # price of not trusting it.
+          cache: 'false'
 
       # Both are deterministic and read no secret: they cannot flake on someone else's uptime.
       - name: Contract gate — erpax parses what the external rails send

@@ -2,33 +2,33 @@
 name: supto
 description: "Use when reasoning about supto — СУПТО (*Софтуер за управление на продажбите в търговски обекти* — sales-management software for commercial outlets), regulated by **Наредба Н-18** and the НАП registry, is — struct"
 atomPath: supto
-coordinate: "supto · 8/crest · eb55a522"
-contentUuid: "c4d05568-dc10-5128-a9fd-21f4c6df288f"
-diamondUuid: "6829b133-13db-8706-b6d5-918dd13421f2"
-uuid: "eb55a522-2704-8835-9317-de8b378ba4e5"
-horo: 8
+coordinate: "supto · 2/share · 52ab96cf"
+contentUuid: "7b225e81-0dfb-5f67-b6c4-df8c173658d1"
+diamondUuid: "bad5d1c7-d178-8ffc-9dcd-eff58d8cd689"
+uuid: "52ab96cf-2eeb-8608-8938-e609fb99cd99"
+horo: 2
 typography:
   partition: supto
-  bondDegree: 71
+  bondDegree: 77
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5aa02f14-e5a2-86bc-8fe1-c72ea65a73d1"
+  computationUuid: "df9966d9-70bc-8614-9c88-904b0c96892b"
   stages:
     - stage: path
       stageUuid: "c1caa05d-8260-8f05-a39c-810de0d29926"
     - stage: trinity
       stageUuid: "da911176-f751-8955-ad5d-89dcc7f43d09"
     - stage: boundary
-      stageUuid: "046049ba-c7c5-8698-88c0-1609db8533c8"
+      stageUuid: "7ca4c3c4-e7cf-86aa-bb54-0bec61b9daf7"
     - stage: links
-      stageUuid: "93b2df3d-7f3e-8f2e-b0e1-2f044e149272"
+      stageUuid: "91e6d4c7-9dfe-8ee1-8962-a765fc55bf08"
     - stage: horo
-      stageUuid: "39039af5-d06d-83f7-926c-0595008f2717"
+      stageUuid: "c28a1558-7125-8c9c-8f27-adc792a64c6e"
     - stage: seal
       stageUuid: "5ca8a64b-8f64-89fb-9e6e-82ac282688c6"
     - stage: uuid
-      stageUuid: "6ea1d41f-3378-8a26-a3d8-a912fb6eeb9f"
+      stageUuid: "3615eb33-8112-8aa4-80d8-bb219713f036"
 version: 2
 ---
 # supto — Наредба Н-18 / СУПТО, mapped onto the content-uuid model
@@ -86,7 +86,13 @@ This skill holds **two legally DISTINCT regimes** — do not conflate them. Appl
 
 These are **two profiles over one export engine**, not one file: different legal trigger (Наредба Н-18 vs ДОПК), different cadence (15th vs 14th), different schema. The same fiscally-immutable УНП-keyed `sales` row feeds both.
 
-### Version-attribution corrections (must be true in `@standard` banners)
+## Version-attribution corrections (must be true in `@standard` banners)
+
+> These are corrections ABOUT banners, not banners. They sat under `## Standards` as a `###`
+> subsection, and [[proof]]/replaceable's section reader stops at the next `## ` — so all four
+> bullets were read as CITED STANDARDS and entered the undischarged queue. Two landed in the
+> reference bucket and two in the obligations bucket, because one of them happens to contain a
+> digit. A heading of their own is what they always wanted.
 - **SAF-T is not Наредба Н-18.** It is the ДОПК/TSSPC instrument (DV 26 / 27.03.2025) with its own scope, timeline and schema. The canonical standard string is **"BG Наредба Н-18 / СУПТО (Приложение 38) + ДОПК SAF-T"**, modelled as two standards.
 - **Bulgaria's SAF-T is the НАП national variant, not generic OECD.** Drop the "OECD SAF-T 2.0" annotation in `src/saf/t` and `src/services/*`; BG SAF-T is **XSD 1.0.2**. (For reference: OECD SAF-T is v2.0; there is **no SAF-T 3.0.2** — the `SAF-T:3.0.2` tags in `src/hooks/*`, `src/services/*`, `src/standards/*` such as `validateAuditComplianceReporting` and `FiscalPeriods` cite a non-existent version and must be corrected to BG **1.0.2**.)
 - **Приложение-38 ≠ SAF-T.** Do not equate "the monthly standardized audit (XML, Приложение 38)" with "SAF-T / `submitBgSaft`" — they are different files, cadences and legal triggers.

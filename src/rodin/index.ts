@@ -106,7 +106,7 @@ export function compositionMatrix(states: readonly number[] = VORTEX_SEQUENCE): 
  * PROOF (the hologram): the unit Cayley table is pure index addition --
  * dr(D[i]·D[j]) = D[(i+j) mod 6], because D = powers of 2 and 2^i·2^j = 2^(i+j).
  * So all 36 cells are forced by the 6-element generator: ZERO free parameters =>
- * zero entropy => infinite forge cost. The whole is a hologram of the part.
+ * coverage = 1 => unbounded forge cost. The whole is a hologram of the part.
  */
 export function cayleyIsCyclic(): { holds: boolean; whole: number; generators: number; freeParameters: number } {
   const D = orbit(2)
@@ -152,7 +152,7 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  doubling helix ⟨2⟩ = ' + g.orbit.join('·') + '   order ' + g.order + ' = φ(9)   equalsUnits=' + g.equalsUnits)
   console.log('  reverse ×5 = ' + reverseIsInverse().reverse.join('·') + '   (2·5 ≡ ' + composeSteps(2, 5) + ')')
   console.log('  axis 3·6·9 off-circuit; 3↔6 swap, 9 fixed; flow:control = 6:3 = 2/3')
-  console.log('  hologram: ' + cay.generators + ' generators → ' + cay.whole + ' Cayley cells; free parameters = ' + cay.freeParameters + ' (zero entropy ⇒ ∞ forge cost)')
+  console.log('  hologram: ' + cay.generators + ' generators → ' + cay.whole + ' Cayley cells; free parameters = ' + cay.freeParameters + ' (coverage = 1 ⇒ unbounded forge cost)')
   console.log('  CMYK {0,3,6,9} = {K,C,M,Y}; key = 0/K; 9 → ' + nextOctave(9) + ' (next dimension)')
   console.log('  states carried by uuids: see @/rodin/state (needs the live matrix)')
   console.log('  PROOF: ' + Object.entries(p).map(([k, v]) => k + '=' + v).join('  '))

@@ -3,14 +3,15 @@ name: balance
 description: Use when reasoning about balance — Debit and credit meet in balance; every fold meets the same law at seal.
 atomPath: "accounting/balance"
 coordinate: "accounting/balance · 5/round · 3ae06e20"
-contentUuid: "c20f7f04-6ba3-5608-a0a5-1e3504884bad"
+contentUuid: "d59526ed-5c11-5980-9e8d-d1e6c55b8af4"
 diamondUuid: "7638f222-cd19-8425-a585-b7c78ecc915f"
 uuid: "3ae06e20-6d02-881e-b09a-c3fb9085a590"
 horo: 5
 typography:
   partition: accounting
   bondDegree: 711
-standards: []
+standards:
+  - "IAS-1 §27 — the accrual basis: every posting carries its contra, so the"
 bindings: []
 signatures:
   computationUuid: "34816f81-2052-874a-a6cf-14a25d3cb9ad"

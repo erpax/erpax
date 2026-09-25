@@ -3,13 +3,13 @@ name: access
 description: "Use when reaching access enforcement from the standard side — the double-wire reciprocal of access/standard, the API-access-derived-from-law cross."
 atomPath: "standard/access"
 coordinate: "standard/access · 9/unity · 25e4f3f4"
-contentUuid: "03ee4266-87cd-55d9-9760-3828307a86d0"
+contentUuid: "c262595c-e1a3-5f0b-933f-a943b0a634a1"
 diamondUuid: "343406a1-c23a-8271-bc63-1e79d8872de7"
 uuid: "25e4f3f4-e330-8174-99b0-faea39eeb3fb"
 horo: 9
 typography:
   partition: standard
-  bondDegree: 436
+  bondDegree: 441
 standards: []
 bindings: []
 signatures:

@@ -2,35 +2,35 @@
 name: outward
 description: "Use when erpax depends on an answer it does not own — VIES, ECB rates, the Peppol directory, a standards clause, a harvested page. Fetch once, fold the answer to a content-uuid, and verify the ADDRESS on every later pass instead of re-reading the world. Only a moved address is news; an unreachable boundary keeps its last receipt and is never a failure."
 atomPath: outward
-coordinate: "outward · 4/weave · 67fe8421"
-contentUuid: "98473447-9e1e-5757-8609-f2cc49271978"
-diamondUuid: "c8916871-e9ad-8dad-a500-ab42485d7adf"
-uuid: "67fe8421-510a-8851-9097-d37c48958f1a"
-horo: 4
+coordinate: "outward · 7/descent · c5534f48"
+contentUuid: "5f596023-5264-503a-ba96-7bb6383f82f7"
+diamondUuid: "2c3a0841-910c-85df-9b0f-855f34145c0c"
+uuid: "c5534f48-650c-873a-bd43-95246e04215f"
+horo: 7
 typography:
   partition: outward
-  bondDegree: 42
+  bondDegree: 45
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence"
   - "RFC 9562 §5.8 — v8 content-uuid (the address)"
 bindings: []
 signatures:
-  computationUuid: "a216ec0b-9592-833a-b449-3bdb75215a01"
+  computationUuid: "1eb482fe-eba9-83d1-8145-1af9e03edd74"
   stages:
     - stage: path
       stageUuid: "5031f81b-27c6-86b5-bd9d-31b297975eaa"
     - stage: trinity
       stageUuid: "5b576848-3ace-8ea5-9ae9-7606c7d99fcd"
     - stage: boundary
-      stageUuid: "f0d681ae-1c50-8e7c-a6a3-8788c731f4dc"
+      stageUuid: "f44cca9c-d9b0-8b9a-bbeb-158273045182"
     - stage: links
-      stageUuid: "2f4ab611-2c95-8073-9dab-5d3ba2fa5de9"
+      stageUuid: "0b072390-4caa-8f0e-80ab-00c9054a1f78"
     - stage: horo
-      stageUuid: "3960b7a2-d774-8e47-93a6-1f650c5e9184"
+      stageUuid: "cef05efe-edfb-84ba-8271-31ac70fa35ce"
     - stage: seal
       stageUuid: "a869529a-1679-8247-8722-f9c0892869a1"
     - stage: uuid
-      stageUuid: "fd8c8e21-60ab-8db7-b1a2-ea49af8754a4"
+      stageUuid: "0e4b57bb-5feb-8589-87f7-c2cd76e4b202"
 version: 2
 ---
 # outward — the boundary is content-addressed too
@@ -77,6 +77,33 @@ that it is **true**, current, or that the host is who it claims. It records what
 said and when it changed; it does not adjudicate. And an address only means anything
 if the probe asks the same question each run — a probe whose query drifts will read
 as `moved` when only the asking moved.
+
+## Why a receipt, and why four states
+
+erpax leans on rails it does not own: VIES answers whether a VAT number is live, the ECB publishes
+the rate, the Peppol directory says who can receive an invoice, a standards body moves a clause.
+Re-fetched on demand with nothing remembering what they said, *"did the outside change?"* is
+unanswerable — the only options are trust it or ask again, and asking again costs attention every
+time.
+
+A receipt fixes that: fetch once, fold the answer to a content-uuid, keep the address. Every later
+pass **verifies the address instead of re-reading the world**. An unchanged answer costs one
+comparison; only a `moved` address is news. That is this corpus's own law applied outward — same
+content, same address ([[identity]]) — and it makes an external fact **checkable evidence** rather
+than a transient scrape.
+
+| state | meaning |
+| --- | --- |
+| `fresh` | first sighting — the address is now on record |
+| `unchanged` | the world agrees with the receipt (the cheap, common case) |
+| `moved` | the answer changed — the ONLY case that deserves attention |
+| `unreachable` | the boundary is down. **Not a failure**: the last receipt still stands |
+
+That last state is the point of the design. A gate that reddens because someone else's server is
+rebooting trains people to ignore it ([[rules]]: a gate that cries wolf is one nobody reads).
+
+Adapted from uuidna's outward pass. The prose above lived as a 32-line docblock in `index.ts` until
+`word-matter`'s comment-bloat axis said what this corpus says everywhere: prose belongs in the SKILL.
 
 **Law — [[law]]: verify the address, do not re-read the world. An external answer is
 folded to a content-uuid once; later passes compare. Only a moved address costs

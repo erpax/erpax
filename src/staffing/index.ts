@@ -1,16 +1,5 @@
 /**
- * staffing — a position is DECLARED once, and everything a bank needs from it is derived.
- *
- * THE GAP THIS CLOSES: six atoms already computed the five faces of a position — the description
- * ([[position]]), the competency shortfall ([[competency]]/gap), the plan that closes it
- * ([[train]]), the access capability ([[cross]]), the cost ([[allocation]]) — and NOTHING JOINED
- * THEM. So every caller did the join by hand, which means every caller did it slightly differently
- * and no gate could see the difference. A fold nobody performs is not a fold.
- *
- * It also makes [[rules]]/ask true for hiring: the irreducible ask is the POSITION and the bank's
- * own anchor rate. The title, the responsibility, the rate, the missing competencies, the training
- * order and the capability are all determined — by SFIA, by the ledger, by the lattice — so the
- * system computes them and a human confirms. Two inputs, five faces.
+ * staffing — a position is DECLARED once, and everything a bank needs from it is derived. See SKILL.md.
  *
  * @standard SFIA 8 — responsibility levels 1..7
  * @standard ESCO v1.2 / ISCO-08 — occupation and competency classification
@@ -26,9 +15,9 @@ import type { AccessRole } from '@/uuid/share'
 export const atomPath = 'staffing' as const
 
 /**
- * Hours in a full-time year. DECLARED, because it is a contract term and not a derivation — a
- * bank on a 35-hour week has a different one, and burying it in a formula would make every annual
- * figure a claim nobody could argue with ([[rules]]/drift: state the invariant or date the number).
+ * Hours in a full-time year.
+ *
+ * @standard EU 2003/88 Art. 6 — maximum weekly working time (48h) less statutory leave
  */
 export const FTE_HOURS = 1720
 
@@ -70,11 +59,7 @@ export interface StaffArgs {
   readonly routeOf?: (competency: string | number) => string | undefined
 }
 
-/**
- * The fold. Every face is delegated — this function decides nothing on its own, which is the
- * property that makes it safe to put in front of a bank: a change to the rate law, the gap maths
- * or the lattice reaches here without being restated.
- */
+/** The fold. See SKILL.md. */
 export function staff(args: StaffArgs): StaffedPosition {
   const anchor = typeof args.anchor === 'number' && args.anchor > 0 ? args.anchor : ANCHOR
   const hours = typeof args.hours === 'number' && args.hours > 0 ? args.hours : FTE_HOURS
@@ -98,11 +83,7 @@ export function staff(args: StaffArgs): StaffedPosition {
   }
 }
 
-/**
- * The competencies a position requires that reach no executable matter — the audit question, asked
- * of a staffed position rather than of the whole tree. A route resolving is not a route that WORKS;
- * this reports reachability only, which is the weaker claim and the true one.
- */
+/** The competencies a position requires that reach no executable matter — the audit question, asked of a staffed position rather than of the whole tree. See SKILL.md. */
 export function unresolvedCompetencies(
   staffed: StaffedPosition,
   resolves: (competency: string | number) => boolean,

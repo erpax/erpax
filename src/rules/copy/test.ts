@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { copyCount, duplicateBodies } from './index'
+import { copyCount, duplicateBodies, policyAddresses } from './index'
 
 const tree = (files: Record<string, string>): string => {
   const root = mkdtempSync(join(tmpdir(), 'erpax-copy-'))
@@ -110,5 +110,104 @@ describe('rules/copy — the live corpus', () => {
     for (const g of duplicateBodies(process.cwd())) {
       expect(new Set(g.sites.map((s) => `${s.file}:${s.line}`)).size).toBeGreaterThan(1)
     }
+  })
+})
+
+/**
+ * The copy × cycle cross — formulated from the enumerator, then built.
+ *
+ * `conjecture.crosses()` ranked `rules/copy × rules/cycle` second at 1.11 bits: both laws widely
+ * cited, never drawn together. The claim it names is a real one — a duplicated body whose two
+ * sites lie in ONE strongly connected component is strictly worse than an ordinary copy, because
+ * inside a tangle the initialisation order of the two files is decided by the graph rather than
+ * by either author.
+ */
+describe('rules/copy — a copy inside one tangle', () => {
+  it('the population is real, so a zero here is a measurement', async () => {
+    const { duplicateBodies } = await import('@/rules/copy')
+    const { importCycles } = await import('@/rules/cycle')
+    const crossFile = duplicateBodies().filter((g) => new Set(g.sites.map((s) => s.file)).size > 1)
+    expect(crossFile.length).toBeGreaterThan(0) // 7 at the time of writing
+    const tangled = importCycles()
+    expect(tangled.length).toBeGreaterThan(0)
+    expect(tangled.reduce((n, c) => n + c.length, 0)).toBeGreaterThan(1)
+  }, 300_000)
+
+  it('and no cross-file copy currently sits inside one', async () => {
+    const { copiesInTangle } = await import('@/rules/copy')
+    expect(copiesInTangle()).toEqual([])
+  }, 300_000)
+
+  it('a same-FILE duplicate is excluded — a file is trivially its own component', async () => {
+    const { copiesInTangle, duplicateBodies } = await import('@/rules/copy')
+    const sameFile = duplicateBodies().filter((g) => new Set(g.sites.map((s) => s.file)).size === 1)
+    expect(sameFile.length).toBeGreaterThan(0) // the readme/compute pair
+    // counting those would make every same-file duplicate a tangle finding — the noise floor
+    for (const g of copiesInTangle()) expect(new Set(g.sites.map((s) => s.file)).size).toBeGreaterThan(1)
+  }, 300_000)
+})
+
+/**
+ * The copy × unfolded cross — found by MEASURING the intersection, not by ranking the prose.
+ */
+describe('rules/copy — a copy no site earns', () => {
+  it('flags a body whose site has an export with no more than one caller', async () => {
+    const { unearnedCopies, duplicateBodies } = await import('@/rules/copy')
+    const { unfoldedExports } = await import('@/rules/unfolded')
+    const r = unfoldedExports()
+    const files = new Set([...r.dead, ...r.single].map((e) => e.file))
+    const u = unearnedCopies(files)
+    expect(u.length).toBeLessThanOrEqual(duplicateBodies().length)
+    // every reported group has at least one site whose export is not earning its place
+    for (const g of u) {
+      expect(g.unearned.length).toBeGreaterThan(0)
+      for (const s of g.unearned) expect(files.has(s.file)).toBe(true)
+    }
+  }, 300_000)
+
+  it('and reports nothing when no site is un-folded', async () => {
+    const { unearnedCopies } = await import('@/rules/copy')
+    expect(unearnedCopies(new Set<string>())).toEqual([])
+  }, 300_000)
+})
+
+describe('accessPolicies — a rule a reviewer must trust has one address', () => {
+  it('every access policy in the corpus lives at exactly one address', () => {
+    expect(policyAddresses(process.cwd())).toEqual([])
+  })
+
+  it('a body written `{ return x }` is the same policy as `x` — braces are not a difference', () => {
+    // a fifth copy of `() => false` hid behind a pair of braces until this normalised
+    const root = tree({
+      'a.ts': "import type { Access } from 'payload'\nexport const x: Access = () => false\n",
+      'b.ts': "import type { Access } from 'payload'\nexport const y: Access = () => {\n  return false\n}\n",
+    })
+    const g = policyAddresses(root)
+    expect(g).toHaveLength(1)
+    expect(g[0]!.map((p) => p.name).sort()).toEqual(['x', 'y'])
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('Access and FieldAccess are DIFFERENT interfaces — one body under both is lawful', () => {
+    // superAdminOnly and fieldAccess in @/is/super/admin share a body and must not be flagged
+    const root = tree({
+      'a.ts':
+        "import type { Access, FieldAccess } from 'payload'\n" +
+        'export const c: Access = ({ req }) => Boolean(req.user)\n' +
+        'export const f: FieldAccess = ({ req }) => Boolean(req.user)\n',
+    })
+    expect(policyAddresses(root)).toEqual([])
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('an alias points AT an implementation and is never a second one', () => {
+    const root = tree({
+      'a.ts':
+        "import type { Access } from 'payload'\n" +
+        'export const base: Access = () => false\n' +
+        'export const same: Access = base\n',
+    })
+    expect(policyAddresses(root)).toEqual([])
+    rmSync(root, { recursive: true, force: true })
   })
 })

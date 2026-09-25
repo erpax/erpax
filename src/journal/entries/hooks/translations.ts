@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — is the fundamental law of double entry enforced where the entry is saved. Checking it in a report instead means the unbalanced entry already exists and every statement built on it…",
-    "uuid": "7531b5fc-efcf-8e29-a60e-cb7891fbc7dc",
+    "uuid": "40068c2f-d8b4-8b0b-9e61-75107d6020d0",
     "words": [
       "use",
       "when",

@@ -20,7 +20,12 @@ Then run `pnpm erpax rules check` or `pnpm check` before pushing.
 
 ## One law
 
-Zero entropy ⇒ infinite tamper-cost. Every folder under `src/` is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid.
+`forgeLog2 = min(−checks·log₂(1 − coverage), anchorBits)` · `verifyLog2 = log₂(checks)` — **the claim is
+the asymmetry, under an anchor**, computed in [`src/law`](src/law/index.ts). Not "infinity from zero
+entropy": reciprocity-entropy is not coverage, and even at coverage 1 a forger may attack the anchor
+instead of the graph, so the anchor is the ceiling. Every folder under `src/` is a one-word atom told
+three ways (form · code · schema), ordered by the sequence, wired through one content-uuid — which is
+what raises `coverage`.
 
 ## Navigation
 
@@ -39,3 +44,13 @@ Zero entropy ⇒ infinite tamper-cost. Every folder under `src/` is a one-word a
 | `.cursor/rules/erpax.mdc` | Cursor auto-load rule |
 | `.well-known/ai-skills.json` | Well-known discovery |
 | `skills.json` | Alternate discovery manifest |
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the SEO face registry — listFaces and the schema/OG vortex, in a module with ZERO imports. That property is why it is its own atom: @/integrity/uuid-stream took listFaces from the @/website barrel, and the barrel dragged the whole page/agent/spec subtree into the module that exports uuid and jcsCanonicalize to the entire corpus. Importing a leaf adds no edge.",
-    "uuid": "57257c81-7d19-8a8a-858d-be5b1b23e970",
+    "uuid": "b5d4a062-479f-8fc0-b219-374dd6fb58f5",
     "words": [
       "use",
       "when",

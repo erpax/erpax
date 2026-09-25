@@ -3,13 +3,13 @@ name: access
 description: "Use when reasoning about how an agent acts — it does everything both through the MCP gateway (trust-native, sandboxed and receipted) and through the filesystem (direct), the two equivalent because content-addressed, the modality the choice of trust not of truth."
 atomPath: "agent/access"
 coordinate: "agent/access · 3/3 · 846ea4b1"
-contentUuid: "a1a87b26-36fd-505f-9e73-82d97d3d7d7c"
+contentUuid: "1e552854-bebb-5668-a275-cc0b1d936f4d"
 diamondUuid: "731e3ed9-6f2d-8a81-be75-ccd82f148793"
 uuid: "846ea4b1-ea52-8442-8e6e-4fd063b659be"
 horo: 3
 typography:
   partition: agent
-  bondDegree: 436
+  bondDegree: 441
 standards:
   - MCP
   - "RFC-9562"

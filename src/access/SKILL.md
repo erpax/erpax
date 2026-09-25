@@ -3,13 +3,13 @@ name: access
 description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \"access denied\"/\"document hidden\". In erpax access is the society's \"who can do what\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
 atomPath: access
 coordinate: "access · 3/3 · 17c9dd2f"
-contentUuid: "ab14dabd-8740-5d7c-96b9-fb49c2e4e621"
+contentUuid: "19496561-9ef3-50ae-a548-c0ed2716f411"
 diamondUuid: "62ba78e5-c65e-801d-9d91-aa38559b6def"
 uuid: "17c9dd2f-aa75-8dd7-a3b0-43b53bdd4f52"
 horo: 3
 typography:
   partition: access
-  bondDegree: 436
+  bondDegree: 441
 standards:
   - "CoE-108+"
   - "ISO 27001 A.5.10 access-control-policy"

@@ -17,7 +17,7 @@ import { exactRound } from '@/algebra'
  * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position.
  * @see ~/github/ceccec/svilena-me/.vitepress/notes.js (the sound source twin)
  * @see ~/github/ceccec/svilena-me/.vitepress/rodin.js (CMYK / RODIN_HUE / phase)
- * @see src/services/horo (the position ring), src/uuid/format/index.ts (decode)
+ * @see src/horo (the position ring), src/uuid/format/index.ts (decode)
  */
 
 import { type HoroStep } from '@/horo'

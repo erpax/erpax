@@ -2,18 +2,18 @@
 name: accepted
 description: "Use when reasoning about accepted — erpax carries Lean under . **Nothing ran it** — no CI lane, no npm script, no import. Asked, the kernel answers:"
 atomPath: "proof/accepted"
-coordinate: "proof/accepted · 4/weave · 05325224"
-contentUuid: "70a007fc-5bcb-513a-a7ef-518bc8a9692a"
-diamondUuid: "11ca2a09-f550-89b0-9ee0-e1ceb1fe9466"
-uuid: "05325224-d1ae-84d3-ab95-1037c0bd3c6b"
-horo: 4
+coordinate: "proof/accepted · 7/descent · 00e5089d"
+contentUuid: "9fc6341d-b76f-5901-b120-79a203ea7a80"
+diamondUuid: "82241ac8-fc1d-86cb-829c-d7d5cea72e4e"
+uuid: "00e5089d-bd4e-8557-bd70-21a0fc49050f"
+horo: 7
 typography:
   partition: proof
   bondDegree: 34
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1e225b6f-952d-8423-95fc-f27ad7491153"
+  computationUuid: "d7ccb941-e2c9-8939-befe-393bedd42afd"
   stages:
     - stage: path
       stageUuid: "00eab6e1-8f8e-86a6-8217-2f2f56cd3d5f"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "4cc27893-918e-89bc-bb76-37cd0a0eb6be"
     - stage: links
-      stageUuid: "1c67d0bb-f3ca-8253-bd7e-f26e44f4ee8f"
+      stageUuid: "a2c3cfba-f3c6-8ed6-b2f0-e26301dcb4cb"
     - stage: horo
-      stageUuid: "624c82b4-8817-8c1d-939e-1a17e3a48033"
+      stageUuid: "92f9e3d3-d8dd-8270-ab72-390169dfbf22"
     - stage: seal
       stageUuid: "27d3eea6-ec59-81cc-8d02-c10fabfe105b"
     - stage: uuid
-      stageUuid: "abbed0b4-47f1-898b-929f-cec87fbcc637"
+      stageUuid: "6be3a07a-440b-88e5-b339-3c6c28c0e771"
 version: 2
 ---
 # proof/accepted — four of five `.lean` files in a directory named `verify` are not proofs
@@ -83,5 +83,27 @@ holding either is the strongest form of a claim that cannot be contradicted.**
 
 - **ISO 19011:2018 §6.4** — audit evidence: the citation must lead to the evidence.
 - **ISO/IEC 25010:2023 §5.5** — testability: an unproven declaration cannot be relied on.
+
+## Two of them were never rejected — the kernel was never asked
+
+`kernelVerdict` ran `lean <file>` in the file's own directory with no `LEAN_PATH`. Lean 4 resolves
+`import X` from a **compiled** `X.olean` on that path, never from a sibling `X.lean`, so every file
+that imported anything was reported as unaccepted. Two were:
+
+```
+Cross.lean:20:0: error: unknown module prefix 'Arrival'
+Main.lean:22:0: error: unknown module prefix 'Orchestrate'
+```
+
+`Arrival.lean` and `Orchestrate.lean` **both exist, beside the files importing them.** Compile the
+imports depth-first and set the path, and both check clean with zero `sorry`.
+
+That is [[rules]]/command's law read the other way. That atom says a gate which cannot run reports
+the same green as one that passed; this is the dual — a gate which cannot run reported the same RED
+as one that failed, and a false alarm in a verification gate spends exactly the attention a real
+rejection deserves. `unresolved` now separates the two verdicts, so a missing module still fails
+(it is a genuine dead reference) while being named as a different thing from a refused proof.
+
+The ceiling is **0**, ratcheted in the commit that earned it ([[rules]]/slack).
 
 Composes: [[proof]] · [[duality]]/mirror · [[rules]]/refutable · [[law]].

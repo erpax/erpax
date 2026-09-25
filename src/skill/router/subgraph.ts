@@ -32,7 +32,8 @@ export interface Subgraph {
 }
 
 /** Leaf word of a ref, whether it is a route (`/a/b/SKILL`) or a bare name (`flow`). */
-const leafOf = (ref: string): string => {
+/** The last path segment of a skill ref. Exported so `./rating` folds onto it ([[rules]]/copy). */
+export const leafOf = (ref: string): string => {
   const segs = ref.replace(/\/SKILL$/i, '').split('/').filter(Boolean)
   return segs.length ? segs[segs.length - 1] : ''
 }

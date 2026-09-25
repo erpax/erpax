@@ -25,14 +25,18 @@ describe('bank/chat — banks chat · quantum-secure banking', () => {
     expect(QUANTUM_SECURE_BANKING_CORPUS.length).toBeGreaterThanOrEqual(4)
   })
 
-  it('sealQuantumSecure: approved ML-DSA · holds computed', () => {
+  it('sealQuantumSecure: approved ML-DSA · does NOT hold while nothing signs', () => {
     const env = sealQuantumSecure('pacs.008 body', {
       publicKeyFingerprint: 'fp-test',
       algorithm: 'ML-DSA-65',
     })
     expect(env.hybrid).toBe(true)
     expect(isApprovedPqc(env.algorithm)).toBe(true)
-    expect(env.holds).toBe(true)
+    // it read TRUE over a signatureB64 of `PLACEHOLDER-pending-libpqc-integration`, because it
+    // compared the echoed algorithm name and never looked at the signature
+    expect(env.holds).toBe(false)
+    expect(env.pqc.signed).toBe(false)
+    expect(env.refusal).toMatch(/no ML-DSA-65 signing key/)
     expect(env.payloadUuid).toMatch(/^[0-9a-f-]{36}$/)
     expect(env.classicalDigest).toMatch(/^[0-9a-f-]{36}$/)
     expect('physicalQkdClaim' in env).toBe(false)
@@ -59,10 +63,14 @@ describe('bank/chat — banks chat · quantum-secure banking', () => {
     expect(r.cost).toBe(0)
     expect(r.tokens).toBe(0)
     expect(r.turns.length).toBe(3)
-    expect(r.turns.every((t) => t.envelope.holds)).toBe(true)
+    // every turn is posture-correct and NONE holds — nothing has signed them
+    expect(r.turns.every((t) => t.envelope.holds)).toBe(false)
+    expect(r.turns.every((t) => t.envelope.pqc.signed === false)).toBe(true)
     expect(r.acceptedDevelopments).toContain('develop: wrap pacs.008 in QuantumSecureEnvelope')
     expect(r.sealed).toBe(true)
-    expect(r.holds).toBe(true)
+    // the session seals and the consensus carries — but the QUANTUM-SECURE claim does not hold
+    // while no envelope has been signed, and that is the honest verdict
+    expect(r.holds).toBe(false)
   })
 
   it('banksChat rejects develop without 2f+1 consensus', () => {
@@ -88,7 +96,7 @@ describe('bank/chat — banks chat · quantum-secure banking', () => {
     expect(r.chat.acceptedDevelopments.length).toBeGreaterThan(0)
     expect(r.related.every((x) => x.present)).toBe(true)
     expect(quantumSecureBankingRelated().every((x) => x.present)).toBe(true)
-    expect(r.holds).toBe(true)
+    expect(r.holds).toBe(false) // posture right, claim not: nothing has signed
     expect(r.recipe?.answer.length).toBeGreaterThan(0)
   })
 })

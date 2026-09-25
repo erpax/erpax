@@ -95,3 +95,43 @@ describe('rules/domain — a law is enforced on the surfaces its checker reads',
     expect(blind.length).toBeLessThanOrEqual(5)
   })
 })
+
+/**
+ * The limit case of the domain axis: a checker that is never opened at all.
+ */
+describe('rules/domain — a law nothing runs is silent on every surface', () => {
+  it('names the laws outside the import closure of what executes', async () => {
+    const { unrunLaws } = await import('@/rules/domain')
+    const u = unrunLaws()
+    expect(Array.isArray(u)).toBe(true)
+    expect(u.length).toBeLessThanOrEqual(11) // ratchets down, never up
+    expect(new Set(u).size).toBe(u.length)
+  }, 120_000)
+
+  it('does not list a law the registry actually calls', async () => {
+    const { unrunLaws } = await import('@/rules/domain')
+    const u = new Set(unrunLaws())
+    expect(u.has('inject')).toBe(false)
+    expect(u.has('concentration')).toBe(false)
+    expect(u.has('hold')).toBe(false)
+  }, 120_000)
+
+  it('a tree scan is decided by SHAPE — a cwd parameter, not a declared list', async () => {
+    const { treeShaped } = await import('@/rules/domain')
+    expect(treeShaped('export function echoes(cwd: string = process.cwd()): X[] {')).toBe(true)
+    expect(treeShaped('export async function scan(cwd = process.cwd()) {')).toBe(true)
+    expect(treeShaped('export function sweeps(changesets: readonly Changeset[]) {')).toBe(false)
+    expect(treeShaped('export function orphansFrom(report: readonly LintReport[]) {')).toBe(false)
+  })
+
+  it('a law that judges a diff is debt with a cure, not a law that cannot fire', async () => {
+    const { momentShapedUnwired, unrunLaws } = await import('@/rules/domain')
+    const moment = momentShapedUnwired()
+    // manifest judges a scalpel changeset; orphan reads an ESLint report
+    expect(moment).toContain('manifest')
+    expect(moment).toContain('orphan')
+    // and neither is counted twice, under the wrong defect
+    const tree = new Set(unrunLaws())
+    expect(moment.some((m) => tree.has(m))).toBe(false)
+  }, 120_000)
+})

@@ -1,8 +1,9 @@
 import { readFileSync } from 'node:fs'
-import { relative } from 'node:path'
+import { join, relative } from 'node:path'
 import ts from 'typescript'
 import { createHash } from 'node:crypto'
 import { allFiles } from '@/syntax/cache'
+import { importCycles } from '@/rules/cycle'
 
 /**
  * rules/copy — one truth living at two addresses, found by content-addressing its body.
@@ -125,3 +126,136 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 }
 
 /** @index-cross.foldback child=rules/copy parent=rules — this cross folds back into its parent. */
+
+/** A duplicated body whose sites share an import tangle — the copy × cycle cross. */
+export interface TangledCopy extends CopyGroup {
+  /** Size of the strongly connected component both sites sit in. */
+  readonly tangle: number
+}
+
+/**
+ * Copies spanning two FILES that lie in one strongly connected component. See SKILL.md.
+ *
+ * Strictly worse than an ordinary copy: inside one tangle the initialisation order of the two
+ * files is decided by the graph rather than by either author, so the same text can run under
+ * different conditions — and neither law sees it alone.
+ *
+ * Two sites in ONE file are excluded: a file is trivially in its own component, and counting
+ * that would make every same-file duplicate a tangle finding — the noise floor this corpus has
+ * paid for four times.
+ */
+export function copiesInTangle(cwd: string = process.cwd(), minNodes = 40): TangledCopy[] {
+  const components = importCycles(cwd)
+  const member = new Map<string, number>()
+  components.forEach((c, i) => {
+    for (const f of c) member.set(f, i)
+  })
+  const out: TangledCopy[] = []
+  for (const g of duplicateBodies(cwd, minNodes)) {
+    if (new Set(g.sites.map((s) => s.file)).size < 2) continue
+    const ids = g.sites.map((s) => member.get(join(cwd, s.file)) ?? member.get(s.file))
+    const first = ids[0]
+    if (first === undefined) continue
+    if (!ids.every((id) => id === first)) continue
+    out.push({ ...g, tangle: components[first]?.length ?? 0 })
+  }
+  return out.sort((a, b) => b.nodes - a.nodes || a.address.localeCompare(b.address))
+}
+
+/** A duplicated body at least one of whose copies has no more than one caller. */
+export interface UnearnedCopy extends CopyGroup {
+  /** The sites whose export is dead or single-use — the copies not earning their place. */
+  readonly unearned: readonly CopySite[]
+}
+
+/**
+ * Copies where at least one site's export has ≤1 caller — the copy × unfolded cross. See SKILL.md.
+ *
+ * Measured, not guessed: `crosses()` ranks by absence in prose and put this pair nowhere near the
+ * top, while `crossIntersections` shows 11 files where both laws fire.
+ */
+export function unearnedCopies(
+  unfoldedFiles: ReadonlySet<string>,
+  cwd: string = process.cwd(),
+  minNodes = 40,
+): UnearnedCopy[] {
+  const out: UnearnedCopy[] = []
+  for (const g of duplicateBodies(cwd, minNodes)) {
+    const unearned = g.sites.filter((s) => unfoldedFiles.has(s.file))
+    if (unearned.length === 0) continue
+    out.push({ ...g, unearned })
+  }
+  return out.sort((a, b) => b.unearned.length - a.unearned.length || b.nodes - a.nodes)
+}
+
+/** An access policy: a `const X: Access` or `const X: FieldAccess`, with its body's address. */
+export interface Policy {
+  readonly name: string
+  readonly file: string
+  readonly hash: string
+  /** `Access` or `FieldAccess` — two different Payload interfaces, never interchangeable. */
+  readonly family: string
+}
+
+/** Payload's own annotation is the authority on what an access policy is — parsed, never guessed. */
+const POLICY_TYPE = /^(Access|FieldAccess)(<|$)/
+
+/**
+ * Every access policy in the corpus, content-addressed. See SKILL.md § access policies.
+ *
+ * Exempt from `minNodes`: a policy body is commonly one line (`() => false`), which is exactly why
+ * the size floor could not see four private copies of `neverDelete` or a diverged `adminOnly`.
+ */
+export function accessPolicies(cwd: string = process.cwd()): Policy[] {
+  const out: Policy[] = []
+  for (const file of allFiles(cwd)) {
+    if (!/\.tsx?$/.test(file) || /\/(test|seed)\.tsx?$/.test(file)) continue
+    const text = readFileSync(file, 'utf8')
+    if (!/:\s*(Access|FieldAccess)\b/.test(text)) continue
+    const src = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true)
+    const visit = (n: ts.Node): void => {
+      // An alias (`const a: Access = b`) points AT an implementation; it is not a second one.
+      if (ts.isVariableDeclaration(n) && n.initializer && !ts.isIdentifier(n.initializer) && n.type) {
+        const fam = POLICY_TYPE.exec(n.type.getText(src).trim())?.[1]
+        if (!fam) { ts.forEachChild(n, visit); return }
+        const init = n.initializer
+        // `{ return x }` and `x` are the same policy written two ways: normalise a
+        // single-return block to its expression, or a fifth copy of `() => false` hides
+        // behind a pair of braces (which is exactly how one did).
+        const bodyNode = ts.isArrowFunction(init) || ts.isFunctionExpression(init) ? init.body : init
+        const only = ts.isBlock(bodyNode) && bodyNode.statements.length === 1 ? bodyNode.statements[0] : undefined
+        const body = only && ts.isReturnStatement(only) && only.expression
+          ? only.expression.getText(src)
+          : bodyNode.getText(src)
+        const norm = body.replace(/\/\*[\s\S]*?\*\/|\/\/[^\n]*/g, '').replace(/\s+/g, ' ').trim()
+        out.push({
+          name: n.name.getText(src),
+          file: relative(cwd, file),
+          hash: createHash('sha256').update(norm).digest('hex').slice(0, 16),
+          family: fam,
+        })
+      }
+      ts.forEachChild(n, visit)
+    }
+    visit(src)
+  }
+  return out
+}
+
+/**
+ * Access policies with the same body in the same family, at two or more addresses.
+ *
+ * Grouped by `hash + family`, never by hash alone: `superAdminOnly: Access` and
+ * `fieldAccess: FieldAccess` share a body and satisfy two DIFFERENT Payload interfaces. See SKILL.md.
+ */
+export function policyAddresses(cwd: string = process.cwd()): Policy[][] {
+  const m = new Map<string, Policy[]>()
+  for (const p of accessPolicies(cwd)) {
+    const k = `${p.family}:${p.hash}`
+    const a = m.get(k) ?? []
+    a.push(p)
+    m.set(k, a)
+  }
+  return [...m.values()].filter((g) => g.length > 1 && new Set(g.map((p) => p.file + p.name)).size > 1)
+}
+

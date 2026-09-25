@@ -23,7 +23,7 @@
  *
  * Composes [[merge]] · [[seal]] · [[fold]] · [[accounting]] · [[law]].
  */
-import { merge, foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
+import { merge, merkleRoot, merkleProof, verifyInclusion } from '@/merge'
 
 /** A notarial act — one numbered, dated, sealed entry in the protocol (a page of the bound register). */
 export interface NotarialAct {
@@ -36,11 +36,11 @@ export interface NotarialAct {
 }
 
 /** The empty protocol's genesis seal — the ⊥ the first act chains from. */
-export const GENESIS: string = foldToRoot([])
+export const GENESIS: string = merkleRoot([])
 
 /** The notarial seal — binds number + timestamp + record + officer + the PRIOR seal (the chain). */
 function sealAct(number: number, at: string, record: string, notary: string, prev: string): string {
-  return foldToRoot(['no:' + number, 'at:' + at, 'rec:' + record, 'by:' + notary, 'prev:' + prev])
+  return merkleRoot(['no:' + number, 'at:' + at, 'rec:' + record, 'by:' + notary, 'prev:' + prev])
 }
 
 /** The notarial act — enroll a record into the protocol: append a sealed, chained, numbered entry. */
@@ -55,9 +55,15 @@ export function notarize(
   return { number, at, record, notary, prev, seal: sealAct(number, at, record, notary, prev) }
 }
 
-/** The register root — every act's seal folded to ONE (the authenticity anchor an apostille certifies). */
+/**
+ * The register root — every act's seal folded to ONE (the authenticity anchor an apostille certifies).
+ *
+ * DOMAIN-SEPARATED (RFC 6962 §2.1). Folded with the bare magma, this root did not commit to how many
+ * acts were registered: a four-act protocol and a two-"act" one whose seals are the internal nodes of
+ * the first reach the SAME root, so the anchor an apostille certifies could not distinguish them.
+ */
 export function protocolRoot(protocol: readonly NotarialAct[]): string {
-  return foldToRoot(protocol.map((a) => a.seal))
+  return merkleRoot(protocol.map((a) => a.seal))
 }
 
 /** The chain is intact iff each act re-seals and its `prev` matches the one before — no insertion, no edit. */
@@ -76,7 +82,7 @@ export function authenticate(protocol: readonly NotarialAct[], index: number): b
   if (index < 0 || index >= protocol.length) return false
   if (!chainIntact(protocol)) return false
   const seals = protocol.map((a) => a.seal)
-  return verifyMerkleProof(seals[index]!, merkleProof(seals, index), foldToRoot(seals))
+  return verifyInclusion(seals[index]!, merkleProof(seals, index), merkleRoot(seals))
 }
 
 /** A certified copy is authentic iff it RE-SEALS to the registered act — same instrument ⇒ same seal. */

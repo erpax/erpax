@@ -2,34 +2,12 @@ import { toUuid } from '@/uuid/matrix'
 /**
  * outward — the boundary is content-addressed too. Verify an address, don't re-read the world.
  *
- * erpax leans on rails it does not own: VIES answers whether a VAT number is live,
- * the ECB publishes the rate, the Peppol directory says who can receive an invoice,
- * a standards body moves a clause. Today each is re-fetched on demand and nothing
- * REMEMBERS what it said, so "did the outside change?" is unanswerable — the only
- * options are trust it or ask again, and asking again costs attention every time.
- *
- * A receipt fixes that: fetch once, fold the answer to a content-uuid, and keep the
- * address. Every later pass VERIFIES the address instead of re-reading the world.
- * An unchanged answer costs one comparison; only a MOVED address is news. That is
- * the corpus's own law applied outward — same content, same address ([[identity]]) —
- * and it makes an external fact CHECKABLE evidence rather than a transient scrape.
- *
- * FOUR STATES, and the fourth is the honest one:
- *   fresh        first sighting — the address is now on record
- *   unchanged    the world agrees with the receipt (the cheap, common case)
- *   moved        the answer changed — the ONLY case that deserves attention
- *   unreachable  the boundary is down. NOT a failure: the last receipt still stands.
- *
- * That last state is the point of the design. A gate that goes red because someone
- * else's server is rebooting trains people to ignore it ([[rules]]: a gate that
- * cries wolf is one nobody reads).
- *
- * PURE core (address · diff · verdict); the fetching lives behind an injected thunk,
- * so this atom is provable without a network. Adapted from uuidna's outward pass.
+ * Four states, and `unreachable` is the honest one: the boundary being down is not a failure and
+ * the last receipt still stands. Pure core (address · diff · verdict); fetching is an injected
+ * thunk, so this atom is provable without a network. See ./SKILL.md.
  *
  * @standard RFC 9562 §5.8 — v8 content-uuid (the address)
  * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
- * @see ./SKILL.md · ../country/api (the rails) · ../match (external answers as evidence)
  */
 
 /** A named external answer and how to obtain it. `run` is injected — never hardcoded I/O. */
@@ -147,3 +125,40 @@ export function outwardVerdict(rows: readonly OutwardRow[]): OutwardVerdict {
 }
 
 export * from './coverage'
+
+/** The `{rail, holds, detail}` verdict shape `outward/bg` · `outward/world` · `outward/eu`/contract emit. */
+export interface ContractLike {
+  readonly rail: string
+  readonly holds: boolean
+  readonly detail: string
+}
+
+/**
+ * Fold a contract verdict into a receipt — `{rail, holds}` ONLY. See ./SKILL.md § leads.
+ *
+ * `detail` is deliberately not folded: `checkFrankfurter`'s success detail reads
+ * `"EUR on 2026-09-25: 31 rate(s)"`, so folding it would report `moved` every single day and the
+ * lead stream would be pure noise — the failure this corpus has paid for four times. What a
+ * release needs to know is that a contract's VERDICT flipped.
+ */
+const contractAddress = (c: ContractLike): string => receiptAddress({ rail: c.rail, holds: c.holds })
+
+/**
+ * Route a contract-check list through the receipt machinery, so `bg` and `world` become lead
+ * sources like `eu` — one shape for the whole boundary instead of two.
+ */
+export function contractRows(source: string, checks: readonly ContractLike[], prior: ReceiptBook): OutwardRow[] {
+  return checks.map((c) => {
+    const name = `${source}:${c.rail}`
+    const address = contractAddress(c)
+    return { name, host: source, address, state: receiptState(prior[name], address), note: c.detail }
+  })
+}
+
+/**
+ * The leads. A `moved` receipt is the world disagreeing with what we last recorded; a `fresh` one
+ * is a boundary nobody had asked before. Both are reasons to cut a release; `unchanged` is not,
+ * and `unreachable` is not a lead but an unanswered question.
+ */
+export const leadsOf = (rows: readonly OutwardRow[]): OutwardRow[] =>
+  rows.filter((r) => r.state === 'moved' || r.state === 'fresh')

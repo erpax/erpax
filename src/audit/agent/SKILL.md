@@ -3,13 +3,13 @@ name: agent
 description: "Use when reasoning about agent — Use to audit an agent's own changeset the way a real auditor audits a human's submission — every claim (@invariant · @standard · @compliance · @audit) in a changed code file must have a proof leg beside it, or the submission is refused. ISO 19011 §6.4: a finding traces to objective evidence. Run: git diff --name-only | tsx src/audit/agent/index.ts"
 atomPath: "audit/agent"
 coordinate: "audit/agent · 8/crest · 341cffd8"
-contentUuid: "3222e9b9-be03-5004-9e0a-8d07ebc98bc2"
-diamondUuid: "beefda9c-632a-8f6f-965f-0ec3850112a2"
+contentUuid: "dfa06923-9c80-564f-9a87-37dc1e7dd899"
+diamondUuid: "2300d233-6004-8dc2-8def-edbbacd6f021"
 uuid: "341cffd8-3269-80f2-9fd8-6a96f5426259"
 horo: 8
 typography:
   partition: audit
-  bondDegree: 393
+  bondDegree: 397
 standards:
   - "ISO-19011"
   - "ISO-19011:2018 §6.4 — audit evidence: a finding traces to objective evidence"
@@ -25,7 +25,7 @@ standards:
   - "· @compliance · @audit`, read from a file's"
 bindings: []
 signatures:
-  computationUuid: "2fba7544-915f-8379-99ea-cbb598f1e4f0"
+  computationUuid: "78169bfc-3a10-8831-83a2-a6fe0e536a04"
   stages:
     - stage: path
       stageUuid: "c8c08643-e0d0-86aa-87eb-7e0a13d2c096"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "955a84a6-0be4-82d5-99d5-69eb5a6eb017"
     - stage: horo
-      stageUuid: "e8cccb02-4e5d-811d-86e5-70ab0103d084"
+      stageUuid: "b352872e-3415-86fe-9bc0-fe22a3d74504"
     - stage: seal
       stageUuid: "691a698f-120f-8809-bf14-d1b5f00eadd7"
     - stage: uuid
-      stageUuid: "99f60645-170a-8bb7-9052-2b6c9d5bc710"
+      stageUuid: "e56e2827-c53f-8e38-8668-29a0ecf24ede"
 version: 2
 ---
 # agent — audit the agent as a real auditor audits a human

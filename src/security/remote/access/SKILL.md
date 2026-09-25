@@ -3,13 +3,13 @@ name: access
 description: "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit."
 atomPath: "security/remote/access"
 coordinate: "security/remote/access · 3/3 · 3033ee79"
-contentUuid: "17793ca9-e260-52dd-9377-34a2d9950439"
+contentUuid: "852a82dd-f899-5594-a446-86bc97fc9830"
 diamondUuid: "42129167-8edc-891e-bccc-427b79fbbd34"
 uuid: "3033ee79-ae8f-8572-97f6-a4ab0a6ac18b"
 horo: 3
 typography:
   partition: security
-  bondDegree: 436
+  bondDegree: 441
 standards:
   - "NIST SP 800-162 ABAC · NIST SP 800-107r1 §5.1 · CWE-59"
   - "NIST-SP-800-162"

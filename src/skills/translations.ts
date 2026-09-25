@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "skills",
-    "uuid": "e1f6b3df-948a-8386-8284-6f85d5b374c4",
+    "uuid": "4189d146-8eb0-8971-ab39-e319a0db53a2",
     "words": [
       "skills"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid so the whole carries zero entropy and infinite tamper-cost. Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library.",
-    "uuid": "f5fd61d2-57a9-8d66-b7e6-af484e8d7741",
+    "source": "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid, which raises the coverage that prices the forge≫verify asymmetry (computed in src/law; not infinity from zero entropy). Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library.",
+    "uuid": "cb75bfa7-4167-8ced-bd7e-5c93b2fc4855",
     "words": [
       "use",
       "when",
@@ -67,16 +67,25 @@ export const translations: readonly Translation[] = [
       "one",
       "content",
       "uuid",
-      "so",
+      "which",
+      "raises",
       "the",
-      "whole",
-      "carries",
+      "coverage",
+      "that",
+      "prices",
+      "the",
+      "forge",
+      "verify",
+      "asymmetry",
+      "computed",
+      "in",
+      "src",
+      "law",
+      "not",
+      "infinity",
+      "from",
       "zero",
       "entropy",
-      "and",
-      "infinite",
-      "tamper",
-      "cost",
       "read",
       "to",
       "learn",
@@ -104,7 +113,7 @@ export const translations: readonly Translation[] = [
       "library"
     ],
     "values": {
-      "en": "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid so the whole carries zero entropy and infinite tamper-cost. Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library."
+      "en": "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid, which raises the coverage that prices the forge≫verify asymmetry (computed in src/law; not infinity from zero entropy). Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library."
     }
   }
 ]

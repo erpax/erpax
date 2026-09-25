@@ -191,12 +191,63 @@ const hasGate = (atomPath: string, cwd: string): boolean => {
   return false
 }
 
+export interface SpellingVariant {
+  readonly standard: string
+  /** Every raw form the corpus writes for it — two or more, or it is not a variant. */
+  readonly written: readonly string[]
+}
+
+/**
+ * One standard, written more than one way — the inconsistency `standardKey` folds for DISCHARGE.
+ *
+ * The fold is right there: a gate citing `ISO 27001 A.5.23` must discharge an atom citing
+ * `ISO/IEC 27001 A.5.23`, and keying on the spelling cost exactly that. But the corpus's own
+ * citation format really is inconsistent, and that finding used to be visible AS the duplicate
+ * count. Folding it away without putting it somewhere would delete a finding to fix a bug.
+ */
+export function spellingVariants(
+  atoms: readonly { readonly standards: readonly string[] }[],
+): SpellingVariant[] {
+  const byKey = new Map<string, Set<string>>()
+  for (const a of atoms) {
+    for (const raw of a.standards) {
+      const key = standardKey(raw)
+      if (!key) continue
+      const head = raw.split('—')[0]!.split('§')[0]!.trim()
+      const hit = byKey.get(key) ?? new Set<string>()
+      hit.add(head)
+      byKey.set(key, hit)
+    }
+  }
+  return [...byKey]
+    .filter(([, written]) => written.size > 1)
+    .map(([standard, written]) => ({ standard, written: [...written].sort() }))
+    .sort((a, b) => b.written.length - a.written.length || a.standard.localeCompare(b.standard))
+}
+
 /**
  * Every standard this corpus cites, split into what it assumes and what it proves.
  *
  * `atoms` is supplied by the caller (the atom list and each one's citations) so this stays a pure
  * classification — the parsing lives with the papers, where the citation format is defined.
  */
+/** The ONE key this corpus uses for a standard — section, gloss, edition and publisher folded. See SKILL.md. */
+export const standardKey = (raw: string): string =>
+  raw
+    .split('—')[0]!
+    .split('§')[0]!
+    .replace(/[-‑]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/:\d{4}(?=\s|$)/, '')
+    // The BODY is not the identity either: the corpus writes both `ISO/IEC 27001 A.5.23` and
+    // `ISO 27001 A.5.23`, and keying on the publisher's full name split one control into two
+    // obligations that no single gate could discharge.
+    .replace(/^ISO\/IEC\b/, 'ISO')
+    .trim()
+
+/** The CLAUSE stays: folding A.5.23 away would over-discharge the whole of ISO 27001. */
+
 export function standardRegister(
   atoms: readonly { readonly atomPath: string; readonly standards: readonly string[] }[],
   cwd: string = process.cwd(),
@@ -205,8 +256,7 @@ export function standardRegister(
   for (const a of atoms) {
     const gate = hasGate(a.atomPath, cwd)
     for (const raw of a.standards) {
-      // the standard's NAME, without the section and gloss — ISO 25010 §5.5 and §5.4 are one standard
-      const key = raw.split('—')[0]!.split('§')[0]!.trim()
+      const key = standardKey(raw)
       if (!key) continue
       const e = byStandard.get(key) ?? { cited: [], discharged: [] }
       e.cited.push(a.atomPath)

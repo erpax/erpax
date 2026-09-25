@@ -2,18 +2,18 @@
 name: unreached
 description: "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…"
 atomPath: "rules/unreached"
-coordinate: "rules/unreached · 5/round · 896e7d4b"
-contentUuid: "eab55cab-22af-5ad6-bb0f-f9ad93c556ee"
-diamondUuid: "f5bb6c81-305b-8313-a234-8644da3021cb"
-uuid: "896e7d4b-8dd7-86d2-8a21-086f010219ee"
-horo: 5
+coordinate: "rules/unreached · 8/crest · 5cb7dfff"
+contentUuid: "77308a75-a2e8-52f6-8f04-776674cdd9f7"
+diamondUuid: "e14a4dcf-9b82-866f-8bdd-09e94323208e"
+uuid: "5cb7dfff-b789-8ec6-b081-5d4968a2c8e9"
+horo: 8
 typography:
   partition: rules
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "00de3f23-45fb-801e-9a23-b28d3b63d055"
+  computationUuid: "2c5f43c8-274f-8401-b82a-8e752d015152"
   stages:
     - stage: path
       stageUuid: "9d6e22fb-5a8a-815c-9c16-f9d20f2c1b0f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c9a1d74f-eb07-8a80-9b1d-bde46f15ed60"
     - stage: horo
-      stageUuid: "0dd3e447-a1e7-896a-82ff-6fe9508d6702"
+      stageUuid: "cde3f156-590d-8e29-b032-a36bb0a1c4fa"
     - stage: seal
       stageUuid: "7e48da22-6c40-8767-9cf0-31bb90b04753"
     - stage: uuid
-      stageUuid: "396e320e-113f-827f-b7a8-58eadfd18fa1"
+      stageUuid: "81a7d1a6-36f9-8097-a628-8d401c8a6b4b"
 version: 2
 ---
 # rules/unreached — 80 atoms of code that nothing reaches, from any entry this corpus has
@@ -81,6 +81,32 @@ it — while `admin/ui/cells`, `admin/ui/dashboard` and `admin/ui/nav` are, beca
 So this proves nothing IMPORTS the atom. Whether that means *wire it* or *drop it* is a per-atom
 product decision, and deleting 80 atoms because a lexical walk did not find them is exactly the blind
 sweep this corpus refuses.
+
+## It is not a chain — the hypothesis is refuted
+
+The obvious read of 69 unreached atoms is a chain: find the root, wire it, and the rest follow.
+`atomLeverage` measures it, and the answer is no.
+
+| | |
+| --- | ---: |
+| unreached atoms | 69 |
+| imported by **nobody at all** | 5 |
+| imported **only by their own test, or by other unreached code** | 64 |
+| **closing only themselves** | **63 of 69** |
+
+The single lever is `payable`, whose barrel is nothing but `export *` over `aging · analytics ·
+discounts · workflow` — wire it and five close. After that the list is flat: `google/workspace`,
+`iso/3166/1`, `iso/3166/2`, `llm` and `separation` close two each, and everything else closes one.
+
+So this is not one gap with 69 symptoms. It is **63 independent atoms that each have a proof and no
+consumer** — `rules/unfolded`'s "its single use is its own test" at atom scale, and the reason each
+needs a per-atom decision rather than one wire.
+
+The `payable` case names what that decision costs. AP aging, analytics, early-payment discounts and
+approval workflow are all implemented and tested; `payload-types.ts` carries a `payable` slug, so the
+collection exists too — and **nothing imports `@/payable`**. The mentions elsewhere are prose and a
+string literal. Whether that is a wire to write or capability to drop is a product call, which is
+exactly the boundary this atom already states.
 
 **Law — [[law]]: an atom of code earns its place by being reachable. Try every door — deployed,
 gated, shipped, or a word — and what is left is code nothing runs. Name it, ratchet it, and decide

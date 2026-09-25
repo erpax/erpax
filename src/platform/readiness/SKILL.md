@@ -3,7 +3,7 @@ name: readiness
 description: Use when reasoning about readiness — enumerates the live MCP tool surface and groups it; folds that into a single manifest a reader can act on.
 atomPath: "platform/readiness"
 coordinate: "platform/readiness · 5/round · 6d80de8c"
-contentUuid: "cd151703-7d7e-5c46-85a2-82e6a020c2b0"
+contentUuid: "d56536cc-4f73-5af4-be87-68e946a21787"
 diamondUuid: "a9a33f26-8778-898b-990a-106ed3cd486e"
 uuid: "6d80de8c-7654-8a6e-b1c5-b5ef8dacb376"
 horo: 5
@@ -11,7 +11,6 @@ typography:
   partition: platform
   bondDegree: 3
 standards:
-  - MCP
   - "MCP 0.6 — tools/list extension"
   - "W3C JSON-LD 1.1 (manifest is JSON-serializable + linkable)"
   - "W3C-JSON-LD-1.1"

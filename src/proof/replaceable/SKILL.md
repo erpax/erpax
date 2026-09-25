@@ -2,33 +2,33 @@
 name: replaceable
 description: "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…"
 atomPath: "proof/replaceable"
-coordinate: "proof/replaceable · 4/weave · 9b9c4b1f"
-contentUuid: "331ea5e8-0a39-55a8-9c10-fa940c0c02d6"
-diamondUuid: "c6f6fbe1-6ffd-8554-804d-88770a28c9bd"
-uuid: "9b9c4b1f-c762-8125-9bd7-1eb682f8a333"
-horo: 4
+coordinate: "proof/replaceable · 2/share · 587a6b0a"
+contentUuid: "97cef735-a84d-5d87-b1cd-822bb4a6f72d"
+diamondUuid: "073b89ce-5b41-88e5-a4d0-4ce85ca837eb"
+uuid: "587a6b0a-cf7b-8acb-94ed-b2c441319e96"
+horo: 2
 typography:
   partition: proof
-  bondDegree: 9
+  bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4f41c0a8-3c23-8f6a-ad6d-f8e9c7fbfed4"
+  computationUuid: "ce2555db-06b3-8fcd-81e5-065bbdf07c90"
   stages:
     - stage: path
       stageUuid: "5f5c9b89-d5ca-8eec-8edb-3eaaddac934c"
     - stage: trinity
       stageUuid: "258ef1c5-f44d-8ec5-82af-7bed98c76d76"
     - stage: boundary
-      stageUuid: "de3ddb03-ee32-8cda-a72e-43350b7a6792"
+      stageUuid: "2a4f9a61-fb37-8ea5-94b7-f9f5a9e602f0"
     - stage: links
-      stageUuid: "443c335f-e44e-8636-b3a2-ca927c94ecc6"
+      stageUuid: "7b21f03e-f4a3-809f-9b52-236a62b33404"
     - stage: horo
-      stageUuid: "e272e2be-144d-87b2-b04a-5b518ad37c8e"
+      stageUuid: "8c792010-5d1f-859d-911e-a49b280ace0d"
     - stage: seal
       stageUuid: "6e36f693-8734-847a-814c-dd3c318a8664"
     - stage: uuid
-      stageUuid: "0d0d826e-83b3-86c5-88ba-040e82fc2660"
+      stageUuid: "bb5e4bb2-e73b-8856-a142-e33c14e8deb0"
 version: 2
 ---
 # proof/replaceable — a cited standard is an axiom until a gate discharges it
@@ -51,7 +51,7 @@ Doing so immediately found a normalisation defect: `ISO-19011:2018` and `ISO 190
 
 ## The queue, computed
 
-`WCAG 2.2` leads with **29 citing atoms and no gate on any criterion**. Then BCP 47, WHATWG HTML, WAI-ARIA 1.2, ISO 27001 A.5.23, W3C HTML5, ActivityPub. Each line is a theorem not yet written.
+The queue is ordered by what a discharge would buy, and each line is a theorem not yet written. It is not restated here: this paragraph once led with `WCAG 2.2` at 29 citing atoms, and the corpus then DISCHARGED it — the sentence went stale by the tree getting better, which is [[rules]]/drift's law. RECORD (2026-09-21): 254 open, led by `WHATWG HTML`, `ISA 501`, `WAI ARIA 1.2` and `W3C HTML5`.
 
 `EMPIRICAL` is **declared** in the open: a DOI is assigned by a registration agency, an RFC 3161 timestamp is a third party's signature, `SOX §302` is a natural person's certification, and a statute's text is not in this repo. No amount of reading `src` decides them, and a gate is the wrong instrument — pretending otherwise manufactures the false conformance these gates exist to refuse. Adding such a citation is therefore **not** a regression, so the ratchet counts only the replaceable ones; counting statutes would push the corpus toward citing fewer laws rather than gating more of them.
 
@@ -61,9 +61,55 @@ A discharge is measured at the **standard** level, but conformance is per **crit
 
 And a gate in an atom that cites a standard is not proof the gate **checks that standard** — the link is co-location, not entailment. It reports where a citation *could* be answered, and a human reads whether it is.
 
-The `## Standards` section is also not always a standard: `Group theory` and a book citation appear there. That is prose in a slot meant for conformance claims, and it is per-case, not something to normalise away.
+## Two populations, and one of them is undischargeable
+
+The `## Standards` section is not always a standard. `splitQueue` measures it rather than
+normalising it away: of 254 open, **162 are obligations and 92 are references** — `Grassé,
+stigmergy`, `Kolmogorov complexity`, `Noether's theorem`, `Brundtland Report`. Those are the
+provenance of an idea, cited honestly, and no gate will ever discharge a branch of mathematics.
+Counting them as undischarged conformance inflates the debt AND hides the real debt underneath it.
+
+**The split now decides the axis.** `replaceableStandards` counts OBLIGATIONS, for the reason
+`EMPIRICAL` is excluded: a gate is the wrong instrument. Counting `Kolmogorov complexity` as
+undischarged conformance pushes the corpus toward citing LESS literature rather than gating more
+law — the argument this atom already makes about statutes. 254 → **164**, and the ceiling fell with
+it in the commit that earned it ([[rules]]/slack).
+
+Two corrections came first, in this order, because moving an axis onto a classification before the
+classification is right would hide debt rather than measure it: four PHANTOMS (a `###` subsection
+inside `## Standards` in [[supto]], whose bullets about how to *write* banners were read as cited
+standards — the section reader stops at the next `##`), and four STATUTES rescued from literature
+(`Кодекс на труда`, `ЗКИР`, `Търговски регистър`, the БУЛСТАТ register law — obligations written by
+name rather than number). `ISSUING_BODIES` and `NAMED_STANDARDS` are DECLARED, and the failure direction that
+matters is **understating obligations**: `ActivityPub`, `eIDAS`, `Linked Data Notifications` and
+`WHOQOL` are real standards carrying no number and sat in the reference bucket until they were
+named. Bulgarian statutes written in prose form — `Кодекс на труда`, `ЗКИР`, the БУЛСТАТ register
+law — are still in the wrong bucket, and that is said here rather than quietly counted as
+literature.
+
+**A bold lead ending in `:` labels a value, never a standard.** `- **Version:** 1.2` was yielding
+the standard `Version:`, and three such labels sat in the corpus's conformance debt — the same
+defect [[standards]]/emit paid for counting prose about banners as banners.
 
 **Law — [[law]]: a standard you cite is an axiom you assume. Discharge it with a gate that fails closed, or say plainly that you assume it — a conformance claim nothing can contradict is the most respectable-looking lie a corpus can tell.**
+
+## An attribution is not an obligation
+
+`namesAnObligation` began `if (/\d/.test(standard)) return true`, so **`Graham (1969)`,
+`Shannon (1948)` and `Antoine (1888)`** each entered the queue as something a gate must
+eventually enforce for conformance. They are attributions. A theorem is discharged by a proof,
+never by conformance, and a ladder that lists a 1948 paper beside a directive is measuring two
+different obligations under one name.
+
+Nine of the ten citations in that shape are papers. **The tenth refutes the bare shape rule:**
+`Hague Apostille Convention (1961)` is a real treaty that carries its year exactly the same way.
+So the year alone decides nothing — an **instrument word** in the text is what makes it an
+obligation, and `INSTRUMENT_WORDS` is declared in the open rather than inferred, because no
+theorem separates a treaty from a paper by shape.
+
+Both directions are pinned by test. A reclassification that quietly demoted a treaty would be a
+worse defect than the miscount it fixed: obligations 168 → 159, references 87 → 96, and the Hague
+convention stays exactly where it was.
 
 ## Standards
 

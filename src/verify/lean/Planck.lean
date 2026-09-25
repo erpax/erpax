@@ -93,4 +93,69 @@ def schwarzschildPerMass : Dim := ⟨0, 2, -4⟩
 theorem compton_meets_schwarzschild_at_the_planck_mass :
     div comptonPerMass schwarzschildPerMass = mul mass mass := by decide
 
+/-- The remaining constants, doubled. -/
+def hbarOverCSquared : Dim := ⟨2, 0, -4⟩
+def gOverCCubed : Dim := ⟨0, 2, -6⟩
+
+/-- time * mass = hbar / c^2. G cancels here too — the second purely quantum combination. -/
+theorem time_times_mass_is_hbar_over_c_squared : mul time mass = hbarOverCSquared := by decide
+
+/-- time / mass = G / c^3. hbar cancels — the second purely gravitational combination. -/
+theorem time_over_mass_is_g_over_c_cubed : div time mass = gOverCCubed := by decide
+
+/--
+  All FOUR pairwise combinations, not the two that were obvious.
+
+  length and time each pair with mass the same way — multiply and the gravitational constant goes,
+  divide and the quantum one does. The two length statements were proved first and the two time
+  statements were simply not asked, which is the shape a gap usually takes here: not a wrong answer,
+  an unasked question.
+-/
+theorem multiplying_by_mass_always_kills_g (_ : Unit) :
+    ((mul length mass).g == 0 && (mul time mass).g == 0) = true := by decide
+
+theorem dividing_by_mass_always_kills_hbar (_ : Unit) :
+    ((div length mass).hbar == 0 && (div time mass).hbar == 0) = true := by decide
+
+/-- Planck energy: mass times c^2. -/
+def energy : Dim := ⟨1, -1, 5⟩
+
+/--
+  Energy is mass times c SQUARED, and the kernel refused the first attempt at saying so.
+
+  I wrote `mul mass cc`, which is mass times c — the exponents doubled make that easy to slip,
+  because `cc` carries c with a doubled exponent of 2 and c squared is 4. The refusal is the
+  bookkeeping doing its job: a wrong power cannot be argued with here.
+-/
+theorem energy_is_mass_times_c_squared : mul (mul mass cc) cc = energy := by decide
+
+/-- The 3x3 determinant of three quantities, read as exponent rows. -/
+def det (a b c : Dim) : Int :=
+  a.hbar * (b.g * c.c - b.c * c.g) - a.g * (b.hbar * c.c - b.c * c.hbar) + a.c * (b.hbar * c.g - b.g * c.hbar)
+
+/--
+  COMPLETENESS: length, mass and time are independent, so they SPAN.
+
+  Their exponent rows have determinant 4, which is not zero — so no one of them is a product of
+  powers of the other two, and every quantity expressible in hbar, G and c is reachable from them.
+  That is why a Planck system needs exactly these three and why adding a fourth would be a
+  redefinition rather than an extension.
+
+  It is also the reason the cancellations above are not coincidences: in a basis of three, each
+  pairwise combination must drop exactly one direction.
+-/
+theorem the_three_are_independent : det length mass time = 4 := by decide
+
+theorem independent_means_nonzero : det length mass time ≠ 0 := by decide
+
+/--
+  Energy needs no fourth quantity: it is built from the three.
+
+  c is length over time, so energy = mass * (length/time)^2 — written entirely in l, m and t. The
+  first version of this claim was `det length mass energy ≠ 0 → True`, which is vacuous: an
+  implication into True cannot fail, and [[rules]]/mirror names that shape exactly. This one can.
+-/
+theorem energy_is_built_from_the_three :
+    mul mass (mul (div length time) (div length time)) = energy := by decide
+
 end Planck

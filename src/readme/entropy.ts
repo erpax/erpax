@@ -18,9 +18,9 @@ import { horoRatio, isHoroStep, type HoroStep } from '@/horo'
 import { entropyProofMarkdown } from '@/entropy'
 import { folderNameValid, trinityStateOf, type PivotFolderInput } from '@/pivot'
 import type { DiamondMembershipViolation } from '@/diamond/membership'
-import { COMPARABLE_UNIT, LANDAUER_BIT } from './entropy-unit'
+import { COMPARABLE_UNIT, HORO_DECADE, LANDAUER_BIT, comparableUnitFormula } from './entropy-unit'
 
-export { COMPARABLE_UNIT, LANDAUER_BIT } from './entropy-unit'
+export { COMPARABLE_UNIT, HORO_DECADE, LANDAUER_BIT, comparableUnitFormula } from './entropy-unit'
 
 /** Minimal statement shape — avoids readme/index circular import. */
 export interface EntropyStatementInput {
@@ -114,9 +114,34 @@ export interface CorpusEntropyRollup {
 
 const roundEb = (n: number): number => exactRound(n * 1000) / 1000
 
+/**
+ * seal ÷ gap — and `1` where gap is zero, which is a FLOOR, not a measurement.
+ *
+ * With no gap the ratio is unbounded: there is no finite number of times zero goes
+ * into 13.385 eb. Reporting `1` is rules/slack's defect in a printed figure — the
+ * corpus is better than it says — and worse, `1` is also what an exactly break-even
+ * atom reports, so the best state and the merely-adequate one print the same digit.
+ * `sealedFractionOf` is the number to read; this one is kept because fixtures and the
+ * admin rollup already carry it.
+ */
+export function sealGapRatioOf(sealEb: number, gapEb: number): number {
+  if (gapEb > 0) return roundEb(sealEb / gapEb)
+  return sealEb > 0 ? 1 : 0
+}
+
+/**
+ * The bounded dual — seal ÷ (seal + gap) ∈ [0, 1]. Defined at every input, including
+ * the zero-gap case the ratio cannot express, and it separates the two states the
+ * ratio collides: fully sealed is `1`, exactly break-even is `0.5`.
+ */
+export function sealedFractionOf(sealEb: number, gapEb: number): number {
+  const mass = sealEb + gapEb
+  return mass > 0 ? roundEb(sealEb / mass) : 0
+}
+
 const horoScaleOf = (digit: number | null, horoScaled: boolean): number => {
   if (!horoScaled || digit === null) return 1
-  return isHoroStep(digit) ? horoRatio(digit as HoroStep) : 1
+  return isHoroStep(digit) ? horoRatio(digit as HoroStep, HORO_DECADE) : 1
 }
 
 /**
@@ -319,7 +344,7 @@ export function accountGapsAndSeals(input: AccountGapsAndSealsInput): FolderEntr
   const totalGapEb = roundEb(gaps.reduce((s, l) => s + l.comparable, 0))
   const totalSealEb = roundEb(seals.reduce((s, l) => s + l.comparable, 0))
   const netEntropyEb = roundEb(totalGapEb - totalSealEb)
-  const sealGapRatio = totalGapEb > 0 ? roundEb(totalSealEb / totalGapEb) : totalSealEb > 0 ? 1 : 0
+  const sealGapRatio = sealGapRatioOf(totalSealEb, totalGapEb)
 
   return {
     unit: COMPARABLE_UNIT,
@@ -417,7 +442,7 @@ export function aggregateCorpusEntropy(
   totalGapEb = roundEb(totalGapEb)
   totalSealEb = roundEb(totalSealEb)
   const netEntropyEb = roundEb(totalGapEb - totalSealEb)
-  const sealGapRatio = totalGapEb > 0 ? roundEb(totalSealEb / totalGapEb) : totalSealEb > 0 ? 1 : 0
+  const sealGapRatio = sealGapRatioOf(totalSealEb, totalGapEb)
 
   const bySector: SectorEntropyRollup[] = [...sectorAcc.entries()]
     .sort((a, b) => b[1].gapEb - a[1].gapEb || a[0].localeCompare(b[0]))
@@ -446,7 +471,7 @@ export function mergeCorpusEntropy(a: CorpusEntropyRollup, b: CorpusEntropyRollu
   const totalGapEb = roundEb(a.totalGapEb + b.totalGapEb)
   const totalSealEb = roundEb(a.totalSealEb + b.totalSealEb)
   const netEntropyEb = roundEb(totalGapEb - totalSealEb)
-  const sealGapRatio = totalGapEb > 0 ? roundEb(totalSealEb / totalGapEb) : totalSealEb > 0 ? 1 : 0
+  const sealGapRatio = sealGapRatioOf(totalSealEb, totalGapEb)
   const sectorAcc = new Map<string, { gapEb: number; sealEb: number; folders: number }>()
   for (const row of [...a.bySector, ...b.bySector]) {
     const cur = sectorAcc.get(row.partition) ?? { gapEb: 0, sealEb: 0, folders: 0 }
@@ -524,7 +549,7 @@ export function renderFolderEntropySection(
     ...(atomPath
       ? [`> account code \`${atomPath}\` · currency \`${accounting.unit}\` (entropy-bit)`, '']
       : []),
-    `Comparable unit: **${accounting.unit}** (entropy-bit) — \`eb = amount × log₂(weight) × horoRatio/10\`.`,
+    `Comparable unit: **${accounting.unit}** (entropy-bit) — \`${comparableUnitFormula()}\` (log₂ of the multiplicity the line opens or closes; the horo factor on ring lines only).`,
     '',
     '| [[gap]] debit (eb) | [[seal]] credit (eb) |',
     '| -----------------: | -------------------: |',
@@ -535,7 +560,7 @@ export function renderFolderEntropySection(
   L.push(
     `| Σ gap \`${accounting.totalGapEb}\` eb | Σ seal \`${accounting.totalSealEb}\` eb |`,
     '',
-    `> net residual \`${accounting.netEntropyEb}\` eb · seal/gap ratio \`${accounting.sealGapRatio}\` · [[entropy]] · [[seal]]`,
+    `> net residual \`${accounting.netEntropyEb}\` eb · sealed fraction \`${sealedFractionOf(accounting.totalSealEb, accounting.totalGapEb)}\` · seal/gap ratio \`${accounting.sealGapRatio}\` · [[entropy]] · [[seal]]`,
     '',
   )
   return L.join('\n')

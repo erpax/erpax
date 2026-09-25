@@ -15,8 +15,11 @@ export {
   setRoot,
   type RootKind,
   type MerkleStep,
+  merkleLeaf,
+  merkleNode,
+  merkleRoot,
   merkleProof,
-  verifyMerkleProof,
+  verifyInclusion,
 } from './fold'
 
 export interface CollisionClasses {

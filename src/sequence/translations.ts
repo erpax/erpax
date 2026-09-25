@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when navigating or composing the erpax Payload single-word skill library — to find the right atomic skill, understand how they interact (with each other, themselves, and external systems), or in what order to apply them. The index over the basic skills, ordered 0·3·6·9·1·2·4·8·7·5.",
-    "uuid": "93fe8a06-ca95-8659-8bc6-b76f9d4fa24d",
+    "uuid": "9e1d8d4a-0e4a-8685-962c-cf5a4abf8ab8",
     "words": [
       "use",
       "when",

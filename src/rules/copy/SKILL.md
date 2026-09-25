@@ -2,33 +2,33 @@
 name: copy
 description: "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…"
 atomPath: "rules/copy"
-coordinate: "rules/copy · 7/descent · baca7180"
-contentUuid: "ae7737ec-9d9f-54cb-ada1-2fc66011fe95"
-diamondUuid: "9122c459-57b9-8a53-847d-878748081469"
-uuid: "baca7180-ec05-8e96-a553-c7ce3ac8b914"
-horo: 7
+coordinate: "rules/copy · 5/round · 55a05b9a"
+contentUuid: "75a37386-8418-5374-a3d7-7e70cdd23234"
+diamondUuid: "15fca5b1-a572-8148-8a58-40caabe0e1c5"
+uuid: "55a05b9a-d3fd-869b-981c-babddcc91a58"
+horo: 5
 typography:
   partition: rules
-  bondDegree: 9
+  bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4fd1fa23-6870-8886-8d8e-a09cc755ebf5"
+  computationUuid: "86c668c7-21f4-8d34-8025-af90e881f2a3"
   stages:
     - stage: path
       stageUuid: "d82d2c62-1ae9-86e1-bad6-7da93650e4b2"
     - stage: trinity
       stageUuid: "80088271-6afa-8d2a-82c3-7dc7c7b507eb"
     - stage: boundary
-      stageUuid: "b004f449-bcde-8a42-9c5a-24953044ee55"
+      stageUuid: "e9a38fb2-02f1-86c7-88ef-57a6ec4e15ef"
     - stage: links
-      stageUuid: "b47695fc-779e-865c-8e71-aa4982d3d90e"
+      stageUuid: "a5a9accf-028f-8623-bbbd-05f0f08d970d"
     - stage: horo
-      stageUuid: "91eb9535-446f-8263-ba4a-56e3a3dd3ee8"
+      stageUuid: "0d6d087b-fed8-8d9b-8d97-a2985b0ff75c"
     - stage: seal
       stageUuid: "756a028c-a9e5-86e1-93d5-ccfcd14a267e"
     - stage: uuid
-      stageUuid: "b58785b1-4dd1-89b2-8f56-5a6d19fced2a"
+      stageUuid: "92b688ef-307b-84bb-a10d-05884ceac9e2"
 version: 2
 ---
 # rules/copy — one truth at two addresses, found by content-addressing the body
@@ -92,6 +92,120 @@ reads `.ts` and `.tsx`, skips generated faces (which restate every symbol) and s
 scaffolding legitimately repeats). And it finds copies, never near-copies: a body edited by one
 character is invisible to it, which is the price of using an address instead of a score. And as above, a matching body says
 nothing about the constants it reads — that check is the human's, before the cut.
+
+## The copy × cycle cross, formulated and then built
+
+[[conjecture]]'s enumerator ranked `rules/copy × rules/cycle` **second of 528 crosses at 1.11 bits**
+— both laws widely cited (14 and 28 SKILLs), never drawn together. The enumeration produced the
+pair; the claim it names is real, and this is it:
+
+**A duplicated body whose two FILES lie in one strongly connected component is strictly worse than
+an ordinary copy.** Inside a tangle the initialisation order of the two files is decided by the
+import graph rather than by either author, so the same text can run under conditions neither of
+them chose — and neither law sees it alone. `rules/copy` reports two identical bodies and says
+nothing about when they run; `rules/cycle` reports a tangle and says nothing about what is inside
+it.
+
+| | count (2026-09-25) |
+| --- | ---: |
+| duplicate bodies | 13 |
+| **spanning two or more files** | **7** |
+| import tangles | 13, over 152 files |
+| **cross-file copies inside ONE tangle** | **0** |
+
+**Zero over a non-empty population.** Both ingredients exist in quantity, so the gate stands where
+traffic passes rather than being a check that cannot fire ([[rules]]/unraised) — and the baseline is
+0 because there is no acceptable number of bodies duplicated across files whose running order is an
+accident.
+
+**Same-file duplicates are excluded.** A file is trivially in its own component, so counting them
+would make every same-file duplicate a tangle finding — this corpus's noise floor, paid for four
+times. The `readme/compute` pair at lines 926 and 966 is exactly that case and is correctly not
+here.
+
+**Honest boundary.** This proves two bodies are the same TEXT and that their files are mutually
+reachable — never that they diverge, and never that the order actually differs on any given entry
+into the graph. That is [[rules]]/cycle's own boundary restated: entangled is not fatal, and which
+loops bite depends on how the graph is entered. It closes the case where a copy's two halves cannot
+even be reasoned about independently.
+
+## A copy no site earns — found by measuring, not by ranking
+
+[[conjecture]]'s prose ranking put `copy × unfolded` nowhere near the top. Measuring the
+intersection put it **second of fifteen**, on 11 shared files — and its own top live pick,
+`concentration × copy`, measured exactly **0**.
+
+`unearnedCopies` is the law that lives there: a body duplicated across files where at least one
+site's export has **no more than one caller**. **8 groups**, and in every one of them *both* copies
+are unearned — the body is written twice and neither copy is called more than once, so the
+duplication is not even paying for itself once.
+
+The largest is 65 nodes across `law/folder/word.ts` and `navigation/distribute.ts`.
+
+**Honest boundary.** [[rules]]/unfolded's own boundary carries straight through: erpax ships as
+`@erpax/*` packages, so an export with no in-repo caller may be a public face, and a site whose
+single use is its own test exists to be tested. This names candidates where two laws agree, which
+is a stronger signal than either alone and still not a purge list.
+
+## The first fold, and why it ran that direction
+
+`pivotSkillMd` stood twice at **65 AST nodes** — `law/folder/word.ts:597` and
+`navigation/distribute.ts:111` — byte-identical template literals, and `unearnedCopies` reported
+**both** sites un-folded: written twice, neither called more than once.
+
+Two checks before the cut, both of which this atom demands:
+
+- **What does the body close over?** Nothing. It is a pure function of `(hub, leaf, facet)`, so the
+  AR/AP lesson — identical text over different constants — does not apply here. That check is the
+  human's, and it is the reason `rules/copy` reports candidates rather than applying them.
+- **Which way does the fold run?** `distribute` already imports from `law/folder/word`, so folding
+  onto `word` adds **no import edge**; the reverse would have closed a cycle ([[rules]]/cycle).
+  A DRY fix that creates a tangle trades one law for another.
+
+duplicate bodies **13 → 12**, unearned copies **8 → 7**, tangles unchanged at 13. Both ceilings
+ratcheted in the same commit ([[rules]]/slack), and `copy` came down from 19 to its live 12 — a
+hand-written baseline, which the slack axis does not read, so it had been sitting seven above the
+tree for some time.
+
+## Access policies — the sub-floor case, where a copy matters at any size
+
+`minNodes` is declared at 40 and that floor is correct for ordinary bodies. It is **wrong for an
+access policy**, whose body is routinely one line — and that is not hypothetical:
+
+| the policy | where it was | how the floor hid it |
+| --- | --- | --- |
+| `neverDelete` = `() => false` | privately in **4** statutory collections | 1 node |
+| `auditTrailModifyDenied` = `() => { return false }` | a **5th** copy | 1 node, and braces changed the text |
+| `auditTrailCreate` = `isSuperAdmin(req.user)` | a 2nd `superAdminOnly` | 2 nodes |
+| `adminOnly` · `userIsSuperAdmin` | diverged 2nd bodies in `plugins/auth/access` | small, and unused |
+
+So `accessPolicies` is exempt from the floor, and a policy is identified by **Payload's own type
+annotation** — `const X: Access` or `const X: FieldAccess` — parsed, never guessed.
+
+`policyAddresses` groups by `family + hash`. Three refusals keep the number honest, and each one was
+a false positive this gate reported before it was narrowed:
+
+- **`Access` and `FieldAccess` are different interfaces.** `superAdminOnly: Access` and
+  `fieldAccess: FieldAccess` share a body and satisfy two different contracts; grouping by hash
+  alone reported them as a copy. They are not.
+- **`{ return x }` and `x` are the same policy.** The 5th `neverDelete` hid behind a pair of braces.
+  A single-return block is normalised to its expression, or content-addressing measures syntax
+  instead of meaning.
+- **One name in two atoms is not a copy.** `updateAndDeleteAccess` exists in `tenants/access` and
+  `users/access` with genuinely different bodies — one filters by `id`, the other by
+  `tenants.tenant` and grants self-access. A first draft of this gate flagged that as shadowing,
+  which is exactly the population [[rules]]/face measured and **refuted** (156 matches, dominated by
+  Next's `POST` convention and per-atom `translations`). The path is the message: two atoms may
+  honestly name their own collection's policy alike, so that half was dropped rather than shipped
+  as noise.
+
+Zero is a **theorem**, not a ratchet: a rule a reviewer must trust may not be a coin flip between
+two bodies. Registered as the `policy-address` guardian, so it is a wall rather than this paragraph.
+
+**Honest boundary.** This proves a policy body is **written once**, never that it is **correct** or
+called in the right place — an alias is trusted, a policy assembled by a factory or returned from a
+higher-order helper has no `: Access` annotation to find, and the 123 collection access legs whose
+value is not an object literal are outside it.
 
 **Law — [[law]]: the same body at two addresses is one implementation and one decoy. Content-address
 every body; where two agree, one of them is unmaintained and nobody knows which.**

@@ -3,13 +3,13 @@ name: leads
 description: "Use when capturing and qualifying prospects before they become customers — inbound/outbound sourcing, BANT/MEDDIC lead scoring, MQL/SQL progression, and conversion to an opportunity or customer on close-won. The CRM pre-customer lead collection."
 atomPath: leads
 coordinate: "leads · 7/descent · c9a148ff"
-contentUuid: "d1b3830f-e85c-5b40-91e9-e0d090286c9c"
+contentUuid: "020f2f84-c56e-5d8a-a877-65f1d5bacb8d"
 diamondUuid: "ab7e44a1-13a7-89dd-93ff-50616664ebcd"
 uuid: "c9a148ff-b552-8f54-b0f1-da5cc919b7d7"
 horo: 7
 typography:
   partition: leads
-  bondDegree: 34
+  bondDegree: 39
 standards:
   - "GDPR Art.5 data-minimisation"
   - "GDPR Art.6(1)(f) legitimate-interest (B2B prospecting)"

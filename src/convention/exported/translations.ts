@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about an atom's PRODUCER obligation — every symbol consumed across atoms is re-exported from that atom's index (its one public face), so a deep importer can collapse to @/x; the producer-side dual of the importer conventions import and shallow, measured live as the index-reachable fraction of cross-atom symbols, enforced by the same import ratchet so it can only tighten toward coverage one (tamper-cost to infinity).",
-    "uuid": "714b82cf-154f-8a33-8e2d-a7ab22e2acf8",
+    "uuid": "a464e90e-eeed-8c8b-ae1f-8fd175c0802e",
     "words": [
       "use",
       "when",

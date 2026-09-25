@@ -24,7 +24,8 @@ import {
 } from '@/quantum/ftl'
 import { startSession, sessionAppend, sealSession, collaborate, type ChatSession } from '@/quantum/chat'
 import { isApprovedPqc, signPqc } from '@/beyond/pqc'
-import type { PqcAlgorithm, PqcSignature } from '@/beyond/types'
+import type { PqcAlgorithm } from '@/beyond/types'
+import type { PqcRefusal } from '@/beyond/pqc'
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 
@@ -57,10 +58,19 @@ export interface QuantumSecureEnvelope {
   readonly classicalDigest: string
   readonly algorithm: PqcAlgorithm
   readonly publicKeyFingerprint: string
-  readonly pqc: PqcSignature
+  /** The refusal, while no signing key is held — never a placeholder wearing a signature's shape. */
+  readonly pqc: PqcRefusal
   readonly hybrid: true
-  /** true iff algorithm is NIST-approved AND digests agree */
+  /**
+   * The POSTURE only: the algorithm is NIST-approved and the classical digest is well-formed.
+   *
+   * It read true over a `signatureB64` of `PLACEHOLDER-pending-libpqc-integration`, because it
+   * compared the echoed algorithm name and never looked at the signature. A quantum-secure
+   * envelope cannot hold while nothing has signed it ([[beyond]]/pqc).
+   */
   readonly holds: boolean
+  /** What is missing before `holds` can mean anything — empty once a key is wired. */
+  readonly refusal: string
 }
 
 /** Seal a payload under hybrid classical⊕PQC posture (fail-closed on unapproved alg). */
@@ -80,7 +90,9 @@ export function sealQuantumSecure(
     algorithm,
     publicKeyFingerprint: opts.publicKeyFingerprint,
   })
-  const holds = isApprovedPqc(algorithm) && pqc.algorithm === algorithm && classicalDigest.length === 36
+  const posture = isApprovedPqc(algorithm) && pqc.algorithm === algorithm && classicalDigest.length === 36
+  // nothing signed ⇒ nothing holds, whatever the posture
+  const holds = posture && pqc.signed !== false
   return {
     payloadUuid,
     classicalDigest,
@@ -89,6 +101,7 @@ export function sealQuantumSecure(
     pqc,
     hybrid: true,
     holds,
+    refusal: pqc.signed === false ? pqc.refusal : '',
   }
 }
 
@@ -101,7 +114,7 @@ export const QUANTUM_SECURE_BANKING_CORPUS: readonly Seal[] = [
   },
   {
     id: 'qsb-pqc-posture',
-    text: 'qsb = classical digest ⊕ NIST FIPS 203/204; holds ⇔ isApprovedPqc ∧ digests',
+    text: 'qsb = classical digest ⊕ NIST FIPS 203/204; holds ⇔ isApprovedPqc ∧ digests ∧ SIGNED — no key is held, so it does not hold',
     followUps: ['what is quantum secure banking', 'how does ML-DSA protect interbank messages'],
   },
   {
@@ -116,7 +129,7 @@ export const QUANTUM_SECURE_BANKING_CORPUS: readonly Seal[] = [
   },
   {
     id: 'qsb-holds',
-    text: 'holds ⇔ isApprovedPqc ∧ content-address ∧ consensus; stub verify ≠ forge-proof',
+    text: 'holds ⇔ isApprovedPqc ∧ content-address ∧ consensus ∧ a real signature; a refusal is not a signature',
     followUps: ['what is the boundary of quantum secure banking', 'when does PQC verify fail closed'],
   },
 ]
@@ -132,7 +145,7 @@ export const QUANTUM_SECURE_BANKING_BOOK = seal([
   ],
   [
     'what is quantum secure banking',
-    'classical content-address ⊕ FIPS 203/204; holds=isApprovedPqc∧digests',
+    'classical content-address ⊕ FIPS 203/204; holds=isApprovedPqc∧digests∧signed',
   ],
   [
     'how to develop quantum secure banking',

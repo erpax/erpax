@@ -9,6 +9,7 @@
  */
 import React from 'react';
 import { formatCurrency } from '@/format/amount';
+import { StatementSection } from '@/widget/section';
 import type { IncomeStatementData } from '@/analytics';
 
 interface IncomeStatementWidgetProps {
@@ -36,41 +37,22 @@ const IncomeStatementWidget: React.FC<IncomeStatementWidgetProps> = ({ data }) =
       <h2 className="text-lg font-semibold mb-4">Income Statement</h2>
 
       <div className="overflow-y-auto max-h-96 text-xs">
-        {/* Revenues */}
-        <div className="mb-3">
-          <div className="font-bold bg-primary/20 px-2 py-1">REVENUES</div>
-          {data.revenues.map((item) => (
-            <div key={item.accountCode} className="flex justify-between px-2 py-1 border-b">
-              <span>{item.accountName}</span>
-              <span className="text-right">{formatCurrency(item.balance)}</span>
-            </div>
-          ))}
-          <div className="flex justify-between px-2 py-1 bg-muted font-semibold">
-            <span>Total Revenues</span>
-            <span>{formatCurrency(data.totalRevenues)}</span>
-          </div>
-        </div>
-
-        {/* Cost of Goods Sold */}
-        <div className="mb-3">
-          <div className="font-bold bg-orange-100 px-2 py-1">COST OF GOODS SOLD</div>
-          {data.cogs.length > 0 ? (
-            <>
-              {data.cogs.map((item) => (
-                <div key={item.accountCode} className="flex justify-between px-2 py-1 border-b">
-                  <span>{item.accountName}</span>
-                  <span className="text-right">{formatCurrency(item.balance)}</span>
-                </div>
-              ))}
-              <div className="flex justify-between px-2 py-1 bg-muted font-semibold">
-                <span>Total COGS</span>
-                <span>{formatCurrency(data.totalCOGS)}</span>
-              </div>
-            </>
-          ) : (
-            <div className="px-2 py-1 text-muted-foreground">No COGS items</div>
-          )}
-        </div>
+        <StatementSection
+          title="REVENUES"
+          rows={data.revenues}
+          total={data.totalRevenues}
+          totalLabel="Total Revenues"
+          dense
+        />
+        <StatementSection
+          title="COST OF GOODS SOLD"
+          rows={data.cogs}
+          total={data.totalCOGS}
+          totalLabel="Total COGS"
+          tint="bg-orange-100"
+          dense
+          emptyLabel="No COGS items"
+        />
 
         {/* Gross Profit */}
         <div className="flex justify-between px-2 py-2 bg-blue-50 font-semibold border-y-2 mb-3">
@@ -78,26 +60,15 @@ const IncomeStatementWidget: React.FC<IncomeStatementWidgetProps> = ({ data }) =
           <span>{formatCurrency(data.grossProfit)}</span>
         </div>
 
-        {/* Operating Expenses */}
-        <div className="mb-3">
-          <div className="font-bold bg-red-100 px-2 py-1">OPERATING EXPENSES</div>
-          {data.operatingExpenses.length > 0 ? (
-            <>
-              {data.operatingExpenses.map((item) => (
-                <div key={item.accountCode} className="flex justify-between px-2 py-1 border-b">
-                  <span>{item.accountName}</span>
-                  <span className="text-right">{formatCurrency(item.balance)}</span>
-                </div>
-              ))}
-              <div className="flex justify-between px-2 py-1 bg-muted font-semibold">
-                <span>Total Op. Expenses</span>
-                <span>{formatCurrency(data.totalOperatingExpenses)}</span>
-              </div>
-            </>
-          ) : (
-            <div className="px-2 py-1 text-muted-foreground">No operating expenses</div>
-          )}
-        </div>
+        <StatementSection
+          title="OPERATING EXPENSES"
+          rows={data.operatingExpenses}
+          total={data.totalOperatingExpenses}
+          totalLabel="Total Op. Expenses"
+          tint="bg-red-100"
+          dense
+          emptyLabel="No operating expenses"
+        />
 
         {/* Operating Income */}
         <div className="flex justify-between px-2 py-2 bg-muted font-semibold border-y-2 mb-3">

@@ -3,14 +3,16 @@ name: sti
 description: "Use when reasoning about sti — names the column, and describe the union, and , and narrow a row to its subtype without a cast."
 atomPath: "types/sti"
 coordinate: "types/sti · 8/crest · 68ecb508"
-contentUuid: "66736bc6-b4d3-5b6f-b71a-d0c99518decb"
+contentUuid: "b91db77c-0b65-5899-aac2-10302c40c521"
 diamondUuid: "9706b770-01ea-8d03-9798-a3ae58a4dbd6"
 uuid: "68ecb508-7db9-8347-b3f4-d38d95923b47"
 horo: 8
 typography:
   partition: types
   bondDegree: 4058
-standards: []
+standards:
+  - "ECMA-262"
+  - "ECMA-262 ECMAScript-2024 baseline"
 bindings: []
 signatures:
   computationUuid: "c6f306f0-67e3-89d4-b012-b1ef7b9ed0cd"

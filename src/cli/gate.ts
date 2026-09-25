@@ -56,6 +56,9 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // existed. A lane that cannot run guards nothing — it reads as coverage and is silence. Named by
   // its full path, which is unambiguous by construction.
   ['face', 'pnpm erpax rules/face'],
+  // CITATION — a refactor may drop a symbol, never a statute ([[rules]]/citation). Its CI job
+  // checks out fetch-depth: 0; a shallow clone has no fork point and the ring comes back empty.
+  ['citation', 'pnpm erpax rules/citation'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],
   ['lint', 'pnpm erpax lint'],

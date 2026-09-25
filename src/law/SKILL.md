@@ -2,33 +2,33 @@
 name: law
 description: "Use when reasoning about law — Every directive that shaped erpax, distilled and saved as a skill (your own law: save the commands, don't lose them to the chat). Each law links to the atom it governs — the inboun"
 atomPath: law
-coordinate: "law · 8/crest · 7555fdc8"
-contentUuid: "aede484b-1c5b-5082-a5c7-588f254a2746"
-diamondUuid: "da7883cb-15bd-8666-be80-ca38cf4525cb"
-uuid: "7555fdc8-af72-81c8-9b65-fe2133dcd642"
-horo: 8
+coordinate: "law · 5/round · 54533cde"
+contentUuid: "5af8c4b5-dd92-5064-8109-3d80341a338b"
+diamondUuid: "ac086492-9d72-8e12-be97-6ffc2dbf7bf7"
+uuid: "54533cde-4ebc-87df-8c39-8acf2212ba60"
+horo: 5
 typography:
   partition: law
-  bondDegree: 9548
+  bondDegree: 9584
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a606c779-5800-8c81-86bd-195cf6e8c8f8"
+  computationUuid: "02be4e5b-1fa8-893b-811f-9fa2236d775a"
   stages:
     - stage: path
       stageUuid: "574b097b-34e1-8947-81b0-a1a75497bd8a"
     - stage: trinity
       stageUuid: "49109d54-385e-8779-b3a1-aebc5e48d27b"
     - stage: boundary
-      stageUuid: "f5982ef8-d445-8c22-999c-ed28620138b9"
+      stageUuid: "7de78765-6e13-89d1-9780-a846c11cadf9"
     - stage: links
-      stageUuid: "7221922a-8437-814f-afd9-4fa3af1db72f"
+      stageUuid: "0a52146d-2b8c-8094-a230-c4034a0afd4a"
     - stage: horo
-      stageUuid: "2e74140c-260c-8038-8f92-92da1dd36324"
+      stageUuid: "d0c3fc09-d8b6-87b2-8851-9101a1123df9"
     - stage: seal
       stageUuid: "3bdd3604-9737-88c7-a45a-4668a205a003"
     - stage: uuid
-      stageUuid: "e3cd617e-4d2d-8e97-a04e-e910a2749924"
+      stageUuid: "9cb8a70b-f1da-8d8d-bac7-534ea9252ee7"
 version: 2
 ---
 # law — the user's commands, saved as the canonical laws
@@ -91,5 +91,50 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 - **Always save the manual work to atoms.** When a session does work by hand — a paper, a synthesis, a one-off README — it MUST re-emerge from `src/`: fold it back into the atoms it draws from (their `SKILL.md`s) so it is regenerable and linked into the graph, never lost to the [[chat]]. Manual work that stays manual is a gap (entropy > 0); saved to its atoms it becomes computed source. The worked example IS this README — a [[proof]]-paper computed from the [[tests]] toward max forge-[[cost]] — saved back to [[proof]] · [[quantum]] · [[tamper]] · [[cost]]. — [[akashic]] · [[generate]] · [[self]] · [[proof]] · [[atom]]
 
 Composes [[atom]] · [[merge]] · [[collapse]] · [[trinity]] · [[gate]] · [[zeropoint]] · [[society]] · [[generate]] · [[harmony]] · [[fractal]] · [[self]] · [[akashic]].
+
+## The formula — `oneLaw` in `index.ts`
+
+The paragraph above was right and it was **prose**, so nothing could contradict it
+([[rules]]/refutable). `src/law/index.ts` was a generated stub exporting two mirror constants. The
+law every other law projects from had no executable form. It does now:
+
+```
+forgeLog2  = min( −checks·log₂(1 − coverage),  anchorBits )
+verifyLog2 = log₂(checks)
+the claim  = forgeLog2 − verifyLog2
+```
+
+`checks` is amplified before it is priced — replicas MULTIPLY under strong consistency
+(`replicationChecks`, CRAQ), machine-checked invariants ADD (`invariantChecks`) — and defaults to
+`CONFIRM_GATE_CHECKS`, the live gate's own axis count rather than a number anyone types.
+
+### What writing it down forced
+
+**The anchor is a CEILING, and the slogan hides it.** A forger may attack the external commitment
+instead of re-harmonising the graph, so no amount of coverage buys more work than the anchor holds.
+At coverage = 1 the cost is `anchorBits`, **not** `+∞` — `sloganHolds({ coverage: 1, anchorBits: 256 })`
+returns **false**, and a test asserts it. `coverageCostLog2` alone does return `+∞` at coverage 1;
+that is the model with an ideal anchor, and the law is the model with a real one.
+
+**And −0 is not a quantity of work.** `−checks·log₂(1 − 0)` is IEEE `−0`, which would have flowed
+into the asymmetry and every comparison downstream. Clamped at the source.
+
+## The unqualified slogan is false, and it was on the surfaces an agent reads first
+
+*"Zero entropy ⇒ infinite tamper-cost"* stood in `AGENTS.md` under **## One law**, in
+`.claude/skills/SKILL.md` three times — including the frontmatter `description`, which propagates
+into every agent's context — in `CITATION.cff`, and in `install.sh`. This SKILL already refused it
+in the paragraph above; the root surfaces asserted it anyway, one of them annotated *"(canonical in
+[[law]])"* while stating what [[law]] denies.
+
+It is false in **both** directions:
+
+| the implication | why it fails |
+| --- | --- |
+| zero entropy ⇒ … | reciprocity-entropy is the matrix-symmetry slack. It is 0 on the live tree **and prices nothing** — coverage is what feeds the cost, and it is below 1. |
+| … ⇒ infinite | the anchor caps the forge. `min(…, anchorBits)` is finite for every real anchor. |
+
+All four now state the terms and point at the computation. [[rules]]/drift's cure, applied to a law
+instead of a number: **state the invariant, or ask the arbiter — never restate the conclusion.**
 
 **Law — [[law]]: every directive is saved as a linked law and all emerge from the one — uuid-wiring every dimension raises the graph's coverage, and the modelled tamper-[[cost]] (`coverageCostLog2`) rises with it toward +∞ at coverage = 1 (finite below) under an external [[anchor]]; reciprocity-[[entropy]] is a DISTINCT audit signal, not an input to the cost (reciprocity = 1 ≠ coverage = 1); accept-always, verify-in-[[harmony]], each config a balanced double-entry [[gate]]way through index.ts.**

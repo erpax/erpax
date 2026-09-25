@@ -1,16 +1,5 @@
 /**
- * swarm — one mixer, one level up: work spread over agents, and what happens when one dies.
- *
- * THE SHAPE IS THE HEX'S. A hexacopter takes four stick numbers and produces six motor commands; a
- * swarm takes a set of tasks and produces an assignment across N agents. Both respect a per-actuator
- * limit, both CONSERVE, and both must survive losing one actuator — a hex re-mixes onto five motors
- * ([[rotation]]), a swarm re-assigns onto the surviving agents. It is the same fold, and this
- * corpus has now written it five times in five vocabularies, so it is written here once more and
- * pointed at work instead of thrust.
- *
- * THIS REPOSITORY ALREADY RUNS ONE. CI shards its integration tests sixteen ways — "Integration
- * Tests (shard 1/16)" through "(16/16)". That is exactly this problem: partitions of a corpus
- * spread over workers, where one worker dying must not lose a shard.
+ * swarm — one mixer, one level up: work spread over agents, and what happens when one dies. THE SHAPE IS THE HEX'S. See SKILL.md.
  *
  * @standard Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan
  */
@@ -51,18 +40,7 @@ export interface Assignment {
 
 const healthy = (a: Agent): boolean => a.healthy !== false
 
-/**
- * Assign the work.
- *
- * Longest-processing-time first: heaviest task to the least-loaded agent that can still hold it.
- * DETERMINISTIC — ties break on id, so the same input always gives the same assignment. A scheduler
- * that shuffles under a tie makes a failure impossible to reproduce, which is the property you need
- * most on the day it goes wrong.
- *
- * LPT is an APPROXIMATION, not an optimum: Graham's bound is 4/3 − 1/(3m) of the best possible
- * makespan. Optimal partitioning is NP-hard, and a gate claiming optimality here would be a claim
- * nothing could check.
- */
+/** Assign the work. Longest-processing-time first: heaviest task to the least-loaded agent that can still hold it. See SKILL.md. */
 export function assign(agents: readonly Agent[], tasks: readonly Task[]): Assignment {
   const live = agents.filter(healthy)
   const load = new Map<string, Task[]>(live.map((a) => [a.id, []]))
@@ -105,12 +83,7 @@ export function assign(agents: readonly Agent[], tasks: readonly Task[]): Assign
   return { placements, unassigned, totalWeight, placedWeight }
 }
 
-/**
- * Every task is placed or named, and the weights add up. Nothing evaporates between the two.
- *
- * Both halves are load-bearing and neither implies the other: weights can balance while a
- * zero-weight task is lost, and counts can balance while a weight is misread.
- */
+/** Every task is placed or named, and the weights add up. Nothing evaporates between the two. See SKILL.md. */
 export function conserves(a: Assignment, epsilon = 1e-9): boolean {
   const unplacedWeight = a.unassigned.reduce((s, t) => s + t.weight, 0)
   return exactAbs(a.placedWeight + unplacedWeight - a.totalWeight) <= epsilon
@@ -130,22 +103,91 @@ export function coverage(a: Assignment): number {
   return a.totalWeight === 0 ? 1 : a.placedWeight / a.totalWeight
 }
 
-/**
- * The makespan: the busiest agent's load. This is what the swarm's wall-clock actually is — the
- * mean is the number that flatters, and the max is the number you wait for.
- */
+/** The makespan: the busiest agent's load. See SKILL.md. */
 export function makespan(a: Assignment): number {
   return a.placements.reduce((m, p) => (p.load > m ? p.load : m), 0)
 }
 
 /**
- * Re-assign after losing agents.
+ * Graham's 1969 bound as arithmetic: (4m − 1) ÷ 3m, the exact rational form of
+ * 4/3 − 1/(3m). One division, so `lptBound(3)` is 11/9 and never a typed 1.222.
  *
- * The survivors take the whole load, not just the dead agent's share — re-running the assignment
- * from scratch beats patching it, because moving only the orphaned tasks leaves the survivors
- * unbalanced in a way that compounds with each further loss. A hex does the same: it re-mixes, it
- * does not bolt the missing motor's command onto one neighbour.
+ * m = 1 gives exactly 1 — LPT on one machine IS optimal — and the bound rises toward
+ * 4/3 as m grows, never reaching it.
  */
+export function lptBound(m: number): number {
+  return m > 0 ? (4 * m - 1) / (3 * m) : 1
+}
+
+/**
+ * A lower bound on the OPTIMAL makespan: no schedule beats the heaviest single task
+ * (it runs somewhere, whole — tasks are indivisible), and none beats the perfectly
+ * level split of the total across m machines.
+ */
+export function optimalMakespanFloor(tasks: readonly Task[], m: number): number {
+  if (m <= 0 || tasks.length === 0) return 0
+  const total = tasks.reduce((s, t) => s + t.weight, 0)
+  const heaviest = tasks.reduce((x, t) => (t.weight > x ? t.weight : x), 0)
+  const level = total / m
+  return heaviest > level ? heaviest : level
+}
+
+/** What `grahamVerdict` answers, including when it refuses to answer. */
+export interface GrahamVerdict {
+  /** False when the theorem's hypotheses do not hold here — then `holds` is null. */
+  readonly applies: boolean
+  readonly reason: string
+  readonly machines: number
+  readonly bound: number
+  readonly floor: number
+  readonly makespan: number
+  /** makespan ÷ floor, or 0 when there is no work. */
+  readonly ratio: number
+  /** null when the theorem does not apply — never `false` by omission. */
+  readonly holds: boolean | null
+}
+
+/**
+ * Check the cited standard instead of only citing it.
+ *
+ * Graham's theorem is about **identical** machines and a schedule that places every
+ * task. This atom's `assign` does neither by default: capacities may differ, and a
+ * task heavier than every agent is REFUSED rather than crammed. So the hypotheses are
+ * tested first and the verdict is `applies: false` with a reason — never a `holds:
+ * false` that reads as a refutation of Graham when it is really a model mismatch
+ * (rules/unraised: a claim that defaults by omission).
+ *
+ * Where it does apply, `ratio ≤ bound` is measured against the FLOOR, not against the
+ * optimum, which nothing here can compute (partitioning is NP-hard). Since
+ * floor ≤ optimum, passing against the floor is SUFFICIENT for Graham's conclusion —
+ * and failing it is not a counterexample to the theorem, only a loose floor. That
+ * asymmetry is the honest half, and it is why `holds` is reported beside `ratio`
+ * rather than instead of it.
+ */
+export function grahamVerdict(agents: readonly Agent[], tasks: readonly Task[]): GrahamVerdict {
+  const live = agents.filter(healthy)
+  const m = live.length
+  const a = assign(agents, tasks)
+  const capacities = new Set(live.map((x) => x.capacity))
+  const identical = capacities.size <= 1
+  const complete = a.unassigned.length === 0
+  const applies = m > 0 && identical && complete
+  const reason =
+    m === 0
+      ? 'no healthy agent — no schedule to bound'
+      : !identical
+        ? `capacities differ (${capacities.size} distinct) — Graham's bound is for identical machines`
+        : !complete
+          ? `${a.unassigned.length} task(s) refused — the theorem bounds a schedule that places every task`
+          : 'identical machines, every task placed'
+  const bound = lptBound(m)
+  const floor = optimalMakespanFloor(tasks, m)
+  const span = makespan(a)
+  const ratio = floor > 0 ? span / floor : 0
+  return { applies, reason, machines: m, bound, floor, makespan: span, ratio, holds: applies ? ratio <= bound : null }
+}
+
+/** Re-assign after losing agents. See SKILL.md. */
 export function redistribute(
   agents: readonly Agent[],
   tasks: readonly Task[],
@@ -158,13 +200,7 @@ export function redistribute(
   )
 }
 
-/**
- * How many agents can be lost before the work no longer fits — the swarm's real redundancy.
- *
- * Computed by asking, never assumed from a headcount: capacity is not uniform, so losing the
- * largest agent is not the same as losing the smallest, and this loses the LARGEST first because
- * that is the worst case a plan has to survive.
- */
+/** How many agents can be lost before the work no longer fits — the swarm's real redundancy. See SKILL.md. */
 export function tolerableLosses(agents: readonly Agent[], tasks: readonly Task[]): number {
   const byCapacity = [...agents].filter(healthy).sort((a, b) => b.capacity - a.capacity)
   let lost = 0

@@ -2,11 +2,11 @@
 name: strength
 description: "Use when reasoning about the corpus's strength — its DRY-ness amplified by its dimensional slices; strength = coverageCostLog2(dryness, slices), infinite at perfect DRY (zero duplication residue), one slice (the digit's 88.4%) only one term."
 atomPath: strength
-coordinate: "strength · 8/crest · 270ecfa8"
-contentUuid: "9bc958ed-9c0c-5191-926f-18b767e08785"
-diamondUuid: "556e6bb9-d77d-8d03-9d60-746ee590e543"
-uuid: "270ecfa8-4046-8853-8585-9b425bc708e7"
-horo: 8
+coordinate: "strength · 2/share · f2016618"
+contentUuid: "0bea5036-b9e6-5e4c-870c-17fb2ef7feec"
+diamondUuid: "297ead10-fd39-819b-8565-f4adab61747b"
+uuid: "f2016618-3595-8556-8b64-57a946851702"
+horo: 2
 typography:
   partition: strength
   bondDegree: 47
@@ -14,7 +14,7 @@ standards:
   - "schema.org strength (a magnitude) reframed as tamper-strength · coverageCostLog2 (the ∞ law) · the merge/gravity DRY"
 bindings: []
 signatures:
-  computationUuid: "4f3327fc-01f7-8f80-8217-dd51756aaead"
+  computationUuid: "9c0e2a8e-cb91-8719-b01f-7c4abb71cdc7"
   stages:
     - stage: path
       stageUuid: "92032de4-6bc2-85b3-b2d5-73784e56284f"
@@ -25,18 +25,18 @@ signatures:
     - stage: links
       stageUuid: "adeb7dbc-0709-861e-b578-5da42534c36a"
     - stage: horo
-      stageUuid: "ba22980b-846c-892d-86f3-ca122d810abf"
+      stageUuid: "18e3ab1e-2551-80e0-a973-e5e997653380"
     - stage: seal
       stageUuid: "71e161c9-182f-87ba-a710-ff8a3cc16bfc"
     - stage: uuid
-      stageUuid: "152b0d6a-e591-8ec9-88be-80743aff9580"
+      stageUuid: "aeb6f9b5-862a-8c3c-9d7e-9d07ba7fe656"
 version: 2
 ---
 # strength — the DRY math: a DRY corpus has infinite strength
 
 Strength is a magnitude — a potency (the schema.org sense: DrugStrength, strengthValue). Here it is the corpus's **tamper-strength**, and the law is exact: **strength = `coverageCostLog2(dryness, slices)`**, infinite at perfect [[dry]].
 
-Every atom is wired through many INDEPENDENT slices — word, structural-digit, content-digit, [[uuid]], colour, sound — each one check. The [[digit]]'s 88.4% structural≠content is **just one slice**, not the whole. As the duplication residue → 0 (perfect DRY: every reference folded to ONE source — the [[merge]] law, the [[gravity]] of flattening), the cost to forge the corpus → **∞**: the singularity. That is THE MAIN LAW — zero entropy via wiring every dimension ⇒ infinite tamper-cost. Any residue leaves strength finite; folding repeating patterns to one raises it toward ∞.
+Every atom is wired through many INDEPENDENT slices — word, structural-digit, content-digit, [[uuid]], colour, sound — each one check. The [[digit]]'s 88.4% structural≠content is **just one slice**, not the whole. As the duplication residue → 0 (perfect DRY: every reference folded to ONE source — the [[merge]] law, the [[gravity]] of flattening), the cost to forge the corpus → **∞**: the singularity. That is THE MAIN LAW — coverage = 1 via wiring every dimension ⇒ unbounded tamper-cost. Any residue leaves strength finite; folding repeating patterns to one raises it toward ∞.
 
 So "DRY the corpus" is not tidiness — it is how the corpus gains strength: each duplicate removed closes a free parameter, each slice wired adds a check, and the limit of both is infinite.
 

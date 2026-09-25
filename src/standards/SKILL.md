@@ -2,14 +2,14 @@
 name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
-coordinate: "standards · 2/share · 10dff15f"
-contentUuid: "ab3d7db8-fb10-504f-abf5-ffce0ec78278"
-diamondUuid: "b8104e53-3ba9-8c74-a734-2e1ed605cf97"
-uuid: "10dff15f-111f-8241-bec2-934ab7665a69"
-horo: 2
+coordinate: "standards · 4/weave · cdd0ab8d"
+contentUuid: "6f28bcf8-324f-59ed-a969-3284322b4d02"
+diamondUuid: "02d7788a-39d0-8393-815e-75876458e379"
+uuid: "cdd0ab8d-d410-8d5c-94e4-cd22401c4c9d"
+horo: 4
 typography:
   partition: standards
-  bondDegree: 188
+  bondDegree: 197
 standards:
   - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)"
   - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)`"
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c2d02def-b518-823f-bee7-6d9b2789bedd"
+  computationUuid: "be7d03bb-37ee-850c-bf7a-73be542cdf53"
   stages:
     - stage: path
       stageUuid: "e4d21269-1c37-8fe4-85da-1900af3645f0"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "ce14a10d-8dd0-8830-b2ef-cf5cffbeec8e"
     - stage: horo
-      stageUuid: "f3099872-d66c-82b9-9281-5e43d37f6e38"
+      stageUuid: "d9269251-700e-8f34-9af4-09d041387687"
     - stage: seal
       stageUuid: "47197e8b-0e61-8144-80ca-7730bd2eb282"
     - stage: uuid
-      stageUuid: "5b5658bc-f8db-87a5-938a-c8ccfdb1b6bb"
+      stageUuid: "a052133e-407e-82ca-b1fe-c50eee03055e"
 version: 2
 ---
 # standards
@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6661 citations
+## Catalogue — 159 standards, 6682 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -80,7 +80,7 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 
 ### en
 
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(355 78% 43%)"></span> `EN-16931` — Semantic model of the electronic invoice · 127 · `b293e94d`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(355 78% 43%)"></span> `EN-16931` — Semantic model of the electronic invoice · 128 · `b293e94d`
 
 ### etsi
 
@@ -93,16 +93,17 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(122 76% 47%)"></span> `EU-Taxonomy-2020/852` — Regulation (EU) 2020/852 on the establishment of a framework to facilitate sustainable investment (Taxonomy Regulation) · 211 · `a7d2e799`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(333 63% 38%)"></span> `EU-537/2014` — Regulation (EU) No 537/2014 on specific requirements regarding statutory audit of public-interest entities · 56 · `de157160`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(35 73% 57%)"></span> `EU-910/2014` — Regulation (EU) No 910/2014 (eIDAS) — electronic identification and trust services for electronic transactions in the internal market, repealing Directive 1999/93/EC · 56 · `018b582b`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(231 78% 49%)"></span> `EU-CSDDD-2024/1760` — Corporate Sustainability Due Diligence Directive (EU) 2024/1760 · 47 · `1d07c6b3`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(231 78% 49%)"></span> `EU-CSDDD-2024/1760` — Corporate Sustainability Due Diligence Directive (EU) 2024/1760 · 48 · `1d07c6b3`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(48 86% 49%)"></span> `Peppol-BIS-3.0` — Peppol Billing BIS · 27 · `6408ce0b`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(25 79% 54%)"></span> `EU-VAT-Implementing-Reg-282/2011` — Council Implementing Regulation (EU) No 282/2011 of 15 March 2011 laying down implementing measures for Directive 2006/112/EC on the common system of value added tax (recast) · 26 · `f09181a0`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(313 59% 47%)"></span> `EU-ESRS` — European Sustainability Reporting Standards · 18 · `b2699009`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(164 64% 54%)"></span> `PSD2` — EU Payment Services Directive 2 (2015/2366) · 12 · `f98c2c28`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(51 87% 55%)"></span> `CoE-108+` — Council of Europe Convention 108+ (CETS No. 108, as modernised by the 2018 amending Protocol CETS No. 223) for the Protection of Individuals with regard to Automatic Processing of Personal Data · 10 · `5d03ac11`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(61 76% 47%)"></span> `Berlin-Group-PSD2` — Berlin Group NextGenPSD2 open-banking API · 9 · `0b7d7ee1`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(51 84% 54%)"></span> `EU-2003/88/EC` — Working Time Directive — Directive 2003/88/EC concerning certain aspects of the organisation of working time · 9 · `3f7bcc70`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(257 65% 45%)"></span> `EU-765/2008` — Accreditation and market surveillance / CE marking — Regulation (EC) No 765/2008 · 9 · `5b01dc7f`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(296 64% 38%)"></span> `EU-AI-Act` — Regulation (EU) 2024/1689 on AI · 9 · `8af8b878`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(51 84% 54%)"></span> `EU-2003/88/EC` — Working Time Directive — Directive 2003/88/EC concerning certain aspects of the organisation of working time · 8 · `3f7bcc70`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(79 77% 56%)"></span> `EU-2015/849` — Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing · 8 · `1dd7398a`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(217 61% 51%)"></span> `ESCO` — European Skills/Competences/Occupations · 7 · `cb59fb0d`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(65 72% 49%)"></span> `EU-1958` — Official languages of the EU · 6 · `1f3111fb`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(163 88% 56%)"></span> `NACE` — EU NACE Rev.2 economic-activity classification · 6 · `809b21d2`
@@ -110,8 +111,7 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(161 64% 39%)"></span> `EU-VAT-Directive` — EU VAT Directive 2006/112/EC · 4 · `604172d9`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(220 69% 45%)"></span> `SEPA` — Single Euro Payments Area schemes · 4 · `553c7767`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(68 59% 39%)"></span> `EU-2018/843` — Directive (EU) 2018/843 (5th Anti-Money-Laundering Directive, AMLD5) amending Directive (EU) 2015/849 · 3 · `236c9091`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(79 77% 56%)"></span> `EU-2015/849` — Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing · 2 · `1dd7398a`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(303 80% 56%)"></span> `EU-Admin-Coop-Reg-904/2010` — Council Regulation (EU) No 904/2010 of 7 October 2010 on administrative cooperation and combating fraud in the field of value added tax (recast) — VIES legal basis · 2 · `3267c8d2`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(303 80% 56%)"></span> `EU-Admin-Coop-Reg-904/2010` — Council Regulation (EU) No 904/2010 of 7 October 2010 on administrative cooperation and combating fraud in the field of value added tax (recast) — VIES legal basis · 3 · `3267c8d2`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(238 79% 51%)"></span> `EU-2002/58` — ePrivacy Directive (Directive 2002/58/EC) — privacy and electronic communications (as amended by Directive 2009/136/EC) · 1 · `1fdea4fd`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(57 65% 56%)"></span> `EU-2015/847` — Regulation (EU) 2015/847 on information accompanying transfers of funds and repealing Regulation (EC) No 1781/2006 (Wire Transfer Regulation) · 1 · `a0890a2a`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(57 66% 54%)"></span> `EU-UCC` — EU Union Customs Code (Regulation 952/2013) · 1 · `96b1dd40`
@@ -155,10 +155,10 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 ### iso
 
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(359 66% 49%)"></span> `ISO-8601-1` — Date and time representation · 338 · `dcc7dde3`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(112 57% 38%)"></span> `ISO-4217` — Currency codes · 311 · `2aa02578`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(215 78% 55%)"></span> `ISO-20022` — Universal financial industry message scheme · 132 · `37af5d59`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(112 57% 38%)"></span> `ISO-4217` — Currency codes · 315 · `2aa02578`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(215 78% 55%)"></span> `ISO-20022` — Universal financial industry message scheme · 133 · `37af5d59`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(268 74% 57%)"></span> `ISO-3166-1` — Country codes · 118 · `33acc25b`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(83 87% 54%)"></span> `ISO-19011` — Auditing management systems · 101 · `85eb43b8`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(83 87% 54%)"></span> `ISO-19011` — Auditing management systems · 102 · `85eb43b8`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(24 66% 46%)"></span> `ISO-27001` — Information security management system · 64 · `55e0dd80`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(157 56% 38%)"></span> `ISO/IEC-27001:2022` — ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements · 64 · `1f8df678`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(26 74% 52%)"></span> `ISO-13616-1` — IBAN — International Bank Account Number · 48 · `7d425926`
@@ -189,13 +189,13 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 
 ### national
 
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(144 58% 53%)"></span> `Naredba-N-18` — BG fiscal-device & SUPTO ordinance · 42 · `6a08f86f`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(156 60% 54%)"></span> `ZDDS` — BG Value Added Tax Act · 3 · `83644ba0`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(144 58% 53%)"></span> `Naredba-N-18` — BG fiscal-device & SUPTO ordinance · 43 · `6a08f86f`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(156 60% 54%)"></span> `ZDDS` — BG Value Added Tax Act · 4 · `83644ba0`
 
 ### nist
 
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(157 78% 44%)"></span> `NIST-SP-800-63` — Digital Identity Guidelines (identity proofing, authentication & federation assurance levels) · 98 · `46ed5dc6`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(326 65% 58%)"></span> `NIST-INCITS-359-2012` — Role-Based Access Control · 56 · `e67e2dd4`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(157 78% 44%)"></span> `NIST-SP-800-63` — Digital Identity Guidelines (identity proofing, authentication & federation assurance levels) · 97 · `46ed5dc6`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(326 65% 58%)"></span> `NIST-INCITS-359-2012` — Role-Based Access Control · 53 · `e67e2dd4`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(173 82% 42%)"></span> `NIST-FIPS-180-4` — Secure Hash Standard (SHA-2) · 37 · `6a25a77c`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(208 65% 44%)"></span> `NIST-SP-800-162` — Attribute-Based Access Control · 16 · `6610734e`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(27 85% 48%)"></span> `NIST-SP-800-38D` — AES-GCM authenticated encryption · 16 · `439bcd9a`
@@ -215,7 +215,7 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 ### other
 
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(307 79% 50%)"></span> `COSO-ERM-2017` — Enterprise Risk Management — Integrating with Strategy and Performance (2017) · 144 · `4ff3ea84`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(220 59% 47%)"></span> `MCP` — Model Context Protocol · 27 · `bbe40439`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(220 59% 47%)"></span> `MCP` — Model Context Protocol · 28 · `bbe40439`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(127 88% 44%)"></span> `GHG-Protocol` — Greenhouse Gas Protocol · 17 · `e5b7f3c6`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(33 75% 50%)"></span> `ISA-95` — Enterprise-control system integration · 16 · `b8595a9c`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(212 77% 44%)"></span> `SFIA` — Skills Framework for the Information Age · 13 · `1b8c7f96`
@@ -232,14 +232,14 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 
 ### rfc
 
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(29 70% 49%)"></span> `RFC-9562` — UUID (revised — content/event uuid) · 158 · `01855583`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(29 70% 49%)"></span> `RFC-9562` — UUID (revised — content/event uuid) · 159 · `01855583`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(157 67% 39%)"></span> `RFC-9110` — HTTP Semantics · 78 · `42b50cc1`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(75 64% 48%)"></span> `BCP-47` — Language tags · 75 · `766b2cca`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(352 55% 52%)"></span> `RFC-3986` — Uniform Resource Identifier (URI): Generic Syntax · 45 · `6538af56`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(315 73% 47%)"></span> `RFC-8785` — JSON Canonicalization Scheme · 34 · `67e3e4b1`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(48 87% 54%)"></span> `RFC-4122` — UUID (original) · 19 · `74e8ac88`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(150 72% 57%)"></span> `RFC-5646` — Tags for Identifying Languages · 14 · `e02ee373`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(318 72% 40%)"></span> `RFC-8259` — The JavaScript Object Notation (JSON) Data Interchange Format · 12 · `b976c062`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(150 72% 57%)"></span> `RFC-5646` — Tags for Identifying Languages · 11 · `e02ee373`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(151 79% 42%)"></span> `RFC-7231` — HTTP/1.1 semantics · 10 · `87973b1c`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(36 68% 41%)"></span> `RFC-5545` — iCalendar · 8 · `1adc537b`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(312 81% 50%)"></span> `RFC-5652` — Cryptographic Message Syntax (CMS) · 7 · `cd206054`
@@ -276,7 +276,7 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(231 64% 45%)"></span> `schema.org` — Linked-data type vocabulary · 1986 · `9cff4f7f`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(169 57% 52%)"></span> `W3C-HTML5` — HTML — the living standard · 47 · `3ff1f7ce`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(113 78% 40%)"></span> `ECMA-262` — ECMAScript language specification · 33 · `dbd1c6da`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(113 78% 40%)"></span> `ECMA-262` — ECMAScript language specification · 34 · `dbd1c6da`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(56 87% 50%)"></span> `ECMA-402` — ECMAScript Internationalization API · 19 · `3008cf9c`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(162 56% 46%)"></span> `W3C-JSON-LD-1.1` — JSON for Linking Data · 17 · `5c0a6a50`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(213 58% 42%)"></span> `W3C-ActivityPub` — Federated server-to-server protocol · 13 · `df058f64`
@@ -289,7 +289,7 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 ### wcag
 
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(333 66% 50%)"></span> `W3C-WAI-ARIA-1.2` — Accessible Rich Internet Applications · 33 · `a46dba6c`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(254 62% 40%)"></span> `WCAG-2.1` — Web Content Accessibility Guidelines · 29 · `852e7032`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(254 62% 40%)"></span> `WCAG-2.1` — Web Content Accessibility Guidelines · 30 · `852e7032`
 
 ### registered — awaiting citation (104)
 

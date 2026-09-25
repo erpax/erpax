@@ -41,7 +41,8 @@ export interface GeneratedTest {
   readonly contributingFiles: ReadonlyArray<string>
 }
 
-function camelImplsName(chainId: string): string {
+/** `chain_id` → `chainIdImpls`. Exported so `./seed` folds onto it ([[rules]]/copy, 57 nodes). */
+export function camelImplsName(chainId: string): string {
   const parts = chainId.toLowerCase().split('_')
   return parts[0] + parts.slice(1).map((p) => p[0].toUpperCase() + p.slice(1)).join('') + 'Impls'
 }

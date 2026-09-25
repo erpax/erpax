@@ -72,6 +72,29 @@ export interface VocabGenResult {
   ungrounded: string[]
 }
 
+/**
+ * The three word tests, over one dictionary and one SKILL index. See SKILL.md.
+ *
+ * Stood twice ([[rules]]/copy, 61 and 44 AST nodes). Both copies closed over `dict` and
+ * `skillByAtom`, each built the same way at both sites — the check that must precede a fold.
+ */
+function wordTests(
+  dict: ReadonlySet<string>,
+  skillByAtom: ReadonlyMap<string, string>,
+): {
+  inDict: (w: string) => boolean
+  isCode: (w: string) => boolean
+  isSchema: (w: string) => boolean
+} {
+  return {
+    inDict: (w) =>
+      dict.has(w) ||
+      SUFFIX.some(([suf, rep]) => w.length > suf.length + 2 && w.endsWith(suf) && dict.has(w.slice(0, -suf.length) + rep)),
+    isCode: (w) => /\d/.test(w) || (w.length <= 5 && /^[a-z]+$/.test(w)),
+    isSchema: (w) => /schema\.org component word|Attested in schema\.org/.test(skillByAtom.get(w) || ''),
+  }
+}
+
 export function computeVocabulary(cwd: string = process.cwd()): VocabGenResult {
   const dict = loadDict()
   const src = join(cwd, 'src')
@@ -79,12 +102,7 @@ export function computeVocabulary(cwd: string = process.cwd()): VocabGenResult {
   walkSkillByAtom(src, skillByAtom)
   const atoms = [...skillByAtom.keys()].sort()
 
-  const inDict = (w: string): boolean =>
-    dict.has(w) ||
-    SUFFIX.some(([suf, rep]) => w.length > suf.length + 2 && w.endsWith(suf) && dict.has(w.slice(0, -suf.length) + rep))
-  const isCode = (w: string): boolean => /\d/.test(w) || (w.length <= 5 && /^[a-z]+$/.test(w))
-  const isSchema = (w: string): boolean =>
-    /schema\.org component word|Attested in schema\.org/.test(skillByAtom.get(w) || '')
+  const { inDict, isCode, isSchema } = wordTests(dict, skillByAtom)
 
   const grounded = new Set<string>()
   const ungrounded: string[] = []
@@ -113,12 +131,7 @@ export function emitWordsTs(cwd: string = process.cwd()): number {
   const skillByAtom = new Map<string, string>()
   walkSkillByAtom(src, skillByAtom)
 
-  const inDict = (w: string): boolean =>
-    dict.has(w) ||
-    SUFFIX.some(([suf, rep]) => w.length > suf.length + 2 && w.endsWith(suf) && dict.has(w.slice(0, -suf.length) + rep))
-  const isCode = (w: string): boolean => /\d/.test(w) || (w.length <= 5 && /^[a-z]+$/.test(w))
-  const isSchema = (w: string): boolean =>
-    /schema\.org component word|Attested in schema\.org/.test(skillByAtom.get(w) || '')
+  const { inDict, isCode, isSchema } = wordTests(dict, skillByAtom)
 
   const isRoot = (w: string): boolean => inDict(w) || isCode(w) || isSchema(w) || DOMAIN.has(w)
   const used = new Set<string>()

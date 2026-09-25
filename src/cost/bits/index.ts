@@ -56,6 +56,37 @@ export const ERPAX_DIGEST_BITS = UUID_BITS - UUID_VERSION_BITS - UUID_VARIANT_BI
  */
 export const CONTENT_DIGEST_BITS = 256
 
+/**
+ * The 64-bit torus this tree addresses on — DERIVED, not typed.
+ *
+ * The double torus is the two halves of the 128-bit uuid: `wordFold ⊗ digitFold = combined128`, so
+ * one torus is exactly half the identifier's width. Written as the literal `64` it was a
+ * matrix-crack — a static datum the tree could have computed ([[matrix]]/constants-audit: an
+ * `export const` is seal-debt unless it is computed from sealed state, which is why the subtraction
+ * below was never flagged and this line was). It still MIRRORS `architectureBits()` rather than
+ * importing it, because that import would add an edge to the tangle ([[rules]]/cycle), and
+ * `src/cost/bits/test.ts` pins both the equality and the value 64.
+ */
+export const TORUS_BITS = UUID_BITS / 2
+
+/**
+ * What truncating the digest to a uuid costs, in bits.
+ *
+ * The sentence "truncation costs erpax 134 bits so the fold's address can LOOK like a UUID" sat
+ * three lines above as prose, with no constant and nothing able to contradict it — the exact shape
+ * this file already records twice. It is the subtraction, so it moves when either side does.
+ */
+export const TRUNCATION_COST_BITS = CONTENT_DIGEST_BITS - ERPAX_DIGEST_BITS
+
+/** A content digest is exactly this many uuids. See SKILL.md. */
+export const DIGEST_IN_UUIDS = CONTENT_DIGEST_BITS / UUID_BITS
+
+/** …and this many torus boards. */
+export const DIGEST_IN_BOARDS = CONTENT_DIGEST_BITS / TORUS_BITS
+
+/** One uuid is this many boards — which is why the fold has a word half and a digit half. */
+export const UUID_IN_BOARDS = UUID_BITS / TORUS_BITS
+
 /** log2 of the whole Bitcoin network's hashrate (~7×10^20 H/s). */
 export const BITCOIN_HASHRATE_LOG2 = algebraLog2(7e20)
 

@@ -9,7 +9,7 @@ import { exactMax } from '@/algebra'
  * straight down the apex and the diagonals read as an X — the cross is the pyramid seen from above AND
  * unfolded flat. Two faithful readings of one solid.
  *
- * `merge/foldToRoot` already BUILDS this (the balanced pairwise fold: height ⌈log₂ N⌉, N−1 merges) — it
+ * `merge/merkleRoot` already BUILDS this (the balanced pairwise fold: height ⌈log₂ N⌉, N−1 merges) — it
  * just discards the intermediate courses and keeps the apex. `pyramid` READS the whole solid: base, apex,
  * height, faces, and the courses between. `tamperShift` shows the law that makes it a seal — move one base
  * stone and the apex moves, and because the fold is one-way you cannot rebuild the courses above to hold the
@@ -23,11 +23,11 @@ import { exactMax } from '@/algebra'
  *
  * Composes [[merge]] · [[notary]] · [[seal]] · [[law]].
  */
-import { foldToRoot, merge } from '@/merge'
+import { merkleRoot, merkleLeaf, merkleNode } from '@/merge'
 
 /** The pyramid read off a base row of leaves — one solid, four measured facts. */
 export interface Pyramid {
-  /** The single seal every stone folds up to — `foldToRoot(base)`. */
+  /** The single seal every stone folds up to — `merkleRoot(base)`. */
   readonly apex: string
   /** Stones on the ground course (leaves). */
   readonly base: number
@@ -39,16 +39,19 @@ export interface Pyramid {
 
 /**
  * The pyramid course by course, base → apex — each row the pairwise merge of the row below it, the last row
- * the lone apex. This is the geometry `foldToRoot` computes and throws away; here it is kept and drawn.
+ * the lone apex. This is the geometry `merkleRoot` computes and throws away; here it is kept and drawn.
  */
 export function courses(base: readonly string[]): string[][] {
-  if (base.length === 0) return [[foldToRoot(base)]]
-  const rows: string[][] = [[...base]]
-  let level: string[] = [...base]
+  if (base.length === 0) return [[merkleRoot(base)]]
+  // the ground course is the LEAF commitments, not the raw stones — an undomained course would
+  // let an internal cross be laid as a base stone, and the apex could not tell ([[merge]]/fold)
+  const ground = base.map(merkleLeaf)
+  const rows: string[][] = [ground]
+  let level: string[] = ground
   while (level.length > 1) {
     const next: string[] = []
     for (let i = 0; i < level.length; i += 2) {
-      next.push(i + 1 < level.length ? merge(level[i]!, level[i + 1]!) : level[i]!)
+      next.push(i + 1 < level.length ? merkleNode(level[i]!, level[i + 1]!) : level[i]!)
     }
     rows.push(next)
     level = next
@@ -77,8 +80,8 @@ export function tamperShift(
   index: number,
   to: string,
 ): { readonly was: string; readonly now: string; readonly moved: boolean } {
-  const was = foldToRoot(base)
-  const now = foldToRoot(base.map((s, i) => (i === index ? to : s)))
+  const was = merkleRoot(base)
+  const now = merkleRoot(base.map((s, i) => (i === index ? to : s)))
   return { was, now, moved: was !== now }
 }
 

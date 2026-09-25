@@ -1,3 +1,6 @@
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import { auditConstants, matrixCrackViolations, CONSTANTS_AUDIT_COORDINATE } from '@/matrix'
 import { computedBaseline } from '@/law/folder/baseline'
@@ -57,6 +60,7 @@ describe('matrix constants-audit — what is NOT corpus matter', () => {
   // A crack is a HAND-WRITTEN static a theorem could have folded. Two kinds of file
   // can never be that, and both were counted until 2026-08-20.
   const cracks = matrixCrackViolations()
+  const audit = auditConstants()
 
   it('excludes GENERATED faces — telling them to "compute from sealed state" is vacuous', () => {
     // They ARE the computed state. The old pattern needed a dot before "generated",
@@ -75,9 +79,46 @@ describe('matrix constants-audit — what is NOT corpus matter', () => {
   })
 
   it('still audits a NESTED app folder — only the framework root is exempt', () => {
-    // The exemption must not become "any folder called app".
-    const nested = cracks.filter((c) => c.file.includes('/app/') && !c.file.startsWith('src/app/'))
-    expect(nested.length).toBeGreaterThan(0)
+    // The exemption must not become "any folder called app". Probed on the AUDITED POPULATION,
+    // never on the crack count: a nested app constant may lawfully stop being a crack (one did,
+    // when `lawful-statutory` arrived), and a guard whose evidence can empty for a legitimate
+    // reason reports red on a healthy tree — the dual of [[rules]]/mirror's vacuous assertion.
+    const audited = audit.entries.filter((e) => e.file.includes('/app/') && !e.file.startsWith('src/app/'))
+    expect(audited.length).toBeGreaterThan(0)
+    expect(audit.entries.filter((e) => e.file.startsWith('src/app/'))).toEqual([])
+  })
+
+  it('a data literal that CITES A STATUTE is not seal-debt — a legislature is not derivable', () => {
+    const risk = audit.entries.find((e) => e.constName === 'EXPOSURE_LIMIT_SHARE')
+    expect(risk?.category).toBe('lawful-statutory')
+    expect(cracks.some((c) => c.constName === 'EXPOSURE_LIMIT_SHARE')).toBe(false)
+  })
+
+  it('a declared band with NO statute stays a crack — the exemption is the citation, not the intent', () => {
+    // src/aml's own SKILL says structuring is defined by INTENT and no number decides intent, so
+    // nothing cites this 0.9. It is a hand-written static and the axis is right to say so.
+    expect(cracks.some((c) => c.constName === 'STRUCTURING_BAND')).toBe(true)
+  })
+
+  it('a MODULE HEADER is not a declaration\u2019s docstring', () => {
+    // getLeadingCommentRanges at a file's first statement returns the module header, so a header
+    // citing a standard exempted the first exported const of every such file — 25 of them, measured.
+    // Only a block separated from the declaration by at most one line break is its own docstring.
+    const source = [
+      '/**',
+      ' * Module header.',
+      ' * @standard ISO-19011:2018 audit-evidence',
+      ' */',
+      '',
+      'export const NOT_STATUTORY = [1, 2, 3]',
+      '',
+    ].join('\n')
+    const dir = mkdtempSync(join(tmpdir(), 'erpax-crack-'))
+    mkdirSync(join(dir, 'src', 'probe'), { recursive: true })
+    writeFileSync(join(dir, 'src', 'probe', 'index.ts'), source)
+    const probe = auditConstants(dir).entries.find((e) => e.constName === 'NOT_STATUTORY')
+    expect(probe?.category).toBe('crack')
+    rmSync(dir, { recursive: true, force: true })
   })
 
   it('still audits ordinary hand-written constants — the axis has not been hollowed out', () => {

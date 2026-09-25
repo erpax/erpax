@@ -2,11 +2,11 @@
 name: concatenate
 description: "Use when building a completely autonomous workflow from command·question·answer atoms — the free monoid of steps, run as command then gate then computed-answer-on-NO until every gate is YES (zero entropy), no human in the loop."
 atomPath: "workflow/concatenate"
-coordinate: "workflow/concatenate · 7/descent · cb86eedd"
-contentUuid: "6971cef2-98a5-5c48-b0a0-a90fc95e40a9"
-diamondUuid: "e1c5515d-939f-8940-828a-d857d11658a4"
-uuid: "cb86eedd-1b0f-8637-aa07-d3eb4a638dda"
-horo: 7
+coordinate: "workflow/concatenate · 1/base · 54d36d59"
+contentUuid: "bfff6414-6487-560c-b53c-75c8f819e504"
+diamondUuid: "3980ce78-a981-8813-b28f-a2e6f9d10f11"
+uuid: "54d36d59-40e4-8c2e-afa3-16b2173b37a0"
+horo: 1
 typography:
   partition: workflow
   bondDegree: 74
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC-19510"
 bindings: []
 signatures:
-  computationUuid: "620f004d-d71d-8d7c-8bf7-d83d11cbba3a"
+  computationUuid: "1a475664-1701-8df7-8f23-224dcc657fc1"
   stages:
     - stage: path
       stageUuid: "d5367a3e-ff14-831b-a8e8-89b629ea2592"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "880a76ab-f721-8d44-9306-3e1c89046688"
     - stage: links
-      stageUuid: "9b76ec74-712c-8c1e-bc59-3be6bea7ec2b"
+      stageUuid: "3a016b19-d360-837d-bf7f-3dbe33805e66"
     - stage: horo
-      stageUuid: "034f3765-8df0-86f4-9e0b-ae9368f18945"
+      stageUuid: "50a6faa7-fde8-88de-807f-dade47300005"
     - stage: seal
       stageUuid: "049ca325-c4ba-8cec-b081-e199a8c02344"
     - stage: uuid
-      stageUuid: "6cd47016-8bcf-8742-88c7-da8c046c4b4c"
+      stageUuid: "6383e12b-b5ec-8521-9fbf-93c9de527117"
 version: 2
 ---
 # workflow/concatenate — command·question·answer → autonomous workflows
@@ -50,7 +50,7 @@ The canonical workflows ship as **data** (atom refs only): `grow-to-whole` · `d
 
 Matter-twin: `src/workflow/concatenate/index.ts` (`Step` · `Workflow` · `concatenate` · `stepUuid` · `runStep` · `runWorkflow` · `WORKFLOWS` · `unresolvedAtoms`). Composes [[command]] · [[question]] · [[answer]] · [[step]] · [[sequence]] · [[breath]] · [[society]] · [[gate]] · [[merge]] · [[law]] · [[self]] · [[cost]] · [[spec]].
 
-**Law — [[law]]: a workflow is the free monoid `(C×Q×A)*` over command·question·answer steps run with NO human — execute the command, ask the gate, on NO apply the COMPUTED [[self]]-sufficient answer and re-ask until YES — reaching its idempotent fixed point W* exactly when every gate is YES at once: the four faces of zero [[entropy]] ⟺ ∞ tamper-cost.**
+**Law — [[law]]: a workflow is the free monoid `(C×Q×A)*` over command·question·answer steps run with NO human — execute the command, ask the gate, on NO apply the COMPUTED [[self]]-sufficient answer and re-ask until YES — reaching its idempotent fixed point W* exactly when every gate is YES at once: the four faces of coverage = 1 ⟺ unbounded tamper-cost.**
 
 @standard ISO/IEC 19510:2013 BPMN-2.0 — a free monoid over the workflow step
 @audit pure — the algebra + an injected NAME→effect registry; the canonical workflows are gated for groundedness

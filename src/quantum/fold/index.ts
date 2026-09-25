@@ -692,6 +692,11 @@ const trinityIncompleteGaps = (cwd: string): LinearGap[] => {
   }
   for (const hub of readdirSync(src)) {
     if (hub.startsWith('.')) continue
+    // The framework owns these trees' shape. This file already declared them for the volume walk
+    // at LINEAR_SKIP_TREES and the trinity scan simply did not read it — so it charged
+    // app/(frontend) and app/my-route, Next.js App Router folders where an index.ts means nothing,
+    // while [[law]]/folder/index-cross skipped the same tree by name. One set, both walks.
+    if (LINEAR_SKIP_TREES.has(hub)) continue
     const hubDir = join(src, hub)
     if (!gapIsDir(hubDir) || !existsSync(join(hubDir, 'index.ts'))) continue
     for (const child of readdirSync(hubDir))

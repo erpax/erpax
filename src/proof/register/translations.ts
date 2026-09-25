@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "register",
-    "uuid": "de5d5cc6-3990-8f62-a342-6c1b5e3ef418",
+    "uuid": "1262a4de-24d0-8b3c-a14c-dd6679ef3e9b",
     "words": [
       "register"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**.",
-    "uuid": "7611917e-46c8-8332-8bc7-5ee3b92736be",
+    "uuid": "fcf8ca1a-9aca-8eff-91ac-cafe6c69091a",
     "words": [
       "use",
       "when",

@@ -8,7 +8,7 @@
  * confirming match. Removes the need to trust ERPax.
  *
  * The anchor is the ONE external entropy a zero-entropy store borrows
- * (services/anchor, services/tamper-cost): un-anchored ⇒ a writer rewrites the
+ * ([[anchor]], [[tamper]]/cost): un-anchored ⇒ a writer rewrites the
  * deterministic whole for free. So a backend that does NOT pin to entropy no
  * party controls is NOT tamper-evidence, and must never be mistaken for one:
  *   - `ChainBackend.external` marks whether a backend is a real external anchor.
@@ -19,10 +19,13 @@
  * verifies only self-consistency (the receipt matches its own root, and that
  * root was anchored in this process), never external order.
  *
- * Anchor leaves must commit the FULL 256-bit content digest (`anchorLeaf` →
- * services/integrity/content-uuid `computeContentDigest`), NOT the truncated
- * 106-bit uuid — else the chosen-content collision floor is 2^53, not 2^128
- * (services/tamper-cost `anchorCommitmentBits`).
+ * Anchor leaves must commit the FULL content digest (`anchorLeaf` →
+ * [[integrity]]/content `computeContentDigest`), NOT the truncated uuid — else the
+ * chosen-content collision floor is `birthdayLog2(ERPAX_DIGEST_BITS)`, not
+ * `birthdayLog2(CONTENT_DIGEST_BITS)` ([[tamper]]/cost `anchorCommitmentBits`).
+ *
+ * The figures that stood here were a typed constant [[cost]]/bits refuted; the formula is
+ * stated instead of its output, so there is nothing left to go stale. See SKILL.md.
  *
  * @standard W3C Verifiable Credentials Data Model 2.0
  * @standard ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)
@@ -70,9 +73,10 @@ export interface AnchorVerification {
 export const isExternalAnchor = (backend: ChainBackend): boolean => backend.external
 
 /**
- * The value an anchor/Merkle leaf must commit for a content object: the FULL
- * 256-bit content digest (collision 2^128), NOT the 106-bit uuid (collision
- * 2^53). Pair with `crackVerdict({ anchorCommitmentBits: CONTENT_DIGEST_BITS })`.
+ * The value an anchor/Merkle leaf must commit for a content object: the FULL content
+ * digest, whose collision floor is `birthdayLog2(CONTENT_DIGEST_BITS)` — never the
+ * truncated uuid, at `birthdayLog2(ERPAX_DIGEST_BITS)`. Pair with
+ * `crackVerdict({ anchorCommitmentBits: CONTENT_DIGEST_BITS })`.
  */
 export const anchorLeaf = (content: Record<string, unknown>, tenantId: string): string =>
   computeContentDigest(content, tenantId)

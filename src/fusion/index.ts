@@ -9,7 +9,7 @@
  * binding); run over every node it folds the whole corpus into ONE root -- the
  * [[torus]] collapse, order-independent BY CONSTRUCTION (sort, then reduce). That
  * order-independence IS the entanglement/harmonisation proof: any path through the
- * atoms fuses to the same eigenstate. Zero entropy ⇒ infinite mass ⇒ infinite
+ * atoms fuses to the same eigenstate. Coverage = 1 ⇒ unbounded mass ⇒ infinite
  * tamper/exploit cost ([[dry]] · [[whole]] · [[one]]).
  *
  *   tsx src/fusion/index.ts

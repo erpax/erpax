@@ -2,33 +2,33 @@
 name: receipt
 description: "Use when the push gate must not be an hour-long monolith — green suite verdicts sealed content-addressed by their parsed import closure + schema surface; only changed suites re-run, a failure costs one named batch."
 atomPath: "gate/receipt"
-coordinate: "gate/receipt · 4/weave · dbbe03e6"
-contentUuid: "5cfa4e5f-8940-54cd-baca-4fdd2857607d"
-diamondUuid: "44e453b7-1af4-8d2d-8708-e6dfb3e9a7a2"
-uuid: "dbbe03e6-85f8-8e2e-8439-ceb54b7873ad"
-horo: 4
+coordinate: "gate/receipt · 5/round · c64eb470"
+contentUuid: "bdd909e8-64cd-5290-949b-fe2fe35d0bfd"
+diamondUuid: "4b91ea9b-7bd3-8efc-8068-9d20e41bb1c3"
+uuid: "c64eb470-af39-85a0-897f-c58db1661af9"
+horo: 5
 typography:
   partition: gate
   bondDegree: 118
 standards: []
 bindings: []
 signatures:
-  computationUuid: "014418f4-c32d-8e12-9638-29d906762845"
+  computationUuid: "59c658e3-e984-8267-a747-4ec52384fc43"
   stages:
     - stage: path
       stageUuid: "f178bb35-a2d1-8dd6-b553-60ce2326c2ea"
     - stage: trinity
       stageUuid: "226a3bbd-d096-8596-8449-c60781c9603e"
     - stage: boundary
-      stageUuid: "c223cfb4-4edc-8ad4-b74d-73a490c224c7"
+      stageUuid: "5d836be6-1709-8b05-8615-cad6111b2a52"
     - stage: links
       stageUuid: "f040f95d-228c-8baf-b72d-7c6ca77718e4"
     - stage: horo
-      stageUuid: "98ec2648-fe00-81ef-92e1-1f829733d9aa"
+      stageUuid: "38114021-af0c-8f05-821a-50d715d40fc7"
     - stage: seal
       stageUuid: "6cc79d23-0240-8af8-8e6d-1af1ed6c61c7"
     - stage: uuid
-      stageUuid: "72381895-a912-8a31-a723-26ac5cf48de5"
+      stageUuid: "3e940da4-08ff-8d8a-9240-9071c6606d0e"
 version: 2
 ---
 # gate/receipt — the push failure fixed at its core
@@ -52,6 +52,33 @@ The 21-axis corpus scan behind every ratchet cost **45,950 ms**. Folding everyth
 **The fold binds the path, not only the bytes.** Each file contributes `sha256(relative-path ‖ bytes)`, XOR-folded so the address is order-invariant — a `readdir` returning the same files in a different order, on a different filesystem or machine, folds to the same 128 bits. Binding the path matters because this corpus's most common edit is a **move**: 72 files changed folder in one campaign without a byte changing, and a fold over bytes alone would have called that corpus unchanged.
 
 **Why this is not an optimisation.** A gate that can be skipped is prose ([[rules]]), and a gate that costs ten minutes *is* skipped — `--no-verify` was found on every push in one session, and three working tools were found disabled. Cost is what turns a law into a suggestion. Minting the address is free and forging one is not, which is the whole economy the corpus runs on ([[uuid]]).
+
+## When it pays, and when it would not — `Receipt.lean`
+
+The 48× above is a fact about **this granularity**, not about receipts. A receipt costs the address
+on *every* run and saves the answer on all but the first, so whether it pays is arithmetic:
+
+| sealed at | address | answer | verdict |
+| --- | ---: | ---: | --- |
+| the whole 21-axis bundle | 954 ms | 45,950 ms | pays from run **2** |
+| `matrix-crack` alone | 1,499 ms | 4,033 ms | pays from run **2** |
+| `word-matter` alone | 1,499 ms | 1,381 ms | **never pays, at any run count** |
+
+`word-matter` answers faster than the address that would guard it. Sealing it alone would cost the
+corpus 1,499 ms to avoid 1,381 ms, forever — and nothing here seals it alone, which is why the
+practice is right even though the slogan is unconditional. The rule is decided **at the granularity
+actually sealed**, and it can go either way on one tree.
+
+`worthSealing` and `breakEven` are the twin of `Receipt.worthSealing` and `Receipt.breakEven`
+(`src/verify/lean/Receipt.lean`, 7 theorems). The kernel proves a receipt never pays on a single
+run, never pays when the address is not cheaper than the answer, and — once it pays — keeps paying.
+`breakEven` is a division rather than an opinion, and returns 0 where no payoff exists instead of
+claiming one. The twin's test checks it against the same arithmetic over a small box and READS the
+`.lean` file, so a theorem it leans on cannot quietly disappear.
+
+**What Lean does not prove: the numbers.** 954 and 45,950 are measurements on this machine, warm,
+on 2026-09-21. A theorem proves its decision, never the facts it is fed — a colder filesystem or a
+larger tree moves both, and only the instrument that took them can say so.
 
 **Honest boundary.** The fold proves the SCANNED SET is byte-identical, never that a scan is deterministic. An axis that reads the clock, the network, or a file outside `roots` can move under a standing fold — so the receipt keys a pure content scan and nothing else, and a lost or unreadable receipt only means the scan runs again. It never means a stale answer: `sealedScan` returns the verdict at THIS fold or `null`, with no notion of "old but probably fine".
 

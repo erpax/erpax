@@ -3,13 +3,13 @@ name: access
 description: "Use when gating reads, creates and mutations of the audit trail — authenticated users see only their own tenant's events, super-admins see all, and update/delete is denied outright so the trail stays append-only tamper-evident."
 atomPath: "audit/trail/access"
 coordinate: "audit/trail/access · 3/3 · 0b576a9c"
-contentUuid: "437e1952-5d95-5fdc-8327-1dbfcea94ffe"
+contentUuid: "5ae4d56e-5b87-5b2a-9973-61d342f25788"
 diamondUuid: "9c9430e5-6099-81cb-9098-8a895af0cf23"
 uuid: "0b576a9c-84c1-89fd-8b2f-f6d975b149c0"
 horo: 3
 typography:
   partition: audit
-  bondDegree: 436
+  bondDegree: 441
 standards: []
 bindings: []
 signatures:

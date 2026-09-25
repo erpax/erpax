@@ -23,7 +23,7 @@ import {
   buildReadmeTypographyGraph,
   listAtomPaths,
 } from '@/readme'
-import { hasWordFolderTrinity } from '@/law/folder/word'
+import { hasWordFolderTrinity, pivotSkillMd } from '@/law/folder/word'
 import { BODY_FOLD_ROOT, MEDICAL_WAVE_1, COMPUTER_WAVE_1, type NavHub } from './groups'
 
 const SRC = 'src'
@@ -107,21 +107,6 @@ describe('${hub}/${leaf} — vocabulary pivot', () => {
 })
 `
 }
-
-export const pivotSkillMd = (hub: string, leaf: string, facet: string): string => `---
-name: ${leaf}
-atomPath: ${hub}/${leaf}
-description: "Use when reasoning about ${leaf} as a ${facet} of [[${hub}]] — vocabulary pivot to @/${leaf}; nested not duplicated."
----
-
-# ${hub}/${leaf} — ${facet}
-
-The [[${leaf}]] read from the [[${hub}]] structure — pivot to the top-level \`@/${leaf}\` vocabulary atom ([[merge]] at path scale).
-
-**Law — [[law]]: ${hub}/${leaf} names ${leaf} under ${hub} — one word, content-addressed, nested not duplicated.**
-
-@standard schema.org — the type vocabulary, collided to single words
-`
 
 /** Materialize one pivot folder (trinity only — readme faces regen via pnpm readme). */
 export function writePivot(spec: PivotSpec, cwd: string = process.cwd()): boolean {

@@ -2,11 +2,11 @@
 name: fronted
 description: "Use when checking whether every atom has a front door — the computed convention that each SKILL.md carries valid name and description frontmatter, measured live as coverage = fronted / total over the real corpus tree."
 atomPath: "convention/fronted"
-coordinate: "convention/fronted · 5/round · 74ac0955"
-contentUuid: "491564eb-45d9-50dd-a15b-0cbe16beb22a"
-diamondUuid: "048f410d-2030-8e82-b3b7-551765d738ba"
-uuid: "74ac0955-f493-89dd-ad09-1acedfaeba6d"
-horo: 5
+coordinate: "convention/fronted · 1/base · dbac928f"
+contentUuid: "2e2f6716-31a3-55f7-89cf-eca05ff4ac63"
+diamondUuid: "20851063-331c-8c2f-bd0e-8385cbfb1584"
+uuid: "dbac928f-7881-8b25-bd26-cdd099b79a63"
+horo: 1
 typography:
   partition: convention
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "67e17126-c58f-87c7-ae9c-afddac154d02"
+  computationUuid: "5b583d29-241d-865d-b5e8-c8cf18794725"
   stages:
     - stage: path
       stageUuid: "36fcaff5-aec2-895f-974a-ce889f71d491"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b38c3fbd-1ff6-8166-b76b-98c824abc5fe"
     - stage: horo
-      stageUuid: "1508fdc9-8146-8f76-ad9f-9a9cc34f7c98"
+      stageUuid: "898003cf-7c3a-87d4-9ac7-c06908c10cd1"
     - stage: seal
       stageUuid: "962d7061-6fdf-8d75-a2a0-5374271b3d9f"
     - stage: uuid
-      stageUuid: "7e727af8-b7a3-8374-b037-ff2c80780642"
+      stageUuid: "a4df5d35-d91d-8331-ad7d-438bfc2bad65"
 version: 2
 ---
 # convention/fronted — every SKILL.md has valid name + description frontmatter
@@ -42,7 +42,7 @@ It does not re-walk the filesystem nor re-parse the frontmatter from scratch —
 - **fronted** = the atoms whose frontmatter block has BOTH `name:` and `description:`. The measurement reads the actual `---…---` head from the raw body — the same slice `loadCorpus` itself uses — because `loadCorpus` falls the name back to the leaf folder word, so the parsed `name` can never witness a missing `name:` line; only the raw block can.
 - **coverage** = `fronted / total` — in [0,1] by construction (0 ≤ fronted ≤ total, total > 0). It reaches **1** exactly when every atom has a valid front.
 
-Pure math, no default: the corpus is non-empty by architecture (a tree of SKILL.md by construction), and fronted is a subset count, so the ratio never needs a clamp or a fallback. The only thing that pulls coverage below 1 is a SKILL.md missing its `name:` or `description:` line — precisely what this convention forbids. coverage → 1 ⟺ every atom is addressable-by-name and selectable-by-trigger ⟺ the convention holds with zero entropy and infinitely-expanding tamper-[[cost]] ([[law]] · [[collapse]] · [[merge]]).
+Pure math, no default: the corpus is non-empty by architecture (a tree of SKILL.md by construction), and fronted is a subset count, so the ratio never needs a clamp or a fallback. The only thing that pulls coverage below 1 is a SKILL.md missing its `name:` or `description:` line — precisely what this convention forbids. coverage → 1 ⟺ every atom is addressable-by-name and selectable-by-trigger ⟺ the convention holds with coverage = 1 and unboundedly-expanding tamper-[[cost]] ([[law]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[law]] · [[akashic]] · [[named]] · [[lawful]] · [[complete]] · [[exported]] (an atom has two public faces — its frontmatter front door, audited here, and its index code-surface, audited by [[exported]])
 

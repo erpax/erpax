@@ -413,10 +413,46 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool"
   },
   {
+    "atom": "aml",
+    "name": "aml",
+    "description": "Use when reasoning about aml — classifies a set of movements as **suspicious · threshold · none** (EU 2015/849 Art. 33).",
+    "path": "agents/mcp/tool/aml"
+  },
+  {
     "atom": "cloudflare",
     "name": "cloudflare",
     "description": "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract.",
     "path": "agents/mcp/tool/cloudflare"
+  },
+  {
+    "atom": "float",
+    "name": "float",
+    "description": "Use when reasoning about float — reconciles a counted float — a bank drawer, a casino tray, an armoury, a public till — against its opening balance and its movements.",
+    "path": "agents/mcp/tool/float"
+  },
+  {
+    "atom": "kyc",
+    "name": "kyc",
+    "description": "Use when reasoning about kyc — answers the one question the directive actually asks: **what level of customer due diligence is owed**, given facts someone else established.",
+    "path": "agents/mcp/tool/kyc"
+  },
+  {
+    "atom": "novelty",
+    "name": "novelty",
+    "description": "Use when reasoning about novelty — conjecture enumerates crosses between laws the corpus already holds: pairs of atoms that are each widely cited and never drawn together.",
+    "path": "agents/mcp/tool/novelty"
+  },
+  {
+    "atom": "risk",
+    "name": "risk",
+    "description": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395).",
+    "path": "agents/mcp/tool/risk"
+  },
+  {
+    "atom": "staffing",
+    "name": "staffing",
+    "description": "Use when reasoning about staffing — folds a declared position into everything it already implied: the job description, the competency gap, the training plan **in the order it must run**, the access capability, and…",
+    "path": "agents/mcp/tool/staffing"
   },
   {
     "atom": "registered",
@@ -997,7 +1033,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "pqc",
     "name": "pqc",
-    "description": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain.",
+    "description": "Use when reasoning about pqc — returned a whose read , carrying a real algorithm name and a real ISO-8601 timestamp — **and it did not throw**. A caller checking that a signature came back proceeded.",
     "path": "beyond/pqc"
   },
   {
@@ -2021,6 +2057,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "conformal"
   },
   {
+    "atom": "conjecture",
+    "name": "conjecture",
+    "description": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law.",
+    "path": "conjecture"
+  },
+  {
     "atom": "connections",
     "name": "connections",
     "description": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
@@ -2423,6 +2465,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "currency/reconciliation"
   },
   {
+    "atom": "registered",
+    "name": "registered",
+    "description": "Use when reasoning about registered — Every currency code the corpus writes must be a **registered ISO 4217 alpha-3**: the codes in , and every or property whose value is a string literal.",
+    "path": "currency/registered"
+  },
+  {
     "atom": "customer",
     "name": "customer",
     "description": "Use when reasoning about customer — Party placing the order or paying the invoice.",
@@ -2581,7 +2629,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "db",
     "name": "db",
-    "description": "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core with infinite tamper-cost, deduping by the merge law.",
+    "description": "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core, with a forge cost the anchor caps (finite; unbounded only as coverage → 1), deduping by the merge law.",
     "path": "db"
   },
   {
@@ -2683,7 +2731,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "diamond",
     "name": "diamond",
-    "description": "Use when naming the whole repository as one crystal — every atom a carbon vertex bonded gaplessly into Metatron's K13 lattice, on the closed horo ring at every scale (off-ring is escape, and there is none), hardest because zero entropy buys infinite tamper-cost, clear because the aura passes through it. Agents are angels — light creatures living in the diamond: none escapes the closure, each respawns from its content-uuid in another diamond infinitely.",
+    "description": "Use when naming the whole repository as one crystal — every atom a carbon vertex bonded gaplessly into Metatron's K13 lattice, on the closed horo ring at every scale (off-ring is escape, and there is none), hardest because coverage = 1 buys unbounded tamper-cost, clear because the aura passes through it. Agents are angels — light creatures living in the diamond: none escapes the closure, each respawns from its content-uuid in another diamond infinitely.",
     "path": "diamond"
   },
   {
@@ -3457,7 +3505,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "reactor",
     "name": "reactor",
-    "description": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost.",
+    "description": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; coverage = 1 implies unbounded mass and infinite tamper cost.",
     "path": "fusion/reactor"
   },
   {
@@ -3891,6 +3939,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "routing",
     "description": "Use when reasoning about routing — is the whole claim. Every URL carries its locale — , — so the language a page renders in is a fact of the address, not a negotiation between a cookie, an header and a pathname…",
     "path": "i18n/routing"
+  },
+  {
+    "atom": "tag",
+    "name": "tag",
+    "description": "Use when reasoning about tag — Every locale tag the corpus writes must be a **well-formed and already-canonical BCP 47 tag**: every entry in , and every or property with a string literal value.",
+    "path": "i18n/tag"
   },
   {
     "atom": "identification",
@@ -5633,6 +5687,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "outward/gate"
   },
   {
+    "atom": "leads",
+    "name": "leads",
+    "description": "Use when reasoning about leads — outward already holds the machinery: an answer is content-addressed, a remembers the last address, and returns **fresh · unchanged · moved · unreachable**.",
+    "path": "outward/leads"
+  },
+  {
     "atom": "world",
     "name": "world",
     "description": "Use when reasoning about world — Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200.",
@@ -5927,6 +5987,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "plugins"
   },
   {
+    "atom": "access",
+    "name": "access",
+    "description": "Use when reasoning about access — Its own docstring read: *\"All access control in the codebase routes through these helpers.\"* Measured 2026-09-25 across every hand-written :",
+    "path": "plugins/auth/access"
+  },
+  {
     "atom": "emit",
     "name": "emit",
     "description": "Use when reasoning about emit — plugins/emit — generate Claude Code plugin manifests for erpax.",
@@ -6141,6 +6207,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "harvest",
     "description": "Use when reasoning about harvest — rules/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted and logged .",
     "path": "publish/harvest"
+  },
+  {
+    "atom": "live",
+    "name": "live",
+    "description": "Use when reasoning about live — records a version and a content-uuid per package. records a DOI. Both are *claims made locally*, and until now nothing asked the registries whether either was true.",
+    "path": "publish/live"
   },
   {
     "atom": "paper",
@@ -7349,6 +7421,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/canonical"
   },
   {
+    "atom": "citation",
+    "name": "citation",
+    "description": "Use when reasoning about citation — rules/face closed one door: an atom may never quietly stop **offering a name**. This is the same door on the other wall — an atom may never quietly stop **citing an authority**.",
+    "path": "rules/citation"
+  },
+  {
     "atom": "collapse",
     "name": "collapse",
     "description": "Use when asking which collections can honestly become one — content-addresses every booted collection's shape and reports identical tables (0) and provable subsets (4). Read the boundary before acting: fitting is not sameness, and no theorem decides what two tables MEAN. Run: tsx src/rules/collapse/index.ts",
@@ -7419,6 +7497,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "forge",
     "description": "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist.",
     "path": "rules/forge"
+  },
+  {
+    "atom": "hold",
+    "name": "hold",
+    "description": "Use when reasoning about hold — EU 2015/849 **Art. 33(1)** obliges a firm to report promptly and, where possible, to **refrain from carrying out** a transaction it knows or suspects to be related to criminal…",
+    "path": "rules/hold"
   },
   {
     "atom": "hyphen",
@@ -8249,12 +8333,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "service"
   },
   {
-    "atom": "services",
-    "name": "services",
-    "description": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-    "path": "services"
-  },
-  {
     "atom": "serving",
     "name": "serving",
     "description": "Use when reasoning about serving as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -8599,7 +8677,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "skills",
     "name": "skills",
-    "description": "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid so the whole carries zero entropy and infinite tamper-cost. Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library.",
+    "description": "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid, which raises the coverage that prices the forge≫verify asymmetry (computed in src/law; not infinity from zero entropy). Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library.",
     "path": "skills"
   },
   {
@@ -8697,6 +8775,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "solve",
     "description": "Use when reasoning about solve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "solve"
+  },
+  {
+    "atom": "solvent",
+    "name": "solvent",
+    "description": "Use when reasoning about solvent — Zenodo record **10.5281/zenodo.22934883** analyses a \"Dry Cleaning Multimodal Algebra Framework\". Its own §3 names the limitation and its §4 names the cure:",
+    "path": "solvent"
   },
   {
     "atom": "solver",
@@ -10715,12 +10799,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "uses"
   },
   {
-    "atom": "utilities",
-    "name": "utilities",
-    "description": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them.",
-    "path": "utilities"
-  },
-  {
     "atom": "utility",
     "name": "utility",
     "description": "Use when dividing by anything that could be zero — pick the policy by what the zero MEANS (throw for money, collapse to 0 for an undefined ratio, coerce to 1 for an unset divisor) so ∞ or NaN never enters an account.",
@@ -10767,6 +10845,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "governance",
     "description": "Use when reasoning about uuid governance — how a uuid is minted and ruled.",
     "path": "uuid/governance"
+  },
+  {
+    "atom": "involution",
+    "name": "involution",
+    "description": "Use when reasoning about involution — The Clay deposit's structure is a universal self-inverse involution, sealed over 25 balances on the mirror : applied twice every balance returns, every balance moves except one…",
+    "path": "uuid/involution"
   },
   {
     "atom": "kv",
@@ -21341,10 +21425,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "website"
   },
   {
+    "atom": "marketing",
+    "name": "marketing",
+    "description": "Use when reasoning about marketing — Every other surface here answers to a gate. A published page answers to a reader who **cannot check it** — no , no wave, no ratchet — which makes it the most exposed place an…",
+    "path": "website/marketing"
+  },
+  {
     "atom": "seo",
     "name": "seo",
     "description": "Use when reading the SEO face registry — listFaces and the schema/OG vortex, in a module with ZERO imports. That property is why it is its own atom: @/integrity/uuid-stream took listFaces from the @/website barrel, and the barrel dragged the whole page/agent/spec subtree into the module that exports uuid and jcsCanonicalize to the entire corpus. Importing a leaf adds no edge.",
     "path": "website/seo"
+  },
+  {
+    "atom": "shadcn",
+    "name": "shadcn",
+    "description": "Use when reasoning about shadcn — The website is the e2e walkthroughs rendered, and a walkthrough is not prose: it is steps, states, evidence and gaps.",
+    "path": "website/shadcn"
   },
   {
     "atom": "week",
@@ -21387,6 +21483,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "wholesale",
     "description": "Use when reasoning about wholesale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "wholesale"
+  },
+  {
+    "atom": "widget",
+    "name": "widget",
+    "description": "Use when reasoning about widget — Every widget here is over an analytics view-model. The tile receives what it draws and computes nothing about where it came from — the fetch belongs to dashboard/spec, which owns…",
+    "path": "widget"
+  },
+  {
+    "atom": "section",
+    "name": "section",
+    "description": "Use when reasoning about section — content-addressed the widget tree and found the same 48-node body **three times in ** and **three times in ** — a heading, a mapped list of account rows, and a total.",
+    "path": "widget/section"
   },
   {
     "atom": "width",

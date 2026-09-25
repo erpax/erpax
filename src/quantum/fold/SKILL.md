@@ -3,13 +3,13 @@ name: fold
 description: "Use when reasoning about fold — Double fold is mandatory for quantum mentality: word ⊗ digit; 2D documents present both sheets until seal."
 atomPath: "quantum/fold"
 coordinate: "quantum/fold · 5/round · ae3a969f"
-contentUuid: "6fba4884-a653-5590-aa64-af43ae35945e"
+contentUuid: "b2c79a92-7a01-52bd-9d09-30d03ce310de"
 diamondUuid: "a069fb14-533f-8abd-ac3a-d95eb691c001"
 uuid: "ae3a969f-06c3-8964-ba8f-5d4eb82b8bb6"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 89
+  bondDegree: 91
 standards: []
 bindings: []
 signatures:
@@ -51,7 +51,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "3ca7352d-5180-843d-94a8-2759f13167af"
-    contentUuid: "6fba4884-a653-5590-aa64-af43ae35945e"
+    contentUuid: "b2c79a92-7a01-52bd-9d09-30d03ce310de"
 version: 2
 ---
 # quantum/fold
@@ -60,4 +60,4 @@ version: 2
 
 **Law — agents must not mint hyphenated paths; one word per folder.** Linear logic (`findLinearLogic`, `foldLinearPair`) lives in `index.ts` matter — never `linear-logic/` or `linear-logic.ts`.
 
-<sub>content-uuid `6fba4884-a653-5590-aa64-af43ae35945e` · account `quantum/fold` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b2c79a92-7a01-52bd-9d09-30d03ce310de` · account `quantum/fold` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -130,3 +130,20 @@ describe('emission: greenhouse-gas inventory in CO₂-equivalent', () => {
     })
   })
 })
+
+/**
+ * A dry cleaner's fugitive solvent is an emission whose activity data nobody metered
+ * — the solvent mass balance produced it (EU 2010/75 Annex VII).
+ */
+describe('emission — fugitive solvent enters the inventory through the balance', () => {
+  it('the residual of the balance is the activity', async () => {
+    const { fugitiveSolventEmission } = await import('@/emission')
+    expect(fugitiveSolventEmission({ purchased: 1000, recovered: 820, retained: 60 })).toBe(120)
+    expect(fugitiveSolventEmission({ purchased: 1000, recovered: 820, retained: 60 }, 2.5)).toBe(300)
+  })
+
+  it('a balance that does not conserve emits nothing, never a credit', async () => {
+    const { fugitiveSolventEmission } = await import('@/emission')
+    expect(fugitiveSolventEmission({ purchased: 100, recovered: 90, retained: 30 })).toBe(0)
+  })
+})

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quantum computed import — barrel entanglement derived from each file's live import/wikilink set, never hand-annotated; deep paths are escapes that collapse to @/x.",
-    "uuid": "54dd43be-fa8f-8d8a-b271-f02788845c49",
+    "uuid": "0a2a6dc5-0b68-81e5-bc9f-db2ae4bb7eef",
     "words": [
       "use",
       "when",

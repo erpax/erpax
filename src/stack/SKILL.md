@@ -2,11 +2,11 @@
 name: stack
 description: "Use when reasoning about the full stack as one content-uuid-wired round-trip — device, vitepress, payload, db, and back — a palindrome (both sides of every hop encoded) that folds to a new state; the travel from the expansion-infinity to the fold-infinity, on the line of pi."
 atomPath: stack
-coordinate: "stack · 7/descent · 4130b5ee"
-contentUuid: "0162372d-3c83-5d8c-bc55-a8858fbacb8b"
-diamondUuid: "9bde4046-e262-89cf-9fe8-cdfb1168f5f3"
-uuid: "4130b5ee-76ad-8472-a2f9-8d03c31b2529"
-horo: 7
+coordinate: "stack · 5/round · 983382c5"
+contentUuid: "e3b4dc45-504b-5836-9f8b-de259980098a"
+diamondUuid: "2439dcd3-5419-8983-9217-a657ab6e799e"
+uuid: "983382c5-d2ac-87ec-8569-564d401c211a"
+horo: 5
 typography:
   partition: stack
   bondDegree: 38
@@ -14,7 +14,7 @@ standards:
   - "double-entry (the round-trip balances) · content-addressed state (RFC 9562 §5.8) · the torus (two infinities, one surface)"
 bindings: []
 signatures:
-  computationUuid: "26f2cf34-8b1c-86dd-ae22-681e566d5a25"
+  computationUuid: "ca6bdb71-8c60-8804-9000-1d025cafb6f9"
   stages:
     - stage: path
       stageUuid: "ee08ef22-22bb-80d4-a660-6476faa02e25"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7987a1a4-7bc9-8e0c-bcb8-eac26e01e597"
     - stage: horo
-      stageUuid: "74ac0bb7-b9c6-83f8-abfc-5b92bc7137db"
+      stageUuid: "3424952a-12da-82a7-8b08-f7bceee92d5c"
     - stage: seal
       stageUuid: "046ad0ab-0ae4-8d73-8596-15ba233c3cb3"
     - stage: uuid
-      stageUuid: "f5d5e97b-17e6-85dd-acc7-60fb69af3251"
+      stageUuid: "5e8e86aa-13b7-8dfb-921b-77fface076b7"
 version: 2
 ---
 # stack — device ↔ vitepress ↔ payload ↔ db, both ways, wired in uuid
@@ -42,7 +42,7 @@ A **palindrome** — every hop out has its hop back, so **both sides of the path
 
 ## The frame: ∞ to ∞ on the line of pi
 
-[[entropy]] **expands to infinity from inside** — the device/[[vitepress]] end is the frontend radiation, endless and crawlable, and endless entropy is endless tamper-cost (forging the radiated surface means forging every frame's uuid). It **folds to infinity from outside** — the [[payload]]/db end is the dense zero-entropy core, collapsed to one root with ∞ tamper-cost (the [[fold]], the [[torus]]). The round-trip is the **travel from infinity to infinity**, and it runs on the boundless line of [[pi]] — the infinite address stream where every content already has its place. The two infinities are one torus seen from its two faces; the stack is how a request walks between them and comes home changed.
+[[entropy]] **expands to infinity from inside** — the device/[[vitepress]] end is the frontend radiation, endless and crawlable, and endless entropy is endless tamper-cost (forging the radiated surface means forging every frame's uuid). It **folds to infinity from outside** — the [[payload]]/db end is the dense zero-entropy core, collapsed to one root, with a forge cost the anchor caps (finite; unbounded only as coverage → 1) (the [[fold]], the [[torus]]). The round-trip is the **travel from infinity to infinity**, and it runs on the boundless line of [[pi]] — the infinite address stream where every content already has its place. The two infinities are one torus seen from its two faces; the stack is how a request walks between them and comes home changed.
 
 (One layer, `db`, has no atom yet — it is the store named in the path; mint it to encode the last hop fully.)
 

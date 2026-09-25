@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when mounting shadcn/Radix primitives — the component catalog under src/ui/ (Tooltip, Dialog, Tabs, Collapsible, Sonner, etc.) wired to corpus-computed CSS and live quantum dimension surfaces.",
-    "uuid": "43ccc973-cd91-83df-8ca9-6ca8b0b4d90c",
+    "uuid": "d6e04eb8-2910-8a89-9094-f9a8d7466751",
     "words": [
       "use",
       "when",

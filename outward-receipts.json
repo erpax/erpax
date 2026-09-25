@@ -1,9 +1,17 @@
 {
   "law": "Each entry is the content-address of one external answer. A later run VERIFIES the address instead of re-reading the world; only a MOVED address costs attention. Unreachable keeps the last receipt — the boundary is allowed to be down.",
-  "probes": 3,
+  "probes": 11,
   "receipts": {
     "vies": "6bb847e2-6069-8f75-9451-d43647b445f1",
     "ecb": "543b2fc8-2716-80c0-af35-a3f069a78f91",
-    "peppol": "4040972d-4fa5-8b8a-aa65-dac274b47a19"
+    "peppol": "4040972d-4fa5-8b8a-aa65-dac274b47a19",
+    "bg:bnb": "e927ef8d-dd67-8ac9-845e-73b4aee15d76",
+    "bg:tr": "1d379f43-9ac3-804e-8b94-787191e65746",
+    "world:brreg": "e603a70d-2173-8131-91fa-334ac5d1ab32",
+    "world:sec": "dd1c04ad-c23e-8b76-b4be-41e796a909f8",
+    "world:frankfurter": "7db33764-2361-8399-8ee0-0d125d63a075",
+    "world:erapi": "26c711c2-7469-8ebd-9c91-638e0ea4797a",
+    "world:off": "4fd50440-92d6-8ff5-b48f-b72b24403532",
+    "world:ofac": "6b6a99d7-a8d2-8fad-9096-143d326a55f0"
   }
 }

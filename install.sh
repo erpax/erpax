@@ -63,7 +63,7 @@ cat <<'ORIENT'
   erpax — oriented.
 
     entry     .claude/skills/SKILL.md      the root orientation skill
-    law       zero entropy ⇒ infinite tamper-cost
+    law       forge >> verify under an anchor (src/law)
     atoms     every folder under src/ is one word, told three ways (form · code · schema)
 
   next:
