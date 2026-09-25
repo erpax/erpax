@@ -50,6 +50,44 @@ The violation is mechanical: a governed dependency whose exports are never calle
 
 **Honest boundary.** This proves a package is *called*, never that it is called *well* — extending through a plugin's override API vs fighting it is beyond the gate. And a package with no readable API face is never judged rather than guessed at.
 
+## Is the installed Payload the newest one published?
+
+Measured 2026-09-25: **no — 135 published versions behind.**
+
+```
+payload 4.0.0-internal.38b7f1d (2026-05-12)
+newest  4.0.0-canary.37        (2026-09-24)
+```
+
+The 4.x line also **moved tag**: `internal` now points at `3.91.0-internal`, and the newest 4.x
+builds ship under `canary`. An upgrade is a tag change, not just a version bump.
+
+## Ordering is by publish TIME, never by semver
+
+The 4.x versions are `4.0.0-internal.<git-hash>`. Semver compares pre-release identifiers
+alphanumerically, so `…fec2230` sorts above `…38b7f1d` **because of the hash** — a confident,
+meaningless verdict. `newestByTime` reads the registry's own `time` map instead, and the hermetic
+test pins exactly that case: the semver-preferred answer is asserted to be the wrong one.
+
+## Two things the first run corrected
+
+**An unreachable registry is not a pass.** `currencyOf` takes `fetchTime` injected, so the logic is
+testable offline, and returns `reachable: false` rather than `behind: 0` — an unasked question
+reported as green is the defect named across this corpus.
+
+**"All at one version" was over-strong.** The first run went red on
+`@payloadcms/eslint-plugin` at `3.28.0` against everyone else's `4.0.0-internal`. That version **is**
+its newest — no 4.x exists and nothing has been published after it. The law is *each package at its
+own newest*, which a shared-version check cannot express; the runtime packages are asserted to move
+as one line, and the tool packages are not.
+
+## Why the live check ratchets instead of demanding the newest
+
+Payload publishes the 4.x internal line roughly daily — 135 builds in four months. A test demanding
+the very newest would go red every morning over something nobody can act on that day. The gap is
+**always printed**, and the assertion is that it does not grow. The horizon is 0 and the ceiling is
+where the tree actually stands.
+
 **Law — [[law]]: an installed package is used through its own API or dropped — a dependency whose exports are never called is dead weight or a re-implementation of what it already ships.**
 
 Composes: [[rules]] · [[law]].

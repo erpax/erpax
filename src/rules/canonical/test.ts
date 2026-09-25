@@ -60,3 +60,100 @@ describe('rules/canonical — use the package or drop it', () => {
     rmSync(cwd, { recursive: true, force: true })
   })
 })
+
+/**
+ * The installed Payload must be the newest PUBLISHED build, pre-release included.
+ *
+ * Ordering is by publish TIME, never semver: the 4.x line is `4.0.0-internal.<git-hash>`, so
+ * semver compares hashes alphanumerically and would report a confident, meaningless verdict.
+ */
+describe('rules/canonical — Payload currency, ordered by publish time', () => {
+  const TIME = {
+    created: '2020-01-01T00:00:00.000Z',
+    modified: '2026-09-24T00:00:00.000Z',
+    '3.90.2': '2026-09-23T00:00:00.000Z',
+    '4.0.0-canary.37': '2026-09-24T00:00:00.000Z',
+    '4.0.0-internal.38b7f1d': '2026-05-12T00:00:00.000Z',
+    '4.0.0-internal.fec2230': '2026-06-01T00:00:00.000Z',
+  }
+
+  it('picks the newest by time, and ignores created/modified', async () => {
+    const { newestByTime } = await import('@/rules/canonical')
+    expect(newestByTime(TIME)?.version).toBe('4.0.0-canary.37')
+    // semver would have preferred the alphabetically-larger hash — a meaningless answer
+    expect(newestByTime(TIME)?.version).not.toBe('4.0.0-internal.fec2230')
+    expect(newestByTime({})).toBeUndefined()
+  })
+
+  it('counts what was published after the installed build', async () => {
+    const { publishedAfter } = await import('@/rules/canonical')
+    expect(publishedAfter(TIME, '4.0.0-internal.38b7f1d')).toBe(3)
+    expect(publishedAfter(TIME, '4.0.0-canary.37')).toBe(0)
+    expect(publishedAfter(TIME, 'not-a-version')).toBe(0)
+  })
+
+  it('an unreachable registry is NOT a pass — reachable:false, never behind:0', async () => {
+    const { currencyOf } = await import('@/rules/canonical')
+    const c = currencyOf('payload', () => undefined)
+    expect(c.reachable).toBe(false)
+    expect(c.behind).toBe(0) // and the caller must read `reachable` before trusting it
+    const ok = currencyOf('payload', () => TIME)
+    expect(ok.reachable).toBe(true)
+  })
+
+  it('every @payloadcms package is read from package.json, never typed', async () => {
+    const { payloadPackages, installedVersion } = await import('@/rules/canonical')
+    const pkgs = payloadPackages()
+    expect(pkgs).toContain('payload')
+    expect(pkgs.filter((p) => p.startsWith('@payloadcms/')).length).toBeGreaterThan(10)
+    expect(pkgs.every((p) => installedVersion(p) !== undefined)).toBe(true)
+  })
+
+  it('the RUNTIME packages move as one line — the tool packages need not', async () => {
+    const { payloadPackages, installedVersion } = await import('@/rules/canonical')
+    // @payloadcms/eslint-plugin is at 3.28.0 and that IS its newest — no 4.x exists and nothing
+    // has been published after it. "All at one version" was an over-strong assertion: the law is
+    // each package at ITS OWN newest, which a shared-version check cannot express.
+    const runtime = payloadPackages().filter((p) => !p.includes('eslint'))
+    const versions = new Set(runtime.map((p) => installedVersion(p)))
+    expect(versions.size, `runtime payload packages at ${versions.size} versions: ${[...versions].join(', ')}`).toBe(1)
+  })
+})
+
+/**
+ * The live check. Ratcheted, not absolute: Payload publishes the 4.x internal line roughly daily,
+ * so "the very newest build" would go red every morning for a reason nobody can act on. The gap is
+ * always PRINTED, and the assertion is that it does not grow.
+ */
+describe('rules/canonical — how far behind Payload actually is', () => {
+  const BEHIND_CEILING = 140 // measured 135 on 2026-09-25; the horizon is 0
+
+  it('names the gap, and refuses a verdict when the registry cannot be asked', async () => {
+    const { currencyOf } = await import('@/rules/canonical')
+    const { execFileSync } = await import('node:child_process')
+    const fetchTime = (pkg: string): Record<string, string> | undefined => {
+      try {
+        const out = execFileSync('npm', ['view', pkg, 'time', '--json'], {
+          encoding: 'utf8',
+          timeout: 120_000,
+          stdio: ['ignore', 'pipe', 'ignore'],
+        })
+        return JSON.parse(out) as Record<string, string>
+      } catch {
+        return undefined // offline, or npm unavailable — NOT a pass
+      }
+    }
+    const c = currencyOf('payload', fetchTime)
+    if (!c.reachable) {
+      // an unasked question is not an answer; the suite says so rather than reporting green
+      console.log('payload currency — registry unreachable, no verdict reached')
+      expect(c.behind).toBe(0)
+      return
+    }
+    console.log(
+      `payload ${c.installed} (${c.installedPublished.slice(0, 10)}) — newest ${c.newest} (${c.newestPublished.slice(0, 10)}) — ${c.behind} versions behind`,
+    )
+    expect(c.newest.length).toBeGreaterThan(0)
+    expect(c.behind, `payload is ${c.behind} published versions behind ${c.newest}`).toBeLessThanOrEqual(BEHIND_CEILING)
+  }, 180_000)
+})

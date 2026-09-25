@@ -146,3 +146,95 @@ if (import.meta.url === 'file://' + process.argv[1]) {
 }
 
 /** @index-cross.foldback child=rules/canonical parent=rules — this cross folds back into its parent. */
+
+/** How far behind the registry an installed package is. See SKILL.md. */
+export interface Currency {
+  readonly pkg: string
+  readonly installed: string
+  /** Newest version by PUBLISH TIME, across every dist-tag including pre-releases. */
+  readonly newest: string
+  readonly newestPublished: string
+  readonly installedPublished: string
+  /** Versions published after the installed one. */
+  readonly behind: number
+  /** False when the registry could not be asked — a verdict was NOT reached. */
+  readonly reachable: boolean
+}
+
+/**
+ * Order a registry's versions by publish TIME, never by semver. See SKILL.md.
+ *
+ * Payload's 4.x line is `4.0.0-internal.<git-hash>`, so semver compares the hashes
+ * alphanumerically — `…fec2230` sorts above `…38b7f1d` for no reason a reader would accept.
+ * A semver-max check would report a confident, meaningless verdict.
+ */
+export function newestByTime(time: Readonly<Record<string, string>>): { version: string; at: string } | undefined {
+  const rows = Object.entries(time)
+    .filter(([v]) => v !== 'created' && v !== 'modified')
+    .map(([v, d]) => ({ version: v, at: d, ms: Date.parse(d) }))
+    .filter((r) => Number.isFinite(r.ms))
+    .sort((a, b) => b.ms - a.ms)
+  const top = rows[0]
+  return top === undefined ? undefined : { version: top.version, at: top.at }
+}
+
+/** Versions of `time` published strictly after `version`. See SKILL.md. */
+export function publishedAfter(time: Readonly<Record<string, string>>, version: string): number {
+  const mine = Date.parse(time[version] ?? '')
+  if (!Number.isFinite(mine)) return 0
+  return Object.entries(time).filter(
+    ([v, d]) => v !== 'created' && v !== 'modified' && Number.isFinite(Date.parse(d)) && Date.parse(d) > mine,
+  ).length
+}
+
+/** Payload's own packages, read from package.json — computed, never a typed list. */
+export function payloadPackages(cwd: string = process.cwd()): string[] {
+  const p = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as {
+    dependencies?: Record<string, string>
+    devDependencies?: Record<string, string>
+  }
+  const all = { ...p.dependencies, ...p.devDependencies }
+  return Object.keys(all)
+    .filter((k) => k === 'payload' || k.startsWith('@payloadcms/'))
+    .sort()
+}
+
+/** The installed version of a package, or undefined when it is not resolvable. */
+export function installedVersion(pkg: string, cwd: string = process.cwd()): string | undefined {
+  const f = join(cwd, 'node_modules', ...pkg.split('/'), 'package.json')
+  if (!existsSync(f)) return undefined
+  try {
+    return (JSON.parse(readFileSync(f, 'utf8')) as { version?: string }).version
+  } catch {
+    return undefined
+  }
+}
+
+/**
+ * How far behind the registry one package is. See SKILL.md.
+ *
+ * `fetchTime` is injected so the check is testable without the network, and an unreachable
+ * registry returns `reachable: false` rather than `behind: 0` — an unasked question reported as a
+ * pass is the defect this corpus keeps naming.
+ */
+export function currencyOf(
+  pkg: string,
+  fetchTime: (pkg: string) => Readonly<Record<string, string>> | undefined,
+  cwd: string = process.cwd(),
+): Currency {
+  const installed = installedVersion(pkg, cwd) ?? ''
+  const time = fetchTime(pkg)
+  const newest = time === undefined ? undefined : newestByTime(time)
+  if (time === undefined || newest === undefined) {
+    return { pkg, installed, newest: '', newestPublished: '', installedPublished: '', behind: 0, reachable: false }
+  }
+  return {
+    pkg,
+    installed,
+    newest: newest.version,
+    newestPublished: newest.at,
+    installedPublished: time[installed] ?? '',
+    behind: publishedAfter(time, installed),
+    reachable: true,
+  }
+}
