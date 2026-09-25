@@ -19,7 +19,7 @@ import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
 import { durableObjectExportGaps } from '@/cloudflare/binding'
 import { unreachedAtoms } from '@/rules/unreached'
-import { copiesInTangle, copyCount } from '@/rules/copy'
+import { copiesInTangle, copyCount, unearnedCopies } from '@/rules/copy'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -325,6 +325,18 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // files is decided by the graph, so the same text runs under conditions neither author
     // chose. Zero over a NON-EMPTY population — 7 cross-file copies, 13 tangles over 152 files.
     guardian({ axis: 'copy-in-tangle', violations: copiesInTangle(cwd).length, baseline: 0 }),
+    // unearned-copy — a body duplicated across files where a site's export has ≤1 caller
+    // ([[rules]]/copy × [[rules]]/unfolded). MEASURED, not guessed: conjecture's prose ranking put
+    // this pair nowhere near the top while crossIntersections showed 11 shared files, and its own
+    // top pick (concentration × copy) measured exactly 0. Ratchets from 8.
+    guardian({
+      axis: 'unearned-copy',
+      violations: (() => {
+        const r = unfoldedExports(cwd)
+        return unearnedCopies(new Set([...r.dead, ...r.single].map((e) => e.file)), cwd).length
+      })(),
+      baseline: 8,
+    }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carried
     // `sorry` or did not compile, under a directory named `verify` that nothing ever ran.
     // AT ZERO: the last two were never rejected proofs at all — the kernel was run with no

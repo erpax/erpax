@@ -146,3 +146,27 @@ describe('rules/copy — a copy inside one tangle', () => {
     for (const g of copiesInTangle()) expect(new Set(g.sites.map((s) => s.file)).size).toBeGreaterThan(1)
   }, 300_000)
 })
+
+/**
+ * The copy × unfolded cross — found by MEASURING the intersection, not by ranking the prose.
+ */
+describe('rules/copy — a copy no site earns', () => {
+  it('flags a body whose site has an export with no more than one caller', async () => {
+    const { unearnedCopies, duplicateBodies } = await import('@/rules/copy')
+    const { unfoldedExports } = await import('@/rules/unfolded')
+    const r = unfoldedExports()
+    const files = new Set([...r.dead, ...r.single].map((e) => e.file))
+    const u = unearnedCopies(files)
+    expect(u.length).toBeLessThanOrEqual(duplicateBodies().length)
+    // every reported group has at least one site whose export is not earning its place
+    for (const g of u) {
+      expect(g.unearned.length).toBeGreaterThan(0)
+      for (const s of g.unearned) expect(files.has(s.file)).toBe(true)
+    }
+  }, 300_000)
+
+  it('and reports nothing when no site is un-folded', async () => {
+    const { unearnedCopies } = await import('@/rules/copy')
+    expect(unearnedCopies(new Set<string>())).toEqual([])
+  }, 300_000)
+})

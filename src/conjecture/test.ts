@@ -164,3 +164,38 @@ describe('conjecture — the crosses formulate on the spot', () => {
     expect(undecided(cs)).toHaveLength(cs.length)
   })
 })
+
+/**
+ * The prose ranking predicted nothing. Three top picks, three empty measurements.
+ */
+describe('conjecture — the measured cross inverts the prose ranking', () => {
+  const sets = new Map<string, ReadonlySet<string>>([
+    ['unfolded', new Set(['a.ts', 'b.ts', 'c.ts', 'd.ts'])],
+    ['copy', new Set(['a.ts', 'b.ts'])],
+    ['concentration', new Set(['z.ts'])],
+  ])
+
+  it('intersection is symmetric and hides which set is the large one', async () => {
+    const { crossIntersections } = await import('@/conjecture')
+    const rows = crossIntersections(sets)
+    expect(rows).toHaveLength(3) // C(3,2)
+    const cu = rows.find((r) => r.a === 'copy' && r.b === 'unfolded')
+    expect(cu?.shared).toBe(2)
+    expect(rows.find((r) => r.a === 'concentration')?.shared).toBe(0)
+  })
+
+  it('containment is DIRECTIONAL — it says which law carries which', async () => {
+    const { containment } = await import('@/conjecture')
+    const c = containment(sets)
+    const copyInUnfolded = c.find((x) => x.law === 'copy' && x.inside === 'unfolded')
+    const unfoldedInCopy = c.find((x) => x.law === 'unfolded' && x.inside === 'copy')
+    expect(copyInUnfolded?.share).toBe(1) // every copy file is un-folded
+    expect(unfoldedInCopy?.share).toBe(0.5) // only half the un-folded files are copies
+    expect(copyInUnfolded!.share).toBeGreaterThan(unfoldedInCopy!.share) // unfolded CARRIES copy
+  })
+
+  it('and a law meeting nothing is named — its crosses are provably empty', async () => {
+    const { orthogonalLaws } = await import('@/conjecture')
+    expect(orthogonalLaws(sets)).toEqual(['concentration'])
+  })
+})

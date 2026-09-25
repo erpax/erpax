@@ -108,6 +108,8 @@ export interface Cross {
   readonly together: number
   /** Laplace-smoothed −PMI: high when both are common and they never meet. */
   readonly bits: number
+  /** True when BOTH parents still report violations — a cross between two satisfied laws finds nothing. */
+  readonly live: boolean
 }
 
 /**
@@ -115,7 +117,7 @@ export interface Cross {
  *
  * A cross is not authored, it is enumerated — C(n,2) of them exist the moment the laws do.
  */
-export function crosses(cwd: string = process.cwd()): Cross[] {
+export function crosses(cwd: string = process.cwd(), liveCounts?: ReadonlyMap<string, number>): Cross[] {
   const dir = join(cwd, 'src', 'rules')
   if (!existsSync(dir)) return []
   const laws = readdirSync(dir, { withFileTypes: true })
@@ -155,10 +157,17 @@ export function crosses(cwd: string = process.cwd()): Cross[] {
       const pa = (ca + 1) / (n + 2)
       const pb = (cb + 1) / (n + 2)
       const pab = (together + 1) / (n + 2)
-      out.push({ a, b, citedA: ca, citedB: cb, together, bits: -algebraLog2(pab / (pa * pb)) })
+      const live =
+        liveCounts === undefined ? true : (liveCounts.get(a) ?? 0) > 0 && (liveCounts.get(b) ?? 0) > 0
+      out.push({ a, b, citedA: ca, citedB: cb, together, bits: -algebraLog2(pab / (pa * pb)), live })
     }
   }
-  return out.sort((x, y) => y.bits - x.bits || x.a.localeCompare(y.a) || x.b.localeCompare(y.b))
+  // a live cross outranks a dead one at any surprise: the bits say how much an answer would
+  // teach, and a cross whose parents are both satisfied has no question left to answer
+  return out.sort(
+    (x, y) =>
+      Number(y.live) - Number(x.live) || y.bits - x.bits || x.a.localeCompare(y.a) || x.b.localeCompare(y.b),
+  )
 }
 
 /**
@@ -182,4 +191,76 @@ export function crossConjectures(cwd: string = process.cwd()): Conjecture[] {
       priorAgainst: exactMax(c.citedA, c.citedB),
       costSeconds: 0,
     }))
+}
+
+/** Two laws and the files where both of them fire. */
+export interface Intersection {
+  readonly a: string
+  readonly b: string
+  /** Files violating both — the population a cross between them would work on. */
+  readonly shared: number
+  readonly files: readonly string[]
+}
+
+/**
+ * Which pairs of laws actually fire on the SAME files. See SKILL.md.
+ *
+ * `crosses` ranks by absence in PROSE, which is a fact about what has been written and does not
+ * predict what a cross would find: its top three picks each measured empty. This measures the
+ * intersection instead. The caller supplies each law's violating files, so one scan per law pays
+ * for every pair.
+ */
+export function crossIntersections(sets: ReadonlyMap<string, ReadonlySet<string>>): Intersection[] {
+  const names = [...sets.keys()].sort()
+  const out: Intersection[] = []
+  for (let i = 0; i < names.length; i++) {
+    for (let j = i + 1; j < names.length; j++) {
+      const a = names[i] as string
+      const b = names[j] as string
+      const sa = sets.get(a) as ReadonlySet<string>
+      const sb = sets.get(b) as ReadonlySet<string>
+      const files = [...sa].filter((f) => sb.has(f)).sort()
+      out.push({ a, b, shared: files.length, files })
+    }
+  }
+  return out.sort((x, y) => y.shared - x.shared || x.a.localeCompare(y.a) || x.b.localeCompare(y.b))
+}
+
+/** How much of one law's population lies inside another's — directional. */
+export interface Containment {
+  readonly law: string
+  readonly inside: string
+  /** Share of `law`'s files that are also `inside`'s, in [0, 1]. */
+  readonly share: number
+}
+
+/**
+ * The directional containment matrix. See SKILL.md.
+ *
+ * Intersection counts are symmetric and hide which set is the large one. Containment is not:
+ * 58% of the duplicated-body files are also un-folded while only 3% of un-folded files are
+ * duplicated, which says `unfolded` CARRIES `copy` rather than merely meeting it.
+ */
+export function containment(sets: ReadonlyMap<string, ReadonlySet<string>>): Containment[] {
+  const out: Containment[] = []
+  for (const [law, sa] of sets) {
+    for (const [inside, sb] of sets) {
+      if (law === inside) continue
+      const shared = [...sa].filter((f) => sb.has(f)).length
+      out.push({ law, inside, share: sa.size === 0 ? 0 : shared / sa.size })
+    }
+  }
+  return out.sort((x, y) => y.share - x.share || x.law.localeCompare(y.law))
+}
+
+/**
+ * Laws whose population meets NO other law's — provably empty crosses. See SKILL.md.
+ *
+ * Worth naming because a cross involving one of them cannot find anything, whatever the prose
+ * ranking says: `concentration × copy` was the top-ranked undrawn pair and measured exactly 0.
+ */
+export function orthogonalLaws(sets: ReadonlyMap<string, ReadonlySet<string>>): string[] {
+  return [...sets.keys()]
+    .filter((law) => containment(sets).filter((c) => c.law === law || c.inside === law).every((c) => c.share === 0))
+    .sort()
 }

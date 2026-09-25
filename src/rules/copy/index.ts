@@ -161,3 +161,29 @@ export function copiesInTangle(cwd: string = process.cwd(), minNodes = 40): Tang
   }
   return out.sort((a, b) => b.nodes - a.nodes || a.address.localeCompare(b.address))
 }
+
+/** A duplicated body at least one of whose copies has no more than one caller. */
+export interface UnearnedCopy extends CopyGroup {
+  /** The sites whose export is dead or single-use — the copies not earning their place. */
+  readonly unearned: readonly CopySite[]
+}
+
+/**
+ * Copies where at least one site's export has ≤1 caller — the copy × unfolded cross. See SKILL.md.
+ *
+ * Measured, not guessed: `crosses()` ranks by absence in prose and put this pair nowhere near the
+ * top, while `crossIntersections` shows 11 files where both laws fire.
+ */
+export function unearnedCopies(
+  unfoldedFiles: ReadonlySet<string>,
+  cwd: string = process.cwd(),
+  minNodes = 40,
+): UnearnedCopy[] {
+  const out: UnearnedCopy[] = []
+  for (const g of duplicateBodies(cwd, minNodes)) {
+    const unearned = g.sites.filter((s) => unfoldedFiles.has(s.file))
+    if (unearned.length === 0) continue
+    out.push({ ...g, unearned })
+  }
+  return out.sort((a, b) => b.unearned.length - a.unearned.length || b.nodes - a.nodes)
+}

@@ -129,6 +129,24 @@ into the graph. That is [[rules]]/cycle's own boundary restated: entangled is no
 loops bite depends on how the graph is entered. It closes the case where a copy's two halves cannot
 even be reasoned about independently.
 
+## A copy no site earns — found by measuring, not by ranking
+
+[[conjecture]]'s prose ranking put `copy × unfolded` nowhere near the top. Measuring the
+intersection put it **second of fifteen**, on 11 shared files — and its own top live pick,
+`concentration × copy`, measured exactly **0**.
+
+`unearnedCopies` is the law that lives there: a body duplicated across files where at least one
+site's export has **no more than one caller**. **8 groups**, and in every one of them *both* copies
+are unearned — the body is written twice and neither copy is called more than once, so the
+duplication is not even paying for itself once.
+
+The largest is 65 nodes across `law/folder/word.ts` and `navigation/distribute.ts`.
+
+**Honest boundary.** [[rules]]/unfolded's own boundary carries straight through: erpax ships as
+`@erpax/*` packages, so an export with no in-repo caller may be a public face, and a site whose
+single use is its own test exists to be tested. This names candidates where two laws agree, which
+is a stronger signal than either alone and still not a purge list.
+
 **Law — [[law]]: the same body at two addresses is one implementation and one decoy. Content-address
 every body; where two agree, one of them is unmaintained and nobody knows which.**
 

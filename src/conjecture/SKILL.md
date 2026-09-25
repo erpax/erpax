@@ -156,6 +156,54 @@ would flood the queue with 403 items to act on, and a queue nobody can finish is
 reads. Instead all 403 surface through `undecided()` — a list of instruments that do not exist yet,
 ordered by how conspicuous their absence is.
 
+## The prose ranking predicted nothing — three picks, three zeros
+
+`crosses()` ranks by absence in PROSE: which two laws have never been written about together. That
+is a fact about what has been authored, and it turned out not to predict what a cross would find.
+
+| ranked pick | bits | measured |
+| --- | ---: | ---: |
+| `concentration × unraised` | 1.35 | **0** — `unraised` is satisfied (305 kinds declared, 305 raised) |
+| `face × refutable` | 1.18 | **0** — `refutable` is satisfied (483 claims, 483 refutable) |
+| `concentration × copy` | 0.79 | **0** — both live, and their populations simply do not meet |
+
+Two of the three were empty because a parent law had been **closed**; the enumerator was ranking a
+question nobody had asked because nobody needed to. `crosses` now carries `live` and sorts a cross
+with two live parents above any dead one, which fixes the first two cases — and not the third.
+
+## The measured cross inverts it
+
+`crossIntersections` asks the other question: which laws fire on the **same files**. One scan per
+law pays for every pair, and the answer had nothing in common with the prose ranking.
+
+| files | cross |
+| ---: | --- |
+| **54** | `cycle × unfolded` |
+| **11** | `copy × unfolded` |
+| 7 | `echo × unfolded` |
+| 2 | `copy × cycle` |
+| **0** | `concentration × copy` — the prose ranking's top live pick |
+
+Only **6 of 15** pairs share a single file.
+
+## Two discoveries the combinatorics produced
+
+**`unfolded` is the substrate the others ride on.** `containment` is directional, and that is what
+shows it: **58%** of duplicated-body files are also un-folded, and **36%** of tangled files are —
+while only **3%** of un-folded files are copies and **13%** are tangled. The large set contains the
+small ones, not the reverse. An export with no more than one caller is where copies and tangles
+live, which puts the folding law **upstream** of both.
+
+**`concentration` and `mirror` are orthogonal to everything.** Zero in every cell, both directions.
+A concentration hub is never a copy, never a tangle, never an echo; a mirrored assertion is never
+any of them either. `orthogonalLaws` names them, because a cross involving one of them **cannot**
+find anything whatever the surprise says — which is exactly why the top-ranked live pick measured 0
+and is the honest end of that ranking's authority.
+
+The law that came out of it is [[rules]]/copy's `unearnedCopies`: a body duplicated across files
+where a site's export has ≤1 caller. **8 groups, and in every one of them BOTH copies are
+unearned** — written twice, and neither called more than once.
+
 ## Standards
 
 - **Popper** — a proposition that forbids nothing explains nothing.
