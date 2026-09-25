@@ -118,6 +118,24 @@ jobs:
       - name: Boot gate — the Payload config loads
         run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
 
+      # A DOI is permanent, so the tree it archives must be the tree the gates passed on.
+      # This lane checked citation, version, content address, imports and boot — and ran NO
+      # test, NO seal check and none of the 62 guardians. Three claims the release makes
+      # ("tested stable formulated sealed") had nothing behind them.
+      - name: Tested gate — CI concluded success on THIS commit
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          sha="$(git rev-parse HEAD)"
+          conclusion="$(gh api "repos/${{ github.repository }}/actions/workflows/ci.yml/runs?head_sha=$sha&per_page=1" \
+            --jq '.workflow_runs[0].conclusion // "none"')"
+          echo "ci.yml on $sha → $conclusion"
+          # "none" means CI never ran on this commit — an unasked question, not a pass.
+          [ "$conclusion" = "success" ] || { echo "✖ refusing to mint a DOI: CI is '$conclusion' on this commit"; exit 1; }
+      - name: Stable gate — the 62 guardians hold
+        run: pnpm erpax rules check
+      - name: Sealed gate — every computed face regenerates to the committed bytes
+        run: pnpm erpax readme check
+
       - name: Create GitHub Release (fires the Zenodo DOI webhook)
         uses: softprops/action-gh-release@v2
         with:
@@ -239,3 +257,23 @@ jobs:
           tag_name: ${{ env.TAG }}
           name: ${{ env.TAG }}
           generate_release_notes: true
+
+  # A release is not what the manifest says, it is what the registry answers. Measured on the
+  # first run: the Zenodo concept DOI resolved and SIX @erpax/* packages did not exist on npm at
+  # the versions packages/released.json records. Nothing had ever asked. See src/publish/live.
+  live:
+    name: Live gate — npm ⊗ Zenodo answer
+    needs: [corpus, algebra, package]
+    if: always() && !cancelled() && contains(needs.*.result, 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: '${{ github.event.inputs.tag || github.ref }}' }
+      - uses: ./.github/actions/setup
+        with: { skill-index: none, ripgrep: 'false' }
+      # npm is eventually consistent, so a check seconds after a publish may honestly answer
+      # `live: false` — it retries rather than concluding. An UNREACHABLE registry leaves the
+      # release UNVERIFIED, which the runner reports as distinct from missing.
+      - name: Every released identifier is live in the registry that owns it
+        env: { ERPAX_LIVE_ATTEMPTS: '6' }
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/publish/live/index.ts
