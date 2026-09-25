@@ -10,6 +10,20 @@
 # and the Payload boot gate — and smokes the LIVE site. The Worker's 10 MiB ceiling is enforced where the build
 # happens: an oversized Worker fails the Cloudflare build, and `pnpm erpax land verdict` judges that build.
 #
+# THE BUILD COMMAND MUST NOT RUN `next build` TWICE. Measured 2026-09-25: `pnpm build` runs it (static
+# generation of 1843 pages alone was 16.7 min locally, and CI reports 10.1 of 13 build minutes), and
+# `opennextjs-cloudflare build` runs it AGAIN unless told not to. Two passes is ~26 minutes against Workers
+# Builds' 20-minute timeout, and `Workers Builds: erpax` has been FAILURE on #30 · #31 · #32 · #33 while the
+# last deployed version stayed at 2026-09-20. `pnpm build:cf` is the single-pass form — `pnpm build` then
+# `opennextjs-cloudflare build --skipNextBuild`, which took 29s on an already-built .next.
+#   ⚠ ONE SETTING TO UPDATE, and it is not in this repo: Cloudflare dashboard → Workers → erpax → Settings →
+#     Builds → Build command = `pnpm build:cf`. Workers Builds reads the dashboard, not wrangler.jsonc.
+#
+# What was RULED OUT locally, so the timeout is what is left: `pnpm build` exits 0;
+# `opennextjs-cloudflare build` exits 0; `wrangler deploy --dry-run` accepts the bundle at 9.00 MiB gzipped
+# against the 10 MiB cap. The 10 GB `.open-next/server-functions` seen locally is local debris — 9.2 GB of
+# accumulated `.next/cache` plus 1.0 GB of `.next/dev` — not something a fresh builder carries.
+#
 # Honest boundary: the smoke checks whatever is live, which Cloudflare may have built from a newer push than
 # the CI run that triggered this job. The landing verdict (src/arrival), not this workflow, ties a deploy to
 # its commit.
