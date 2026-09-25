@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { exportNamesOf, unwiredPackages, assertPackagesCanonical } from './index'
+import { exportNamesOf, unwiredPackages, assertPackagesCanonical, thinPackages } from './index'
 
 /** A throwaway tree: a governed dep, its API face, and the src that may or may not call it. */
 const tree = (api: string, srcCode: string): string => {
@@ -156,4 +156,25 @@ describe('rules/canonical — how far behind Payload actually is', () => {
     expect(c.newest.length).toBeGreaterThan(0)
     expect(c.behind, `payload is ${c.behind} published versions behind ${c.newest}`).toBeLessThanOrEqual(BEHIND_CEILING)
   }, 180_000)
+})
+
+describe('thinPackages — a dependency used once is un-folded', () => {
+  it('reads real import sites, so a dep the corpus calls many times is not thin', () => {
+    const thin = thinPackages(process.cwd()).map((t) => t.pkg)
+    // `stripe` is called from 7 files — it earns its place and must not appear
+    expect(thin).not.toContain('stripe')
+    expect(thin).not.toContain('react-hook-form')
+  })
+
+  it('the platform is never judged — you cannot locally replace the runtime you build on', () => {
+    const thin = thinPackages(process.cwd(), 99).map((t) => t.pkg)
+    for (const p of ['payload', 'next', 'react', 'sharp', 'graphql']) expect(thin).not.toContain(p)
+  })
+
+  it('zero sites in src is not zero USES — a config or a git hook is outside the scan', () => {
+    // cross-env runs in .husky/pre-push and dotenv in playwright/vitest config: the honest
+    // boundary of this measurement, declared rather than silently mis-reported as dead.
+    const zero = thinPackages(process.cwd()).filter((t) => t.sites === 0).map((t) => t.pkg)
+    expect(zero.every((p) => ['cross-env', 'dotenv'].includes(p))).toBe(true)
+  })
 })

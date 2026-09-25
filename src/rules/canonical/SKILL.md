@@ -88,6 +88,41 @@ the very newest would go red every morning over something nobody can act on that
 **always printed**, and the assertion is that it does not grow. The horizon is 0 and the ceiling is
 where the tree actually stands.
 
+## `thinPackages` — the dependency surface, and what a local solution could actually replace
+
+*"Imagine every external dependency consolidated into a local solution."* Measured rather than
+imagined, 2026-09-25:
+
+| | count |
+| --- | ---: |
+| direct dependencies | 81 → **76** |
+| platform — payload · next · react · wrangler · drizzle · sharp · graphql | 32 |
+| the rest | 44 |
+| imported from **at most two** places in `src` | 40 → **35** |
+| imported **nowhere** in `src` | 7 → **2** |
+
+The 32 are irreducible and this atom's own law says why: an installed package is used through its
+own API **or dropped** — erpax exists to use Payload canonically, so replacing it locally would be
+the hand-roll the gate was written to catch. The reducible surface is the other 44, and it is thin:
+26 radix primitives carrying 32 call sites between them, and a tail of single-site libraries.
+
+Five were carried for nothing and are now gone — `@hookform/resolvers` (the adapter, while
+`react-hook-form` itself has 11 sites), `@stripe/react-stripe-js` and `@stripe/stripe-js` (the
+server `stripe` SDK has 7 sites; nothing calls `loadStripe`), `date-fns` (no reference anywhere in
+the repo), and `tailwindcss-animate` (absent from a 48-line tailwind config with no `plugins` key).
+
+**The price of the dependency is measured, not asserted.** The same day this was counted, a canary
+upgrade was reverted because a 371-line local patch targeted `dist/endpoints/mcp.js` and upstream
+had restructured to `dist/endpoint/`. That is what an external dependency costs when it moves: not
+the bytes, the patch.
+
+**Honest boundary.** This counts import sites **under `src`**, so a dependency used by a config, a
+git hook or a `package.json` script reads as zero. `cross-env` (`.husky/pre-push`) and `dotenv`
+(`playwright.config.ts`, `vitest.setup.ts`) are exactly that, and a test pins them as the expected
+residue — reporting them as dead would be the false positive this corpus has paid for repeatedly.
+Thin is a **candidate**, never a verdict: one call site for a library that does something hard is
+a good trade, and `PLATFORM` is DECLARED in the open so the irreducible list can be argued with.
+
 **Law — [[law]]: an installed package is used through its own API or dropped — a dependency whose exports are never called is dead weight or a re-implementation of what it already ships.**
 
 Composes: [[rules]] · [[law]].

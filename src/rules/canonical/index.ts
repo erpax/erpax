@@ -238,3 +238,34 @@ export function currencyOf(
     reachable: true,
   }
 }
+
+/** A dependency and how many places import it. */
+export interface Thin {
+  readonly pkg: string
+  readonly sites: number
+}
+
+/** Packages that are NOT the platform — the surface a local solution could in principle replace. */
+const PLATFORM = /^(payload|next|react|react-dom|@payloadcms\/|@opennextjs\/|wrangler|drizzle|@libsql|sharp|graphql)/
+
+/**
+ * Dependencies imported from at most `ceiling` places. See SKILL.md.
+ *
+ * [[rules]]/unfolded's law applied to packages: a dependency used once is un-folded — the cost of
+ * carrying it (a lockfile entry, a supply-chain surface, an upgrade that can restructure under
+ * you) is paid whole for a single call site.
+ */
+export function thinPackages(cwd: string = process.cwd(), ceiling = 2): Thin[] {
+  const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as {
+    dependencies?: Record<string, string>
+  }
+  const deps = Object.keys(pkg.dependencies ?? {}).filter((d) => !PLATFORM.test(d))
+  const src = sourceText(cwd)
+  return deps
+    .map((p) => ({
+      pkg: p,
+      sites: [...src.matchAll(new RegExp(`from ['"]${p.replace(/[/@\-.]/g, (c) => `\\${c}`)}(['"/])`, 'g'))].length,
+    }))
+    .filter((t) => t.sites <= ceiling)
+    .sort((a, b) => a.sites - b.sites || a.pkg.localeCompare(b.pkg))
+}
