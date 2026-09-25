@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest'
-import { readFileSync } from 'node:fs'
+import { readFileSync, mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
-import { dirname, resolve } from 'node:path'
+import { dirname, resolve, join } from 'node:path'
+import { tmpdir } from 'node:os'
 import {
   bareImplications,
   statesBareImplication,
@@ -78,6 +79,19 @@ describe('entropy⊕coverage are distinct — zero entropy does NOT imply infini
   it('no sentence in the corpus asserts the bare implication', () => {
     const bare = bareImplications(process.cwd())
     expect(bare, bare.map((b) => `${b.file}\n    ${b.sentence}`).join('\n')).toEqual([])
+  })
+
+  it('in CODE, prose means COMMENTS — a claim in a string literal is data', () => {
+    const root = mkdtempSync(join(tmpdir(), 'bare-'))
+    mkdirSync(join(root, 'src', 'a'), { recursive: true })
+    // planted in a COMMENT: the corpus asserting it
+    writeFileSync(join(root, 'src', 'a', 'index.ts'), '/** zero entropy ⇒ infinite tamper-cost. */\nexport const x = 1\n')
+    expect(bareImplications(root).map((b) => b.file)).toEqual([join('src', 'a', 'index.ts')])
+    // planted in a STRING LITERAL: a fixture handing the predicate a claim to prove the gate fires.
+    // website/marketing/test.ts does exactly this, and the scan flagged the consumer of this law.
+    writeFileSync(join(root, 'src', 'a', 'index.ts'), "export const body = 'zero entropy ⇒ infinite tamper-cost'\n")
+    expect(bareImplications(root)).toEqual([])
+    rmSync(root, { recursive: true, force: true })
   })
 
   it('a slogan in quotes is CITED, not asserted — the refutation must not read as the defect', () => {

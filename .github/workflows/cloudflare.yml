@@ -52,6 +52,10 @@ jobs:
         with:
           skill-index: stub
           ripgrep: 'false'
+          # This job is workflow_run: it holds write scope while checking out the triggering SHA, so
+          # restoring a cache that run could have written is poisonable input. A cold install is the
+          # price of not trusting it.
+          cache: 'false'
 
       # Both are deterministic and read no secret: they cannot flake on someone else's uptime.
       - name: Contract gate — erpax parses what the external rails send

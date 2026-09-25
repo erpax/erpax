@@ -5813,7 +5813,7 @@ src/enforce/segregation/of/duty/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/engineering/index.ts:17: * @audit ISO-19011:2018 §6.4 — a cited standard is evidence only if it leads to its enforcement
 src/ensure/unique/slug/within/tenant/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/entanglement/index.ts:23: * @audit computed from the live matrix edges + uuids; never hand-asserted
-src/entropy/index.ts:22: * @audit computed from the live matrix, never hand-asserted
+src/entropy/index.ts:23: * @audit computed from the live matrix, never hand-asserted
 src/equilibrium/index.ts:14: * @audit detailed-balance residual |fwd·pᵢ − rev·pⱼ|; reciprocity fraction -- computed, never asserted
 src/error/codedError.ts:11: * @audit ISO-19011:2018 audit-trail
 src/error/index.ts:12: * @audit ISO-19011:2018 audit-trail error-tracing

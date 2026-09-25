@@ -1,4 +1,4 @@
-import type { Access, CollectionConfig } from 'payload'
+import type { CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { autoSetTimestamp } from '@/auto/set/timestamp'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'

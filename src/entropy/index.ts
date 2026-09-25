@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import { commentsOf } from '@/syntax'
 import { exactMax, exactRound } from '@/algebra'
 /**
  * entropy -- the FUEL, the disorder the whole ledger balances, COMPUTED live.
@@ -332,7 +333,14 @@ export function bareImplications(cwd: string = process.cwd()): BareClaim[] {
       if (/^(LLM|README)\.md$/.test(e.name) || /\.generated\.tsx?$|^(catalogue|translations|payload-types)\./.test(e.name)) continue
       const rel = relative(cwd, p)
       if (DEFINES_THE_LAW.includes(rel)) continue
-      for (const s of sentencesOf(readFileSync(p, 'utf8'))) {
+      // In a `.md` the whole file is prose. In code, prose means COMMENTS: a claim inside a
+      // STRING LITERAL is data — a test fixture handing the predicate a false implication in order
+      // to prove the gate fires is not the corpus asserting it. That false positive fired on
+      // `website/marketing/test.ts`, which is the consumer proving this very law. Parsed, never
+      // matched — the same refusal [[rules]]/forge and [[rules]]/bypass make.
+      const text = readFileSync(p, 'utf8')
+      const prose = e.name.endsWith('.md') ? text : commentsOf(p, text).join('\n')
+      for (const s of sentencesOf(prose)) {
         if (statesBareImplication(s)) out.push({ file: rel, sentence: s.trim().slice(0, 160) })
       }
     }
