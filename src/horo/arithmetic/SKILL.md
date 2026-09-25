@@ -127,6 +127,18 @@ in one ring of nine; the product forbids it again, for a different reason.
 So `2 × 90° = 3 × 60°` remains true as arithmetic and false as geometry at both scales: the
 half-turn has a carrier on one torus and on two, and the quarter-turn has neither.
 
+## The decade divides the turn; the ring walks it
+
+`360 = 10 × 36` and `360 = 6 × 60` are both true, and they are not the same statement.
+
+`HORO_DECADE` is a **normalisation divisor** — `horoRatio(8)` is 8/10 — and 10 is the length of no
+orbit in `(ℤ/9ℤ)*`, whose doubling ring closes at **6**. So a 36° step needs a 10-cycle, and
+neither the ring nor the double torus has one: `ℤ/6 × ℤ/6` has element orders `{1, 2, 3, 6}`.
+
+A 36° step is therefore the same defect as a 90° one, one scale up — a number that divides the turn
+without naming a move the group can make. The decompositions that have carriers here are `6 × 60`
+(the ring) and `2 × 180` (the half-turn, on one torus or across two).
+
 **Honest boundary.** These are statements about `ℤ/9` and nothing else. That `halfTurn` is the group's
 half-turn is a theorem; that a half-turn *means* anything beyond `×(−1)` is not, and nothing here
 claims it.

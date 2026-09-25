@@ -288,3 +288,42 @@ describe('horo/arithmetic — the double torus completes 360°', () => {
     expect(orders.has(2)).toBe(true) // the half-turn does
   })
 })
+
+/**
+ * Two decompositions of 360°, and only one has a carrier.
+ *
+ * `10 × 36` is the DECADE reading — HORO_DECADE is the normalisation divisor, not a cycle.
+ * `6 × 60` is the RING reading. Both are 360; only the second names steps the group can take.
+ */
+describe('horo/arithmetic — the decade divides the turn, the ring walks it', () => {
+  it('both decompositions reach 360', () => {
+    expect(10 * 36).toBe(360)
+    expect(6 * 60).toBe(360)
+    expect(2 * 180).toBe(360)
+  })
+
+  it('but a 36° step needs a 10-cycle, and the double torus has none', () => {
+    const orders = new Set<number>()
+    for (let a = 0; a < 6; a++) {
+      for (let b = 0; b < 6; b++) {
+        let k = 1
+        while (a * k % 6 !== 0 || b * k % 6 !== 0) k++
+        orders.add(k)
+      }
+    }
+    expect(orders.has(10)).toBe(false) // 360/36 — no carrier
+    expect(orders.has(6)).toBe(true) //  360/60 — the ring itself
+    expect(orders.has(2)).toBe(true) //  360/180 — the half-turn
+  })
+
+  it('the decade is a divisor, never a step — horoRatio normalises, it does not walk', async () => {
+    const { horoRatio } = await import('@/horo')
+    const { HORO_DECADE } = await import('@/readme/entropy-unit')
+    expect(horoRatio(8, HORO_DECADE)).toBe(0.8)
+    // ten tenths make the unit, but 10 is not the length of any orbit in (Z/9Z)*
+    const ring = new Set<number>()
+    for (let x = 1, i = 0; i < 20; i++, x = (x * 2) % 9 || 9) ring.add(x)
+    expect(ring.size).toBe(6)
+    expect(ring.size).not.toBe(HORO_DECADE)
+  })
+})
