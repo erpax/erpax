@@ -3,8 +3,8 @@ name: copy
 description: "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…"
 atomPath: "rules/copy"
 coordinate: "rules/copy · 5/round · 86b36fb1"
-contentUuid: "115d78dd-4df3-56a8-b5a1-ebc3c454fe40"
-diamondUuid: "5ef1b39e-5adb-8504-a394-25c3165638db"
+contentUuid: "10d35e94-15c4-55a2-9826-bd941e928fbb"
+diamondUuid: "8483a3ee-67e7-8f50-9669-9678a6802bd9"
 uuid: "86b36fb1-19b8-87f8-9c85-bdff9f3966a1"
 horo: 5
 typography:
@@ -13,14 +13,14 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2480b24c-3540-89f2-b819-11e4028e0e19"
+  computationUuid: "eee69b49-bac6-8a8b-acd1-010d2c55d888"
   stages:
     - stage: path
       stageUuid: "d82d2c62-1ae9-86e1-bad6-7da93650e4b2"
     - stage: trinity
       stageUuid: "80088271-6afa-8d2a-82c3-7dc7c7b507eb"
     - stage: boundary
-      stageUuid: "45176da6-5cb1-8ba5-89fb-5ca551cad96c"
+      stageUuid: "e9a38fb2-02f1-86c7-88ef-57a6ec4e15ef"
     - stage: links
       stageUuid: "94ac95ae-f176-8fde-8e17-fc8017f80b9f"
     - stage: horo
@@ -28,7 +28,7 @@ signatures:
     - stage: seal
       stageUuid: "756a028c-a9e5-86e1-93d5-ccfcd14a267e"
     - stage: uuid
-      stageUuid: "0fda636b-a8d4-8386-914e-6c499b684274"
+      stageUuid: "dc75a85e-e37f-81c4-9b67-9a32a70cb653"
 version: 2
 ---
 # rules/copy — one truth at two addresses, found by content-addressing the body

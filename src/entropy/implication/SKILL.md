@@ -1,3 +1,36 @@
+---
+name: implication
+description: "Use when reasoning about implication — *\"Zero entropy ⇒ infinite tamper-cost\"* is false in **both** directions, and law says so in code: reciprocity-entropy is not coverage — it is 0 on the live tree and prices nothing…"
+atomPath: "entropy/implication"
+coordinate: "entropy/implication · 2/share · 134af2dd"
+contentUuid: "4fb6a060-fc04-5224-b268-fbc63a296822"
+diamondUuid: "8473b345-a68f-8652-bebf-fe4c538d5983"
+uuid: "134af2dd-b27b-81b9-8f71-2348a1ea2dcd"
+horo: 2
+typography:
+  partition: entropy
+  bondDegree: 12
+standards: []
+bindings: []
+signatures:
+  computationUuid: "cb74cebf-1a84-8524-b5c6-300ce363f93c"
+  stages:
+    - stage: path
+      stageUuid: "8e2bb3c4-8813-8fc5-82f9-048bbb443af9"
+    - stage: trinity
+      stageUuid: "bd94c0ff-dbbe-89ed-b2c8-2a5d854e8e60"
+    - stage: boundary
+      stageUuid: "5718f1db-aa4e-8104-a67d-e0f939eb67cb"
+    - stage: links
+      stageUuid: "c5f5890b-da80-8e70-bd86-e220ded9268a"
+    - stage: horo
+      stageUuid: "ce7784e1-1a9d-8b94-b1da-ae53a023638d"
+    - stage: seal
+      stageUuid: "4f4b8713-d40b-85bd-b0d0-dedd474b15cb"
+    - stage: uuid
+      stageUuid: "52568a98-39ec-83ef-97ec-3fbd79128504"
+version: 2
+---
 # entropy/implication — the corpus asserted, in 41 places, what [[law]] computes as false
 
 *"Zero entropy ⇒ infinite tamper-cost"* is false in **both** directions, and [[law]] says so in code:

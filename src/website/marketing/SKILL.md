@@ -3,8 +3,8 @@ name: marketing
 description: "Use when reasoning about marketing — Every other surface here answers to a gate. A published page answers to a reader who **cannot check it** — no , no wave, no ratchet — which makes it the most exposed place an…"
 atomPath: "website/marketing"
 coordinate: "website/marketing · 8/crest · 5faa8ce7"
-contentUuid: "52bb8591-0b73-5ee8-a1b0-4a1af80e6250"
-diamondUuid: "e8892d61-a1b7-8001-a78b-9bc886e5facc"
+contentUuid: "9756fffa-0aa0-5361-ae4c-1754bb349579"
+diamondUuid: "ff894387-4812-8d67-b1ea-12a272d8aa12"
 uuid: "5faa8ce7-0566-8009-9fcf-71a8260eefdb"
 horo: 8
 typography:
@@ -18,14 +18,14 @@ standards:
   - "declarations — risks ungrounded claims',"
 bindings: []
 signatures:
-  computationUuid: "f151e942-b7b1-84ca-94b0-ea1d6de3d322"
+  computationUuid: "9cb8163a-6cf4-8204-b6cb-5f227fbbb673"
   stages:
     - stage: path
       stageUuid: "f5e927a8-b674-8bdd-9d64-e99e3b4b0448"
     - stage: trinity
       stageUuid: "ec588f59-c7d1-85c9-a432-ce93901809ae"
     - stage: boundary
-      stageUuid: "03c70c32-3455-87da-a7ed-60b1f07fc76d"
+      stageUuid: "503884fa-77c9-83b1-8ab9-db5fa69039d5"
     - stage: links
       stageUuid: "23a7f79a-8c6d-891c-9ff0-cd63aa9d0972"
     - stage: horo
@@ -33,7 +33,7 @@ signatures:
     - stage: seal
       stageUuid: "a6719fb2-5019-8230-89a4-e23a40dd78a9"
     - stage: uuid
-      stageUuid: "fd8650ad-333e-8683-9d0a-99ccd11706c1"
+      stageUuid: "70da8ef5-36b1-8f29-86d1-b0e9b1f23634"
 version: 2
 ---
 # website/marketing — the page a prospect reads is the least checkable claim in the corpus

@@ -3065,6 +3065,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "entropy"
   },
   {
+    "atom": "implication",
+    "name": "implication",
+    "description": "Use when reasoning about implication — *\"Zero entropy ⇒ infinite tamper-cost\"* is false in **both** directions, and law says so in code: reciprocity-entropy is not coverage — it is 0 on the live tree and prices nothing…",
+    "path": "entropy/implication"
+  },
+  {
     "atom": "source",
     "name": "source",
     "description": "Use when a key must be born from randomness you can prove — seed quality is established at the source and across the fleet, never by inspecting the seed. A CSPRNG on a weak seed is indistinguishable from one on a strong seed, so no per-seed statistical test appears here by design. attest is an HMAC under a key only genuine hardware holds; admit refuses a forged tag, a short seed, and the same seed arriving from a second device (the deterministic-RNG fingerprint no single device can see). No key derives from an un-admitted seed.",

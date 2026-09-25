@@ -19813,7 +19813,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a claim holds only under an unproven hypothesis — given(H).proves(Y) folds the unprovable into a PROVEN implication H ⇒ Y, keeping H disclosed. The honest complement to rules/refutable: an unfalsifiable assertion is a lie; an unprovable hypothesis, named, proves another thing. Run: tsx src/conditional/index.ts",
-        "uuid": "50ad6aad-3724-8759-a33f-2ad11734786a",
+        "uuid": "6c848163-42f5-85d4-9842-ced634736776",
         "words": [
           "use",
           "when",
@@ -31930,6 +31930,68 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances — entropy() = 1 − the reciprocal-edge fraction of the uuid-matrix, an audit/aura signal, NOT an input to crackVerdict. It is a DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost via coverageCostLog2); reciprocity=1 does NOT imply coverage=1, so zero entropy does NOT by itself yield infinite cost (the live tree is the counter-example — entropy 0, coverage under 1, cost finite). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "implication",
+    "path": "entropy/implication",
+    "translations": [
+      {
+        "key": "name",
+        "source": "implication",
+        "uuid": "134af2dd-b27b-81b9-8f71-2348a1ea2dcd",
+        "words": [
+          "implication"
+        ],
+        "values": {
+          "en": "implication"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about implication — *\\\"Zero entropy ⇒ infinite tamper-cost\\\"* is false in **both** directions, and law says so in code: reciprocity-entropy is not coverage — it is 0 on the live tree and prices nothing…",
+        "uuid": "09a49670-478a-8d3a-86a0-8e65e1d0adb5",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "implication",
+          "zero",
+          "entropy",
+          "infinite",
+          "tamper",
+          "cost",
+          "is",
+          "false",
+          "in",
+          "both",
+          "directions",
+          "and",
+          "law",
+          "says",
+          "so",
+          "in",
+          "code",
+          "reciprocity",
+          "entropy",
+          "is",
+          "not",
+          "coverage",
+          "it",
+          "is",
+          "on",
+          "the",
+          "live",
+          "tree",
+          "and",
+          "prices",
+          "nothing"
+        ],
+        "values": {
+          "en": "Use when reasoning about implication — *\\\"Zero entropy ⇒ infinite tamper-cost\\\"* is false in **both** directions, and law says so in code: reciprocity-entropy is not coverage — it is 0 on the live tree and prices nothing…"
         }
       }
     ]
@@ -211667,4 +211729,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3619
+export const TRANSLATIONS_COUNT = 3620

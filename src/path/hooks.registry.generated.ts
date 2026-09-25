@@ -490,6 +490,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "entanglement/field",
   "entity/types",
   "entropy",
+  "entropy/implication",
   "entropy/source",
   "entropy/threshold",
   "entropy/threshold/split",
@@ -1524,7 +1525,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1517 as const
+export const ATOM_LEDGER_PATH_COUNT = 1518 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -3295,6 +3296,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "entropy": [
     "entropy"
+  ],
+  "entropy/implication": [
+    "entropy",
+    "entropy/implication"
   ],
   "entropy/source": [
     "entropy",
@@ -7112,4 +7117,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 865 as const
+export const MERGED_NESTED_PATH_COUNT = 866 as const
