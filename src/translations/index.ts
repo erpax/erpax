@@ -179,4 +179,12 @@ export default createAccountingCollection({
   ],
 })
 
-export * from './catalogue'
+/**
+ * The catalogue is 5.5 MB and is NOT re-exported. See SKILL.md.
+ *
+ * `export *` evaluates the module, so every consumer of `@/translations` paid for all of it —
+ * including `collections/index`, hence the Payload config, hence the site bundle. The DATA has one
+ * consumer outside this atom; the TYPE has five and is erased at runtime, so only it crosses here.
+ * Reach the rows at `@/translations/catalogue`, deliberately, or not at all.
+ */
+export type { CatalogueEntry } from './catalogue'
