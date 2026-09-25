@@ -69,3 +69,54 @@ describe('the mirror is PINNED — a typed count that nothing contradicts is how
     expect(new Set(CONFIRM_CHECK_AXES).size).toBe(CONFIRM_CHECK_AXES.length) // no axis counted twice
   })
 })
+
+/**
+ * The tiling laws, and a pin that is REAL.
+ *
+ * This file's own history records two numbers that survived because nothing contradicted them —
+ * a typed 106, and a mirror claiming a pin that did not exist. TORUS_BITS is mirrored rather than
+ * imported (the import would add a tangle edge), so the assertion below is the whole of its safety.
+ */
+describe('cost/bits — the digest tiles the uuid and the torus, wholly', () => {
+  it('TORUS_BITS equals the architecture it mirrors — the pin, not a claim of one', async () => {
+    const { TORUS_BITS } = await import('@/cost/bits')
+    const { architectureBits } = await import('@/quantum/word')
+    expect(TORUS_BITS).toBe(architectureBits())
+  })
+
+  it('a content digest is exactly two uuids and four boards', async () => {
+    const m = await import('@/cost/bits')
+    expect(m.DIGEST_IN_UUIDS).toBe(2)
+    expect(m.DIGEST_IN_BOARDS).toBe(4)
+    expect(Number.isInteger(m.DIGEST_IN_UUIDS)).toBe(true)
+    expect(Number.isInteger(m.DIGEST_IN_BOARDS)).toBe(true)
+    expect(m.CONTENT_DIGEST_BITS % m.TORUS_BITS).toBe(0)
+  })
+
+  it('and one uuid is the DOUBLE torus — which is why the fold has two halves', async () => {
+    const m = await import('@/cost/bits')
+    const { combineArchitectures, architectureMask } = await import('@/quantum/word')
+    expect(m.UUID_IN_BOARDS).toBe(2)
+    // the packed word is exactly UUID_IN_BOARDS × TORUS_BITS wide at its maximum
+    const full = architectureMask()
+    const packed = combineArchitectures(full, full)
+    expect(packed.toString(2).length).toBe(m.UUID_IN_BOARDS * m.TORUS_BITS)
+  })
+
+  it('truncation costs the difference, and the number is no longer typed', async () => {
+    const m = await import('@/cost/bits')
+    expect(m.TRUNCATION_COST_BITS).toBe(m.CONTENT_DIGEST_BITS - m.ERPAX_DIGEST_BITS)
+    expect(m.TRUNCATION_COST_BITS).toBe(134) // the figure the prose carried, now derived
+    // the version and variant bits are exactly what the uuid spends on looking like a uuid
+    expect(m.ERPAX_DIGEST_BITS).toBe(122)
+    expect(128 - m.ERPAX_DIGEST_BITS).toBe(6)
+  })
+
+  it('and the floors follow the commitment, not the address', async () => {
+    const m = await import('@/cost/bits')
+    // committing the full digest beats the uuid's own second-preimage; truncating halves it and more
+    expect(m.secondPreimageLog2(m.CONTENT_DIGEST_BITS)).toBeGreaterThan(m.ERPAX_DIGEST_BITS)
+    expect(m.birthdayLog2(m.ERPAX_DIGEST_BITS)).toBe(61)
+    expect(m.birthdayLog2(m.CONTENT_DIGEST_BITS)).toBe(128)
+  })
+})

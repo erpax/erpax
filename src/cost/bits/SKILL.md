@@ -60,4 +60,36 @@ was wrong by 16 bits and became a security constant nobody could contradict.
 `test.ts` is the tool that MEASURED the typed-106 defect against the live primitive,
 kept as the proof it stays fixed — a number you cannot re-derive is a number you cannot trust.
 
+## The digest tiles the uuid and the torus, wholly
+
+Four quantities, one arithmetic:
+
+| | bits | |
+| --- | ---: | --- |
+| content digest | 256 | what an anchor should commit |
+| uuid | 128 | **two boards** — the word half and the digit half |
+| torus board | 64 | what this tree addresses on |
+| uuid, usable | 122 | 128 less version (4) and variant (2) |
+
+`256 = 2 × 128 = 4 × 64` and `128 = 2 × 64`, all whole — so **a content digest is exactly two uuids
+and four boards**, and *one uuid is the double torus*. That last equality is not decoration: it is
+why [[quantum]]/fold has a word half and a digit half at all, and the test checks it against
+`combineArchitectures` rather than restating it — the packed word is exactly `UUID_IN_BOARDS ×
+TORUS_BITS` wide at its maximum.
+
+**`TRUNCATION_COST_BITS` was a sentence.** *"Truncation costs erpax 134 bits so the fold's address
+can LOOK like a UUID"* sat in a docstring with no constant and nothing able to contradict it — the
+exact shape this atom already records twice, in the typed `106` and in the mirror that claimed a pin
+it did not have. It is now `CONTENT_DIGEST_BITS − ERPAX_DIGEST_BITS`, so it moves when either side
+does, and the 134 the prose carried is a test assertion rather than a claim.
+
+`TORUS_BITS` is **mirrored** from `architectureBits()` rather than imported, because the import would
+add an edge to the tangle ([[rules]]/cycle) — and the pin is real this time: `test.ts` imports both
+and asserts the equality, which is the whole of that constant's safety.
+
+**Honest boundary.** These are structural facts about **widths**, and none of them is a security
+result. That SHA-256 resists collision, that a 2^61 birthday floor is adequate for a given corpus —
+no arithmetic here touches either, and calling a tiling law a security proof would be the overreach
+[[rules]]/forge refuses.
+
 Composes: [[cost]] · [[algebra]] · [[tamper]] · [[quantum]] · [[harmony]].
