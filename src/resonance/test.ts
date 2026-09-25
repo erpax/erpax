@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { algebraLog10 } from '@/algebra'
 import { resonanceMagnitude, dedupMagnitude, linkProof, crackLeak, reactiveFrontier } from './index'
-import { foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
+import { merkleRoot, merkleProof, verifyInclusion } from '@/merge'
 import { createHash } from 'node:crypto'
 
 // The magnitude is a theorem, not a claim — verified to the digit at the user's stated corpus (N=764).
@@ -67,15 +67,15 @@ describe('resonance — the address collapses O(N²) to O(N), in orders of magni
   it('the link IS the proof — a REAL sha256 hash tree over 442 addresses, path measured not asserted', () => {
     // 442 content addresses (the theorem-address count the law was measured against)
     const leaves = Array.from({ length: 442 }, (_, i) => createHash('sha256').update(`theorem:${i}`).digest('hex'))
-    const root = foldToRoot(leaves)
+    const root = merkleRoot(leaves)
     const idx = 200
     const path = merkleProof(leaves, idx)
     // the inclusion path is the O(log N) authentication chain, and it re-folds to the root
     expect(path.length).toBeLessThanOrEqual(9) // ≤ ⌈log₂ 442⌉
     expect(path.length).toBeGreaterThanOrEqual(8) // a real depth-9 tree
-    expect(verifyMerkleProof(leaves[idx]!, path, root)).toBe(true) // root valid — the link proves membership
+    expect(verifyInclusion(leaves[idx]!, path, root)).toBe(true) // root valid — the link proves membership
     // a leaf NOT in the set fails — the proof is total (⊥ on absence)
-    expect(verifyMerkleProof(createHash('sha256').update('absent').digest('hex'), path, root)).toBe(false)
+    expect(verifyInclusion(createHash('sha256').update('absent').digest('hex'), path, root)).toBe(false)
   })
 
   it('a perfect power-of-two tree has path EXACTLY log₂N; the order grows as N/log₂N without bound', () => {

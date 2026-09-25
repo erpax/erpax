@@ -20,7 +20,7 @@ import { UUID_MATRIX_NODES as N } from '@/uuid/matrix'
 // canonical integer `digitalRoot` from @/horo — one implementation, not a copy.
 import { digitalRoot } from '@/horo'
 // The operational fold primitives (the doing, vs this atom's counting) — reused, not re-derived.
-import { foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
+import { merkleRoot, merkleProof, verifyInclusion } from '@/merge'
 
 /** Fold DEPTH — folds to collapse n leaves to one root (the binary Merkle fold): ceil(log2 n). */
 export const foldDepth = (n: number): number => (n <= 1 ? 0 : exactCeil(algebraLog2(n)))
@@ -95,7 +95,7 @@ export function atomDeed(node: {
   readonly bind?: string
   readonly uuid: string
 }): string {
-  return foldToRoot([
+  return merkleRoot([
     'path:' + node.path, // the legal identifier — WHERE the parcel is
     'elevation:' + node.horo, // the vertical coordinate — the horo height (required, as in a deed)
     'north:' + (node.prev ?? ''), // the four bounding neighbours — the N/E/S/W limits
@@ -114,18 +114,18 @@ function deeds(): string[] {
 
 /** The corpus root — every atom's FULL deed folded to ONE registered root (the sealed cadastre). */
 export function corpusRoot(): string {
-  return foldToRoot(deeds())
+  return merkleRoot(deeds())
 }
 
 /** The registered deed — the inclusion proof that an atom's full definition is under the corpus root. */
 export function proveAtom(atomPath: string): { found: boolean; verified: boolean; deed: string; root: string } {
   const ds = deeds()
-  const root = foldToRoot(ds)
+  const root = merkleRoot(ds)
   const node = N.find((n) => n.path === atomPath)
   if (!node) return { found: false, verified: false, deed: '', root }
   const deed = atomDeed(node)
   const index = ds.indexOf(deed)
-  const verified = index >= 0 && verifyMerkleProof(deed, merkleProof(ds, index), root)
+  const verified = index >= 0 && verifyInclusion(deed, merkleProof(ds, index), root)
   return { found: true, verified, deed, root }
 }
 

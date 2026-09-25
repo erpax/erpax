@@ -1,12 +1,12 @@
 import { describe, it, expect } from 'vitest'
 import { pyramid, courses, tamperShift } from './index'
-import { foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
+import { merkleRoot, merkleLeaf, merkleNode, merkleProof, verifyInclusion } from '@/merge'
 
 const base = ['a', 'b', 'c', 'd', 'e']
 
 describe('pyramid — the geometry of the fold', () => {
   it('the apex is the fold root — the single seal every stone rises to', () => {
-    expect(pyramid(base).apex).toBe(foldToRoot(base))
+    expect(pyramid(base).apex).toBe(merkleRoot(base))
   })
 
   it('height is ⌈log₂ base⌉ courses; faces are base − 1 crosses', () => {
@@ -19,7 +19,10 @@ describe('pyramid — the geometry of the fold', () => {
 
   it('the courses stack base → apex, the last course the lone apex', () => {
     const rows = courses(base)
-    expect(rows[0]).toEqual(base) // ground course
+    // the ground course is the LEAF COMMITMENTS, not the raw stones: an undomained course
+    // would let an internal cross be laid as a base stone and the apex could not tell
+    expect(rows[0]).toEqual(base.map(merkleLeaf))
+    expect(rows[0]).not.toEqual(base)
     expect(rows[rows.length - 1]).toHaveLength(1) // apex course
     expect(rows[rows.length - 1]![0]).toBe(pyramid(base).apex)
     expect(rows).toHaveLength(pyramid(base).height + 1)
@@ -28,14 +31,17 @@ describe('pyramid — the geometry of the fold', () => {
   it('the edge up the pyramid is the inclusion proof — a base stone reaches the apex', () => {
     const apex = pyramid(base).apex
     // an edge from stone 'c' (index 2) climbs height steps to the apex
-    expect(verifyMerkleProof('c', merkleProof(base, 2), apex)).toBe(true)
-    expect(verifyMerkleProof('z', merkleProof(base, 2), apex)).toBe(false) // a stone not in the base
+    expect(verifyInclusion('c', merkleProof(base, 2), apex)).toBe(true)
+    expect(verifyInclusion('z', merkleProof(base, 2), apex)).toBe(false) // a stone not in the base
+    // and the attack the domains forbid: an internal CROSS laid where a base stone belongs
+    const cross = merkleNode(merkleLeaf('a'), merkleLeaf('b'))
+    expect(verifyInclusion(cross, merkleProof(base, 0), apex)).toBe(false)
   })
 
   it('the tamper law: move one base stone and the apex moves', () => {
     const t = tamperShift(base, 2, 'X')
     expect(t.moved).toBe(true)
-    expect(t.was).toBe(foldToRoot(base))
+    expect(t.was).toBe(merkleRoot(base))
     expect(t.now).not.toBe(t.was)
   })
 

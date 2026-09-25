@@ -47,6 +47,45 @@ The `‖` delimiter (U+2016) is what makes `a ‖ b` unambiguous: without it `me
 
 **Honest boundary.** Same content ⇒ same address is a theorem of the construction; different content ⇒ different address is a **collision assumption** about SHA-256, not something proved here. And a re-export preserves a name, never a meaning — the face is intact, which [[rules]]/face checks, and that is a weaker claim than the behaviour being unchanged.
 
+## The root did not commit to what was a leaf
+
+`merge(a, b)` built leaves and internal nodes alike, and both are uuids — so an internal node **is**
+a valid leaf. Two second preimages followed, demonstrated before the fix and pinned as tests:
+
+```
+foldToRoot([a, b, c, d])  ===  foldToRoot([merge(a,b), merge(c,d)])   ← 4 leaves, or 2 "leaves"
+foldToRoot([a, b, c])     ===  foldToRoot([merge(a,b), c])            ← 3 leaves, or 2
+```
+
+The root committed to neither the leaf count nor which values were leaves. In [[notary]] that is the
+anchor an apostille certifies: a four-act protocol and a two-"act" one whose seals are the first's
+internal nodes reached the same root.
+
+## The domains are ADDRESSES, not a prefix
+
+RFC 6962 separates them with a `0x00`/`0x01` byte. A prefix is a **payload** — the tag is then
+carried rather than addressed. Here both domains are content-uuids of their own word, composed with
+the same magma everything else uses:
+
+```
+leaf(x)    = merge(leafDomain, x)
+node(l, r) = merge(nodeDomain, merge(l, r))
+```
+
+One more fold, no new encoding, and nothing to decode: the tag is an address like every other value
+in the tree.
+
+## The unsafe twin is gone, because a safe alternative is not a fix
+
+`merkleProof`/`verifyMerkleProof` over the bare magma were **deleted**, not deprecated. A safe
+function beside an unsafe default is obeyed by whoever remembers — which is the shape [[rules]]
+refuses everywhere else, and it is why the correction had to reach [[pyramid]] (whose ground course
+is now the leaf commitments, so a cross cannot be laid as a base stone), [[fold]]'s corpus root and
+[[notary]]'s register in the same change. There is one inclusion API and it is domain-separated.
+
+`foldToRoot` survives as the bare address fold — it is what the corpus's existing content-uuids are
+folded with, and it is **not** evidence. Anything verified against a root uses `merkleRoot`.
+
 **Law — [[law]]: a hub re-exports and a child imports downward only. When the child needs the parent's primitive, the primitive is what moves — not the dependency direction.**
 
 ## Standards

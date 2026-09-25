@@ -63,23 +63,70 @@ export const setRoot = (uuids: readonly string[]): string => {
 /** Address the ORDER: any transposition moves it, as a chained receipt needs. @rootKind sequence */
 export const sequenceRoot = (uuids: readonly string[]): string => foldToRoot(uuids)
 
+/**
+ * The two domains, as ADDRESSES — content-uuids of the words themselves. See SKILL.md.
+ *
+ * Not a byte prefix: a prefix is a payload, and the tag would then be carried rather than
+ * addressed. These are uuids, composed with the same magma everything else uses, so domain
+ * separation costs one more fold and no new encoding.
+ */
+const LEAF_DOMAIN: string = toUuid(Buffer.from('leaf', 'utf8'))
+const NODE_DOMAIN: string = toUuid(Buffer.from('node', 'utf8'))
+
+/** A leaf commitment — `merge(leafDomain, x)`. */
+export function merkleLeaf(value: string): string {
+  return merge(LEAF_DOMAIN, value)
+}
+
+/** An internal node — `merge(nodeDomain, merge(l, r))`, in a domain no leaf can enter. */
+export function merkleNode(left: string, right: string): string {
+  return merge(NODE_DOMAIN, merge(left, right))
+}
+
+/**
+ * The domain-separated Merkle root (RFC 6962 §2.1). See SKILL.md.
+ *
+ * `foldToRoot` is the bare magma fold and stays what it is — the corpus's existing addresses
+ * are folded with it. This is what a root used as EVIDENCE must be built with.
+ *
+ * @rootKind sequence
+ */
+export function merkleRoot(values: readonly string[]): string {
+  if (values.length === 0) return merkleLeaf('')
+  let level: string[] = values.map(merkleLeaf)
+  while (level.length > 1) {
+    const next: string[] = []
+    for (let i = 0; i < level.length; i += 2) {
+      next.push(i + 1 < level.length ? merkleNode(level[i]!, level[i + 1]!) : level[i]!)
+    }
+    level = next
+  }
+  return level[0]!
+}
+
 /** One step of an authentication path: the sibling to fold with, and whether it sits on the right. */
 export interface MerkleStep {
   readonly sibling: string
   readonly right: boolean
 }
 
-/** The inclusion proof — the TOTAL membership verification of the folded algebra, resolving the @see ./SKILL.md */
-export function merkleProof(leaves: readonly string[], index: number): MerkleStep[] {
-  if (index < 0 || index >= leaves.length) return [] // ⊥ — not a leaf of this fold
+/**
+ * The inclusion proof. There is no undomained twin to reach for by mistake. See SKILL.md.
+ *
+ * The bare-magma pair that stood here built a tree in which an internal node is a valid leaf.
+ * Removing it IS the fix: a safe alternative beside an unsafe default is obeyed only by whoever
+ * remembers, which is the shape [[rules]] refuses everywhere else.
+ */
+export function merkleProof(values: readonly string[], index: number): MerkleStep[] {
+  if (index < 0 || index >= values.length) return []
   const path: MerkleStep[] = []
-  let level: string[] = [...leaves]
+  let level: string[] = values.map(merkleLeaf)
   let i = index
   while (level.length > 1) {
     const next: string[] = []
     for (let k = 0; k < level.length; k += 2) {
       const hasRight = k + 1 < level.length
-      next.push(hasRight ? merge(level[k]!, level[k + 1]!) : level[k]!)
+      next.push(hasRight ? merkleNode(level[k]!, level[k + 1]!) : level[k]!)
       if ((k === i || k + 1 === i) && hasRight) {
         path.push(i === k ? { sibling: level[k + 1]!, right: true } : { sibling: level[k]!, right: false })
       }
@@ -90,10 +137,15 @@ export function merkleProof(leaves: readonly string[], index: number): MerkleSte
   return path
 }
 
-/** Verify a leaf is under the root by re-folding its path — TOTAL: true if present, false (⊥) otherwise. */
-export function verifyMerkleProof(leaf: string, path: readonly MerkleStep[], root: string): boolean {
-  let acc = leaf
-  for (const step of path) acc = step.right ? merge(acc, step.sibling) : merge(step.sibling, acc)
+/**
+ * Verify a VALUE is included under a domain-separated root. See SKILL.md.
+ *
+ * Takes the value, never the leaf commitment: a caller that could hand in a node hash is the
+ * attack this domain separation exists to stop.
+ */
+export function verifyInclusion(value: string, path: readonly MerkleStep[], root: string): boolean {
+  let acc = merkleLeaf(value)
+  for (const step of path) acc = step.right ? merkleNode(acc, step.sibling) : merkleNode(step.sibling, acc)
   return acc === root
 }
 
@@ -103,8 +155,9 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  same content ⇒ same id:', merge('a', 'b') === merge('a', 'b'))
   console.log('  non-associative:', merge(merge('a', 'b'), 'c') !== merge('a', merge('b', 'c')))
   const leaves = ['a', 'b', 'c', 'd', 'e']
-  const root = foldToRoot(leaves)
-  console.log('  foldToRoot([a..e]) =', root)
-  console.log('  inclusion proof (leaf c present):', verifyMerkleProof('c', merkleProof(leaves, 2), root))
-  console.log('  ⊥ (leaf z absent):', verifyMerkleProof('z', merkleProof(leaves, 2), root))
+  const root = merkleRoot(leaves)
+  console.log('  merkleRoot([a..e]) =', root)
+  console.log('  inclusion (leaf c present):', verifyInclusion('c', merkleProof(leaves, 2), root))
+  console.log('  ⊥ (leaf z absent):', verifyInclusion('z', merkleProof(leaves, 2), root))
+  console.log('  ⊥ (an internal NODE as a leaf):', verifyInclusion(merkleNode(merkleLeaf('a'), merkleLeaf('b')), merkleProof(leaves, 0), root))
 }
