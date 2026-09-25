@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory",
-    "uuid": "1a339bc0-5a7d-866c-a835-473e14bacc37",
+    "uuid": "157285c6-a024-8387-bfed-da7123f1a207",
     "words": [
       "use",
       "when",

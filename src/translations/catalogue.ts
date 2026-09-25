@@ -8515,7 +8515,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when taking the arithmetic mean of a number array anywhere in the corpus — the zero-guarded collapse of the repeated `sum/length` reduce across receivables, payables, and multi-currency analytics, where an empty array yields 0 (never NaN).",
-        "uuid": "8f2f8056-8670-83a3-8781-33061299f656",
+        "uuid": "8c4a6aac-df9b-8878-8ab8-0f6d410e0161",
         "words": [
           "use",
           "when",
@@ -20372,7 +20372,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "conjecture",
-        "uuid": "b95ea904-d463-854f-b60c-b6bddc035f71",
+        "uuid": "7cb405a0-e7ea-82ff-b7f1-b23cd1794c11",
         "words": [
           "conjecture"
         ],
@@ -20383,7 +20383,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law.",
-        "uuid": "66d67867-65f3-87f6-8391-93e70a03b491",
+        "uuid": "5abda614-842a-88f4-bf9a-3536d1d0aa2d",
         "words": [
           "use",
           "when",
@@ -33095,7 +33095,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about exact — Exact rational arithmetic for confidence, no decimal approximations",
-        "uuid": "c0a88272-d3a6-8f9c-88a4-fe310df18b6d",
+        "uuid": "ef5cf6fe-9be5-84fd-a03d-62c0c94552d5",
         "words": [
           "use",
           "when",
@@ -37917,7 +37917,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory",
-        "uuid": "1a339bc0-5a7d-866c-a835-473e14bacc37",
+        "uuid": "157285c6-a024-8387-bfed-da7123f1a207",
         "words": [
           "use",
           "when",
@@ -38973,7 +38973,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the 432 anchor's structure must be exact — the divisor lattice C5×C4 (20 divisors) and its self-dual inversion φ(d)=432/d, where every divisor-fraction d/432 reduces to the unit fraction 1/φ(d), verified to the bit by integer arithmetic.",
-        "uuid": "aa0675ad-3cc3-8b46-8abc-b3fc4473619b",
+        "uuid": "558e3dd5-9223-8f4e-bda4-23ef489a70dc",
         "words": [
           "use",
           "when",
@@ -39986,7 +39986,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "arithmetic",
-        "uuid": "440f4ec4-0c6c-875d-ac0a-0f14e73a9c33",
+        "uuid": "4cf3fbec-ab76-8d14-b5e5-709b6d26eca5",
         "words": [
           "arithmetic"
         ],
@@ -55366,7 +55366,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
-        "uuid": "5d1b4606-e095-8a12-b342-bc008d6c0523",
+        "uuid": "3007faba-def7-8a7d-9951-79cbd219a219",
         "words": [
           "use",
           "when",
@@ -60297,7 +60297,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why the erpax uuid model makes war useless — destruction is futile (content-addressed + holographic ⇒ any survivor regenerates the whole), coercion is supra-resource (forging the record costs beyond the universe), and force cannot dominate (competition selects fastest-correct, not strongest). War is strictly dominated by building, for human and machine alike — an arithmetic and thermodynamic theorem of the model, not a moral plea.",
-        "uuid": "cb12320e-08e6-8680-ba63-ab9b67616670",
+        "uuid": "d1436d54-6c74-8e39-8874-3ed4f85e24b2",
         "words": [
           "use",
           "when",
@@ -60774,7 +60774,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when φ must be read as the self-address constant — the number that is its own fold, computed not stored. Where pi is a finite seed unfolding to an infinite tail, φ is the fixed point: x = 1 + 1/x, the value the fold returns unchanged. Iterate the fold from any seed and it converges to φ; Fibonacci ratios sharpen toward it at every step. The arithmetic instance of concept.self.address.",
-        "uuid": "cac5f18f-935f-8709-808b-a72fedfe32ac",
+        "uuid": "fee3c9ca-2bc3-8a32-8387-8098e069dce3",
         "words": [
           "use",
           "when",
@@ -64668,7 +64668,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable.",
-        "uuid": "c410036e-4baf-8183-9258-3b358d4d7574",
+        "uuid": "d27b7270-97d8-841c-aa5c-62a0e9c27914",
         "words": [
           "use",
           "when",
@@ -67994,7 +67994,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet.",
-        "uuid": "405b6076-d29a-8bf1-aadf-1d19f650808b",
+        "uuid": "3218b632-6393-86f4-846b-d86b7673dc7c",
         "words": [
           "use",
           "when",
@@ -74117,7 +74117,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express.",
-        "uuid": "9708eda7-445f-8406-b28f-6a1f48a927c7",
+        "uuid": "4c5f7a84-e974-8a9a-91b5-9f1a6f28e1ee",
         "words": [
           "use",
           "when",
@@ -74743,7 +74743,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when asking which content-uuids carry each vortex state — the one rodin function that needs the live matrix, kept off the arithmetic that everyone else imports.",
-        "uuid": "e690b301-0155-873b-8bf5-f13b323b81c8",
+        "uuid": "47da37c3-b32a-8ada-a853-cdfd561abaa2",
         "words": [
           "use",
           "when",
@@ -77614,7 +77614,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "inject",
-        "uuid": "31a3eaf7-2383-8c6b-8a50-fd9d944d943f",
+        "uuid": "8b5cb9ca-19c1-8a2f-9d0c-bb13a273c109",
         "words": [
           "inject"
         ],
@@ -77625,7 +77625,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about inject — **3,597 SKILL.md and 3,595 LLM.md files are loaded into an agent's context**, and LLM.md is *generated* from SKILL.md — so a line written once propagates into every future agent's…",
-        "uuid": "122e88d1-5d37-8917-adea-3627c7bc909b",
+        "uuid": "423c23c8-1dbe-8660-92fb-408497a2c8de",
         "words": [
           "use",
           "when",
@@ -82376,7 +82376,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an atom needs the ancestor of a path without inheriting the seal barrel — parentAtomPath and ancestorPaths, in a module with ZERO imports. Three lines of string arithmetic that used to live in @/seal, whose barrel is inside the corpus's import component, so path/ paid for the whole subtree to get one function. @/seal re-exports both, so no existing reader changed.",
-        "uuid": "411bf17a-7ae2-8e70-ae1b-bf5df7b7c06c",
+        "uuid": "233e9a3d-ddf6-8daf-b8f5-f9bfa033582d",
         "words": [
           "use",
           "when",
@@ -85842,7 +85842,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when stating what the sequence's inverted reflection IS — the same ring read through the inverse generator, because 2·5 ≡ 1 (mod 9). Three doublings is ×8 ≡ −1, so half a turn is negation and every digit's polarity partner is 9 − d: 1↔8 · 2↔7 · 4↔5, each pair 180° apart. Six positions divide the circle exactly, so a step is 60°, where the arithmetic closes over the Eisenstein integers. Renders the angle, polarity partner and DECLARED colour and pitch of every position for the README and homepage, computed so the prose cannot drift from the arithmetic.",
-        "uuid": "2ef29219-091d-80a4-9000-bbf02743ee93",
+        "uuid": "02058e2e-9732-8607-8f77-e9ed455bca5c",
         "words": [
           "use",
           "when",
@@ -138044,7 +138044,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic.",
-        "uuid": "1e197435-e664-8998-bdab-fc7c73f09606",
+        "uuid": "371cf91f-6358-81bd-9399-fad62ba8044a",
         "words": [
           "use",
           "when",
@@ -143790,7 +143790,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the demand seed of a market — the latent want that precedes any transaction. The one market atom you cannot manufacture exogenously; you reveal or awaken it, never inject it. If desire is the zero atom, no convenience, proof, or trendsetter reaches the market — you redefine the product onto a want that already exists.",
-        "uuid": "99b47c45-78c9-8bc7-b5ab-52b7ebd7854d",
+        "uuid": "ddd961a6-6e74-80fe-aff5-c174365e4164",
         "words": [
           "use",
           "when",
@@ -207818,7 +207818,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when partitioning work into balanced waves — self-balancing load distribution across the seven horo phases, weighted by comparable units, with the lane-cost and tamper-cost arithmetic the scheduler and session build on.",
-        "uuid": "33e8c5d5-c2d8-8995-9539-d9914c31f81a",
+        "uuid": "6bb4918f-8ba7-8ccc-aa50-c22f965d565c",
         "words": [
           "use",
           "when",

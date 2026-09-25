@@ -2,11 +2,11 @@
 name: inject
 description: "Use when reasoning about inject — **3,597 SKILL.md and 3,595 LLM.md files are loaded into an agent's context**, and LLM.md is *generated* from SKILL.md — so a line written once propagates into every future agent's…"
 atomPath: "rules/inject"
-coordinate: "rules/inject · 7/descent · 31a3eaf7"
-contentUuid: "7af503f9-3431-5289-9422-e74276a84fe0"
-diamondUuid: "ab03766b-2e25-8ccb-b243-02299c99f43a"
-uuid: "31a3eaf7-2383-8c6b-8a50-fd9d944d943f"
-horo: 7
+coordinate: "rules/inject · 8/crest · 8b5cb9ca"
+contentUuid: "5e3d59ea-acad-5da7-8f84-2d010ea5dbd7"
+diamondUuid: "17f59f74-7a4e-8232-bb0a-a9340703118f"
+uuid: "8b5cb9ca-19c1-8a2f-9d0c-bb13a273c109"
+horo: 8
 typography:
   partition: rules
   bondDegree: 6
@@ -17,7 +17,7 @@ standards:
   - "OWASP-ASVS"
 bindings: []
 signatures:
-  computationUuid: "30be761c-ae70-8de8-9c58-a13773eec5dc"
+  computationUuid: "e2cfec8e-664f-83ee-a65b-99bfdf8b3cc4"
   stages:
     - stage: path
       stageUuid: "e5531ebf-c67e-8689-973d-34abbbd9e6cb"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "381e543e-c8f9-85d2-a990-88322dc2baa1"
     - stage: horo
-      stageUuid: "4835a4ff-48e1-854f-8d16-b99b9b7cd297"
+      stageUuid: "06a509d2-416f-8e7b-bd6d-9c2516a7fe45"
     - stage: seal
       stageUuid: "1f8db0f2-278c-8922-b91e-57c561d13d64"
     - stage: uuid
-      stageUuid: "85106ba6-7e52-814d-97f1-9bb181807203"
+      stageUuid: "d0d0ad3b-ea7b-8b20-ad05-a62debb10b7a"
 version: 2
 ---
 # rules/inject — the agent-facing surface is an instruction channel, and it is writable

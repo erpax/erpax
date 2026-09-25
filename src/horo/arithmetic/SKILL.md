@@ -2,18 +2,18 @@
 name: arithmetic
 description: "Use when performing mathematical operations on horo digits — digital roots, composition, ratios, void mechanics, inverse orbits, and affine transformations. All functions are pure and side-effect-free."
 atomPath: "horo/arithmetic"
-coordinate: "horo/arithmetic · 4/weave · 440f4ec4"
-contentUuid: "bd0450f5-d5cc-54e3-9dad-dfe70135ef57"
-diamondUuid: "af1ca524-2304-84e1-a2ba-7b3b02eb1b60"
-uuid: "440f4ec4-0c6c-875d-ac0a-0f14e73a9c33"
-horo: 4
+coordinate: "horo/arithmetic · 8/crest · 4cf3fbec"
+contentUuid: "a40f7fa2-cf04-5a7a-b070-ead231c28b5c"
+diamondUuid: "b17c3fa1-67a5-8852-bd77-005ab0cdf530"
+uuid: "4cf3fbec-ab76-8d14-b5e5-709b6d26eca5"
+horo: 8
 typography:
   partition: horo
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "19776691-b208-8780-a37a-c4b83745e89a"
+  computationUuid: "16b13bb2-338b-8eb1-9fad-3a956b42d047"
   stages:
     - stage: path
       stageUuid: "0dcdef32-bf80-858f-b5b3-79a53ad67f55"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3aea74f0-b1b9-87d7-9bbb-f1fcc9f06625"
     - stage: horo
-      stageUuid: "5f8edf79-b094-81ce-bb71-31d49b3b836a"
+      stageUuid: "115c0af1-3903-8c7e-ac0e-37e3f9892ab7"
     - stage: seal
       stageUuid: "e792981c-dee8-8faf-8523-e97d6f5d8e5b"
     - stage: uuid
-      stageUuid: "17db52f3-160b-8719-8cd3-a57fa944867b"
+      stageUuid: "1eb58736-24ae-8897-bb3f-690274192837"
 version: 2
 ---
 # horo/arithmetic
