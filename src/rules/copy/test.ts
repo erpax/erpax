@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { copyCount, duplicateBodies, policyAddresses, formulaAddresses, COINCIDENT_FORMULAS } from './index'
+import { copyCount, duplicateBodies, policyAddresses, formulaAddresses } from './index'
 
 const tree = (files: Record<string, string>): string => {
   const root = mkdtempSync(join(tmpdir(), 'erpax-copy-'))
@@ -241,11 +241,9 @@ describe('formulaAddresses — one formula, one address, and a coincidence is no
   })
 
   it('a DECLARED coincidence is exempt — folding it would erase a cross-domain fact', () => {
-    // birthdayLog2 and groverPreimageLog2 are both d/2 and neither derives the other
-    const names = COINCIDENT_FORMULAS.flatMap(([a, b]) => [a, b])
-    expect(names).toContain('birthdayLog2')
-    expect(names).toContain('groverPreimageLog2')
-    for (const [, , why] of COINCIDENT_FORMULAS) expect(why.length).toBeGreaterThan(40)
+    // birthdayLog2 and groverPreimageLog2 are both d/2 and neither derives the other. The list is
+    // module-private, as EMPIRICAL and SYNTHETIC_ALLOWLIST are: a declared exemption is argued in the
+    // SKILL, and exporting it would be one more static datum on the matrix-crack ratchet.
     const root = tree({
       'a.ts': 'export const birthdayLog2 = (d: number): number => d / 2\n',
       'b.ts': 'export const groverPreimageLog2 = (d: number): number => d / 2\n',

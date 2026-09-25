@@ -275,7 +275,7 @@ export interface Formula {
  * A numeric coincidence is not duplication, and folding one would erase a real cross-domain fact —
  * and worse, the two would stop being able to move independently when a model changes.
  */
-export const COINCIDENT_FORMULAS: ReadonlyArray<readonly [string, string, string]> = [
+const COINCIDENT_FORMULAS: ReadonlyArray<readonly [string, string, string]> = [
   [
     'birthdayLog2',
     'groverPreimageLog2',
