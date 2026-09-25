@@ -52,3 +52,44 @@ describe('website — derived, content-addressed page seeds', () => {
     }
   })
 })
+
+describe('seedFromSpec — the page SET is a formula over sealed state, not a scrape', () => {
+  it('exactly one collection page per collection Payload actually booted', async () => {
+    const { shapesOf } = await import('@/rules/collapse')
+    const { seedFromSpec } = await import('./index')
+    const booted = shapesOf(process.cwd())
+    const pages = await seedFromSpec({ tenantId: 'erpax-platform', include: ['collection'] })
+    expect(booted.length).toBeGreaterThan(200)
+    expect(pages).toHaveLength(booted.length)
+    expect(new Set(pages.map((p) => p.slug)).size).toBe(pages.length)
+  })
+
+  it('the garbage the old scrape produced is gone', async () => {
+    // extractCorpus returned FOUR entries: `test`, `index`, `dunningJob`, `salesAuditFileJob`.
+    // None is a collection; they are parse artefacts, and they were the site's collection pages.
+    const { seedFromSpec } = await import('./index')
+    const slugs = new Set((await seedFromSpec({ tenantId: 't', include: ['collection'] })).map((p) => p.slug))
+    for (const g of ['test', 'index', 'dunningJob', 'salesAuditFileJob']) {
+      expect(slugs.has(`spec-collection-${g}`)).toBe(false)
+    }
+    expect(slugs.has('spec-collection-invoices')).toBe(true)
+  })
+
+  it('every page carries its content-uuid, in the metadata AND in the body', async () => {
+    const { seedFromSpec } = await import('./index')
+    const pages = await seedFromSpec({ tenantId: 't', include: ['collection'] })
+    for (const p of pages.slice(0, 40)) {
+      const uuid = String(p.metadata?.['contentUuid'] ?? '')
+      expect(uuid).toMatch(/^[0-9a-f]{8}-/)
+      expect(p.bodyHtml).toContain(uuid)
+      expect(p.bodyHtml).toContain(String(p.metadata?.['slug'] ?? ''))
+    }
+  })
+
+  it('the title is a formula over the slug, so it cannot drift from it', async () => {
+    const { seedFromSpec } = await import('./index')
+    const pages = await seedFromSpec({ tenantId: 't', include: ['collection'] })
+    const p = pages.find((x) => x.slug === 'spec-collection-account-reconciliations')
+    expect(p?.title).toBe('Account Reconciliations')
+  })
+})

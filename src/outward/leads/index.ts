@@ -1,6 +1,8 @@
-import { writeFileSync } from 'node:fs'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { contractRows, leadsOf, nextBook, type OutwardRow, type ReceiptBook } from '@/outward'
+import { coverage, nextAsk } from '@/quantum/chat/coverage'
+import { messageUuid } from '@/quantum/chat/merkle'
 import { checkEu, readBook, writeBook } from '@/outward/eu'
 import { bgContractOnline } from '@/outward/bg'
 import { worldContractOnline } from '@/outward/world'
@@ -59,8 +61,18 @@ export async function harvestLeads(cwd: string = process.cwd(), src: LeadSources
   }
 }
 
-/** Persist the harvest: the book is the memory, the leads file is the release agenda. */
-export function writeHarvest(h: LeadHarvest, cwd: string = process.cwd()): void {
+/** Leads already ANSWERED, by coverage key. Seen ≠ acted on: the book records seen. */
+export function readAnswered(cwd: string = process.cwd()): string[] {
+  try {
+    const doc = JSON.parse(readFileSync(join(cwd, LEADS_REL), 'utf8')) as { answered?: string[] }
+    return Array.isArray(doc.answered) ? doc.answered : []
+  } catch {
+    return []
+  }
+}
+
+/** Persist the harvest: the book is the memory, the leads file is the agenda AND its coverage. */
+export function writeHarvest(h: LeadHarvest, cwd: string = process.cwd(), answered: readonly string[] = readAnswered(cwd)): void {
   writeBook(h.book, cwd)
   writeFileSync(
     join(cwd, LEADS_REL),
@@ -71,6 +83,8 @@ export function writeHarvest(h: LeadHarvest, cwd: string = process.cwd()): void 
         leads: h.leads.length,
         unreachable: h.unreachable.length,
         rows: h.leads.map((r) => ({ name: r.name, state: r.state, note: r.note })),
+        coverage: leadCoverage(h, answered),
+        answered: [...answered],
       },
       null,
       2,
@@ -78,6 +92,49 @@ export function writeHarvest(h: LeadHarvest, cwd: string = process.cwd()): void 
   )
 }
 
+
+/**
+ * A lead as a candidate question — the text whose uuid IS its coverage key.
+ *
+ * `moved` carries the note because the note is what changed; `fresh` does not, so a boundary first
+ * seen and later moved are two distinct candidates rather than one.
+ */
+export const leadCandidate = (r: OutwardRow): string =>
+  r.state === 'moved' ? `${r.name}: moved — ${r.note ?? ''}` : `${r.name}: ${r.state}`
+
+/** Every lead this harvest produced, as candidates. */
+export const leadCandidates = (h: LeadHarvest): string[] => h.leads.map(leadCandidate)
+
+export interface LeadCoverage {
+  /** Leads covered / leads produced, in [0,1]. */
+  readonly covered: number
+  /** The next lead nothing has answered yet, or undefined when the boundary is fully covered. */
+  readonly next: string | undefined
+  readonly outstanding: number
+}
+
+/**
+ * Fuse the boundary to the ASK: the leads ARE the candidate space. See ./SKILL.md § fused to next.
+ *
+ * `nextAsk` was generic over candidates and `harvestLeads` produced leads, and nothing composed
+ * them — so "what is next" could not see the world changing. This is that composition and no new
+ * logic: `coverage` and `nextAsk` are [[quantum]]/chat's, unchanged.
+ */
+export function leadCoverage(h: LeadHarvest, answered: readonly string[]): LeadCoverage {
+  const candidates = leadCandidates(h)
+  return {
+    covered: coverage(answered, candidates),
+    next: nextAsk(answered, candidates),
+    outstanding: candidates.filter((c) => !answered.includes(messageUuid(c))).length,
+  }
+}
+
+/** The uuid a covered lead is recorded under — the same address `nextAsk` compares. */
+export const leadCoverageKey = (candidate: string): string => messageUuid(candidate)
+
+// The runner LAST: it uses top-level await, which suspends module evaluation — anything declared
+// below it would still be in its temporal dead zone when this block runs ([[rules]]/cycle, inside one
+// file). It read `leadCandidates` before initialisation until this moved.
 if (import.meta.url === `file://${process.argv[1]}`) {
   const h = await harvestLeads()
   for (const r of h.rows) {
@@ -85,10 +142,13 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`${mark} ${r.state.padEnd(11)} ${r.name.padEnd(28)} ${r.note?.slice(0, 70) ?? ''}`)
   }
   if (process.argv.includes('--write')) writeHarvest(h)
+  const cov = leadCoverage(h, readAnswered())
   console.log(
     `\noutward/leads — asked ${h.rows.length} · leads ${h.leads.length} · unreachable ${h.unreachable.length}` +
+      ` · covered ${(cov.covered * 100).toFixed(0)}% · outstanding ${cov.outstanding}` +
       (process.argv.includes('--write') ? ` · wrote ${LEADS_REL}` : ' (dry run; --write to persist)'),
   )
+  if (cov.next) console.log(`next → ${cov.next}`)
   // A lead is a RELEASE REASON, not a failure. Only a boundary that could not be asked at all is.
   process.exit(h.rows.length > 0 && h.unreachable.length === h.rows.length ? 1 : 0)
 }

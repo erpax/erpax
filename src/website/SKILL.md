@@ -51,6 +51,40 @@ Because each seed is content-addressed, the same Page authored by two instances 
 
 Sequence position: **8** (crest — the inward record manifested outward), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]).
 
+## The page set is a formula, and its input was garbage
+
+`seedFromSpec` is the right shape — the site's pages are **computed from the corpus**, never authored
+— and its collection axis read `extractCorpus`, which returned **four** entries:
+
+```
+test · index · dunningJob · salesAuditFileJob
+```
+
+None of those is a collection. A file named `test`, a file named `index`, and two job names: parse
+artefacts. So the corpus booted **231** collections and the site offered 4 pages, all fabrications,
+while the formula around them worked perfectly.
+
+The fix is not a better scrape, it is **asking the arbiter**. `shapesOf` is what
+[[rules]]/collapse already trusts: `payload-types.ts`, generated **by** Payload from the live config,
+so it answers about what actually booted rather than what a walk guessed.
+
+| | before | after |
+| --- | ---: | ---: |
+| collection pages | 4 (all garbage) | **231** |
+| chain · agent · standard-family · role | 21 · 16 · 7 · 6 | unchanged |
+| **total** | 54 | **281** |
+
+Nothing on a collection page is written down. The title is `titleFromSlug` — a formula over the
+slug, so it cannot drift from it — and the body carries the slug and the **content-uuid**, which is
+the page's address in the fold. A test asserts the uuid appears in the body of every page, so a page
+that stopped being addressable would redden rather than render.
+
+**Honest boundary.** `shapesOf` returns `fields` empty in this call, so a collection page states its
+identity and not yet its shape — the richer body is a further read, not a claim made here. The other
+four axes still come from their own registries; only the collection axis was starved. And a page set
+that is a formula over sealed state can still be a formula over the WRONG sealed state — the guard is
+that its arbiter is the generated face Payload writes, which is the same one the collapse gate uses.
+
 **Law — [[law]]: nothing is authored — every Page is DERIVED from the live corpus ([[generate]]), and because each seed is content-addressed the same Page from two instances is ONE Page ([[merge]]); the website is the perceptible twin of the queryable record.**
 
 ## Standards

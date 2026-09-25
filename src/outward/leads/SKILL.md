@@ -91,6 +91,42 @@ change matters to a release — that is a human's call reading `outward-leads.js
 `holds` stays true while its payload shape drifts is invisible here, because `detail` is not folded —
 that is the price paid for a usable signal, stated rather than hidden.
 
+## Fused to next — the leads ARE the candidate space
+
+*"Why is next not fused yet to autonomous coverage of all leads and news?"* Because nothing composed
+them. [[quantum]]/chat's `nextAsk(answered, candidates)` is **generic over candidates** — it returns
+the first candidate whose uuid the answered set does not contain — and `harvestLeads` produced leads,
+and no line put one into the other. So "what is next" could not see the world changing.
+
+`leadCoverage(harvest, answered)` is that composition and **no new logic**: `coverage` and `nextAsk`
+are unchanged, and a lead becomes a candidate through `leadCandidate`.
+
+```
+covered      = coverage(answered, leadCandidates(h))     fraction of the boundary answered
+next         = nextAsk(answered, leadCandidates(h))      the first lead nothing has answered
+outstanding  = candidates not in answered
+```
+
+A **`moved`** lead carries its note; a `fresh` one does not. So one rail moving twice is **two**
+candidates, and answering the first does not mark the second covered — the coverage key is the uuid
+of the candidate text, which is the corpus's own addressing applied to news.
+
+`answered` persists in `outward-leads.json` beside the agenda, so coverage survives runs, and the
+runner prints `covered NN% · outstanding N` and the single `next →` line. Live: **asked 12 · leads 0
+· covered 100%**, because the receipts were written and every rail agrees with them.
+
+**Seen is not acted on.** The ReceiptBook records that a boundary was *asked*; `answered` records
+that a lead was *dealt with*. Conflating them would mark every lead covered the moment it was
+harvested, which is the same defect as a gate that reports green because it never ran.
+
+**The runner goes LAST in the file.** It uses top-level `await`, which suspends module evaluation, so
+anything declared below it is still in its temporal dead zone when it runs — it read `leadCandidates`
+before initialisation until it moved. [[rules]]/cycle's law inside a single file.
+
+**Honest boundary.** `next` is the first *uncovered* lead in harvest order, not the most important
+one — there is no priority here, and ordering leads by consequence would need a model of what each
+rail feeds. And coverage measures that a lead was answered, never that the answer was right.
+
 **Law — [[law]]: the boundary is memory, not a poll. Content-address every answer, remember the
 address, and let only a MOVED one cost attention — one shape for the whole boundary, or the half
 with no receipts silently produces no leads at all.**
