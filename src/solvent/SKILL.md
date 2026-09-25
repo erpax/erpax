@@ -1,3 +1,40 @@
+---
+name: solvent
+description: "Use when reasoning about solvent — Zenodo record **10.5281/zenodo.22934883** analyses a \"Dry Cleaning Multimodal Algebra Framework\". Its own §3 names the limitation and its §4 names the cure:"
+atomPath: solvent
+coordinate: "solvent · 7/descent · 8934c3e5"
+contentUuid: "d3033eb4-6f0a-534e-af09-a9f00685da21"
+diamondUuid: "1e566f13-22e6-82b7-b2aa-ea1c2b484910"
+uuid: "8934c3e5-8bf3-862f-ab49-a036881f4473"
+horo: 7
+typography:
+  partition: solvent
+  bondDegree: 12
+standards:
+  - "Antoine (1888) — log₁₀ P = A − B/(T + C), the vapour-pressure correlation"
+  - CODATA 2018 — R = 8.314462618 J·mol⁻¹·K⁻¹ (exact by SI definition)
+  - "EU 2010/75 Annex VII — solvent management plan: input = output + fugitive"
+  - "EU-Admin-Coop-Reg-904/2010"
+bindings: []
+signatures:
+  computationUuid: "112fd7e7-dde9-8d47-aee1-0d4c020d5794"
+  stages:
+    - stage: path
+      stageUuid: "f246632d-927e-8cf2-80de-8356552e95ff"
+    - stage: trinity
+      stageUuid: "ce061706-32bf-81c9-97e1-519d9e985d9a"
+    - stage: boundary
+      stageUuid: "0497b1de-493a-826b-92c6-94a6c9ce21c1"
+    - stage: links
+      stageUuid: "607f59cf-47b1-8fba-a9c8-8e5c4f197639"
+    - stage: horo
+      stageUuid: "518ed42f-d831-8493-981d-14fbd9a0471c"
+    - stage: seal
+      stageUuid: "5134fe14-feeb-80e4-92b6-627ba270757c"
+    - stage: uuid
+      stageUuid: "98727a36-23c4-830c-8521-e004a3581bde"
+version: 2
+---
 # solvent — the formula a document named as missing, written down
 
 Zenodo record **10.5281/zenodo.22934883** analyses a "Dry Cleaning Multimodal Algebra Framework".

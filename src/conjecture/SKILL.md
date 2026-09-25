@@ -1,3 +1,37 @@
+---
+name: conjecture
+description: "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law."
+atomPath: conjecture
+coordinate: "conjecture · 8/crest · b95ea904"
+contentUuid: "354c6af6-6ae5-5377-9642-3aa47ebdb542"
+diamondUuid: "687608bf-1ac1-8484-8235-3d3a968b44b2"
+uuid: "b95ea904-d463-854f-b60c-b6bddc035f71"
+horo: 8
+typography:
+  partition: conjecture
+  bondDegree: 13
+standards:
+  - Popper — a proposition that forbids nothing explains nothing
+bindings: []
+signatures:
+  computationUuid: "87611434-c2c8-83d9-8a0a-d4b332609410"
+  stages:
+    - stage: path
+      stageUuid: "6404a930-cd96-8a58-a3f5-29fa9ffbf014"
+    - stage: trinity
+      stageUuid: "881d910c-fb8b-8074-9c61-4a577aa66bc8"
+    - stage: boundary
+      stageUuid: "9c73b125-18f9-8bc3-aa1e-a93ef7fe16e1"
+    - stage: links
+      stageUuid: "a2c34ae2-00f4-8a08-a665-0d68ef166c85"
+    - stage: horo
+      stageUuid: "06067c92-e7e3-868b-b1d0-066522e7d1ff"
+    - stage: seal
+      stageUuid: "f112f579-e79e-80c6-9644-8bb56dcc66ab"
+    - stage: uuid
+      stageUuid: "5ecf534c-e573-8198-beea-36f430390b10"
+version: 2
+---
 # conjecture — an idea that looks impossible is the only one whose answer teaches anything
 
 [[think]]/refute seals an impossibility **already met** and routes it to the dimension where the

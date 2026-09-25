@@ -3,13 +3,13 @@ name: agent
 description: "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting)."
 atomPath: agent
 coordinate: "agent · 7/descent · ed548487"
-contentUuid: "014b955f-6456-564e-ba17-f230be94358b"
-diamondUuid: "5a62c865-6e5b-8a62-9686-a60df929d121"
+contentUuid: "1a90bcf4-a375-53a7-b0aa-af86f92f5b15"
+diamondUuid: "71662084-43e7-8440-af65-290fa7257c9c"
 uuid: "ed548487-5153-8638-8645-abafe64cbf02"
 horo: 7
 typography:
   partition: agent
-  bondDegree: 393
+  bondDegree: 397
 standards:
   - "ISO-19011"
   - "ISO-19011`"
@@ -31,7 +31,7 @@ standards:
   - "W3C-ActivityPub"
 bindings: []
 signatures:
-  computationUuid: "a21c6d0c-8adc-87c2-b1b3-bb6b90bab928"
+  computationUuid: "1732ebdb-34b7-851f-850a-749cb138e9d0"
   stages:
     - stage: path
       stageUuid: "a0f973da-5aaf-8198-87b0-f6e725af250f"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "45b702da-f85d-800a-a638-71b96aabe5f3"
     - stage: horo
-      stageUuid: "2d778fcf-a46e-8ece-86c2-dd92eb83110f"
+      stageUuid: "e479a6b5-bf50-864f-8a2e-c8e8119cd320"
     - stage: seal
       stageUuid: "cc386600-b64e-8962-8301-0eeb688cc21b"
     - stage: uuid
-      stageUuid: "d9344e35-7b2d-8953-b042-2f30a4572fa5"
+      stageUuid: "d9970971-f9fb-8ab5-aa87-0f1fdb11ad7a"
 version: 2
 ---
 # agent — an agent is its content; cloning is content-addressing; the actor decides in pure functions while only the substrate acts

@@ -8515,7 +8515,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when taking the arithmetic mean of a number array anywhere in the corpus — the zero-guarded collapse of the repeated `sum/length` reduce across receivables, payables, and multi-currency analytics, where an empty array yields 0 (never NaN).",
-        "uuid": "d98b478f-b605-8f4f-beb5-50c0960d9c11",
+        "uuid": "8f2f8056-8670-83a3-8781-33061299f656",
         "words": [
           "use",
           "when",
@@ -20366,6 +20366,66 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "conjecture",
+    "path": "conjecture",
+    "translations": [
+      {
+        "key": "name",
+        "source": "conjecture",
+        "uuid": "b95ea904-d463-854f-b60c-b6bddc035f71",
+        "words": [
+          "conjecture"
+        ],
+        "values": {
+          "en": "conjecture"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law.",
+        "uuid": "66d67867-65f3-87f6-8391-93e70a03b491",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "conjecture",
+          "think",
+          "refute",
+          "seals",
+          "an",
+          "impossibility",
+          "already",
+          "met",
+          "and",
+          "routes",
+          "it",
+          "to",
+          "the",
+          "dimension",
+          "where",
+          "the",
+          "thing",
+          "is",
+          "computable",
+          "that",
+          "is",
+          "backward",
+          "looking",
+          "and",
+          "it",
+          "is",
+          "half",
+          "a",
+          "law"
+        ],
+        "values": {
+          "en": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law."
+        }
+      }
+    ]
+  },
+  {
     "atom": "connections",
     "path": "connections",
     "translations": [
@@ -26509,7 +26569,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST.",
-        "uuid": "82a9c7d7-1dc6-8395-916f-341683f2d99b",
+        "uuid": "3a98b048-a54c-80c1-9dbc-d9edc39636bd",
         "words": [
           "use",
           "when",
@@ -33035,7 +33095,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about exact — Exact rational arithmetic for confidence, no decimal approximations",
-        "uuid": "8b745019-a391-8f7e-87fd-e32a01c37277",
+        "uuid": "c0a88272-d3a6-8f9c-88a4-fe310df18b6d",
         "words": [
           "use",
           "when",
@@ -37857,7 +37917,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory",
-        "uuid": "8e6672c4-b349-8a84-9b1b-f47c834d06c0",
+        "uuid": "1a339bc0-5a7d-866c-a835-473e14bacc37",
         "words": [
           "use",
           "when",
@@ -38913,7 +38973,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the 432 anchor's structure must be exact — the divisor lattice C5×C4 (20 divisors) and its self-dual inversion φ(d)=432/d, where every divisor-fraction d/432 reduces to the unit fraction 1/φ(d), verified to the bit by integer arithmetic.",
-        "uuid": "9b473061-df00-89c5-a4af-834b7d7935fb",
+        "uuid": "aa0675ad-3cc3-8b46-8abc-b3fc4473619b",
         "words": [
           "use",
           "when",
@@ -39926,7 +39986,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "arithmetic",
-        "uuid": "4cd8ead9-1792-8d73-8935-a60d9930a809",
+        "uuid": "440f4ec4-0c6c-875d-ac0a-0f14e73a9c33",
         "words": [
           "arithmetic"
         ],
@@ -55306,7 +55366,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
-        "uuid": "571d1fc6-de05-8c2b-9ce4-6df577e19b0e",
+        "uuid": "5d1b4606-e095-8a12-b342-bc008d6c0523",
         "words": [
           "use",
           "when",
@@ -60237,7 +60297,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why the erpax uuid model makes war useless — destruction is futile (content-addressed + holographic ⇒ any survivor regenerates the whole), coercion is supra-resource (forging the record costs beyond the universe), and force cannot dominate (competition selects fastest-correct, not strongest). War is strictly dominated by building, for human and machine alike — an arithmetic and thermodynamic theorem of the model, not a moral plea.",
-        "uuid": "d708a2a6-d829-8610-9cea-335c055a57d5",
+        "uuid": "cb12320e-08e6-8680-ba63-ab9b67616670",
         "words": [
           "use",
           "when",
@@ -60714,7 +60774,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when φ must be read as the self-address constant — the number that is its own fold, computed not stored. Where pi is a finite seed unfolding to an infinite tail, φ is the fixed point: x = 1 + 1/x, the value the fold returns unchanged. Iterate the fold from any seed and it converges to φ; Fibonacci ratios sharpen toward it at every step. The arithmetic instance of concept.self.address.",
-        "uuid": "d29f2ef4-3a62-86ed-adab-8ae5471ea298",
+        "uuid": "cac5f18f-935f-8709-808b-a72fedfe32ac",
         "words": [
           "use",
           "when",
@@ -62914,7 +62974,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "replaceable",
-        "uuid": "880c0822-0217-8cd9-b2b7-fac781ec967e",
+        "uuid": "587a6b0a-cf7b-8acb-94ed-b2c441319e96",
         "words": [
           "replaceable"
         ],
@@ -62925,7 +62985,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…",
-        "uuid": "c2d1afe0-7ba0-8d3e-92c5-dc8140f6c1f3",
+        "uuid": "776fb4e4-9a45-8d77-986c-b9f2a88342c2",
         "words": [
           "use",
           "when",
@@ -64608,7 +64668,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable.",
-        "uuid": "70bb6c8e-35a8-88fd-b44c-5af871db1ef0",
+        "uuid": "c410036e-4baf-8183-9258-3b358d4d7574",
         "words": [
           "use",
           "when",
@@ -67934,7 +67994,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet.",
-        "uuid": "f0af4dcb-3cea-8630-b3b2-bf9f26c7eae9",
+        "uuid": "405b6076-d29a-8bf1-aadf-1d19f650808b",
         "words": [
           "use",
           "when",
@@ -74057,7 +74117,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express.",
-        "uuid": "2ecf0cef-eb3b-8ffe-b294-c421f116dd79",
+        "uuid": "9708eda7-445f-8406-b28f-6a1f48a927c7",
         "words": [
           "use",
           "when",
@@ -74683,7 +74743,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when asking which content-uuids carry each vortex state — the one rodin function that needs the live matrix, kept off the arithmetic that everyone else imports.",
-        "uuid": "57161477-f49b-8879-9a05-09113da0e1de",
+        "uuid": "e690b301-0155-873b-8bf5-f13b323b81c8",
         "words": [
           "use",
           "when",
@@ -76089,7 +76149,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable).",
-        "uuid": "d97d3490-fdfe-82e0-98ae-df2cead98a2d",
+        "uuid": "f9ea3ef3-6927-8b7b-aff0-8701dbd0d1c4",
         "words": [
           "use",
           "when",
@@ -82316,7 +82376,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an atom needs the ancestor of a path without inheriting the seal barrel — parentAtomPath and ancestorPaths, in a module with ZERO imports. Three lines of string arithmetic that used to live in @/seal, whose barrel is inside the corpus's import component, so path/ paid for the whole subtree to get one function. @/seal re-exports both, so no existing reader changed.",
-        "uuid": "d4010c00-e949-8b0d-8816-693e59b6fa09",
+        "uuid": "411bf17a-7ae2-8e70-ae1b-bf5df7b7c06c",
         "words": [
           "use",
           "when",
@@ -85782,7 +85842,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when stating what the sequence's inverted reflection IS — the same ring read through the inverse generator, because 2·5 ≡ 1 (mod 9). Three doublings is ×8 ≡ −1, so half a turn is negation and every digit's polarity partner is 9 − d: 1↔8 · 2↔7 · 4↔5, each pair 180° apart. Six positions divide the circle exactly, so a step is 60°, where the arithmetic closes over the Eisenstein integers. Renders the angle, polarity partner and DECLARED colour and pitch of every position for the README and homepage, computed so the prose cannot drift from the arithmetic.",
-        "uuid": "5ebce334-e096-8cfa-b937-c761fee3b853",
+        "uuid": "2ef29219-091d-80a4-9000-bbf02743ee93",
         "words": [
           "use",
           "when",
@@ -90675,6 +90735,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about solve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "solvent",
+    "path": "solvent",
+    "translations": [
+      {
+        "key": "name",
+        "source": "solvent",
+        "uuid": "8934c3e5-8bf3-862f-ab49-a036881f4473",
+        "words": [
+          "solvent"
+        ],
+        "values": {
+          "en": "solvent"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about solvent — Zenodo record **10.5281/zenodo.22934883** analyses a \\\"Dry Cleaning Multimodal Algebra Framework\\\". Its own §3 names the limitation and its §4 names the cure:",
+        "uuid": "ee6d6eeb-4d4b-8c12-b676-afa28a02174f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "solvent",
+          "zenodo",
+          "record",
+          "zenodo",
+          "analyses",
+          "a",
+          "dry",
+          "cleaning",
+          "multimodal",
+          "algebra",
+          "framework",
+          "its",
+          "own",
+          "names",
+          "the",
+          "limitation",
+          "and",
+          "its",
+          "names",
+          "the",
+          "cure"
+        ],
+        "values": {
+          "en": "Use when reasoning about solvent — Zenodo record **10.5281/zenodo.22934883** analyses a \\\"Dry Cleaning Multimodal Algebra Framework\\\". Its own §3 names the limitation and its §4 names the cure:"
         }
       }
     ]
@@ -97337,7 +97449,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "swarm",
-        "uuid": "8b6d4242-d722-8922-ac83-8d4438613d3c",
+        "uuid": "710eb9f4-e01b-8ddf-bd00-30c2e48aa659",
         "words": [
           "swarm"
         ],
@@ -97348,7 +97460,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.",
-        "uuid": "a74c9286-a558-83e2-ab3e-f4efe8095c86",
+        "uuid": "924f485e-34a0-8dcc-aeb2-8d64626642cf",
         "words": [
           "use",
           "when",
@@ -137932,7 +138044,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic.",
-        "uuid": "eddccbc1-4495-8d91-87e7-c1e13447a527",
+        "uuid": "1e197435-e664-8998-bdab-fc7c73f09606",
         "words": [
           "use",
           "when",
@@ -207706,7 +207818,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when partitioning work into balanced waves — self-balancing load distribution across the seven horo phases, weighted by comparable units, with the lane-cost and tamper-cost arithmetic the scheduler and session build on.",
-        "uuid": "39e9599d-fccb-88b1-aaf3-93e9c1028ece",
+        "uuid": "33e8c5d5-c2d8-8995-9539-d9914c31f81a",
         "words": [
           "use",
           "when",
@@ -208673,6 +208785,130 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about wholesale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "widget",
+    "path": "widget",
+    "translations": [
+      {
+        "key": "name",
+        "source": "widget",
+        "uuid": "1568b6bd-1c89-890d-941a-15234fc3a5a3",
+        "words": [
+          "widget"
+        ],
+        "values": {
+          "en": "widget"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about widget — Every widget here is over an analytics view-model. The tile receives what it draws and computes nothing about where it came from — the fetch belongs to dashboard/spec, which owns…",
+        "uuid": "ebefc811-b953-8994-b016-1456f91a4e53",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "widget",
+          "every",
+          "widget",
+          "here",
+          "is",
+          "over",
+          "an",
+          "analytics",
+          "view",
+          "model",
+          "the",
+          "tile",
+          "receives",
+          "what",
+          "it",
+          "draws",
+          "and",
+          "computes",
+          "nothing",
+          "about",
+          "where",
+          "it",
+          "came",
+          "from",
+          "the",
+          "fetch",
+          "belongs",
+          "to",
+          "dashboard",
+          "spec",
+          "which",
+          "owns"
+        ],
+        "values": {
+          "en": "Use when reasoning about widget — Every widget here is over an analytics view-model. The tile receives what it draws and computes nothing about where it came from — the fetch belongs to dashboard/spec, which owns…"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "section",
+    "path": "widget/section",
+    "translations": [
+      {
+        "key": "name",
+        "source": "section",
+        "uuid": "6f671fef-1b41-88c8-a49a-cf59a7f299c5",
+        "words": [
+          "section"
+        ],
+        "values": {
+          "en": "section"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about section — content-addressed the widget tree and found the same 48-node body **three times in ** and **three times in ** — a heading, a mapped list of account rows, and a total.",
+        "uuid": "1f3241a7-02a7-8bab-b4c4-957bee80282b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "section",
+          "content",
+          "addressed",
+          "the",
+          "widget",
+          "tree",
+          "and",
+          "found",
+          "the",
+          "same",
+          "node",
+          "body",
+          "three",
+          "times",
+          "in",
+          "and",
+          "three",
+          "times",
+          "in",
+          "a",
+          "heading",
+          "a",
+          "mapped",
+          "list",
+          "of",
+          "account",
+          "rows",
+          "and",
+          "a",
+          "total"
+        ],
+        "values": {
+          "en": "Use when reasoning about section — content-addressed the widget tree and found the same 48-node body **three times in ** and **three times in ** — a heading, a mapped list of account rows, and a total."
         }
       }
     ]
@@ -211034,4 +211270,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3608
+export const TRANSLATIONS_COUNT = 3612

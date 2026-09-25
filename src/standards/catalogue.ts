@@ -1503,8 +1503,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Council Regulation (EU) No 904/2010 of 7 October 2010 on administrative cooperation and combating fraud in the field of value added tax (recast) — VIES legal basis",
     "uuid": "3267c8d2-6989-82f8-bea6-c621b7deed7c",
     "color": "hsl(303 80% 56%)",
-    "count": 2,
+    "count": 3,
     "modules": [
+      {
+        "path": "src/solvent/index.ts",
+        "section": "Annex VII"
+      },
       {
         "path": "src/website/marketing-skills.ts",
         "section": ""
@@ -9953,7 +9957,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Web Content Accessibility Guidelines",
     "uuid": "852e7032-f08c-8685-802a-ea7d1e0db109",
     "color": "hsl(254 62% 40%)",
-    "count": 29,
+    "count": 30,
     "modules": [
       {
         "path": "src/agents/registered/design.agent.ts",

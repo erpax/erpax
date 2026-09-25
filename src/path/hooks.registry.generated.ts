@@ -324,6 +324,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "confirm/push",
   "confirm/uuid",
   "conformal",
+  "conjecture",
   "connections",
   "consciousness",
   "consent",
@@ -1287,6 +1288,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "skin",
   "social/graph",
   "society",
+  "solvent",
   "sparsity",
   "spec",
   "spec/generator",
@@ -1516,7 +1518,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1509 as const
+export const ATOM_LEDGER_PATH_COUNT = 1511 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -2691,6 +2693,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "conformal": [
     "conformal"
+  ],
+  "conjecture": [
+    "conjecture"
   ],
   "connections": [
     "connections"
@@ -6259,6 +6264,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "society": [
     "society"
+  ],
+  "solvent": [
+    "solvent"
   ],
   "sparsity": [
     "sparsity"

@@ -2051,6 +2051,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "conformal"
   },
   {
+    "atom": "conjecture",
+    "name": "conjecture",
+    "description": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law.",
+    "path": "conjecture"
+  },
+  {
     "atom": "connections",
     "name": "connections",
     "description": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
@@ -8745,6 +8751,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "solve",
     "description": "Use when reasoning about solve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "solve"
+  },
+  {
+    "atom": "solvent",
+    "name": "solvent",
+    "description": "Use when reasoning about solvent — Zenodo record **10.5281/zenodo.22934883** analyses a \"Dry Cleaning Multimodal Algebra Framework\". Its own §3 names the limitation and its §4 names the cure:",
+    "path": "solvent"
   },
   {
     "atom": "solver",
@@ -21429,6 +21441,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "wholesale",
     "description": "Use when reasoning about wholesale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "wholesale"
+  },
+  {
+    "atom": "widget",
+    "name": "widget",
+    "description": "Use when reasoning about widget — Every widget here is over an analytics view-model. The tile receives what it draws and computes nothing about where it came from — the fetch belongs to dashboard/spec, which owns…",
+    "path": "widget"
+  },
+  {
+    "atom": "section",
+    "name": "section",
+    "description": "Use when reasoning about section — content-addressed the widget tree and found the same 48-node body **three times in ** and **three times in ** — a heading, a mapped list of account rows, and a total.",
+    "path": "widget/section"
   },
   {
     "atom": "width",
