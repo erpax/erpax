@@ -2684,6 +2684,9 @@ src/skill/router/rating/index.ts:17: * @standard ISO/IEC 25010 §5.5 testability
 src/skill/router/subgraph.ts:20: * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
 src/skin/index.ts:24: * @standard largest organ ≈1.2–2.2 m²; stratum corneum barrier; epidermal turnover ~28 days
 src/social/graph/index.ts:10: * @standard W3C ActivityStreams 2.0 Follow/Accept reciprocity
+src/solvent/index.ts:10: * @standard EU 2010/75 Annex VII — solvent management plan: input = output + fugitive
+src/solvent/index.ts:11: * @standard CODATA 2018 — molar gas constant R = 8.314462618 J·mol⁻¹·K⁻¹ (exact)
+src/solvent/index.ts:9: * @standard Antoine (1888) — log₁₀ P = A − B/(T + C), the vapour-pressure correlation
 src/sparsity/index.ts:37: * @standard ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation
 src/spec/generator/audit.ts:11: * @standard ISO 19011:2018 §6.4 audit-evidence
 src/spec/generator/audit.ts:12: * @standard ISO/IEC 25023:2016 §8 quality-measurement-functionality-completeness

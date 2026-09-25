@@ -1,9 +1,11 @@
 /**
  * accounting/balance — all meetings resolve to one balance equation.
  *
- * partition: Σdebit − Σcredit = variance
- * entropy: Σgap − Σseal = netEb
- * fold: wordFold ⊗ digitFold → combined128 · interact64
+ * partition: Σdebit − Σcredit = 0        (identity — every posting carries a [[balance]] contra)
+ * purity:   variance = Σ[[liability]] + membership shortfall
+ * entropy:  Σgap − Σseal = netEb
+ * pack:     wordHalf ‖ digitHalf = combined128   (concatenation on the double torus)
+ * interact: wordHalf ∧ digitHalf ∧ mask = interact64   (AND on the ring)
  *
  * @see ../../quantum/fold — ../../readme/compute — ../../balance
  */
@@ -14,11 +16,28 @@ import {
   wordFold,
   digitFold,
 } from '@/quantum/fold'
-import { architectureMask } from '@/quantum/word'
-import { exactMax } from '@/algebra'
+import { architectureBits, architectureMask } from '@/quantum/word'
+import { exactMax, exactRound } from '@/algebra'
 
+/**
+ * Every equation this section prints, each as the code evaluates it.
+ *
+ * `Σdebit − Σcredit = 0` was already right, and it is an IDENTITY, not a finding: every
+ * posting carries a `[[balance]]` contra leg, so the sums conserve whatever state the
+ * atom is in. What was missing is the formula for the number printed beside them —
+ * `variance` is the **liability-gap mass** (`applyFolderGravityGate`), plus a membership
+ * shortfall, and nothing said so. A table reading `debit 9 · credit 9 · variance 1` is
+ * therefore consistent, and it looks like an arithmetic error until the second formula
+ * is on the page. A leg posted to `[[liability]]` is answered by a `[[balance]]` debit,
+ * which is exactly why the difference cannot see it.
+ *
+ * `⊗` also did two jobs. The 128-bit word is a CONCATENATION (`combineArchitectures`
+ * packs the halves side by side) while `interact64` is a bitwise AND masked to the ring
+ * — and the AND had no formula printed at all, only a number. `‖` is the pack and `∧`
+ * is the interaction, so the symbol no longer decides which of the two a reader means.
+ */
 export const BALANCE_EQUATION =
-  'Σdebit − Σcredit = 0 · Σgap − Σseal = netEb · wordHalf ⊗ digitHalf = combined128'
+  'Σdebit − Σcredit = 0 · variance = Σ[[liability]] + membership · Σgap − Σseal = netEb · wordHalf ‖ digitHalf = combined128 · wordHalf ∧ digitHalf ∧ mask = interact64'
 
 export interface BalanceMeeting {
   readonly partitionVariance: number
@@ -31,6 +50,14 @@ export interface BalanceMeeting {
   readonly digitHalf: bigint
   readonly combined128: bigint
   readonly interact: bigint
+  /**
+   * Σ of the `[[liability]]` credit legs — what `variance` is made of.
+   *
+   * Summed here rather than through `readme/compute`'s `folderLiabilityGap`: that module
+   * value-imports this one, so reaching back for the helper would close a runtime import
+   * loop ([[rules]]/cycle). Two lines against an initialisation-order accident.
+   */
+  readonly liabilityMass: number
   readonly sealed: boolean
 }
 
@@ -167,9 +194,54 @@ export function balanceMeetingFromModel(model: FolderReadmeModel): BalanceMeetin
     digitHalf: fold.digitHalf,
     combined128: fold.combined128,
     interact: fold.interact64,
+    liabilityMass: model.statement.credits
+      .filter((c) => c.account.includes('[[liability]]'))
+      .reduce((sum, c) => sum + c.amount, 0),
     sealed: model.sealed,
   }
 }
+
+/** One stated equation and whether the numbers beside it satisfy it. */
+export interface EquationCheck {
+  readonly stated: string
+  readonly holds: boolean
+}
+
+/**
+ * Check the printed equation against the printed numbers.
+ *
+ * `BALANCE_EQUATION` is emitted above the table it describes, so the two can disagree
+ * — and did, for every unbalanced atom, because the string asserted `= 0`. This makes
+ * the sentence refutable: change one side of any meeting and a leg goes red.
+ *
+ * `variance` is the statement's own figure rather than `Σdebit − Σcredit`: a leg posted
+ * on the wrong side leaves both sums equal while the atom is out of balance, which is
+ * exactly the case that produces `debit 9 · credit 9 · variance 3`. So the partition
+ * leg checks the IMPLICATION the equation really carries — variance 0 iff balanced —
+ * not a subtraction that cannot see a side error.
+ */
+export function balanceEquationHolds(m: BalanceMeeting): readonly EquationCheck[] {
+  const mask = architectureMask()
+  const bits = BigInt(architectureBits())
+  return [
+    { stated: 'Σdebit − Σcredit = 0', holds: m.totalDebits - m.totalCredits === 0 },
+    {
+      // The shortfall is ≥ 0 and invisible from here, so the checkable half is the
+      // inequality plus the balanced ⇒ zero implication. Equality holds iff membership
+      // is pure, which only the model that produced the statement knows.
+      stated: 'variance = Σ[[liability]] + membership',
+      holds: m.partitionVariance >= m.liabilityMass && (!m.sealed || m.partitionVariance === 0),
+    },
+    { stated: 'Σgap − Σseal = netEb', holds: roundTo3(m.gapEb - m.sealEb) === roundTo3(m.netEb) },
+    {
+      stated: 'wordHalf ‖ digitHalf = combined128',
+      holds: m.combined128 === (((m.wordHalf & mask) << bits) | (m.digitHalf & mask)),
+    },
+    { stated: 'wordHalf ∧ digitHalf ∧ mask = interact64', holds: m.interact === ((m.wordHalf & m.digitHalf) & mask) },
+  ]
+}
+
+const roundTo3 = (n: number): number => exactRound(n * 1000) / 1000
 
 export function balanceMeetingOf(model: FolderReadmeModel): BalanceMeeting
 export function balanceMeetingOf(
@@ -196,7 +268,8 @@ export function renderBalanceMeetingPivotSection(model: FolderReadmeModel): stri
     '',
     '| meeting | debit / word | credit / digit | balance |',
     '| ------- | ------------ | -------------- | ------- |',
-    `| partition | \`${m.totalDebits}\` | \`${m.totalCredits}\` | variance \`${m.partitionVariance}\` |`,
+    `| partition | \`${m.totalDebits}\` | \`${m.totalCredits}\` | Σdebit − Σcredit \`${m.totalDebits - m.totalCredits}\` |`,
+    `| purity | [[liability]] \`${m.liabilityMass}\` | membership \`${m.partitionVariance - m.liabilityMass}\` | variance \`${m.partitionVariance}\` |`,
     `| entropy | gap \`${m.gapEb}\` | seal \`${m.sealEb}\` | net \`${m.netEb}\` eb |`,
     `| double fold | word \`${hexTrunc(m.wordHalf)}\` | digit \`${hexTrunc(m.digitHalf)}\` | combined \`${hexTrunc(m.combined128)}\` |`,
     '',
