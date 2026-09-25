@@ -3,18 +3,18 @@ name: notary
 description: Use when reasoning about notary — A notary.
 atomPath: "vocabulary/notary"
 coordinate: "vocabulary/notary · 7/descent · 8e5868a0"
-contentUuid: "f7ae073b-97b5-5e0b-8b0a-05c380d293b0"
-diamondUuid: "b36c582a-608b-8ede-b267-6ef4629e27f5"
+contentUuid: "a2d5e712-9dc1-5617-a900-0ad5ce3308e3"
+diamondUuid: "8abd83d1-cc86-862e-a7a8-763b5d78d05a"
 uuid: "8e5868a0-f399-85b9-b004-2f1d69d88a0d"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 44
+  bondDegree: 47
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7022c85b-f185-8111-b2a2-8c747f97b8ca"
+  computationUuid: "3839e0de-5c69-834f-9b67-0300cccfc926"
   stages:
     - stage: path
       stageUuid: "f401087c-07d0-88c4-bddb-edb5f25b869a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6bf2f23d-d22d-8419-a021-1941f4885440"
     - stage: horo
-      stageUuid: "99f0335c-e9e9-81f7-a92a-1e46b89f9677"
+      stageUuid: "64a67825-55f7-8f51-99ce-f1ecb7a470ad"
     - stage: seal
       stageUuid: "2147bdd1-bd20-8276-a3bb-5800a4a6c36a"
     - stage: uuid
-      stageUuid: "8653bcf9-ea17-8fc3-b776-681f058f6c1f"
+      stageUuid: "fdbaa0d0-4d1a-82ff-a693-4eca5ee4afc1"
 version: 2
 ---
 # notary

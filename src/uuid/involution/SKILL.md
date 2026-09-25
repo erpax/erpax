@@ -1,3 +1,37 @@
+---
+name: involution
+description: "Use when reasoning about involution — The Clay deposit's structure is a universal self-inverse involution, sealed over 25 balances on the mirror : applied twice every balance returns, every balance moves except one…"
+atomPath: "uuid/involution"
+coordinate: "uuid/involution · 8/crest · 5b22b312"
+contentUuid: "e2b494f1-b147-5690-b68c-f3ed2fdab420"
+diamondUuid: "fdf9ce20-d09e-8f1f-8b21-1b162c0548a3"
+uuid: "5b22b312-30b0-81c1-8440-afde8f242314"
+horo: 8
+typography:
+  partition: uuid
+  bondDegree: 15
+standards:
+  - RFC 9562 §4.1 §5.8 — the version and variant bits a uuid must keep
+bindings: []
+signatures:
+  computationUuid: "68aeba3f-59a2-8839-89b0-c685578592b6"
+  stages:
+    - stage: path
+      stageUuid: "bfde66d9-bcbf-85c0-b914-90df04242a15"
+    - stage: trinity
+      stageUuid: "cd82dd13-f532-8aa0-b35d-8aab8cc954b1"
+    - stage: boundary
+      stageUuid: "2bbf403e-da67-82e8-a874-22dfea7302b9"
+    - stage: links
+      stageUuid: "42036d9b-2ff2-8c91-ad6f-34a2c0cebf8d"
+    - stage: horo
+      stageUuid: "b0aa741e-9e35-804f-93b2-9ad1d12085eb"
+    - stage: seal
+      stageUuid: "41e36fd8-bda7-8103-8770-e9c0a54061de"
+    - stage: uuid
+      stageUuid: "b6bc0349-469d-8aee-a3b5-58564f80171b"
+version: 2
+---
 # uuid/involution — σ² = id, and why that buys privacy but not secrecy
 
 The Clay deposit's structure is a universal self-inverse involution, sealed over 25 balances

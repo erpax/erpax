@@ -5495,7 +5495,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
     "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
     "color": "hsl(157 78% 44%)",
-    "count": 98,
+    "count": 97,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -5566,10 +5566,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/beyond/pqc/SKILL.md",
-        "section": ""
-      },
-      {
         "path": "src/beyond/pqc/index.ts",
         "section": ""
       },
@@ -5592,6 +5588,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/cost/bits/index.ts",
         "section": "§5.1"
+      },
+      {
+        "path": "src/entropy/source/index.ts",
+        "section": ""
       }
     ]
   },
@@ -7495,7 +7495,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 158,
+    "count": 159,
     "modules": [
       {
         "path": "src/agent/SKILL.md",

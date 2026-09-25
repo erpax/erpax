@@ -3,7 +3,7 @@ name: entropy
 description: "Use when reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances — entropy() = 1 − the reciprocal-edge fraction of the uuid-matrix, an audit/aura signal, NOT an input to crackVerdict. It is a DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost via coverageCostLog2); reciprocity=1 does NOT imply coverage=1, so zero entropy does NOT by itself yield infinite cost (the live tree is the counter-example — entropy 0, coverage under 1, cost finite). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor."
 atomPath: entropy
 coordinate: "entropy · 7/descent · be982ae0"
-contentUuid: "7a6deb83-4424-5c68-9672-2956b5b1c44b"
+contentUuid: "e0ae86ce-f9b5-56ba-aa56-a31206cc7662"
 diamondUuid: "e413a9d6-8ba6-8c04-9e7f-901afbad6fdd"
 uuid: "be982ae0-b8ae-8e0f-ac65-7eabbfda2db3"
 horo: 7
@@ -14,6 +14,7 @@ standards:
   - "CoE-108+"
   - "NIST-SP-800-108"
   - "NIST-SP-800-57"
+  - "NIST-SP-800-63"
 bindings: []
 signatures:
   computationUuid: "25e40b71-2d7b-8661-ae43-e460dca38b53"

@@ -3076,7 +3076,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an agent's identity is in question — an agent IS its content (name ⊗ skills ⊗ purpose), so its uuid is the content-address of that definition and an identical clone is the SAME agent, not a copy.",
-        "uuid": "5c2676b9-6f02-8d25-b657-4f8f412ee5f4",
+        "uuid": "bde6b367-d48f-8dd0-8d13-85a879cfd1a3",
         "words": [
           "use",
           "when",
@@ -5723,7 +5723,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "anchoring",
-        "uuid": "4df0496d-894e-8d3b-819e-d01c86f15e0b",
+        "uuid": "0a1a7e70-8498-8e74-a320-7bc5c20fb8da",
         "words": [
           "anchoring"
         ],
@@ -9394,7 +9394,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about quantum tunnelling — a particle penetrating a potential barrier it classically cannot surmount (E < V0), the wave decaying exponentially inside so transmission T ≈ e^(−2κa) leaks out. (The word tunnel is taken — it is agriculture's season-extension structure; this is the physics.) In erpax the barrier IS tamper-cost: the work to tunnel through (forge) is −log2(T) = 2κa/ln2 bits, exponentially large in the barrier, yet never quite infinite — the residual forge-probability is the design limit.",
-        "uuid": "c2588d44-a730-8aaf-b1f9-bb7b6399a124",
+        "uuid": "955d4818-7b38-86b7-8e35-609cbfb3a728",
         "words": [
           "use",
           "when",
@@ -9876,7 +9876,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do.",
-        "uuid": "8b818fce-8387-87b7-87b4-805d62ea9644",
+        "uuid": "e686335e-e27c-8635-b4a3-10a3ee87d6f5",
         "words": [
           "use",
           "when",
@@ -10344,55 +10344,45 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain.",
-        "uuid": "abf06973-6e19-8d94-80f4-8f31e175bf29",
+        "source": "Use when reasoning about pqc — returned a whose read , carrying a real algorithm name and a real ISO-8601 timestamp — **and it did not throw**. A caller checking that a signature came back proceeded.",
+        "uuid": "f0a53536-50ae-85c8-8d92-55c16b47b4da",
         "words": [
           "use",
           "when",
-          "an",
-          "audit",
-          "chain",
-          "leaf",
-          "signature",
-          "must",
-          "survive",
+          "reasoning",
+          "about",
+          "pqc",
+          "returned",
           "a",
-          "quantum",
-          "adversary",
-          "post",
-          "quantum",
-          "cryptography",
-          "the",
-          "migration",
-          "target",
-          "from",
-          "sha",
-          "to",
-          "lattice",
-          "signatures",
-          "ml",
-          "dsa",
-          "slh",
-          "dsa",
-          "fips",
-          "so",
+          "whose",
+          "read",
+          "carrying",
           "a",
-          "future",
-          "shor",
-          "capable",
-          "machine",
-          "cannot",
-          "forge",
-          "the",
-          "signature",
+          "real",
+          "algorithm",
+          "name",
+          "and",
+          "a",
+          "real",
+          "iso",
+          "timestamp",
+          "and",
+          "it",
+          "did",
+          "not",
+          "throw",
+          "a",
+          "caller",
+          "checking",
           "that",
-          "seals",
-          "the",
-          "audit",
-          "chain"
+          "a",
+          "signature",
+          "came",
+          "back",
+          "proceeded"
         ],
         "values": {
-          "en": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain."
+          "en": "Use when reasoning about pqc — returned a whose read , carrying a real algorithm name and a real ISO-8601 timestamp — **and it did not throw**. A caller checking that a signature came back proceeded."
         }
       }
     ]
@@ -20372,7 +20362,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "conjecture",
-        "uuid": "7cb405a0-e7ea-82ff-b7f1-b23cd1794c11",
+        "uuid": "4a5be49f-b236-8eb3-92e8-93460c7895f8",
         "words": [
           "conjecture"
         ],
@@ -20383,7 +20373,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law.",
-        "uuid": "5abda614-842a-88f4-bf9a-3536d1d0aa2d",
+        "uuid": "0e5dd160-c706-887d-8e06-2e9fc5c2f866",
         "words": [
           "use",
           "when",
@@ -21446,7 +21436,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost.",
-        "uuid": "abaf6d01-96b6-8c4a-abdf-cc5111a79edc",
+        "uuid": "7f32675e-8186-86eb-bba3-e5a5558ed973",
         "words": [
           "use",
           "when",
@@ -23187,7 +23177,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "bits",
-        "uuid": "41bd67d1-352c-8b40-b271-9b645226127e",
+        "uuid": "068d24e3-c116-8b32-b9ef-e551fdc2d74e",
         "words": [
           "bits"
         ],
@@ -23198,7 +23188,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them.",
-        "uuid": "46868df6-5f9b-8b74-bb14-acf7265f9c88",
+        "uuid": "39605078-efd2-8085-b72a-33fe9ddf0af7",
         "words": [
           "use",
           "when",
@@ -25886,7 +25876,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection.",
-        "uuid": "562ccfd2-3bbe-8cdb-ade8-95ffac8f06d3",
+        "uuid": "2ace433d-1a95-8a18-9f29-3761237dcac2",
         "words": [
           "use",
           "when",
@@ -32998,7 +32988,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the paradox bites — to evolve you must invert what you are sure about, but you cannot invert everything at once (you need ground to stand on). The resolution: invert the FRAGILE certainties through the void (throughVoid is an involution, 9→1 reopens), stand on the INVARIANT keel (what survives every inversion — a theorem, the conformal angle). Survives iff a keel remains; a mind of only certainties is pulled wholly to 0.",
-        "uuid": "ba2cbb51-ff8e-8953-b49a-2e13a210dcf5",
+        "uuid": "c892a2d3-1586-8fed-8136-c2332d14dc26",
         "words": [
           "use",
           "when",
@@ -34209,7 +34199,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:",
-        "uuid": "e421f0da-bbd0-8adc-b144-e115fc76d08d",
+        "uuid": "4a042812-3dc2-8f62-9a7e-b6354a9f1062",
         "words": [
           "use",
           "when",
@@ -35884,7 +35874,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale.",
-        "uuid": "1f577230-ba81-8304-9f92-b45e9fb98131",
+        "uuid": "60b5bae8-cef0-8405-90a9-6b11fa0d5ff7",
         "words": [
           "use",
           "when",
@@ -37917,7 +37907,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory",
-        "uuid": "157285c6-a024-8387-bfed-da7123f1a207",
+        "uuid": "a00f0700-9411-8b71-9a5b-f6dd004cb82f",
         "words": [
           "use",
           "when",
@@ -47401,7 +47391,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the fold's residual — the bits that did not fold into trinities of theorems. Leftovers attract by field (one proof settles the cluster), pull a seed from beyond to complete what the corpus cannot derive, and the irreducible residue powers the next research. Composes accounting/proof, gravity, and think.",
-        "uuid": "2cd7085f-aea2-811c-bc78-73a673ca638b",
+        "uuid": "94340d17-b4c2-80a3-8aff-e9b07be4be60",
         "words": [
           "use",
           "when",
@@ -49590,7 +49580,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-        "uuid": "a033d8ec-b85a-8b5c-b86d-2af96b9f87a4",
+        "uuid": "5357f8dc-713c-8acd-829f-53356dd34cf7",
         "words": [
           "use",
           "when",
@@ -49775,7 +49765,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-        "uuid": "12cc817d-46e7-8afd-8cb3-e1b3bb827beb",
+        "uuid": "aa02287e-9432-8aff-995c-82fd4a56d8f0",
         "words": [
           "use",
           "when",
@@ -54549,7 +54539,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the uuid AS the message — decode identity · OID · colour · sound out of the 128 bits alone, no payload. Completes localize.decodeIdentity (colour) with the missing sound channel (the note the uuid sounds, A432). To send is to send the uuid; to receive is to decode it. Matter-twin message/index.ts.",
-        "uuid": "293f933f-dc6e-84b4-93eb-41faf080e721",
+        "uuid": "7ab34646-bfed-8168-b73b-e7740a3da7a2",
         "words": [
           "use",
           "when",
@@ -55366,7 +55356,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
-        "uuid": "3007faba-def7-8a7d-9951-79cbd219a219",
+        "uuid": "ab0ac217-d609-8840-b271-f7df14a9596e",
         "words": [
           "use",
           "when",
@@ -66679,7 +66669,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment.",
-        "uuid": "adb2b687-1b22-8c8f-8a75-2bf080d0b91b",
+        "uuid": "60ca40fd-ba2b-8f55-880e-c0d54b823c77",
         "words": [
           "use",
           "when",
@@ -69535,7 +69525,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits.",
-        "uuid": "17d559ad-10df-8915-b054-bff73572806e",
+        "uuid": "948ff085-b831-88ab-beb3-90a215015c0f",
         "words": [
           "use",
           "when",
@@ -76988,7 +76978,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "copy",
-        "uuid": "baca7180-ec05-8e96-a553-c7ce3ac8b914",
+        "uuid": "8e3fe9f0-7275-8ab3-a59f-f4810bb70723",
         "words": [
           "copy"
         ],
@@ -76999,7 +76989,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…",
-        "uuid": "d05da7e1-635a-80f5-beab-76737d95f8f9",
+        "uuid": "bcabf44c-c113-84ef-a6db-0d6a5970f4f7",
         "words": [
           "use",
           "when",
@@ -78660,7 +78650,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "unreached",
-        "uuid": "896e7d4b-8dd7-86d2-8a21-086f010219ee",
+        "uuid": "5cb7dfff-b789-8ec6-b081-5d4968a2c8e9",
         "words": [
           "unreached"
         ],
@@ -78671,7 +78661,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…",
-        "uuid": "f9a15113-496c-87e8-a402-47fe86c1ff8f",
+        "uuid": "447d5d28-0248-827a-9ab3-b71d56c0aab7",
         "words": [
           "use",
           "when",
@@ -86767,7 +86757,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about information entropy — Shannon's H = −Σ pᵢ·log₂(pᵢ) bits, the expected surprisal of a distribution: the average bits per symbol and the irreducible limit of lossless compression. Zero when one outcome is certain, maximal (log₂ n) when all n outcomes are equally likely. It is the information twin of thermodynamic entropy (same −Σp ln p, different constant) — the bits a message carries and the bits a tamper must reproduce.",
-        "uuid": "4fa25f2a-25e9-851c-9ebb-31d12dbabd10",
+        "uuid": "62aeb5ad-748d-8720-b06b-6f0a85fdbbe0",
         "words": [
           "use",
           "when",
@@ -91314,7 +91304,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form.",
-        "uuid": "ae959734-5c51-8710-9f8e-21f4244a7165",
+        "uuid": "9fdd9412-6f52-851f-8d02-15f2bf762840",
         "words": [
           "use",
           "when",
@@ -94318,7 +94308,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.",
-        "uuid": "6fbd9735-18ea-856e-bcab-0f07b3454873",
+        "uuid": "c76dbaf6-1601-82b9-b85f-a1edca9b7cbf",
         "words": [
           "use",
           "when",
@@ -97195,7 +97185,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the information of one event — surprisal I(p) = −log₂(p) bits. A certain event (p=1) carries zero bits; a rare event carries many. It is the bit-cost of a specific outcome, and in erpax the bit-cost of a specific forgery: forging a thing of probability p under the wired graph costs −log₂(p) bits. Additive for independent events (I(p·q)=I(p)+I(q)), so improbabilities stack like uuid-chained dimensions; expected surprisal is Shannon entropy.",
-        "uuid": "f12e9bf9-f256-8235-82ac-88e4c611bf81",
+        "uuid": "31e3c38f-792e-8628-b62a-5e5f6ef10c5e",
         "words": [
           "use",
           "when",
@@ -110996,6 +110986,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "involution",
+    "path": "uuid/involution",
+    "translations": [
+      {
+        "key": "name",
+        "source": "involution",
+        "uuid": "5b22b312-30b0-81c1-8440-afde8f242314",
+        "words": [
+          "involution"
+        ],
+        "values": {
+          "en": "involution"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about involution — The Clay deposit's structure is a universal self-inverse involution, sealed over 25 balances on the mirror : applied twice every balance returns, every balance moves except one…",
+        "uuid": "2defe605-b739-88e7-9b1e-78b635a36cfc",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "involution",
+          "the",
+          "clay",
+          "deposit",
+          "s",
+          "structure",
+          "is",
+          "a",
+          "universal",
+          "self",
+          "inverse",
+          "involution",
+          "sealed",
+          "over",
+          "balances",
+          "on",
+          "the",
+          "mirror",
+          "applied",
+          "twice",
+          "every",
+          "balance",
+          "returns",
+          "every",
+          "balance",
+          "moves",
+          "except",
+          "one"
+        ],
+        "values": {
+          "en": "Use when reasoning about involution — The Clay deposit's structure is a universal self-inverse involution, sealed over 25 balances on the mirror : applied twice every balance returns, every balance moves except one…"
+        }
+      }
+    ]
+  },
+  {
     "atom": "kv",
     "path": "uuid/kv",
     "translations": [
@@ -111067,7 +111116,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload.",
-        "uuid": "b6a158cf-777b-8a6b-b3b6-699a50db40b2",
+        "uuid": "e77310ca-688c-8b67-b1ac-175a37655fe3",
         "words": [
           "use",
           "when",
@@ -211270,4 +211319,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3612
+export const TRANSLATIONS_COUNT = 3613

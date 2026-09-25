@@ -2,10 +2,10 @@
 name: bits
 description: "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them."
 atomPath: "cost/bits"
-coordinate: "cost/bits · 4/weave · 41bd67d1"
-contentUuid: "91ae98fe-2cdf-5a9b-8766-7a66f24fa8f8"
-diamondUuid: "87edcd2a-31ad-84cb-bf81-d0a429e92e89"
-uuid: "41bd67d1-352c-8b40-b271-9b645226127e"
+coordinate: "cost/bits · 4/weave · 068d24e3"
+contentUuid: "58cb96eb-5366-52c4-9cfa-2a14bf6ac575"
+diamondUuid: "0e5b7be6-fb03-8397-b304-b3a0d56e666f"
+uuid: "068d24e3-c116-8b32-b9ef-e551fdc2d74e"
 horo: 4
 typography:
   partition: cost
@@ -21,7 +21,7 @@ standards:
   - RFC 9562 §8 — UUID security considerations
 bindings: []
 signatures:
-  computationUuid: "62407255-0403-85fd-9f23-87034685fd0c"
+  computationUuid: "563146dd-7c39-84c3-a05b-9c98ee1dd10a"
   stages:
     - stage: path
       stageUuid: "e71086e7-e0ef-8f4e-90df-b3d90bf0253d"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "17502a13-7bc4-8bcd-a294-7637d939001d"
     - stage: links
-      stageUuid: "965aeec3-c113-8722-87a3-3b11c1ba2096"
+      stageUuid: "682afee9-4df5-8e7b-829b-ad9e9839c65a"
     - stage: horo
-      stageUuid: "b76d2459-e8b6-8fd1-a5e9-be835e3676fb"
+      stageUuid: "bb935e96-a488-8c48-bb2d-2dccd2b9ce57"
     - stage: seal
       stageUuid: "cc450af7-b06d-85b6-82e8-b36737aa6aea"
     - stage: uuid
-      stageUuid: "4ae2e448-d505-8ee7-b137-d4bb33e2f51e"
+      stageUuid: "2b1624cd-bb82-84e9-aec6-f31923532243"
 version: 2
 ---
 # cost/bits — the cost of attack, computed

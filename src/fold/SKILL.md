@@ -3,13 +3,13 @@ name: fold
 description: "Use when counting the folding — how the whole corpus collapses to one Merkle root and in how many folds; N atoms reach the root in ceil(log2 N) folds by N−1 merges (12 for the corpus), and the orthogonal digital-root fold collapses every count to its rodin digit."
 atomPath: fold
 coordinate: "fold · 5/round · 89264062"
-contentUuid: "1f01b9d9-8612-546d-8414-6bae74f5e3c7"
+contentUuid: "32de8b0d-d4ee-52ce-8813-1cfdae8514e2"
 diamondUuid: "77fcbd6d-db91-8f51-afd5-8b268d6e692e"
 uuid: "89264062-b949-83f0-93a6-947b6e01eb95"
 horo: 5
 typography:
   partition: fold
-  bondDegree: 89
+  bondDegree: 91
 standards:
   - "ceccec.psg.bg theorems — self-address (`concept.self.address`) · diamond-complete (`concept.diamond.complete`): folding excises duplication to zero remainder (the cancer cure)"
   - "the Merkle binary fold (depth ⌈log2 N⌉) · the base-10 digital root (the rodin reduction)"

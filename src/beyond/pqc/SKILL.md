@@ -1,3 +1,41 @@
+---
+name: pqc
+description: "Use when reasoning about pqc — returned a whose read , carrying a real algorithm name and a real ISO-8601 timestamp — **and it did not throw**. A caller checking that a signature came back proceeded."
+atomPath: "beyond/pqc"
+coordinate: "beyond/pqc · 2/share · 969e564a"
+contentUuid: "a4c30afd-10ed-5d69-b07f-0279729442c6"
+diamondUuid: "a5615bca-ae11-8aac-b546-a28bde3e6ef4"
+uuid: "969e564a-9fdb-8fbe-aad3-543043e7ab12"
+horo: 2
+typography:
+  partition: beyond
+  bondDegree: 8
+standards:
+  - "NIST FIPS 203 ML-KEM — Tables 2 and 3, values received verbatim"
+  - "NIST FIPS 203 §8 Table 2 (parameters) · Table 3 (sizes) · §7 (categories 1, 3, 5)"
+  - "NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)"
+  - "NIST SP 800-208 stateful-hash-based-signatures"
+  - "NIST-SP-800-63"
+bindings: []
+signatures:
+  computationUuid: "caee6bee-2a77-8680-a6c1-bdf73b99418d"
+  stages:
+    - stage: path
+      stageUuid: "f85f7d6a-4941-80ff-a861-f7d878cf2dcf"
+    - stage: trinity
+      stageUuid: "60eccb3c-981f-8c17-9e68-68b0055fc27d"
+    - stage: boundary
+      stageUuid: "b43597e7-9b82-8ed5-b9db-ce67d8e04c59"
+    - stage: links
+      stageUuid: "ca5016f1-9691-8a25-ab2f-067d30cdc33b"
+    - stage: horo
+      stageUuid: "3c51fabf-7998-8d01-8d9c-6414ee3950d2"
+    - stage: seal
+      stageUuid: "71ae10f2-0dca-8d23-b6e5-b6abc8dfca03"
+    - stage: uuid
+      stageUuid: "229df3dc-903a-8870-b2d0-1934d6a14b15"
+version: 2
+---
 # beyond/pqc — it returned a signature it had not made
 
 `signPqc` returned a `PqcSignature` whose `signatureB64` read

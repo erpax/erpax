@@ -3,13 +3,13 @@ name: fold
 description: "Use when folding any address surface to the one canonical atom path — pure string work, with none of the 4.2 MB corpus matrix its parent barrel loads for the ring walk."
 atomPath: "path/fold"
 coordinate: "path/fold · 8/crest · 16fd0204"
-contentUuid: "4a29a34c-c987-5095-b09d-17312de8cf6b"
+contentUuid: "62728e5e-8032-5c68-a954-c6f4cac9d50f"
 diamondUuid: "2cb9401c-842f-87c5-b6af-2c542b803f53"
 uuid: "16fd0204-9590-8945-8b33-2c6c24f9db99"
 horo: 8
 typography:
   partition: path
-  bondDegree: 89
+  bondDegree: 91
 standards: []
 bindings: []
 signatures:

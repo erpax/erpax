@@ -3,13 +3,13 @@ name: pqc
 description: "Use when reasoning about pqc — NIST post-quantum cryptography (Kyber-768 + SPHINCS+)"
 atomPath: pqc
 coordinate: "pqc · 1/base · c4aa8ed3"
-contentUuid: "c28fd13f-5267-5520-9d4d-0205c5200078"
+contentUuid: "7ef177b8-ab17-56ac-b53b-0a1e685eefcd"
 diamondUuid: "4ccf6c66-7667-89a1-a26f-6039159b981b"
 uuid: "c4aa8ed3-446c-82ea-8a03-b6b049ab5555"
 horo: 1
 typography:
   partition: pqc
-  bondDegree: 10
+  bondDegree: 8
 standards: []
 bindings: []
 signatures:

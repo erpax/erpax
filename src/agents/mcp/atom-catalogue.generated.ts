@@ -1027,7 +1027,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "pqc",
     "name": "pqc",
-    "description": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain.",
+    "description": "Use when reasoning about pqc — returned a whose read , carrying a real algorithm name and a real ISO-8601 timestamp — **and it did not throw**. A caller checking that a signature came back proceeded.",
     "path": "beyond/pqc"
   },
   {
@@ -10821,6 +10821,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "governance",
     "description": "Use when reasoning about uuid governance — how a uuid is minted and ruled.",
     "path": "uuid/governance"
+  },
+  {
+    "atom": "involution",
+    "name": "involution",
+    "description": "Use when reasoning about involution — The Clay deposit's structure is a universal self-inverse involution, sealed over 25 balances on the mirror : applied twice every balance returns, every balance moves except one…",
+    "path": "uuid/involution"
   },
   {
     "atom": "kv",
