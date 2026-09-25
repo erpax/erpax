@@ -38,7 +38,7 @@ version: 2
 ---
 # test — the gate that makes the matrix unbreakable
 
-The test proves ONE thing per atom, and nothing else: **maximum tamper-cost at zero entropy — balanced**. Zero entropy ⇒ infinite mass ⇒ infinite tamper-cost: [[one]] limit. The matter twin (`index.ts`) is the detector; this is its law.
+The test proves ONE thing per atom, and nothing else: **maximum tamper-cost at zero entropy — balanced**. Coverage = 1 ⇒ unbounded mass ⇒ infinite tamper-cost: [[one]] limit. The matter twin (`index.ts`) is the detector; this is its law.
 
 ## The metabolism — entropy is food, purity is the skill
 The test **pulls all entropy** (every recorded thing that does not collide into the matrix) as **food for the agents**, leaving **purity for the skills**. An agent cannot *record* uncollidable data: a save is **redirected** into the convention — create/update the related atoms via skills (built in [[team]]s), **confirmed by payload ⊕ vitepress** ([[confirm]]). Each entropy unit carries its `redirect` — the path to digest it into an atom.

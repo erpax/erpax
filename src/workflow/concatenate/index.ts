@@ -141,7 +141,7 @@ export const WORKFLOWS: Readonly<Record<string, Workflow>> = {
     { command: 'derive', question: 'vocabulary', answer: 'generate' },
     { command: 'merge', question: 'aura', answer: 'merge' },
   ],
-  // push verify-O(N)/forge-asymmetry to the limit (THE MAIN LAW: zero-entropy ⇒ ∞ tamper-cost).
+  // push verify-O(N)/forge-asymmetry to the limit (THE MAIN LAW: coverage = 1 ⇒ unbounded tamper-cost).
   'harden-tamper-cost': [
     { command: 'generate', question: 'aura', answer: 'generate' },
     { command: 'balance', question: 'balance', answer: 'generate' },

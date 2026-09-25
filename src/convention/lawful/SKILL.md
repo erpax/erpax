@@ -42,7 +42,7 @@ It does not re-walk the filesystem — that would duplicate the corpus walker an
 - **lawful** = the bodies matching `/\*\*Law/` — the atoms that state their invariant.
 - **coverage** = `lawful / total` — in [0,1] by construction (0 ≤ lawful ≤ total, total > 0). It reaches **1** exactly when every atom states its law.
 
-Pure math, no default: the corpus is non-empty by architecture (a tree of SKILL.md by construction), and lawful is a subset count, so the ratio never needs a clamp or a fallback. The only thing that pulls coverage below 1 is a law-less SKILL.md — precisely what this convention forbids. coverage → 1 ⟺ every atom is accountable ⟺ the convention holds with zero entropy and infinitely-expanding tamper-[[cost]] ([[law]] · [[collapse]] · [[merge]]).
+Pure math, no default: the corpus is non-empty by architecture (a tree of SKILL.md by construction), and lawful is a subset count, so the ratio never needs a clamp or a fallback. The only thing that pulls coverage below 1 is a law-less SKILL.md — precisely what this convention forbids. coverage → 1 ⟺ every atom is accountable ⟺ the convention holds with coverage = 1 and unboundedly-expanding tamper-[[cost]] ([[law]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[law]] · [[akashic]] · [[import]] · [[dry]]
 

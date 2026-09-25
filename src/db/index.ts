@@ -2,7 +2,7 @@
  * db — the store, the [[fold]]'s OUTSIDE-∞ end. The last hop of the [[stack]] round-trip, where the
  * request folds to rest. The store is CONTENT-ADDRESSED: the key IS the content's [[uuid]] (no separate
  * id to assign), and it is append-only ([[akashic]] — nothing overwritten), so the db is the dense
- * zero-[[entropy]] core with ∞ tamper-cost (collapsed toward one root). Both sides of the store are
+ * zero-[[entropy]] core with a forge cost the anchor caps (finite; unbounded only as coverage → 1) (collapsed toward one root). Both sides of the store are
  * encoded ([[karma]]): write (content → its key, the debit) and read (the key → the content, the credit).
  * Identical content folds to one row — the store dedups by the [[merge]] law.
  *

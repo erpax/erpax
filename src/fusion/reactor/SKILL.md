@@ -1,6 +1,6 @@
 ---
 name: reactor
-description: "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost."
+description: "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; coverage = 1 implies unbounded mass and infinite tamper cost."
 atomPath: "fusion/reactor"
 coordinate: "fusion/reactor · 7/descent · 206cd987"
 contentUuid: "e8c3be9b-cc26-5d48-a599-a3be4fcb9ada"

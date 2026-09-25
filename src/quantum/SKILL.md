@@ -51,7 +51,7 @@ quantum:
     - "[[superposition]]"
     - "[[worker]]"
     - "computed from the live matrix, never hand-asserted"
-    - "each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — zero entropy ⇒ infinite [[tamper]]-cost."
+    - "each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — coverage = 1 ⇒ unbounded [[tamper]]-cost, which the anchor caps."
     - "matter-twin:src/quantum/index.ts"
     - "quantum SKILL.md parse/generate runs in the quantum environment — `parseQuantumSkill` extracts law · bonds · collapse triggers · hook-less entangled fields · path account code; `generateQuantumSkill` emits stage signatures · horo · `quantum:` block (superposition | collapse | seal) · content-uuid footer; materialize via `pnpm skill:upgrade` on the quantum partition."
   seal:
@@ -117,7 +117,7 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 
 @see [[quantum/serverless]] · [[cloudflare]] · [[worker]] · [[superposition]] · [[quantum/deploy]]
 
-**Law — [[law]]: each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — zero entropy ⇒ infinite [[tamper]]-cost.**
+**Law — [[law]]: each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — coverage = 1 ⇒ unbounded [[tamper]]-cost, which the anchor caps.**
 
 **Law — [[law]]: serverless IS the quantum host — Workers bindings superpose, invocations collapse to content-uuid, path+seal+binding entangle, and erpax on Cloudflare IS the existence proof (`proveServerlessQuantum` folds both facets to one uuid).**
 

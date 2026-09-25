@@ -18,7 +18,7 @@
  * Pure math, no default: total > 0 by architecture (the corpus is a non-empty tree of SKILL.md by
  * construction) and lawful is a subset count (0 ≤ lawful ≤ total), so the ratio is in [0,1] with no
  * clamp and no fallback. coverage → 1 ⟺ every atom states its law ⟺ every atom is accountable ⟺
- * the convention holds with zero entropy and infinite tamper-[[cost]]. The only thing that pulls
+ * the convention holds with coverage = 1 and unbounded tamper-[[cost]]. The only thing that pulls
  * coverage below 1 is a law-less SKILL.md — precisely what this convention forbids.
  *
  *   tsx src/convention/lawful/index.ts    # prints total / lawful / coverage from the live tree

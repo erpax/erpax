@@ -11,7 +11,7 @@
  * SAME `norm` the aura speech gate uses — so this gate agrees with those, no false green).
  * We walk the corpus once, read each SKILL.md, extract its `[[links]]`, and count how many
  * resolve. coverage = resolving / total ∈ [0,1]; coverage = 1 ⟺ no dead links ⟺ aura-gap-0
- * on the link axis ⟺ zero directed-wiring entropy ⇒ infinite tamper-cost.
+ * on the link axis ⟺ directed-wiring coverage = 1 — one leg of the coverage that prices the forge, anchor-capped.
  *
  * No default, no fallback: the corpus is non-empty by architecture (thousands of SKILL.md,
  * each carrying `[[links]]` by the wiring convention), so `total > 0` and the ratio is pure

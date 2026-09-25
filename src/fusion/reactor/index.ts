@@ -3,7 +3,7 @@
  * composed over the three forces — [[gravity]] (force: mass curves the corpus inward),
  * [[entropy]] (fuel: the disorder the ledger burns), and the [[quantum]] laws (collapse /
  * quantization). Each fusion is a content-uuid collision; run over the whole corpus it folds
- * to ONE root. Zero entropy ⇒ infinite mass ⇒ infinite tamper cost (the [[singularity]]).
+ * to ONE root. Coverage = 1 ⇒ unbounded mass ⇒ infinite tamper cost (the [[singularity]]).
  *
  * Lives in its own atom by gravity-pull; [[fusion]] re-exports it (the act of fusing —
  * `fuse` / `foldToRoot` — stays in fusion; the READOUT is the reactor).

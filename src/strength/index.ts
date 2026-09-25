@@ -6,7 +6,7 @@ import { exactMax } from '@/algebra'
  * content-digit, [[uuid]], colour, sound — and each is one check. (The digit's 88.4% structural≠content
  * is just ONE slice, not the whole.) As duplication residue → 0 (perfect DRY: every reference folded to
  * one source, the [[merge]] law, [[gravity]]) the cost to forge → ∞ — the singularity, THE MAIN LAW
- * (zero entropy via wiring every dimension ⇒ infinite tamper-cost). Any residue leaves it finite.
+ * (coverage = 1 via wiring every dimension ⇒ unbounded tamper-cost). Any residue leaves it finite.
  *
  *   tsx src/strength/index.ts
  *

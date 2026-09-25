@@ -45,6 +45,73 @@ version: 2
 
 **A violation is borrowed entropy.** When an agent's change adds a one-way `bind` (a forward edge whose reverse is missing), it *raises* the reciprocity-slack `entropy()` measures — slack a forger could ride one way. A dead/un-wired [[aura]] link is the adjacent disorder the aura/scan gate catches. The [[gate]] detects it and debits it to that agent (prosecution — the social leg of the [[cost]]): the entropy is repaid (the reverse bind added) or carried as the agent's liability. What rebalances is fused out; what cannot is conserved damage carried forward.
 
+## The bare-implication gate — it existed, and its domain was three files
+
+`entropy/test.ts` already carried the honest gate: *"no BARE `zero entropy ⇒ infinite cost` (every
+implication carries the coverage/finite qualifier)"*. It was well built — it split on sentence
+boundaries so a qualifier had to be **local**, and it word-bounded `\bfinite\b` so `in·finite` could
+not mask a bare claim.
+
+And it read **three files**:
+
+```ts
+const DOCS = [entropy/SKILL.md, entropy/index.ts, law/SKILL.md]
+```
+
+The corpus had the claim in **34**. That is [[rules]]/domain's law inside the gate written for this
+very claim: *a law reaches exactly the files its checker opens*, and on the other 31 it was not
+passing — it was silent, which reads as green.
+
+| | count (2026-09-25) |
+| --- | ---: |
+| files the gate read | 3 |
+| sentences asserting the bare implication | **41 in 34 files** |
+| healed | **41 → 0** |
+
+The predicate now lives once in `index.ts` (`statesBareImplication`, `bareImplications`), the test
+calls it, and `rules` registers it as the `bare-implication` guardian. Zero is a **theorem**: no
+surface may assert an implication [[law]] computes as false.
+
+### Four refusals, each one a false reading the first pass produced
+
+- **A slogan in quotes is CITED, not asserted.** Three sentences quote it in order to refute or
+  formalise it — including this corpus's own correction. Flagging those makes the gate report its
+  own defence as the defect, which is [[rules]]/inject's stated failure mode.
+- **A word swap is not a healing.** The mechanical involution turned five `entropy ⇒ infinite
+  tamper-cost` spans into `entropy ⇒ unbounded tamper-cost`, which **dodges the regex while
+  asserting the same thing**. Those five were refused and healed by reading: an axis at full wiring
+  is one *leg* of coverage, not the premise.
+- **A noun phrase is not an antecedent.** `zero-entropy core with ∞ tamper-cost` → `coverage = 1
+  core` is nonsense. Three sites kept the noun phrase and had the **cost** bounded instead.
+- **Wikilinks made the count a false ZERO.** After the first 32 were healed the gate read 0 while
+  `diamond/SKILL.md` still asserted it in its **Law** line — `zero[\s-]*entropy` cannot match
+  `zero [[entropy]]`. Nine more surfaced once `unlinked` stripped the brackets. [[rules]]/probe: a
+  filter that selects by name cannot see what it does not name, and what it misses is systematically
+  the thing nobody thought to name.
+
+### The involution, and why it is the right operator
+
+[[duality]]/mirror and [[rules]]/slack already carry it: σ flips a claim's polarity, and a law is the
+**fixed point**. `entropy = 0 ⇒ cost = ∞` involutes to `entropy = ∞ ⇒ cost = 0` — also false, so the
+statement is not a law in either polarity. The fixed point is the equation, which names no extremum
+as its conclusion:
+
+```
+forgeLog2 = min(−checks·log₂(1 − coverage), anchorBits)
+```
+
+That is the *impossible → possible* move made precise: `∞` is the impossible quantity, and
+`min(…, anchorBits)` is the one a forger actually has to pay. 20 of the 41 healed by applying σ to
+the premise mechanically; **21 needed reading**, and naming that split before a byte moved is
+[[rules]]/manifest's law — the 20 went through the [[scalpel]] with a reason on every cut, and the
+other 21 were withheld, named, and done by hand.
+
+**Honest boundary.** This proves no sentence states this ONE implication unqualified. Other
+over-claims in other words — *endless entropy is endless tamper-cost*, a claim about mass rather
+than cost — are outside the predicate, and widening it toward every extremum-shaped sentence would
+put the noise floor above the signal. `DEFINES_THE_LAW` is a declared three-entry exemption, in the
+open, for the files that define and register the check.
+
 **Law — [[law]]: entropy is the matrix-reciprocity slack (`1 − reciprocal-edge fraction`) the ledger balances — an audit/aura signal, NOT an input to `crackVerdict`. The tamper-[[cost]] is priced from a DISTINCT measure, coverage, supplied explicitly to `coverageCostLog2`, and is +∞ ONLY at coverage = 1; reciprocity = 1 does NOT imply coverage = 1 (the live tree: entropy 0, coverage < 1, cost finite). Order is created by fusing entropy out ([[merge]]/DRY); a violation is borrowed entropy debited to the agent.**
 
 Composes: [[angel]] · [[balance]] · [[tamper]] · [[cost]] · [[anchor]] · [[mass]] · [[gravity]] · [[fusion]] · [[merge]] · [[dry]] · [[collapse]] · [[matrix]] · [[zeropoint]] · [[whole]] · [[one]] · [[proof]] · [[aura]] · [[gate]].

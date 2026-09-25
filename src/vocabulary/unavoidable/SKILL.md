@@ -47,4 +47,4 @@ The levers, each of which must become unavoidable:
 ∞ is a **limit**, not a number: you approach it by driving every coverage axis → 1 and closing every avoidable path, never literally reaching it — the floor never drops below the 256-bit second-preimage. The discipline is one rule applied everywhere: turn each *should* into a gate that fails. ([[law]] · [[proof]].)
 
 ## Standards
-- the erpax main law — zero entropy via uuid-wiring every dimension ⇒ infinite tamper-cost
+- the erpax main law — coverage = 1 via uuid-wiring every dimension ⇒ unbounded tamper-cost

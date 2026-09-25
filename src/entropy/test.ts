@@ -3,6 +3,11 @@ import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 import {
+  bareImplications,
+  assertNoBareImplication,
+  statesBareImplication,
+  unlinked,
+  DEFINES_THE_LAW,
   reciprocity,
   entropy,
   orphans,
@@ -66,38 +71,47 @@ describe('entropy⊕coverage are distinct — zero entropy does NOT imply infini
     expect(cost).not.toBe(Number.POSITIVE_INFINITY)
   })
 
-  // (b) DOC-HONESTY invariant: the prose must not re-assert the bare implication.
-  // Any sentence that states the implication ("zero entropy" / "entropy ⇒ …" near
-  // "infinite|∞ … cost/mass") MUST carry a disqualifying/qualifying token in the
-  // SAME sentence (NOT / does not / distinct / coverage=1 / finite / counter-
-  // example). A bare claim with no qualifier in its sentence fails — this catches
-  // a regression that re-grounds the reframe back to prose-as-code. Covers the two
-  // SKILL.md the lane reframed AND entropy's matter twin index.ts (same prose).
-  const here = dirname(fileURLToPath(import.meta.url))
-  const DOCS = [
-    resolve(here, 'SKILL.md'), // src/entropy/SKILL.md
-    resolve(here, 'index.ts'), // src/entropy/index.ts (matter twin — same claim)
-    resolve(here, '..', 'law', 'SKILL.md'), // src/law/SKILL.md
-  ]
-  // The implication: an entropy/reciprocity premise within reach of an
-  // "infinite|∞ … (cost|mass|work)" consequent — the very thing the reframe killed.
-  const IMPLICATION = /(zero[\s-]*entropy|reciprocity\s*=\s*1|entropy\s*(\(\))?\s*(===?|⇒|=>|→|implies)).{0,80}?(infinit|∞).{0,40}?(cost|mass|work)/i
-  // Tokens that mark the sentence as a QUALIFIED / NEGATED statement (honest framing).
-  // NB \bfinite\b (word-bounded) so it does NOT match inside "in·finite" — otherwise
-  // every "infinite cost" sentence would look falsely qualified and the gate would
-  // never fire.
-  const QUALIFIER = /\bnot\b|does not|cannot|distinct|do not conflate|coverage\s*[=<>]?\s*1|\bfinite\b|counter-?example|only at coverage|≠|is NOT|by itself/i
+  // (b) DOC-HONESTY invariant, now CORPUS-WIDE.
+  // This block held its own copy of the implication/qualifier regexes and a DOCS list of
+  // THREE files — entropy/SKILL.md, entropy/index.ts, law/SKILL.md — while 28 files carried
+  // the claim. rules/domain's law inside the gate written for it: a law reaches exactly the
+  // files its checker opens, and on the other 25 it was silent, which reads as green.
+  // The predicate now lives once in ./index.ts and the walk covers every hand-maintained
+  // .md/.ts under src. Zero is a theorem, not a ratchet.
+  it('no sentence in the corpus asserts the bare implication', () => {
+    const bare = bareImplications(process.cwd())
+    expect(bare, bare.map((b) => `${b.file}\n    ${b.sentence}`).join('\n')).toEqual([])
+    expect(() => assertNoBareImplication(process.cwd())).not.toThrow()
+  })
 
-  for (const doc of DOCS) {
-    it(`${doc.split('/').slice(-2).join('/')}: no BARE 'zero entropy ⇒ infinite cost' (every implication carries the coverage/finite qualifier)`, () => {
-      const text = readFileSync(doc, 'utf8')
-      // Split on sentence-ish boundaries (., ;, line breaks) so a qualifier must be
-      // LOCAL to the implication, not merely present somewhere else in the file.
-      const sentences = text.split(/(?<=[.;])\s+|\n+/)
-      const offenders = sentences.filter((s) => IMPLICATION.test(s) && !QUALIFIER.test(s))
-      expect(offenders, `bare implication without a coverage/finite qualifier:\n${offenders.join('\n---\n')}`).toEqual([])
-    })
-  }
+  it('a slogan in quotes is CITED, not asserted — the refutation must not read as the defect', () => {
+    expect(statesBareImplication('The claim *"zero entropy ⇒ infinite tamper-cost"* is what this refutes')).toBe(false)
+    expect(statesBareImplication('zero entropy ⇒ infinite tamper-cost')).toBe(true)
+  })
+
+  it('sees through wikilinks — the form that kept the count at a false ZERO', () => {
+    // diamond/SKILL.md asserted it in its Law line and the gate read 0: `zero[\s-]*entropy`
+    // cannot match `zero [[entropy]]`. A widening is proved by the defect it now catches.
+    expect(statesBareImplication('zero [[entropy]] ⇒ infinite tamper-[[cost]]')).toBe(true)
+    expect(statesBareImplication('zero-[[entropy]] core with ∞ tamper-cost')).toBe(true)
+    expect(statesBareImplication('Zero [[entropy]] ⇒ infinite [[mass]] ⇒ infinite tamper-cost')).toBe(true)
+    expect(unlinked('zero [[entropy]] ⇒ ∞ tamper-[[cost]]')).toBe('zero entropy ⇒ ∞ tamper-cost')
+    // and a piped wikilink keeps its display text
+    expect(unlinked('[[balance|model⊕collection]]')).toBe('balance')
+  })
+
+  it('the three files that DEFINE or REGISTER the check are exempt, and nothing else is', () => {
+    expect(DEFINES_THE_LAW).toEqual(['src/entropy/index.ts', 'src/entropy/test.ts', 'src/rules/index.ts'])
+    expect(DEFINES_THE_LAW).not.toContain('src/law/SKILL.md')
+    expect(DEFINES_THE_LAW).not.toContain('src/entropy/SKILL.md')
+  })
+
+  it('a word swap is not a healing — the premise must become coverage', () => {
+    // `entropy ⇒ unbounded tamper-cost` dodges the regex while asserting the same thing;
+    // the manifest that healed 32 sites refused exactly this on five of them.
+    expect(statesBareImplication('coverage = 1 ⇒ unbounded tamper-cost')).toBe(false)
+    expect(statesBareImplication('zero entropy ⇒ ∞ mass')).toBe(true)
+  })
 })
 
 // Folded from the former src/accounting/entropy-proof.test.ts (the stray file's tests).

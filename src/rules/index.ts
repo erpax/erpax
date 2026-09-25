@@ -32,6 +32,7 @@ import { claimBalance, totalSlack } from '@/rules/slack'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
 import { unheldVerdicts } from '@/rules/hold'
 import { scanInjection } from '@/rules/inject'
+import { bareImplications } from '@/entropy'
 import { momentShapedUnwired, unrunLaws } from '@/rules/domain'
 import { bareAsks } from '@/rules/ask'
 import { unauthenticatedBypasses } from '@/rules/bypass'
@@ -417,6 +418,11 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // `neverDelete`s and a diverged `adminOnly`. Zero is a theorem: a rule a reviewer must trust
     // may not be a coin flip between two bodies.
     guardian({ axis: 'policy-address', violations: policyAddresses(cwd).length, baseline: 0 }),
+    // bare-implication — a sentence asserting 'zero entropy ⇒ infinite cost', which src/law
+    // computes as FALSE in both directions. The predicate existed and its domain was 3 files
+    // while 28 carried the claim ([[rules]]/domain, inside the gate written for it). Zero is a
+    // theorem: no surface may assert an implication the corpus refutes.
+    guardian({ axis: 'bare-implication', violations: bareImplications(cwd).length, baseline: 0 }),
     // moment-unwired — a law shaped for a DIFF or a lint REPORT, fired at no moment. Not the
     // same defect: manifest judges a scalpel changeset and orphan reads an ESLint report, so
     // neither has a tree form and counting them as laws that cannot fire was this axis

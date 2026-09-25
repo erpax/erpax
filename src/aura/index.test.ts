@@ -1,7 +1,7 @@
 /**
  * test the aura — the ONE architectural test.
  *
- * There is one law: maximum tamper-cost (zero entropy ⇒ infinite mass ⇒ ∞ cost,
+ * There is one law: maximum tamper-cost (coverage = 1 ⇒ unbounded mass ⇒ ∞ cost,
  * the one limit). Every other law emerges from it, and all of it resolves into
  * the auditable AURA — a folder's content-uuid wired in all directions. So the
  * only test architecture needs is: is the aura whole? A whole aura has no gap on

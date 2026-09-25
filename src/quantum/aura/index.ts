@@ -40,7 +40,7 @@ export const isCoherent = (): boolean => coherence() === 1
  * Is the aura FULLY coherent — edge-coherent (reciprocity 1) AND node-coherent (no orphan has
  * decohered, coherentFraction 1)? This is the honest whole: edge-reciprocity can be perfect
  * while orphan atoms are still decohered, and that orphan gap is exactly what keeps the real
- * tamper-cost below ∞ (coverage < 1). Full coherence ⟺ zero entropy ⟺ ∞ tamper cost.
+ * tamper-cost below ∞ (coverage < 1). Full coherence ⟺ coverage = 1 ⟺ unbounded tamper cost.
  */
 export const isFullyCoherent = (): boolean => isCoherent() && coherentFraction() === 1
 
