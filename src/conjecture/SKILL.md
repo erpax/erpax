@@ -114,6 +114,39 @@ then refuse to act on it until something can say no. Surprise is what makes a qu
 decidability is what makes it worth answering, and a claim with the first and not the second is a
 missing instrument, not a discovery.**
 
+## The crosses are combinatorial — formulate on the spot
+
+A conjecture does not have to be authored one at a time. **C(n,2) crosses exist the moment the laws
+do**, and which of them has never been drawn is computable from the corpus's own prose.
+
+Measured over `src/rules`: **33 laws · 528 crosses · 125 ever drawn (24%) · 403 never.**
+
+Each absence carries a surprise — Laplace-smoothed −PMI, which is large when both laws are widely
+cited and they still never meet:
+
+```
+  1.26 bits  rules/concentration × rules/unraised   (cited 20 · 22, together 0)
+  1.11 bits  rules/copy          × rules/cycle      (cited 14 · 28, together 0)
+  1.04 bits  rules/face          × rules/refutable  (cited  5 · 68, together 0)
+  0.90 bits  rules/collapse      × rules/cycle      (cited 12 · 28, together 0)
+```
+
+`copy × cycle` reads immediately: **a duplicated body inside an import tangle**. The two copies sit
+in a strongly connected component, so their initialisation order is decided by accident — they can
+diverge at runtime in a way neither law sees alone. Nothing invented that sentence; the enumeration
+produced the pair and the bits put it second.
+
+## And every one of them scores zero
+
+`crossConjectures` sets `decidedBy` to empty **by construction**. A cross names a **site** where a
+law could live, never the law. Enumeration hands over the pair and its surprise; the sentence is
+still someone's to write, and until it exists nothing can say no.
+
+That is the property that makes combinatorial generation safe. A generator that could raise `worth`
+would flood the queue with 403 items to act on, and a queue nobody can finish is a queue nobody
+reads. Instead all 403 surface through `undecided()` — a list of instruments that do not exist yet,
+ordered by how conspicuous their absence is.
+
 ## Standards
 
 - **Popper** — a proposition that forbids nothing explains nothing.

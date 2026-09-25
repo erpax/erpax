@@ -116,3 +116,50 @@ describe('conjecture — what it hands an agent with no prompt', () => {
     expect(undecided(list)[0]?.needs).toContain('verdict')
   })
 })
+
+/**
+ * A cross is ENUMERATED, never authored — C(n,2) of them exist the moment the laws do.
+ */
+describe('conjecture — the crosses formulate on the spot', () => {
+  it('enumerates every pair of laws and ranks the absences', async () => {
+    const { crosses } = await import('@/conjecture')
+    const all = crosses()
+    const laws = new Set(all.flatMap((c) => [c.a, c.b]))
+    // C(n,2) exactly — nothing chosen, nothing dropped
+    expect(all).toHaveLength((laws.size * (laws.size - 1)) / 2)
+    // no pair repeats, and none crosses itself
+    expect(new Set(all.map((c) => `${c.a}|${c.b}`)).size).toBe(all.length)
+    expect(all.every((c) => c.a !== c.b)).toBe(true)
+    // sorted by the surprise of the absence
+    for (let i = 1; i < all.length; i++) {
+      expect(all[i - 1]!.bits).toBeGreaterThanOrEqual(all[i]!.bits)
+    }
+  })
+
+  it('a pair that is drawn carries less surprise than one that never is', async () => {
+    const { crosses } = await import('@/conjecture')
+    const all = crosses()
+    const drawn = all.filter((c) => c.together > 0)
+    const never = all.filter((c) => c.together === 0)
+    expect(drawn.length).toBeGreaterThan(0)
+    expect(never.length).toBeGreaterThan(0)
+    // an absence between two WIDELY cited laws outranks one between two rare ones
+    const loud = never.filter((c) => c.citedA > 10 && c.citedB > 10)
+    const quiet = never.filter((c) => c.citedA <= 2 && c.citedB <= 2)
+    if (loud.length > 0 && quiet.length > 0) {
+      expect(Math.max(...loud.map((c) => c.bits))).toBeGreaterThan(Math.max(...quiet.map((c) => c.bits)))
+    }
+  })
+
+  it('and every generated cross scores ZERO — a site is not a claim', async () => {
+    const { crossConjectures, rank, next, undecided } = await import('@/conjecture')
+    const cs = crossConjectures()
+    expect(cs.length).toBeGreaterThan(0)
+    expect(cs.every((c) => c.decidedBy === '')).toBe(true)
+    // enumeration cannot flood the queue with work to act on
+    expect(rank(cs).every((c) => c.worth === 0)).toBe(true)
+    expect(next(cs)).toBeUndefined()
+    // but every one is reported as an instrument that does not exist yet
+    expect(undecided(cs)).toHaveLength(cs.length)
+  })
+})

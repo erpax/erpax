@@ -308,15 +308,18 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
     // written, which is the argument for a gate over a stated law. Ratchets from 44.
     guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 19 }),
-    // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
-    // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
-    // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.
-    // Skipped where no kernel exists — the ATOM's own assert refuses to pass there, but the registry
-    // must still run on a machine without Lean.
+    // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carried
+    // `sorry` or did not compile, under a directory named `verify` that nothing ever ran.
+    // AT ZERO: the last two were never rejected proofs at all — the kernel was run with no
+    // LEAN_PATH, so `import Arrival` failed to resolve although Arrival.lean sat beside it, and a
+    // HARNESS failure was reported as a rejection. Both check clean once the imports compile, which
+    // is rules/command's law read the other way: a check that cannot run must not be mistaken for
+    // one that answered, in either direction. Skipped where no kernel exists — the ATOM's own
+    // assert refuses to pass there, but the registry must still run on a machine without Lean.
     guardian({
       axis: 'proof-accepted',
       violations: kernelPath() === null ? 0 : unacceptedProofs(cwd).length,
-      baseline: 1,
+      baseline: 0,
     }),
     // proof-reflexive — a theorem whose two sides are the SAME TEXT ([[proof]]/accepted). This
     // corpus wrote `chain rows 0 = chain rows 0` hours after gating that exact shape in TypeScript

@@ -105,3 +105,30 @@ describe('proof/accepted', () => {
     expect(reflexiveTheorems(process.cwd())).toEqual([])
   })
 })
+
+/**
+ * A check that cannot RUN must not be mistaken for one that answered.
+ *
+ * Two of this corpus's proofs were reported as unaccepted because the kernel was run in
+ * the file's directory with no LEAN_PATH — so `import Arrival` failed to resolve even
+ * though Arrival.lean sat beside it. Both check clean once the imports are compiled.
+ */
+describe('proof/accepted — imports are resolved before the kernel is asked', () => {
+  it('reads the modules a file imports, in source order', async () => {
+    const { leanImports } = await import('@/proof/accepted')
+    expect(leanImports('import Arrival\nimport Release\n\nnamespace X')).toEqual(['Arrival', 'Release'])
+    expect(leanImports('-- import Commented\nimport Real')).toEqual(['Real'])
+    expect(leanImports('namespace Nothing')).toEqual([])
+  })
+
+  it('the two files that imported siblings are accepted', async () => {
+    const { kernelPath, kernelVerdict } = await import('@/proof/accepted')
+    if (kernelPath() === null) return // no kernel here — the registry still runs
+    for (const f of ['src/verify/lean/Cross.lean', 'src/verify/lean/Main.lean']) {
+      const v = kernelVerdict(`${process.cwd()}/${f}`)
+      expect(v.accepted, `${f}: ${v.error ?? ''}`).toBe(true)
+      expect(v.sorries).toBe(0)
+      expect(v.unresolved).toBe(false)
+    }
+  }, 240_000)
+})
