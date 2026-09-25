@@ -4,7 +4,7 @@ title: "erpax — a zero-entropy, content-addressed ERP corpus"
 abstract: >-
   erpax is an ERP corpus in which every folder under src/ is one irreducible atom
   told three ways (form · code · proof), wired through a single content-uuid.
-  Its law is zero entropy ⇒ infinite tamper-cost: a claim is enforced by a gate
+  Its law is forge >> verify under an anchor: a claim is enforced by a gate
   that blocks its violation, never by prose that asks for compliance.
   The decisions that carry consequences are defined and proved in Lean 4 under src/verify/lean,
   with the TypeScript as a checked twin — the release decision, the landing verdict and the v8

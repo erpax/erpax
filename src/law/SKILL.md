@@ -92,4 +92,49 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 
 Composes [[atom]] · [[merge]] · [[collapse]] · [[trinity]] · [[gate]] · [[zeropoint]] · [[society]] · [[generate]] · [[harmony]] · [[fractal]] · [[self]] · [[akashic]].
 
+## The formula — `oneLaw` in `index.ts`
+
+The paragraph above was right and it was **prose**, so nothing could contradict it
+([[rules]]/refutable). `src/law/index.ts` was a generated stub exporting two mirror constants. The
+law every other law projects from had no executable form. It does now:
+
+```
+forgeLog2  = min( −checks·log₂(1 − coverage),  anchorBits )
+verifyLog2 = log₂(checks)
+the claim  = forgeLog2 − verifyLog2
+```
+
+`checks` is amplified before it is priced — replicas MULTIPLY under strong consistency
+(`replicationChecks`, CRAQ), machine-checked invariants ADD (`invariantChecks`) — and defaults to
+`CONFIRM_GATE_CHECKS`, the live gate's own axis count rather than a number anyone types.
+
+### What writing it down forced
+
+**The anchor is a CEILING, and the slogan hides it.** A forger may attack the external commitment
+instead of re-harmonising the graph, so no amount of coverage buys more work than the anchor holds.
+At coverage = 1 the cost is `anchorBits`, **not** `+∞` — `sloganHolds({ coverage: 1, anchorBits: 256 })`
+returns **false**, and a test asserts it. `coverageCostLog2` alone does return `+∞` at coverage 1;
+that is the model with an ideal anchor, and the law is the model with a real one.
+
+**And −0 is not a quantity of work.** `−checks·log₂(1 − 0)` is IEEE `−0`, which would have flowed
+into the asymmetry and every comparison downstream. Clamped at the source.
+
+## The unqualified slogan is false, and it was on the surfaces an agent reads first
+
+*"Zero entropy ⇒ infinite tamper-cost"* stood in `AGENTS.md` under **## One law**, in
+`.claude/skills/SKILL.md` three times — including the frontmatter `description`, which propagates
+into every agent's context — in `CITATION.cff`, and in `install.sh`. This SKILL already refused it
+in the paragraph above; the root surfaces asserted it anyway, one of them annotated *"(canonical in
+[[law]])"* while stating what [[law]] denies.
+
+It is false in **both** directions:
+
+| the implication | why it fails |
+| --- | --- |
+| zero entropy ⇒ … | reciprocity-entropy is the matrix-symmetry slack. It is 0 on the live tree **and prices nothing** — coverage is what feeds the cost, and it is below 1. |
+| … ⇒ infinite | the anchor caps the forge. `min(…, anchorBits)` is finite for every real anchor. |
+
+All four now state the terms and point at the computation. [[rules]]/drift's cure, applied to a law
+instead of a number: **state the invariant, or ask the arbiter — never restate the conclusion.**
+
 **Law — [[law]]: every directive is saved as a linked law and all emerge from the one — uuid-wiring every dimension raises the graph's coverage, and the modelled tamper-[[cost]] (`coverageCostLog2`) rises with it toward +∞ at coverage = 1 (finite below) under an external [[anchor]]; reciprocity-[[entropy]] is a DISTINCT audit signal, not an input to the cost (reciprocity = 1 ≠ coverage = 1); accept-always, verify-in-[[harmony]], each config a balanced double-entry [[gate]]way through index.ts.**

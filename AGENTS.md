@@ -20,7 +20,12 @@ Then run `pnpm erpax rules check` or `pnpm check` before pushing.
 
 ## One law
 
-Zero entropy ⇒ infinite tamper-cost. Every folder under `src/` is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid.
+`forgeLog2 = min(−checks·log₂(1 − coverage), anchorBits)` · `verifyLog2 = log₂(checks)` — **the claim is
+the asymmetry, under an anchor**, computed in [`src/law`](src/law/index.ts). Not "infinity from zero
+entropy": reciprocity-entropy is not coverage, and even at coverage 1 a forger may attack the anchor
+instead of the graph, so the anchor is the ceiling. Every folder under `src/` is a one-word atom told
+three ways (form · code · schema), ordered by the sequence, wired through one content-uuid — which is
+what raises `coverage`.
 
 ## Navigation
 
