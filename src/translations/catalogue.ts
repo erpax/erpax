@@ -3076,7 +3076,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an agent's identity is in question — an agent IS its content (name ⊗ skills ⊗ purpose), so its uuid is the content-address of that definition and an identical clone is the SAME agent, not a copy.",
-        "uuid": "bde6b367-d48f-8dd0-8d13-85a879cfd1a3",
+        "uuid": "d5eb4e9f-3303-8c18-a9a8-d3812d49415f",
         "words": [
           "use",
           "when",
@@ -9876,7 +9876,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do.",
-        "uuid": "e686335e-e27c-8635-b4a3-10a3ee87d6f5",
+        "uuid": "de81b5ab-7d46-8133-8091-3b4a3c50d713",
         "words": [
           "use",
           "when",
@@ -20362,7 +20362,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "conjecture",
-        "uuid": "4a5be49f-b236-8eb3-92e8-93460c7895f8",
+        "uuid": "eacf05a8-64b5-858d-af9b-2b7df1bf171c",
         "words": [
           "conjecture"
         ],
@@ -20373,7 +20373,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law.",
-        "uuid": "0e5dd160-c706-887d-8e06-2e9fc5c2f866",
+        "uuid": "19cbc05b-9567-8189-b60a-0b35ea277fbc",
         "words": [
           "use",
           "when",
@@ -21436,7 +21436,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost.",
-        "uuid": "7f32675e-8186-86eb-bba3-e5a5558ed973",
+        "uuid": "dd0e81ad-1d58-8aa2-b5d9-57bacd2a699c",
         "words": [
           "use",
           "when",
@@ -34199,7 +34199,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:",
-        "uuid": "4a042812-3dc2-8f62-9a7e-b6354a9f1062",
+        "uuid": "008824f3-a328-854f-a04f-d253fa6e893a",
         "words": [
           "use",
           "when",
@@ -35874,7 +35874,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale.",
-        "uuid": "60b5bae8-cef0-8405-90a9-6b11fa0d5ff7",
+        "uuid": "e17b776f-f40c-89b6-9961-92f51012abb7",
         "words": [
           "use",
           "when",
@@ -37907,7 +37907,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory",
-        "uuid": "a00f0700-9411-8b71-9a5b-f6dd004cb82f",
+        "uuid": "abee3cdd-12e2-8a4b-a5f8-8835221430d6",
         "words": [
           "use",
           "when",
@@ -49580,7 +49580,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-        "uuid": "5357f8dc-713c-8acd-829f-53356dd34cf7",
+        "uuid": "bc6d0b08-45c0-8ced-ad57-10923ee2c3c4",
         "words": [
           "use",
           "when",
@@ -55356,7 +55356,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
-        "uuid": "ab0ac217-d609-8840-b271-f7df14a9596e",
+        "uuid": "14ca5c6b-b4a2-84f5-9768-039f72295e67",
         "words": [
           "use",
           "when",
@@ -66669,7 +66669,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment.",
-        "uuid": "60ca40fd-ba2b-8f55-880e-c0d54b823c77",
+        "uuid": "47179318-ed46-8771-b782-9e93e0471d79",
         "words": [
           "use",
           "when",
@@ -76978,7 +76978,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "copy",
-        "uuid": "8e3fe9f0-7275-8ab3-a59f-f4810bb70723",
+        "uuid": "165715b6-105b-87d8-8712-4d6ddd1d0bfc",
         "words": [
           "copy"
         ],
@@ -76989,7 +76989,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…",
-        "uuid": "bcabf44c-c113-84ef-a6db-0d6a5970f4f7",
+        "uuid": "0c96ead7-fe61-8a04-b327-0fa0232d6dd9",
         "words": [
           "use",
           "when",
@@ -94308,7 +94308,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.",
-        "uuid": "c76dbaf6-1601-82b9-b85f-a1edca9b7cbf",
+        "uuid": "1751d90a-668a-8d4b-890a-6abdbb7f62f8",
         "words": [
           "use",
           "when",

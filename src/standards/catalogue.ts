@@ -6567,7 +6567,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Model Context Protocol",
     "uuid": "bbe40439-0393-8d8b-a793-b13b3dc80e16",
     "color": "hsl(220 59% 47%)",
-    "count": 27,
+    "count": 28,
     "modules": [
       {
         "path": "src/agent/access/SKILL.md",
@@ -6642,6 +6642,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/agents/mcp/tool/novelty.ts",
+        "section": ""
+      },
+      {
         "path": "src/agents/mcp/tool/share.ts",
         "section": ""
       },
@@ -6659,10 +6663,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/multi/search/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/platform/readiness/index.ts",
         "section": ""
       }
     ]

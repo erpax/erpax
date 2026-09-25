@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conjecture",
-    "uuid": "4a5be49f-b236-8eb3-92e8-93460c7895f8",
+    "uuid": "eacf05a8-64b5-858d-af9b-2b7df1bf171c",
     "words": [
       "conjecture"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law.",
-    "uuid": "0e5dd160-c706-887d-8e06-2e9fc5c2f866",
+    "uuid": "19cbc05b-9567-8189-b60a-0b35ea277fbc",
     "words": [
       "use",
       "when",
