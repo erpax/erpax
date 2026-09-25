@@ -3076,7 +3076,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an agent's identity is in question — an agent IS its content (name ⊗ skills ⊗ purpose), so its uuid is the content-address of that definition and an identical clone is the SAME agent, not a copy.",
-        "uuid": "9fb40cce-4162-88c9-b6f7-3a750d3b205f",
+        "uuid": "859eb630-c029-8afa-a9c0-0280ad802bfe",
         "words": [
           "use",
           "when",
@@ -9929,7 +9929,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do.",
-        "uuid": "82d1e316-8294-801b-b5ae-229734626ebb",
+        "uuid": "4e617f4b-a67f-83dc-a69e-c878c33df768",
         "words": [
           "use",
           "when",
@@ -21489,7 +21489,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost.",
-        "uuid": "580f52e6-6240-8552-a82a-f5835d146ce1",
+        "uuid": "7cf0cfca-d417-88f3-9276-3c40ce7794ac",
         "words": [
           "use",
           "when",
@@ -34259,7 +34259,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:",
-        "uuid": "d8310ea8-41cb-8e3d-a1f6-54c4a2776efe",
+        "uuid": "9ec4bec4-0a0e-8b53-a2ba-bac0480bb890",
         "words": [
           "use",
           "when",
@@ -35934,7 +35934,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale.",
-        "uuid": "f999d9fa-4dcd-8a62-83f9-ffcd8fa668b4",
+        "uuid": "eb1842e3-14aa-81b7-89ef-764d278f85f4",
         "words": [
           "use",
           "when",
@@ -49639,7 +49639,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-        "uuid": "8cb9f67d-99e8-83e5-8d5c-5877b80575a8",
+        "uuid": "132cbd95-80fb-8051-87b3-dd2159aeda7a",
         "words": [
           "use",
           "when",
@@ -66892,7 +66892,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment.",
-        "uuid": "000d4d8e-86fd-8f82-98c3-b2203e762c14",
+        "uuid": "7a66db08-e952-818d-aa88-6ae3b7f5dbb4",
         "words": [
           "use",
           "when",
@@ -77201,7 +77201,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "copy",
-        "uuid": "55a05b9a-d3fd-869b-981c-babddcc91a58",
+        "uuid": "86b36fb1-19b8-87f8-9c85-bdff9f3966a1",
         "words": [
           "copy"
         ],
@@ -77212,7 +77212,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…",
-        "uuid": "e76a8816-54c3-8eb8-8d2f-d5231bbe502d",
+        "uuid": "a05d8987-c749-8816-b821-6f5b7c30ab5c",
         "words": [
           "use",
           "when",
@@ -94540,7 +94540,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.",
-        "uuid": "0f9a5ee8-56d3-8a84-9025-14155d06da96",
+        "uuid": "bff04536-5b79-8c03-923c-64a6e7dfff6f",
         "words": [
           "use",
           "when",

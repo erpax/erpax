@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "copy",
-    "uuid": "55a05b9a-d3fd-869b-981c-babddcc91a58",
+    "uuid": "86b36fb1-19b8-87f8-9c85-bdff9f3966a1",
     "words": [
       "copy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…",
-    "uuid": "e76a8816-54c3-8eb8-8d2f-d5231bbe502d",
+    "uuid": "a05d8987-c749-8816-b821-6f5b7c30ab5c",
     "words": [
       "use",
       "when",
