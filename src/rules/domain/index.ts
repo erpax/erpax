@@ -1,5 +1,6 @@
-import { readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { extname, join, relative } from 'node:path'
+import { importsOf } from '@/rules/cycle'
 
 /**
  * rules/domain — a law is enforced on the surfaces its checker READS, and nowhere else.
@@ -170,6 +171,38 @@ export function assertSourcesAreText(cwd: string = process.cwd()): void {
   throw new Error(
     `✖ rules/domain — ${bad.length} text-extension file(s) carrying a raw control byte, invisible to every text tool:\n` +
       bad.map((o) => `  ${o.file}  (byte ${o.offset})`).join('\n'),
+  )
+}
+
+/** Roots that actually execute — the registry, the CLI, the write-time hook, the gate lane. */
+const EXECUTING_ROOTS = Object.freeze([
+  'src/rules/index.ts', 'src/cli/index.ts', 'src/confirm/index.ts', 'src/gate/index.ts',
+])
+
+/**
+ * A law with code that nothing ever runs — silent on every surface at once. See SKILL.md.
+ *
+ * The import closure from what executes, minus the laws. `rules/inject` sat here with no
+ * corpus walk and no caller, reporting a hand-made measurement from weeks earlier.
+ */
+export function unrunLaws(cwd: string = process.cwd()): string[] {
+  const rulesDir = join(cwd, 'src', 'rules')
+  if (!existsSync(rulesDir)) return []
+  const laws = readdirSync(rulesDir, { withFileTypes: true })
+    .filter((e) => e.isDirectory())
+    .map((e) => e.name)
+    .filter((n) => existsSync(join(rulesDir, n, 'index.ts')) || existsSync(join(rulesDir, n, 'index.tsx')))
+    .sort()
+  const seen = new Set<string>()
+  const stack = EXECUTING_ROOTS.map((r) => join(cwd, r)).filter((f) => existsSync(f))
+  while (stack.length > 0) {
+    const f = stack.pop() as string
+    if (seen.has(f)) continue
+    seen.add(f)
+    for (const dep of importsOf(f, cwd)) if (!seen.has(dep)) stack.push(dep)
+  }
+  return laws.filter(
+    (l) => !seen.has(join(rulesDir, l, 'index.ts')) && !seen.has(join(rulesDir, l, 'index.tsx')),
   )
 }
 

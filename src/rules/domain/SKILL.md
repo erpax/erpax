@@ -84,6 +84,36 @@ The asymmetry is the more useful number: **`.ts` has 8 readers, `.tsx` has 4.** 
 
 **Honest boundary.** This proves a surface has **no reader**, never that a surface with one is **well** covered — a gate that opens `.tsx` files and checks something irrelevant counts here. Readers are detected by an extension literal in the gate's own source, so a gate resolving files through a shared helper is invisible to it and is under-counted. `OPAQUE` and `DERIVED` are DECLARED in the open, so both exemptions can be argued with. Zero is the horizon, not a theorem: `.jsonld` may legitimately need no law.
 
+## A law nothing runs is silent on every surface at once
+
+The axis above asks which file classes a checker opens. Its limit case is the one nobody asked:
+**a checker that is never opened at all.**
+
+`rules/inject` — the gate whose subject is the agent's instruction channel — took one file and the
+caller's text. There was no corpus walk, no assert, and the registry never named it. Its SKILL
+reported *7,192 files, zero bidi, zero zero-width*: a measurement made by hand once, weeks earlier,
+and never re-made.
+
+`unrunLaws` computes the import closure from the four roots that actually execute — the gate
+registry, the CLI, the write-time hook and the gate lane — and reports the laws outside it.
+A law reached only from its own test does not count: a test proves the function works, never that
+anything asks it.
+
+| | count (2026-09-25) |
+| --- | ---: |
+| `rules/*` atoms with code | 33 |
+| **not reachable from anything that runs** | **11** |
+
+`ask · bypass · canonical · confine · echo · hyphen · invisible · manifest · orphan · refutable ·
+unfolded` — each with a SKILL stating a law, a ceiling, and code nothing calls.
+
+**Honest boundary.** This proves a law is not reached **by a static import** from those four roots.
+A law invoked by a path string assembled at runtime is invisible to it, exactly as it is to
+[[rules]]/cycle. And *unrun* is not *wrong*: several of these are expensive scans whose right home
+may be a nightly lane rather than every push — naming the cost is the point, and wiring an
+unmeasured 60-second scan into the write path would be its own defect. The ratchet forbids the
+number growing; which lane each law belongs in is a per-case decision.
+
 **Law — [[law]]: a law reaches exactly the file classes its checker opens. Name the surfaces no gate reads, because on those the corpus is not passing — it is silent, and silence reads as green.**
 
 ## Standards

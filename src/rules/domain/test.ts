@@ -95,3 +95,26 @@ describe('rules/domain — a law is enforced on the surfaces its checker reads',
     expect(blind.length).toBeLessThanOrEqual(5)
   })
 })
+
+/**
+ * The limit case of the domain axis: a checker that is never opened at all.
+ */
+describe('rules/domain — a law nothing runs is silent on every surface', () => {
+  it('names the laws outside the import closure of what executes', async () => {
+    const { unrunLaws } = await import('@/rules/domain')
+    const u = unrunLaws()
+    expect(Array.isArray(u)).toBe(true)
+    expect(u.length).toBeLessThanOrEqual(11) // ratchets down, never up
+    expect(new Set(u).size).toBe(u.length)
+  }, 120_000)
+
+  it('does not list a law the registry actually calls', async () => {
+    const { unrunLaws } = await import('@/rules/domain')
+    const u = new Set(unrunLaws())
+    // wired this session — the axis went 12 -> 11 when inject got a runner
+    expect(u.has('inject')).toBe(false)
+    // long-standing registry members
+    expect(u.has('concentration')).toBe(false)
+    expect(u.has('hold')).toBe(false)
+  }, 120_000)
+})
