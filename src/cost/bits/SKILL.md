@@ -2,14 +2,14 @@
 name: bits
 description: "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them."
 atomPath: "cost/bits"
-coordinate: "cost/bits · 4/weave · 068d24e3"
-contentUuid: "58cb96eb-5366-52c4-9cfa-2a14bf6ac575"
-diamondUuid: "0e5b7be6-fb03-8397-b304-b3a0d56e666f"
-uuid: "068d24e3-c116-8b32-b9ef-e551fdc2d74e"
-horo: 4
+coordinate: "cost/bits · 7/descent · 9595c35b"
+contentUuid: "398452d6-e140-5456-8eee-619d6dc43f55"
+diamondUuid: "b8234fd0-9ac9-85f3-a2f5-aebb12b670c4"
+uuid: "9595c35b-1ed9-8b91-8dda-9204c1ac77b0"
+horo: 7
 typography:
   partition: cost
-  bondDegree: 18
+  bondDegree: 21
 standards:
   - "CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication"
   - "CRAQ — Terrace & Freedman, USENIX ATC 2009"
@@ -21,22 +21,22 @@ standards:
   - RFC 9562 §8 — UUID security considerations
 bindings: []
 signatures:
-  computationUuid: "563146dd-7c39-84c3-a05b-9c98ee1dd10a"
+  computationUuid: "0ca628cb-610f-8f70-928e-6a0e73a34a46"
   stages:
     - stage: path
       stageUuid: "e71086e7-e0ef-8f4e-90df-b3d90bf0253d"
     - stage: trinity
       stageUuid: "d1c024fb-3412-89c6-b438-d8f002666670"
     - stage: boundary
-      stageUuid: "17502a13-7bc4-8bcd-a294-7637d939001d"
+      stageUuid: "108b43a1-079b-81f5-afa9-ffa646d6df53"
     - stage: links
-      stageUuid: "682afee9-4df5-8e7b-829b-ad9e9839c65a"
+      stageUuid: "fdb2fc61-7a8d-86da-bad8-ab3801c4ca5b"
     - stage: horo
-      stageUuid: "bb935e96-a488-8c48-bb2d-2dccd2b9ce57"
+      stageUuid: "0cd066b2-6de9-8de8-a456-d771d0221391"
     - stage: seal
       stageUuid: "cc450af7-b06d-85b6-82e8-b36737aa6aea"
     - stage: uuid
-      stageUuid: "2b1624cd-bb82-84e9-aec6-f31923532243"
+      stageUuid: "e2097212-d285-8abe-a514-54a619121338"
 version: 2
 ---
 # cost/bits — the cost of attack, computed

@@ -9447,7 +9447,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about quantum tunnelling — a particle penetrating a potential barrier it classically cannot surmount (E < V0), the wave decaying exponentially inside so transmission T ≈ e^(−2κa) leaks out. (The word tunnel is taken — it is agriculture's season-extension structure; this is the physics.) In erpax the barrier IS tamper-cost: the work to tunnel through (forge) is −log2(T) = 2κa/ln2 bits, exponentially large in the barrier, yet never quite infinite — the residual forge-probability is the design limit.",
-        "uuid": "94d76978-c7fc-8bb6-8f12-2e2042cee08b",
+        "uuid": "bff407f5-90c9-8313-9e31-e59a63d5565d",
         "words": [
           "use",
           "when",
@@ -23230,7 +23230,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "bits",
-        "uuid": "068d24e3-c116-8b32-b9ef-e551fdc2d74e",
+        "uuid": "9595c35b-1ed9-8b91-8dda-9204c1ac77b0",
         "words": [
           "bits"
         ],
@@ -23241,7 +23241,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them.",
-        "uuid": "b8acc006-c00f-80c0-9f1e-b2c3e9b349e5",
+        "uuid": "2fd9b217-a0ec-83e8-81cf-7fc230eff048",
         "words": [
           "use",
           "when",
@@ -47512,7 +47512,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the fold's residual — the bits that did not fold into trinities of theorems. Leftovers attract by field (one proof settles the cluster), pull a seed from beyond to complete what the corpus cannot derive, and the irreducible residue powers the next research. Composes accounting/proof, gravity, and think.",
-        "uuid": "c074c21d-0f66-8256-8220-006c043eeb99",
+        "uuid": "4e1582c0-482a-81ec-b3cc-7f1f18caf132",
         "words": [
           "use",
           "when",
@@ -49886,7 +49886,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-        "uuid": "9afb86b4-941a-80a2-9694-1ea9b31e8fa0",
+        "uuid": "25c25e01-7cd4-8294-93fa-0fa61e0e9975",
         "words": [
           "use",
           "when",
@@ -54660,7 +54660,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the uuid AS the message — decode identity · OID · colour · sound out of the 128 bits alone, no payload. Completes localize.decodeIdentity (colour) with the missing sound channel (the note the uuid sounds, A432). To send is to send the uuid; to receive is to decode it. Matter-twin message/index.ts.",
-        "uuid": "7ab34646-bfed-8168-b73b-e7740a3da7a2",
+        "uuid": "28445082-d6e2-8b63-9385-18c98f69d539",
         "words": [
           "use",
           "when",
@@ -69810,7 +69810,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits.",
-        "uuid": "ac58c278-664d-88ad-aa49-33b983940b1f",
+        "uuid": "c5929c2c-f419-83b8-9879-c82f6082558c",
         "words": [
           "use",
           "when",
@@ -87042,7 +87042,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about information entropy — Shannon's H = −Σ pᵢ·log₂(pᵢ) bits, the expected surprisal of a distribution: the average bits per symbol and the irreducible limit of lossless compression. Zero when one outcome is certain, maximal (log₂ n) when all n outcomes are equally likely. It is the information twin of thermodynamic entropy (same −Σp ln p, different constant) — the bits a message carries and the bits a tamper must reproduce.",
-        "uuid": "7ba6958b-aa72-86ec-8e63-83517b187fa7",
+        "uuid": "58eb0bb7-88c4-8b7b-9045-a8d5da7b3f01",
         "words": [
           "use",
           "when",
@@ -91598,7 +91598,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form.",
-        "uuid": "9fdd9412-6f52-851f-8d02-15f2bf762840",
+        "uuid": "e2c94437-8694-8d32-8576-43308c59b572",
         "words": [
           "use",
           "when",
@@ -97479,7 +97479,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the information of one event — surprisal I(p) = −log₂(p) bits. A certain event (p=1) carries zero bits; a rare event carries many. It is the bit-cost of a specific outcome, and in erpax the bit-cost of a specific forgery: forging a thing of probability p under the wired graph costs −log₂(p) bits. Additive for independent events (I(p·q)=I(p)+I(q)), so improbabilities stack like uuid-chained dimensions; expected surprisal is Shannon entropy.",
-        "uuid": "eabf4e91-bf1d-8152-b519-404f20cfb5e6",
+        "uuid": "bc2fdca9-0f27-8842-b37c-c4bac34e6510",
         "words": [
           "use",
           "when",
@@ -111410,7 +111410,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload.",
-        "uuid": "e77310ca-688c-8b67-b1ac-175a37655fe3",
+        "uuid": "d47ebb81-add1-86db-a07e-0d8b9c1fd1fa",
         "words": [
           "use",
           "when",
