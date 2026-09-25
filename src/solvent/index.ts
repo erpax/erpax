@@ -3,7 +3,6 @@
  *
  * @standard Antoine (1888) — log₁₀ P = A − B/(T + C), the vapour-pressure correlation
  * @standard EU 2010/75 Annex VII — solvent management plan: input = output + fugitive
- * @standard CODATA 2018 — molar gas constant R = 8.314462618 J·mol⁻¹·K⁻¹ (exact)
  * @see ./SKILL.md — ../emission
  */
 import { algebraExp, algebraFloatPow, algebraLog, algebraLog10, exactMax } from '@/algebra'
@@ -74,10 +73,8 @@ export function equilibriumRatio(antoine: Antoine, temperatureK: number, totalPr
 }
 
 /**
- * Molar gas constant, J·mol⁻¹·K⁻¹ — exact by SI definition since 2019, so it is
- * received from the authority that fixed it, never computed here.
- *
- * @standard CODATA 2018 — R = 8.314462618 J·mol⁻¹·K⁻¹ (exact)
+ * Molar gas constant — received from the body that fixed it, never computed.
+ * @standard CODATA 2018 — R = 8.314462618 J·mol⁻¹·K⁻¹ (exact by SI definition)
  */
 export const GAS_CONSTANT = 8.314462618
 

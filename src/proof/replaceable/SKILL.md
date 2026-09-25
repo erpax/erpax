@@ -93,6 +93,24 @@ defect [[standards]]/emit paid for counting prose about banners as banners.
 
 **Law — [[law]]: a standard you cite is an axiom you assume. Discharge it with a gate that fails closed, or say plainly that you assume it — a conformance claim nothing can contradict is the most respectable-looking lie a corpus can tell.**
 
+## An attribution is not an obligation
+
+`namesAnObligation` began `if (/\d/.test(standard)) return true`, so **`Graham (1969)`,
+`Shannon (1948)` and `Antoine (1888)`** each entered the queue as something a gate must
+eventually enforce for conformance. They are attributions. A theorem is discharged by a proof,
+never by conformance, and a ladder that lists a 1948 paper beside a directive is measuring two
+different obligations under one name.
+
+Nine of the ten citations in that shape are papers. **The tenth refutes the bare shape rule:**
+`Hague Apostille Convention (1961)` is a real treaty that carries its year exactly the same way.
+So the year alone decides nothing — an **instrument word** in the text is what makes it an
+obligation, and `INSTRUMENT_WORDS` is declared in the open rather than inferred, because no
+theorem separates a treaty from a paper by shape.
+
+Both directions are pinned by test. A reclassification that quietly demoted a treaty would be a
+worse defect than the miscount it fixed: obligations 168 → 159, references 87 → 96, and the Hague
+convention stays exactly where it was.
+
 ## Standards
 
 - **ISO 19011:2018 §6.4** — audit evidence: a conformance claim must lead to the evidence.

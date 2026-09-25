@@ -136,10 +136,7 @@ export const NAMED_STANDARDS: ReadonlySet<string> = new Set([
   'Bulgarian Commercial Register (Търговски регистър)',
 ])
 
-/**
- * Words that make a parenthesised-year citation an INSTRUMENT rather than an attribution.
- * DECLARED, in the open, because no theorem separates a treaty from a paper by shape.
- */
+/** Words that make a parenthesised-year citation an INSTRUMENT, not an attribution. DECLARED. */
 export const INSTRUMENT_WORDS: ReadonlySet<string> = new Set([
   'convention', 'treaty', 'directive', 'regulation', 'act', 'standard', 'protocol',
   'agreement', 'charter', 'covenant', 'recommendation', 'code', 'ordinance', 'statute',
@@ -148,20 +145,7 @@ export const INSTRUMENT_WORDS: ReadonlySet<string> = new Set([
 /** `Author (YYYY)` — a citation whose only digits are a trailing parenthesised year. */
 const ATTRIBUTION_SHAPE = /^[^0-9]+\((1[6-9]|20)\d{2}\)$/
 
-/**
- * A cited paper is not a conformance obligation.
- *
- * `namesAnObligation` read "contains a digit" as "is a standard number", so
- * `Graham (1969)`, `Shannon (1948)` and `Antoine (1888)` each entered the queue as
- * something a gate must eventually enforce. They are attributions: a theorem is
- * discharged by a proof, never by conformance, and nine of the ten citations in this
- * shape are papers.
- *
- * The tenth refutes the bare shape rule — **Hague Apostille Convention (1961)** is a
- * real treaty that carries its year exactly the same way. So the year alone decides
- * nothing; an instrument word in the text is what makes it an obligation, and that
- * list is declared rather than inferred.
- */
+/** A cited paper is not a conformance obligation — the year alone decides nothing. See SKILL.md. */
 export function namesAttribution(standard: string): boolean {
   const s = standard.trim()
   if (!ATTRIBUTION_SHAPE.test(s)) return false
