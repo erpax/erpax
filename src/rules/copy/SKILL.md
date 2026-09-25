@@ -147,6 +147,26 @@ The largest is 65 nodes across `law/folder/word.ts` and `navigation/distribute.t
 single use is its own test exists to be tested. This names candidates where two laws agree, which
 is a stronger signal than either alone and still not a purge list.
 
+## The first fold, and why it ran that direction
+
+`pivotSkillMd` stood twice at **65 AST nodes** — `law/folder/word.ts:597` and
+`navigation/distribute.ts:111` — byte-identical template literals, and `unearnedCopies` reported
+**both** sites un-folded: written twice, neither called more than once.
+
+Two checks before the cut, both of which this atom demands:
+
+- **What does the body close over?** Nothing. It is a pure function of `(hub, leaf, facet)`, so the
+  AR/AP lesson — identical text over different constants — does not apply here. That check is the
+  human's, and it is the reason `rules/copy` reports candidates rather than applying them.
+- **Which way does the fold run?** `distribute` already imports from `law/folder/word`, so folding
+  onto `word` adds **no import edge**; the reverse would have closed a cycle ([[rules]]/cycle).
+  A DRY fix that creates a tangle trades one law for another.
+
+duplicate bodies **13 → 12**, unearned copies **8 → 7**, tangles unchanged at 13. Both ceilings
+ratcheted in the same commit ([[rules]]/slack), and `copy` came down from 19 to its live 12 — a
+hand-written baseline, which the slack axis does not read, so it had been sitting seven above the
+tree for some time.
+
 **Law — [[law]]: the same body at two addresses is one implementation and one decoy. Content-address
 every body; where two agree, one of them is unmaintained and nobody knows which.**
 

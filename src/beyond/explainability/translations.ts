@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a business outcome must ship its own natural-language explanation citing standards, sources and chain steps — autoExplain composes the narrative deterministically with no LLM in the path (preserving replay), isExplanationComplete verifies it is non-trivial.",
-    "uuid": "ad00b588-7b29-866b-acc6-966b3e9b7d5b",
+    "uuid": "56960492-dcf0-8ade-a39c-6a711e895b98",
     "words": [
       "use",
       "when",

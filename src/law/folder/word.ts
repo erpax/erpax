@@ -594,7 +594,15 @@ describe('${hub}/${leaf} — vocabulary pivot', () => {
 `
 }
 
-const pivotSkillMd = (hub: string, leaf: string, facet: string): string => `---
+/**
+ * The pivot SKILL body. Exported so `navigation/distribute` folds onto it rather than carrying a
+ * byte-identical copy — 65 AST nodes, and both copies were un-folded ([[rules]]/copy).
+ *
+ * The fold runs THIS way because `distribute` already imports from here; the reverse would have
+ * closed a cycle ([[rules]]/cycle). The body is a pure function of its three arguments and closes
+ * over nothing, which is the check `rules/copy` requires before any cut.
+ */
+export const pivotSkillMd = (hub: string, leaf: string, facet: string): string => `---
 name: ${leaf}
 atomPath: ${hub}/${leaf}
 description: "Use when reasoning about ${leaf} as a ${facet} of [[${hub}]] — vocabulary pivot to @/${leaf}; nested not duplicated."

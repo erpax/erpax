@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three.",
-    "uuid": "f2cbc49f-6c22-827a-b37a-ecd75563f71d",
+    "uuid": "bb889d2e-1259-840e-8b8c-01949cade3f9",
     "words": [
       "use",
       "when",
