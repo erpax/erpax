@@ -250,7 +250,7 @@ if (import.meta.url === 'file://' + process.argv[1]) {
  *
  * An entropy/reciprocity premise within reach of an `infinite … (cost|mass|work)` consequent.
  */
-export const BARE_IMPLICATION =
+const BARE_IMPLICATION =
   /(zero[\s-]*entropy|reciprocity\s*=\s*1|entropy\s*(\(\))?\s*(===?|⇒|=>|→|implies)).{0,80}?(infinit|∞).{0,40}?(cost|mass|work)/i
 
 /**
@@ -259,7 +259,7 @@ export const BARE_IMPLICATION =
  * `\bfinite\b` is word-bounded so it does NOT match inside "in·finite"; without that, every
  * "infinite cost" sentence would look falsely qualified and the gate could never fire.
  */
-export const IMPLICATION_QUALIFIER =
+const IMPLICATION_QUALIFIER =
   /\bnot\b|does not|cannot|distinct|do not conflate|coverage\s*[=<>]?\s*1|\bfinite\b|counter-?example|only at coverage|≠|is NOT|by itself|anchor/i
 
 /**
@@ -280,7 +280,7 @@ export const statesBareImplication = (raw: string): boolean => {
 }
 
 /** Sentence-ish split, so a qualifier must be LOCAL to the implication. */
-export const sentencesOf = (text: string): string[] => text.split(/(?<=[.;])\s+|\n+/)
+const sentencesOf = (text: string): string[] => text.split(/(?<=[.;])\s+|\n+/)
 
 /**
  * Wikilink brackets removed, so the predicate sees the WORDS.
@@ -290,7 +290,7 @@ export const sentencesOf = (text: string): string[] => text.split(/(?<=[.;])\s+|
  * `zero [[entropy]]`. [[rules]]/probe — a filter that selects by name cannot see what it does not
  * name, and what it misses is systematically the thing nobody thought to name.
  */
-export const unlinked = (text: string): string => text.replace(/\[\[([^\]|]+)(\|[^\]]*)?\]\]/g, '$1')
+const unlinked = (text: string): string => text.replace(/\[\[([^\]|]+)(\|[^\]]*)?\]\]/g, '$1')
 
 export interface BareClaim {
   readonly file: string
@@ -312,7 +312,7 @@ export interface BareClaim {
  * failure mode of a broad detector. Narrow on purpose: every other file under `src` is judged,
  * including `law/` and `entropy/SKILL.md`.
  */
-export const DEFINES_THE_LAW: readonly string[] = [
+const DEFINES_THE_LAW: readonly string[] = [
   'src/entropy/index.ts',
   'src/entropy/test.ts',
   'src/rules/index.ts',
@@ -339,14 +339,4 @@ export function bareImplications(cwd: string = process.cwd()): BareClaim[] {
   }
   walk(join(cwd, 'src'))
   return out
-}
-
-/** Zero is a THEOREM: no sentence may assert an implication the corpus computes as false. */
-export function assertNoBareImplication(cwd: string = process.cwd()): void {
-  const bare = bareImplications(cwd)
-  if (bare.length === 0) return
-  throw new Error(
-    `✖ entropy — ${bare.length} sentence(s) assert 'coverage = 1 ⇒ unbounded cost' with no qualifier:\n` +
-      bare.map((b) => `  ${b.file}\n    ${b.sentence}`).join('\n'),
-  )
 }

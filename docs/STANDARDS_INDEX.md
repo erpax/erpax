@@ -145,8 +145,8 @@ src/agents/mcp/tool/governance.ts:11: * @standard W3C DID Core 1.0 + W3C VC Data
 src/agents/mcp/tool/index.ts:15: * @standard ISO/IEC 25010:2023 §5.7 modularity
 src/agents/mcp/tool/integrity-extensions.ts:18: * @standard MCP 0.6 tools/list + tools/call
 src/agents/mcp/tool/kv.ts:19: * @standard MCP 0.6 tools/list + tools/call
-src/agents/mcp/tool/novelty.ts:12: * @standard MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}
-src/agents/mcp/tool/novelty.ts:13: * @standard Shannon (1948) — surprise is −log₂ p, in bits
+src/agents/mcp/tool/novelty/index.ts:12: * @standard MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}
+src/agents/mcp/tool/novelty/index.ts:13: * @standard Shannon (1948) — surprise is −log₂ p, in bits
 src/agents/mcp/tool/security.ts:17: * @standard ISO/IEC 27001 Annex A.14.2.5 secure-systems-engineering
 src/agents/mcp/tool/security.ts:18: * @standard NIST SP 800-160 §3.4.2 trustworthy secure design
 src/agents/mcp/tool/share.ts:13: * @standard NIST SP 800-162 ABAC
@@ -3177,18 +3177,18 @@ src/wco/hs/index.ts:11: * @standard US HTS (Harmonized Tariff Schedule)
 src/wco/hs/index.ts:9: * @standard WCO Harmonised System Convention (effective 1988, latest revision 2022)
 src/website/index.ts:25: * @standard W3C HTML5 § sectioning + WCAG 2.2 §1.4.3
 src/website/index.ts:26: * @standard Schema.org Article + WebSite + SoftwareApplication
-src/website/marketing-skills.ts:18: * @standard Schema.org WebPage + Article + SoftwareApplication
-src/website/marketing-skills.ts:19: * @standard W3C HTML5 §4 sectioning + WCAG 2.2 §1.4.3 contrast
-src/website/marketing-skills.ts:20: * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
+src/website/marketing/index.ts:18: * @standard Schema.org WebPage + Article + SoftwareApplication
+src/website/marketing/index.ts:19: * @standard W3C HTML5 §4 sectioning + WCAG 2.2 §1.4.3 contrast
+src/website/marketing/index.ts:20: * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
 src/website/seo/index.ts:27: * @standard Schema.org WebPage + Article + SoftwareApplication +
 src/website/seo/index.ts:29: * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
 src/website/seo/index.ts:30: * @standard W3C JSON-LD 1.1 + Microdata 1.1
 src/website/seo/index.ts:31: * @standard Sitemap.xml protocol 0.9 (sitemaps.org) + Sitemap-Index
 src/website/seo/index.ts:32: * @standard RFC 9694 robots.txt + REP (Robots Exclusion Protocol)
 src/website/seo/index.ts:33: * @standard ISO/IEC 25010:2023 §5.3 usability — discoverability
-src/website/shadcn-components.ts:26: * @standard shadcn/ui (Radix UI + Tailwind CSS)
-src/website/shadcn-components.ts:27: * @standard W3C WAI-ARIA 1.2 + WCAG 2.2 AA
-src/website/shadcn-components.ts:28: * @standard W3C Open Graph + Schema.org (carried by surrounding pages)
+src/website/shadcn/index.ts:26: * @standard shadcn/ui (Radix UI + Tailwind CSS)
+src/website/shadcn/index.ts:27: * @standard W3C WAI-ARIA 1.2 + WCAG 2.2 AA
+src/website/shadcn/index.ts:28: * @standard W3C Open Graph + Schema.org (carried by surrounding pages)
 src/widget/AccountReconciliationsPanel.tsx:7: * @standard ECMA-262 ECMAScript-2024 baseline
 src/widget/AuditLogWidget.tsx:17: * @standard ECMA-262 ECMAScript-2024 baseline
 src/widget/BalanceSheetWidget.tsx:4: * @standard ECMA-262 ECMAScript-2024 baseline

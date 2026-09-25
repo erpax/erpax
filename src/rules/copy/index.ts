@@ -259,12 +259,3 @@ export function policyAddresses(cwd: string = process.cwd()): Policy[][] {
   return [...m.values()].filter((g) => g.length > 1 && new Set(g.map((p) => p.file + p.name)).size > 1)
 }
 
-/** Zero is a THEOREM, not a ratchet: no access policy may live at two addresses. */
-export function assertOnePolicyAddress(cwd: string = process.cwd()): void {
-  const copied = policyAddresses(cwd)
-  if (copied.length === 0) return
-  throw new Error(
-    `✖ rules/copy — an access policy must have one address; ${copied.length} body at two or more:\n` +
-      copied.map((g) => '  ' + g.map((p) => `${p.name}: ${p.family} @ ${p.file}`).join('  |  ')).join('\n'),
-  )
-}

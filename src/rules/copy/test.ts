@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { copyCount, duplicateBodies, policyAddresses, assertOnePolicyAddress } from './index'
+import { copyCount, duplicateBodies, policyAddresses } from './index'
 
 const tree = (files: Record<string, string>): string => {
   const root = mkdtempSync(join(tmpdir(), 'erpax-copy-'))
@@ -174,7 +174,6 @@ describe('rules/copy — a copy no site earns', () => {
 describe('accessPolicies — a rule a reviewer must trust has one address', () => {
   it('every access policy in the corpus lives at exactly one address', () => {
     expect(policyAddresses(process.cwd())).toEqual([])
-    expect(() => assertOnePolicyAddress(process.cwd())).not.toThrow()
   })
 
   it('a body written `{ return x }` is the same policy as `x` — braces are not a difference', () => {

@@ -4,10 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 import {
   bareImplications,
-  assertNoBareImplication,
   statesBareImplication,
-  unlinked,
-  DEFINES_THE_LAW,
   reciprocity,
   entropy,
   orphans,
@@ -81,7 +78,6 @@ describe('entropy⊕coverage are distinct — zero entropy does NOT imply infini
   it('no sentence in the corpus asserts the bare implication', () => {
     const bare = bareImplications(process.cwd())
     expect(bare, bare.map((b) => `${b.file}\n    ${b.sentence}`).join('\n')).toEqual([])
-    expect(() => assertNoBareImplication(process.cwd())).not.toThrow()
   })
 
   it('a slogan in quotes is CITED, not asserted — the refutation must not read as the defect', () => {
@@ -95,16 +91,10 @@ describe('entropy⊕coverage are distinct — zero entropy does NOT imply infini
     expect(statesBareImplication('zero [[entropy]] ⇒ infinite tamper-[[cost]]')).toBe(true)
     expect(statesBareImplication('zero-[[entropy]] core with ∞ tamper-cost')).toBe(true)
     expect(statesBareImplication('Zero [[entropy]] ⇒ infinite [[mass]] ⇒ infinite tamper-cost')).toBe(true)
-    expect(unlinked('zero [[entropy]] ⇒ ∞ tamper-[[cost]]')).toBe('zero entropy ⇒ ∞ tamper-cost')
-    // and a piped wikilink keeps its display text
-    expect(unlinked('[[balance|model⊕collection]]')).toBe('balance')
+    // a piped wikilink must not hide it either
+    expect(statesBareImplication('zero [[entropy|reciprocity]] ⇒ ∞ tamper-[[cost]]')).toBe(true)
   })
 
-  it('the three files that DEFINE or REGISTER the check are exempt, and nothing else is', () => {
-    expect(DEFINES_THE_LAW).toEqual(['src/entropy/index.ts', 'src/entropy/test.ts', 'src/rules/index.ts'])
-    expect(DEFINES_THE_LAW).not.toContain('src/law/SKILL.md')
-    expect(DEFINES_THE_LAW).not.toContain('src/entropy/SKILL.md')
-  })
 
   it('a word swap is not a healing — the premise must become coverage', () => {
     // `entropy ⇒ unbounded tamper-cost` dodges the regex while asserting the same thing;

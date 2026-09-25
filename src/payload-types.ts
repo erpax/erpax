@@ -18759,7 +18759,7 @@ export interface TransferPricingFile {
 /**
  * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
  *
- * — diamond-uuid: 73e99975-f6df-8421-ac9f-22bd61228b30
+ * — diamond-uuid: 3143469c-94d2-848c-a4df-7d6fc2f40a6e
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "translations".

@@ -81,14 +81,6 @@ export function oneLaw(b: Binding): LawVerdict {
 }
 
 /**
- * The strict statement, rendered from the terms rather than restated in prose.
- *
- * [[rules]]/drift: a number typed into prose is a copy of an answer. So is a law.
- */
-export const ONE_LAW =
-  'forgeLog2 = min(−checks·log₂(1 − coverage), anchorBits) · verifyLog2 = log₂(checks) · the claim is forge − verify'
-
-/**
  * Does the unqualified slogan hold? It does not, and this says so in code.
  *
  * "Zero entropy ⇒ infinite tamper-cost" is false as an implication: reciprocity-entropy is not

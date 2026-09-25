@@ -20,6 +20,8 @@
  * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
  */
 
+import { statesBareImplication } from '@/entropy'
+
 export type MarketingChannel = 'landing-page' | 'blog-post' | 'email' | 'press-release' | 'case-study' | 'social-x' | 'social-linkedin'
 
 export type BrandVoice = 'plain-precise' | 'bold-confident' | 'measured-regulatory' | 'community-warm'
@@ -65,6 +67,10 @@ const SYNTHETIC_ALLOWLIST = new Set<string>([
   'demo@example.com', 'erpax@erpax.com', 'auditor@example.com',
 ])
 
+/** Sentence-ish split over page prose, HTML tags stripped so a claim inside markup still reads. */
+const sentencesOfPage = (html: string): string[] =>
+  html.replace(/<[^>]+>/g, ' ').split(/(?<=[.;!?])\s+|\n+/)
+
 export interface TransparencyFinding {
   readonly severity: 'critical' | 'major' | 'minor'
   readonly check: string
@@ -105,6 +111,17 @@ export function checkMarketingTransparency(args: {
     findings.push({
       severity: 'minor', check: 'no-standards-cited',
       detail: 'page body > 200 chars but no @standard declarations — risks ungrounded claims',
+    })
+  }
+  // A marketing page is the most exposed surface an over-claim can reach: it is addressed to a
+  // prospect who cannot check it ([[rules]]/audience). The corpus healed 41 assertions of
+  // `zero entropy ⇒ infinite tamper-cost` — which [[law]] computes as FALSE in both directions —
+  // and nothing stopped one re-entering through a published page. This is that door.
+  for (const sentence of sentencesOfPage(args.pageBody)) {
+    if (!statesBareImplication(sentence)) continue
+    findings.push({
+      severity: 'critical', check: 'over-claim-bare-implication',
+      detail: `asserts an implication src/law computes as false: "${sentence.trim().slice(0, 90)}"`,
     })
   }
   const ok = findings.filter((f) => f.severity === 'critical').length === 0

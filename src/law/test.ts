@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { atomAddress } from '@/atom/address'
 import { CONFIRM_GATE_CHECKS } from '@/cost/bits'
-import { WORD, atomPath, ONE_LAW, oneLaw, sloganHolds } from './index'
+import { WORD, atomPath, oneLaw, sloganHolds } from './index'
 
 describe('law — the one law, strictly formulated', () => {
   it('names its own address', () => {
@@ -62,9 +62,4 @@ describe('law — the one law, strictly formulated', () => {
     expect(oneLaw({ coverage: 1, anchorBits: 256 }).evasionProbability).toBe(0)
   })
 
-  it('ONE_LAW states the terms rather than restating a conclusion', () => {
-    expect(ONE_LAW).toContain('min(')
-    expect(ONE_LAW).toContain('anchorBits')
-    expect(ONE_LAW).not.toContain('infinite')
-  })
 })

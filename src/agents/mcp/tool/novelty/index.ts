@@ -16,8 +16,8 @@
 import { z } from 'zod'
 import { exactRound } from '@/algebra'
 import { crossIntersections, containment, crosses, orthogonalLaws } from '@/conjecture'
-import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
-import type { ErpaxMcpTool } from '../tool-defs'
+import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
+import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
