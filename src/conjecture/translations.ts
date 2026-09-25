@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law.",
-    "uuid": "19cbc05b-9567-8189-b60a-0b35ea277fbc",
+    "uuid": "d3c9d778-b1be-8f98-ab4d-76bf9e04f82f",
     "words": [
       "use",
       "when",

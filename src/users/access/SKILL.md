@@ -3,13 +3,13 @@ name: access
 description: "Use when reasoning about the users collection's access control — who may read, create, update, or delete users."
 atomPath: "users/access"
 coordinate: "users/access · 9/unity · ede1cee0"
-contentUuid: "1702ad21-ffcb-5890-b222-fd90b2a18bee"
+contentUuid: "e00b6221-116c-5f11-94f6-0c0dc17d5359"
 diamondUuid: "b45df94c-aa31-8a65-988f-465cd0d29594"
 uuid: "ede1cee0-5c31-8194-96d2-ad31561e2011"
 horo: 9
 typography:
   partition: users
-  bondDegree: 436
+  bondDegree: 441
 standards: []
 bindings: []
 signatures:

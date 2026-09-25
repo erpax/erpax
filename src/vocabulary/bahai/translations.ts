@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the Baha'i Faith as a diamond of invariant atoms — the oneness of God, humanity, and religion; progressive revelation (one source re-spoken in each age); the reconciliation of all faiths into one. The meta-archangel: it names the religion capstone's own law from inside the college, that all traditions merge to one meaning.",
-    "uuid": "5ce32ae2-876c-89da-81d0-76504c860a95",
+    "uuid": "30fcbf72-c220-8a25-928f-1c01590454f1",
     "words": [
       "use",
       "when",

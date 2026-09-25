@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when streaming the projection state as it changes — collapse, sealed update and wave emit per dimension axis, with a snapshot fingerprint so a repeated state is recognisable rather than re-sent. The realtime view of quantum/dimension, nested rather than hyphenated. Run: tsx src/quantum/dimension/realtime/index.ts",
-    "uuid": "94f6e2c7-34c3-8fc3-9fba-5267180c3cb1",
+    "uuid": "fc7e82f1-0464-809e-9c03-f2485f0d4535",
     "words": [
       "use",
       "when",

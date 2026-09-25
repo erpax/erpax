@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical OECD SAF-T 2.0 types — audit-file projection.",
-    "uuid": "0265cef6-2ff1-85fe-8fcf-439f1c10b177",
+    "uuid": "8da78a16-ced0-82f1-9b68-e1fdaae100f0",
     "words": [
       "use",
       "when",

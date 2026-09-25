@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's pervasive two-fold law — matter↔antimatter (code↔skill), physical↔metaphysical, give↔take, flow↔balance, build↔bind, learn↔forget, whole↔part, begin↔end, open↔close. The pair that recurs at every scale.",
-    "uuid": "f9597d12-8c15-83a2-a791-201bb7c6584c",
+    "uuid": "268398bf-a312-8ee4-9b46-d91edabefdac",
     "words": [
       "use",
       "when",

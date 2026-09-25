@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the whole is recoverable from any part — content-uuid encodes the whole, the akashic record regenerates it, each folder/skill loads its own subgraph, each agent is the whole erpax. The whole-in-every-part law; the content-twin of fractal (same form at every scale). Forget the corpus; regenerate from a part.",
-    "uuid": "4c36d539-4715-81d1-9328-2affa1cb6f6a",
+    "uuid": "ff95a4b1-bf73-8490-95ac-74ccf3c366c9",
     "words": [
       "use",
       "when",

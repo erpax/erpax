@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society sends scouts to fly the content-uuid matrix in coordinated self-learning — reconnoitring sectors for gaps and entropy and feeding them to the agents to eat, warfare tactics applied to building.",
-    "uuid": "778912de-55ef-80fe-a85d-b1bb68edec61",
+    "uuid": "e6a83a65-fd0c-8285-93c8-a9804bcafdf1",
     "words": [
       "use",
       "when",

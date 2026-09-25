@@ -1510,7 +1510,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "Annex VII"
       },
       {
-        "path": "src/website/marketing-skills.ts",
+        "path": "src/website/marketing/index.ts",
         "section": ""
       },
       {
@@ -5601,7 +5601,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Role-Based Access Control",
     "uuid": "e67e2dd4-b480-802e-be8b-990117b82dc6",
     "color": "hsl(326 65% 58%)",
-    "count": 56,
+    "count": 53,
     "modules": [
       {
         "path": "src/app/(frontend)/next/seed/route.ts",
@@ -6642,7 +6642,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/agents/mcp/tool/novelty.ts",
+        "path": "src/agents/mcp/tool/novelty/index.ts",
         "section": ""
       },
       {

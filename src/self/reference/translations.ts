@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when verifying erpax observes ITSELF — the platform's own genome must yield ≥1 collection, chain, agent, and standard, the erpax-platform role, and the meta agents (Conservation Law 23, checkErpaxObservesItself). The self reaching into its own root; the genome is the debit, the observation the credit.",
-    "uuid": "1dbe0cac-c0fb-81b0-b8dd-6cfd8619108c",
+    "uuid": "9f20dce6-c3c4-8c15-98a1-3b849efe7080",
     "words": [
       "use",
       "when",

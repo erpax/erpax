@@ -3,13 +3,13 @@ name: live
 description: "Use when reasoning about live as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: live
 coordinate: "live · 5/round · cc45aa3d"
-contentUuid: "bfafe93d-1d0e-5e7b-b727-e9a7f89015e4"
+contentUuid: "c457114d-4dce-5b05-be8d-88fb9b9f099b"
 diamondUuid: "ec958d73-3b48-8cc9-9205-adfcb2ab72ee"
 uuid: "cc45aa3d-9bb8-8cc3-8d2e-a10ae6db9ccc"
 horo: 5
 typography:
   partition: live
-  bondDegree: 38
+  bondDegree: 41
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

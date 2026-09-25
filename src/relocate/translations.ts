@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deciding WHERE logic belongs — move it to its gravity well, the heaviest atom it is wired to, the adequate place nearest its users. Computes each atom's gravity centre and the pull toward it, so general logic buried in a specialized module is drawn up to the general atom.",
-    "uuid": "a91cb52c-eaa7-8ca5-870e-adf5c1f1c443",
+    "uuid": "e9a7a2df-9076-8599-b943-5ca6e6d46082",
     "words": [
       "use",
       "when",

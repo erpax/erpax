@@ -72,6 +72,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "agents/mcp/tool/cloudflare",
   "agents/mcp/tool/float",
   "agents/mcp/tool/kyc",
+  "agents/mcp/tool/novelty",
   "agents/mcp/tool/risk",
   "agents/mcp/tool/staffing",
   "agents/registered",
@@ -926,6 +927,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "outward/coverage",
   "outward/eu",
   "outward/gate",
+  "outward/leads",
   "outward/world",
   "pack",
   "pack/items",
@@ -1010,6 +1012,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "publish",
   "publish/complete",
   "publish/harvest",
+  "publish/live",
   "publish/paper",
   "publish/registry",
   "publish/zenodo",
@@ -1493,7 +1496,9 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "wave/session",
   "wco/hs",
   "website",
+  "website/marketing",
   "website/seo",
+  "website/shadcn",
   "whole",
   "widget",
   "witness/testing",
@@ -1519,7 +1524,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1512 as const
+export const ATOM_LEDGER_PATH_COUNT = 1517 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1785,6 +1790,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp",
     "agents/mcp/tool",
     "agents/mcp/tool/kyc"
+  ],
+  "agents/mcp/tool/novelty": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/novelty"
   ],
   "agents/mcp/tool/risk": [
     "agents/mcp",
@@ -4896,6 +4906,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "outward",
     "outward/gate"
   ],
+  "outward/leads": [
+    "outward",
+    "outward/leads"
+  ],
   "outward/world": [
     "outward",
     "outward/world"
@@ -5183,6 +5197,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "publish/harvest": [
     "publish",
     "publish/harvest"
+  ],
+  "publish/live": [
+    "publish",
+    "publish/live"
   ],
   "publish/paper": [
     "publish",
@@ -7001,9 +7019,17 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "website": [
     "website"
   ],
+  "website/marketing": [
+    "website",
+    "website/marketing"
+  ],
   "website/seo": [
     "website",
     "website/seo"
+  ],
+  "website/shadcn": [
+    "website",
+    "website/shadcn"
   ],
   "whole": [
     "whole"
@@ -7086,4 +7112,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 860 as const
+export const MERGED_NESTED_PATH_COUNT = 865 as const

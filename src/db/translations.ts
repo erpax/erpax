@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "db",
-    "uuid": "4ebad988-2678-8626-85b3-577783965ada",
+    "uuid": "6a50d8fa-7f1f-8287-ac08-286571f5c96d",
     "words": [
       "db"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core with infinite tamper-cost, deduping by the merge law.",
-    "uuid": "85e4c7fc-15dd-8428-a98a-2a610276364f",
+    "source": "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core, with a forge cost the anchor caps (finite; unbounded only as coverage → 1), deduping by the merge law.",
+    "uuid": "c3e7fd58-f903-852b-b3b0-f3a200f24eba",
     "words": [
       "use",
       "when",
@@ -57,9 +57,17 @@ export const translations: readonly Translation[] = [
       "entropy",
       "core",
       "with",
-      "infinite",
-      "tamper",
+      "a",
+      "forge",
       "cost",
+      "the",
+      "anchor",
+      "caps",
+      "finite",
+      "unbounded",
+      "only",
+      "as",
+      "coverage",
       "deduping",
       "by",
       "the",
@@ -67,7 +75,7 @@ export const translations: readonly Translation[] = [
       "law"
     ],
     "values": {
-      "en": "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core with infinite tamper-cost, deduping by the merge law."
+      "en": "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core, with a forge cost the anchor caps (finite; unbounded only as coverage → 1), deduping by the merge law."
     }
   }
 ]

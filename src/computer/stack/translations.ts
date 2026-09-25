@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stack",
-    "uuid": "4130b5ee-76ad-8472-a2f9-8d03c31b2529",
+    "uuid": "983382c5-d2ac-87ec-8569-564d401c211a",
     "words": [
       "stack"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing call frames LIFO under the machine — executable stack nested under computer; distinct from top-level @/stack deployment palindrome.",
-    "uuid": "162214c1-21fe-8db2-a824-c55345517029",
+    "uuid": "82155196-0e06-8cf8-ba7b-026ce662b235",
     "words": [
       "use",
       "when",

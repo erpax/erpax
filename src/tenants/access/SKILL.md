@@ -3,13 +3,13 @@ name: access
 description: "Use when reasoning about the tenants collection's access control — who may read, create, update, or delete tenants."
 atomPath: "tenants/access"
 coordinate: "tenants/access · 6/6 · 0d5a26dc"
-contentUuid: "8f8fc8b9-da66-55f4-ab96-f7c27f03654b"
+contentUuid: "effa4180-3d54-56fd-834c-aed574048ec2"
 diamondUuid: "bd875302-a7c3-8dfd-aa9f-74886277e64a"
 uuid: "0d5a26dc-c806-862d-9c03-6681385ed7e4"
 horo: 6
 typography:
   partition: tenants
-  bondDegree: 436
+  bondDegree: 441
 standards: []
 bindings: []
 signatures:

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a consumer needs to FIND erpax rather than run it — the orientation face: the canonical repo, the sealed skill entry, the one law, and the tiered licence, shipped as @erpax/erpax.",
-    "uuid": "946a9449-3328-8a2b-ab72-2b214bdb5b30",
+    "uuid": "b27353eb-005a-899a-bb13-5de41c993199",
     "words": [
       "use",
       "when",

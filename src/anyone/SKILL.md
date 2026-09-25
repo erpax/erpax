@@ -3,18 +3,18 @@ name: anyone
 description: "Use when granting deliberate public/unauthenticated read on a Payload collection or field — the access predicate that always grants, documenting the intentional public-read decision as part of the access-control regime."
 atomPath: anyone
 coordinate: "anyone · 4/weave · b7234fcf"
-contentUuid: "cef30220-6961-5c28-95bd-9081de5da354"
-diamondUuid: "2194c9aa-59c8-8052-a6d6-986f9671850f"
+contentUuid: "b135d1fe-effd-5c1a-bbd7-9f4f121ed448"
+diamondUuid: "e4e5db3e-58b7-858a-8509-a4b9678ebbb7"
 uuid: "b7234fcf-1927-89e5-a8ca-aaf1821236f5"
 horo: 4
 typography:
   partition: anyone
-  bondDegree: 6
+  bondDegree: 9
 standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "5ba85e32-ed75-8a94-b39b-9ac74afdb769"
+  computationUuid: "d0e370a6-22db-81c9-a9f6-0be8ccbe8aef"
   stages:
     - stage: path
       stageUuid: "a25a040e-d3de-8b90-9744-85c571fc800c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5f6bd8f9-01f1-8638-9873-4b6e8a0e71a2"
     - stage: horo
-      stageUuid: "46b4fa1f-0ad2-820b-8390-dcb650566f76"
+      stageUuid: "fdf0362a-73f9-83d2-a5f8-4ba2cfe9da2d"
     - stage: seal
       stageUuid: "146d84af-4019-844d-8ba6-e6b78c300957"
     - stage: uuid
-      stageUuid: "025f3b16-631e-8d29-85d6-49b7d23d55b9"
+      stageUuid: "fc013282-2d2b-8669-b6d5-75c446906ded"
 version: 2
 ---
 # anyone — public read predicate (always grant)

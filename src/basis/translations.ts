@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about basis — Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves",
-    "uuid": "1fc728e2-3710-8c39-a7d3-d56fa556d2b4",
+    "uuid": "003fc2f4-b079-85ab-8f80-69c0b0e480be",
     "words": [
       "use",
       "when",

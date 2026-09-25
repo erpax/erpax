@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about membership — diamond/membership — stray-file membership audit (no readme dependency).",
-    "uuid": "102c4898-f390-8037-9e91-bb97263f3295",
+    "uuid": "879762a9-2b3a-8acf-9171-878c02ccffb6",
     "words": [
       "use",
       "when",

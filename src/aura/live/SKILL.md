@@ -3,13 +3,13 @@ name: live
 description: "Use when reasoning about the aura as a live animation — the analog field stepping through the horo ring, each position a frame lit by its colour and sound, where scanning an atom joins it to the horo (its position is its frame), the society animated."
 atomPath: "aura/live"
 coordinate: "aura/live · 2/share · b5d8f63c"
-contentUuid: "9bc427bf-1936-5b9d-bf51-78ca4d2638fb"
+contentUuid: "3bb731b4-a84c-52e9-93ab-a336fe7e978a"
 diamondUuid: "bd040606-7c0d-8736-8545-014fb2317639"
 uuid: "b5d8f63c-83bf-85fa-93d5-36c012e66be6"
 horo: 2
 typography:
   partition: aura
-  bondDegree: 38
+  bondDegree: 41
 standards:
   - "the horo ring (1·2·4·8·7·5·9) · A432 signal per step · content-addressed colour/sound (the analog aura)"
 bindings: []

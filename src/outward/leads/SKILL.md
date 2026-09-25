@@ -1,3 +1,36 @@
+---
+name: leads
+description: "Use when reasoning about leads — outward already holds the machinery: an answer is content-addressed, a remembers the last address, and returns **fresh · unchanged · moved · unreachable**."
+atomPath: "outward/leads"
+coordinate: "outward/leads · 1/base · 3598179d"
+contentUuid: "1b4cf7c0-3223-5461-8745-3a94a1031349"
+diamondUuid: "7fda0d0d-d456-81f2-a482-4cd7e451f469"
+uuid: "3598179d-a94f-8aca-aaf2-7a3fff795c74"
+horo: 1
+typography:
+  partition: outward
+  bondDegree: 39
+standards: []
+bindings: []
+signatures:
+  computationUuid: "9cde4d6a-2a68-87f3-910e-737f0ea89204"
+  stages:
+    - stage: path
+      stageUuid: "b864253c-03bc-8cb3-8fe3-75f4dadcd26e"
+    - stage: trinity
+      stageUuid: "d37cf256-7d7f-8073-8706-7bce7ebd8317"
+    - stage: boundary
+      stageUuid: "61a1bbd2-d1ca-8d95-8e07-2fa5cba67ba5"
+    - stage: links
+      stageUuid: "9e3cedb0-1a85-88a8-af29-9bc6879c2b2e"
+    - stage: horo
+      stageUuid: "68e18c3f-7f6d-854b-82ed-1060024d447e"
+    - stage: seal
+      stageUuid: "62b87651-1782-8128-9316-0ed4c329919f"
+    - stage: uuid
+      stageUuid: "a633304c-c4cc-8473-a89f-219febc00330"
+version: 2
+---
 # outward/leads — every API is a lead source, and the boundary had two shapes
 
 [[outward]] already holds the machinery: an answer is content-addressed, a `ReceiptBook` remembers

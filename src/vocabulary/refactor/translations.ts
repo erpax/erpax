@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts.",
-    "uuid": "d577e53f-3f1b-8b5a-a7a0-02a9e9685f86",
+    "uuid": "480138fe-cdd3-8739-b17a-580ff7b4a599",
     "words": [
       "use",
       "when",
