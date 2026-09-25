@@ -23,6 +23,7 @@ import { linearGaps, entanglementScore } from '@/quantum'
 import { parseWithSecurity } from '@/agent/security'
 import { issueReceipt, type Receipt } from '@/receipt'
 import { neighborsOf } from '@/uuid/matrix'
+import { next as conjectureNext, type Conjecture, type ScoredConjecture } from '@/conjecture'
 import { merge } from '@/merge'
 
 export interface ScienceStep {
@@ -207,6 +208,37 @@ export function nextMoveByLeverage(cwd = process.cwd(), batch = 50, ranked?: rea
     })
   }
   return rows.sort((a, b) => (b.leverage - a.leverage) || a.root.localeCompare(b.root))
+}
+
+/** The agent's next move: a measured defect to close, or an open question to settle. */
+export type NextMove =
+  | { readonly kind: 'gap'; readonly gap: LeveragedNext }
+  | { readonly kind: 'conjecture'; readonly conjecture: ScoredConjecture }
+
+/**
+ * What to do next with no prompt — the autonomy lever.
+ *
+ * Two rankings feed it and they are NOT commensurable: `leverage` counts entangled
+ * defects and `worth` counts bits of surprise per second. Mixing them into one number
+ * would need a conversion nobody measured, which is precisely the invented constant
+ * [[rules]]/forge refuses. So they are ordered by KIND instead, on a rule the corpus
+ * already states: a measured defect is evidence in hand and an open conjecture is a
+ * question, so red work comes first and research is what the agent does when nothing
+ * is red.
+ *
+ * Returning `undefined` is the honest signal that the agent must ask — never a reason
+ * to invent a claim ([[conjecture]]).
+ */
+export function nextMove(
+  conjectures: readonly Conjecture[] = [],
+  cwd = process.cwd(),
+  batch = 50,
+): NextMove | undefined {
+  const gaps = nextMoveByLeverage(cwd, batch)
+  const top = gaps[0]
+  if (top !== undefined) return { kind: 'gap', gap: top }
+  const open = conjectureNext(conjectures, cwd)
+  return open === undefined ? undefined : { kind: 'conjecture', conjecture: open }
 }
 
 /** One root's accumulated experience: how often attempting it actually reduced the violation count. */

@@ -788,6 +788,8 @@ src/config/types/index.ts:8: * @standard ISO-17442-1:2020 lei
 src/config/types/index.ts:9: * @standard BCP-47 language-tag
 src/confirm/push/index.ts:17: * @standard ISO-19011:2018 audit-trail self-heal-visible-in-git-log
 src/confirm/uuid/index.ts:16: * @standard ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable
+src/conjecture/index.ts:15: * @standard Popper — a proposition that forbids nothing explains nothing
+src/conjecture/index.ts:16: * @standard Shannon (1948) — surprise is −log₂ p, in bits
 src/connections/index.ts:20: * @standard W3C ActivityStreams 2.0 social-graph-vocabulary (Follow/Block/Like)
 src/connections/index.ts:21: * @standard W3C ActivityPub server-to-server federation (the cross-platform sync)
 src/connections/index.ts:22: * @standard OASIS UBL 2.1 business-relationship (B2B trade edges)
