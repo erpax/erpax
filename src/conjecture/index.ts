@@ -132,6 +132,10 @@ export function crosses(cwd: string = process.cwd()): Cross[] {
       else if (e.name === 'SKILL.md') {
         const t = readFileSync(p, 'utf8')
         const named = new Set(laws.filter((l) => t.includes(`[[rules]]/${l}`) || t.includes(`[[rules/${l}]]`)))
+        // an atom's own SKILL never wikilinks itself, so a cross DRAWN inside one of its two
+        // atoms was invisible — the measure said `never together` about the page that joined them
+        const own = /[\\/]rules[\\/]([^\\/]+)[\\/]SKILL\.md$/.exec(p)?.[1]
+        if (own !== undefined && laws.includes(own)) named.add(own)
         if (named.size > 0) docs.push(named)
       }
     }

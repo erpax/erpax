@@ -119,17 +119,26 @@ missing instrument, not a discovery.**
 A conjecture does not have to be authored one at a time. **C(n,2) crosses exist the moment the laws
 do**, and which of them has never been drawn is computable from the corpus's own prose.
 
-Measured over `src/rules`: **33 laws · 528 crosses · 125 ever drawn (24%) · 403 never.**
+Measured over `src/rules` **as of 2026-09-25**: 33 laws · 528 crosses · **158 ever drawn (30%)** ·
+370 never.
 
 Each absence carries a surprise — Laplace-smoothed −PMI, which is large when both laws are widely
 cited and they still never meet:
 
 ```
-  1.26 bits  rules/concentration × rules/unraised   (cited 20 · 22, together 0)
-  1.11 bits  rules/copy          × rules/cycle      (cited 14 · 28, together 0)
-  1.04 bits  rules/face          × rules/refutable  (cited  5 · 68, together 0)
-  0.90 bits  rules/collapse      × rules/cycle      (cited 12 · 28, together 0)
+  1.36 bits  rules/concentration × rules/unraised   (cited 20 · 22, together 0)
+  1.19 bits  rules/face          × rules/refutable  (cited  5 · 68, together 0)
+  0.78 bits  rules/copy          × rules/prose      (cited 14 · 21, together 0)
 ```
+
+**An atom's own SKILL counts as naming itself.** It never wikilinks itself, so a cross *drawn inside
+one of its two atoms* was invisible: the measure said "never together" about the very page that
+joined them. Correcting that moved the drawn count by more than this session's edits did.
+
+**The loop closes.** `rules/copy × rules/cycle` stood second at 1.11 bits and is now **drawn** —
+[[rules]]/copy's `copiesInTangle` is the law that lives there, a duplicated body whose two files sit
+in one strongly connected component, where the initialisation order is decided by the graph rather
+than by either author. Enumerated, formulated, built, and the counter moved on its own.
 
 `copy × cycle` reads immediately: **a duplicated body inside an import tangle**. The two copies sit
 in a strongly connected component, so their initialisation order is decided by accident — they can

@@ -19,7 +19,7 @@ import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
 import { durableObjectExportGaps } from '@/cloudflare/binding'
 import { unreachedAtoms } from '@/rules/unreached'
-import { copyCount } from '@/rules/copy'
+import { copiesInTangle, copyCount } from '@/rules/copy'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -319,6 +319,12 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
     // written, which is the argument for a gate over a stated law. Ratchets from 44.
     guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 19 }),
+    // copy-in-tangle — a duplicated body whose two FILES sit in one strongly connected
+    // component ([[rules]]/copy × [[rules]]/cycle, the cross [[conjecture]] ranked second at
+    // 1.11 bits). Worse than either alone: inside a tangle the initialisation order of the two
+    // files is decided by the graph, so the same text runs under conditions neither author
+    // chose. Zero over a NON-EMPTY population — 7 cross-file copies, 13 tangles over 152 files.
+    guardian({ axis: 'copy-in-tangle', violations: copiesInTangle(cwd).length, baseline: 0 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carried
     // `sorry` or did not compile, under a directory named `verify` that nothing ever ran.
     // AT ZERO: the last two were never rejected proofs at all — the kernel was run with no

@@ -1,8 +1,9 @@
 import { readFileSync } from 'node:fs'
-import { relative } from 'node:path'
+import { join, relative } from 'node:path'
 import ts from 'typescript'
 import { createHash } from 'node:crypto'
 import { allFiles } from '@/syntax/cache'
+import { importCycles } from '@/rules/cycle'
 
 /**
  * rules/copy — one truth living at two addresses, found by content-addressing its body.
@@ -125,3 +126,38 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 }
 
 /** @index-cross.foldback child=rules/copy parent=rules — this cross folds back into its parent. */
+
+/** A duplicated body whose sites share an import tangle — the copy × cycle cross. */
+export interface TangledCopy extends CopyGroup {
+  /** Size of the strongly connected component both sites sit in. */
+  readonly tangle: number
+}
+
+/**
+ * Copies spanning two FILES that lie in one strongly connected component. See SKILL.md.
+ *
+ * Strictly worse than an ordinary copy: inside one tangle the initialisation order of the two
+ * files is decided by the graph rather than by either author, so the same text can run under
+ * different conditions — and neither law sees it alone.
+ *
+ * Two sites in ONE file are excluded: a file is trivially in its own component, and counting
+ * that would make every same-file duplicate a tangle finding — the noise floor this corpus has
+ * paid for four times.
+ */
+export function copiesInTangle(cwd: string = process.cwd(), minNodes = 40): TangledCopy[] {
+  const components = importCycles(cwd)
+  const member = new Map<string, number>()
+  components.forEach((c, i) => {
+    for (const f of c) member.set(f, i)
+  })
+  const out: TangledCopy[] = []
+  for (const g of duplicateBodies(cwd, minNodes)) {
+    if (new Set(g.sites.map((s) => s.file)).size < 2) continue
+    const ids = g.sites.map((s) => member.get(join(cwd, s.file)) ?? member.get(s.file))
+    const first = ids[0]
+    if (first === undefined) continue
+    if (!ids.every((id) => id === first)) continue
+    out.push({ ...g, tangle: components[first]?.length ?? 0 })
+  }
+  return out.sort((a, b) => b.nodes - a.nodes || a.address.localeCompare(b.address))
+}

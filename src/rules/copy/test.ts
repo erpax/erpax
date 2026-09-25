@@ -112,3 +112,37 @@ describe('rules/copy — the live corpus', () => {
     }
   })
 })
+
+/**
+ * The copy × cycle cross — formulated from the enumerator, then built.
+ *
+ * `conjecture.crosses()` ranked `rules/copy × rules/cycle` second at 1.11 bits: both laws widely
+ * cited, never drawn together. The claim it names is a real one — a duplicated body whose two
+ * sites lie in ONE strongly connected component is strictly worse than an ordinary copy, because
+ * inside a tangle the initialisation order of the two files is decided by the graph rather than
+ * by either author.
+ */
+describe('rules/copy — a copy inside one tangle', () => {
+  it('the population is real, so a zero here is a measurement', async () => {
+    const { duplicateBodies } = await import('@/rules/copy')
+    const { importCycles } = await import('@/rules/cycle')
+    const crossFile = duplicateBodies().filter((g) => new Set(g.sites.map((s) => s.file)).size > 1)
+    expect(crossFile.length).toBeGreaterThan(0) // 7 at the time of writing
+    const tangled = importCycles()
+    expect(tangled.length).toBeGreaterThan(0)
+    expect(tangled.reduce((n, c) => n + c.length, 0)).toBeGreaterThan(1)
+  }, 300_000)
+
+  it('and no cross-file copy currently sits inside one', async () => {
+    const { copiesInTangle } = await import('@/rules/copy')
+    expect(copiesInTangle()).toEqual([])
+  }, 300_000)
+
+  it('a same-FILE duplicate is excluded — a file is trivially its own component', async () => {
+    const { copiesInTangle, duplicateBodies } = await import('@/rules/copy')
+    const sameFile = duplicateBodies().filter((g) => new Set(g.sites.map((s) => s.file)).size === 1)
+    expect(sameFile.length).toBeGreaterThan(0) // the readme/compute pair
+    // counting those would make every same-file duplicate a tangle finding — the noise floor
+    for (const g of copiesInTangle()) expect(new Set(g.sites.map((s) => s.file)).size).toBeGreaterThan(1)
+  }, 300_000)
+})

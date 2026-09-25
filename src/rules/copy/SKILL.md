@@ -93,6 +93,42 @@ scaffolding legitimately repeats). And it finds copies, never near-copies: a bod
 character is invisible to it, which is the price of using an address instead of a score. And as above, a matching body says
 nothing about the constants it reads — that check is the human's, before the cut.
 
+## The copy × cycle cross, formulated and then built
+
+[[conjecture]]'s enumerator ranked `rules/copy × rules/cycle` **second of 528 crosses at 1.11 bits**
+— both laws widely cited (14 and 28 SKILLs), never drawn together. The enumeration produced the
+pair; the claim it names is real, and this is it:
+
+**A duplicated body whose two FILES lie in one strongly connected component is strictly worse than
+an ordinary copy.** Inside a tangle the initialisation order of the two files is decided by the
+import graph rather than by either author, so the same text can run under conditions neither of
+them chose — and neither law sees it alone. `rules/copy` reports two identical bodies and says
+nothing about when they run; `rules/cycle` reports a tangle and says nothing about what is inside
+it.
+
+| | count (2026-09-25) |
+| --- | ---: |
+| duplicate bodies | 13 |
+| **spanning two or more files** | **7** |
+| import tangles | 13, over 152 files |
+| **cross-file copies inside ONE tangle** | **0** |
+
+**Zero over a non-empty population.** Both ingredients exist in quantity, so the gate stands where
+traffic passes rather than being a check that cannot fire ([[rules]]/unraised) — and the baseline is
+0 because there is no acceptable number of bodies duplicated across files whose running order is an
+accident.
+
+**Same-file duplicates are excluded.** A file is trivially in its own component, so counting them
+would make every same-file duplicate a tangle finding — this corpus's noise floor, paid for four
+times. The `readme/compute` pair at lines 926 and 966 is exactly that case and is correctly not
+here.
+
+**Honest boundary.** This proves two bodies are the same TEXT and that their files are mutually
+reachable — never that they diverge, and never that the order actually differs on any given entry
+into the graph. That is [[rules]]/cycle's own boundary restated: entangled is not fatal, and which
+loops bite depends on how the graph is entered. It closes the case where a copy's two halves cannot
+even be reasoned about independently.
+
 **Law — [[law]]: the same body at two addresses is one implementation and one decoy. Content-address
 every body; where two agree, one of them is unmaintained and nobody knows which.**
 
