@@ -1,7 +1,7 @@
 import type { Access, CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
-import { adminOrAccountant, scopedAccess } from '@/auth'
+import { adminOrAccountant, scopedAccess, neverDelete } from '@/auth'
 import {
   currencyField,
   statusField,
@@ -24,8 +24,6 @@ import {
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see src/sale/fiscal/receipt/index.ts · src/sale/virtual-device.ts
  */
-const neverDelete: Access = () => false
-
 const Receipts: CollectionConfig = {
   slug: 'receipts',
   labels: { singular: 'Receipt', plural: 'Receipts' },

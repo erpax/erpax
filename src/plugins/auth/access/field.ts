@@ -20,7 +20,7 @@ import type { FieldAccess } from 'payload'
 // other silently keeps admitting. rules/copy found it by content address, and neither copy closed
 // over anything, so the fold is safe to make ([[rules]]/copy's own boundary: the hash covers the
 // body, never what it reads).
-import { userIsSuperAdmin } from './predicates'
+import { fieldAccess } from '@/is/super/admin'
 
 /**
  * Tenant field access control.
@@ -48,7 +48,7 @@ import { userIsSuperAdmin } from './predicates'
  *     }
  *   }
  */
-export const tenantFieldAccess: FieldAccess = ({ req }) => userIsSuperAdmin(req.user)
+export const tenantFieldAccess: FieldAccess = fieldAccess
 
 /**
  * Read-only field access (except for super-admin).
@@ -74,4 +74,4 @@ export const tenantFieldAccess: FieldAccess = ({ req }) => userIsSuperAdmin(req.
  *     }
  *   }
  */
-export const readOnlyExceptSuperAdmin: FieldAccess = ({ req }) => userIsSuperAdmin(req.user)
+export const readOnlyExceptSuperAdmin: FieldAccess = fieldAccess

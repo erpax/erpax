@@ -1,8 +1,11 @@
 /**
- * Canonical Access Predicates
+ * Canonical Access Predicates — a RE-EXPORT, because a policy has one address.
  *
- * Collection-level access control using Payload v3 Access type.
- * All access control in the codebase routes through these helpers.
+ * This file used to DEFINE four predicates and claim that "all access control in the codebase
+ * routes through these helpers". Measured 2026-09-25: no collection imported it, while 233 access
+ * legs routed through `@/auth`, `@/authenticated`, `@/anyone`, `@/is/super/admin` and
+ * `@/tenant/scoped/read`. Two of its definitions had diverged from the live ones under the same
+ * names. See ./SKILL.md.
  *
  * @standard NIST INCITS-359-2012 role-based-access-control
  * @security ISO-27001 A.5.18 access-rights
@@ -13,116 +16,24 @@
  */
 
 import type { Access } from 'payload'
-import { getTenantContext } from '@/plugins/auth/context'
+import { adminOnly as canonicalAdminOnly, multiTenantRead } from '@/auth'
+import { superAdminOnly, isSuperAdmin as canonicalIsSuperAdmin } from '@/is/super/admin'
+
+export { authenticated } from '@/authenticated'
+
+/** Does this user hold the super-admin role — the canonical predicate. */
+export const userIsSuperAdmin = (user: unknown): boolean => canonicalIsSuperAdmin(user)
+
+/** Super-admin only. The privileged-role policy, defined once in `@/is/super/admin`. */
+export const isSuperAdmin: Access = superAdminOnly
+
+/** Admin or super-admin. Defined once in `@/auth`, sourced from the role registry. */
+export const adminOnly: Access = canonicalAdminOnly
 
 /**
- * Helper: Check if user has super-admin role.
+ * Read within the caller's own tenant.
  *
- * @param user Request user object
- * @returns true if user has 'super-admin' role
+ * Aliases `@/auth`'s `multiTenantRead`. The definition this replaced also returned `true` for a
+ * super-admin; that bypass is the separate `isSuperAdmin` policy above, and it had no caller here.
  */
-export const userIsSuperAdmin = (user: unknown): boolean => {
-  if (!user || typeof user !== 'object') return false
-  const roles = (user as Record<string, unknown>).roles
-  return Array.isArray(roles) && roles.includes('super-admin')
-}
-
-/**
- * Super-admin access predicate.
- *
- * Only users with 'super-admin' role can access. Used for system-critical
- * collections and operations that require global privilege.
- *
- * @standard NIST INCITS-359-2012 role-based-access-control privileged-role
- * @security ISO-27002 § 8.2 privileged-access-rights
- * @compliance SOC-2 CC6.3 privileged-access-management
- *
- * @example
- *   access: {
- *     read: isSuperAdmin,
- *     create: isSuperAdmin,
- *     update: isSuperAdmin,
- *     delete: isSuperAdmin,
- *   }
- */
-export const isSuperAdmin: Access = ({ req }) => {
-  return userIsSuperAdmin(req.user)
-}
-
-/**
- * Authenticated access predicate.
- *
- * Any logged-in user can access, regardless of role or tenant.
- * Use this for operations that should be available to all authenticated users.
- *
- * @security ISO-27001 A.5.16 identity-management
- * @security ISO-27002 § 5.15 access-control
- * @security ISO-27002 § 8.5 secure-authentication
- *
- * @example
- *   access: {
- *     read: authenticated,
- *     create: authenticated,
- *   }
- */
-export const authenticated: Access = ({ req }) => {
-  return Boolean(req.user)
-}
-
-/**
- * Tenant-scoped read predicate.
- *
- * User can read documents in their tenant(s) only.
- * Super-admin can read across all tenants (returns `true` to grant all access).
- * Standard users get a query filter scoped to their tenant.
- *
- * @standard NIST INCITS-359-2012 role-based-access-control
- * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @security ISO-27002 § 5.15 access-control
- * @security ISO-27002 § 8.3 information-access-restriction
- * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
- * @compliance SOC-2 CC6.1 logical-access-controls
- *
- * @example
- *   access: {
- *     read: tenantScoped,
- *     create: authenticated,
- *   }
- */
-export const tenantScoped: Access = async ({ req }) => {
-  if (!req.user) return false
-
-  // Super-admin can read all tenants
-  if (userIsSuperAdmin(req.user)) return true
-
-  // Standard users: filter by their tenant
-  const ctx = getTenantContext(req)
-  return {
-    tenant: { equals: ctx.tenantId },
-  }
-}
-
-/**
- * Admin-only access predicate.
- *
- * Only users with 'admin' or 'super-admin' roles can access.
- * Use this for administrative operations within a tenant.
- *
- * @standard NIST INCITS-359-2012 role-based-access-control
- * @security ISO-27002 § 5.15 access-control
- * @security ISO-27002 § 5.18 access-rights
- * @compliance SOC-2 CC6.2 prior-to-issuing-system-access
- *
- * @example
- *   access: {
- *     create: adminOnly,
- *     update: adminOnly,
- *     delete: adminOnly,
- *   }
- */
-export const adminOnly: Access = ({ req }) => {
-  const user: unknown = req.user
-  if (!user || typeof user !== 'object') return false
-  const roles = (user as Record<string, unknown>).roles
-  return Array.isArray(roles) && (roles.includes('admin') || roles.includes('super-admin'))
-}
+export const tenantScoped: Access = multiTenantRead

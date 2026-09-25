@@ -20,7 +20,13 @@ describe('cases/validator', () => {
     expect(validateCaseTransition(1, 1)).toBe(true)
   })
 
-  it('neverDelete always returns false', () => {
-    expect(neverDelete()).toBe(false)
+  it('neverDelete refuses EVERY principal — a super-admin cannot erase a sealed matter', () => {
+    // called the way Payload calls it, and asserted against the strongest caller there is:
+    // `expect(neverDelete()).toBe(false)` proved only that a constant function is constant
+    const asPayloadCalls = (user: unknown) =>
+      neverDelete({ req: { user } } as unknown as Parameters<typeof neverDelete>[0])
+    expect(asPayloadCalls(null)).toBe(false)
+    expect(asPayloadCalls({ roles: ['admin'] })).toBe(false)
+    expect(asPayloadCalls({ roles: ['super-admin'] })).toBe(false)
   })
 })

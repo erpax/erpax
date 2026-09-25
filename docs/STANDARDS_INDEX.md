@@ -407,7 +407,7 @@ src/audit/trail/write-audit-event.ts:48: * @standard ISO 27001 Annex A.12.4 logg
 src/audit/trail/write-audit-event.ts:49: * @standard NIST SP 800-92 §3.4 log integrity
 src/aura/find-gaps.ts:25: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/auth/index.ts:11: * @standard OWASP-ASVS V4 access-control
-src/auth/index.ts:190: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
+src/auth/index.ts:199: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
 src/auth/index.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/auth/index.ts:5: * @standard NIST SP-800-162 attribute-based-access-control
 src/authenticated/or/published/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
@@ -2226,10 +2226,7 @@ src/plugin/dimensions.ts:38: * @standard Topology — 10 vortices form the torus
 src/plugins/auth/access/field.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
-src/plugins/auth/access/predicates.ts:111: * @standard NIST INCITS-359-2012 role-based-access-control
-src/plugins/auth/access/predicates.ts:36: * @standard NIST INCITS-359-2012 role-based-access-control privileged-role
-src/plugins/auth/access/predicates.ts:79: * @standard NIST INCITS-359-2012 role-based-access-control
-src/plugins/auth/access/predicates.ts:7: * @standard NIST INCITS-359-2012 role-based-access-control
+src/plugins/auth/access/predicates.ts:10: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/mcp/scopes/index.ts:31: * @standard ISO/IEC 27002 §5.15 access-control + §5.18 access-rights (per-key narrowing)
 src/plugins/mcp/scopes/index.ts:32: * @standard ISO/IEC 27001 §A.9.4.1 information access restriction
 src/plugins/naming/index.ts:28: * @standard RFC 9562 §5.8 name-based UUID (the digest source)
@@ -4094,10 +4091,6 @@ src/plugins/auth/access/field.ts:13: * @compliance SOC-2 CC6.1 logical-access-co
 src/plugins/auth/access/field.ts:36: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/plugins/auth/access/field.ts:64: * @compliance SOC-2 CC7.2 system-monitoring
 src/plugins/auth/access/index.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
-src/plugins/auth/access/predicates.ts:114: * @compliance SOC-2 CC6.2 prior-to-issuing-system-access
-src/plugins/auth/access/predicates.ts:38: * @compliance SOC-2 CC6.3 privileged-access-management
-src/plugins/auth/access/predicates.ts:83: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/plugins/auth/access/predicates.ts:84: * @compliance SOC-2 CC6.1 logical-access-controls
 src/plugins/versions/index.ts:30: * @compliance SOX §404 internal-controls record-retention
 src/posts/hooks/populateAuthors.ts:14: * @compliance GDPR Art.5(1)(c) data-minimization
 src/posts/hooks/populateAuthors.ts:15: * @compliance GDPR Art.32 security-of-processing
@@ -5043,7 +5036,7 @@ src/audit/events/index.ts:49: * @security ISO-27001 A.5.23 cloud-service-tenant-
 src/audit/events/index.ts:50: * @security ISO-27002 §8.15 logging
 src/audit/submissions/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/auth/index.ts:10: * @security ISO-27002 §5.4 segregation-of-duties
-src/auth/index.ts:191: * @security ISO-27001 A.5.15 access-control
+src/auth/index.ts:200: * @security ISO-27001 A.5.15 access-control
 src/auth/index.ts:6: * @security ISO-27001 A.5.15 access-control
 src/auth/index.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/auth/index.ts:8: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5330,20 +5323,11 @@ src/plugins/auth/access/index.ts:12: * @security ISO-27001 A.5.18 access-rights
 src/plugins/auth/access/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/auth/access/index.ts:14: * @security ISO-27002 § 5.15 access-control
 src/plugins/auth/access/index.ts:15: * @security ISO-27002 § 5.4 segregation-of-duties
-src/plugins/auth/access/predicates.ts:10: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/predicates.ts:112: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/predicates.ts:113: * @security ISO-27002 § 5.18 access-rights
-src/plugins/auth/access/predicates.ts:11: * @security ISO-27002 § 5.18 access-rights
-src/plugins/auth/access/predicates.ts:12: * @security ISO-27002 § 8.2 privileged-access-rights
-src/plugins/auth/access/predicates.ts:37: * @security ISO-27002 § 8.2 privileged-access-rights
-src/plugins/auth/access/predicates.ts:58: * @security ISO-27001 A.5.16 identity-management
-src/plugins/auth/access/predicates.ts:59: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/predicates.ts:60: * @security ISO-27002 § 8.5 secure-authentication
-src/plugins/auth/access/predicates.ts:80: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/plugins/auth/access/predicates.ts:81: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/predicates.ts:82: * @security ISO-27002 § 8.3 information-access-restriction
-src/plugins/auth/access/predicates.ts:8: * @security ISO-27001 A.5.18 access-rights
-src/plugins/auth/access/predicates.ts:9: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/access/predicates.ts:11: * @security ISO-27001 A.5.18 access-rights
+src/plugins/auth/access/predicates.ts:12: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/access/predicates.ts:13: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/predicates.ts:14: * @security ISO-27002 § 5.18 access-rights
+src/plugins/auth/access/predicates.ts:15: * @security ISO-27002 § 8.2 privileged-access-rights
 src/plugins/auth/context/tenant.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/auth/context/tenant.ts:7: * @security ISO-27002 § 5.15 access-control
 src/posts/hooks/beforeChange.ts:7: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope

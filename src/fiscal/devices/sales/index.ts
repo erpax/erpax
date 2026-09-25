@@ -2,7 +2,7 @@ import type { Access, CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { autoSetTimestamp } from '@/auto/set/timestamp'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
-import { adminOrAccountant, scopedAccess } from '@/auth'
+import { adminOrAccountant, scopedAccess, neverDelete } from '@/auth'
 import { currencyField, statusField, auditFields, unpField, fiscalDeviceNumberField, operatorCodeField, saleStatusOptions } from '@/field'
 import { assignSaleUnpHook } from '@/sale'
 import { deriveSaleOperatorCodeHook } from '@/sale'
@@ -28,9 +28,6 @@ import { emitSaleClosedHook } from '@/sale'
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see .claude/skills/supto/SKILL.md · src/sale/* · src/naredba/n/18/unp/index.ts
  */
-
-/** Наредба Н-18: a sale is never deleted — it is reversed (сторно), preserving the record. */
-const neverDelete: Access = () => false
 
 const Sales: CollectionConfig = {
   slug: 'sales',

@@ -10,8 +10,11 @@ import type { CollectionBeforeChangeHook } from 'payload'
 
 /**
  * A matter is sealed, never deleted (the append-only / no-erasure law).
+ *
+ * Re-exported rather than redefined: the policy has one address in `@/auth`, and this name stays
+ * on the atom's face because callers hold it.
  */
-export const neverDelete = () => false
+export { neverDelete } from '@/auth'
 
 /**
  * The balance law as a guard: a matter SEALS (step 9, unity) only once
