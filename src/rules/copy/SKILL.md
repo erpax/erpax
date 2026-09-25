@@ -167,6 +167,46 @@ ratcheted in the same commit ([[rules]]/slack), and `copy` came down from 19 to 
 hand-written baseline, which the slack axis does not read, so it had been sitting seven above the
 tree for some time.
 
+## Access policies — the sub-floor case, where a copy matters at any size
+
+`minNodes` is declared at 40 and that floor is correct for ordinary bodies. It is **wrong for an
+access policy**, whose body is routinely one line — and that is not hypothetical:
+
+| the policy | where it was | how the floor hid it |
+| --- | --- | --- |
+| `neverDelete` = `() => false` | privately in **4** statutory collections | 1 node |
+| `auditTrailModifyDenied` = `() => { return false }` | a **5th** copy | 1 node, and braces changed the text |
+| `auditTrailCreate` = `isSuperAdmin(req.user)` | a 2nd `superAdminOnly` | 2 nodes |
+| `adminOnly` · `userIsSuperAdmin` | diverged 2nd bodies in `plugins/auth/access` | small, and unused |
+
+So `accessPolicies` is exempt from the floor, and a policy is identified by **Payload's own type
+annotation** — `const X: Access` or `const X: FieldAccess` — parsed, never guessed.
+
+`policyAddresses` groups by `family + hash`. Three refusals keep the number honest, and each one was
+a false positive this gate reported before it was narrowed:
+
+- **`Access` and `FieldAccess` are different interfaces.** `superAdminOnly: Access` and
+  `fieldAccess: FieldAccess` share a body and satisfy two different contracts; grouping by hash
+  alone reported them as a copy. They are not.
+- **`{ return x }` and `x` are the same policy.** The 5th `neverDelete` hid behind a pair of braces.
+  A single-return block is normalised to its expression, or content-addressing measures syntax
+  instead of meaning.
+- **One name in two atoms is not a copy.** `updateAndDeleteAccess` exists in `tenants/access` and
+  `users/access` with genuinely different bodies — one filters by `id`, the other by
+  `tenants.tenant` and grants self-access. A first draft of this gate flagged that as shadowing,
+  which is exactly the population [[rules]]/face measured and **refuted** (156 matches, dominated by
+  Next's `POST` convention and per-atom `translations`). The path is the message: two atoms may
+  honestly name their own collection's policy alike, so that half was dropped rather than shipped
+  as noise.
+
+Zero is a **theorem**, not a ratchet: a rule a reviewer must trust may not be a coin flip between
+two bodies. Registered as the `policy-address` guardian, so it is a wall rather than this paragraph.
+
+**Honest boundary.** This proves a policy body is **written once**, never that it is **correct** or
+called in the right place — an alias is trusted, a policy assembled by a factory or returned from a
+higher-order helper has no `: Access` annotation to find, and the 123 collection access legs whose
+value is not an object literal are outside it.
+
 **Law — [[law]]: the same body at two addresses is one implementation and one decoy. Content-address
 every body; where two agree, one of them is unmaintained and nobody knows which.**
 

@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { copyCount, duplicateBodies } from './index'
+import { copyCount, duplicateBodies, policyAddresses, assertOnePolicyAddress } from './index'
 
 const tree = (files: Record<string, string>): string => {
   const root = mkdtempSync(join(tmpdir(), 'erpax-copy-'))
@@ -169,4 +169,46 @@ describe('rules/copy — a copy no site earns', () => {
     const { unearnedCopies } = await import('@/rules/copy')
     expect(unearnedCopies(new Set<string>())).toEqual([])
   }, 300_000)
+})
+
+describe('accessPolicies — a rule a reviewer must trust has one address', () => {
+  it('every access policy in the corpus lives at exactly one address', () => {
+    expect(policyAddresses(process.cwd())).toEqual([])
+    expect(() => assertOnePolicyAddress(process.cwd())).not.toThrow()
+  })
+
+  it('a body written `{ return x }` is the same policy as `x` — braces are not a difference', () => {
+    // a fifth copy of `() => false` hid behind a pair of braces until this normalised
+    const root = tree({
+      'a.ts': "import type { Access } from 'payload'\nexport const x: Access = () => false\n",
+      'b.ts': "import type { Access } from 'payload'\nexport const y: Access = () => {\n  return false\n}\n",
+    })
+    const g = policyAddresses(root)
+    expect(g).toHaveLength(1)
+    expect(g[0]!.map((p) => p.name).sort()).toEqual(['x', 'y'])
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('Access and FieldAccess are DIFFERENT interfaces — one body under both is lawful', () => {
+    // superAdminOnly and fieldAccess in @/is/super/admin share a body and must not be flagged
+    const root = tree({
+      'a.ts':
+        "import type { Access, FieldAccess } from 'payload'\n" +
+        'export const c: Access = ({ req }) => Boolean(req.user)\n' +
+        'export const f: FieldAccess = ({ req }) => Boolean(req.user)\n',
+    })
+    expect(policyAddresses(root)).toEqual([])
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('an alias points AT an implementation and is never a second one', () => {
+    const root = tree({
+      'a.ts':
+        "import type { Access } from 'payload'\n" +
+        'export const base: Access = () => false\n' +
+        'export const same: Access = base\n',
+    })
+    expect(policyAddresses(root)).toEqual([])
+    rmSync(root, { recursive: true, force: true })
+  })
 })

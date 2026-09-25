@@ -19,7 +19,7 @@ import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
 import { durableObjectExportGaps } from '@/cloudflare/binding'
 import { unreachedAtoms } from '@/rules/unreached'
-import { copiesInTangle, copyCount, unearnedCopies } from '@/rules/copy'
+import { copiesInTangle, copyCount, policyAddresses, unearnedCopies } from '@/rules/copy'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -412,6 +412,11 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // domain axis, silent on every surface at once. Import closure from the four executing
     // roots. Ratchets down; the horizon is 0, because no law may be unable to fire.
     guardian({ axis: 'unrun', violations: unrunLaws(cwd).length, baseline: 0 }),
+    // policy-address — an access policy defined at two addresses ([[rules]]/copy § access policies).
+    // Exempt from copy's 40-node floor, which is precisely why it could not see four private
+    // `neverDelete`s and a diverged `adminOnly`. Zero is a theorem: a rule a reviewer must trust
+    // may not be a coin flip between two bodies.
+    guardian({ axis: 'policy-address', violations: policyAddresses(cwd).length, baseline: 0 }),
     // moment-unwired — a law shaped for a DIFF or a lint REPORT, fired at no moment. Not the
     // same defect: manifest judges a scalpel changeset and orphan reads an ESLint report, so
     // neither has a tree form and counting them as laws that cannot fire was this axis

@@ -1,6 +1,6 @@
 import { Access } from 'payload'
-import { isSuperAdmin } from '@/is/super/admin'
-import { getUserContext } from '@/auth'
+import { isSuperAdmin, superAdminOnly } from '@/is/super/admin'
+import { getUserContext, neverDelete } from '@/auth'
 
 /**
  * Audit trail read access — authenticated users can read audit events,
@@ -28,16 +28,12 @@ export const auditTrailRead: Access<'read'> = ({ req }) => {
  * Audit trail create access — only super-admins can create audit events.
  * In practice, audit events are created automatically via hooks.
  */
-export const auditTrailCreate: Access<'create'> = ({ req }) => {
-  return isSuperAdmin(req.user)
-}
+export const auditTrailCreate: Access<'create'> = superAdminOnly
 
 /**
  * Audit trail update/delete access — NEVER allowed.
  * Enforced by beforeChange hook, but this provides additional safety.
  */
-export const auditTrailModifyDenied: Access = () => {
-  return false
-}
+export const auditTrailModifyDenied: Access = neverDelete
 
 /** @index-cross.foldback child=audit/trail/access parent=audit/trail — this cross folds back into its parent. */

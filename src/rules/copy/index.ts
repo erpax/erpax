@@ -187,3 +187,84 @@ export function unearnedCopies(
   }
   return out.sort((a, b) => b.unearned.length - a.unearned.length || b.nodes - a.nodes)
 }
+
+/** An access policy: a `const X: Access` or `const X: FieldAccess`, with its body's address. */
+export interface Policy {
+  readonly name: string
+  readonly file: string
+  readonly hash: string
+  /** `Access` or `FieldAccess` — two different Payload interfaces, never interchangeable. */
+  readonly family: string
+}
+
+/** Payload's own annotation is the authority on what an access policy is — parsed, never guessed. */
+const POLICY_TYPE = /^(Access|FieldAccess)(<|$)/
+
+/**
+ * Every access policy in the corpus, content-addressed. See SKILL.md § access policies.
+ *
+ * Exempt from `minNodes`: a policy body is commonly one line (`() => false`), which is exactly why
+ * the size floor could not see four private copies of `neverDelete` or a diverged `adminOnly`.
+ */
+export function accessPolicies(cwd: string = process.cwd()): Policy[] {
+  const out: Policy[] = []
+  for (const file of allFiles(cwd)) {
+    if (!/\.tsx?$/.test(file) || /\/(test|seed)\.tsx?$/.test(file)) continue
+    const text = readFileSync(file, 'utf8')
+    if (!/:\s*(Access|FieldAccess)\b/.test(text)) continue
+    const src = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true)
+    const visit = (n: ts.Node): void => {
+      // An alias (`const a: Access = b`) points AT an implementation; it is not a second one.
+      if (ts.isVariableDeclaration(n) && n.initializer && !ts.isIdentifier(n.initializer) && n.type) {
+        const fam = POLICY_TYPE.exec(n.type.getText(src).trim())?.[1]
+        if (!fam) { ts.forEachChild(n, visit); return }
+        const init = n.initializer
+        // `{ return x }` and `x` are the same policy written two ways: normalise a
+        // single-return block to its expression, or a fifth copy of `() => false` hides
+        // behind a pair of braces (which is exactly how one did).
+        const bodyNode = ts.isArrowFunction(init) || ts.isFunctionExpression(init) ? init.body : init
+        const only = ts.isBlock(bodyNode) && bodyNode.statements.length === 1 ? bodyNode.statements[0] : undefined
+        const body = only && ts.isReturnStatement(only) && only.expression
+          ? only.expression.getText(src)
+          : bodyNode.getText(src)
+        const norm = body.replace(/\/\*[\s\S]*?\*\/|\/\/[^\n]*/g, '').replace(/\s+/g, ' ').trim()
+        out.push({
+          name: n.name.getText(src),
+          file: relative(cwd, file),
+          hash: createHash('sha256').update(norm).digest('hex').slice(0, 16),
+          family: fam,
+        })
+      }
+      ts.forEachChild(n, visit)
+    }
+    visit(src)
+  }
+  return out
+}
+
+/**
+ * Access policies with the same body in the same family, at two or more addresses.
+ *
+ * Grouped by `hash + family`, never by hash alone: `superAdminOnly: Access` and
+ * `fieldAccess: FieldAccess` share a body and satisfy two DIFFERENT Payload interfaces. See SKILL.md.
+ */
+export function policyAddresses(cwd: string = process.cwd()): Policy[][] {
+  const m = new Map<string, Policy[]>()
+  for (const p of accessPolicies(cwd)) {
+    const k = `${p.family}:${p.hash}`
+    const a = m.get(k) ?? []
+    a.push(p)
+    m.set(k, a)
+  }
+  return [...m.values()].filter((g) => g.length > 1 && new Set(g.map((p) => p.file + p.name)).size > 1)
+}
+
+/** Zero is a THEOREM, not a ratchet: no access policy may live at two addresses. */
+export function assertOnePolicyAddress(cwd: string = process.cwd()): void {
+  const copied = policyAddresses(cwd)
+  if (copied.length === 0) return
+  throw new Error(
+    `✖ rules/copy — an access policy must have one address; ${copied.length} body at two or more:\n` +
+      copied.map((g) => '  ' + g.map((p) => `${p.name}: ${p.family} @ ${p.file}`).join('  |  ')).join('\n'),
+  )
+}
