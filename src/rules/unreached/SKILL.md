@@ -82,6 +82,32 @@ So this proves nothing IMPORTS the atom. Whether that means *wire it* or *drop i
 product decision, and deleting 80 atoms because a lexical walk did not find them is exactly the blind
 sweep this corpus refuses.
 
+## It is not a chain — the hypothesis is refuted
+
+The obvious read of 69 unreached atoms is a chain: find the root, wire it, and the rest follow.
+`atomLeverage` measures it, and the answer is no.
+
+| | |
+| --- | ---: |
+| unreached atoms | 69 |
+| imported by **nobody at all** | 5 |
+| imported **only by their own test, or by other unreached code** | 64 |
+| **closing only themselves** | **63 of 69** |
+
+The single lever is `payable`, whose barrel is nothing but `export *` over `aging · analytics ·
+discounts · workflow` — wire it and five close. After that the list is flat: `google/workspace`,
+`iso/3166/1`, `iso/3166/2`, `llm` and `separation` close two each, and everything else closes one.
+
+So this is not one gap with 69 symptoms. It is **63 independent atoms that each have a proof and no
+consumer** — `rules/unfolded`'s "its single use is its own test" at atom scale, and the reason each
+needs a per-atom decision rather than one wire.
+
+The `payable` case names what that decision costs. AP aging, analytics, early-payment discounts and
+approval workflow are all implemented and tested; `payload-types.ts` carries a `payable` slug, so the
+collection exists too — and **nothing imports `@/payable`**. The mentions elsewhere are prose and a
+string literal. Whether that is a wire to write or capability to drop is a product call, which is
+exactly the boundary this atom already states.
+
 **Law — [[law]]: an atom of code earns its place by being reachable. Try every door — deployed,
 gated, shipped, or a word — and what is left is code nothing runs. Name it, ratchet it, and decide
 per atom; never sweep it.**
