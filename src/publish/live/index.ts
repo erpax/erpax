@@ -44,9 +44,19 @@ const networkIo: RegistryIo = {
   },
 }
 
+/**
+ * A package name as npm's registry path: EVERY `/` encoded, not just the first.
+ *
+ * `pkg.replace('/', '%2F')` replaces one occurrence — correct for `@erpax/access` by accident and
+ * wrong for any name with a second separator, where the tail would be read as a path segment and the
+ * registry would answer about a different resource. CodeQL caught it as incomplete string escaping.
+ * The `@` is deliberately left alone: npm's canonical form is `@scope%2fname`.
+ */
+const registryPath = (pkg: string): string => pkg.replaceAll('/', '%2F')
+
 /** Is `version` of `pkg` published on npm — asked of the registry, never inferred from a tag. */
 export async function npmLive(pkg: string, version: string, io: RegistryIo = networkIo): Promise<LiveVerdict> {
-  const url = `https://registry.npmjs.org/${pkg.replace('/', '%2F')}`
+  const url = `https://registry.npmjs.org/${registryPath(pkg)}`
   let status = 0
   let json: unknown = null
   try {

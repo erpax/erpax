@@ -16,7 +16,6 @@
     "build:next": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs\" next build --turbopack",
     "build:next:webpack": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs\" next build --webpack",
     "build": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/css/load-hook.mjs\" payload generate:types && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/css/load-hook.mjs\" payload generate:importmap && pnpm build:next",
-    "build:cf": "pnpm build && opennextjs-cloudflare build --skipNextBuild",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "tsx src/cli/index.ts deploy app",

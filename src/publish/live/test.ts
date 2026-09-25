@@ -8,6 +8,16 @@ const NPM = 'https://registry.npmjs.org/@erpax%2Faccess'
 const DOI = (d: string) => `https://doi.org/api/handles/${d}`
 
 describe('publish/live — asked of the registry, never inferred from a tag', () => {
+  it('EVERY separator is encoded, not just the first — CodeQL caught this', async () => {
+    // `replace('/', …)` replaces one occurrence: correct for `@erpax/access` by accident, wrong for
+    // any name with a second separator, where the tail reads as a path segment and the registry
+    // answers about a different resource.
+    const seen: string[] = []
+    await npmLive('@scope/group/name', '1.0.0', { getJson: async (url) => { seen.push(url); return { status: 404, json: {} } } })
+    expect(seen[0]).toBe('https://registry.npmjs.org/@scope%2Fgroup%2Fname')
+    expect(seen[0]).not.toContain('group/name')
+  })
+
   it('a published version is live, and the publish time is reported', async () => {
     const v = await npmLive('@erpax/access', '0.1.11', io({
       [NPM]: { status: 200, json: { versions: { '0.1.11': {} }, time: { '0.1.11': '2026-09-01T00:00:00Z' } } },
@@ -73,7 +83,7 @@ describe('publish/live — asked of the registry, never inferred from a tag', ()
   it('releaseLive asks about every released package AND the declared DOI', async () => {
     const answers: Record<string, { status: number; json: unknown }> = {}
     for (const { pkg, version } of releasedPackages(process.cwd())) {
-      answers[`https://registry.npmjs.org/${pkg.replace('/', '%2F')}`] = { status: 200, json: { versions: { [version]: {} } } }
+      answers[`https://registry.npmjs.org/${pkg.replaceAll('/', '%2F')}`] = { status: 200, json: { versions: { [version]: {} } } }
     }
     answers[DOI(declaredDoi(process.cwd())!)] = { status: 200, json: { responseCode: 1 } }
     const v = await releaseLive(process.cwd(), io(answers))
