@@ -99,13 +99,27 @@ registry, the CLI, the write-time hook and the gate lane — and reports the law
 A law reached only from its own test does not count: a test proves the function works, never that
 anything asks it.
 
-| | count (2026-09-25) |
-| --- | ---: |
-| `rules/*` atoms with code | 33 |
-| **not reachable from anything that runs** | **11** |
+| | before | after |
+| --- | ---: | ---: |
+| `rules/*` atoms with code | 33 | 33 |
+| tree-shaped laws nothing runs | **11** | **0** |
+| moment-shaped, fired at no moment | — | **2** |
 
-`ask · bypass · canonical · confine · echo · hyphen · invisible · manifest · orphan · refutable ·
-unfolded` — each with a SKILL stating a law, a ceiling, and code nothing calls.
+Nine were wired in the commit that found them — `ask · bypass · canonical · confine · echo ·
+hyphen · invisible · refutable · unfolded`, ~11 s for all nine against a push already in the
+hundreds, each with its live count as a down-only baseline.
+
+**The last two were the axis over-reaching.** `manifest.sweeps(changesets)` judges a *diff* and
+`orphan.orphansFrom(report)` reads an *ESLint report* — neither has a tree form, so neither can be
+a tree guardian, and calling them "laws that cannot fire" was wrong. Mapping a git commit onto a
+`Changeset` would have been worse: `manifestCovers` wants one reason per file and a commit carries
+one message, so every large commit would have read as a sweep.
+
+`treeShaped` decides this by **shape** rather than by a declared list — an exported function whose
+first parameter is `cwd` is a tree scan, and nothing else is. `momentShapedUnwired` reports the
+rest, so the debt keeps its name without being counted as the wrong defect: `manifest` belongs to
+the [[scalpel]] at the moment a mass edit is planned, and `orphan` is a **fixer**
+(`cutUnusedImports` · `sweepFile`) whose detection the zero-warning lint lane already performs.
 
 **Honest boundary.** This proves a law is not reached **by a static import** from those four roots.
 A law invoked by a path string assembled at runtime is invisible to it, exactly as it is to

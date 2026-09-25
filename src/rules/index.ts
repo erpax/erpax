@@ -32,7 +32,16 @@ import { claimBalance, totalSlack } from '@/rules/slack'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
 import { unheldVerdicts } from '@/rules/hold'
 import { scanInjection } from '@/rules/inject'
-import { unrunLaws } from '@/rules/domain'
+import { momentShapedUnwired, unrunLaws } from '@/rules/domain'
+import { bareAsks } from '@/rules/ask'
+import { unauthenticatedBypasses } from '@/rules/bypass'
+import { unwiredPackages } from '@/rules/canonical'
+import { plasmaTouches } from '@/rules/confine'
+import { echoes } from '@/rules/echo'
+import { danglingSpecifiers } from '@/rules/hyphen'
+import { invisibleMatter } from '@/rules/invisible'
+import { hollowProofs } from '@/rules/refutable'
+import { unfoldedExports } from '@/rules/unfolded'
 import { opaqueSources, unreadSurfaces } from '@/rules/domain'
 import { driftCount } from '@/gate/parity'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
@@ -384,7 +393,25 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // unrun — a law with code that nothing EXECUTES ([[rules]]/domain): the limit case of the
     // domain axis, silent on every surface at once. Import closure from the four executing
     // roots. Ratchets down; the horizon is 0, because no law may be unable to fire.
-    guardian({ axis: 'unrun', violations: unrunLaws(cwd).length, baseline: 11 }),
+    guardian({ axis: 'unrun', violations: unrunLaws(cwd).length, baseline: 0 }),
+    // moment-unwired — a law shaped for a DIFF or a lint REPORT, fired at no moment. Not the
+    // same defect: manifest judges a scalpel changeset and orphan reads an ESLint report, so
+    // neither has a tree form and counting them as laws that cannot fire was this axis
+    // over-reaching its own population. Real debt, named with its cure. Ratchets from 2.
+    guardian({ axis: 'moment-unwired', violations: momentShapedUnwired(cwd).length, baseline: 2 }),
+    // The nine laws that were unrun, now wired. Each stated a law, carried a ceiling and had
+    // code nothing called; measured cost is ~11s for all nine, against a push already in the
+    // hundreds. Baselines are the LIVE counts, so each is a down-only ratchet from here — and
+    // three of them already stand well below the figure their own SKILL reports.
+    guardian({ axis: 'bypass', violations: unauthenticatedBypasses(cwd).length, baseline: 0 }),
+    guardian({ axis: 'canonical', violations: unwiredPackages(cwd).length, baseline: 0 }),
+    guardian({ axis: 'confine', violations: plasmaTouches(cwd).length, baseline: 0 }),
+    guardian({ axis: 'invisible', violations: invisibleMatter(cwd).length, baseline: 0 }),
+    guardian({ axis: 'refutable', violations: hollowProofs(cwd).length, baseline: 0 }),
+    guardian({ axis: 'dangling-specifier', violations: danglingSpecifiers(cwd).length, baseline: 0 }),
+    guardian({ axis: 'echo', violations: echoes(cwd).length, baseline: 152 }),
+    guardian({ axis: 'ask', violations: bareAsks(cwd).bare.length, baseline: 786 }),
+    guardian({ axis: 'unfolded', violations: (() => { const r = unfoldedExports(cwd); return r.dead.length + r.single.length })(), baseline: 814 }),
     // atom-completeness — three independent listings of what atoms exist must agree on MEMBERS,
     // not merely on totals ([[publish]]/complete). The matrix held 3,466 against a corpus of
     // 3,474 this session and nothing said so. Zero is a theorem.

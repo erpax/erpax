@@ -111,10 +111,27 @@ describe('rules/domain — a law nothing runs is silent on every surface', () =>
   it('does not list a law the registry actually calls', async () => {
     const { unrunLaws } = await import('@/rules/domain')
     const u = new Set(unrunLaws())
-    // wired this session — the axis went 12 -> 11 when inject got a runner
     expect(u.has('inject')).toBe(false)
-    // long-standing registry members
     expect(u.has('concentration')).toBe(false)
     expect(u.has('hold')).toBe(false)
+  }, 120_000)
+
+  it('a tree scan is decided by SHAPE — a cwd parameter, not a declared list', async () => {
+    const { treeShaped } = await import('@/rules/domain')
+    expect(treeShaped('export function echoes(cwd: string = process.cwd()): X[] {')).toBe(true)
+    expect(treeShaped('export async function scan(cwd = process.cwd()) {')).toBe(true)
+    expect(treeShaped('export function sweeps(changesets: readonly Changeset[]) {')).toBe(false)
+    expect(treeShaped('export function orphansFrom(report: readonly LintReport[]) {')).toBe(false)
+  })
+
+  it('a law that judges a diff is debt with a cure, not a law that cannot fire', async () => {
+    const { momentShapedUnwired, unrunLaws } = await import('@/rules/domain')
+    const moment = momentShapedUnwired()
+    // manifest judges a scalpel changeset; orphan reads an ESLint report
+    expect(moment).toContain('manifest')
+    expect(moment).toContain('orphan')
+    // and neither is counted twice, under the wrong defect
+    const tree = new Set(unrunLaws())
+    expect(moment.some((m) => tree.has(m))).toBe(false)
   }, 120_000)
 })

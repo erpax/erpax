@@ -179,11 +179,34 @@ const EXECUTING_ROOTS = Object.freeze([
   'src/rules/index.ts', 'src/cli/index.ts', 'src/confirm/index.ts', 'src/gate/index.ts',
 ])
 
+/** Every file reachable by a static import from the roots that execute. */
+function reachedFromExecuting(cwd: string): Set<string> {
+  const seen = new Set<string>()
+  const stack = EXECUTING_ROOTS.map((r) => join(cwd, r)).filter((f) => existsSync(f))
+  while (stack.length > 0) {
+    const f = stack.pop() as string
+    if (seen.has(f)) continue
+    seen.add(f)
+    for (const dep of importsOf(f, cwd)) if (!seen.has(dep)) stack.push(dep)
+  }
+  return seen
+}
+
 /**
- * A law with code that nothing ever runs — silent on every surface at once. See SKILL.md.
+ * Does this law expose a TREE scan — an exported function whose first parameter is `cwd`?
  *
- * The import closure from what executes, minus the laws. `rules/inject` sat here with no
- * corpus walk and no caller, reporting a hand-made measurement from weeks earlier.
+ * `manifest.sweeps(changesets)` judges a diff and `orphan.orphansFrom(report)` reads a lint
+ * report; neither has a tree form, so neither can be a tree guardian. See SKILL.md.
+ */
+export function treeShaped(indexSource: string): boolean {
+  return /export\s+(?:async\s+)?function\s+\w+\s*\(\s*cwd\s*[:=)]/.test(indexSource)
+}
+
+/**
+ * A law with a TREE scan that nothing ever runs — silent on every surface at once. See SKILL.md.
+ *
+ * `rules/inject` sat here with no corpus walk and no caller, reporting a hand-made
+ * measurement from weeks earlier.
  */
 export function unrunLaws(cwd: string = process.cwd()): string[] {
   const rulesDir = join(cwd, 'src', 'rules')
@@ -193,17 +216,35 @@ export function unrunLaws(cwd: string = process.cwd()): string[] {
     .map((e) => e.name)
     .filter((n) => existsSync(join(rulesDir, n, 'index.ts')) || existsSync(join(rulesDir, n, 'index.tsx')))
     .sort()
-  const seen = new Set<string>()
-  const stack = EXECUTING_ROOTS.map((r) => join(cwd, r)).filter((f) => existsSync(f))
-  while (stack.length > 0) {
-    const f = stack.pop() as string
-    if (seen.has(f)) continue
-    seen.add(f)
-    for (const dep of importsOf(f, cwd)) if (!seen.has(dep)) stack.push(dep)
-  }
-  return laws.filter(
-    (l) => !seen.has(join(rulesDir, l, 'index.ts')) && !seen.has(join(rulesDir, l, 'index.tsx')),
-  )
+  const seen = reachedFromExecuting(cwd)
+  return laws.filter((l) => {
+    const ts = join(rulesDir, l, 'index.ts')
+    const tsx = join(rulesDir, l, 'index.tsx')
+    if (seen.has(ts) || seen.has(tsx)) return false
+    const src = existsSync(ts) ? readFileSync(ts, 'utf8') : readFileSync(tsx, 'utf8')
+    return treeShaped(src)
+  })
+}
+
+/**
+ * Laws that judge a DIFF or read a REPORT and are wired at NO moment — debt, with a cure.
+ *
+ * Reported beside `unrunLaws` rather than inside it: a law with no tree form is not a law
+ * that cannot fire, and counting it as one is the axis over-reaching. See SKILL.md.
+ */
+export function momentShapedUnwired(cwd: string = process.cwd()): string[] {
+  const rulesDir = join(cwd, 'src', 'rules')
+  if (!existsSync(rulesDir)) return []
+  const seen = reachedFromExecuting(cwd)
+  return readdirSync(rulesDir, { withFileTypes: true })
+    .filter((e) => e.isDirectory())
+    .map((e) => e.name)
+    .filter((n) => {
+      const ts = join(rulesDir, n, 'index.ts')
+      if (!existsSync(ts) || seen.has(ts)) return false
+      return !treeShaped(readFileSync(ts, 'utf8'))
+    })
+    .sort()
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
