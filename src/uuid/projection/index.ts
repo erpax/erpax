@@ -11,6 +11,7 @@
  * @see src/services/integrity/content-uuid.ts — computeContentUuid / stripNonContentFields
  * @see src/multi/search/index.ts — should match searchableText, not a hand-listed field map
  */
+import { algebraFloatPow, algebraSqrt, exactMax, exactMin } from '@/algebra'
 import { computeContentUuid, stripNonContentFields } from '@/integrity'
 
 // ─── the ONE content projection (shared by uuid · search · version · locale) ───
@@ -80,10 +81,44 @@ export function uuidColor(uuid: string): string {
   return `hsl(${h} ${s}% ${l}%)`
 }
 
+/** sRGB relative luminance (WCAG 2.2 §1.4.3), from the uuid's own hue/saturation/lightness. */
+export function uuidLuminance(uuid: string): number {
+  const { h, s, l } = uuidHsl(uuid)
+  const sf = s / 100
+  const lf = l / 100
+  const a = sf * exactMin(lf, 1 - lf)
+  const k = (n: number): number => (n + h / 30) % 12
+  const ch = (n: number): number => lf - a * exactMax(-1, exactMin(k(n) - 3, exactMin(9 - k(n), 1)))
+  const lin = (c: number): number => (c <= 0.03928 ? c / 12.92 : algebraFloatPow((c + 0.055) / 1.055, 2.4))
+  return 0.2126 * lin(ch(0)) + 0.7152 * lin(ch(8)) + 0.0722 * lin(ch(4))
+}
+
+/**
+ * The foreground that READS on this uuid's colour — black or white, whichever wins.
+ *
+ * Proven, not chosen: contrast-against-white times contrast-against-black is 1.05/0.05 = 21 for
+ * EVERY colour, so if both were under 4.5 their product would be under 20.25. See Contrast.lean.
+ */
+export function uuidInk(uuid: string): '#000000' | '#ffffff' {
+  return uuidLuminance(uuid) + 0.05 >= algebraSqrt(0.05 * 1.05) ? '#000000' : '#ffffff'
+}
+
+/** The contrast the chosen ink achieves — never below 4.5, and this returns the number. */
+export function uuidInkContrast(uuid: string): number {
+  const x = uuidLuminance(uuid) + 0.05
+  return exactMax(1.05 / x, x / 0.05)
+}
+
 /** The uuid as CSS custom properties — set on any element so its colour IS its identity. */
 export function uuidCssVars(uuid: string): Record<string, string> {
   const { h, s, l } = uuidHsl(uuid)
-  return { '--uuid-h': String(h), '--uuid-s': `${s}%`, '--uuid-l': `${l}%`, '--uuid-color': `hsl(${h} ${s}% ${l}%)` }
+  return {
+    '--uuid-h': String(h),
+    '--uuid-s': `${s}%`,
+    '--uuid-l': `${l}%`,
+    '--uuid-color': `hsl(${h} ${s}% ${l}%)`,
+    '--uuid-ink': uuidInk(uuid),
+  }
 }
 
 // ─── the singularity: content → uuid → { search, css } in one call ───

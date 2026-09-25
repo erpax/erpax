@@ -8,6 +8,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSy
 import ts from 'typescript'
 import { join, relative } from 'node:path'
 import { nonIndexImports, type ImportViolation } from '@/tamper/import'
+import { listAtomPaths } from '@/index/cross'
 import { importsOf } from '@/rules/cycle'
 import { wordFold, digitFold } from '@/quantum/fold'
 import { interact64 } from '@/quantum/word'
@@ -220,30 +221,16 @@ const isAtomDir = (dir: string): boolean => {
   )
 }
 
-/** Every atom path under src/ (SKILL.md or index cross). */
-export function listAtomPathsOnDisk(cwd: string = process.cwd()): string[] {
-  const root = join(cwd, SRC)
-  const out: string[] = []
-  const walk = (dir: string, rel: string): void => {
-    let entries: string[]
-    try {
-      entries = readdirSync(dir)
-    } catch {
-      return
-    }
-    if (isAtomDir(dir)) out.push(rel || '.')
-    for (const e of entries) {
-      if (e.startsWith('.') || e === 'node_modules') continue
-      const p = join(dir, e)
-      if (!isDir(p)) continue
-      const seg = rel ? `${rel}/${e}` : e
-      if (!rel && SKIP_TREES.has(seg)) continue
-      walk(p, seg)
-    }
-  }
-  walk(root, '')
-  return out.sort()
-}
+/**
+ * Every atom path under src/ — ONE walker, in [[index]]/cross.
+ *
+ * This file carried a byte-identical 107-node copy of it, found by content address
+ * ([[rules]]/copy): same `SRC`, same `SKIP_TREES` (`app` · `migrations`), same `isAtomDir` test, two
+ * names. Duplication is camouflage — while one walk is stated in two private corners, nothing can
+ * show a THIRD place is missing the rule. The closure was checked before the fold, which is the
+ * boundary rules/copy insists on: the hash covers the body, never what it reads.
+ */
+export const listAtomPathsOnDisk = (cwd: string = process.cwd()): string[] => listAtomPaths(cwd)
 
 const reciprocalPath = (atomPath: string): string | null => {
   const parts = normalize(atomPath).split('/').filter(Boolean)

@@ -3199,6 +3199,7 @@ src/widget/PaymentRunsPanel.tsx:9: * @standard ISO-20022 pain.001 customer-credi
 src/widget/PayrollRunsPanel.tsx:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/widget/ShapePanel.tsx:10: * @standard ISO/IEC 25010:2023 §5.4 reusability — one projection for all shapes
 src/widget/ShapePanel.tsx:9: * @standard ECMA-262 ECMAScript-2024 baseline
+src/widget/section/index.tsx:5: * @standard WCAG 2.2 §1.3.1 info-and-relationships
 src/word/index.ts:12: * @standard RFC 8785 JCS + RFC 9562 §5.8 content-uuid
 src/work/centers/index.ts:11: * @standard ISA-95:2013 / IEC-62264-1 §B.5 production-resources equipment-hierarchy
 src/work/centers/index.ts:12: * @standard ISO-22400-2:2014 manufacturing-operations KPIs (capacity, availability, utilization)
@@ -4082,8 +4083,8 @@ src/period/end/adjustment/service/index.ts:33: * @compliance SOX §404 internal-
 src/period/locks/index.ts:12:  * @compliance SOX §404 period-close-integrity
 src/persist/api/audit/event/index.ts:18: * @compliance SOX §404 internal-controls external-system-traceability
 src/plugins/auth/access/field.ts:13: * @compliance SOC-2 CC6.1 logical-access-controls
-src/plugins/auth/access/field.ts:41: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/plugins/auth/access/field.ts:69: * @compliance SOC-2 CC7.2 system-monitoring
+src/plugins/auth/access/field.ts:36: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+src/plugins/auth/access/field.ts:64: * @compliance SOC-2 CC7.2 system-monitoring
 src/plugins/auth/access/index.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
 src/plugins/auth/access/predicates.ts:114: * @compliance SOC-2 CC6.2 prior-to-issuing-system-access
 src/plugins/auth/access/predicates.ts:38: * @compliance SOC-2 CC6.3 privileged-access-management
@@ -4951,6 +4952,7 @@ src/widget/LeasesPanel.tsx:10: * @accounting US-GAAP ASC-842-20 lessee-accountin
 src/widget/LeasesPanel.tsx:9: * @accounting IFRS IFRS-16 leases lessee-disclosure
 src/widget/PayrollRunsPanel.tsx:10: * @accounting US-GAAP ASC-710 compensation-general
 src/widget/PayrollRunsPanel.tsx:9: * @accounting IFRS IAS-19 employee-benefits
+src/widget/section/index.tsx:4: * @accounting IFRS IAS-1 §54 statement-of-financial-position
 src/work/centers/index.ts:14: * @accounting IFRS IAS-2 §12 cost-of-conversion fixed-and-variable-production-overhead
 src/work/centers/index.ts:15: * @accounting IFRS IAS-2 §13 normal-capacity-overhead-absorption
 src/work/centers/index.ts:16: * @accounting US-GAAP ASC-330-10-30 inventory-cost
@@ -5309,10 +5311,10 @@ src/payment/methods/index.ts:21: * @security ISO-27002 §8.24 use-of-cryptograph
 src/plugins/auth/access/field.ts:10: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/auth/access/field.ts:11: * @security ISO-27002 § 5.15 access-control
 src/plugins/auth/access/field.ts:12: * @security ISO-27002 § 5.18 access-rights
-src/plugins/auth/access/field.ts:39: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/plugins/auth/access/field.ts:40: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/field.ts:67: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/field.ts:68: * @security ISO-27002 § 5.18 access-rights
+src/plugins/auth/access/field.ts:34: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/access/field.ts:35: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/field.ts:62: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/field.ts:63: * @security ISO-27002 § 5.18 access-rights
 src/plugins/auth/access/field.ts:9: * @security ISO-27001 A.5.18 access-rights
 src/plugins/auth/access/index.ts:11: * @security ISO-27001 A.5.15 access-control
 src/plugins/auth/access/index.ts:12: * @security ISO-27001 A.5.18 access-rights

@@ -21,7 +21,7 @@ import { getTenantContext } from '@/plugins/auth/context'
  * @param user Request user object
  * @returns true if user has 'super-admin' role
  */
-const userIsSuperAdmin = (user: unknown): boolean => {
+export const userIsSuperAdmin = (user: unknown): boolean => {
   if (!user || typeof user !== 'object') return false
   const roles = (user as Record<string, unknown>).roles
   return Array.isArray(roles) && roles.includes('super-admin')

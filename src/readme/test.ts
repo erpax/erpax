@@ -1034,3 +1034,90 @@ describe('readme — the incremental cache includes the generator, or it is wron
     expect(String(atomInputFold)).toContain('generatorFold')
   })
 })
+
+/**
+ * The formula the README STATES must be the formula the code EVALUATES.
+ *
+ * Every generated README carried `eb = amount × log₂(weight) × horoRatio/10` — a
+ * sentence that disagreed with the arithmetic beside it twice: the weight already is
+ * the log₂, and `horoRatio` already is `digit/10`. This is rules/drift one step up —
+ * prose may not restate a NUMBER the corpus computes, and it may not restate a
+ * FORMULA either.
+ */
+describe('readme/entropy — the stated formula is the evaluated one', () => {
+  it('the horo decade is the divisor horoRatio actually uses', async () => {
+    const { HORO_DECADE } = await import('./entropy-unit')
+    const { horoRatio } = await import('@/horo')
+    for (const digit of [1, 2, 4, 5, 7, 8] as const) {
+      expect(horoRatio(digit, HORO_DECADE)).toBe(digit / HORO_DECADE)
+      expect(horoRatio(digit)).toBe(horoRatio(digit, HORO_DECADE))
+    }
+  })
+
+  it('reproduces the two eb values the tables print, and refutes the old sentence', async () => {
+    const { toComparableUnit, SEAL_BASE_WEIGHT, HORO_DECADE } = await import('./entropy')
+    const { algebraLog2 } = await import('@/algebra')
+
+    // `[[seal]]/[[diamond]]/sealed 1.585 eb` — weight IS log₂(3), no second log₂.
+    const sealed = toComparableUnit({ side: 'seal', category: 'diamond', amount: 1 }, 8)
+    expect(sealed).toBe(1.585)
+    expect(SEAL_BASE_WEIGHT.diamond).toBe(algebraLog2(3))
+    // The old sentence's `log₂(weight)` would have printed log₂(1.585) instead.
+    expect(algebraLog2(SEAL_BASE_WEIGHT.diamond as number)).not.toBe(sealed)
+
+    // `[[seal]]/[[horo]]/ring 0.8 eb` at horo 8 — one decade, not two.
+    const ring = toComparableUnit({ side: 'seal', category: 'horo', amount: 1 }, 8)
+    expect(ring).toBe(8 / HORO_DECADE)
+    // The old sentence's `horoRatio/10` would have printed 0.08.
+    expect(ring).not.toBe(8 / HORO_DECADE / HORO_DECADE)
+
+    // And the horo factor is NOT applied to the other seals at the same horo 8 —
+    // twelve of them print `1 eb` beside that 0.8.
+    expect(toComparableUnit({ side: 'seal', category: 'trinity', amount: 1 }, 8)).toBe(1)
+  })
+
+  it('the rendered sentence names the same decade the code divides by', async () => {
+    const { comparableUnitFormula, HORO_DECADE, COMPARABLE_UNIT } = await import('./entropy-unit')
+    const stated = comparableUnitFormula()
+    expect(stated).toBe(`${COMPARABLE_UNIT} = amount × log₂(states) × horo/${HORO_DECADE}`)
+    expect(stated).not.toContain('log₂(weight)')
+    expect(stated).not.toContain('horoRatio')
+  })
+})
+
+/**
+ * The degenerate case of a ratio is a formula, not a fallback.
+ *
+ * `seal/gap` at gap = 0 is unbounded, and the code answered `1` — the same digit an
+ * exactly break-even atom reports. rules/slack's defect in a printed figure: the
+ * corpus stated itself weaker than the evidence, and the two states collided.
+ */
+describe('readme/entropy — the bounded dual separates what the ratio collides', () => {
+  it('the ratio cannot tell perfectly sealed from exactly break-even', async () => {
+    const { sealGapRatioOf } = await import('./entropy')
+    expect(sealGapRatioOf(13.385, 0)).toBe(1) // fully sealed — unbounded in truth
+    expect(sealGapRatioOf(9, 9)).toBe(1) // break-even
+  })
+
+  it('the fraction does, and is defined at every input', async () => {
+    const { sealedFractionOf } = await import('./entropy')
+    expect(sealedFractionOf(13.385, 0)).toBe(1)
+    expect(sealedFractionOf(9, 9)).toBe(0.5)
+    expect(sealedFractionOf(0, 9)).toBe(0)
+    expect(sealedFractionOf(0, 0)).toBe(0)
+    // monotone in the direction the corpus improves
+    expect(sealedFractionOf(9, 3)).toBeGreaterThan(sealedFractionOf(9, 9))
+  })
+
+  it('the three rollups compute it through one function, not three copies', async () => {
+    const mod = await import('./entropy')
+    const src = (await import('node:fs')).readFileSync(
+      new URL('./entropy.ts', import.meta.url),
+      'utf8',
+    )
+    expect(typeof mod.sealGapRatioOf).toBe('function')
+    // the inline expression the three rollups each carried is gone
+    expect(src).not.toContain('totalGapEb > 0 ? roundEb(totalSealEb / totalGapEb)')
+    expect(src.match(/sealGapRatioOf\(totalSealEb, totalGapEb\)/g)?.length).toBe(3)
+  })
+})

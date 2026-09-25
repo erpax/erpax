@@ -9,6 +9,7 @@
  */
 import React from 'react';
 import { formatCurrency } from '@/format/amount';
+import { StatementSection } from '@/widget/section';
 import type { BalanceSheetData } from '@/analytics';
 
 interface BalanceSheetWidgetProps {
@@ -50,50 +51,26 @@ const BalanceSheetWidget: React.FC<BalanceSheetWidgetProps> = ({ data }) => {
       </div>
 
       <div className="overflow-y-auto max-h-96 text-xs">
-        {/* Assets Section */}
-        <div className="mb-4">
-          <div className="font-bold bg-primary/20 px-2 py-2 mb-1">ASSETS</div>
-          {data.assets.map((account) => (
-            <div key={account.accountCode} className="flex justify-between px-2 py-1 border-b hover:bg-muted">
-              <span>{account.accountName}</span>
-              <span className="text-right">{formatCurrency(account.balance)}</span>
-            </div>
-          ))}
-          <div className="flex justify-between px-2 py-2 bg-muted font-semibold border-t-2">
-            <span>Total Assets</span>
-            <span>{formatCurrency(data.totalAssets)}</span>
-          </div>
-        </div>
-
-        {/* Liabilities Section */}
-        <div className="mb-4">
-          <div className="font-bold bg-orange-100 px-2 py-2 mb-1">LIABILITIES</div>
-          {data.liabilities.map((account) => (
-            <div key={account.accountCode} className="flex justify-between px-2 py-1 border-b hover:bg-muted">
-              <span>{account.accountName}</span>
-              <span className="text-right">{formatCurrency(account.balance)}</span>
-            </div>
-          ))}
-          <div className="flex justify-between px-2 py-2 bg-muted font-semibold border-t-2">
-            <span>Total Liabilities</span>
-            <span>{formatCurrency(data.totalLiabilities)}</span>
-          </div>
-        </div>
-
-        {/* Equity Section */}
-        <div className="mb-4">
-          <div className="font-bold bg-green-100 px-2 py-2 mb-1">EQUITY</div>
-          {data.equity.map((account) => (
-            <div key={account.accountCode} className="flex justify-between px-2 py-1 border-b hover:bg-muted">
-              <span>{account.accountName}</span>
-              <span className="text-right">{formatCurrency(account.balance)}</span>
-            </div>
-          ))}
-          <div className="flex justify-between px-2 py-2 bg-muted font-semibold border-t-2">
-            <span>Total Equity</span>
-            <span>{formatCurrency(data.totalEquity)}</span>
-          </div>
-        </div>
+        <StatementSection
+          title="ASSETS"
+          rows={data.assets}
+          total={data.totalAssets}
+          totalLabel="Total Assets"
+        />
+        <StatementSection
+          title="LIABILITIES"
+          rows={data.liabilities}
+          total={data.totalLiabilities}
+          totalLabel="Total Liabilities"
+          tint="bg-orange-100"
+        />
+        <StatementSection
+          title="EQUITY"
+          rows={data.equity}
+          total={data.totalEquity}
+          totalLabel="Total Equity"
+          tint="bg-green-100"
+        />
       </div>
 
       <div className="text-xs text-muted-foreground mt-3">

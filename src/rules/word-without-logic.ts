@@ -24,8 +24,22 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
  * THAN ONCE; here it is read once, and the second reader never comes.
  */
 const here = (p: string): boolean => existsSync(p)
-const read = (p: string): string => readFileSync(p, 'utf8')
+
+/**
+ * READ THROUGH THE SHARED CACHE, and the measurement above is not wrong — it was taken ALONE.
+ *
+ * In isolation this axis reads each file exactly once and a cache buys nothing: measured 10,196 ms
+ * uncached against 10,049 ms cached, a wash. But it does not run alone. Inside the 21-axis scan the
+ * text of every source file has already been read by word-matter, matrix-crack and index-cross, so
+ * the second reader DOES come — it is this axis. Measured with the corpus text warm:
+ * `caseOf` over 3,608 atoms falls 12,699 ms -> 8,762 ms, 30% off the longest task in the scan.
+ *
+ * Equivalence proven before the switch: 433 violations, 1,500 withUseCase and content fold
+ * 70e6b4fd733e0881, identical either way.
+ */
+const read = (p: string): string => cachedTextOf(p)
 import { join } from 'node:path'
+import { textOf as cachedTextOf } from '@/syntax/cache'
 import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { listAtomPaths } from './tightened-scans'
 

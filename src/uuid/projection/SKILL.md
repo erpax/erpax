@@ -44,6 +44,31 @@ FORM: **everything that needs to know "what a record is" derives from ONE conten
 - **version** — a [[version]] is the content-uuid *in time*; the version chain is a chain of content-uuids (the same content-addressing the audit [[history]] rests on).
 - **css** — `uuidColor(uuid)` / `uuidCssVars(uuid)` read the uuid's first bytes as an HSL triple, so a record's COLOUR is its identity — the visual facet of the [[uuid]] multimodal singularity, computed not styled.
 
+### The ink is proven, not chosen
+
+`uuidCssVars` had **no consumer**, and part of the reason is that it was unsafe: it handed a
+component a background and left the text colour to a guess. It now carries `--uuid-ink`.
+
+Contrast against white is `1.05/x` and against black is `x/0.05`, where `x` is the luminance plus
+WCAG's 0.05 offset — so their **product is 21 for every colour there is**. If both were under 4.5
+their product would be under 20.25, and 20.25 < 21. **The better of black and white therefore
+always reaches WCAG AA**, on any background whatsoever. `src/verify/lean/Contrast.lean` fixes it in
+the kernel over scaled integers, with no reals and no square root; `uuidInk` compares against the
+crossover rather than a threshold someone picked.
+
+Measured against the proof: over 20,000 random uuids the worst contrast is **4.583** — √21, the
+theorem's floor, to three decimals — and the suite sweeps all **302,400** colours the projection can
+emit without finding one below 4.5.
+
+**This also corrects a tempting claim.** The lightness band `38..61` does NOT earn the legibility;
+the identity does, and it holds at every lightness. The band is an aesthetic choice, and saying it
+guarantees contrast would attribute a property to the wrong constant.
+
+**Honest boundary.** Contrast is one criterion of one guideline. Font size, spacing, motion and
+focus order are not in it, a legible pair can still be an unusable interface, and nothing here
+speaks for a THIRD colour — which is exactly why the foreground stays black or white rather than
+being derived from the uuid as well.
+
 `project(record, tenantId)` returns all of it at once — `{ uuid, searchText, color, cssVars }` — DRY by construction ([[holographic]]: the whole record recoverable from, and expressed through, its uuid). The 128-bit singularity the [[uuid]] atom names: features collapse INTO the uuid, and the uuid radiates them back out — identity, search, language, time, colour — from one projection ([[all]] facets, one source).
 
 Matter-twin: `src/uuid/projection/index.ts` (`projectContent`·`localeContent`·`searchableText`·`contentMatches`·`uuidHsl`·`uuidColor`·`uuidCssVars`·`project`) over `services/integrity` + `index.test.ts`. Composes: [[uuid]] · [[identity]] · [[localize]] · [[version]] · [[merge]] · [[holographic]] · [[all]].

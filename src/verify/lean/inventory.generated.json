@@ -1,11 +1,11 @@
 {
   "sealedAt": "2026-09-21",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "6442691269644096",
+  "sourcesHash": "5e89887c35fe1204",
   "census": {
-    "theorems": 192,
-    "axiomFree": 121,
-    "standardAxioms": 71,
+    "theorems": 200,
+    "axiomFree": 125,
+    "standardAxioms": 75,
     "stubbed": 0
   },
   "files": [
@@ -139,6 +139,66 @@
           "theorem": "Automate.the_low_path_keeps_running",
           "axioms": [],
           "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Contrast.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Contrast.some_ink_always_reads",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Contrast.white_under_forces_black_reads",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Contrast.crossover_is_where_the_choice_turns",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Contrast.tight_point_clears_the_threshold",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Contrast.darkest_takes_white",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Contrast.lightest_takes_black",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Contrast.the_whole_range_reads",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
           "stubbed": false
         }
       ]
@@ -1243,12 +1303,18 @@
           "stubbed": false
         },
         {
-          "theorem": "Receipt.word_matter_never_pays",
+          "theorem": "Receipt.word_matter_alone_never_pays",
           "axioms": [
             "propext",
             "Quot.sound"
           ],
           "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Receipt.bundle_pays_from_two",
+          "axioms": [],
+          "axiomFree": true,
           "stubbed": false
         },
         {

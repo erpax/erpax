@@ -1,3 +1,4 @@
+import { exactFloor } from '@/algebra'
 /** gate/receipt — the push failure addressed at its core: the vitest lane was a ~1-hour, all-or-nothing, unresumable monolith. See SKILL.md. */
 import { createHash } from 'node:crypto'
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync, type Dirent } from 'node:fs'
@@ -251,7 +252,7 @@ export const worthSealing = (address: number, answer: number, runs: number): boo
 
 /** The run count past which sealing pays — 0 when a dear address means it never does. */
 export const breakEven = (address: number, answer: number): number =>
-  answer <= address ? 0 : Math.floor(answer / (answer - address)) + 1
+  answer <= address ? 0 : exactFloor(answer / (answer - address)) + 1
 
 export function corpusScanFold(
   cwd: string = process.cwd(),

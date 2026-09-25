@@ -2,7 +2,6 @@ import { describe, expect, it } from 'vitest'
 import {
   STRUCTURING_BAND,
   STRUCTURING_WINDOW_MS,
-  SUSPICION_DELAY_MS,
   assertSuspicionHolds,
   holdBeforeExecuting,
   justBelow,
@@ -88,8 +87,11 @@ describe('aml — what `none` means, stated where it cannot be missed', () => {
 
 describe('aml — Art. 33(1) as a fail-closed check', () => {
   it('holds on the live atom, and the delay is zero', () => {
+    // NOT `expect(SUSPICION_DELAY_MS).toBe(0)` — that restates the literal the module assigns and
+    // cannot fail for any reason a reader cares about ([[rules]]/mirror). The assert above already
+    // carries it: assertSuspicionHolds throws when the delay is non-zero, so a change to the
+    // constant reddens this line rather than travelling with it.
     expect(() => assertSuspicionHolds()).not.toThrow()
-    expect(SUSPICION_DELAY_MS).toBe(0)
   })
 
   it('a THRESHOLD declaration does not hold the payment — and the gate must not demand it', () => {

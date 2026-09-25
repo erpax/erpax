@@ -108,6 +108,85 @@ export function makespan(a: Assignment): number {
   return a.placements.reduce((m, p) => (p.load > m ? p.load : m), 0)
 }
 
+/**
+ * Graham's 1969 bound as arithmetic: (4m − 1) ÷ 3m, the exact rational form of
+ * 4/3 − 1/(3m). One division, so `lptBound(3)` is 11/9 and never a typed 1.222.
+ *
+ * m = 1 gives exactly 1 — LPT on one machine IS optimal — and the bound rises toward
+ * 4/3 as m grows, never reaching it.
+ */
+export function lptBound(m: number): number {
+  return m > 0 ? (4 * m - 1) / (3 * m) : 1
+}
+
+/**
+ * A lower bound on the OPTIMAL makespan: no schedule beats the heaviest single task
+ * (it runs somewhere, whole — tasks are indivisible), and none beats the perfectly
+ * level split of the total across m machines.
+ */
+export function optimalMakespanFloor(tasks: readonly Task[], m: number): number {
+  if (m <= 0 || tasks.length === 0) return 0
+  const total = tasks.reduce((s, t) => s + t.weight, 0)
+  const heaviest = tasks.reduce((x, t) => (t.weight > x ? t.weight : x), 0)
+  const level = total / m
+  return heaviest > level ? heaviest : level
+}
+
+/** What `grahamVerdict` answers, including when it refuses to answer. */
+export interface GrahamVerdict {
+  /** False when the theorem's hypotheses do not hold here — then `holds` is null. */
+  readonly applies: boolean
+  readonly reason: string
+  readonly machines: number
+  readonly bound: number
+  readonly floor: number
+  readonly makespan: number
+  /** makespan ÷ floor, or 0 when there is no work. */
+  readonly ratio: number
+  /** null when the theorem does not apply — never `false` by omission. */
+  readonly holds: boolean | null
+}
+
+/**
+ * Check the cited standard instead of only citing it.
+ *
+ * Graham's theorem is about **identical** machines and a schedule that places every
+ * task. This atom's `assign` does neither by default: capacities may differ, and a
+ * task heavier than every agent is REFUSED rather than crammed. So the hypotheses are
+ * tested first and the verdict is `applies: false` with a reason — never a `holds:
+ * false` that reads as a refutation of Graham when it is really a model mismatch
+ * (rules/unraised: a claim that defaults by omission).
+ *
+ * Where it does apply, `ratio ≤ bound` is measured against the FLOOR, not against the
+ * optimum, which nothing here can compute (partitioning is NP-hard). Since
+ * floor ≤ optimum, passing against the floor is SUFFICIENT for Graham's conclusion —
+ * and failing it is not a counterexample to the theorem, only a loose floor. That
+ * asymmetry is the honest half, and it is why `holds` is reported beside `ratio`
+ * rather than instead of it.
+ */
+export function grahamVerdict(agents: readonly Agent[], tasks: readonly Task[]): GrahamVerdict {
+  const live = agents.filter(healthy)
+  const m = live.length
+  const a = assign(agents, tasks)
+  const capacities = new Set(live.map((x) => x.capacity))
+  const identical = capacities.size <= 1
+  const complete = a.unassigned.length === 0
+  const applies = m > 0 && identical && complete
+  const reason =
+    m === 0
+      ? 'no healthy agent — no schedule to bound'
+      : !identical
+        ? `capacities differ (${capacities.size} distinct) — Graham's bound is for identical machines`
+        : !complete
+          ? `${a.unassigned.length} task(s) refused — the theorem bounds a schedule that places every task`
+          : 'identical machines, every task placed'
+  const bound = lptBound(m)
+  const floor = optimalMakespanFloor(tasks, m)
+  const span = makespan(a)
+  const ratio = floor > 0 ? span / floor : 0
+  return { applies, reason, machines: m, bound, floor, makespan: span, ratio, holds: applies ? ratio <= bound : null }
+}
+
 /** Re-assign after losing agents. See SKILL.md. */
 export function redistribute(
   agents: readonly Agent[],
