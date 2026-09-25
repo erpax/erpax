@@ -1,47 +1,63 @@
----
-name: pqc
-description: "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the signature that seals the audit chain."
-atomPath: "beyond/pqc"
-coordinate: "beyond/pqc · 2/share · 4fe732e5"
-contentUuid: "6a646bdf-7d92-5995-80c4-d8a5b6d685e7"
-diamondUuid: "8349d52b-c9ad-89b9-8f0b-2b5831ad35a9"
-uuid: "4fe732e5-10cc-8de0-8733-f60a3c34c9f4"
-horo: 2
-typography:
-  partition: beyond
-  bondDegree: 10
-standards:
-  - "NIST FIPS 203 ML-KEM (Module-Lattice Key Encapsulation)"
-  - "NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)"
-  - "NIST SP 800-208 stateful-hash-based-signatures"
-  - "NIST-SP-800-63"
-bindings: []
-signatures:
-  computationUuid: "eadaeb61-29d6-848d-ac59-19dc683d8902"
-  stages:
-    - stage: path
-      stageUuid: "f85f7d6a-4941-80ff-a861-f7d878cf2dcf"
-    - stage: trinity
-      stageUuid: "60eccb3c-981f-8c17-9e68-68b0055fc27d"
-    - stage: boundary
-      stageUuid: "b96b8ba3-f5ac-8cc5-965c-d6cff2a47215"
-    - stage: links
-      stageUuid: "31bddfc0-7937-884e-a920-26133111a862"
-    - stage: horo
-      stageUuid: "8a95717c-42b5-815b-ad48-fb19c4560720"
-    - stage: seal
-      stageUuid: "71ae10f2-0dca-8d23-b6e5-b6abc8dfca03"
-    - stage: uuid
-      stageUuid: "77f38b4e-098e-8e7c-a098-2ddaa3a86054"
-version: 2
----
-# beyond/pqc — post-quantum signatures (the quantum-proof seal)
+# beyond/pqc — it returned a signature it had not made
 
-A horizon law: today's [[signature]] over an [[audit]] leaf is RSA/ECDSA-flavoured and a large quantum computer would forge it. `pqc` names the migration target — lattice signatures (ML-DSA, FIPS 204) and stateful-hash signatures — and pins which algorithms NIST has approved, so the seal that makes the [[audit]] chain tamper-evident stays unforgeable when [[quantum]] hardware arrives. The signing/verifying matter is a documented STUB until the Workers-friendly liboqs lands; only the approved-algorithm gate is live.
+`signPqc` returned a `PqcSignature` whose `signatureB64` read
+`PLACEHOLDER-pending-libpqc-integration`, carrying a real algorithm name and a real ISO-8601
+timestamp — **and it did not throw**. A caller checking that a signature came back proceeded.
 
-Matter-twin: src/beyond/pqc/index.ts (`signPqc` · `verifyPqc` · `isApprovedPqc`). A [[beyond]]-horizon primitive that hardens the [[integrity]] substrate.
+One did. `src/bank/chat` computed a "quantum-secure banking envelope":
 
-**Law — [[law]]: the [[signature]] that seals the [[audit]] chain must be forgeable by no adversary, classical or quantum — only NIST-approved post-quantum algorithms may sign, so the seal outlives the machine that would break it.**
+```ts
+const holds = isApprovedPqc(algorithm) && pqc.algorithm === algorithm && classicalDigest.length === 36
+```
 
-@standard NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)
-@standard NIST SP 800-208 stateful-hash-based-signatures
+`holds` compared the **echoed algorithm name** and never looked at the signature, so it read **true**
+over the placeholder — and three tests asserted that `true`, which is [[rules]]/mirror: the proof
+certified the forgery. The sealed corpus prose stated the same wrong law, one line of it noting
+*"stub verify ≠ forge-proof"*, which knew and did not act.
+
+## The refusal is the implementation
+
+`signPqc` now returns `{ signed: false, algorithm, refusal }` and nothing a caller could mistake for
+a signature — the field list is asserted, so a placeholder cannot be re-added beside it. `verifyPqc`
+reaches no verdict and says so. `holds` is `posture && signed`, and the envelope carries the refusal
+text, so the claim degrades to what is actually true: **the algorithm is approved and the digest is
+well-formed, and nothing has signed it.**
+
+That is [[rules]]/forge's own cure restated — eligibility is decidable locally and is what these
+return; a signature needs a key this process does not hold, so it refuses and names what is missing.
+
+## What IS decidable: the parameters FIPS 203 fixes
+
+Received verbatim from **Table 2** (parameters) and **Table 3** (sizes), with the two constants §7
+names — `n = 256`, `q = 3329`:
+
+| | k | RBG strength | category | ek | dk | ct |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| ML-KEM-512 | 2 | 128 | 1 | 800 | 1632 | 768 |
+| ML-KEM-768 | 3 | 192 | 3 | 1184 | 2400 | 1088 |
+| ML-KEM-1024 | 4 | 256 | 5 | 1568 | 3168 | 1568 |
+
+The name **is** the coefficient count: `k · n` gives 512, 768, 1024, and the test derives each name
+from its own arithmetic rather than restating it. `q` is prime and `256 | q − 1` (3328 = 13 · 256),
+which is the condition that makes the NTT exist — decided here rather than asserted.
+
+`kemForCategory` returns the **smallest** set meeting a required category and **nothing** above
+category 5, rather than silently handing back the strongest: there is no category-2 set, so a
+category-2 requirement gets ML-KEM-768 and a category-6 requirement gets a refusal.
+
+**Honest boundary.** This computes **parameters and sizes**, and imports nothing — erpax crypto only.
+It is not an implementation of ML-KEM or ML-DSA, it makes no security claim about either, and a
+green test here says a table was transcribed correctly and its arithmetic closes. The signing and
+verifying remain refusals until a key and a verifier exist.
+
+**Law — [[law]]: a function that cannot sign returns a refusal, never an object shaped like a
+signature. The placeholder is the forgery — a caller cannot see the string, only that something came
+back, and a test that asserts the shape certifies it.**
+
+## Standards
+
+- **NIST FIPS 203** — ML-KEM; Tables 2 and 3 received verbatim, §7 for the categories.
+- **NIST FIPS 204** — ML-DSA.
+- **NIST SP 800-208** — stateful hash-based signatures.
+
+Composes: [[rules]]/forge · [[rules]]/mirror · [[bank]]/chat · [[cost]]/bits · [[law]].

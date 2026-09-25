@@ -512,9 +512,10 @@ src/beyond/explainability/index.ts:10: * @standard XBRL inline-XBRL (machine-exp
 src/beyond/explainability/index.ts:11: * @standard ISO/IEC 23053 AI-systems-with-machine-learning (explainability)
 src/beyond/explainability/index.ts:9: * @standard EU AI Act 2024/1689 Art. 13 (transparency for high-risk)
 src/beyond/index.ts:18: * @standard W3C PROV + ESRS E1 + EU AI Act + NIST FIPS 203/204
-src/beyond/pqc/index.ts:10: * @standard NIST FIPS 203 ML-KEM (Module-Lattice Key Encapsulation)
-src/beyond/pqc/index.ts:11: * @standard NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)
-src/beyond/pqc/index.ts:12: * @standard NIST SP 800-208 stateful-hash-based-signatures
+src/beyond/pqc/index.ts:26: * @standard NIST FIPS 203 §8 Table 2 (parameters) · Table 3 (sizes) · §7 (categories 1, 3, 5)
+src/beyond/pqc/index.ts:4: * @standard NIST FIPS 203 ML-KEM — Tables 2 and 3, values received verbatim
+src/beyond/pqc/index.ts:5: * @standard NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)
+src/beyond/pqc/index.ts:6: * @standard NIST SP 800-208 stateful-hash-based-signatures
 src/beyond/provenance/index.ts:10: * @standard W3C PROV-DM (Provenance Data Model)
 src/beyond/provenance/index.ts:11: * @standard W3C PROV-O (PROV Ontology — RDF)
 src/beyond/replay/index.ts:13: * @standard ISRS 4400 agreed-upon-procedures (replay verification)
