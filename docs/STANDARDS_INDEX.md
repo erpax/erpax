@@ -145,6 +145,8 @@ src/agents/mcp/tool/governance.ts:11: * @standard W3C DID Core 1.0 + W3C VC Data
 src/agents/mcp/tool/index.ts:15: * @standard ISO/IEC 25010:2023 §5.7 modularity
 src/agents/mcp/tool/integrity-extensions.ts:18: * @standard MCP 0.6 tools/list + tools/call
 src/agents/mcp/tool/kv.ts:19: * @standard MCP 0.6 tools/list + tools/call
+src/agents/mcp/tool/novelty.ts:12: * @standard MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}
+src/agents/mcp/tool/novelty.ts:13: * @standard Shannon (1948) — surprise is −log₂ p, in bits
 src/agents/mcp/tool/security.ts:17: * @standard ISO/IEC 27001 Annex A.14.2.5 secure-systems-engineering
 src/agents/mcp/tool/security.ts:18: * @standard NIST SP 800-160 §3.4.2 trustworthy secure design
 src/agents/mcp/tool/share.ts:13: * @standard NIST SP 800-162 ABAC

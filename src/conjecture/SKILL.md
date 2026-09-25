@@ -204,6 +204,23 @@ The law that came out of it is [[rules]]/copy's `unearnedCopies`: a body duplica
 where a site's export has ≤1 caller. **8 groups, and in every one of them BOTH copies are
 unearned** — written twice, and neither called more than once.
 
+## On the public surface
+
+`erpax.novelty.crosses` and `erpax.novelty.measure` put the enumerator on the MCP surface, so the
+question can be asked from outside the corpus without a clone.
+
+`crosses` **carries its own caveat in the payload** — that it ranks absence in prose, that this did
+not predict what a cross would find, and that its top three picks measured empty. A tool whose
+ranking has a known failure mode and does not say so is the defect this corpus keeps naming, and a
+caller has no other way to learn it.
+
+`live` is `null` where nothing was measured. It defaulted to `true`, which reported an unmeasured
+field as a fact — beside a caveat saying those very pairs are empty. An absent measurement ranks
+**with** the live crosses rather than below them, because absence of evidence is not evidence of a
+dead cross.
+
+`measure` is the expensive one and says so: one full scan per law, then every pair is free.
+
 ## Standards
 
 - **Popper** — a proposition that forbids nothing explains nothing.

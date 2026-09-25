@@ -108,8 +108,13 @@ export interface Cross {
   readonly together: number
   /** Laplace-smoothed −PMI: high when both are common and they never meet. */
   readonly bits: number
-  /** True when BOTH parents still report violations — a cross between two satisfied laws finds nothing. */
-  readonly live: boolean
+  /**
+   * Both parents still report violations — a cross between two satisfied laws finds nothing.
+   *
+   * `null` when nothing was measured. Defaulting it to `true` reported an unmeasured field as a
+   * fact, which is the defect this corpus keeps paying for.
+   */
+  readonly live: boolean | null
 }
 
 /**
@@ -158,15 +163,17 @@ export function crosses(cwd: string = process.cwd(), liveCounts?: ReadonlyMap<st
       const pb = (cb + 1) / (n + 2)
       const pab = (together + 1) / (n + 2)
       const live =
-        liveCounts === undefined ? true : (liveCounts.get(a) ?? 0) > 0 && (liveCounts.get(b) ?? 0) > 0
+        liveCounts === undefined ? null : (liveCounts.get(a) ?? 0) > 0 && (liveCounts.get(b) ?? 0) > 0
       out.push({ a, b, citedA: ca, citedB: cb, together, bits: -algebraLog2(pab / (pa * pb)), live })
     }
   }
   // a live cross outranks a dead one at any surprise: the bits say how much an answer would
   // teach, and a cross whose parents are both satisfied has no question left to answer
+  // unmeasured ranks with the live ones rather than below them — an absent measurement is not
+  // evidence of a dead cross, it is the absence of evidence either way
+  const rank = (c: Cross): number => (c.live === false ? 0 : 1)
   return out.sort(
-    (x, y) =>
-      Number(y.live) - Number(x.live) || y.bits - x.bits || x.a.localeCompare(y.a) || x.b.localeCompare(y.b),
+    (x, y) => rank(y) - rank(x) || y.bits - x.bits || x.a.localeCompare(y.a) || x.b.localeCompare(y.b),
   )
 }
 

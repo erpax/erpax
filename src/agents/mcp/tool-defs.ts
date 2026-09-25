@@ -112,6 +112,8 @@ import {
   buildKvTools, buildIntegrityExtensionTools, buildSecurityTools,
   buildShareTools, buildFormatTools, buildGovernanceTools, buildErrorTools,
   buildBatchTools, buildVersionsTools,
+  // the cross enumerator on the public surface — [[conjecture]]
+  buildNoveltyTools,
   // Measured 2026-09-20: 56 tools on this surface and zero over the compliance atoms. A
   // capability with no surface is indistinguishable from an absent one.
   buildKycTools,
@@ -1643,6 +1645,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   for (const t of buildKvTools()) tools.push(t)
   for (const t of buildIntegrityExtensionTools()) tools.push(t)
   for (const t of buildSecurityTools()) tools.push(t)
+  for (const t of buildNoveltyTools()) tools.push(t)
   for (const t of buildShareTools()) tools.push(t)
   for (const t of buildFormatTools()) tools.push(t)
   for (const t of buildGovernanceTools()) tools.push(t)
