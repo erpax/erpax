@@ -1,0 +1,68 @@
+# The boundary as a lead source.
+#
+# A MOVED receipt is the world disagreeing with what erpax last recorded; a FRESH one is a boundary
+# nobody had asked. Both are reasons to cut a release. Before this lane nothing in the repo carried
+# `schedule:`, so no API had ever produced a lead — the machinery existed in src/outward and ran for
+# one region, on demand, never.
+#
+# It does NOT push. `main` is protected, so the updated receipt book is an ARTIFACT and the leads are
+# the job summary; advancing the committed memory is a pull request a human opens, which is also the
+# moment a lead becomes a release decision.
+#
+# A lead is not a failure: the step exits 0 with leads and non-zero only when the WHOLE boundary was
+# unreachable, because then nothing was measured at all.
+name: Outward leads
+
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: outward-leads
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  harvest:
+    name: Ask the boundary
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+        with: { skill-index: none, ripgrep: 'false' }
+
+      - name: Harvest — content-address every external answer against the stored book
+        id: harvest
+        run: |
+          set -o pipefail
+          pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" \
+            tsx src/outward/leads/index.ts --write | tee leads.log
+
+      - name: Summary — the release agenda
+        if: always()
+        run: |
+          {
+            echo '## Outward leads'
+            echo
+            echo '```'
+            cat leads.log 2>/dev/null || echo '(the harvest produced no output)'
+            echo '```'
+            echo
+            echo 'A `moved` or `fresh` row is a release reason. `unchanged` is silence; `unreachable`'
+            echo 'is an unanswered question, never evidence of change.'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload the advanced receipt book + agenda
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: outward-leads
+          path: |
+            outward-receipts.json
+            outward-leads.json
+            leads.log
+          if-no-files-found: warn

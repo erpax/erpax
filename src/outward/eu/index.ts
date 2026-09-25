@@ -122,12 +122,17 @@ export function writeBook(book: ReceiptBook, cwd: string = process.cwd()): void 
   )
 }
 
-/** Run the four probes against the stored book and return the verdict + next book. */
+/**
+ * Run the four probes against the stored book and return the verdict + next book + the ROWS.
+ *
+ * The rows are what carry `state`, and `moved` is the lead — returning only the verdict and the
+ * book discarded the one thing a release decision needs ([[outward]]/leads).
+ */
 export async function checkEu(opts: { readonly cwd?: string; readonly fetchImpl?: typeof fetch } = {}) {
   const cwd = opts.cwd ?? process.cwd()
   const prior = readBook(cwd)
   const rows = await runOutward(euProbes(opts.fetchImpl ?? fetch), prior)
-  return { verdict: outwardVerdict(rows), book: nextBook(prior, rows), prior }
+  return { verdict: outwardVerdict(rows), book: nextBook(prior, rows), prior, rows }
 }
 
 /** @index-cross.foldback child=outward/eu parent=outward — this cross folds back into its parent. */

@@ -147,3 +147,40 @@ export function outwardVerdict(rows: readonly OutwardRow[]): OutwardVerdict {
 }
 
 export * from './coverage'
+
+/** The `{rail, holds, detail}` verdict shape `outward/bg` · `outward/world` · `outward/eu`/contract emit. */
+export interface ContractLike {
+  readonly rail: string
+  readonly holds: boolean
+  readonly detail: string
+}
+
+/**
+ * Fold a contract verdict into a receipt — `{rail, holds}` ONLY. See ./SKILL.md § leads.
+ *
+ * `detail` is deliberately not folded: `checkFrankfurter`'s success detail reads
+ * `"EUR on 2026-09-25: 31 rate(s)"`, so folding it would report `moved` every single day and the
+ * lead stream would be pure noise — the failure this corpus has paid for four times. What a
+ * release needs to know is that a contract's VERDICT flipped.
+ */
+export const contractAddress = (c: ContractLike): string => receiptAddress({ rail: c.rail, holds: c.holds })
+
+/**
+ * Route a contract-check list through the receipt machinery, so `bg` and `world` become lead
+ * sources like `eu` — one shape for the whole boundary instead of two.
+ */
+export function contractRows(source: string, checks: readonly ContractLike[], prior: ReceiptBook): OutwardRow[] {
+  return checks.map((c) => {
+    const name = `${source}:${c.rail}`
+    const address = contractAddress(c)
+    return { name, host: source, address, state: receiptState(prior[name], address), note: c.detail }
+  })
+}
+
+/**
+ * The leads. A `moved` receipt is the world disagreeing with what we last recorded; a `fresh` one
+ * is a boundary nobody had asked before. Both are reasons to cut a release; `unchanged` is not,
+ * and `unreachable` is not a lead but an unanswered question.
+ */
+export const leadsOf = (rows: readonly OutwardRow[]): OutwardRow[] =>
+  rows.filter((r) => r.state === 'moved' || r.state === 'fresh')

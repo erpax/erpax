@@ -3,6 +3,10 @@ import {
   receiptAddress,
   receiptState,
   runOutward,
+  contractRows,
+  contractAddress,
+  leadsOf,
+  type OutwardRow,
   nextBook,
   outwardVerdict,
   type OutwardProbe,
@@ -104,5 +108,49 @@ describe('outward — the verdict', () => {
   it('records WHO answered, not only what', async () => {
     const rows = await runOutward([probe('vies', { valid: true }, 'ec.europa.eu')], {})
     expect(rows[0]!.host).toBe('ec.europa.eu')
+  })
+})
+
+describe('outward — every API is a lead source, and a rate moving is not a lead', () => {
+  it('a contract verdict FLIP is a lead; the same verdict is not', () => {
+    const before = contractRows('world', [{ rail: 'frankfurter', holds: true, detail: 'EUR on 2026-09-24: 31 rate(s)' }], {})
+    expect(before[0]!.state).toBe('fresh')
+    const book = nextBook({}, before)
+    // the SAME verdict, a different day and one more currency — not a lead
+    const again = contractRows('world', [{ rail: 'frankfurter', holds: true, detail: 'EUR on 2026-09-25: 32 rate(s)' }], book)
+    expect(again[0]!.state).toBe('unchanged')
+    expect(leadsOf(again)).toEqual([])
+    // the contract BREAKING is a lead
+    const broke = contractRows('world', [{ rail: 'frankfurter', holds: false, detail: '"rates" is empty' }], book)
+    expect(broke[0]!.state).toBe('moved')
+    expect(leadsOf(broke)).toHaveLength(1)
+    expect(leadsOf(broke)[0]!.note).toBe('"rates" is empty')
+  })
+
+  it('a rail nobody had asked before is a lead — fresh is new information', () => {
+    const rows = contractRows('bg', [{ rail: 'bnb', holds: true, detail: 'ok' }], {})
+    expect(leadsOf(rows).map((r) => r.state)).toEqual(['fresh'])
+  })
+
+  it('the receipt is namespaced by source, so two registries may share a rail name', () => {
+    const a = contractRows('bg', [{ rail: 'rates', holds: true, detail: 'x' }], {})
+    const b = contractRows('world', [{ rail: 'rates', holds: true, detail: 'x' }], {})
+    expect(a[0]!.name).toBe('bg:rates')
+    expect(b[0]!.name).toBe('world:rates')
+    // same verdict ⇒ same address, but different receipt keys — neither masks the other
+    expect(a[0]!.address).toBe(b[0]!.address)
+    expect(nextBook({}, [...a, ...b])).toEqual({ 'bg:rates': a[0]!.address, 'world:rates': b[0]!.address })
+  })
+
+  it('unreachable is NOT a lead — an unanswered question is not new information', () => {
+    const rows: OutwardRow[] = [{ name: 'x', host: 'h', address: 'a', state: 'unreachable' }]
+    expect(leadsOf(rows)).toEqual([])
+  })
+
+  it('the detail is never folded — that is what keeps a daily rate out of the lead stream', () => {
+    const one = contractAddress({ rail: 'r', holds: true, detail: 'monday' })
+    const two = contractAddress({ rail: 'r', holds: true, detail: 'tuesday' })
+    expect(one).toBe(two)
+    expect(contractAddress({ rail: 'r', holds: false, detail: 'monday' })).not.toBe(one)
   })
 })
