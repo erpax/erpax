@@ -2715,10 +2715,10 @@ src/spec/generator/marketing.ts:43: * @standard ISO/IEC-29119:2022 software-test
 src/spec/generator/multimedia.ts:30: * @standard ISO/IEC-29119:2022 software-testing test-evidence
 src/spec/generator/multimedia.ts:31: * @standard ISO-19011:2018 §6.4.6 audit-evidence visual-evidence
 src/spec/generator/multimedia.ts:32: * @standard W3C HTML5 video + img + figure
-src/spec/generator/scaffold.ts:158: * @standard ${chain.standards.join('\n * @standard ')}
-src/spec/generator/scaffold.ts:248: * @standard ${chain.standards.join('\n * @standard ')}
+src/spec/generator/scaffold.ts:159: * @standard ${chain.standards.join('\n * @standard ')}
+src/spec/generator/scaffold.ts:249: * @standard ${chain.standards.join('\n * @standard ')}
 src/spec/generator/scaffold.ts:28: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/spec/generator/seed.ts:179: * @standard ${chain.standards.join('\n * @standard ')}
+src/spec/generator/seed.ts:176: * @standard ${chain.standards.join('\n * @standard ')}
 src/spec/generator/seed.ts:34: * @standard ISO/IEC 25010:2023 §5.4 reusability
 src/spec/generator/templates.ts:23: * @standard ICU-MessageFormat (template grammar — adopted via Mustache)
 src/spec/generator/templates.ts:24: * @standard W3C i18n composable-translations

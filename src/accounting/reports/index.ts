@@ -197,6 +197,34 @@ function netBalance(row: { totalDebits: number; totalCredits: number; normalBala
   )
 }
 
+/**
+ * Accounts × posted activity → trial-balance rows. See SKILL.md.
+ *
+ * Stood twice at 81 AST nodes ([[rules]]/copy) — the trial balance and the income statement built
+ * the same rows. Both closed over `activity` (passed) and `netBalance` (module scope) and over
+ * nothing that differed, which is the check that must precede any fold.
+ */
+function trialBalanceRows(
+  accounts: readonly GLAccountDoc[],
+  activity: ReadonlyMap<string | number, { debits: number; credits: number }>,
+): TrialBalanceRow[] {
+  return accounts.map((acc) => {
+    const cell = activity.get(acc.id) ?? { debits: 0, credits: 0 }
+    const row: TrialBalanceRow = {
+      accountId: acc.id,
+      accountNumber: acc.accountNumber,
+      accountName: acc.accountName,
+      accountType: acc.accountType,
+      normalBalance: acc.normalBalance,
+      totalDebits: cell.debits,
+      totalCredits: cell.credits,
+      balance: 0,
+    }
+    row.balance = netBalance(row)
+    return row
+  })
+}
+
 // ─── Public report functions ──────────────────────────────────────────────
 
 /**
@@ -227,21 +255,7 @@ export async function generateTrialBalance(
   ])
 
   const activity = aggregateActivity(entries.docs as unknown as JournalEntry[])
-  const rows: TrialBalanceRow[] = (accounts.docs as unknown as GLAccountDoc[]).map((acc) => {
-    const cell = activity.get(acc.id) ?? { debits: 0, credits: 0 }
-    const row: TrialBalanceRow = {
-      accountId: acc.id,
-      accountNumber: acc.accountNumber,
-      accountName: acc.accountName,
-      accountType: acc.accountType,
-      normalBalance: acc.normalBalance,
-      totalDebits: cell.debits,
-      totalCredits: cell.credits,
-      balance: 0,
-    }
-    row.balance = netBalance(row)
-    return row
-  })
+  const rows: TrialBalanceRow[] = trialBalanceRows(accounts.docs as unknown as GLAccountDoc[], activity)
 
   const totalDebits = rows.reduce((s, r) => s + r.totalDebits, 0)
   const totalCredits = rows.reduce((s, r) => s + r.totalCredits, 0)
@@ -318,21 +332,7 @@ export async function generateIncomeStatement(
   ])
 
   const activity = aggregateActivity(entries.docs as unknown as JournalEntry[])
-  const rows: TrialBalanceRow[] = (accounts.docs as unknown as GLAccountDoc[]).map((acc) => {
-    const cell = activity.get(acc.id) ?? { debits: 0, credits: 0 }
-    const row: TrialBalanceRow = {
-      accountId: acc.id,
-      accountNumber: acc.accountNumber,
-      accountName: acc.accountName,
-      accountType: acc.accountType,
-      normalBalance: acc.normalBalance,
-      totalDebits: cell.debits,
-      totalCredits: cell.credits,
-      balance: 0,
-    }
-    row.balance = netBalance(row)
-    return row
-  })
+  const rows: TrialBalanceRow[] = trialBalanceRows(accounts.docs as unknown as GLAccountDoc[], activity)
 
   const revenueAccounts = rows.filter((r) => r.accountType === 'revenue')
   const expenseAccounts = rows.filter((r) => r.accountType === 'expense')

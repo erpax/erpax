@@ -37,6 +37,7 @@
 
 import type { SpecCorpus, SpecExample } from './types'
 import { generateChains } from './chain'
+import { camelImplsName } from './scaffold'
 
 /** Output of `generateSeed()` — the rendered TS source + provenance. */
 export interface GeneratedSeed {
@@ -93,10 +94,6 @@ function resolvePlaceholderToken(tok: string): string {
  * Convert a chain id to a camelCase impls export name.
  * `CONSIGNMENT_CYCLE` → `consignmentCycleImpls`
  */
-function camelImplsName(chainId: string): string {
-  const parts = chainId.toLowerCase().split('_')
-  return parts[0] + parts.slice(1).map((p) => p[0].toUpperCase() + p.slice(1)).join('') + 'Impls'
-}
 
 /** Per-step impl block. */
 function renderStep(

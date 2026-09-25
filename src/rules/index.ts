@@ -318,7 +318,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // copy — one body at two addresses ([[rules]]/copy). Content-addressed, so same bytes ⇒ same
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
     // written, which is the argument for a gate over a stated law. Ratchets from 44.
-    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 12 }),
+    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 7 }),
     // copy-in-tangle — a duplicated body whose two FILES sit in one strongly connected
     // component ([[rules]]/copy × [[rules]]/cycle, the cross [[conjecture]] ranked second at
     // 1.11 bits). Worse than either alone: inside a tangle the initialisation order of the two
@@ -335,7 +335,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
         const r = unfoldedExports(cwd)
         return unearnedCopies(new Set([...r.dead, ...r.single].map((e) => e.file)), cwd).length
       })(),
-      baseline: 7,
+      baseline: 4,
     }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carried
     // `sorry` or did not compile, under a directory named `verify` that nothing ever ran.
