@@ -63,13 +63,7 @@ export const setRoot = (uuids: readonly string[]): string => {
 /** Address the ORDER: any transposition moves it, as a chained receipt needs. @rootKind sequence */
 export const sequenceRoot = (uuids: readonly string[]): string => foldToRoot(uuids)
 
-/**
- * The two domains, as ADDRESSES — content-uuids of the words themselves. See SKILL.md.
- *
- * Not a byte prefix: a prefix is a payload, and the tag would then be carried rather than
- * addressed. These are uuids, composed with the same magma everything else uses, so domain
- * separation costs one more fold and no new encoding.
- */
+/** The two domains, as ADDRESSES — content-uuids of the words, not a byte prefix. See SKILL.md. */
 const LEAF_DOMAIN: string = toUuid(Buffer.from('leaf', 'utf8'))
 const NODE_DOMAIN: string = toUuid(Buffer.from('node', 'utf8'))
 
@@ -84,10 +78,8 @@ export function merkleNode(left: string, right: string): string {
 }
 
 /**
- * The domain-separated Merkle root (RFC 6962 §2.1). See SKILL.md.
- *
- * `foldToRoot` is the bare magma fold and stays what it is — the corpus's existing addresses
- * are folded with it. This is what a root used as EVIDENCE must be built with.
+ * The domain-separated Merkle root (RFC 6962 §2.1) — what a root used as EVIDENCE is built
+ * with. `foldToRoot` stays the bare address fold. See SKILL.md.
  *
  * @rootKind sequence
  */
@@ -110,13 +102,7 @@ export interface MerkleStep {
   readonly right: boolean
 }
 
-/**
- * The inclusion proof. There is no undomained twin to reach for by mistake. See SKILL.md.
- *
- * The bare-magma pair that stood here built a tree in which an internal node is a valid leaf.
- * Removing it IS the fix: a safe alternative beside an unsafe default is obeyed only by whoever
- * remembers, which is the shape [[rules]] refuses everywhere else.
- */
+/** The inclusion proof. There is no undomained twin to reach for by mistake. See SKILL.md. */
 export function merkleProof(values: readonly string[], index: number): MerkleStep[] {
   if (index < 0 || index >= values.length) return []
   const path: MerkleStep[] = []

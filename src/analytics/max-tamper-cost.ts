@@ -23,8 +23,9 @@
  * @audit composed from @/tamper/cost crackVerdict at @/balance live coverage; never hand-asserted
  * @see ./index.ts -- ../tamper/cost (crackVerdict) -- ../balance (coverage) -- ../anchor
  */
+import { exactFloor } from '@/algebra'
 import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
-import { ERPAX_DIGEST_BITS, CONTENT_DIGEST_BITS, bhtCollisionLog2 } from '@/cost'
+import { ERPAX_DIGEST_BITS, CONTENT_DIGEST_BITS, bhtCollisionLog2, birthdayLog2 } from '@/cost'
 import { auraBalance, coverage as schemaCoverage } from '@/balance'
 import { orphans } from '@/entropy'
 import { crossSeals } from '@/aura'
@@ -108,9 +109,9 @@ export const maxTamperCost = ({ unsealedCrosses = 0, impurities = 0 }: { unseale
       : impureWeak
       ? 'remove the impurity(ies) — make every content collapse to its claimed content-uuid: re-point the dangling link, return the off-ring atom to the sequence, reject the hallucination (integrity recompute) — closing the 0-bit path that caps the whole chain (purity)'
       : quantum
-        ? 'quantum (BHT) collision on the bare uuid is the floor (2^35) — commit the FULL 256-bit content digest (→ 2^85) AND use a hash-based post-quantum anchor (Shor breaks RSA/ECC)'
+        ? `quantum (BHT) collision on the bare uuid is the floor (2^${exactFloor(bhtCollisionLog2(ERPAX_DIGEST_BITS))}) — commit the FULL ${CONTENT_DIGEST_BITS}-bit content digest (→ 2^${exactFloor(bhtCollisionLog2(CONTENT_DIGEST_BITS))}) AND use a hash-based post-quantum anchor (Shor breaks RSA/ECC)`
         : weakest.binding === 'collision'
-          ? 'thread anchorCommitmentBits=CONTENT_DIGEST_BITS (256): closes the 2^53 chosen-content collision to 2^128'
+          ? `thread anchorCommitmentBits=CONTENT_DIGEST_BITS (${CONTENT_DIGEST_BITS}): closes the 2^${exactFloor(birthdayLog2(ERPAX_DIGEST_BITS))} chosen-content collision to 2^${exactFloor(birthdayLog2(CONTENT_DIGEST_BITS))}`
           : 'commitment binds at second-preimage; close the coverage gap toward 1 to drive cost → ∞',
   }
 }

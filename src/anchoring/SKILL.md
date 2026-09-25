@@ -49,6 +49,34 @@ The anchor is the ONE external entropy a zero-entropy [[integrity]] store borrow
 
 Matter-twin: `src/anchoring/index.ts` — `anchorLeaf` · `anchorRoot` · `verifyAnchor` · `listAnchors` · `isExternalAnchor` · `NOTARY_STUB_BACKEND`; types `ChainKind` · `AnchorReceipt` · `ChainBackend` · `AnchorVerification`. Pins the [[audit]] Merkle root via [[integrity]] `computeContentDigest`; the mandatory external entropy of [[tamper]]-[[cost]].
 
+## The prose priced the anchor on a refuted constant
+
+This atom's docstring said an anchor leaf must commit the full digest "NOT the truncated **106-bit**
+uuid — else the chosen-content collision floor is **2^53**". Both numbers were wrong, and both came
+from the same place: `ERPAX_DIGEST_BITS` was once a typed `106`, which [[cost]]/bits refuted by
+measuring which bits are actually constant in a live content-uuid. The width is **122** — 128 less
+the version nibble and the variant pair.
+
+So every figure derived from 106 was wrong wherever it had been copied:
+
+| stated | from | honest |
+| --- | --- | --- |
+| `2^53` chosen-content collision | 106 ÷ 2 | **2^61** |
+| `2^35` quantum (BHT) floor | 106 ÷ 3 | **2^40** |
+
+The error was **conservative** — it under-claimed erpax's own integrity — which is exactly why
+nothing contradicted it: a pessimistic figure still prescribes the right fix, so it led somewhere
+sensible while being false. That is the same shape [[cost]]/bits records twice about itself, and it
+had spread here and into [[analytics]]'s runtime advice string.
+
+**The heal is the formula, not a corrected number.** The docstrings and the advice now name
+`birthdayLog2(ERPAX_DIGEST_BITS)` and `bhtCollisionLog2(ERPAX_DIGEST_BITS)` and interpolate what
+they return, so there is no output left to go stale — and a test asserts the refuted figures cannot
+return to either source. Correcting `53` to `61` by hand would have produced another number waiting
+to rot.
+
+The same edit repointed two references into the dissolved `services/` tree ([[rules]]/reference).
+
 **Law — [[law]]: a backend that does not pin to entropy no party controls is not tamper-evidence — `verifyAnchor` passes only an external [[anchor]], never a stub, and the leaf commits the full content digest (2^128), never the uuid (2^53).**
 
 ## Standards

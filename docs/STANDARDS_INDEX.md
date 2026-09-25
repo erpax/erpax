@@ -243,9 +243,9 @@ src/anchor/index.ts:22: * @standard FIPS 203 (ML-KEM, finalized 2024-08-13) — 
 src/anchor/surface/index.ts:22: * @standard FIPS 203 (ML-KEM) — key establishment; mandatory on every channel that exchanges state
 src/anchor/surface/index.ts:23: * @standard FIPS 204 (ML-DSA) — lattice signature, a distinct assumption from the digest
 src/anchor/surface/index.ts:24: * @standard FIPS 205 (SLH-DSA) — hash-based signature; the primary root, no new assumption
-src/anchoring/index.ts:27: * @standard W3C Verifiable Credentials Data Model 2.0
-src/anchoring/index.ts:28: * @standard ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)
-src/anchoring/index.ts:29: * @standard RFC 3161 (TSA) · eIDAS (EU 910/2014) — the real external anchors
+src/anchoring/index.ts:30: * @standard W3C Verifiable Credentials Data Model 2.0
+src/anchoring/index.ts:31: * @standard ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)
+src/anchoring/index.ts:32: * @standard RFC 3161 (TSA) · eIDAS (EU 910/2014) — the real external anchors
 src/angle/index.ts:15: * @standard group theory — (Z/9Z)* is cyclic of order 6; the doubling orbit is a 60° rotation
 src/anti/corruption/cross-entity.ts:16: * @standard ACFE Occupational-Fraud-and-Abuse-Classification corruption-and-billing-schemes
 src/anti/corruption/cross-entity.ts:19: * @standard ISO 37001:2016 anti-bribery conflict-of-interest
@@ -3057,6 +3057,7 @@ src/uuid/governance/index.ts:43: * @standard W3C DID Core 1.0
 src/uuid/governance/index.ts:44: * @standard W3C Verifiable Credentials Data Model 2.0
 src/uuid/governance/index.ts:45: * @standard ISO/IEC TR 23244 blockchain governance
 src/uuid/governance/index.ts:46: * @standard eIDAS §6 electronic identification
+src/uuid/involution/index.ts:4: * @standard RFC 9562 §4.1 §5.8 — the version and variant bits a uuid must keep
 src/uuid/kv/index.ts:52: * @standard RFC 9562 §5.8 uuidv8 (both sides)
 src/uuid/kv/index.ts:53: * @standard RFC 8785 JCS (canonicalisation that makes equivalence hold)
 src/uuid/kv/index.ts:54: * @standard NIST FIPS 180-4 SHA-256
@@ -5557,7 +5558,7 @@ src/analytics/TrendAnalysisCard.tsx:25: * @audit ISO-19011:2018 audit-trail tren
 src/analytics/index.ts:17: * @audit computed on the live uuid-matrix + balance/entropy/standards, never hand-asserted
 src/analytics/max-tamper-cost.ts:23: * @audit composed from @/tamper/cost crackVerdict at @/balance live coverage; never hand-asserted
 src/analytics/test.ts:8: * @audit the report is recomputed from the live matrix, never a fixture
-src/anchoring/index.ts:30: * @audit Conservation Law 55/62 (tamper cost; the anchor is mandatory external entropy)
+src/anchoring/index.ts:33: * @audit Conservation Law 55/62 (tamper cost; the anchor is mandatory external entropy)
 src/anti/corruption/index.ts:22: * @audit ISO-19011:2018 audit-trail integrity-verification
 src/api/audit/events/index.ts:24: * @audit ISO-19011:2018 audit-trail
 src/app/(api)/api/proof/route.ts:19: * @audit ISO-19011:2018 audit-evidence the citation must lead to the evidence
