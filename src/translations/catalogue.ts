@@ -80726,7 +80726,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about same — URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
-        "uuid": "133485bb-53e6-8d3a-b2df-63851852f181",
+        "uuid": "48595c39-2043-886d-ab8d-9bcac83ae9a2",
         "words": [
           "use",
           "when",
@@ -126341,7 +126341,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about breadcrumb — A set of links that can help a user understand and navigate a website hierarchy.",
-        "uuid": "caf67f73-daa1-8184-9502-ab7397320380",
+        "uuid": "9d19b41e-80e6-8bc1-ba26-2cf91abd6bf5",
         "words": [
           "use",
           "when",
@@ -208574,7 +208574,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "website",
-        "uuid": "529e79fb-d3cc-8fa8-8034-fda8b2e9f4ef",
+        "uuid": "f5eb5c25-0b81-8ba0-9c15-21c845fd178f",
         "words": [
           "website"
         ],
@@ -208711,7 +208711,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading the SEO face registry — listFaces and the schema/OG vortex, in a module with ZERO imports. That property is why it is its own atom: @/integrity/uuid-stream took listFaces from the @/website barrel, and the barrel dragged the whole page/agent/spec subtree into the module that exports uuid and jcsCanonicalize to the entire corpus. Importing a leaf adds no edge.",
-        "uuid": "b5d4a062-479f-8fc0-b219-374dd6fb58f5",
+        "uuid": "720e9efd-aaa0-81a8-a433-2ad34d7e4227",
         "words": [
           "use",
           "when",
@@ -208803,7 +208803,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about shadcn — The website is the e2e walkthroughs rendered, and a walkthrough is not prose: it is steps, states, evidence and gaps.",
-        "uuid": "5eec3031-c82e-8030-a7df-530a4e5d76e4",
+        "uuid": "95976fc6-fc05-8f5d-9834-d23e0c944934",
         "words": [
           "use",
           "when",

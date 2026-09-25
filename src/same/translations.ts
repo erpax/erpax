@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about same — URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
-    "uuid": "133485bb-53e6-8d3a-b2df-63851852f181",
+    "uuid": "48595c39-2043-886d-ab8d-9bcac83ae9a2",
     "words": [
       "use",
       "when",
