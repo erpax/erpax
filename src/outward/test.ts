@@ -4,7 +4,6 @@ import {
   receiptState,
   runOutward,
   contractRows,
-  contractAddress,
   leadsOf,
   type OutwardRow,
   nextBook,
@@ -148,9 +147,8 @@ describe('outward — every API is a lead source, and a rate moving is not a lea
   })
 
   it('the detail is never folded — that is what keeps a daily rate out of the lead stream', () => {
-    const one = contractAddress({ rail: 'r', holds: true, detail: 'monday' })
-    const two = contractAddress({ rail: 'r', holds: true, detail: 'tuesday' })
-    expect(one).toBe(two)
-    expect(contractAddress({ rail: 'r', holds: false, detail: 'monday' })).not.toBe(one)
+    const addr = (holds: boolean, detail: string) => contractRows('s', [{ rail: 'r', holds, detail }], {})[0]!.address
+    expect(addr(true, 'monday')).toBe(addr(true, 'tuesday'))
+    expect(addr(false, 'monday')).not.toBe(addr(true, 'monday'))
   })
 })

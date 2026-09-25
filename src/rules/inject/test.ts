@@ -154,7 +154,14 @@ describe('rules/inject — the entry surfaces an agent loads first', () => {
 
   it('the live corpus is clean across every surface — zero is a theorem', async () => {
     const { scanInjection, agentSurfaces } = await import('@/rules/inject')
-    expect(agentSurfaces().length).toBeGreaterThan(7000)
+    // CI-VIEW: LLM.md is generated and gitignored (`src/**/LLM.md`, 0 tracked), so a clean
+    // checkout carries ~3.6k surfaces and a local tree with the faces built carries ~7.2k. A
+    // hardcoded 7000 passes here and fails in CI on every run — rules/drift's law, stated for a
+    // COUNT: derive the floor from the tree instead of typing the answer.
+    const surfaces = agentSurfaces()
+    const skills = surfaces.filter((f) => f.endsWith('SKILL.md')).length
+    expect(skills).toBeGreaterThan(3000)
+    expect(surfaces.length).toBeGreaterThanOrEqual(skills)
     expect(scanInjection()).toEqual([])
   }, 120_000)
 })

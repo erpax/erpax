@@ -57,10 +57,17 @@ export const ERPAX_DIGEST_BITS = UUID_BITS - UUID_VERSION_BITS - UUID_VARIANT_BI
 export const CONTENT_DIGEST_BITS = 256
 
 /**
- * The 64-bit torus this tree addresses on. MIRRORED from `architectureBits()`, not imported —
- * the import would add an edge to the tangle, and `src/cost/bits/test.ts` pins the equality.
+ * The 64-bit torus this tree addresses on — DERIVED, not typed.
+ *
+ * The double torus is the two halves of the 128-bit uuid: `wordFold ⊗ digitFold = combined128`, so
+ * one torus is exactly half the identifier's width. Written as the literal `64` it was a
+ * matrix-crack — a static datum the tree could have computed ([[matrix]]/constants-audit: an
+ * `export const` is seal-debt unless it is computed from sealed state, which is why the subtraction
+ * below was never flagged and this line was). It still MIRRORS `architectureBits()` rather than
+ * importing it, because that import would add an edge to the tangle ([[rules]]/cycle), and
+ * `src/cost/bits/test.ts` pins both the equality and the value 64.
  */
-export const TORUS_BITS = 64
+export const TORUS_BITS = UUID_BITS / 2
 
 /**
  * What truncating the digest to a uuid costs, in bits.

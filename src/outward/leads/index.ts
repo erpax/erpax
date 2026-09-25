@@ -9,7 +9,8 @@ import { worldContractOnline } from '@/outward/world'
  * outward/leads — every API is a lead source. See ./SKILL.md.
  */
 
-export const LEADS_REL = 'outward-leads.json'
+/** The agenda's filename. Internal: the workflow reads the FILE, not this name. */
+const LEADS_REL = 'outward-leads.json'
 
 export interface LeadHarvest {
   readonly rows: readonly OutwardRow[]

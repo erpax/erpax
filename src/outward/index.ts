@@ -163,7 +163,7 @@ export interface ContractLike {
  * lead stream would be pure noise — the failure this corpus has paid for four times. What a
  * release needs to know is that a contract's VERDICT flipped.
  */
-export const contractAddress = (c: ContractLike): string => receiptAddress({ rail: c.rail, holds: c.holds })
+const contractAddress = (c: ContractLike): string => receiptAddress({ rail: c.rail, holds: c.holds })
 
 /**
  * Route a contract-check list through the receipt machinery, so `bg` and `world` become lead

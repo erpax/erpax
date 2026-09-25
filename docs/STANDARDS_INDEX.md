@@ -829,9 +829,9 @@ src/convention/triggered/index.ts:28: * @standard schema.org — the type vocabu
 src/convention/twinned/index.ts:34: * @standard schema.org — the type vocabulary, collided to single words
 src/cost/bits/index.ts:13: * @standard NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2
 src/cost/bits/index.ts:14: * @standard RFC 9562 §8 — UUID security considerations
-src/cost/bits/index.ts:152: * @standard CRAQ — Terrace & Freedman, USENIX ATC 2009
+src/cost/bits/index.ts:159: * @standard CRAQ — Terrace & Freedman, USENIX ATC 2009
 src/cost/bits/index.ts:15: * @standard CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication
-src/cost/bits/index.ts:162: * @standard DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)
+src/cost/bits/index.ts:169: * @standard DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)
 src/cost/bits/index.ts:16: * @standard DeepSeek-Prover-V2 — recursive, kernel-checked invariants
 src/cost/bits/index.ts:46: * @standard RFC 9562 §5.8 (uuidv8) · §4.1 (variant)
 src/cost/centers/index.ts:14: * @standard ISO-3166-1:2020 country-codes geographic-segment-tagging

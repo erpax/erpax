@@ -30,7 +30,7 @@ export interface RegistryIo {
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'
 
-export const networkIo: RegistryIo = {
+const networkIo: RegistryIo = {
   getJson: async (url) => {
     const res = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/json' } })
     const text = await res.text()

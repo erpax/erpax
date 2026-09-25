@@ -2,7 +2,9 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, rmSync, existsSync, readFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { harvestLeads, writeHarvest, LEADS_REL } from './index'
+import { harvestLeads, writeHarvest } from './index'
+
+const LEADS_REL = 'outward-leads.json'
 import type { OutwardRow } from '@/outward'
 
 const contract = (rail: string, holds: boolean, detail = 'd') => [{ rail, holds, detail }]

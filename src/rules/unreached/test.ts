@@ -165,12 +165,17 @@ describe('unreachedStrict — the census with the self-door shut', () => {
     expect(strict).toBeGreaterThan(loose)
   })
 
-  it('names an atom that nothing imports, even though it carries a deployment face', () => {
-    // kyc was minted 2026-09-20 with a face and no importer. The looser census called it reached.
+  it('names atoms that nothing imports, even though they carry a deployment face', () => {
+    // `kyc` was the original instance: minted 2026-09-20 with a face and no importer, which the
+    // looser census called reached. It is now imported by agents/mcp/tool/kyc, so the tree IMPROVED
+    // and an assertion pinned to that one name went red for the right reason. The claim was never
+    // about kyc — it is that the strict census is a PROPER superset of the loose one, which is what
+    // "shut the self-door" means. rules/drift, for a set instead of a number: state the invariant.
     const strict = new Set(unreachedStrict().map((a) => a.atomPath))
     const loose = new Set(unreachedAtoms().map((a) => a.atomPath))
-    expect(strict.has('kyc')).toBe(true)
-    expect(loose.has('kyc')).toBe(false)
+    const strictOnly = [...strict].filter((p) => !loose.has(p))
+    expect(strictOnly.length).toBeGreaterThan(0)
+    for (const p of loose) expect(strict.has(p), `${p} is loose-unreached but not strict`).toBe(true)
   })
 
   it('does not name an atom that a sibling genuinely imports', () => {

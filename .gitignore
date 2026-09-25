@@ -112,3 +112,7 @@ src/**/diamond.json
 
 # Lean kernel build output — .olean is compiled from the .lean beside it (proof/accepted)
 *.olean
+
+# Another party's file, swept into a commit three times by `git add -A`. Untracked in
+# 47424bdd92 and re-added twice since — ignored so the sweep cannot happen a fourth time.
+RECURSION.md
