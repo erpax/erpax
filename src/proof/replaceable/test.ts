@@ -145,3 +145,31 @@ describe('proof/replaceable — the queue held two populations, and one is undis
     }
   })
 })
+
+/**
+ * A cited paper is not a conformance obligation — and the year alone does not decide.
+ */
+describe('proof/replaceable — an attribution is not an obligation', () => {
+  it('a theorem cited by author and year is literature', async () => {
+    const { namesAttribution, namesAnObligation } = await import('@/proof/replaceable')
+    for (const s of ['Graham (1969)', 'Shannon (1948)', 'Antoine (1888)', 'Gleason (1957)']) {
+      expect(namesAttribution(s), s).toBe(true)
+      expect(namesAnObligation(s), s).toBe(false)
+    }
+  })
+
+  it('but a treaty that carries its year the same way is still an obligation', async () => {
+    const { namesAttribution, namesAnObligation } = await import('@/proof/replaceable')
+    // the single case that refutes a bare shape rule — measured, not imagined
+    expect(namesAttribution('Hague Apostille Convention (1961)')).toBe(false)
+    expect(namesAnObligation('Hague Apostille Convention (1961)')).toBe(true)
+    expect(namesAnObligation('EU 2010/75 Annex VII')).toBe(true)
+    expect(namesAnObligation('ISO 19011:2018 §6.4')).toBe(true)
+  })
+
+  it('and a year inside a numbered standard is not a trailing attribution', async () => {
+    const { namesAttribution } = await import('@/proof/replaceable')
+    expect(namesAttribution('ISO/IEC 25010:2023 §5.6')).toBe(false)
+    expect(namesAttribution('IPCC AR5 (2014)')).toBe(false) // AR5 carries its own digits
+  })
+})

@@ -788,8 +788,7 @@ src/config/types/index.ts:8: * @standard ISO-17442-1:2020 lei
 src/config/types/index.ts:9: * @standard BCP-47 language-tag
 src/confirm/push/index.ts:17: * @standard ISO-19011:2018 audit-trail self-heal-visible-in-git-log
 src/confirm/uuid/index.ts:16: * @standard ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable
-src/conjecture/index.ts:15: * @standard Popper — a proposition that forbids nothing explains nothing
-src/conjecture/index.ts:16: * @standard Shannon (1948) — surprise is −log₂ p, in bits
+src/conjecture/index.ts:5: * @standard Popper — a proposition that forbids nothing explains nothing
 src/connections/index.ts:20: * @standard W3C ActivityStreams 2.0 social-graph-vocabulary (Follow/Block/Like)
 src/connections/index.ts:21: * @standard W3C ActivityPub server-to-server federation (the cross-platform sync)
 src/connections/index.ts:22: * @standard OASIS UBL 2.1 business-relationship (B2B trade edges)
@@ -2686,9 +2685,10 @@ src/skill/router/rating/index.ts:17: * @standard ISO/IEC 25010 §5.5 testability
 src/skill/router/subgraph.ts:20: * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
 src/skin/index.ts:24: * @standard largest organ ≈1.2–2.2 m²; stratum corneum barrier; epidermal turnover ~28 days
 src/social/graph/index.ts:10: * @standard W3C ActivityStreams 2.0 Follow/Accept reciprocity
-src/solvent/index.ts:10: * @standard EU 2010/75 Annex VII — solvent management plan: input = output + fugitive
-src/solvent/index.ts:11: * @standard CODATA 2018 — molar gas constant R = 8.314462618 J·mol⁻¹·K⁻¹ (exact)
-src/solvent/index.ts:9: * @standard Antoine (1888) — log₁₀ P = A − B/(T + C), the vapour-pressure correlation
+src/solvent/index.ts:4: * @standard Antoine (1888) — log₁₀ P = A − B/(T + C), the vapour-pressure correlation
+src/solvent/index.ts:5: * @standard EU 2010/75 Annex VII — solvent management plan: input = output + fugitive
+src/solvent/index.ts:6: * @standard CODATA 2018 — molar gas constant R = 8.314462618 J·mol⁻¹·K⁻¹ (exact)
+src/solvent/index.ts:80: * @standard CODATA 2018 — R = 8.314462618 J·mol⁻¹·K⁻¹ (exact)
 src/sparsity/index.ts:37: * @standard ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation
 src/spec/generator/audit.ts:11: * @standard ISO 19011:2018 §6.4 audit-evidence
 src/spec/generator/audit.ts:12: * @standard ISO/IEC 25023:2016 §8 quality-measurement-functionality-completeness
@@ -4281,6 +4281,7 @@ src/accounting/analysis/index.ts:4: * @accounting IFRS IAS-1 presentation-of-fin
 src/accounting/analysis/index.ts:5: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/accounting/analysis/index.ts:6: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/accounting/analysis/index.ts:7: * @accounting US-GAAP ASC-230 statement-of-cash-flows
+src/accounting/balance/index.ts:39: * @accounting IAS-1 §27 — the accrual basis: every posting carries its contra, so the
 src/accounting/debit/index.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/accounting/debit/index.ts:11: * @accounting IFRS Conceptual-Framework recognition-derecognition
 src/accounting/debit/index.ts:12: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles

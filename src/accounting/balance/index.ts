@@ -35,6 +35,9 @@ import { exactMax, exactRound } from '@/algebra'
  * packs the halves side by side) while `interact64` is a bitwise AND masked to the ring
  * — and the AND had no formula printed at all, only a number. `‖` is the pack and `∧`
  * is the interaction, so the symbol no longer decides which of the two a reader means.
+ *
+ * @accounting IAS-1 §27 — the accrual basis: every posting carries its contra, so the
+ *   sums conserve and `Σdebit − Σcredit = 0` is an identity rather than a finding
  */
 export const BALANCE_EQUATION =
   'Σdebit − Σcredit = 0 · variance = Σ[[liability]] + membership · Σgap − Σseal = netEb · wordHalf ‖ digitHalf = combined128 · wordHalf ∧ digitHalf ∧ mask = interact64'
