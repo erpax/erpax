@@ -62,4 +62,59 @@ imports @/algebra (exactAbs, exactTrunc) · @/horo/constants (re-exported from p
 
 <sub>content-uuid `—` · refactoring atom · sealed `0`</sub>
 
+## Two mirrors, one step apart — and only one is the ring's
+
+`throughVoid` (`n ↦ 1 − n`) and `halfTurn` (`n ↦ −n`) are both involutions on the nine, and they are
+routinely taken for one map. They are not:
+
+| | pairs | fixed | the doubling ring ⟨2⟩ |
+| --- | --- | --- | --- |
+| `throughVoid` — the number line's mirror | (1,9) (2,8) **(3,7) (4,6)** | **5** = 2⁻¹ | **escapes**: 1↦9, 4↦6, 7↦3 |
+| `halfTurn` — the ring's mirror | (1,8) (2,7) (3,6) (4,5) | **9**, the zero | **closed** |
+
+They differ by exactly **one unit** — `halfTurn(n) = throughVoid(n) − 1` — which is why they are
+confused, and the one unit is what decides whether the ring survives the reflection.
+
+`halfTurn` is not a second convention bolted on. On ⟨2⟩ it **is** multiplication by `2³ = 8 ≡ −1`:
+three steps of a six-cycle, `360/6 = 60°` each, so the reflection is literally the **half-turn**,
+`3 × 60° = 180°`. The ring's zero is its pivot because `−9 ≡ 9`.
+
+## The diagonal touches four of nine
+
+`n² mod 9` for `n = 1…9` is `1 4 9 7 7 9 4 1 9` — it **opens at 1, closes at 9, repeats at 9**, and
+reaches only `{1, 4, 7, 9}`, four of the nine residues. Drop the zero and `{1,4,7}` is closed under
+multiplication: a genuine subgroup, a **3-cycle stepping 120°**.
+
+**There is no 4-cycle here to carry a 90° step.** `(ℤ/9ℤ)*` has order 6, and Lagrange forbids a
+subgroup of order 4. So `2 × 90° = 3 × 60° = 180°` is a true identity of arithmetic, but only the
+`3 × 60°` side has an orbit behind it in this modulus — the half-turn of the six-cycle. The `2 × 90°`
+side names a rotation the ring cannot perform.
+
+## Only the linear mirror survives casting out nines
+
+`8 + 8 = 16`. Its digits are `(1, 6)` and its digital root is `7`. Reflect the digits under
+`throughVoid` and they become `(9, 4)`, which folds to **4** — but fold first and reflect, and `7`
+becomes **3**. Two answers for one reflection.
+
+| | reflect the digits, then fold | fold first, then reflect |
+| --- | --- | --- |
+| `throughVoid` (1 − n) | (1,6) ↦ (9,4) → 13 → **4** | throughVoid(7) = **3** |
+| `halfTurn` (−n) | (1,6) ↦ (8,3) → 11 → **2** | halfTurn(7) = **2** ✓ |
+
+Over all 81 pairs, `halfTurn` commutes with the fold **81 times** and `throughVoid` **none**, and
+the defect is always exactly **1**.
+
+The reason is the affine constant, not an accident of this example. `f(n) = 1 − n` gives
+`f(x) + f(y) = 2 − x − y` while `f(x + y) = 1 − x − y` — one unit adrift, once per digit.
+`f(n) = −n` is linear and passes through any sum untouched. **Casting out nines IS a sum**, so a
+mirror that is only affine cannot be applied digit-wise and folded: it is a reflection of the
+NUMERALS. `halfTurn` reflects the NUMBER.
+
+That is the same one unit as the table above, seen from the other side: the two mirrors differ by a
+constant, and a constant is exactly what a sum cannot ignore.
+
+**Honest boundary.** These are statements about `ℤ/9` and nothing else. That `halfTurn` is the group's
+half-turn is a theorem; that a half-turn *means* anything beyond `×(−1)` is not, and nothing here
+claims it.
+
 Composes: [[horo]] · [[horo]] · [[algebra]].

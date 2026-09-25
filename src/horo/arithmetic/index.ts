@@ -147,3 +147,26 @@ export function affineStep(x: number, a: number, b: number): number {
 }
 
 /** @index-cross.foldback child=horo/arithmetic parent=horo — this cross folds back into its parent. */
+
+/**
+ * THE RING'S OWN MIRROR — `n ↦ −n (mod 9)`, which on ⟨2⟩ is multiplication by `2³ = 8`.
+ *
+ * Not `throughVoid`. That one pivots on 5 and pairs `(3,7) (4,6)`; this one pivots on
+ * **9, the ring's zero**, pairs `(1,8) (2,7) (3,6) (4,5)`, and is the only one of the two
+ * that leaves the doubling ring where it found it. See SKILL.md.
+ */
+export function halfTurn(step: number): number {
+  const n = Number(step) || 0
+  return (((-n % 9) + 9) % 9) || 9
+}
+
+/**
+ * THE DIAGONAL — `n² (mod 9)` for `n = 1…9`: `1 4 9 7 7 9 4 1 9`.
+ *
+ * Opens at 1, closes at 9, repeats at 9, and touches **4 of the 9 residues**. Drop the
+ * zero and `{1,4,7}` is closed under multiplication — a 3-cycle at 120°, never a 4-cycle:
+ * `(ℤ/9ℤ)*` has order 6 and Lagrange forbids a subgroup of order 4. See SKILL.md.
+ */
+export function diagonal(): number[] {
+  return [...Array(9)].map((_, i) => ((((i + 1) * (i + 1)) % 9) + 9) % 9 || 9)
+}
