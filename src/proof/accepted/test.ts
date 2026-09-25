@@ -132,3 +132,23 @@ describe('proof/accepted — imports are resolved before the kernel is asked', (
     }
   }, 240_000)
 })
+
+/**
+ * A gate that dirties the tree by running is a gate with a side effect.
+ *
+ * Resolving imports means compiling them, and the first version emitted the .olean beside
+ * the source — seven of them, which the diamond scan then counted as stray matter in the
+ * corpus. Cleaning up afterwards can be skipped; compiling elsewhere cannot.
+ */
+describe('proof/accepted — asking the kernel leaves the corpus untouched', () => {
+  it('compiles imports to a temp dir, not beside the source', async () => {
+    const { kernelPath, kernelVerdict } = await import('@/proof/accepted')
+    if (kernelPath() === null) return
+    const { readdirSync } = await import('node:fs')
+    const dir = `${process.cwd()}/src/verify/lean`
+    const before = readdirSync(dir).filter((f) => f.endsWith('.olean'))
+    expect(before).toEqual([])
+    kernelVerdict(`${dir}/Cross.lean`) // imports Arrival, Release, Ftl, Uuid
+    expect(readdirSync(dir).filter((f) => f.endsWith('.olean'))).toEqual([])
+  }, 240_000)
+})

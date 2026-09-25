@@ -242,3 +242,49 @@ describe('horo/arithmetic — the fold keeps the linear mirror and loses the aff
     }
   })
 })
+
+/**
+ * The double torus completes the turn — and still has no quarter of it.
+ *
+ * One ring's half-turn is 180°. The 128-bit word is TWO 64-bit rings
+ * (combineArchitectures), so a half-turn on each completes 360° and returns the double
+ * word. What the second ring does not supply is a 4-cycle.
+ */
+describe('horo/arithmetic — the double torus completes 360°', () => {
+  const ring = (): number[] => {
+    const out: number[] = []
+    for (let x = 1, i = 0; i < 6; i++, x = (x * 2) % 9 || 9) out.push(x)
+    return out
+  }
+
+  it('one ring: 6 steps of 60°, and the half-turn is three of them', () => {
+    expect(360 / ring().length).toBe(60)
+    expect(3 * 60).toBe(180)
+    expect(2 * 3 * 60).toBe(360)
+  })
+
+  it('both halves turned twice return the double word, over all 36 pairs', async () => {
+    const { halfTurn } = await import('@/horo')
+    const r = ring()
+    for (const w of r) {
+      for (const d of r) {
+        expect([halfTurn(halfTurn(w)), halfTurn(halfTurn(d))]).toEqual([w, d])
+      }
+    }
+    expect(180 + 180).toBe(360)
+  })
+
+  it('but Z/6 × Z/6 has no element of order 4 — the second ring supplies no 90°', () => {
+    const orders = new Set<number>()
+    for (let a = 0; a < 6; a++) {
+      for (let b = 0; b < 6; b++) {
+        let k = 1
+        while (a * k % 6 !== 0 || b * k % 6 !== 0) k++
+        orders.add(k)
+      }
+    }
+    expect([...orders].sort((x, y) => x - y)).toEqual([1, 2, 3, 6])
+    expect(orders.has(4)).toBe(false) // a quarter-turn has no carrier, on one torus or two
+    expect(orders.has(2)).toBe(true) // the half-turn does
+  })
+})

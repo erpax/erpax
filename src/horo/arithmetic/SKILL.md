@@ -113,6 +113,20 @@ NUMERALS. `halfTurn` reflects the NUMBER.
 That is the same one unit as the table above, seen from the other side: the two mirrors differ by a
 constant, and a constant is exactly what a sum cannot ignore.
 
+## The double torus completes the turn, and still has no quarter of it
+
+One ring's half-turn is `3 × 60° = 180°`. The 128-bit word is **two** 64-bit rings
+(`combineArchitectures` packs word-half ‖ digit-half), so a half-turn on each completes **360°** and
+returns the double word — verified over all 36 pairs of `⟨2⟩ × ⟨2⟩`.
+
+What the second ring does **not** supply is the 90°. The double torus is `ℤ/6 × ℤ/6`, order 36, and
+its element orders are exactly `{1, 2, 3, 6}` — **no element of order 4**, because an order in a
+direct product is the lcm of the two component orders and both divide 6. Lagrange forbade a 4-cycle
+in one ring of nine; the product forbids it again, for a different reason.
+
+So `2 × 90° = 3 × 60°` remains true as arithmetic and false as geometry at both scales: the
+half-turn has a carrier on one torus and on two, and the quarter-turn has neither.
+
 **Honest boundary.** These are statements about `ℤ/9` and nothing else. That `halfTurn` is the group's
 half-turn is a theorem; that a half-turn *means* anything beyond `×(−1)` is not, and nothing here
 claims it.

@@ -14,7 +14,7 @@ import {
   type Conjecture,
 } from '@/conjecture'
 import { refute } from '@/think'
-import { algebraLog2 } from '@/algebra'
+import { algebraLog2, exactMax } from '@/algebra'
 import { atomAddress } from '@/atom/address'
 
 const c = (over: Partial<Conjecture> = {}): Conjecture => ({
@@ -147,7 +147,8 @@ describe('conjecture — the crosses formulate on the spot', () => {
     const loud = never.filter((c) => c.citedA > 10 && c.citedB > 10)
     const quiet = never.filter((c) => c.citedA <= 2 && c.citedB <= 2)
     if (loud.length > 0 && quiet.length > 0) {
-      expect(Math.max(...loud.map((c) => c.bits))).toBeGreaterThan(Math.max(...quiet.map((c) => c.bits)))
+      const top = (xs: readonly { bits: number }[]): number => xs.reduce((m, c) => exactMax(m, c.bits), 0)
+      expect(top(loud)).toBeGreaterThan(top(quiet))
     }
   })
 

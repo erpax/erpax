@@ -1,6 +1,7 @@
 import { execFileSync } from 'node:child_process'
-import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { existsSync, mkdtempSync, readFileSync, readdirSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
+import { tmpdir } from 'node:os'
 
 /**
  * proof/accepted — a `.lean` file is what the kernel accepts, or it is scaffolding wearing the word.
@@ -58,17 +59,24 @@ export function leanImports(source: string): string[] {
   return [...source.matchAll(/^import\s+([A-Za-z_][\w.]*)/gm)].map((m) => m[1] as string)
 }
 
-/** Compile a module's imports to `.olean` so the kernel can resolve them. See SKILL.md. */
-function buildDeps(dir: string, mod: string, lean: string, built: Set<string>): void {
+/**
+ * Compile a module's imports to `.olean` so the kernel can resolve them.
+ *
+ * Output goes to a TEMP directory, never beside the source: a gate that leaves build
+ * artefacts in the corpus makes the tree dirty by running, and the diamond scan counted
+ * seven of them as stray matter. Cleaning up afterwards can be skipped; compiling
+ * elsewhere cannot. See SKILL.md.
+ */
+function buildDeps(dir: string, out: string, mod: string, lean: string, built: Set<string>): void {
   if (built.has(mod)) return
   built.add(mod)
   const src = join(dir, `${mod}.lean`)
   if (!existsSync(src)) return // a genuinely missing module — the kernel will say so
-  for (const dep of leanImports(readFileSync(src, 'utf8'))) buildDeps(dir, dep, lean, built)
+  for (const dep of leanImports(readFileSync(src, 'utf8'))) buildDeps(dir, out, dep, lean, built)
   try {
-    execFileSync(lean, ['-o', `${mod}.olean`, `${mod}.lean`], {
+    execFileSync(lean, ['-o', join(out, `${mod}.olean`), `${mod}.lean`], {
       cwd: dir,
-      env: { ...process.env, LEAN_PATH: '.' },
+      env: { ...process.env, LEAN_PATH: out },
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'pipe'],
       timeout: 120_000,
@@ -84,13 +92,14 @@ export function kernelVerdict(file: string, cwd: string = process.cwd()): Kernel
   const rel = relative(cwd, file)
   const dir = dirname(file)
   const built = new Set<string>()
-  for (const dep of leanImports(readFileSync(file, 'utf8'))) buildDeps(dir, dep, lean, built)
+  const out = mkdtempSync(join(tmpdir(), 'erpax-lean-'))
+  for (const dep of leanImports(readFileSync(file, 'utf8'))) buildDeps(dir, out, dep, lean, built)
   let output = ''
   let accepted = true
   try {
     output = execFileSync(lean, [file.slice(file.lastIndexOf('/') + 1)], {
       cwd: dir,
-      env: { ...process.env, LEAN_PATH: '.' },
+      env: { ...process.env, LEAN_PATH: out },
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'pipe'],
       timeout: 120_000,
