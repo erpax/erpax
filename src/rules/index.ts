@@ -31,6 +31,7 @@ import { atomListingGaps } from '@/publish/complete'
 import { claimBalance, totalSlack } from '@/rules/slack'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
 import { unheldVerdicts } from '@/rules/hold'
+import { scanInjection } from '@/rules/inject'
 import { opaqueSources, unreadSurfaces } from '@/rules/domain'
 import { driftCount } from '@/gate/parity'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
@@ -375,6 +376,16 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // reason EU-2015/849 stopped being an ungated mandatory standard — a wall under rules/, never
     // a banner in the tier map ([[rules]]/hold). Zero is a theorem over a non-empty population.
     guardian({ axis: 'hold', violations: unheldVerdicts(cwd).length, baseline: 0 }),
+    // inject — a poisoned file in the agent-facing instruction channel ([[rules]]/inject).
+    // The law existed and NOTHING RAN IT: injectViolations judged one file a caller handed it,
+    // there was no corpus walk, and the registry never mentioned the atom — which is this
+    // corpus's own headline defect, a law that is prose because no gate blocks its violation.
+    // It now walks 7,214 surfaces: every SKILL.md and LLM.md PLUS the entry files an agent
+    // loads first and unconditionally (AGENTS.md, the Cursor rule, the Copilot instructions,
+    // the discovery manifests, README) — which the old domain never opened, and which are the
+    // highest-value target precisely because they load before anything else. Zero is a
+    // theorem: no bidi control, zero-width or mid-file BOM is ever legitimate in this prose.
+    guardian({ axis: 'inject', violations: scanInjection(cwd).length, baseline: 0 }),
     // atom-completeness — three independent listings of what atoms exist must agree on MEMBERS,
     // not merely on totals ([[publish]]/complete). The matrix held 3,466 against a corpus of
     // 3,474 this session and nothing said so. Zero is a theorem.

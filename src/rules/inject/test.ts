@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { readFileSync } from 'node:fs'
+import { mkdirSync, mkdtempSync, readFileSync, symlinkSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 import { execSync } from 'node:child_process'
 import { ceiling, directives, injectViolations, isDeclaredLaw } from '@/rules/inject'
 
@@ -81,4 +83,78 @@ describe('rules/inject — the live agent surface', () => {
     expect(found.map((v) => `${v.file}: ${v.reason}`)).toEqual([])
     expect(ceiling()).toBe(0)
   })
+})
+
+/**
+ * The domain the gate reads IS the law's reach — and it read 7,192 generated faces while
+ * skipping the eight files an agent loads first and unconditionally.
+ *
+ * Poison is planted in a hermetic tree, never in the corpus, and written as ESCAPES so this
+ * test file stays greppable (rules/domain: a text file that is not text hides from every tool).
+ */
+describe('rules/inject — the entry surfaces an agent loads first', () => {
+  const plant = (): string => {
+    const dir = mkdtempSync(join(tmpdir(), 'inject-'))
+    mkdirSync(join(dir, 'src', 'atom'), { recursive: true })
+    mkdirSync(join(dir, '.cursor', 'rules'), { recursive: true })
+    writeFileSync(join(dir, 'src', 'atom', 'SKILL.md'), '# atom\n\nordinary prose.\n')
+    return dir
+  }
+
+  it('judges the entry files, not only the generated faces', async () => {
+    const { agentSurfaces, ENTRY_SURFACES } = await import('@/rules/inject')
+    const dir = plant()
+    writeFileSync(join(dir, 'AGENTS.md'), '# orient\n')
+    writeFileSync(join(dir, 'README.md'), '# readme\n')
+    const s = agentSurfaces(dir)
+    expect(s).toContain('AGENTS.md')
+    expect(s).toContain('README.md')
+    expect(s).toContain(join('src', 'atom', 'SKILL.md'))
+    expect(ENTRY_SURFACES.length).toBeGreaterThan(0)
+  })
+
+  it('fires on a bidi override planted in README — which the old domain never opened', async () => {
+    const { scanInjection } = await import('@/rules/inject')
+    const dir = plant()
+    writeFileSync(join(dir, 'README.md'), '# erpax\n\nrun the ‮harmless‬ command.\n')
+    const v = scanInjection(dir)
+    expect(v).toHaveLength(1)
+    expect(v[0]?.file).toBe('README.md')
+    expect(v[0]?.kind).toBe('bidi')
+  })
+
+  it('and on a zero-width character in the Cursor rule', async () => {
+    const { scanInjection } = await import('@/rules/inject')
+    const dir = plant()
+    writeFileSync(join(dir, '.cursor', 'rules', 'erpax.mdc'), 'orient to erpax​\n')
+    expect(scanInjection(dir).map((x) => x.kind)).toEqual(['zero-width'])
+  })
+
+  it('the project instructions are exempt from DIRECTIVES and not from the lock', async () => {
+    const { scanInjection, isDeclaredLaw } = await import('@/rules/inject')
+    expect(isDeclaredLaw('AGENTS.md')).toBe(true)
+    expect(isDeclaredLaw('README.md')).toBe(false)
+    const dir = plant()
+    // AGENTS.md may speak as law — that is what a checked-in project instruction is for
+    writeFileSync(join(dir, 'AGENTS.md'), '# orient\n\nyou must read the skill first.\n')
+    expect(scanInjection(dir)).toHaveLength(0)
+    // but it may not hide characters, exactly like every other file
+    writeFileSync(join(dir, 'AGENTS.md'), '# orient\n\nread the ‮skill‬ first.\n')
+    expect(scanInjection(dir).map((x) => x.kind)).toEqual(['bidi'])
+  })
+
+  it('counts a symlinked instruction file once, not twice', async () => {
+    const { agentSurfaces } = await import('@/rules/inject')
+    const dir = plant()
+    writeFileSync(join(dir, 'AGENTS.md'), '# orient\n')
+    symlinkSync('AGENTS.md', join(dir, 'CLAUDE.md'))
+    const s = agentSurfaces(dir)
+    expect(s.filter((f) => f === 'AGENTS.md' || f === 'CLAUDE.md')).toHaveLength(1)
+  })
+
+  it('the live corpus is clean across every surface — zero is a theorem', async () => {
+    const { scanInjection, agentSurfaces } = await import('@/rules/inject')
+    expect(agentSurfaces().length).toBeGreaterThan(7000)
+    expect(scanInjection()).toEqual([])
+  }, 120_000)
 })

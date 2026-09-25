@@ -2440,9 +2440,9 @@ src/rules/confine/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6.2 — modular
 src/rules/cycle/index.ts:34: * @standard ISO/IEC 25010:2023 §5.6.2 modularity
 src/rules/echo/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning
 src/rules/hold/index.ts:4: * @standard EU 2015/849 Art. 33(1) — refrain from carrying out a SUSPECTED transaction
-src/rules/inject/index.ts:4: * @standard CVE-2021-42574 — Trojan Source, bidirectional control characters
-src/rules/inject/index.ts:5: * @standard OWASP LLM01:2025 — prompt injection
-src/rules/inject/index.ts:6: * @standard ISO/IEC 27001 A.8.28 — secure coding
+src/rules/inject/index.ts:6: * @standard CVE-2021-42574 — Trojan Source, bidirectional control characters
+src/rules/inject/index.ts:7: * @standard OWASP LLM01:2025 — prompt injection
+src/rules/inject/index.ts:8: * @standard ISO/IEC 27001 A.8.28 — secure coding
 src/rules/invisible/index.ts:28: * @standard ISO/IEC 25010:2023 §5.6 maintainability — one source, addressable
 src/rules/prose/index.ts:20: * @standard ISO-19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
 src/rules/reference/index.ts:20: * @standard ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence

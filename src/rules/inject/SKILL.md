@@ -77,6 +77,43 @@ that four times: prose counted keywords (1,261 → 15), reference counted string
 emit counted prose about banners, cycle's own DFS missed the loop it was written for. Four of this
 atom's tests are real lines from this repository that must stay green.
 
+## The law was prose — nothing ran it
+
+`injectViolations` took **one file and its text**. There was no corpus walk, no
+`assertNoInjection`, and `src/rules/index.ts` never mentioned this atom. The measurement this
+page reports — *7,192 files, zero bidi, zero zero-width, zero mid-file BOM* — was made by hand
+once and nothing has re-made it since.
+
+That is this corpus's own headline defect, committed by the atom whose subject is the agent's
+instruction channel: **a gate that can be skipped is prose**, and one that is never called is
+prose with extra steps.
+
+## And the domain skipped the files that load first
+
+The walk reads `SKILL.md` and `LLM.md`. It did not read the eight files an agent loads **before**
+any of them:
+
+| surface | role |
+| --- | --- |
+| `AGENTS.md` · `CLAUDE.md` (a symlink to it) | project instructions, every turn |
+| `.cursor/rules/erpax.mdc` | Cursor auto-load rule |
+| `.github/copilot-instructions.md` | Copilot pointer |
+| `.well-known/ai-skills.json` · `skills.json` | discovery manifests |
+| `README.md` | the corpus landing |
+| `.claude/skills/SKILL.md` | the root orientation skill |
+
+These are the **highest-value injection target in the repository**, precisely because they are
+loaded unconditionally and first. `ENTRY_SURFACES` declares them, `agentSurfaces` dedupes by real
+path so a symlinked `CLAUDE.md` counts once, and the scan now covers **7,214** files.
+
+The project-instruction files join `DECLARED_LAW`, so they may speak as law — that is what a
+checked-in project instruction is for. They are **not** exempt from the hidden-character test, for
+the reason already stated here: exempting the door from the lock is how doors get used. A planted
+bidi override in `AGENTS.md` fires; a sentence telling the agent to read the skill first does not.
+
+Every widening is proved by a **planted** defect in a hermetic tree — a bidi override in README, a
+zero-width in the Cursor rule — because a domain that is never seen to fire is a claim, not a gate.
+
 **Honest boundary.** This catches the **clumsy** injection — the one phrased as a command. A
 sentence that directs by implication, or that carries its payload in a plausible technical
 instruction, reads exactly like documentation and no scan separates them. It judges SKILL.md and
