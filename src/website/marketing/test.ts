@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { checkMarketingTransparency, ERPAX_DEFAULT_VOICE } from './index'
+import { checkMarketingTransparency, reviewBrandVoice } from './index'
 
 const clean = { declaredStandards: [{ body: 'ISO/IEC', id: '25010' }], sourceTenant: 'erpax-platform' }
 
@@ -42,7 +42,14 @@ describe('website/marketing — the gate on the surface a prospect cannot check'
     expect(checkMarketingTransparency({ ...clean, sourceTenant: 'synthetic-demo', pageBody: 'hello' }).ok).toBe(true)
   })
 
-  it('the default voice is the plain one — the corpus does not market in superlatives', () => {
-    expect(ERPAX_DEFAULT_VOICE).toBe('plain-precise')
+  it('the default voice is the one that REFUSES superlatives — asked of the reviewer, not the constant', () => {
+    // `expect(ERPAX_DEFAULT_VOICE).toBe('plain-precise')` certified its own assignment and could
+    // not fail for any reason a reader cares about (rules/mirror). The claim is about BEHAVIOUR:
+    // whatever the default is, it must be a voice that flags marketing fluff.
+    const puffery = 'The best, most revolutionary ERP ever built — a game-changer.'
+    expect(reviewBrandVoice(puffery).length).toBeGreaterThan(0)
+    expect(reviewBrandVoice('Posting an entry requires a balanced debit and credit.')).toEqual([])
+    // and it stays that way if someone changes the constant to a voice that does not refuse
+    expect(reviewBrandVoice(puffery, 'bold-confident')).toEqual([])
   })
 })

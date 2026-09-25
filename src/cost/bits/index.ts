@@ -196,3 +196,48 @@ export const invariantChecks = (checks: number, invariants: number): number =>
 export const CONFIRM_GATE_CHECKS = 11
 
 /** @index-cross.foldback child=cost/bits parent=cost — this cross folds back into its parent. */
+
+/** Is the target FIXED (asymmetric) or free (symmetric)? See ./SKILL.md § symmetry. */
+export type SearchSymmetry = 'asymmetric' | 'symmetric'
+
+/** One security floor, with what makes it that floor. */
+export interface Floor {
+  readonly name: string
+  readonly symmetry: SearchSymmetry
+  readonly quantum: boolean
+  /** k in `d/k` — the harmonic index. */
+  readonly harmonic: 1 | 2 | 3
+}
+
+/**
+ * The four floors of a d-bit digest, classified. DECLARED — physics, not derivable from the tree —
+ * so module-private and argued in ./SKILL.md § symmetry, the convention EMPIRICAL and
+ * COINCIDENT_FORMULAS follow. `floorFamily()` is the face; `harmonicFloors` is already a function
+ * for the same reason.
+ */
+const FLOORS: readonly Floor[] = [
+  { name: 'secondPreimageLog2', symmetry: 'asymmetric', quantum: false, harmonic: 1 },
+  { name: 'birthdayLog2', symmetry: 'symmetric', quantum: false, harmonic: 2 },
+  { name: 'groverPreimageLog2', symmetry: 'asymmetric', quantum: true, harmonic: 2 },
+  { name: 'bhtCollisionLog2', symmetry: 'symmetric', quantum: true, harmonic: 3 },
+]
+
+/** A floor's exponent: `d / k`. Every floor in the family is this one formula. */
+export const floorLog2 = (digestBits: number, harmonic: 1 | 2 | 3): number => digestBits / harmonic
+
+/**
+ * The digest width recovered FROM a floor — `d = k · floor`.
+ *
+ * This is what makes the family mutually derivable: any one floor plus its harmonic index recovers
+ * `d`, and `d` gives every other floor. See ./SKILL.md § proving each other.
+ */
+export const digestFromFloor = (floorBits: number, harmonic: 1 | 2 | 3): number => floorBits * harmonic
+
+/** The classification — the 2×2 and its harmonic indices. */
+export const floorFamily = (): readonly Floor[] => FLOORS
+
+/** Every floor, derived from ONE of them. The cross, executable. */
+export const floorsFromOne = (floorBits: number, harmonic: 1 | 2 | 3): Record<string, number> => {
+  const d = digestFromFloor(floorBits, harmonic)
+  return Object.fromEntries(FLOORS.map((f) => [f.name, floorLog2(d, f.harmonic)]))
+}

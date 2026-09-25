@@ -93,3 +93,55 @@ no arithmetic here touches either, and calling a tiling law a security proof wou
 [[rules]]/forge refuses.
 
 Composes: [[cost]] · [[algebra]] · [[tamper]] · [[quantum]] · [[harmony]].
+
+## Symmetry — the floors are one formula, and they prove each other
+
+A digest of `d` bits has four security floors, and they are **one formula** `d/k` over the first
+three harmonics. What decides `k` is whether the search is **symmetric** — whether the target is
+free — and whether the adversary is quantum:
+
+| floor | symmetry | adversary | `k` | exponent |
+| --- | --- | --- | --: | --- |
+| `secondPreimageLog2` | **asymmetric** — the target digest is FIXED | classical | 1 | `d` |
+| `birthdayLog2` | **symmetric** — ANY two of the set collide | classical | 2 | `d/2` |
+| `groverPreimageLog2` | **asymmetric** | quantum | 2 | `d/2` |
+| `bhtCollisionLog2` | **symmetric** | quantum | 3 | `d/3` |
+
+Four cells of a 2×2, and the harmonic indices are exactly `1, 2, 2, 3`.
+
+### Symmetrising halves the exponent
+
+Fix the target and only one side may vary. Free it and **both** sides vary, so the number of
+candidate pairs squares — and squaring the candidates square-roots the work:
+
+```
+secondPreimageLog2(d) = 2 · birthdayLog2(d)        2^(d/2) · 2^(d/2) = 2^d
+```
+
+### The two threats meet at the octave, by different arguments
+
+`groverPreimageLog2(d) = birthdayLog2(d)`, and **neither derives the other**. Grover is a quadratic
+speedup on the *asymmetric* problem; the birthday bound is a combinatorial fact about the
+*symmetric* one. They land on the same exponent from opposite corners of the 2×2 — same `harmonic`,
+opposite `symmetry`, opposite `quantum`. That is why both names survive rather than being folded:
+see [[rules]]/copy § formulas, where this pair is a DECLARED coincidence.
+
+### The quantum symmetric floor refutes the obvious guess
+
+A naive reading applies Grover *inside* the birthday problem and predicts `d/4`. It is **`d/3`** —
+BHT balances queries against quantum **memory**, so the gain is smaller than a second quadratic
+speedup. `bhtCollisionLog2(d) = (2/3) · birthdayLog2(d)`, asserted with the wrong answer asserted
+false beside it.
+
+### Proving each other
+
+`d = k · floor`. So **any one floor plus its harmonic index recovers `d`**, and `d` gives every
+other floor — `digestFromFloor` and `floorsFromOne` are that, and the proof runs the round trip from
+all four starting points. The family is not four facts; it is one formula and a symmetry
+classification.
+
+**Honest boundary.** `d/3` is the conservative theoretical floor: BHT needs `2^(d/3)` quantum
+memory, and a memory-bound quantum collision is nearer `d/2`. The binding floor is the **lowest one
+present in the threat model**, which is a judgement about the adversary, not arithmetic. And a
+quantum cross also breaks an RSA/ECC anchor (Shor → ~0), so keeping even the `d/2` floor needs a
+hash-based post-quantum anchor — which is [[law]]'s `anchorBits` ceiling, not a floor at all.
