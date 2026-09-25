@@ -78,6 +78,33 @@ said and when it changed; it does not adjudicate. And an address only means anyt
 if the probe asks the same question each run — a probe whose query drifts will read
 as `moved` when only the asking moved.
 
+## Why a receipt, and why four states
+
+erpax leans on rails it does not own: VIES answers whether a VAT number is live, the ECB publishes
+the rate, the Peppol directory says who can receive an invoice, a standards body moves a clause.
+Re-fetched on demand with nothing remembering what they said, *"did the outside change?"* is
+unanswerable — the only options are trust it or ask again, and asking again costs attention every
+time.
+
+A receipt fixes that: fetch once, fold the answer to a content-uuid, keep the address. Every later
+pass **verifies the address instead of re-reading the world**. An unchanged answer costs one
+comparison; only a `moved` address is news. That is this corpus's own law applied outward — same
+content, same address ([[identity]]) — and it makes an external fact **checkable evidence** rather
+than a transient scrape.
+
+| state | meaning |
+| --- | --- |
+| `fresh` | first sighting — the address is now on record |
+| `unchanged` | the world agrees with the receipt (the cheap, common case) |
+| `moved` | the answer changed — the ONLY case that deserves attention |
+| `unreachable` | the boundary is down. **Not a failure**: the last receipt still stands |
+
+That last state is the point of the design. A gate that reddens because someone else's server is
+rebooting trains people to ignore it ([[rules]]: a gate that cries wolf is one nobody reads).
+
+Adapted from uuidna's outward pass. The prose above lived as a 32-line docblock in `index.ts` until
+`word-matter`'s comment-bloat axis said what this corpus says everywhere: prose belongs in the SKILL.
+
 **Law — [[law]]: verify the address, do not re-read the world. An external answer is
 folded to a content-uuid once; later passes compare. Only a moved address costs
 attention, and a boundary that is down keeps its last receipt.**

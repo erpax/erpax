@@ -91,23 +91,9 @@ const sourceText = (cwd: string): string => {
 /**
  * Governed packages that are installed but never called — each is dead weight or a re-implementation.
  *
- * A package counts as used when ANY of its own exports is CALLED in hand-written `src/`, or when
- * src imports one of its documented SUBPATHS.
- *
- * Both allowances are corrections, not leniency — the gate reported three unwired packages and two
- * of them were wired:
- *
- *   `multiTenantPlugin<Config>({…})`  a generic call is still a call, and `\bname\s*\(` cannot see
- *                                     past the type arguments. The plugin was fully wired, with a
- *                                     computed collection map and cookie-derived tenant defaults.
- *   `@payloadcms/plugin-seo/fields`   the plugin's OWN documentation offers direct field use as the
- *                                     alternative to calling it ("If you need more flexibility you
- *                                     can insert the fields manually"). `pages` and `posts` take
- *                                     exactly that path.
- *
- * A gate that flags canonical use as a violation teaches people to ignore it. Only
- * `plugin-import-export` was genuinely unwired — installed, documented in two SKILLs as the import
- * route, and never registered, so the Admin had no Imports panel at all.
+ * Used means ANY of the package's own exports is CALLED in hand-written `src/`, or src imports one
+ * of its documented SUBPATHS. Both allowances are corrections the tree forced, not leniency.
+ * See ./SKILL.md § what counts as use.
  */
 export function unwiredPackages(cwd: string = process.cwd()): UnwiredPackage[] {
   const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as {

@@ -123,6 +123,21 @@ residue — reporting them as dead would be the false positive this corpus has p
 Thin is a **candidate**, never a verdict: one call site for a library that does something hard is
 a good trade, and `PLATFORM` is DECLARED in the open so the irreducible list can be argued with.
 
+## What counts as use — two allowances the tree forced
+
+The gate reported three unwired packages and **two of them were wired**:
+
+| package | why it read as unwired |
+| --- | --- |
+| `plugin-multi-tenant` | `multiTenantPlugin<Config>({…})` — a generic call is still a call, and `\bname\s*\(` cannot see past the type arguments. It was fully wired, with a computed collection map and cookie-derived tenant defaults. |
+| `plugin-seo` | the plugin's OWN documentation offers direct field use as the alternative to calling it — *"if you need more flexibility you can insert the fields manually"* — and `pages` and `posts` take exactly that path, importing `@payloadcms/plugin-seo/fields`. |
+
+So a documented **subpath import** counts as use, and a call with type arguments counts as a call.
+A gate that flags canonical use as a violation teaches people to ignore it.
+
+Only `plugin-import-export` was genuinely unwired: installed, documented in two SKILLs as the import
+route, and never registered — so the Admin had no Imports panel at all.
+
 **Law — [[law]]: an installed package is used through its own API or dropped — a dependency whose exports are never called is dead weight or a re-implementation of what it already ships.**
 
 Composes: [[rules]] · [[law]].

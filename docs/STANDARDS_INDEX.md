@@ -2106,8 +2106,8 @@ src/operators/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО oper
 src/outward/eu/contract.ts:23: * @standard ISO 19011:2018 §6.4 — audit evidence
 src/outward/eu/index.ts:33: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
 src/outward/gate/index.ts:25: * @standard ISO 19011:2018 §6.4 — audit evidence: the contract IS the evidence
-src/outward/index.ts:30: * @standard RFC 9562 §5.8 — v8 content-uuid (the address)
-src/outward/index.ts:31: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
+src/outward/index.ts:10: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
+src/outward/index.ts:9: * @standard RFC 9562 §5.8 — v8 content-uuid (the address)
 src/pack/items/index.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/pack/items/index.ts:29: * @standard ISA-95:2013 §B.5 production-operations dispatch line
 src/pack/items/index.ts:30: * @standard UN/CEFACT Rec20 mass (gram) per-unit
