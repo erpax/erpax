@@ -443,6 +443,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool/novelty"
   },
   {
+    "atom": "outward",
+    "name": "outward",
+    "description": "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*.",
+    "path": "agents/mcp/tool/outward"
+  },
+  {
     "atom": "risk",
     "name": "risk",
     "description": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395).",

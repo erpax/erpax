@@ -3,19 +3,19 @@ name: quantum
 description: "Use when wiring quantum realtime trading — quotes in superposition collapse to sealed content-uuid trades, emit on the team/comms secure wave envelope, and settle via conserved double-entry postings."
 atomPath: "trading/quantum"
 coordinate: "trading/quantum · 1/base · cac33403"
-contentUuid: "7b60c97c-ae07-5ad2-b7cf-1d1745563889"
-diamondUuid: "1b81725f-b5dd-8631-8e4c-d151eb34aa06"
+contentUuid: "a2cce805-c4c4-5225-9fbf-3d1c5bcd988f"
+diamondUuid: "51b8a995-862d-8a72-b39e-e573d975a76f"
 uuid: "cac33403-7301-8639-bb90-f347ea92dff9"
 horo: 1
 typography:
   partition: trading
-  bondDegree: 553
+  bondDegree: 556
 standards:
   - "ISO-4217:2015 currency-codes"
   - "RFC 9562 §5.8 content-uuid trade identity"
 bindings: []
 signatures:
-  computationUuid: "fcf8954b-94bd-8405-b08e-527781caca58"
+  computationUuid: "52de2684-f4fc-833a-b584-76bd66a12eac"
   stages:
     - stage: path
       stageUuid: "854ddfde-9a89-8728-b784-aabec7949088"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8c875f25-34bf-8bfc-ab29-30426f90bba4"
     - stage: horo
-      stageUuid: "662a531f-2193-8430-a0d5-59b47eee78d2"
+      stageUuid: "203eb6b8-9b5e-8f3d-8a29-1e0c3d0ab8fe"
     - stage: seal
       stageUuid: "043963e8-ed7f-8980-a688-8e0a03de33c8"
     - stage: uuid
-      stageUuid: "ae199cbc-969c-8dbb-a13c-56068abef00c"
+      stageUuid: "c878de3c-fca2-830b-b169-5f43da84b0f3"
 version: 2
 ---
 # trading/quantum — superposition quotes, realtime collapse, conserved settlement

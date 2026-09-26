@@ -4111,6 +4111,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "outward",
+    "path": "agents/mcp/tool/outward",
+    "translations": [
+      {
+        "key": "name",
+        "source": "outward",
+        "uuid": "c5534f48-650c-873a-bd43-95246e04215f",
+        "words": [
+          "outward"
+        ],
+        "values": {
+          "en": "outward"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*.",
+        "uuid": "6f915e3b-c21f-8b10-bcc2-b0ea078c8ce3",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "outward",
+          "outward",
+          "content",
+          "addresses",
+          "every",
+          "external",
+          "answer",
+          "and",
+          "outward",
+          "leads",
+          "fuses",
+          "those",
+          "receipts",
+          "to",
+          "so",
+          "the",
+          "corpus",
+          "can",
+          "already",
+          "compute",
+          "what",
+          "changed",
+          "and",
+          "what",
+          "to",
+          "look",
+          "at",
+          "next"
+        ],
+        "values": {
+          "en": "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*."
+        }
+      }
+    ]
+  },
+  {
     "atom": "risk",
     "path": "agents/mcp/tool/risk",
     "translations": [
@@ -211779,4 +211838,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3621
+export const TRANSLATIONS_COUNT = 3622
