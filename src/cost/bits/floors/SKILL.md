@@ -1,3 +1,36 @@
+---
+name: floors
+description: "Use when reasoning about floors — A digest of bits has four security floors, and they are **one formula** over the first three harmonics."
+atomPath: "cost/bits/floors"
+coordinate: "cost/bits/floors · 4/weave · b177c1b2"
+contentUuid: "45892883-b65f-5e27-a073-d33ba8411a3c"
+diamondUuid: "7528c4e5-a917-8896-a4cf-85fca98a5cf9"
+uuid: "b177c1b2-02ed-8d9a-b69d-7a8fe8f339cb"
+horo: 4
+typography:
+  partition: cost
+  bondDegree: 12
+standards: []
+bindings: []
+signatures:
+  computationUuid: "6d94cc3c-36ed-8f72-b532-56f7b46a1dda"
+  stages:
+    - stage: path
+      stageUuid: "8138d57e-eba0-89c2-bfd6-8685ae1ac184"
+    - stage: trinity
+      stageUuid: "9895d3b8-8250-8a7b-945c-7ebfa6a4c187"
+    - stage: boundary
+      stageUuid: "a0672ac0-a9fe-8f66-8de7-0cc455c887c4"
+    - stage: links
+      stageUuid: "9d1e0db1-c9e6-8497-bdba-6d34545ab446"
+    - stage: horo
+      stageUuid: "dc4bb584-1282-880c-a2d8-e296e369c985"
+    - stage: seal
+      stageUuid: "17379836-7959-8e23-9f6e-c5d1b3010554"
+    - stage: uuid
+      stageUuid: "226967fd-6832-8de1-8ed3-5c44d4541a75"
+version: 2
+---
 # cost/bits/floors — four floors, one formula `d/k`, each proving the others
 
 A digest of `d` bits has four security floors, and they are **one formula** over the first three

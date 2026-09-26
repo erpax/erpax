@@ -23241,7 +23241,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them.",
-        "uuid": "2fd9b217-a0ec-83e8-81cf-7fc230eff048",
+        "uuid": "68b3f42f-bedd-817d-9ca3-4118ea470d10",
         "words": [
           "use",
           "when",
@@ -23304,6 +23304,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "floors",
+    "path": "cost/bits/floors",
+    "translations": [
+      {
+        "key": "name",
+        "source": "floors",
+        "uuid": "b177c1b2-02ed-8d9a-b69d-7a8fe8f339cb",
+        "words": [
+          "floors"
+        ],
+        "values": {
+          "en": "floors"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about floors — A digest of bits has four security floors, and they are **one formula** over the first three harmonics.",
+        "uuid": "d173768d-e726-85f1-bd6c-58b919249b71",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "floors",
+          "a",
+          "digest",
+          "of",
+          "bits",
+          "has",
+          "four",
+          "security",
+          "floors",
+          "and",
+          "they",
+          "are",
+          "one",
+          "formula",
+          "over",
+          "the",
+          "first",
+          "three",
+          "harmonics"
+        ],
+        "values": {
+          "en": "Use when reasoning about floors — A digest of bits has four security floors, and they are **one formula** over the first three harmonics."
         }
       }
     ]
@@ -63400,7 +63450,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing IWMS sub-property zones — floors, rooms, open-plan areas, desks, parking bays — with area, capacity, occupancy, amenities, fire-zone, bookability flag, and GL-account or cost-centre allocation under a parent property. The ISO 41011 §3.3.5 space-management collection.",
-        "uuid": "41234e9d-16a5-8fac-ad98-bc5776f8e04b",
+        "uuid": "d902c323-3e24-8486-b2ee-5b6f1ad3a247",
         "words": [
           "use",
           "when",
@@ -72218,7 +72268,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a document (balance sheet, SAF-T, VAT return, audit file) must be produced — a report is a standards×format×data superposition collapsed on request, computed not hand-templated, and legislation floors it stricter than any standard.",
-        "uuid": "02ece258-b4fc-89e5-87c1-8cd601f3fcfc",
+        "uuid": "481a58ad-886a-89b4-8438-bcc0571ae202",
         "words": [
           "use",
           "when",
@@ -140115,7 +140165,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath.",
-        "uuid": "53626ca8-27a0-8e4f-9c21-574e9e5e0fdd",
+        "uuid": "d9155e44-16b8-8736-b45b-fa8e2b9349b1",
         "words": [
           "use",
           "when",
@@ -208949,7 +208999,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring or reasoning about quality of life — качество на живот — the emergent outcome of a society, a composite over sociological dimensions (material · health · social · psychological · environmental). Like a market it is capped by its weakest dimension, but unlike a pure product it is partly compensatory with non-compensatory capability floors below which no surplus elsewhere restores the whole. The dependent variable erpax exists to raise; read capabilities, not income.",
-        "uuid": "9d681b0c-46ee-80ef-95c3-e12324484b2c",
+        "uuid": "e1866cd5-f09f-81a8-945e-ce95bae11d62",
         "words": [
           "use",
           "when",
@@ -211729,4 +211779,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3620
+export const TRANSLATIONS_COUNT = 3621

@@ -2291,6 +2291,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "cost/bits"
   },
   {
+    "atom": "floors",
+    "name": "floors",
+    "description": "Use when reasoning about floors — A digest of bits has four security floors, and they are **one formula** over the first three harmonics.",
+    "path": "cost/bits/floors"
+  },
+  {
     "atom": "centers",
     "name": "centers",
     "description": "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.",
