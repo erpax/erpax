@@ -1,14 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { CONFIRM_GATE_CHECKS ,
-  floorFamily,
-  floorLog2,
-  digestFromFloor,
-  floorsFromOne,
-  secondPreimageLog2,
-  birthdayLog2,
-  groverPreimageLog2,
-  bhtCollisionLog2,
-  harmonicFloors} from './index'
+import { CONFIRM_GATE_CHECKS } from './index'
 import { randomBytes } from 'node:crypto'
 import { toUuid } from '@/uuid/matrix'
 import { nameUuid } from '@/integrity/content'
