@@ -162,3 +162,12 @@ export function contractRows(source: string, checks: readonly ContractLike[], pr
  */
 export const leadsOf = (rows: readonly OutwardRow[]): OutwardRow[] =>
   rows.filter((r) => r.state === 'moved' || r.state === 'fresh')
+
+/**
+ * The lead harvest is a child cross of this atom — the parent offers its face.
+ *
+ * This edge makes `outward` and `outward/leads` mutually reachable, which is lawful: neither runs
+ * a ring-mate at load time ([[rules]]/cycle — entangled is not fatal), and the runner that does sits
+ * behind an `import.meta.url` guard.
+ */
+export * from './leads'

@@ -114,3 +114,6 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`  commit blocked   → ${dirty.outcome}  (${dirty.commit.by} said no)`)
   console.log('\n  the agent pushes because the gates said yes — never because it was told to.')
 }
+
+/** Is the release actually live in the registries that own each identifier? */
+export * from './live'
