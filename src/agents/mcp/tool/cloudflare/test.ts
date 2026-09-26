@@ -33,3 +33,14 @@ describe('mcp cloudflare tools — fail-closed authorization via erpaxMediator',
     expect(res).toHaveProperty('content')
   })
 })
+
+describe('cloudflare — the factory is not the surface', () => {
+  it('reaches the LIVE MCP surface, not just this factory', async () => {
+    // `buildOutwardTools` was exported from the tool barrel and never CALLED in tool-defs: its
+    // tools were built, tested green, and reachable from nothing. Measured after: 8 of 8 tool atoms
+    // tested only their own factory. A test that exercises a builder proves the builder builds and
+    // cannot prove anything asks it — rules/canonical's law, restated for a test.
+    const { toolsLiveUnder } = await import('@/agents/mcp')
+    expect(await toolsLiveUnder('erpax.cloudflare.')).toBe(true)
+  })
+})

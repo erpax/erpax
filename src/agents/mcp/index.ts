@@ -58,3 +58,21 @@ export {
 export type { LocalizedString } from './i18n'
 
 export * from './atom-catalogue.generated'
+
+/**
+ * Do any tools with this prefix reach the LIVE surface? Written once, asserted by every tool atom.
+ *
+ * The lesson it exists for, paid in full: `buildOutwardTools` was exported from the tool barrel and
+ * never CALLED in `tool-defs`, so `erpax.outward.leads` and `erpax.outward.next` were built, tested
+ * green, and reachable from nothing. Measured after: **8 of 8 tool atoms tested only their own
+ * factory and none asserted the surface** — so any of the eight could have been exported-and-uncalled
+ * with its test still passing, and only one architecture check in another shard would have known.
+ *
+ * A test that exercises a builder proves the builder builds. It cannot prove anything asks it —
+ * [[rules]]/canonical's "an import is not use, the call is", restated for a test.
+ */
+export async function toolsLiveUnder(prefix: string): Promise<boolean> {
+  const { agentRegistry } = await import('@/agent')
+  const { buildErpaxMcpTools } = await import('./tool-defs')
+  return buildErpaxMcpTools(agentRegistry).some((t) => t.name.startsWith(prefix))
+}
