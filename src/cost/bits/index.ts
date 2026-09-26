@@ -56,17 +56,7 @@ export const ERPAX_DIGEST_BITS = UUID_BITS - UUID_VERSION_BITS - UUID_VARIANT_BI
  */
 export const CONTENT_DIGEST_BITS = 256
 
-/**
- * The 64-bit torus this tree addresses on — DERIVED, not typed.
- *
- * The double torus is the two halves of the 128-bit uuid: `wordFold ⊗ digitFold = combined128`, so
- * one torus is exactly half the identifier's width. Written as the literal `64` it was a
- * matrix-crack — a static datum the tree could have computed ([[matrix]]/constants-audit: an
- * `export const` is seal-debt unless it is computed from sealed state, which is why the subtraction
- * below was never flagged and this line was). It still MIRRORS `architectureBits()` rather than
- * importing it, because that import would add an edge to the tangle ([[rules]]/cycle), and
- * `src/cost/bits/test.ts` pins both the equality and the value 64.
- */
+/** One torus = half the 128-bit uuid. DERIVED, and mirrored from `architectureBits()`. See ./SKILL.md. */
 export const TORUS_BITS = UUID_BITS / 2
 
 /**
@@ -110,21 +100,9 @@ export const birthdayMarginBits = (digestBits: number, rows: number): number =>
 export const bruteYearsLog2 = (workLog2: number, hashrateLog2: number): number =>
   workLog2 - hashrateLog2 - LOG2_SECONDS_PER_YEAR
 
-// THE FLOORS ARE HARMONIC ([[harmony]]). A digest of D bits has not one security
-// floor but the first three HARMONICS of D — D · D/2 · D/3:
-//   D    (1st, fundamental)  classical second-preimage — forge a matching content.
-//   D/2  (2nd, the octave)   classical BIRTHDAY collision = quantum (Grover) second-
-//                            preimage. Two threats MEET at the octave ([[merge]]).
-//   D/3  (3rd)               quantum (BHT) collision — the LOWEST floor, what a
-//                            quantum ([[quantum]]) adversary with quantum memory pays.
-// "Balanced floors" = the series complete to its third harmonic; the binding floor
-// is the LOWEST present in the threat model. The quantum cross also breaks an
-// RSA/ECC anchor (Shor → ~0), so a hash-based post-quantum anchor is required to
-// keep even the D/2 (Grover) floor. HONEST: BHT's D/3 needs 2^(D/3) quantum memory;
-// a memory-bound quantum collision is ≈ D/2 — D/3 is the conservative theoretical floor.
+// The floors are the first three HARMONICS of D — D · D/2 · D/3. See ./SKILL.md § symmetry.
 
 /** Quantum (Grover) second-preimage ≈ 2^(n/2) — the 2nd harmonic (numerically the birthday collision; a distinct threat at the same octave). */
-/** d/2 — the SAME exponent as `birthdayLog2` and a different theorem. See [[rules]]/copy § formulas. */
 export const groverPreimageLog2 = (digestBits: number): number => digestBits / 2
 
 /** Quantum (BHT) collision ≈ 2^(n/3) — the 3rd harmonic, the lowest floor under a quantum adversary with quantum memory. */
@@ -197,47 +175,7 @@ export const CONFIRM_GATE_CHECKS = 11
 
 /** @index-cross.foldback child=cost/bits parent=cost — this cross folds back into its parent. */
 
-/** Is the target FIXED (asymmetric) or free (symmetric)? See ./SKILL.md § symmetry. */
-export type SearchSymmetry = 'asymmetric' | 'symmetric'
+/** The floors family — one formula `d/k` over the first three harmonics. See ./floors. */
+export * from './floors'
 
-/** One security floor, with what makes it that floor. */
-export interface Floor {
-  readonly name: string
-  readonly symmetry: SearchSymmetry
-  readonly quantum: boolean
-  /** k in `d/k` — the harmonic index. */
-  readonly harmonic: 1 | 2 | 3
-}
-
-/**
- * The four floors of a d-bit digest, classified. DECLARED — physics, not derivable from the tree —
- * so module-private and argued in ./SKILL.md § symmetry, the convention EMPIRICAL and
- * COINCIDENT_FORMULAS follow. `floorFamily()` is the face; `harmonicFloors` is already a function
- * for the same reason.
- */
-const FLOORS: readonly Floor[] = [
-  { name: 'secondPreimageLog2', symmetry: 'asymmetric', quantum: false, harmonic: 1 },
-  { name: 'birthdayLog2', symmetry: 'symmetric', quantum: false, harmonic: 2 },
-  { name: 'groverPreimageLog2', symmetry: 'asymmetric', quantum: true, harmonic: 2 },
-  { name: 'bhtCollisionLog2', symmetry: 'symmetric', quantum: true, harmonic: 3 },
-]
-
-/** A floor's exponent: `d / k`. Every floor in the family is this one formula. */
-export const floorLog2 = (digestBits: number, harmonic: 1 | 2 | 3): number => digestBits / harmonic
-
-/**
- * The digest width recovered FROM a floor — `d = k · floor`.
- *
- * This is what makes the family mutually derivable: any one floor plus its harmonic index recovers
- * `d`, and `d` gives every other floor. See ./SKILL.md § proving each other.
- */
-export const digestFromFloor = (floorBits: number, harmonic: 1 | 2 | 3): number => floorBits * harmonic
-
-/** The classification — the 2×2 and its harmonic indices. */
-export const floorFamily = (): readonly Floor[] => FLOORS
-
-/** Every floor, derived from ONE of them. The cross, executable. */
-export const floorsFromOne = (floorBits: number, harmonic: 1 | 2 | 3): Record<string, number> => {
-  const d = digestFromFloor(floorBits, harmonic)
-  return Object.fromEntries(FLOORS.map((f) => [f.name, floorLog2(d, f.harmonic)]))
-}
+/** @index-cross.foldback child=cost/bits parent=cost — this cross folds back into its parent. */

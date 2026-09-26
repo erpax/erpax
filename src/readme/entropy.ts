@@ -1,4 +1,4 @@
-import { algebraLog2, exactMax, exactRound, roundTo } from '@/algebra'
+import { algebraLog2, exactMax, roundTo } from '@/algebra'
 /**
  * readme/entropy — gaps · seals · residual entropy in comparable units (eb).
  *

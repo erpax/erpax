@@ -1,6 +1,3 @@
-import { readFileSync, readdirSync } from 'node:fs'
-import { join, relative } from 'node:path'
-import { commentsOf } from '@/syntax'
 import { exactMax, exactRound, roundTo } from '@/algebra'
 /**
  * entropy -- the FUEL, the disorder the whole ledger balances, COMPUTED live.

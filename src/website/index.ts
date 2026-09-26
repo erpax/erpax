@@ -191,15 +191,6 @@ function renderBootedCollectionPage(c: { slug: string; uuid: string }): string {
   )
 }
 
-function renderCollectionPage(c: { slug: string; title: string; description: string; standards: ReadonlyArray<{ body: string; id: string }>; chainSteps: ReadonlyArray<{ chainId: string; stepIndex: number }> }): string {
-  const stds = c.standards.map((s) => `<li><strong>${s.body}</strong> ${s.id}</li>`).join('')
-  const steps = c.chainSteps.map((s) => `<li>${s.chainId} step ${s.stepIndex}</li>`).join('')
-  return `<section data-block="hero"><h1>${c.title}</h1><p class="lede">Collection: <code>${c.slug}</code></p></section>` +
-    `<section data-block="standards"><h2>Standards cited</h2><ul>${stds}</ul></section>` +
-    `<section data-block="chain-steps"><h2>Chain participation</h2><ul>${steps || '<li>(none)</li>'}</ul></section>` +
-    `<section data-block="actions"><h2>Try it</h2><p>Call <code>erpax.spec.getCollection({slug: "${c.slug}"})</code> via MCP.</p></section>`
-}
-
 function renderChainPage(c: { id: string; name?: string; description?: string; standards?: ReadonlyArray<string> }): string {
   return `<section data-block="hero"><h1>${c.name ?? c.id}</h1><code>BUSINESS_CHAINS.${c.id}</code></section>` +
     `<section data-block="description"><p>${c.description ?? ''}</p></section>` +

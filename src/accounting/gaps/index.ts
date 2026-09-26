@@ -16,7 +16,7 @@ import {
 import { aggregateCorpusEntropy, mergeCorpusEntropy } from '@/readme/entropy'
 import { corpusPathWaveBatches, pathWaveBatches } from '@/wave/scheduler'
 import { maxWorkTamperPolicy } from '@/wave/policy'
-import { exactRound, exactAbs, exactMax, roundTo } from '@/algebra'
+import { exactAbs, exactMax, roundTo } from '@/algebra'
 
 const SRC = 'src'
 const ROUND = (n: number): number => roundTo(n, 3)

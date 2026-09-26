@@ -17,7 +17,7 @@ import {
   digitFold,
 } from '@/quantum/fold'
 import { architectureBits, architectureMask } from '@/quantum/word'
-import { exactMax, exactRound, roundTo } from '@/algebra'
+import { exactMax, roundTo } from '@/algebra'
 
 /**
  * Every equation this section prints, each as the code evaluates it.
