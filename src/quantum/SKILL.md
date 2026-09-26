@@ -3,18 +3,18 @@ name: quantum
 description: "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
 atomPath: quantum
 coordinate: "quantum · 2/share · 9e596af9"
-contentUuid: "8a31eafd-97e4-538d-9ea3-e2d298500e67"
-diamondUuid: "1d637280-699e-8c33-b0d1-9a179f7d0005"
+contentUuid: "12cc2448-014b-5599-82c9-097f8eb736a7"
+diamondUuid: "e3377266-67b3-8f15-b75c-de6896fc08dd"
 uuid: "9e596af9-a908-810f-8e91-c8965bbac921"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 550
+  bondDegree: 556
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "839a109e-4231-8b51-8360-389b4bbfe0dc"
+  computationUuid: "54456f21-172e-8e35-a9b3-4e9aa4e84089"
   stages:
     - stage: path
       stageUuid: "15c162b9-f68a-81b5-be34-6a93fda387d5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "65883705-cdc4-8c3e-97db-3bdd6bd3558a"
     - stage: horo
-      stageUuid: "85a058ab-febb-8400-8a74-92f4cdb2c304"
+      stageUuid: "63311523-f15f-8dba-ac14-7b46650461ad"
     - stage: seal
       stageUuid: "c80781cf-f5a6-814a-a2d6-0b57d9d1e77e"
     - stage: uuid
-      stageUuid: "93aea774-0c14-8517-94db-38c966d90b93"
+      stageUuid: "65660463-47f7-8d92-991f-758a3387a1d8"
 quantum:
   superposition:
     - accounting
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "839a109e-4231-8b51-8360-389b4bbfe0dc"
-    contentUuid: "8a31eafd-97e4-538d-9ea3-e2d298500e67"
+    computationUuid: "54456f21-172e-8e35-a9b3-4e9aa4e84089"
+    contentUuid: "12cc2448-014b-5599-82c9-097f8eb736a7"
 version: 2
 ---
 # quantum
@@ -134,4 +134,4 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 
-<sub>content-uuid `8a31eafd-97e4-538d-9ea3-e2d298500e67` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `12cc2448-014b-5599-82c9-097f8eb736a7` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

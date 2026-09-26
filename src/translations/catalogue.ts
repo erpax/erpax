@@ -3076,7 +3076,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an agent's identity is in question — an agent IS its content (name ⊗ skills ⊗ purpose), so its uuid is the content-address of that definition and an identical clone is the SAME agent, not a copy.",
-        "uuid": "9fb40cce-4162-88c9-b6f7-3a750d3b205f",
+        "uuid": "859eb630-c029-8afa-a9c0-0280ad802bfe",
         "words": [
           "use",
           "when",
@@ -4106,6 +4106,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about novelty — conjecture enumerates crosses between laws the corpus already holds: pairs of atoms that are each widely cited and never drawn together."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "outward",
+    "path": "agents/mcp/tool/outward",
+    "translations": [
+      {
+        "key": "name",
+        "source": "outward",
+        "uuid": "c5534f48-650c-873a-bd43-95246e04215f",
+        "words": [
+          "outward"
+        ],
+        "values": {
+          "en": "outward"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*.",
+        "uuid": "6f915e3b-c21f-8b10-bcc2-b0ea078c8ce3",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "outward",
+          "outward",
+          "content",
+          "addresses",
+          "every",
+          "external",
+          "answer",
+          "and",
+          "outward",
+          "leads",
+          "fuses",
+          "those",
+          "receipts",
+          "to",
+          "so",
+          "the",
+          "corpus",
+          "can",
+          "already",
+          "compute",
+          "what",
+          "changed",
+          "and",
+          "what",
+          "to",
+          "look",
+          "at",
+          "next"
+        ],
+        "values": {
+          "en": "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*."
         }
       }
     ]
@@ -9447,7 +9506,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about quantum tunnelling — a particle penetrating a potential barrier it classically cannot surmount (E < V0), the wave decaying exponentially inside so transmission T ≈ e^(−2κa) leaks out. (The word tunnel is taken — it is agriculture's season-extension structure; this is the physics.) In erpax the barrier IS tamper-cost: the work to tunnel through (forge) is −log2(T) = 2κa/ln2 bits, exponentially large in the barrier, yet never quite infinite — the residual forge-probability is the design limit.",
-        "uuid": "94d76978-c7fc-8bb6-8f12-2e2042cee08b",
+        "uuid": "bff407f5-90c9-8313-9e31-e59a63d5565d",
         "words": [
           "use",
           "when",
@@ -9929,7 +9988,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about login — A panel above the admin sign-in form, carrying the copy that orients a first-time visitor: what this system is, and what signing in will do.",
-        "uuid": "82d1e316-8294-801b-b5ae-229734626ebb",
+        "uuid": "4e617f4b-a67f-83dc-a69e-c878c33df768",
         "words": [
           "use",
           "when",
@@ -19813,7 +19872,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a claim holds only under an unproven hypothesis — given(H).proves(Y) folds the unprovable into a PROVEN implication H ⇒ Y, keeping H disclosed. The honest complement to rules/refutable: an unfalsifiable assertion is a lie; an unprovable hypothesis, named, proves another thing. Run: tsx src/conditional/index.ts",
-        "uuid": "50ad6aad-3724-8759-a33f-2ad11734786a",
+        "uuid": "6c848163-42f5-85d4-9842-ced634736776",
         "words": [
           "use",
           "when",
@@ -21489,7 +21548,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost.",
-        "uuid": "580f52e6-6240-8552-a82a-f5835d146ce1",
+        "uuid": "7cf0cfca-d417-88f3-9276-3c40ce7794ac",
         "words": [
           "use",
           "when",
@@ -23230,7 +23289,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "bits",
-        "uuid": "068d24e3-c116-8b32-b9ef-e551fdc2d74e",
+        "uuid": "9595c35b-1ed9-8b91-8dda-9204c1ac77b0",
         "words": [
           "bits"
         ],
@@ -23241,7 +23300,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them.",
-        "uuid": "b8acc006-c00f-80c0-9f1e-b2c3e9b349e5",
+        "uuid": "68b3f42f-bedd-817d-9ca3-4118ea470d10",
         "words": [
           "use",
           "when",
@@ -23304,6 +23363,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "floors",
+    "path": "cost/bits/floors",
+    "translations": [
+      {
+        "key": "name",
+        "source": "floors",
+        "uuid": "b177c1b2-02ed-8d9a-b69d-7a8fe8f339cb",
+        "words": [
+          "floors"
+        ],
+        "values": {
+          "en": "floors"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about floors — A digest of bits has four security floors, and they are **one formula** over the first three harmonics.",
+        "uuid": "d173768d-e726-85f1-bd6c-58b919249b71",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "floors",
+          "a",
+          "digest",
+          "of",
+          "bits",
+          "has",
+          "four",
+          "security",
+          "floors",
+          "and",
+          "they",
+          "are",
+          "one",
+          "formula",
+          "over",
+          "the",
+          "first",
+          "three",
+          "harmonics"
+        ],
+        "values": {
+          "en": "Use when reasoning about floors — A digest of bits has four security floors, and they are **one formula** over the first three harmonics."
         }
       }
     ]
@@ -31935,6 +32044,68 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "implication",
+    "path": "entropy/implication",
+    "translations": [
+      {
+        "key": "name",
+        "source": "implication",
+        "uuid": "134af2dd-b27b-81b9-8f71-2348a1ea2dcd",
+        "words": [
+          "implication"
+        ],
+        "values": {
+          "en": "implication"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about implication — *\\\"Zero entropy ⇒ infinite tamper-cost\\\"* is false in **both** directions, and law says so in code: reciprocity-entropy is not coverage — it is 0 on the live tree and prices nothing…",
+        "uuid": "09a49670-478a-8d3a-86a0-8e65e1d0adb5",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "implication",
+          "zero",
+          "entropy",
+          "infinite",
+          "tamper",
+          "cost",
+          "is",
+          "false",
+          "in",
+          "both",
+          "directions",
+          "and",
+          "law",
+          "says",
+          "so",
+          "in",
+          "code",
+          "reciprocity",
+          "entropy",
+          "is",
+          "not",
+          "coverage",
+          "it",
+          "is",
+          "on",
+          "the",
+          "live",
+          "tree",
+          "and",
+          "prices",
+          "nothing"
+        ],
+        "values": {
+          "en": "Use when reasoning about implication — *\\\"Zero entropy ⇒ infinite tamper-cost\\\"* is false in **both** directions, and law says so in code: reciprocity-entropy is not coverage — it is 0 on the live tree and prices nothing…"
+        }
+      }
+    ]
+  },
+  {
     "atom": "source",
     "path": "entropy/source",
     "translations": [
@@ -34259,7 +34430,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:",
-        "uuid": "d8310ea8-41cb-8e3d-a1f6-54c4a2776efe",
+        "uuid": "9ec4bec4-0a0e-8b53-a2ba-bac0480bb890",
         "words": [
           "use",
           "when",
@@ -35934,7 +36105,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale.",
-        "uuid": "f999d9fa-4dcd-8a62-83f9-ffcd8fa668b4",
+        "uuid": "eb1842e3-14aa-81b7-89ef-764d278f85f4",
         "words": [
           "use",
           "when",
@@ -47450,7 +47621,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the fold's residual — the bits that did not fold into trinities of theorems. Leftovers attract by field (one proof settles the cluster), pull a seed from beyond to complete what the corpus cannot derive, and the irreducible residue powers the next research. Composes accounting/proof, gravity, and think.",
-        "uuid": "c074c21d-0f66-8256-8220-006c043eeb99",
+        "uuid": "4e1582c0-482a-81ec-b3cc-7f1f18caf132",
         "words": [
           "use",
           "when",
@@ -49639,7 +49810,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-        "uuid": "8cb9f67d-99e8-83e5-8d5c-5877b80575a8",
+        "uuid": "132cbd95-80fb-8051-87b3-dd2159aeda7a",
         "words": [
           "use",
           "when",
@@ -49824,7 +49995,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-        "uuid": "9afb86b4-941a-80a2-9694-1ea9b31e8fa0",
+        "uuid": "25c25e01-7cd4-8294-93fa-0fa61e0e9975",
         "words": [
           "use",
           "when",
@@ -54598,7 +54769,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the uuid AS the message — decode identity · OID · colour · sound out of the 128 bits alone, no payload. Completes localize.decodeIdentity (colour) with the missing sound channel (the note the uuid sounds, A432). To send is to send the uuid; to receive is to decode it. Matter-twin message/index.ts.",
-        "uuid": "7ab34646-bfed-8168-b73b-e7740a3da7a2",
+        "uuid": "28445082-d6e2-8b63-9385-18c98f69d539",
         "words": [
           "use",
           "when",
@@ -63338,7 +63509,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing IWMS sub-property zones — floors, rooms, open-plan areas, desks, parking bays — with area, capacity, occupancy, amenities, fire-zone, bookability flag, and GL-account or cost-centre allocation under a parent property. The ISO 41011 §3.3.5 space-management collection.",
-        "uuid": "41234e9d-16a5-8fac-ad98-bc5776f8e04b",
+        "uuid": "d902c323-3e24-8486-b2ee-5b6f1ad3a247",
         "words": [
           "use",
           "when",
@@ -66892,7 +67063,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment.",
-        "uuid": "000d4d8e-86fd-8f82-98c3-b2203e762c14",
+        "uuid": "7a66db08-e952-818d-aa88-6ae3b7f5dbb4",
         "words": [
           "use",
           "when",
@@ -69748,7 +69919,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits.",
-        "uuid": "ac58c278-664d-88ad-aa49-33b983940b1f",
+        "uuid": "c5929c2c-f419-83b8-9879-c82f6082558c",
         "words": [
           "use",
           "when",
@@ -72156,7 +72327,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a document (balance sheet, SAF-T, VAT return, audit file) must be produced — a report is a standards×format×data superposition collapsed on request, computed not hand-templated, and legislation floors it stricter than any standard.",
-        "uuid": "02ece258-b4fc-89e5-87c1-8cd601f3fcfc",
+        "uuid": "481a58ad-886a-89b4-8438-bcc0571ae202",
         "words": [
           "use",
           "when",
@@ -77201,7 +77372,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "copy",
-        "uuid": "55a05b9a-d3fd-869b-981c-babddcc91a58",
+        "uuid": "86b36fb1-19b8-87f8-9c85-bdff9f3966a1",
         "words": [
           "copy"
         ],
@@ -77212,7 +77383,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…",
-        "uuid": "e76a8816-54c3-8eb8-8d2f-d5231bbe502d",
+        "uuid": "a05d8987-c749-8816-b821-6f5b7c30ab5c",
         "words": [
           "use",
           "when",
@@ -80664,7 +80835,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about same — URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
-        "uuid": "133485bb-53e6-8d3a-b2df-63851852f181",
+        "uuid": "48595c39-2043-886d-ab8d-9bcac83ae9a2",
         "words": [
           "use",
           "when",
@@ -86980,7 +87151,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about information entropy — Shannon's H = −Σ pᵢ·log₂(pᵢ) bits, the expected surprisal of a distribution: the average bits per symbol and the irreducible limit of lossless compression. Zero when one outcome is certain, maximal (log₂ n) when all n outcomes are equally likely. It is the information twin of thermodynamic entropy (same −Σp ln p, different constant) — the bits a message carries and the bits a tamper must reproduce.",
-        "uuid": "7ba6958b-aa72-86ec-8e63-83517b187fa7",
+        "uuid": "58eb0bb7-88c4-8b7b-9045-a8d5da7b3f01",
         "words": [
           "use",
           "when",
@@ -91536,7 +91707,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form.",
-        "uuid": "9fdd9412-6f52-851f-8d02-15f2bf762840",
+        "uuid": "e2c94437-8694-8d32-8576-43308c59b572",
         "words": [
           "use",
           "when",
@@ -94540,7 +94711,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.",
-        "uuid": "0f9a5ee8-56d3-8a84-9025-14155d06da96",
+        "uuid": "bff04536-5b79-8c03-923c-64a6e7dfff6f",
         "words": [
           "use",
           "when",
@@ -97417,7 +97588,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the information of one event — surprisal I(p) = −log₂(p) bits. A certain event (p=1) carries zero bits; a rare event carries many. It is the bit-cost of a specific outcome, and in erpax the bit-cost of a specific forgery: forging a thing of probability p under the wired graph costs −log₂(p) bits. Additive for independent events (I(p·q)=I(p)+I(q)), so improbabilities stack like uuid-chained dimensions; expected surprisal is Shannon entropy.",
-        "uuid": "eabf4e91-bf1d-8152-b519-404f20cfb5e6",
+        "uuid": "bc2fdca9-0f27-8842-b37c-c4bac34e6510",
         "words": [
           "use",
           "when",
@@ -111348,7 +111519,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload.",
-        "uuid": "e77310ca-688c-8b67-b1ac-175a37655fe3",
+        "uuid": "d47ebb81-add1-86db-a07e-0d8b9c1fd1fa",
         "words": [
           "use",
           "when",
@@ -126279,7 +126450,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about breadcrumb — A set of links that can help a user understand and navigate a website hierarchy.",
-        "uuid": "caf67f73-daa1-8184-9502-ab7397320380",
+        "uuid": "9d19b41e-80e6-8bc1-ba26-2cf91abd6bf5",
         "words": [
           "use",
           "when",
@@ -140053,7 +140224,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath.",
-        "uuid": "53626ca8-27a0-8e4f-9c21-574e9e5e0fdd",
+        "uuid": "d9155e44-16b8-8736-b45b-fa8e2b9349b1",
         "words": [
           "use",
           "when",
@@ -208512,7 +208683,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "website",
-        "uuid": "529e79fb-d3cc-8fa8-8034-fda8b2e9f4ef",
+        "uuid": "f5eb5c25-0b81-8ba0-9c15-21c845fd178f",
         "words": [
           "website"
         ],
@@ -208649,7 +208820,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading the SEO face registry — listFaces and the schema/OG vortex, in a module with ZERO imports. That property is why it is its own atom: @/integrity/uuid-stream took listFaces from the @/website barrel, and the barrel dragged the whole page/agent/spec subtree into the module that exports uuid and jcsCanonicalize to the entire corpus. Importing a leaf adds no edge.",
-        "uuid": "b5d4a062-479f-8fc0-b219-374dd6fb58f5",
+        "uuid": "720e9efd-aaa0-81a8-a433-2ad34d7e4227",
         "words": [
           "use",
           "when",
@@ -208741,7 +208912,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about shadcn — The website is the e2e walkthroughs rendered, and a walkthrough is not prose: it is steps, states, evidence and gaps.",
-        "uuid": "5eec3031-c82e-8030-a7df-530a4e5d76e4",
+        "uuid": "95976fc6-fc05-8f5d-9834-d23e0c944934",
         "words": [
           "use",
           "when",
@@ -208887,7 +209058,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring or reasoning about quality of life — качество на живот — the emergent outcome of a society, a composite over sociological dimensions (material · health · social · psychological · environmental). Like a market it is capped by its weakest dimension, but unlike a pure product it is partly compensatory with non-compensatory capability floors below which no surplus elsewhere restores the whole. The dependent variable erpax exists to raise; read capabilities, not income.",
-        "uuid": "9d681b0c-46ee-80ef-95c3-e12324484b2c",
+        "uuid": "e1866cd5-f09f-81a8-945e-ce95bae11d62",
         "words": [
           "use",
           "when",
@@ -211667,4 +211838,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3619
+export const TRANSLATIONS_COUNT = 3622

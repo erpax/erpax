@@ -20,12 +20,34 @@
 # flip erpax/erpax ON). Every Release created here is then archived with a versioned DOI
 # plus a concept DOI that always resolves to the newest version. No code, no token here.
 #
+# CUT ON GREEN ONLY. A tag is a fact you cannot take back cleanly — the corpus tag fires a Zenodo DOI and
+# a package tag burns a version — and every gate below used to run only AFTER the tag existed. So the only
+# way to learn a tag was invalid was to watch it fail and delete the tag, which is what the history is:
+#
+#   v1.0.1        failure, tag deleted
+#   v1.0.4        failure ×2, tag deleted — "released.json is behind the corpus"
+#   erpax-v0.1.0  failure ×4 — npm ENEEDAUTH, so @erpax/erpax was never published
+#
+# `scripts/release-preflight.mjs` runs the same scripts, in the same order, against HEAD — plus CI's own
+# conclusion on that commit — and refuses before a byte of tag is written. Run 2026-09-25 it refused a
+# corpus tag on THREE gates (version not bumped, .zenodo.json missing the concept DOI, released.json
+# behind) while `accounting-v0.1.8` was 5/5 and safe.
+#
 # Cut a release:
 #   node packages/release.mjs --write        # the @erpax/* packages, by built content
 #   node scripts/release-corpus.mjs --write  # the corpus itself, by tracked content
 #   git commit -am 'release: v<version>' && git push
-#   git tag accounting-v2.1.0 && git push origin accounting-v2.1.0
-#   git tag v1.1.0            && git push origin v1.1.0     # corpus + DOI
+#   node scripts/release-preflight.mjs v1.1.0      # ← REFUSES unless every gate is green
+#   git tag v1.1.0 && git push origin v1.1.0       # only then
+#
+# WHY NOTHING HAS EVER REACHED npm. Every @erpax/* package is absent from the registry (src/publish/live
+# measured 6 of 6, a 404 on each NAME), and the publish job's error is `npm error code ENEEDAUTH … need
+# auth`. This lane publishes by trusted publishing (OIDC) and holds no token, so a package whose trusted
+# publisher is not configured — or is pinned to a different workflow FILE — cannot authenticate at all.
+#   ⚠ CHECK PER PACKAGE: npmjs.com → @erpax/<pkg> → Settings → Trusted Publisher → org erpax · repo erpax
+#     · workflow publish-packages.yml. A trusted publisher can only be set on a package that EXISTS, so
+#     the very first publish of a new name needs a token or a manual `npm publish` — that chicken-and-egg
+#     is the likeliest reason erpax-v0.1.0 failed four times and is worth confirming before a fifth tag.
 #
 # Neither bump is a judgement call: a release happens when the CONTENT changed, and the
 # scripts refuse to invent one when it did not.

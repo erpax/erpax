@@ -16,10 +16,10 @@ import {
 import { aggregateCorpusEntropy, mergeCorpusEntropy } from '@/readme/entropy'
 import { corpusPathWaveBatches, pathWaveBatches } from '@/wave/scheduler'
 import { maxWorkTamperPolicy } from '@/wave/policy'
-import { exactRound, exactAbs, exactMax } from '@/algebra'
+import { exactAbs, exactMax, roundTo } from '@/algebra'
 
 const SRC = 'src'
-const ROUND = (n: number): number => exactRound(n * 1000) / 1000
+const ROUND = (n: number): number => roundTo(n, 3)
 
 export const P0_ACCOUNTING_ROOT = 'accounting' as const
 export const P0_ACCOUNTING_LEAVES = [

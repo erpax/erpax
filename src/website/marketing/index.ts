@@ -20,7 +20,7 @@
  * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
  */
 
-import { statesBareImplication } from '@/entropy'
+import { statesBareImplication } from '@/entropy/implication'
 
 export type MarketingChannel = 'landing-page' | 'blog-post' | 'email' | 'press-release' | 'case-study' | 'social-x' | 'social-linkedin'
 

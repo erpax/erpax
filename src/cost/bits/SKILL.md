@@ -2,14 +2,14 @@
 name: bits
 description: "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them."
 atomPath: "cost/bits"
-coordinate: "cost/bits · 4/weave · 068d24e3"
-contentUuid: "58cb96eb-5366-52c4-9cfa-2a14bf6ac575"
-diamondUuid: "0e5b7be6-fb03-8397-b304-b3a0d56e666f"
-uuid: "068d24e3-c116-8b32-b9ef-e551fdc2d74e"
-horo: 4
+coordinate: "cost/bits · 7/descent · 9595c35b"
+contentUuid: "373cdf04-5e0b-504d-8b92-3b44dcad8496"
+diamondUuid: "c3bd0268-c0de-88e1-9a12-03ea9996ffd6"
+uuid: "9595c35b-1ed9-8b91-8dda-9204c1ac77b0"
+horo: 7
 typography:
   partition: cost
-  bondDegree: 18
+  bondDegree: 21
 standards:
   - "CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication"
   - "CRAQ — Terrace & Freedman, USENIX ATC 2009"
@@ -21,22 +21,22 @@ standards:
   - RFC 9562 §8 — UUID security considerations
 bindings: []
 signatures:
-  computationUuid: "563146dd-7c39-84c3-a05b-9c98ee1dd10a"
+  computationUuid: "71921b23-88f0-83d7-9654-4c255acd2c0f"
   stages:
     - stage: path
       stageUuid: "e71086e7-e0ef-8f4e-90df-b3d90bf0253d"
     - stage: trinity
       stageUuid: "d1c024fb-3412-89c6-b438-d8f002666670"
     - stage: boundary
-      stageUuid: "17502a13-7bc4-8bcd-a294-7637d939001d"
+      stageUuid: "d05f8cb7-ced1-8f79-82a0-6da34080c2eb"
     - stage: links
-      stageUuid: "682afee9-4df5-8e7b-829b-ad9e9839c65a"
+      stageUuid: "fdb2fc61-7a8d-86da-bad8-ab3801c4ca5b"
     - stage: horo
-      stageUuid: "bb935e96-a488-8c48-bb2d-2dccd2b9ce57"
+      stageUuid: "0cd066b2-6de9-8de8-a456-d771d0221391"
     - stage: seal
       stageUuid: "cc450af7-b06d-85b6-82e8-b36737aa6aea"
     - stage: uuid
-      stageUuid: "2b1624cd-bb82-84e9-aec6-f31923532243"
+      stageUuid: "fc140a17-0ac5-82b7-9110-7bc28464b4d6"
 version: 2
 ---
 # cost/bits — the cost of attack, computed
@@ -93,3 +93,55 @@ no arithmetic here touches either, and calling a tiling law a security proof wou
 [[rules]]/forge refuses.
 
 Composes: [[cost]] · [[algebra]] · [[tamper]] · [[quantum]] · [[harmony]].
+
+## Symmetry — the floors are one formula, and they prove each other
+
+A digest of `d` bits has four security floors, and they are **one formula** `d/k` over the first
+three harmonics. What decides `k` is whether the search is **symmetric** — whether the target is
+free — and whether the adversary is quantum:
+
+| floor | symmetry | adversary | `k` | exponent |
+| --- | --- | --- | --: | --- |
+| `secondPreimageLog2` | **asymmetric** — the target digest is FIXED | classical | 1 | `d` |
+| `birthdayLog2` | **symmetric** — ANY two of the set collide | classical | 2 | `d/2` |
+| `groverPreimageLog2` | **asymmetric** | quantum | 2 | `d/2` |
+| `bhtCollisionLog2` | **symmetric** | quantum | 3 | `d/3` |
+
+Four cells of a 2×2, and the harmonic indices are exactly `1, 2, 2, 3`.
+
+### Symmetrising halves the exponent
+
+Fix the target and only one side may vary. Free it and **both** sides vary, so the number of
+candidate pairs squares — and squaring the candidates square-roots the work:
+
+```
+secondPreimageLog2(d) = 2 · birthdayLog2(d)        2^(d/2) · 2^(d/2) = 2^d
+```
+
+### The two threats meet at the octave, by different arguments
+
+`groverPreimageLog2(d) = birthdayLog2(d)`, and **neither derives the other**. Grover is a quadratic
+speedup on the *asymmetric* problem; the birthday bound is a combinatorial fact about the
+*symmetric* one. They land on the same exponent from opposite corners of the 2×2 — same `harmonic`,
+opposite `symmetry`, opposite `quantum`. That is why both names survive rather than being folded:
+see [[rules]]/copy § formulas, where this pair is a DECLARED coincidence.
+
+### The quantum symmetric floor refutes the obvious guess
+
+A naive reading applies Grover *inside* the birthday problem and predicts `d/4`. It is **`d/3`** —
+BHT balances queries against quantum **memory**, so the gain is smaller than a second quadratic
+speedup. `bhtCollisionLog2(d) = (2/3) · birthdayLog2(d)`, asserted with the wrong answer asserted
+false beside it.
+
+### Proving each other
+
+`d = k · floor`. So **any one floor plus its harmonic index recovers `d`**, and `d` gives every
+other floor — `digestFromFloor` and `floorsFromOne` are that, and the proof runs the round trip from
+all four starting points. The family is not four facts; it is one formula and a symmetry
+classification.
+
+**Honest boundary.** `d/3` is the conservative theoretical floor: BHT needs `2^(d/3)` quantum
+memory, and a memory-bound quantum collision is nearer `d/2`. The binding floor is the **lowest one
+present in the threat model**, which is a judgement about the adversary, not arithmetic. And a
+quantum cross also breaks an RSA/ECC anchor (Shor → ~0), so keeping even the `d/2` floor needs a
+hash-based post-quantum anchor — which is [[law]]'s `anchorBits` ceiling, not a floor at all.

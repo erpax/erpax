@@ -1,4 +1,4 @@
-import { exactRound } from '@/algebra'
+import { exactRound, roundTo } from '@/algebra'
 /**
  * signal — the matter-twin of the `identity/signal` skill: a horo position
  * rendered as **color + sound** from the single A432 anchor.
@@ -25,7 +25,7 @@ import { type HoroStep } from '@/horo'
 /** The single anchor — Hz for sound, ms for the color-animation period. */
 export const A432 = 432
 
-const round2 = (n: number): number => exactRound(n * 100) / 100
+const round2 = (n: number): number => roundTo(n, 2)
 
 /** One diatonic note pinned to a horo position (just-intonation over A432). */
 export interface NoteBand {

@@ -73,5 +73,7 @@ export { buildErrorTools } from './error'
 //   erpax.versions.restore  — version restore (the `reify` member action)
 export { buildBatchTools } from './batch'
 export { buildVersionsTools } from './versions'
+/** The external boundary, asked over MCP — leads and the single next uncovered one. */
+export { buildOutwardTools } from './outward'
 
 /** @index-cross.foldback child=agents/mcp/tool parent=agents/mcp — this cross folds back into its parent. */

@@ -1,4 +1,4 @@
-import { algebraFloatPow, algebraSqrt, exactMax, exactMin, exactRound } from '@/algebra'
+import { algebraFloatPow, algebraSqrt, exactMax, exactMin, exactRound, roundTo } from '@/algebra'
 /**
  * book/harmony-index — book-of-books index harmony rollup (volume list · metrics).
  */
@@ -40,7 +40,7 @@ export interface BookIndexHarmony {
   readonly impurities: readonly string[]
 }
 
-const round3 = (n: number): number => exactRound(n * 1000) / 1000
+const round3 = (n: number): number => roundTo(n, 3)
 
 
 /** Top-level index volumes — hub dirs under src/, excluding vocabulary shard hub. */

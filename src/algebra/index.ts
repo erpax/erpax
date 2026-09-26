@@ -204,6 +204,20 @@ export const exactRound = (n: number): number => {
   return n < 0 ? exactCeil(n) + (frac <= -0.5 ? -1 : 0) : exactCeil(n)
 }
 
+/**
+ * Round to `decimals` places — the formula, at one address.
+ *
+ * Seven atoms each wrote it as a private `exactRound(n * 1000) / 1000`: accounting/balance
+ * (`roundTo3`), accounting/gaps (`ROUND`), book/harmony-index (`round3`), entropy (`roundBits`),
+ * readme/entropy (`roundEb`), and signal + speech/computed at two places (`round2`). Found by
+ * content-addressing single-expression formula bodies, which is below [[rules]]/copy's 40-node
+ * floor — the same sub-floor case access policies needed.
+ */
+export const roundTo = (n: number, decimals: number): number => {
+  const scale = 10 ** decimals
+  return exactRound(n * scale) / scale
+}
+
 /** Sign: −1 (negative), 0 (zero), 1 (positive). Exact, no NaN. */
 export const exactSign = (n: number): -1 | 0 | 1 => (n < 0 ? -1 : n > 0 ? 1 : 0)
 

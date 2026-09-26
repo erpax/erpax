@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bits",
-    "uuid": "068d24e3-c116-8b32-b9ef-e551fdc2d74e",
+    "uuid": "9595c35b-1ed9-8b91-8dda-9204c1ac77b0",
     "words": [
       "bits"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them.",
-    "uuid": "b8acc006-c00f-80c0-9f1e-b2c3e9b349e5",
+    "uuid": "68b3f42f-bedd-817d-9ca3-4118ea470d10",
     "words": [
       "use",
       "when",

@@ -827,11 +827,11 @@ src/convention/reciprocal/index.ts:27: * @standard schema.org — the type vocab
 src/convention/sourced/index.ts:22: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/triggered/index.ts:28: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/twinned/index.ts:34: * @standard schema.org — the type vocabulary, collided to single words
+src/cost/bits/index.ts:138: * @standard CRAQ — Terrace & Freedman, USENIX ATC 2009
 src/cost/bits/index.ts:13: * @standard NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2
+src/cost/bits/index.ts:148: * @standard DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)
 src/cost/bits/index.ts:14: * @standard RFC 9562 §8 — UUID security considerations
-src/cost/bits/index.ts:159: * @standard CRAQ — Terrace & Freedman, USENIX ATC 2009
 src/cost/bits/index.ts:15: * @standard CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication
-src/cost/bits/index.ts:169: * @standard DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)
 src/cost/bits/index.ts:16: * @standard DeepSeek-Prover-V2 — recursive, kernel-checked invariants
 src/cost/bits/index.ts:46: * @standard RFC 9562 §5.8 (uuidv8) · §4.1 (variant)
 src/cost/centers/index.ts:14: * @standard ISO-3166-1:2020 country-codes geographic-segment-tagging
@@ -5813,7 +5813,7 @@ src/enforce/segregation/of/duty/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/engineering/index.ts:17: * @audit ISO-19011:2018 §6.4 — a cited standard is evidence only if it leads to its enforcement
 src/ensure/unique/slug/within/tenant/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/entanglement/index.ts:23: * @audit computed from the live matrix edges + uuids; never hand-asserted
-src/entropy/index.ts:23: * @audit computed from the live matrix, never hand-asserted
+src/entropy/index.ts:20: * @audit computed from the live matrix, never hand-asserted
 src/equilibrium/index.ts:14: * @audit detailed-balance residual |fwd·pᵢ − rev·pⱼ|; reciprocity fraction -- computed, never asserted
 src/error/codedError.ts:11: * @audit ISO-19011:2018 audit-trail
 src/error/index.ts:12: * @audit ISO-19011:2018 audit-trail error-tracing

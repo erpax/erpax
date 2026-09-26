@@ -122,3 +122,5 @@ export function buildNoveltyTools(): ReadonlyArray<ErpaxMcpTool> {
     },
   ]
 }
+
+/** @index-cross.foldback child=agents/mcp/tool/novelty parent=agents/mcp/tool — this cross folds back into its parent. */

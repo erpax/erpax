@@ -56,17 +56,7 @@ export const ERPAX_DIGEST_BITS = UUID_BITS - UUID_VERSION_BITS - UUID_VARIANT_BI
  */
 export const CONTENT_DIGEST_BITS = 256
 
-/**
- * The 64-bit torus this tree addresses on — DERIVED, not typed.
- *
- * The double torus is the two halves of the 128-bit uuid: `wordFold ⊗ digitFold = combined128`, so
- * one torus is exactly half the identifier's width. Written as the literal `64` it was a
- * matrix-crack — a static datum the tree could have computed ([[matrix]]/constants-audit: an
- * `export const` is seal-debt unless it is computed from sealed state, which is why the subtraction
- * below was never flagged and this line was). It still MIRRORS `architectureBits()` rather than
- * importing it, because that import would add an edge to the tangle ([[rules]]/cycle), and
- * `src/cost/bits/test.ts` pins both the equality and the value 64.
- */
+/** One torus = half the 128-bit uuid. DERIVED, and mirrored from `architectureBits()`. See ./SKILL.md. */
 export const TORUS_BITS = UUID_BITS / 2
 
 /**
@@ -110,18 +100,7 @@ export const birthdayMarginBits = (digestBits: number, rows: number): number =>
 export const bruteYearsLog2 = (workLog2: number, hashrateLog2: number): number =>
   workLog2 - hashrateLog2 - LOG2_SECONDS_PER_YEAR
 
-// THE FLOORS ARE HARMONIC ([[harmony]]). A digest of D bits has not one security
-// floor but the first three HARMONICS of D — D · D/2 · D/3:
-//   D    (1st, fundamental)  classical second-preimage — forge a matching content.
-//   D/2  (2nd, the octave)   classical BIRTHDAY collision = quantum (Grover) second-
-//                            preimage. Two threats MEET at the octave ([[merge]]).
-//   D/3  (3rd)               quantum (BHT) collision — the LOWEST floor, what a
-//                            quantum ([[quantum]]) adversary with quantum memory pays.
-// "Balanced floors" = the series complete to its third harmonic; the binding floor
-// is the LOWEST present in the threat model. The quantum cross also breaks an
-// RSA/ECC anchor (Shor → ~0), so a hash-based post-quantum anchor is required to
-// keep even the D/2 (Grover) floor. HONEST: BHT's D/3 needs 2^(D/3) quantum memory;
-// a memory-bound quantum collision is ≈ D/2 — D/3 is the conservative theoretical floor.
+// The floors are the first three HARMONICS of D — D · D/2 · D/3. See ./SKILL.md § symmetry.
 
 /** Quantum (Grover) second-preimage ≈ 2^(n/2) — the 2nd harmonic (numerically the birthday collision; a distinct threat at the same octave). */
 export const groverPreimageLog2 = (digestBits: number): number => digestBits / 2
@@ -193,5 +172,10 @@ export const invariantChecks = (checks: number, invariants: number): number =>
  * @invariant CONFIRM_GATE_CHECKS === CONFIRM_CHECK_AXES.length — asserted in src/cost/bits/test.ts
  */
 export const CONFIRM_GATE_CHECKS = 11
+
+/** @index-cross.foldback child=cost/bits parent=cost — this cross folds back into its parent. */
+
+/** The floors family — one formula `d/k` over the first three harmonics. See ./floors. */
+export * from './floors'
 
 /** @index-cross.foldback child=cost/bits parent=cost — this cross folds back into its parent. */

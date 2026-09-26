@@ -2,18 +2,18 @@
 name: copy
 description: "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…"
 atomPath: "rules/copy"
-coordinate: "rules/copy · 5/round · 55a05b9a"
-contentUuid: "75a37386-8418-5374-a3d7-7e70cdd23234"
-diamondUuid: "15fca5b1-a572-8148-8a58-40caabe0e1c5"
-uuid: "55a05b9a-d3fd-869b-981c-babddcc91a58"
+coordinate: "rules/copy · 5/round · 86b36fb1"
+contentUuid: "10d35e94-15c4-55a2-9826-bd941e928fbb"
+diamondUuid: "8483a3ee-67e7-8f50-9669-9678a6802bd9"
+uuid: "86b36fb1-19b8-87f8-9c85-bdff9f3966a1"
 horo: 5
 typography:
   partition: rules
-  bondDegree: 12
+  bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "86c668c7-21f4-8d34-8025-af90e881f2a3"
+  computationUuid: "eee69b49-bac6-8a8b-acd1-010d2c55d888"
   stages:
     - stage: path
       stageUuid: "d82d2c62-1ae9-86e1-bad6-7da93650e4b2"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "e9a38fb2-02f1-86c7-88ef-57a6ec4e15ef"
     - stage: links
-      stageUuid: "a5a9accf-028f-8623-bbbd-05f0f08d970d"
+      stageUuid: "94ac95ae-f176-8fde-8e17-fc8017f80b9f"
     - stage: horo
-      stageUuid: "0d6d087b-fed8-8d9b-8d97-a2985b0ff75c"
+      stageUuid: "8591d24d-f303-82f5-88f5-4fd77926419b"
     - stage: seal
       stageUuid: "756a028c-a9e5-86e1-93d5-ccfcd14a267e"
     - stage: uuid
-      stageUuid: "92b688ef-307b-84bb-a10d-05884ceac9e2"
+      stageUuid: "dc75a85e-e37f-81c4-9b67-9a32a70cb653"
 version: 2
 ---
 # rules/copy — one truth at two addresses, found by content-addressing the body
@@ -206,6 +206,55 @@ two bodies. Registered as the `policy-address` guardian, so it is a wall rather 
 called in the right place — an alias is trusted, a policy assembled by a factory or returned from a
 higher-order helper has no `: Access` annotation to find, and the 123 collection access legs whose
 value is not an object literal are outside it.
+
+## Formulas — one formula, one address, and a coincidence is not a copy
+
+`minNodes` hides a whole class: a formula is one expression, far below 40 nodes. Content-addressing
+the **shape** — the expression with parameters normalised to `$0`, `$1` — found 8 groups across 95
+single-expression formulas, and the split is the interesting part.
+
+**Seven were one formula written seven times**, and they are folded:
+
+| shape | written as |
+| --- | --- |
+| `exactRound($0 * 1000) / 1000` | `roundTo3` (accounting/balance) · `ROUND` (accounting/gaps) · `round3` (book/harmony-index) · `roundBits` (entropy) · `roundEb` (readme/entropy) |
+| `exactRound($0 * 100) / 100` | `round2` (signal) · `round2` (speech/computed) |
+| `(1n << BigInt(architectureBits())) - 1n` | `architectureMask` in **both** book/compute and quantum/word |
+
+`roundTo(n, decimals)` now lives once in [[algebra]], beside `exactRound`, and each atom's local name
+points at it — so the call sites did not move and the formula has one address.
+
+### A bare operator is not a formula
+
+`$0 * $1` matched **five** atoms: `standingStock` · `trophicTransfer` · `emissionFromActivity` ·
+`energyJoules` · `consultProfit`. `energyJoules = h·f` and `consultProfit = rate·hours` share
+multiplication and **no physics**. A shape whose every operand is a parameter is refused — the
+expression-level form of the floor `minNodes` gives bodies, and without it this gate's noise sits
+above its signal, which is the failure this corpus has paid for four times.
+
+### Two shapes that coincide, and must NOT be folded
+
+This is the sharper half, and the reason the gate declares rather than sweeps:
+
+| shape | the two theorems |
+| --- | --- |
+| `$0 / 2` | **`birthdayLog2`** counts CLASSICAL collisions in a space of size 2^d; **`groverPreimageLog2`** counts QUANTUM queries for a preimage. One exponent, two derivations, neither implying the other. |
+| `bound() / $0` | **`conjugate`** is Δx·Δp ≥ ℏ/2, **`linewidth`** is ΔE·Δt ≥ ℏ/2 — one inequality read over two conjugate pairs. |
+
+Folding either would erase a real cross-domain fact and, worse, remove the two sides' ability to
+move independently when a model changes: if the quantum floor stopped being d/2, a folded
+`birthdayLog2` would silently follow it. **A cross formula explains a cross-domain problem precisely
+because the two domains meet at the same expression by different routes** — that meeting is the
+content, and it survives only while both names do.
+
+`COINCIDENT_FORMULAS` declares each pair with the reason it is a coincidence, in the open, so the
+exemption is arguable. Registered as the `formula-address` guardian at 0 — a theorem, not a ratchet.
+
+**Honest boundary.** This reads single-expression arrow functions only: a formula in a block body,
+spread over two statements, or folded into a larger function is invisible to it. Shape equality is
+not semantic equality — two formulas can differ in shape and compute the same thing (`d/2` and
+`d*0.5`), which this will never see. And a declared coincidence is a human judgement, which is why
+each one carries its argument rather than just an exemption.
 
 **Law — [[law]]: the same body at two addresses is one implementation and one decoy. Content-address
 every body; where two agree, one of them is unmaintained and nobody knows which.**

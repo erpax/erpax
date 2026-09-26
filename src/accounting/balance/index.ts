@@ -17,7 +17,7 @@ import {
   digitFold,
 } from '@/quantum/fold'
 import { architectureBits, architectureMask } from '@/quantum/word'
-import { exactMax, exactRound } from '@/algebra'
+import { exactMax, roundTo } from '@/algebra'
 
 /**
  * Every equation this section prints, each as the code evaluates it.
@@ -244,7 +244,7 @@ export function balanceEquationHolds(m: BalanceMeeting): readonly EquationCheck[
   ]
 }
 
-const roundTo3 = (n: number): number => exactRound(n * 1000) / 1000
+const roundTo3 = (n: number): number => roundTo(n, 3)
 
 export function balanceMeetingOf(model: FolderReadmeModel): BalanceMeeting
 export function balanceMeetingOf(

@@ -443,6 +443,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool/novelty"
   },
   {
+    "atom": "outward",
+    "name": "outward",
+    "description": "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*.",
+    "path": "agents/mcp/tool/outward"
+  },
+  {
     "atom": "risk",
     "name": "risk",
     "description": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395).",
@@ -2291,6 +2297,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "cost/bits"
   },
   {
+    "atom": "floors",
+    "name": "floors",
+    "description": "Use when reasoning about floors — A digest of bits has four security floors, and they are **one formula** over the first three harmonics.",
+    "path": "cost/bits/floors"
+  },
+  {
     "atom": "centers",
     "name": "centers",
     "description": "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.",
@@ -3063,6 +3075,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "entropy",
     "description": "Use when reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances — entropy() = 1 − the reciprocal-edge fraction of the uuid-matrix, an audit/aura signal, NOT an input to crackVerdict. It is a DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost via coverageCostLog2); reciprocity=1 does NOT imply coverage=1, so zero entropy does NOT by itself yield infinite cost (the live tree is the counter-example — entropy 0, coverage under 1, cost finite). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor.",
     "path": "entropy"
+  },
+  {
+    "atom": "implication",
+    "name": "implication",
+    "description": "Use when reasoning about implication — *\"Zero entropy ⇒ infinite tamper-cost\"* is false in **both** directions, and law says so in code: reciprocity-entropy is not coverage — it is 0 on the live tree and prices nothing…",
+    "path": "entropy/implication"
   },
   {
     "atom": "source",

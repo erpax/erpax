@@ -1,4 +1,4 @@
-import { algebraLog2, exactMax, exactRound } from '@/algebra'
+import { algebraLog2, exactMax, roundTo } from '@/algebra'
 /**
  * readme/entropy — gaps · seals · residual entropy in comparable units (eb).
  *
@@ -112,7 +112,7 @@ export interface CorpusEntropyRollup {
   readonly bySector: readonly SectorEntropyRollup[]
 }
 
-const roundEb = (n: number): number => exactRound(n * 1000) / 1000
+const roundEb = (n: number): number => roundTo(n, 3)
 
 /**
  * seal ÷ gap — and `1` where gap is zero, which is a FLOOR, not a measurement.

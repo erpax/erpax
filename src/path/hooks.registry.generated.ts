@@ -73,6 +73,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "agents/mcp/tool/float",
   "agents/mcp/tool/kyc",
   "agents/mcp/tool/novelty",
+  "agents/mcp/tool/outward",
   "agents/mcp/tool/risk",
   "agents/mcp/tool/staffing",
   "agents/registered",
@@ -362,6 +363,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "corpus",
   "cost",
   "cost/bits",
+  "cost/bits/floors",
   "cost/centers",
   "cost/centers/job/positions",
   "cost/centers/job/positions/recruiting/pipelines",
@@ -490,6 +492,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "entanglement/field",
   "entity/types",
   "entropy",
+  "entropy/implication",
   "entropy/source",
   "entropy/threshold",
   "entropy/threshold/split",
@@ -1524,7 +1527,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1517 as const
+export const ATOM_LEDGER_PATH_COUNT = 1520 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1795,6 +1798,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp",
     "agents/mcp/tool",
     "agents/mcp/tool/novelty"
+  ],
+  "agents/mcp/tool/outward": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/outward"
   ],
   "agents/mcp/tool/risk": [
     "agents/mcp",
@@ -2840,6 +2848,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "cost",
     "cost/bits"
   ],
+  "cost/bits/floors": [
+    "cost",
+    "cost/bits",
+    "cost/bits/floors"
+  ],
   "cost/centers": [
     "cost",
     "cost/centers"
@@ -3295,6 +3308,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "entropy": [
     "entropy"
+  ],
+  "entropy/implication": [
+    "entropy",
+    "entropy/implication"
   ],
   "entropy/source": [
     "entropy",
@@ -7112,4 +7129,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 865 as const
+export const MERGED_NESTED_PATH_COUNT = 868 as const

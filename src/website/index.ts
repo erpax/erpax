@@ -82,20 +82,24 @@ export async function seedFromSpec(opts: SpecPageSeedOptions): Promise<ReadonlyA
   const include = new Set(opts.include ?? ['collection', 'chain', 'agent', 'role', 'standard'])
   const seeds: PageSeed[] = []
 
-  // Collection pages — one per CollectionSpec, lazily imported to avoid
-  // circular deps (spec-generator → website → spec-generator).
+  // Collection pages — one per collection PAYLOAD ACTUALLY BOOTED, read from the generated types.
+  //
+  // This axis used to read `extractCorpus`, which returned FOUR entries whose slugs were `test`,
+  // `index`, `dunningJob` and `salesAuditFileJob` — parse garbage, not collections, so the site's
+  // collection pages were 4 fabrications instead of the corpus. `shapesOf` is the arbiter
+  // [[rules]]/collapse already trusts: Payload's own generated answer about what booted, 231 real
+  // slugs each carrying its content-uuid. The page SET is now a formula over sealed state.
   if (include.has('collection')) {
-    const { extractCorpus } = await import('@/spec/generator')
-    const corpus = extractCorpus(process.cwd())
-    for (const c of corpus.collections) {
+    const { shapesOf } = await import('@/rules/collapse')
+    for (const c of shapesOf(process.cwd())) {
       seeds.push({
         slug: `spec-collection-${c.slug}`,
-        title: c.title,
+        title: titleFromSlug(c.slug),
         locale: 'en',
         heroSection: `data-block="hero"`,
-        bodyHtml: renderCollectionPage(c),
+        bodyHtml: renderBootedCollectionPage(c),
         seedSource: 'spec-corpus',
-        metadata: { axis: 'collection', slug: c.slug, standardsCited: c.standards.length },
+        metadata: { axis: 'collection', slug: c.slug, contentUuid: c.uuid },
       })
     }
   }
@@ -168,13 +172,23 @@ export async function seedFromSpec(opts: SpecPageSeedOptions): Promise<ReadonlyA
   return seeds
 }
 
-function renderCollectionPage(c: { slug: string; title: string; description: string; standards: ReadonlyArray<{ body: string; id: string }>; chainSteps: ReadonlyArray<{ chainId: string; stepIndex: number }> }): string {
-  const stds = c.standards.map((s) => `<li><strong>${s.body}</strong> ${s.id}</li>`).join('')
-  const steps = c.chainSteps.map((s) => `<li>${s.chainId} step ${s.stepIndex}</li>`).join('')
-  return `<section data-block="hero"><h1>${c.title}</h1><p class="lede">Collection: <code>${c.slug}</code></p></section>` +
-    `<section data-block="standards"><h2>Standards cited</h2><ul>${stds}</ul></section>` +
-    `<section data-block="chain-steps"><h2>Chain participation</h2><ul>${steps || '<li>(none)</li>'}</ul></section>` +
-    `<section data-block="actions"><h2>Try it</h2><p>Call <code>erpax.spec.getCollection({slug: "${c.slug}"})</code> via MCP.</p></section>`
+/** `account-reconciliations` → `Account Reconciliations`. A formula over the slug, not a table. */
+const titleFromSlug = (slug: string): string =>
+  slug.split('-').map((w) => (w.length > 0 ? w[0]!.toUpperCase() + w.slice(1) : w)).join(' ')
+
+/**
+ * A booted collection's page, rendered from what is SEALED about it: its slug and its
+ * content-uuid. Nothing here is authored, so nothing here can drift from the corpus.
+ */
+function renderBootedCollectionPage(c: { slug: string; uuid: string }): string {
+  return (
+    `<section data-block="hero"><h1>${titleFromSlug(c.slug)}</h1>` +
+    `<p class="lede">Collection <code>${c.slug}</code></p></section>` +
+    `<section data-block="content"><dl>` +
+    `<dt>slug</dt><dd><code>${c.slug}</code></dd>` +
+    `<dt>content-uuid</dt><dd><code>${c.uuid}</code></dd>` +
+    `</dl></section>`
+  )
 }
 
 function renderChainPage(c: { id: string; name?: string; description?: string; standards?: ReadonlyArray<string> }): string {

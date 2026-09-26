@@ -247,6 +247,11 @@ export function accessPolicies(cwd: string = process.cwd()): Policy[] {
  *
  * Grouped by `hash + family`, never by hash alone: `superAdminOnly: Access` and
  * `fieldAccess: FieldAccess` share a body and satisfy two DIFFERENT Payload interfaces. See SKILL.md.
+ *
+ * @invariant `{ return x }` and `x` address identically — asserted in ./test.ts
+ * @invariant Access and FieldAccess sharing a body is never reported — asserted in ./test.ts
+ * @invariant an alias is never a second implementation — asserted in ./test.ts
+ * @invariant every access policy in the corpus lives at one address — asserted in ./test.ts
  */
 export function policyAddresses(cwd: string = process.cwd()): Policy[][] {
   const m = new Map<string, Policy[]>()
@@ -259,3 +264,89 @@ export function policyAddresses(cwd: string = process.cwd()): Policy[][] {
   return [...m.values()].filter((g) => g.length > 1 && new Set(g.map((p) => p.file + p.name)).size > 1)
 }
 
+
+/** One formula, and where it lives. */
+export interface Formula {
+  readonly atom: string
+  readonly name: string
+  readonly file: string
+  /** The expression with parameters normalised to `$0`, `$1` — the SHAPE, not the spelling. */
+  readonly shape: string
+}
+
+/**
+ * Two formulas that share a shape and are NOT the same theorem. DECLARED. See SKILL.md § formulas.
+ *
+ * A numeric coincidence is not duplication, and folding one would erase a real cross-domain fact —
+ * and worse, the two would stop being able to move independently when a model changes.
+ */
+const COINCIDENT_FORMULAS: ReadonlyArray<readonly [string, string, string]> = [
+  [
+    'birthdayLog2',
+    'groverPreimageLog2',
+    'both are d/2 and neither derives the other: the birthday bound counts CLASSICAL collisions in a ' +
+      'space of size 2^d, Grover counts QUANTUM queries for a preimage. One exponent, two theorems.',
+  ],
+  [
+    'conjugate',
+    'linewidth',
+    'both are bound()/x: Δx·Δp ≥ ℏ/2 and ΔE·Δt ≥ ℏ/2 are the same inequality read over two different ' +
+      'conjugate pairs — position·momentum and energy·time.',
+  ],
+]
+
+/**
+ * Single-expression arithmetic formulas, content-addressed by SHAPE. See SKILL.md § formulas.
+ *
+ * A shape whose every operand is a parameter is REFUSED: `$0 * $1` is multiplication, not a formula,
+ * and `energyJoules = h*f` shares nothing real with `consultProfit = rate*hours`. At least one
+ * operand must be a constant, a call or a named value — the expression-level form of the noise floor
+ * `minNodes` gives bodies.
+ *
+ * @invariant a shape whose every operand is a parameter is never reported — asserted in ./test.ts
+ * @invariant one non-parameter operand makes two copies a finding — asserted in ./test.ts
+ * @invariant a DECLARED coincidence is never reported — asserted in ./test.ts
+ * @invariant the corpus has zero unexplained formula duplication — asserted in ./test.ts
+ */
+export function formulaAddresses(cwd: string = process.cwd()): Formula[][] {
+  const ARITH = new Set<ts.SyntaxKind>([
+    ts.SyntaxKind.PlusToken, ts.SyntaxKind.MinusToken, ts.SyntaxKind.AsteriskToken,
+    ts.SyntaxKind.SlashToken, ts.SyntaxKind.PercentToken, ts.SyntaxKind.AsteriskAsteriskToken,
+  ])
+  const byShape = new Map<string, Formula[]>()
+  for (const file of allFiles(cwd)) {
+    if (!/\.tsx?$/.test(file) || /\/(test|seed)\.tsx?$/.test(file)) continue
+    const text = readFileSync(file, 'utf8')
+    const src = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true)
+    const atom = relative(join(cwd, 'src'), file).replace(/\/index\.tsx?$/, '').replace(/\.tsx?$/, '')
+    const visit = (n: ts.Node): void => {
+      if (ts.isVariableDeclaration(n) && n.initializer && ts.isArrowFunction(n.initializer)) {
+        const body = n.initializer.body
+        if (!ts.isBlock(body) && ts.isBinaryExpression(body) && ARITH.has(body.operatorToken.kind)) {
+          const params = n.initializer.parameters.map((p) => p.name.getText(src))
+          let shape = body.getText(src).replace(/\s+/g, '')
+          params.forEach((p, i) => { shape = shape.replaceAll(p, `$${i}`) })
+          // every operand a parameter ⇒ a bare operator, not a formula
+          const bare = /^\$\d+[-+*/%]+\$\d+$/.test(shape)
+          if (!bare) byShape.set(shape, [...(byShape.get(shape) ?? []), { atom, name: n.name.getText(src), file: relative(cwd, file), shape }])
+        }
+      }
+      ts.forEachChild(n, visit)
+    }
+    visit(src)
+  }
+  const declared = new Set(COINCIDENT_FORMULAS.flatMap(([a, b]) => [`${a}|${b}`, `${b}|${a}`]))
+  return [...byShape.values()]
+    .filter((g) => g.length > 1)
+    .filter((g) => !g.every((x, _i, all) => all.some((y) => y !== x && declared.has(`${x.name}|${y.name}`))))
+}
+
+/** Zero is a THEOREM: one formula, one address — unless it is a DECLARED coincidence. */
+export function assertFormulasConsolidated(cwd: string = process.cwd()): void {
+  const g = formulaAddresses(cwd)
+  if (g.length === 0) return
+  throw new Error(
+    `✖ rules/copy — ${g.length} formula(s) at two or more addresses:\n` +
+      g.map((x) => `  ${x[0]!.shape}\n` + x.map((s) => `      ${s.name} @ ${s.atom}`).join('\n')).join('\n'),
+  )
+}

@@ -19,7 +19,7 @@ import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
 import { durableObjectExportGaps } from '@/cloudflare/binding'
 import { unreachedAtoms } from '@/rules/unreached'
-import { copiesInTangle, copyCount, policyAddresses, unearnedCopies } from '@/rules/copy'
+import { copiesInTangle, copyCount, formulaAddresses, policyAddresses, unearnedCopies } from '@/rules/copy'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -32,7 +32,7 @@ import { claimBalance, totalSlack } from '@/rules/slack'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
 import { unheldVerdicts } from '@/rules/hold'
 import { scanInjection } from '@/rules/inject'
-import { bareImplications } from '@/entropy'
+import { bareImplications } from '@/entropy/implication'
 import { momentShapedUnwired, unrunLaws } from '@/rules/domain'
 import { bareAsks } from '@/rules/ask'
 import { unauthenticatedBypasses } from '@/rules/bypass'
@@ -418,6 +418,11 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // `neverDelete`s and a diverged `adminOnly`. Zero is a theorem: a rule a reviewer must trust
     // may not be a coin flip between two bodies.
     guardian({ axis: 'policy-address', violations: policyAddresses(cwd).length, baseline: 0 }),
+    // formula-address — one formula at two addresses ([[rules]]/copy § formulas). Expression-level, so
+    // below copy's 40-node floor: seven atoms each wrote `exactRound(n * 1000) / 1000`. A bare operator
+    // is refused as noise and a DECLARED coincidence is exempt — birthdayLog2 and groverPreimageLog2 are
+    // both d/2 and neither derives the other. Zero is a theorem.
+    guardian({ axis: 'formula-address', violations: formulaAddresses(cwd).length, baseline: 0 }),
     // bare-implication — a sentence asserting 'zero entropy ⇒ infinite cost', which src/law
     // computes as FALSE in both directions. The predicate existed and its domain was 3 files
     // while 28 carried the claim ([[rules]]/domain, inside the gate written for it). Zero is a
