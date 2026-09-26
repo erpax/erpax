@@ -142,7 +142,7 @@
     "vite": "^8.2.0",
     "vitepress": "^1.6.4",
     "vitest": "^4.1.11",
-    "wrangler": "^4.118.0",
+    "wrangler": "^4.141.0",
     "yaml": "^2.9.0"
   },
   "engines": {

@@ -35,7 +35,14 @@ export interface BareClaim {
   readonly sentence: string
 }
 
-/** Every hand-maintained sentence asserting it. Generated faces restate their source. */
+/**
+ * Every hand-maintained sentence asserting it. Generated faces restate their source.
+ *
+ * @invariant a claim in a COMMENT fires; the identical claim in a STRING LITERAL does not — asserted in ./test.ts
+ * @invariant a slogan in quotes is cited, not asserted — asserted in ./test.ts
+ * @invariant wikilinks do not hide it — asserted in ./test.ts
+ * @invariant the corpus asserts it nowhere — asserted in ./test.ts
+ */
 /** The files that DEFINE or REGISTER this check. DECLARED — see ./SKILL.md. */
 const DEFINES_THE_LAW: readonly string[] = [
   'src/entropy/index.ts',

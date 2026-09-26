@@ -119,6 +119,12 @@ export interface LeadCoverage {
  * `nextAsk` was generic over candidates and `harvestLeads` produced leads, and nothing composed
  * them — so "what is next" could not see the world changing. This is that composition and no new
  * logic: `coverage` and `nextAsk` are [[quantum]]/chat's, unchanged.
+ *
+ * @invariant nothing answered ⇒ covered = 0 and next is the first lead — asserted in ./test.ts
+ * @invariant all answered ⇒ covered = 1 and next is undefined — asserted in ./test.ts
+ * @invariant no leads ⇒ covered = 1 by definition — asserted in ./test.ts
+ * @invariant a MOVED lead and a FRESH one on the same rail are distinct candidates — asserted in ./test.ts
+ * @invariant unreachable is never a lead — asserted in ./test.ts
  */
 export function leadCoverage(h: LeadHarvest, answered: readonly string[]): LeadCoverage {
   const candidates = leadCandidates(h)

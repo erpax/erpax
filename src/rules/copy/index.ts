@@ -247,6 +247,11 @@ export function accessPolicies(cwd: string = process.cwd()): Policy[] {
  *
  * Grouped by `hash + family`, never by hash alone: `superAdminOnly: Access` and
  * `fieldAccess: FieldAccess` share a body and satisfy two DIFFERENT Payload interfaces. See SKILL.md.
+ *
+ * @invariant `{ return x }` and `x` address identically — asserted in ./test.ts
+ * @invariant Access and FieldAccess sharing a body is never reported — asserted in ./test.ts
+ * @invariant an alias is never a second implementation — asserted in ./test.ts
+ * @invariant every access policy in the corpus lives at one address — asserted in ./test.ts
  */
 export function policyAddresses(cwd: string = process.cwd()): Policy[][] {
   const m = new Map<string, Policy[]>()
@@ -297,6 +302,11 @@ const COINCIDENT_FORMULAS: ReadonlyArray<readonly [string, string, string]> = [
  * and `energyJoules = h*f` shares nothing real with `consultProfit = rate*hours`. At least one
  * operand must be a constant, a call or a named value — the expression-level form of the noise floor
  * `minNodes` gives bodies.
+ *
+ * @invariant a shape whose every operand is a parameter is never reported — asserted in ./test.ts
+ * @invariant one non-parameter operand makes two copies a finding — asserted in ./test.ts
+ * @invariant a DECLARED coincidence is never reported — asserted in ./test.ts
+ * @invariant the corpus has zero unexplained formula duplication — asserted in ./test.ts
  */
 export function formulaAddresses(cwd: string = process.cwd()): Formula[][] {
   const ARITH = new Set<ts.SyntaxKind>([
