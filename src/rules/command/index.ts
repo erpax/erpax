@@ -6,11 +6,7 @@ import { join } from 'node:path'
 /**
  * rules/command — a command that runs must point at something that exists.
  *
- * Scope is REACHABILITY: the closure of what CI, the git hooks and package.json actually invoke. A
- * file nothing runs cannot fail open, because it never runs.
- *
  * @see ./SKILL.md — the gate that failed open for weeks, and the three ways this instrument was
- *   wrong on its own first run.
  */
 
 export interface DeadCommand {
@@ -69,9 +65,6 @@ const entryPoints = (root: string): string[] => {
 
 /**
  * Every dead path named by something the repo actually runs.
- *
- * The closure is walked breadth-first from the entry points: an entry names a script, that script
- * names another, and a dead path anywhere along that chain is a command that cannot run.
  */
 export function deadCommands(cwd: string = process.cwd()): DeadCommand[] {
   const reached = new Map<string, string[]>()
@@ -109,9 +102,6 @@ export function deadCommands(cwd: string = process.cwd()): DeadCommand[] {
 
 /**
  * Zero is a THEOREM, not a ratchet.
- *
- * There is no acceptable number of commands that cannot run: each one is a check that reports
- * nothing while appearing to be enforced.
  */
 export function assertCommandsResolve(cwd: string = process.cwd()): void {
   const dead = deadCommands(cwd)
@@ -146,20 +136,6 @@ const LOADERS = ['require', 'requireFromHere', 'import'] as const
 
 /**
  * Every `src/…` path handed to a runtime loader that does not exist.
- *
- * This is the population neither existing gate covered, and that is why it rotted: `deadCommands`
- * scopes itself to what CI, the hooks and package.json reach, and delegates a `.ts` module's paths
- * to [[rules]]/reference — which reads PROSE and COMMENTS. A path inside a string literal passed to
- * `requireFromHere` is in neither, so `consistency/apply` pointed thirteen references at a dissolved
- * tree and only the Next dev build ever said so.
- *
- * Parsed, never matched, and two refusals keep it at zero noise:
- *
- * - **A comment is not a call.** `ts.Identifier` and `ts.StringLiteral` nodes cannot occur inside a
- *   comment, so the grammar excludes prose for free — the refusal [[rules]]/confine, [[rules]]/bypass
- *   and [[rules]]/unfolded each paid for separately.
- * - **An INTERPOLATED path is not decidable.** `join(root, `src/${area}/x.ts`)` names a family, not a
- *   file; reporting it would be a guess. Only a plain string literal is judged.
  *
  * @invariant a path inside a comment or a template with substitutions is never a finding
  */
@@ -209,8 +185,6 @@ function pathLiteralsIn(args: ts.NodeArray<ts.Expression>): string[] {
 
 /**
  * Fails closed. Zero is a **theorem**: a loader handed a path that does not exist throws where it
- * runs, and every one of these sat behind a bare `catch {}` that turned the throw into a clean
- * summary.
  */
 export function assertLoaderPathsResolve(cwd: string = process.cwd(), ceiling = 0): void {
   const dead = deadLoaderPaths(cwd)

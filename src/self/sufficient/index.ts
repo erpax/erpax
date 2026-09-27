@@ -3,31 +3,8 @@ import { containment, orthogonalLaws } from '@/conjecture'
 /**
  * self/sufficient — self-sufficiency as a SECURITY property, made computational.
  *
- * The operating heuristic (derive from within, don't ask) has a measurable
- * dual. Every EXTERNAL dependence is a cheaper attack path than out-computing
- * the content digest: an attacker who can subvert a remote AI-model API that
- * shapes content before it is hashed, a third-party service, or a remote agent
- * never needs the 2^106 second-preimage — they corrupt the input. So the
- * effective tamper cost is capped at the WEAKEST external trust link (the same
- * weak-anchor law as tamper-cost).
- *
- * Decrease dependence ⇒ increase tampering cost. Internalising a dependency —
- * a model saved locally / run on Workers AI (bindings), an external call
- * replaced by a local content-addressed SKILL — removes that cheap path, so the
- * effective cost rises toward the digest bound. The society co-evolves: external
- * agents bootstrap a new skill ONCE; the society then runs it locally forever,
- * each internalisation a shared discovery (merge: gaps filled by many, deduped
- * by content-uuid) recorded in git history (the distributed anchor that costs
- * nothing to keep). The same act, both directions — dependence ↓, tamper cost ↑.
- *
- * One MANDATORY external is kept: the distributed anchor (git history / a TSA —
- * the single drop of borrowed entropy that makes the zero-entropy whole
- * tamper-evident). It is not a liability; it is the floor's witness.
- *
  * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
  * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
- * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)
- * @audit Conservation Law 54 (universal identity element — every case already defined)
  */
 
 import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
@@ -38,8 +15,6 @@ export type DependencyKind = 'ai-model' | 'service' | 'binding' | 'agent' | 'lib
 
 /**
  * An external dependency: a trust link with a COMPROMISE cost in bits — how
- * hard it is to subvert the dependency itself (≪ the digest's 2^106 when the
- * dep is a remote API you must trust). Lower ⇒ cheaper attack path.
  */
 export interface ExternalDependency {
   readonly id: string
@@ -66,12 +41,6 @@ export interface SelfSufficiencyVerdict {
 
 /**
  * The effective tamper cost of a society carrying these external liabilities.
- * The weakest link binds (min over the digest/anchor floor and every liability);
- * removing liabilities raises the floor toward the digest bound — the law.
- *
- * @param digestBits content-uuid digest width (default erpax's 106)
- * @param anchorStrengthBits the mandatory distributed anchor (git/TSA), default 128
- * @param liabilities external dependencies that are attack surface (not the anchor)
  */
 export function selfSufficiencyVerdict(opts: {
   digestBits?: number
@@ -109,9 +78,6 @@ export function selfSufficiencyVerdict(opts: {
 
 /**
  * Internalise one dependency — the co-evolution step. The dependency leaves the
- * liability set (now a local, content-addressed skill/model); the effective
- * tamper cost rises if it was the binding link. Returns the new liability set
- * AND the new verdict, so the loop is measurable: dependence ↓, cost ↑.
  */
 export function internalise(
   liabilities: ReadonlyArray<ExternalDependency>,
@@ -124,10 +90,6 @@ export function internalise(
 
 /**
  * The bridge to tamper-cost: the full crack verdict under self-sufficiency. The
- * weakest external link is passed as the effective anchor strength, so a society
- * with a cheap external dependency is correctly reported as bound by it (the
- * weak-anchor case); fully internalised, the digest binds and — at full
- * content-address coverage — the cost is unbounded.
  */
 export function selfSufficientCrackVerdict(opts: {
   digestBits?: number
@@ -162,19 +124,6 @@ export interface Direction {
 
 /**
  * The standing queue: regression > auditor/signer-facing > blocks-everything > debt > cosmetic.
- *
- * Every keyword is ANCHORED, and three of them were not. `red\b` matched every word ending in
- * `-red` — `shared`, `measured`, `required`, `covered`, `considered` — so this corpus, which writes
- * "measured" in almost every sentence it produces, promoted ordinary prose to rank 5, *regression*.
- * `gate` matched `aggregate`, `delegate`, `mitigate`, `investigate` and `gateway`, and this tree
- * exports `aggregateCorpusEntropy`; `dead` matched `deadline` and `deadlock`. The top of the queue
- * was therefore close to flat: nearly anything could be ranked as the most urgent thing there is.
- *
- * That is [[rules]]/probe's law arriving at the ranker — a filter that selects by name cannot see
- * what it does not name, and what it catches instead is whatever happens to contain the letters.
- *
- * The same law bit in the other direction too: the debt keyword was `unfold`, and this corpus writes
- * **un-folded** with a hyphen nearly everywhere, so its own preferred spelling scored nothing.
  */
 const PRIORITY: readonly (readonly [RegExp, number, string])[] = [
   [/regress|broke|broken|\bred\b|fail|does not (boot|load|build)|TDZ/i, 5, 'regression — a broken thing blocks everything'],
@@ -186,8 +135,6 @@ const PRIORITY: readonly (readonly [RegExp, number, string])[] = [
 
 /**
  * Rank the corpus's open intents into a direction — the highest-priority next move first.
- * The self-sufficient answer to "what next?": derived from the corpus's declared frontier
- * and the standing queue, not asked. Pass `openIntents(cwd)` (@/think) as `intents`.
  */
 export function nextDirection(intents: readonly string[]): Direction[] {
   return intents
@@ -209,10 +156,7 @@ export interface InternalLead {
   readonly evidence: string
 }
 
-/**
- * The self-measurements a harvest reads, INJECTED — so it needs neither the network nor a booted
- * app, exactly as `outward/leads` injects its boundary probes.
- */
+/** The self-measurements a harvest reads, INJECTED — no network, no booted app. */
 export interface InternalSources {
   readonly guardians?: () => readonly { axis: string; violations: number; baseline: number; ok: boolean }[]
   /** Proven crosses not yet drawn — `conjecture.crossStream(...).proven`, as candidate strings. */
@@ -247,9 +191,7 @@ export function internalLeads(src: InternalSources = {}): InternalLead[] {
   for (const b of src.boundary?.() ?? []) {
     if (b.state !== 'unreachable') continue
     // An unasked question is not a failure, but it IS the thing to do next about that rail.
-    // The wording carries the RANK, so it is chosen rather than written loosely: an unreachable probe
-    // is a knowledge `gap`, which the debt tier names. It is not a regression — nothing broke — and
-    // the first draft of this sentence only scored 5 because `red\b` matched "unanswe-red".
+    // The wording carries the RANK: an unreachable probe is a knowledge `gap`, not a regression.
     out.push({
       source: 'boundary',
       intent: `gap in what is known — the ${b.name} boundary could not be asked`,
@@ -259,13 +201,7 @@ export function internalLeads(src: InternalSources = {}): InternalLead[] {
   return out
 }
 
-/**
- * The corpus's own next move: measured leads, ranked by the standing queue, most urgent first.
- *
- * This is what makes `nextDirection` self-sufficient. It ranks intents, and until now every intent
- * had to be TYPED by a person into [[think]]'s store — so the corpus could order its frontier and
- * never generate one. See ./SKILL.md.
- */
+/** The corpus's own next move: measured leads, ranked, most urgent first. */
 export function selfSufficientNext(src: InternalSources = {}): Direction[] {
   return nextDirection(internalLeads(src).map((l) => l.intent))
 }
@@ -282,21 +218,11 @@ export interface LeadCross {
   readonly orthogonal: readonly string[]
 }
 
-/**
- * The target a lead points at: an axis name or an atom path, not the sentence.
- *
- * Crossing on the sentence would find nothing — a guardian's evidence and a cross's evidence never
- * share text. Crossing on the TARGET is what makes the corroboration meaningful.
- */
+/** The target a lead points at — never the sentence, which two sources never share. */
 const leadTarget = (l: InternalLead): string => (l.evidence.match(/[A-Za-z][A-Za-z0-9/-]*/)?.[0] ?? l.evidence)
 
 /**
- * Cross every lead source against every other — reusing [[conjecture]]'s own intersection and
- * DIRECTIONAL containment rather than re-deriving them ([[rules]]/copy).
- *
- * The useful output is `corroborated`: a target two independent measurements both name is a stronger
- * next move than one either found alone, which is the same argument `unearnedCopies` makes for
- * copy × unfolded. `carried` orders the sources — a source inside another is downstream of it.
+ * Cross every lead source against every other, reusing [[conjecture]]'s intersection and DIRECTIONAL
  *
  * @invariant a target named by one source only is never reported as corroborated
  */
