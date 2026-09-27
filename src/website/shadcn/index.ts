@@ -148,3 +148,58 @@ export function allRequiredShadcnComponents(): ReadonlyArray<string> {
   for (const s of SHADCN_SURFACE_MAP) for (const c of s.required) all.add(c)
   return [...all].sort()
 }
+
+export interface TrainingSurface {
+  /** Live MCP tool namespaces — what an ARTIFICIAL intelligence can reach. */
+  readonly machine: number
+  /**
+   * Namespaces a human can REACH. Equals `machine` whenever a surface cites `*` — the
+   * mcp-playground does, so access is symmetric and the asymmetry is elsewhere.
+   */
+  readonly humanReachable: number
+  /**
+   * Live namespaces with no DEDICATED surface — reachable through the playground, explained
+   * nowhere. Reachable is not the same as taught, which is the whole gap the thesis lives in.
+   */
+  readonly withoutDedicatedSurface: readonly string[]
+  /** UI surfaces citing a namespace with no live tool — a page that cannot work. */
+  readonly broken: readonly string[]
+}
+
+/**
+ * The training surface, both ways. See ./SKILL.md § training surface.
+ *
+ * The thesis this measures: the proof-of-concept and the work formulas, present in MCP **and** UI,
+ * are enough to train any intelligence — artificial or not. It is checkable, because both surfaces
+ * are enumerable.
+ *
+ * And the measurement refines the thesis rather than confirming it. ACCESS is already symmetric:
+ * `mcp-playground` cites `*`, so a human reaches all 47 namespaces exactly as an agent does. What is
+ * asymmetric is AFFORDANCE — 34 of the 47 have no dedicated surface, so they are reachable and
+ * explained nowhere. Reachable is not taught, and that distinction is where the thesis has work left.
+ *
+ * @invariant no UI surface cites a namespace with no live tool — asserted in ./test.ts
+ * @invariant every declared surface names at least one tool — asserted in ./test.ts
+ */
+export async function trainingSurface(): Promise<TrainingSurface> {
+  const [{ buildErpaxMcpTools }, { agentRegistry }] = await Promise.all([
+    import('@/agents/mcp'),
+    import('@/agent'),
+  ])
+  const nsOf = (name: string) => name.split('.').slice(0, 2).join('.')
+  const live = new Set(buildErpaxMcpTools(agentRegistry).map((t) => nsOf(t.name)))
+  const cited = new Set<string>()
+  let wildcard = false
+  for (const s of SHADCN_SURFACE_MAP) {
+    for (const t of s.mcpTools) {
+      if (t === '*') wildcard = true
+      else cited.add(nsOf(t))
+    }
+  }
+  return {
+    machine: live.size,
+    humanReachable: wildcard ? live.size : cited.size,
+    withoutDedicatedSurface: [...live].filter((n) => !cited.has(n)).sort(),
+    broken: [...cited].filter((n) => !live.has(n)).sort(),
+  }
+}

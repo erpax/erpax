@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { messageUuid } from '@/quantum/chat/merkle'
 import { mkdtempSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -11,7 +12,10 @@ import {
   score,
   surpriseBits,
   undecided,
+  crossStream,
+  crossCandidate,
   type Conjecture,
+  type Intersection,
 } from '@/conjecture'
 import { refute } from '@/think'
 import { algebraLog2, exactMax } from '@/algebra'
@@ -197,5 +201,47 @@ describe('conjecture — the measured cross inverts the prose ranking', () => {
   it('and a law meeting nothing is named — its crosses are provably empty', async () => {
     const { orthogonalLaws } = await import('@/conjecture')
     expect(orthogonalLaws(sets)).toEqual(['concentration'])
+  })
+})
+
+describe('crossStream — the proven crosses, streamed without a human', () => {
+  const sets = (o: Record<string, string[]>) => new Map(Object.entries(o).map(([k, v]) => [k, new Set(v)]))
+
+  it('a cross with an EMPTY intersection is never streamed — prose ranking is not evidence', () => {
+    // `crosses` ranks absence in PROSE and this corpus refuted it by measuring: its top three picks
+    // came back empty. The stream rides the MEASURED overlap, so an empty pair cannot enter it.
+    const s = crossStream(sets({ a: ['f1'], b: ['f2'], c: ['f1'] }), [])
+    expect(s.proven.map((i: Intersection) => `${i.a}×${i.b}`)).toEqual(['a×c'])
+    expect(s.proven.every((i: Intersection) => i.shared > 0)).toBe(true)
+  })
+
+  it('nothing drawn ⇒ covered 0, and next is the MOST-SHARED cross', () => {
+    const s = crossStream(sets({ a: ['f1', 'f2', 'f3'], b: ['f1', 'f2', 'f3'], c: ['f1'] }), [])
+    expect(s.covered).toBe(0)
+    expect(s.next).toBe(crossCandidate(s.proven[0]!))
+    expect(s.proven[0]!.shared).toBeGreaterThanOrEqual(s.proven[s.proven.length - 1]!.shared)
+  })
+
+  it('drawing one advances the stream past it', () => {
+    const s0 = crossStream(sets({ a: ['f1', 'f2'], b: ['f1', 'f2'], c: ['f1'] }), [])
+    const first = s0.next!
+    const s1 = crossStream(sets({ a: ['f1', 'f2'], b: ['f1', 'f2'], c: ['f1'] }), [messageUuid(first)])
+    expect(s1.next).not.toBe(first)
+    expect(s1.outstanding).toBe(s0.outstanding - 1)
+  })
+
+  it('all drawn ⇒ covered 1 and next undefined — the proven space is exhausted', () => {
+    const m = sets({ a: ['f1'], b: ['f1'] })
+    const s = crossStream(m, crossStream(m, []).proven.map(crossCandidate).map(messageUuid))
+    expect(s.covered).toBe(1)
+    expect(s.next).toBeUndefined()
+    expect(s.outstanding).toBe(0)
+  })
+
+  it('no proven crosses ⇒ covered 1 by definition, and nothing to draw', () => {
+    const s = crossStream(sets({ a: ['f1'], b: ['f2'] }), [])
+    expect(s.proven).toEqual([])
+    expect(s.covered).toBe(1)
+    expect(s.next).toBeUndefined()
   })
 })

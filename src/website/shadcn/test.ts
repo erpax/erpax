@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { SHADCN_SURFACE_MAP, shadcnSurfaceFor, allRequiredShadcnComponents } from './index'
+import { SHADCN_SURFACE_MAP, shadcnSurfaceFor, allRequiredShadcnComponents, trainingSurface } from './index'
 
 describe('website/shadcn — the widget vocabulary a surface composes from', () => {
   it('every declared surface resolves, and resolving is total over the map', () => {
@@ -43,5 +43,31 @@ describe('website/shadcn — the widget vocabulary a surface composes from', () 
       expect(e.schemaOrgType).toMatch(/^[A-Z][A-Za-z]+$/)
       expect(e.description.length).toBeGreaterThan(20)
     }
+  })
+})
+
+describe('trainingSurface — MCP and UI as one training surface, measured both ways', () => {
+  it('no UI surface cites a namespace with no live tool — a page that cannot work', async () => {
+    const t = await trainingSurface()
+    expect(t.broken).toEqual([])
+  })
+
+  it('ACCESS is symmetric because one surface cites `*` — reachable is not the gap', async () => {
+    const t = await trainingSurface()
+    expect(t.machine).toBeGreaterThan(40)
+    expect(t.humanReachable).toBe(t.machine)
+  })
+
+  it('AFFORDANCE is not symmetric — most namespaces have no dedicated surface', async () => {
+    // reachable through the playground, explained nowhere. Reachable is not taught, and this
+    // number is the distance between the thesis and the tree.
+    const t = await trainingSurface()
+    expect(t.withoutDedicatedSurface.length).toBeGreaterThan(0)
+    expect(t.withoutDedicatedSurface.length).toBeLessThan(t.machine)
+    for (const n of t.withoutDedicatedSurface) expect(n.startsWith('erpax.')).toBe(true)
+  })
+
+  it('every declared surface names at least one tool, or it teaches nothing', () => {
+    for (const s of SHADCN_SURFACE_MAP) expect(s.mcpTools.length).toBeGreaterThan(0)
   })
 })

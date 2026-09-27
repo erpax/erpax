@@ -6,6 +6,8 @@
  * @see ./SKILL.md — ../think — ../rules/refutable
  */
 import { readFileSync, existsSync, readdirSync } from 'node:fs'
+import { coverage, nextAsk } from '@/quantum/chat/coverage'
+import { messageUuid } from '@/quantum/chat/merkle'
 import { join } from 'node:path'
 import { algebraLog2, exactMax } from '@/algebra'
 import { alreadyRefuted } from '@/think'
@@ -270,4 +272,49 @@ export function orthogonalLaws(sets: ReadonlyMap<string, ReadonlySet<string>>): 
   return [...sets.keys()]
     .filter((law) => containment(sets).filter((c) => c.law === law || c.inside === law).every((c) => c.share === 0))
     .sort()
+}
+
+/** A measured cross, as a candidate the stream can advance past. See ./SKILL.md § streams. */
+export const crossCandidate = (i: Intersection): string =>
+  `${i.a} × ${i.b}: ${i.shared} shared file(s)`
+
+export interface CrossStream {
+  /** Measured crosses with a non-empty intersection, most-shared first. */
+  readonly proven: readonly Intersection[]
+  /** Fraction of proven crosses already drawn. */
+  readonly covered: number
+  /** The next proven cross nothing has drawn, or undefined when every one is drawn. */
+  readonly next: string | undefined
+  readonly outstanding: number
+}
+
+/**
+ * The proven crosses as a STREAM, fused to the ask. See ./SKILL.md § streams.
+ *
+ * Three resistances removed, and none of them needed new logic. Nothing fed the measured crosses to
+ * anything — `next` was generic over a caller-supplied list. Nothing recorded which had been DRAWN,
+ * so a ranking returned the same pair forever. And nothing scheduled it.
+ *
+ * It rides `crossIntersections` — the MEASURED overlap — never `crosses`, whose prose ranking this
+ * corpus refuted by measuring it: its top three picks each came back empty. `coverage` and `nextAsk`
+ * are [[quantum]]/chat's, unchanged.
+ *
+ * @invariant a cross with an empty intersection is never streamed — asserted in ./test.ts
+ * @invariant nothing drawn ⇒ covered = 0 and next is the most-shared cross — asserted in ./test.ts
+ * @invariant all drawn ⇒ covered = 1 and next is undefined — asserted in ./test.ts
+ * @invariant no proven crosses ⇒ covered = 1 by definition — asserted in ./test.ts
+ */
+export function crossStream(sets: ReadonlyMap<string, ReadonlySet<string>>, drawn: readonly string[]): CrossStream {
+  const proven = crossIntersections(sets)
+    .filter((i) => i.shared > 0)
+    .sort((x, y) => y.shared - x.shared || x.a.localeCompare(y.a))
+  const candidates = proven.map(crossCandidate)
+  return {
+    proven,
+    covered: coverage(drawn, candidates),
+    next: nextAsk(drawn, candidates),
+    // the coverage KEY is the candidate's uuid, which is what `coverage` and `nextAsk` compare —
+    // counting raw text here made `outstanding` disagree with `covered` on the same input
+    outstanding: candidates.filter((c) => !drawn.includes(messageUuid(c))).length,
+  }
 }
