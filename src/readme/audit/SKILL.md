@@ -1,3 +1,38 @@
+---
+name: audit
+description: "Use when reasoning about audit — The root README carries a header saying *do not edit by hand, drift fails closed*."
+atomPath: "readme/audit"
+coordinate: "readme/audit · 5/round · 563f12f0"
+contentUuid: "efbc35f7-d357-5169-9795-2715cbd11be3"
+diamondUuid: "ebe38c5f-5178-8701-849f-11cb8ff09d50"
+uuid: "563f12f0-31ca-842f-ad54-b5ca94916560"
+horo: 5
+typography:
+  partition: readme
+  bondDegree: 138
+standards:
+  - "ISO 19011:2018 §6.4 — audit evidence: a restated figure must agree with its source"
+  - "ISO/IEC 25010:2023 §5.6 — maintainability: a copied answer is a second source of truth"
+bindings: []
+signatures:
+  computationUuid: "cf254d0e-c764-8d98-a2bf-29e48cb1a13d"
+  stages:
+    - stage: path
+      stageUuid: "7bb8ccd2-71fd-89d2-af7e-2c7021ba7691"
+    - stage: trinity
+      stageUuid: "0d760134-8010-8d68-992e-7dee30d367c9"
+    - stage: boundary
+      stageUuid: "1e99eb89-2c3d-89f0-8b8c-b3eff858dbd1"
+    - stage: links
+      stageUuid: "6953933d-0b53-8cc9-b143-c0e3f4526cd0"
+    - stage: horo
+      stageUuid: "c95aa301-a2f1-8598-98e3-c7098d0bc09a"
+    - stage: seal
+      stageUuid: "cff425f6-61cc-8a0c-b8c3-782d1d2f9ce1"
+    - stage: uuid
+      stageUuid: "1611c341-470f-826e-a3cd-3f9a694f61fc"
+version: 2
+---
 # readme/audit — the README is generated, so its redundancy is a bug in the generator
 
 The root README carries a header saying *do not edit by hand, drift fails closed*. It was stale

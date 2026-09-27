@@ -70672,6 +70672,53 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "audit",
+    "path": "readme/audit",
+    "translations": [
+      {
+        "key": "name",
+        "source": "audit",
+        "uuid": "9fb85524-fadc-8dae-b23e-69de422c4e54",
+        "words": [
+          "audit"
+        ],
+        "values": {
+          "en": "audit"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about audit — The root README carries a header saying *do not edit by hand, drift fails closed*.",
+        "uuid": "5319a336-be20-8f9a-8ca5-ed34b4082009",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "audit",
+          "the",
+          "root",
+          "readme",
+          "carries",
+          "a",
+          "header",
+          "saying",
+          "do",
+          "not",
+          "edit",
+          "by",
+          "hand",
+          "drift",
+          "fails",
+          "closed"
+        ],
+        "values": {
+          "en": "Use when reasoning about audit — The root README carries a header saying *do not edit by hand, drift fails closed*."
+        }
+      }
+    ]
+  },
+  {
     "atom": "orientation",
     "path": "readme/orientation",
     "translations": [
@@ -211838,4 +211885,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3622
+export const TRANSLATIONS_COUNT = 3623

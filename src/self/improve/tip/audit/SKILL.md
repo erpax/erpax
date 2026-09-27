@@ -3,13 +3,13 @@ name: audit
 description: "Use when asking what is actually blocking — the feed scan that finds real gaps and ranks them by unblock / (cost × risk), reading only the NAMES of secrets, never their values."
 atomPath: "self/improve/tip/audit"
 coordinate: "self/improve/tip/audit · 7/descent · 4cfdcd90"
-contentUuid: "3a12c3a4-a1e6-5da4-a405-c5bcf72daeeb"
+contentUuid: "498cbd66-7bcb-5d12-8697-71ffce071814"
 diamondUuid: "7a3f0f84-a7cf-8914-835c-be30dc3c5420"
 uuid: "4cfdcd90-1d0b-8de8-b5ed-d4e58e9c35fd"
 horo: 7
 typography:
   partition: self
-  bondDegree: 134
+  bondDegree: 138
 standards: []
 bindings: []
 signatures:

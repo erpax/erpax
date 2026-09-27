@@ -6833,6 +6833,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "readme"
   },
   {
+    "atom": "audit",
+    "name": "audit",
+    "description": "Use when reasoning about audit — The root README carries a header saying *do not edit by hand, drift fails closed*.",
+    "path": "readme/audit"
+  },
+  {
     "atom": "orientation",
     "name": "orientation",
     "description": "Use when judging whether a front page ORIENTS a reader or only counts itself — eight criteria derived from a working sibling portal (identity in the first screen, a first runnable command, a census, the sequence, its inversion, a usable quantum invocation, the open-problem position, and stated limits), each citing the feature it came from so the bar can be argued with rather than taken on taste; the score is computed from the text and assertOrients is a ratchet run upward, so a front page may not orient less than it does today.",
