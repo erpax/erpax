@@ -12435,7 +12435,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax as ONE organism — the eight organs harmonized into a body. Each organ is sent through the wave mechanism; its horo position sounds a note and a colour (A432); composed, the organs span the full diatonic spectrum and rest at unity (the closing wave). The body harmonizes ⟺ every organ healthy ⊕ full-spectrum chord ⊕ folds to unity — wholeness renders as harmony, a failing organ as dissonance.",
-        "uuid": "a647a194-3dc1-8853-b4c1-bee513fa4fc3",
+        "uuid": "825c87ed-9fa8-88be-8edc-b9100680443b",
         "words": [
           "use",
           "when",
@@ -87788,7 +87788,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling a span of worked time — the per-actor-day labour unit a work order's produced minutes roll up into, and the authority it reads efficiency and wage back down from. The singular of the work-shifts aggregate.",
-        "uuid": "575ef154-3f7d-83f8-ad2e-3d10f46ece63",
+        "uuid": "7197264e-2180-8968-a4b1-0aba53e84e9a",
         "words": [
           "use",
           "when",
@@ -93960,7 +93960,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a date-range or period begins — contract start date, employment start date, fiscal period start, promotion period start. Pairs with end (or duration, or another date atom) to define a temporal span. ISO-8601 datetime.",
-        "uuid": "6ac03148-ec67-8deb-b0b6-62102873e017",
+        "uuid": "60735e55-36a9-8ee3-a894-be28b45434b4",
         "words": [
           "use",
           "when",
@@ -111173,6 +111173,67 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about lock — is the hook wired into every GL-posting collection: it reads the document's posting date, finds the fiscal period containing it, and throws when that period's status is ."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "span",
+    "path": "utility/span",
+    "translations": [
+      {
+        "key": "name",
+        "source": "span",
+        "uuid": "ba917aab-1917-811a-8384-430f901022c5",
+        "words": [
+          "span"
+        ],
+        "values": {
+          "en": "span"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about span — The calendar day stood at **twenty-four addresses in four notations** — (22 sites), a local in , a bare in the ISO-week calculation, and reversed in — while called itself the…",
+        "uuid": "b05629c4-24c0-833c-af18-287335cd3d5e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "span",
+          "the",
+          "calendar",
+          "day",
+          "stood",
+          "at",
+          "twenty",
+          "four",
+          "addresses",
+          "in",
+          "four",
+          "notations",
+          "sites",
+          "a",
+          "local",
+          "in",
+          "a",
+          "bare",
+          "in",
+          "the",
+          "iso",
+          "week",
+          "calculation",
+          "and",
+          "reversed",
+          "in",
+          "while",
+          "called",
+          "itself",
+          "the"
+        ],
+        "values": {
+          "en": "Use when reasoning about span — The calendar day stood at **twenty-four addresses in four notations** — (22 sites), a local in , a bare in the ISO-week calculation, and reversed in — while called itself the…"
         }
       }
     ]
@@ -211948,4 +212009,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3624
+export const TRANSLATIONS_COUNT = 3625

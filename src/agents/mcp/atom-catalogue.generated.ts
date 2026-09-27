@@ -10841,6 +10841,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "utility/period/lock"
   },
   {
+    "atom": "span",
+    "name": "span",
+    "description": "Use when reasoning about span — The calendar day stood at **twenty-four addresses in four notations** — (22 sites), a local in , a bare in the ISO-week calculation, and reversed in — while called itself the…",
+    "path": "utility/span"
+  },
+  {
     "atom": "utterance",
     "name": "utterance",
     "description": "Use when modelling one utterance — the singular model of the utterances collection (the plural store); one spoken or written input in a conversation.",

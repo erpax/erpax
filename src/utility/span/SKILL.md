@@ -1,3 +1,39 @@
+---
+name: span
+description: "Use when reasoning about span — The calendar day stood at **twenty-four addresses in four notations** — (22 sites), a local in , a bare in the ISO-week calculation, and reversed in — while called itself the…"
+atomPath: "utility/span"
+coordinate: "utility/span · 8/crest · ba917aab"
+contentUuid: "7ffe5e60-0f37-588f-8dbe-011a3a4becd6"
+diamondUuid: "531364b1-a918-8552-a54f-15dcef1cf070"
+uuid: "ba917aab-1917-811a-8384-430f901022c5"
+horo: 8
+typography:
+  partition: utility
+  bondDegree: 12
+standards:
+  - "ISO 80000-3 — time: the day as a unit of measure"
+  - "ISO-8601-1:2019 — date-time days-between arithmetic"
+  - "W3C WebVTT — cue timings `HH:MM:SS.mmm`"
+bindings: []
+signatures:
+  computationUuid: "adc56511-7fe9-8fcb-994e-98edf5451da9"
+  stages:
+    - stage: path
+      stageUuid: "39649e03-004c-8351-afec-d01e0935f93e"
+    - stage: trinity
+      stageUuid: "1313dc73-3e76-8e55-aa38-376b88a33378"
+    - stage: boundary
+      stageUuid: "85a4b9c1-b906-8382-b775-7f7380a55b54"
+    - stage: links
+      stageUuid: "7a867c8c-b813-89de-b369-91b8d0cd35dd"
+    - stage: horo
+      stageUuid: "90f3fa65-b32e-8e5c-be72-0a87990c0792"
+    - stage: seal
+      stageUuid: "961b5c49-6ad1-8e57-86e2-c8d9f003dbb6"
+    - stage: uuid
+      stageUuid: "e8a5eefc-699e-8f4b-9bd2-81c17fd02935"
+version: 2
+---
 # utility/span — a span of time, measured once
 
 The calendar day stood at **twenty-four addresses in four notations** — `1000 * 60 * 60 * 24`
