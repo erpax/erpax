@@ -2353,6 +2353,8 @@ src/query/fingerprint/index.ts:59: * @standard NIST FIPS 180-4 SHA-256
 src/query/fingerprint/test.ts:18: * @standard ISO/IEC 9075-2 SQL/Foundation keyword inventory
 src/query/fingerprint/test.ts:19: * @standard RFC 8785 JSON Canonicalization Scheme (params)
 src/readings/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
+src/readme/audit/index.ts:7: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: a copied answer is a second source of truth
+src/readme/audit/index.ts:8: * @standard ISO 19011:2018 §6.4 — audit evidence: a restated figure must agree with its source
 src/readme/index.ts:12: * @standard RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)
 src/readme/test.ts:536: * @standard RFC 9562
 src/realtime/index.ts:10: * @standard append-only log + cursor (the pull-based realtime model)

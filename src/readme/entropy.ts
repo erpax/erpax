@@ -517,7 +517,7 @@ export function renderCorpusEntropySection(
     '## corpus entropy',
     '',
     `- gap \`${rollup.totalGapEb}\` eb · seal \`${rollup.totalSealEb}\` eb · net \`${rollup.netEntropyEb}\` eb · ratio \`${rollup.sealGapRatio}\``,
-    `- sealed \`${rollup.sealedMass}\` · unsealed \`${rollup.unsealedMass}\``,
+
     '',
   ]
   if (!opts.skipProof) {

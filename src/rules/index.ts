@@ -26,6 +26,7 @@ import { unbackedFigures } from '@/render/scene'
 import { rootCollisions, undeclaredRoots } from '@/merge/order'
 import { uncitedPages } from '@/algebra'
 import { staleSizeClaims } from '@/rules/drift'
+import { readmeRedundancy, readmeSeo } from '@/readme/audit'
 import { replaceableStandards } from '@/proof/replaceable'
 import { atomListingGaps } from '@/publish/complete'
 import { claimBalance, totalSlack } from '@/rules/slack'
@@ -288,6 +289,23 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // ([[rules]]/command). Baseline 0 is a THEOREM: a step that cannot run reports the same green
     // as a step that passed. The confirm hook spawned a moved file and failed open on every edit.
     guardian({ axis: 'command', violations: deadCommands(cwd).length, baseline: 0 }),
+    // readme-redundancy — a GENERATED list restating itself ([[readme]]/audit). Baseline 0 is a
+    // THEOREM: a list ranked by a measure has no reason to name one thing twice, and a generator has
+    // no reason to print one fragment N times to say it once. Both shapes were live in the root
+    // README — the horo ring printed `whole` twice because the ranking keyed on a leaf that 13
+    // atoms share, and `## payload` printed one version string twenty times. Free prose is NOT
+    // judged: hunting repeated fragments there returned six findings and all six were lawful.
+    guardian({ axis: 'readme-redundancy', violations: readmeRedundancy(cwd).length, baseline: 0 }),
+    // readme-seo — the README audited by the SITE's own `deriveSeoMeta`/`auditSeo` ([[readme]]/audit).
+    // One derivation, two faces: improving it moves the README and the generated pages together, and
+    // a second SEO derivation for the README would be one truth at two addresses. MAJOR only —
+    // `auditSeo` calls a short description minor because it costs click-through, not indexing, and a
+    // gate that blocks a push over a truncated SERP title is one that gets bypassed.
+    guardian({
+      axis: 'readme-seo',
+      violations: readmeSeo(cwd).issues.filter((i) => i.severity === 'major').length,
+      baseline: 0,
+    }),
     // probe — a test for a twinned filename that never names the twin ([[rules]]/probe). Four gates
     // carried this at once: 6 atoms flagged for a barrel's spelling, 29 never judged at all, and
     // every React atom recorded as having no code. The exemption was then narrowed from the FILE to
