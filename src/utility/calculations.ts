@@ -209,12 +209,6 @@ const MS_PER_SECOND = MS_PER_MINUTE / 60;
 /** A millisecond span as fractional hours — rounding belongs to the caller, at the end. */
 export const hoursFromMs = (ms: number): number => ms / MS_PER_HOUR;
 
-/** A millisecond span as fractional minutes. */
-export const minutesFromMs = (ms: number): number => ms / MS_PER_MINUTE;
-
-/** Whole hours as milliseconds — the inverse of {@link hoursFromMs}. */
-export const msFromHours = (hours: number): number => hours * MS_PER_HOUR;
-
 /** Whole minutes as milliseconds — the inverse of {@link minutesFromMs}. */
 export const msFromMinutes = (minutes: number): number => minutes * MS_PER_MINUTE;
 
@@ -302,18 +296,14 @@ export const addDays = (date: Date | string, days: number): Date =>
 /**
  * Whole days between two instants regardless of order — the distance, never signed.
  *
- * This cannot be composed from {@link daysBetween}: `exactFloor(exactAbs(ms))` and
- * `exactAbs(exactFloor(ms))` disagree for any negative partial day (−0.5 day gives 0 and 1), so a
- * caller reaching for `exactAbs(daysBetween(a, b))` would get a different tolerance than
- * `bank/reconciliation` has always used. The absolute value belongs INSIDE the floor, which is why
- * this is its own name rather than a wrapper.
+ * The order of `abs` and `floor` matters: `exactAbs(daysBetween(a, b))` is NOT this, because
+ * flooring first has already rounded away from zero for a negative span (−0.5 day gives 1, not 0).
+ * It composes from {@link daysExact} — `exactFloor(exactAbs(daysExact(a, b)))` — so this name exists
+ * for its two callers rather than because the composition is impossible; an earlier draft of this
+ * comment claimed the latter and was wrong.
  */
 export const daysApart = (a: Date | string, b: Date | string): number =>
   exactFloor(exactAbs(msBetween(a, b)) / MS_PER_DAY);
-
-/** Whole days left until a deadline, floored at zero — a passed deadline has none remaining. */
-export const daysRemaining = (deadline: Date | string, asOfDate: Date | string = new Date()): number =>
-  exactMax(0, daysBetweenCeil(asOfDate, deadline));
 
 /** Days remaining until a date — the signed complement of {@link daysOverdue}. */
 export const daysUntil = (dueDate: Date | string, asOfDate: Date | string = new Date()): number =>

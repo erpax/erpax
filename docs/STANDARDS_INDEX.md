@@ -3043,7 +3043,7 @@ src/utility/bank-reconciliation-report.test.ts:23: * @standard ISO/IEC-29119:202
 src/utility/bank-reconciliation-report.test.ts:24: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/utility/calculations.ts:177: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
 src/utility/calculations.ts:195: * @standard ISO 80000-3 — time, the day as a unit
-src/utility/calculations.ts:228: * @standard W3C WebVTT — cue timings `HH:MM:SS.mmm`
+src/utility/calculations.ts:222: * @standard W3C WebVTT — cue timings `HH:MM:SS.mmm`
 src/utility/depreciation-methods.test.ts:12: * @standard ISO/IEC-29119:2022 software-testing
 src/utility/depreciation-methods.test.ts:13: * @standard ISO-4217:2015 currency-codes
 src/utility/period/lock/index.ts:4: * @standard ISO-8601-1:2019 date-time utc-canonical-form

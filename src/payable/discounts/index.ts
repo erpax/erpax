@@ -1,6 +1,6 @@
 /** @index-cross.foldback child=payable/discounts parent=payable — this cross folds back into its parent. */
-import { algebraFloatPow, exactRound } from '@/algebra'
-import { daysRemaining } from '@/utility'
+import { algebraFloatPow, exactMax, exactRound } from '@/algebra'
+import { daysUntil } from '@/utility'
 /**
  * Early Payment Discount Calculator — vendor discount programs.
  *
@@ -57,7 +57,7 @@ export class EarlyPaymentDiscountCalculator {
    * Calculate days remaining to claim discount
    */
   private static calculateDaysTillDiscount(discountDeadline: Date, asOfDate: Date): number {
-    return daysRemaining(discountDeadline, asOfDate)
+    return exactMax(0, daysUntil(discountDeadline, asOfDate))
   }
 
   /**

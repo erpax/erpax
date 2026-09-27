@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { exactAbs } from '@/algebra'
+import { exactAbs, exactFloor, exactMax } from '@/algebra'
 import {
   calculateRatio,
   calculatePercentage,
@@ -19,12 +19,9 @@ import {
   daysApart,
   daysExact,
   daysOverdue,
-  daysRemaining,
   daysUntil,
   addDays,
   hoursFromMs,
-  minutesFromMs,
-  msFromHours,
   msFromMinutes,
   formatClock,
   parseClock,
@@ -134,9 +131,10 @@ describe('utility — one day, and the roundings that travel with it', () => {
     const later = new Date('2026-01-11T00:00:00.000Z')
     expect(daysOverdue(t0, later)).toBe(10)
     expect(daysOverdue(later, t0)).toBe(0) // not yet due is zero overdue, never minus ten
-    expect(daysRemaining(later, t0)).toBe(10)
-    expect(daysRemaining(t0, later)).toBe(0)
     expect(daysUntil(later, t0)).toBe(10)
+    // "days remaining" is this floored at zero, written at the one site that wants it rather than
+    // carried as a second name for the same arithmetic.
+    expect(exactMax(0, daysUntil(t0, later))).toBe(0)
   })
 
   it('addDays is the inverse of a difference, through the same one divisor', () => {
@@ -145,10 +143,16 @@ describe('utility — one day, and the roundings that travel with it', () => {
   })
 
   it('the smaller units are DERIVED, so one literal seeds the family', () => {
-    expect(msFromHours(24)).toBe(msFromMinutes(24 * 60))
-    expect(hoursFromMs(msFromHours(3))).toBe(3)
-    expect(minutesFromMs(msFromMinutes(90))).toBe(90)
+    expect(msFromMinutes(60)).toBe(msFromMinutes(1) * 60)
     expect(hoursFromMs(msFromMinutes(90))).toBe(1.5) // fractional on purpose
+    expect(hoursFromMs(msFromMinutes(24 * 60))).toBe(24)
+  })
+
+  it('daysApart COMPOSES from daysExact — the order of abs and floor is the whole point', () => {
+    const back = new Date('2025-12-31T12:00:00.000Z')
+    expect(exactFloor(exactAbs(daysExact(t0, back)))).toBe(daysApart(t0, back))
+    // and flooring first does not: that is what makes the composition order load-bearing
+    expect(exactAbs(daysBetween(t0, back))).not.toBe(daysApart(t0, back))
   })
 })
 

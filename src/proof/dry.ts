@@ -40,7 +40,7 @@
  */
 
 import { computeContentUuid } from '@/integrity'
-import { hoursFromMs, msFromHours } from '@/utility'
+import { hoursFromMs } from '@/utility'
 import { registerFace, listFaces, type SeoVortexFace } from '@/website'
 import { runAllInvariants, type InvariantContext, type InvariantSuiteResult } from '@/architecture/invariant'
 import { selfTestAll, type SelfTestSuite } from '@/agents/mcp'
@@ -356,7 +356,7 @@ export function checkDryProofPublished(origin: string): DryProofPublishedResult 
     return { ok: false, reasons: ['no proof bundle published — call publishDryProofBundle()'] }
   }
   const ageMs = Date.now() - new Date(bundle.generatedAt).getTime()
-  if (ageMs > msFromHours(MAX_PROOF_AGE_HOURS)) {
+  if (hoursFromMs(ageMs) > MAX_PROOF_AGE_HOURS) {
     reasons.push(`proof stale: ${hoursFromMs(ageMs).toFixed(1)}h > ${MAX_PROOF_AGE_HOURS}h`)
   }
   // Recompute the content-uuid and verify (Law 8 echo).
