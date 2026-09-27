@@ -803,10 +803,10 @@ src/conservation/index.ts:13: * @standard Noether's theorem (E. Noether, 1918) �
 src/conservation/index.ts:14: * @standard First Law of Thermodynamics — energy is conserved in an isolated system
 src/conservation/index.ts:15: * @standard Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit
 src/consistency/apply/index.ts:21: * @standard ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path
-src/consistency/apply/index.ts:355: * @standard ISO/IEC-29119:2022 software-testing system-test-level
-src/consistency/apply/index.ts:417: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
-src/consistency/apply/index.ts:418: * @standard WCAG-2.1-AA contrast text-spacing
-src/consistency/apply/index.ts:524: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/consistency/apply/index.ts:390: * @standard ISO/IEC-29119:2022 software-testing system-test-level
+src/consistency/apply/index.ts:452: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/consistency/apply/index.ts:453: * @standard WCAG-2.1-AA contrast text-spacing
+src/consistency/apply/index.ts:559: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/consistency/apply/loop.test.ts:19: * @standard ISO/IEC 25010:2023 §5.5 testability — round-trip the agent loop
 src/consolidation/eliminations/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/consolidation/eliminations/index.ts:13: * @standard ISO-8601-1:2019 date-time consolidation-date
@@ -5710,9 +5710,9 @@ src/consciousness/index.ts:19: * @audit computed from the live matrix, never han
 src/consent/records/index.ts:13: * @audit ISO-19011:2018 audit-trail consent-evidence
 src/conservation/index.ts:16: * @audit computed, never hand-asserted
 src/consistency/apply/index.ts:20: * @audit ISO 19011:2018 §6.4.6 — applied-by-mcp transformations audited
-src/consistency/apply/index.ts:356: * @audit ISO-19011:2018 audit-trail visual-evidence ux-gap-finding
-src/consistency/apply/index.ts:419: * @audit ISO 9241-210:2019 human-centred-design
-src/consistency/apply/index.ts:525: * @audit Slice PPPPPPPP-cont CREATE_GAP emergence
+src/consistency/apply/index.ts:391: * @audit ISO-19011:2018 audit-trail visual-evidence ux-gap-finding
+src/consistency/apply/index.ts:454: * @audit ISO 9241-210:2019 human-centred-design
+src/consistency/apply/index.ts:560: * @audit Slice PPPPPPPP-cont CREATE_GAP emergence
 src/consistency/apply/loop.test.ts:20: * @audit ISO 19011:2018 §6.4.6 — synthetic drift + recovery audit-trailable
 src/consolidation/eliminations/index.ts:18: * @audit ISO-19011:2018 audit-trail consolidation-evidence
 src/convention/fresh/index.ts:27: * @audit imports + existence scanned LIVE from src/scripts/.vitepress; coverage never hand-asserted

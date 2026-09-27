@@ -13,7 +13,7 @@
  */
 import { mirroredAssertions } from '@/rules/mirror'
 import { forgedIdentifiers } from '@/rules/forge'
-import { deadCommands } from '@/rules/command'
+import { deadCommands, deadLoaderPaths } from '@/rules/command'
 import { blindProbes } from '@/rules/probe'
 import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
@@ -290,6 +290,15 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // ([[rules]]/command). Baseline 0 is a THEOREM: a step that cannot run reports the same green
     // as a step that passed. The confirm hook spawned a moved file and failed open on every edit.
     guardian({ axis: 'command', violations: deadCommands(cwd).length, baseline: 0 }),
+    // loader-path — a `src/…` literal handed to a RUNTIME loader (`require`, `requireFromHere`,
+    // dynamic `import()`) that does not exist ([[rules]]/command, second population). Neither gate
+    // covered it: `command` scopes itself to what CI, the hooks and package.json reach and delegates
+    // a `.ts` module's paths to [[rules]]/reference, which reads PROSE and COMMENTS — so a path in a
+    // string literal was in neither. `consistency/apply` pointed 13 references at the dissolved
+    // `src/services/` tree behind bare `catch {}` blocks, and the live MCP tool answered
+    // `applied: 0, skipped: 0, changes: []` — a clean summary having done nothing. Baseline 0 is a
+    // THEOREM: a loader handed a missing path throws where it runs.
+    guardian({ axis: 'loader-path', violations: deadLoaderPaths(cwd).length, baseline: 0 }),
     // readme-redundancy — a GENERATED list restating itself ([[readme]]/audit). Baseline 0 is a
     // THEOREM: a list ranked by a measure has no reason to name one thing twice, and a generator has
     // no reason to print one fragment N times to say it once. Both shapes were live in the root
