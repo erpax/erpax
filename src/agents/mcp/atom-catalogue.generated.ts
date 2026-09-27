@@ -431,6 +431,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool/float"
   },
   {
+    "atom": "frontier",
+    "name": "frontier",
+    "description": "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store.",
+    "path": "agents/mcp/tool/frontier"
+  },
+  {
     "atom": "kyc",
     "name": "kyc",
     "description": "Use when reasoning about kyc — answers the one question the directive actually asks: **what level of customer due diligence is owed**, given facts someone else established.",

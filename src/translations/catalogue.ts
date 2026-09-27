@@ -4005,6 +4005,63 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "frontier",
+    "path": "agents/mcp/tool/frontier",
+    "translations": [
+      {
+        "key": "name",
+        "source": "frontier",
+        "uuid": "41a65bdb-fef5-8346-a1ef-0b1a9812daef",
+        "words": [
+          "frontier"
+        ],
+        "values": {
+          "en": "frontier"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store.",
+        "uuid": "596b3bd1-d543-8843-8198-1fa7fe231e04",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "frontier",
+          "self",
+          "sufficient",
+          "s",
+          "could",
+          "always",
+          "order",
+          "a",
+          "frontier",
+          "and",
+          "never",
+          "generate",
+          "one",
+          "every",
+          "intent",
+          "had",
+          "to",
+          "be",
+          "typed",
+          "by",
+          "a",
+          "person",
+          "into",
+          "think",
+          "s",
+          "store"
+        ],
+        "values": {
+          "en": "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store."
+        }
+      }
+    ]
+  },
+  {
     "atom": "kyc",
     "path": "agents/mcp/tool/kyc",
     "translations": [
@@ -49810,7 +49867,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-        "uuid": "132cbd95-80fb-8051-87b3-dd2159aeda7a",
+        "uuid": "35773541-5a65-857a-a03b-994cf037fc62",
         "words": [
           "use",
           "when",
@@ -55843,7 +55900,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when constructing a Clay attempt rather than asserting one — the tools between theorem's reduce verdict and duel's door: proposeReduction measures a candidate against the graph WITHOUT editing it, reductionFrontier names the exact links still ungrounded (the fix list reduce only implied), problemFrontiers gives all seven as work items, jointReduction builds the 'solved at once' claim and reports that its frontier is all seven because no reduction between any two is known, and roundFromReduction bridges a FULLY GROUNDED reduction into a duel round — nothing here can set corpusSolves, which stays the literal false.",
-        "uuid": "cc6320e5-8cf3-8a7d-a9a1-92b32a6081d8",
+        "uuid": "47595890-7949-8166-94eb-72b0bb0806ee",
         "words": [
           "use",
           "when",
@@ -212009,4 +212066,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3625
+export const TRANSLATIONS_COUNT = 3626

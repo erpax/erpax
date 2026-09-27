@@ -3,13 +3,13 @@ name: rules
 description: "Use when tightening or auditing erpax gates — the canonical home for folder, diamond, path, seal, import, and accounting-structure law. Aggregates live-tree violations into rulesOf() and fail-closed assertRulesHold(); tightened axes catch hyphen barrel siblings, stray .ts at atom roots, and corpus modules that must nest as one-word child atoms (accounting/coa · accounting/corpus)."
 atomPath: rules
 coordinate: "rules · 7/descent · ace0b1e0"
-contentUuid: "184c4825-1392-5cbb-8648-1bd5fa970e48"
-diamondUuid: "e68c64d8-c821-89a8-ae8c-5d94856ff5e5"
+contentUuid: "c96017f9-ea20-5c44-af2a-41bb651bccb0"
+diamondUuid: "a3aab229-55e9-8d1a-a0f3-19cc4641cfe7"
 uuid: "ace0b1e0-0c56-815e-9e1e-30187a23fc77"
 horo: 7
 typography:
   partition: rules
-  bondDegree: 1033
+  bondDegree: 1036
 standards:
   - "EU-2015/849"
   - "Naredba-N-18"
@@ -19,7 +19,7 @@ standards:
   - ZDDS
 bindings: []
 signatures:
-  computationUuid: "efdab5fb-47bc-8a58-8ff7-9d6749d68eac"
+  computationUuid: "958dbb69-8001-85c5-bf49-fc5bf7a790a6"
   stages:
     - stage: path
       stageUuid: "9795b58c-5336-83a0-a6a4-784ac38778c1"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "bc401bba-d7ab-8ae5-923a-1fc2984727a0"
     - stage: horo
-      stageUuid: "5e419756-d34a-8d9d-9f18-58020b0d797a"
+      stageUuid: "41324fb6-c72e-8be9-96c0-d579a4d324a3"
     - stage: seal
       stageUuid: "34ed9819-ebd5-8ad2-acfe-1cda0e283ada"
     - stage: uuid
-      stageUuid: "48b90506-a539-8357-b76e-41d654e2420a"
+      stageUuid: "3dd92253-8338-8dba-803b-03ef8c06101b"
 version: 2
 ---
 # rules — the tightened erpax gate corpus
