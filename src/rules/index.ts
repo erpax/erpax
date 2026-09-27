@@ -344,8 +344,12 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 64 }),
     // copy — one body at two addresses ([[rules]]/copy). Content-addressed, so same bytes ⇒ same
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
-    // written, which is the argument for a gate over a stated law. Ratchets from 44.
-    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 7 }),
+    // written, which is the argument for a gate over a stated law. Ratchets from 44, then 7 → 3:
+    // three same-file pairs were folded (two sort-and-map bodies in `readme/entropy` and
+    // `readme/compute`, and a filter-group block written three times in `GLAccountFilters`, the
+    // third below the 40-node floor). Ratcheted in the commit that earned it ([[rules]]/slack) —
+    // this baseline is hand-written, which the slack axis does not read, so nothing else would.
+    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 3 }),
     // copy-in-tangle — a duplicated body whose two FILES sit in one strongly connected
     // component ([[rules]]/copy × [[rules]]/cycle, the cross [[conjecture]] ranked second at
     // 1.11 bits). Worse than either alone: inside a tangle the initialisation order of the two
@@ -355,14 +359,15 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // unearned-copy — a body duplicated across files where a site's export has ≤1 caller
     // ([[rules]]/copy × [[rules]]/unfolded). MEASURED, not guessed: conjecture's prose ranking put
     // this pair nowhere near the top while crossIntersections showed 11 shared files, and its own
-    // top pick (concentration × copy) measured exactly 0. Ratchets from 8.
+    // top pick (concentration × copy) measured exactly 0. Ratchets from 8, then 4 → 2 with the
+    // same-file folds above.
     guardian({
       axis: 'unearned-copy',
       violations: (() => {
         const r = unfoldedExports(cwd)
         return unearnedCopies(new Set([...r.dead, ...r.single].map((e) => e.file)), cwd).length
       })(),
-      baseline: 4,
+      baseline: 2,
     }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carried
     // `sorry` or did not compile, under a directory named `verify` that nothing ever ran.

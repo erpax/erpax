@@ -138,11 +138,39 @@ describe('rules/copy — a copy inside one tangle', () => {
     expect(copiesInTangle()).toEqual([])
   }, 300_000)
 
+  /**
+   * Proved on a FIXTURE, because the live population can be emptied by doing the right thing.
+   *
+   * This asserted `sameFile.length > 0` against the live tree — "the readme/compute pair" — and then
+   * that pair, and the two others beside it, were folded. The exclusion still held; the test went
+   * red because the corpus had improved. A test that requires a defect to exist punishes the fix,
+   * so the claim is made where the population is controlled, and the live half states only what
+   * stays true however much is folded.
+   */
   it('a same-FILE duplicate is excluded — a file is trivially its own component', async () => {
     const { copiesInTangle, duplicateBodies } = await import('@/rules/copy')
-    const sameFile = duplicateBodies().filter((g) => new Set(g.sites.map((s) => s.file)).size === 1)
-    expect(sameFile.length).toBeGreaterThan(0) // the readme/compute pair
-    // counting those would make every same-file duplicate a tangle finding — the noise floor
+    // Two ANONYMOUS inner arrows, identical, in one file — the shape both live same-file pairs took
+    // (`readme/entropy` and `readme/compute` each carried one sort-and-map twice). A named
+    // declaration cannot be used here: `addressOf` covers the name, and two `function f` in one file
+    // is a duplicate identifier anyway.
+    const arrow = `(xs: ReadonlyArray<{ a: number; b: number; c: number }>) =>
+  xs.map((r) => ({ a: r.a, b: r.b, c: r.c, sum: r.a + r.b + r.c, ratio: r.a / (r.b + 1) }))
+    .filter((r) => r.sum > 0)
+    .sort((p, q) => p.sum - q.sum || p.ratio - q.ratio)`
+    const root = tree({ 'a/index.ts': `export const first = ${arrow}\nexport const second = ${arrow}\n` })
+    try {
+      // the fixture really does hold duplicated bodies, and every one of them in ONE file …
+      // (more than one group, because the nested arrows duplicate alongside the outer one)
+      const groups = duplicateBodies(root, 20)
+      expect(groups.length).toBeGreaterThan(0)
+      for (const g of groups) expect(new Set(g.sites.map((x) => x.file)).size).toBe(1)
+      // … and the tangle report excludes it, because counting it would make every same-file
+      // duplicate a tangle finding — the noise floor this corpus has paid for four times.
+      expect(copiesInTangle(root, 20)).toEqual([])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+    // Live: whatever survives, a reported group always spans two or more files.
     for (const g of copiesInTangle()) expect(new Set(g.sites.map((s) => s.file)).size).toBeGreaterThan(1)
   }, 300_000)
 })
