@@ -184,9 +184,6 @@ export class InvoiceStatusWorkflow {
     )
   }
 
-  /**
-   * Calculate days overdue
-   */
   static calculateDaysOverdue(dueDate: Date, asOfDate: Date = new Date()): number {
     return daysOverdue(dueDate, asOfDate)
   }
@@ -207,9 +204,6 @@ export class InvoiceStatusWorkflow {
     )
   }
 
-  /**
-   * Calculate invoice age
-   */
   static getInvoiceAge(invoiceDate: Date, asOfDate: Date = new Date()): number {
     return daysBetweenCeil(invoiceDate, asOfDate)
   }

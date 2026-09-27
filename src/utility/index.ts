@@ -7,4 +7,5 @@
  */
 
 export * from './calculations';
+export * from './span';
 export * from './period/lock';

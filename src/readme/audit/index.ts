@@ -58,30 +58,9 @@ const commonSuffix = (xs: readonly string[]): string => {
 /**
  * Redundancy in one rendered markdown document — pure, so the generator is testable without fs.
  *
- * Two shapes, both scoped to a STRUCTURED list — a `·`-joined run of code spans, which is what a
- * generator's `.map().join(' · ')` emits. That scope is the whole reason the number is honest:
- *
- * - **`item`** — the same code span named twice in one list. The live README's horo ring read
- *   ``| 9 | unity | 17 | `identity` · `whole` · … · `whole` |`` because the ranking keyed on the
- *   leaf word and two distinct atoms share one; a real facet lost the slot.
- * - **`echo`** — every item in a list sharing a long prefix or suffix, so the list states that
- *   fragment N times to say it once. `## payload` printed `4.0.0-internal.38b7f1d` twenty times.
- *
- * Three refusals keep this at zero noise, and the first two are false positives this gate produced
- * against the live README before it was narrowed:
- *
- * - **A `·` INSIDE a table cell is not a list.** The digit table reads
- *   ``| 0 | `1` | 0° | `8` | 9 | `1` | C (Do) · 256 Hz | C `#00aeef` |`` — the digit and its own
- *   reverse coincide, and they must. Splitting the line on `·` read two cells as one list and
- *   reported a lawful table as duplication. Cells are split on the pipe FIRST.
- * - **FREE PROSE IS NOT JUDGED.** A first pass hunted the longest fragment repeated anywhere in a
- *   line and returned six findings, all lawful: `VERIFIABLE in polynomial time` beside
- *   `SOLVABLE in polynomial time` IS the statement of P vs NP, `opennextjs-cloudflare build &&
- *   opennextjs-cloudflare preview` is two commands, and `[`url`](url)` is a self-link. Separating
- *   those from a generator printing one clause twice needs a list of exemptions, and four
- *   instruments in this corpus have already been retired for a noise floor above their signal.
- * - **A two-item list cannot echo.** Two entries sharing a suffix is a rhyme, not a restatement;
- *   `echo` needs three, so the finding is about a LIST rather than a pair.
+ * Two shapes (`item`, `echo`), both scoped to a STRUCTURED list — a `·`-joined run of code spans,
+ * which is what a generator's `.map().join(' · ')` emits. That scope, and the three refusals that
+ * keep it at zero noise, are argued in ./SKILL.md § measures · refusals.
  *
  * @invariant a document with no repeated list item and no shared-fragment list returns []
  * @invariant findings carry a 1-indexed line, so a reader can go straight to it
@@ -133,17 +112,8 @@ export function assertReadmeFolded(cwd: string = process.cwd(), ceiling = 0): vo
 }
 
 /**
- * The README's SEO, audited by the SITE's own functions — one derivation, two faces.
- *
- * "The more SEO-optimised the code, the more SEO-optimised the README and the site" is only true
- * when both faces pass through the SAME derivation. `deriveSeoMeta` and `auditSeo` are what every
- * generated site page already uses ([[website]]/marketing), so improving them moves the README and
- * the site together and neither can drift from the other. A second SEO derivation written for the
- * README would be [[rules]]/copy's camouflage: one truth at two addresses, with nobody able to say
- * which of them is maintained.
- *
- * The body is the RENDERED file, so keyword density is measured against what a crawler actually
- * reads — the check the receipt leg cannot make, because the receipt is part of that body.
+ * The README's SEO, audited by the SITE's own `deriveSeoMeta`/`auditSeo` — one derivation, two
+ * faces, so improving it moves both and neither can drift. See ./SKILL.md § consolidated.
  */
 export function readmeSeo(cwd: string = process.cwd()): SeoAudit {
   const p = join(cwd, 'README.md')
@@ -156,15 +126,7 @@ export function readmeSeo(cwd: string = process.cwd()): SeoAudit {
   return auditSeo(meta, body)
 }
 
-/**
- * Fails closed on a MAJOR SEO issue only.
- *
- * `minor` is deliberately not gated: `auditSeo` calls a description under 70 characters and a title
- * over 60 minor because they cost click-through rather than indexing, and a gate that blocks a push
- * over a truncated SERP title is one that gets bypassed. A `major` issue — no keywords derived at
- * all — means the page is not addressable by a crawler, which is the same defect as an atom with no
- * lawful path ([[rules]]/invisible).
- */
+/** Fails closed on a MAJOR SEO issue only — `minor` costs click-through, not indexing. */
 export function assertReadmeSeo(cwd: string = process.cwd()): void {
   const a = readmeSeo(cwd)
   const major = a.issues.filter((i) => i.severity === 'major')

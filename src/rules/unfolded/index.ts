@@ -1,24 +1,11 @@
 /**
  * unfolded — an export with no caller is entropy; with exactly one, it is un-folded.
  *
- * "Single-use code is entropy" sat in the agent laws as PROSE — read every turn by every agent, in every
- * session, while 693 violations lived under it. Nobody disobeyed it; there was nothing to disobey. A
- * sentence is decoration ([[rules]]: a law is obeyed only when a gate blocks its violation).
- *
- * Computed, not asserted: one pass over `src` builds an identifier frequency, then each exported symbol is
- * looked up in it. A barrel (`export * from './x'`) never names the symbol, so re-export cannot inflate a
- * count — only a real reference does.
- *
- * HONEST BOUNDARY — these are CANDIDATES, never a purge list:
- *  - erpax ships as `@erpax/*` packages, so an export may be the PUBLIC face with no in-repo caller.
- *  - a symbol reached dynamically (`obj[name]`) is invisible to a lexical scan.
- *  - `sites === 1` counts a test as a site: an export used only by its own test exists to be tested rather
- *    than used, which is the law's target — but that is a per-case judgement, not a verdict.
- * A blind sweep here would delete the package's public API and call it DRY.
+ * Computed, not asserted: identifier frequency from the GRAMMAR, so a comment, a string and a
+ * re-export clause all name a symbol without using it. CANDIDATES, never a purge list — the
+ * published-package face, dynamic reach and substitute surfaces are argued in ./SKILL.md.
  *
  * @standard ISO/IEC 25010:2023 §5.5 — reusability: a function called once is inlined, deleted, or reused
- *
- * Composes [[rules]] · [[law]].
  */
 import { allFiles, textOf, astOf } from '@/syntax/cache'
 import ts from 'typescript'
@@ -69,22 +56,8 @@ export interface ScannedExport {
 
 /** Every src export with its call-site count and atom — the ONE scan `unfoldedExports` + `deadAtoms` share (DRY). */
 /**
- * Identifier occurrences in one file, counted from the GRAMMAR.
- *
- * This was a text scan, and it counted PROSE as usage. A docstring in this very file explaining why
- * `algebraTan` must not be deleted made `algebraTan` read as called — it left the dead list because
- * it had been written about. Every number this gate has ever reported was therefore a FLOOR: any
- * symbol discussed in any comment anywhere read as reused. Correcting it moved the corpus total from
- * 813 to 1,207.
- *
- * That is the fourth time this corpus has paid for the same class — [[rules]]/prose counted keywords
- * (1,261 → 15), [[rules]]/reference counted string literals (97 → 48), [[rules]]/confine flagged a
- * comment describing the pattern. A comment is data. The parser is the only instrument that knows
- * the difference, and a `ts.Identifier` node cannot occur inside a comment or a string literal.
- *
- * An import or re-export NAMES a symbol without USING it — plumbing, not a call site — so those
- * clauses are skipped whole. Counting them makes a genuine single use (import + one call) look
- * reused, which hides exactly what this gate exists to find.
+ * Identifier occurrences in one file, counted from the GRAMMAR — a `ts.Identifier` cannot occur in a
+ * comment or a string, and an import clause NAMES without using. See ./SKILL.md § prose as usage.
  */
 function identifierFrequency(file: string, text: string): ReadonlyMap<string, number> {
   const freq = new Map<string, number>()
@@ -199,21 +172,8 @@ if (import.meta.url === 'file://' + process.argv[1]) {
 /** @index-cross.foldback child=rules/unfolded parent=rules — this cross folds back into its parent. */
 
 /**
- * A **substitute surface** — an export whose emptiness is its purpose.
- *
- * `@/algebra` exports `algebraTan = (x) => Math.tan(x)` and a dozen siblings, and the `host-math`
- * axis forbids `Math.*` everywhere outside those atoms, at a baseline of 0. So an *uncalled*
- * `algebraTan` is not dead weight: it is the only lawful door to a tangent. Delete it and the next
- * caller either re-adds it or violates the gate that made it necessary — **the completeness of the
- * substitute surface IS the reason it exists.**
- *
- * This is a second exemption beside the published-package face this atom already names, and the face
- * check cannot see it: `src/algebra` ships in no package. It was found by reading six of the 116
- * "unambiguously dead" exports and discovering that all six had to stay.
- *
- * Decidable, and narrow on purpose: the body must be a direct wrapper — a call on, or a property of,
- * a global this corpus forbids elsewhere. A function that merely MENTIONS `Math` somewhere inside a
- * larger body is not a substitute, it is a user, and it earns no exemption.
+ * A **substitute surface** — an export whose emptiness is its purpose, because `host-math` forbids
+ * the global it wraps everywhere else. See ./SKILL.md § substitute surfaces.
  *
  * @invariant a wrapper of a forbidden global is never reported as dead weight
  */

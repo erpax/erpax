@@ -31,10 +31,8 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 import { bankReconciliationService } from '@/bank/reconciliation/service'
 import { journalEntryService } from '@/journal/entry/service'
-import {
-  bucketAgeDays,
-  daysBetween,
-} from './calculations'
+import { bucketAgeDays } from './calculations'
+import { daysBetween } from './span'
 
 const tenant = 'tenant-recon'
 const user = 'user-recon'

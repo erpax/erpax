@@ -170,23 +170,14 @@ export class BillStatusWorkflow {
     }
   }
 
-  /**
-   * Calculate days until due
-   */
   static calculateDaysUntilDue(dueDate: Date, asOfDate: Date = new Date()): number {
     return daysUntil(dueDate, asOfDate)
   }
 
-  /**
-   * Calculate days overdue
-   */
   static calculateDaysOverdue(dueDate: Date, asOfDate: Date = new Date()): number {
     return daysOverdue(dueDate, asOfDate)
   }
 
-  /**
-   * Get bill age (days since bill date)
-   */
   static getBillAge(billDate: Date, asOfDate: Date = new Date()): number {
     return daysBetweenCeil(billDate, asOfDate)
   }

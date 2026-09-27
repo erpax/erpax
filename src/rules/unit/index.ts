@@ -17,15 +17,9 @@ const DECLARED_UNITS: ReadonlyMap<number, string> = new Map([
   [604_800_000, 'week'],
 ])
 
-/**
- * The files allowed to hold the divisor.
- *
- * `utility/calculations.ts` is the one address — it declares `MS_PER_DAY` module-private and exports
- * only day-shaped functions, so no caller ever needs the number. This atom and its proof name the
- * constant to talk about it, which a parser cannot distinguish from using it.
- */
+/** The files allowed to hold the divisor — the one address, plus this atom's own prose about it. */
 const DECLARED_HOME: readonly string[] = [
-  'src/utility/calculations.ts',
+  'src/utility/span/index.ts',
   'src/rules/unit/index.ts',
   'src/rules/unit/test.ts',
 ]
@@ -51,14 +45,7 @@ function literalProduct(node: ts.Node): number | null {
 }
 
 /**
- * Every re-derivation of a declared time unit in hand-written source.
- *
- * Parsed, never matched, and that is load-bearing here: `spec/generator/seed.ts` EMITS
- * `86_400_000` inside a template literal because it generates code that will do date arithmetic.
- * That is a string — data, not arithmetic — and a text scan reports it as a violation. The same
- * refusal `rules/confine` and `rules/bypass` each paid for separately.
- *
- * Tests are exempt: a fixture computing "tomorrow" is not a conversion the product depends on.
+ * Every re-derivation of a declared time unit in hand-written source. See ./SKILL.md § parsed.
  *
  * @invariant a numeric literal inside a string or template is never a finding
  * @invariant the declared home is never a finding, so the one address is not its own violation
@@ -69,10 +56,7 @@ export function unitRederivations(cwd: string = process.cwd()): UnitViolation[] 
   for (const abs of corpusFiles(cwd)) {
     if (!abs.endsWith('.ts') && !abs.endsWith('.tsx')) continue
     if (abs.endsWith('test.ts') || abs.endsWith('test.tsx')) continue
-    // corpusFiles returns ABSOLUTE paths; the home list and every finding are repo-relative, so the
-    // prefix is stripped once here. Comparing the two directly is how the first run of this gate
-    // exempted nothing and still reported zero — it had passed `(cwd, file)` to the single-argument
-    // `astOf`, which parsed the cwd STRING as source. A wrong instrument answers; it does not error.
+    // corpusFiles is ABSOLUTE; findings and the home list are repo-relative. See ./SKILL.md § parsed.
     const file = abs.startsWith(prefix) ? abs.slice(prefix.length) : abs
     if (DECLARED_HOME.includes(file)) continue
     const src = astOf(abs)
@@ -106,11 +90,7 @@ export function unitRederivations(cwd: string = process.cwd()): UnitViolation[] 
   return out
 }
 
-/**
- * Fails closed. Zero is a **theorem**: a unit conversion re-derived at a second address is a second
- * implementation whose divergence nothing reports — and the rounding that travels with it is the
- * part that reaches a financial report.
- */
+/** Fails closed at a ceiling that is a THEOREM, not a ratchet. See ./SKILL.md § boundary. */
 export function assertUnitsSealed(cwd: string = process.cwd(), ceiling = 0): void {
   const found = unitRederivations(cwd)
   if (found.length <= ceiling) return

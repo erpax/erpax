@@ -53,9 +53,6 @@ export class EarlyPaymentDiscountCalculator {
     }
   }
 
-  /**
-   * Calculate days remaining to claim discount
-   */
   private static calculateDaysTillDiscount(discountDeadline: Date, asOfDate: Date): number {
     return exactMax(0, daysUntil(discountDeadline, asOfDate))
   }

@@ -2452,7 +2452,7 @@ src/rules/reference/index.ts:21: * @standard BG Наредба-Н-18 §СУПТ�
 src/rules/reference/index.ts:22: * @standard ZDDS — BG Value Added Tax Act; statute→code traces for fiscal citations fail closed here (not prose-only under rules/)
 src/rules/refutable/index.ts:28: * @standard Popper — a proposition that forbids nothing explains nothing
 src/rules/refutable/index.ts:29: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/rules/unfolded/index.ts:19: * @standard ISO/IEC 25010:2023 §5.5 — reusability: a function called once is inlined, deleted, or reused
+src/rules/unfolded/index.ts:8: * @standard ISO/IEC 25010:2023 §5.5 — reusability: a function called once is inlined, deleted, or reused
 src/rules/unit/index.ts:6: * @standard ISO 80000-3 — time: the day as a unit of measure
 src/rules/unit/index.ts:7: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: a change is made once, not once per copy
 src/run/cron/index.ts:24: * @standard RFC 6750 §2.1 — Bearer token in the Authorization header
@@ -3041,12 +3041,12 @@ src/utility/aging-dry-keys.test.ts:15: * @standard ISO/IEC-29119:2022 software-t
 src/utility/aging-dry-keys.test.ts:16: * @standard ISO-8601-1:2019 date-time
 src/utility/bank-reconciliation-report.test.ts:23: * @standard ISO/IEC-29119:2022 software-testing
 src/utility/bank-reconciliation-report.test.ts:24: * @standard ISO-20022 camt.053 bank-to-customer-statement
-src/utility/calculations.ts:177: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
-src/utility/calculations.ts:195: * @standard ISO 80000-3 — time, the day as a unit
-src/utility/calculations.ts:222: * @standard W3C WebVTT — cue timings `HH:MM:SS.mmm`
 src/utility/depreciation-methods.test.ts:12: * @standard ISO/IEC-29119:2022 software-testing
 src/utility/depreciation-methods.test.ts:13: * @standard ISO-4217:2015 currency-codes
 src/utility/period/lock/index.ts:4: * @standard ISO-8601-1:2019 date-time utc-canonical-form
+src/utility/span/index.ts:5: * @standard ISO 80000-3 — time: the day as a unit of measure
+src/utility/span/index.ts:6: * @standard ISO-8601-1:2019 — date-time days-between arithmetic
+src/utility/span/index.ts:7: * @standard W3C WebVTT — cue timings `HH:MM:SS.mmm`
 src/uuid/chain/index.ts:41: * @standard RFC 9562 §5.8 uuidv8
 src/uuid/chain/index.ts:42: * @standard RFC 8785 JSON Canonicalization Scheme
 src/uuid/chain/index.ts:43: * @standard NIST FIPS 180-4 SHA-256
