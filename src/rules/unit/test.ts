@@ -99,17 +99,14 @@ describe('rules/unit — what it must NOT flag', () => {
 })
 
 describe('rules/unit — the live corpus', () => {
-  it('the DAY divisor has exactly one address — zero is a theorem, not a ratchet', () => {
-    // 24 addresses in four notations folded onto the day-shaped helpers in @/utility.
-    expect(unitRederivations().filter((v) => v.unit === 'day')).toEqual([])
+  it('EVERY declared time unit has exactly one address — zero is a theorem', () => {
+    // day: 24 addresses in four notations. hour + minute: 11 more, including a cue-timing codec
+    // whose formatter and parser lived in different atoms. All folded onto @/utility.
+    expect(unitRederivations()).toEqual([])
+    expect(() => assertUnitsSealed()).not.toThrow()
   }, 300_000)
 
-  it('hour and minute are the named residue, and the ratchet holds them', () => {
-    // These are duration FORMATTERS and timeouts, not differences — they need an hour/minute
-    // primitive of their own, which is work this atom names rather than claims to have done.
-    const live = unitRederivations()
-    expect(new Set(live.map((v) => v.unit))).toEqual(new Set(['hour', 'minute']))
-    expect(() => assertUnitsSealed(process.cwd(), live.length)).not.toThrow()
-    expect(() => assertUnitsSealed(process.cwd(), live.length - 1)).toThrow(/rules\/unit/)
+  it('and the gate still fails closed, so zero is measured rather than assumed', () => {
+    expect(() => assertUnitsSealed(process.cwd(), -1)).toThrow(/rules\/unit/)
   }, 300_000)
 })

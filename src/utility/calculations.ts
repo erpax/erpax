@@ -196,6 +196,65 @@ export const daysBetween = (
  */
 const MS_PER_DAY = 86_400_000;
 
+/**
+ * The smaller units, DERIVED from the day rather than typed.
+ *
+ * One literal seeds the family, so `3_600_000` and `60_000` appear nowhere — which is the same
+ * discipline the matrix ratchet asks of any constant: computed from sealed state, not restated.
+ */
+const MS_PER_HOUR = MS_PER_DAY / 24;
+const MS_PER_MINUTE = MS_PER_HOUR / 60;
+const MS_PER_SECOND = MS_PER_MINUTE / 60;
+
+/** A millisecond span as fractional hours — rounding belongs to the caller, at the end. */
+export const hoursFromMs = (ms: number): number => ms / MS_PER_HOUR;
+
+/** A millisecond span as fractional minutes. */
+export const minutesFromMs = (ms: number): number => ms / MS_PER_MINUTE;
+
+/** Whole hours as milliseconds — the inverse of {@link hoursFromMs}. */
+export const msFromHours = (hours: number): number => hours * MS_PER_HOUR;
+
+/** Whole minutes as milliseconds — the inverse of {@link minutesFromMs}. */
+export const msFromMinutes = (minutes: number): number => minutes * MS_PER_MINUTE;
+
+/**
+ * A millisecond span as `HH:MM:SS.mmm` — the WebVTT / SRT cue form.
+ *
+ * `capture/media` formatted this and `transcript` parsed it, each with its own inline unit
+ * arithmetic and neither aware of the other: two halves of one codec at two addresses. Together
+ * they can state the round-trip — `parseClock(formatClock(ms)) === ms` — which neither could alone.
+ *
+ * @standard W3C WebVTT — cue timings `HH:MM:SS.mmm`
+ */
+export const formatClock = (ms: number): string => {
+  const h = exactFloor(ms / MS_PER_HOUR);
+  const m = exactFloor((ms % MS_PER_HOUR) / MS_PER_MINUTE);
+  const sec = exactFloor((ms % MS_PER_MINUTE) / MS_PER_SECOND);
+  const millis = ms % MS_PER_SECOND;
+  const pad = (n: number, w = 2): string => String(n).padStart(w, '0');
+  return `${pad(h)}:${pad(m)}:${pad(sec)}.${pad(millis, 3)}`;
+};
+
+/**
+ * `HH:MM:SS.mmm` back to milliseconds, or `NaN` when the text is not a cue timing.
+ *
+ * Deliberately more permissive than {@link formatClock} emits: the hours group is optional and SRT
+ * writes the fraction with a comma, so both dialects parse while only the canonical form is
+ * produced.
+ */
+export const parseClock = (stamp: string): number => {
+  const m = /^(?:(\d+):)?(\d{1,2}):(\d{2})[.,](\d{1,3})$/.exec(stamp.trim());
+  if (!m) return Number.NaN;
+  const [, h, min, sec, frac] = m;
+  return (
+    Number(h ?? 0) * MS_PER_HOUR +
+    Number(min) * MS_PER_MINUTE +
+    Number(sec) * MS_PER_SECOND +
+    Number(frac!.padEnd(3, '0'))
+  );
+};
+
 /** The signed millisecond difference, accepting `Date | string` so callers never pre-convert. */
 const msBetween = (from: Date | string, to: Date | string): number =>
   (to instanceof Date ? to : new Date(to)).getTime() - (from instanceof Date ? from : new Date(from)).getTime();

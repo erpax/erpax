@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { exactAbs } from '@/algebra'
 import {
   calculateRatio,
   calculatePercentage,
@@ -14,6 +15,19 @@ import {
   calculateROE,
   bucketAgeDays,
   daysBetween,
+  daysBetweenCeil,
+  daysApart,
+  daysExact,
+  daysOverdue,
+  daysRemaining,
+  daysUntil,
+  addDays,
+  hoursFromMs,
+  minutesFromMs,
+  msFromHours,
+  msFromMinutes,
+  formatClock,
+  parseClock,
 } from '@/utility'
 
 // utility — the operational guard organ: no naked zero. Every quotient passes a
@@ -85,5 +99,79 @@ describe('utility — no bare division escapes a guard (COLLAPSE→0)', () => {
   it('daysBetween floors to whole days and accepts Date | string', () => {
     expect(daysBetween('2026-01-01T00:00:00.000Z', '2026-01-11T00:00:00.000Z')).toBe(10)
     expect(daysBetween(new Date('2026-01-01'), new Date('2026-01-02'))).toBe(1)
+  })
+})
+
+/**
+ * The unit family — one divisor, at one address, seeded by one literal.
+ *
+ * The day stood at 24 addresses in four notations and the hour and minute at eleven more, while
+ * `daysBetween` called itself the single source of truth and three files used it ([[rules]]/unit).
+ */
+describe('utility — one day, and the roundings that travel with it', () => {
+  const t0 = new Date('2026-01-01T00:00:00.000Z')
+
+  it('floor and ceil DISAGREE on a partial day, which is why both are named', () => {
+    const half = new Date('2026-01-01T12:00:00.000Z')
+    expect(daysBetween(t0, half)).toBe(0)
+    expect(daysBetweenCeil(t0, half)).toBe(1)
+    // One day of difference moves an invoice across the 0-30 / 31-60 aging boundary, so the choice
+    // is accounting policy and is made at the call site rather than buried in a divisor.
+  })
+
+  it('daysApart cannot be composed from daysBetween — abs belongs INSIDE the floor', () => {
+    const back = new Date('2025-12-31T12:00:00.000Z') // half a day BEFORE t0
+    expect(daysApart(t0, back)).toBe(0)
+    expect(daysApart(back, t0)).toBe(0) // symmetric
+    expect(exactAbs(daysBetween(t0, back))).toBe(1) // the composition a caller would reach for
+  })
+
+  it('daysExact keeps the fraction, because rounding belongs at the END of a calculation', () => {
+    expect(daysExact(t0, new Date('2026-01-01T06:00:00.000Z'))).toBeCloseTo(0.25, 9)
+  })
+
+  it('overdue and remaining floor at zero in opposite directions', () => {
+    const later = new Date('2026-01-11T00:00:00.000Z')
+    expect(daysOverdue(t0, later)).toBe(10)
+    expect(daysOverdue(later, t0)).toBe(0) // not yet due is zero overdue, never minus ten
+    expect(daysRemaining(later, t0)).toBe(10)
+    expect(daysRemaining(t0, later)).toBe(0)
+    expect(daysUntil(later, t0)).toBe(10)
+  })
+
+  it('addDays is the inverse of a difference, through the same one divisor', () => {
+    expect(daysBetween(t0, addDays(t0, 30))).toBe(30)
+    expect(addDays(t0, -1).toISOString()).toBe('2025-12-31T00:00:00.000Z')
+  })
+
+  it('the smaller units are DERIVED, so one literal seeds the family', () => {
+    expect(msFromHours(24)).toBe(msFromMinutes(24 * 60))
+    expect(hoursFromMs(msFromHours(3))).toBe(3)
+    expect(minutesFromMs(msFromMinutes(90))).toBe(90)
+    expect(hoursFromMs(msFromMinutes(90))).toBe(1.5) // fractional on purpose
+  })
+})
+
+/**
+ * The codec whose two halves lived apart: `capture/media` formatted and `transcript` parsed, each
+ * with its own inline unit arithmetic. Together they can state the round-trip.
+ */
+describe('utility — the cue-timing codec round-trips', () => {
+  it('formats the WebVTT canonical form', () => {
+    expect(formatClock(0)).toBe('00:00:00.000')
+    expect(formatClock(3_723_456)).toBe('01:02:03.456')
+  })
+
+  it('parses both dialects — SRT writes the fraction with a comma', () => {
+    expect(parseClock('01:02:03.456')).toBe(3_723_456)
+    expect(parseClock('01:02:03,456')).toBe(3_723_456)
+    expect(parseClock('02:03.456')).toBe(123_456) // hours optional
+    expect(parseClock('nonsense')).toBeNaN()
+  })
+
+  it('parse ∘ format is the identity — the invariant neither half could state alone', () => {
+    for (const ms of [0, 1, 999, 1_000, 61_000, 3_599_999, 3_723_456, 86_399_999]) {
+      expect(parseClock(formatClock(ms))).toBe(ms)
+    }
   })
 })

@@ -179,9 +179,9 @@ src/ai/cloudflare.ts:46: * @standard ISO 27037:2012 evidence-preservation
 src/ai/document-classification.ts:17: * @standard ISO/IEC 23894:2023 ai-risk-management
 src/ai/document-classification.ts:18: * @standard WCAG 2.1 AA (alt-text on classified images)
 src/ai/durable-objects.test.ts:24: * @standard RFC 9562 §5.8 content-uuid · ISO 19011:2018 §6.4 audit evidence
-src/ai/durable-objects.ts:175: * @standard FIPS 180-4 sha-256 (leaf hashing)
-src/ai/durable-objects.ts:176: * @standard RFC 8785 JSON canonicalization
-src/ai/durable-objects.ts:18: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
+src/ai/durable-objects.ts:176: * @standard FIPS 180-4 sha-256 (leaf hashing)
+src/ai/durable-objects.ts:177: * @standard RFC 8785 JSON canonicalization
+src/ai/durable-objects.ts:19: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
 src/ai/embed-document.ts:12: * @standard ISO/IEC 23894:2023 ai-risk-management
 src/ai/hs-code-suggestion.ts:8: * @standard WCO HS Convention 2022 harmonised-commodity-description-and-coding-system
 src/ai/hs-code-suggestion.ts:9: * @standard ISO/IEC 23894:2023 ai-risk-management
@@ -314,54 +314,54 @@ src/app/(frontend)/tenant-slugs/layout.tsx:6: * @standard BCP-47 language-tag
 src/app/my-route/route.ts:6: * @standard OpenAPI 3.1 api-description
 src/architecture/invariant/by-agent.ts:43: * @standard ISO/IEC 25010:2023 §5.2 performance — selective
 src/architecture/invariant/by-agent.ts:45: * @standard ISO 19011:2018 §6.4.6 (per-agent law audit-trailed)
-src/architecture/invariant/checks.ts:1035: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
-src/architecture/invariant/checks.ts:1036: * @standard ISO 19011:2018 §6.4.6 audit-evidence
-src/architecture/invariant/checks.ts:1235: * @standard ISO 19011:2018 §6.4 audit-evidence
-src/architecture/invariant/checks.ts:1263: * @standard ISO/IEC 25010:2023 performance-efficiency
-src/architecture/invariant/checks.ts:1264: * @standard SQL-92 §5.4 indexing-strategy
-src/architecture/invariant/checks.ts:1315: * @standard rfc-5545 icalendar-cron
-src/architecture/invariant/checks.ts:1364: * @standard NIST FIPS-180-4 sha-256
-src/architecture/invariant/checks.ts:1365: * @standard ISO 27037:2012 evidence-preservation
-src/architecture/invariant/checks.ts:145: * @standard ISO 37000:2021 governance-of-organizations
-src/architecture/invariant/checks.ts:1474: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/architecture/invariant/checks.ts:1507: * @standard BCP-47 + W3C i18n key-naming-best-practices
-src/architecture/invariant/checks.ts:1543: * @standard ISO/IEC 12207 software-life-cycle (event graph
-src/architecture/invariant/checks.ts:1576: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/architecture/invariant/checks.ts:1593: * @standard RFC 9562 + RFC 8785 + NIST FIPS 180-4
-src/architecture/invariant/checks.ts:1648: * @standard RFC 9562 §5.8 + RFC 8785
-src/architecture/invariant/checks.ts:1684: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/architecture/invariant/checks.ts:1710: * @standard RFC 9562 §5.8 + RFC 8785
-src/architecture/invariant/checks.ts:1747: * @standard Schema.org JSON-LD 1.1 + Open Graph + Microdata 1.1
-src/architecture/invariant/checks.ts:1775: * @standard W3C VC Data Model 2.0 + RFC 8785 + Law 8 (RRRRR)
-src/architecture/invariant/checks.ts:182: * @standard ISO/IEC 25010:2023 §5 modularity — one atom = one folder
-src/architecture/invariant/checks.ts:2107: * @standard W3C JSON-LD 1.1 + Schema.org Action
-src/architecture/invariant/checks.ts:2134: * @standard MCP 0.6 — tools/list naming convention
-src/architecture/invariant/checks.ts:2165: * @standard ISO 27001 A.5.10 access-control-policy
-src/architecture/invariant/checks.ts:2239: * @standard MCP 0.6 — tools/list naming convention
-src/architecture/invariant/checks.ts:2419: * @standard Lamport 1978 — distributed-system causal ordering
-src/architecture/invariant/checks.ts:2454: * @standard W3C Web Components composition pattern
-src/architecture/invariant/checks.ts:2523: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/architecture/invariant/checks.ts:2583: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/architecture/invariant/checks.ts:2619: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/architecture/invariant/checks.ts:2759: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/architecture/invariant/checks.ts:2805: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/architecture/invariant/checks.ts:2864: * @standard ISO 27001:2022 A.5.10 access-control-policy
-src/architecture/invariant/checks.ts:2865: * @standard ISO 27002:2022 §5.4 segregation-of-duties
-src/architecture/invariant/checks.ts:2866: * @standard ISO 19011:2018 §6.4.6 audit-evidence
-src/architecture/invariant/checks.ts:2928: * @standard ISO 27001 A.5.15 access-control
-src/architecture/invariant/checks.ts:2929: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
-src/architecture/invariant/checks.ts:3034: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
-src/architecture/invariant/checks.ts:3035: * @standard ISO 27002 §5.4 segregation-of-duties (single-surface audit)
-src/architecture/invariant/checks.ts:3272: * @standard ISO/IEC 25010:2023 §5.4 modularity — locality of reference
-src/architecture/invariant/checks.ts:3369: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity
-src/architecture/invariant/checks.ts:3415: * @standard ISO/IEC 25010:2023 §5.4 modularity — every unit connected
-src/architecture/invariant/checks.ts:738: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
-src/architecture/invariant/checks.ts:755: * @standard ISO 27002:2022 §5.4 segregation-of-duties
-src/architecture/invariant/checks.ts:756: * @standard COBIT 5 PO4.11
-src/architecture/invariant/checks.ts:816: * @standard ISO/IEC 25010:2023 §5 modularity-and-maintainability
-src/architecture/invariant/checks.ts:910: * @standard ISO/IEC 25012:2008 §4 data-quality accuracy-and-consistency
-src/architecture/invariant/checks.ts:968: * @standard ISO 19011:2018 §6.4 audit-evidence
-src/architecture/invariant/checks.ts:969: * @standard IFRS Foundation issued-standards-as-of-2026-05
+src/architecture/invariant/checks.ts:1036: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
+src/architecture/invariant/checks.ts:1037: * @standard ISO 19011:2018 §6.4.6 audit-evidence
+src/architecture/invariant/checks.ts:1236: * @standard ISO 19011:2018 §6.4 audit-evidence
+src/architecture/invariant/checks.ts:1264: * @standard ISO/IEC 25010:2023 performance-efficiency
+src/architecture/invariant/checks.ts:1265: * @standard SQL-92 §5.4 indexing-strategy
+src/architecture/invariant/checks.ts:1316: * @standard rfc-5545 icalendar-cron
+src/architecture/invariant/checks.ts:1365: * @standard NIST FIPS-180-4 sha-256
+src/architecture/invariant/checks.ts:1366: * @standard ISO 27037:2012 evidence-preservation
+src/architecture/invariant/checks.ts:146: * @standard ISO 37000:2021 governance-of-organizations
+src/architecture/invariant/checks.ts:1475: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/architecture/invariant/checks.ts:1508: * @standard BCP-47 + W3C i18n key-naming-best-practices
+src/architecture/invariant/checks.ts:1544: * @standard ISO/IEC 12207 software-life-cycle (event graph
+src/architecture/invariant/checks.ts:1577: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/architecture/invariant/checks.ts:1594: * @standard RFC 9562 + RFC 8785 + NIST FIPS 180-4
+src/architecture/invariant/checks.ts:1649: * @standard RFC 9562 §5.8 + RFC 8785
+src/architecture/invariant/checks.ts:1685: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/architecture/invariant/checks.ts:1711: * @standard RFC 9562 §5.8 + RFC 8785
+src/architecture/invariant/checks.ts:1748: * @standard Schema.org JSON-LD 1.1 + Open Graph + Microdata 1.1
+src/architecture/invariant/checks.ts:1776: * @standard W3C VC Data Model 2.0 + RFC 8785 + Law 8 (RRRRR)
+src/architecture/invariant/checks.ts:183: * @standard ISO/IEC 25010:2023 §5 modularity — one atom = one folder
+src/architecture/invariant/checks.ts:2108: * @standard W3C JSON-LD 1.1 + Schema.org Action
+src/architecture/invariant/checks.ts:2135: * @standard MCP 0.6 — tools/list naming convention
+src/architecture/invariant/checks.ts:2166: * @standard ISO 27001 A.5.10 access-control-policy
+src/architecture/invariant/checks.ts:2240: * @standard MCP 0.6 — tools/list naming convention
+src/architecture/invariant/checks.ts:2420: * @standard Lamport 1978 — distributed-system causal ordering
+src/architecture/invariant/checks.ts:2455: * @standard W3C Web Components composition pattern
+src/architecture/invariant/checks.ts:2524: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/architecture/invariant/checks.ts:2584: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/architecture/invariant/checks.ts:2620: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/architecture/invariant/checks.ts:2760: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/architecture/invariant/checks.ts:2806: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/architecture/invariant/checks.ts:2865: * @standard ISO 27001:2022 A.5.10 access-control-policy
+src/architecture/invariant/checks.ts:2866: * @standard ISO 27002:2022 §5.4 segregation-of-duties
+src/architecture/invariant/checks.ts:2867: * @standard ISO 19011:2018 §6.4.6 audit-evidence
+src/architecture/invariant/checks.ts:2929: * @standard ISO 27001 A.5.15 access-control
+src/architecture/invariant/checks.ts:2930: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
+src/architecture/invariant/checks.ts:3035: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/architecture/invariant/checks.ts:3036: * @standard ISO 27002 §5.4 segregation-of-duties (single-surface audit)
+src/architecture/invariant/checks.ts:3273: * @standard ISO/IEC 25010:2023 §5.4 modularity — locality of reference
+src/architecture/invariant/checks.ts:3370: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity
+src/architecture/invariant/checks.ts:3416: * @standard ISO/IEC 25010:2023 §5.4 modularity — every unit connected
+src/architecture/invariant/checks.ts:739: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
+src/architecture/invariant/checks.ts:756: * @standard ISO 27002:2022 §5.4 segregation-of-duties
+src/architecture/invariant/checks.ts:757: * @standard COBIT 5 PO4.11
+src/architecture/invariant/checks.ts:817: * @standard ISO/IEC 25010:2023 §5 modularity-and-maintainability
+src/architecture/invariant/checks.ts:911: * @standard ISO/IEC 25012:2008 §4 data-quality accuracy-and-consistency
+src/architecture/invariant/checks.ts:969: * @standard ISO 19011:2018 §6.4 audit-evidence
+src/architecture/invariant/checks.ts:970: * @standard IFRS Foundation issued-standards-as-of-2026-05
 src/architecture/invariant/index.ts:20: * @standard ISO/IEC 25010:2023 quality-model
 src/architecture/invariant/onInit.ts:20: * @standard ISO/IEC 25010:2023 reliability-fault-tolerance
 src/architecture/invariant/trinity.ts:51: * @standard ISO/IEC 25010:2023 §5.4 reusability — generator sets
@@ -505,9 +505,9 @@ src/beyond/ai-audit.ts:11: * @standard ISO/IEC 23894:2023 AI risk management
 src/beyond/ai-audit.ts:12: * @standard NIST AI RMF 1.0 (2023)
 src/beyond/bitemporal/index.ts:6: * @standard SQL:2011 system-versioned + application-time tables
 src/beyond/bitemporal/index.ts:7: * @standard ISO/IEC 9075-2:2016 §4.15.10 temporal-tables
-src/beyond/carbon/index.ts:6: * @standard ESRS E1 climate-change-disclosures
-src/beyond/carbon/index.ts:7: * @standard EU CSRD 2022/2464 sustainability-reporting-directive
-src/beyond/carbon/index.ts:8: * @standard GHG Protocol Scope-2 location-based
+src/beyond/carbon/index.ts:7: * @standard ESRS E1 climate-change-disclosures
+src/beyond/carbon/index.ts:8: * @standard EU CSRD 2022/2464 sustainability-reporting-directive
+src/beyond/carbon/index.ts:9: * @standard GHG Protocol Scope-2 location-based
 src/beyond/erasure/index.ts:28: * @standard ISO 27040 §6.3 cryptographic-erasure
 src/beyond/erasure/index.ts:29: * @standard NIST SP 800-88 Rev.1 media-sanitization (cryptographic erase)
 src/beyond/explainability/index.ts:10: * @standard XBRL inline-XBRL (machine-explainability of values)
@@ -626,10 +626,10 @@ src/camt053/import/service/test.ts:8: * @standard ISO-20022 camt.053 bank-to-cus
 src/camt054/import/service/index.ts:21: * @standard ISO-20022 BankToCustomerDebitCreditNotificationV08
 src/camt054/import/service/index.ts:6: * @standard ISO-20022 camt.054 bank-to-customer-debit-credit-notification
 src/camt054/import/service/test.ts:4: * @standard ISO-20022 camt.054 bank-to-customer-debit-credit-notification
-src/capture/media/index.ts:24: * @standard W3C WebVTT video-text-track-format
-src/capture/media/index.ts:25: * @standard ISO/IEC 14496-30 timed-text-formats
-src/capture/media/index.ts:26: * @standard ISO 19011:2018 audit-trail test-evidence
-src/capture/media/index.ts:81: * @standard W3C WebVTT
+src/capture/media/index.ts:25: * @standard W3C WebVTT video-text-track-format
+src/capture/media/index.ts:26: * @standard ISO/IEC 14496-30 timed-text-formats
+src/capture/media/index.ts:27: * @standard ISO 19011:2018 audit-trail test-evidence
+src/capture/media/index.ts:73: * @standard W3C WebVTT
 src/card/index.tsx:6: * @standard schema.org Article
 src/card/index.tsx:7: * @standard W3C HTML5 article-element
 src/carriers/index.ts:10: * @standard ISO-8601-1:2019 date-time effective-from
@@ -3043,6 +3043,7 @@ src/utility/bank-reconciliation-report.test.ts:23: * @standard ISO/IEC-29119:202
 src/utility/bank-reconciliation-report.test.ts:24: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/utility/calculations.ts:177: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
 src/utility/calculations.ts:195: * @standard ISO 80000-3 — time, the day as a unit
+src/utility/calculations.ts:228: * @standard W3C WebVTT — cue timings `HH:MM:SS.mmm`
 src/utility/depreciation-methods.test.ts:12: * @standard ISO/IEC-29119:2022 software-testing
 src/utility/depreciation-methods.test.ts:13: * @standard ISO-4217:2015 currency-codes
 src/utility/period/lock/index.ts:4: * @standard ISO-8601-1:2019 date-time utc-canonical-form
@@ -3634,7 +3635,7 @@ src/ai/cloudflare.ts:49: * @compliance GDPR Art.22(3) right-to-human-interventio
 src/ai/cloudflare.ts:50: * @compliance EU AI Act 2024 transparency-and-risk-classification
 src/ai/cloudflare.ts:51: * @compliance SOX §404 internal-controls ai-assisted-decision
 src/ai/document-classification.ts:20: * @compliance EU AI Act 2024 minimal-risk
-src/ai/durable-objects.ts:20: * @compliance SOX §404 internal-controls atomic-state
+src/ai/durable-objects.ts:21: * @compliance SOX §404 internal-controls atomic-state
 src/ai/embed-document.ts:14: * @compliance EU AI Act 2024 minimal-risk
 src/ai/hs-code-suggestion.ts:10: * @compliance EU UCC §6 customs-declaration
 src/ai/hs-code-suggestion.ts:11: * @compliance EU AI Act 2024 limited-risk
@@ -3689,9 +3690,9 @@ src/app/(frontend)/tenant-domains/[tenant]/[...slug]/page.tsx:8: * @compliance W
 src/app/(frontend)/tenant-domains/[tenant]/login/page.tsx:10: * @compliance WCAG-2.1 level-AA
 src/app/(frontend)/tenant-slugs/[tenant]/[...slug]/page.tsx:8: * @compliance WCAG-2.1 level-AA
 src/app/(frontend)/tenant-slugs/[tenant]/login/page.tsx:10: * @compliance WCAG-2.1 level-AA
-src/architecture/invariant/checks.ts:146: * @compliance Venice Commission Rule of Law
-src/architecture/invariant/checks.ts:1594: * @compliance SOX §404 (Byzantine tamper detection)
-src/architecture/invariant/checks.ts:1650: * @compliance SOX §404 referential integrity
+src/architecture/invariant/checks.ts:147: * @compliance Venice Commission Rule of Law
+src/architecture/invariant/checks.ts:1595: * @compliance SOX §404 (Byzantine tamper detection)
+src/architecture/invariant/checks.ts:1651: * @compliance SOX §404 referential integrity
 src/architecture/invariant/onInit.ts:19: * @compliance SOX §404 internal-controls boot-time-verification
 src/architecture/invariant/types.ts:29: * @compliance SOX §404 internal-controls invariants
 src/audit/events/index.ts:45: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
@@ -3748,8 +3749,8 @@ src/budget/plannings/index.ts:33: * @compliance SOX §404 internal-controls budg
 src/bulk/op/index.ts:17: * @compliance SOX §404 internal-controls bulk-import-completeness
 src/business/chain/run.ts:12: * @compliance SOX §404 internal-controls process-evidence
 src/business/chain/types.ts:22: * @compliance SOX §404 internal-controls process-evidence
-src/capture/media/index.ts:27: * @compliance WCAG-2.1 §1.2.2 captions-prerecorded
-src/capture/media/index.ts:28: * @compliance WCAG-2.1 §1.2.5 audio-description-prerecorded
+src/capture/media/index.ts:28: * @compliance WCAG-2.1 §1.2.2 captions-prerecorded
+src/capture/media/index.ts:29: * @compliance WCAG-2.1 §1.2.5 audio-description-prerecorded
 src/card/index.tsx:10: * @compliance WCAG-2.1 §2.5.5 target-size
 src/card/index.tsx:9: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
 src/carriers/index.ts:16: * @compliance SOX §404 internal-controls carrier-master TOM-LOG-01
@@ -4996,7 +4997,7 @@ src/ai/cloudflare.ts:54: * @security ISO-27002 §5.34 ai-output-validation
 src/ai/cloudflare.ts:55: * @security OWASP-LLM-Top-10:2025 LLM01 prompt-injection
 src/ai/cloudflare.ts:56: * @security OWASP-LLM-Top-10:2025 LLM02 sensitive-information-disclosure
 src/ai/document-classification.ts:19: * @security ISO-27002 §5.34 ai-output-validation
-src/ai/durable-objects.ts:19: * @security ISO-27002 §5.4 segregation-of-duties race-free
+src/ai/durable-objects.ts:20: * @security ISO-27002 §5.4 segregation-of-duties race-free
 src/ai/embed-document.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/ai/models/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/ai/security.ts:19: * @security ISO-27001 A.5.34 privacy-and-protection-of-pii
@@ -5541,9 +5542,9 @@ src/agents/registered/legal/conflict/index.ts:15: * @audit ABA Model Rule 1.7 co
 src/ai/anomaly-detection.ts:12: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/ai/audit-summarisation.ts:11: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/ai/cloudflare.ts:52: * @audit ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail
-src/ai/durable-objects.ts:177: * @audit Conservation Law 8 content-uuid (per-leaf)
-src/ai/durable-objects.ts:178: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail
-src/ai/durable-objects.ts:21: * @audit ISO-19011:2018 audit-trail coordination-evidence
+src/ai/durable-objects.ts:178: * @audit Conservation Law 8 content-uuid (per-leaf)
+src/ai/durable-objects.ts:179: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail
+src/ai/durable-objects.ts:22: * @audit ISO-19011:2018 audit-trail coordination-evidence
 src/ai/models/index.ts:20: * @audit ISO-19011:2018 audit-trail model-catalogue-changes
 src/ai/suggestions/index.ts:26: * @audit ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail
 src/analytics/TrendAnalysisCard.tsx:25: * @audit ISO-19011:2018 audit-trail trend-analysis
@@ -5558,37 +5559,37 @@ src/app/(api)/api/subscriptions/create/route.ts:12: * @audit ISO-19011:2018 audi
 src/app/(api)/api/webhooks/stripe/route.ts:12: * @audit ISO-19011:2018 audit-trail
 src/app/(frontend)/next/coherence/route.ts:32: * @audit ISO-19011:2018 reading logged to Analytics Engine (ANALYTICS_AI binding)
 src/app/(frontend)/next/seed/route.ts:8: * @audit ISO-19011:2018 audit-trail seed-runs
-src/architecture/invariant/checks.ts:10: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
-src/architecture/invariant/checks.ts:1169: * @audit ISO-19011:2018 §6.4 audit-evidence-seed-schema-consistency
-src/architecture/invariant/checks.ts:1236: * @audit  registry-vs-implementation traceability
-src/architecture/invariant/checks.ts:1366: * @audit ISO-19011:2018 §6.4.6 audit-evidence-immutability
-src/architecture/invariant/checks.ts:1577: * @audit ISO 19011:2018 §6.4.6
-src/architecture/invariant/checks.ts:1595: * @audit ISO 19011:2018 §6.4.6
-src/architecture/invariant/checks.ts:1649: * @audit ISO 19011:2018 §6.4.6
-src/architecture/invariant/checks.ts:1685: * @audit ISO 19011:2018 §6.4.6 (self-coherence audit-trailed)
-src/architecture/invariant/checks.ts:1711: * @audit ISO 19011:2018 §6.4.6 (clone-integrity provable at build time)
-src/architecture/invariant/checks.ts:1748: * @audit ISO 19011:2018 §6.4.6 (SEO coupling provable per publish)
-src/architecture/invariant/checks.ts:1776: * @audit ISO 19011:2018 §6.4.6 (vote aggregates audit-trailed)
-src/architecture/invariant/checks.ts:183: * @audit ISO 19011:2018 §6.4 audit-evidence
-src/architecture/invariant/checks.ts:2108: * @audit ISO 19011:2018 §6.4.6 (MCP surface SEO-traceable)
-src/architecture/invariant/checks.ts:2135: * @audit ISO 19011:2018 §6.4.6 (every tool standards-traceable)
-src/architecture/invariant/checks.ts:2166: * @audit ISO 27002 §5.4 segregation-of-duties
-src/architecture/invariant/checks.ts:2240: * @audit ISO 19011:2018 §6.4.6 (every barrel-exported factory traceable to live surface)
-src/architecture/invariant/checks.ts:2420: * @audit ISO 19011:2018 §6.4.6 (stream windows audit-trailed)
-src/architecture/invariant/checks.ts:2455: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
-src/architecture/invariant/checks.ts:2524: * @audit ISO 19011:2018 §6.4.6 event-graph closure (Law 4)
-src/architecture/invariant/checks.ts:2584: * @audit Law 10 referential-harmony
-src/architecture/invariant/checks.ts:2620: * @audit Law 10 referential-harmony (static counterpart)
-src/architecture/invariant/checks.ts:2760: * @audit Law 10 referential-harmony (slug-uniqueness)
-src/architecture/invariant/checks.ts:2806: * @audit ISO 19011:2018 §6.4.6 (persistence-trail for audit-evidence)
-src/architecture/invariant/checks.ts:2867: * @audit Conservation Law 38 mcp-tool-standardization
-src/architecture/invariant/checks.ts:2930: * @audit Conservation Law 38 mcp-tool-standardization
-src/architecture/invariant/checks.ts:3036: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail (single path)
-src/architecture/invariant/checks.ts:3273: * @audit Law 10 referential-harmony
-src/architecture/invariant/checks.ts:3370: * @audit [[config]] — collections are plural, models/pages singular
-src/architecture/invariant/checks.ts:3416: * @audit double-entry of structure ([[balance]])
-src/architecture/invariant/checks.ts:817: * @audit ISO 19011:2018 §6.4 audit-evidence
-src/architecture/invariant/checks.ts:911: * @audit ISO 19011:2018 §6.4 audit-evidence
+src/architecture/invariant/checks.ts:1170: * @audit ISO-19011:2018 §6.4 audit-evidence-seed-schema-consistency
+src/architecture/invariant/checks.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
+src/architecture/invariant/checks.ts:1237: * @audit  registry-vs-implementation traceability
+src/architecture/invariant/checks.ts:1367: * @audit ISO-19011:2018 §6.4.6 audit-evidence-immutability
+src/architecture/invariant/checks.ts:1578: * @audit ISO 19011:2018 §6.4.6
+src/architecture/invariant/checks.ts:1596: * @audit ISO 19011:2018 §6.4.6
+src/architecture/invariant/checks.ts:1650: * @audit ISO 19011:2018 §6.4.6
+src/architecture/invariant/checks.ts:1686: * @audit ISO 19011:2018 §6.4.6 (self-coherence audit-trailed)
+src/architecture/invariant/checks.ts:1712: * @audit ISO 19011:2018 §6.4.6 (clone-integrity provable at build time)
+src/architecture/invariant/checks.ts:1749: * @audit ISO 19011:2018 §6.4.6 (SEO coupling provable per publish)
+src/architecture/invariant/checks.ts:1777: * @audit ISO 19011:2018 §6.4.6 (vote aggregates audit-trailed)
+src/architecture/invariant/checks.ts:184: * @audit ISO 19011:2018 §6.4 audit-evidence
+src/architecture/invariant/checks.ts:2109: * @audit ISO 19011:2018 §6.4.6 (MCP surface SEO-traceable)
+src/architecture/invariant/checks.ts:2136: * @audit ISO 19011:2018 §6.4.6 (every tool standards-traceable)
+src/architecture/invariant/checks.ts:2167: * @audit ISO 27002 §5.4 segregation-of-duties
+src/architecture/invariant/checks.ts:2241: * @audit ISO 19011:2018 §6.4.6 (every barrel-exported factory traceable to live surface)
+src/architecture/invariant/checks.ts:2421: * @audit ISO 19011:2018 §6.4.6 (stream windows audit-trailed)
+src/architecture/invariant/checks.ts:2456: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
+src/architecture/invariant/checks.ts:2525: * @audit ISO 19011:2018 §6.4.6 event-graph closure (Law 4)
+src/architecture/invariant/checks.ts:2585: * @audit Law 10 referential-harmony
+src/architecture/invariant/checks.ts:2621: * @audit Law 10 referential-harmony (static counterpart)
+src/architecture/invariant/checks.ts:2761: * @audit Law 10 referential-harmony (slug-uniqueness)
+src/architecture/invariant/checks.ts:2807: * @audit ISO 19011:2018 §6.4.6 (persistence-trail for audit-evidence)
+src/architecture/invariant/checks.ts:2868: * @audit Conservation Law 38 mcp-tool-standardization
+src/architecture/invariant/checks.ts:2931: * @audit Conservation Law 38 mcp-tool-standardization
+src/architecture/invariant/checks.ts:3037: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail (single path)
+src/architecture/invariant/checks.ts:3274: * @audit Law 10 referential-harmony
+src/architecture/invariant/checks.ts:3371: * @audit [[config]] — collections are plural, models/pages singular
+src/architecture/invariant/checks.ts:3417: * @audit double-entry of structure ([[balance]])
+src/architecture/invariant/checks.ts:818: * @audit ISO 19011:2018 §6.4 audit-evidence
+src/architecture/invariant/checks.ts:912: * @audit ISO 19011:2018 §6.4 audit-evidence
 src/architecture/invariant/index.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
 src/architecture/invariant/onInit.ts:18: * @audit ISO-19011:2018 §6.4 audit-evidence-runtime-gate
 src/architecture/invariant/trinity.ts:53: * @audit ISO 19011:2018 §6.4.6 (Trinity verdict at every audit)
@@ -5653,7 +5654,7 @@ src/business/chain/types.ts:21: * @audit ISO-19011:2018 §6.4.6 audit-evidence-p
 src/business/chain/wire-producers.ts:20: * @audit ISO 19011:2018 §6.4.6 producer→event traceability via BUSINESS_CHAINS
 src/camt053/import/service/index.ts:23: * @audit ISO-19011:2018 audit-trail
 src/camt053/import/service/test.ts:9: * @audit ISO-19011:2018 audit-trail
-src/capture/media/index.ts:29: * @audit ISO-19011:2018 audit-trail test-recording-provenance
+src/capture/media/index.ts:30: * @audit ISO-19011:2018 audit-trail test-recording-provenance
 src/carriers/index.ts:15: * @audit ISO-19011:2018 audit-trail carrier-master
 src/cases/index.ts:19: * @audit ISO-19011:2018 audit-trail file·hear·rule·seal
 src/categories/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary

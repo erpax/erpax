@@ -23,6 +23,7 @@
  * @see ./SKILL.md -- ../local -- ../instrument -- ../handoff
  */
 import { exactMax, exactTrunc } from '@/algebra'
+import { parseClock } from '@/utility'
 
 /** One cue: what was said, and when. */
 export interface Segment {
@@ -47,15 +48,9 @@ export function formatOf(text: string): CaptionFormat {
 
 /** `00:01:02.500` or `01:02,500` → milliseconds. Returns NaN for anything malformed. */
 export function timestampMs(stamp: string): number {
-  const m = /^(?:(\d+):)?(\d{1,2}):(\d{2})[.,](\d{1,3})$/.exec(stamp.trim())
-  if (!m) return Number.NaN
-  const [, h, min, s, frac] = m
-  return (
-    Number(h ?? 0) * 3_600_000 +
-    Number(min) * 60_000 +
-    Number(s) * 1000 +
-    Number(frac!.padEnd(3, '0'))
-  )
+  // The formatter half of this codec lives in `capture/media`; both now delegate to one address,
+  // which is what makes `parseClock(formatClock(ms)) === ms` a statable invariant.
+  return parseClock(stamp)
 }
 
 const TIMING = /^(.+?)\s*-->\s*(\S+)/

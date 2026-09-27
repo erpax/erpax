@@ -1,4 +1,5 @@
 import { exactCeil, exactFloor, exactMax, exactMin } from '@/algebra'
+import { minutesFromMs } from '@/utility'
 /**
  * Durable Object stubs for Slice YYY deep-AI coordination.
  *
@@ -76,7 +77,7 @@ export class RateLimiter {
       lastRefill: now,
     }
     // Refill since last call.
-    const elapsedMin = (now - bucket.lastRefill) / 60000
+    const elapsedMin = minutesFromMs(now - bucket.lastRefill)
     bucket.tokens = exactMin(bucketSize, bucket.tokens + elapsedMin * refillRate)
     bucket.lastRefill = now
     if (bucket.tokens < cost) {

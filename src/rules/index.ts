@@ -303,7 +303,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // used it; folding them found a receipt-lag metric computing `billDate - billDate`, always 0 in
     // every vendor report. `day` is now a theorem at 0; hour/minute are the named residue, since a
     // duration FORMATTER decomposes a span rather than differencing two dates.
-    guardian({ axis: 'unit', violations: unitRederivations(cwd).length, baseline: 11 }),
+    guardian({ axis: 'unit', violations: unitRederivations(cwd).length, baseline: 0 }),
     // readme-seo — the README audited by the SITE's own `deriveSeoMeta`/`auditSeo` ([[readme]]/audit).
     // One derivation, two faces: improving it moves the README and the generated pages together, and
     // a second SEO derivation for the README would be one truth at two addresses. MAJOR only —

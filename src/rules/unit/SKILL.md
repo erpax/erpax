@@ -97,18 +97,33 @@ passed `(cwd, file)` to the single-argument `astOf`, which parsed the *cwd strin
 was measuring nothing and saying so in green. A gate never seen to fire is a claim, which is why
 every shape here is planted in a hermetic tree.
 
+## The other two units followed, and one of them was a split codec
+
+`hour` (6 sites) and `minute` (5) were first left as a declared ratchet, because a duration
+*formatter* decomposes a span rather than differencing two dates and needed its own primitive. They
+are now **0** as well, and closing them found the better finding:
+
+`capture/media` FORMATTED a millisecond offset as `HH:MM:SS.mmm` and `transcript` PARSED that exact
+shape back — two halves of one WebVTT/SRT codec, in different atoms, each with its own inline unit
+arithmetic and neither aware of the other. Neither half could state the property that matters. One
+address later it is a test: **`parseClock(formatClock(ms)) === ms`**.
+
+The smaller units are **derived** — `MS_PER_HOUR = MS_PER_DAY / 24`, and so down — so a single
+literal seeds the family and `3_600_000` and `60_000` appear nowhere in the corpus. `timestampMs`
+keeps its exported name and delegates, because an atom may never quietly stop offering a name
+([[rules]]/face).
+
 ## Honest boundary
 
-**`day` is a theorem at zero.** `hour` (6) and `minute` (5) are a declared **ratchet**, not a claim:
-those sites are duration *formatters* and timeouts, which decompose a span into units rather than
-difference two dates, so they need an hour/minute primitive this atom has not written. Naming the
-residue is the point — an unasked question reported as green is the defect this corpus keeps paying
-for.
+Every declared unit is now a **theorem at zero**, and `DECLARED_UNITS` holds four values in the open
+so the list can be argued with. This proves the divisor is not re-derived, never that a call site
+picked the *right* rounding — that is the accounting decision above, and no gate makes it. The
+`day`/`hour`/`minute`/`week` family is closed; a unit this map does not name (a quarter, a fiscal
+period) is outside it.
 
-`DECLARED_UNITS` holds four values in the open so it can be argued with. This proves the divisor is
-not re-derived, never that a call site picked the *right* rounding — that is the accounting decision
-above, and no gate makes it. And it reads `.ts`/`.tsx` outside tests, so a conversion in a config, a
-`.mjs` hook or generated output is invisible to it ([[rules]]/domain).
+It reads `.ts`/`.tsx` outside tests, so a conversion in a config, a `.mjs` hook or generated output
+is invisible to it ([[rules]]/domain) — and a literal inside a template is deliberately free, which is
+what keeps `spec/generator/seed.ts` lawful while it emits `86_400_000` into the code it writes.
 
 **Law — [[law]]: a unit conversion has one address, and the rounding travels with it. A constant
 everybody knows is the one everybody retypes — and the copy that drifts is the one that reaches the
