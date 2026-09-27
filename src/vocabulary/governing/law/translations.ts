@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.",
-    "uuid": "f88ab554-d64d-857a-9c79-cbd7e852475b",
+    "uuid": "b08be800-bc74-8eb5-a274-0335645b8b87",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: unit
 description: "Use when reasoning about unit — 's own docstring calls itself *\"single source of truth for how old is this item\"*, cites ISO-8601, and party's SKILL says the day-arithmetic *\"is borrowed… not re-typed — the…"
 atomPath: "rules/unit"
-coordinate: "rules/unit · 1/base · f930e6c7"
-contentUuid: "045cc123-a85e-5292-857d-9a3ec87bdd2a"
-diamondUuid: "0df30914-d8dc-869f-a8cc-39e267459e19"
-uuid: "f930e6c7-fbc4-836e-be64-1aeabe649335"
-horo: 1
+coordinate: "rules/unit · 8/crest · 7b6c48f2"
+contentUuid: "c6aeb5ba-a94a-5868-bd17-ddfc1021affa"
+diamondUuid: "aadff5e2-b270-88a7-8cff-f0a249e8e2f0"
+uuid: "7b6c48f2-f9f7-80db-8720-eba196a7cde0"
+horo: 8
 typography:
   partition: rules
   bondDegree: 67
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.6 — maintainability: a change is made once, not once per copy"
 bindings: []
 signatures:
-  computationUuid: "46b45992-3042-8d8c-ad0e-04e21dccc4dc"
+  computationUuid: "ba7970a0-4e17-8af0-83a3-ab6a69dd9720"
   stages:
     - stage: path
       stageUuid: "df429d82-3d73-8fe8-a222-6f7fff050b3c"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "469469d3-3bed-8eda-8c8a-f3b433f9d291"
     - stage: links
-      stageUuid: "d0ae2b00-5bd1-8b9e-a1b3-09d15ab0b28c"
+      stageUuid: "aca17140-7a54-8350-a36f-ae1769d9dcf9"
     - stage: horo
-      stageUuid: "7b6d5c50-c672-8f8a-aa16-90668cab57cf"
+      stageUuid: "25efe7ff-0cd6-8e09-b0d1-3dce363c9e06"
     - stage: seal
       stageUuid: "c8dd2aea-6f0c-83c7-b8a2-9a6f4985855b"
     - stage: uuid
-      stageUuid: "412fa4fa-bb1c-85a7-9885-daa08a0cce58"
+      stageUuid: "361f1fbd-c5d9-8aea-82fb-df2d52b38267"
 version: 2
 ---
 # rules/unit — a constant everybody knows is the one everybody retypes
