@@ -3,7 +3,7 @@ name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
 coordinate: "standards · 2/share · 19ebf1be"
-contentUuid: "1181f7f0-d269-5e51-bdba-261cbb5073d6"
+contentUuid: "e894a174-d926-5fe2-bc32-52222ba989a9"
 diamondUuid: "cc1d6e4a-2f2f-80f8-987c-9c50dbd1a860"
 uuid: "19ebf1be-d921-8821-96f3-b555d4797e47"
 horo: 2
@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6684 citations
+## Catalogue — 159 standards, 6685 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -122,7 +122,7 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 
 ### iec
 
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(287 80% 39%)"></span> `ISO/IEC-25010` — Systems & software quality models · 197 · `3c2f1991`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(287 80% 39%)"></span> `ISO/IEC-25010` — Systems & software quality models · 198 · `3c2f1991`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(355 59% 40%)"></span> `ISO/IEC-29119` — Software testing · 83 · `e69bd662`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(25 66% 53%)"></span> `ISO/IEC-23894` — AI risk management · 16 · `bb2197cf`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(272 55% 53%)"></span> `ISO/IEC-12207` — Software life-cycle processes · 9 · `897869e7`

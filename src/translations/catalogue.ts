@@ -79012,6 +79012,69 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "unit",
+    "path": "rules/unit",
+    "translations": [
+      {
+        "key": "name",
+        "source": "unit",
+        "uuid": "d3a22d97-0311-8afb-85a0-a21a4c382a27",
+        "words": [
+          "unit"
+        ],
+        "values": {
+          "en": "unit"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about unit — 's own docstring calls itself *\\\"single source of truth for how old is this item\\\"*, cites ISO-8601, and party's SKILL says the day-arithmetic *\\\"is borrowed… not re-typed — the…",
+        "uuid": "a8a66ad4-c94b-8c77-814e-de35cda03967",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "unit",
+          "s",
+          "own",
+          "docstring",
+          "calls",
+          "itself",
+          "single",
+          "source",
+          "of",
+          "truth",
+          "for",
+          "how",
+          "old",
+          "is",
+          "this",
+          "item",
+          "cites",
+          "iso",
+          "and",
+          "party",
+          "s",
+          "skill",
+          "says",
+          "the",
+          "day",
+          "arithmetic",
+          "is",
+          "borrowed",
+          "not",
+          "re",
+          "typed",
+          "the"
+        ],
+        "values": {
+          "en": "Use when reasoning about unit — 's own docstring calls itself *\\\"single source of truth for how old is this item\\\"*, cites ISO-8601, and party's SKILL says the day-arithmetic *\\\"is borrowed… not re-typed — the…"
+        }
+      }
+    ]
+  },
+  {
     "atom": "unraised",
     "path": "rules/unraised",
     "translations": [
@@ -211885,4 +211948,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3623
+export const TRANSLATIONS_COUNT = 3624

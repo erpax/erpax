@@ -7601,6 +7601,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/unfolded"
   },
   {
+    "atom": "unit",
+    "name": "unit",
+    "description": "Use when reasoning about unit — 's own docstring calls itself *\"single source of truth for how old is this item\"*, cites ISO-8601, and party's SKILL says the day-arithmetic *\"is borrowed… not re-typed — the…",
+    "path": "rules/unit"
+  },
+  {
     "atom": "unraised",
     "name": "unraised",
     "description": "Use when a declared failure kind is never raised — a `…Kind` union member that nothing in src ever constructs is a check that cannot fire, so its claim defaults to TRUE by omission. Parsed via ts.createSourceFile, never matched. Run: tsx src/rules/unraised/index.ts",
