@@ -141,6 +141,7 @@ src/agents/mcp/tool/error.ts:13: * @standard MCP 0.6
 src/agents/mcp/tool/events.ts:8: * @standard ISO 19011:2018 §6.4.6 audit-evidence (event-graph traceability)
 src/agents/mcp/tool/format.ts:13: * @standard RFC 9562 §5.8 uuidv8 + RFC 9562 §4.1 variant
 src/agents/mcp/tool/format.ts:14: * @standard MCP 0.6
+src/agents/mcp/tool/frontier/index.ts:8: * @standard MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}
 src/agents/mcp/tool/governance.ts:11: * @standard W3C DID Core 1.0 + W3C VC Data Model 2.0
 src/agents/mcp/tool/index.ts:15: * @standard ISO/IEC 25010:2023 §5.7 modularity
 src/agents/mcp/tool/integrity-extensions.ts:18: * @standard MCP 0.6 tools/list + tools/call
@@ -2640,8 +2641,8 @@ src/self/research/index.ts:24: * @standard NIST SP 800-162 ABAC — the access s
 src/self/research/index.ts:25: * @standard OWASP ASVS V5 — least-privilege / IDOR-prevention (no cross-actor read)
 src/self/research/index.ts:26: * @standard NIST SP 800-63B §6.1.3 — owner-authorized credential recovery
 src/self/similar/index.ts:15: * @standard the hologram — 6 generators → 36 Cayley cells, 0 free parameters
-src/self/sufficient/index.ts:26: * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
-src/self/sufficient/index.ts:27: * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
+src/self/sufficient/index.ts:27: * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
+src/self/sufficient/index.ts:28: * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
 src/sequence/inversion/index.ts:61: * @standard ISO 80000-2 — mathematical signs and symbols
 src/shared/AddressBlock.tsx:14: * @standard ISO-19160-4:2017 addressing components-and-conceptual-model
 src/shared/AddressBlock.tsx:15: * @standard UPU-S42 international-postal-addressing
@@ -6233,8 +6234,8 @@ src/self/closure/provider/search.ts:27: * @audit Conservation Law 53 self-refere
 src/self/closure/provider/signing.ts:58: * @audit Conservation Law 53 self-referential-closure
 src/self/reference/erpax.profile.ts:12: * @audit ISO 19011:2018 §6.4.6 (platform observes itself)
 src/self/similar/index.ts:16: * @audit every quantity computed on (ℤ/9ℤ) via @/horo + @/rodin, never asserted
-src/self/sufficient/index.ts:28: * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)
-src/self/sufficient/index.ts:29: * @audit Conservation Law 54 (universal identity element — every case already defined)
+src/self/sufficient/index.ts:29: * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)
+src/self/sufficient/index.ts:30: * @audit Conservation Law 54 (universal identity element — every case already defined)
 src/seo/index.ts:12: * @audit every field derived from the atom; seoCoverage reads the live tree, the gap is computed not assumed
 src/shannon/index.ts:13: * @audit H = −Σ pᵢ log₂ pᵢ = Σ pᵢ·surprisal(pᵢ); 0 ≤ H ≤ log₂ n -- computed
 src/shared/AddressBlock.tsx:19: * @audit ISO-19011:2018 audit-trail consistent-rendering

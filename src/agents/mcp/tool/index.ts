@@ -75,5 +75,6 @@ export { buildBatchTools } from './batch'
 export { buildVersionsTools } from './versions'
 /** The external boundary, asked over MCP — leads and the single next uncovered one. */
 export { buildOutwardTools } from './outward'
+export { buildFrontierTools } from './frontier'
 
 /** @index-cross.foldback child=agents/mcp/tool parent=agents/mcp — this cross folds back into its parent. */
