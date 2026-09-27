@@ -1,4 +1,4 @@
-import { exactFloor, exactMax, exactMin } from '@/algebra'
+import { exactAbs, exactCeil, exactFloor, exactMax, exactMin } from '@/algebra'
 
 /**
  * Calculate percentage
@@ -179,11 +179,86 @@ export const bucketAgeDays = (ageDays: number): AgingBucketKey => {
 export const daysBetween = (
   from: Date | string,
   to: Date | string,
-): number => {
-  const a = from instanceof Date ? from : new Date(from);
-  const b = to instanceof Date ? to : new Date(to);
-  return exactFloor((b.getTime() - a.getTime()) / (1000 * 60 * 60 * 24));
-};
+): number => exactFloor(msBetween(from, to) / MS_PER_DAY);
+
+/**
+ * The calendar day in milliseconds, at ONE address.
+ *
+ * It stood at eleven: nine files spelled out `1000 * 60 * 60 * 24` twenty-two times and
+ * `lease/service` declared its own `86_400_000` in a second notation the first spelling cannot even
+ * be grepped alongside. [[rules]]/copy saw exactly one of those, because its 40-node floor compares
+ * whole BODIES and an inline product is far below it.
+ *
+ * Module-private on purpose: a caller asks for DAYS, never for the divisor. Exporting it would
+ * invite the twelfth address.
+ *
+ * @standard ISO 80000-3 — time, the day as a unit
+ */
+const MS_PER_DAY = 86_400_000;
+
+/** The signed millisecond difference, accepting `Date | string` so callers never pre-convert. */
+const msBetween = (from: Date | string, to: Date | string): number =>
+  (to instanceof Date ? to : new Date(to)).getTime() - (from instanceof Date ? from : new Date(from)).getTime();
+
+/**
+ * Whole days between two instants, rounded UP — the AP/AR reading.
+ *
+ * This corpus computes day differences TWO ways and has done so silently. `daysBetween` floors,
+ * which is what [[party]]/aging uses for its buckets; every AP and AR site ceils. For any partial
+ * day they differ by one, and one day moves an invoice between the 0–30 and 31–60 aging buckets —
+ * so the same question, "how overdue is this", has had two answers depending on which module was
+ * asked, and the answer reaches a financial report.
+ *
+ * Both roundings are kept and named rather than silently unified: which one is correct for aging is
+ * an accounting-policy decision, not a refactor. What is fixed here is that each now has ONE
+ * address, so the choice is visible at the call site instead of buried in a divisor.
+ */
+export const daysBetweenCeil = (from: Date | string, to: Date | string): number =>
+  exactCeil(msBetween(from, to) / MS_PER_DAY);
+
+/**
+ * Days a date is overdue as of an instant — never negative.
+ *
+ * `exactMax(0, …)` is the whole difference between "overdue" and "until due", and it was written out
+ * at every AP/AR site. A bill that is not yet due is zero days overdue, not minus-five.
+ */
+export const daysOverdue = (dueDate: Date | string, asOfDate: Date | string = new Date()): number =>
+  exactMax(0, daysBetweenCeil(dueDate, asOfDate));
+
+/**
+ * The UNROUNDED day difference — a fraction, for callers that divide it again.
+ *
+ * `lease/service` needs this: it converts days into payment periods by dividing by
+ * `AVG_DAYS_PER_YEAR / PERIODS_PER_YEAR`, so flooring first would lose the part of a day that
+ * decides whether a period is begun. Rounding belongs at the END of a calculation, never in the
+ * middle — which is why this exists rather than the lease re-declaring the divisor.
+ */
+export const daysExact = (from: Date | string, to: Date | string): number =>
+  msBetween(from, to) / MS_PER_DAY;
+
+/** A date offset by whole days — the inverse operation to a difference, and the same one divisor. */
+export const addDays = (date: Date | string, days: number): Date =>
+  new Date((date instanceof Date ? date : new Date(date)).getTime() + days * MS_PER_DAY);
+
+/**
+ * Whole days between two instants regardless of order — the distance, never signed.
+ *
+ * This cannot be composed from {@link daysBetween}: `exactFloor(exactAbs(ms))` and
+ * `exactAbs(exactFloor(ms))` disagree for any negative partial day (−0.5 day gives 0 and 1), so a
+ * caller reaching for `exactAbs(daysBetween(a, b))` would get a different tolerance than
+ * `bank/reconciliation` has always used. The absolute value belongs INSIDE the floor, which is why
+ * this is its own name rather than a wrapper.
+ */
+export const daysApart = (a: Date | string, b: Date | string): number =>
+  exactFloor(exactAbs(msBetween(a, b)) / MS_PER_DAY);
+
+/** Whole days left until a deadline, floored at zero — a passed deadline has none remaining. */
+export const daysRemaining = (deadline: Date | string, asOfDate: Date | string = new Date()): number =>
+  exactMax(0, daysBetweenCeil(asOfDate, deadline));
+
+/** Days remaining until a date — the signed complement of {@link daysOverdue}. */
+export const daysUntil = (dueDate: Date | string, asOfDate: Date | string = new Date()): number =>
+  daysBetweenCeil(asOfDate, dueDate);
 
 /**
  * Calculate trend growth rate

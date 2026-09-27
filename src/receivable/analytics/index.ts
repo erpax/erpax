@@ -1,5 +1,5 @@
 /** @index-cross.foldback child=receivable/analytics parent=receivable — this cross folds back into its parent. */
-import { exactCeil, exactRound } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * A/R Analytics — KPIs (DSO, turnover, collection effectiveness).
  *
@@ -11,6 +11,7 @@ import { exactCeil, exactRound } from '@/algebra'
  * @see docs/STANDARDS.md §5
  */
 
+import { daysBetweenCeil } from '@/utility'
 import { Invoice, Customer } from '@/types/receivables'
 import { calculateAverageRounded } from '@/average/calculator'
 
@@ -111,9 +112,7 @@ export class ARAnalytics {
     return daysOutstandingBuckets.map((bucket) => {
       const estimatedCash = exactRound(
         openInvoices.reduce((sum, inv) => {
-          const daysSinceBilled = exactCeil(
-            (new Date().getTime() - inv.invoiceDate.getTime()) / (1000 * 60 * 60 * 24)
-          )
+          const daysSinceBilled = daysBetweenCeil(inv.invoiceDate, new Date())
           if (daysSinceBilled <= bucket.days) {
             return sum + inv.balance * bucket.collectPercentage
           }
@@ -146,9 +145,7 @@ export class ARAnalytics {
     } = {}
 
     invoices.forEach((inv) => {
-      const daysOverdue = exactCeil(
-        (new Date().getTime() - inv.dueDate.getTime()) / (1000 * 60 * 60 * 24)
-      )
+      const daysOverdue = daysBetweenCeil(inv.dueDate, new Date())
 
       if (daysOverdue > overdueThresholdDays) {
         if (!byCustomer[inv.customerId]) {
@@ -212,9 +209,7 @@ export class ARAnalytics {
       .reduce((sum, inv) => sum + inv.balance, 0)
 
     const overdueDays30 = invoices.filter((inv) => {
-      const daysOverdue = exactCeil(
-        (new Date().getTime() - inv.dueDate.getTime()) / (1000 * 60 * 60 * 24)
-      )
+      const daysOverdue = daysBetweenCeil(inv.dueDate, new Date())
       return daysOverdue > 30 && inv.balance > 0
     }).length
 

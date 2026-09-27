@@ -1,6 +1,12 @@
 /**
  * GL Account Filters Component
  * Scope-based filtering like Ruby ERPAX scopes
+ *
+ * Three filter groups, one mechanism. This file held the same 53-node arrow body twice
+ * ([[rules]]/copy) and a THIRD hand-written copy the 40-node floor could not see, because the
+ * `View` group inlined its two buttons instead of mapping a list. Only the title and the option
+ * list ever differed, and both closures (`scope`, `onScopeChange`) were identical in all three —
+ * so the difference is passed in rather than the body repeated.
  */
 
 'use client'
@@ -17,19 +23,39 @@ interface GLAccountFiltersProps {
   onSearchChange: (text: string) => void
 }
 
-const SCOPES: { id: AccountScope; label: string }[] = [
-  { id: 'all', label: 'All Accounts' },
-  { id: 'active', label: 'Active' },
-  { id: 'inactive', label: 'Inactive' },
-  { id: 'locked', label: 'Locked' },
-]
+interface ScopeOption {
+  readonly id: AccountScope
+  readonly label: string
+}
 
-const TYPE_SCOPES: { id: AccountScope; label: string }[] = [
-  { id: 'assets', label: 'Assets' },
-  { id: 'liabilities', label: 'Liabilities' },
-  { id: 'equity', label: 'Equity' },
-  { id: 'revenues', label: 'Revenues' },
-  { id: 'expenses', label: 'Expenses' },
+/** The filter groups, as data. A new group is a row here, never another copy of the block. */
+const SCOPE_GROUPS: ReadonlyArray<{ readonly title: string; readonly options: readonly ScopeOption[] }> = [
+  {
+    title: 'Status',
+    options: [
+      { id: 'all', label: 'All Accounts' },
+      { id: 'active', label: 'Active' },
+      { id: 'inactive', label: 'Inactive' },
+      { id: 'locked', label: 'Locked' },
+    ],
+  },
+  {
+    title: 'Account Type',
+    options: [
+      { id: 'assets', label: 'Assets' },
+      { id: 'liabilities', label: 'Liabilities' },
+      { id: 'equity', label: 'Equity' },
+      { id: 'revenues', label: 'Revenues' },
+      { id: 'expenses', label: 'Expenses' },
+    ],
+  },
+  {
+    title: 'View',
+    options: [
+      { id: 'leaf_only', label: 'Leaf Accounts Only' },
+      { id: 'with_analytics', label: 'With Analytics' },
+    ],
+  },
 ]
 
 export default function GLAccountFilters({
@@ -52,61 +78,24 @@ export default function GLAccountFilters({
           />
         </div>
 
-        <div>
-          <p className="mb-3 text-sm font-medium">Status</p>
-          <div className="flex flex-wrap gap-2">
-            {SCOPES.map((s) => (
-              <Button
-                key={s.id}
-                type="button"
-                size="sm"
-                variant={scope === s.id ? 'default' : 'outline'}
-                onClick={() => onScopeChange(s.id)}
-              >
-                {s.label}
-              </Button>
-            ))}
+        {SCOPE_GROUPS.map((group) => (
+          <div key={group.title}>
+            <p className="mb-3 text-sm font-medium">{group.title}</p>
+            <div className="flex flex-wrap gap-2">
+              {group.options.map((s) => (
+                <Button
+                  key={s.id}
+                  type="button"
+                  size="sm"
+                  variant={scope === s.id ? 'default' : 'outline'}
+                  onClick={() => onScopeChange(s.id)}
+                >
+                  {s.label}
+                </Button>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div>
-          <p className="mb-3 text-sm font-medium">Account Type</p>
-          <div className="flex flex-wrap gap-2">
-            {TYPE_SCOPES.map((s) => (
-              <Button
-                key={s.id}
-                type="button"
-                size="sm"
-                variant={scope === s.id ? 'default' : 'outline'}
-                onClick={() => onScopeChange(s.id)}
-              >
-                {s.label}
-              </Button>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <p className="mb-3 text-sm font-medium">View</p>
-          <div className="flex flex-wrap gap-2">
-            <Button
-              type="button"
-              size="sm"
-              variant={scope === 'leaf_only' ? 'default' : 'outline'}
-              onClick={() => onScopeChange('leaf_only')}
-            >
-              Leaf Accounts Only
-            </Button>
-            <Button
-              type="button"
-              size="sm"
-              variant={scope === 'with_analytics' ? 'default' : 'outline'}
-              onClick={() => onScopeChange('with_analytics')}
-            >
-              With Analytics
-            </Button>
-          </div>
-        </div>
+        ))}
       </CardContent>
     </Card>
   )

@@ -1,4 +1,5 @@
-import { exactAbs, exactFloor, exactMax, exactRound } from '@/algebra'
+import { exactAbs, exactMax, exactRound } from '@/algebra'
+import { daysApart } from '@/utility'
 /**
  * Bank Reconciliation Service — match imported bank statements to GL entries.
  *
@@ -182,10 +183,7 @@ class BankReconciliationService {
     const fuzzyMatch = await this.findFuzzyMatch(tenantId, bankTx, config);
     if (fuzzyMatch) {
       const amountDiff = exactAbs(fuzzyMatch.amount - bankTx.amount);
-      const dateDiff = exactFloor(
-        (exactAbs(fuzzyMatch.entryDate.getTime() - bankTx.transactionDate.getTime()) /
-          (1000 * 60 * 60 * 24))
-      );
+      const dateDiff = daysApart(fuzzyMatch.entryDate, bankTx.transactionDate);
 
       // Calculate match score (0-99, exact would be 100)
       const amountScore = exactMax(0, 99 - (amountDiff / bankTx.amount) * 100);
@@ -289,10 +287,7 @@ class BankReconciliationService {
       const amountDiff = exactAbs(amount - bankTx.amount);
       if (amountDiff > config.fuzzyMatchAmountTolerance) continue;
 
-      const dateDiff = exactFloor(
-        exactAbs(entry.entryDate.getTime() - bankTx.transactionDate.getTime()) /
-          (1000 * 60 * 60 * 24)
-      );
+      const dateDiff = daysApart(entry.entryDate, bankTx.transactionDate);
       if (dateDiff > config.fuzzyMatchDateTolerance) continue;
 
       // Calculate score

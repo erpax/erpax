@@ -1,5 +1,6 @@
 /** @index-cross.foldback child=payable/discounts parent=payable — this cross folds back into its parent. */
-import { algebraFloatPow, exactCeil, exactMax, exactRound } from '@/algebra'
+import { algebraFloatPow, exactRound } from '@/algebra'
+import { daysRemaining } from '@/utility'
 /**
  * Early Payment Discount Calculator — vendor discount programs.
  *
@@ -56,9 +57,7 @@ export class EarlyPaymentDiscountCalculator {
    * Calculate days remaining to claim discount
    */
   private static calculateDaysTillDiscount(discountDeadline: Date, asOfDate: Date): number {
-    const diffTime = discountDeadline.getTime() - asOfDate.getTime()
-    const diffDays = exactCeil(diffTime / (1000 * 60 * 60 * 24))
-    return exactMax(0, diffDays)
+    return daysRemaining(discountDeadline, asOfDate)
   }
 
   /**

@@ -1,4 +1,5 @@
-import { exactAbs, exactFloor } from '@/algebra'
+import { exactAbs } from '@/algebra'
+import { daysBetween } from '@/utility'
 /**
  * Period-End Adjustment Service — depreciation, accruals, deferrals, allocations.
  *
@@ -305,9 +306,7 @@ export class PeriodEndAdjustmentService {
     asOfDate: Date
   ): InterestAccrualCalculation {
     // Days since last accrual
-    const daysInPeriod = exactFloor(
-      (asOfDate.getTime() - accrual.lastAccrualDate.getTime()) / (1000 * 60 * 60 * 24)
-    ) || 1;
+    const daysInPeriod = daysBetween(accrual.lastAccrualDate, asOfDate) || 1;
 
     const dailyInterest = (accrual.principalAmount * accrual.annualRate) / 100 / 365;
     const periodInterest = dailyInterest * daysInPeriod;
@@ -397,9 +396,7 @@ export class PeriodEndAdjustmentService {
     asOfDate: Date
   ): SalaryAccrualCalculation {
     // Days since last accrual
-    const daysInPeriod = exactFloor(
-      (asOfDate.getTime() - salary.lastAccrualDate.getTime()) / (1000 * 60 * 60 * 24)
-    ) || 1;
+    const daysInPeriod = daysBetween(salary.lastAccrualDate, asOfDate) || 1;
 
     const dailyRate = salary.weeklyPayroll / 7;
     const periodAccrual = dailyRate * daysInPeriod;

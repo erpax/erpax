@@ -27,6 +27,7 @@ import { rootCollisions, undeclaredRoots } from '@/merge/order'
 import { uncitedPages } from '@/algebra'
 import { staleSizeClaims } from '@/rules/drift'
 import { readmeRedundancy, readmeSeo } from '@/readme/audit'
+import { unitRederivations } from '@/rules/unit'
 import { replaceableStandards } from '@/proof/replaceable'
 import { atomListingGaps } from '@/publish/complete'
 import { claimBalance, totalSlack } from '@/rules/slack'
@@ -296,6 +297,13 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // atoms share, and `## payload` printed one version string twenty times. Free prose is NOT
     // judged: hunting repeated fragments there returned six findings and all six were lawful.
     guardian({ axis: 'readme-redundancy', violations: readmeRedundancy(cwd).length, baseline: 0 }),
+    // unit — a declared time unit re-derived instead of asked for ([[rules]]/unit). The DAY divisor
+    // stood at 24 addresses in four notations (`1000*60*60*24`, `86_400_000`, `86400000`,
+    // `24*60*60*1000`) while `daysBetween` called itself the single source of truth and three files
+    // used it; folding them found a receipt-lag metric computing `billDate - billDate`, always 0 in
+    // every vendor report. `day` is now a theorem at 0; hour/minute are the named residue, since a
+    // duration FORMATTER decomposes a span rather than differencing two dates.
+    guardian({ axis: 'unit', violations: unitRederivations(cwd).length, baseline: 11 }),
     // readme-seo — the README audited by the SITE's own `deriveSeoMeta`/`auditSeo` ([[readme]]/audit).
     // One derivation, two faces: improving it moves the README and the generated pages together, and
     // a second SEO derivation for the README would be one truth at two addresses. MAJOR only —

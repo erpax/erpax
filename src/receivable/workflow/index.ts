@@ -1,5 +1,5 @@
 /** @index-cross.foldback child=receivable/workflow parent=receivable — this cross folds back into its parent. */
-import { exactCeil, exactMax } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * Invoice Status Workflow — directed-graph state transitions.
  *
@@ -14,6 +14,7 @@ import { exactCeil, exactMax } from '@/algebra'
  * @see docs/STANDARDS.md §5
  */
 
+import { daysBetweenCeil, daysOverdue } from '@/utility'
 import { Invoice, InvoiceStatus, CollectionEvent } from '@/types/receivables'
 
 export class InvoiceStatusWorkflow {
@@ -187,9 +188,7 @@ export class InvoiceStatusWorkflow {
    * Calculate days overdue
    */
   static calculateDaysOverdue(dueDate: Date, asOfDate: Date = new Date()): number {
-    const diffTime = asOfDate.getTime() - dueDate.getTime()
-    const diffDays = exactCeil(diffTime / (1000 * 60 * 60 * 24))
-    return exactMax(0, diffDays)
+    return daysOverdue(dueDate, asOfDate)
   }
 
   /**
@@ -212,7 +211,6 @@ export class InvoiceStatusWorkflow {
    * Calculate invoice age
    */
   static getInvoiceAge(invoiceDate: Date, asOfDate: Date = new Date()): number {
-    const diffTime = asOfDate.getTime() - invoiceDate.getTime()
-    return exactCeil(diffTime / (1000 * 60 * 60 * 24))
+    return daysBetweenCeil(invoiceDate, asOfDate)
   }
 }

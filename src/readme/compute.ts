@@ -1043,21 +1043,7 @@ export function aggregateCorpusAnalytics(models: readonly FolderReadmeModel[]): 
     byHoroAcc.set(digit, row)
   }
   const meanBondDegree = folderCount > 0 ? exactRound((bondSum * 100) / folderCount) / 100 : 0
-  const byHoro: CorpusHoroRollup[] = [...byHoroAcc.entries()]
-    .sort((a, b) => {
-      const ai = HORO_DIGITS.indexOf(a[0] as (typeof HORO_DIGITS)[number])
-      const bi = HORO_DIGITS.indexOf(b[0] as (typeof HORO_DIGITS)[number])
-      if (ai >= 0 && bi >= 0) return ai - bi
-      if (ai >= 0) return -1
-      if (bi >= 0) return 1
-      return a[0] - b[0]
-    })
-    .map(([digit, row]) => ({
-      digit,
-      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
-      atoms: row.atoms,
-      sealed: row.sealed,
-    }))
+  const byHoro = horoRollup(byHoroAcc)
   return {
     folderCount,
     sealed,
@@ -1072,6 +1058,31 @@ export function aggregateCorpusAnalytics(models: readonly FolderReadmeModel[]): 
   }
 }
 
+/**
+ * The per-horo rollup, built once.
+ *
+ * `deriveCorpusAnalytics` and `mergeCorpusAnalytics` each carried this ring-ordered sort-and-map
+ * verbatim — one 40-node body at two addresses ([[rules]]/copy), with both sites reported un-folded.
+ * Off-ring digits sort last and keep their own label, which is the only subtlety and is now stated
+ * in one place instead of two.
+ */
+const horoRollup = (acc: ReadonlyMap<number, { atoms: number; sealed: number }>): CorpusHoroRollup[] =>
+  [...acc.entries()]
+    .sort((a, b) => {
+      const ai = HORO_DIGITS.indexOf(a[0] as (typeof HORO_DIGITS)[number])
+      const bi = HORO_DIGITS.indexOf(b[0] as (typeof HORO_DIGITS)[number])
+      if (ai >= 0 && bi >= 0) return ai - bi
+      if (ai >= 0) return -1
+      if (bi >= 0) return 1
+      return a[0] - b[0]
+    })
+    .map(([digit, row]) => ({
+      digit,
+      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
+      atoms: row.atoms,
+      sealed: row.sealed,
+    }))
+
 /** Merge two corpus analytics rollups — wave-batch accumulator (OOM guard). */
 export function mergeCorpusAnalytics(a: CorpusAnalytics, b: CorpusAnalytics): CorpusAnalytics {
   const folderCount = a.folderCount + b.folderCount
@@ -1083,21 +1094,7 @@ export function mergeCorpusAnalytics(a: CorpusAnalytics, b: CorpusAnalytics): Co
     cur.sealed += row.sealed
     byHoroAcc.set(row.digit, cur)
   }
-  const byHoro: CorpusHoroRollup[] = [...byHoroAcc.entries()]
-    .sort((x, y) => {
-      const ai = HORO_DIGITS.indexOf(x[0] as (typeof HORO_DIGITS)[number])
-      const bi = HORO_DIGITS.indexOf(y[0] as (typeof HORO_DIGITS)[number])
-      if (ai >= 0 && bi >= 0) return ai - bi
-      if (ai >= 0) return -1
-      if (bi >= 0) return 1
-      return x[0] - y[0]
-    })
-    .map(([digit, row]) => ({
-      digit,
-      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
-      atoms: row.atoms,
-      sealed: row.sealed,
-    }))
+  const byHoro = horoRollup(byHoroAcc)
   return {
     folderCount,
     sealed: a.sealed + b.sealed,
