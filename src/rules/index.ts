@@ -471,7 +471,13 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     guardian({ axis: 'dangling-specifier', violations: danglingSpecifiers(cwd).length, baseline: 0 }),
     guardian({ axis: 'echo', violations: echoes(cwd).length, baseline: 152 }),
     guardian({ axis: 'ask', violations: bareAsks(cwd).bare.length, baseline: 786 }),
-    guardian({ axis: 'unfolded', violations: (() => { const r = unfoldedExports(cwd); return r.dead.length + r.single.length })(), baseline: 814 }),
+    // unfolded — an export with no caller or exactly one ([[rules]]/unfolded). The baseline moved
+    // 814 → 1207 because the INSTRUMENT was corrected, not because the tree got worse: the
+    // reference counter was a text scan and counted PROSE as usage, so any symbol discussed in any
+    // comment read as reused. It now walks `ts.Identifier` nodes, which cannot occur inside a
+    // comment or a string. 392 un-folded exports had been invisible — the same class
+    // [[rules]]/cycle re-based for when it swapped a regex for the grammar (152 → 225 files).
+    guardian({ axis: 'unfolded', violations: (() => { const r = unfoldedExports(cwd); return r.dead.length + r.single.length })(), baseline: 1207 }),
     // atom-completeness — three independent listings of what atoms exist must agree on MEMBERS,
     // not merely on totals ([[publish]]/complete). The matrix held 3,466 against a corpus of
     // 3,474 this session and nothing said so. Zero is a theorem.

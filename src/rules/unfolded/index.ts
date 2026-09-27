@@ -20,7 +20,8 @@
  *
  * Composes [[rules]] · [[law]].
  */
-import { allFiles, textOf } from '@/syntax/cache'
+import { allFiles, textOf, astOf } from '@/syntax/cache'
+import ts from 'typescript'
 import { join, relative } from 'node:path'
 
 import { shapesOf } from '@/rules/collapse'
@@ -67,6 +68,37 @@ export interface ScannedExport {
 }
 
 /** Every src export with its call-site count and atom — the ONE scan `unfoldedExports` + `deadAtoms` share (DRY). */
+/**
+ * Identifier occurrences in one file, counted from the GRAMMAR.
+ *
+ * This was a text scan, and it counted PROSE as usage. A docstring in this very file explaining why
+ * `algebraTan` must not be deleted made `algebraTan` read as called — it left the dead list because
+ * it had been written about. Every number this gate has ever reported was therefore a FLOOR: any
+ * symbol discussed in any comment anywhere read as reused. Correcting it moved the corpus total from
+ * 813 to 1,207.
+ *
+ * That is the fourth time this corpus has paid for the same class — [[rules]]/prose counted keywords
+ * (1,261 → 15), [[rules]]/reference counted string literals (97 → 48), [[rules]]/confine flagged a
+ * comment describing the pattern. A comment is data. The parser is the only instrument that knows
+ * the difference, and a `ts.Identifier` node cannot occur inside a comment or a string literal.
+ *
+ * An import or re-export NAMES a symbol without USING it — plumbing, not a call site — so those
+ * clauses are skipped whole. Counting them makes a genuine single use (import + one call) look
+ * reused, which hides exactly what this gate exists to find.
+ */
+function identifierFrequency(file: string, text: string): ReadonlyMap<string, number> {
+  const freq = new Map<string, number>()
+  const src = astOf(file, text)
+  const visit = (node: ts.Node): void => {
+    // Plumbing, not use: the whole clause is skipped rather than its identifiers counted.
+    if (ts.isImportDeclaration(node) || ts.isExportDeclaration(node)) return
+    if (ts.isIdentifier(node)) freq.set(node.text, (freq.get(node.text) ?? 0) + 1)
+    ts.forEachChild(node, visit)
+  }
+  ts.forEachChild(src, visit)
+  return freq
+}
+
 export function scanExports(cwd: string = process.cwd()): ScannedExport[] {
   const files = sourceFiles(join(cwd, 'src'))
   const freq = new Map<string, number>()
@@ -81,12 +113,7 @@ export function scanExports(cwd: string = process.cwd()): ScannedExport[] {
     for (const m of t.matchAll(/export\s+(?:async\s+)?(?:function|const)\s+([A-Za-z_$][\w$]*)/g)) {
       if (!defs.has(m[1]!)) defs.set(m[1]!, relative(cwd, f).replace(/\\/g, '/'))
     }
-    // An import/re-export NAMES the symbol without USING it — plumbing, not a call site. Counting it makes
-    // a genuine single-use (import + one call) look reused, which hides exactly what this gate is for.
-    const used = t
-      .replace(/import\s+[^;]*?from\s+['"][^'"]+['"];?/gs, '')
-      .replace(/export\s*\{[^}]*\}\s*from\s+['"][^'"]+['"];?/gs, '')
-    for (const m of used.matchAll(/\b[A-Za-z_$][\w$]*\b/g)) freq.set(m[0]!, (freq.get(m[0]!) ?? 0) + 1)
+    for (const [id, n] of identifierFrequency(f, t)) freq.set(id, (freq.get(id) ?? 0) + n)
   }
   const out: ScannedExport[] = []
   for (const [name, file] of defs) {
@@ -170,3 +197,40 @@ if (import.meta.url === 'file://' + process.argv[1]) {
 }
 
 /** @index-cross.foldback child=rules/unfolded parent=rules — this cross folds back into its parent. */
+
+/**
+ * A **substitute surface** — an export whose emptiness is its purpose.
+ *
+ * `@/algebra` exports `algebraTan = (x) => Math.tan(x)` and a dozen siblings, and the `host-math`
+ * axis forbids `Math.*` everywhere outside those atoms, at a baseline of 0. So an *uncalled*
+ * `algebraTan` is not dead weight: it is the only lawful door to a tangent. Delete it and the next
+ * caller either re-adds it or violates the gate that made it necessary — **the completeness of the
+ * substitute surface IS the reason it exists.**
+ *
+ * This is a second exemption beside the published-package face this atom already names, and the face
+ * check cannot see it: `src/algebra` ships in no package. It was found by reading six of the 116
+ * "unambiguously dead" exports and discovering that all six had to stay.
+ *
+ * Decidable, and narrow on purpose: the body must be a direct wrapper — a call on, or a property of,
+ * a global this corpus forbids elsewhere. A function that merely MENTIONS `Math` somewhere inside a
+ * larger body is not a substitute, it is a user, and it earns no exemption.
+ *
+ * @invariant a wrapper of a forbidden global is never reported as dead weight
+ */
+const SUBSTITUTED_GLOBALS: readonly string[] = ['Math']
+
+export function substituteWrappers(cwd: string = process.cwd()): readonly UnfoldedExport[] {
+  const { dead } = unfoldedExports(cwd)
+  return dead.filter((e) => {
+    const text = textOf(join(cwd, e.file))
+    const at = text.indexOf(`export const ${e.name} =`)
+    if (at < 0) return false
+    const nl = text.indexOf('\n', at)
+    const line = nl === -1 ? text.slice(at) : text.slice(at, nl)
+    const rhs = line.slice(line.indexOf('=') + 1).trim()
+    // Strip one arrow head — `(x: number): number =>` — leaving the body. A substitute is one line.
+    const arrow = rhs.indexOf('=>')
+    const body = (arrow === -1 ? rhs : rhs.slice(arrow + 2)).trim()
+    return SUBSTITUTED_GLOBALS.some((g) => body.startsWith(`${g}.`))
+  })
+}
