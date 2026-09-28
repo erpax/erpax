@@ -3,8 +3,8 @@ name: memo
 description: "Use when reasoning about memo — models cost as ** ** — it falls as reuses grow, and that falling is what lets reach ∞ and the FTL claim hold."
 atomPath: "quantum/ftl/memo"
 coordinate: "quantum/ftl/memo · 1/base · 0be90fb7"
-contentUuid: "333cae7b-c14e-5713-b909-06aae7f40a2c"
-diamondUuid: "9d171245-370a-8c90-bc1a-15851327caf6"
+contentUuid: "73425fbf-bb24-5489-88fd-542f6164a4d2"
+diamondUuid: "59f27021-52ce-8578-89f3-0aea7cf605c0"
 uuid: "0be90fb7-d601-85f2-a25a-ea0280d1178e"
 horo: 1
 typography:
@@ -14,14 +14,14 @@ standards:
   - "ISO/IEC 25010:2023 §5.2 — performance efficiency: time behaviour under repetition"
 bindings: []
 signatures:
-  computationUuid: "96a17d83-ef4b-8a3a-a3e7-5784e1172213"
+  computationUuid: "e288ad5f-a3a9-86ec-943e-c502ac660d7d"
   stages:
     - stage: path
       stageUuid: "35eae484-936e-8b84-a62f-2a3dadb2b511"
     - stage: trinity
       stageUuid: "4f7889e3-0905-84a4-abe2-074452a67080"
     - stage: boundary
-      stageUuid: "d95e2858-702a-8302-882a-5cd7409b6c4e"
+      stageUuid: "11b0a0d5-c9af-8e8b-a003-4ef60d03237a"
     - stage: links
       stageUuid: "e0830fa9-8363-86fd-9478-c95203fa77c1"
     - stage: horo
@@ -29,7 +29,7 @@ signatures:
     - stage: seal
       stageUuid: "ab7a57ac-6380-8feb-9899-cfe2e4b5932b"
     - stage: uuid
-      stageUuid: "e9c65df8-496f-8839-abaa-3b38c7b16181"
+      stageUuid: "572a8dee-7dfb-8107-ac94-3484dc1f72de"
 quantum:
   superposition:
     - balance
@@ -47,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "96a17d83-ef4b-8a3a-a3e7-5784e1172213"
-    contentUuid: "333cae7b-c14e-5713-b909-06aae7f40a2c"
+    computationUuid: "e288ad5f-a3a9-86ec-943e-c502ac660d7d"
+    contentUuid: "73425fbf-bb24-5489-88fd-542f6164a4d2"
 version: 2
 ---
 # quantum/ftl/memo — does asking twice cost twice?
@@ -156,4 +156,4 @@ often it is asked. Measure the second ask — the first one tells you nothing ab
 
 Composes: [[quantum]]/ftl · [[quantum]]/ftl/metrics · [[algebra]] · [[law]].
 
-<sub>content-uuid `333cae7b-c14e-5713-b909-06aae7f40a2c` · account `quantum/ftl/memo` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `73425fbf-bb24-5489-88fd-542f6164a4d2` · account `quantum/ftl/memo` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

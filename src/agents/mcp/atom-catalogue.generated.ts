@@ -6569,6 +6569,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/ftl/memo"
   },
   {
+    "atom": "disk",
+    "name": "disk",
+    "description": "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too.",
+    "path": "quantum/ftl/memo/disk"
+  },
+  {
     "atom": "metrics",
     "name": "metrics",
     "description": "Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations",

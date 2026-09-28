@@ -2042,7 +2042,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 199,
+    "count": 200,
     "modules": [
       {
         "path": "src/agent/SKILL.md",

@@ -1071,6 +1071,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "quantum/ftl/crack",
   "quantum/ftl/map",
   "quantum/ftl/memo",
+  "quantum/ftl/memo/disk",
   "quantum/ftl/metrics",
   "quantum/ftl/purify",
   "quantum/ftl/verdict",
@@ -1535,7 +1536,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1528 as const
+export const ATOM_LEDGER_PATH_COUNT = 1529 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -5462,6 +5463,12 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "quantum/ftl",
     "quantum/ftl/memo"
   ],
+  "quantum/ftl/memo/disk": [
+    "quantum",
+    "quantum/ftl",
+    "quantum/ftl/memo",
+    "quantum/ftl/memo/disk"
+  ],
   "quantum/ftl/metrics": [
     "quantum",
     "quantum/ftl",
@@ -7172,4 +7179,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 876 as const
+export const MERGED_NESTED_PATH_COUNT = 877 as const

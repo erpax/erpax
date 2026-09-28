@@ -22278,7 +22278,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about stale references as entropy — an import whose target does not exist on disk is a dead wire that lowers tamper-cost; this scans every `@/` import across src/scripts/.vitepress and reports the live fraction that resolves to a real file.",
-        "uuid": "2ef99362-735e-8b13-afe6-7e0d7b1a7407",
+        "uuid": "f7ed758a-293e-8403-b1f5-1557976462f5",
         "words": [
           "use",
           "when",
@@ -49911,7 +49911,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-        "uuid": "35773541-5a65-857a-a03b-994cf037fc62",
+        "uuid": "c07833ea-6092-8c4d-b2e8-0e3484303c2d",
         "words": [
           "use",
           "when",
@@ -67683,6 +67683,72 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "disk",
+    "path": "quantum/ftl/memo/disk",
+    "translations": [
+      {
+        "key": "name",
+        "source": "disk",
+        "uuid": "44a097c2-9d35-84b3-818a-4eacbf8c9157",
+        "words": [
+          "disk"
+        ],
+        "values": {
+          "en": "disk"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too.",
+        "uuid": "4a01d962-24ac-8b2a-92f1-9c32b59dec1e",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "disk",
+          "the",
+          "in",
+          "process",
+          "memo",
+          "takes",
+          "a",
+          "re",
+          "ask",
+          "to",
+          "zero",
+          "within",
+          "one",
+          "run",
+          "a",
+          "fresh",
+          "process",
+          "every",
+          "ci",
+          "job",
+          "every",
+          "pre",
+          "push",
+          "still",
+          "paid",
+          "the",
+          "first",
+          "ask",
+          "in",
+          "full",
+          "this",
+          "makes",
+          "that",
+          "free",
+          "too"
+        ],
+        "values": {
+          "en": "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too."
+        }
+      }
+    ]
+  },
+  {
     "atom": "metrics",
     "path": "quantum/ftl/metrics",
     "translations": [
@@ -85193,7 +85259,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the corpus improving itself with NO external tool — the development-time twin of self/closure's Law 53. Every stage of the improvement loop (leftover · rosetta · decide · publish · think) is a local atom; selfImproves proves the external-tool count is zero and loopResolves proves the loop is real matter on disk, not fabricated prose.",
-        "uuid": "f463bc91-4fdc-8deb-a77d-fa79064b89b2",
+        "uuid": "22d2ce05-5372-85e2-8159-54e9584c4903",
         "words": [
           "use",
           "when",
@@ -212268,4 +212334,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3630
+export const TRANSLATIONS_COUNT = 3631

@@ -1,3 +1,54 @@
+---
+name: disk
+description: "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too."
+atomPath: "quantum/ftl/memo/disk"
+coordinate: "quantum/ftl/memo/disk · 4/weave · 44a097c2"
+contentUuid: "ec57d6fa-9a03-5641-b571-a1f1e987534c"
+diamondUuid: "a85962ad-fc5f-82b9-ae63-8d22dd8f02b4"
+uuid: "44a097c2-9d35-84b3-818a-4eacbf8c9157"
+horo: 4
+typography:
+  partition: quantum
+  bondDegree: 6
+standards:
+  - "ISO/IEC 25010:2023 §5.6 — maintainability: one truth, one address"
+bindings: []
+signatures:
+  computationUuid: "d4125edd-3047-82fc-95e6-abce96d24c5d"
+  stages:
+    - stage: path
+      stageUuid: "0a9965b8-9539-83bb-91eb-fd792c134093"
+    - stage: trinity
+      stageUuid: "f9d345f6-8605-8793-8524-cb90817c25a7"
+    - stage: boundary
+      stageUuid: "0ec6c718-f96d-83c1-9503-5b99ac473aee"
+    - stage: links
+      stageUuid: "aaf16dfb-6807-857b-8476-cd0e96223e53"
+    - stage: horo
+      stageUuid: "22506213-7033-8250-a04b-886dff8c2107"
+    - stage: seal
+      stageUuid: "cfe27f3f-5824-84a9-a391-032515591299"
+    - stage: uuid
+      stageUuid: "2296decf-b6a4-8e2f-a98d-09aa5bd9a6f6"
+quantum:
+  superposition:
+    - law
+    - memo
+    - quantum
+    - superposition
+  collapse:
+    - "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "d4125edd-3047-82fc-95e6-abce96d24c5d"
+    contentUuid: "ec57d6fa-9a03-5641-b571-a1f1e987534c"
+version: 2
+---
 # quantum/ftl/memo/disk — the verdict sealed across processes, keyed on the content git already holds
 
 The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every
@@ -74,3 +125,5 @@ stale verdict waiting for its moment.**
 - **ISO/IEC 25010:2023 §5.6** — maintainability: one truth, one address.
 
 Composes: [[quantum]]/ftl/memo · [[law]].
+
+<sub>content-uuid `ec57d6fa-9a03-5641-b571-a1f1e987534c` · account `quantum/ftl/memo/disk` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
