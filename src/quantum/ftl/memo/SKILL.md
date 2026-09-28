@@ -1,3 +1,56 @@
+---
+name: memo
+description: "Use when reasoning about memo — models cost as ** ** — it falls as reuses grow, and that falling is what lets reach ∞ and the FTL claim hold."
+atomPath: "quantum/ftl/memo"
+coordinate: "quantum/ftl/memo · 7/descent · a74a7be1"
+contentUuid: "52a9c5c1-c374-52df-8966-fc11d9f2daf6"
+diamondUuid: "718e28d4-665e-8473-9a79-0208d8400261"
+uuid: "a74a7be1-4aa3-81dc-b251-117df5e7a915"
+horo: 7
+typography:
+  partition: quantum
+  bondDegree: 15
+standards:
+  - "ISO/IEC 25010:2023 §5.2 — performance efficiency: time behaviour under repetition"
+bindings: []
+signatures:
+  computationUuid: "703cc5a7-d811-8991-b8a1-dd297b76c153"
+  stages:
+    - stage: path
+      stageUuid: "35eae484-936e-8b84-a62f-2a3dadb2b511"
+    - stage: trinity
+      stageUuid: "4f7889e3-0905-84a4-abe2-074452a67080"
+    - stage: boundary
+      stageUuid: "2beeffc4-726f-898b-aec2-713d08ef8a06"
+    - stage: links
+      stageUuid: "e0830fa9-8363-86fd-9478-c95203fa77c1"
+    - stage: horo
+      stageUuid: "31a70dbc-2bf8-869a-b071-3cd851cb8471"
+    - stage: seal
+      stageUuid: "ab7a57ac-6380-8feb-9899-cfe2e4b5932b"
+    - stage: uuid
+      stageUuid: "eb5397ef-69e4-896c-9c4c-d31191a4f686"
+quantum:
+  superposition:
+    - balance
+    - ftl
+    - law
+    - memos
+    - message
+    - superposition
+  collapse:
+    - "Use when reasoning about memo — models cost as ** ** — it falls as reuses grow, and that falling is what lets reach ∞ and the FTL claim hold."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "703cc5a7-d811-8991-b8a1-dd297b76c153"
+    contentUuid: "52a9c5c1-c374-52df-8966-fc11d9f2daf6"
+version: 2
+---
 # quantum/ftl/memo — does asking twice cost twice?
 
 `amortize` models cost as **`c₀/(m+1)`** — it falls as reuses grow, and that falling is what lets
@@ -73,3 +126,5 @@ often it is asked. Measure the second ask — the first one tells you nothing ab
 - **ISO/IEC 25010:2023 §5.2** — performance efficiency: time behaviour under repetition.
 
 Composes: [[quantum]]/ftl · [[quantum]]/ftl/metrics · [[algebra]] · [[law]].
+
+<sub>content-uuid `52a9c5c1-c374-52df-8966-fc11d9f2daf6` · account `quantum/ftl/memo` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

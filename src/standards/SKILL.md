@@ -2,10 +2,10 @@
 name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
-coordinate: "standards · 8/crest · 8328716c"
-contentUuid: "26110f2e-6a73-509e-ba46-9f727b2c7088"
-diamondUuid: "9a7e8354-8e89-86fd-a5f2-1b9254070667"
-uuid: "8328716c-dc65-8370-899b-9f1aa64a074b"
+coordinate: "standards · 8/crest · 2f3f3df9"
+contentUuid: "6287e077-f011-5a5a-ab30-d230208c4633"
+diamondUuid: "3f763730-3281-8efe-9126-0fb09ce6cb62"
+uuid: "2f3f3df9-cc52-8338-a252-3f275259cab3"
 horo: 8
 typography:
   partition: standards
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "26552419-354b-820d-88dc-939de711eebe"
+  computationUuid: "a95f2ccc-b6bf-8561-bec3-60a2760e121e"
   stages:
     - stage: path
       stageUuid: "e4d21269-1c37-8fe4-85da-1900af3645f0"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "ce14a10d-8dd0-8830-b2ef-cf5cffbeec8e"
     - stage: horo
-      stageUuid: "b3c3b44f-849a-8aa0-b75a-8841afe9d47b"
+      stageUuid: "03c0db6c-57f4-83b8-a4a4-69f5c667a6ed"
     - stage: seal
       stageUuid: "47197e8b-0e61-8144-80ca-7730bd2eb282"
     - stage: uuid
-      stageUuid: "0a8c068b-4fba-8642-88ae-411b8089f898"
+      stageUuid: "cc0bf540-e468-8677-9730-b4d8457717a5"
 version: 2
 ---
 # standards
@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6689 citations
+## Catalogue — 159 standards, 6690 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -122,7 +122,7 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 
 ### iec
 
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(287 80% 39%)"></span> `ISO/IEC-25010` — Systems & software quality models · 198 · `3c2f1991`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(287 80% 39%)"></span> `ISO/IEC-25010` — Systems & software quality models · 199 · `3c2f1991`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(355 59% 40%)"></span> `ISO/IEC-29119` — Software testing · 83 · `e69bd662`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(25 66% 53%)"></span> `ISO/IEC-23894` — AI risk management · 16 · `bb2197cf`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(272 55% 53%)"></span> `ISO/IEC-12207` — Software life-cycle processes · 9 · `897869e7`

@@ -6563,6 +6563,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/ftl/map"
   },
   {
+    "atom": "memo",
+    "name": "memo",
+    "description": "Use when reasoning about memo — models cost as ** ** — it falls as reuses grow, and that falling is what lets reach ∞ and the FTL claim hold.",
+    "path": "quantum/ftl/memo"
+  },
+  {
     "atom": "metrics",
     "name": "metrics",
     "description": "Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations",

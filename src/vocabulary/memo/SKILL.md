@@ -3,13 +3,13 @@ name: memo
 description: Use when modelling one memo — the singular model of the memos collection (the plural store); a brief internal written note.
 atomPath: "vocabulary/memo"
 coordinate: "vocabulary/memo · 5/round · 1daa857a"
-contentUuid: "b8ac09e2-c981-5925-9a53-84c38fa78f09"
+contentUuid: "804c7059-caff-5331-8abe-1d64552d5562"
 diamondUuid: "25732940-2187-8d83-a11a-cbdfc0185b15"
 uuid: "1daa857a-ef50-8b2f-8a77-4176ee3482c4"
 horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 12
+  bondDegree: 15
 standards: []
 bindings: []
 signatures:
