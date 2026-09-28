@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the standards catalogue must be read rather than changed — coverage by schema, UI improvement waves, and O(1) address lookup, each memoized on the catalogue's own content-address.",
-    "uuid": "bafb7174-1df9-82a3-9036-c7b24e675079",
+    "uuid": "242ff3e6-edb2-8227-b235-c25798e137e3",
     "words": [
       "use",
       "when",
