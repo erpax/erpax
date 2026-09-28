@@ -52,36 +52,31 @@ Matter-twin: `self/sufficient/index.ts` (`selfSufficiencyVerdict` · `internalis
 
 ## One address or no cross
 
-`leadCross` crossed every source's targets as ONE set, and the two live sources it had name different
-things: a guardian's target is an axis NAME (`linear-gap`), an unreached atom's is a PATH
-(`admin/ui/cells`). Two strings from different namespaces are never equal, so the cross could report
-only absence — and it did, as `corroborated: []`, which reads exactly like *no agreement found*.
+`leadCross` compared all targets as ONE set, and its sources name different things: an axis NAME
+(`linear-gap`) against an atom PATH (`admin/ui/cells`). So it could only report absence — and did, as
+`corroborated: []`, which reads like *no agreement found*. Worse, `unreached` the SOURCE is exactly the
+population of `unreached` the AXIS — total containment — reported as `orthogonal`. The test's fixture
+listed an unreached atom called `accounting-wave`, an axis name that cannot be a path: evidence built to
+match the assertion. Now 4 scopes, compared only within; live corroborated **0 → 106**. A COUNT names no
+atom, which is why `populations` supplies members; and `incommensurable` (alone in a scope) is separated
+from `orthogonal` (compared, met nothing).
 
-It was worse than empty. The `unreached` source is **precisely the population of the `unreached`
-axis** — total containment, the strongest relation the instrument has — and it was reported as
-`orthogonal`, meaning independent signal nothing else would find.
+## A count is not agreement
 
-The test made it invisible. Its fixture listed an unreached atom called `accounting-wave`, which is an
-AXIS name and cannot be an atom path, so the one assertion that proved corroboration worked was
-standing on evidence built to match it — [[rules]]/mirror arriving one atom over.
+`unfolded` names **428 of 579** atoms, so it agrees with everything by size. `lift = shared / expected`:
 
-| | before | after |
-| --- | ---: | ---: |
-| scopes the cross compared | 1 (all namespaces as one set) | 4, compared only within |
-| live corroborated targets | 0 | 106 |
-| sources that cannot corroborate, and say so | — | 1 (`guardian`) |
+| pair | shared | expected | lift |
+| --- | ---: | ---: | ---: |
+| `copy × unfolded` | 5 | 3.7 | **1.35** |
+| `cycle × unfolded` | 59 | 77.6 | 0.76 |
+| `cycle × unreached` | 1 | 12.5 | **0.08** |
 
-Three things follow, and each is now in the type:
+The largest agreement is below chance; the one above it is the cross already drawn by hand. `0.08` is a
+theorem in the data — nothing imports an unreached atom, so it can hardly sit in a tangle. Emptiness
+belongs to the ADDRESS: `mirror × unfolded` is 0 by file, 19 by atom.
 
-- **Every lead names its own target.** The old `leadTarget` regex took the first identifier out of the
-  sentence — `linear` from `linear-gap`. A producer knows its target; parsing it back out of prose is
-  the guess this corpus keeps paying for.
-- **A count names no atom.** A guardian says `accounting-wave 258` and cannot meet anything, however
-  red it is. `populations` exists for that: the axis's violating MEMBERS, normalised to atoms, which
-  is the only form of a guardian's finding another source can corroborate.
-- **Alone in a scope is not orthogonal.** `incommensurable` separates *nothing to compare against*
-  from *compared and met nothing*. Collapsing them is how the total containment above read as
-  independence.
+**Honest boundary.** The universe is the union of SUPPLIED populations, so every lift moves when a law is
+added, and corroboration counts SOURCES — two from one scan are not independent.
 
 ## A count is not agreement
 

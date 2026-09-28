@@ -714,6 +714,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   process.exit(verdict.sealed ? 0 : 1)
 }
 
+export * from './scope'
 export * from './slack'
 export * from './unreached'
 export * from './copy'

@@ -56,34 +56,18 @@ A bypass appearing only in a **comment** is prose about the pattern, not a use o
 
 ## The MCP gateway is a request path too
 
-The scope was `src/app` — "the directory Next.js routes" — and the gap was in the security direction.
-The MCP gateway is mounted at **`/api/mcp`**, its tool handlers run with `req.payload` on a caller's
-behalf, and it sat **entirely outside** this axis. That is [[rules]]/domain's law arriving in a security
-gate: a law reaches exactly the file classes its checker opens, and on the rest it is not passing, it is
-silent.
+The scope was `src/app`. The MCP gateway is mounted at **`/api/mcp`** and its tool handlers run with
+`req.payload` on a caller's behalf — a request path by every definition this axis uses, and it sat
+outside the law entirely. [[rules]]/domain arriving in a security gate.
 
-Measured before widening: the MCP surface performs the construct **7 times** and every one is
-`overrideAccess: false` — access control deliberately left ON, in `tool-defs`, `tool/versions` and
-`tool/batch`. So the widening is a **theorem at zero over a non-empty population**: the gate now stands
-where traffic passes rather than being a check that cannot fire ([[rules]]/unraised).
+The MCP surface performs the construct **7 times**, every one `overrideAccess: false`, so the widening
+is a theorem at zero over a NON-EMPTY population. Proved by planting: a handler under
+`src/agents/mcp/tool` doing `overrideAccess: true` with no `payload.auth` is reported `UNAUTHENTICATED`.
 
-Proved by planting: a handler under `src/agents/mcp/tool` doing `overrideAccess: true` with no
-`payload.auth` is reported `UNAUTHENTICATED`. Under the old scope it was invisible.
-
-### the law describing itself
-
-Widening it immediately flagged `atom-catalogue.generated.ts` **twice**, and one of the two strings is
-*this atom's own SKILL description* — "Payload's Local API defaults to overrideAccess:true, so bypass is
-the ambient condition a route inherits". The gate would have charged the law for describing itself.
-
-Comment-stripping could not catch it: those are **string literals in generated data**, not comments.
-Every other gate in this corpus already refuses a generated face as evidence — it restates every symbol
-and every SKILL description — and this one now does too. Third time this class appeared in one session,
-after a paginated `from` read as a currency and Google's response-format `alt` read as an altitude.
-
-**Honest boundary, unchanged and now wider.** This still proves a bypassing handler *also calls*
-`payload.auth` somewhere in the same file — never that the auth guards that call, and never that the
-derived scope is correct. What widened is the set of files where that question is asked at all.
+It also flagged `atom-catalogue.generated.ts` twice — and one of the two strings is **this atom's own
+SKILL description**. The gate would have charged the law for describing itself. Comment-stripping cannot
+catch it: those are string literals in generated data. Generated faces are now refused as evidence, as
+every other gate here already does.
 
 ## Honest boundary
 

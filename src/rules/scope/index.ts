@@ -143,3 +143,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`scope — ${un.length} law(s) with a tree scan and no changeset twin`)
   for (const u of un.slice(0, 20)) console.log(`  ${u.law.padEnd(24)} ${u.trees.join(', ')}`)
 }
+
+/** @index-cross.foldback child=rules/scope parent=rules — this cross folds back into its parent. */

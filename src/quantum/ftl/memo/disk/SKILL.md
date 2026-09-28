@@ -122,23 +122,21 @@ stale verdict waiting for its moment.**
 
 ## The surface is the sound half
 
-`contentKey` was scoped to `src`, and that is right for the five gates it was written for — they parse
-`.ts` and nothing else. Extending it to two more gates showed the scope IS the soundness argument, and
-that the two gates disagree about it:
+`skillWeights` reads 3,631 tracked `SKILL.md` and is sound on the `src` address. `deadLoaderPaths` parses
+`src/*.ts` and then asks whether targets under `scripts/` and `packages/` EXIST — so on a `src`-only key
+a deleted script keeps serving the green verdict. The address therefore takes a pathspec, and the
+pathspec is part of the hash. Proved by planting: a line appended to a `scripts/` file invalidates the
+wide seal and leaves the narrow one valid — both halves, since a one-sided test passes either way.
 
-| gate | reads | sound on the `src` address? |
-| --- | --- | --- |
-| `skillWeights` | 3,631 `SKILL.md` sizes under `src` | **yes** — all tracked, none ignored, so the blob hashes git already holds cover every byte it stats |
-| `deadLoaderPaths` | `src/*.ts` literals, then whether targets under `src`·`scripts`·`packages` EXIST | **no** — a deleted script leaves the previous green verdict standing |
+## The address was the un-folded cost
 
-So the address takes a pathspec, the pathspec is part of the hash (two surfaces never collide, and a
-widened surface cannot read what a narrower one sealed), and `deadLoaderPaths` is keyed on
-`['src','scripts','packages']`. Proved by planting: appending a line to a `scripts/` file invalidates
-the wide seal and leaves the narrow one valid — both halves, because a wider key that did no extra
-work and a narrower key that was secretly wide would each pass a one-sided test.
+`sealed` computed the address PER LABEL at 224–290 ms, so six gates spent ~1.5 s on one address — and
+`skillWeights` computes its whole answer in 152 ms, so sealing it would have been a pessimisation. The
+fix was to fold the key. Fresh process, seal warm: `skillWeights` 166 → **1 ms**, `deadLoaderPaths`
+2435 → **1 ms**. `deadCommands` is deliberately NOT sealed: 10 ms cold against a 224 ms address.
 
-Sealing `deadLoaderPaths` on the default key would have been the failure that gate exists to catch: a
-step whose target moved, still reporting green.
+A process that rewrites the tree and re-asks must call `forgetContentKeys`; `forgetMemos` does. `FORMAT`
+is `v2`, which invalidates every verdict sealed under the un-scoped key.
 
 ## The address was the un-folded cost
 

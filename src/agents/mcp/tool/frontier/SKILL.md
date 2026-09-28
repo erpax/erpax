@@ -107,24 +107,19 @@ queue can actually rank it.**
 
 Composes: [[self]]/sufficient · [[conjecture]] · [[rules]]/probe · [[think]] · [[law]].
 
-## The source that could not fire, and the cross that could not agree
+## The source that could not fire
 
-`SOURCES` declared four sources and `liveSources` wired three. `crosses` was accepted by the enum,
-validated by zod and contributed nothing — [[rules]]/unraised's defect (a case nothing constructs, so
-a check that cannot fire) sitting inside the tool whose job is to report the frontier.
+`SOURCES` declared four and `liveSources` wired three. `crosses` was accepted by the enum, validated by
+zod, and contributed nothing — [[rules]]/unraised's defect inside the tool that reports the frontier.
 
-Wiring it answered honestly: **zero leads, and that is correct.** Of the ten pairs among the five
-measured laws, the two with a non-empty intersection are both already DRAWN in prose, and the two
-undrawn pairs measure exactly 0 shared. There is no undrawn proven cross to report at the file
-address.
+Wired, it answers **zero, and that is correct**: of the ten pairs among the five measured laws, the two
+with a non-empty intersection are already drawn in prose and the two undrawn ones measure 0 shared.
 
-The second source, `populations`, exists because of what the first run showed: a guardian yields a
-COUNT, and a count names no atom, so no red axis could ever corroborate anything. `populations` gives
-the axis's violating members normalised to ATOM paths — `atomOfFile` from [[mesh]], reused rather than
-rewritten — so a law's finding and an unreached atom finally meet at one address. Both sources read
-the same five scans, so they share one lazy promise and asking for both pays once.
+`populations` exists because a guardian yields a COUNT, and a count names no atom, so no red axis could
+corroborate anything. It supplies the axis's violating members as ATOM paths via `atomOfFile` from
+[[mesh]], so a law's finding and an unreached atom finally meet at one address. Both sources read the
+same five scans behind one lazy promise.
 
-The crossing itself, the namespaces it refused to compare and the lift that separates a real agreement
-from the base rate are argued where the transform lives: [[self]]/sufficient § one address or no cross
-and § a count is not agreement.
+The crossing itself, the namespaces it refuses to compare and the lift that separates agreement from base
+rate are argued where the transform lives: [[self]]/sufficient.
 

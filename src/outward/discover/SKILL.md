@@ -93,41 +93,33 @@ then say plainly which ones you may actually run.**
 
 ## The words that are not quantities
 
-`QUANTITY` mapped `from` · `to` · `base` · `symbol` to **currency**. They are ordinary English words,
-and two APIs in the *same* registry prove both readings — the descriptions are verbatim from their
-published specs:
+`from` · `to` · `base` · `symbol` mapped to **currency**. Two APIs in one registry prove both readings,
+verbatim from their specs: `interzoid.com:convertcurrency`'s `from` is *"Currency symbol for the
+converted from amount"*; `opentargets.io`'s — GENOMICS — is *"How many initial results should be
+skipped"*. Narrowing the pattern dropped the true reading with the false one, so `QUANTITY` is DATA, a
+`?` marks a word ambiguous **by role**, and the corroborating vocabulary is computed from the quantity's
+own alternatives. No description ⇒ refused. That rule made the next collision cost one character:
+Google's `alt` ("Data format for the response") was crossing ad-exchange APIs on ALTITUDE — 101 methods
+/ 3 crosses → 49 / **0**.
 
-| api | field | the spec's own words | reading |
-| --- | --- | --- | --- |
-| `interzoid.com:convertcurrency` | `from` | *"Currency symbol for the converted from amount"* | a currency |
-| `opentargets.io` — GENOMICS | `from` | *"How many initial results should be skipped. Defaults to 0."* | a pagination offset |
+## A schema that describes a dead API
 
-On the name alone, a currency converter and a gene-association filter crossed on *both take a
-currency*. **Narrowing the pattern was the wrong fix** — the first attempt here did exactly that and
-dropped the true reading along with the false one, trading a false positive for a false negative and
-calling it progress.
+`opentargets.io`'s registry entry serves a 2019 REST spec whose endpoints now 404. `fetchJson` takes an
+optional body and `discoverGraphql` reads an introspection result into the same shape: **20 root-query
+methods, 0 quantities** — honest, since `QUANTITY` is weather/forex/geo and genomics shares none of it.
+Fixing the transport replaced a fabricated cross with a true zero.
 
-So an ambiguous word is marked ambiguous, and resolves only when the schema's own `description` or
-`enum` corroborates it. **No description ⇒ refused**, never guessed. An unambiguous name (`currency`,
-`latitude`, `temperature`) still answers with no hint at all.
+## Arrays and hashes are answers too
 
-**The rule is derived, not written per case.** The first fix here was a bespoke table holding one row
-for currency — and the very next probe found `alt`, Google's universal *"Data format for the response"*
-parameter, crossing two ad-exchange APIs on ALTITUDE. A rule per discovery is the frozen rosetta again.
-So `QUANTITY` is DATA, a `?` suffix marks a word ambiguous by role, and the corroborating vocabulary is
-computed from the quantity's own alternatives: nothing lists the words that corroborate `pop` — they
-ARE `population`. Closing the `alt` collision was one character, and the machinery that had refused a
-paginated `from` refused a response-format `alt` on the next run with no new logic at all.
+`temperature`, `[{temperature}]` hourly and `{"Sofia":{temperature}}` were one thing. A quantity carries
+its **shape** and a cross states the **relation** the shapes force: `direct` runnable, `reduce` needs an
+aggregation, `align` needs a common index, `key` needs a shared key space. `meteosource × weatherbit`:
+**25 crosses, 0 runnable** — 8 reduce, 17 align. The count did not change; the output stopped calling
+them comparisons.
 
-| the same probe | methods | crosses |
-| --- | ---: | ---: |
-| before | 101 | 3 — all three `alt`-as-altitude between ad-exchange APIs |
-| after | 49 | **0** |
-
-| | before | after |
-| --- | ---: | ---: |
-| `opentargets.io` methods from its registry spec | 3, each claiming a currency | **0** |
-| `interzoid.com:convertcurrency` | `in=[currency,money] out=[currency]` | unchanged |
+**Honest boundary.** `type: object` with named properties is a record, not a map. The shape is the
+outermost container, so a list inside a map loses its inner multiplicity. `relationOf` says what must
+happen, never how. `discoverGraphql` reads one level, root QUERY only. The ambiguity table is DECLARED.
 
 ## A schema that describes a dead API
 

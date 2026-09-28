@@ -223,51 +223,17 @@ dead cross.
 
 ## lift — a count is not evidence
 
-`crossIntersections` reported `shared` and ranked by it, so the largest population took the top row
-every time. Measured live at the atom address, `unfolded` names **428 of the 579** atoms any of the
-five measured laws names — 74% of the universe — so it agrees with everything by size alone.
+Ranking by raw `shared` put the largest population on top every time: `unfolded` names **428 of 579**
+atoms. `expected = |a|·|b| / |universe|`, `lift = shared / expected`, `bits = log₂(lift)` — the MEASURED
+twin of `surpriseBits`. Live, `cycle × unfolded` shares 59 against an expected 78 (**0.76**): the biggest
+agreement in the corpus is BELOW chance, and the one pair above it is the cross already drawn by hand as
+`unearnedCopies`. `cycle × unreached` at **0.08** carries more — nothing imports an unreached atom.
 
-`expected = |a|·|b| / |universe|` · `lift = shared / expected` · `bits = log₂(lift)`. This is the
-MEASURED twin of `surpriseBits`, which does the same job over SKILL citations.
+`orthogonalLaws` no longer claims "provably empty": `mirror × unfolded` shares 0 by FILE and 19 by ATOM,
+because a mirrored assertion lives in `test.ts` and an un-folded export in `index.ts`.
 
-| pair | shared | expected | lift |
-| --- | ---: | ---: | ---: |
-| `copy × unfolded` | 5 | 3.7 | **1.35** |
-| `copy × cycle` | 1 | 0.9 | 1.10 |
-| `cycle × unfolded` | 59 | 77.6 | 0.76 |
-| `mirror × unfolded` | 19 | 33.3 | 0.57 |
-| `unfolded × unreached` | 11 | 51.0 | 0.22 |
-| `cycle × unreached` | 1 | 12.5 | **0.08** |
-
-**The biggest agreement in the corpus is below chance.** `cycle × unfolded` shares 59 atoms where
-independence predicts 78: the two laws AVOID each other, and the old ranking called that the corpus's
-top finding. The one pair meaningfully above chance, `copy × unfolded`, is the cross already drawn by
-hand as `unearnedCopies` — an instrument whose single positive result is the answer its author already
-knew is agreeing with a known answer, which is all it can honestly claim.
-
-The low lifts carry more. `cycle × unreached` at **0.08** is a theorem surfacing in data: nothing
-imports an unreached atom, so it can hardly sit inside an import tangle. `orthogonalLaws` can name a
-law that meets NOTHING; there is still no word here for two laws that meet far below chance, and that
-is the stronger signal.
-
-### emptiness belongs to the address
-
-`orthogonalLaws` used to say "provably empty crosses". Measured at two addresses, that over-claims:
-
-| pair | by FILE | by ATOM |
-| --- | ---: | ---: |
-| `mirror × unfolded` | 0 shared — reads as provably empty | 19 shared, lift 0.57 |
-| `copy × unfolded` | lift 0.84 | lift 1.35 |
-
-A mirrored assertion lives in `test.ts` and an un-folded export in `index.ts` — never the same file,
-often the same atom. The cross a caller gets is the cross the caller's address can see, which is
-[[rules]]/domain's law (a check reaches exactly the classes it opens) arriving one atom over.
-
-**Honest boundary.** `lift` proves an overlap is above or below what independence predicts, never that
-either law is RIGHT about what it names — both populations are candidate lists. The universe is the
-union of the SUPPLIED populations, so every lift moves when a sixth law is added; it is the universe of
-the measurement, not of the tree. And an unmeasurable expectation returns 0, never `Infinity` and never
-1 — neither "infinitely surprising" nor "exactly chance" is what an empty expectation means.
+**Honest boundary.** The universe is the union of the SUPPLIED populations, so every lift moves when a law
+is added. An unmeasurable expectation returns 0 — never `Infinity`, never 1.
 
 ## Standards
 
