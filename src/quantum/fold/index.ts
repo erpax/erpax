@@ -1,4 +1,5 @@
 import { exactMax } from '@/algebra'
+import { STANDARDS_CATALOGUE } from '@/standards/catalogue'
 /**
  * quantum/fold — word ⊗ digit double fold (64-bit torus halves → 128-bit combined).
  *
@@ -636,10 +637,47 @@ const sharedPairs = (cwd: string, vols: ReadonlySet<string>): ReadonlyMap<string
   walk(join(cwd, GAP_SRC))
   return m
 }
+/**
+ * The standards each top-level volume cites, from the generated catalogue's own module list.
+ *
+ * A SECOND graph, independent of imports: two volumes answering to the same standard share an
+ * authority, and nothing about that is visible in who imports whom.
+ */
+const standardsByVolume = (): ReadonlyMap<string, ReadonlySet<string>> => {
+  const m = new Map<string, Set<string>>()
+  for (const e of STANDARDS_CATALOGUE) {
+    for (const mod of e.modules) {
+      const top = mod.path.replace(/^src\//, '').split('/')[0]
+      if (top === undefined || top === '') continue
+      if (!m.has(top)) m.set(top, new Set())
+      m.get(top)!.add(e.id)
+    }
+  }
+  return m
+}
+
+/**
+ * An AUTHORED bond the graph has not recorded: one volume's SKILL wikilinks the other.
+ *
+ * Wikilink-shaped only. A bare word is English — `seal`'s SKILL contains "body", `horo`'s contains
+ * "cost", `commitments`' contains "customer" — so matching the name would witness a relation for any
+ * volume named with an ordinary word. That is the ambiguity [[rules]]/probe names, and measuring it
+ * showed the cost precisely: a bare-word witness corroborated 8 of 22 pairs, a wikilink witness 3.
+ */
+const skillLinks = (cwd: string, from: string, to: string): boolean => {
+  try {
+    const t = readFileSync(join(cwd, GAP_SRC, from, 'SKILL.md'), 'utf8')
+    return t.includes(`[[${to}]]`) || t.includes(`[[${to}/`)
+  } catch {
+    return false
+  }
+}
+
 const harmonyJumpGaps = (cwd: string): LinearGap[] => {
   const vols = [...indexVolumes(cwd)]
   const ord = sortBookPages(vols)
   const shared = sharedPairs(cwd, new Set(vols))
+  const stds = standardsByVolume()
   const out: LinearGap[] = []
   for (let i = 0; i < ord.length - 1; i++) {
     const a = ord[i]!
@@ -647,10 +685,26 @@ const harmonyJumpGaps = (cwd: string): LinearGap[] => {
     if (volLinked(a, b)) continue
     const n = shared.get(a < b ? `${a}|${b}` : `${b}|${a}`) ?? 0
     if (!n) continue
+    // A COUNT is not evidence, and neither is a ratio over it: `shared=1` means one file imports both,
+    // which is what chance predicts for two volumes of any size. Measured, a lift correction removed
+    // exactly 1 of 22 and left 19 firing with lifts up to 1096x, because PMI is unstable at n=1 — a
+    // single co-occurrence of two rare volumes is hugely "above chance" and still means nothing.
+    //
+    // So a THIRD graph must agree. Adjacency is the book's ordering, `shared` is the import graph, and
+    // the witness is either a common cited STANDARD (a shared authority) or an authored WIKILINK the
+    // bond graph never recorded. Two independent readings proving each other, and 22 -> 3: `tax|legal`
+    // and `auth|agents` share standards, `agent|tamper` states the link in prose while the graph does
+    // not. The other 19 are book neighbours that happen to share one importer.
+    const sa = stds.get(a)
+    const sb = stds.get(b)
+    const sharedStd = sa && sb ? [...sa].filter((x) => sb.has(x)) : []
+    const linked = skillLinks(cwd, a, b) || skillLinks(cwd, b, a)
+    if (sharedStd.length === 0 && !linked) continue
+    const witness = sharedStd.length > 0 ? `standard=${sharedStd[0]}` : 'wikilink'
     out.push({
       kind: 'harmony-jump',
       atomPath: a,
-      detail: `bond=0 shared=${n}`,
+      detail: `bond=0 shared=${n} witness=${witness}`,
       entanglement: entHex(entanglementScore(a, b)),
       sealHint: { action: 'recordOnPath', atomPath: a, paths: [a, b], detail: 'record' },
     })

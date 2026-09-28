@@ -153,3 +153,39 @@ describe('quantum/fold — a React atom spells its barrel with an x', () => {
     expect(linearGaps(process.cwd()).gaps.some((g) => g.atomPath === 'admin/bar')).toBe(false)
   })
 })
+
+/**
+ * A book-adjacency plus one shared importer is not affinity. A lift correction was built, measured, and
+ * REVERTED: it removed exactly 1 of 22 and left 19 firing with lifts up to 1096x, because PMI is
+ * unstable at n=1 — a single co-occurrence of two rare volumes is hugely above chance and still means
+ * nothing. A third graph has to agree.
+ */
+describe('quantum/fold — a harmony jump must name its witness', () => {
+  it('reports no harmony jump without a second, independent witness', { timeout: 120_000 }, () => {
+    const jumps = linearGaps(process.cwd()).gaps.filter((g) => g.kind === 'harmony-jump')
+    for (const g of jumps) {
+      // the evidence travels WITH the finding: a reader must not have to re-derive why it fired
+      expect(g.detail, `${g.atomPath} fired with no witness`).toMatch(/witness=(standard=\S+|wikilink)/)
+    }
+  })
+
+  it('the witness is a SHARED authority or an authored link, never a bare word', { timeout: 120_000 }, () => {
+    const jumps = linearGaps(process.cwd()).gaps.filter((g) => g.kind === 'harmony-jump')
+    for (const g of jumps) {
+      const w = /witness=(\S+)/.exec(g.detail)?.[1] ?? ''
+      // `seal`'s SKILL contains "body", `horo`'s contains "cost" — matching a volume NAME in prose
+      // witnesses a relation for any volume named with an ordinary English word, and measuring that
+      // showed the cost: a bare-word witness corroborated 8 of 22 pairs, a wikilink witness 3.
+      expect(w === 'wikilink' || w.startsWith('standard=')).toBe(true)
+    }
+  })
+
+  it('every jump still carries its measured co-import count, so the two readings are both visible', {
+    timeout: 120_000,
+  }, () => {
+    for (const g of linearGaps(process.cwd()).gaps.filter((x) => x.kind === 'harmony-jump')) {
+      expect(g.detail).toMatch(/shared=[1-9]\d*/)
+      expect(g.sealHint).toBeTruthy()
+    }
+  })
+})
