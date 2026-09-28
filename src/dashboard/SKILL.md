@@ -3,7 +3,7 @@ name: dashboard
 description: "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions."
 atomPath: dashboard
 coordinate: "dashboard · 1/base · ed5b7676"
-contentUuid: "710a9f49-a1a8-59f2-8d17-03316414cf66"
+contentUuid: "75b39d47-4c16-54e9-b5b5-922084e4c9a8"
 diamondUuid: "74214e2a-2583-8aad-a1bc-ea53873534cd"
 uuid: "ed5b7676-48e1-87b2-a67a-a78bb36098eb"
 horo: 1
@@ -18,7 +18,6 @@ standards:
   - "ISO-27002"
   - "ISO-4217:2015 currency-codes monetary-display"
   - "ISO/IEC-27002:2022"
-  - MCP
   - "NIST INCITS-359 role-based-access-control"
   - "NIST-INCITS-359-2012"
 bindings: []

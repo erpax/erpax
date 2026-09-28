@@ -3,18 +3,18 @@ name: globe
 description: "Use when the corpus must be read as a sphere, not a flat wheel — the colour wheel and spectrum column were projections of one globe, and flattening collapsed longitude ⊥ latitude and lost elevation. Longitude = the 60° hue/doubling ring on the equator; latitude = the spectrum/elevation pole to pole; the heart sits on the equator; the poles are the coordinate singularity where longitude is undefined — the honest division by zero. The notary deed is a geodetic point; WGS 84."
 atomPath: globe
 coordinate: "globe · 5/round · 2b2cd0de"
-contentUuid: "056eddcc-e3af-5ed4-9a5c-32a7e9e235df"
-diamondUuid: "2f5d0aec-81c9-8a20-838b-3ecfe481a924"
+contentUuid: "ac4f86d2-8845-53c7-aaf8-40192155d100"
+diamondUuid: "5d6778d7-1a4f-8b12-9331-75a509946090"
 uuid: "2b2cd0de-91c6-85e8-b885-3d6484ae0def"
 horo: 5
 typography:
   partition: globe
-  bondDegree: 24
+  bondDegree: 27
 standards:
   - "WGS 84 — the geodetic datum (latitude, longitude, ellipsoidal height)"
 bindings: []
 signatures:
-  computationUuid: "af31fd06-6ee5-89c7-9f10-4f7ce9457959"
+  computationUuid: "c64ef556-5cdd-8d14-b642-e624410841ff"
   stages:
     - stage: path
       stageUuid: "cf9e1acb-a0ed-820d-84c4-738690eef518"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "690e7d4a-6b0d-80e4-a5dd-c8023166249e"
     - stage: horo
-      stageUuid: "5046ae0a-9f76-891d-a76a-ff4c17ad40a6"
+      stageUuid: "f39de60e-a977-8149-8f85-54a64e78392a"
     - stage: seal
       stageUuid: "e2a14d9f-7eca-8c4a-8c53-47dfe117853f"
     - stage: uuid
-      stageUuid: "086dfb91-7a91-85cd-a2b9-f618a407a204"
+      stageUuid: "7bd3f7c3-1aee-8e64-8bba-943d4fca4fed"
 version: 2
 ---
 # globe — the corpus is a sphere

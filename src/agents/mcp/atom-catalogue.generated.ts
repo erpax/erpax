@@ -467,6 +467,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool/staffing"
   },
   {
+    "atom": "witness",
+    "name": "witness",
+    "description": "Use when reasoning about witness — Two tools, and the second exists because the first was hand-picked.",
+    "path": "agents/mcp/tool/witness"
+  },
+  {
     "atom": "registered",
     "name": "registered",
     "description": "Use when reasoning about registered — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
@@ -5699,6 +5705,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "outward/coverage"
   },
   {
+    "atom": "discover",
+    "name": "discover",
+    "description": "Use when reasoning about discover — outward/witness crosses five domains and every one of them was **hand-picked**.",
+    "path": "outward/discover"
+  },
+  {
     "atom": "eu",
     "name": "eu",
     "description": "Use when checking whether the pan-EU authorities erpax depends on have moved — VIES (the VAT-validation contract), the ECB currency set, the Peppol directory envelope, and the EU sanctions schema. Each probe asks a STABLE question so a moved address is real news, never the daily churn. CLI lane: erpax outward eu [--write].",
@@ -5715,6 +5727,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "leads",
     "description": "Use when reasoning about leads — outward already holds the machinery: an answer is content-addressed, a remembers the last address, and returns **fresh · unchanged · moved · unreachable**.",
     "path": "outward/leads"
+  },
+  {
+    "atom": "witness",
+    "name": "witness",
+    "description": "Use when reasoning about witness — A cross-check is only worth the independence of its legs. already treats an unreachable boundary as an **unanswered question** rather than a failure; this atom asks the sharper…",
+    "path": "outward/witness"
   },
   {
     "atom": "world",

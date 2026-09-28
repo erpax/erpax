@@ -77,6 +77,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "agents/mcp/tool/outward",
   "agents/mcp/tool/risk",
   "agents/mcp/tool/staffing",
+  "agents/mcp/tool/witness",
   "agents/registered",
   "agents/registered/hr",
   "agents/registered/hr/training",
@@ -929,9 +930,11 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "outward",
   "outward/bg",
   "outward/coverage",
+  "outward/discover",
   "outward/eu",
   "outward/gate",
   "outward/leads",
+  "outward/witness",
   "outward/world",
   "pack",
   "pack/items",
@@ -1531,7 +1534,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1524 as const
+export const ATOM_LEDGER_PATH_COUNT = 1527 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1822,6 +1825,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp",
     "agents/mcp/tool",
     "agents/mcp/tool/staffing"
+  ],
+  "agents/mcp/tool/witness": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/witness"
   ],
   "agents/registered": [
     "agents/registered"
@@ -4924,6 +4932,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "outward",
     "outward/coverage"
   ],
+  "outward/discover": [
+    "outward",
+    "outward/discover"
+  ],
   "outward/eu": [
     "outward",
     "outward/eu"
@@ -4935,6 +4947,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "outward/leads": [
     "outward",
     "outward/leads"
+  ],
+  "outward/witness": [
+    "outward",
+    "outward/witness"
   ],
   "outward/world": [
     "outward",
@@ -7150,4 +7166,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 872 as const
+export const MERGED_NESTED_PATH_COUNT = 875 as const

@@ -1,3 +1,38 @@
+---
+name: witness
+description: "Use when reasoning about witness — A cross-check is only worth the independence of its legs. already treats an unreachable boundary as an **unanswered question** rather than a failure; this atom asks the sharper…"
+atomPath: "outward/witness"
+coordinate: "outward/witness · 5/round · 4749c368"
+contentUuid: "3208fd48-5d65-5e67-a6fc-840ab89e3c5f"
+diamondUuid: "0bf64b0a-4b63-8288-8d27-46e509eb0d87"
+uuid: "4749c368-dbed-8284-8692-613239da82a0"
+horo: 5
+typography:
+  partition: outward
+  bondDegree: 17
+standards:
+  - "ISO 19011:2018 §6.4 — audit evidence: two sources agreeing is evidence; one is a claim"
+  - "WGS 84 — geodetic latitude/longitude"
+bindings: []
+signatures:
+  computationUuid: "9220be22-1dd8-81ee-8350-eb0eb92da8d3"
+  stages:
+    - stage: path
+      stageUuid: "c6745fd6-9f00-8997-b67a-d384a5f5a272"
+    - stage: trinity
+      stageUuid: "f9413f01-1343-8154-9416-c031eea48fc4"
+    - stage: boundary
+      stageUuid: "234df3b6-2477-8ae5-90c0-1d601d36387d"
+    - stage: links
+      stageUuid: "8fe51213-feed-8c7e-9863-7a5e3b99e080"
+    - stage: horo
+      stageUuid: "3b79d7ba-abdb-8257-b964-42022d73e927"
+    - stage: seal
+      stageUuid: "1c913746-84bc-8010-8c8c-6770e48b9b77"
+    - stage: uuid
+      stageUuid: "6e703e89-830e-8fdb-9293-b9a185f301b4"
+version: 2
+---
 # outward/witness — two sources agreeing is evidence; one is a claim, and a shared upstream is neither
 
 A cross-check is only worth the independence of its legs. `outward` already treats an unreachable

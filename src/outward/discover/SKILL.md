@@ -1,3 +1,38 @@
+---
+name: discover
+description: "Use when reasoning about discover — outward/witness crosses five domains and every one of them was **hand-picked**."
+atomPath: "outward/discover"
+coordinate: "outward/discover · 1/base · db6d66cc"
+contentUuid: "ba0ff761-53db-5865-a68a-5c4bf6c3af40"
+diamondUuid: "39d8cc81-5120-88e3-b6f8-99c6faf5130b"
+uuid: "db6d66cc-cb71-8376-aca1-a3785b455576"
+horo: 1
+typography:
+  partition: outward
+  bondDegree: 33
+standards:
+  - "ISO 19011:2018 §6.4 — audit evidence: a candidate cross must name the fields it rests on"
+  - "OpenAPI 3 / Swagger 2 — the machine-readable surface being read"
+bindings: []
+signatures:
+  computationUuid: "5fc17b99-a98e-8bff-9474-a6b0d7ee9e25"
+  stages:
+    - stage: path
+      stageUuid: "e240f762-520c-8c70-9c11-7bd3013a8ea3"
+    - stage: trinity
+      stageUuid: "eb200802-333c-8dd9-8d46-06996d23ed8a"
+    - stage: boundary
+      stageUuid: "ac0cb92e-10a5-84ed-a969-e3803d43dc71"
+    - stage: links
+      stageUuid: "cd24ebb8-996e-8525-ad30-9d4a22d2ae88"
+    - stage: horo
+      stageUuid: "b0c1f0ce-242f-879d-b713-3edfda55d684"
+    - stage: seal
+      stageUuid: "e400d00d-c2a0-8b8b-9118-321924d7b0ae"
+    - stage: uuid
+      stageUuid: "1dafc63d-544d-8882-b692-d907e4219091"
+version: 2
+---
 # outward/discover — APIs → schemas → methods → cross formulas, each step derived from the last
 
 [[outward]]/witness crosses five domains and every one of them was **hand-picked**. That is the

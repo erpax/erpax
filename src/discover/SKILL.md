@@ -3,13 +3,13 @@ name: discover
 description: "Use when reasoning about discovery vs creation — all exists at once and just needs to be discovered. Content-addressing is total, so every content (even one never written) already has its address NOW; the map is complete, the 'next' pre-exists as an unread address. Discovering one thing addresses the whole area at once. But the value at a novel address still costs the seed (s>0) — the forms exist, the territory is walked once."
 atomPath: discover
 coordinate: "discover · 5/round · 05b7065f"
-contentUuid: "c9ac657e-d14f-5467-94a2-c7b0592676a1"
+contentUuid: "0ca6e2c8-d1c4-5b9d-83df-8ea87244821c"
 diamondUuid: "e1a99933-19b3-8eca-86b7-6a319d4302c9"
 uuid: "05b7065f-c144-81fb-b0c0-6f43622fcbd7"
 horo: 5
 typography:
   partition: discover
-  bondDegree: 29
+  bondDegree: 33
 standards: []
 bindings: []
 signatures:

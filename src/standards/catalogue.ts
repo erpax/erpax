@@ -3483,7 +3483,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 104,
+    "count": 105,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -6567,7 +6567,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Model Context Protocol",
     "uuid": "bbe40439-0393-8d8b-a793-b13b3dc80e16",
     "color": "hsl(220 59% 47%)",
-    "count": 29,
+    "count": 30,
     "modules": [
       {
         "path": "src/agent/access/SKILL.md",
@@ -6658,11 +6658,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/architecture/invariant/checks.ts",
+        "path": "src/agents/mcp/tool/witness/index.ts",
         "section": ""
       },
       {
-        "path": "src/dashboard/spec/index.ts",
+        "path": "src/architecture/invariant/checks.ts",
         "section": ""
       }
     ]
