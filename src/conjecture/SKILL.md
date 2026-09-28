@@ -2,19 +2,19 @@
 name: conjecture
 description: "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law."
 atomPath: conjecture
-coordinate: "conjecture · 4/weave · eacf05a8"
-contentUuid: "93309395-dd1c-5acd-8499-308b0414b445"
-diamondUuid: "4fefddc6-2f4a-82a5-aff8-3f9fe69783f3"
-uuid: "eacf05a8-64b5-858d-af9b-2b7df1bf171c"
-horo: 4
+coordinate: "conjecture · 1/base · 28a4e7b8"
+contentUuid: "7c377216-0a6c-5f32-8d96-2ff2300a4de7"
+diamondUuid: "37a75b48-ddbb-865a-85aa-ce301818944d"
+uuid: "28a4e7b8-c0ca-8fc1-b88f-ab37d712210a"
+horo: 1
 typography:
   partition: conjecture
-  bondDegree: 25
+  bondDegree: 28
 standards:
   - Popper — a proposition that forbids nothing explains nothing
 bindings: []
 signatures:
-  computationUuid: "8a4856e4-3d12-8d22-b249-77b85e642a7b"
+  computationUuid: "843f68a9-76d4-8d7b-8510-985832e31f1f"
   stages:
     - stage: path
       stageUuid: "6404a930-cd96-8a58-a3f5-29fa9ffbf014"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "0bf97379-50de-8761-9caa-72eddab44cc8"
     - stage: links
-      stageUuid: "bcdea67c-dabf-837b-b7a6-800a49f0d7d5"
+      stageUuid: "8b5360fd-795c-8acb-9dbc-3c9b1a2d24e7"
     - stage: horo
-      stageUuid: "a111cb9e-56a5-8da3-9931-def07f824943"
+      stageUuid: "bdf34104-0265-85de-972b-83c05875640b"
     - stage: seal
       stageUuid: "f112f579-e79e-80c6-9644-8bb56dcc66ab"
     - stage: uuid
-      stageUuid: "441197a2-69a0-820c-85dd-7238da1fa683"
+      stageUuid: "93a241cf-a7b0-8543-b88d-bd5aaa9b3dba"
 version: 2
 ---
 # conjecture — an idea that looks impossible is the only one whose answer teaches anything

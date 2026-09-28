@@ -2,14 +2,14 @@
 name: sufficient
 description: "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions."
 atomPath: "self/sufficient"
-coordinate: "self/sufficient · 4/weave · 8c7e024e"
-contentUuid: "5bb8bcff-9346-59cb-b698-163c6fdf2a94"
-diamondUuid: "9383a983-2c1c-85e2-985d-c70a2797ba73"
-uuid: "8c7e024e-ef41-8f2d-b2af-1086739376db"
-horo: 4
+coordinate: "self/sufficient · 5/round · 9aabd5ef"
+contentUuid: "cce3af00-88b3-5f4d-8864-2da9cfef4672"
+diamondUuid: "8e1fb24d-4ec3-80f8-8d05-a7bccd42dfa8"
+uuid: "9aabd5ef-d60d-81a0-aed8-276cffc92f66"
+horo: 5
 typography:
   partition: self
-  bondDegree: 59
+  bondDegree: 65
 standards:
   - "NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)"
   - "NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)`"
@@ -18,22 +18,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0683b705-f6ce-8277-ba39-90765aa77227"
+  computationUuid: "e6679fd3-d186-8ef8-ba9c-be09b3fd04d0"
   stages:
     - stage: path
       stageUuid: "5db7871f-da5f-8343-8c1c-8b88b4cd6beb"
     - stage: trinity
       stageUuid: "b22ad0f9-7285-83bc-9ba6-be3de2b3b722"
     - stage: boundary
-      stageUuid: "8e6a9195-732b-858c-b6f6-2236fb535d19"
+      stageUuid: "80e60e2c-e355-89a9-8410-4201cd89c830"
     - stage: links
-      stageUuid: "a4ccf1c9-1742-8908-9995-d8a22fa25da5"
+      stageUuid: "0d559e46-241e-82f5-9a76-9274e0952590"
     - stage: horo
-      stageUuid: "ef4e88d4-9d36-8318-bd37-de2330776771"
+      stageUuid: "d236372e-aa6a-8bbc-933a-285049b1abb2"
     - stage: seal
       stageUuid: "f47ae58c-28f2-8701-9937-a5c3a43cfdba"
     - stage: uuid
-      stageUuid: "3ecd5293-f8d0-8d7c-9647-036b1a10c3d8"
+      stageUuid: "1d5c5a06-d1af-80fa-862f-73fc327081e7"
 version: 2
 ---
 # sufficient — totality (every case is already defined)

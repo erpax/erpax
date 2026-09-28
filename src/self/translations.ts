@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\"all agents are one erpax\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
-    "uuid": "9f9c9521-c3c6-8e67-afaf-0f848fc8b0f6",
+    "uuid": "3129456a-6757-8dec-aebd-7485ba5b21e0",
     "words": [
       "use",
       "when",

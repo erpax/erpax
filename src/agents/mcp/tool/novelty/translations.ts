@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about novelty — conjecture enumerates crosses between laws the corpus already holds: pairs of atoms that are each widely cited and never drawn together.",
-    "uuid": "32a44f7b-018d-8e40-bfec-3b64c1363ab6",
+    "uuid": "74e87e60-1599-821b-b29d-a66ffd7fc0d2",
     "words": [
       "use",
       "when",
