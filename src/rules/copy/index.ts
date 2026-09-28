@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs'
-import { inputKey, memoized } from '@/quantum/ftl/memo'
+import { sealed } from '@/quantum/ftl/memo'
 import { join, relative } from 'node:path'
 import ts from 'typescript'
 import { createHash } from 'node:crypto'
@@ -74,10 +74,10 @@ const nameOf = (node: ts.Node): string => {
  * and the report shrinks toward only the copies worth a human's time.
  */
 /**
- * MEMOIZED on the `.ts` input address — the label CARRIES minNodes, because a 20-node call must not receive the 40-node answer. See [[quantum]]/ftl/memo.
+ * SEALED on the content address — in-process AND across processes — the label CARRIES minNodes, because a 20-node call must not receive the 40-node answer. See [[quantum]]/ftl/memo.
  */
 export function duplicateBodies(cwd: string = process.cwd(), minNodes = 40): CopyGroup[] {
-  return memoized(`duplicateBodies:${minNodes}`, inputKey(cwd, 'ts'), () => computeDuplicateBodies(cwd, minNodes))
+  return sealed(`duplicateBodies:${minNodes}`, cwd, () => computeDuplicateBodies(cwd, minNodes))
 }
 
 function computeDuplicateBodies(cwd: string, minNodes: number) {

@@ -1,5 +1,5 @@
 import ts from 'typescript'
-import { inputKey, memoized } from '@/quantum/ftl/memo'
+import { sealed } from '@/quantum/ftl/memo'
 import { dirname, join, relative } from 'node:path'
 import { astOf, corpusFiles } from '@/syntax/cache'
 
@@ -113,10 +113,10 @@ function collectMirrors(src: ts.SourceFile, consts: Map<string, string>, rel: st
  * flagged either. Only the exact mirror counts.
  */
 /**
- * MEMOIZED on the `.ts` input address — every test file is parsed to find a vacuous assertion. See [[quantum]]/ftl/memo.
+ * SEALED on the content address — in-process AND across processes — every test file is parsed to find a vacuous assertion. See [[quantum]]/ftl/memo.
  */
 export function mirroredAssertions(cwd: string = process.cwd()): Mirror[] {
-  return memoized('mirroredAssertions', inputKey(cwd, 'ts'), () => computeMirroredAssertions(cwd))
+  return sealed('mirroredAssertions', cwd, () => computeMirroredAssertions(cwd))
 }
 
 function computeMirroredAssertions(cwd: string) {

@@ -2324,6 +2324,7 @@ src/quantum/emr/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/entanglement/index.ts:18: * @standard ER=EPR (Maldacena & Susskind, 2013); monogamy (Coffman–Kundu–Wootters, PRA 61 052306, 2000)
 src/quantum/export/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/fs/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
+src/quantum/ftl/memo/disk/index.ts:7: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: one truth, one address
 src/quantum/ftl/memo/index.ts:11: * @standard ISO/IEC 25010:2023 §5.2 — performance efficiency: time behaviour under repetition
 src/quantum/generator/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/graph/index.ts:9: * @standard symmetric (reciprocal) entanglement — directed-link entropy → 0

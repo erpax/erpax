@@ -1,5 +1,5 @@
 import ts from 'typescript'
-import { inputKey, memoized } from '@/quantum/ftl/memo'
+import { sealed } from '@/quantum/ftl/memo'
 import { relative } from 'node:path'
 import { astOf, corpusFiles, textOf } from '@/syntax/cache'
 
@@ -93,10 +93,10 @@ function enclosingText(node: ts.Node, fileText: string): string {
 
 /** Every probe for a twinned filename whose enclosing function never mentions the twin. */
 /**
- * MEMOIZED on the `.ts` input address — every file is parsed to find a probe blind to a twinned filename. See [[quantum]]/ftl/memo.
+ * SEALED on the content address — in-process AND across processes — every file is parsed to find a probe blind to a twinned filename. See [[quantum]]/ftl/memo.
  */
 export function blindProbes(cwd: string = process.cwd()): BlindProbe[] {
-  return memoized('blindProbes', inputKey(cwd, 'ts'), () => computeBlindProbes(cwd))
+  return sealed('blindProbes', cwd, () => computeBlindProbes(cwd))
 }
 
 function computeBlindProbes(cwd: string) {

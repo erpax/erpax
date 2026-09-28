@@ -14,6 +14,7 @@ import { createHash } from 'node:crypto'
 import { statSync } from 'node:fs'
 import { amortize } from '@/quantum/ftl/metrics'
 import { allFiles, corpusFiles } from '@/syntax/cache'
+import { contentKey, readSealed, writeSealed } from '@/quantum/ftl/memo/disk'
 import { exactMax, exactRound } from '@/algebra'
 
 /** Below this share of the first ask, a re-ask is free and the answer has a receipt. DECLARED. */
@@ -191,4 +192,43 @@ export function memoized<T>(label: string, key: string, compute: () => T): T {
 export function forgetMemos(): void {
   keys.clear()
   verdicts.clear()
+}
+
+/**
+ * Seal a gate's verdict at both layers — the one call a gate makes.
+ *
+ * In-process first (a map lookup), then on disk (free across processes). The address is git's content
+ * key where git can give one, because it is both cheaper than walking `stat` over the surface and
+ * sound across runs; the stat key is the fallback when there is no git metadata, and it is sound
+ * in-process, which is all the in-process layer needs.
+ *
+ * A value that does not survive a JSON round-trip is NOT sealed to disk. A `Map`, a `Set` or an
+ * `undefined` would come back as something else, and a gate reading a corrupted verdict is worse than
+ * one that recomputes — so the round-trip is checked before the seal, once, on the way in.
+ *
+ * @invariant the in-process layer always applies; the disk layer only with a content address
+ * @invariant a verdict that does not round-trip through JSON is never sealed to disk
+ */
+export function sealed<T>(label: string, cwd: string, compute: () => T): T {
+  const content = contentKey(cwd)
+  const key = content ?? inputKey(cwd, 'ts')
+  return memoized(label, key, () => {
+    const hit = readSealed<T>(label, content, cwd)
+    if (hit !== undefined) return hit
+    const value = compute()
+    // The decision to seal happens AFTER computing, and a verdict that does not survive the
+    // round-trip is simply not written. An earlier draft returned a value with a marker field bolted
+    // on and sealed it anyway, which is the corruption this guard exists to prevent.
+    if (roundTrips(value)) writeSealed(label, content, value, cwd)
+    return value
+  })
+}
+
+/** Does JSON return what it was given? A `Map`, a `Set` or an `undefined` does not, and is not sealed. */
+function roundTrips(value: unknown): boolean {
+  try {
+    return JSON.stringify(JSON.parse(JSON.stringify(value))) === JSON.stringify(value)
+  } catch {
+    return false
+  }
 }
