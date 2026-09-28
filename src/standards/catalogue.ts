@@ -1178,6 +1178,36 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "EU-2015/849",
+    "family": "eu",
+    "title": "Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing",
+    "uuid": "1dd7398a-4877-8f53-aa8b-2420619a37a1",
+    "color": "hsl(79 77% 56%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/aml/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/kyc/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/rules/citation/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/rules/hold/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/rules/hold/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "EU-765/2008",
     "family": "eu",
     "title": "Accreditation and market surveillance / CE marking — Regulation (EC) No 765/2008",
@@ -1265,32 +1295,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/eu/ai/act/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2015/849",
-    "family": "eu",
-    "title": "Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing",
-    "uuid": "1dd7398a-4877-8f53-aa8b-2420619a37a1",
-    "color": "hsl(79 77% 56%)",
-    "count": 8,
-    "modules": [
-      {
-        "path": "src/aml/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/kyc/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/rules/hold/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/rules/hold/index.ts",
         "section": ""
       }
     ]

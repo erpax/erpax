@@ -5706,7 +5706,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when stating what erpax's post-quantum posture actually proves — the anchor surfaces typed by discern into verdicts (what the corpus computes: the manifest gate, the channel and root rules, the pinning, the threat calibration) and compasses (the primitives, because nothing here signs: no PQC implementation is installed). Standards are pinned to their revision because FIPS 203 and 204 carry errata, and a bare citation names a document that differs from the one in force. FIPS 206 and HQC are the honest open rows. Integrity reads 5 of 9 — lower and true.",
-        "uuid": "35c500b3-5477-8ef3-91d9-7be5cf64cefd",
+        "uuid": "90464f74-dc35-8117-9e71-255507d21618",
         "words": [
           "use",
           "when",
@@ -54435,7 +54435,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that the agent memory index still matches its files — MEMORY.md is the load surface, so a memory absent from it is written but never loaded, and an index line with no file is a citation leading nowhere. Fails closed on both directions; zero is a theorem, not a ratchet.",
-        "uuid": "0e0838a4-8015-8a2e-b346-dceb012d80bd",
+        "uuid": "e0a97dc3-54a7-8ff1-949b-2e20afa4c2cf",
         "words": [
           "use",
           "when",
@@ -59862,7 +59862,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a modern patent claim needs anticipating art — a register of expired grants that are public-domain §102 prior art by construction. Every row's expiry is COMPUTED against the longest term that has ever applied (20 years from filing), never asserted, and the patent number is the citation so a reader checks a row rather than trusting it. Keeps the grant apart from the world: a patent proves a claim was filed, examined and published on a date, never that it works — deployed and undemonstrated are separate fields, and the inference from patented to works is refused.",
-        "uuid": "b88034c1-a6fb-8d52-b913-7fceee599074",
+        "uuid": "0e1dbc5b-18a6-85aa-9715-66958798f307",
         "words": [
           "use",
           "when",
@@ -63516,7 +63516,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…",
-        "uuid": "776fb4e4-9a45-8d77-986c-b9f2a88342c2",
+        "uuid": "1db7dcf2-2a35-85d8-b543-bb1b0afe0ee3",
         "words": [
           "use",
           "when",
@@ -77365,7 +77365,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "citation",
-        "uuid": "85f5cf1d-e44e-8931-9d97-6316c50a2d88",
+        "uuid": "77fe217d-2209-8c9a-9b67-671e42ca121a",
         "words": [
           "citation"
         ],
@@ -77376,7 +77376,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about citation — rules/face closed one door: an atom may never quietly stop **offering a name**. This is the same door on the other wall — an atom may never quietly stop **citing an authority**.",
-        "uuid": "761131ae-b39d-82db-91de-d23631fbcda2",
+        "uuid": "eb11b107-0cce-886c-807e-0298093f03c0",
         "words": [
           "use",
           "when",
@@ -78853,7 +78853,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that technical prose cites real code — a SKILL naming a function nothing defines is a citation leading nowhere, and it is worse than a dead path because it reads as true. Wired into confirm, it refuses the claim at the write, so an agent must edit CODE rather than write a sentence about code it has not written. Only SKILLs beside an index.ts are judged; a lexicon atom is prose by design. Run: tsx src/rules/prose/index.ts",
-        "uuid": "85af0348-49e4-8e29-a323-8fe0e32dcc22",
+        "uuid": "fe630a38-4ade-8c63-9af8-fd1d7feb15c9",
         "words": [
           "use",
           "when",
@@ -78963,7 +78963,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the statute→code trace must resolve — the gate that a `src/…` path cited in prose or comments actually exists. The corpus fails closed on dead atom links but left dead FILE-PATH pointers ungated, and they rotted: the Наредба Н-18 law pointed at a standards path long after the matter moved. A citation that leads nowhere is unreviewable (ISO-19011 §6.4), so a legally usable ERP cannot have one. Zero tolerance on the statutory surface; a down-only ratchet elsewhere. Run: tsx src/rules/reference/index.ts",
-        "uuid": "eeea1980-801c-807b-b937-b4bcc85d2d21",
+        "uuid": "e5657abe-c7a8-890a-8883-8ee35c2e8b07",
         "words": [
           "use",
           "when",
@@ -80977,7 +80977,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when validating that a sale's fiscal references resolve — a citation that leads nowhere makes the sale unreviewable, which is a legal defect rather than a cosmetic one.",
-        "uuid": "b044914a-d0e6-83f5-966b-49d7a64b91eb",
+        "uuid": "52efb8af-5a33-8aad-ba5a-457fc284e0db",
         "words": [
           "use",
           "when",
@@ -94040,7 +94040,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.",
-        "uuid": "4c3f97bd-df46-8146-8ead-e3f488dd3ea4",
+        "uuid": "2d820e7f-5a51-8e1e-8130-0a08264890aa",
         "words": [
           "use",
           "when",
@@ -132804,7 +132804,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "citation",
-        "uuid": "85f5cf1d-e44e-8931-9d97-6316c50a2d88",
+        "uuid": "77fe217d-2209-8c9a-9b67-671e42ca121a",
         "words": [
           "citation"
         ],
@@ -132815,7 +132815,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about citation — A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
-        "uuid": "da95bbd7-b802-8f5b-be39-105bc7548636",
+        "uuid": "3dbc06a2-0032-8ce4-8b95-da68721e75e2",
         "words": [
           "use",
           "when",
