@@ -21,6 +21,7 @@ export type RatchetAxis =
   | 'linear-gap'
   | 'hand-maintained'
   | 'matrix-crack'
+  | 'scope'
 
 /** Legacy ALCAP export name → ratchet axis (for seal-debt audit). */
 export const BASELINE_CONST_TO_AXIS: Readonly<Record<string, RatchetAxis>> = {

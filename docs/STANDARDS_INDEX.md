@@ -2460,6 +2460,8 @@ src/rules/reference/index.ts:21: * @standard BG Наредба-Н-18 §СУПТ�
 src/rules/reference/index.ts:22: * @standard ZDDS — BG Value Added Tax Act; statute→code traces for fiscal citations fail closed here (not prose-only under rules/)
 src/rules/refutable/index.ts:28: * @standard Popper — a proposition that forbids nothing explains nothing
 src/rules/refutable/index.ts:29: * @standard ISO/IEC 25010:2023 §5.5 testability
+src/rules/scope/index.ts:4: * @standard ISO/IEC 25010:2023 §5.5 — analysability: a measurement must be affordable where it is read
+src/rules/scope/index.ts:5: * @standard ISO 19011:2018 §6.4 — audit evidence: a finding must name the files it rests on
 src/rules/unfolded/index.ts:8: * @standard ISO/IEC 25010:2023 §5.5 — reusability: a function called once is inlined, deleted, or reused
 src/rules/unit/index.ts:6: * @standard ISO 80000-3 — time: the day as a unit of measure
 src/rules/unit/index.ts:7: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: a change is made once, not once per copy

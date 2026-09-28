@@ -36,6 +36,7 @@ export const RATCHET_AXES: readonly RatchetAxis[] = [
   'linear-gap',
   'hand-maintained',
   'matrix-crack',
+  'scope',
 ] as const
 
 /** Horo ring position per axis — decade ratio scales tamper-cost headroom. */
@@ -61,6 +62,7 @@ export const AXIS_HORO: Readonly<Record<RatchetAxis, HoroStep>> = {
   'linear-gap': 4,
   'hand-maintained': 1,
   'matrix-crack': 8,
+  scope: 7,
 }
 
 /** Bypass-math coordinate — hand ratchet input is seal impurity (b576a290 sibling). */
