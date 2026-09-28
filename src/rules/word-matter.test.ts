@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { computedBaseline, clearRatchetCache } from '@/law/folder/baseline'
 import {
   camelTokens,
+  commentCodeRatio,
   wordMatterViolations,
   wordMatterAuditTop,
   WORD_MATTER_AUDIT_ATOMS,
@@ -58,5 +59,44 @@ describe('rules/word-matter — heuristics', () => {
       const prefix = /duplicates prefix (\S+)/.exec(r.reason)?.[1] ?? ''
       expect(prefix).toMatch(/^(get|set|is|has|fetch|find|load|read|list)[A-Z]/)
     }
+  })
+})
+
+/**
+ * Two laws were pulling opposite ways. `@standard` banners ARE the standards catalogue's source of
+ * truth, rules/citation fails closed when one leaves the surface, and rules/refutable requires an
+ * `@invariant` beside every claim — and this law counted all of them as bloat. The only way to satisfy
+ * all three was to drop a banner another gate is built on.
+ */
+describe('rules/word-matter — a comment a MACHINE reads is not prose', () => {
+  const code = Array.from({ length: 60 }, (_, i) => `const x${i} = ${i}`).join('\n')
+
+  it('does not charge a file for the annotation surface other laws require', () => {
+    const annotated = [
+      '/**',
+      ' * One line of prose.',
+      ...Array.from({ length: 40 }, () => ' * @standard ISO/IEC-25010:2023 §5.6 maintainability'),
+      ' */',
+      code,
+    ].join('\n')
+    const { ratio, codeLines } = commentCodeRatio(annotated)
+    expect(codeLines).toBe(60)
+    expect(ratio).toBeLessThan(0.45) // 40 banners + 1 prose line, and only the prose line counts
+  })
+
+  it('still charges the same VOLUME of ordinary prose', () => {
+    const prosey = [
+      '/**',
+      ...Array.from({ length: 41 }, (_, i) => ` * Sentence ${i} explaining something at length.`),
+      ' */',
+      code,
+    ].join('\n')
+    expect(commentCodeRatio(prosey).ratio).toBeGreaterThanOrEqual(0.45)
+  })
+
+  it('counts an @invariant and an @see as machine-read, not as prose', () => {
+    const both = ['/**', ' * @invariant a claim must be refutable', ' * @see ./SKILL.md', ' */', code].join('\n')
+    // Only the block DELIMITERS remain — the two annotation lines are the machine's surface, not prose.
+    expect(commentCodeRatio(both).ratio).toBeCloseTo(2 / 60, 10)
   })
 })
