@@ -85,10 +85,34 @@ describe('cost — manual development price (forge ≫ verify)', () => {
   it('computed derive path is cheaper to verify than manual forge', () => {
     const derived = manualDevelopmentPrice({ corpusCoverage: 0.99, nodes: 2200, manualPath: false })
     const manual = manualDevelopmentPrice({ corpusCoverage: 0.99, nodes: 2200, manualPath: true })
+    // These three hold BY CONSTRUCTION, at any `checks`: the manual path adds a second-preimage term to
+    // the forge, and the derived path scales its verify by RODIN_FLOW_RATIO < 1.
     expect(derived.verifyCost).toBeLessThan(manual.verifyCost)
     expect(manual.forgeCost).toBeGreaterThan(derived.forgeCost)
-    expect(manual.ratio).toBeGreaterThan(derived.ratio)
     expect(manual.forgeCost).toBeGreaterThan(manual.verifyCost)
+  })
+
+  /**
+   * `manual.ratio > derived.ratio` was asserted here as though it were a law. It is not — it is
+   * conditional on `checks`, and it was passing by **0.035** at the value CONFIRM_GATE_CHECKS happened
+   * to hold. Adding two gate axes to the confirm hook flipped it, because that constant IS the `checks`
+   * term of the one law (`src/law/index.ts`: `const base = b.checks ?? CONFIRM_GATE_CHECKS`).
+   *
+   * Algebraically: with `r = RODIN_FLOW_RATIO`, the claim reduces to `r·extra > C·(1 − r)` where
+   * `C = checks · −log₂(1 − coverage)`. The left side is fixed by the digest; the right grows linearly
+   * with `checks`. So there is a crossover, and pinning it is the honest form of what was asserted.
+   */
+  it('the ratio comparison is conditional on `checks`, and crosses between 12 and 13', () => {
+    const at = (checks: number) => ({
+      derived: manualDevelopmentPrice({ corpusCoverage: 0.99, nodes: 2200, checks, manualPath: false }),
+      manual: manualDevelopmentPrice({ corpusCoverage: 0.99, nodes: 2200, checks, manualPath: true }),
+    })
+    const below = at(12)
+    const above = at(13)
+    expect(below.manual.ratio).toBeGreaterThan(below.derived.ratio)
+    expect(above.manual.ratio).toBeLessThan(above.derived.ratio)
+    // and the margin at 12 was a hair — which is why it read as a law right up until it was not
+    expect(below.manual.ratio - below.derived.ratio).toBeLessThan(0.05)
   })
 
   it('manual bypass and unsealed work are impossible — infinite forge price', () => {
