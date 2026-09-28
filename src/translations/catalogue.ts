@@ -79162,6 +79162,62 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "scope",
+    "path": "rules/scope",
+    "translations": [
+      {
+        "key": "name",
+        "source": "scope",
+        "uuid": "2511bb84-9c59-8d82-a7e4-33db1f83e0d5",
+        "words": [
+          "scope"
+        ],
+        "values": {
+          "en": "scope"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about scope — Every slow cycle in the session that produced this atom had one shape: **the whole corpus measured to answer a question about a changeset.**",
+        "uuid": "9da8e632-c118-8504-83b7-6da53983114f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "scope",
+          "every",
+          "slow",
+          "cycle",
+          "in",
+          "the",
+          "session",
+          "that",
+          "produced",
+          "this",
+          "atom",
+          "had",
+          "one",
+          "shape",
+          "the",
+          "whole",
+          "corpus",
+          "measured",
+          "to",
+          "answer",
+          "a",
+          "question",
+          "about",
+          "a",
+          "changeset"
+        ],
+        "values": {
+          "en": "Use when reasoning about scope — Every slow cycle in the session that produced this atom had one shape: **the whole corpus measured to answer a question about a changeset.**"
+        }
+      }
+    ]
+  },
+  {
     "atom": "slack",
     "path": "rules/slack",
     "translations": [
@@ -212334,4 +212390,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3631
+export const TRANSLATIONS_COUNT = 3632

@@ -1,3 +1,38 @@
+---
+name: scope
+description: "Use when reasoning about scope — Every slow cycle in the session that produced this atom had one shape: **the whole corpus measured to answer a question about a changeset.**"
+atomPath: "rules/scope"
+coordinate: "rules/scope · 5/round · fb869c50"
+contentUuid: "6c94e6c6-c183-5e66-9656-b2c455cec634"
+diamondUuid: "3ca5a9d8-caae-80d2-b832-9cf6af88beaf"
+uuid: "fb869c50-d3ac-8ca9-89ad-4f42f6985996"
+horo: 5
+typography:
+  partition: rules
+  bondDegree: 28
+standards:
+  - "ISO 19011:2018 §6.4 — audit evidence: a finding must name the files it rests on"
+  - "ISO/IEC 25010:2023 §5.5 — analysability: a measurement must be affordable where it is read"
+bindings: []
+signatures:
+  computationUuid: "db05ff8b-02b7-8def-8258-1cc3d554fe18"
+  stages:
+    - stage: path
+      stageUuid: "d19bd0c4-a16b-8663-b1cf-5424093dca67"
+    - stage: trinity
+      stageUuid: "ef3ee494-8610-84a8-99c6-d6687870a4f6"
+    - stage: boundary
+      stageUuid: "98dfd70e-e870-864b-bc2a-49941e27172f"
+    - stage: links
+      stageUuid: "e7db42b8-75f0-8811-a636-13bf073f90d4"
+    - stage: horo
+      stageUuid: "a2f9b9f6-3968-8236-9a62-73f347ea486e"
+    - stage: seal
+      stageUuid: "73978940-02cd-8244-9e14-302b07b4aeb0"
+    - stage: uuid
+      stageUuid: "d30d74d0-bfca-8225-ae2e-fa0b8af82fdd"
+version: 2
+---
 # rules/scope — a whole-tree scan an author must wait for needs a changeset twin
 
 Every slow cycle in the session that produced this atom had one shape: **the whole corpus measured to

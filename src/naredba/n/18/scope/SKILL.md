@@ -3,13 +3,13 @@ name: scope
 description: "Use when reasoning about scope — Наредба Н-18 чл."
 atomPath: "naredba/n/18/scope"
 coordinate: "naredba/n/18/scope · 8/crest · 595e8daf"
-contentUuid: "0af46a20-ccf1-53a0-be3e-8fce8bb50eb5"
+contentUuid: "4539b111-b831-52dd-bfc1-f0e2c05ed0e5"
 diamondUuid: "6fe7d2fe-65f7-89f6-a69d-41be64b07593"
 uuid: "595e8daf-74fe-8696-b1aa-f8cc857a3f3d"
 horo: 8
 typography:
   partition: naredba
-  bondDegree: 24
+  bondDegree: 28
 standards:
   - "BG ЗДДС §118 fiscal-receipt-obligation"
   - "BG ЗПУПС payment-services (PSP transfers)"

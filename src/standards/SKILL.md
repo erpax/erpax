@@ -3,7 +3,7 @@ name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
 coordinate: "standards · 7/descent · 4a5439f1"
-contentUuid: "cdf2d715-3004-5b3e-8d70-7b5b3e5a00d7"
+contentUuid: "8e10ed95-a5f8-5d68-8a15-4e1ef0fc2c17"
 diamondUuid: "d2d6506a-248e-8241-b659-47379b7e4670"
 uuid: "4a5439f1-e327-8944-813a-8efd4c389655"
 horo: 7
@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6691 citations
+## Catalogue — 159 standards, 6693 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -90,9 +90,9 @@ inline HTML that renders as a coloured dot.
 | etsi | 2 | 32 | `eIDAS` · 20 |
 | eu | 26 | 903 | `EU-Intrastat-Reg-2019/2152` · 355 |
 | gdpr | 1 | 31 | `EU-2016/679` · 31 |
-| iec | 6 | 322 | `ISO/IEC-25010` · 200 |
+| iec | 6 | 323 | `ISO/IEC-25010` · 201 |
 | ifrs | 20 | 206 | `IFRS-15` · 38 |
-| iso | 32 | 1513 | `ISO-8601-1` · 338 |
+| iso | 32 | 1514 | `ISO-8601-1` · 338 |
 | national | 2 | 47 | `Naredba-N-18` · 43 |
 | nist | 10 | 277 | `NIST-SP-800-63` · 97 |
 | oecd | 4 | 86 | `SAF-T` · 63 |
@@ -104,7 +104,7 @@ inline HTML that renders as a coloured dot.
 | us_gaap | 3 | 61 | `US-CTA-2021` · 38 |
 | w3c | 11 | 2154 | `schema.org` · 1986 |
 | wcag | 2 | 63 | `W3C-WAI-ARIA-1.2` · 33 |
-| **Σ** | **159** | **6691** | |
+| **Σ** | **159** | **6693** | |
 
 **Registered, awaiting citation: 104.** Known canonical standards the registry holds and
 no code cites yet — they seed as `proposed` and become cited as a domain grows. Listed in

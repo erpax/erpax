@@ -3,13 +3,13 @@ name: scope
 description: "Use when reasoning about scope as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scope
 coordinate: "scope · 5/round · 2511bb84"
-contentUuid: "a717d888-4552-593e-b794-4efd66bd8448"
+contentUuid: "77497d9d-2856-5bef-9bd1-b42f1820d59d"
 diamondUuid: "327a8ae1-ea9d-8c27-8bd5-20421a9f64b9"
 uuid: "2511bb84-9c59-8d82-a7e4-33db1f83e0d5"
 horo: 5
 typography:
   partition: scope
-  bondDegree: 24
+  bondDegree: 28
 standards:
   - "SOC-2 CC6.1 logical-access-controls"
   - "schema.org — the type vocabulary, collided to single words"

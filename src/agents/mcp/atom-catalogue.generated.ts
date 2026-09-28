@@ -7625,6 +7625,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/refutable"
   },
   {
+    "atom": "scope",
+    "name": "scope",
+    "description": "Use when reasoning about scope — Every slow cycle in the session that produced this atom had one shape: **the whole corpus measured to answer a question about a changeset.**",
+    "path": "rules/scope"
+  },
+  {
     "atom": "slack",
     "name": "slack",
     "description": "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist.",
