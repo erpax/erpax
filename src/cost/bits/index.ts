@@ -171,7 +171,7 @@ export const invariantChecks = (checks: number, invariants: number): number =>
  *
  * @invariant CONFIRM_GATE_CHECKS === CONFIRM_CHECK_AXES.length — asserted in src/cost/bits/test.ts
  */
-export const CONFIRM_GATE_CHECKS = 12
+export const CONFIRM_GATE_CHECKS = 14
 
 /** @index-cross.foldback child=cost/bits parent=cost — this cross folds back into its parent. */
 

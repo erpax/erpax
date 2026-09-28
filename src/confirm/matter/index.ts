@@ -20,6 +20,7 @@ import { deadSymbolsIn } from '@/rules/prose'
 import { mirroredIn } from '@/rules/mirror'
 import { forgedIn } from '@/rules/forge'
 import { newCracksIn } from '@/matrix'
+import { CONFIRM_GATE_CHECKS } from '@/cost/bits'
 import { citationsLostIn } from '@/rules/citation'
 import { verifyStandardsCatalogue } from '@/standards/emit'
 
@@ -194,6 +195,7 @@ export const CONFIRM_CHECK_AXES = [
   'forge',
   'crack',
   'citation',
+  'gate-pin',
 ] as const
 
 export function folderNameWarnings(files: readonly string[]): string[] {
@@ -438,6 +440,18 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
   // edit. This pays only when something LEFT: the changed files are parsed, then one targeted git-grep
   // per lost token — usually none. A citation that MOVED is never a loss.
   const lostCitations = citationsLostIn(files, ROOT)
+  // I bumped CONFIRM_CHECK_AXES twice today and forgot `CONFIRM_GATE_CHECKS` BOTH times, so the mirror
+  // test in cost/bits went red on the push twice for the same reason. A pin that must be remembered is a
+  // pin that will be missed; the failure mode this hook exists for is exactly this one.
+  //
+  // The number is READ from source rather than imported: `cost/bits` cannot import this module in
+  // production without joining the 225-file tangle ([[rules]]/cycle), which is why the pin lives in a
+  // test at all. A targeted read costs nothing and adds no module edge.
+  const touchesPin = files.some((f) => /src\/(confirm\/matter|cost\/bits)\/index\.ts$/.test(f.replace(/\\/g, '/')))
+  const pinnedChecks =
+    touchesPin && CONFIRM_GATE_CHECKS !== CONFIRM_CHECK_AXES.length
+      ? `CONFIRM_GATE_CHECKS is ${CONFIRM_GATE_CHECKS} and this hook runs ${CONFIRM_CHECK_AXES.length} axes — bump it in src/cost/bits/index.ts`
+      : null
   // Realtime PROVENANCE gate ([[grounded]]): a trust-chain convention (`src/convention/*/index.ts`) that
   // reads raw, unsealed fs (`process.cwd()`/`readFileSync`/`readdirSync`/`existsSync`) prices the tamper-
   // cost on the MUTABLE working tree, not sealed content — the forge-cost then measures a directory
@@ -500,6 +514,7 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
       `🟥 crack     ✗  ${cracks.length} exported literal(s) are seal-debt — compute from sealed state or ` +
         `make it a function: ${cracks.map((c) => `${c.file} ${c.constName}`).join(', ')}`,
     )
+  if (pinnedChecks !== null) console.log(`🟥 gate-pin  ✗  ${pinnedChecks}`)
   if (lostCitations.length)
     console.log(
       `🟥 citation  ✗  ${lostCitations.length} standard(s) left the evidence surface entirely — ` +
@@ -545,6 +560,7 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     forge: forgeries.length === 0,
     crack: cracks.length === 0,
     citation: lostCitations.length === 0,
+    'gate-pin': pinnedChecks === null,
   }
   const ok = CONFIRM_CHECK_AXES.every((axis) => verdicts[axis])
   if (ok) {
