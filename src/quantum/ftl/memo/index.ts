@@ -14,7 +14,7 @@ import { createHash } from 'node:crypto'
 import { statSync } from 'node:fs'
 import { amortize } from '@/quantum/ftl/metrics'
 import { allFiles, corpusFiles } from '@/syntax/cache'
-import { contentKey, readSealed, writeSealed } from '@/quantum/ftl/memo/disk'
+import { contentKey, forgetContentKeys, readSealed, writeSealed } from '@/quantum/ftl/memo/disk'
 import { exactMax, exactRound } from '@/algebra'
 
 /** Below this share of the first ask, a re-ask is free and the answer has a receipt. DECLARED. */
@@ -192,6 +192,7 @@ export function memoized<T>(label: string, key: string, compute: () => T): T {
 export function forgetMemos(): void {
   keys.clear()
   verdicts.clear()
+  forgetContentKeys()
 }
 
 /**
@@ -206,11 +207,17 @@ export function forgetMemos(): void {
  * `undefined` would come back as something else, and a gate reading a corrupted verdict is worse than
  * one that recomputes — so the round-trip is checked before the seal, once, on the way in.
  *
+ * `surface` is the git pathspec the address covers, defaulting to `src`. A gate reading WIDER must
+ * say so or it is sealed on a key blind to its own inputs: `deadLoaderPaths` tests whether targets
+ * under `scripts/` and `packages/` exist, so on the default key a deleted script would keep serving
+ * the green verdict that preceded it — the exact failure that gate exists to catch.
+ *
  * @invariant the in-process layer always applies; the disk layer only with a content address
  * @invariant a verdict that does not round-trip through JSON is never sealed to disk
+ * @invariant a wider surface is a different address — it never reads what a narrower one sealed
  */
-export function sealed<T>(label: string, cwd: string, compute: () => T): T {
-  const content = contentKey(cwd)
+export function sealed<T>(label: string, cwd: string, compute: () => T, surface?: readonly string[]): T {
+  const content = contentKey(cwd, surface)
   const key = content ?? inputKey(cwd, 'ts')
   return memoized(label, key, () => {
     const hit = readSealed<T>(label, content, cwd)

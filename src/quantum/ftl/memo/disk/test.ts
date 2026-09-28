@@ -2,7 +2,8 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { contentKey, isSealed, readSealed, writeSealed } from './index'
+import { spawnSync } from 'node:child_process'
+import { contentKey, forgetContentKeys, isSealed, readSealed, writeSealed } from './index'
 
 /**
  * A key that cannot see its inputs would seal one verdict forever. `payload-input-key.sh` states the
@@ -18,6 +19,56 @@ describe('quantum/ftl/memo/disk — the content address', () => {
     } finally {
       rmSync(root, { recursive: true, force: true })
     }
+  })
+
+  /**
+   * The surface is the sound half. `deadLoaderPaths` parses `src` and then asks whether targets under
+   * `scripts/` and `packages/` EXIST, so on a `src`-only key a deleted script leaves the previous
+   * green verdict standing — the fail-open the gate it keys exists to close.
+   */
+  it('a WIDER surface is a different address, and sees a change the narrow one cannot', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-surface-'))
+    const git = (...args: string[]) => spawnSync('git', args, { cwd: root, encoding: 'utf8' })
+    try {
+      mkdirSync(join(root, 'src'), { recursive: true })
+      mkdirSync(join(root, 'scripts'), { recursive: true })
+      writeFileSync(join(root, 'src/a.ts'), 'export const a = 1\n')
+      writeFileSync(join(root, 'scripts/run.sh'), 'echo one\n')
+      git('init', '-q')
+      git('add', '-A')
+
+      const narrow = contentKey(root, ['src'])
+      const wide = contentKey(root, ['src', 'scripts'])
+      expect(narrow).not.toBeNull()
+      expect(wide).not.toBeNull()
+      expect(wide).not.toBe(narrow) // two surfaces never collide on one address
+
+      // Change ONLY the script. The wide address must move; the narrow one must not — which is both
+      // halves of soundness: the wider key does work, and the narrower key is genuinely blind to it.
+      writeFileSync(join(root, 'scripts/run.sh'), 'echo two\n')
+      forgetContentKeys()
+      expect(contentKey(root, ['src'])).toBe(narrow)
+      expect(contentKey(root, ['src', 'scripts'])).not.toBe(wide)
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  /**
+   * The address costs 224–290 ms and `sealed` pays it per LABEL, so six sealed gates spent ~1.5 s
+   * computing one address six times — more than two of them spend computing their answer. Without the
+   * memo, sealing a cheap gate is a pessimisation rather than a saving.
+   */
+  it('is computed once per surface per process, and forgetting it is explicit', () => {
+    forgetContentKeys()
+    const first = Date.now()
+    const k = contentKey()
+    const cold = Date.now() - first
+    const second = Date.now()
+    expect(contentKey()).toBe(k)
+    expect(Date.now() - second).toBeLessThan(cold) // a map lookup, not three git processes
+    forgetContentKeys()
+    expect(contentKey()).toBe(k) // forgetting re-derives the SAME address from an unchanged tree
   })
 
   it('is a stable 32-hex address for this repository', () => {

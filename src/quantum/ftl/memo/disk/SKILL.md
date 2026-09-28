@@ -120,6 +120,48 @@ It seals a verdict, never a judgement about whether the verdict was right.
 nothing at all where that address cannot be established. A memo keyed on less than the truth is a
 stale verdict waiting for its moment.**
 
+## The surface is the sound half
+
+`contentKey` was scoped to `src`, and that is right for the five gates it was written for — they parse
+`.ts` and nothing else. Extending it to two more gates showed the scope IS the soundness argument, and
+that the two gates disagree about it:
+
+| gate | reads | sound on the `src` address? |
+| --- | --- | --- |
+| `skillWeights` | 3,631 `SKILL.md` sizes under `src` | **yes** — all tracked, none ignored, so the blob hashes git already holds cover every byte it stats |
+| `deadLoaderPaths` | `src/*.ts` literals, then whether targets under `src`·`scripts`·`packages` EXIST | **no** — a deleted script leaves the previous green verdict standing |
+
+So the address takes a pathspec, the pathspec is part of the hash (two surfaces never collide, and a
+widened surface cannot read what a narrower one sealed), and `deadLoaderPaths` is keyed on
+`['src','scripts','packages']`. Proved by planting: appending a line to a `scripts/` file invalidates
+the wide seal and leaves the narrow one valid — both halves, because a wider key that did no extra
+work and a narrower key that was secretly wide would each pass a one-sided test.
+
+Sealing `deadLoaderPaths` on the default key would have been the failure that gate exists to catch: a
+step whose target moved, still reporting green.
+
+## The address was the un-folded cost
+
+`sealed` computed the address **per label**, at 224–290 ms a call. Six sealed gates spent ~1.5 s
+computing one address six times — and `skillWeights` computes its whole answer in 152 ms, so sealing it
+would have been a **pessimisation**, not a saving. That is why two gates were left un-memoized here
+earlier, and the honest fix was not to cache harder but to fold the key.
+
+| | address | 1st ask | fresh process, seal warm |
+| --- | ---: | ---: | ---: |
+| `contentKey` (`src`) | — | 263ms | 0ms after the first |
+| `skillWeights` | `src` | 166ms | **1ms** |
+| `deadLoaderPaths` | `src`·`scripts`·`packages` | 2435ms | **1ms** |
+
+`deadCommands` is deliberately **not** sealed: 10 ms cold, 3 ms warm, against a 224 ms address it does
+not otherwise pay for. A cache costing twenty times the computation is not an optimisation, and adding
+one to reach a tidy "everything is sealed" would be the claim outrunning the measurement.
+
+**The contract the memo buys is explicit.** A process that rewrites the tree and re-asks must call
+`forgetContentKeys` — `forgetMemos` does. Nothing in this repo needs it: the auto-heal regens run as
+separate processes, and the faces they write are gitignored, so they never moved this address anyway.
+`FORMAT` is at `v2`, which invalidates every verdict sealed under the un-scoped key.
+
 ## Standards
 
 - **ISO/IEC 25010:2023 §5.6** — maintainability: one truth, one address.

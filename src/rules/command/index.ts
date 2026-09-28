@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import ts from 'typescript'
 import { astOf, corpusFiles } from '@/syntax/cache'
+import { sealed } from '@/quantum/ftl/memo'
 import { join } from 'node:path'
 
 /**
@@ -140,6 +141,17 @@ const LOADERS = ['require', 'requireFromHere', 'import'] as const
  * @invariant a path inside a comment or a template with substitutions is never a finding
  */
 export function deadLoaderPaths(cwd: string = process.cwd()): DeadLoaderPath[] {
+  // SEALED on a WIDER address than the default. This parses every `.ts` under `src` (2397 ms cold)
+  // and then asks whether each target EXISTS — and a target may name `scripts/` or `packages/`. On
+  // the `src`-only key, deleting a script would leave the previous green verdict standing, which is
+  // precisely the fail-open this gate was written to close.
+  return sealed('deadLoaderPaths', cwd, () => computeDeadLoaderPaths(cwd), LOADER_SURFACE)
+}
+
+/** The pathspec the loader verdict depends on: where the literals live, and where the targets are. */
+const LOADER_SURFACE = ['src', 'scripts', 'packages'] as const
+
+function computeDeadLoaderPaths(cwd: string): DeadLoaderPath[] {
   const out: DeadLoaderPath[] = []
   const prefix = `${cwd}/`
   for (const abs of corpusFiles(cwd)) {

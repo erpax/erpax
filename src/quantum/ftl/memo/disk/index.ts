@@ -12,7 +12,24 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 /** Bump to invalidate every sealed verdict when the cache's own shape changes. */
-const FORMAT = 'v1'
+const FORMAT = 'v2'
+
+/** The surface most gates read. A gate reading wider must SAY so — see {@link contentKey}. */
+const DEFAULT_SURFACE = ['src'] as const
+
+/**
+ * The address, cached per (cwd, surface) for this process.
+ *
+ * Measured at 224–290 ms a call, and `sealed` pays it per LABEL: six sealed gates spent ~1.5 s
+ * computing the same address six times, which is more than two of them spend computing their answer.
+ * The memo is what makes sealing a cheap gate a saving instead of a pessimisation.
+ *
+ * The contract it buys is explicit: a process that rewrites the tree and re-asks must call
+ * {@link forgetContentKeys}. Nothing in this repo does — the auto-heal regens run as separate
+ * processes, and the generated faces they write are gitignored, so they never moved this address
+ * anyway — and a test that edits a fixture calls it.
+ */
+const addresses = new Map<string, string | null>()
 
 /**
  * Where a verdict is sealed. Under `node_modules`, so it is gitignored by construction and a fresh
@@ -43,14 +60,32 @@ const git = (cwd: string, args: readonly string[]): string => {
  *
  * @invariant a tree with no git metadata yields null, never a shared constant
  */
-export function contentKey(cwd: string = process.cwd()): string | null {
-  const tracked = git(cwd, ['ls-files', '-s', '--', 'src'])
-  if (tracked.trim() === '') return null // no git, or no src — either way the address is unknowable
+export function contentKey(cwd: string = process.cwd(), surface: readonly string[] = DEFAULT_SURFACE): string | null {
+  const memoKey = `${cwd}\u0000${surface.join(',')}`
+  const hit = addresses.get(memoKey)
+  if (hit !== undefined) return hit
+  const value = computeContentKey(cwd, surface)
+  addresses.set(memoKey, value)
+  return value
+}
+
+/** Drop every cached address — a process that CHANGES the tree and re-asks must call this. */
+export function forgetContentKeys(): void {
+  addresses.clear()
+}
+
+function computeContentKey(cwd: string, surface: readonly string[]): string | null {
+  const spec = [...surface]
+  const tracked = git(cwd, ['ls-files', '-s', '--', ...spec])
+  if (tracked.trim() === '') return null // no git, or an empty surface — the address is unknowable
   const h = createHash('sha256')
   h.update(FORMAT)
+  // The surface is part of the address: two gates reading different trees must never collide on one
+  // key, and a widened surface must invalidate what a narrower one sealed.
+  h.update(spec.join(','))
   h.update(tracked)
-  h.update(git(cwd, ['diff', '--', 'src']))
-  for (const f of git(cwd, ['ls-files', '--others', '--exclude-standard', '--', 'src']).split('\n')) {
+  h.update(git(cwd, ['diff', '--', ...spec]))
+  for (const f of git(cwd, ['ls-files', '--others', '--exclude-standard', '--', ...spec]).split('\n')) {
     const rel = f.trim()
     if (rel === '') continue
     h.update(rel)
