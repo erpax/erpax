@@ -73,6 +73,33 @@ function identifierFrequency(file: string, text: string): ReadonlyMap<string, nu
   return freq
 }
 
+/**
+ * Exported `function`/`const` names, from the GRAMMAR.
+ *
+ * The reference side of this gate was corrected to parse; the DEFINITION side stayed a regex, and a
+ * regex cannot tell a declaration from the same characters inside a string. A test fixture holding
+ * `'export const SOMETHING = { a: 1 }'` registered as a real export with zero callers — the scanner
+ * inventing a violation out of a string literal, which is this corpus's own parse-don't-match law
+ * failing in the atom that states it.
+ *
+ * @invariant text inside a string literal is never a definition
+ */
+function definedExports(file: string, text: string): string[] {
+  const out: string[] = []
+  const src = astOf(file, text)
+  for (const st of src.statements) {
+    const exported = ts.canHaveModifiers(st)
+      ? (ts.getModifiers(st) ?? []).some((m) => m.kind === ts.SyntaxKind.ExportKeyword)
+      : false
+    if (!exported) continue
+    if (ts.isFunctionDeclaration(st) && st.name !== undefined) out.push(st.name.text)
+    if (ts.isVariableStatement(st)) {
+      for (const d of st.declarationList.declarations) if (ts.isIdentifier(d.name)) out.push(d.name.text)
+    }
+  }
+  return out
+}
+
 export function scanExports(cwd: string = process.cwd()): ScannedExport[] {
   const files = sourceFiles(join(cwd, 'src'))
   const freq = new Map<string, number>()
@@ -84,8 +111,8 @@ export function scanExports(cwd: string = process.cwd()): ScannedExport[] {
     } catch {
       continue
     }
-    for (const m of t.matchAll(/export\s+(?:async\s+)?(?:function|const)\s+([A-Za-z_$][\w$]*)/g)) {
-      if (!defs.has(m[1]!)) defs.set(m[1]!, relative(cwd, f).replace(/\\/g, '/'))
+    for (const name of definedExports(f, t)) {
+      if (!defs.has(name)) defs.set(name, relative(cwd, f).replace(/\\/g, '/'))
     }
     for (const [id, n] of identifierFrequency(f, t)) freq.set(id, (freq.get(id) ?? 0) + n)
   }

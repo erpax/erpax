@@ -133,8 +133,21 @@ const UA = 'erpax/1.0 (+https://github.com/erpax/erpax)'
  * [[rules]]/copy caught the second the moment it was written. `node`'s default UA is WAF-blocked in
  * practice, and a 200 carrying the wrong body reads as absence, so the header is not optional.
  */
-export const fetchJson = async (url: string): Promise<Record<string, unknown>> => {
-  const r = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/json' } })
+/**
+ * One JSON client for the corpus. `body` makes it a POST — the only thing a GraphQL endpoint or an
+ * MCP server answers to, and GET-only is why Open Targets read as dead (`GET … → HTTP 400`) and why
+ * the qpu MCP probe had to be hand-rolled in a throwaway script.
+ */
+export const fetchJson = async (url: string, body?: unknown): Promise<Record<string, unknown>> => {
+  const r = await fetch(url, {
+    method: body === undefined ? 'GET' : 'POST',
+    headers: {
+      'user-agent': UA,
+      accept: 'application/json',
+      ...(body === undefined ? {} : { 'content-type': 'application/json' }),
+    },
+    ...(body === undefined ? {} : { body: JSON.stringify(body) }),
+  })
   if (!r.ok) throw new Error(`${url} → HTTP ${r.status}`)
   return (await r.json()) as Record<string, unknown>
 }

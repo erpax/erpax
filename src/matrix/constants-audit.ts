@@ -9,6 +9,7 @@
  *
  * @see ./index.ts — ../law/folder/baseline — ../seal/baseline-debt
  */
+import { spawnSync } from 'node:child_process'
 import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import ts from 'typescript'
@@ -305,6 +306,104 @@ export function auditConstants(cwd: string = process.cwd()): ConstantAuditReport
     crackTotal: byCategory.crack,
     lawfulNames: [...lawfulNames].sort(),
   }
+}
+
+/**
+ * The crack verdict for a CHANGESET — the same categorisation, on the files just written.
+ *
+ * Sound because `categorize` is entirely file-local: `(constName, initializer, atomLeaf, doc)` reads no
+ * cross-file state, so scoping the walk cannot change a single verdict. The whole-tree scan costs
+ * 3058 ms cold and this costs one parse per edited file, which is the difference between a law that can
+ * live at the WRITE and one that can only run at the push.
+ *
+ * It matters because this axis is the one an author trips over while writing: a new `export const X = {…}`
+ * is seal-debt, and discovering that from a whole-tree COUNT three gate-runs later means bisecting your
+ * own changeset by hand. The domain is kept identical to {@link auditConstants} — same extensions, same
+ * skipped faces, same `app/` exclusion — because a scoped check reading a different set would report
+ * absence where the tree check reports a violation ([[rules]]/domain).
+ *
+ * @invariant a file the whole-tree walk skips is skipped here too
+ */
+export function matrixCracksIn(
+  files: readonly string[],
+  cwd: string = process.cwd(),
+): readonly MatrixCrackViolation[] {
+  const out: MatrixCrackViolation[] = []
+  for (const f of files) {
+    const rel = relative(cwd, f).replace(/\\/g, '/')
+    if (!rel.startsWith(`${SRC}/`) || !/\.tsx?$/.test(rel)) continue
+    const leaf = rel.slice(rel.lastIndexOf('/') + 1)
+    if (SKIP_FILES.test(leaf)) continue
+    // The walk never RECURSES into a skipped root dir, so the whole subtree is out — not just its top
+    // level. Scoping it to depth 3 let 11 `src/app/**` route exports through that the tree scan never
+    // sees, which is what measuring the equivalence caught before this shipped.
+    if (SKIP_DIRS.has(rel.split('/')[1] ?? '')) continue
+    let content: string
+    try {
+      content = readFileSync(join(cwd, rel), 'utf8')
+    } catch {
+      continue // a deleted file cannot carry a crack
+    }
+    const atomPath = atomPathOf(rel)
+    const atomLeaf = atomLeafOf(rel)
+    for (const { name: constName, init, doc } of exportedConsts(rel, content)) {
+      if (categorize(constName, init, atomLeaf, doc) !== 'crack') continue
+      out.push({
+        atomPath,
+        file: rel,
+        constName,
+        law: 'matrix-crack' as const,
+        reason: `matrix crack ${constName} — export const is seal-debt; compute from sealed state, or make it a function`,
+      })
+    }
+  }
+  return out
+}
+
+/**
+ * Cracks this CHANGESET introduced — the working tree read against the committed tree.
+ *
+ * A zero threshold is not a theorem, and measuring it proved the point: **451 of 11,631 tracked src
+ * files already hold a crack**, so a write gate refusing any crack in an edited file would lock 451
+ * files and teach whoever hit one to reach for `--no-verify`. A refusal has to be earned by evidence,
+ * not declared.
+ *
+ * The evidence here is two independent readings of the same file proving each other: `categorize` over
+ * the committed blob, and `categorize` over what is on disk. A const that is a crack in both was not
+ * introduced and is someone else's debt, tracked by the ratchet. A const that is a crack ONLY now is
+ * this edit's, and that is the one refusable at the write.
+ *
+ * A file with no committed version is entirely new, so every crack in it is introduced — which falls out
+ * of the same comparison rather than needing a case.
+ *
+ * @invariant a crack present in the committed version is never reported
+ * @invariant every crack in a newly added file is reported
+ */
+export function newCracksIn(
+  files: readonly string[],
+  cwd: string = process.cwd(),
+  committed: (rel: string) => string | null = (rel) => gitShow(rel, cwd),
+): readonly MatrixCrackViolation[] {
+  const out: MatrixCrackViolation[] = []
+  for (const v of matrixCracksIn(files, cwd)) {
+    const before = committed(v.file)
+    if (before === null) {
+      out.push(v) // no committed version: the whole file is new, so the crack is
+      continue
+    }
+    const leaf = atomLeafOf(v.file)
+    const wasCrack = exportedConsts(v.file, before).some(
+      (c) => c.name === v.constName && categorize(c.name, c.init, leaf, c.doc) === 'crack',
+    )
+    if (!wasCrack) out.push(v)
+  }
+  return out
+}
+
+/** The committed content of a repo-relative path, or null when git has none (a new or untracked file). */
+function gitShow(rel: string, cwd: string): string | null {
+  const r = spawnSync('git', ['show', `HEAD:${rel}`], { cwd, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })
+  return r.status === 0 && typeof r.stdout === 'string' ? r.stdout : null
 }
 
 /** Every exported crack const — one violation per unlawful export. */

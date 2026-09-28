@@ -9,7 +9,7 @@
  */
 import { z } from 'zod'
 import { crossWitness, fetchJson, type CrossKind } from '@/outward/witness'
-import { crossFormulas, discoverApis, discoverMethods } from '@/outward/discover'
+import { crossFormulas, discoverApis, discoverGraphql, discoverMethods, sharedNotation } from '@/outward/discover'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 
@@ -34,6 +34,14 @@ const I18N: Record<string, LocalizedString> = {
 }
 
 for (const [k, v] of Object.entries(I18N)) registerToolI18n(`erpax.witness.${k}`, v)
+
+/**
+ * The introspection query. One level of `ofType` and no more, because that is all `discoverGraphql`
+ * reads: a GraphQL response shape is the caller's choice, so asking deeper would fetch a query nobody
+ * wants. Module-private — this is its only caller, and a single-use export is un-folded weight.
+ */
+const INTROSPECTION =
+  '{ __schema { queryType { name } types { name kind fields { name args { name } type { name kind ofType { name kind } } } } } }'
 
 export function buildWitnessTools(): ReadonlyArray<ErpaxMcpTool> {
   const tCross = makeToolI18n('erpax.witness.cross')
@@ -79,12 +87,19 @@ export function buildWitnessTools(): ReadonlyArray<ErpaxMcpTool> {
       parameters: {
         match: z.string().min(2),
         limit: z.number().int().min(1).max(20).optional(),
+        graphql: z.string().url().optional(),
       },
       async handler(args) {
         const re = new RegExp(args.match as string, 'i')
+        // A POST-only endpoint has ONE path and no OpenAPI document, so it is discovered by asking it
+        // to describe itself. Open Targets is the case that forced this: its registry entry serves a
+        // 2019 REST spec whose endpoints now 404, so the registry route reads the live API as absent.
+        const graphql = args.graphql as string | undefined
+        const fromGraphql =
+          graphql === undefined ? [] : discoverGraphql(graphql, await fetchJson(graphql, { query: INTROSPECTION }))
         const apis = discoverApis(await fetchJson('https://api.apis.guru/v2/list.json'))
         const want = apis.filter((a) => re.test(`${a.name} ${a.title}`)).slice(0, (args.limit as number | undefined) ?? 10)
-        const methods = []
+        const methods = [...fromGraphql]
         const unreachable: string[] = []
         for (const a of want) {
           try {
@@ -96,17 +111,25 @@ export function buildWitnessTools(): ReadonlyArray<ErpaxMcpTool> {
         const crosses = crossFormulas(methods)
         return json({
           registry: apis.length,
+          graphql: graphql === undefined ? null : { url: graphql, methods: fromGraphql.length },
           matched: want.map((a) => a.name),
           unreachable,
           methods: methods.length,
           crosses: crosses.length,
+          // How many crosses are RUNNABLE as they stand, against how many owe a modelling decision.
+          runnable: crosses.filter((c) => c.relation === 'direct').length,
+          byRelation: crosses.reduce<Record<string, number>>((acc, c) => {
+            acc[c.relation] = (acc[c.relation] ?? 0) + 1
+            return acc
+          }, {}),
           top: crosses.slice(0, 10).map((c) => ({
             a: `${c.a.api} ${c.a.path}`,
             b: `${c.b.api} ${c.b.path}`,
-            over: c.over,
-            compares: c.compares,
+            over: c.over.map(sharedNotation),
+            compares: c.compares.map(sharedNotation),
+            relation: c.relation,
           })),
-          law: 'Do not author the crosses. Discover what answers what, and let the pairs fall out — then say which you may actually run.',
+          law: 'Do not author the crosses. Discover what answers what, and let the pairs fall out — then say which you may actually run. A shared quantity in two SHAPES is not a comparison yet: `[temperature]` against `temperature` owes an aggregation nobody has chosen.',
         })
       },
     },

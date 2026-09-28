@@ -19,6 +19,7 @@ import { deadReferencesIn } from '@/rules/reference'
 import { deadSymbolsIn } from '@/rules/prose'
 import { mirroredIn } from '@/rules/mirror'
 import { forgedIn } from '@/rules/forge'
+import { newCracksIn } from '@/matrix'
 import { verifyStandardsCatalogue } from '@/standards/emit'
 
 const ROOT = process.cwd()
@@ -190,6 +191,7 @@ export const CONFIRM_CHECK_AXES = [
   'outside',
   'mirror',
   'forge',
+  'crack',
 ] as const
 
 export function folderNameWarnings(files: readonly string[]): string[] {
@@ -407,6 +409,23 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
   // defect here that reaches OUTSIDE the corpus — a caller receives provenance for a deposit that
   // never happened — so it belongs at the write, never at the push.
   const forgeries = forgedIn(files, ROOT)
+  // An `export const X = {…}` is seal-debt ([[matrix]]/crack), and it is the axis an AUTHOR trips over
+  // while writing rather than one that rots over time. It ran only at the push, as a whole-tree COUNT —
+  // so learning which of your own edits caused it meant bisecting the changeset by hand, or measuring
+  // HEAD in a worktree and diffing. That happened three times in one session, and it is the manual loop
+  // this closes.
+  //
+  // The refusal is INTRODUCED-ONLY, and that is a measurement rather than a preference: 451 of 11,631
+  // tracked src files already hold a crack, so refusing any crack in an edited file would lock 451 files
+  // and teach whoever hit one to reach for `--no-verify`. Two independent readings of the same file prove
+  // each other instead — `categorize` over the committed blob against `categorize` over the disk — so
+  // only what this edit ADDED is refused, and pre-existing debt stays with the ratchet that tracks it.
+  //
+  // Scoping is sound because `categorize` reads no cross-file state, and the equivalence is a test:
+  // 746 = 746 over every tracked src file, empty in both directions. The whole tree costs 1823 ms; one
+  // edited file costs 2 ms, which is the difference between a law that can live at the WRITE and one
+  // that cannot.
+  const cracks = newCracksIn(files, ROOT)
   // Realtime PROVENANCE gate ([[grounded]]): a trust-chain convention (`src/convention/*/index.ts`) that
   // reads raw, unsealed fs (`process.cwd()`/`readFileSync`/`readdirSync`/`existsSync`) prices the tamper-
   // cost on the MUTABLE working tree, not sealed content — the forge-cost then measures a directory
@@ -464,6 +483,11 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
       `🟥 forge     ✗  ${forgeries.length} identifier(s) wear a registry's shape and are generated locally — ` +
         `received or refused, never minted: ${forgeries.map((f) => `${f.file}:${f.line} ${f.registry}`).join(', ')}`,
     )
+  if (cracks.length)
+    console.log(
+      `🟥 crack     ✗  ${cracks.length} exported literal(s) are seal-debt — compute from sealed state or ` +
+        `make it a function: ${cracks.map((c) => `${c.file} ${c.constName}`).join(', ')}`,
+    )
   if (staleCatalogue)
     console.log(
       '🟥 standards ✗  a standard banner moved and the catalogue did not follow — run `pnpm erpax standards catalogue`',
@@ -502,6 +526,7 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     outside: outsideWrites.length === 0,
     mirror: mirrors.length === 0,
     forge: forgeries.length === 0,
+    crack: cracks.length === 0,
   }
   const ok = CONFIRM_CHECK_AXES.every((axis) => verdicts[axis])
   if (ok) {
