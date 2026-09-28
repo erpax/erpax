@@ -61,13 +61,21 @@ const shapeOf = (ratio: number, firstMs: number): MemoShape => {
  * @invariant a receipt-backed answer reports a ratio below MEMO_RATIO
  * @invariant realisedAmortisation is 1 when the second ask is free, 0.5 when it costs the same
  */
-export function timeTwice(label: string, ask: () => unknown): MemoVerdict {
-  const a = performance.now()
+export function timeTwice(
+  label: string,
+  ask: () => unknown,
+  // The clock, INJECTED — so the classification is provable without depending on how fast the machine
+  // running the test happens to be. A CI runner finished 12M iterations under the 5 ms floor and landed
+  // in `unmeasured` where the test demanded `rederives`: an assertion about wall time on a shared box is
+  // not evidence about the logic, it is evidence about the box.
+  now: () => number = () => performance.now(),
+): MemoVerdict {
+  const a = now()
   ask()
-  const firstMs = performance.now() - a
-  const b = performance.now()
+  const firstMs = now() - a
+  const b = now()
   ask()
-  const secondMs = performance.now() - b
+  const secondMs = now() - b
   const reaskRatio = firstMs > 0 ? secondMs / firstMs : 0
   // amortize with ONE reuse is the promise; (first+second)/2 is what actually happened per answer.
   const predictedPerAnswerMs = amortize(2, 0, { firstComputeCost: firstMs, reuses: 1 }).amortizedCost
@@ -100,8 +108,11 @@ export interface MemoCensus {
  * The census. Every operation that re-derives is a place the FTL claim does NOT hold, and naming
  * them is the point: the substrate can be O(1) by address while the laws computed over it are not.
  */
-export function memoCensus(asks: ReadonlyArray<readonly [string, () => unknown]>): MemoCensus {
-  const rows = asks.map(([label, fn]) => timeTwice(label, fn))
+export function memoCensus(
+  asks: ReadonlyArray<readonly [string, () => unknown]>,
+  now?: () => number,
+): MemoCensus {
+  const rows = asks.map(([label, fn]) => timeTwice(label, fn, now))
   return {
     rows: [...rows].sort((x, y) => y.secondMs - x.secondMs),
     memoized: rows.filter((r) => r.shape === 'memoized').map((r) => r.label),

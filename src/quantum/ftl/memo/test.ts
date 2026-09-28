@@ -17,7 +17,12 @@ const burn = (n: number) => (): number => {
 
 describe('quantum/ftl/memo — asking twice', () => {
   it('a re-derived answer is named as such: the second ask costs about the first', () => {
-    const v = timeTwice('burn', burn(12_000_000))
+    // The clock is injected, so this asserts the CLASSIFICATION and not the runner. Timing the real
+    // thing made it a test about the machine: a CI box finished 12M iterations under the 5 ms floor and
+    // landed in `unmeasured`, red on three pushes, with nothing wrong in the code it was guarding.
+    const ticks = [0, 100, 100, 200] // first ask 100ms, second ask 100ms
+    let i = 0
+    const v = timeTwice('burn', () => undefined, () => ticks[i++] ?? 0)
     expect(v.firstMs).toBeGreaterThanOrEqual(TOO_FAST_TO_JUDGE_MS)
     expect(v.shape).toBe('rederives')
     expect(v.reaskRatio).toBeGreaterThan(0.5)
@@ -42,8 +47,11 @@ describe('quantum/ftl/memo — asking twice', () => {
   })
 
   it('realised amortisation sits at the FLOOR when no reuse happens at all', () => {
-    // Half is the floor, not a pass: predicted c₀/2 against a measured c₀ per answer.
-    const v = timeTwice('burn', burn(12_000_000))
+    // Half is the floor, not a pass: predicted c₀/2 against a measured c₀ per answer. Clock injected —
+    // the arithmetic is the claim, and timing a loop makes it a claim about the runner instead.
+    const t = [0, 100, 100, 200]
+    let k = 0
+    const v = timeTwice('burn', () => undefined, () => t[k++] ?? 0)
     expect(v.realisedAmortisation).toBeGreaterThan(0.4)
     expect(v.realisedAmortisation).toBeLessThan(0.6)
   })
@@ -65,7 +73,9 @@ describe('quantum/ftl/memo — asking twice', () => {
       first = false
       return burn(n)()
     }
-    const v = timeTwice('colder', colder)
+    const t2 = [0, 50, 50, 250] // first 50ms, second 200ms — a ratio above 1, stated not timed
+    let k2 = 0
+    const v = timeTwice('colder', colder, () => t2[k2++] ?? 0)
     expect(v.reaskRatio).toBeGreaterThan(1)
     expect(v.shape).toBe('rederives')
   })
@@ -74,10 +84,16 @@ describe('quantum/ftl/memo — asking twice', () => {
 describe('quantum/ftl/memo — the census', () => {
   it('splits the operations and bills the cost of one extra ask', () => {
     let cached: number | null = null
-    const c = memoCensus([
-      ['rederives', burn(12_000_000)],
-      ['memoized', () => (cached ??= burn(12_000_000)())],
-    ])
+    // 4 ticks per ask, in census order: rederives 100/100, memoized 100/0.
+    const t = [0, 100, 100, 200, 200, 300, 300, 300]
+    let k = 0
+    const c = memoCensus(
+      [
+        ['rederives', burn(1)],
+        ['memoized', () => (cached ??= 1)],
+      ],
+      () => t[k++] ?? 300,
+    )
     expect(c.rederives).toEqual(['rederives'])
     expect(c.memoized).toEqual(['memoized'])
     expect(c.reaskCostMs).toBeGreaterThan(0)

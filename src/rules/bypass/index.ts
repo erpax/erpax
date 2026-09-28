@@ -32,18 +32,11 @@ const REQUEST_ROOTS = ['src/app', 'src/agents/mcp'] as const
 const BYPASS = /overrideAccess:\s*true/g
 const AUTH = /payload\.auth\s*\(/
 
-/**
- * Bypasses on request-reachable paths.
- *
- * A `overrideAccess: true` appearing only inside a COMMENT is prose about the pattern, not a use of
- * it — [[syntax]] strips comments so a docstring explaining this very law cannot be counted as
- * breaking it. That false-positive class already cost [[rules]]/confine a wrong measurement.
- */
+/** Bypasses on request-reachable paths. A bypass inside a COMMENT is prose, not a use — see ./SKILL.md. */
 export function bypassSites(cwd: string = process.cwd()): readonly BypassSite[] {
   const out: BypassSite[] = []
 
-  // Only the request-reachable tree, filtered from the ONE shared walk ([[syntax]]/cache);
-  // populations diffed 44 = 44.
+  // The request-reachable trees, filtered from the ONE shared walk ([[syntax]]/cache).
   const walk = (dir: string): void => {
     const prefix = `${dir}/`
     for (const p of allFiles(cwd)) {
