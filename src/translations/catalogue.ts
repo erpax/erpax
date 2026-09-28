@@ -77155,7 +77155,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "bypass",
-        "uuid": "f20ed224-ff21-846f-b986-e63d2162623e",
+        "uuid": "a2ea4c3f-af8d-8ef5-9efb-48ca2a512f22",
         "words": [
           "bypass"
         ],
@@ -77166,7 +77166,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that a request-reachable handler cannot disable access control silently — Payload's Local API defaults to overrideAccess:true, so bypass is the ambient condition a route inherits by writing nothing. Judges only src/app, because a hook or seed is not routed; a bypass named in a comment is prose, not a use. Baseline is a theorem at zero: one handler bypasses and it authenticates first, so there is no threshold to raise as the corpus grows.",
-        "uuid": "b1784e92-ea1b-84c5-a67c-b45331ff8e1d",
+        "uuid": "3d0d6568-8617-81c3-91e6-6f004b695178",
         "words": [
           "use",
           "when",
@@ -85835,7 +85835,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded.",
-        "uuid": "0edc884e-db58-88a9-9b0c-552c68e8da8b",
+        "uuid": "d30c87d7-3f22-8d76-9603-16e61f56233a",
         "words": [
           "use",
           "when",

@@ -14,7 +14,7 @@
 export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly parent?: string; readonly prev?: string; readonly next?: string; readonly cross?: string; readonly bind?: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string }
 export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }
 
-export const UUID_MATRIX_ROOT = "814b6412-5509-8b0a-9160-367f0ebb608d" as const
+export const UUID_MATRIX_ROOT = "3f67c989-0304-8e78-8f3f-5923e2bd3144" as const
 export const UUID_MATRIX_DIMS = ["root","access","accounting","address","admin","agent","agents","ai","algebra","allow","anchor","anti","api","apply","architecture","atom","audit","aura","authenticated","auto","average","bank","base","bcp","before","beyond","bg","biological","blocks","body","book","bookable","budget","bulk","business","cache","camt052","camt053","camt054","can","capture","cases","categories","chain","classify","cli","cloning","closing","cloudflare","cmspage","collection","commerce","commitments","competency","compliance","computer","config","confirm","consent","consistency","consolidation","convention","cost","country","cross","csrd","currency","customer","customers","dashboard","data","deep","default","deploy","development","diamond","document","domain","double","dual","duality","ecommerce","employees","en","enforce","entanglement","entity","entropy","error","etsi","eu","evidence","export","factory","fair","feature","field","financial","fiscal","fixed","footer","format","fusion","fx","gate","generate","get","ghg","gl","google","government","harmony","header","heart","held","hero","heros","horo","i18n","identity","ifrs","incoterms","index","insurance","integrity","intercompany","internal","intl","invoices","iso","items","jobs","journal","law","leads","leases","legal","link","llm","locale","lot","maintenance","mcp","media","medical","memory","merge","message","metric","migrate","millennium","mineral","money","monitor","multi","nace","naredba","navigation","nist","notary","oecd","outward","pack","pacs004","page","pain002","party","patent","path","payable","payload","payment","peppol","period","platform","plugins","post","posts","product","proof","properties","providers","publish","quantum","query","readme","realtime","receipt","receivable","regulatory","render","research","reverse","rfc","rich","rodin","roles","rules","run","saf","safety","sale","sandbox","scheduled","schema","seal","search","security","seed","seeds","self","sequence","skill","social","spec","standard","standards","sti","storage","subscription","svg","syntax","tags","tamper","tax","taxing","team","tenant","tenants","test","testing","timeout","trading","transaction","translate","translation","translations","trello","types","ui","un","update","use","users","utility","uuid","validate","vendors","verify","versions","vocabulary","warehouse","water","wave","wco","website","widget","witness","work","workflow","xml"] as const
 
 export const UUID_MATRIX_NODES: readonly MatrixNode[] = [
@@ -1258,9 +1258,9 @@ export const UUID_MATRIX_NODES: readonly MatrixNode[] = [
   {"atom":"rules","uuid":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","dim":"root","band":"flow","horo":7,"path":"rules","parent":"00000000-0000-8000-8000-000000000000","prev":"51d73e66-339f-84d3-af78-9e9b23f49352","next":"b1a1384a-48b1-85d9-a9d1-9b31a454a6f8","cross":"47a71ffd-9e9f-8cf6-9a7a-9740d717b57b","bind":"7cba394c-3813-8ede-84d2-342471d0e08b"},
   {"atom":"alt","uuid":"b1a1384a-48b1-85d9-a9d1-9b31a454a6f8","dim":"rules","band":"flow","horo":2,"path":"rules/alt","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","next":"59efd4b0-3087-8803-9ff1-00df8cdda66c","cross":"9bd8cd88-886c-80cc-ba38-b9f1946061bb","bind":"e271d4be-eaeb-864f-97d7-ce65507e8362"},
   {"atom":"ask","uuid":"59efd4b0-3087-8803-9ff1-00df8cdda66c","dim":"rules","band":"flow","horo":7,"path":"rules/ask","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"b1a1384a-48b1-85d9-a9d1-9b31a454a6f8","next":"6d798c00-dbcb-836c-b8bc-54be9b2976f6","cross":"51667458-1c6a-8a99-a20c-bfb441f70e41","bind":"a0a371d6-8b0e-882f-8a16-4f4d8e1e9291"},
-  {"atom":"audience","uuid":"6d798c00-dbcb-836c-b8bc-54be9b2976f6","dim":"rules","band":"flow","horo":5,"path":"rules/audience","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"59efd4b0-3087-8803-9ff1-00df8cdda66c","next":"f20ed224-ff21-846f-b986-e63d2162623e","cross":"67a591d7-7081-82b4-ad7a-358f8dffa5da","bind":"fbd7fef0-5d4b-8366-b395-0dac723495eb"},
-  {"atom":"bypass","uuid":"f20ed224-ff21-846f-b986-e63d2162623e","dim":"rules","band":"flow","horo":4,"path":"rules/bypass","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"6d798c00-dbcb-836c-b8bc-54be9b2976f6","next":"0df70f6c-4486-8330-b942-c77b7dfb696e","cross":"532bc12f-8124-8956-a634-ed2d6f71a5e7","bind":"64800d46-38d3-8c44-99ed-a25305ae79d2"},
-  {"atom":"canonical","uuid":"0df70f6c-4486-8330-b942-c77b7dfb696e","dim":"rules","band":"flow","horo":4,"path":"rules/canonical","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"f20ed224-ff21-846f-b986-e63d2162623e","next":"85f5cf1d-e44e-8931-9d97-6316c50a2d88","cross":"bc3d5a10-3194-87de-bfc7-de58f355bb2a","bind":"25efcbb5-a7e7-8de8-a94a-90c31a4816ca"},
+  {"atom":"audience","uuid":"6d798c00-dbcb-836c-b8bc-54be9b2976f6","dim":"rules","band":"flow","horo":5,"path":"rules/audience","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"59efd4b0-3087-8803-9ff1-00df8cdda66c","next":"a2ea4c3f-af8d-8ef5-9efb-48ca2a512f22","cross":"1c8fdf25-dc4c-80c4-ac74-73be18d93874","bind":"f51a2f98-1eac-852f-9a4e-d86998bff0c5"},
+  {"atom":"bypass","uuid":"a2ea4c3f-af8d-8ef5-9efb-48ca2a512f22","dim":"rules","band":"flow","horo":2,"path":"rules/bypass","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"6d798c00-dbcb-836c-b8bc-54be9b2976f6","next":"0df70f6c-4486-8330-b942-c77b7dfb696e","cross":"532bc12f-8124-8956-a634-ed2d6f71a5e7","bind":"82af937d-8e6a-80f9-94ea-d5d62f7cfd95"},
+  {"atom":"canonical","uuid":"0df70f6c-4486-8330-b942-c77b7dfb696e","dim":"rules","band":"flow","horo":4,"path":"rules/canonical","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"a2ea4c3f-af8d-8ef5-9efb-48ca2a512f22","next":"85f5cf1d-e44e-8931-9d97-6316c50a2d88","cross":"a6acb755-4c54-8fe0-a0e0-6b612746e272","bind":"2dab4ec9-9471-873f-af5c-15c9f90e245a"},
   {"atom":"citation","uuid":"85f5cf1d-e44e-8931-9d97-6316c50a2d88","dim":"rules","band":"flow","horo":8,"path":"rules/citation","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"0df70f6c-4486-8330-b942-c77b7dfb696e","next":"fd5ccaed-fbda-8097-b2a1-04039f55579a","cross":"201b841a-e60e-8727-a1bc-3d1d73fded21","bind":"a601f42c-3118-8c00-bc03-0fea14cd226a"},
   {"atom":"collapse","uuid":"fd5ccaed-fbda-8097-b2a1-04039f55579a","dim":"rules","band":"flow","horo":5,"path":"rules/collapse","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"85f5cf1d-e44e-8931-9d97-6316c50a2d88","next":"2ca46545-69fb-8ed2-bbbd-8d20b5348cbf","cross":"7694b6aa-b3d1-8e3c-8d30-721535730a6a","bind":"0560e627-0881-8624-bd38-b3e7b844051b"},
   {"atom":"command","uuid":"2ca46545-69fb-8ed2-bbbd-8d20b5348cbf","dim":"rules","band":"flow","horo":8,"path":"rules/command","parent":"ace0b1e0-0c56-815e-9e1e-30187a23fc77","prev":"fd5ccaed-fbda-8097-b2a1-04039f55579a","next":"32b8ccdd-078f-8f29-bdbc-c93d067531c7","cross":"9c36e816-bfcd-8383-9db8-90fe3a1dd2e9","bind":"db250875-6e31-86ad-86ce-9c8fa973e6d0"},
@@ -11477,11 +11477,11 @@ export const UUID_MATRIX_EDGES: readonly MatrixEdge[] = [
   {"f":1240,"t":1595,"binding":"015ebb45-cbb5-88cf-aca8-c6bc181d3bf5","dir":2},
   {"f":1240,"t":1237,"binding":"7e04267f-6eda-81e8-a010-9795ff50c6fd","dir":8},
   {"f":1240,"t":756,"binding":"e8686938-4603-8316-9ca9-7ad9aeb72561","dir":7},
-  {"f":1241,"t":1237,"binding":"18ab3671-c5c2-811a-8997-d3c9fcafda00","dir":1},
-  {"f":1241,"t":1017,"binding":"98c8e0b9-d703-8da0-ad4b-0307251864bd","dir":2},
-  {"f":1241,"t":1595,"binding":"ef801964-1054-84f8-bbd8-ab0982d8637c","dir":7},
-  {"f":1241,"t":756,"binding":"cda6ac6c-15f6-8562-b789-46f5c1df734a","dir":2},
-  {"f":1241,"t":132,"binding":"5ce7929c-3a16-88ca-a359-607dda3362ac","dir":3},
+  {"f":1241,"t":1237,"binding":"a5efcab1-dbc6-8385-b5fd-19b6f0f0bfa3","dir":5},
+  {"f":1241,"t":1017,"binding":"93cfa0a7-b36b-8e29-8cac-32ac850dfb6f","dir":1},
+  {"f":1241,"t":1595,"binding":"908718ae-7139-897e-9c45-b93d204c5e4e","dir":8},
+  {"f":1241,"t":756,"binding":"1d3717ef-6665-8591-8f8c-08f5db1d9c2b","dir":1},
+  {"f":1241,"t":132,"binding":"f682a08b-b1eb-8570-9508-1337fd63e75c","dir":6},
   {"f":1242,"t":1237,"binding":"ecbc3d7c-353d-8bff-8c01-fde4fea0afc8","dir":1},
   {"f":1242,"t":756,"binding":"80c8213f-a5ea-8b28-809c-0fc68fb13786","dir":2},
   {"f":1243,"t":1237,"binding":"42ce959c-f686-8c63-b477-2520c251e2fb","dir":2},
@@ -33094,11 +33094,11 @@ export const UUID_MATRIX_EDGES: readonly MatrixEdge[] = [
   {"f":1595,"t":1240,"binding":"015ebb45-cbb5-88cf-aca8-c6bc181d3bf5","dir":2},
   {"f":1237,"t":1240,"binding":"7e04267f-6eda-81e8-a010-9795ff50c6fd","dir":8},
   {"f":756,"t":1240,"binding":"e8686938-4603-8316-9ca9-7ad9aeb72561","dir":7},
-  {"f":1237,"t":1241,"binding":"18ab3671-c5c2-811a-8997-d3c9fcafda00","dir":1},
-  {"f":1017,"t":1241,"binding":"98c8e0b9-d703-8da0-ad4b-0307251864bd","dir":2},
-  {"f":1595,"t":1241,"binding":"ef801964-1054-84f8-bbd8-ab0982d8637c","dir":7},
-  {"f":756,"t":1241,"binding":"cda6ac6c-15f6-8562-b789-46f5c1df734a","dir":2},
-  {"f":132,"t":1241,"binding":"5ce7929c-3a16-88ca-a359-607dda3362ac","dir":3},
+  {"f":1237,"t":1241,"binding":"a5efcab1-dbc6-8385-b5fd-19b6f0f0bfa3","dir":5},
+  {"f":1017,"t":1241,"binding":"93cfa0a7-b36b-8e29-8cac-32ac850dfb6f","dir":1},
+  {"f":1595,"t":1241,"binding":"908718ae-7139-897e-9c45-b93d204c5e4e","dir":8},
+  {"f":756,"t":1241,"binding":"1d3717ef-6665-8591-8f8c-08f5db1d9c2b","dir":1},
+  {"f":132,"t":1241,"binding":"f682a08b-b1eb-8570-9508-1337fd63e75c","dir":6},
   {"f":1237,"t":1242,"binding":"ecbc3d7c-353d-8bff-8c01-fde4fea0afc8","dir":1},
   {"f":756,"t":1242,"binding":"80c8213f-a5ea-8b28-809c-0fc68fb13786","dir":2},
   {"f":1237,"t":1243,"binding":"42ce959c-f686-8c63-b477-2520c251e2fb","dir":2},
