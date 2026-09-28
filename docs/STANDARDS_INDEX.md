@@ -2324,7 +2324,7 @@ src/quantum/emr/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/entanglement/index.ts:18: * @standard ER=EPR (Maldacena & Susskind, 2013); monogamy (Coffman–Kundu–Wootters, PRA 61 052306, 2000)
 src/quantum/export/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/fs/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/quantum/ftl/memo/disk/index.ts:7: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: one truth, one address
+src/quantum/ftl/memo/disk/index.ts:8: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: one truth, one address
 src/quantum/ftl/memo/index.ts:11: * @standard ISO/IEC 25010:2023 §5.2 — performance efficiency: time behaviour under repetition
 src/quantum/generator/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/graph/index.ts:9: * @standard symmetric (reciprocal) entanglement — directed-link entropy → 0
@@ -2440,8 +2440,8 @@ src/rotation/index.ts:4: * @standard ISO 1151-1 — flight dynamics, body axes a
 src/routing/index.ts:6: * @standard NIST AI RMF (risk-proportionate controls) — map risk → control strength
 src/rules/ask/index.ts:23: * @standard ISO 9241-110:2020 §6.2 — self-descriptiveness / suitability for the task (do not ask what is known)
 src/rules/audience/index.ts:42: * @standard ISO-19011:2018 §6.4 audit-evidence — a citation is read by a person
-src/rules/bypass/index.ts:29: * @standard ISO/IEC 27001 A.5.23 — cloud-service tenant isolation
-src/rules/bypass/index.ts:30: * @standard ISO/IEC 25010:2023 §5.4 — security: confidentiality by default
+src/rules/bypass/index.ts:11: * @standard ISO/IEC 27001 A.5.23 — cloud-service tenant isolation
+src/rules/bypass/index.ts:12: * @standard ISO/IEC 25010:2023 §5.4 — security: confidentiality by default
 src/rules/canonical/index.ts:17: * @standard ISO/IEC 25010:2023 §5.5 reusability — use the dependency or drop it
 src/rules/citation/index.ts:4: * @standard ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence
 src/rules/collapse/index.ts:32: * @standard RFC 9562 §5.8 — content-address (same content, same address)

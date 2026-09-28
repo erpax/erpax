@@ -1,34 +1,15 @@
 /**
  * rules/bypass — access control is ON by default, and a bypass must earn its way past.
  *
- * Payload's Local API defaults to `overrideAccess: true`. That is the framework's choice and it is
- * defensible — the Local API is how hooks, seeds, migrations and system jobs act with no user in
- * scope, and they genuinely cannot pass an access check. But it means **the ambient condition on a
- * server is bypass**, and a route handler inherits it by writing nothing at all.
+ * Payload's Local API defaults to `overrideAccess: true`, so bypass is the AMBIENT condition a request
+ * handler inherits by writing nothing. Argued in ./SKILL.md: the one live site, why the baseline is real
+ * rather than aspirational, and the MCP gateway the scope used to miss.
  *
- * So the corpus inverts the default where it matters. On a REQUEST-REACHABLE path — anything under
- * `src/app`, which Next.js routes — a call that disables access control must sit in a handler that
- * has authenticated the caller. The corpus already does this correctly in the one place it applies:
+ * @law on a request-reachable path, access control is on by default — a call that disables it must sit
+ *      in a handler that authenticated the caller first.
  *
- *   `app/(api)/api/subscriptions/create/route.ts` calls `payload.auth({ headers })` first, rejects
- *   a principal with no email (an API key has no tenant), derives the tenant FROM THE AUTHENTICATED
- *   USER rather than from the request body, and only then bypasses — its own comment says "it IS
- *   the authorization boundary".
- *
- * That is a legitimate pattern. What it lacked was a gate: nothing stopped the next route from
- * doing the first half and forgetting the second, and the failure would be silent — a 200 with
- * another tenant's rows in it. [[rules]]/unraised names this exact shape: the check that never runs.
- *
- * **The baseline is 0 and it is real**, not aspirational: one file bypasses, and it authenticates.
- * A gate that starts at zero cannot be argued down later.
- *
- * @law on a request-reachable path, access control is on by default — a call that disables it must
- *      sit in a handler that authenticated the caller first.
- * @invariant only `src/app` is judged; a hook or a seed is not request-reachable and is not counted
- * @invariant a file with no bypass is never a violation — this counts bypasses, not files
  * @standard ISO/IEC 27001 A.5.23 — cloud-service tenant isolation
  * @standard ISO/IEC 25010:2023 §5.4 — security: confidentiality by default
- * @see ./SKILL.md -- ../../rules -- ../unraised
  */
 import { allFiles, textOf } from '@/syntax/cache'
 import { readdirSync, readFileSync, type Dirent } from 'node:fs'
@@ -45,8 +26,8 @@ export interface BypassSite {
   readonly authenticates: boolean
 }
 
-/** The directory Next.js routes. Nothing outside it is reachable by a request. */
-const REQUEST_ROOT = 'src/app'
+/** The trees a REQUEST can reach — `src/app` routes, and `/api/mcp` mounts the gateway. See ./SKILL.md § the MCP gateway is a request path too. */
+const REQUEST_ROOTS = ['src/app', 'src/agents/mcp'] as const
 
 const BYPASS = /overrideAccess:\s*true/g
 const AUTH = /payload\.auth\s*\(/
@@ -60,7 +41,6 @@ const AUTH = /payload\.auth\s*\(/
  */
 export function bypassSites(cwd: string = process.cwd()): readonly BypassSite[] {
   const out: BypassSite[] = []
-  const root = join(cwd, REQUEST_ROOT)
 
   // Only the request-reachable tree, filtered from the ONE shared walk ([[syntax]]/cache);
   // populations diffed 44 = 44.
@@ -71,6 +51,8 @@ export function bypassSites(cwd: string = process.cwd()): readonly BypassSite[] 
       const name = p.slice(p.lastIndexOf('/') + 1)
       if (/(^|\/)\./.test(p.slice(dir.length))) continue
       if (!/\.(ts|tsx)$/.test(name) || /\.test\.|(^|\/)test\./.test(name)) continue
+      // A generated face restates every symbol AND every SKILL description — including this law's own.
+      if (/\.generated\.tsx?$|(^|\/)(generated|catalogue|skills\.index|payload-types)\.tsx?$/.test(name)) continue
       let text: string
       try {
         text = textOf(p)
@@ -87,20 +69,17 @@ export function bypassSites(cwd: string = process.cwd()): readonly BypassSite[] 
     }
   }
 
-  walk(root)
-  return out.sort((a, b) => a.file.localeCompare(b.file))
+  for (const r of REQUEST_ROOTS) walk(join(cwd, r))
+  // A file reachable from two roots is one site, not two.
+  const seen = new Set<string>()
+  return out
+    .filter((s) => (seen.has(s.file) ? false : (seen.add(s.file), true)))
+    .sort((a, b) => a.file.localeCompare(b.file))
 }
 
 /**
- * EVERY bypass in the corpus, not just the routed ones — the ratcheted axis.
- *
- * `bypassSites` judges `src/app` at a theorem baseline of 0, because a silent cross-tenant read on
- * a route is a catastrophe. But that leaves the other ~130 UNMONITORED, and an unmonitored default
- * is how the count reached 138 in the first place: nothing was counting.
- *
- * So the whole surface is counted and ratcheted DOWN. It cannot be a theorem at 0 today — hooks and
- * seeds genuinely have no user until [[principal]] replaces them one subsystem at a time — but it
- * can be forbidden from growing, which is the difference between a debt and a leak.
+ * EVERY bypass in the corpus, not just the routed ones — the ratcheted axis. See ./SKILL.md for why
+ * this one ratchets DOWN while `bypassSites` is a theorem at 0.
  *
  * @invariant a bypass in a comment is not counted — prose about the pattern is not a use of it
  */

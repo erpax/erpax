@@ -150,18 +150,8 @@ export function inputKey(cwd: string = process.cwd(), surface: MemoSurface = 'sr
   const h = createHash('sha256')
   for (const f of surface === 'ts' ? corpusFiles(cwd) : allFiles(cwd)) {
     h.update(f)
-    // SIZE AND MTIME, not content — and that is a measured choice, not a shortcut.
-    //
-    // A content hash was the first design and it was WRONG in both directions. It could not see an
-    // in-process edit at all, because `textOf` is itself memoized and returned the stale text: the
-    // key did not move when a file was rewritten, which is the stale-verdict defect arriving through
-    // the very cache the gates share. And it cost 1432 ms cold, because hashing content means READING
-    // every file before any gate has asked for it — more than the gate it was meant to save.
-    //
-    // `statSync` is not cached, so an edit always moves the key, and it is ~25 ms over the surface.
-    // That is sound for an IN-PROCESS memo, which is what this is. A cross-process memo on disk would
-    // need the content address instead, because mtime granularity cannot be trusted between runs —
-    // `scripts/payload-input-key.sh` does exactly that, keyed on git blobs.
+    // SIZE AND MTIME, not content — a measured choice, argued in ./SKILL.md: a content hash could not
+    // see an in-process edit (textOf is itself memoized) and cost 1432ms cold, more than the gate it saved.
     try {
       const st = statSync(f)
       h.update(`${st.size}:${st.mtimeMs}`)
@@ -196,21 +186,8 @@ export function forgetMemos(): void {
 }
 
 /**
- * Seal a gate's verdict at both layers — the one call a gate makes.
- *
- * In-process first (a map lookup), then on disk (free across processes). The address is git's content
- * key where git can give one, because it is both cheaper than walking `stat` over the surface and
- * sound across runs; the stat key is the fallback when there is no git metadata, and it is sound
- * in-process, which is all the in-process layer needs.
- *
- * A value that does not survive a JSON round-trip is NOT sealed to disk. A `Map`, a `Set` or an
- * `undefined` would come back as something else, and a gate reading a corrupted verdict is worse than
- * one that recomputes — so the round-trip is checked before the seal, once, on the way in.
- *
- * `surface` is the git pathspec the address covers, defaulting to `src`. A gate reading WIDER must
- * say so or it is sealed on a key blind to its own inputs: `deadLoaderPaths` tests whether targets
- * under `scripts/` and `packages/` exist, so on the default key a deleted script would keep serving
- * the green verdict that preceded it — the exact failure that gate exists to catch.
+ * Seal a gate's verdict at both layers — the one call a gate makes. Argued in ./SKILL.md: why the
+ * surface is part of the address, and why a value that does not round-trip through JSON is never sealed.
  *
  * @invariant the in-process layer always applies; the disk layer only with a content address
  * @invariant a verdict that does not round-trip through JSON is never sealed to disk

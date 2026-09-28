@@ -74,16 +74,7 @@ function identifierFrequency(file: string, text: string): ReadonlyMap<string, nu
 }
 
 /**
- * Exported `function`/`const` names, from the GRAMMAR.
- *
- * The reference side of this gate was corrected to parse; the DEFINITION side stayed a regex, and a
- * regex cannot tell a declaration from the same characters inside a string. A test fixture holding
- * `'export const SOMETHING = { a: 1 }'` registered as a real export with zero callers — the scanner
- * inventing a violation out of a string literal, which is this corpus's own parse-don't-match law
- * failing in the atom that states it.
- *
- * @invariant text inside a string literal is never a definition
- */
+/** Exported `function`/`const` names, from the GRAMMAR — text inside a string literal is not a definition. See ./SKILL.md. */
 function definedExports(file: string, text: string): string[] {
   const out: string[] = []
   const src = astOf(file, text)

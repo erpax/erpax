@@ -1,4 +1,7 @@
 import { describe, expect, it } from 'vitest'
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 
 import { judge, type Change } from '@/constitution'
 
@@ -86,5 +89,57 @@ describe('rules/bypass — judged by the constitution', () => {
     const v = judge(change)
     expect(v.verdicts.filter((x) => !x.holds)).toEqual([])
     expect(v.sealed).toBe(true)
+  })
+})
+
+/**
+ * The gate scoped to `src/app`, and the MCP gateway is mounted at `/api/mcp` with its tools running on
+ * `req.payload` for a caller — a request path by every definition this axis uses, entirely outside the
+ * law that exists to stop a silent cross-tenant read.
+ */
+describe('rules/bypass — the MCP gateway is a request path too', () => {
+  it('judges the MCP tool surface, which the src/app scope could not see', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-bypass-mcp-'))
+    try {
+      mkdirSync(join(root, 'src/agents/mcp/tool'), { recursive: true })
+      writeFileSync(
+        join(root, 'src/agents/mcp/tool/leaky.ts'),
+        'export const run = async (req: any) => req.payload.find({ collection: "invoices", overrideAccess: true })\n',
+      )
+      const sites = bypassSites(root)
+      expect(sites.map((x) => x.file)).toEqual(['src/agents/mcp/tool/leaky.ts'])
+      expect(sites[0]!.authenticates).toBe(false) // nothing authenticates the caller
+      expect(unauthenticatedBypasses(root).length).toBe(1)
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  /**
+   * Widening it flagged `atom-catalogue.generated.ts` twice, and one of the two strings is THIS atom's
+   * own SKILL description — "Payload's Local API defaults to overrideAccess:true". The gate would have
+   * charged the law for describing itself. Comment-stripping cannot catch that: they are string
+   * literals in generated data, not comments.
+   */
+  it('refuses a GENERATED face as evidence — it restates the laws, including this one', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-bypass-gen-'))
+    try {
+      mkdirSync(join(root, 'src/agents/mcp'), { recursive: true })
+      const prose =
+        'export const CATALOGUE = [{ "description": "Payload\'s Local API defaults to overrideAccess: true, so bypass is ambient" }]\n'
+      writeFileSync(join(root, 'src/agents/mcp/atom-catalogue.generated.ts'), prose)
+      expect(bypassSites(root)).toEqual([])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('live: the MCP surface performs the construct, and never the bypassing form', () => {
+    // 7 `overrideAccess: false` across tool-defs, versions and batch — access control deliberately ON.
+    // A theorem at zero over a NON-EMPTY population: the gate stands where traffic passes.
+    for (const s of bypassSites(cwd)) {
+      if (s.file.startsWith('src/agents/mcp')) expect(s.authenticates).toBe(true)
+    }
+    expect(unauthenticatedBypasses(cwd)).toEqual([])
   })
 })

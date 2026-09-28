@@ -54,6 +54,37 @@ Only `src/app` is judged. The corpus has **132** `overrideAccess: true` sites; t
 
 A bypass appearing only in a **comment** is prose about the pattern, not a use of it. This atom's own docstring contains the literal string; [[syntax]] strips comments so the file defining the law cannot be flagged for describing it — the false positive that already cost [[rules]]/confine a wrong measurement.
 
+## The MCP gateway is a request path too
+
+The scope was `src/app` — "the directory Next.js routes" — and the gap was in the security direction.
+The MCP gateway is mounted at **`/api/mcp`**, its tool handlers run with `req.payload` on a caller's
+behalf, and it sat **entirely outside** this axis. That is [[rules]]/domain's law arriving in a security
+gate: a law reaches exactly the file classes its checker opens, and on the rest it is not passing, it is
+silent.
+
+Measured before widening: the MCP surface performs the construct **7 times** and every one is
+`overrideAccess: false` — access control deliberately left ON, in `tool-defs`, `tool/versions` and
+`tool/batch`. So the widening is a **theorem at zero over a non-empty population**: the gate now stands
+where traffic passes rather than being a check that cannot fire ([[rules]]/unraised).
+
+Proved by planting: a handler under `src/agents/mcp/tool` doing `overrideAccess: true` with no
+`payload.auth` is reported `UNAUTHENTICATED`. Under the old scope it was invisible.
+
+### the law describing itself
+
+Widening it immediately flagged `atom-catalogue.generated.ts` **twice**, and one of the two strings is
+*this atom's own SKILL description* — "Payload's Local API defaults to overrideAccess:true, so bypass is
+the ambient condition a route inherits". The gate would have charged the law for describing itself.
+
+Comment-stripping could not catch it: those are **string literals in generated data**, not comments.
+Every other gate in this corpus already refuses a generated face as evidence — it restates every symbol
+and every SKILL description — and this one now does too. Third time this class appeared in one session,
+after a paginated `from` read as a currency and Google's response-format `alt` read as an altitude.
+
+**Honest boundary, unchanged and now wider.** This still proves a bypassing handler *also calls*
+`payload.auth` somewhere in the same file — never that the auth guards that call, and never that the
+derived scope is correct. What widened is the set of files where that question is asked at all.
+
 ## Honest boundary
 
 This proves a bypassing handler **also calls `payload.auth` somewhere in the same file** — never that the auth guards that specific call, and never that the derived scope is correct. It closes the silent case: bypass with no authentication at all. A wrong scope after a real auth is a per-case review, not a gate.

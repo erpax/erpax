@@ -1,8 +1,9 @@
 /**
  * quantum/ftl/memo/disk — the verdict sealed across processes, keyed on the content git already holds.
  *
- * The in-process memo takes a re-ask to zero WITHIN one run. A fresh process — every CI job, every
- * pre-push — still pays the first ask in full, and this is what makes that free too. See ./SKILL.md.
+ * The in-process memo takes a re-ask to zero WITHIN one run; a fresh process — every CI job, every
+ * pre-push — still paid the first ask in full. Argued in ./SKILL.md, including why the surface is part
+ * of the address and why a tree with no git metadata yields null rather than a shared constant.
  *
  * @standard ISO/IEC 25010:2023 §5.6 — maintainability: one truth, one address
  */
