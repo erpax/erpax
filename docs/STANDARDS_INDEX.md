@@ -154,6 +154,7 @@ src/agents/mcp/tool/share.ts:13: * @standard NIST SP 800-162 ABAC
 src/agents/mcp/tool/share.ts:14: * @standard MCP 0.6 tools/list + tools/call
 src/agents/mcp/tool/versions.ts:22: * @standard MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}
 src/agents/mcp/tool/versions.ts:23: * @standard ISO 19011:2018 §6.4.6 audit-evidence (version history is the trail)
+src/agents/mcp/tool/witness/index.ts:7: * @standard MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}
 src/agents/registered/consistency.agent.ts:22: * @standard ISO/IEC 25010:2023 §5.7 modifiability (self-modifying with audit)
 src/agents/registered/data.agent.ts:5: * @standard ISO 20022 + ECB FX-rates
 src/agents/registered/design.agent.ts:6: * @standard WCAG 2.2 + WAI-ARIA 1.2 + ISO 9241-110 dialogue-principles
@@ -2104,11 +2105,15 @@ src/oecd/tpg/index.ts:6: * @standard OECD BEPS Action 13 master-file-local-file-
 src/oecd/tpg/index.ts:7: * @standard EU DAC-4 country-by-country-reporting
 src/oecd/tpg/index.ts:8: * @standard OECD Pillar Two GloBE 15% global minimum tax (companion)
 src/operators/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
+src/outward/discover/index.ts:8: * @standard OpenAPI 3 / Swagger 2 — the machine-readable surface being read
+src/outward/discover/index.ts:9: * @standard ISO 19011:2018 §6.4 — audit evidence: a candidate cross must name the fields it rests on
 src/outward/eu/contract.ts:23: * @standard ISO 19011:2018 §6.4 — audit evidence
 src/outward/eu/index.ts:33: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
 src/outward/gate/index.ts:25: * @standard ISO 19011:2018 §6.4 — audit evidence: the contract IS the evidence
 src/outward/index.ts:10: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
 src/outward/index.ts:9: * @standard RFC 9562 §5.8 — v8 content-uuid (the address)
+src/outward/witness/index.ts:7: * @standard ISO 19011:2018 §6.4 — audit evidence: two sources agreeing is evidence; one is a claim
+src/outward/witness/index.ts:8: * @standard WGS 84 — geodetic latitude/longitude
 src/pack/items/index.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/pack/items/index.ts:29: * @standard ISA-95:2013 §B.5 production-operations dispatch line
 src/pack/items/index.ts:30: * @standard UN/CEFACT Rec20 mass (gram) per-unit

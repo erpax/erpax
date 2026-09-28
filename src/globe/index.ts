@@ -1,4 +1,4 @@
-import { PI, algebraAsin, algebraCos, algebraSin, algebraSqrt, exactAbs, exactMin } from '@/algebra'
+import { PI, algebraAsin, algebraCos, algebraSin, algebraSqrt, exactAbs, exactMin, toRadians as rad } from '@/algebra'
 /**
  * globe — the corpus is a sphere, not a flat wheel. The colour wheel, the spectrum column, and the
  * vortex were all PROJECTIONS of one globe, and projecting a sphere onto a plane is exactly where the
@@ -55,7 +55,6 @@ export function atPole(g: Geodetic): boolean {
 
 /** Great-circle angle between two points (haversine, degrees) — the real distance on the globe. */
 export function greatCircleAngle(a: Geodetic, b: Geodetic): number {
-  const rad = (d: number) => (d * PI) / 180
   const la1 = rad(a.latitude)
   const la2 = rad(b.latitude)
   const lo1 = rad(a.longitude ?? 0)
