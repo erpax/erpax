@@ -22278,7 +22278,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about stale references as entropy — an import whose target does not exist on disk is a dead wire that lowers tamper-cost; this scans every `@/` import across src/scripts/.vitepress and reports the live fraction that resolves to a real file.",
-        "uuid": "f7ed758a-293e-8403-b1f5-1557976462f5",
+        "uuid": "9d30dbf6-6ec7-85dd-a5fb-1cf1db8084e8",
         "words": [
           "use",
           "when",
@@ -49911,7 +49911,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-        "uuid": "4c69d000-608d-8128-82c7-cd4c358b4304",
+        "uuid": "d29ffe2d-2273-8486-bc29-251bf5e2442e",
         "words": [
           "use",
           "when",
@@ -67689,7 +67689,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "disk",
-        "uuid": "44a097c2-9d35-84b3-818a-4eacbf8c9157",
+        "uuid": "7aa43d3b-0899-83c0-bbe9-da252142d826",
         "words": [
           "disk"
         ],
@@ -67700,7 +67700,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too.",
-        "uuid": "4a01d962-24ac-8b2a-92f1-9c32b59dec1e",
+        "uuid": "66ed8a2f-6d35-88f2-891a-c97f4cd41aae",
         "words": [
           "use",
           "when",
@@ -85259,7 +85259,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the corpus improving itself with NO external tool — the development-time twin of self/closure's Law 53. Every stage of the improvement loop (leftover · rosetta · decide · publish · think) is a local atom; selfImproves proves the external-tool count is zero and loopResolves proves the loop is real matter on disk, not fabricated prose.",
-        "uuid": "22d2ce05-5372-85e2-8159-54e9584c4903",
+        "uuid": "c4de17d3-a465-8e41-82df-bb3d78a4dd16",
         "words": [
           "use",
           "when",

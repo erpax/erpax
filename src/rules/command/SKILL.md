@@ -3,8 +3,8 @@ name: command
 description: "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed."
 atomPath: "rules/command"
 coordinate: "rules/command · 8/crest · 2ca46545"
-contentUuid: "34852f64-2105-5ac7-b8fb-2939b9b337c6"
-diamondUuid: "7dea75d9-4cdc-887b-b5ad-d217cf899e65"
+contentUuid: "3c3e6750-cb8b-5ea4-832a-f45982934c53"
+diamondUuid: "ae3e95eb-9770-8981-9d01-bd9cd3fb3243"
 uuid: "2ca46545-69fb-8ed2-bbbd-8d20b5348cbf"
 horo: 8
 typography:
@@ -13,14 +13,14 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7b426aa4-60da-8de3-843a-7a2eba0499c0"
+  computationUuid: "77c09770-9e2c-8dc8-91cf-7d53dc6e9c97"
   stages:
     - stage: path
       stageUuid: "b5e62b08-01b9-8aa0-b446-cccc0c0e3659"
     - stage: trinity
       stageUuid: "9717512a-a5ae-888e-87e1-712ca944b401"
     - stage: boundary
-      stageUuid: "434b4063-3f07-856c-b510-fff0e81b11f8"
+      stageUuid: "5ccd6e77-4a22-80a9-afd4-b4256f80536a"
     - stage: links
       stageUuid: "c694e904-4a25-8c4e-b682-d5d2d042d937"
     - stage: horo
@@ -28,7 +28,7 @@ signatures:
     - stage: seal
       stageUuid: "e46e9b95-f7ef-804c-a92b-840ae48a5ddd"
     - stage: uuid
-      stageUuid: "cdb439df-7db2-8be1-b946-94bc53a9c50b"
+      stageUuid: "c9944a35-3fb3-8ff9-bcd1-e6990b999b42"
 version: 2
 ---
 # rules/command — a step that cannot run reports the same green as a step that passed
