@@ -50,6 +50,83 @@ Matter-twin: `self/sufficient/index.ts` (`selfSufficiencyVerdict` · `internalis
 
 **Law — [[law]]: the [[self]] is total — every blank routes to its identity element, so all is defined even when nothing is — and from that completeness the agent DERIVES the next move and asks externally only as last resort; equivalently, decreasing external dependence raises the [[tamper/cost]] floor toward the digest bound (the weak-anchor caps it otherwise).**
 
+## One address or no cross
+
+`leadCross` crossed every source's targets as ONE set, and the two live sources it had name different
+things: a guardian's target is an axis NAME (`linear-gap`), an unreached atom's is a PATH
+(`admin/ui/cells`). Two strings from different namespaces are never equal, so the cross could report
+only absence — and it did, as `corroborated: []`, which reads exactly like *no agreement found*.
+
+It was worse than empty. The `unreached` source is **precisely the population of the `unreached`
+axis** — total containment, the strongest relation the instrument has — and it was reported as
+`orthogonal`, meaning independent signal nothing else would find.
+
+The test made it invisible. Its fixture listed an unreached atom called `accounting-wave`, which is an
+AXIS name and cannot be an atom path, so the one assertion that proved corroboration worked was
+standing on evidence built to match it — [[rules]]/mirror arriving one atom over.
+
+| | before | after |
+| --- | ---: | ---: |
+| scopes the cross compared | 1 (all namespaces as one set) | 4, compared only within |
+| live corroborated targets | 0 | 106 |
+| sources that cannot corroborate, and say so | — | 1 (`guardian`) |
+
+Three things follow, and each is now in the type:
+
+- **Every lead names its own target.** The old `leadTarget` regex took the first identifier out of the
+  sentence — `linear` from `linear-gap`. A producer knows its target; parsing it back out of prose is
+  the guess this corpus keeps paying for.
+- **A count names no atom.** A guardian says `accounting-wave 258` and cannot meet anything, however
+  red it is. `populations` exists for that: the axis's violating MEMBERS, normalised to atoms, which
+  is the only form of a guardian's finding another source can corroborate.
+- **Alone in a scope is not orthogonal.** `incommensurable` separates *nothing to compare against*
+  from *compared and met nothing*. Collapsing them is how the total containment above read as
+  independence.
+
+## A count is not agreement
+
+With the scopes fixed the cross fired — and its loudest answer was the base rate. `unfolded` names
+**428 of the 579** atoms any law names, 74% of the universe, so it agrees with everything by size
+alone. Ranking by shared count put it at the top of every row.
+
+`lift = shared / expected`, `expected = |a|·|b| / |universe|` — [[conjecture]]'s measured twin of
+`surpriseBits`. Measured at the atom address:
+
+| pair | shared | expected | lift |
+| --- | ---: | ---: | ---: |
+| `copy × unfolded` | 5 | 3.7 | **1.35** |
+| `copy × cycle` | 1 | 0.9 | 1.10 |
+| `cycle × unfolded` | 59 | 77.6 | 0.76 |
+| `mirror × unfolded` | 19 | 33.3 | 0.57 |
+| `unfolded × unreached` | 11 | 51.0 | 0.22 |
+| `cycle × unreached` | 1 | 12.5 | **0.08** |
+
+**The largest agreement in the corpus is below chance.** `cycle × unfolded` shares 59 atoms against an
+expectation of 78 — the two laws avoid each other, and a raw ranking called that the top finding.
+
+Only one pair beats chance meaningfully, and it is the one the corpus **already drew**:
+`copy × unfolded` is `unearnedCopies`. An instrument whose single above-chance result is the cross its
+author had already built by hand is an instrument agreeing with a known answer, which is the most this
+measurement can honestly claim.
+
+The low lifts are the more interesting half. `cycle × unreached` at **0.08** is structural: nothing
+imports an unreached atom, so it can hardly sit in an import tangle — the avoidance is a theorem
+showing up in the data. [[conjecture]] can name a law that meets nothing (`orthogonalLaws`); it has no
+word for two laws that meet far *below* chance, and that is stronger information than orthogonality.
+
+**Emptiness belongs to the address, not to the laws.** At the FILE address `mirror × unfolded` shares
+0 and reads as a provably empty cross; at the ATOM address the same two laws share 19. A mirrored
+assertion lives in `test.ts` and an un-folded export in `index.ts` — never one file, often one atom.
+`copy × unfolded` inverts the same way: lift 0.84 by file, 1.35 by atom. The cross a caller gets is
+the cross the caller's address can see.
+
+**Honest boundary.** `lift` proves an overlap is above or below what independence predicts, never that
+either law is RIGHT about the atoms it names — both populations are candidate lists ([[rules]]/unfolded
+and [[rules]]/unreached each say so). The universe is the union of the supplied populations, so it is
+the universe of the measurement and not of the tree: adding a sixth law moves every lift. And
+corroboration still counts SOURCES; two sources derived from one scan are not independent, which is
+why `carried` is reported beside it.
+
 ## Common mistakes
 - Asking what's derivable — the record + the address-law already hold it; the question breaks flow and is strictly less efficient.
 - Leaving a blank undefined instead of routing it to its identity element.

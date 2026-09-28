@@ -2648,8 +2648,8 @@ src/self/research/index.ts:24: * @standard NIST SP 800-162 ABAC — the access s
 src/self/research/index.ts:25: * @standard OWASP ASVS V5 — least-privilege / IDOR-prevention (no cross-actor read)
 src/self/research/index.ts:26: * @standard NIST SP 800-63B §6.1.3 — owner-authorized credential recovery
 src/self/similar/index.ts:15: * @standard the hologram — 6 generators → 36 Cayley cells, 0 free parameters
-src/self/sufficient/index.ts:6: * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
-src/self/sufficient/index.ts:7: * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
+src/self/sufficient/index.ts:4: * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
+src/self/sufficient/index.ts:5: * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
 src/sequence/inversion/index.ts:61: * @standard ISO 80000-2 — mathematical signs and symbols
 src/shared/AddressBlock.tsx:14: * @standard ISO-19160-4:2017 addressing components-and-conceptual-model
 src/shared/AddressBlock.tsx:15: * @standard UPU-S42 international-postal-addressing

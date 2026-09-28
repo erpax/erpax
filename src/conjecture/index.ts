@@ -209,6 +209,15 @@ export interface Intersection {
   /** Files violating both — the population a cross between them would work on. */
   readonly shared: number
   readonly files: readonly string[]
+  /** What {@link shared} would be if the two laws fired INDEPENDENTLY: |a|·|b| / |universe|. */
+  readonly expected: number
+  /**
+   * `shared / expected`. At 1 the agreement is exactly what chance predicts and the cross found
+   * nothing; below 1 the laws AVOID each other. Only above 1 is the meeting evidence.
+   */
+  readonly lift: number
+  /** `log₂(lift)` — pointwise mutual information, the measured twin of {@link surpriseBits}. */
+  readonly bits: number
 }
 
 /**
@@ -218,9 +227,16 @@ export interface Intersection {
  * predict what a cross would find: its top three picks each measured empty. This measures the
  * intersection instead. The caller supplies each law's violating files, so one scan per law pays
  * for every pair.
+ *
+ * A raw count is not evidence — see ./SKILL.md § lift. The sort leads with `lift` for that reason.
+ *
+ * @invariant a pair firing independently has lift ≈ 1, whatever its shared COUNT
  */
 export function crossIntersections(sets: ReadonlyMap<string, ReadonlySet<string>>): Intersection[] {
   const names = [...sets.keys()].sort()
+  // The universe is what these measurements can SEE — the union of their populations. A law's share
+  // of the whole tree is unknowable here, and assuming one would invent the denominator.
+  const universe = new Set([...sets.values()].flatMap((s) => [...s])).size
   const out: Intersection[] = []
   for (let i = 0; i < names.length; i++) {
     for (let j = i + 1; j < names.length; j++) {
@@ -229,10 +245,16 @@ export function crossIntersections(sets: ReadonlyMap<string, ReadonlySet<string>
       const sa = sets.get(a) as ReadonlySet<string>
       const sb = sets.get(b) as ReadonlySet<string>
       const files = [...sa].filter((f) => sb.has(f)).sort()
-      out.push({ a, b, shared: files.length, files })
+      const expected = universe === 0 ? 0 : (sa.size * sb.size) / universe
+      // An unmeasurable ratio is reported as 0 rather than as Infinity or as 1: neither "infinitely
+      // surprising" nor "exactly chance" is what an empty expectation means.
+      const lift = expected === 0 ? 0 : files.length / expected
+      out.push({ a, b, shared: files.length, files, expected, lift, bits: lift === 0 ? 0 : algebraLog2(lift) })
     }
   }
-  return out.sort((x, y) => y.shared - x.shared || x.a.localeCompare(y.a) || x.b.localeCompare(y.b))
+  return out.sort(
+    (x, y) => y.lift - x.lift || y.shared - x.shared || x.a.localeCompare(y.a) || x.b.localeCompare(y.b),
+  )
 }
 
 /** How much of one law's population lies inside another's — directional. */
@@ -263,10 +285,13 @@ export function containment(sets: ReadonlyMap<string, ReadonlySet<string>>): Con
 }
 
 /**
- * Laws whose population meets NO other law's — provably empty crosses. See SKILL.md.
+ * Laws whose population meets no other law's AT THE ADDRESS THE CALLER SUPPLIED. See SKILL.md.
  *
  * Worth naming because a cross involving one of them cannot find anything, whatever the prose
  * ranking says: `concentration × copy` was the top-ranked undrawn pair and measured exactly 0.
+ *
+ * "Provably empty" would over-claim: emptiness is a fact about the ADDRESS the caller supplied, not
+ * about the laws. See ./SKILL.md § lift.
  */
 export function orthogonalLaws(sets: ReadonlyMap<string, ReadonlySet<string>>): string[] {
   return [...sets.keys()]
