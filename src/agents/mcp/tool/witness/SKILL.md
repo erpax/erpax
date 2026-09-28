@@ -3,8 +3,8 @@ name: witness
 description: "Use when reasoning about witness — Two tools, and the second exists because the first was hand-picked."
 atomPath: "agents/mcp/tool/witness"
 coordinate: "agents/mcp/tool/witness · 7/descent · 5c1d3fc1"
-contentUuid: "c9a500e3-8b12-57df-aae1-989fa58f2e57"
-diamondUuid: "381408e7-b181-802b-8f47-e5233f8f90aa"
+contentUuid: "f161b621-f557-5142-a1d6-7aa7a7fc542e"
+diamondUuid: "20e80374-a4e8-8f2f-b60e-23f170bbe949"
 uuid: "5c1d3fc1-2847-860b-a394-f049935576ef"
 horo: 7
 typography:
@@ -15,14 +15,14 @@ standards:
   - "MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}"
 bindings: []
 signatures:
-  computationUuid: "78086c1a-6dc2-8576-9cb6-c329fcdc5b53"
+  computationUuid: "65d724e5-b5d0-8064-bd9b-4a38a5c9f235"
   stages:
     - stage: path
       stageUuid: "4be04fdc-e524-805d-8512-02d9daa087a6"
     - stage: trinity
       stageUuid: "0a5698cf-4a3f-8f2d-896e-a1a5d56d271b"
     - stage: boundary
-      stageUuid: "cff1e95b-2239-82fa-8174-d1c866c0ad17"
+      stageUuid: "e3d37829-7e05-8aa1-9a4e-518b85b11921"
     - stage: links
       stageUuid: "16059a73-28e0-8298-bda3-68ff9716e41a"
     - stage: horo
@@ -30,7 +30,7 @@ signatures:
     - stage: seal
       stageUuid: "58ec8738-2494-8f82-9a45-1cd7b3877b0e"
     - stage: uuid
-      stageUuid: "9dc0e21d-b729-81b9-93c7-81b1d6ff8b60"
+      stageUuid: "73c765b8-6fe9-81bb-909b-7f62ccabb066"
 version: 2
 ---
 # agents/mcp/tool/witness — the cross-domain proof, and the discovery of which crosses exist

@@ -2,11 +2,11 @@
 name: discover
 description: "Use when reasoning about discover — outward/witness crosses five domains and every one of them was **hand-picked**."
 atomPath: "outward/discover"
-coordinate: "outward/discover · 1/base · db6d66cc"
-contentUuid: "ba0ff761-53db-5865-a68a-5c4bf6c3af40"
-diamondUuid: "39d8cc81-5120-88e3-b6f8-99c6faf5130b"
-uuid: "db6d66cc-cb71-8376-aca1-a3785b455576"
-horo: 1
+coordinate: "outward/discover · 8/crest · 6d1016a2"
+contentUuid: "740b1935-842b-574e-a125-0eb5589b2425"
+diamondUuid: "2406fa1e-f12a-867e-9bcc-f2481a4ec865"
+uuid: "6d1016a2-09f3-8e3a-a270-6e81112d4895"
+horo: 8
 typography:
   partition: outward
   bondDegree: 33
@@ -15,22 +15,22 @@ standards:
   - "OpenAPI 3 / Swagger 2 — the machine-readable surface being read"
 bindings: []
 signatures:
-  computationUuid: "5fc17b99-a98e-8bff-9474-a6b0d7ee9e25"
+  computationUuid: "36810b1f-4c99-8678-9a6c-38fcca02fc3e"
   stages:
     - stage: path
       stageUuid: "e240f762-520c-8c70-9c11-7bd3013a8ea3"
     - stage: trinity
       stageUuid: "eb200802-333c-8dd9-8d46-06996d23ed8a"
     - stage: boundary
-      stageUuid: "ac0cb92e-10a5-84ed-a969-e3803d43dc71"
+      stageUuid: "98e8b0e9-12fb-8baf-a461-43c58c99f653"
     - stage: links
       stageUuid: "cd24ebb8-996e-8525-ad30-9d4a22d2ae88"
     - stage: horo
-      stageUuid: "b0c1f0ce-242f-879d-b713-3edfda55d684"
+      stageUuid: "c3fa1e6c-af7a-8e50-a86a-4f4df924eca7"
     - stage: seal
       stageUuid: "e400d00d-c2a0-8b8b-9118-321924d7b0ae"
     - stage: uuid
-      stageUuid: "1dafc63d-544d-8882-b692-d907e4219091"
+      stageUuid: "4e019897-be37-8bb4-aa3a-11d835c88b5a"
 version: 2
 ---
 # outward/discover — APIs → schemas → methods → cross formulas, each step derived from the last
