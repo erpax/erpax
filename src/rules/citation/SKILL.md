@@ -87,6 +87,29 @@ so in green. Only `\p{L}` sees them.
 That is [[rules]]/probe's law arriving one atom over: **a filter that selects by name cannot see
 what it does not name**, and what it misses is systematically the thing nobody thought to name.
 
+## The write-time twin
+
+The ring runs at the push, and `corpusCitations` costs **1849 ms warm**, so it cannot run per edit. But a
+purge is written before it is pushed, and the loss it causes reads as an IMPROVEMENT — fewer cited
+standards looks like fewer undischarged axioms — so the push is late.
+
+`citationsLostIn` pays only when something LEFT: the changed files are parsed, then one targeted search
+runs per lost token. **81 ms on a clean changeset**, 340 ms when a token did leave a file and has to be
+chased. Wired as the `citation` axis in [[confirm]].
+
+| planted | verdict |
+| --- | --- |
+| `@standard AMLD5` removed, cited in **one** file | **LOST** — reported with the file it was in |
+| `@standard EU 2015/849` removed, cited in 13 others | refused — it MOVED, evidence still reachable |
+| a new file · an unchanged citation | nothing |
+| a DELETED file | everything it cited |
+
+**Two refusals, both paid for while building it.** A generated face restates every SKILL description, so
+it cites every standard the prose does and would mask a code loss — refused, as everywhere else here. And
+the search is a FILTER, never the verdict: `git grep -F AMLD5` hits 10 files and exactly one *cites* it,
+so using the grep as the answer suppressed the real loss. Parse-don't-match, failing inside the atom whose
+SKILL states it.
+
 ## Honest boundary
 
 This proves a standard is **still cited somewhere**, never that it is cited in the **right** place —

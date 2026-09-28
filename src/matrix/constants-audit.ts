@@ -9,8 +9,8 @@
  *
  * @see ./index.ts — ../law/folder/baseline — ../seal/baseline-debt
  */
-import { spawnSync } from 'node:child_process'
 import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { sealedSource } from '@/grounded'
 import { join, relative } from 'node:path'
 import ts from 'typescript'
 import { citesStandard } from '@/rules/citation'
@@ -382,7 +382,8 @@ export function matrixCracksIn(
 export function newCracksIn(
   files: readonly string[],
   cwd: string = process.cwd(),
-  committed: (rel: string) => string | null = (rel) => gitShow(rel, cwd),
+  // The SEALED blob, from [[grounded]] — one address for "what git has".
+  committed: (rel: string) => string | null = sealedSource,
 ): readonly MatrixCrackViolation[] {
   const out: MatrixCrackViolation[] = []
   for (const v of matrixCracksIn(files, cwd)) {
@@ -398,12 +399,6 @@ export function newCracksIn(
     if (!wasCrack) out.push(v)
   }
   return out
-}
-
-/** The committed content of a repo-relative path, or null when git has none (a new or untracked file). */
-function gitShow(rel: string, cwd: string): string | null {
-  const r = spawnSync('git', ['show', `HEAD:${rel}`], { cwd, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })
-  return r.status === 0 && typeof r.stdout === 'string' ? r.stdout : null
 }
 
 /** Every exported crack const — one violation per unlawful export. */
