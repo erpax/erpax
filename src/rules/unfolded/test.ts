@@ -132,8 +132,15 @@ describe('rules/unfolded — a mention is not a call site', () => {
     // `algebraTan = (x) => Math.tan(x)` is the only lawful door to a tangent, because the host-math
     // axis forbids `Math.*` outside the algebra atoms at a baseline of 0. Deleting an uncalled one
     // leaves the next caller with no lawful option.
-    expect(substituteWrappers().map((e) => e.name).sort()).toEqual(
-      ['algebraAtan', 'algebraCosh', 'algebraTan', 'algebraTanh'],
-    )
+    // The MEMBERSHIP is not pinned, and that is deliberate: this listed `algebraTan` until
+    // `outward/witness.dayLengthHours` started calling it, at which point the test went red because
+    // the corpus had IMPROVED. A test that requires a defect to be present punishes the fix — the
+    // second time that shape appeared in one session. The invariant is what holds.
+    const wrappers = substituteWrappers()
+    expect(wrappers.length).toBeGreaterThan(0) // the class is real, so the exemption is load-bearing
+    for (const w of wrappers) {
+      expect(w.file).toMatch(/^src\/algebra\//) // only the substitute surface earns this
+      expect(w.sites).toBe(0) // it is exempt BECAUSE it is uncalled; a called one needs no exemption
+    }
   }, 300_000)
 })

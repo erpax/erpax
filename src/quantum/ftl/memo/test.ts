@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest'
-import { memoCensus, timeTwice } from './index'
+import { readFileSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { forgetMemos, inputKey, memoCensus, memoized, timeTwice } from './index'
 
 // The thresholds are stated HERE, not imported: reading them back from the module would assert its
 // own literal ([[rules]]/mirror). These are the behaviours they are supposed to produce.
@@ -87,5 +89,48 @@ describe('quantum/ftl/memo — the census', () => {
     const c = memoCensus([['trivial', () => n]])
     expect(c.unmeasured).toEqual(['trivial'])
     expect(c.memoized).toEqual([])
+  })
+})
+
+/**
+ * A memo's correctness is its INVALIDATION. A key that can miss an edit returns a stale verdict, and
+ * a wrong gate is worse than a slow one — so this is the test that matters most here.
+ */
+describe('quantum/ftl/memo — the input address', () => {
+  const probe = join(process.cwd(), 'src/quantum/ftl/memo/index.ts')
+
+  it('an edit MOVES the key, so the answer is recomputed', () => {
+    const before = inputKey(process.cwd(), 'ts')
+    const original = readFileSync(probe, 'utf8')
+    try {
+      writeFileSync(probe, `${original}\n// memo soundness probe\n`)
+      forgetMemos()
+      expect(inputKey(process.cwd(), 'ts')).not.toBe(before)
+    } finally {
+      writeFileSync(probe, original)
+      forgetMemos()
+    }
+    // Restoring the BYTES does not restore the address, because mtime moved — and that is the
+    // property, not a defect. A stat key is CONSERVATIVE: it can report a change where the content is
+    // identical (a touch, a checkout, a restore), so it errs toward an extra recompute and never
+    // toward a stale answer. A content key would be exact here and is what a cross-process memo on
+    // disk needs; in-process it could not see the edit at all, which is why this one is stat.
+    expect(inputKey(process.cwd(), 'ts')).not.toBe(before)
+  })
+
+  it('is stable while nothing changes — otherwise every ask would recompute', () => {
+    expect(inputKey(process.cwd(), 'ts')).toBe(inputKey(process.cwd(), 'ts'))
+  })
+
+  it('the two surfaces are different addresses, because they cover different files', () => {
+    expect(inputKey(process.cwd(), 'ts')).not.toBe(inputKey(process.cwd(), 'src'))
+  })
+
+  it('a label is part of the address, so two gates under one key do not collide', () => {
+    const k = 'fixed-key'
+    expect(memoized('gateA', k, () => 'a')).toBe('a')
+    expect(memoized('gateB', k, () => 'b')).toBe('b')
+    expect(memoized('gateA', k, () => 'CHANGED')).toBe('a') // sealed under its own label
+    forgetMemos()
   })
 })

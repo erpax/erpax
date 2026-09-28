@@ -108,6 +108,35 @@ cancels. **Wall time under contention is not evidence** — a lesson already pai
 - **`MEMO_RATIO` is DECLARED at 0.05**, in the open, so the boundary between free and cheap is
   arguable rather than asserted.
 
+## Making them quantum — the memo, and two designs that were wrong
+
+`scripts/payload-input-key.sh` is the precedent: content-key a pure function on exactly what its
+verdict depends on. A gate is that shape, so `memoized(label, inputKey(cwd, 'ts'), compute)` seals it.
+
+| | re-ask before | re-ask after |
+| --- | ---: | ---: |
+| `rules/unfolded` · `copy` · `unit` · `mirror` · `probe` | 82–98 % | **0 %** |
+| re-ask bill for one extra ask of everything | 6622 ms | **1310 ms** |
+
+`assertRulesHold` calls `unfoldedExports` **twice** in one pass — once for `unfolded` and again for
+`unearned-copy` — so a single pass had been recomputing a ~2 s answer it already held.
+
+**A content key was the first design and it was wrong in both directions.** It could not see an
+in-process edit at all, because `textOf` is itself memoized and handed back the stale text: measured,
+the key did **not** move when a file was rewritten — the stale-verdict defect arriving through the
+very cache the gates share. And it cost **1432 ms** cold, because hashing content means reading every
+file before any gate has asked for one — dearer than the gate it was meant to save. `statSync` is
+uncached, so an edit always moves the key, and the surface costs ~350 ms.
+
+**The surface had to be scoped.** A key over all 22,416 files under `src/` costs **3701 ms**; the
+7,865 `.ts`/`.tsx` the parse gates actually read cost ~350 ms. So `skillWeights` (which needs `.md`)
+is left un-memoized: its own key would cost 3701 ms against its 122 ms of work. `rules/command` is
+left un-memoized because it reads `package.json`, `.husky/` and `.github/workflows/` — outside every
+surface here, so memoizing it would be unsound rather than merely unhelpful.
+
+**The label carries the arguments.** `duplicateBodies(cwd, minNodes)` keyed on `cwd` alone would hand
+a `minNodes: 20` caller the 40-node answer — 40 → 3 groups, 20 → 79. The tests call it both ways.
+
 ## Honest boundary
 
 This measures **in-process** reuse. A cross-invocation memo that writes a file — which is exactly what

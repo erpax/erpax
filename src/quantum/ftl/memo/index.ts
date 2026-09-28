@@ -10,7 +10,10 @@
  *
  * @standard ISO/IEC 25010:2023 §5.2 — performance efficiency: time behaviour under repetition
  */
+import { createHash } from 'node:crypto'
+import { statSync } from 'node:fs'
 import { amortize } from '@/quantum/ftl/metrics'
+import { allFiles, corpusFiles } from '@/syntax/cache'
 import { exactMax, exactRound } from '@/algebra'
 
 /** Below this share of the first ask, a re-ask is free and the answer has a receipt. DECLARED. */
@@ -105,4 +108,87 @@ export function memoCensus(asks: ReadonlyArray<readonly [string, () => unknown]>
     rederives: rows.filter((r) => r.shape === 'rederives').map((r) => r.label),
     reaskCostMs: exactRound(rows.reduce((n, r) => n + exactMax(0, r.secondMs), 0)),
   }
+}
+
+// ─── Input-keyed memos: the receipt that lets c0/(m+1) actually fall ─────────
+//
+// The pattern is already in this repo: `scripts/payload-input-key.sh` content-keys the Payload
+// generators on exactly what their verdict depends on. A gate is the same shape — a pure function of
+// the files it reads — so its verdict can be returned unchanged while the input address is unchanged.
+
+/**
+ * The surface a memo's key must cover. DECLARED, because a key that misses an input returns a STALE
+ * VERDICT, and a wrong gate is worse than a slow one.
+ *
+ * `ts` is the 7,865 `.ts`/`.tsx` files the parse gates read — 346 ms cold, 69 ms warm, and those
+ * texts are read by the gates anyway, so the marginal cost is the hashing alone.
+ *
+ * `src` is all 22,416 files under `src/`, including the `.md`/`.json` that `skillWeights` reads. It
+ * costs **3701 ms**, which is dearer than every gate that would need it — so nothing uses it yet, and
+ * that is a measurement rather than an omission.
+ *
+ * Neither is enough for a gate reading OUTSIDE `src`: [[rules]]/command reads `package.json`,
+ * `.husky/` and `.github/workflows/`, so it is deliberately left un-memoized rather than memoized
+ * unsoundly.
+ */
+export type MemoSurface = 'ts' | 'src'
+
+const keys = new Map<string, string>()
+const verdicts = new Map<string, unknown>()
+
+/**
+ * The input address of a surface — path, size and mtime for every file on it.
+ *
+ * Memoized per process, so the ~25 ms is paid once and every gate keyed on it re-asks for the price
+ * of a map lookup. Why stat rather than content is argued at the loop below, and it was measured.
+ */
+export function inputKey(cwd: string = process.cwd(), surface: MemoSurface = 'src'): string {
+  const memoKey = `${surface} ${cwd}`
+  const hit = keys.get(memoKey)
+  if (hit !== undefined) return hit
+  const h = createHash('sha256')
+  for (const f of surface === 'ts' ? corpusFiles(cwd) : allFiles(cwd)) {
+    h.update(f)
+    // SIZE AND MTIME, not content — and that is a measured choice, not a shortcut.
+    //
+    // A content hash was the first design and it was WRONG in both directions. It could not see an
+    // in-process edit at all, because `textOf` is itself memoized and returned the stale text: the
+    // key did not move when a file was rewritten, which is the stale-verdict defect arriving through
+    // the very cache the gates share. And it cost 1432 ms cold, because hashing content means READING
+    // every file before any gate has asked for it — more than the gate it was meant to save.
+    //
+    // `statSync` is not cached, so an edit always moves the key, and it is ~25 ms over the surface.
+    // That is sound for an IN-PROCESS memo, which is what this is. A cross-process memo on disk would
+    // need the content address instead, because mtime granularity cannot be trusted between runs —
+    // `scripts/payload-input-key.sh` does exactly that, keyed on git blobs.
+    try {
+      const st = statSync(f)
+      h.update(`${st.size}:${st.mtimeMs}`)
+    } catch {
+      h.update('::unstattable')
+    }
+  }
+  const key = h.digest('hex').slice(0, 32)
+  keys.set(memoKey, key)
+  return key
+}
+
+/**
+ * Return the sealed verdict while the input address holds; compute and seal it otherwise.
+ *
+ * @invariant a changed input address always recomputes
+ * @invariant the same label under one key computes exactly once
+ */
+export function memoized<T>(label: string, key: string, compute: () => T): T {
+  const at = `${label}@${key}`
+  if (verdicts.has(at)) return verdicts.get(at) as T
+  const value = compute()
+  verdicts.set(at, value)
+  return value
+}
+
+/** Drop every memo — for a test, and for a caller that has changed the tree in-process. */
+export function forgetMemos(): void {
+  keys.clear()
+  verdicts.clear()
 }

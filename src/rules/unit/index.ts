@@ -7,6 +7,7 @@
  * @standard ISO/IEC 25010:2023 §5.6 — maintainability: a change is made once, not once per copy
  */
 import ts from 'typescript'
+import { inputKey, memoized } from '@/quantum/ftl/memo'
 import { astOf, corpusFiles } from '@/syntax/cache'
 
 /** Millisecond values that name a time unit. DECLARED, in the open — a fact about the calendar. */
@@ -50,7 +51,14 @@ function literalProduct(node: ts.Node): number | null {
  * @invariant a numeric literal inside a string or template is never a finding
  * @invariant the declared home is never a finding, so the one address is not its own violation
  */
+/**
+ * MEMOIZED on the `.ts` input address — the whole surface is parsed to find one re-derived divisor, so a repeated pass pays it twice. See [[quantum]]/ftl/memo.
+ */
 export function unitRederivations(cwd: string = process.cwd()): UnitViolation[] {
+  return memoized('unitRederivations', inputKey(cwd, 'ts'), () => computeUnitRederivations(cwd))
+}
+
+function computeUnitRederivations(cwd: string) {
   const out: UnitViolation[] = []
   const prefix = `${cwd}/`
   for (const abs of corpusFiles(cwd)) {

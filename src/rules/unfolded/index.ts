@@ -9,6 +9,7 @@
  */
 import { allFiles, textOf, astOf } from '@/syntax/cache'
 import ts from 'typescript'
+import { inputKey, memoized } from '@/quantum/ftl/memo'
 import { join, relative } from 'node:path'
 
 import { shapesOf } from '@/rules/collapse'
@@ -97,7 +98,17 @@ export function scanExports(cwd: string = process.cwd()): ScannedExport[] {
   return out
 }
 
+/**
+ * MEMOIZED on the `.ts` input address: `assertRulesHold` calls this TWICE in one pass — once for the
+ * `unfolded` axis and again for `unearned-copy` — so a pass recomputed ~1.9 s for an answer it
+ * already had. The key is content, never mtime; a changed file always recomputes. See
+ * [[quantum]]/ftl/memo.
+ */
 export function unfoldedExports(cwd: string = process.cwd()): UnfoldedReport {
+  return memoized('unfoldedExports', inputKey(cwd, 'ts'), () => computeUnfoldedExports(cwd))
+}
+
+function computeUnfoldedExports(cwd: string): UnfoldedReport {
   const all = scanExports(cwd)
   const dead = all.filter((e) => e.sites === 0).map(({ name, file, sites }) => ({ name, file, sites }))
   const single = all.filter((e) => e.sites === 1).map(({ name, file, sites }) => ({ name, file, sites }))
