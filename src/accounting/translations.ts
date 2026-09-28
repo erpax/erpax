@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \\\"accountable\\\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
-    "uuid": "dcb77b34-2f7c-80c9-bf49-a07b234f8891",
+    "uuid": "c6dd8f79-8a37-805d-b925-d5b678dff854",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disk",
-    "uuid": "7aa43d3b-0899-83c0-bbe9-da252142d826",
+    "uuid": "73a90e87-2a07-8d0b-a9c1-7fe757ab54bc",
     "words": [
       "disk"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too.",
-    "uuid": "66ed8a2f-6d35-88f2-891a-c97f4cd41aae",
+    "uuid": "b0ddb11b-2863-84e4-9117-c7b2efa9c2c9",
     "words": [
       "use",
       "when",

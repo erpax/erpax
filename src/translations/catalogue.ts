@@ -670,7 +670,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \\\"accountable\\\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
-        "uuid": "dcb77b34-2f7c-80c9-bf49-a07b234f8891",
+        "uuid": "c6dd8f79-8a37-805d-b925-d5b678dff854",
         "words": [
           "use",
           "when",
@@ -4011,7 +4011,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "frontier",
-        "uuid": "f918b0bc-9d58-89a5-934f-1bd9fbecbf15",
+        "uuid": "bbe2148d-64c0-8a8e-974d-663d47fc9d5c",
         "words": [
           "frontier"
         ],
@@ -4022,7 +4022,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store.",
-        "uuid": "4bc5f501-5ad4-84c3-af53-e2dd8626b097",
+        "uuid": "78709c73-3685-8a7c-8859-dc0b6f37ada6",
         "words": [
           "use",
           "when",
@@ -4132,7 +4132,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about novelty — conjecture enumerates crosses between laws the corpus already holds: pairs of atoms that are each widely cited and never drawn together.",
-        "uuid": "74e87e60-1599-821b-b29d-a66ffd7fc0d2",
+        "uuid": "7fa2057c-376f-87c0-96b6-98e65194392f",
         "words": [
           "use",
           "when",
@@ -17646,7 +17646,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a research program claims its numbers match physical constants (Haramein's holographic work, the 3·6·9 / vortex literature) and asks whether that confirms it. The tool separates a THEOREM (an exact identity in a closed algebraic system) from a COINCIDENCE (a within-tolerance match, possibly fitted) — and refuses the leap from either to 'recompute all science', because a match is necessary but never sufficient.",
-        "uuid": "876240f2-faef-898a-b414-d41dea08aad8",
+        "uuid": "6f9338bf-7e96-8954-91c0-764258d6cddb",
         "words": [
           "use",
           "when",
@@ -20575,7 +20575,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "conjecture",
-        "uuid": "28a4e7b8-c0ca-8fc1-b88f-ab37d712210a",
+        "uuid": "65af1d90-fb37-8aed-bc18-4104cdf5ff0f",
         "words": [
           "conjecture"
         ],
@@ -20586,7 +20586,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about conjecture — think/refute seals an impossibility **already met** and routes it to the dimension where the thing is computable. That is backward-looking, and it is half a law.",
-        "uuid": "d187d673-e19c-8fc1-881e-a2661a5d7641",
+        "uuid": "51511a63-d3f8-8766-9a08-d01ae565a44f",
         "words": [
           "use",
           "when",
@@ -22278,7 +22278,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about stale references as entropy — an import whose target does not exist on disk is a dead wire that lowers tamper-cost; this scans every `@/` import across src/scripts/.vitepress and reports the live fraction that resolves to a real file.",
-        "uuid": "9d30dbf6-6ec7-85dd-a5fb-1cf1db8084e8",
+        "uuid": "2757f4f8-2762-8008-91a6-be8d9915e5f8",
         "words": [
           "use",
           "when",
@@ -38238,7 +38238,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory",
-        "uuid": "f5be3ff7-2102-8b70-a510-0db1defe4a88",
+        "uuid": "394a43e0-9593-8e77-8c97-9868a3d4fa28",
         "words": [
           "use",
           "when",
@@ -49755,7 +49755,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring a language model into erpax — the LLM is the forge (cheap to generate, costly to trust) and the uuid is the verify; AI-self-sufficient first, the model is the fallback tier behind the 9-layer gate, and every turn is content-addressed so generation only ever works the cheap side of the forge-beats-verify asymmetry.",
-        "uuid": "6eb9ee16-f06b-8a4c-af26-ab2a7a6b34a5",
+        "uuid": "a1667ae6-9db7-85fb-a5d5-edf484a8fc5e",
         "words": [
           "use",
           "when",
@@ -49911,7 +49911,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-        "uuid": "d29ffe2d-2273-8486-bc29-251bf5e2442e",
+        "uuid": "d37a68c8-27f9-8769-aae5-6beeec845e4a",
         "words": [
           "use",
           "when",
@@ -55687,7 +55687,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about closure — Use to decide a candidate against an open Millennium Problem. A conjecture has two exits — a proof, which is not a computation, and a refutation, which for several of these IS one. Implements the deciders: zeta evaluates ζ by Borwein's algorithm (verified against ζ(2)=π²/6, ζ(4)=π⁴/90 and the first six known zeros) so refutesRiemann rules on a candidate off-line zero; satisfies checks a SAT certificate exactly so refutesSolver catches a bluffing, wrong-certificate or wrong-verdict solver; refutesBSD compares the two ranks. Three of the seven have no finite candidate a machine can rule on, and those name what a candidate would have to be.",
-        "uuid": "1e706219-dfa4-85a3-979e-8153a5f80b57",
+        "uuid": "6271f062-31d5-8f59-ad38-1c925b6313f0",
         "words": [
           "use",
           "when",
@@ -55944,7 +55944,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when constructing a Clay attempt rather than asserting one — the tools between theorem's reduce verdict and duel's door: proposeReduction measures a candidate against the graph WITHOUT editing it, reductionFrontier names the exact links still ungrounded (the fix list reduce only implied), problemFrontiers gives all seven as work items, jointReduction builds the 'solved at once' claim and reports that its frontier is all seven because no reduction between any two is known, and roundFromReduction bridges a FULLY GROUNDED reduction into a duel round — nothing here can set corpusSolves, which stays the literal false.",
-        "uuid": "641ab254-503e-8426-b781-2f08e272b862",
+        "uuid": "369d8f9b-aa5e-88b6-b5cb-d60e6b5d7573",
         "words": [
           "use",
           "when",
@@ -67689,7 +67689,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "disk",
-        "uuid": "7aa43d3b-0899-83c0-bbe9-da252142d826",
+        "uuid": "73a90e87-2a07-8d0b-a9c1-7fe757ab54bc",
         "words": [
           "disk"
         ],
@@ -67700,7 +67700,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too.",
-        "uuid": "66ed8a2f-6d35-88f2-891a-c97f4cd41aae",
+        "uuid": "b0ddb11b-2863-84e4-9117-c7b2efa9c2c9",
         "words": [
           "use",
           "when",
@@ -77155,7 +77155,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "bypass",
-        "uuid": "a2ea4c3f-af8d-8ef5-9efb-48ca2a512f22",
+        "uuid": "bb071f51-2efb-892b-a618-584eda0adc66",
         "words": [
           "bypass"
         ],
@@ -77166,7 +77166,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that a request-reachable handler cannot disable access control silently — Payload's Local API defaults to overrideAccess:true, so bypass is the ambient condition a route inherits by writing nothing. Judges only src/app, because a hook or seed is not routed; a bypass named in a comment is prose, not a use. Baseline is a theorem at zero: one handler bypasses and it authenticates first, so there is no threshold to raise as the corpus grows.",
-        "uuid": "3d0d6568-8617-81c3-91e6-6f004b695178",
+        "uuid": "e046a419-0eab-80ca-8564-f4df75281933",
         "words": [
           "use",
           "when",
@@ -84960,7 +84960,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\"all agents are one erpax\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
-        "uuid": "3129456a-6757-8dec-aebd-7485ba5b21e0",
+        "uuid": "d4fe8249-b997-8f1b-9803-b79123ee8e22",
         "words": [
           "use",
           "when",
@@ -85315,7 +85315,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the corpus improving itself with NO external tool — the development-time twin of self/closure's Law 53. Every stage of the improvement loop (leftover · rosetta · decide · publish · think) is a local atom; selfImproves proves the external-tool count is zero and loopResolves proves the loop is real matter on disk, not fabricated prose.",
-        "uuid": "c4de17d3-a465-8e41-82df-bb3d78a4dd16",
+        "uuid": "010abf7e-10b9-820e-a909-13917e940158",
         "words": [
           "use",
           "when",
@@ -85835,7 +85835,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded.",
-        "uuid": "d30c87d7-3f22-8d76-9603-16e61f56233a",
+        "uuid": "d31fae35-e4a2-89c3-ac62-0eccc2ecbf2c",
         "words": [
           "use",
           "when",
@@ -86117,7 +86117,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "sufficient",
-        "uuid": "9aabd5ef-d60d-81a0-aed8-276cffc92f66",
+        "uuid": "91549beb-d6de-8b13-a0fa-35e09d8fd2e0",
         "words": [
           "sufficient"
         ],

@@ -2,11 +2,11 @@
 name: disk
 description: "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too."
 atomPath: "quantum/ftl/memo/disk"
-coordinate: "quantum/ftl/memo/disk · 7/descent · 7aa43d3b"
-contentUuid: "10af41a0-109b-5bda-8068-fd79f48ba665"
-diamondUuid: "29da3208-1314-8b8c-a1a2-7d86cf445966"
-uuid: "7aa43d3b-0899-83c0-bbe9-da252142d826"
-horo: 7
+coordinate: "quantum/ftl/memo/disk · 1/base · 73a90e87"
+contentUuid: "dcfcc961-5240-5aa3-95e4-85c2c14081c1"
+diamondUuid: "f1fff4bb-ac7e-8168-89c5-7af927069669"
+uuid: "73a90e87-2a07-8d0b-a9c1-7fe757ab54bc"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.6 — maintainability: one truth, one address"
 bindings: []
 signatures:
-  computationUuid: "c8024279-45e1-8bab-9be6-1078a52b00bf"
+  computationUuid: "f81feb46-d13e-88b8-8670-368e68fe3967"
   stages:
     - stage: path
       stageUuid: "0a9965b8-9539-83bb-91eb-fd792c134093"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aaf16dfb-6807-857b-8476-cd0e96223e53"
     - stage: horo
-      stageUuid: "dd95f303-eb6e-8bb0-97f9-3c9c3fafc3c2"
+      stageUuid: "6f73cbee-84ba-8d26-947c-511c1abd280a"
     - stage: seal
       stageUuid: "cfe27f3f-5824-84a9-a391-032515591299"
     - stage: uuid
-      stageUuid: "50c32ccc-df7c-88ac-bcec-ebbd4127c456"
+      stageUuid: "c5983dbe-f3a3-8e92-b860-57250793a162"
 quantum:
   superposition:
     - law
@@ -45,8 +45,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "c8024279-45e1-8bab-9be6-1078a52b00bf"
-    contentUuid: "10af41a0-109b-5bda-8068-fd79f48ba665"
+    computationUuid: "f81feb46-d13e-88b8-8670-368e68fe3967"
+    contentUuid: "dcfcc961-5240-5aa3-95e4-85c2c14081c1"
 version: 2
 ---
 # quantum/ftl/memo/disk — the verdict sealed across processes, keyed on the content git already holds
@@ -166,4 +166,4 @@ separate processes, and the faces they write are gitignored, so they never moved
 
 Composes: [[quantum]]/ftl/memo · [[law]].
 
-<sub>content-uuid `10af41a0-109b-5bda-8068-fd79f48ba665` · account `quantum/ftl/memo/disk` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `dcfcc961-5240-5aa3-95e4-85c2c14081c1` · account `quantum/ftl/memo/disk` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
