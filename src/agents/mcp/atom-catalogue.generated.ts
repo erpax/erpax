@@ -7655,6 +7655,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/refutable"
   },
   {
+    "atom": "sanitize",
+    "name": "sanitize",
+    "description": "Use when a sanitisation defect must be measured by the corpus itself rather than found by an external scanner — one-pass tag strips, JSON.stringify into generated code, hostname substring checks, hand-rolled quote escapes, and dotted-path writers with no __proto__ refusal, parsed from the grammar; the law the 25 CodeQL JavaScript alerts showed was missing.",
+    "path": "rules/sanitize"
+  },
+  {
     "atom": "scope",
     "name": "scope",
     "description": "Use when reasoning about scope — Every slow cycle in the session that produced this atom had one shape: **the whole corpus measured to answer a question about a changeset.**",

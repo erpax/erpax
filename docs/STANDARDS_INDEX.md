@@ -2462,6 +2462,8 @@ src/rules/reference/index.ts:21: * @standard BG Наредба-Н-18 §СУПТ�
 src/rules/reference/index.ts:22: * @standard ZDDS — BG Value Added Tax Act; statute→code traces for fiscal citations fail closed here (not prose-only under rules/)
 src/rules/refutable/index.ts:28: * @standard Popper — a proposition that forbids nothing explains nothing
 src/rules/refutable/index.ts:29: * @standard ISO/IEC 25010:2023 §5.5 testability
+src/rules/sanitize/index.ts:10: * @standard CWE-1321 prototype pollution
+src/rules/sanitize/index.ts:9: * @standard CWE-116 improper encoding or escaping of output
 src/rules/scope/index.ts:4: * @standard ISO/IEC 25010:2023 §5.5 — analysability: a measurement must be affordable where it is read
 src/rules/scope/index.ts:5: * @standard ISO 19011:2018 §6.4 — audit evidence: a finding must name the files it rests on
 src/rules/unfolded/index.ts:8: * @standard ISO/IEC 25010:2023 §5.5 — reusability: a function called once is inlined, deleted, or reused
@@ -5371,6 +5373,7 @@ src/roles/user/roles/hooks/preventDuplicateAssignment.ts:14: * @security ISO-270
 src/roles/user/roles/index.ts:11: * @security ISO-27001 A.5.18 access-rights
 src/roles/user/roles/index.ts:12: * @security ISO-27002 §5.15 access-control
 src/roles/user/roles/index.ts:13: * @security ISO-27002 §5.4 segregation-of-duties
+src/rules/sanitize/index.ts:11: * @security OWASP ASVS 5.3 — output encoding and injection prevention
 src/scope/collectionScopes.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/scope/collectionScopes.ts:6: * @security ISO-27002 §5.15 access-control
 src/scope/collectionScopes.ts:7: * @security ISO-27002 §8.3 information-access-restriction

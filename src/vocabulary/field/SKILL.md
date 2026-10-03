@@ -3,17 +3,17 @@ name: field
 description: Use when modelling one field — the singular model of the fields collection (the plural store); one typed attribute of a record schema.
 atomPath: "vocabulary/field"
 coordinate: "vocabulary/field · 8/crest · bf0e659f"
-contentUuid: "905cd890-fa4d-5c0d-b639-e66d173ea488"
-diamondUuid: "0f32e66e-cf95-8967-95f1-5a58fa7e1110"
+contentUuid: "6fd91fbc-2548-57ea-846b-cf3b5fb8efd5"
+diamondUuid: "d0d83a4c-3df5-8bd4-9f03-99368af9bedf"
 uuid: "bf0e659f-b6fe-8855-a696-7e591260bef2"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 358
+  bondDegree: 361
 standards: []
 bindings: []
 signatures:
-  computationUuid: "59f2eaf0-3423-86fd-8244-c6e31c3607ce"
+  computationUuid: "9193c820-7860-8d63-9c60-93f98e22e9d6"
   stages:
     - stage: path
       stageUuid: "75793b96-5c0a-8cd6-8115-2d0a05841216"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b60ade56-b0d6-8a76-92f5-773e54b48b17"
     - stage: horo
-      stageUuid: "e489f0b0-defa-8202-a969-f5806090ec44"
+      stageUuid: "e5b6f88c-68fa-8763-9c45-ca34f9cc075e"
     - stage: seal
       stageUuid: "11d912a1-7f7c-8b03-96d7-3935b81a1c47"
     - stage: uuid
-      stageUuid: "2b2ab544-4d12-869b-8857-2164374ba8f9"
+      stageUuid: "3e8c8420-dc74-83c6-ac90-ec7f28317e37"
 version: 2
 ---
 # field — the model of one [[field]] row
