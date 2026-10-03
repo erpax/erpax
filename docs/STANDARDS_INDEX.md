@@ -2004,9 +2004,6 @@ src/migrate/index.ts:32: * @standard ISO/IEC 25010:2023 §5.6 — maintainabilit
 src/migrate/quaternary/index.ts:19: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/millennium/closure/index.ts:35: * @standard ISO 80000-2 — mathematical signs and symbols
 src/millennium/correspondence/index.ts:39: * @standard ISO 80000-2 — mathematical signs and symbols
-src/millennium/data/index.ts:11: * @standard Riemann 1859 / von Mangoldt 1905 — the zero-counting formula N(T)
-src/millennium/data/index.ts:12: * @standard Birch & Swinnerton-Dyer 1965 — ord_{s=1} L(E,s) = rank E(ℚ)
-src/millennium/data/index.ts:13: * @standard Euler 1737 — the product over primes equals the Dirichlet series
 src/mineral/resource/assets/index.ts:11: * @standard IFRS IFRS-6 §3 scope-exploration-and-evaluation
 src/mineral/resource/assets/index.ts:12: * @standard IFRS IFRS-6 §8 measurement-policy-cost-or-revaluation
 src/mineral/resource/assets/index.ts:13: * @standard IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles

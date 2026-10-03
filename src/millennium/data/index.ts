@@ -8,9 +8,9 @@
  * series. A witness that holds is consistency on a finite sample; a witness that fails would be a
  * counterexample. Where no public dataset can test a statement, that is said, not papered over.
  *
- * @standard Riemann 1859 / von Mangoldt 1905 — the zero-counting formula N(T)
- * @standard Birch & Swinnerton-Dyer 1965 — ord_{s=1} L(E,s) = rank E(ℚ)
- * @standard Euler 1737 — the product over primes equals the Dirichlet series
+ * @see Riemann 1859 / von Mangoldt 1905 — cited, not conformed to: the zero-counting formula N(T)
+ * @see Birch & Swinnerton-Dyer 1965 — cited, not conformed to: ord_{s=1} L(E,s) = rank E(ℚ)
+ * @see Euler 1737 — cited, not conformed to: the product over primes equals the Dirichlet series
  */
 import ts from 'typescript'
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
