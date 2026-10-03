@@ -3,13 +3,13 @@ name: fusion
 description: Use when reasoning about fusion — Google Workspace fusion — the merge law applied to external resources.
 atomPath: "google/workspace/fusion"
 coordinate: "google/workspace/fusion · 8/crest · 7c954ec9"
-contentUuid: "c567ed42-3295-508e-8d2f-326c9be29575"
+contentUuid: "b73b0c65-ced3-5be9-8c39-e5529a1cb634"
 diamondUuid: "7de59f13-ff1e-8d3c-8d7d-153b2df2be1e"
 uuid: "7c954ec9-fc15-8452-99d6-bec39fc35dd5"
 horo: 8
 typography:
   partition: google
-  bondDegree: 119
+  bondDegree: 120
 standards:
   - "RFC 9562 §5.8 content-addressed uuidv8 (the fusion identity)"
 bindings: []

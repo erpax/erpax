@@ -12,7 +12,7 @@ const call = async (name: string, args: Record<string, unknown>): Promise<Record
 
 describe('mcp/tool/quantum', () => {
   it('carries the erpax.quantum.* prefix the barrel convention requires', () => {
-    expect(tools.map((t) => t.name).sort()).toEqual(['erpax.quantum.bell', 'erpax.quantum.run', 'erpax.quantum.shots'])
+    expect(tools.map((t) => t.name).sort()).toEqual(['erpax.quantum.bell', 'erpax.quantum.orbit', 'erpax.quantum.run', 'erpax.quantum.shots'])
     for (const t of tools) expect(t.description.length).toBeGreaterThan(40)
   })
 

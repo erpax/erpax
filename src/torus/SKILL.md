@@ -3,13 +3,13 @@ name: torus
 description: "Use when reasoning about the two-directional collapse that closes into a donut — erpax falls into Payload (collections → canonical core) AND Payload falls into erpax (primitives are atoms; domains extract as @erpax/* plugins). The implosion (collapse) and the explosion (supernova) are one toroidal flow — the Rodin vortex. The shape of the whole."
 atomPath: torus
 coordinate: "torus · 5/round · 43b7d46f"
-contentUuid: "1cb08b41-0a2b-518e-83dc-63eaa2ec35ab"
+contentUuid: "6c7db78f-65a3-5584-9bb2-0eb8d53a824b"
 diamondUuid: "3ad7520e-9966-8d85-9c37-fc8170fcb4e3"
 uuid: "43b7d46f-1c24-8d09-843f-0a94ded8d655"
 horo: 5
 typography:
   partition: torus
-  bondDegree: 208
+  bondDegree: 213
 standards: []
 bindings: []
 signatures:

@@ -2349,6 +2349,7 @@ src/quantum/security/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/snapshot/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/society/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/sql/index.ts:9: * @standard RFC 9562 §5.8 content-uuid (the query cache key)
+src/quantum/torus/index.ts:12: * @standard Nielsen & Chuang §10.5 — stabilizer states; the real Clifford group is finite
 src/quantum/translator/index.ts:18: * @standard Johnson et al. (2017, arXiv:1611.04558); RFC 9562 §5.8 content-uuid (the interlingua)
 src/quantum/type/index.ts:12: * @standard RFC 9562 §5.8 content-uuid
 src/quantum/typography/index.ts:9: * @standard tamper-cost = entangled dimensions (the holographic principle)

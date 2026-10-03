@@ -6815,6 +6815,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/status"
   },
   {
+    "atom": "torus",
+    "name": "torus",
+    "description": "Use when every superposition the gate basis can reach must be enumerated rather than sampled — the finite real-Clifford orbit on exact amplitudes, the 4 × 4 double torus of two-qubit product states with the entangled states off it, and every referrer of the register asked to agree with each discovered state from its own standard's perspective.",
+    "path": "quantum/torus"
+  },
+  {
     "atom": "train",
     "name": "train",
     "description": "Use when reasoning about training at the quantum scale — infinite agents train themselves yet cannot exceed the device, because content-addressing collapses identical work to one cached result; and zero-entropy reversible computation dissipates less, the 2/3 rodin working-ratio symbolic of that purification.",

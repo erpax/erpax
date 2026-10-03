@@ -3,13 +3,13 @@ name: torus
 description: "Use when reasoning about the closed surface the rodin vortex winds on in erpax — the doubling helix on a donut, inward (state×state) and outward (×10 octave) both closing; why the sequence is a ring with no top/bottom. Nested under rodin."
 atomPath: "rodin/torus"
 coordinate: "rodin/torus · 4/weave · b1a00ca2"
-contentUuid: "ef6ca2c8-2dff-5b4e-84fa-bef5a91b1faa"
+contentUuid: "2f27ccd2-4795-53cd-a0d3-585401a5506a"
 diamondUuid: "cdf70b14-01d6-84a1-b1cf-060b1ca64c72"
 uuid: "b1a00ca2-abaf-8a90-87ef-b18121e92a47"
 horo: 4
 typography:
   partition: rodin
-  bondDegree: 208
+  bondDegree: 213
 standards: []
 bindings: []
 signatures:

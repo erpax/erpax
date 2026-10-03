@@ -37,7 +37,9 @@ const AREAS: Record<ChatArea, AreaSpec> = {
     line: (door, r) =>
       door === 'shots'
         ? `shots=${r.shots}|enumerated=${r.enumerated}|sampled=${r.sampled}|support=${list(r.support)}|outcomes=${list(r.outcomes)}`
-        : `amplitudes=[${list(r.amplitudes)}]|halvings=${r.halvings}|normalised=${r.normalised}|support=${list(r.support)}`,
+        : door === 'orbit'
+          ? `qubits=${r.qubits}|states=${r.states}|product=${r.product}|entangled=${r.entangled}|closed=${r.closed}|receipt=${r.receipt}`
+          : `amplitudes=[${list(r.amplitudes)}]|halvings=${r.halvings}|normalised=${r.normalised}|support=${list(r.support)}`,
   },
   gate: {
     load: () => import('@/agents/mcp/tool/gate').then((m) => m.buildGateTools()),
