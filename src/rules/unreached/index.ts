@@ -25,23 +25,8 @@ const TOOLING_ENTRIES = ['src/rules/index.ts', 'src/cli/index.ts', 'src/cli/gate
 /** A Payload component path: `@/admin/ui/cells/SealBadgeCell`, optionally `#export`. Lowercase atom segments, any-case leaf. */
 const PATH_STRING = /^@\/[a-z][a-zA-Z0-9/]*(#\w+)?$/
 
-/**
- * The NAME door — the sixth. Payload reaches an admin component by a PATH STRING, never by an import:
- * `Cell: '@/admin/ui/cells/SealBadgeCell'` in a collection config, a `components.views` entry, the
- * generated importMap. A lexical import walk cannot see any of it, and this atom's own SKILL named
- * that gap for weeks while the census charged exactly the three atoms the strings reach —
- * `admin/ui/cells` · `admin/ui/dashboard` · `admin/ui/nav` — and the frontier ranked them above
- * every real debt. Measured 2026-10-03: 244 such literals, 150 distinct paths, 3 of 69 charged
- * atoms named by one.
- *
- * Parsed, never matched: a `ts.StringLiteral` in any position EXCEPT an import/export module
- * specifier or a dynamic `import()` argument — those are the walk's own edges and are counted there.
- * A comment quoting a path is not a string literal, so prose about a component opens nothing
- * (pinned in the test). The importMap is generated JavaScript and is parsed as such.
- */
+/** The NAME door (the sixth): every Payload component path string, parsed never matched — SKILL § the sixth door. Memoised per tree state. */
 export function nameDoor(cwd: string = process.cwd()): ReadonlySet<string> {
-  // Every file is parsed once per tree state: both censuses, the involution and the live tests ask
-  // this, and un-memoised it pushed the strict census past its test budget.
   return new Set(memoByFingerprintOnDisk('rules-unreached-name-door', cwd, () => [...nameDoorScan(cwd)].sort()))
 }
 
@@ -62,6 +47,7 @@ function nameDoorScan(cwd: string): ReadonlySet<string> {
     const visit = (node: ts.Node): void => {
       if ((ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) && PATH_STRING.test(node.text)) {
         const p = node.parent
+        // import/export specifiers and dynamic import() are the walk's own edges, counted there
         const specifier = (ts.isImportDeclaration(p) || ts.isExportDeclaration(p)) && p.moduleSpecifier === node
         const dynamic = ts.isCallExpression(p) && p.expression.kind === ts.SyntaxKind.ImportKeyword
         if (!specifier && !dynamic) out.add(node.text.slice(2).split('#')[0] as string)
@@ -84,12 +70,7 @@ export interface Referrer {
   /** The file (repo-relative) or path string that reaches the atom. */
   readonly by: string
   readonly via: 'import' | 'name'
-  /**
-   * Whether the referrer is itself reached by the forward walk. A LIVE referrer refutes the lead: a
-   * running file reaches the atom and the census missed the door. A DEAD one carries it: the parent's
-   * barrel imports the atom and nothing imports the barrel, so the lead holds and its actionable
-   * address is the referrer. A path string is loaded by Payload and is always live.
-   */
+  /** Reached by the forward walk itself. Live refutes the lead; dead carries it — SKILL § the involution. */
   readonly live: boolean
 }
 
@@ -97,24 +78,9 @@ const under = (rel: string, atom: string): boolean => rel === atom || rel.starts
 const isProof = (rel: string): boolean => /(^|\/)(test|[^/]+\.(test|spec))\.tsx?$/.test(rel)
 
 /**
- * The INVOLUTION of the census — the same question asked from the referrer's seat.
- *
- * `unreachedAtoms` walks FORWARD from the entries and reports what no walk arrives at. This walks
- * BACKWARD from each charged atom and reports who reaches it: a file outside the charged set that
- * imports it, or a path string that names it. A charged atom with a LIVE referrer is a lead the
- * involution refutes — a door the forward walk does not open — and the frontier tags it a lie instead
- * of ranking it as dead weight. A charged atom with none, or with only dead referrers, holds from both
- * seats.
- *
- * Asked live on 2026-10-03 it reported four. Two were refutations — `search/engine` and
- * `security/header` pass through the shipped/word doors, which never propagated what their barrels
- * import — and two were CARRIERS: `dashboard`'s barrel imports `dashboard/nav` and nothing imports
- * the barrel, which the atom-level census cannot see because a descendant file marks the whole atom
- * reached. That is why liveness is a file-level fact read from the same forward walk.
- *
- * Tests and the atom's own files are not referrers: a test proves the function works, never that
- * anything asks it. `excluded` defaults to the charged set itself, so two unreached atoms importing
- * each other corroborate nothing — the mutual-loop case [[rules]]/cycle owns.
+ * The INVOLUTION of the census: who reaches each charged atom from outside the charged set, and
+ * whether that referrer is itself reached — SKILL § the involution. Tests and the atom's own files
+ * are not referrers; `excluded` defaults to the charged set so a mutual loop corroborates nothing.
  */
 export function referrersOf(
   cwd: string,
@@ -186,24 +152,9 @@ export function reachedFrom(entries: readonly string[], cwd: string = process.cw
 }
 
 /**
- * Atom paths reached by traversing at least ONE import edge from an entry.
- *
- * THE FAIL-OPEN THIS EXISTS FOR: `reachedFrom` puts its own roots in the result, and the roots
- * include every faced atom's barrel — so an atom is "reached" BY ITSELF. Measured 2026-09-20:
- * **3,046 atoms carry a deployment face**, and each one is its own door. `kyc`, minted that day
- * and imported by nothing, read as reached.
- *
- * A false negative in a gate is worse than a false positive, because it reports green over the
- * exact defect it exists for — the law this corpus learned from [[rules]]/cycle's Tarjan-free DFS,
- * restated here one gate over.
- *
- * So an atom must be reached from SOMEWHERE ELSE. Roots seed the walk and are not themselves
- * counted; only what an edge leads to is.
- *
- * **Honest boundary.** Two unreached atoms that import each other both appear reached — a mutual
- * loop satisfies "something else imports me" without either being reachable from an entry. That is
- * the [[rules]]/cycle case and is not resolved here. And an atom reached only dynamically is still
- * invisible, exactly as it is to the looser walk.
+ * Atom paths reached by at least ONE import edge from an entry — roots are not their own door.
+ * `reachedFrom` counts its roots, and with 3,046 faced barrels as roots an atom read as reached BY
+ * ITSELF (`kyc`, 2026-09-20). A mutual loop between two unreached atoms still passes here ([[rules]]/cycle).
  */
 export function reachedByImport(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
   return atomsUnder(walkImports(entries, cwd).viaEdge, join(cwd, 'src'))
@@ -258,19 +209,7 @@ interface ExemptDoors {
 const exemptBy = (a: CodeAtom, d: ExemptDoors): boolean =>
   d.shipped.has(a.atomPath) || d.words.has(a.leaf) || namedBy(a.atomPath, d.names)
 
-/**
- * The seventh correction, and the first one the INVOLUTION found rather than a reader.
- *
- * Shipped, vocabulary-word and name-door atoms are reached — by a package consumer, by the word, by
- * Payload — and the census exempted each of them and stopped there: what THEIR barrels import was
- * still charged. `referrersOf` refuted two live leads by exactly that shape (`search/engine` →
- * `search/engine/optimization`, `security/header` → `security/header/headers`): a parent passing
- * through a door that did not propagate, a child charged although the parent's own barrel imports
- * it. The deployed door had this defect at 78 → 64; these three doors had it until 2026-10-03
- * (66 → 60, six atoms carried through `iso/20022`, `iso/3166/1` and the two parents). An exempt
- * atom's barrel is a reach seed exactly as a deployed atom's is — and it seeds what it IMPORTS only,
- * never itself or its ancestors (see `unreachedAtoms`).
- */
+/** Barrels of exempt atoms — reach seeds exactly as deployed barrels are (the seventh correction, SKILL § the involution). */
 function exemptEntries(cwd: string, atoms: readonly CodeAtom[], doors: ExemptDoors): string[] {
   const out: string[] = []
   for (const a of atoms) {
@@ -432,12 +371,7 @@ function deployedEntries(cwd: string, deployed: (dir: string) => boolean): strin
   return out
 }
 
-/**
- * Every FILE the census's forward walk reaches — the tooling entries, every deployed barrel and every
- * exempt barrel, and all they import. This is the liveness a referrer is judged by: the atom-level
- * census marks an atom reached when any descendant file is, so a barrel nothing imports can sit inside
- * a "reached" atom, and only the file set tells a live referrer from a dead one.
- */
+/** Every FILE the forward walk reaches — the liveness a referrer is judged by, since the atom-level census cannot see a dead barrel inside a reached atom. */
 export function reachedFiles(cwd: string = process.cwd()): ReadonlySet<string> {
   const deployed = deploymentDoor(cwd)
   const atoms = codeAtoms(cwd)
@@ -450,11 +384,7 @@ export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
   const atoms = codeAtoms(cwd)
   const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }
   const tooling = reachedFrom([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed)], cwd)
-  // An exempt atom's barrel contributes what it IMPORTS and nothing else. Seeding it through
-  // `reachedFrom` would mark the seed and every ANCESTOR reached — so a vocabulary-word child would
-  // have exempted its whole parent chain (`en/16931`, `ifrs/15`, `versions` read as reached with no
-  // referrer at all on the first run: 50 where the honest count is 60). That is the self-door
-  // `reachedByImport` was written to close.
+  // exempt barrels seed what they IMPORT only — through `reachedFrom` their ancestors would read as reached (50 where the honest count is 60)
   const carried = reachedByImport(exemptEntries(cwd, atoms, doors), cwd)
   const out: UnreachedAtom[] = []
   for (const a of atoms) {
