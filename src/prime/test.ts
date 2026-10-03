@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
+import { sampleHex } from '@/quantum/hexbit'
 import { atomAddress } from '@/atom/address'
-import { isPrime, factor, FIRST_PRIMES, atomPath } from './index'
+import { isPrime, factor, FIRST_PRIMES, atomPath, coversBits, join, piPrimes, split } from './index'
 
 describe('prime — the multiplicative basis, factoring is the decode fold', () => {
   it('names its path', () => {
@@ -42,5 +43,44 @@ describe('prime — the multiplicative basis, factoring is the decode fold', () 
   it('the empty cases decode to nothing — no basis below 2', () => {
     expect(factor(1)).toEqual([])
     expect(factor(0)).toEqual([])
+  })
+})
+
+describe('prime — the split: an astronomical value as residues in moduli drawn from π, recomposed exactly', () => {
+  const moduli = piPrimes(5)
+  const sample = (i: number): bigint => BigInt(`0x${sampleHex(i)}`)
+
+  it('the moduli are primes read off π — each above 2^30, none chosen, five of them cover 128 bits', () => {
+    expect(moduli).toHaveLength(5)
+    for (const m of moduli) {
+      expect(m > 1n << 30n).toBe(true)
+      expect(isPrime(Number(m))).toBe(true)
+    }
+    expect(new Set(moduli).size).toBe(5)
+    expect(coversBits(moduli, 128)).toBe(true)
+    expect(coversBits(moduli.slice(0, 4), 128)).toBe(false) // four 31-bit moduli reach only 2^124
+  })
+
+  it('join ∘ split is the identity on 20,000 sampled 128-bit values and both edges', () => {
+    for (let i = 0; i < 20_000; i++) {
+      const x = sample(i)
+      expect(join(split(x, moduli), moduli)).toBe(x)
+    }
+    expect(join(split(0n, moduli), moduli)).toBe(0n)
+    const max = (1n << 128n) - 1n
+    expect(join(split(max, moduli), moduli)).toBe(max)
+  })
+
+  it('the split is a ring homomorphism — a 256-bit product is five small products, recomposed when nine moduli cover it', () => {
+    const nine = piPrimes(9)
+    expect(coversBits(nine, 256)).toBe(true)
+    for (let i = 0; i < 200; i++) {
+      const a = sample(i)
+      const b = sample(i + 7)
+      const ra = split(a, nine)
+      const rb = split(b, nine)
+      const prod = nine.map((m, k) => ((ra[k] as bigint) * (rb[k] as bigint)) % m)
+      expect(join(prod, nine)).toBe(a * b)
+    }
   })
 })

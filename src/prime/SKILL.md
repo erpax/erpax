@@ -49,8 +49,30 @@ Both halves are computable **theorems, and only theorems**: `isPrime` is determi
 
 **Law — [[law]]: the primes are the multiplicative basis; factoring is decode. Encode ∘ decode is identity, and that is a theorem — everything past it (RH, an unclaimed physics result) is refused until it has a proof beside it.**
 
+## The split — an astronomical value as small residues, the moduli drawn from π
+
+*Split astronomical values with π and primes and other crypto tools.* A 128-bit content-uuid is an
+astronomical value; nothing needs to hold it whole. `piPrimes(k)` reads 31-bit windows off the hex
+digits of π ([[pi]], computed by BBP, never stored), forces bit 30, and keeps the windows Miller–Rabin
+proves prime — a modulus set nobody chose, the "nothing up my sleeve" discipline the ciphers use for
+their tables. `split(x, moduli)` is the value as its residue in each; `join` is the Chinese Remainder
+recomposition over extended Euclid, exact whenever `coversBits` holds — five such moduli exceed 2^150,
+so five residues of 31 bits carry a 128-bit value losslessly, and the test proves `join ∘ split = id` on
+20,000 sampled values and both edges.
+
+The split is a ring homomorphism: a 256-bit product is nine 31-bit products, each in its own modulus,
+recomposed exactly once nine moduli cover 256 bits (`Hexbit.lean` decides both bounds). That is the
+cross formula for the astronomical case — the whole never meets the whole, only residue meets residue.
+
+**Honest boundary.** This splits a value into residues; it does not split a *hash* into its preimage,
+and a residue reveals nothing about the digits it came from beyond its modulus. Bitwise crosses (AND,
+the torus interaction) do **not** distribute over residues — only ring operations do — so the hexit
+folds in [[quantum]]/hexbit keep their own carrier.
+
 ## Standards
 
+- **Chinese Remainder Theorem** — the recomposition; exact iff the moduli are coprime and cover the width.
+- **Bailey–Borwein–Plouffe (1997)** — the π digits the moduli are read from.
 - **Fundamental Theorem of Arithmetic** — unique prime factorisation.
 - **Shor 1994** — integer factorisation by quantum period-finding (proven, cited, not claimed).
 
