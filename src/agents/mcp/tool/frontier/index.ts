@@ -70,6 +70,8 @@ export interface DevelopEvidence {
   readonly word?: string
   /** target → the rosetta turned about it: every law a seat, both faces ([[quantum]]/coil `rotateAbout`). */
   readonly rotations?: ReadonlyMap<string, Rotation>
+  /** target → the leaf word a remote agent named for it ([[ai]]/public `decideWord`); wins over `word`. */
+  readonly words?: ReadonlyMap<string, string>
 }
 
 /**
@@ -178,14 +180,15 @@ function develop(l: TaggedLead, ev: DevelopEvidence, cwd: string): Development {
       }
       // the side that takes FEWER names moves: a smaller leaf, and the exporter's face stays intact
       const edge = [...tangle.edges].sort((a, b) => a.names.length - b.names.length)[0] as TangleEdge
-      const leaf = ev.word ? `${edge.specifier}/${ev.word}` : `${edge.specifier}/<word>`
+      const word = ev.words?.get(l.target) ?? ev.word
+      const leaf = word ? `${edge.specifier}/${word}` : `${edge.specifier}/<word>`
       const steps = [
         `create src/${leaf.slice(2)}/index.ts with ${edge.names.join(', ')} moved out of ${edge.exporter} (type imports only, so nothing can loop through it)`,
         `re-export ${edge.names.join(', ')} from ${edge.exporter} — its face is unchanged`,
         `repoint ${edge.importer}: ${edge.statement.trim()} → from '${leaf}'`,
-        ...(ev.word ? [] : ['the leaf needs a word — pass `word` and the repoint becomes a planned scalpel op']),
+        ...(word ? [] : ['the leaf needs a word — pass `word`, or `decide: true` to ask the keyless door, and the repoint becomes a planned scalpel op']),
       ]
-      const ops = ev.word ? [leafOps(edge, ev.word)] : []
+      const ops = word ? [leafOps(edge, word)] : []
       return { lead, kind: ops.length ? 'ops' : 'decision', ops, plan: ops.length ? planScalpel(ops, cwd) : null, steps, evidence: { members: tangle.members, edges: tangle.edges.map((e) => ({ importer: e.importer, exporter: e.exporter, names: e.names })) } }
     }
     const hub = ev.hubs?.get(l.target)
@@ -497,6 +500,8 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
         target: z.string().optional().describe('one lead target, e.g. subscription/gate · fiscal/period/resolver · dashboard/nav'),
         word: z.string().regex(/^[a-z][a-z0-9]*$/).optional().describe('the leaf word for a two-file tangle — the one decision that turns the template into planned ops'),
         rotate: z.boolean().optional().describe('turn the rosetta about every lead (default true): each law a seat, both faces, its prescription fused into the manifest'),
+        decide: z.boolean().optional().describe('ask the keyless public door (ai/public) for the leaf word of every two-file tangle that lacks one — the remote agent names, the scalpel plans'),
+        apply: z.boolean().optional().describe('cut every planned op through the scalpel ring (batches, verified, a red batch restored to the byte); default false — a dry run'),
         limit: z.number().int().min(1).max(200).optional(),
       },
       async handler(args) {
@@ -506,15 +511,40 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
         const tagged = involuteLeads(internalLeads(src), duals)
         const target = typeof args.target === 'string' ? args.target : undefined
         const theorems = tagged.filter((t) => t.tag === 'theorem' && (target === undefined || t.target === target))
-        const ev = await developEvidence(cwd, theorems, carried, typeof args.word === 'string' ? args.word : undefined, args.rotate !== false)
-        const developments = developManifest(theorems, ev, cwd)
+        let ev = await developEvidence(cwd, theorems, carried, typeof args.word === 'string' ? args.word : undefined, args.rotate !== false)
+        let developments = developManifest(theorems, ev, cwd)
+        // the wave's remote agent: every two-file tangle still waiting on a word asks the keyless door for one
+        const decided: Array<{ target: string; word: string | null; door: string | null }> = []
+        if (args.decide === true) {
+          const { decideWord } = await import('@/ai/public')
+          const words = new Map<string, string>()
+          for (const d of developments) {
+            const tangle = ev.tangles?.get(d.lead.target)
+            if (d.lead.source !== 'law:cycle' || d.kind !== 'decision' || !tangle || tangle.edges.length === 0 || tangle.members.length !== 2) continue
+            const edge = [...tangle.edges].sort((a, b) => a.names.length - b.names.length)[0] as TangleEdge
+            const r = await decideWord(`${edge.names.join(', ')} move out of ${edge.exporter} into a child atom of ${edge.specifier}; name that child.`)
+            decided.push({ target: d.lead.target, word: r.word, door: r.door })
+            if (r.word) words.set(d.lead.target, r.word)
+          }
+          ev = { ...ev, words }
+          developments = developManifest(theorems, ev, cwd)
+        }
+        const allOps = developments.flatMap((d) => d.ops)
+        let applied: { complete: boolean; batches: number; refused: number } | null = null
+        if (args.apply === true && allOps.length > 0) {
+          const { applyScalpel } = await import('@/scalpel')
+          const r = applyScalpel(allOps, { cwd, apply: true })
+          applied = { complete: r.complete, batches: r.batches.length, refused: r.plan.refused }
+        }
         const seat = (s: string): number => developments.filter((d) => d.evidence.seat === s).length
         const rows = developments.slice(0, (args.limit as number | undefined) ?? 50)
         return json({
           asked: [...want].sort(),
           theorems: theorems.length,
           kinds: { ops: developments.filter((d) => d.kind === 'ops').length, decision: developments.filter((d) => d.kind === 'decision').length },
-          ops: developments.flatMap((d) => d.ops).length,
+          ops: allOps.length,
+          decided,
+          applied,
           refused: developments.reduce((n, d) => n + (d.plan?.refused ?? 0), 0),
           // the rosetta turned about every lead: how many seats see each — laws never written to agree, agreeing
           rotation: ev.rotations ? { rosetta: [...(ev.rotations.values().next().value?.perspectives ?? [])].map((p) => p.law), corroborated: seat('corroborated'), single: seat('single'), unseen: seat('unseen') } : null,

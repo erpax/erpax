@@ -132,7 +132,7 @@ describe('erpax.self tools — the factory', () => {
     expect(tools.map((t) => `${t.name}:${t.role}`)).toEqual(['erpax.frontier.next:measure', 'erpax.frontier.involute:involute', 'erpax.frontier.develop:act'])
     expect(Object.keys(tools[0]!.parameters).sort()).toEqual(['limit', 'sources'])
     expect(Object.keys(tools[1]!.parameters).sort()).toEqual(['limit', 'sources', 'tag'])
-    expect(Object.keys(tools[2]!.parameters).sort()).toEqual(['limit', 'rotate', 'sources', 'target', 'word'])
+    expect(Object.keys(tools[2]!.parameters).sort()).toEqual(['apply', 'decide', 'limit', 'rotate', 'sources', 'target', 'word'])
   })
 
   it('names the cost in its description, because every source is a full scan', () => {
@@ -252,5 +252,17 @@ describe('developManifest — a dependent seat corroborates nothing', () => {
     expect(d!.steps.join('\n')).toContain('a dependent seat — it sees this lead because the other law does')
     expect([...dependentSeats('unreached')]).toEqual(['accounting-wave'])
     expect(dependentSeats('copy').size).toBe(0)
+  })
+})
+
+describe('developManifest — a word the remote agent named', () => {
+  it('a per-target word from ev.words turns the template into planned ops, and wins over the global word', () => {
+    const edges = [{ importer: 'src/gate/index.ts', exporter: 'src/auth/index.ts', names: ['getUserContext'], statement: "import { getUserContext } from '@/auth'", specifier: '@/auth' }]
+    const tangles = new Map([['subscription/gate', { members: ['src/auth/index.ts', 'src/gate/index.ts'], edges }]])
+    const theorem = { ...lead('law:cycle', 'subscription/gate'), tag: 'theorem' as const, instrument: 'x', formula: '' }
+    const [d] = developManifest([theorem], { tangles, word: 'global', words: new Map([['subscription/gate', 'context']]) }, '/nowhere')
+    expect(d!.kind).toBe('ops')
+    expect(d!.ops[0]!.replace).toContain("from '@/auth/context'")
+    expect(d!.steps.join('\n')).not.toContain('decide: true')
   })
 })

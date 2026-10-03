@@ -196,6 +196,7 @@ src/ai/invoice-ocr.ts:12: * @standard ISO/IEC 23894:2023 ai-risk-management
 src/ai/models/index.ts:17: * @standard EU AI Act 2024 risk-classification + transparency
 src/ai/models/index.ts:18: * @standard RFC-4122 §4.3 uuid (content-addressed model identity)
 src/ai/models/service.ts:20: * @standard EU AI Act 2024 risk-classification + transparency
+src/ai/public/index.ts:10: * @standard OpenAI chat-completions wire shape — the lingua franca the open doors speak
 src/ai/sanctions-screening.ts:13: * @standard ISO/IEC 23894:2023 ai-risk-management
 src/ai/sanctions-screening.ts:14: * @standard FATF R.7 sanctions-screening-obligations
 src/ai/sanctions-screening.ts:15: * @standard FATF R.12 politically-exposed-persons
