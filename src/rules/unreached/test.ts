@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { existsSync, mkdtempSync, mkdirSync, readdirSync, writeFileSync, rmSync } from 'node:fs'
+import { nameDoor, namedBy, referrersOf } from './index'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { reachedByImport, reachedFrom, shippedAtoms, unreachedAtoms, unreachedStrict } from './index'
@@ -53,15 +54,21 @@ describe('rules/unreached — the live corpus', () => {
     for (const a of live.slice(0, 20)) expect(a.reason).toContain('not shipped')
   })
 
-  // admin/ui/fields IS in the generated importMap, so Payload reaches it by path string. It must not
-  // be named here — and the three siblings nothing names must be. That pair is the whole boundary:
-  // the walk is lexical, so a dynamic reference is invisible to it, and this is where that shows.
-  it('does not name an atom the generated importMap reaches', () => {
-    expect(live.map((a) => a.atomPath)).not.toContain('admin/ui/fields')
+  // admin/ui/fields IS in the generated importMap, so Payload reaches it by path string. Its three
+  // siblings are reached the same way — `Cell: '@/admin/ui/cells/…'` in the admin plugin — and this
+  // test USED to pin them as "the components nothing references". That was the walk's blind spot
+  // certified as a fact: the name door is the sixth door, and nothing a path string reaches is named.
+  it('does not name an atom the generated importMap or a component path string reaches', () => {
+    const names = nameDoor(process.cwd())
+    const paths = live.map((a) => a.atomPath)
+    expect(paths).not.toContain('admin/ui/fields')
+    for (const p of paths) expect(namedBy(p, names)).toBe(false)
   })
 
-  it('does name the admin components nothing references', () => {
-    expect(live.map((a) => a.atomPath)).toContain('admin/ui/cells')
+  it('the involution refutes nothing the census names — every live lead holds from the referrer seat too', () => {
+    const atoms = live.map((a) => a.atomPath)
+    const refuted = referrersOf(process.cwd(), atoms).filter((r) => r.via === 'name')
+    expect(refuted).toEqual([])
   })
 
   it('never names a vocabulary word — its barrel exists only to name the word', () => {
@@ -139,6 +146,57 @@ describe('rules/unreached — a fixture with no packages and no gate', () => {
         expect(charged).toContain('orphan')
       },
     )
+  })
+
+  // The sixth door, planted. A component reached ONLY by a Payload path string passes; one quoted
+  // only in a comment is still charged — a comment is not a string literal, so prose opens nothing.
+  it('an atom a path STRING names is reached; an atom a COMMENT names is not', () => {
+    inFixture(
+      (root) => {
+        plant(root, 'plugins/admin', "export const cfg = { Cell: '@/widget/Cell', Field: `@/gauge/Field#named` }\n// see @/ghost/Cell for the old one\n")
+        plant(root, 'widget', 'export const Cell = 1\n')
+        plant(root, 'gauge', 'export const Field = 1\n')
+        plant(root, 'ghost', 'export const Cell = 1\n')
+      },
+      (charged) => {
+        expect(charged).not.toContain('widget')
+        expect(charged).not.toContain('gauge')
+        expect(charged).toContain('ghost')
+      },
+    )
+  })
+})
+
+describe('referrersOf — the census asked from the referrer seat', () => {
+  it('names the file that imports a charged atom from outside the charged set, and the string that names it', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+    try {
+      plant(root, 'shipped', "export { x } from '@/lonely'\n")
+      plant(root, 'lonely', 'export const x = 1\n')
+      plant(root, 'plugins/admin', "export const cfg = { Cell: '@/lonely/Cell' }\n")
+      plant(root, 'island', 'export const y = 1\n')
+      const refs = referrersOf(root, ['lonely', 'island'])
+      expect(refs.map((r) => `${r.atomPath} ← ${r.by} (${r.via})`)).toEqual([
+        'lonely ← @/lonely/Cell (name)',
+        'lonely ← src/shipped/index.ts (import)',
+      ])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('an importer inside the charged set is not a referrer, and neither is a test', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+    try {
+      plant(root, 'a', "export { b } from '@/b'\n")
+      plant(root, 'b', 'export const b = 1\n')
+      writeFileSync(join(root, 'src', 'b', 'test.ts'), "import { b } from '@/b'\nexport const t = b\n")
+      expect(referrersOf(root, ['a', 'b'])).toEqual([])
+      // Narrow the excluded set and the same importer becomes a referrer: the door is the set, not the file.
+      expect(referrersOf(root, ['b'], new Set())).toEqual([{ atomPath: 'b', by: 'src/a/index.ts', via: 'import' }])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
   })
 })
 

@@ -296,7 +296,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // covered it: `command` scopes itself to what CI, the hooks and package.json reach and delegates
     // a `.ts` module's paths to [[rules]]/reference, which reads PROSE and COMMENTS — so a path in a
     // string literal was in neither. `consistency/apply` pointed 13 references at the dissolved
-    // `src/services/` tree behind bare `catch {}` blocks, and the live MCP tool answered
+    // services tree (a path that no longer exists) behind bare `catch {}` blocks, and the live MCP tool answered
     // `applied: 0, skipped: 0, changes: []` — a clean summary having done nothing. Baseline 0 is a
     // THEOREM: a loader handed a missing path throws where it runs.
     guardian({ axis: 'loader-path', violations: deadLoaderPaths(cwd).length, baseline: 0 }),
@@ -346,11 +346,12 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     guardian({ axis: 'durable-object-export', violations: durableObjectExportGaps(cwd).length, baseline: 0 }),
     // unreached — an atom of code no entry reaches ([[rules]]/unreached). This is the ROOT of the
     // remaining accounting wave: each charged leaf makes every folder above it charge again for the
-    // same absence. Five doors are tried — deployed, reached FROM a deployed atom, gated/CLI,
-    // shipped in a package, or a vocabulary word. The second was missing: the face was checked
-    // per-atom and never propagated through imports, which charged 14 atoms a deployed surface
-    // plainly reaches (78 -> 64). A candidate list, never a purge list: a dynamic reference is
-    // invisible to a lexical walk.
+    // same absence. Six doors are tried — deployed, reached FROM a deployed atom, gated/CLI,
+    // shipped in a package, a vocabulary word, or NAMED by a Payload component path string. The
+    // second was missing once (78 -> 64: the face was checked per-atom and never propagated); the
+    // sixth was missing until 2026-10-03, when the three admin components the strings reach were
+    // the top-ranked frontier leads (69 -> 66). A candidate list, never a purge list; `referrersOf`
+    // is its involution and tags what a forward walk still gets wrong.
     guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 64 }),
     // copy — one body at two addresses ([[rules]]/copy). Content-addressed, so same bytes ⇒ same
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was

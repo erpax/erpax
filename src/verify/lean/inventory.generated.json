@@ -1,10 +1,10 @@
 {
   "sealedAt": "2026-10-03",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "03dd15361a26abd7",
+  "sourcesHash": "399680633f584f1e",
   "census": {
-    "theorems": 211,
-    "axiomFree": 136,
+    "theorems": 218,
+    "axiomFree": 143,
     "standardAxioms": 75,
     "stubbed": 0
   },
@@ -820,6 +820,54 @@
         },
         {
           "theorem": "Harmonic.control_tau",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Involute.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Involute.every_lead_is_tagged",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Involute.unaskable_is_manipulation",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Involute.silence_before_verdict",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Involute.refuted_is_lie",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Involute.agreed_is_theorem",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Involute.no_theorem_without_a_dual",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Involute.decided_by_the_facts",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false

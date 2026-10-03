@@ -123,3 +123,26 @@ same five scans behind one lazy promise.
 The crossing itself, the namespaces it refuses to compare and the lift that separates agreement from base
 rate are argued where the transform lives: [[self]]/sufficient.
 
+## Every lead tagged by its involution
+
+The three highest-ranked leads this tool emitted on 2026-10-03 were lies. `unreached` named
+`admin/ui/cells` · `admin/ui/dashboard` · `admin/ui/nav` as dead weight, and Payload reaches all three
+by a path string on every admin page load. The ranker did its job — a red count outranks a debt — on a
+claim one instrument had made and nothing had cross-examined.
+
+So every lead is now **involuted** before it is ranked ([[self]]/involute): the same claim asked from the
+dual seat. `unreached` is asked backward through `referrersOf` — who imports or names the atom from
+outside the charged set; a red `guardian` is asked for its **members** — the law's population or the
+unreached list for that axis; a `cross` is asked for its **lift**. The answer tags the lead
+`theorem` (the dual agrees), `lie` (the dual refutes — fix the instrument, never the atom it accused)
+or `manipulation` (no dual could answer — one witness, speaking for itself), and the codomain is
+total: `Involute.every_lead_is_tagged` in `src/verify/lean/Involute.lean`.
+
+`erpax.frontier.next` carries `tags` · `lies` · `manipulations` and stamps every ranked entry;
+`next` is the first ranked **theorem**, so a lie never leads. `erpax.frontier.involute` returns the
+tagged leads, filtered by `tag`, with the duals it asked. Asked for `guardians` alone, every red count
+is a manipulation — correctly: a number with no addressable member cannot be asked from the other
+seat, and the description says to ask for `populations` or `unreached` when the members matter. The
+`boundary` source has no dual wired; its right one is a second route (the uuidna fanout) and is
+external.
+

@@ -108,9 +108,35 @@ collection exists too — and **nothing imports `@/payable`**. The mentions else
 string literal. Whether that is a wire to write or capability to drop is a product call, which is
 exactly the boundary this atom already states.
 
+## The sixth door — a path string is a reach, and the census said it was not
+
+The boundary above said it plainly: *Payload reaches admin components by a path string, and
+`admin/ui/cells`, `admin/ui/dashboard` and `admin/ui/nav` are here because nothing names them.* The
+second half was false. `src/plugins/admin/ui/index.ts` names all three — `Cell: '@/admin/ui/cells/
+SealBadgeCell'`, `'@/admin/ui/dashboard/CorpusEntropyDashboard'`, `'@/admin/ui/nav/CorpusNavLinks'` —
+and a test **pinned them as unreferenced**, certifying the walk's blind spot as a fact about the tree.
+They were the three highest-ranked `unreached` leads on the frontier.
+
+`nameDoor` reads every `ts.StringLiteral` that is not an import specifier and matches a Payload
+component path, plus the generated importMap. Measured 2026-10-03: **244 literals, 150 distinct
+paths, 3 of 69 charged atoms named** — 69 → 66, and the three were exactly the ones the prose had
+already pointed at. A comment quoting a path is not a literal and opens nothing; the test plants both.
+
+## The involution — the census asked from the referrer's seat
+
+`unreachedAtoms` walks forward from entries and reports what no walk reaches. `referrersOf` walks
+**backward** from each charged atom and reports who reaches it from outside the charged set: an
+importing file, or a path string. The two are duals, not the same instrument re-run — which is why
+`unreachedStrict` is not one: it closes a door on the same forward walk and can only ever agree.
+
+A charged atom with a referrer is a lead the involution **refutes**: a door the forward walk does not
+open (a shipped barrel, a vocabulary word's import, a component string). The frontier tags it a
+`lie` ([[self]]/involute) and the fix is a door in this walk, never a sweep of the atom. A charged
+atom with none holds from both seats, and that is the only kind the queue should rank.
+
 **Law — [[law]]: an atom of code earns its place by being reachable. Try every door — deployed,
-gated, shipped, or a word — and what is left is code nothing runs. Name it, ratchet it, and decide
-per atom; never sweep it.**
+gated, shipped, a word, or a name — and what is left is code nothing runs. Ask the question from the
+referrer's seat before ranking it; name it, ratchet it, and decide per atom; never sweep it.**
 
 ## Standards
 

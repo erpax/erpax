@@ -1,9 +1,11 @@
-import { existsSync, readdirSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import ts from 'typescript'
 import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { computeDiamond, deploymentFaces } from '@/diamond'
 import { importsOf } from '@/rules/cycle'
 import { frozenCorpusInputs, schemaCollision } from '@/readme/compute'
+import { astOf, corpusFiles } from '@/syntax/cache'
 
 /**
  * rules/unreached — an atom of code that nothing reaches, from any entry the corpus has.
@@ -19,6 +21,109 @@ export interface UnreachedAtom {
 
 /** The tooling entries: the gate registry and the CLI. Reached from here is reached. */
 const TOOLING_ENTRIES = ['src/rules/index.ts', 'src/cli/index.ts', 'src/cli/gate.ts', 'src/cli/doctor.ts'] as const
+
+/** A Payload component path: `@/admin/ui/cells/SealBadgeCell`, optionally `#export`. Lowercase atom segments, any-case leaf. */
+const PATH_STRING = /^@\/[a-z][a-zA-Z0-9/]*(#\w+)?$/
+
+/**
+ * The NAME door — the sixth. Payload reaches an admin component by a PATH STRING, never by an import:
+ * `Cell: '@/admin/ui/cells/SealBadgeCell'` in a collection config, a `components.views` entry, the
+ * generated importMap. A lexical import walk cannot see any of it, and this atom's own SKILL named
+ * that gap for weeks while the census charged exactly the three atoms the strings reach —
+ * `admin/ui/cells` · `admin/ui/dashboard` · `admin/ui/nav` — and the frontier ranked them above
+ * every real debt. Measured 2026-10-03: 244 such literals, 150 distinct paths, 3 of 69 charged
+ * atoms named by one.
+ *
+ * Parsed, never matched: a `ts.StringLiteral` in any position EXCEPT an import/export module
+ * specifier or a dynamic `import()` argument — those are the walk's own edges and are counted there.
+ * A comment quoting a path is not a string literal, so prose about a component opens nothing
+ * (pinned in the test). The importMap is generated JavaScript and is parsed as such.
+ */
+export function nameDoor(cwd: string = process.cwd()): ReadonlySet<string> {
+  const out = new Set<string>()
+  const files: string[] = [...corpusFiles(cwd)]
+  const importMap = join(cwd, 'src/app/(payload)/admin/importMap.js')
+  if (existsSync(importMap)) files.push(importMap)
+  for (const f of files) {
+    let sf: ts.SourceFile
+    try {
+      sf = f.endsWith('.js')
+        ? ts.createSourceFile(f, readFileSync(f, 'utf8'), ts.ScriptTarget.Latest, true, ts.ScriptKind.JS)
+        : astOf(f)
+    } catch {
+      continue
+    }
+    const visit = (node: ts.Node): void => {
+      if ((ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) && PATH_STRING.test(node.text)) {
+        const p = node.parent
+        const specifier = (ts.isImportDeclaration(p) || ts.isExportDeclaration(p)) && p.moduleSpecifier === node
+        const dynamic = ts.isCallExpression(p) && p.expression.kind === ts.SyntaxKind.ImportKeyword
+        if (!specifier && !dynamic) out.add(node.text.slice(2).split('#')[0] as string)
+      }
+      ts.forEachChild(node, visit)
+    }
+    visit(sf)
+  }
+  return out
+}
+
+/** Does a path string reach this atom — the atom itself or anything under it? */
+export function namedBy(atomPath: string, names: ReadonlySet<string>): boolean {
+  for (const n of names) if (n === atomPath || n.startsWith(`${atomPath}/`)) return true
+  return false
+}
+
+export interface Referrer {
+  readonly atomPath: string
+  /** The file (repo-relative) or path string that reaches the atom. */
+  readonly by: string
+  readonly via: 'import' | 'name'
+}
+
+const under = (rel: string, atom: string): boolean => rel === atom || rel.startsWith(`${atom}/`)
+const isProof = (rel: string): boolean => /(^|\/)(test|[^/]+\.(test|spec))\.tsx?$/.test(rel)
+
+/**
+ * The INVOLUTION of the census — the same question asked from the referrer's seat.
+ *
+ * `unreachedAtoms` walks FORWARD from the entries and reports what no walk arrives at. This walks
+ * BACKWARD from each charged atom and reports who reaches it: a file outside the charged set that
+ * imports it, or a path string that names it. A charged atom WITH a referrer is a lead the involution
+ * refutes — a door the forward walk does not open (a shipped barrel, a vocabulary word's import, a
+ * component string) — and the frontier tags it a lie instead of ranking it as dead weight. A charged
+ * atom with none holds from both seats.
+ *
+ * Tests and the atom's own files are not referrers: a test proves the function works, never that
+ * anything asks it. `excluded` defaults to the charged set itself, so two unreached atoms importing
+ * each other corroborate nothing — the mutual-loop case [[rules]]/cycle owns.
+ */
+export function referrersOf(
+  cwd: string,
+  atoms: readonly string[],
+  excluded: ReadonlySet<string> = new Set(atoms),
+): Referrer[] {
+  const src = join(cwd, 'src')
+  const out: Referrer[] = []
+  const seen = new Set<string>()
+  const push = (r: Referrer): void => {
+    const k = `${r.atomPath}\u0000${r.by}\u0000${r.via}`
+    if (!seen.has(k)) {
+      seen.add(k)
+      out.push(r)
+    }
+  }
+  for (const f of corpusFiles(cwd)) {
+    const rel = relative(src, f)
+    if (isProof(rel) || [...excluded].some((x) => under(rel, x))) continue
+    const imports = importsOf(f, cwd).map((i) => relative(src, i))
+    for (const a of atoms) {
+      if (imports.some((i) => under(i, a))) push({ atomPath: a, by: relative(cwd, f), via: 'import' })
+    }
+  }
+  const names = nameDoor(cwd)
+  for (const a of atoms) for (const n of names) if (under(n, a)) push({ atomPath: a, by: `@/${n}`, via: 'name' })
+  return out.sort((x, y) => x.atomPath.localeCompare(y.atomPath) || x.by.localeCompare(y.by))
+}
 
 /** Every atom path reachable by imports from a set of entry files. */
 export function reachedFrom(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
@@ -102,6 +207,7 @@ export function unreachedStrict(cwd: string = process.cwd()): UnreachedAtom[] {
   const reached = reachedByImport([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed)], cwd)
   const shipped = shippedAtoms(cwd)
   const words = schemaCollision(cwd).words
+  const names = nameDoor(cwd)
   const out: UnreachedAtom[] = []
   const walk = (dir: string): void => {
     let entries: import('node:fs').Dirent[]
@@ -117,8 +223,8 @@ export function unreachedStrict(cwd: string = process.cwd()): UnreachedAtom[] {
       if (existsSync(join(d, 'SKILL.md')) && hasCode) {
         const atomPath = relative(src, d)
         const leaf = atomPath.slice(atomPath.lastIndexOf('/') + 1)
-        if (!reached.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf)) {
-          out.push({ atomPath, reason: 'nothing imports it — the deployment face is its own door, and that door is closed here' })
+        if (!reached.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf) && !namedBy(atomPath, names)) {
+          out.push({ atomPath, reason: 'nothing imports or names it — the deployment face is its own door, and that door is closed here' })
         }
       }
       walk(d)
@@ -266,6 +372,7 @@ export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
   const tooling = reachedFrom([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed)], cwd)
   const shipped = shippedAtoms(cwd)
   const words = schemaCollision(cwd).words
+  const names = nameDoor(cwd)
   const out: UnreachedAtom[] = []
   const walk = (dir: string): void => {
     let entries: import('node:fs').Dirent[]
@@ -281,8 +388,8 @@ export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
       if (existsSync(join(p, 'SKILL.md')) && hasCode) {
         const atomPath = relative(src, p)
         const leaf = atomPath.slice(atomPath.lastIndexOf('/') + 1)
-        if (!deployed(p) && !tooling.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf)) {
-          out.push({ atomPath, reason: 'no deployment face · not reached from the gate or CLI · not shipped · not a vocabulary word' })
+        if (!deployed(p) && !tooling.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf) && !namedBy(atomPath, names)) {
+          out.push({ atomPath, reason: 'no deployment face · not reached from the gate or CLI · not shipped · not a vocabulary word · not named by a path string' })
         }
       }
       walk(p)
