@@ -41,6 +41,7 @@ import { unauthenticatedBypasses } from '@/rules/bypass'
 import { unwiredPackages } from '@/rules/canonical'
 import { plasmaTouches } from '@/rules/confine'
 import { echoes } from '@/rules/echo'
+import { sanitizeViolations } from '@/rules/sanitize'
 import { danglingSpecifiers } from '@/rules/hyphen'
 import { invisibleMatter } from '@/rules/invisible'
 import { hollowProofs } from '@/rules/refutable'
@@ -484,6 +485,11 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     guardian({ axis: 'refutable', violations: hollowProofs(cwd).length, baseline: 0 }),
     guardian({ axis: 'dangling-specifier', violations: danglingSpecifiers(cwd).length, baseline: 0 }),
     guardian({ axis: 'echo', violations: echoes(cwd).length, baseline: 152 }),
+    // sanitize — the five sanitisation shapes an external scanner found 25 of and no law here
+    // could see ([[rules]]/sanitize). Measured 31 on main before that fix and 19 after it; the
+    // residue is mostly JSON.stringify emitted into generated catalogues, carried as a ratchet
+    // because a lexical law is right about shape and silent about reachability.
+    guardian({ axis: 'sanitize', violations: sanitizeViolations(cwd).length, baseline: 19 }),
     guardian({ axis: 'ask', violations: bareAsks(cwd).bare.length, baseline: 786 }),
     // unfolded — an export with no caller or exactly one ([[rules]]/unfolded). The baseline moved
     // 814 → 1207 because the INSTRUMENT was corrected, not because the tree got worse: the
