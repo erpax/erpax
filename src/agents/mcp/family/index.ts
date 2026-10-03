@@ -61,7 +61,8 @@ const isNameProp = (p: ts.ObjectLiteralElementLike): p is ts.PropertyAssignment 
 /** Every `{ name: 'erpax.<a>.<b>', … }` literal in the files under `src/agents/mcp`, with its declared role and the shape of its handler. */
 export function shapeRoles(cwd: string = process.cwd()): ShapeRole[] {
   const out: ShapeRole[] = []
-  const files = corpusFiles(cwd).filter((f) => f.includes('/src/agents/mcp/') && !f.endsWith('/test.ts') && !/\/test\.tsx?$/.test(f))
+  // a test file's object literals are fixtures, not tools — both spellings a test takes here
+  const files = corpusFiles(cwd).filter((f) => f.includes('/src/agents/mcp/') && !/(?:\/|\.)test\.tsx?$/.test(f))
   for (const file of files) {
     const sf = astOf(file)
     const visit = (n: ts.Node): void => {
@@ -100,13 +101,25 @@ export function shapeRoles(cwd: string = process.cwd()): ShapeRole[] {
 
 // ─── the ACT leg — the undeclared tools declared by manifest, never by hand ──────────────────────
 
-/** One scalpel op per undeclared tool: the `name:` line is the unique anchor, the role line follows it. */
-export function declareOps(rows: readonly ShapeRole[], cwd: string = process.cwd()): ScalpelOp[] {
+/** A line that is the `name:` property and nothing else — the only line a role line can follow. */
+const NAME_LINE = /^\s*name:\s*'[^']+',?\s*$/
+
+/**
+ * One scalpel op per undeclared tool: the `name:` line is the unique anchor, the role line follows
+ * it. A tool written on ONE line has no such anchor — writing after the line would land after the
+ * closing brace, which is how the first run broke a test fixture — so it is refused and named.
+ */
+export function declareOps(rows: readonly ShapeRole[], cwd: string = process.cwd()): { ops: ScalpelOp[]; unanchored: ShapeRole[] } {
   const ops: ScalpelOp[] = []
+  const unanchored: ShapeRole[] = []
   for (const r of rows) {
     if (r.declared !== null) continue
     const lines = astOf(`${cwd}/${r.file}`).getFullText().split('\n')
     const line = lines[r.line - 1] as string
+    if (!NAME_LINE.test(line)) {
+      unanchored.push(r)
+      continue
+    }
     const indent = /^\s*/.exec(line)?.[0] ?? ''
     ops.push({
       file: r.file,
@@ -115,12 +128,14 @@ export function declareOps(rows: readonly ShapeRole[], cwd: string = process.cwd
       reason: `${r.name} declares no leg; its handler ${r.shape === 'act' ? 'writes (a call in WRITE_CALLS)' : 'only reads'}, so the grammar places it in ${r.shape} — the involute leg is never inferred, a dual is a claim`,
     })
   }
-  return ops
+  return { ops, unanchored }
 }
 
 export interface Declaration {
   readonly undeclared: number
   readonly ops: readonly ScalpelOp[]
+  /** Undeclared tools whose `name:` shares its line with the rest of the object — no anchor, so no cut. */
+  readonly unanchored: readonly ShapeRole[]
   readonly plan: ScalpelPlan
   readonly applied: boolean
   readonly lies: readonly ShapeRole[]
@@ -129,9 +144,9 @@ export interface Declaration {
 /** The act: plan (and, only when asked, apply through the scalpel's ring) the declarations the shapes decide. */
 export function declareRoles(cwd: string = process.cwd(), apply = false): Declaration {
   const rows = shapeRoles(cwd)
-  const ops = declareOps(rows, cwd)
+  const { ops, unanchored } = declareOps(rows, cwd)
   const lies = rows.filter((r) => r.lie)
-  if (!apply) return { undeclared: ops.length, ops, plan: planScalpel(ops, cwd), applied: false, lies }
+  if (!apply) return { undeclared: ops.length + unanchored.length, ops, unanchored, plan: planScalpel(ops, cwd), applied: false, lies }
   const result = applyScalpel(ops, {
     cwd,
     apply: true,
@@ -141,7 +156,7 @@ export function declareRoles(cwd: string = process.cwd(), apply = false): Declar
     },
   })
   clearCache()
-  return { undeclared: ops.length, ops, plan: result.plan, applied: result.complete, lies }
+  return { undeclared: ops.length + unanchored.length, ops, unanchored, plan: result.plan, applied: result.complete, lies }
 }
 
 export interface FamilyTrinity {
@@ -240,6 +255,7 @@ export function buildFamilyTools(): ReadonlyArray<ErpaxMcpTool> {
         const d = declareRoles(process.cwd(), args.apply === true)
         return json({
           undeclared: d.undeclared,
+          unanchored: d.unanchored,
           applied: d.applied,
           refused: d.plan.refused,
           ops: d.ops.map((o) => ({ file: o.file, find: o.find.trim(), replace: o.replace.trim().split('\n').pop(), reason: o.reason })),

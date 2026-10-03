@@ -42,9 +42,7 @@ describe('createInProcessClient', () => {
     const out = client.listTools()
     expect(out).toEqual([
       { name: 'erpax.consistency.scan', description: 'desc-1' },
-      role: 'measure',
       { name: 'erpax.events.list',      description: 'desc-2' },
-      role: 'measure',
     ])
     // Crucially: no handler leak.
     for (const d of out) {
@@ -58,7 +56,6 @@ describe('createInProcessClient', () => {
     // Custom multi-part handler — proves we join with '\n'.
     const t2: ErpaxMcpTool = {
       name: 'erpax.events.list',
-      role: 'measure',
       description: 'multi-part',
       parameters: {} as ErpaxMcpTool['parameters'],
       handler: vi.fn(async () => ({
