@@ -18,8 +18,7 @@ import { uuidPlugin } from '@/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
-import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
-import { gatewayTools } from '@/plugins/mcp/seed'
+import { gatewayTools, mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { erpaxMcpTools } from '@/agent/mcp-surface'
 import { versionsPlugin } from '@/plugins/versions'
 import { trelloClientFromEnv } from '@/trello'
@@ -455,7 +454,7 @@ export default buildConfig({
       // The erpax tool families (erpax.<area>.<leg> trinities) ride the gateway through the
       // plugin's own custom-tool door — wire-named, mode-gated. A GETTER, because the plugin
       // reads `mcp.tools` when it runs inside buildConfig, after every module has initialised;
-      // building them in this literal would run inside the import cycle. See @/plugins/mcp/tools.
+      // building them in this literal would run inside the import cycle. See @/plugins/mcp/seed.
       mcp: {
         get tools() {
           return gatewayTools(erpaxMcpTools())

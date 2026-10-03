@@ -72,11 +72,11 @@ export * from './atom-catalogue.generated'
  * [[rules]]/canonical's "an import is not use, the call is", restated for a test.
  */
 export async function toolsLiveUnder(prefix: string): Promise<boolean> {
-  // The arbiter is the array the gateway REGISTERS (plugins/mcp/tools over agent/mcp-surface), read
+  // The arbiter is the array the gateway REGISTERS (plugins/mcp/seed over agent/mcp-surface), read
   // in full mode so the question is about the surface — asking the factory alone was a mirror: it
   // said `erpax.*` was live while /api/mcp served 844 CRUD tools and none of them.
   const { erpaxMcpTools } = await import('@/agent/mcp-surface')
-  const { gatewayTools, wireName } = await import('@/plugins/mcp/tools')
+  const { gatewayTools, wireName } = await import('@/plugins/mcp/seed')
   const wire = wireName(prefix)
   return gatewayTools(erpaxMcpTools(), { ERPAX_MCP_SEED: '0' }).some((t) => t.name.startsWith(wire))
 }
