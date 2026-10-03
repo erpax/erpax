@@ -75,6 +75,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "agents/mcp/tool/kyc",
   "agents/mcp/tool/novelty",
   "agents/mcp/tool/outward",
+  "agents/mcp/tool/quantum",
   "agents/mcp/tool/risk",
   "agents/mcp/tool/staffing",
   "agents/mcp/tool/witness",
@@ -1098,6 +1099,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "quantum/pwa",
   "quantum/query",
   "quantum/reality",
+  "quantum/register",
   "quantum/request",
   "quantum/research",
   "quantum/sanitization",
@@ -1537,7 +1539,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1530 as const
+export const ATOM_LEDGER_PATH_COUNT = 1532 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1818,6 +1820,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp",
     "agents/mcp/tool",
     "agents/mcp/tool/outward"
+  ],
+  "agents/mcp/tool/quantum": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/quantum"
   ],
   "agents/mcp/tool/risk": [
     "agents/mcp",
@@ -5577,6 +5584,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "quantum",
     "quantum/reality"
   ],
+  "quantum/register": [
+    "quantum",
+    "quantum/register"
+  ],
   "quantum/request": [
     "quantum",
     "quantum/request"
@@ -7184,4 +7195,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 878 as const
+export const MERGED_NESTED_PATH_COUNT = 880 as const

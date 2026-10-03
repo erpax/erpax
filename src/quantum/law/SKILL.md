@@ -3,18 +3,18 @@ name: law
 description: "Use when checking that an atom is grounded — law is the suffix, the invariant each SKILL.md must close with; this quantum twin scans the quantum atoms and finds the lawless ones (state without invariant), the way recycle finds orphans."
 atomPath: "quantum/law"
 coordinate: "quantum/law · 5/round · 4fe16954"
-contentUuid: "2ca461f6-4903-5330-8afd-8895f81d90ae"
-diamondUuid: "3e19f088-2a8f-8ba8-9f86-f240e4072705"
+contentUuid: "d8b48b75-b4c9-58c8-a28b-cf5c00190bc8"
+diamondUuid: "3b1e560b-ccea-8da4-bfda-14f93a5bb86a"
 uuid: "4fe16954-fcc7-8970-a341-d9364dd7b023"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 9623
+  bondDegree: 9629
 standards:
   - "the corpus convention — body states identity, suffix states invariant ([[law]])"
 bindings: []
 signatures:
-  computationUuid: "19eb707e-0b1e-86e6-adb4-2cc9fb6ebe2d"
+  computationUuid: "4c8059de-d360-8aa6-a00e-45985a1db6a3"
   stages:
     - stage: path
       stageUuid: "f5d81f3b-c7b5-85d0-ac02-9af296c99f21"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "24bcb657-f0ca-8371-86c9-7f0ede0b4198"
     - stage: horo
-      stageUuid: "1498a918-75ba-8428-985f-4ad7bbb451e5"
+      stageUuid: "3685fcdb-cd6f-861b-a26a-460d23567b0f"
     - stage: seal
       stageUuid: "f76fe412-25c5-8568-be5c-92c2024d0f8f"
     - stage: uuid
-      stageUuid: "50b13273-b66e-8601-ad68-330c614e90c8"
+      stageUuid: "cf0c1a85-dce4-880c-b8cd-5f2c3781d576"
 quantum:
   superposition:
     - "1"
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "19eb707e-0b1e-86e6-adb4-2cc9fb6ebe2d"
-    contentUuid: "2ca461f6-4903-5330-8afd-8895f81d90ae"
+    computationUuid: "4c8059de-d360-8aa6-a00e-45985a1db6a3"
+    contentUuid: "d8b48b75-b4c9-58c8-a28b-cf5c00190bc8"
 version: 2
 ---
 # quantum/law — law is the suffix
@@ -77,4 +77,4 @@ Matter-twin: `src/quantum/law/index.ts` (`quantumAtoms` · `carriesLaw` · `lawl
 @audit the law-suffix is read from each SKILL.md ending, never asserted
 @standard the corpus convention — body states identity, suffix states invariant ([[law]])
 
-<sub>content-uuid `2ca461f6-4903-5330-8afd-8895f81d90ae` · account `quantum/law` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `d8b48b75-b4c9-58c8-a28b-cf5c00190bc8` · account `quantum/law` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -4227,6 +4227,74 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "quantum",
+    "path": "agents/mcp/tool/quantum",
+    "translations": [
+      {
+        "key": "name",
+        "source": "quantum",
+        "uuid": "9e596af9-a908-810f-8e91-c8965bbac921",
+        "words": [
+          "quantum"
+        ],
+        "values": {
+          "en": "quantum"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when an agent needs the exact-amplitude register over MCP — erpax.quantum.run · erpax.quantum.bell · erpax.quantum.shots expose quantum/register (integer amplitudes, halvings, determinant entanglement witness, enumerated shots) as pure tools; bigints cross the wire as decimal strings.",
+        "uuid": "6e963fb0-e348-85cb-ad19-e2821044d32a",
+        "words": [
+          "use",
+          "when",
+          "an",
+          "agent",
+          "needs",
+          "the",
+          "exact",
+          "amplitude",
+          "register",
+          "over",
+          "mcp",
+          "erpax",
+          "quantum",
+          "run",
+          "erpax",
+          "quantum",
+          "bell",
+          "erpax",
+          "quantum",
+          "shots",
+          "expose",
+          "quantum",
+          "register",
+          "integer",
+          "amplitudes",
+          "halvings",
+          "determinant",
+          "entanglement",
+          "witness",
+          "enumerated",
+          "shots",
+          "as",
+          "pure",
+          "tools",
+          "bigints",
+          "cross",
+          "the",
+          "wire",
+          "as",
+          "decimal",
+          "strings"
+        ],
+        "values": {
+          "en": "Use when an agent needs the exact-amplitude register over MCP — erpax.quantum.run · erpax.quantum.bell · erpax.quantum.shots expose quantum/register (integer amplitudes, halvings, determinant entanglement witness, enumerated shots) as pure tools; bigints cross the wire as decimal strings."
+        }
+      }
+    ]
+  },
+  {
     "atom": "risk",
     "path": "agents/mcp/tool/risk",
     "translations": [
@@ -69443,6 +69511,89 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when relating reality to the quantum substrate — the model collapsing into the one true eigenstate (the live matrix root); the Merkle fold verifying IS the model becoming real, every path folds to the same root, so reality is the shared eigenstate all agents converge to."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "register",
+    "path": "quantum/register",
+    "translations": [
+      {
+        "key": "name",
+        "source": "register",
+        "uuid": "1262a4de-24d0-8b3c-a14c-dd6679ef3e9b",
+        "words": [
+          "register"
+        ],
+        "values": {
+          "en": "register"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when a quantum state must be DECIDED rather than approximated — an exact-amplitude register (integer amplitudes, halvings instead of division) with H · X · Z · CNOT · SWAP, the Bell and GHZ states, a determinant entanglement witness, enumerated shots, and the one Float Born normaliser the three Float copies fold onto; kernel-checked twin in Register.lean.",
+        "uuid": "b92c5c32-9127-83cb-b46a-b70cadce766d",
+        "words": [
+          "use",
+          "when",
+          "a",
+          "quantum",
+          "state",
+          "must",
+          "be",
+          "decided",
+          "rather",
+          "than",
+          "approximated",
+          "an",
+          "exact",
+          "amplitude",
+          "register",
+          "integer",
+          "amplitudes",
+          "halvings",
+          "instead",
+          "of",
+          "division",
+          "with",
+          "h",
+          "x",
+          "z",
+          "cnot",
+          "swap",
+          "the",
+          "bell",
+          "and",
+          "ghz",
+          "states",
+          "a",
+          "determinant",
+          "entanglement",
+          "witness",
+          "enumerated",
+          "shots",
+          "and",
+          "the",
+          "one",
+          "float",
+          "born",
+          "normaliser",
+          "the",
+          "three",
+          "float",
+          "copies",
+          "fold",
+          "onto",
+          "kernel",
+          "checked",
+          "twin",
+          "in",
+          "register",
+          "lean"
+        ],
+        "values": {
+          "en": "Use when a quantum state must be DECIDED rather than approximated — an exact-amplitude register (integer amplitudes, halvings instead of division) with H · X · Z · CNOT · SWAP, the Bell and GHZ states, a determinant entanglement witness, enumerated shots, and the one Float Born normaliser the three Float copies fold onto; kernel-checked twin in Register.lean."
         }
       }
     ]
@@ -212390,4 +212541,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3632
+export const TRANSLATIONS_COUNT = 3634

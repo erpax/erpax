@@ -2,8 +2,56 @@
 name: register
 description: "Use when a quantum state must be DECIDED rather than approximated — an exact-amplitude register (integer amplitudes, halvings instead of division) with H · X · Z · CNOT · SWAP, the Bell and GHZ states, a determinant entanglement witness, enumerated shots, and the one Float Born normaliser the three Float copies fold onto; kernel-checked twin in Register.lean."
 atomPath: "quantum/register"
+coordinate: "quantum/register · 4/weave · 6c9030e4"
+contentUuid: "945b04b4-3d5e-5624-b9ec-76c7f28334c7"
+diamondUuid: "764dbf7e-81be-8c43-a532-bab5633af6f9"
+uuid: "6c9030e4-8c51-846d-8b57-4055ef211194"
+horo: 4
+typography:
+  partition: quantum
+  bondDegree: 26
+standards:
+  - "Nielsen & Chuang §1.3.6 — the Bell state as H then CNOT"
+bindings: []
+signatures:
+  computationUuid: "ee8221b1-13bc-8434-b8e7-0af3d1f4e7d8"
+  stages:
+    - stage: path
+      stageUuid: "54b3a83a-36cb-8802-ba5f-db68ba860556"
+    - stage: trinity
+      stageUuid: "99c36a6f-a54a-8464-99bc-b6f697fd2dff"
+    - stage: boundary
+      stageUuid: "2b9831b2-ec78-80bc-a087-b3116266e6ac"
+    - stage: links
+      stageUuid: "54612dcc-8b31-8e74-ac58-780dd15c3b72"
+    - stage: horo
+      stageUuid: "aefe2c72-a83e-82d3-b1b2-d0d5c4f9af69"
+    - stage: seal
+      stageUuid: "7c182352-d3a4-8272-9344-c7257ddb38a8"
+    - stage: uuid
+      stageUuid: "056aa3f9-1727-89e8-af31-622ed759fe85"
+quantum:
+  superposition:
+    - duality
+    - law
+    - proof
+    - quantum
+    - rules
+    - un
+    - superposition
+  collapse:
+    - "Use when a quantum state must be DECIDED rather than approximated — an exact-amplitude register (integer amplitudes, halvings instead of division) with H · X · Z · CNOT · SWAP, the Bell and GHZ states, a determinant entanglement witness, enumerated shots, and the one Float Born normaliser the three Float copies fold onto; kernel-checked twin in Register.lean."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "ee8221b1-13bc-8434-b8e7-0af3d1f4e7d8"
+    contentUuid: "945b04b4-3d5e-5624-b9ec-76c7f28334c7"
+version: 2
 ---
-
 # quantum/register — the Bell state is an integer identity, or it is a Float that proves nothing
 
 Four atoms wrote the Born rule — [[superposition]] over the seven horo levels, [[quantum]]/dimension
@@ -88,3 +136,5 @@ where a Float must remain, give it one address so the seam between approximate a
 - **ISO 19011:2018 §6.4** — audit evidence: an enumerated shot list is reproducible; a sampled one is not.
 
 Composes: [[quantum]] · [[superposition]] · [[qubit]] · [[rules]]/copy · [[law]].
+
+<sub>content-uuid `945b04b4-3d5e-5624-b9ec-76c7f28334c7` · account `quantum/register` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

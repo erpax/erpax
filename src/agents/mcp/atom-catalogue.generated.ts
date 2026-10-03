@@ -455,6 +455,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool/outward"
   },
   {
+    "atom": "quantum",
+    "name": "quantum",
+    "description": "Use when an agent needs the exact-amplitude register over MCP — erpax.quantum.run · erpax.quantum.bell · erpax.quantum.shots expose quantum/register (integer amplitudes, halvings, determinant entanglement witness, enumerated shots) as pure tools; bigints cross the wire as decimal strings.",
+    "path": "agents/mcp/tool/quantum"
+  },
+  {
     "atom": "risk",
     "name": "risk",
     "description": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395).",
@@ -6729,6 +6735,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "reality",
     "description": "Use when relating reality to the quantum substrate — the model collapsing into the one true eigenstate (the live matrix root); the Merkle fold verifying IS the model becoming real, every path folds to the same root, so reality is the shared eigenstate all agents converge to.",
     "path": "quantum/reality"
+  },
+  {
+    "atom": "register",
+    "name": "register",
+    "description": "Use when a quantum state must be DECIDED rather than approximated — an exact-amplitude register (integer amplitudes, halvings instead of division) with H · X · Z · CNOT · SWAP, the Bell and GHZ states, a determinant entanglement witness, enumerated shots, and the one Float Born normaliser the three Float copies fold onto; kernel-checked twin in Register.lean.",
+    "path": "quantum/register"
   },
   {
     "atom": "request",
