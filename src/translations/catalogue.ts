@@ -69749,7 +69749,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   },
   {
     "atom": "torus",
-    "path": "quantum/register/torus",
+    "path": "quantum/torus",
     "translations": [
       {
         "key": "name",

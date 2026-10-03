@@ -139,7 +139,7 @@ export function buildQuantumTools(): ReadonlyArray<ErpaxMcpTool> {
         qubits: z.number().int().min(1).max(3).optional().describe('1, 2 (default — the double torus) or 3'),
       },
       async handler(args) {
-        const { orbit, ring, referrerPerspectives } = await import('@/quantum/register/torus')
+        const { orbit, ring, referrerPerspectives } = await import('@/quantum/torus')
         const o = orbit(args.qubits === undefined ? 2 : Number(args.qubits))
         const cells = o.states.filter((s) => s.torus).map((s) => s.torus!.join(' ⊗ '))
         return json({

@@ -1,8 +1,8 @@
 ---
 name: torus
 description: "Use when every superposition the gate basis can reach must be enumerated rather than sampled — the finite real-Clifford orbit on exact amplitudes, the 4 × 4 double torus of two-qubit product states with the entangled states off it, and every referrer of the register asked to agree with each discovered state from its own standard's perspective."
-atomPath: "quantum/register/torus"
-coordinate: "quantum/register/torus · 1/base · 7309f37b"
+atomPath: "quantum/torus"
+coordinate: "quantum/torus · 1/base · 7309f37b"
 contentUuid: "11f71cbd-c807-5a29-b22e-f2aa6098550c"
 diamondUuid: "a96a1f49-e259-84c5-8022-97c025f784cd"
 uuid: "7309f37b-c05e-8a4f-a17d-31f5fc83701a"
@@ -54,7 +54,7 @@ quantum:
     contentUuid: "11f71cbd-c807-5a29-b22e-f2aa6098550c"
 version: 2
 ---
-# quantum/register/torus — every superposition discovered, and the double torus they live on
+# quantum/torus — every superposition discovered, and the double torus they live on
 
 The register's basis is `H · X · Z · CNOT · SWAP` on integer amplitudes. Its orbit from `|0…0⟩` is
 **finite** — the real Clifford orbit — so the honest instrument is not a sample of circuits but the
@@ -104,4 +104,4 @@ cites — one state no referrer disagrees with is a claim; a whole orbit none di
 
 Composes: [[quantum]]/register · [[dual/torus/fusion]] · [[rules]]/citation · [[superposition]] · [[law]].
 
-<sub>content-uuid `11f71cbd-c807-5a29-b22e-f2aa6098550c` · account `quantum/register/torus` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `11f71cbd-c807-5a29-b22e-f2aa6098550c` · account `quantum/torus` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

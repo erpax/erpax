@@ -10,7 +10,7 @@ const asRegister = (s: { amplitudes: readonly bigint[]; halvings: number }, qubi
   halvings: s.halvings,
 })
 
-describe('quantum/register/torus — every superposition the basis can reach', () => {
+describe('quantum/torus — every superposition the basis can reach', () => {
   it('one qubit reaches exactly the four ring states, and nothing else', () => {
     const o = orbit(1)
     expect(o.states.map((s) => s.key).sort()).toEqual([...ring()].sort())
@@ -62,7 +62,7 @@ describe('quantum/register/torus — every superposition the basis can reach', (
   })
 })
 
-describe('quantum/register/torus — cross-developed from every referrer perspective', () => {
+describe('quantum/torus — cross-developed from every referrer perspective', () => {
   const o = orbit(2)
 
   it('superposition / dimension / trading — the one Float normaliser agrees with the exact weights on EVERY state', () => {

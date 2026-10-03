@@ -1,5 +1,5 @@
 /**
- * quantum/register/torus — every superposition the gate basis can reach, and the double torus the
+ * quantum/torus — every superposition the gate basis can reach, and the double torus the
  * two-qubit ones live on. See SKILL.md.
  *
  * The orbit of |0…0⟩ under {H, X, Z, CNOT, SWAP} on exact integer amplitudes is FINITE — the real
@@ -8,7 +8,7 @@
  * entangled states off it. Every state is discovered, named by its canonical integer vector, and
  * every referrer of the register is asked to agree with it.
  *
- * @see ../index.ts · ../../../dual/torus/fusion (the double torus the corpus already names)
+ * @see ../register/index.ts · ../../dual/torus/fusion (the double torus the corpus already names)
  * @standard Nielsen & Chuang §10.5 — stabilizer states; the real Clifford group is finite
  */
 import ts from 'typescript'
