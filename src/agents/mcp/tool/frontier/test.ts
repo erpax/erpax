@@ -132,7 +132,7 @@ describe('erpax.self tools — the factory', () => {
     expect(tools.map((t) => `${t.name}:${t.role}`)).toEqual(['erpax.frontier.next:measure', 'erpax.frontier.involute:involute', 'erpax.frontier.develop:act'])
     expect(Object.keys(tools[0]!.parameters).sort()).toEqual(['limit', 'sources'])
     expect(Object.keys(tools[1]!.parameters).sort()).toEqual(['limit', 'sources', 'tag'])
-    expect(Object.keys(tools[2]!.parameters).sort()).toEqual(['limit', 'sources', 'target', 'word'])
+    expect(Object.keys(tools[2]!.parameters).sort()).toEqual(['limit', 'rotate', 'sources', 'target', 'word'])
   })
 
   it('names the cost in its description, because every source is a full scan', () => {
