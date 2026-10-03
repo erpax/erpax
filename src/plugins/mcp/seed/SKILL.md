@@ -2,34 +2,33 @@
 name: seed
 description: "Use when shaping what the MCP gateway serves — the Worker-safe collection seed (gateway auth atoms, ERPAX_MCP_SEED/EXTRA/INCLUDE_CMS) and the erpax.<area>.<leg> families reached THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory."
 atomPath: "plugins/mcp/seed"
-coordinate: "plugins/mcp/tools · 7/descent · 1a1e34bb"
-contentUuid: "6efab95a-64fa-57df-9d9a-24046c86aa80"
-diamondUuid: "c9e02abb-6e6f-84a2-bc8e-f829c95fe7ac"
-uuid: "1a1e34bb-8138-8308-bc9a-56fb8a521648"
-horo: 7
+coordinate: "plugins/mcp/seed · 8/crest · 3b44653f"
+contentUuid: "3ad4ff56-bcf1-55a2-9047-8d261e99993d"
+diamondUuid: "e4e0fbe8-5ee8-8605-a392-ca4d980ccc43"
+uuid: "3b44653f-4c73-82ae-b63e-a7d0f1702f04"
+horo: 8
 typography:
   partition: plugins
-  bondDegree: 15
-standards:
-  - "MCP 0.6 — tools/list and tools/call are the surface a client sees"
+  bondDegree: 121
+standards: []
 bindings: []
 signatures:
-  computationUuid: "3a22e723-88c3-8ad4-8311-ce14777b2f49"
+  computationUuid: "5f7efd74-306f-80ad-ac43-00e3b385a584"
   stages:
     - stage: path
-      stageUuid: "d0acad02-8ec6-8a02-a12d-1acb1aa2805e"
+      stageUuid: "49528684-6204-8206-8231-b62213712c51"
     - stage: trinity
-      stageUuid: "bcd8af3b-7b42-88c3-a781-738de7cdddea"
+      stageUuid: "85f0b482-58ac-8cec-84a9-fcbf950427f3"
     - stage: boundary
-      stageUuid: "1d0f1a9e-e3e7-80fe-8985-9b2799ea8c50"
+      stageUuid: "93f2790b-5c7a-8a92-8df2-a5ac9d498213"
     - stage: links
-      stageUuid: "745c2538-16bf-8cce-8adb-dd300e7de5fa"
+      stageUuid: "9fbbde32-2118-808d-81c8-ce8e703615d1"
     - stage: horo
-      stageUuid: "436f053a-470d-8831-80e8-a98568d6baaa"
+      stageUuid: "5582448e-667f-8b96-9bab-c1734cc96f01"
     - stage: seal
-      stageUuid: "eb79080b-6872-85ba-a981-335f411d4e8f"
+      stageUuid: "351aad37-9138-8acc-bd6c-fe92de5cfef1"
     - stage: uuid
-      stageUuid: "905955e6-6ca4-8cdb-8510-d120fc2400e0"
+      stageUuid: "c1bb9a92-335d-85b8-b48a-cacac4b4f015"
 version: 2
 ---
 # plugins/mcp/seed — the gateway surface, derived not listed: the collection seed and the families handed through the plugin door

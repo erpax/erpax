@@ -3,8 +3,8 @@ name: mcp
 description: "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside."
 atomPath: "agents/mcp"
 coordinate: "agents/mcp · 2/share · 9076e57b"
-contentUuid: "cf1d25f8-2453-5f1f-94c0-8008d9d22a29"
-diamondUuid: "26e641e1-7e7f-8153-8939-6eb686c2d1df"
+contentUuid: "9136dba0-4b11-53af-9d80-4f6cf2355b8a"
+diamondUuid: "1c27b2d9-267a-87b1-8b13-fa6a55459d88"
 uuid: "9076e57b-f21c-8b80-8dfd-7ee7231a7155"
 horo: 2
 typography:
@@ -35,14 +35,14 @@ standards:
   - schema.org
 bindings: []
 signatures:
-  computationUuid: "68ed657a-48e7-8465-914f-7feea7405f8b"
+  computationUuid: "7d9a22fe-9b8f-897a-82d7-6215902eee4a"
   stages:
     - stage: path
       stageUuid: "982fead9-ea1f-8a81-909b-6fdbc9d24c96"
     - stage: trinity
       stageUuid: "ac06f3c8-14a2-8ab7-8e09-acf7fc36f6ef"
     - stage: boundary
-      stageUuid: "a30331f8-c5d2-8ba9-9cb7-fcd8a33499cf"
+      stageUuid: "ba67d1c8-025d-86e8-8a3c-909ce50fa644"
     - stage: links
       stageUuid: "98859782-f295-824b-b1df-72b249c85837"
     - stage: horo
@@ -50,7 +50,7 @@ signatures:
     - stage: seal
       stageUuid: "d7ac6b07-6c80-8db5-8c6e-8722dc2b1c91"
     - stage: uuid
-      stageUuid: "22d28528-1c12-8b25-b509-dd703c388b9c"
+      stageUuid: "06744ffe-cc3d-8075-965c-be59d7893309"
 version: 2
 ---
 # mcp — erpax's agent gateway is the official Payload MCP, made trust-native

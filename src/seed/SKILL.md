@@ -3,13 +3,13 @@ name: seed
 description: "Use when seeding a tenant's opening chart-of-accounts + compliance posture from a (country × industry) template — INDUSTRY_TEMPLATES, the BG-NSS statutory chart, resolveTenantCompliance/getCuratedComplianceCountries. Derives every country fact from country-context; nothing is re-typed."
 atomPath: seed
 coordinate: "seed · 7/descent · d12028aa"
-contentUuid: "17d0536b-6c37-5038-95bc-c682808cb3ca"
+contentUuid: "17759c2f-eaef-59f1-a935-45257c60f36c"
 diamondUuid: "28e4a676-305f-8b61-b6dc-907417b2bf5a"
 uuid: "d12028aa-33ce-8072-831f-38f6382ffd8e"
 horo: 7
 typography:
   partition: seed
-  bondDegree: 116
+  bondDegree: 121
 standards:
   - "9110 http-semantics seed-endpoint"
   - "BCP-47 language-tag locale-bundled-fixtures"
