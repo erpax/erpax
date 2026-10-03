@@ -579,9 +579,14 @@ async function developEvidence(cwd: string, theorems: readonly TaggedLead[], car
     const cycles = importCycles(cwd)
     const tangles = new Map<string, { members: string[]; edges: TangleEdge[] }>()
     for (const t of cycleTargets) {
-      const c = cycles.find((x) => x.some((f) => f.includes(`/src/${t}/`)))
+      // a member may be absolute or repo-relative; an atom target owns its folder and its bare file
+      const under = (f: string): boolean => {
+        const rel = f.startsWith('/') ? relative(cwd, f) : f
+        return rel.startsWith(`src/${t}/`) || rel === `src/${t}.ts` || rel === `src/${t}.tsx`
+      }
+      const c = cycles.find((x) => x.some(under))
       if (!c) continue
-      const members = c.map((f) => relative(cwd, f))
+      const members = c.map((f) => (f.startsWith('/') ? relative(cwd, f) : f))
       const edges: TangleEdge[] = []
       if (c.length === 2) {
         for (const [importer, exporter] of [[c[0] as string, c[1] as string], [c[1] as string, c[0] as string]] as const) {
