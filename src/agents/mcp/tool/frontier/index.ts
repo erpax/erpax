@@ -51,6 +51,12 @@ export interface DualEvidence {
   readonly gaps?: readonly string[]
   /** Undrawn-cross label → lift. */
   readonly lifts?: ReadonlyMap<string, number>
+  /**
+   * Whether an atom-scoped target is an address the tree has. A population that names a path no
+   * folder answers to (`../fiscal/period/resolver`, from a law reporting src-relative files) has lied
+   * about WHERE, and no dual can cross-examine a place that does not exist.
+   */
+  readonly addressable?: (target: string) => boolean
 }
 
 const explainedBy = (gap: string, unreached: readonly string[]): boolean =>
@@ -90,10 +96,13 @@ export function frontierDuals(ev: DualEvidence): Dual[] {
   }
   if (ev.populations) {
     const u = ev.unreached
+    const addressable = ev.addressable
     duals.push({
       source: 'law:',
       instrument: 'population',
       ask: (l) => {
+        // A member at an address the tree does not have is the instrument lying about WHERE.
+        if (addressable && !addressable(l.target)) return 'refutes'
         if (l.source !== 'law:accounting-wave') return 'agrees'
         return u ? (explainedBy(l.target, u) ? 'agrees' : 'refutes') : 'silent'
       },
@@ -205,6 +214,8 @@ async function liveSources(want: ReadonlySet<string>): Promise<{ src: InternalSo
     ev.gaps = gaps
     src.populations = () => rows
     ev.populations = new Map(rows.filter((r) => r.law !== 'accounting-wave').map((r) => [r.law, r.members.length]))
+    const { existsSync } = await import('node:fs')
+    ev.addressable = (t) => !t.startsWith('.') && existsSync(join(cwd, 'src', t))
   }
   if (want.has('boundary')) {
     const { harvestLeads } = await import('@/outward/leads')

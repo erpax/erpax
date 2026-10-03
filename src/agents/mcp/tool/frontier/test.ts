@@ -60,6 +60,12 @@ describe('frontierDuals — the cross formulas, hermetic', () => {
     expect(tags).toEqual(['theorem', 'lie', 'theorem', 'lie', 'theorem'])
   })
 
+  it('a population member at an address the tree does not have is a lie about WHERE', () => {
+    const duals = frontierDuals({ populations: new Map([['concentration', 2]]), addressable: (t) => t === 'fiscal/period/resolver' })
+    const tags = involuteLeads([lead('law:concentration', 'fiscal/period/resolver'), lead('law:concentration', '../fiscal/period/resolver')], duals).map((t) => t.tag)
+    expect(tags).toEqual(['theorem', 'lie'])
+  })
+
   it('no evidence at all: one dual, silent on everything — every lead a manipulation, none untagged', () => {
     const tagged = involuteLeads([lead('guardian', 'x', 'axis'), lead('unreached', 'y'), lead('boundary', 'z', 'boundary')], frontierDuals({}))
     expect(tagged.map((t) => t.tag)).toEqual(['manipulation', 'manipulation', 'manipulation'])

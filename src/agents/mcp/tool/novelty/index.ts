@@ -48,32 +48,50 @@ const MEASURED_LAWS = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded'] a
 /** The laws that expose a file-addressed population — the only ones a cross can intersect. */
 export const measuredLaws = (): readonly string[] => MEASURED_LAWS
 
+/**
+ * ONE address form for every population: repo-relative, `src/…`.
+ *
+ * The laws do not agree on their own. `copy`, `mirror` and `cycle` report a file under the `src/`
+ * prefix; `concentration` reports it from the atom path down, without the prefix. Intersected raw, a
+ * concentration member could never equal anyone else's, so every `concentration ×` cross held at zero
+ * BY CONSTRUCTION and read as a theorem, and the frontier addressed its debts as `../x` — a lead no
+ * dual could cross-examine. A cross is only a cross when both sides name the same address.
+ */
+export function populationAddress(file: string, cwd: string): string {
+  if (file.startsWith(`${cwd}/`)) return file.slice(cwd.length + 1)
+  if (file.startsWith('src/') || file.startsWith('/')) return file
+  return `src/${file}`
+}
+
 export async function lawPopulations(
   laws: readonly string[] = MEASURED_LAWS,
 ): Promise<Map<string, ReadonlySet<string>>> {
   const cwd = process.cwd()
   const out = new Map<string, ReadonlySet<string>>()
   const want = new Set(laws)
+  const set = (law: string, files: readonly string[]): void => {
+    out.set(law, new Set(files.map((f) => populationAddress(f, cwd))))
+  }
   if (want.has('copy')) {
     const m = await import('@/rules/copy')
-    out.set('copy', new Set(m.duplicateBodies(cwd).flatMap((g) => g.sites.map((s) => s.file))))
+    set('copy', m.duplicateBodies(cwd).flatMap((g) => g.sites.map((s) => s.file)))
   }
   if (want.has('cycle')) {
     const m = await import('@/rules/cycle')
-    out.set('cycle', new Set(m.importCycles(cwd).flat().map((f) => f.replace(`${cwd}/`, ''))))
+    set('cycle', m.importCycles(cwd).flat())
   }
   if (want.has('concentration')) {
     const m = await import('@/rules/concentration')
-    out.set('concentration', new Set(m.concentrationViolations(cwd).map((v) => v.file)))
+    set('concentration', m.concentrationViolations(cwd).map((v) => v.file))
   }
   if (want.has('mirror')) {
     const m = await import('@/rules/mirror')
-    out.set('mirror', new Set(m.mirroredAssertions(cwd).map((x) => x.file)))
+    set('mirror', m.mirroredAssertions(cwd).map((x) => x.file))
   }
   if (want.has('unfolded')) {
     const m = await import('@/rules/unfolded')
     const r = m.unfoldedExports(cwd)
-    out.set('unfolded', new Set([...r.dead, ...r.single].map((e) => e.file)))
+    set('unfolded', [...r.dead, ...r.single].map((e) => e.file))
   }
   return out
 }
