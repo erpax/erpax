@@ -153,6 +153,16 @@ other axes counted it: the instrument measuring itself.
 gated, shipped, a word, or a name — and what is left is code nothing runs. Ask the question from the
 referrer's seat before ranking it; name it, ratchet it, and decide per atom; never sweep it.**
 
+## Sealed — the walk is paid once per tree
+
+Measured 2026-10-03 in a fresh process with the law populations already sealed: `unreachedAtoms` cost
+**42.7–54.8 s** of import walking, and every coil and every develop paid it — the develop twice, once
+for the rosetta and once for the frontier's sources. The census is a pure function of the tree, so it
+is now sealed by the corpus fingerprint ([[cache]]/fingerprint, on disk): the first caller computes,
+every later caller and every later process reads it — **1.2 s** on the hit, and any edit bumps the
+fingerprint and recomputes. `reachedFiles` is sealed in-process only, because a Set does not round-trip
+through JSON and this corpus never seals what it cannot read back.
+
 ## Standards
 
 - **ISO/IEC 25010:2023 §5.6** — maintainability: unreachable code is a cost with no counterpart.

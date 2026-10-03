@@ -49,4 +49,10 @@ matrix — into every accounting bundle.
 never the mountable domain barrel — a host app has no corpus, and the edge it
 drags in is pure bundle entropy.**
 
-Composes: [[accounting]] · [[readme]] · [[wave]] · [[rules]].
+**Sealed.** `waveAccountingGapViolations` folded the whole readme model on every call — measured 22.5–40.2 s
+on an unchanged tree, paid by every coil and every develop. It is a pure function of the tree, so it is
+sealed by the corpus fingerprint ([[cache]]/fingerprint, on disk): 0.17 s on the hit, recomputed on any
+edit. Through the gateway a develop call fell from 226 s to 12 s once both this and the unreached census
+were sealed (2026-10-03).
+
+Composes: [[accounting]] · [[readme]] · [[wave]] · [[rules]] · [[cache]]/fingerprint.
