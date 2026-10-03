@@ -63,20 +63,20 @@ jobs:
     env:
       LIVE_URL: ${{ vars.STAGING_URL || 'https://erpax.ceci.workers.dev' }}
     steps:
+      # The TRUSTED ref — main's tip for workflow_run, the dispatched ref for workflow_dispatch — never
+      # `github.event.workflow_run.head_sha`. A workflow_run job runs with default-branch cache scope,
+      # and checking out the SHA that TRIGGERED it is what CodeQL `actions/cache-poisoning/poisonable-step`
+      # flagged on every step below (nine alerts, one high): untrusted code executing where it can write
+      # the caches main restores. The job loses nothing it had: it verifies the LIVE Worker, which the
+      # header already says may be newer than the CI run that fired this — the two deterministic gates
+      # run on main's tip, which is a commit CI has verified by the time it is main's tip.
       - uses: actions/checkout@v4
-        with:
-          # the exact commit CI verified — not whatever main points at now
-          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
 
       - name: Setup erpax
         uses: ./.github/actions/setup
         with:
           skill-index: stub
           ripgrep: 'false'
-          # This job is workflow_run: it holds write scope while checking out the triggering SHA, so
-          # restoring a cache that run could have written is poisonable input. A cold install is the
-          # price of not trusting it.
-          cache: 'false'
 
       # Both are deterministic and read no secret: they cannot flake on someone else's uptime.
       - name: Contract gate — erpax parses what the external rails send

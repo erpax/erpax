@@ -24,13 +24,14 @@ inputs:
     required: false
     default: 'false'
   cache:
-    # A `workflow_run` job runs with repository write scope while checking out the SHA that
-    # TRIGGERED it, so a pnpm cache the triggering workflow wrote is untrusted input here — CodeQL
-    # `actions/cache-poisoning/poisonable-step` flagged every step of cloudflare.yml for exactly
-    # that, 24 alerts, and both Analyze checks are REQUIRED on main. Trusted triggers (push,
-    # pull_request, schedule, tag) keep the cache; a workflow_run caller passes 'false' and pays a
-    # cold install instead of restoring something an untrusted run could have seeded.
-    description: "Restore the pnpm cache — pass 'false' from a workflow_run job"
+    # A `workflow_run` job runs with default-branch cache scope, so a job that checks out the SHA
+    # that TRIGGERED it must not restore a cache that run could have written — CodeQL
+    # `actions/cache-poisoning/poisonable-step`. Disabling the cache did NOT clear those alerts
+    # (every `run:` step after an untrusted checkout is poisonable, cache or not); cloudflare.yml
+    # now checks out the trusted ref instead and keeps the cache. The input stays for a caller
+    # that genuinely must execute a triggering SHA under write scope: pass 'false' there, and
+    # know that the checkout, not the cache, is what the rule is about.
+    description: "Restore the pnpm cache — pass 'false' only from a job that checks out an untrusted SHA"
     required: false
     default: 'true'
 
