@@ -34,6 +34,15 @@ import { ceiling } from '@/think'
 import { commentSites, lineColumnOf } from '@/syntax'
 import { chatLocal, seal } from '@/quantum/ftl'
 
+/**
+ * A JavaScript string literal for GENERATED CODE. JSON.stringify alone is not one: U+2028 / U+2029
+ * are legal inside a JSON string and line terminators inside a script, and `<` can close a script
+ * element the emitted test is ever inlined into — CodeQL `js/bad-code-sanitization`. All three are
+ * written as escapes, which a JS parser reads back unchanged.
+ */
+const jsString = (s: string): string =>
+  JSON.stringify(s).replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029').replace(/</g, '\\u003c')
+
 /** One bit that did not fold into a trinity of theorems — an unproven claim, located in its field. */
 export interface Leftover {
   /** the file carrying the unsettled claim — a debit with no credit. */
@@ -325,7 +334,7 @@ export function deriveLeftoverProof(
       claims.length > 0
         ? claims
             .slice(0, 8)
-            .map((c) => `expect(src).toContain(${JSON.stringify(c)})`)
+            .map((c) => `expect(src).toContain(${jsString(c)})`)
             .join('\n    ')
         : ''
     // REFUSE rather than emit a tautology. When the only export evidence is the bare `export`
@@ -368,7 +377,7 @@ export function deriveLeftoverProof(
   const contents = `import { describe, it, expect } from 'vitest'
 
 /** Credit for claims in ${bit} — chatHealLeftoverWave; not an empty gaming test. */
-describe(${JSON.stringify(`${bit} — leftover wave proof`)}, () => {${body}
+describe(${jsString(`${bit} — leftover wave proof`)}, () => {${body}
 })
 `
   return {
