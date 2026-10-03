@@ -115,6 +115,7 @@ import {
   // the cross enumerator on the public surface — [[conjecture]]
   buildNoveltyTools,
   buildOutwardTools,
+  buildFamilyTools,
   buildFrontierTools,
   buildWitnessTools,
   buildQuantumTools,
@@ -271,9 +272,18 @@ import {
   type SelfIdentity,
 } from '@/self/research'
 
+/**
+ * The leg a tool is in its family's trinity: `measure` says what is, `involute` asks the dual seat
+ * what refutes it, `act` emits the computed manifest the scalpel applies — never a hand. A family
+ * with all three closes in one turn ([[quantum]]/coil); one missing a leg names its own next tool.
+ */
+export type ToolRole = 'measure' | 'involute' | 'act'
+
 export interface ErpaxMcpTool {
   readonly name: string
   readonly description: string
+  /** DECLARED, never guessed from the name — a tool says which leg of its family it is. */
+  readonly role?: ToolRole
   readonly parameters: z.ZodRawShape
   handler(
     args: Record<string, unknown>,
@@ -1653,6 +1663,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   for (const t of buildNoveltyTools()) tools.push(t)
   for (const t of buildOutwardTools()) tools.push(t)
   for (const t of buildFrontierTools()) tools.push(t)
+  for (const t of buildFamilyTools()) tools.push(t)
   for (const t of buildWitnessTools()) tools.push(t)
   for (const t of buildQuantumTools()) tools.push(t)
   for (const t of buildGateTools()) tools.push(t)

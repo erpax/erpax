@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import type { PayloadRequest } from 'payload'
 import { involuteLeads } from '@/self/involute'
 import type { InternalLead } from '@/self/sufficient'
-import { buildFrontierTools, frontierDuals } from './index'
+import { buildFrontierTools, developManifest, frontierDuals } from './index'
 
 const req = {} as PayloadRequest
 
@@ -12,6 +12,60 @@ const lead = (source: string, target: string, scope: InternalLead['scope'] = 'at
   target,
   intent: `${source} ${target}`,
   evidence: target,
+})
+
+describe('developManifest — the act leg, hermetic', () => {
+  const theorem = (source: string, target: string) => ({ ...lead(source, target), tag: 'theorem' as const, instrument: 'x', formula: '' })
+
+  it('a two-file tangle becomes a leaf extraction: template without a word, planned scalpel ops with one', () => {
+    const edges = [
+      { importer: 'src/gate/index.ts', exporter: 'src/auth/index.ts', names: ['getUserContext'], statement: "import { getUserContext } from '@/auth'", specifier: '@/auth' },
+      { importer: 'src/auth/index.ts', exporter: 'src/gate/index.ts', names: ['a', 'b', 'c'], statement: "import { a, b, c } from '@/gate'", specifier: '@/gate' },
+    ]
+    const tangles = new Map([['subscription/gate', { members: ['src/auth/index.ts', 'src/gate/index.ts'], edges }]])
+    const [tpl] = developManifest([theorem('law:cycle', 'subscription/gate')], { tangles }, '/nowhere')
+    expect(tpl!.kind).toBe('decision')
+    expect(tpl!.steps.join('\n')).toContain("create src/auth/<word>/index.ts with getUserContext") // the smaller side moves
+    expect(tpl!.steps.join('\n')).toContain('pass `word`')
+    const [dev] = developManifest([theorem('law:cycle', 'subscription/gate')], { tangles, word: 'context' }, '/nowhere')
+    expect(dev!.kind).toBe('ops')
+    expect(dev!.ops).toEqual([expect.objectContaining({ file: 'src/gate/index.ts', find: "import { getUserContext } from '@/auth'", replace: "import { getUserContext } from '@/auth/context'" })])
+    expect(dev!.ops[0]!.reason.length).toBeGreaterThan(20)
+    // the scalpel dry-ran it: the file is not under /nowhere, so the plan REFUSES rather than pretending
+    expect(dev!.plan!.refused).toBe(1)
+    expect(dev!.plan!.verdicts[0]!.state).toBe('missing-file')
+  })
+
+  it('a hub, a dead export and a carried atom are decisions carrying their evidence; a wide tangle refuses a leaf', () => {
+    const ev = {
+      hubs: new Map([['fiscal/period/resolver', { lineCount: 714, exportCount: 2, childAtomCount: 0, concentrationScore: 0.74 }]]),
+      exports: new Map([['persist/api/audit/event', [{ name: 'persistApiAuditEvent', file: 'src/persist/api/audit/event/index.ts', sites: 0 }]]]),
+      deadReferrers: new Map([['dashboard/nav', ['src/dashboard/index.tsx']]]),
+      tangles: new Map([['wave/load', { members: ['a', 'b', 'c'], edges: [] }]]),
+    }
+    const out = developManifest(
+      [theorem('law:concentration', 'fiscal/period/resolver'), theorem('law:unfolded', 'persist/api/audit/event'), theorem('unreached', 'dashboard/nav'), theorem('law:cycle', 'wave/load'), theorem('unreached', 'island')],
+      ev,
+      '/nowhere',
+    )
+    expect(out.map((d) => d.kind)).toEqual(['decision', 'decision', 'decision', 'decision', 'decision'])
+    expect(out[0]!.steps[1]).toContain('nest the private statics')
+    expect(out[1]!.steps[0]).toContain('has no caller')
+    expect(out[2]!.steps[0]).toContain('the dead code starts at src/dashboard/index.tsx')
+    expect(out[3]!.steps[0]).toContain('a tangle of 3 files')
+    expect(out[4]!.steps[0]).toContain('wire it')
+  })
+
+  it('a lie and a manipulation are never developed — the fix is the instrument or a dual, and the manifest says so', () => {
+    const out = developManifest(
+      [{ ...lead('unreached', 'x'), tag: 'lie', instrument: 'referrersOf', formula: '' }, { ...lead('guardian', 'y', 'axis'), tag: 'manipulation', instrument: null, formula: '' }],
+      {},
+      '/nowhere',
+    )
+    expect(out.map((d) => d.kind)).toEqual(['none', 'none'])
+    expect(out[0]!.steps[0]).toContain('fix the instrument that told it (referrersOf)')
+    expect(out[1]!.steps[0]).toContain('wire a dual')
+  })
 })
 
 describe('frontierDuals — the cross formulas, hermetic', () => {
@@ -73,11 +127,12 @@ describe('frontierDuals — the cross formulas, hermetic', () => {
 })
 
 describe('erpax.self tools — the factory', () => {
-  it('offers the two tools, with the params a caller needs to bound the cost', () => {
+  it('offers the trinity — measure · involute · act — with the params a caller needs to bound the cost', () => {
     const tools = buildFrontierTools()
-    expect(tools.map((t) => t.name)).toEqual(['erpax.frontier.next', 'erpax.frontier.involute'])
+    expect(tools.map((t) => `${t.name}:${t.role}`)).toEqual(['erpax.frontier.next:measure', 'erpax.frontier.involute:involute', 'erpax.frontier.develop:act'])
     expect(Object.keys(tools[0]!.parameters).sort()).toEqual(['limit', 'sources'])
     expect(Object.keys(tools[1]!.parameters).sort()).toEqual(['limit', 'sources', 'tag'])
+    expect(Object.keys(tools[2]!.parameters).sort()).toEqual(['limit', 'sources', 'target', 'word'])
   })
 
   it('names the cost in its description, because every source is a full scan', () => {

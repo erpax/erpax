@@ -27,6 +27,7 @@ export function buildKycTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.kyc.diligence',
+      role: 'measure',
       description: t.desc(I18N.diligence!),
       parameters: {
         politicallyExposed: z.boolean().optional(),

@@ -133,6 +133,7 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.gate.verdicts',
+      role: 'measure',
       description: t.desc(I18N.verdicts!),
       parameters: {
         axis: z.string().optional().describe('one guardian axis, e.g. stray-ts · diamond-membership · matrix-crack'),
@@ -156,6 +157,7 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.gate.cross',
+      role: 'involute',
       description: t.desc(I18N.cross!),
       parameters: {
         a: z.string(),
@@ -176,6 +178,7 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.gate.crosses',
+      role: 'involute',
       description: t.desc(I18N.crosses!),
       parameters: {
         limit: z.number().int().min(1).max(50).optional(),
@@ -193,6 +196,7 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.gate.coil',
+      role: 'involute',
       description: t.desc(I18N.coil!),
       parameters: {},
       async handler() {

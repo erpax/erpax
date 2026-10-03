@@ -123,6 +123,22 @@ same five scans behind one lazy promise.
 The crossing itself, the namespaces it refuses to compare and the lift that separates agreement from base
 rate are argued where the transform lives: [[self]]/sufficient.
 
+## The family is a trinity: measure · involute · act
+
+`erpax.frontier.next` measures, `erpax.frontier.involute` asks the dual seat, and
+`erpax.frontier.develop` **acts** — the leg that was missing while leads were developed by hand. A
+theorem lead becomes a manifest: for a two-file import tangle, the leaf extraction that dissolved
+`auth ↔ subscription/gate` (the smaller side's names move to a child of the exporter, the exporter
+re-exports, the importer repoints) — a template until the one decision no theorem makes, the leaf's
+`word`, is passed, and then a scalpel op the scalpel has already dry-run (`plan.refused` names every
+refusal). For a hub, a dead export or an atom carried by a dead barrel it is a decision carrying the
+computed evidence. A lie gets no manifest — the instrument is fixed; nor does a manipulation — a dual
+is wired. Nothing is applied here: apply is the scalpel's door, ring-verified, batch by batch.
+
+The roles are declared on the tools and read by the `family` atom beside the [[mcp]] gateway
+(`erpax.family.trinities`), which says which families are trinities and which leg each of the others
+still lacks — the next development of the surface, computed.
+
 ## Every lead tagged by its involution
 
 The three highest-ranked leads this tool emitted on 2026-10-03 were lies. `unreached` named

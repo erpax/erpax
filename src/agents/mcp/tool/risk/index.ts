@@ -29,6 +29,7 @@ export function buildRiskTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.risk.concentration',
+      role: 'measure',
       description: t.desc(I18N.concentration!),
       parameters: {
         exposures: z.array(EXPOSURE),

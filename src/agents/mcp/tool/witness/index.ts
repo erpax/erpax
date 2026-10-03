@@ -49,6 +49,7 @@ export function buildWitnessTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.witness.cross',
+      role: 'involute',
       description: tCross.desc(I18N.cross!),
       parameters: {
         kind: z.enum(KINDS),
@@ -83,6 +84,7 @@ export function buildWitnessTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.witness.discover',
+      role: 'measure',
       description: tDiscover.desc(I18N.discover!),
       parameters: {
         match: z.string().min(2),

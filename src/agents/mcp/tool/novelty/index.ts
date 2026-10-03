@@ -102,6 +102,7 @@ export function buildNoveltyTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.novelty.crosses',
+      role: 'involute',
       description: tCrosses.desc(I18N.crosses!),
       parameters: {
         limit: z.number().int().min(1).max(100).optional(),
@@ -122,6 +123,7 @@ export function buildNoveltyTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.novelty.measure',
+      role: 'measure',
       description: tMeasure.desc(I18N.measure!),
       parameters: {
         laws: z.array(z.enum(MEASURED_LAWS)).min(2).optional(),

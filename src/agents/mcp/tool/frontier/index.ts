@@ -11,7 +11,8 @@
 import { z } from 'zod'
 import { join } from 'node:path'
 import { internalLeads, leadCross, selfSufficientNext, type InternalSources } from '@/self/sufficient'
-import { involuteLeads, tagCounts, type Dual, type LeadTag } from '@/self/involute'
+import { involuteLeads, tagCounts, type Dual, type LeadTag, type TaggedLead } from '@/self/involute'
+import { planScalpel, type ScalpelOp, type ScalpelPlan } from '@/scalpel'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 
@@ -25,6 +26,11 @@ const I18N: Record<string, LocalizedString> = {
     de: 'Der eigene nächste Schritt des Korpus, gemessen statt erfragt: rote Gates, ungezeichnete Kreuze, unerreichte Atome und unbeantwortete Grenzfragen werden zu Intentionen, die die Warteschlange ordnet. Ein von ZWEI Quellen genanntes Ziel gilt als bestätigt. KOSTEN: jede Quelle ist ein vollständiger Scan.',
     fr: "Le prochain coup du corpus, mesuré plutôt que demandé : gates rouges, croisements non tracés, atomes non atteints et questions de frontière sans réponse deviennent des intentions que la file d'attente classe. Une cible nommée par DEUX sources est rapportée comme corroborée. COÛT : chaque source est un scan complet.",
   },
+  develop: {
+    en: 'The ACT leg of the frontier trinity: every theorem lead becomes a MANIFEST — scalpel ops the scalpel has already dry-run where a cut is computable (a two-file import tangle given the leaf `word`), or a decision with its computed evidence where only a human chooses (a hub to nest, a dead export to wire or drop, an atom carried by a dead barrel). Lies and manipulations get no manifest: a lie is fixed at the instrument, a manipulation by wiring a dual. Nothing is applied here — apply is the scalpel\'s door. COST: the same scans as erpax.frontier.next plus the cycle, concentration and unfolded populations for the leads asked.',
+    bg: 'Кракът ДЕЙСТВИЕ на тройката на фронтира: всяка теорема-следа става МАНИФЕСТ — операции за скалпела, където разрезът е изчислим, или решение с доказателствата, където избира човек. Лъжи и манипулации не получават манифест. Нищо не се прилага тук.',
+    de: 'Das ACT-Bein der Frontier-Dreiheit: jeder Theorem-Lead wird ein MANIFEST — Skalpell-Ops, wo der Schnitt berechenbar ist, oder eine Entscheidung mit Evidenz, wo ein Mensch wählt. Lügen und Manipulationen bekommen kein Manifest. Hier wird nichts angewendet.',
+  },
   involute: {
     en: 'Every frontier lead TAGGED by its involution — the same claim asked from the dual seat. `theorem`: the dual instrument agrees (an unreached atom nobody imports or names from outside the charged set; a red axis whose law names its members; a cross whose lift beats chance). `lie`: the dual refutes it (a referrer exists; a red count with no member; an overlap at the base rate) — fix the instrument, never the atom it accused. `manipulation`: no dual could answer — one witness speaking for itself. `tag` filters. COST: the same scans as erpax.frontier.next plus the backward referrer walk.',
     bg: 'Всяка водеща следа на фронтира, ОЗНАЧЕНА чрез своята инволюция — същото твърдение, зададено от дуалното място. theorem: дуалът потвърждава; lie: дуалът опровергава — поправя се инструментът, не атомът; manipulation: никой дуал не може да отговори — един свидетел, говорещ за себе си. ЦЕНА: същите сканирания плюс обратния обход по рефериращите.',
@@ -34,6 +40,123 @@ const I18N: Record<string, LocalizedString> = {
 }
 
 const TAGS = ['theorem', 'lie', 'manipulation'] as const
+
+// ─── the ACT leg — a lead becomes a manifest, never a hand ─────────────────────────────────────
+
+/** One direction of a two-file tangle: what `importer` takes from `exporter`, and the statement that takes it. */
+export interface TangleEdge {
+  readonly importer: string
+  readonly exporter: string
+  readonly names: readonly string[]
+  /** The exact import statement text — the bytes a scalpel op finds exactly once. */
+  readonly statement: string
+  /** The module specifier inside it, e.g. `@/auth`. */
+  readonly specifier: string
+}
+
+/** What the live scans hand the act leg — every field optional, keyed by the lead's target. */
+export interface DevelopEvidence {
+  /** unreached target → barrels nothing imports that import it (the address to act at). */
+  readonly deadReferrers?: ReadonlyMap<string, readonly string[]>
+  /** cycle target → its tangle's members (repo-relative files) and, for a two-file tangle, both edges. */
+  readonly tangles?: ReadonlyMap<string, { readonly members: readonly string[]; readonly edges: readonly TangleEdge[] }>
+  /** concentration target → the hub's metrics. */
+  readonly hubs?: ReadonlyMap<string, { readonly lineCount: number; readonly exportCount: number; readonly childAtomCount: number; readonly concentrationScore: number }>
+  /** unfolded target → its dead (0 sites) and single-use (1 site) exports. */
+  readonly exports?: ReadonlyMap<string, readonly { readonly name: string; readonly file: string; readonly sites: number }[]>
+  /** The one decision a human makes for a leaf extraction: its word. Without it the ops stay templates. */
+  readonly word?: string
+}
+
+export interface Development {
+  readonly lead: Pick<TaggedLead, 'source' | 'target' | 'tag' | 'intent'>
+  /** `ops`: the scalpel can cut it; `decision`: computed evidence, a human chooses; `none`: not a theorem. */
+  readonly kind: 'ops' | 'decision' | 'none'
+  readonly ops: readonly ScalpelOp[]
+  /** The scalpel's own dry run over `ops` — every refusal named — or null when there is nothing to plan. */
+  readonly plan: ScalpelPlan | null
+  readonly steps: readonly string[]
+  readonly evidence: Record<string, unknown>
+}
+
+const leafOps = (edge: TangleEdge, word: string): ScalpelOp => ({
+  file: edge.importer,
+  find: edge.statement,
+  replace: edge.statement.replace(`'${edge.specifier}'`, `'${edge.specifier}/${word}'`),
+  reason: `${edge.importer} takes ${edge.names.join(', ')} from ${edge.exporter}; those names depend on nothing else there, so they move to the leaf ${edge.specifier}/${word} and the import follows — the tangle's edge is cut, the exporter keeps its face by re-exporting`,
+})
+
+/**
+ * The act leg, pure: a tagged lead becomes a manifest. Only a THEOREM is developed — a lie is fixed at
+ * the instrument that told it and a manipulation is fixed by wiring a dual, so both return `none`
+ * with the step that says so. Each theorem class gets what the corpus has learned to do with it:
+ *
+ * - a two-file cycle: extract the smaller side's names into a leaf child of the exporter, repoint the
+ *   importer, re-export from the exporter — the cut that dissolved auth ↔ subscription/gate. With a
+ *   `word` the import repoint is a scalpel op planned here; without one the ops stay a template,
+ *   because the leaf's name is the one decision no theorem makes.
+ * - a concentration hub: nest the pure private statics into children, the class keeps its face.
+ * - a dead export: wire it at a caller that holds what it needs, or drop it; a single-use export:
+ *   inline at its one site or make it reused.
+ * - an unreached atom with a dead referrer: the referrer's barrel is the address, not the atom.
+ */
+export function developManifest(leads: readonly TaggedLead[], ev: DevelopEvidence, cwd: string = process.cwd()): Development[] {
+  return leads.map((l) => {
+    const lead = { source: l.source, target: l.target, tag: l.tag, intent: l.intent }
+    if (l.tag === 'lie') return { lead, kind: 'none', ops: [], plan: null, steps: [`fix the instrument that told it (${l.instrument ?? 'unknown'}), never the target`], evidence: {} }
+    if (l.tag === 'manipulation') return { lead, kind: 'none', ops: [], plan: null, steps: ['wire a dual instrument for this source before acting on its count'], evidence: {} }
+    const tangle = ev.tangles?.get(l.target)
+    if (l.source === 'law:cycle' && tangle) {
+      if (tangle.members.length !== 2 || tangle.edges.length === 0) {
+        return { lead, kind: 'decision', ops: [], plan: null, steps: [`a tangle of ${tangle.members.length} files — no single leaf dissolves it; see rules/cycle fatalCycleUses for the edge that bites`], evidence: { members: tangle.members } }
+      }
+      // the side that takes FEWER names moves: a smaller leaf, and the exporter's face stays intact
+      const edge = [...tangle.edges].sort((a, b) => a.names.length - b.names.length)[0] as TangleEdge
+      const leaf = ev.word ? `${edge.specifier}/${ev.word}` : `${edge.specifier}/<word>`
+      const steps = [
+        `create src/${leaf.slice(2)}/index.ts with ${edge.names.join(', ')} moved out of ${edge.exporter} (type imports only, so nothing can loop through it)`,
+        `re-export ${edge.names.join(', ')} from ${edge.exporter} — its face is unchanged`,
+        `repoint ${edge.importer}: ${edge.statement.trim()} → from '${leaf}'`,
+        ...(ev.word ? [] : ['the leaf needs a word — pass `word` and the repoint becomes a planned scalpel op']),
+      ]
+      const ops = ev.word ? [leafOps(edge, ev.word)] : []
+      return { lead, kind: ops.length ? 'ops' : 'decision', ops, plan: ops.length ? planScalpel(ops, cwd) : null, steps, evidence: { members: tangle.members, edges: tangle.edges.map((e) => ({ importer: e.importer, exporter: e.exporter, names: e.names })) } }
+    }
+    const hub = ev.hubs?.get(l.target)
+    if (l.source === 'law:concentration' && hub) {
+      return {
+        lead,
+        kind: 'decision',
+        ops: [],
+        plan: null,
+        steps: [
+          `${hub.lineCount} lines, ${hub.exportCount} export(s), ${hub.childAtomCount} child atom(s), score ${hub.concentrationScore}`,
+          'nest the private statics that depend only on their arguments into one-word children with their own tests; the hub keeps every method and delegates (fiscal/period/resolver → span · code)',
+        ],
+        evidence: { ...hub },
+      }
+    }
+    const exps = ev.exports?.get(l.target)
+    if (l.source === 'law:unfolded' && exps) {
+      return {
+        lead,
+        kind: 'decision',
+        ops: [],
+        plan: null,
+        steps: exps.map((e) => (e.sites === 0 ? `${e.name} (${e.file}) has no caller: wire it where its inputs already exist (a job or route holding payload) or drop it — persistApiAuditEvent was wired in jobs/bnb/rates/sync` : `${e.name} (${e.file}) has one site: inline it there or make it reused`)),
+        evidence: { exports: exps },
+      }
+    }
+    const dead = ev.deadReferrers?.get(l.target)
+    if (l.source === 'unreached' && dead && dead.length > 0) {
+      return { lead, kind: 'decision', ops: [], plan: null, steps: dead.map((by) => `${by} imports ${l.target} and nothing imports ${by}: the dead code starts at ${by}, decide there`), evidence: { deadReferrers: dead } }
+    }
+    if (l.source === 'unreached') {
+      return { lead, kind: 'decision', ops: [], plan: null, steps: ['no door reaches it and nothing refers to it: wire it (MCP tool, CLI, deployed import) or drop it — a lexical walk cannot decide which'], evidence: {} }
+    }
+    return { lead, kind: 'decision', ops: [], plan: null, steps: ['holds from both seats; no computed cut exists for this class yet — the act leg names that rather than guessing'], evidence: {} }
+  })
+}
 
 /** What the live scans hand the duals — every field optional, because every source is asked for. */
 export interface DualEvidence {
@@ -234,6 +357,7 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.frontier.next',
+      role: 'measure',
       description: tNext.desc(I18N.next!),
       parameters: {
         sources,
@@ -276,6 +400,7 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.frontier.involute',
+      role: 'involute',
       description: tInvolute.desc(I18N.involute!),
       parameters: {
         sources,
@@ -298,7 +423,89 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
         })
       },
     },
+    {
+      name: 'erpax.frontier.develop',
+      role: 'act',
+      description: makeToolI18n('erpax.frontier.develop').desc(I18N.develop!),
+      parameters: {
+        sources,
+        target: z.string().optional().describe('one lead target, e.g. subscription/gate · fiscal/period/resolver · dashboard/nav'),
+        word: z.string().regex(/^[a-z][a-z0-9]*$/).optional().describe('the leaf word for a two-file tangle — the one decision that turns the template into planned ops'),
+        limit: z.number().int().min(1).max(200).optional(),
+      },
+      async handler(args) {
+        const want = new Set((args.sources as string[] | undefined) ?? ['populations', 'unreached'])
+        const cwd = process.cwd()
+        const { src, duals, carried } = await liveSources(want)
+        const tagged = involuteLeads(internalLeads(src), duals)
+        const target = typeof args.target === 'string' ? args.target : undefined
+        const theorems = tagged.filter((t) => t.tag === 'theorem' && (target === undefined || t.target === target))
+        const ev = await developEvidence(cwd, theorems, carried, typeof args.word === 'string' ? args.word : undefined)
+        const developments = developManifest(theorems, ev, cwd)
+        const rows = developments.slice(0, (args.limit as number | undefined) ?? 50)
+        return json({
+          asked: [...want].sort(),
+          theorems: theorems.length,
+          kinds: { ops: developments.filter((d) => d.kind === 'ops').length, decision: developments.filter((d) => d.kind === 'decision').length },
+          ops: developments.flatMap((d) => d.ops).length,
+          refused: developments.reduce((n, d) => n + (d.plan?.refused ?? 0), 0),
+          developments: rows,
+          law: 'A lead is developed by a manifest the scalpel can plan, never by a hand. Where a theorem names a word nobody can compute, the manifest says so and stops; applying is the scalpel\'s own door, ring-verified, batch by batch.',
+        })
+      },
+    },
   ]
+}
+
+/** The evidence the act leg needs for the theorem leads it was handed — only the scans those leads call for. */
+async function developEvidence(cwd: string, theorems: readonly TaggedLead[], carried: readonly Carried[], word?: string): Promise<DevelopEvidence> {
+  const deadReferrers = new Map<string, string[]>()
+  for (const c of carried) deadReferrers.set(c.target, [...(deadReferrers.get(c.target) ?? []), c.by])
+  const ev: { -readonly [K in keyof DevelopEvidence]: DevelopEvidence[K] } = { deadReferrers, word }
+  const by = (source: string): string[] => [...new Set(theorems.filter((t) => t.source === source).map((t) => t.target))]
+  const cycleTargets = by('law:cycle')
+  if (cycleTargets.length > 0) {
+    const { importCycles, importedNames } = await import('@/rules/cycle')
+    const { readFileSync } = await import('node:fs')
+    const { relative } = await import('node:path')
+    const cycles = importCycles(cwd)
+    const tangles = new Map<string, { members: string[]; edges: TangleEdge[] }>()
+    for (const t of cycleTargets) {
+      const c = cycles.find((x) => x.some((f) => f.includes(`/src/${t}/`)))
+      if (!c) continue
+      const members = c.map((f) => relative(cwd, f))
+      const edges: TangleEdge[] = []
+      if (c.length === 2) {
+        for (const [importer, exporter] of [[c[0] as string, c[1] as string], [c[1] as string, c[0] as string]] as const) {
+          const names = importedNames(importer, cwd).get(exporter) ?? []
+          if (names.length === 0) continue
+          const text = readFileSync(importer, 'utf8')
+          const statement = text.split('\n').find((line) => /^import\b/.test(line) && names.every((n) => n === 'default' || n === '*' || line.includes(n))) ?? ''
+          const specifier = /from\s+'([^']+)'/.exec(statement)?.[1] ?? ''
+          edges.push({ importer: relative(cwd, importer), exporter: relative(cwd, exporter), names, statement, specifier })
+        }
+      }
+      tangles.set(t, { members, edges })
+    }
+    ev.tangles = tangles
+  }
+  if (by('law:concentration').length > 0) {
+    const { concentrationViolations } = await import('@/rules/concentration')
+    ev.hubs = new Map(concentrationViolations(cwd).map((v) => [v.atomPath, { lineCount: v.metrics.lineCount, exportCount: v.metrics.exportCount, childAtomCount: v.metrics.childAtomCount, concentrationScore: v.metrics.concentrationScore }]))
+  }
+  const unfoldedTargets = new Set(by('law:unfolded'))
+  if (unfoldedTargets.size > 0) {
+    const { unfoldedExports } = await import('@/rules/unfolded')
+    const { atomOfFile } = await import('@/mesh')
+    const r = unfoldedExports(cwd)
+    const exports = new Map<string, { name: string; file: string; sites: number }[]>()
+    for (const e of [...r.dead, ...r.single]) {
+      const atom = atomOfFile(e.file.startsWith('/') ? e.file : join(cwd, e.file), cwd)
+      if (unfoldedTargets.has(atom)) exports.set(atom, [...(exports.get(atom) ?? []), { name: e.name, file: e.file, sites: e.sites }])
+    }
+    ev.exports = exports
+  }
+  return ev
 }
 
 /** @index-cross.foldback child=agents/mcp/tool/frontier parent=agents/mcp/tool — this cross folds back into its parent. */

@@ -161,6 +161,35 @@ export function deferredTargetsOf(file: string, cwd: string = process.cwd()): Se
   return out
 }
 
+/**
+ * The NAMES a file imports from each resolved module — the edge with its labels. What a two-file
+ * tangle actually exchanges: the names B takes from A are the leaf that dissolves it when they
+ * depend on nothing else in A ([[auth]]/context was exactly that cut, made by hand once).
+ */
+export function importedNames(file: string, cwd: string = process.cwd()): Map<string, string[]> {
+  const out = new Map<string, string[]>()
+  let text: string
+  try {
+    text = textOf(file)
+  } catch {
+    return out
+  }
+  const sf = astOf(file, text)
+  for (const s of sf.statements) {
+    if (!ts.isImportDeclaration(s) || !ts.isStringLiteral(s.moduleSpecifier)) continue
+    if (s.importClause?.isTypeOnly) continue
+    const target = resolveSpec(cwd, file, s.moduleSpecifier.text)
+    if (!target || GENERATED.test(target)) continue
+    const names: string[] = []
+    const b = s.importClause?.namedBindings
+    if (b && ts.isNamedImports(b)) for (const e of b.elements) if (!e.isTypeOnly) names.push(e.name.text)
+    if (s.importClause?.name) names.push('default')
+    if (b && ts.isNamespaceImport(b)) names.push('*')
+    out.set(target, [...(out.get(target) ?? []), ...names])
+  }
+  return out
+}
+
 export function importsOf(file: string, cwd: string = process.cwd()): string[] {
   let text: string
   try {

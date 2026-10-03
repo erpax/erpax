@@ -29,6 +29,7 @@ export function buildAmlTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.aml.report',
+      role: 'measure',
       description: t.desc(I18N.report!),
       parameters: {
         movements: z.array(MOVEMENT),

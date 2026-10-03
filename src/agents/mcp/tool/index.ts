@@ -79,5 +79,7 @@ export { buildFrontierTools } from './frontier'
 export { buildWitnessTools } from './witness'
 export { buildQuantumTools } from './quantum'
 export { buildGateTools } from './gate'
+/** The surface read as trinity families — measure · involute · act — and the leg each still lacks. */
+export { buildFamilyTools } from '@/agents/mcp/family'
 
 /** @index-cross.foldback child=agents/mcp/tool parent=agents/mcp — this cross folds back into its parent. */

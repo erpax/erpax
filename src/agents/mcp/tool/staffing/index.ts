@@ -27,6 +27,7 @@ export function buildStaffingTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.staffing.position',
+      role: 'measure',
       description: t.desc(I18N.position!),
       parameters: {
         position: z.object({

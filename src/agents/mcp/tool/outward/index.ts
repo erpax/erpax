@@ -35,6 +35,7 @@ export function buildOutwardTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.outward.leads',
+      role: 'measure',
       description: tLeads.desc(I18N.leads!),
       parameters: {
         write: z.boolean().optional(),
@@ -58,6 +59,7 @@ export function buildOutwardTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.outward.next',
+      role: 'act',
       description: tNext.desc(I18N.next!),
       parameters: {},
       async handler() {

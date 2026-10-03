@@ -281,3 +281,23 @@ describe('rules/cycle — a deferred import is not an initialisation edge', () =
     expect(deferredTargetsOf(join(root, 'src', 'a', 'index.ts'), root).size).toBe(0)
   })
 })
+
+describe('importedNames — the edge with its labels', () => {
+  it('names what a file takes from each module it imports, skipping type-only imports and generated faces', async () => {
+    const { mkdtempSync, mkdirSync, writeFileSync, rmSync } = await import('node:fs')
+    const { join } = await import('node:path')
+    const { tmpdir } = await import('node:os')
+    const { importedNames } = await import('./index')
+    const root = mkdtempSync(join(tmpdir(), 'erpax-cycle-'))
+    try {
+      mkdirSync(join(root, 'src', 'a'), { recursive: true })
+      mkdirSync(join(root, 'src', 'b'), { recursive: true })
+      writeFileSync(join(root, 'src', 'b', 'index.ts'), 'export const x = 1\nexport const y = 2\nexport type T = number\n')
+      writeFileSync(join(root, 'src', 'a', 'index.ts'), "import { x, y } from '@/b'\nimport type { T } from '@/b'\nexport const z: T = x + y\n")
+      const names = importedNames(join(root, 'src', 'a', 'index.ts'), root)
+      expect([...names.entries()].map(([f, n]) => [f.replace(root, ''), n])).toEqual([['/src/b/index.ts', ['x', 'y']]])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+})
