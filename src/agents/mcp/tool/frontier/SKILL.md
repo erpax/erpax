@@ -142,6 +142,15 @@ evidence — `corroborated` · `single` · `unseen` (`Coil.seatOf`) — and an u
 count, not matter: the instrument that counted it is the thing to develop. `rotate: false` asks the
 lead's own law alone.
 
+Asked through the gateway on 2026-10-03 (`erpax_frontier_develop`, sources populations + unreached):
+**738 theorem leads · 226 s over the wire** — the eight-law rosetta's scans are the cost, the same
+~3.5 min `erpax.gate.coil` pays. Its first reading said 370 corroborated · 368 single · 0 unseen, and
+the 370 were too many: the accounting wave charges every atom with no deployment face, which is
+exactly what `unreached` names, so the two seats agreed **by construction**. A seat whose population is
+defined by the lead's own law is a *dependent* seat (`dependentSeats`, the same pairs `frontierDuals`
+encodes, declared in the open): it still adds its prescription, marked as dependent, but it does not
+count toward corroboration. `independent` rides beside `seats` in the evidence so a reader sees both.
+
 The roles are declared on the tools and read by the `family` atom beside the [[mcp]] gateway
 (`erpax.family.trinities`), which says which families are trinities and which leg each of the others
 still lacks — the next development of the surface, computed.

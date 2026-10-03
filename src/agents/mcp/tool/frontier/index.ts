@@ -13,7 +13,7 @@ import { join } from 'node:path'
 import { internalLeads, leadCross, selfSufficientNext, type InternalSources } from '@/self/sufficient'
 import { involuteLeads, tagCounts, type Dual, type LeadTag, type TaggedLead } from '@/self/involute'
 import { planScalpel, type ScalpelOp, type ScalpelPlan } from '@/scalpel'
-import type { Rotation } from '@/quantum/coil'
+import { seatOf, type Rotation } from '@/quantum/coil'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 
@@ -136,13 +136,32 @@ export function developManifest(leads: readonly TaggedLead[], ev: DevelopEvidenc
 function rotated(d: Development, l: TaggedLead, rot: Rotation | undefined): Development {
   if (!rot) return d
   const own = l.source.replace(/^law:/, '')
+  const dependent = dependentSeats(own)
   const others = rot.perspectives.filter((p) => p.seen > 0 && p.law !== own)
+  // a seat that is the lead's own dual sees it by construction and corroborates nothing
+  const independent = rot.seats.filter((s) => !dependent.has(s))
+  const seat = seatOf(independent.length)
   const steps = [
     ...d.steps,
-    ...others.map((p) => `from the ${p.law} seat (${p.seen} of ${rot.files} file(s), ${(p.backward * 100).toFixed(1)}% of its population): ${seatStep(p.law) ?? 'no prescription declared for this law'}`),
-    ...(rot.seat === 'unseen' ? ['no law of the rosetta holds this target as files — it is a count, not matter; develop the instrument that counted it before the target'] : []),
+    ...others.map((p) => `from the ${p.law} seat (${p.seen} of ${rot.files} file(s), ${(p.backward * 100).toFixed(1)}% of its population${dependent.has(p.law) ? '; a dependent seat — it sees this lead because the other law does' : ''}): ${seatStep(p.law) ?? 'no prescription declared for this law'}`),
+    ...(seat === 'unseen' ? ['no law of the rosetta holds this target as files — it is a count, not matter; develop the instrument that counted it before the target'] : []),
   ]
-  return { ...d, steps, evidence: { ...d.evidence, seats: rot.seats, seat: rot.seat, files: rot.files } }
+  return { ...d, steps, evidence: { ...d.evidence, seats: rot.seats, independent, seat, files: rot.files } }
+}
+
+/**
+ * Seats whose population is DEFINED by another law's — one explains the other, so their agreement is
+ * not two instruments agreeing. The pairs are the duals `frontierDuals` already encodes, declared
+ * here in the open: an unreached atom has no deployment face, which is exactly what the accounting
+ * wave charges, so the wave sees every unreached atom by construction.
+ */
+export function dependentSeats(law: string): ReadonlySet<string> {
+  return DEPENDENT_SEATS[law] ?? new Set()
+}
+
+const DEPENDENT_SEATS: Readonly<Record<string, ReadonlySet<string>>> = {
+  unreached: new Set(['accounting-wave']),
+  'accounting-wave': new Set(['unreached']),
 }
 
 function develop(l: TaggedLead, ev: DevelopEvidence, cwd: string): Development {
