@@ -45,6 +45,9 @@ for (const [k, v] of Object.entries(I18N)) {
 /** The laws whose violating populations are MEASURED. Module-private: an exported literal is seal-debt ([[matrix]]/crack), so `lawPopulations()` with no argument IS the shared way to ask for all of them. */
 const MEASURED_LAWS = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded'] as const
 
+/** The laws that expose a file-addressed population — the only ones a cross can intersect. */
+export const measuredLaws = (): readonly string[] => MEASURED_LAWS
+
 export async function lawPopulations(
   laws: readonly string[] = MEASURED_LAWS,
 ): Promise<Map<string, ReadonlySet<string>>> {

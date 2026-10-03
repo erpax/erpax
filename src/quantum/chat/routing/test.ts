@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { chatQuantum, startSession } from './index'
+import { chatDoor, startSession } from './index'
 
 describe('quantum/chat/routing', () => {
   it('startSession creates a session', () => {
@@ -9,10 +9,10 @@ describe('quantum/chat/routing', () => {
   })
 })
 
-describe('quantum/chat/routing — erpax.quantum from the chat', () => {
+describe('quantum/chat/routing — MCP areas from the chat', () => {
   it('the default door is the Bell state, and the session line carries the integers', async () => {
     const s = startSession('bell')
-    const turn = await chatQuantum(s)
+    const turn = await chatDoor(s)
     expect(turn.tool).toBe('erpax.quantum.bell')
     expect(turn.result.amplitudes).toEqual(['1', '0', '0', '1'])
     expect(turn.result.determinant).toBe('1')
@@ -22,7 +22,7 @@ describe('quantum/chat/routing — erpax.quantum from the chat', () => {
   })
 
   it('shots is enumerated through the same door — [0,3,0,3] for two rounds', async () => {
-    const turn = await chatQuantum(startSession('shots'), {
+    const turn = await chatDoor(startSession('shots'), {
       door: 'shots',
       args: { qubits: 2, gates: [{ name: 'h', q: 0 }, { name: 'cnot', c: 0, t: 1 }], rounds: 2 },
     })
@@ -33,7 +33,14 @@ describe('quantum/chat/routing — erpax.quantum from the chat', () => {
 
   it('run refuses a gate on a qubit the register does not have — nothing folds into the session', async () => {
     const s = startSession('run')
-    await expect(chatQuantum(s, { door: 'run', args: { qubits: 1, gates: [{ name: 'cnot', c: 0, t: 1 }] } })).rejects.toThrow(/qubit 1/)
+    await expect(chatDoor(s, { door: 'run', args: { qubits: 1, gates: [{ name: 'cnot', c: 0, t: 1 }] } })).rejects.toThrow(/qubit 1/)
+    expect(s.messageUuids).toHaveLength(1)
+  })
+
+  it('the gate area opens from the same door: a refused cross folds nothing, and names the measured laws', async () => {
+    const s = startSession('gate')
+    await expect(chatDoor(s, { area: 'gate', door: 'cross', args: { a: 'copy', b: 'telepathy' } })).rejects.toThrow(/measured laws are copy, cycle/)
+    await expect(chatDoor(s, { area: 'gate', door: 'nowhere' })).rejects.toThrow(/no door erpax.gate.nowhere/)
     expect(s.messageUuids).toHaveLength(1)
   })
 })

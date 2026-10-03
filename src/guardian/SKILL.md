@@ -3,20 +3,20 @@ name: guardian
 description: "Use when reasoning about a single immune-cell of the corpus — a guardian watches exactly ONE violation axis against its own committed baseline with a fail-closed ratchet, so a rise on its axis reddens the gate on its own and can never be masked by a fix on another axis. Many guardians cross into one seal."
 atomPath: guardian
 coordinate: "guardian · 8/crest · d3897018"
-contentUuid: "e5091713-8541-5d44-ab07-35da4905b6bc"
-diamondUuid: "c91e8646-b1c8-8a94-8546-d53e9d662f6e"
+contentUuid: "ab0c61e0-3b07-5b33-8921-4be458872f85"
+diamondUuid: "40358e4c-9976-8e65-99d8-391fe24b2cf1"
 uuid: "d3897018-91b3-8e50-88ef-600054b23ec8"
 horo: 8
 typography:
   partition: guardian
-  bondDegree: 58
+  bondDegree: 61
 standards:
   - "ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function"
   - "ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c79729d6-d765-8f3d-85fe-c6b65d3f61c4"
+  computationUuid: "7c223355-d896-8995-8ba5-5ecf45235911"
   stages:
     - stage: path
       stageUuid: "83e530d4-1142-8bf7-b8c4-6462dc97de15"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9f877aac-b513-8a1e-a9be-fa493fccba5f"
     - stage: horo
-      stageUuid: "2ab1aa7d-e3a0-86a8-a64d-2ca7b3c00012"
+      stageUuid: "6677a711-0173-83d9-b606-054e7c24be8f"
     - stage: seal
       stageUuid: "9441f23e-0439-8a74-b69f-fbb34baca302"
     - stage: uuid
-      stageUuid: "69e64648-7cdc-8dca-91b7-aea6c5fa481f"
+      stageUuid: "74e201e9-c799-8256-95d6-1a38f23477b8"
 version: 2
 ---
 # guardian — one axis, one baseline, fail-closed

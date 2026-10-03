@@ -3,13 +3,13 @@ name: gate
 description: "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus."
 atomPath: gate
 coordinate: "gate · 8/crest · c1befecc"
-contentUuid: "cb967217-9a6f-52d8-a47e-132447aa4ce1"
+contentUuid: "5d1208d2-a06c-540f-a7cf-7fe3bc53c77a"
 diamondUuid: "8426431f-7cea-8a0c-b5a9-caab5be54499"
 uuid: "c1befecc-3f83-88f1-829b-2138de66a19c"
 horo: 8
 typography:
   partition: gate
-  bondDegree: 285
+  bondDegree: 292
 standards: []
 bindings: []
 signatures:

@@ -118,6 +118,7 @@ import {
   buildFrontierTools,
   buildWitnessTools,
   buildQuantumTools,
+  buildGateTools,
   // Measured 2026-09-20: 56 tools on this surface and zero over the compliance atoms. A
   // capability with no surface is indistinguishable from an absent one.
   buildKycTools,
@@ -1654,6 +1655,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   for (const t of buildFrontierTools()) tools.push(t)
   for (const t of buildWitnessTools()) tools.push(t)
   for (const t of buildQuantumTools()) tools.push(t)
+  for (const t of buildGateTools()) tools.push(t)
   for (const t of buildShareTools()) tools.push(t)
   for (const t of buildFormatTools()) tools.push(t)
   for (const t of buildGovernanceTools()) tools.push(t)
