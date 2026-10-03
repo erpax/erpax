@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing).",
-    "uuid": "5fbcfb06-c5cd-8f4e-8dc7-abe2e83aface",
+    "uuid": "fb655c3a-3a6b-8f55-8d54-4f01bbc7977b",
     "words": [
       "use",
       "when",

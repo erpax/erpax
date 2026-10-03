@@ -949,7 +949,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "gaps",
-        "uuid": "93b6eef9-1954-850d-acf5-3826a04d77f4",
+        "uuid": "e134102b-5e36-8f40-b89f-964af1e4c7ca",
         "words": [
           "gaps"
         ],
@@ -960,7 +960,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when scanning the corpus's own accounting for entropy gaps — waveAccountingGapViolations walks the README model in OOM-safe horo waves; fixGapsOnP0 applies P0 fixes. Corpus SELF-accounting dev tooling, nested off the mountable @erpax/accounting face.",
-        "uuid": "eab693c9-0e3f-8463-9e40-6ccc6565fe21",
+        "uuid": "b665d367-2ca5-8067-9527-c0367ae6d879",
         "words": [
           "use",
           "when",
@@ -5124,7 +5124,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when mapping AI industry failure modes to erpax diamond remedies — hallucination, memory loss, multi-agent collision, prompt injection, audit fragmentation, cost runaway, model drift, PII leakage, human-in-the-loop, vendor lock-in. Pure fns in index.ts bind each problem to existing atoms (thought, diamond, sandbox, receipt, memory, confirm) and extend gaps: workflow correlation receipts, grounded tool calls, cascade depth guard.",
-        "uuid": "e49e67aa-3dff-89d1-96c4-cbed5af82cff",
+        "uuid": "5576b923-0f5e-8046-b44b-2303fd205325",
         "words": [
           "use",
           "when",
@@ -9055,7 +9055,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deciding which folder-shape gaps an archangel can auto-resolve — a trinity gap folds iff its matter (index.ts) already exists, so the antimatter (SKILL.md) and the proof (test.ts) derive from the code; missing matter or a malformed name needs a builder, not a fold. Computed from the live tree.",
-        "uuid": "2325170d-faab-8158-93c9-34d4ff403848",
+        "uuid": "eeb9e59c-002f-88a1-8625-1b2e48c073e3",
         "words": [
           "use",
           "when",
@@ -19189,7 +19189,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing).",
-        "uuid": "5fbcfb06-c5cd-8f4e-8dc7-abe2e83aface",
+        "uuid": "fb655c3a-3a6b-8f55-8d54-4f01bbc7977b",
         "words": [
           "use",
           "when",
@@ -19464,7 +19464,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "gaps",
-        "uuid": "93b6eef9-1954-850d-acf5-3826a04d77f4",
+        "uuid": "e134102b-5e36-8f40-b89f-964af1e4c7ca",
         "words": [
           "gaps"
         ],
@@ -19475,7 +19475,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.",
-        "uuid": "cabfeee3-545b-803c-a918-b9c0184729e8",
+        "uuid": "26b19b61-6909-8397-9474-4f1710b691c9",
         "words": [
           "use",
           "when",
@@ -21575,7 +21575,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when running the deterministic, idempotent consistency transforms that close code-consistency gaps (chain producer backfill, emits upgrade, e2e + shadcn scaffolds, localized flags) — the appliers the `erpax.consistency.applyAll` MCP tool and the ConsistencyAgent cron dispatch to.",
-        "uuid": "f337f044-bdbc-82d3-b379-f1f0a8822f96",
+        "uuid": "b65f191c-9988-8d31-aed9-b02dd05ee87b",
         "words": [
           "use",
           "when",
@@ -28594,7 +28594,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus.",
-        "uuid": "8d9d9726-6fe4-82f2-a368-47a4fb5cb451",
+        "uuid": "11aa1120-0e25-8bf3-b287-2ad8daa0aea0",
         "words": [
           "use",
           "when",
@@ -29943,7 +29943,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society sends scouts to fly the content-uuid matrix in coordinated self-learning — reconnoitring sectors for gaps and entropy and feeding them to the agents to eat, warfare tactics applied to building.",
-        "uuid": "e6a83a65-fd0c-8285-93c8-a9804bcafdf1",
+        "uuid": "2f5490ee-d308-8180-8104-835b889dae88",
         "words": [
           "use",
           "when",
@@ -37909,7 +37909,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-        "uuid": "9e5fb739-3bc9-8f17-b598-b4db6e70fe73",
+        "uuid": "d499b223-2128-8b3d-87fd-4fdc49b3cd05",
         "words": [
           "use",
           "when",
@@ -39078,7 +39078,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about registry — Google Workspace API registry — the computed catalogue of the Workspace services erpax fuses with to fill its office/productivity gaps (the business core models accounting/manufacturing/commerce/HR; Workspace supplies email, calendar, drive, docs, sheets, directory).",
-        "uuid": "f1b6fc36-6c8f-8f33-8a8f-38f66acddb40",
+        "uuid": "9e2ef822-457c-8caa-831a-7c1554af0bad",
         "words": [
           "use",
           "when",
@@ -39675,7 +39675,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the Hamiltonian — the energy operator whose eigenvalues are the seven horo energy-rungs (Eₙ = h·νₙ) and whose action advances time, |ψ(t)⟩ = e^(−iHt/ħ)|ψ(0)⟩. It is the generator: the eigenstates are the rungs a leap jumps between, the spectrum is the gaps, and the phase it winds drives the breath. The expectation ⟨H⟩ = Σ|cₙ|²·Eₙ is the average energy of a superposition, conserved under evolution.",
-        "uuid": "c83c54b7-ef6a-890f-a54c-2c78399a4116",
+        "uuid": "3df5a4a5-132d-830c-a2c9-b092d44bdf85",
         "words": [
           "use",
           "when",
@@ -51397,7 +51397,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's gas-exchange surface — the respiratory organ where it BREATHES. The breath atom names it: 'the chat is the lung-tissue where agents coordinate.' The society inhales gaps and exhales gate-green atoms across a vast, thin, fractal surface; three properties of the living lung (Fick's-law gas exchange · 23-generation fractal surface · the closed tidal cycle) are computed and mapped — a structural isomorphism — onto erpax's breath/wave loop.",
-        "uuid": "43776677-4a76-873d-86cc-5b5e8fb1f4d9",
+        "uuid": "703660e2-969d-8110-b1e2-3e224560198b",
         "words": [
           "use",
           "when",
@@ -69146,7 +69146,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "gaps",
-        "uuid": "93b6eef9-1954-850d-acf5-3826a04d77f4",
+        "uuid": "e134102b-5e36-8f40-b89f-964af1e4c7ca",
         "words": [
           "gaps"
         ],
@@ -69157,7 +69157,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when asked to fill the gaps in quantum mechanics — the honest toolbox that NAMES the open gaps (measurement problem, Born rule, preferred basis, quantum gravity, interpretation) and refuses to fill them. Every gap's `fills` is the literal false, so the code cannot claim a solution; the corpus tools are shown as lenses to learn through, never fillings. HARMONY ≠ TRUTH.",
-        "uuid": "d47e2da7-7875-835e-a3b4-71da45a43038",
+        "uuid": "b3a8ca52-bc3e-8a04-874b-3aec67e28ec0",
         "words": [
           "use",
           "when",
@@ -81045,7 +81045,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "unreached",
-        "uuid": "4f116904-449c-8818-abf9-f6def9252ce9",
+        "uuid": "01b807ce-24af-8d73-baa6-dac43cc2974a",
         "words": [
           "unreached"
         ],
@@ -81056,7 +81056,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…",
-        "uuid": "d470cd4a-daa9-8abd-bc99-cfa6f640c486",
+        "uuid": "3c542cfb-a318-8b3f-9d1d-31cd74ebdce4",
         "words": [
           "use",
           "when",
@@ -86762,7 +86762,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself.",
-        "uuid": "3fb37707-8c06-885e-b0ba-3ea0ac527dbd",
+        "uuid": "ebbcf5c8-d7cf-86e5-a714-90dc81c27820",
         "words": [
           "use",
           "when",
@@ -86909,7 +86909,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the loop must say what to do next — the feed scanner that finds real gaps, scores them unblock / (cost × risk), and emits ONE executable trinity tip or refuses as vague.",
-        "uuid": "78b9e3a8-731e-8c64-98eb-f17564cca090",
+        "uuid": "dac86cdd-9529-8d85-80d0-3439dfef8a66",
         "words": [
           "use",
           "when",
@@ -86968,7 +86968,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when asking what is actually blocking — the feed scan that finds real gaps and ranks them by unblock / (cost × risk), reading only the NAMES of secrets, never their values.",
-        "uuid": "c4bbe1b8-bb44-8c70-96f4-524ad9a6bf50",
+        "uuid": "3158aca0-7a9a-8667-b6f8-96ce339eb391",
         "words": [
           "use",
           "when",
@@ -108552,7 +108552,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when you need the sense-verified translation seed and its computed renderings — only the concept→Qid judgment is stored (58 unambiguous concept atoms, each admitted because a candidate's description sense-matched the atom's meaning); the per-locale labels are a computed projection of each Qid, sealed content-addressed in the gitignored cache. Theorems replace hardcoded values: the seed is data, the renderings are a read. Nothing fabricated; unsure senses stay gaps.",
-        "uuid": "8951b349-3b29-8253-9900-c352109f97e2",
+        "uuid": "4bc72873-c5d6-8f9a-a328-540b8dadae81",
         "words": [
           "use",
           "when",
@@ -140241,7 +140241,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts.",
-        "uuid": "acd67924-2483-8022-ad0a-2db8cf45df29",
+        "uuid": "ff69464d-4915-8573-8151-101b833e911d",
         "words": [
           "use",
           "when",
@@ -211059,7 +211059,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about shadcn — The website is the e2e walkthroughs rendered, and a walkthrough is not prose: it is steps, states, evidence and gaps.",
-        "uuid": "95976fc6-fc05-8f5d-9834-d23e0c944934",
+        "uuid": "ba5218de-3fce-8bf2-b2cc-03e044abfc7d",
         "words": [
           "use",
           "when",
