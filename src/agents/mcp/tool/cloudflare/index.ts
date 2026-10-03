@@ -80,6 +80,7 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.cloudflare.vectorizeQuery',
+      role: 'measure',
       description: tVQ.desc(I18N.vectorizeQuery!),
       parameters: {
         vector: z.array(z.number()),
@@ -96,6 +97,7 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.cloudflare.vectorizeInsert',
+      role: 'measure',
       description: tVI.desc(I18N.vectorizeInsert!),
       parameters: {
         vectors: z.array(z.object({
@@ -114,6 +116,7 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.cloudflare.queueSendNamed',
+      role: 'measure',
       description: tQ.desc(I18N.queueSendNamed!),
       parameters: {
         queueName: z.enum(['ai-batch', 'einvoice-out', 'dunning-out', 'period-close', 'email-out', 'generic']),
@@ -130,6 +133,7 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.cloudflare.browserRender',
+      role: 'measure',
       description: tBR.desc(I18N.browserRender!),
       parameters: {
         url: z.string().optional(), html: z.string().optional(),
@@ -151,6 +155,7 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.cloudflare.emailSend',
+      role: 'measure',
       description: tE.desc(I18N.emailSend!),
       parameters: { from: z.string(), to: z.string(), raw: z.string() },
       async handler({ from, to, raw }, req) {
@@ -164,6 +169,7 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.cloudflare.workflowsCreate',
+      role: 'measure',
       description: tW.desc(I18N.workflowsCreate!),
       parameters: { workflowId: z.string(), input: z.unknown() },
       async handler({ workflowId, input }, req) {
@@ -176,6 +182,7 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.cloudflare.analyticsWrite',
+      role: 'measure',
       description: tA.desc(I18N.analyticsWrite!),
       parameters: {
         dataPoint: z.record(z.unknown()),

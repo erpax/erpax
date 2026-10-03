@@ -157,6 +157,7 @@ function toolsForSkills(): ErpaxMcpTool[] {
   return [
     {
       name: 'erpax.skill.list',
+      role: 'measure',
       description:
         'List skill atoms in the corpus — the discovery half of the skill pair. `q` filters on atom path, name and description; `limit`/`offset` page. Returns atom · name · description, and the total, so a client can page rather than load every skill as its own tool.',
       parameters: {
@@ -209,6 +210,7 @@ function toolsForSkills(): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.skill.read',
+      role: 'measure',
       description:
         'Read one skill atom by its path — the read half of the skill pair. Returns the same payload the per-atom tool returned: name, description, path, sealed excerpt and content-uuid. Find the atom with erpax.skill.list.',
       parameters: {

@@ -50,6 +50,7 @@ export function buildVersionsTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.versions.restore',
+      role: 'measure',
       description: tRestore.desc(I18N.restore!),
       parameters: {
         collection: z.string().min(1),

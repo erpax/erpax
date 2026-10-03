@@ -2243,7 +2243,7 @@ src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-
 src/plugins/auth/access/predicates.ts:10: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/mcp/scopes/index.ts:31: * @standard ISO/IEC 27002 §5.15 access-control + §5.18 access-rights (per-key narrowing)
 src/plugins/mcp/scopes/index.ts:32: * @standard ISO/IEC 27001 §A.9.4.1 information access restriction
-src/plugins/mcp/tools/index.ts:17: * @standard MCP 0.6 — tools/list and tools/call are the surface a client sees
+src/plugins/mcp/tools/index.ts:6: * @standard MCP 0.6 — tools/list and tools/call are the surface a client sees
 src/plugins/naming/index.ts:28: * @standard RFC 9562 §5.8 name-based UUID (the digest source)
 src/plugins/taggable/index.ts:21: * @standard RFC-4122 §4.3 uuid
 src/plugins/versions/index.ts:29: * @standard ISO 19011:2018 §6.4.6 audit-evidence (version history is the trail)

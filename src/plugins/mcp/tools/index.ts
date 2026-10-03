@@ -1,21 +1,9 @@
 /**
- * plugins/mcp/tools — the erpax tool families handed to the gateway, not built beside it.
- *
- * `buildErpaxMcpTools` produced every `erpax.<area>.<leg>` trinity, an in-process client exercised
- * them, a test asked the FACTORY whether a name was offered and reported green — and the live
- * `/api/mcp` served 844 generated CRUD tools and not one of them. The plugin has a door for custom
- * tools (`mcp.tools`) and nothing walked through it, so every agent that reached the gateway was
- * handed a surface the corpus does not describe and every surface the corpus describes was
- * reachable only by importing it. That is the bypass, and this atom is the door being used.
- *
- * Two facts of the wire are decided here, in the open: a name on the wire may not carry a dot
- * (Anthropic's tool-name grammar is `[A-Za-z0-9_-]`, so `erpax.gate.coil` crosses as
- * `erpax_gate_coil` and the dotted name stays the corpus's address), and whether the families ride
- * at all is a mode — full mode (local, `ERPAX_MCP_SEED=0`) carries them, the lean Worker seed does
- * not unless `ERPAX_MCP_TOOLS=1` opts in, because the same isolate limit that made the seed exists.
+ * plugins/mcp/tools — the erpax tool families handed to the gateway through the plugin's own
+ * `mcp.tools` door: wire-named, mode-gated, collisions refused. The live surface carried none of
+ * them before this. See ./SKILL.md for the measurement and the three decisions.
  *
  * @standard MCP 0.6 — tools/list and tools/call are the surface a client sees
- * @see ./SKILL.md · src/payload.config.ts · src/agent/mcp-surface.ts
  */
 import type { PayloadRequest } from 'payload'
 import type { z } from 'zod'

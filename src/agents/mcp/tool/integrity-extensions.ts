@@ -68,6 +68,7 @@ export function buildIntegrityExtensionTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.audit.writeEvent',
+      role: 'measure',
       description: tWrite.desc(I18N.writeEvent!),
       parameters: {
         tenantId: z.string(),
@@ -101,6 +102,7 @@ export function buildIntegrityExtensionTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.integrity.tamperCost',
+      role: 'measure',
       description: tCost.desc(I18N.tamperCost!),
       parameters: {
         leafDepth: z.number().int().min(1).describe('Position of the leaf in the chain (1 = first after genesis)'),
@@ -122,6 +124,7 @@ export function buildIntegrityExtensionTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.integrity.threshold',
+      role: 'measure',
       description: tThresh.desc(I18N.threshold!),
       parameters: {
         leafDepth: z.number().int().min(1),

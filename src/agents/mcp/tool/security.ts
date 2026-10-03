@@ -57,6 +57,7 @@ export function buildSecurityTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.security.attackSurface',
+      role: 'measure',
       description: tSurface.desc(I18N.attackSurface!),
       parameters: {},
       async handler(_args, _req) {
@@ -68,6 +69,7 @@ export function buildSecurityTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.security.assertMode',
+      role: 'measure',
       description: tAssert.desc(I18N.assertMode!),
       parameters: {
         minimum: z.enum(['production', 'test', 'dev']).describe('Minimum SafetyMode the deployment must meet.'),
