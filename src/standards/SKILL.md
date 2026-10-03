@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6700 citations
+## Catalogue — 159 standards, 6701 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -96,7 +96,7 @@ inline HTML that renders as a coloured dot.
 | national | 2 | 47 | `Naredba-N-18` · 43 |
 | nist | 10 | 278 | `NIST-SP-800-63` · 97 |
 | oecd | 4 | 87 | `SAF-T` · 64 |
-| other | 15 | 268 | `COSO-ERM-2017` · 144 |
+| other | 15 | 269 | `COSO-ERM-2017` · 144 |
 | rfc | 11 | 462 | `RFC-9562` · 159 |
 | sox | 6 | 38 | `SOX` · 25 |
 | un | 6 | 95 | `ISO-9735` · 42 |
@@ -104,7 +104,7 @@ inline HTML that renders as a coloured dot.
 | us_gaap | 3 | 61 | `US-CTA-2021` · 38 |
 | w3c | 11 | 2154 | `schema.org` · 1986 |
 | wcag | 2 | 63 | `W3C-WAI-ARIA-1.2` · 33 |
-| **Σ** | **159** | **6700** | |
+| **Σ** | **159** | **6701** | |
 
 **Registered, awaiting citation: 104.** Known canonical standards the registry holds and
 no code cites yet — they seed as `proposed` and become cited as a domain grows. Listed in

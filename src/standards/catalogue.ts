@@ -6571,7 +6571,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Model Context Protocol",
     "uuid": "bbe40439-0393-8d8b-a793-b13b3dc80e16",
     "color": "hsl(220 59% 47%)",
-    "count": 30,
+    "count": 31,
     "modules": [
       {
         "path": "src/agent/access/SKILL.md",
