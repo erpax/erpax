@@ -2,18 +2,18 @@
 name: family
 description: "Use when asking what the MCP surface still lacks without deciding it by hand — every erpax.<area>.* family read as a trinity of declared legs (measure · involute · act); a family with all three closes in one turn, one missing a leg names its own next tool. erpax.family.trinities reports it from the live tool list."
 atomPath: "agents/mcp/family"
-coordinate: "agents/mcp/family · 5/round · 494acdac"
-contentUuid: "ddc77068-3395-50a6-bc23-183687c55027"
-diamondUuid: "bf355fa0-054f-810b-8497-e20012c63685"
-uuid: "494acdac-db8f-8091-9f9c-aec09a7f42c2"
-horo: 5
+coordinate: "agents/mcp/family · 8/crest · 8b722824"
+contentUuid: "5813239f-2517-5f33-b863-712a76ae2a19"
+diamondUuid: "212bca1f-de75-8f09-8033-1e80cb36df17"
+uuid: "8b722824-a6d2-8e1d-805b-62c8fcb2d0c0"
+horo: 8
 typography:
   partition: agents
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f2226c4f-6e32-82ee-9d31-ba0687b7a40b"
+  computationUuid: "eae988e8-3f69-83c8-b162-8898d5b662b2"
   stages:
     - stage: path
       stageUuid: "606f1e52-4415-81f3-80e1-8e6f75561d90"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f48a2a47-5dc6-8aac-b23d-b5af05267c86"
     - stage: horo
-      stageUuid: "0d44cb1d-5100-8e45-8c53-adf30d07dff7"
+      stageUuid: "daa4f49c-d395-8569-a66a-5028feed07d3"
     - stage: seal
       stageUuid: "4866013b-e261-8825-9c14-6edad2c2015b"
     - stage: uuid
-      stageUuid: "aa05aec1-1d51-86f9-a3ec-b8c82770c119"
+      stageUuid: "39762059-2703-80df-a9e8-aea1b43160b8"
 version: 2
 ---
 # agents/mcp/family — the surface read as trinity families
