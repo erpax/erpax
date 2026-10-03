@@ -14,7 +14,7 @@
 export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly parent?: string; readonly prev?: string; readonly next?: string; readonly cross?: string; readonly bind?: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string }
 export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }
 
-export const UUID_MATRIX_ROOT = "62af8d10-10b7-8d7c-afdc-a4ab064aae55" as const
+export const UUID_MATRIX_ROOT = "a5c5a87e-baeb-8396-b7de-3305de68575b" as const
 export const UUID_MATRIX_DIMS = ["root","access","accounting","address","admin","agent","agents","ai","algebra","allow","anchor","anti","api","apply","architecture","atom","audit","aura","auth","authenticated","auto","average","bank","base","bcp","before","beyond","bg","biological","blocks","body","book","bookable","budget","bulk","business","cache","camt052","camt053","camt054","can","capture","cases","categories","chain","classify","cli","cloning","closing","cloudflare","cmspage","collection","commerce","commitments","competency","compliance","computer","config","confirm","consent","consistency","consolidation","convention","cost","country","cross","csrd","currency","customer","customers","dashboard","data","deep","default","deploy","development","diamond","document","domain","double","dual","duality","ecommerce","employees","en","enforce","entanglement","entity","entropy","error","etsi","eu","evidence","export","factory","fair","feature","field","financial","fiscal","fixed","footer","format","fusion","fx","gate","generate","get","ghg","gl","google","government","harmony","header","heart","held","hero","heros","horo","i18n","identity","ifrs","image","incoterms","index","insurance","integrity","intercompany","internal","intl","invoices","iso","items","jobs","journal","law","leads","leases","legal","link","llm","locale","lot","maintenance","mcp","media","medical","memory","merge","message","metric","migrate","millennium","mineral","money","monitor","multi","nace","naredba","navigation","nist","notary","oecd","outward","pack","pacs004","page","pain002","party","patent","path","payable","payload","payment","peppol","period","platform","plugins","post","posts","product","proof","properties","providers","publish","quantum","query","readme","realtime","receipt","receivable","regulatory","render","research","reverse","rfc","rich","rodin","roles","rules","run","saf","safety","sale","sandbox","scheduled","schema","seal","search","security","seed","seeds","self","sequence","skill","social","spec","standard","standards","sti","storage","subscription","svg","syntax","tags","tamper","tax","taxing","team","tenant","tenants","test","testing","timeout","trading","transaction","translate","translation","translations","trello","types","ui","un","update","use","users","utility","uuid","validate","vendors","verify","versions","vocabulary","warehouse","water","wave","wco","website","widget","witness","work","workflow","xml"] as const
 
 export const UUID_MATRIX_NODES: readonly MatrixNode[] = [
@@ -1045,9 +1045,9 @@ export const UUID_MATRIX_NODES: readonly MatrixNode[] = [
   {"atom":"posts","uuid":"2867d07c-fb59-8916-8411-a9ecdd4407a7","dim":"root","band":"flow","horo":5,"path":"posts","parent":"00000000-0000-8000-8000-000000000000","prev":"5605e28a-39d2-862d-ad4c-51dd96684160","next":"cb948bec-c1d1-8af8-a18e-dab2aa235144","cross":"8caed383-d9b8-841b-83b6-a5bac43dd526","bind":"cb85f8c9-96bd-8552-9642-d538762cda94"},
   {"atom":"hooks","uuid":"cb948bec-c1d1-8af8-a18e-dab2aa235144","dim":"posts","band":"control","horo":9,"path":"posts/hooks","parent":"2867d07c-fb59-8916-8411-a9ecdd4407a7","prev":"2867d07c-fb59-8916-8411-a9ecdd4407a7","next":"b570fbb8-0e69-893c-982c-c3544d852718","cross":"1f0f44d1-df87-83de-911b-d7e953f42b99","bind":"4a98d45b-7da9-83f1-87fd-ecda4561aba9"},
   {"atom":"power","uuid":"b570fbb8-0e69-893c-982c-c3544d852718","dim":"root","band":"flow","horo":7,"path":"power","parent":"00000000-0000-8000-8000-000000000000","prev":"cb948bec-c1d1-8af8-a18e-dab2aa235144","next":"c4aa8ed3-446c-82ea-8a03-b6b049ab5555","cross":"43133529-52e3-84f4-b983-0aaa5989c7f0","bind":"934d9c46-c521-8bab-b305-486fac2affbf"},
-  {"atom":"pqc","uuid":"c4aa8ed3-446c-82ea-8a03-b6b049ab5555","dim":"root","band":"flow","horo":1,"path":"pqc","parent":"00000000-0000-8000-8000-000000000000","prev":"b570fbb8-0e69-893c-982c-c3544d852718","next":"0965f0d6-df48-8bc5-ace8-74b2e39f92b5","cross":"4172c739-6091-8703-aa04-ca56bcaec631","bind":"f0bce1c1-1129-8347-b6dc-063683d58ebb"},
-  {"atom":"prime","uuid":"0965f0d6-df48-8bc5-ace8-74b2e39f92b5","dim":"root","band":"flow","horo":4,"path":"prime","parent":"00000000-0000-8000-8000-000000000000","prev":"c4aa8ed3-446c-82ea-8a03-b6b049ab5555","next":"357161d5-fa14-8e58-baeb-e53fceb836b0","cross":"61ca4bf7-05e9-8c37-abfe-b219c7ccee7c","bind":"27e7b4ba-ad75-8dd3-836e-c77750375570"},
-  {"atom":"principal","uuid":"357161d5-fa14-8e58-baeb-e53fceb836b0","dim":"root","band":"flow","horo":5,"path":"principal","parent":"00000000-0000-8000-8000-000000000000","prev":"0965f0d6-df48-8bc5-ace8-74b2e39f92b5","next":"14477869-411d-8a7e-bfa0-fbfd969e9730","cross":"f4b4e4ed-35e6-8bf3-aa3f-be360edb20e6","bind":"1e12155b-94f2-8c54-b4d7-d95410c5660a"},
+  {"atom":"pqc","uuid":"c4aa8ed3-446c-82ea-8a03-b6b049ab5555","dim":"root","band":"flow","horo":1,"path":"pqc","parent":"00000000-0000-8000-8000-000000000000","prev":"b570fbb8-0e69-893c-982c-c3544d852718","next":"af8045d1-5e01-89d0-920b-7c05c4f846fc","cross":"144ce632-eee3-80b4-ab96-51d7f62c40e7","bind":"1c1f51a3-3c4c-8401-8973-714e911d3ee5"},
+  {"atom":"prime","uuid":"af8045d1-5e01-89d0-920b-7c05c4f846fc","dim":"root","band":"flow","horo":8,"path":"prime","parent":"00000000-0000-8000-8000-000000000000","prev":"c4aa8ed3-446c-82ea-8a03-b6b049ab5555","next":"357161d5-fa14-8e58-baeb-e53fceb836b0","cross":"61ca4bf7-05e9-8c37-abfe-b219c7ccee7c","bind":"0c8ff5f3-561c-8af0-8219-36ba556b616e"},
+  {"atom":"principal","uuid":"357161d5-fa14-8e58-baeb-e53fceb836b0","dim":"root","band":"flow","horo":5,"path":"principal","parent":"00000000-0000-8000-8000-000000000000","prev":"af8045d1-5e01-89d0-920b-7c05c4f846fc","next":"14477869-411d-8a7e-bfa0-fbfd969e9730","cross":"487f3dec-8913-87a4-b482-64a7dfed5894","bind":"9a70ed08-5bad-8e94-8a3a-8ee4826e4ebe"},
   {"atom":"product","uuid":"14477869-411d-8a7e-bfa0-fbfd969e9730","dim":"root","band":"flow","horo":4,"path":"product","parent":"00000000-0000-8000-8000-000000000000","prev":"357161d5-fa14-8e58-baeb-e53fceb836b0","next":"92950f1d-2fa1-89dc-b2fd-66d7a452504a","cross":"c16776c8-3cb7-86fe-8480-f1e922e4ddd2","bind":"42f4249b-559e-86b5-b61f-14b2a4b9cc46"},
   {"atom":"price","uuid":"92950f1d-2fa1-89dc-b2fd-66d7a452504a","dim":"product","band":"flow","horo":1,"path":"product/price","parent":"14477869-411d-8a7e-bfa0-fbfd969e9730","prev":"14477869-411d-8a7e-bfa0-fbfd969e9730","next":"6dab567a-dd98-8c3b-89bf-e80c48b47794","cross":"5af6a8a4-a61a-82ee-a91f-6303786ba080","bind":"246f7669-4348-8d57-bd06-4c4896fa0679"},
   {"atom":"proof","uuid":"6dab567a-dd98-8c3b-89bf-e80c48b47794","dim":"root","band":"flow","horo":8,"path":"proof","parent":"00000000-0000-8000-8000-000000000000","prev":"92950f1d-2fa1-89dc-b2fd-66d7a452504a","next":"00e5089d-bd4e-8557-bd70-21a0fc49050f","cross":"4ecc9db0-e98e-86c4-aecc-d80e809e66e3","bind":"648f9bc8-bd9d-8179-9da0-55a2738a61ce"},
@@ -9897,12 +9897,13 @@ export const UUID_MATRIX_EDGES: readonly MatrixEdge[] = [
   {"f":1026,"t":2785,"binding":"b6047f0c-9071-8f02-a4e2-93da6970ef95","dir":1},
   {"f":1026,"t":897,"binding":"b8426446-007c-835e-b045-e8d710e35ff5","dir":7},
   {"f":1026,"t":765,"binding":"02cae271-d469-8293-810a-c4fea91ee2ad","dir":8},
-  {"f":1028,"t":1003,"binding":"d9498663-f19e-81f6-ba85-ea4f0b95787d","dir":8},
-  {"f":1028,"t":646,"binding":"433f4cae-593d-8999-a93b-99f75badc5ef","dir":7},
-  {"f":1028,"t":1622,"binding":"f759493c-a03c-892e-8e8b-dd2d7282c8b9","dir":1},
-  {"f":1028,"t":1253,"binding":"862f594e-768c-8f56-b2d8-bae961738d09","dir":1},
-  {"f":1028,"t":765,"binding":"3588e8d6-bc6d-864f-8217-2ce8a05079a1","dir":2},
-  {"f":1028,"t":897,"binding":"feeacb9a-c902-8a7e-b3e1-80f98d9b41cb","dir":4},
+  {"f":1028,"t":1003,"binding":"54c76b60-e78a-8a75-ba5b-ce08fa806708","dir":7},
+  {"f":1028,"t":646,"binding":"59657356-92b9-89d5-a704-88b166b6d33b","dir":5},
+  {"f":1028,"t":1622,"binding":"b059fd26-4963-8655-84ba-46be1d65fef6","dir":2},
+  {"f":1028,"t":1253,"binding":"48f3f8bb-80f4-8c11-a9dc-2576c311de76","dir":2},
+  {"f":1028,"t":765,"binding":"39ba9bb0-3420-8f20-9f00-f4f4469ea85c","dir":4},
+  {"f":1028,"t":1056,"binding":"0ccada5d-f998-8c76-9699-dd989fb7cb72","dir":7},
+  {"f":1028,"t":897,"binding":"94c7a07a-7282-854b-80dc-12dc6e14109d","dir":8},
   {"f":1029,"t":765,"binding":"9bb78317-cbd5-8d6f-a2e6-2f4429c32738","dir":7},
   {"f":1029,"t":137,"binding":"e586d416-ee44-8aad-9c6d-0dd0381135b3","dir":6},
   {"f":1029,"t":1253,"binding":"2e8fad42-9455-8217-8252-1413a427ff92","dir":8},
@@ -31819,12 +31820,13 @@ export const UUID_MATRIX_EDGES: readonly MatrixEdge[] = [
   {"f":3648,"t":1026,"binding":"ab049212-c316-8f50-bf5c-d1096efeae65","dir":9},
   {"f":2785,"t":1026,"binding":"b6047f0c-9071-8f02-a4e2-93da6970ef95","dir":1},
   {"f":897,"t":1026,"binding":"b8426446-007c-835e-b045-e8d710e35ff5","dir":7},
-  {"f":1003,"t":1028,"binding":"d9498663-f19e-81f6-ba85-ea4f0b95787d","dir":8},
-  {"f":646,"t":1028,"binding":"433f4cae-593d-8999-a93b-99f75badc5ef","dir":7},
-  {"f":1622,"t":1028,"binding":"f759493c-a03c-892e-8e8b-dd2d7282c8b9","dir":1},
-  {"f":1253,"t":1028,"binding":"862f594e-768c-8f56-b2d8-bae961738d09","dir":1},
-  {"f":765,"t":1028,"binding":"3588e8d6-bc6d-864f-8217-2ce8a05079a1","dir":2},
-  {"f":897,"t":1028,"binding":"feeacb9a-c902-8a7e-b3e1-80f98d9b41cb","dir":4},
+  {"f":1003,"t":1028,"binding":"54c76b60-e78a-8a75-ba5b-ce08fa806708","dir":7},
+  {"f":646,"t":1028,"binding":"59657356-92b9-89d5-a704-88b166b6d33b","dir":5},
+  {"f":1622,"t":1028,"binding":"b059fd26-4963-8655-84ba-46be1d65fef6","dir":2},
+  {"f":1253,"t":1028,"binding":"48f3f8bb-80f4-8c11-a9dc-2576c311de76","dir":2},
+  {"f":765,"t":1028,"binding":"39ba9bb0-3420-8f20-9f00-f4f4469ea85c","dir":4},
+  {"f":1056,"t":1028,"binding":"0ccada5d-f998-8c76-9699-dd989fb7cb72","dir":7},
+  {"f":897,"t":1028,"binding":"94c7a07a-7282-854b-80dc-12dc6e14109d","dir":8},
   {"f":765,"t":1029,"binding":"9bb78317-cbd5-8d6f-a2e6-2f4429c32738","dir":7},
   {"f":137,"t":1029,"binding":"e586d416-ee44-8aad-9c6d-0dd0381135b3","dir":6},
   {"f":1253,"t":1029,"binding":"2e8fad42-9455-8217-8252-1413a427ff92","dir":8},

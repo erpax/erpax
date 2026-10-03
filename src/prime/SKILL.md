@@ -2,35 +2,35 @@
 name: prime
 description: "Use when reasoning about prime — Use for the multiplicative basis — isPrime (deterministic Miller–Rabin, exact not probabilistic) and factor (the decode fold: an integer back to its prime generators). The counterpart to pi's positional basis. Run: tsx src/prime/index.ts <n>"
 atomPath: prime
-coordinate: "prime · 4/weave · 0965f0d6"
-contentUuid: "d52354d0-9e4a-5366-9be9-a349db3bf860"
-diamondUuid: "047b895c-8436-8d88-9de3-a0702fa3632d"
-uuid: "0965f0d6-df48-8bc5-ace8-74b2e39f92b5"
-horo: 4
+coordinate: "prime · 8/crest · af8045d1"
+contentUuid: "e0683456-bee3-5542-91e5-be6890fad24a"
+diamondUuid: "fac042ec-58f0-8fb8-99bd-2d506947b5d9"
+uuid: "af8045d1-5e01-89d0-920b-7c05c4f846fc"
+horo: 8
 typography:
   partition: prime
-  bondDegree: 18
+  bondDegree: 21
 standards:
   - Fundamental Theorem of Arithmetic — unique prime factorisation (Euclid; Gauss)
   - "Shor 1994 — integer factorisation by quantum period-finding (proven, not claimed)"
 bindings: []
 signatures:
-  computationUuid: "09e5e1d2-50f2-8056-b2b6-f8b05e19dd57"
+  computationUuid: "11a5f939-3df6-8659-881e-ba5545901a76"
   stages:
     - stage: path
       stageUuid: "9af4b6d4-df67-8dac-9eff-58560cb8ac79"
     - stage: trinity
       stageUuid: "856eb86f-8be5-8f3e-af67-5c3faa2bc74c"
     - stage: boundary
-      stageUuid: "4fd6f549-dbd5-8be0-b7f0-0f0e7546bf86"
+      stageUuid: "e3fbb9d0-b45d-8de6-a4d8-8aa6194aa4b7"
     - stage: links
-      stageUuid: "42e96511-b6f8-8743-a582-a5ef9386c319"
+      stageUuid: "f8028775-6b38-8caf-bf57-28c39c7e1ea1"
     - stage: horo
-      stageUuid: "f99988bb-8e17-80a9-954a-939db777ee55"
+      stageUuid: "e3b28052-cce2-8278-bb4b-c0932645bf74"
     - stage: seal
       stageUuid: "25b11aca-fe49-8f9d-99e7-2bfca22f3424"
     - stage: uuid
-      stageUuid: "2179fcdd-5606-87e9-885f-5b4ebe0a68d7"
+      stageUuid: "fdbf6a49-d8d3-8c80-a679-c9bcc1f5b2ae"
 version: 2
 ---
 # prime — the multiplicative basis, and factoring is the decode fold
