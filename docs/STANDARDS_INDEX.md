@@ -2321,7 +2321,7 @@ src/quantum/deploy/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/device/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/digit/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/emr/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/quantum/entanglement/index.ts:18: * @standard ER=EPR (Maldacena & Susskind, 2013); monogamy (Coffman–Kundu–Wootters, PRA 61 052306, 2000)
+src/quantum/entanglement/index.ts:20: * @standard ER=EPR (Maldacena & Susskind, 2013); monogamy (Coffman–Kundu–Wootters, PRA 61 052306, 2000)
 src/quantum/export/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/fs/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/ftl/memo/disk/index.ts:8: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: one truth, one address
@@ -2341,6 +2341,7 @@ src/quantum/pi/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/port/index.ts:10: * @standard RFC 9562 §5.8 content-uuid (the port identity)
 src/quantum/pwa/index.ts:12: * @standard W3C Web App Manifest + Service Worker (content-addressed cache)
 src/quantum/query/index.ts:9: * @standard RFC 9562 §5.8 content-uuid (the query cache key)
+src/quantum/register/index.ts:18: * @standard Nielsen & Chuang §1.3.6 — the Bell state as H then CNOT
 src/quantum/request/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/sanitization/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/schema/index.ts:12: * @standard RFC 9562 §5.8 content-uuid; schema.org
@@ -6136,7 +6137,7 @@ src/quantum/deploy/index.ts:9: * @audit ordered band from @/deploy; never hand-a
 src/quantum/device/index.ts:10: * @audit pure functions; never hand-asserted sensing claims
 src/quantum/digit/index.ts:9: * @audit digit trace computed from live matrix; never hand-maintained
 src/quantum/emr/index.ts:12: * @audit pure chain invariants; never hand-asserted clinical records
-src/quantum/entanglement/index.ts:19: * @audit composed from ../../entanglement + ../index.ts; computed on the live matrix
+src/quantum/entanglement/index.ts:21: * @audit composed from ../../entanglement + ../index.ts + ../register; computed on the live matrix
 src/quantum/entanglement/registry/index.ts:5: * @audit computed from live collection sources; collapse hooks are canonical ids
 src/quantum/export/index.ts:9: * @audit re-exports boundary organ; computed live, never authored
 src/quantum/fs/index.ts:9: * @audit content-address from @/integrity; never hand-pinned paths

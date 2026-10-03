@@ -1,4 +1,4 @@
-import { algebraSqrt, exactAbs } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * trading/quantum — quantum realtime trading across economic surfaces.
  *
@@ -15,6 +15,7 @@ import { algebraSqrt, exactAbs } from '@/algebra'
  * @see ../index.ts · ../../quantum · ../../team/comms · ../../realtime · ./SKILL.md
  */
 import { computeContentUuid, jcsCanonicalize, uuid } from '@/integrity'
+import { normaliseAmplitudes } from '@/quantum/register'
 import { doubleTorusCostLog2 } from '@/quantum'
 import { toDoubleEntry, isBalanced, type Entry } from '@/entry'
 import { conserves, trialBalance } from '@/conservation'
@@ -103,12 +104,7 @@ export function normaliseQuoteAmplitudes(
   for (const [k, v] of Object.entries(raw)) {
     if (Number.isFinite(v) && v !== 0) amp[k] = v!
   }
-  const norm = algebraSqrt(Object.values(amp).reduce((s, a) => s + a * a, 0))
-  if (norm === 0) {
-    throw new Error('quantumTradeQuote: zero superposition — provide at least one non-zero amplitude')
-  }
-  for (const k of Object.keys(amp)) amp[k] = amp[k]! / norm
-  return amp
+  return normaliseAmplitudes(amp, 'quantumTradeQuote')
 }
 
 /** Total probability on the quote superposition — 1 when normalised. */

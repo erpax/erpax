@@ -69,7 +69,7 @@ The **physics facet** of [[entanglement]]: the quantum laws the corpus link-fiel
 
 The corpus is **maximally entangled** when reciprocity = 1 **and** no-cloning holds — the Bell-test analogue, the geometry closed (the [[quantum]] double-torus, ∞ tamper cost).
 
-**HONEST.** The matrix is a *classical* graph; "entanglement" here is reciprocity + monogamy — the computable shadow of the physics, not a superposed, Bell-violating quantum state.
+**HONEST.** The matrix is a *classical* graph; "entanglement" here is reciprocity + monogamy — the computable shadow of the physics, not a superposed quantum state. The one real Bell state the corpus constructs lives in [[quantum]]/register — exact integer amplitudes, H then CNOT, determinant a₀a₃ − a₁a₂ = 1 ≠ 0 — and `report().bell` carries that witness beside the shadow, so a reader sees which claim rests on which.
 
 Matter-twin: `src/quantum/entanglement/index.ts` (`isMaximallyEntangled` · `report`). Composes [[entanglement]] · [[quantum]] · [[cloning]] · [[gravity]] · [[singularity]] · [[matrix]].
 

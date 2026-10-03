@@ -11,16 +11,19 @@
  *  - ER=EPR (Maldacena–Susskind, 2013): entanglement IS geometry (../gravity).
  *
  * HONEST: the matrix is a CLASSICAL graph; "entanglement" here is reciprocity + monogamy,
- * the computable shadow of the physics — there is no superposition or Bell-violating state.
+ * the computable shadow of the physics. The one genuine Bell state the corpus constructs lives in
+ * ../register — exact integer amplitudes, H then CNOT — and `report().bell` is its determinant
+ * witness, so the shadow and the thing it shadows are read from the same report.
  *
  *   tsx src/quantum/entanglement/index.ts
  *
  * @standard ER=EPR (Maldacena & Susskind, 2013); monogamy (Coffman–Kundu–Wootters, PRA 61 052306, 2000)
- * @audit composed from ../../entanglement + ../index.ts; computed on the live matrix
- * @see ../../entanglement -- ../index.ts (entanglement/entangle) -- ../gravity (ER=EPR) -- ./SKILL.md
+ * @audit composed from ../../entanglement + ../index.ts + ../register; computed on the live matrix
+ * @see ../../entanglement -- ../index.ts (entanglement/entangle) -- ../register (bell) -- ../gravity (ER=EPR) -- ./SKILL.md
  */
 import { entanglement as matrixEntanglement } from '@/quantum'
 import { reciprocity, isFullyEntangled, noCloning } from '@/entanglement'
+import { bell, entangled } from '@/quantum/register'
 import {
   FIELD_ENTANGLEMENT_REGISTRY,
   fieldEntanglementKey,
@@ -60,6 +63,8 @@ export interface EntanglementReport {
   reciprocity: number
   noCloning: boolean
   maximal: boolean
+  /** The real Bell state (../register) is entangled: a₀a₃ − a₁a₂ ≠ 0. The physics, not its shadow. */
+  bell: boolean
 }
 
 /**
@@ -84,6 +89,7 @@ export const report = (): EntanglementReport => {
     reciprocity: reciprocity(),
     noCloning: noCloning(),
     maximal: isMaximallyEntangled(),
+    bell: entangled(bell()),
   }
 }
 

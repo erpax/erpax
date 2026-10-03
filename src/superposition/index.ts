@@ -1,4 +1,4 @@
-import { algebraSqrt } from '@/algebra'
+import { normaliseAmplitudes } from '@/quantum/register'
 /**
  * superposition -- before a [[leap]] is measured, the state is not on one [[level]]
  * but a weighted combination of ALL seven [[horo]] eigenstates at once: |ψ⟩ = Σ
@@ -29,10 +29,7 @@ const zero = (): Record<HoroStep, number> =>
 export function superpose(raw: Partial<Record<HoroStep, number>>): State {
   const amp = zero()
   for (const d of HORO_DIGITS) amp[d] = raw[d] ?? 0
-  const norm = algebraSqrt(HORO_DIGITS.reduce((s, d) => s + amp[d] * amp[d], 0))
-  if (norm === 0) throw new Error('superposition: the zero state has no normalisation — give at least one non-zero amplitude')
-  for (const d of HORO_DIGITS) amp[d] = amp[d] / norm
-  return { amplitudes: amp }
+  return { amplitudes: normaliseAmplitudes<HoroStep>(amp, 'superposition') }
 }
 
 /** The Born rule: the probability of measuring each level, |cₙ|² (sums to 1). */

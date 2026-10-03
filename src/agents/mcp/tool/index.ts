@@ -77,5 +77,6 @@ export { buildVersionsTools } from './versions'
 export { buildOutwardTools } from './outward'
 export { buildFrontierTools } from './frontier'
 export { buildWitnessTools } from './witness'
+export { buildQuantumTools } from './quantum'
 
 /** @index-cross.foldback child=agents/mcp/tool parent=agents/mcp — this cross folds back into its parent. */

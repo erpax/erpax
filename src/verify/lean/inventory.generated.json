@@ -1,10 +1,10 @@
 {
-  "sealedAt": "2026-09-21",
+  "sealedAt": "2026-10-03",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "5e89887c35fe1204",
+  "sourcesHash": "03dd15361a26abd7",
   "census": {
-    "theorems": 200,
-    "axiomFree": 125,
+    "theorems": 211,
+    "axiomFree": 136,
     "standardAxioms": 75,
     "stubbed": 0
   },
@@ -1344,6 +1344,78 @@
             "Quot.sound"
           ],
           "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Register.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Register.bell_path",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.ghz_path",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.noise_is_identity",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.cnot_involution",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.bell_amplitudes",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.bell_normalised",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.bell_entangled",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.plus_is_product",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.interfere",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.hadamard_doubles_weight",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Register.cnot_preserves_weight",
+          "axioms": [],
+          "axiomFree": true,
           "stubbed": false
         }
       ]
