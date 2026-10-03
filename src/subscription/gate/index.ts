@@ -19,7 +19,9 @@
 import { Access, PayloadRequest } from 'payload'
 import type { Subscription } from '@/types'
 import type { Iso27002ControlId } from '@/iso/27002'
-import { getUserContext } from '@/auth'
+// From the LEAF, not from `@/auth`: the predicates lazily import this gate for the feature guard, so
+// importing them back closed a two-file loop. Identity is all the gate needs.
+import { getUserContext } from '@/auth/context'
 
 /**
  * Canonical ISO 27002 controls these gates exercise:

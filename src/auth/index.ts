@@ -15,23 +15,14 @@
 
 import type { Access, PayloadRequest, Where } from 'payload'
 import type { UserContext, UserRole } from '@/types/auth'
-import type { User } from '@/types'
 import { ACCOUNTING_WRITE_ROLES } from '@/roles/registry'
+import { getUserContext } from './context'
 
 export { superAdminOnly } from '@/is/super/admin'
-
-/**
- * Narrow `req.user` (the `User | PayloadMcpApiKey` auth union) to the
- * app `User`. Machine identities (MCP API keys) carry no `roles` and
- * resolve to `null`. The single canonical touch-point for `req.user`:
- * access predicates, hooks, and services all compose with this atom
- * instead of poking the union directly.
- */
-export function getUser(req: PayloadRequest): User | null {
-  const u = req.user
-  if (!u || !('roles' in u)) return null
-  return u as User
-}
+// The identity readers live in the leaf `auth/context` so the subscription gate can read WHO is
+// acting without importing the predicates — the two-file loop [[rules]]/cycle named. The face is
+// unchanged: both names are still offered here ([[rules]]/face).
+export { getUser, getUserContext } from './context'
 
 /**
  * The acting identity's id as a string, for ANY auth type (app `User`
@@ -41,31 +32,6 @@ export function getUser(req: PayloadRequest): User | null {
  */
 export function getActorId(req?: PayloadRequest): string | undefined {
   return req?.user ? String(req.user.id) : undefined
-}
-
-/**
- * Extract user context from request.
- *
- * Derives `tenant` from the canonical `User.tenants[]` array
- * (multi-tenant plugin convention). Picks the first tenant; multi-tenant
- * users with several memberships switch active tenant via the
- * payload-tenant cookie (handled by `getTenantFromRequest`).
- */
-export function getUserContext(req: PayloadRequest): UserContext | null {
-  const user = getUser(req)
-  if (!user) return null
-
-  const firstTenantRef = user.tenants?.[0]?.tenant
-  const tenant =
-    typeof firstTenantRef === 'number' || typeof firstTenantRef === 'string'
-      ? String(firstTenantRef)
-      : ''
-
-  return {
-    id: String(user.id),
-    tenant,
-    roles: (user.roles as UserRole[]) ?? [],
-  }
 }
 
 /**

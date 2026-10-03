@@ -408,8 +408,9 @@ src/audit/trail/write-audit-event.ts:47: * @standard SOX §404 internal controls
 src/audit/trail/write-audit-event.ts:48: * @standard ISO 27001 Annex A.12.4 logging + monitoring
 src/audit/trail/write-audit-event.ts:49: * @standard NIST SP 800-92 §3.4 log integrity
 src/aura/find-gaps.ts:25: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/auth/context/index.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control
 src/auth/index.ts:11: * @standard OWASP-ASVS V4 access-control
-src/auth/index.ts:199: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
+src/auth/index.ts:165: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
 src/auth/index.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/auth/index.ts:5: * @standard NIST SP-800-162 attribute-based-access-control
 src/authenticated/or/published/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
@@ -2787,7 +2788,7 @@ src/stream/index.ts:45: * @standard ReactiveX / W3C Streams API (AsyncIterable s
 src/stream/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/stream/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering
 src/subscription/gate/index.ts:12: * @standard NIST INCITS-359-2012 role-based-access-control
-src/subscription/gate/index.ts:214: * @standard NIST INCITS-359-2012 role-based-access-control
+src/subscription/gate/index.ts:216: * @standard NIST INCITS-359-2012 role-based-access-control
 src/subscription/gate/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/subscription/gate/test.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
 src/subscription/plans/index.ts:9: * @standard ISO-4217:2015 currency-codes
@@ -4163,7 +4164,7 @@ src/spec/generator/multimedia.ts:33: * @compliance SOX §404 process-walk-throug
 src/spec/generator/multimedia.ts:34: * @compliance ISO-27001 A.5.36 conformance-with-policies
 src/standard/collection/hook/index.ts:15: * @compliance SOX §404 internal-controls provenance
 src/subscription/gate/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
-src/subscription/gate/index.ts:216: * @compliance SOC-2 CC6.1 logical-access-controls
+src/subscription/gate/index.ts:218: * @compliance SOC-2 CC6.1 logical-access-controls
 src/subscription/gate/test.ts:10: * @compliance SOC-2 CC6.1 logical-access-controls
 src/subscription/plans/index.ts:12: * @compliance SOX §404 internal-controls
 src/subscription/plans/subscriptions/hooks/emitLifecycleEvents.ts:30: * @compliance SOX §404 internal-controls revenue-recognition
@@ -5055,8 +5056,9 @@ src/app/(frontend)/tenant-slugs/layout.tsx:7: * @security ISO-27001 A.5.23 cloud
 src/audit/events/index.ts:49: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/audit/events/index.ts:50: * @security ISO-27002 §8.15 logging
 src/audit/submissions/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/auth/context/index.ts:12: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/auth/index.ts:10: * @security ISO-27002 §5.4 segregation-of-duties
-src/auth/index.ts:200: * @security ISO-27001 A.5.15 access-control
+src/auth/index.ts:166: * @security ISO-27001 A.5.15 access-control
 src/auth/index.ts:6: * @security ISO-27001 A.5.15 access-control
 src/auth/index.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/auth/index.ts:8: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5402,7 +5404,7 @@ src/site/tenant/where/index.ts:6: * @security ISO-27002 §8.3 information-access
 src/spec/generator/extractor.ts:17: *   @security      <body> <id> [free-text]      ← alias for @standard
 src/standard/collection/hook/index.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-field
 src/subscription/gate/index.ts:13: * @security ISO-27002 §5.15 access-control
-src/subscription/gate/index.ts:215: * @security ISO-27002 §5.15 access-control feature-entitlement
+src/subscription/gate/index.ts:217: * @security ISO-27002 §5.15 access-control feature-entitlement
 src/subscription/gate/test.ts:9: * @security ISO-27002 §5.15 access-control
 src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts:11: * @security ISO-27002 §8.24 use-of-cryptography
 src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts:12: * @security ISO-27001 A.8.24 use-of-cryptography

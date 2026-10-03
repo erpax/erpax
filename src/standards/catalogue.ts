@@ -5605,10 +5605,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Role-Based Access Control",
     "uuid": "e67e2dd4-b480-802e-be8b-990117b82dc6",
     "color": "hsl(326 65% 58%)",
-    "count": 53,
+    "count": 54,
     "modules": [
       {
         "path": "src/app/(frontend)/next/seed/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/auth/context/index.ts",
         "section": ""
       },
       {
@@ -5697,10 +5701,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/nist/incits/359/conventions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/nist/incits/359/conventions/test.ts",
         "section": ""
       }
     ]
