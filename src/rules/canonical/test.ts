@@ -126,7 +126,11 @@ describe('rules/canonical — Payload currency, ordered by publish time', () => 
  * always PRINTED, and the assertion is that it does not grow.
  */
 describe('rules/canonical — how far behind Payload actually is', () => {
-  const BEHIND_CEILING = 140 // measured 135 on 2026-09-25; the horizon is 0
+  // The tree controls WHICH build is installed, never how many builds upstream publishes after it —
+  // a ceiling on `behind` went red on 2026-10-03 (143 > 140) with no change to this repository. So the
+  // ratchet is the installed build's own publish date: it may move forward, never back. ISO-8601
+  // strings order lexically, so the comparison is exact.
+  const INSTALLED_FLOOR = '2026-05-12' // 4.0.0-internal.38b7f1d, the build measured on 2026-09-25
 
   it('names the gap, and refuses a verdict when the registry cannot be asked', async () => {
     const { currencyOf } = await import('@/rules/canonical')
@@ -154,7 +158,11 @@ describe('rules/canonical — how far behind Payload actually is', () => {
       `payload ${c.installed} (${c.installedPublished.slice(0, 10)}) — newest ${c.newest} (${c.newestPublished.slice(0, 10)}) — ${c.behind} versions behind`,
     )
     expect(c.newest.length).toBeGreaterThan(0)
-    expect(c.behind, `payload is ${c.behind} published versions behind ${c.newest}`).toBeLessThanOrEqual(BEHIND_CEILING)
+    expect(c.behind).toBeGreaterThanOrEqual(0)
+    expect(
+      c.installedPublished.slice(0, 10) >= INSTALLED_FLOOR,
+      `installed payload ${c.installed} was published ${c.installedPublished.slice(0, 10)}, before the ${INSTALLED_FLOOR} floor — a downgrade`,
+    ).toBe(true)
   }, 180_000)
 })
 

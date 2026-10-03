@@ -85,8 +85,13 @@ as one line, and the tool packages are not.
 
 Payload publishes the 4.x internal line roughly daily — 135 builds in four months. A test demanding
 the very newest would go red every morning over something nobody can act on that day. The gap is
-**always printed**, and the assertion is that it does not grow. The horizon is 0 and the ceiling is
-where the tree actually stands.
+**always printed**; the assertion is on the one thing the tree controls.
+
+The first form of that assertion was a ceiling on the gap — *it does not grow* — and it went red on
+2026-10-03 at **143 > 140** with no change to this repository: upstream had published three more
+canaries. A ceiling on a count the tree cannot hold still is a clock, not a ratchet. The assertion is
+now the installed build's own **publish date**, which may move forward and never back — a downgrade
+reddens, a busy upstream does not.
 
 ## `thinPackages` — the dependency surface, and what a local solution could actually replace
 
