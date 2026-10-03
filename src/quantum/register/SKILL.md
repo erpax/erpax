@@ -2,11 +2,11 @@
 name: register
 description: "Use when a quantum state must be DECIDED rather than approximated — an exact-amplitude register (integer amplitudes, halvings instead of division) with H · X · Z · CNOT · SWAP, the Bell and GHZ states, a determinant entanglement witness, enumerated shots, and the one Float Born normaliser the three Float copies fold onto; kernel-checked twin in Register.lean."
 atomPath: "quantum/register"
-coordinate: "quantum/register · 4/weave · 6c9030e4"
-contentUuid: "945b04b4-3d5e-5624-b9ec-76c7f28334c7"
-diamondUuid: "764dbf7e-81be-8c43-a532-bab5633af6f9"
-uuid: "6c9030e4-8c51-846d-8b57-4055ef211194"
-horo: 4
+coordinate: "quantum/register · 7/descent · 376eb7ab"
+contentUuid: "dad892fb-9b26-55c5-b836-cfe6729fa356"
+diamondUuid: "25d80b62-20f8-86de-94a7-3558951c422a"
+uuid: "376eb7ab-1e28-8dea-b6ff-db1f89f819eb"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "Nielsen & Chuang §1.3.6 — the Bell state as H then CNOT"
 bindings: []
 signatures:
-  computationUuid: "ee8221b1-13bc-8434-b8e7-0af3d1f4e7d8"
+  computationUuid: "8d365cac-2490-8d12-87e2-741b91ff15ad"
   stages:
     - stage: path
       stageUuid: "54b3a83a-36cb-8802-ba5f-db68ba860556"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "54612dcc-8b31-8e74-ac58-780dd15c3b72"
     - stage: horo
-      stageUuid: "aefe2c72-a83e-82d3-b1b2-d0d5c4f9af69"
+      stageUuid: "117e8307-67c2-8fc9-a3db-09dda50e413b"
     - stage: seal
       stageUuid: "7c182352-d3a4-8272-9344-c7257ddb38a8"
     - stage: uuid
-      stageUuid: "056aa3f9-1727-89e8-af31-622ed759fe85"
+      stageUuid: "c89690b9-5e06-84c4-aee5-4abdb82c0185"
 quantum:
   superposition:
     - duality
@@ -48,8 +48,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "ee8221b1-13bc-8434-b8e7-0af3d1f4e7d8"
-    contentUuid: "945b04b4-3d5e-5624-b9ec-76c7f28334c7"
+    computationUuid: "8d365cac-2490-8d12-87e2-741b91ff15ad"
+    contentUuid: "dad892fb-9b26-55c5-b836-cfe6729fa356"
 version: 2
 ---
 # quantum/register — the Bell state is an integer identity, or it is a Float that proves nothing
@@ -137,4 +137,4 @@ where a Float must remain, give it one address so the seam between approximate a
 
 Composes: [[quantum]] · [[superposition]] · [[qubit]] · [[rules]]/copy · [[law]].
 
-<sub>content-uuid `945b04b4-3d5e-5624-b9ec-76c7f28334c7` · account `quantum/register` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `dad892fb-9b26-55c5-b836-cfe6729fa356` · account `quantum/register` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
