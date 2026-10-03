@@ -7,6 +7,7 @@
  * @standard schema.org ScholarlyArticle
  */
 import type { Metadata } from 'next'
+import { jsonLdText } from '@/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { citationGraph, publishableResults, scholarlyArticle } from '@/publish/registry'
@@ -41,7 +42,7 @@ export default async function PublicationPage({ params }: { params: Promise<{ sl
     <main className="container py-16">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(scholarlyArticle(r, cites, SITE)) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdText(scholarlyArticle(r, cites, SITE)) }}
       />
       <p className="text-sm">
         <Link href="/publications">← all publications</Link>

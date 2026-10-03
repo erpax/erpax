@@ -1,5 +1,6 @@
 import { exactMaxOf, exactMinOf } from '@/algebra'
 import { relationIdString as relId } from '@/field/relation'
+import { writeNested } from '@/field/nested'
 /**
  * recompute-parent-aggregates — generic afterChange/afterDelete factory that
  * caches a parent document's denormalised SUM / COUNT / MIN / MAX columns from
@@ -81,18 +82,6 @@ function getPath(obj: unknown, path: string): unknown {
     )
 }
 
-function setPath(obj: Record<string, unknown>, path: string, value: unknown): void {
-  const keys = path.split('.')
-  let cur = obj
-  for (let i = 0; i < keys.length - 1; i++) {
-    const k = keys[i]
-    const next = cur[k]
-    if (next == null || typeof next !== 'object') cur[k] = {}
-    cur = cur[k] as Record<string, unknown>
-  }
-  cur[keys[keys.length - 1]] = value
-}
-
 function num(v: unknown): number {
   const n = typeof v === 'number' ? v : Number(v)
   return Number.isFinite(n) ? n : 0
@@ -155,7 +144,7 @@ async function recomputeParent(
         const cur = parent[top]
         data[top] = cur && typeof cur === 'object' && !Array.isArray(cur) ? { ...(cur as Record<string, unknown>) } : {}
       }
-      setPath(data, path, value)
+      writeNested(data, path, value)
     }
     const read = (path: string): unknown => {
       const fromData = getPath(data, path)

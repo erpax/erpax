@@ -13,7 +13,9 @@ var ERPAX_AGENT_SURFACES = [
   "skills.json"
 ];
 function normalizeErpaxRepoUrl(url) {
-  const trimmed = url.trim().replace(/\/+$/, "").replace(/\.git$/i, "");
+  let trimmed = url.trim();
+  while (trimmed.endsWith("/")) trimmed = trimmed.slice(0, -1);
+  trimmed = trimmed.replace(/\.git$/i, "");
   if (/^(?:https?:\/\/)?github\.com\/erpax\/erpax(?:\/.*)?$/i.test(trimmed)) {
     return ERPAX_CANONICAL_REPO;
   }

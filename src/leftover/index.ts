@@ -368,7 +368,7 @@ export function deriveLeftoverProof(
   const contents = `import { describe, it, expect } from 'vitest'
 
 /** Credit for claims in ${bit} — chatHealLeftoverWave; not an empty gaming test. */
-describe('${bit} — leftover wave proof', () => {${body}
+describe(${JSON.stringify(`${bit} — leftover wave proof`)}, () => {${body}
 })
 `
   return {

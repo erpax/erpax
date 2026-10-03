@@ -46,7 +46,10 @@ export type WireFromRepoUrl = WireFromRepoUrlResult | WireFromRepoUrlError
 
 /** Normalize accepted erpax GitHub URLs to the canonical repo URL, or null if not erpax. */
 export function normalizeErpaxRepoUrl(url: string): string | null {
-  const trimmed = url.trim().replace(/\/+$/, '').replace(/\.git$/i, '')
+  // `/\/+$/` backtracks polynomially on a run of slashes (CodeQL js/polynomial-redos on library input)
+  let trimmed = url.trim()
+  while (trimmed.endsWith('/')) trimmed = trimmed.slice(0, -1)
+  trimmed = trimmed.replace(/\.git$/i, '')
   if (/^(?:https?:\/\/)?github\.com\/erpax\/erpax(?:\/.*)?$/i.test(trimmed)) {
     return ERPAX_CANONICAL_REPO
   }

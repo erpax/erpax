@@ -46,7 +46,10 @@ const unlink = (s: string): string => s.replace(/\[\[([^\]]+)\]\]/g, '$1')
 export function deriveDescription(leaf: string, text: string): string {
   const prior = existingDescription(text)
   if (prior) {
-    const stripped = unlink(prior).replace(new RegExp(`^Use when reasoning about ${leaf} —\\s*`, 'i'), '').trim()
+    // `leaf` comes from the command line: compared as text, never compiled into a pattern
+    const unlinked = unlink(prior)
+    const prefix = `use when reasoning about ${leaf} —`
+    const stripped = (unlinked.toLowerCase().startsWith(prefix.toLowerCase()) ? unlinked.slice(prefix.length) : unlinked).trim()
     if (/^Use when/i.test(stripped)) return stripped
     return `Use when reasoning about ${leaf} — ${stripped}`
   }

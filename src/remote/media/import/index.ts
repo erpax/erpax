@@ -13,6 +13,7 @@
  */
 
 import type { CollectionBeforeChangeHook, File as PayloadUploadFile, PayloadRequest } from 'payload'
+import { readNested, writeNested } from '@/field/nested'
 
 import { fetchRemoteFileForPayload } from '@/fetch/remote/file'
 
@@ -27,8 +28,10 @@ export function isLikelyRemoteImageUrl(raw: string): boolean {
   try {
     const u = new URL(s)
     if (IMAGE_PATH_EXT_RE.test(u.pathname + u.search)) return true
-    if (u.hostname.includes('googleusercontent.com')) return true
-    if (u.hostname.endsWith('blogspot.com') && u.pathname.includes('img')) return true
+    // the host is the domain or a subdomain of it — `evilgoogleusercontent.com` is neither
+    const under = (domain: string): boolean => u.hostname === domain || u.hostname.endsWith(`.${domain}`)
+    if (under('googleusercontent.com')) return true
+    if (under('blogspot.com') && u.pathname.includes('img')) return true
     return false
   } catch {
     return false
@@ -165,29 +168,6 @@ export function tenantIdFromDoc(data: Record<string, unknown>): string | undefin
   return undefined
 }
 
-function getAtPath(obj: Record<string, unknown>, path: string): unknown {
-  const parts = path.split('.')
-  let cur: unknown = obj
-  for (const k of parts) {
-    if (!cur || typeof cur !== 'object') return undefined
-    cur = (cur as Record<string, unknown>)[k]
-  }
-  return cur
-}
-
-function setAtPath(obj: Record<string, unknown>, path: string, value: unknown): void {
-  const parts = path.split('.')
-  let cur: Record<string, unknown> = obj
-  for (let i = 0; i < parts.length - 1; i++) {
-    const k = parts[i]
-    const next = cur[k]
-    if (!next || typeof next !== 'object' || Array.isArray(next)) return
-    cur = next as Record<string, unknown>
-  }
-  const last = parts[parts.length - 1]
-  cur[last] = value
-}
-
 /** Supports `meta.image`, `heroImage`, or `gallery[].image` (array-of-objects). */
 async function coerceUploadUrlPaths(
   data: Record<string, unknown>,
@@ -215,10 +195,10 @@ async function coerceDotPath(
   dotPath: string,
   resolveUrl: (url: string) => Promise<string | null>,
 ): Promise<void> {
-  const current = getAtPath(root, dotPath)
+  const current = readNested(root, dotPath)
   if (typeof current !== 'string' || !isLikelyRemoteImageUrl(current)) return
   const id = await resolveUrl(current)
-  if (id !== null) setAtPath(root, dotPath, id)
+  if (id !== null) writeNested(root, dotPath, id, { create: false })
 }
 
 export type CreateImportRemoteMediaHookOptions = {

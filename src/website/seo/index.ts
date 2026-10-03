@@ -1,4 +1,15 @@
 /**
+ * JSON-LD as the text of a `<script>` element. JSON.stringify alone is not enough there: a stored
+ * title containing `</script>` closes the element and the rest of the value is live HTML — CodeQL
+ * `js/stored-xss` on the publications pages. The three characters that can end or alter a script
+ * block are written as their JSON escapes, which every JSON-LD consumer reads back unchanged.
+ * Defined in this ZERO-IMPORT leaf so every other SEO surface (`@/seo`, the pages, the MCP
+ * presentation) can import it without touching the tangle this file was cut out of.
+ */
+export const jsonLdText = (ld: unknown): string =>
+  JSON.stringify(ld).replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026')
+
+/**
  * SEO-as-vortices — Slice NNNNNN (2026-05-11).
  *
  * Per user 'erpax seo strategy is microdata og vortices indexed and
@@ -126,7 +137,7 @@ export function renderJsonLd(face: SeoVortexFace): string {
     else if (existing) ld[key] = [existing, link]
     else ld[key] = link
   }
-  return `<script type="application/ld+json">${JSON.stringify(ld)}</script>`
+  return `<script type="application/ld+json">${jsonLdText(ld)}</script>`
 }
 
 /** Render Open Graph + Twitter + alternate hreflang <meta> tags for a face. */

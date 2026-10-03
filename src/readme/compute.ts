@@ -1,4 +1,5 @@
 import { trinityPresent } from '@/law/folder/constants'
+import { stripTags } from '@/xml/escape'
 import { algebraFloatPow, citation, erpaxLicenseNote, exactMax, exactRound } from '@/algebra'
 /**
  * readme/compute — derive*, render, analytics, computed faces (pure compute hub).
@@ -2341,10 +2342,11 @@ const collisionWordsOf = (label: string): string[] =>
     .map((w) => w.toLowerCase())
     .filter((w) => /^[a-z][a-z0-9]*$/.test(w) && w.length >= 2 && !COLLISION_STOP.has(w))
 const collisionClean = (s: string): string =>
-  s
-    .replace(/\[\[([^[\]]+)\]\]/g, '$1')
-    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
-    .replace(/<[^>]+>/g, '')
+  stripTags(
+    s
+      .replace(/\[\[([^[\]]+)\]\]/g, '$1')
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1'),
+  )
     .replace(/\\n/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()

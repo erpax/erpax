@@ -617,12 +617,12 @@ src/business/chain/wire-producers.ts:19: * @standard ISO/IEC 25010:2023 §5.4 re
 src/camt052/import/service/index.ts:22: * @standard ISO-20022 BankToCustomerAccountReportV08
 src/camt052/import/service/index.ts:7: * @standard ISO-20022 camt.052 bank-to-customer-account-report
 src/camt052/import/service/test.ts:4: * @standard ISO-20022 camt.052 bank-to-customer-account-report
-src/camt053/import/service/index.ts:18: * @standard ISO-20022 camt.053 bank-to-customer-statement
-src/camt053/import/service/index.ts:19: * @standard ISO-13616-1:2020 iban
-src/camt053/import/service/index.ts:20: * @standard ISO-9362:2022 bic
-src/camt053/import/service/index.ts:21: * @standard ISO-4217:2015 currency-codes
-src/camt053/import/service/index.ts:22: * @standard ISO-8601-1:2019 date-time
-src/camt053/import/service/index.ts:261: * @standard ISO-20022 camt.053 bank-to-customer-statement
+src/camt053/import/service/index.ts:19: * @standard ISO-20022 camt.053 bank-to-customer-statement
+src/camt053/import/service/index.ts:20: * @standard ISO-13616-1:2020 iban
+src/camt053/import/service/index.ts:21: * @standard ISO-9362:2022 bic
+src/camt053/import/service/index.ts:22: * @standard ISO-4217:2015 currency-codes
+src/camt053/import/service/index.ts:23: * @standard ISO-8601-1:2019 date-time
+src/camt053/import/service/index.ts:262: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/camt053/import/service/test.ts:7: * @standard ISO/IEC-29119:2022 software-testing
 src/camt053/import/service/test.ts:8: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/camt054/import/service/index.ts:21: * @standard ISO-20022 BankToCustomerDebitCreditNotificationV08
@@ -1237,8 +1237,8 @@ src/export/types.ts:14: * @standard ISO/IEC-29500:2016 office-open-xml (xlsx)
 src/export/types.ts:15: * @standard ISO-19005-2:2011 pdf-a-2 (archival — see @/standards/iso-19005)
 src/export/types.ts:16: * @standard ISO-14289-1:2014 pdf-ua-1 (accessibility — see @/standards/iso-14289)
 src/factory/collection/test.ts:13: * @standard ISO/IEC 25010:2023 §5.5 testability — factory dedup contract
-src/factory/recompute-parent-aggregates.ts:24: * @standard EN-16931:2017 BT-106/109/110/112 document-totals
-src/factory/recompute-parent-aggregates.ts:25: * @standard ISA-95 IEC-62264 production-order-aggregation
+src/factory/recompute-parent-aggregates.ts:25: * @standard EN-16931:2017 BT-106/109/110/112 document-totals
+src/factory/recompute-parent-aggregates.ts:26: * @standard ISA-95 IEC-62264 production-order-aggregation
 src/fair/value/measurements/index.ts:10: * @standard IFRS IFRS-13 §9 fair-value-definition
 src/fair/value/measurements/index.ts:11: * @standard IFRS IFRS-13 §72 fair-value-hierarchy-three-levels
 src/fair/value/measurements/index.ts:12: * @standard IFRS IFRS-13 §76 level-1-quoted-prices
@@ -2123,8 +2123,8 @@ src/packs/index.ts:32: * @standard ISA-95:2013 §B.5 production-operations dispa
 src/packs/index.ts:33: * @standard UN/CEFACT Rec20 weight (kilogram) · volume (cubic-metre)
 src/packs/index.ts:34: * @standard GS1 logistics SSCC carton-identity (the `number` / `barcode`)
 src/packs/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/pacs004/import/service/index.ts:53: * @standard ISO-20022 PaymentReturnV09
-src/pacs004/import/service/index.ts:7: * @standard ISO-20022 pacs.004 payment-return
+src/pacs004/import/service/index.ts:54: * @standard ISO-20022 PaymentReturnV09
+src/pacs004/import/service/index.ts:8: * @standard ISO-20022 pacs.004 payment-return
 src/pacs004/import/service/test.ts:4: * @standard ISO-20022 pacs.004 payment-return
 src/page/range/index.tsx:6: * @standard ECMA-402 internationalization-api Intl.NumberFormat
 src/page/range/index.tsx:7: * @standard BCP-47 language-tag
@@ -3197,12 +3197,12 @@ src/website/index.ts:26: * @standard Schema.org Article + WebSite + SoftwareAppl
 src/website/marketing/index.ts:18: * @standard Schema.org WebPage + Article + SoftwareApplication
 src/website/marketing/index.ts:19: * @standard W3C HTML5 §4 sectioning + WCAG 2.2 §1.4.3 contrast
 src/website/marketing/index.ts:20: * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
-src/website/seo/index.ts:27: * @standard Schema.org WebPage + Article + SoftwareApplication +
-src/website/seo/index.ts:29: * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
-src/website/seo/index.ts:30: * @standard W3C JSON-LD 1.1 + Microdata 1.1
-src/website/seo/index.ts:31: * @standard Sitemap.xml protocol 0.9 (sitemaps.org) + Sitemap-Index
-src/website/seo/index.ts:32: * @standard RFC 9694 robots.txt + REP (Robots Exclusion Protocol)
-src/website/seo/index.ts:33: * @standard ISO/IEC 25010:2023 §5.3 usability — discoverability
+src/website/seo/index.ts:38: * @standard Schema.org WebPage + Article + SoftwareApplication +
+src/website/seo/index.ts:40: * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
+src/website/seo/index.ts:41: * @standard W3C JSON-LD 1.1 + Microdata 1.1
+src/website/seo/index.ts:42: * @standard Sitemap.xml protocol 0.9 (sitemaps.org) + Sitemap-Index
+src/website/seo/index.ts:43: * @standard RFC 9694 robots.txt + REP (Robots Exclusion Protocol)
+src/website/seo/index.ts:44: * @standard ISO/IEC 25010:2023 §5.3 usability — discoverability
 src/website/shadcn/index.ts:26: * @standard shadcn/ui (Radix UI + Tailwind CSS)
 src/website/shadcn/index.ts:27: * @standard W3C WAI-ARIA 1.2 + WCAG 2.2 AA
 src/website/shadcn/index.ts:28: * @standard W3C Open Graph + Schema.org (carried by surrounding pages)
@@ -3908,7 +3908,7 @@ src/evidence/attestation/index.ts:26: * @compliance SOX §404 internal-controls 
 src/evidence/attestation/index.ts:27: * @compliance EU 910/2014 eidas qualified-electronic-signature
 src/evidence/attestations/index.ts:18: * @compliance SOX §404 internal-controls process-walk-through
 src/evidence/attestations/index.ts:19: * @compliance EU 910/2014 eidas qualified-electronic-signature
-src/factory/recompute-parent-aggregates.ts:27: * @compliance SOX §404 internal-controls total-completeness
+src/factory/recompute-parent-aggregates.ts:28: * @compliance SOX §404 internal-controls total-completeness
 src/fair/value/measurements/index.ts:20: * @compliance SOX §404 internal-controls TOM-FV-01 valuation-process
 src/feature/registry/index.ts:32: * @compliance SOC-2 CC6.1 logical-access-controls
 src/financial/statements/index.ts:25: * @compliance SOX §302 disclosure-controls
@@ -5663,7 +5663,7 @@ src/business/chain/gen-doc.ts:9: * @audit ISO-19011:2018 audit-trail registry-tr
 src/business/chain/run.ts:11: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/business/chain/types.ts:21: * @audit ISO-19011:2018 §6.4.6 audit-evidence-process
 src/business/chain/wire-producers.ts:20: * @audit ISO 19011:2018 §6.4.6 producer→event traceability via BUSINESS_CHAINS
-src/camt053/import/service/index.ts:23: * @audit ISO-19011:2018 audit-trail
+src/camt053/import/service/index.ts:24: * @audit ISO-19011:2018 audit-trail
 src/camt053/import/service/test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/capture/media/index.ts:30: * @audit ISO-19011:2018 audit-trail test-recording-provenance
 src/carriers/index.ts:15: * @audit ISO-19011:2018 audit-trail carrier-master
@@ -5849,7 +5849,7 @@ src/expense/index.ts:14: * @audit entropy read live from @/entropy + @/tamper/im
 src/export/standards/service.ts:27: * @audit ISO-19011:2018 audit-trail
 src/factory/collection/base/index.ts:190: * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections
 src/factory/collection/test.ts:14: * @audit ISO 19011:2018 §6.4.6 — regression-guard for shared-field collision
-src/factory/recompute-parent-aggregates.ts:26: * @audit ISO-19011:2018 audit-trail derived-total-provenance
+src/factory/recompute-parent-aggregates.ts:27: * @audit ISO-19011:2018 audit-trail derived-total-provenance
 src/fair/value/measurements/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-fair-value
 src/field/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.
 src/financial/statements/index.ts:29: * @audit ISO-19011:2018 audit-trail
@@ -6389,7 +6389,7 @@ src/warehouse/locations/consignment/arrangements/consignment/sales/index.ts:25: 
 src/warehouse/locations/consignment/arrangements/index.ts:25: * @audit ISO-19011:2018 audit-trail consignment-arrangement-evidence
 src/warehouse/locations/index.ts:15: * @audit ISO-19011:2018 audit-trail location-master-changes
 src/wave/horo/index.ts:27: * @audit the entropy a wave borrows is read from the live matrix, never hand-asserted
-src/website/seo/index.ts:34: * @audit ISO 19011:2018 §6.4.6 (every published SEO artefact audit-trailed)
+src/website/seo/index.ts:45: * @audit ISO 19011:2018 §6.4.6 (every published SEO artefact audit-trailed)
 src/widget/AccountReconciliationsPanel.tsx:9: * @audit ISO-19011:2018 audit-trail period-end-evidence
 src/widget/AuditLogWidget.tsx:18: * @audit ISO-19011:2018 audit-trail viewer
 src/widget/BalanceSheetWidget.tsx:7: * @audit ISO-19011:2018 audit-trail period-end-evidence

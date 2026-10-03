@@ -28,4 +28,23 @@ describe('field/nested — the dotted path three hooks each implemented', () => 
     writeNested(d, 'bank.code', 'BG')
     expect(d).toEqual({ bank: { code: 'BG' } })
   })
+
+  // Three atoms carried this body and every one let `__proto__` through: a path from a document
+  // field could reach Object.prototype. One body, one refusal — and it refuses, it does not skip.
+  it('refuses a path that reaches the prototype instead of a field', () => {
+    const d: Record<string, unknown> = {}
+    for (const path of ['__proto__.polluted', 'a.constructor.prototype.polluted', 'prototype.x']) {
+      expect(() => writeNested(d, path, true)).toThrow(/refusing to write through/)
+    }
+    expect(({} as Record<string, unknown>).polluted).toBeUndefined()
+    expect(d).toEqual({})
+  })
+
+  it('create:false stops at a missing or array parent instead of inventing structure', () => {
+    const d: Record<string, unknown> = { gallery: [{ image: 'a' }], meta: { image: 'b' } }
+    writeNested(d, 'hero.image', 'x', { create: false })
+    writeNested(d, 'gallery.image', 'x', { create: false })
+    writeNested(d, 'meta.image', 'c', { create: false })
+    expect(d).toEqual({ gallery: [{ image: 'a' }], meta: { image: 'c' } })
+  })
 })

@@ -467,7 +467,7 @@ export function ${pascal(slug)}Page({ title = '${title}' }: ${pascal(slug)}PageP
         <p className="text-muted-foreground mt-2">{${JSON.stringify(name)}}</p>
       </header>
       <section className="rounded-lg border bg-card text-card-foreground p-6">
-        <p className="text-sm">${description.replace(/'/g, "\\'").replace(/`/g, '\\\`').slice(0, 280)}</p>
+        <p className="text-sm">{${JSON.stringify(description.slice(0, 280))}}</p>
       </section>
     </main>
   )

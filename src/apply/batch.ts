@@ -1,7 +1,7 @@
 /**
  * apply/batch — run session-law generators per domain batch.
  */
-import { execSync } from 'node:child_process'
+import { execFileSync } from 'node:child_process'
 import { listAtomPaths } from '@/readme/compute'
 import { publish, sessionApplyPath, subscribe } from '@/agent/communication/realtime'
 import { quantumModeDefault } from '@/quantum/bindings'
@@ -51,9 +51,12 @@ const scopePaths = (batch: readonly string[], cwd: string): string[] => {
   return [...new Set(out)].sort()
 }
 
-const run = (cmd: string, cwd: string): void => {
-  execSync(cmd, { cwd, stdio: 'inherit', env: process.env })
+// argv, never a shell string: a path or atom list interpolated into a command line is shell input
+// (CodeQL js/shell-command-injection-from-environment); as an argument it is only ever an argument.
+const run = (file: string, args: readonly string[], cwd: string): void => {
+  execFileSync(file, args, { cwd, stdio: 'inherit', env: process.env })
 }
+const TSX = ['exec', 'cross-env', 'NODE_OPTIONS=--no-deprecation --import=tsx/esm', 'tsx'] as const
 
 /** Run one session-law batch: hooks → matrix → skill upgrade → readme. */
 export function applySessionLawBatch(
@@ -85,7 +88,7 @@ export function applySessionLawBatch(
 
   try {
     wave('hooks')
-    run('node src/path/hooks.registry.mjs --emit', cwd)
+    run('node', ['src/path/hooks.registry.mjs', '--emit'], cwd)
     hooksRegenerated = true
   } catch (e) {
     errors.push(`path:hooks — ${e}`)
@@ -97,16 +100,13 @@ export function applySessionLawBatch(
   if (quantumScope.length > 0 || batches.includes('quantum') || batches.includes('all')) {
     wave('skill-upgrade')
     try {
-      const atomArg =
+      const atomArgs =
         quantumScope.length > 0 && quantumScope.length < 200
-          ? ` --atom ${quantumScope.join(',')}`
+          ? ['--atom', quantumScope.join(',')]
           : batches.includes('quantum')
-            ? ' --atom quantum'
-            : ''
-      run(
-        `cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/skill/router/upgrade/index.ts --sync${atomArg}`,
-        cwd,
-      )
+            ? ['--atom', 'quantum']
+            : []
+      run('pnpm', [...TSX, 'src/skill/router/upgrade/index.ts', '--sync', ...atomArgs], cwd)
       skillUpgraded = quantumScope.length || 1
     } catch (e) {
       errors.push(`skill:upgrade — ${e}`)
@@ -116,7 +116,7 @@ export function applySessionLawBatch(
   if (batches.some((b) => ['core', 'quantum', 'medical', 'all'].includes(b))) {
     wave('matrix')
     try {
-      run('node src/uuid/matrix/collide.mjs --emit', cwd)
+      run('node', ['src/uuid/matrix/collide.mjs', '--emit'], cwd)
       matrixGenerated = true
     } catch (e) {
       errors.push(`matrix:generate — ${e}`)
@@ -126,11 +126,8 @@ export function applySessionLawBatch(
   if (batches.length > 0) {
     wave('readme')
     try {
-      const foldersOnly = batches.includes('all') ? '' : ' --folders-only'
-      run(
-        `cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/readme/index.ts${foldersOnly}`,
-        cwd,
-      )
+      const foldersOnly = batches.includes('all') ? [] : ['--folders-only']
+      run('pnpm', [...TSX, 'src/readme/index.ts', ...foldersOnly], cwd)
       readmeRegenerated = true
     } catch (e) {
       errors.push(`readme — ${e}`)

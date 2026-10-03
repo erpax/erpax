@@ -159,7 +159,8 @@ export function renderChainAsTs(chain: GeneratedChain): string {
   const stepLines = chain.steps.map((s) =>
     `      { collection: '${s.collection}', action: '${s.action}', emits: '${s.emits}', requires: [${s.requires.map((r) => `'${r}'`).join(', ')}] },`,
   ).join('\n')
-  const standardsLine = chain.standards.map((s) => `'${s.replace(/'/g, "\\'")}'`).join(', ')
+  // JSON.stringify is a complete string-literal escape; a hand-rolled quote replace forgets the backslash
+  const standardsLine = chain.standards.map((s) => JSON.stringify(s)).join(', ')
   return `  ${chain.id}: {
     id: '${chain.id}',
     name: ${JSON.stringify(chain.name)},

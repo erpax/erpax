@@ -431,7 +431,8 @@ export function inventoryReport(opts: TaskInventoryOpts & { heading?: string } =
     lines.push('| — | — | — | (empty) | — |')
   } else {
     for (const r of result.rows) {
-      const title = r.title.replace(/\|/g, '\\|').slice(0, 80)
+      // backslash first, or an escaped pipe can be un-escaped by a backslash already in the title
+      const title = r.title.replace(/\\/g, '\\\\').replace(/\|/g, '\\|').slice(0, 80)
       lines.push(
         `| ${r.id} | ${formatAge(r.ageSeconds)} | ${r.status.toUpperCase()} | ${title} | ${r.speedUpHint} |`,
       )
