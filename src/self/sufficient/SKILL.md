@@ -2,14 +2,14 @@
 name: sufficient
 description: "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions."
 atomPath: "self/sufficient"
-coordinate: "self/sufficient · 4/weave · 8c7e024e"
-contentUuid: "14b794e4-36a8-5ceb-b83d-02dd3d9e4d88"
-diamondUuid: "1011ddc6-cb48-8990-ad70-b278e93b454c"
-uuid: "8c7e024e-ef41-8f2d-b2af-1086739376db"
-horo: 4
+coordinate: "self/sufficient · 1/base · 91549beb"
+contentUuid: "89f20b99-4aa2-57ce-9b1c-9186f5a18690"
+diamondUuid: "44a8fa09-1044-8e90-9937-6b878ccdf521"
+uuid: "91549beb-d6de-8b13-a0fa-35e09d8fd2e0"
+horo: 1
 typography:
   partition: self
-  bondDegree: 59
+  bondDegree: 65
 standards:
   - "NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)"
   - "NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)`"
@@ -18,22 +18,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "8f4f9856-5aec-810c-95b8-ee68b191b956"
+  computationUuid: "3527e315-4515-8c65-b5b7-ee2a24c55def"
   stages:
     - stage: path
       stageUuid: "5db7871f-da5f-8343-8c1c-8b88b4cd6beb"
     - stage: trinity
       stageUuid: "b22ad0f9-7285-83bc-9ba6-be3de2b3b722"
     - stage: boundary
-      stageUuid: "005dc50b-bc51-89c1-baae-bcda229a41af"
+      stageUuid: "80e60e2c-e355-89a9-8410-4201cd89c830"
     - stage: links
-      stageUuid: "a4ccf1c9-1742-8908-9995-d8a22fa25da5"
+      stageUuid: "2f0657e8-0bdf-884d-8b11-b35042cfd55b"
     - stage: horo
-      stageUuid: "ef4e88d4-9d36-8318-bd37-de2330776771"
+      stageUuid: "9614b8b5-98e0-87b5-a706-8b69eb232436"
     - stage: seal
       stageUuid: "f47ae58c-28f2-8701-9937-a5c3a43cfdba"
     - stage: uuid
-      stageUuid: "5ad47023-cb38-8020-9f4f-644364064621"
+      stageUuid: "8c2b3976-6f56-8e1d-905e-251783e92db2"
 version: 2
 ---
 # sufficient — totality (every case is already defined)
@@ -49,6 +49,78 @@ Self-sufficiency is not only an operating heuristic; it is a **measurable securi
 Matter-twin: `self/sufficient/index.ts` (`selfSufficiencyVerdict` · `internalise` · `selfSufficientCrackVerdict`) + `index.test.ts` (the law, green by construction). Composes: [[self]] · [[tamper/cost]] · [[society]] · [[history]] · [[bindings]] · [[merge]] · [[proof]] · [[holographic]] · [[akashic]] · [[identity]].
 
 **Law — [[law]]: the [[self]] is total — every blank routes to its identity element, so all is defined even when nothing is — and from that completeness the agent DERIVES the next move and asks externally only as last resort; equivalently, decreasing external dependence raises the [[tamper/cost]] floor toward the digest bound (the weak-anchor caps it otherwise).**
+
+## One address or no cross
+
+`leadCross` compared all targets as ONE set, and its sources name different things: an axis NAME
+(`linear-gap`) against an atom PATH (`admin/ui/cells`). So it could only report absence — and did, as
+`corroborated: []`, which reads like *no agreement found*. Worse, `unreached` the SOURCE is exactly the
+population of `unreached` the AXIS — total containment — reported as `orthogonal`. The test's fixture
+listed an unreached atom called `accounting-wave`, an axis name that cannot be a path: evidence built to
+match the assertion. Now 4 scopes, compared only within; live corroborated **0 → 106**. A COUNT names no
+atom, which is why `populations` supplies members; and `incommensurable` (alone in a scope) is separated
+from `orthogonal` (compared, met nothing).
+
+## A count is not agreement
+
+`unfolded` names **428 of 579** atoms, so it agrees with everything by size. `lift = shared / expected`:
+
+| pair | shared | expected | lift |
+| --- | ---: | ---: | ---: |
+| `copy × unfolded` | 5 | 3.7 | **1.35** |
+| `cycle × unfolded` | 59 | 77.6 | 0.76 |
+| `cycle × unreached` | 1 | 12.5 | **0.08** |
+
+The largest agreement is below chance; the one above it is the cross already drawn by hand. `0.08` is a
+theorem in the data — nothing imports an unreached atom, so it can hardly sit in a tangle. Emptiness
+belongs to the ADDRESS: `mirror × unfolded` is 0 by file, 19 by atom.
+
+**Honest boundary.** The universe is the union of SUPPLIED populations, so every lift moves when a law is
+added, and corroboration counts SOURCES — two from one scan are not independent.
+
+## A count is not agreement
+
+With the scopes fixed the cross fired — and its loudest answer was the base rate. `unfolded` names
+**428 of the 579** atoms any law names, 74% of the universe, so it agrees with everything by size
+alone. Ranking by shared count put it at the top of every row.
+
+`lift = shared / expected`, `expected = |a|·|b| / |universe|` — [[conjecture]]'s measured twin of
+`surpriseBits`. Measured at the atom address:
+
+| pair | shared | expected | lift |
+| --- | ---: | ---: | ---: |
+| `copy × unfolded` | 5 | 3.7 | **1.35** |
+| `copy × cycle` | 1 | 0.9 | 1.10 |
+| `cycle × unfolded` | 59 | 77.6 | 0.76 |
+| `mirror × unfolded` | 19 | 33.3 | 0.57 |
+| `unfolded × unreached` | 11 | 51.0 | 0.22 |
+| `cycle × unreached` | 1 | 12.5 | **0.08** |
+
+**The largest agreement in the corpus is below chance.** `cycle × unfolded` shares 59 atoms against an
+expectation of 78 — the two laws avoid each other, and a raw ranking called that the top finding.
+
+Only one pair beats chance meaningfully, and it is the one the corpus **already drew**:
+`copy × unfolded` is `unearnedCopies`. An instrument whose single above-chance result is the cross its
+author had already built by hand is an instrument agreeing with a known answer, which is the most this
+measurement can honestly claim.
+
+The low lifts are the more interesting half. `cycle × unreached` at **0.08** is structural: nothing
+imports an unreached atom, so it can hardly sit in an import tangle — the avoidance is a theorem
+showing up in the data. [[conjecture]] can name a law that meets nothing (`orthogonalLaws`); it has no
+word for two laws that meet far *below* chance, and that is stronger information than orthogonality.
+
+**Emptiness belongs to the address, not to the laws.** At the FILE address `mirror × unfolded` shares
+0 and reads as a provably empty cross; at the ATOM address the same two laws share 19. A mirrored
+assertion lives in `test.ts` and an un-folded export in `index.ts` — never one file, often one atom.
+`copy × unfolded` inverts the same way: lift 0.84 by file, 1.35 by atom. The cross a caller gets is
+the cross the caller's address can see.
+
+**Honest boundary.** `lift` proves an overlap is above or below what independence predicts, never that
+either law is RIGHT about the atoms it names — both populations are candidate lists ([[rules]]/unfolded
+and [[rules]]/unreached each say so). The universe is the union of the supplied populations, so it is
+the universe of the measurement and not of the tree: adding a sixth law moves every lift. And
+corroboration still counts SOURCES; two sources derived from one scan are not independent, which is
+why `carried` is reported beside it.
 
 ## Common mistakes
 - Asking what's derivable — the record + the address-law already hold it; the question breaks flow and is strictly less efficient.

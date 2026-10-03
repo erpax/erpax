@@ -40,18 +40,30 @@ const inDegrees = (): number[] => {
 
 export function horoPivotTable(): HoroPivotTable {
   const deg = inDegrees()
-  const byHoro = new Map<number, Array<{ atom: string; deg: number }>>()
+  const byHoro = new Map<number, Array<{ path: string; deg: number }>>()
   UUID_MATRIX_NODES.forEach((n, i) => {
     const arr = byHoro.get(n.horo) ?? []
-    arr.push({ atom: n.atom, deg: deg[i] ?? 0 })
+    arr.push({ path: n.path, deg: deg[i] ?? 0 })
     byHoro.set(n.horo, arr)
   })
+  /**
+   * The principal facets, named by PATH — the unique address, never the leaf.
+   *
+   * This ranked by `atom` (the leaf word) and printed it, and a leaf is not unique: horo 9 holds
+   * 13 atoms all named `hooks` and 4 named `config`, so the column printed `whole · … · whole`
+   * while a genuinely distinct facet was pushed off the list. A reader could not tell WHICH
+   * `hooks` was principal, which is [[path]]'s law — the path IS the message — broken in the
+   * corpus's own face, and [[rules]]/probe's law one atom over: a list that selects by name
+   * cannot distinguish two things that share one.
+   *
+   * Paths are unique by construction, so no dedup is needed — the address does that for free.
+   */
   const principal = (digit: number, k: number): string[] =>
     (byHoro.get(digit) ?? [])
       .slice()
-      .sort((a, b) => b.deg - a.deg || a.atom.localeCompare(b.atom))
+      .sort((a, b) => b.deg - a.deg || a.path.localeCompare(b.path))
       .slice(0, k)
-      .map((x) => x.atom)
+      .map((x) => x.path)
   const ring: HoroPivotRow[] = HORO_DIGITS.map((digit, i) => ({
     digit,
     measure: HORO_MEASURE[i] ?? String(digit),

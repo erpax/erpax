@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about posting — Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry.",
-    "uuid": "bb87770f-dd1d-8efa-853f-9db583bdceda",
+    "uuid": "7f12d2a3-cc80-83a7-866c-a144306fc10f",
     "words": [
       "use",
       "when",

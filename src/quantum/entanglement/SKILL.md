@@ -2,11 +2,11 @@
 name: entanglement
 description: "Use when grounding the corpus link-field in the physics of quantum entanglement — EPR/Bell correlation, no-cloning, monogamy (CKW), and ER=EPR; the reciprocal, monogamous binding computed on the matrix."
 atomPath: "quantum/entanglement"
-coordinate: "quantum/entanglement · 8/crest · 31df7d7e"
-contentUuid: "ee1cc14f-da18-53dd-bcfa-7fae5b95e908"
+coordinate: "quantum/entanglement · 1/base · 4d83e078"
+contentUuid: "383666a9-ea50-56ca-b1b9-458e1de06ec5"
 diamondUuid: "acc4f997-71e1-808f-bfd6-7894305ce177"
-uuid: "31df7d7e-6fce-83ab-9845-ff549375fa49"
-horo: 8
+uuid: "4d83e078-81a0-82a5-bfd5-38d606cc5519"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 110
@@ -56,7 +56,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "a4efe1e5-2b70-8dc1-b843-6ed03d4d5e49"
-    contentUuid: "ee1cc14f-da18-53dd-bcfa-7fae5b95e908"
+    contentUuid: "383666a9-ea50-56ca-b1b9-458e1de06ec5"
 version: 2
 ---
 # quantum/entanglement — the physics the link-field is grounded in
@@ -69,7 +69,7 @@ The **physics facet** of [[entanglement]]: the quantum laws the corpus link-fiel
 
 The corpus is **maximally entangled** when reciprocity = 1 **and** no-cloning holds — the Bell-test analogue, the geometry closed (the [[quantum]] double-torus, ∞ tamper cost).
 
-**HONEST.** The matrix is a *classical* graph; "entanglement" here is reciprocity + monogamy — the computable shadow of the physics, not a superposed, Bell-violating quantum state.
+**HONEST.** The matrix is a *classical* graph; "entanglement" here is reciprocity + monogamy — the computable shadow of the physics, not a superposed quantum state. The one real Bell state the corpus constructs lives in [[quantum]]/register — exact integer amplitudes, H then CNOT, determinant a₀a₃ − a₁a₂ = 1 ≠ 0 — and `report().bell` carries that witness beside the shadow, so a reader sees which claim rests on which.
 
 Matter-twin: `src/quantum/entanglement/index.ts` (`isMaximallyEntangled` · `report`). Composes [[entanglement]] · [[quantum]] · [[cloning]] · [[gravity]] · [[singularity]] · [[matrix]].
 
@@ -82,4 +82,4 @@ Matter-twin: `src/quantum/entanglement/index.ts` (`isMaximallyEntangled` · `rep
 @standard ER=EPR — Maldacena & Susskind (2013); monogamy — Coffman–Kundu–Wootters, PRA 61 052306 (2000)
 @audit computed on the live matrix via ../../entanglement; never hand-asserted
 
-<sub>content-uuid `ee1cc14f-da18-53dd-bcfa-7fae5b95e908` · account `quantum/entanglement` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `383666a9-ea50-56ca-b1b9-458e1de06ec5` · account `quantum/entanglement` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

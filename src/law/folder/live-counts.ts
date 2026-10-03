@@ -14,6 +14,7 @@ import { wordMatterViolations } from '@/rules/word-matter'
 import { wordWithoutLogicViolations } from '@/rules/word-without-logic'
 import { nonIndexImports } from '@/tamper/import'
 import { matrixCrackViolations } from '@/matrix'
+import { unscopedLaws } from '@/rules/scope'
 import { wordFolderViolations, wordDiamondViolations } from './word'
 import { userWordUnprovenViolations } from '@/law/folder'
 import { indexCrossViolationCount } from './index-cross'
@@ -102,6 +103,7 @@ function computeLiveViolationCounts(cwd: string): Readonly<Record<RatchetAxis, n
     'linear-gap': linearGapCount(cwd),
     'hand-maintained': handMaintainedViolations({ cwd }).violationCount,
     'matrix-crack': matrixCrackViolations(cwd).length,
+    scope: unscopedLaws(cwd).length,
   }
 
   for (const axis of RATCHET_AXES) {

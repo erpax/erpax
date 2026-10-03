@@ -1,4 +1,5 @@
 import { exactMin } from '@/algebra'
+import { msFromMinutes } from '@/utility'
 /**
  * Architecture invariants — concrete checks across the 5 axes.
  *
@@ -1328,7 +1329,7 @@ export function checkScheduledTasksCronValid(_ctx: InvariantContext): InvariantR
     const base = new Date('2026-01-01T00:00:00Z')
     let matched = false
     for (let m = 0; m < 366 * 1440; m++) {
-      if (cronMatchesMinute(task.cron, new Date(base.getTime() + m * 60_000))) {
+      if (cronMatchesMinute(task.cron, new Date(base.getTime() + msFromMinutes(m)))) {
         matched = true
         break
       }

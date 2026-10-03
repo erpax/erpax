@@ -10,6 +10,7 @@ import {
   citationLosses,
   citationToken,
   citationsIn,
+  citationsLostIn,
   corpusCitations,
 } from './index'
 
@@ -94,6 +95,92 @@ describe('rules/citation — the live corpus', () => {
     const surface = corpusCitations()
     for (const statute of ['BG ЗДДС', 'BG Наредба-Н-18']) {
       expect(Object.keys(surface)).toContain(statute)
+    }
+  })
+})
+
+/**
+ * The write-time twin. `corpusCitations` costs 1849 ms warm, so asking it per edit is not affordable —
+ * and the changeset alone cannot answer either, because a citation that MOVED is not a loss. This pays
+ * only when something actually left.
+ */
+describe('rules/citation — a statute this changeset dropped', () => {
+  const tree = (): { root: string; abs: string; rel: string } => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-cited-'))
+    mkdirSync(join(root, 'src/scope'), { recursive: true })
+    return { root, abs: join(root, 'src/scope/index.ts'), rel: 'src/scope/index.ts' }
+  }
+
+  it('reports a standard the edit removed and nothing else cites', () => {
+    const { root, abs } = tree()
+    try {
+      writeFileSync(abs, 'export const x = 1\n')
+      const before = (): string => '/** @standard BG-ZPUPS Закон за платежните услуги */\nexport const x = 1\n'
+      const lost = citationsLostIn([abs], root, before, () => false)
+      expect(lost.map((l) => l.standard)).toEqual(['BG-ZPUPS'])
+      expect(lost[0]!.was).toEqual(['src/scope/index.ts'])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  /**
+   * `EN-16931` left `payable/index.ts` in a purge and is cited by `payable/discounts` — the evidence is
+   * still reachable, which is what ISO 19011 §6.4 asks for. Only leaving the surface ENTIRELY counts.
+   */
+  it('never reports a citation that MOVED — evidence still reachable is not a loss', () => {
+    const { root, abs } = tree()
+    try {
+      writeFileSync(abs, 'export const x = 1\n')
+      const before = (): string => '/** @standard EN-16931 semantic invoice */\nexport const x = 1\n'
+      expect(citationsLostIn([abs], root, before, () => true)).toEqual([])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  /**
+   * The grep NARROWS, the parser DECIDES. `git grep -F AMLD5` hits 10 files and exactly one CITES it —
+   * the rest mention the string in code or prose. Using the grep as the verdict suppressed a real loss,
+   * which is parse-don't-match failing inside the atom whose SKILL states it.
+   */
+  it('a textual mention is not a citation — only an @standard banner is', () => {
+    const { root, abs } = tree()
+    try {
+      writeFileSync(abs, 'export const x = 1\n')
+      const before = (): string => '/** @standard AMLD5 sanctions screening */\nexport const x = 1\n'
+      // a candidate file that merely NAMES the token in code must not count as still citing it
+      const mentionsOnly = (token: string): boolean => {
+        const other = 'const label = "AMLD5"\n'
+        return citationsIn('src/other/index.ts', other).has(token)
+      }
+      expect(mentionsOnly('AMLD5')).toBe(false)
+      expect(citationsLostIn([abs], root, before, (t) => mentionsOnly(t)).map((l) => l.standard)).toEqual(['AMLD5'])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('a NEW file can lose nothing, and an unchanged citation is not a loss', () => {
+    const { root, abs } = tree()
+    try {
+      writeFileSync(abs, '/** @standard ISO-19011 audit */\nexport const x = 1\n')
+      expect(citationsLostIn([abs], root, () => null, () => false)).toEqual([])
+      const same = (): string => '/** @standard ISO-19011 audit */\nexport const x = 1\n'
+      expect(citationsLostIn([abs], root, same, () => false)).toEqual([])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('a DELETED file loses everything it cited', () => {
+    const { root, abs } = tree()
+    try {
+      const before = (): string => '/** @standard SOX-404 internal control */\nexport const x = 1\n'
+      // the file is never written — it is gone from the working tree
+      expect(citationsLostIn([abs], root, before, () => false).map((l) => l.standard)).toEqual(['SOX-404'])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
     }
   })
 })

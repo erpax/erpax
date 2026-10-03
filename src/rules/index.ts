@@ -13,7 +13,7 @@
  */
 import { mirroredAssertions } from '@/rules/mirror'
 import { forgedIdentifiers } from '@/rules/forge'
-import { deadCommands } from '@/rules/command'
+import { deadCommands, deadLoaderPaths } from '@/rules/command'
 import { blindProbes } from '@/rules/probe'
 import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
@@ -26,6 +26,8 @@ import { unbackedFigures } from '@/render/scene'
 import { rootCollisions, undeclaredRoots } from '@/merge/order'
 import { uncitedPages } from '@/algebra'
 import { staleSizeClaims } from '@/rules/drift'
+import { readmeRedundancy, readmeSeo } from '@/readme/audit'
+import { unitRederivations } from '@/rules/unit'
 import { replaceableStandards } from '@/proof/replaceable'
 import { atomListingGaps } from '@/publish/complete'
 import { claimBalance, totalSlack } from '@/rules/slack'
@@ -288,6 +290,39 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // ([[rules]]/command). Baseline 0 is a THEOREM: a step that cannot run reports the same green
     // as a step that passed. The confirm hook spawned a moved file and failed open on every edit.
     guardian({ axis: 'command', violations: deadCommands(cwd).length, baseline: 0 }),
+    // loader-path — a `src/…` literal handed to a RUNTIME loader (`require`, `requireFromHere`,
+    // dynamic `import()`) that does not exist ([[rules]]/command, second population). Neither gate
+    // covered it: `command` scopes itself to what CI, the hooks and package.json reach and delegates
+    // a `.ts` module's paths to [[rules]]/reference, which reads PROSE and COMMENTS — so a path in a
+    // string literal was in neither. `consistency/apply` pointed 13 references at the dissolved
+    // `src/services/` tree behind bare `catch {}` blocks, and the live MCP tool answered
+    // `applied: 0, skipped: 0, changes: []` — a clean summary having done nothing. Baseline 0 is a
+    // THEOREM: a loader handed a missing path throws where it runs.
+    guardian({ axis: 'loader-path', violations: deadLoaderPaths(cwd).length, baseline: 0 }),
+    // readme-redundancy — a GENERATED list restating itself ([[readme]]/audit). Baseline 0 is a
+    // THEOREM: a list ranked by a measure has no reason to name one thing twice, and a generator has
+    // no reason to print one fragment N times to say it once. Both shapes were live in the root
+    // README — the horo ring printed `whole` twice because the ranking keyed on a leaf that 13
+    // atoms share, and `## payload` printed one version string twenty times. Free prose is NOT
+    // judged: hunting repeated fragments there returned six findings and all six were lawful.
+    guardian({ axis: 'readme-redundancy', violations: readmeRedundancy(cwd).length, baseline: 0 }),
+    // unit — a declared time unit re-derived instead of asked for ([[rules]]/unit). The DAY divisor
+    // stood at 24 addresses in four notations (`1000*60*60*24`, `86_400_000`, `86400000`,
+    // `24*60*60*1000`) while `daysBetween` called itself the single source of truth and three files
+    // used it; folding them found a receipt-lag metric computing `billDate - billDate`, always 0 in
+    // every vendor report. `day` is now a theorem at 0; hour/minute are the named residue, since a
+    // duration FORMATTER decomposes a span rather than differencing two dates.
+    guardian({ axis: 'unit', violations: unitRederivations(cwd).length, baseline: 0 }),
+    // readme-seo — the README audited by the SITE's own `deriveSeoMeta`/`auditSeo` ([[readme]]/audit).
+    // One derivation, two faces: improving it moves the README and the generated pages together, and
+    // a second SEO derivation for the README would be one truth at two addresses. MAJOR only —
+    // `auditSeo` calls a short description minor because it costs click-through, not indexing, and a
+    // gate that blocks a push over a truncated SERP title is one that gets bypassed.
+    guardian({
+      axis: 'readme-seo',
+      violations: readmeSeo(cwd).issues.filter((i) => i.severity === 'major').length,
+      baseline: 0,
+    }),
     // probe — a test for a twinned filename that never names the twin ([[rules]]/probe). Four gates
     // carried this at once: 6 atoms flagged for a barrel's spelling, 29 never judged at all, and
     // every React atom recorded as having no code. The exemption was then narrowed from the FILE to
@@ -318,8 +353,12 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 64 }),
     // copy — one body at two addresses ([[rules]]/copy). Content-addressed, so same bytes ⇒ same
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
-    // written, which is the argument for a gate over a stated law. Ratchets from 44.
-    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 7 }),
+    // written, which is the argument for a gate over a stated law. Ratchets from 44, then 7 → 3:
+    // three same-file pairs were folded (two sort-and-map bodies in `readme/entropy` and
+    // `readme/compute`, and a filter-group block written three times in `GLAccountFilters`, the
+    // third below the 40-node floor). Ratcheted in the commit that earned it ([[rules]]/slack) —
+    // this baseline is hand-written, which the slack axis does not read, so nothing else would.
+    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 3 }),
     // copy-in-tangle — a duplicated body whose two FILES sit in one strongly connected
     // component ([[rules]]/copy × [[rules]]/cycle, the cross [[conjecture]] ranked second at
     // 1.11 bits). Worse than either alone: inside a tangle the initialisation order of the two
@@ -329,14 +368,15 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // unearned-copy — a body duplicated across files where a site's export has ≤1 caller
     // ([[rules]]/copy × [[rules]]/unfolded). MEASURED, not guessed: conjecture's prose ranking put
     // this pair nowhere near the top while crossIntersections showed 11 shared files, and its own
-    // top pick (concentration × copy) measured exactly 0. Ratchets from 8.
+    // top pick (concentration × copy) measured exactly 0. Ratchets from 8, then 4 → 2 with the
+    // same-file folds above.
     guardian({
       axis: 'unearned-copy',
       violations: (() => {
         const r = unfoldedExports(cwd)
         return unearnedCopies(new Set([...r.dead, ...r.single].map((e) => e.file)), cwd).length
       })(),
-      baseline: 4,
+      baseline: 2,
     }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carried
     // `sorry` or did not compile, under a directory named `verify` that nothing ever ran.
@@ -445,7 +485,13 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     guardian({ axis: 'dangling-specifier', violations: danglingSpecifiers(cwd).length, baseline: 0 }),
     guardian({ axis: 'echo', violations: echoes(cwd).length, baseline: 152 }),
     guardian({ axis: 'ask', violations: bareAsks(cwd).bare.length, baseline: 786 }),
-    guardian({ axis: 'unfolded', violations: (() => { const r = unfoldedExports(cwd); return r.dead.length + r.single.length })(), baseline: 814 }),
+    // unfolded — an export with no caller or exactly one ([[rules]]/unfolded). The baseline moved
+    // 814 → 1207 because the INSTRUMENT was corrected, not because the tree got worse: the
+    // reference counter was a text scan and counted PROSE as usage, so any symbol discussed in any
+    // comment read as reused. It now walks `ts.Identifier` nodes, which cannot occur inside a
+    // comment or a string. 392 un-folded exports had been invisible — the same class
+    // [[rules]]/cycle re-based for when it swapped a regex for the grammar (152 → 225 files).
+    guardian({ axis: 'unfolded', violations: (() => { const r = unfoldedExports(cwd); return r.dead.length + r.single.length })(), baseline: 1207 }),
     // atom-completeness — three independent listings of what atoms exist must agree on MEMBERS,
     // not merely on totals ([[publish]]/complete). The matrix held 3,466 against a corpus of
     // 3,474 this session and nothing said so. Zero is a theorem.
@@ -668,6 +714,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   process.exit(verdict.sealed ? 0 : 1)
 }
 
+export * from './scope'
 export * from './slack'
 export * from './unreached'
 export * from './copy'

@@ -71,11 +71,14 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "agents/mcp/tool/aml",
   "agents/mcp/tool/cloudflare",
   "agents/mcp/tool/float",
+  "agents/mcp/tool/frontier",
   "agents/mcp/tool/kyc",
   "agents/mcp/tool/novelty",
   "agents/mcp/tool/outward",
+  "agents/mcp/tool/quantum",
   "agents/mcp/tool/risk",
   "agents/mcp/tool/staffing",
+  "agents/mcp/tool/witness",
   "agents/registered",
   "agents/registered/hr",
   "agents/registered/hr/training",
@@ -928,9 +931,11 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "outward",
   "outward/bg",
   "outward/coverage",
+  "outward/discover",
   "outward/eu",
   "outward/gate",
   "outward/leads",
+  "outward/witness",
   "outward/world",
   "pack",
   "pack/items",
@@ -1066,6 +1071,8 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "quantum/ftl/constants",
   "quantum/ftl/crack",
   "quantum/ftl/map",
+  "quantum/ftl/memo",
+  "quantum/ftl/memo/disk",
   "quantum/ftl/metrics",
   "quantum/ftl/purify",
   "quantum/ftl/verdict",
@@ -1092,6 +1099,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "quantum/pwa",
   "quantum/query",
   "quantum/reality",
+  "quantum/register",
   "quantum/request",
   "quantum/research",
   "quantum/sanitization",
@@ -1114,6 +1122,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "query/fingerprint",
   "readings",
   "readme",
+  "readme/audit",
   "readme/orientation",
   "readme/regen",
   "reality",
@@ -1200,8 +1209,10 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "rules/prose",
   "rules/reference",
   "rules/refutable",
+  "rules/scope",
   "rules/slack",
   "rules/unfolded",
+  "rules/unit",
   "rules/unraised",
   "rules/unreached",
   "run",
@@ -1434,6 +1445,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "users/hooks",
   "utility",
   "utility/period/lock",
+  "utility/span",
   "uuid",
   "uuid/chain",
   "uuid/format",
@@ -1527,7 +1539,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1520 as const
+export const ATOM_LEDGER_PATH_COUNT = 1532 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1789,6 +1801,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp/tool",
     "agents/mcp/tool/float"
   ],
+  "agents/mcp/tool/frontier": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/frontier"
+  ],
   "agents/mcp/tool/kyc": [
     "agents/mcp",
     "agents/mcp/tool",
@@ -1804,6 +1821,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp/tool",
     "agents/mcp/tool/outward"
   ],
+  "agents/mcp/tool/quantum": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/quantum"
+  ],
   "agents/mcp/tool/risk": [
     "agents/mcp",
     "agents/mcp/tool",
@@ -1813,6 +1835,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp",
     "agents/mcp/tool",
     "agents/mcp/tool/staffing"
+  ],
+  "agents/mcp/tool/witness": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/witness"
   ],
   "agents/registered": [
     "agents/registered"
@@ -4915,6 +4942,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "outward",
     "outward/coverage"
   ],
+  "outward/discover": [
+    "outward",
+    "outward/discover"
+  ],
   "outward/eu": [
     "outward",
     "outward/eu"
@@ -4926,6 +4957,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "outward/leads": [
     "outward",
     "outward/leads"
+  ],
+  "outward/witness": [
+    "outward",
+    "outward/witness"
   ],
   "outward/world": [
     "outward",
@@ -5431,6 +5466,17 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "quantum/ftl",
     "quantum/ftl/map"
   ],
+  "quantum/ftl/memo": [
+    "quantum",
+    "quantum/ftl",
+    "quantum/ftl/memo"
+  ],
+  "quantum/ftl/memo/disk": [
+    "quantum",
+    "quantum/ftl",
+    "quantum/ftl/memo",
+    "quantum/ftl/memo/disk"
+  ],
   "quantum/ftl/metrics": [
     "quantum",
     "quantum/ftl",
@@ -5538,6 +5584,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "quantum",
     "quantum/reality"
   ],
+  "quantum/register": [
+    "quantum",
+    "quantum/register"
+  ],
   "quantum/request": [
     "quantum",
     "quantum/request"
@@ -5621,6 +5671,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "readme": [
     "readme"
+  ],
+  "readme/audit": [
+    "readme",
+    "readme/audit"
   ],
   "readme/orientation": [
     "readme",
@@ -5937,6 +5991,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "rules",
     "rules/refutable"
   ],
+  "rules/scope": [
+    "rules",
+    "rules/scope"
+  ],
   "rules/slack": [
     "rules",
     "rules/slack"
@@ -5944,6 +6002,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "rules/unfolded": [
     "rules",
     "rules/unfolded"
+  ],
+  "rules/unit": [
+    "rules",
+    "rules/unit"
   ],
   "rules/unraised": [
     "rules",
@@ -6798,6 +6860,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "utility",
     "utility/period/lock"
   ],
+  "utility/span": [
+    "utility",
+    "utility/span"
+  ],
   "uuid": [
     "uuid"
   ],
@@ -7129,4 +7195,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 868 as const
+export const MERGED_NESTED_PATH_COUNT = 880 as const

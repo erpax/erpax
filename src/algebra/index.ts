@@ -365,6 +365,15 @@ export const algebraSign = (n: number): -1 | 0 | 1 => exactSign(n)
 /** π — IEEE754 constant. Use algebraLog2 for log operations. */
 export const PI = Math.PI
 
+/**
+ * Degrees to radians, at ONE address.
+ *
+ * `(d * PI) / 180` stood twice — privately in `globe.greatCircleAngle` and again in
+ * `outward/witness.dayLengthHours` — and [[rules]]/copy's `formula-address` axis caught the second
+ * one the moment it was written. One formula, one address.
+ */
+export const toRadians = (degrees: number): number => (degrees * PI) / 180
+
 /** e — IEEE754 constant (Euler's number). Use algebraExp/algebraLog for operations. */
 export const E = Math.E
 

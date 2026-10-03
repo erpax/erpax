@@ -1,6 +1,7 @@
 import { existsSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { MAX_AGENT_SKILL_CONTEXT_BYTES } from '@/agent/skill-context'
+import { sealed } from '@/quantum/ftl/memo'
 
 /**
  * quantum/budget — what the corpus costs an agent per turn, measured.
@@ -60,8 +61,20 @@ export function faceCost(
   return { atoms, bytes, totalBytes, totalTokens: totalBytes / BYTES_PER_TOKEN }
 }
 
-/** The SKILL faces, heaviest first — the orientation an agent is actually handed. */
+/**
+ * The SKILL faces, heaviest first — the orientation an agent is actually handed.
+ *
+ * SEALED on the content address. At 152–159 ms it is CHEAPER than the 224–290 ms address, so on its
+ * own a cache here would be a pessimisation — it is worth sealing only because the address is now
+ * memoized per process and six other gates already pay for it. All 3,631 `SKILL.md` are tracked and
+ * none ignored, so the `src` address sees every byte this reads: the sizes it stats are the blob
+ * contents git hashes.
+ */
 export function skillWeights(cwd: string = process.cwd()): SkillWeight[] {
+  return sealed('skillWeights', cwd, () => computeSkillWeights(cwd))
+}
+
+function computeSkillWeights(cwd: string): SkillWeight[] {
   const src = join(cwd, 'src')
   const out: SkillWeight[] = []
   const walk = (d: string): void => {

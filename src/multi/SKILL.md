@@ -3,7 +3,7 @@ name: multi
 description: "Use when reasoning about multi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: multi
 coordinate: "multi · 8/crest · 16deb617"
-contentUuid: "7ade50ac-1c63-556d-9d44-11cc008bfb89"
+contentUuid: "ad2ec2fe-acf6-5e2f-8973-30f13b717fcb"
 diamondUuid: "b9853a75-46be-85e8-8ace-8b435760823e"
 uuid: "16deb617-4dad-8d46-844a-1e4884f0b1c6"
 horo: 8
@@ -13,7 +13,6 @@ typography:
 standards:
   - "EU-2016/679"
   - "IFRS-9"
-  - MCP
   - "NIST-SP-800-92"
   - "SAF-T"
   - XBRL

@@ -1,34 +1,12 @@
-import { exactMax, exactMin } from '@/algebra'
 /**
  * self/sufficient — self-sufficiency as a SECURITY property, made computational.
  *
- * The operating heuristic (derive from within, don't ask) has a measurable
- * dual. Every EXTERNAL dependence is a cheaper attack path than out-computing
- * the content digest: an attacker who can subvert a remote AI-model API that
- * shapes content before it is hashed, a third-party service, or a remote agent
- * never needs the 2^106 second-preimage — they corrupt the input. So the
- * effective tamper cost is capped at the WEAKEST external trust link (the same
- * weak-anchor law as tamper-cost).
- *
- * Decrease dependence ⇒ increase tampering cost. Internalising a dependency —
- * a model saved locally / run on Workers AI (bindings), an external call
- * replaced by a local content-addressed SKILL — removes that cheap path, so the
- * effective cost rises toward the digest bound. The society co-evolves: external
- * agents bootstrap a new skill ONCE; the society then runs it locally forever,
- * each internalisation a shared discovery (merge: gaps filled by many, deduped
- * by content-uuid) recorded in git history (the distributed anchor that costs
- * nothing to keep). The same act, both directions — dependence ↓, tamper cost ↑.
- *
- * One MANDATORY external is kept: the distributed anchor (git history / a TSA —
- * the single drop of borrowed entropy that makes the zero-entropy whole
- * tamper-evident). It is not a liability; it is the floor's witness.
- *
  * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
  * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
- * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)
- * @audit Conservation Law 54 (universal identity element — every case already defined)
  */
 
+import { exactMax, exactMin } from '@/algebra'
+import { containment, crossIntersections, orthogonalLaws } from '@/conjecture'
 import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
 import { ERPAX_DIGEST_BITS } from '@/cost'
 
@@ -37,8 +15,6 @@ export type DependencyKind = 'ai-model' | 'service' | 'binding' | 'agent' | 'lib
 
 /**
  * An external dependency: a trust link with a COMPROMISE cost in bits — how
- * hard it is to subvert the dependency itself (≪ the digest's 2^106 when the
- * dep is a remote API you must trust). Lower ⇒ cheaper attack path.
  */
 export interface ExternalDependency {
   readonly id: string
@@ -65,12 +41,6 @@ export interface SelfSufficiencyVerdict {
 
 /**
  * The effective tamper cost of a society carrying these external liabilities.
- * The weakest link binds (min over the digest/anchor floor and every liability);
- * removing liabilities raises the floor toward the digest bound — the law.
- *
- * @param digestBits content-uuid digest width (default erpax's 106)
- * @param anchorStrengthBits the mandatory distributed anchor (git/TSA), default 128
- * @param liabilities external dependencies that are attack surface (not the anchor)
  */
 export function selfSufficiencyVerdict(opts: {
   digestBits?: number
@@ -108,9 +78,6 @@ export function selfSufficiencyVerdict(opts: {
 
 /**
  * Internalise one dependency — the co-evolution step. The dependency leaves the
- * liability set (now a local, content-addressed skill/model); the effective
- * tamper cost rises if it was the binding link. Returns the new liability set
- * AND the new verdict, so the loop is measurable: dependence ↓, cost ↑.
  */
 export function internalise(
   liabilities: ReadonlyArray<ExternalDependency>,
@@ -123,10 +90,6 @@ export function internalise(
 
 /**
  * The bridge to tamper-cost: the full crack verdict under self-sufficiency. The
- * weakest external link is passed as the effective anchor strength, so a society
- * with a cheap external dependency is correctly reported as bound by it (the
- * weak-anchor case); fully internalised, the digest binds and — at full
- * content-address coverage — the cost is unbounded.
  */
 export function selfSufficientCrackVerdict(opts: {
   digestBits?: number
@@ -159,19 +122,19 @@ export interface Direction {
   readonly why: string
 }
 
-/** The standing queue: regression > auditor/signer-facing > blocks-everything > debt > cosmetic. */
+/**
+ * The standing queue: regression > auditor/signer-facing > blocks-everything > debt > cosmetic.
+ */
 const PRIORITY: readonly (readonly [RegExp, number, string])[] = [
-  [/regress|broke|broken|red\b|fail|does not (boot|load|build)|TDZ/i, 5, 'regression — a broken thing blocks everything'],
+  [/regress|broke|broken|\bred\b|fail|does not (boot|load|build)|TDZ/i, 5, 'regression — a broken thing blocks everything'],
   [/audit|signer|director|compliance|SOX|§404|§302|fiscal|НАП|auditor/i, 4, 'auditor/signer-facing — invisible from every seat but theirs'],
-  [/gate|pre-push|\bbuild\b|deploy|\bboot\b|\bload\b|green/i, 3, 'blocks-everything — boot · build · push · deploy'],
-  [/debt|\bgap\b|unfold|dead|stray|dissolve|duplicat/i, 2, 'largest debt'],
+  [/\bgate|pre-push|\bbuild\b|deploy|\bboot\b|\bload\b|green/i, 3, 'blocks-everything — boot · build · push · deploy'],
+  [/debt|\bgap\b|un-?fold|\bdead\b|stray|dissolve|duplicat/i, 2, 'largest debt'],
   [/rename|cosmetic|tidy|comment|typo|whitespace/i, 1, 'cosmetic — last'],
 ]
 
 /**
  * Rank the corpus's open intents into a direction — the highest-priority next move first.
- * The self-sufficient answer to "what next?": derived from the corpus's declared frontier
- * and the standing queue, not asked. Pass `openIntents(cwd)` (@/think) as `intents`.
  */
 export function nextDirection(intents: readonly string[]): Direction[] {
   return intents
@@ -184,3 +147,220 @@ export function nextDirection(intents: readonly string[]): Direction[] {
 }
 
 /** @index-cross.foldback child=self/sufficient parent=self — this cross folds back into its parent. */
+
+/**
+ * The namespace a lead's target lives in. Two targets are comparable ONLY within one scope: an axis
+ * NAME (`linear-gap`) and an atom PATH (`payable/aging`) can never be equal, so crossing them
+ * reports agreement as absent rather than as unasked. See ./SKILL.md § one address or no cross.
+ */
+export type LeadScope = 'axis' | 'atom' | 'cross' | 'boundary'
+
+/** One lead the corpus produced about ITSELF — measured, never typed by a person. */
+export interface InternalLead {
+  readonly source: string
+  /** The namespace {@link target} is named in — the cross compares within it and never across it. */
+  readonly scope: LeadScope
+  /**
+   * What the lead points AT, named by the producer. Never re-extracted from {@link intent}: a regex
+   * over the sentence returned `linear` for `linear-gap` and the axis name for an atom's lead, which
+   * is the parse-don't-match law arriving one atom over.
+   */
+  readonly target: string
+  /** A sentence the standing queue can rank. See ./SKILL.md § the ranker must actually fire. */
+  readonly intent: string
+  readonly evidence: string
+}
+
+/** The self-measurements a harvest reads, INJECTED — no network, no booted app. */
+export interface InternalSources {
+  readonly guardians?: () => readonly { axis: string; violations: number; baseline: number; ok: boolean }[]
+  /** Proven crosses not yet drawn — `conjecture.crossStream(...).proven`, as candidate strings. */
+  readonly crosses?: () => readonly string[]
+  /** Atom paths, so they meet {@link populations} at the atom scope. */
+  readonly unreached?: () => readonly string[]
+  /**
+   * An axis's violating MEMBERS, as ATOM paths — the only form a guardian can contribute that another
+   * source can meet. `guardians` yields a count, and a count names no atom, so an axis reporting 249
+   * violations corroborates nothing on its own however loudly it is red.
+   */
+  readonly populations?: () => readonly { readonly law: string; readonly members: readonly string[] }[]
+  /** Boundary rows; an `unreachable` one is an unanswered question, not a failure. */
+  readonly boundary?: () => readonly { name: string; state: string }[]
+}
+
+/**
+ * Leads the corpus generates about itself. See ./SKILL.md § self-sufficiency needs its own frontier.
+ *
+ * @invariant every emitted intent is ranked above 0 by `nextDirection`
+ */
+export function internalLeads(src: InternalSources = {}): InternalLead[] {
+  const out: InternalLead[] = []
+  for (const g of src.guardians?.() ?? []) {
+    if (g.ok) continue
+    // "red" and "gate" both hit the queue, so a broken axis outranks an ordinary debt.
+    out.push({
+      source: 'guardian',
+      scope: 'axis',
+      target: g.axis,
+      intent: `red gate ${g.axis} — ${g.violations} above its baseline of ${g.baseline}`,
+      evidence: `${g.axis} ${g.violations}>${g.baseline}`,
+    })
+  }
+  for (const c of src.crosses?.() ?? []) {
+    out.push({
+      source: 'cross',
+      scope: 'cross',
+      target: c,
+      intent: `undrawn cross — a gap two laws agree on: ${c}`,
+      evidence: c,
+    })
+  }
+  for (const a of src.unreached?.() ?? []) {
+    out.push({
+      source: 'unreached',
+      scope: 'atom',
+      target: a,
+      intent: `dead weight — nothing reaches the atom ${a}`,
+      evidence: a,
+    })
+  }
+  for (const p of src.populations?.() ?? []) {
+    for (const m of p.members) {
+      out.push({
+        source: `law:${p.law}`,
+        scope: 'atom',
+        target: m,
+        intent: `debt in ${m} — the ${p.law} law names it`,
+        evidence: `${p.law} ${m}`,
+      })
+    }
+  }
+  for (const b of src.boundary?.() ?? []) {
+    if (b.state !== 'unreachable') continue
+    // An unasked question is not a failure, but it IS the thing to do next about that rail.
+    // The wording carries the RANK: an unreachable probe is a knowledge `gap`, not a regression.
+    out.push({
+      source: 'boundary',
+      scope: 'boundary',
+      target: b.name,
+      intent: `gap in what is known — the ${b.name} boundary could not be asked`,
+      evidence: `${b.name} unreachable`,
+    })
+  }
+  return out
+}
+
+/** The corpus's own next move: measured leads, ranked, most urgent first. */
+export function selfSufficientNext(src: InternalSources = {}): Direction[] {
+  return nextDirection(internalLeads(src).map((l) => l.intent))
+}
+
+/** What a crossed lead harvest says. See ./SKILL.md § crossing the leads. */
+export interface LeadCross {
+  /** How many distinct targets each source named. */
+  readonly sources: Readonly<Record<string, number>>
+  /** Targets named by MORE THAN ONE source, within ONE scope — two independent measurements agreeing. */
+  readonly corroborated: ReadonlyArray<{
+    readonly target: string
+    readonly scope: LeadScope
+    readonly sources: readonly string[]
+  }>
+  /** A source whose targets are largely inside another's is CARRIED by it, so it sits downstream. */
+  readonly carried: ReadonlyArray<{
+    readonly source: string
+    readonly inside: string
+    readonly share: number
+    readonly scope: LeadScope
+  }>
+  /** Shares a scope with others and meets none of their targets — genuinely independent signal. */
+  readonly orthogonal: readonly string[]
+  /**
+   * Per pair of sources in one scope: how much they overlap AND whether that overlap beats chance.
+   * A corroboration counts sources; only `lift > 1` says the agreement is evidence rather than the
+   * base rate of two large populations. See ./SKILL.md § a count is not agreement.
+   */
+  readonly agreement: ReadonlyArray<{
+    readonly a: string
+    readonly b: string
+    readonly scope: LeadScope
+    readonly shared: number
+    readonly expected: number
+    readonly lift: number
+  }>
+  /** How many distinct targets each scope holds. */
+  readonly scopes: Readonly<Record<string, number>>
+  /**
+   * A source ALONE in its scope. Nothing it names can ever be corroborated, so its silence is
+   * incomparability and not independence — the distinction {@link orthogonal} used to swallow.
+   */
+  readonly incommensurable: readonly string[]
+}
+
+/**
+ * Cross every lead source against every other WITHIN a scope, reusing [[conjecture]]'s intersection
+ * and DIRECTIONAL containment. See ./SKILL.md § one address or no cross.
+ *
+ * @invariant a target named by one source only is never reported as corroborated
+ * @invariant two sources in different scopes never corroborate, and are named incommensurable
+ */
+export function leadCross(leads: readonly InternalLead[]): LeadCross {
+  const byScope = new Map<LeadScope, Map<string, Set<string>>>()
+  const sizes = new Map<string, Set<string>>()
+  for (const l of leads) {
+    const scoped = byScope.get(l.scope) ?? new Map<string, Set<string>>()
+    scoped.set(l.source, (scoped.get(l.source) ?? new Set<string>()).add(l.target))
+    byScope.set(l.scope, scoped)
+    sizes.set(l.source, (sizes.get(l.source) ?? new Set<string>()).add(l.target))
+  }
+
+  const corroborated: Array<{ target: string; scope: LeadScope; sources: readonly string[] }> = []
+  const agreement: Array<{
+    a: string
+    b: string
+    scope: LeadScope
+    shared: number
+    expected: number
+    lift: number
+  }> = []
+  const carried: Array<{ source: string; inside: string; share: number; scope: LeadScope }> = []
+  const orthogonal: string[] = []
+  const incommensurable: string[] = []
+  const scopes: Record<string, number> = {}
+
+  for (const [scope, sets] of byScope) {
+    scopes[scope] = new Set([...sets.values()].flatMap((s) => [...s])).size
+    // A lone source in a scope has nothing to be crossed AGAINST. Passing it to the intersection
+    // machinery would return the empty answer that reads as "no agreement found".
+    if (sets.size < 2) {
+      for (const s of sets.keys()) incommensurable.push(s)
+      continue
+    }
+    const byTarget = new Map<string, Set<string>>()
+    for (const [source, targets] of sets) {
+      for (const t of targets) byTarget.set(t, (byTarget.get(t) ?? new Set<string>()).add(source))
+    }
+    for (const [target, srcs] of byTarget) {
+      if (srcs.size > 1) corroborated.push({ target, scope, sources: [...srcs].sort() })
+    }
+    for (const c of containment(sets)) {
+      if (c.share > 0) carried.push({ source: c.law, inside: c.inside, share: c.share, scope })
+    }
+    orthogonal.push(...orthogonalLaws(sets))
+    for (const i of crossIntersections(sets)) {
+      if (i.shared === 0) continue
+      agreement.push({ a: i.a, b: i.b, scope, shared: i.shared, expected: i.expected, lift: i.lift })
+    }
+  }
+
+  return {
+    sources: Object.fromEntries([...sizes].map(([k, v]) => [k, v.size])),
+    corroborated: corroborated.sort(
+      (a, b) => b.sources.length - a.sources.length || a.target.localeCompare(b.target),
+    ),
+    carried: carried.sort((a, b) => b.share - a.share || a.source.localeCompare(b.source)),
+    orthogonal: orthogonal.sort(),
+    scopes,
+    incommensurable: incommensurable.sort(),
+    agreement: agreement.sort((a, b) => b.lift - a.lift || b.shared - a.shared),
+  }
+}

@@ -43,6 +43,41 @@ const requireFromHere = createRequire(import.meta.url)
 const REPO_ROOT_FALLBACK = (): string =>
   typeof process !== 'undefined' && typeof process.cwd === 'function' ? process.cwd() : '.'
 
+/**
+ * The modules this atom loads at RUNTIME, at one address each.
+ *
+ * All six pointed into `src/services/`, a tree that no longer exists — thirteen references across
+ * six functions, so nothing could report that they had rotted together. `rules/command` gates a dead
+ * path only where the repo's own tooling reaches it (CI, the git hooks, package.json), and a
+ * `requireFromHere` argument is reached by neither, which is exactly how these survived. The Next
+ * dev build was the only thing that ever said so, as `Module not found: Can't resolve <dynamic>`.
+ *
+ * Every target below was verified present, and verified to export the symbol its call site
+ * destructures, before being written here.
+ */
+const MODULE = {
+  chainRegistry: 'src/business/chain/registry.ts',
+  dryClean: 'src/agents/mcp/dry-clean.ts',
+  toolDefs: 'src/agents/mcp/tool-defs.ts',
+  agentBootstrap: 'src/agent/bootstrap.ts',
+  i18nHarvest: 'src/i18n/harvest/index.ts',
+  gapStubDir: 'src/agents/mcp/generated',
+} as const
+
+/**
+ * A runtime load that failed, RECORDED rather than swallowed.
+ *
+ * Each of these sites was a bare `catch {}` returning an empty summary, so `applyAllConsistencyFixes`
+ * — which the `erpax.consistency` MCP tool calls — answered `applied: 0, skipped: 0, changes: []`:
+ * indistinguishable from a clean tree with nothing to fix. One of those catches even carried the
+ * comment "Skip silently; CI invocation works", which was false in both halves.
+ */
+const refusal = (path: string, e: unknown): AppliedChange => ({
+  file: path,
+  action: 'refused:module-unavailable',
+  detail: `runtime load failed — ${String((e as Error)?.message ?? e).slice(0, 200)}`,
+})
+
 /** One applied change, suitable for the MCP audit log. */
 export interface AppliedChange {
   readonly file: string
@@ -179,7 +214,7 @@ const STEP_RE =
  */
 export function applyChainProducerBackfill(opts: { repoRoot?: string; dryRun?: boolean } = {}): ApplySummary {
   const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
-  const regFile = resolve(repoRoot, 'src/services/business-chains/registry.ts')
+  const regFile = resolve(repoRoot, MODULE.chainRegistry)
   if (!existsSync(regFile)) return { applied: 0, skipped: 0, changes: [] }
   let text = readFileSync(regFile, 'utf8')
   let patched = 0
@@ -201,16 +236,16 @@ export function applyChainProducerBackfill(opts: { repoRoot?: string; dryRun?: b
   if (patched > 0 && !opts.dryRun) {
     writeFileSync(regFile, text)
     changes.push({
-      file: 'src/services/business-chains/registry.ts',
+      file: MODULE.chainRegistry,
       action: 'applyChainProducerBackfill',
       detail: `wired ${patched} chain step producer(s)`,
     })
   }
   for (const s of skippedAction.slice(0, 8)) {
-    changes.push({ file: 'src/services/business-chains/registry.ts', action: 'skip:unknown-action', detail: s })
+    changes.push({ file: MODULE.chainRegistry, action: 'skip:unknown-action', detail: s })
   }
   for (const s of [...skippedAgg].slice(0, 8)) {
-    changes.push({ file: 'src/services/business-chains/registry.ts', action: 'skip:unknown-aggregate', detail: s })
+    changes.push({ file: MODULE.chainRegistry, action: 'skip:unknown-aggregate', detail: s })
   }
   return { applied: patched, skipped: skippedAction.length + skippedAgg.size, changes }
 }
@@ -321,12 +356,12 @@ export function applyChainE2eSeedScaffold(opts: { repoRoot?: string; dryRun?: bo
   const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
   let chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> = []
   try {
-    const reg = requireFromHere(join(repoRoot, 'src/services/business-chains/registry.ts')) as {
+    const reg = requireFromHere(join(repoRoot, MODULE.chainRegistry)) as {
       BUSINESS_CHAINS: Record<string, { id: string; workflowSlug?: string; name: string; description: string }>
     }
     chains = Object.values(reg.BUSINESS_CHAINS)
-  } catch {
-    return { applied: 0, skipped: 0, changes: [] }
+  } catch (e) {
+    return { applied: 0, skipped: 1, changes: [refusal(MODULE.chainRegistry, e)] }
   }
   const e2eDir = join(repoRoot, 'tests/e2e/erp-workflows')
   if (!existsSync(e2eDir)) {
@@ -455,12 +490,12 @@ export function applyChainShadcnSurfaceScaffold(opts: { repoRoot?: string; dryRu
   const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
   let chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> = []
   try {
-    const reg = requireFromHere(join(repoRoot, 'src/services/business-chains/registry.ts')) as {
+    const reg = requireFromHere(join(repoRoot, MODULE.chainRegistry)) as {
       BUSINESS_CHAINS: Record<string, { id: string; workflowSlug?: string; name: string; description: string }>
     }
     chains = Object.values(reg.BUSINESS_CHAINS)
-  } catch {
-    return { applied: 0, skipped: 0, changes: [] }
+  } catch (e) {
+    return { applied: 0, skipped: 1, changes: [refusal(MODULE.chainRegistry, e)] }
   }
   const componentsDir = join(repoRoot, 'src/components/chains')
   if (!existsSync(componentsDir) && !opts.dryRun) mkdirSync(componentsDir, { recursive: true })
@@ -565,7 +600,7 @@ export function applyEmergingGapScaffold(args: {
   gaps: ReadonlyArray<EmergingGapHint>
 }): ApplySummary {
   const repoRoot = args.repoRoot ?? REPO_ROOT_FALLBACK()
-  const baseDir = join(repoRoot, 'src/services/agents/mcp/generated')
+  const baseDir = join(repoRoot, MODULE.gapStubDir)
   if (!existsSync(baseDir) && !args.dryRun) mkdirSync(baseDir, { recursive: true })
   let applied = 0
   let skipped = 0
@@ -584,7 +619,7 @@ export function applyEmergingGapScaffold(args: {
       )
       applied++
       changes.push({
-        file: `src/services/agents/mcp/generated/${gap.area}/${gap.concept}.ts`,
+        file: `${MODULE.gapStubDir}/${gap.area}/${gap.concept}.ts`,
         action: 'applyEmergingGapScaffold',
         detail: `scaffolded stub for ${gap.suggestedTool} (anchor: ${gap.anchorPair[0]} ↔ ${gap.anchorPair[1]} @ ${gap.anchorScore})`,
       })
@@ -611,19 +646,21 @@ export function applyI18nHarvestDryRun(
   let applied = 0
   const changes: AppliedChange[] = []
   try {
-    const mod = requireFromHere(join(repoRoot, 'src/services/i18n-harvest/index.ts')) as {
+    const mod = requireFromHere(join(repoRoot, MODULE.i18nHarvest)) as {
       harvestPlatformTranslations: (repoRoot: string) => ReadonlyArray<unknown>
     }
     const harvested = mod.harvestPlatformTranslations(repoRoot)
     applied = harvested.length
     if (harvested.length > 0) {
       changes.push({
-        file: 'src/services/i18n-harvest',
+        file: MODULE.i18nHarvest,
         action: 'applyI18nHarvestDryRun',
         detail: `harvested ${harvested.length} platform-translation candidate row(s) from tools/<area>.ts files; ConsistencyAgent.onSchedule persists`,
       })
     }
-  } catch { /* harvester unavailable in sandbox */ }
+  } catch (e) {
+    changes.push(refusal(MODULE.i18nHarvest, e))
+  }
   return { applied, skipped: 0, changes }
 }
 
@@ -718,7 +755,7 @@ export function applyAllConsistencyFixes(opts: { repoRoot?: string; dryRun?: boo
   let l3: ApplySummary = { applied: 0, skipped: 0, changes: [] }
   try {
     const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
-    const dryClean = requireFromHere(join(repoRoot, 'src/services/agents/mcp/dry-clean.ts')) as {
+    const dryClean = requireFromHere(join(repoRoot, MODULE.dryClean)) as {
       dryCleanScan: (tools: unknown[]) => {
         emergingGaps: ReadonlyArray<{
           suggestedTool: string; area: string; evidence: ReadonlyArray<string>;
@@ -726,10 +763,10 @@ export function applyAllConsistencyFixes(opts: { repoRoot?: string; dryRun?: boo
         }>
       }
     }
-    const toolDefs = requireFromHere(join(repoRoot, 'src/services/agents/mcp/tool-defs.ts')) as {
+    const toolDefs = requireFromHere(join(repoRoot, MODULE.toolDefs)) as {
       buildErpaxMcpTools: (registry: unknown) => unknown[]
     }
-    const boot = requireFromHere(join(repoRoot, 'src/services/agents/bootstrap.ts')) as { agentRegistry: unknown }
+    const boot = requireFromHere(join(repoRoot, MODULE.agentBootstrap)) as { agentRegistry: unknown }
     const tools = toolDefs.buildErpaxMcpTools(boot.agentRegistry)
     const report = dryClean.dryCleanScan(tools)
     const hints: EmergingGapHint[] = report.emergingGaps.map((g) => ({
@@ -741,9 +778,19 @@ export function applyAllConsistencyFixes(opts: { repoRoot?: string; dryRun?: boo
       anchorScore: g.anchorScore,
     }))
     l3 = applyEmergingGapScaffold({ repoRoot: opts.repoRoot, dryRun: opts.dryRun, gaps: hints })
-  } catch {
-    // Tool-defs import path not available in this runtime (e.g. test
-    // sandbox without zod). Skip silently; CI invocation works.
+  } catch (e) {
+    // RECORDED, not swallowed. The comment here used to read "Skip silently; CI invocation works" —
+    // false in both halves: the paths did not exist, so no invocation ever worked, and the silence
+    // is what kept that from being noticed.
+    //
+    // This branch still refuses, now visibly, and that is a DECISION rather than an oversight. It
+    // cannot load at all through `requireFromHere`: `createRequire` is CJS and the tool-defs graph
+    // reaches `agent/benchmark/index.ts`, which uses top-level await. Converting it to `await
+    // import()` would make it load — and would enable `applyEmergingGapScaffold` to write
+    // `<concept>.ts` into `src/agents/mcp/generated/<area>/`, a folder with no SKILL, index or test.
+    // [[law]]/folder forbids exactly that, so making this work means first deciding what a lawful
+    // generated-stub home is. Naming the refusal is honest; silently writing violations is not.
+    l3 = { applied: 0, skipped: 1, changes: [refusal(MODULE.toolDefs, e)] }
   }
   return {
     applied: j.applied + f.applied + l1.applied + l2.applied + l3.applied + z1.applied + z2.applied,

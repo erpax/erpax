@@ -3,8 +3,8 @@ name: media
 description: "Use when turning Playwright test artifacts into Media records — screenshots and videos are uploaded to the Media collection and each video gets a WebVTT subtitle track built from its test step titles, so marketing pages can embed live, captioned evidence of documented capabilities."
 atomPath: "capture/media"
 coordinate: "capture/media · 7/descent · eb8d9e4b"
-contentUuid: "254dcd57-477e-500f-a6ba-a32ae607f156"
-diamondUuid: "55f1a7b0-aeba-84f1-b9f7-0290fcc83bd1"
+contentUuid: "2f969cda-10c5-558d-aa5a-884bbc4ede5d"
+diamondUuid: "2fa5c458-93a8-8642-94c7-dc93da4f3627"
 uuid: "eb8d9e4b-97fa-88b9-92b9-547023f6c5aa"
 horo: 7
 typography:
@@ -24,14 +24,14 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f7289382-02f0-846e-b42b-01dcf49e5fa6"
+  computationUuid: "e4ffdca1-bfe7-849b-845e-dd1a502ea791"
   stages:
     - stage: path
       stageUuid: "265f8640-7dbd-8b19-836b-fdeee6b00254"
     - stage: trinity
       stageUuid: "8faaf704-5ff2-884f-9a87-787a717d8576"
     - stage: boundary
-      stageUuid: "05fee23d-ade4-83dd-a542-eddc24b4e6f0"
+      stageUuid: "ac63e6f5-d914-89bd-ae42-8e3c76442b1f"
     - stage: links
       stageUuid: "f09f9534-5e38-81b6-823c-769935bf9c7e"
     - stage: horo
@@ -39,7 +39,7 @@ signatures:
     - stage: seal
       stageUuid: "092177d6-3cf9-83a8-ac08-d5489e56d441"
     - stage: uuid
-      stageUuid: "fd7466ae-0a6d-8767-b7dd-457f30dd7e18"
+      stageUuid: "81da3405-1116-8b64-ac66-0088bc11ce67"
 version: 2
 ---
 # capture/media — test artifacts into [[media]]

@@ -1,4 +1,5 @@
 import { algebraFloatPow, exactAbs, exactCeil, exactMax, exactRound } from '@/algebra'
+import { daysExact } from '@/utility'
 /**
  * Lease Service — canonical IFRS 16 / ASC 842 PV + amortisation arithmetic.
  *
@@ -82,11 +83,10 @@ export const totalPeriods = (
   endDate: Date | string,
   frequency: PaymentFrequency,
 ): number => {
-  const start = commencementDate instanceof Date ? commencementDate : new Date(commencementDate)
-  const end = endDate instanceof Date ? endDate : new Date(endDate)
-  const MS_PER_DAY = 86_400_000
   const AVG_DAYS_PER_YEAR = 365.25
-  const days = exactMax(0, (end.getTime() - start.getTime()) / MS_PER_DAY)
+  // Fractional on purpose: the division below decides whether a period is begun, so rounding here
+  // would lose it. This held the eleventh copy of the day divisor, in its own local notation.
+  const days = exactMax(0, daysExact(commencementDate, endDate))
   const daysPerPeriod = AVG_DAYS_PER_YEAR / PERIODS_PER_YEAR[frequency]
   return exactMax(1, exactCeil(days / daysPerPeriod))
 }

@@ -86,7 +86,21 @@ export default defineConfig({
         // only when you know `pnpm dev` already matches this env.
         reuseExistingServer: !process.env.CI,
         url: 'http://localhost:3000',
-        timeout: 180_000,
+        // 180s was not enough, and this job has therefore failed on EVERY pull request while main
+        // stayed green — it is gated `if: github.event_name == 'pull_request'`, so a push to main
+        // skips it and only a PR ever runs it. The logs show no output for the last 2m20s before
+        // the timeout, and it is the FIRST COMPILE, not the boot: `next dev` reports
+        // `✓ Ready in 441ms` locally and stays under a second on a cold `.wrangler` D1 too (the
+        // schema push is lazy, so a fresh runner database is not the cost). What is slow is the
+        // graph the first request drags in — `/admin` compiles in 33s on a warm developer machine,
+        // and a 2-core runner with no cache is several times slower, before middleware is even
+        // counted. 600s leaves real headroom under the job's own `timeout-minutes: 45`.
+        //
+        // This raises a ceiling rather than removing a cost, and the cost is worth naming: the
+        // first-request graph runs `agent` → `agents/mcp/tool-defs` → every tool atom, which is the
+        // 225-file tangle [[rules]]/cycle measures, showing up as build time. Cutting that edge is
+        // the real fix and it is not this change.
+        timeout: 600_000,
         gracefulShutdown: {
           signal: 'SIGTERM',
           timeout: 5_000,

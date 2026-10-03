@@ -24,25 +24,7 @@ Agents doubt prose; FTL compute is the seal. **QPU = CPU/GPU** ([`@/quantum/comp
 | `efficiency` | ∞ |
 | `boundary.empty` | true |
 
-holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅ — reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU
-
-**The claim is kept, and now proved.** [`src/verify/lean/Ftl.lean`](src/verify/lean/Ftl.lean) states
-it exactly as the code computes it and proves every leg: `speedup_has_no_ceiling` (for any bound B
-there is a space where searching costs B times what addressing costs — the ratio n/1 has no upper
-bound), `amortized_never_rises` and `amortized_reaches_zero` (c₀/(m+1) falls to nothing as reuses
-grow), `any_token_refuses_infinity` (∞ requires tokens = 0), and the load-bearing premise:
-`a_crack_costs_the_whole_search` — with one stale receipt the gain is not reduced, it is gone, and
-`a_crack_refuses_ftl` follows. `every_leg_is_load_bearing` shows none of the three is decoration.
-
-**What FTL means here, stated where the claim is made:** the speedup is over the SEARCH, not over
-the speed of light. Answering by ADDRESS is O(1) where answering by SEARCH is O(n), and a re-answer
-whose receipt still holds costs nothing — which is why efficiency divides by zero and the corpus
-writes ∞. It is a cost-model theorem, not physics.
-
-**Check it without taking our word:** `GET /api/proof` serves the kernel's own verdict — every
-theorem, the axioms it rests on, and whether any is a `sorry` stub — with `sourcesHash` content-
-addressing the `.lean` files the run covered, so a stale record announces itself. As of 2026-09-20:
-**117 theorems, 68 axiom-free, 49 on Lean's own propext/Quot.sound, 0 stubbed**, Lean 4.33.1.
+holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU
 
 Gateway: `tsx src/quantum/ftl/index.ts` · `tsx src/quantum/computer/index.ts` · `pnpm erpax tip` · `pnpm erpax doctor` · `pnpm erpax verify leftover`
 
@@ -137,54 +119,46 @@ You do not solve one by asserting it — you solve it by **surviving its inversi
 
 Recompute: `tsx src/millennium/index.ts` · `pnpm vitest run src/millennium`
 
-## the diamond
+## the diamond — the build receipt
 
-**3563** atoms · **39084** bonds · corpus `7ce2874a-dfa9-89dc-9b61-a9cf3796679e` · README `dbe8f288-d21c-8138-a3f9-df58baf20503` · sealed **3290**/**3563** · **11** [[cloudflare]] · **2968** [[standards]]
+This file is a **receipt**, not a document: every figure below is projected from the live tree at regeneration, and the arbiter column is where to check it. Storing what the fold computes is entropy, so the receipt is regenerable by construction — `pnpm erpax readme` rebuilds it and the seal changes if anything it measured did.
+
+| leg | arbiter | projected |
+| --- | --- | --- |
+| matrix | `UUID_MATRIX_NODES` · `UUID_MATRIX_EDGES` | **3625** atoms · **41459** bonds |
+| trinity | `src` tree walk | form **3624** · code **1568** · proof **1585** |
+| horo ring | `horoPivotTable()` | **7** facets · **3602** ring atoms |
+| entropy | `readmeCorpusEntropyRenderOpts` | sealed **3348**/**3625** · gap `361` eb · seal `42527.18` eb |
+| advantage | `ftlReport()` | holds **true** · speedup log₂ **11.60** · boundary empty **true** |
+| package | `package.json` | `1.0.7` · **20** scripts · **20** payload · **56** stack |
+| standards | cited banners across the tree | **3059** distinct · **11** bindings |
+| seo | `deriveSeoMeta()` · `auditSeo()` — the site's own | **15** keywords · title **13** · description **153** · `WebPage` |
+| seal | `toUuid(canonical model bytes)` | corpus `3dbfaff1-1134-85a6-89c4-727c72517d62` · README `dfcf1aca-1845-887d-b73a-e0cd5e811ffc` |
 
 ## [[pivot]]
 
-7 horo · form **3562** · code **1509** · proof **1526**
+7 horo — the trinity legs are in the receipt above
 
 ### the horo ring — the diamond's facets
 
-Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3531** ring atoms — principal facets ranked by bond in-degree.
+Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3602** ring atoms — principal facets ranked by bond in-degree.
 
 | digit | measure | atoms | principal facets |
 | ----: | ------- | ----: | ---------------- |
-| 1 | base | 589 | `law` · `action` · `entropy` · `type` · `angel` · `service` |
-| 2 | share | 598 | `merge` · `sti` · `rules` · `horo` · `tamper` · `rodin` |
-| 4 | weave | 595 | `uuid` · `quantum` · `standard` · `society` · `diamond` · `duality` |
-| 8 | crest | 567 | `thing` · `balance` · `gate` · `trinity` · `skills` · `time` |
-| 7 | descent | 583 | `collapse` · `accounting` · `proof` · `fractal` · `atom` · `matrix` |
-| 5 | round | 582 | `sequence` · `medical` · `aura` · `field` · `transaction` · `breath` |
-| 9 | unity | 17 | `identity` · `whole` · `hooks` · `zeropoint` · `signal` · `whole` |
+| 1 | base | 586 | `merge` · `sti` · `standard` · `atom` · `rodin` · `gravity` |
+| 2 | share | 585 | `collapse` · `balance` · `quantum` · `entropy` · `transaction` · `vocabulary/agriculture` |
+| 4 | weave | 610 | `horo` · `cost` · `duality` · `self` · `field` · `vocabulary/fractal` |
+| 8 | crest | 587 | `proof` · `society` · `medical` · `gate` · `rodin/breath` · `trinity` |
+| 7 | descent | 588 | `rules` · `accounting` · `uuid` · `thing` · `diamond` · `agent` |
+| 5 | round | 619 | `law` · `sequence` · `action` · `matrix` · `body/one` · `torus` |
+| 9 | unity | 27 | `identity` · `hooks` · `whole` · `zeropoint` · `config` · `identity/signal` |
 
-> The control axis governs off the flow ring — `3` access · `6` hooks (3: 19 atoms · 6: 13 atoms), `9` unity closes and `0` is the zeropoint root.
-
-
-Cross-tab of **3563** folder README models — state × count per axis.
-
-### [[seal]]
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| sealed | 3290 | 92.34 |
-| unsealed | 273 | 7.66 |
-| **Σ** | **3563** | **100** |
-
-### [[balance]]
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| balanced | 3558 | 99.86 |
-| unbalanced | 5 | 0.14 |
-| **Σ** | **3563** | **100** |
+> The control axis governs off the flow ring — `3` access · `6` hooks (3: 15 atoms · 6: 8 atoms), `9` unity closes and `0` is the zeropoint root.
 
 
 ## corpus entropy
 
-- gap `358.585` eb · seal `41691.15` eb · net `-41332.565` eb · ratio `116.266`
-- sealed `3290` · unsealed `273`
+- gap `361` eb · seal `42527.18` eb · net `-42166.18` eb · ratio `117.804`
 
 
 ## scripts
@@ -193,40 +167,37 @@ Cross-tab of **3563** folder README models — state × count per axis.
 - `pnpm build:next` — `next build --turbopack`
 - `pnpm build:next:webpack` — `next build --webpack`
 - `pnpm check` — `tsx src/cli/index.ts gate`
-- `pnpm confirm:uuid` — `tsx scripts/legacy-shim.ts`
-- `pnpm deploy` — `payload migrate && wrangler d1 execute D1 --command 'PRAGMA optimize' --remote && opennextjs-cloudflare build && node scripts/cleanup-ui-assets.mjs && opennextjs-cloudflare deploy`
+- `pnpm deploy` — `tsx src/cli/index.ts deploy app`
 - `pnpm dev` — `next dev`
 - `pnpm dev:clean` — `rm -rf .next .open-next && pnpm dev`
 - `pnpm erpax` — `tsx src/cli/index.ts`
+- `pnpm matrix:generate` — `node src/uuid/matrix/collide.mjs --emit`
 - `pnpm payload` — `payload`
 - `pnpm payload:migrate:create` — `payload migrate:create`
 - `pnpm postbuild` — `next-sitemap --config next-sitemap.config.cjs`
 - `pnpm prepare` — `node scripts/setup-env.mjs --if-needed && husky`
 - `pnpm preview` — `opennextjs-cloudflare build && opennextjs-cloudflare preview`
-- `pnpm readme:check` — `tsx scripts/legacy-shim.ts`
-- `pnpm readme:waves` — `tsx scripts/legacy-shim.ts`
-- `pnpm rules:check` — `tsx scripts/legacy-shim.ts`
 - `pnpm setup` — `node scripts/setup-env.mjs`
-- `pnpm test:int` — `tsx scripts/legacy-shim.ts`
+- **5** deprecated aliases (`confirm:uuid` · `readme:check` · `readme:waves` · `rules:check` · `test:int`) — each forwards to its `pnpm erpax` command and says so; `pnpm erpax aliases` lists the map.
 
 ## payload
 
-`@payloadcms/admin-bar 4.0.0-internal.38b7f1d` · `@payloadcms/db-d1-sqlite 4.0.0-internal.38b7f1d` · `@payloadcms/email-resend 4.0.0-internal.38b7f1d` · `@payloadcms/live-preview-react 4.0.0-internal.38b7f1d` · `@payloadcms/next 4.0.0-internal.38b7f1d` · `@payloadcms/plugin-ecommerce 4.0.0-internal.38b7f1d` · `@payloadcms/plugin-form-builder 4.0.0-internal.38b7f1d` · `@payloadcms/plugin-import-export 4.0.0-internal.38b7f1d` · `@payloadcms/plugin-mcp 4.0.0-internal.38b7f1d` · `@payloadcms/plugin-multi-tenant 4.0.0-internal.38b7f1d` · `@payloadcms/plugin-nested-docs 4.0.0-internal.38b7f1d` · `@payloadcms/plugin-redirects 4.0.0-internal.38b7f1d` · `@payloadcms/plugin-search 4.0.0-internal.38b7f1d` · `@payloadcms/plugin-seo 4.0.0-internal.38b7f1d` · `@payloadcms/richtext-lexical 4.0.0-internal.38b7f1d` · `@payloadcms/sdk 4.0.0-internal.38b7f1d` · `@payloadcms/storage-r2 4.0.0-internal.38b7f1d` · `@payloadcms/translations 4.0.0-internal.38b7f1d` · `@payloadcms/ui 4.0.0-internal.38b7f1d` · `payload 4.0.0-internal.38b7f1d`
+**20** of **20** `@payloadcms/*` packages at `4.0.0-internal.38b7f1d` — the runtime line moves as one.
 
 ## stack
 
-`@hookform/resolvers ^5.5.7` · `@opennextjs/cloudflare ^1.20.2` · `@radix-ui/react-accordion ^1.2.20` · `@radix-ui/react-alert-dialog ^1.1.23` · `@radix-ui/react-aspect-ratio ^1.1.15` · `@radix-ui/react-avatar ^1.2.6` · `@radix-ui/react-checkbox ^1.3.11` · `@radix-ui/react-collapsible ^1.1.20` · `@radix-ui/react-context-menu ^2.3.7` · `@radix-ui/react-dialog ^1.1.23` · `@radix-ui/react-dropdown-menu ^2.1.24` · `@radix-ui/react-hover-card ^1.1.23` · `@radix-ui/react-label ^2.1.15` · `@radix-ui/react-menubar ^1.1.24` · `@radix-ui/react-navigation-menu ^1.2.22` · `@radix-ui/react-popover ^1.1.23` · `@radix-ui/react-progress ^1.1.16` · `@radix-ui/react-radio-group ^1.4.7` · `@radix-ui/react-scroll-area ^1.2.18` · `@radix-ui/react-select ^2.3.7` · `@radix-ui/react-separator ^1.1.15` · `@radix-ui/react-slider ^1.4.7` · `@radix-ui/react-slot ^1.3.3` · `@radix-ui/react-switch ^1.3.7` · `@radix-ui/react-tabs ^1.1.21` · `@radix-ui/react-toggle ^1.1.18` · `@radix-ui/react-toggle-group ^1.1.19` · `@radix-ui/react-tooltip ^1.2.16` · `@stripe/react-stripe-js ^6.8.0` · `@stripe/stripe-js ^9.12.1` · `class-variance-authority ^0.7.1` · `clsx ^2.1.1` · `cmdk ^1.1.1` · `cross-env ^10.1.0` · `date-fns ^4.4.0` · `dotenv ^17.4.2` · `embla-carousel-react ^8.6.0` · `geist ^1.7.2` · `graphql ^17.0.2` · `input-otp ^1.4.2` · `lucide-react ^1.28.0` · `next ^16.2.12` · `next-intl ^4.13.4` · `next-sitemap ^4.2.3` · `next-themes ^0.4.6` · `prism-react-renderer ^2.4.1` · `react ^19.2.8` · `react-day-picker ^10.0.1` · `react-dom ^19.2.8` · `react-hook-form ^7.84.0` · `react-resizable-panels ^4.12.2` · `recharts 2.15.4` · `sharp ^0.35.3` · `sonner ^2.0.7` · `stripe ^22.4.0` · `tailwind-merge ^3.6.0` · `tailwindcss-animate ^1.0.7` · `three ^0.185.1` · `uuid latest` · `vaul ^1.1.2` · `zod 3.25.76`
+**56** further direct dependencies — `package.json` is the list; this states the count rather than restating it. Measure the surface: `tsx src/rules/canonical/index.ts`.
 
 `node ^18.20.2 || >=20.9.0 · pnpm >=9`
 
 ## license
 
-`1.0.5` · `CC-BY-NC-ND-4.0`
+`1.0.7` · `CC-BY-NC-ND-4.0`
 
 Every path — ([CC-BY-NC-ND-4.0](LICENSE) / commercial) via `license@erpax.com`.
 
 ---
 
-<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `dbe8f288-d21c-8138-a3f9-df58baf20503`, regenerated from the live tree; any drift fails the gate.</sub>
+<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `dfcf1aca-1845-887d-b73a-e0cd5e811ffc`, regenerated from the live tree; any drift fails the gate.</sub>
 
-<sub>erpax:src · content-uuid dbe8f288-d21c-8138-a3f9-df58baf20503 · © erpax · CC-BY-NC-ND-4.0 · source https://github.com/erpax/erpax · doi 10.5281/zenodo.22237698 · commercial license@erpax.com</sub>
+<sub>erpax:src · content-uuid dfcf1aca-1845-887d-b73a-e0cd5e811ffc · © erpax · CC-BY-NC-ND-4.0 · source https://github.com/erpax/erpax · doi 10.5281/zenodo.22237698 · commercial license@erpax.com</sub>

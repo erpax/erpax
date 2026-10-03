@@ -2,11 +2,11 @@
 name: bypass
 description: "Use when checking that a request-reachable handler cannot disable access control silently — Payload's Local API defaults to overrideAccess:true, so bypass is the ambient condition a route inherits by writing nothing. Judges only src/app, because a hook or seed is not routed; a bypass named in a comment is prose, not a use. Baseline is a theorem at zero: one handler bypasses and it authenticates first, so there is no threshold to raise as the corpus grows."
 atomPath: "rules/bypass"
-coordinate: "rules/bypass · 4/weave · f20ed224"
-contentUuid: "a0ff8bb0-93c1-5807-a6b3-cdd1573b76f6"
-diamondUuid: "7fa03ed6-b157-810b-a1a2-3942dbce365b"
-uuid: "f20ed224-ff21-846f-b986-e63d2162623e"
-horo: 4
+coordinate: "rules/bypass · 8/crest · bb071f51"
+contentUuid: "f47d83e6-1440-51f6-ac55-d4d3a4aa6467"
+diamondUuid: "ccbc79cf-91e6-8547-8829-b3e2544ebbac"
+uuid: "bb071f51-2efb-892b-a618-584eda0adc66"
+horo: 8
 typography:
   partition: rules
   bondDegree: 15
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC 27001 A.5.23 — cloud-service tenant isolation"
 bindings: []
 signatures:
-  computationUuid: "7ebfb331-395c-8b6f-b344-ed08614a2084"
+  computationUuid: "568494b2-6467-8ef9-8805-ce0386443b6d"
   stages:
     - stage: path
       stageUuid: "f048a546-8aa5-8be2-90c4-e64dc1b5327a"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "0e3600d1-c3ac-8e14-bcd5-f7cb186fc304"
     - stage: links
-      stageUuid: "9f945866-52dc-8e3a-ae5a-074452196d5d"
+      stageUuid: "5a2ee26e-a08d-82ae-bee3-65afe8241112"
     - stage: horo
-      stageUuid: "69b660d9-dee1-855b-9d7f-40c06f462616"
+      stageUuid: "a7406347-41d1-84dc-a71e-b3ac7f7f4f1a"
     - stage: seal
       stageUuid: "18cb0986-8ee2-8f05-aaa3-82ef4f31a981"
     - stage: uuid
-      stageUuid: "cad22aaa-04ee-86a6-93de-31be97048665"
+      stageUuid: "5c5341f8-4d81-84cb-ba91-39517c92fc9f"
 version: 2
 ---
 # rules/bypass — a route may not disable the check silently
@@ -53,6 +53,21 @@ That handler does it correctly: `payload.auth({ headers })` first, rejects a pri
 Only `src/app` is judged. The corpus has **132** `overrideAccess: true` sites; the great majority are hooks, seeds and jobs that genuinely have no user in scope. Counting them would make the gate noise, and a gate that cries wolf is one nobody reads. Those belong to [[principal]] — the migration that replaces bypass with a scoped identity.
 
 A bypass appearing only in a **comment** is prose about the pattern, not a use of it. This atom's own docstring contains the literal string; [[syntax]] strips comments so the file defining the law cannot be flagged for describing it — the false positive that already cost [[rules]]/confine a wrong measurement.
+
+## The MCP gateway is a request path too
+
+The scope was `src/app`. The MCP gateway is mounted at **`/api/mcp`** and its tool handlers run with
+`req.payload` on a caller's behalf — a request path by every definition this axis uses, and it sat
+outside the law entirely. [[rules]]/domain arriving in a security gate.
+
+The MCP surface performs the construct **7 times**, every one `overrideAccess: false`, so the widening
+is a theorem at zero over a NON-EMPTY population. Proved by planting: a handler under
+`src/agents/mcp/tool` doing `overrideAccess: true` with no `payload.auth` is reported `UNAUTHENTICATED`.
+
+It also flagged `atom-catalogue.generated.ts` twice — and one of the two strings is **this atom's own
+SKILL description**. The gate would have charged the law for describing itself. Comment-stripping cannot
+catch it: those are string literals in generated data. Generated faces are now refused as evidence, as
+every other gate here already does.
 
 ## Honest boundary
 

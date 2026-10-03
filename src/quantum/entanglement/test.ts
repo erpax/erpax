@@ -36,6 +36,7 @@ describe('quantum/entanglement — the physics facet (EPR/Bell/CKW/ER=EPR)', () 
     expect(r.reciprocity).toBeGreaterThanOrEqual(0)
     expect(r.reciprocity).toBeLessThanOrEqual(1)
     expect(typeof r.noCloning).toBe('boolean')
+    expect(r.bell).toBe(true) // the real Bell state from quantum/register, not the matrix shadow
   })
   it('the corpus is maximally entangled — reciprocity 1 AND no-cloning', () => {
     expect(report().reciprocity).toBe(1)

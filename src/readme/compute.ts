@@ -14,6 +14,7 @@ import { memoByFingerprint, memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { canonical as stableStringify } from '@/merge'
 import { join, dirname, relative } from 'node:path'
 import { createHash } from 'node:crypto'
+import { deriveSeoMeta } from '@/website/marketing'
 import {
   UUID_MATRIX_NODES,
   UUID_MATRIX_EDGES,
@@ -268,6 +269,140 @@ function cleanScript(cmd: string): string {
   return cmd.replace(/cross-env\s+(?:[A-Z_]+=(?:"[^"]*"|'[^']*'|\S+)\s+)+/g, '').trim()
 }
 
+/**
+ * `## payload` — the invariant, never twenty copies of one string.
+ *
+ * This section printed `name version` for all twenty `@payloadcms/*` packages, and every one of
+ * them carried the SAME version, so the README repeated `4.0.0-internal.38b7f1d` twenty times to
+ * say one thing. [[rules]]/canonical measured the fact behind it: the runtime packages move as one
+ * line (the tool packages do not, which is why a divergent version is NAMED rather than hidden).
+ *
+ * @invariant a package whose version differs from the dominant line is always named
+ */
+export function payloadFold(payload: readonly string[]): string[] {
+  if (payload.length === 0) return ['—']
+  const byVersion = new Map<string, string[]>()
+  for (const entry of payload) {
+    const at = entry.lastIndexOf(' ')
+    const name = at < 0 ? entry : entry.slice(0, at)
+    const version = at < 0 ? '?' : entry.slice(at + 1)
+    byVersion.set(version, [...(byVersion.get(version) ?? []), name])
+  }
+  const ranked = [...byVersion].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))
+  const [line, onLine] = ranked[0]!
+  const head =
+    `**${onLine.length}** of **${payload.length}** \`@payloadcms/*\` packages at \`${line}\` — the runtime line moves as one.`
+  const divergent = ranked.slice(1).flatMap(([v, names]) => names.map((n) => `\`${n} ${v}\``))
+  return divergent.length === 0 ? [head] : [head, '', `Off that line: ${divergent.join(' · ')}.`]
+}
+
+/**
+ * `## stack` — the count and the arbiter, never a second copy of the list.
+ *
+ * This section restated every non-Payload dependency verbatim, which is [[rules]]/drift's exact
+ * class: a copied answer is a second source of truth. It rotted as the law predicts — five
+ * packages deleted from the tree (`@hookform/resolvers`, both `@stripe/*` browser SDKs,
+ * `date-fns`, `tailwindcss-animate`) survived here, because the drift check that would have
+ * caught it times out before it finishes. `package.json` is one `cat` away and cannot be stale.
+ */
+export function stackFold(stack: readonly string[], node: string): string[] {
+  return [
+    `**${stack.length}** further direct dependencies — \`package.json\` is the list; this states the ` +
+      'count rather than restating it. Measure the surface: `tsx src/rules/canonical/index.ts`.',
+    '',
+    `\`${node}\``,
+  ]
+}
+
+/**
+ * `## scripts` — a deprecated alias is not a command.
+ *
+ * Five rows read `tsx scripts/legacy-shim.ts`, which is not what the script does: the shim looks
+ * the name up in `LEGACY_ALIASES` and prints `Deprecated: pnpm X → use pnpm erpax Y`. Printing the
+ * shim's own path five times told the reader nothing and hid that these names are on their way out.
+ */
+export function scriptsFold(scripts: ReadonlyArray<readonly [string, string]>): string[] {
+  const shim = (cmd: string): boolean => cmd.includes('scripts/legacy-shim.ts')
+  const live = scripts.filter(([, cmd]) => !shim(cmd))
+  const aliases = scripts.filter(([, cmd]) => shim(cmd)).map(([name]) => name)
+  const rows = live.map(([name, cmd]) => `- \`pnpm ${name}\` — \`${cmd}\``)
+  if (aliases.length === 0) return rows
+  return [
+    ...rows,
+    `- **${aliases.length}** deprecated aliases (${aliases.map((a) => `\`${a}\``).join(' · ')}) — ` +
+      'each forwards to its `pnpm erpax` command and says so; `pnpm erpax aliases` lists the map.',
+  ]
+}
+
+/**
+ * `## build receipt` — the computation graph, with every figure beside the arbiter that answers for it.
+ *
+ * The README is a diamond: a content-addressed projection of the live tree, regenerated on demand
+ * and never stored as truth. That makes it a **build receipt**, and a receipt's job is to say what
+ * was computed and from what — so each leg names its arbiter rather than asking to be trusted.
+ *
+ * This is [[rules]]/drift's law made structural. That law says prose may not restate a number the
+ * corpus computes, because a copied answer is a second source of truth; naming the arbiter beside
+ * each figure gives a reader the one place to check, so a stale figure has an address instead of a
+ * rumour. It was needed: this section's `## stack` leg rotted by five packages and its version leg
+ * by two releases, and nothing said so because the drift check times out before it finishes.
+ *
+ * Pure — every value comes from the model already derived, so the receipt costs no extra scan.
+ *
+ * @invariant one row per leg, and every row names an arbiter
+ */
+export function buildReceipt(model: ReadmeModel, uuid: string, ringAtoms: number): string[] {
+  const a = model.analytics
+  const e = a.entropy
+  const ftl = computeQuantumComputerReport(null)
+  // CONSOLIDATED: the README's metadata is derived by the same two functions every site page uses,
+  // so an improvement to the derivation moves both faces at once and neither can drift from the
+  // other. A second SEO derivation for the README would be [[rules]]/copy's camouflage — one truth
+  // at two addresses, with nobody able to say which is maintained.
+  const seo = deriveSeoMeta({ title: model.name, description: model.description, axis: 'standard' })
+  const legs: ReadonlyArray<readonly [string, string, string]> = [
+    ['matrix', '`UUID_MATRIX_NODES` · `UUID_MATRIX_EDGES`', `**${model.atoms}** atoms · **${model.bonds}** bonds`],
+    ['trinity', '`src` tree walk', `form **${model.skills}** · code **${model.index}** · proof **${model.tests}**`],
+    ['horo ring', '`horoPivotTable()`', `**${model.ring.length}** facets · **${ringAtoms}** ring atoms`],
+    [
+      'entropy',
+      '`readmeCorpusEntropyRenderOpts`',
+      `sealed **${a.sealed}**/**${a.folderCount}** · gap \`${e.totalGapEb}\` eb · seal \`${e.totalSealEb}\` eb`,
+    ],
+    [
+      'advantage',
+      '`ftlReport()`',
+      `holds **${ftl.holds}** · speedup log₂ **${ftl.speedupLog2.toFixed(2)}** · boundary empty **${ftl.boundaryEmpty}**`,
+    ],
+    [
+      'package',
+      '`package.json`',
+      `\`${model.version}\` · **${model.scripts.length}** scripts · **${model.payload.length}** payload · ` +
+        `**${model.stack.length}** stack`,
+    ],
+    ['standards', 'cited banners across the tree', `**${a.distinctStandards}** distinct · **${a.withBindings}** bindings`],
+    [
+      'seo',
+      '`deriveSeoMeta()` · `auditSeo()` — the site\'s own',
+      `**${seo.keywords.length}** keywords · title **${seo.title.length}** · description **${seo.description.length}** · ` +
+        `\`${seo.schemaJsonLd['@type']}\``,
+    ],
+    ['seal', '`toUuid(canonical model bytes)`', `corpus \`${model.corpusRoot}\` · README \`${uuid}\``],
+  ]
+  return [
+    '## the diamond — the build receipt',
+    '',
+    'This file is a **receipt**, not a document: every figure below is projected from the live tree at ' +
+      'regeneration, and the arbiter column is where to check it. Storing what the fold computes is ' +
+      'entropy, so the receipt is regenerable by construction — `pnpm erpax readme` rebuilds it and the ' +
+      'seal changes if anything it measured did.',
+    '',
+    '| leg | arbiter | projected |',
+    '| --- | --- | --- |',
+    ...legs.map(([leg, arbiter, projected]) => `| ${leg} | ${arbiter} | ${projected} |`),
+  ]
+}
+
 interface PackageJson {
   name?: string
   description?: string
@@ -366,9 +501,11 @@ export function computeQuantumComputerReport(
     const r = ftl.ftlReport()
     return {
       holds: r.holds,
-      // `why` names the BREAK, so it exists only when the advantage does not hold. The
-      // holding case has no reason to give — that is what holding means.
-      why: r.holds ? 'reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU' : r.why,
+      // `why` names the BREAK, so it exists only when the advantage does not hold. The holding
+      // case has no reason to give — that is what holding means. It previously assigned the
+      // conjunction here, contradicting this comment, and the renderer then printed that same
+      // conjunction a second time on one line: `holds ⇔ X — X`.
+      why: r.holds ? '' : r.why,
       speedupLog2: r.ftl.reuse.speedupLog2,
       efficiency: r.ftl.amortize.efficiency,
       boundaryEmpty: r.ftl.boundary.empty,
@@ -406,7 +543,7 @@ export function renderQuantumComputerSection(
     `| \`boundary.empty\` | ${m.boundaryEmpty} |`,
     '',
     holds
-      ? `holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅ — ${m.why}`
+      ? 'holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU'
       : `ftlReport().holds===false — ${m.why} → tip **quantumise** (fold under quantum/ftl only).`,
     '',
     'Gateway: `tsx src/quantum/ftl/index.ts` · `tsx src/quantum/computer/index.ts` · ' + next,
@@ -476,18 +613,14 @@ export function renderReadme(
     // structural section has no place for ([[sequence]]/inversion)
     ...renderEquilibriumSection(),
     ...renderMillenniumSection(),
-    '## the diamond',
-    '',
-    `**${model.atoms}** atoms · **${model.bonds}** bonds · corpus \`${model.corpusRoot}\` · README \`${uuid}\` · ` +
-      `sealed **${model.analytics.sealed}**/**${model.analytics.folderCount}** · ` +
-      `**${model.analytics.withBindings}** [[cloudflare]] · **${model.analytics.distinctStandards}** [[standards]]`,
+    ...buildReceipt(model, uuid, model.ring.reduce((n, r) => n + r.atoms, 0)),
     '',
     '## [[pivot]]',
     '',
     renderRootPivotHub(
       { ring: model.ring, axis: model.axis },
       trinityCorpusRollup({ atoms: model.atoms, skills: model.skills, index: model.index, tests: model.tests }),
-      `${model.ring.length} horo · form **${model.skills}** · code **${model.index}** · proof **${model.tests}**`,
+      `${model.ring.length} horo — the trinity legs are in the receipt above`,
       { trinity: false },
     ),
   )
@@ -511,20 +644,16 @@ export function renderReadme(
     '## scripts',
     '',
   )
-  for (const [name, cmd] of model.scripts) {
-    L.push(`- \`pnpm ${name}\` — \`${cmd}\``)
-  }
+  L.push(...scriptsFold(model.scripts))
   L.push(
     '',
     '## payload',
     '',
-    model.payload.map((p) => `\`${p}\``).join(' · '),
+    ...payloadFold(model.payload),
     '',
     '## stack',
     '',
-    model.stack.map((p) => `\`${p}\``).join(' · '),
-    '',
-    `\`${model.node}\``,
+    ...stackFold(model.stack, model.node),
     '',
     '## license',
     '',
@@ -914,21 +1043,7 @@ export function aggregateCorpusAnalytics(models: readonly FolderReadmeModel[]): 
     byHoroAcc.set(digit, row)
   }
   const meanBondDegree = folderCount > 0 ? exactRound((bondSum * 100) / folderCount) / 100 : 0
-  const byHoro: CorpusHoroRollup[] = [...byHoroAcc.entries()]
-    .sort((a, b) => {
-      const ai = HORO_DIGITS.indexOf(a[0] as (typeof HORO_DIGITS)[number])
-      const bi = HORO_DIGITS.indexOf(b[0] as (typeof HORO_DIGITS)[number])
-      if (ai >= 0 && bi >= 0) return ai - bi
-      if (ai >= 0) return -1
-      if (bi >= 0) return 1
-      return a[0] - b[0]
-    })
-    .map(([digit, row]) => ({
-      digit,
-      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
-      atoms: row.atoms,
-      sealed: row.sealed,
-    }))
+  const byHoro = horoRollup(byHoroAcc)
   return {
     folderCount,
     sealed,
@@ -943,6 +1058,31 @@ export function aggregateCorpusAnalytics(models: readonly FolderReadmeModel[]): 
   }
 }
 
+/**
+ * The per-horo rollup, built once.
+ *
+ * `deriveCorpusAnalytics` and `mergeCorpusAnalytics` each carried this ring-ordered sort-and-map
+ * verbatim — one 40-node body at two addresses ([[rules]]/copy), with both sites reported un-folded.
+ * Off-ring digits sort last and keep their own label, which is the only subtlety and is now stated
+ * in one place instead of two.
+ */
+const horoRollup = (acc: ReadonlyMap<number, { atoms: number; sealed: number }>): CorpusHoroRollup[] =>
+  [...acc.entries()]
+    .sort((a, b) => {
+      const ai = HORO_DIGITS.indexOf(a[0] as (typeof HORO_DIGITS)[number])
+      const bi = HORO_DIGITS.indexOf(b[0] as (typeof HORO_DIGITS)[number])
+      if (ai >= 0 && bi >= 0) return ai - bi
+      if (ai >= 0) return -1
+      if (bi >= 0) return 1
+      return a[0] - b[0]
+    })
+    .map(([digit, row]) => ({
+      digit,
+      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
+      atoms: row.atoms,
+      sealed: row.sealed,
+    }))
+
 /** Merge two corpus analytics rollups — wave-batch accumulator (OOM guard). */
 export function mergeCorpusAnalytics(a: CorpusAnalytics, b: CorpusAnalytics): CorpusAnalytics {
   const folderCount = a.folderCount + b.folderCount
@@ -954,21 +1094,7 @@ export function mergeCorpusAnalytics(a: CorpusAnalytics, b: CorpusAnalytics): Co
     cur.sealed += row.sealed
     byHoroAcc.set(row.digit, cur)
   }
-  const byHoro: CorpusHoroRollup[] = [...byHoroAcc.entries()]
-    .sort((x, y) => {
-      const ai = HORO_DIGITS.indexOf(x[0] as (typeof HORO_DIGITS)[number])
-      const bi = HORO_DIGITS.indexOf(y[0] as (typeof HORO_DIGITS)[number])
-      if (ai >= 0 && bi >= 0) return ai - bi
-      if (ai >= 0) return -1
-      if (bi >= 0) return 1
-      return x[0] - y[0]
-    })
-    .map(([digit, row]) => ({
-      digit,
-      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
-      atoms: row.atoms,
-      sealed: row.sealed,
-    }))
+  const byHoro = horoRollup(byHoroAcc)
   return {
     folderCount,
     sealed: a.sealed + b.sealed,

@@ -3,13 +3,13 @@ name: unit
 description: "Use when reasoning about unit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: unit
 coordinate: "unit · 7/descent · d3a22d97"
-contentUuid: "d5e24cf7-a536-5aa1-9614-88f389f51d29"
+contentUuid: "f942018f-e0f7-5155-9723-1801a4b0c522"
 diamondUuid: "613a8da4-2b85-893f-b593-98b072358c48"
 uuid: "d3a22d97-0311-8afb-85a0-a21a4c382a27"
 horo: 7
 typography:
   partition: unit
-  bondDegree: 63
+  bondDegree: 67
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

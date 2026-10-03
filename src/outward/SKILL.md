@@ -3,19 +3,19 @@ name: outward
 description: "Use when erpax depends on an answer it does not own — VIES, ECB rates, the Peppol directory, a standards clause, a harvested page. Fetch once, fold the answer to a content-uuid, and verify the ADDRESS on every later pass instead of re-reading the world. Only a moved address is news; an unreachable boundary keeps its last receipt and is never a failure."
 atomPath: outward
 coordinate: "outward · 7/descent · c5534f48"
-contentUuid: "df035b70-f070-5315-8dde-53540d94e3dc"
-diamondUuid: "19d1d986-2cbc-82ba-8696-8afed9418aef"
+contentUuid: "cf728f42-b481-573e-8928-8abafced62c3"
+diamondUuid: "7b46299c-b78c-8b30-a82e-c053b4929c10"
 uuid: "c5534f48-650c-873a-bd43-95246e04215f"
 horo: 7
 typography:
   partition: outward
-  bondDegree: 51
+  bondDegree: 60
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence"
   - "RFC 9562 §5.8 — v8 content-uuid (the address)"
 bindings: []
 signatures:
-  computationUuid: "0c0b39b5-144c-8eec-9766-d1cf65f90147"
+  computationUuid: "6fb5b3bf-10bc-85af-9a91-442a8215205c"
   stages:
     - stage: path
       stageUuid: "5031f81b-27c6-86b5-bd9d-31b297975eaa"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "0b072390-4caa-8f0e-80ab-00c9054a1f78"
     - stage: horo
-      stageUuid: "d6154152-3da1-84bb-8938-743f9013c75e"
+      stageUuid: "cf431d4c-5b7c-8eb6-ae65-833514063f04"
     - stage: seal
       stageUuid: "a869529a-1679-8247-8722-f9c0892869a1"
     - stage: uuid
-      stageUuid: "e144ca00-3653-832c-8e34-7fc3cbecafd9"
+      stageUuid: "db479411-1769-8d8c-a122-e0215ef8bf7b"
 version: 2
 ---
 # outward — the boundary is content-addressed too

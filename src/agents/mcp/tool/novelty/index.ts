@@ -42,7 +42,12 @@ for (const [k, v] of Object.entries(I18N)) {
 }
 
 /** Each law's violating files, scanned once so every pair is free. See SKILL.md. */
-async function populations(laws: readonly string[]): Promise<Map<string, ReadonlySet<string>>> {
+/** The laws whose violating populations are MEASURED. Module-private: an exported literal is seal-debt ([[matrix]]/crack), so `lawPopulations()` with no argument IS the shared way to ask for all of them. */
+const MEASURED_LAWS = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded'] as const
+
+export async function lawPopulations(
+  laws: readonly string[] = MEASURED_LAWS,
+): Promise<Map<string, ReadonlySet<string>>> {
   const cwd = process.cwd()
   const out = new Map<string, ReadonlySet<string>>()
   const want = new Set(laws)
@@ -69,8 +74,6 @@ async function populations(laws: readonly string[]): Promise<Map<string, Readonl
   }
   return out
 }
-
-const KNOWN = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded'] as const
 
 export function buildNoveltyTools(): ReadonlyArray<ErpaxMcpTool> {
   const tCrosses = makeToolI18n('erpax.novelty.crosses')
@@ -100,13 +103,13 @@ export function buildNoveltyTools(): ReadonlyArray<ErpaxMcpTool> {
       name: 'erpax.novelty.measure',
       description: tMeasure.desc(I18N.measure!),
       parameters: {
-        laws: z.array(z.enum(KNOWN)).min(2).optional(),
+        laws: z.array(z.enum(MEASURED_LAWS)).min(2).optional(),
       },
       async handler(args) {
-        const laws = ((args.laws as string[] | undefined) ?? [...KNOWN]).filter((l) =>
-          (KNOWN as readonly string[]).includes(l),
+        const laws = ((args.laws as string[] | undefined) ?? [...MEASURED_LAWS]).filter((l) =>
+          (MEASURED_LAWS as readonly string[]).includes(l),
         )
-        const sets = await populations(laws)
+        const sets = await lawPopulations(laws)
         const sizes = Object.fromEntries([...sets].map(([k, v]) => [k, v.size]))
         return json({
           scanned: sizes,

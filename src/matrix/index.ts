@@ -10,6 +10,8 @@ export {
   CONSTANTS_AUDIT_COORDINATE,
   auditConstants,
   matrixCrackViolations,
+  matrixCracksIn,
+  newCracksIn,
   type ConstantCategory,
   type ConstantAuditEntry,
   type ConstantAuditReport,

@@ -1,14 +1,13 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
+import ts from 'typescript'
+import { astOf, corpusFiles } from '@/syntax/cache'
+import { sealed } from '@/quantum/ftl/memo'
 import { join } from 'node:path'
 
 /**
  * rules/command — a command that runs must point at something that exists.
  *
- * Scope is REACHABILITY: the closure of what CI, the git hooks and package.json actually invoke. A
- * file nothing runs cannot fail open, because it never runs.
- *
  * @see ./SKILL.md — the gate that failed open for weeks, and the three ways this instrument was
- *   wrong on its own first run.
  */
 
 export interface DeadCommand {
@@ -67,9 +66,6 @@ const entryPoints = (root: string): string[] => {
 
 /**
  * Every dead path named by something the repo actually runs.
- *
- * The closure is walked breadth-first from the entry points: an entry names a script, that script
- * names another, and a dead path anywhere along that chain is a command that cannot run.
  */
 export function deadCommands(cwd: string = process.cwd()): DeadCommand[] {
   const reached = new Map<string, string[]>()
@@ -107,9 +103,6 @@ export function deadCommands(cwd: string = process.cwd()): DeadCommand[] {
 
 /**
  * Zero is a THEOREM, not a ratchet.
- *
- * There is no acceptable number of commands that cannot run: each one is a check that reports
- * nothing while appearing to be enforced.
  */
 export function assertCommandsResolve(cwd: string = process.cwd()): void {
   const dead = deadCommands(cwd)
@@ -125,4 +118,89 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`command — ${dead.length} dead path(s) reachable from what actually runs`)
   for (const d of dead) console.log(`  ${d.from} → ${d.target}\n      ${d.reachedBy.join(' → ')}`)
   process.exitCode = dead.length === 0 ? 0 : 1
+}
+
+/**
+ * A path a RUNTIME LOADER names — `require`, `requireFromHere`, a dynamic `import()` — that does
+ * not exist. See ./SKILL.md § the runtime loader.
+ */
+export interface DeadLoaderPath {
+  readonly file: string
+  readonly line: number
+  readonly target: string
+  /** The callee that would load it, e.g. `requireFromHere`. */
+  readonly loader: string
+}
+
+/** The calls that LOAD. A path handed to one of these is a step, not a citation. */
+const LOADERS = ['require', 'requireFromHere', 'import'] as const
+
+/**
+ * Every `src/…` path handed to a runtime loader that does not exist.
+ *
+ * @invariant a path inside a comment or a template with substitutions is never a finding
+ */
+export function deadLoaderPaths(cwd: string = process.cwd()): DeadLoaderPath[] {
+  // SEALED on a WIDER address than the default. This parses every `.ts` under `src` (2397 ms cold)
+  // and then asks whether each target EXISTS — and a target may name `scripts/` or `packages/`. On
+  // the `src`-only key, deleting a script would leave the previous green verdict standing, which is
+  // precisely the fail-open this gate was written to close.
+  return sealed('deadLoaderPaths', cwd, () => computeDeadLoaderPaths(cwd), LOADER_SURFACE)
+}
+
+/** The pathspec the loader verdict depends on: where the literals live, and where the targets are. */
+const LOADER_SURFACE = ['src', 'scripts', 'packages'] as const
+
+function computeDeadLoaderPaths(cwd: string): DeadLoaderPath[] {
+  const out: DeadLoaderPath[] = []
+  const prefix = `${cwd}/`
+  for (const abs of corpusFiles(cwd)) {
+    if (!abs.endsWith('.ts') && !abs.endsWith('.tsx')) continue
+    const rel = abs.startsWith(prefix) ? abs.slice(prefix.length) : abs
+    if (/(^|\/)test\.tsx?$/.test(rel) || rel.startsWith('src/rules/command/')) continue
+    const src = astOf(abs)
+    const visit = (node: ts.Node): void => {
+      if (ts.isCallExpression(node)) {
+        const callee = ts.isIdentifier(node.expression)
+          ? node.expression.text
+          : node.expression.kind === ts.SyntaxKind.ImportKeyword
+            ? 'import'
+            : ''
+        if ((LOADERS as readonly string[]).includes(callee)) {
+          for (const target of pathLiteralsIn(node.arguments)) {
+            if (!existsSync(join(cwd, target))) {
+              const line = src.getLineAndCharacterOfPosition(node.getStart(src)).line + 1
+              out.push({ file: rel, line, target, loader: callee })
+            }
+          }
+        }
+      }
+      ts.forEachChild(node, visit)
+    }
+    ts.forEachChild(src, visit)
+  }
+  return out
+}
+
+/** Repo-relative `src/…` string literals in an argument list, including inside a `join(…)`. */
+function pathLiteralsIn(args: ts.NodeArray<ts.Expression>): string[] {
+  const found: string[] = []
+  const walk = (n: ts.Node): void => {
+    if (ts.isStringLiteral(n) && /^(?:src|scripts|packages)\/[A-Za-z0-9_./-]+\.(?:tsx|ts|mjs|cjs|js)$/.test(n.text)) {
+      found.push(n.text)
+    }
+    ts.forEachChild(n, walk)
+  }
+  for (const a of args) walk(a)
+  return found
+}
+
+/**
+ * Fails closed. Zero is a **theorem**: a loader handed a path that does not exist throws where it
+ */
+export function assertLoaderPathsResolve(cwd: string = process.cwd(), ceiling = 0): void {
+  const dead = deadLoaderPaths(cwd)
+  if (dead.length <= ceiling) return
+  const lines = dead.map((d) => `  ${d.file}:${d.line} ${d.loader}('${d.target}') — no such file`)
+  throw new Error(`rules/command — ${dead.length} dead loader path(s), ceiling ${ceiling}:\n${lines.join('\n')}`)
 }

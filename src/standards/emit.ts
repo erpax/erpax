@@ -415,48 +415,70 @@ export const STANDARDS_COUNT = ${entries.length}
   writeFileSync(out, body)
 }
 
+/**
+ * The catalogue SUMMARY for the agent-facing SKILL — counts and a pointer, never the rows.
+ *
+ * It emitted all 159 cited standards plus 104 uncited ones, each as a row carrying a ~150-byte inline
+ * `<span style>` colour swatch: **60,733 of the SKILL's 64,595 bytes, 94%**, and the heaviest face in
+ * the corpus by a factor of two. A SKILL is read into an agent's context on every turn, and context is
+ * re-sent per turn, so those bytes are not paid once — they are paid once per turn for the life of every
+ * session. 24KB of it was decoration that renders as a dot.
+ *
+ * It was also stored TWICE: the same rows are generated into `docs/STANDARDS_INDEX.md`, and the same
+ * data into `catalogue.ts`, which seeds the payload collection. Derivable content is not stored, and
+ * storing it in the one face every agent loads is the most expensive place to break that rule.
+ *
+ * So the SKILL keeps what cannot be derived by looking elsewhere — the families and their weights, which
+ * say at a glance what this corpus answers to — and names where the rows live. The information a reader
+ * loses is one hop away; the information they gain is that the shape fits on a screen.
+ */
 export function emitSkillCatalogueSection(entries: CatalogueEntry[], cwd: string = process.cwd()): void {
   const skillMd = join(cwd, 'src/standards/SKILL.md')
   if (!existsSync(skillMd)) return
   const START = '<!-- CATALOGUE:START -->'
   const END = '<!-- CATALOGUE:END -->'
   const cited = entries.filter((e) => e.count > 0)
+  const uncited = entries.filter((e) => e.count === 0)
   const byFam = new Map<string, CatalogueEntry[]>()
   for (const e of cited) {
     if (!byFam.has(e.family)) byFam.set(e.family, [])
     byFam.get(e.family)!.push(e)
   }
-  const dot = (c: string): string =>
-    `<span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:${c}"></span>`
+  const families = [...byFam.keys()].sort()
+  const citations = cited.reduce((n, e) => n + e.count, 0)
   const out: string[] = [
     START,
     '',
-    `## Catalogue — ${cited.length} standards, ${cited.reduce((n, e) => n + e.count, 0)} citations`,
+    `## Catalogue — ${cited.length} standards, ${citations} citations`,
     '',
     '<!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->',
     '',
-    'The standards erpax cites are not folders — they are dissolved across `src/` as `@standard` banners. This index is where they meet: each carries its content-uuid (the same `uuid()` projection every row uses — its colour is that uuid made visible), and the same data seeds the payload `standards` collection.',
+    'The standards erpax cites are not folders — they are dissolved across `src/` as `@standard` banners,',
+    'and this is where they meet. The ROWS are not restated here: every id and content-uuid is in',
+    '`docs/STANDARDS_CATALOGUE.md`, the typed data is `STANDARDS_CATALOGUE` in `./catalogue.ts` (which seeds the payload',
+    '`standards` collection), and every citing module and line is in `docs/STANDARDS_INDEX.md`. A SKILL is',
+    'loaded into an agent context on every turn and context is re-sent per turn, so a table generated three',
+    'times elsewhere would be paid for here once per turn, forever — 60,733 bytes of it, 24KB of that',
+    'inline HTML that renders as a coloured dot.',
     '',
+    '| family | standards | citations | heaviest |',
+    '| --- | ---: | ---: | --- |',
   ]
-  for (const fam of [...byFam.keys()].sort()) {
-    out.push(`### ${fam}`, '')
-    for (const e of byFam.get(fam)!) {
-      out.push(`- ${dot(e.color)} \`${e.id}\` — ${e.title} · ${e.count} · \`${e.uuid.slice(0, 8)}\``)
-    }
-    out.push('')
+  for (const fam of families) {
+    const rows = byFam.get(fam)!
+    const top = [...rows].sort((a, b) => b.count - a.count)[0]!
+    const n = rows.reduce((acc, e) => acc + e.count, 0)
+    out.push(`| ${fam} | ${rows.length} | ${n} | \`${top.id}\` · ${top.count} |`)
   }
-  const uncited = entries.filter((e) => e.count === 0)
-  if (uncited.length) {
-    out.push(
-      `### registered — awaiting citation (${uncited.length})`,
-      '',
-      'Known canonical standards in the registry not yet cited by code — e.g. the upstream permaculture / regenerative-agriculture basis of the agriculture domain. They seed as `proposed` and become cited as the domain grows.',
-      '',
-    )
-    for (const e of uncited) out.push(`- ${dot(e.color)} \`${e.id}\` — ${e.title}`)
-    out.push('')
-  }
-  out.push(END)
+  out.push(
+    `| **Σ** | **${cited.length}** | **${citations}** | |`,
+    '',
+    `**Registered, awaiting citation: ${uncited.length}.** Known canonical standards the registry holds and`,
+    'no code cites yet — they seed as `proposed` and become cited as a domain grows. Listed in',
+    '`docs/STANDARDS_INDEX.md`.',
+    '',
+    END,
+  )
   const block = out.join('\n')
   let md = readFileSync(skillMd, 'utf8')
   md =
@@ -464,6 +486,82 @@ export function emitSkillCatalogueSection(entries: CatalogueEntry[], cwd: string
       ? md.replace(new RegExp(START + '[\\s\\S]*?' + END), block)
       : md.replace(/\n*$/, '') + '\n\n' + block + '\n'
   writeFileSync(skillMd, md)
+}
+
+/**
+ * The full catalogue as a generated sibling face — every cited and registered standard with its
+ * content-uuid, the rows the SKILL no longer restates.
+ *
+ * The holographic law says every file in an atom reflects the same whole, and the SKILL's 159+104 rows
+ * were how this atom kept it. Deleting them would have traded one law for another: the rows exist typed
+ * in `catalogue.ts` and in the payload collection, but nowhere a person reads. So they move to a face
+ * that is NOT loaded into an agent context — an agent reads `SKILL.md` and `LLM.md` — which keeps the
+ * whole reflected while taking 60,733 bytes out of a per-turn budget that is re-sent every turn.
+ *
+ * It lives in `docs/` rather than beside the atom, and that was measured too: a new file in an atom
+ * folder is an unregistered diamond member and fresh accounting matter, so the first attempt turned one
+ * red axis green and two others red (`diamond-files 5>4`, `accounting-wave 258→260`). `docs/` is where
+ * this corpus already keeps generated standards material.
+ *
+ * `docs/STANDARDS_INDEX.md` could not carry it: that index is keyed on banner TEXT and holds 92 of the
+ * 159 cited ids with no uuids at all. Asserting the guarantee against it would have been an assertion
+ * that passes while checking 58% of the claim.
+ */
+export function emitCatalogueFace(
+  // Exactly the six fields it reads, all readonly — so the generated `catalogue.ts` type (readonly) and
+  // the builder's own (mutable) both satisfy it without a cast that would hide a real difference.
+  entries: ReadonlyArray<{
+    readonly id: string
+    readonly family: string
+    readonly title: string
+    readonly uuid: string
+    readonly color: string
+    readonly count: number
+  }>,
+  cwd: string = process.cwd(),
+): void {
+  type Row = (typeof entries)[number]
+  const cited = entries.filter((e) => e.count > 0)
+  const uncited = entries.filter((e) => e.count === 0)
+  const byFam = new Map<string, Row[]>()
+  for (const e of cited) {
+    if (!byFam.has(e.family)) byFam.set(e.family, [])
+    byFam.get(e.family)!.push(e)
+  }
+  const dot = (c: string): string =>
+    `<span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:${c}"></span>`
+  const out: string[] = [
+    '# standards — the full catalogue',
+    '',
+    '<!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->',
+    '',
+    `${cited.length} cited standards, ${cited.reduce((n, e) => n + e.count, 0)} citations, ${uncited.length} registered and awaiting citation.`,
+    'Each row carries its content-uuid; the colour IS that uuid made visible. The shape of this catalogue,',
+    'by family, is in `src/standards/SKILL.md`; the typed data is `STANDARDS_CATALOGUE` in',
+    '`src/standards/catalogue.ts`, which seeds the payload `standards` collection. Every citing module and',
+    'line is in `./STANDARDS_INDEX.md`.',
+    '',
+  ]
+  for (const fam of [...byFam.keys()].sort()) {
+    out.push(`## ${fam}`, '')
+    for (const e of byFam.get(fam)!) {
+      out.push(`- ${dot(e.color)} \`${e.id}\` — ${e.title} · ${e.count} · \`${e.uuid.slice(0, 8)}\``)
+    }
+    out.push('')
+  }
+  if (uncited.length) {
+    out.push(
+      `## registered — awaiting citation (${uncited.length})`,
+      '',
+      'Known canonical standards in the registry not yet cited by code — e.g. the upstream permaculture /',
+      'regenerative-agriculture basis of the agriculture domain. They seed as `proposed` and become cited as',
+      'the domain grows.',
+      '',
+    )
+    for (const e of uncited) out.push(`- ${dot(e.color)} \`${e.id}\` — ${e.title} · \`${e.uuid.slice(0, 8)}\``)
+    out.push('')
+  }
+  writeFileSync(join(cwd, 'docs/STANDARDS_CATALOGUE.md'), out.join('\n'))
 }
 
 export function emitStandardsCatalogue(cwd: string = process.cwd()): {
@@ -474,6 +572,7 @@ export function emitStandardsCatalogue(cwd: string = process.cwd()): {
   const result = buildStandardsCatalogue(cwd)
   emitCatalogueTs(result.entries, cwd)
   emitSkillCatalogueSection(result.entries, cwd)
+  emitCatalogueFace(result.entries, cwd)
   return result
 }
 

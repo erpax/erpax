@@ -6,6 +6,8 @@
  * @see ./SKILL.md — ../think — ../rules/refutable
  */
 import { readFileSync, existsSync, readdirSync } from 'node:fs'
+import { coverage, nextAsk } from '@/quantum/chat/coverage'
+import { messageUuid } from '@/quantum/chat/merkle'
 import { join } from 'node:path'
 import { algebraLog2, exactMax } from '@/algebra'
 import { alreadyRefuted } from '@/think'
@@ -207,6 +209,15 @@ export interface Intersection {
   /** Files violating both — the population a cross between them would work on. */
   readonly shared: number
   readonly files: readonly string[]
+  /** What {@link shared} would be if the two laws fired INDEPENDENTLY: |a|·|b| / |universe|. */
+  readonly expected: number
+  /**
+   * `shared / expected`. At 1 the agreement is exactly what chance predicts and the cross found
+   * nothing; below 1 the laws AVOID each other. Only above 1 is the meeting evidence.
+   */
+  readonly lift: number
+  /** `log₂(lift)` — pointwise mutual information, the measured twin of {@link surpriseBits}. */
+  readonly bits: number
 }
 
 /**
@@ -216,9 +227,16 @@ export interface Intersection {
  * predict what a cross would find: its top three picks each measured empty. This measures the
  * intersection instead. The caller supplies each law's violating files, so one scan per law pays
  * for every pair.
+ *
+ * A raw count is not evidence — see ./SKILL.md § lift. The sort leads with `lift` for that reason.
+ *
+ * @invariant a pair firing independently has lift ≈ 1, whatever its shared COUNT
  */
 export function crossIntersections(sets: ReadonlyMap<string, ReadonlySet<string>>): Intersection[] {
   const names = [...sets.keys()].sort()
+  // The universe is what these measurements can SEE — the union of their populations. A law's share
+  // of the whole tree is unknowable here, and assuming one would invent the denominator.
+  const universe = new Set([...sets.values()].flatMap((s) => [...s])).size
   const out: Intersection[] = []
   for (let i = 0; i < names.length; i++) {
     for (let j = i + 1; j < names.length; j++) {
@@ -227,10 +245,16 @@ export function crossIntersections(sets: ReadonlyMap<string, ReadonlySet<string>
       const sa = sets.get(a) as ReadonlySet<string>
       const sb = sets.get(b) as ReadonlySet<string>
       const files = [...sa].filter((f) => sb.has(f)).sort()
-      out.push({ a, b, shared: files.length, files })
+      const expected = universe === 0 ? 0 : (sa.size * sb.size) / universe
+      // An unmeasurable ratio is reported as 0 rather than as Infinity or as 1: neither "infinitely
+      // surprising" nor "exactly chance" is what an empty expectation means.
+      const lift = expected === 0 ? 0 : files.length / expected
+      out.push({ a, b, shared: files.length, files, expected, lift, bits: lift === 0 ? 0 : algebraLog2(lift) })
     }
   }
-  return out.sort((x, y) => y.shared - x.shared || x.a.localeCompare(y.a) || x.b.localeCompare(y.b))
+  return out.sort(
+    (x, y) => y.lift - x.lift || y.shared - x.shared || x.a.localeCompare(y.a) || x.b.localeCompare(y.b),
+  )
 }
 
 /** How much of one law's population lies inside another's — directional. */
@@ -261,13 +285,61 @@ export function containment(sets: ReadonlyMap<string, ReadonlySet<string>>): Con
 }
 
 /**
- * Laws whose population meets NO other law's — provably empty crosses. See SKILL.md.
+ * Laws whose population meets no other law's AT THE ADDRESS THE CALLER SUPPLIED. See SKILL.md.
  *
  * Worth naming because a cross involving one of them cannot find anything, whatever the prose
  * ranking says: `concentration × copy` was the top-ranked undrawn pair and measured exactly 0.
+ *
+ * "Provably empty" would over-claim: emptiness is a fact about the ADDRESS the caller supplied, not
+ * about the laws. See ./SKILL.md § lift.
  */
 export function orthogonalLaws(sets: ReadonlyMap<string, ReadonlySet<string>>): string[] {
   return [...sets.keys()]
     .filter((law) => containment(sets).filter((c) => c.law === law || c.inside === law).every((c) => c.share === 0))
     .sort()
+}
+
+/** A measured cross, as a candidate the stream can advance past. See ./SKILL.md § streams. */
+export const crossCandidate = (i: Intersection): string =>
+  `${i.a} × ${i.b}: ${i.shared} shared file(s)`
+
+export interface CrossStream {
+  /** Measured crosses with a non-empty intersection, most-shared first. */
+  readonly proven: readonly Intersection[]
+  /** Fraction of proven crosses already drawn. */
+  readonly covered: number
+  /** The next proven cross nothing has drawn, or undefined when every one is drawn. */
+  readonly next: string | undefined
+  readonly outstanding: number
+}
+
+/**
+ * The proven crosses as a STREAM, fused to the ask. See ./SKILL.md § streams.
+ *
+ * Three resistances removed, and none of them needed new logic. Nothing fed the measured crosses to
+ * anything — `next` was generic over a caller-supplied list. Nothing recorded which had been DRAWN,
+ * so a ranking returned the same pair forever. And nothing scheduled it.
+ *
+ * It rides `crossIntersections` — the MEASURED overlap — never `crosses`, whose prose ranking this
+ * corpus refuted by measuring it: its top three picks each came back empty. `coverage` and `nextAsk`
+ * are [[quantum]]/chat's, unchanged.
+ *
+ * @invariant a cross with an empty intersection is never streamed — asserted in ./test.ts
+ * @invariant nothing drawn ⇒ covered = 0 and next is the most-shared cross — asserted in ./test.ts
+ * @invariant all drawn ⇒ covered = 1 and next is undefined — asserted in ./test.ts
+ * @invariant no proven crosses ⇒ covered = 1 by definition — asserted in ./test.ts
+ */
+export function crossStream(sets: ReadonlyMap<string, ReadonlySet<string>>, drawn: readonly string[]): CrossStream {
+  const proven = crossIntersections(sets)
+    .filter((i) => i.shared > 0)
+    .sort((x, y) => y.shared - x.shared || x.a.localeCompare(y.a))
+  const candidates = proven.map(crossCandidate)
+  return {
+    proven,
+    covered: coverage(drawn, candidates),
+    next: nextAsk(drawn, candidates),
+    // the coverage KEY is the candidate's uuid, which is what `coverage` and `nextAsk` compare —
+    // counting raw text here made `outstanding` disagree with `covered` on the same input
+    outstanding: candidates.filter((c) => !drawn.includes(messageUuid(c))).length,
+  }
 }

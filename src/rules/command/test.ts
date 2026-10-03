@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
-import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs'
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { assertCommandsResolve, deadCommands } from '.'
+import { assertCommandsResolve, deadCommands, deadLoaderPaths, assertLoaderPathsResolve } from '.'
 
 const repo = (files: Record<string, string>): string => {
   const root = mkdtempSync(join(tmpdir(), 'erpax-command-'))
@@ -92,4 +92,94 @@ describe('rules/command', () => {
   it('every path this repo actually runs resolves', () => {
     expect(deadCommands(process.cwd())).toEqual([])
   })
+})
+
+/**
+ * The runtime-loader population — the one that rotted because neither gate covered it.
+ *
+ * `deadCommands` scopes itself to what CI, the hooks and package.json reach and delegates a `.ts`
+ * module's paths to [[rules]]/reference, which reads prose and comments. A path inside a string
+ * literal handed to `requireFromHere` was in neither, so `consistency/apply` pointed thirteen
+ * references at a dissolved `src/services/` tree and only the Next dev build ever said so.
+ */
+describe('rules/command — a runtime loader must point at something that exists', () => {
+  const tree = (files: Record<string, string>): string => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-loader-'))
+    for (const [rel, body] of Object.entries(files)) {
+      const full = join(root, rel)
+      mkdirSync(join(full, '..'), { recursive: true })
+      writeFileSync(full, body)
+    }
+    return root
+  }
+
+  it('catches the exact shape that rotted — a join()ed literal inside requireFromHere', () => {
+    const root = tree({
+      'src/a/index.ts':
+        "const requireFromHere = createRequire(import.meta.url)\n" +
+        "export const load = (repoRoot: string) =>\n" +
+        "  requireFromHere(join(repoRoot, 'src/services/agents/bootstrap.ts'))\n",
+    })
+    try {
+      const dead = deadLoaderPaths(root)
+      expect(dead).toHaveLength(1)
+      expect(dead[0]!.target).toBe('src/services/agents/bootstrap.ts')
+      expect(dead[0]!.loader).toBe('requireFromHere')
+      expect(dead[0]!.line).toBe(3)
+      expect(() => assertLoaderPathsResolve(root)).toThrow(/no such file/)
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('catches a dynamic import() too', () => {
+    const root = tree({ 'src/a/index.ts': "export const f = () => import('src/gone/x.ts')\n" })
+    try {
+      expect(deadLoaderPaths(root).map((d) => d.loader)).toEqual(['import'])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('a path that EXISTS is never a finding', () => {
+    const root = tree({
+      'src/a/index.ts': "export const f = () => require('src/b/real.ts')\n",
+      'src/b/real.ts': 'export const real = 1\n',
+    })
+    try {
+      expect(deadLoaderPaths(root)).toEqual([])
+      expect(() => assertLoaderPathsResolve(root)).not.toThrow()
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('a comment naming a dead path is not a call — the grammar excludes prose for free', () => {
+    const root = tree({
+      'src/a/index.ts':
+        "// once: requireFromHere('src/services/agents/bootstrap.ts')\n" +
+        "/** and here too: require('src/services/gone.ts') */\nexport const f = 1\n",
+    })
+    try {
+      expect(deadLoaderPaths(root)).toEqual([])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('an INTERPOLATED path names a family, not a file, and is never judged', () => {
+    const root = tree({
+      'src/a/index.ts': 'export const f = (area: string) => require(`src/gone/${area}/x.ts`)\n',
+    })
+    try {
+      expect(deadLoaderPaths(root)).toEqual([])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('the live corpus has none, and zero is a theorem', () => {
+    expect(deadLoaderPaths()).toEqual([])
+    expect(() => assertLoaderPathsResolve()).not.toThrow()
+  }, 300_000)
 })

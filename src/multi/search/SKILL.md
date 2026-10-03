@@ -3,7 +3,7 @@ name: search
 description: "Use when reasoning about search — Identification answers a typed identifier. Anything else routes here: runs a tenant-scoped query across the collections in scope, ORing over the text fields reports for each, and…"
 atomPath: "multi/search"
 coordinate: "multi/search · 4/weave · 02d56492"
-contentUuid: "5665d91d-e352-5e34-99a5-0ff5c10a3c24"
+contentUuid: "69a4f755-c360-5605-8e87-a120f8145496"
 diamondUuid: "2fb08f6c-a36b-82d0-a7d5-edd0279f9a41"
 uuid: "02d56492-b2bd-8191-a4f1-378dd560acb6"
 horo: 4
@@ -12,7 +12,6 @@ typography:
   bondDegree: 50
 standards:
   - "ISO/IEC 25010:2023 §5.3 operability (one input → many sources)"
-  - MCP
   - "Schema.org Action — search-action (Slice YYYYYY presents these MCP-callable)"
 bindings: []
 signatures:

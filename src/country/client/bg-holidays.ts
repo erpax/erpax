@@ -1,4 +1,5 @@
 import { exactFloor } from '@/algebra'
+import { addDays } from '@/utility'
 /**
  * BG public-holiday calendar — non-banking days the value-date /
  * settlement-date / due-date arithmetic must skip.
@@ -53,7 +54,7 @@ function orthodoxEaster(year: number): string {
   // 21st century the offset is 13.
   const offset = year < 2100 ? 13 : year < 2200 ? 14 : 15
   const julianDate = Date.UTC(year, julianMonth - 1, julianDay)
-  const gregorianDate = new Date(julianDate + offset * 86_400_000)
+  const gregorianDate = addDays(new Date(julianDate), offset)
   const yyyy = gregorianDate.getUTCFullYear()
   const mm = String(gregorianDate.getUTCMonth() + 1).padStart(2, '0')
   const dd = String(gregorianDate.getUTCDate()).padStart(2, '0')
@@ -117,6 +118,5 @@ export function nextBgBusinessDay(date: string): string {
 }
 
 function addDaysIso(iso: string, days: number): string {
-  const ms = new Date(iso + 'T00:00:00Z').getTime() + days * 86_400_000
-  return new Date(ms).toISOString().slice(0, 10)
+  return addDays(`${iso}T00:00:00Z`, days).toISOString().slice(0, 10)
 }

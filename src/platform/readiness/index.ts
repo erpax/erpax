@@ -19,6 +19,7 @@
  */
 
 import type { ErpaxMcpTool } from '@/agents/mcp'
+import { hoursFromMs } from '@/utility'
 import type { AgentRegistry } from '@/agent'
 import { BUSINESS_CHAINS } from '@/business/chain'
 import { listTenantRoles } from '@/tenant/role'
@@ -122,7 +123,7 @@ export function buildReadinessManifest(args: {
     ? {
         published: true, contentUuid: proofBundle.contentUuid,
         generatedAt: proofBundle.generatedAt, publicUrl: proofBundle.publicUrl,
-        ageHours: Number(((Date.now() - new Date(proofBundle.generatedAt).getTime()) / 3_600_000).toFixed(2)),
+        ageHours: Number(hoursFromMs(Date.now() - new Date(proofBundle.generatedAt).getTime()).toFixed(2)),
       }
     : { published: false }
   const pwaIntegrity = checkPwaUuidIntegrity()

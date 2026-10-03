@@ -3,13 +3,13 @@ name: discover
 description: "Use when reasoning about discover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/discover"
 coordinate: "vocabulary/discover · 7/descent · 723ed4ef"
-contentUuid: "c205c2ec-a5a9-588f-af32-be405105a2ae"
+contentUuid: "f08f31be-dd9a-53d2-83f4-795e8cc34f68"
 diamondUuid: "e1a99933-19b3-8eca-86b7-6a319d4302c9"
 uuid: "723ed4ef-cdab-8875-bbcd-41747eda4fce"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 29
+  bondDegree: 33
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

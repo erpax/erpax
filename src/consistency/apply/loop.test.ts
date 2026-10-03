@@ -29,7 +29,7 @@ let tmp: string
 
 beforeEach(() => {
   tmp = mkdtempSync(join(tmpdir(), 'erpax-consistency-'))
-  mkdirSync(join(tmp, 'src/services/business-chains'), { recursive: true })
+  mkdirSync(join(tmp, 'src/business/chain'), { recursive: true })
   mkdirSync(join(tmp, 'src/plugins/accounting/collections'), { recursive: true })
   mkdirSync(join(tmp, 'src/hooks'), { recursive: true })
   // Stub chainEventEmitters so applyAll's "fired" lookup finds something.
@@ -63,11 +63,11 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
   },
 }
 `
-    writeFileSync(join(tmp, 'src/services/business-chains/registry.ts'), registry)
+    writeFileSync(join(tmp, 'src/business/chain/registry.ts'), registry)
     // First run patches the missing producer.
     const r1 = applyChainProducerBackfill({ repoRoot: tmp })
     expect(r1.applied).toBe(1)
-    const after = readFileSync(join(tmp, 'src/services/business-chains/registry.ts'), 'utf8')
+    const after = readFileSync(join(tmp, 'src/business/chain/registry.ts'), 'utf8')
     expect(after).toContain('producer:')
     expect(after).toContain(`onStatus: 'activated'`)
     expect(after).toContain(`aggregate: 'invoice'`)
@@ -95,7 +95,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
   },
 }
 `
-    writeFileSync(join(tmp, 'src/services/business-chains/registry.ts'), registry)
+    writeFileSync(join(tmp, 'src/business/chain/registry.ts'), registry)
     // A clean registry can still need first-pass scaffolding (e2e seeds /
     // surfaces) the fresh tmp tree lacks; idempotency is the property that the
     // SECOND pass — tree now at steady state — applies nothing.
@@ -118,11 +118,11 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
   },
 }
 `
-    writeFileSync(join(tmp, 'src/services/business-chains/registry.ts'), registry)
-    const before = readFileSync(join(tmp, 'src/services/business-chains/registry.ts'), 'utf8')
+    writeFileSync(join(tmp, 'src/business/chain/registry.ts'), registry)
+    const before = readFileSync(join(tmp, 'src/business/chain/registry.ts'), 'utf8')
     const r = applyChainProducerBackfill({ repoRoot: tmp, dryRun: true })
     expect(r.applied).toBe(1)  // reports the would-be patch count
-    const after = readFileSync(join(tmp, 'src/services/business-chains/registry.ts'), 'utf8')
+    const after = readFileSync(join(tmp, 'src/business/chain/registry.ts'), 'utf8')
     expect(after).toBe(before)  // file unchanged
   })
 
@@ -140,7 +140,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
   },
 }
 `
-    writeFileSync(join(tmp, 'src/services/business-chains/registry.ts'), registry)
+    writeFileSync(join(tmp, 'src/business/chain/registry.ts'), registry)
     const r = applyChainProducerBackfill({ repoRoot: tmp })
     expect(r.applied).toBe(0)
     expect(r.skipped).toBeGreaterThan(0)
@@ -161,7 +161,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
   },
 }
 `
-    writeFileSync(join(tmp, 'src/services/business-chains/registry.ts'), registry)
+    writeFileSync(join(tmp, 'src/business/chain/registry.ts'), registry)
     const r = applyChainProducerBackfill({ repoRoot: tmp })
     expect(r.applied).toBe(0)
     expect(r.changes.some((c) => c.action === 'skip:unknown-aggregate')).toBe(true)

@@ -78,7 +78,21 @@ const shouldScanFile = (rel: string): boolean => {
   return true
 }
 
-const commentCodeRatio = (content: string): { ratio: number; codeLines: number } => {
+/**
+ * The MACHINE-READ annotation surface — not prose, and not this law's business.
+ *
+ * `@standard` banners ARE the single source of truth for the standards catalogue ([[standards]]/emit),
+ * [[rules]]/citation fails closed when one leaves the surface, and [[rules]]/refutable requires an
+ * `@invariant` beside every claim. Counting them as bloat made two laws pull opposite ways: obeying
+ * citation and refutable put you in violation here, and the only way to satisfy all three was to drop a
+ * banner that another gate is built on.
+ *
+ * Measured: 46 of 401 flagged files (11%) were over the threshold ONLY because of these lines.
+ */
+const MACHINE_READ =
+  /^\s*\*?\s*@(standard|rfc|law|invariant|accounting|compliance|quality|security|see|param|returns?|throws|example|index-cross)\b/
+
+export const commentCodeRatio = (content: string): { ratio: number; codeLines: number } => {
   const lines = content.split('\n')
   let code = 0
   let comments = 0
@@ -86,18 +100,19 @@ const commentCodeRatio = (content: string): { ratio: number; codeLines: number }
   for (const raw of lines) {
     const line = raw.trim()
     if (!line) continue
+    const machineRead = MACHINE_READ.test(raw)
     if (block) {
-      comments++
+      if (!machineRead) comments++
       if (line.includes('*/')) block = false
       continue
     }
     if (line.startsWith('/*')) {
-      comments++
+      if (!machineRead) comments++
       if (!line.includes('*/')) block = true
       continue
     }
     if (line.startsWith('*') || line.startsWith('//')) {
-      comments++
+      if (!machineRead) comments++
       continue
     }
     code++

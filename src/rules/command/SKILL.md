@@ -2,10 +2,10 @@
 name: command
 description: "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed."
 atomPath: "rules/command"
-coordinate: "rules/command · 8/crest · 731acf2d"
-contentUuid: "717480e6-0af8-50ef-a29f-0f019ae1a688"
-diamondUuid: "3b2aaf44-f85d-8e01-9c84-54c712abd2d3"
-uuid: "731acf2d-c118-811d-9793-4746739d0f81"
+coordinate: "rules/command · 8/crest · 2ca46545"
+contentUuid: "3c3e6750-cb8b-5ea4-832a-f45982934c53"
+diamondUuid: "ae3e95eb-9770-8981-9d01-bd9cd3fb3243"
+uuid: "2ca46545-69fb-8ed2-bbbd-8d20b5348cbf"
 horo: 8
 typography:
   partition: rules
@@ -13,22 +13,22 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8ca5a49a-7c64-8c65-a65a-fa71df344f5d"
+  computationUuid: "77c09770-9e2c-8dc8-91cf-7d53dc6e9c97"
   stages:
     - stage: path
       stageUuid: "b5e62b08-01b9-8aa0-b446-cccc0c0e3659"
     - stage: trinity
       stageUuid: "9717512a-a5ae-888e-87e1-712ca944b401"
     - stage: boundary
-      stageUuid: "9b1c9973-f425-8bb1-9aad-b2c896ec7274"
+      stageUuid: "5ccd6e77-4a22-80a9-afd4-b4256f80536a"
     - stage: links
-      stageUuid: "e5be4147-abd0-8b92-844c-e9720219a480"
+      stageUuid: "c694e904-4a25-8c4e-b682-d5d2d042d937"
     - stage: horo
-      stageUuid: "522ab32f-2f11-8710-a161-663365612f81"
+      stageUuid: "2b99e0c4-0376-8a7b-a9f7-746303ea7cf5"
     - stage: seal
       stageUuid: "e46e9b95-f7ef-804c-a92b-840ae48a5ddd"
     - stage: uuid
-      stageUuid: "0095ed5d-bad0-8425-b2a4-5638dcbc96fe"
+      stageUuid: "c9944a35-3fb3-8ff9-bcd1-e6990b999b42"
 version: 2
 ---
 # rules/command — a step that cannot run reports the same green as a step that passed
@@ -75,6 +75,34 @@ It reported 4, and every one was an artefact: a **comment** naming a path (`Mirr
 src/algebra/license.ts`), `packages/released.json` matched as `packages/released.js` because the
 extension alternation stopped mid-word, and two shell paths behind `[ -f … ]` guards, which are
 conditionals rather than commands. Each is now excluded by construction and pinned by a test.
+
+## The runtime loader — the population neither gate covered
+
+This gate's scope is REACHABILITY, and it delegates a `.ts` module's paths to [[rules]]/reference.
+That delegation had a hole: `reference` reads **prose and comments**, so a path inside a **string
+literal handed to a loader** was in neither population.
+
+`consistency/apply` sat in that hole with **13 references to the dissolved `src/services/` tree**,
+across six functions — every one behind a bare `catch {}`. The live `erpax.consistency` MCP tool
+therefore answered `applied: 0, skipped: 0, changes: []`: indistinguishable from a clean tree with
+nothing to fix. One catch carried the comment *"Skip silently; CI invocation works"*, false in both
+halves — the paths did not exist, so no invocation ever worked.
+
+**Its own tests were why nobody noticed.** The fixtures built `src/services/business-chains/` in a
+temp directory, so the code worked perfectly against a tree shape that no longer existed anywhere
+else. A green suite proved the transform, not the wiring.
+
+`deadLoaderPaths` closes it: a `src/…` string literal passed to `require`, `requireFromHere` or a
+dynamic `import()`, which does not exist. Two refusals keep it at zero noise — a `ts.StringLiteral`
+cannot occur inside a comment, so the grammar excludes prose for free; and an interpolated path
+(`` `src/${area}/x.ts` ``) names a family rather than a file, so judging it would be a guess. Zero is
+a **theorem**: a loader handed a missing path throws where it runs.
+
+The repointing is the smaller half. `applied` went 0 → **21** once the paths were real, and one
+branch still refuses — visibly, and by decision: `createRequire` is CJS and the tool-defs graph
+reaches a module with top-level await, so it cannot load that way at all, and making it load would
+let a scaffolder write `<concept>.ts` into a folder with no SKILL, index or test, which
+[[law]]/folder forbids.
 
 **Honest boundary.** This proves a path **named** by something that runs exists. It does not prove
 the command succeeds, that the file does what its caller expects, or that a dynamically-assembled

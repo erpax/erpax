@@ -1,5 +1,5 @@
 /** @index-cross.foldback child=payable/workflow parent=payable — this cross folds back into its parent. */
-import { exactCeil, exactMax } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * Bill Status Workflow — directed-graph state transitions.
  *
@@ -16,6 +16,7 @@ import { exactCeil, exactMax } from '@/algebra'
  * @see docs/STANDARDS.md §5
  */
 
+import { daysBetweenCeil, daysOverdue, daysUntil } from '@/utility'
 import { Bill, BillStatus } from '@/types/payables'
 
 export class BillStatusWorkflow {
@@ -169,29 +170,15 @@ export class BillStatusWorkflow {
     }
   }
 
-  /**
-   * Calculate days until due
-   */
   static calculateDaysUntilDue(dueDate: Date, asOfDate: Date = new Date()): number {
-    const diffTime = dueDate.getTime() - asOfDate.getTime()
-    const diffDays = exactCeil(diffTime / (1000 * 60 * 60 * 24))
-    return diffDays
+    return daysUntil(dueDate, asOfDate)
   }
 
-  /**
-   * Calculate days overdue
-   */
   static calculateDaysOverdue(dueDate: Date, asOfDate: Date = new Date()): number {
-    const diffTime = asOfDate.getTime() - dueDate.getTime()
-    const diffDays = exactCeil(diffTime / (1000 * 60 * 60 * 24))
-    return exactMax(0, diffDays)
+    return daysOverdue(dueDate, asOfDate)
   }
 
-  /**
-   * Get bill age (days since bill date)
-   */
   static getBillAge(billDate: Date, asOfDate: Date = new Date()): number {
-    const diffTime = asOfDate.getTime() - billDate.getTime()
-    return exactCeil(diffTime / (1000 * 60 * 60 * 24))
+    return daysBetweenCeil(billDate, asOfDate)
   }
 }

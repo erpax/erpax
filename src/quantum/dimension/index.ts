@@ -1,4 +1,4 @@
-import { algebraSqrt, exactAbs } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * quantum/dimensions — quantum semantics folded across every projection axis.
  *
@@ -12,6 +12,7 @@ import { algebraSqrt, exactAbs } from '@/algebra'
  * @see ./index.ts — ../superposition — ../horo — ../typography — ../diamond — ./serverless
  */
 import { HORO_DIGITS, HORO_MEASURE, type HoroStep } from '@/horo'
+import { normaliseAmplitudes } from '@/quantum/register'
 import { total, collapse as collapse1D, uniform } from '@/superposition'
 import { computeDiamond, deploymentFaces, type DiamondModel } from '@/diamond'
 import { uuid, jcsCanonicalize } from '@/integrity'
@@ -69,10 +70,7 @@ export function superpose2D(
   for (const [k, v] of Object.entries(raw)) {
     if (k in amp) amp[k] = v ?? 0
   }
-  const norm = algebraSqrt(Object.values(amp).reduce((s, a) => s + a * a, 0))
-  if (norm === 0) throw new Error('superpose2D: the zero state has no normalisation — give at least one non-zero amplitude')
-  for (const k of Object.keys(amp)) amp[k] = amp[k]! / norm
-  return { amplitudes: amp }
+  return { amplitudes: normaliseAmplitudes(amp, 'superpose2D') }
 }
 
 /** Born rule on the 2D grid — |c|² per cell (sums to 1 for a normalised state). */

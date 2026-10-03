@@ -3,13 +3,13 @@ name: audit
 description: "Use when reasoning about audit — builds each tenant's standardised monthly audit file for the month that has closed — is what decides which — and submits it where an mTLS submitter is wired."
 atomPath: "jobs/audit"
 coordinate: "jobs/audit · 5/round · faa512de"
-contentUuid: "af4ac5b4-5063-5dee-8b19-f1ec98cd4906"
+contentUuid: "0c5b04d3-13a5-55de-be28-d3e38811791d"
 diamondUuid: "0f170773-a466-8d25-94a4-9e7cf489988d"
 uuid: "faa512de-5f68-85cf-ac1a-114a8c691358"
 horo: 5
 typography:
   partition: jobs
-  bondDegree: 134
+  bondDegree: 138
 standards:
   - "BG Наредба-Н-18 §Приложение-38 monthly-audit-file"
   - "Naredba-N-18"

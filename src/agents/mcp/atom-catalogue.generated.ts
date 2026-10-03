@@ -431,6 +431,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool/float"
   },
   {
+    "atom": "frontier",
+    "name": "frontier",
+    "description": "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store.",
+    "path": "agents/mcp/tool/frontier"
+  },
+  {
     "atom": "kyc",
     "name": "kyc",
     "description": "Use when reasoning about kyc — answers the one question the directive actually asks: **what level of customer due diligence is owed**, given facts someone else established.",
@@ -449,6 +455,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool/outward"
   },
   {
+    "atom": "quantum",
+    "name": "quantum",
+    "description": "Use when an agent needs the exact-amplitude register over MCP — erpax.quantum.run · erpax.quantum.bell · erpax.quantum.shots expose quantum/register (integer amplitudes, halvings, determinant entanglement witness, enumerated shots) as pure tools; bigints cross the wire as decimal strings.",
+    "path": "agents/mcp/tool/quantum"
+  },
+  {
     "atom": "risk",
     "name": "risk",
     "description": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395).",
@@ -459,6 +471,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "staffing",
     "description": "Use when reasoning about staffing — folds a declared position into everything it already implied: the job description, the competency gap, the training plan **in the order it must run**, the access capability, and…",
     "path": "agents/mcp/tool/staffing"
+  },
+  {
+    "atom": "witness",
+    "name": "witness",
+    "description": "Use when reasoning about witness — Two tools, and the second exists because the first was hand-picked.",
+    "path": "agents/mcp/tool/witness"
   },
   {
     "atom": "registered",
@@ -5693,6 +5711,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "outward/coverage"
   },
   {
+    "atom": "discover",
+    "name": "discover",
+    "description": "Use when reasoning about discover — outward/witness crosses five domains and every one of them was **hand-picked**.",
+    "path": "outward/discover"
+  },
+  {
     "atom": "eu",
     "name": "eu",
     "description": "Use when checking whether the pan-EU authorities erpax depends on have moved — VIES (the VAT-validation contract), the ECB currency set, the Peppol directory envelope, and the EU sanctions schema. Each probe asks a STABLE question so a moved address is real news, never the daily churn. CLI lane: erpax outward eu [--write].",
@@ -5709,6 +5733,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "leads",
     "description": "Use when reasoning about leads — outward already holds the machinery: an answer is content-addressed, a remembers the last address, and returns **fresh · unchanged · moved · unreachable**.",
     "path": "outward/leads"
+  },
+  {
+    "atom": "witness",
+    "name": "witness",
+    "description": "Use when reasoning about witness — A cross-check is only worth the independence of its legs. already treats an unreachable boundary as an **unanswered question** rather than a failure; this atom asks the sharper…",
+    "path": "outward/witness"
   },
   {
     "atom": "world",
@@ -6539,6 +6569,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/ftl/map"
   },
   {
+    "atom": "memo",
+    "name": "memo",
+    "description": "Use when reasoning about memo — models cost as ** ** — it falls as reuses grow, and that falling is what lets reach ∞ and the FTL claim hold.",
+    "path": "quantum/ftl/memo"
+  },
+  {
+    "atom": "disk",
+    "name": "disk",
+    "description": "Use when reasoning about disk — The in-process memo takes a re-ask to zero **within one run**. A fresh process — every CI job, every pre-push — still paid the first ask in full. This makes that free too.",
+    "path": "quantum/ftl/memo/disk"
+  },
+  {
     "atom": "metrics",
     "name": "metrics",
     "description": "Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations",
@@ -6695,6 +6737,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/reality"
   },
   {
+    "atom": "register",
+    "name": "register",
+    "description": "Use when a quantum state must be DECIDED rather than approximated — an exact-amplitude register (integer amplitudes, halvings instead of division) with H · X · Z · CNOT · SWAP, the Bell and GHZ states, a determinant entanglement witness, enumerated shots, and the one Float Born normaliser the three Float copies fold onto; kernel-checked twin in Register.lean.",
+    "path": "quantum/register"
+  },
+  {
     "atom": "request",
     "name": "request",
     "description": "Use when an agent calls an external system — quantum-compress the request to its most compact and cheapest form; content-address it so the uuid is the idempotency key, dedup against the cache, batch, and send the hash not the payload when the other side has seen it; squeeze the request to a point and the external cost drops toward zero.",
@@ -6831,6 +6879,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "readme",
     "description": "Use when the repository README is generated, verified, or reasoned about — the README is a diamond (a content-addressed projection of the live tree, regenerable with zero entropy, drift fails closed) and its typography IS the diamond projected (facets = the closed horo ring laid out in measure-walk order, so reading the README is reading the crystal). Derived from the tree (matrix · fs walk · package.json), never hand-typed.",
     "path": "readme"
+  },
+  {
+    "atom": "audit",
+    "name": "audit",
+    "description": "Use when reasoning about audit — The root README carries a header saying *do not edit by hand, drift fails closed*.",
+    "path": "readme/audit"
   },
   {
     "atom": "orientation",
@@ -7583,6 +7637,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rules/refutable"
   },
   {
+    "atom": "scope",
+    "name": "scope",
+    "description": "Use when reasoning about scope — Every slow cycle in the session that produced this atom had one shape: **the whole corpus measured to answer a question about a changeset.**",
+    "path": "rules/scope"
+  },
+  {
     "atom": "slack",
     "name": "slack",
     "description": "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist.",
@@ -7593,6 +7653,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "unfolded",
     "description": "Use when checking that an export earns its place — a symbol with no caller is dead, and one with exactly one caller is un-folded (inline it, delete it, or make it reused). Counts real call sites only: an import or re-export NAMES a symbol without USING it, so counting it hides genuine single-use. Candidates, never a purge list — erpax ships as @erpax/* packages, so an export may be the public face with no in-repo caller. Run: tsx src/rules/unfolded/index.ts",
     "path": "rules/unfolded"
+  },
+  {
+    "atom": "unit",
+    "name": "unit",
+    "description": "Use when reasoning about unit — 's own docstring calls itself *\"single source of truth for how old is this item\"*, cites ISO-8601, and party's SKILL says the day-arithmetic *\"is borrowed… not re-typed — the…",
+    "path": "rules/unit"
   },
   {
     "atom": "unraised",
@@ -10827,6 +10893,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "lock",
     "description": "Use when reasoning about lock — is the hook wired into every GL-posting collection: it reads the document's posting date, finds the fiscal period containing it, and throws when that period's status is .",
     "path": "utility/period/lock"
+  },
+  {
+    "atom": "span",
+    "name": "span",
+    "description": "Use when reasoning about span — The calendar day stood at **twenty-four addresses in four notations** — (22 sites), a local in , a bare in the ISO-week calculation, and reversed in — while called itself the…",
+    "path": "utility/span"
   },
   {
     "atom": "utterance",

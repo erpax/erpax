@@ -1,4 +1,5 @@
 import { exactRound } from '@/algebra'
+import { hoursFromMs } from '@/utility'
 /**
  * Law 16 — Carbon-aware execution. Slice ZZZZZ.
  * gCO2e per chain step → ESRS E1 / CSRD reporting.
@@ -18,7 +19,7 @@ const TENANT_CARBON = new Map<string, number>()  // tenantId → cumulative gCO2
 
 export function estimateCarbon(args: { cpuMs: number; egressBytes: number; region?: string }): CarbonEstimate {
   // CPU energy: Watts × hours = kWh
-  const cpuHours = args.cpuMs / 3_600_000
+  const cpuHours = hoursFromMs(args.cpuMs)
   const cpuKwh = cpuHours * KWH_PER_CPU_HOUR
   // Network: 0.06 kWh per GB (industry estimate, IEA 2023)
   const networkKwh = (args.egressBytes / 1_073_741_824) * 0.06

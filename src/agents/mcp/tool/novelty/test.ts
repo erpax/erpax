@@ -46,3 +46,14 @@ describe('erpax.novelty — the cross enumerator on the public surface', () => {
     expect(String(r.reading)).toMatch(/DIRECTIONAL/)
   }, 300_000)
 })
+
+describe('novelty — the factory is not the surface', () => {
+  it('reaches the LIVE MCP surface, not just this factory', async () => {
+    // `buildOutwardTools` was exported from the tool barrel and never CALLED in tool-defs: its
+    // tools were built, tested green, and reachable from nothing. Measured after: 8 of 8 tool atoms
+    // tested only their own factory. A test that exercises a builder proves the builder builds and
+    // cannot prove anything asks it — rules/canonical's law, restated for a test.
+    const { toolsLiveUnder } = await import('@/agents/mcp')
+    expect(await toolsLiveUnder('erpax.novelty.')).toBe(true)
+  })
+})

@@ -1,5 +1,5 @@
 /** @index-cross.foldback child=payable/analytics parent=payable — this cross folds back into its parent. */
-import { exactCeil, exactRound } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * A/P Analytics — vendor performance, DPO, spend analysis.
  *
@@ -11,6 +11,7 @@ import { exactCeil, exactRound } from '@/algebra'
  * @see docs/STANDARDS.md §5
  */
 
+import { daysBetweenCeil } from '@/utility'
 import { Bill, Vendor, VendorPerformance } from '@/types/payables'
 import { calculateAverage, calculateAverageRounded } from '@/average/calculator'
 
@@ -29,13 +30,17 @@ export class APAnalytics {
     const avgBillAmount = calculateAverage(vendorBills.map((b) => b.totalAmount))
 
     const daysToReceive = vendorBills.map((b) => {
-      return exactCeil((b.billDate.getTime() - b.billDate.getTime()) / (1000 * 60 * 60 * 24))
+      // Receipt lag: the vendor's bill date to the day erpax recorded it. This read
+      // `billDate - billDate`, which is always 0, so avgDaysToReceive has never measured anything.
+      return daysBetweenCeil(b.billDate, b.createdAt)
     })
     const avgDaysToReceive = calculateAverage(daysToReceive)
 
     const paidBills = vendorBills.filter((b) => b.status === 'paid')
     const daysToPay = paidBills.map((b) => {
-      return exactCeil((asOfDate.getTime() - b.dueDate.getTime()) / (1000 * 60 * 60 * 24))
+      // NOTE: this is days past DUE at the report date, not days taken to pay — `Bill` carries no
+      // paid date, so the real metric cannot be computed and is not invented here.
+      return daysBetweenCeil(b.dueDate, asOfDate)
     })
     const avgDaysToPay = calculateAverage(daysToPay)
 
@@ -43,7 +48,7 @@ export class APAnalytics {
     const discountRate = vendor.earlyPaymentDiscount || 0
 
     const onTimePayments = paidBills.filter((b) => {
-      const daysToDue = exactCeil((b.dueDate.getTime() - b.billDate.getTime()) / (1000 * 60 * 60 * 24))
+      const daysToDue = daysBetweenCeil(b.billDate, b.dueDate)
       return daysToDue <= (b.paymentTerms === 'custom' ? 45 : parseInt(b.paymentTerms))
     }).length
 
@@ -115,7 +120,7 @@ export class APAnalytics {
       }
 
       byTerm[term].count++
-      byTerm[term].daysOutstanding.push(exactCeil((new Date().getTime() - bill.dueDate.getTime()) / (1000 * 60 * 60 * 24)))
+      byTerm[term].daysOutstanding.push(daysBetweenCeil(bill.dueDate, new Date()))
 
       if (bill.discountAvailable) {
         byTerm[term].discountCount++
@@ -202,12 +207,12 @@ export class APAnalytics {
     const totalAP = openBills.reduce((sum, b) => sum + b.balance, 0)
 
     const overdueBills = bills.filter((b) => {
-      const daysOverdue = exactCeil((new Date().getTime() - b.dueDate.getTime()) / (1000 * 60 * 60 * 24))
+      const daysOverdue = daysBetweenCeil(b.dueDate, new Date())
       return daysOverdue > 0 && b.balance > 0
     })
 
     const dueSoon = bills.filter((b) => {
-      const daysToDue = exactCeil((b.dueDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
+      const daysToDue = daysBetweenCeil(new Date(), b.dueDate)
       return daysToDue >= 0 && daysToDue <= 7 && b.balance > 0
     })
 

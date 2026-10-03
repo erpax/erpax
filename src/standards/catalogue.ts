@@ -1178,6 +1178,36 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "EU-2015/849",
+    "family": "eu",
+    "title": "Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing",
+    "uuid": "1dd7398a-4877-8f53-aa8b-2420619a37a1",
+    "color": "hsl(79 77% 56%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/aml/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/kyc/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/rules/citation/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/rules/hold/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/rules/hold/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "EU-765/2008",
     "family": "eu",
     "title": "Accreditation and market surveillance / CE marking — Regulation (EC) No 765/2008",
@@ -1265,32 +1295,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/eu/ai/act/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2015/849",
-    "family": "eu",
-    "title": "Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing",
-    "uuid": "1dd7398a-4877-8f53-aa8b-2420619a37a1",
-    "color": "hsl(79 77% 56%)",
-    "count": 8,
-    "modules": [
-      {
-        "path": "src/aml/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/kyc/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/rules/hold/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/rules/hold/index.ts",
         "section": ""
       }
     ]
@@ -2042,7 +2046,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 196,
+    "count": 201,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -3483,7 +3487,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 102,
+    "count": 106,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -6567,7 +6571,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Model Context Protocol",
     "uuid": "bbe40439-0393-8d8b-a793-b13b3dc80e16",
     "color": "hsl(220 59% 47%)",
-    "count": 28,
+    "count": 30,
     "modules": [
       {
         "path": "src/agent/access/SKILL.md",
@@ -6634,6 +6638,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/agents/mcp/tool/frontier/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/agents/mcp/tool/integrity-extensions.ts",
         "section": ""
       },
@@ -6654,15 +6662,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/agents/mcp/tool/witness/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/architecture/invariant/checks.ts",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/spec/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/multi/search/index.ts",
         "section": ""
       }
     ]

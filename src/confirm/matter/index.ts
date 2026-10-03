@@ -19,6 +19,9 @@ import { deadReferencesIn } from '@/rules/reference'
 import { deadSymbolsIn } from '@/rules/prose'
 import { mirroredIn } from '@/rules/mirror'
 import { forgedIn } from '@/rules/forge'
+import { newCracksIn } from '@/matrix'
+import { CONFIRM_GATE_CHECKS } from '@/cost/bits'
+import { citationsLostIn } from '@/rules/citation'
 import { verifyStandardsCatalogue } from '@/standards/emit'
 
 const ROOT = process.cwd()
@@ -190,6 +193,9 @@ export const CONFIRM_CHECK_AXES = [
   'outside',
   'mirror',
   'forge',
+  'crack',
+  'citation',
+  'gate-pin',
 ] as const
 
 export function folderNameWarnings(files: readonly string[]): string[] {
@@ -407,6 +413,45 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
   // defect here that reaches OUTSIDE the corpus — a caller receives provenance for a deposit that
   // never happened — so it belongs at the write, never at the push.
   const forgeries = forgedIn(files, ROOT)
+  // An `export const X = {…}` is seal-debt ([[matrix]]/crack), and it is the axis an AUTHOR trips over
+  // while writing rather than one that rots over time. It ran only at the push, as a whole-tree COUNT —
+  // so learning which of your own edits caused it meant bisecting the changeset by hand, or measuring
+  // HEAD in a worktree and diffing. That happened three times in one session, and it is the manual loop
+  // this closes.
+  //
+  // The refusal is INTRODUCED-ONLY, and that is a measurement rather than a preference: 451 of 11,631
+  // tracked src files already hold a crack, so refusing any crack in an edited file would lock 451 files
+  // and teach whoever hit one to reach for `--no-verify`. Two independent readings of the same file prove
+  // each other instead — `categorize` over the committed blob against `categorize` over the disk — so
+  // only what this edit ADDED is refused, and pre-existing debt stays with the ratchet that tracks it.
+  //
+  // Scoping is sound because `categorize` reads no cross-file state, and the equivalence is a test:
+  // 746 = 746 over every tracked src file, empty in both directions. The whole tree costs 1823 ms; one
+  // edited file costs 2 ms, which is the difference between a law that can live at the WRITE and one
+  // that cannot.
+  const cracks = newCracksIn(files, ROOT)
+  // A refactor may drop a symbol; it may not drop a STATUTE. Two purges cut 170 dead exports and took
+  // BG ЗПУПС and IFRS 1 §IG7 with them, because a leading `/** … */` block is indistinguishable to a
+  // scope-based purge from the docstring of the declaration under it. Nothing reported it: tsc was
+  // content, the waves were content, and the loss reads as an IMPROVEMENT (fewer cited standards looks
+  // like fewer undischarged axioms).
+  //
+  // The push lane already runs the ring, but corpusCitations costs 1849ms warm so it cannot run per
+  // edit. This pays only when something LEFT: the changed files are parsed, then one targeted git-grep
+  // per lost token — usually none. A citation that MOVED is never a loss.
+  const lostCitations = citationsLostIn(files, ROOT)
+  // I bumped CONFIRM_CHECK_AXES twice today and forgot `CONFIRM_GATE_CHECKS` BOTH times, so the mirror
+  // test in cost/bits went red on the push twice for the same reason. A pin that must be remembered is a
+  // pin that will be missed; the failure mode this hook exists for is exactly this one.
+  //
+  // The number is READ from source rather than imported: `cost/bits` cannot import this module in
+  // production without joining the 225-file tangle ([[rules]]/cycle), which is why the pin lives in a
+  // test at all. A targeted read costs nothing and adds no module edge.
+  const touchesPin = files.some((f) => /src\/(confirm\/matter|cost\/bits)\/index\.ts$/.test(f.replace(/\\/g, '/')))
+  const pinnedChecks =
+    touchesPin && CONFIRM_GATE_CHECKS !== CONFIRM_CHECK_AXES.length
+      ? `CONFIRM_GATE_CHECKS is ${CONFIRM_GATE_CHECKS} and this hook runs ${CONFIRM_CHECK_AXES.length} axes — bump it in src/cost/bits/index.ts`
+      : null
   // Realtime PROVENANCE gate ([[grounded]]): a trust-chain convention (`src/convention/*/index.ts`) that
   // reads raw, unsealed fs (`process.cwd()`/`readFileSync`/`readdirSync`/`existsSync`) prices the tamper-
   // cost on the MUTABLE working tree, not sealed content — the forge-cost then measures a directory
@@ -464,6 +509,17 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
       `🟥 forge     ✗  ${forgeries.length} identifier(s) wear a registry's shape and are generated locally — ` +
         `received or refused, never minted: ${forgeries.map((f) => `${f.file}:${f.line} ${f.registry}`).join(', ')}`,
     )
+  if (cracks.length)
+    console.log(
+      `🟥 crack     ✗  ${cracks.length} exported literal(s) are seal-debt — compute from sealed state or ` +
+        `make it a function: ${cracks.map((c) => `${c.file} ${c.constName}`).join(', ')}`,
+    )
+  if (pinnedChecks !== null) console.log(`🟥 gate-pin  ✗  ${pinnedChecks}`)
+  if (lostCitations.length)
+    console.log(
+      `🟥 citation  ✗  ${lostCitations.length} standard(s) left the evidence surface entirely — ` +
+        `a refactor may drop a symbol, never a statute: ${lostCitations.map((l) => `${l.standard} (was ${l.was.join(', ')})`).join(', ')}`,
+    )
   if (staleCatalogue)
     console.log(
       '🟥 standards ✗  a standard banner moved and the catalogue did not follow — run `pnpm erpax standards catalogue`',
@@ -502,6 +558,9 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     outside: outsideWrites.length === 0,
     mirror: mirrors.length === 0,
     forge: forgeries.length === 0,
+    crack: cracks.length === 0,
+    citation: lostCitations.length === 0,
+    'gate-pin': pinnedChecks === null,
   }
   const ok = CONFIRM_CHECK_AXES.every((axis) => verdicts[axis])
   if (ok) {

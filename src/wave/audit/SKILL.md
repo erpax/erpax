@@ -3,13 +3,13 @@ name: audit
 description: "Use when reaching the audit dimension from the wave machinery — the double-wire reciprocal of audit/wave."
 atomPath: "wave/audit"
 coordinate: "wave/audit · 5/round · 33ba4d59"
-contentUuid: "9cf49f90-3a49-5d93-bba4-f58afea7dbe3"
+contentUuid: "1eed86dc-5430-582b-89cd-e335093d4d27"
 diamondUuid: "5033fa14-4c59-86a4-b8a4-305dec981804"
 uuid: "33ba4d59-d500-85c3-b6a2-a39788da4fa0"
 horo: 5
 typography:
   partition: wave
-  bondDegree: 134
+  bondDegree: 138
 standards: []
 bindings: []
 signatures:

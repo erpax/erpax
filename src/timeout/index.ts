@@ -1,4 +1,5 @@
 import { exactMax, exactRound } from '@/algebra'
+import { msFromMinutes } from '@/utility'
 /**
  * timeout — the reasonable timeout is COMPUTED, never guessed.
  *
@@ -27,7 +28,7 @@ export function timeoutOf(samplesMs: readonly number[] = [], safety = 2): Timeou
   const worst = samplesMs.reduce((a, b) => exactMax(a, b), 0)
   const need = worst > 0 ? worst * safety : DEFAULT_NEED_MS
   for (const minutes of TIMEOUT_LADDER_MINUTES) {
-    const ms = minutes * 60_000
+    const ms = msFromMinutes(minutes)
     if (need <= ms) return { ms, minutes, exceeds: false }
   }
   return { ms: TIMEOUT_CEILING_MS, minutes: 5, exceeds: true }

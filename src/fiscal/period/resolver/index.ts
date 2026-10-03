@@ -1,4 +1,5 @@
 import { exactCeil, exactFloor } from '@/algebra'
+import { daysBetween, daysExact } from '@/utility'
 /**
  * FiscalPeriodResolver Service
  *
@@ -130,15 +131,11 @@ export class FiscalPeriodResolver {
     let daysIntoFiscalYear: number
     if (date >= fyStart && date < fyEnd) {
       fiscalYear = date.getUTCFullYear()
-      daysIntoFiscalYear = exactFloor(
-        (date.getTime() - fyStart.getTime()) / (1000 * 60 * 60 * 24),
-      )
+      daysIntoFiscalYear = daysBetween(fyStart, date)
     } else {
       fiscalYear = date.getUTCFullYear() - 1
       const priorFyStart = this.getFiscalYearStart(fiscalYear, config)
-      daysIntoFiscalYear = exactFloor(
-        (date.getTime() - priorFyStart.getTime()) / (1000 * 60 * 60 * 24),
-      )
+      daysIntoFiscalYear = daysBetween(priorFyStart, date)
     }
 
     // Determine fiscal period
@@ -669,7 +666,7 @@ export class FiscalPeriodResolver {
     const dayNum = d.getUTCDay() || 7
     d.setUTCDate(d.getUTCDate() + 4 - dayNum)
     const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
-    return exactCeil(((d.getTime() - yearStart.getTime()) / 86400000 + 1) / 7)
+    return exactCeil((daysExact(yearStart, d) + 1) / 7)
   }
 
   private static computeRegulatoryCode(

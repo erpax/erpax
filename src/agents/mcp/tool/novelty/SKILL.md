@@ -3,8 +3,8 @@ name: novelty
 description: "Use when reasoning about novelty — conjecture enumerates crosses between laws the corpus already holds: pairs of atoms that are each widely cited and never drawn together."
 atomPath: "agents/mcp/tool/novelty"
 coordinate: "agents/mcp/tool/novelty · 1/base · 36c654d3"
-contentUuid: "da78c70e-a4ad-53d8-9e13-1a567bd4830e"
-diamondUuid: "5bc777cd-9041-8f17-95e4-4b56a38e0c73"
+contentUuid: "1b13057d-218b-58a8-aa87-8c1044161b7d"
+diamondUuid: "ca5403d6-8595-85ae-8f6c-b3a0cae03a83"
 uuid: "36c654d3-66e0-8f2b-a1ff-62d10a6a9ee0"
 horo: 1
 typography:
@@ -16,14 +16,14 @@ standards:
   - "Shannon (1948) — surprise is −log₂ p, in bits"
 bindings: []
 signatures:
-  computationUuid: "f66526f1-7dfe-8a2c-a75d-c5e9fd9b8c24"
+  computationUuid: "e32f5de6-14b3-87a8-8ff5-ca2e1e3eaf7e"
   stages:
     - stage: path
       stageUuid: "8aa65608-91b4-82c2-8876-badde15b0b52"
     - stage: trinity
       stageUuid: "689fbca3-15a3-8c1a-8887-1c72b446bfb6"
     - stage: boundary
-      stageUuid: "96eabec9-4870-8715-a390-1abd7508f767"
+      stageUuid: "c8b5b224-d67d-8910-8ce0-91b0bb87a66d"
     - stage: links
       stageUuid: "f26c41ea-7e5f-8c45-b635-4d8962960ba9"
     - stage: horo
@@ -31,7 +31,7 @@ signatures:
     - stage: seal
       stageUuid: "015cf91d-29c2-8017-b3bf-092a11507c94"
     - stage: uuid
-      stageUuid: "d40d7555-83ba-8f4d-998b-64f136c8572e"
+      stageUuid: "d58f52f0-21e1-8677-962d-6258aff2ecf3"
 version: 2
 ---
 # agents/mcp/tool/novelty — the combinatorial surface, exposed to the public

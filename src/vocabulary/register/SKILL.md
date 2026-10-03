@@ -3,13 +3,13 @@ name: register
 description: "Use when reasoning about register as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/register"
 coordinate: "vocabulary/register · 8/crest · 78f65328"
-contentUuid: "5a04f7af-7bdd-5aa8-a61d-4f2b4b395264"
+contentUuid: "b83d905b-feda-5d57-bc24-9063328e34df"
 diamondUuid: "9055faf8-c151-82b0-873d-0c3b41193888"
 uuid: "78f65328-89a4-8973-bb6f-52ad799003f0"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 21
+  bondDegree: 26
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

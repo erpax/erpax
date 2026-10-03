@@ -3,7 +3,7 @@ name: spec
 description: "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST."
 atomPath: "dashboard/spec"
 coordinate: "dashboard/spec · 7/descent · 93eae84e"
-contentUuid: "4ed06d82-43a7-5681-83a9-4bde6a2c2aca"
+contentUuid: "0d790d5c-7fa7-58d2-b696-995d30a98f43"
 diamondUuid: "de8a2211-3361-8327-a395-70ddfbfb2289"
 uuid: "93eae84e-7691-8296-a769-7bf72e6746e1"
 horo: 7
@@ -14,7 +14,6 @@ standards:
   - "ISO-27002"
   - "ISO-27002 §5.15 access-control + §5.3 segregation-of-duties"
   - "ISO/IEC-27002:2022"
-  - MCP
   - "MCP 0.6 tools/list + tools/call (the mcp DataSource)"
   - "NIST INCITS-359 role-based-access-control"
   - "NIST-INCITS-359-2012"

@@ -444,15 +444,7 @@ export function aggregateCorpusEntropy(
   const netEntropyEb = roundEb(totalGapEb - totalSealEb)
   const sealGapRatio = sealGapRatioOf(totalSealEb, totalGapEb)
 
-  const bySector: SectorEntropyRollup[] = [...sectorAcc.entries()]
-    .sort((a, b) => b[1].gapEb - a[1].gapEb || a[0].localeCompare(b[0]))
-    .map(([partition, row]) => ({
-      partition,
-      folders: row.folders,
-      gapEb: roundEb(row.gapEb),
-      sealEb: roundEb(row.sealEb),
-      netEb: roundEb(row.gapEb - row.sealEb),
-    }))
+  const bySector = sectorRollup(sectorAcc)
 
   return {
     unit: COMPARABLE_UNIT,
@@ -465,6 +457,27 @@ export function aggregateCorpusEntropy(
     bySector,
   }
 }
+
+/**
+ * The per-partition rollup, built once.
+ *
+ * `aggregateCorpusEntropy` and `mergeCorpusEntropy` each carried this sort-and-map verbatim —
+ * one 43-node body at two addresses ([[rules]]/copy), and [[rules]]/unfolded reported BOTH sites
+ * un-folded. It closes over nothing but module-level `roundEb`, so the difference between the two
+ * call sites is the accumulator alone and that is what is passed in.
+ */
+const sectorRollup = (
+  acc: ReadonlyMap<string, { gapEb: number; sealEb: number; folders: number }>,
+): SectorEntropyRollup[] =>
+  [...acc.entries()]
+    .sort((a, b) => b[1].gapEb - a[1].gapEb || a[0].localeCompare(b[0]))
+    .map(([partition, row]) => ({
+      partition,
+      folders: row.folders,
+      gapEb: roundEb(row.gapEb),
+      sealEb: roundEb(row.sealEb),
+      netEb: roundEb(row.gapEb - row.sealEb),
+    }))
 
 /** Merge two corpus entropy rollups — wave-batch accumulator (OOM guard). */
 export function mergeCorpusEntropy(a: CorpusEntropyRollup, b: CorpusEntropyRollup): CorpusEntropyRollup {
@@ -480,15 +493,7 @@ export function mergeCorpusEntropy(a: CorpusEntropyRollup, b: CorpusEntropyRollu
     cur.folders += row.folders
     sectorAcc.set(row.partition, cur)
   }
-  const bySector: SectorEntropyRollup[] = [...sectorAcc.entries()]
-    .sort((x, y) => y[1].gapEb - x[1].gapEb || x[0].localeCompare(y[0]))
-    .map(([partition, row]) => ({
-      partition,
-      folders: row.folders,
-      gapEb: roundEb(row.gapEb),
-      sealEb: roundEb(row.sealEb),
-      netEb: roundEb(row.gapEb - row.sealEb),
-    }))
+  const bySector = sectorRollup(sectorAcc)
   return {
     unit: COMPARABLE_UNIT,
     totalGapEb,
@@ -517,7 +522,7 @@ export function renderCorpusEntropySection(
     '## corpus entropy',
     '',
     `- gap \`${rollup.totalGapEb}\` eb · seal \`${rollup.totalSealEb}\` eb · net \`${rollup.netEntropyEb}\` eb · ratio \`${rollup.sealGapRatio}\``,
-    `- sealed \`${rollup.sealedMass}\` · unsealed \`${rollup.unsealedMass}\``,
+
     '',
   ]
   if (!opts.skipProof) {

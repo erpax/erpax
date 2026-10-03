@@ -1,4 +1,4 @@
-import { exactFloor } from '@/algebra'
+import { daysBetween } from '@/utility'
 import type { Payload } from 'payload'
 
 /**
@@ -77,8 +77,8 @@ const DUNNING_STAGES: DunningStage[] = [
  * Get days since invoice became past due
  */
 function getDaysSincePastDue(pastDueSinceAt: Date | string): number {
-  const ts = pastDueSinceAt instanceof Date ? pastDueSinceAt : new Date(pastDueSinceAt)
-  return exactFloor((Date.now() - ts.getTime()) / (24 * 60 * 60 * 1000))
+  // A third definition of `daysBetween`, in a fourth notation for the divisor.
+  return daysBetween(pastDueSinceAt, new Date())
 }
 
 /**

@@ -3,19 +3,19 @@ name: mcp
 description: "Use when configuring the erpax agent gateway — it IS the official @payloadcms/plugin-mcp; every collection becomes find/create/update/delete tools at /api/mcp, computed from the barrel never hand-listed; Bearer API-key auth inherits the key owner's access and tenant scope; custom tools added via the plugin mcp config."
 atomPath: mcp
 coordinate: "mcp · 2/share · 0c577e7e"
-contentUuid: "210b7d49-0320-598c-aeeb-5ea5e10ca74a"
-diamondUuid: "e7408723-7f3d-8ca5-b347-e8a5e9374ce4"
+contentUuid: "dc1215e1-5a86-5eb1-8b72-613d9c34fd28"
+diamondUuid: "fadcd8ff-c4fa-8e38-82be-6cd17b1b5e83"
 uuid: "0c577e7e-032e-8c92-b055-f3d6e79a58f8"
 horo: 2
 typography:
   partition: mcp
-  bondDegree: 119
+  bondDegree: 122
 standards:
   - "EU-1958"
   - "RFC-7231"
 bindings: []
 signatures:
-  computationUuid: "5080c6a2-2535-897b-b853-3bec25ca1623"
+  computationUuid: "36ed1258-900d-8091-b7a1-ad52cde5612f"
   stages:
     - stage: path
       stageUuid: "a22f54d4-d296-8ec5-8330-e970946345bf"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "23aa2d1d-e9b8-84e6-9b50-9a580c826316"
     - stage: horo
-      stageUuid: "7886a901-5d3b-854a-b26b-c0f55ac3d9ae"
+      stageUuid: "fb045954-bc5d-83f6-9b6f-ede3197e87ee"
     - stage: seal
       stageUuid: "79a4b82a-01f7-88bc-b79f-e1eedbe5b418"
     - stage: uuid
-      stageUuid: "5db81548-ee93-8e8a-bed8-2796e089cf9c"
+      stageUuid: "87992b1d-2174-8829-b3ab-ba7c5f832349"
 version: 2
 ---
 # mcp — the agent gateway (configure it computed)

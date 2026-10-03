@@ -4,7 +4,10 @@
  * @standard ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence
  * @quality ISO-25010:2023 §5.6 maintainability — evidence survives the refactor that moves it
  */
-import { execSync } from 'node:child_process'
+import { execSync, spawnSync } from 'node:child_process'
+import { sealedSource } from '@/grounded'
+import { readFileSync } from 'node:fs'
+import { join, relative } from 'node:path'
 import { baseRef } from '@/rules/face'
 import { commentsOf } from '@/syntax'
 import { corpusFiles, textOf } from '@/syntax/cache'
@@ -127,6 +130,83 @@ export function assertCitationsPreserved(before: CitationSurface, after: Citatio
 }
 
 /** The surface at a git ref, through a throwaway worktree — history is the baseline, nothing is stored. */
+/**
+ * Standards this CHANGESET drops from the evidence surface — the write-time twin of {@link citationRing}.
+ *
+ * `corpusCitations` costs 1849 ms warm, so asking it per edit is not affordable; and a citation that
+ * MOVED is not a loss, so the changeset alone cannot answer either. This pays only when there IS a
+ * finding: the changed files are parsed (cheap), and a targeted search runs once per token that actually
+ * left one — usually none.
+ *
+ * @invariant a standard that moved to another file, changed or not, is never reported
+ * @invariant a file with no committed version can lose nothing
+ */
+export function citationsLostIn(
+  files: readonly string[],
+  cwd: string = process.cwd(),
+  // The SEALED blob, from [[grounded]] — the one address for "what git has", never a fourth copy of
+  // `git show HEAD:<path>`. rules/copy caught this: I wrote the same body in src/matrix today.
+  committed: (rel: string) => string | null = sealedSource,
+  citedElsewhere: (token: string, excluding: ReadonlySet<string>) => boolean = (token, excluding) =>
+    filesCiting(token, cwd).some((f) => !excluding.has(f)),
+): readonly CitationLoss[] {
+  const changed = new Set<string>()
+  const lost = new Map<string, Set<string>>()
+  for (const f of files) {
+    const rel = relative(cwd, f).replace(/\\/g, '/')
+    if (!rel.startsWith('src/') || !/\.tsx?$/.test(rel)) continue
+    changed.add(rel)
+    const before = committed(rel)
+    if (before === null) continue // a new file cannot have dropped anything
+    let after: string
+    try {
+      after = readFileSync(join(cwd, rel), 'utf8')
+    } catch {
+      after = '' // deleted: everything it cited left THIS file
+    }
+    const had = citationsIn(rel, before)
+    const has = citationsIn(rel, after)
+    for (const token of had) {
+      if (has.has(token)) continue
+      lost.set(token, (lost.get(token) ?? new Set<string>()).add(rel))
+    }
+  }
+  const out: CitationLoss[] = []
+  for (const [standard, was] of lost) {
+    if (citedElsewhere(standard, changed)) continue // it MOVED — the evidence is still reachable
+    out.push({ standard, was: [...was].sort() })
+  }
+  return out.sort((a, b) => a.standard.localeCompare(b.standard))
+}
+
+/**
+ * Files that CITE a token — grep to narrow, parse to decide.
+ *
+ * `git grep -F` counts any textual mention, and the surface this law is about is an `@standard`-marked
+ * comment banner. `AMLD5` appears literally in 10 files and is CITED in one, so using the grep as the
+ * verdict suppressed a real loss: parse-don't-match, in the atom whose SKILL states it. The grep still
+ * earns its place as the filter — it turns a 1849 ms corpus scan into parsing at most a handful of files.
+ *
+ * Restricted to `.ts`/`.tsx` because that is the surface, and generated faces are refused because they
+ * restate every SKILL description and so would cite every standard the prose does.
+ */
+function filesCiting(token: string, cwd: string): string[] {
+  const r = spawnSync('git', ['grep', '-l', '-F', token, '--', 'src/**/*.ts', 'src/**/*.tsx'], {
+    cwd,
+    encoding: 'utf8',
+  })
+  const candidates = (typeof r.stdout === 'string' ? r.stdout.split('\n') : []).filter(
+    (f) => f !== '' && !/\.generated\.tsx?$|(^|\/)(catalogue|skills\.index|payload-types)\.tsx?$/.test(f),
+  )
+  return candidates.filter((f) => {
+    try {
+      return citationsIn(f, readFileSync(join(cwd, f), 'utf8')).has(token)
+    } catch {
+      return false
+    }
+  })
+}
+
 export function citationsAtRef(ref: string, cwd: string = process.cwd()): CitationSurface {
   const at = execSync('mktemp -d', { encoding: 'utf8' }).trim()
   try {

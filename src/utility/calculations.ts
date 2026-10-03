@@ -1,4 +1,4 @@
-import { exactFloor, exactMax, exactMin } from '@/algebra'
+import { exactMax, exactMin } from '@/algebra'
 
 /**
  * Calculate percentage
@@ -165,25 +165,6 @@ export const bucketAgeDays = (ageDays: number): AgingBucketKey => {
   return 'stale';
 };
 
-/**
- * Days between two dates, floored to whole days. `to − from`.
- * Single source of truth for "how old is this item" — consumed by:
- *   • bank-reconciliation.service.ts aging
- *   • parties/aging.ts (re-exported)
- *   • receivables / payables aging via parties barrel
- *
- * Accepts `Date | string` so callers don't have to pre-convert ISO strings.
- *
- * @standard ISO-8601-1:2019 date-time days-between-arithmetic
- */
-export const daysBetween = (
-  from: Date | string,
-  to: Date | string,
-): number => {
-  const a = from instanceof Date ? from : new Date(from);
-  const b = to instanceof Date ? to : new Date(to);
-  return exactFloor((b.getTime() - a.getTime()) / (1000 * 60 * 60 * 24));
-};
 
 /**
  * Calculate trend growth rate

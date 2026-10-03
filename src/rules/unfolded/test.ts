@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { unfoldedExports, assertExportsFolded } from './index'
+import { unfoldedExports, assertExportsFolded, substituteWrappers } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-unfolded-'))
@@ -69,4 +69,78 @@ describe('rules/unfolded — an export with no caller is entropy', () => {
     expect(() => assertExportsFolded(cwd, 0)).toThrow(/un-folded export/)
     rmSync(cwd, { recursive: true, force: true })
   })
+})
+
+/**
+ * The counter must read the GRAMMAR, because it was a text scan and counted prose as usage.
+ *
+ * A docstring in `rules/unfolded` itself explaining why `algebraTan` must not be deleted made
+ * `algebraTan` read as CALLED, and it left the dead list. Every number this gate reported was a
+ * floor; correcting it moved the corpus total 813 → 1,207.
+ */
+describe('rules/unfolded — a mention is not a call site', () => {
+  const tree = (files: Record<string, string>): string => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unfolded-'))
+    for (const [rel, body] of Object.entries(files)) {
+      const full = join(root, 'src', rel)
+      mkdirSync(join(full, '..'), { recursive: true })
+      writeFileSync(full, body)
+    }
+    return root
+  }
+
+  it('an export named only in a COMMENT is still dead', () => {
+    const root = tree({
+      'a/index.ts': 'export const onlyDiscussed = (): number => 1\n',
+      'b/index.ts': '/** Why `onlyDiscussed` must stay: it is the lawful door. */\nexport const other = (): number => 2\n',
+    })
+    try {
+      const names = unfoldedExports(root).dead.map((e) => e.name)
+      expect(names).toContain('onlyDiscussed')
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('an export named only in a STRING is still dead', () => {
+    const root = tree({
+      'a/index.ts': 'export const inAString = (): number => 1\n',
+      'b/index.ts': "export const msg = 'call inAString to do the thing'\n",
+    })
+    try {
+      expect(unfoldedExports(root).dead.map((e) => e.name)).toContain('inAString')
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('a real call site still counts, so the fix did not blind the gate', () => {
+    const root = tree({
+      'a/index.ts': 'export const called = (): number => 1\n',
+      'b/index.ts': "import { called } from '@/a'\nexport const use = (): number => called() + called()\n",
+    })
+    try {
+      const r = unfoldedExports(root)
+      expect(r.dead.map((e) => e.name)).not.toContain('called')
+      expect(r.single.map((e) => e.name)).not.toContain('called') // two calls, so folded
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('a substitute surface is exempt — its emptiness is its purpose', () => {
+    // `algebraTan = (x) => Math.tan(x)` is the only lawful door to a tangent, because the host-math
+    // axis forbids `Math.*` outside the algebra atoms at a baseline of 0. Deleting an uncalled one
+    // leaves the next caller with no lawful option.
+    // The MEMBERSHIP is not pinned, and that is deliberate: this listed `algebraTan` until
+    // `outward/witness.dayLengthHours` started calling it, at which point the test went red because
+    // the corpus had IMPROVED. A test that requires a defect to be present punishes the fix — the
+    // second time that shape appeared in one session. The invariant is what holds.
+    const wrappers = substituteWrappers()
+    expect(wrappers.length).toBeGreaterThan(0) // the class is real, so the exemption is load-bearing
+    for (const w of wrappers) {
+      expect(w.file).toMatch(/^src\/algebra\//) // only the substitute surface earns this
+      expect(w.sites).toBe(0) // it is exempt BECAUSE it is uncalled; a called one needs no exemption
+    }
+  }, 300_000)
 })

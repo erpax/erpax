@@ -2,7 +2,14 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
-import { auditConstants, matrixCrackViolations, CONSTANTS_AUDIT_COORDINATE } from '@/matrix'
+import { execSync } from 'node:child_process'
+import {
+  auditConstants,
+  matrixCrackViolations,
+  matrixCracksIn,
+  newCracksIn,
+  CONSTANTS_AUDIT_COORDINATE,
+} from '@/matrix'
 import { computedBaseline } from '@/law/folder/baseline'
 
 describe('matrix constants-audit — auditConstants', () => {
@@ -123,5 +130,140 @@ describe('matrix constants-audit — what is NOT corpus matter', () => {
 
   it('still audits ordinary hand-written constants — the axis has not been hollowed out', () => {
     expect(cracks.length).toBeGreaterThan(700)
+  })
+})
+
+/**
+ * A scoped reader is only sound if it gives the whole-tree ANSWER for the files it reads. This is the
+ * axis an author trips over while writing — a new `export const X = {…}` is seal-debt — and learning it
+ * from a whole-tree COUNT three gate-runs later means bisecting your own changeset by hand.
+ */
+describe('matrix constants-audit — the changeset-scoped reader', () => {
+  it('gives the whole-tree population exactly, over every tracked src file', () => {
+    const cwd = process.cwd()
+    const all = execSync('git ls-files -- src', { cwd, encoding: 'utf8' })
+      .split('\n')
+      .filter(Boolean)
+      .map((f) => join(cwd, f))
+    const key = (v: { file: string; constName: string }): string => `${v.file}::${v.constName}`
+    const whole = new Set(matrixCrackViolations(cwd).map(key))
+    const scoped = new Set(matrixCracksIn(all, cwd).map(key))
+    // Empty in BOTH directions: a scoped reader that merely agrees on the COUNT could still disagree
+    // on which files, and the count is what a ratchet compares.
+    expect([...whole].filter((k) => !scoped.has(k))).toEqual([])
+    expect([...scoped].filter((k) => !whole.has(k))).toEqual([])
+    expect(scoped.size).toBe(whole.size)
+  })
+
+  it('keeps the whole-tree DOMAIN — the app subtree, generated faces, tests', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-crack-scope-'))
+    try {
+      const write = (rel: string): string => {
+        const abs = join(root, rel)
+        mkdirSync(join(abs, '..'), { recursive: true })
+        writeFileSync(abs, 'export const SOMETHING = { a: 1, b: 2 }\n')
+        return abs
+      }
+      // The walk never RECURSES into a skipped root dir, so the whole subtree is out — not just its top
+      // level. Scoping this to one level let 11 `src/app/**` route exports through, and only diffing the
+      // two populations showed it.
+      const files = [
+        write('src/thing/index.ts'),
+        write('src/app/x.ts'),
+        write('src/app/(frontend)/deep/route.ts'),
+        write('src/thing/test.ts'),
+        write('src/thing/catalogue.ts'),
+        write('src/thing/x.generated.ts'),
+      ]
+      // `test.ts` is NOT skipped, and that is the whole-tree behaviour this must match rather than
+      // improve: `SKIP_FILES` matches `foo.test.ts`, while this corpus's trinity file is bare `test.ts`,
+      // so the skip its author intended does not fire. Narrowing it here would move a ratcheted count
+      // behind a scoping change — a separate decision, taken deliberately, not smuggled in.
+      expect(matrixCracksIn(files, root).map((v) => v.file)).toEqual([
+        'src/thing/index.ts',
+        'src/thing/test.ts',
+      ])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('a file that no longer exists carries no crack, and never throws', () => {
+    expect(matrixCracksIn([join(process.cwd(), 'src/gone/index.ts')])).toEqual([])
+  })
+
+  it('names the const and says what to do, because a count cannot be acted on', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-crack-say-'))
+    try {
+      mkdirSync(join(root, 'src/thing'), { recursive: true })
+      writeFileSync(join(root, 'src/thing/index.ts'), 'export const MEASURED_LAWS = [1, 2]\n')
+      const [v] = matrixCracksIn([join(root, 'src/thing/index.ts')], root)
+      expect(v!.constName).toBe('MEASURED_LAWS')
+      expect(v!.atomPath).toBe('thing')
+      expect(v!.reason).toContain('seal-debt')
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+})
+
+/**
+ * A zero threshold is not a theorem. 451 of 11,631 tracked src files already hold a crack, so refusing
+ * any crack in an edited file would lock 451 files and teach whoever hit one to use `--no-verify`. The
+ * refusal is earned instead by two independent readings of the same file proving each other.
+ */
+describe('matrix constants-audit — a refusal the evidence earns', () => {
+  const tree = (): { root: string; file: string; abs: string } => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-newcrack-'))
+    mkdirSync(join(root, 'src/thing'), { recursive: true })
+    return { root, file: 'src/thing/index.ts', abs: join(root, 'src/thing/index.ts') }
+  }
+
+  it('does not refuse a crack that was already committed — that debt is the ratchet\'s', () => {
+    const { root, abs } = tree()
+    try {
+      writeFileSync(abs, 'export const OLD = { a: 1 }\n')
+      // the committed reading is injected, so the theorem is provable with no repository at all
+      const before = (): string => 'export const OLD = { a: 1 }\n'
+      expect(matrixCracksIn([abs], root)).toHaveLength(1) // the tree scan still sees it
+      expect(newCracksIn([abs], root, before)).toEqual([]) // and the WRITE does not refuse it
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('refuses the one this edit added, beside a pre-existing one in the same file', () => {
+    const { root, abs } = tree()
+    try {
+      writeFileSync(abs, 'export const OLD = { a: 1 }\nexport const ADDED = { b: 2 }\n')
+      const before = (): string => 'export const OLD = { a: 1 }\n'
+      const news = newCracksIn([abs], root, before)
+      expect(news.map((v) => v.constName)).toEqual(['ADDED'])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('refuses every crack in a file git has never seen', () => {
+    const { root, abs } = tree()
+    try {
+      writeFileSync(abs, 'export const A = { a: 1 }\nexport const B = { b: 2 }\n')
+      const absent = (): null => null
+      expect(newCracksIn([abs], root, absent).map((v) => v.constName)).toEqual(['A', 'B'])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('notices a const that STOPPED being lawful — same name, now a literal', () => {
+    const { root, abs } = tree()
+    try {
+      writeFileSync(abs, 'export const X = { a: 1 }\n')
+      // it was a function before, which `categorize` calls lawful-code: computing already
+      const before = (): string => 'export const X = () => ({ a: 1 })\n'
+      expect(newCracksIn([abs], root, before).map((v) => v.constName)).toEqual(['X'])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
   })
 })

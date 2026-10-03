@@ -22,11 +22,8 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import {
-  bucketAgeDays,
-  daysBetween,
-  type AgingBucketKey as CalcAgingBucketKey,
-} from './calculations'
+import { bucketAgeDays, type AgingBucketKey as CalcAgingBucketKey } from './calculations'
+import { daysBetween } from './span'
 import {
   DEFAULT_AGING_BUCKETS,
   daysBetween as partiesDaysBetween,

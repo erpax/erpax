@@ -97,11 +97,11 @@ describe('consistency/apply — deterministic idempotent audited transforms', ()
     const dry = applyEmergingGapScaffold({ repoRoot: root, dryRun: true, gaps: [strong, weakScore, weakEvidence] })
     expect(dry.applied).toBe(1) // only the strong gap qualifies
     expect(dry.skipped).toBe(2)
-    expect(existsSync(join(root, 'src/services/agents/mcp/generated/demo/reconcile.ts'))).toBe(false)
+    expect(existsSync(join(root, 'src/agents/mcp/generated/demo/reconcile.ts'))).toBe(false)
 
     const run = applyEmergingGapScaffold({ repoRoot: root, gaps: [strong] })
     expect(run.applied).toBe(1)
-    const out = join(root, 'src/services/agents/mcp/generated/demo/reconcile.ts')
+    const out = join(root, 'src/agents/mcp/generated/demo/reconcile.ts')
     expect(existsSync(out)).toBe(true)
     expect(readFileSync(out, 'utf8')).toContain('erpax.demo.reconcile')
 

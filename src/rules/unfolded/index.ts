@@ -1,26 +1,15 @@
 /**
  * unfolded — an export with no caller is entropy; with exactly one, it is un-folded.
  *
- * "Single-use code is entropy" sat in the agent laws as PROSE — read every turn by every agent, in every
- * session, while 693 violations lived under it. Nobody disobeyed it; there was nothing to disobey. A
- * sentence is decoration ([[rules]]: a law is obeyed only when a gate blocks its violation).
- *
- * Computed, not asserted: one pass over `src` builds an identifier frequency, then each exported symbol is
- * looked up in it. A barrel (`export * from './x'`) never names the symbol, so re-export cannot inflate a
- * count — only a real reference does.
- *
- * HONEST BOUNDARY — these are CANDIDATES, never a purge list:
- *  - erpax ships as `@erpax/*` packages, so an export may be the PUBLIC face with no in-repo caller.
- *  - a symbol reached dynamically (`obj[name]`) is invisible to a lexical scan.
- *  - `sites === 1` counts a test as a site: an export used only by its own test exists to be tested rather
- *    than used, which is the law's target — but that is a per-case judgement, not a verdict.
- * A blind sweep here would delete the package's public API and call it DRY.
+ * Computed, not asserted: identifier frequency from the GRAMMAR, so a comment, a string and a
+ * re-export clause all name a symbol without using it. CANDIDATES, never a purge list — the
+ * published-package face, dynamic reach and substitute surfaces are argued in ./SKILL.md.
  *
  * @standard ISO/IEC 25010:2023 §5.5 — reusability: a function called once is inlined, deleted, or reused
- *
- * Composes [[rules]] · [[law]].
  */
-import { allFiles, textOf } from '@/syntax/cache'
+import { allFiles, textOf, astOf } from '@/syntax/cache'
+import ts from 'typescript'
+import { sealed } from '@/quantum/ftl/memo'
 import { join, relative } from 'node:path'
 
 import { shapesOf } from '@/rules/collapse'
@@ -67,6 +56,41 @@ export interface ScannedExport {
 }
 
 /** Every src export with its call-site count and atom — the ONE scan `unfoldedExports` + `deadAtoms` share (DRY). */
+/**
+ * Identifier occurrences in one file, counted from the GRAMMAR — a `ts.Identifier` cannot occur in a
+ * comment or a string, and an import clause NAMES without using. See ./SKILL.md § prose as usage.
+ */
+function identifierFrequency(file: string, text: string): ReadonlyMap<string, number> {
+  const freq = new Map<string, number>()
+  const src = astOf(file, text)
+  const visit = (node: ts.Node): void => {
+    // Plumbing, not use: the whole clause is skipped rather than its identifiers counted.
+    if (ts.isImportDeclaration(node) || ts.isExportDeclaration(node)) return
+    if (ts.isIdentifier(node)) freq.set(node.text, (freq.get(node.text) ?? 0) + 1)
+    ts.forEachChild(node, visit)
+  }
+  ts.forEachChild(src, visit)
+  return freq
+}
+
+/**
+/** Exported `function`/`const` names, from the GRAMMAR — text inside a string literal is not a definition. See ./SKILL.md. */
+function definedExports(file: string, text: string): string[] {
+  const out: string[] = []
+  const src = astOf(file, text)
+  for (const st of src.statements) {
+    const exported = ts.canHaveModifiers(st)
+      ? (ts.getModifiers(st) ?? []).some((m) => m.kind === ts.SyntaxKind.ExportKeyword)
+      : false
+    if (!exported) continue
+    if (ts.isFunctionDeclaration(st) && st.name !== undefined) out.push(st.name.text)
+    if (ts.isVariableStatement(st)) {
+      for (const d of st.declarationList.declarations) if (ts.isIdentifier(d.name)) out.push(d.name.text)
+    }
+  }
+  return out
+}
+
 export function scanExports(cwd: string = process.cwd()): ScannedExport[] {
   const files = sourceFiles(join(cwd, 'src'))
   const freq = new Map<string, number>()
@@ -78,15 +102,10 @@ export function scanExports(cwd: string = process.cwd()): ScannedExport[] {
     } catch {
       continue
     }
-    for (const m of t.matchAll(/export\s+(?:async\s+)?(?:function|const)\s+([A-Za-z_$][\w$]*)/g)) {
-      if (!defs.has(m[1]!)) defs.set(m[1]!, relative(cwd, f).replace(/\\/g, '/'))
+    for (const name of definedExports(f, t)) {
+      if (!defs.has(name)) defs.set(name, relative(cwd, f).replace(/\\/g, '/'))
     }
-    // An import/re-export NAMES the symbol without USING it — plumbing, not a call site. Counting it makes
-    // a genuine single-use (import + one call) look reused, which hides exactly what this gate is for.
-    const used = t
-      .replace(/import\s+[^;]*?from\s+['"][^'"]+['"];?/gs, '')
-      .replace(/export\s*\{[^}]*\}\s*from\s+['"][^'"]+['"];?/gs, '')
-    for (const m of used.matchAll(/\b[A-Za-z_$][\w$]*\b/g)) freq.set(m[0]!, (freq.get(m[0]!) ?? 0) + 1)
+    for (const [id, n] of identifierFrequency(f, t)) freq.set(id, (freq.get(id) ?? 0) + n)
   }
   const out: ScannedExport[] = []
   for (const [name, file] of defs) {
@@ -97,7 +116,17 @@ export function scanExports(cwd: string = process.cwd()): ScannedExport[] {
   return out
 }
 
+/**
+ * SEALED on the content address — in-process AND across processes: `assertRulesHold` calls this TWICE in one pass — once for the
+ * `unfolded` axis and again for `unearned-copy` — so a pass recomputed ~1.9 s for an answer it
+ * already had. The key is content, never mtime; a changed file always recomputes. See
+ * [[quantum]]/ftl/memo.
+ */
 export function unfoldedExports(cwd: string = process.cwd()): UnfoldedReport {
+  return sealed('unfoldedExports', cwd, () => computeUnfoldedExports(cwd))
+}
+
+function computeUnfoldedExports(cwd: string): UnfoldedReport {
   const all = scanExports(cwd)
   const dead = all.filter((e) => e.sites === 0).map(({ name, file, sites }) => ({ name, file, sites }))
   const single = all.filter((e) => e.sites === 1).map(({ name, file, sites }) => ({ name, file, sites }))
@@ -170,3 +199,27 @@ if (import.meta.url === 'file://' + process.argv[1]) {
 }
 
 /** @index-cross.foldback child=rules/unfolded parent=rules — this cross folds back into its parent. */
+
+/**
+ * A **substitute surface** — an export whose emptiness is its purpose, because `host-math` forbids
+ * the global it wraps everywhere else. See ./SKILL.md § substitute surfaces.
+ *
+ * @invariant a wrapper of a forbidden global is never reported as dead weight
+ */
+const SUBSTITUTED_GLOBALS: readonly string[] = ['Math']
+
+export function substituteWrappers(cwd: string = process.cwd()): readonly UnfoldedExport[] {
+  const { dead } = unfoldedExports(cwd)
+  return dead.filter((e) => {
+    const text = textOf(join(cwd, e.file))
+    const at = text.indexOf(`export const ${e.name} =`)
+    if (at < 0) return false
+    const nl = text.indexOf('\n', at)
+    const line = nl === -1 ? text.slice(at) : text.slice(at, nl)
+    const rhs = line.slice(line.indexOf('=') + 1).trim()
+    // Strip one arrow head — `(x: number): number =>` — leaving the body. A substitute is one line.
+    const arrow = rhs.indexOf('=>')
+    const body = (arrow === -1 ? rhs : rhs.slice(arrow + 2)).trim()
+    return SUBSTITUTED_GLOBALS.some((g) => body.startsWith(`${g}.`))
+  })
+}

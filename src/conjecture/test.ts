@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { messageUuid } from '@/quantum/chat/merkle'
 import { mkdtempSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -11,7 +12,10 @@ import {
   score,
   surpriseBits,
   undecided,
+  crossStream,
+  crossCandidate,
   type Conjecture,
+  type Intersection,
 } from '@/conjecture'
 import { refute } from '@/think'
 import { algebraLog2, exactMax } from '@/algebra'
@@ -184,6 +188,53 @@ describe('conjecture — the measured cross inverts the prose ranking', () => {
     expect(rows.find((r) => r.a === 'concentration')?.shared).toBe(0)
   })
 
+  /**
+   * The count says two laws met; only the lift says whether meeting meant anything. Live, `unfolded`
+   * named 428 of 579 atoms, so its 86 shared with `cycle` sat against an EXPECTED 78 — a raw ranking
+   * called that the top finding in the corpus.
+   */
+  it('a pair firing INDEPENDENTLY measures lift 1, whatever its shared count', async () => {
+    const { crossIntersections } = await import('@/conjecture')
+    // Universe of 4. `big` holds all 4, `half` holds 2 of them — so every `half` member is also a
+    // `big` member BY CONSTRUCTION, and the expectation is exactly the observation.
+    const independent = new Map<string, ReadonlySet<string>>([
+      ['big', new Set(['a.ts', 'b.ts', 'c.ts', 'd.ts'])],
+      ['half', new Set(['a.ts', 'b.ts'])],
+    ])
+    const row = crossIntersections(independent)[0]!
+    expect(row.shared).toBe(2)
+    expect(row.expected).toBe(2) // 4 × 2 / 4
+    expect(row.lift).toBe(1)
+    expect(row.bits).toBe(0) // log₂(1) — no information in the meeting
+  })
+
+  it('lift above 1 is the evidence; below 1 the laws AVOID each other', async () => {
+    const { crossIntersections } = await import('@/conjecture')
+    // Two halves of a 4-atom universe that meet on BOTH their members — maximal concentration.
+    const together = crossIntersections(
+      new Map<string, ReadonlySet<string>>([
+        ['x', new Set(['a.ts', 'b.ts'])],
+        ['y', new Set(['a.ts', 'b.ts'])],
+        ['z', new Set(['c.ts', 'd.ts'])],
+      ]),
+    )
+    expect(together[0]!.lift).toBe(2) // x × y: 2 shared against an expected 1
+    expect(together.find((r) => r.a === 'x' && r.b === 'z')!.lift).toBe(0) // disjoint: never met
+    // and the SORT leads with lift, so the base rate cannot take the top row
+    expect(together[0]!.a).toBe('x')
+    expect(together[0]!.b).toBe('y')
+  })
+
+  it('an unmeasurable expectation is 0 — never Infinity, never "exactly chance"', async () => {
+    const { crossIntersections } = await import('@/conjecture')
+    const row = crossIntersections(
+      new Map<string, ReadonlySet<string>>([['a', new Set<string>()], ['b', new Set<string>()]]),
+    )[0]!
+    expect(row.expected).toBe(0)
+    expect(row.lift).toBe(0)
+    expect(Number.isFinite(row.bits)).toBe(true)
+  })
+
   it('containment is DIRECTIONAL — it says which law carries which', async () => {
     const { containment } = await import('@/conjecture')
     const c = containment(sets)
@@ -197,5 +248,47 @@ describe('conjecture — the measured cross inverts the prose ranking', () => {
   it('and a law meeting nothing is named — its crosses are provably empty', async () => {
     const { orthogonalLaws } = await import('@/conjecture')
     expect(orthogonalLaws(sets)).toEqual(['concentration'])
+  })
+})
+
+describe('crossStream — the proven crosses, streamed without a human', () => {
+  const sets = (o: Record<string, string[]>) => new Map(Object.entries(o).map(([k, v]) => [k, new Set(v)]))
+
+  it('a cross with an EMPTY intersection is never streamed — prose ranking is not evidence', () => {
+    // `crosses` ranks absence in PROSE and this corpus refuted it by measuring: its top three picks
+    // came back empty. The stream rides the MEASURED overlap, so an empty pair cannot enter it.
+    const s = crossStream(sets({ a: ['f1'], b: ['f2'], c: ['f1'] }), [])
+    expect(s.proven.map((i: Intersection) => `${i.a}×${i.b}`)).toEqual(['a×c'])
+    expect(s.proven.every((i: Intersection) => i.shared > 0)).toBe(true)
+  })
+
+  it('nothing drawn ⇒ covered 0, and next is the MOST-SHARED cross', () => {
+    const s = crossStream(sets({ a: ['f1', 'f2', 'f3'], b: ['f1', 'f2', 'f3'], c: ['f1'] }), [])
+    expect(s.covered).toBe(0)
+    expect(s.next).toBe(crossCandidate(s.proven[0]!))
+    expect(s.proven[0]!.shared).toBeGreaterThanOrEqual(s.proven[s.proven.length - 1]!.shared)
+  })
+
+  it('drawing one advances the stream past it', () => {
+    const s0 = crossStream(sets({ a: ['f1', 'f2'], b: ['f1', 'f2'], c: ['f1'] }), [])
+    const first = s0.next!
+    const s1 = crossStream(sets({ a: ['f1', 'f2'], b: ['f1', 'f2'], c: ['f1'] }), [messageUuid(first)])
+    expect(s1.next).not.toBe(first)
+    expect(s1.outstanding).toBe(s0.outstanding - 1)
+  })
+
+  it('all drawn ⇒ covered 1 and next undefined — the proven space is exhausted', () => {
+    const m = sets({ a: ['f1'], b: ['f1'] })
+    const s = crossStream(m, crossStream(m, []).proven.map(crossCandidate).map(messageUuid))
+    expect(s.covered).toBe(1)
+    expect(s.next).toBeUndefined()
+    expect(s.outstanding).toBe(0)
+  })
+
+  it('no proven crosses ⇒ covered 1 by definition, and nothing to draw', () => {
+    const s = crossStream(sets({ a: ['f1'], b: ['f2'] }), [])
+    expect(s.proven).toEqual([])
+    expect(s.covered).toBe(1)
+    expect(s.next).toBeUndefined()
   })
 })

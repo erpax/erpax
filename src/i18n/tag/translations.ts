@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about tag — Every locale tag the corpus writes must be a **well-formed and already-canonical BCP 47 tag**: every entry in , and every or property with a string literal value.",
-    "uuid": "58d3bc77-f025-85ad-b51f-9522d488fbff",
+    "uuid": "d735f020-51de-80d7-a501-a09a39e6f955",
     "words": [
       "use",
       "when",
