@@ -6755,12 +6755,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/register"
   },
   {
-    "atom": "torus",
-    "name": "torus",
-    "description": "Use when every superposition the gate basis can reach must be enumerated rather than sampled — the finite real-Clifford orbit on exact amplitudes, the 4 × 4 double torus of two-qubit product states with the entangled states off it, and every referrer of the register asked to agree with each discovered state from its own standard's perspective.",
-    "path": "quantum/register/torus"
-  },
-  {
     "atom": "request",
     "name": "request",
     "description": "Use when an agent calls an external system — quantum-compress the request to its most compact and cheapest form; content-address it so the uuid is the idempotency key, dedup against the cache, batch, and send the hash not the payload when the other side has seen it; squeeze the request to a point and the external cost drops toward zero.",
@@ -6819,6 +6813,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "status",
     "description": "Use when reading the quantum surface state from the CLI — superposition pending paths, last collapse, bond reciprocity. Promoted from a loose sibling to an atom because it is dispatched by PATH, which no lexical reference scan can see. Run: tsx src/quantum/status/index.ts",
     "path": "quantum/status"
+  },
+  {
+    "atom": "torus",
+    "name": "torus",
+    "description": "Use when every superposition the gate basis can reach must be enumerated rather than sampled — the finite real-Clifford orbit on exact amplitudes, the 4 × 4 double torus of two-qubit product states with the entangled states off it, and every referrer of the register asked to agree with each discovered state from its own standard's perspective.",
+    "path": "quantum/torus"
   },
   {
     "atom": "train",

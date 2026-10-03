@@ -1102,7 +1102,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "quantum/query",
   "quantum/reality",
   "quantum/register",
-  "quantum/register/torus",
   "quantum/request",
   "quantum/research",
   "quantum/sanitization",
@@ -1113,6 +1112,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "quantum/society",
   "quantum/sql",
   "quantum/status",
+  "quantum/torus",
   "quantum/train",
   "quantum/translator",
   "quantum/type",
@@ -5601,11 +5601,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "quantum",
     "quantum/register"
   ],
-  "quantum/register/torus": [
-    "quantum",
-    "quantum/register",
-    "quantum/register/torus"
-  ],
   "quantum/request": [
     "quantum",
     "quantum/request"
@@ -5645,6 +5640,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "quantum/status": [
     "quantum",
     "quantum/status"
+  ],
+  "quantum/torus": [
+    "quantum",
+    "quantum/torus"
   ],
   "quantum/train": [
     "quantum",
