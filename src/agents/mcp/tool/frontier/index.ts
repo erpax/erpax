@@ -589,7 +589,8 @@ async function developEvidence(cwd: string, theorems: readonly TaggedLead[], car
       const members = c.map((f) => (f.startsWith('/') ? relative(cwd, f) : f))
       const edges: TangleEdge[] = []
       if (c.length === 2) {
-        for (const [importer, exporter] of [[c[0] as string, c[1] as string], [c[1] as string, c[0] as string]] as const) {
+        const abs = (f: string): string => (f.startsWith('/') ? f : join(cwd, f))
+        for (const [importer, exporter] of [[abs(c[0] as string), abs(c[1] as string)], [abs(c[1] as string), abs(c[0] as string)]] as const) {
           const names = importedNames(importer, cwd).get(exporter) ?? []
           if (names.length === 0) continue
           const text = readFileSync(importer, 'utf8')
