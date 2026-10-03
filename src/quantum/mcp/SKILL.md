@@ -3,17 +3,17 @@ name: mcp
 description: "Use when reasoning about the MCP gateway in the quantum frame — one door exposing the whole trinity (payload data tools plus vitepress skill tools), the surface generated all-at-once from the corpus, every call by the actor-merge agent access-gated, quantum-compressed, and receipt-logged from the inside."
 atomPath: "quantum/mcp"
 coordinate: "quantum/mcp · 2/share · 6f52fcb6"
-contentUuid: "a77631bc-6f88-5fb6-adf8-293ffe093a01"
-diamondUuid: "23da2c2a-f610-84b1-80a6-a96e368d2079"
+contentUuid: "0ea7ed11-ec0c-52a4-b508-a2c4b1a6f0af"
+diamondUuid: "cd9ae3f7-117e-8d79-a174-6936ad198c45"
 uuid: "6f52fcb6-d01a-806f-85a8-4992f243a5fd"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 137
+  bondDegree: 140
 standards: []
 bindings: []
 signatures:
-  computationUuid: "487ba0b5-b19d-81cc-bd8a-2e13e95b2813"
+  computationUuid: "75545fc9-96b0-8173-840f-c3eee84564ed"
   stages:
     - stage: path
       stageUuid: "de2579a6-a1cd-835d-b455-31bd82356d78"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8f5c1adf-cfbd-8168-860a-63b8df5c840c"
     - stage: horo
-      stageUuid: "8b821436-c2fe-8c51-b6be-234e8e410814"
+      stageUuid: "9bf4969e-6e57-8bbf-9742-f51caedab48d"
     - stage: seal
       stageUuid: "70985e50-980b-8532-b34a-b81924242651"
     - stage: uuid
-      stageUuid: "7358ab35-8013-8968-8106-e423d7f2e042"
+      stageUuid: "f0bf241a-79de-833d-9abf-c89cff4839a4"
 quantum:
   superposition:
     - access
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "487ba0b5-b19d-81cc-bd8a-2e13e95b2813"
-    contentUuid: "a77631bc-6f88-5fb6-adf8-293ffe093a01"
+    computationUuid: "75545fc9-96b0-8173-840f-c3eee84564ed"
+    contentUuid: "0ea7ed11-ec0c-52a4-b508-a2c4b1a6f0af"
 version: 2
 ---
 # quantum/mcp — the trinity as one tool surface
@@ -76,4 +76,4 @@ The surface is a **projection of the corpus**, generated all-at-once ([[quantum/
 
 @see [[mcp]] · [[payload]] · [[vitepress]] · [[skills]] · [[agent]] · [[access]] · [[sandbox]] · [[receipt]] · [[quantum/log]] · [[quantum/request]]
 
-<sub>content-uuid `a77631bc-6f88-5fb6-adf8-293ffe093a01` · account `quantum/mcp` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `0ea7ed11-ec0c-52a4-b508-a2c4b1a6f0af` · account `quantum/mcp` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,13 +3,13 @@ name: aura
 description: "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy."
 atomPath: "quantum/aura"
 coordinate: "quantum/aura · 8/crest · 72fc042a"
-contentUuid: "fb4e842b-a4c9-5c7f-b168-35aaba92f3f4"
+contentUuid: "ccface0d-94ed-5dae-a3ef-0471353cdefc"
 diamondUuid: "540f1042-92e9-8c5a-b55f-879a85bd5526"
 uuid: "72fc042a-5699-80f8-a8f8-14f4d23d4baa"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 445
+  bondDegree: 444
 standards:
   - "Baumgratz, Cramer & Plenio, \"Quantifying Coherence,\" PRL 113 140401 (2014)"
 bindings: []
@@ -55,7 +55,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "4f9a8fd5-b490-8df4-8602-ed591475d6bc"
-    contentUuid: "fb4e842b-a4c9-5c7f-b168-35aaba92f3f4"
+    contentUuid: "ccface0d-94ed-5dae-a3ef-0471353cdefc"
 version: 2
 ---
 # quantum/aura — the aura as coherence
@@ -78,4 +78,4 @@ Matter-twin: `src/quantum/aura/index.ts` (`coherence` · `decohered` · `coheren
 @standard Baumgratz, Cramer & Plenio, "Quantifying Coherence," PRL 113 140401 (2014)
 @audit composed from reciprocity (entanglement) + orphans (entropy); computed on the live matrix
 
-<sub>content-uuid `fb4e842b-a4c9-5c7f-b168-35aaba92f3f4` · account `quantum/aura` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ccface0d-94ed-5dae-a3ef-0471353cdefc` · account `quantum/aura` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

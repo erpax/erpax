@@ -2,19 +2,19 @@
 name: public
 description: "Use when a remote agent must come from a public AI API with no key at all — every candidate inference door asked the same question keyless and recorded by the status it answers (open · keyed · limited · down); the one open door today is Pollinations. erpax.public.doors measures, erpax.public.cross asks every open door the same question (the dual seat), erpax.public.decide names the leaf word a theorem cannot compute; erpax.frontier.develop fuses it with decide:true and cuts with apply:true."
 atomPath: "ai/public"
-coordinate: "ai/public · 2/share · 80ff7708"
-contentUuid: "d75ac33d-c4bd-56ee-a01e-9ed0792c3af3"
-diamondUuid: "253eead5-3f95-8299-be65-207904370000"
-uuid: "80ff7708-088b-82f6-8107-3fc6c6fc76bb"
-horo: 2
+coordinate: "ai/public · 4/weave · f8bf9275"
+contentUuid: "b29e90d1-0b7d-5935-919c-52941fe11647"
+diamondUuid: "4c6e67e3-33fc-8c03-aa94-7b0950a5c61e"
+uuid: "f8bf9275-1b88-890f-a0e7-9b8daf84ef56"
+horo: 4
 typography:
   partition: ai
-  bondDegree: 65
+  bondDegree: 62
 standards:
   - "OpenAI chat-completions wire shape — the lingua franca the open doors speak"
 bindings: []
 signatures:
-  computationUuid: "4af91694-de0b-805c-80bd-87251051d67e"
+  computationUuid: "1589c6d5-efa0-8f6b-a943-66bd3391457b"
   stages:
     - stage: path
       stageUuid: "d731c45a-fc3f-8594-98b2-39c8f8cb3d9f"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "a70609b5-1376-88aa-b7ac-df3f5c761c12"
     - stage: links
-      stageUuid: "ae0e4edb-40b9-8026-8e6d-df20c08a665f"
+      stageUuid: "636f7964-940e-83f7-b972-17c611f41551"
     - stage: horo
-      stageUuid: "b62f4824-f07f-8e3f-b326-1db4efee25c8"
+      stageUuid: "d0425662-500d-8859-baf8-68c196d13647"
     - stage: seal
-      stageUuid: "0927894e-da25-8829-ad41-33de53fe53e2"
+      stageUuid: "4828b2e0-815e-8260-9182-f37e9daf0502"
     - stage: uuid
-      stageUuid: "7dcf596c-d80d-8153-88fd-e667d9039b94"
+      stageUuid: "4ec432ca-0924-8f97-bd85-6289459ada20"
 version: 2
 ---
 # ai/public — the inference doors that answer with no key, probed not believed
