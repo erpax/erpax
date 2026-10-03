@@ -4073,6 +4073,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "image"
   },
   {
+    "atom": "share",
+    "name": "share",
+    "description": "Use when a page needs an Open Graph image without uploading one, or a formula needs to show its own result — shareImage draws a document's SEO-plugin title and description over its content-uuid's identity animation (1200×630, pure SMIL, no Media row, no R2 object, no Payload request), and coilImage draws the coiled rosetta turning: trinities rotating inside a parent turning the other way, crosses as edges by their measured faces.",
+    "path": "image/share"
+  },
+  {
     "atom": "imaging",
     "name": "imaging",
     "description": "Use when reasoning about imaging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -5945,6 +5951,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "payload/sdk"
   },
   {
+    "atom": "upstream",
+    "name": "upstream",
+    "description": "Use when asking what Payload publishes that erpax does not hold — the official repository's templates, examples and packages listed from GitHub's contents API and crossed against package.json and the tree, with the evidence for each template and example declared in the open. Reports held · gap · unaskable and coverage per kind; the involute leg of the outward family (erpax.outward.upstream).",
+    "path": "payload/upstream"
+  },
+  {
     "atom": "payment",
     "name": "payment",
     "description": "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle.",
@@ -6093,6 +6105,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "scopes",
     "description": "Use when collapsing MCP api-key capability columns to a compact deny-list — the matrix→cross collapse for @payloadcms/plugin-mcp at erpax scale (D1 100-col cap); virtual afterRead repopulates the handler's read shape default-open, narrowed by scopes.deny.",
     "path": "plugins/mcp/scopes"
+  },
+  {
+    "atom": "tools",
+    "name": "tools",
+    "description": "Use when an agent must reach an erpax.<area>.<leg> tool THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory.",
+    "path": "plugins/mcp/tools"
   },
   {
     "atom": "naming",

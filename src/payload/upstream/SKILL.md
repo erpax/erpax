@@ -2,8 +2,36 @@
 name: upstream
 description: "Use when asking what Payload publishes that erpax does not hold — the official repository's templates, examples and packages listed from GitHub's contents API and crossed against package.json and the tree, with the evidence for each template and example declared in the open. Reports held · gap · unaskable and coverage per kind; the involute leg of the outward family (erpax.outward.upstream)."
 atomPath: "payload/upstream"
+coordinate: "payload/upstream · 2/share · e73343c0"
+contentUuid: "d1e2ca16-9deb-5ab1-a59e-b777879ce58f"
+diamondUuid: "203acbd1-7cd5-8adf-b47d-36eaac3a100a"
+uuid: "e73343c0-01ff-8990-a258-870980e85645"
+horo: 2
+typography:
+  partition: payload
+  bondDegree: 12
+standards:
+  - GitHub REST API — repository contents
+bindings: []
+signatures:
+  computationUuid: "11bf5a46-87c8-88d3-af0c-7e86343de750"
+  stages:
+    - stage: path
+      stageUuid: "5578e7ef-c528-878e-bcd9-6ec13761ff0d"
+    - stage: trinity
+      stageUuid: "1cb93ec5-bd61-8119-90ca-3df896070265"
+    - stage: boundary
+      stageUuid: "759c6ab7-e5da-8cec-98db-bda92b848815"
+    - stage: links
+      stageUuid: "8ece27ff-a5d5-8852-88cb-43bc22202da7"
+    - stage: horo
+      stageUuid: "f98e1f5c-533d-888c-a3e0-7838414ac6d2"
+    - stage: seal
+      stageUuid: "aeb02c5a-7aff-838a-91b1-d6fbc8e30806"
+    - stage: uuid
+      stageUuid: "418d5d9c-5806-85de-a9db-2b2d8114d904"
+version: 2
 ---
-
 # payload/upstream — what Payload publishes, crossed against what erpax holds
 
 "Deep research the Payload docs, templates and examples" was asked as a reading. A reading is done

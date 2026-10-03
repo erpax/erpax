@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the MCP gateway in the quantum frame — one door exposing the whole trinity (payload data tools plus vitepress skill tools), the surface generated all-at-once from the corpus, every call by the actor-merge agent access-gated, quantum-compressed, and receipt-logged from the inside.",
-    "uuid": "683c312e-c37e-8166-ae18-521737291019",
+    "uuid": "fffb9284-989c-8d96-a8cf-51710716344d",
     "words": [
       "use",
       "when",

@@ -3,19 +3,19 @@ name: color
 description: Use when reasoning about color — The color of the product.
 atomPath: color
 coordinate: "color · 5/round · 6f2555f5"
-contentUuid: "8a9a4b3c-1c60-5ed3-90f6-9fe6aec349a6"
-diamondUuid: "b414cd23-9ec1-893d-87b3-f90c028a2b01"
+contentUuid: "5e2064d3-17e9-5194-8fe5-06f2be7ca109"
+diamondUuid: "6ebf1dd3-0a52-816e-94b8-c556afeb8f34"
 uuid: "6f2555f5-ccba-879c-af22-7daa7f77508c"
 horo: 5
 typography:
   partition: color
-  bondDegree: 51
+  bondDegree: 54
 standards:
   - "A432 tuning; the 7-chakra visible spectrum (Do..Ti / root..crown)"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "84b4bda1-18a6-8801-9981-e9f1515d3c23"
+  computationUuid: "c04dce38-8751-8185-a42f-d1f32fca2b01"
   stages:
     - stage: path
       stageUuid: "383c79e5-a6b1-81f8-86b9-5c67d713e134"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "cfb6d33e-2520-8258-87dc-d61783d2ab33"
     - stage: horo
-      stageUuid: "a2f74570-e981-803c-9a1f-b768c5dcc49b"
+      stageUuid: "ad3d53ca-1e5a-8369-86fa-04eaa6fc4046"
     - stage: seal
       stageUuid: "98ff5470-18f6-874b-98d6-ed1b031f4fc5"
     - stage: uuid
-      stageUuid: "d9a7be22-6499-824b-9562-aef6c8b009e5"
+      stageUuid: "164123d4-614d-8e16-a610-d00315295aab"
 version: 2
 ---
 # color

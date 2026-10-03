@@ -3,13 +3,13 @@ name: share
 description: Use when reasoning about uuid sharing — exposing a uuid across boundaries.
 atomPath: "uuid/share"
 coordinate: "uuid/share · 7/descent · 6f202fcd"
-contentUuid: "8cff4973-28e3-5b98-94dd-4d62329641d8"
+contentUuid: "f70fc740-bf7e-516f-a08f-f87e82e193d8"
 diamondUuid: "5c286532-b0d8-8330-bf8b-cf6861f3d1a4"
 uuid: "6f202fcd-f413-80ec-b6b2-a293b92ddf56"
 horo: 7
 typography:
   partition: uuid
-  bondDegree: 102
+  bondDegree: 108
 standards:
   - GDPR Article 32(1)(b)
   - "ISO/IEC 27001 Annex A.9.2.3 + A.9.4.1"

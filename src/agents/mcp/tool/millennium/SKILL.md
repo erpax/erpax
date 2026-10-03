@@ -2,10 +2,10 @@
 name: millennium
 description: Use when an agent must hold a Clay statement against public data or see how the corpus reads it — erpax.millennium.data runs the dataset witnesses (LMFDB · Odlyzko · OEIS) with receipts and refusals; erpax.millennium.perspectives crosses every problem with its lens atoms and referrers. corpusSolves stays false.
 atomPath: "agents/mcp/tool/millennium"
-coordinate: "agents/mcp/tool/millennium · 5/round · d8f5b06a"
-contentUuid: "3f587c47-aa17-5dfa-8bbe-4f8ed22f0aa1"
-diamondUuid: "9cd3c685-42ac-8d21-82ae-f698dbed225a"
-uuid: "d8f5b06a-146d-8912-85ba-a6af7fde7a4f"
+coordinate: "agents/mcp/tool/millennium · 5/round · 6d7ed2da"
+contentUuid: "a29cb19d-ecf5-5307-9f7e-8ca2b7553c80"
+diamondUuid: "7b3541f8-1d9b-89ea-ae4d-212f8cfd78a3"
+uuid: "6d7ed2da-0ef6-880f-9d56-0d4ef5efa0a1"
 horo: 5
 typography:
   partition: agents
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f9ef52c9-a646-85d8-945c-b2db3f0c75e2"
+  computationUuid: "a5be1d94-f71a-8b18-8949-f8edd5de3435"
   stages:
     - stage: path
       stageUuid: "ac844d8e-a0a8-88e9-8a85-f3b673045b8f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "76072a80-4984-816b-9ab3-64bf134ad3d2"
     - stage: horo
-      stageUuid: "6491a297-7fd7-8154-aaae-e3db0d103482"
+      stageUuid: "b35d41f6-06a3-8d0f-acef-872a86b221ae"
     - stage: seal
       stageUuid: "7e729046-cc5d-8200-a05f-e2356d02ade4"
     - stage: uuid
-      stageUuid: "d3d78605-0e59-82bc-a613-e94145bd73bc"
+      stageUuid: "72b8a899-0a1f-8880-b812-a9f4affebc83"
 version: 2
 ---
 # agents/mcp/tool/millennium — the Clay statements, held against public data from the chat

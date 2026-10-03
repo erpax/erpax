@@ -2,33 +2,33 @@
 name: coil
 description: "Use when crossing a rosetta of laws without enumerating every pair — coins (a law and its dual face) are coiled in trinities and each coil is rotated once forward and once backward; for a trinity those two turns are all six ordered pairs, every cross in both faces, and C(n,2)=n holds for no other size. More laws coil fractally (trinities of coils, the remainder as the axis) and one turn each way at every node still covers every cross — proved in Coil.lean. erpax.gate.coil rotates the live rosetta."
 atomPath: "quantum/coil"
-coordinate: "quantum/coil · 4/weave · 208c0580"
-contentUuid: "2bb4eaa6-a408-5025-a395-16ae7da4b1c2"
-diamondUuid: "839a6d73-2d65-8be4-be6f-680ab741376e"
-uuid: "208c0580-8720-890b-a9ac-d212ef85ddce"
-horo: 4
+coordinate: "quantum/coil · 1/base · f0908d30"
+contentUuid: "3ee80314-53e9-5753-8c27-e7451bfeb982"
+diamondUuid: "a658d801-7f3a-806d-8b0e-bbdcb5baefb4"
+uuid: "f0908d30-7776-8eef-96b7-75973c90a715"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 123
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4f08fe60-c316-8fd9-85d4-c6b24a6786b1"
+  computationUuid: "3e396979-51d4-851f-89db-8e6198aba831"
   stages:
     - stage: path
       stageUuid: "6aa061c6-3c3f-8f7c-a2d1-1c8caf88fa24"
     - stage: trinity
       stageUuid: "7c5a8c68-c058-8e05-9676-f0a736bf6fe4"
     - stage: boundary
-      stageUuid: "165761b8-88fd-8c7e-a99a-0dd4c7b57ca5"
+      stageUuid: "457d49d5-3d2d-861e-8396-857e2e0e88de"
     - stage: links
       stageUuid: "3296b9f5-40ea-8860-b035-f3710317bd6e"
     - stage: horo
-      stageUuid: "5192b0b8-3d23-8754-922c-1e30b354166e"
+      stageUuid: "cc2267c3-a721-84fa-ab04-8ca2ff48990d"
     - stage: seal
       stageUuid: "1b2ece0f-623d-837a-9455-602fc23aefe1"
     - stage: uuid
-      stageUuid: "99a98753-5360-821f-9c2e-8e2880e7494c"
+      stageUuid: "afe5fb25-c82a-831f-9c19-0b937ab4d926"
 quantum:
   superposition:
     - access
@@ -49,8 +49,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "4f08fe60-c316-8fd9-85d4-c6b24a6786b1"
-    contentUuid: "2bb4eaa6-a408-5025-a395-16ae7da4b1c2"
+    computationUuid: "3e396979-51d4-851f-89db-8e6198aba831"
+    contentUuid: "3ee80314-53e9-5753-8c27-e7451bfeb982"
 version: 2
 ---
 # quantum/coil — coins in trinities; one rotation each way covers every cross
@@ -134,4 +134,4 @@ every node crosses everything — both faces, nothing enumerated, nothing missed
 
 Composes: [[conjecture]] · [[self]]/involute · [[quantum]]/cross · [[horo]] · [[law]].
 
-<sub>content-uuid `2bb4eaa6-a408-5025-a395-16ae7da4b1c2` · account `quantum/coil` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `3ee80314-53e9-5753-8c27-e7451bfeb982` · account `quantum/coil` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
