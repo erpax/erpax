@@ -28,12 +28,12 @@ const I18N: Record<string, LocalizedString> = {
     de: 'Jeder Wächter der Gate-Registry — Achse, Verstöße, Basislinie, ok — vom selben Schiedsrichter, den die Push-Lane ausführt. Vollständiger Baum-Scan.',
   },
   cross: {
-    en: 'One gate FORMULATED AS A CROSS of two laws (copy · cycle · concentration · mirror · unfolded): the files both laws flag, the lift of that intersection against independence (≈1 means the two fire independently, whatever the count), and how conspicuously the pair is absent from prose. `theorem` is true when the intersection is empty over two non-empty parents — a cross that holds at zero. Full-tree scans for both laws.',
+    en: 'One gate FORMULATED AS A CROSS of two laws (copy · cycle · concentration · mirror · unfolded · sanitize): the files both laws flag, the lift of that intersection against independence (≈1 means the two fire independently, whatever the count), and how conspicuously the pair is absent from prose. `theorem` is true when the intersection is empty over two non-empty parents — a cross that holds at zero. Full-tree scans for both laws.',
     bg: 'Един гейт, ФОРМУЛИРАН КАТО КРЪСТОСВАНЕ на два закона: файловете, които двата закона отбелязват, lift спрямо независимост и колко забележимо двойката липсва в прозата. theorem е true при празно сечение над непразни родители.',
     de: 'Ein Gate, FORMULIERT ALS KREUZ zweier Gesetze: die Dateien, die beide Gesetze markieren, der Lift gegen Unabhängigkeit und wie auffällig das Paar in der Prosa fehlt. theorem ist true bei leerem Schnitt über nichtleeren Eltern.',
   },
   coil: {
-    en: 'The rosetta of laws COILED instead of enumerated: coins (a law and its dual face) in trinities, each trinity turned once forward and once backward — six ordered pairs, every cross in both faces (forward = share of A inside B, backward = share of B inside A). Seven laws coil into two trinities and an axis (accounting-wave); one turn each way at each of the three nodes covers all 21 crosses — `coverage.complete` is the theorem, measured on the live structure. A coil–coil cross unions populations and withholds the lift. Same scans as erpax.gate.crosses plus the unreached and accounting-wave populations.',
+    en: 'The rosetta of laws COILED instead of enumerated: coins (a law and its dual face) in trinities, each trinity turned once forward and once backward — six ordered pairs, every cross in both faces (forward = share of A inside B, backward = share of B inside A). The eight live laws coil fractally — (copy cycle concentration) · (mirror unfolded sanitize) · unreached as one trinity of nodes, accounting-wave as the axis — and one turn each way at every node covers all 28 crosses: `coverage.complete` is the theorem, measured on the live structure. A coil–coil cross unions populations and withholds the lift. Same scans as erpax.gate.crosses plus the unreached and accounting-wave populations.',
     bg: 'Розетата от закони НАВИТА вместо изброена: монети (закон и дуалното му лице) в тройки, всяка тройка завъртяна веднъж напред и веднъж назад — шест наредени двойки, всяко кръстосване в двете му лица. Седем закона се навиват в две тройки и ос; по един оборот във всяка посока на всеки възел покрива всичките 21 кръстосвания.',
     de: 'Die Rosette der Gesetze GEWICKELT statt aufgezählt: Münzen (ein Gesetz und seine duale Seite) in Dreiheiten, jede einmal vorwärts und einmal rückwärts gedreht — sechs geordnete Paare, jedes Kreuz in beiden Seiten. Sieben Gesetze wickeln sich zu zwei Dreiheiten und einer Achse; eine Drehung je Richtung an jedem Knoten deckt alle 21 Kreuze.',
   },
@@ -124,7 +124,7 @@ async function rosetta(cwd: string): Promise<{ laws: string[]; sets: Map<string,
   const { waveAccountingGapViolations } = await import('@/accounting/gaps')
   const wave = waveAccountingGapViolations(cwd)
   sets.set('accounting-wave', new Set(wave.verdict.waves.flatMap((w) => [...w.paths]).map(barrel)))
-  const laws = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded', 'unreached', 'accounting-wave'].filter((l) => sets.has(l))
+  const laws = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded', 'sanitize', 'unreached', 'accounting-wave'].filter((l) => sets.has(l))
   return { laws, sets }
 }
 

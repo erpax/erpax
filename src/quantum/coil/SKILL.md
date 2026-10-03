@@ -71,19 +71,22 @@ solutions, `n = 0` and `n = 3` (`Coil.trinity_is_the_coil`, decided over every s
 is the one ring a single turn closes — which is why the coins come in trinities, and why the
 corpus's own trinity (form · code · proof) is the unit a rotation can fully cross.
 
-## Seven laws, two levels, every cross
+## Eight laws, three levels, every cross
 
-The live rosetta is seven laws: the five with file populations (`copy · cycle · concentration ·
-mirror · unfolded`) and the two the frontier addresses as atoms (`unreached · accounting-wave`).
-`coil` arranges them as **(copy cycle concentration) · (mirror unfolded unreached) · accounting-wave** —
-two trinities and an axis — and the three nodes are themselves a trinity. One turn each way at each
-of the three nodes covers all 21 crosses: two laws in one trinity are crossed by that trinity's
-turn; two laws in different nodes are crossed by the top turn, which crosses the nodes' unioned
-populations. `coverage` measures this on whatever it is handed and the test holds it for every
-rosetta size up to forty; `Coil.seven_laws_fully_crossed` holds it in the kernel.
+The live rosetta is eight laws: the six with file populations (`copy · cycle · concentration ·
+mirror · unfolded · sanitize`) and the two the frontier addresses as atoms (`unreached ·
+accounting-wave`). `coil` arranges them as **(copy cycle concentration) · (mirror unfolded sanitize)
+· unreached** — two trinities and a coin, themselves a trinity of nodes — with **accounting-wave** as
+the axis the root turns against. One turn each way at every node covers all 28 crosses: two laws in
+one trinity are crossed by that trinity's turn; two laws in different nodes are crossed by the turn of
+the node that holds them apart, which crosses the nodes' unioned populations. `coverage` measures this
+on whatever it is handed and the test holds it for every rosetta size up to forty;
+`Coil.seven_laws_fully_crossed` holds the seven-law case in the kernel (the structure before
+`sanitize` joined the rosetta), and the eighth law changes the shape, not the theorem.
 
 The axis is the remainder, and here it is the right one: `accounting-wave` is the eb ledger every
-other law's fault flows into, and it is crossed with each trinity as a whole rather than coin by coin.
+other law's fault flows into, and it is crossed with the whole rosetta at the root rather than coin
+by coin.
 
 ## The ring that turns both ways
 

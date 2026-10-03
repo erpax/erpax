@@ -43,7 +43,7 @@ for (const [k, v] of Object.entries(I18N)) {
 
 /** Each law's violating files, scanned once so every pair is free. See SKILL.md. */
 /** The laws whose violating populations are MEASURED. Module-private: an exported literal is seal-debt ([[matrix]]/crack), so `lawPopulations()` with no argument IS the shared way to ask for all of them. */
-const MEASURED_LAWS = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded'] as const
+const MEASURED_LAWS = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded', 'sanitize'] as const
 
 /** The laws that expose a file-addressed population — the only ones a cross can intersect. */
 export const measuredLaws = (): readonly string[] => MEASURED_LAWS
@@ -92,6 +92,13 @@ export async function lawPopulations(
     const m = await import('@/rules/unfolded')
     const r = m.unfoldedExports(cwd)
     set('unfolded', [...r.dead, ...r.single].map((e) => e.file))
+  }
+  if (want.has('sanitize')) {
+    // The native sanitiser (rules/sanitize) landed with no cross touching it — a law outside the rosetta
+    // is a law no coil turns. Its population is the files carrying a strip-once / json-into-code /
+    // host-substring / quote-escape / proto-path finding.
+    const m = await import('@/rules/sanitize')
+    set('sanitize', m.sanitizeViolations(cwd).map((v) => v.file))
   }
   return out
 }
