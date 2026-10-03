@@ -55,40 +55,62 @@ const posOf = (steps: readonly PipelineStep[], re: RegExp): number =>
  * Each one is here because the opposite ordering shipped and had a consequence —
  * not because a checklist suggested it.
  */
+/** The job that verifies what is live. It is the LAST job of ci.yml, never a workflow of its own. */
+const VERIFY_JOB = 'verify-live'
+
 /**
- * THE VERIFY WORKFLOW. cloudflare.yml no longer deploys — the owner's rule, 2026-09-13: no secret
- * may stop a deployment, so the Worker ships from Cloudflare's own git build and this workflow only
- * VERIFIES what is live. The deploy-era laws that used to read this file (build-before-migrate,
- * smoke-after-deploy, weigh-before-migrate) therefore judged a file with no deploy in it, and their
- * failures said nothing about the path that actually ships. They moved to shipOrderViolations.
+ * THE VERIFY JOB. Nothing in CI deploys — the owner's rule, 2026-09-13: no secret may stop a
+ * deployment, so the Worker ships from Cloudflare's own git build and this job only VERIFIES what is
+ * live. The deploy-era laws (build-before-migrate, smoke-after-deploy, weigh-before-migrate) judge the
+ * path that actually ships, in shipOrderViolations.
  *
- * Two of them were also FALSE: the job is named `verify`, and the laws read `jobs.deploy`, so they
- * were matching an empty object and reporting a missing guard that is present. A law that reads the
- * wrong key reports the corpus's own shape as a violation.
+ * It was a workflow (cloudflare.yml) on `workflow_run: CI`, checking out `workflow_run.head_sha` so
+ * it verified the commit CI judged. CodeQL `actions/cache-poisoning/poisonable-step` refuses exactly
+ * that: a workflow_run job holds default-branch cache scope, and executing the triggering SHA under it
+ * is untrusted code — and the job never needed the privilege, it reads no secret. So the three laws
+ * now read the shape that gives the same guarantees without it: the verify job NEEDS every lane of the
+ * run it belongs to (waits-for-ci), inherits their verdict without `always()` (green-only), and checks
+ * out the run's own commit with no `ref:` override — `github.sha` IS the judged commit (verified-sha).
  */
 export function verifyWorkflowViolations(cwd: string = process.cwd()): PipelineViolation[] {
   const out: PipelineViolation[] = []
-  const file = 'cloudflare.yml'
+  const file = 'ci.yml'
   const p = wfPath(file, cwd)
   if (!existsSync(p)) return out
   const text = readFileSync(p, 'utf8')
   const doc = parse(text) as {
-    on?: Record<string, unknown>
-    jobs?: Record<string, { if?: string; steps?: { name?: string; with?: Record<string, unknown> }[] }>
+    jobs?: Record<string, { if?: string; needs?: string | string[]; steps?: { name?: string; with?: Record<string, unknown> }[] }>
   }
-  const jobName = Object.keys(doc.jobs ?? {})[0] ?? ''
-  const job = doc.jobs?.[jobName]
-  const steps = stepsOf(file, jobName, cwd)
+  const job = doc.jobs?.[VERIFY_JOB]
+  if (!job) {
+    out.push({ workflow: file, law: 'waits-for-ci', reason: `no \`${VERIFY_JOB}\` job — nothing verifies what is live after CI` })
+    return out
+  }
+  const steps = stepsOf(file, VERIFY_JOB, cwd)
+  const jobText = JSON.stringify(job)
 
-  if (!doc.on || !('workflow_run' in doc.on)) {
-    out.push({ workflow: file, law: 'waits-for-ci', reason: 'does not trigger on workflow_run — it races CI instead of following it' })
+  // Every lane that runs on a push is a lane this job must wait for. A lane gated to pull_request
+  // never runs on main, and needing a skipped job would skip the verification itself.
+  const pushLanes = Object.entries(doc.jobs ?? {})
+    .filter(([name, j]) => name !== VERIFY_JOB && !/pull_request/.test(j.if ?? ''))
+    .map(([name]) => name)
+  const needs = new Set(Array.isArray(job.needs) ? job.needs : job.needs ? [job.needs] : [])
+  const missing = pushLanes.filter((l) => !needs.has(l))
+  if (missing.length > 0) {
+    out.push({ workflow: file, law: 'waits-for-ci', reason: `\`${VERIFY_JOB}\` does not need ${missing.join(', ')} — it races those lanes instead of following them` })
   }
-  if (!/workflow_run\.conclusion\s*==\s*'success'/.test(job?.if ?? '')) {
-    out.push({ workflow: file, law: 'green-only', reason: "the job does not require workflow_run.conclusion == 'success'" })
+  // `needs` only gates on success while the job keeps the default condition; always() / !cancelled()
+  // / failure() re-admit a red run, which is waiting for CI without reading its verdict.
+  if (/always\(\)|!\s*cancelled\(\)|failure\(\)/.test(job.if ?? '')) {
+    out.push({ workflow: file, law: 'green-only', reason: `\`${VERIFY_JOB}\` runs on a red lane — its \`if\` overrides the success that \`needs\` requires` })
   }
-  const checkout = (job?.steps ?? []).find((s) => JSON.stringify(s).includes('actions/checkout'))
-  if (!JSON.stringify(checkout?.with ?? {}).includes('workflow_run.head_sha')) {
-    out.push({ workflow: file, law: 'verified-sha', reason: 'checkout does not pin workflow_run.head_sha — it would verify a commit CI never judged' })
+  // The run's own commit is the one every lane above judged. A `ref:` on the checkout verifies some
+  // other commit — and, in a privileged context, is the untrusted checkout CodeQL refuses.
+  const checkout = (job.steps ?? []).find((s) => JSON.stringify(s).includes('actions/checkout'))
+  if (checkout === undefined) {
+    out.push({ workflow: file, law: 'verified-sha', reason: `\`${VERIFY_JOB}\` checks nothing out` })
+  } else if (checkout.with !== undefined && 'ref' in checkout.with) {
+    out.push({ workflow: file, law: 'verified-sha', reason: `checkout pins \`ref: ${String(checkout.with.ref)}\` — it would verify a commit this run never judged` })
   }
 
   // The deterministic gates run BEFORE the smoke: a red contract or a dead boot explains a red
@@ -100,14 +122,14 @@ export function verifyWorkflowViolations(cwd: string = process.cwd()): PipelineV
     else if (smoke >= 0 && g > smoke) out.push({ workflow: file, law, reason: `"${steps[g]!.name}" runs after the smoke it should precede` })
   }
 
-  // THE OWNER'S RULE, made a law: this workflow must need no secret. A deploy, a migration or a
-  // secrets reference here is the arrangement that failed every run for weeks while the other path
-  // shipped — two deployers racing, one blocked by an absent secret.
-  if (/secrets\./.test(text)) {
-    out.push({ workflow: file, law: 'no-secret-on-the-path', reason: 'the verify workflow reads a secret — it is meant to need none' })
+  // THE OWNER'S RULE, made a law: this job must need no secret. A deploy, a migration or a secrets
+  // reference here is the arrangement that failed every run for weeks while the other path shipped —
+  // two deployers racing, one blocked by an absent secret.
+  if (/secrets\./.test(jobText)) {
+    out.push({ workflow: file, law: 'no-secret-on-the-path', reason: 'the verify job reads a secret — it is meant to need none' })
   }
   if (steps.some((st) => /opennextjs-cloudflare deploy|payload migrate|wrangler deploy(?! --dry-run)/.test(st.run))) {
-    out.push({ workflow: file, law: 'no-secret-on-the-path', reason: 'the verify workflow deploys or migrates — shipping belongs to the git build and `erpax deploy app`' })
+    out.push({ workflow: file, law: 'no-secret-on-the-path', reason: 'the verify job deploys or migrates — shipping belongs to the git build and `erpax deploy app`' })
   }
   return out
 }

@@ -23679,7 +23679,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.",
-        "uuid": "68a15f54-e120-8374-a63a-55af1fa80380",
+        "uuid": "f52e037a-1b0b-83a5-be5f-d5a539ef7e78",
         "words": [
           "use",
           "when",
@@ -23739,7 +23739,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.",
-        "uuid": "b7ee6882-3b88-8391-a50e-830a969cd36e",
+        "uuid": "9bd7b7bb-664c-8ce6-b7bd-33a207f12023",
         "words": [
           "use",
           "when",
@@ -28010,7 +28010,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "pipeline",
-        "uuid": "306b7399-9f4c-8b7d-8e03-a83939cbb7ac",
+        "uuid": "7b87d85a-b4b2-897a-8dca-e6f626220442",
         "words": [
           "pipeline"
         ],
@@ -47405,7 +47405,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking deals through the sales pipeline — stage progression from qualification to close-won/close-lost, weighted forecast (amount × probability), forecast categories, and contract creation on close-won. The CRM deal-pipeline collection.",
-        "uuid": "842d6d41-3209-8dc1-a556-f2a9e1e0a656",
+        "uuid": "5c5c3c6e-c3d6-81c5-b9eb-e0b7f67f6b7f",
         "words": [
           "use",
           "when",
@@ -157582,7 +157582,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when projecting revenue from pipeline/opportunities — weighted by probability, stage, and close date; aggregated by rep/territory/product/period.",
-        "uuid": "0b0e04d4-2ab5-842f-acf7-eb4ef600b5ca",
+        "uuid": "6729c9b4-ddc9-846b-a5f8-cb52d53229a4",
         "words": [
           "use",
           "when",
@@ -159430,7 +159430,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage.",
-        "uuid": "c6b1a744-1156-8c5d-a245-2a967f7a8609",
+        "uuid": "8578529e-8b5b-8152-be75-0e83f7c0973a",
         "words": [
           "use",
           "when",
@@ -187816,7 +187816,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one opportunity — the singular model of the opportunities collection (the plural store); a potential deal tracked through a sales pipeline.",
-        "uuid": "fcaf7c88-f08b-8eb0-b112-5b241ca3c374",
+        "uuid": "07af85fd-a407-80e1-8373-2f2acd8fde04",
         "words": [
           "use",
           "when",
@@ -193966,7 +193966,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "pipeline",
-        "uuid": "306b7399-9f4c-8b7d-8e03-a83939cbb7ac",
+        "uuid": "7b87d85a-b4b2-897a-8dca-e6f626220442",
         "words": [
           "pipeline"
         ],
