@@ -43,10 +43,18 @@ connected them, so they ran in parallel and **a commit whose tests were failing
 deployed anyway**. CI going red afterwards changed nothing — the Worker was already
 live.
 
-Deploy now triggers on `workflow_run` of CI, refuses any conclusion but `success`, and
-checks out `workflow_run.head_sha` — **the commit CI actually verified**, not whatever
-`main` points at by then. Without that last part a push landing mid-run would deploy
-code nothing tested.
+The verify job (`verify-live`) is now the **last job of `ci.yml`**: it `needs` every lane
+that runs on a push, inherits their verdict (a red lane skips it, and an always-run
+condition would be the race returning), and checks out the run's own commit — `github.sha` **is** the
+commit CI verified, by construction of the run rather than by looking one up.
+
+It was a separate workflow on `workflow_run` of CI, pinning `workflow_run.head_sha`, until
+CodeQL `actions/cache-poisoning/poisonable-step` refused that shape: a `workflow_run` job
+holds default-branch cache scope, and executing the triggering SHA under it is untrusted
+code — nine alerts, one high, and disabling the cache cleared none. The job never needed
+the privilege; it reads no secret. Same three laws, read off the shape that gives the same
+guarantees without it: `waits-for-ci` is the `needs` list, `green-only` is the absence of an
+always / not-cancelled / failure condition on the job, `verified-sha` is a checkout with no `ref:`.
 
 ## Migrate after build, never before
 

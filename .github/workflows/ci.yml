@@ -191,12 +191,12 @@ jobs:
           key: erpax-receipts-${{ runner.os }}-s${{ matrix.shard }}-${{ github.sha }}
 
   # Local UI E2E — Playwright starts `pnpm dev` via its own webServer. The POST-deploy
-  # smoke lives in cloudflare.yml against the real Worker URL.
+  # smoke is the `verify-live` job below, against the real Worker URL.
   #
-  # PR-ONLY, deliberately. cloudflare.yml deploys on `workflow_run: CI` and refuses any
-  # conclusion but success, so a job added to the push lane becomes a new gate on every
-  # deploy. Folding the old test-e2e.yml in here is a file consolidation, not a change of
-  # what blocks a release — running this on main is a separate decision, made on purpose.
+  # PR-ONLY, deliberately. `verify-live` needs the push lane and the landing verdict reads it,
+  # so a job added to the push lane becomes a new gate on every deploy. Folding the old
+  # test-e2e.yml in here is a file consolidation, not a change of what blocks a release —
+  # running this on main is a separate decision, made on purpose.
   test-e2e:
     name: Playwright UI
     if: github.event_name == 'pull_request'
@@ -274,3 +274,78 @@ jobs:
         with:
           path: node_modules/.cache/erpax/test-receipts.json
           key: erpax-build-receipt-${{ runner.os }}-${{ github.sha }}
+
+  # LIVE VERIFICATION — verify what is live, with no secret on the path.
+  #
+  # NO SECRET SHOULD STOP DEPLOYMENT (owner, 2026-09-13). The Worker is deployed by Cloudflare's
+  # git-connected build (`Workers Builds: erpax`) with the Worker's own stored secret; nothing here
+  # deploys. This job runs the two gates that need no secret — the offline contract gate and the
+  # Payload boot gate — and smokes the LIVE site. Its build command lives in the Cloudflare dashboard,
+  # not in this repo: Workers → erpax → Settings → Builds → `opennextjs-cloudflare build`, nothing
+  # before it (`pnpm build` is Turbopack, skips the 8 PRODUCTION_FOLDS and packed 23.4 MB gz against
+  # the 10 MiB ceiling; two Next builds is ~30 min against the 20-min build timeout).
+  #
+  # WHY A JOB HERE AND NOT A `workflow_run` WORKFLOW. This used to be cloudflare.yml, triggered on
+  # workflow_run of CI and checking out `workflow_run.head_sha` so it verified the commit CI judged.
+  # Both of those are what CodeQL `actions/cache-poisoning/poisonable-step` refuses: a workflow_run
+  # job holds default-branch cache scope, and executing the SHA that triggered it is untrusted code
+  # under that scope — nine alerts, one high, and disabling the cache cleared none of them. The job
+  # never needed the privilege: it reads no secret. As the last job of the run itself it waits for
+  # every lane through `needs`, inherits their verdict (a red lane skips it), and `github.sha` IS
+  # the commit CI judged — the same run, not a lookup of one. The three laws of src/deploy/pipeline
+  # (waits-for-ci · green-only · verified-sha) read exactly that shape.
+  #
+  # Honest boundary: the smoke checks whatever is live, which Cloudflare may have built from a newer
+  # push than this run. The landing verdict (src/arrival) ties a deploy to its commit; this job does not.
+  verify-live:
+    name: Live verification (no secrets)
+    needs: [standards, lint, typecheck, test-int, build]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      LIVE_URL: ${{ vars.STAGING_URL || 'https://erpax.ceci.workers.dev' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup erpax
+        uses: ./.github/actions/setup
+        with:
+          skill-index: stub
+          ripgrep: 'false'
+
+      # Both are deterministic and read no secret: they cannot flake on someone else's uptime.
+      - name: Contract gate — erpax parses what the external rails send
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/outward/gate/index.ts
+
+      - name: Boot gate — the Payload config loads
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
+
+      - name: Cache Playwright Chromium
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-chromium-1.60.0
+
+      - name: Install Playwright Chromium
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+        run: pnpm exec playwright install chromium --with-deps
+
+      - name: Ensure Playwright Chromium (cache hit)
+        if: steps.pw-cache.outputs.cache-hit == 'true'
+        run: pnpm exec playwright install chromium
+
+      - name: UI smoke against the live Worker
+        env:
+          PLAYWRIGHT_BASE_URL: ${{ env.LIVE_URL }}
+          SKIP_E2E_WEBSERVER: '1'
+        run: pnpm erpax test e2e-smoke
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-ui-smoke
+          path: public/evidence/
+          retention-days: 7

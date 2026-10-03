@@ -9,11 +9,11 @@ const dirs: string[] = []
 const repo = (mutate?: (yml: string) => string): string => {
   const d = mkdtempSync(join(tmpdir(), 'erpax-pipe-'))
   mkdirSync(join(d, '.github', 'workflows'), { recursive: true })
-  for (const f of ['cloudflare.yml', 'publish-packages.yml']) {
+  for (const f of ['ci.yml', 'publish-packages.yml']) {
     cpSync(join(process.cwd(), '.github', 'workflows', f), join(d, '.github', 'workflows', f))
   }
   if (mutate) {
-    const p = join(d, '.github', 'workflows', 'cloudflare.yml')
+    const p = join(d, '.github', 'workflows', 'ci.yml')
     writeFileSync(p, mutate(readFileSync(p, 'utf8')))
   }
   dirs.push(d)
@@ -45,18 +45,25 @@ describe('deploy/pipeline — the verify workflow, which no longer ships', () =>
     expect(() => assertPipelineOrder()).not.toThrow()
   })
 
-  it('waits-for-ci: a bare push trigger races CI instead of following it', () => {
-    const d = repo((y) => y.replace(/on:\n(\s+#[^\n]*\n)*\s+workflow_run:[\s\S]*?branches: \[main, master\]/, 'on:\n  push:\n    branches: [main]'))
-    expect(verifyWorkflowViolations(d).some((v) => v.law === 'waits-for-ci')).toBe(true)
+  // The verify job is the LAST job of ci.yml, so a step appended to the file lands in it.
+  it('waits-for-ci: a lane the verify job does not need is a lane it races', () => {
+    const d = repo((y) => y.replace(/needs: \[standards, lint, typecheck, test-int, build\]/, 'needs: [standards, lint, typecheck, build]'))
+    const v = verifyWorkflowViolations(d).find((x) => x.law === 'waits-for-ci')
+    expect(v?.reason).toContain('test-int')
+  })
+
+  it('waits-for-ci: no verify job at all is the loudest violation', () => {
+    const d = repo((y) => y.replace(/\n  verify-live:\n/, '\n  verify-later:\n'))
+    expect(verifyWorkflowViolations(d).some((v) => v.law === 'waits-for-ci' && /no `verify-live` job/.test(v.reason))).toBe(true)
   })
 
   it('green-only: waiting for CI without reading its verdict is worthless', () => {
-    const d = repo((y) => y.replace(/github\.event\.workflow_run\.conclusion == 'success'/, 'true'))
+    const d = repo((y) => y.replace(/if: github\.event_name == 'push' && github\.ref == 'refs\/heads\/main'\n    runs-on: ubuntu-latest\n    timeout-minutes: 20/, "if: always() && github.event_name == 'push'\n    runs-on: ubuntu-latest\n    timeout-minutes: 20"))
     expect(verifyWorkflowViolations(d).some((v) => v.law === 'green-only')).toBe(true)
   })
 
-  it('verified-sha: verifying HEAD instead of the commit CI judged', () => {
-    const d = repo((y) => y.replace(/ref: [^\n]*head_sha[^\n]*/, 'ref: main'))
+  it('verified-sha: a ref on the checkout verifies a commit this run never judged', () => {
+    const d = repo((y) => y.replace(/timeout-minutes: 20\n(\s+env:[\s\S]*?)- uses: actions\/checkout@v4\n/, 'timeout-minutes: 20\n$1- uses: actions/checkout@v4\n        with:\n          ref: main\n'))
     expect(verifyWorkflowViolations(d).some((v) => v.law === 'verified-sha')).toBe(true)
   })
 
