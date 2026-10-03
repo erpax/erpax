@@ -3,13 +3,13 @@ name: data
 description: "Use when reasoning about data — Data associated with the event, like for instance a log message."
 atomPath: data
 coordinate: "data · 4/weave · 811163d7"
-contentUuid: "0b7ac45a-da6f-5265-8be4-5fec87c9b632"
+contentUuid: "5f3374f6-7695-5b9b-a2ad-83a7dc097ffd"
 diamondUuid: "f6b6d0a6-214a-848b-92f3-0b9d5fee3b1d"
 uuid: "811163d7-6e20-8cac-af52-9f754220a4c3"
 horo: 4
 typography:
   partition: data
-  bondDegree: 57
+  bondDegree: 61
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

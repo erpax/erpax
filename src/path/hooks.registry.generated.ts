@@ -75,6 +75,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "agents/mcp/tool/frontier",
   "agents/mcp/tool/gate",
   "agents/mcp/tool/kyc",
+  "agents/mcp/tool/millennium",
   "agents/mcp/tool/novelty",
   "agents/mcp/tool/outward",
   "agents/mcp/tool/quantum",
@@ -893,6 +894,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "millennium",
   "millennium/closure",
   "millennium/correspondence",
+  "millennium/data",
   "millennium/reduction",
   "mineral/resource/assets",
   "mirror",
@@ -1549,7 +1551,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1542 as const
+export const ATOM_LEDGER_PATH_COUNT = 1544 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1829,6 +1831,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "agents/mcp",
     "agents/mcp/tool",
     "agents/mcp/tool/kyc"
+  ],
+  "agents/mcp/tool/millennium": [
+    "agents/mcp",
+    "agents/mcp/tool",
+    "agents/mcp/tool/millennium"
   ],
   "agents/mcp/tool/novelty": [
     "agents/mcp",
@@ -4826,6 +4833,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "millennium",
     "millennium/correspondence"
   ],
+  "millennium/data": [
+    "millennium",
+    "millennium/data"
+  ],
   "millennium/reduction": [
     "millennium",
     "millennium/reduction"
@@ -7251,4 +7262,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 890 as const
+export const MERGED_NESTED_PATH_COUNT = 892 as const

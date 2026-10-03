@@ -3,13 +3,13 @@ name: data
 description: "Use when naming information held about an identifiable person or entity — the parent term for the data-side vocabulary, including its protection."
 atomPath: "vocabulary/data"
 coordinate: "vocabulary/data · 8/crest · a6149061"
-contentUuid: "391b7155-c677-56ae-b236-fd93d98a35ae"
+contentUuid: "fa7e857a-6f1c-5a0f-930c-1ecfe73b5f50"
 diamondUuid: "5be37ee8-d199-8eed-b238-c769d16578b9"
 uuid: "a6149061-7f23-8bba-ba96-03f3d82f635f"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 57
+  bondDegree: 61
 standards: []
 bindings: []
 signatures:
