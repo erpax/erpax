@@ -32,10 +32,10 @@ export {
   improveClaim,
   crackTheorem,
   chatInvoke,
-  chatDoor,
   collaborate,
 } from './routing'
-export type { ChatArea, DoorTurn } from './routing'
+export { chatDoor } from './door'
+export type { ChatArea, DoorTurn } from './door'
 export type {
   ChatMachine,
   ChatFtl,

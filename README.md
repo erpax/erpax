@@ -125,15 +125,36 @@ This file is a **receipt**, not a document: every figure below is projected from
 
 | leg | arbiter | projected |
 | --- | --- | --- |
-| matrix | `UUID_MATRIX_NODES` · `UUID_MATRIX_EDGES` | **3625** atoms · **41459** bonds |
-| trinity | `src` tree walk | form **3624** · code **1568** · proof **1585** |
-| horo ring | `horoPivotTable()` | **7** facets · **3602** ring atoms |
-| entropy | `readmeCorpusEntropyRenderOpts` | sealed **3348**/**3625** · gap `361` eb · seal `42527.18` eb |
+| matrix | `UUID_MATRIX_NODES` · `UUID_MATRIX_EDGES` | **3637** atoms · **41563** bonds |
+| trinity | `src` tree walk | form **3635** · code **1579** · proof **1596** |
+| horo ring | `horoPivotTable()` | **7** facets · **3614** ring atoms |
+| entropy | `readmeCorpusEntropyRenderOpts` | sealed **3355**/**3636** · gap `365` eb · seal `42663.175` eb |
 | advantage | `ftlReport()` | holds **true** · speedup log₂ **11.60** · boundary empty **true** |
 | package | `package.json` | `1.0.7` · **20** scripts · **20** payload · **56** stack |
-| standards | cited banners across the tree | **3059** distinct · **11** bindings |
+| standards | cited banners across the tree | **3070** distinct · **11** bindings |
 | seo | `deriveSeoMeta()` · `auditSeo()` — the site's own | **15** keywords · title **13** · description **153** · `WebPage` |
-| seal | `toUuid(canonical model bytes)` | corpus `3dbfaff1-1134-85a6-89c4-727c72517d62` · README `dfcf1aca-1845-887d-b73a-e0cd5e811ffc` |
+| mcp | `agents/mcp/tool/index.ts` · `erpax.quantum.*` · `erpax.gate.*` — parsed, never booted | **24** areas · **6** register+gate tools · receipt `02fdbb7e-a82b-88a7-b4fd-42e8935d2926` |
+| gates | `rulesOf()` — the lane's own arbiter, the same snapshot the entropy leg forced | **19** axes · **0** red · **6** at zero |
+| seal | `toUuid(canonical model bytes)` | corpus `be5dbde0-dd07-8766-89d7-4232c1403948` · README `32210a5c-0560-8ed6-9eda-a736fc7dd480` |
+
+## next development — the receipt's own ledger
+
+**19** gate axes from `rulesOf()`, the arbiter the push lane runs: **0** red · **6** at zero · **13** carrying debt. The order below is the order the corpus works in — a red axis is a regression and outranks every size; after that the largest live count. Every row is a question `erpax.gate.verdicts` answers with the same number.
+
+| axis | live | ceiling | state |
+| --- | ---: | ---: | --- |
+| `word-incomplete-diamond` | 1523 | 1523 | held |
+| `word-without-code` | 1502 | 1502 | held |
+| `stray-ts` | 851 | 851 | held |
+| `word-matter` | 767 | 767 | held |
+| `matrix-crack` | 746 | 746 | held |
+| `word-without-logic` | 433 | 433 | held |
+| `alphanumeric-name` | 290 | 290 | held |
+| `ts-only` | 179 | 179 | held |
+| `multi-segment-file` | 165 | 165 | held |
+| `folder-trinity` | 111 | 111 | held |
+| `logic-concentration` | 23 | 23 | held |
+| `diamond-membership` | 4 | 4 | held |
 
 ## [[pivot]]
 
@@ -141,24 +162,43 @@ This file is a **receipt**, not a document: every figure below is projected from
 
 ### the horo ring — the diamond's facets
 
-Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3602** ring atoms — principal facets ranked by bond in-degree.
+Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3614** ring atoms — principal facets ranked by bond in-degree.
 
 | digit | measure | atoms | principal facets |
 | ----: | ------- | ----: | ---------------- |
-| 1 | base | 586 | `merge` · `sti` · `standard` · `atom` · `rodin` · `gravity` |
-| 2 | share | 585 | `collapse` · `balance` · `quantum` · `entropy` · `transaction` · `vocabulary/agriculture` |
-| 4 | weave | 610 | `horo` · `cost` · `duality` · `self` · `field` · `vocabulary/fractal` |
-| 8 | crest | 587 | `proof` · `society` · `medical` · `gate` · `rodin/breath` · `trinity` |
-| 7 | descent | 588 | `rules` · `accounting` · `uuid` · `thing` · `diamond` · `agent` |
-| 5 | round | 619 | `law` · `sequence` · `action` · `matrix` · `body/one` · `torus` |
+| 1 | base | 593 | `merge` · `sti` · `standard` · `atom` · `rodin` · `gravity` |
+| 2 | share | 587 | `collapse` · `balance` · `quantum` · `entropy` · `transaction` · `vocabulary/agriculture` |
+| 4 | weave | 606 | `horo` · `cost` · `duality` · `self` · `field` · `vocabulary/fractal` |
+| 8 | crest | 589 | `proof` · `society` · `medical` · `gate` · `rodin/breath` · `trinity` |
+| 7 | descent | 590 | `rules` · `accounting` · `uuid` · `thing` · `diamond` · `agent` |
+| 5 | round | 622 | `law` · `sequence` · `action` · `matrix` · `body/one` · `torus` |
 | 9 | unity | 27 | `identity` · `hooks` · `whole` · `zeropoint` · `config` · `identity/signal` |
 
 > The control axis governs off the flow ring — `3` access · `6` hooks (3: 15 atoms · 6: 8 atoms), `9` unity closes and `0` is the zeropoint root.
 
 
+Cross-tab of **3636** folder README models — state × count per axis.
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 3355 | 92.27 |
+| unsealed | 281 | 7.73 |
+| **Σ** | **3636** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 3632 | 99.89 |
+| unbalanced | 4 | 0.11 |
+| **Σ** | **3636** | **100** |
+
+
 ## corpus entropy
 
-- gap `361` eb · seal `42527.18` eb · net `-42166.18` eb · ratio `117.804`
+- gap `365` eb · seal `42663.175` eb · net `-42298.175` eb · ratio `116.885`
 
 
 ## scripts
@@ -198,6 +238,6 @@ Every path — ([CC-BY-NC-ND-4.0](LICENSE) / commercial) via `license@erpax.com`
 
 ---
 
-<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `dfcf1aca-1845-887d-b73a-e0cd5e811ffc`, regenerated from the live tree; any drift fails the gate.</sub>
+<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `32210a5c-0560-8ed6-9eda-a736fc7dd480`, regenerated from the live tree; any drift fails the gate.</sub>
 
-<sub>erpax:src · content-uuid dfcf1aca-1845-887d-b73a-e0cd5e811ffc · © erpax · CC-BY-NC-ND-4.0 · source https://github.com/erpax/erpax · doi 10.5281/zenodo.22237698 · commercial license@erpax.com</sub>
+<sub>erpax:src · content-uuid 32210a5c-0560-8ed6-9eda-a736fc7dd480 · © erpax · CC-BY-NC-ND-4.0 · source https://github.com/erpax/erpax · doi 10.5281/zenodo.22237698 · commercial license@erpax.com</sub>

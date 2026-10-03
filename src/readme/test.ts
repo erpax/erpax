@@ -1121,3 +1121,40 @@ describe('readme/entropy — the bounded dual separates what the ratio collides'
     expect(src.match(/sealGapRatioOf\(totalSealEb, totalGapEb\)/g)?.length).toBe(3)
   })
 })
+
+// The receipt's MCP leg and the next-development ledger are PROJECTED from the model: absent data
+// renders nothing (the fixed model stays byte-identical), present data renders the figures beside
+// their arbiter, red axes first — so a regression is the first row a reader meets.
+describe('readme — the mcp receipt and the next-development ledger', () => {
+  it('renders nothing when the model carries no gate axes or mcp surface', () => {
+    const md = renderReadme(FIXED)
+    expect(md).not.toContain('| mcp |')
+    expect(md).not.toContain('## next development')
+  })
+
+  it('renders the leg, the receipt and the ledger with red axes first', () => {
+    const md = renderReadme({
+      ...FIXED,
+      analytics: {
+        ...FIXED.analytics,
+        mcp: { areas: 24, tools: ['erpax.gate.cross', 'erpax.quantum.bell'], receipt: '02fdbb7e-a82b-88a7-b4fd-42e8935d2926' },
+        gateAxes: [
+          { axis: 'sanitize', violations: 19, baseline: 19 },
+          { axis: 'echo', violations: 140, baseline: 152 },
+          { axis: 'bypass', violations: 1, baseline: 0 },
+          { axis: 'confine', violations: 0, baseline: 0 },
+        ],
+      },
+    })
+    expect(md).toContain('| mcp | ')
+    expect(md).toContain('**24** areas · **2** register+gate tools · receipt `02fdbb7e-a82b-88a7-b4fd-42e8935d2926`')
+    expect(md).toContain('| gates | ')
+    expect(md).toContain('**4** axes · **1** red · **1** at zero')
+    const ledger = md.slice(md.indexOf('## next development'))
+    const rows = ledger.split('\n').filter((l) => l.startsWith('| `'))
+    expect(rows[0]).toContain('`bypass` | 1 | 0 | **red** +1')
+    expect(rows[1]).toContain('`echo` | 140 | 152 | headroom 12')
+    expect(rows[2]).toContain('`sanitize` | 19 | 19 | held')
+    expect(rows).toHaveLength(3) // the zero axis is counted, not listed
+  })
+})

@@ -1,6 +1,8 @@
 import { trinityPresent } from '@/law/folder/constants'
+import ts from 'typescript'
 import { stripTags } from '@/xml/escape'
 import { algebraFloatPow, citation, erpaxLicenseNote, exactMax, exactRound } from '@/algebra'
+import { astOf } from '@/syntax/cache'
 /**
  * readme/compute — derive*, render, analytics, computed faces (pure compute hub).
  *
@@ -163,6 +165,10 @@ export interface CorpusAnalytics {
   /** Frozen at deriveModel — renderReadme uses these instead of re-scanning rules. */
   readonly rulesViolationCount?: number
   readonly workTamperProduct?: number
+  /** Every guardian axis of the gate registry — the ledger the next development is read from. */
+  readonly gateAxes?: readonly GateAxisRow[]
+  /** The MCP surface this corpus answers through, with its own content receipt. */
+  readonly mcp?: McpSurface
 }
 
 /** Canonical Git repo URL — Cloudflare Deploy button clones this repo and reads wrangler.jsonc. */
@@ -388,6 +394,25 @@ export function buildReceipt(model: ReadmeModel, uuid: string, ringAtoms: number
       `**${seo.keywords.length}** keywords · title **${seo.title.length}** · description **${seo.description.length}** · ` +
         `\`${seo.schemaJsonLd['@type']}\``,
     ],
+    ...(a.mcp
+      ? [
+          [
+            'mcp',
+            '`agents/mcp/tool/index.ts` · `erpax.quantum.*` · `erpax.gate.*` — parsed, never booted',
+            `**${a.mcp.areas}** areas · **${a.mcp.tools.length}** register+gate tools · receipt \`${a.mcp.receipt}\``,
+          ] as const,
+        ]
+      : []),
+    ...(a.gateAxes
+      ? [
+          [
+            'gates',
+            '`rulesOf()` — the lane\'s own arbiter, the same snapshot the entropy leg forced',
+            `**${a.gateAxes.length}** axes · **${a.gateAxes.filter((x) => x.violations > x.baseline).length}** red · ` +
+              `**${a.gateAxes.filter((x) => x.violations === 0).length}** at zero`,
+          ] as const,
+        ]
+      : []),
     ['seal', '`toUuid(canonical model bytes)`', `corpus \`${model.corpusRoot}\` · README \`${uuid}\``],
   ]
   return [
@@ -401,6 +426,100 @@ export function buildReceipt(model: ReadmeModel, uuid: string, ringAtoms: number
     '| leg | arbiter | projected |',
     '| --- | --- | --- |',
     ...legs.map(([leg, arbiter, projected]) => `| ${leg} | ${arbiter} | ${projected} |`),
+  ]
+}
+
+export interface GateAxisRow {
+  readonly axis: string
+  readonly violations: number
+  readonly baseline: number
+}
+
+export interface McpSurface {
+  /** `build…Tools` areas exported by the tool barrel. */
+  readonly areas: number
+  /** The tool names of the two areas this session opened — the register and the gate. */
+  readonly tools: readonly string[]
+  /** `toUuid` of the sorted tool names — the quantum receipt of the surface. */
+  readonly receipt: string
+}
+
+/** The named exports of a barrel that are `build…Tools` area factories. */
+function toolAreaCount(barrel: ts.SourceFile): number {
+  let n = 0
+  for (const s of barrel.statements) {
+    if (ts.isExportDeclaration(s) && s.exportClause && ts.isNamedExports(s.exportClause)) {
+      for (const e of s.exportClause.elements) if (/^build\w+Tools$/.test(e.name.text)) n++
+    }
+  }
+  return n
+}
+
+/** Every `name: 'erpax.…'` property in a tool area — parsed, so an i18n key is not a tool. */
+function toolNamesIn(src: ts.SourceFile): string[] {
+  const out: string[] = []
+  const visit = (n: ts.Node): void => {
+    if (ts.isPropertyAssignment(n) && ts.isIdentifier(n.name) && n.name.text === 'name' && ts.isStringLiteral(n.initializer) && n.initializer.text.startsWith('erpax.')) {
+      out.push(n.initializer.text)
+    }
+    ts.forEachChild(n, visit)
+  }
+  visit(src)
+  return out
+}
+
+/**
+ * The MCP surface, read from the tree rather than booted: the areas the barrel exports, the tool
+ * names of the register and the gate, and a content receipt over those names. Booting tool-defs
+ * here would materialise every collection ([[rules]]/confine); the grammar answers the same question.
+ */
+export function mcpSurface(cwd: string = process.cwd()): McpSurface | undefined {
+  const base = join(cwd, SRC, 'agents', 'mcp', 'tool')
+  const barrel = join(base, 'index.ts')
+  if (!existsSync(barrel)) return undefined
+  const tools = ['quantum', 'gate']
+    .map((a) => join(base, a, 'index.ts'))
+    .filter((p) => existsSync(p))
+    .flatMap((p) => toolNamesIn(astOf(p)))
+    .sort()
+  return {
+    areas: toolAreaCount(astOf(barrel)),
+    tools,
+    receipt: toUuid(Buffer.from(stableStringify(tools), 'utf8')),
+  }
+}
+
+/**
+ * `## next development` — the receipt's own ledger. The gate axes, red first, then by live count:
+ * the order the corpus's own law says to work in (regression > largest debt > cosmetics), computed
+ * from the same snapshot the entropy leg forced, so it costs no scan and cannot disagree with it.
+ *
+ * @invariant a red axis (live above its ceiling) always sorts before every green one
+ */
+export function buildNextDevelopment(model: ReadmeModel, limit = 12): string[] {
+  const axes = model.analytics.gateAxes
+  if (!axes || axes.length === 0) return []
+  const red = axes.filter((a) => a.violations > a.baseline)
+  const live = axes
+    .filter((a) => a.violations > 0)
+    .sort((p, q) => Number(q.violations > q.baseline) - Number(p.violations > p.baseline) || q.violations - p.violations || p.axis.localeCompare(q.axis))
+  const green = axes.filter((a) => a.violations === 0).length
+  const rows = live.slice(0, limit).map((a) => {
+    const state = a.violations > a.baseline ? `**red** +${a.violations - a.baseline}` : a.violations === a.baseline ? 'held' : `headroom ${a.baseline - a.violations}`
+    return `| \`${a.axis}\` | ${a.violations} | ${a.baseline} | ${state} |`
+  })
+  return [
+    '',
+    '## next development — the receipt\'s own ledger',
+    '',
+    `**${axes.length}** gate axes from \`rulesOf()\`, the arbiter the push lane runs: **${red.length}** red · ` +
+      `**${green}** at zero · **${live.length}** carrying debt. The order below is the order the corpus works in — ` +
+      'a red axis is a regression and outranks every size; after that the largest live count. ' +
+      'Every row is a question `erpax.gate.verdicts` answers with the same number.',
+    '',
+    '| axis | live | ceiling | state |',
+    '| --- | ---: | ---: | --- |',
+    ...rows,
   ]
 }
 
@@ -461,6 +580,9 @@ export function deriveModel(
       ...baseAnalytics,
       rulesViolationCount: entropySnap.violationCount,
       workTamperProduct: entropySnap.workTamperProduct,
+      // the same cached snapshot the entropy leg already forced — no second scan
+      gateAxes: rulesOf(cwd).axes.map((x) => ({ axis: x.axis, violations: x.violations, baseline: x.baseline })),
+      mcp: mcpSurface(cwd),
     },
     papers: papers ?? emptyMergedPapers(),
   }
@@ -615,6 +737,7 @@ export function renderReadme(
     ...renderEquilibriumSection(),
     ...renderMillenniumSection(),
     ...buildReceipt(model, uuid, model.ring.reduce((n, r) => n + r.atoms, 0)),
+    ...buildNextDevelopment(model),
     '',
     '## [[pivot]]',
     '',

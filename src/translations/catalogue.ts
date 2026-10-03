@@ -65613,6 +65613,72 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "door",
+    "path": "quantum/chat/door",
+    "translations": [
+      {
+        "key": "name",
+        "source": "door",
+        "uuid": "90e535ae-ca90-8fbe-9903-1137c6ccb931",
+        "words": [
+          "door"
+        ],
+        "values": {
+          "en": "door"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when an MCP area must open from the chat — chatDoor(session, { area: quantum | gate, door, args }) calls the area's own handlers in-process and folds one line of figures into the session; a refused call folds nothing.",
+        "uuid": "4e59829c-d883-8d18-a963-9f8ad5ac0f3d",
+        "words": [
+          "use",
+          "when",
+          "an",
+          "mcp",
+          "area",
+          "must",
+          "open",
+          "from",
+          "the",
+          "chat",
+          "chatdoor",
+          "session",
+          "area",
+          "quantum",
+          "gate",
+          "door",
+          "args",
+          "calls",
+          "the",
+          "area",
+          "s",
+          "own",
+          "handlers",
+          "in",
+          "process",
+          "and",
+          "folds",
+          "one",
+          "line",
+          "of",
+          "figures",
+          "into",
+          "the",
+          "session",
+          "a",
+          "refused",
+          "call",
+          "folds",
+          "nothing"
+        ],
+        "values": {
+          "en": "Use when an MCP area must open from the chat — chatDoor(session, { area: quantum | gate, door, args }) calls the area's own handlers in-process and folds one line of figures into the session; a refused call folds nothing."
+        }
+      }
+    ]
+  },
+  {
     "atom": "merkle",
     "path": "quantum/chat/merkle",
     "translations": [
@@ -212624,4 +212690,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3635
+export const TRANSLATIONS_COUNT = 3636
