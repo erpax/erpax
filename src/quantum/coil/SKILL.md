@@ -104,6 +104,20 @@ both faces, `theorem`, and the pairwise `lift` where a single independence model
 one). It reads the same populations `erpax.gate.crosses` enumerates — the coil is the same 21
 crosses reached by six turns instead of 21 lookups, with the face each turn carries.
 
+## The lead as the axis — `rotateAbout`
+
+*Develop the remaining leads by rotating the rosetta in all perspectives.* A lead names an atom; the
+atom is the **axis** and the rosetta turns about it: every law is a seat, and each seat is asked both
+faces — how much of the axis's matter it flags (forward) and how much of its own population the axis
+is (backward). The seats that see the lead decide one thing, proved in `Coil.seatOf`: **none** — no
+law holds it as files, it is a count and the instrument that counted it is developed first; **one** —
+it rests on its own law alone; **two or more** — laws never written to agree, agreeing.
+
+`erpax.frontier.develop` turns the rosetta about every theorem lead (`rotate`, default on) and fuses
+the manifest: the lead's own law gives the cut, and every other seeing seat adds what it has learned
+to do (`seatStep`, declared one line per law in the open). The seat count rides as evidence, so a
+corroborated lead ranks above a single one for the same reason two instruments outrank one.
+
 **Honest boundary.** Coverage is a theorem about the **structure**; which crosses hold at zero and
 which fire together is measured, and a coil–coil cross is coarser than its nine coin–coin crosses —
 it says the two trinities meet, not which laws do. The coil never reorders the rosetta it is

@@ -111,7 +111,7 @@ async function measured(cwd: string): Promise<{ sets: Map<string, ReadonlySet<st
  * same address form as a barrel file, so a coil–coil cross can meet them. The order is declared,
  * because the coil never reorders what it is handed; the remainder is the axis.
  */
-async function rosetta(cwd: string): Promise<{ laws: string[]; sets: Map<string, ReadonlySet<string>> }> {
+export async function rosetta(cwd: string): Promise<{ laws: string[]; sets: Map<string, ReadonlySet<string>> }> {
   const { existsSync } = await import('node:fs')
   const { join } = await import('node:path')
   const { sets } = await measured(cwd)

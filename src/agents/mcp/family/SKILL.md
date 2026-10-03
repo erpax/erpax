@@ -56,6 +56,31 @@ defined. Reading it off the name — `next` is a measure, `cross` an involution 
 about a word, the kind every gate here has paid for ([[rules]]/probe). A tool with no declared role
 is reported `undeclared`: a family that cannot yet be read, which is itself the finding.
 
+## The family's own trinity — roles (involute) · declare (act)
+
+Asked through the gateway the day the families first rode it, `erpax.family.trinities` reported
+**51 families, 2 trinities, 39 with every leg missing** — not because 39 areas lacked tools but
+because none of their tools declared a leg. Reading them by hand would be the manual pass this
+corpus refuses; reading them off their names is the guess the section above forbids. So the family
+got its own two legs:
+
+- **`erpax.family.roles`** — the involution: each tool's declared leg against the leg its handler's
+  **shape** implies. A body that calls `create` · `update` · `delete` · `writeFile…` · `applyScalpel`
+  (`WRITE_CALLS`, declared in the open) is an act; a body that only reads is a measure. The involute leg
+  is never inferred — a dual is a claim, not a shape. A measure that writes is a **lie** about the
+  surface, and on first run there was exactly one: `erpax.outward.leads` wrote the harvest behind a
+  `write: true` flag. The write moved to `erpax.outward.record`, the leg that says it writes.
+- **`erpax.family.declare`** — the act: one scalpel op per undeclared literal-named tool, the `name:`
+  line as the unique anchor and `role: <shape>` written after it; dry-run by default, `apply: true`
+  through the scalpel's ring, verified by re-parsing. A template-named family (`erpax.auto.*`, 226
+  `verify` tools among them) is declared **once, at its generator**, which is what the parser's skip
+  of template names forces.
+
+**Honest boundary.** The shape sees one direction only: a write call in the body. A tool that writes
+through a helper whose body it cannot see reads as a measure, and a measure placed by shape still has
+no involute leg until a dual is written — `missing: ['involute']` is the honest next tool for most
+families after the declaration lands.
+
 ## Why this exists
 
 The leads the frontier generates were being developed by hand — a leaf extracted here, a hub split

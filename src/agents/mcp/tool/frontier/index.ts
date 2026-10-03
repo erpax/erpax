@@ -13,6 +13,7 @@ import { join } from 'node:path'
 import { internalLeads, leadCross, selfSufficientNext, type InternalSources } from '@/self/sufficient'
 import { involuteLeads, tagCounts, type Dual, type LeadTag, type TaggedLead } from '@/self/involute'
 import { planScalpel, type ScalpelOp, type ScalpelPlan } from '@/scalpel'
+import type { Rotation } from '@/quantum/coil'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 
@@ -66,6 +67,28 @@ export interface DevelopEvidence {
   readonly exports?: ReadonlyMap<string, readonly { readonly name: string; readonly file: string; readonly sites: number }[]>
   /** The one decision a human makes for a leaf extraction: its word. Without it the ops stay templates. */
   readonly word?: string
+  /** target → the rosetta turned about it: every law a seat, both faces ([[quantum]]/coil `rotateAbout`). */
+  readonly rotations?: ReadonlyMap<string, Rotation>
+}
+
+/**
+ * What each seat of the rosetta prescribes when it sees a lead that another law raised — DECLARED
+ * in the open, one line per law, so the fused manifest is the union of what every seeing law has
+ * learned to do and not a guess from the lead's own source alone.
+ */
+export function seatStep(law: string): string | undefined {
+  return SEAT_STEPS[law]
+}
+
+const SEAT_STEPS: Readonly<Record<string, string>> = {
+  copy: 'a body here is byte-identical to one elsewhere: fold onto the address the import graph already points at, and read what each body closes over before the cut',
+  cycle: 'a file here sits in an import tangle: cut the edge that bites (fatalCycleUses), a leaf child of the exporter, never a reorder',
+  concentration: 'this is a hub: nest the pure private statics into one-word children with their own tests; the hub keeps its face',
+  mirror: 'a test here restates its own literal: point the assertion at the filesystem or a computed value so it can fail',
+  unfolded: 'an export here has at most one caller: inline it, drop it, or make it reused — a public @erpax/* face is the exception a human names',
+  sanitize: 'a sanitisation shape lives here: fold it onto the one address (stripTags · writeNested · jsString) instead of a local pass',
+  unreached: 'no door reaches this atom: wire it (MCP tool, CLI, deployed import) or drop it — a lexical walk cannot decide which',
+  'accounting-wave': 'the accounting wave charges a gap under this path: the leaf pays and the ancestor chain pays itself',
 }
 
 export interface Development {
@@ -101,7 +124,29 @@ const leafOps = (edge: TangleEdge, word: string): ScalpelOp => ({
  * - an unreached atom with a dead referrer: the referrer's barrel is the address, not the atom.
  */
 export function developManifest(leads: readonly TaggedLead[], ev: DevelopEvidence, cwd: string = process.cwd()): Development[] {
-  return leads.map((l) => {
+  return leads.map((l) => rotated(develop(l, ev, cwd), l, ev.rotations?.get(l.target)))
+}
+
+/**
+ * The rosetta turned about the lead: every seat that sees it adds what that law prescribes, and the
+ * seat count is carried as evidence — corroborated (two or more laws, never written to agree),
+ * single (its own law alone), unseen (no law holds it as matter; the lead is a count). The lead's own
+ * law is not repeated: its step is the manifest above.
+ */
+function rotated(d: Development, l: TaggedLead, rot: Rotation | undefined): Development {
+  if (!rot) return d
+  const own = l.source.replace(/^law:/, '')
+  const others = rot.perspectives.filter((p) => p.seen > 0 && p.law !== own)
+  const steps = [
+    ...d.steps,
+    ...others.map((p) => `from the ${p.law} seat (${p.seen} of ${rot.files} file(s), ${(p.backward * 100).toFixed(1)}% of its population): ${seatStep(p.law) ?? 'no prescription declared for this law'}`),
+    ...(rot.seat === 'unseen' ? ['no law of the rosetta holds this target as files — it is a count, not matter; develop the instrument that counted it before the target'] : []),
+  ]
+  return { ...d, steps, evidence: { ...d.evidence, seats: rot.seats, seat: rot.seat, files: rot.files } }
+}
+
+function develop(l: TaggedLead, ev: DevelopEvidence, cwd: string): Development {
+  return ((): Development => {
     const lead = { source: l.source, target: l.target, tag: l.tag, intent: l.intent }
     if (l.tag === 'lie') return { lead, kind: 'none', ops: [], plan: null, steps: [`fix the instrument that told it (${l.instrument ?? 'unknown'}), never the target`], evidence: {} }
     if (l.tag === 'manipulation') return { lead, kind: 'none', ops: [], plan: null, steps: ['wire a dual instrument for this source before acting on its count'], evidence: {} }
@@ -155,7 +200,7 @@ export function developManifest(leads: readonly TaggedLead[], ev: DevelopEvidenc
       return { lead, kind: 'decision', ops: [], plan: null, steps: ['no door reaches it and nothing refers to it: wire it (MCP tool, CLI, deployed import) or drop it — a lexical walk cannot decide which'], evidence: {} }
     }
     return { lead, kind: 'decision', ops: [], plan: null, steps: ['holds from both seats; no computed cut exists for this class yet — the act leg names that rather than guessing'], evidence: {} }
-  })
+  })()
 }
 
 /** What the live scans hand the duals — every field optional, because every source is asked for. */
@@ -431,6 +476,7 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
         sources,
         target: z.string().optional().describe('one lead target, e.g. subscription/gate · fiscal/period/resolver · dashboard/nav'),
         word: z.string().regex(/^[a-z][a-z0-9]*$/).optional().describe('the leaf word for a two-file tangle — the one decision that turns the template into planned ops'),
+        rotate: z.boolean().optional().describe('turn the rosetta about every lead (default true): each law a seat, both faces, its prescription fused into the manifest'),
         limit: z.number().int().min(1).max(200).optional(),
       },
       async handler(args) {
@@ -440,8 +486,9 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
         const tagged = involuteLeads(internalLeads(src), duals)
         const target = typeof args.target === 'string' ? args.target : undefined
         const theorems = tagged.filter((t) => t.tag === 'theorem' && (target === undefined || t.target === target))
-        const ev = await developEvidence(cwd, theorems, carried, typeof args.word === 'string' ? args.word : undefined)
+        const ev = await developEvidence(cwd, theorems, carried, typeof args.word === 'string' ? args.word : undefined, args.rotate !== false)
         const developments = developManifest(theorems, ev, cwd)
+        const seat = (s: string): number => developments.filter((d) => d.evidence.seat === s).length
         const rows = developments.slice(0, (args.limit as number | undefined) ?? 50)
         return json({
           asked: [...want].sort(),
@@ -449,8 +496,10 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
           kinds: { ops: developments.filter((d) => d.kind === 'ops').length, decision: developments.filter((d) => d.kind === 'decision').length },
           ops: developments.flatMap((d) => d.ops).length,
           refused: developments.reduce((n, d) => n + (d.plan?.refused ?? 0), 0),
+          // the rosetta turned about every lead: how many seats see each — laws never written to agree, agreeing
+          rotation: ev.rotations ? { rosetta: [...(ev.rotations.values().next().value?.perspectives ?? [])].map((p) => p.law), corroborated: seat('corroborated'), single: seat('single'), unseen: seat('unseen') } : null,
           developments: rows,
-          law: 'A lead is developed by a manifest the scalpel can plan, never by a hand. Where a theorem names a word nobody can compute, the manifest says so and stops; applying is the scalpel\'s own door, ring-verified, batch by batch.',
+          law: 'A lead is developed by a manifest the scalpel can plan, never by a hand — and by turning the rosetta about it, so every law that sees the lead adds what it has learned. Where a theorem names a word nobody can compute, the manifest says so and stops; applying is the scalpel\'s own door, ring-verified, batch by batch.',
         })
       },
     },
@@ -458,10 +507,19 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
 }
 
 /** The evidence the act leg needs for the theorem leads it was handed — only the scans those leads call for. */
-async function developEvidence(cwd: string, theorems: readonly TaggedLead[], carried: readonly Carried[], word?: string): Promise<DevelopEvidence> {
+async function developEvidence(cwd: string, theorems: readonly TaggedLead[], carried: readonly Carried[], word?: string, rotate = true): Promise<DevelopEvidence> {
   const deadReferrers = new Map<string, string[]>()
   for (const c of carried) deadReferrers.set(c.target, [...(deadReferrers.get(c.target) ?? []), c.by])
   const ev: { -readonly [K in keyof DevelopEvidence]: DevelopEvidence[K] } = { deadReferrers, word }
+  if (rotate) {
+    // the rosetta the gate coil turns, turned here about each ATOM lead; an axis-scoped lead is a count and has no files to turn about
+    const { rosetta } = await import('@/agents/mcp/tool/gate')
+    const { rotateAbout } = await import('@/quantum/coil')
+    const { laws, sets } = await rosetta(cwd)
+    const rotations = new Map<string, Rotation>()
+    for (const t of theorems) if (t.scope === 'atom' && !rotations.has(t.target)) rotations.set(t.target, rotateAbout(t.target, sets, laws))
+    ev.rotations = rotations
+  }
   const by = (source: string): string[] => [...new Set(theorems.filter((t) => t.source === source).map((t) => t.target))]
   const cycleTargets = by('law:cycle')
   if (cycleTargets.length > 0) {

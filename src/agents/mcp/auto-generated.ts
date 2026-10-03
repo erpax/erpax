@@ -67,6 +67,7 @@ const STANDARDS_FAMILIES = ['ifrs-ias', 'iso', 'eu-directive', 'us-fed', 'w3c-ie
 function toolsForAgents(registry: AgentRegistry): ErpaxMcpTool[] {
   return registry.all().map((agent) => ({
     name: `erpax.auto.agent.${agent.id}`,
+    role: 'measure',
     description: `[generated] Manifest for the ${agent.id} agent — typed accepts/emits surface, owned collections, subscribed events, cron, chain-step participation. Derived from agent registration.`,
     parameters: {} as z.ZodRawShape,
     async handler() { return json(manifestOf(agent)) },
@@ -81,6 +82,7 @@ function toolsForAgents(registry: AgentRegistry): ErpaxMcpTool[] {
 function toolsForChains(): ErpaxMcpTool[] {
   return Object.values(BUSINESS_CHAINS).map((chain) => ({
     name: `erpax.auto.chain.${chain.id.toLowerCase().replace(/_/g, '-')}`,
+    role: 'measure',
     description: `[generated] BUSINESS_CHAIN ${chain.id} — ${(chain as { description?: string }).description ?? '(no description)'}. ${chain.steps.length} steps. Returns the typed chain definition.`,
     parameters: {} as z.ZodRawShape,
     async handler() { return json(chain) },
@@ -96,6 +98,7 @@ function toolsForChains(): ErpaxMcpTool[] {
 function toolsForCollections(): ErpaxMcpTool[] {
   return [...TAMPER_PROOF_COLLECTIONS_REGISTRY].map((slug) => ({
     name: `erpax.auto.collection.${slug}.verify`,
+    role: 'measure',
     description: `[generated] Conservation Law 8 — recompute the content uuid for one row of '${slug}' and report match/mismatch. Pass the row JSON + tenantId.`,
     parameters: { row: z.record(z.unknown()), tenantId: z.string() } as z.ZodRawShape,
     async handler({ row, tenantId }) {
@@ -109,6 +112,7 @@ function toolsForCollections(): ErpaxMcpTool[] {
 function toolsForRoles(): ErpaxMcpTool[] {
   return listTenantRoles().map((role) => ({
     name: `erpax.auto.role.${role.id.replace(/[^a-z0-9-]/g, '-')}`,
+    role: 'measure',
     description: `[generated] Tenant role profile '${role.id}' — display name + required standards + invariant. Use to onboard a new tenant under this role.`,
     parameters: {} as z.ZodRawShape,
     async handler() { return json(role) },
@@ -119,6 +123,7 @@ function toolsForRoles(): ErpaxMcpTool[] {
 function toolsForStandardsFamilies(): ErpaxMcpTool[] {
   return STANDARDS_FAMILIES.map((family) => ({
     name: `erpax.auto.standards.${family}`,
+    role: 'measure',
     description: `[generated] Standards family '${family}' — one of the 7 vortex families (slice LLLLLL §0g). Use to enumerate the family's published standards via the standards-as-live-objects registry.`,
     parameters: {} as z.ZodRawShape,
     async handler() {

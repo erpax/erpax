@@ -199,3 +199,35 @@ describe('erpax.frontier — every lead tagged by its involution', () => {
     expect(body.leads).toHaveLength(body.tags.lie)
   }, 600_000)
 })
+
+describe('developManifest — the rosetta turned about each lead', () => {
+  const theorem = (source: string, target: string) => ({ ...lead(source, target), tag: 'theorem' as const, instrument: 'x', formula: '' })
+  const rotation = (axis: string, seen: Record<string, number>, files: number) => ({
+    axis,
+    files,
+    perspectives: ['copy', 'cycle', 'unfolded', 'unreached'].map((law) => ({ law, seen: seen[law] ?? 0, forward: files ? (seen[law] ?? 0) / files : 0, backward: (seen[law] ?? 0) / 10 })),
+    seats: Object.keys(seen).filter((l) => (seen[l] ?? 0) > 0),
+    seat: (Object.values(seen).filter((n) => n > 0).length === 0 ? 'unseen' : Object.values(seen).filter((n) => n > 0).length === 1 ? 'single' : 'corroborated') as 'unseen' | 'single' | 'corroborated',
+  })
+
+  it('every other seat that sees the lead adds its prescription; the lead\'s own law is not repeated; the seat is carried as evidence', () => {
+    const rotations = new Map([['payable', rotation('payable', { unreached: 1, unfolded: 4, cycle: 2 }, 5)]])
+    const [d] = developManifest([theorem('unreached', 'payable')], { rotations }, '/nowhere')
+    expect(d!.evidence.seat).toBe('corroborated')
+    expect(d!.evidence.seats).toEqual(['unreached', 'unfolded', 'cycle'])
+    const text = d!.steps.join('\n')
+    expect(text).toContain('from the unfolded seat (4 of 5 file(s), 40.0% of its population)')
+    expect(text).toContain('from the cycle seat')
+    expect(text).not.toContain('from the unreached seat') // its own law — the manifest above already is its step
+    expect(text).toContain('inline it, drop it, or make it reused')
+  })
+
+  it('a lead no law holds as files is named a count, not matter; a lead with no rotation is unchanged', () => {
+    const rotations = new Map([['stray-ts', rotation('stray-ts', {}, 0)]])
+    const [unseen] = developManifest([theorem('guardian', 'stray-ts')], { rotations }, '/nowhere')
+    expect(unseen!.evidence.seat).toBe('unseen')
+    expect(unseen!.steps.join('\n')).toContain('it is a count, not matter')
+    const [plain] = developManifest([theorem('unreached', 'x')], {}, '/nowhere')
+    expect(plain!.evidence).toEqual({})
+  })
+})

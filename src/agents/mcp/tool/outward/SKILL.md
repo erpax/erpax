@@ -41,9 +41,14 @@ makes the loop autonomous: an agent asks the boundary directly — and the famil
 
 | tool | leg | answers | writes |
 | --- | --- | --- | --- |
-| `erpax.outward.leads` | measure | the leads (`moved` + `fresh`), the unreachable rails, and the coverage | only with `write: true` |
+| `erpax.outward.leads` | measure | the leads (`moved` + `fresh`), the unreachable rails, and the coverage | never |
 | `erpax.outward.upstream` | involute | the boundary from the other seat — what Payload **publishes** (templates · examples · packages) that this tree does not hold, via [[payload]]/upstream | never |
+| `erpax.outward.record` | act | the same harvest, **written** — the receipts the next `leads` compares against | always |
 | `erpax.outward.next` | act | the single next lead nothing has answered | never |
+
+`leads` once carried the write behind a `write: true` flag. `erpax.family.roles` — the involute leg
+that asks a declared role against the shape of its body — reported it as the one lie on the surface:
+a measure whose handler writes. The write moved to `record`, the leg that says it writes.
 
 `leads` asks *what did the world say that we recorded differently*; `upstream` asks the dual, *what
 does the world offer that we never recorded at all*. A gap it reports is a candidate, never a debt —

@@ -5,8 +5,17 @@ describe('agents/mcp/tool/outward — the boundary, asked over MCP', () => {
   const tools = buildOutwardTools()
 
   it('offers the outward trinity — measure · involute · act — and nothing else', () => {
-    expect(tools.map((t) => t.name)).toEqual(['erpax.outward.upstream', 'erpax.outward.leads', 'erpax.outward.next'])
-    expect(tools.map((t) => t.role).sort()).toEqual(['act', 'involute', 'measure'])
+    expect(tools.map((t) => t.name)).toEqual(['erpax.outward.upstream', 'erpax.outward.leads', 'erpax.outward.record', 'erpax.outward.next'])
+    expect(tools.map((t) => t.role).sort()).toEqual(['act', 'act', 'involute', 'measure'])
+  })
+
+  it('the measure does not write: recording the harvest is its own act — erpax.family.roles refuted the flag that hid the write', () => {
+    const leads = tools.find((t) => t.name === 'erpax.outward.leads')!
+    const record = tools.find((t) => t.name === 'erpax.outward.record')!
+    expect(leads.role).toBe('measure')
+    expect(record.role).toBe('act')
+    expect(Object.keys(record.parameters)).toEqual([])
+    expect(String(record.description)).toMatch(/a measure that writes is a lie/i)
   })
 
   it('upstream is the involute leg: the boundary asked from the other seat — what Payload publishes that this tree does not hold', () => {
@@ -28,9 +37,9 @@ describe('agents/mcp/tool/outward — the boundary, asked over MCP', () => {
     expect(String(next.description)).toMatch(/not the most important/i)
   })
 
-  it('leads is READ-ONLY unless `write` is asked for — the book is not advanced by a query', () => {
+  it('leads is READ-ONLY — the book is not advanced by a query', () => {
     const leads = tools.find((t) => t.name === 'erpax.outward.leads')!
-    expect(Object.keys(leads.parameters)).toEqual(['write'])
+    expect(Object.keys(leads.parameters)).toEqual([])
     // `next` takes nothing: asking what is next cannot change what is next
     expect(Object.keys(tools.find((t) => t.name === 'erpax.outward.next')!.parameters)).toEqual([])
   })

@@ -135,6 +135,13 @@ refusal). For a hub, a dead export or an atom carried by a dead barrel it is a d
 computed evidence. A lie gets no manifest — the instrument is fixed; nor does a manipulation — a dual
 is wired. Nothing is applied here: apply is the scalpel's door, ring-verified, batch by batch.
 
+**Developed by rotating.** `develop` turns the eight-law rosetta about every theorem lead
+([[quantum]]/coil `rotateAbout`): the lead's atom is the axis, each law a seat with both faces, and
+every seat that sees the lead adds its prescription to the manifest (`seatStep`). The seat count is
+evidence — `corroborated` · `single` · `unseen` (`Coil.seatOf`) — and an unseen lead is named a
+count, not matter: the instrument that counted it is the thing to develop. `rotate: false` asks the
+lead's own law alone.
+
 The roles are declared on the tools and read by the `family` atom beside the [[mcp]] gateway
 (`erpax.family.trinities`), which says which families are trinities and which leg each of the others
 still lacks — the next development of the surface, computed.

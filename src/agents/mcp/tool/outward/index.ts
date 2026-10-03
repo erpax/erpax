@@ -24,6 +24,12 @@ const I18N: Record<string, LocalizedString> = {
     de: 'Was Payload veröffentlicht, gekreuzt mit dem, was erpax hält — Templates, Beispiele und Pakete des offiziellen Repositorys, von GitHub gelistet und jeweils gefragt, ob dieser Baum sie hält. Meldet held · gaps · unaskable und Abdeckung je Art.',
     fr: "Ce que Payload publie, croisé avec ce qu'erpax détient — les templates, exemples et packages du dépôt officiel listés depuis GitHub, chacun interrogé sur sa présence dans cet arbre. Rapporte held · gaps · unaskable et la couverture par type.",
   },
+  record: {
+    en: 'ACT: advance the outward book — harvest every rail once more and WRITE the receipts, so the next `leads` call compares against today. This is the write that `leads` used to carry behind a `write` flag; a measure that writes is a lie about the surface, so it lives here, in the leg that says it writes.',
+    bg: 'ДЕЙСТВИЕ: придвижва външната книга — събира всички релси още веднъж и ЗАПИСВА разписките. Мярка, която пише, е лъжа за повърхността, затова записът живее тук.',
+    de: 'ACT: das äußere Buch fortschreiben — alle Schienen erneut ernten und die Quittungen SCHREIBEN. Eine Messung, die schreibt, ist eine Lüge über die Oberfläche; darum lebt das Schreiben hier.',
+    fr: "ACTE : faire avancer le livre externe — récolter chaque rail une fois de plus et ÉCRIRE les reçus. Une mesure qui écrit est un mensonge sur la surface ; l'écriture vit donc ici.",
+  },
   next: {
     en: 'The single next lead nothing has answered yet — the boundary FUSED to the ask. The leads are the candidate space and `nextAsk` picks the first whose uuid the answered set does not contain, so this is the autonomous "what should I look at" over the outside world. Returns undefined when the boundary is fully covered, which is a real state and not an error. HONEST: it is the first UNCOVERED lead in harvest order, not the most important one — there is no priority model here.',
     bg: 'Единственият следващ водач, на който нищо още не е отговорило — границата, СЛЯТА с въпроса. Водачите са пространството на кандидатите и `nextAsk` избира първия, чийто uuid липсва в отговорените. Връща undefined когато границата е напълно покрита — реално състояние, не грешка. ЧЕСТНО: първият НЕПОКРИТ водач по ред на събиране, не най-важният.',
@@ -40,6 +46,7 @@ export function buildOutwardTools(): ReadonlyArray<ErpaxMcpTool> {
   const tLeads = makeToolI18n('erpax.outward.leads')
   const tNext = makeToolI18n('erpax.outward.next')
   const tUpstream = makeToolI18n('erpax.outward.upstream')
+  const tRecord = makeToolI18n('erpax.outward.record')
   return [
     {
       name: 'erpax.outward.upstream',
@@ -67,24 +74,32 @@ export function buildOutwardTools(): ReadonlyArray<ErpaxMcpTool> {
       name: 'erpax.outward.leads',
       role: 'measure',
       description: tLeads.desc(I18N.leads!),
-      parameters: {
-        write: z.boolean().optional(),
-      },
-      async handler(args) {
+      parameters: {},
+      async handler() {
         const h = await harvestLeads()
         const cov = leadCoverage(h, readAnswered())
-        if (args.write === true) {
-          const { writeHarvest } = await import('@/outward/leads')
-          writeHarvest(h)
-        }
         return json({
           asked: h.rows.length,
           leads: h.leads.map((r) => ({ name: r.name, state: r.state, note: r.note })),
           unreachable: h.unreachable.map((r) => ({ name: r.name, note: r.note })),
           coverage: { covered: cov.covered, outstanding: cov.outstanding, next: cov.next },
           law: 'A MOVED receipt is the world disagreeing with what was last recorded; a FRESH one is a boundary nobody had asked. UNCHANGED is silence and UNREACHABLE is an unanswered question, never evidence of change.',
-          persisted: args.write === true,
+          persisted: false,
         })
+      },
+    },
+    {
+      name: 'erpax.outward.record',
+      role: 'act',
+      description: tRecord.desc(I18N.record!),
+      parameters: {},
+      async handler() {
+        // the write the measure used to carry behind a flag — a measure that writes is a lie about
+        // the surface (erpax.family.roles found exactly this one), so the book is advanced here, as an act
+        const h = await harvestLeads()
+        const { writeHarvest } = await import('@/outward/leads')
+        writeHarvest(h)
+        return json({ asked: h.rows.length, recorded: h.leads.length, persisted: true, law: 'Asking is a measure; recording is an act. The same harvest, written once, by the leg that says it writes.' })
       },
     },
     {
