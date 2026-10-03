@@ -83,7 +83,10 @@ families after the declaration lands. And the act paid for its own anchor rule o
 wrote `role:` after a tool spelled on **one line** inside a `*.test.ts` fixture, landing after the
 closing brace — a parse error the Lint lane caught. A fixture is not a tool (test files are skipped
 in both spellings), and an anchor must be a `name:`-only line (`NAME_LINE`) or the tool is reported
-`unanchored` and never cut.
+`unanchored` and never cut. The TypeScript lane caught the second one: an *expected-tool list* names
+`erpax.spec.getCollection` with no handler, and a `role:` written there is a property its type does
+not have. A tool **handles** — an object that only names one is a descriptor, and the parser now asks
+for the `handler` member before it reads anything else.
 
 ## Why this exists
 

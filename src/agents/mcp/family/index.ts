@@ -70,17 +70,19 @@ export function shapeRoles(cwd: string = process.cwd()): ShapeRole[] {
         const nameProp = n.properties.find(isNameProp)
         const init = nameProp?.initializer
         // only a tool addressed by a plain literal is a tool a reader can find by name — a template is a family of tools, declared at its generator
-        if (nameProp && init && ts.isStringLiteral(init) && /^erpax\.[a-z]+\./.test(init.text)) {
+        // a tool HANDLES: an object that only names a tool (an expected-tool list, a descriptor) is not one,
+        // and the first run wrote `role:` into exactly such a list — the TypeScript lane refused it
+        const handler = n.properties.find((p) => (ts.isMethodDeclaration(p) || ts.isPropertyAssignment(p)) && ts.isIdentifier(p.name) && p.name.text === 'handler')
+        if (nameProp && init && handler && ts.isStringLiteral(init) && /^erpax\.[a-z]+\./.test(init.text)) {
           const roleProp = n.properties.find((p): p is ts.PropertyAssignment => ts.isPropertyAssignment(p) && ts.isIdentifier(p.name) && p.name.text === 'role')
           const declared = roleProp && ts.isStringLiteral(roleProp.initializer) && (LEGS as readonly string[]).includes(roleProp.initializer.text) ? (roleProp.initializer.text as ToolRole) : null
-          const handler = n.properties.find((p) => (ts.isMethodDeclaration(p) || ts.isPropertyAssignment(p)) && ts.isIdentifier(p.name) && p.name.text === 'handler')
           let writes = false
           const scan = (m: ts.Node): void => {
             if (ts.isCallExpression(m) && ts.isPropertyAccessExpression(m.expression) && WRITE_CALLS.has(m.expression.name.text)) writes = true
             if (ts.isCallExpression(m) && ts.isIdentifier(m.expression) && WRITE_CALLS.has(m.expression.text)) writes = true
             if (!writes) ts.forEachChild(m, scan)
           }
-          if (handler) scan(handler)
+          scan(handler)
           const shape = writes ? 'act' : 'measure'
           out.push({
             name: init.text,

@@ -144,6 +144,7 @@ describe('agents/mcp/family — the anchor must be the name line alone', () => {
       const dir = join(root, 'src', 'agents', 'mcp', 'tool', 'y')
       mkdirSync(dir, { recursive: true })
       writeFileSync(join(dir, 'index.ts'), "export const tools = [{ name: 'erpax.y.oneline', description: 'd', parameters: {}, async handler() { return { content: [] } } }]\n")
+      writeFileSync(join(dir, 'expected.ts'), "export const expected = [\n  {\n    name: 'erpax.y.expected',\n    description: 'a name a rebuild expects — no handler, so not a tool',\n  },\n]\n")
       writeFileSync(join(dir, 'client.test.ts'), "export const fixtures = [\n  {\n    name: 'erpax.y.fixture',\n    description: 'd',\n  },\n]\n")
       clearCache()
       const rows = shapeRoles(root)

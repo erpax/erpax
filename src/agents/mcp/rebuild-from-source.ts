@@ -86,7 +86,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
   if (corpus.collections.length > 0) {
     expected.push({
       name: 'erpax.spec.getCollection',
-      role: 'measure',
       description: 'JSDoc-as-spec — return parsed CollectionSpec for a collection slug.',
       area: 'spec',
       originHint: 'platform-meta',
@@ -94,7 +93,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
     })
     expected.push({
       name: 'erpax.spec.getChainRegistry',
-      role: 'measure',
       description: 'Return BUSINESS_CHAINS registry — every chain id + steps.',
       area: 'spec',
       originHint: 'platform-meta',
@@ -108,7 +106,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
   if (corpus.collections.some((c) => c.standards.length > 0)) {
     expected.push({
       name: 'erpax.standards.classify',
-      role: 'measure',
       description: 'Classify a standards body into one of the 7 standard families.',
       area: 'standards',
       originHint: 'platform-meta',
@@ -122,7 +119,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
   if (hasChainSteps) {
     expected.push({
       name: 'erpax.chain.runFull',
-      role: 'measure',
       description: 'Drive a BUSINESS_CHAIN end-to-end through the AgentRuntime dispatcher.',
       area: 'chain',
       originHint: 'platform-meta',
@@ -130,7 +126,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
     })
     expected.push({
       name: 'erpax.chain.listSteps',
-      role: 'measure',
       description: 'List the typed steps of a single BUSINESS_CHAIN by id.',
       area: 'chain',
       originHint: 'platform-meta',
@@ -144,7 +139,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
   if (hasEvents) {
     expected.push({
       name: 'erpax.blocks.list',
-      role: 'measure',
       description: 'Per user "i realize the mcp agents are like the bloocks in shadcn" — return the typed agent-block catalog.',
       area: 'blocks',
       originHint: 'platform-meta',
@@ -152,7 +146,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
     })
     expected.push({
       name: 'erpax.blocks.compose',
-      role: 'measure',
       description: 'Compose two agent blocks; verify Conservation Law 32 type-safe boundary (W3C Web Components composition).',
       area: 'blocks',
       originHint: 'platform-meta',
@@ -165,7 +158,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
   if (corpus.collections.some((c) => c.invariants.length > 0)) {
     expected.push({
       name: 'erpax.platform.readiness',
-      role: 'measure',
       description: 'Conservation Law 1 (spec coverage) — single survey endpoint with counts of every primitive + readyToBuild capability matrix + full tool catalog (W3C JSON-LD 1.1, MCP 0.6).',
       area: 'platform',
       originHint: 'platform-meta',
@@ -173,7 +165,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
     })
     expected.push({
       name: 'erpax.platform.standardization',
-      role: 'measure',
       description: 'Conservation Law 38 (slice XXXXXX) — audit every tool against naming convention, canonical area, standards citation (MCP 0.6 naming).',
       area: 'platform',
       originHint: 'platform-meta',
@@ -185,7 +176,6 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
   if (corpus.collections.some((c) => /tamper|integrity|content.uuid/i.test(c.description))) {
     expected.push({
       name: 'erpax.integrity.verifyObject',
-      role: 'measure',
       description: 'Conservation Law 8 (RRRRR) — recompute content uuid for one row; report match/mismatch per RFC 9562 §5.8 + RFC 8785.',
       area: 'integrity',
       originHint: 'platform-meta',

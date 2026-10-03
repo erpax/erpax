@@ -234,7 +234,7 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
         const { claimBalance } = await import('@/rules/slack')
         const before = claimBalance(process.cwd())
         if (args.apply !== true) {
-          return json({ applied: false, under: before.under, over: before.over, exact: before.exact.length, law: 'An under-claim is an over-claim involuted: a ceiling above its live value is ground the corpus may quietly lose. The act is the down-only emitter — apply closes every under-claim and can never raise a ceiling.' })
+          return json({ applied: false, under: before.under, over: before.over, exact: before.exact, law: 'An under-claim is an over-claim involuted: a ceiling above its live value is ground the corpus may quietly lose. The act is the down-only emitter — apply closes every under-claim and can never raise a ceiling.' })
         }
         const { emitRatchet } = await import('@/law/folder/emit-ratchet')
         emitRatchet(process.cwd())
