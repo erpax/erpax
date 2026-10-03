@@ -9,6 +9,7 @@
  * @see ../../../self/sufficient — ../i18n.ts makeToolI18n + registerToolI18n
  */
 import { z } from 'zod'
+import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { internalLeads, leadCross, selfSufficientNext, type InternalSources } from '@/self/sufficient'
 import { involuteLeads, tagCounts, type Dual, type LeadTag, type TaggedLead } from '@/self/involute'
@@ -72,23 +73,25 @@ export interface DevelopEvidence {
 }
 
 /**
- * What each seat of the rosetta prescribes when it sees a lead that another law raised — DECLARED
- * in the open, one line per law, so the fused manifest is the union of what every seeing law has
- * learned to do and not a guess from the lead's own source alone.
+ * What a seat prescribes is its own law's sentence — the `**Law — …**` line of the law's SKILL, read
+ * from the tree rather than restated here (a copy of an answer goes stale; [[rules]]/drift).
  */
-export function seatStep(law: string): string | undefined {
-  return SEAT_STEPS[law]
-}
-
-const SEAT_STEPS: Readonly<Record<string, string>> = {
-  copy: 'a body here is byte-identical to one elsewhere: fold onto the address the import graph already points at, and read what each body closes over before the cut',
-  cycle: 'a file here sits in an import tangle: cut the edge that bites (fatalCycleUses), a leaf child of the exporter, never a reorder',
-  concentration: 'this is a hub: nest the pure private statics into one-word children with their own tests; the hub keeps its face',
-  mirror: 'a test here restates its own literal: point the assertion at the filesystem or a computed value so it can fail',
-  unfolded: 'an export here has at most one caller: inline it, drop it, or make it reused — a public @erpax/* face is the exception a human names',
-  sanitize: 'a sanitisation shape lives here: fold it onto the one address (stripTags · writeNested · jsString) instead of a local pass',
-  unreached: 'no door reaches this atom: wire it (MCP tool, CLI, deployed import) or drop it — a lexical walk cannot decide which',
-  'accounting-wave': 'the accounting wave charges a gap under this path: the leaf pays and the ancestor chain pays itself',
+export function seatStep(law: string, cwd: string = process.cwd()): string | undefined {
+  const atom = law === 'accounting-wave' ? 'accounting/gaps' : `rules/${law}`
+  let text: string
+  try {
+    text = readFileSync(join(cwd, 'src', atom, 'SKILL.md'), 'utf8')
+  } catch {
+    return undefined
+  }
+  const at = text.indexOf('**Law — ')
+  if (at < 0) return undefined
+  const end = text.indexOf('**', at + 8)
+  return text
+    .slice(at + 8, end < 0 ? undefined : end)
+    .replace(/^\[\[law\]\]:\s*/, '')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 export interface Development {
@@ -124,7 +127,7 @@ const leafOps = (edge: TangleEdge, word: string): ScalpelOp => ({
  * - an unreached atom with a dead referrer: the referrer's barrel is the address, not the atom.
  */
 export function developManifest(leads: readonly TaggedLead[], ev: DevelopEvidence, cwd: string = process.cwd()): Development[] {
-  return leads.map((l) => rotated(develop(l, ev, cwd), l, ev.rotations?.get(l.target)))
+  return leads.map((l) => rotated(develop(l, ev, cwd), l, ev.rotations?.get(l.target), cwd))
 }
 
 /**
@@ -133,7 +136,7 @@ export function developManifest(leads: readonly TaggedLead[], ev: DevelopEvidenc
  * single (its own law alone), unseen (no law holds it as matter; the lead is a count). The lead's own
  * law is not repeated: its step is the manifest above.
  */
-function rotated(d: Development, l: TaggedLead, rot: Rotation | undefined): Development {
+function rotated(d: Development, l: TaggedLead, rot: Rotation | undefined, cwd: string): Development {
   if (!rot) return d
   const own = l.source.replace(/^law:/, '')
   const dependent = dependentSeats(own)
@@ -143,7 +146,7 @@ function rotated(d: Development, l: TaggedLead, rot: Rotation | undefined): Deve
   const seat = seatOf(independent.length)
   const steps = [
     ...d.steps,
-    ...others.map((p) => `from the ${p.law} seat (${p.seen} of ${rot.files} file(s), ${(p.backward * 100).toFixed(1)}% of its population${dependent.has(p.law) ? '; a dependent seat — it sees this lead because the other law does' : ''}): ${seatStep(p.law) ?? 'no prescription declared for this law'}`),
+    ...others.map((p) => `from the ${p.law} seat (${p.seen} of ${rot.files} file(s), ${(p.backward * 100).toFixed(1)}% of its population${dependent.has(p.law) ? '; a dependent seat — it sees this lead because the other law does' : ''}): ${seatStep(p.law, cwd) ?? 'no prescription declared for this law'}`),
     ...(seat === 'unseen' ? ['no law of the rosetta holds this target as files — it is a count, not matter; develop the instrument that counted it before the target'] : []),
   ]
   return { ...d, steps, evidence: { ...d.evidence, seats: rot.seats, independent, seat, files: rot.files } }
@@ -165,7 +168,6 @@ const DEPENDENT_SEATS: Readonly<Record<string, ReadonlySet<string>>> = {
 }
 
 function develop(l: TaggedLead, ev: DevelopEvidence, cwd: string): Development {
-  return ((): Development => {
     const lead = { source: l.source, target: l.target, tag: l.tag, intent: l.intent }
     if (l.tag === 'lie') return { lead, kind: 'none', ops: [], plan: null, steps: [`fix the instrument that told it (${l.instrument ?? 'unknown'}), never the target`], evidence: {} }
     if (l.tag === 'manipulation') return { lead, kind: 'none', ops: [], plan: null, steps: ['wire a dual instrument for this source before acting on its count'], evidence: {} }
@@ -219,7 +221,6 @@ function develop(l: TaggedLead, ev: DevelopEvidence, cwd: string): Development {
       return { lead, kind: 'decision', ops: [], plan: null, steps: ['no door reaches it and nothing refers to it: wire it (MCP tool, CLI, deployed import) or drop it — a lexical walk cannot decide which'], evidence: {} }
     }
     return { lead, kind: 'decision', ops: [], plan: null, steps: ['holds from both seats; no computed cut exists for this class yet — the act leg names that rather than guessing'], evidence: {} }
-  })()
 }
 
 /** What the live scans hand the duals — every field optional, because every source is asked for. */

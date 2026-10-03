@@ -212,14 +212,14 @@ describe('developManifest — the rosetta turned about each lead', () => {
 
   it('every other seat that sees the lead adds its prescription; the lead\'s own law is not repeated; the seat is carried as evidence', () => {
     const rotations = new Map([['payable', rotation('payable', { unreached: 1, unfolded: 4, cycle: 2 }, 5)]])
-    const [d] = developManifest([theorem('unreached', 'payable')], { rotations }, '/nowhere')
+    const [d] = developManifest([theorem('unreached', 'payable')], { rotations }, process.cwd())
     expect(d!.evidence.seat).toBe('corroborated')
     expect(d!.evidence.seats).toEqual(['unreached', 'unfolded', 'cycle'])
     const text = d!.steps.join('\n')
     expect(text).toContain('from the unfolded seat (4 of 5 file(s), 40.0% of its population)')
     expect(text).toContain('from the cycle seat')
     expect(text).not.toContain('from the unreached seat') // its own law — the manifest above already is its step
-    expect(text).toContain('inline it, drop it, or make it reused')
+    expect(text).toContain('inline it, delete it, or make it reused') // the unfolded law's own sentence, read from its SKILL
   })
 
   it('a lead no law holds as files is named a count, not matter; a lead with no rotation is unchanged', () => {

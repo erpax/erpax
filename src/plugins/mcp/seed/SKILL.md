@@ -1,7 +1,7 @@
 ---
-name: tools
-description: "Use when an agent must reach an erpax.<area>.<leg> tool THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory."
-atomPath: "plugins/mcp/tools"
+name: seed
+description: "Use when shaping what the MCP gateway serves — the Worker-safe collection seed (gateway auth atoms, ERPAX_MCP_SEED/EXTRA/INCLUDE_CMS) and the erpax.<area>.<leg> families reached THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory."
+atomPath: "plugins/mcp/seed"
 coordinate: "plugins/mcp/tools · 7/descent · 1a1e34bb"
 contentUuid: "6efab95a-64fa-57df-9d9a-24046c86aa80"
 diamondUuid: "c9e02abb-6e6f-84a2-bc8e-f829c95fe7ac"
@@ -32,7 +32,7 @@ signatures:
       stageUuid: "905955e6-6ca4-8cdb-8510-d120fc2400e0"
 version: 2
 ---
-# plugins/mcp/tools — the families handed to the gateway, not built beside it
+# plugins/mcp/seed — the gateway surface, derived not listed: the collection seed and the families handed through the plugin door
 
 The question that produced this atom was *why still bypassing MCP?* — and the measured answer was
 that the MCP had nothing to bypass **to**. `tools/list` on the live gateway returned **844** tools,
