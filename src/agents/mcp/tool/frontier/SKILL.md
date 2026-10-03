@@ -133,7 +133,22 @@ claim one instrument had made and nothing had cross-examined.
 So every lead is now **involuted** before it is ranked ([[self]]/involute): the same claim asked from the
 dual seat. `unreached` is asked backward through `referrersOf` — who imports or names the atom from
 outside the charged set; a red `guardian` is asked for its **members** — the law's population or the
-unreached list for that axis; a `cross` is asked for its **lift**. The answer tags the lead
+unreached list for that axis; a `cross` is asked for its **lift**. Two red counts that named no member
+got a real cross instead of a listing of themselves: **`accounting-wave` ⊗ `unreached`** — a gap path is
+explained when an unreached atom lies at or under it, which is the wave's own claim that it is the
+unreached cascade; and **`bypass-math` ⊗ slack** — the emitted ratchet's complaint about an axis agrees
+with the gate's own over/under balance ([[rules]]/slack) or is refuted by it. `frontierDuals` builds all
+of them from evidence and is pure, so each formula is planted and proved in the test without a scan.
+
+The dual caught the instrument three times on its first live run. Two `unreached` leads were refuted
+by referrers whose parents pass through the shipped or vocabulary-word doors — doors that, unlike the
+deployed one, never propagated what their barrels import (66 → 60 with what they carried, the seventh
+correction of that census). Two more had referrers that were themselves **dead** — `dashboard`'s barrel
+imports `dashboard/nav` and nothing imports the barrel — so a referrer now carries a `live` flag read
+from the forward walk's own file set, and a dead one is reported as `deadReferrers` rather than counted as a
+refutation. And two red counts, `alphanumeric-name 291 > 290` and `stray-ts 852 > 851`, were the probe
+file that ran the measurement, sitting at `src/` root: an instrument measuring itself. Probes run from
+outside the tree now. The answer tags the lead
 `theorem` (the dual agrees), `lie` (the dual refutes — fix the instrument, never the atom it accused)
 or `manipulation` (no dual could answer — one witness, speaking for itself), and the codomain is
 total: `Involute.every_lead_is_tagged` in `src/verify/lean/Involute.lean`.

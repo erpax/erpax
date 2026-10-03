@@ -35,6 +35,77 @@ const I18N: Record<string, LocalizedString> = {
 
 const TAGS = ['theorem', 'lie', 'manipulation'] as const
 
+/** What the live scans hand the duals — every field optional, because every source is asked for. */
+export interface DualEvidence {
+  /** Charged atoms (`unreached`). */
+  readonly unreached?: readonly string[]
+  /** Charged atoms a file or path string OUTSIDE the charged set reaches (`referrersOf`). */
+  readonly referred?: ReadonlySet<string>
+  /** Law → number of atom-addressed members its population names. */
+  readonly populations?: ReadonlyMap<string, number>
+  /** `bypass-math` violations by the axis each names (`artifact` for a hand-maintained file). */
+  readonly bypass?: readonly { readonly axis: string }[]
+  /** Axes the slack law reports over or under their ceiling — the ratchet's own claim balance. */
+  readonly moved?: ReadonlySet<string>
+  /** `accounting-wave` gap paths, atom-addressed. */
+  readonly gaps?: readonly string[]
+  /** Undrawn-cross label → lift. */
+  readonly lifts?: ReadonlyMap<string, number>
+}
+
+const explainedBy = (gap: string, unreached: readonly string[]): boolean =>
+  unreached.some((u) => u === gap || u.startsWith(`${gap}/`))
+
+/**
+ * The duals, built from evidence — pure, so the cross formulas are testable without a scan.
+ *
+ * - `unreached` ⊗ referrers: a charged atom something outside the charged set reaches is refuted.
+ * - `guardian` ⊗ members: a red axis whose law names addressable members holds; a red count whose law
+ *   names none is refuted; an axis with no population wired is silent — a manipulation, however red.
+ *   Two counts get a real cross instead of a listing of themselves: `accounting-wave` ⊗ `unreached`
+ *   (a gap path is EXPLAINED when an unreached atom lies at or under it — the wave's own claim that it
+ *   is the unreached cascade), and `bypass-math` ⊗ slack (the emitted ratchet's complaint about an axis
+ *   agrees with the gate's own over/under balance, or it does not).
+ * - `law:<name>` ⊗ population: each member a law flags holds, except `law:accounting-wave`, which is
+ *   asked the explanation cross per path and is silent when `unreached` was not scanned.
+ * - `cross` ⊗ lift: above 1 the two laws agree beyond chance; at or below 1 the "gap" is the base rate.
+ */
+export function frontierDuals(ev: DualEvidence): Dual[] {
+  const duals: Dual[] = []
+  const members = new Map<string, number>(ev.populations ?? [])
+  if (ev.unreached) members.set('unreached', ev.unreached.length)
+  if (ev.bypass) members.set('bypass-math', ev.bypass.filter((v) => v.axis === 'artifact' || (ev.moved?.has(v.axis) ?? false)).length)
+  if (ev.gaps && ev.unreached) {
+    const u = ev.unreached
+    members.set('accounting-wave', ev.gaps.filter((g) => explainedBy(g, u)).length)
+  }
+  duals.push({
+    source: 'guardian',
+    instrument: 'members',
+    ask: (l) => (members.has(l.target) ? ((members.get(l.target) ?? 0) > 0 ? 'agrees' : 'refutes') : 'silent'),
+  })
+  if (ev.referred) {
+    const refuted = ev.referred
+    duals.push({ source: 'unreached', instrument: 'referrersOf', ask: (l) => (refuted.has(l.target) ? 'refutes' : 'agrees') })
+  }
+  if (ev.populations) {
+    const u = ev.unreached
+    duals.push({
+      source: 'law:',
+      instrument: 'population',
+      ask: (l) => {
+        if (l.source !== 'law:accounting-wave') return 'agrees'
+        return u ? (explainedBy(l.target, u) ? 'agrees' : 'refutes') : 'silent'
+      },
+    })
+  }
+  if (ev.lifts) {
+    const lifts = ev.lifts
+    duals.push({ source: 'cross', instrument: 'lift', ask: (l) => (lifts.has(l.target) ? ((lifts.get(l.target) ?? 0) > 1 ? 'agrees' : 'refutes') : 'silent') })
+  }
+  return duals
+}
+
 for (const [k, v] of Object.entries(I18N)) {
   registerToolI18n(`erpax.frontier.${k}`, v)
 }
@@ -46,13 +117,17 @@ const SOURCES = ['guardians', 'populations', 'unreached', 'crosses', 'boundary']
  * that throws contributes NOTHING rather than failing the whole answer, because a missing
  * measurement is an unasked question, not a reason to refuse the ones that did answer.
  */
-async function liveSources(want: ReadonlySet<string>): Promise<{ src: InternalSources; duals: Dual[] }> {
+/** An unreached lead a dead barrel imports: the lead holds, and the barrel is where to act. */
+interface Carried {
+  readonly target: string
+  readonly by: string
+}
+
+async function liveSources(want: ReadonlySet<string>): Promise<{ src: InternalSources; duals: Dual[]; carried: Carried[] }> {
   const src: Record<string, unknown> = {}
-  const duals: Dual[] = []
-  // The members a red axis can be asked about from the other seat: a law's violating atoms, or the
-  // unreached list for that axis. A count alone names nothing, so an axis with no entry here is
-  // silent under involution — a manipulation, however loudly it is red.
-  const members = new Map<string, number>()
+  const ev: { -readonly [K in keyof DualEvidence]: DualEvidence[K] } = {}
+  const carried: Carried[] = []
+  const cwd = process.cwd()
   // `crosses` and `populations` are the SAME five scans read two ways — the crossing of the laws and
   // their members. Asking for both must not pay for them twice.
   let laws: Promise<ReadonlyMap<string, ReadonlySet<string>>> | undefined
@@ -60,28 +135,36 @@ async function liveSources(want: ReadonlySet<string>): Promise<{ src: InternalSo
     (laws ??= import('@/agents/mcp/tool/novelty').then((m) => m.lawPopulations()))
   if (want.has('guardians')) {
     const { assertRulesHold } = await import('@/rules')
-    const g = assertRulesHold(process.cwd()).guardians ?? []
+    const g = assertRulesHold(cwd).guardians ?? []
     src.guardians = () => g.map((x) => ({ axis: x.axis, violations: x.violations, baseline: x.baseline, ok: x.ok }))
-    duals.push({
-      source: 'guardian',
-      instrument: 'members',
-      ask: (l) => (members.has(l.target) ? ((members.get(l.target) ?? 0) > 0 ? 'agrees' : 'refutes') : 'silent'),
-    })
+    // bypass-math names the axis each violation is about; the slack law is the ratchet's own seat on
+    // the same axes. Both are read from the gate's cache, so the cross costs no second scan.
+    const { bypassMathViolations } = await import('@/law/folder/ratchet/compute')
+    const bypass = bypassMathViolations(cwd)
+    ev.bypass = bypass.map((v) => ({ axis: v.axis }))
+    if (bypass.length > 0) {
+      const { claimBalance } = await import('@/rules/slack')
+      const cb = claimBalance(cwd)
+      ev.moved = new Set([...cb.over, ...cb.under].map((x) => x.axis))
+    }
   }
   if (want.has('unreached')) {
     const { unreachedAtoms, referrersOf } = await import('@/rules/unreached')
-    const a = unreachedAtoms(process.cwd())
+    const a = unreachedAtoms(cwd)
     // The field is `atomPath`. Reading `.atom` gave undefined, so all 69 stringified to
     // "[object Object]" and the cross collapsed them to ONE target — a wrong adapter answers, it
     // does not error, and only the implausible count (1 where 69 was measured) showed it.
     const atoms = a.map((x) => (typeof x === 'string' ? x : ((x as { atomPath: string }).atomPath)))
     src.unreached = () => atoms
-    members.set('unreached', atoms.length)
-    // The involution: the census asked from the referrer's seat. A charged atom something outside
-    // the charged set imports or names is a lead the dual refutes — a door the forward walk did not
-    // open — and it is tagged a lie rather than ranked as dead weight.
-    const refuted = new Set(referrersOf(process.cwd(), atoms).map((r) => r.atomPath))
-    duals.push({ source: 'unreached', instrument: 'referrersOf', ask: (l) => (refuted.has(l.target) ? 'refutes' : 'agrees') })
+    ev.unreached = atoms
+    // The involution: the census asked from the referrer's seat. A charged atom a LIVE file outside
+    // the charged set imports, or a path string names, is a lead the dual refutes — a door the
+    // forward walk did not open — and it is tagged a lie rather than ranked as dead weight. A DEAD
+    // referrer (a parent's barrel nothing imports) carries the lead instead; it is reported, not
+    // counted against the claim.
+    const refs = referrersOf(cwd, atoms)
+    ev.referred = new Set(refs.filter((r) => r.live).map((r) => r.atomPath))
+    carried.push(...refs.filter((r) => !r.live).map((r) => ({ target: r.atomPath, by: r.by })))
   }
   if (want.has('crosses')) {
     // `crosses` was DECLARED in SOURCES and wired to nothing — a source that cannot fire, which is
@@ -101,12 +184,10 @@ async function liveSources(want: ReadonlySet<string>): Promise<{ src: InternalSo
     // The involution of "a gap two laws agree on" is the lift: shared files beyond what independence
     // predicts. At or below 1 the agreement IS the base rate of two large populations, and the lead
     // claiming a gap is refuted by the same intersection that produced it.
-    const lifts = new Map(rows.map((i) => [label(i), i.lift]))
-    duals.push({ source: 'cross', instrument: 'lift', ask: (l) => (lifts.has(l.target) ? ((lifts.get(l.target) ?? 0) > 1 ? 'agrees' : 'refutes') : 'silent') })
+    ev.lifts = new Map(rows.map((i) => [label(i), i.lift]))
   }
   if (want.has('populations')) {
     const { atomOfFile } = await import('@/mesh')
-    const cwd = process.cwd()
     const sets = await measuredLaws()
     // The ATOM, not the file: a law's population is file-addressed and `unreached` is atom-addressed,
     // so without this normalisation the two can only ever disagree. One address or no cross.
@@ -114,11 +195,16 @@ async function liveSources(want: ReadonlySet<string>): Promise<{ src: InternalSo
       law,
       members: [...new Set([...files].map((f) => atomOfFile(f.startsWith('/') ? f : join(cwd, f), cwd)))].sort(),
     }))
+    // accounting-wave is a count of GAP PATHS, and gap paths are atom-addressed — so it is a
+    // population too, and each path meets `unreached` at one address. The wave's own claim is that it
+    // is the unreached cascade (a charged leaf charges every folder above it); the cross tests it.
+    const { waveAccountingGapViolations } = await import('@/accounting/gaps')
+    const wave = waveAccountingGapViolations(cwd)
+    const gaps = [...new Set(wave.verdict.waves.flatMap((w) => [...w.paths]))].sort()
+    rows.push({ law: 'accounting-wave', members: gaps })
+    ev.gaps = gaps
     src.populations = () => rows
-    for (const r of rows) members.set(r.law, r.members.length)
-    // A `law:<name>` lead names an atom the law's own population flagged — the population IS the
-    // dual seat for the guardian count above, and it corroborates each member it emits.
-    duals.push({ source: 'law:', instrument: 'population', ask: () => 'agrees' })
+    ev.populations = new Map(rows.filter((r) => r.law !== 'accounting-wave').map((r) => [r.law, r.members.length]))
   }
   if (want.has('boundary')) {
     const { harvestLeads } = await import('@/outward/leads')
@@ -127,7 +213,7 @@ async function liveSources(want: ReadonlySet<string>): Promise<{ src: InternalSo
     // No dual is wired: one failed fetch is one witness. The right dual is a second route (the
     // uuidna fanout over its host list), which is external — named in the SKILL, not imitated here.
   }
-  return { src: src as InternalSources, duals }
+  return { src: src as InternalSources, duals: frontierDuals(ev), carried }
 }
 
 export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
@@ -144,7 +230,7 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
       },
       async handler(args) {
         const want = new Set((args.sources as string[] | undefined) ?? ['guardians'])
-        const { src, duals } = await liveSources(want)
+        const { src, duals, carried } = await liveSources(want)
         const leads = internalLeads(src)
         const tagged = involuteLeads(leads, duals)
         const tagOfIntent = new Map(tagged.map((t) => [t.intent, t.tag]))
@@ -164,6 +250,8 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
           tags: tagCounts(tagged),
           lies: tagged.filter((t) => t.tag === 'lie').map(({ source, target, instrument, formula }) => ({ source, target, instrument, formula })),
           manipulations: bySource('manipulation'),
+          // `carried` below is leadCross's (a source inside another); this is the referrer kind.
+          deadReferrers: carried,
           agreement: cross.agreement,
           corroborated: cross.corroborated,
           carried: cross.carried,
@@ -185,7 +273,7 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
       },
       async handler(args) {
         const want = new Set((args.sources as string[] | undefined) ?? ['guardians'])
-        const { src, duals } = await liveSources(want)
+        const { src, duals, carried } = await liveSources(want)
         const tagged = involuteLeads(internalLeads(src), duals)
         const only = args.tag as LeadTag | undefined
         const rows = only ? tagged.filter((t) => t.tag === only) : tagged
@@ -193,6 +281,7 @@ export function buildFrontierTools(): ReadonlyArray<ErpaxMcpTool> {
           asked: [...want].sort(),
           tags: tagCounts(tagged),
           duals: duals.map((d) => ({ source: d.source, instrument: d.instrument })),
+          deadReferrers: carried,
           leads: rows.slice(0, (args.limit as number | undefined) ?? 50).map(({ source, scope, target, tag, instrument, formula }) => ({ source, scope, target, tag, instrument, formula })),
           law: 'theorem · lie · manipulation is the whole codomain — no lead remains untagged (Involute.every_lead_is_tagged, src/verify/lean/Involute.lean).',
         })

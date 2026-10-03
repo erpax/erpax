@@ -350,9 +350,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // shipped in a package, a vocabulary word, or NAMED by a Payload component path string. The
     // second was missing once (78 -> 64: the face was checked per-atom and never propagated); the
     // sixth was missing until 2026-10-03, when the three admin components the strings reach were
-    // the top-ranked frontier leads (69 -> 66). A candidate list, never a purge list; `referrersOf`
-    // is its involution and tags what a forward walk still gets wrong.
-    guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 64 }),
+    // the top-ranked frontier leads (69 -> 66), and the same day its involution `referrersOf` found
+    // the shipped/word/name doors had never propagated either (66 -> 60). A candidate list, never a
+    // purge list; the involution tags what a forward walk still gets wrong.
+    guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 60 }),
     // copy — one body at two addresses ([[rules]]/copy). Content-addressed, so same bytes ⇒ same
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
     // written, which is the argument for a gate over a stated law. Ratchets from 44, then 7 → 3:

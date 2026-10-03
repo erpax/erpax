@@ -35,10 +35,22 @@ and checks the TS on all four cases, as every decision rule here does.
 
 | lead source | dual instrument | agrees | refutes |
 | --- | --- | --- | --- |
-| `unreached` | `referrersOf` in [[rules]]/unreached — who imports or names the atom from outside the charged set | nobody | a referrer exists: a door the forward walk did not open |
+| `unreached` | `referrersOf` in [[rules]]/unreached — who imports or names the atom from outside the charged set, and whether that referrer is itself reached | nobody live (a dead referrer *carries* the lead: the barrel is where to act) | a live referrer exists: a door the forward walk did not open |
 | `guardian` (a red axis) | the axis's **members** — the law's population, or the unreached list for that axis | members are addressable | a red count whose law names no member |
+| `guardian` `accounting-wave` | **⊗ unreached** — a gap path explained by an unreached atom at or under it | ≥ 1 path explained | 258 paths and none explained: the wave lied about its cause |
+| `guardian` `bypass-math` | **⊗ slack** ([[rules]]/slack) — the ratchet's own over/under on the axis named | slack moved the same axis (or the member is a hand-maintained file) | slack calls the axis exact |
+| `law:accounting-wave` (a gap path) | the same explanation cross, per path | an unreached atom at or under it | no unreached atom under it |
 | `cross` | `crossIntersections` lift ([[conjecture]]) | lift > 1 — agreement beats chance | lift ≤ 1 — the "gap two laws agree on" is the base rate |
 | `boundary` | — | | |
+
+Measured live on 2026-10-03 over `guardians · populations · unreached · crosses`: **683 leads — 675
+theorem · 4 lie · 4 manipulation**. Two of the lies were `unreached` atoms imported by a parent passing
+through a door that did not propagate (fixed in the census: 66 → 60 with what those parents carried);
+the other two had referrers nothing reaches — a dead barrel carries a lead rather than refuting it, which
+is why a referrer now says whether it is live. Two of the four manipulations
+were the probe file that ran the scan, sitting at `src/` root and counted by `alphanumeric-name` and
+`stray-ts` — the instrument measuring itself; the other two were `bypass-math` and `accounting-wave`
+before their crosses existed.
 
 The boundary row has no dual wired, so every unreachable-host lead is tagged `manipulation` with
 its reason — not because the probe is dishonest, but because one failed fetch is one witness. The

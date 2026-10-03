@@ -40,6 +40,12 @@ const PATH_STRING = /^@\/[a-z][a-zA-Z0-9/]*(#\w+)?$/
  * (pinned in the test). The importMap is generated JavaScript and is parsed as such.
  */
 export function nameDoor(cwd: string = process.cwd()): ReadonlySet<string> {
+  // Every file is parsed once per tree state: both censuses, the involution and the live tests ask
+  // this, and un-memoised it pushed the strict census past its test budget.
+  return new Set(memoByFingerprintOnDisk('rules-unreached-name-door', cwd, () => [...nameDoorScan(cwd)].sort()))
+}
+
+function nameDoorScan(cwd: string): ReadonlySet<string> {
   const out = new Set<string>()
   const files: string[] = [...corpusFiles(cwd)]
   const importMap = join(cwd, 'src/app/(payload)/admin/importMap.js')
@@ -78,6 +84,13 @@ export interface Referrer {
   /** The file (repo-relative) or path string that reaches the atom. */
   readonly by: string
   readonly via: 'import' | 'name'
+  /**
+   * Whether the referrer is itself reached by the forward walk. A LIVE referrer refutes the lead: a
+   * running file reaches the atom and the census missed the door. A DEAD one carries it: the parent's
+   * barrel imports the atom and nothing imports the barrel, so the lead holds and its actionable
+   * address is the referrer. A path string is loaded by Payload and is always live.
+   */
+  readonly live: boolean
 }
 
 const under = (rel: string, atom: string): boolean => rel === atom || rel.startsWith(`${atom}/`)
@@ -88,10 +101,16 @@ const isProof = (rel: string): boolean => /(^|\/)(test|[^/]+\.(test|spec))\.tsx?
  *
  * `unreachedAtoms` walks FORWARD from the entries and reports what no walk arrives at. This walks
  * BACKWARD from each charged atom and reports who reaches it: a file outside the charged set that
- * imports it, or a path string that names it. A charged atom WITH a referrer is a lead the involution
- * refutes — a door the forward walk does not open (a shipped barrel, a vocabulary word's import, a
- * component string) — and the frontier tags it a lie instead of ranking it as dead weight. A charged
- * atom with none holds from both seats.
+ * imports it, or a path string that names it. A charged atom with a LIVE referrer is a lead the
+ * involution refutes — a door the forward walk does not open — and the frontier tags it a lie instead
+ * of ranking it as dead weight. A charged atom with none, or with only dead referrers, holds from both
+ * seats.
+ *
+ * Asked live on 2026-10-03 it reported four. Two were refutations — `search/engine` and
+ * `security/header` pass through the shipped/word doors, which never propagated what their barrels
+ * import — and two were CARRIERS: `dashboard`'s barrel imports `dashboard/nav` and nothing imports
+ * the barrel, which the atom-level census cannot see because a descendant file marks the whole atom
+ * reached. That is why liveness is a file-level fact read from the same forward walk.
  *
  * Tests and the atom's own files are not referrers: a test proves the function works, never that
  * anything asks it. `excluded` defaults to the charged set itself, so two unreached atoms importing
@@ -101,6 +120,7 @@ export function referrersOf(
   cwd: string,
   atoms: readonly string[],
   excluded: ReadonlySet<string> = new Set(atoms),
+  live: ReadonlySet<string> = reachedFiles(cwd),
 ): Referrer[] {
   const src = join(cwd, 'src')
   const out: Referrer[] = []
@@ -117,36 +137,52 @@ export function referrersOf(
     if (isProof(rel) || [...excluded].some((x) => under(rel, x))) continue
     const imports = importsOf(f, cwd).map((i) => relative(src, i))
     for (const a of atoms) {
-      if (imports.some((i) => under(i, a))) push({ atomPath: a, by: relative(cwd, f), via: 'import' })
+      if (imports.some((i) => under(i, a))) push({ atomPath: a, by: relative(cwd, f), via: 'import', live: live.has(f) })
     }
   }
   const names = nameDoor(cwd)
-  for (const a of atoms) for (const n of names) if (under(n, a)) push({ atomPath: a, by: `@/${n}`, via: 'name' })
+  for (const a of atoms) for (const n of names) if (under(n, a)) push({ atomPath: a, by: `@/${n}`, via: 'name', live: true })
   return out.sort((x, y) => x.atomPath.localeCompare(y.atomPath) || x.by.localeCompare(y.by))
 }
 
-/** Every atom path reachable by imports from a set of entry files. */
-export function reachedFrom(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
-  const src = join(cwd, 'src')
+/** The forward walk at FILE level: every file an entry reaches (`seen`, roots included) and every file an edge leads to (`viaEdge`). */
+interface FileWalk {
+  readonly seen: ReadonlySet<string>
+  readonly viaEdge: ReadonlySet<string>
+}
+
+function walkImports(entries: readonly string[], cwd: string): FileWalk {
   const roots = entries.map((e) => join(cwd, e)).filter(existsSync)
   const seen = new Set<string>(roots)
+  const viaEdge = new Set<string>()
   const queue = [...roots]
   while (queue.length > 0) {
     const file = queue.shift() as string
     for (const next of importsOf(file, cwd)) {
+      viaEdge.add(next)
       if (seen.has(next)) continue
       seen.add(next)
       queue.push(next)
     }
   }
+  return { seen, viaEdge }
+}
+
+/** The atom paths a set of files lies under — every prefix of each file's path. */
+function atomsUnder(files: ReadonlySet<string>, src: string): ReadonlySet<string> {
   const atoms = new Set<string>()
-  for (const file of seen) {
+  for (const file of files) {
     const rel = relative(src, file)
     if (rel.startsWith('..')) continue
     const parts = rel.split('/')
     for (let i = 1; i < parts.length; i++) atoms.add(parts.slice(0, i).join('/'))
   }
   return atoms
+}
+
+/** Every atom path reachable by imports from a set of entry files. */
+export function reachedFrom(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
+  return atomsUnder(walkImports(entries, cwd).seen, join(cwd, 'src'))
 }
 
 /**
@@ -170,28 +206,7 @@ export function reachedFrom(entries: readonly string[], cwd: string = process.cw
  * invisible, exactly as it is to the looser walk.
  */
 export function reachedByImport(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
-  const src = join(cwd, 'src')
-  const roots = entries.map((e) => join(cwd, e)).filter(existsSync)
-  const seen = new Set<string>(roots)
-  const viaEdge = new Set<string>()
-  const queue = [...roots]
-  while (queue.length > 0) {
-    const file = queue.shift() as string
-    for (const next of importsOf(file, cwd)) {
-      viaEdge.add(next)
-      if (seen.has(next)) continue
-      seen.add(next)
-      queue.push(next)
-    }
-  }
-  const atoms = new Set<string>()
-  for (const file of viaEdge) {
-    const rel = relative(src, file)
-    if (rel.startsWith('..')) continue
-    const parts = rel.split('/')
-    for (let i = 1; i < parts.length; i++) atoms.add(parts.slice(0, i).join('/'))
-  }
-  return atoms
+  return atomsUnder(walkImports(entries, cwd).viaEdge, join(cwd, 'src'))
 }
 
 /**
@@ -201,14 +216,16 @@ export function reachedByImport(entries: readonly string[], cwd: string = proces
  * number and the ratchet is down-only: restating a ceiling upward is a decision for a person, not
  * a side effect of a fix ([[rules]]/slack). Run it, read the number, then decide.
  */
-export function unreachedStrict(cwd: string = process.cwd()): UnreachedAtom[] {
+interface CodeAtom {
+  readonly dir: string
+  readonly atomPath: string
+  readonly leaf: string
+}
+
+/** Every SKILL-bearing atom with a barrel, walked once — both censuses and the exempt seeds read this. */
+function codeAtoms(cwd: string): CodeAtom[] {
   const src = join(cwd, 'src')
-  const deployed = deploymentDoor(cwd)
-  const reached = reachedByImport([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed)], cwd)
-  const shipped = shippedAtoms(cwd)
-  const words = schemaCollision(cwd).words
-  const names = nameDoor(cwd)
-  const out: UnreachedAtom[] = []
+  const out: CodeAtom[] = []
   const walk = (dir: string): void => {
     let entries: import('node:fs').Dirent[]
     try {
@@ -222,15 +239,64 @@ export function unreachedStrict(cwd: string = process.cwd()): UnreachedAtom[] {
       const hasCode = existsSync(join(d, 'index.ts')) || existsSync(join(d, 'index.tsx'))
       if (existsSync(join(d, 'SKILL.md')) && hasCode) {
         const atomPath = relative(src, d)
-        const leaf = atomPath.slice(atomPath.lastIndexOf('/') + 1)
-        if (!reached.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf) && !namedBy(atomPath, names)) {
-          out.push({ atomPath, reason: 'nothing imports or names it — the deployment face is its own door, and that door is closed here' })
-        }
+        out.push({ dir: d, atomPath, leaf: atomPath.slice(atomPath.lastIndexOf('/') + 1) })
       }
       walk(d)
     }
   }
   walk(src)
+  return out
+}
+
+/** The doors that exempt an atom WITHOUT walking it — shipped, a vocabulary word, a path string. */
+interface ExemptDoors {
+  readonly shipped: ReadonlySet<string>
+  readonly words: ReadonlySet<string>
+  readonly names: ReadonlySet<string>
+}
+
+const exemptBy = (a: CodeAtom, d: ExemptDoors): boolean =>
+  d.shipped.has(a.atomPath) || d.words.has(a.leaf) || namedBy(a.atomPath, d.names)
+
+/**
+ * The seventh correction, and the first one the INVOLUTION found rather than a reader.
+ *
+ * Shipped, vocabulary-word and name-door atoms are reached — by a package consumer, by the word, by
+ * Payload — and the census exempted each of them and stopped there: what THEIR barrels import was
+ * still charged. `referrersOf` refuted two live leads by exactly that shape (`search/engine` →
+ * `search/engine/optimization`, `security/header` → `security/header/headers`): a parent passing
+ * through a door that did not propagate, a child charged although the parent's own barrel imports
+ * it. The deployed door had this defect at 78 → 64; these three doors had it until 2026-10-03
+ * (66 → 60, six atoms carried through `iso/20022`, `iso/3166/1` and the two parents). An exempt
+ * atom's barrel is a reach seed exactly as a deployed atom's is — and it seeds what it IMPORTS only,
+ * never itself or its ancestors (see `unreachedAtoms`).
+ */
+function exemptEntries(cwd: string, atoms: readonly CodeAtom[], doors: ExemptDoors): string[] {
+  const out: string[] = []
+  for (const a of atoms) {
+    if (!exemptBy(a, doors)) continue
+    for (const n of ['index.ts', 'index.tsx']) {
+      const f = join(a.dir, n)
+      if (existsSync(f)) out.push(relative(cwd, f))
+    }
+  }
+  return out
+}
+
+export function unreachedStrict(cwd: string = process.cwd()): UnreachedAtom[] {
+  const deployed = deploymentDoor(cwd)
+  const atoms = codeAtoms(cwd)
+  const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }
+  const reached = reachedByImport(
+    [...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed), ...exemptEntries(cwd, atoms, doors)],
+    cwd,
+  )
+  const out: UnreachedAtom[] = []
+  for (const a of atoms) {
+    if (!reached.has(a.atomPath) && !exemptBy(a, doors)) {
+      out.push({ atomPath: a.atomPath, reason: 'nothing imports or names it — the deployment face is its own door, and that door is closed here' })
+    }
+  }
   return out.sort((a, b) => a.atomPath.localeCompare(b.atomPath))
 }
 
@@ -366,36 +432,39 @@ function deployedEntries(cwd: string, deployed: (dir: string) => boolean): strin
   return out
 }
 
-export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
-  const src = join(cwd, 'src')
+/**
+ * Every FILE the census's forward walk reaches — the tooling entries, every deployed barrel and every
+ * exempt barrel, and all they import. This is the liveness a referrer is judged by: the atom-level
+ * census marks an atom reached when any descendant file is, so a barrel nothing imports can sit inside
+ * a "reached" atom, and only the file set tells a live referrer from a dead one.
+ */
+export function reachedFiles(cwd: string = process.cwd()): ReadonlySet<string> {
   const deployed = deploymentDoor(cwd)
+  const atoms = codeAtoms(cwd)
+  const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }
+  return walkImports([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed), ...exemptEntries(cwd, atoms, doors)], cwd).seen
+}
+
+export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
+  const deployed = deploymentDoor(cwd)
+  const atoms = codeAtoms(cwd)
+  const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }
   const tooling = reachedFrom([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed)], cwd)
-  const shipped = shippedAtoms(cwd)
-  const words = schemaCollision(cwd).words
-  const names = nameDoor(cwd)
+  // An exempt atom's barrel contributes what it IMPORTS and nothing else. Seeding it through
+  // `reachedFrom` would mark the seed and every ANCESTOR reached — so a vocabulary-word child would
+  // have exempted its whole parent chain (`en/16931`, `ifrs/15`, `versions` read as reached with no
+  // referrer at all on the first run: 50 where the honest count is 60). That is the self-door
+  // `reachedByImport` was written to close.
+  const carried = reachedByImport(exemptEntries(cwd, atoms, doors), cwd)
   const out: UnreachedAtom[] = []
-  const walk = (dir: string): void => {
-    let entries: import('node:fs').Dirent[]
-    try {
-      entries = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      if (!e.isDirectory() || e.name.startsWith('.') || e.name === 'node_modules') continue
-      const p = join(dir, e.name)
-      const hasCode = existsSync(join(p, 'index.ts')) || existsSync(join(p, 'index.tsx'))
-      if (existsSync(join(p, 'SKILL.md')) && hasCode) {
-        const atomPath = relative(src, p)
-        const leaf = atomPath.slice(atomPath.lastIndexOf('/') + 1)
-        if (!deployed(p) && !tooling.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf) && !namedBy(atomPath, names)) {
-          out.push({ atomPath, reason: 'no deployment face · not reached from the gate or CLI · not shipped · not a vocabulary word · not named by a path string' })
-        }
-      }
-      walk(p)
+  for (const a of atoms) {
+    if (!deployed(a.dir) && !tooling.has(a.atomPath) && !carried.has(a.atomPath) && !exemptBy(a, doors)) {
+      out.push({
+        atomPath: a.atomPath,
+        reason: 'no deployment face · not reached from the gate, the CLI, a deployed, shipped, word or named atom · not shipped · not a vocabulary word · not named by a path string',
+      })
     }
   }
-  walk(src)
   return out.sort((a, b) => a.atomPath.localeCompare(b.atomPath))
 }
 

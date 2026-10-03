@@ -129,10 +129,25 @@ already pointed at. A comment quoting a path is not a literal and opens nothing;
 importing file, or a path string. The two are duals, not the same instrument re-run — which is why
 `unreachedStrict` is not one: it closes a door on the same forward walk and can only ever agree.
 
-A charged atom with a referrer is a lead the involution **refutes**: a door the forward walk does not
-open (a shipped barrel, a vocabulary word's import, a component string). The frontier tags it a
-`lie` ([[self]]/involute) and the fix is a door in this walk, never a sweep of the atom. A charged
-atom with none holds from both seats, and that is the only kind the queue should rank.
+A charged atom with a **live** referrer is a lead the involution **refutes**: a door the forward walk
+does not open. The frontier tags it a `lie` ([[self]]/involute) and the fix is a door in this walk,
+never a sweep of the atom. Asked live the day it was written, it refuted two — `search/engine` and
+`security/header` pass through the shipped/word doors, which had never propagated what their barrels
+import, exactly as the deployed door once had not. Propagating them released six atoms (66 → 60):
+the two children and four carried through `iso/20022` and `iso/3166/1`.
+
+The other two it reported were not refutations. `dashboard`'s barrel imports `dashboard/nav` and
+**nothing imports the barrel**; the atom-level census had marked `dashboard` reached because a
+descendant file is, so the barrel's death was invisible to it. A referrer therefore carries a `live`
+flag read from the forward walk's own FILE set (`reachedFiles`): a dead referrer does not refute the
+lead, it **carries** it, and names the address where the dead code actually starts. A charged atom
+with no live referrer holds from both seats, and that is the only kind the queue should rank.
+
+Two corrections of the instrument came out of reading its first answers. Seeding exempt barrels
+through the ancestor-marking walk exempted whole parent chains (`en/16931`, `ifrs/15`, `versions`
+read as reached with no referrer at all: 50 where the honest count is 60) — an exempt barrel seeds
+what it imports and nothing else. And the probe that ran the measurement sat at `src/` root, so two
+other axes counted it: the instrument measuring itself.
 
 **Law — [[law]]: an atom of code earns its place by being reachable. Try every door — deployed,
 gated, shipped, a word, or a name — and what is left is code nothing runs. Ask the question from the

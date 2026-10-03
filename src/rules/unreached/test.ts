@@ -65,10 +65,16 @@ describe('rules/unreached — the live corpus', () => {
     for (const p of paths) expect(namedBy(p, names)).toBe(false)
   })
 
-  it('the involution refutes nothing the census names — every live lead holds from the referrer seat too', () => {
+  // The dual asked live: on 2026-10-03 it refuted four leads whose parents passed through a door that
+  // did not propagate. Every door propagates now, so the census and its involution must agree on the
+  // live tree — a refuted live lead here is a door this walk still does not open.
+  it('the involution refutes nothing the census names — no LIVE referrer reaches a charged atom', () => {
     const atoms = live.map((a) => a.atomPath)
-    const refuted = referrersOf(process.cwd(), atoms).filter((r) => r.via === 'name')
-    expect(refuted).toEqual([])
+    const refs = referrersOf(process.cwd(), atoms)
+    expect(refs.filter((r) => r.live)).toEqual([])
+    // Dead referrers are allowed and are the finding: a parent's barrel nothing imports carries the
+    // lead. `dashboard/nav` ← src/dashboard/index.tsx is the live example on 2026-10-03.
+    for (const r of refs) expect(r.via).toBe('import')
   })
 
   it('never names a vocabulary word — its barrel exists only to name the word', () => {
@@ -167,6 +173,28 @@ describe('rules/unreached — a fixture with no packages and no gate', () => {
   })
 })
 
+describe('rules/unreached — an exempt atom is a door, not a wall', () => {
+  // The seventh correction, found by the involution: a SHIPPED atom is reached by its consumers, so
+  // what its barrel imports is reached too. Before this, `carried` was charged while `shipped` passed.
+  it('what a shipped atom imports is reached; an atom nothing shipped reaches is still charged', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+    try {
+      mkdirSync(join(root, 'packages', 'core', 'dist', 'types', 'shipped'), { recursive: true })
+      plant(root, 'shipped', "export { c } from '@/carried'\n")
+      plant(root, 'carried', 'export const c = 1\n')
+      plant(root, 'island', 'export const i = 1\n')
+      const charged = unreachedAtoms(root).map((a) => a.atomPath)
+      expect(charged).not.toContain('shipped')
+      expect(charged).not.toContain('carried')
+      expect(charged).toContain('island')
+      // and from the referrer seat the same fixture refutes nothing the census still charges
+      expect(referrersOf(root, charged)).toEqual([])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+})
+
 describe('referrersOf — the census asked from the referrer seat', () => {
   it('names the file that imports a charged atom from outside the charged set, and the string that names it', () => {
     const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
@@ -176,9 +204,9 @@ describe('referrersOf — the census asked from the referrer seat', () => {
       plant(root, 'plugins/admin', "export const cfg = { Cell: '@/lonely/Cell' }\n")
       plant(root, 'island', 'export const y = 1\n')
       const refs = referrersOf(root, ['lonely', 'island'])
-      expect(refs.map((r) => `${r.atomPath} ← ${r.by} (${r.via})`)).toEqual([
-        'lonely ← @/lonely/Cell (name)',
-        'lonely ← src/shipped/index.ts (import)',
+      expect(refs.map((r) => `${r.atomPath} ← ${r.by} (${r.via}${r.live ? ', live' : ', dead'})`)).toEqual([
+        'lonely ← @/lonely/Cell (name, live)',
+        'lonely ← src/shipped/index.ts (import, dead)',
       ])
     } finally {
       rmSync(root, { recursive: true, force: true })
@@ -193,7 +221,34 @@ describe('referrersOf — the census asked from the referrer seat', () => {
       writeFileSync(join(root, 'src', 'b', 'test.ts'), "import { b } from '@/b'\nexport const t = b\n")
       expect(referrersOf(root, ['a', 'b'])).toEqual([])
       // Narrow the excluded set and the same importer becomes a referrer: the door is the set, not the file.
-      expect(referrersOf(root, ['b'], new Set())).toEqual([{ atomPath: 'b', by: 'src/a/index.ts', via: 'import' }])
+      expect(referrersOf(root, ['b'], new Set())).toEqual([{ atomPath: 'b', by: 'src/a/index.ts', via: 'import', live: false }])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  // Liveness is the forward walk's own file set. A deployed barrel (`cloudflare/…` is a worker face
+  // by path) is live and REFUTES; a barrel nothing reaches is dead and only CARRIES the lead.
+  it('a referrer is live when the forward walk reaches it, dead when it does not', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+    try {
+      plant(root, 'cloudflare/w', "export { l } from '@/leaf'\n")
+      plant(root, 'leaf', 'export const l = 1\n')
+      // `deploymentFaces` judges a fixture atom by NAME against the real corpus's worker-reached set
+      // (`dead` and `parent` carry a face here for that reason alone), so the dead barrel takes a name
+      // the live tree does not use. A pure re-export barrel reads as a face too; it declares a value.
+      plant(root, 'barrel', "import { m } from '@/carried'\nexport const dm = m + 1\n")
+      plant(root, 'carried', 'export const m = 1\n')
+      const refs = referrersOf(root, ['leaf', 'carried'], new Set())
+      expect(refs).toEqual([
+        { atomPath: 'carried', by: 'src/barrel/index.ts', via: 'import', live: false },
+        { atomPath: 'leaf', by: 'src/cloudflare/w/index.ts', via: 'import', live: true },
+      ])
+      // and the census agrees with the liveness: the live-referred atom is reached, the carried one is charged
+      const charged = unreachedAtoms(root).map((a) => a.atomPath)
+      expect(charged).not.toContain('leaf')
+      expect(charged).toContain('carried')
+      expect(charged).toContain('barrel')
     } finally {
       rmSync(root, { recursive: true, force: true })
     }
@@ -221,7 +276,7 @@ describe('unreachedStrict — the census with the self-door shut', () => {
     const loose = unreachedAtoms().length
     const strict = unreachedStrict().length
     expect(strict).toBeGreaterThan(loose)
-  })
+  }, 120_000)
 
   it('names atoms that nothing imports, even though they carry a deployment face', () => {
     // `kyc` was the original instance: minted 2026-09-20 with a face and no importer, which the
