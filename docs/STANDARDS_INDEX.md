@@ -1274,10 +1274,13 @@ src/fiscal/period/index.ts:15: * @standard SOX:2002 Sec. 404 Internal control as
 src/fiscal/period/index.ts:16: * @standard NIST-SP-800-92 Audit logging
 src/fiscal/period/index.ts:8: * @standard IAS-34:2023 Interim Financial Reporting
 src/fiscal/period/index.ts:9: * @standard ISO-8601:2019 Date/Time representation
+src/fiscal/period/resolver/code/index.ts:10: * @standard XBRL period identifiers
+src/fiscal/period/resolver/code/index.ts:9: * @standard SAF-T period coding
 src/fiscal/period/resolver/index.ts:13: * @standard IAS-34:2023 (period structure, quarterly alignment)
 src/fiscal/period/resolver/index.ts:14: * @standard ISO-8601:2019 (week numbering, date arithmetic, leap year)
 src/fiscal/period/resolver/index.ts:15: * @standard ISO-4217:2023 (currency context)
 src/fiscal/period/resolver/index.ts:16: * @standard SAF-T:3.0.2 (regulatory period coding)
+src/fiscal/period/resolver/span/index.ts:9: * @standard ISO-8601:2019 week-numbering (the ISO week)
 src/fiscal/periods/carbon/emissions/index.ts:13: * @standard ISO 14064-1:2018 organisation-level-ghg-quantification
 src/fiscal/periods/carbon/emissions/index.ts:14: * @standard ISO 14067:2018 carbon-footprint-of-products
 src/fiscal/periods/carbon/emissions/index.ts:15: * @standard GHG Protocol Corporate Standard (revised 2015)
@@ -4479,6 +4482,7 @@ src/financial/statements/index.ts:23: * @accounting US-GAAP ASC-205 presentation
 src/financial/statements/index.ts:24: * @accounting US-GAAP ASC-270 interim-reporting
 src/fiscal/devices/sales/index.ts:24: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/fiscal/devices/sales/index.ts:25: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/fiscal/period/resolver/span/index.ts:10: * @accounting IAS-1 §36 reporting period
 src/fiscal/periods/carbon/emissions/index.ts:20: * @accounting IFRS S2 §29-32 climate-related-metrics
 src/fiscal/periods/index.ts:25: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/fiscal/periods/index.ts:26: * @accounting US-GAAP ASC-210 balance-sheet
