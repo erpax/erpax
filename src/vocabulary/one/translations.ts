@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \\\"all agents are one erpax\\\". The universal root of identity and merge.",
-    "uuid": "dd70b5b9-ecb8-81fc-9d64-9f7141470578",
+    "uuid": "1c701e22-a59a-81ad-8dc7-7d8639758077",
     "words": [
       "use",
       "when",
